@@ -78,7 +78,6 @@ import typings.dialogflow.mod.google.protobuf.IStruct
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,7 +89,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Intent.
   * @param [properties] Properties to set
   */
-class Intent ()
+open class Intent ()
   extends StObject
      with IIntent {
   def this(properties: IIntent) = this()
@@ -171,7 +170,7 @@ class Intent ()
     * Converts this Intent to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** Intent trainingPhrases. */
   @JSName("trainingPhrases")
@@ -194,7 +193,7 @@ object Intent {
     * Constructs a new FollowupIntentInfo.
     * @param [properties] Properties to set
     */
-  class FollowupIntentInfo ()
+  open class FollowupIntentInfo ()
     extends StObject
        with IFollowupIntentInfo {
     def this(properties: IFollowupIntentInfo) = this()
@@ -211,7 +210,7 @@ object Intent {
       * Converts this FollowupIntentInfo to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object FollowupIntentInfo {
     
@@ -228,6 +227,8 @@ object Intent {
     inline def create(): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FollowupIntentInfo]
     inline def create(properties: IFollowupIntentInfo): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     
+    inline def decode(reader: js.typedarray.Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): FollowupIntentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FollowupIntentInfo]
     /**
       * Decodes a FollowupIntentInfo message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -239,9 +240,8 @@ object Intent {
     /* static member */
     inline def decode(reader: Reader): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     inline def decode(reader: Reader, length: Double): FollowupIntentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FollowupIntentInfo]
-    inline def decode(reader: Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
-    inline def decode(reader: Uint8Array, length: Double): FollowupIntentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FollowupIntentInfo]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     /**
       * Decodes a FollowupIntentInfo message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -251,7 +251,6 @@ object Intent {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
-    inline def decodeDelimited(reader: Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Encodes the specified FollowupIntentInfo message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.verify|verify} messages.
@@ -279,7 +278,7 @@ object Intent {
       * @returns FollowupIntentInfo
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    inline def fromObject(`object`: StringDictionary[Any]): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Creates a plain object from a FollowupIntentInfo message. Also converts values to other types if specified.
@@ -288,8 +287,8 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: FollowupIntentInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: FollowupIntentInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: FollowupIntentInfo): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: FollowupIntentInfo, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a FollowupIntentInfo message.
@@ -297,7 +296,7 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Message. */
@@ -307,7 +306,7 @@ object Intent {
     * Constructs a new Message.
     * @param [properties] Properties to set
     */
-  class Message ()
+  open class Message ()
     extends StObject
        with IMessage {
     def this(properties: IMessage) = this()
@@ -325,7 +324,7 @@ object Intent {
       * Converts this Message to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object Message {
     
@@ -340,7 +339,7 @@ object Intent {
       * Constructs a new BasicCard.
       * @param [properties] Properties to set
       */
-    class BasicCard ()
+    open class BasicCard ()
       extends StObject
          with IBasicCard {
       def this(properties: IBasicCard) = this()
@@ -365,7 +364,7 @@ object Intent {
         * Converts this BasicCard to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object BasicCard {
       
@@ -380,7 +379,7 @@ object Intent {
         * Constructs a new Button.
         * @param [properties] Properties to set
         */
-      class Button ()
+      open class Button ()
         extends StObject
            with IButton {
         def this(properties: IButton) = this()
@@ -393,7 +392,7 @@ object Intent {
           * Converts this Button to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object Button {
         
@@ -408,7 +407,7 @@ object Intent {
           * Constructs a new OpenUriAction.
           * @param [properties] Properties to set
           */
-        class OpenUriAction ()
+        open class OpenUriAction ()
           extends StObject
              with IOpenUriAction {
           def this(properties: IOpenUriAction) = this()
@@ -417,7 +416,7 @@ object Intent {
             * Converts this OpenUriAction to JSON.
             * @returns JSON object
             */
-          def toJSON(): StringDictionary[js.Any] = js.native
+          def toJSON(): StringDictionary[Any] = js.native
           
           /** OpenUriAction uri. */
           @JSName("uri")
@@ -438,6 +437,8 @@ object Intent {
           inline def create(): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OpenUriAction]
           inline def create(properties: IOpenUriAction): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           
+          inline def decode(reader: js.typedarray.Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          inline def decode(reader: js.typedarray.Uint8Array, length: Double): OpenUriAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUriAction]
           /**
             * Decodes an OpenUriAction message from the specified reader or buffer.
             * @param reader Reader or buffer to decode from
@@ -449,9 +450,8 @@ object Intent {
           /* static member */
           inline def decode(reader: Reader): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           inline def decode(reader: Reader, length: Double): OpenUriAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUriAction]
-          inline def decode(reader: Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
-          inline def decode(reader: Uint8Array, length: Double): OpenUriAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUriAction]
           
+          inline def decodeDelimited(reader: js.typedarray.Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           /**
             * Decodes an OpenUriAction message from the specified reader or buffer, length delimited.
             * @param reader Reader or buffer to decode from
@@ -461,7 +461,6 @@ object Intent {
             */
           /* static member */
           inline def decodeDelimited(reader: Reader): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
-          inline def decodeDelimited(reader: Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           
           /**
             * Encodes the specified OpenUriAction message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.verify|verify} messages.
@@ -489,7 +488,7 @@ object Intent {
             * @returns OpenUriAction
             */
           /* static member */
-          inline def fromObject(`object`: StringDictionary[js.Any]): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          inline def fromObject(`object`: StringDictionary[Any]): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           
           /**
             * Creates a plain object from an OpenUriAction message. Also converts values to other types if specified.
@@ -498,8 +497,8 @@ object Intent {
             * @returns Plain object
             */
           /* static member */
-          inline def toObject(message: OpenUriAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-          inline def toObject(message: OpenUriAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+          inline def toObject(message: OpenUriAction): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+          inline def toObject(message: OpenUriAction, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
           
           /**
             * Verifies an OpenUriAction message.
@@ -507,7 +506,7 @@ object Intent {
             * @returns `null` if valid, otherwise the reason why it is not
             */
           /* static member */
-          inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+          inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         }
         
         /**
@@ -519,6 +518,8 @@ object Intent {
         inline def create(): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Button]
         inline def create(properties: IButton): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Button]
         
+        inline def decode(reader: js.typedarray.Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
         /**
           * Decodes a Button message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -530,9 +531,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         inline def decode(reader: Reader, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
-        inline def decode(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        inline def decode(reader: Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         /**
           * Decodes a Button message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -542,7 +542,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        inline def decodeDelimited(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Encodes the specified Button message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.verify|verify} messages.
@@ -570,7 +569,7 @@ object Intent {
           * @returns Button
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def fromObject(`object`: StringDictionary[Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Creates a plain object from a Button message. Also converts values to other types if specified.
@@ -579,8 +578,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: Button): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Button): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: Button, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a Button message.
@@ -588,7 +587,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         
         /** Properties of an OpenUriAction. */
         trait IOpenUriAction extends StObject {
@@ -623,6 +622,8 @@ object Intent {
       inline def create(): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicCard]
       inline def create(properties: IBasicCard): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       
+      inline def decode(reader: js.typedarray.Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): BasicCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BasicCard]
       /**
         * Decodes a BasicCard message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -634,9 +635,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       inline def decode(reader: Reader, length: Double): BasicCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BasicCard]
-      inline def decode(reader: Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
-      inline def decode(reader: Uint8Array, length: Double): BasicCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BasicCard]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       /**
         * Decodes a BasicCard message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -646,7 +646,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
-      inline def decodeDelimited(reader: Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       
       /**
         * Encodes the specified BasicCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.verify|verify} messages.
@@ -674,7 +673,7 @@ object Intent {
         * @returns BasicCard
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      inline def fromObject(`object`: StringDictionary[Any]): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       
       /**
         * Creates a plain object from a BasicCard message. Also converts values to other types if specified.
@@ -683,8 +682,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: BasicCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: BasicCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: BasicCard): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: BasicCard, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a BasicCard message.
@@ -692,7 +691,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a Button. */
       trait IButton extends StObject {
@@ -734,7 +733,7 @@ object Intent {
       * Constructs a new BrowseCarouselCard.
       * @param [properties] Properties to set
       */
-    class BrowseCarouselCard ()
+    open class BrowseCarouselCard ()
       extends StObject
          with IBrowseCarouselCard {
       def this(properties: IBrowseCarouselCard) = this()
@@ -751,7 +750,7 @@ object Intent {
         * Converts this BrowseCarouselCard to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object BrowseCarouselCard {
       
@@ -766,7 +765,7 @@ object Intent {
         * Constructs a new BrowseCarouselCardItem.
         * @param [properties] Properties to set
         */
-      class BrowseCarouselCardItem ()
+      open class BrowseCarouselCardItem ()
         extends StObject
            with IBrowseCarouselCardItem {
         def this(properties: IBrowseCarouselCardItem) = this()
@@ -787,7 +786,7 @@ object Intent {
           * Converts this BrowseCarouselCardItem to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object BrowseCarouselCardItem {
         
@@ -802,7 +801,7 @@ object Intent {
           * Constructs a new OpenUrlAction.
           * @param [properties] Properties to set
           */
-        class OpenUrlAction ()
+        open class OpenUrlAction ()
           extends StObject
              with IOpenUrlAction {
           def this(properties: IOpenUrlAction) = this()
@@ -811,7 +810,7 @@ object Intent {
             * Converts this OpenUrlAction to JSON.
             * @returns JSON object
             */
-          def toJSON(): StringDictionary[js.Any] = js.native
+          def toJSON(): StringDictionary[Any] = js.native
           
           /** OpenUrlAction urlTypeHint. */
           @JSName("urlTypeHint")
@@ -865,6 +864,8 @@ object Intent {
           inline def create(): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OpenUrlAction]
           inline def create(properties: IOpenUrlAction): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           
+          inline def decode(reader: js.typedarray.Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          inline def decode(reader: js.typedarray.Uint8Array, length: Double): OpenUrlAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUrlAction]
           /**
             * Decodes an OpenUrlAction message from the specified reader or buffer.
             * @param reader Reader or buffer to decode from
@@ -876,9 +877,8 @@ object Intent {
           /* static member */
           inline def decode(reader: Reader): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           inline def decode(reader: Reader, length: Double): OpenUrlAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUrlAction]
-          inline def decode(reader: Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
-          inline def decode(reader: Uint8Array, length: Double): OpenUrlAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUrlAction]
           
+          inline def decodeDelimited(reader: js.typedarray.Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           /**
             * Decodes an OpenUrlAction message from the specified reader or buffer, length delimited.
             * @param reader Reader or buffer to decode from
@@ -888,7 +888,6 @@ object Intent {
             */
           /* static member */
           inline def decodeDelimited(reader: Reader): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
-          inline def decodeDelimited(reader: Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           
           /**
             * Encodes the specified OpenUrlAction message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.verify|verify} messages.
@@ -916,7 +915,7 @@ object Intent {
             * @returns OpenUrlAction
             */
           /* static member */
-          inline def fromObject(`object`: StringDictionary[js.Any]): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          inline def fromObject(`object`: StringDictionary[Any]): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           
           /**
             * Creates a plain object from an OpenUrlAction message. Also converts values to other types if specified.
@@ -925,8 +924,8 @@ object Intent {
             * @returns Plain object
             */
           /* static member */
-          inline def toObject(message: OpenUrlAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-          inline def toObject(message: OpenUrlAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+          inline def toObject(message: OpenUrlAction): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+          inline def toObject(message: OpenUrlAction, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
           
           /**
             * Verifies an OpenUrlAction message.
@@ -934,7 +933,7 @@ object Intent {
             * @returns `null` if valid, otherwise the reason why it is not
             */
           /* static member */
-          inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+          inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         }
         
         /**
@@ -946,6 +945,8 @@ object Intent {
         inline def create(): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BrowseCarouselCardItem]
         inline def create(properties: IBrowseCarouselCardItem): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         
+        inline def decode(reader: js.typedarray.Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): BrowseCarouselCardItem = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCardItem]
         /**
           * Decodes a BrowseCarouselCardItem message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -957,9 +958,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         inline def decode(reader: Reader, length: Double): BrowseCarouselCardItem = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCardItem]
-        inline def decode(reader: Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
-        inline def decode(reader: Uint8Array, length: Double): BrowseCarouselCardItem = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCardItem]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         /**
           * Decodes a BrowseCarouselCardItem message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -969,7 +969,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
-        inline def decodeDelimited(reader: Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Encodes the specified BrowseCarouselCardItem message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.verify|verify} messages.
@@ -997,7 +996,7 @@ object Intent {
           * @returns BrowseCarouselCardItem
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        inline def fromObject(`object`: StringDictionary[Any]): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Creates a plain object from a BrowseCarouselCardItem message. Also converts values to other types if specified.
@@ -1006,8 +1005,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: BrowseCarouselCardItem): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: BrowseCarouselCardItem, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: BrowseCarouselCardItem): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: BrowseCarouselCardItem, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a BrowseCarouselCardItem message.
@@ -1015,7 +1014,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         
         /** Properties of an OpenUrlAction. */
         trait IOpenUrlAction extends StObject {
@@ -1104,6 +1103,8 @@ object Intent {
       inline def create(): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BrowseCarouselCard]
       inline def create(properties: IBrowseCarouselCard): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       
+      inline def decode(reader: js.typedarray.Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): BrowseCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCard]
       /**
         * Decodes a BrowseCarouselCard message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -1115,9 +1116,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       inline def decode(reader: Reader, length: Double): BrowseCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCard]
-      inline def decode(reader: Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
-      inline def decode(reader: Uint8Array, length: Double): BrowseCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCard]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       /**
         * Decodes a BrowseCarouselCard message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -1127,7 +1127,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
-      inline def decodeDelimited(reader: Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Encodes the specified BrowseCarouselCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.verify|verify} messages.
@@ -1155,7 +1154,7 @@ object Intent {
         * @returns BrowseCarouselCard
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      inline def fromObject(`object`: StringDictionary[Any]): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Creates a plain object from a BrowseCarouselCard message. Also converts values to other types if specified.
@@ -1164,8 +1163,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: BrowseCarouselCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: BrowseCarouselCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: BrowseCarouselCard): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: BrowseCarouselCard, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a BrowseCarouselCard message.
@@ -1173,7 +1172,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a BrowseCarouselCardItem. */
       trait IBrowseCarouselCardItem extends StObject {
@@ -1242,7 +1241,7 @@ object Intent {
       * Constructs a new Card.
       * @param [properties] Properties to set
       */
-    class Card ()
+    open class Card ()
       extends StObject
          with ICard {
       def this(properties: ICard) = this()
@@ -1269,7 +1268,7 @@ object Intent {
         * Converts this Card to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object Card {
       
@@ -1284,7 +1283,7 @@ object Intent {
         * Constructs a new Button.
         * @param [properties] Properties to set
         */
-      class Button ()
+      open class Button ()
         extends StObject
            with typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton {
         def this(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton) = this()
@@ -1301,7 +1300,7 @@ object Intent {
           * Converts this Button to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object Button {
         
@@ -1318,6 +1317,8 @@ object Intent {
         inline def create(): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Button]
         inline def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Button]
         
+        inline def decode(reader: js.typedarray.Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
         /**
           * Decodes a Button message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -1329,9 +1330,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         inline def decode(reader: Reader, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
-        inline def decode(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        inline def decode(reader: Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         /**
           * Decodes a Button message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -1341,7 +1341,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        inline def decodeDelimited(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Encodes the specified Button message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.verify|verify} messages.
@@ -1375,7 +1374,7 @@ object Intent {
           * @returns Button
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def fromObject(`object`: StringDictionary[Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Creates a plain object from a Button message. Also converts values to other types if specified.
@@ -1384,8 +1383,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: Button): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Button): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: Button, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a Button message.
@@ -1393,7 +1392,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1405,6 +1404,8 @@ object Intent {
       inline def create(): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Card]
       inline def create(properties: ICard): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Card]
       
+      inline def decode(reader: js.typedarray.Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): Card = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Card]
       /**
         * Decodes a Card message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -1416,9 +1417,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
       inline def decode(reader: Reader, length: Double): Card = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Card]
-      inline def decode(reader: Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
-      inline def decode(reader: Uint8Array, length: Double): Card = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Card]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
       /**
         * Decodes a Card message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -1428,7 +1428,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
-      inline def decodeDelimited(reader: Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
       
       /**
         * Encodes the specified Card message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Card.verify|verify} messages.
@@ -1456,7 +1455,7 @@ object Intent {
         * @returns Card
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Card]
+      inline def fromObject(`object`: StringDictionary[Any]): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Card]
       
       /**
         * Creates a plain object from a Card message. Also converts values to other types if specified.
@@ -1465,8 +1464,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: Card): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: Card, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Card): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: Card, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a Card message.
@@ -1474,7 +1473,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a Button. */
       trait IButton extends StObject {
@@ -1516,7 +1515,7 @@ object Intent {
       * Constructs a new CarouselSelect.
       * @param [properties] Properties to set
       */
-    class CarouselSelect ()
+    open class CarouselSelect ()
       extends StObject
          with ICarouselSelect {
       def this(properties: ICarouselSelect) = this()
@@ -1529,7 +1528,7 @@ object Intent {
         * Converts this CarouselSelect to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object CarouselSelect {
       
@@ -1544,7 +1543,7 @@ object Intent {
         * Constructs a new Item.
         * @param [properties] Properties to set
         */
-      class Item ()
+      open class Item ()
         extends StObject
            with IItem {
         def this(properties: IItem) = this()
@@ -1561,7 +1560,7 @@ object Intent {
           * Converts this Item to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object Item {
         
@@ -1578,6 +1577,8 @@ object Intent {
         inline def create(): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Item]
         inline def create(properties: IItem): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Item]
         
+        inline def decode(reader: js.typedarray.Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
         /**
           * Decodes an Item message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -1589,9 +1590,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         inline def decode(reader: Reader, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
-        inline def decode(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        inline def decode(reader: Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         /**
           * Decodes an Item message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -1601,7 +1601,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        inline def decodeDelimited(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Encodes the specified Item message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.verify|verify} messages.
@@ -1629,7 +1628,7 @@ object Intent {
           * @returns Item
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def fromObject(`object`: StringDictionary[Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Creates a plain object from an Item message. Also converts values to other types if specified.
@@ -1638,8 +1637,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: Item): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Item): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: Item, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies an Item message.
@@ -1647,7 +1646,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1659,6 +1658,8 @@ object Intent {
       inline def create(): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CarouselSelect]
       inline def create(properties: ICarouselSelect): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       
+      inline def decode(reader: js.typedarray.Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): CarouselSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CarouselSelect]
       /**
         * Decodes a CarouselSelect message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -1670,9 +1671,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       inline def decode(reader: Reader, length: Double): CarouselSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CarouselSelect]
-      inline def decode(reader: Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
-      inline def decode(reader: Uint8Array, length: Double): CarouselSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CarouselSelect]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       /**
         * Decodes a CarouselSelect message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -1682,7 +1682,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
-      inline def decodeDelimited(reader: Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       
       /**
         * Encodes the specified CarouselSelect message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.verify|verify} messages.
@@ -1710,7 +1709,7 @@ object Intent {
         * @returns CarouselSelect
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      inline def fromObject(`object`: StringDictionary[Any]): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       
       /**
         * Creates a plain object from a CarouselSelect message. Also converts values to other types if specified.
@@ -1719,8 +1718,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: CarouselSelect): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: CarouselSelect, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: CarouselSelect): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: CarouselSelect, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a CarouselSelect message.
@@ -1728,7 +1727,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of an Item. */
       trait IItem extends StObject {
@@ -1788,7 +1787,7 @@ object Intent {
       * Constructs a new ColumnProperties.
       * @param [properties] Properties to set
       */
-    class ColumnProperties ()
+    open class ColumnProperties ()
       extends StObject
          with IColumnProperties {
       def this(properties: IColumnProperties) = this()
@@ -1805,7 +1804,7 @@ object Intent {
         * Converts this ColumnProperties to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object ColumnProperties {
       
@@ -1857,6 +1856,8 @@ object Intent {
       inline def create(): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ColumnProperties]
       inline def create(properties: IColumnProperties): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       
+      inline def decode(reader: js.typedarray.Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): ColumnProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColumnProperties]
       /**
         * Decodes a ColumnProperties message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -1868,9 +1869,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       inline def decode(reader: Reader, length: Double): ColumnProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColumnProperties]
-      inline def decode(reader: Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
-      inline def decode(reader: Uint8Array, length: Double): ColumnProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColumnProperties]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       /**
         * Decodes a ColumnProperties message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -1880,7 +1880,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
-      inline def decodeDelimited(reader: Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       
       /**
         * Encodes the specified ColumnProperties message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.verify|verify} messages.
@@ -1908,7 +1907,7 @@ object Intent {
         * @returns ColumnProperties
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      inline def fromObject(`object`: StringDictionary[Any]): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       
       /**
         * Creates a plain object from a ColumnProperties message. Also converts values to other types if specified.
@@ -1917,8 +1916,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: ColumnProperties): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: ColumnProperties, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: ColumnProperties): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: ColumnProperties, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a ColumnProperties message.
@@ -1926,7 +1925,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents an Image. */
@@ -1936,7 +1935,7 @@ object Intent {
       * Constructs a new Image.
       * @param [properties] Properties to set
       */
-    class Image ()
+    open class Image ()
       extends StObject
          with IImage {
       def this(properties: IImage) = this()
@@ -1953,7 +1952,7 @@ object Intent {
         * Converts this Image to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object Image {
       
@@ -1970,6 +1969,8 @@ object Intent {
       inline def create(): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Image]
       inline def create(properties: IImage): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Image]
       
+      inline def decode(reader: js.typedarray.Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Image]
       /**
         * Decodes an Image message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -1981,9 +1982,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
       inline def decode(reader: Reader, length: Double): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Image]
-      inline def decode(reader: Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
-      inline def decode(reader: Uint8Array, length: Double): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Image]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
       /**
         * Decodes an Image message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -1993,7 +1993,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
-      inline def decodeDelimited(reader: Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /**
         * Encodes the specified Image message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Image.verify|verify} messages.
@@ -2021,7 +2020,7 @@ object Intent {
         * @returns Image
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Image]
+      inline def fromObject(`object`: StringDictionary[Any]): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /**
         * Creates a plain object from an Image message. Also converts values to other types if specified.
@@ -2030,8 +2029,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: Image): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: Image, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Image): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: Image, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies an Image message.
@@ -2039,7 +2038,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a LinkOutSuggestion. */
@@ -2049,7 +2048,7 @@ object Intent {
       * Constructs a new LinkOutSuggestion.
       * @param [properties] Properties to set
       */
-    class LinkOutSuggestion ()
+    open class LinkOutSuggestion ()
       extends StObject
          with ILinkOutSuggestion {
       def this(properties: ILinkOutSuggestion) = this()
@@ -2062,7 +2061,7 @@ object Intent {
         * Converts this LinkOutSuggestion to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
       
       /** LinkOutSuggestion uri. */
       @JSName("uri")
@@ -2083,6 +2082,8 @@ object Intent {
       inline def create(): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[LinkOutSuggestion]
       inline def create(properties: ILinkOutSuggestion): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       
+      inline def decode(reader: js.typedarray.Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): LinkOutSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LinkOutSuggestion]
       /**
         * Decodes a LinkOutSuggestion message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -2094,9 +2095,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       inline def decode(reader: Reader, length: Double): LinkOutSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LinkOutSuggestion]
-      inline def decode(reader: Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
-      inline def decode(reader: Uint8Array, length: Double): LinkOutSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LinkOutSuggestion]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       /**
         * Decodes a LinkOutSuggestion message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -2106,7 +2106,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
-      inline def decodeDelimited(reader: Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Encodes the specified LinkOutSuggestion message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.verify|verify} messages.
@@ -2134,7 +2133,7 @@ object Intent {
         * @returns LinkOutSuggestion
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      inline def fromObject(`object`: StringDictionary[Any]): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Creates a plain object from a LinkOutSuggestion message. Also converts values to other types if specified.
@@ -2143,8 +2142,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: LinkOutSuggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: LinkOutSuggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: LinkOutSuggestion): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: LinkOutSuggestion, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a LinkOutSuggestion message.
@@ -2152,7 +2151,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a ListSelect. */
@@ -2162,7 +2161,7 @@ object Intent {
       * Constructs a new ListSelect.
       * @param [properties] Properties to set
       */
-    class ListSelect ()
+    open class ListSelect ()
       extends StObject
          with IListSelect {
       def this(properties: IListSelect) = this()
@@ -2185,7 +2184,7 @@ object Intent {
         * Converts this ListSelect to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object ListSelect {
       
@@ -2200,7 +2199,7 @@ object Intent {
         * Constructs a new Item.
         * @param [properties] Properties to set
         */
-      class Item ()
+      open class Item ()
         extends StObject
            with typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem {
         def this(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem) = this()
@@ -2217,7 +2216,7 @@ object Intent {
           * Converts this Item to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object Item {
         
@@ -2234,6 +2233,8 @@ object Intent {
         inline def create(): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Item]
         inline def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Item]
         
+        inline def decode(reader: js.typedarray.Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
         /**
           * Decodes an Item message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -2245,9 +2246,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         inline def decode(reader: Reader, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
-        inline def decode(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        inline def decode(reader: Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         /**
           * Decodes an Item message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -2257,7 +2257,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        inline def decodeDelimited(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Encodes the specified Item message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.verify|verify} messages.
@@ -2291,7 +2290,7 @@ object Intent {
           * @returns Item
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def fromObject(`object`: StringDictionary[Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Creates a plain object from an Item message. Also converts values to other types if specified.
@@ -2300,8 +2299,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: Item): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Item): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: Item, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies an Item message.
@@ -2309,7 +2308,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -2321,6 +2320,8 @@ object Intent {
       inline def create(): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListSelect]
       inline def create(properties: IListSelect): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       
+      inline def decode(reader: js.typedarray.Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): ListSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSelect]
       /**
         * Decodes a ListSelect message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -2332,9 +2333,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       inline def decode(reader: Reader, length: Double): ListSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSelect]
-      inline def decode(reader: Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
-      inline def decode(reader: Uint8Array, length: Double): ListSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSelect]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       /**
         * Decodes a ListSelect message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -2344,7 +2344,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
-      inline def decodeDelimited(reader: Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       
       /**
         * Encodes the specified ListSelect message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.verify|verify} messages.
@@ -2372,7 +2371,7 @@ object Intent {
         * @returns ListSelect
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      inline def fromObject(`object`: StringDictionary[Any]): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       
       /**
         * Creates a plain object from a ListSelect message. Also converts values to other types if specified.
@@ -2381,8 +2380,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: ListSelect): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: ListSelect, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: ListSelect): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: ListSelect, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a ListSelect message.
@@ -2390,7 +2389,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of an Item. */
       trait IItem extends StObject {
@@ -2450,7 +2449,7 @@ object Intent {
       * Constructs a new MediaContent.
       * @param [properties] Properties to set
       */
-    class MediaContent ()
+    open class MediaContent ()
       extends StObject
          with IMediaContent {
       def this(properties: IMediaContent) = this()
@@ -2467,7 +2466,7 @@ object Intent {
         * Converts this MediaContent to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object MediaContent {
       
@@ -2482,7 +2481,7 @@ object Intent {
         * Constructs a new ResponseMediaObject.
         * @param [properties] Properties to set
         */
-      class ResponseMediaObject ()
+      open class ResponseMediaObject ()
         extends StObject
            with IResponseMediaObject {
         def this(properties: IResponseMediaObject) = this()
@@ -2506,7 +2505,7 @@ object Intent {
           * Converts this ResponseMediaObject to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object ResponseMediaObject {
         
@@ -2523,6 +2522,8 @@ object Intent {
         inline def create(): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResponseMediaObject]
         inline def create(properties: IResponseMediaObject): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         
+        inline def decode(reader: js.typedarray.Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): ResponseMediaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponseMediaObject]
         /**
           * Decodes a ResponseMediaObject message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -2534,9 +2535,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         inline def decode(reader: Reader, length: Double): ResponseMediaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponseMediaObject]
-        inline def decode(reader: Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
-        inline def decode(reader: Uint8Array, length: Double): ResponseMediaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponseMediaObject]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         /**
           * Decodes a ResponseMediaObject message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -2546,7 +2546,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
-        inline def decodeDelimited(reader: Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         
         /**
           * Encodes the specified ResponseMediaObject message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.verify|verify} messages.
@@ -2574,7 +2573,7 @@ object Intent {
           * @returns ResponseMediaObject
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        inline def fromObject(`object`: StringDictionary[Any]): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         
         /**
           * Creates a plain object from a ResponseMediaObject message. Also converts values to other types if specified.
@@ -2583,8 +2582,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: ResponseMediaObject): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: ResponseMediaObject, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: ResponseMediaObject): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: ResponseMediaObject, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a ResponseMediaObject message.
@@ -2592,7 +2591,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       @js.native
@@ -2627,6 +2626,8 @@ object Intent {
       inline def create(): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MediaContent]
       inline def create(properties: IMediaContent): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       
+      inline def decode(reader: js.typedarray.Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): MediaContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MediaContent]
       /**
         * Decodes a MediaContent message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -2638,9 +2639,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       inline def decode(reader: Reader, length: Double): MediaContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MediaContent]
-      inline def decode(reader: Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
-      inline def decode(reader: Uint8Array, length: Double): MediaContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MediaContent]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       /**
         * Decodes a MediaContent message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -2650,7 +2650,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
-      inline def decodeDelimited(reader: Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       
       /**
         * Encodes the specified MediaContent message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.verify|verify} messages.
@@ -2678,7 +2677,7 @@ object Intent {
         * @returns MediaContent
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      inline def fromObject(`object`: StringDictionary[Any]): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       
       /**
         * Creates a plain object from a MediaContent message. Also converts values to other types if specified.
@@ -2687,8 +2686,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: MediaContent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: MediaContent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: MediaContent): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: MediaContent, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a MediaContent message.
@@ -2696,7 +2695,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a ResponseMediaObject. */
       trait IResponseMediaObject extends StObject {
@@ -2842,7 +2841,7 @@ object Intent {
       * Constructs a new QuickReplies.
       * @param [properties] Properties to set
       */
-    class QuickReplies ()
+    open class QuickReplies ()
       extends StObject
          with IQuickReplies {
       def this(properties: IQuickReplies) = this()
@@ -2859,7 +2858,7 @@ object Intent {
         * Converts this QuickReplies to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object QuickReplies {
       
@@ -2876,6 +2875,8 @@ object Intent {
       inline def create(): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[QuickReplies]
       inline def create(properties: IQuickReplies): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       
+      inline def decode(reader: js.typedarray.Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): QuickReplies = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QuickReplies]
       /**
         * Decodes a QuickReplies message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -2887,9 +2888,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       inline def decode(reader: Reader, length: Double): QuickReplies = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QuickReplies]
-      inline def decode(reader: Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
-      inline def decode(reader: Uint8Array, length: Double): QuickReplies = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QuickReplies]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       /**
         * Decodes a QuickReplies message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -2899,7 +2899,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
-      inline def decodeDelimited(reader: Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       
       /**
         * Encodes the specified QuickReplies message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.verify|verify} messages.
@@ -2927,7 +2926,7 @@ object Intent {
         * @returns QuickReplies
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      inline def fromObject(`object`: StringDictionary[Any]): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       
       /**
         * Creates a plain object from a QuickReplies message. Also converts values to other types if specified.
@@ -2936,8 +2935,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: QuickReplies): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: QuickReplies, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: QuickReplies): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: QuickReplies, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a QuickReplies message.
@@ -2945,7 +2944,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmCardContent. */
@@ -2955,7 +2954,7 @@ object Intent {
       * Constructs a new RbmCardContent.
       * @param [properties] Properties to set
       */
-    class RbmCardContent ()
+    open class RbmCardContent ()
       extends StObject
          with IRbmCardContent {
       def this(properties: IRbmCardContent) = this()
@@ -2976,7 +2975,7 @@ object Intent {
         * Converts this RbmCardContent to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object RbmCardContent {
       
@@ -2991,7 +2990,7 @@ object Intent {
         * Constructs a new RbmMedia.
         * @param [properties] Properties to set
         */
-      class RbmMedia ()
+      open class RbmMedia ()
         extends StObject
            with IRbmMedia {
         def this(properties: IRbmMedia) = this()
@@ -3012,7 +3011,7 @@ object Intent {
           * Converts this RbmMedia to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object RbmMedia {
         
@@ -3064,6 +3063,8 @@ object Intent {
         inline def create(): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmMedia]
         inline def create(properties: IRbmMedia): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
         
+        inline def decode(reader: js.typedarray.Uint8Array): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmMedia = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmMedia]
         /**
           * Decodes a RbmMedia message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -3075,9 +3076,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
         inline def decode(reader: Reader, length: Double): RbmMedia = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmMedia]
-        inline def decode(reader: Uint8Array): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
-        inline def decode(reader: Uint8Array, length: Double): RbmMedia = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmMedia]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
         /**
           * Decodes a RbmMedia message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -3087,7 +3087,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
-        inline def decodeDelimited(reader: Uint8Array): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
         
         /**
           * Encodes the specified RbmMedia message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.verify|verify} messages.
@@ -3115,7 +3114,7 @@ object Intent {
           * @returns RbmMedia
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
+        inline def fromObject(`object`: StringDictionary[Any]): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
         
         /**
           * Creates a plain object from a RbmMedia message. Also converts values to other types if specified.
@@ -3124,8 +3123,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: RbmMedia): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: RbmMedia, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: RbmMedia): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: RbmMedia, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a RbmMedia message.
@@ -3133,7 +3132,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -3145,6 +3144,8 @@ object Intent {
       inline def create(): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmCardContent]
       inline def create(properties: IRbmCardContent): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
       
+      inline def decode(reader: js.typedarray.Uint8Array): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmCardContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCardContent]
       /**
         * Decodes a RbmCardContent message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -3156,9 +3157,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
       inline def decode(reader: Reader, length: Double): RbmCardContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCardContent]
-      inline def decode(reader: Uint8Array): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
-      inline def decode(reader: Uint8Array, length: Double): RbmCardContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCardContent]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
       /**
         * Decodes a RbmCardContent message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -3168,7 +3168,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
-      inline def decodeDelimited(reader: Uint8Array): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
       
       /**
         * Encodes the specified RbmCardContent message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.verify|verify} messages.
@@ -3196,7 +3195,7 @@ object Intent {
         * @returns RbmCardContent
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
+      inline def fromObject(`object`: StringDictionary[Any]): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
       
       /**
         * Creates a plain object from a RbmCardContent message. Also converts values to other types if specified.
@@ -3205,8 +3204,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: RbmCardContent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: RbmCardContent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: RbmCardContent): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: RbmCardContent, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a RbmCardContent message.
@@ -3214,7 +3213,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a RbmMedia. */
       trait IRbmMedia extends StObject {
@@ -3269,7 +3268,7 @@ object Intent {
       * Constructs a new RbmCarouselCard.
       * @param [properties] Properties to set
       */
-    class RbmCarouselCard ()
+    open class RbmCarouselCard ()
       extends StObject
          with IRbmCarouselCard {
       def this(properties: IRbmCarouselCard) = this()
@@ -3286,7 +3285,7 @@ object Intent {
         * Converts this RbmCarouselCard to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object RbmCarouselCard {
       
@@ -3332,6 +3331,8 @@ object Intent {
       inline def create(): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmCarouselCard]
       inline def create(properties: IRbmCarouselCard): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
       
+      inline def decode(reader: js.typedarray.Uint8Array): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCarouselCard]
       /**
         * Decodes a RbmCarouselCard message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -3343,9 +3344,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
       inline def decode(reader: Reader, length: Double): RbmCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCarouselCard]
-      inline def decode(reader: Uint8Array): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
-      inline def decode(reader: Uint8Array, length: Double): RbmCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCarouselCard]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
       /**
         * Decodes a RbmCarouselCard message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -3355,7 +3355,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
-      inline def decodeDelimited(reader: Uint8Array): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
       
       /**
         * Encodes the specified RbmCarouselCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.verify|verify} messages.
@@ -3383,7 +3382,7 @@ object Intent {
         * @returns RbmCarouselCard
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
+      inline def fromObject(`object`: StringDictionary[Any]): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
       
       /**
         * Creates a plain object from a RbmCarouselCard message. Also converts values to other types if specified.
@@ -3392,8 +3391,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: RbmCarouselCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: RbmCarouselCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: RbmCarouselCard): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: RbmCarouselCard, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a RbmCarouselCard message.
@@ -3401,7 +3400,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmStandaloneCard. */
@@ -3411,7 +3410,7 @@ object Intent {
       * Constructs a new RbmStandaloneCard.
       * @param [properties] Properties to set
       */
-    class RbmStandaloneCard ()
+    open class RbmStandaloneCard ()
       extends StObject
          with IRbmStandaloneCard {
       def this(properties: IRbmStandaloneCard) = this()
@@ -3428,7 +3427,7 @@ object Intent {
         * Converts this RbmStandaloneCard to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object RbmStandaloneCard {
       
@@ -3503,6 +3502,8 @@ object Intent {
       inline def create(): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmStandaloneCard]
       inline def create(properties: IRbmStandaloneCard): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
       
+      inline def decode(reader: js.typedarray.Uint8Array): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmStandaloneCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmStandaloneCard]
       /**
         * Decodes a RbmStandaloneCard message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -3514,9 +3515,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
       inline def decode(reader: Reader, length: Double): RbmStandaloneCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmStandaloneCard]
-      inline def decode(reader: Uint8Array): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
-      inline def decode(reader: Uint8Array, length: Double): RbmStandaloneCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmStandaloneCard]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
       /**
         * Decodes a RbmStandaloneCard message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -3526,7 +3526,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
-      inline def decodeDelimited(reader: Uint8Array): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
       
       /**
         * Encodes the specified RbmStandaloneCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.verify|verify} messages.
@@ -3554,7 +3553,7 @@ object Intent {
         * @returns RbmStandaloneCard
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
+      inline def fromObject(`object`: StringDictionary[Any]): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
       
       /**
         * Creates a plain object from a RbmStandaloneCard message. Also converts values to other types if specified.
@@ -3563,8 +3562,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: RbmStandaloneCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: RbmStandaloneCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: RbmStandaloneCard): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: RbmStandaloneCard, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a RbmStandaloneCard message.
@@ -3572,7 +3571,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmSuggestedAction. */
@@ -3582,7 +3581,7 @@ object Intent {
       * Constructs a new RbmSuggestedAction.
       * @param [properties] Properties to set
       */
-    class RbmSuggestedAction ()
+    open class RbmSuggestedAction ()
       extends StObject
          with IRbmSuggestedAction {
       def this(properties: IRbmSuggestedAction) = this()
@@ -3602,7 +3601,7 @@ object Intent {
         * Converts this RbmSuggestedAction to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object RbmSuggestedAction {
       
@@ -3617,7 +3616,7 @@ object Intent {
         * Constructs a new RbmSuggestedActionDial.
         * @param [properties] Properties to set
         */
-      class RbmSuggestedActionDial ()
+      open class RbmSuggestedActionDial ()
         extends StObject
            with IRbmSuggestedActionDial {
         def this(properties: IRbmSuggestedActionDial) = this()
@@ -3630,7 +3629,7 @@ object Intent {
           * Converts this RbmSuggestedActionDial to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object RbmSuggestedActionDial {
         
@@ -3647,6 +3646,8 @@ object Intent {
         inline def create(): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedActionDial]
         inline def create(properties: IRbmSuggestedActionDial): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
         
+        inline def decode(reader: js.typedarray.Uint8Array): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmSuggestedActionDial = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionDial]
         /**
           * Decodes a RbmSuggestedActionDial message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -3658,9 +3659,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
         inline def decode(reader: Reader, length: Double): RbmSuggestedActionDial = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionDial]
-        inline def decode(reader: Uint8Array): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
-        inline def decode(reader: Uint8Array, length: Double): RbmSuggestedActionDial = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionDial]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
         /**
           * Decodes a RbmSuggestedActionDial message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -3670,7 +3670,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
-        inline def decodeDelimited(reader: Uint8Array): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
         
         /**
           * Encodes the specified RbmSuggestedActionDial message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.verify|verify} messages.
@@ -3698,7 +3697,7 @@ object Intent {
           * @returns RbmSuggestedActionDial
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
+        inline def fromObject(`object`: StringDictionary[Any]): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
         
         /**
           * Creates a plain object from a RbmSuggestedActionDial message. Also converts values to other types if specified.
@@ -3707,8 +3706,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: RbmSuggestedActionDial): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: RbmSuggestedActionDial, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: RbmSuggestedActionDial): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: RbmSuggestedActionDial, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a RbmSuggestedActionDial message.
@@ -3716,7 +3715,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /** Represents a RbmSuggestedActionOpenUri. */
@@ -3726,7 +3725,7 @@ object Intent {
         * Constructs a new RbmSuggestedActionOpenUri.
         * @param [properties] Properties to set
         */
-      class RbmSuggestedActionOpenUri ()
+      open class RbmSuggestedActionOpenUri ()
         extends StObject
            with IRbmSuggestedActionOpenUri {
         def this(properties: IRbmSuggestedActionOpenUri) = this()
@@ -3735,7 +3734,7 @@ object Intent {
           * Converts this RbmSuggestedActionOpenUri to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
         
         /** RbmSuggestedActionOpenUri uri. */
         @JSName("uri")
@@ -3756,6 +3755,8 @@ object Intent {
         inline def create(): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedActionOpenUri]
         inline def create(properties: IRbmSuggestedActionOpenUri): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
         
+        inline def decode(reader: js.typedarray.Uint8Array): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmSuggestedActionOpenUri = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionOpenUri]
         /**
           * Decodes a RbmSuggestedActionOpenUri message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -3767,9 +3768,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
         inline def decode(reader: Reader, length: Double): RbmSuggestedActionOpenUri = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionOpenUri]
-        inline def decode(reader: Uint8Array): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
-        inline def decode(reader: Uint8Array, length: Double): RbmSuggestedActionOpenUri = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionOpenUri]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
         /**
           * Decodes a RbmSuggestedActionOpenUri message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -3779,7 +3779,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
-        inline def decodeDelimited(reader: Uint8Array): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
         
         /**
           * Encodes the specified RbmSuggestedActionOpenUri message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.verify|verify} messages.
@@ -3807,7 +3806,7 @@ object Intent {
           * @returns RbmSuggestedActionOpenUri
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
+        inline def fromObject(`object`: StringDictionary[Any]): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
         
         /**
           * Creates a plain object from a RbmSuggestedActionOpenUri message. Also converts values to other types if specified.
@@ -3816,8 +3815,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: RbmSuggestedActionOpenUri): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: RbmSuggestedActionOpenUri, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: RbmSuggestedActionOpenUri): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: RbmSuggestedActionOpenUri, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a RbmSuggestedActionOpenUri message.
@@ -3825,7 +3824,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /** Represents a RbmSuggestedActionShareLocation. */
@@ -3835,7 +3834,7 @@ object Intent {
         * Constructs a new RbmSuggestedActionShareLocation.
         * @param [properties] Properties to set
         */
-      class RbmSuggestedActionShareLocation ()
+      open class RbmSuggestedActionShareLocation ()
         extends StObject
            with IRbmSuggestedActionShareLocation {
         def this(properties: IRbmSuggestedActionShareLocation) = this()
@@ -3844,7 +3843,7 @@ object Intent {
           * Converts this RbmSuggestedActionShareLocation to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object RbmSuggestedActionShareLocation {
         
@@ -3861,6 +3860,8 @@ object Intent {
         inline def create(): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedActionShareLocation]
         inline def create(properties: IRbmSuggestedActionShareLocation): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
         
+        inline def decode(reader: js.typedarray.Uint8Array): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmSuggestedActionShareLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionShareLocation]
         /**
           * Decodes a RbmSuggestedActionShareLocation message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -3872,9 +3873,8 @@ object Intent {
         /* static member */
         inline def decode(reader: Reader): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
         inline def decode(reader: Reader, length: Double): RbmSuggestedActionShareLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionShareLocation]
-        inline def decode(reader: Uint8Array): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
-        inline def decode(reader: Uint8Array, length: Double): RbmSuggestedActionShareLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionShareLocation]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
         /**
           * Decodes a RbmSuggestedActionShareLocation message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -3884,7 +3884,6 @@ object Intent {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
-        inline def decodeDelimited(reader: Uint8Array): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
         
         /**
           * Encodes the specified RbmSuggestedActionShareLocation message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.verify|verify} messages.
@@ -3912,7 +3911,7 @@ object Intent {
           * @returns RbmSuggestedActionShareLocation
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
+        inline def fromObject(`object`: StringDictionary[Any]): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
         
         /**
           * Creates a plain object from a RbmSuggestedActionShareLocation message. Also converts values to other types if specified.
@@ -3921,8 +3920,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: RbmSuggestedActionShareLocation): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: RbmSuggestedActionShareLocation, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: RbmSuggestedActionShareLocation): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: RbmSuggestedActionShareLocation, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a RbmSuggestedActionShareLocation message.
@@ -3930,7 +3929,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -3942,6 +3941,8 @@ object Intent {
       inline def create(): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedAction]
       inline def create(properties: IRbmSuggestedAction): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
       
+      inline def decode(reader: js.typedarray.Uint8Array): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmSuggestedAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedAction]
       /**
         * Decodes a RbmSuggestedAction message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -3953,9 +3954,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
       inline def decode(reader: Reader, length: Double): RbmSuggestedAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedAction]
-      inline def decode(reader: Uint8Array): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
-      inline def decode(reader: Uint8Array, length: Double): RbmSuggestedAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedAction]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
       /**
         * Decodes a RbmSuggestedAction message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -3965,7 +3965,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
-      inline def decodeDelimited(reader: Uint8Array): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
       
       /**
         * Encodes the specified RbmSuggestedAction message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.verify|verify} messages.
@@ -3993,7 +3992,7 @@ object Intent {
         * @returns RbmSuggestedAction
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
+      inline def fromObject(`object`: StringDictionary[Any]): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
       
       /**
         * Creates a plain object from a RbmSuggestedAction message. Also converts values to other types if specified.
@@ -4002,8 +4001,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: RbmSuggestedAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: RbmSuggestedAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: RbmSuggestedAction): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: RbmSuggestedAction, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a RbmSuggestedAction message.
@@ -4011,7 +4010,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a RbmSuggestedActionDial. */
       trait IRbmSuggestedActionDial extends StObject {
@@ -4070,7 +4069,7 @@ object Intent {
       * Constructs a new RbmSuggestedReply.
       * @param [properties] Properties to set
       */
-    class RbmSuggestedReply ()
+    open class RbmSuggestedReply ()
       extends StObject
          with IRbmSuggestedReply {
       def this(properties: IRbmSuggestedReply) = this()
@@ -4087,7 +4086,7 @@ object Intent {
         * Converts this RbmSuggestedReply to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object RbmSuggestedReply {
       
@@ -4104,6 +4103,8 @@ object Intent {
       inline def create(): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedReply]
       inline def create(properties: IRbmSuggestedReply): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
       
+      inline def decode(reader: js.typedarray.Uint8Array): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmSuggestedReply = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedReply]
       /**
         * Decodes a RbmSuggestedReply message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -4115,9 +4116,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
       inline def decode(reader: Reader, length: Double): RbmSuggestedReply = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedReply]
-      inline def decode(reader: Uint8Array): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
-      inline def decode(reader: Uint8Array, length: Double): RbmSuggestedReply = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedReply]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
       /**
         * Decodes a RbmSuggestedReply message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -4127,7 +4127,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
-      inline def decodeDelimited(reader: Uint8Array): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
       
       /**
         * Encodes the specified RbmSuggestedReply message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.verify|verify} messages.
@@ -4155,7 +4154,7 @@ object Intent {
         * @returns RbmSuggestedReply
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
+      inline def fromObject(`object`: StringDictionary[Any]): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
       
       /**
         * Creates a plain object from a RbmSuggestedReply message. Also converts values to other types if specified.
@@ -4164,8 +4163,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: RbmSuggestedReply): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: RbmSuggestedReply, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: RbmSuggestedReply): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: RbmSuggestedReply, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a RbmSuggestedReply message.
@@ -4173,7 +4172,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmSuggestion. */
@@ -4183,7 +4182,7 @@ object Intent {
       * Constructs a new RbmSuggestion.
       * @param [properties] Properties to set
       */
-    class RbmSuggestion ()
+    open class RbmSuggestion ()
       extends StObject
          with IRbmSuggestion {
       def this(properties: IRbmSuggestion) = this()
@@ -4195,7 +4194,7 @@ object Intent {
         * Converts this RbmSuggestion to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object RbmSuggestion {
       
@@ -4212,6 +4211,8 @@ object Intent {
       inline def create(): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestion]
       inline def create(properties: IRbmSuggestion): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
       
+      inline def decode(reader: js.typedarray.Uint8Array): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestion]
       /**
         * Decodes a RbmSuggestion message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -4223,9 +4224,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
       inline def decode(reader: Reader, length: Double): RbmSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestion]
-      inline def decode(reader: Uint8Array): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
-      inline def decode(reader: Uint8Array, length: Double): RbmSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestion]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
       /**
         * Decodes a RbmSuggestion message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -4235,7 +4235,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
-      inline def decodeDelimited(reader: Uint8Array): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
       
       /**
         * Encodes the specified RbmSuggestion message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.verify|verify} messages.
@@ -4263,7 +4262,7 @@ object Intent {
         * @returns RbmSuggestion
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
+      inline def fromObject(`object`: StringDictionary[Any]): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
       
       /**
         * Creates a plain object from a RbmSuggestion message. Also converts values to other types if specified.
@@ -4272,8 +4271,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: RbmSuggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: RbmSuggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: RbmSuggestion): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: RbmSuggestion, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a RbmSuggestion message.
@@ -4281,7 +4280,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmText. */
@@ -4291,7 +4290,7 @@ object Intent {
       * Constructs a new RbmText.
       * @param [properties] Properties to set
       */
-    class RbmText ()
+    open class RbmText ()
       extends StObject
          with IRbmText {
       def this(properties: IRbmText) = this()
@@ -4308,7 +4307,7 @@ object Intent {
         * Converts this RbmText to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object RbmText {
       
@@ -4325,6 +4324,8 @@ object Intent {
       inline def create(): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmText]
       inline def create(properties: IRbmText): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmText]
       
+      inline def decode(reader: js.typedarray.Uint8Array): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): RbmText = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmText]
       /**
         * Decodes a RbmText message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -4336,9 +4337,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
       inline def decode(reader: Reader, length: Double): RbmText = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmText]
-      inline def decode(reader: Uint8Array): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
-      inline def decode(reader: Uint8Array, length: Double): RbmText = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmText]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
       /**
         * Decodes a RbmText message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -4348,7 +4348,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
-      inline def decodeDelimited(reader: Uint8Array): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
       
       /**
         * Encodes the specified RbmText message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.verify|verify} messages.
@@ -4376,7 +4375,7 @@ object Intent {
         * @returns RbmText
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmText]
+      inline def fromObject(`object`: StringDictionary[Any]): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmText]
       
       /**
         * Creates a plain object from a RbmText message. Also converts values to other types if specified.
@@ -4385,8 +4384,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: RbmText): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: RbmText, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: RbmText): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: RbmText, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a RbmText message.
@@ -4394,7 +4393,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SelectItemInfo. */
@@ -4404,7 +4403,7 @@ object Intent {
       * Constructs a new SelectItemInfo.
       * @param [properties] Properties to set
       */
-    class SelectItemInfo ()
+    open class SelectItemInfo ()
       extends StObject
          with ISelectItemInfo {
       def this(properties: ISelectItemInfo) = this()
@@ -4421,7 +4420,7 @@ object Intent {
         * Converts this SelectItemInfo to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object SelectItemInfo {
       
@@ -4438,6 +4437,8 @@ object Intent {
       inline def create(): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SelectItemInfo]
       inline def create(properties: ISelectItemInfo): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       
+      inline def decode(reader: js.typedarray.Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): SelectItemInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SelectItemInfo]
       /**
         * Decodes a SelectItemInfo message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -4449,9 +4450,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       inline def decode(reader: Reader, length: Double): SelectItemInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SelectItemInfo]
-      inline def decode(reader: Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
-      inline def decode(reader: Uint8Array, length: Double): SelectItemInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SelectItemInfo]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       /**
         * Decodes a SelectItemInfo message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -4461,7 +4461,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
-      inline def decodeDelimited(reader: Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       
       /**
         * Encodes the specified SelectItemInfo message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.verify|verify} messages.
@@ -4489,7 +4488,7 @@ object Intent {
         * @returns SelectItemInfo
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      inline def fromObject(`object`: StringDictionary[Any]): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       
       /**
         * Creates a plain object from a SelectItemInfo message. Also converts values to other types if specified.
@@ -4498,8 +4497,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: SelectItemInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: SelectItemInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: SelectItemInfo): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: SelectItemInfo, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a SelectItemInfo message.
@@ -4507,7 +4506,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SimpleResponse. */
@@ -4517,7 +4516,7 @@ object Intent {
       * Constructs a new SimpleResponse.
       * @param [properties] Properties to set
       */
-    class SimpleResponse ()
+    open class SimpleResponse ()
       extends StObject
          with ISimpleResponse {
       def this(properties: ISimpleResponse) = this()
@@ -4538,7 +4537,7 @@ object Intent {
         * Converts this SimpleResponse to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object SimpleResponse {
       
@@ -4555,6 +4554,8 @@ object Intent {
       inline def create(): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SimpleResponse]
       inline def create(properties: ISimpleResponse): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       
+      inline def decode(reader: js.typedarray.Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): SimpleResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponse]
       /**
         * Decodes a SimpleResponse message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -4566,9 +4567,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       inline def decode(reader: Reader, length: Double): SimpleResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponse]
-      inline def decode(reader: Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
-      inline def decode(reader: Uint8Array, length: Double): SimpleResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponse]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       /**
         * Decodes a SimpleResponse message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -4578,7 +4578,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
-      inline def decodeDelimited(reader: Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       
       /**
         * Encodes the specified SimpleResponse message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.verify|verify} messages.
@@ -4606,7 +4605,7 @@ object Intent {
         * @returns SimpleResponse
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      inline def fromObject(`object`: StringDictionary[Any]): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       
       /**
         * Creates a plain object from a SimpleResponse message. Also converts values to other types if specified.
@@ -4615,8 +4614,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: SimpleResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: SimpleResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: SimpleResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: SimpleResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a SimpleResponse message.
@@ -4624,7 +4623,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SimpleResponses. */
@@ -4634,7 +4633,7 @@ object Intent {
       * Constructs a new SimpleResponses.
       * @param [properties] Properties to set
       */
-    class SimpleResponses ()
+    open class SimpleResponses ()
       extends StObject
          with ISimpleResponses {
       def this(properties: ISimpleResponses) = this()
@@ -4647,7 +4646,7 @@ object Intent {
         * Converts this SimpleResponses to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object SimpleResponses {
       
@@ -4664,6 +4663,8 @@ object Intent {
       inline def create(): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SimpleResponses]
       inline def create(properties: ISimpleResponses): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       
+      inline def decode(reader: js.typedarray.Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): SimpleResponses = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponses]
       /**
         * Decodes a SimpleResponses message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -4675,9 +4676,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       inline def decode(reader: Reader, length: Double): SimpleResponses = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponses]
-      inline def decode(reader: Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
-      inline def decode(reader: Uint8Array, length: Double): SimpleResponses = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponses]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       /**
         * Decodes a SimpleResponses message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -4687,7 +4687,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
-      inline def decodeDelimited(reader: Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       
       /**
         * Encodes the specified SimpleResponses message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.verify|verify} messages.
@@ -4715,7 +4714,7 @@ object Intent {
         * @returns SimpleResponses
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      inline def fromObject(`object`: StringDictionary[Any]): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       
       /**
         * Creates a plain object from a SimpleResponses message. Also converts values to other types if specified.
@@ -4724,8 +4723,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: SimpleResponses): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: SimpleResponses, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: SimpleResponses): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: SimpleResponses, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a SimpleResponses message.
@@ -4733,7 +4732,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Suggestion. */
@@ -4743,7 +4742,7 @@ object Intent {
       * Constructs a new Suggestion.
       * @param [properties] Properties to set
       */
-    class Suggestion ()
+    open class Suggestion ()
       extends StObject
          with ISuggestion {
       def this(properties: ISuggestion) = this()
@@ -4756,7 +4755,7 @@ object Intent {
         * Converts this Suggestion to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object Suggestion {
       
@@ -4773,6 +4772,8 @@ object Intent {
       inline def create(): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Suggestion]
       inline def create(properties: ISuggestion): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       
+      inline def decode(reader: js.typedarray.Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): Suggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestion]
       /**
         * Decodes a Suggestion message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -4784,9 +4785,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       inline def decode(reader: Reader, length: Double): Suggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestion]
-      inline def decode(reader: Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
-      inline def decode(reader: Uint8Array, length: Double): Suggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestion]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       /**
         * Decodes a Suggestion message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -4796,7 +4796,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
-      inline def decodeDelimited(reader: Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       
       /**
         * Encodes the specified Suggestion message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.verify|verify} messages.
@@ -4824,7 +4823,7 @@ object Intent {
         * @returns Suggestion
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      inline def fromObject(`object`: StringDictionary[Any]): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       
       /**
         * Creates a plain object from a Suggestion message. Also converts values to other types if specified.
@@ -4833,8 +4832,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: Suggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: Suggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Suggestion): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: Suggestion, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a Suggestion message.
@@ -4842,7 +4841,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Suggestions. */
@@ -4852,7 +4851,7 @@ object Intent {
       * Constructs a new Suggestions.
       * @param [properties] Properties to set
       */
-    class Suggestions ()
+    open class Suggestions ()
       extends StObject
          with ISuggestions {
       def this(properties: ISuggestions) = this()
@@ -4865,7 +4864,7 @@ object Intent {
         * Converts this Suggestions to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object Suggestions {
       
@@ -4882,6 +4881,8 @@ object Intent {
       inline def create(): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Suggestions]
       inline def create(properties: ISuggestions): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       
+      inline def decode(reader: js.typedarray.Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): Suggestions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestions]
       /**
         * Decodes a Suggestions message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -4893,9 +4894,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       inline def decode(reader: Reader, length: Double): Suggestions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestions]
-      inline def decode(reader: Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
-      inline def decode(reader: Uint8Array, length: Double): Suggestions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestions]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       /**
         * Decodes a Suggestions message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -4905,7 +4905,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
-      inline def decodeDelimited(reader: Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       
       /**
         * Encodes the specified Suggestions message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.verify|verify} messages.
@@ -4933,7 +4932,7 @@ object Intent {
         * @returns Suggestions
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      inline def fromObject(`object`: StringDictionary[Any]): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       
       /**
         * Creates a plain object from a Suggestions message. Also converts values to other types if specified.
@@ -4942,8 +4941,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: Suggestions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: Suggestions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Suggestions): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: Suggestions, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a Suggestions message.
@@ -4951,7 +4950,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TableCard. */
@@ -4961,7 +4960,7 @@ object Intent {
       * Constructs a new TableCard.
       * @param [properties] Properties to set
       */
-    class TableCard ()
+    open class TableCard ()
       extends StObject
          with ITableCard {
       def this(properties: ITableCard) = this()
@@ -4990,7 +4989,7 @@ object Intent {
         * Converts this TableCard to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object TableCard {
       
@@ -5007,6 +5006,8 @@ object Intent {
       inline def create(): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCard]
       inline def create(properties: ITableCard): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       
+      inline def decode(reader: js.typedarray.Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): TableCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCard]
       /**
         * Decodes a TableCard message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -5018,9 +5019,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       inline def decode(reader: Reader, length: Double): TableCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCard]
-      inline def decode(reader: Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
-      inline def decode(reader: Uint8Array, length: Double): TableCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCard]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       /**
         * Decodes a TableCard message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -5030,7 +5030,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
-      inline def decodeDelimited(reader: Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       
       /**
         * Encodes the specified TableCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.verify|verify} messages.
@@ -5058,7 +5057,7 @@ object Intent {
         * @returns TableCard
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      inline def fromObject(`object`: StringDictionary[Any]): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       
       /**
         * Creates a plain object from a TableCard message. Also converts values to other types if specified.
@@ -5067,8 +5066,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: TableCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: TableCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableCard): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: TableCard, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a TableCard message.
@@ -5076,7 +5075,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TableCardCell. */
@@ -5086,7 +5085,7 @@ object Intent {
       * Constructs a new TableCardCell.
       * @param [properties] Properties to set
       */
-    class TableCardCell ()
+    open class TableCardCell ()
       extends StObject
          with ITableCardCell {
       def this(properties: ITableCardCell) = this()
@@ -5099,7 +5098,7 @@ object Intent {
         * Converts this TableCardCell to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object TableCardCell {
       
@@ -5116,6 +5115,8 @@ object Intent {
       inline def create(): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCardCell]
       inline def create(properties: ITableCardCell): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       
+      inline def decode(reader: js.typedarray.Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): TableCardCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardCell]
       /**
         * Decodes a TableCardCell message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -5127,9 +5128,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       inline def decode(reader: Reader, length: Double): TableCardCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardCell]
-      inline def decode(reader: Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
-      inline def decode(reader: Uint8Array, length: Double): TableCardCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardCell]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       /**
         * Decodes a TableCardCell message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -5139,7 +5139,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
-      inline def decodeDelimited(reader: Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       
       /**
         * Encodes the specified TableCardCell message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.verify|verify} messages.
@@ -5167,7 +5166,7 @@ object Intent {
         * @returns TableCardCell
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      inline def fromObject(`object`: StringDictionary[Any]): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       
       /**
         * Creates a plain object from a TableCardCell message. Also converts values to other types if specified.
@@ -5176,8 +5175,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: TableCardCell): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: TableCardCell, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableCardCell): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: TableCardCell, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a TableCardCell message.
@@ -5185,7 +5184,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TableCardRow. */
@@ -5195,7 +5194,7 @@ object Intent {
       * Constructs a new TableCardRow.
       * @param [properties] Properties to set
       */
-    class TableCardRow ()
+    open class TableCardRow ()
       extends StObject
          with ITableCardRow {
       def this(properties: ITableCardRow) = this()
@@ -5212,7 +5211,7 @@ object Intent {
         * Converts this TableCardRow to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object TableCardRow {
       
@@ -5229,6 +5228,8 @@ object Intent {
       inline def create(): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCardRow]
       inline def create(properties: ITableCardRow): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       
+      inline def decode(reader: js.typedarray.Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): TableCardRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardRow]
       /**
         * Decodes a TableCardRow message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -5240,9 +5241,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       inline def decode(reader: Reader, length: Double): TableCardRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardRow]
-      inline def decode(reader: Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
-      inline def decode(reader: Uint8Array, length: Double): TableCardRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardRow]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       /**
         * Decodes a TableCardRow message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -5252,7 +5252,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
-      inline def decodeDelimited(reader: Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       
       /**
         * Encodes the specified TableCardRow message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.verify|verify} messages.
@@ -5280,7 +5279,7 @@ object Intent {
         * @returns TableCardRow
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      inline def fromObject(`object`: StringDictionary[Any]): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       
       /**
         * Creates a plain object from a TableCardRow message. Also converts values to other types if specified.
@@ -5289,8 +5288,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: TableCardRow): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: TableCardRow, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableCardRow): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: TableCardRow, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a TableCardRow message.
@@ -5298,7 +5297,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TelephonyPlayAudio. */
@@ -5308,7 +5307,7 @@ object Intent {
       * Constructs a new TelephonyPlayAudio.
       * @param [properties] Properties to set
       */
-    class TelephonyPlayAudio ()
+    open class TelephonyPlayAudio ()
       extends StObject
          with ITelephonyPlayAudio {
       def this(properties: ITelephonyPlayAudio) = this()
@@ -5321,7 +5320,7 @@ object Intent {
         * Converts this TelephonyPlayAudio to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object TelephonyPlayAudio {
       
@@ -5338,6 +5337,8 @@ object Intent {
       inline def create(): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TelephonyPlayAudio]
       inline def create(properties: ITelephonyPlayAudio): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
       
+      inline def decode(reader: js.typedarray.Uint8Array): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): TelephonyPlayAudio = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyPlayAudio]
       /**
         * Decodes a TelephonyPlayAudio message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -5349,9 +5350,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
       inline def decode(reader: Reader, length: Double): TelephonyPlayAudio = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyPlayAudio]
-      inline def decode(reader: Uint8Array): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
-      inline def decode(reader: Uint8Array, length: Double): TelephonyPlayAudio = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyPlayAudio]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
       /**
         * Decodes a TelephonyPlayAudio message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -5361,7 +5361,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
-      inline def decodeDelimited(reader: Uint8Array): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
       
       /**
         * Encodes the specified TelephonyPlayAudio message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.verify|verify} messages.
@@ -5389,7 +5388,7 @@ object Intent {
         * @returns TelephonyPlayAudio
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
+      inline def fromObject(`object`: StringDictionary[Any]): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
       
       /**
         * Creates a plain object from a TelephonyPlayAudio message. Also converts values to other types if specified.
@@ -5398,8 +5397,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: TelephonyPlayAudio): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: TelephonyPlayAudio, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TelephonyPlayAudio): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: TelephonyPlayAudio, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a TelephonyPlayAudio message.
@@ -5407,7 +5406,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TelephonySynthesizeSpeech. */
@@ -5417,7 +5416,7 @@ object Intent {
       * Constructs a new TelephonySynthesizeSpeech.
       * @param [properties] Properties to set
       */
-    class TelephonySynthesizeSpeech ()
+    open class TelephonySynthesizeSpeech ()
       extends StObject
          with ITelephonySynthesizeSpeech {
       def this(properties: ITelephonySynthesizeSpeech) = this()
@@ -5437,7 +5436,7 @@ object Intent {
         * Converts this TelephonySynthesizeSpeech to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object TelephonySynthesizeSpeech {
       
@@ -5454,6 +5453,8 @@ object Intent {
       inline def create(): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TelephonySynthesizeSpeech]
       inline def create(properties: ITelephonySynthesizeSpeech): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
       
+      inline def decode(reader: js.typedarray.Uint8Array): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): TelephonySynthesizeSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonySynthesizeSpeech]
       /**
         * Decodes a TelephonySynthesizeSpeech message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -5465,9 +5466,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
       inline def decode(reader: Reader, length: Double): TelephonySynthesizeSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonySynthesizeSpeech]
-      inline def decode(reader: Uint8Array): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
-      inline def decode(reader: Uint8Array, length: Double): TelephonySynthesizeSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonySynthesizeSpeech]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
       /**
         * Decodes a TelephonySynthesizeSpeech message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -5477,7 +5477,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
-      inline def decodeDelimited(reader: Uint8Array): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
       
       /**
         * Encodes the specified TelephonySynthesizeSpeech message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.verify|verify} messages.
@@ -5505,7 +5504,7 @@ object Intent {
         * @returns TelephonySynthesizeSpeech
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
+      inline def fromObject(`object`: StringDictionary[Any]): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
       
       /**
         * Creates a plain object from a TelephonySynthesizeSpeech message. Also converts values to other types if specified.
@@ -5514,8 +5513,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: TelephonySynthesizeSpeech): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: TelephonySynthesizeSpeech, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TelephonySynthesizeSpeech): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: TelephonySynthesizeSpeech, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a TelephonySynthesizeSpeech message.
@@ -5523,7 +5522,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TelephonyTransferCall. */
@@ -5533,7 +5532,7 @@ object Intent {
       * Constructs a new TelephonyTransferCall.
       * @param [properties] Properties to set
       */
-    class TelephonyTransferCall ()
+    open class TelephonyTransferCall ()
       extends StObject
          with ITelephonyTransferCall {
       def this(properties: ITelephonyTransferCall) = this()
@@ -5546,7 +5545,7 @@ object Intent {
         * Converts this TelephonyTransferCall to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object TelephonyTransferCall {
       
@@ -5563,6 +5562,8 @@ object Intent {
       inline def create(): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TelephonyTransferCall]
       inline def create(properties: ITelephonyTransferCall): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
       
+      inline def decode(reader: js.typedarray.Uint8Array): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): TelephonyTransferCall = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyTransferCall]
       /**
         * Decodes a TelephonyTransferCall message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -5574,9 +5575,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
       inline def decode(reader: Reader, length: Double): TelephonyTransferCall = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyTransferCall]
-      inline def decode(reader: Uint8Array): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
-      inline def decode(reader: Uint8Array, length: Double): TelephonyTransferCall = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyTransferCall]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
       /**
         * Decodes a TelephonyTransferCall message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -5586,7 +5586,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
-      inline def decodeDelimited(reader: Uint8Array): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
       
       /**
         * Encodes the specified TelephonyTransferCall message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.verify|verify} messages.
@@ -5614,7 +5613,7 @@ object Intent {
         * @returns TelephonyTransferCall
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
+      inline def fromObject(`object`: StringDictionary[Any]): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
       
       /**
         * Creates a plain object from a TelephonyTransferCall message. Also converts values to other types if specified.
@@ -5623,8 +5622,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: TelephonyTransferCall): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: TelephonyTransferCall, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TelephonyTransferCall): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: TelephonyTransferCall, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a TelephonyTransferCall message.
@@ -5632,7 +5631,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Text. */
@@ -5642,7 +5641,7 @@ object Intent {
       * Constructs a new Text.
       * @param [properties] Properties to set
       */
-    class Text ()
+    open class Text ()
       extends StObject
          with IText {
       def this(properties: IText) = this()
@@ -5655,7 +5654,7 @@ object Intent {
         * Converts this Text to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object Text {
       
@@ -5672,6 +5671,8 @@ object Intent {
       inline def create(): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.std.Text]
       inline def create(properties: IText): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       
+      inline def decode(reader: js.typedarray.Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.std.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Text]
       /**
         * Decodes a Text message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -5683,9 +5684,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       inline def decode(reader: Reader, length: Double): typings.std.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Text]
-      inline def decode(reader: Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
-      inline def decode(reader: Uint8Array, length: Double): typings.std.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Text]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       /**
         * Decodes a Text message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -5695,7 +5695,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
-      inline def decodeDelimited(reader: Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       
       /**
         * Encodes the specified Text message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Text.verify|verify} messages.
@@ -5723,7 +5722,7 @@ object Intent {
         * @returns Text
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      inline def fromObject(`object`: StringDictionary[Any]): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       
       /**
         * Creates a plain object from a Text message. Also converts values to other types if specified.
@@ -5732,8 +5731,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: typings.std.Text): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: typings.std.Text, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: typings.std.Text): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: typings.std.Text, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a Text message.
@@ -5741,7 +5740,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /**
@@ -5753,6 +5752,8 @@ object Intent {
     inline def create(): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Message]
     inline def create(properties: IMessage): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Message]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message]
     /**
       * Decodes a Message message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -5764,9 +5765,8 @@ object Intent {
     /* static member */
     inline def decode(reader: Reader): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
     inline def decode(reader: Reader, length: Double): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message]
-    inline def decode(reader: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
-    inline def decode(reader: Uint8Array, length: Double): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
     /**
       * Decodes a Message message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -5776,7 +5776,6 @@ object Intent {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
-    inline def decodeDelimited(reader: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     /**
       * Encodes the specified Message message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.verify|verify} messages.
@@ -5804,7 +5803,7 @@ object Intent {
       * @returns Message
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Message]
+    inline def fromObject(`object`: StringDictionary[Any]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     /**
       * Creates a plain object from a Message message. Also converts values to other types if specified.
@@ -5813,8 +5812,8 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Message): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Message, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Message): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Message, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Message message.
@@ -5822,7 +5821,7 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a BasicCard. */
     trait IBasicCard extends StObject {
@@ -5857,7 +5856,7 @@ object Intent {
         
         inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
         
-        inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+        inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value*))
         
         inline def setFormattedText(value: String): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
         
@@ -5919,7 +5918,7 @@ object Intent {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: IBrowseCarouselCardItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: IBrowseCarouselCardItem*): Self = StObject.set(x, "items", js.Array(value*))
       }
     }
     
@@ -5961,7 +5960,7 @@ object Intent {
         
         inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
         
-        inline def setButtonsVarargs(value: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+        inline def setButtonsVarargs(value: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton*): Self = StObject.set(x, "buttons", js.Array(value*))
         
         inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
         
@@ -6004,7 +6003,7 @@ object Intent {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: IItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: IItem*): Self = StObject.set(x, "items", js.Array(value*))
       }
     }
     
@@ -6143,7 +6142,7 @@ object Intent {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
         
@@ -6185,7 +6184,7 @@ object Intent {
         
         inline def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
         
-        inline def setMediaObjectsVarargs(value: IResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
+        inline def setMediaObjectsVarargs(value: IResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value*))
         
         inline def setMediaType(
           value: ResponseMediaType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaType * / any */ String)
@@ -6221,7 +6220,7 @@ object Intent {
         
         inline def setQuickRepliesUndefined: Self = StObject.set(x, "quickReplies", js.undefined)
         
-        inline def setQuickRepliesVarargs(value: String*): Self = StObject.set(x, "quickReplies", js.Array(value :_*))
+        inline def setQuickRepliesVarargs(value: String*): Self = StObject.set(x, "quickReplies", js.Array(value*))
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -6273,7 +6272,7 @@ object Intent {
         
         inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
         
-        inline def setSuggestionsVarargs(value: IRbmSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+        inline def setSuggestionsVarargs(value: IRbmSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value*))
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -6309,7 +6308,7 @@ object Intent {
         
         inline def setCardContentsUndefined: Self = StObject.set(x, "cardContents", js.undefined)
         
-        inline def setCardContentsVarargs(value: IRbmCardContent*): Self = StObject.set(x, "cardContents", js.Array(value :_*))
+        inline def setCardContentsVarargs(value: IRbmCardContent*): Self = StObject.set(x, "cardContents", js.Array(value*))
         
         inline def setCardWidth(
           value: CardWidth | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth * / any */ String)
@@ -6517,7 +6516,7 @@ object Intent {
         
         inline def setRbmSuggestionUndefined: Self = StObject.set(x, "rbmSuggestion", js.undefined)
         
-        inline def setRbmSuggestionVarargs(value: IRbmSuggestion*): Self = StObject.set(x, "rbmSuggestion", js.Array(value :_*))
+        inline def setRbmSuggestionVarargs(value: IRbmSuggestion*): Self = StObject.set(x, "rbmSuggestion", js.Array(value*))
         
         inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
@@ -6557,7 +6556,7 @@ object Intent {
         
         inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
         
-        inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+        inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value*))
       }
     }
     
@@ -6623,7 +6622,7 @@ object Intent {
         
         inline def setSimpleResponsesUndefined: Self = StObject.set(x, "simpleResponses", js.undefined)
         
-        inline def setSimpleResponsesVarargs(value: ISimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value :_*))
+        inline def setSimpleResponsesVarargs(value: ISimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value*))
       }
     }
     
@@ -6671,7 +6670,7 @@ object Intent {
         
         inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
         
-        inline def setSuggestionsVarargs(value: ISuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+        inline def setSuggestionsVarargs(value: ISuggestion*): Self = StObject.set(x, "suggestions", js.Array(value*))
       }
     }
     
@@ -6711,7 +6710,7 @@ object Intent {
         
         inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
         
-        inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+        inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value*))
         
         inline def setColumnProperties(value: js.Array[IColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
         
@@ -6719,7 +6718,7 @@ object Intent {
         
         inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
         
-        inline def setColumnPropertiesVarargs(value: IColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+        inline def setColumnPropertiesVarargs(value: IColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value*))
         
         inline def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
@@ -6733,7 +6732,7 @@ object Intent {
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: ITableCardRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: ITableCardRow*): Self = StObject.set(x, "rows", js.Array(value*))
         
         inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
         
@@ -6796,7 +6795,7 @@ object Intent {
         
         inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
         
-        inline def setCellsVarargs(value: ITableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+        inline def setCellsVarargs(value: ITableCardCell*): Self = StObject.set(x, "cells", js.Array(value*))
         
         inline def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
         
@@ -6905,7 +6904,7 @@ object Intent {
         
         inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
         
-        inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+        inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
       }
     }
   }
@@ -6917,7 +6916,7 @@ object Intent {
     * Constructs a new Parameter.
     * @param [properties] Properties to set
     */
-  class Parameter ()
+  open class Parameter ()
     extends StObject
        with IParameter {
     def this(properties: IParameter) = this()
@@ -6954,7 +6953,7 @@ object Intent {
       * Converts this Parameter to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /** Parameter value. */
     @JSName("value")
@@ -6975,6 +6974,8 @@ object Intent {
     inline def create(): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Parameter]
     inline def create(properties: IParameter): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Parameter]
     /**
       * Decodes a Parameter message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -6986,9 +6987,8 @@ object Intent {
     /* static member */
     inline def decode(reader: Reader): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     inline def decode(reader: Reader, length: Double): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Parameter]
-    inline def decode(reader: Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
-    inline def decode(reader: Uint8Array, length: Double): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Parameter]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     /**
       * Decodes a Parameter message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -6998,7 +6998,6 @@ object Intent {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
-    inline def decodeDelimited(reader: Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     
     /**
       * Encodes the specified Parameter message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Parameter.verify|verify} messages.
@@ -7026,7 +7025,7 @@ object Intent {
       * @returns Parameter
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    inline def fromObject(`object`: StringDictionary[Any]): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     
     /**
       * Creates a plain object from a Parameter message. Also converts values to other types if specified.
@@ -7035,8 +7034,8 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Parameter): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Parameter, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Parameter): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Parameter, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Parameter message.
@@ -7044,7 +7043,7 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a TrainingPhrase. */
@@ -7054,7 +7053,7 @@ object Intent {
     * Constructs a new TrainingPhrase.
     * @param [properties] Properties to set
     */
-  class TrainingPhrase ()
+  open class TrainingPhrase ()
     extends StObject
        with ITrainingPhrase {
     def this(properties: ITrainingPhrase) = this()
@@ -7075,7 +7074,7 @@ object Intent {
       * Converts this TrainingPhrase to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /** TrainingPhrase type. */
     @JSName("type")
@@ -7094,7 +7093,7 @@ object Intent {
       * Constructs a new Part.
       * @param [properties] Properties to set
       */
-    class Part ()
+    open class Part ()
       extends StObject
          with IPart {
       def this(properties: IPart) = this()
@@ -7115,7 +7114,7 @@ object Intent {
         * Converts this Part to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
       
       /** Part userDefined. */
       @JSName("userDefined")
@@ -7136,6 +7135,8 @@ object Intent {
       inline def create(): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Part]
       inline def create(properties: IPart): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Part]
       
+      inline def decode(reader: js.typedarray.Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): Part = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Part]
       /**
         * Decodes a Part message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -7147,9 +7148,8 @@ object Intent {
       /* static member */
       inline def decode(reader: Reader): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
       inline def decode(reader: Reader, length: Double): Part = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Part]
-      inline def decode(reader: Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
-      inline def decode(reader: Uint8Array, length: Double): Part = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Part]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
       /**
         * Decodes a Part message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -7159,7 +7159,6 @@ object Intent {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
-      inline def decodeDelimited(reader: Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
       
       /**
         * Encodes the specified Part message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.verify|verify} messages.
@@ -7187,7 +7186,7 @@ object Intent {
         * @returns Part
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Part]
+      inline def fromObject(`object`: StringDictionary[Any]): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Part]
       
       /**
         * Creates a plain object from a Part message. Also converts values to other types if specified.
@@ -7196,8 +7195,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: Part): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: Part, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Part): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: Part, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a Part message.
@@ -7205,7 +7204,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     @js.native
@@ -7246,6 +7245,8 @@ object Intent {
     inline def create(): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TrainingPhrase]
     inline def create(properties: ITrainingPhrase): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     
+    inline def decode(reader: js.typedarray.Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): TrainingPhrase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TrainingPhrase]
     /**
       * Decodes a TrainingPhrase message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -7257,9 +7258,8 @@ object Intent {
     /* static member */
     inline def decode(reader: Reader): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     inline def decode(reader: Reader, length: Double): TrainingPhrase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TrainingPhrase]
-    inline def decode(reader: Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
-    inline def decode(reader: Uint8Array, length: Double): TrainingPhrase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TrainingPhrase]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     /**
       * Decodes a TrainingPhrase message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -7269,7 +7269,6 @@ object Intent {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
-    inline def decodeDelimited(reader: Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     
     /**
       * Encodes the specified TrainingPhrase message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.verify|verify} messages.
@@ -7297,7 +7296,7 @@ object Intent {
       * @returns TrainingPhrase
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    inline def fromObject(`object`: StringDictionary[Any]): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     
     /**
       * Creates a plain object from a TrainingPhrase message. Also converts values to other types if specified.
@@ -7306,8 +7305,8 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: TrainingPhrase): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: TrainingPhrase, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: TrainingPhrase): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: TrainingPhrase, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a TrainingPhrase message.
@@ -7315,7 +7314,7 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a Part. */
     trait IPart extends StObject {
@@ -7406,6 +7405,8 @@ object Intent {
   inline def create(): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Intent]
   inline def create(properties: IIntent): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Intent]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Intent]
   /**
     * Decodes an Intent message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -7417,9 +7418,8 @@ object Intent {
   /* static member */
   inline def decode(reader: Reader): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
   inline def decode(reader: Reader, length: Double): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Intent]
-  inline def decode(reader: Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
-  inline def decode(reader: Uint8Array, length: Double): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Intent]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
   /**
     * Decodes an Intent message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -7429,7 +7429,6 @@ object Intent {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
-  inline def decodeDelimited(reader: Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
   
   /**
     * Encodes the specified Intent message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.verify|verify} messages.
@@ -7457,7 +7456,7 @@ object Intent {
     * @returns Intent
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  inline def fromObject(`object`: StringDictionary[Any]): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Intent]
   
   /**
     * Creates a plain object from an Intent message. Also converts values to other types if specified.
@@ -7466,8 +7465,8 @@ object Intent {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: Intent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: Intent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Intent): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: Intent, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an Intent message.
@@ -7475,7 +7474,7 @@ object Intent {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a FollowupIntentInfo. */
   trait IFollowupIntentInfo extends StObject {
@@ -7794,7 +7793,7 @@ object Intent {
       
       inline def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
       
-      inline def setPromptsVarargs(value: String*): Self = StObject.set(x, "prompts", js.Array(value :_*))
+      inline def setPromptsVarargs(value: String*): Self = StObject.set(x, "prompts", js.Array(value*))
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -7842,7 +7841,7 @@ object Intent {
       
       inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
       
-      inline def setPartsVarargs(value: IPart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: IPart*): Self = StObject.set(x, "parts", js.Array(value*))
       
       inline def setTimesAddedCount(value: Double): Self = StObject.set(x, "timesAddedCount", value.asInstanceOf[js.Any])
       

@@ -1,9 +1,9 @@
 package typings.postRobot
 
 import typings.postRobot.anon.Data
+import typings.postRobot.anon.Origin
 import typings.postRobot.postRobotBooleans.`false`
 import typings.postRobot.postRobotBooleans.`true`
-import typings.std.RegExp
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,12 +20,12 @@ object mod {
   inline def on(name: String, options: ServerOptionsType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
   inline def on(name: String, options: ServerOptionsType, handler: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
   
-  inline def once(name: String): ZalgoPromise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any]).asInstanceOf[ZalgoPromise[Data]]
-  inline def once(name: String, options: Unit, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
-  inline def once(name: String, options: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
-  inline def once(name: String, options: HandlerType, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
-  inline def once(name: String, options: ServerOptionsType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
-  inline def once(name: String, options: ServerOptionsType, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  inline def once(name: String): ZalgoPromise[Origin] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any]).asInstanceOf[ZalgoPromise[Origin]]
+  inline def once(name: String, options: Unit, handler: HandlerType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
+  inline def once(name: String, options: HandlerType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
+  inline def once(name: String, options: HandlerType, handler: HandlerType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
+  inline def once(name: String, options: ServerOptionsType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
+  inline def once(name: String, options: ServerOptionsType, handler: HandlerType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
   
   inline def send(win: CrossDomainWindowType, name: String): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
   inline def send(win: CrossDomainWindowType, name: String, data: js.Object): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
@@ -62,9 +62,9 @@ object mod {
   // For the purposes of using the library on it's own Window is CrossDomain enough
   type CrossDomainWindowType = Window | Null
   
-  type DomainMatcher = String | RegExp | js.Array[String]
+  type DomainMatcher = String | js.RegExp | js.Array[String]
   
-  type ErrorHandlerType = js.Function1[/* err */ js.Any, Unit]
+  type ErrorHandlerType = js.Function1[/* err */ Any, Unit]
   
   trait FireAndForgetRequestOptionsType extends StObject {
     
@@ -87,7 +87,7 @@ object mod {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value*))
       
       inline def setFireAndForget(value: `true`): Self = StObject.set(x, "fireAndForget", value.asInstanceOf[js.Any])
       
@@ -99,12 +99,7 @@ object mod {
     }
   }
   
-  type HandlerType = js.Function3[
-    /* source */ CrossDomainWindowType, 
-    /* origin */ String, 
-    /* data */ js.Object, 
-    Unit | ZalgoPromise[js.Any]
-  ]
+  type HandlerType = js.Function1[/* event */ Data, ZalgoPromise[Any]]
   
   trait RegularRequestOptionsType extends StObject {
     
@@ -127,7 +122,7 @@ object mod {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value*))
       
       inline def setFireAndForget(value: `false`): Self = StObject.set(x, "fireAndForget", value.asInstanceOf[js.Any])
       
@@ -195,9 +190,9 @@ object mod {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value*))
       
-      inline def setErrorHandler(value: /* err */ js.Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setErrorHandler(value: /* err */ Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
@@ -205,9 +200,7 @@ object mod {
       
       inline def setErrorOnCloseUndefined: Self = StObject.set(x, "errorOnClose", js.undefined)
       
-      inline def setHandler(
-        value: (/* source */ CrossDomainWindowType, /* origin */ String, /* data */ js.Object) => Unit | ZalgoPromise[js.Any]
-      ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
+      inline def setHandler(value: /* event */ Data => ZalgoPromise[Any]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
       inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       

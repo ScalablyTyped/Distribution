@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "unified" : "8.4.2"
+      "unified" : "10.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "unified" : "8.4.2"
+      "unified" : "10.1.2"
     }
   ],
   "compile-devDependencies" : [

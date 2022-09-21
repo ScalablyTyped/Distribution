@@ -29,6 +29,6 @@ object VideoAbuseReportReasonSnippet {
     
     inline def setSecondaryReasonsUndefined: Self = StObject.set(x, "secondaryReasons", js.undefined)
     
-    inline def setSecondaryReasonsVarargs(value: VideoAbuseReportSecondaryReason*): Self = StObject.set(x, "secondaryReasons", js.Array(value :_*))
+    inline def setSecondaryReasonsVarargs(value: VideoAbuseReportSecondaryReason*): Self = StObject.set(x, "secondaryReasons", js.Array(value*))
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/accept" : "5.0.1"
+      "@hapi/accept" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/accept" : "5.0.1"
+      "@hapi/accept" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

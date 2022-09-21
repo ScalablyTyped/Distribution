@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "Session")
 @js.native
-class Session protected () extends StObject {
+open class Session protected () extends StObject {
   def this(id: String, capabilities: js.Object) = this()
   // region Constructors
   /**
@@ -27,7 +27,7 @@ class Session protected () extends StObject {
     * @param {string} key The capability to retrieve.
     * @return {*} The capability value.
     */
-  def getCapability(key: String): js.Any = js.native
+  def getCapability(key: String): Any = js.native
   
   // endregion
   // region Methods

@@ -28,7 +28,7 @@ object global {
       * @param [data] An Array with items.
       * @param [options] DataSet options.
       */
-    class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] ()
+    open class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] ()
       extends typings.vis.mod.DataSet[T] {
       def this(data: js.Array[T]) = this()
       /**
@@ -43,14 +43,14 @@ object global {
     
     @JSGlobal("vis.DataView")
     @js.native
-    class DataView[T /* <: DataItem | DataGroup */] protected ()
+    open class DataView[T /* <: DataItem | DataGroup */] protected ()
       extends typings.vis.mod.DataView[T] {
       def this(items: js.Array[T]) = this()
     }
     
     @JSGlobal("vis.Graph2d")
     @js.native
-    class Graph2d protected ()
+    open class Graph2d protected ()
       extends typings.vis.mod.Graph2d {
       def this(container: HTMLElement, items: DataItemCollectionType) = this()
       def this(container: HTMLElement, items: DataItemCollectionType, groups: DataGroupCollectionType) = this()
@@ -65,7 +65,7 @@ object global {
     
     @JSGlobal("vis.Network")
     @js.native
-    class Network protected ()
+    open class Network protected ()
       extends typings.vis.mod.Network {
       /**
         * Creates an instance of Network.
@@ -80,7 +80,7 @@ object global {
     
     @JSGlobal("vis.Timeline")
     @js.native
-    class Timeline protected ()
+    open class Timeline protected ()
       extends typings.vis.mod.Timeline {
       def this(container: HTMLElement, items: DataItemCollectionType) = this()
       def this(container: HTMLElement, items: DataItemCollectionType, groups: DataGroupCollectionType) = this()

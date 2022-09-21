@@ -81,18 +81,18 @@ trait Options extends StObject {
     */
   var hiddenSuffix: js.UndefOr[String] = js.undefined
   
-  var onClose: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onClose: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
-  var onOpen: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onOpen: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
-  var onRender: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onRender: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
-  var onSet: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onSet: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
   // Events
-  var onStart: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onStart: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
-  var onStop: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onStop: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
 }
 object Options {
   
@@ -147,27 +147,27 @@ object Options {
     
     inline def setHiddenSuffixUndefined: Self = StObject.set(x, "hiddenSuffix", js.undefined)
     
-    inline def setOnClose(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: /* event */ Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    inline def setOnOpen(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+    inline def setOnOpen(value: /* event */ Any => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
     
     inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
-    inline def setOnRender(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction1(value))
+    inline def setOnRender(value: /* event */ Any => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction1(value))
     
     inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
-    inline def setOnSet(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onSet", js.Any.fromFunction1(value))
+    inline def setOnSet(value: /* event */ Any => Unit): Self = StObject.set(x, "onSet", js.Any.fromFunction1(value))
     
     inline def setOnSetUndefined: Self = StObject.set(x, "onSet", js.undefined)
     
-    inline def setOnStart(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+    inline def setOnStart(value: /* event */ Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
-    inline def setOnStop(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+    inline def setOnStop(value: /* event */ Any => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
     
     inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
   }

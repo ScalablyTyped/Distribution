@@ -33,8 +33,8 @@ trait Quaternion extends StObject {
   
   def toArray(): js.Array[Double] = js.native
   
-  def toAxisAngle(): js.Array[js.Any] = js.native
-  def toAxisAngle(targetAxis: Vec3): js.Array[js.Any] = js.native
+  def toAxisAngle(): js.Array[Any] = js.native
+  def toAxisAngle(targetAxis: Vec3): js.Array[Any] = js.native
   
   def toEuler(target: Vec3): Unit = js.native
   def toEuler(target: Vec3, order: String): Unit = js.native

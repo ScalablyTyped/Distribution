@@ -1,7 +1,7 @@
 
 # Scala.js typings for random-int
 
-Typings are for version 2.0.1
+Typings are for version 3.0.0
 
 ## Library description:
 Generate a random integer
@@ -9,11 +9,11 @@ Generate a random integer
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | random-int |
-| Keywords           | rand, random, randomize, int, integer, number, max, min, math, generate, generator |
-| # releases         | 3 |
-| # dependents       | 70 |
-| # downloads        | 2319362 |
-| # stars            | 4 |
+| Keywords           | random, randomize, int, integer, number, max, min, math, generate, generator |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 336129.3333333333 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/random-int#readme)

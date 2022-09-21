@@ -11,7 +11,7 @@ object deeplinkMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/deeplink", "DeepLink")
   @js.native
-  class DeepLink protected () extends Helper[actionsDotintentDotLINK, GoogleActionsV2LinkValueSpec] {
+  open class DeepLink protected () extends Helper[actionsDotintentDotLINK, GoogleActionsV2LinkValueSpec] {
     /**
       * @param options DeepLink options
       * @deprecated

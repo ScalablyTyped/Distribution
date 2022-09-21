@@ -10,10 +10,10 @@ Micro service to read, write and save JWT headers
 | ------------------ | :-------------: |
 | Full name          | jwt-client |
 | Keywords           | jwt |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 43370 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3777.6666666666665 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/pauldijou/jwt-client)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfirmDeviceResponse extends StObject {
   
   /**
-    * Indicates whether the user confirmation is necessary to confirm the device response.
+    * Indicates whether the user confirmation must confirm the device response.
     */
   var UserConfirmationNecessary: js.UndefOr[BooleanType] = js.undefined
 }

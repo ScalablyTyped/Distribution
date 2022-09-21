@@ -10,10 +10,10 @@ Simplify cancellation of http requests when using the awesome axios library
 | ------------------ | :-------------: |
 | Full name          | axios-cancel |
 | Keywords           | axios, http, cancel, promise |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 230288 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18364.0 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/thaerlabs/axios-cancel#readme)

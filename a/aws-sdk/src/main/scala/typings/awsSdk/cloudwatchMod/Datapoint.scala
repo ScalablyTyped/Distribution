@@ -39,7 +39,7 @@ trait Datapoint extends StObject {
   /**
     * The time stamp used for the data point.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.cloudwatchMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The standard unit for the data point.
@@ -79,7 +79,7 @@ object Datapoint {
     
     inline def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     

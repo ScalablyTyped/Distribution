@@ -14,7 +14,7 @@ trait DescribeModelOutput extends StObject {
   /**
     * A timestamp that shows when the model was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * If True, no inbound or outbound network calls can be made to or from the model container.
@@ -27,12 +27,17 @@ trait DescribeModelOutput extends StObject {
   var ExecutionRoleArn: RoleArn
   
   /**
+    * Specifies details of how containers in a multi-container endpoint are called.
+    */
+  var InferenceExecutionConfig: js.UndefOr[typings.awsSdk.sagemakerMod.InferenceExecutionConfig] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the model.
     */
   var ModelArn: typings.awsSdk.sagemakerMod.ModelArn
   
   /**
-    * Name of the Amazon SageMaker model.
+    * Name of the SageMaker model.
     */
   var ModelName: typings.awsSdk.sagemakerMod.ModelName
   
@@ -48,7 +53,7 @@ trait DescribeModelOutput extends StObject {
 }
 object DescribeModelOutput {
   
-  inline def apply(CreationTime: Timestamp, ExecutionRoleArn: RoleArn, ModelArn: ModelArn, ModelName: ModelName): DescribeModelOutput = {
+  inline def apply(CreationTime: js.Date, ExecutionRoleArn: RoleArn, ModelArn: ModelArn, ModelName: ModelName): DescribeModelOutput = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], ExecutionRoleArn = ExecutionRoleArn.asInstanceOf[js.Any], ModelArn = ModelArn.asInstanceOf[js.Any], ModelName = ModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeModelOutput]
   }
@@ -59,15 +64,19 @@ object DescribeModelOutput {
     
     inline def setContainersUndefined: Self = StObject.set(x, "Containers", js.undefined)
     
-    inline def setContainersVarargs(value: ContainerDefinition*): Self = StObject.set(x, "Containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: ContainerDefinition*): Self = StObject.set(x, "Containers", js.Array(value*))
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setEnableNetworkIsolation(value: Boolean): Self = StObject.set(x, "EnableNetworkIsolation", value.asInstanceOf[js.Any])
     
     inline def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "EnableNetworkIsolation", js.undefined)
     
     inline def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setInferenceExecutionConfig(value: InferenceExecutionConfig): Self = StObject.set(x, "InferenceExecutionConfig", value.asInstanceOf[js.Any])
+    
+    inline def setInferenceExecutionConfigUndefined: Self = StObject.set(x, "InferenceExecutionConfig", js.undefined)
     
     inline def setModelArn(value: ModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
     

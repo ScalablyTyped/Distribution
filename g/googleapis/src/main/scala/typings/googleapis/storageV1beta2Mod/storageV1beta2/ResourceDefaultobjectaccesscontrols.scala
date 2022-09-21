@@ -4,21 +4,75 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1beta2", "storage_v1beta2.Resource$Defaultobjectaccesscontrols")
 @js.native
-class ResourceDefaultobjectaccesscontrols protected () extends StObject {
+open class ResourceDefaultobjectaccesscontrols protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
+  def delete(): GaxiosPromise[Unit] = js.native
+  def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: ParamsResourceDefaultobjectaccesscontrolsDelete): GaxiosPromise[Unit] = js.native
+  def delete(params: ParamsResourceDefaultobjectaccesscontrolsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(
+    params: ParamsResourceDefaultobjectaccesscontrolsDelete,
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
+  ): Unit = js.native
+  def delete(params: ParamsResourceDefaultobjectaccesscontrolsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(
+    params: ParamsResourceDefaultobjectaccesscontrolsDelete,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Unit]
+  ): Unit = js.native
   /**
     * storage.defaultObjectAccessControls.delete
-    * @desc Permanently deletes the default object ACL entry for the specified
-    * entity on the specified bucket.
+    * @desc Permanently deletes the default object ACL entry for the specified entity on the specified bucket.
+    * @example
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/devstorage.full_control'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.defaultObjectAccessControls.delete({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
+    *     entity: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
     * @alias storage.defaultObjectAccessControls.delete
     * @memberOf! ()
     *
@@ -29,37 +83,13 @@ class ResourceDefaultobjectaccesscontrols protected () extends StObject {
     * @param {callback} callback The callback that handles the response.
     * @return {object} Request object
     */
-  def delete(): GaxiosPromise[Unit] = js.native
-  def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
-  def delete(params: ParamsResourceDefaultobjectaccesscontrolsDelete): GaxiosPromise[Unit] = js.native
-  def delete(params: ParamsResourceDefaultobjectaccesscontrolsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: ParamsResourceDefaultobjectaccesscontrolsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
   def delete(
     params: ParamsResourceDefaultobjectaccesscontrolsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
-  ): Unit = js.native
-  def delete(params: ParamsResourceDefaultobjectaccesscontrolsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
-  def delete(
-    params: ParamsResourceDefaultobjectaccesscontrolsDelete,
-    options: MethodOptions,
-    callback: BodyResponseCallback[Unit]
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
-  /**
-    * storage.defaultObjectAccessControls.get
-    * @desc Returns the default object ACL entry for the specified entity on
-    * the specified bucket.
-    * @alias storage.defaultObjectAccessControls.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket Name of a bucket.
-    * @param {string} params.entity The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def get(callback: BodyResponseCallback[SchemaObjectAccessControl]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
@@ -70,8 +100,8 @@ class ResourceDefaultobjectaccesscontrols protected () extends StObject {
   ): Unit = js.native
   def get(
     params: ParamsResourceDefaultobjectaccesscontrolsGet,
-    options: BodyResponseCallback[SchemaObjectAccessControl],
-    callback: BodyResponseCallback[SchemaObjectAccessControl]
+    options: BodyResponseCallback[Readable | SchemaObjectAccessControl],
+    callback: BodyResponseCallback[Readable | SchemaObjectAccessControl]
   ): Unit = js.native
   def get(params: ParamsResourceDefaultobjectaccesscontrolsGet, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def get(
@@ -79,20 +109,79 @@ class ResourceDefaultobjectaccesscontrols protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
-  
   /**
-    * storage.defaultObjectAccessControls.insert
-    * @desc Creates a new default object ACL entry on the specified bucket.
-    * @alias storage.defaultObjectAccessControls.insert
+    * storage.defaultObjectAccessControls.get
+    * @desc Returns the default object ACL entry for the specified entity on the specified bucket.
+    * @example
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/devstorage.full_control'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.defaultObjectAccessControls.get({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
+    *     entity: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bucket": "my_bucket",
+    *   //   "domain": "my_domain",
+    *   //   "email": "my_email",
+    *   //   "entity": "my_entity",
+    *   //   "entityId": "my_entityId",
+    *   //   "etag": "my_etag",
+    *   //   "generation": "my_generation",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "object": "my_object",
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * @alias storage.defaultObjectAccessControls.get
     * @memberOf! ()
     *
     * @param {object} params Parameters for request
     * @param {string} params.bucket Name of a bucket.
-    * @param {().ObjectAccessControl} params.resource Request body data
+    * @param {string} params.entity The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
     * @param {callback} callback The callback that handles the response.
     * @return {object} Request object
     */
+  def get(params: ParamsResourceDefaultobjectaccesscontrolsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceDefaultobjectaccesscontrolsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def insert(callback: BodyResponseCallback[SchemaObjectAccessControl]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
@@ -103,8 +192,8 @@ class ResourceDefaultobjectaccesscontrols protected () extends StObject {
   ): Unit = js.native
   def insert(
     params: ParamsResourceDefaultobjectaccesscontrolsInsert,
-    options: BodyResponseCallback[SchemaObjectAccessControl],
-    callback: BodyResponseCallback[SchemaObjectAccessControl]
+    options: BodyResponseCallback[Readable | SchemaObjectAccessControl],
+    callback: BodyResponseCallback[Readable | SchemaObjectAccessControl]
   ): Unit = js.native
   def insert(params: ParamsResourceDefaultobjectaccesscontrolsInsert, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def insert(
@@ -112,10 +201,163 @@ class ResourceDefaultobjectaccesscontrols protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
+  /**
+    * storage.defaultObjectAccessControls.insert
+    * @desc Creates a new default object ACL entry on the specified bucket.
+    * @example
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/devstorage.full_control'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.defaultObjectAccessControls.insert({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bucket": "my_bucket",
+    *       //   "domain": "my_domain",
+    *       //   "email": "my_email",
+    *       //   "entity": "my_entity",
+    *       //   "entityId": "my_entityId",
+    *       //   "etag": "my_etag",
+    *       //   "generation": "my_generation",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "object": "my_object",
+    *       //   "role": "my_role",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bucket": "my_bucket",
+    *   //   "domain": "my_domain",
+    *   //   "email": "my_email",
+    *   //   "entity": "my_entity",
+    *   //   "entityId": "my_entityId",
+    *   //   "etag": "my_etag",
+    *   //   "generation": "my_generation",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "object": "my_object",
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * @alias storage.defaultObjectAccessControls.insert
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.bucket Name of a bucket.
+    * @param {().ObjectAccessControl} params.requestBody Request body data
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def insert(params: ParamsResourceDefaultobjectaccesscontrolsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceDefaultobjectaccesscontrolsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
+  def list(): GaxiosPromise[SchemaObjectAccessControls] = js.native
+  def list(callback: BodyResponseCallback[SchemaObjectAccessControls]): Unit = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControls] = js.native
+  def list(params: ParamsResourceDefaultobjectaccesscontrolsList): GaxiosPromise[SchemaObjectAccessControls] = js.native
+  def list(
+    params: ParamsResourceDefaultobjectaccesscontrolsList,
+    callback: BodyResponseCallback[SchemaObjectAccessControls]
+  ): Unit = js.native
+  def list(
+    params: ParamsResourceDefaultobjectaccesscontrolsList,
+    options: BodyResponseCallback[Readable | SchemaObjectAccessControls],
+    callback: BodyResponseCallback[Readable | SchemaObjectAccessControls]
+  ): Unit = js.native
+  def list(params: ParamsResourceDefaultobjectaccesscontrolsList, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControls] = js.native
+  def list(
+    params: ParamsResourceDefaultobjectaccesscontrolsList,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaObjectAccessControls]
+  ): Unit = js.native
   /**
     * storage.defaultObjectAccessControls.list
     * @desc Retrieves default object ACL entries on the specified bucket.
+    * @example
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/devstorage.full_control'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.defaultObjectAccessControls.list({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // If present, only return default ACL listing if the bucket's current metageneration matches this value.
+    *     ifMetagenerationMatch: 'placeholder-value',
+    *     // If present, only return default ACL listing if the bucket's current metageneration does not match the given value.
+    *     ifMetagenerationNotMatch: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "items": [],
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
     * @alias storage.defaultObjectAccessControls.list
     * @memberOf! ()
     *
@@ -127,41 +369,13 @@ class ResourceDefaultobjectaccesscontrols protected () extends StObject {
     * @param {callback} callback The callback that handles the response.
     * @return {object} Request object
     */
-  def list(): GaxiosPromise[SchemaObjectAccessControls] = js.native
-  def list(callback: BodyResponseCallback[SchemaObjectAccessControls]): Unit = js.native
-  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControls] = js.native
-  def list(params: ParamsResourceDefaultobjectaccesscontrolsList): GaxiosPromise[SchemaObjectAccessControls] = js.native
+  def list(params: ParamsResourceDefaultobjectaccesscontrolsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
   def list(
     params: ParamsResourceDefaultobjectaccesscontrolsList,
-    callback: BodyResponseCallback[SchemaObjectAccessControls]
-  ): Unit = js.native
-  def list(
-    params: ParamsResourceDefaultobjectaccesscontrolsList,
-    options: BodyResponseCallback[SchemaObjectAccessControls],
-    callback: BodyResponseCallback[SchemaObjectAccessControls]
-  ): Unit = js.native
-  def list(params: ParamsResourceDefaultobjectaccesscontrolsList, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControls] = js.native
-  def list(
-    params: ParamsResourceDefaultobjectaccesscontrolsList,
-    options: MethodOptions,
-    callback: BodyResponseCallback[SchemaObjectAccessControls]
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
-  /**
-    * storage.defaultObjectAccessControls.patch
-    * @desc Updates a default object ACL entry on the specified bucket. This
-    * method supports patch semantics.
-    * @alias storage.defaultObjectAccessControls.patch
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket Name of a bucket.
-    * @param {string} params.entity The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
-    * @param {().ObjectAccessControl} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def patch(): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def patch(callback: BodyResponseCallback[SchemaObjectAccessControl]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
@@ -172,8 +386,8 @@ class ResourceDefaultobjectaccesscontrols protected () extends StObject {
   ): Unit = js.native
   def patch(
     params: ParamsResourceDefaultobjectaccesscontrolsPatch,
-    options: BodyResponseCallback[SchemaObjectAccessControl],
-    callback: BodyResponseCallback[SchemaObjectAccessControl]
+    options: BodyResponseCallback[Readable | SchemaObjectAccessControl],
+    callback: BodyResponseCallback[Readable | SchemaObjectAccessControl]
   ): Unit = js.native
   def patch(params: ParamsResourceDefaultobjectaccesscontrolsPatch, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def patch(
@@ -181,21 +395,99 @@ class ResourceDefaultobjectaccesscontrols protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
   ): Unit = js.native
-  
   /**
-    * storage.defaultObjectAccessControls.update
-    * @desc Updates a default object ACL entry on the specified bucket.
-    * @alias storage.defaultObjectAccessControls.update
+    * storage.defaultObjectAccessControls.patch
+    * @desc Updates a default object ACL entry on the specified bucket. This method supports patch semantics.
+    * @example
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/devstorage.full_control'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.defaultObjectAccessControls.patch({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
+    *     entity: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bucket": "my_bucket",
+    *       //   "domain": "my_domain",
+    *       //   "email": "my_email",
+    *       //   "entity": "my_entity",
+    *       //   "entityId": "my_entityId",
+    *       //   "etag": "my_etag",
+    *       //   "generation": "my_generation",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "object": "my_object",
+    *       //   "role": "my_role",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bucket": "my_bucket",
+    *   //   "domain": "my_domain",
+    *   //   "email": "my_email",
+    *   //   "entity": "my_entity",
+    *   //   "entityId": "my_entityId",
+    *   //   "etag": "my_etag",
+    *   //   "generation": "my_generation",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "object": "my_object",
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * @alias storage.defaultObjectAccessControls.patch
     * @memberOf! ()
     *
     * @param {object} params Parameters for request
     * @param {string} params.bucket Name of a bucket.
     * @param {string} params.entity The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
-    * @param {().ObjectAccessControl} params.resource Request body data
+    * @param {().ObjectAccessControl} params.requestBody Request body data
     * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
     * @param {callback} callback The callback that handles the response.
     * @return {object} Request object
     */
+  def patch(params: ParamsResourceDefaultobjectaccesscontrolsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceDefaultobjectaccesscontrolsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def update(callback: BodyResponseCallback[SchemaObjectAccessControl]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
@@ -206,13 +498,105 @@ class ResourceDefaultobjectaccesscontrols protected () extends StObject {
   ): Unit = js.native
   def update(
     params: ParamsResourceDefaultobjectaccesscontrolsUpdate,
-    options: BodyResponseCallback[SchemaObjectAccessControl],
-    callback: BodyResponseCallback[SchemaObjectAccessControl]
+    options: BodyResponseCallback[Readable | SchemaObjectAccessControl],
+    callback: BodyResponseCallback[Readable | SchemaObjectAccessControl]
   ): Unit = js.native
   def update(params: ParamsResourceDefaultobjectaccesscontrolsUpdate, options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def update(
     params: ParamsResourceDefaultobjectaccesscontrolsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaObjectAccessControl]
+  ): Unit = js.native
+  /**
+    * storage.defaultObjectAccessControls.update
+    * @desc Updates a default object ACL entry on the specified bucket.
+    * @example
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/devstorage.full_control'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.defaultObjectAccessControls.update({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
+    *     entity: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bucket": "my_bucket",
+    *       //   "domain": "my_domain",
+    *       //   "email": "my_email",
+    *       //   "entity": "my_entity",
+    *       //   "entityId": "my_entityId",
+    *       //   "etag": "my_etag",
+    *       //   "generation": "my_generation",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "object": "my_object",
+    *       //   "role": "my_role",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bucket": "my_bucket",
+    *   //   "domain": "my_domain",
+    *   //   "email": "my_email",
+    *   //   "entity": "my_entity",
+    *   //   "entityId": "my_entityId",
+    *   //   "etag": "my_etag",
+    *   //   "generation": "my_generation",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "object": "my_object",
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * @alias storage.defaultObjectAccessControls.update
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.bucket Name of a bucket.
+    * @param {string} params.entity The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
+    * @param {().ObjectAccessControl} params.requestBody Request body data
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def update(params: ParamsResourceDefaultobjectaccesscontrolsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceDefaultobjectaccesscontrolsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

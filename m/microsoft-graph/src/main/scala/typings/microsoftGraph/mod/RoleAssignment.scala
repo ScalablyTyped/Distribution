@@ -47,7 +47,7 @@ object RoleAssignment {
     
     inline def setResourceScopesUndefined: Self = StObject.set(x, "resourceScopes", js.undefined)
     
-    inline def setResourceScopesVarargs(value: String*): Self = StObject.set(x, "resourceScopes", js.Array(value :_*))
+    inline def setResourceScopesVarargs(value: String*): Self = StObject.set(x, "resourceScopes", js.Array(value*))
     
     inline def setRoleDefinition(value: NullableOption[RoleDefinition]): Self = StObject.set(x, "roleDefinition", value.asInstanceOf[js.Any])
     

@@ -22,20 +22,20 @@ object global {
     
     @JSGlobal("fixture.json")
     @js.native
-    def json: js.Array[js.Any] = js.native
-    inline def json_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
+    def json: js.Array[Any] = js.native
+    inline def json_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
     
-    inline def load(file1: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def load(file1: String, append: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def load(file1: String, file2: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def load(file1: String, file2: String, append: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def load(file1: String, file2: String, file3: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def load(file1: String, file2: String, file3: String, append: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def load(file1: String, file2: String, file3: String, file4: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], file4.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def load(file1: String, file2: String, file3: String, file4: String, append: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], file4.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def load(file1: String, file2: String, file3: String, file4: String, file5: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], file4.asInstanceOf[js.Any], file5.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def load(file1: String, file2: String, file3: String, file4: String, file5: String, append: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], file4.asInstanceOf[js.Any], file5.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def load(files: String*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(files.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def load(file1: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def load(file1: String, append: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def load(file1: String, file2: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def load(file1: String, file2: String, append: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def load(file1: String, file2: String, file3: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def load(file1: String, file2: String, file3: String, append: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def load(file1: String, file2: String, file3: String, file4: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], file4.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def load(file1: String, file2: String, file3: String, file4: String, append: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], file4.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def load(file1: String, file2: String, file3: String, file4: String, file5: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], file4.asInstanceOf[js.Any], file5.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def load(file1: String, file2: String, file3: String, file4: String, file5: String, append: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(file1.asInstanceOf[js.Any], file2.asInstanceOf[js.Any], file3.asInstanceOf[js.Any], file4.asInstanceOf[js.Any], file5.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def load(files: String*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(files.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
     
     inline def set(htmlStr1: String): HTMLElement | js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(htmlStr1.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | js.Array[HTMLElement]]
     inline def set(htmlStr1: String, append: Boolean): HTMLElement | js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(htmlStr1.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | js.Array[HTMLElement]]
@@ -54,7 +54,7 @@ object global {
       htmlStr5: String,
       append: Boolean
     ): HTMLElement | js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(htmlStr1.asInstanceOf[js.Any], htmlStr2.asInstanceOf[js.Any], htmlStr3.asInstanceOf[js.Any], htmlStr4.asInstanceOf[js.Any], htmlStr5.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | js.Array[HTMLElement]]
-    inline def set(htmlStrs: String*): HTMLElement | js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(htmlStrs.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | js.Array[HTMLElement]]
+    inline def set(htmlStrs: String*): HTMLElement | js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(htmlStrs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[HTMLElement | js.Array[HTMLElement]]
     
     inline def setBase(fixtureBasePath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBase")(fixtureBasePath.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }

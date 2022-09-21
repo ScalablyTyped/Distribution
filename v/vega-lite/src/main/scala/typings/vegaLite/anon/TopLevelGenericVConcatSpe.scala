@@ -1,17 +1,14 @@
 package typings.vegaLite.anon
 
 import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.parameterMod.Parameter
-import typings.vegaLite.repeatMod.RepeatSpec
-import typings.vegaLite.specLayerMod.LayerSpec
-import typings.vegaLite.specMod.GenericSpec
+import typings.vegaLite.specMod.NonNormalizedSpec
 import typings.vegaLite.specMod._TopLevelSpec
-import typings.vegaLite.specUnitMod.FacetedUnitSpec
 import typings.vegaLite.srcResolveMod.Resolve
 import typings.vegaLite.titleMod.TitleParams
 import typings.vegaLite.toplevelMod.AutoSizeParams
 import typings.vegaLite.toplevelMod.AutosizeType
 import typings.vegaLite.toplevelMod.Padding
+import typings.vegaLite.toplevelMod.TopLevelParameter
 import typings.vegaLite.transformMod.Transform
 import typings.vegaLite.utilMod.Dict
 import typings.vegaLite.vegaLiteStrings.flush
@@ -22,13 +19,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined vega-lite.vega-lite/build/src/spec/toplevel.TopLevel<vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<vega-lite.vega-lite/build/src/spec.GenericSpec<vega-lite.vega-lite/build/src/spec/unit.FacetedUnitSpec, vega-lite.vega-lite/build/src/spec/layer.LayerSpec, vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec, vega-lite.vega-lite/build/src/channeldef.Field>>> */
+/* Inlined vega-lite.vega-lite/build/src/spec/toplevel.TopLevel<vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<vega-lite.vega-lite/build/src/spec.NonNormalizedSpec>> */
 trait TopLevelGenericVConcatSpe
   extends StObject
      with _TopLevelSpec {
   
   /**
-    * URL to [JSON schema](http://json-schema.org/) for a Vega-Lite specification. Unless you have a reason to change this, use `https://vega.github.io/schema/vega-lite/v4.json`. Setting the `$schema` property allows automatic validation and autocomplete in editors that support JSON schema.
+    * URL to [JSON schema](http://json-schema.org/) for a Vega-Lite specification. Unless you have a reason to change this, use `https://vega.github.io/schema/vega-lite/v5.json`. Setting the `$schema` property allows automatic validation and autocomplete in editors that support JSON schema.
     * @format uri
     */
   @JSName("$schema")
@@ -101,9 +98,9 @@ trait TopLevelGenericVConcatSpe
   var padding: js.UndefOr[Padding | ExprRef | SignalRef] = js.undefined
   
   /**
-    * Dynamic variables that parameterize a visualization.
+    * Dynamic variables or selections that parameterize a visualization.
     */
-  var params: js.UndefOr[js.Array[Parameter]] = js.undefined
+  var params: js.UndefOr[js.Array[TopLevelParameter]] = js.undefined
   
   /**
     * Scale, axis, and legend resolutions for view composition specifications.
@@ -131,22 +128,16 @@ trait TopLevelGenericVConcatSpe
     * Optional metadata that will be passed to Vega.
     * This object is completely ignored by Vega and Vega-Lite and can be used for custom metadata.
     */
-  var usermeta: js.UndefOr[Dict[js.Any]] = js.undefined
+  var usermeta: js.UndefOr[Dict[Any]] = js.undefined
   
   /**
     * A list of views to be concatenated and put into a column.
     */
-  var vconcat: js.Array[
-    GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, typings.vegaLite.channeldefMod.Field]
-  ]
+  var vconcat: js.Array[NonNormalizedSpec]
 }
 object TopLevelGenericVConcatSpe {
   
-  inline def apply(
-    vconcat: js.Array[
-      GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, typings.vegaLite.channeldefMod.Field]
-    ]
-  ): TopLevelGenericVConcatSpe = {
+  inline def apply(vconcat: js.Array[NonNormalizedSpec]): TopLevelGenericVConcatSpe = {
     val __obj = js.Dynamic.literal(vconcat = vconcat.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopLevelGenericVConcatSpe]
   }
@@ -199,11 +190,11 @@ object TopLevelGenericVConcatSpe {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setParams(value: js.Array[Parameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[TopLevelParameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setParamsVarargs(value: Parameter*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: TopLevelParameter*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
@@ -217,26 +208,20 @@ object TopLevelGenericVConcatSpe {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
     
     inline def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value*))
     
-    inline def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
+    inline def setUsermeta(value: Dict[Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
     
     inline def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)
     
-    inline def setVconcat(
-      value: js.Array[
-          GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, typings.vegaLite.channeldefMod.Field]
-        ]
-    ): Self = StObject.set(x, "vconcat", value.asInstanceOf[js.Any])
+    inline def setVconcat(value: js.Array[NonNormalizedSpec]): Self = StObject.set(x, "vconcat", value.asInstanceOf[js.Any])
     
-    inline def setVconcatVarargs(
-      value: (GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, typings.vegaLite.channeldefMod.Field])*
-    ): Self = StObject.set(x, "vconcat", js.Array(value :_*))
+    inline def setVconcatVarargs(value: NonNormalizedSpec*): Self = StObject.set(x, "vconcat", js.Array(value*))
   }
 }

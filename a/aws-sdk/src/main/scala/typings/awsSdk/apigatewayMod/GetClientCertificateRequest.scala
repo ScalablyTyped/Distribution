@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetClientCertificateRequest extends StObject {
   
   /**
-    * [Required] The identifier of the ClientCertificate resource to be described.
+    * The identifier of the ClientCertificate resource to be described.
     */
   var clientCertificateId: String
 }

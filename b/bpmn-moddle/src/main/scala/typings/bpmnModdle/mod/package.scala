@@ -1,140 +1,137 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 // tslint:disable-next-line:no-empty-interface
-type Artifact = typings.bpmnModdle.mod.BaseElement
+type Artifact = BaseElement
 
 // tslint:disable-next-line:no-empty-interface
-type Auditing = typings.bpmnModdle.mod.BaseElement
+type Auditing = BaseElement
 
 // tslint:disable-next-line:no-empty-interface
-type BPMNEdge = typings.bpmnModdle.mod.LabeledEdge
+type BPMNEdge = LabeledEdge
 
 // tslint:disable-next-line:no-empty-interface
-type BPMNLabel = typings.bpmnModdle.mod.Label
+type BPMNLabel = Label
 
 // tslint:disable-next-line:no-empty-interface
-type BPMNLabelStyle = typings.bpmnModdle.mod.Style
+type BPMNLabelStyle = Style
 
 // tslint:disable-next-line:no-empty-interface
-type BPMNPlane = typings.bpmnModdle.mod.Plane
+type BPMNPlane = Plane
 
 // tslint:disable-next-line:no-empty-interface
-type BPMNShape = typings.bpmnModdle.mod.LabeledShape
+type BPMNShape = LabeledShape
 
 // tslint:disable-next-line:no-empty-interface
-type Bounds = typings.bpmnModdle.mod.TypeDerived
+type Bounds = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type CancelEventDefinition = typings.bpmnModdle.mod.EventDefinition
+type CancelEventDefinition = EventDefinition
 
 // tslint:disable-next-line:no-empty-interface
-type ColoredEdge = typings.bpmnModdle.mod.TypeDerived
+type ColoredEdge = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type ColoredShape = typings.bpmnModdle.mod.TypeDerived
+type ColoredShape = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type Conversation = typings.bpmnModdle.mod.ConversationNode
+type Conversation = ConversationNode
 
 // tslint:disable-next-line:no-empty-interface
-type DataInputAssociation = typings.bpmnModdle.mod.DataAssociation
+type DataInputAssociation = DataAssociation
 
 // tslint:disable-next-line:no-empty-interface
-type DataOutputAssociation = typings.bpmnModdle.mod.DataAssociation
+type DataOutputAssociation = DataAssociation
 
 // tslint:disable-next-line:no-empty-interface
-type Diagram = typings.bpmnModdle.mod.TypeDerived
+type Diagram = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type DiagramElement = typings.bpmnModdle.mod.TypeDerived
+type DiagramElement = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type Edge = typings.bpmnModdle.mod.TypeDerived
+type Edge = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type EndEvent = typings.bpmnModdle.mod.ThrowEvent
+type EndEvent = ThrowEvent
 
 // tslint:disable-next-line:no-empty-interface
-type EndPoint = typings.bpmnModdle.mod.RootElement
+type EndPoint = RootElement
 
 // tslint:disable-next-line:no-empty-interface
-type EventDefinition = typings.bpmnModdle.mod.RootElement
+type EventDefinition = RootElement
 
 // tslint:disable-next-line:no-empty-interface
-type GlobalConversation = typings.bpmnModdle.mod.Collaboration
+type GlobalConversation = Collaboration
 
 // tslint:disable-next-line:no-empty-interface
-type GlobalManualTask = typings.bpmnModdle.mod.GlobalTask
+type GlobalManualTask = GlobalTask
 
 // tslint:disable-next-line:no-empty-interface
-type HumanPerformer = typings.bpmnModdle.mod.Performer
+type HumanPerformer = Performer
 
 // tslint:disable-next-line:no-empty-interface
-type ImplicitThrowEvent = typings.bpmnModdle.mod.ThrowEvent
+type ImplicitThrowEvent = ThrowEvent
 
-type ImportFn = js.Function3[
-/* err */ typings.std.Error, 
-/* definitions */ typings.bpmnModdle.mod.Definitions, 
-/* parseContext */ js.Any, 
-scala.Unit]
+type ImportFn = js.Function3[/* err */ js.Error, /* definitions */ Definitions, /* parseContext */ Any, Unit]
 
 // tslint:disable-next-line:no-empty-interface
-type IntermediateCatchEvent = typings.bpmnModdle.mod.CatchEvent
+type IntermediateCatchEvent = CatchEvent
 
 // tslint:disable-next-line:no-empty-interface
-type IntermediateThrowEvent = typings.bpmnModdle.mod.ThrowEvent
+type IntermediateThrowEvent = ThrowEvent
 
 // tslint:disable-next-line:no-empty-interface
-type Label = typings.bpmnModdle.mod.TypeDerived
+type Label = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type LabeledEdge = typings.bpmnModdle.mod.TypeDerived
+type LabeledEdge = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type LabeledShape = typings.bpmnModdle.mod.TypeDerived
+type LabeledShape = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type LoopCharacteristics = typings.bpmnModdle.mod.BaseElement
+type LoopCharacteristics = BaseElement
 
 // tslint:disable-next-line:no-empty-interface
-type ManualTask = typings.bpmnModdle.mod.Task
+type ManualTask = Task
 
 // tslint:disable-next-line:no-empty-interface
-type Monitoring = typings.bpmnModdle.mod.BaseElement
+type Monitoring = BaseElement
 
 // tslint:disable-next-line:no-empty-interface
-type Node = typings.bpmnModdle.mod.TypeDerived
+type Node = TypeDerived
 
-type Option = org.scalablytyped.runtime.StringDictionary[js.Any]
-
-// tslint:disable-next-line:no-empty-interface
-type ParallelGateway = typings.bpmnModdle.mod.Gateway
+type Option = StringDictionary[Any]
 
 // tslint:disable-next-line:no-empty-interface
-type Performer = typings.bpmnModdle.mod.ResourceRole
+type ParallelGateway = Gateway
 
 // tslint:disable-next-line:no-empty-interface
-type Plane = typings.bpmnModdle.mod.TypeDerived
+type Performer = ResourceRole
 
 // tslint:disable-next-line:no-empty-interface
-type PotentialOwner = typings.bpmnModdle.mod.Performer
+type Plane = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type Rendering = typings.bpmnModdle.mod.BaseElement
+type PotentialOwner = Performer
 
 // tslint:disable-next-line:no-empty-interface
-type RootElement = typings.bpmnModdle.mod.BaseElement
+type Rendering = BaseElement
 
 // tslint:disable-next-line:no-empty-interface
-type Shape = typings.bpmnModdle.mod.TypeDerived
+type RootElement = BaseElement
 
 // tslint:disable-next-line:no-empty-interface
-type Style = typings.bpmnModdle.mod.TypeDerived
+type Shape = TypeDerived
 
 // tslint:disable-next-line:no-empty-interface
-type TerminateEventDefinition = typings.bpmnModdle.mod.EventDefinition
+type Style = TypeDerived
+
+// tslint:disable-next-line:no-empty-interface
+type TerminateEventDefinition = EventDefinition

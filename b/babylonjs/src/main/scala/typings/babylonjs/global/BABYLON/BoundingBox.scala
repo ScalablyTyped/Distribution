@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.BoundingBox")
 @js.native
-class BoundingBox protected ()
+open class BoundingBox protected ()
   extends StObject
      with typings.babylonjs.BABYLON.BoundingBox {
   /**
@@ -28,7 +28,7 @@ class BoundingBox protected ()
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
+    * Unlike isInFrustum this checks the full bounding box
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */
@@ -80,7 +80,7 @@ object BoundingBox {
     * Tests if a bounding box defined with 8 vectors is entirely inside frustum planes
     * @param boundingVectors defines an array of 8 vectors representing a bounding box
     * @param frustumPlanes defines the frustum planes to test
-    * @return true if there is an inclusion
+    * @returns true if there is an inclusion
     */
   inline def IsCompletelyInFrustum(
     boundingVectors: js.Array[DeepImmutable[typings.babylonjs.BABYLON.Vector3]],
@@ -91,14 +91,14 @@ object BoundingBox {
     * Tests if a bounding box defined with 8 vectors intersects frustum planes
     * @param boundingVectors defines an array of 8 vectors representing a bounding box
     * @param frustumPlanes defines the frustum planes to test
-    * @return true if there is an intersection
+    * @returns true if there is an intersection
     */
   inline def IsInFrustum(
     boundingVectors: js.Array[DeepImmutable[typings.babylonjs.BABYLON.Vector3]],
     frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.BABYLON.Plane]]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInFrustum")(boundingVectors.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("BABYLON.BoundingBox.TmpVector3")
+  @JSGlobal("BABYLON.BoundingBox._TmpVector3")
   @js.native
-  val TmpVector3: js.Any = js.native
+  val _TmpVector3: Any = js.native
 }

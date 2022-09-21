@@ -10,7 +10,7 @@ trait Translation
   extends StObject
      with Base {
   
-  def addCatalogs(catalogs: StringDictionary[js.Any]): Unit = js.native
+  def addCatalogs(catalogs: StringDictionary[Any]): Unit = js.native
   
   def enableDomScan(enable: Boolean): Unit = js.native
   

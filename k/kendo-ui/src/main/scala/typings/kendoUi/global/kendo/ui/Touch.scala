@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Touch")
 @js.native
-class Touch protected ()
+open class Touch protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Touch {
   def this(element: Element) = this()

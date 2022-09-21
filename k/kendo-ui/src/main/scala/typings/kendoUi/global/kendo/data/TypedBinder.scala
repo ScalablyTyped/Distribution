@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.TypedBinder")
 @js.native
-class TypedBinder ()
+open class TypedBinder ()
   extends StObject
      with typings.kendoUi.kendo.data.TypedBinder

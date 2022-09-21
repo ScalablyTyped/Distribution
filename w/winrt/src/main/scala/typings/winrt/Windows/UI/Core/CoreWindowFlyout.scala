@@ -20,7 +20,7 @@ object CoreWindowFlyout {
     isInteractionDelayed: Double,
     maxSize: Size,
     minSize: Size,
-    onshowing: js.Any,
+    onshowing: Any,
     showAsync: () => IAsyncOperation[IUICommand],
     title: String
   ): CoreWindowFlyout = {

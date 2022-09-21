@@ -10,7 +10,7 @@ trait IgHierarchicalGridColumnLayout
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the foreignKey of the columnLayout. This is also the column key of the parent grid.

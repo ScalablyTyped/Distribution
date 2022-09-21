@@ -8,7 +8,7 @@ trait TargetedManagedAppPolicyAssignment
   extends StObject
      with Entity {
   
-  // Identifier for deployment of a group or app
+  // Identifier for deployment to a group or app
   var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.undefined
 }
 object TargetedManagedAppPolicyAssignment {

@@ -10,7 +10,10 @@ trait PatchConfig extends StObject {
   var apt: js.UndefOr[AptSettings] = js.undefined
   
   /** Goo update settings. Use this setting to override the default `goo` patch rules. */
-  var goo: js.UndefOr[js.Any] = js.undefined
+  var goo: js.UndefOr[Any] = js.undefined
+  
+  /** Allows the patch job to run on Managed instance groups (MIGs). */
+  var migInstancesAllowed: js.UndefOr[Boolean] = js.undefined
   
   /** The `ExecStep` to run after the patch update. */
   var postStep: js.UndefOr[ExecStep] = js.undefined
@@ -43,9 +46,13 @@ object PatchConfig {
     
     inline def setAptUndefined: Self = StObject.set(x, "apt", js.undefined)
     
-    inline def setGoo(value: js.Any): Self = StObject.set(x, "goo", value.asInstanceOf[js.Any])
+    inline def setGoo(value: Any): Self = StObject.set(x, "goo", value.asInstanceOf[js.Any])
     
     inline def setGooUndefined: Self = StObject.set(x, "goo", js.undefined)
+    
+    inline def setMigInstancesAllowed(value: Boolean): Self = StObject.set(x, "migInstancesAllowed", value.asInstanceOf[js.Any])
+    
+    inline def setMigInstancesAllowedUndefined: Self = StObject.set(x, "migInstancesAllowed", js.undefined)
     
     inline def setPostStep(value: ExecStep): Self = StObject.set(x, "postStep", value.asInstanceOf[js.Any])
     

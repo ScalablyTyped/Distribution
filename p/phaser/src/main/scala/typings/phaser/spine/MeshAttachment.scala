@@ -20,7 +20,7 @@ trait MeshAttachment
   
   def newLinkedMesh(): MeshAttachment
   
-  /* private */ var parentMesh: js.Any
+  /* private */ var parentMesh: Any
   
   var path: String
   
@@ -56,7 +56,7 @@ object MeshAttachment {
     id: Double,
     name: String,
     newLinkedMesh: () => MeshAttachment,
-    parentMesh: js.Any,
+    parentMesh: Any,
     path: String,
     region: TextureRegion,
     regionUVs: ArrayLike[Double],
@@ -79,7 +79,7 @@ object MeshAttachment {
     
     inline def setEdges(value: js.Array[Double]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    inline def setEdgesVarargs(value: Double*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: Double*): Self = StObject.set(x, "edges", js.Array(value*))
     
     inline def setGetParentMesh(value: () => MeshAttachment): Self = StObject.set(x, "getParentMesh", js.Any.fromFunction0(value))
     
@@ -89,7 +89,7 @@ object MeshAttachment {
     
     inline def setNewLinkedMesh(value: () => MeshAttachment): Self = StObject.set(x, "newLinkedMesh", js.Any.fromFunction0(value))
     
-    inline def setParentMesh(value: js.Any): Self = StObject.set(x, "parentMesh", value.asInstanceOf[js.Any])
+    inline def setParentMesh(value: Any): Self = StObject.set(x, "parentMesh", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
@@ -103,7 +103,7 @@ object MeshAttachment {
     
     inline def setTriangles(value: js.Array[Double]): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
     
-    inline def setTrianglesVarargs(value: Double*): Self = StObject.set(x, "triangles", js.Array(value :_*))
+    inline def setTrianglesVarargs(value: Double*): Self = StObject.set(x, "triangles", js.Array(value*))
     
     inline def setUpdateUVs(value: () => Unit): Self = StObject.set(x, "updateUVs", js.Any.fromFunction0(value))
     

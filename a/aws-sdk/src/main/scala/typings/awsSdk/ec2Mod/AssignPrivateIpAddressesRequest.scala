@@ -12,6 +12,16 @@ trait AssignPrivateIpAddressesRequest extends StObject {
   var AllowReassignment: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The number of IPv4 prefixes that Amazon Web Services automatically assigns to the network interface. You cannot use this option if you use the Ipv4 Prefixes option.
+    */
+  var Ipv4PrefixCount: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * One or more IPv4 prefixes assigned to the network interface. You cannot use this option if you use the Ipv4PrefixCount option.
+    */
+  var Ipv4Prefixes: js.UndefOr[IpPrefixList] = js.undefined
+  
+  /**
     * The ID of the network interface.
     */
   var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId
@@ -39,13 +49,23 @@ object AssignPrivateIpAddressesRequest {
     
     inline def setAllowReassignmentUndefined: Self = StObject.set(x, "AllowReassignment", js.undefined)
     
+    inline def setIpv4PrefixCount(value: Integer): Self = StObject.set(x, "Ipv4PrefixCount", value.asInstanceOf[js.Any])
+    
+    inline def setIpv4PrefixCountUndefined: Self = StObject.set(x, "Ipv4PrefixCount", js.undefined)
+    
+    inline def setIpv4Prefixes(value: IpPrefixList): Self = StObject.set(x, "Ipv4Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setIpv4PrefixesUndefined: Self = StObject.set(x, "Ipv4Prefixes", js.undefined)
+    
+    inline def setIpv4PrefixesVarargs(value: String*): Self = StObject.set(x, "Ipv4Prefixes", js.Array(value*))
+    
     inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     inline def setPrivateIpAddresses(value: PrivateIpAddressStringList): Self = StObject.set(x, "PrivateIpAddresses", value.asInstanceOf[js.Any])
     
     inline def setPrivateIpAddressesUndefined: Self = StObject.set(x, "PrivateIpAddresses", js.undefined)
     
-    inline def setPrivateIpAddressesVarargs(value: String*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value :_*))
+    inline def setPrivateIpAddressesVarargs(value: String*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value*))
     
     inline def setSecondaryPrivateIpAddressCount(value: Integer): Self = StObject.set(x, "SecondaryPrivateIpAddressCount", value.asInstanceOf[js.Any])
     

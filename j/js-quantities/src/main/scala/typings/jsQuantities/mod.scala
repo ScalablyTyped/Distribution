@@ -16,7 +16,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("js-quantities", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Qty {
     def this(value: Source) = this()
@@ -120,7 +120,7 @@ object mod extends Shortcut {
     def apply(value: Double, unit: String): Qty = js.native
     def apply(value: Source): Qty = js.native
     
-    val Error: js.Any = js.native
+    val Error: Any = js.native
     
     def divSafe(n1: Double, n2: Double): Double = js.native
     

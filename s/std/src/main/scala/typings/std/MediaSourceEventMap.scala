@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MediaSourceEventMap extends StObject {
   
+  /* standard dom */
   var sourceclose: Event
   
+  /* standard dom */
   var sourceended: Event
   
+  /* standard dom */
   var sourceopen: Event
 }
 object MediaSourceEventMap {

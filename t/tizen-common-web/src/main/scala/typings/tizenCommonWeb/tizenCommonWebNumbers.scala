@@ -83,6 +83,10 @@ object tizenCommonWebNumbers {
   inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
+  sealed trait `3600` extends StObject
+  inline def `3600`: `3600` = 3600.asInstanceOf[`3600`]
+  
+  @js.native
   sealed trait `4` extends StObject
   inline def `4`: `4` = 4.asInstanceOf[`4`]
   
@@ -95,12 +99,24 @@ object tizenCommonWebNumbers {
   inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
+  sealed trait `60` extends StObject
+  inline def `60`: `60` = 60.asInstanceOf[`60`]
+  
+  @js.native
+  sealed trait `604800` extends StObject
+  inline def `604800`: `604800` = 604800.asInstanceOf[`604800`]
+  
+  @js.native
   sealed trait `7` extends StObject
   inline def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
   sealed trait `8` extends StObject
   inline def `8`: `8` = 8.asInstanceOf[`8`]
+  
+  @js.native
+  sealed trait `86400` extends StObject
+  inline def `86400`: `86400` = 86400.asInstanceOf[`86400`]
   
   @js.native
   sealed trait `9` extends StObject

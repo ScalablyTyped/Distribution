@@ -13,14 +13,14 @@ trait ScreenPoint
   /**
     * The x coordinate.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#ScreenPoint)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#ScreenPoint)
     */
   var x: Double
   
   /**
     * The y coordinate.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#ScreenPoint)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#ScreenPoint)
     */
   var y: Double
 }

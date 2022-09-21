@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "md5-hex" : "3.0.1"
+      "md5-hex" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "md5-hex" : "3.0.1"
+      "md5-hex" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

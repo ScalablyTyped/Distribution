@@ -10,7 +10,7 @@ trait OrderValueDef
   extends StObject
      with ConditionValueDefMixins[Double]
      with ValueDef[Double | ExprRef | SignalRef]
-     with _ChannelDef[js.Any]
+     with _ChannelDef[Any]
 object OrderValueDef {
   
   inline def apply(value: Double | ExprRef | SignalRef): OrderValueDef = {

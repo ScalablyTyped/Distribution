@@ -34,14 +34,16 @@ trait CRL
      with ASN1Object {
   
   /**
-    * get PEM formatted CRL string after signed
-    * @return PEM formatted string of certificate
+    * get PEM formatted CRL string after signed.
+    * @return PEM formatted string of CRL
+    * @description
+    * This method returns a string of PEM formatted CRL.
     * @example
-    * var cert = new KJUR.asn1.x509.CRL({'tbsobj': tbs, 'rsaprvkey': prvKey});
-    * cert.sign();
-    * var sPEM =  cert.getPEMString();
+    * crl = new KJUR.asn1.x509.CRL({...});
+    * crl.getPEM() →
+    * "-----BEGIN X509 CRL-----\r\n..."
     */
-  def getPEMString(): String
+  def getPEM(): String
   
   /**
     * sign TBSCertList and set signature value internally
@@ -57,7 +59,7 @@ object CRL {
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
-    getPEMString: () => String,
+    getPEM: () => String,
     getValueHex: () => String,
     hL: String,
     hT: String,
@@ -66,13 +68,13 @@ object CRL {
     isModified: String,
     sign: () => Unit
   ): CRL = {
-    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getPEMString = js.Any.fromFunction0(getPEMString), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], sign = js.Any.fromFunction0(sign))
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getPEM = js.Any.fromFunction0(getPEM), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], sign = js.Any.fromFunction0(sign), params = null)
     __obj.asInstanceOf[CRL]
   }
   
   extension [Self <: CRL](x: Self) {
     
-    inline def setGetPEMString(value: () => String): Self = StObject.set(x, "getPEMString", js.Any.fromFunction0(value))
+    inline def setGetPEM(value: () => String): Self = StObject.set(x, "getPEM", js.Any.fromFunction0(value))
     
     inline def setSign(value: () => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction0(value))
   }

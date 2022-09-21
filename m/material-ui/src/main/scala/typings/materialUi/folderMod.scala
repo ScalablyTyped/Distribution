@@ -10,10 +10,10 @@ object folderMod {
   
   @JSImport("material-ui/svg-icons/file/folder", JSImport.Default)
   @js.native
-  class default () extends FileFolder
+  open class default () extends FileFolder
   
   @JSImport("material-ui/svg-icons/file/folder", "FileFolder")
   @js.native
-  class FileFolder ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class FileFolder ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

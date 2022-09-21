@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientIam.anon
 
+import typings.maximMazurokGapiClientIam.gapi.client.iam.UploadServiceAccountKeyRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +27,8 @@ trait QuotaUser extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * The `name` parameter's value depends on the target resource for the request, namely [`projects`](/iam/reference/rest/v1/projects.roles) or
-    * [`organizations`](/iam/reference/rest/v1/organizations.roles). Each resource type's `name` value format is described below: *
-    * [`projects.roles.patch()`](/iam/reference/rest/v1/projects.roles/patch): `projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}`. This method updates only [custom
-    * roles](/iam/docs/understanding-custom-roles) that have been created at the project level. Example request URL:
-    * `https://iam.googleapis.com/v1/projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}` * [`organizations.roles.patch()`](/iam/reference/rest/v1/organizations.roles/patch):
-    * `organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ROLE_ID}`. This method updates only [custom roles](/iam/docs/understanding-custom-roles) that have been created at the
-    * organization level. Example request URL: `https://iam.googleapis.com/v1/organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ROLE_ID}` Note: Wildcard (*) values are invalid; you must
-    * specify a complete project ID or organization ID.
+    * The resource name of the service account in the following format: `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`. Using `-` as a wildcard for the `PROJECT_ID` will infer the
+    * project from the account. The `ACCOUNT` value can be the `email` address or the `unique_id` of the service account.
     */
   var name: String
   
@@ -46,8 +41,8 @@ trait QuotaUser extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** A mask describing which fields in the Role have changed. */
-  var updateMask: js.UndefOr[String] = js.undefined
+  /** Request body */
+  var resource: UploadServiceAccountKeyRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -57,8 +52,8 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(name: String): QuotaUser = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: UploadServiceAccountKeyRequest): QuotaUser = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
   
@@ -102,9 +97,7 @@ object QuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setResource(value: UploadServiceAccountKeyRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

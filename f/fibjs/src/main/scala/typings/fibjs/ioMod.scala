@@ -17,13 +17,13 @@ object ioMod {
   
   @JSImport("io", "BufferedStream")
   @js.native
-  class BufferedStream ()
+  open class BufferedStream ()
     extends StObject
        with ClassBufferedStream
   
   @JSImport("io", "MemoryStream")
   @js.native
-  class MemoryStream ()
+  open class MemoryStream ()
     extends StObject
        with ClassMemoryStream
   

@@ -13,7 +13,6 @@ import typings.phaser.Phaser.Types.Input.InputConfiguration
 import typings.phaser.Phaser.Types.Input.InteractiveObject
 import typings.phaser.Phaser.Types.Physics.Arcade._ArcadeColliderType
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,6 +35,49 @@ trait GameObject
     * An active object is one which is having its logic and internal systems updated.
     */
   var active: Boolean = js.native
+  
+  /**
+    * Adds this Game Object to the given Display List.
+    * 
+    * If no Display List is specified, it will default to the Display List owned by the Scene to which
+    * this Game Object belongs.
+    * 
+    * A Game Object can only exist on one Display List at any given time, but may move freely between them.
+    * 
+    * If this Game Object is already on another Display List when this method is called, it will first
+    * be removed from it, before being added to the new list.
+    * 
+    * You can query which list it is on by looking at the `Phaser.GameObjects.GameObject#displayList` property.
+    * 
+    * If a Game Object isn't on any display list, it will not be rendered. If you just wish to temporarly
+    * disable it from rendering, consider using the `setVisible` method, instead.
+    * @param displayList The Display List to add to. Defaults to the Scene Display List.
+    */
+  def addToDisplayList(): this.type = js.native
+  def addToDisplayList(displayList: DisplayList): this.type = js.native
+  def addToDisplayList(displayList: Layer): this.type = js.native
+  
+  /**
+    * Adds this Game Object to the Update List belonging to the Scene.
+    * 
+    * When a Game Object is added to the Update List it will have its `preUpdate` method called
+    * every game frame. This method is passed two parameters: `delta` and `time`.
+    * 
+    * If you wish to run your own logic within `preUpdate` then you should always call
+    * `preUpdate.super(delta, time)` within it, or it may fail to process required operations,
+    * such as Sprite animations.
+    */
+  def addToUpdateList(): this.type = js.native
+  
+  /**
+    * This callback is invoked when this Game Object is added to a Scene.
+    * 
+    * Can be overriden by custom Game Objects, but be aware of some Game Objects that
+    * will use this, such as Sprites, to add themselves into the Update List.
+    * 
+    * You can also listen for the `ADDED_TO_SCENE` event from this Game Object.
+    */
+  def addedToScene(): Unit = js.native
   
   /**
     * If this Game Object is enabled for Arcade or Matter Physics then this property will contain a reference to a Physics Body.
@@ -70,6 +112,15 @@ trait GameObject
   def disableInteractive(): this.type = js.native
   
   /**
+    * Holds a reference to the Display List that contains this Game Object.
+    * 
+    * This is set automatically when this Game Object is added to a Scene or Layer.
+    * 
+    * You should treat this property as being read-only.
+    */
+  var displayList: DisplayList | Layer = js.native
+  
+  /**
     * Retrieves the value for the given key in this Game Objects Data Manager, or undefined if it doesn't exist.
     * 
     * You can also access values via the `values` object. For example, if you had a key called `gold` you can do either:
@@ -93,8 +144,8 @@ trait GameObject
     * This approach is useful for destructuring arrays in ES6.
     * @param key The key of the value to retrieve, or an array of keys.
     */
-  def getData(key: String): js.Any = js.native
-  def getData(key: js.Array[String]): js.Any = js.native
+  def getData(key: String): Any = js.native
+  def getData(key: js.Array[String]): Any = js.native
   
   /**
     * Returns an array containing the display list index of either this Game Object, or if it has one,
@@ -104,7 +155,7 @@ trait GameObject
     * Used internally by the InputPlugin but also useful if you wish to find out the display depth of
     * this Game Object and all of its ancestors.
     */
-  def getIndexList(): js.Array[integer] = js.native
+  def getIndexList(): js.Array[Double] = js.native
   
   /**
     * This Game Object will ignore all calls made to its destroy method if this flag is set to `true`.
@@ -127,9 +178,9 @@ trait GameObject
     * @param data The value to increase for the given key.
     */
   def incData(key: String): this.type = js.native
-  def incData(key: String, data: js.Any): this.type = js.native
+  def incData(key: String, data: Any): this.type = js.native
   def incData(key: js.Object): this.type = js.native
-  def incData(key: js.Object, data: js.Any): this.type = js.native
+  def incData(key: js.Object, data: Any): this.type = js.native
   
   /**
     * If this Game Object is enabled for input then this property will contain an InteractiveObject instance.
@@ -147,6 +198,31 @@ trait GameObject
     * The parent Container of this Game Object, if it has one.
     */
   var parentContainer: Container = js.native
+  
+  /**
+    * Removes this Game Object from the Display List it is currently on.
+    * 
+    * A Game Object can only exist on one Display List at any given time, but may move freely removed
+    * and added back at a later stage.
+    * 
+    * You can query which list it is on by looking at the `Phaser.GameObjects.GameObject#displayList` property.
+    * 
+    * If a Game Object isn't on any Display List, it will not be rendered. If you just wish to temporarly
+    * disable it from rendering, consider using the `setVisible` method, instead.
+    */
+  def removeFromDisplayList(): this.type = js.native
+  
+  /**
+    * Removes this Game Object from the Scene's Update List.
+    * 
+    * When a Game Object is on the Update List, it will have its `preUpdate` method called
+    * every game frame. Calling this method will remove it from the list, preventing this.
+    * 
+    * Removing a Game Object from the Update List will stop most internal functions working.
+    * For example, removing a Sprite from the Update List will prevent it from being able to
+    * run animations.
+    */
+  def removeFromUpdateList(): this.type = js.native
   
   /**
     * If this Game Object has previously been enabled for input, this will queue it
@@ -171,17 +247,31 @@ trait GameObject
   def removeInteractive(): this.type = js.native
   
   /**
+    * This callback is invoked when this Game Object is removed from a Scene.
+    * 
+    * Can be overriden by custom Game Objects, but be aware of some Game Objects that
+    * will use this, such as Sprites, to removed themselves from the Update List.
+    * 
+    * You can also listen for the `REMOVED_FROM_SCENE` event from this Game Object.
+    */
+  def removedFromScene(): Unit = js.native
+  
+  /**
     * The flags that are compared against `RENDER_MASK` to determine if this Game Object will render or not.
     * The bits are 0001 | 0010 | 0100 | 1000 set by the components Visible, Alpha, Transform and Texture respectively.
     * If those components are not used by your custom class then you can use this bitmask as you wish.
     */
-  var renderFlags: integer = js.native
+  var renderFlags: Double = js.native
   
   /**
-    * The Scene to which this Game Object belongs.
+    * A reference to the Scene to which this Game Object belongs.
+    * 
     * Game Objects can only belong to one Scene.
+    * 
+    * You should consider this property as being read-only. You cannot move a
+    * Game Object to another Scene by simply changing it.
     */
-  /* protected */ var scene: Scene = js.native
+  var scene: Scene = js.native
   
   /**
     * Sets the `active` property of this Game Object and returns this Game Object for further chaining.
@@ -232,9 +322,9 @@ trait GameObject
     * @param data The value to set for the given key. If an object is provided as the key this argument is ignored.
     */
   def setData(key: String): this.type = js.native
-  def setData(key: String, data: js.Any): this.type = js.native
+  def setData(key: String, data: Any): this.type = js.native
   def setData(key: js.Object): this.type = js.native
-  def setData(key: js.Object, data: js.Any): this.type = js.native
+  def setData(key: js.Object, data: Any): this.type = js.native
   
   /**
     * Adds a Data Manager component to this Game Object.
@@ -253,22 +343,22 @@ trait GameObject
     * shape for it to use.
     * 
     * You can also provide an Input Configuration Object as the only argument to this method.
-    * @param shape Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not specified a Rectangle will be used.
-    * @param callback A callback to be invoked when the Game Object is interacted with. If you provide a shape you must also provide a callback.
+    * @param hitArea Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not given it will try to create a Rectangle based on the texture frame.
+    * @param callback The callback that determines if the pointer is within the Hit Area shape or not. If you provide a shape you must also provide a callback.
     * @param dropZone Should this Game Object be treated as a drop zone target? Default false.
     */
   def setInteractive(): this.type = js.native
-  def setInteractive(shape: js.Any): this.type = js.native
-  def setInteractive(shape: js.Any, callback: Unit, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: js.Any, callback: HitAreaCallback): this.type = js.native
-  def setInteractive(shape: js.Any, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: Unit, callback: Unit, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: Unit, callback: HitAreaCallback): this.type = js.native
-  def setInteractive(shape: Unit, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: InputConfiguration): this.type = js.native
-  def setInteractive(shape: InputConfiguration, callback: Unit, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
-  def setInteractive(shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: Any): this.type = js.native
+  def setInteractive(hitArea: Any, callback: Unit, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: Any, callback: HitAreaCallback): this.type = js.native
+  def setInteractive(hitArea: Any, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: Unit, callback: Unit, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: Unit, callback: HitAreaCallback): this.type = js.native
+  def setInteractive(hitArea: Unit, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: InputConfiguration): this.type = js.native
+  def setInteractive(hitArea: InputConfiguration, callback: Unit, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: InputConfiguration, callback: HitAreaCallback): this.type = js.native
+  def setInteractive(hitArea: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   
   /**
     * Sets the `name` property of this Game Object and returns this Game Object for further chaining.
@@ -289,7 +379,7 @@ trait GameObject
     * If you need to store complex data about your Game Object, look at using the Data Component instead.
     * @param value The state of the Game Object.
     */
-  def setState(value: integer): this.type = js.native
+  def setState(value: Double): this.type = js.native
   
   /**
     * The current state of this Game Object.
@@ -301,13 +391,13 @@ trait GameObject
     * in your game code), or a string. These are recommended to keep it light and simple, with fast comparisons.
     * If you need to store complex data about your Game Object, look at using the Data Component instead.
     */
-  var state: integer | String = js.native
+  var state: Double | String = js.native
   
   /**
     * The Tab Index of the Game Object.
     * Reserved for future use by plugins and the Input Manager.
     */
-  var tabIndex: integer = js.native
+  var tabIndex: Double = js.native
   
   /**
     * Returns a JSON representation of the Game Object.
@@ -338,7 +428,7 @@ trait GameObject
     * To be overridden by custom GameObjects. Allows base objects to be used in a Pool.
     * @param args args
     */
-  def update(args: js.Any*): Unit = js.native
+  def update(args: Any*): Unit = js.native
   
   /**
     * Compares the renderMask with the renderFlags to see if this Game Object will render or not.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pixelateMod {
   
-  @JSImport("konva/types/filters/Pixelate", "Pixelate")
+  @JSImport("konva/lib/filters/Pixelate", "Pixelate")
   @js.native
   val Pixelate: Filter = js.native
 }

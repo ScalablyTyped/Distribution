@@ -14,17 +14,17 @@ trait ASPxClientDashboardTitleToolbarUpdatedEventArgs
   /**
     * Provides access to dashboard title options.
     */
-  var Options: js.Any
+  var Options: Any
 }
 object ASPxClientDashboardTitleToolbarUpdatedEventArgs {
   
-  inline def apply(Options: js.Any): ASPxClientDashboardTitleToolbarUpdatedEventArgs = {
+  inline def apply(Options: Any): ASPxClientDashboardTitleToolbarUpdatedEventArgs = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardTitleToolbarUpdatedEventArgs]
   }
   
   extension [Self <: ASPxClientDashboardTitleToolbarUpdatedEventArgs](x: Self) {
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
   }
 }

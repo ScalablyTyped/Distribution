@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "super-error" : "2.2.1"
+      "super-error" : "2.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "super-error" : "2.2.1"
+      "super-error" : "2.5.1"
     }
   ],
   "compile-devDependencies" : [

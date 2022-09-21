@@ -48,7 +48,7 @@ object CalendarPermission {
     
     inline def setAllowedRolesUndefined: Self = StObject.set(x, "allowedRoles", js.undefined)
     
-    inline def setAllowedRolesVarargs(value: CalendarRoleType*): Self = StObject.set(x, "allowedRoles", js.Array(value :_*))
+    inline def setAllowedRolesVarargs(value: CalendarRoleType*): Self = StObject.set(x, "allowedRoles", js.Array(value*))
     
     inline def setEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     

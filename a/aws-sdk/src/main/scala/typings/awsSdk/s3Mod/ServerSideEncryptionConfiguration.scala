@@ -22,6 +22,6 @@ object ServerSideEncryptionConfiguration {
     
     inline def setRules(value: ServerSideEncryptionRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: ServerSideEncryptionRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ServerSideEncryptionRule*): Self = StObject.set(x, "Rules", js.Array(value*))
   }
 }

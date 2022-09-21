@@ -26,9 +26,9 @@ object OleDragSource {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     getDefaultCursor: Double => Double,
-    initialize: SeqEquiv[js.Any] => Unit,
+    initialize: SeqEquiv[Any] => Unit,
     isDragImageSupported: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     startDrag: (DragGestureEvent, Double, Double, Double, XTransferable, XDragSourceListener) => Unit

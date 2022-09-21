@@ -16,6 +16,13 @@ trait CustomDocumentOpenContext extends StObject {
     * from the user's workspace.
     */
   val backupId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If the URI is an untitled file, this will be populated with the byte data of that file
+    *
+    * If this is provided, your extension should utilize this byte data rather than executing fs APIs on the URI passed in
+    */
+  val untitledDocumentData: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
 }
 object CustomDocumentOpenContext {
   
@@ -29,5 +36,9 @@ object CustomDocumentOpenContext {
     inline def setBackupId(value: String): Self = StObject.set(x, "backupId", value.asInstanceOf[js.Any])
     
     inline def setBackupIdUndefined: Self = StObject.set(x, "backupId", js.undefined)
+    
+    inline def setUntitledDocumentData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "untitledDocumentData", value.asInstanceOf[js.Any])
+    
+    inline def setUntitledDocumentDataUndefined: Self = StObject.set(x, "untitledDocumentData", js.undefined)
   }
 }

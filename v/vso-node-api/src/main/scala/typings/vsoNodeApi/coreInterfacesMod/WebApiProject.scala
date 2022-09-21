@@ -35,7 +35,7 @@ object WebApiProject {
     id: String,
     name: String,
     revision: Double,
-    state: js.Any,
+    state: Any,
     url: String,
     visibility: ProjectVisibility
   ): WebApiProject = {

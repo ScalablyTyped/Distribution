@@ -1,20 +1,27 @@
 package typings.aliOss.mod
 
+import typings.aliOss.aliOssStrings._empty
+import typings.aliOss.aliOssStrings.url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ListObjectsQuery extends StObject {
   
-  // search start from marker, including marker key
+  /** only search current dir, not including subdir */
   var delimiter: js.UndefOr[String] = js.undefined
   
-  // search object using prefix key
+  /** Specifies that the object names in the response are URL-encoded. */
+  var `encoding-type`: js.UndefOr[url | _empty] = js.undefined
+  
+  /** search start from marker, including marker key */
   var marker: js.UndefOr[String] = js.undefined
   
-  // delimiter search scope e.g. / only search current dir, not including subdir
+  // delimiter search scope e.g.
+  /** max objects, default is 100, limit to 1000 */
   var `max-keys`: String | Double
   
+  /** search object using prefix key */
   var prefix: js.UndefOr[String] = js.undefined
 }
 object ListObjectsQuery {
@@ -30,6 +37,10 @@ object ListObjectsQuery {
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    
+    inline def `setEncoding-type`(value: url | _empty): Self = StObject.set(x, "encoding-type", value.asInstanceOf[js.Any])
+    
+    inline def `setEncoding-typeUndefined`: Self = StObject.set(x, "encoding-type", js.undefined)
     
     inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

@@ -99,13 +99,13 @@ object shaderLibMod {
     
     var fragmentShader: String
     
-    var uniforms: StringDictionary[IUniform]
+    var uniforms: StringDictionary[IUniform[Any]]
     
     var vertexShader: String
   }
   object Shader {
     
-    inline def apply(fragmentShader: String, uniforms: StringDictionary[IUniform], vertexShader: String): Shader = {
+    inline def apply(fragmentShader: String, uniforms: StringDictionary[IUniform[Any]], vertexShader: String): Shader = {
       val __obj = js.Dynamic.literal(fragmentShader = fragmentShader.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any], vertexShader = vertexShader.asInstanceOf[js.Any])
       __obj.asInstanceOf[Shader]
     }
@@ -114,7 +114,7 @@ object shaderLibMod {
       
       inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
-      inline def setUniforms(value: StringDictionary[IUniform]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[IUniform[Any]]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
       inline def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
     }

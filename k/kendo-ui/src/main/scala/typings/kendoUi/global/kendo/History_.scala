@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.History")
 @js.native
-class History_ ()
+open class History_ ()
   extends StObject
      with History

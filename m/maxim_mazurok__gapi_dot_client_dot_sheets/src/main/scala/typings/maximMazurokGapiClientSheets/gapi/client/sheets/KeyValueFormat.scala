@@ -9,7 +9,7 @@ trait KeyValueFormat extends StObject {
   /** Specifies the horizontal text positioning of key value. This field is optional. If not specified, default positioning is used. */
   var position: js.UndefOr[TextPosition] = js.undefined
   
-  /** Text formatting options for key value. */
+  /** Text formatting options for key value. The link field is not supported. */
   var textFormat: js.UndefOr[TextFormat] = js.undefined
 }
 object KeyValueFormat {

@@ -6,8 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchResponse extends StObject {
   
+  // A collection of search results.
   var hitsContainers: js.UndefOr[NullableOption[js.Array[SearchHitsContainer]]] = js.undefined
   
+  // Provides information related to spelling corrections in the alteration response.
+  var queryAlterationResponse: js.UndefOr[NullableOption[AlterationResponse]] = js.undefined
+  
+  /**
+    * A dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result
+    * templates.
+    */
+  var resultTemplates: js.UndefOr[NullableOption[ResultTemplateDictionary]] = js.undefined
+  
+  // Contains the search terms sent in the initial search query.
   var searchTerms: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object SearchResponse {
@@ -25,7 +36,19 @@ object SearchResponse {
     
     inline def setHitsContainersUndefined: Self = StObject.set(x, "hitsContainers", js.undefined)
     
-    inline def setHitsContainersVarargs(value: SearchHitsContainer*): Self = StObject.set(x, "hitsContainers", js.Array(value :_*))
+    inline def setHitsContainersVarargs(value: SearchHitsContainer*): Self = StObject.set(x, "hitsContainers", js.Array(value*))
+    
+    inline def setQueryAlterationResponse(value: NullableOption[AlterationResponse]): Self = StObject.set(x, "queryAlterationResponse", value.asInstanceOf[js.Any])
+    
+    inline def setQueryAlterationResponseNull: Self = StObject.set(x, "queryAlterationResponse", null)
+    
+    inline def setQueryAlterationResponseUndefined: Self = StObject.set(x, "queryAlterationResponse", js.undefined)
+    
+    inline def setResultTemplates(value: NullableOption[ResultTemplateDictionary]): Self = StObject.set(x, "resultTemplates", value.asInstanceOf[js.Any])
+    
+    inline def setResultTemplatesNull: Self = StObject.set(x, "resultTemplates", null)
+    
+    inline def setResultTemplatesUndefined: Self = StObject.set(x, "resultTemplates", js.undefined)
     
     inline def setSearchTerms(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "searchTerms", value.asInstanceOf[js.Any])
     
@@ -33,6 +56,6 @@ object SearchResponse {
     
     inline def setSearchTermsUndefined: Self = StObject.set(x, "searchTerms", js.undefined)
     
-    inline def setSearchTermsVarargs(value: String*): Self = StObject.set(x, "searchTerms", js.Array(value :_*))
+    inline def setSearchTermsVarargs(value: String*): Self = StObject.set(x, "searchTerms", js.Array(value*))
   }
 }

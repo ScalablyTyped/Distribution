@@ -12,12 +12,12 @@ trait InstanceAccess extends StObject {
   var Credentials: js.UndefOr[InstanceCredentials] = js.undefined
   
   /**
-    * A unique identifier for a fleet containing the instance being accessed.
+    * A unique identifier for the fleet containing the instance being accessed.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
-    * A unique identifier for an instance being accessed.
+    * A unique identifier for the instance being accessed.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.gameliftMod.InstanceId] = js.undefined
   

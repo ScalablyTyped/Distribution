@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardInitializingEventArgs")
 @js.native
-class ASPxClientDashboardInitializingEventArgs ()
+open class ASPxClientDashboardInitializingEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardInitializingEventArgs {
   
@@ -17,7 +17,7 @@ class ASPxClientDashboardInitializingEventArgs ()
     * Gets a model of the dashboard displayed in the control.
     */
   /* CompleteClass */
-  var Dashboard: js.Any = js.native
+  var Dashboard: Any = js.native
   
   /**
     * Gets a string value that is the dashboard identifier.
@@ -29,5 +29,5 @@ class ASPxClientDashboardInitializingEventArgs ()
     * Specifies a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished.
     */
   /* CompleteClass */
-  var Ready: js.Any = js.native
+  var Ready: Any = js.native
 }

@@ -10,7 +10,7 @@ trait ObjectTypeProperty
   extends StObject
      with Node {
   
-  var key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Expression */ js.Any = js.native
+  var key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Expression */ Any = js.native
   
   var optional: Boolean = js.native
   

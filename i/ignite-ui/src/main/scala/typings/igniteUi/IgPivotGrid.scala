@@ -11,7 +11,7 @@ trait IgPivotGrid
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Enables sorting of the header cells in columns.
@@ -69,7 +69,7 @@ trait IgPivotGrid
     * An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after the data source has initialized.
@@ -157,7 +157,7 @@ trait IgPivotGrid
   /**
     * Specifies the parent for the drop downs.
     */
-  var dropDownParent: js.UndefOr[js.Any] = js.undefined
+  var dropDownParent: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after the filter members drop down closes.
@@ -193,13 +193,13 @@ trait IgPivotGrid
     * Specifies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.
     *
     */
-  var firstLevelSortDirection: js.UndefOr[js.Any] = js.undefined
+  var firstLevelSortDirection: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies the default sort direction for the rows.
     *
     */
-  var firstSortDirection: js.UndefOr[js.Any] = js.undefined
+  var firstSortDirection: js.UndefOr[Any] = js.undefined
   
   /**
     * Options specific to the igGrid that will render the pivot grid view.
@@ -282,7 +282,7 @@ trait IgPivotGrid
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after a metadata item drop.
@@ -336,7 +336,7 @@ trait IgPivotGrid
     * "superCompact"
     * "tree"
     */
-  var rowHeadersLayout: js.UndefOr[js.Any] = js.undefined
+  var rowHeadersLayout: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after the sorting of the columns.
@@ -422,7 +422,7 @@ object IgPivotGrid {
     
     inline def setCustomMoveValidationUndefined: Self = StObject.set(x, "customMoveValidation", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceInitialized(value: (/* event */ Event, /* ui */ DataSourceInitializedEventUIParam) => Unit): Self = StObject.set(x, "dataSourceInitialized", js.Any.fromFunction2(value))
     
@@ -482,7 +482,7 @@ object IgPivotGrid {
     
     inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
-    inline def setDropDownParent(value: js.Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
+    inline def setDropDownParent(value: Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
     
     inline def setDropDownParentUndefined: Self = StObject.set(x, "dropDownParent", js.undefined)
     
@@ -510,11 +510,11 @@ object IgPivotGrid {
     
     inline def setFilterMembersLoadedUndefined: Self = StObject.set(x, "filterMembersLoaded", js.undefined)
     
-    inline def setFirstLevelSortDirection(value: js.Any): Self = StObject.set(x, "firstLevelSortDirection", value.asInstanceOf[js.Any])
+    inline def setFirstLevelSortDirection(value: Any): Self = StObject.set(x, "firstLevelSortDirection", value.asInstanceOf[js.Any])
     
     inline def setFirstLevelSortDirectionUndefined: Self = StObject.set(x, "firstLevelSortDirection", js.undefined)
     
-    inline def setFirstSortDirection(value: js.Any): Self = StObject.set(x, "firstSortDirection", value.asInstanceOf[js.Any])
+    inline def setFirstSortDirection(value: Any): Self = StObject.set(x, "firstSortDirection", value.asInstanceOf[js.Any])
     
     inline def setFirstSortDirectionUndefined: Self = StObject.set(x, "firstSortDirection", js.undefined)
     
@@ -566,9 +566,9 @@ object IgPivotGrid {
     
     inline def setLevelSortDirectionsUndefined: Self = StObject.set(x, "levelSortDirections", js.undefined)
     
-    inline def setLevelSortDirectionsVarargs(value: IgPivotGridLevelSortDirection*): Self = StObject.set(x, "levelSortDirections", js.Array(value :_*))
+    inline def setLevelSortDirectionsVarargs(value: IgPivotGridLevelSortDirection*): Self = StObject.set(x, "levelSortDirections", js.Array(value*))
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -604,7 +604,7 @@ object IgPivotGrid {
     
     inline def setRowHeaderLinkGroupIndentationUndefined: Self = StObject.set(x, "rowHeaderLinkGroupIndentation", js.undefined)
     
-    inline def setRowHeadersLayout(value: js.Any): Self = StObject.set(x, "rowHeadersLayout", value.asInstanceOf[js.Any])
+    inline def setRowHeadersLayout(value: Any): Self = StObject.set(x, "rowHeadersLayout", value.asInstanceOf[js.Any])
     
     inline def setRowHeadersLayoutUndefined: Self = StObject.set(x, "rowHeadersLayout", js.undefined)
     

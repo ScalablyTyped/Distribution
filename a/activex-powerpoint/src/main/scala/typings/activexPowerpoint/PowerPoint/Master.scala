@@ -36,12 +36,12 @@ trait Master extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Master_typekey")
   var PowerPointDotMaster_typekey: Master
   
-  def Scripts(Index: js.Any): Script
+  def Scripts(Index: Any): Script
   @JSName("Scripts")
   val Scripts_Original: Scripts
   
@@ -73,7 +73,7 @@ object Master {
     Height: Double,
     Hyperlinks: Hyperlinks,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotMaster_typekey: Master,
     Scripts: Scripts,
     Shapes: Shapes,
@@ -116,7 +116,7 @@ object Master {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotMaster_typekey(value: Master): Self = StObject.set(x, "PowerPoint.Master_typekey", value.asInstanceOf[js.Any])
     

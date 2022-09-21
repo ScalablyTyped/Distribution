@@ -14,7 +14,7 @@ object blackAndWhitePostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/blackAndWhitePostProcess", "BlackAndWhitePostProcess")
   @js.native
-  class BlackAndWhitePostProcess protected () extends PostProcess {
+  open class BlackAndWhitePostProcess protected () extends PostProcess {
     /**
       * Creates a black and white post process
       * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#black-and-white
@@ -103,7 +103,13 @@ object blackAndWhitePostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[BlackAndWhitePostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BlackAndWhitePostProcess]]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[BlackAndWhitePostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BlackAndWhitePostProcess]]
   }
 }

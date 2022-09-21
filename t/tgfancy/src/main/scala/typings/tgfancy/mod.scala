@@ -1,6 +1,5 @@
 package typings.tgfancy
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("tgfancy", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Tgfancy {
+  open class ^ protected () extends Tgfancy {
     def this(token: String) = this()
     def this(token: String, options: ConstructorOptions) = this()
   }
@@ -20,12 +19,12 @@ object mod {
     def resolve(
       token: String,
       chatId: String,
-      callback: js.Function2[/* error */ Error | Null, /* target */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* target */ Any, Unit]
     ): Unit = js.native
     def resolve(
       token: String,
       chatId: Double,
-      callback: js.Function2[/* error */ Error | Null, /* target */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* target */ Any, Unit]
     ): Unit = js.native
   }
   
@@ -74,7 +73,7 @@ object mod {
     var maxRetries: js.UndefOr[Double] = js.undefined
     
     @JSName("notify")
-    var notify_FRatelimitingOptions: js.UndefOr[js.Function2[/* methodName */ String, /* repeated */ js.Any, Unit]] = js.undefined
+    var notify_FRatelimitingOptions: js.UndefOr[js.Function2[/* methodName */ String, /* repeated */ Any, Unit]] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
@@ -95,7 +94,7 @@ object mod {
       
       inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      inline def setNotify_(value: (/* methodName */ String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction2(value))
+      inline def setNotify_(value: (/* methodName */ String, /* repeated */ Any) => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction2(value))
       
       inline def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
       
@@ -189,9 +188,11 @@ object mod {
     
     def hasOpenWebSocket(): Boolean = js.native
     
+    def kickChatMember(chatId: String, userId: String): js.Promise[Boolean] = js.native
     def kickChatMember(chatId: String, userId: String, ban: Boolean): js.Promise[Boolean] = js.native
     def kickChatMember(chatId: String, userId: Double): js.Promise[Boolean] = js.native
     def kickChatMember(chatId: String, userId: Double, ban: Boolean): js.Promise[Boolean] = js.native
+    def kickChatMember(chatId: Double, userId: String): js.Promise[Boolean] = js.native
     def kickChatMember(chatId: Double, userId: String, ban: Boolean): js.Promise[Boolean] = js.native
     def kickChatMember(chatId: Double, userId: Double): js.Promise[Boolean] = js.native
     def kickChatMember(chatId: Double, userId: Double, ban: Boolean): js.Promise[Boolean] = js.native

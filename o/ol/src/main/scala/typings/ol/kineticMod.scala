@@ -8,7 +8,7 @@ object kineticMod {
   
   @JSImport("ol/Kinetic", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Kinetic {
     def this(decay: Double, minVelocity: Double, delay: Double) = this()

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the layout.
   */
-class GridLayout ()
+open class GridLayout ()
   extends typings.luminoWidgets.gridlayoutMod.GridLayout {
   def this(options: IOptions) = this()
 }

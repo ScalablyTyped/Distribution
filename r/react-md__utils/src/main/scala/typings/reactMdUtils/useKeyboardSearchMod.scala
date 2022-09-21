@@ -3,7 +3,7 @@ package typings.reactMdUtils
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.reactMdUtils.findMatchIndexMod.FindMatchIndex_
-import typings.reactMdUtils.utilsMod.BaseSearchOptions
+import typings.reactMdUtils.searchUtilsMod.BaseSearchOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -74,7 +74,7 @@ object useKeyboardSearchMod {
       
       inline def setItems(value: js.Array[D]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOnChange(value: /* data */ SearchData[D, E] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -161,7 +161,7 @@ object useKeyboardSearchMod {
       
       inline def setItems(value: js.Array[D]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       

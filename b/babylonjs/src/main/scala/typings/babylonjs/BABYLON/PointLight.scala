@@ -9,7 +9,7 @@ trait PointLight
   extends StObject
      with ShadowLight {
   
-  /* private */ var _shadowAngle: js.Any = js.native
+  /* private */ var _shadowAngle: Any = js.native
   
   /**
     * Gets the direction if it has been set.

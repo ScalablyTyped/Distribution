@@ -18,7 +18,7 @@ object listItemMod {
   
   @JSImport("@ant-design/react-native/lib/list/ListItem", JSImport.Default)
   @js.native
-  class default () extends Item
+  open class default () extends Item
   /* static members */
   object default {
     
@@ -39,14 +39,13 @@ object listItemMod {
   
   @JSImport("@ant-design/react-native/lib/list/ListItem", "Brief")
   @js.native
-  class Brief protected ()
-    extends Component[BriefProps, js.Any, js.Any] {
+  open class Brief protected () extends Component[BriefProps, Any, Any] {
     def this(props: BriefProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BriefProps, context: js.Any) = this()
+    def this(props: BriefProps, context: Any) = this()
   }
   
   trait BriefProps
@@ -62,8 +61,7 @@ object listItemMod {
   }
   
   @js.native
-  trait Item
-    extends Component[ListItemProps, js.Any, js.Any]
+  trait Item extends Component[ListItemProps, Any, Any]
   
   trait ListItemProps
     extends StObject

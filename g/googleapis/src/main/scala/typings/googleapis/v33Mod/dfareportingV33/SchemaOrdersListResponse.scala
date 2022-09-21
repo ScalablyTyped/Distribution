@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Order List Response
-  */
 trait SchemaOrdersListResponse extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#ordersListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#ordersListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Order collection.
@@ -36,9 +32,13 @@ object SchemaOrdersListResponse {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
@@ -46,6 +46,6 @@ object SchemaOrdersListResponse {
     
     inline def setOrdersUndefined: Self = StObject.set(x, "orders", js.undefined)
     
-    inline def setOrdersVarargs(value: SchemaOrder*): Self = StObject.set(x, "orders", js.Array(value :_*))
+    inline def setOrdersVarargs(value: SchemaOrder*): Self = StObject.set(x, "orders", js.Array(value*))
   }
 }

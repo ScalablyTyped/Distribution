@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "RecursiveType")
 @js.native
-class RecursiveType[C /* <: Any_ */, A, O, I] protected () extends Type_[A, O, I] {
+open class RecursiveType[C /* <: Any_ */, A, O, I] protected () extends Type_[A, O, I] {
   def this(
     name: String,
     is: Is[A],

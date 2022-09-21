@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAutoMLJobResponse extends StObject {
   
   /**
-    * Returns the job's ARN.
+    * Returns the ARN of the AutoML job.
     */
   var AutoMLJobArn: typings.awsSdk.sagemakerMod.AutoMLJobArn
   
@@ -17,12 +17,12 @@ trait DescribeAutoMLJobResponse extends StObject {
   var AutoMLJobArtifacts: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobArtifacts] = js.undefined
   
   /**
-    * Returns the job's config.
+    * Returns the configuration for the AutoML job.
     */
   var AutoMLJobConfig: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobConfig] = js.undefined
   
   /**
-    * Returns the name of a job.
+    * Returns the name of the AutoML job.
     */
   var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName
   
@@ -32,49 +32,59 @@ trait DescribeAutoMLJobResponse extends StObject {
   var AutoMLJobObjective: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobObjective] = js.undefined
   
   /**
-    * Returns the job's AutoMLJobSecondaryStatus.
+    * Returns the secondary status of the AutoML job.
     */
   var AutoMLJobSecondaryStatus: typings.awsSdk.sagemakerMod.AutoMLJobSecondaryStatus
   
   /**
-    * Returns the job's AutoMLJobStatus.
+    * Returns the status of the AutoML job.
     */
   var AutoMLJobStatus: typings.awsSdk.sagemakerMod.AutoMLJobStatus
   
   /**
-    * Returns the job's BestCandidate.
+    * Returns the job's best AutoMLCandidate.
     */
   var BestCandidate: js.UndefOr[AutoMLCandidate] = js.undefined
   
   /**
-    * Returns the job's creation time.
+    * Returns the creation time of the AutoML job.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
-    * Returns the job's end time.
+    * Returns the end time of the AutoML job.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Returns the job's FailureReason.
+    * Returns the failure reason for an AutoML job, when applicable.
     */
   var FailureReason: js.UndefOr[AutoMLFailureReason] = js.undefined
   
   /**
-    * Returns the job's output from GenerateCandidateDefinitionsOnly.
+    * Indicates whether the output for an AutoML job generates candidate definitions only.
     */
   var GenerateCandidateDefinitionsOnly: js.UndefOr[typings.awsSdk.sagemakerMod.GenerateCandidateDefinitionsOnly] = js.undefined
   
   /**
-    * Returns the job's input data config.
+    * Returns the input data configuration for the AutoML job..
     */
   var InputDataConfig: AutoMLInputDataConfig
   
   /**
     * Returns the job's last modified time.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
+  
+  /**
+    * Indicates whether the model was deployed automatically to an endpoint and the name of that endpoint if deployed automatically.
+    */
+  var ModelDeployConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ModelDeployConfig] = js.undefined
+  
+  /**
+    * Provides information about endpoint for the model deployment.
+    */
+  var ModelDeployResult: js.UndefOr[typings.awsSdk.sagemakerMod.ModelDeployResult] = js.undefined
   
   /**
     * Returns the job's output data config.
@@ -82,17 +92,22 @@ trait DescribeAutoMLJobResponse extends StObject {
   var OutputDataConfig: AutoMLOutputDataConfig
   
   /**
+    * Returns a list of reasons for partial failures within an AutoML job.
+    */
+  var PartialFailureReasons: js.UndefOr[AutoMLPartialFailureReasons] = js.undefined
+  
+  /**
     * Returns the job's problem type.
     */
   var ProblemType: js.UndefOr[typings.awsSdk.sagemakerMod.ProblemType] = js.undefined
   
   /**
-    * This contains ProblemType, AutoMLJobObjective and CompletionCriteria. They're auto-inferred values, if not provided by you. If you do provide them, then they'll be the same as provided.
+    * This contains ProblemType, AutoMLJobObjective, and CompletionCriteria. If you do not provide these values, they are auto-inferred. If you do provide them, the values used are the ones you provide.
     */
   var ResolvedAttributes: js.UndefOr[typings.awsSdk.sagemakerMod.ResolvedAttributes] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that has read permission to the input data location and write permission to the output data location in Amazon S3.
+    * The Amazon Resource Name (ARN) of the Amazon Web Services Identity and Access Management (IAM) role that has read permission to the input data location and write permission to the output data location in Amazon S3.
     */
   var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
 }
@@ -103,9 +118,9 @@ object DescribeAutoMLJobResponse {
     AutoMLJobName: AutoMLJobName,
     AutoMLJobSecondaryStatus: AutoMLJobSecondaryStatus,
     AutoMLJobStatus: AutoMLJobStatus,
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     InputDataConfig: AutoMLInputDataConfig,
-    LastModifiedTime: Timestamp,
+    LastModifiedTime: js.Date,
     OutputDataConfig: AutoMLOutputDataConfig,
     RoleArn: RoleArn
   ): DescribeAutoMLJobResponse = {
@@ -139,9 +154,9 @@ object DescribeAutoMLJobResponse {
     
     inline def setBestCandidateUndefined: Self = StObject.set(x, "BestCandidate", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -155,11 +170,25 @@ object DescribeAutoMLJobResponse {
     
     inline def setInputDataConfig(value: AutoMLInputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    inline def setInputDataConfigVarargs(value: AutoMLChannel*): Self = StObject.set(x, "InputDataConfig", js.Array(value :_*))
+    inline def setInputDataConfigVarargs(value: AutoMLChannel*): Self = StObject.set(x, "InputDataConfig", js.Array(value*))
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    
+    inline def setModelDeployConfig(value: ModelDeployConfig): Self = StObject.set(x, "ModelDeployConfig", value.asInstanceOf[js.Any])
+    
+    inline def setModelDeployConfigUndefined: Self = StObject.set(x, "ModelDeployConfig", js.undefined)
+    
+    inline def setModelDeployResult(value: ModelDeployResult): Self = StObject.set(x, "ModelDeployResult", value.asInstanceOf[js.Any])
+    
+    inline def setModelDeployResultUndefined: Self = StObject.set(x, "ModelDeployResult", js.undefined)
     
     inline def setOutputDataConfig(value: AutoMLOutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
+    
+    inline def setPartialFailureReasons(value: AutoMLPartialFailureReasons): Self = StObject.set(x, "PartialFailureReasons", value.asInstanceOf[js.Any])
+    
+    inline def setPartialFailureReasonsUndefined: Self = StObject.set(x, "PartialFailureReasons", js.undefined)
+    
+    inline def setPartialFailureReasonsVarargs(value: AutoMLPartialFailureReason*): Self = StObject.set(x, "PartialFailureReasons", js.Array(value*))
     
     inline def setProblemType(value: ProblemType): Self = StObject.set(x, "ProblemType", value.asInstanceOf[js.Any])
     

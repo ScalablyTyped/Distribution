@@ -8,5 +8,5 @@ object bucketAlreadyOwnedByYouMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/BucketAlreadyOwnedByYou", "BucketAlreadyOwnedByYou")
   @js.native
-  val BucketAlreadyOwnedByYou: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BucketAlreadyOwnedByYou: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

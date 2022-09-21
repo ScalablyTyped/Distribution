@@ -12,7 +12,7 @@ trait MapShapeCreatedEvent
   
   var layer: js.UndefOr[Shape] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
+  var originalEvent: js.UndefOr[Any] = js.undefined
   
   var shape: js.UndefOr[Element] = js.undefined
 }
@@ -29,7 +29,7 @@ object MapShapeCreatedEvent {
     
     inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     

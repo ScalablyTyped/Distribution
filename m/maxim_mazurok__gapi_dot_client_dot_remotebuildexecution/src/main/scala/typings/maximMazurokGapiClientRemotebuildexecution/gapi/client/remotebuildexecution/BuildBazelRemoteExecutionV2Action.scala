@@ -19,11 +19,18 @@ trait BuildBazelRemoteExecutionV2Action extends StObject {
   var inputRootDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
-    * List of required supported NodeProperty keys. In order to ensure that equivalent `Action`s always hash to the same value, the supported node properties MUST be lexicographically
-    * sorted by name. Sorting of strings is done by code point, equivalently, by the UTF-8 bytes. The interpretation of these properties is server-dependent. If a property is not
-    * recognized by the server, the server will return an `INVALID_ARGUMENT` error.
+    * The optional platform requirements for the execution environment. The server MAY choose to execute the action on any worker satisfying the requirements, so the client SHOULD ensure
+    * that running the action on any such worker will have the same result. A detailed lexicon for this can be found in the accompanying platform.md. New in version 2.2: clients SHOULD
+    * set these platform properties as well as those in the Command. Servers SHOULD prefer those set here.
     */
-  var outputNodeProperties: js.UndefOr[js.Array[String]] = js.undefined
+  var platform: js.UndefOr[BuildBazelRemoteExecutionV2Platform] = js.undefined
+  
+  /**
+    * An optional additional salt value used to place this `Action` into a separate cache namespace from other instances having the same field contents. This salt typically comes from
+    * operational configuration specific to sources such as repo and service configuration, and allows disowning an entire set of ActionResults that might have been poisoned by buggy
+    * software or tool failures.
+    */
+  var salt: js.UndefOr[String] = js.undefined
   
   /**
     * A timeout after which the execution should be killed. If the timeout is absent, then the client is specifying that the execution should continue as long as the server will let it.
@@ -56,11 +63,13 @@ object BuildBazelRemoteExecutionV2Action {
     
     inline def setInputRootDigestUndefined: Self = StObject.set(x, "inputRootDigest", js.undefined)
     
-    inline def setOutputNodeProperties(value: js.Array[String]): Self = StObject.set(x, "outputNodeProperties", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: BuildBazelRemoteExecutionV2Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    inline def setOutputNodePropertiesUndefined: Self = StObject.set(x, "outputNodeProperties", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    inline def setOutputNodePropertiesVarargs(value: String*): Self = StObject.set(x, "outputNodeProperties", js.Array(value :_*))
+    inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+    
+    inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
     
     inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

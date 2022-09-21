@@ -1,7 +1,6 @@
 package typings.eggMultipart
 
 import typings.eggMultipart.anon.AutoFields
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,8 +32,8 @@ object mod {
       * @param {MultipartOptions} options
       * @return {Function} return a function which return a Promise
       */
-    def multipart(): js.Function1[/* fn */ js.UndefOr[js.Function], js.Promise[js.Any]] = js.native
-    def multipart(options: MultipartOptions): js.Function1[/* fn */ js.UndefOr[js.Function], js.Promise[js.Any]] = js.native
+    def multipart(): js.Function1[/* fn */ js.UndefOr[js.Function], js.Promise[Any]] = js.native
+    def multipart(options: MultipartOptions): js.Function1[/* fn */ js.UndefOr[js.Function], js.Promise[Any]] = js.native
     
     /**
       * save request multipart data and files to `ctx.request`
@@ -60,7 +59,7 @@ object mod {
     }
   }
   
-  type MatchItem = String | RegExp | (js.Function1[/* ctx */ Context, Boolean])
+  type MatchItem = String | js.RegExp | (js.Function1[/* ctx */ Context, Boolean])
   
   trait Request extends StObject {
     
@@ -80,7 +79,7 @@ object mod {
       
       inline def setFiles(value: js.Array[EggFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: EggFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: EggFile*): Self = StObject.set(x, "files", js.Array(value*))
     }
   }
 }

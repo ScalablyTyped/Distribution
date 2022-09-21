@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "LayoutData")
 @js.native
-class LayoutData protected () extends StObject {
+open class LayoutData protected () extends StObject {
+  /**
+    * Provides layout information for a widget to be used by the parent widget when determining its size
+    * and position. See also ${doc:LayoutDataValue}
+    */
   def this(parameters: LayoutDataProperties) = this()
   
   /**
@@ -97,22 +101,20 @@ object LayoutData {
   inline def from(layoutDataValue: LayoutDataValue): LayoutData = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(layoutDataValue.asInstanceOf[js.Any]).asInstanceOf[LayoutData]
   
   /**
-    * A [SiblingReference](../types.md#siblingreference) indicating the next widget in the list of children
-    * attached to the same parent. Used by the [`baseline`](#baseline) property. An alias of
-    * `Constraint.next`.
+    * A ${doc:SiblingReference} indicating the next widget in the list of children attached to the same
+    * parent. Used by the [`baseline`](#baseline) property. An alias of `Constraint.next`.
     */
   @JSImport("tabris", "LayoutData.next")
   @js.native
-  val next: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Constraint.next */ js.Any = js.native
+  val next: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Constraint.next */ Any = js.native
   
   /**
-    * A [SiblingReference](../types.md#siblingreference) indicating the previous widget in the list of
-    * children attached to the same parent. Used by the [`baseline`](#baseline) property. An alias of
-    * `Constraint.next`.
+    * A ${doc:SiblingReference} indicating the previous widget in the list of children attached to the same
+    * parent. Used by the [`baseline`](#baseline) property. An alias of `Constraint.next`.
     */
   @JSImport("tabris", "LayoutData.prev")
   @js.native
-  val prev: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Constraint.prev */ js.Any = js.native
+  val prev: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Constraint.prev */ Any = js.native
   
   /**
     * An instance of LayoutData that makes a widget fill the inner width and height of its parent (padding

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.XMLNode")
 @js.native
-/* private */ class XMLNode ()
+/* private */ open class XMLNode ()
   extends StObject
      with typings.activexWord.Word.XMLNode

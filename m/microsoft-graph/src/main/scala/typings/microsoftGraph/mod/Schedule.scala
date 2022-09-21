@@ -86,7 +86,7 @@ object Schedule {
     
     inline def setOfferShiftRequestsUndefined: Self = StObject.set(x, "offerShiftRequests", js.undefined)
     
-    inline def setOfferShiftRequestsVarargs(value: OfferShiftRequest*): Self = StObject.set(x, "offerShiftRequests", js.Array(value :_*))
+    inline def setOfferShiftRequestsVarargs(value: OfferShiftRequest*): Self = StObject.set(x, "offerShiftRequests", js.Array(value*))
     
     inline def setOpenShiftChangeRequests(value: NullableOption[js.Array[OpenShiftChangeRequest]]): Self = StObject.set(x, "openShiftChangeRequests", value.asInstanceOf[js.Any])
     
@@ -94,7 +94,7 @@ object Schedule {
     
     inline def setOpenShiftChangeRequestsUndefined: Self = StObject.set(x, "openShiftChangeRequests", js.undefined)
     
-    inline def setOpenShiftChangeRequestsVarargs(value: OpenShiftChangeRequest*): Self = StObject.set(x, "openShiftChangeRequests", js.Array(value :_*))
+    inline def setOpenShiftChangeRequestsVarargs(value: OpenShiftChangeRequest*): Self = StObject.set(x, "openShiftChangeRequests", js.Array(value*))
     
     inline def setOpenShifts(value: NullableOption[js.Array[OpenShift]]): Self = StObject.set(x, "openShifts", value.asInstanceOf[js.Any])
     
@@ -108,7 +108,7 @@ object Schedule {
     
     inline def setOpenShiftsUndefined: Self = StObject.set(x, "openShifts", js.undefined)
     
-    inline def setOpenShiftsVarargs(value: OpenShift*): Self = StObject.set(x, "openShifts", js.Array(value :_*))
+    inline def setOpenShiftsVarargs(value: OpenShift*): Self = StObject.set(x, "openShifts", js.Array(value*))
     
     inline def setProvisionStatus(value: NullableOption[OperationStatus]): Self = StObject.set(x, "provisionStatus", value.asInstanceOf[js.Any])
     
@@ -128,7 +128,7 @@ object Schedule {
     
     inline def setSchedulingGroupsUndefined: Self = StObject.set(x, "schedulingGroups", js.undefined)
     
-    inline def setSchedulingGroupsVarargs(value: SchedulingGroup*): Self = StObject.set(x, "schedulingGroups", js.Array(value :_*))
+    inline def setSchedulingGroupsVarargs(value: SchedulingGroup*): Self = StObject.set(x, "schedulingGroups", js.Array(value*))
     
     inline def setShifts(value: NullableOption[js.Array[Shift]]): Self = StObject.set(x, "shifts", value.asInstanceOf[js.Any])
     
@@ -136,7 +136,7 @@ object Schedule {
     
     inline def setShiftsUndefined: Self = StObject.set(x, "shifts", js.undefined)
     
-    inline def setShiftsVarargs(value: Shift*): Self = StObject.set(x, "shifts", js.Array(value :_*))
+    inline def setShiftsVarargs(value: Shift*): Self = StObject.set(x, "shifts", js.Array(value*))
     
     inline def setSwapShiftsChangeRequests(value: NullableOption[js.Array[SwapShiftsChangeRequest]]): Self = StObject.set(x, "swapShiftsChangeRequests", value.asInstanceOf[js.Any])
     
@@ -144,7 +144,7 @@ object Schedule {
     
     inline def setSwapShiftsChangeRequestsUndefined: Self = StObject.set(x, "swapShiftsChangeRequests", js.undefined)
     
-    inline def setSwapShiftsChangeRequestsVarargs(value: SwapShiftsChangeRequest*): Self = StObject.set(x, "swapShiftsChangeRequests", js.Array(value :_*))
+    inline def setSwapShiftsChangeRequestsVarargs(value: SwapShiftsChangeRequest*): Self = StObject.set(x, "swapShiftsChangeRequests", js.Array(value*))
     
     inline def setSwapShiftsRequestsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "swapShiftsRequestsEnabled", value.asInstanceOf[js.Any])
     
@@ -164,7 +164,7 @@ object Schedule {
     
     inline def setTimeOffReasonsUndefined: Self = StObject.set(x, "timeOffReasons", js.undefined)
     
-    inline def setTimeOffReasonsVarargs(value: TimeOffReason*): Self = StObject.set(x, "timeOffReasons", js.Array(value :_*))
+    inline def setTimeOffReasonsVarargs(value: TimeOffReason*): Self = StObject.set(x, "timeOffReasons", js.Array(value*))
     
     inline def setTimeOffRequests(value: NullableOption[js.Array[TimeOffRequest]]): Self = StObject.set(x, "timeOffRequests", value.asInstanceOf[js.Any])
     
@@ -178,7 +178,7 @@ object Schedule {
     
     inline def setTimeOffRequestsUndefined: Self = StObject.set(x, "timeOffRequests", js.undefined)
     
-    inline def setTimeOffRequestsVarargs(value: TimeOffRequest*): Self = StObject.set(x, "timeOffRequests", js.Array(value :_*))
+    inline def setTimeOffRequestsVarargs(value: TimeOffRequest*): Self = StObject.set(x, "timeOffRequests", js.Array(value*))
     
     inline def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
@@ -192,7 +192,7 @@ object Schedule {
     
     inline def setTimesOffUndefined: Self = StObject.set(x, "timesOff", js.undefined)
     
-    inline def setTimesOffVarargs(value: TimeOff*): Self = StObject.set(x, "timesOff", js.Array(value :_*))
+    inline def setTimesOffVarargs(value: TimeOff*): Self = StObject.set(x, "timesOff", js.Array(value*))
     
     inline def setWorkforceIntegrationIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "workforceIntegrationIds", value.asInstanceOf[js.Any])
     
@@ -200,6 +200,6 @@ object Schedule {
     
     inline def setWorkforceIntegrationIdsUndefined: Self = StObject.set(x, "workforceIntegrationIds", js.undefined)
     
-    inline def setWorkforceIntegrationIdsVarargs(value: String*): Self = StObject.set(x, "workforceIntegrationIds", js.Array(value :_*))
+    inline def setWorkforceIntegrationIdsVarargs(value: String*): Self = StObject.set(x, "workforceIntegrationIds", js.Array(value*))
   }
 }

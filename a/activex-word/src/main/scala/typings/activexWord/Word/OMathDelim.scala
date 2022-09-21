@@ -22,7 +22,7 @@ trait OMathDelim extends StObject {
   
   var NoRightChar: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var SepChar: Double
   
@@ -42,7 +42,7 @@ object OMathDelim {
     Grow: Boolean,
     NoLeftChar: Boolean,
     NoRightChar: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     SepChar: Double,
     Shape: WdOMathShapeType,
     WordDotOMathDelim_typekey: OMathDelim
@@ -70,7 +70,7 @@ object OMathDelim {
     
     inline def setNoRightChar(value: Boolean): Self = StObject.set(x, "NoRightChar", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSepChar(value: Double): Self = StObject.set(x, "SepChar", value.asInstanceOf[js.Any])
     

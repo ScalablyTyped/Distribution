@@ -6,18 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PutBucketOptions extends StObject {
   
+  var acl: ACLType
+  
+  var dataRedundancyType: RedundancyType
+  
   var storageClass: StorageType
   
   var timeout: Double
 }
 object PutBucketOptions {
   
-  inline def apply(storageClass: StorageType, timeout: Double): PutBucketOptions = {
-    val __obj = js.Dynamic.literal(storageClass = storageClass.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+  inline def apply(acl: ACLType, dataRedundancyType: RedundancyType, storageClass: StorageType, timeout: Double): PutBucketOptions = {
+    val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], dataRedundancyType = dataRedundancyType.asInstanceOf[js.Any], storageClass = storageClass.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketOptions]
   }
   
   extension [Self <: PutBucketOptions](x: Self) {
+    
+    inline def setAcl(value: ACLType): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    
+    inline def setDataRedundancyType(value: RedundancyType): Self = StObject.set(x, "dataRedundancyType", value.asInstanceOf[js.Any])
     
     inline def setStorageClass(value: StorageType): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     

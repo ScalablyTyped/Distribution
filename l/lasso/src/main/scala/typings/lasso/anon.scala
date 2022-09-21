@@ -32,7 +32,7 @@ object anon {
     
     var lasso: js.UndefOr[default] = js.undefined
     
-    var sendOptions: js.UndefOr[js.Any] = js.undefined
+    var sendOptions: js.UndefOr[Any] = js.undefined
   }
   object Lasso {
     
@@ -47,7 +47,7 @@ object anon {
       
       inline def setLassoUndefined: Self = StObject.set(x, "lasso", js.undefined)
       
-      inline def setSendOptions(value: js.Any): Self = StObject.set(x, "sendOptions", value.asInstanceOf[js.Any])
+      inline def setSendOptions(value: Any): Self = StObject.set(x, "sendOptions", value.asInstanceOf[js.Any])
       
       inline def setSendOptionsUndefined: Self = StObject.set(x, "sendOptions", js.undefined)
     }
@@ -70,7 +70,7 @@ object anon {
       
       inline def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      inline def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value*))
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

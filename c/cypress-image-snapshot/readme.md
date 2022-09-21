@@ -10,15 +10,12 @@ Cypress bindings for jest-image-snapshot.
 | ------------------ | :-------------: |
 | Full name          | cypress-image-snapshot |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 2613222 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 854540.0 |
+| # stars            | 832.0 |
 
 ## Links
-- [Homepage](https://github.com/palmerhq/cypress-image-snapshot#readme)
-- [Bugs](https://github.com/palmerhq/cypress-image-snapshot/issues)
-- [Repository](https://github.com/palmerhq/cypress-image-snapshot)
 - [Npm](https://www.npmjs.com/package/cypress-image-snapshot)
     
 

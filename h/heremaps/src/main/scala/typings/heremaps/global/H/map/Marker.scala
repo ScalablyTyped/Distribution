@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.Marker")
 @js.native
-class Marker protected ()
+open class Marker protected ()
   extends StObject
      with typings.heremaps.H.map.AbstractMarker {
   /**

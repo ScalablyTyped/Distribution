@@ -1,7 +1,7 @@
 
 # Scala.js typings for pendo-io-browser
 
-Typings are for version 2.16
+Typings are for version 2.17
 
 
 

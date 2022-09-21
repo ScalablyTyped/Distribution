@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,14 +12,14 @@ trait TileNotification extends StObject {
   var content: XmlDocument
   
   /** Gets or sets the time that Windows will remove the notification from the tile. By default, a tile update does not expire. It is a best practice to explicitly set an expiration time to avoid stale content. */
-  var expirationTime: Date
+  var expirationTime: js.Date
   
   /** Gets or sets a string that Windows can use to prevent duplicate notification content from appearing in the queue. */
   var tag: String
 }
 object TileNotification {
   
-  inline def apply(content: XmlDocument, expirationTime: Date, tag: String): TileNotification = {
+  inline def apply(content: XmlDocument, expirationTime: js.Date, tag: String): TileNotification = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileNotification]
   }
@@ -29,7 +28,7 @@ object TileNotification {
     
     inline def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setExpirationTime(value: Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: js.Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }

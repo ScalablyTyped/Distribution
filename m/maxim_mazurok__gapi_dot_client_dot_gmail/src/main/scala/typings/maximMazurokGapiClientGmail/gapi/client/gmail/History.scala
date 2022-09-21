@@ -44,13 +44,13 @@ object History {
     
     inline def setLabelsAddedUndefined: Self = StObject.set(x, "labelsAdded", js.undefined)
     
-    inline def setLabelsAddedVarargs(value: HistoryLabelAdded*): Self = StObject.set(x, "labelsAdded", js.Array(value :_*))
+    inline def setLabelsAddedVarargs(value: HistoryLabelAdded*): Self = StObject.set(x, "labelsAdded", js.Array(value*))
     
     inline def setLabelsRemoved(value: js.Array[HistoryLabelRemoved]): Self = StObject.set(x, "labelsRemoved", value.asInstanceOf[js.Any])
     
     inline def setLabelsRemovedUndefined: Self = StObject.set(x, "labelsRemoved", js.undefined)
     
-    inline def setLabelsRemovedVarargs(value: HistoryLabelRemoved*): Self = StObject.set(x, "labelsRemoved", js.Array(value :_*))
+    inline def setLabelsRemovedVarargs(value: HistoryLabelRemoved*): Self = StObject.set(x, "labelsRemoved", js.Array(value*))
     
     inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
@@ -58,16 +58,16 @@ object History {
     
     inline def setMessagesAddedUndefined: Self = StObject.set(x, "messagesAdded", js.undefined)
     
-    inline def setMessagesAddedVarargs(value: HistoryMessageAdded*): Self = StObject.set(x, "messagesAdded", js.Array(value :_*))
+    inline def setMessagesAddedVarargs(value: HistoryMessageAdded*): Self = StObject.set(x, "messagesAdded", js.Array(value*))
     
     inline def setMessagesDeleted(value: js.Array[HistoryMessageDeleted]): Self = StObject.set(x, "messagesDeleted", value.asInstanceOf[js.Any])
     
     inline def setMessagesDeletedUndefined: Self = StObject.set(x, "messagesDeleted", js.undefined)
     
-    inline def setMessagesDeletedVarargs(value: HistoryMessageDeleted*): Self = StObject.set(x, "messagesDeleted", js.Array(value :_*))
+    inline def setMessagesDeletedVarargs(value: HistoryMessageDeleted*): Self = StObject.set(x, "messagesDeleted", js.Array(value*))
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value*))
   }
 }

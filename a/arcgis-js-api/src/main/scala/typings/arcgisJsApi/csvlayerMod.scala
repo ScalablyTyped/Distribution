@@ -35,6 +35,9 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.CSVLayer
 import typings.arcgisJsApi.esri.CSVLayerConstructor
 import typings.arcgisJsApi.esri.CSVLayerProperties
+import typings.arcgisJsApi.esri.Effect
+import typings.arcgisJsApi.esri.FeatureEffect
+import typings.arcgisJsApi.esri.OrderedLayerOrderBy
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.TimeExtent
 import typings.arcgisJsApi.esri.TimeInfo
@@ -57,7 +60,7 @@ object csvlayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with CSVLayer {
     def this(properties: CSVLayerProperties) = this()
@@ -65,13 +68,35 @@ object csvlayerMod extends Shortcut {
     /**
       * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
       *
+      * @default normal
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
       */
     /* CompleteClass */
     var blendMode: average | `color-burn` | `color-dodge` | color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor = js.native
     
     /**
+      * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+      *
+      * @default null
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+      */
+    /* CompleteClass */
+    var effect: Effect = js.native
+    
+    /**
+      * The featureEffect can be used to draw attention features of interest.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
+      */
+    /* CompleteClass */
+    var featureEffect: FeatureEffect = js.native
+    
+    /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
+      *
+      * @default 0
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
       */
@@ -81,10 +106,22 @@ object csvlayerMod extends Shortcut {
     /**
       * The minimum scale (most zoomed out) at which the layer is visible in the view.
       *
+      * @default 0
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
       */
     /* CompleteClass */
     var minScale: Double = js.native
+    
+    /**
+      * Determines the order in which features are drawn in the view.
+      *
+      * @default null
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-OrderedLayer.html#orderBy)
+      */
+    /* CompleteClass */
+    var orderBy: js.Array[OrderedLayerOrderBy] = js.native
     
     /**
       * The portal item from which the layer is loaded.
@@ -97,6 +134,8 @@ object csvlayerMod extends Shortcut {
     /**
       * The layer's time extent.
       *
+      * @default null
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeExtent)
       */
     /* CompleteClass */
@@ -104,6 +143,8 @@ object csvlayerMod extends Shortcut {
     
     /**
       * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
+      *
+      * @default null
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
       */
@@ -113,6 +154,8 @@ object csvlayerMod extends Shortcut {
     /**
       * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
       *
+      * @default null
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeOffset)
       */
     /* CompleteClass */
@@ -120,6 +163,8 @@ object csvlayerMod extends Shortcut {
     
     /**
       * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
+      *
+      * @default true
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime)
       */

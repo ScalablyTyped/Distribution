@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("paper.Shape")
 @js.native
-class Shape ()
+open class Shape ()
   extends StObject
      with typings.paper.paper.Shape
 object Shape {
   
   @JSGlobal("paper.Shape.Circle")
   @js.native
-  class Circle protected ()
+  open class Circle protected ()
     extends StObject
        with typings.paper.paper.Shape {
     /** 
@@ -35,7 +35,7 @@ object Shape {
   
   @JSGlobal("paper.Shape.Ellipse")
   @js.native
-  class Ellipse protected ()
+  open class Ellipse protected ()
     extends StObject
        with typings.paper.paper.Shape {
     /** 
@@ -56,7 +56,7 @@ object Shape {
   
   @JSGlobal("paper.Shape.Rectangle")
   @js.native
-  class Rectangle protected ()
+  open class Rectangle protected ()
     extends StObject
        with typings.paper.paper.Shape {
     /** 

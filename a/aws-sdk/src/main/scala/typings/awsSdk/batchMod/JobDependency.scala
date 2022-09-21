@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobDependency extends StObject {
   
   /**
-    * The job ID of the AWS Batch job associated with this dependency.
+    * The job ID of the Batch job associated with this dependency.
     */
   var jobId: js.UndefOr[String] = js.undefined
   

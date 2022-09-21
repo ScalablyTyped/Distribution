@@ -22,6 +22,6 @@ object TlsValidationContextAcmTrust {
     
     inline def setCertificateAuthorityArns(value: CertificateAuthorityArns): Self = StObject.set(x, "certificateAuthorityArns", value.asInstanceOf[js.Any])
     
-    inline def setCertificateAuthorityArnsVarargs(value: Arn*): Self = StObject.set(x, "certificateAuthorityArns", js.Array(value :_*))
+    inline def setCertificateAuthorityArnsVarargs(value: Arn*): Self = StObject.set(x, "certificateAuthorityArns", js.Array(value*))
   }
 }

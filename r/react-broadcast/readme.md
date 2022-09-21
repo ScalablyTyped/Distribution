@@ -11,9 +11,9 @@ Reliably communicate state changes to deeply nested React elements
 | Full name          | react-broadcast |
 | Keywords           | react, context, broadcast, publish, subscribe, subscriber, subscription, subscriptions |
 | # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 1869312 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 23209.666666666668 |
+| # stars            | 1321.0 |
 
 ## Links
 - [Homepage](https://github.com/ReactTraining/react-broadcast#readme)

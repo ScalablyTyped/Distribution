@@ -1,7 +1,6 @@
 package typings.awsSdkTypes.eventStreamMod
 
 import typings.awsSdkTypes.awsSdkTypesStrings.binary
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,11 @@ trait BinaryHeaderValue
   
   var `type`: binary
   
-  var value: Uint8Array
+  var value: js.typedarray.Uint8Array
 }
 object BinaryHeaderValue {
   
-  inline def apply(value: Uint8Array): BinaryHeaderValue = {
+  inline def apply(value: js.typedarray.Uint8Array): BinaryHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("binary")
     __obj.asInstanceOf[BinaryHeaderValue]
@@ -26,6 +25,6 @@ object BinaryHeaderValue {
     
     inline def setType(value: binary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

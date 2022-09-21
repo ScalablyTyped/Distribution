@@ -1,31 +1,33 @@
 package typings.nodeRedRegistry.mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeRedRegistry.nodeRedRegistryStrings.init
+import typings.std.Exclude
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type NodeApiLog = typings.nodeRedRegistry.mod.Omit[
-/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Log */ js.Any, 
-typings.nodeRedRegistry.nodeRedRegistryStrings.init]
+type NodeApiLog = Omit[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Log */ Any, 
+init]
 
 // tslint:disable-line:no-empty-interface
-type NodeConstructor[TNode /* <: typings.nodeRedRegistry.mod.Node[TCred] */, TNodeDef /* <: typings.nodeRedRegistry.mod.NodeDef */, TCred] = js.ThisFunction1[/* this */ TNode, /* nodeDef */ TNodeDef, scala.Unit]
+type NodeConstructor[TNode /* <: Node[TCred] */, TNodeDef /* <: NodeDef */, TCred /* <: js.Object */] = js.ThisFunction1[/* this */ TNode, /* nodeDef */ TNodeDef, Unit]
 
 type NodeCredentials[TCreds] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof TCreds ]: @node-red/registry.@node-red/registry.NodeCredential}
-  */ typings.nodeRedRegistry.nodeRedRegistryStrings.NodeCredentials & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.nodeRedRegistry.nodeRedRegistryStrings.NodeCredentials & TopLevel[Any]
 
 /**
   * Function called by Node Registry to init node.
   */
-type NodeInitializer[TSets /* <: typings.nodeRedRegistry.mod.NodeAPISettingsWithData */] = js.Function1[
-/* RED */ typings.nodeRedRegistry.mod.NodeAPI[TSets], 
-scala.Unit | js.Promise[scala.Unit]]
+type NodeInitializer[TSets /* <: NodeAPISettingsWithData */] = js.Function1[/* RED */ NodeAPI[TSets], Unit | js.Promise[Unit]]
 
 type NodeSettings[TSets] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof TSets ]: @node-red/registry.@node-red/registry.NodeSetting<TSets[K]>}
-  */ typings.nodeRedRegistry.nodeRedRegistryStrings.NodeSettings & org.scalablytyped.runtime.TopLevel[TSets]
+  */ typings.nodeRedRegistry.nodeRedRegistryStrings.NodeSettings & TopLevel[TSets]
 
 /**
   * Omit Helper
@@ -33,4 +35,4 @@ type NodeSettings[TSets] = /* import warning: importer.ImportType#apply c Unsupp
   * TODO: Remove after March 2021, after
   *   the end of support for TS 3.4
   */
-type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+type Omit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]

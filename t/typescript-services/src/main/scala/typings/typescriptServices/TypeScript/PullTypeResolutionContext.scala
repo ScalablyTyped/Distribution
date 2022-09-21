@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PullTypeResolutionContext extends StObject {
   
-  /* private */ def _pushAnyContextualType(`type`: js.Any, provisional: js.Any, isInferentiallyTyping: js.Any, argContext: js.Any): js.Any = js.native
+  /* private */ def _pushAnyContextualType(`type`: Any, provisional: Any, isInferentiallyTyping: Any, argContext: Any): Any = js.native
   
   def canTypeCheckAST(ast: AST): Boolean = js.native
   
-  /* private */ var contextStack: js.Any = js.native
+  /* private */ var contextStack: Any = js.native
   
   def doneBaseTypeResolution(wasInBaseTypeResolution: Boolean): Unit = js.native
   
-  /* private */ var enclosingTypeWalker1: js.Any = js.native
+  /* private */ var enclosingTypeWalker1: Any = js.native
   
-  /* private */ var enclosingTypeWalker2: js.Any = js.native
+  /* private */ var enclosingTypeWalker2: Any = js.native
   
   def endWalkingTypes(statesWhenStartedWalkingTypes: StateWhenStartedWalkingTypes1): Unit = js.native
   
@@ -33,13 +33,13 @@ trait PullTypeResolutionContext extends StObject {
   
   def getContextualType(): PullTypeSymbol = js.native
   
-  /* private */ def getCurrentTypeArgumentInferenceContext(): js.Any = js.native
+  /* private */ def getCurrentTypeArgumentInferenceContext(): Any = js.native
   
   def getSymbolForAST(ast: AST): PullSymbol = js.native
   
   def hasProvisionalErrors(): Boolean = js.native
   
-  /* private */ var inBaseTypeResolution: js.Any = js.native
+  /* private */ var inBaseTypeResolution: Any = js.native
   
   def inProvisionalResolution(): Boolean = js.native
   
@@ -80,7 +80,7 @@ trait PullTypeResolutionContext extends StObject {
   
   def resetEnclosingTypeWalkerStates(): EnclosingTypeWalkerState1 = js.native
   
-  /* private */ var resolver: js.Any = js.native
+  /* private */ var resolver: Any = js.native
   
   def setEnclosingTypeForSymbols(symbol1: PullSymbol, symbol2: PullSymbol): EnclosingTypeWalkerState1 = js.native
   
@@ -100,7 +100,7 @@ trait PullTypeResolutionContext extends StObject {
   
   def typeCheck(): Boolean = js.native
   
-  /* private */ var typeCheckedNodes: js.Any = js.native
+  /* private */ var typeCheckedNodes: Any = js.native
   
   def walkIndexSignatureReturnTypes(indexSigs: IndexSigs1, useStringIndexSignature1: Boolean, useStringIndexSignature2: Boolean): Unit = js.native
   def walkIndexSignatureReturnTypes(

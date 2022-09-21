@@ -6,11 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TickConfig[ES /* <: ExprRef | SignalRef */]
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.vegaLite.srcMarkMod.AnyMarkConfig because Already inherited */ trait TickConfig[ES /* <: ExprRef | SignalRef */]
   extends StObject
      with MarkConfig[ES]
-     with TickThicknessMixins
-     with _AnyMarkConfig[ES] {
+     with TickThicknessMixins {
   
   /**
     * The width of the ticks.

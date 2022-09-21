@@ -16,7 +16,7 @@ trait IShellPaneTab extends StObject {
   
   val Selected: Boolean
   
-  def ShowDashboard(dashboardID: String, data: js.Any): Unit
+  def ShowDashboard(dashboardID: String, data: Any): Unit
   
   def ShowEmptyContent(): Unit
   
@@ -44,7 +44,7 @@ object IShellPaneTab {
     Remove: () => Unit,
     Select: () => Unit,
     Selected: Boolean,
-    ShowDashboard: (String, js.Any) => Unit,
+    ShowDashboard: (String, Any) => Unit,
     ShowEmptyContent: () => Unit,
     ShowFilePreview: String => Unit,
     ShowObjectVersionProperties: IPropertyValuesWithIconClues => Unit,
@@ -71,7 +71,7 @@ object IShellPaneTab {
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
     
-    inline def setShowDashboard(value: (String, js.Any) => Unit): Self = StObject.set(x, "ShowDashboard", js.Any.fromFunction2(value))
+    inline def setShowDashboard(value: (String, Any) => Unit): Self = StObject.set(x, "ShowDashboard", js.Any.fromFunction2(value))
     
     inline def setShowEmptyContent(value: () => Unit): Self = StObject.set(x, "ShowEmptyContent", js.Any.fromFunction0(value))
     

@@ -84,7 +84,7 @@ object anon {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -119,7 +119,7 @@ object anon {
     
     var date_happened: Double
     
-    var handle: js.Any
+    var handle: Any
     
     var id: js.BigInt
     
@@ -139,7 +139,7 @@ object anon {
     
     inline def apply(
       date_happened: Double,
-      handle: js.Any,
+      handle: Any,
       id: js.BigInt,
       priority: normal | low,
       tags: js.Array[String],
@@ -155,7 +155,7 @@ object anon {
       
       inline def setDate_happened(value: Double): Self = StObject.set(x, "date_happened", value.asInstanceOf[js.Any])
       
-      inline def setHandle(value: js.Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
       inline def setId(value: js.BigInt): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -167,7 +167,7 @@ object anon {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -208,7 +208,7 @@ object anon {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setType(value: gauge | rate | count): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -245,13 +245,13 @@ object anon {
       
       inline def setPoints(value: Double | (js.Array[Double | (js.Tuple2[String, Double])])): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: (Double | (js.Tuple2[String, Double]))*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: (Double | (js.Tuple2[String, Double]))*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

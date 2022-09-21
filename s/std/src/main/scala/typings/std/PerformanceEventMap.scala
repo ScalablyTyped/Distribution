@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PerformanceEventMap extends StObject {
   
+  /* standard dom */
   var resourcetimingbufferfull: Event
 }
 object PerformanceEventMap {

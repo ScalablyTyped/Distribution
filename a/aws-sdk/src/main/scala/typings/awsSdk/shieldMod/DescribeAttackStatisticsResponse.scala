@@ -11,6 +11,9 @@ trait DescribeAttackStatisticsResponse extends StObject {
     */
   var DataItems: AttackStatisticsDataList
   
+  /**
+    * The time range of the attack.
+    */
   var TimeRange: typings.awsSdk.shieldMod.TimeRange
 }
 object DescribeAttackStatisticsResponse {
@@ -24,7 +27,7 @@ object DescribeAttackStatisticsResponse {
     
     inline def setDataItems(value: AttackStatisticsDataList): Self = StObject.set(x, "DataItems", value.asInstanceOf[js.Any])
     
-    inline def setDataItemsVarargs(value: AttackStatisticsDataItem*): Self = StObject.set(x, "DataItems", js.Array(value :_*))
+    inline def setDataItemsVarargs(value: AttackStatisticsDataItem*): Self = StObject.set(x, "DataItems", js.Array(value*))
     
     inline def setTimeRange(value: TimeRange): Self = StObject.set(x, "TimeRange", value.asInstanceOf[js.Any])
   }

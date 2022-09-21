@@ -12,7 +12,7 @@ trait GetMembersResponse extends StObject {
   var Members: js.UndefOr[MemberList] = js.undefined
   
   /**
-    * The list of AWS accounts that could not be processed. For each account, the list includes the account ID and the email address.
+    * The list of Amazon Web Services accounts that could not be processed. For each account, the list includes the account ID and the email address.
     */
   var UnprocessedAccounts: js.UndefOr[ResultList] = js.undefined
 }
@@ -29,12 +29,12 @@ object GetMembersResponse {
     
     inline def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
     
-    inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "Members", js.Array(value :_*))
+    inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "Members", js.Array(value*))
     
     inline def setUnprocessedAccounts(value: ResultList): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedAccountsUndefined: Self = StObject.set(x, "UnprocessedAccounts", js.undefined)
     
-    inline def setUnprocessedAccountsVarargs(value: Result*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
+    inline def setUnprocessedAccountsVarargs(value: Result*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value*))
   }
 }

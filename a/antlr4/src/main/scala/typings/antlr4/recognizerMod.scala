@@ -12,25 +12,25 @@ object recognizerMod {
   
   @JSImport("antlr4/Recognizer", "Recognizer")
   @js.native
-  class Recognizer () extends StObject {
+  open class Recognizer () extends StObject {
     
     def addErrorListener(listener: ErrorListener): Unit = js.native
     
     def checkVersion(toolVersion: Double): Unit = js.native
     
-    def getErrorHeader(e: js.Any): String = js.native
+    def getErrorHeader(e: Any): String = js.native
     
     def getErrorListenerDispatch(): ProxyErrorListener = js.native
     
-    def getRuleIndexMap(): js.Any = js.native
+    def getRuleIndexMap(): Any = js.native
     
     def getTokenErrorDisplay(t: Token): String = js.native
     
-    def getTokenType(tokenName: String): js.Any = js.native
+    def getTokenType(tokenName: String): Any = js.native
     
-    def getTokenTypeMap(): js.Any = js.native
+    def getTokenTypeMap(): Any = js.native
     
-    def precpred(localCtx: ParserRuleContext, precedence: js.Any): Boolean = js.native
+    def precpred(localCtx: ParserRuleContext, precedence: Any): Boolean = js.native
     
     def removeErrorListeners(): Unit = js.native
     

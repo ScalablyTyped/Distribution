@@ -340,7 +340,7 @@ object W2UI {
     
     var offset: Double = js.native
     
-    def parseField(obj: js.Object, field: String): js.Any = js.native
+    def parseField(obj: js.Object, field: String): Any = js.native
     
     var parser: js.Function = js.native
     
@@ -551,7 +551,7 @@ object W2UI {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: W2Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: W2Item*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
@@ -1004,5 +1004,5 @@ object W2UI {
   }
   
   type W2UI = // morally, [s: string]<T extends W2Common>: T;
-  StringDictionary[js.Any]
+  StringDictionary[Any]
 }

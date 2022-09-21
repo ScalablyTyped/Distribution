@@ -47,6 +47,6 @@ object VisibleSecurityState {
     
     inline def setSecurityStateIssueIds(value: js.Array[String]): Self = StObject.set(x, "securityStateIssueIds", value.asInstanceOf[js.Any])
     
-    inline def setSecurityStateIssueIdsVarargs(value: String*): Self = StObject.set(x, "securityStateIssueIds", js.Array(value :_*))
+    inline def setSecurityStateIssueIdsVarargs(value: String*): Self = StObject.set(x, "securityStateIssueIds", js.Array(value*))
   }
 }

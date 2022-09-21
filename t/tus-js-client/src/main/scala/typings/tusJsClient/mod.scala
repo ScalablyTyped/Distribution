@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Blob
 import typings.std.Error
 import typings.std.File
+import typings.tusJsClient.anon.End
 import typings.tusJsClient.anon.PickReadableStreamDefault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,9 +12,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("tus-js-client", "DefaultHttpStack")
+  @js.native
+  open class DefaultHttpStack protected ()
+    extends StObject
+       with HttpStack {
+    def this(options: Any) = this()
+    
+    /* CompleteClass */
+    override def createRequest(method: String, url: String): HttpRequest = js.native
+    
+    /* CompleteClass */
+    override def getName(): String = js.native
+  }
+  
+  @JSImport("tus-js-client", "DetailedError")
+  @js.native
+  open class DetailedError ()
+    extends StObject
+       with Error {
+    
+    var causingError: js.Error = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    var originalRequest: HttpRequest = js.native
+    
+    var originalResponse: HttpResponse = js.native
+  }
+  
   @JSImport("tus-js-client", "Upload")
   @js.native
-  class Upload protected () extends StObject {
+  open class Upload protected () extends StObject {
     def this(file: Blob, options: UploadOptions) = this()
     def this(file: File, options: UploadOptions) = this()
     def this(file: PickReadableStreamDefault, options: UploadOptions) = this()
@@ -58,18 +94,18 @@ object mod {
   
   trait FileReader extends StObject {
     
-    def openFile(input: js.Any, chunkSize: Double): js.Promise[FileSource]
+    def openFile(input: Any, chunkSize: Double): js.Promise[FileSource]
   }
   object FileReader {
     
-    inline def apply(openFile: (js.Any, Double) => js.Promise[FileSource]): FileReader = {
+    inline def apply(openFile: (Any, Double) => js.Promise[FileSource]): FileReader = {
       val __obj = js.Dynamic.literal(openFile = js.Any.fromFunction2(openFile))
       __obj.asInstanceOf[FileReader]
     }
     
     extension [Self <: FileReader](x: Self) {
       
-      inline def setOpenFile(value: (js.Any, Double) => js.Promise[FileSource]): Self = StObject.set(x, "openFile", js.Any.fromFunction2(value))
+      inline def setOpenFile(value: (Any, Double) => js.Promise[FileSource]): Self = StObject.set(x, "openFile", js.Any.fromFunction2(value))
     }
   }
   
@@ -109,9 +145,9 @@ object mod {
     def getURL(): String
     
     // Return an environment specific object, e.g. the XMLHttpRequest object in browsers.
-    def getUnderlyingObject(): js.Any
+    def getUnderlyingObject(): Any
     
-    def send(body: js.Any): js.Promise[HttpResponse]
+    def send(body: Any): js.Promise[HttpResponse]
     
     def setHeader(header: String, value: String): Unit
     
@@ -124,8 +160,8 @@ object mod {
       getHeader: String => String,
       getMethod: () => String,
       getURL: () => String,
-      getUnderlyingObject: () => js.Any,
-      send: js.Any => js.Promise[HttpResponse],
+      getUnderlyingObject: () => Any,
+      send: Any => js.Promise[HttpResponse],
       setHeader: (String, String) => Unit,
       setProgressHandler: js.Function1[/* bytesSent */ Double, Unit] => Unit
     ): HttpRequest = {
@@ -143,9 +179,9 @@ object mod {
       
       inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
       
-      inline def setGetUnderlyingObject(value: () => js.Any): Self = StObject.set(x, "getUnderlyingObject", js.Any.fromFunction0(value))
+      inline def setGetUnderlyingObject(value: () => Any): Self = StObject.set(x, "getUnderlyingObject", js.Any.fromFunction0(value))
       
-      inline def setSend(value: js.Any => js.Promise[HttpResponse]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: Any => js.Promise[HttpResponse]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
       inline def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
       
@@ -162,7 +198,7 @@ object mod {
     def getStatus(): Double
     
     // Return an environment specific object, e.g. the XMLHttpRequest object in browsers.
-    def getUnderlyingObject(): js.Any
+    def getUnderlyingObject(): Any
   }
   object HttpResponse {
     
@@ -170,7 +206,7 @@ object mod {
       getBody: () => String,
       getHeader: String => String,
       getStatus: () => Double,
-      getUnderlyingObject: () => js.Any
+      getUnderlyingObject: () => Any
     ): HttpResponse = {
       val __obj = js.Dynamic.literal(getBody = js.Any.fromFunction0(getBody), getHeader = js.Any.fromFunction1(getHeader), getStatus = js.Any.fromFunction0(getStatus), getUnderlyingObject = js.Any.fromFunction0(getUnderlyingObject))
       __obj.asInstanceOf[HttpResponse]
@@ -184,7 +220,7 @@ object mod {
       
       inline def setGetStatus(value: () => Double): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
       
-      inline def setGetUnderlyingObject(value: () => js.Any): Self = StObject.set(x, "getUnderlyingObject", js.Any.fromFunction0(value))
+      inline def setGetUnderlyingObject(value: () => Any): Self = StObject.set(x, "getUnderlyingObject", js.Any.fromFunction0(value))
     }
   }
   
@@ -241,11 +277,11 @@ object mod {
     var done: Boolean
     
     // Platform-specific data type which must be usable by the HTTP stack as a body.
-    var value: js.Any
+    var value: Any
   }
   object SliceResult {
     
-    inline def apply(done: Boolean, value: js.Any): SliceResult = {
+    inline def apply(done: Boolean, value: Any): SliceResult = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliceResult]
     }
@@ -254,7 +290,7 @@ object mod {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,13 +322,24 @@ object mod {
         (js.Function3[/* chunkSize */ Double, /* bytesAccepted */ Double, /* bytesTotal */ Double, Unit]) | Null
       ] = js.undefined
     
-    var onError: js.UndefOr[(js.Function1[/* error */ Error, Unit]) | Null] = js.undefined
+    var onError: js.UndefOr[(js.Function1[/* error */ js.Error | DetailedError, Unit]) | Null] = js.undefined
     
     var onProgress: js.UndefOr[(js.Function2[/* bytesSent */ Double, /* bytesTotal */ Double, Unit]) | Null] = js.undefined
+    
+    var onShouldRetry: js.UndefOr[
+        (js.Function3[
+          /* error */ js.Error | DetailedError, 
+          /* retryAttempt */ Double, 
+          /* options */ this.type, 
+          Boolean
+        ]) | Null
+      ] = js.undefined
     
     var onSuccess: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
     var overridePatchMethod: js.UndefOr[Boolean] = js.undefined
+    
+    var parallelUploadBoundaries: js.UndefOr[js.Array[End] | Null] = js.undefined
     
     var parallelUploads: js.UndefOr[Double] = js.undefined
     
@@ -369,7 +416,7 @@ object mod {
       
       inline def setOnChunkCompleteUndefined: Self = StObject.set(x, "onChunkComplete", js.undefined)
       
-      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Error | DetailedError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorNull: Self = StObject.set(x, "onError", null)
       
@@ -381,6 +428,12 @@ object mod {
       
       inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
+      inline def setOnShouldRetry(value: (/* error */ js.Error | DetailedError, /* retryAttempt */ Double, UploadOptions) => Boolean): Self = StObject.set(x, "onShouldRetry", js.Any.fromFunction3(value))
+      
+      inline def setOnShouldRetryNull: Self = StObject.set(x, "onShouldRetry", null)
+      
+      inline def setOnShouldRetryUndefined: Self = StObject.set(x, "onShouldRetry", js.undefined)
+      
       inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
       
       inline def setOnSuccessNull: Self = StObject.set(x, "onSuccess", null)
@@ -390,6 +443,14 @@ object mod {
       inline def setOverridePatchMethod(value: Boolean): Self = StObject.set(x, "overridePatchMethod", value.asInstanceOf[js.Any])
       
       inline def setOverridePatchMethodUndefined: Self = StObject.set(x, "overridePatchMethod", js.undefined)
+      
+      inline def setParallelUploadBoundaries(value: js.Array[End]): Self = StObject.set(x, "parallelUploadBoundaries", value.asInstanceOf[js.Any])
+      
+      inline def setParallelUploadBoundariesNull: Self = StObject.set(x, "parallelUploadBoundaries", null)
+      
+      inline def setParallelUploadBoundariesUndefined: Self = StObject.set(x, "parallelUploadBoundaries", js.undefined)
+      
+      inline def setParallelUploadBoundariesVarargs(value: End*): Self = StObject.set(x, "parallelUploadBoundaries", js.Array(value*))
       
       inline def setParallelUploads(value: Double): Self = StObject.set(x, "parallelUploads", value.asInstanceOf[js.Any])
       
@@ -403,7 +464,7 @@ object mod {
       
       inline def setRetryDelaysUndefined: Self = StObject.set(x, "retryDelays", js.undefined)
       
-      inline def setRetryDelaysVarargs(value: Double*): Self = StObject.set(x, "retryDelays", js.Array(value :_*))
+      inline def setRetryDelaysVarargs(value: Double*): Self = StObject.set(x, "retryDelays", js.Array(value*))
       
       inline def setStoreFingerprintForResuming(value: Boolean): Self = StObject.set(x, "storeFingerprintForResuming", value.asInstanceOf[js.Any])
       

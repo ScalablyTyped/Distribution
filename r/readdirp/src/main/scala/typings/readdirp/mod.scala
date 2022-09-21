@@ -1,7 +1,5 @@
 package typings.readdirp
 
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.Stats
 import typings.node.streamMod.Readable
@@ -102,7 +100,7 @@ object mod {
       
       inline def setDirectoryFilterUndefined: Self = StObject.set(x, "directoryFilter", js.undefined)
       
-      inline def setDirectoryFilterVarargs(value: String*): Self = StObject.set(x, "directoryFilter", js.Array(value :_*))
+      inline def setDirectoryFilterVarargs(value: String*): Self = StObject.set(x, "directoryFilter", js.Array(value*))
       
       inline def setFileFilter(value: String | js.Array[String] | (js.Function1[/* entry */ EntryInfo, Boolean])): Self = StObject.set(x, "fileFilter", value.asInstanceOf[js.Any])
       
@@ -110,7 +108,7 @@ object mod {
       
       inline def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
       
-      inline def setFileFilterVarargs(value: String*): Self = StObject.set(x, "fileFilter", js.Array(value :_*))
+      inline def setFileFilterVarargs(value: String*): Self = StObject.set(x, "fileFilter", js.Array(value*))
       
       inline def setLstat(value: Boolean): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
       
@@ -129,11 +127,5 @@ object mod {
   @js.native
   trait ReaddirpStream
     extends Readable
-       with AsyncIterable[EntryInfo] {
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-  }
+       with AsyncIterable[EntryInfo]
 }

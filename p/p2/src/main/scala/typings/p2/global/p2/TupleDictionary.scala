@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.TupleDictionary")
 @js.native
-class TupleDictionary ()
+open class TupleDictionary ()
   extends typings.p2.mod.TupleDictionary

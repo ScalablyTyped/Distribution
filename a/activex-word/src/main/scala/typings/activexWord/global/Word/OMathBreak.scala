@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathBreak")
 @js.native
-/* private */ class OMathBreak ()
+/* private */ open class OMathBreak ()
   extends StObject
      with typings.activexWord.Word.OMathBreak {
   
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Delete(): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Range: typings.activexWord.Word.Range = js.native

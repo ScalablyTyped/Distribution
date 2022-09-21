@@ -3,7 +3,6 @@ package typings.promiseAllsettled
 import org.scalablytyped.runtime.Shortcut
 import typings.promiseAllsettled.anon.FnCall
 import typings.promiseAllsettled.implementationMod.PromiseTuple
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +16,9 @@ object mod extends Shortcut {
   @js.native
   trait ExportedImplementationType extends StObject {
     
-    def apply(): js.Promise[js.Array[js.Any]] = js.native
-    def apply[T /* <: Array[js.Any] */](iterable: PromiseTuple[T]): js.Promise[typings.promiseAllsettled.implementationMod.PromiseResultTuple[T]] = js.native
-    def apply[T](iterable: Iterable[js.Promise[T] | T]): js.Promise[js.Array[typings.promiseAllsettled.typesMod.PromiseResult[T, js.Any]]] = js.native
+    def apply(): js.Promise[js.Array[Any]] = js.native
+    def apply[T](iterable: js.Iterable[js.Promise[T] | T]): js.Promise[js.Array[typings.promiseAllsettled.typesMod.PromiseResult[T, Any]]] = js.native
+    def apply[T /* <: Array[Any] */](iterable: PromiseTuple[T]): js.Promise[typings.promiseAllsettled.implementationMod.PromiseResultTuple[T]] = js.native
     
     def getPolyfill(): /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any = js.native
     @JSName("getPolyfill")
@@ -27,9 +26,9 @@ object mod extends Shortcut {
         /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
       ] = js.native
     
-    def implementation(): js.Promise[js.Array[js.Any]] = js.native
-    def implementation[T /* <: Array[js.Any] */](iterable: PromiseTuple[T]): js.Promise[typings.promiseAllsettled.implementationMod.PromiseResultTuple[T]] = js.native
-    def implementation[T](iterable: Iterable[js.Promise[T] | T]): js.Promise[js.Array[typings.promiseAllsettled.typesMod.PromiseResult[T, js.Any]]] = js.native
+    def implementation(): js.Promise[js.Array[Any]] = js.native
+    def implementation[T](iterable: js.Iterable[js.Promise[T] | T]): js.Promise[js.Array[typings.promiseAllsettled.typesMod.PromiseResult[T, Any]]] = js.native
+    def implementation[T /* <: Array[Any] */](iterable: PromiseTuple[T]): js.Promise[typings.promiseAllsettled.implementationMod.PromiseResultTuple[T]] = js.native
     @JSName("implementation")
     var implementation_Original: FnCall = js.native
     
@@ -46,7 +45,7 @@ object mod extends Shortcut {
   
   type PromiseResult[T, E] = typings.promiseAllsettled.typesMod.PromiseResult[T, E]
   
-  type PromiseResultTuple[T /* <: Array[js.Any] */] = typings.promiseAllsettled.typesMod.PromiseResultTuple[T]
+  type PromiseResultTuple[T /* <: Array[Any] */] = typings.promiseAllsettled.typesMod.PromiseResultTuple[T]
   
   type _To = ExportedImplementationType
   

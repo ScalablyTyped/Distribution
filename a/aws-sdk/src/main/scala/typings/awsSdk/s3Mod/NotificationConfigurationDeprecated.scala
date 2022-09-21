@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotificationConfigurationDeprecated extends StObject {
   
   /**
-    * Container for specifying the AWS Lambda notification configuration.
+    * Container for specifying the Lambda notification configuration.
     */
   var CloudFunctionConfiguration: js.UndefOr[typings.awsSdk.s3Mod.CloudFunctionConfiguration] = js.undefined
   

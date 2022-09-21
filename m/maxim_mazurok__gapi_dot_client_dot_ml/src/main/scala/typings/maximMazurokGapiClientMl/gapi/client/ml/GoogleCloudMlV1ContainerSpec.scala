@@ -81,19 +81,19 @@ object GoogleCloudMlV1ContainerSpec {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setCommand(value: js.Array[String]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value*))
     
     inline def setEnv(value: js.Array[GoogleCloudMlV1EnvVar]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setEnvVarargs(value: GoogleCloudMlV1EnvVar*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: GoogleCloudMlV1EnvVar*): Self = StObject.set(x, "env", js.Array(value*))
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
@@ -103,6 +103,6 @@ object GoogleCloudMlV1ContainerSpec {
     
     inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    inline def setPortsVarargs(value: GoogleCloudMlV1ContainerPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: GoogleCloudMlV1ContainerPort*): Self = StObject.set(x, "ports", js.Array(value*))
   }
 }

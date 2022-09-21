@@ -12,7 +12,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : Scrape = js.native
   
-  type Callback = js.Function2[/* error */ js.Any | Null, /* result */ js.Array[Resource] | Null, Unit]
+  type Callback = js.Function2[/* error */ Any | Null, /* result */ js.Array[Resource] | Null, Unit]
   
   trait Options extends StObject {
     
@@ -81,7 +81,7 @@ object mod extends Shortcut {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: js.Object*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: js.Object*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setPrettifyUrls(value: Boolean): Self = StObject.set(x, "prettifyUrls", value.asInstanceOf[js.Any])
       
@@ -103,7 +103,7 @@ object mod extends Shortcut {
       
       inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
       
-      inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value*))
       
       inline def setSubdirectories(value: js.Array[SubDirectory]): Self = StObject.set(x, "subdirectories", value.asInstanceOf[js.Any])
       
@@ -111,7 +111,7 @@ object mod extends Shortcut {
       
       inline def setSubdirectoriesUndefined: Self = StObject.set(x, "subdirectories", js.undefined)
       
-      inline def setSubdirectoriesVarargs(value: SubDirectory*): Self = StObject.set(x, "subdirectories", js.Array(value :_*))
+      inline def setSubdirectoriesVarargs(value: SubDirectory*): Self = StObject.set(x, "subdirectories", js.Array(value*))
       
       inline def setUrlFilter(value: /* url */ String => Boolean): Self = StObject.set(x, "urlFilter", js.Any.fromFunction1(value))
       
@@ -119,7 +119,7 @@ object mod extends Shortcut {
       
       inline def setUrls(value: js.Array[String | Url]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      inline def setUrlsVarargs(value: (String | Url)*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: (String | Url)*): Self = StObject.set(x, "urls", js.Array(value*))
     }
   }
   
@@ -159,7 +159,7 @@ object mod extends Shortcut {
       
       inline def setAssets(value: js.Array[Resource]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      inline def setAssetsVarargs(value: Resource*): Self = StObject.set(x, "assets", js.Array(value :_*))
+      inline def setAssetsVarargs(value: Resource*): Self = StObject.set(x, "assets", js.Array(value*))
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -216,7 +216,7 @@ object mod extends Shortcut {
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     }
   }
   

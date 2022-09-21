@@ -1,6 +1,7 @@
 package typings.hdrHistogramJs
 
-import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
+import typings.hdrHistogramJs.histogramBuilderMod.BuildRequest
+import typings.hdrHistogramJs.histogramMod.Histogram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,37 +21,30 @@ object recorderMod {
     * {@link Recorder#recordValueWithExpectedInterval} calls.
     *
     */
-  @JSImport("hdr-histogram-js/Recorder", JSImport.Default)
+  @JSImport("hdr-histogram-js/dist/Recorder", JSImport.Default)
   @js.native
   /**
     * Construct an auto-resizing {@link Recorder} with a lowest discernible value of
     * 1 and an auto-adjusting highestTrackableValue. Can auto-resize up to track values up to Number.MAX_SAFE_INTEGER.
     *
-    * @param numberOfSignificantValueDigits Specifies the precision to use. This is the number of significant
-    *                                       decimal digits to which the histogram will maintain value resolution
-    *                                       and separation. Must be a non-negative integer between 0 and 5.
-    * @param packed Specifies whether the recorder will uses a packed internal representation or not.
+    * @param histogramBuildRequest parameters used to build histograms while using this recorder.
     * @param clock (for testing purpose) an action that give current time in ms since 1970
     */
-  class default ()
+  open class default ()
     extends StObject
        with Recorder {
-    def this(numberOfSignificantValueDigits: Double) = this()
-    def this(numberOfSignificantValueDigits: Double, packed: Boolean) = this()
-    def this(numberOfSignificantValueDigits: Unit, packed: Boolean) = this()
-    def this(numberOfSignificantValueDigits: Double, packed: Boolean, clock: js.Function0[Double]) = this()
-    def this(numberOfSignificantValueDigits: Double, packed: Unit, clock: js.Function0[Double]) = this()
-    def this(numberOfSignificantValueDigits: Unit, packed: Boolean, clock: js.Function0[Double]) = this()
-    def this(numberOfSignificantValueDigits: Unit, packed: Unit, clock: js.Function0[Double]) = this()
+    def this(histogramBuildRequest: BuildRequest) = this()
+    def this(histogramBuildRequest: Unit, clock: js.Function0[Double]) = this()
+    def this(histogramBuildRequest: BuildRequest, clock: js.Function0[Double]) = this()
   }
   object default {
     
-    @JSImport("hdr-histogram-js/Recorder", JSImport.Default)
+    @JSImport("hdr-histogram-js/dist/Recorder", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("hdr-histogram-js/Recorder", "default.idGenerator")
+    @JSImport("hdr-histogram-js/dist/Recorder", "default.idGenerator")
     @js.native
     def idGenerator: Double = js.native
     inline def idGenerator_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idGenerator")(x.asInstanceOf[js.Any])
@@ -72,9 +66,16 @@ object recorderMod {
   @js.native
   trait Recorder extends StObject {
     
-    /* private */ var activeHistogram: js.Any = js.native
+    /* private */ var activeHistogram: Any = js.native
     
-    /* private */ var clock: js.Any = js.native
+    /* private */ var clock: Any = js.native
+    
+    /**
+      * Release memory associated to this recorder by destroying
+      * histograms used under the cover.
+      * Useful when webassembly histograms are used.
+      */
+    def destroy(): Unit = js.native
     
     /**
       * Get an interval histogram, which will include a stable, consistent view of all value counts
@@ -103,8 +104,8 @@ object recorderMod {
       *                           copy operations.
       * @return a histogram containing the value counts accumulated since the last interval histogram was taken.
       */
-    def getIntervalHistogram(): AbstractHistogram = js.native
-    def getIntervalHistogram(histogramToRecycle: AbstractHistogram): AbstractHistogram = js.native
+    def getIntervalHistogram(): Histogram = js.native
+    def getIntervalHistogram(histogramToRecycle: Histogram): Histogram = js.native
     
     /**
       * Place a copy of the value counts accumulated since accumulated (since the last interval histogram
@@ -115,17 +116,13 @@ object recorderMod {
       *
       * @param targetHistogram the histogram into which the interval histogram's data should be copied
       */
-    def getIntervalHistogramInto(targetHistogram: AbstractHistogram): Unit = js.native
+    def getIntervalHistogramInto(targetHistogram: Histogram): Unit = js.native
     
-    /* private */ var histogramConstr: js.Any = js.native
+    /* private */ var histogramBuildRequest: Any = js.native
     
-    /* private */ var inactiveHistogram: js.Any = js.native
+    /* private */ var inactiveHistogram: Any = js.native
     
-    /* private */ var numberOfSignificantValueDigits: js.Any = js.native
-    
-    /* private */ var packed: js.Any = js.native
-    
-    /* private */ var performIntervalSample: js.Any = js.native
+    /* private */ var performIntervalSample: Any = js.native
     
     /**
       * Record a value in the histogram
@@ -151,7 +148,7 @@ object recorderMod {
       * interval between value samples, Histogram will auto-generate an additional series of decreasingly-smaller
       * (down to the expectedIntervalBetweenValueSamples) value records.
       * <p>
-      * See related notes {@link AbstractHistogram#recordValueWithExpectedInterval(long, long)}
+      * See related notes {@link Histogram#recordValueWithExpectedInterval(long, long)}
       * for more explanations about coordinated omission and expected interval correction.
       *      *
       * @param value The value to record

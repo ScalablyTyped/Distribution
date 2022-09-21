@@ -1,13 +1,19 @@
 package typings.carbonComponentsReact
 
+import typings.carbonComponentsReact.comboBoxComboBoxMod.ComboBoxProps
+import typings.carbonComponentsReact.typingsSharedMod.FCReturn
+import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
+import typings.std.Extract
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comboBoxMod {
   
-  @JSImport("carbon-components-react/lib/components/ComboBox", JSImport.Default)
+  @JSImport("carbon-components-react/lib/components/ComboBox", JSImport.Namespace)
   @js.native
-  class default[T] ()
-    extends typings.carbonComponentsReact.comboBoxComboBoxMod.default[T]
+  val ^ : js.Any = js.native
+  
+  inline def default[T](props: ForwardRefProps[HTMLInputElement, ComboBoxProps[T, Extract[T, js.Object]]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
 }

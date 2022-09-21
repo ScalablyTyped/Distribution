@@ -13,5 +13,5 @@ trait jQuery
      with Browser {
   
   @JSName("get$")
-  def get$(): js.Any = js.native
+  def get$(): Any = js.native
 }

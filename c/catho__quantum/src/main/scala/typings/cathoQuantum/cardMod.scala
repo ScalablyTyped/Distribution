@@ -1,6 +1,6 @@
 package typings.cathoQuantum
 
-import typings.cathoQuantum.anon.`7`
+import typings.cathoQuantum.anon.`8`
 import typings.cathoQuantum.contentMod.Content
 import typings.cathoQuantum.descriptionMod.Description
 import typings.cathoQuantum.footerMod.Footer
@@ -21,8 +21,8 @@ object cardMod {
   
   @JSImport("@catho/quantum/Card", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   /* static members */
   object default {
     
@@ -72,13 +72,13 @@ object cardMod {
     inline def Title_=(x: Title): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
   }
   
-  type Card = Component[Props, js.Object, js.Any]
+  type Card = Component[Props, js.Object, Any]
   
   trait Props extends StObject {
     
     var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
     
-    var theme: js.UndefOr[`7`] = js.undefined
+    var theme: js.UndefOr[`8`] = js.undefined
   }
   object Props {
     
@@ -93,7 +93,7 @@ object cardMod {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setTheme(value: `7`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `8`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }

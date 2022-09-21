@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.Control")
 @js.native
-class Control protected ()
+open class Control protected ()
   extends StObject
      with typings.sharepoint.CUI.Control {
   def this(
@@ -16,7 +16,7 @@ class Control protected ()
   ) = this()
   
   /* CompleteClass */
-  override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+  override def createComponentForDisplayMode(displayMode: String): Any = js.native
   
   //#region Methods
   /**

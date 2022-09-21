@@ -22,17 +22,17 @@ trait DBSecurityGroup extends StObject {
   var DBSecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    *  Contains a list of EC2SecurityGroup elements. 
+    * Contains a list of EC2SecurityGroup elements.
     */
   var EC2SecurityGroups: js.UndefOr[EC2SecurityGroupList] = js.undefined
   
   /**
-    *  Contains a list of IPRange elements. 
+    * Contains a list of IPRange elements.
     */
   var IPRanges: js.UndefOr[IPRangeList] = js.undefined
   
   /**
-    * Provides the AWS ID of the owner of a specific DB security group.
+    * Provides the Amazon Web Services ID of the owner of a specific DB security group.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -66,13 +66,13 @@ object DBSecurityGroup {
     
     inline def setEC2SecurityGroupsUndefined: Self = StObject.set(x, "EC2SecurityGroups", js.undefined)
     
-    inline def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = StObject.set(x, "EC2SecurityGroups", js.Array(value :_*))
+    inline def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = StObject.set(x, "EC2SecurityGroups", js.Array(value*))
     
     inline def setIPRanges(value: IPRangeList): Self = StObject.set(x, "IPRanges", value.asInstanceOf[js.Any])
     
     inline def setIPRangesUndefined: Self = StObject.set(x, "IPRanges", js.undefined)
     
-    inline def setIPRangesVarargs(value: IPRange*): Self = StObject.set(x, "IPRanges", js.Array(value :_*))
+    inline def setIPRangesVarargs(value: IPRange*): Self = StObject.set(x, "IPRanges", js.Array(value*))
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ trait ExportDescription extends StObject {
   /**
     * The time at which the export task completed.
     */
-  var EndTime: js.UndefOr[ExportEndTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the table export.
@@ -44,7 +44,7 @@ trait ExportDescription extends StObject {
   /**
     * Point in time from which table data was exported.
     */
-  var ExportTime: js.UndefOr[typings.awsSdk.dynamodbMod.ExportTime] = js.undefined
+  var ExportTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Status code for the result of the failed export.
@@ -67,7 +67,7 @@ trait ExportDescription extends StObject {
   var S3Bucket: js.UndefOr[typings.awsSdk.dynamodbMod.S3Bucket] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the bucket containing the export.
+    * The ID of the Amazon Web Services account that owns the bucket containing the export.
     */
   var S3BucketOwner: js.UndefOr[typings.awsSdk.dynamodbMod.S3BucketOwner] = js.undefined
   
@@ -77,19 +77,19 @@ trait ExportDescription extends StObject {
   var S3Prefix: js.UndefOr[typings.awsSdk.dynamodbMod.S3Prefix] = js.undefined
   
   /**
-    * Type of encryption used on the bucket where export data is stored. Valid values for S3SseAlgorithm are:    AES256 - server-side encryption with Amazon S3 managed keys    KMS - server-side encryption with AWS KMS managed keys  
+    * Type of encryption used on the bucket where export data is stored. Valid values for S3SseAlgorithm are:    AES256 - server-side encryption with Amazon S3 managed keys    KMS - server-side encryption with KMS managed keys  
     */
   var S3SseAlgorithm: js.UndefOr[typings.awsSdk.dynamodbMod.S3SseAlgorithm] = js.undefined
   
   /**
-    * The ID of the AWS KMS managed key used to encrypt the S3 bucket where export data is stored (if applicable).
+    * The ID of the KMS managed key used to encrypt the S3 bucket where export data is stored (if applicable).
     */
   var S3SseKmsKeyId: js.UndefOr[typings.awsSdk.dynamodbMod.S3SseKmsKeyId] = js.undefined
   
   /**
     * The time at which the export task began.
     */
-  var StartTime: js.UndefOr[ExportStartTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the table that was exported.
@@ -118,7 +118,7 @@ object ExportDescription {
     
     inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    inline def setEndTime(value: ExportEndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -138,7 +138,7 @@ object ExportDescription {
     
     inline def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
     
-    inline def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
+    inline def setExportTime(value: js.Date): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
     
     inline def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
     
@@ -174,7 +174,7 @@ object ExportDescription {
     
     inline def setS3SseKmsKeyIdUndefined: Self = StObject.set(x, "S3SseKmsKeyId", js.undefined)
     
-    inline def setStartTime(value: ExportStartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_people
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220810
 
 ## Library description:
 TypeScript typings for People API v1
@@ -10,10 +10,10 @@ TypeScript typings for People API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.people |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 1 |
-| # downloads        | 4851 |
-| # stars            | 0 |
+| # releases         | 278 |
+| # dependents       | 0.0 |
+| # downloads        | 6218.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

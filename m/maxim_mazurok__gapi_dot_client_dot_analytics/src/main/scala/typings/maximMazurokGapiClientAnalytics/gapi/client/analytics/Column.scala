@@ -11,7 +11,7 @@ trait Column extends StObject {
   var attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column & TopLevel[Any]
   ] = js.undefined
   
   /** Column id. */
@@ -32,7 +32,7 @@ object Column {
     inline def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column & TopLevel[Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)

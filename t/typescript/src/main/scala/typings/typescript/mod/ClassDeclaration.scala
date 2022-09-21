@@ -14,6 +14,8 @@ trait ClassDeclaration
   extends StObject
      with ClassLikeDeclarationBase
      with ClassLikeDeclaration
+     with HasDecorators
+     with HasModifiers
      with Statement {
   
   @JSName("kind")

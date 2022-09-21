@@ -18,7 +18,7 @@ trait OrderPromotion extends StObject {
     */
   var appliedItems: js.UndefOr[js.Array[OrderPromotionItem]] = js.undefined
   
-  /** Promotion end time in ISO 8601 format. Date, time, and offset required, e.g., "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z". */
+  /** Promotion end time in ISO 8601 format. Date, time, and offset required, for example, "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z". */
   var endTime: js.UndefOr[String] = js.undefined
   
   /** Required. The party funding the promotion. Only `merchant` is supported for `orders.createtestorder`. Acceptable values are: - "`google`" - "`merchant`" */
@@ -33,7 +33,7 @@ trait OrderPromotion extends StObject {
   /** A short title of the promotion to be shown on the checkout page. Do not provide for `orders.createtestorder`. */
   var shortTitle: js.UndefOr[String] = js.undefined
   
-  /** Promotion start time in ISO 8601 format. Date, time, and offset required, e.g., "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z". */
+  /** Promotion start time in ISO 8601 format. Date, time, and offset required, for example, "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z". */
   var startTime: js.UndefOr[String] = js.undefined
   
   /**
@@ -65,13 +65,13 @@ object OrderPromotion {
     
     inline def setApplicableItemsUndefined: Self = StObject.set(x, "applicableItems", js.undefined)
     
-    inline def setApplicableItemsVarargs(value: OrderPromotionItem*): Self = StObject.set(x, "applicableItems", js.Array(value :_*))
+    inline def setApplicableItemsVarargs(value: OrderPromotionItem*): Self = StObject.set(x, "applicableItems", js.Array(value*))
     
     inline def setAppliedItems(value: js.Array[OrderPromotionItem]): Self = StObject.set(x, "appliedItems", value.asInstanceOf[js.Any])
     
     inline def setAppliedItemsUndefined: Self = StObject.set(x, "appliedItems", js.undefined)
     
-    inline def setAppliedItemsVarargs(value: OrderPromotionItem*): Self = StObject.set(x, "appliedItems", js.Array(value :_*))
+    inline def setAppliedItemsVarargs(value: OrderPromotionItem*): Self = StObject.set(x, "appliedItems", js.Array(value*))
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

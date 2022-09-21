@@ -31,13 +31,13 @@ object CreateMeetingWithAttendeesResponse {
     
     inline def setAttendeesUndefined: Self = StObject.set(x, "Attendees", js.undefined)
     
-    inline def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "Attendees", js.Array(value*))
     
     inline def setErrors(value: BatchCreateAttendeeErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: CreateAttendeeError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: CreateAttendeeError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setMeeting(value: Meeting): Self = StObject.set(x, "Meeting", value.asInstanceOf[js.Any])
     

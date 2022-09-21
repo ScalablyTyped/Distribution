@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     Optional configuration object.
   * @api stable
   */
-class WFS ()
+open class WFS ()
   extends typings.openlayers.mod.format.WFS {
   def this(opt_options: WFSOptions) = this()
 }

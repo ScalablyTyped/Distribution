@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoMLDataSource extends StObject {
   
   /**
-    * The Amazon S3 location of the input data.  The input data must be in CSV format and contain at least 500 rows. 
+    * The Amazon S3 location of the input data.
     */
   var S3DataSource: AutoMLS3DataSource
 }

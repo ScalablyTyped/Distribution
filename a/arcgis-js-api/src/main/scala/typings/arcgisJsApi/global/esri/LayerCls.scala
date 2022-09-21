@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)
   */
-class LayerCls ()
+open class LayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Layer {
   def this(properties: LayerProperties) = this()

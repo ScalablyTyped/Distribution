@@ -1,19 +1,24 @@
 package typings.bookshelf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventOptions extends js.Object {
+trait EventOptions extends StObject {
+  
   var silent: js.UndefOr[Boolean] = js.undefined
 }
-
 object EventOptions {
-  @scala.inline
-  def apply(silent: js.UndefOr[Boolean] = js.undefined): EventOptions = {
+  
+  inline def apply(): EventOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventOptions]
   }
+  
+  extension [Self <: EventOptions](x: Self) {
+    
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+  }
 }
-

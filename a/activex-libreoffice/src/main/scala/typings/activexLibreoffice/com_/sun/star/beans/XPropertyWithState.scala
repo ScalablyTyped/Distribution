@@ -57,7 +57,7 @@ object XPropertyWithState {
     acquire: () => Unit,
     getDefaultAsProperty: () => XInterface,
     getStateAsProperty: () => PropertyState,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setToDefaultAsProperty: () => Unit
   ): XPropertyWithState = {

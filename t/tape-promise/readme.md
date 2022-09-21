@@ -11,9 +11,9 @@ Promise/async support for tape.
 | Full name          | tape-promise |
 | Keywords           | tape, promise, async, test, testing, tdd, unit |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 245332 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29114.333333333332 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/jprichardson/tape-promise#readme)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetConnectedBluetoothDevicesOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   var services: js.Array[String]
   
@@ -25,7 +25,7 @@ object GetConnectedBluetoothDevicesOptions {
     
     inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value*))
     
     inline def setSuccess(value: devicesArrayBluetoothDevi => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

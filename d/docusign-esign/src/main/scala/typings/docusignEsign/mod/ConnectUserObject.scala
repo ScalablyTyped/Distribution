@@ -54,6 +54,6 @@ object ConnectUserObject {
     
     inline def setSenderSearchableItemsUndefined: Self = StObject.set(x, "senderSearchableItems", js.undefined)
     
-    inline def setSenderSearchableItemsVarargs(value: String*): Self = StObject.set(x, "senderSearchableItems", js.Array(value :_*))
+    inline def setSenderSearchableItemsVarargs(value: String*): Self = StObject.set(x, "senderSearchableItems", js.Array(value*))
   }
 }

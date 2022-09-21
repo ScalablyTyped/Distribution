@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.AddressList")
 @js.native
-/* private */ class AddressList ()
+/* private */ open class AddressList ()
   extends StObject
      with typings.activexOutlook.Outlook.AddressList {
   
@@ -47,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotAddressList_typekey: typings.activexOutlook.Outlook.AddressList = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native

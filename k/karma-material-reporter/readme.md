@@ -10,10 +10,10 @@ A good looking UI for displaying karma test results
 | ------------------ | :-------------: |
 | Full name          | karma-material-reporter |
 | Keywords           | karma, reporter, material |
-| # releases         | 9 |
-| # dependents       | 0 |
-| # downloads        | 1057 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 142.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/ameerthehacker/karma-material-reporter#readme)

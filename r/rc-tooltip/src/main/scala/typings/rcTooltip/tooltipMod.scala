@@ -1,6 +1,7 @@
 package typings.rcTooltip
 
 import org.scalablytyped.runtime.Shortcut
+import typings.rcMotion.cssmotionMod.CSSMotionProps
 import typings.rcTooltip.anon.KeepParent
 import typings.rcTrigger.interfaceMod.ActionType
 import typings.rcTrigger.interfaceMod.AlignType
@@ -20,15 +21,16 @@ object tooltipMod extends Shortcut {
   
   @JSImport("rc-tooltip/es/Tooltip", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[TooltipProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]] = js.native
   
   /* Inlined parent std.Pick<rc-trigger.rc-trigger.TriggerProps, 'onPopupAlign' | 'builtinPlacements'> */
   trait TooltipProps extends StObject {
     
-    var afterVisibleChange: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var afterVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
     var align: js.UndefOr[AlignType] = js.undefined
     
+    /** @deprecated Use `motion` instead */
     var animation: js.UndefOr[AnimationType] = js.undefined
     
     var arrowContent: js.UndefOr[ReactNode] = js.undefined
@@ -44,6 +46,9 @@ object tooltipMod extends Shortcut {
     var getTooltipContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
+    
+    /** Config popup motion */
+    var motion: js.UndefOr[CSSMotionProps] = js.undefined
     
     var mouseEnterDelay: js.UndefOr[Double] = js.undefined
     
@@ -67,11 +72,16 @@ object tooltipMod extends Shortcut {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
+    var showArrow: js.UndefOr[Boolean] = js.undefined
+    
+    /** @deprecated Use `motion` instead */
     var transitionName: js.UndefOr[String] = js.undefined
     
     var trigger: js.UndefOr[ActionType | js.Array[ActionType]] = js.undefined
     
     var visible: js.UndefOr[Boolean] = js.undefined
+    
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object TooltipProps {
     
@@ -82,7 +92,7 @@ object tooltipMod extends Shortcut {
     
     extension [Self <: TooltipProps](x: Self) {
       
-      inline def setAfterVisibleChange(value: () => Unit): Self = StObject.set(x, "afterVisibleChange", js.Any.fromFunction0(value))
+      inline def setAfterVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "afterVisibleChange", js.Any.fromFunction1(value))
       
       inline def setAfterVisibleChangeUndefined: Self = StObject.set(x, "afterVisibleChange", js.undefined)
       
@@ -121,6 +131,10 @@ object tooltipMod extends Shortcut {
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+      
+      inline def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
       
       inline def setMouseEnterDelay(value: Double): Self = StObject.set(x, "mouseEnterDelay", value.asInstanceOf[js.Any])
       
@@ -168,6 +182,10 @@ object tooltipMod extends Shortcut {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
+      inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
+      
+      inline def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
+      
       inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
@@ -176,16 +194,20 @@ object tooltipMod extends Shortcut {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setTriggerVarargs(value: ActionType*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+      inline def setTriggerVarargs(value: ActionType*): Self = StObject.set(x, "trigger", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
-  type _To = ForwardRefExoticComponent[TooltipProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `tooltipMod.foo` */
-  override def _to: ForwardRefExoticComponent[TooltipProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]] = default
 }

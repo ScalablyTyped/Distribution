@@ -8,7 +8,7 @@ trait RotationWidth extends StObject {
   
   var height: Double
   
-  var rotation: js.Any
+  var rotation: Double
   
   var width: Double
   
@@ -18,7 +18,7 @@ trait RotationWidth extends StObject {
 }
 object RotationWidth {
   
-  inline def apply(height: Double, rotation: js.Any, width: Double, x: Double, y: Double): RotationWidth = {
+  inline def apply(height: Double, rotation: Double, width: Double, x: Double, y: Double): RotationWidth = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationWidth]
   }
@@ -27,7 +27,7 @@ object RotationWidth {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setRotation(value: js.Any): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

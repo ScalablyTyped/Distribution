@@ -9,7 +9,7 @@ trait Operation extends StObject {
   /** The context for backup operation, if applicable. */
   var backupContext: js.UndefOr[BackupContext] = js.undefined
   
-  /** The time this operation finished in UTC timezone in RFC 3339 format, for example *2012-11-15T16:19:00.094Z*. */
+  /** The time this operation finished in UTC timezone in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example `2012-11-15T16:19:00.094Z`. */
   var endTime: js.UndefOr[String] = js.undefined
   
   /** If errors occurred during processing of this operation, this field will be populated. */
@@ -21,28 +21,28 @@ trait Operation extends StObject {
   /** The context for import operation, if applicable. */
   var importContext: js.UndefOr[ImportContext] = js.undefined
   
-  /** The time this operation was enqueued in UTC timezone in RFC 3339 format, for example *2012-11-15T16:19:00.094Z*. */
+  /** The time this operation was enqueued in UTC timezone in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example `2012-11-15T16:19:00.094Z`. */
   var insertTime: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#operation*. */
+  /** This is always `sql#operation`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** An identifier that uniquely identifies the operation. You can use this identifier to retrieve the Operations resource that has information about the operation. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of the operation. Valid values are: *CREATE* *DELETE* *UPDATE* *RESTART* *IMPORT* *EXPORT* *BACKUP_VOLUME* *RESTORE_VOLUME* *CREATE_USER* *DELETE_USER* *CREATE_DATABASE*
-    * *DELETE_DATABASE*
+    * The type of the operation. Valid values are: * `CREATE` * `DELETE` * `UPDATE` * `RESTART` * `IMPORT` * `EXPORT` * `BACKUP_VOLUME` * `RESTORE_VOLUME` * `CREATE_USER` * `DELETE_USER`
+    * * `CREATE_DATABASE` * `DELETE_DATABASE`
     */
   var operationType: js.UndefOr[String] = js.undefined
   
   /** The URI of this resource. */
   var selfLink: js.UndefOr[String] = js.undefined
   
-  /** The time this operation actually started in UTC timezone in RFC 3339 format, for example *2012-11-15T16:19:00.094Z*. */
+  /** The time this operation actually started in UTC timezone in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example `2012-11-15T16:19:00.094Z`. */
   var startTime: js.UndefOr[String] = js.undefined
   
-  /** The status of an operation. Valid values are: *PENDING* *RUNNING* *DONE* *SQL_OPERATION_STATUS_UNSPECIFIED* */
+  /** The status of an operation. */
   var status: js.UndefOr[String] = js.undefined
   
   /** Name of the database instance related to this operation. */

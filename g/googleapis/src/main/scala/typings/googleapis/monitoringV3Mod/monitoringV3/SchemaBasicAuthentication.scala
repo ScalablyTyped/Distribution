@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A type of authentication to perform against the specified resource or URL
-  * that uses username and password. Currently, only Basic authentication is
-  * supported in Uptime Monitoring.
-  */
 trait SchemaBasicAuthentication extends StObject {
   
   /**
-    * The password to authenticate.
+    * The password to use when authenticating with the HTTP server.
     */
-  var password: js.UndefOr[String] = js.undefined
+  var password: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The username to authenticate.
+    * The username to use when authenticating with the HTTP server.
     */
-  var username: js.UndefOr[String] = js.undefined
+  var username: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBasicAuthentication {
   
@@ -32,9 +27,13 @@ object SchemaBasicAuthentication {
     
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
+    inline def setPasswordNull: Self = StObject.set(x, "password", null)
+    
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameNull: Self = StObject.set(x, "username", null)
     
     inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }

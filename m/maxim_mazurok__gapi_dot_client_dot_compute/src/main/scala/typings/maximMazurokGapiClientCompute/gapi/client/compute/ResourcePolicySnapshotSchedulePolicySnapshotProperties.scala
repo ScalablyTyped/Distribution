@@ -17,7 +17,7 @@ trait ResourcePolicySnapshotSchedulePolicySnapshotProperties extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ResourcePolicySnapshotSchedulePolicySnapshotProperties & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ResourcePolicySnapshotSchedulePolicySnapshotProperties & TopLevel[Any]
   ] = js.undefined
   
   /** Cloud Storage bucket storage location of the auto snapshot (regional or multi-regional). */
@@ -43,7 +43,7 @@ object ResourcePolicySnapshotSchedulePolicySnapshotProperties {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ResourcePolicySnapshotSchedulePolicySnapshotProperties & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ResourcePolicySnapshotSchedulePolicySnapshotProperties & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -52,6 +52,6 @@ object ResourcePolicySnapshotSchedulePolicySnapshotProperties {
     
     inline def setStorageLocationsUndefined: Self = StObject.set(x, "storageLocations", js.undefined)
     
-    inline def setStorageLocationsVarargs(value: String*): Self = StObject.set(x, "storageLocations", js.Array(value :_*))
+    inline def setStorageLocationsVarargs(value: String*): Self = StObject.set(x, "storageLocations", js.Array(value*))
   }
 }

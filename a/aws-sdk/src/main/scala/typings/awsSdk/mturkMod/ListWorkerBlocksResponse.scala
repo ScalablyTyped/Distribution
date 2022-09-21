@@ -39,6 +39,6 @@ object ListWorkerBlocksResponse {
     
     inline def setWorkerBlocksUndefined: Self = StObject.set(x, "WorkerBlocks", js.undefined)
     
-    inline def setWorkerBlocksVarargs(value: WorkerBlock*): Self = StObject.set(x, "WorkerBlocks", js.Array(value :_*))
+    inline def setWorkerBlocksVarargs(value: WorkerBlock*): Self = StObject.set(x, "WorkerBlocks", js.Array(value*))
   }
 }

@@ -6,18 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mathConstantsMod {
   
-  @JSImport("babylonjs/Maths/math.constants", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   /**
     * Constant used to define the minimal number value in Babylon.js
     * @ignorenaming
     */
   @JSImport("babylonjs/Maths/math.constants", "Epsilon")
   @js.native
-  def Epsilon: Double = js.native
-  inline def Epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Epsilon")(x.asInstanceOf[js.Any])
+  val Epsilon: /* 0.001 */ Double = js.native
+  
+  @JSImport("babylonjs/Maths/math.constants", "PHI")
+  @js.native
+  val PHI: Double = js.native
   
   @JSImport("babylonjs/Maths/math.constants", "ToGammaSpace")
   @js.native

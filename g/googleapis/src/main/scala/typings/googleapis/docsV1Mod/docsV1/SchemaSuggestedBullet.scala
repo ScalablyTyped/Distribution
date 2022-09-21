@@ -4,21 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A suggested change to a Bullet.
-  */
 trait SchemaSuggestedBullet extends StObject {
   
   /**
-    * A Bullet that only includes the changes made in this suggestion. This can
-    * be used along with the bullet_suggestion_state to see which fields have
-    * changed and their new values.
+    * A Bullet that only includes the changes made in this suggestion. This can be used along with the bullet_suggestion_state to see which fields have changed and their new values.
     */
   var bullet: js.UndefOr[SchemaBullet] = js.undefined
   
   /**
-    * A mask that indicates which of the fields on the base Bullet have been
-    * changed in this suggestion.
+    * A mask that indicates which of the fields on the base Bullet have been changed in this suggestion.
     */
   var bulletSuggestionState: js.UndefOr[SchemaBulletSuggestionState] = js.undefined
 }

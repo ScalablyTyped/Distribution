@@ -124,7 +124,7 @@ object anon {
       
       inline def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
       
-      inline def setFacesVarargs(value: ContinuousAnchorFace*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: ContinuousAnchorFace*): Self = StObject.set(x, "faces", js.Array(value*))
     }
   }
 }

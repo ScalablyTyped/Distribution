@@ -9,7 +9,7 @@ object xmlDeclMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlDecl", JSImport.Default)
   @js.native
-  class default[Parent] protected ()
+  open class default[Parent] protected ()
     extends StObject
        with XmlDecl[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDeclOptions) = this()
@@ -63,15 +63,15 @@ object xmlDeclMod {
   @js.native
   trait XmlDecl[Parent] extends StObject {
     
-    /* private */ var _encoding: js.Any = js.native
+    /* private */ var _encoding: Any = js.native
     
-    /* private */ val _parent: js.Any = js.native
+    /* private */ val _parent: Any = js.native
     
-    /* private */ var _standalone: js.Any = js.native
+    /* private */ var _standalone: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
-    /* private */ var _version: js.Any = js.native
+    /* private */ var _version: Any = js.native
     
     /**
       * Gets the encoding associated with this declaration.

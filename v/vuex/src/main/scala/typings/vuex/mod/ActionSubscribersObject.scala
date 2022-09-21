@@ -1,6 +1,5 @@
 package typings.vuex.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,15 +21,15 @@ object ActionSubscribersObject {
   
   extension [Self <: ActionSubscribersObject[?, ?], P, S](x: Self & (ActionSubscribersObject[P, S])) {
     
-    inline def setAfter(value: (P, S) => js.Any): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
+    inline def setAfter(value: (P, S) => Any): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
     
     inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    inline def setBefore(value: (P, S) => js.Any): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+    inline def setBefore(value: (P, S) => Any): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
     
     inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    inline def setError(value: (P, S, /* error */ Error) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    inline def setError(value: (P, S, /* error */ js.Error) => Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
   }

@@ -15,6 +15,12 @@ trait IContentWidgetPosition extends StObject {
   var position: IPosition | Null
   
   /**
+    * Placement preference when multiple view positions refer to the same (model) position.
+    * This plays a role when injected text is involved.
+    */
+  var positionAffinity: js.UndefOr[PositionAffinity] = js.undefined
+  
+  /**
     * Placement preference for position, in order of preference.
     */
   var preference: js.Array[ContentWidgetPositionPreference]
@@ -36,11 +42,15 @@ object IContentWidgetPosition {
     
     inline def setPosition(value: IPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
+    inline def setPositionAffinity(value: PositionAffinity): Self = StObject.set(x, "positionAffinity", value.asInstanceOf[js.Any])
+    
+    inline def setPositionAffinityUndefined: Self = StObject.set(x, "positionAffinity", js.undefined)
+    
     inline def setPositionNull: Self = StObject.set(x, "position", null)
     
     inline def setPreference(value: js.Array[ContentWidgetPositionPreference]): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    inline def setPreferenceVarargs(value: ContentWidgetPositionPreference*): Self = StObject.set(x, "preference", js.Array(value :_*))
+    inline def setPreferenceVarargs(value: ContentWidgetPositionPreference*): Self = StObject.set(x, "preference", js.Array(value*))
     
     inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

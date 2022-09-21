@@ -15,7 +15,7 @@ object anon {
     def fs(basepath: String, encoding: String): TemplateLoader = js.native
     def fs(basepath: Unit, encoding: String): TemplateLoader = js.native
     
-    def memory(mapping: js.Any): TemplateLoader = js.native
-    def memory(mapping: js.Any, basepath: String): TemplateLoader = js.native
+    def memory(mapping: Any): TemplateLoader = js.native
+    def memory(mapping: Any, basepath: String): TemplateLoader = js.native
   }
 }

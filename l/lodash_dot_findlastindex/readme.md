@@ -10,10 +10,10 @@ The lodash method `_.findLastIndex` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.findlastindex |
 | Keywords           | lodash-modularized, findlastindex |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 434361 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 45859.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

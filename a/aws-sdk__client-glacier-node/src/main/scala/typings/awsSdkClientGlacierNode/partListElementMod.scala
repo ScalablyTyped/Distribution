@@ -8,5 +8,5 @@ object partListElementMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_PartListElement", "_PartListElement")
   @js.native
-  val PartListElement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PartListElement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

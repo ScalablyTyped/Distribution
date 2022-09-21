@@ -9,10 +9,10 @@ a tool suite of javascript.
 | ------------------ | :-------------: |
 | Full name          | jsuite |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 635 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 43.333333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/jsuite)

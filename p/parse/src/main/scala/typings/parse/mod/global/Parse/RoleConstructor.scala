@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RoleConstructor
   extends StObject
-     with ObjectStatic
+     with ObjectStatic[Role[Attributes]]
      with Instantiable2[/* name */ String, /* acl */ ACL, Role[Attributes | Partial[Attributes]]]

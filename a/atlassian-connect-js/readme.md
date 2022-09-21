@@ -10,13 +10,14 @@ Atlassian Connect JavaScript bridge
 | ------------------ | :-------------: |
 | Full name          | atlassian-connect-js |
 | Keywords           | - |
-| # releases         | 57 |
-| # dependents       | 0 |
-| # downloads        | 47052 |
-| # stars            | 0 |
+| # releases         | 82 |
+| # dependents       | 0.0 |
+| # downloads        | 3703.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://bitbucket.org/atlassian/atlassian-connect-js#readme)
+- [Bugs](https://bitbucket.org/atlassian/atlassian-connect-js/issues)
 - [Repository](https://bitbucket.org/atlassian/atlassian-connect-js)
 - [Npm](https://www.npmjs.com/package/atlassian-connect-js)
     

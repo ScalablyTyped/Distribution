@@ -24,7 +24,7 @@ trait BotChannelAssociation extends StObject {
   /**
     * The date that the association between the Amazon Lex bot and the channel was created. 
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A text description of the association you are creating. 
@@ -72,7 +72,7 @@ object BotChannelAssociation {
     
     inline def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     

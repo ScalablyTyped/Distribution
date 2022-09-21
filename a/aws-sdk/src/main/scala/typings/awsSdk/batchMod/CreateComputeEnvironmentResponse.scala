@@ -12,7 +12,7 @@ trait CreateComputeEnvironmentResponse extends StObject {
   var computeEnvironmentArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the compute environment.
+    * The name of the compute environment. It can be up to 128 letters long. It can contain uppercase and lowercase letters, numbers, hyphens (-), and underscores (_).
     */
   var computeEnvironmentName: js.UndefOr[String] = js.undefined
 }

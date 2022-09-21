@@ -11,7 +11,7 @@ object overlayViewMod {
   
   @JSImport("playable/dist/src/modules/ui/overlay/overlay.view", JSImport.Default)
   @js.native
-  class default protected () extends OverlayView {
+  open class default protected () extends OverlayView {
     def this(config: IOverlayViewConfig) = this()
   }
   
@@ -20,21 +20,21 @@ object overlayViewMod {
     extends typings.playable.viewMod.default[IOverlayViewStyles] {
     
     /* private */ @JSName("_$content")
-    var _$content: js.Any = js.native
+    var _$content: Any = js.native
     
     /* private */ @JSName("_$playButton")
-    var _$playButton: js.Any = js.native
+    var _$playButton: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def destroy(): Unit = js.native
     

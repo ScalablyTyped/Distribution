@@ -24,7 +24,7 @@ object mod {
   inline def apply[T](stream: ReadableStream[T]): AsyncIterable[T] = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[T]]
   inline def apply[T](stream: ReadableStream[T], options: PreventCancel): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
   
-  @JSImport("browser-readablestream-to-it/dist", JSImport.Namespace)
+  @JSImport("browser-readablestream-to-it", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

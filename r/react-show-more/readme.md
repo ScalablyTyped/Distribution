@@ -11,9 +11,9 @@ React component for truncating multi-line spans and adding an ellipsis
 | Full name          | react-show-more |
 | Keywords           | react, show more, ellipsis, multiline |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 461054 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 46899.0 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/One-com/react-show-more)

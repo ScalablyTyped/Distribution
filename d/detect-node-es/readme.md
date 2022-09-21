@@ -1,7 +1,7 @@
 
 # Scala.js typings for detect-node-es
 
-Typings are for version 1.0.0
+Typings are for version 1.1.0
 
 ## Library description:
 Detect Node.JS (as opposite to browser environment). ESM modification
@@ -10,10 +10,10 @@ Detect Node.JS (as opposite to browser environment). ESM modification
 | ------------------ | :-------------: |
 | Full name          | detect-node-es |
 | Keywords           | detect, node |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 16103317 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6030025.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/thekashey/detect-node)

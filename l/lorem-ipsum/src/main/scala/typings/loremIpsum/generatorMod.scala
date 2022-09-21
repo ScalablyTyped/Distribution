@@ -9,7 +9,7 @@ object generatorMod {
   
   @JSImport("lorem-ipsum/types/src/lib/generator", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Generator {
     def this(hasSentencesPerParagraphWordsPerSentenceRandomSeedWords: IGeneratorOptions) = this()
@@ -104,7 +104,7 @@ object generatorMod {
       
       inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
       
-      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value*))
     }
   }
   

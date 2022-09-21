@@ -13,7 +13,7 @@ trait QueryOptions extends StObject {
   
   var `class`: js.UndefOr[String] = js.undefined
   
-  var fetchPlan: js.UndefOr[js.Any] = js.undefined
+  var fetchPlan: js.UndefOr[Any] = js.undefined
   
   var language: js.UndefOr[SQL | Javascript] = js.undefined
   
@@ -21,9 +21,9 @@ trait QueryOptions extends StObject {
   
   var mode: js.UndefOr[s | a | l] = js.undefined
   
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
-  var token: js.UndefOr[js.Any] = js.undefined
+  var token: js.UndefOr[Any] = js.undefined
 }
 object QueryOptions {
   
@@ -38,7 +38,7 @@ object QueryOptions {
     
     inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    inline def setFetchPlan(value: js.Any): Self = StObject.set(x, "fetchPlan", value.asInstanceOf[js.Any])
+    inline def setFetchPlan(value: Any): Self = StObject.set(x, "fetchPlan", value.asInstanceOf[js.Any])
     
     inline def setFetchPlanUndefined: Self = StObject.set(x, "fetchPlan", js.undefined)
     
@@ -54,11 +54,11 @@ object QueryOptions {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }

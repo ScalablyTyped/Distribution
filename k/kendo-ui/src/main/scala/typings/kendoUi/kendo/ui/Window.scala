@@ -35,11 +35,11 @@ trait Window
   
   def pin(): Unit = js.native
   
-  def refresh(options: js.Any): Window = js.native
+  def refresh(options: Any): Window = js.native
   
   def restore(): Window = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def title(): Window = js.native
   def title(text: String): Window = js.native

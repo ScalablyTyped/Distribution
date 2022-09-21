@@ -11,9 +11,9 @@ Multiple progress bars based on the "progress" package
 | Full name          | multi-progress |
 | Keywords           | multi, multiple, progress, bar |
 | # releases         | 2 |
-| # dependents       | 48 |
-| # downloads        | 539808 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 86619.0 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/pitaj/multi-progress)

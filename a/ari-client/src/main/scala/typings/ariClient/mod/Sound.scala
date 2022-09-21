@@ -1,7 +1,6 @@
 package typings.ariClient.mod
 
 import typings.ariClient.anon.FormatLang
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait Sound
   /**
     * Get a sounds details.
     */
-  def get(callback: js.Function2[/* err */ Error, /* sound */ this.type, Unit]): Unit = js.native
+  def get(callback: js.Function2[/* err */ js.Error, /* sound */ this.type, Unit]): Unit = js.native
   
   /**
     * Sounds identifier.
@@ -40,7 +39,7 @@ trait Sound
   /**
     * List all sounds.
     */
-  def list(callback: js.Function2[/* err */ Error, /* sounds */ js.Array[this.type], Unit]): Unit = js.native
+  def list(callback: js.Function2[/* err */ js.Error, /* sounds */ js.Array[this.type], Unit]): Unit = js.native
   def list(params: FormatLang): js.Promise[js.Array[Sound]] = js.native
   /**
     * List all sounds.
@@ -50,7 +49,7 @@ trait Sound
     */
   def list(
     params: FormatLang,
-    callback: js.Function2[/* err */ Error, /* sounds */ js.Array[this.type], Unit]
+    callback: js.Function2[/* err */ js.Error, /* sounds */ js.Array[this.type], Unit]
   ): Unit = js.native
   
   /**

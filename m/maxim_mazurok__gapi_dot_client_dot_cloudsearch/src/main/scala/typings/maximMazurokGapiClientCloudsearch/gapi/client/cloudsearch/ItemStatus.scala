@@ -32,12 +32,12 @@ object ItemStatus {
     
     inline def setProcessingErrorsUndefined: Self = StObject.set(x, "processingErrors", js.undefined)
     
-    inline def setProcessingErrorsVarargs(value: ProcessingError*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
+    inline def setProcessingErrorsVarargs(value: ProcessingError*): Self = StObject.set(x, "processingErrors", js.Array(value*))
     
     inline def setRepositoryErrors(value: js.Array[RepositoryError]): Self = StObject.set(x, "repositoryErrors", value.asInstanceOf[js.Any])
     
     inline def setRepositoryErrorsUndefined: Self = StObject.set(x, "repositoryErrors", js.undefined)
     
-    inline def setRepositoryErrorsVarargs(value: RepositoryError*): Self = StObject.set(x, "repositoryErrors", js.Array(value :_*))
+    inline def setRepositoryErrorsVarargs(value: RepositoryError*): Self = StObject.set(x, "repositoryErrors", js.Array(value*))
   }
 }

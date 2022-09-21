@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LinkReference
   extends StObject
      with Parent
-     with Reference
-     with PhrasingContent {
+     with Reference {
   
   @JSName("children")
   var children_LinkReference: js.Array[StaticPhrasingContent]
@@ -29,7 +28,7 @@ object LinkReference {
     
     inline def setChildren(value: js.Array[StaticPhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: StaticPhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: StaticPhrasingContent*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setType(value: linkReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

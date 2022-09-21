@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-audio-player
 
-Typings are for version 0.11
+Typings are for version 0.17.0
 
 ## Library description:
 A simple React wrapper for the audio tag
@@ -10,10 +10,10 @@ A simple React wrapper for the audio tag
 | ------------------ | :-------------: |
 | Full name          | react-audio-player |
 | Keywords           | react, audio, player, wrapper, simple |
-| # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 390841 |
-| # stars            | 5 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 81811.33333333333 |
+| # stars            | 491.0 |
 
 ## Links
 - [Homepage](https://github.com/justinmc/react-audio-player#readme)
@@ -24,7 +24,7 @@ A simple React wrapper for the audio tag
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

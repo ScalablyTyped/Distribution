@@ -9,10 +9,10 @@ A simple, extensible object property validator for node.js. Supports express.js.
 | ------------------ | :-------------: |
 | Full name          | node-validator |
 | Keywords           | validator, validation, express, check, test, request-validation, koa, koajs |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 71046 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4860.333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://bitbucket.org/gregbacchus/node-validator/overview)

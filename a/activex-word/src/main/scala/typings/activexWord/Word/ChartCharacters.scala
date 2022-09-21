@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChartCharacters extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var Caption: String
   
@@ -14,13 +14,13 @@ trait ChartCharacters extends StObject {
   
   val Creator: Double
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   val Font: ChartFont
   
-  def Insert(String: String): js.Any
+  def Insert(String: String): Any
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PhoneticCharacters: String
   
@@ -32,14 +32,14 @@ trait ChartCharacters extends StObject {
 object ChartCharacters {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Caption: String,
     Count: Double,
     Creator: Double,
-    Delete: () => js.Any,
+    Delete: () => Any,
     Font: ChartFont,
-    Insert: String => js.Any,
-    Parent: js.Any,
+    Insert: String => Any,
+    Parent: Any,
     PhoneticCharacters: String,
     Text: String,
     WordDotChartCharacters_typekey: ChartCharacters
@@ -51,7 +51,7 @@ object ChartCharacters {
   
   extension [Self <: ChartCharacters](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
@@ -59,13 +59,13 @@ object ChartCharacters {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setFont(value: ChartFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    inline def setInsert(value: String => js.Any): Self = StObject.set(x, "Insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: String => Any): Self = StObject.set(x, "Insert", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPhoneticCharacters(value: String): Self = StObject.set(x, "PhoneticCharacters", value.asInstanceOf[js.Any])
     

@@ -144,7 +144,7 @@ object XSQLQueryComposer {
     getOrder: () => String,
     getQuery: () => String,
     getStructuredFilter: () => SafeArray[SafeArray[PropertyValue]],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFilter: String => Unit,
     setOrder: String => Unit,

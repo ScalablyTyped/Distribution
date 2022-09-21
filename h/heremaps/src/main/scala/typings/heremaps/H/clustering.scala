@@ -283,13 +283,13 @@ object clustering {
     @JSName("ctx")
     var ctx_DataPoint: AltitudeContext
     
-    var data: js.Any
+    var data: Any
     
     var wt: Double
   }
   object DataPoint {
     
-    inline def apply(alt: Altitude, ctx: AltitudeContext, data: js.Any, lat: Latitude, lng: Longitude, wt: Double): DataPoint = {
+    inline def apply(alt: Altitude, ctx: AltitudeContext, data: Any, lat: Latitude, lng: Longitude, wt: Double): DataPoint = {
       val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any], wt = wt.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataPoint]
     }
@@ -300,7 +300,7 @@ object clustering {
       
       inline def setCtx(value: AltitudeContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setWt(value: Double): Self = StObject.set(x, "wt", value.asInstanceOf[js.Any])
     }
@@ -405,7 +405,7 @@ object clustering {
       * This method returns data which coresponds to this noise point.
       * @returns {*}
       */
-    def getData(): js.Any
+    def getData(): Any
     
     /**
       * Returns the minimum zoom level where this item is not part of another cluster
@@ -434,7 +434,7 @@ object clustering {
   object INoisePoint {
     
     inline def apply(
-      getData: () => js.Any,
+      getData: () => Any,
       getMinZoom: () => Double,
       getPosition: () => Point,
       getWeight: () => Double,
@@ -446,7 +446,7 @@ object clustering {
     
     extension [Self <: INoisePoint](x: Self) {
       
-      inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       inline def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
       

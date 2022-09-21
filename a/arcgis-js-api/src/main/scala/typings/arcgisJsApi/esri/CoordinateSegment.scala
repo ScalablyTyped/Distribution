@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ trait CoordinateSegment
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#CoordinateSegment)
     */
-  var searchPattern: RegExp
+  var searchPattern: js.RegExp
 }
 object CoordinateSegment {
   
@@ -40,7 +39,7 @@ object CoordinateSegment {
     description: String,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    searchPattern: RegExp
+    searchPattern: js.RegExp
   ): CoordinateSegment = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), searchPattern = searchPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoordinateSegment]
@@ -52,6 +51,6 @@ object CoordinateSegment {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setSearchPattern(value: RegExp): Self = StObject.set(x, "searchPattern", value.asInstanceOf[js.Any])
+    inline def setSearchPattern(value: js.RegExp): Self = StObject.set(x, "searchPattern", value.asInstanceOf[js.Any])
   }
 }

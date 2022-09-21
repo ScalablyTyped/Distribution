@@ -10,7 +10,7 @@ trait IgGridResizingColumnSetting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Enables disables resizing for the column.

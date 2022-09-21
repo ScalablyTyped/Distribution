@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the background of a range object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.RangeFill")
 @js.native
-class RangeFill ()
+open class RangeFill ()
   extends StObject
      with typings.officeJsPreview.Excel.RangeFill {
   

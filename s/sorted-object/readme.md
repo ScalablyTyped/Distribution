@@ -11,9 +11,9 @@ Returns a copy of an object with its keys sorted
 | Full name          | sorted-object |
 | Keywords           | sort, keys, object |
 | # releases         | 0 |
-| # dependents       | 242 |
-| # downloads        | 24320992 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1428196.3333333333 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/domenic/sorted-object#readme)

@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait VariableGroup extends StObject {
   
   var createdBy: IdentityRef
   
-  var createdOn: Date
+  var createdOn: js.Date
   
   var description: String
   
@@ -19,7 +18,7 @@ trait VariableGroup extends StObject {
   
   var modifiedBy: IdentityRef
   
-  var modifiedOn: Date
+  var modifiedOn: js.Date
   
   var name: String
   
@@ -29,11 +28,11 @@ object VariableGroup {
   
   inline def apply(
     createdBy: IdentityRef,
-    createdOn: Date,
+    createdOn: js.Date,
     description: String,
     id: Double,
     modifiedBy: IdentityRef,
-    modifiedOn: Date,
+    modifiedOn: js.Date,
     name: String,
     variables: StringDictionary[VariableValue]
   ): VariableGroup = {
@@ -45,7 +44,7 @@ object VariableGroup {
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -53,7 +52,7 @@ object VariableGroup {
     
     inline def setModifiedBy(value: IdentityRef): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: js.Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

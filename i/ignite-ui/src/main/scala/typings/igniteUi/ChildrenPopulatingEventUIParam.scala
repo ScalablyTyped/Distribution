@@ -9,12 +9,12 @@ trait ChildrenPopulatingEventUIParam extends StObject {
   /**
     * Gets the data ID of the row.
     */
-  var id: js.UndefOr[js.Any] = js.undefined
+  var id: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets access the hierarchical grid object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets access the row element for the row that's about to be populated.
@@ -30,11 +30,11 @@ object ChildrenPopulatingEventUIParam {
   
   extension [Self <: ChildrenPopulatingEventUIParam](x: Self) {
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

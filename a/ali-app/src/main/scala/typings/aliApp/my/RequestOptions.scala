@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestOptions
   extends StObject
-     with BaseOptions[DataResponse, js.Any] {
+     with BaseOptions[DataResponse, Any] {
   
   /** 请求的参数 */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /** 期望返回的数据格式，默认json，支持json，text，base64 */
   var dataType: js.UndefOr[json | text | base64] = js.undefined
@@ -42,7 +42,7 @@ object RequestOptions {
   
   extension [Self <: RequestOptions](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: json | text | base64): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

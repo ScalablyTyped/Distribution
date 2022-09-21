@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a child container of a Zone.
-  */
 trait SchemaZoneChildContainer extends StObject {
   
   /**
-    * The zone&#39;s nickname for the child container.
+    * The zone's nickname for the child container.
     */
-  var nickname: js.UndefOr[String] = js.undefined
+  var nickname: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The child container&#39;s public id.
+    * The child container's public id.
     */
-  var publicId: js.UndefOr[String] = js.undefined
+  var publicId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaZoneChildContainer {
   
@@ -30,9 +27,13 @@ object SchemaZoneChildContainer {
     
     inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
+    inline def setNicknameNull: Self = StObject.set(x, "nickname", null)
+    
     inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
     inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+    
+    inline def setPublicIdNull: Self = StObject.set(x, "publicId", null)
     
     inline def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
   }

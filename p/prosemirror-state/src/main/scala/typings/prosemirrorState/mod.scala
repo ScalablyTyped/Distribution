@@ -7,13 +7,11 @@ import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
-import typings.prosemirrorState.anon.Destroy
-import typings.prosemirrorState.anon.Doc
-import typings.prosemirrorState.anon.Instantiable
+import typings.prosemirrorState.anon.FromJSON
 import typings.prosemirrorState.anon.Plugins
 import typings.prosemirrorState.anon.State
+import typings.prosemirrorState.anon.`0`
 import typings.prosemirrorTransform.mod.Mappable
-import typings.prosemirrorTransform.mod.Mapping
 import typings.prosemirrorTransform.mod.Transform
 import typings.prosemirrorView.mod.EditorProps
 import typings.prosemirrorView.mod.EditorView
@@ -23,86 +21,107 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  /**
+  A selection type that represents selecting the whole document
+  (which can not necessarily be expressed with a text selection, when
+  there are for example leaf block nodes at the start or end of the
+  document).
+  */
   @JSImport("prosemirror-state", "AllSelection")
   @js.native
-  class AllSelection[S /* <: Schema[js.Any, js.Any] */] protected () extends Selection[S] {
+  open class AllSelection protected () extends Selection {
     /**
-      * Create an all-selection over the given document.
+      Create an all-selection over the given document.
       */
-    def this(doc: Node[S]) = this()
+    def this(doc: Node) = this()
+    
+    def map(doc: Node): AllSelection = js.native
   }
   
+  /**
+  The state of a ProseMirror editor is represented by an object of
+  this type. A state is a persistent data structure—it isn't
+  updated, but rather a new state value is computed from an old one
+  using the [`apply`](https://prosemirror.net/docs/ref/#state.EditorState.apply) method.
+  A state holds a number of built-in fields, and plugins can
+  [define](https://prosemirror.net/docs/ref/#state.PluginSpec.state) additional fields.
+  */
   @JSImport("prosemirror-state", "EditorState")
   @js.native
-  class EditorState[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
+  open class EditorState () extends StObject {
     
     /**
-      * Apply the given transaction to produce a new state.
+      Apply the given transaction to produce a new state.
       */
     @JSName("apply")
-    def apply(tr: Transaction[S]): EditorState[S] = js.native
+    def apply(tr: Transaction): EditorState = js.native
     
     /**
-      * Verbose variant of [`apply`](#state.EditorState.apply) that
-      * returns the precise transactions that were applied (which might
-      * be influenced by the [transaction
-      * hooks](#state.PluginSpec.filterTransaction) of
-      * plugins) along with the new state.
+      Verbose variant of [`apply`](https://prosemirror.net/docs/ref/#state.EditorState.apply) that
+      returns the precise transactions that were applied (which might
+      be influenced by the [transaction
+      hooks](https://prosemirror.net/docs/ref/#state.PluginSpec.filterTransaction) of
+      plugins) along with the new state.
       */
-    def applyTransaction(tr: Transaction[S]): State[S] = js.native
+    def applyTransaction(rootTr: Transaction): State = js.native
     
     /**
-      * The current document.
+      The current document.
       */
-    var doc: Node[S] = js.native
+    var doc: Node = js.native
     
     /**
-      * The plugins that are active in this state.
+      @ignore
       */
-    var plugins: js.Array[Plugin[js.Any, S]] = js.native
+    def filterTransaction(tr: Transaction): Boolean = js.native
+    def filterTransaction(tr: Transaction, ignore: Double): Boolean = js.native
     
     /**
-      * Create a new state based on this one, but with an adjusted set of
-      * active plugins. State fields that exist in both sets of plugins
-      * are kept unchanged. Those that no longer exist are dropped, and
-      * those that are new are initialized using their
-      * [`init`](#state.StateField.init) method, passing in the new
-      * configuration object..
+      The plugins that are active in this state.
       */
-    def reconfigure(config: Plugins[S]): EditorState[S] = js.native
+    def plugins: js.Array[Plugin[Any]] = js.native
     
     /**
-      * The schema of the state's document.
+      Create a new state based on this one, but with an adjusted set
+      of active plugins. State fields that exist in both sets of
+      plugins are kept unchanged. Those that no longer exist are
+      dropped, and those that are new are initialized using their
+      [`init`](https://prosemirror.net/docs/ref/#state.StateField.init) method, passing in the new
+      configuration object..
       */
-    var schema: S = js.native
+    def reconfigure(config: `0`): EditorState = js.native
     
     /**
-      * The selection.
+      The schema of the state's document.
       */
-    var selection: Selection[S] = js.native
+    def schema: Schema[Any, Any] = js.native
     
     /**
-      * A set of marks to apply to the next input. Will be null when
-      * no explicit marks have been set.
+      The selection.
       */
-    var storedMarks: js.UndefOr[js.Array[Mark[S]] | Null] = js.native
+    var selection: Selection = js.native
     
     /**
-      * Serialize this state to JSON. If you want to serialize the state
-      * of plugins, pass an object mapping property names to use in the
-      * resulting JSON object to plugin objects.
+      A set of marks to apply to the next input. Will be null when
+      no explicit marks have been set.
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
-    def toJSON(pluginFields: String): StringDictionary[js.Any] = js.native
-    def toJSON(pluginFields: StringDictionary[Plugin[js.Any, S]]): StringDictionary[js.Any] = js.native
-    def toJSON(pluginFields: Double): StringDictionary[js.Any] = js.native
+    var storedMarks: js.Array[Mark] | Null = js.native
     
     /**
-      * Start a [transaction](#state.Transaction) from this state.
+      Serialize this state to JSON. If you want to serialize the state
+      of plugins, pass an object mapping property names to use in the
+      resulting JSON object to plugin objects. The argument may also be
+      a string or number, in which case it is ignored, to support the
+      way `JSON.stringify` calls `toString` methods.
       */
-    var tr: Transaction[S] = js.native
+    def toJSON(): Any = js.native
+    def toJSON(pluginFields: StringDictionary[Plugin[Any]]): Any = js.native
+    
+    /**
+      Start a [transaction](https://prosemirror.net/docs/ref/#state.Transaction) from this state.
+      */
+    def tr: Transaction = js.native
   }
-  /* static members */
   object EditorState {
     
     @JSImport("prosemirror-state", "EditorState")
@@ -110,40 +129,44 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
-      * Create a new state.
+      Create a new state.
       */
-    inline def create[S /* <: Schema[js.Any, js.Any] */](config: Doc[S]): EditorState[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[EditorState[S]]
+    /* static member */
+    inline def create(config: EditorStateConfig): EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[EditorState]
     
     /**
-      * Deserialize a JSON representation of a state. `config` should
-      * have at least a `schema` field, and should contain array of
-      * plugins to initialize the state with. `pluginFields` can be used
-      * to deserialize the state of plugins, by associating plugin
-      * instances with the property names they use in the JSON object.
+      Deserialize a JSON representation of a state. `config` should
+      have at least a `schema` field, and should contain array of
+      plugins to initialize the state with. `pluginFields` can be used
+      to deserialize the state of plugins, by associating plugin
+      instances with the property names they use in the JSON object.
       */
-    inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](config: typings.prosemirrorState.anon.Schema[S], json: StringDictionary[js.Any]): EditorState[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(config.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[EditorState[S]]
-    inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](
-      config: typings.prosemirrorState.anon.Schema[S],
-      json: StringDictionary[js.Any],
-      pluginFields: StringDictionary[Plugin[js.Any, S]]
-    ): EditorState[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(config.asInstanceOf[js.Any], json.asInstanceOf[js.Any], pluginFields.asInstanceOf[js.Any])).asInstanceOf[EditorState[S]]
+    /* static member */
+    inline def fromJSON(config: Plugins, json: Any): EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(config.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[EditorState]
+    inline def fromJSON(config: Plugins, json: Any, pluginFields: StringDictionary[Plugin[Any]]): EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(config.asInstanceOf[js.Any], json.asInstanceOf[js.Any], pluginFields.asInstanceOf[js.Any])).asInstanceOf[EditorState]
   }
   
+  /**
+  A node selection is a selection that points at a single node. All
+  nodes marked [selectable](https://prosemirror.net/docs/ref/#model.NodeSpec.selectable) can be the
+  target of a node selection. In such a selection, `from` and `to`
+  point directly before and after the selected node, `anchor` equals
+  `from`, and `head` equals `to`..
+  */
   @JSImport("prosemirror-state", "NodeSelection")
   @js.native
-  class NodeSelection[S /* <: Schema[js.Any, js.Any] */] protected () extends Selection[S] {
+  open class NodeSelection protected () extends Selection {
     /**
-      * Create a node selection. Does not verify the validity of its
-      * argument.
+      Create a node selection. Does not verify the validity of its
+      argument.
       */
-    def this($pos: ResolvedPos[S]) = this()
+    def this($pos: ResolvedPos) = this()
     
     /**
-      * The selected node.
+      The selected node.
       */
-    var node: Node[S] = js.native
+    var node: Node = js.native
   }
-  /* static members */
   object NodeSelection {
     
     @JSImport("prosemirror-state", "NodeSelection")
@@ -151,184 +174,226 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
-      * Create a node selection from non-resolved positions.
+      Create a node selection from non-resolved positions.
       */
-    inline def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double): NodeSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[NodeSelection[S]]
+    /* static member */
+    inline def create(doc: Node, from: Double): NodeSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[NodeSelection]
     
     /**
-      * Determines whether the given node may be selected as a node
-      * selection.
+      Determines whether the given node may be selected as a node
+      selection.
       */
-    inline def isSelectable(node: Node[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    /* static member */
+    inline def isSelectable(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
+  /**
+  Plugins bundle functionality that can be added to an editor.
+  They are part of the [editor state](https://prosemirror.net/docs/ref/#state.EditorState) and
+  may influence that state and the view that contains it.
+  */
   @JSImport("prosemirror-state", "Plugin")
   @js.native
-  class Plugin[T, S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
+  open class Plugin[PluginState] protected () extends StObject {
     /**
-      * Create a plugin.
+      Create a plugin.
       */
-    def this(spec: PluginSpec[T, S]) = this()
+    def this(/**
+      The plugin's [spec object](https://prosemirror.net/docs/ref/#state.PluginSpec).
+      */
+    spec: PluginSpec[PluginState]) = this()
     
     /**
-      * Extract the plugin's state field from an editor state.
+      Extract the plugin's state field from an editor state.
       */
-    def getState(state: EditorState[S]): T = js.native
+    def getState(state: EditorState): js.UndefOr[PluginState] = js.native
     
     /**
-      * The [props](#view.EditorProps) exported by this plugin.
+      The [props](https://prosemirror.net/docs/ref/#view.EditorProps) exported by this plugin.
       */
-    var props: EditorProps[Plugin[T, S], S] = js.native
+    val props: EditorProps[Any] = js.native
     
     /**
-      * The plugin's [spec object](#state.PluginSpec).
+      The plugin's [spec object](https://prosemirror.net/docs/ref/#state.PluginSpec).
       */
-    var spec: PluginSpec[T, S] = js.native
+    val spec: PluginSpec[PluginState] = js.native
   }
   
+  /**
+  A key is used to [tag](https://prosemirror.net/docs/ref/#state.PluginSpec.key) plugins in a way
+  that makes it possible to find them, given an editor state.
+  Assigning a key does mean only one plugin of that type can be
+  active in a state.
+  */
   @JSImport("prosemirror-state", "PluginKey")
   @js.native
   /**
-    * Create a plugin key.
+    Create a plugin key.
     */
-  class PluginKey[T, S /* <: Schema[js.Any, js.Any] */] () extends StObject {
+  open class PluginKey[PluginState] () extends StObject {
     def this(name: String) = this()
     
     /**
-      * Get the active plugin with this key, if any, from an editor
-      * state.
+      Get the active plugin with this key, if any, from an editor
+      state.
       */
-    def get(state: EditorState[S]): js.UndefOr[(Plugin[T, S]) | Null] = js.native
+    def get(state: EditorState): js.UndefOr[Plugin[PluginState]] = js.native
     
     /**
-      * Get the plugin's state from an editor state.
+      Get the plugin's state from an editor state.
       */
-    def getState(state: EditorState[S]): js.UndefOr[T | Null] = js.native
+    def getState(state: EditorState): js.UndefOr[PluginState] = js.native
   }
   
+  /**
+  Superclass for editor selections. Every selection type should
+  extend this. Should not be instantiated directly.
+  */
   @JSImport("prosemirror-state", "Selection")
   @js.native
-  class Selection[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
+  abstract class Selection protected () extends StObject {
     /**
-      * Initialize a selection with the head and anchor and ranges. If no
-      * ranges are given, constructs a single range across `$anchor` and
-      * `$head`.
+      Initialize a selection with the head and anchor and ranges. If no
+      ranges are given, constructs a single range across `$anchor` and
+      `$head`.
       */
-    def this($anchor: ResolvedPos[S], $head: ResolvedPos[S]) = this()
-    def this($anchor: ResolvedPos[S], $head: ResolvedPos[S], ranges: js.Array[SelectionRange[S]]) = this()
+    def this(
+      /**
+      The resolved anchor of the selection (the side that stays in
+      place when the selection is modified).
+      */
+    $anchor: ResolvedPos,
+      /**
+      The resolved head of the selection (the side that moves when
+      the selection is modified).
+      */
+    $head: ResolvedPos
+    ) = this()
+    def this(
+      /**
+      The resolved anchor of the selection (the side that stays in
+      place when the selection is modified).
+      */
+    $anchor: ResolvedPos,
+      /**
+      The resolved head of the selection (the side that moves when
+      the selection is modified).
+      */
+    $head: ResolvedPos,
+      ranges: js.Array[SelectionRange]
+    ) = this()
     
     /**
-      * The resolved anchor of the selection (the side that stays in
-      * place when the selection is modified).
+      The resolved anchor of the selection (the side that stays in
+      place when the selection is modified).
       */
     @JSName("$anchor")
-    var $anchor: ResolvedPos[S] = js.native
+    val $anchor: ResolvedPos = js.native
     
     /**
-      * The resolved lower  bound of the selection's main range.
+      The resolved lower  bound of the selection's main range.
       */
     @JSName("$from")
-    var $from: ResolvedPos[S] = js.native
+    def $from: ResolvedPos = js.native
     
     /**
-      * The resolved head of the selection (the side that moves when
-      * the selection is modified).
+      The resolved head of the selection (the side that moves when
+      the selection is modified).
       */
     @JSName("$head")
-    var $head: ResolvedPos[S] = js.native
+    val $head: ResolvedPos = js.native
     
     /**
-      * The resolved upper bound of the selection's main range.
+      The resolved upper bound of the selection's main range.
       */
     @JSName("$to")
-    var $to: ResolvedPos[S] = js.native
+    def $to: ResolvedPos = js.native
     
     /**
-      * The selection's anchor, as an unresolved position.
+      The selection's anchor, as an unresolved position.
       */
-    var anchor: Double = js.native
+    def anchor: Double = js.native
     
     /**
-      * Get the content of this selection as a slice.
+      Get the content of this selection as a slice.
       */
-    def content(): Slice[S] = js.native
+    def content(): Slice = js.native
     
     /**
-      * Indicates whether the selection contains any content.
+      Indicates whether the selection contains any content.
       */
-    var empty: Boolean = js.native
+    def empty: Boolean = js.native
     
     /**
-      * Test whether the selection is the same as another selection.
+      Test whether the selection is the same as another selection.
       */
-    def eq(p: Selection[S]): Boolean = js.native
+    def eq(selection: Selection): Boolean = js.native
     
     /**
-      * The lower bound of the selection's main range.
+      The lower bound of the selection's main range.
       */
-    var from: Double = js.native
+    def from: Double = js.native
     
     /**
-      * Get a [bookmark](#state.SelectionBookmark) for this selection,
-      * which is a value that can be mapped without having access to a
-      * current document, and later resolved to a real selection for a
-      * given document again. (This is used mostly by the history to
-      * track and restore old selections.) The default implementation of
-      * this method just converts the selection to a text selection and
-      * returns the bookmark for that.
+      Get a [bookmark](https://prosemirror.net/docs/ref/#state.SelectionBookmark) for this selection,
+      which is a value that can be mapped without having access to a
+      current document, and later resolved to a real selection for a
+      given document again. (This is used mostly by the history to
+      track and restore old selections.) The default implementation of
+      this method just converts the selection to a text selection and
+      returns the bookmark for that.
       */
-    def getBookmark(): SelectionBookmark[S] = js.native
+    def getBookmark(): SelectionBookmark = js.native
     
     /**
-      * The selection's head.
+      The selection's head.
       */
-    var head: Double = js.native
+    def head: Double = js.native
     
     /**
-      * Map this selection through a [mappable](#transform.Mappable) thing. `doc`
-      * should be the new document to which we are mapping.
+      Map this selection through a [mappable](https://prosemirror.net/docs/ref/#transform.Mappable)
+      thing. `doc` should be the new document to which we are mapping.
       */
-    def map(doc: Node[S], mapping: Mappable): Selection[S] = js.native
+    def map(doc: Node, mapping: Mappable): Selection = js.native
     
     /**
-      * The ranges covered by the selection.
+      The ranges covered by the selection.
       */
-    var ranges: js.Array[SelectionRange[S]] = js.native
+    var ranges: js.Array[SelectionRange] = js.native
     
     /**
-      * Replace the selection with a slice or, if no slice is given,
-      * delete the selection. Will append to the given transaction.
+      Replace the selection with a slice or, if no slice is given,
+      delete the selection. Will append to the given transaction.
       */
-    def replace(tr: Transaction[S]): Unit = js.native
-    def replace(tr: Transaction[S], content: Slice[S]): Unit = js.native
+    def replace(tr: Transaction): Unit = js.native
+    def replace(tr: Transaction, content: Slice): Unit = js.native
     
     /**
-      * Replace the selection with the given node, appending the changes
-      * to the given transaction.
+      Replace the selection with the given node, appending the changes
+      to the given transaction.
       */
-    def replaceWith(tr: Transaction[S], node: Node[S]): Unit = js.native
+    def replaceWith(tr: Transaction, node: Node): Unit = js.native
     
     /**
-      * The upper bound of the selection's main range.
+      The upper bound of the selection's main range.
       */
-    var to: Double = js.native
+    def to: Double = js.native
     
     /**
-      * Convert the selection to a JSON representation. When implementing
-      * this for a custom selection class, make sure to give the object a
-      * `type` property whose value matches the ID under which you
-      * [registered](#state.Selection^jsonID) your class.
+      Convert the selection to a JSON representation. When implementing
+      this for a custom selection class, make sure to give the object a
+      `type` property whose value matches the ID under which you
+      [registered](https://prosemirror.net/docs/ref/#state.Selection^jsonID) your class.
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): Any = js.native
     
     /**
-      * Controls whether, when a selection of this type is active in the
-      * browser, the selected range should be visible to the user. Defaults
-      * to `true`.
+      Controls whether, when a selection of this type is active in the
+      browser, the selected range should be visible to the user.
+      Defaults to `true`.
       */
     var visible: Boolean = js.native
   }
-  /* static members */
   object Selection {
     
     @JSImport("prosemirror-state", "Selection")
@@ -336,87 +401,113 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
-      * Find the cursor or leaf node selection closest to the end of the
-      * given document.
+      Find the cursor or leaf node selection closest to the end of the
+      given document.
       */
-    inline def atEnd[S /* <: Schema[js.Any, js.Any] */](doc: Node[S]): Selection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("atEnd")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection[S]]
+    /* static member */
+    inline def atEnd(doc: Node): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("atEnd")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection]
     
     /**
-      * Find the cursor or leaf node selection closest to the start of
-      * the given document. Will return an
-      * [`AllSelection`](#state.AllSelection) if no valid position
-      * exists.
+      Find the cursor or leaf node selection closest to the start of
+      the given document. Will return an
+      [`AllSelection`](https://prosemirror.net/docs/ref/#state.AllSelection) if no valid position
+      exists.
       */
-    inline def atStart[S /* <: Schema[js.Any, js.Any] */](doc: Node[S]): Selection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("atStart")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection[S]]
+    /* static member */
+    inline def atStart(doc: Node): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("atStart")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection]
     
     /**
-      * Find a valid cursor or leaf node selection starting at the given
-      * position and searching back if `dir` is negative, and forward if
-      * positive. When `textOnly` is true, only consider cursor
-      * selections. Will return null when no valid selection position is
-      * found.
+      Find a valid cursor or leaf node selection starting at the given
+      position and searching back if `dir` is negative, and forward if
+      positive. When `textOnly` is true, only consider cursor
+      selections. Will return null when no valid selection position is
+      found.
       */
-    inline def findFrom[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S], dir: Double): js.UndefOr[Selection[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Selection[S] | Null]]
-    inline def findFrom[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S], dir: Double, textOnly: Boolean): js.UndefOr[Selection[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], textOnly.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Selection[S] | Null]]
+    /* static member */
+    inline def findFrom($pos: ResolvedPos, dir: Double): Selection | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Selection | Null]
+    inline def findFrom($pos: ResolvedPos, dir: Double, textOnly: Boolean): Selection | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], textOnly.asInstanceOf[js.Any])).asInstanceOf[Selection | Null]
     
     /**
-      * Deserialize the JSON representation of a selection. Must be
-      * implemented for custom classes (as a static class method).
+      Deserialize the JSON representation of a selection. Must be
+      implemented for custom classes (as a static class method).
       */
-    inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], json: StringDictionary[js.Any]): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(doc.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
+    /* static member */
+    inline def fromJSON(doc: Node, json: Any): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(doc.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Selection]
     
     /**
-      * To be able to deserialize selections from JSON, custom selection
-      * classes must register themselves with an ID string, so that they
-      * can be disambiguated. Try to pick something that's unlikely to
-      * clash with classes from other modules.
+      To be able to deserialize selections from JSON, custom selection
+      classes must register themselves with an ID string, so that they
+      can be disambiguated. Try to pick something that's unlikely to
+      clash with classes from other modules.
       */
-    inline def jsonID(id: String, selectionClass: Instantiable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonID")(id.asInstanceOf[js.Any], selectionClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /* static member */
+    inline def jsonID(id: String, selectionClass: FromJSON): FromJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonID")(id.asInstanceOf[js.Any], selectionClass.asInstanceOf[js.Any])).asInstanceOf[FromJSON]
     
     /**
-      * Find a valid cursor or leaf node selection near the given
-      * position. Searches forward first by default, but if `bias` is
-      * negative, it will search backwards first.
+      Find a valid cursor or leaf node selection near the given
+      position. Searches forward first by default, but if `bias` is
+      negative, it will search backwards first.
       */
-    inline def near[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S]): Selection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any]).asInstanceOf[Selection[S]]
-    inline def near[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S], bias: Double): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
+    /* static member */
+    inline def near($pos: ResolvedPos): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any]).asInstanceOf[Selection]
+    inline def near($pos: ResolvedPos, bias: Double): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection]
   }
   
+  /**
+  Represents a selected range in a document.
+  */
   @JSImport("prosemirror-state", "SelectionRange")
   @js.native
-  class SelectionRange[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
-    def this($from: ResolvedPos[S], $to: ResolvedPos[S]) = this()
+  open class SelectionRange protected () extends StObject {
+    /**
+      Create a range.
+      */
+    def this(
+      /**
+      The lower bound of the range.
+      */
+    $from: ResolvedPos,
+      /**
+      The upper bound of the range.
+      */
+    $to: ResolvedPos
+    ) = this()
     
     /**
-      * The lower bound of the range.
+      The lower bound of the range.
       */
     @JSName("$from")
-    var $from: ResolvedPos[S] = js.native
+    val $from: ResolvedPos = js.native
     
     /**
-      * The upper bound of the range.
+      The upper bound of the range.
       */
     @JSName("$to")
-    var $to: ResolvedPos[S] = js.native
+    val $to: ResolvedPos = js.native
   }
   
+  /**
+  A text selection represents a classical editor selection, with a
+  head (the moving side) and anchor (immobile side), both of which
+  point into textblock nodes. It can be empty (a regular cursor
+  position).
+  */
   @JSImport("prosemirror-state", "TextSelection")
   @js.native
-  class TextSelection[S /* <: Schema[js.Any, js.Any] */] protected () extends Selection[S] {
+  open class TextSelection protected () extends Selection {
     /**
-      * Construct a text selection between the given points.
+      Construct a text selection between the given points.
       */
-    def this($anchor: ResolvedPos[S]) = this()
-    def this($anchor: ResolvedPos[S], $head: ResolvedPos[S]) = this()
+    def this($anchor: ResolvedPos) = this()
+    def this($anchor: ResolvedPos, $head: ResolvedPos) = this()
     
     /**
-      * Returns a resolved position if this is a cursor selection (an
-      * empty text selection), and null otherwise.
+      Returns a resolved position if this is a cursor selection (an
+      empty text selection), and null otherwise.
       */
     @JSName("$cursor")
-    var $cursor: js.UndefOr[ResolvedPos[S] | Null] = js.native
+    def $cursor: ResolvedPos | Null = js.native
   }
-  /* static members */
   object TextSelection {
     
     @JSImport("prosemirror-state", "TextSelection")
@@ -424,358 +515,565 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
-      * Return a text selection that spans the given positions or, if
-      * they aren't text positions, find a text selection near them.
-      * `bias` determines whether the method searches forward (default)
-      * or backwards (negative number) first. Will fall back to calling
-      * [`Selection.near`](#state.Selection^near) when the document
-      * doesn't contain a valid text position.
+      Return a text selection that spans the given positions or, if
+      they aren't text positions, find a text selection near them.
+      `bias` determines whether the method searches forward (default)
+      or backwards (negative number) first. Will fall back to calling
+      [`Selection.near`](https://prosemirror.net/docs/ref/#state.Selection^near) when the document
+      doesn't contain a valid text position.
       */
-    inline def between[S /* <: Schema[js.Any, js.Any] */]($anchor: ResolvedPos[S], $head: ResolvedPos[S]): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
-    inline def between[S /* <: Schema[js.Any, js.Any] */]($anchor: ResolvedPos[S], $head: ResolvedPos[S], bias: Double): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
+    /* static member */
+    inline def between($anchor: ResolvedPos, $head: ResolvedPos): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any])).asInstanceOf[Selection]
+    inline def between($anchor: ResolvedPos, $head: ResolvedPos, bias: Double): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection]
     
     /**
-      * Create a text selection from non-resolved positions.
+      Create a text selection from non-resolved positions.
       */
-    inline def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchor: Double): TextSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[TextSelection[S]]
-    inline def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchor: Double, head: Double): TextSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[TextSelection[S]]
+    /* static member */
+    inline def create(doc: Node, anchor: Double): TextSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[TextSelection]
+    inline def create(doc: Node, anchor: Double, head: Double): TextSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[TextSelection]
   }
   
+  /**
+  An editor state transaction, which can be applied to a state to
+  create an updated state. Use
+  [`EditorState.tr`](https://prosemirror.net/docs/ref/#state.EditorState.tr) to create an instance.
+  Transactions track changes to the document (they are a subclass of
+  [`Transform`](https://prosemirror.net/docs/ref/#transform.Transform)), but also other state changes,
+  like selection updates and adjustments of the set of [stored
+  marks](https://prosemirror.net/docs/ref/#state.EditorState.storedMarks). In addition, you can store
+  metadata properties in a transaction, which are extra pieces of
+  information that client code or plugins can use to describe what a
+  transaction represents, so that they can update their [own
+  state](https://prosemirror.net/docs/ref/#state.StateField) accordingly.
+  The [editor view](https://prosemirror.net/docs/ref/#view.EditorView) uses a few metadata properties:
+  it will attach a property `"pointer"` with the value `true` to
+  selection transactions directly caused by mouse or touch input, and
+  a `"uiEvent"` property of that may be `"paste"`, `"cut"`, or `"drop"`.
+  */
   @JSImport("prosemirror-state", "Transaction")
   @js.native
-  class Transaction[S /* <: Schema[js.Any, js.Any] */] protected () extends Transform[S] {
+  open class Transaction protected () extends Transform {
     /**
-      * Create a transform that starts with the given document.
+      Create a transform that starts with the given document.
       */
-    def this(doc: Node[S]) = this()
+    def this(/**
+      The current document (the result of applying the steps in the
+      transform).
+      */
+    doc: Node) = this()
     
     /**
-      * Add a mark to the set of stored marks.
+      Add a mark to the set of stored marks.
       */
-    def addStoredMark(mark: Mark[js.Any]): Transaction[js.Any] = js.native
+    def addStoredMark(mark: Mark): this.type = js.native
+    
+    /* private */ var curSelection: Any = js.native
+    
+    /* private */ var curSelectionFor: Any = js.native
     
     /**
-      * Delete the selection.
+      Delete the selection.
       */
-    def deleteSelection(): Transaction[js.Any] = js.native
+    def deleteSelection(): this.type = js.native
     
     /**
-      * Make sure the current stored marks or, if that is null, the marks
-      * at the selection, match the given set of marks. Does nothing if
-      * this is already the case.
+      Make sure the current stored marks or, if that is null, the marks
+      at the selection, match the given set of marks. Does nothing if
+      this is already the case.
       */
-    def ensureMarks(marks: js.Array[Mark[js.Any]]): Transaction[js.Any] = js.native
+    def ensureMarks(marks: js.Array[Mark]): this.type = js.native
     
     /**
-      * Retrieve a metadata property for a given name or plugin.
+      Retrieve a metadata property for a given name or plugin.
       */
-    def getMeta(key: String): js.Any = js.native
-    def getMeta(key: Plugin[js.Any, S]): js.Any = js.native
-    def getMeta(key: PluginKey[js.Any, S]): js.Any = js.native
+    def getMeta(key: String): Any = js.native
+    def getMeta(key: Plugin[Any]): Any = js.native
+    def getMeta(key: PluginKey[Any]): Any = js.native
     
     /**
-      * Replace the given range, or the selection if no range is given,
-      * with a text node containing the given string.
+      Replace the given range, or the selection if no range is given,
+      with a text node containing the given string.
       */
-    def insertText(text: String): Transaction[js.Any] = js.native
-    def insertText(text: String, from: Double): Transaction[js.Any] = js.native
-    def insertText(text: String, from: Double, to: Double): Transaction[js.Any] = js.native
-    def insertText(text: String, from: Unit, to: Double): Transaction[js.Any] = js.native
+    def insertText(text: String): this.type = js.native
+    def insertText(text: String, from: Double): this.type = js.native
+    def insertText(text: String, from: Double, to: Double): this.type = js.native
+    def insertText(text: String, from: Unit, to: Double): this.type = js.native
     
     /**
-      * Returns true if this transaction doesn't contain any metadata,
-      * and can thus safely be extended.
+      Returns true if this transaction doesn't contain any metadata,
+      and can thus safely be extended.
       */
-    var isGeneric: Boolean = js.native
+    def isGeneric: Boolean = js.native
+    
+    /* private */ var meta: Any = js.native
     
     /**
-      * Remove a mark or mark type from the set of stored marks.
+      Remove a mark or mark type from the set of stored marks.
       */
-    def removeStoredMark(mark: Mark[js.Any]): Transaction[js.Any] = js.native
-    def removeStoredMark(mark: MarkType[js.Any]): Transaction[js.Any] = js.native
+    def removeStoredMark(mark: Mark): this.type = js.native
+    def removeStoredMark(mark: MarkType): this.type = js.native
     
     /**
-      * Replace the current selection with the given slice.
+      Replace the current selection with the given slice.
       */
-    def replaceSelection(slice: Slice[js.Any]): Transaction[js.Any] = js.native
+    def replaceSelection(slice: Slice): this.type = js.native
     
     /**
-      * Replace the selection with the given node. When `inheritMarks` is
-      * true and the content is inline, it inherits the marks from the
-      * place where it is inserted.
+      Replace the selection with the given node. When `inheritMarks` is
+      true and the content is inline, it inherits the marks from the
+      place where it is inserted.
       */
-    def replaceSelectionWith(node: Node[js.Any]): Transaction[js.Any] = js.native
-    def replaceSelectionWith(node: Node[js.Any], inheritMarks: Boolean): Transaction[js.Any] = js.native
+    def replaceSelectionWith(node: Node): this.type = js.native
+    def replaceSelectionWith(node: Node, inheritMarks: Boolean): this.type = js.native
     
     /**
-      * Indicate that the editor should scroll the selection into view
-      * when updated to the state produced by this transaction.
+      Indicate that the editor should scroll the selection into view
+      when updated to the state produced by this transaction.
       */
-    def scrollIntoView(): Transaction[js.Any] = js.native
+    def scrollIntoView(): this.type = js.native
     
     /**
-      * The transaction's current selection. This defaults to the editor
-      * selection [mapped](#state.Selection.map) through the steps in the
-      * transaction, but can be overwritten with
-      * [`setSelection`](#state.Transaction.setSelection).
+      True when this transaction has had `scrollIntoView` called on it.
       */
-    var selection: Selection[js.Any] = js.native
+    def scrolledIntoView: Boolean = js.native
     
     /**
-      * Whether the selection was explicitly updated by this transaction.
+      The transaction's current selection. This defaults to the editor
+      selection [mapped](https://prosemirror.net/docs/ref/#state.Selection.map) through the steps in the
+      transaction, but can be overwritten with
+      [`setSelection`](https://prosemirror.net/docs/ref/#state.Transaction.setSelection).
       */
-    var selectionSet: Boolean = js.native
+    def selection: Selection = js.native
     
     /**
-      * Store a metadata property in this transaction, keyed either by
-      * name or by plugin.
+      Whether the selection was explicitly updated by this transaction.
       */
-    def setMeta(key: String, value: js.Any): Transaction[js.Any] = js.native
-    def setMeta(key: PluginKey[js.Any, S], value: js.Any): Transaction[js.Any] = js.native
-    def setMeta(key: Plugin[js.Any, S], value: js.Any): Transaction[js.Any] = js.native
+    def selectionSet: Boolean = js.native
     
     /**
-      * Update the transaction's current selection. Will determine the
-      * selection that the editor gets when the transaction is applied.
+      Store a metadata property in this transaction, keyed either by
+      name or by plugin.
       */
-    def setSelection(selection: Selection[js.Any]): Transaction[js.Any] = js.native
+    def setMeta(key: String, value: Any): this.type = js.native
+    def setMeta(key: PluginKey[Any], value: Any): this.type = js.native
+    def setMeta(key: Plugin[Any], value: Any): this.type = js.native
     
     /**
-      * Set the current stored marks.
+      Update the transaction's current selection. Will determine the
+      selection that the editor gets when the transaction is applied.
       */
-    def setStoredMarks(): Transaction[js.Any] = js.native
-    def setStoredMarks(marks: js.Array[Mark[js.Any]]): Transaction[js.Any] = js.native
+    def setSelection(selection: Selection): this.type = js.native
     
     /**
-      * Update the timestamp for the transaction.
+      Set the current stored marks.
       */
-    def setTime(time: Double): Transaction[js.Any] = js.native
+    def setStoredMarks(): this.type = js.native
+    def setStoredMarks(marks: js.Array[Mark]): this.type = js.native
     
     /**
-      * The stored marks set by this transaction, if any.
+      Update the timestamp for the transaction.
       */
-    var storedMarks: js.UndefOr[js.Array[Mark[js.Any]] | Null] = js.native
+    def setTime(time: Double): this.type = js.native
     
     /**
-      * Whether the stored marks were explicitly set for this transaction.
+      The stored marks set by this transaction, if any.
       */
-    var storedMarksSet: Boolean = js.native
+    var storedMarks: js.Array[Mark] | Null = js.native
     
     /**
-      * The timestamp associated with this transaction, in the same
-      * format as `Date.now()`.
+      Whether the stored marks were explicitly set for this transaction.
+      */
+    def storedMarksSet: Boolean = js.native
+    
+    /**
+      The timestamp associated with this transaction, in the same
+      format as `Date.now()`.
       */
     var time: Double = js.native
+    
+    /* private */ var updated: Any = js.native
   }
   
-  trait PluginSpec[T, S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  /**
+  Commands are functions that take a state and a an optional
+  transaction dispatch function and...
+    - determine whether they apply to this state
+    - if not, return false
+    - if `dispatch` was passed, perform their effect, possibly by
+    passing a transaction to `dispatch`
+    - return true
+  In some cases, the editor view is passed as a third argument.
+  */
+  type Command = js.Function3[
+    /* state */ EditorState, 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
+    /* view */ js.UndefOr[EditorView], 
+    Boolean
+  ]
+  
+  /**
+  The type of object passed to
+  [`EditorState.create`](https://prosemirror.net/docs/ref/#state.EditorState^create).
+  */
+  trait EditorStateConfig extends StObject {
     
     /**
-      * Allows the plugin to append another transaction to be applied
-      * after the given array of transactions. When another plugin
-      * appends a transaction after this was called, it is called again
-      * with the new state and new transactions—but only the new
-      * transactions, i.e. it won't be passed transactions that it
-      * already saw.
+      The starting document. Either this or `schema` _must_ be
+      provided.
+      */
+    var doc: js.UndefOr[Node] = js.undefined
+    
+    /**
+      The plugins that should be active in this state.
+      */
+    var plugins: js.UndefOr[js.Array[Plugin[Any]]] = js.undefined
+    
+    /**
+      The schema to use (only relevant if no `doc` is specified).
+      */
+    var schema: js.UndefOr[Schema[Any, Any]] = js.undefined
+    
+    /**
+      A valid selection in the document.
+      */
+    var selection: js.UndefOr[Selection] = js.undefined
+    
+    /**
+      The initial set of [stored marks](https://prosemirror.net/docs/ref/#state.EditorState.storedMarks).
+      */
+    var storedMarks: js.UndefOr[js.Array[Mark] | Null] = js.undefined
+  }
+  object EditorStateConfig {
+    
+    inline def apply(): EditorStateConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[EditorStateConfig]
+    }
+    
+    extension [Self <: EditorStateConfig](x: Self) {
+      
+      inline def setDoc(value: Node): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      
+      inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+      
+      inline def setPlugins(value: js.Array[Plugin[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      
+      inline def setPluginsVarargs(value: Plugin[Any]*): Self = StObject.set(x, "plugins", js.Array(value*))
+      
+      inline def setSchema(value: Schema[Any, Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      
+      inline def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      
+      inline def setStoredMarks(value: js.Array[Mark]): Self = StObject.set(x, "storedMarks", value.asInstanceOf[js.Any])
+      
+      inline def setStoredMarksNull: Self = StObject.set(x, "storedMarks", null)
+      
+      inline def setStoredMarksUndefined: Self = StObject.set(x, "storedMarks", js.undefined)
+      
+      inline def setStoredMarksVarargs(value: Mark*): Self = StObject.set(x, "storedMarks", js.Array(value*))
+    }
+  }
+  
+  trait NodeBookmark extends StObject {
+    
+    val anchor: Double
+    
+    def map(mapping: Mappable): TextBookmark | NodeBookmark
+    
+    def resolve(doc: Node): Selection | NodeSelection
+  }
+  object NodeBookmark {
+    
+    inline def apply(
+      anchor: Double,
+      map: Mappable => TextBookmark | NodeBookmark,
+      resolve: Node => Selection | NodeSelection
+    ): NodeBookmark = {
+      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), resolve = js.Any.fromFunction1(resolve))
+      __obj.asInstanceOf[NodeBookmark]
+    }
+    
+    extension [Self <: NodeBookmark](x: Self) {
+      
+      inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      
+      inline def setMap(value: Mappable => TextBookmark | NodeBookmark): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      
+      inline def setResolve(value: Node => Selection | NodeSelection): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    }
+  }
+  
+  /**
+  This is the type passed to the [`Plugin`](https://prosemirror.net/docs/ref/#state.Plugin)
+  constructor. It provides a definition for a plugin.
+  */
+  trait PluginSpec[PluginState]
+    extends StObject
+       with /**
+    Additional properties are allowed on plugin specs, which can be
+    read via [`Plugin.spec`](https://prosemirror.net/docs/ref/#state.Plugin.spec).
+    */
+  /* key */ StringDictionary[Any] {
+    
+    /**
+      Allows the plugin to append another transaction to be applied
+      after the given array of transactions. When another plugin
+      appends a transaction after this was called, it is called again
+      with the new state and new transactions—but only the new
+      transactions, i.e. it won't be passed transactions that it
+      already saw.
       */
     var appendTransaction: js.UndefOr[
-        (js.Function3[
-          /* transactions */ js.Array[Transaction[S]], 
-          /* oldState */ EditorState[S], 
-          /* newState */ EditorState[S], 
-          js.UndefOr[Transaction[S] | Null | Unit]
-        ]) | Null
+        js.Function3[
+          /* transactions */ js.Array[Transaction], 
+          /* oldState */ EditorState, 
+          /* newState */ EditorState, 
+          js.UndefOr[Transaction | Null]
+        ]
       ] = js.undefined
     
     /**
-      * When present, this will be called before a transaction is
-      * applied by the state, allowing the plugin to cancel it (by
-      * returning false).
+      When present, this will be called before a transaction is
+      applied by the state, allowing the plugin to cancel it (by
+      returning false).
       */
-    var filterTransaction: js.UndefOr[(js.Function2[/* p1 */ Transaction[S], /* p2 */ EditorState[S], Boolean]) | Null] = js.undefined
+    var filterTransaction: js.UndefOr[js.Function2[/* tr */ Transaction, /* state */ EditorState, Boolean]] = js.undefined
     
     /**
-      * Can be used to make this a keyed plugin. You can have only one
-      * plugin with a given key in a given state, but it is possible to
-      * access the plugin's configuration and state through the key,
-      * without having access to the plugin instance object.
+      Can be used to make this a keyed plugin. You can have only one
+      plugin with a given key in a given state, but it is possible to
+      access the plugin's configuration and state through the key,
+      without having access to the plugin instance object.
       */
-    var key: js.UndefOr[(PluginKey[T, S]) | Null] = js.undefined
+    var key: js.UndefOr[PluginKey[Any]] = js.undefined
     
     /**
-      * The [view props](#view.EditorProps) added by this plugin. Props
-      * that are functions will be bound to have the plugin instance as
-      * their `this` binding.
+      The [view props](https://prosemirror.net/docs/ref/#view.EditorProps) added by this plugin. Props
+      that are functions will be bound to have the plugin instance as
+      their `this` binding.
       */
-    var props: js.UndefOr[(EditorProps[Plugin[T, S], S]) | Null] = js.undefined
+    var props: js.UndefOr[EditorProps[Any]] = js.undefined
     
     /**
-      * Allows a plugin to define a [state field](#state.StateField), an
-      * extra slot in the state object in which it can keep its own data.
+      Allows a plugin to define a [state field](https://prosemirror.net/docs/ref/#state.StateField), an
+      extra slot in the state object in which it can keep its own data.
       */
-    var state: js.UndefOr[(StateField[T, S]) | Null] = js.undefined
+    var state: js.UndefOr[StateField[PluginState]] = js.undefined
     
     /**
-      * When the plugin needs to interact with the editor view, or
-      * set something up in the DOM, use this field. The function
-      * will be called when the plugin's state is associated with an
-      * editor view.
+      When the plugin needs to interact with the editor view, or
+      set something up in the DOM, use this field. The function
+      will be called when the plugin's state is associated with an
+      editor view.
       */
-    var view: js.UndefOr[(js.Function1[/* p */ EditorView[S], Destroy[S]]) | Null] = js.undefined
+    var view: js.UndefOr[js.Function1[/* view */ EditorView, PluginView]] = js.undefined
   }
   object PluginSpec {
     
-    inline def apply[T, S /* <: Schema[js.Any, js.Any] */](): PluginSpec[T, S] = {
+    inline def apply[PluginState](): PluginSpec[PluginState] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PluginSpec[T, S]]
+      __obj.asInstanceOf[PluginSpec[PluginState]]
     }
     
-    extension [Self <: PluginSpec[?, ?], T, S /* <: Schema[js.Any, js.Any] */](x: Self & (PluginSpec[T, S])) {
+    extension [Self <: PluginSpec[?], PluginState](x: Self & PluginSpec[PluginState]) {
       
       inline def setAppendTransaction(
-        value: (/* transactions */ js.Array[Transaction[S]], /* oldState */ EditorState[S], /* newState */ EditorState[S]) => js.UndefOr[Transaction[S] | Null | Unit]
+        value: (/* transactions */ js.Array[Transaction], /* oldState */ EditorState, /* newState */ EditorState) => js.UndefOr[Transaction | Null]
       ): Self = StObject.set(x, "appendTransaction", js.Any.fromFunction3(value))
-      
-      inline def setAppendTransactionNull: Self = StObject.set(x, "appendTransaction", null)
       
       inline def setAppendTransactionUndefined: Self = StObject.set(x, "appendTransaction", js.undefined)
       
-      inline def setFilterTransaction(value: (/* p1 */ Transaction[S], /* p2 */ EditorState[S]) => Boolean): Self = StObject.set(x, "filterTransaction", js.Any.fromFunction2(value))
-      
-      inline def setFilterTransactionNull: Self = StObject.set(x, "filterTransaction", null)
+      inline def setFilterTransaction(value: (/* tr */ Transaction, /* state */ EditorState) => Boolean): Self = StObject.set(x, "filterTransaction", js.Any.fromFunction2(value))
       
       inline def setFilterTransactionUndefined: Self = StObject.set(x, "filterTransaction", js.undefined)
       
-      inline def setKey(value: PluginKey[T, S]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyNull: Self = StObject.set(x, "key", null)
+      inline def setKey(value: PluginKey[Any]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setProps(value: EditorProps[Plugin[T, S], S]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
-      
-      inline def setPropsNull: Self = StObject.set(x, "props", null)
+      inline def setProps(value: EditorProps[Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      inline def setState(value: StateField[T, S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      inline def setStateNull: Self = StObject.set(x, "state", null)
+      inline def setState(value: StateField[PluginState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      inline def setView(value: /* p */ EditorView[S] => Destroy[S]): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
-      
-      inline def setViewNull: Self = StObject.set(x, "view", null)
+      inline def setView(value: /* view */ EditorView => PluginView): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
       
       inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }
   }
   
-  trait SelectionBookmark[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  /**
+  A stateful object that can be installed in an editor by a
+  [plugin](https://prosemirror.net/docs/ref/#state.PluginSpec.view).
+  */
+  trait PluginView extends StObject {
     
     /**
-      * Map the bookmark through a set of changes.
+      Called when the view is destroyed or receives a state
+      with different plugins.
       */
-    def map(mapping: Mapping): SelectionBookmark[S]
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
-      * Resolve the bookmark to a real selection again. This may need to
-      * do some error checking and may fall back to a default (usually
-      * [`TextSelection.between`](#state.TextSelection^between)) if
-      * mapping made the bookmark invalid.
+      Called whenever the view's state is updated.
       */
-    def resolve(doc: Node[S]): Selection[S]
+    var update: js.UndefOr[js.Function2[/* view */ EditorView, /* prevState */ EditorState, Unit]] = js.undefined
   }
-  object SelectionBookmark {
+  object PluginView {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](map: Mapping => SelectionBookmark[S], resolve: Node[S] => Selection[S]): SelectionBookmark[S] = {
-      val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), resolve = js.Any.fromFunction1(resolve))
-      __obj.asInstanceOf[SelectionBookmark[S]]
+    inline def apply(): PluginView = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PluginView]
     }
     
-    extension [Self <: SelectionBookmark[?], S /* <: Schema[js.Any, js.Any] */](x: Self & SelectionBookmark[S]) {
+    extension [Self <: PluginView](x: Self) {
       
-      inline def setMap(value: Mapping => SelectionBookmark[S]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def setResolve(value: Node[S] => Selection[S]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      
+      inline def setUpdate(value: (/* view */ EditorView, /* prevState */ EditorState) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
-  trait StateField[T, S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  /**
+  A lightweight, document-independent representation of a selection.
+  You can define a custom bookmark type for a custom selection class
+  to make the history handle it well.
+  */
+  trait SelectionBookmark extends StObject {
     
     /**
-      * Apply the given transaction to this state field, producing a new
-      * field value. Note that the `newState` argument is again a partially
-      * constructed state does not yet contain the state from plugins
-      * coming after this one.
+      Map the bookmark through a set of changes.
+      */
+    def map(mapping: Mappable): SelectionBookmark
+    
+    /**
+      Resolve the bookmark to a real selection again. This may need to
+      do some error checking and may fall back to a default (usually
+      [`TextSelection.between`](https://prosemirror.net/docs/ref/#state.TextSelection^between)) if
+      mapping made the bookmark invalid.
+      */
+    def resolve(doc: Node): Selection
+  }
+  object SelectionBookmark {
+    
+    inline def apply(map: Mappable => SelectionBookmark, resolve: Node => Selection): SelectionBookmark = {
+      val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), resolve = js.Any.fromFunction1(resolve))
+      __obj.asInstanceOf[SelectionBookmark]
+    }
+    
+    extension [Self <: SelectionBookmark](x: Self) {
+      
+      inline def setMap(value: Mappable => SelectionBookmark): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      
+      inline def setResolve(value: Node => Selection): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    }
+  }
+  
+  /**
+  A plugin spec may provide a state field (under its
+  [`state`](https://prosemirror.net/docs/ref/#state.PluginSpec.state) property) of this type, which
+  describes the state it wants to keep. Functions provided here are
+  always called with the plugin instance as their `this` binding.
+  */
+  trait StateField[T] extends StObject {
+    
+    /**
+      Apply the given transaction to this state field, producing a new
+      field value. Note that the `newState` argument is again a partially
+      constructed state does not yet contain the state from plugins
+      coming after this one.
       */
     @JSName("apply")
-    def apply(tr: Transaction[S], value: T, oldState: EditorState[S], newState: EditorState[S]): T
+    def apply(tr: Transaction, value: T, oldState: EditorState, newState: EditorState): T
     
     /**
-      * Deserialize the JSON representation of this field. Note that the
-      * `state` argument is again a half-initialized state.
+      Deserialize the JSON representation of this field. Note that the
+      `state` argument is again a half-initialized state.
       */
     var fromJSON: js.UndefOr[
-        (js.ThisFunction3[
-          /* this */ Plugin[T, S], 
-          /* config */ StringDictionary[js.Any], 
-          /* value */ js.Any, 
-          /* state */ EditorState[S], 
-          T
-        ]) | Null
+        js.Function3[/* config */ EditorStateConfig, /* value */ Any, /* state */ EditorState, T]
       ] = js.undefined
     
     /**
-      * Initialize the value of the field. `config` will be the object
-      * passed to [`EditorState.create`](#state.EditorState^create). Note
-      * that `instance` is a half-initialized state instance, and will
-      * not have values for plugin fields initialized after this one.
+      Initialize the value of the field. `config` will be the object
+      passed to [`EditorState.create`](https://prosemirror.net/docs/ref/#state.EditorState^create). Note
+      that `instance` is a half-initialized state instance, and will
+      not have values for plugin fields initialized after this one.
       */
-    def init(config: StringDictionary[js.Any], instance: EditorState[S]): T
+    def init(config: EditorStateConfig, instance: EditorState): T
     
     /**
-      * Convert this field to JSON. Optional, can be left off to disable
-      * JSON serialization for the field.
+      Convert this field to JSON. Optional, can be left off to disable
+      JSON serialization for the field.
       */
-    var toJSON: js.UndefOr[(js.ThisFunction1[/* this */ Plugin[T, S], /* value */ T, js.Any]) | Null] = js.undefined
+    var toJSON: js.UndefOr[js.Function1[/* value */ T, Any]] = js.undefined
   }
   object StateField {
     
-    inline def apply[T, S /* <: Schema[js.Any, js.Any] */](
-      apply: (Transaction[S], T, EditorState[S], EditorState[S]) => T,
-      init: (StringDictionary[js.Any], EditorState[S]) => T
-    ): StateField[T, S] = {
+    inline def apply[T](
+      apply: (Transaction, T, EditorState, EditorState) => T,
+      init: (EditorStateConfig, EditorState) => T
+    ): StateField[T] = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction4(apply), init = js.Any.fromFunction2(init))
-      __obj.asInstanceOf[StateField[T, S]]
+      __obj.asInstanceOf[StateField[T]]
     }
     
-    extension [Self <: StateField[?, ?], T, S /* <: Schema[js.Any, js.Any] */](x: Self & (StateField[T, S])) {
+    extension [Self <: StateField[?], T](x: Self & StateField[T]) {
       
-      inline def setApply(value: (Transaction[S], T, EditorState[S], EditorState[S]) => T): Self = StObject.set(x, "apply", js.Any.fromFunction4(value))
+      inline def setApply(value: (Transaction, T, EditorState, EditorState) => T): Self = StObject.set(x, "apply", js.Any.fromFunction4(value))
       
-      inline def setFromJSON(
-        value: js.ThisFunction3[
-              /* this */ Plugin[T, S], 
-              /* config */ StringDictionary[js.Any], 
-              /* value */ js.Any, 
-              /* state */ EditorState[S], 
-              T
-            ]
-      ): Self = StObject.set(x, "fromJSON", value.asInstanceOf[js.Any])
-      
-      inline def setFromJSONNull: Self = StObject.set(x, "fromJSON", null)
+      inline def setFromJSON(value: (/* config */ EditorStateConfig, /* value */ Any, /* state */ EditorState) => T): Self = StObject.set(x, "fromJSON", js.Any.fromFunction3(value))
       
       inline def setFromJSONUndefined: Self = StObject.set(x, "fromJSON", js.undefined)
       
-      inline def setInit(value: (StringDictionary[js.Any], EditorState[S]) => T): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+      inline def setInit(value: (EditorStateConfig, EditorState) => T): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
       
-      inline def setToJSON(value: js.ThisFunction1[/* this */ Plugin[T, S], /* value */ T, js.Any]): Self = StObject.set(x, "toJSON", value.asInstanceOf[js.Any])
-      
-      inline def setToJSONNull: Self = StObject.set(x, "toJSON", null)
+      inline def setToJSON(value: /* value */ T => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
       inline def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
+    }
+  }
+  
+  trait TextBookmark extends StObject {
+    
+    val anchor: Double
+    
+    val head: Double
+    
+    def map(mapping: Mappable): TextBookmark
+    
+    def resolve(doc: Node): Selection
+  }
+  object TextBookmark {
+    
+    inline def apply(anchor: Double, head: Double, map: Mappable => TextBookmark, resolve: Node => Selection): TextBookmark = {
+      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), resolve = js.Any.fromFunction1(resolve))
+      __obj.asInstanceOf[TextBookmark]
+    }
+    
+    extension [Self <: TextBookmark](x: Self) {
+      
+      inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      
+      inline def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      
+      inline def setMap(value: Mappable => TextBookmark): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      
+      inline def setResolve(value: Node => Selection): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
 }

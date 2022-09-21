@@ -1,7 +1,7 @@
 
 # Scala.js typings for halfred
 
-Typings are for version v1.0.0
+Typings are for version 2.0
 
 ## Library description:
 parses JSON HAL resources (Hypertext Application Language)
@@ -10,10 +10,10 @@ parses JSON HAL resources (Hypertext Application Language)
 | ------------------ | :-------------: |
 | Full name          | halfred |
 | Keywords           | HAL, REST, JSON |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 143594 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10818.0 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/traverson/halfred#readme)

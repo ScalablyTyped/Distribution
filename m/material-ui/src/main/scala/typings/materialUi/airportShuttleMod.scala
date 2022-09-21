@@ -10,10 +10,10 @@ object airportShuttleMod {
   
   @JSImport("material-ui/svg-icons/places/airport-shuttle", JSImport.Default)
   @js.native
-  class default () extends PlacesAirportShuttle
+  open class default () extends PlacesAirportShuttle
   
   @JSImport("material-ui/svg-icons/places/airport-shuttle", "PlacesAirportShuttle")
   @js.native
-  class PlacesAirportShuttle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesAirportShuttle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

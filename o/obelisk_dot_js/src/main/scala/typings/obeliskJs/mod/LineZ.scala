@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "LineZ")
 @js.native
-class LineZ () extends AbstractPrimitive {
+open class LineZ () extends AbstractPrimitive {
   def this(dimension: LineZDimension) = this()
   def this(dimension: Unit, color: LineColor) = this()
   def this(dimension: LineZDimension, color: LineColor) = this()

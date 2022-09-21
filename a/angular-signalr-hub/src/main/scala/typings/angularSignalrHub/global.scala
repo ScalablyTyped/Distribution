@@ -14,12 +14,12 @@ object global {
     
     @JSGlobal("ngSignalr.Hub")
     @js.native
-    class Hub ()
+    open class Hub ()
       extends StObject
          with typings.angularSignalrHub.ngSignalr.Hub {
       
       /* CompleteClass */
-      override def connect(): JQueryPromise[js.Any] = js.native
+      override def connect(): JQueryPromise[Any] = js.native
       
       /* CompleteClass */
       var connection: Connection = js.native
@@ -31,10 +31,10 @@ object global {
       var hubName: String = js.native
       
       /* CompleteClass */
-      override def invoke(method: String, args: js.Any*): JQueryDeferred[js.Any] = js.native
+      override def invoke(method: String, args: Any*): JQueryDeferred[Any] = js.native
       
       /* CompleteClass */
-      override def on(event: String, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+      override def on(event: String, fn: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
       
       /* CompleteClass */
       var proxy: Proxy = js.native

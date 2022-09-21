@@ -24,6 +24,6 @@ object DescribeBundleTasksResult {
     
     inline def setBundleTasksUndefined: Self = StObject.set(x, "BundleTasks", js.undefined)
     
-    inline def setBundleTasksVarargs(value: BundleTask*): Self = StObject.set(x, "BundleTasks", js.Array(value :_*))
+    inline def setBundleTasksVarargs(value: BundleTask*): Self = StObject.set(x, "BundleTasks", js.Array(value*))
   }
 }

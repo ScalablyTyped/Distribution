@@ -6,15 +6,14 @@ import typings.officeJs.Excel.Interfaces.DocumentPropertiesUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.anon.Expand
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents workbook properties.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -23,33 +22,33 @@ trait DocumentProperties
      with ClientObject {
   
   /**
-    *
     * The author of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var author: String = js.native
   
   /**
-    *
     * The category of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var category: String = js.native
   
   /**
-    *
     * The comments of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var comments: String = js.native
   
   /**
-    *
     * The company of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var company: String = js.native
@@ -59,33 +58,33 @@ trait DocumentProperties
   var context_DocumentProperties: RequestContext = js.native
   
   /**
+    * Gets the creation date of the workbook.
     *
-    * Gets the creation date of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  val creationDate: Date = js.native
+  val creationDate: js.Date = js.native
   
   /**
+    * Gets the collection of custom properties of the workbook.
     *
-    * Gets the collection of custom properties of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   val custom: CustomPropertyCollection = js.native
   
   /**
-    *
     * The keywords of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var keywords: String = js.native
   
   /**
+    * Gets the last author of the workbook.
     *
-    * Gets the last author of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   val lastAuthor: String = js.native
@@ -102,31 +101,25 @@ trait DocumentProperties
   def load(propertyNames: js.Array[String]): DocumentProperties = js.native
   
   /**
-    *
     * The manager of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var manager: String = js.native
   
   /**
+    * Gets the revision number of the workbook.
     *
-    * Gets the revision number of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var revisionNumber: Double = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: DocumentProperties): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.DocumentProperties): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -134,17 +127,17 @@ trait DocumentProperties
   def set(properties: DocumentPropertiesUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    *
     * The subject of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var subject: String = js.native
   
   /**
-    *
     * The title of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var title: String = js.native

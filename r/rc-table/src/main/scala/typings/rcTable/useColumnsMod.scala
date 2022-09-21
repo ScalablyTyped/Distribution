@@ -1,6 +1,6 @@
 package typings.rcTable
 
-import typings.rcTable.anon.Columns
+import typings.rcTable.anon.ColumnTitle
 import typings.rcTable.interfaceMod.ColumnType
 import typings.rcTable.interfaceMod.ColumnsType
 import typings.react.mod.ReactNode
@@ -18,9 +18,9 @@ object useColumnsMod {
     * Parse `columns` & `children` into `columns`.
     */
   inline def default[RecordType](
-    hasPrefixClsColumnsChildrenExpandableExpandedKeysGetRowKeyOnTriggerExpandExpandIconRowExpandableExpandIconColumnIndexDirectionExpandRowByClick: Columns[RecordType],
+    hasPrefixClsColumnsChildrenExpandableExpandedKeysColumnTitleGetRowKeyOnTriggerExpandExpandIconRowExpandableExpandIconColumnIndexDirectionExpandRowByClickColumnWidthFixed: ColumnTitle[RecordType],
     transformColumns: js.Function1[/* columns */ ColumnsType[RecordType], ColumnsType[RecordType]]
-  ): js.Tuple2[ColumnsType[RecordType], js.Array[ColumnType[RecordType]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsColumnsChildrenExpandableExpandedKeysGetRowKeyOnTriggerExpandExpandIconRowExpandableExpandIconColumnIndexDirectionExpandRowByClick.asInstanceOf[js.Any], transformColumns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ColumnsType[RecordType], js.Array[ColumnType[RecordType]]]]
+  ): js.Tuple2[ColumnsType[RecordType], js.Array[ColumnType[RecordType]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsColumnsChildrenExpandableExpandedKeysColumnTitleGetRowKeyOnTriggerExpandExpandIconRowExpandableExpandIconColumnIndexDirectionExpandRowByClickColumnWidthFixed.asInstanceOf[js.Any], transformColumns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ColumnsType[RecordType], js.Array[ColumnType[RecordType]]]]
   
   inline def convertChildrenToColumns[RecordType](children: ReactNode): ColumnsType[RecordType] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToColumns")(children.asInstanceOf[js.Any]).asInstanceOf[ColumnsType[RecordType]]
 }

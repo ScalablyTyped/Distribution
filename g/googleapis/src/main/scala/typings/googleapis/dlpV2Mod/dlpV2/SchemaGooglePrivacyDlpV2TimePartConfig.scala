@@ -4,13 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * For use with `Date`, `Timestamp`, and `TimeOfDay`, extract or preserve a
-  * portion of the value.
-  */
 trait SchemaGooglePrivacyDlpV2TimePartConfig extends StObject {
   
-  var partToExtract: js.UndefOr[String] = js.undefined
+  /**
+    * The part of the time to keep.
+    */
+  var partToExtract: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2TimePartConfig {
   
@@ -22,6 +21,8 @@ object SchemaGooglePrivacyDlpV2TimePartConfig {
   extension [Self <: SchemaGooglePrivacyDlpV2TimePartConfig](x: Self) {
     
     inline def setPartToExtract(value: String): Self = StObject.set(x, "partToExtract", value.asInstanceOf[js.Any])
+    
+    inline def setPartToExtractNull: Self = StObject.set(x, "partToExtract", null)
     
     inline def setPartToExtractUndefined: Self = StObject.set(x, "partToExtract", js.undefined)
   }

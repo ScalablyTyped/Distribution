@@ -19,6 +19,6 @@ object PermissionsData {
     
     inline def setPermissions(value: js.Array[PermissionData]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    inline def setPermissionsVarargs(value: PermissionData*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: PermissionData*): Self = StObject.set(x, "permissions", js.Array(value*))
   }
 }

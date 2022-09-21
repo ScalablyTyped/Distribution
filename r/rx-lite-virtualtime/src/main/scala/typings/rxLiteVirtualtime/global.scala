@@ -15,7 +15,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Rx.HistoricalScheduler")
     @js.native
-    class HistoricalSchedulerCls protected ()
+    open class HistoricalSchedulerCls protected ()
       extends StObject
          with VirtualTimeScheduler[Double, Double] {
       def this(initialClock: Double, comparer: js.Function2[/* first */ Double, /* second */ Double, Double]) = this()
@@ -37,7 +37,7 @@ object global {
       var isEnabled: Boolean = js.native
       
       /* CompleteClass */
-      override def isScheduler(value: js.Any): Boolean = js.native
+      override def isScheduler(value: Any): Boolean = js.native
       
       /* CompleteClass */
       override def now(): Double = js.native

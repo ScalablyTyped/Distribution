@@ -6,26 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "LiteralArrayExpr")
 @js.native
-class LiteralArrayExpr protected ()
-  extends typings.angularCompiler.compilerMod.LiteralArrayExpr {
-  def this(entries: js.Array[typings.angularCompiler.outputAstMod.Expression]) = this()
-  def this(
-    entries: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    entries: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    entries: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    entries: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class LiteralArrayExpr protected () extends Expression {
+  def this(entries: js.Array[Expression]) = this()
+  def this(entries: js.Array[Expression], `type`: Type) = this()
+  def this(entries: js.Array[Expression], `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(entries: js.Array[Expression], `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(entries: js.Array[Expression], `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
+  var entries: js.Array[Expression] = js.native
 }

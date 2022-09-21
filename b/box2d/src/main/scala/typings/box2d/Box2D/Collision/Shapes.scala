@@ -388,8 +388,8 @@ object Shapes {
       * @param vertexCount The number of vertices, default is 0 and in the box2dweb.js code it is ignored.
       * @return Convex polygon shape.
       **/
-    def SetAsVector(vertices: js.Array[js.Any]): Unit = js.native
-    def SetAsVector(vertices: js.Array[js.Any], vertexCount: Double): Unit = js.native
+    def SetAsVector(vertices: js.Array[Any]): Unit = js.native
+    def SetAsVector(vertices: js.Array[Any], vertexCount: Double): Unit = js.native
   }
   
   trait b2Shape extends StObject {

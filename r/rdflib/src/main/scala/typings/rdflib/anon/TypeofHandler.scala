@@ -1,19 +1,23 @@
 package typings.rdflib.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.rdflib.fetcherMod.ExtendedResponse
-import typings.rdflib.fetcherMod.Handler
-import typings.std.Document
-import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TypeofHandler
-  extends Instantiable1[/* response */ ExtendedResponse, Handler]
-     with Instantiable2[/* response */ ExtendedResponse, /* dom */ Document, Handler] {
-  var pattern: RegExp = js.native
+trait TypeofHandler extends StObject {
+  
+  /* static member */
+  var pattern: js.RegExp
 }
-
+object TypeofHandler {
+  
+  inline def apply(pattern: js.RegExp): TypeofHandler = {
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofHandler]
+  }
+  
+  extension [Self <: TypeofHandler](x: Self) {
+    
+    inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+  }
+}

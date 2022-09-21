@@ -30,7 +30,7 @@ object pathPosixMod {
   
   inline def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def join(ps: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def join(ps: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   inline def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -40,14 +40,14 @@ object pathPosixMod {
   
   inline def relative(_from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(_from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def resolve(ps: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def resolve(ps: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   @JSImport("path_posix", "sep")
   @js.native
   val sep: String = js.native
   
-  inline def toNamespacedPath(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")().asInstanceOf[js.Any]
-  inline def toNamespacedPath(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toNamespacedPath(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")().asInstanceOf[Any]
+  inline def toNamespacedPath(path: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNamespacedPath")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("path_posix", "win32")
   @js.native

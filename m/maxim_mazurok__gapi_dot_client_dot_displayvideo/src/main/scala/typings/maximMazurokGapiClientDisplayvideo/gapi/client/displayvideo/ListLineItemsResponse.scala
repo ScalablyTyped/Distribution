@@ -25,7 +25,7 @@ object ListLineItemsResponse {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: LineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -4,7 +4,6 @@ import typings.babylonjs.anon.DownDegrees
 import typings.babylonjs.mathLikeMod.IPlaneLike
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates an empty matrix (filled with zeros)
   */
-class Matrix ()
+open class Matrix ()
   extends typings.babylonjs.mathVectorMod.Matrix
 /* static members */
 object Matrix {
@@ -112,7 +111,7 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def FromFloat32ArrayToRefScaled(
-    array: DeepImmutable[Float32Array | js.Array[Double]],
+    array: DeepImmutable[js.typedarray.Float32Array | js.Array[Double]],
     offset: Double,
     scale: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
@@ -226,14 +225,14 @@ object Matrix {
     * @param matrix defines the matrix to use
     * @returns a new Float32Array array with 4 elements : the 2x2 matrix extracted from the given matrix
     */
-  inline def GetAsMatrix2x2(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix2x2")(matrix.asInstanceOf[js.Any]).asInstanceOf[Float32Array | js.Array[Double]]
+  inline def GetAsMatrix2x2(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): js.typedarray.Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix2x2")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array | js.Array[Double]]
   
   /**
     * Extracts a 3x3 matrix from a given matrix and store the result in a Float32Array
     * @param matrix defines the matrix to use
     * @returns a new Float32Array array with 9 elements : the 3x3 matrix extracted from the given matrix
     */
-  inline def GetAsMatrix3x3(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix3x3")(matrix.asInstanceOf[js.Any]).asInstanceOf[Float32Array | js.Array[Double]]
+  inline def GetAsMatrix3x3(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): js.typedarray.Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix3x3")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array | js.Array[Double]]
   
   /**
     * Computes a complete transformation matrix
@@ -359,14 +358,66 @@ object Matrix {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtRHToRef")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
+    * Gets a new rotation matrix used to rotate an entity so as it looks in the direction specified by forward from the eye position, the up direction being oriented like "up".
+    * This function works in left handed mode
+    * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+    * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+    * @returns the new matrix
+    */
+  inline def LookDirectionLH(
+    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionLH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  
+  /**
+    * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks in the direction of forward, the up direction being oriented like "up".
+    * This function works in left handed mode
+    * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+    * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+    * @param result defines the target matrix
+    */
+  inline def LookDirectionLHToRef(
+    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    result: typings.babylonjs.mathVectorMod.Matrix
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionLHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Gets a new rotation matrix used to rotate an entity so as it looks in the direction specified by forward from the eye position, the up Vector3 being oriented like "up".
+    * This function works in right handed mode
+    * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+    * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+    * @returns the new matrix
+    */
+  inline def LookDirectionRH(
+    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionRH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  
+  /**
+    * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks in the direction of forward, the up vector3 being oriented like "up".
+    * This function works in right handed mode
+    * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+    * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+    * @param result defines the target matrix
+    */
+  inline def LookDirectionRHToRef(
+    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    result: typings.babylonjs.mathVectorMod.Matrix
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionRHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
     * Create a left-handed orthographic projection matrix
     * @param width defines the viewport width
     * @param height defines the viewport height
     * @param znear defines the near clip plane
     * @param zfar defines the far clip plane
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     * @returns a new matrix as a left-handed orthographic projection matrix
     */
   inline def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
   /**
     * Store a left-handed orthographic projection to a given matrix
@@ -375,6 +426,7 @@ object Matrix {
     * @param znear defines the near clip plane
     * @param zfar defines the far clip plane
     * @param result defines the target matrix
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     */
   inline def OrthoLHToRef(
     width: Double,
@@ -383,6 +435,14 @@ object Matrix {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLHToRef")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def OrthoLHToRef(
+    width: Double,
+    height: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLHToRef")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a left-handed orthographic projection matrix
@@ -392,9 +452,19 @@ object Matrix {
     * @param top defines the viewport top coordinate
     * @param znear defines the near clip plane
     * @param zfar defines the far clip plane
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     * @returns a new matrix as a left-handed orthographic projection matrix
     */
   inline def OrthoOffCenterLH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def OrthoOffCenterLH(
+    left: Double,
+    right: Double,
+    bottom: Double,
+    top: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
   /**
     * Stores a left-handed orthographic projection into a given matrix
@@ -405,6 +475,7 @@ object Matrix {
     * @param znear defines the near clip plane
     * @param zfar defines the far clip plane
     * @param result defines the target matrix
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     */
   inline def OrthoOffCenterLHToRef(
     left: Double,
@@ -415,6 +486,16 @@ object Matrix {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def OrthoOffCenterLHToRef(
+    left: Double,
+    right: Double,
+    bottom: Double,
+    top: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a right-handed orthographic projection matrix
@@ -424,9 +505,19 @@ object Matrix {
     * @param top defines the viewport top coordinate
     * @param znear defines the near clip plane
     * @param zfar defines the far clip plane
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     * @returns a new matrix as a right-handed orthographic projection matrix
     */
   inline def OrthoOffCenterRH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def OrthoOffCenterRH(
+    left: Double,
+    right: Double,
+    bottom: Double,
+    top: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
   /**
     * Stores a right-handed orthographic projection into a given matrix
@@ -437,6 +528,7 @@ object Matrix {
     * @param znear defines the near clip plane
     * @param zfar defines the far clip plane
     * @param result defines the target matrix
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     */
   inline def OrthoOffCenterRHToRef(
     left: Double,
@@ -447,25 +539,94 @@ object Matrix {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def OrthoOffCenterRHToRef(
+    left: Double,
+    right: Double,
+    bottom: Double,
+    top: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a left-handed perspective projection matrix
     * @param fov defines the horizontal field of view
     * @param aspect defines the aspect ratio
     * @param znear defines the near clip plane
-    * @param zfar defines the far clip plane
+    * @param zfar defines the far clip plane. If 0, assume we are in "infinite zfar" mode
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+    * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
+    * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
     * @returns a new matrix as a left-handed perspective projection matrix
     */
   inline def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovLH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovLH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovLH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovLH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovLH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovLH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Unit,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
   /**
     * Stores a left-handed perspective projection into a given matrix
     * @param fov defines the horizontal field of view
     * @param aspect defines the aspect ratio
     * @param znear defines the near clip plane
-    * @param zfar defines the far clip plane
+    * @param zfar defines the far clip plane. If 0, assume we are in "infinite zfar" mode
     * @param result defines the target matrix
     * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+    * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
+    * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
     */
   inline def PerspectiveFovLHToRef(
     fov: Double,
@@ -482,25 +643,230 @@ object Matrix {
     result: typings.babylonjs.mathVectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Unit,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Unit,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a right-handed perspective projection matrix
     * @param fov defines the horizontal field of view
     * @param aspect defines the aspect ratio
     * @param znear defines the near clip plane
-    * @param zfar defines the far clip plane
+    * @param zfar defines the far clip plane. If 0, assume we are in "infinite zfar" mode
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+    * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
+    * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
     * @returns a new matrix as a right-handed perspective projection matrix
     */
   inline def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovRH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovRH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovRH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovRH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovRH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovRH(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Unit,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
   /**
     * Stores a right-handed perspective projection into a given matrix
     * @param fov defines the horizontal field of view
     * @param aspect defines the aspect ratio
     * @param znear defines the near clip plane
-    * @param zfar defines the far clip plane
+    * @param zfar defines the far clip plane. If 0, assume we are in "infinite zfar" mode
     * @param result defines the target matrix
     * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+    * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
+    * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
     */
   inline def PerspectiveFovRHToRef(
     fov: Double,
@@ -517,6 +883,152 @@ object Matrix {
     result: typings.babylonjs.mathVectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Unit,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Unit,
+    projectionPlaneTilt: Unit,
+    reverseDepthBufferMode: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Stores a left-handed perspective projection into a given matrix with depth reversed
@@ -526,6 +1038,8 @@ object Matrix {
     * @param zfar not used as infinity is used as far clip
     * @param result defines the target matrix
     * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+    * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
     */
   inline def PerspectiveFovReverseLHToRef(
     fov: Double,
@@ -542,6 +1056,64 @@ object Matrix {
     result: typings.babylonjs.mathVectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseLHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Stores a right-handed perspective projection into a given matrix
@@ -551,6 +1123,8 @@ object Matrix {
     * @param zfar not used as infinity is used as far clip
     * @param result defines the target matrix
     * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+    * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
     */
   inline def PerspectiveFovReverseRHToRef(
     fov: Double,
@@ -567,14 +1141,78 @@ object Matrix {
     result: typings.babylonjs.mathVectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Boolean,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovReverseRHToRef(
+    fov: Double,
+    aspect: Double,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    isVerticalFovFixed: Unit,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Stores a perspective projection for WebVR info a given matrix
     * @param fov defines the field of view
+    * @param fov.upDegrees
+    * @param fov.downDegrees
+    * @param fov.leftDegrees
+    * @param fov.rightDegrees
     * @param znear defines the near clip plane
     * @param zfar defines the far clip plane
     * @param result defines the target matrix
     * @param rightHanded defines if the matrix must be in right-handed mode (false by default)
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+    * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
     */
   inline def PerspectiveFovWebVRToRef(fov: DownDegrees, znear: Double, zfar: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovWebVRToRef(
@@ -584,6 +1222,58 @@ object Matrix {
     result: typings.babylonjs.mathVectorMod.Matrix,
     rightHanded: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovWebVRToRef(
+    fov: DownDegrees,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    rightHanded: Boolean,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovWebVRToRef(
+    fov: DownDegrees,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    rightHanded: Boolean,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovWebVRToRef(
+    fov: DownDegrees,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    rightHanded: Boolean,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovWebVRToRef(
+    fov: DownDegrees,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    rightHanded: Unit,
+    halfZRange: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovWebVRToRef(
+    fov: DownDegrees,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    rightHanded: Unit,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovWebVRToRef(
+    fov: DownDegrees,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathVectorMod.Matrix,
+    rightHanded: Unit,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a left-handed perspective projection matrix
@@ -591,9 +1281,28 @@ object Matrix {
     * @param height defines the viewport height
     * @param znear defines the near clip plane
     * @param zfar defines the far clip plane
+    * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+    * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
     * @returns a new matrix as a left-handed perspective projection matrix
     */
   inline def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveLH(
+    width: Double,
+    height: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Boolean,
+    projectionPlaneTilt: Double
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveLH(
+    width: Double,
+    height: Double,
+    znear: Double,
+    zfar: Double,
+    halfZRange: Unit,
+    projectionPlaneTilt: Double
+  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
   /**
     * Computes a reflection matrix from a plane
@@ -626,7 +1335,7 @@ object Matrix {
     * Creates a new rotation matrix for "angle" radians around the given axis
     * @param axis defines the axis to use
     * @param angle defines the angle (in radians) to use
-    * @return the new matrix
+    * @returns the new matrix
     */
   inline def RotationAxis(axis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3], angle: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAxis")(axis.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
@@ -645,7 +1354,7 @@ object Matrix {
   /**
     * Creates a new rotation matrix for "angle" radians around the X axis
     * @param angle defines the angle (in radians) to use
-    * @return the new matrix
+    * @returns the new matrix
     */
   inline def RotationX(angle: Double): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationX")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
@@ -659,7 +1368,7 @@ object Matrix {
   /**
     * Creates a new rotation matrix for "angle" radians around the Y axis
     * @param angle defines the angle (in radians) to use
-    * @return the new matrix
+    * @returns the new matrix
     */
   inline def RotationY(angle: Double): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationY")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
@@ -691,7 +1400,7 @@ object Matrix {
   /**
     * Creates a new rotation matrix for "angle" radians around the Z axis
     * @param angle defines the angle (in radians) to use
-    * @return the new matrix
+    * @returns the new matrix
     */
   inline def RotationZ(angle: Double): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationZ")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
@@ -761,13 +1470,13 @@ object Matrix {
     */
   inline def Zero(): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
   
-  @JSImport("babylonjs/Maths/math", "Matrix._identityReadOnly")
+  @JSImport("babylonjs/Maths/math", "Matrix._IdentityReadOnly")
   @js.native
-  def _identityReadOnly: js.Any = js.native
-  inline def _identityReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_identityReadOnly")(x.asInstanceOf[js.Any])
+  def _IdentityReadOnly: Any = js.native
+  inline def _IdentityReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IdentityReadOnly")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Maths/math", "Matrix._updateFlagSeed")
+  @JSImport("babylonjs/Maths/math", "Matrix._UpdateFlagSeed")
   @js.native
-  def _updateFlagSeed: js.Any = js.native
-  inline def _updateFlagSeed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_updateFlagSeed")(x.asInstanceOf[js.Any])
+  def _UpdateFlagSeed: Any = js.native
+  inline def _UpdateFlagSeed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateFlagSeed")(x.asInstanceOf[js.Any])
 }

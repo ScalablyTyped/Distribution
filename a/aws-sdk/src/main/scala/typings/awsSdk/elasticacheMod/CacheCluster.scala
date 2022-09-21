@@ -24,17 +24,17 @@ trait CacheCluster extends StObject {
   /**
     * The date the auth token was last modified
     */
-  var AuthTokenLastModifiedDate: js.UndefOr[TStamp] = js.undefined
+  var AuthTokenLastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * This parameter is currently disabled.
+    *  If you are running Redis engine version 6.0 or later, set this parameter to yes if you want to opt-in to the next auto minor version upgrade campaign. This parameter is disabled for previous versions.  
     */
   var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The date and time when the cluster was created.
     */
-  var CacheClusterCreateTime: js.UndefOr[TStamp] = js.undefined
+  var CacheClusterCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The user-supplied identifier of the cluster. This identifier is a unique key that identifies a cluster.
@@ -47,7 +47,7 @@ trait CacheCluster extends StObject {
   var CacheClusterStatus: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the compute and memory capacity node type for the cluster. The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   M6g node types (available only for Redis engine version 5.0.6 onward and for Memcached engine version 1.5.16 onward).  cache.m6g.large, cache.m6g.xlarge, cache.m6g.2xlarge, cache.m6g.4xlarge, cache.m6g.8xlarge, cache.m6g.12xlarge, cache.m6g.16xlarge   At this time, M6g node types are available in the following regions: us-east-1, us-west-2, us-east-2, eu-central-1, eu-west-1 and ap-northeast-1.   M5 node types: cache.m5.large, cache.m5.xlarge, cache.m5.2xlarge, cache.m5.4xlarge, cache.m5.12xlarge, cache.m5.24xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge   T3 node types: cache.t3.micro, cache.t3.small, cache.t3.medium   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium    Previous generation: (not recommended)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge      Compute optimized:   Previous generation: (not recommended)  C1 node types: cache.c1.xlarge      Memory optimized:   Current generation:   R6g node types (available only for Redis engine version 5.0.6 onward and for Memcached engine version 1.5.16 onward).  cache.r6g.large, cache.r6g.xlarge, cache.r6g.2xlarge, cache.r6g.4xlarge, cache.r6g.8xlarge, cache.r6g.12xlarge, cache.r6g.16xlarge   At this time, R6g node types are available in the following regions: us-east-1, us-west-2, us-east-2, eu-central-1, eu-west-1 and ap-northeast-1.   R5 node types: cache.r5.large, cache.r5.xlarge, cache.r5.2xlarge, cache.r5.4xlarge, cache.r5.12xlarge, cache.r5.24xlarge   R4 node types: cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge       Additional node type info    All current generation instance types are created in Amazon VPC by default.   Redis append-only files (AOF) are not supported for T1 or T2 instances.   Redis Multi-AZ with automatic failover is not supported on T1 instances.   Redis configuration variables appendonly and appendfsync are not supported on Redis version 2.8.22 and later.  
+    * The name of the compute and memory capacity node type for the cluster. The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   M6g node types: (available only for Redis engine version 5.0.6 onward and for Memcached engine version 1.5.16 onward): cache.m6g.large, cache.m6g.xlarge, cache.m6g.2xlarge, cache.m6g.4xlarge, cache.m6g.8xlarge, cache.m6g.12xlarge, cache.m6g.16xlarge   For region availability, see Supported Node Types    M5 node types: cache.m5.large, cache.m5.xlarge, cache.m5.2xlarge, cache.m5.4xlarge, cache.m5.12xlarge, cache.m5.24xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge   T4g node types (available only for Redis engine version 5.0.6 onward and for Memcached engine version 1.5.16 onward): cache.t4g.micro, cache.t4g.small, cache.t4g.medium   T3 node types: cache.t3.micro, cache.t3.small, cache.t3.medium   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium    Previous generation: (not recommended. Existing clusters are still supported but creation of new clusters is not supported for these types.)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge      Compute optimized:   Previous generation: (not recommended. Existing clusters are still supported but creation of new clusters is not supported for these types.)  C1 node types: cache.c1.xlarge      Memory optimized with data tiering:   Current generation:   R6gd node types (available only for Redis engine version 6.2 onward).  cache.r6gd.xlarge, cache.r6gd.2xlarge, cache.r6gd.4xlarge, cache.r6gd.8xlarge, cache.r6gd.12xlarge, cache.r6gd.16xlarge      Memory optimized:   Current generation:   R6g node types (available only for Redis engine version 5.0.6 onward and for Memcached engine version 1.5.16 onward).  cache.r6g.large, cache.r6g.xlarge, cache.r6g.2xlarge, cache.r6g.4xlarge, cache.r6g.8xlarge, cache.r6g.12xlarge, cache.r6g.16xlarge   For region availability, see Supported Node Types    R5 node types: cache.r5.large, cache.r5.xlarge, cache.r5.2xlarge, cache.r5.4xlarge, cache.r5.12xlarge, cache.r5.24xlarge   R4 node types: cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended. Existing clusters are still supported but creation of new clusters is not supported for these types.)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge       Additional node type info    All current generation instance types are created in Amazon VPC by default.   Redis append-only files (AOF) are not supported for T1 or T2 instances.   Redis Multi-AZ with automatic failover is not supported on T1 instances.   Redis configuration variables appendonly and appendfsync are not supported on Redis version 2.8.22 and later.  
     */
   var CacheNodeType: js.UndefOr[String] = js.undefined
   
@@ -77,7 +77,7 @@ trait CacheCluster extends StObject {
   var ClientDownloadLandingPage: js.UndefOr[String] = js.undefined
   
   /**
-    * Represents a Memcached cluster endpoint which, if Automatic Discovery is enabled on the cluster, can be used by an application to connect to any node in the cluster. The configuration endpoint will always have .cfg in it. Example: mem-3.9dvc4r.cfg.usw2.cache.amazonaws.com:11211 
+    * Represents a Memcached cluster endpoint which can be used by an application to connect to any node in the cluster. The configuration endpoint will always have .cfg in it. Example: mem-3.9dvc4r.cfg.usw2.cache.amazonaws.com:11211 
     */
   var ConfigurationEndpoint: js.UndefOr[Endpoint] = js.undefined
   
@@ -92,12 +92,17 @@ trait CacheCluster extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
+    * Returns the destination, format and type of the logs.
+    */
+  var LogDeliveryConfigurations: js.UndefOr[LogDeliveryConfigurationList] = js.undefined
+  
+  /**
     * Describes a notification topic and its status. Notification topics are used for publishing ElastiCache events to subscribers using Amazon Simple Notification Service (SNS). 
     */
   var NotificationConfiguration: js.UndefOr[typings.awsSdk.elasticacheMod.NotificationConfiguration] = js.undefined
   
   /**
-    * The number of cache nodes in the cluster. For clusters running Redis, this value must be 1. For clusters running Memcached, this value must be between 1 and 20.
+    * The number of cache nodes in the cluster. For clusters running Redis, this value must be 1. For clusters running Memcached, this value must be between 1 and 40.
     */
   var NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -122,6 +127,11 @@ trait CacheCluster extends StObject {
     * The replication group to which this cluster belongs. If this field is empty, the cluster is not associated with any replication group.
     */
   var ReplicationGroupId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A boolean value indicating whether log delivery is enabled for the replication group.
+    */
+  var ReplicationGroupLogDeliveryEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of VPC Security Groups associated with the cluster.
@@ -164,7 +174,7 @@ object CacheCluster {
     
     inline def setAuthTokenEnabledUndefined: Self = StObject.set(x, "AuthTokenEnabled", js.undefined)
     
-    inline def setAuthTokenLastModifiedDate(value: TStamp): Self = StObject.set(x, "AuthTokenLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setAuthTokenLastModifiedDate(value: js.Date): Self = StObject.set(x, "AuthTokenLastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setAuthTokenLastModifiedDateUndefined: Self = StObject.set(x, "AuthTokenLastModifiedDate", js.undefined)
     
@@ -172,7 +182,7 @@ object CacheCluster {
     
     inline def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "AutoMinorVersionUpgrade", js.undefined)
     
-    inline def setCacheClusterCreateTime(value: TStamp): Self = StObject.set(x, "CacheClusterCreateTime", value.asInstanceOf[js.Any])
+    inline def setCacheClusterCreateTime(value: js.Date): Self = StObject.set(x, "CacheClusterCreateTime", value.asInstanceOf[js.Any])
     
     inline def setCacheClusterCreateTimeUndefined: Self = StObject.set(x, "CacheClusterCreateTime", js.undefined)
     
@@ -192,7 +202,7 @@ object CacheCluster {
     
     inline def setCacheNodesUndefined: Self = StObject.set(x, "CacheNodes", js.undefined)
     
-    inline def setCacheNodesVarargs(value: CacheNode*): Self = StObject.set(x, "CacheNodes", js.Array(value :_*))
+    inline def setCacheNodesVarargs(value: CacheNode*): Self = StObject.set(x, "CacheNodes", js.Array(value*))
     
     inline def setCacheParameterGroup(value: CacheParameterGroupStatus): Self = StObject.set(x, "CacheParameterGroup", value.asInstanceOf[js.Any])
     
@@ -202,7 +212,7 @@ object CacheCluster {
     
     inline def setCacheSecurityGroupsUndefined: Self = StObject.set(x, "CacheSecurityGroups", js.undefined)
     
-    inline def setCacheSecurityGroupsVarargs(value: CacheSecurityGroupMembership*): Self = StObject.set(x, "CacheSecurityGroups", js.Array(value :_*))
+    inline def setCacheSecurityGroupsVarargs(value: CacheSecurityGroupMembership*): Self = StObject.set(x, "CacheSecurityGroups", js.Array(value*))
     
     inline def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
     
@@ -223,6 +233,12 @@ object CacheCluster {
     inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    
+    inline def setLogDeliveryConfigurations(value: LogDeliveryConfigurationList): Self = StObject.set(x, "LogDeliveryConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setLogDeliveryConfigurationsUndefined: Self = StObject.set(x, "LogDeliveryConfigurations", js.undefined)
+    
+    inline def setLogDeliveryConfigurationsVarargs(value: LogDeliveryConfiguration*): Self = StObject.set(x, "LogDeliveryConfigurations", js.Array(value*))
     
     inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
     
@@ -252,11 +268,15 @@ object CacheCluster {
     
     inline def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
     
+    inline def setReplicationGroupLogDeliveryEnabled(value: Boolean): Self = StObject.set(x, "ReplicationGroupLogDeliveryEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setReplicationGroupLogDeliveryEnabledUndefined: Self = StObject.set(x, "ReplicationGroupLogDeliveryEnabled", js.undefined)
+    
     inline def setSecurityGroups(value: SecurityGroupMembershipList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: SecurityGroupMembership*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupMembership*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSnapshotRetentionLimit(value: IntegerOptional): Self = StObject.set(x, "SnapshotRetentionLimit", value.asInstanceOf[js.Any])
     

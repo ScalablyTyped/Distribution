@@ -11,9 +11,9 @@ This package exists as a namespace for Typescript typings of the extension envir
 | Full name          | scratch-env |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 165 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 43.666666666666664 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/Richienb/scratch-env#readme)

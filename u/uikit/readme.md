@@ -1,7 +1,7 @@
 
 # Scala.js typings for uikit
 
-Typings are for version 3.3
+Typings are for version 3.14
 
 ## Library description:
 UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.
@@ -10,10 +10,10 @@ UIkit is a lightweight and modular front-end framework for developing fast and p
 | ------------------ | :-------------: |
 | Full name          | uikit |
 | Keywords           | - |
-| # releases         | 311 |
-| # dependents       | 94 |
-| # downloads        | 1633188 |
-| # stars            | 11 |
+| # releases         | 459 |
+| # dependents       | 0.0 |
+| # downloads        | 92849.33333333333 |
+| # stars            | 17639.0 |
 
 ## Links
 - [Homepage](https://getuikit.com)

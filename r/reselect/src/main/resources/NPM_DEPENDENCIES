@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "reselect" : "4.0.0"
+      "reselect" : "4.1.6"
     }
   ],
   "test-dependencies" : [
     {
-      "reselect" : "4.0.0"
+      "reselect" : "4.1.6"
     }
   ],
   "compile-devDependencies" : [

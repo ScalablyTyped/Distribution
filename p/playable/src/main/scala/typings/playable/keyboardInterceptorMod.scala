@@ -11,7 +11,7 @@ object keyboardInterceptorMod {
   
   @JSImport("playable/dist/src/utils/keyboard-interceptor", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with KeyboardInterceptorCore {
     def this(element: HTMLElement) = this()
@@ -65,28 +65,28 @@ object keyboardInterceptorMod {
     inline def UP_ARROW_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UP_ARROW")(x.asInstanceOf[js.Any])
   }
   
-  type ICallbacks = StringDictionary[ListenerFn[js.Array[js.Any]]]
+  type ICallbacks = StringDictionary[ListenerFn[js.Array[Any]]]
   
   @js.native
   trait KeyboardInterceptorCore extends StObject {
     
-    /* private */ var _attachCallbacks: js.Any = js.native
+    /* private */ var _attachCallbacks: Any = js.native
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _element: js.Any = js.native
+    /* private */ var _element: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ def _isDestroyed: js.Any = js.native
+    /* private */ def _isDestroyed: Any = js.native
     
-    /* private */ var _processKeyboardInput: js.Any = js.native
+    /* private */ var _processKeyboardInput: Any = js.native
     
-    /* private */ var _unattachCallbacks: js.Any = js.native
+    /* private */ var _unattachCallbacks: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def addCallbacks(callbacks: ICallbacks): Unit = js.native
     

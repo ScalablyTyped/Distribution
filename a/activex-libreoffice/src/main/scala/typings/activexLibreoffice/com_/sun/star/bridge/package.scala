@@ -1,12 +1,15 @@
 package typings.activexLibreoffice.com_.sun.star.bridge
 
+import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
+import typings.activexLibreoffice.com_.sun.star.uno.Exception
+import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /** Indicates, that it was tried to create a remote bridge with a name, which already existed. */
-type BridgeExistsException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type BridgeExistsException = Exception
 
 /**
   * allows to create new or access existing interprocess bridges.
@@ -14,7 +17,7 @@ type BridgeExistsException = typings.activexLibreoffice.com_.sun.star.uno.Except
   * It enumerates at the servicemanager all services supporting the meta service {@link com.sun.star.bridge.Bridge} to get all known, possible protocols.
   * @see com.sun.star.bridge.Bridge
   */
-type BridgeFactory = typings.activexLibreoffice.com_.sun.star.bridge.XBridgeFactory2
+type BridgeFactory = XBridgeFactory2
 
 /**
   * registers UNO objects as COM objects.
@@ -32,7 +35,7 @@ type BridgeFactory = typings.activexLibreoffice.com_.sun.star.bridge.XBridgeFact
   * and deregistered if the implementation, which makes use of this service, is being released.
   * @deprecated Deprecated
   */
-type OleApplicationRegistration = typings.activexLibreoffice.com_.sun.star.uno.XInterface
+type OleApplicationRegistration = XInterface
 
 /**
   * makes it possible to generate OLE bridges to UNO objects and vice versa.
@@ -41,7 +44,7 @@ type OleApplicationRegistration = typings.activexLibreoffice.com_.sun.star.uno.X
   * The service does not specify any requirements on registering OLE objects and class factories.
   * @deprecated Deprecated
   */
-type OleBridgeSupplier = typings.activexLibreoffice.com_.sun.star.bridge.XBridgeSupplier
+type OleBridgeSupplier = XBridgeSupplier
 
 /**
   * maps UNO types to oleautomation types and vice versa.
@@ -59,7 +62,7 @@ type OleBridgeSupplier = typings.activexLibreoffice.com_.sun.star.bridge.XBridge
   * com.sun.star.bridge.ModelDependent.OLE} . The service does not specify any requirements for registering OLE objects and class factories.
   * @deprecated Deprecated
   */
-type OleBridgeSupplier2 = typings.activexLibreoffice.com_.sun.star.bridge.XBridgeSupplier2
+type OleBridgeSupplier2 = XBridgeSupplier2
 
 /**
   * maps UNO types to COM types and vice versa. It is optimized for use in a remote szenario.
@@ -69,7 +72,7 @@ type OleBridgeSupplier2 = typings.activexLibreoffice.com_.sun.star.bridge.XBridg
   * process, if this increases performance.
   * @deprecated Deprecated
   */
-type OleBridgeSupplierVar1 = typings.activexLibreoffice.com_.sun.star.bridge.OleBridgeSupplier2
+type OleBridgeSupplierVar1 = OleBridgeSupplier2
 
 /**
   * makes it possible to create COM objects as UNO objects.
@@ -82,7 +85,7 @@ type OleBridgeSupplierVar1 = typings.activexLibreoffice.com_.sun.star.bridge.Ole
   * this time they are ignored.
   * @deprecated Deprecated
   */
-type OleObjectFactory = typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
+type OleObjectFactory = XMultiServiceFactory
 
 /** provides the ability to access remote processes, resolving them by an UNO url. ; */
-type UnoUrlResolver = typings.activexLibreoffice.com_.sun.star.bridge.XUnoUrlResolver
+type UnoUrlResolver = XUnoUrlResolver

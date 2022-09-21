@@ -4,20 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Note holding the version of the provider&#39;s builder and the signature of
-  * the provenance message in linked BuildDetails.
-  */
 trait SchemaBuildType extends StObject {
   
   /**
     * Version of the builder which produced this Note.
     */
-  var builderVersion: js.UndefOr[String] = js.undefined
+  var builderVersion: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Signature of the build in Occurrences pointing to the Note containing
-    * this `BuilderDetails`.
+    * Signature of the build in Occurrences pointing to the Note containing this `BuilderDetails`.
     */
   var signature: js.UndefOr[SchemaBuildSignature] = js.undefined
 }
@@ -31,6 +26,8 @@ object SchemaBuildType {
   extension [Self <: SchemaBuildType](x: Self) {
     
     inline def setBuilderVersion(value: String): Self = StObject.set(x, "builderVersion", value.asInstanceOf[js.Any])
+    
+    inline def setBuilderVersionNull: Self = StObject.set(x, "builderVersion", null)
     
     inline def setBuilderVersionUndefined: Self = StObject.set(x, "builderVersion", js.undefined)
     

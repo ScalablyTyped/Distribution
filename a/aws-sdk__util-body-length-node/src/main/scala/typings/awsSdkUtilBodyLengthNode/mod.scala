@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def calculateBodyLength(body: js.Any): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateBodyLength")(body.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  inline def calculateBodyLength(body: Any): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateBodyLength")(body.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
 }

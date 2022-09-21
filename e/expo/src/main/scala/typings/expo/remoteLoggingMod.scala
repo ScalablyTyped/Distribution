@@ -1,6 +1,6 @@
 package typings.expo
 
-import typings.expo.anon.Response
+import typings.expo.anon.Error
 import typings.fbemitter.mod.EventSubscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,14 +28,14 @@ object remoteLoggingMod {
     def enqueueRemoteLogAsync: js.Function3[
         /* level */ LogLevel, 
         /* additionalFields */ LogEntryFields, 
-        /* data */ js.Array[js.Any], 
+        /* data */ js.Array[Any], 
         js.Promise[Unit]
       ] = js.native
     inline def enqueueRemoteLogAsync_=(
       x: js.Function3[
           /* level */ LogLevel, 
           /* additionalFields */ LogEntryFields, 
-          /* data */ js.Array[js.Any], 
+          /* data */ js.Array[Any], 
           js.Promise[Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enqueueRemoteLogAsync")(x.asInstanceOf[js.Any])
@@ -115,5 +115,5 @@ object remoteLoggingMod {
     inline def warn: typings.expo.expoStrings.warn = "warn".asInstanceOf[typings.expo.expoStrings.warn]
   }
   
-  type TransportErrorListener = js.Function1[/* event */ Response, Unit]
+  type TransportErrorListener = js.Function1[/* event */ Error, Unit]
 }

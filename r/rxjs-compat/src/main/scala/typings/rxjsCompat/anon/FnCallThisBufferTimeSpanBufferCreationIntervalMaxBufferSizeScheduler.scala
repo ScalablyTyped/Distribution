@@ -7,46 +7,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisBufferTimeSpanBufferCreationIntervalMaxBufferSizeScheduler extends StObject {
   
-  def apply[T](bufferTimeSpan: Double): js.Any = js.native
-  def apply[T](bufferTimeSpan: Double, bufferCreationInterval: Double): js.Any = js.native
-  def apply[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): js.Any = js.native
+  def apply[T](bufferTimeSpan: Double): Any = js.native
+  def apply[T](bufferTimeSpan: Double, bufferCreationInterval: Double): Any = js.native
+  def apply[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): Any = js.native
   def apply[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Double,
     maxBufferSize: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
   def apply[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  def apply[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
+  def apply[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): Any = js.native
   def apply[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Null,
     maxBufferSize: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
   def apply[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Null,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  def apply[T](bufferTimeSpan: Double, bufferCreationInterval: Unit, maxBufferSize: Double): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
+  def apply[T](bufferTimeSpan: Double, bufferCreationInterval: Unit, maxBufferSize: Double): Any = js.native
   def apply[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Unit,
     maxBufferSize: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
   def apply[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Unit,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
   def apply[T](
     bufferTimeSpan: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
 }

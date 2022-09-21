@@ -12,16 +12,16 @@ object angularModal {
   @js.native
   trait AngularModal extends StObject {
     
-    def activate(): js.Any = js.native
-    def activate(locals: js.Object): js.Any = js.native
-    def activate[T](locals: T): js.Any = js.native
+    def activate(): Any = js.native
+    def activate(locals: js.Object): Any = js.native
+    def activate[T](locals: T): Any = js.native
     
     def active(): Boolean = js.native
     
-    def deactivate(): js.Any = js.native
+    def deactivate(): Any = js.native
   }
   
-  type AngularModalControllerDefinition = (Instantiable1[/* args (repeated) */ js.Any, js.Any]) | js.Function | String
+  type AngularModalControllerDefinition = (Instantiable1[/* args (repeated) */ Any, Any]) | js.Function | String
   
   type AngularModalFactory = js.Function1[
     /* settings */ AngularModalSettingsWithTemplate | AngularModalSettingsWithTemplateUrl, 
@@ -29,7 +29,7 @@ object angularModal {
   ]
   
   // Possible arguments to IControllerService
-  type AngularModalJQuerySelector = String | Element | (js.Array[js.Any | Element]) | JQuery | js.Function | js.Object
+  type AngularModalJQuerySelector = String | Element | (js.Array[Any | Element]) | JQuery | js.Function | js.Object
   
   // Possible arguments to IAugmentedJQueryStatic
   trait AngularModalSettings extends StObject {
@@ -53,7 +53,7 @@ object angularModal {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setContainerVarargs(value: (js.Any | Element)*): Self = StObject.set(x, "container", js.Array(value :_*))
+      inline def setContainerVarargs(value: (Any | Element)*): Self = StObject.set(x, "container", js.Array(value*))
       
       inline def setController(value: AngularModalControllerDefinition): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
@@ -69,18 +69,18 @@ object angularModal {
     extends StObject
        with AngularModalSettings {
     
-    var template: js.Any
+    var template: Any
   }
   object AngularModalSettingsWithTemplate {
     
-    inline def apply(template: js.Any): AngularModalSettingsWithTemplate = {
+    inline def apply(template: Any): AngularModalSettingsWithTemplate = {
       val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
       __obj.asInstanceOf[AngularModalSettingsWithTemplate]
     }
     
     extension [Self <: AngularModalSettingsWithTemplate](x: Self) {
       
-      inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     }
   }
   

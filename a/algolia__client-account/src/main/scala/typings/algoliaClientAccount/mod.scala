@@ -17,7 +17,7 @@ object mod {
   inline def accountCopyIndex(source: SearchIndex, destination: SearchIndex): WaitablePromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("accountCopyIndex")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[WaitablePromise[Unit]]
   inline def accountCopyIndex(source: SearchIndex, destination: SearchIndex, requestOptions: RequestOptions): WaitablePromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("accountCopyIndex")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[WaitablePromise[Unit]]
   
-  inline def createDestinationIndiceExistsError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("createDestinationIndiceExistsError")().asInstanceOf[Error]
+  inline def createDestinationIndiceExistsError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("createDestinationIndiceExistsError")().asInstanceOf[js.Error]
   
   inline def createIndicesInSameAppError(appId: String): IndicesInSameAppError = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesInSameAppError")(appId.asInstanceOf[js.Any]).asInstanceOf[IndicesInSameAppError]
   

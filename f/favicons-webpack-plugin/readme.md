@@ -1,7 +1,7 @@
 
 # Scala.js typings for favicons-webpack-plugin
 
-Typings are for version 4.2.0
+Typings are for version 5.0.2
 
 ## Library description:
 Let webpack generate all your favicons and icons for you
@@ -10,10 +10,10 @@ Let webpack generate all your favicons and icons for you
 | ------------------ | :-------------: |
 | Full name          | favicons-webpack-plugin |
 | Keywords           | webpack, plugin, html-webpack-plugin, webapp, pwa, manifest, favicon, icon, png, svg |
-| # releases         | 25 |
-| # dependents       | 83 |
-| # downloads        | 3342998 |
-| # stars            | 16 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 489542.3333333333 |
+| # stars            | 1171.0 |
 
 ## Links
 - [Homepage](https://github.com/jantimon/favicons-webpack-plugin)

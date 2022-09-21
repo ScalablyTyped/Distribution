@@ -21,7 +21,7 @@ object ICoreDispatcher {
   
   inline def apply(
     hasThreadAccess: Boolean,
-    onacceleratorkeyactivated: js.Any,
+    onacceleratorkeyactivated: Any,
     processEvents: CoreProcessEventsOption => Unit,
     runAsync: (CoreDispatcherPriority, DispatchedHandler) => IAsyncAction,
     runIdleAsync: IdleDispatchedHandler => IAsyncAction

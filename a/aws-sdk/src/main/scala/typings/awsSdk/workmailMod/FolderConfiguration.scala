@@ -17,7 +17,7 @@ trait FolderConfiguration extends StObject {
   var Name: FolderName
   
   /**
-    * The period of time at which the folder configuration action is applied.
+    * The number of days for which the folder-configuration action applies.
     */
   var Period: js.UndefOr[RetentionPeriod] = js.undefined
 }

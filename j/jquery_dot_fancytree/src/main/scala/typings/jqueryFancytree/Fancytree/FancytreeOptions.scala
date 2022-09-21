@@ -26,7 +26,7 @@ trait FancytreeOptions
   extends StObject
      with FancytreeEvents
      with /** Options for misc extensions - see docs for typings */
-/* extension */ StringDictionary[js.Any] {
+/* extension */ StringDictionary[Any] {
   
   /** Make sure that the active node is always visible, i.e. its parents are expanded (default: true). */
   var activeVisible: js.UndefOr[Boolean] = js.undefined
@@ -113,7 +113,7 @@ trait FancytreeOptions
   var selectMode: js.UndefOr[FancytreeSelectMode] = js.undefined
   
   /** Used to Initialize the tree. */
-  var source: js.UndefOr[js.Array[js.Any] | js.Any] = js.undefined
+  var source: js.UndefOr[js.Array[Any] | Any] = js.undefined
   
   /** Translation table */
   var strings: js.UndefOr[TranslationTable] = js.undefined
@@ -216,7 +216,7 @@ object FancytreeOptions {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: (dnd5 | filter | table | String)*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: (dnd5 | filter | table | String)*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -272,11 +272,11 @@ object FancytreeOptions {
     
     inline def setSelectModeUndefined: Self = StObject.set(x, "selectMode", js.undefined)
     
-    inline def setSource(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Array[Any] | Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: Any*): Self = StObject.set(x, "source", js.Array(value*))
     
     inline def setStrings(value: TranslationTable): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     

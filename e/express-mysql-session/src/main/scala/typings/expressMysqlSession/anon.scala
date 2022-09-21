@@ -1,9 +1,8 @@
 package typings.expressMysqlSession
 
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.mod.SessionOptions
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +12,20 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def apply(options: SessionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def apply(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def apply(options: SessionOptions): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
   }
   
   /* Inlined std.Partial<express-mysql-session.express-mysql-session.ColumnNames> */

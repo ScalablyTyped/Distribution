@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("undertaker-registry", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with UndertakerRegistry {
     
@@ -29,7 +29,7 @@ object mod {
       * @param taker - Instance of undertaker.
       */
     /* CompleteClass */
-    override def init(taker: js.Any): Unit = js.native
+    override def init(taker: Any): Unit = js.native
     
     /**
       * Adds a task to the registry.
@@ -48,7 +48,7 @@ object mod {
       * Custom registries can override this when when inheriting from this default registry.
       */
     /* CompleteClass */
-    override def tasks(): StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+    override def tasks(): StringDictionary[js.Function1[/* repeated */ Any, Any]] = js.native
   }
   
   trait UndertakerRegistry extends StObject {
@@ -67,7 +67,7 @@ object mod {
       * Custom registries can override this method when inheriting from this default registry.
       * @param taker - Instance of undertaker.
       */
-    def init(taker: js.Any): Unit
+    def init(taker: Any): Unit
     
     /**
       * Adds a task to the registry.
@@ -84,15 +84,15 @@ object mod {
       * Necessary to override if the get method is overridden for custom task storage.
       * Custom registries can override this when when inheriting from this default registry.
       */
-    def tasks(): StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
+    def tasks(): StringDictionary[js.Function1[/* repeated */ Any, Any]]
   }
   object UndertakerRegistry {
     
     inline def apply(
-      get: String => js.Any,
-      init: js.Any => Unit,
-      set: (String, js.Any) => js.Any,
-      tasks: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
+      get: String => Any,
+      init: Any => Unit,
+      set: (String, Any) => Any,
+      tasks: () => StringDictionary[js.Function1[/* repeated */ Any, Any]]
     ): UndertakerRegistry = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), init = js.Any.fromFunction1(init), set = js.Any.fromFunction2(set), tasks = js.Any.fromFunction0(tasks))
       __obj.asInstanceOf[UndertakerRegistry]
@@ -100,13 +100,13 @@ object mod {
     
     extension [Self <: UndertakerRegistry](x: Self) {
       
-      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setInit(value: js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      inline def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, Any) => Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      inline def setTasks(value: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "tasks", js.Any.fromFunction0(value))
+      inline def setTasks(value: () => StringDictionary[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "tasks", js.Any.fromFunction0(value))
     }
   }
 }

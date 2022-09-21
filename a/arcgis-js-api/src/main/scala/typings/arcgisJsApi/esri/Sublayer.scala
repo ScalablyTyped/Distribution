@@ -29,11 +29,11 @@ trait Sublayer
   def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
   
   /**
-    * Creates a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) object with default values representing the layer's state, including filters (definition expression) on the layer's features.
+    * Creates a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) object with default values representing the layer's state, including filters (definition expression) on the layer's features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#createQuery)
     */
-  def createQuery(): Query = js.native
+  def createQuery(): Query_ = js.native
   
   /**
     * A SQL where clause used to filter features in the image.
@@ -55,6 +55,13 @@ trait Sublayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#fieldsIndex)
     */
   val fieldsIndex: FieldsIndex = js.native
+  
+  /**
+    * If a map image layer contains a sublayer which is meant to be floor-aware, then that sublayer must have a floorInfo property, containing a [LayerFloorInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LayerFloorInfo.html) object which has a string property to represent the floorField.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#floorInfo)
+    */
+  var floorInfo: LayerFloorInfo = js.native
   
   /**
     * The full extent of the Sublayer.
@@ -95,6 +102,8 @@ trait Sublayer
   /**
     * Indicates if labels for the sublayer will be visible in the view.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#labelsVisible)
     */
   var labelsVisible: Boolean = js.native
@@ -109,12 +118,16 @@ trait Sublayer
   /**
     * Indicates whether the layer will be included in the legend.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#legendEnabled)
     */
   var legendEnabled: Boolean = js.native
   
   /**
     * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+    *
+    * @default show
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#listMode)
     */
@@ -151,6 +164,8 @@ trait Sublayer
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#popupEnabled)
     */
   var popupEnabled: Boolean = js.native
@@ -163,16 +178,16 @@ trait Sublayer
   var popupTemplate: PopupTemplate = js.native
   
   /**
-    * Executes a [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-QueryTask.html) against features in the sublayer.
+    * Executes a [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query.html) against features in the sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#queryFeatures)
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: Unit, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: scala.Unit, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: Query, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query_): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query_, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   
   /**
     * The renderer to apply to the sublayer.
@@ -193,7 +208,7 @@ trait Sublayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#sourceJSON)
     */
-  var sourceJSON: js.Any = js.native
+  var sourceJSON: Any = js.native
   
   /**
     * If a sublayer contains sublayers, this property is a [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) objects belonging to the given sublayer with sublayers.
@@ -208,13 +223,6 @@ trait Sublayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#title)
     */
   var title: String = js.native
-  
-  /**
-    * Serialize the sublayer for usage in /export.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#toExportImageJSON)
-    */
-  def toExportImageJSON(): Unit = js.native
   
   /**
     * The name of the field holding the type ID or subtypes for the features.

@@ -28,7 +28,7 @@ object BuildBazelRemoteExecutionV2Tree {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: BuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: BuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setRoot(value: BuildBazelRemoteExecutionV2Directory): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

@@ -8,10 +8,13 @@ trait CSSImportRule
   extends StObject
      with CSSRule {
   
+  /* standard dom */
   val href: java.lang.String
   
+  /* standard dom */
   val media: MediaList
   
+  /* standard dom */
   val styleSheet: CSSStyleSheet
 }
 object CSSImportRule {

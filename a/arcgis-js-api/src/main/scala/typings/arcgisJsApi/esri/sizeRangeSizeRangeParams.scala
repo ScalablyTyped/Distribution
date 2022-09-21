@@ -16,7 +16,7 @@ trait sizeRangeSizeRangeParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-sizeRange.html#sizeRange)
     */
-  var layer: FeatureLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | OGCFeatureLayer | PointCloudLayer | GeoJSONLayer | WFSLayer
   
   /**
     * Allows for cancelable requests.
@@ -37,7 +37,7 @@ object sizeRangeSizeRangeParams {
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | OGCFeatureLayer | PointCloudLayer | GeoJSONLayer | WFSLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     view: MapView
   ): sizeRangeSizeRangeParams = {
@@ -47,7 +47,9 @@ object sizeRangeSizeRangeParams {
   
   extension [Self <: sizeRangeSizeRangeParams](x: Self) {
     
-    inline def setLayer(value: FeatureLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(
+      value: FeatureLayer | SceneLayer | CSVLayer | OGCFeatureLayer | PointCloudLayer | GeoJSONLayer | WFSLayer
+    ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

@@ -8,11 +8,11 @@ trait TreeListEditable extends StObject {
   
   var mode: js.UndefOr[String] = js.undefined
   
-  var move: js.UndefOr[Boolean] = js.undefined
+  var move: js.UndefOr[Boolean | TreeListEditableMove] = js.undefined
   
   var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.undefined
+  var window: js.UndefOr[Any] = js.undefined
 }
 object TreeListEditable {
   
@@ -27,7 +27,7 @@ object TreeListEditable {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    inline def setMove(value: Boolean | TreeListEditableMove): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
@@ -35,7 +35,7 @@ object TreeListEditable {
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }

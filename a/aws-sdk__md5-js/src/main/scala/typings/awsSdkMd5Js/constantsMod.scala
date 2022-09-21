@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object constantsMod {
   
-  @JSImport("@aws-sdk/md5-js/dist/cjs/constants", "BLOCK_SIZE")
+  @JSImport("@aws-sdk/md5-js/dist-types/constants", "BLOCK_SIZE")
   @js.native
   val BLOCK_SIZE: /* 64 */ Double = js.native
   
-  @JSImport("@aws-sdk/md5-js/dist/cjs/constants", "DIGEST_LENGTH")
+  @JSImport("@aws-sdk/md5-js/dist-types/constants", "DIGEST_LENGTH")
   @js.native
   val DIGEST_LENGTH: /* 16 */ Double = js.native
   
-  @JSImport("@aws-sdk/md5-js/dist/cjs/constants", "INIT")
+  @JSImport("@aws-sdk/md5-js/dist-types/constants", "INIT")
   @js.native
   val INIT: js.Array[Double] = js.native
 }

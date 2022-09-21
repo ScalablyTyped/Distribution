@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Maths/index", "Axis")
 @js.native
-class Axis ()
+open class Axis ()
   extends typings.babylonjs.mathMod.Axis
 /* static members */
 object Axis {

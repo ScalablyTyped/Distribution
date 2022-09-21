@@ -19,4 +19,9 @@ object MediaType extends StObject {
   sealed trait SOFTPHONE
     extends StObject
        with MediaType
+  
+  @js.native
+  sealed trait TASK
+    extends StObject
+       with MediaType
 }

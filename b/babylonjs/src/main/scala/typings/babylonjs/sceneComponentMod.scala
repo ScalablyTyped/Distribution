@@ -4,8 +4,8 @@ import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.abstractSceneMod.AbstractScene
 import typings.babylonjs.anon.Action
 import typings.babylonjs.cameraMod.Camera
+import typings.babylonjs.deviceInputEventsMod.IPointerEvent
 import typings.babylonjs.effectMod.Effect
-import typings.babylonjs.meshMod.InstancesBatch
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.pickingInfoMod.PickingInfo
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
@@ -15,7 +15,6 @@ import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Array
 import typings.std.HTMLElement
-import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object sceneComponentMod {
   
   @JSImport("babylonjs/sceneComponent", "SceneComponentConstants")
   @js.native
-  class SceneComponentConstants () extends StObject
+  open class SceneComponentConstants () extends StObject
   /* static members */
   object SceneComponentConstants {
     
@@ -35,6 +34,10 @@ object sceneComponentMod {
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.NAME_BOUNDINGBOXRENDERER")
     @js.native
     val NAME_BOUNDINGBOXRENDERER: String = js.native
+    
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.NAME_DEPTHPEELINGRENDERER")
+    @js.native
+    val NAME_DEPTHPEELINGRENDERER: String = js.native
     
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.NAME_DEPTHRENDERER")
     @js.native
@@ -144,6 +147,10 @@ object sceneComponentMod {
     @js.native
     val STEP_AFTERRENDERTARGETDRAW_LAYER: Double = js.native
     
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERRENDERTARGETDRAW_PREPASS")
+    @js.native
+    val STEP_AFTERRENDERTARGETDRAW_PREPASS: Double = js.native
+    
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERRENDER_AUDIO")
     @js.native
     val STEP_AFTERRENDER_AUDIO: Double = js.native
@@ -168,9 +175,9 @@ object sceneComponentMod {
     @js.native
     val STEP_BEFORECAMERAUPDATE_SIMPLIFICATIONQUEUE: Double = js.native
     
-    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_BEFORECLEARSTAGE_PREPASS")
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_BEFORECLEAR_PREPASS")
     @js.native
-    val STEP_BEFORECLEARSTAGE_PREPASS: Double = js.native
+    val STEP_BEFORECLEAR_PREPASS: Double = js.native
     
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_BEFORECLEAR_PROCEDURALTEXTURE")
     @js.native
@@ -188,9 +195,17 @@ object sceneComponentMod {
     @js.native
     val STEP_BEFORERENDERINGMESH_PREPASS: Double = js.native
     
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_BEFORERENDERTARGETCLEAR_PREPASS")
+    @js.native
+    val STEP_BEFORERENDERTARGETCLEAR_PREPASS: Double = js.native
+    
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_BEFORERENDERTARGETDRAW_LAYER")
     @js.native
     val STEP_BEFORERENDERTARGETDRAW_LAYER: Double = js.native
+    
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_BEFORERENDERTARGETDRAW_PREPASS")
+    @js.native
+    val STEP_BEFORERENDERTARGETDRAW_PREPASS: Double = js.native
     
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_CAMERADRAWRENDERTARGET_EFFECTLAYER")
     @js.native
@@ -247,7 +262,7 @@ object sceneComponentMod {
     * Hide ctor from the rest of the world.
     * @param items The items to add.
     */
-  /* private */ class Stage[T /* <: js.Function */] ()
+  /* private */ open class Stage[T /* <: js.Function */] ()
     extends StObject
        with Array[Action[T]] {
     
@@ -356,7 +371,7 @@ object sceneComponentMod {
       * Serializes the component data to the specified json object
       * @param serializationObject The object to serialize to
       */
-    def serialize(serializationObject: js.Any): Unit = js.native
+    def serialize(serializationObject: Any): Unit = js.native
   }
   
   type MeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* hardwareInstancedRendering */ Boolean, Boolean]
@@ -366,21 +381,27 @@ object sceneComponentMod {
     /* unTranslatedPointerY */ Double, 
     /* pickResult */ Nullable[PickingInfo], 
     /* isMeshPicked */ Boolean, 
-    /* element */ HTMLElement, 
+    /* element */ Nullable[HTMLElement], 
     Nullable[PickingInfo]
   ]
   
-  type PointerUpDownStageAction = js.Function4[
+  type PointerUpDownStageAction = js.Function5[
     /* unTranslatedPointerX */ Double, 
     /* unTranslatedPointerY */ Double, 
     /* pickResult */ Nullable[PickingInfo], 
-    /* evt */ PointerEvent, 
+    /* evt */ IPointerEvent, 
+    /* doubleClick */ Boolean, 
     Nullable[PickingInfo]
   ]
   
   type PreActiveMeshStageAction = js.Function1[/* mesh */ AbstractMesh, Unit]
   
-  type RenderTargetStageAction = js.Function1[/* renderTarget */ RenderTargetTexture, Unit]
+  type RenderTargetStageAction = js.Function3[
+    /* renderTarget */ RenderTargetTexture, 
+    /* faceIndex */ js.UndefOr[Double], 
+    /* layer */ js.UndefOr[Double], 
+    Unit
+  ]
   
   type RenderTargetsStageAction = js.Function1[/* renderTargets */ SmartArrayNoDuplicate[RenderTargetTexture], Unit]
   
@@ -389,7 +410,7 @@ object sceneComponentMod {
   type RenderingMeshStageAction = js.Function4[
     /* mesh */ Mesh, 
     /* subMesh */ SubMesh, 
-    /* batch */ InstancesBatch, 
+    /* batch */ Any, 
     /* effect */ Nullable[Effect], 
     Unit
   ]

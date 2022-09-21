@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DBInstance extends StObject {
   
   /**
-    * Indicates that minor version patches are applied automatically.
+    * Does not apply. This parameter does not apply to Amazon DocumentDB. Amazon DocumentDB does not perform minor version upgrades regardless of the value set.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
@@ -25,6 +25,11 @@ trait DBInstance extends StObject {
     * The identifier of the CA certificate for this DB instance.
     */
   var CACertificateIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A value that indicates whether to copy tags from the DB instance to snapshots of the DB instance. By default, tags are not copied.
+    */
+  var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * Contains the name of the cluster that the instance is a member of if the instance is a member of a cluster.
@@ -57,12 +62,12 @@ trait DBInstance extends StObject {
   var DBSubnetGroup: js.UndefOr[typings.awsSdk.docdbMod.DBSubnetGroup] = js.undefined
   
   /**
-    * The AWS Region-unique, immutable identifier for the instance. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the instance is accessed.
+    * The Amazon Web Services Region-unique, immutable identifier for the instance. This identifier is found in CloudTrail log entries whenever the KMS key for the instance is accessed.
     */
   var DbiResourceId: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of log types that this instance is configured to export to Amazon CloudWatch Logs.
+    * A list of log types that this instance is configured to export to CloudWatch Logs.
     */
   var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   
@@ -84,17 +89,17 @@ trait DBInstance extends StObject {
   /**
     * Provides the date and time that the instance was created.
     */
-  var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
+  var InstanceCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  If StorageEncrypted is true, the AWS KMS key identifier for the encrypted instance. 
+    *  If StorageEncrypted is true, the KMS key identifier for the encrypted instance. 
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the latest time to which a database can be restored with point-in-time restore.
     */
-  var LatestRestorableTime: js.UndefOr[TStamp] = js.undefined
+  var LatestRestorableTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies that changes to the instance are pending. This element is included only when changes are pending. Specific changes are identified by subelements.
@@ -161,6 +166,10 @@ object DBInstance {
     
     inline def setCACertificateIdentifierUndefined: Self = StObject.set(x, "CACertificateIdentifier", js.undefined)
     
+    inline def setCopyTagsToSnapshot(value: BooleanOptional): Self = StObject.set(x, "CopyTagsToSnapshot", value.asInstanceOf[js.Any])
+    
+    inline def setCopyTagsToSnapshotUndefined: Self = StObject.set(x, "CopyTagsToSnapshot", js.undefined)
+    
     inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
     inline def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
@@ -193,7 +202,7 @@ object DBInstance {
     
     inline def setEnabledCloudwatchLogsExportsUndefined: Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.undefined)
     
-    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value :_*))
+    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value*))
     
     inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
@@ -207,7 +216,7 @@ object DBInstance {
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
-    inline def setInstanceCreateTime(value: TStamp): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
+    inline def setInstanceCreateTime(value: js.Date): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
     
     inline def setInstanceCreateTimeUndefined: Self = StObject.set(x, "InstanceCreateTime", js.undefined)
     
@@ -215,7 +224,7 @@ object DBInstance {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    inline def setLatestRestorableTime(value: TStamp): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setLatestRestorableTime(value: js.Date): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setLatestRestorableTimeUndefined: Self = StObject.set(x, "LatestRestorableTime", js.undefined)
     
@@ -243,7 +252,7 @@ object DBInstance {
     
     inline def setStatusInfosUndefined: Self = StObject.set(x, "StatusInfos", js.undefined)
     
-    inline def setStatusInfosVarargs(value: DBInstanceStatusInfo*): Self = StObject.set(x, "StatusInfos", js.Array(value :_*))
+    inline def setStatusInfosVarargs(value: DBInstanceStatusInfo*): Self = StObject.set(x, "StatusInfos", js.Array(value*))
     
     inline def setStorageEncrypted(value: Boolean): Self = StObject.set(x, "StorageEncrypted", value.asInstanceOf[js.Any])
     
@@ -253,6 +262,6 @@ object DBInstance {
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

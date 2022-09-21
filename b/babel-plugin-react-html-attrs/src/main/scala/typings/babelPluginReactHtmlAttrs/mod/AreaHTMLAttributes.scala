@@ -12,7 +12,7 @@ trait AreaHTMLAttributes[T]
   
   var coords: js.UndefOr[String] = js.undefined
   
-  var download: js.UndefOr[js.Any] = js.undefined
+  var download: js.UndefOr[Any] = js.undefined
   
   var href: js.UndefOr[String] = js.undefined
   
@@ -45,7 +45,7 @@ object AreaHTMLAttributes {
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     

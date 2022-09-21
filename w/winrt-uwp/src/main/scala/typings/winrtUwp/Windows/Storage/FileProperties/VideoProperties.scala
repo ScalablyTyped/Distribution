@@ -52,7 +52,7 @@ trait VideoProperties extends StObject {
     * @param propertiesToRetrieve A collection that contains the names of the properties to retrieve.
     * @return When this method completes successfully, it returns a collection (type IMap ) that contains the specified properties and values as key-value pairs.
     */
-  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMap[js.Any, js.Any]] = js.native
+  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMap[Any, Any]] = js.native
   
   /**
     * Saves all properties associated with the item.
@@ -64,7 +64,7 @@ trait VideoProperties extends StObject {
     * @param propertiesToSave A collection that contains the names and values of the properties to save as key-value pairs (type IKeyValuePair ).
     * @return No object or value is returned when this method completes.
     */
-  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction = js.native
+  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncAction = js.native
   
   /** Gets or sets the subtitle of the video. */
   var subtitle: String = js.native

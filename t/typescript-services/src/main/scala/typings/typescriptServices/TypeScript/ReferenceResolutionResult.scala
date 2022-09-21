@@ -27,11 +27,11 @@ object ReferenceResolutionResult {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setResolvedFiles(value: js.Array[IResolvedFile]): Self = StObject.set(x, "resolvedFiles", value.asInstanceOf[js.Any])
     
-    inline def setResolvedFilesVarargs(value: IResolvedFile*): Self = StObject.set(x, "resolvedFiles", js.Array(value :_*))
+    inline def setResolvedFilesVarargs(value: IResolvedFile*): Self = StObject.set(x, "resolvedFiles", js.Array(value*))
     
     inline def setSeenNoDefaultLibTag(value: Boolean): Self = StObject.set(x, "seenNoDefaultLibTag", value.asInstanceOf[js.Any])
   }

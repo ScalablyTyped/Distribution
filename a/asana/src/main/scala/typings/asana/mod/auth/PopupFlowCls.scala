@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("asana", "auth.PopupFlow")
 @js.native
-class PopupFlowCls protected ()
+open class PopupFlowCls protected ()
   extends StObject
      with PopupFlow {
   /**
@@ -16,7 +16,7 @@ class PopupFlowCls protected ()
     * @param {Object} options See `BaseBrowserFlow` for options.
     * @constructor
     */
-  def this(options: js.Any) = this()
+  def this(options: Any) = this()
   
   /**
     * @param popupWidth
@@ -82,5 +82,5 @@ class PopupFlowCls protected ()
     * @return
     */
   /* CompleteClass */
-  override def startAuthorization(authUrl: String, state: String): js.Any = js.native
+  override def startAuthorization(authUrl: String, state: String): Any = js.native
 }

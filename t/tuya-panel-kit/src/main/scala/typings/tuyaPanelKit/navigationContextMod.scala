@@ -18,20 +18,20 @@ object navigationContextMod extends Shortcut {
   @js.native
   val default: Context[
     js.UndefOr[
-      NavigationProp[Record[String, js.UndefOr[js.Object]], String, js.Any, js.Any, js.Object]
+      NavigationProp[Record[String, js.UndefOr[js.Object]], String, Any, Any, js.Object]
     ]
   ] = js.native
   
   type _To = Context[
     js.UndefOr[
-      NavigationProp[Record[String, js.UndefOr[js.Object]], String, js.Any, js.Any, js.Object]
+      NavigationProp[Record[String, js.UndefOr[js.Object]], String, Any, Any, js.Object]
     ]
   ]
   
   /* This means you don't have to write `default`, but can instead just say `navigationContextMod.foo` */
   override def _to: Context[
     js.UndefOr[
-      NavigationProp[Record[String, js.UndefOr[js.Object]], String, js.Any, js.Any, js.Object]
+      NavigationProp[Record[String, js.UndefOr[js.Object]], String, Any, Any, js.Object]
     ]
   ] = default
 }

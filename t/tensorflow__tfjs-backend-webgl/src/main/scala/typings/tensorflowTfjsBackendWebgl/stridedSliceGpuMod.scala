@@ -9,7 +9,7 @@ object stridedSliceGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/strided_slice_gpu", "StridedSliceProgram")
   @js.native
-  class StridedSliceProgram protected ()
+  open class StridedSliceProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(begin: js.Array[Double], strides: js.Array[Double], size: js.Array[Double]) = this()

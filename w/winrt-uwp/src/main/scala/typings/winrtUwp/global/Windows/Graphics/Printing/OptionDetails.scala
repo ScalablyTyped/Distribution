@@ -23,7 +23,7 @@ object OptionDetails {
     
     /** Gets the list of items for the print binding options. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID of the print binding option. */
     /* CompleteClass */
@@ -43,11 +43,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the enumerated value of the print binding option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents the list of print collation options. */
@@ -63,7 +63,7 @@ object OptionDetails {
     
     /** Gets the list of items for the print collation option. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID of the print collation option. */
     /* CompleteClass */
@@ -83,11 +83,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the enumerated value of the print collation option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents the list of print color mode options. */
@@ -103,7 +103,7 @@ object OptionDetails {
     
     /** Gets the list of items for the print color mode option. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID for the print color mode option. */
     /* CompleteClass */
@@ -123,11 +123,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the enumerated value of the print color mode option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents the option for the number of printed copies. */
@@ -167,11 +167,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the number of copies for a print task. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Allows apps to add a collection of enumerable options to the app print experience. */
@@ -215,7 +215,7 @@ object OptionDetails {
     
     /** Gets an item from the list of custom print tasks. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID of a custom print task option. */
     /* CompleteClass */
@@ -235,11 +235,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the value of the list of custom print tasks. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents a custom print task option. */
@@ -279,11 +279,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the value of a custom print task option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents the list of print duplex options. */
@@ -299,7 +299,7 @@ object OptionDetails {
     
     /** Gets the list of print duplex options. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID of the print duplex option. */
     /* CompleteClass */
@@ -319,11 +319,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the enumerated vlaue of the print duplex option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents the list of punch hole options. */
@@ -339,7 +339,7 @@ object OptionDetails {
     
     /** Gets the list of items for the hole punch option. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID for the hole punch option. */
     /* CompleteClass */
@@ -359,11 +359,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the enumerated value of the hole punch option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents the list of media size options. */
@@ -379,7 +379,7 @@ object OptionDetails {
     
     /** Gets the list of print media size option items. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID for the print media size option. */
     /* CompleteClass */
@@ -399,11 +399,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the number of copies for a print task. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents the list of print media type options. */
@@ -419,7 +419,7 @@ object OptionDetails {
     
     /** Gets the list of items for the print media type options. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID for the print media type option. */
     /* CompleteClass */
@@ -439,11 +439,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the enumerated value of the print media type option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Specifies the print task option states. */
@@ -495,7 +495,7 @@ object OptionDetails {
     
     /** Gets the list of items for the print media type options. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID for the print orientation option. */
     /* CompleteClass */
@@ -515,11 +515,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the enumerated value of the print media type option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents the list of print quality options. */
@@ -535,7 +535,7 @@ object OptionDetails {
     
     /** Gets the list of items for the print quality options. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID for the print quality option. */
     /* CompleteClass */
@@ -555,11 +555,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the enumerated value of the print quality option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Represents a list of the stapling options. */
@@ -575,7 +575,7 @@ object OptionDetails {
     
     /** Gets the list of items for the stapling options. */
     /* CompleteClass */
-    var items: IVectorView[js.Any] = js.native
+    var items: IVectorView[Any] = js.native
     
     /** Gets the ID for the stapling option. */
     /* CompleteClass */
@@ -595,11 +595,11 @@ object OptionDetails {
       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
       */
     /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
+    override def trySetValue(value: Any): Boolean = js.native
     
     /** Gets or sets the enumerated value of the stapling option. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Called when a print task option has changed. */
@@ -611,7 +611,7 @@ object OptionDetails {
     
     /** Gets the ID of the print task option that changed. */
     /* CompleteClass */
-    var optionId: js.Any = js.native
+    var optionId: Any = js.native
   }
   
   /** A collection of events, methods and properties for advanced print tasks. */

@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("kafka-node", "TopicsNotExistError")
 @js.native
-class TopicsNotExistError ()
+open class TopicsNotExistError ()
   extends StObject
      with Error {
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   

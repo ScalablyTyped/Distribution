@@ -34,7 +34,7 @@ object CacheParameterGroupStatus {
     
     inline def setCacheNodeIdsToRebootUndefined: Self = StObject.set(x, "CacheNodeIdsToReboot", js.undefined)
     
-    inline def setCacheNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "CacheNodeIdsToReboot", js.Array(value :_*))
+    inline def setCacheNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "CacheNodeIdsToReboot", js.Array(value*))
     
     inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     

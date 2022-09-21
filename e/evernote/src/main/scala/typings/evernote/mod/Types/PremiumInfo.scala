@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.PremiumInfo")
 @js.native
-class PremiumInfo () extends StObject {
+open class PremiumInfo () extends StObject {
   def this(args: CanPurchaseUploadAllowance) = this()
   
   var canPurchaseUploadAllowance: js.UndefOr[Boolean] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait videoConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -15,7 +15,7 @@ trait videoConfig extends StObject {
   
   var controls: js.UndefOr[Boolean] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -37,7 +37,7 @@ trait videoConfig extends StObject {
   
   var minWidth: js.UndefOr[Double] = js.undefined
   
-  var src: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var src: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ object videoConfig {
   
   extension [Self <: videoConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -68,7 +68,7 @@ object videoConfig {
     
     inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -112,11 +112,11 @@ object videoConfig {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setSrc(value: String | js.Array[js.Any]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String | js.Array[Any]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    inline def setSrcVarargs(value: js.Any*): Self = StObject.set(x, "src", js.Array(value :_*))
+    inline def setSrcVarargs(value: Any*): Self = StObject.set(x, "src", js.Array(value*))
     
     inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

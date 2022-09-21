@@ -11,6 +11,7 @@ trait FunctionExpression
      with FunctionLikeDeclarationBase
      with FunctionLikeDeclaration
      with HasJSDoc
+     with HasModifiers
      with SignatureDeclaration {
   
   @JSName("body")
@@ -18,6 +19,9 @@ trait FunctionExpression
   
   @JSName("kind")
   val kind_FunctionExpression: typings.typescript.mod.SyntaxKind.FunctionExpression = js.native
+  
+  @JSName("modifiers")
+  val modifiers_FunctionExpression: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_FunctionExpression: js.UndefOr[Identifier] = js.native

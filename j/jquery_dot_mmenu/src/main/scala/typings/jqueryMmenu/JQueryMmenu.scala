@@ -21,7 +21,7 @@ object JQueryMmenu {
       * @param methodName
       * @param callback
       */
-    def bind(methodName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
+    def bind(methodName: String, callback: js.Function1[/* repeated */ Any, Unit]): Any = js.native
     /** @see closeAllPanels() */
     @JSName("bind")
     def bind_closeAllPanels(methodName: closeAllPanels, callback: js.Function0[Unit]): JQuery = js.native
@@ -271,7 +271,7 @@ object JQueryMmenu {
       * the clicked link is prevented, false otherwise.
       * Default: null
       */
-    var close: js.UndefOr[Boolean | js.Any] = js.undefined
+    var close: js.UndefOr[Boolean | Any] = js.undefined
     
     /**
       * Whether or not to prevent the default behavior for the clicked link.
@@ -279,13 +279,13 @@ object JQueryMmenu {
       * or starts with a hash (#), false otherwise.
       * Default: null
       */
-    var preventDefault: js.UndefOr[Boolean | js.Any] = js.undefined
+    var preventDefault: js.UndefOr[Boolean | Any] = js.undefined
     
     /**
       * Whether or not the clicked link should be visibly "selected".
       * Default: true
       */
-    var setSelected: js.UndefOr[Boolean | js.Any] = js.undefined
+    var setSelected: js.UndefOr[Boolean | Any] = js.undefined
   }
   object OnclickOptions {
     
@@ -296,15 +296,15 @@ object JQueryMmenu {
     
     extension [Self <: OnclickOptions](x: Self) {
       
-      inline def setClose(value: Boolean | js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Boolean | Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      inline def setPreventDefault(value: Boolean | js.Any): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+      inline def setPreventDefault(value: Boolean | Any): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
       
       inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
       
-      inline def setSetSelected(value: Boolean | js.Any): Self = StObject.set(x, "setSelected", value.asInstanceOf[js.Any])
+      inline def setSetSelected(value: Boolean | Any): Self = StObject.set(x, "setSelected", value.asInstanceOf[js.Any])
       
       inline def setSetSelectedUndefined: Self = StObject.set(x, "setSelected", js.undefined)
     }
@@ -350,7 +350,7 @@ object JQueryMmenu {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: js.Object*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: js.Object*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setNavbar(value: NavbarOptions): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
       

@@ -11,9 +11,9 @@ trait AnonymousAccessor
   extends StObject
      with Object {
   
-  var get: js.UndefOr[js.Function1[/* propertyName */ String, js.Any]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* propertyName */ String, Any]] = js.undefined
   
-  var set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, this.type]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], this.type]])
+  var set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, this.type]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], this.type]])
   
   var watch: js.UndefOr[
     js.Function3[
@@ -30,7 +30,7 @@ object AnonymousAccessor {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, AnonymousAccessor]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], AnonymousAccessor]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, AnonymousAccessor]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], AnonymousAccessor]])
   ): AnonymousAccessor = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonymousAccessor]
@@ -38,12 +38,12 @@ object AnonymousAccessor {
   
   extension [Self <: AnonymousAccessor](x: Self) {
     
-    inline def setGet(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* propertyName */ String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     inline def setSet(
-      value: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, AnonymousAccessor]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], AnonymousAccessor]])
+      value: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, AnonymousAccessor]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], AnonymousAccessor]])
     ): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     inline def setWatch(

@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A mask that indicates which of the fields on the base SheetsChartReference
-  * have been changed in this suggestion. For any field set to true, there is a
-  * new suggested value.
-  */
 trait SchemaSheetsChartReferenceSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to chart_id.
     */
-  var chartIdSuggested: js.UndefOr[Boolean] = js.undefined
+  var chartIdSuggested: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Indicates if there was a suggested change to spreadsheet_id.
     */
-  var spreadsheetIdSuggested: js.UndefOr[Boolean] = js.undefined
+  var spreadsheetIdSuggested: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaSheetsChartReferenceSuggestionState {
   
@@ -32,9 +27,13 @@ object SchemaSheetsChartReferenceSuggestionState {
     
     inline def setChartIdSuggested(value: Boolean): Self = StObject.set(x, "chartIdSuggested", value.asInstanceOf[js.Any])
     
+    inline def setChartIdSuggestedNull: Self = StObject.set(x, "chartIdSuggested", null)
+    
     inline def setChartIdSuggestedUndefined: Self = StObject.set(x, "chartIdSuggested", js.undefined)
     
     inline def setSpreadsheetIdSuggested(value: Boolean): Self = StObject.set(x, "spreadsheetIdSuggested", value.asInstanceOf[js.Any])
+    
+    inline def setSpreadsheetIdSuggestedNull: Self = StObject.set(x, "spreadsheetIdSuggested", null)
     
     inline def setSpreadsheetIdSuggestedUndefined: Self = StObject.set(x, "spreadsheetIdSuggested", js.undefined)
   }

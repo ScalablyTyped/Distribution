@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "CompactPeoplePickerBase")
 @js.native
-class CompactPeoplePickerBase protected ()
+open class CompactPeoplePickerBase protected ()
   extends typings.officeUiFabricReact.libPickersMod.CompactPeoplePickerBase {
   def this(basePickerProps: IPeoplePickerProps) = this()
 }

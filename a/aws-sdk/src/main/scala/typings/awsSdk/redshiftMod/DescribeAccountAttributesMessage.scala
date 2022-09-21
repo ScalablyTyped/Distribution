@@ -24,6 +24,6 @@ object DescribeAccountAttributesMessage {
     
     inline def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
-    inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value*))
   }
 }

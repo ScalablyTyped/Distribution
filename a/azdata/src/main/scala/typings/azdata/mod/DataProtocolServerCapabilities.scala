@@ -40,7 +40,7 @@ object DataProtocolServerCapabilities {
     
     inline def setFeatures(value: js.Array[FeatureMetadataProvider]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    inline def setFeaturesVarargs(value: FeatureMetadataProvider*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: FeatureMetadataProvider*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     

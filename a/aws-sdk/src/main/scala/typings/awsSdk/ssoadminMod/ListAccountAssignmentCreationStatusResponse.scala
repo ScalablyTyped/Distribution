@@ -29,7 +29,7 @@ object ListAccountAssignmentCreationStatusResponse {
     
     inline def setAccountAssignmentsCreationStatusUndefined: Self = StObject.set(x, "AccountAssignmentsCreationStatus", js.undefined)
     
-    inline def setAccountAssignmentsCreationStatusVarargs(value: AccountAssignmentOperationStatusMetadata*): Self = StObject.set(x, "AccountAssignmentsCreationStatus", js.Array(value :_*))
+    inline def setAccountAssignmentsCreationStatusVarargs(value: AccountAssignmentOperationStatusMetadata*): Self = StObject.set(x, "AccountAssignmentsCreationStatus", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

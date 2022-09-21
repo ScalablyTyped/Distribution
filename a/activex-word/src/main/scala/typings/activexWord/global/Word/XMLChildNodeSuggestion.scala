@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.XMLChildNodeSuggestion")
 @js.native
-/* private */ class XMLChildNodeSuggestion ()
+/* private */ open class XMLChildNodeSuggestion ()
   extends StObject
      with typings.activexWord.Word.XMLChildNodeSuggestion

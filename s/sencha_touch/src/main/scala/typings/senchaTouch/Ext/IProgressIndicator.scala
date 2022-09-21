@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var dynamic: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var fallbackText: js.UndefOr[js.Any] = js.undefined
+  var fallbackText: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of dynamic
     * @returns Boolean
@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the value of monitoredStates
     * @returns Object
     */
-  var getMonitoredStates: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getMonitoredStates: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of state
     * @returns String
@@ -53,7 +53,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var getState: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Config Option] (String/Ext.XTemplate/Object) */
-  var loadingText: js.UndefOr[js.Any] = js.undefined
+  var loadingText: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var maxProgressInput: js.UndefOr[Double] = js.undefined
@@ -68,7 +68,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var minProgressOutput: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object) */
-  var monitoredStates: js.UndefOr[js.Any] = js.undefined
+  var monitoredStates: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of dynamic
     * @param dynamic Boolean The new value.
@@ -78,12 +78,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Sets the value of fallbackText
     * @param fallbackText String/Object The new value.
     */
-  var setFallbackText: js.UndefOr[js.Function1[/* fallbackText */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setFallbackText: js.UndefOr[js.Function1[/* fallbackText */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of loadingText
     * @param loadingText String/Ext.XTemplate/Object The new value.
     */
-  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of maxProgressInput
     * @param maxProgressInput Number The new value.
@@ -108,7 +108,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Sets the value of monitoredStates
     * @param monitoredStates Object The new value.
     */
-  var setMonitoredStates: js.UndefOr[js.Function1[/* monitoredStates */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMonitoredStates: js.UndefOr[js.Function1[/* monitoredStates */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of state
     * @param state String The new value.
@@ -131,7 +131,7 @@ object IProgressIndicator {
     
     inline def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
     
-    inline def setFallbackText(value: js.Any): Self = StObject.set(x, "fallbackText", value.asInstanceOf[js.Any])
+    inline def setFallbackText(value: Any): Self = StObject.set(x, "fallbackText", value.asInstanceOf[js.Any])
     
     inline def setFallbackTextUndefined: Self = StObject.set(x, "fallbackText", js.undefined)
     
@@ -155,7 +155,7 @@ object IProgressIndicator {
     
     inline def setGetMinProgressOutputUndefined: Self = StObject.set(x, "getMinProgressOutput", js.undefined)
     
-    inline def setGetMonitoredStates(value: () => js.Any): Self = StObject.set(x, "getMonitoredStates", js.Any.fromFunction0(value))
+    inline def setGetMonitoredStates(value: () => Any): Self = StObject.set(x, "getMonitoredStates", js.Any.fromFunction0(value))
     
     inline def setGetMonitoredStatesUndefined: Self = StObject.set(x, "getMonitoredStates", js.undefined)
     
@@ -163,7 +163,7 @@ object IProgressIndicator {
     
     inline def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     
-    inline def setLoadingText(value: js.Any): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
+    inline def setLoadingText(value: Any): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
     
     inline def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
     
@@ -183,7 +183,7 @@ object IProgressIndicator {
     
     inline def setMinProgressOutputUndefined: Self = StObject.set(x, "minProgressOutput", js.undefined)
     
-    inline def setMonitoredStates(value: js.Any): Self = StObject.set(x, "monitoredStates", value.asInstanceOf[js.Any])
+    inline def setMonitoredStates(value: Any): Self = StObject.set(x, "monitoredStates", value.asInstanceOf[js.Any])
     
     inline def setMonitoredStatesUndefined: Self = StObject.set(x, "monitoredStates", js.undefined)
     
@@ -191,11 +191,11 @@ object IProgressIndicator {
     
     inline def setSetDynamicUndefined: Self = StObject.set(x, "setDynamic", js.undefined)
     
-    inline def setSetFallbackText(value: /* fallbackText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFallbackText", js.Any.fromFunction1(value))
+    inline def setSetFallbackText(value: /* fallbackText */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setFallbackText", js.Any.fromFunction1(value))
     
     inline def setSetFallbackTextUndefined: Self = StObject.set(x, "setFallbackText", js.undefined)
     
-    inline def setSetLoadingText(value: /* loadingText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLoadingText", js.Any.fromFunction1(value))
+    inline def setSetLoadingText(value: /* loadingText */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLoadingText", js.Any.fromFunction1(value))
     
     inline def setSetLoadingTextUndefined: Self = StObject.set(x, "setLoadingText", js.undefined)
     
@@ -215,7 +215,7 @@ object IProgressIndicator {
     
     inline def setSetMinProgressOutputUndefined: Self = StObject.set(x, "setMinProgressOutput", js.undefined)
     
-    inline def setSetMonitoredStates(value: /* monitoredStates */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMonitoredStates", js.Any.fromFunction1(value))
+    inline def setSetMonitoredStates(value: /* monitoredStates */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMonitoredStates", js.Any.fromFunction1(value))
     
     inline def setSetMonitoredStatesUndefined: Self = StObject.set(x, "setMonitoredStates", js.undefined)
     

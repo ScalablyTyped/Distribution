@@ -254,7 +254,7 @@ object JQueryTooltipster {
     * Several plugins may have methods of the same name. To resolve the conflict, use the instance object of the 
     * tooltip and specify the full name of the desired plugin in your calls.
     */
-  /* pluginName */ StringDictionary[js.Any] {
+  /* pluginName */ StringDictionary[Any] {
     
     /**
       * Closes the tooltip. When the animation is over, its HTML element is destroyed (definitely removed from the 
@@ -267,12 +267,12 @@ object JQueryTooltipster {
       * Returns a tooltip's current content. If the selector matches multiple origins, only the value of the first 
       * will be returned.
       */
-    def content(): js.Any = js.native
+    def content(): Any = js.native
     /**
       * Updates the tooltip's content.
       * @param value the new content of the tooltip
       */
-    def content(value: js.Any): ITooltipsterInstance = js.native
+    def content(value: Any): ITooltipsterInstance = js.native
     
     /**
       * Closes and destroys the tooltip functionality.
@@ -331,11 +331,11 @@ object JQueryTooltipster {
     /**
       * Returns the value of an option.
       */
-    def option(optionName: String): js.Any = js.native
+    def option(optionName: String): Any = js.native
     /**
       * Sets the value of an option (for advanced users only; we do not provide support on unexpected results).
       */
-    def option(optionName: String, optionValue: js.Any): ITooltipsterInstance = js.native
+    def option(optionName: String, optionValue: Any): ITooltipsterInstance = js.native
     
     /**
       * Resizes and repositions the tooltip.
@@ -369,7 +369,7 @@ object JQueryTooltipster {
       * Returns a tooltip's current content. If the selector matches multiple origins, only the value of the first 
       * will be returned.
       */
-    def apply(method: content): js.Any = js.native
+    def apply(method: content): Any = js.native
     /**
       * Updates the tooltip's content.
       * @param value the new content of the tooltip
@@ -422,11 +422,11 @@ object JQueryTooltipster {
     /**
       * Returns the value of an option.
       */
-    def apply(method: option, optionName: String): js.Any = js.native
+    def apply(method: option, optionName: String): Any = js.native
     /**
       * Sets the value of an option (for advanced users only; we do not provide support on unexpected results).
       */
-    def apply(method: option, optionName: String, optionValue: js.Any): JQuery = js.native
+    def apply(method: option, optionName: String, optionValue: Any): JQuery = js.native
     /**
       * Resizes and repositions the tooltip.
       */
@@ -449,7 +449,7 @@ object JQueryTooltipster {
     * Several plugins may have methods of the same name. To resolve the conflict, use the instance object of the 
     * tooltip and specify the full name of the desired plugin in your calls.
     */
-  /* pluginName */ StringDictionary[js.Any] {
+  /* pluginName */ StringDictionary[Any] {
     
     /**
       * The minimum version of Internet Explorer to run on. 
@@ -484,7 +484,7 @@ object JQueryTooltipster {
       * content for display. 
       * @default null
       */
-    var content: js.UndefOr[String | JQuery | js.Any] = js.undefined
+    var content: js.UndefOr[String | JQuery | Any] = js.undefined
     
     /**
       * If the content of the tooltip is provided as a string, it is displayed as plain text by default. 
@@ -553,7 +553,7 @@ object JQueryTooltipster {
         js.Function3[
           /* instance */ ITooltipsterInstance, 
           /* helper */ ITooltipsterHelper, 
-          /* content */ js.Any, 
+          /* content */ Any, 
           String | JQuery
         ]
       ] = js.undefined
@@ -739,7 +739,7 @@ object JQueryTooltipster {
       
       inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      inline def setAnimationDurationVarargs(value: Double*): Self = StObject.set(x, "animationDuration", js.Array(value :_*))
+      inline def setAnimationDurationVarargs(value: Double*): Self = StObject.set(x, "animationDuration", js.Array(value*))
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
@@ -747,7 +747,7 @@ object JQueryTooltipster {
       
       inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
       
-      inline def setContent(value: String | JQuery | js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | JQuery | Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentAsHTML(value: Boolean): Self = StObject.set(x, "contentAsHTML", value.asInstanceOf[js.Any])
       
@@ -769,17 +769,17 @@ object JQueryTooltipster {
       
       inline def setDelayTouchUndefined: Self = StObject.set(x, "delayTouch", js.undefined)
       
-      inline def setDelayTouchVarargs(value: Double*): Self = StObject.set(x, "delayTouch", js.Array(value :_*))
+      inline def setDelayTouchVarargs(value: Double*): Self = StObject.set(x, "delayTouch", js.Array(value*))
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value :_*))
+      inline def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value*))
       
       inline def setDistance(value: Double | js.Array[Double]): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
       inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      inline def setDistanceVarargs(value: Double*): Self = StObject.set(x, "distance", js.Array(value :_*))
+      inline def setDistanceVarargs(value: Double*): Self = StObject.set(x, "distance", js.Array(value*))
       
       inline def setFunctionAfter(value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper) => Unit): Self = StObject.set(x, "functionAfter", js.Any.fromFunction2(value))
       
@@ -790,7 +790,7 @@ object JQueryTooltipster {
       inline def setFunctionBeforeUndefined: Self = StObject.set(x, "functionBefore", js.undefined)
       
       inline def setFunctionFormat(
-        value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper, /* content */ js.Any) => String | JQuery
+        value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper, /* content */ Any) => String | JQuery
       ): Self = StObject.set(x, "functionFormat", js.Any.fromFunction3(value))
       
       inline def setFunctionFormatUndefined: Self = StObject.set(x, "functionFormat", js.undefined)
@@ -837,7 +837,7 @@ object JQueryTooltipster {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setRepositionOnScroll(value: Boolean): Self = StObject.set(x, "repositionOnScroll", value.asInstanceOf[js.Any])
       
@@ -855,13 +855,13 @@ object JQueryTooltipster {
       
       inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      inline def setSideVarargs(value: TooltipPositioningSide*): Self = StObject.set(x, "side", js.Array(value :_*))
+      inline def setSideVarargs(value: TooltipPositioningSide*): Self = StObject.set(x, "side", js.Array(value*))
       
       inline def setTheme(value: String | js.Array[String]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      inline def setThemeVarargs(value: String*): Self = StObject.set(x, "theme", js.Array(value :_*))
+      inline def setThemeVarargs(value: String*): Self = StObject.set(x, "theme", js.Array(value*))
       
       inline def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
       

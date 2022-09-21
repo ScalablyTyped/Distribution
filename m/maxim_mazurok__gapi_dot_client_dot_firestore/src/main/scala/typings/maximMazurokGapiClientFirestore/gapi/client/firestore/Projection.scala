@@ -22,6 +22,6 @@ object Projection {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: FieldReference*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldReference*): Self = StObject.set(x, "fields", js.Array(value*))
   }
 }

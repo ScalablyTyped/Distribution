@@ -9,20 +9,20 @@ object dataMarkerMod {
   
   @JSImport("@antv/component/lib/annotation/data-marker", JSImport.Default)
   @js.native
-  class default () extends DataMarkerAnnotation
+  open class default () extends DataMarkerAnnotation
   
   @js.native
   trait DataMarkerAnnotation
     extends typings.antvComponent.groupComponentMod.default[DataMarkerAnnotationCfg] {
     
-    /* private */ var autoAdjust: js.Any = js.native
+    /* private */ var autoAdjust: Any = js.native
     
-    /* private */ var getShapeAttrs: js.Any = js.native
+    /* private */ var getShapeAttrs: Any = js.native
     
-    /* private */ var renderLine: js.Any = js.native
+    /* private */ var renderLine: Any = js.native
     
-    /* private */ var renderPoint: js.Any = js.native
+    /* private */ var renderPoint: Any = js.native
     
-    /* private */ var renderText: js.Any = js.native
+    /* private */ var renderText: Any = js.native
   }
 }

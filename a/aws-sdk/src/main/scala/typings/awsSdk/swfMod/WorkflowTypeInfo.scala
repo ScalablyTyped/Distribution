@@ -9,12 +9,12 @@ trait WorkflowTypeInfo extends StObject {
   /**
     * The date when this type was registered.
     */
-  var creationDate: Timestamp
+  var creationDate: js.Date
   
   /**
     * If the type is in deprecated state, then it is set to the date when the type was deprecated.
     */
-  var deprecationDate: js.UndefOr[Timestamp] = js.undefined
+  var deprecationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the type registered through RegisterWorkflowType.
@@ -33,16 +33,16 @@ trait WorkflowTypeInfo extends StObject {
 }
 object WorkflowTypeInfo {
   
-  inline def apply(creationDate: Timestamp, status: RegistrationStatus, workflowType: WorkflowType): WorkflowTypeInfo = {
+  inline def apply(creationDate: js.Date, status: RegistrationStatus, workflowType: WorkflowType): WorkflowTypeInfo = {
     val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowTypeInfo]
   }
   
   extension [Self <: WorkflowTypeInfo](x: Self) {
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    inline def setDeprecationDate(value: Timestamp): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
+    inline def setDeprecationDate(value: js.Date): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
     
     inline def setDeprecationDateUndefined: Self = StObject.set(x, "deprecationDate", js.undefined)
     

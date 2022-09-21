@@ -66,14 +66,14 @@ object XSheetCellRanges {
     RangeAddresses: SafeArray[CellRangeAddress],
     RangeAddressesAsString: String,
     acquire: () => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCells: () => XEnumerationAccess,
     getCount: () => Double,
     getElementType: () => `type`,
     getRangeAddresses: () => SafeArray[CellRangeAddress],
     getRangeAddressesAsString: () => String,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSheetCellRanges = {
     val __obj = js.Dynamic.literal(Cells = Cells.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], RangeAddresses = RangeAddresses.asInstanceOf[js.Any], RangeAddressesAsString = RangeAddressesAsString.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getCells = js.Any.fromFunction0(getCells), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getRangeAddresses = js.Any.fromFunction0(getRangeAddresses), getRangeAddressesAsString = js.Any.fromFunction0(getRangeAddressesAsString), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

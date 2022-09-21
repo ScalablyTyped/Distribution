@@ -45,13 +45,15 @@ object tableSelectAllMod extends Shortcut {
   object TableSelectAllProps {
     
     inline def apply(
+      checked: NonNullable[js.UndefOr[Boolean]],
       id: NonNullable[
           NonNullable[
             /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/typings/shared.ReactAttr<std.HTMLElement>['id'] */ js.Any
           ]
-        ]
+        ],
+      name: NonNullable[js.UndefOr[String]]
     ): TableSelectAllProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableSelectAllProps]
     }
     
@@ -64,8 +66,6 @@ object tableSelectAllMod extends Shortcut {
       inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
       inline def setChecked(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
-      
-      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -88,8 +88,6 @@ object tableSelectAllMod extends Shortcut {
       inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
       
       inline def setName(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setOnSelect(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       

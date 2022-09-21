@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
+import typings.maximMazurokGapiClientContent.gapi.client.content.AccountLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,9 @@ trait Key extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
+  /** Required. The id of the account this label belongs to. */
+  var accountId: String
+  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
@@ -25,6 +29,9 @@ trait Key extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /** Required. The id of the label to update. */
+  var labelId: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -34,6 +41,9 @@ trait Key extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: AccountLabel
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -42,8 +52,8 @@ trait Key extends StObject {
 }
 object Key {
   
-  inline def apply(): Key = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(accountId: String, labelId: String, resource: AccountLabel): Key = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], labelId = labelId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -56,6 +66,8 @@ object Key {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -73,6 +85,8 @@ object Key {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -84,6 +98,8 @@ object Key {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: AccountLabel): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

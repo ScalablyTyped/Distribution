@@ -4,87 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Bucketaccesscontrols")
 @js.native
-class ResourceBucketaccesscontrols protected () extends StObject {
+open class ResourceBucketaccesscontrols protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * storage.bucketAccessControls.delete
-    * @desc Permanently deletes the ACL entry for the specified entity on the
-    * specified bucket.
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Name of a bucket.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     // The entity holding the permission. Can be user-userId,
-    * user-emailAddress, group-groupId,
-    *     // group-emailAddress, allUsers, or allAuthenticatedUsers.
-    *     entity: 'my-entity',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.bucketAccessControls.delete(request, function(err) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.bucketAccessControls.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket Name of a bucket.
-    * @param {string} params.entity The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -92,8 +24,8 @@ class ResourceBucketaccesscontrols protected () extends StObject {
   def delete(params: ParamsResourceBucketaccesscontrolsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceBucketaccesscontrolsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceBucketaccesscontrolsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(
@@ -101,80 +33,65 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
-  
   /**
-    * storage.bucketAccessControls.get
-    * @desc Returns the ACL entry for the specified entity on the specified
-    * bucket.
+    * Permanently deletes the ACL entry for the specified entity on the specified bucket.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Name of a bucket.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     // The entity holding the permission. Can be user-userId,
-    * user-emailAddress, group-groupId,
-    *     // group-emailAddress, allUsers, or allAuthenticatedUsers.
-    *     entity: 'my-entity',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.bucketAccessControls.get(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.bucketAccessControls.delete({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
+    *     entity: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.bucketAccessControls.get
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket Name of a bucket.
-    * @param {string} params.entity The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceBucketaccesscontrolsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceBucketaccesscontrolsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def get(callback: BodyResponseCallback[SchemaBucketAccessControl]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
@@ -185,8 +102,8 @@ class ResourceBucketaccesscontrols protected () extends StObject {
   ): Unit = js.native
   def get(
     params: ParamsResourceBucketaccesscontrolsGet,
-    options: BodyResponseCallback[SchemaBucketAccessControl],
-    callback: BodyResponseCallback[SchemaBucketAccessControl]
+    options: BodyResponseCallback[Readable | SchemaBucketAccessControl],
+    callback: BodyResponseCallback[Readable | SchemaBucketAccessControl]
   ): Unit = js.native
   def get(params: ParamsResourceBucketaccesscontrolsGet, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def get(
@@ -194,78 +111,80 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucketAccessControl]
   ): Unit = js.native
-  
   /**
-    * storage.bucketAccessControls.insert
-    * @desc Creates a new ACL entry on the specified bucket.
+    * Returns the ACL entry for the specified entity on the specified bucket.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Name of a bucket.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.bucketAccessControls.insert(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.bucketAccessControls.get({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
+    *     entity: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bucket": "my_bucket",
+    *   //   "domain": "my_domain",
+    *   //   "email": "my_email",
+    *   //   "entity": "my_entity",
+    *   //   "entityId": "my_entityId",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "projectTeam": {},
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.bucketAccessControls.insert
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket Name of a bucket.
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {().BucketAccessControl} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceBucketaccesscontrolsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceBucketaccesscontrolsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def insert(callback: BodyResponseCallback[SchemaBucketAccessControl]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
@@ -276,8 +195,8 @@ class ResourceBucketaccesscontrols protected () extends StObject {
   ): Unit = js.native
   def insert(
     params: ParamsResourceBucketaccesscontrolsInsert,
-    options: BodyResponseCallback[SchemaBucketAccessControl],
-    callback: BodyResponseCallback[SchemaBucketAccessControl]
+    options: BodyResponseCallback[Readable | SchemaBucketAccessControl],
+    callback: BodyResponseCallback[Readable | SchemaBucketAccessControl]
   ): Unit = js.native
   def insert(params: ParamsResourceBucketaccesscontrolsInsert, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def insert(
@@ -285,73 +204,96 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucketAccessControl]
   ): Unit = js.native
-  
   /**
-    * storage.bucketAccessControls.list
-    * @desc Retrieves ACL entries on the specified bucket.
+    * Creates a new ACL entry on the specified bucket.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Name of a bucket.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.bucketAccessControls.list(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.bucketAccessControls.insert({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bucket": "my_bucket",
+    *       //   "domain": "my_domain",
+    *       //   "email": "my_email",
+    *       //   "entity": "my_entity",
+    *       //   "entityId": "my_entityId",
+    *       //   "etag": "my_etag",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "projectTeam": {},
+    *       //   "role": "my_role",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bucket": "my_bucket",
+    *   //   "domain": "my_domain",
+    *   //   "email": "my_email",
+    *   //   "entity": "my_entity",
+    *   //   "entityId": "my_entityId",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "projectTeam": {},
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.bucketAccessControls.list
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket Name of a bucket.
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceBucketaccesscontrolsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceBucketaccesscontrolsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaBucketAccessControls] = js.native
   def list(callback: BodyResponseCallback[SchemaBucketAccessControls]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControls] = js.native
@@ -362,8 +304,8 @@ class ResourceBucketaccesscontrols protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceBucketaccesscontrolsList,
-    options: BodyResponseCallback[SchemaBucketAccessControls],
-    callback: BodyResponseCallback[SchemaBucketAccessControls]
+    options: BodyResponseCallback[Readable | SchemaBucketAccessControls],
+    callback: BodyResponseCallback[Readable | SchemaBucketAccessControls]
   ): Unit = js.native
   def list(params: ParamsResourceBucketaccesscontrolsList, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControls] = js.native
   def list(
@@ -371,86 +313,69 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucketAccessControls]
   ): Unit = js.native
-  
   /**
-    * storage.bucketAccessControls.patch
-    * @desc Patches an ACL entry on the specified bucket.
+    * Retrieves ACL entries on the specified bucket.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Name of a bucket.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     // The entity holding the permission. Can be user-userId,
-    * user-emailAddress, group-groupId,
-    *     // group-emailAddress, allUsers, or allAuthenticatedUsers.
-    *     entity: 'my-entity',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body. Only these
-    * properties
-    *       // will be changed.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.bucketAccessControls.patch(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.bucketAccessControls.list({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "items": [],
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.bucketAccessControls.patch
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket Name of a bucket.
-    * @param {string} params.entity The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {().BucketAccessControl} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceBucketaccesscontrolsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceBucketaccesscontrolsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def patch(callback: BodyResponseCallback[SchemaBucketAccessControl]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
@@ -461,8 +386,8 @@ class ResourceBucketaccesscontrols protected () extends StObject {
   ): Unit = js.native
   def patch(
     params: ParamsResourceBucketaccesscontrolsPatch,
-    options: BodyResponseCallback[SchemaBucketAccessControl],
-    callback: BodyResponseCallback[SchemaBucketAccessControl]
+    options: BodyResponseCallback[Readable | SchemaBucketAccessControl],
+    callback: BodyResponseCallback[Readable | SchemaBucketAccessControl]
   ): Unit = js.native
   def patch(params: ParamsResourceBucketaccesscontrolsPatch, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def patch(
@@ -470,86 +395,98 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucketAccessControl]
   ): Unit = js.native
-  
   /**
-    * storage.bucketAccessControls.update
-    * @desc Updates an ACL entry on the specified bucket.
+    * Patches an ACL entry on the specified bucket.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Name of a bucket.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     // The entity holding the permission. Can be user-userId,
-    * user-emailAddress, group-groupId,
-    *     // group-emailAddress, allUsers, or allAuthenticatedUsers.
-    *     entity: 'my-entity',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body. All existing
-    * properties
-    *       // will be replaced.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.bucketAccessControls.update(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.bucketAccessControls.patch({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
+    *     entity: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bucket": "my_bucket",
+    *       //   "domain": "my_domain",
+    *       //   "email": "my_email",
+    *       //   "entity": "my_entity",
+    *       //   "entityId": "my_entityId",
+    *       //   "etag": "my_etag",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "projectTeam": {},
+    *       //   "role": "my_role",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bucket": "my_bucket",
+    *   //   "domain": "my_domain",
+    *   //   "email": "my_email",
+    *   //   "entity": "my_entity",
+    *   //   "entityId": "my_entityId",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "projectTeam": {},
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.bucketAccessControls.update
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket Name of a bucket.
-    * @param {string} params.entity The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {().BucketAccessControl} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceBucketaccesscontrolsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceBucketaccesscontrolsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def update(callback: BodyResponseCallback[SchemaBucketAccessControl]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
@@ -560,13 +497,104 @@ class ResourceBucketaccesscontrols protected () extends StObject {
   ): Unit = js.native
   def update(
     params: ParamsResourceBucketaccesscontrolsUpdate,
-    options: BodyResponseCallback[SchemaBucketAccessControl],
-    callback: BodyResponseCallback[SchemaBucketAccessControl]
+    options: BodyResponseCallback[Readable | SchemaBucketAccessControl],
+    callback: BodyResponseCallback[Readable | SchemaBucketAccessControl]
   ): Unit = js.native
   def update(params: ParamsResourceBucketaccesscontrolsUpdate, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def update(
     params: ParamsResourceBucketaccesscontrolsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBucketAccessControl]
+  ): Unit = js.native
+  /**
+    * Updates an ACL entry on the specified bucket.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.bucketAccessControls.update({
+    *     // Name of a bucket.
+    *     bucket: 'placeholder-value',
+    *     // The entity holding the permission. Can be user-userId, user-emailAddress, group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
+    *     entity: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bucket": "my_bucket",
+    *       //   "domain": "my_domain",
+    *       //   "email": "my_email",
+    *       //   "entity": "my_entity",
+    *       //   "entityId": "my_entityId",
+    *       //   "etag": "my_etag",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "projectTeam": {},
+    *       //   "role": "my_role",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bucket": "my_bucket",
+    *   //   "domain": "my_domain",
+    *   //   "email": "my_email",
+    *   //   "entity": "my_entity",
+    *   //   "entityId": "my_entityId",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "projectTeam": {},
+    *   //   "role": "my_role",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceBucketaccesscontrolsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceBucketaccesscontrolsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

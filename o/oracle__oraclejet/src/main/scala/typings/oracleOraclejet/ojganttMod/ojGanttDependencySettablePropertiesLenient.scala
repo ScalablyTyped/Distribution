@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependencySettableProperties> */
 trait ojGanttDependencySettablePropertiesLenient
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var predecessorTaskId: js.UndefOr[js.Any] = js.undefined
+  var predecessorTaskId: js.UndefOr[Any] = js.undefined
   
   var shortDesc: js.UndefOr[String | Null] = js.undefined
   
-  var successorTaskId: js.UndefOr[js.Any] = js.undefined
+  var successorTaskId: js.UndefOr[Any] = js.undefined
   
   var svgClassName: js.UndefOr[String] = js.undefined
   
@@ -35,7 +35,7 @@ object ojGanttDependencySettablePropertiesLenient {
   
   extension [Self <: ojGanttDependencySettablePropertiesLenient](x: Self) {
     
-    inline def setPredecessorTaskId(value: js.Any): Self = StObject.set(x, "predecessorTaskId", value.asInstanceOf[js.Any])
+    inline def setPredecessorTaskId(value: Any): Self = StObject.set(x, "predecessorTaskId", value.asInstanceOf[js.Any])
     
     inline def setPredecessorTaskIdUndefined: Self = StObject.set(x, "predecessorTaskId", js.undefined)
     
@@ -45,7 +45,7 @@ object ojGanttDependencySettablePropertiesLenient {
     
     inline def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
     
-    inline def setSuccessorTaskId(value: js.Any): Self = StObject.set(x, "successorTaskId", value.asInstanceOf[js.Any])
+    inline def setSuccessorTaskId(value: Any): Self = StObject.set(x, "successorTaskId", value.asInstanceOf[js.Any])
     
     inline def setSuccessorTaskIdUndefined: Self = StObject.set(x, "successorTaskId", js.undefined)
     

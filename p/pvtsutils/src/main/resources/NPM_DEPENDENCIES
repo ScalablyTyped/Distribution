@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pvtsutils" : "1.1.1"
+      "pvtsutils" : "1.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "pvtsutils" : "1.1.1"
+      "pvtsutils" : "1.3.2"
     }
   ],
   "compile-devDependencies" : [

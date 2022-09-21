@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "styleq" : "0.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "styleq" : "0.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

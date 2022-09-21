@@ -82,7 +82,7 @@ object PlusNativeObjImageSliderStyles {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: PlusNativeObj*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: PlusNativeObj*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

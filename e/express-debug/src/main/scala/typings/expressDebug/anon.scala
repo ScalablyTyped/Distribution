@@ -68,13 +68,13 @@ object anon {
       
       inline def setExtra_panelsUndefined: Self = StObject.set(x, "extra_panels", js.undefined)
       
-      inline def setExtra_panelsVarargs(value: CustomPanel*): Self = StObject.set(x, "extra_panels", js.Array(value :_*))
+      inline def setExtra_panelsVarargs(value: CustomPanel*): Self = StObject.set(x, "extra_panels", js.Array(value*))
       
       inline def setPanels(value: js.Array[String]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
       
       inline def setPanelsUndefined: Self = StObject.set(x, "panels", js.undefined)
       
-      inline def setPanelsVarargs(value: String*): Self = StObject.set(x, "panels", js.Array(value :_*))
+      inline def setPanelsVarargs(value: String*): Self = StObject.set(x, "panels", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

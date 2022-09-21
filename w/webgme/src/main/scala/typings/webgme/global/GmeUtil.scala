@@ -20,14 +20,14 @@ object GmeUtil {
   
   @JSGlobal("GmeUtil.Canon")
   @js.native
-  class Canon ()
+  open class Canon ()
     extends StObject
        with typings.webgme.GmeUtil.Canon {
     
     /* CompleteClass */
-    override def parse(thing: js.Any): String = js.native
+    override def parse(thing: Any): String = js.native
     
     /* CompleteClass */
-    override def stringify(thing: js.Any): String = js.native
+    override def stringify(thing: Any): String = js.native
   }
 }

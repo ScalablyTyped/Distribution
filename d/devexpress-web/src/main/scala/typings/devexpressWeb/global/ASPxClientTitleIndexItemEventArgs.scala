@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTitleIndexItemEventArgs")
 @js.native
-class ASPxClientTitleIndexItemEventArgs protected ()
+open class ASPxClientTitleIndexItemEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTitleIndexItemEventArgs {
   /**
@@ -19,25 +19,25 @@ class ASPxClientTitleIndexItemEventArgs protected ()
     * @param htmlElement An HTML object that contains the processed item.
     * @param htmlEvent A DHTML event object that relates to the processed event.
     */
-  def this(processOnServer: Boolean, name: String, htmlElement: js.Any, htmlEvent: js.Any) = this()
+  def this(processOnServer: Boolean, name: String, htmlElement: Any, htmlEvent: Any) = this()
   
   /**
     * Gets the HTML object that contains the processed item.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets the name that uniquely identifies the processed item.
     */
   /* CompleteClass */
-  var name: js.Any = js.native
+  var name: Any = js.native
   
   /**
     * Gets or sets a value that specifies whether the event should be finally processed on the server side.

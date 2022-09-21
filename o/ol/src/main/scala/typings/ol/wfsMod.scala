@@ -17,11 +17,11 @@ object wfsMod {
   
   @JSImport("ol/format/WFS", JSImport.Default)
   @js.native
-  class default () extends WFS {
+  open class default () extends WFS {
     def this(opt_options: Options) = this()
   }
   
-  inline def writeFilter(filter: typings.ol.filterFilterMod.default): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("writeFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def writeFilter(filter: typings.ol.filterFilterMod.default, version: String): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFilter")(filter.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Node]
   
   trait FeatureCollectionMetadata extends StObject {
     
@@ -44,6 +44,31 @@ object wfsMod {
     }
   }
   
+  trait FeatureType extends StObject {
+    
+    var bbox: Extent
+    
+    var geometryName: String
+    
+    var name: String
+  }
+  object FeatureType {
+    
+    inline def apply(bbox: Extent, geometryName: String, name: String): FeatureType = {
+      val __obj = js.Dynamic.literal(bbox = bbox.asInstanceOf[js.Any], geometryName = geometryName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FeatureType]
+    }
+    
+    extension [Self <: FeatureType](x: Self) {
+      
+      inline def setBbox(value: Extent): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      
+      inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Options extends StObject {
     
     var featureNS: js.UndefOr[StringDictionary[String] | String] = js.undefined
@@ -53,6 +78,8 @@ object wfsMod {
     var gmlFormat: js.UndefOr[typings.ol.gmlbaseMod.default] = js.undefined
     
     var schemaLocation: js.UndefOr[String] = js.undefined
+    
+    var version: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -71,7 +98,7 @@ object wfsMod {
       
       inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
       
-      inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
+      inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value*))
       
       inline def setGmlFormat(value: typings.ol.gmlbaseMod.default): Self = StObject.set(x, "gmlFormat", value.asInstanceOf[js.Any])
       
@@ -80,6 +107,10 @@ object wfsMod {
       inline def setSchemaLocation(value: String): Self = StObject.set(x, "schemaLocation", value.asInstanceOf[js.Any])
       
       inline def setSchemaLocationUndefined: Self = StObject.set(x, "schemaLocation", js.undefined)
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -104,7 +135,7 @@ object wfsMod {
       
       inline def setInsertIds(value: js.Array[String]): Self = StObject.set(x, "insertIds", value.asInstanceOf[js.Any])
       
-      inline def setInsertIdsVarargs(value: String*): Self = StObject.set(x, "insertIds", js.Array(value :_*))
+      inline def setInsertIdsVarargs(value: String*): Self = StObject.set(x, "insertIds", js.Array(value*))
       
       inline def setTotalDeleted(value: Double): Self = StObject.set(x, "totalDeleted", value.asInstanceOf[js.Any])
       
@@ -117,6 +148,24 @@ object wfsMod {
   @js.native
   trait WFS
     extends typings.ol.xmlfeatureMod.default {
+    
+    /**
+      * Create a bbox filter and combine it with another optional filter.
+      */
+    def combineBboxAndFilter(geometryName: String, extent: Extent): typings.ol.filterFilterMod.default = js.native
+    def combineBboxAndFilter(geometryName: String, extent: Extent, opt_srsName: String): typings.ol.filterFilterMod.default = js.native
+    def combineBboxAndFilter(
+      geometryName: String,
+      extent: Extent,
+      opt_srsName: String,
+      opt_filter: typings.ol.filterFilterMod.default
+    ): typings.ol.filterFilterMod.default = js.native
+    def combineBboxAndFilter(
+      geometryName: String,
+      extent: Extent,
+      opt_srsName: Unit,
+      opt_filter: typings.ol.filterFilterMod.default
+    ): typings.ol.filterFilterMod.default = js.native
     
     def getFeatureType(): js.UndefOr[js.Array[String] | String] = js.native
     
@@ -174,7 +223,7 @@ object wfsMod {
     
     var featurePrefix: String
     
-    var featureTypes: js.Array[String]
+    var featureTypes: js.Array[String | FeatureType]
     
     var filter: js.UndefOr[typings.ol.filterFilterMod.default] = js.undefined
     
@@ -198,7 +247,7 @@ object wfsMod {
   }
   object WriteGetFeatureOptions {
     
-    inline def apply(featureNS: String, featurePrefix: String, featureTypes: js.Array[String]): WriteGetFeatureOptions = {
+    inline def apply(featureNS: String, featurePrefix: String, featureTypes: js.Array[String | FeatureType]): WriteGetFeatureOptions = {
       val __obj = js.Dynamic.literal(featureNS = featureNS.asInstanceOf[js.Any], featurePrefix = featurePrefix.asInstanceOf[js.Any], featureTypes = featureTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteGetFeatureOptions]
     }
@@ -217,9 +266,9 @@ object wfsMod {
       
       inline def setFeaturePrefix(value: String): Self = StObject.set(x, "featurePrefix", value.asInstanceOf[js.Any])
       
-      inline def setFeatureTypes(value: js.Array[String]): Self = StObject.set(x, "featureTypes", value.asInstanceOf[js.Any])
+      inline def setFeatureTypes(value: js.Array[String | FeatureType]): Self = StObject.set(x, "featureTypes", value.asInstanceOf[js.Any])
       
-      inline def setFeatureTypesVarargs(value: String*): Self = StObject.set(x, "featureTypes", js.Array(value :_*))
+      inline def setFeatureTypesVarargs(value: (String | FeatureType)*): Self = StObject.set(x, "featureTypes", js.Array(value*))
       
       inline def setFilter(value: typings.ol.filterFilterMod.default): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -245,7 +294,7 @@ object wfsMod {
       
       inline def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
       
-      inline def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value :_*))
+      inline def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value*))
       
       inline def setResultType(value: String): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
       
@@ -279,7 +328,7 @@ object wfsMod {
     
     var hasZ: js.UndefOr[Boolean] = js.undefined
     
-    var nativeElements: js.Array[js.Object]
+    var nativeElements: js.UndefOr[js.Array[js.Object]] = js.undefined
     
     var srsName: js.UndefOr[String] = js.undefined
     
@@ -287,8 +336,8 @@ object wfsMod {
   }
   object WriteTransactionOptions {
     
-    inline def apply(featureNS: String, featurePrefix: String, featureType: String, nativeElements: js.Array[js.Object]): WriteTransactionOptions = {
-      val __obj = js.Dynamic.literal(featureNS = featureNS.asInstanceOf[js.Any], featurePrefix = featurePrefix.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any], nativeElements = nativeElements.asInstanceOf[js.Any])
+    inline def apply(featureNS: String, featurePrefix: String, featureType: String): WriteTransactionOptions = {
+      val __obj = js.Dynamic.literal(featureNS = featureNS.asInstanceOf[js.Any], featurePrefix = featurePrefix.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteTransactionOptions]
     }
     
@@ -314,7 +363,9 @@ object wfsMod {
       
       inline def setNativeElements(value: js.Array[js.Object]): Self = StObject.set(x, "nativeElements", value.asInstanceOf[js.Any])
       
-      inline def setNativeElementsVarargs(value: js.Object*): Self = StObject.set(x, "nativeElements", js.Array(value :_*))
+      inline def setNativeElementsUndefined: Self = StObject.set(x, "nativeElements", js.undefined)
+      
+      inline def setNativeElementsVarargs(value: js.Object*): Self = StObject.set(x, "nativeElements", js.Array(value*))
       
       inline def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
       

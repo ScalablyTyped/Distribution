@@ -9,25 +9,12 @@ object nodeBrowserFetcherMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/node/BrowserFetcher", "BrowserFetcher")
   @js.native
-  class BrowserFetcher protected () extends StObject {
+  open class BrowserFetcher protected () extends StObject {
     /**
       * @internal
       */
     def this(projectRoot: String) = this()
     def this(projectRoot: String, options: BrowserFetcherOptions) = this()
-    
-    /* private */ var _downloadHost: js.Any = js.native
-    
-    /* private */ var _downloadsFolder: js.Any = js.native
-    
-    /**
-      * @internal
-      */
-    def _getFolderPath(revision: String): String = js.native
-    
-    /* private */ var _platform: js.Any = js.native
-    
-    /* private */ var _product: js.Any = js.native
     
     /**
       * Initiates a HEAD request to check if the revision is available.
@@ -49,8 +36,8 @@ object nodeBrowserFetcherMod {
       * @returns A promise with revision information when the revision is downloaded
       * and extracted.
       */
-    def download(revision: String): js.Promise[BrowserFetcherRevisionInfo] = js.native
-    def download(revision: String, progressCallback: js.Function2[/* x */ Double, /* y */ Double, Unit]): js.Promise[BrowserFetcherRevisionInfo] = js.native
+    def download(revision: String): js.Promise[js.UndefOr[BrowserFetcherRevisionInfo]] = js.native
+    def download(revision: String, progressCallback: js.Function2[/* x */ Double, /* y */ Double, Unit]): js.Promise[js.UndefOr[BrowserFetcherRevisionInfo]] = js.native
     
     /**
       * @returns The download host being used.
@@ -66,12 +53,16 @@ object nodeBrowserFetcherMod {
     def localRevisions(): js.Promise[js.Array[String]] = js.native
     
     /**
-      * @returns Returns the current `Platform`.
+      * @returns Returns the current `Platform`, which is one of `mac`, `linux`,
+      * `win32` or `win64`.
       */
     def platform(): Platform = js.native
     
+    /* private */ var `private`: Any = js.native
+    
     /**
-      * @returns Returns the current `Product`.
+      * @returns Returns the current `Product`, which is one of `chrome` or
+      * `firefox`.
       */
     def product(): Product = js.native
     
@@ -89,8 +80,6 @@ object nodeBrowserFetcherMod {
       * @returns The revision info for the given revision.
       */
     def revisionInfo(revision: String): BrowserFetcherRevisionInfo = js.native
-    
-    /* private */ var setPlatform: js.Any = js.native
   }
   
   trait BrowserFetcherOptions extends StObject {
@@ -177,6 +166,7 @@ object nodeBrowserFetcherMod {
   /* Rewritten from type alias, can be one of: 
     - typings.puppeteerCore.puppeteerCoreStrings.linux
     - typings.puppeteerCore.puppeteerCoreStrings.mac
+    - typings.puppeteerCore.puppeteerCoreStrings.mac_arm
     - typings.puppeteerCore.puppeteerCoreStrings.win32
     - typings.puppeteerCore.puppeteerCoreStrings.win64
   */
@@ -186,6 +176,8 @@ object nodeBrowserFetcherMod {
     inline def linux: typings.puppeteerCore.puppeteerCoreStrings.linux = "linux".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.linux]
     
     inline def mac: typings.puppeteerCore.puppeteerCoreStrings.mac = "mac".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.mac]
+    
+    inline def mac_arm: typings.puppeteerCore.puppeteerCoreStrings.mac_arm = "mac_arm".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.mac_arm]
     
     inline def win32: typings.puppeteerCore.puppeteerCoreStrings.win32 = "win32".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.win32]
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for private-ip
 
-Typings are for version 1.0
+Typings are for version 2.3.4
 
 ## Library description:
 Check if IP address is private.
@@ -9,11 +9,11 @@ Check if IP address is private.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | private-ip |
-| Keywords           | ip, address, private, netmask, localhost, lan |
-| # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 369363 |
-| # stars            | 1 |
+| Keywords           | ip, ipv4, ipv6, address, private, netmask, localhost, lan |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 171137.0 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/frenchbread/private-ip#readme)
@@ -24,7 +24,7 @@ Check if IP address is private.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

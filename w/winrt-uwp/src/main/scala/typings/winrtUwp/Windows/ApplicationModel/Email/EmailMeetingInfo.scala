@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ trait EmailMeetingInfo extends StObject {
   var allowNewTimeProposal: Boolean
   
   /** Gets or sets the start time for a meeting. */
-  var appointmentOriginalStartTime: Date
+  var appointmentOriginalStartTime: js.Date
   
   /** Gets or sets the server identifier for the appointment associated with an email message. */
   var appointmentRoamingId: String
@@ -37,25 +36,25 @@ trait EmailMeetingInfo extends StObject {
   var proposedDuration: Double
   
   /** Gets or sets the proposed start time for the proposed meeting change. */
-  var proposedStartTime: Date
+  var proposedStartTime: js.Date
   
   /** Gets or sets the recurrence parameters. */
   var recurrence: AppointmentRecurrence
   
   /** Gets or sets the first instance of the recurrence pattern. */
-  var recurrenceStartTime: Date
+  var recurrenceStartTime: js.Date
   
   /** Gets or sets the change number on the server that identifies the meeting email change number. */
   var remoteChangeNumber: Double
   
   /** Gets or sets the start time for the meeting. */
-  var startTime: Date
+  var startTime: js.Date
 }
 object EmailMeetingInfo {
   
   inline def apply(
     allowNewTimeProposal: Boolean,
-    appointmentOriginalStartTime: Date,
+    appointmentOriginalStartTime: js.Date,
     appointmentRoamingId: String,
     duration: Double,
     isAllDay: Boolean,
@@ -63,11 +62,11 @@ object EmailMeetingInfo {
     isResponseRequested: Boolean,
     location: String,
     proposedDuration: Double,
-    proposedStartTime: Date,
+    proposedStartTime: js.Date,
     recurrence: AppointmentRecurrence,
-    recurrenceStartTime: Date,
+    recurrenceStartTime: js.Date,
     remoteChangeNumber: Double,
-    startTime: Date
+    startTime: js.Date
   ): EmailMeetingInfo = {
     val __obj = js.Dynamic.literal(allowNewTimeProposal = allowNewTimeProposal.asInstanceOf[js.Any], appointmentOriginalStartTime = appointmentOriginalStartTime.asInstanceOf[js.Any], appointmentRoamingId = appointmentRoamingId.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], isAllDay = isAllDay.asInstanceOf[js.Any], isReportedOutOfDateByServer = isReportedOutOfDateByServer.asInstanceOf[js.Any], isResponseRequested = isResponseRequested.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], proposedDuration = proposedDuration.asInstanceOf[js.Any], proposedStartTime = proposedStartTime.asInstanceOf[js.Any], recurrence = recurrence.asInstanceOf[js.Any], recurrenceStartTime = recurrenceStartTime.asInstanceOf[js.Any], remoteChangeNumber = remoteChangeNumber.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailMeetingInfo]
@@ -77,7 +76,7 @@ object EmailMeetingInfo {
     
     inline def setAllowNewTimeProposal(value: Boolean): Self = StObject.set(x, "allowNewTimeProposal", value.asInstanceOf[js.Any])
     
-    inline def setAppointmentOriginalStartTime(value: Date): Self = StObject.set(x, "appointmentOriginalStartTime", value.asInstanceOf[js.Any])
+    inline def setAppointmentOriginalStartTime(value: js.Date): Self = StObject.set(x, "appointmentOriginalStartTime", value.asInstanceOf[js.Any])
     
     inline def setAppointmentRoamingId(value: String): Self = StObject.set(x, "appointmentRoamingId", value.asInstanceOf[js.Any])
     
@@ -93,14 +92,14 @@ object EmailMeetingInfo {
     
     inline def setProposedDuration(value: Double): Self = StObject.set(x, "proposedDuration", value.asInstanceOf[js.Any])
     
-    inline def setProposedStartTime(value: Date): Self = StObject.set(x, "proposedStartTime", value.asInstanceOf[js.Any])
+    inline def setProposedStartTime(value: js.Date): Self = StObject.set(x, "proposedStartTime", value.asInstanceOf[js.Any])
     
     inline def setRecurrence(value: AppointmentRecurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
-    inline def setRecurrenceStartTime(value: Date): Self = StObject.set(x, "recurrenceStartTime", value.asInstanceOf[js.Any])
+    inline def setRecurrenceStartTime(value: js.Date): Self = StObject.set(x, "recurrenceStartTime", value.asInstanceOf[js.Any])
     
     inline def setRemoteChangeNumber(value: Double): Self = StObject.set(x, "remoteChangeNumber", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

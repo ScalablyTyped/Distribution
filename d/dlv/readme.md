@@ -10,10 +10,10 @@ Safely get a dot-notated property within an object.
 | ------------------ | :-------------: |
 | Full name          | dlv |
 | Keywords           | delve, dot notation, dot |
-| # releases         | 2 |
-| # dependents       | 119 |
-| # downloads        | 22232481 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4933217333333334E7 |
+| # stars            | 1150.0 |
 
 ## Links
 - [Homepage](https://github.com/developit/dlv#readme)

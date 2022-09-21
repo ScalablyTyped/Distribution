@@ -10,7 +10,7 @@ trait SchedulerMoveEvent
   
   var event: js.UndefOr[typings.kendoUi.kendo.data.SchedulerEvent] = js.undefined
   
-  var slot: js.UndefOr[js.Any] = js.undefined
+  var slot: js.UndefOr[Any] = js.undefined
 }
 object SchedulerMoveEvent {
   
@@ -25,7 +25,7 @@ object SchedulerMoveEvent {
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    inline def setSlot(value: js.Any): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+    inline def setSlot(value: Any): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
   }

@@ -19,7 +19,7 @@ object global {
     
     @JSGlobal("ZetaPush.Authentication")
     @js.native
-    class Authentication ()
+    open class Authentication ()
       extends typings.zetapushJs.mod.Authentication
     /* static members */
     object Authentication {
@@ -39,14 +39,14 @@ object global {
     
     @JSGlobal("ZetaPush.Client")
     @js.native
-    class Client protected ()
+    open class Client protected ()
       extends typings.zetapushJs.mod.Client {
       def this(options: ClientOptions) = this()
     }
     
     @JSGlobal("ZetaPush.SmartClient")
     @js.native
-    class SmartClient protected ()
+    open class SmartClient protected ()
       extends typings.zetapushJs.mod.SmartClient {
       def this(options: SmartClientOptions) = this()
     }
@@ -57,7 +57,7 @@ object global {
     
     @JSGlobal("ZetaPush.WeakClient")
     @js.native
-    class WeakClient protected ()
+    open class WeakClient protected ()
       extends typings.zetapushJs.mod.WeakClient {
       def this(options: WeakClientOptions) = this()
     }
@@ -66,7 +66,7 @@ object global {
       
       @JSGlobal("ZetaPush.services.Macro")
       @js.native
-      class Macro protected ()
+      open class Macro protected ()
         extends typings.zetapushJs.mod.services.Macro {
         def this($publish: AsyncMacroServicePublisher) = this()
       }

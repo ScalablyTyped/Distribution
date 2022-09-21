@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-encoding-sniffer
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Sniff the encoding from a HTML byte stream
@@ -10,10 +10,10 @@ Sniff the encoding from a HTML byte stream
 | ------------------ | :-------------: |
 | Full name          | html-encoding-sniffer |
 | Keywords           | encoding, html |
-| # releases         | 3 |
-| # dependents       | 92 |
-| # downloads        | 432376598 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7.792692866666667E7 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/html-encoding-sniffer#readme)

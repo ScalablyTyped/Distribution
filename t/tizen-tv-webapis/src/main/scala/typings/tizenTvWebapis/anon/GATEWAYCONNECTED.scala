@@ -16,41 +16,73 @@ trait GATEWAYCONNECTED extends StObject {
   
   /**
     * Gateway connected
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var GATEWAY_CONNECTED: `4`
   
   /**
     * Gateway disconnected
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var GATEWAY_DISCONNECTED: `5`
   
   /**
     * LAN cable connected
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var LAN_CABLE_ATTACHED: `1`
   
   /**
     * LAN cable disconnected
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var LAN_CABLE_DETACHED: `2`
   
   /**
     * LAN cable connection state unknown
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var LAN_CABLE_STATE_UNKNOWN: `3`
   
   /**
     * Wi-Fi module connected
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var WIFI_MODULE_STATE_ATTACHED: `6`
   
   /**
     * Wi-Fi module disconnected
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var WIFI_MODULE_STATE_DETACHED: `7`
   
   /**
     * Wi-Fi module connection state unknown
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var WIFI_MODULE_STATE_UNKNOWN: `8`
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-ejs
 
-Typings are for version 4.2
+Typings are for version 4.3
 
 ## Library description:
 ejs render middleware for koa
@@ -10,10 +10,10 @@ ejs render middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-ejs |
 | Keywords           | koa, render, ejs, view |
-| # releases         | 3 |
-| # dependents       | 73 |
-| # downloads        | 463144 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 37644.0 |
+| # stars            | 236.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/ejs)

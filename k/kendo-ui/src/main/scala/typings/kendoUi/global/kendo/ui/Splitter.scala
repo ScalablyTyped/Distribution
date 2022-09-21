@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Splitter")
 @js.native
-class Splitter protected ()
+open class Splitter protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Splitter {
   def this(element: Element) = this()

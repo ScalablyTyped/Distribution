@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_Timer")
 @js.native
-class ClassTimer ()
+open class ClassTimer ()
   extends StObject
      with typings.fibjs.ClassTimer

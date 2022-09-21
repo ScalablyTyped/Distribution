@@ -39,7 +39,7 @@ object EntityRecognizerMetadata {
     
     inline def setEntityTypesUndefined: Self = StObject.set(x, "EntityTypes", js.undefined)
     
-    inline def setEntityTypesVarargs(value: EntityRecognizerMetadataEntityTypesListItem*): Self = StObject.set(x, "EntityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: EntityRecognizerMetadataEntityTypesListItem*): Self = StObject.set(x, "EntityTypes", js.Array(value*))
     
     inline def setEvaluationMetrics(value: EntityRecognizerEvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
     

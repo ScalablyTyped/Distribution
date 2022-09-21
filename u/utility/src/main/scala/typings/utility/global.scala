@@ -1,9 +1,7 @@
 package typings.utility
 
-import typings.node.Buffer
-import typings.node.NodeJS.Immediate
-import typings.std.Date
-import typings.std.RegExp
+import typings.node.bufferMod.global.Buffer
+import typings.node.timersMod.global.NodeJS.Immediate
 import typings.utility.mod.IDateStructStaticReturns
 import typings.utility.mod.IJSONStaticOptions
 import typings.utility.mod.IReplaceInvalidHttpHeaderCharReturns
@@ -66,7 +64,7 @@ object global {
         *   - {Error} error
         *   - {Mix} value
         */
-      inline def `try`(fn: js.Function1[/* repeated */ js.Any, js.Any]): ITryStaticReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(fn.asInstanceOf[js.Any]).asInstanceOf[ITryStaticReturns]
+      inline def `try`(fn: js.Function1[/* repeated */ Any, Any]): ITryStaticReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(fn.asInstanceOf[js.Any]).asInstanceOf[ITryStaticReturns]
     }
     
     /**
@@ -76,8 +74,8 @@ object global {
       */
     inline def YYYYMMDD(d: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def YYYYMMDD(d: String, sep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def YYYYMMDD(d: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def YYYYMMDD(d: Date, sep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def YYYYMMDD(d: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def YYYYMMDD(d: js.Date, sep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def YYYYMMDDHHmmss(d: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def YYYYMMDDHHmmss(d: String, options: IYYYYMMDDHHmmssStaticOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -86,24 +84,24 @@ object global {
       *
       * @return {String}
       */
-    inline def YYYYMMDDHHmmss(d: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def YYYYMMDDHHmmss(d: Date, options: IYYYYMMDDHHmmssStaticOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def YYYYMMDDHHmmss(d: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def YYYYMMDDHHmmss(d: js.Date, options: IYYYYMMDDHHmmssStaticOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Access log format date. format: `moment().format('DD/MMM/YYYY:HH:mm:ss ZZ')`
       *
       * @return {String}
       */
-    inline def accessLogDate(d: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("accessLogDate")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def accessLogDate(d: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("accessLogDate")(d.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * optimize arguments to array
       * @param {Arguments} args
       * @return {Array}
       */
-    inline def argumentsToArray(args: js.Any*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentsToArray")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def argumentsToArray(args: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentsToArray")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[Any]]
     
-    inline def assign(target: ObjStatic, objects: js.Array[js.Any]): ObjStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[ObjStatic]
+    inline def assign(target: ObjStatic, objects: js.Array[Any]): ObjStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[ObjStatic]
     /**
       * ------------------0_0--------------------------
       * @description Defines For Object Methods
@@ -129,12 +127,8 @@ object global {
       */
     inline def base64decode(encode: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
     inline def base64decode(encode: String, urlsafe: Boolean): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
-    
-    inline def base64decode_buffer(encode: String, urlsafe: Boolean, encoding: buffer): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
-    inline def base64decode_buffer(encode: String, urlsafe: Unit, encoding: buffer): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
-    
-    inline def base64decode_utf8(encode: String, urlsafe: Boolean, encoding: utf8): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
-    inline def base64decode_utf8(encode: String, urlsafe: Unit, encoding: utf8): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+    inline def base64decode(encode: String, urlsafe: Boolean, encoding: utf8 | buffer): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+    inline def base64decode(encode: String, urlsafe: Unit, encoding: utf8 | buffer): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
     
     /**
       * Base64 encode string.
@@ -157,7 +151,7 @@ object global {
       *  - {Number} H, 0, 1, 9, 12, 23
       */
     inline def datestruct(): IDateStructStaticReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("datestruct")().asInstanceOf[IDateStructStaticReturns]
-    inline def datestruct(now: Date): IDateStructStaticReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("datestruct")(now.asInstanceOf[js.Any]).asInstanceOf[IDateStructStaticReturns]
+    inline def datestruct(now: js.Date): IDateStructStaticReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("datestruct")(now.asInstanceOf[js.Any]).asInstanceOf[IDateStructStaticReturns]
     
     /**
       * Safe decodeURIComponent, won't throw any error.
@@ -174,7 +168,7 @@ object global {
       * @param {...String} keys
       * @return {Object}
       */
-    inline def dig(obj: ObjStatic, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dig")(obj.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def dig(obj: ObjStatic, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dig")(List(obj.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
     /**
       * Safe encodeURIComponent, won't throw any error.
@@ -210,19 +204,10 @@ object global {
       * @param {Boolean} [useCache], default is true
       * @return {Array} names
       */
-    inline def getParamNames(func: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParamNames")(func.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def getParamNames(func: js.Function1[/* repeated */ js.Any, js.Any], cache: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParamNames")(func.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getParamNames(func: js.Function1[/* repeated */ Any, Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParamNames")(func.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getParamNames(func: js.Function1[/* repeated */ Any, Any], cache: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParamNames")(func.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     inline def has(obj: ObjStatic, prop: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    inline def hash(method: md5, s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def hash(method: md5, s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def hash(method: md5, s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def hash(method: md5, s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def hash(method: sha1, s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def hash(method: sha1, s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def hash(method: sha1, s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def hash(method: sha1, s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * --------------------0_0----------------
@@ -234,16 +219,17 @@ object global {
       * hash
       *
       * @param {String} method hash method, e.g.: 'md5', 'sha1'
-      * @param {String|Buffer} s
+      * @param {String|Buffer|Object} s
       * @param {String} [format] output string format, could be 'hex' or 'base64'. default is 'hex'.
       * @return {String} md5 hash string
       * @public
       */
-    inline def hash_md5(method: md5, s: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def hash_md5(method: md5, s: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def hash_sha1(method: sha1, s: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def hash_sha1(method: sha1, s: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hash(method: md5 | sha1, s: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hash(method: md5 | sha1, s: String, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hash(method: md5 | sha1, s: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hash(method: md5 | sha1, s: js.Object, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hash(method: md5 | sha1, s: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hash(method: md5 | sha1, s: Buffer, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * HMAC algorithm.
@@ -293,8 +279,8 @@ object global {
       */
     inline def logDate(d: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def logDate(d: String, msSep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any], msSep.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def logDate(d: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def logDate(d: Date, msSep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any], msSep.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def logDate(d: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def logDate(d: js.Date, msSep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any], msSep.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * generate a real map object(clean object), no constructor, no __proto__
@@ -307,21 +293,19 @@ object global {
     /**
       * md5 hash
       *
-      * @param {String|Buffer} s
+      * @param {String|Buffer|Object} s
       * @param {String} [format] output string format, could be 'hex' or 'base64'. default is 'hex'.
       * @return {String} md5 hash string
       * @public
       */
     inline def md5(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def md5(s: String, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def md5(s: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def md5(s: js.Object, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def md5(s: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def md5(s: Buffer, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def md5_base64(s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def md5_base64(s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def md5_hex(s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def md5_hex(s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def mkdir(dir: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def mkdir(dir: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
     /**
       * ---------------0_0-------------------
@@ -335,7 +319,7 @@ object global {
       * @return {Function}
       * @public
       */
-    inline def noop(): js.Function0[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[js.Function0[js.Any]]
+    inline def noop(): js.Function0[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[js.Function0[Any]]
     
     /**
       * Produces a random integer between the inclusive `lower` and `upper` bounds.
@@ -355,8 +339,8 @@ object global {
       * @param {Number} num, number of sub items.
       * @return {Array}
       */
-    inline def randomSlice(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSlice")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-    inline def randomSlice(arr: js.Array[js.Any], num: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomSlice")(arr.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def randomSlice(arr: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSlice")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+    inline def randomSlice(arr: js.Array[Any], num: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomSlice")(arr.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     inline def randomString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")().asInstanceOf[String]
     inline def randomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -365,7 +349,7 @@ object global {
     inline def randomString(length: Unit, charSet: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any], charSet.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def randomString(length: Unit, charSet: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any], charSet.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def readJSON(filepath: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def readJSON(filepath: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
     inline def readJSONSync(filepath: String): ObjStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[ObjStatic]
     
@@ -378,9 +362,9 @@ object global {
       * @return {String}
       */
     inline def replace(str: String, substr: String, newSubstr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def replace(str: String, substr: String, newSubstr: js.Function1[/* repeated */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def replace(str: String, substr: RegExp, newSubstr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def replace(str: String, substr: RegExp, newSubstr: js.Function1[/* repeated */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def replace(str: String, substr: String, newSubstr: js.Function1[/* repeated */ Any, Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def replace(str: String, substr: js.RegExp, newSubstr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def replace(str: String, substr: js.RegExp, newSubstr: js.Function1[/* repeated */ Any, Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Replace invalid http header characters with replacement
@@ -391,7 +375,7 @@ object global {
       */
     inline def replaceInvalidHttpHeaderChar(`val`: String): IReplaceInvalidHttpHeaderCharReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceInvalidHttpHeaderChar")(`val`.asInstanceOf[js.Any]).asInstanceOf[IReplaceInvalidHttpHeaderCharReturns]
     inline def replaceInvalidHttpHeaderChar(`val`: String, replacement: String): IReplaceInvalidHttpHeaderCharReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceInvalidHttpHeaderChar")(`val`.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[IReplaceInvalidHttpHeaderCharReturns]
-    inline def replaceInvalidHttpHeaderChar(`val`: String, replacement: js.Function1[/* repeated */ js.Any, js.Any]): IReplaceInvalidHttpHeaderCharReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceInvalidHttpHeaderChar")(`val`.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[IReplaceInvalidHttpHeaderCharReturns]
+    inline def replaceInvalidHttpHeaderChar(`val`: String, replacement: js.Function1[/* repeated */ Any, Any]): IReplaceInvalidHttpHeaderCharReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceInvalidHttpHeaderChar")(`val`.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[IReplaceInvalidHttpHeaderCharReturns]
     
     /**
       * -------------------0_0---------------------
@@ -399,43 +383,39 @@ object global {
       * @see https://github.com/node-modules/utility#timers
       * -------------------0^0-------------------
       */
-    inline def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Immediate = (^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Immediate]
+    inline def setImmediate(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): Immediate = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Immediate]
     
-    inline def setImmediate_Unit(fn: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setImmediate_Unit(fn: js.Function1[/* repeated */ Any, Any], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     /**
       * sha1 hash
       *
-      * @param {String|Buffer} s
+      * @param {String|Buffer|Object} s
       * @param {String} [format] output string format, could be 'hex' or 'base64'. default is 'hex'.
       * @return {String} sha1 hash string
       * @public
       */
     inline def sha1(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sha1(s: String, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sha1(s: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sha1(s: js.Object, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def sha1(s: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    inline def sha1_base64(s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def sha1_base64(s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def sha1_hex(s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def sha1_hex(s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sha1(s: Buffer, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * sha256 hash
       *
-      * @param {String|Buffer} s
+      * @param {String|Buffer|Object} s
       * @param {String} [format] output string format, could be 'hex' or 'base64'. default is 'hex'.
       * @return {String} sha256 hash string
       * @public
       */
     inline def sha256(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sha256(s: String, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sha256(s: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sha256(s: js.Object, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def sha256(s: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    inline def sha256_base64(s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def sha256_base64(s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def sha256_hex(s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def sha256_hex(s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sha256(s: Buffer, format: hex | base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Remove one exists element from an array
@@ -443,7 +423,7 @@ object global {
       * @param  {Number} index - remove element index
       * @return {Array} the array instance
       */
-    inline def spliceOne(arr: js.Array[js.Any], index: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spliceOne")(arr.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def spliceOne(arr: js.Array[Any], index: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spliceOne")(arr.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * split string to array
@@ -457,7 +437,7 @@ object global {
     /**
       * always optimized
       */
-    inline def splitAlwaysOptimized(args: js.Any*): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitAlwaysOptimized")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def splitAlwaysOptimized(args: Any*): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitAlwaysOptimized")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[String]]
     
     inline def strictJSONParse(str: String): ObjStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("strictJSONParse")(str.asInstanceOf[js.Any]).asInstanceOf[ObjStatic]
     
@@ -465,9 +445,9 @@ object global {
       * Get Unix's timestamp in seconds.
       * @return {Number}
       */
-    inline def timestamp(): Double | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Double | Date]
-    inline def timestamp(t: String): Double | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(t.asInstanceOf[js.Any]).asInstanceOf[Double | Date]
-    inline def timestamp(t: Double): Double | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(t.asInstanceOf[js.Any]).asInstanceOf[Double | Date]
+    inline def timestamp(): Double | js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Double | js.Date]
+    inline def timestamp(t: String): Double | js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(t.asInstanceOf[js.Any]).asInstanceOf[Double | js.Date]
+    inline def timestamp(t: Double): Double | js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(t.asInstanceOf[js.Any]).asInstanceOf[Double | js.Date]
     
     /**
       * Convert string to Number if string in safe Number scope.
@@ -488,10 +468,10 @@ object global {
     inline def unescape(html: String): String | ObjStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(html.asInstanceOf[js.Any]).asInstanceOf[String | ObjStatic]
     inline def unescape(html: String, `type`: String): String | ObjStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(html.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String | ObjStatic]
     
-    inline def writeJSON(filepath: String, str: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    inline def writeJSON(filepath: String, str: String, options: IJSONStaticOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    inline def writeJSON(filepath: String, str: ObjStatic): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    inline def writeJSON(filepath: String, str: ObjStatic, options: IJSONStaticOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def writeJSON(filepath: String, str: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+    inline def writeJSON(filepath: String, str: String, options: IJSONStaticOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+    inline def writeJSON(filepath: String, str: ObjStatic): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+    inline def writeJSON(filepath: String, str: ObjStatic, options: IJSONStaticOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     inline def writeJSONSync(filepath: String, str: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def writeJSONSync(filepath: String, str: String, options: IJSONStaticOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]

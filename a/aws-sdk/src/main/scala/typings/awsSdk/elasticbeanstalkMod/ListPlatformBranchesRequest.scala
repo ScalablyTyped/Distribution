@@ -34,7 +34,7 @@ object ListPlatformBranchesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: SearchFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SearchFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxRecords(value: PlatformBranchMaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-stream
 
-Typings are for version 6.0.0
+Typings are for version 6.0.1
 
 ## Library description:
 Get a stream as a string, buffer, or array
@@ -10,15 +10,12 @@ Get a stream as a string, buffer, or array
 | ------------------ | :-------------: |
 | Full name          | get-stream |
 | Keywords           | get, stream, promise, concat, string, text, buffer, read, data, consume, readable, readablestream, array, object |
-| # releases         | 5 |
-| # dependents       | 610 |
-| # downloads        | 1858972071 |
-| # stars            | 10 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2.99152153E8 |
+| # stars            | 277.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/get-stream#readme)
-- [Bugs](https://github.com/sindresorhus/get-stream/issues)
-- [Repository](https://github.com/sindresorhus/get-stream)
 - [Npm](https://www.npmjs.com/package/get-stream)
     
 

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs an empty Panel of the given .type.
   * @param {EnumValue=} type If not supplied, the default Panel type is Panel.Position.
   */
-class Panel () extends GraphObject {
+open class Panel () extends GraphObject {
   def this(`type`: EnumValue) = this()
   
   /**
@@ -32,7 +32,7 @@ class Panel () extends GraphObject {
   var columnSizing: EnumValue = js.native
   
   /**Gets or sets the optional model data to which this panel is data-bound.*/
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /**Gets or sets the default alignment spot of this Panel, used as the alignment for an element when its GraphObject.alignment value is Spot.Default.*/
   var defaultAlignment: Spot = js.native
@@ -126,7 +126,7 @@ class Panel () extends GraphObject {
   def insertAt(index: Double, element: GraphObject): Unit = js.native
   
   /**Gets or sets a JavaScript Array of values or objects, each of which will be represented by a Panel as elements in this Panel.*/
-  var itemArray: js.Array[js.Any] = js.native
+  var itemArray: js.Array[Any] = js.native
   
   /**Gets or sets the name of the item data property that returns a string describing that data's category, or a function that takes an item data object and returns that string; the default value is the name 'category'.*/
   var itemCategoryProperty: PropertyAccessor = js.native

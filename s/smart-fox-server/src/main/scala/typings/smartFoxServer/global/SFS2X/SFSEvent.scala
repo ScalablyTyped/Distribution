@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SFS2X.SFSEvent")
 @js.native
-class SFSEvent ()
+open class SFSEvent ()
   extends StObject
      with typings.smartFoxServer.SFS2X.SFSEvent
 /* static members */

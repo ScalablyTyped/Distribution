@@ -1,7 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.collapsed
-import typings.arcgisJsApi.arcgisJsApiStrings.expanded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +14,11 @@ trait FieldGroupConfigProperties extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The field configurations belonging to a group.
+    * An array of field configurations belonging to a group.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#fieldConfig)
     */
   var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties]] = js.undefined
-  
-  var initialState: js.UndefOr[expanded | collapsed] = js.undefined
   
   /**
     * The field's label.
@@ -32,7 +28,10 @@ trait FieldGroupConfigProperties extends StObject {
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * A reference to an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a boolean value.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint Arcade Profile](https://developers.arcgis.com/javascript/latest/arcade/#forms).
+    *
+    * @default null
+    * @deprecated since version 4.23. Set fields via the {@link module:esri/form/elements/GroupElement#visibilityExpression GroupElement.visibilityExpression}
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#visibilityExpression)
     */
@@ -55,11 +54,7 @@ object FieldGroupConfigProperties {
     
     inline def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
     
-    inline def setFieldConfigVarargs(value: FieldConfigProperties*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
-    
-    inline def setInitialState(value: expanded | collapsed): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
-    
-    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setFieldConfigVarargs(value: FieldConfigProperties*): Self = StObject.set(x, "fieldConfig", js.Array(value*))
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

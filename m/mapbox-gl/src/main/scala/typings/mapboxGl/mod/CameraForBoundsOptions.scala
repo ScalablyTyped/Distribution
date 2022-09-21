@@ -11,8 +11,6 @@ trait CameraForBoundsOptions
   var maxZoom: js.UndefOr[Double] = js.undefined
   
   var offset: js.UndefOr[PointLike] = js.undefined
-  
-  var padding: js.UndefOr[Double | PaddingOptions] = js.undefined
 }
 object CameraForBoundsOptions {
   
@@ -30,9 +28,5 @@ object CameraForBoundsOptions {
     inline def setOffset(value: PointLike): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
-    
-    inline def setPadding(value: Double | PaddingOptions): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
-    
-    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

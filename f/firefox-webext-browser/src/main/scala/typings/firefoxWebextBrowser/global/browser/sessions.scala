@@ -101,7 +101,7 @@ object sessions {
     * @param key The key which corresponds to the value being set.
     * @param value The value being set.
     */
-  inline def setTabValue(tabId: Double, key: String, value: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTabValue")(tabId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setTabValue(tabId: Double, key: String, value: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTabValue")(tabId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Set a key/value pair on a given window.
@@ -109,5 +109,5 @@ object sessions {
     * @param key The key which corresponds to the value being set.
     * @param value The value being set.
     */
-  inline def setWindowValue(windowId: Double, key: String, value: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setWindowValue")(windowId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setWindowValue(windowId: Double, key: String, value: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setWindowValue")(windowId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

@@ -162,7 +162,7 @@ object AMap {
         
         inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
         
         inline def setCenter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
         
@@ -363,7 +363,7 @@ object AMap {
       /**
         * 定位点Circle的配置
         */
-      var circleOptions: js.UndefOr[typings.amapJsApi.AMap.Circle.Options[js.Any]] = js.undefined
+      var circleOptions: js.UndefOr[typings.amapJsApi.AMap.Circle.Options[Any]] = js.undefined
       
       /**
         * 是否转换成高德坐标
@@ -386,7 +386,7 @@ object AMap {
       /**
         * 定位点Marker的配置
         */
-      var markerOptions: js.UndefOr[typings.amapJsApi.AMap.Marker.Options[js.Any]] = js.undefined
+      var markerOptions: js.UndefOr[typings.amapJsApi.AMap.Marker.Options[Any]] = js.undefined
       
       /**
         * 缓存毫秒数
@@ -469,7 +469,7 @@ object AMap {
         
         inline def setButtonPositionUndefined: Self = StObject.set(x, "buttonPosition", js.undefined)
         
-        inline def setCircleOptions(value: typings.amapJsApi.AMap.Circle.Options[js.Any]): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
+        inline def setCircleOptions(value: typings.amapJsApi.AMap.Circle.Options[Any]): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
         
         inline def setCircleOptionsUndefined: Self = StObject.set(x, "circleOptions", js.undefined)
         
@@ -493,7 +493,7 @@ object AMap {
         
         inline def setGeoLocationFirstUndefined: Self = StObject.set(x, "GeoLocationFirst", js.undefined)
         
-        inline def setMarkerOptions(value: typings.amapJsApi.AMap.Marker.Options[js.Any]): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
+        inline def setMarkerOptions(value: typings.amapJsApi.AMap.Marker.Options[Any]): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
         
         inline def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
         

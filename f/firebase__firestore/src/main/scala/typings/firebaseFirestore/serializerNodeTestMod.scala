@@ -1,14 +1,15 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.firestoreProtoApiMod.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/remote/serializer.node.test", JSImport.Namespace)
-@js.native
-object serializerNodeTestMod extends js.Object {
-  def verifyProtobufJsRoundTrip(
-    jsonValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any
-  ): Unit = js.native
+object serializerNodeTestMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/test/unit/remote/serializer.node.test", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def verifyProtobufJsRoundTrip(jsonValue: Value): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyProtobufJsRoundTrip")(jsonValue.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

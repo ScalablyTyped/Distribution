@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IOption extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var desiredResponseDataType: js.UndefOr[DataType] = js.undefined
   
@@ -27,7 +27,7 @@ object IOption {
   
   extension [Self <: IOption](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -39,7 +39,7 @@ object IOption {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: IFileData*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: IFileData*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

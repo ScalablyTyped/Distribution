@@ -20,8 +20,8 @@ object sphereMod {
   inline def getArea(geometry: default): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def getArea(geometry: default, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def getDistance(c1: js.Array[js.Any], c2: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def getDistance(c1: js.Array[js.Any], c2: js.Array[js.Any], opt_radius: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], opt_radius.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDistance(c1: js.Array[Any], c2: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDistance(c1: js.Array[Any], c2: js.Array[Any], opt_radius: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], opt_radius.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getLength(geometry: default): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def getLength(geometry: default, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]

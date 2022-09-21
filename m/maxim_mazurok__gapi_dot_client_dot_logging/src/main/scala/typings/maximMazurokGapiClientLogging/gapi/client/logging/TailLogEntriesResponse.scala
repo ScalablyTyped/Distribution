@@ -28,12 +28,12 @@ object TailLogEntriesResponse {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: LogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: LogEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setSuppressionInfo(value: js.Array[SuppressionInfo]): Self = StObject.set(x, "suppressionInfo", value.asInstanceOf[js.Any])
     
     inline def setSuppressionInfoUndefined: Self = StObject.set(x, "suppressionInfo", js.undefined)
     
-    inline def setSuppressionInfoVarargs(value: SuppressionInfo*): Self = StObject.set(x, "suppressionInfo", js.Array(value :_*))
+    inline def setSuppressionInfoVarargs(value: SuppressionInfo*): Self = StObject.set(x, "suppressionInfo", js.Array(value*))
   }
 }

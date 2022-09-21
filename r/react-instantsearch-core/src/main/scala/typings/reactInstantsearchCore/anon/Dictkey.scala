@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictkey
   extends StObject
-     with /* widgetId */ StringDictionary[js.Any] {
+     with /* widgetId */ StringDictionary[Any] {
   
   var aroundLatLng: Boolean
 }

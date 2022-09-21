@@ -1,7 +1,7 @@
 
 # Scala.js typings for highlightjs
 
-Typings are for version 10.1
+Typings are for version 9.12
 
 ## Library description:
 Syntax highlighting for the Web
@@ -10,10 +10,10 @@ Syntax highlighting for the Web
 | ------------------ | :-------------: |
 | Full name          | highlightjs |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 109 |
-| # downloads        | 1138252 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 116219.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/highlightjs)

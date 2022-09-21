@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDistributionConfigurationRequest extends StObject {
   
   /**
-    * The idempotency token of the distribution configuration. 
+    * The idempotency token of the distribution configuration.
     */
   var clientToken: ClientToken
   
   /**
-    * The description of the distribution configuration. 
+    * The description of the distribution configuration.
     */
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the distribution configuration that you want to update. 
+    * The Amazon Resource Name (ARN) of the distribution configuration that you want to update.
     */
   var distributionConfigurationArn: DistributionConfigurationArn
   
   /**
-    * The distributions of the distribution configuration. 
+    * The distributions of the distribution configuration.
     */
   var distributions: DistributionList
 }
@@ -49,6 +49,6 @@ object UpdateDistributionConfigurationRequest {
     
     inline def setDistributions(value: DistributionList): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     
-    inline def setDistributionsVarargs(value: Distribution*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+    inline def setDistributionsVarargs(value: Distribution*): Self = StObject.set(x, "distributions", js.Array(value*))
   }
 }

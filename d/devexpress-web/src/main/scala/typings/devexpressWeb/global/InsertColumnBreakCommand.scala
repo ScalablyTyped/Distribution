@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertColumnBreakCommand")
 @js.native
-class InsertColumnBreakCommand ()
+open class InsertColumnBreakCommand ()
   extends StObject
      with typings.devexpressWeb.InsertColumnBreakCommand {
   

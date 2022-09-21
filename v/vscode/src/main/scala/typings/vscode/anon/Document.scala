@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Document extends StObject {
   
-  var document: TextDocument
+  val document: TextDocument
   
-  var range: Range
+  val range: Range
 }
 object Document {
   

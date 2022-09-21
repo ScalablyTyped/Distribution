@@ -12,11 +12,11 @@ trait Type[ResourceType]
   
   var `type`: js.UndefOr[Constructor[ResourceType]] = js.undefined
   
-  def validator(value: js.Any): /* is ResourceType */ Boolean
+  def validator(value: Any): /* is ResourceType */ Boolean
 }
 object Type {
   
-  inline def apply[ResourceType](validator: js.Any => /* is ResourceType */ Boolean): Type[ResourceType] = {
+  inline def apply[ResourceType](validator: Any => /* is ResourceType */ Boolean): Type[ResourceType] = {
     val __obj = js.Dynamic.literal(validator = js.Any.fromFunction1(validator))
     __obj.asInstanceOf[Type[ResourceType]]
   }
@@ -27,6 +27,6 @@ object Type {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValidator(value: js.Any => /* is ResourceType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+    inline def setValidator(value: Any => /* is ResourceType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
   }
 }

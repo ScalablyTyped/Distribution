@@ -1,8 +1,6 @@
 package typings.asyncCsv
 
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,8 +15,8 @@ object mod {
   /**
     * @param options
     */
-  inline def generate(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def generate(options: CsvGenerateOptions): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def generate(): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def generate(options: CsvGenerateOptions): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
   
   /**
     * Parses a CSV file into an array of rows.
@@ -26,8 +24,8 @@ object mod {
     * @param input
     * @param options
     */
-  inline def parse(input: String): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def parse(input: String, options: CsvParseOptions): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def parse(input: String): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def parse(input: String, options: CsvParseOptions): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   
   /**
     * Converts an array of rows into a CSV string.
@@ -48,8 +46,8 @@ object mod {
     data: js.Array[T],
     handler: js.Function3[
       /* record */ T, 
-      /* callback */ js.Function2[/* err */ js.UndefOr[Error | Null], /* record */ js.UndefOr[T], Unit], 
-      /* params */ js.UndefOr[js.Any], 
+      /* callback */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* record */ js.UndefOr[T], Unit], 
+      /* params */ js.UndefOr[Any], 
       U
     ]
   ): js.Promise[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(data.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[U]]]
@@ -57,8 +55,8 @@ object mod {
     data: js.Array[T],
     handler: js.Function3[
       /* record */ T, 
-      /* callback */ js.Function2[/* err */ js.UndefOr[Error | Null], /* record */ js.UndefOr[T], Unit], 
-      /* params */ js.UndefOr[js.Any], 
+      /* callback */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* record */ js.UndefOr[T], Unit], 
+      /* params */ js.UndefOr[Any], 
       U
     ],
     options: TransformOptions
@@ -121,9 +119,9 @@ object mod {
     }
   }
   
-  type CastingDateFunction = js.Function2[/* value */ String, /* context */ CastingContext, Date]
+  type CastingDateFunction = js.Function2[/* value */ String, /* context */ CastingContext, js.Date]
   
-  type CastingFunction = js.Function2[/* value */ String, /* context */ CastingContext, js.Any]
+  type CastingFunction = js.Function2[/* value */ String, /* context */ CastingContext, Any]
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
@@ -160,7 +158,7 @@ object mod {
     /**
       * When to stop the generation.
       */
-    var end: js.UndefOr[Double | Date] = js.undefined
+    var end: js.UndefOr[Double | js.Date] = js.undefined
     
     /**
       * One or multiple characters to print at the end of the file; only
@@ -231,7 +229,7 @@ object mod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -245,7 +243,7 @@ object mod {
       
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      inline def setEnd(value: Double | Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double | js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
@@ -350,7 +348,7 @@ object mod {
       * in the sense that records will be objects instead of arrays.
       */
     var columns: js.UndefOr[
-        js.Array[ColumnOption] | Boolean | (js.Function1[/* record */ js.Any, js.Array[ColumnOption]])
+        js.Array[ColumnOption] | Boolean | (js.Function1[/* record */ Any, js.Array[ColumnOption]])
       ] = js.undefined
     
     /**
@@ -487,13 +485,13 @@ object mod {
       
       inline def setAuto_parse(value: Boolean | CastingFunction): Self = StObject.set(x, "auto_parse", value.asInstanceOf[js.Any])
       
-      inline def setAuto_parseFunction2(value: (/* value */ String, /* context */ CastingContext) => js.Any): Self = StObject.set(x, "auto_parse", js.Any.fromFunction2(value))
+      inline def setAuto_parseFunction2(value: (/* value */ String, /* context */ CastingContext) => Any): Self = StObject.set(x, "auto_parse", js.Any.fromFunction2(value))
       
       inline def setAuto_parseUndefined: Self = StObject.set(x, "auto_parse", js.undefined)
       
       inline def setAuto_parse_date(value: Boolean | CastingDateFunction): Self = StObject.set(x, "auto_parse_date", value.asInstanceOf[js.Any])
       
-      inline def setAuto_parse_dateFunction2(value: (/* value */ String, /* context */ CastingContext) => Date): Self = StObject.set(x, "auto_parse_date", js.Any.fromFunction2(value))
+      inline def setAuto_parse_dateFunction2(value: (/* value */ String, /* context */ CastingContext) => js.Date): Self = StObject.set(x, "auto_parse_date", js.Any.fromFunction2(value))
       
       inline def setAuto_parse_dateUndefined: Self = StObject.set(x, "auto_parse_date", js.undefined)
       
@@ -503,25 +501,23 @@ object mod {
       
       inline def setCast(value: Boolean | CastingFunction): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
-      inline def setCastFunction2(value: (/* value */ String, /* context */ CastingContext) => js.Any): Self = StObject.set(x, "cast", js.Any.fromFunction2(value))
+      inline def setCastFunction2(value: (/* value */ String, /* context */ CastingContext) => Any): Self = StObject.set(x, "cast", js.Any.fromFunction2(value))
       
       inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
       
       inline def setCast_date(value: Boolean | CastingDateFunction): Self = StObject.set(x, "cast_date", value.asInstanceOf[js.Any])
       
-      inline def setCast_dateFunction2(value: (/* value */ String, /* context */ CastingContext) => Date): Self = StObject.set(x, "cast_date", js.Any.fromFunction2(value))
+      inline def setCast_dateFunction2(value: (/* value */ String, /* context */ CastingContext) => js.Date): Self = StObject.set(x, "cast_date", js.Any.fromFunction2(value))
       
       inline def setCast_dateUndefined: Self = StObject.set(x, "cast_date", js.undefined)
       
-      inline def setColumns(
-        value: js.Array[ColumnOption] | Boolean | (js.Function1[/* record */ js.Any, js.Array[ColumnOption]])
-      ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnOption] | Boolean | (js.Function1[/* record */ Any, js.Array[ColumnOption]])): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsFunction1(value: /* record */ js.Any => js.Array[ColumnOption]): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
+      inline def setColumnsFunction1(value: /* record */ Any => js.Array[ColumnOption]): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: ColumnOption*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnOption*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -571,7 +567,7 @@ object mod {
       
       inline def setRecord_delimiterUndefined: Self = StObject.set(x, "record_delimiter", js.undefined)
       
-      inline def setRecord_delimiterVarargs(value: (Buffer | String)*): Self = StObject.set(x, "record_delimiter", js.Array(value :_*))
+      inline def setRecord_delimiterVarargs(value: (Buffer | String)*): Self = StObject.set(x, "record_delimiter", js.Array(value*))
       
       inline def setRelax(value: Boolean): Self = StObject.set(x, "relax", value.asInstanceOf[js.Any])
       
@@ -700,7 +696,7 @@ object mod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: (ParseColumnOption | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ParseColumnOption | String)*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setDelimiter(value: String | Buffer): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -750,7 +746,7 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.node.Buffer
+    - typings.node.bufferMod.global.Buffer
     - typings.asyncCsv.asyncCsvStrings.auto
     - typings.asyncCsv.asyncCsvStrings.unix
     - typings.asyncCsv.asyncCsvStrings.mac
@@ -777,7 +773,7 @@ object mod {
     /**
       * Pass user defined parameters to the user handler as last argument.
       */
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
   }
   object TransformOptions {
     
@@ -796,7 +792,7 @@ object mod {
       
       inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }

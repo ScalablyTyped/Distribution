@@ -8,24 +8,24 @@ trait DefaultCollisionCoordinator
   extends StObject
      with ICollisionCoordinator {
   
-  /* private */ var _collideWithWorld: js.Any
+  /* private */ var _collideWithWorld: Any
   
-  /* private */ var _finalPosition: js.Any
+  /* private */ var _finalPosition: Any
   
-  /* private */ var _scaledPosition: js.Any
+  /* private */ var _scaledPosition: Any
   
-  /* private */ var _scaledVelocity: js.Any
+  /* private */ var _scaledVelocity: Any
   
-  /* private */ var _scene: js.Any
+  /* private */ var _scene: Any
 }
 object DefaultCollisionCoordinator {
   
   inline def apply(
-    _collideWithWorld: js.Any,
-    _finalPosition: js.Any,
-    _scaledPosition: js.Any,
-    _scaledVelocity: js.Any,
-    _scene: js.Any,
+    _collideWithWorld: Any,
+    _finalPosition: Any,
+    _scaledPosition: Any,
+    _scaledVelocity: Any,
+    _scene: Any,
     createCollider: () => Collider,
     getNewPosition: (Vector3, Vector3, Collider, Double, Nullable[AbstractMesh], js.Function3[
       /* collisionIndex */ Double, 
@@ -41,14 +41,14 @@ object DefaultCollisionCoordinator {
   
   extension [Self <: DefaultCollisionCoordinator](x: Self) {
     
-    inline def set_collideWithWorld(value: js.Any): Self = StObject.set(x, "_collideWithWorld", value.asInstanceOf[js.Any])
+    inline def set_collideWithWorld(value: Any): Self = StObject.set(x, "_collideWithWorld", value.asInstanceOf[js.Any])
     
-    inline def set_finalPosition(value: js.Any): Self = StObject.set(x, "_finalPosition", value.asInstanceOf[js.Any])
+    inline def set_finalPosition(value: Any): Self = StObject.set(x, "_finalPosition", value.asInstanceOf[js.Any])
     
-    inline def set_scaledPosition(value: js.Any): Self = StObject.set(x, "_scaledPosition", value.asInstanceOf[js.Any])
+    inline def set_scaledPosition(value: Any): Self = StObject.set(x, "_scaledPosition", value.asInstanceOf[js.Any])
     
-    inline def set_scaledVelocity(value: js.Any): Self = StObject.set(x, "_scaledVelocity", value.asInstanceOf[js.Any])
+    inline def set_scaledVelocity(value: Any): Self = StObject.set(x, "_scaledVelocity", value.asInstanceOf[js.Any])
     
-    inline def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
+    inline def set_scene(value: Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
   }
 }

@@ -15,5 +15,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The only common initialize of a Placeholder is to set its .padding.
   */
-class Placeholder ()
+open class Placeholder ()
   extends typings.go.mod.Placeholder

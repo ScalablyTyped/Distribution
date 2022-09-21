@@ -22,10 +22,10 @@ object Errors {
     
     inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setName(value: InternalNamePath): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value*))
   }
 }

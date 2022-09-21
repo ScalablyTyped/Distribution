@@ -31,7 +31,7 @@ object CreateCollectdTimeSeriesRequest {
     
     inline def setCollectdPayloadsUndefined: Self = StObject.set(x, "collectdPayloads", js.undefined)
     
-    inline def setCollectdPayloadsVarargs(value: CollectdPayload*): Self = StObject.set(x, "collectdPayloads", js.Array(value :_*))
+    inline def setCollectdPayloadsVarargs(value: CollectdPayload*): Self = StObject.set(x, "collectdPayloads", js.Array(value*))
     
     inline def setCollectdVersion(value: String): Self = StObject.set(x, "collectdVersion", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "path-to-regexp" : "6.2.0"
+      "path-to-regexp" : "6.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "path-to-regexp" : "6.2.0"
+      "path-to-regexp" : "6.2.1"
     }
   ],
   "compile-devDependencies" : [

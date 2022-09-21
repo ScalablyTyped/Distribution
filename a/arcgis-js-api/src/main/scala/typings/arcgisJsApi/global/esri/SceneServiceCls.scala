@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.SceneService")
 @js.native
-class SceneServiceCls ()
+open class SceneServiceCls ()
   extends StObject
      with typings.arcgisJsApi.esri.SceneService {
   def this(properties: SceneServiceProperties) = this()

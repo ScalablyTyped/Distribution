@@ -51,7 +51,7 @@ object anon {
       
       inline def setAll(value: js.Array[IconName]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      inline def setAllVarargs(value: IconName*): Self = StObject.set(x, "all", js.Array(value :_*))
+      inline def setAllVarargs(value: IconName*): Self = StObject.set(x, "all", js.Array(value*))
     }
   }
 }

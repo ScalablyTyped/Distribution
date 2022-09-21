@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAppointmentResizingEventArgs")
 @js.native
-class ASPxClientAppointmentResizingEventArgs protected ()
+open class ASPxClientAppointmentResizingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAppointmentResizingEventArgs {
   /**
@@ -20,7 +20,7 @@ class ASPxClientAppointmentResizingEventArgs protected ()
     * @param newInterval An  object specifying the appointment's interval after the resize operation.
     */
   def this(
-    mouseEvent: js.Any,
+    mouseEvent: Any,
     appointmentId: String,
     oldInterval: typings.devexpressWeb.ASPxClientTimeInterval,
     newInterval: typings.devexpressWeb.ASPxClientTimeInterval
@@ -42,7 +42,7 @@ class ASPxClientAppointmentResizingEventArgs protected ()
     * Gets a mouse event object related to the current appointment resizing operation.
     */
   /* CompleteClass */
-  var mouseEvent: js.Any = js.native
+  var mouseEvent: Any = js.native
   
   /**
     * Gets the appointment's interval after resizing.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "ResolvedReflectiveFactory")
 @js.native
-class ResolvedReflectiveFactory protected () extends StObject {
+open class ResolvedReflectiveFactory protected () extends StObject {
   def this(
     /**
     * Factory function which can return an instance of an object represented by a key.
@@ -15,13 +15,13 @@ class ResolvedReflectiveFactory protected () extends StObject {
     /**
     * Arguments (dependencies) to the `factory` function.
     */
-  dependencies: js.Array[ɵangularPackagesCoreCoreD]
+  dependencies: js.Array[ReflectiveDependency]
   ) = this()
   
   /**
     * Arguments (dependencies) to the `factory` function.
     */
-  var dependencies: js.Array[ɵangularPackagesCoreCoreD] = js.native
+  var dependencies: js.Array[ReflectiveDependency] = js.native
   
   /**
     * Factory function which can return an instance of an object represented by a key.

@@ -45,7 +45,7 @@ object PagingObject {
     
     inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

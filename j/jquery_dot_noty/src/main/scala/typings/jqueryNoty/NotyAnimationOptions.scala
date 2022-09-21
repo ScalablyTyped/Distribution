@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NotyAnimationOptions extends StObject {
   
-  var close: js.UndefOr[js.Any] = js.undefined
+  var close: js.UndefOr[Any] = js.undefined
   
   var easing: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Any] = js.undefined
+  var open: js.UndefOr[Any] = js.undefined
   
   var speed: js.UndefOr[Double] = js.undefined
 }
@@ -23,7 +23,7 @@ object NotyAnimationOptions {
   
   extension [Self <: NotyAnimationOptions](x: Self) {
     
-    inline def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
@@ -31,7 +31,7 @@ object NotyAnimationOptions {
     
     inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    inline def setOpen(value: js.Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     

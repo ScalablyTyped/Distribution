@@ -1,6 +1,6 @@
 package typings.asyncValidator
 
-import typings.asyncValidator.mod.RuleType
+import typings.asyncValidator.interfaceMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,6 +78,12 @@ object asyncValidatorStrings {
     extends StObject
        with RuleType
   inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
+  sealed trait pattern
+    extends StObject
+       with RuleType
+  inline def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
   sealed trait regexp

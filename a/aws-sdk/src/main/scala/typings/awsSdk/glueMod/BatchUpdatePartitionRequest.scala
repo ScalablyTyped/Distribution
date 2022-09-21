@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchUpdatePartitionRequest extends StObject {
   
   /**
-    * The ID of the catalog in which the partition is to be updated. Currently, this should be the AWS account ID.
+    * The ID of the catalog in which the partition is to be updated. Currently, this should be the Amazon Web Services account ID.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -43,7 +43,7 @@ object BatchUpdatePartitionRequest {
     
     inline def setEntries(value: BatchUpdatePartitionRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: BatchUpdatePartitionRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: BatchUpdatePartitionRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
     
     inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }

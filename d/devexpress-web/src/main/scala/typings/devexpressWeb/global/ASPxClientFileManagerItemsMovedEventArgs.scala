@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFileManagerItemsMovedEventArgs")
 @js.native
-class ASPxClientFileManagerItemsMovedEventArgs protected ()
+open class ASPxClientFileManagerItemsMovedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFileManagerItemsMovedEventArgs {
   /**

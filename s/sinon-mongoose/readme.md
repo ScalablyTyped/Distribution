@@ -10,15 +10,12 @@ Sinon extensions for Mongoose stubs
 | ------------------ | :-------------: |
 | Full name          | sinon-mongoose |
 | Keywords           | sinon, mongoose, mock, stub, expects, test, unit, query, static, promise, method |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 1299433 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 84775.0 |
+| # stars            | 89.0 |
 
 ## Links
-- [Homepage](https://github.com/underscopeio/sinon-mongoose#readme)
-- [Bugs](https://github.com/underscopeio/sinon-mongoose/issues)
-- [Repository](https://github.com/underscopeio/sinon-mongoose)
 - [Npm](https://www.npmjs.com/package/sinon-mongoose)
     
 

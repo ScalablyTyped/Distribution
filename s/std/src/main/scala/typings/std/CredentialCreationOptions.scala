@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CredentialCreationOptions extends StObject {
   
+  /* standard dom */
   var publicKey: js.UndefOr[PublicKeyCredentialCreationOptions] = js.undefined
   
+  /* standard dom */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object CredentialCreationOptions {

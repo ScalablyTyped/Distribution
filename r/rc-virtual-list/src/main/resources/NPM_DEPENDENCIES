@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-virtual-list" : "3.2.2"
+      "rc-virtual-list" : "3.4.8"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-virtual-list" : "3.2.2"
+      "rc-virtual-list" : "3.4.8"
     }
   ],
   "compile-devDependencies" : [

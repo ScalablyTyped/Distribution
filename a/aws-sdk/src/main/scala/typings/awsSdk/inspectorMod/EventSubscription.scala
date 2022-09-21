@@ -14,11 +14,11 @@ trait EventSubscription extends StObject {
   /**
     * The time at which SubscribeToEvent is called.
     */
-  var subscribedAt: Timestamp
+  var subscribedAt: js.Date
 }
 object EventSubscription {
   
-  inline def apply(event: InspectorEvent, subscribedAt: Timestamp): EventSubscription = {
+  inline def apply(event: InspectorEvent, subscribedAt: js.Date): EventSubscription = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], subscribedAt = subscribedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSubscription]
   }
@@ -27,6 +27,6 @@ object EventSubscription {
     
     inline def setEvent(value: InspectorEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setSubscribedAt(value: Timestamp): Self = StObject.set(x, "subscribedAt", value.asInstanceOf[js.Any])
+    inline def setSubscribedAt(value: js.Date): Self = StObject.set(x, "subscribedAt", value.asInstanceOf[js.Any])
   }
 }

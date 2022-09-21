@@ -28,6 +28,6 @@ object Multipart {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: Body*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Body*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

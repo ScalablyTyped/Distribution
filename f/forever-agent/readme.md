@@ -10,10 +10,10 @@ HTTP Agent that keeps socket connections alive between keep-alive requests. Form
 | ------------------ | :-------------: |
 | Full name          | forever-agent |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 133 |
-| # downloads        | 688889573 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8.224500033333333E7 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/mikeal/forever-agent)

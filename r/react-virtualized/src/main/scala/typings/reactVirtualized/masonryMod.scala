@@ -15,20 +15,46 @@ object masonryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-virtualized/dist/commonjs/Masonry", "DEFAULT_SCROLLING_RESET_TIME_INTERVAL")
+  @JSImport("react-virtualized/dist/commonjs/Masonry", JSImport.Default)
   @js.native
-  val DEFAULT_SCROLLING_RESET_TIME_INTERVAL: /* 150 */ Double = js.native
-  
-  @JSImport("react-virtualized/dist/commonjs/Masonry", "Masonry")
-  @js.native
-  class Masonry protected ()
+  open class default protected ()
     extends typings.reactVirtualized.esMasonryMod.Masonry {
     def this(props: MasonryProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MasonryProps, context: js.Any) = this()
+    def this(props: MasonryProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/commonjs/Masonry", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/commonjs/Masonry", "default.defaultProps")
+    @js.native
+    def defaultProps: KeyMapper = js.native
+    inline def defaultProps_=(x: KeyMapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    inline def getDerivedStateFromProps(nextProps: MasonryProps, prevState: MasonryState): MasonryState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[MasonryState | Null]
+  }
+  
+  @JSImport("react-virtualized/dist/commonjs/Masonry", "DEFAULT_SCROLLING_RESET_TIME_INTERVAL")
+  @js.native
+  val DEFAULT_SCROLLING_RESET_TIME_INTERVAL: /* 150 */ Double = js.native
+  
+  @JSImport("react-virtualized/dist/commonjs/Masonry", "Masonry")
+  @js.native
+  open class Masonry protected ()
+    extends typings.reactVirtualized.esMasonryMod.Masonry {
+    def this(props: MasonryProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: MasonryProps, context: Any) = this()
   }
   /* static members */
   object Masonry {

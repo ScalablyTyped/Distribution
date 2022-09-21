@@ -12,18 +12,18 @@ trait AggregateModel extends StObject {
     * Adds/Saves an uncommitted event.
     * @param evt The event object.
     */
-  def addUncommittedEvent(evt: js.Any): Unit = js.native
+  def addUncommittedEvent(evt: Any): Unit = js.native
   
   @JSName("apply")
-  def apply(event: js.Any): Unit = js.native
+  def apply(event: Any): Unit = js.native
   @JSName("apply")
-  def apply(event: js.Any, data: js.Any): Unit = js.native
+  def apply(event: Any, data: Any): Unit = js.native
   @JSName("apply")
-  def apply(event: js.Any, data: js.Any, version: Double): Unit = js.native
+  def apply(event: Any, data: Any, version: Double): Unit = js.native
   @JSName("apply")
-  def apply(event: js.Any, data: Unit, version: Double): Unit = js.native
+  def apply(event: Any, data: Unit, version: Double): Unit = js.native
   
-  var attributes: js.Any = js.native
+  var attributes: Any = js.native
   
   /**
     * Clears the internal uncomitted event list.
@@ -43,18 +43,18 @@ trait AggregateModel extends StObject {
     * @example:
     *     aggregate.get('firstname'); // returns 'Jack'
     */
-  def get(attr: String): js.Any = js.native
+  def get(attr: String): Any = js.native
   
   /**
     * Returns the revision of this aggregate.
     * @param streamInfo The stream info.
     */
-  def getRevision(streamInfo: js.Any): Double = js.native
+  def getRevision(streamInfo: Any): Double = js.native
   
   /**
     * Returns all uncommitted events.
     */
-  def getUncommittedEvents(): js.Array[js.Any] = js.native
+  def getUncommittedEvents(): js.Array[Any] = js.native
   
   /**
     * Returns `true` if the attribute contains a value that is not null
@@ -77,7 +77,7 @@ trait AggregateModel extends StObject {
   /**
     * Resets the attributes for the aggregate.
     */
-  def reset(data: js.Any): Unit = js.native
+  def reset(data: Any): Unit = js.native
   
   /**
     * Sets attributes for the aggregate.
@@ -90,21 +90,21 @@ trait AggregateModel extends StObject {
     *          lastname: 'X-Man'
     *     });
     */
-  def set(attribute: js.Any): Unit = js.native
-  def set(attribute: js.Any, value: js.Any): Unit = js.native
+  def set(attribute: Any): Unit = js.native
+  def set(attribute: Any, value: Any): Unit = js.native
   
   /**
     * Sets the revision for this aggregate.
     * @param streamInfo The stream info.
     * @param rev        The revision number.
     */
-  def setRevision(streamInfo: js.Any, rev: Double): Unit = js.native
+  def setRevision(streamInfo: Any, rev: Double): Unit = js.native
   
   /**
     * The toJSON function will be called when JSON.stringify().
     * @return A clean Javascript object containing all attributes.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
-  var uncommittedEvents: js.Array[js.Any] = js.native
+  var uncommittedEvents: js.Array[Any] = js.native
 }

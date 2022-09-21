@@ -9,14 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.WebScene")
 @js.native
 /**
-  * The web scene is the core element of 3D mapping across the ArcGIS platform.
+  * The web scene is the core element of 3D mapping across ArcGIS.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html)
   */
-class WebSceneCls ()
+open class WebSceneCls ()
   extends StObject
      with typings.arcgisJsApi.esri.WebScene {
   def this(properties: WebSceneProperties) = this()
+  
+  /**
+    * Returns a table based on the given table ID.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-TablesMixin.html#findTableById)
+    */
+  /* CompleteClass */
+  override def findTableById(tableId: String): typings.arcgisJsApi.esri.Layer = js.native
   
   /**
     * A collection of [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) instances that are tables saved in a [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) and/or a [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).

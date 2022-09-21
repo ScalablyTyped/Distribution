@@ -1,7 +1,7 @@
 
 # Scala.js typings for buble
 
-Typings are for version 0.19
+Typings are for version 0.20
 
 ## Library description:
 The blazing fast, batteries-included ES2015 compiler
@@ -10,10 +10,10 @@ The blazing fast, batteries-included ES2015 compiler
 | ------------------ | :-------------: |
 | Full name          | buble |
 | Keywords           | javascript, transpilation, compilation, esnext, es2015, es2017, es6, es7 |
-| # releases         | 7 |
-| # dependents       | 138 |
-| # downloads        | 19117787 |
-| # stars            | 17 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1322235.6666666667 |
+| # stars            | 858.0 |
 
 ## Links
 - [Homepage](https://github.com/bublejs/buble#README)

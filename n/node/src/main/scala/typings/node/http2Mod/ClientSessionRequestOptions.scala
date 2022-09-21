@@ -1,5 +1,6 @@
 package typings.node.http2Mod
 
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +12,8 @@ trait ClientSessionRequestOptions extends StObject {
   var exclusive: js.UndefOr[Boolean] = js.undefined
   
   var parent: js.UndefOr[Double] = js.undefined
+  
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   var waitForTrailers: js.UndefOr[Boolean] = js.undefined
   
@@ -36,6 +39,10 @@ object ClientSessionRequestOptions {
     inline def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     inline def setWaitForTrailers(value: Boolean): Self = StObject.set(x, "waitForTrailers", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for merge-images
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Easily compose images together without messing around with canvas
@@ -10,10 +10,10 @@ Easily compose images together without messing around with canvas
 | ------------------ | :-------------: |
 | Full name          | merge-images |
 | Keywords           | compose, merge, images, without, no, canvas |
-| # releases         | 3 |
-| # dependents       | 13 |
-| # downloads        | 527911 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 125261.33333333333 |
+| # stars            | 1469.0 |
 
 ## Links
 - [Homepage](https://github.com/lukechilds/merge-images)

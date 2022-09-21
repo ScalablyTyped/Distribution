@@ -8,12 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactEventListenerStrings {
   
   @js.native
-  sealed trait applicationCache
-    extends StObject
-       with _WindowEventTargets
-  inline def applicationCache: applicationCache = "applicationCache".asInstanceOf[applicationCache]
-  
-  @js.native
   sealed trait clientInformation
     extends StObject
        with _WindowEventTargets
@@ -32,22 +26,10 @@ object reactEventListenerStrings {
   inline def customElements: customElements = "customElements".asInstanceOf[customElements]
   
   @js.native
-  sealed trait defaultStatus
-    extends StObject
-       with _WindowEventTargets
-  inline def defaultStatus: defaultStatus = "defaultStatus".asInstanceOf[defaultStatus]
-  
-  @js.native
   sealed trait devicePixelRatio
     extends StObject
        with _WindowEventTargets
   inline def devicePixelRatio: devicePixelRatio = "devicePixelRatio".asInstanceOf[devicePixelRatio]
-  
-  @js.native
-  sealed trait doNotTrack
-    extends StObject
-       with _WindowEventTargets
-  inline def doNotTrack: doNotTrack = "doNotTrack".asInstanceOf[doNotTrack]
   
   @js.native
   sealed trait document
@@ -104,12 +86,6 @@ object reactEventListenerStrings {
   inline def length: length = "length".asInstanceOf[length]
   
   @js.native
-  sealed trait location
-    extends StObject
-       with _WindowEventTargets
-  inline def location: location = "location".asInstanceOf[location]
-  
-  @js.native
   sealed trait locationbar
     extends StObject
        with _WindowEventTargets
@@ -120,12 +96,6 @@ object reactEventListenerStrings {
     extends StObject
        with _WindowEventTargets
   inline def menubar: menubar = "menubar".asInstanceOf[menubar]
-  
-  @js.native
-  sealed trait msContentScript
-    extends StObject
-       with _WindowEventTargets
-  inline def msContentScript: msContentScript = "msContentScript".asInstanceOf[msContentScript]
   
   @js.native
   sealed trait name
@@ -140,24 +110,6 @@ object reactEventListenerStrings {
   inline def navigator: navigator = "navigator".asInstanceOf[navigator]
   
   @js.native
-  sealed trait offscreenBuffering
-    extends StObject
-       with _WindowEventTargets
-  inline def offscreenBuffering: offscreenBuffering = "offscreenBuffering".asInstanceOf[offscreenBuffering]
-  
-  @js.native
-  sealed trait oncompassneedscalibration
-    extends StObject
-       with _WindowEventTargets
-  inline def oncompassneedscalibration: oncompassneedscalibration = "oncompassneedscalibration".asInstanceOf[oncompassneedscalibration]
-  
-  @js.native
-  sealed trait ondevicelight
-    extends StObject
-       with _WindowEventTargets
-  inline def ondevicelight: ondevicelight = "ondevicelight".asInstanceOf[ondevicelight]
-  
-  @js.native
   sealed trait ondevicemotion
     extends StObject
        with _WindowEventTargets
@@ -170,172 +122,10 @@ object reactEventListenerStrings {
   inline def ondeviceorientation: ondeviceorientation = "ondeviceorientation".asInstanceOf[ondeviceorientation]
   
   @js.native
-  sealed trait ondeviceorientationabsolute
-    extends StObject
-       with _WindowEventTargets
-  inline def ondeviceorientationabsolute: ondeviceorientationabsolute = "ondeviceorientationabsolute".asInstanceOf[ondeviceorientationabsolute]
-  
-  @js.native
-  sealed trait onmousewheel
-    extends StObject
-       with _WindowEventTargets
-  inline def onmousewheel: onmousewheel = "onmousewheel".asInstanceOf[onmousewheel]
-  
-  @js.native
-  sealed trait onmsgesturechange
-    extends StObject
-       with _WindowEventTargets
-  inline def onmsgesturechange: onmsgesturechange = "onmsgesturechange".asInstanceOf[onmsgesturechange]
-  
-  @js.native
-  sealed trait onmsgesturedoubletap
-    extends StObject
-       with _WindowEventTargets
-  inline def onmsgesturedoubletap: onmsgesturedoubletap = "onmsgesturedoubletap".asInstanceOf[onmsgesturedoubletap]
-  
-  @js.native
-  sealed trait onmsgestureend
-    extends StObject
-       with _WindowEventTargets
-  inline def onmsgestureend: onmsgestureend = "onmsgestureend".asInstanceOf[onmsgestureend]
-  
-  @js.native
-  sealed trait onmsgesturehold
-    extends StObject
-       with _WindowEventTargets
-  inline def onmsgesturehold: onmsgesturehold = "onmsgesturehold".asInstanceOf[onmsgesturehold]
-  
-  @js.native
-  sealed trait onmsgesturestart
-    extends StObject
-       with _WindowEventTargets
-  inline def onmsgesturestart: onmsgesturestart = "onmsgesturestart".asInstanceOf[onmsgesturestart]
-  
-  @js.native
-  sealed trait onmsgesturetap
-    extends StObject
-       with _WindowEventTargets
-  inline def onmsgesturetap: onmsgesturetap = "onmsgesturetap".asInstanceOf[onmsgesturetap]
-  
-  @js.native
-  sealed trait onmsinertiastart
-    extends StObject
-       with _WindowEventTargets
-  inline def onmsinertiastart: onmsinertiastart = "onmsinertiastart".asInstanceOf[onmsinertiastart]
-  
-  @js.native
-  sealed trait onmspointercancel
-    extends StObject
-       with _WindowEventTargets
-  inline def onmspointercancel: onmspointercancel = "onmspointercancel".asInstanceOf[onmspointercancel]
-  
-  @js.native
-  sealed trait onmspointerdown
-    extends StObject
-       with _WindowEventTargets
-  inline def onmspointerdown: onmspointerdown = "onmspointerdown".asInstanceOf[onmspointerdown]
-  
-  @js.native
-  sealed trait onmspointerenter
-    extends StObject
-       with _WindowEventTargets
-  inline def onmspointerenter: onmspointerenter = "onmspointerenter".asInstanceOf[onmspointerenter]
-  
-  @js.native
-  sealed trait onmspointerleave
-    extends StObject
-       with _WindowEventTargets
-  inline def onmspointerleave: onmspointerleave = "onmspointerleave".asInstanceOf[onmspointerleave]
-  
-  @js.native
-  sealed trait onmspointermove
-    extends StObject
-       with _WindowEventTargets
-  inline def onmspointermove: onmspointermove = "onmspointermove".asInstanceOf[onmspointermove]
-  
-  @js.native
-  sealed trait onmspointerout
-    extends StObject
-       with _WindowEventTargets
-  inline def onmspointerout: onmspointerout = "onmspointerout".asInstanceOf[onmspointerout]
-  
-  @js.native
-  sealed trait onmspointerover
-    extends StObject
-       with _WindowEventTargets
-  inline def onmspointerover: onmspointerover = "onmspointerover".asInstanceOf[onmspointerover]
-  
-  @js.native
-  sealed trait onmspointerup
-    extends StObject
-       with _WindowEventTargets
-  inline def onmspointerup: onmspointerup = "onmspointerup".asInstanceOf[onmspointerup]
-  
-  @js.native
   sealed trait onorientationchange
     extends StObject
        with _WindowEventTargets
   inline def onorientationchange: onorientationchange = "onorientationchange".asInstanceOf[onorientationchange]
-  
-  @js.native
-  sealed trait onreadystatechange
-    extends StObject
-       with _WindowEventTargets
-  inline def onreadystatechange: onreadystatechange = "onreadystatechange".asInstanceOf[onreadystatechange]
-  
-  @js.native
-  sealed trait onvrdisplayactivate
-    extends StObject
-       with _WindowEventTargets
-  inline def onvrdisplayactivate: onvrdisplayactivate = "onvrdisplayactivate".asInstanceOf[onvrdisplayactivate]
-  
-  @js.native
-  sealed trait onvrdisplayblur
-    extends StObject
-       with _WindowEventTargets
-  inline def onvrdisplayblur: onvrdisplayblur = "onvrdisplayblur".asInstanceOf[onvrdisplayblur]
-  
-  @js.native
-  sealed trait onvrdisplayconnect
-    extends StObject
-       with _WindowEventTargets
-  inline def onvrdisplayconnect: onvrdisplayconnect = "onvrdisplayconnect".asInstanceOf[onvrdisplayconnect]
-  
-  @js.native
-  sealed trait onvrdisplaydeactivate
-    extends StObject
-       with _WindowEventTargets
-  inline def onvrdisplaydeactivate: onvrdisplaydeactivate = "onvrdisplaydeactivate".asInstanceOf[onvrdisplaydeactivate]
-  
-  @js.native
-  sealed trait onvrdisplaydisconnect
-    extends StObject
-       with _WindowEventTargets
-  inline def onvrdisplaydisconnect: onvrdisplaydisconnect = "onvrdisplaydisconnect".asInstanceOf[onvrdisplaydisconnect]
-  
-  @js.native
-  sealed trait onvrdisplayfocus
-    extends StObject
-       with _WindowEventTargets
-  inline def onvrdisplayfocus: onvrdisplayfocus = "onvrdisplayfocus".asInstanceOf[onvrdisplayfocus]
-  
-  @js.native
-  sealed trait onvrdisplaypointerrestricted
-    extends StObject
-       with _WindowEventTargets
-  inline def onvrdisplaypointerrestricted: onvrdisplaypointerrestricted = "onvrdisplaypointerrestricted".asInstanceOf[onvrdisplaypointerrestricted]
-  
-  @js.native
-  sealed trait onvrdisplaypointerunrestricted
-    extends StObject
-       with _WindowEventTargets
-  inline def onvrdisplaypointerunrestricted: onvrdisplaypointerunrestricted = "onvrdisplaypointerunrestricted".asInstanceOf[onvrdisplaypointerunrestricted]
-  
-  @js.native
-  sealed trait onvrdisplaypresentchange
-    extends StObject
-       with _WindowEventTargets
-  inline def onvrdisplaypresentchange: onvrdisplaypresentchange = "onvrdisplaypresentchange".asInstanceOf[onvrdisplaypresentchange]
   
   @js.native
   sealed trait opener
@@ -456,12 +246,6 @@ object reactEventListenerStrings {
     extends StObject
        with _WindowEventTargets
   inline def statusbar: statusbar = "statusbar".asInstanceOf[statusbar]
-  
-  @js.native
-  sealed trait styleMedia
-    extends StObject
-       with _WindowEventTargets
-  inline def styleMedia: styleMedia = "styleMedia".asInstanceOf[styleMedia]
   
   @js.native
   sealed trait toolbar

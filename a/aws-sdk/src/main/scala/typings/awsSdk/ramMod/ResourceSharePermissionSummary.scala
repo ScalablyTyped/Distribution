@@ -7,32 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceSharePermissionSummary extends StObject {
   
   /**
-    * The ARN of the permission.
+    * The Amazon Resoure Name (ARN) of the permission you want information about.
     */
   var arn: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the permission was created.
     */
-  var creationTime: js.UndefOr[DateTime] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier for the version of the permission that is set as the default version.
+    * Specifies whether the version of the permission represented in this structure is the default version for this permission.
     */
   var defaultVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The date and time when the permission was last updated.
+    * Specifies whether the version of the permission represented in this structure is the default version for all resources of this resource type.
     */
-  var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
+  var isResourceTypeDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The name of the permission.
+    * The date and time when the permission was last updated.
+    */
+  var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The name of this permission.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of resource to which the permission applies.
+    * The type of resource to which this permission applies.
     */
   var resourceType: js.UndefOr[String] = js.undefined
   
@@ -42,7 +47,7 @@ trait ResourceSharePermissionSummary extends StObject {
   var status: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier for the version of the permission.
+    * The version of the permission represented in this structure.
     */
   var version: js.UndefOr[String] = js.undefined
 }
@@ -59,7 +64,7 @@ object ResourceSharePermissionSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
@@ -67,7 +72,11 @@ object ResourceSharePermissionSummary {
     
     inline def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
     
-    inline def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setIsResourceTypeDefault(value: Boolean): Self = StObject.set(x, "isResourceTypeDefault", value.asInstanceOf[js.Any])
+    
+    inline def setIsResourceTypeDefaultUndefined: Self = StObject.set(x, "isResourceTypeDefault", js.undefined)
+    
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     

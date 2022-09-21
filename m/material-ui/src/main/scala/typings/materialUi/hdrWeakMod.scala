@@ -10,10 +10,10 @@ object hdrWeakMod {
   
   @JSImport("material-ui/svg-icons/image/hdr-weak", JSImport.Default)
   @js.native
-  class default () extends ImageHdrWeak
+  open class default () extends ImageHdrWeak
   
   @JSImport("material-ui/svg-icons/image/hdr-weak", "ImageHdrWeak")
   @js.native
-  class ImageHdrWeak ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageHdrWeak ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

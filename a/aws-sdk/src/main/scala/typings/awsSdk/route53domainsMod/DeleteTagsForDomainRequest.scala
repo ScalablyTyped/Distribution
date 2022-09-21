@@ -29,6 +29,6 @@ object DeleteTagsForDomainRequest {
     
     inline def setTagsToDelete(value: TagKeyList): Self = StObject.set(x, "TagsToDelete", value.asInstanceOf[js.Any])
     
-    inline def setTagsToDeleteVarargs(value: TagKey*): Self = StObject.set(x, "TagsToDelete", js.Array(value :_*))
+    inline def setTagsToDeleteVarargs(value: TagKey*): Self = StObject.set(x, "TagsToDelete", js.Array(value*))
   }
 }

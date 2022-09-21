@@ -72,6 +72,6 @@ object SharedInsight {
     
     inline def setSharingHistoryUndefined: Self = StObject.set(x, "sharingHistory", js.undefined)
     
-    inline def setSharingHistoryVarargs(value: SharingDetail*): Self = StObject.set(x, "sharingHistory", js.Array(value :_*))
+    inline def setSharingHistoryVarargs(value: SharingDetail*): Self = StObject.set(x, "sharingHistory", js.Array(value*))
   }
 }

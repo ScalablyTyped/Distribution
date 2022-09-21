@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProtocolsListData extends StObject {
   
   /**
-    * The time that the AWS Firewall Manager protocols list was created.
+    * The time that the Firewall Manager protocols list was created.
     */
-  var CreateTime: js.UndefOr[TimeStamp] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The time that the AWS Firewall Manager protocols list was last updated.
+    * The time that the Firewall Manager protocols list was last updated.
     */
-  var LastUpdateTime: js.UndefOr[TimeStamp] = js.undefined
+  var LastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ID of the AWS Firewall Manager protocols list.
+    * The ID of the Firewall Manager protocols list.
     */
   var ListId: js.UndefOr[typings.awsSdk.fmsMod.ListId] = js.undefined
   
   /**
-    * The name of the AWS Firewall Manager protocols list.
+    * The name of the Firewall Manager protocols list.
     */
   var ListName: ResourceName
   
@@ -37,7 +37,7 @@ trait ProtocolsListData extends StObject {
   var PreviousProtocolsList: js.UndefOr[typings.awsSdk.fmsMod.PreviousProtocolsList] = js.undefined
   
   /**
-    * An array of protocols in the AWS Firewall Manager protocols list.
+    * An array of protocols in the Firewall Manager protocols list.
     */
   var ProtocolsList: typings.awsSdk.fmsMod.ProtocolsList
 }
@@ -50,11 +50,11 @@ object ProtocolsListData {
   
   extension [Self <: ProtocolsListData](x: Self) {
     
-    inline def setCreateTime(value: TimeStamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    inline def setLastUpdateTime(value: TimeStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
@@ -74,6 +74,6 @@ object ProtocolsListData {
     
     inline def setProtocolsList(value: ProtocolsList): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
     
-    inline def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value :_*))
+    inline def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value*))
   }
 }

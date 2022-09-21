@@ -27,7 +27,7 @@ object dictionaryMod {
     * is not appropriate, a custom function which receives a key and returns a
     * unique string must be provided.
     */
-  class default[K, V] ()
+  open class default[K, V] ()
     extends StObject
        with Dictionary[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
@@ -57,7 +57,7 @@ object dictionaryMod {
       * optionally return false.
       */
     /* CompleteClass */
-    override def forEach(callback: js.Function2[K, V, js.Any]): Unit = js.native
+    override def forEach(callback: js.Function2[K, V, Any]): Unit = js.native
     
     /**
       * Returns the value to which this dictionary maps the specified key.
@@ -169,7 +169,7 @@ object dictionaryMod {
       * invoked with two arguments: key and value. To break the iteration you can
       * optionally return false.
       */
-    def forEach(callback: js.Function2[/* key */ K, /* value */ V, js.Any]): Unit
+    def forEach(callback: js.Function2[/* key */ K, /* value */ V, Any]): Unit
     
     /**
       * Returns the value to which this dictionary maps the specified key.
@@ -251,7 +251,7 @@ object dictionaryMod {
     inline def apply[K, V](
       clear: () => Unit,
       containsKey: K => Boolean,
-      forEach: js.Function2[/* key */ K, /* value */ V, js.Any] => Unit,
+      forEach: js.Function2[/* key */ K, /* value */ V, Any] => Unit,
       getValue: K => js.UndefOr[V],
       isEmpty: () => Boolean,
       keys: () => js.Array[K],
@@ -273,7 +273,7 @@ object dictionaryMod {
       
       inline def setContainsKey(value: K => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
       
-      inline def setForEach(value: js.Function2[/* key */ K, /* value */ V, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function2[/* key */ K, /* value */ V, Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
       inline def setGetValue(value: K => js.UndefOr[V]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       

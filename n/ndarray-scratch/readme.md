@@ -10,10 +10,10 @@ Pooled memory for ndarrays
 | ------------------ | :-------------: |
 | Full name          | ndarray-scratch |
 | Keywords           | ndarray, pool, memory, typedarray, scratch, malloc, free |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 3641485 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 444649.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/mikolalysenko/ndarray-scratch#readme)

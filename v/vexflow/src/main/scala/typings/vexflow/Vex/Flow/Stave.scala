@@ -55,6 +55,8 @@ trait Stave extends StObject {
   
   def drawVerticalFixed(x: Double, isDouble: Boolean): Unit = js.native
   
+  var endClef: Clef = js.native
+  
   def getBottomLineY(): Double = js.native
   
   def getBottomY(): Double = js.native
@@ -128,6 +130,8 @@ trait Stave extends StObject {
   def setMeasure(measure: Double): Stave = js.native
   
   def setNoteStartX(x: Double): Stave = js.native
+  
+  def setNumLines(lines: Double): Unit = js.native
   
   def setRepetitionTypeLeft(`type`: typings.vexflow.Vex.Flow.Repetition.`type`, y: Double): Stave = js.native
   

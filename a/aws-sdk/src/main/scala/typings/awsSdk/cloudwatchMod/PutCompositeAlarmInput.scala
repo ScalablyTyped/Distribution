@@ -12,7 +12,22 @@ trait PutCompositeAlarmInput extends StObject {
   var ActionsEnabled: js.UndefOr[typings.awsSdk.cloudwatchMod.ActionsEnabled] = js.undefined
   
   /**
-    * The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN). Valid Values: arn:aws:sns:region:account-id:sns-topic-name  
+    *  Actions will be suppressed if the suppressor alarm is in the ALARM state. ActionsSuppressor can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm. 
+    */
+  var ActionsSuppressor: js.UndefOr[AlarmArn] = js.undefined
+  
+  /**
+    *  The maximum time in seconds that the composite alarm waits after suppressor alarm goes out of the ALARM state. After this time, the composite alarm performs its actions.    ExtensionPeriod is required only when ActionsSuppressor is specified.  
+    */
+  var ActionsSuppressorExtensionPeriod: js.UndefOr[SuppressorPeriod] = js.undefined
+  
+  /**
+    *  The maximum time in seconds that the composite alarm waits for the suppressor alarm to go into the ALARM state. After this time, the composite alarm performs its actions.    WaitPeriod is required only when ActionsSuppressor is specified.  
+    */
+  var ActionsSuppressorWaitPeriod: js.UndefOr[SuppressorPeriod] = js.undefined
+  
+  /**
+    * The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN). Valid Values: arn:aws:sns:region:account-id:sns-topic-name  | arn:aws:ssm:region:account-id:opsitem:severity  
     */
   var AlarmActions: js.UndefOr[ResourceList] = js.undefined
   
@@ -59,11 +74,23 @@ object PutCompositeAlarmInput {
     
     inline def setActionsEnabledUndefined: Self = StObject.set(x, "ActionsEnabled", js.undefined)
     
+    inline def setActionsSuppressor(value: AlarmArn): Self = StObject.set(x, "ActionsSuppressor", value.asInstanceOf[js.Any])
+    
+    inline def setActionsSuppressorExtensionPeriod(value: SuppressorPeriod): Self = StObject.set(x, "ActionsSuppressorExtensionPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setActionsSuppressorExtensionPeriodUndefined: Self = StObject.set(x, "ActionsSuppressorExtensionPeriod", js.undefined)
+    
+    inline def setActionsSuppressorUndefined: Self = StObject.set(x, "ActionsSuppressor", js.undefined)
+    
+    inline def setActionsSuppressorWaitPeriod(value: SuppressorPeriod): Self = StObject.set(x, "ActionsSuppressorWaitPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setActionsSuppressorWaitPeriodUndefined: Self = StObject.set(x, "ActionsSuppressorWaitPeriod", js.undefined)
+    
     inline def setAlarmActions(value: ResourceList): Self = StObject.set(x, "AlarmActions", value.asInstanceOf[js.Any])
     
     inline def setAlarmActionsUndefined: Self = StObject.set(x, "AlarmActions", js.undefined)
     
-    inline def setAlarmActionsVarargs(value: ResourceName*): Self = StObject.set(x, "AlarmActions", js.Array(value :_*))
+    inline def setAlarmActionsVarargs(value: ResourceName*): Self = StObject.set(x, "AlarmActions", js.Array(value*))
     
     inline def setAlarmDescription(value: AlarmDescription): Self = StObject.set(x, "AlarmDescription", value.asInstanceOf[js.Any])
     
@@ -77,18 +104,18 @@ object PutCompositeAlarmInput {
     
     inline def setInsufficientDataActionsUndefined: Self = StObject.set(x, "InsufficientDataActions", js.undefined)
     
-    inline def setInsufficientDataActionsVarargs(value: ResourceName*): Self = StObject.set(x, "InsufficientDataActions", js.Array(value :_*))
+    inline def setInsufficientDataActionsVarargs(value: ResourceName*): Self = StObject.set(x, "InsufficientDataActions", js.Array(value*))
     
     inline def setOKActions(value: ResourceList): Self = StObject.set(x, "OKActions", value.asInstanceOf[js.Any])
     
     inline def setOKActionsUndefined: Self = StObject.set(x, "OKActions", js.undefined)
     
-    inline def setOKActionsVarargs(value: ResourceName*): Self = StObject.set(x, "OKActions", js.Array(value :_*))
+    inline def setOKActionsVarargs(value: ResourceName*): Self = StObject.set(x, "OKActions", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

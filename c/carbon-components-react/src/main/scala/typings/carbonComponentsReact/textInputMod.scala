@@ -2,7 +2,7 @@ package typings.carbonComponentsReact
 
 import org.scalablytyped.runtime.Shortcut
 import typings.carbonComponentsReact.controlledPasswordInputMod.ControlledPasswordInputProps
-import typings.carbonComponentsReact.passwordInputMod.PasswordInputProps
+import typings.carbonComponentsReact.textInputPasswordInputMod.PasswordInputProps
 import typings.carbonComponentsReact.textInputTextInputMod.TextInputFC
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn
 import typings.std.HTMLInputElement
@@ -16,6 +16,9 @@ object textInputMod extends Shortcut {
   @js.native
   val default: TextInputFC = js.native
   
+  /**
+    * @deprecated
+    */
   @JSImport("carbon-components-react/lib/components/TextInput", "ControlledPasswordInput")
   @js.native
   val ControlledPasswordInput: ForwardRefReturn[HTMLInputElement, ControlledPasswordInputProps] = js.native

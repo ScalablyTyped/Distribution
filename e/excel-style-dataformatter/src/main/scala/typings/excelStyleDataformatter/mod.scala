@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("excel-style-dataformatter", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with DataFormatter {
     def this(options: FormatterOptions) = this()
@@ -30,7 +30,7 @@ object mod {
       * @param type value type
       * @param format format preset
       */
-    def format(value: js.Any, `type`: String, format: String): FormatResult = js.native
+    def format(value: Any, `type`: String, format: String): FormatResult = js.native
     
     /**
       * Sets locale
@@ -86,7 +86,7 @@ object mod {
     
     var locales: js.UndefOr[js.Array[LocalesOptions]] = js.undefined
     
-    var transformCode: js.UndefOr[js.Function1[/* code */ js.Any, js.Any]] = js.undefined
+    var transformCode: js.UndefOr[js.Function1[/* code */ Any, Any]] = js.undefined
   }
   object FormatterOptions {
     
@@ -109,9 +109,9 @@ object mod {
       
       inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
       
-      inline def setLocalesVarargs(value: LocalesOptions*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: LocalesOptions*): Self = StObject.set(x, "locales", js.Array(value*))
       
-      inline def setTransformCode(value: /* code */ js.Any => js.Any): Self = StObject.set(x, "transformCode", js.Any.fromFunction1(value))
+      inline def setTransformCode(value: /* code */ Any => Any): Self = StObject.set(x, "transformCode", js.Any.fromFunction1(value))
       
       inline def setTransformCodeUndefined: Self = StObject.set(x, "transformCode", js.undefined)
       
@@ -163,9 +163,9 @@ object mod {
       
       inline def setDaysShort(value: js.Array[String]): Self = StObject.set(x, "daysShort", value.asInstanceOf[js.Any])
       
-      inline def setDaysShortVarargs(value: String*): Self = StObject.set(x, "daysShort", js.Array(value :_*))
+      inline def setDaysShortVarargs(value: String*): Self = StObject.set(x, "daysShort", js.Array(value*))
       
-      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value*))
       
       inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
       
@@ -175,9 +175,9 @@ object mod {
       
       inline def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
       
-      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value*))
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

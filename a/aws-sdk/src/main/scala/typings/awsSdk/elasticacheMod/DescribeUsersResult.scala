@@ -33,6 +33,6 @@ object DescribeUsersResult {
     
     inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value*))
   }
 }

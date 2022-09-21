@@ -19,11 +19,11 @@ trait ASPxClientTreeListCustomDataCallbackEventArgs
   /**
     * Gets the information passed from the server-side ASPxTreeList.CustomDataCallback event.
     */
-  var result: js.Any
+  var result: Any
 }
 object ASPxClientTreeListCustomDataCallbackEventArgs {
   
-  inline def apply(arg: String, result: js.Any): ASPxClientTreeListCustomDataCallbackEventArgs = {
+  inline def apply(arg: String, result: Any): ASPxClientTreeListCustomDataCallbackEventArgs = {
     val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListCustomDataCallbackEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientTreeListCustomDataCallbackEventArgs {
     
     inline def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

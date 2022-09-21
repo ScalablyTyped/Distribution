@@ -24,7 +24,7 @@ object commandpaletteMod {
   
   @JSImport("@lumino/widgets/types/commandpalette", "CommandPalette")
   @js.native
-  class CommandPalette protected () extends Widget {
+  open class CommandPalette protected () extends Widget {
     /**
       * Construct a new command palette.
       *
@@ -35,43 +35,43 @@ object commandpaletteMod {
     /**
       * Activate the next enabled command item.
       */
-    /* private */ var _activateNextItem: js.Any = js.native
+    /* private */ var _activateNextItem: Any = js.native
     
     /**
       * Activate the previous enabled command item.
       */
-    /* private */ var _activatePreviousItem: js.Any = js.native
+    /* private */ var _activatePreviousItem: Any = js.native
     
-    /* private */ var _activeIndex: js.Any = js.native
+    /* private */ var _activeIndex: Any = js.native
     
     /**
       * Handle the `'click'` event for the command palette.
       */
-    /* private */ var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: Any = js.native
     
     /**
       * Handle the `'keydown'` event for the command palette.
       */
-    /* private */ var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: Any = js.native
     
     /**
       * Execute the command item at the given index, if possible.
       */
-    /* private */ var _execute: js.Any = js.native
+    /* private */ var _execute: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _items: Any = js.native
     
     /**
       * A signal handler for generic command changes.
       */
-    /* private */ var _onGenericChange: js.Any = js.native
+    /* private */ var _onGenericChange: Any = js.native
     
-    /* private */ var _results: js.Any = js.native
+    /* private */ var _results: Any = js.native
     
     /**
       * Toggle the focused modifier based on the input node focus state.
       */
-    /* private */ var _toggleFocused: js.Any = js.native
+    /* private */ var _toggleFocused: Any = js.native
     
     /**
       * Add a command item to the command palette.
@@ -81,6 +81,15 @@ object commandpaletteMod {
       * @returns The command item added to the palette.
       */
     def addItem(options: IItemOptions): IItem = js.native
+    
+    /**
+      * Adds command items to the command palette.
+      *
+      * @param items - An array of options for creating each command item.
+      *
+      * @returns The command items added to the palette.
+      */
+    def addItems(items: js.Array[IItemOptions]): js.Array[IItem] = js.native
     
     /**
       * Remove all items from the command palette.
@@ -182,7 +191,7 @@ object commandpaletteMod {
       */
     @JSImport("@lumino/widgets/types/commandpalette", "CommandPalette.Renderer")
     @js.native
-    class Renderer ()
+    open class Renderer ()
       extends StObject
          with IRenderer {
       
@@ -397,7 +406,7 @@ object commandpaletteMod {
         
         inline def setIndicesNull: Self = StObject.set(x, "indices", null)
         
-        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value*))
       }
     }
     
@@ -460,6 +469,11 @@ object commandpaletteMod {
       val isEnabled: Boolean
       
       /**
+        * Whether the command item is toggleable.
+        */
+      val isToggleable: Boolean
+      
+      /**
         * Whether the command item is toggled.
         */
       val isToggled: Boolean
@@ -496,12 +510,13 @@ object commandpaletteMod {
         iconClass: String,
         iconLabel: String,
         isEnabled: Boolean,
+        isToggleable: Boolean,
         isToggled: Boolean,
         isVisible: Boolean,
         label: String,
         rank: Double
       ): IItem = {
-        val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], iconLabel = iconLabel.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isToggled = isToggled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], keyBinding = null)
+        val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], iconLabel = iconLabel.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isToggleable = isToggleable.asInstanceOf[js.Any], isToggled = isToggled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], keyBinding = null)
         __obj.asInstanceOf[IItem]
       }
       
@@ -528,6 +543,8 @@ object commandpaletteMod {
         inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
         inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+        
+        inline def setIsToggleable(value: Boolean): Self = StObject.set(x, "isToggleable", value.asInstanceOf[js.Any])
         
         inline def setIsToggled(value: Boolean): Self = StObject.set(x, "isToggled", value.asInstanceOf[js.Any])
         
@@ -637,7 +654,7 @@ object commandpaletteMod {
         
         inline def setIndicesNull: Self = StObject.set(x, "indices", null)
         
-        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value*))
         
         inline def setItem(value: IItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       }

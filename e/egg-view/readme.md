@@ -10,10 +10,10 @@ Base view plugin for egg
 | ------------------ | :-------------: |
 | Full name          | egg-view |
 | Keywords           | egg, eggPlugin, egg-plugin, egg-view, view |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 589391 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 148546.0 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/eggjs/egg-view#readme)

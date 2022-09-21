@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VerifySoftwareTokenResponse extends StObject {
   
   /**
-    * The session which should be passed both ways in challenge-response calls to the service.
+    * The session that should be passed both ways in challenge-response calls to the service.
     */
   var Session: js.UndefOr[SessionType] = js.undefined
   

@@ -10,5 +10,5 @@ object booleanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def boolean(proto: js.Any, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(proto.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def boolean(proto: Any, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(proto.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "uid" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "uid" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

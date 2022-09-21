@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,7 +101,7 @@ object BridgeAttendedTransfer {
     destination_type: String,
     is_external: Boolean,
     result: String,
-    timestamp: Date,
+    timestamp: js.Date,
     transferer_first_leg: Channel,
     transferer_first_leg_bridge: Bridge,
     transferer_second_leg: Channel,

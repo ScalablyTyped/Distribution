@@ -12,17 +12,17 @@ object adamOptimizerMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/optimizers/adam_optimizer", "AdamOptimizer")
   @js.native
-  class AdamOptimizer protected () extends Optimizer {
+  open class AdamOptimizer protected () extends Optimizer {
     def this(learningRate: Double, beta1: Double, beta2: Double) = this()
     def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double) = this()
     
-    /* private */ var accBeta1: js.Any = js.native
+    /* private */ var accBeta1: Any = js.native
     
-    /* private */ var accBeta2: js.Any = js.native
+    /* private */ var accBeta2: Any = js.native
     
-    /* private */ var accumulatedFirstMoment: js.Any = js.native
+    /* private */ var accumulatedFirstMoment: Any = js.native
     
-    /* private */ var accumulatedSecondMoment: js.Any = js.native
+    /* private */ var accumulatedSecondMoment: Any = js.native
     
     /* protected */ var beta1: Double = js.native
     

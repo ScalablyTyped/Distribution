@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsCore
 
-import typings.std.RegExp
 import typings.std.RequestInit
 import typings.tensorflowTfjsCore.routerRegistryMod.IORouter
 import typings.tensorflowTfjsCore.typesMod.IOHandler
@@ -19,7 +18,7 @@ object httpMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/io/http", "HTTPRequest")
   @js.native
-  class HTTPRequest protected ()
+  open class HTTPRequest protected ()
     extends StObject
        with IOHandler {
     def this(path: String) = this()
@@ -27,9 +26,9 @@ object httpMod {
     
     val DEFAULT_METHOD: /* "POST" */ String = js.native
     
-    /* private */ val fetch: js.Any = js.native
+    /* private */ val fetch: Any = js.native
     
-    /* private */ var loadWeights: js.Any = js.native
+    /* private */ var loadWeights: Any = js.native
     
     /**
       * Load model artifacts via HTTP request(s).
@@ -42,7 +41,7 @@ object httpMod {
     @JSName("load")
     def load_MHTTPRequest(): js.Promise[ModelArtifacts] = js.native
     
-    /* private */ val onProgress: js.Any = js.native
+    /* private */ val onProgress: Any = js.native
     
     /* protected */ val path: String = js.native
     
@@ -51,16 +50,16 @@ object httpMod {
     @JSName("save")
     def save_MHTTPRequest(modelArtifacts: ModelArtifacts): js.Promise[SaveResult] = js.native
     
-    /* private */ val weightPathPrefix: js.Any = js.native
+    /* private */ val weightPathPrefix: Any = js.native
     
-    /* private */ val weightUrlConverter: js.Any = js.native
+    /* private */ val weightUrlConverter: Any = js.native
   }
   /* static members */
   object HTTPRequest {
     
     @JSImport("@tensorflow/tfjs-core/dist/io/http", "HTTPRequest.URL_SCHEME_REGEX")
     @js.native
-    val URL_SCHEME_REGEX: RegExp = js.native
+    val URL_SCHEME_REGEX: js.RegExp = js.native
   }
   
   inline def browserHTTPRequest(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]

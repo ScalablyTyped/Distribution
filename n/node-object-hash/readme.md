@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-object-hash
 
-Typings are for version 2.0.0
+Typings are for version 2.3.10
 
 ## Library description:
 Node.js object hash library with properties/arrays sorting to provide constant hashes
@@ -10,14 +10,14 @@ Node.js object hash library with properties/arrays sorting to provide constant h
 | ------------------ | :-------------: |
 | Full name          | node-object-hash |
 | Keywords           | hash, object, hash-object, object-hash, es6, crypto |
-| # releases         | 5 |
-| # dependents       | 76 |
-| # downloads        | 39451017 |
-| # stars            | 2 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 4483215.666666667 |
+| # stars            | 69.0 |
 
 ## Links
-- [Homepage](https://gitlab.com/m03geek/node-object-hash#README)
-- [Bugs](https://gitlab.com/m03geek/node-object-hash/issues)
+- [Homepage](https://github.com/SkeLLLa/node-object-hash#readme)
+- [Bugs](https://github.com/SkeLLLa/node-object-hash/issues)
 - [Repository](https://github.com/SkeLLLa/node-object-hash)
 - [Npm](https://www.npmjs.com/package/node-object-hash)
     

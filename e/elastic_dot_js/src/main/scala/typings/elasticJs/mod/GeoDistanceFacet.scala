@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "GeoDistanceFacet")
 @js.native
-class GeoDistanceFacet protected ()
+open class GeoDistanceFacet protected ()
   extends StObject
      with Facet {
   /*
@@ -110,7 +110,7 @@ class GeoDistanceFacet protected ()
     Retrieves the internal facet object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the distance unit.  Valid values are "mi" for miles or "km"

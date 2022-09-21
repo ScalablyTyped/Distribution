@@ -73,7 +73,7 @@ object GoogleCloudDialogflowV2beta1IntentParameter {
     
     inline def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
     
-    inline def setPromptsVarargs(value: String*): Self = StObject.set(x, "prompts", js.Array(value :_*))
+    inline def setPromptsVarargs(value: String*): Self = StObject.set(x, "prompts", js.Array(value*))
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

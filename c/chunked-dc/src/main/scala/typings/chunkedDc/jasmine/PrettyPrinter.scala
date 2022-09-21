@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PrettyPrinter
   extends StObject
-     with Instantiable0[js.Any] {
+     with Instantiable0[scala.Any] {
   
-  def append(value: js.Any): Unit = js.native
+  def append(value: scala.Any): Unit = js.native
   
-  def emitArray(array: js.Array[js.Any]): Unit = js.native
+  def emitArray(array: js.Array[scala.Any]): Unit = js.native
   
-  def emitObject(obj: js.Any): Unit = js.native
+  def emitObject(obj: scala.Any): Unit = js.native
   
-  def emitScalar(value: js.Any): Unit = js.native
+  def emitScalar(value: scala.Any): Unit = js.native
   
   def emitString(value: String): Unit = js.native
   
-  def format(value: js.Any): Unit = js.native
+  def format(value: scala.Any): Unit = js.native
   
-  def iterateObject(obj: js.Any, fn: js.Function2[/* property */ String, /* isGetter */ Boolean, Unit]): Unit = js.native
+  def iterateObject(obj: scala.Any, fn: js.Function2[/* property */ String, /* isGetter */ Boolean, Unit]): Unit = js.native
 }

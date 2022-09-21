@@ -10,7 +10,7 @@ object itemCollectionKeyAttributeMapMod {
   @JSImport("@aws-sdk/client-dynamodb-node/model/_ItemCollectionKeyAttributeMap", "_ItemCollectionKeyAttributeMap")
   @js.native
   val ItemCollectionKeyAttributeMap: Map[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
 }

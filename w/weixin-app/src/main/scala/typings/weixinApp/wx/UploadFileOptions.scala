@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 上传下载
 trait UploadFileOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 要上传文件资源的路径 */
   var filePath: String
   
   /** HTTP 请求中其他额外的 form data */
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
   
   /** HTTP 请求 Header , header 中不能设置 Referer */
   var header: js.UndefOr[RequestHeader] = js.undefined
@@ -35,7 +35,7 @@ object UploadFileOptions {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     

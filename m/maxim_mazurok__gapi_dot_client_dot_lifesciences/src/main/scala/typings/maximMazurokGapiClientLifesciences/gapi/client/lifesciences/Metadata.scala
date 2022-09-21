@@ -20,11 +20,14 @@ trait Metadata extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Metadata & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Metadata & TopLevel[Any]
   ] = js.undefined
   
   /** The pipeline this operation represents. */
   var pipeline: js.UndefOr[Pipeline] = js.undefined
+  
+  /** The name of the Cloud Pub/Sub topic where notifications of operation status changes are sent. */
+  var pubSubTopic: js.UndefOr[String] = js.undefined
   
   /** The first time at which resources were allocated to execute the pipeline. */
   var startTime: js.UndefOr[String] = js.undefined
@@ -50,12 +53,12 @@ object Metadata {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Metadata & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Metadata & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -63,6 +66,10 @@ object Metadata {
     inline def setPipeline(value: Pipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
     inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+    
+    inline def setPubSubTopic(value: String): Self = StObject.set(x, "pubSubTopic", value.asInstanceOf[js.Any])
+    
+    inline def setPubSubTopicUndefined: Self = StObject.set(x, "pubSubTopic", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,7 @@ object UpdateWorkteamRequest {
     
     inline def setMemberDefinitionsUndefined: Self = StObject.set(x, "MemberDefinitions", js.undefined)
     
-    inline def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = StObject.set(x, "MemberDefinitions", js.Array(value :_*))
+    inline def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = StObject.set(x, "MemberDefinitions", js.Array(value*))
     
     inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ trait RecordPatch extends StObject {
   /**
     * The last modified date of the client device.
     */
-  var DeviceLastModifiedDate: js.UndefOr[Date] = js.undefined
+  var DeviceLastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The key associated with the record patch.
@@ -40,7 +40,7 @@ object RecordPatch {
   
   extension [Self <: RecordPatch](x: Self) {
     
-    inline def setDeviceLastModifiedDate(value: Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setDeviceLastModifiedDate(value: js.Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setDeviceLastModifiedDateUndefined: Self = StObject.set(x, "DeviceLastModifiedDate", js.undefined)
     

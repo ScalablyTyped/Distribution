@@ -1,21 +1,34 @@
 package typings.firebaseFirestore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddedRemoved extends js.Object {
+trait AddedRemoved extends StObject {
+  
   var added: js.UndefOr[js.Array[String]] = js.undefined
+  
   var removed: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object AddedRemoved {
-  @scala.inline
-  def apply(added: js.Array[String] = null, removed: js.Array[String] = null): AddedRemoved = {
+  
+  inline def apply(): AddedRemoved = {
     val __obj = js.Dynamic.literal()
-    if (added != null) __obj.updateDynamic("added")(added.asInstanceOf[js.Any])
-    if (removed != null) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddedRemoved]
   }
+  
+  extension [Self <: AddedRemoved](x: Self) {
+    
+    inline def setAdded(value: js.Array[String]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    
+    inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
+    
+    inline def setAddedVarargs(value: String*): Self = StObject.set(x, "added", js.Array(value*))
+    
+    inline def setRemoved(value: js.Array[String]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    
+    inline def setRemovedVarargs(value: String*): Self = StObject.set(x, "removed", js.Array(value*))
+  }
 }
-

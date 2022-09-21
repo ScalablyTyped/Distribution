@@ -40,7 +40,7 @@ object XSAXEventKeeperStatusChangeListener {
     blockingStatusChanged: Boolean => Unit,
     bufferStatusChanged: Boolean => Unit,
     collectionStatusChanged: Boolean => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSAXEventKeeperStatusChangeListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), blockingStatusChanged = js.Any.fromFunction1(blockingStatusChanged), bufferStatusChanged = js.Any.fromFunction1(bufferStatusChanged), collectionStatusChanged = js.Any.fromFunction1(collectionStatusChanged), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

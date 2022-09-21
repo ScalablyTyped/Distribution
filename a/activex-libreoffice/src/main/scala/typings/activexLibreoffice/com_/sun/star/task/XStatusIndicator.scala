@@ -63,7 +63,7 @@ object XStatusIndicator {
   inline def apply(
     acquire: () => Unit,
     end: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reset: () => Unit,
     setText: String => Unit,

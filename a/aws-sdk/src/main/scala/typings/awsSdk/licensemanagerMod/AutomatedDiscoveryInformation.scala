@@ -9,7 +9,7 @@ trait AutomatedDiscoveryInformation extends StObject {
   /**
     * Time that automated discovery last ran.
     */
-  var LastRunTime: js.UndefOr[DateTime] = js.undefined
+  var LastRunTime: js.UndefOr[js.Date] = js.undefined
 }
 object AutomatedDiscoveryInformation {
   
@@ -20,7 +20,7 @@ object AutomatedDiscoveryInformation {
   
   extension [Self <: AutomatedDiscoveryInformation](x: Self) {
     
-    inline def setLastRunTime(value: DateTime): Self = StObject.set(x, "LastRunTime", value.asInstanceOf[js.Any])
+    inline def setLastRunTime(value: js.Date): Self = StObject.set(x, "LastRunTime", value.asInstanceOf[js.Any])
     
     inline def setLastRunTimeUndefined: Self = StObject.set(x, "LastRunTime", js.undefined)
   }

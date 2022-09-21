@@ -1,5 +1,9 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.JPEGQuality
+import typings.node.bufferMod.global.Buffer
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,37 +14,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.SERVER_TIMESTAMP
   - java.lang.String
 */
-type ClipFragmentSelectorType = typings.awsSdk.kinesisvideoarchivedmediaMod._ClipFragmentSelectorType | java.lang.String
+type ClipFragmentSelectorType = _ClipFragmentSelectorType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FRAGMENTED_MP4
   - typings.awsSdk.awsSdkStrings.MPEG_TS
   - java.lang.String
 */
-type ContainerFormat = typings.awsSdk.kinesisvideoarchivedmediaMod._ContainerFormat | java.lang.String
+type ContainerFormat = _ContainerFormat | String
 
-type ContentType = java.lang.String
-
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.ALWAYS
-  - typings.awsSdk.awsSdkStrings.NEVER
-  - java.lang.String
-*/
-type DASHDisplayFragmentNumber = typings.awsSdk.kinesisvideoarchivedmediaMod._DASHDisplayFragmentNumber | java.lang.String
+type ContentType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALWAYS
   - typings.awsSdk.awsSdkStrings.NEVER
   - java.lang.String
 */
-type DASHDisplayFragmentTimestamp = typings.awsSdk.kinesisvideoarchivedmediaMod._DASHDisplayFragmentTimestamp | java.lang.String
+type DASHDisplayFragmentNumber = _DASHDisplayFragmentNumber | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALWAYS
+  - typings.awsSdk.awsSdkStrings.NEVER
+  - java.lang.String
+*/
+type DASHDisplayFragmentTimestamp = _DASHDisplayFragmentTimestamp | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PRODUCER_TIMESTAMP
   - typings.awsSdk.awsSdkStrings.SERVER_TIMESTAMP
   - java.lang.String
 */
-type DASHFragmentSelectorType = typings.awsSdk.kinesisvideoarchivedmediaMod._DASHFragmentSelectorType | java.lang.String
+type DASHFragmentSelectorType = _DASHFragmentSelectorType | String
+
+type DASHMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LIVE
@@ -48,24 +54,39 @@ type DASHFragmentSelectorType = typings.awsSdk.kinesisvideoarchivedmediaMod._DAS
   - typings.awsSdk.awsSdkStrings.ON_DEMAND
   - java.lang.String
 */
-type DASHPlaybackMode = typings.awsSdk.kinesisvideoarchivedmediaMod._DASHPlaybackMode | java.lang.String
+type DASHPlaybackMode = _DASHPlaybackMode | String
 
-type DASHStreamingSessionURL = java.lang.String
+type DASHStreamingSessionURL = String
 
-type Expires = scala.Double
+type Expires = Double
 
-type FragmentList = js.Array[typings.awsSdk.kinesisvideoarchivedmediaMod.Fragment]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.JPEG
+  - typings.awsSdk.awsSdkStrings.PNG
+  - java.lang.String
+*/
+type Format = _Format | String
 
-type FragmentNumberList = js.Array[typings.awsSdk.kinesisvideoarchivedmediaMod.FragmentNumberString]
+type FormatConfig = StringDictionary[FormatConfigValue]
 
-type FragmentNumberString = java.lang.String
+type FormatConfigKey = JPEGQuality | String
+
+type FormatConfigValue = String
+
+type FragmentList = js.Array[Fragment]
+
+type FragmentNumberList = js.Array[FragmentNumberString]
+
+type FragmentNumberString = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PRODUCER_TIMESTAMP
   - typings.awsSdk.awsSdkStrings.SERVER_TIMESTAMP
   - java.lang.String
 */
-type FragmentSelectorType = typings.awsSdk.kinesisvideoarchivedmediaMod._FragmentSelectorType | java.lang.String
+type FragmentSelectorType = _FragmentSelectorType | String
+
+type GetImagesMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALWAYS
@@ -73,21 +94,23 @@ type FragmentSelectorType = typings.awsSdk.kinesisvideoarchivedmediaMod._Fragmen
   - typings.awsSdk.awsSdkStrings.ON_DISCONTINUITY
   - java.lang.String
 */
-type HLSDiscontinuityMode = typings.awsSdk.kinesisvideoarchivedmediaMod._HLSDiscontinuityMode | java.lang.String
+type HLSDiscontinuityMode = _HLSDiscontinuityMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALWAYS
   - typings.awsSdk.awsSdkStrings.NEVER
   - java.lang.String
 */
-type HLSDisplayFragmentTimestamp = typings.awsSdk.kinesisvideoarchivedmediaMod._HLSDisplayFragmentTimestamp | java.lang.String
+type HLSDisplayFragmentTimestamp = _HLSDisplayFragmentTimestamp | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PRODUCER_TIMESTAMP
   - typings.awsSdk.awsSdkStrings.SERVER_TIMESTAMP
   - java.lang.String
 */
-type HLSFragmentSelectorType = typings.awsSdk.kinesisvideoarchivedmediaMod._HLSFragmentSelectorType | java.lang.String
+type HLSFragmentSelectorType = _HLSFragmentSelectorType | String
+
+type HLSMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LIVE
@@ -95,27 +118,51 @@ type HLSFragmentSelectorType = typings.awsSdk.kinesisvideoarchivedmediaMod._HLSF
   - typings.awsSdk.awsSdkStrings.ON_DEMAND
   - java.lang.String
 */
-type HLSPlaybackMode = typings.awsSdk.kinesisvideoarchivedmediaMod._HLSPlaybackMode | java.lang.String
+type HLSPlaybackMode = _HLSPlaybackMode | String
 
-type HLSStreamingSessionURL = java.lang.String
+type HLSStreamingSessionURL = String
 
-type Long = scala.Double
+type HeightPixels = Double
 
-type NextToken = java.lang.String
+type ImageContent = String
 
-type PageLimit = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NO_MEDIA
+  - typings.awsSdk.awsSdkStrings.MEDIA_ERROR
+  - java.lang.String
+*/
+type ImageError = _ImageError | String
 
-type Payload = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.kinesisvideoarchivedmediaMod.Blob | java.lang.String | typings.node.streamMod.Readable
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PRODUCER_TIMESTAMP
+  - typings.awsSdk.awsSdkStrings.SERVER_TIMESTAMP
+  - java.lang.String
+*/
+type ImageSelectorType = _ImageSelectorType | String
 
-type ResourceARN = java.lang.String
+type Images = js.Array[Image]
 
-type StreamName = java.lang.String
+type ListFragmentsMaxResults = Double
 
-type Timestamp = typings.std.Date
+type Long = Double
+
+type NextToken = String
+
+type Payload = Buffer | js.typedarray.Uint8Array | Blob | String | Readable
+
+type ResourceARN = String
+
+type SamplingInterval = Double
+
+type StreamName = String
+
+type Timestamp = js.Date
+
+type WidthPixels = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-09-30`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.kinesisvideoarchivedmediaMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -11,6 +11,8 @@ trait GoogleDevtoolsRemotebuildbotResourceUsage extends StObject {
   var diskUsage: js.UndefOr[GoogleDevtoolsRemotebuildbotResourceUsageStat] = js.undefined
   
   var memoryUsage: js.UndefOr[GoogleDevtoolsRemotebuildbotResourceUsageStat] = js.undefined
+  
+  var totalDiskIoStats: js.UndefOr[GoogleDevtoolsRemotebuildbotResourceUsageIOStats] = js.undefined
 }
 object GoogleDevtoolsRemotebuildbotResourceUsage {
   
@@ -32,5 +34,9 @@ object GoogleDevtoolsRemotebuildbotResourceUsage {
     inline def setMemoryUsage(value: GoogleDevtoolsRemotebuildbotResourceUsageStat): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
     
     inline def setMemoryUsageUndefined: Self = StObject.set(x, "memoryUsage", js.undefined)
+    
+    inline def setTotalDiskIoStats(value: GoogleDevtoolsRemotebuildbotResourceUsageIOStats): Self = StObject.set(x, "totalDiskIoStats", value.asInstanceOf[js.Any])
+    
+    inline def setTotalDiskIoStatsUndefined: Self = StObject.set(x, "totalDiskIoStats", js.undefined)
   }
 }

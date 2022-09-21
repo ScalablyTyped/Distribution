@@ -15,7 +15,7 @@ object imageTileMod {
   
   @JSImport("ol/ImageTile", JSImport.Default)
   @js.native
-  class default protected () extends ImageTile {
+  open class default protected () extends ImageTile {
     def this(
       tileCoord: TileCoord,
       state: TileState,

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiAnonymousUser")
 @js.native
-class KiiAnonymousUser ()
+open class KiiAnonymousUser ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiAnonymousUser {
   

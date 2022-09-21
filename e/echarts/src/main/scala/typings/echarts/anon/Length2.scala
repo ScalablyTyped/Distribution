@@ -11,7 +11,7 @@ trait Length2
   * Some properties like "normal" or "emphasis" are not documented.
   * Please, write description for them
   */
-/* unknownProperty */ StringDictionary[js.Any] {
+/* unknownProperty */ StringDictionary[Any] {
   
   /**
     * The style of visual guide line in emphasis status.

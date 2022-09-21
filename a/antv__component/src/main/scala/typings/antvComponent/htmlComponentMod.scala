@@ -16,16 +16,16 @@ object htmlComponentMod {
   trait HtmlComponent[T /* <: ComponentCfg */]
     extends typings.antvComponent.componentMod.default[T] {
     
-    /* protected */ def applyChildrenStyles(element: js.Any, styles: js.Any): Unit = js.native
+    /* protected */ def applyChildrenStyles(element: Any, styles: Any): Unit = js.native
     
-    /* protected */ def applyStyle(cssName: js.Any, dom: js.Any): Unit = js.native
+    /* protected */ def applyStyle(cssName: Any, dom: Any): Unit = js.native
     
     /* protected */ def applyStyles(): Unit = js.native
     
     /**
       * @protected
       */
-    /* protected */ def createDom(): js.Any = js.native
+    /* protected */ def createDom(): Any = js.native
     
     def getContainer(): HTMLElement = js.native
     
@@ -63,8 +63,8 @@ object htmlComponentMod {
       * 是否允许捕捉事件
       * @param capture 事件捕捉
       */
-    def setCapture(capture: js.Any): Unit = js.native
+    def setCapture(capture: Any): Unit = js.native
     
-    /* protected */ def updateInner(cfg: js.Any): Unit = js.native
+    /* protected */ def updateInner(cfg: Any): Unit = js.native
   }
 }

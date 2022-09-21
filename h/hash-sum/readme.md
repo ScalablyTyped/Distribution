@@ -10,10 +10,10 @@ Blazing fast unique hash generator
 | ------------------ | :-------------: |
 | Full name          | hash-sum |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 683 |
-| # downloads        | 132948318 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1164482333333332E7 |
+| # stars            | 262.0 |
 
 ## Links
 - [Homepage](https://github.com/bevacqua/hash-sum)

@@ -27,6 +27,13 @@ trait MementosetKeysForSynckeys extends StObject {
   def get[T](key: String, defaultValue: T): T = js.native
   
   /**
+    * Returns the stored keys.
+    *
+    * @return The stored keys.
+    */
+  def keys(): js.Array[String] = js.native
+  
+  /**
     * Set the keys whose values should be synchronized across devices when synchronizing user-data
     * like configuration, extensions, and mementos.
     *
@@ -44,8 +51,11 @@ trait MementosetKeysForSynckeys extends StObject {
   /**
     * Store a value. The value must be JSON-stringifyable.
     *
+    * *Note* that using `undefined` as value removes the key from the underlying
+    * storage.
+    *
     * @param key A string.
     * @param value A value. MUST not contain cyclic references.
     */
-  def update(key: String, value: js.Any): Thenable[Unit] = js.native
+  def update(key: String, value: Any): Thenable[Unit] = js.native
 }

@@ -35,7 +35,7 @@ object XReset {
   inline def apply(
     acquire: () => Unit,
     addResetListener: XResetListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeResetListener: XResetListener => Unit,
     reset: () => Unit

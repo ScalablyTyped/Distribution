@@ -2,7 +2,6 @@ package typings.sinonjsFakeTimers
 
 import org.scalablytyped.runtime.Shortcut
 import typings.sinonjsFakeTimers.anon.Now
-import typings.std.Date
 import typings.std.DateConstructor
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
@@ -16,11 +15,11 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def createClock(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")().asInstanceOf[Clock]
+  inline def createClock(now: js.Date): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[Clock]
+  inline def createClock(now: js.Date, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
   inline def createClock(now: Double): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[Clock]
   inline def createClock(now: Double, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
   inline def createClock(now: Unit, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
-  inline def createClock(now: Date): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[Clock]
-  inline def createClock(now: Date, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
   
   inline def install(): InstalledClock = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[InstalledClock]
   inline def install(opts: FakeTimerInstallOpts): InstalledClock = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any]).asInstanceOf[InstalledClock]
@@ -37,13 +36,17 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@sinonjs/fake-timers", "timers.Date")
     @js.native
-    class Date ()
+    /* standard es5 */
+    open class Date ()
       extends StObject
          with typings.std.Date {
       def this(value: String) = this()
+      def this(value: js.Date) = this()
+      /* standard es2015.core */
       def this(value: Double) = this()
-      def this(value: typings.std.Date) = this()
+      /* standard scripthost */
       def this(vd: VarDate) = this()
+      /* standard es5 */
       def this(year: Double, month: Double) = this()
       def this(year: Double, month: Double, date: Double) = this()
       def this(year: Double, month: Double, date: Double, hours: Double) = this()
@@ -126,23 +129,9 @@ object mod {
   
   inline def withGlobal(global: js.Object): FakeTimerWithContext = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobal")(global.asInstanceOf[js.Any]).asInstanceOf[FakeTimerWithContext]
   
-  @js.native
-  trait BrowserClock
-    extends StObject
-       with FakeClock[Double]
-       with Clock {
-    
-    /**
-      * Mimics performance.now().
-      */
-    var performance: Now = js.native
-  }
+  type BrowserClock = FakeClock[Double]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.sinonjsFakeTimers.mod.BrowserClock
-    - typings.sinonjsFakeTimers.mod.NodeClock
-  */
-  trait Clock extends StObject
+  type Clock = BrowserClock | NodeClock
   
   @js.native
   trait FakeClock[TTimerId /* <: TimerId */]
@@ -193,6 +182,11 @@ object mod {
       * Current clock time.
       */
     var now: Double = js.native
+    
+    /**
+      * Mimics performance.now().
+      */
+    var performance: Now = js.native
     
     /**
       * Schedule callback to run in the next animation frame.
@@ -264,8 +258,8 @@ object mod {
       * @remarks This affects the current time but it does not in itself cause timers to fire.
       */
     def setSystemTime(): Unit = js.native
+    def setSystemTime(now: js.Date): Unit = js.native
     def setSystemTime(now: Double): Unit = js.native
-    def setSystemTime(now: Date): Unit = js.native
     
     def tick(time: String): Double = js.native
     /**
@@ -302,6 +296,8 @@ object mod {
     - typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelAnimationFrame
     - typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestIdleCallback
     - typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelIdleCallback
+    - typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.performance
+    - typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.queueMicrotask
   */
   trait FakeMethod extends StObject
   object FakeMethod {
@@ -321,6 +317,10 @@ object mod {
     inline def hrtime: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.hrtime = "hrtime".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.hrtime]
     
     inline def nextTick: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.nextTick = "nextTick".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.nextTick]
+    
+    inline def performance: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.performance = "performance".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.performance]
+    
+    inline def queueMicrotask: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.queueMicrotask = "queueMicrotask".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.queueMicrotask]
     
     inline def requestAnimationFrame: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestAnimationFrame = "requestAnimationFrame".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestAnimationFrame]
     
@@ -349,7 +349,7 @@ object mod {
     /**
       * Installs fake timers with the specified unix epoch (default: 0)
       */
-    var now: js.UndefOr[Double | Date] = js.undefined
+    var now: js.UndefOr[Double | js.Date] = js.undefined
     
     /**
       * Tells @sinonjs/fake-timers to increment mocked time automatically based on the real system time shift (e.g. the mocked time will be incremented by
@@ -358,13 +358,14 @@ object mod {
     var shouldAdvanceTime: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Installs fake timers onto the specified target context (default: global)
+      * Tells FakeTimers to clear 'native' (i.e. not fake) timers by delegating to their respective handlers. These are not cleared by
+      * default, leading to potentially unexpected behavior if timers existed prior to installing FakeTimers. (default: false)
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var shouldClearNativeTimers: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * An array with explicit function names to hijack. When not set, @sinonjs/fake-timers will automatically fake all methods except nextTick
-      * e.g., FakeTimers.install({ toFake: ["setTimeout", "nextTick"]}) will fake only setTimeout and nextTick
+      * An array with names of global methods and APIs to fake. By default, `@sinonjs/fake-timers` does not replace `nextTick()` and `queueMicrotask()`.
+      * For instance, `FakeTimers.install({ toFake: ['setTimeout', 'nextTick'] })` will fake only `setTimeout()` and `nextTick()`
       */
     var toFake: js.UndefOr[js.Array[FakeMethod]] = js.undefined
   }
@@ -385,7 +386,7 @@ object mod {
       
       inline def setLoopLimitUndefined: Self = StObject.set(x, "loopLimit", js.undefined)
       
-      inline def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Double | js.Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
       inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
@@ -393,15 +394,15 @@ object mod {
       
       inline def setShouldAdvanceTimeUndefined: Self = StObject.set(x, "shouldAdvanceTime", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setShouldClearNativeTimers(value: Boolean): Self = StObject.set(x, "shouldClearNativeTimers", value.asInstanceOf[js.Any])
       
-      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setShouldClearNativeTimersUndefined: Self = StObject.set(x, "shouldClearNativeTimers", js.undefined)
       
       inline def setToFake(value: js.Array[FakeMethod]): Self = StObject.set(x, "toFake", value.asInstanceOf[js.Any])
       
       inline def setToFakeUndefined: Self = StObject.set(x, "toFake", js.undefined)
       
-      inline def setToFakeVarargs(value: FakeMethod*): Self = StObject.set(x, "toFake", js.Array(value :_*))
+      inline def setToFakeVarargs(value: FakeMethod*): Self = StObject.set(x, "toFake", js.Array(value*))
     }
   }
   
@@ -409,11 +410,11 @@ object mod {
   trait FakeTimerWithContext extends StObject {
     
     def createClock(): Clock = js.native
+    def createClock(now: js.Date): Clock = js.native
+    def createClock(now: js.Date, loopLimit: Double): Clock = js.native
     def createClock(now: Double): Clock = js.native
     def createClock(now: Double, loopLimit: Double): Clock = js.native
     def createClock(now: Unit, loopLimit: Double): Clock = js.native
-    def createClock(now: Date): Clock = js.native
-    def createClock(now: Date, loopLimit: Double): Clock = js.native
     
     def install(): InstalledClock = js.native
     def install(opts: FakeTimerInstallOpts): InstalledClock = js.native
@@ -425,6 +426,7 @@ object mod {
   
   trait GlobalTimers[TTimerId /* <: TimerId */] extends StObject {
     
+    /* standard es5 */
     /**
       * Implements the Date object but using this clock to provide the correct time.
       */
@@ -464,7 +466,7 @@ object mod {
       * @remarks You'll still have to call clock.tick() for the callback to fire.
       * @remarks If called during a tick the callback won't fire until 1 millisecond has ticked by.
       */
-    def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): TTimerId
+    def setImmediate(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): TTimerId
     
     /**
       * Schedules a callback to be fired every time timeout milliseconds have ticked by.
@@ -474,7 +476,7 @@ object mod {
       * @param args   Any extra arguments to pass to the callback.
       * @returns Time identifier for cancellation.
       */
-    def setInterval(callback: js.Function1[/* repeated */ js.Any, Unit], timeout: Double, args: js.Any*): TTimerId
+    def setInterval(callback: js.Function1[/* repeated */ Any, Unit], timeout: Double, args: Any*): TTimerId
     
     /**
       * Schedules a callback to be fired once timeout milliseconds have ticked by.
@@ -484,7 +486,7 @@ object mod {
       * @param args   Any extra arguments to pass to the callback.
       * @returns Time identifier for cancellation.
       */
-    def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], timeout: Double, args: js.Any*): TTimerId
+    def setTimeout(callback: js.Function1[/* repeated */ Any, Unit], timeout: Double, args: Any*): TTimerId
   }
   object GlobalTimers {
     
@@ -493,9 +495,9 @@ object mod {
       clearImmediate: TTimerId => Unit,
       clearInterval: TTimerId => Unit,
       clearTimeout: TTimerId => Unit,
-      setImmediate: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => TTimerId,
-      setInterval: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => TTimerId,
-      setTimeout: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => TTimerId
+      setImmediate: (js.Function1[/* repeated */ Any, Unit], /* repeated */ Any) => TTimerId,
+      setInterval: (js.Function1[/* repeated */ Any, Unit], Double, /* repeated */ Any) => TTimerId,
+      setTimeout: (js.Function1[/* repeated */ Any, Unit], Double, /* repeated */ Any) => TTimerId
     ): GlobalTimers[TTimerId] = {
       val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], clearImmediate = js.Any.fromFunction1(clearImmediate), clearInterval = js.Any.fromFunction1(clearInterval), clearTimeout = js.Any.fromFunction1(clearTimeout), setImmediate = js.Any.fromFunction2(setImmediate), setInterval = js.Any.fromFunction3(setInterval), setTimeout = js.Any.fromFunction3(setTimeout))
       __obj.asInstanceOf[GlobalTimers[TTimerId]]
@@ -511,11 +513,11 @@ object mod {
       
       inline def setDate(value: DateConstructor): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
       
-      inline def setSetImmediate(value: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
+      inline def setSetImmediate(value: (js.Function1[/* repeated */ Any, Unit], /* repeated */ Any) => TTimerId): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
       
-      inline def setSetInterval(value: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
+      inline def setSetInterval(value: (js.Function1[/* repeated */ Any, Unit], Double, /* repeated */ Any) => TTimerId): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
       
-      inline def setSetTimeout(value: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
+      inline def setSetTimeout(value: (js.Function1[/* repeated */ Any, Unit], Double, /* repeated */ Any) => TTimerId): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
     }
   }
   
@@ -542,7 +544,7 @@ object mod {
       
       inline def setMethods(value: js.Array[FakeMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: FakeMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: FakeMethod*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setUninstall(value: () => Unit): Self = StObject.set(x, "uninstall", js.Any.fromFunction0(value))
     }
@@ -551,11 +553,10 @@ object mod {
   @js.native
   trait NodeClock
     extends StObject
-       with FakeClock[NodeTimer]
-       with Clock {
+       with FakeClock[NodeTimer] {
     
     /**
-      * Mimicks process.hrtime().
+      * Mimics process.hrtime().
       *
       * @param prevTime   Previous system time to calculate time elapsed.
       * @returns High resolution real time as [seconds, nanoseconds].
@@ -566,7 +567,7 @@ object mod {
     /**
       * Simulates process.nextTick().
       */
-    def nextTick(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Unit = js.native
+    def nextTick(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): Unit = js.native
     
     /**
       * Mimics process.nextTick() explicitly dropping additional arguments.
@@ -584,25 +585,32 @@ object mod {
     /**
       * Stub method call. Does nothing.
       */
-    def ref(): Unit
+    def ref(): NodeTimer
+    
+    /**
+      * Refreshes the timer.
+      */
+    def refresh(): NodeTimer
     
     /**
       * Stub method call. Does nothing.
       */
-    def unref(): Unit
+    def unref(): NodeTimer
   }
   object NodeTimer {
     
-    inline def apply(ref: () => Unit, unref: () => Unit): NodeTimer = {
-      val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), unref = js.Any.fromFunction0(unref))
+    inline def apply(ref: () => NodeTimer, refresh: () => NodeTimer, unref: () => NodeTimer): NodeTimer = {
+      val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), refresh = js.Any.fromFunction0(refresh), unref = js.Any.fromFunction0(unref))
       __obj.asInstanceOf[NodeTimer]
     }
     
     extension [Self <: NodeTimer](x: Self) {
       
-      inline def setRef(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
+      inline def setRef(value: () => NodeTimer): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       
-      inline def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => NodeTimer): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      
+      inline def setUnref(value: () => NodeTimer): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
     }
   }
   

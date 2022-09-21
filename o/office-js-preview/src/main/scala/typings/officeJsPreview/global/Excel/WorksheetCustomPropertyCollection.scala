@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the collection of worksheet-level custom property.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.WorksheetCustomPropertyCollection")
 @js.native
-class WorksheetCustomPropertyCollection ()
+open class WorksheetCustomPropertyCollection ()
   extends StObject
      with typings.officeJsPreview.Excel.WorksheetCustomPropertyCollection {
   

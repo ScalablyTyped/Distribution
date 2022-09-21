@@ -10,10 +10,10 @@ The lodash method `_.filter` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.filter |
 | Keywords           | lodash-modularized, filter |
-| # releases         | 0 |
-| # dependents       | 194 |
-| # downloads        | 48156697 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5569803.333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

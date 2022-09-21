@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScalingPlan extends StObject {
   
   /**
-    * The application source.
+    * A CloudFormation stack or a set of tags. You can create one scaling plan per application source.
     */
   var ApplicationSource: typings.awsSdk.autoscalingplansMod.ApplicationSource
   
   /**
     * The Unix time stamp when the scaling plan was created.
     */
-  var CreationTime: js.UndefOr[TimestampType] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The scaling instructions.
@@ -44,7 +44,7 @@ trait ScalingPlan extends StObject {
   /**
     * The Unix time stamp when the scaling plan entered the current status.
     */
-  var StatusStartTime: js.UndefOr[TimestampType] = js.undefined
+  var StatusStartTime: js.UndefOr[js.Date] = js.undefined
 }
 object ScalingPlan {
   
@@ -63,13 +63,13 @@ object ScalingPlan {
     
     inline def setApplicationSource(value: ApplicationSource): Self = StObject.set(x, "ApplicationSource", value.asInstanceOf[js.Any])
     
-    inline def setCreationTime(value: TimestampType): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     inline def setScalingInstructions(value: ScalingInstructions): Self = StObject.set(x, "ScalingInstructions", value.asInstanceOf[js.Any])
     
-    inline def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value :_*))
+    inline def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value*))
     
     inline def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object ScalingPlan {
     
     inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    inline def setStatusStartTime(value: TimestampType): Self = StObject.set(x, "StatusStartTime", value.asInstanceOf[js.Any])
+    inline def setStatusStartTime(value: js.Date): Self = StObject.set(x, "StatusStartTime", value.asInstanceOf[js.Any])
     
     inline def setStatusStartTimeUndefined: Self = StObject.set(x, "StatusStartTime", js.undefined)
   }

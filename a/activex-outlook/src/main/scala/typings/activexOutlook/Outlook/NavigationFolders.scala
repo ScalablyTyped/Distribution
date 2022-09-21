@@ -14,12 +14,12 @@ trait NavigationFolders extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): NavigationFolder
+  def Item(Index: Any): NavigationFolder
   
   /* private */ @JSName("Outlook.NavigationFolders_typekey")
   var OutlookDotNavigationFolders_typekey: NavigationFolders
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Remove(RemovableFolder: NavigationFolder): Unit
   
@@ -32,9 +32,9 @@ object NavigationFolders {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => NavigationFolder,
+    Item: Any => NavigationFolder,
     OutlookDotNavigationFolders_typekey: NavigationFolders,
-    Parent: js.Any,
+    Parent: Any,
     Remove: NavigationFolder => Unit,
     Session: NameSpace
   ): NavigationFolders = {
@@ -53,11 +53,11 @@ object NavigationFolders {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => NavigationFolder): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => NavigationFolder): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotNavigationFolders_typekey(value: NavigationFolders): Self = StObject.set(x, "Outlook.NavigationFolders_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRemove(value: NavigationFolder => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     

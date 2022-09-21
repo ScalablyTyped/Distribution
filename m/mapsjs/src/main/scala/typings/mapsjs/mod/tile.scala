@@ -20,13 +20,13 @@ object tile {
   
   @JSImport("mapsjs", "tile.descriptorLocal")
   @js.native
-  class descriptorLocal protected () extends StObject {
+  open class descriptorLocal protected () extends StObject {
     def this(options: GeometryFieldName) = this()
   }
   
   @JSImport("mapsjs", "tile.descriptorMDNRestFeature")
   @js.native
-  class descriptorMDNRestFeature protected () extends StObject {
+  open class descriptorMDNRestFeature protected () extends StObject {
     def this(mapId: String, layerId: String) = this()
     def this(mapId: String, layerId: String, options: BleedRatio) = this()
     
@@ -122,7 +122,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.descriptorMDNRestMap")
   @js.native
-  class descriptorMDNRestMap protected () extends StObject {
+  open class descriptorMDNRestMap protected () extends StObject {
     def this(mapId: String) = this()
     def this(mapId: String, options: BackgroundColorStr) = this()
     
@@ -356,7 +356,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.layer")
   @js.native
-  class layer protected () extends StObject {
+  open class layer protected () extends StObject {
     def this(id: String) = this()
     def this(id: String, useBackdrop: Boolean) = this()
     def this(id: String, useBackdrop: Boolean, maxConcurrentRequests: Double) = this()
@@ -393,7 +393,7 @@ object tile {
       * requested content is rendered or styled.
       * @returns {object} The tile layer's descriptor.
       */
-    def getDescriptor(): js.Any = js.native
+    def getDescriptor(): Any = js.native
     
     /**
       * @param {number} m - number for margin in pixels
@@ -476,7 +476,7 @@ object tile {
       * content is rendered or styled.
       * @param {function} d A descriptor for this tile layer.
       */
-    def setDescriptor(d: js.Any): Unit = js.native
+    def setDescriptor(d: Any): Unit = js.native
     
     /**
       * Enables or disables the fade in on tile content, which defaults to enabled.
@@ -536,7 +536,7 @@ object tile {
       * @param {renderer} r The renderer delegate function with 
       * signature renderer(quadview).
       */
-    def setRenderer(r: js.Any): Unit = js.native
+    def setRenderer(r: Any): Unit = js.native
     
     /**
       * Sets optional request processor for this tile layer. This is 
@@ -550,7 +550,7 @@ object tile {
     def setRequestProcessor(
       processorFunc: js.Function6[
           /* requestor */ requestor, 
-          /* descriptor */ js.Any, 
+          /* descriptor */ Any, 
           /* quad */ quad, 
           /* timeoutMs */ Double, 
           /* completeAction */ js.Function1[/* img */ HTMLElement, Unit], 
@@ -567,7 +567,7 @@ object tile {
       * can be set in one call and incur only one content change event.
       */             
     def setRequestor(req: requestor): Unit = js.native
-    def setRequestor(req: requestor, desc: js.Any): Unit = js.native
+    def setRequestor(req: requestor, desc: Any): Unit = js.native
     
     /**
       * Sets whether or not to retain and display previous level tile 
@@ -592,7 +592,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.layerOptions")
   @js.native
-  class layerOptions protected () extends StObject {
+  open class layerOptions protected () extends StObject {
     def this(id: String, options: Descriptor) = this()
     
     /**
@@ -604,7 +604,7 @@ object tile {
     /**
       * Gets this layerOptions object as a JavaScript object.
       */
-    def getOptions(): js.Any = js.native
+    def getOptions(): Any = js.native
     
     /**
       * Returns the underlying tile layer.
@@ -615,7 +615,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.quad")
   @js.native
-  class quad () extends StObject {
+  open class quad () extends StObject {
     
     /** 
       * Compares this quad tile with another quad tile and determines
@@ -675,7 +675,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.renderer")
   @js.native
-  class renderer () extends StObject {
+  open class renderer () extends StObject {
     def this(options: RenderBitmap) = this()
     
     /**
@@ -721,7 +721,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.rendererDensityMap")
   @js.native
-  class rendererDensityMap () extends StObject {
+  open class rendererDensityMap () extends StObject {
     
     /**
       * Tells renderer to re-render density map and recompute ranges. 
@@ -782,12 +782,12 @@ object tile {
       * action(row). The value returned from the function will is added
       * to the cell's value.
       */
-    def setRowAction(action: js.Function1[/* row */ js.Any, Double]): Unit = js.native
+    def setRowAction(action: js.Function1[/* row */ Any, Double]): Unit = js.native
   }
   
   @JSImport("mapsjs", "tile.requestor")
   @js.native
-  class requestor () extends StObject {
+  open class requestor () extends StObject {
     
     /**
       * Returns whether or not caching is enabled for vector-based 
@@ -807,7 +807,7 @@ object tile {
       * @param {quad} quad Quadtile for which to fetch the endpoint.
       * @returns {string} The requested URI string.
       */
-    def getFormattedEndpoint(quad: quad, descriptor: js.Any): String = js.native
+    def getFormattedEndpoint(quad: quad, descriptor: Any): String = js.native
     
     /**
       * Determines whether or not this requestor returns bitmap images.
@@ -827,7 +827,7 @@ object tile {
       * @param {quad} quad Quadtile for which to fetch the endpoint.
       * @returns {string} The requested JSON data.
       */
-    def getLocalData(quad: quad, descriptor: js.Any): String = js.native
+    def getLocalData(quad: quad, descriptor: Any): String = js.native
     
     /**
       * Gets maximum available zoom level content that can be retrieved 
@@ -858,7 +858,7 @@ object tile {
       * @params {descriptor} The descriptor for which to create the hash.
       * @returns {string} The generated sha1 hash.
       */
-    def hash(descriptor: js.Any): String = js.native
+    def hash(descriptor: Any): String = js.native
     
     /**
       * Sets whether or not caching is enabled for vector-beased requestors. 
@@ -910,7 +910,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.requestorBing")
   @js.native
-  class requestorBing () extends requestor {
+  open class requestorBing () extends requestor {
     def this(options: DataFormat) = this()
     
     /**
@@ -974,7 +974,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.requestorLocal")
   @js.native
-  class requestorLocal () extends requestor {
+  open class requestorLocal () extends requestor {
     def this(options: Data) = this()
     
     /** 
@@ -1003,7 +1003,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.requestorMDNRest")
   @js.native
-  class requestorMDNRest protected () extends requestor {
+  open class requestorMDNRest protected () extends requestor {
     def this(endpoint: String) = this()
     def this(endpoint: String, options: DataFormat) = this()
     
@@ -1016,7 +1016,7 @@ object tile {
   
   @JSImport("mapsjs", "tile.requestorOpen")
   @js.native
-  class requestorOpen protected () extends requestor {
+  open class requestorOpen protected () extends requestor {
     def this(endpoint: String, subdomains: js.Array[String]) = this()
     def this(endpoint: String, subdomains: js.Array[String], options: DataFormat) = this()
   }

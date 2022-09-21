@@ -23,6 +23,6 @@ object QueueUpdateItemsRequest {
     
     inline def setItem(value: js.Array[QueueItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setItemVarargs(value: QueueItem*): Self = StObject.set(x, "item", js.Array(value :_*))
+    inline def setItemVarargs(value: QueueItem*): Self = StObject.set(x, "item", js.Array(value*))
   }
 }

@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaDatafeedsFetchNowResponse extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#datafeedsFetchNowResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#datafeedsFetchNowResponse`".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDatafeedsFetchNowResponse {
   
@@ -22,6 +21,8 @@ object SchemaDatafeedsFetchNowResponse {
   extension [Self <: SchemaDatafeedsFetchNowResponse](x: Self) {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

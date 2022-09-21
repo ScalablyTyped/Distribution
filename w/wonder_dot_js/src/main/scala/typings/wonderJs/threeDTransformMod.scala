@@ -13,13 +13,13 @@ object threeDTransformMod {
   
   @JSImport("wonder.js/dist/es2015/component/transform/ThreeDTransform", "ThreeDTransform")
   @js.native
-  class ThreeDTransform () extends Transform {
+  open class ThreeDTransform () extends Transform {
     
     var dirtyWorld: Boolean = js.native
     
     var eulerAngles: Vector3 = js.native
     
-    val forward: js.Any = js.native
+    val forward: Any = js.native
     
     var localEulerAngles: Vector3 = js.native
     
@@ -31,10 +31,10 @@ object threeDTransformMod {
     
     var localToWorldMatrix: Matrix4 = js.native
     
-    def lookAt(targetX: Double, targetY: Double, targetZ: Double): js.Any = js.native
-    def lookAt(targetX: Double, targetY: Double, targetZ: Double, upX: Double, upY: Double, upZ: Double): js.Any = js.native
-    def lookAt(target: Vector3): js.Any = js.native
-    def lookAt(target: Vector3, up: Vector3): js.Any = js.native
+    def lookAt(targetX: Double, targetY: Double, targetZ: Double): Any = js.native
+    def lookAt(targetX: Double, targetY: Double, targetZ: Double, upX: Double, upY: Double, upZ: Double): Any = js.native
+    def lookAt(target: Vector3): Any = js.native
+    def lookAt(target: Vector3, up: Vector3): Any = js.native
     
     val normalMatrix: Matrix3 = js.native
     
@@ -45,8 +45,8 @@ object threeDTransformMod {
     
     val right: Vector3 = js.native
     
-    def rotate(eulerAngles: Vector3): js.Any = js.native
-    def rotate(x: Double, y: Double, z: Double): js.Any = js.native
+    def rotate(eulerAngles: Vector3): Any = js.native
+    def rotate(x: Double, y: Double, z: Double): Any = js.native
     
     def rotateAround(
       angle: Double,
@@ -56,11 +56,11 @@ object threeDTransformMod {
       axisX: Double,
       axisY: Double,
       axisZ: Double
-    ): js.Any = js.native
-    def rotateAround(angle: Double, center: Vector3, axis: Vector3): js.Any = js.native
+    ): Any = js.native
+    def rotateAround(angle: Double, center: Vector3, axis: Vector3): Any = js.native
     
-    def rotateLocal(eulerAngles: Vector3): js.Any = js.native
-    def rotateLocal(x: Double, y: Double, z: Double): js.Any = js.native
+    def rotateLocal(eulerAngles: Vector3): Any = js.native
+    def rotateLocal(x: Double, y: Double, z: Double): Any = js.native
     
     var rotation: Quaternion = js.native
     
@@ -68,11 +68,11 @@ object threeDTransformMod {
     
     def sync(): Unit = js.native
     
-    def translate(translation: Vector3): js.Any = js.native
-    def translate(x: Double, y: Double, z: Double): js.Any = js.native
+    def translate(translation: Vector3): Any = js.native
+    def translate(x: Double, y: Double, z: Double): Any = js.native
     
-    def translateLocal(translation: Vector3): js.Any = js.native
-    def translateLocal(x: Double, y: Double, z: Double): js.Any = js.native
+    def translateLocal(translation: Vector3): Any = js.native
+    def translateLocal(x: Double, y: Double, z: Double): Any = js.native
     
     val up: Vector3 = js.native
   }

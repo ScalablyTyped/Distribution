@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "import-in-the-middle" : "1.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "import-in-the-middle" : "1.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

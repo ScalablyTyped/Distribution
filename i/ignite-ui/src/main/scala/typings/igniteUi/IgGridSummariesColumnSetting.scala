@@ -10,7 +10,7 @@ trait IgGridSummariesColumnSetting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Enables disables summaries for the column
@@ -61,6 +61,6 @@ object IgGridSummariesColumnSetting {
     
     inline def setSummaryOperandsUndefined: Self = StObject.set(x, "summaryOperands", js.undefined)
     
-    inline def setSummaryOperandsVarargs(value: IgGridSummariesColumnSettingSummaryOperand*): Self = StObject.set(x, "summaryOperands", js.Array(value :_*))
+    inline def setSummaryOperandsVarargs(value: IgGridSummariesColumnSettingSummaryOperand*): Self = StObject.set(x, "summaryOperands", js.Array(value*))
   }
 }

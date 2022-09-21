@@ -8,38 +8,78 @@ object mod {
   
   @JSImport("system-task", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ ()
     extends StObject
        with SystemTask {
     def this(taskType: String) = this()
     def this(taskType: String, isAsyncProcess: Boolean) = this()
-    def this(taskType: String, isAsyncProcess: Boolean, logMethod: js.Any) = this()
-    def this(taskType: String, isAsyncProcess: Unit, logMethod: js.Any) = this()
+    def this(taskType: Unit, isAsyncProcess: Boolean) = this()
+    def this(taskType: String, isAsyncProcess: Boolean, logMethod: Any) = this()
+    def this(taskType: String, isAsyncProcess: Unit, logMethod: Any) = this()
+    def this(taskType: Unit, isAsyncProcess: Boolean, logMethod: Any) = this()
+    def this(taskType: Unit, isAsyncProcess: Unit, logMethod: Any) = this()
   }
-  @JSImport("system-task", JSImport.Namespace)
+  
+  /**
+    * @async
+    */
+  @JSImport("system-task", "AsyncProcess")
   @js.native
-  val ^ : js.Any = js.native
+  val AsyncProcess: js.Function4[
+    /* items */ js.Array[Any], 
+    /* executeAsyncCall */ Any, 
+    /* task */ SystemTask, 
+    /* errors */ js.Array[Any], 
+    js.Promise[Any]
+  ] = js.native
   
-  inline def asyncProcess(items: js.Array[js.Any], executeAsyncCall: js.Any, task: SystemTask, errors: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncProcess")(items.asInstanceOf[js.Any], executeAsyncCall.asInstanceOf[js.Any], task.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  
-  inline def syncProcess(items: js.Array[js.Any], executeSyncCall: js.Any, task: SystemTask, errors: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncProcess")(items.asInstanceOf[js.Any], executeSyncCall.asInstanceOf[js.Any], task.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  /**
+    * @async
+    */
+  @JSImport("system-task", "SyncProcess")
+  @js.native
+  val SyncProcess: js.Function4[
+    /* items */ js.Array[Any], 
+    /* executeSyncCall */ Any, 
+    /* task */ SystemTask, 
+    /* errors */ js.Array[Any], 
+    js.Promise[Any]
+  ] = js.native
   
   @js.native
   trait SystemTask extends StObject {
     
-    def cleanupHandler(task: SystemTask, cleanupItems: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    /**
+      * @async
+      */
+    def cleanupHandler(task: SystemTask, cleanupItems: js.Array[Any]): js.Promise[Any] = js.native
     
-    def insertPreprocessItemsHandler(task: SystemTask): js.Promise[js.Any] = js.native
+    /**
+      * @async
+      */
+    def insertPreprocessItemsHandler(task: SystemTask): js.Promise[Any] = js.native
     
     def isValidProcess(): Unit = js.native
     
+    /**
+      * @async
+      */
     def log(`type`: String, message: String): Unit = js.native
-    def log(`type`: String, message: String, detail: js.Any): Unit = js.native
+    def log(`type`: String, message: String, detail: Any): Unit = js.native
     
-    def preprocessHandler(task: SystemTask, preProcessItem: js.Any): js.Promise[js.Any] = js.native
+    /**
+      * @async
+      */
+    def preprocessHandler(task: SystemTask, preProcessItem: Any): js.Promise[Any] = js.native
     
-    def processHandler(task: SystemTask, processItem: js.Any): js.Promise[js.Any] = js.native
+    /**
+      * @async
+      */
+    def processHandler(task: SystemTask, processItem: Any): js.Promise[Any] = js.native
     
+    /**
+      * @async
+      */
     def start(): Unit = js.native
     
     var `type`: String = js.native

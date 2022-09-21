@@ -26,4 +26,14 @@ trait WorleyNoise3DBlock
     * Gets the seed input component
     */
   def seed: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the x component
+    */
+  def x: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the y component
+    */
+  def y: NodeMaterialConnectionPoint = js.native
 }

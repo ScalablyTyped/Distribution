@@ -2,7 +2,7 @@ package typings.three
 
 import typings.three.boneMod.Bone
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.geometryMod.Geometry
+import typings.three.eventDispatcherMod.Event
 import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
@@ -15,17 +15,17 @@ object skeletonHelperMod {
   
   @JSImport("three/src/helpers/SkeletonHelper", "SkeletonHelper")
   @js.native
-  class SkeletonHelper protected ()
-    extends LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]] {
-    def this(`object`: Object3D) = this()
+  open class SkeletonHelper protected ()
+    extends LineSegments[BufferGeometry, Material | js.Array[Material]] {
+    def this(`object`: Object3D[Event]) = this()
     
     var bones: js.Array[Bone] = js.native
     
-    def getBoneList(`object`: Object3D): js.Array[Bone] = js.native
+    def getBoneList(`object`: Object3D[Event]): js.Array[Bone] = js.native
     
     val isSkeletonHelper: `true` = js.native
     
-    var root: Object3D = js.native
+    var root: Object3D[Event] = js.native
     
     def update(): Unit = js.native
   }

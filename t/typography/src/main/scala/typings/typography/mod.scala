@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("typography", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Typography {
     def this(opts: TypographyOptions) = this()
@@ -100,7 +100,7 @@ object mod {
       
       inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
     }
   }
   
@@ -207,7 +207,7 @@ object mod {
         js.Function3[
           /* VerticalRhythm */ VerticalRhythm, 
           /* options */ this.type, 
-          /* styles */ js.Any, 
+          /* styles */ Any, 
           js.Object
         ]
       ] = js.undefined
@@ -216,12 +216,12 @@ object mod {
         js.Function3[
           /* VerticalRhythm */ VerticalRhythm, 
           /* options */ this.type, 
-          /* styles */ js.Any, 
+          /* styles */ Any, 
           js.Object
         ]
       ] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var plugins: js.UndefOr[js.Array[Any]] = js.undefined
     
     var scaleRatio: js.UndefOr[Double] = js.undefined
   }
@@ -254,7 +254,7 @@ object mod {
       
       inline def setBodyFontFamilyUndefined: Self = StObject.set(x, "bodyFontFamily", js.undefined)
       
-      inline def setBodyFontFamilyVarargs(value: String*): Self = StObject.set(x, "bodyFontFamily", js.Array(value :_*))
+      inline def setBodyFontFamilyVarargs(value: String*): Self = StObject.set(x, "bodyFontFamily", js.Array(value*))
       
       inline def setBodyWeight(value: Double | String): Self = StObject.set(x, "bodyWeight", value.asInstanceOf[js.Any])
       
@@ -268,7 +268,7 @@ object mod {
       
       inline def setGoogleFontsUndefined: Self = StObject.set(x, "googleFonts", js.undefined)
       
-      inline def setGoogleFontsVarargs(value: GoogleFont*): Self = StObject.set(x, "googleFonts", js.Array(value :_*))
+      inline def setGoogleFontsVarargs(value: GoogleFont*): Self = StObject.set(x, "googleFonts", js.Array(value*))
       
       inline def setHeaderColor(value: String): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
       
@@ -278,7 +278,7 @@ object mod {
       
       inline def setHeaderFontFamilyUndefined: Self = StObject.set(x, "headerFontFamily", js.undefined)
       
-      inline def setHeaderFontFamilyVarargs(value: String*): Self = StObject.set(x, "headerFontFamily", js.Array(value :_*))
+      inline def setHeaderFontFamilyVarargs(value: String*): Self = StObject.set(x, "headerFontFamily", js.Array(value*))
       
       inline def setHeaderLineHeight(value: Double): Self = StObject.set(x, "headerLineHeight", value.asInstanceOf[js.Any])
       
@@ -292,19 +292,19 @@ object mod {
       
       inline def setIncludeNormalizeUndefined: Self = StObject.set(x, "includeNormalize", js.undefined)
       
-      inline def setOverrideStyles(value: (/* VerticalRhythm */ VerticalRhythm, TypographyOptions, /* styles */ js.Any) => js.Object): Self = StObject.set(x, "overrideStyles", js.Any.fromFunction3(value))
+      inline def setOverrideStyles(value: (/* VerticalRhythm */ VerticalRhythm, TypographyOptions, /* styles */ Any) => js.Object): Self = StObject.set(x, "overrideStyles", js.Any.fromFunction3(value))
       
       inline def setOverrideStylesUndefined: Self = StObject.set(x, "overrideStyles", js.undefined)
       
-      inline def setOverrideThemeStyles(value: (/* VerticalRhythm */ VerticalRhythm, TypographyOptions, /* styles */ js.Any) => js.Object): Self = StObject.set(x, "overrideThemeStyles", js.Any.fromFunction3(value))
+      inline def setOverrideThemeStyles(value: (/* VerticalRhythm */ VerticalRhythm, TypographyOptions, /* styles */ Any) => js.Object): Self = StObject.set(x, "overrideThemeStyles", js.Any.fromFunction3(value))
       
       inline def setOverrideThemeStylesUndefined: Self = StObject.set(x, "overrideThemeStyles", js.undefined)
       
-      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
       

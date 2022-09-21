@@ -8,5 +8,5 @@ object uploadsListMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_UploadsList", "_UploadsList")
   @js.native
-  val UploadsList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val UploadsList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

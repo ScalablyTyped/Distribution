@@ -10,10 +10,10 @@ Resizing images made easy.
 | ------------------ | :-------------: |
 | Full name          | gulp-image-resize |
 | Keywords           | gulpplugin |
-| # releases         | 2 |
-| # dependents       | 23 |
-| # downloads        | 122257 |
-| # stars            | 45 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11566.0 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/scalableminds/gulp-image-resize)

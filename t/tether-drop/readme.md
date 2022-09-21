@@ -10,10 +10,10 @@ Client-side library for creating dropdowns
 | ------------------ | :-------------: |
 | Full name          | tether-drop |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 15 |
-| # downloads        | 455026 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 65870.0 |
+| # stars            | 2362.0 |
 
 ## Links
 - [Homepage](https://github.com/HubSpot/drop)

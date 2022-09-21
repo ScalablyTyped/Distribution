@@ -75,7 +75,7 @@ trait Slide extends StObject {
   
   val NotesPage: SlideRange = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.Slide_typekey")
   var PowerPointDotSlide_typekey: Slide = js.native
@@ -91,7 +91,7 @@ trait Slide extends StObject {
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Boolean, UseSlideOrder: Boolean): Unit = js.native
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Unit, UseSlideOrder: Boolean): Unit = js.native
   
-  def Scripts(Index: js.Any): Script = js.native
+  def Scripts(Index: Any): Script = js.native
   @JSName("Scripts")
   val Scripts_Original: Scripts = js.native
   

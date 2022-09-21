@@ -1,7 +1,6 @@
 package typings.zipWebpackPlugin
 
-import typings.std.Date
-import typings.std.RegExp
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,16 +16,14 @@ object mod {
   /**
     * @param options Options for ZipPlugin.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ZipPlugin {
     def this(options: Options) = this()
     
     /* CompleteClass */
     @JSName("apply")
-    override def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
   trait Options extends StObject {
@@ -34,7 +31,7 @@ object mod {
     /**
       * Exclude file paths or patterns. Takes precedence over include. Defaults to no excluding.
       */
-    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var exclude: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     /**
       * The file extension to use instead of "zip".
@@ -58,7 +55,7 @@ object mod {
       * Include file paths or patterns.
       * Defaults to including all files in the webpack output path.
       */
-    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var include: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     /**
       * Output path. Can be relative (to the webpack output path) or absolute.
@@ -92,11 +89,11 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
@@ -110,11 +107,11 @@ object mod {
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -141,24 +138,18 @@ object mod {
   trait ZipPlugin extends StObject {
     
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit
+    def apply(compiler: Compiler): Unit
   }
   object ZipPlugin {
     
-    inline def apply(
-      apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-    ): ZipPlugin = {
+    inline def apply(apply: Compiler => Unit): ZipPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[ZipPlugin]
     }
     
     extension [Self <: ZipPlugin](x: Self) {
       
-      inline def setApply(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-      ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
   }
   
@@ -186,7 +177,7 @@ object mod {
       * Overwrite the last modified time.
       * Defaults to the current date and time.
       */
-    var mtime: js.UndefOr[Date] = js.undefined
+    var mtime: js.UndefOr[js.Date] = js.undefined
   }
   object fileOptions {
     
@@ -209,7 +200,7 @@ object mod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     }

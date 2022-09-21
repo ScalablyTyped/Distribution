@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.EntityType")
 @js.native
-class EntityType protected ()
+open class EntityType protected ()
   extends StObject
      with typings.breeze.breeze.EntityType {
   def this(config: EntityTypeOptions) = this()
@@ -15,6 +15,9 @@ class EntityType protected ()
   
   /* CompleteClass */
   var complexProperties: js.Array[typings.breeze.breeze.DataProperty] = js.native
+  
+  /* CompleteClass */
+  var custom: Any = js.native
   
   /* CompleteClass */
   var dataProperties: js.Array[typings.breeze.breeze.DataProperty] = js.native

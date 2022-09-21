@@ -1,5 +1,6 @@
 package typings.lernaGetPackages
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,13 +24,15 @@ object anon {
       
       inline def setAdditionalTsTypingsUndefined: Self = StObject.set(x, "additionalTsTypings", js.undefined)
       
-      inline def setAdditionalTsTypingsVarargs(value: String*): Self = StObject.set(x, "additionalTsTypings", js.Array(value :_*))
+      inline def setAdditionalTsTypingsVarargs(value: String*): Self = StObject.set(x, "additionalTsTypings", js.Array(value*))
     }
   }
   
   trait Config extends StObject {
     
     var config: js.UndefOr[AdditionalTsTypings] = js.undefined
+    
+    var dependencies: Record[String, String]
     
     var main: js.UndefOr[String] = js.undefined
     
@@ -41,8 +44,8 @@ object anon {
   }
   object Config {
     
-    inline def apply(name: String, version: String): Config = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    inline def apply(dependencies: Record[String, String], name: String, version: String): Config = {
+      val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
@@ -51,6 +54,8 @@ object anon {
       inline def setConfig(value: AdditionalTsTypings): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      
+      inline def setDependencies(value: Record[String, String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
       inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       

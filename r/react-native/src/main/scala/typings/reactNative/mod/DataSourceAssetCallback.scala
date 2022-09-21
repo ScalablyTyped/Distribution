@@ -7,19 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataSourceAssetCallback extends StObject {
   
   var getRowData: js.UndefOr[
-    js.Function3[
-      /* dataBlob */ js.Any, 
-      /* sectionID */ Double | String, 
-      /* rowID */ Double | String, 
-      js.Any
-    ]
+    js.Function3[/* dataBlob */ Any, /* sectionID */ Double | String, /* rowID */ Double | String, Any]
   ] = js.undefined
   
-  var getSectionHeaderData: js.UndefOr[js.Function2[/* dataBlob */ js.Any, /* sectionID */ Double | String, js.Any]] = js.undefined
+  var getSectionHeaderData: js.UndefOr[js.Function2[/* dataBlob */ Any, /* sectionID */ Double | String, Any]] = js.undefined
   
-  var rowHasChanged: js.UndefOr[js.Function2[/* r1 */ js.Any, /* r2 */ js.Any, Boolean]] = js.undefined
+  var rowHasChanged: js.UndefOr[js.Function2[/* r1 */ Any, /* r2 */ Any, Boolean]] = js.undefined
   
-  var sectionHeaderHasChanged: js.UndefOr[js.Function2[/* h1 */ js.Any, /* h2 */ js.Any, Boolean]] = js.undefined
+  var sectionHeaderHasChanged: js.UndefOr[js.Function2[/* h1 */ Any, /* h2 */ Any, Boolean]] = js.undefined
 }
 object DataSourceAssetCallback {
   
@@ -30,21 +25,19 @@ object DataSourceAssetCallback {
   
   extension [Self <: DataSourceAssetCallback](x: Self) {
     
-    inline def setGetRowData(
-      value: (/* dataBlob */ js.Any, /* sectionID */ Double | String, /* rowID */ Double | String) => js.Any
-    ): Self = StObject.set(x, "getRowData", js.Any.fromFunction3(value))
+    inline def setGetRowData(value: (/* dataBlob */ Any, /* sectionID */ Double | String, /* rowID */ Double | String) => Any): Self = StObject.set(x, "getRowData", js.Any.fromFunction3(value))
     
     inline def setGetRowDataUndefined: Self = StObject.set(x, "getRowData", js.undefined)
     
-    inline def setGetSectionHeaderData(value: (/* dataBlob */ js.Any, /* sectionID */ Double | String) => js.Any): Self = StObject.set(x, "getSectionHeaderData", js.Any.fromFunction2(value))
+    inline def setGetSectionHeaderData(value: (/* dataBlob */ Any, /* sectionID */ Double | String) => Any): Self = StObject.set(x, "getSectionHeaderData", js.Any.fromFunction2(value))
     
     inline def setGetSectionHeaderDataUndefined: Self = StObject.set(x, "getSectionHeaderData", js.undefined)
     
-    inline def setRowHasChanged(value: (/* r1 */ js.Any, /* r2 */ js.Any) => Boolean): Self = StObject.set(x, "rowHasChanged", js.Any.fromFunction2(value))
+    inline def setRowHasChanged(value: (/* r1 */ Any, /* r2 */ Any) => Boolean): Self = StObject.set(x, "rowHasChanged", js.Any.fromFunction2(value))
     
     inline def setRowHasChangedUndefined: Self = StObject.set(x, "rowHasChanged", js.undefined)
     
-    inline def setSectionHeaderHasChanged(value: (/* h1 */ js.Any, /* h2 */ js.Any) => Boolean): Self = StObject.set(x, "sectionHeaderHasChanged", js.Any.fromFunction2(value))
+    inline def setSectionHeaderHasChanged(value: (/* h1 */ Any, /* h2 */ Any) => Boolean): Self = StObject.set(x, "sectionHeaderHasChanged", js.Any.fromFunction2(value))
     
     inline def setSectionHeaderHasChangedUndefined: Self = StObject.set(x, "sectionHeaderHasChanged", js.undefined)
   }

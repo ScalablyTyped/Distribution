@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.WorkbookConnection")
 @js.native
-/* private */ class WorkbookConnection ()
+/* private */ open class WorkbookConnection ()
   extends StObject
      with typings.activexExcel.Excel.WorkbookConnection {
   
@@ -40,10 +40,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val OLEDBConnection: typings.activexExcel.Excel.OLEDBConnection = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override def Ranges(Index: js.Any): Range = js.native
+  override def Ranges(Index: Any): Range = js.native
   /* CompleteClass */
   @JSName("Ranges")
   override val Ranges_Original: Ranges = js.native

@@ -5,6 +5,8 @@ import typings.cssSelectorParser.cssSelectorParserStrings.selector
 import typings.cssSelectorParser.cssSelectorParserStrings.string
 import typings.cssSelectorParser.cssSelectorParserStrings.substitute
 import typings.cssSelectorParser.selectorMod.AttrValueType
+import typings.cssSelectorParser.selectorMod.RuleAttr
+import typings.cssSelectorParser.selectorMod.RulePseudo
 import typings.cssSelectorParser.selectorMod.Selector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,24 +14,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Name extends StObject {
+  /* Inlined {} & {  name :string} */
+  trait namestring
+    extends StObject
+       with RuleAttr {
     
     var name: String
   }
-  object Name {
+  object namestring {
     
-    inline def apply(name: String): Name = {
+    inline def apply(name: String): namestring = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Name]
+      __obj.asInstanceOf[namestring]
     }
     
-    extension [Self <: Name](x: Self) {
+    extension [Self <: namestring](x: Self) {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Operator extends StObject {
+  /* Inlined {  operator :string,   valueType :css-selector-parser.css-selector-parser/lib/selector.AttrValueType,   value :string} & {  name :string} */
+  trait operatorstringvalueTypeAt
+    extends StObject
+       with RuleAttr {
+    
+    var name: String
     
     var operator: String
     
@@ -37,14 +47,16 @@ object anon {
     
     var valueType: AttrValueType
   }
-  object Operator {
+  object operatorstringvalueTypeAt {
     
-    inline def apply(operator: String, value: String, valueType: AttrValueType): Operator = {
-      val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Operator]
+    inline def apply(name: String, operator: String, value: String, valueType: AttrValueType): operatorstringvalueTypeAt = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
+      __obj.asInstanceOf[operatorstringvalueTypeAt]
     }
     
-    extension [Self <: Operator](x: Self) {
+    extension [Self <: operatorstringvalueTypeAt](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
@@ -54,20 +66,27 @@ object anon {
     }
   }
   
-  trait Value extends StObject {
+  /* Inlined {  valueType :'selector',   value :css-selector-parser.css-selector-parser/lib/selector.Selector} & {  name :string} */
+  trait valueTypeselectorvalueSel
+    extends StObject
+       with RulePseudo {
+    
+    var name: String
     
     var value: Selector
     
     var valueType: selector
   }
-  object Value {
+  object valueTypeselectorvalueSel {
     
-    inline def apply(value: Selector): Value = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], valueType = "selector")
-      __obj.asInstanceOf[Value]
+    inline def apply(name: String, value: Selector): valueTypeselectorvalueSel = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = "selector")
+      __obj.asInstanceOf[valueTypeselectorvalueSel]
     }
     
-    extension [Self <: Value](x: Self) {
+    extension [Self <: valueTypeselectorvalueSel](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setValue(value: Selector): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -75,20 +94,27 @@ object anon {
     }
   }
   
-  trait ValueType extends StObject {
+  /* Inlined {  valueType :'string' | 'substitute' | 'numeric',   value :string} & {  name :string} */
+  trait valueTypestringsubstitute
+    extends StObject
+       with RulePseudo {
+    
+    var name: String
     
     var value: String
     
     var valueType: string | substitute | numeric
   }
-  object ValueType {
+  object valueTypestringsubstitute {
     
-    inline def apply(value: String, valueType: string | substitute | numeric): ValueType = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ValueType]
+    inline def apply(name: String, value: String, valueType: string | substitute | numeric): valueTypestringsubstitute = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
+      __obj.asInstanceOf[valueTypestringsubstitute]
     }
     
-    extension [Self <: ValueType](x: Self) {
+    extension [Self <: valueTypestringsubstitute](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

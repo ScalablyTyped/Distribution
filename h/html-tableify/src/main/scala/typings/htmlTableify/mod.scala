@@ -50,7 +50,7 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: Header[T]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Header[T]*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setTidy(value: Boolean): Self = StObject.set(x, "tidy", value.asInstanceOf[js.Any])
       
@@ -61,7 +61,7 @@ object mod {
   /** Object of optional values for each key `T`. */
   type Datum[T /* <: /* keyof any */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in T ]:? unknown}
-    */ typings.htmlTableify.htmlTableifyStrings.Datum & TopLevel[js.Any]
+    */ typings.htmlTableify.htmlTableifyStrings.Datum & TopLevel[Any]
   
   /** Header config object for key `T`. */
   trait Header[T] extends StObject {

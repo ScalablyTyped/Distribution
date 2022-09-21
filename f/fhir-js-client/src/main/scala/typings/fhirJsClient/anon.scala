@@ -12,32 +12,32 @@ object anon {
     /**
       * Returns the valueQuantity value as number. (As it is)
       */
-    def any(valueQuantity: js.Any): Double
+    def any(valueQuantity: scala.Any): Double
     
     /**
       * Converts the valueQuantity passed into cm based on the code
       */
-    def cm(valueQuantity: js.Any): Double
+    def cm(valueQuantity: scala.Any): Double
     
     /**
       * Converts the valueQuantity passed into kg based on the code
       */
-    def kg(valueQuantity: js.Any): Double
+    def kg(valueQuantity: scala.Any): Double
   }
   object Any {
     
-    inline def apply(any: js.Any => Double, cm: js.Any => Double, kg: js.Any => Double): Any = {
+    inline def apply(any: scala.Any => Double, cm: scala.Any => Double, kg: scala.Any => Double): Any = {
       val __obj = js.Dynamic.literal(any = js.Any.fromFunction1(any), cm = js.Any.fromFunction1(cm), kg = js.Any.fromFunction1(kg))
       __obj.asInstanceOf[Any]
     }
     
     extension [Self <: Any](x: Self) {
       
-      inline def setAny(value: js.Any => Double): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
+      inline def setAny(value: scala.Any => Double): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
       
-      inline def setCm(value: js.Any => Double): Self = StObject.set(x, "cm", js.Any.fromFunction1(value))
+      inline def setCm(value: scala.Any => Double): Self = StObject.set(x, "cm", js.Any.fromFunction1(value))
       
-      inline def setKg(value: js.Any => Double): Self = StObject.set(x, "kg", js.Any.fromFunction1(value))
+      inline def setKg(value: scala.Any => Double): Self = StObject.set(x, "kg", js.Any.fromFunction1(value))
     }
   }
   
@@ -46,7 +46,7 @@ object anon {
        with /**
     * Making this interface extendable since this is not a complete type definition of FHIR Resource
     */
-  /* propName */ StringDictionary[js.Any] {
+  /* propName */ StringDictionary[scala.Any] {
     
     /**
       * Type: dateTime    Only include resource versions that were current at some point during the time period specified

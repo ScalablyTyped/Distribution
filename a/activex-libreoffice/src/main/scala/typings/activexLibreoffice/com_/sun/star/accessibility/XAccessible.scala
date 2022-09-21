@@ -53,7 +53,7 @@ object XAccessible {
     AccessibleContext: XAccessibleContext,
     acquire: () => Unit,
     getAccessibleContext: () => XAccessibleContext,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessible = {
     val __obj = js.Dynamic.literal(AccessibleContext = AccessibleContext.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAccessibleContext = js.Any.fromFunction0(getAccessibleContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

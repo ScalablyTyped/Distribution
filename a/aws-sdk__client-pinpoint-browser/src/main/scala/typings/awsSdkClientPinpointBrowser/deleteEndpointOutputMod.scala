@@ -8,5 +8,5 @@ object deleteEndpointOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteEndpointOutput", "DeleteEndpointOutput")
   @js.native
-  val DeleteEndpointOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteEndpointOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

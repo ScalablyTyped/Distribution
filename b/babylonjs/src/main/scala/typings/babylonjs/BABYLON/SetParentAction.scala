@@ -9,7 +9,7 @@ trait SetParentAction
   extends StObject
      with Action {
   
-  /* private */ var _parent: js.Any = js.native
+  /* private */ var _parent: Any = js.native
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _target: Any = js.native
 }

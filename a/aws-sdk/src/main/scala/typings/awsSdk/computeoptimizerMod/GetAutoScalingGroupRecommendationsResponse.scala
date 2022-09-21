@@ -34,13 +34,13 @@ object GetAutoScalingGroupRecommendationsResponse {
     
     inline def setAutoScalingGroupRecommendationsUndefined: Self = StObject.set(x, "autoScalingGroupRecommendations", js.undefined)
     
-    inline def setAutoScalingGroupRecommendationsVarargs(value: AutoScalingGroupRecommendation*): Self = StObject.set(x, "autoScalingGroupRecommendations", js.Array(value :_*))
+    inline def setAutoScalingGroupRecommendationsVarargs(value: AutoScalingGroupRecommendation*): Self = StObject.set(x, "autoScalingGroupRecommendations", js.Array(value*))
     
     inline def setErrors(value: GetRecommendationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: GetRecommendationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: GetRecommendationError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

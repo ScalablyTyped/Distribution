@@ -6,18 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait XMLHttpRequestEventTargetEventMap extends StObject {
   
+  /* standard dom */
   var abort: ProgressEvent[XMLHttpRequestEventTarget]
   
+  /* standard dom */
   var error: ProgressEvent[XMLHttpRequestEventTarget]
   
+  /* standard dom */
   var load: ProgressEvent[XMLHttpRequestEventTarget]
   
+  /* standard dom */
   var loadend: ProgressEvent[XMLHttpRequestEventTarget]
   
+  /* standard dom */
   var loadstart: ProgressEvent[XMLHttpRequestEventTarget]
   
+  /* standard dom */
   var progress: ProgressEvent[XMLHttpRequestEventTarget]
   
+  /* standard dom */
   var timeout: ProgressEvent[XMLHttpRequestEventTarget]
 }
 object XMLHttpRequestEventTargetEventMap {

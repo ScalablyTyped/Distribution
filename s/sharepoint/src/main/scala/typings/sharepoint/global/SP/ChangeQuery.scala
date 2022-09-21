@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ChangeQuery")
 @js.native
-class ChangeQuery ()
+open class ChangeQuery ()
   extends StObject
      with typings.sharepoint.SP.ChangeQuery {
   def this(allChangeObjectTypes: Boolean, allChangeTypes: Boolean) = this()
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -21,7 +21,7 @@ class ChangeQuery ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_add(): Boolean = js.native

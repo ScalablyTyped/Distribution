@@ -10,10 +10,10 @@ object chromeReaderModeMod {
   
   @JSImport("material-ui/svg-icons/action/chrome-reader-mode", JSImport.Default)
   @js.native
-  class default () extends ActionChromeReaderMode
+  open class default () extends ActionChromeReaderMode
   
   @JSImport("material-ui/svg-icons/action/chrome-reader-mode", "ActionChromeReaderMode")
   @js.native
-  class ActionChromeReaderMode ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionChromeReaderMode ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

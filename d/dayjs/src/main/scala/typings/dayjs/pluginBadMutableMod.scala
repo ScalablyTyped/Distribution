@@ -10,10 +10,10 @@ object pluginBadMutableMod extends Shortcut {
   
   @JSImport("dayjs/plugin/badMutable", JSImport.Namespace)
   @js.native
-  val ^ : PluginFunc[js.Any] = js.native
+  val ^ : PluginFunc[Any] = js.native
   
-  type _To = PluginFunc[js.Any]
+  type _To = PluginFunc[Any]
   
   /* This means you don't have to write `^`, but can instead just say `pluginBadMutableMod.foo` */
-  override def _to: PluginFunc[js.Any] = ^
+  override def _to: PluginFunc[Any] = ^
 }

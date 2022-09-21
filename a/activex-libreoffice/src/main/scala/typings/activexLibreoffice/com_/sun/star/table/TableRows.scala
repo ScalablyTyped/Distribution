@@ -22,12 +22,12 @@ object TableRows {
     ElementType: `type`,
     acquire: () => Unit,
     createEnumeration: () => XEnumeration,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
     insertByIndex: (Double, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIndex: (Double, Double) => Unit
   ): TableRows = {

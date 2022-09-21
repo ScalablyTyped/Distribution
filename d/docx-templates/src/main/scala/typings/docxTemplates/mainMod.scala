@@ -1,6 +1,7 @@
 package typings.docxTemplates
 
 import typings.docxTemplates.anon.Category
+import typings.docxTemplates.anon.ContentTypes
 import typings.docxTemplates.docxTemplatesStrings.JS
 import typings.docxTemplates.docxTemplatesStrings.XML
 import typings.docxTemplates.typesMod.CommandSummary
@@ -8,8 +9,7 @@ import typings.docxTemplates.typesMod.Node
 import typings.docxTemplates.typesMod.NonTextNode
 import typings.docxTemplates.typesMod.UserOptions
 import typings.jszip.mod.JSZip
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +44,7 @@ object mainMod {
     *
     * @param options Options for Report
     */
-  inline def default(options: UserOptions): js.Promise[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8Array]]
+  inline def default(options: UserOptions): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
   
   /**
     * For development and testing purposes. Don't use _probe if you don't know what you are doing
@@ -63,6 +63,8 @@ object mainMod {
   inline def listCommands(template: Buffer): js.Promise[js.Array[CommandSummary]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listCommands")(template.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[CommandSummary]]]
   inline def listCommands(template: Buffer, delimiter: String): js.Promise[js.Array[CommandSummary]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listCommands")(template.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[CommandSummary]]]
   inline def listCommands(template: Buffer, delimiter: js.Tuple2[String, String]): js.Promise[js.Array[CommandSummary]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listCommands")(template.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[CommandSummary]]]
+  
+  inline def parseTemplate(template: Buffer): js.Promise[ContentTypes] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ContentTypes]]
   
   inline def readContentTypes(zip: JSZip): js.Promise[NonTextNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("readContentTypes")(zip.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NonTextNode]]
 }

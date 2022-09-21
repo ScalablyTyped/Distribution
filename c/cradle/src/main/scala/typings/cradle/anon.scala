@@ -20,7 +20,7 @@ object anon {
     
     var proxy: js.UndefOr[String] = js.undefined
     
-    var query_params: js.UndefOr[js.Any] = js.undefined
+    var query_params: js.UndefOr[Any] = js.undefined
     
     var source: String | Url
     
@@ -51,7 +51,7 @@ object anon {
       
       inline def setDoc_idsUndefined: Self = StObject.set(x, "doc_ids", js.undefined)
       
-      inline def setDoc_idsVarargs(value: String*): Self = StObject.set(x, "doc_ids", js.Array(value :_*))
+      inline def setDoc_idsVarargs(value: String*): Self = StObject.set(x, "doc_ids", js.Array(value*))
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -61,7 +61,7 @@ object anon {
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      inline def setQuery_params(value: js.Any): Self = StObject.set(x, "query_params", value.asInstanceOf[js.Any])
+      inline def setQuery_params(value: Any): Self = StObject.set(x, "query_params", value.asInstanceOf[js.Any])
       
       inline def setQuery_paramsUndefined: Self = StObject.set(x, "query_params", js.undefined)
       
@@ -75,7 +75,7 @@ object anon {
     
     var descending: js.UndefOr[Boolean] = js.undefined
     
-    var endkey: js.UndefOr[js.Any] = js.undefined
+    var endkey: js.UndefOr[Any] = js.undefined
     
     var group: js.UndefOr[Boolean] = js.undefined
     
@@ -87,7 +87,7 @@ object anon {
     
     var reduce: js.UndefOr[Boolean] = js.undefined
     
-    var startkey: js.UndefOr[js.Any] = js.undefined
+    var startkey: js.UndefOr[Any] = js.undefined
   }
   object Descending {
     
@@ -102,7 +102,7 @@ object anon {
       
       inline def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
       
-      inline def setEndkey(value: js.Any): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
+      inline def setEndkey(value: Any): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
       
       inline def setEndkeyUndefined: Self = StObject.set(x, "endkey", js.undefined)
       
@@ -126,7 +126,7 @@ object anon {
       
       inline def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
       
-      inline def setStartkey(value: js.Any): Self = StObject.set(x, "startkey", value.asInstanceOf[js.Any])
+      inline def setStartkey(value: Any): Self = StObject.set(x, "startkey", value.asInstanceOf[js.Any])
       
       inline def setStartkeyUndefined: Self = StObject.set(x, "startkey", js.undefined)
     }

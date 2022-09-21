@@ -12,7 +12,7 @@ trait RequestSpotInstancesRequest extends StObject {
   var AvailabilityZoneGroup: js.UndefOr[String] = js.undefined
   
   /**
-    * The required duration for the Spot Instances (also known as Spot blocks), in minutes. This value must be a multiple of 60 (60, 120, 180, 240, 300, or 360). The duration period starts as soon as your Spot Instance receives its instance ID. At the end of the duration period, Amazon EC2 marks the Spot Instance for termination and provides a Spot Instance termination notice, which gives the instance a two-minute warning before it terminates. You can't specify an Availability Zone group or a launch group if you specify a duration. New accounts or accounts with no previous billing history with AWS are not eligible for Spot Instances with a defined duration (also known as Spot blocks).
+    * Deprecated.
     */
   var BlockDurationMinutes: js.UndefOr[Integer] = js.undefined
   
@@ -47,7 +47,7 @@ trait RequestSpotInstancesRequest extends StObject {
   var LaunchSpecification: js.UndefOr[RequestSpotLaunchSpecification] = js.undefined
   
   /**
-    * The maximum price per hour that you are willing to pay for a Spot Instance. The default is the On-Demand price.
+    * The maximum price per unit hour that you are willing to pay for a Spot Instance. We do not recommend using this parameter because it can lead to increased interruptions. If you do not specify this parameter, you will pay the current Spot price.  If you specify a maximum price, your instances will be interrupted more frequently than if you do not specify this parameter. 
     */
   var SpotPrice: js.UndefOr[String] = js.undefined
   
@@ -64,12 +64,12 @@ trait RequestSpotInstancesRequest extends StObject {
   /**
     * The start date of the request. If this is a one-time request, the request becomes active at this date and time and remains active until all instances launch, the request expires, or the request is canceled. If the request is persistent, the request becomes active at this date and time and remains active until it expires or is canceled. The specified start date and time cannot be equal to the current date and time. You must specify a start date and time that occurs after the current date and time.
     */
-  var ValidFrom: js.UndefOr[DateTime] = js.undefined
+  var ValidFrom: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The end date of the request, in UTC format (YYYY-MM-DDTHH:MM:SSZ).   For a persistent request, the request remains active until the ValidUntil date and time is reached. Otherwise, the request remains active until you cancel it.    For a one-time request, the request remains active until all instances launch, the request is canceled, or the ValidUntil date and time is reached. By default, the request is valid for 7 days from the date the request was created.  
     */
-  var ValidUntil: js.UndefOr[DateTime] = js.undefined
+  var ValidUntil: js.UndefOr[js.Date] = js.undefined
 }
 object RequestSpotInstancesRequest {
   
@@ -120,17 +120,17 @@ object RequestSpotInstancesRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setType(value: SpotInstanceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    inline def setValidFrom(value: DateTime): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
+    inline def setValidFrom(value: js.Date): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
     
     inline def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
     
-    inline def setValidUntil(value: DateTime): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
+    inline def setValidUntil(value: js.Date): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
     
     inline def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
   }

@@ -78,7 +78,7 @@ trait b2BodyDef extends StObject {
   /**
     * Use this to store application specific body data.
     **/
-  var userData: js.Any
+  var userData: Any
 }
 object b2BodyDef {
   
@@ -96,7 +96,7 @@ object b2BodyDef {
     linearVelocity: b2Vec2,
     position: b2Vec2,
     `type`: Double,
-    userData: js.Any
+    userData: Any
   ): b2BodyDef = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], allowSleep = allowSleep.asInstanceOf[js.Any], angle = angle.asInstanceOf[js.Any], angularDamping = angularDamping.asInstanceOf[js.Any], angularVelocity = angularVelocity.asInstanceOf[js.Any], awake = awake.asInstanceOf[js.Any], bullet = bullet.asInstanceOf[js.Any], fixedRotation = fixedRotation.asInstanceOf[js.Any], inertiaScale = inertiaScale.asInstanceOf[js.Any], linearDamping = linearDamping.asInstanceOf[js.Any], linearVelocity = linearVelocity.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -131,6 +131,6 @@ object b2BodyDef {
     
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
   }
 }

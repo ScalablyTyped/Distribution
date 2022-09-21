@@ -17,7 +17,7 @@ trait LocalInventory extends StObject {
   
   /**
     * Supported pickup method for this offer. Unless the value is "not supported", this field must be submitted together with `pickupSla`. For accepted attribute values, see the local
-    * product inventory feed // specification.
+    * product inventory feed specification.
     */
   var pickupMethod: js.UndefOr[String] = js.undefined
   

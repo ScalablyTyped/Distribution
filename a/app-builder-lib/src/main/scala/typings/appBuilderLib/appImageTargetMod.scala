@@ -12,20 +12,20 @@ object appImageTargetMod {
   
   @JSImport("app-builder-lib/out/targets/AppImageTarget", JSImport.Default)
   @js.native
-  class default protected () extends AppImageTarget {
+  open class default protected () extends AppImageTarget {
     def this(ignored: String, packager: LinuxPackager, helper: LinuxTargetHelper, outDir: String) = this()
   }
   
   @js.native
   trait AppImageTarget extends Target {
     
-    /* private */ val desktopEntry: js.Any = js.native
+    /* private */ val desktopEntry: Any = js.native
     
-    /* private */ val helper: js.Any = js.native
+    /* private */ val helper: Any = js.native
     
     @JSName("options")
     val options_AppImageTarget: AppImageOptions = js.native
     
-    /* private */ val packager: js.Any = js.native
+    /* private */ val packager: Any = js.native
   }
 }

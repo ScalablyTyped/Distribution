@@ -2,7 +2,6 @@ package typings.jsdevtoolsOno
 
 import typings.jsdevtoolsOno.jsdevtoolsOnoBooleans.`true`
 import typings.jsdevtoolsOno.typesMod.ErrorLike
-import typings.std.PropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +13,10 @@ object stackMod {
   val ^ : js.Any = js.native
   
   inline def isLazyStack(): /* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazyStack")().asInstanceOf[/* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean]
-  inline def isLazyStack(stackProp: PropertyDescriptor): /* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazyStack")(stackProp.asInstanceOf[js.Any]).asInstanceOf[/* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean]
+  inline def isLazyStack(stackProp: js.PropertyDescriptor): /* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazyStack")(stackProp.asInstanceOf[js.Any]).asInstanceOf[/* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean]
   
   inline def isWritableStack(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWritableStack")().asInstanceOf[Boolean]
-  inline def isWritableStack(stackProp: PropertyDescriptor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWritableStack")(stackProp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWritableStack(stackProp: js.PropertyDescriptor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWritableStack")(stackProp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def joinStacks(newError: ErrorLike): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("joinStacks")(newError.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   inline def joinStacks(newError: ErrorLike, originalError: ErrorLike): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinStacks")(newError.asInstanceOf[js.Any], originalError.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]

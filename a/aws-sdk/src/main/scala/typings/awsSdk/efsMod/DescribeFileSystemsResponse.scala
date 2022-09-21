@@ -34,7 +34,7 @@ object DescribeFileSystemsResponse {
     
     inline def setFileSystemsUndefined: Self = StObject.set(x, "FileSystems", js.undefined)
     
-    inline def setFileSystemsVarargs(value: FileSystemDescription*): Self = StObject.set(x, "FileSystems", js.Array(value :_*))
+    inline def setFileSystemsVarargs(value: FileSystemDescription*): Self = StObject.set(x, "FileSystems", js.Array(value*))
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

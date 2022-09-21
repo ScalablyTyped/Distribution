@@ -28,7 +28,7 @@ object mod extends Shortcut {
       def allSettled[T](
         promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof T ]: T[K] | angular.angular.IPromise<T[K]>}
-        */ typings.angularQExtras.angularQExtrasStrings.IQService & TopLevel[js.Any]
+        */ typings.angularQExtras.angularQExtrasStrings.IQService & TopLevel[Any]
       ): IPromise[
             /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof T ]: angular-q-extras.angular-q-extras.angular.PromiseValue<T[K]>}
@@ -169,9 +169,9 @@ object mod extends Shortcut {
             ]
           ] = js.native
       
-      def isFulfilledState(promise: PromiseValue[js.Any]): Boolean = js.native
+      def isFulfilledState(promise: PromiseValue[Any]): Boolean = js.native
       
-      def isRejectedState(promise: PromiseValue[js.Any]): Boolean = js.native
+      def isRejectedState(promise: PromiseValue[Any]): Boolean = js.native
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -188,7 +188,7 @@ object mod extends Shortcut {
     
     trait PromiseValue[T] extends StObject {
       
-      var reason: js.UndefOr[js.Any] = js.undefined
+      var reason: js.UndefOr[Any] = js.undefined
       
       var state: PromiseState
       
@@ -203,7 +203,7 @@ object mod extends Shortcut {
       
       extension [Self <: PromiseValue[?], T](x: Self & PromiseValue[T]) {
         
-        inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
         inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         

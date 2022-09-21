@@ -9,9 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSTypeQuery_
   extends StObject
      with BaseNode
-     with TSType {
+     with TSType
+     with TypeScript {
   
   var exprName: TSEntityName | TSImportType_
+  
+  var typeParameters: TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
   var type_TSTypeQuery_ : TSTypeQuery
@@ -19,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TSTypeQuery_ {
   
   inline def apply(exprName: TSEntityName | TSImportType_): TSTypeQuery_ = {
-    val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("TSTypeQuery")
     __obj.asInstanceOf[TSTypeQuery_]
   }
@@ -29,5 +32,9 @@ object TSTypeQuery_ {
     inline def setExprName(value: TSEntityName | TSImportType_): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
     
     inline def setType(value: TSTypeQuery): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeParameters(value: TSTypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
   }
 }

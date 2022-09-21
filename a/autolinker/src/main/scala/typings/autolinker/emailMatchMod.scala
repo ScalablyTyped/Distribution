@@ -1,8 +1,9 @@
 package typings.autolinker
 
+import typings.autolinker.abstractMatchMod.AbstractMatch
+import typings.autolinker.abstractMatchMod.AbstractMatchConfig
 import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
 import typings.autolinker.matchMatchMod.Match
-import typings.autolinker.matchMatchMod.MatchConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,9 @@ object emailMatchMod {
   
   @JSImport("autolinker/dist/commonjs/match/email-match", "EmailMatch")
   @js.native
-  class EmailMatch protected () extends Match {
+  open class EmailMatch protected ()
+    extends AbstractMatch
+       with Match {
     /**
       * @method constructor
       * @param {Object} cfg The configuration properties for the Match
@@ -24,7 +27,7 @@ object emailMatchMod {
       *
       * The email address that was matched.
       */
-    /* private */ val email: js.Any = js.native
+    /* private */ val email: Any = js.native
     
     /**
       * Returns the email address that was matched.
@@ -32,11 +35,22 @@ object emailMatchMod {
       * @return {String}
       */
     def getEmail(): String = js.native
+    
+    /**
+      * @public
+      * @property {'email'} type
+      *
+      * A string name for the type of match that this class represents. Can be
+      * used in a TypeScript discriminating union to type-narrow from the
+      * `Match` type.
+      */
+    @JSName("type")
+    val type_EmailMatch: typings.autolinker.autolinkerStrings.email = js.native
   }
   
   trait EmailMatchConfig
     extends StObject
-       with MatchConfig {
+       with AbstractMatchConfig {
     
     var email: String
   }

@@ -1,7 +1,5 @@
 package typings.vueFeatherIcons
 
-import typings.vue.vueMod.ExtendedVue
-import typings.vue.vueMod.Vue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -355,6 +353,10 @@ object mod {
   @JSImport("vue-feather-icons", "DiscIcon")
   @js.native
   val DiscIcon: FeatherIconComponent = js.native
+  
+  @JSImport("vue-feather-icons", "DivideIcon")
+  @js.native
+  val DivideIcon: FeatherIconComponent = js.native
   
   @JSImport("vue-feather-icons", "DollarSignIcon")
   @js.native
@@ -1136,7 +1138,7 @@ object mod {
   @js.native
   val ZoomOutIcon: FeatherIconComponent = js.native
   
-  type FeatherIconComponent = ExtendedVue[Vue, js.Object, js.Object, js.Object, FeatherIconProps]
+  type FeatherIconComponent = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendedVue<Vue, {}, {}, {}, FeatherIconProps> */ Any
   
   trait FeatherIconProps extends StObject {
     

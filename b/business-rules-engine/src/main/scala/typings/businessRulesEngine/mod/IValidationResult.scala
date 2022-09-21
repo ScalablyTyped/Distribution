@@ -48,7 +48,7 @@ object IValidationResult {
     
     inline def setChildren(value: js.Array[IValidationResult]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: IValidationResult*): Self = StObject.set(x, "Children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: IValidationResult*): Self = StObject.set(x, "Children", js.Array(value*))
     
     inline def setErrorCount(value: Double): Self = StObject.set(x, "ErrorCount", value.asInstanceOf[js.Any])
     
@@ -70,6 +70,6 @@ object IValidationResult {
     
     inline def setTranslateArgsUndefined: Self = StObject.set(x, "TranslateArgs", js.undefined)
     
-    inline def setTranslateArgsVarargs(value: IErrorTranslateArgs*): Self = StObject.set(x, "TranslateArgs", js.Array(value :_*))
+    inline def setTranslateArgsVarargs(value: IErrorTranslateArgs*): Self = StObject.set(x, "TranslateArgs", js.Array(value*))
   }
 }

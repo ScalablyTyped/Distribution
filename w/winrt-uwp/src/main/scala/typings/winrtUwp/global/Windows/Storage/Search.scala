@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Storage
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
@@ -143,7 +142,7 @@ object Search {
   @JSGlobal("Windows.Storage.Search.IndexableContent")
   @js.native
   /** Initializes a new instance of the IndexableContent class. */
-  class IndexableContent ()
+  open class IndexableContent ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.IndexableContent {
     
@@ -153,7 +152,7 @@ object Search {
     
     /** Gets the content properties. */
     /* CompleteClass */
-    var properties: IMap[String, js.Any] = js.native
+    var properties: IMap[String, Any] = js.native
     
     /** Gets or sets a Stream that provides full-text content. Changes to the actual representation of the item in the index can be made using the ContentIndexer class. */
     /* CompleteClass */
@@ -200,7 +199,7 @@ object Search {
   @JSGlobal("Windows.Storage.Search.QueryOptions")
   @js.native
   /** Creates an instance of the QueryOptions class for enumerating storage items, and initializes it with the following default settings: QueryOptions.FolderDepth gets FolderDepth.Shallow and QueryOptions.IndexerOption gets IndexerOption.DoNotUseIndexer . */
-  class QueryOptions ()
+  open class QueryOptions ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.QueryOptions {
     /**
@@ -328,7 +327,7 @@ object Search {
       * @return The query result.
       */
     /* CompleteClass */
-    override def createModifiedSinceQuery(lastQueryTime: Date): typings.winrtUwp.Windows.Storage.Search.StorageItemQueryResult = js.native
+    override def createModifiedSinceQuery(lastQueryTime: js.Date): typings.winrtUwp.Windows.Storage.Search.StorageItemQueryResult = js.native
     
     /** Gets the StorageFolder that has been changed. */
     /* CompleteClass */
@@ -339,7 +338,7 @@ object Search {
   @JSGlobal("Windows.Storage.Search.ValueAndLanguage")
   @js.native
   /** Initializes a new instance of the ValueAndLanguage class. */
-  class ValueAndLanguage ()
+  open class ValueAndLanguage ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.ValueAndLanguage {
     
@@ -349,6 +348,6 @@ object Search {
     
     /** Gets or sets the property value for the current ValueAndLanguage . */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
 }

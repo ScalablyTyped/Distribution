@@ -1,7 +1,6 @@
 package typings.targz
 
 import typings.node.zlibMod.ZlibOptions
-import typings.std.Error
 import typings.tarFs.mod.ExtractOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,14 +13,14 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def compress(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")().asInstanceOf[Unit]
-  inline def compress(opts: Unit, callback: js.Function1[/* error */ Error | String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compress(opts: Unit, callback: js.Function1[/* error */ js.Error | String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def compress(opts: options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def compress(opts: options, callback: js.Function1[/* error */ Error | String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compress(opts: options, callback: js.Function1[/* error */ js.Error | String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def decompress(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")().asInstanceOf[Unit]
-  inline def decompress(opts: Unit, callback: js.Function1[/* error */ Error | String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decompress(opts: Unit, callback: js.Function1[/* error */ js.Error | String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def decompress(opts: options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def decompress(opts: options, callback: js.Function1[/* error */ Error | String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decompress(opts: options, callback: js.Function1[/* error */ js.Error | String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait options extends StObject {
     

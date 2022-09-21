@@ -10,10 +10,10 @@ A simple redis store of koa-session
 | ------------------ | :-------------: |
 | Full name          | koa2-session-redis |
 | Keywords           | koa, koa2, session, redis |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 3279 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 124.66666666666667 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/lonord/koa2-session-redis#readme)

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
@@ -14,25 +13,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ContactListSyncManager extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_syncstatuschanged(`type`: syncstatuschanged, listener: TypedEventHandler[ContactListSyncManager, js.Any]): Unit = js.native
+  def addEventListener_syncstatuschanged(`type`: syncstatuschanged, listener: TypedEventHandler[ContactListSyncManager, Any]): Unit = js.native
   
   /** Gets the last time a sync was attempted with the server. */
-  var lastAttemptedSyncTime: Date = js.native
+  var lastAttemptedSyncTime: js.Date = js.native
   
   /** Gets the last time the ContactList was successfully synced with the server. */
-  var lastSuccessfulSyncTime: Date = js.native
+  var lastSuccessfulSyncTime: js.Date = js.native
   
   /** Occurs when the sync status with the server has changed. */
-  def onsyncstatuschanged(ev: js.Any & WinRTEvent[ContactListSyncManager]): Unit = js.native
+  def onsyncstatuschanged(ev: Any & WinRTEvent[ContactListSyncManager]): Unit = js.native
   /** Occurs when the sync status with the server has changed. */
   @JSName("onsyncstatuschanged")
-  var onsyncstatuschanged_Original: TypedEventHandler[ContactListSyncManager, js.Any] = js.native
+  var onsyncstatuschanged_Original: TypedEventHandler[ContactListSyncManager, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_syncstatuschanged(`type`: syncstatuschanged, listener: TypedEventHandler[ContactListSyncManager, js.Any]): Unit = js.native
+  def removeEventListener_syncstatuschanged(`type`: syncstatuschanged, listener: TypedEventHandler[ContactListSyncManager, Any]): Unit = js.native
   
   /** Gets the ContactListSyncStatus . */
   var status: ContactListSyncStatus = js.native

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Vector")
 @js.native
-class Vector ()
+open class Vector ()
   extends StObject
      with typings.phaser.MatterJS.Vector {
   

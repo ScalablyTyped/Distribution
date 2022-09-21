@@ -110,7 +110,7 @@ object FaceDetail {
     
     inline def setEmotionsUndefined: Self = StObject.set(x, "Emotions", js.undefined)
     
-    inline def setEmotionsVarargs(value: Emotion*): Self = StObject.set(x, "Emotions", js.Array(value :_*))
+    inline def setEmotionsVarargs(value: Emotion*): Self = StObject.set(x, "Emotions", js.Array(value*))
     
     inline def setEyeglasses(value: Eyeglasses): Self = StObject.set(x, "Eyeglasses", value.asInstanceOf[js.Any])
     
@@ -128,7 +128,7 @@ object FaceDetail {
     
     inline def setLandmarksUndefined: Self = StObject.set(x, "Landmarks", js.undefined)
     
-    inline def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value :_*))
+    inline def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value*))
     
     inline def setMouthOpen(value: MouthOpen): Self = StObject.set(x, "MouthOpen", value.asInstanceOf[js.Any])
     

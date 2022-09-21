@@ -9,17 +9,17 @@ trait SchemaPosDataProvidersPosDataProvider extends StObject {
   /**
     * The display name of Pos data Provider.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The full name of this POS data Provider.
     */
-  var fullName: js.UndefOr[String] = js.undefined
+  var fullName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the account.
     */
-  var providerId: js.UndefOr[String] = js.undefined
+  var providerId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPosDataProvidersPosDataProvider {
   
@@ -32,13 +32,19 @@ object SchemaPosDataProvidersPosDataProvider {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
+    inline def setFullNameNull: Self = StObject.set(x, "fullName", null)
+    
     inline def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
     inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    
+    inline def setProviderIdNull: Self = StObject.set(x, "providerId", null)
     
     inline def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
   }

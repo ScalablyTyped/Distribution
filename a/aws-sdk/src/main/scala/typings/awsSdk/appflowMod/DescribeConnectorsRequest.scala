@@ -12,6 +12,11 @@ trait DescribeConnectorsRequest extends StObject {
   var connectorTypes: js.UndefOr[ConnectorTypeList] = js.undefined
   
   /**
+    * The maximum number of items that should be returned in the result set. The default is 20.
+    */
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
+  
+  /**
     *  The pagination token for the next page of data. 
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
@@ -29,7 +34,11 @@ object DescribeConnectorsRequest {
     
     inline def setConnectorTypesUndefined: Self = StObject.set(x, "connectorTypes", js.undefined)
     
-    inline def setConnectorTypesVarargs(value: ConnectorType*): Self = StObject.set(x, "connectorTypes", js.Array(value :_*))
+    inline def setConnectorTypesVarargs(value: ConnectorType*): Self = StObject.set(x, "connectorTypes", js.Array(value*))
+    
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

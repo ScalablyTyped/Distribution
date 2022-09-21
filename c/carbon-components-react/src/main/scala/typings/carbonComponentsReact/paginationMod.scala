@@ -8,6 +8,6 @@ object paginationMod {
   
   @JSImport("carbon-components-react/lib/components/Pagination", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.paginationPaginationMod.default
 }

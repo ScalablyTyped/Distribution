@@ -32,7 +32,7 @@ trait AssociationOptionsBelongsToMany
     * @see https://github.com/sequelize/sequelize/blob/v3.4.1/lib/associations/has-many.js
     * @see https://github.com/sequelize/sequelize/blob/v3.4.1/lib/associations/belongs-to-many.js
     */
-  var through: (Model[js.Any, js.Any, js.Any]) | String | ThroughOptions
+  var through: (Model[Any, Any, Any]) | String | ThroughOptions
   
   /**
     * Should the join model have timestamps
@@ -46,7 +46,7 @@ trait AssociationOptionsBelongsToMany
 }
 object AssociationOptionsBelongsToMany {
   
-  inline def apply(through: (Model[js.Any, js.Any, js.Any]) | String | ThroughOptions): AssociationOptionsBelongsToMany = {
+  inline def apply(through: (Model[Any, Any, Any]) | String | ThroughOptions): AssociationOptionsBelongsToMany = {
     val __obj = js.Dynamic.literal(through = through.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationOptionsBelongsToMany]
   }
@@ -57,7 +57,7 @@ object AssociationOptionsBelongsToMany {
     
     inline def setOtherKeyUndefined: Self = StObject.set(x, "otherKey", js.undefined)
     
-    inline def setThrough(value: (Model[js.Any, js.Any, js.Any]) | String | ThroughOptions): Self = StObject.set(x, "through", value.asInstanceOf[js.Any])
+    inline def setThrough(value: (Model[Any, Any, Any]) | String | ThroughOptions): Self = StObject.set(x, "through", value.asInstanceOf[js.Any])
     
     inline def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     

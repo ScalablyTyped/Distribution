@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastify-plugin
 
-Typings are for version 2.3.4
+Typings are for version 4.2.1
 
 ## Library description:
 Plugin helper for Fastify
@@ -10,10 +10,10 @@ Plugin helper for Fastify
 | ------------------ | :-------------: |
 | Full name          | fastify-plugin |
 | Keywords           | plugin, helper, fastify |
-| # releases         | 16 |
-| # dependents       | 513 |
-| # downloads        | 7955994 |
-| # stars            | 2 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2481276.6666666665 |
+| # stars            | 148.0 |
 
 ## Links
 - [Homepage](https://github.com/fastify/fastify-plugin#readme)

@@ -35,7 +35,7 @@ object LoopStatus {
     
     inline def setLoopOver(value: js.Array[VarValue]): Self = StObject.set(x, "loopOver", value.asInstanceOf[js.Any])
     
-    inline def setLoopOverVarargs(value: VarValue*): Self = StObject.set(x, "loopOver", js.Array(value :_*))
+    inline def setLoopOverVarargs(value: VarValue*): Self = StObject.set(x, "loopOver", js.Array(value*))
     
     inline def setRefNode(value: Node): Self = StObject.set(x, "refNode", value.asInstanceOf[js.Any])
     

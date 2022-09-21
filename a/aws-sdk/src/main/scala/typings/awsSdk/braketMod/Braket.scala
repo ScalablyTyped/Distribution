@@ -12,6 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Braket extends Service {
   
   /**
+    * Cancels an Amazon Braket job.
+    */
+  def cancelJob(): Request[CancelJobResponse, AWSError] = js.native
+  def cancelJob(callback: js.Function2[/* err */ AWSError, /* data */ CancelJobResponse, Unit]): Request[CancelJobResponse, AWSError] = js.native
+  /**
+    * Cancels an Amazon Braket job.
+    */
+  def cancelJob(params: CancelJobRequest): Request[CancelJobResponse, AWSError] = js.native
+  def cancelJob(
+    params: CancelJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelJobResponse, Unit]
+  ): Request[CancelJobResponse, AWSError] = js.native
+  
+  /**
     * Cancels the specified task.
     */
   def cancelQuantumTask(): Request[CancelQuantumTaskResponse, AWSError] = js.native
@@ -29,6 +43,20 @@ trait Braket extends Service {
   var config_Braket: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Creates an Amazon Braket job.
+    */
+  def createJob(): Request[CreateJobResponse, AWSError] = js.native
+  def createJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateJobResponse, Unit]): Request[CreateJobResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon Braket job.
+    */
+  def createJob(params: CreateJobRequest): Request[CreateJobResponse, AWSError] = js.native
+  def createJob(
+    params: CreateJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateJobResponse, Unit]
+  ): Request[CreateJobResponse, AWSError] = js.native
+  
+  /**
     * Creates a quantum task.
     */
   def createQuantumTask(): Request[CreateQuantumTaskResponse, AWSError] = js.native
@@ -43,18 +71,29 @@ trait Braket extends Service {
   ): Request[CreateQuantumTaskResponse, AWSError] = js.native
   
   /**
-    * Retrieves the devices available in Amazon Braket.
+    * Retrieves the devices available in Amazon Braket.  For backwards compatibility with older versions of BraketSchemas, OpenQASM information is omitted from GetDevice API calls. To get this information the user-agent needs to present a recent version of the BraketSchemas (1.8.0 or later). The Braket SDK automatically reports this for you. If you do not see OpenQASM results in the GetDevice response when using a Braket SDK, you may need to set AWS_EXECUTION_ENV environment variable to configure user-agent. See the code examples provided below for how to do this for the AWS CLI, Boto3, and the Go, Java, and JavaScript/TypeScript SDKs. 
     */
   def getDevice(): Request[GetDeviceResponse, AWSError] = js.native
   def getDevice(callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceResponse, Unit]): Request[GetDeviceResponse, AWSError] = js.native
   /**
-    * Retrieves the devices available in Amazon Braket.
+    * Retrieves the devices available in Amazon Braket.  For backwards compatibility with older versions of BraketSchemas, OpenQASM information is omitted from GetDevice API calls. To get this information the user-agent needs to present a recent version of the BraketSchemas (1.8.0 or later). The Braket SDK automatically reports this for you. If you do not see OpenQASM results in the GetDevice response when using a Braket SDK, you may need to set AWS_EXECUTION_ENV environment variable to configure user-agent. See the code examples provided below for how to do this for the AWS CLI, Boto3, and the Go, Java, and JavaScript/TypeScript SDKs. 
     */
   def getDevice(params: GetDeviceRequest): Request[GetDeviceResponse, AWSError] = js.native
   def getDevice(
     params: GetDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceResponse, Unit]
   ): Request[GetDeviceResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the specified Amazon Braket job.
+    */
+  def getJob(): Request[GetJobResponse, AWSError] = js.native
+  def getJob(callback: js.Function2[/* err */ AWSError, /* data */ GetJobResponse, Unit]): Request[GetJobResponse, AWSError] = js.native
+  /**
+    * Retrieves the specified Amazon Braket job.
+    */
+  def getJob(params: GetJobRequest): Request[GetJobResponse, AWSError] = js.native
+  def getJob(params: GetJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetJobResponse, Unit]): Request[GetJobResponse, AWSError] = js.native
   
   /**
     * Retrieves the specified quantum task.
@@ -97,6 +136,20 @@ trait Braket extends Service {
     params: SearchDevicesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchDevicesResponse, Unit]
   ): Request[SearchDevicesResponse, AWSError] = js.native
+  
+  /**
+    * Searches for Amazon Braket jobs that match the specified filter values.
+    */
+  def searchJobs(): Request[SearchJobsResponse, AWSError] = js.native
+  def searchJobs(callback: js.Function2[/* err */ AWSError, /* data */ SearchJobsResponse, Unit]): Request[SearchJobsResponse, AWSError] = js.native
+  /**
+    * Searches for Amazon Braket jobs that match the specified filter values.
+    */
+  def searchJobs(params: SearchJobsRequest): Request[SearchJobsResponse, AWSError] = js.native
+  def searchJobs(
+    params: SearchJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchJobsResponse, Unit]
+  ): Request[SearchJobsResponse, AWSError] = js.native
   
   /**
     * Searches for tasks that match the specified filter values.

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {string=} keytype if supplied, this must be one of: 'number' or 'string' for the key type.
   * @param {string=} valtype if supplied, this must be one of: 'number', 'string', 'boolean', or 'function' for the value type.
   */
-class Map[K, V] ()
+open class Map[K, V] ()
   extends typings.go.mod.Map[K, V] {
   def this(keytype: String) = this()
   def this(keytype: String, valtype: String) = this()

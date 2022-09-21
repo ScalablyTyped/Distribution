@@ -20,21 +20,21 @@ object floatingPickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker", "BaseFloatingPeoplePicker")
   @js.native
-  class BaseFloatingPeoplePicker protected ()
+  open class BaseFloatingPeoplePicker protected ()
     extends typings.officeUiFabricReact.floatingPeoplePickerMod.BaseFloatingPeoplePicker {
     def this(basePickerProps: IPeopleFloatingPickerProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker", "BaseFloatingPicker")
   @js.native
-  class BaseFloatingPicker[T, P /* <: IBaseFloatingPickerProps[T] */] protected ()
+  open class BaseFloatingPicker[T, P /* <: IBaseFloatingPickerProps[T] */] protected ()
     extends typings.officeUiFabricReact.baseFloatingPickerMod.BaseFloatingPicker[T, P] {
     def this(basePickerProps: P) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker", "FloatingPeoplePicker")
   @js.native
-  class FloatingPeoplePicker protected ()
+  open class FloatingPeoplePicker protected ()
     extends typings.officeUiFabricReact.floatingPeoplePickerMod.FloatingPeoplePicker {
     def this(basePickerProps: IPeopleFloatingPickerProps) = this()
   }
@@ -47,8 +47,8 @@ object floatingPickerMod {
     
     @JSImport("office-ui-fabric-react/lib/components/FloatingPicker", "FloatingPeoplePicker.defaultProps")
     @js.native
-    def defaultProps: js.Any = js.native
-    inline def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Any = js.native
+    inline def defaultProps_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker", "SuggestionItemType")
@@ -67,28 +67,28 @@ object floatingPickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker", "SuggestionsControl")
   @js.native
-  class SuggestionsControl[T] protected ()
+  open class SuggestionsControl[T] protected ()
     extends typings.officeUiFabricReact.suggestionsControlMod.SuggestionsControl[T] {
     def this(suggestionsProps: ISuggestionsControlProps[T]) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker", "SuggestionsCore")
   @js.native
-  class SuggestionsCore[T] protected ()
+  open class SuggestionsCore[T] protected ()
     extends typings.officeUiFabricReact.suggestionsCoreMod.SuggestionsCore[T] {
     def this(suggestionsProps: ISuggestionsCoreProps[T]) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker", "SuggestionsHeaderFooterItem")
   @js.native
-  class SuggestionsHeaderFooterItem protected ()
+  open class SuggestionsHeaderFooterItem protected ()
     extends typings.officeUiFabricReact.suggestionsControlMod.SuggestionsHeaderFooterItem {
     def this(props: ISuggestionsHeaderFooterItemProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker", "SuggestionsStore")
   @js.native
-  class SuggestionsStore[T] ()
+  open class SuggestionsStore[T] ()
     extends typings.officeUiFabricReact.suggestionsStoreMod.SuggestionsStore[T] {
     def this(options: SuggestionsStoreOptions[T]) = this()
   }

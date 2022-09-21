@@ -53,7 +53,7 @@ trait JQueryJqGridOptions extends StObject {
     * An array that stores the local data passed to the grid. You can directly point to this variable in case you want to load an array data.
     * It can replace the addRowData method which is slow on relative big data
     */
-  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Defines in what format to expect the data that fills the grid.
@@ -136,7 +136,7 @@ trait JQueryJqGridOptions extends StObject {
     * @returns {} 
     */
   var onRightClickRow: js.UndefOr[
-    js.Function4[/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event, Unit]
+    js.Function4[/* rowid */ Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event, Unit]
   ] = js.undefined
   
   /**
@@ -146,7 +146,7 @@ trait JQueryJqGridOptions extends StObject {
     * @param e  is the event object. Can be used when multiselect is set to true. true if the row is selected, false if the row is deselected.
     * @returns {} 
     */
-  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ js.Any, /* e */ Event, Unit]] = js.undefined
+  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ Any, /* e */ Event, Unit]] = js.undefined
   
   /**
     * Defines that we want to use a pager bar to navigate through the records.
@@ -245,19 +245,19 @@ object JQueryJqGridOptions {
     
     inline def setColModelUndefined: Self = StObject.set(x, "colModel", js.undefined)
     
-    inline def setColModelVarargs(value: JQueryJqGridColumn*): Self = StObject.set(x, "colModel", js.Array(value :_*))
+    inline def setColModelVarargs(value: JQueryJqGridColumn*): Self = StObject.set(x, "colModel", js.Array(value*))
     
     inline def setColNames(value: js.Array[String]): Self = StObject.set(x, "colNames", value.asInstanceOf[js.Any])
     
     inline def setColNamesUndefined: Self = StObject.set(x, "colNames", js.undefined)
     
-    inline def setColNamesVarargs(value: String*): Self = StObject.set(x, "colNames", js.Array(value :_*))
+    inline def setColNamesVarargs(value: String*): Self = StObject.set(x, "colNames", js.Array(value*))
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDatatype(value: xml | xmlstring | json | jsonstring | local | javascript | js.Function | clientSide): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
@@ -299,11 +299,11 @@ object JQueryJqGridOptions {
     
     inline def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
     
-    inline def setOnRightClickRow(value: (/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event) => Unit): Self = StObject.set(x, "onRightClickRow", js.Any.fromFunction4(value))
+    inline def setOnRightClickRow(value: (/* rowid */ Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event) => Unit): Self = StObject.set(x, "onRightClickRow", js.Any.fromFunction4(value))
     
     inline def setOnRightClickRowUndefined: Self = StObject.set(x, "onRightClickRow", js.undefined)
     
-    inline def setOnSelectRow(value: (/* id */ String, /* status */ js.Any, /* e */ Event) => Unit): Self = StObject.set(x, "onSelectRow", js.Any.fromFunction3(value))
+    inline def setOnSelectRow(value: (/* id */ String, /* status */ Any, /* e */ Event) => Unit): Self = StObject.set(x, "onSelectRow", js.Any.fromFunction3(value))
     
     inline def setOnSelectRowUndefined: Self = StObject.set(x, "onSelectRow", js.undefined)
     
@@ -315,7 +315,7 @@ object JQueryJqGridOptions {
     
     inline def setRowListUndefined: Self = StObject.set(x, "rowList", js.undefined)
     
-    inline def setRowListVarargs(value: Double*): Self = StObject.set(x, "rowList", js.Array(value :_*))
+    inline def setRowListVarargs(value: Double*): Self = StObject.set(x, "rowList", js.Array(value*))
     
     inline def setRowNum(value: Double): Self = StObject.set(x, "rowNum", value.asInstanceOf[js.Any])
     

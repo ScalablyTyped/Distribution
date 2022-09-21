@@ -112,7 +112,7 @@ object INxAppLayout {
     
     inline def setQStateNames(value: js.Array[String]): Self = StObject.set(x, "qStateNames", value.asInstanceOf[js.Any])
     
-    inline def setQStateNamesVarargs(value: String*): Self = StObject.set(x, "qStateNames", js.Array(value :_*))
+    inline def setQStateNamesVarargs(value: String*): Self = StObject.set(x, "qStateNames", js.Array(value*))
     
     inline def setQThumbnail(value: IStaticContentUrl): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
     

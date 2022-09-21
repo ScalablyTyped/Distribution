@@ -58,55 +58,23 @@ trait ActiveXObject extends StObject {
   
   def on(
     obj: Application,
-    event: AfterNewPresentation,
-    argNames: js.Array[Pres],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Pres, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: AfterPresentationOpen,
-    argNames: js.Array[Pres],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Pres, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: ColorSchemeChanged,
-    argNames: js.Array[SldRange],
+    event: AfterNewPresentation | AfterPresentationOpen | ColorSchemeChanged | NewPresentation | PresentationClose | PresentationCloseFinal | PresentationOpen | PresentationPrint | PresentationSave | ProtectedViewWindowActivate | ProtectedViewWindowDeactivate | ProtectedViewWindowOpen | SlideSelectionChanged | SlideShowBegin | SlideShowEnd | SlideShowNextBuild | SlideShowNextSlide | SlideShowOnNext | SlideShowOnPrevious,
+    argNames: js.Array[Pres | ProtViewWindow | SldRange | Wn],
     handler: js.ThisFunction1[
       /* this */ Application, 
-      /* parameter */ typings.activexPowerpoint.anon.SldRange, 
+      (/* parameter */ typings.activexPowerpoint.anon.Pres) | (/* parameter */ typings.activexPowerpoint.anon.ProtViewWindow) | (/* parameter */ typings.activexPowerpoint.anon.SldRange) | (/* parameter */ typings.activexPowerpoint.anon.Wn), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: Application,
-    event: NewPresentation,
-    argNames: js.Array[Pres],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Pres, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: PresentationBeforeClose,
-    argNames: js.Tuple2[Pres, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Cancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: PresentationBeforeSave,
-    argNames: js.Tuple2[Pres, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Cancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: PresentationCloseFinal,
-    argNames: js.Array[Pres],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Pres, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: PresentationClose,
-    argNames: js.Array[Pres],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Pres, Unit]
+    event: PresentationBeforeClose | PresentationBeforeSave | WindowActivate | WindowBeforeDoubleClick | WindowBeforeRightClick | WindowDeactivate,
+    argNames: js.Tuple2[Pres | Sel, Cancel | Wn],
+    handler: js.ThisFunction1[
+      /* this */ Application, 
+      (/* parameter */ typings.activexPowerpoint.anon.Cancel) | (/* parameter */ PresWn) | (/* parameter */ typings.activexPowerpoint.anon.Sel), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -116,39 +84,11 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Application,
-    event: PresentationOpen,
-    argNames: js.Array[Pres],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Pres, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: PresentationPrint,
-    argNames: js.Array[Pres],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Pres, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: PresentationSave,
-    argNames: js.Array[Pres],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Pres, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
     event: PresentationSync,
     argNames: js.Tuple2[Pres, SyncEventType],
     handler: js.ThisFunction1[
       /* this */ Application, 
       /* parameter */ typings.activexPowerpoint.anon.SyncEventType, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: ProtectedViewWindowActivate,
-    argNames: js.Array[ProtViewWindow],
-    handler: js.ThisFunction1[
-      /* this */ Application, 
-      /* parameter */ typings.activexPowerpoint.anon.ProtViewWindow, 
       Unit
     ]
   ): Unit = js.native
@@ -170,99 +110,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Application,
-    event: ProtectedViewWindowDeactivate,
-    argNames: js.Array[ProtViewWindow],
-    handler: js.ThisFunction1[
-      /* this */ Application, 
-      /* parameter */ typings.activexPowerpoint.anon.ProtViewWindow, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: ProtectedViewWindowOpen,
-    argNames: js.Array[ProtViewWindow],
-    handler: js.ThisFunction1[
-      /* this */ Application, 
-      /* parameter */ typings.activexPowerpoint.anon.ProtViewWindow, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: SlideSelectionChanged,
-    argNames: js.Array[SldRange],
-    handler: js.ThisFunction1[
-      /* this */ Application, 
-      /* parameter */ typings.activexPowerpoint.anon.SldRange, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: SlideShowBegin,
-    argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Wn, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: SlideShowEnd,
-    argNames: js.Array[Pres],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Pres, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: SlideShowNextBuild,
-    argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Wn, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
     event: SlideShowNextClick,
     argNames: js.Tuple2[Wn, nEffect],
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ NEffect, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: SlideShowNextSlide,
-    argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Wn, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: SlideShowOnNext,
-    argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Wn, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: SlideShowOnPrevious,
-    argNames: js.Array[Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Wn, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: WindowActivate,
-    argNames: js.Tuple2[Pres, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ PresWn, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: WindowBeforeDoubleClick,
-    argNames: js.Tuple2[Sel, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Sel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: WindowBeforeRightClick,
-    argNames: js.Tuple2[Sel, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexPowerpoint.anon.Sel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: WindowDeactivate,
-    argNames: js.Tuple2[Pres, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ PresWn, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -270,16 +120,9 @@ trait ActiveXObject extends StObject {
     argNames: js.Array[Sel],
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ SelSelection, Unit]
   ): Unit = js.native
-  @JSName("on")
-  def on_GotFocus(
+  def on(
     obj: OLEControl,
-    event: GotFocus,
-    handler: js.ThisFunction1[/* this */ OLEControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_LostFocus(
-    obj: OLEControl,
-    event: LostFocus,
+    event: GotFocus | LostFocus,
     handler: js.ThisFunction1[/* this */ OLEControl, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }

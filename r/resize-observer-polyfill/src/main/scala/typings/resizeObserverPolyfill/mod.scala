@@ -11,7 +11,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("resize-observer-polyfill", JSImport.Default)
   @js.native
-  class defaultCls protected ()
+  open class defaultCls protected ()
     extends StObject
        with ResizeObserver {
     def this(callback: ResizeObserverCallback) = this()

@@ -3,30 +3,29 @@ package typings.gulpIstanbul
 import typings.gulpIstanbul.anon.CoverageVariable
 import typings.gulpIstanbul.anon.Dir
 import typings.gulpIstanbul.anon.Each
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  inline def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(opts: Options): Any = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("gulp-istanbul", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def enforceThresholds(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceThresholds")().asInstanceOf[ReadWriteStream]
-  inline def enforceThresholds(opts: ThresholdOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceThresholds")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def enforceThresholds(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceThresholds")().asInstanceOf[Any]
+  inline def enforceThresholds(opts: ThresholdOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceThresholds")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def hookRequire(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("hookRequire")().asInstanceOf[ReadWriteStream]
+  inline def hookRequire(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hookRequire")().asInstanceOf[Any]
   
   inline def summarizeCoverage(): Coverage = ^.asInstanceOf[js.Dynamic].applyDynamic("summarizeCoverage")().asInstanceOf[Coverage]
   inline def summarizeCoverage(opts: CoverageVariable): Coverage = ^.asInstanceOf[js.Dynamic].applyDynamic("summarizeCoverage")(opts.asInstanceOf[js.Any]).asInstanceOf[Coverage]
   
-  inline def writeReports(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("writeReports")().asInstanceOf[ReadWriteStream]
-  inline def writeReports(opts: ReportOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("writeReports")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def writeReports(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("writeReports")().asInstanceOf[Any]
+  inline def writeReports(opts: ReportOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("writeReports")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait Coverage extends StObject {
     
@@ -225,7 +224,7 @@ object mod {
       
       inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
       
-      inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+      inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value*))
     }
   }
   

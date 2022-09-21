@@ -12,7 +12,7 @@ trait ListTagsForResourceRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.organizationsMod.NextToken] = js.undefined
   
   /**
-    * The ID of the resource with the tags to list. You can specify any of the following taggable resources.   AWS account – specify the account ID number.   Organizational unit – specify the OU ID that begins with ou- and looks similar to: ou-1a2b-34uvwxyz     Root – specify the root ID that begins with r- and looks similar to: r-1a2b     Policy – specify the policy ID that begins with p- andlooks similar to: p-12abcdefg3    
+    * The ID of the resource with the tags to list. You can specify any of the following taggable resources.   Amazon Web Services account – specify the account ID number.   Organizational unit – specify the OU ID that begins with ou- and looks similar to: ou-1a2b-34uvwxyz     Root – specify the root ID that begins with r- and looks similar to: r-1a2b     Policy – specify the policy ID that begins with p- andlooks similar to: p-12abcdefg3    
     */
   var ResourceId: TaggableResourceId
 }

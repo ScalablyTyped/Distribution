@@ -10,10 +10,10 @@ React component to wrap your application or component in an iFrame for encapsula
 | ------------------ | :-------------: |
 | Full name          | react-frame-component |
 | Keywords           | React, component, iFrame, browser |
-| # releases         | 6 |
-| # dependents       | 92 |
-| # downloads        | 4883061 |
-| # stars            | 1 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 581405.6666666666 |
+| # stars            | 1447.0 |
 
 ## Links
 - [Homepage](https://github.com/ryanseddon/react-frame-component)

@@ -10,7 +10,7 @@ object statusFileOptionsMod {
   
   trait StatusFileOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var entry: js.UndefOr[StatusEntry] = js.undefined
     

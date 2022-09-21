@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListClustersResponse extends StObject {
   
   /**
-    * The list of full Amazon Resource Name (ARN) entries for each cluster associated with your account.
+    * The list of full Amazon Resource Name (ARN) entries for each cluster that's associated with your account.
     */
   var clusterArns: js.UndefOr[StringList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListClustersResponse {
     
     inline def setClusterArnsUndefined: Self = StObject.set(x, "clusterArns", js.undefined)
     
-    inline def setClusterArnsVarargs(value: String*): Self = StObject.set(x, "clusterArns", js.Array(value :_*))
+    inline def setClusterArnsVarargs(value: String*): Self = StObject.set(x, "clusterArns", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

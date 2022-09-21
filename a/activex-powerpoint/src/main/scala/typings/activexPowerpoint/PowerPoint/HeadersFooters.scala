@@ -19,7 +19,7 @@ trait HeadersFooters extends StObject {
   
   val Header: HeaderFooter
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.HeadersFooters_typekey")
   var PowerPointDotHeadersFooters_typekey: HeadersFooters
@@ -35,7 +35,7 @@ object HeadersFooters {
     DisplayOnTitleSlide: MsoTriState,
     Footer: HeaderFooter,
     Header: HeaderFooter,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotHeadersFooters_typekey: HeadersFooters,
     SlideNumber: HeaderFooter
   ): HeadersFooters = {
@@ -58,7 +58,7 @@ object HeadersFooters {
     
     inline def setHeader(value: HeaderFooter): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotHeadersFooters_typekey(value: HeadersFooters): Self = StObject.set(x, "PowerPoint.HeadersFooters_typekey", value.asInstanceOf[js.Any])
     

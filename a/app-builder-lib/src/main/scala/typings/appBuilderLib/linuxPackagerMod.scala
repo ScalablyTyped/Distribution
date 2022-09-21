@@ -16,7 +16,7 @@ object linuxPackagerMod {
   
   @JSImport("app-builder-lib/out/linuxPackager", "LinuxPackager")
   @js.native
-  class LinuxPackager protected () extends PlatformPackager[LinuxConfiguration] {
+  open class LinuxPackager protected () extends PlatformPackager[LinuxConfiguration] {
     def this(info: Packager) = this()
     
     val executableName: String = js.native

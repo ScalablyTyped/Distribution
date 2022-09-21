@@ -1,12 +1,14 @@
 package typings.firebaseStorage
 
-import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
-import typings.firebaseComponent.mod.Provider
-import typings.firebaseStorage.locationMod.Location
-import typings.firebaseStorage.requestMod.Request
-import typings.firebaseStorage.requestinfoMod.RequestInfo
+import typings.firebaseApp.mod.FirebaseApp
+import typings.firebaseStorage.anon.MockUserToken
+import typings.firebaseStorage.implementationConnectionMod.Connection
+import typings.firebaseStorage.implementationConnectionMod.ConnectionType
+import typings.firebaseStorage.implementationLocationMod.Location
+import typings.firebaseStorage.implementationRequestMod.Request
+import typings.firebaseStorage.implementationRequestinfoMod.RequestInfo
+import typings.firebaseStorage.srcPublicTypesMod.FirebaseStorage
 import typings.firebaseStorage.srcReferenceMod.Reference
-import typings.firebaseStorage.xhriopoolMod.XhrIoPool
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,103 +19,189 @@ object srcServiceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseService * / any */ @JSImport("@firebase/storage/dist/src/service", "StorageService")
+  @JSImport("@firebase/storage/dist/src/service", "FirebaseStorageImpl")
   @js.native
-  class StorageService protected () extends StObject {
+  open class FirebaseStorageImpl protected ()
+    extends StObject
+       with FirebaseStorage {
     def this(
-      app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any,
+      /**
+      * FirebaseApp associated with this StorageService instance.
+      */
+    app: FirebaseApp,
+      _authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
       /**
       * @internal
       */
-    _authProvider: Provider[FirebaseAuthInternalName],
-      /**
-      * @internal
-      */
-    _pool: XhrIoPool
+    _appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any
     ) = this()
     def this(
-      app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any,
+      /**
+      * FirebaseApp associated with this StorageService instance.
+      */
+    app: FirebaseApp,
+      _authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
       /**
       * @internal
       */
-    _authProvider: Provider[FirebaseAuthInternalName],
-      /**
-      * @internal
-      */
-    _pool: XhrIoPool,
+    _appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
       /**
       * @internal
       */
     _url: String
     ) = this()
+    def this(
+      /**
+      * FirebaseApp associated with this StorageService instance.
+      */
+    app: FirebaseApp,
+      _authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+      /**
+      * @internal
+      */
+    _appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
+      /**
+      * @internal
+      */
+    _url: String,
+      _firebaseVersion: String
+    ) = this()
+    def this(
+      /**
+      * FirebaseApp associated with this StorageService instance.
+      */
+    app: FirebaseApp,
+      _authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+      /**
+      * @internal
+      */
+    _appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
+      /**
+      * @internal
+      */
+    _url: Unit,
+      _firebaseVersion: String
+    ) = this()
+    
+    /**
+      * @internal
+      */
+    val _appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any = js.native
     
     /* protected */ val _appId: String | Null = js.native
     
-    /**
-      * @internal
-      */
-    val _authProvider: Provider[FirebaseAuthInternalName] = js.native
+    val _authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any = js.native
     
-    /**
-      * @internal
-      */
-    val _bucket: Location | Null = js.native
+    var _bucket: Location | Null = js.native
     
     /**
       * Stop running requests and prevent more from being created.
-      * @internal
       */
     def _delete(): js.Promise[Unit] = js.native
     
-    /* private */ var _deleted: js.Any = js.native
+    /* private */ var _deleted: Any = js.native
     
-    /* private */ var _maxOperationRetryTime: js.Any = js.native
+    val _firebaseVersion: js.UndefOr[String] = js.native
     
-    /* private */ var _maxUploadRetryTime: js.Any = js.native
+    def _getAppCheckToken(): js.Promise[String | Null] = js.native
+    
+    def _getAuthToken(): js.Promise[String | Null] = js.native
     
     /**
-      * @internal
+      * This string can be in the formats:
+      * - host
+      * - host:port
       */
-    val _pool: XhrIoPool = js.native
+    /* private */ var _host: Any = js.native
     
-    /* private */ val _requests: js.Any = js.native
+    /**
+      * @param requestInfo - HTTP RequestInfo object
+      * @param authToken - Firebase auth token
+      */
+    def _makeRequest[I /* <: ConnectionType */, O](requestInfo: RequestInfo[I, O], requestFactory: js.Function0[Connection[I]]): Request[O] = js.native
+    def _makeRequest[I /* <: ConnectionType */, O](requestInfo: RequestInfo[I, O], requestFactory: js.Function0[Connection[I]], authToken: String): Request[O] = js.native
+    def _makeRequest[I /* <: ConnectionType */, O](
+      requestInfo: RequestInfo[I, O],
+      requestFactory: js.Function0[Connection[I]],
+      authToken: String,
+      appCheckToken: String
+    ): Request[O] = js.native
+    def _makeRequest[I /* <: ConnectionType */, O](
+      requestInfo: RequestInfo[I, O],
+      requestFactory: js.Function0[Connection[I]],
+      authToken: Null,
+      appCheckToken: String
+    ): Request[O] = js.native
+    
+    /**
+      * Returns a new firebaseStorage.Reference object referencing this StorageService
+      * at the given Location.
+      */
+    def _makeStorageReference(loc: Location): Reference = js.native
+    
+    /* private */ var _maxOperationRetryTime: Any = js.native
+    
+    /* private */ var _maxUploadRetryTime: Any = js.native
+    
+    var _overrideAuthToken: js.UndefOr[String] = js.native
+    
+    var _protocol: String = js.native
+    
+    /* private */ val _requests: Any = js.native
     
     /**
       * @internal
       */
     val _url: js.UndefOr[String] = js.native
     
-    val app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any = js.native
-    
-    def getAuthToken(): js.Promise[String | Null] = js.native
+    /**
+      * The {@link @firebase/app#FirebaseApp} associated with this `FirebaseStorage` instance.
+      */
+    /* CompleteClass */
+    override val app: FirebaseApp = js.native
     
     /**
-      * @internal
-      * @param requestInfo - HTTP RequestInfo object
-      * @param authToken - Firebase auth token
+      * The host string for this service, in the form of `host` or
+      * `host:port`.
       */
-    def makeRequest[T](requestInfo: RequestInfo[T]): Request[T] = js.native
-    def makeRequest[T](requestInfo: RequestInfo[T], authToken: String): Request[T] = js.native
+    def host: String = js.native
+    def host_=(host: String): Unit = js.native
+    
+    def makeRequestWithTokens[I /* <: ConnectionType */, O](requestInfo: RequestInfo[I, O], requestFactory: js.Function0[Connection[I]]): js.Promise[O] = js.native
     
     /**
-      * Returns a new firebaseStorage.Reference object referencing this StorageService
-      * at the given Location.
+      * The maximum time to retry operations other than uploads or downloads in
+      * milliseconds.
       */
-    def makeStorageReference(loc: Location): Reference = js.native
+    /* CompleteClass */
+    var maxOperationRetryTime: Double = js.native
+    /**
+      * The maximum time to retry operations other than uploads or downloads in
+      * milliseconds.
+      */
+    @JSName("maxOperationRetryTime")
+    def maxOperationRetryTime_MFirebaseStorageImpl: Double = js.native
     
-    def maxOperationRetryTime: Double = js.native
-    def maxOperationRetryTime_=(time: Double): Unit = js.native
-    
-    def maxUploadRetryTime: Double = js.native
-    def maxUploadRetryTime_=(time: Double): Unit = js.native
+    /**
+      * The maximum time to retry uploads in milliseconds.
+      */
+    /* CompleteClass */
+    var maxUploadRetryTime: Double = js.native
+    /**
+      * The maximum time to retry uploads in milliseconds.
+      */
+    @JSName("maxUploadRetryTime")
+    def maxUploadRetryTime_MFirebaseStorageImpl: Double = js.native
   }
+  
+  inline def connectStorageEmulator(storage: FirebaseStorageImpl, host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectStorageEmulator")(storage.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectStorageEmulator(storage: FirebaseStorageImpl, host: String, port: Double, options: MockUserToken): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectStorageEmulator")(storage.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def isUrl(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")().asInstanceOf[Boolean]
   inline def isUrl(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def ref(storageOrRef: Reference): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storageOrRef.asInstanceOf[js.Any]).asInstanceOf[Reference]
   inline def ref(storageOrRef: Reference, path: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storageOrRef.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Reference]
-  inline def ref(storage: StorageService): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any]).asInstanceOf[Reference]
-  inline def ref(storage: StorageService, url: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Reference]
+  inline def ref(storage: FirebaseStorageImpl): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  inline def ref(storage: FirebaseStorageImpl, url: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Reference]
 }

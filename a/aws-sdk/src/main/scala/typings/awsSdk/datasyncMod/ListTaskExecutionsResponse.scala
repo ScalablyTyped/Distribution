@@ -33,6 +33,6 @@ object ListTaskExecutionsResponse {
     
     inline def setTaskExecutionsUndefined: Self = StObject.set(x, "TaskExecutions", js.undefined)
     
-    inline def setTaskExecutionsVarargs(value: TaskExecutionListEntry*): Self = StObject.set(x, "TaskExecutions", js.Array(value :_*))
+    inline def setTaskExecutionsVarargs(value: TaskExecutionListEntry*): Self = StObject.set(x, "TaskExecutions", js.Array(value*))
   }
 }

@@ -24,6 +24,6 @@ object FlowLabel {
     
     inline def setAntecedentsUndefined: Self = StObject.set(x, "antecedents", js.undefined)
     
-    inline def setAntecedentsVarargs(value: FlowNode*): Self = StObject.set(x, "antecedents", js.Array(value :_*))
+    inline def setAntecedentsVarargs(value: FlowNode*): Self = StObject.set(x, "antecedents", js.Array(value*))
   }
 }

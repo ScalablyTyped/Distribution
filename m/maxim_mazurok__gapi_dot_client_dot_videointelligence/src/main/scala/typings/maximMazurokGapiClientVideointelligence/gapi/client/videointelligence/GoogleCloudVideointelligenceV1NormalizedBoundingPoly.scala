@@ -22,6 +22,6 @@ object GoogleCloudVideointelligenceV1NormalizedBoundingPoly {
     
     inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    inline def setVerticesVarargs(value: GoogleCloudVideointelligenceV1NormalizedVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: GoogleCloudVideointelligenceV1NormalizedVertex*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

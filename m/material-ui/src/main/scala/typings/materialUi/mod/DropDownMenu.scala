@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "DropDownMenu")
 @js.native
-class DropDownMenu ()
-  extends Component[DropDownMenuProps, js.Object, js.Any]
+open class DropDownMenu ()
+  extends Component[DropDownMenuProps, js.Object, Any]

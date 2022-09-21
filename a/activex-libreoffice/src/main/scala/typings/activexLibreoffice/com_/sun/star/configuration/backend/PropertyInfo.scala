@@ -20,11 +20,11 @@ trait PropertyInfo extends StObject {
   var Type: String
   
   /** The value of the property */
-  var Value: js.Any
+  var Value: Any
 }
 object PropertyInfo {
   
-  inline def apply(Name: String, Protected: Boolean, Type: String, Value: js.Any): PropertyInfo = {
+  inline def apply(Name: String, Protected: Boolean, Type: String, Value: Any): PropertyInfo = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Protected = Protected.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyInfo]
   }
@@ -37,6 +37,6 @@ object PropertyInfo {
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @constructor
   */
-class Builder () extends StObject {
+open class Builder () extends StObject {
   
   /**
     * Creates a new WebDriver client based on this builder's current
@@ -83,7 +83,7 @@ class Builder () extends StObject {
   /**
     * @return {http.Agent} The http agent used for each request
     */
-  def getHttpAgent(): js.Any | Null = js.native
+  def getHttpAgent(): Any | Null = js.native
   
   /**
     * @return {safari.Options} the Safari specific options currently configured
@@ -229,7 +229,7 @@ class Builder () extends StObject {
     * @param {http.Agent} agent The agent to use for each request.
     * @return {!Builder} A self reference.
     */
-  def usingHttpAgent(agent: js.Any): Builder = js.native
+  def usingHttpAgent(agent: Any): Builder = js.native
   
   /**
     * Sets the URL of a remote WebDriver server to use. Once a remote URL has

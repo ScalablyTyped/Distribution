@@ -1,13 +1,14 @@
 organization := "org.scalablytyped"
 name := "power-assert"
-version := "1.5.3-dt-20201002Z-683217"
-scalaVersion := "3.0.1"
+version := "1.5-dt-20211202Z-58bf8a"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "empower" % "1.2.1-dt-20201002Z-a8f1cc",
-  "org.scalablytyped" %%% "power-assert-formatter" % "1.4.1-dt-20201002Z-ad41c1",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "empower" % "1.2-dt-20211202Z-fda30b",
+  "org.scalablytyped" %%% "empower-core" % "1.2-dt-20211202Z-e277df",
+  "org.scalablytyped" %%% "power-assert-formatter" % "1.4.1-dt-20220818Z-3d6d0e",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

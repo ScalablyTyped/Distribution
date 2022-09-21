@@ -20,7 +20,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("sinon.FakeXMLHttpRequest")
     @js.native
-    class FakeXMLHttpRequest ()
+    open class FakeXMLHttpRequest ()
       extends StObject
          with SinonFakeXMLHttpRequest {
       
@@ -43,7 +43,7 @@ object global {
         * All response headers as an object.
         */
       /* CompleteClass */
-      override def getAllResponseHeaders(): js.Any = js.native
+      override def getAllResponseHeaders(): Any = js.native
       
       /**
         * The value of the given response header, if the request has been responded to (see respond).
@@ -77,13 +77,13 @@ object global {
         * An object of all request headers, i.e.:
         */
       /* CompleteClass */
-      var requestHeaders: js.Any = js.native
+      var requestHeaders: Any = js.native
       
       /**
         * Calls the above three methods.
         */
       /* CompleteClass */
-      override def respond(status: Double, headers: js.Any, body: String): Unit = js.native
+      override def respond(status: Double, headers: Any, body: String): Unit = js.native
       
       /**
         * When using respond, this property is populated with a parsed document if response headers indicate as much (see the spec)
@@ -104,7 +104,7 @@ object global {
         * @param headers
         */
       /* CompleteClass */
-      override def setResponseHeaders(headers: js.Any): Unit = js.native
+      override def setResponseHeaders(headers: Any): Unit = js.native
       
       /**
         * The request’s status code.

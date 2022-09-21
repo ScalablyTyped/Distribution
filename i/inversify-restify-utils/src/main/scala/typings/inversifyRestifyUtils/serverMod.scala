@@ -1,6 +1,6 @@
 package typings.inversifyRestifyUtils
 
-import typings.inversify.interfacesMod.interfaces.Container
+import typings.inversify.mod.Container
 import typings.inversifyRestifyUtils.interfacesMod.interfaces.ConfigFunction
 import typings.restify.mod.Server
 import typings.restify.mod.ServerOptions
@@ -12,28 +12,28 @@ object serverMod {
   
   @JSImport("inversify-restify-utils/dts/server", "InversifyRestifyServer")
   @js.native
-  class InversifyRestifyServer protected () extends StObject {
+  open class InversifyRestifyServer protected () extends StObject {
     def this(container: Container) = this()
     def this(
       container: Container,
       opts: ServerOptions & typings.inversifyRestifyUtils.interfacesMod.interfaces.ServerOptions
     ) = this()
     
-    /* private */ var app: js.Any = js.native
+    /* private */ var app: Any = js.native
     
     def build(): Server = js.native
     
-    /* private */ var configFn: js.Any = js.native
+    /* private */ var configFn: Any = js.native
     
-    /* private */ var container: js.Any = js.native
+    /* private */ var container: Any = js.native
     
-    /* private */ var defaultRoot: js.Any = js.native
+    /* private */ var defaultRoot: Any = js.native
     
-    /* private */ var handlerFactory: js.Any = js.native
+    /* private */ var handlerFactory: Any = js.native
     
-    /* private */ var registerControllers: js.Any = js.native
+    /* private */ var registerControllers: Any = js.native
     
-    /* private */ var resolveMiddleware: js.Any = js.native
+    /* private */ var resolveMiddleware: Any = js.native
     
     def setConfig(fn: ConfigFunction): InversifyRestifyServer = js.native
   }

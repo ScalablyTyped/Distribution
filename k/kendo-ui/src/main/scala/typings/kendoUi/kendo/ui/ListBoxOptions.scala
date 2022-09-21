@@ -17,7 +17,7 @@ trait ListBoxOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ ListBoxEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataTextField: js.UndefOr[String] = js.undefined
   
@@ -33,7 +33,7 @@ trait ListBoxOptions extends StObject {
   
   var drop: js.UndefOr[js.Function1[/* e */ ListBoxDropEvent, Unit]] = js.undefined
   
-  var dropSources: js.UndefOr[js.Any] = js.undefined
+  var dropSources: js.UndefOr[Any] = js.undefined
   
   var messages: js.UndefOr[ListBoxMessages] = js.undefined
   
@@ -80,7 +80,7 @@ object ListBoxOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -110,7 +110,7 @@ object ListBoxOptions {
     
     inline def setDrop(value: /* e */ ListBoxDropEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
-    inline def setDropSources(value: js.Any): Self = StObject.set(x, "dropSources", value.asInstanceOf[js.Any])
+    inline def setDropSources(value: Any): Self = StObject.set(x, "dropSources", value.asInstanceOf[js.Any])
     
     inline def setDropSourcesUndefined: Self = StObject.set(x, "dropSources", js.undefined)
     

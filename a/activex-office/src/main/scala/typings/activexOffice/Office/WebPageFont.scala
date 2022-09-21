@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WebPageFont extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -24,7 +24,7 @@ trait WebPageFont extends StObject {
 object WebPageFont {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     FixedWidthFont: String,
     FixedWidthFontSize: Double,
@@ -39,7 +39,7 @@ object WebPageFont {
   
   extension [Self <: WebPageFont](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     

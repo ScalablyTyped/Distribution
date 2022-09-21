@@ -23,8 +23,8 @@ object mod {
       
       trait Assertion extends StObject {
         
-        def almost(value: js.Any): Assertion
-        def almost(value: js.Any, toleranceOverride: Double): Assertion
+        def almost(value: Any): Assertion
+        def almost(value: Any, toleranceOverride: Double): Assertion
         @JSName("almost")
         var almost_Original: Almost
       }
@@ -48,13 +48,13 @@ object mod {
           extends StObject
              with DeepAlmost {
           
-          def eql(value: js.Any): typings.chai.Chai.Assertion = js.native
-          def eql(value: js.Any, message: String): typings.chai.Chai.Assertion = js.native
+          def eql(value: Any): typings.chai.Chai.Assertion = js.native
+          def eql(value: Any, message: String): typings.chai.Chai.Assertion = js.native
           @JSName("eql")
           var eql_Original: Equal = js.native
           
-          def eqls(value: js.Any): typings.chai.Chai.Assertion = js.native
-          def eqls(value: js.Any, message: String): typings.chai.Chai.Assertion = js.native
+          def eqls(value: Any): typings.chai.Chai.Assertion = js.native
+          def eqls(value: Any, message: String): typings.chai.Chai.Assertion = js.native
           @JSName("eqls")
           var eqls_Original: Equal = js.native
         }
@@ -62,21 +62,19 @@ object mod {
         @js.native
         trait DeepAlmost extends StObject {
           
-          def apply(value: js.Any): Assertion = js.native
-          def apply(value: js.Any, toleranceOverride: Double): Assertion = js.native
+          def apply(value: Any): Assertion = js.native
+          def apply(value: Any, toleranceOverride: Double): Assertion = js.native
           
-          def eq(value: js.Any): typings.chai.Chai.Assertion = js.native
-          def eq(value: js.Any, message: String): typings.chai.Chai.Assertion = js.native
+          def eq(value: Any, message: String): typings.chai.Chai.Assertion = js.native
           @JSName("eq")
           var eq_Original: Equal = js.native
           
-          def equal(value: js.Any): typings.chai.Chai.Assertion = js.native
-          def equal(value: js.Any, message: String): typings.chai.Chai.Assertion = js.native
+          def equal(value: Any): typings.chai.Chai.Assertion = js.native
+          def equal(value: Any, message: String): typings.chai.Chai.Assertion = js.native
           @JSName("equal")
           var equal_Original: Equal = js.native
           
-          def equals(value: js.Any): typings.chai.Chai.Assertion = js.native
-          def equals(value: js.Any, message: String): typings.chai.Chai.Assertion = js.native
+          def equals(value: Any, message: String): typings.chai.Chai.Assertion = js.native
           @JSName("equals")
           var equals_Original: Equal = js.native
         }
@@ -84,8 +82,8 @@ object mod {
       
       trait Deep extends StObject {
         
-        def almost(value: js.Any): Assertion
-        def almost(value: js.Any, toleranceOverride: Double): Assertion
+        def almost(value: Any): Assertion
+        def almost(value: Any, toleranceOverride: Double): Assertion
         @JSName("almost")
         var almost_Original: DeepAlmost
       }

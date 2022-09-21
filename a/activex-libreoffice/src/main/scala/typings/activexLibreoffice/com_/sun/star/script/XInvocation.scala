@@ -26,7 +26,7 @@ trait XInvocation
     * returns the value of the property with the specified name.
     * @param aPropertyName specifies the name of the property.
     */
-  def getValue(aPropertyName: String): js.Any
+  def getValue(aPropertyName: String): Any
   
   /**
     * returns `TRUE` if the method with the specified name exists, else `FALSE` .
@@ -61,10 +61,10 @@ trait XInvocation
     */
   def invoke(
     aFunctionName: String,
-    aParams: SeqEquiv[js.Any],
+    aParams: SeqEquiv[Any],
     aOutParamIndex: js.Array[SeqEquiv[Double]],
-    aOutParam: js.Array[SeqEquiv[js.Any]]
-  ): js.Any
+    aOutParam: js.Array[SeqEquiv[Any]]
+  ): Any
   
   /**
     * sets a value to the property with the specified name.
@@ -72,7 +72,7 @@ trait XInvocation
     * If the underlying object implements an {@link com.sun.star.container.XNameContainer} , then this method will insert the value if there is no such
     * **aPropertyName** .
     */
-  def setValue(aPropertyName: String, aValue: js.Any): Unit
+  def setValue(aPropertyName: String, aValue: Any): Unit
 }
 object XInvocation {
   
@@ -80,13 +80,13 @@ object XInvocation {
     Introspection: XIntrospectionAccess,
     acquire: () => Unit,
     getIntrospection: () => XIntrospectionAccess,
-    getValue: String => js.Any,
+    getValue: String => Any,
     hasMethod: String => Boolean,
     hasProperty: String => Boolean,
-    invoke: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
-    queryInterface: `type` => js.Any,
+    invoke: (String, SeqEquiv[Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[Any]]) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    setValue: (String, js.Any) => Unit
+    setValue: (String, Any) => Unit
   ): XInvocation = {
     val __obj = js.Dynamic.literal(Introspection = Introspection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getIntrospection = js.Any.fromFunction0(getIntrospection), getValue = js.Any.fromFunction1(getValue), hasMethod = js.Any.fromFunction1(hasMethod), hasProperty = js.Any.fromFunction1(hasProperty), invoke = js.Any.fromFunction4(invoke), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setValue = js.Any.fromFunction2(setValue))
     __obj.asInstanceOf[XInvocation]
@@ -96,7 +96,7 @@ object XInvocation {
     
     inline def setGetIntrospection(value: () => XIntrospectionAccess): Self = StObject.set(x, "getIntrospection", js.Any.fromFunction0(value))
     
-    inline def setGetValue(value: String => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: String => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
     inline def setHasMethod(value: String => Boolean): Self = StObject.set(x, "hasMethod", js.Any.fromFunction1(value))
     
@@ -104,10 +104,8 @@ object XInvocation {
     
     inline def setIntrospection(value: XIntrospectionAccess): Self = StObject.set(x, "Introspection", value.asInstanceOf[js.Any])
     
-    inline def setInvoke(
-      value: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any
-    ): Self = StObject.set(x, "invoke", js.Any.fromFunction4(value))
+    inline def setInvoke(value: (String, SeqEquiv[Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[Any]]) => Any): Self = StObject.set(x, "invoke", js.Any.fromFunction4(value))
     
-    inline def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (String, Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
   }
 }

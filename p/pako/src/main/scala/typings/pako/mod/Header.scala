@@ -37,7 +37,7 @@ object Header {
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    inline def setExtraVarargs(value: Double*): Self = StObject.set(x, "extra", js.Array(value :_*))
+    inline def setExtraVarargs(value: Double*): Self = StObject.set(x, "extra", js.Array(value*))
     
     inline def setHcrc(value: Boolean): Self = StObject.set(x, "hcrc", value.asInstanceOf[js.Any])
     

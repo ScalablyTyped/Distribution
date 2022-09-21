@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticSIZES
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
@@ -14,12 +14,12 @@ object imageGroupMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Image/ImageGroup", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ImageGroupProps] = js.native
+  val default: FC[ImageGroupProps] = js.native
   
   trait ImageGroupProps
     extends StObject
        with StrictImageGroupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ImageGroupProps {
     
     inline def apply(): ImageGroupProps = {
@@ -31,7 +31,7 @@ object imageGroupMod extends Shortcut {
   trait StrictImageGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -54,7 +54,7 @@ object imageGroupMod extends Shortcut {
     
     extension [Self <: StrictImageGroupProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -76,8 +76,8 @@ object imageGroupMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ImageGroupProps]
+  type _To = FC[ImageGroupProps]
   
   /* This means you don't have to write `default`, but can instead just say `imageGroupMod.foo` */
-  override def _to: StatelessComponent[ImageGroupProps] = default
+  override def _to: FC[ImageGroupProps] = default
 }

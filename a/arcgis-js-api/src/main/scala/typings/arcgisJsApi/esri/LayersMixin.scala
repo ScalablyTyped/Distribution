@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LayersMixin extends StObject {
   
-  def add(layer: js.Promise[js.Any]): Unit = js.native
-  def add(layer: js.Promise[js.Any], index: Double): Unit = js.native
+  def add(layer: js.Promise[Any]): scala.Unit = js.native
+  def add(layer: js.Promise[Any], index: Double): scala.Unit = js.native
   /**
     * Adds a layer to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#add)
     */
-  def add(layer: Layer): Unit = js.native
-  def add(layer: Layer, index: Double): Unit = js.native
+  def add(layer: Layer): scala.Unit = js.native
+  def add(layer: Layer, index: Double): scala.Unit = js.native
   
   /**
     * Adds a layer or an array of layers to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#addMany)
     */
-  def addMany(layers: js.Array[Layer]): Unit = js.native
-  def addMany(layers: js.Array[Layer], index: Double): Unit = js.native
+  def addMany(layers: js.Array[Layer]): scala.Unit = js.native
+  def addMany(layers: js.Array[Layer], index: Double): scala.Unit = js.native
   
   /**
-    * Returns a layer based on the given layer id.
+    * Returns a layer based on the given layer ID.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#findLayerById)
     */

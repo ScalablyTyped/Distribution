@@ -141,7 +141,7 @@ object XUIConfigurationManager {
     getUIElementsInfo: Double => SafeArray[SafeArray[PropertyValue]],
     hasSettings: String => Boolean,
     insertSettings: (String, XIndexAccess) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSettings: String => Unit,
     replaceSettings: (String, XIndexAccess) => Unit,

@@ -1,5 +1,6 @@
 package typings.awsServerlessExpress
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEvent
 import typings.awsLambda.handlerMod.Context
 import typings.awsServerlessExpress.awsServerlessExpressStrings.CALLBACK
@@ -8,6 +9,7 @@ import typings.awsServerlessExpress.awsServerlessExpressStrings.PROMISE
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,36 +20,133 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createServer(requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any]).asInstanceOf[Server]
   inline def createServer(
-    requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit],
-    serverListenCallback: js.Function0[js.Any]
-  ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any], serverListenCallback.asInstanceOf[js.Any])).asInstanceOf[Server]
+    requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse[IncomingMessage], Unit]
+  ): Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any]).asInstanceOf[Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]]
   inline def createServer(
-    requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit],
-    serverListenCallback: js.Function0[js.Any],
+    requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse[IncomingMessage], Unit],
+    serverListenCallback: js.Function0[Any]
+  ): Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any], serverListenCallback.asInstanceOf[js.Any])).asInstanceOf[Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]]
+  inline def createServer(
+    requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse[IncomingMessage], Unit],
+    serverListenCallback: js.Function0[Any],
     binaryMimeTypes: js.Array[String]
-  ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any], serverListenCallback.asInstanceOf[js.Any], binaryMimeTypes.asInstanceOf[js.Any])).asInstanceOf[Server]
+  ): Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any], serverListenCallback.asInstanceOf[js.Any], binaryMimeTypes.asInstanceOf[js.Any])).asInstanceOf[Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]]
   inline def createServer(
-    requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit],
+    requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse[IncomingMessage], Unit],
     serverListenCallback: Unit,
     binaryMimeTypes: js.Array[String]
-  ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any], serverListenCallback.asInstanceOf[js.Any], binaryMimeTypes.asInstanceOf[js.Any])).asInstanceOf[Server]
+  ): Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any], serverListenCallback.asInstanceOf[js.Any], binaryMimeTypes.asInstanceOf[js.Any])).asInstanceOf[Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]]
   
-  inline def proxy(server: Server, event: APIGatewayProxyEvent, context: Context): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Server]
+  inline def proxy(
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ],
+    event: APIGatewayProxyEvent,
+    context: Context
+  ): Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]]
+  inline def proxy(
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ],
+    event: APIGatewayProxyEvent,
+    context: Context,
+    resolutionMode: CONTEXT_SUCCEED | PROMISE
+  ): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
   
-  inline def proxy_CALLBACK(server: Server, event: APIGatewayProxyEvent, context: Context, resolutionMode: CALLBACK): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
   inline def proxy_CALLBACK(
-    server: Server,
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ],
+    event: APIGatewayProxyEvent,
+    context: Context,
+    resolutionMode: CALLBACK
+  ): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
+  inline def proxy_CALLBACK(
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ],
     event: APIGatewayProxyEvent,
     context: Context,
     resolutionMode: CALLBACK,
-    callback: js.Function2[/* error */ js.Any, /* response */ Response, Unit]
+    callback: js.Function2[/* error */ Any, /* response */ Response, Unit]
   ): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
-  
-  inline def proxy_CONTEXTSUCCEED(server: Server, event: APIGatewayProxyEvent, context: Context, resolutionMode: CONTEXT_SUCCEED): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
-  
-  inline def proxy_PROMISE(server: Server, event: APIGatewayProxyEvent, context: Context, resolutionMode: PROMISE): ProxyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(server.asInstanceOf[js.Any], event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ProxyResult]
   
   trait ProxyResult extends StObject {
     

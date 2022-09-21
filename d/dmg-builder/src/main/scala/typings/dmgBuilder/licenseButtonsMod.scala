@@ -13,7 +13,7 @@ object licenseButtonsMod {
   
   inline def getLicenseButtons(licenseButtonFiles: js.Array[LicenseButtonsFile], langWithRegion: String, id: Double, name: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseButtons")(licenseButtonFiles.asInstanceOf[js.Any], langWithRegion.asInstanceOf[js.Any], id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  inline def getLicenseButtonsFile(packager: PlatformPackager[js.Any]): js.Promise[js.Array[LicenseButtonsFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseButtonsFile")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LicenseButtonsFile]]]
+  inline def getLicenseButtonsFile(packager: PlatformPackager[Any]): js.Promise[js.Array[LicenseButtonsFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseButtonsFile")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LicenseButtonsFile]]]
   
   trait LicenseButtonsFile extends StObject {
     

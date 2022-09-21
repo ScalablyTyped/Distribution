@@ -22,6 +22,6 @@ object AggregateResponse {
     
     inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    inline def setBucketVarargs(value: AggregateBucket*): Self = StObject.set(x, "bucket", js.Array(value :_*))
+    inline def setBucketVarargs(value: AggregateBucket*): Self = StObject.set(x, "bucket", js.Array(value*))
   }
 }

@@ -11,9 +11,9 @@ Throttle a function
 | Full name          | throttleit |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 114665800 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8227454666666668E7 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/component/throttle)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Pagination")
 @js.native
-class Pagination ()
+open class Pagination ()
   extends typings.reactBootstrap.libMod.Pagination
 object Pagination {
   
@@ -18,7 +18,7 @@ object Pagination {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.Ellipsis")
   @js.native
-  class Ellipsis ()
+  open class Ellipsis ()
     extends typings.reactBootstrap.paginationEllipsisMod.^
   /* static member */
   @JSImport("react-bootstrap", "Pagination.Ellipsis")
@@ -29,7 +29,7 @@ object Pagination {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.First")
   @js.native
-  class First ()
+  open class First ()
     extends typings.reactBootstrap.paginationFirstMod.^
   /* static member */
   @JSImport("react-bootstrap", "Pagination.First")
@@ -40,7 +40,7 @@ object Pagination {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.reactBootstrap.paginationItemMod.^
   /* static member */
   @JSImport("react-bootstrap", "Pagination.Item")
@@ -51,7 +51,7 @@ object Pagination {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.Last")
   @js.native
-  class Last ()
+  open class Last ()
     extends typings.reactBootstrap.paginationLastMod.^
   /* static member */
   @JSImport("react-bootstrap", "Pagination.Last")
@@ -62,7 +62,7 @@ object Pagination {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.Next")
   @js.native
-  class Next ()
+  open class Next ()
     extends typings.reactBootstrap.paginationNextMod.^
   /* static member */
   @JSImport("react-bootstrap", "Pagination.Next")
@@ -73,7 +73,7 @@ object Pagination {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Pagination.Prev")
   @js.native
-  class Prev ()
+  open class Prev ()
     extends typings.reactBootstrap.paginationPrevMod.^
   /* static member */
   @JSImport("react-bootstrap", "Pagination.Prev")

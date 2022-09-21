@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.Ribbon")
 @js.native
-class Ribbon ()
+open class Ribbon ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.Ribbon {
   
@@ -29,12 +29,12 @@ class Ribbon ()
   override def addChild(child: Component): Unit = js.native
   
   /* CompleteClass */
-  override def addChildAtIndex(child: js.Any, index: Double): Unit = js.native
+  override def addChildAtIndex(child: Any, index: Double): Unit = js.native
   /* CompleteClass */
-  override def addChildAtIndex(child: Component, index: Double): js.Any = js.native
+  override def addChildAtIndex(child: Component, index: Double): Any = js.native
   
   /* CompleteClass */
-  override def addContextualGroup(id: String, title: String, color: js.Any, command: String): js.Any = js.native
+  override def addContextualGroup(id: String, title: String, color: Any, command: String): Any = js.native
   
   /* CompleteClass */
   override def appendChildrenToElement(elm: Element): Unit = js.native
@@ -108,16 +108,16 @@ class Ribbon ()
   override def hideContextualGroup(id: String): Unit = js.native
   
   /* CompleteClass */
-  override def initRootMember(root: Component): js.Any = js.native
+  override def initRootMember(root: Component): Any = js.native
   
   /* CompleteClass */
-  override def onEnabledChanged(enabled: Boolean): js.Any = js.native
+  override def onEnabledChanged(enabled: Boolean): Any = js.native
   
   /* CompleteClass */
   override def onMenuClosed(): Unit = js.native
   
   /* CompleteClass */
-  override def raiseCommandEvent(commandId: String, `type`: CommandType, properties: js.Any): js.Any = js.native
+  override def raiseCommandEvent(commandId: String, `type`: CommandType, properties: Any): Any = js.native
   
   /* CompleteClass */
   override def receiveFocus(): Unit = js.native

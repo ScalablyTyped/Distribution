@@ -4,31 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Captions")
 @js.native
-class ResourceCaptions protected () extends StObject {
+open class ResourceCaptions protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * youtube.captions.delete
-    * @desc Deletes a specified caption track.
-    * @alias youtube.captions.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.id The id parameter identifies the caption track that is being deleted. The value is a caption track ID as identified by the id property in a caption resource.
-    * @param {string=} params.onBehalfOf ID of the Google+ Page for the channel that the request is be on behalf of
-    * @param {string=} params.onBehalfOfContentOwner Note: This parameter is intended exclusively for YouTube content partners.  The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -36,67 +24,148 @@ class ResourceCaptions protected () extends StObject {
   def delete(params: ParamsResourceCaptionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceCaptionsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceCaptionsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCaptionsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
-  
   /**
-    * youtube.captions.download
-    * @desc Downloads a caption track. The caption track is returned in its
-    * original format unless the request specifies a value for the tfmt
-    * parameter and in its original language unless the request specifies a
-    * value for the tlang parameter.
-    * @alias youtube.captions.download
-    * @memberOf! ()
+    * Deletes a resource.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/youtube.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.id The id parameter identifies the caption track that is being retrieved. The value is a caption track ID as identified by the id property in a caption resource.
-    * @param {string=} params.onBehalfOf ID of the Google+ Page for the channel that the request is be on behalf of
-    * @param {string=} params.onBehalfOfContentOwner Note: This parameter is intended exclusively for YouTube content partners.  The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
-    * @param {string=} params.tfmt The tfmt parameter specifies that the caption track should be returned in a specific format. If the parameter is not included in the request, the track is returned in its original format.
-    * @param {string=} params.tlang The tlang parameter specifies that the API response should return a translation of the specified caption track. The parameter value is an ISO 639-1 two-letter language code that identifies the desired caption language. The translation is generated by using machine translation, such as Google Translate.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const youtube = google.youtube('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/youtube.force-ssl',
+    *       'https://www.googleapis.com/auth/youtubepartner',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await youtube.captions.delete({
+    *     id: 'placeholder-value',
+    *     // ID of the Google+ Page for the channel that the request is be on behalf of
+    *     onBehalfOf: 'placeholder-value',
+    *     // *Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
+    *     onBehalfOfContentOwner: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def download(): GaxiosPromise[Unit] = js.native
-  def download(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def download(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
-  def download(params: ParamsResourceCaptionsDownload): GaxiosPromise[Unit] = js.native
-  def download(params: ParamsResourceCaptionsDownload, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: ParamsResourceCaptionsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceCaptionsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def download(): GaxiosPromise[Any] = js.native
+  def download(callback: BodyResponseCallback[Any]): Unit = js.native
+  def download(params: Unit, options: MethodOptions): GaxiosPromise[Any] = js.native
+  def download(params: ParamsResourceCaptionsDownload): GaxiosPromise[Any] = js.native
+  def download(params: ParamsResourceCaptionsDownload, callback: BodyResponseCallback[Any]): Unit = js.native
   def download(
     params: ParamsResourceCaptionsDownload,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Any | Readable],
+    callback: BodyResponseCallback[Any | Readable]
   ): Unit = js.native
-  def download(params: ParamsResourceCaptionsDownload, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def download(params: ParamsResourceCaptionsDownload, options: MethodOptions): GaxiosPromise[Any] = js.native
   def download(
     params: ParamsResourceCaptionsDownload,
     options: MethodOptions,
-    callback: BodyResponseCallback[Unit]
+    callback: BodyResponseCallback[Any]
+  ): Unit = js.native
+  /**
+    * Downloads a caption track.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/youtube.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const youtube = google.youtube('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/youtube.force-ssl',
+    *       'https://www.googleapis.com/auth/youtubepartner',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await youtube.captions.download({
+    *     // The ID of the caption track to download, required for One Platform.
+    *     id: 'placeholder-value',
+    *     // ID of the Google+ Page for the channel that the request is be on behalf of
+    *     onBehalfOf: 'placeholder-value',
+    *     // *Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
+    *     onBehalfOfContentOwner: 'placeholder-value',
+    *     // Convert the captions into this format. Supported options are sbv, srt, and vtt.
+    *     tfmt: 'placeholder-value',
+    *     // tlang is the language code; machine translate the captions into this language.
+    *     tlang: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def download(params: ParamsResourceCaptionsDownload, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def download(
+    params: ParamsResourceCaptionsDownload,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
-  /**
-    * youtube.captions.insert
-    * @desc Uploads a caption track.
-    * @alias youtube.captions.insert
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.onBehalfOf ID of the Google+ Page for the channel that the request is be on behalf of
-    * @param {string=} params.onBehalfOfContentOwner Note: This parameter is intended exclusively for YouTube content partners.  The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
-    * @param {string} params.part The part parameter specifies the caption resource parts that the API response will include. Set the parameter value to snippet.
-    * @param {boolean=} params.sync The sync parameter indicates whether YouTube should automatically synchronize the caption file with the audio track of the video. If you set the value to true, YouTube will disregard any time codes that are in the uploaded caption file and generate new time codes for the captions.  You should set the sync parameter to true if you are uploading a transcript, which has no time codes, or if you suspect the time codes in your file are incorrect and want YouTube to try to fix them.
-    * @param  {object} params.resource Media resource metadata
-    * @param {object} params.media Media object
-    * @param {string} params.media.mimeType Media mime-type
-    * @param {string|object} params.media.body Media body contents
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def insert(): GaxiosPromise[SchemaCaption] = js.native
   def insert(callback: BodyResponseCallback[SchemaCaption]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCaption] = js.native
@@ -104,8 +173,8 @@ class ResourceCaptions protected () extends StObject {
   def insert(params: ParamsResourceCaptionsInsert, callback: BodyResponseCallback[SchemaCaption]): Unit = js.native
   def insert(
     params: ParamsResourceCaptionsInsert,
-    options: BodyResponseCallback[SchemaCaption],
-    callback: BodyResponseCallback[SchemaCaption]
+    options: BodyResponseCallback[Readable | SchemaCaption],
+    callback: BodyResponseCallback[Readable | SchemaCaption]
   ): Unit = js.native
   def insert(params: ParamsResourceCaptionsInsert, options: MethodOptions): GaxiosPromise[SchemaCaption] = js.native
   def insert(
@@ -113,26 +182,90 @@ class ResourceCaptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCaption]
   ): Unit = js.native
-  
   /**
-    * youtube.captions.list
-    * @desc Returns a list of caption tracks that are associated with a
-    * specified video. Note that the API response does not contain the actual
-    * captions and that the captions.download method provides the ability to
-    * retrieve a caption track.
-    * @alias youtube.captions.list
-    * @memberOf! ()
+    * Inserts a new resource into this collection.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/youtube.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.id The id parameter specifies a comma-separated list of IDs that identify the caption resources that should be retrieved. Each ID must identify a caption track associated with the specified video.
-    * @param {string=} params.onBehalfOf ID of the Google+ Page for the channel that the request is on behalf of.
-    * @param {string=} params.onBehalfOfContentOwner Note: This parameter is intended exclusively for YouTube content partners.  The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
-    * @param {string} params.part The part parameter specifies a comma-separated list of one or more caption resource parts that the API response will include. The part names that you can include in the parameter value are id and snippet.
-    * @param {string} params.videoId The videoId parameter specifies the YouTube video ID of the video for which the API should return caption tracks.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const youtube = google.youtube('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/youtube.force-ssl',
+    *       'https://www.googleapis.com/auth/youtubepartner',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await youtube.captions.insert({
+    *     // ID of the Google+ Page for the channel that the request is be on behalf of
+    *     onBehalfOf: 'placeholder-value',
+    *     // *Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
+    *     onBehalfOfContentOwner: 'placeholder-value',
+    *     // The *part* parameter specifies the caption resource parts that the API response will include. Set the parameter value to snippet.
+    *     part: 'placeholder-value',
+    *     // Extra parameter to allow automatically syncing the uploaded caption/transcript with the audio.
+    *     sync: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "etag": "my_etag",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "snippet": {}
+    *       // }
+    *     },
+    *     media: {
+    *       mimeType: 'placeholder-value',
+    *       body: 'placeholder-value',
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "snippet": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceCaptionsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceCaptionsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaCaptionListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCaptionListResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCaptionListResponse] = js.native
@@ -140,8 +273,8 @@ class ResourceCaptions protected () extends StObject {
   def list(params: ParamsResourceCaptionsList, callback: BodyResponseCallback[SchemaCaptionListResponse]): Unit = js.native
   def list(
     params: ParamsResourceCaptionsList,
-    options: BodyResponseCallback[SchemaCaptionListResponse],
-    callback: BodyResponseCallback[SchemaCaptionListResponse]
+    options: BodyResponseCallback[Readable | SchemaCaptionListResponse],
+    callback: BodyResponseCallback[Readable | SchemaCaptionListResponse]
   ): Unit = js.native
   def list(params: ParamsResourceCaptionsList, options: MethodOptions): GaxiosPromise[SchemaCaptionListResponse] = js.native
   def list(
@@ -149,28 +282,78 @@ class ResourceCaptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCaptionListResponse]
   ): Unit = js.native
-  
   /**
-    * youtube.captions.update
-    * @desc Updates a caption track. When updating a caption track, you can
-    * change the track's draft status, upload a new caption file for the track,
-    * or both.
-    * @alias youtube.captions.update
-    * @memberOf! ()
+    * Retrieves a list of resources, possibly filtered.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/youtube.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.onBehalfOf ID of the Google+ Page for the channel that the request is be on behalf of
-    * @param {string=} params.onBehalfOfContentOwner Note: This parameter is intended exclusively for YouTube content partners.  The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
-    * @param {string} params.part The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include. Set the property value to snippet if you are updating the track's draft status. Otherwise, set the property value to id.
-    * @param {boolean=} params.sync Note: The API server only processes the parameter value if the request contains an updated caption file.  The sync parameter indicates whether YouTube should automatically synchronize the caption file with the audio track of the video. If you set the value to true, YouTube will automatically synchronize the caption track with the audio track.
-    * @param  {object} params.resource Media resource metadata
-    * @param {object} params.media Media object
-    * @param {string} params.media.mimeType Media mime-type
-    * @param {string|object} params.media.body Media body contents
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const youtube = google.youtube('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/youtube.force-ssl',
+    *       'https://www.googleapis.com/auth/youtubepartner',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await youtube.captions.list({
+    *     // Returns the captions with the given IDs for Stubby or Apiary.
+    *     id: 'placeholder-value',
+    *     // ID of the Google+ Page for the channel that the request is on behalf of.
+    *     onBehalfOf: 'placeholder-value',
+    *     // *Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
+    *     onBehalfOfContentOwner: 'placeholder-value',
+    *     // The *part* parameter specifies a comma-separated list of one or more caption resource parts that the API response will include. The part names that you can include in the parameter value are id and snippet.
+    *     part: 'placeholder-value',
+    *     // Returns the captions for the specified video.
+    *     videoId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "eventId": "my_eventId",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "visitorId": "my_visitorId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceCaptionsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceCaptionsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaCaption] = js.native
   def update(callback: BodyResponseCallback[SchemaCaption]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCaption] = js.native
@@ -178,13 +361,96 @@ class ResourceCaptions protected () extends StObject {
   def update(params: ParamsResourceCaptionsUpdate, callback: BodyResponseCallback[SchemaCaption]): Unit = js.native
   def update(
     params: ParamsResourceCaptionsUpdate,
-    options: BodyResponseCallback[SchemaCaption],
-    callback: BodyResponseCallback[SchemaCaption]
+    options: BodyResponseCallback[Readable | SchemaCaption],
+    callback: BodyResponseCallback[Readable | SchemaCaption]
   ): Unit = js.native
   def update(params: ParamsResourceCaptionsUpdate, options: MethodOptions): GaxiosPromise[SchemaCaption] = js.native
   def update(
     params: ParamsResourceCaptionsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCaption]
+  ): Unit = js.native
+  /**
+    * Updates an existing resource.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/youtube.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const youtube = google.youtube('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/youtube.force-ssl',
+    *       'https://www.googleapis.com/auth/youtubepartner',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await youtube.captions.update({
+    *     // ID of the Google+ Page for the channel that the request is on behalf of.
+    *     onBehalfOf: 'placeholder-value',
+    *     // *Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
+    *     onBehalfOfContentOwner: 'placeholder-value',
+    *     // The *part* parameter specifies a comma-separated list of one or more caption resource parts that the API response will include. The part names that you can include in the parameter value are id and snippet.
+    *     part: 'placeholder-value',
+    *     // Extra parameter to allow automatically syncing the uploaded caption/transcript with the audio.
+    *     sync: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "etag": "my_etag",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "snippet": {}
+    *       // }
+    *     },
+    *     media: {
+    *       mimeType: 'placeholder-value',
+    *       body: 'placeholder-value',
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "snippet": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceCaptionsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceCaptionsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

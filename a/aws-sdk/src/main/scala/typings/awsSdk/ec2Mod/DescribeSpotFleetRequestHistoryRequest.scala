@@ -34,11 +34,11 @@ trait DescribeSpotFleetRequestHistoryRequest extends StObject {
   /**
     * The starting date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var StartTime: DateTime
+  var StartTime: js.Date
 }
 object DescribeSpotFleetRequestHistoryRequest {
   
-  inline def apply(SpotFleetRequestId: SpotFleetRequestId, StartTime: DateTime): DescribeSpotFleetRequestHistoryRequest = {
+  inline def apply(SpotFleetRequestId: SpotFleetRequestId, StartTime: js.Date): DescribeSpotFleetRequestHistoryRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestId = SpotFleetRequestId.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSpotFleetRequestHistoryRequest]
   }
@@ -63,6 +63,6 @@ object DescribeSpotFleetRequestHistoryRequest {
     
     inline def setSpotFleetRequestId(value: SpotFleetRequestId): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

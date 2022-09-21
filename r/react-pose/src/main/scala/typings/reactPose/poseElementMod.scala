@@ -21,13 +21,13 @@ object poseElementMod {
   
   @JSImport("react-pose/lib/components/PoseElement", "PoseElement")
   @js.native
-  class PoseElement protected ()
-    extends PureComponent[PoseElementInternalProps, js.Object, js.Any] {
+  open class PoseElement protected ()
+    extends PureComponent[PoseElementInternalProps, js.Object, Any] {
     def this(props: PoseElementInternalProps) = this()
     
     var children: Set[ChildRegistration] = js.native
     
-    /* private */ var childrenHandlers: js.Any = js.native
+    /* private */ var childrenHandlers: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPoseElement(): Unit = js.native
@@ -57,9 +57,6 @@ object poseElementMod {
     
     var poser: DomPopmotionPoser = js.native
     
-    @JSName("props")
-    var props_PoseElement: PoseElementInternalProps = js.native
-    
     var ref: Element = js.native
     
     def setPose(pose: CurrentPose): Unit = js.native
@@ -68,7 +65,7 @@ object poseElementMod {
     
     def shouldForwardProp(key: String): Boolean = js.native
     
-    var styleProps: StringDictionary[js.Any] = js.native
+    var styleProps: StringDictionary[Any] = js.native
   }
   
   @JSImport("react-pose/lib/components/PoseElement", "PoseParentConsumer")

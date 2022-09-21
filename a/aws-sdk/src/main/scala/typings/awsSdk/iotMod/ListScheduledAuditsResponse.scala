@@ -33,6 +33,6 @@ object ListScheduledAuditsResponse {
     
     inline def setScheduledAuditsUndefined: Self = StObject.set(x, "scheduledAudits", js.undefined)
     
-    inline def setScheduledAuditsVarargs(value: ScheduledAuditMetadata*): Self = StObject.set(x, "scheduledAudits", js.Array(value :_*))
+    inline def setScheduledAuditsVarargs(value: ScheduledAuditMetadata*): Self = StObject.set(x, "scheduledAudits", js.Array(value*))
   }
 }

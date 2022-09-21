@@ -34,7 +34,7 @@ object ExecStepConfig {
     
     inline def setAllowedSuccessCodesUndefined: Self = StObject.set(x, "allowedSuccessCodes", js.undefined)
     
-    inline def setAllowedSuccessCodesVarargs(value: Double*): Self = StObject.set(x, "allowedSuccessCodes", js.Array(value :_*))
+    inline def setAllowedSuccessCodesVarargs(value: Double*): Self = StObject.set(x, "allowedSuccessCodes", js.Array(value*))
     
     inline def setGcsObject(value: GcsObject): Self = StObject.set(x, "gcsObject", value.asInstanceOf[js.Any])
     

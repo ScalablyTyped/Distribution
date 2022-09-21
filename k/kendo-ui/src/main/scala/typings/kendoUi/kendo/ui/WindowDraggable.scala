@@ -8,9 +8,9 @@ trait WindowDraggable extends StObject {
   
   var axis: js.UndefOr[String] = js.undefined
   
-  var containment: js.UndefOr[js.Any | String] = js.undefined
+  var containment: js.UndefOr[Any | String] = js.undefined
   
-  var dragHandle: js.UndefOr[js.Any | String] = js.undefined
+  var dragHandle: js.UndefOr[Any | String] = js.undefined
 }
 object WindowDraggable {
   
@@ -25,11 +25,11 @@ object WindowDraggable {
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    inline def setContainment(value: js.Any | String): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Any | String): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
-    inline def setDragHandle(value: js.Any | String): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
+    inline def setDragHandle(value: Any | String): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
     
     inline def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
   }

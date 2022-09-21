@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "UpdateLocationRequest")
 @js.native
-class UpdateLocationRequest () extends StObject {
+open class UpdateLocationRequest () extends StObject {
   
   /**
     * The `Location` object with only the fields to update.

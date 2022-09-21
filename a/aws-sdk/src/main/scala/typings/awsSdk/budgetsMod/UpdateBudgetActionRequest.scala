@@ -72,6 +72,6 @@ object UpdateBudgetActionRequest {
     
     inline def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
     
-    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value*))
   }
 }

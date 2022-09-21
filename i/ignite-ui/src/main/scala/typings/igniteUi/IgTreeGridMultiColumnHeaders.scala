@@ -11,7 +11,7 @@ trait IgTreeGridMultiColumnHeaders
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event fired after the group collapsing has been executed and results are rendered.

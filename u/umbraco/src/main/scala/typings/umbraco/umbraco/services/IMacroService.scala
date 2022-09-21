@@ -25,7 +25,7 @@ trait IMacroService extends StObject {
     *
     * @param {object} args an object containing the macro alias and it's parameter values
     */
-  def generateMacroSyntax(args: js.Any*): Unit
+  def generateMacroSyntax(args: Any*): Unit
   
   /**
     * @ngdoc function
@@ -38,7 +38,7 @@ trait IMacroService extends StObject {
     *
     * @param {object} args an object containing the macro alias and it's parameter values
     */
-  def generateMvcSyntax(args: js.Any*): Unit
+  def generateMvcSyntax(args: Any*): Unit
   
   /**
     * @ngdoc function
@@ -51,14 +51,14 @@ trait IMacroService extends StObject {
     *
     * @param {object} args an object containing the macro alias and it's parameter values
     */
-  def generateWebFormsSyntax(args: js.Any*): Unit
+  def generateWebFormsSyntax(args: Any*): Unit
 }
 object IMacroService {
   
   inline def apply(
-    generateMacroSyntax: /* repeated */ js.Any => Unit,
-    generateMvcSyntax: /* repeated */ js.Any => Unit,
-    generateWebFormsSyntax: /* repeated */ js.Any => Unit
+    generateMacroSyntax: /* repeated */ Any => Unit,
+    generateMvcSyntax: /* repeated */ Any => Unit,
+    generateWebFormsSyntax: /* repeated */ Any => Unit
   ): IMacroService = {
     val __obj = js.Dynamic.literal(generateMacroSyntax = js.Any.fromFunction1(generateMacroSyntax), generateMvcSyntax = js.Any.fromFunction1(generateMvcSyntax), generateWebFormsSyntax = js.Any.fromFunction1(generateWebFormsSyntax))
     __obj.asInstanceOf[IMacroService]
@@ -66,10 +66,10 @@ object IMacroService {
   
   extension [Self <: IMacroService](x: Self) {
     
-    inline def setGenerateMacroSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateMacroSyntax", js.Any.fromFunction1(value))
+    inline def setGenerateMacroSyntax(value: /* repeated */ Any => Unit): Self = StObject.set(x, "generateMacroSyntax", js.Any.fromFunction1(value))
     
-    inline def setGenerateMvcSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateMvcSyntax", js.Any.fromFunction1(value))
+    inline def setGenerateMvcSyntax(value: /* repeated */ Any => Unit): Self = StObject.set(x, "generateMvcSyntax", js.Any.fromFunction1(value))
     
-    inline def setGenerateWebFormsSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateWebFormsSyntax", js.Any.fromFunction1(value))
+    inline def setGenerateWebFormsSyntax(value: /* repeated */ Any => Unit): Self = StObject.set(x, "generateWebFormsSyntax", js.Any.fromFunction1(value))
   }
 }

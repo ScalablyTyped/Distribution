@@ -34,8 +34,8 @@ trait Client extends StObject {
     * 
     * Returns the user-id.
     */
-  def addUI(pattern: js.Any, eventHandler: TerritoryEventHandler): String = js.native
-  def addUI(pattern: js.Any, eventHandler: TerritoryEventHandler, guid: TerritoryId): String = js.native
+  def addUI(pattern: Any, eventHandler: TerritoryEventHandler): String = js.native
+  def addUI(pattern: Any, eventHandler: TerritoryEventHandler, guid: TerritoryId): String = js.native
   
   def completeTransaction(message: String, callback: ResultCallback[TransactionResult]): Unit = js.native
   
@@ -83,7 +83,7 @@ trait Client extends StObject {
     * The client opens a project and a branch and 
     * from there we can start registering for node events.
     */
-  def selectProject(projectId: String, branchName: String, callback: ResultCallback[js.Any]): Unit = js.native
+  def selectProject(projectId: String, branchName: String, callback: ResultCallback[Any]): Unit = js.native
   
   def setAttributeSchema(nodeId: String, name: String, schema: AttributeSchema): Unit = js.native
   
@@ -91,7 +91,7 @@ trait Client extends StObject {
   
   def setPointerMeta(metaNodeId: NodeId, newPointerName: String, meta: PointerMeta): Unit = js.native
   
-  def setRegistry(nodeId: NodeId, attr: String, property: js.Any, message: String): Unit = js.native
+  def setRegistry(nodeId: NodeId, attr: String, property: Any, message: String): Unit = js.native
   
   /**
     * Transactions

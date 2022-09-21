@@ -24,7 +24,7 @@ object frombinderMod {
   @js.native
   trait EventTransformer[V] extends StObject {
     
-    def apply(args: js.Any*): EventLike[V] = js.native
+    def apply(args: Any*): EventLike[V] = js.native
   }
   
   type FlexibleSink[V] = js.Function1[/* event */ EventLike[V], Reply]

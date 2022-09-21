@@ -19,9 +19,9 @@ object dropdownMod extends Shortcut {
   
   @JSImport("rc-dropdown/es/Dropdown", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[DropdownProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[DropdownProps & RefAttributes[Any]] = js.native
   
-  /* Inlined parent std.Pick<rc-trigger.rc-trigger.TriggerProps, 'getPopupContainer' | 'children' | 'mouseEnterDelay' | 'mouseLeaveDelay'> */
+  /* Inlined parent std.Pick<rc-trigger.rc-trigger.TriggerProps, 'getPopupContainer' | 'children' | 'mouseEnterDelay' | 'mouseLeaveDelay' | 'onPopupAlign' | 'builtinPlacements'> */
   trait DropdownProps extends StObject {
     
     var align: js.UndefOr[AlignType] = js.undefined
@@ -31,6 +31,10 @@ object dropdownMod extends Shortcut {
     var animation: js.UndefOr[AnimationType] = js.undefined
     
     var arrow: js.UndefOr[Boolean] = js.undefined
+    
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
     
     var children: ReactElement
     
@@ -45,6 +49,8 @@ object dropdownMod extends Shortcut {
     var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
     var onOverlayClick: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
+    
+    var onPopupAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
     
     var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
@@ -95,6 +101,14 @@ object dropdownMod extends Shortcut {
       
       inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
+      inline def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
+      
+      inline def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
+      
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
@@ -105,7 +119,7 @@ object dropdownMod extends Shortcut {
       
       inline def setHideActionUndefined: Self = StObject.set(x, "hideAction", js.undefined)
       
-      inline def setHideActionVarargs(value: ActionType*): Self = StObject.set(x, "hideAction", js.Array(value :_*))
+      inline def setHideActionVarargs(value: ActionType*): Self = StObject.set(x, "hideAction", js.Array(value*))
       
       inline def setMinOverlayWidthMatchTrigger(value: Boolean): Self = StObject.set(x, "minOverlayWidthMatchTrigger", value.asInstanceOf[js.Any])
       
@@ -122,6 +136,10 @@ object dropdownMod extends Shortcut {
       inline def setOnOverlayClick(value: /* e */ Event => Unit): Self = StObject.set(x, "onOverlayClick", js.Any.fromFunction1(value))
       
       inline def setOnOverlayClickUndefined: Self = StObject.set(x, "onOverlayClick", js.undefined)
+      
+      inline def setOnPopupAlign(value: (/* element */ HTMLElement, /* align */ AlignType) => Unit): Self = StObject.set(x, "onPopupAlign", js.Any.fromFunction2(value))
+      
+      inline def setOnPopupAlignUndefined: Self = StObject.set(x, "onPopupAlign", js.undefined)
       
       inline def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
       
@@ -161,7 +179,7 @@ object dropdownMod extends Shortcut {
       
       inline def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
       
-      inline def setShowActionVarargs(value: ActionType*): Self = StObject.set(x, "showAction", js.Array(value :_*))
+      inline def setShowActionVarargs(value: ActionType*): Self = StObject.set(x, "showAction", js.Array(value*))
       
       inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
@@ -171,7 +189,7 @@ object dropdownMod extends Shortcut {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setTriggerVarargs(value: ActionType*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+      inline def setTriggerVarargs(value: ActionType*): Self = StObject.set(x, "trigger", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -179,8 +197,8 @@ object dropdownMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[DropdownProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[DropdownProps & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `dropdownMod.foo` */
-  override def _to: ForwardRefExoticComponent[DropdownProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[DropdownProps & RefAttributes[Any]] = default
 }

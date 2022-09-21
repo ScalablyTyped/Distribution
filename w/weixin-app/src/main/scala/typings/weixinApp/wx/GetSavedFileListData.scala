@@ -29,6 +29,6 @@ object GetSavedFileListData {
     
     inline def setFileList(value: js.Array[File]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    inline def setFileListVarargs(value: File*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: File*): Self = StObject.set(x, "fileList", js.Array(value*))
   }
 }

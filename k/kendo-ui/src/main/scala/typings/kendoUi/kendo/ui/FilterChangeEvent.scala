@@ -8,7 +8,7 @@ trait FilterChangeEvent
   extends StObject
      with FilterEvent {
   
-  var expression: js.UndefOr[js.Any] = js.undefined
+  var expression: js.UndefOr[Any] = js.undefined
 }
 object FilterChangeEvent {
   
@@ -19,7 +19,7 @@ object FilterChangeEvent {
   
   extension [Self <: FilterChangeEvent](x: Self) {
     
-    inline def setExpression(value: js.Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
   }

@@ -13,8 +13,8 @@ object tabGroupMod {
   
   @JSImport("fundamental-react/lib/Tabs/TabGroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TabGroupProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TabGroupProps, js.Object, Any]
   object default {
     
     @JSImport("fundamental-react/lib/Tabs/TabGroup", JSImport.Default)
@@ -28,11 +28,11 @@ object tabGroupMod {
     inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.TabGroup): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  type TabGroup = Component[TabGroupProps, js.Object, js.Any]
+  type TabGroup = Component[TabGroupProps, js.Object, Any]
   
   trait TabGroupProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -44,9 +44,9 @@ object tabGroupMod {
     
     var selectedIndex: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[js.Any] = js.undefined
+    var size: js.UndefOr[Any] = js.undefined
     
-    var tabGroupProps: js.UndefOr[js.Any] = js.undefined
+    var tabGroupProps: js.UndefOr[Any] = js.undefined
   }
   object TabGroupProps {
     
@@ -73,11 +73,11 @@ object tabGroupMod {
       
       inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setTabGroupProps(value: js.Any): Self = StObject.set(x, "tabGroupProps", value.asInstanceOf[js.Any])
+      inline def setTabGroupProps(value: Any): Self = StObject.set(x, "tabGroupProps", value.asInstanceOf[js.Any])
       
       inline def setTabGroupPropsUndefined: Self = StObject.set(x, "tabGroupProps", js.undefined)
     }

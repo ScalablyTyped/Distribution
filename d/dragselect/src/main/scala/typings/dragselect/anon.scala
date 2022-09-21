@@ -133,7 +133,7 @@ object anon {
       
       inline def setMultiSelectKeysUndefined: Self = StObject.set(x, "multiSelectKeys", js.undefined)
       
-      inline def setMultiSelectKeysVarargs(value: (ctrlKey | shiftKey | metaKey | altKey)*): Self = StObject.set(x, "multiSelectKeys", js.Array(value :_*))
+      inline def setMultiSelectKeysVarargs(value: (ctrlKey | shiftKey | metaKey | altKey)*): Self = StObject.set(x, "multiSelectKeys", js.Array(value*))
       
       inline def setMultiSelectMode(value: Boolean): Self = StObject.set(x, "multiSelectMode", value.asInstanceOf[js.Any])
       

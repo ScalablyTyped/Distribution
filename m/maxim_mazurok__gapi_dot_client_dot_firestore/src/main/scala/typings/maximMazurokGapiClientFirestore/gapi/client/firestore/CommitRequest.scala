@@ -29,6 +29,6 @@ object CommitRequest {
     
     inline def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
     
-    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
+    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value*))
   }
 }

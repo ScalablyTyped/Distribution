@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefaultAction extends StObject {
   
   /**
-    * Specifies that AWS WAF should allow requests by default.
+    * Specifies that WAF should allow requests by default.
     */
   var Allow: js.UndefOr[AllowAction] = js.undefined
   
   /**
-    * Specifies that AWS WAF should block requests by default. 
+    * Specifies that WAF should block requests by default. 
     */
   var Block: js.UndefOr[BlockAction] = js.undefined
 }

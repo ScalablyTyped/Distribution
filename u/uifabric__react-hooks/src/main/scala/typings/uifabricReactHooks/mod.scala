@@ -20,6 +20,7 @@ import typings.uifabricReactHooks.useSetTimeoutMod.UseSetTimeoutReturnType
 import typings.uifabricReactHooks.useTargetMod.Target
 import typings.uifabricReactHooks.useWarningsMod.IWarningOptions
 import typings.uifabricUtilities.mod.Async
+import typings.uifabricUtilities.mod.Rectangle
 import typings.uifabricUtilities.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +39,7 @@ object mod {
   inline def useConst[T](initialValue: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useConst")(initialValue.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def useConst[T](initialValue: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useConst")(initialValue.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def useConstCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useConstCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def useConstCallback[T /* <: js.Function1[/* repeated */ Any, Any] */](callback: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useConstCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def useControllableValue[TValue, TElement /* <: HTMLElement */](): js.Tuple2[
     js.UndefOr[TValue], 
@@ -206,6 +207,8 @@ object mod {
     ]
   ]]
   
+  inline def useEventCallback[Args /* <: js.Array[Any] */, Return](fn: js.Function1[/* args */ Args, Return]): js.Function1[/* args */ Args, Return] = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, Return]]
+  
   inline def useForceUpdate(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceUpdate")().asInstanceOf[js.Function0[Unit]]
   
   inline def useId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useId")().asInstanceOf[String]
@@ -213,7 +216,7 @@ object mod {
   inline def useId(prefix: String, providedId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useId")(prefix.asInstanceOf[js.Any], providedId.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def useId(prefix: Unit, providedId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useId")(prefix.asInstanceOf[js.Any], providedId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def useMergedRefs[T](refs: js.UndefOr[Ref[T]]*): RefObjectFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMergedRefs")(refs.asInstanceOf[js.Any]).asInstanceOf[RefObjectFunction[T]]
+  inline def useMergedRefs[T](refs: js.UndefOr[Ref[T]]*): RefObjectFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMergedRefs")(refs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[RefObjectFunction[T]]
   
   inline def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](element: TElement, eventName: String, callback: js.Function1[/* ev */ TEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useOnEvent")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](
@@ -271,10 +274,10 @@ object mod {
   
   inline def useSetTimeout(): UseSetTimeoutReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("useSetTimeout")().asInstanceOf[UseSetTimeoutReturnType]
   
-  inline def useTarget[TElement /* <: HTMLElement */](): js.Tuple2[RefObject[Element | MouseEvent | Point | Null], js.UndefOr[Window]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTarget")().asInstanceOf[js.Tuple2[RefObject[Element | MouseEvent | Point | Null], js.UndefOr[Window]]]
-  inline def useTarget[TElement /* <: HTMLElement */](target: Unit, hostElement: RefObject[TElement | Null]): js.Tuple2[RefObject[Element | MouseEvent | Point | Null], js.UndefOr[Window]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTarget")(target.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[RefObject[Element | MouseEvent | Point | Null], js.UndefOr[Window]]]
-  inline def useTarget[TElement /* <: HTMLElement */](target: Target): js.Tuple2[RefObject[Element | MouseEvent | Point | Null], js.UndefOr[Window]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTarget")(target.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[RefObject[Element | MouseEvent | Point | Null], js.UndefOr[Window]]]
-  inline def useTarget[TElement /* <: HTMLElement */](target: Target, hostElement: RefObject[TElement | Null]): js.Tuple2[RefObject[Element | MouseEvent | Point | Null], js.UndefOr[Window]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTarget")(target.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[RefObject[Element | MouseEvent | Point | Null], js.UndefOr[Window]]]
+  inline def useTarget[TElement /* <: HTMLElement */](): js.Tuple2[RefObject[Element | MouseEvent | Point | Rectangle | Null], js.UndefOr[Window]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTarget")().asInstanceOf[js.Tuple2[RefObject[Element | MouseEvent | Point | Rectangle | Null], js.UndefOr[Window]]]
+  inline def useTarget[TElement /* <: HTMLElement */](target: Unit, hostElement: RefObject[TElement | Null]): js.Tuple2[RefObject[Element | MouseEvent | Point | Rectangle | Null], js.UndefOr[Window]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTarget")(target.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[RefObject[Element | MouseEvent | Point | Rectangle | Null], js.UndefOr[Window]]]
+  inline def useTarget[TElement /* <: HTMLElement */](target: Target): js.Tuple2[RefObject[Element | MouseEvent | Point | Rectangle | Null], js.UndefOr[Window]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTarget")(target.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[RefObject[Element | MouseEvent | Point | Rectangle | Null], js.UndefOr[Window]]]
+  inline def useTarget[TElement /* <: HTMLElement */](target: Target, hostElement: RefObject[TElement | Null]): js.Tuple2[RefObject[Element | MouseEvent | Point | Rectangle | Null], js.UndefOr[Window]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTarget")(target.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[RefObject[Element | MouseEvent | Point | Rectangle | Null], js.UndefOr[Window]]]
   
   inline def useWarnings[P](options: IWarningOptions[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWarnings")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

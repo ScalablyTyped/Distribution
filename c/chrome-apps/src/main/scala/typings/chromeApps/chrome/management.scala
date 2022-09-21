@@ -248,7 +248,7 @@ object management {
                 OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
               ]
             ])*
-      ): Self = StObject.set(x, "availableLaunchTypes", js.Array(value :_*))
+      ): Self = StObject.set(x, "availableLaunchTypes", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -273,13 +273,13 @@ object management {
       
       inline def setHostPermissions(value: js.Array[String]): Self = StObject.set(x, "hostPermissions", value.asInstanceOf[js.Any])
       
-      inline def setHostPermissionsVarargs(value: String*): Self = StObject.set(x, "hostPermissions", js.Array(value :_*))
+      inline def setHostPermissionsVarargs(value: String*): Self = StObject.set(x, "hostPermissions", js.Array(value*))
       
       inline def setIcons(value: js.Array[IconInfo]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
       inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      inline def setIconsVarargs(value: IconInfo*): Self = StObject.set(x, "icons", js.Array(value :_*))
+      inline def setIconsVarargs(value: IconInfo*): Self = StObject.set(x, "icons", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -319,7 +319,7 @@ object management {
       
       inline def setPermissions(value: js.Array[Permission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value*))
       
       inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       

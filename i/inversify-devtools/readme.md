@@ -10,10 +10,10 @@ inversify-devtools
 | ------------------ | :-------------: |
 | Full name          | inversify-devtools |
 | Keywords           | redux, react, example |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 976 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 79.33333333333333 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/inversify/inversify-devtools#readme)

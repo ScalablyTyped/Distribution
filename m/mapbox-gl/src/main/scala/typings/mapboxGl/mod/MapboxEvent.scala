@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "MapboxEvent")
 @js.native
-class MapboxEvent[TOrig] () extends StObject {
+open class MapboxEvent[TOrig] () extends StObject {
   
   var originalEvent: TOrig = js.native
   

@@ -1,25 +1,42 @@
 package typings.htmlhint
 
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.htmlhint.htmlparserMod.default
+import typings.htmlhint.typesMod.Hint
+import typings.htmlhint.typesMod.Rule
+import typings.htmlhint.typesMod.Ruleset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  object HTMLHint {
+  @JSImport("htmlhint", "HTMLHint")
+  @js.native
+  val HTMLHint: HTMLHintCore = js.native
+  
+  @JSImport("htmlhint", "HTMLParser")
+  @js.native
+  open class HTMLParser () extends default
+  
+  object HTMLRules extends Shortcut {
     
-    @JSImport("htmlhint", "HTMLHint")
+    @JSImport("htmlhint", "HTMLRules.default")
     @js.native
-    val ^ : js.Any = js.native
+    val default: js.Array[Rule] = js.native
     
-    inline def addRule(rule: Rule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRule")(rule.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    type _To = js.Array[Rule]
     
-    inline def format(arrMessages: js.Array[LintResult]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(arrMessages.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def format(arrMessages: js.Array[LintResult], options: FormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(arrMessages.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    
-    inline def verify(fileContent: String): js.Array[LintResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Array[LintResult]]
-    inline def verify(fileContent: String, ruleSet: RuleSet): js.Array[LintResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(fileContent.asInstanceOf[js.Any], ruleSet.asInstanceOf[js.Any])).asInstanceOf[js.Array[LintResult]]
+    /* This means you don't have to write `default`, but can instead just say `HTMLRules.foo` */
+    override def _to: js.Array[Rule] = default
+  }
+  
+  @JSImport("htmlhint", "Reporter")
+  @js.native
+  open class Reporter protected ()
+    extends typings.htmlhint.reporterMod.default {
+    def this(html: String, ruleset: Ruleset) = this()
   }
   
   trait FormatOptions extends StObject {
@@ -47,63 +64,19 @@ object mod {
     }
   }
   
-  trait LintResult extends StObject {
+  @js.native
+  trait HTMLHintCore extends StObject {
     
-    var col: Double
+    def addRule(rule: Rule): Unit = js.native
     
-    var evidence: String
+    val defaultRuleset: Ruleset = js.native
     
-    var line: Double
+    def format(arrMessages: js.Array[Hint]): js.Array[String] = js.native
+    def format(arrMessages: js.Array[Hint], options: FormatOptions): js.Array[String] = js.native
     
-    var message: String
+    var rules: StringDictionary[Rule] = js.native
     
-    var rule: Rule
+    def verify(html: String): js.Array[Hint] = js.native
+    def verify(html: String, ruleset: Ruleset): js.Array[Hint] = js.native
   }
-  object LintResult {
-    
-    inline def apply(col: Double, evidence: String, line: Double, message: String, rule: Rule): LintResult = {
-      val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], evidence = evidence.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LintResult]
-    }
-    
-    extension [Self <: LintResult](x: Self) {
-      
-      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
-      
-      inline def setEvidence(value: String): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
-      
-      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
-      
-      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      inline def setRule(value: Rule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Rule extends StObject {
-    
-    var description: String
-    
-    var id: String
-    
-    var link: String
-  }
-  object Rule {
-    
-    inline def apply(description: String, id: String, link: String): Rule = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Rule]
-    }
-    
-    extension [Self <: Rule](x: Self) {
-      
-      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type RuleSet = StringDictionary[Boolean | String]
 }

@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait PageOptions
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var data: js.Any
+  var data: Any
   
   def onError(): Unit
   
@@ -35,7 +35,7 @@ trait PageOptions
 object PageOptions {
   
   inline def apply(
-    data: js.Any,
+    data: Any,
     onError: () => Unit,
     onHide: () => Unit,
     onLaunch: Options => Unit,
@@ -47,7 +47,7 @@ object PageOptions {
   
   extension [Self <: PageOptions](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     

@@ -8,5 +8,5 @@ object continuationEventMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_ContinuationEvent", "_ContinuationEvent")
   @js.native
-  val ContinuationEvent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ContinuationEvent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

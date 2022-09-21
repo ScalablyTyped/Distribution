@@ -1,7 +1,7 @@
 
 # Scala.js typings for axios-case-converter
 
-Typings are for version 0.3
+Typings are for version 0.9.0
 
 ## Library description:
 Axios transformer/interceptor that converts snake_case/camelCase
@@ -10,10 +10,10 @@ Axios transformer/interceptor that converts snake_case/camelCase
 | ------------------ | :-------------: |
 | Full name          | axios-case-converter |
 | Keywords           | axios, interceptor, snake, camel, case, convert |
-| # releases         | 8 |
-| # dependents       | 12 |
-| # downloads        | 311882 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 114122.33333333333 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/mpyw/axios-interceptor-change-case#readme)
@@ -24,7 +24,7 @@ Axios transformer/interceptor that converts snake_case/camelCase
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

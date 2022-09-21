@@ -11,9 +11,9 @@ Health check plugin for SocketCluster.
 | Full name          | sc-framework-health-check |
 | Keywords           | socketcluster, health, check |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 57198 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1504.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/sc-framework-health-check)

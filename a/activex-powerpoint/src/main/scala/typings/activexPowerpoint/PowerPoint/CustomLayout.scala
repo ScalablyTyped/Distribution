@@ -44,7 +44,7 @@ trait CustomLayout extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.CustomLayout_typekey")
   var PowerPointDotCustomLayout_typekey: CustomLayout
@@ -85,7 +85,7 @@ object CustomLayout {
     MatchingName: String,
     MoveTo: Double => Unit,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotCustomLayout_typekey: CustomLayout,
     Preserved: MsoTriState,
     Select: () => Unit,
@@ -136,7 +136,7 @@ object CustomLayout {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotCustomLayout_typekey(value: CustomLayout): Self = StObject.set(x, "PowerPoint.CustomLayout_typekey", value.asInstanceOf[js.Any])
     

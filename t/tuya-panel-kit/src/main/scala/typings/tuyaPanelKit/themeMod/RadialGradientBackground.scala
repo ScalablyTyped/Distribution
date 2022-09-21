@@ -8,18 +8,88 @@ trait RadialGradientBackground
   extends StObject
      with _BackgroundProps {
   
+  /**
+    * @language zh-CN
+    * @description 最外侧圆的x轴坐标点
+    * @defaultValue '50%'
+    */
+  /**
+    * @language en-US
+    * @description The x-axis coordinate point of the outermost circle
+    * @defaultValue '50%'
+    */
   var cx: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最外侧圆的y轴坐标点
+    * @defaultValue '50%'
+    */
+  /**
+    * @language en-US
+    * @description The y-axis coordinate point of the outermost circle
+    * @defaultValue '50%'
+    */
   var cy: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最内侧圆的x轴坐标点(渐变中心点)
+    * @defaultValue '50%'
+    */
+  /**
+    * @language en-US
+    * @description The x-axis coordinate point of the innermost circle (gradient center point)
+    * @defaultValue '50%'
+    */
   var fx: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最内侧圆的y轴坐标点(渐变中心点)
+    * @defaultValue '50%'
+    */
+  /**
+    * @language en-US
+    * @description The y-axis coordinate point of the innermost circle (gradient center point)
+    * @defaultValue '50%'
+    */
   var fy: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最内侧圆水平方向的半径(渐变长度)
+    * @defaultValue '50%'
+    */
+  /**
+    * @language en-US
+    * @description The horizontal radius of the innermost circle (gradient length)
+    * @defaultValue '50%'
+    */
   var rx: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最内侧圆垂直方向的半径(渐变高度)
+    * @defaultValue '50%'
+    */
+  /**
+    * @language en-US
+    * @description The vertical radius of the innermost circle (gradient height)
+    * @defaultValue '50%'
+    */
   var ry: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 渐变梯度停点
+    * @defaultValue [{ offset: '0%', stopColor: '#ff0', stopOpacity: '1' }, { offset: '100%', stopColor: '#00f', stopOpacity: '1' }]
+    */
+  /**
+    * @language en-US
+    * @description The stop point of gradient
+    * @defaultValue [{ offset: '0%', stopColor: '#ff0', stopOpacity: '1' }, { offset: '100%', stopColor: '#00f', stopOpacity: '1' }]
+    */
   var stops: js.UndefOr[js.Array[StopsProps]] = js.undefined
 }
 object RadialGradientBackground {
@@ -59,6 +129,6 @@ object RadialGradientBackground {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: StopsProps*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: StopsProps*): Self = StObject.set(x, "stops", js.Array(value*))
   }
 }

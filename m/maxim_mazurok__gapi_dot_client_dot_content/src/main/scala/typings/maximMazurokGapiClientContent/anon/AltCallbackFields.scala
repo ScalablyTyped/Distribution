@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersCreateTestOrderRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.RequestReviewFreeListingsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait AltCallbackFields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account that should manage the order. This cannot be a multi-client account. */
+  /** Required. The ID of the account. */
   var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait AltCallbackFields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrdersCreateTestOrderRequest
+  var resource: RequestReviewFreeListingsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait AltCallbackFields extends StObject {
 }
 object AltCallbackFields {
   
-  inline def apply(merchantId: String, resource: OrdersCreateTestOrderRequest): AltCallbackFields = {
+  inline def apply(merchantId: String, resource: RequestReviewFreeListingsRequest): AltCallbackFields = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallbackFields]
   }
@@ -94,7 +94,7 @@ object AltCallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrdersCreateTestOrderRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: RequestReviewFreeListingsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

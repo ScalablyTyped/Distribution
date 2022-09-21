@@ -10,10 +10,10 @@ object formatIndentDecreaseMod {
   
   @JSImport("material-ui/svg-icons/editor/format-indent-decrease", JSImport.Default)
   @js.native
-  class default () extends EditorFormatIndentDecrease
+  open class default () extends EditorFormatIndentDecrease
   
   @JSImport("material-ui/svg-icons/editor/format-indent-decrease", "EditorFormatIndentDecrease")
   @js.native
-  class EditorFormatIndentDecrease ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatIndentDecrease ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

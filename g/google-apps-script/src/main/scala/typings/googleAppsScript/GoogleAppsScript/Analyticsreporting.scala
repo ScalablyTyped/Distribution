@@ -321,7 +321,7 @@ object Analyticsreporting {
         
         inline def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
         
-        inline def setCustomDimensionVarargs(value: CustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
+        inline def setCustomDimensionVarargs(value: CustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value*))
         
         inline def setEcommerce(value: EcommerceData): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
         
@@ -411,7 +411,7 @@ object Analyticsreporting {
         
         inline def setCohortsUndefined: Self = StObject.set(x, "cohorts", js.undefined)
         
-        inline def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value :_*))
+        inline def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value*))
         
         inline def setLifetimeValue(value: Boolean): Self = StObject.set(x, "lifetimeValue", value.asInstanceOf[js.Any])
         
@@ -438,7 +438,7 @@ object Analyticsreporting {
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setMetricHeader(value: MetricHeader): Self = StObject.set(x, "metricHeader", value.asInstanceOf[js.Any])
         
@@ -515,13 +515,13 @@ object Analyticsreporting {
         
         inline def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
         
-        inline def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
+        inline def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value*))
         
         inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
       }
     }
     
@@ -544,7 +544,7 @@ object Analyticsreporting {
         
         inline def setHistogramBucketsUndefined: Self = StObject.set(x, "histogramBuckets", js.undefined)
         
-        inline def setHistogramBucketsVarargs(value: String*): Self = StObject.set(x, "histogramBuckets", js.Array(value :_*))
+        inline def setHistogramBucketsVarargs(value: String*): Self = StObject.set(x, "histogramBuckets", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -585,7 +585,7 @@ object Analyticsreporting {
         
         inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
         
-        inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+        inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value*))
         
         inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
         
@@ -616,7 +616,7 @@ object Analyticsreporting {
         
         inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
         
-        inline def setFiltersVarargs(value: DimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+        inline def setFiltersVarargs(value: DimensionFilter*): Self = StObject.set(x, "filters", js.Array(value*))
         
         inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
@@ -686,7 +686,7 @@ object Analyticsreporting {
         
         inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
         
-        inline def setProductsVarargs(value: ProductData*): Self = StObject.set(x, "products", js.Array(value :_*))
+        inline def setProductsVarargs(value: ProductData*): Self = StObject.set(x, "products", js.Array(value*))
         
         inline def setTransaction(value: TransactionData): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
         
@@ -756,7 +756,7 @@ object Analyticsreporting {
         
         inline def setReportRequestsUndefined: Self = StObject.set(x, "reportRequests", js.undefined)
         
-        inline def setReportRequestsVarargs(value: ReportRequest*): Self = StObject.set(x, "reportRequests", js.Array(value :_*))
+        inline def setReportRequestsVarargs(value: ReportRequest*): Self = StObject.set(x, "reportRequests", js.Array(value*))
         
         inline def setUseResourceQuotas(value: Boolean): Self = StObject.set(x, "useResourceQuotas", value.asInstanceOf[js.Any])
         
@@ -789,7 +789,7 @@ object Analyticsreporting {
         
         inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
         
-        inline def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value :_*))
+        inline def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value*))
         
         inline def setResourceQuotasRemaining(value: ResourceQuotasRemaining): Self = StObject.set(x, "resourceQuotasRemaining", value.asInstanceOf[js.Any])
         
@@ -875,7 +875,7 @@ object Analyticsreporting {
         
         inline def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
         
-        inline def setGoalsVarargs(value: GoalData*): Self = StObject.set(x, "goals", js.Array(value :_*))
+        inline def setGoalsVarargs(value: GoalData*): Self = StObject.set(x, "goals", js.Array(value*))
       }
     }
     
@@ -966,7 +966,7 @@ object Analyticsreporting {
         
         inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
         
-        inline def setFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+        inline def setFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "filters", js.Array(value*))
         
         inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
@@ -993,13 +993,13 @@ object Analyticsreporting {
         
         inline def setMetricHeaderEntriesUndefined: Self = StObject.set(x, "metricHeaderEntries", js.undefined)
         
-        inline def setMetricHeaderEntriesVarargs(value: MetricHeaderEntry*): Self = StObject.set(x, "metricHeaderEntries", js.Array(value :_*))
+        inline def setMetricHeaderEntriesVarargs(value: MetricHeaderEntry*): Self = StObject.set(x, "metricHeaderEntries", js.Array(value*))
         
         inline def setPivotHeaders(value: js.Array[PivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
         
         inline def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
         
-        inline def setPivotHeadersVarargs(value: PivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
+        inline def setPivotHeadersVarargs(value: PivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value*))
       }
     }
     
@@ -1045,7 +1045,7 @@ object Analyticsreporting {
         
         inline def setSegmentFilterClausesUndefined: Self = StObject.set(x, "segmentFilterClauses", js.undefined)
         
-        inline def setSegmentFilterClausesVarargs(value: SegmentFilterClause*): Self = StObject.set(x, "segmentFilterClauses", js.Array(value :_*))
+        inline def setSegmentFilterClausesVarargs(value: SegmentFilterClause*): Self = StObject.set(x, "segmentFilterClauses", js.Array(value*))
       }
     }
     
@@ -1130,13 +1130,13 @@ object Analyticsreporting {
         
         inline def setDimensionFilterClausesUndefined: Self = StObject.set(x, "dimensionFilterClauses", js.undefined)
         
-        inline def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value :_*))
+        inline def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value*))
         
         inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setMaxGroupCount(value: Double): Self = StObject.set(x, "maxGroupCount", value.asInstanceOf[js.Any])
         
@@ -1146,7 +1146,7 @@ object Analyticsreporting {
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
         
         inline def setStartGroup(value: Double): Self = StObject.set(x, "startGroup", value.asInstanceOf[js.Any])
         
@@ -1173,7 +1173,7 @@ object Analyticsreporting {
         
         inline def setPivotHeaderEntriesUndefined: Self = StObject.set(x, "pivotHeaderEntries", js.undefined)
         
-        inline def setPivotHeaderEntriesVarargs(value: PivotHeaderEntry*): Self = StObject.set(x, "pivotHeaderEntries", js.Array(value :_*))
+        inline def setPivotHeaderEntriesVarargs(value: PivotHeaderEntry*): Self = StObject.set(x, "pivotHeaderEntries", js.Array(value*))
         
         inline def setTotalPivotGroupsCount(value: Double): Self = StObject.set(x, "totalPivotGroupsCount", value.asInstanceOf[js.Any])
         
@@ -1202,13 +1202,13 @@ object Analyticsreporting {
         
         inline def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
         
-        inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
+        inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value*))
         
         inline def setDimensionValues(value: js.Array[String]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
         
         inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
         
-        inline def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+        inline def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value*))
         
         inline def setMetric(value: MetricHeaderEntry): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
         
@@ -1233,7 +1233,7 @@ object Analyticsreporting {
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
       }
     }
     
@@ -1346,13 +1346,13 @@ object Analyticsreporting {
         
         inline def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
         
-        inline def setMaximumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "maximums", js.Array(value :_*))
+        inline def setMaximumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "maximums", js.Array(value*))
         
         inline def setMinimums(value: js.Array[DateRangeValues]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
         
         inline def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
         
-        inline def setMinimumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "minimums", js.Array(value :_*))
+        inline def setMinimumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "minimums", js.Array(value*))
         
         inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
         
@@ -1362,25 +1362,25 @@ object Analyticsreporting {
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: ReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: ReportRow*): Self = StObject.set(x, "rows", js.Array(value*))
         
         inline def setSamplesReadCounts(value: js.Array[String]): Self = StObject.set(x, "samplesReadCounts", value.asInstanceOf[js.Any])
         
         inline def setSamplesReadCountsUndefined: Self = StObject.set(x, "samplesReadCounts", js.undefined)
         
-        inline def setSamplesReadCountsVarargs(value: String*): Self = StObject.set(x, "samplesReadCounts", js.Array(value :_*))
+        inline def setSamplesReadCountsVarargs(value: String*): Self = StObject.set(x, "samplesReadCounts", js.Array(value*))
         
         inline def setSamplingSpaceSizes(value: js.Array[String]): Self = StObject.set(x, "samplingSpaceSizes", value.asInstanceOf[js.Any])
         
         inline def setSamplingSpaceSizesUndefined: Self = StObject.set(x, "samplingSpaceSizes", js.undefined)
         
-        inline def setSamplingSpaceSizesVarargs(value: String*): Self = StObject.set(x, "samplingSpaceSizes", js.Array(value :_*))
+        inline def setSamplingSpaceSizesVarargs(value: String*): Self = StObject.set(x, "samplingSpaceSizes", js.Array(value*))
         
         inline def setTotals(value: js.Array[DateRangeValues]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
         
         inline def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
         
-        inline def setTotalsVarargs(value: DateRangeValues*): Self = StObject.set(x, "totals", js.Array(value :_*))
+        inline def setTotalsVarargs(value: DateRangeValues*): Self = StObject.set(x, "totals", js.Array(value*))
       }
     }
     
@@ -1437,19 +1437,19 @@ object Analyticsreporting {
         
         inline def setDateRangesUndefined: Self = StObject.set(x, "dateRanges", js.undefined)
         
-        inline def setDateRangesVarargs(value: DateRange*): Self = StObject.set(x, "dateRanges", js.Array(value :_*))
+        inline def setDateRangesVarargs(value: DateRange*): Self = StObject.set(x, "dateRanges", js.Array(value*))
         
         inline def setDimensionFilterClauses(value: js.Array[DimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
         
         inline def setDimensionFilterClausesUndefined: Self = StObject.set(x, "dimensionFilterClauses", js.undefined)
         
-        inline def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value :_*))
+        inline def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value*))
         
         inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setFiltersExpression(value: String): Self = StObject.set(x, "filtersExpression", value.asInstanceOf[js.Any])
         
@@ -1471,19 +1471,19 @@ object Analyticsreporting {
         
         inline def setMetricFilterClausesUndefined: Self = StObject.set(x, "metricFilterClauses", js.undefined)
         
-        inline def setMetricFilterClausesVarargs(value: MetricFilterClause*): Self = StObject.set(x, "metricFilterClauses", js.Array(value :_*))
+        inline def setMetricFilterClausesVarargs(value: MetricFilterClause*): Self = StObject.set(x, "metricFilterClauses", js.Array(value*))
         
         inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
         
         inline def setOrderBys(value: js.Array[OrderBy]): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
         
         inline def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
         
-        inline def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value :_*))
+        inline def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value*))
         
         inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
@@ -1497,7 +1497,7 @@ object Analyticsreporting {
         
         inline def setPivotsUndefined: Self = StObject.set(x, "pivots", js.undefined)
         
-        inline def setPivotsVarargs(value: Pivot*): Self = StObject.set(x, "pivots", js.Array(value :_*))
+        inline def setPivotsVarargs(value: Pivot*): Self = StObject.set(x, "pivots", js.Array(value*))
         
         inline def setSamplingLevel(value: String): Self = StObject.set(x, "samplingLevel", value.asInstanceOf[js.Any])
         
@@ -1507,7 +1507,7 @@ object Analyticsreporting {
         
         inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
         
-        inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+        inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value*))
         
         inline def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
         
@@ -1534,13 +1534,13 @@ object Analyticsreporting {
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setMetrics(value: js.Array[DateRangeValues]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: DateRangeValues*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: DateRangeValues*): Self = StObject.set(x, "metrics", js.Array(value*))
       }
     }
     
@@ -1633,7 +1633,7 @@ object Analyticsreporting {
         
         inline def setActivityTypesUndefined: Self = StObject.set(x, "activityTypes", js.undefined)
         
-        inline def setActivityTypesVarargs(value: String*): Self = StObject.set(x, "activityTypes", js.Array(value :_*))
+        inline def setActivityTypesVarargs(value: String*): Self = StObject.set(x, "activityTypes", js.Array(value*))
         
         inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
         
@@ -1688,7 +1688,7 @@ object Analyticsreporting {
         
         inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
         
-        inline def setSessionsVarargs(value: UserActivitySession*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+        inline def setSessionsVarargs(value: UserActivitySession*): Self = StObject.set(x, "sessions", js.Array(value*))
         
         inline def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
         
@@ -1738,7 +1738,7 @@ object Analyticsreporting {
         
         inline def setSegmentFiltersUndefined: Self = StObject.set(x, "segmentFilters", js.undefined)
         
-        inline def setSegmentFiltersVarargs(value: SegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value :_*))
+        inline def setSegmentFiltersVarargs(value: SegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value*))
       }
     }
     
@@ -1777,7 +1777,7 @@ object Analyticsreporting {
         
         inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
         
-        inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+        inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value*))
         
         inline def setMaxComparisonValue(value: String): Self = StObject.set(x, "maxComparisonValue", value.asInstanceOf[js.Any])
         
@@ -1921,7 +1921,7 @@ object Analyticsreporting {
         
         inline def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
         
-        inline def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
+        inline def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value*))
       }
     }
     
@@ -1948,7 +1948,7 @@ object Analyticsreporting {
         
         inline def setSegmentSequenceStepsUndefined: Self = StObject.set(x, "segmentSequenceSteps", js.undefined)
         
-        inline def setSegmentSequenceStepsVarargs(value: SegmentSequenceStep*): Self = StObject.set(x, "segmentSequenceSteps", js.Array(value :_*))
+        inline def setSegmentSequenceStepsVarargs(value: SegmentSequenceStep*): Self = StObject.set(x, "segmentSequenceSteps", js.Array(value*))
       }
     }
     
@@ -1969,7 +1969,7 @@ object Analyticsreporting {
         
         inline def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
         
-        inline def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
+        inline def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value*))
       }
     }
     
@@ -2062,7 +2062,7 @@ object Analyticsreporting {
         
         inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
         
-        inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+        inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value*))
         
         inline def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
         

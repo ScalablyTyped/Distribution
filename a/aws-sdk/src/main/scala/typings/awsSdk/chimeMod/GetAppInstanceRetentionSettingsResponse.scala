@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAppInstanceRetentionSettingsResponse extends StObject {
   
   /**
-    * The retention settings for the app instance.
+    * The retention settings for the AppInstance.
     */
   var AppInstanceRetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.AppInstanceRetentionSettings] = js.undefined
   
   /**
     * The timestamp representing the time at which the specified items are retained, in Epoch Seconds.
     */
-  var InitiateDeletionTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var InitiateDeletionTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object GetAppInstanceRetentionSettingsResponse {
   
@@ -29,7 +29,7 @@ object GetAppInstanceRetentionSettingsResponse {
     
     inline def setAppInstanceRetentionSettingsUndefined: Self = StObject.set(x, "AppInstanceRetentionSettings", js.undefined)
     
-    inline def setInitiateDeletionTimestamp(value: Timestamp): Self = StObject.set(x, "InitiateDeletionTimestamp", value.asInstanceOf[js.Any])
+    inline def setInitiateDeletionTimestamp(value: js.Date): Self = StObject.set(x, "InitiateDeletionTimestamp", value.asInstanceOf[js.Any])
     
     inline def setInitiateDeletionTimestampUndefined: Self = StObject.set(x, "InitiateDeletionTimestamp", js.undefined)
   }

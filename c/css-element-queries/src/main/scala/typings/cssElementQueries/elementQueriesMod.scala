@@ -8,7 +8,7 @@ object elementQueriesMod {
   
   @JSImport("css-element-queries/src/ElementQueries", JSImport.Default)
   @js.native
-  class default () extends ElementQueries
+  open class default () extends ElementQueries
   /* static members */
   object default {
     
@@ -30,7 +30,7 @@ object elementQueriesMod {
   
   @JSImport("css-element-queries/src/ElementQueries", "ElementQueries")
   @js.native
-  class ElementQueries () extends StObject
+  open class ElementQueries () extends StObject
   /* static members */
   object ElementQueries {
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for upper-case
 
-Typings are for version 2.0.1
+Typings are for version 2.0.2
 
 ## Library description:
 Transforms the string to upper case
@@ -10,10 +10,10 @@ Transforms the string to upper case
 | ------------------ | :-------------: |
 | Full name          | upper-case |
 | Keywords           | upper, case, upcase, locale, convert, transform |
-| # releases         | 4 |
-| # dependents       | 74 |
-| # downloads        | 280420892 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.7721741666666664E7 |
+| # stars            | 1768.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/upper-case#readme)

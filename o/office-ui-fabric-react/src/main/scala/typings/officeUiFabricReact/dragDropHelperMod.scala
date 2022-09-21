@@ -15,64 +15,64 @@ object dragDropHelperMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/dragdrop/DragDropHelper", "DragDropHelper")
   @js.native
-  class DragDropHelper protected ()
+  open class DragDropHelper protected ()
     extends StObject
        with IDragDropHelper {
     def this(params: IDragDropHelperParams) = this()
     
-    /* private */ var _activeTargets: js.Any = js.native
+    /* private */ var _activeTargets: Any = js.native
     
-    /* private */ var _dragData: js.Any = js.native
+    /* private */ var _dragData: Any = js.native
     
-    /* private */ var _dragEnterCounts: js.Any = js.native
+    /* private */ var _dragEnterCounts: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _initialized: js.Any = js.native
+    /* private */ var _initialized: Any = js.native
     
     /**
       * determine whether the child target is a descendant of the parent
       */
-    /* private */ var _isChild: js.Any = js.native
+    /* private */ var _isChild: Any = js.native
     
-    /* private */ var _isDraggable: js.Any = js.native
+    /* private */ var _isDraggable: Any = js.native
     
-    /* private */ var _isDragging: js.Any = js.native
+    /* private */ var _isDragging: Any = js.native
     
-    /* private */ var _isDroppable: js.Any = js.native
+    /* private */ var _isDroppable: Any = js.native
     
-    /* private */ var _lastId: js.Any = js.native
+    /* private */ var _lastId: Any = js.native
     
     /**
       * clear drag data when mouse up outside of the document
       */
-    /* private */ var _onDocumentMouseUp: js.Any = js.native
+    /* private */ var _onDocumentMouseUp: Any = js.native
     
-    /* private */ var _onDragEnd: js.Any = js.native
+    /* private */ var _onDragEnd: Any = js.native
     
     /**
       * when mouse down on a draggable item, we start to track dragdata.
       */
-    /* private */ var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: Any = js.native
     
     /**
       * when mouse leave a target while dragging some items, fire dragleave to the target
       */
-    /* private */ var _onMouseLeave: js.Any = js.native
+    /* private */ var _onMouseLeave: Any = js.native
     
     /**
       * when mouse move over a new drop target while dragging some items,
       * fire dragleave on the old target and fire dragenter to the new target
       * The target will handle style change on dragenter and dragleave events.
       */
-    /* private */ var _onMouseMove: js.Any = js.native
+    /* private */ var _onMouseMove: Any = js.native
     
     /**
       * clear drag data when mouse up on body
       */
-    /* private */ var _onMouseUp: js.Any = js.native
+    /* private */ var _onMouseUp: Any = js.native
     
-    /* private */ var _selection: js.Any = js.native
+    /* private */ var _selection: Any = js.native
     
     /**
       * Dispose of listeners bound to instance of helper.

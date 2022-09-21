@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "SVGRenderer")
 @js.native
-class SVGRenderer protected () extends StObject {
+open class SVGRenderer protected () extends StObject {
   /**
     * Allows direct access to the Highcharts rendering layer in order to draw
     * primitive shapes like circles, rectangles, paths or text directly on a
@@ -225,13 +225,13 @@ class SVGRenderer protected () extends StObject {
     * @param callback
     *        The function to execute on button click or touch.
     *
-    * @param normalState
+    * @param theme
     *        SVG attributes for the normal state.
     *
     * @param hoverState
     *        SVG attributes for the hover state.
     *
-    * @param pressedState
+    * @param selectState
     *        SVG attributes for the pressed state.
     *
     * @param disabledState
@@ -241,7 +241,7 @@ class SVGRenderer protected () extends StObject {
     *        The shape type.
     *
     * @param useHTML
-    *        Wether to use HTML to render the label.
+    *        Whether to use HTML to render the label.
     *
     * @return The button element.
     */
@@ -250,9 +250,9 @@ class SVGRenderer protected () extends StObject {
     x: Double,
     y: Double,
     callback: EventCallbackFunction[SVGElement],
-    normalState: js.UndefOr[SVGAttributes],
+    theme: js.UndefOr[SVGAttributes],
     hoverState: js.UndefOr[SVGAttributes],
-    pressedState: js.UndefOr[SVGAttributes],
+    selectState: js.UndefOr[SVGAttributes],
     disabledState: js.UndefOr[SVGAttributes],
     shape: js.UndefOr[SymbolKeyValue],
     useHTML: js.UndefOr[Boolean]
@@ -326,6 +326,7 @@ class SVGRenderer protected () extends StObject {
     *
     * @return The original points array, but modified to render crisply.
     */
+  def crispLine(points: SVGPathArray, width: Double): SVGPathArray = js.native
   def crispLine(points: SVGPathArray, width: Double, roundingFunction: String): SVGPathArray = js.native
   
   /**
@@ -340,7 +341,7 @@ class SVGRenderer protected () extends StObject {
     *
     * @return The inserted node.
     */
-  def definition(`def`: SVGDefinitionObject): SVGElement = js.native
+  def definition(`def`: ASTNode): SVGElement = js.native
   
   /**
     * A pointer to the `defs` node of the root SVG.
@@ -349,6 +350,8 @@ class SVGRenderer protected () extends StObject {
   
   /**
     * Destroys the renderer and its allocated members.
+    *
+    * @return Pass through value.
     */
   def destroy(): Null = js.native
   
@@ -404,14 +407,15 @@ class SVGRenderer protected () extends StObject {
   def g(name: String): SVGElement = js.native
   
   /**
-    * Returns white for dark colors and black for bright colors.
+    * Returns white for dark colors and black for bright colors, based on W3C's
+    * definition of Relative luminance.
     *
-    * @param rgba
+    * @param color
     *        The color to get the contrast for.
     *
     * @return The contrast color, either `#000000` or `#FFFFFF`.
     */
-  def getContrast(rgba: ColorString): ColorString = js.native
+  def getContrast(color: ColorString): ColorString = js.native
   
   /**
     * Display an image.
@@ -648,7 +652,7 @@ class SVGRenderer protected () extends StObject {
     *        coordinates it should be pinned to.
     *
     * @param useHTML
-    *        Wether to use HTML to render the label.
+    *        Whether to use HTML to render the label.
     *
     * @param baseline
     *        Whether to position the label relative to the text baseline, like
@@ -771,6 +775,8 @@ class SVGRenderer protected () extends StObject {
     *
     * @param options
     *        Additional options, depending on the actual symbol drawn.
+    *
+    * @return SVG symbol.
     */
   def symbol(symbol: String): SVGElement = js.native
   def symbol(symbol: String, x: Double): SVGElement = js.native

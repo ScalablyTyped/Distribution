@@ -12,9 +12,14 @@ trait Connection extends StObject {
   var awsDevice: js.UndefOr[AwsDevice] = js.undefined
   
   /**
-    * The Direct Connect endpoint on which the physical connection terminates.
+    * The Direct Connect endpoint that terminates the physical connection.
     */
   var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.undefined
+  
+  /**
+    * The Direct Connect endpoint that terminates the logical connection. This device might be different than the device that terminates the physical connection.
+    */
+  var awsLogicalDeviceId: js.UndefOr[AwsLogicalDeviceId] = js.undefined
   
   /**
     * The bandwidth of the connection.
@@ -37,6 +42,11 @@ trait Connection extends StObject {
   var connectionState: js.UndefOr[ConnectionState] = js.undefined
   
   /**
+    * The MAC Security (MACsec) connection encryption mode. The valid values are no_encrypt, should_encrypt, and must_encrypt.
+    */
+  var encryptionMode: js.UndefOr[EncryptionMode] = js.undefined
+  
+  /**
     * Indicates whether the connection supports a secondary BGP peer in the same address family (IPv4/IPv6).
     */
   var hasLogicalRedundancy: js.UndefOr[HasLogicalRedundancy] = js.undefined
@@ -54,7 +64,7 @@ trait Connection extends StObject {
   /**
     * The time of the most recent call to DescribeLoa for this connection.
     */
-  var loaIssueTime: js.UndefOr[LoaIssueTime] = js.undefined
+  var loaIssueTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The location of the connection.
@@ -62,14 +72,29 @@ trait Connection extends StObject {
   var location: js.UndefOr[LocationCode] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the connection.
+    * Indicates whether the connection supports MAC Security (MACsec).
+    */
+  var macSecCapable: js.UndefOr[MacSecCapable] = js.undefined
+  
+  /**
+    * The MAC Security (MACsec) security keys associated with the connection.
+    */
+  var macSecKeys: js.UndefOr[MacSecKeyList] = js.undefined
+  
+  /**
+    * The ID of the Amazon Web Services account that owns the connection.
     */
   var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
-    * The name of the AWS Direct Connect service provider associated with the connection.
+    * The name of the Direct Connect service provider associated with the connection.
     */
   var partnerName: js.UndefOr[PartnerName] = js.undefined
+  
+  /**
+    * The MAC Security (MACsec) port link status of the connection. The valid values are Encryption Up, which means that there is an active Connection Key Name, or Encryption Down.
+    */
+  var portEncryptionStatus: js.UndefOr[PortEncryptionStatus] = js.undefined
   
   /**
     * The name of the service provider associated with the connection.
@@ -77,7 +102,7 @@ trait Connection extends StObject {
   var providerName: js.UndefOr[ProviderName] = js.undefined
   
   /**
-    * The AWS Region where the connection is located.
+    * The Amazon Web Services Region where the connection is located.
     */
   var region: js.UndefOr[Region] = js.undefined
   
@@ -108,6 +133,10 @@ object Connection {
     
     inline def setAwsDeviceV2Undefined: Self = StObject.set(x, "awsDeviceV2", js.undefined)
     
+    inline def setAwsLogicalDeviceId(value: AwsLogicalDeviceId): Self = StObject.set(x, "awsLogicalDeviceId", value.asInstanceOf[js.Any])
+    
+    inline def setAwsLogicalDeviceIdUndefined: Self = StObject.set(x, "awsLogicalDeviceId", js.undefined)
+    
     inline def setBandwidth(value: Bandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
@@ -124,6 +153,10 @@ object Connection {
     
     inline def setConnectionStateUndefined: Self = StObject.set(x, "connectionState", js.undefined)
     
+    inline def setEncryptionMode(value: EncryptionMode): Self = StObject.set(x, "encryptionMode", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionModeUndefined: Self = StObject.set(x, "encryptionMode", js.undefined)
+    
     inline def setHasLogicalRedundancy(value: HasLogicalRedundancy): Self = StObject.set(x, "hasLogicalRedundancy", value.asInstanceOf[js.Any])
     
     inline def setHasLogicalRedundancyUndefined: Self = StObject.set(x, "hasLogicalRedundancy", js.undefined)
@@ -136,13 +169,23 @@ object Connection {
     
     inline def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
     
-    inline def setLoaIssueTime(value: LoaIssueTime): Self = StObject.set(x, "loaIssueTime", value.asInstanceOf[js.Any])
+    inline def setLoaIssueTime(value: js.Date): Self = StObject.set(x, "loaIssueTime", value.asInstanceOf[js.Any])
     
     inline def setLoaIssueTimeUndefined: Self = StObject.set(x, "loaIssueTime", js.undefined)
     
     inline def setLocation(value: LocationCode): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setMacSecCapable(value: MacSecCapable): Self = StObject.set(x, "macSecCapable", value.asInstanceOf[js.Any])
+    
+    inline def setMacSecCapableUndefined: Self = StObject.set(x, "macSecCapable", js.undefined)
+    
+    inline def setMacSecKeys(value: MacSecKeyList): Self = StObject.set(x, "macSecKeys", value.asInstanceOf[js.Any])
+    
+    inline def setMacSecKeysUndefined: Self = StObject.set(x, "macSecKeys", js.undefined)
+    
+    inline def setMacSecKeysVarargs(value: MacSecKey*): Self = StObject.set(x, "macSecKeys", js.Array(value*))
     
     inline def setOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "ownerAccount", value.asInstanceOf[js.Any])
     
@@ -151,6 +194,10 @@ object Connection {
     inline def setPartnerName(value: PartnerName): Self = StObject.set(x, "partnerName", value.asInstanceOf[js.Any])
     
     inline def setPartnerNameUndefined: Self = StObject.set(x, "partnerName", js.undefined)
+    
+    inline def setPortEncryptionStatus(value: PortEncryptionStatus): Self = StObject.set(x, "portEncryptionStatus", value.asInstanceOf[js.Any])
+    
+    inline def setPortEncryptionStatusUndefined: Self = StObject.set(x, "portEncryptionStatus", js.undefined)
     
     inline def setProviderName(value: ProviderName): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
@@ -164,7 +211,7 @@ object Connection {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVlan(value: VLAN): Self = StObject.set(x, "vlan", value.asInstanceOf[js.Any])
     

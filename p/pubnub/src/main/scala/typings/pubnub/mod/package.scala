@@ -1,77 +1,61 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.pubnub.anon.AuthKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /* static member */
-inline def CATEGORIES_ : typings.pubnub.mod.Categories = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CATEGORIES").asInstanceOf[typings.pubnub.mod.Categories]
-inline def CATEGORIES__=(x: typings.pubnub.mod.Categories): scala.Unit = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].updateDynamic("CATEGORIES")(x.asInstanceOf[js.Any])
+inline def CATEGORIES_ : Categories = ^.asInstanceOf[js.Dynamic].selectDynamic("CATEGORIES").asInstanceOf[Categories]
+inline def CATEGORIES__=(x: Categories): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CATEGORIES")(x.asInstanceOf[js.Any])
 
 /* static member */
-inline def OPERATIONS_ : typings.pubnub.mod.Operations = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OPERATIONS").asInstanceOf[typings.pubnub.mod.Operations]
-inline def OPERATIONS__=(x: typings.pubnub.mod.Operations): scala.Unit = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].updateDynamic("OPERATIONS")(x.asInstanceOf[js.Any])
+inline def OPERATIONS_ : Operations = ^.asInstanceOf[js.Dynamic].selectDynamic("OPERATIONS").asInstanceOf[Operations]
+inline def OPERATIONS__=(x: Operations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPERATIONS")(x.asInstanceOf[js.Any])
 
 /* static member */
-inline def generateUUID(): java.lang.String = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateUUID")().asInstanceOf[java.lang.String]
+inline def generateUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUUID")().asInstanceOf[String]
 
 /* static member */
-inline def notificationPayload(title: java.lang.String, body: java.lang.String): typings.pubnub.mod.NotificationsPayload = (typings.pubnub.mod.^.asInstanceOf[js.Dynamic].applyDynamic("notificationPayload")(title.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.pubnub.mod.NotificationsPayload]
+inline def notificationPayload(title: String, body: String): NotificationsPayload = (^.asInstanceOf[js.Dynamic].applyDynamic("notificationPayload")(title.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[NotificationsPayload]
 
-type Callback[ResponseType] = js.Function2[
-/* status */ typings.pubnub.mod.PubnubStatus, 
-/* response */ ResponseType, 
-scala.Unit]
+type Callback[ResponseType] = js.Function2[/* status */ PubnubStatus, /* response */ ResponseType, Unit]
 
-type DeleteObjectResponse = typings.pubnub.mod.ObjectsResponse[scala.Null]
+type GetAllChannelMetadataResponse[Custom /* <: ObjectCustom */] = PagedObjectsResponse[ChannelMetadataObject[Custom]]
 
-type DeleteSpaceResponse = typings.pubnub.mod.ObjectsResponse[scala.Null]
+type GetAllUUIDMetadataResponse[Custom /* <: ObjectCustom */] = PagedObjectsResponse[UUIDMetadataObject[Custom]]
 
-type DeleteUserResponse = typings.pubnub.mod.ObjectsResponse[scala.Null]
+type GetChannelMetadataResponse[Custom /* <: ObjectCustom */] = ObjectsResponse[ChannelMetadataObject[Custom]]
 
-type GetAllChannelMetadataResponse[Custom /* <: typings.pubnub.mod.ObjectCustom */] = typings.pubnub.mod.PagedObjectsResponse[typings.pubnub.mod.ChannelMetadataObject[Custom]]
+type GetUUIDMetadataResponse[Custom /* <: ObjectCustom */] = ObjectsResponse[UUIDMetadataObject[Custom]]
 
-type GetAllUUIDMetadataResponse[Custom /* <: typings.pubnub.mod.ObjectCustom */] = typings.pubnub.mod.PagedObjectsResponse[typings.pubnub.mod.UUIDMetadataObject[Custom]]
+type ManageChannelMembersResponse[MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] = PagedObjectsResponse[UUIDMembershipObject[MembershipCustom, UUIDCustom]]
 
-type GetChannelMetadataResponse[Custom /* <: typings.pubnub.mod.ObjectCustom */] = typings.pubnub.mod.ObjectsResponse[typings.pubnub.mod.ChannelMetadataObject[Custom]]
-
-type GetMembersResponse = typings.pubnub.mod.PagedObjectsResponse[typings.pubnub.mod.ObjectData]
-
-type GetMembershipsResponse = typings.pubnub.mod.PagedObjectsResponse[typings.pubnub.mod.ObjectData]
-
-type GetSpaceResponse = typings.pubnub.mod.ObjectsResponse[typings.pubnub.mod.SpaceData]
-
-type GetSpacesResponse = typings.pubnub.mod.PagedObjectsResponse[typings.pubnub.mod.SpaceData]
-
-type GetUUIDMetadataResponse[Custom /* <: typings.pubnub.mod.ObjectCustom */] = typings.pubnub.mod.ObjectsResponse[typings.pubnub.mod.UUIDMetadataObject[Custom]]
-
-type GetUserResponse = typings.pubnub.mod.ObjectsResponse[typings.pubnub.mod.UserData]
-
-type GetUsersResponse = typings.pubnub.mod.ObjectsResponse[js.Array[typings.pubnub.mod.UserData]]
-
-type ManageChannelMembersResponse[MembershipCustom /* <: typings.pubnub.mod.ObjectCustom */, UUIDCustom /* <: typings.pubnub.mod.ObjectCustom */] = typings.pubnub.mod.PagedObjectsResponse[typings.pubnub.mod.UUIDMembershipObject[MembershipCustom, UUIDCustom]]
-
-type ManageMembershipsResponse[MembershipCustom /* <: typings.pubnub.mod.ObjectCustom */, ChannelCustom /* <: typings.pubnub.mod.ObjectCustom */] = typings.pubnub.mod.PagedObjectsResponse[typings.pubnub.mod.ChannelMembershipObject[MembershipCustom, ChannelCustom]]
+type ManageMembershipsResponse[MembershipCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */] = PagedObjectsResponse[ChannelMembershipObject[MembershipCustom, ChannelCustom]]
 
 // partial but everything can be null (even with strictNullChecks)
 type Nullable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof T ]:? T[P] | null}
-  */ typings.pubnub.pubnubStrings.Nullable & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.pubnub.pubnubStrings.Nullable & TopLevel[T]
 
 // Objects v2
 // Object
-type ObjectCustom = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
+type ObjectCustom = StringDictionary[String | Double | Boolean]
+
+type PubnubConfig = ID & AuthKey
 
 // PubnubData was renamed to MessageEvent, keep old name for backwards compatibility
-type PubnubData = typings.pubnub.mod.MessageEvent
+type PubnubData = MessageEvent
 
-type RemoveChannelMetadataResponse = typings.pubnub.mod.ObjectsResponse[js.Object]
+type RemoveChannelMetadataResponse = ObjectsResponse[js.Object]
 
-type RemoveUUIDMetadataResponse = typings.pubnub.mod.ObjectsResponse[js.Object]
+type RemoveUUIDMetadataResponse = ObjectsResponse[js.Object]
 
-type SetChannelMetadataResponse[Custom /* <: typings.pubnub.mod.ObjectCustom */] = typings.pubnub.mod.ObjectsResponse[typings.pubnub.mod.ChannelMetadataObject[Custom]]
+type SetChannelMetadataResponse[Custom /* <: ObjectCustom */] = ObjectsResponse[ChannelMetadataObject[Custom]]
 
-type SetUUIDMetadataResponse[Custom /* <: typings.pubnub.mod.ObjectCustom */] = typings.pubnub.mod.ObjectsResponse[typings.pubnub.mod.UUIDMetadataObject[Custom]]
+type SetUUIDMetadataResponse[Custom /* <: ObjectCustom */] = ObjectsResponse[UUIDMetadataObject[Custom]]
 
-type StatusCallback = js.Function1[/* status */ typings.pubnub.mod.PubnubStatus, scala.Unit]
+type StatusCallback = js.Function1[/* status */ PubnubStatus, Unit]

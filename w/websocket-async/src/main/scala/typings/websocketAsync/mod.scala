@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("websocket-async", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with WebSocketClient
   
@@ -22,7 +22,7 @@ object mod {
     
     var _receiveCallbacksQueue: js.Array[Reject] = js.native
     
-    var _receiveDataQueue: js.Array[js.Any] = js.native
+    var _receiveDataQueue: js.Array[Any] = js.native
     
     /**
       * Resets the receive arrays and close events, called in the constructor
@@ -72,12 +72,12 @@ object mod {
       * or rejects if disconnected.
       * @returns A promise that resolves with the data received.
       */
-    def receive(): js.Promise[js.Any] = js.native
+    def receive(): js.Promise[Any] = js.native
     
     /**
       * Send data through the websocket.
       * Must be connected. See {@link #connected}.
       */
-    def send(data: js.Any): Unit = js.native
+    def send(data: Any): Unit = js.native
   }
 }

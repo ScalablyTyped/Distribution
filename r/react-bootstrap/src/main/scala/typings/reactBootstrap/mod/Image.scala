@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Image")
 @js.native
-class Image ()
+open class Image ()
   extends typings.reactBootstrap.libMod.Image

@@ -16,7 +16,7 @@ trait BuildingBlockType extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.BuildingBlockType_typekey")
   var WordDotBuildingBlockType_typekey: BuildingBlockType
@@ -29,7 +29,7 @@ object BuildingBlockType {
     Creator: Double,
     Index: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     WordDotBuildingBlockType_typekey: BuildingBlockType
   ): BuildingBlockType = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Categories = Categories.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object BuildingBlockType {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotBuildingBlockType_typekey(value: BuildingBlockType): Self = StObject.set(x, "Word.BuildingBlockType_typekey", value.asInstanceOf[js.Any])
   }

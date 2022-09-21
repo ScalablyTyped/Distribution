@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait INavMeshParameters extends StObject {
   
   /**
+    * The size of the non-navigable border around the heightfield.
+    */
+  var borderSize: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The y-axis cell size to use for fields. [Limit: > 0] [Units: wu]
     */
   var ch: Double
@@ -34,7 +39,7 @@ trait INavMeshParameters extends StObject {
   var maxEdgeLen: Double
   
   /**
-    * The maximum distance a simplfied contour's border edges should deviate
+    * The maximum distance a simplified contour's border edges should deviate
     * the original raw contour. [Limit: >=0] [Units: vx]
     */
   var maxSimplificationError: Double
@@ -55,6 +60,13 @@ trait INavMeshParameters extends StObject {
     * The minimum number of cells allowed to form isolated island areas. [Limit: >=0] [Units: vx]
     */
   var minRegionArea: Double
+  
+  /**
+    * If using obstacles, the navmesh must be subdivided internaly by tiles.
+    * This member defines the tile cube side length in world units.
+    * If no obstacles are needed, leave it undefined or 0.
+    */
+  var tileSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum ledge height that is considered to still be traversable. [Limit: >=0] [Units: vx]
@@ -101,6 +113,10 @@ object INavMeshParameters {
   
   extension [Self <: INavMeshParameters](x: Self) {
     
+    inline def setBorderSize(value: Double): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
+    
+    inline def setBorderSizeUndefined: Self = StObject.set(x, "borderSize", js.undefined)
+    
     inline def setCh(value: Double): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     
     inline def setCs(value: Double): Self = StObject.set(x, "cs", value.asInstanceOf[js.Any])
@@ -118,6 +134,10 @@ object INavMeshParameters {
     inline def setMergeRegionArea(value: Double): Self = StObject.set(x, "mergeRegionArea", value.asInstanceOf[js.Any])
     
     inline def setMinRegionArea(value: Double): Self = StObject.set(x, "minRegionArea", value.asInstanceOf[js.Any])
+    
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
     inline def setWalkableClimb(value: Double): Self = StObject.set(x, "walkableClimb", value.asInstanceOf[js.Any])
     

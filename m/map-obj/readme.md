@@ -1,7 +1,7 @@
 
 # Scala.js typings for map-obj
 
-Typings are for version 4.1.0
+Typings are for version 5.0.2
 
 ## Library description:
 Map object keys and values into a new object
@@ -10,10 +10,10 @@ Map object keys and values into a new object
 | ------------------ | :-------------: |
 | Full name          | map-obj |
 | Keywords           | map, object, key, keys, value, values, iterate, iterator, rename, modify, deep, recurse, recursive |
-| # releases         | 4 |
-| # dependents       | 157 |
-| # downloads        | 652390870 |
-| # stars            | 4 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 8.8997403E7 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/map-obj#readme)

@@ -13,5 +13,4 @@ trait NativePointerValue
      with _Arm64CallArgument
      with _ArmCallArgument
      with _MipsCallArgument
-     with _NativeArgumentValue
      with _X86CallArgument

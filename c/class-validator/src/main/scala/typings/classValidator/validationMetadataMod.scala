@@ -10,13 +10,13 @@ object validationMetadataMod {
   
   @JSImport("class-validator/types/metadata/ValidationMetadata", "ValidationMetadata")
   @js.native
-  class ValidationMetadata protected () extends StObject {
+  open class ValidationMetadata protected () extends StObject {
     def this(args: ValidationMetadataArgs) = this()
     
     /**
       * Indicates if validation must be performed always, no matter of validation groups used.
       */
-    var always: Boolean = js.native
+    var always: js.UndefOr[Boolean] = js.native
     
     /**
       * Constraint class that performs validation. Used only for custom validations.
@@ -26,9 +26,9 @@ object validationMetadataMod {
     /**
       * Array of constraints of this validation.
       */
-    var constraints: js.Array[js.Any] = js.native
+    var constraints: js.Array[Any] = js.native
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[Any] = js.native
     
     /**
       * Specifies if validated value is an array and each of its item must be validated.
@@ -63,6 +63,6 @@ object validationMetadataMod {
     /**
       * Extra options specific to validation type.
       */
-    var validationTypeOptions: js.Any = js.native
+    var validationTypeOptions: Any = js.native
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 多边形
   * @param options 选项
   */
-class Polygon[ExtraData] ()
+open class Polygon[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.Polygon[ExtraData] {
   def this(options: Options[ExtraData]) = this()

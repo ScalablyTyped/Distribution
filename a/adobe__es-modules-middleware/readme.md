@@ -3,24 +3,6 @@
 
 Typings are for version 1.1
 
-## Library description:
-A Connect-style and Karma middleware for resolving ES-module imports and exports to node_modules
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @adobe/es-modules-middleware |
-| Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 8326 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://github.com/adobe/es-modules-middleware#readme)
-- [Bugs](https://github.com/adobe/es-modules-middleware/issues)
-- [Repository](https://github.com/adobe/es-modules-middleware)
-- [Npm](https://www.npmjs.com/package/%40adobe%2Fes-modules-middleware)
-    
 
 
 ## Note

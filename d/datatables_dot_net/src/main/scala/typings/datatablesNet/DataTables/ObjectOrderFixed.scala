@@ -11,14 +11,14 @@ trait ObjectOrderFixed extends StObject {
     * 0: Column index to order upon.
     * 1: Direction so order to apply ("asc" for ascending order or "desc" for descending order).
     */
-  var post: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var post: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Two-element array:
     * 0: Column index to order upon.
     * 1: Direction so order to apply ("asc" for ascending order or "desc" for descending order).
     */
-  var pre: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var pre: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object ObjectOrderFixed {
   
@@ -29,16 +29,16 @@ object ObjectOrderFixed {
   
   extension [Self <: ObjectOrderFixed](x: Self) {
     
-    inline def setPost(value: js.Array[js.Any]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: js.Array[Any]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    inline def setPostVarargs(value: js.Any*): Self = StObject.set(x, "post", js.Array(value :_*))
+    inline def setPostVarargs(value: Any*): Self = StObject.set(x, "post", js.Array(value*))
     
-    inline def setPre(value: js.Array[js.Any]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    inline def setPre(value: js.Array[Any]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
     inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
-    inline def setPreVarargs(value: js.Any*): Self = StObject.set(x, "pre", js.Array(value :_*))
+    inline def setPreVarargs(value: Any*): Self = StObject.set(x, "pre", js.Array(value*))
   }
 }

@@ -2,7 +2,6 @@ package typings.jqueryMaskPlugin
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,7 +95,7 @@ object jQueryMask {
       
       inline def setByPassKeysUndefined: Self = StObject.set(x, "byPassKeys", js.undefined)
       
-      inline def setByPassKeysVarargs(value: Double*): Self = StObject.set(x, "byPassKeys", js.Array(value :_*))
+      inline def setByPassKeysVarargs(value: Double*): Self = StObject.set(x, "byPassKeys", js.Array(value*))
       
       inline def setClearIfNotMatch(value: Boolean): Self = StObject.set(x, "clearIfNotMatch", value.asInstanceOf[js.Any])
       
@@ -168,7 +167,7 @@ object jQueryMask {
     
     var optional: js.UndefOr[Boolean] = js.undefined
     
-    var pattern: js.UndefOr[RegExp] = js.undefined
+    var pattern: js.UndefOr[js.RegExp] = js.undefined
     
     var recursive: js.UndefOr[Boolean] = js.undefined
   }
@@ -189,7 +188,7 @@ object jQueryMask {
       
       inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       

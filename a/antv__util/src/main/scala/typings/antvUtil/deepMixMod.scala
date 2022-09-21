@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deepMixMod {
   
-  @JSImport("@antv/util/lib/deep-mix", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/deep-mix", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(rst: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rst.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(rst: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(rst.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }

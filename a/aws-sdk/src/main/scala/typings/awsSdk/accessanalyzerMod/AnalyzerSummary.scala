@@ -14,7 +14,7 @@ trait AnalyzerSummary extends StObject {
   /**
     * A timestamp for the time at which the analyzer was created.
     */
-  var createdAt: Timestamp
+  var createdAt: js.Date
   
   /**
     * The resource that was most recently analyzed by the analyzer.
@@ -24,7 +24,7 @@ trait AnalyzerSummary extends StObject {
   /**
     * The time at which the most recently analyzed resource was analyzed.
     */
-  var lastResourceAnalyzedAt: js.UndefOr[Timestamp] = js.undefined
+  var lastResourceAnalyzedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the analyzer.
@@ -32,12 +32,12 @@ trait AnalyzerSummary extends StObject {
   var name: Name
   
   /**
-    * The status of the analyzer. An Active analyzer successfully monitors supported resources and generates new findings. The analyzer is Disabled when a user action, such as removing trusted access for IAM Access Analyzer from AWS Organizations, causes the analyzer to stop generating new findings. The status is Creating when the analyzer creation is in progress and Failed when the analyzer creation has failed. 
+    * The status of the analyzer. An Active analyzer successfully monitors supported resources and generates new findings. The analyzer is Disabled when a user action, such as removing trusted access for Identity and Access Management Access Analyzer from Organizations, causes the analyzer to stop generating new findings. The status is Creating when the analyzer creation is in progress and Failed when the analyzer creation has failed. 
     */
   var status: AnalyzerStatus
   
   /**
-    * The statusReason provides more details about the current status of the analyzer. For example, if the creation for the analyzer fails, a Failed status is displayed. For an analyzer with organization as the type, this failure can be due to an issue with creating the service-linked roles required in the member accounts of the AWS organization.
+    * The statusReason provides more details about the current status of the analyzer. For example, if the creation for the analyzer fails, a Failed status is returned. For an analyzer with organization as the type, this failure can be due to an issue with creating the service-linked roles required in the member accounts of the Amazon Web Services organization.
     */
   var statusReason: js.UndefOr[StatusReason] = js.undefined
   
@@ -53,7 +53,7 @@ trait AnalyzerSummary extends StObject {
 }
 object AnalyzerSummary {
   
-  inline def apply(arn: AnalyzerArn, createdAt: Timestamp, name: Name, status: AnalyzerStatus, `type`: Type): AnalyzerSummary = {
+  inline def apply(arn: AnalyzerArn, createdAt: js.Date, name: Name, status: AnalyzerStatus, `type`: Type): AnalyzerSummary = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzerSummary]
@@ -63,11 +63,11 @@ object AnalyzerSummary {
     
     inline def setArn(value: AnalyzerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setLastResourceAnalyzed(value: String): Self = StObject.set(x, "lastResourceAnalyzed", value.asInstanceOf[js.Any])
     
-    inline def setLastResourceAnalyzedAt(value: Timestamp): Self = StObject.set(x, "lastResourceAnalyzedAt", value.asInstanceOf[js.Any])
+    inline def setLastResourceAnalyzedAt(value: js.Date): Self = StObject.set(x, "lastResourceAnalyzedAt", value.asInstanceOf[js.Any])
     
     inline def setLastResourceAnalyzedAtUndefined: Self = StObject.set(x, "lastResourceAnalyzedAt", js.undefined)
     

@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bigqueryV2 {
   
-  /**
-    * BigQuery API
-    *
-    * A data platform for customers to create, manage, share and query data.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const bigquery = google.bigquery('v2');
-    *
-    * @namespace bigquery
-    * @type {Function}
-    * @version v2
-    * @variation v2
-    * @param {object=} options Options for Bigquery
-    */
   @JSImport("googleapis", "bigquery_v2.Bigquery")
   @js.native
-  class Bigquery protected ()
+  open class Bigquery protected ()
     extends typings.googleapis.bigqueryV2Mod.bigqueryV2.Bigquery {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,42 +19,56 @@ object bigqueryV2 {
   
   @JSImport("googleapis", "bigquery_v2.Resource$Datasets")
   @js.native
-  class ResourceDatasets protected ()
+  open class ResourceDatasets protected ()
     extends typings.googleapis.bigqueryV2Mod.bigqueryV2.ResourceDatasets {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "bigquery_v2.Resource$Jobs")
   @js.native
-  class ResourceJobs protected ()
+  open class ResourceJobs protected ()
     extends typings.googleapis.bigqueryV2Mod.bigqueryV2.ResourceJobs {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "bigquery_v2.Resource$Models")
   @js.native
-  class ResourceModels protected ()
+  open class ResourceModels protected ()
     extends typings.googleapis.bigqueryV2Mod.bigqueryV2.ResourceModels {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "bigquery_v2.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.bigqueryV2Mod.bigqueryV2.ResourceProjects {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "bigquery_v2.Resource$Routines")
+  @js.native
+  open class ResourceRoutines protected ()
+    extends typings.googleapis.bigqueryV2Mod.bigqueryV2.ResourceRoutines {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "bigquery_v2.Resource$Rowaccesspolicies")
+  @js.native
+  open class ResourceRowaccesspolicies protected ()
+    extends typings.googleapis.bigqueryV2Mod.bigqueryV2.ResourceRowaccesspolicies {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "bigquery_v2.Resource$Tabledata")
   @js.native
-  class ResourceTabledata protected ()
+  open class ResourceTabledata protected ()
     extends typings.googleapis.bigqueryV2Mod.bigqueryV2.ResourceTabledata {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "bigquery_v2.Resource$Tables")
   @js.native
-  class ResourceTables protected ()
+  open class ResourceTables protected ()
     extends typings.googleapis.bigqueryV2Mod.bigqueryV2.ResourceTables {
     def this(context: APIRequestContext) = this()
   }

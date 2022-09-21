@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a CircularLayout with no Layout.network and with no owning Layout.diagram.
   */
-class CircularLayout ()
+open class CircularLayout ()
   extends typings.go.mod.CircularLayout
 object CircularLayout {
   

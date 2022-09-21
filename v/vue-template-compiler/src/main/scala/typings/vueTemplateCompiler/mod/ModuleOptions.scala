@@ -42,7 +42,7 @@ object ModuleOptions {
     
     inline def setStaticKeysUndefined: Self = StObject.set(x, "staticKeys", js.undefined)
     
-    inline def setStaticKeysVarargs(value: String*): Self = StObject.set(x, "staticKeys", js.Array(value :_*))
+    inline def setStaticKeysVarargs(value: String*): Self = StObject.set(x, "staticKeys", js.Array(value*))
     
     inline def setTransformCode(value: (/* el */ ASTElement, /* code */ String) => String): Self = StObject.set(x, "transformCode", js.Any.fromFunction2(value))
     

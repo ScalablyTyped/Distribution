@@ -7,14 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LdapServerMetadataOutput extends StObject {
   
   /**
-    * Fully qualified domain name of the LDAP server. Optional failover server.
+    * Specifies the location of the LDAP server such as AWS Directory Service for Microsoft Active Directory . Optional failover server.
     */
-  var Hosts: js.UndefOr[listOfString] = js.undefined
+  var Hosts: listOfString
   
   /**
-    * Fully qualified name of the directory to search for a user’s groups.
+    * The distinguished name of the node in the directory information tree (DIT) to search for roles or groups. For example, ou=group, ou=corp, dc=corp,
+    dc=example, dc=com.
     */
-  var RoleBase: js.UndefOr[string] = js.undefined
+  var RoleBase: string
   
   /**
     * Specifies the LDAP attribute that identifies the group name attribute in the object returned from the group membership query.
@@ -22,24 +23,26 @@ trait LdapServerMetadataOutput extends StObject {
   var RoleName: js.UndefOr[string] = js.undefined
   
   /**
-    * The search criteria for groups.
+    * The LDAP search filter used to find roles within the roleBase. The distinguished name of the user matched by userSearchMatching is substituted into the {0} placeholder in the search filter. The client's username is substituted into the {1} placeholder. For example, if you set this option to (member=uid={1})for the user janedoe, the search filter becomes (member=uid=janedoe) after string substitution. It matches all role entries that have a member attribute equal to uid=janedoe under the subtree selected by the roleBase.
     */
-  var RoleSearchMatching: js.UndefOr[string] = js.undefined
+  var RoleSearchMatching: string
   
   /**
-    * The directory search scope for the role. If set to true, scope is to search the entire sub-tree.
+    * The directory search scope for the role. If set to true, scope is to search the entire subtree.
     */
   var RoleSearchSubtree: js.UndefOr[boolean] = js.undefined
   
   /**
-    * Service account username.
+    * Service account username. A service account is an account in your LDAP server that has access to initiate a connection. For example, cn=admin,dc=corp, dc=example,
+    dc=com.
     */
-  var ServiceAccountUsername: js.UndefOr[string] = js.undefined
+  var ServiceAccountUsername: string
   
   /**
-    * Fully qualified name of the directory where you want to search for users.
+    * Select a particular subtree of the directory information tree (DIT) to search for user entries. The subtree is specified by a DN, which specifies the base node of the subtree. For example, by setting this option to ou=Users,ou=corp, dc=corp,
+    dc=example, dc=com, the search for user entries is restricted to the subtree beneath ou=Users, ou=corp, dc=corp, dc=example, dc=com.
     */
-  var UserBase: js.UndefOr[string] = js.undefined
+  var UserBase: string
   
   /**
     * Specifies the name of the LDAP attribute for the user group membership.
@@ -47,19 +50,27 @@ trait LdapServerMetadataOutput extends StObject {
   var UserRoleName: js.UndefOr[string] = js.undefined
   
   /**
-    * The search criteria for users.
+    * The LDAP search filter used to find users within the userBase. The client's username is substituted into the {0} placeholder in the search filter. For example, if this option is set to (uid={0}) and the received username is janedoe, the search filter becomes (uid=janedoe) after string substitution. It will result in matching an entry like uid=janedoe, ou=Users,ou=corp, dc=corp, dc=example,
+    dc=com.
     */
-  var UserSearchMatching: js.UndefOr[string] = js.undefined
+  var UserSearchMatching: string
   
   /**
-    * The directory search scope for the user. If set to true, scope is to search the entire sub-tree.
+    * The directory search scope for the user. If set to true, scope is to search the entire subtree.
     */
   var UserSearchSubtree: js.UndefOr[boolean] = js.undefined
 }
 object LdapServerMetadataOutput {
   
-  inline def apply(): LdapServerMetadataOutput = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    Hosts: listOfString,
+    RoleBase: string,
+    RoleSearchMatching: string,
+    ServiceAccountUsername: string,
+    UserBase: string,
+    UserSearchMatching: string
+  ): LdapServerMetadataOutput = {
+    val __obj = js.Dynamic.literal(Hosts = Hosts.asInstanceOf[js.Any], RoleBase = RoleBase.asInstanceOf[js.Any], RoleSearchMatching = RoleSearchMatching.asInstanceOf[js.Any], ServiceAccountUsername = ServiceAccountUsername.asInstanceOf[js.Any], UserBase = UserBase.asInstanceOf[js.Any], UserSearchMatching = UserSearchMatching.asInstanceOf[js.Any])
     __obj.asInstanceOf[LdapServerMetadataOutput]
   }
   
@@ -67,13 +78,9 @@ object LdapServerMetadataOutput {
     
     inline def setHosts(value: listOfString): Self = StObject.set(x, "Hosts", value.asInstanceOf[js.Any])
     
-    inline def setHostsUndefined: Self = StObject.set(x, "Hosts", js.undefined)
-    
-    inline def setHostsVarargs(value: string*): Self = StObject.set(x, "Hosts", js.Array(value :_*))
+    inline def setHostsVarargs(value: string*): Self = StObject.set(x, "Hosts", js.Array(value*))
     
     inline def setRoleBase(value: string): Self = StObject.set(x, "RoleBase", value.asInstanceOf[js.Any])
-    
-    inline def setRoleBaseUndefined: Self = StObject.set(x, "RoleBase", js.undefined)
     
     inline def setRoleName(value: string): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     
@@ -81,27 +88,19 @@ object LdapServerMetadataOutput {
     
     inline def setRoleSearchMatching(value: string): Self = StObject.set(x, "RoleSearchMatching", value.asInstanceOf[js.Any])
     
-    inline def setRoleSearchMatchingUndefined: Self = StObject.set(x, "RoleSearchMatching", js.undefined)
-    
     inline def setRoleSearchSubtree(value: boolean): Self = StObject.set(x, "RoleSearchSubtree", value.asInstanceOf[js.Any])
     
     inline def setRoleSearchSubtreeUndefined: Self = StObject.set(x, "RoleSearchSubtree", js.undefined)
     
     inline def setServiceAccountUsername(value: string): Self = StObject.set(x, "ServiceAccountUsername", value.asInstanceOf[js.Any])
     
-    inline def setServiceAccountUsernameUndefined: Self = StObject.set(x, "ServiceAccountUsername", js.undefined)
-    
     inline def setUserBase(value: string): Self = StObject.set(x, "UserBase", value.asInstanceOf[js.Any])
-    
-    inline def setUserBaseUndefined: Self = StObject.set(x, "UserBase", js.undefined)
     
     inline def setUserRoleName(value: string): Self = StObject.set(x, "UserRoleName", value.asInstanceOf[js.Any])
     
     inline def setUserRoleNameUndefined: Self = StObject.set(x, "UserRoleName", js.undefined)
     
     inline def setUserSearchMatching(value: string): Self = StObject.set(x, "UserSearchMatching", value.asInstanceOf[js.Any])
-    
-    inline def setUserSearchMatchingUndefined: Self = StObject.set(x, "UserSearchMatching", js.undefined)
     
     inline def setUserSearchSubtree(value: boolean): Self = StObject.set(x, "UserSearchSubtree", value.asInstanceOf[js.Any])
     

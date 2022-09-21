@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.MailMessage")
 @js.native
-/* private */ class MailMessage ()
+/* private */ open class MailMessage ()
   extends StObject
      with typings.activexWord.Word.MailMessage {
   
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def GoToPrevious(): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Reply(): Unit = js.native

@@ -63,7 +63,10 @@ trait Particle extends StObject {
   /** @hidden */
   var _currentVelocityGradient: Nullable[FactorGradient]
   
-  /** @hidden */
+  /**
+    * @param subEmitter
+    * @hidden
+    */
   def _inheritParticleInfoToSubEmitter(subEmitter: SubEmitter): Unit
   
   /** @hidden */
@@ -74,6 +77,9 @@ trait Particle extends StObject {
   
   /** @hidden */
   var _initialEndSpriteCellID: Double
+  
+  /** @hidden */
+  var _initialSpriteCellLoop: Boolean
   
   /** @hidden */
   var _initialStartSpriteCellID: Double
@@ -92,6 +98,8 @@ trait Particle extends StObject {
   
   /** @hidden */
   def _reset(): Unit
+  
+  /* private */ var _updateCellInfoFromSystem: Any
   
   /**
     * The current age of the particle.
@@ -173,8 +181,6 @@ trait Particle extends StObject {
     * Defines how the sprite cell index is updated for the particle
     */
   def updateCellIndex(): Unit
-  
-  /* private */ var updateCellInfoFromSystem: js.Any
 }
 object Particle {
   
@@ -194,10 +200,12 @@ object Particle {
     _inheritParticleInfoToSubEmitter: SubEmitter => Unit,
     _inheritParticleInfoToSubEmitters: () => Unit,
     _initialEndSpriteCellID: Double,
+    _initialSpriteCellLoop: Boolean,
     _initialStartSpriteCellID: Double,
     _randomNoiseCoordinates1: Vector3,
     _randomNoiseCoordinates2: Vector3,
     _reset: () => Unit,
+    _updateCellInfoFromSystem: Any,
     age: Double,
     angle: Double,
     angularSpeed: Double,
@@ -213,10 +221,9 @@ object Particle {
     remapData: Vector4,
     scale: Vector2,
     size: Double,
-    updateCellIndex: () => Unit,
-    updateCellInfoFromSystem: js.Any
+    updateCellIndex: () => Unit
   ): Particle = {
-    val __obj = js.Dynamic.literal(_currentAngularSpeed1 = _currentAngularSpeed1.asInstanceOf[js.Any], _currentAngularSpeed2 = _currentAngularSpeed2.asInstanceOf[js.Any], _currentColor1 = _currentColor1.asInstanceOf[js.Any], _currentColor2 = _currentColor2.asInstanceOf[js.Any], _currentDrag1 = _currentDrag1.asInstanceOf[js.Any], _currentDrag2 = _currentDrag2.asInstanceOf[js.Any], _currentLimitVelocity1 = _currentLimitVelocity1.asInstanceOf[js.Any], _currentLimitVelocity2 = _currentLimitVelocity2.asInstanceOf[js.Any], _currentSize1 = _currentSize1.asInstanceOf[js.Any], _currentSize2 = _currentSize2.asInstanceOf[js.Any], _currentVelocity1 = _currentVelocity1.asInstanceOf[js.Any], _currentVelocity2 = _currentVelocity2.asInstanceOf[js.Any], _inheritParticleInfoToSubEmitter = js.Any.fromFunction1(_inheritParticleInfoToSubEmitter), _inheritParticleInfoToSubEmitters = js.Any.fromFunction0(_inheritParticleInfoToSubEmitters), _initialEndSpriteCellID = _initialEndSpriteCellID.asInstanceOf[js.Any], _initialStartSpriteCellID = _initialStartSpriteCellID.asInstanceOf[js.Any], _randomNoiseCoordinates1 = _randomNoiseCoordinates1.asInstanceOf[js.Any], _randomNoiseCoordinates2 = _randomNoiseCoordinates2.asInstanceOf[js.Any], _reset = js.Any.fromFunction0(_reset), age = age.asInstanceOf[js.Any], angle = angle.asInstanceOf[js.Any], angularSpeed = angularSpeed.asInstanceOf[js.Any], cellIndex = cellIndex.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], colorStep = colorStep.asInstanceOf[js.Any], copyTo = js.Any.fromFunction1(copyTo), direction = direction.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lifeTime = lifeTime.asInstanceOf[js.Any], particleSystem = particleSystem.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], remapData = remapData.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], updateCellIndex = js.Any.fromFunction0(updateCellIndex), updateCellInfoFromSystem = updateCellInfoFromSystem.asInstanceOf[js.Any], _attachedSubEmitters = null, _currentAngularSpeedGradient = null, _currentColorGradient = null, _currentDragGradient = null, _currentLimitVelocityGradient = null, _currentSizeGradient = null, _currentVelocityGradient = null, _initialDirection = null)
+    val __obj = js.Dynamic.literal(_currentAngularSpeed1 = _currentAngularSpeed1.asInstanceOf[js.Any], _currentAngularSpeed2 = _currentAngularSpeed2.asInstanceOf[js.Any], _currentColor1 = _currentColor1.asInstanceOf[js.Any], _currentColor2 = _currentColor2.asInstanceOf[js.Any], _currentDrag1 = _currentDrag1.asInstanceOf[js.Any], _currentDrag2 = _currentDrag2.asInstanceOf[js.Any], _currentLimitVelocity1 = _currentLimitVelocity1.asInstanceOf[js.Any], _currentLimitVelocity2 = _currentLimitVelocity2.asInstanceOf[js.Any], _currentSize1 = _currentSize1.asInstanceOf[js.Any], _currentSize2 = _currentSize2.asInstanceOf[js.Any], _currentVelocity1 = _currentVelocity1.asInstanceOf[js.Any], _currentVelocity2 = _currentVelocity2.asInstanceOf[js.Any], _inheritParticleInfoToSubEmitter = js.Any.fromFunction1(_inheritParticleInfoToSubEmitter), _inheritParticleInfoToSubEmitters = js.Any.fromFunction0(_inheritParticleInfoToSubEmitters), _initialEndSpriteCellID = _initialEndSpriteCellID.asInstanceOf[js.Any], _initialSpriteCellLoop = _initialSpriteCellLoop.asInstanceOf[js.Any], _initialStartSpriteCellID = _initialStartSpriteCellID.asInstanceOf[js.Any], _randomNoiseCoordinates1 = _randomNoiseCoordinates1.asInstanceOf[js.Any], _randomNoiseCoordinates2 = _randomNoiseCoordinates2.asInstanceOf[js.Any], _reset = js.Any.fromFunction0(_reset), _updateCellInfoFromSystem = _updateCellInfoFromSystem.asInstanceOf[js.Any], age = age.asInstanceOf[js.Any], angle = angle.asInstanceOf[js.Any], angularSpeed = angularSpeed.asInstanceOf[js.Any], cellIndex = cellIndex.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], colorStep = colorStep.asInstanceOf[js.Any], copyTo = js.Any.fromFunction1(copyTo), direction = direction.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lifeTime = lifeTime.asInstanceOf[js.Any], particleSystem = particleSystem.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], remapData = remapData.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], updateCellIndex = js.Any.fromFunction0(updateCellIndex), _attachedSubEmitters = null, _currentAngularSpeedGradient = null, _currentColorGradient = null, _currentDragGradient = null, _currentLimitVelocityGradient = null, _currentSizeGradient = null, _currentVelocityGradient = null, _initialDirection = null)
     __obj.asInstanceOf[Particle]
   }
   
@@ -254,13 +261,11 @@ object Particle {
     
     inline def setUpdateCellIndex(value: () => Unit): Self = StObject.set(x, "updateCellIndex", js.Any.fromFunction0(value))
     
-    inline def setUpdateCellInfoFromSystem(value: js.Any): Self = StObject.set(x, "updateCellInfoFromSystem", value.asInstanceOf[js.Any])
-    
     inline def set_attachedSubEmitters(value: Nullable[js.Array[SubEmitter]]): Self = StObject.set(x, "_attachedSubEmitters", value.asInstanceOf[js.Any])
     
     inline def set_attachedSubEmittersNull: Self = StObject.set(x, "_attachedSubEmitters", null)
     
-    inline def set_attachedSubEmittersVarargs(value: SubEmitter*): Self = StObject.set(x, "_attachedSubEmitters", js.Array(value :_*))
+    inline def set_attachedSubEmittersVarargs(value: SubEmitter*): Self = StObject.set(x, "_attachedSubEmitters", js.Array(value*))
     
     inline def set_currentAngularSpeed1(value: Double): Self = StObject.set(x, "_currentAngularSpeed1", value.asInstanceOf[js.Any])
     
@@ -320,6 +325,8 @@ object Particle {
     
     inline def set_initialEndSpriteCellID(value: Double): Self = StObject.set(x, "_initialEndSpriteCellID", value.asInstanceOf[js.Any])
     
+    inline def set_initialSpriteCellLoop(value: Boolean): Self = StObject.set(x, "_initialSpriteCellLoop", value.asInstanceOf[js.Any])
+    
     inline def set_initialStartSpriteCellID(value: Double): Self = StObject.set(x, "_initialStartSpriteCellID", value.asInstanceOf[js.Any])
     
     inline def set_localPosition(value: Vector3): Self = StObject.set(x, "_localPosition", value.asInstanceOf[js.Any])
@@ -335,5 +342,7 @@ object Particle {
     inline def set_randomNoiseCoordinates2(value: Vector3): Self = StObject.set(x, "_randomNoiseCoordinates2", value.asInstanceOf[js.Any])
     
     inline def set_reset(value: () => Unit): Self = StObject.set(x, "_reset", js.Any.fromFunction0(value))
+    
+    inline def set_updateCellInfoFromSystem(value: Any): Self = StObject.set(x, "_updateCellInfoFromSystem", value.asInstanceOf[js.Any])
   }
 }

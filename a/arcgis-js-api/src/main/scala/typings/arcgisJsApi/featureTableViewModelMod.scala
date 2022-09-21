@@ -17,7 +17,12 @@ object featureTableViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/FeatureTable/FeatureTableViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the logic for the [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html) widget, which allows users to view content from feature attributes in a tabular format.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with FeatureTableViewModel {
     def this(properties: FeatureTableViewModelProperties) = this()

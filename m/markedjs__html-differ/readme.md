@@ -10,15 +10,12 @@ Compares two HTML
 | ------------------ | :-------------: |
 | Full name          | @markedjs/html-differ |
 | Keywords           | html-differ, html-diff, htmldiffer, htmldiff, html, differ, diff |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 12414 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 3088.3333333333335 |
+| # stars            | 15.0 |
 
 ## Links
-- [Homepage](https://github.com/markedjs/html-differ)
-- [Bugs](https://github.com/markedjs/html-differ/issues)
-- [Repository](https://github.com/markedjs/html-differ)
 - [Npm](https://www.npmjs.com/package/%40markedjs%2Fhtml-differ)
     
 

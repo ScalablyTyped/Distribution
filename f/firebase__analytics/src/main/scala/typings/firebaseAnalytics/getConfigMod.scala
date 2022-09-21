@@ -1,23 +1,23 @@
 package typings.firebaseAnalytics
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAnalyticsTypes.mod.DynamicConfig
-import typings.firebaseAnalyticsTypes.mod.MinimalDynamicConfig
-import typings.firebaseAnalyticsTypes.mod.ThrottleMetadata
-import typings.firebaseAppTypes.mod.FirebaseApp
+import typings.firebaseAnalytics.typesMod.DynamicConfig
+import typings.firebaseAnalytics.typesMod.MinimalDynamicConfig
+import typings.firebaseAnalytics.typesMod.ThrottleMetadata
+import typings.firebaseApp.mod.FirebaseApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getConfigMod {
   
-  @JSImport("@firebase/analytics/dist/src/get-config", JSImport.Namespace)
+  @JSImport("@firebase/analytics/dist/esm/src/get-config", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/analytics/dist/src/get-config", "AnalyticsAbortSignal")
+  @JSImport("@firebase/analytics/dist/esm/src/get-config", "AnalyticsAbortSignal")
   @js.native
-  class AnalyticsAbortSignal () extends StObject {
+  open class AnalyticsAbortSignal () extends StObject {
     
     def abort(): Unit = js.native
     
@@ -26,7 +26,7 @@ object getConfigMod {
     var listeners: js.Array[js.Function0[Unit]] = js.native
   }
   
-  @JSImport("@firebase/analytics/dist/src/get-config", "LONG_RETRY_FACTOR")
+  @JSImport("@firebase/analytics/dist/esm/src/get-config", "LONG_RETRY_FACTOR")
   @js.native
   val LONG_RETRY_FACTOR: /* 30 */ Double = js.native
   

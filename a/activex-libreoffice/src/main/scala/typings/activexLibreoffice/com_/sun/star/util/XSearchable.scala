@@ -53,7 +53,7 @@ object XSearchable {
     findAll: XSearchDescriptor => XIndexAccess,
     findFirst: XSearchDescriptor => XInterface,
     findNext: (XInterface, XSearchDescriptor) => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSearchable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSearchDescriptor = js.Any.fromFunction0(createSearchDescriptor), findAll = js.Any.fromFunction1(findAll), findFirst = js.Any.fromFunction1(findFirst), findNext = js.Any.fromFunction2(findNext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

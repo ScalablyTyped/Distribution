@@ -16,7 +16,7 @@ object groupsMod {
   
   @JSImport("gitlab/dist/types/core/services/Groups", "Groups")
   @js.native
-  class Groups () extends BaseService {
+  open class Groups () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[js.Array[GroupSchema]] = js.native
@@ -25,10 +25,10 @@ object groupsMod {
     def create(): js.Promise[js.Object] = js.native
     def create(options: BaseRequestOptions): js.Promise[js.Object] = js.native
     
-    def createLDAPLink(groupId: String, cn: js.Any, groupAccess: js.Any, provider: String): js.Promise[js.Object] = js.native
-    def createLDAPLink(groupId: String, cn: js.Any, groupAccess: js.Any, provider: String, options: Sudo): js.Promise[js.Object] = js.native
-    def createLDAPLink(groupId: Double, cn: js.Any, groupAccess: js.Any, provider: String): js.Promise[js.Object] = js.native
-    def createLDAPLink(groupId: Double, cn: js.Any, groupAccess: js.Any, provider: String, options: Sudo): js.Promise[js.Object] = js.native
+    def createLDAPLink(groupId: String, cn: Any, groupAccess: Any, provider: String): js.Promise[js.Object] = js.native
+    def createLDAPLink(groupId: String, cn: Any, groupAccess: Any, provider: String, options: Sudo): js.Promise[js.Object] = js.native
+    def createLDAPLink(groupId: Double, cn: Any, groupAccess: Any, provider: String): js.Promise[js.Object] = js.native
+    def createLDAPLink(groupId: Double, cn: Any, groupAccess: Any, provider: String, options: Sudo): js.Promise[js.Object] = js.native
     
     def edit(groupId: String): js.Promise[js.Object] = js.native
     def edit(groupId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
@@ -45,10 +45,10 @@ object groupsMod {
     def remove(groupId: Double): js.Promise[js.Object] = js.native
     def remove(groupId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
-    def removeLDAPLink(groupId: String, cn: js.Any): js.Promise[js.Object] = js.native
-    def removeLDAPLink(groupId: String, cn: js.Any, hasProviderOptions: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
-    def removeLDAPLink(groupId: Double, cn: js.Any): js.Promise[js.Object] = js.native
-    def removeLDAPLink(groupId: Double, cn: js.Any, hasProviderOptions: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
+    def removeLDAPLink(groupId: String, cn: Any): js.Promise[js.Object] = js.native
+    def removeLDAPLink(groupId: String, cn: Any, hasProviderOptions: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
+    def removeLDAPLink(groupId: Double, cn: Any): js.Promise[js.Object] = js.native
+    def removeLDAPLink(groupId: Double, cn: Any, hasProviderOptions: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
     
     def search(nameOrPath: String): js.Promise[GetResponse] = js.native
     def search(nameOrPath: String, options: Sudo): js.Promise[GetResponse] = js.native
@@ -110,13 +110,13 @@ object groupsMod {
       
       inline def setProjects(value: js.Array[ProjectSchema]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
-      inline def setProjectsVarargs(value: ProjectSchema*): Self = StObject.set(x, "projects", js.Array(value :_*))
+      inline def setProjectsVarargs(value: ProjectSchema*): Self = StObject.set(x, "projects", js.Array(value*))
       
       inline def setRunners_token(value: String): Self = StObject.set(x, "runners_token", value.asInstanceOf[js.Any])
       
       inline def setShared_projects(value: js.Array[ProjectSchema]): Self = StObject.set(x, "shared_projects", value.asInstanceOf[js.Any])
       
-      inline def setShared_projectsVarargs(value: ProjectSchema*): Self = StObject.set(x, "shared_projects", js.Array(value :_*))
+      inline def setShared_projectsVarargs(value: ProjectSchema*): Self = StObject.set(x, "shared_projects", js.Array(value*))
     }
   }
   

@@ -2,8 +2,6 @@ package typings.passportSaml
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passportSaml.passportSamlStrings.better
 import typings.passportSaml.passportSamlStrings.exact
 import typings.passportSaml.passportSamlStrings.maximum
@@ -11,8 +9,7 @@ import typings.passportSaml.passportSamlStrings.minimum
 import typings.passportSaml.passportSamlStrings.sha1
 import typings.passportSaml.passportSamlStrings.sha256
 import typings.passportSaml.passportSamlStrings.sha512
-import typings.std.Date
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,14 +18,32 @@ object mod {
   
   @JSImport("passport-saml", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends StObject
        with typings.passport.mod.Strategy {
     def this(config: SamlConfig, verify: VerifyWithRequest) = this()
     def this(config: SamlConfig, verify: VerifyWithoutRequest) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: AuthenticateOptions): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: AuthorizeOptions): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: AuthenticateOptions
+    ): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: AuthorizeOptions
+    ): Unit = js.native
     
     def generateServiceProviderMetadata(): String = js.native
     def generateServiceProviderMetadata(decryptionCert: String): String = js.native
@@ -36,8 +51,14 @@ object mod {
     def generateServiceProviderMetadata(decryptionCert: Null, signingCert: String): String = js.native
     
     def logout(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      callback: js.Function2[/* err */ Error | Null, /* url */ js.UndefOr[String], Unit]
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      callback: js.Function2[/* err */ js.Error | Null, /* url */ js.UndefOr[String], Unit]
     ): Unit = js.native
   }
   
@@ -85,52 +106,52 @@ object mod {
   
   trait CacheItem extends StObject {
     
-    var createdAt: Date
+    var createdAt: js.Date
     
-    var value: js.Any
+    var value: Any
   }
   object CacheItem {
     
-    inline def apply(createdAt: Date, value: js.Any): CacheItem = {
+    inline def apply(createdAt: js.Date, value: Any): CacheItem = {
       val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheItem]
     }
     
     extension [Self <: CacheItem](x: Self) {
       
-      inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait CacheProvider extends StObject {
     
-    def get(key: String, callback: js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit | Null]): Unit = js.native
+    def get(key: String, callback: js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit | Null]): Unit = js.native
     
-    def remove(key: String, callback: js.Function2[/* err */ Error | Null, /* key */ String, Unit | Null]): Unit = js.native
+    def remove(key: String, callback: js.Function2[/* err */ js.Error | Null, /* key */ String, Unit | Null]): Unit = js.native
     
     def save(
       key: String,
-      value: js.Any,
-      callback: js.Function2[/* err */ Error | Null, /* cacheItem */ CacheItem, Unit | Null]
+      value: Any,
+      callback: js.Function2[/* err */ js.Error | Null, /* cacheItem */ CacheItem, Unit | Null]
     ): Unit = js.native
     def save(
       key: Null,
-      value: js.Any,
-      callback: js.Function2[/* err */ Error | Null, /* cacheItem */ CacheItem, Unit | Null]
+      value: Any,
+      callback: js.Function2[/* err */ js.Error | Null, /* cacheItem */ CacheItem, Unit | Null]
     ): Unit = js.native
   }
   
   type CertCallback = js.Function1[
-    /* callback */ js.Function2[/* err */ Error | Null, /* cert */ js.UndefOr[String | js.Array[String]], Unit], 
+    /* callback */ js.Function2[/* err */ js.Error | Null, /* cert */ js.UndefOr[String | js.Array[String]], Unit], 
     Unit
   ]
   
   trait Profile
     extends StObject
-       with /* attributeName */ StringDictionary[js.Any] {
+       with /* attributeName */ StringDictionary[Any] {
     
     var ID: js.UndefOr[String] = js.undefined
     
@@ -219,12 +240,12 @@ object mod {
     
     var acceptedClockSkewMs: js.UndefOr[Double] = js.undefined
     
-    var additionalAuthorizeParams: js.UndefOr[js.Any] = js.undefined
+    var additionalAuthorizeParams: js.UndefOr[Any] = js.undefined
     
-    var additionalLogoutParams: js.UndefOr[js.Any] = js.undefined
+    var additionalLogoutParams: js.UndefOr[Any] = js.undefined
     
     // Additional SAML behaviors
-    var additionalParams: js.UndefOr[js.Any] = js.undefined
+    var additionalParams: js.UndefOr[Any] = js.undefined
     
     var attributeConsumingServiceIndex: js.UndefOr[String] = js.undefined
     
@@ -299,15 +320,15 @@ object mod {
       
       inline def setAcceptedClockSkewMsUndefined: Self = StObject.set(x, "acceptedClockSkewMs", js.undefined)
       
-      inline def setAdditionalAuthorizeParams(value: js.Any): Self = StObject.set(x, "additionalAuthorizeParams", value.asInstanceOf[js.Any])
+      inline def setAdditionalAuthorizeParams(value: Any): Self = StObject.set(x, "additionalAuthorizeParams", value.asInstanceOf[js.Any])
       
       inline def setAdditionalAuthorizeParamsUndefined: Self = StObject.set(x, "additionalAuthorizeParams", js.undefined)
       
-      inline def setAdditionalLogoutParams(value: js.Any): Self = StObject.set(x, "additionalLogoutParams", value.asInstanceOf[js.Any])
+      inline def setAdditionalLogoutParams(value: Any): Self = StObject.set(x, "additionalLogoutParams", value.asInstanceOf[js.Any])
       
       inline def setAdditionalLogoutParamsUndefined: Self = StObject.set(x, "additionalLogoutParams", js.undefined)
       
-      inline def setAdditionalParams(value: js.Any): Self = StObject.set(x, "additionalParams", value.asInstanceOf[js.Any])
+      inline def setAdditionalParams(value: Any): Self = StObject.set(x, "additionalParams", value.asInstanceOf[js.Any])
       
       inline def setAdditionalParamsUndefined: Self = StObject.set(x, "additionalParams", js.undefined)
       
@@ -338,12 +359,12 @@ object mod {
       inline def setCert(value: String | js.Array[String] | CertCallback): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertFunction1(
-        value: /* callback */ js.Function2[/* err */ Error | Null, /* cert */ js.UndefOr[String | js.Array[String]], Unit] => Unit
+        value: /* callback */ js.Function2[/* err */ js.Error | Null, /* cert */ js.UndefOr[String | js.Array[String]], Unit] => Unit
       ): Self = StObject.set(x, "cert", js.Any.fromFunction1(value))
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      inline def setCertVarargs(value: String*): Self = StObject.set(x, "cert", js.Array(value :_*))
+      inline def setCertVarargs(value: String*): Self = StObject.set(x, "cert", js.Array(value*))
       
       inline def setDecryptionPvk(value: String): Self = StObject.set(x, "decryptionPvk", value.asInstanceOf[js.Any])
       
@@ -436,14 +457,20 @@ object mod {
   }
   
   type VerifiedCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* user */ js.UndefOr[js.Object], 
     /* info */ js.UndefOr[js.Object], 
     Unit
   ]
   
   type VerifyWithRequest = js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* profile */ Profile, 
     /* done */ VerifiedCallback, 
     Unit

@@ -17,11 +17,11 @@ trait GlobalAccessHandler extends StObject {
     *
     * @param property Name of non-existent global that is being accessed.
     */
-  def get(property: String): js.Any
+  def get(property: String): Any
 }
 object GlobalAccessHandler {
   
-  inline def apply(enumerate: () => js.Array[String], get: String => js.Any): GlobalAccessHandler = {
+  inline def apply(enumerate: () => js.Array[String], get: String => Any): GlobalAccessHandler = {
     val __obj = js.Dynamic.literal(enumerate = js.Any.fromFunction0(enumerate), get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[GlobalAccessHandler]
   }
@@ -30,6 +30,6 @@ object GlobalAccessHandler {
     
     inline def setEnumerate(value: () => js.Array[String]): Self = StObject.set(x, "enumerate", js.Any.fromFunction0(value))
     
-    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

@@ -40,7 +40,7 @@ object AppVersion {
     
     inline def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
     
-    inline def setTrackIdVarargs(value: String*): Self = StObject.set(x, "trackId", js.Array(value :_*))
+    inline def setTrackIdVarargs(value: String*): Self = StObject.set(x, "trackId", js.Array(value*))
     
     inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     

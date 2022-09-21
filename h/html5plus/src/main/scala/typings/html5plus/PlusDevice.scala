@@ -58,7 +58,7 @@ trait PlusDevice extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var imsi: js.UndefOr[js.Array[js.Any]] = js.native
+  var imsi: js.UndefOr[js.Array[Any]] = js.native
   
   /**
     * 获取程序是否一直保持唤醒（屏幕常亮）状态

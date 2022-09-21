@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaseSchemaObject extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var additionalProperties: js.UndefOr[Boolean | ReferenceObject | SchemaObject] = js.undefined
   
@@ -21,9 +21,9 @@ trait BaseSchemaObject extends StObject {
   
   var discriminator: js.UndefOr[DiscriminatorObject] = js.undefined
   
-  var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var `enum`: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.undefined
+  var example: js.UndefOr[Any] = js.undefined
   
   var exclusiveMaximum: js.UndefOr[Boolean] = js.undefined
   
@@ -90,15 +90,15 @@ object BaseSchemaObject {
     
     inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
     
-    inline def setAllOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+    inline def setAllOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "allOf", js.Array(value*))
     
     inline def setAnyOf(value: js.Array[ReferenceObject | SchemaObject]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
     
     inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
     
-    inline def setAnyOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+    inline def setAnyOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "anyOf", js.Array(value*))
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
@@ -114,13 +114,13 @@ object BaseSchemaObject {
     
     inline def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
     
-    inline def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: js.Array[Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    inline def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: Any*): Self = StObject.set(x, "enum", js.Array(value*))
     
-    inline def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    inline def setExample(value: Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     
@@ -188,7 +188,7 @@ object BaseSchemaObject {
     
     inline def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
     
-    inline def setOneOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+    inline def setOneOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "oneOf", js.Array(value*))
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
@@ -206,7 +206,7 @@ object BaseSchemaObject {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

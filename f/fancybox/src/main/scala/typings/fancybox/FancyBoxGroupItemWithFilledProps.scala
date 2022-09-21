@@ -15,7 +15,7 @@ trait FancyBoxGroupItemWithFilledProps
   
   var index: js.UndefOr[Double] = js.undefined
   
-  var thumb: js.UndefOr[js.Any] = js.undefined
+  var thumb: js.UndefOr[Any] = js.undefined
 }
 object FancyBoxGroupItemWithFilledProps {
   
@@ -38,7 +38,7 @@ object FancyBoxGroupItemWithFilledProps {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setThumb(value: js.Any): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: Any): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
     inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-cognito-identity", "SetIdentityPoolRolesCommand")
 @js.native
-class SetIdentityPoolRolesCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.setIdentityPoolRolesCommandMod.SetIdentityPoolRolesCommand {
+open class SetIdentityPoolRolesCommand protected ()
+  extends typings.awsSdkClientCognitoIdentity.commandsMod.SetIdentityPoolRolesCommand {
   def this(input: SetIdentityPoolRolesCommandInput) = this()
 }

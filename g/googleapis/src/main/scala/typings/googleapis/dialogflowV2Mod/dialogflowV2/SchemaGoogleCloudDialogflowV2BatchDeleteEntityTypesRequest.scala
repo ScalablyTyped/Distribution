@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request message for EntityTypes.BatchDeleteEntityTypes.
-  */
 trait SchemaGoogleCloudDialogflowV2BatchDeleteEntityTypesRequest extends StObject {
   
   /**
-    * Required. The names entity types to delete. All names must point to the
-    * same agent as `parent`.
+    * Required. The names entity types to delete. All names must point to the same agent as `parent`.
     */
-  var entityTypeNames: js.UndefOr[js.Array[String]] = js.undefined
+  var entityTypeNames: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2BatchDeleteEntityTypesRequest {
   
@@ -26,8 +22,10 @@ object SchemaGoogleCloudDialogflowV2BatchDeleteEntityTypesRequest {
     
     inline def setEntityTypeNames(value: js.Array[String]): Self = StObject.set(x, "entityTypeNames", value.asInstanceOf[js.Any])
     
+    inline def setEntityTypeNamesNull: Self = StObject.set(x, "entityTypeNames", null)
+    
     inline def setEntityTypeNamesUndefined: Self = StObject.set(x, "entityTypeNames", js.undefined)
     
-    inline def setEntityTypeNamesVarargs(value: String*): Self = StObject.set(x, "entityTypeNames", js.Array(value :_*))
+    inline def setEntityTypeNamesVarargs(value: String*): Self = StObject.set(x, "entityTypeNames", js.Array(value*))
   }
 }

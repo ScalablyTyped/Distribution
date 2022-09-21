@@ -29,7 +29,7 @@ object ThingTypeProperties {
     
     inline def setSearchableAttributesUndefined: Self = StObject.set(x, "searchableAttributes", js.undefined)
     
-    inline def setSearchableAttributesVarargs(value: AttributeName*): Self = StObject.set(x, "searchableAttributes", js.Array(value :_*))
+    inline def setSearchableAttributesVarargs(value: AttributeName*): Self = StObject.set(x, "searchableAttributes", js.Array(value*))
     
     inline def setThingTypeDescription(value: ThingTypeDescription): Self = StObject.set(x, "thingTypeDescription", value.asInstanceOf[js.Any])
     

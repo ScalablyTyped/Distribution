@@ -32,7 +32,7 @@ object Fix {
     
     inline def setArtifactChanges(value: js.Array[ArtifactChange]): Self = StObject.set(x, "artifactChanges", value.asInstanceOf[js.Any])
     
-    inline def setArtifactChangesVarargs(value: ArtifactChange*): Self = StObject.set(x, "artifactChanges", js.Array(value :_*))
+    inline def setArtifactChangesVarargs(value: ArtifactChange*): Self = StObject.set(x, "artifactChanges", js.Array(value*))
     
     inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

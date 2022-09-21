@@ -29,7 +29,7 @@ object Processor {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: ProcessorParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ProcessorParameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
     
     inline def setType(value: ProcessorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

@@ -72,7 +72,7 @@ object anon {
   /* Inlined actions-on-google.actions-on-google/dist/common.ProtoAny<string, actions-on-google.actions-on-google/dist/common.JsonObject> */
   trait ProtoAnystringJsonObject
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var `@type`: String
   }
@@ -92,18 +92,18 @@ object anon {
   
   trait States extends StObject {
     
-    var states: ApiClientObjectMap[js.Any]
+    var states: ApiClientObjectMap[Any]
   }
   object States {
     
-    inline def apply(states: ApiClientObjectMap[js.Any]): States = {
+    inline def apply(states: ApiClientObjectMap[Any]): States = {
       val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any])
       __obj.asInstanceOf[States]
     }
     
     extension [Self <: States](x: Self) {
       
-      inline def setStates(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+      inline def setStates(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     }
   }
   

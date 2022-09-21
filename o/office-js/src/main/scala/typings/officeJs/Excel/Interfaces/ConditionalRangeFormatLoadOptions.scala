@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalRangeFormatLoadOptions extends StObject {
@@ -19,33 +19,34 @@ trait ConditionalRangeFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Collection of border objects that apply to the overall conditional format range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var borders: js.UndefOr[ConditionalRangeBorderCollectionLoadOptions] = js.undefined
   
   /**
-    *
     * Returns the fill object defined on the overall conditional format range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var fill: js.UndefOr[ConditionalRangeFillLoadOptions] = js.undefined
   
   /**
-    *
     * Returns the font object defined on the overall conditional format range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var font: js.UndefOr[ConditionalRangeFontLoadOptions] = js.undefined
   
   /**
+    * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+    Cleared if `null` is passed in.
     *
-    * Represents Excel's number format code for the given range. Cleared if null is passed in.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var numberFormat: js.UndefOr[Boolean] = js.undefined

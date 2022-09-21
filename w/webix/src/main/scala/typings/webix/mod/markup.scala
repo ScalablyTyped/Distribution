@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait markup extends StObject {
   
-  var attribute: js.Any
+  var attribute: Any
   
-  var dataTag: js.Any
+  var dataTag: Any
   
   def init(node: String, target: String): baseview
   
-  var namespace: js.Any
+  var namespace: Any
   
-  def parse(data: js.Any, datatype: String): Unit
+  def parse(data: Any, datatype: String): Unit
 }
 object markup {
   
@@ -25,14 +25,14 @@ object markup {
   
   extension [Self <: markup](x: Self) {
     
-    inline def setAttribute(value: js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    inline def setDataTag(value: js.Any): Self = StObject.set(x, "dataTag", value.asInstanceOf[js.Any])
+    inline def setDataTag(value: Any): Self = StObject.set(x, "dataTag", value.asInstanceOf[js.Any])
     
     inline def setInit(value: (String, String) => baseview): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
-    inline def setNamespace(value: js.Any): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Any): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    inline def setParse(value: (js.Any, String) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+    inline def setParse(value: (Any, String) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
   }
 }

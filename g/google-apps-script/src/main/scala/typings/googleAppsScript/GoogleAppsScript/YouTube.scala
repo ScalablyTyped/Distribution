@@ -792,9 +792,9 @@ object YouTube {
       // Uploads a caption track.
       def insert(resource: Caption, part: String): Caption = js.native
       // Uploads a caption track.
-      def insert(resource: Caption, part: String, mediaData: js.Any): Caption = js.native
+      def insert(resource: Caption, part: String, mediaData: Any): Caption = js.native
       // Uploads a caption track.
-      def insert(resource: Caption, part: String, mediaData: js.Any, optionalArgs: js.Object): Caption = js.native
+      def insert(resource: Caption, part: String, mediaData: Any, optionalArgs: js.Object): Caption = js.native
       
       // Returns a list of caption tracks that are associated with a specified video. Note that the API response does not contain the actual captions and that the captions.download method provides the ability to retrieve a caption track.
       def list(part: String, videoId: String): CaptionListResponse = js.native
@@ -809,9 +809,9 @@ object YouTube {
       // Updates a caption track. When updating a caption track, you can change the track's draft status, upload a new caption file for the track, or both.
       def update(resource: Caption, part: String): Caption = js.native
       // Updates a caption track. When updating a caption track, you can change the track's draft status, upload a new caption file for the track, or both.
-      def update(resource: Caption, part: String, mediaData: js.Any): Caption = js.native
+      def update(resource: Caption, part: String, mediaData: Any): Caption = js.native
       // Updates a caption track. When updating a caption track, you can change the track's draft status, upload a new caption file for the track, or both.
-      def update(resource: Caption, part: String, mediaData: js.Any, optionalArgs: js.Object): Caption = js.native
+      def update(resource: Caption, part: String, mediaData: Any, optionalArgs: js.Object): Caption = js.native
     }
     
     @js.native
@@ -826,12 +826,12 @@ object YouTube {
       // - Call the channelBanners.insert method to upload the binary image data to YouTube. The image must have a 16:9 aspect ratio and be at least 2120x1192 pixels.
       // - Extract the url property's value from the response that the API returns for step 1.
       // - Call the channels.update method to update the channel's branding settings. Set the brandingSettings.image.bannerExternalUrl property's value to the URL obtained in step 2.
-      def insert(resource: ChannelBannerResource, mediaData: js.Any): ChannelBannerResource = js.native
+      def insert(resource: ChannelBannerResource, mediaData: Any): ChannelBannerResource = js.native
       // Uploads a channel banner image to YouTube. This method represents the first two steps in a three-step process to update the banner image for a channel:
       // - Call the channelBanners.insert method to upload the binary image data to YouTube. The image must have a 16:9 aspect ratio and be at least 2120x1192 pixels.
       // - Extract the url property's value from the response that the API returns for step 1.
       // - Call the channels.update method to update the channel's branding settings. Set the brandingSettings.image.bannerExternalUrl property's value to the URL obtained in step 2.
-      def insert(resource: ChannelBannerResource, mediaData: js.Any, optionalArgs: js.Object): ChannelBannerResource = js.native
+      def insert(resource: ChannelBannerResource, mediaData: Any, optionalArgs: js.Object): ChannelBannerResource = js.native
     }
     
     @js.native
@@ -1152,9 +1152,9 @@ object YouTube {
       // Uploads a custom video thumbnail to YouTube and sets it for a video.
       def set(videoId: String): ThumbnailSetResponse = js.native
       // Uploads a custom video thumbnail to YouTube and sets it for a video.
-      def set(videoId: String, mediaData: js.Any): ThumbnailSetResponse = js.native
+      def set(videoId: String, mediaData: Any): ThumbnailSetResponse = js.native
       // Uploads a custom video thumbnail to YouTube and sets it for a video.
-      def set(videoId: String, mediaData: js.Any, optionalArgs: js.Object): ThumbnailSetResponse = js.native
+      def set(videoId: String, mediaData: Any, optionalArgs: js.Object): ThumbnailSetResponse = js.native
     }
     
     @js.native
@@ -1186,9 +1186,9 @@ object YouTube {
       // Uploads a video to YouTube and optionally sets the video's metadata.
       def insert(resource: Video, part: String): Video = js.native
       // Uploads a video to YouTube and optionally sets the video's metadata.
-      def insert(resource: Video, part: String, mediaData: js.Any): Video = js.native
+      def insert(resource: Video, part: String, mediaData: Any): Video = js.native
       // Uploads a video to YouTube and optionally sets the video's metadata.
-      def insert(resource: Video, part: String, mediaData: js.Any, optionalArgs: js.Object): Video = js.native
+      def insert(resource: Video, part: String, mediaData: Any, optionalArgs: js.Object): Video = js.native
       
       // Returns a list of videos that match the API request parameters.
       def list(part: String): VideoListResponse = js.native
@@ -1220,9 +1220,9 @@ object YouTube {
       // Uploads a watermark image to YouTube and sets it for a channel.
       def set(resource: InvideoBranding, channelId: String): Unit = js.native
       // Uploads a watermark image to YouTube and sets it for a channel.
-      def set(resource: InvideoBranding, channelId: String, mediaData: js.Any): Unit = js.native
+      def set(resource: InvideoBranding, channelId: String, mediaData: Any): Unit = js.native
       // Uploads a watermark image to YouTube and sets it for a channel.
-      def set(resource: InvideoBranding, channelId: String, mediaData: js.Any, optionalArgs: js.Object): Unit = js.native
+      def set(resource: InvideoBranding, channelId: String, mediaData: Any, optionalArgs: js.Object): Unit = js.native
       
       // Deletes a channel's watermark image.
       def unset(channelId: String): Unit = js.native
@@ -1256,7 +1256,7 @@ object YouTube {
         
         inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
         
-        inline def setExceptionVarargs(value: String*): Self = StObject.set(x, "exception", js.Array(value :_*))
+        inline def setExceptionVarargs(value: String*): Self = StObject.set(x, "exception", js.Array(value*))
       }
     }
     
@@ -1571,13 +1571,13 @@ object YouTube {
         
         inline def setForecastingUrlUndefined: Self = StObject.set(x, "forecastingUrl", js.undefined)
         
-        inline def setForecastingUrlVarargs(value: String*): Self = StObject.set(x, "forecastingUrl", js.Array(value :_*))
+        inline def setForecastingUrlVarargs(value: String*): Self = StObject.set(x, "forecastingUrl", js.Array(value*))
         
         inline def setImpressionUrl(value: js.Array[String]): Self = StObject.set(x, "impressionUrl", value.asInstanceOf[js.Any])
         
         inline def setImpressionUrlUndefined: Self = StObject.set(x, "impressionUrl", js.undefined)
         
-        inline def setImpressionUrlVarargs(value: String*): Self = StObject.set(x, "impressionUrl", js.Array(value :_*))
+        inline def setImpressionUrlVarargs(value: String*): Self = StObject.set(x, "impressionUrl", js.Array(value*))
         
         inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
         
@@ -1713,7 +1713,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -1739,7 +1739,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Activity*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Activity*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1757,7 +1757,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -1898,7 +1898,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Caption*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Caption*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2230,7 +2230,7 @@ object YouTube {
         
         inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
         
-        inline def setHintsVarargs(value: PropertyValue*): Self = StObject.set(x, "hints", js.Array(value :_*))
+        inline def setHintsVarargs(value: PropertyValue*): Self = StObject.set(x, "hints", js.Array(value*))
         
         inline def setImage(value: ImageSettings): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
@@ -2371,7 +2371,7 @@ object YouTube {
         
         inline def setPingsUndefined: Self = StObject.set(x, "pings", js.undefined)
         
-        inline def setPingsVarargs(value: ChannelConversionPing*): Self = StObject.set(x, "pings", js.Array(value :_*))
+        inline def setPingsVarargs(value: ChannelConversionPing*): Self = StObject.set(x, "pings", js.Array(value*))
       }
     }
     
@@ -2391,7 +2391,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -2417,7 +2417,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Channel*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Channel*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2435,7 +2435,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -2581,13 +2581,13 @@ object YouTube {
         
         inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
         
-        inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+        inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
         
         inline def setPlaylists(value: js.Array[String]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
         
         inline def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
         
-        inline def setPlaylistsVarargs(value: String*): Self = StObject.set(x, "playlists", js.Array(value :_*))
+        inline def setPlaylistsVarargs(value: String*): Self = StObject.set(x, "playlists", js.Array(value*))
       }
     }
     
@@ -2624,7 +2624,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ChannelSection*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ChannelSection*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2731,19 +2731,19 @@ object YouTube {
         
         inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
         
-        inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+        inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value*))
         
         inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
         
         inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
         
-        inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+        inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
         
         inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
         
         inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
         
-        inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+        inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
       }
     }
     
@@ -2810,7 +2810,7 @@ object YouTube {
         
         inline def setFeaturedChannelsUrlsUndefined: Self = StObject.set(x, "featuredChannelsUrls", js.undefined)
         
-        inline def setFeaturedChannelsUrlsVarargs(value: String*): Self = StObject.set(x, "featuredChannelsUrls", js.Array(value :_*))
+        inline def setFeaturedChannelsUrlsVarargs(value: String*): Self = StObject.set(x, "featuredChannelsUrls", js.Array(value*))
         
         inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
         
@@ -3000,13 +3000,13 @@ object YouTube {
         
         inline def setTopicCategoriesUndefined: Self = StObject.set(x, "topicCategories", js.undefined)
         
-        inline def setTopicCategoriesVarargs(value: String*): Self = StObject.set(x, "topicCategories", js.Array(value :_*))
+        inline def setTopicCategoriesVarargs(value: String*): Self = StObject.set(x, "topicCategories", js.Array(value*))
         
         inline def setTopicIds(value: js.Array[String]): Self = StObject.set(x, "topicIds", value.asInstanceOf[js.Any])
         
         inline def setTopicIdsUndefined: Self = StObject.set(x, "topicIds", js.undefined)
         
-        inline def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value :_*))
+        inline def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value*))
       }
     }
     
@@ -3061,7 +3061,7 @@ object YouTube {
       
       var pageInfo: js.UndefOr[PageInfo] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -3087,7 +3087,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Comment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Comment*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3101,7 +3101,7 @@ object YouTube {
         
         inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -3271,7 +3271,7 @@ object YouTube {
       
       var pageInfo: js.UndefOr[PageInfo] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -3297,7 +3297,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: CommentThread*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: CommentThread*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3311,7 +3311,7 @@ object YouTube {
         
         inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -3338,7 +3338,7 @@ object YouTube {
         
         inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
         
-        inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+        inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value*))
       }
     }
     
@@ -3624,7 +3624,7 @@ object YouTube {
         
         inline def setDjctqRatingReasonsUndefined: Self = StObject.set(x, "djctqRatingReasons", js.undefined)
         
-        inline def setDjctqRatingReasonsVarargs(value: String*): Self = StObject.set(x, "djctqRatingReasons", js.Array(value :_*))
+        inline def setDjctqRatingReasonsVarargs(value: String*): Self = StObject.set(x, "djctqRatingReasons", js.Array(value*))
         
         inline def setDjctqRatingUndefined: Self = StObject.set(x, "djctqRating", js.undefined)
         
@@ -3662,7 +3662,7 @@ object YouTube {
         
         inline def setFpbRatingReasonsUndefined: Self = StObject.set(x, "fpbRatingReasons", js.undefined)
         
-        inline def setFpbRatingReasonsVarargs(value: String*): Self = StObject.set(x, "fpbRatingReasons", js.Array(value :_*))
+        inline def setFpbRatingReasonsVarargs(value: String*): Self = StObject.set(x, "fpbRatingReasons", js.Array(value*))
         
         inline def setFpbRatingUndefined: Self = StObject.set(x, "fpbRating", js.undefined)
         
@@ -3912,7 +3912,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -3938,7 +3938,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: GuideCategory*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: GuideCategory*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3956,7 +3956,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -4061,7 +4061,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: I18nLanguage*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: I18nLanguage*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4168,7 +4168,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: I18nRegion*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: I18nRegion*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4476,7 +4476,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: PromotedItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: PromotedItem*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setPosition(value: InvideoPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
@@ -4718,7 +4718,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -4744,7 +4744,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: LiveBroadcast*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: LiveBroadcast*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4762,7 +4762,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -5165,7 +5165,7 @@ object YouTube {
       
       var pollingIntervalMillis: js.UndefOr[Double] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -5191,7 +5191,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: LiveChatMessage*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: LiveChatMessage*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5213,7 +5213,7 @@ object YouTube {
         
         inline def setPollingIntervalMillisUndefined: Self = StObject.set(x, "pollingIntervalMillis", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -5410,7 +5410,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -5436,7 +5436,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: LiveChatModerator*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: LiveChatModerator*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5454,7 +5454,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -5533,7 +5533,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: LiveChatPollItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: LiveChatPollItem*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
         
@@ -5591,7 +5591,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: LiveChatPollItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: LiveChatPollItem*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
         
@@ -5898,7 +5898,7 @@ object YouTube {
         
         inline def setConfigurationIssuesUndefined: Self = StObject.set(x, "configurationIssues", js.undefined)
         
-        inline def setConfigurationIssuesVarargs(value: LiveStreamConfigurationIssue*): Self = StObject.set(x, "configurationIssues", js.Array(value :_*))
+        inline def setConfigurationIssuesVarargs(value: LiveStreamConfigurationIssue*): Self = StObject.set(x, "configurationIssues", js.Array(value*))
         
         inline def setLastUpdateTimeSeconds(value: String): Self = StObject.set(x, "lastUpdateTimeSeconds", value.asInstanceOf[js.Any])
         
@@ -5926,7 +5926,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -5952,7 +5952,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: LiveStream*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: LiveStream*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5970,7 +5970,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -6077,7 +6077,7 @@ object YouTube {
         
         inline def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
         
-        inline def setLocalizedVarargs(value: LocalizedString*): Self = StObject.set(x, "localized", js.Array(value :_*))
+        inline def setLocalizedVarargs(value: LocalizedString*): Self = StObject.set(x, "localized", js.Array(value*))
       }
     }
     
@@ -6394,7 +6394,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -6420,7 +6420,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: PlaylistItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: PlaylistItem*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6438,7 +6438,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -6550,7 +6550,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -6576,7 +6576,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Playlist*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Playlist*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6594,7 +6594,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -6705,7 +6705,7 @@ object YouTube {
         
         inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
         
-        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
         
         inline def setThumbnails(value: ThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
         
@@ -6890,7 +6890,7 @@ object YouTube {
       
       var regionCode: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -6916,7 +6916,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: SearchResult*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: SearchResult*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6938,7 +6938,7 @@ object YouTube {
         
         inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -7085,7 +7085,7 @@ object YouTube {
       
       var pageInfo: js.UndefOr[PageInfo] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -7111,7 +7111,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Sponsor*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Sponsor*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7125,7 +7125,7 @@ object YouTube {
         
         inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -7268,7 +7268,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -7294,7 +7294,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Subscription*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Subscription*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7312,7 +7312,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -7465,7 +7465,7 @@ object YouTube {
       
       var pageInfo: js.UndefOr[PageInfo] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -7491,7 +7491,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: SuperChatEvent*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: SuperChatEvent*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7505,7 +7505,7 @@ object YouTube {
         
         inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -7738,7 +7738,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ThumbnailDetails*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ThumbnailDetails*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7984,7 +7984,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: VideoAbuseReportReason*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: VideoAbuseReportReason*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8019,7 +8019,7 @@ object YouTube {
         
         inline def setSecondaryReasonsUndefined: Self = StObject.set(x, "secondaryReasons", js.undefined)
         
-        inline def setSecondaryReasonsVarargs(value: VideoAbuseReportSecondaryReason*): Self = StObject.set(x, "secondaryReasons", js.Array(value :_*))
+        inline def setSecondaryReasonsVarargs(value: VideoAbuseReportSecondaryReason*): Self = StObject.set(x, "secondaryReasons", js.Array(value*))
       }
     }
     
@@ -8132,7 +8132,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -8158,7 +8158,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: VideoCategory*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: VideoCategory*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8176,7 +8176,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -8309,13 +8309,13 @@ object YouTube {
         
         inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
         
-        inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
+        inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value*))
         
         inline def setBlocked(value: js.Array[String]): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
         
         inline def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
         
-        inline def setBlockedVarargs(value: String*): Self = StObject.set(x, "blocked", js.Array(value :_*))
+        inline def setBlockedVarargs(value: String*): Self = StObject.set(x, "blocked", js.Array(value*))
       }
     }
     
@@ -8352,7 +8352,7 @@ object YouTube {
         
         inline def setAudioStreamsUndefined: Self = StObject.set(x, "audioStreams", js.undefined)
         
-        inline def setAudioStreamsVarargs(value: VideoFileDetailsAudioStream*): Self = StObject.set(x, "audioStreams", js.Array(value :_*))
+        inline def setAudioStreamsVarargs(value: VideoFileDetailsAudioStream*): Self = StObject.set(x, "audioStreams", js.Array(value*))
         
         inline def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
         
@@ -8386,7 +8386,7 @@ object YouTube {
         
         inline def setVideoStreamsUndefined: Self = StObject.set(x, "videoStreams", js.undefined)
         
-        inline def setVideoStreamsVarargs(value: VideoFileDetailsVideoStream*): Self = StObject.set(x, "videoStreams", js.Array(value :_*))
+        inline def setVideoStreamsVarargs(value: VideoFileDetailsVideoStream*): Self = StObject.set(x, "videoStreams", js.Array(value*))
       }
     }
     
@@ -8521,7 +8521,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: VideoRating*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: VideoRating*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8549,7 +8549,7 @@ object YouTube {
       
       var prevPageToken: js.UndefOr[String] = js.undefined
       
-      var tokenPagination: js.UndefOr[js.Any] = js.undefined
+      var tokenPagination: js.UndefOr[Any] = js.undefined
       
       // Schema.TokenPagination
       var visitorId: js.UndefOr[String] = js.undefined
@@ -8575,7 +8575,7 @@ object YouTube {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Video*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Video*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8593,7 +8593,7 @@ object YouTube {
         
         inline def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
         
-        inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+        inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
         
         inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
         
@@ -8836,7 +8836,7 @@ object YouTube {
         
         inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
         
-        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       }
     }
     
@@ -8971,7 +8971,7 @@ object YouTube {
         
         inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
         
-        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
         
         inline def setThumbnails(value: ThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
         
@@ -9112,31 +9112,31 @@ object YouTube {
         
         inline def setEditorSuggestionsUndefined: Self = StObject.set(x, "editorSuggestions", js.undefined)
         
-        inline def setEditorSuggestionsVarargs(value: String*): Self = StObject.set(x, "editorSuggestions", js.Array(value :_*))
+        inline def setEditorSuggestionsVarargs(value: String*): Self = StObject.set(x, "editorSuggestions", js.Array(value*))
         
         inline def setProcessingErrors(value: js.Array[String]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
         
         inline def setProcessingErrorsUndefined: Self = StObject.set(x, "processingErrors", js.undefined)
         
-        inline def setProcessingErrorsVarargs(value: String*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
+        inline def setProcessingErrorsVarargs(value: String*): Self = StObject.set(x, "processingErrors", js.Array(value*))
         
         inline def setProcessingHints(value: js.Array[String]): Self = StObject.set(x, "processingHints", value.asInstanceOf[js.Any])
         
         inline def setProcessingHintsUndefined: Self = StObject.set(x, "processingHints", js.undefined)
         
-        inline def setProcessingHintsVarargs(value: String*): Self = StObject.set(x, "processingHints", js.Array(value :_*))
+        inline def setProcessingHintsVarargs(value: String*): Self = StObject.set(x, "processingHints", js.Array(value*))
         
         inline def setProcessingWarnings(value: js.Array[String]): Self = StObject.set(x, "processingWarnings", value.asInstanceOf[js.Any])
         
         inline def setProcessingWarningsUndefined: Self = StObject.set(x, "processingWarnings", js.undefined)
         
-        inline def setProcessingWarningsVarargs(value: String*): Self = StObject.set(x, "processingWarnings", js.Array(value :_*))
+        inline def setProcessingWarningsVarargs(value: String*): Self = StObject.set(x, "processingWarnings", js.Array(value*))
         
         inline def setTagSuggestions(value: js.Array[VideoSuggestionsTagSuggestion]): Self = StObject.set(x, "tagSuggestions", value.asInstanceOf[js.Any])
         
         inline def setTagSuggestionsUndefined: Self = StObject.set(x, "tagSuggestions", js.undefined)
         
-        inline def setTagSuggestionsVarargs(value: VideoSuggestionsTagSuggestion*): Self = StObject.set(x, "tagSuggestions", js.Array(value :_*))
+        inline def setTagSuggestionsVarargs(value: VideoSuggestionsTagSuggestion*): Self = StObject.set(x, "tagSuggestions", js.Array(value*))
       }
     }
     
@@ -9159,7 +9159,7 @@ object YouTube {
         
         inline def setCategoryRestrictsUndefined: Self = StObject.set(x, "categoryRestricts", js.undefined)
         
-        inline def setCategoryRestrictsVarargs(value: String*): Self = StObject.set(x, "categoryRestricts", js.Array(value :_*))
+        inline def setCategoryRestrictsVarargs(value: String*): Self = StObject.set(x, "categoryRestricts", js.Array(value*))
         
         inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
@@ -9188,19 +9188,19 @@ object YouTube {
         
         inline def setRelevantTopicIdsUndefined: Self = StObject.set(x, "relevantTopicIds", js.undefined)
         
-        inline def setRelevantTopicIdsVarargs(value: String*): Self = StObject.set(x, "relevantTopicIds", js.Array(value :_*))
+        inline def setRelevantTopicIdsVarargs(value: String*): Self = StObject.set(x, "relevantTopicIds", js.Array(value*))
         
         inline def setTopicCategories(value: js.Array[String]): Self = StObject.set(x, "topicCategories", value.asInstanceOf[js.Any])
         
         inline def setTopicCategoriesUndefined: Self = StObject.set(x, "topicCategories", js.undefined)
         
-        inline def setTopicCategoriesVarargs(value: String*): Self = StObject.set(x, "topicCategories", js.Array(value :_*))
+        inline def setTopicCategoriesVarargs(value: String*): Self = StObject.set(x, "topicCategories", js.Array(value*))
         
         inline def setTopicIds(value: js.Array[String]): Self = StObject.set(x, "topicIds", value.asInstanceOf[js.Any])
         
         inline def setTopicIdsUndefined: Self = StObject.set(x, "topicIds", js.undefined)
         
-        inline def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value :_*))
+        inline def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value*))
       }
     }
     

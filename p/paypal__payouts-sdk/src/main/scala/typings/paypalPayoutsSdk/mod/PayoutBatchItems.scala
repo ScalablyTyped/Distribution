@@ -19,7 +19,7 @@ trait PayoutBatchItems extends StObject {
   
   var currency_conversion: js.UndefOr[PayoutCurrencyConversion] = js.undefined
   
-  var errors: js.UndefOr[js.Any] = js.undefined
+  var errors: js.UndefOr[Any] = js.undefined
   
   var links: js.UndefOr[js.Array[LinkDescription]] = js.undefined
   
@@ -56,7 +56,7 @@ object PayoutBatchItems {
     
     inline def setCurrency_conversionUndefined: Self = StObject.set(x, "currency_conversion", js.undefined)
     
-    inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
@@ -64,7 +64,7 @@ object PayoutBatchItems {
     
     inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    inline def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setPayout_batch_id(value: String): Self = StObject.set(x, "payout_batch_id", value.asInstanceOf[js.Any])
     

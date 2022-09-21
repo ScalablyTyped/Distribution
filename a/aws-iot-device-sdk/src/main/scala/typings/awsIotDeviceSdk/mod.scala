@@ -23,14 +23,12 @@ import typings.awsIotDeviceSdk.awsIotDeviceSdkStrings.wss
 import typings.mqtt.clientMod.ClientSubscribeCallback
 import typings.mqtt.clientMod.ISubscriptionGrant
 import typings.mqtt.clientMod.PacketCallback
+import typings.mqtt.clientOptionsMod.IClientOptions
 import typings.mqtt.clientOptionsMod.IClientPublishOptions
 import typings.mqtt.clientOptionsMod.IClientSubscribeOptions
 import typings.mqtt.mod.Client
-import typings.mqtt.mod.IClientOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Date
-import typings.std.Error
 import typings.ws.mod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +43,7 @@ object mod {
     * connection with the AWS IoT platform and with arguments as specified
     * in options.
     */
-  class device () extends EventEmitter {
+  open class device () extends EventEmitter {
     def this(options: DeviceOptions) = this()
     
     /**
@@ -60,36 +58,29 @@ object mod {
     def end(force: Boolean, callback: js.Function): Client = js.native
     def end(force: Unit, callback: js.Function): Client = js.native
     
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+    def on(event: connect | close | reconnect | offline, listener: js.Function0[Unit]): this.type = js.native
     // Error | string comes from:
     // https://github.com/aws/aws-iot-device-sdk-js/blob/97b0b46/device/index.js#L744
     // Remove when https://github.com/aws/aws-iot-device-sdk-js/issues/95 is fixed
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ Error | String, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ js.Error | String, Unit]): this.type = js.native
     /** Emitted when a message is received on a topic not related to any Thing Shadows */
     @JSName("on")
-    def on_message(event: message, listener: js.Function2[/* topic */ String, /* payload */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_offline(event: offline, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_reconnect(event: reconnect, listener: js.Function0[Unit]): this.type = js.native
+    def on_message(event: message, listener: js.Function2[/* topic */ String, /* payload */ Any, Unit]): this.type = js.native
     
     def publish(topic: String, message: String): Client = js.native
     def publish(
       topic: String,
       message: String,
       options: Unit,
-      callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
     ): Client = js.native
     def publish(topic: String, message: String, options: IClientPublishOptions): Client = js.native
     def publish(
       topic: String,
       message: String,
       options: IClientPublishOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
     ): Client = js.native
     // The following publish, subscribe, unsubscribe and end Definitions
     // are derived from the mqtt definition as they are re-surfaced through
@@ -108,14 +99,14 @@ object mod {
       topic: String,
       message: Buffer,
       options: Unit,
-      callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
     ): Client = js.native
     def publish(topic: String, message: Buffer, options: IClientPublishOptions): Client = js.native
     def publish(
       topic: String,
       message: Buffer,
       options: IClientPublishOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
     ): Client = js.native
     
     /**
@@ -150,7 +141,7 @@ object mod {
       * This method is designed to be invoked during the callback of the
       * getCredentialsForIdentity method in the AWS SDK for JavaScript.
       */
-    def updateWebSocketCredentials(accessKeyId: String, secretKey: String, sessionToken: String, expiration: Date): Unit = js.native
+    def updateWebSocketCredentials(accessKeyId: String, secretKey: String, sessionToken: String, expiration: js.Date): Unit = js.native
   }
   
   @JSImport("aws-iot-device-sdk", "jobs")
@@ -161,7 +152,7 @@ object mod {
     * are the same as those in the device class and the `jobs` class supports all of the
     * same events and functions as the `device` class.
     */
-  class jobs () extends device {
+  open class jobs () extends device {
     def this(options: DeviceOptions) = this()
     
     /**
@@ -171,7 +162,7 @@ object mod {
       * @param thingName - name of the Thing to cancel job execution notifications for
       * @param callback - function (err) callback for when the startJobNotifications operation completes
       */
-    def startJobNotifications(thingName: String, callback: js.Function1[/* error */ Error, Unit]): Client = js.native
+    def startJobNotifications(thingName: String, callback: js.Function1[/* error */ js.Error, Unit]): Client = js.native
     
     /**
       * Subscribes to job execution notifications for the thing named `thingName`. If
@@ -192,7 +183,7 @@ object mod {
     def subscribeToJobs(
       thingName: String,
       operationName: String,
-      callback: js.Function2[/* err */ Error, /* job */ job, Unit]
+      callback: js.Function2[/* err */ js.Error, /* job */ job, Unit]
     ): Unit = js.native
     
     /**
@@ -204,12 +195,12 @@ object mod {
       * @param operationName - optional name of previously subscribed operation names
       * @param callback - function (err) callback for when the unsubscribe operation completes
       */
-    def unsubscribeFromJobs(thingName: String, operationName: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def unsubscribeFromJobs(thingName: String, operationName: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   }
   
   @JSImport("aws-iot-device-sdk", "thingShadow")
   @js.native
-  class thingShadow () extends EventEmitter {
+  open class thingShadow () extends EventEmitter {
     def this(options: ThingShadowOptions) = this()
     
     /**
@@ -261,15 +252,11 @@ object mod {
     def get(thingName: String): String | Null = js.native
     def get(thingName: String, clientToken: String): String | Null = js.native
     
+    def on(event: connect | close | reconnect | offline, listener: js.Function0[Unit]): this.type = js.native
     /** Emitted when a different client"s update or delete operation is accepted on the shadow. */
     def on(
       event: foreignStateChange,
-      listener: js.Function3[
-          /* thingName */ String, 
-          /* operation */ update | delete, 
-          /* stateObject */ js.Any, 
-          Unit
-        ]
+      listener: js.Function3[/* thingName */ String, /* operation */ update | delete, /* stateObject */ Any, Unit]
     ): this.type = js.native
     /**
       * Emitted when an operation update|get|delete completes.
@@ -289,26 +276,18 @@ object mod {
           /* thingName */ String, 
           /* operationStatus */ accepted | rejected, 
           /* clientToken */ String, 
-          /* stateObject */ js.Any, 
+          /* stateObject */ Any, 
           Unit
         ]
     ): this.type = js.native
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
     /** Emitted when a delta has been received for a registered Thing Shadow. */
     @JSName("on")
-    def on_delta(event: delta, listener: js.Function2[/* thingName */ String, /* stateObject */ js.Any, Unit]): this.type = js.native
+    def on_delta(event: delta, listener: js.Function2[/* thingName */ String, /* stateObject */ Any, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     /** Emitted when a message is received on a topic not related to any Thing Shadows */
     @JSName("on")
-    def on_message(event: message, listener: js.Function2[/* topic */ String, /* payload */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_offline(event: offline, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_reconnect(event: reconnect, listener: js.Function0[Unit]): this.type = js.native
+    def on_message(event: message, listener: js.Function2[/* topic */ String, /* payload */ Any, Unit]): this.type = js.native
     /** Emitted when an operation update|get|delete has timed out. */
     @JSName("on")
     def on_timeout(event: timeout, listener: js.Function2[/* thingName */ String, /* clientToken */ String, Unit]): this.type = js.native
@@ -350,13 +329,13 @@ object mod {
     def register(
       thingName: String,
       options: Unit,
-      callback: js.Function2[/* error */ Error, /* failedTopics */ js.Array[ISubscriptionGrant], Unit]
+      callback: js.Function2[/* error */ js.Error, /* failedTopics */ js.Array[ISubscriptionGrant], Unit]
     ): Unit = js.native
     def register(thingName: String, options: RegisterOptions): Unit = js.native
     def register(
       thingName: String,
       options: RegisterOptions,
-      callback: js.Function2[/* error */ Error, /* failedTopics */ js.Array[ISubscriptionGrant], Unit]
+      callback: js.Function2[/* error */ js.Error, /* failedTopics */ js.Array[ISubscriptionGrant], Unit]
     ): Unit = js.native
     
     /**
@@ -415,7 +394,7 @@ object mod {
       * Note that it should be of atomic type (i.e. numeric or string).
       * This function returns "null" if an operation is already in progress.
       */
-    def update(thingName: String, stateObject: js.Any): String | Null = js.native
+    def update(thingName: String, stateObject: Any): String | Null = js.native
   }
   
   trait DeviceOptions
@@ -726,9 +705,9 @@ object mod {
       * @param callback - function(err) optional callback for when the operation completes, err is null if no error occurred
       */
     def failed(): Unit = js.native
-    def failed(statusDetails: Unit, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def failed(statusDetails: Unit, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def failed(statusDetails: statusDetails): Unit = js.native
-    def failed(statusDetails: statusDetails, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def failed(statusDetails: statusDetails, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     /** Object that contains job execution information and functions for updating job execution status. */
     /** Returns the job id. */
@@ -741,9 +720,9 @@ object mod {
       * @param callback - function(err) optional callback for when the operation completes, err is null if no error occurred
       */
     def inProgress(): Unit = js.native
-    def inProgress(statusDetails: Unit, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def inProgress(statusDetails: Unit, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def inProgress(statusDetails: statusDetails): Unit = js.native
-    def inProgress(statusDetails: statusDetails, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def inProgress(statusDetails: statusDetails, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     /**
       * Returns the job operation from the job document. Eg. 'install', 'reboot', etc.
@@ -762,12 +741,12 @@ object mod {
       * @param callback - function(err) optional callback for when the operation completes, err is null if no error occurred
       */
     def succeeded(): Unit = js.native
-    def succeeded(statusDetails: Unit, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def succeeded(statusDetails: Unit, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def succeeded(statusDetails: statusDetails): Unit = js.native
-    def succeeded(statusDetails: statusDetails, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def succeeded(statusDetails: statusDetails, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   }
   
-  type jobDocument = StringDictionary[js.Any]
+  type jobDocument = StringDictionary[Any]
   
   trait jobStatus extends StObject {
     

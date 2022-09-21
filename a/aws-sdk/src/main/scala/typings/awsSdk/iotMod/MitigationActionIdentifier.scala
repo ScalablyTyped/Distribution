@@ -19,7 +19,7 @@ trait MitigationActionIdentifier extends StObject {
   /**
     * The date when this mitigation action was created.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
 }
 object MitigationActionIdentifier {
   
@@ -38,7 +38,7 @@ object MitigationActionIdentifier {
     
     inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
   }

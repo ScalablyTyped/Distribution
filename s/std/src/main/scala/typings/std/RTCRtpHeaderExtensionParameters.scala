@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCRtpHeaderExtensionParameters extends StObject {
   
+  /* standard dom */
   var encrypted: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var id: Double
   
+  /* standard dom */
   var uri: java.lang.String
 }
 object RTCRtpHeaderExtensionParameters {

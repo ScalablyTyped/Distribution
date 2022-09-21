@@ -10,14 +10,14 @@ object plugins {
   
   @JSGlobal("SinonChrome.plugins.CookiePlugin")
   @js.native
-  class CookiePlugin ()
+  open class CookiePlugin ()
     extends typings.sinonChrome.mod.plugins.CookiePlugin {
     def this(state: js.Array[Cookie]) = this()
   }
   
   @JSGlobal("SinonChrome.plugins.I18nPlugin")
   @js.native
-  class I18nPlugin ()
+  open class I18nPlugin ()
     extends typings.sinonChrome.mod.plugins.I18nPlugin {
     def this(translations: Translations) = this()
   }

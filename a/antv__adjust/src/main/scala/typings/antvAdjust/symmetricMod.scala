@@ -8,14 +8,14 @@ object symmetricMod {
   
   @JSImport("@antv/adjust/lib/adjusts/symmetric", JSImport.Default)
   @js.native
-  class default () extends Symmetric
+  open class default () extends Symmetric
   
   @js.native
   trait Symmetric
     extends typings.antvAdjust.adjustMod.default {
     
-    /* private */ var getDimMaxValue: js.Any = js.native
+    /* private */ var getDimMaxValue: Any = js.native
     
-    /* private */ var getXValuesMaxMap: js.Any = js.native
+    /* private */ var getXValuesMaxMap: Any = js.native
   }
 }

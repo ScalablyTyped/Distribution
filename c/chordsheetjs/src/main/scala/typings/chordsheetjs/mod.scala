@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("chordsheetjs", "ChordLyricsPair")
   @js.native
-  class ChordLyricsPair protected () extends StObject {
+  open class ChordLyricsPair protected () extends StObject {
     /**
       * Initialises a ChordLyricsPair
       * @param chords The chords
@@ -31,7 +31,7 @@ object mod {
   
   @JSImport("chordsheetjs", "ChordProFormatter")
   @js.native
-  class ChordProFormatter () extends StObject {
+  open class ChordProFormatter () extends StObject {
     
     /**
       * Formats a song into a ChordPro chord sheet.
@@ -56,7 +56,7 @@ object mod {
   
   @JSImport("chordsheetjs", "ChordProParser")
   @js.native
-  class ChordProParser () extends StObject {
+  open class ChordProParser () extends StObject {
     
     def addWarning(message: String): Unit = js.native
     
@@ -99,7 +99,7 @@ object mod {
   
   @JSImport("chordsheetjs", "ChordSheetParser")
   @js.native
-  class ChordSheetParser protected () extends StObject {
+  open class ChordSheetParser protected () extends StObject {
     def this(props: ChordSheetParserProps) = this()
     
     def addCharacter(chr: String, nextChar: String): Unit = js.native
@@ -147,7 +147,7 @@ object mod {
   
   @JSImport("chordsheetjs", "HtmlDivFormatter")
   @js.native
-  class HtmlDivFormatter () extends StObject {
+  open class HtmlDivFormatter () extends StObject {
     
     /**
       * Formats a song into HTML.
@@ -158,7 +158,7 @@ object mod {
   
   @JSImport("chordsheetjs", "HtmlTableFormatter")
   @js.native
-  class HtmlTableFormatter () extends StObject {
+  open class HtmlTableFormatter () extends StObject {
     
     /**
       * Formats a song into HTML.
@@ -169,7 +169,7 @@ object mod {
   
   @JSImport("chordsheetjs", "Line")
   @js.native
-  class Line () extends StObject {
+  open class Line () extends StObject {
     
     def addChordLyricsPair(chords: String, lyrics: String): ChordLyricsPair = js.native
     def addChordLyricsPair(chords: ChordLyricsPair, lyrics: String): ChordLyricsPair = js.native
@@ -232,7 +232,7 @@ object mod {
   
   @JSImport("chordsheetjs", "Paragraph")
   @js.native
-  class Paragraph () extends StObject {
+  open class Paragraph () extends StObject {
     
     def addLine(line: Line): Unit = js.native
     
@@ -250,7 +250,7 @@ object mod {
   
   @JSImport("chordsheetjs", "ParserWarning")
   @js.native
-  class ParserWarning () extends StObject {
+  open class ParserWarning () extends StObject {
     
     /**
       * The line number on which the warning occurred
@@ -265,7 +265,7 @@ object mod {
   
   @JSImport("chordsheetjs", "Song")
   @js.native
-  class Song protected () extends StObject {
+  open class Song protected () extends StObject {
     def this(metadata: js.Object) = this()
     
     def addChordLyricsPair(): ChordLyricsPair = js.native
@@ -328,7 +328,7 @@ object mod {
   
   @JSImport("chordsheetjs", "Tag")
   @js.native
-  class Tag protected () extends StObject {
+  open class Tag protected () extends StObject {
     def this(name: String) = this()
     def this(name: String, value: String) = this()
     
@@ -376,7 +376,7 @@ object mod {
   
   @JSImport("chordsheetjs", "TextFormatter")
   @js.native
-  class TextFormatter () extends StObject {
+  open class TextFormatter () extends StObject {
     
     def chordLyricsPairLength(chordLyricsPair: ChordLyricsPair): Double = js.native
     

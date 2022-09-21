@@ -25,7 +25,7 @@ object ListContainersResponse {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setContainerVarargs(value: Container*): Self = StObject.set(x, "container", js.Array(value :_*))
+    inline def setContainerVarargs(value: Container*): Self = StObject.set(x, "container", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

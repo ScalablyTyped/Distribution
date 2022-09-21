@@ -9,7 +9,7 @@ object util {
   
   @JSImport("tinymce", "util.Color")
   @js.native
-  class Color protected () extends StObject {
+  open class Color protected () extends StObject {
     def this(value: String) = this()
     def this(value: js.Object) = this()
     
@@ -24,7 +24,7 @@ object util {
   
   @JSImport("tinymce", "util.Observable")
   @js.native
-  class Observable () extends StObject {
+  open class Observable () extends StObject {
     
     def fire(name: String): js.Object = js.native
     def fire(name: String, args: js.Object): js.Object = js.native
@@ -38,15 +38,15 @@ object util {
     def off(name: String, callback: js.Function0[Unit]): js.Object = js.native
     def off(name: Unit, callback: js.Function0[Unit]): js.Object = js.native
     
-    def on(name: String, callback: js.Function1[/* event */ js.Any, Unit]): js.Object = js.native
-    def on(name: String, callback: js.Function1[/* event */ js.Any, Unit], first: Boolean): js.Object = js.native
+    def on(name: String, callback: js.Function1[/* event */ Any, Unit]): js.Object = js.native
+    def on(name: String, callback: js.Function1[/* event */ Any, Unit], first: Boolean): js.Object = js.native
     
-    def once(name: String, callback: js.Function1[/* event */ js.Any, Unit]): js.Object = js.native
+    def once(name: String, callback: js.Function1[/* event */ Any, Unit]): js.Object = js.native
   }
   
   @JSImport("tinymce", "util.URI")
   @js.native
-  class URI protected () extends StObject {
+  open class URI protected () extends StObject {
     def this(url: String) = this()
     def this(url: String, settings: js.Object) = this()
     

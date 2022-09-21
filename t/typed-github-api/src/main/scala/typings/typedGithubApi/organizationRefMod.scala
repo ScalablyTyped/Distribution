@@ -24,18 +24,28 @@ object organizationRefMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrganizationRef * / any */ @JSImport("typed-github-api/dist/organization-ref", "OrganizationRefClass")
   @js.native
-  class OrganizationRefClass protected () extends GitHubRef {
+  open class OrganizationRefClass protected () extends GitHubRef {
     def this(login: String, options: OptionsOrRef) = this()
     
     def getRepository(name: String): RepositoryRef = js.native
     
     def loadAsync(): js.Promise[Organization | Null] = js.native
     
+    def loadRepositoriesAsync(): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all | public | `private` | forks | sources | member): js.Promise[js.Array[Repository]] = js.native
     def loadRepositoriesAsync(
-      _type: js.UndefOr[all | public | `private` | forks | sources | member],
-      _sort: js.UndefOr[created | updated | pushed | full_name],
-      _ascending: js.UndefOr[Boolean]
+      _type: all | public | `private` | forks | sources | member,
+      _sort: created | updated | pushed | full_name
     ): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(
+      _type: all | public | `private` | forks | sources | member,
+      _sort: created | updated | pushed | full_name,
+      _ascending: Boolean
+    ): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: all | public | `private` | forks | sources | member, _sort: Unit, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: Unit, _sort: created | updated | pushed | full_name): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: Unit, _sort: created | updated | pushed | full_name, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(_type: Unit, _sort: Unit, _ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
     
     var login: String = js.native
   }

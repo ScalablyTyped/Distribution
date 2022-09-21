@@ -12,7 +12,7 @@ trait OptionGroupMembership extends StObject {
   var OptionGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the DB instance's option group membership. Valid values are: in-sync, pending-apply, pending-removal, pending-maintenance-apply, pending-maintenance-removal, applying, removing, and failed. 
+    * The status of the DB instance's option group membership. Valid values are: in-sync, pending-apply, pending-removal, pending-maintenance-apply, pending-maintenance-removal, applying, removing, and failed.
     */
   var Status: js.UndefOr[String] = js.undefined
 }

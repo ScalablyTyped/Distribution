@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cloudComputingMod extends Shortcut {
   
-  @JSImport("@carbon/pictograms-react/lib/cloud--computing", JSImport.Default)
+  @JSImport("@carbon/pictograms-react/lib/cloud--computing", JSImport.Namespace)
   @js.native
-  val default: CarbonPictogramType = js.native
+  val ^ : CarbonPictogramType = js.native
   
   type _To = CarbonPictogramType
   
-  /* This means you don't have to write `default`, but can instead just say `cloudComputingMod.foo` */
-  override def _to: CarbonPictogramType = default
+  /* This means you don't have to write `^`, but can instead just say `cloudComputingMod.foo` */
+  override def _to: CarbonPictogramType = ^
 }

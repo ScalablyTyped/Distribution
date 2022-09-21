@@ -7,12 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Endpoint extends StObject {
   
   /**
-    * DEPRECATED: This field is no longer supported. Instead of using aliases, please specify multiple google.api.Endpoint for each of the intended aliases. Additional names that this
-    * endpoint will be hosted on.
-    */
-  var aliases: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
     * Allowing [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), aka cross-domain traffic, would allow the backends served from this endpoint to receive and respond to
     * HTTP OPTIONS requests. The response will be used by the browser to determine whether the subsequent cross-origin request is allowed to proceed.
     */
@@ -35,12 +29,6 @@ object Endpoint {
   }
   
   extension [Self <: Endpoint](x: Self) {
-    
-    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
-    
-    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
-    
-    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
     inline def setAllowCors(value: Boolean): Self = StObject.set(x, "allowCors", value.asInstanceOf[js.Any])
     

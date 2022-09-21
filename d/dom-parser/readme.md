@@ -10,10 +10,10 @@ Fast dom parser based on regexps
 | ------------------ | :-------------: |
 | Full name          | dom-parser |
 | Keywords           | domparser, dom, parser, xml, html, xmlparser, htmlparser, scraping |
-| # releases         | 2 |
-| # dependents       | 39 |
-| # downloads        | 530337 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 92965.66666666667 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/ershov-konst/dom-parser#readme)

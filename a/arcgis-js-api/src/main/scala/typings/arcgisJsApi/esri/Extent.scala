@@ -72,12 +72,16 @@ trait Extent
   /**
     * The maximum possible `m` value in an extent envelope.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmax)
     */
   var mmax: Double = js.native
   
   /**
     * The minimum possible `m` value of an extent envelope.
+    *
+    * @default undefined
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmin)
     */
@@ -117,12 +121,16 @@ trait Extent
   /**
     * The maximum X-coordinate of an extent envelope.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmax)
     */
   var xmax: Double = js.native
   
   /**
     * The minimum X-coordinate of an extent envelope.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmin)
     */
@@ -131,12 +139,16 @@ trait Extent
   /**
     * The maximum Y-coordinate of an extent envelope.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymax)
     */
   var ymax: Double = js.native
   
   /**
     * The minimum Y-coordinate of an extent envelope.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymin)
     */
@@ -145,12 +157,16 @@ trait Extent
   /**
     * The maximum possible `z`, or elevation, value in an extent envelope.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmax)
     */
   var zmax: Double = js.native
   
   /**
     * The minimum possible `z`, or elevation, value of an extent envelope.
+    *
+    * @default undefined
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmin)
     */

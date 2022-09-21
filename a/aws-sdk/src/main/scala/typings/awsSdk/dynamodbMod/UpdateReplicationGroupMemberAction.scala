@@ -12,7 +12,7 @@ trait UpdateReplicationGroupMemberAction extends StObject {
   var GlobalSecondaryIndexes: js.UndefOr[ReplicaGlobalSecondaryIndexList] = js.undefined
   
   /**
-    * The AWS KMS customer master key (CMK) of the replica that should be used for AWS KMS encryption. To specify a CMK, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB KMS master key alias/aws/dynamodb.
+    * The KMS key of the replica that should be used for KMS encryption. To specify a key, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB KMS key alias/aws/dynamodb.
     */
   var KMSMasterKeyId: js.UndefOr[typings.awsSdk.dynamodbMod.KMSMasterKeyId] = js.undefined
   
@@ -25,6 +25,11 @@ trait UpdateReplicationGroupMemberAction extends StObject {
     * The Region where the replica exists.
     */
   var RegionName: typings.awsSdk.dynamodbMod.RegionName
+  
+  /**
+    * Replica-specific table class. If not specified, uses the source table's table class.
+    */
+  var TableClassOverride: js.UndefOr[TableClass] = js.undefined
 }
 object UpdateReplicationGroupMemberAction {
   
@@ -39,7 +44,7 @@ object UpdateReplicationGroupMemberAction {
     
     inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
     
-    inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+    inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
     
     inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
     
@@ -50,5 +55,9 @@ object UpdateReplicationGroupMemberAction {
     inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
     
     inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+    
+    inline def setTableClassOverride(value: TableClass): Self = StObject.set(x, "TableClassOverride", value.asInstanceOf[js.Any])
+    
+    inline def setTableClassOverrideUndefined: Self = StObject.set(x, "TableClassOverride", js.undefined)
   }
 }

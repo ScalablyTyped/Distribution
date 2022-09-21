@@ -30,7 +30,7 @@ object AddressBookSourceDialog {
     acquire: () => Unit,
     createWithDataSource: (XWindow, XPropertySet, String, String, String) => Unit,
     execute: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTitle: String => Unit
   ): AddressBookSourceDialog = {

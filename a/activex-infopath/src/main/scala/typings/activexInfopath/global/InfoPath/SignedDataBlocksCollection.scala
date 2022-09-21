@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SignedDataBlocksCollection")
 @js.native
-/* private */ class SignedDataBlocksCollection ()
+/* private */ open class SignedDataBlocksCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.SignedDataBlocksCollection {
   
@@ -18,5 +18,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var InfoPathDotSignedDataBlocksCollection_typekey: typings.activexInfopath.InfoPath.SignedDataBlocksCollection = js.native
   
   /* CompleteClass */
-  override def Item(varIndex: js.Any): typings.activexInfopath.InfoPath.SignedDataBlockObject = js.native
+  override def Item(varIndex: Any): typings.activexInfopath.InfoPath.SignedDataBlockObject = js.native
 }

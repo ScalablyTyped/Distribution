@@ -1,9 +1,6 @@
 package typings.vueNiceDates
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import typings.vueNiceDates.anon.HandleClickDate
 import typings.vueNiceDates.anon.OmitDatePickerPropsisFocu
 import typings.vueNiceDates.anon.ReceivedDate
@@ -13,20 +10,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object datePickerCalendarMod {
   
-  @js.native
-  trait DatePickerCalendar
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait DatePickerCalendar extends StObject {
     
-    def date(): ReceivedDate = js.native
+    def date(): ReceivedDate
     
-    var methods: HandleClickDate = js.native
+    var methods: HandleClickDate
     
-    var props: OmitDatePickerPropsisFocu = js.native
+    var props: OmitDatePickerPropsisFocu
     
-    var watch: StringDictionary[js.Function1[/* date */ Date, Unit]] = js.native
+    var watch: StringDictionary[js.Function1[/* date */ js.Date, Unit]]
   }
-  @JSImport("vue-nice-dates/DatePickerCalendar", "DatePickerCalendar")
-  @js.native
-  val DatePickerCalendar: typings.vueNiceDates.datePickerCalendarMod.DatePickerCalendar = js.native
+  object DatePickerCalendar {
+    
+    @JSImport("vue-nice-dates/DatePickerCalendar", "DatePickerCalendar")
+    @js.native
+    val ^ : DatePickerCalendar = js.native
+    
+    extension [Self <: DatePickerCalendar](x: Self) {
+      
+      inline def setDate(value: () => ReceivedDate): Self = StObject.set(x, "date", js.Any.fromFunction0(value))
+      
+      inline def setMethods(value: HandleClickDate): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: OmitDatePickerPropsisFocu): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setWatch(value: StringDictionary[js.Function1[/* date */ js.Date, Unit]]): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    }
+  }
 }

@@ -12,7 +12,7 @@ trait GetEmailTemplateResponse extends StObject {
   var TemplateContent: EmailTemplateContent
   
   /**
-    * The name of the template you want to retrieve.
+    * The name of the template.
     */
   var TemplateName: EmailTemplateName
 }

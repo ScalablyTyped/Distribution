@@ -10,10 +10,10 @@ ASCII cats all up in your node.js
 | ------------------ | :-------------: |
 | Full name          | ascii-cats |
 | Keywords           | cats, ascii, art |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 496 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 129.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/bbihq/ascii-cats)

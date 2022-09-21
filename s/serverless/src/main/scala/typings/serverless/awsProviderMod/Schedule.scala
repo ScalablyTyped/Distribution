@@ -18,11 +18,11 @@ trait Schedule extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var rate: String
+  var rate: String | js.Array[String]
 }
 object Schedule {
   
-  inline def apply(rate: String): Schedule = {
+  inline def apply(rate: String | js.Array[String]): Schedule = {
     val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]
   }
@@ -53,6 +53,8 @@ object Schedule {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: String | js.Array[String]): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    
+    inline def setRateVarargs(value: String*): Self = StObject.set(x, "rate", js.Array(value*))
   }
 }

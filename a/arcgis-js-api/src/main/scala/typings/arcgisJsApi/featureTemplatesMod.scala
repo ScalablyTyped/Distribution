@@ -22,7 +22,7 @@ object featureTemplatesMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with FeatureTemplates {
     def this(properties: FeatureTemplatesProperties) = this()

@@ -1,25 +1,33 @@
 package typings.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type EventCallback = js.Function1[/* data */ js.Object, scala.Unit]
+type DisplayConditionCallback = js.Function2[
+/* data */ DisplayCondition | EmptyDisplayCondition, 
+/* done */ DisplayConditionDoneCallback, 
+Unit]
 
-type ExportHtmlCallback = js.Function1[/* data */ typings.reactEmailEditor.mod.HtmlExport, scala.Unit]
+type DisplayConditionDoneCallback = js.Function1[/* data */ DisplayCondition | Null, Unit]
 
-type FileUploadCallback = js.Function2[
-/* file */ typings.reactEmailEditor.mod.FileInfo, 
-/* done */ typings.reactEmailEditor.mod.FileUploadDoneCallback, 
-scala.Unit]
+type EmptyDisplayCondition = js.Object
 
-type FileUploadDoneCallback = js.Function1[/* data */ typings.reactEmailEditor.mod.FileUploadDoneData, scala.Unit]
+type EventCallback = js.Function1[/* data */ js.Object, Unit]
 
-type SaveDesignCallback = js.Function1[/* data */ typings.reactEmailEditor.mod.Design, scala.Unit]
+type ExportHtmlCallback = js.Function1[/* data */ HtmlExport, Unit]
 
-type StringList = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type FileUploadCallback = js.Function2[/* file */ FileInfo, /* done */ FileUploadDoneCallback, Unit]
 
-type ToolsConfig = org.scalablytyped.runtime.StringDictionary[typings.reactEmailEditor.mod.ToolConfig]
+type FileUploadDoneCallback = js.Function1[/* data */ FileUploadDoneData, Unit]
 
-type Translations = typings.std.Record[java.lang.String, typings.std.Record[java.lang.String, java.lang.String]]
+type SaveDesignCallback = js.Function1[/* data */ Design, Unit]
+
+type StringList = StringDictionary[String]
+
+type ToolsConfig = StringDictionary[ToolConfig]
+
+type Translations = Record[String, Record[String, String]]

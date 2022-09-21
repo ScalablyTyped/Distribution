@@ -10,17 +10,17 @@ object mod {
   
   @JSImport("chrome-trace-event", "Tracer")
   @js.native
-  class Tracer () extends Readable {
+  open class Tracer () extends Readable {
     def this(opts: TracerOptions) = this()
     
-    /* private */ def _flush(): js.Any = js.native
+    /* private */ var _flush: Any = js.native
     
-    /* private */ var _objectMode: js.Any = js.native
+    /* private */ var _objectMode: Any = js.native
     
     /** Node Stream internal APIs */
-    /* private */ var _push: js.Any = js.native
+    /* private */ var _push: Any = js.native
     
-    /* private */ def _pushString(ev: js.Any): js.Any = js.native
+    /* private */ var _pushString: Any = js.native
     
     def begin(fields: Fields): Unit = js.native
     
@@ -30,11 +30,11 @@ object mod {
     
     def end(fields: Fields): Unit = js.native
     
-    /* private */ var events: js.Any = js.native
+    /* private */ var events: Any = js.native
     
-    /* private */ var fields: js.Any = js.native
+    /* private */ var fields: Any = js.native
     
-    /* private */ var firstPush: js.Any = js.native
+    /* private */ var firstPush: Any = js.native
     
     /**
       * If in no streamMode in order to flush out the trace
@@ -46,14 +46,14 @@ object mod {
     
     def mkEventFunc(ph: String): js.Function1[/* fields */ Fields, Unit] = js.native
     
-    /* private */ var noStream: js.Any = js.native
+    /* private */ var noStream: Any = js.native
     
-    /* private */ var parent: js.Any = js.native
+    /* private */ var parent: Any = js.native
   }
   
   trait Event
     extends StObject
-       with /* otherData */ StringDictionary[js.Any] {
+       with /* otherData */ StringDictionary[Any] {
     
     /** event phase */
     var ph: js.UndefOr[String] = js.undefined
@@ -87,11 +87,11 @@ object mod {
   
   trait Fields
     extends StObject
-       with /* otherData */ StringDictionary[js.Any] {
+       with /* otherData */ StringDictionary[Any] {
     
-    var args: js.UndefOr[js.Any] = js.undefined
+    var args: js.UndefOr[Any] = js.undefined
     
-    var cat: js.UndefOr[js.Any] = js.undefined
+    var cat: js.UndefOr[Any] = js.undefined
   }
   object Fields {
     
@@ -102,11 +102,11 @@ object mod {
     
     extension [Self <: Fields](x: Self) {
       
-      inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setCat(value: js.Any): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
+      inline def setCat(value: Any): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
       
       inline def setCatUndefined: Self = StObject.set(x, "cat", js.undefined)
     }

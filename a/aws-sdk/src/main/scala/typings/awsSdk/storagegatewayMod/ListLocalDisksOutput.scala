@@ -26,7 +26,7 @@ object ListLocalDisksOutput {
     
     inline def setDisksUndefined: Self = StObject.set(x, "Disks", js.undefined)
     
-    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "Disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "Disks", js.Array(value*))
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

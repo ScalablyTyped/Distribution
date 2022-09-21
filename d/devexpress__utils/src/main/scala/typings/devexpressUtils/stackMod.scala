@@ -8,17 +8,17 @@ object stackMod {
   
   @JSImport("@devexpress/utils/lib/class/stack", "Stack")
   @js.native
-  class Stack[T] () extends StObject {
+  open class Stack[T] () extends StObject {
     
-    /* private */ var _count: js.Any = js.native
+    /* private */ var _count: Any = js.native
     
-    val count: Double = js.native
+    def count: Double = js.native
     
     def getPrevious(): T = js.native
     
     var last: js.UndefOr[T] = js.native
     
-    /* private */ var list: js.Any = js.native
+    /* private */ var list: Any = js.native
     
     def peek(): js.UndefOr[T] = js.native
     

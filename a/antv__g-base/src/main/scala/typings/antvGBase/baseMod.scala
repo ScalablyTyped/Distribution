@@ -12,7 +12,7 @@ object baseMod {
   @JSImport("@antv/g-base/lib/abstract/base", JSImport.Default)
   @js.native
   abstract class default protected () extends Base {
-    def this(cfg: js.Any) = this()
+    def this(cfg: Any) = this()
   }
   
   @js.native
@@ -20,7 +20,7 @@ object baseMod {
     extends typings.antvEventEmitter.mod.default
        with IBase {
     
-    def get(name: js.Any): js.Any = js.native
+    def get(name: Any): Any = js.native
     
     /**
       * @protected
@@ -30,7 +30,7 @@ object baseMod {
     def getDefaultCfg(): js.Object = js.native
     
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & Any = js.native
     
     /**
       * 取消监听一个事件，或者一个channel
@@ -38,11 +38,11 @@ object baseMod {
       * @param callback
       */
     /* InferMemberOverrides */
-    override def off(): this.type & js.Any = js.native
+    override def off(): this.type & Any = js.native
     /* InferMemberOverrides */
-    override def off(evt: String): this.type & js.Any = js.native
+    override def off(evt: String): this.type & Any = js.native
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & Any = js.native
     
     /**
       * 监听一个事件
@@ -51,8 +51,8 @@ object baseMod {
       * @param once
       */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & Any = js.native
     
-    def set(name: js.Any, value: js.Any): Unit = js.native
+    def set(name: Any, value: Any): Unit = js.native
   }
 }

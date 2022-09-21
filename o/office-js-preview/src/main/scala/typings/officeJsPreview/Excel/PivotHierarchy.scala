@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel PivotHierarchy.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @js.native
@@ -26,17 +26,17 @@ trait PivotHierarchy
   var context_PivotHierarchy: RequestContext = js.native
   
   /**
-    *
     * Returns the PivotFields associated with the PivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val fields: PivotFieldCollection = js.native
   
   /**
+    * ID of the PivotHierarchy.
     *
-    * Id of the PivotHierarchy.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val id: String = js.native
@@ -53,21 +53,15 @@ trait PivotHierarchy
   def load(propertyNames: js.Array[String]): PivotHierarchy = js.native
   
   /**
-    *
     * Name of the PivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: String = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.PivotHierarchy): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isCallableMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(mixedVar: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(mixedVar: js.Any, syntaxOnly: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(mixedVar: js.Any, syntaxOnly: js.Any, callableName: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any], callableName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(mixedVar: js.Any, syntaxOnly: Unit, callableName: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any], callableName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(mixedVar: Unit, syntaxOnly: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(mixedVar: Unit, syntaxOnly: js.Any, callableName: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any], callableName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(mixedVar: Unit, syntaxOnly: Unit, callableName: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any], callableName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(mixedVar: Any): Any = ^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(mixedVar: Any, syntaxOnly: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(mixedVar: Any, syntaxOnly: Any, callableName: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any], callableName.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(mixedVar: Any, syntaxOnly: Unit, callableName: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any], callableName.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(mixedVar: Unit, syntaxOnly: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(mixedVar: Unit, syntaxOnly: Any, callableName: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any], callableName.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(mixedVar: Unit, syntaxOnly: Unit, callableName: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], syntaxOnly.asInstanceOf[js.Any], callableName.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/var/is_callable", JSImport.Namespace)
   @js.native

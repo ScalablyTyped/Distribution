@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchOptions extends StObject {
   
-  var category: js.UndefOr[Category] = js.undefined
+  var category: js.UndefOr[
+    /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Category * / any */ String
+  ] = js.undefined
   
   var direction: js.UndefOr[asc | desc] = js.undefined
   
@@ -31,7 +33,9 @@ object SearchOptions {
   
   extension [Self <: SearchOptions](x: Self) {
     
-    inline def setCategory(value: Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(
+      value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Category * / any */ String
+    ): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     

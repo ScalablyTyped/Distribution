@@ -12,21 +12,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esCellMeasurerMod {
   
-  @JSImport("react-virtualized/dist/es/CellMeasurer", "CellMeasurer")
+  @JSImport("react-virtualized/dist/es/CellMeasurer", JSImport.Default)
   @js.native
-  class CellMeasurer protected ()
-    extends PureComponent[CellMeasurerProps, js.Object, js.Any] {
+  open class default protected () extends CellMeasurer {
     def this(props: CellMeasurerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CellMeasurerProps, context: js.Any) = this()
+    def this(props: CellMeasurerProps, context: Any) = this()
+  }
+  
+  @JSImport("react-virtualized/dist/es/CellMeasurer", "CellMeasurer")
+  @js.native
+  open class CellMeasurer protected ()
+    extends PureComponent[CellMeasurerProps, js.Object, Any] {
+    def this(props: CellMeasurerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CellMeasurerProps, context: Any) = this()
   }
   
   @JSImport("react-virtualized/dist/es/CellMeasurer", "CellMeasurerCache")
   @js.native
-  class CellMeasurerCache ()
+  open class CellMeasurerCache ()
     extends StObject
        with CellMeasurerCacheInterface {
     def this(params: CellMeasurerCacheParams) = this()
@@ -103,7 +114,7 @@ object esCellMeasurerMod {
       
       inline def setFixedWidthUndefined: Self = StObject.set(x, "fixedWidth", js.undefined)
       
-      inline def setKeyMapper(value: (/* rowIndex */ Double, /* columnIndex */ Double) => js.Any): Self = StObject.set(x, "keyMapper", js.Any.fromFunction2(value))
+      inline def setKeyMapper(value: (/* rowIndex */ Double, /* columnIndex */ Double) => Any): Self = StObject.set(x, "keyMapper", js.Any.fromFunction2(value))
       
       inline def setKeyMapperUndefined: Self = StObject.set(x, "keyMapper", js.undefined)
       
@@ -121,7 +132,7 @@ object esCellMeasurerMod {
     
     def measure(): Unit
     
-    var registerChild: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.undefined
+    var registerChild: js.UndefOr[js.Function1[/* element */ js.UndefOr[Element], Unit]] = js.undefined
   }
   object CellMeasurerChildProps {
     
@@ -134,7 +145,7 @@ object esCellMeasurerMod {
       
       inline def setMeasure(value: () => Unit): Self = StObject.set(x, "measure", js.Any.fromFunction0(value))
       
-      inline def setRegisterChild(value: /* element */ Element => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
+      inline def setRegisterChild(value: /* element */ js.UndefOr[Element] => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
       
       inline def setRegisterChildUndefined: Self = StObject.set(x, "registerChild", js.undefined)
     }
@@ -149,7 +160,7 @@ object esCellMeasurerMod {
     * Check the following link if you want to know more
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     var cache: CellMeasurerCacheInterface
     
@@ -223,7 +234,7 @@ object esCellMeasurerMod {
     }
   }
   
-  type KeyMapper = js.Function2[/* rowIndex */ Double, /* columnIndex */ Double, js.Any]
+  type KeyMapper = js.Function2[/* rowIndex */ Double, /* columnIndex */ Double, Any]
   
   trait MeasuredCellParent extends StObject {
     

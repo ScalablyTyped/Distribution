@@ -16,13 +16,15 @@ trait TableInstance[D /* <: js.Object */] extends StObject {
   
   var allColumnsHidden: Boolean = js.native
   
+  var autoResetHiddenColumns: js.UndefOr[Boolean] = js.native
+  
   var columns: js.Array[ColumnInstance[D]] = js.native
   
   var data: js.Array[D] = js.native
   
   var defaultColumn: js.UndefOr[Partial[Column[D]]] = js.native
   
-  var dispatch: TableDispatch[js.Any] = js.native
+  var dispatch: TableDispatch[Any] = js.native
   
   var flatHeaders: js.Array[ColumnInstance[D]] = js.native
   

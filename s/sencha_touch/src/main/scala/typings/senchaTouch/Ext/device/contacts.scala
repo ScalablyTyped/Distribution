@@ -16,7 +16,7 @@ object contacts {
       * @param config Object
       * @returns Object[] An array of contact objects.
       */
-    var getContacts: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Array]] = js.undefined
+    var getContacts: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Array]] = js.undefined
     
     /** [Method] Returns the value of includeImages
       * @returns Boolean
@@ -27,13 +27,13 @@ object contacts {
       * @param config Object
       * @returns String user readable string
       */
-    var getLocalizedLabel: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], String]] = js.undefined
+    var getLocalizedLabel: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], String]] = js.undefined
     
     /** [Method] Returns base64 encoded image thumbnail for a contact specified in config id This method is for Sencha Native Packager
       * @param config Object
       * @returns String base64 string
       */
-    var getThumbnail: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], String]] = js.undefined
+    var getThumbnail: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], String]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var includeImages: js.UndefOr[Boolean] = js.undefined
@@ -45,7 +45,7 @@ object contacts {
       */
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Method] Sets the value of includeImages
@@ -62,7 +62,7 @@ object contacts {
     
     extension [Self <: IAbstract](x: Self) {
       
-      inline def setGetContacts(value: /* config */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getContacts", js.Any.fromFunction1(value))
+      inline def setGetContacts(value: /* config */ js.UndefOr[Any] => Array): Self = StObject.set(x, "getContacts", js.Any.fromFunction1(value))
       
       inline def setGetContactsUndefined: Self = StObject.set(x, "getContacts", js.undefined)
       
@@ -70,11 +70,11 @@ object contacts {
       
       inline def setGetIncludeImagesUndefined: Self = StObject.set(x, "getIncludeImages", js.undefined)
       
-      inline def setGetLocalizedLabel(value: /* config */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "getLocalizedLabel", js.Any.fromFunction1(value))
+      inline def setGetLocalizedLabel(value: /* config */ js.UndefOr[Any] => String): Self = StObject.set(x, "getLocalizedLabel", js.Any.fromFunction1(value))
       
       inline def setGetLocalizedLabelUndefined: Self = StObject.set(x, "getLocalizedLabel", js.undefined)
       
-      inline def setGetThumbnail(value: /* config */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "getThumbnail", js.Any.fromFunction1(value))
+      inline def setGetThumbnail(value: /* config */ js.UndefOr[Any] => String): Self = StObject.set(x, "getThumbnail", js.Any.fromFunction1(value))
       
       inline def setGetThumbnailUndefined: Self = StObject.set(x, "getThumbnail", js.undefined)
       
@@ -82,7 +82,7 @@ object contacts {
       
       inline def setIncludeImagesUndefined: Self = StObject.set(x, "includeImages", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       

@@ -39,7 +39,7 @@ object ZoomifyOptions {
     
     inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
     
     inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     

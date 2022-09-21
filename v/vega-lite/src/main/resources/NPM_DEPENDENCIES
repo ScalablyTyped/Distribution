@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-lite" : "4.17.0"
+      "vega-lite" : "5.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-lite" : "4.17.0"
+      "vega-lite" : "5.5.0"
     }
   ],
   "compile-devDependencies" : [

@@ -29,7 +29,7 @@ object HeaderObject {
     
     inline def setHeadersAllowListUndefined: Self = StObject.set(x, "headersAllowList", js.undefined)
     
-    inline def setHeadersAllowListVarargs(value: HeaderEnum*): Self = StObject.set(x, "headersAllowList", js.Array(value :_*))
+    inline def setHeadersAllowListVarargs(value: HeaderEnum*): Self = StObject.set(x, "headersAllowList", js.Array(value*))
     
     inline def setOption(value: ForwardValues): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     

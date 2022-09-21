@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "ProtocolError")
 @js.native
-class ProtocolError () extends StObject {
+open class ProtocolError () extends StObject {
   def this(error: String) = this()
 }

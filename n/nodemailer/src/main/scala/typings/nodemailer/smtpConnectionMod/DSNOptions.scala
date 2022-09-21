@@ -38,7 +38,7 @@ object DSNOptions {
     
     inline def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
     
-    inline def setNotify_Varargs(value: DSNOption*): Self = StObject.set(x, "notify", js.Array(value :_*))
+    inline def setNotify_Varargs(value: DSNOption*): Self = StObject.set(x, "notify", js.Array(value*))
     
     inline def setOrcpt(value: String): Self = StObject.set(x, "orcpt", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait FailedDeleteRemediationExceptionsBatch extends StObject {
   var FailedItems: js.UndefOr[RemediationExceptionResourceKeys] = js.undefined
   
   /**
-    * Returns a failure message for delete remediation exception. For example, AWS Config creates an exception due to an internal error.
+    * Returns a failure message for delete remediation exception. For example, Config creates an exception due to an internal error.
     */
   var FailureMessage: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object FailedDeleteRemediationExceptionsBatch {
     
     inline def setFailedItemsUndefined: Self = StObject.set(x, "FailedItems", js.undefined)
     
-    inline def setFailedItemsVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "FailedItems", js.Array(value :_*))
+    inline def setFailedItemsVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "FailedItems", js.Array(value*))
     
     inline def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     

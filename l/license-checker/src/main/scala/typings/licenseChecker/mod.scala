@@ -1,7 +1,6 @@
 package typings.licenseChecker
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def init(opts: InitOpts, callback: js.Function2[/* err */ Error, /* ret */ ModuleInfos, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(opts: InitOpts, callback: js.Function2[/* err */ js.Error, /* ret */ ModuleInfos, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait InitOpts extends StObject {
     
@@ -36,7 +35,7 @@ object mod {
       * Specify the columns for CSV format
       * or add the specified items for JSON format
       */
-    var customFormat: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var customFormat: js.UndefOr[Record[String, Any]] = js.undefined
     
     /**
       * To add a custom Format file in JSON
@@ -144,7 +143,7 @@ object mod {
       
       inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
       
-      inline def setCustomFormat(value: Record[String, js.Any]): Self = StObject.set(x, "customFormat", value.asInstanceOf[js.Any])
+      inline def setCustomFormat(value: Record[String, Any]): Self = StObject.set(x, "customFormat", value.asInstanceOf[js.Any])
       
       inline def setCustomFormatUndefined: Self = StObject.set(x, "customFormat", js.undefined)
       
@@ -172,7 +171,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFailOn(value: String): Self = StObject.set(x, "failOn", value.asInstanceOf[js.Any])
       
@@ -332,7 +331,7 @@ object mod {
       
       inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
       
-      inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
+      inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

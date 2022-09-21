@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SasPortalCreateSignedDeviceRequest extends StObject {
   
-  /** Required. JSON Web Token signed using a CPI private key. Payload must be the JSON encoding of the [Device]. The user_id field must be set. */
+  /** Required. JSON Web Token signed using a CPI private key. Payload must be the JSON encoding of the device. The user_id field must be set. */
   var encodedDevice: js.UndefOr[String] = js.undefined
   
-  /** Required. Unique installer id (cpiId) from the Certified Professional Installers database. */
+  /** Required. Unique installer id (CPI ID) from the Certified Professional Installers database. */
   var installerId: js.UndefOr[String] = js.undefined
 }
 object SasPortalCreateSignedDeviceRequest {

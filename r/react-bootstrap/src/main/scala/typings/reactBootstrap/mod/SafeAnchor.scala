@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "SafeAnchor")
 @js.native
-class SafeAnchor ()
+open class SafeAnchor ()
   extends typings.reactBootstrap.libMod.SafeAnchor

@@ -38,12 +38,12 @@ object DescribeVpnGatewaysRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setVpnGatewayIds(value: VpnGatewayIdStringList): Self = StObject.set(x, "VpnGatewayIds", value.asInstanceOf[js.Any])
     
     inline def setVpnGatewayIdsUndefined: Self = StObject.set(x, "VpnGatewayIds", js.undefined)
     
-    inline def setVpnGatewayIdsVarargs(value: VpnGatewayId*): Self = StObject.set(x, "VpnGatewayIds", js.Array(value :_*))
+    inline def setVpnGatewayIdsVarargs(value: VpnGatewayId*): Self = StObject.set(x, "VpnGatewayIds", js.Array(value*))
   }
 }

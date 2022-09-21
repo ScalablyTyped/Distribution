@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with ForXStatement
      with Loop
      with Scopable
+     with Standardized
      with Statement {
   
   var body: Statement

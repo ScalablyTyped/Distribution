@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object intercomWebStrings {
   
   @js.native
+  sealed trait avatar extends StObject
+  inline def avatar: avatar = "avatar".asInstanceOf[avatar]
+  
+  @js.native
   sealed trait boot
     extends StObject
        with IntercomCommand
@@ -54,6 +58,12 @@ object intercomWebStrings {
     extends StObject
        with IntercomCommand
   inline def show: show = "show".asInstanceOf[show]
+  
+  @js.native
+  sealed trait showArticle
+    extends StObject
+       with IntercomCommand
+  inline def showArticle: showArticle = "showArticle".asInstanceOf[showArticle]
   
   @js.native
   sealed trait showMessages

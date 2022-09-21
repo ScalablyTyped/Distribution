@@ -8,7 +8,7 @@ object Analytics {
   
   @JSGlobal("SP.Analytics.AnalyticsUsageEntry")
   @js.native
-  class AnalyticsUsageEntry ()
+  open class AnalyticsUsageEntry ()
     extends StObject
        with typings.sharepoint.SP.ClientObject
   object AnalyticsUsageEntry {

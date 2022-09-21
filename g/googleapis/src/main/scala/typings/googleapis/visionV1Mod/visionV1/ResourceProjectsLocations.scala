@@ -7,10 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/vision/v1", "vision_v1.Resource$Projects$Locations")
 @js.native
-class ResourceProjectsLocations protected () extends StObject {
+open class ResourceProjectsLocations protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
+  
+  var files: ResourceProjectsLocationsFiles = js.native
+  
+  var images: ResourceProjectsLocationsImages = js.native
+  
+  var operations: ResourceProjectsLocationsOperations = js.native
   
   var productSets: ResourceProjectsLocationsProductsets = js.native
   

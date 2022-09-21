@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-invert
 
-Typings are for version 0.16.1
+Typings are for version 0.16.2
 
 ## Library description:
 invert an image.
@@ -10,10 +10,10 @@ invert an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-invert |
 | Keywords           | - |
-| # releases         | 101 |
-| # dependents       | 1 |
-| # downloads        | 42338125 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 5077433.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40jimp%2Fplugin-invert)

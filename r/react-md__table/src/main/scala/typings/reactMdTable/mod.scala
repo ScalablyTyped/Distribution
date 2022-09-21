@@ -5,7 +5,6 @@ import typings.react.mod.RefAttributes
 import typings.reactMdTable.captionMod.CaptionProps
 import typings.reactMdTable.tableBodyMod.TableBodyProps
 import typings.reactMdTable.tableCellContentMod.TableCellContentProps
-import typings.reactMdTable.tableCellMod.TableCellElement
 import typings.reactMdTable.tableCellMod.TableCellProps
 import typings.reactMdTable.tableCheckboxMod.TableCheckboxProps
 import typings.reactMdTable.tableContainerMod.TableContainerProps
@@ -16,7 +15,7 @@ import typings.reactMdTable.tableRowMod.TableRowProps
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLTableCaptionElement
-import typings.std.HTMLTableDataCellElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
@@ -40,7 +39,7 @@ object mod {
   
   @JSImport("@react-md/table", "TableCell")
   @js.native
-  val TableCell: ForwardRefExoticComponent[TableCellProps & RefAttributes[TableCellElement]] = js.native
+  val TableCell: ForwardRefExoticComponent[TableCellProps & RefAttributes[HTMLTableCellElement]] = js.native
   
   @JSImport("@react-md/table", "TableCellContent")
   @js.native
@@ -48,7 +47,7 @@ object mod {
   
   @JSImport("@react-md/table", "TableCheckbox")
   @js.native
-  val TableCheckbox: ForwardRefExoticComponent[TableCheckboxProps & RefAttributes[HTMLTableDataCellElement]] = js.native
+  val TableCheckbox: ForwardRefExoticComponent[TableCheckboxProps & RefAttributes[HTMLTableCellElement]] = js.native
   
   @JSImport("@react-md/table", "TableContainer")
   @js.native

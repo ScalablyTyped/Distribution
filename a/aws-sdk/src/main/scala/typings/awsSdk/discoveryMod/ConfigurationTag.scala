@@ -24,7 +24,7 @@ trait ConfigurationTag extends StObject {
   /**
     * The time the configuration tag was created in Coordinated Universal Time (UTC).
     */
-  var timeOfCreation: js.UndefOr[TimeStamp] = js.undefined
+  var timeOfCreation: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A value on which to filter. For example key = serverType and value = web server.
@@ -52,7 +52,7 @@ object ConfigurationTag {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setTimeOfCreation(value: TimeStamp): Self = StObject.set(x, "timeOfCreation", value.asInstanceOf[js.Any])
+    inline def setTimeOfCreation(value: js.Date): Self = StObject.set(x, "timeOfCreation", value.asInstanceOf[js.Any])
     
     inline def setTimeOfCreationUndefined: Self = StObject.set(x, "timeOfCreation", js.undefined)
     

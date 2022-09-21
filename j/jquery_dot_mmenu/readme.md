@@ -10,10 +10,10 @@ The best jQuery plugin for app look-alike on- and off-canvas menus with sliding 
 | ------------------ | :-------------: |
 | Full name          | jquery.mmenu |
 | Keywords           | app, list, listview, megamenu, menu, mmenu, mobile, navigation, off-canvas, on-canvas, curtain, panels, submenu |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 304741 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13300.0 |
+| # stars            | 2556.0 |
 
 ## Links
 - [Homepage](https://github.com/FrDH/jQuery.mmenu#readme)

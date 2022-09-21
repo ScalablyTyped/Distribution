@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.LazyMap")
 @js.native
-class LazyMap () extends StObject {
+open class LazyMap () extends StObject {
   def this(args: FullMap) = this()
   
   var fullMap: js.UndefOr[Map[String, String]] = js.native

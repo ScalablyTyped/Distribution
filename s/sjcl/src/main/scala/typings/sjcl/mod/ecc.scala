@@ -14,7 +14,7 @@ object ecc extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "ecc.curve")
   @js.native
-  class curve protected ()
+  open class curve protected ()
     extends StObject
        with SjclEllipticalCurve {
     def this(Field: BigNumber, r: BigNumber, a: BigNumber, b: BigNumber, x: BigNumber, y: BigNumber) = this()
@@ -26,7 +26,7 @@ object ecc extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "ecc.point")
   @js.native
-  class point protected ()
+  open class point protected ()
     extends StObject
        with SjclEllipticalPoint {
     def this(curve: SjclEllipticalCurve) = this()
@@ -59,7 +59,7 @@ object ecc extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "ecc.pointJac")
   @js.native
-  class pointJac protected ()
+  open class pointJac protected ()
     extends StObject
        with SjclPointJacobian {
     def this(curve: SjclEllipticalCurve) = this()

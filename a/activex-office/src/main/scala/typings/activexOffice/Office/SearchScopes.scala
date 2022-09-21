@@ -9,7 +9,7 @@ trait SearchScopes extends StObject {
   
   def apply(Index: Double): SearchScope = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

@@ -10,8 +10,7 @@ import typings.browserfs.fileSystemMod.BaseFileSystem
 import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.filesystem.FileEntry
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object html5fsMod {
     * @param size storage quota to request, in megabytes. Allocated value may be less.
     * @param type window.PERSISTENT or window.TEMPORARY. Defaults to PERSISTENT.
     */
-  class default () extends HTML5FS {
+  open class default () extends HTML5FS {
     def this(size: Double) = this()
     def this(size: Double, `type`: Double) = this()
     def this(size: Unit, `type`: Double) = this()
@@ -66,7 +65,7 @@ object html5fsMod {
   
   @JSImport("browserfs/dist/node/backend/HTML5FS", "HTML5FSFile")
   @js.native
-  class HTML5FSFile protected ()
+  open class HTML5FSFile protected ()
     extends typings.browserfs.preloadFileMod.default[HTML5FS]
        with File {
     def this(
@@ -85,7 +84,7 @@ object html5fsMod {
       contents: Buffer
     ) = this()
     
-    /* private */ var _entry: js.Any = js.native
+    /* private */ var _entry: Any = js.native
     
     /* InferMemberOverrides */
     override def chmod(mode: Double, cb: BFSOneArgCallback): Unit = js.native
@@ -203,10 +202,10 @@ object html5fsMod {
     override def truncateSync(len: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimes(atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(atime: js.Date, mtime: js.Date): Unit = js.native
     
     /**
       * Write buffer to the file.
@@ -256,12 +255,12 @@ object html5fsMod {
     /**
       * Returns a BrowserFS object representing a File.
       */
-    /* private */ def _makeFile(path: js.Any, entry: js.Any, flag: js.Any, stat: js.Any, data: js.Any): js.Any = js.native
+    /* private */ def _makeFile(path: Any, entry: Any, flag: Any, stat: Any, data: Any): Any = js.native
     
     /**
       * Returns an array of `FileEntry`s. Used internally by empty and readdir.
       */
-    /* private */ def _readdir(path: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def _readdir(path: Any, cb: Any): Any = js.native
     
     /**
       * Delete a file or directory from the file system
@@ -269,7 +268,7 @@ object html5fsMod {
       * `rmdir`). If this doesn't match what's actually at `path`, an error will be
       * returned
       */
-    /* private */ def _remove(path: js.Any, cb: js.Any, isFile: js.Any): js.Any = js.native
+    /* private */ def _remove(path: Any, cb: Any, isFile: Any): Any = js.native
     
     /**
       * **Deprecated. Please use Create() method instead to create and allocate an HTML5FS.**
@@ -295,7 +294,7 @@ object html5fsMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, Any]): Unit = js.native
     
     /**
       * Deletes everything in the FS. Used for testing.
@@ -310,7 +309,7 @@ object html5fsMod {
     /* InferMemberOverrides */
     override def existsSync(p: String): Boolean = js.native
     
-    var fs: typings.filesystem.FileSystem = js.native
+    var fs: typings.std.FileSystem = js.native
     
     /* InferMemberOverrides */
     override def link(srcpath: String, dstpath: String, cb: BFSOneArgCallback): Unit = js.native
@@ -336,9 +335,9 @@ object html5fsMod {
     override def readFile(fname: String, encoding: Null, flag: FileFlag, cb: BFSCallback[String | Buffer]): Unit = js.native
     
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: String, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: String, flag: FileFlag): Any = js.native
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): Any = js.native
     
     /* InferMemberOverrides */
     override def readdir(p: String, cb: BFSCallback[js.Array[String]]): Unit = js.native
@@ -367,7 +366,7 @@ object html5fsMod {
     /* InferMemberOverrides */
     override def rmdirSync(p: String): Unit = js.native
     
-    /* private */ var size: js.Any = js.native
+    /* private */ var size: Any = js.native
     
     /* InferMemberOverrides */
     override def stat(p: String, isLstat: Boolean, cb: BFSCallback[typings.browserfs.nodeFsStatsMod.default]): Unit = js.native
@@ -396,7 +395,7 @@ object html5fsMod {
     /* InferMemberOverrides */
     override def truncateSync(p: String, len: Double): Unit = js.native
     
-    /* private */ var `type`: js.Any = js.native
+    /* private */ var `type`: Any = js.native
     
     /* InferMemberOverrides */
     override def unlink(p: String, cb: BFSOneArgCallback): Unit = js.native
@@ -405,15 +404,15 @@ object html5fsMod {
     override def unlinkSync(p: String): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimes(p: String, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(p: String, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(p: String, atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(p: String, atime: js.Date, mtime: js.Date): Unit = js.native
     
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
   trait HTML5FSOptions extends StObject {

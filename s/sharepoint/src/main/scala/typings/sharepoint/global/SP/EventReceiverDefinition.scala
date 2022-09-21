@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.EventReceiverDefinition")
 @js.native
-class EventReceiverDefinition ()
+open class EventReceiverDefinition ()
   extends StObject
      with typings.sharepoint.SP.EventReceiverDefinition

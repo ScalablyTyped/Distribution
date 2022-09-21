@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateConnectionRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog in which to create the connection. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog in which to create the connection. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -15,6 +15,11 @@ trait CreateConnectionRequest extends StObject {
     * A ConnectionInput object defining the connection to create.
     */
   var ConnectionInput: typings.awsSdk.glueMod.ConnectionInput
+  
+  /**
+    * The tags you assign to the connection.
+    */
+  var Tags: js.UndefOr[TagsMap] = js.undefined
 }
 object CreateConnectionRequest {
   
@@ -30,5 +35,9 @@ object CreateConnectionRequest {
     inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     inline def setConnectionInput(value: ConnectionInput): Self = StObject.set(x, "ConnectionInput", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

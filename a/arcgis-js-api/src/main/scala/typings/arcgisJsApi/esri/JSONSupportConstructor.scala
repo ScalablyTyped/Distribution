@@ -11,9 +11,9 @@ trait JSONSupportConstructor
      with Instantiable0[JSONSupport] {
   
   /**
-    * Creates a new instance of [this class]() and initializes it with values from a JSON object generated from a product in the ArcGIS platform.
+    * Creates a new instance of this class and initializes it with values from a JSON object generated from an ArcGIS product.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#fromJSON)
     */
-  def fromJSON(json: js.Any): js.Any = js.native
+  def fromJSON(json: Any): Any = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxDesignerElementParameterDescriptor")
 @js.native
-class ASPxDesignerElementParameterDescriptor ()
+open class ASPxDesignerElementParameterDescriptor ()
   extends StObject
      with typings.devexpressWeb.ASPxDesignerElementParameterDescriptor {
   
@@ -20,7 +20,7 @@ class ASPxDesignerElementParameterDescriptor ()
   var `type`: String = js.native
   
   /* CompleteClass */
-  var value: js.Any = js.native
+  var value: Any = js.native
   
   /* CompleteClass */
   var visible: Boolean = js.native

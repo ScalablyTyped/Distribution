@@ -10,10 +10,10 @@ object appsMod {
   
   @JSImport("material-ui/svg-icons/navigation/apps", JSImport.Default)
   @js.native
-  class default () extends NavigationApps
+  open class default () extends NavigationApps
   
   @JSImport("material-ui/svg-icons/navigation/apps", "NavigationApps")
   @js.native
-  class NavigationApps ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationApps ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

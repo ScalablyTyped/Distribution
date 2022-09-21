@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.MemoryContentCache")
 @js.native
-class MemoryContentCache protected ()
+open class MemoryContentCache protected ()
   extends typings.ndnJs.mod.MemoryContentCache {
   def this(face: typings.ndnJs.faceMod.Face) = this()
   def this(face: typings.ndnJs.faceMod.Face, cleanupIntervalMilliseconds: Double) = this()

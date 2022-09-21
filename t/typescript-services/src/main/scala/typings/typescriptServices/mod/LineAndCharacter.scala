@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "LineAndCharacter")
 @js.native
-class LineAndCharacter protected ()
+open class LineAndCharacter protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.LineAndCharacter {
   def this(line: Double, character: Double) = this()
   
   /* private */ /* CompleteClass */
-  var _character: js.Any = js.native
+  var _character: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _line: js.Any = js.native
+  var _line: Any = js.native
   
   /* CompleteClass */
   override def character(): Double = js.native

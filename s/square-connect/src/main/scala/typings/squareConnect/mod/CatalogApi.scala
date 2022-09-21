@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CatalogApi.
   * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
   */
-class CatalogApi () extends StObject {
+open class CatalogApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   /**
@@ -21,14 +21,14 @@ class CatalogApi () extends StObject {
     * @note ListCatalog does not return deleted catalog items. To retrieve deleted catalog items, use SearchCatalogObjects
     * and set `include_deleted_objects` to `true`.
     */
-  def batchDeleteCatalogObjects(args: js.Any*): js.Promise[BatchDeleteCatalogObjectsResponse] = js.native
+  def batchDeleteCatalogObjects(args: Any*): js.Promise[BatchDeleteCatalogObjectsResponse] = js.native
   
   /**
     * Returns a set of objects based on the provided ID. Each [CatalogItem](#type-catalogitem) returned in the set includes all of
     * its child information including: all of its [CatalogItemVariation](#type-catalogitemvariation) objects, references to its
     * [CatalogModifierList](#type-catalogmodifierlist) objects, and the ids of any [CatalogTax](#type-catalogtax) objects that apply to it.
     */
-  def batchRetrieveCatalogObjects(args: js.Any*): js.Promise[BatchRetrieveCatalogObjectsResponse] = js.native
+  def batchRetrieveCatalogObjects(args: Any*): js.Promise[BatchRetrieveCatalogObjectsResponse] = js.native
   
   /**
     * Creates or updates up to 10,000 target objects based on the provided list of objects. The target objects are grouped into
@@ -37,12 +37,12 @@ class CatalogApi () extends StObject {
     * the same request may still succeed. Each batch may contain up to 1,000 objects, and batches will be processed in order as long
     * as the total object count for the request (items, variations, modifier lists, discounts, and taxes) is no more than 10,000.
     */
-  def batchUpsertCatalogObjects(args: js.Any*): js.Promise[BatchUpsertCatalogObjectsResponse] = js.native
+  def batchUpsertCatalogObjects(args: Any*): js.Promise[BatchUpsertCatalogObjectsResponse] = js.native
   
   /**
     * Returns information about the Square Catalog API, such as batch size limits for `BatchUpsertCatalogObjects`.
     */
-  def catalogInfo(args: js.Any*): js.Promise[CatalogInfoResponse] = js.native
+  def catalogInfo(args: Any*): js.Promise[CatalogInfoResponse] = js.native
   
   /**
     * Deletes a single [CatalogObject](#type-catalogobject) based on the provided ID and returns the set of successfully deleted
@@ -50,7 +50,7 @@ class CatalogApi () extends StObject {
     * For example, deleting a [CatalogItem](#type-catalogitem) will also delete all of its
     * [CatalogItemVariation](#type-catalogitemvariation) children.
     */
-  def deleteCatalogObject(args: js.Any*): js.Promise[DeleteCatalogObjectResponse] = js.native
+  def deleteCatalogObject(args: Any*): js.Promise[DeleteCatalogObjectResponse] = js.native
   
   /**
     * Returns a list of [CatalogObject](#type-catalogobject)s that includes all objects of a set of desired types (for example,
@@ -60,7 +60,7 @@ class CatalogApi () extends StObject {
     * @note ListCatalog does not return deleted catalog items.
     * To retrieve deleted catalog items, use SearchCatalogObjects and set `include_deleted_objects` to `true`.
     */
-  def listCatalog(args: js.Any*): js.Promise[ListCatalogResponse] = js.native
+  def listCatalog(args: Any*): js.Promise[ListCatalogResponse] = js.native
   
   /**
     * Returns a single [CatalogItem](#type-catalogitem) as a [CatalogObject](#type-catalogobject) based on the provided ID.
@@ -68,7 +68,7 @@ class CatalogApi () extends StObject {
     * [CatalogItemVariation](#type-catalogitemvariation) children, references to its [CatalogModifierList](#type-catalogmodifierlist)
     * objects, and the ids of any [CatalogTax](#type-catalogtax) objects that apply to it.
     */
-  def retrieveCatalogObject(args: js.Any*): js.Promise[RetrieveCatalogObjectResponse] = js.native
+  def retrieveCatalogObject(args: Any*): js.Promise[RetrieveCatalogObjectResponse] = js.native
   
   /**
     * Queries the targeted catalog using a variety of query types: [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute),
@@ -80,22 +80,22 @@ class CatalogApi () extends StObject {
     * [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions),
     * and [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
     */
-  def searchCatalogObjects(args: js.Any*): js.Promise[SearchCatalogObjectsResponse] = js.native
+  def searchCatalogObjects(args: Any*): js.Promise[SearchCatalogObjectsResponse] = js.native
   
   /**
     * Updates the [CatalogModifierList](#type-catalogmodifierlist) objects that apply to the targeted
     * [CatalogItem](#type-catalogitem) without having to perform an upsert on the entire item.
     */
-  def updateItemModifierLists(args: js.Any*): js.Promise[UpdateItemModifierListsResponse] = js.native
+  def updateItemModifierLists(args: Any*): js.Promise[UpdateItemModifierListsResponse] = js.native
   
   /**
     * Updates the [CatalogTax](#type-catalogtax) objects that apply to the targeted [CatalogItem](#type-catalogitem)
     * without having to perform an upsert on the entire item.
     */
-  def updateItemTaxes(args: js.Any*): js.Promise[UpdateItemTaxesResponse] = js.native
+  def updateItemTaxes(args: Any*): js.Promise[UpdateItemTaxesResponse] = js.native
   
   /**
     * Creates or updates the target [CatalogObject](#type-catalogobject).
     */
-  def upsertCatalogObject(args: js.Any*): js.Promise[UpsertCatalogObjectResponse] = js.native
+  def upsertCatalogObject(args: Any*): js.Promise[UpsertCatalogObjectResponse] = js.native
 }

@@ -8,5 +8,5 @@ object metricDimensionMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_MetricDimension", "_MetricDimension")
   @js.native
-  val MetricDimension: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MetricDimension: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

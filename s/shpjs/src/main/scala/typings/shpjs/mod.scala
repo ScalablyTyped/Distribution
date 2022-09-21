@@ -5,8 +5,7 @@ import typings.geojson.mod.Feature
 import typings.geojson.mod.FeatureCollection
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.Geometry
-import typings.node.Buffer
-import typings.std.ArrayBuffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +63,7 @@ object mod extends Shortcut {
   }
   
   // All toBuffer() compatible buffers.
-  type ShpJSBuffer = Buffer | ArrayBuffer | typings.shpjs.anon.Buffer
+  type ShpJSBuffer = Buffer | js.typedarray.ArrayBuffer | typings.shpjs.anon.Buffer
   
   type _To = ShpJS
   

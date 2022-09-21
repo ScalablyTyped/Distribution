@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListCodeRepositoriesOutput extends StObject {
   
   /**
-    * Gets a list of summaries of the Git repositories. Each summary specifies the following values for the repository:    Name   Amazon Resource Name (ARN)   Creation time   Last modified time   Configuration information, including the URL location of the repository and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.  
+    * Gets a list of summaries of the Git repositories. Each summary specifies the following values for the repository:    Name   Amazon Resource Name (ARN)   Creation time   Last modified time   Configuration information, including the URL location of the repository and the ARN of the Amazon Web Services Secrets Manager secret that contains the credentials used to access the repository.  
     */
   var CodeRepositorySummaryList: typings.awsSdk.sagemakerMod.CodeRepositorySummaryList
   
@@ -27,7 +27,7 @@ object ListCodeRepositoriesOutput {
     
     inline def setCodeRepositorySummaryList(value: CodeRepositorySummaryList): Self = StObject.set(x, "CodeRepositorySummaryList", value.asInstanceOf[js.Any])
     
-    inline def setCodeRepositorySummaryListVarargs(value: CodeRepositorySummary*): Self = StObject.set(x, "CodeRepositorySummaryList", js.Array(value :_*))
+    inline def setCodeRepositorySummaryListVarargs(value: CodeRepositorySummary*): Self = StObject.set(x, "CodeRepositorySummaryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

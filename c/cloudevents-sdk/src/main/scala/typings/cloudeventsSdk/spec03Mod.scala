@@ -16,7 +16,7 @@ object spec03Mod {
     */
   @JSImport("cloudevents-sdk/lib/bindings/http/v03/spec_0_3", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Spec03
   
@@ -45,40 +45,40 @@ object spec03Mod {
   @js.native
   trait Spec03 extends StObject {
     
-    def addExtension(key: js.Any, value: js.Any): Spec03 = js.native
+    def addExtension(key: Any, value: Any): Spec03 = js.native
     
     def check(): Unit = js.native
     
-    def data: js.Any = js.native
+    def data: Any = js.native
     
-    def dataContentEncoding: js.Any = js.native
-    def dataContentEncoding_=(arg: js.Any): Unit = js.native
+    def dataContentEncoding: Any = js.native
+    def dataContentEncoding_=(arg: Any): Unit = js.native
     
-    def dataContentType: js.Any = js.native
-    def dataContentType_=(arg: js.Any): Unit = js.native
+    def dataContentType: Any = js.native
+    def dataContentType_=(arg: Any): Unit = js.native
     
-    def data_=(arg: js.Any): Unit = js.native
+    def data_=(arg: Any): Unit = js.native
     
-    def id: js.Any = js.native
-    def id_=(arg: js.Any): Unit = js.native
+    def id: Any = js.native
+    def id_=(arg: Any): Unit = js.native
     
     var payload: Id = js.native
     
-    def schemaURL: js.Any = js.native
-    def schemaURL_=(arg: js.Any): Unit = js.native
+    def schemaURL: Any = js.native
+    def schemaURL_=(arg: Any): Unit = js.native
     
-    def source: js.Any = js.native
-    def source_=(arg: js.Any): Unit = js.native
+    def source: Any = js.native
+    def source_=(arg: Any): Unit = js.native
     
     def specversion: String = js.native
     
-    def subject: js.Any = js.native
-    def subject_=(arg: js.Any): Unit = js.native
+    def subject: Any = js.native
+    def subject_=(arg: Any): Unit = js.native
     
     def time: String = js.native
     def time_=(arg: String): Unit = js.native
     
-    def `type`: js.Any = js.native
-    def type_=(arg: js.Any): Unit = js.native
+    def `type`: Any = js.native
+    def type_=(arg: Any): Unit = js.native
   }
 }

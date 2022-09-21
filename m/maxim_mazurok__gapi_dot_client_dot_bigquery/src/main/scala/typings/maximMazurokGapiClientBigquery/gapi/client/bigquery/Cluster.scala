@@ -36,6 +36,6 @@ object Cluster {
     
     inline def setFeatureValuesUndefined: Self = StObject.set(x, "featureValues", js.undefined)
     
-    inline def setFeatureValuesVarargs(value: FeatureValue*): Self = StObject.set(x, "featureValues", js.Array(value :_*))
+    inline def setFeatureValuesVarargs(value: FeatureValue*): Self = StObject.set(x, "featureValues", js.Array(value*))
   }
 }

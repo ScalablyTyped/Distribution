@@ -10,7 +10,7 @@ object unsetMod {
   
   @JSImport("ionic/commands/config/unset", "ConfigUnsetCommand")
   @js.native
-  class ConfigUnsetCommand protected () extends BaseConfigCommand {
+  open class ConfigUnsetCommand protected () extends BaseConfigCommand {
     def this(namespace: INamespace) = this()
   }
 }

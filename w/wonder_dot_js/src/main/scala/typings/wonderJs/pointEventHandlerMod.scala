@@ -21,7 +21,7 @@ object pointEventHandlerMod {
     
     /* protected */ def handleMove(handler: js.Function1[/* event */ MouseEvent | TouchEvent, Unit]): js.Function2[
         /* event */ MouseEvent | TouchEvent, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ /* eventData */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ /* eventData */ Any, 
         Unit
       ] = js.native
     
@@ -30,7 +30,7 @@ object pointEventHandlerMod {
       eventName: EEventName,
       handler: js.Function1[/* event */ DomEvent, Unit],
       priority: Double
-    ): js.Any = js.native
-    def on(eventName: EEventName, handler: js.Function1[/* event */ DomEvent, Unit], priority: Double): js.Any = js.native
+    ): Any = js.native
+    def on(eventName: EEventName, handler: js.Function1[/* event */ DomEvent, Unit], priority: Double): Any = js.native
   }
 }

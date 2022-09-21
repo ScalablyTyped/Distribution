@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_safebrowsing
 
-Typings are for version 4.0.20201107
+Typings are for version 4.0.20220811
 
 ## Library description:
 TypeScript typings for Safe Browsing API v4
@@ -10,10 +10,10 @@ TypeScript typings for Safe Browsing API v4
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.safebrowsing |
 | Keywords           | - |
-| # releases         | 35 |
-| # dependents       | 1 |
-| # downloads        | 2346 |
-| # stars            | 0 |
+| # releases         | 340 |
+| # dependents       | 0.0 |
+| # downloads        | 2771.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

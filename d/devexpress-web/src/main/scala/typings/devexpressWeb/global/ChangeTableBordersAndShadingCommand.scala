@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTableBordersAndShadingCommand")
 @js.native
-class ChangeTableBordersAndShadingCommand ()
+open class ChangeTableBordersAndShadingCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTableBordersAndShadingCommand {
   

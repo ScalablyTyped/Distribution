@@ -13,18 +13,18 @@ object renderMod extends Shortcut {
   
   trait Static extends StObject {
     
-    var render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any
+    var render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ Any
   }
   object Static {
     
-    inline def apply(render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any): Static = {
+    inline def apply(render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ Any): Static = {
       val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
       __obj.asInstanceOf[Static]
     }
     
     extension [Self <: Static](x: Self) {
       
-      inline def setRender(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }
   }
   

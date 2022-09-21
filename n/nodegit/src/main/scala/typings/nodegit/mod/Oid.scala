@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Oid")
 @js.native
-class Oid ()
+open class Oid ()
   extends typings.nodegit.oidMod.Oid
 /* static members */
 object Oid {

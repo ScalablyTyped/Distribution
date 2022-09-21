@@ -5,10 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * The insertion location types.
   *
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.1]
+  *
+  * To be used with an API call, such as `obj.insertSomething(newStuff, location);`.
+  * If the location is "Before" or "After", the new content will be outside of the modified object.
+  * If the location is "Start" or "End", the new content will be included as part of the modified object.
   */
 @JSGlobal("Word.InsertLocation")
 @js.native

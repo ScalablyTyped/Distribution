@@ -24,7 +24,12 @@ trait ConfigurationProfileSummary extends StObject {
   /**
     * The name of the configuration profile.
     */
-  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.undefined
+  var Name: js.UndefOr[LongName] = js.undefined
+  
+  /**
+    * The type of configurations contained in the profile. AppConfig supports feature flags and freeform configurations. We recommend you create feature flag configurations to enable or disable new features and freeform configurations to distribute configurations to an application. When calling this API, enter one of the following values for Type:  AWS.AppConfig.FeatureFlags   AWS.Freeform 
+    */
+  var Type: js.UndefOr[ConfigurationProfileType] = js.undefined
   
   /**
     * The types of validators in the configuration profile.
@@ -52,14 +57,18 @@ object ConfigurationProfileSummary {
     
     inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
-    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LongName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setType(value: ConfigurationProfileType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     inline def setValidatorTypes(value: ValidatorTypeList): Self = StObject.set(x, "ValidatorTypes", value.asInstanceOf[js.Any])
     
     inline def setValidatorTypesUndefined: Self = StObject.set(x, "ValidatorTypes", js.undefined)
     
-    inline def setValidatorTypesVarargs(value: ValidatorType*): Self = StObject.set(x, "ValidatorTypes", js.Array(value :_*))
+    inline def setValidatorTypesVarargs(value: ValidatorType*): Self = StObject.set(x, "ValidatorTypes", js.Array(value*))
   }
 }

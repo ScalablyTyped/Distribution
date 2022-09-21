@@ -64,7 +64,7 @@ object XYZOptions {
     
     inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
     
     inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     
@@ -126,7 +126,7 @@ object XYZOptions {
     
     inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
     
     inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     

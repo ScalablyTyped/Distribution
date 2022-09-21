@@ -11,14 +11,11 @@ Naive linter for English prose
 | Full name          | write-good |
 | Keywords           | english, writing, prose, words, grammar |
 | # releases         | 6 |
-| # dependents       | 36 |
-| # downloads        | 340403 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 29458.333333333332 |
+| # stars            | 4633.0 |
 
 ## Links
-- [Homepage](https://github.com/btford/write-good#readme)
-- [Bugs](https://github.com/btford/write-good/issues)
-- [Repository](https://github.com/btford/write-good)
 - [Npm](https://www.npmjs.com/package/write-good)
     
 

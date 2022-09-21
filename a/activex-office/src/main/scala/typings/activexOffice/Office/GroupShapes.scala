@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GroupShapes extends StObject {
   
-  def apply(Index: js.Any): Shape = js.native
+  def apply(Index: Any): Shape = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): Shape = js.native
+  def Item(Index: Any): Shape = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Range(Index: js.Any): ShapeRange = js.native
+  def Range(Index: Any): ShapeRange = js.native
 }

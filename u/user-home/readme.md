@@ -10,13 +10,13 @@ Get the path to the user home directory
 | ------------------ | :-------------: |
 | Full name          | user-home |
 | Keywords           | user, home, homedir, os-homedir, dir, directory, folder, path, env, vars, environment, variables, userprofile |
-| # releases         | 0 |
-| # dependents       | 918 |
-| # downloads        | 112055860 |
-| # stars            | 17 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9354674.666666666 |
+| # stars            | 159.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/user-home)
+- [Homepage](https://github.com/sindresorhus/user-home#readme)
 - [Bugs](https://github.com/sindresorhus/user-home/issues)
 - [Repository](https://github.com/sindresorhus/user-home)
 - [Npm](https://www.npmjs.com/package/user-home)

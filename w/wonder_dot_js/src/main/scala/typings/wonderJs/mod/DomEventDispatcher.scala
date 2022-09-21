@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "DomEventDispatcher")
 @js.native
-class DomEventDispatcher ()
+open class DomEventDispatcher ()
   extends typings.wonderJs.domEventDispatcherMod.DomEventDispatcher
 /* static members */
 object DomEventDispatcher {
@@ -15,5 +15,5 @@ object DomEventDispatcher {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+  inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
 }

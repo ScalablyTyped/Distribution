@@ -12,7 +12,7 @@ trait FleetAttributes extends StObject {
   var BuildArn: js.UndefOr[typings.awsSdk.gameliftMod.BuildArn] = js.undefined
   
   /**
-    * A unique identifier for a build.
+    * A unique identifier for the build resource that is deployed on instances in this fleet.
     */
   var BuildId: js.UndefOr[typings.awsSdk.gameliftMod.BuildId] = js.undefined
   
@@ -22,47 +22,47 @@ trait FleetAttributes extends StObject {
   var CertificateConfiguration: js.UndefOr[typings.awsSdk.gameliftMod.CertificateConfiguration] = js.undefined
   
   /**
-    * Time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Human-readable description of the fleet.
+    * A human-readable description of the fleet.
     */
   var Description: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) that is assigned to a GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift fleet ARN, the resource ID matches the FleetId value.
+    * The Amazon Resource Name (ARN) that is assigned to a GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912. In a GameLift fleet ARN, the resource ID matches the FleetId value.
     */
   var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
   
   /**
-    * A unique identifier for a fleet.
+    * A unique identifier for the fleet.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
-    * Indicates whether the fleet uses on-demand or spot instances. A spot instance in use may be interrupted with a two-minute notification.
+    * The kind of instances, On-Demand or Spot, that this fleet uses.
     */
   var FleetType: js.UndefOr[typings.awsSdk.gameliftMod.FleetType] = js.undefined
   
   /**
-    * A unique identifier for an AWS IAM role that manages access to your AWS services. With an instance role ARN set, any application that runs on an instance in this fleet can assume the role, including install scripts, server processes, and daemons (background processes). Create a role or look up a role's ARN from the IAM dashboard in the AWS Management Console. Learn more about using on-box credentials for your game servers at  Access external resources from a game server.
+    * A unique identifier for an IAM role that manages access to your Amazon Web Services services. With an instance role ARN set, any application that runs on an instance in this fleet can assume the role, including install scripts, server processes, and daemons (background processes). Create a role or look up a role's ARN by using the IAM dashboard in the Amazon Web Services Management Console. Learn more about using on-box credentials for your game servers at  Access external resources from a game server.
     */
   var InstanceRoleArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * EC2 instance type indicating the computing resources of each instance in the fleet, including CPU, memory, storage, and networking capacity. See Amazon EC2 Instance Types for detailed descriptions.
+    * The Amazon EC2 instance type that determines the computing resources of each instance in the fleet. Instance type defines the CPU, memory, storage, and networking capacity. See Amazon Elastic Compute Cloud Instance Types for detailed descriptions.
     */
   var InstanceType: js.UndefOr[EC2InstanceType] = js.undefined
   
   /**
-    * Location of default log files. When a server process is shut down, Amazon GameLift captures and stores any log files in this location. These logs are in addition to game session logs; see more on game session logs in the Amazon GameLift Developer Guide. If no default log path for a fleet is specified, Amazon GameLift automatically uploads logs that are stored on each instance at C:\game\logs (for Windows) or /local/game/logs (for Linux). Use the Amazon GameLift console to access stored logs. 
+    *  This parameter is no longer used. Game session log paths are now defined using the GameLift server API ProcessReady() logParameters. See more information in the Server API Reference. 
     */
   var LogPaths: js.UndefOr[StringList] = js.undefined
   
   /**
-    * Names of metric groups that this fleet is included in. In Amazon CloudWatch, you can view metrics for an individual fleet or aggregated metrics for fleets that are in a fleet metric group. A fleet can be included in only one metric group at a time.
+    * Name of a metric group that metrics for this fleet are added to. In Amazon CloudWatch, you can view aggregated metrics for fleets that are in a metric group. A fleet can be included in only one metric group at a time.
     */
   var MetricGroups: js.UndefOr[MetricGroupList] = js.undefined
   
@@ -72,17 +72,17 @@ trait FleetAttributes extends StObject {
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * The type of game session protection to set for all new instances started in the fleet.    NoProtection -- The game session can be terminated during a scale-down event.    FullProtection -- If the game session is in an ACTIVE status, it cannot be terminated during a scale-down event.  
+    * The type of game session protection to set on all new instances that are started in the fleet.    NoProtection -- The game session can be terminated during a scale-down event.    FullProtection -- If the game session is in an ACTIVE status, it cannot be terminated during a scale-down event.  
     */
   var NewGameSessionProtectionPolicy: js.UndefOr[ProtectionPolicy] = js.undefined
   
   /**
-    * Operating system of the fleet's computing resources. A fleet's operating system depends on the OS specified for the build that is deployed on this fleet.
+    * The operating system of the fleet's computing resources. A fleet's operating system is determined by the OS of the build or script that is deployed on this fleet.
     */
   var OperatingSystem: js.UndefOr[typings.awsSdk.gameliftMod.OperatingSystem] = js.undefined
   
   /**
-    * Fleet policy to limit the number of game sessions an individual player can create over a span of time.
+    * The fleet policy that limits the number of game sessions an individual player can create over a span of time.
     */
   var ResourceCreationLimitPolicy: js.UndefOr[typings.awsSdk.gameliftMod.ResourceCreationLimitPolicy] = js.undefined
   
@@ -92,34 +92,34 @@ trait FleetAttributes extends StObject {
   var ScriptArn: js.UndefOr[typings.awsSdk.gameliftMod.ScriptArn] = js.undefined
   
   /**
-    * A unique identifier for a Realtime script.
+    * A unique identifier for the Realtime script resource that is deployed on instances in this fleet.
     */
   var ScriptId: js.UndefOr[typings.awsSdk.gameliftMod.ScriptId] = js.undefined
   
   /**
-    * Game server launch parameters specified for fleets created before 2016-08-04 (or AWS SDK v. 0.12.16). Server launch parameters for fleets created after this date are specified in the fleet's RuntimeConfiguration.
+    *  This parameter is no longer used. Server launch parameters are now defined using the fleet's RuntimeConfiguration parameter. Requests that use this parameter instead continue to be valid.
     */
-  var ServerLaunchParameters: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var ServerLaunchParameters: js.UndefOr[LaunchParametersStringModel] = js.undefined
   
   /**
-    * Path to a game server executable in the fleet's build, specified for fleets created before 2016-08-04 (or AWS SDK v. 0.12.16). Server launch paths for fleets created after this date are specified in the fleet's RuntimeConfiguration.
+    *  This parameter is no longer used. Server launch paths are now defined using the fleet's RuntimeConfiguration parameter. Requests that use this parameter instead continue to be valid.
     */
-  var ServerLaunchPath: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var ServerLaunchPath: js.UndefOr[LaunchPathStringModel] = js.undefined
   
   /**
-    * Current status of the fleet. Possible fleet statuses include the following:    NEW -- A new fleet has been defined and desired instances is set to 1.     DOWNLOADING/VALIDATING/BUILDING/ACTIVATING -- Amazon GameLift is setting up the new fleet, creating new instances with the game build or Realtime script and starting server processes.    ACTIVE -- Hosts can now accept game sessions.    ERROR -- An error occurred when downloading, validating, building, or activating the fleet.    DELETING -- Hosts are responding to a delete fleet request.    TERMINATED -- The fleet no longer exists.  
+    * Current status of the fleet. Possible fleet statuses include the following:    NEW -- A new fleet has been defined and desired instances is set to 1.     DOWNLOADING/VALIDATING/BUILDING/ACTIVATING -- GameLift is setting up the new fleet, creating new instances with the game build or Realtime script and starting server processes.    ACTIVE -- Hosts can now accept game sessions.    ERROR -- An error occurred when downloading, validating, building, or activating the fleet.    DELETING -- Hosts are responding to a delete fleet request.    TERMINATED -- The fleet no longer exists.  
     */
   var Status: js.UndefOr[FleetStatus] = js.undefined
   
   /**
-    * List of fleet activity that have been suspended using StopFleetActions. This includes auto-scaling.
+    * A list of fleet activity that has been suspended using StopFleetActions. This includes fleet auto-scaling.
     */
   var StoppedActions: js.UndefOr[FleetActionList] = js.undefined
   
   /**
-    * Time stamp indicating when this data object was terminated. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was terminated. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var TerminationTime: js.UndefOr[Timestamp] = js.undefined
+  var TerminationTime: js.UndefOr[js.Date] = js.undefined
 }
 object FleetAttributes {
   
@@ -142,7 +142,7 @@ object FleetAttributes {
     
     inline def setCertificateConfigurationUndefined: Self = StObject.set(x, "CertificateConfiguration", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -174,13 +174,13 @@ object FleetAttributes {
     
     inline def setLogPathsUndefined: Self = StObject.set(x, "LogPaths", js.undefined)
     
-    inline def setLogPathsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "LogPaths", js.Array(value :_*))
+    inline def setLogPathsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "LogPaths", js.Array(value*))
     
     inline def setMetricGroups(value: MetricGroupList): Self = StObject.set(x, "MetricGroups", value.asInstanceOf[js.Any])
     
     inline def setMetricGroupsUndefined: Self = StObject.set(x, "MetricGroups", js.undefined)
     
-    inline def setMetricGroupsVarargs(value: MetricGroup*): Self = StObject.set(x, "MetricGroups", js.Array(value :_*))
+    inline def setMetricGroupsVarargs(value: MetricGroup*): Self = StObject.set(x, "MetricGroups", js.Array(value*))
     
     inline def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -206,11 +206,11 @@ object FleetAttributes {
     
     inline def setScriptIdUndefined: Self = StObject.set(x, "ScriptId", js.undefined)
     
-    inline def setServerLaunchParameters(value: NonZeroAndMaxString): Self = StObject.set(x, "ServerLaunchParameters", value.asInstanceOf[js.Any])
+    inline def setServerLaunchParameters(value: LaunchParametersStringModel): Self = StObject.set(x, "ServerLaunchParameters", value.asInstanceOf[js.Any])
     
     inline def setServerLaunchParametersUndefined: Self = StObject.set(x, "ServerLaunchParameters", js.undefined)
     
-    inline def setServerLaunchPath(value: NonZeroAndMaxString): Self = StObject.set(x, "ServerLaunchPath", value.asInstanceOf[js.Any])
+    inline def setServerLaunchPath(value: LaunchPathStringModel): Self = StObject.set(x, "ServerLaunchPath", value.asInstanceOf[js.Any])
     
     inline def setServerLaunchPathUndefined: Self = StObject.set(x, "ServerLaunchPath", js.undefined)
     
@@ -222,9 +222,9 @@ object FleetAttributes {
     
     inline def setStoppedActionsUndefined: Self = StObject.set(x, "StoppedActions", js.undefined)
     
-    inline def setStoppedActionsVarargs(value: FleetAction*): Self = StObject.set(x, "StoppedActions", js.Array(value :_*))
+    inline def setStoppedActionsVarargs(value: FleetAction*): Self = StObject.set(x, "StoppedActions", js.Array(value*))
     
-    inline def setTerminationTime(value: Timestamp): Self = StObject.set(x, "TerminationTime", value.asInstanceOf[js.Any])
+    inline def setTerminationTime(value: js.Date): Self = StObject.set(x, "TerminationTime", value.asInstanceOf[js.Any])
     
     inline def setTerminationTimeUndefined: Self = StObject.set(x, "TerminationTime", js.undefined)
   }

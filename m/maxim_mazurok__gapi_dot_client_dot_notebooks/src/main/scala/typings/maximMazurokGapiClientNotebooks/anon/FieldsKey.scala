@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientNotebooks.anon
 
-import typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks.UpgradeInstanceInternalRequest
+import typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks.UpdateInstanceConfigRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait FieldsKey extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: UpgradeInstanceInternalRequest
+  var resource: UpdateInstanceConfigRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait FieldsKey extends StObject {
 }
 object FieldsKey {
   
-  inline def apply(name: String, resource: UpgradeInstanceInternalRequest): FieldsKey = {
+  inline def apply(name: String, resource: UpdateInstanceConfigRequest): FieldsKey = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKey]
   }
@@ -94,7 +94,7 @@ object FieldsKey {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: UpgradeInstanceInternalRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: UpdateInstanceConfigRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

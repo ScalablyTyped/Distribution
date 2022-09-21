@@ -35,7 +35,7 @@ object XUnoControlContainer {
     acquire: () => Unit,
     addTabController: XTabController => Unit,
     getTabControllers: () => SafeArray[XTabController],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTabController: XTabController => Unit,
     setTabControllers: SeqEquiv[XTabController] => Unit

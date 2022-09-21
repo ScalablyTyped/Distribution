@@ -1,10 +1,10 @@
 package typings.nodegit
 
+import typings.nodegit.anon.Code
 import typings.nodegit.objectMod.Object
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature
-import typings.nodegit.strArrayMod.Strarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object tagMod {
   
   @JSImport("nodegit/tag", "Tag")
   @js.native
-  class Tag () extends StObject {
+  open class Tag () extends StObject {
     
     def dup(): js.Promise[Tag] = js.native
     
@@ -57,13 +57,66 @@ object tagMod {
     
     inline def createLightweight(repo: Repository, tagName: String, target: Object, force: Double): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLightweight")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
+    inline def createWithSignature(
+      repo: Repository,
+      tagName: String,
+      target: String,
+      tagger: Signature,
+      message: String,
+      force: Double,
+      signingCallback: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithSignature")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], tagger.asInstanceOf[js.Any], message.asInstanceOf[js.Any], force.asInstanceOf[js.Any], signingCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    inline def createWithSignature(
+      repo: Repository,
+      tagName: String,
+      target: String,
+      tagger: Signature,
+      message: Null,
+      force: Double,
+      signingCallback: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithSignature")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], tagger.asInstanceOf[js.Any], message.asInstanceOf[js.Any], force.asInstanceOf[js.Any], signingCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    inline def createWithSignature(
+      repo: Repository,
+      tagName: String,
+      target: String,
+      tagger: Signature,
+      message: Unit,
+      force: Double,
+      signingCallback: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithSignature")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], tagger.asInstanceOf[js.Any], message.asInstanceOf[js.Any], force.asInstanceOf[js.Any], signingCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    inline def createWithSignature(
+      repo: Repository,
+      tagName: String,
+      target: Oid,
+      tagger: Signature,
+      message: String,
+      force: Double,
+      signingCallback: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithSignature")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], tagger.asInstanceOf[js.Any], message.asInstanceOf[js.Any], force.asInstanceOf[js.Any], signingCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    inline def createWithSignature(
+      repo: Repository,
+      tagName: String,
+      target: Oid,
+      tagger: Signature,
+      message: Null,
+      force: Double,
+      signingCallback: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithSignature")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], tagger.asInstanceOf[js.Any], message.asInstanceOf[js.Any], force.asInstanceOf[js.Any], signingCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    inline def createWithSignature(
+      repo: Repository,
+      tagName: String,
+      target: Oid,
+      tagger: Signature,
+      message: Unit,
+      force: Double,
+      signingCallback: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithSignature")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], tagger.asInstanceOf[js.Any], message.asInstanceOf[js.Any], force.asInstanceOf[js.Any], signingCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    
     inline def delete(repo: Repository, tagName: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    inline def list(repo: Repository): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+    inline def list(repo: Repository): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
     
-    inline def listMatch(tagNames: String, pattern: String, repo: Repository): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listMatch")(tagNames.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], repo.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def listMatch(tagNames: js.Array[String], pattern: String, repo: Repository): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listMatch")(tagNames.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], repo.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def listMatch(tagNames: Strarray, pattern: String, repo: Repository): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listMatch")(tagNames.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], repo.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listMatch(pattern: String, repo: Repository): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listMatch")(pattern.asInstanceOf[js.Any], repo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
     
     /**
       * Retrieves the tag pointed to by the oid

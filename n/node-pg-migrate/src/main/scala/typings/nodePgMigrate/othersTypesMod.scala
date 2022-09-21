@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object othersTypesMod {
   
-  type Sql = js.Function2[
-    /* sqlStr */ String, 
-    /* args */ js.UndefOr[StringDictionary[Name | Value]], 
-    String | js.Array[String]
-  ]
+  @js.native
+  trait Sql extends StObject {
+    
+    def apply(sqlStr: String): String | js.Array[String] = js.native
+    def apply(sqlStr: String, args: StringDictionary[Name | Value]): String | js.Array[String] = js.native
+  }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SignedDataBlockObject")
 @js.native
-/* private */ class SignedDataBlockObject ()
+/* private */ open class SignedDataBlockObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SignedDataBlockObject {
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "NormalizeBlock")
 @js.native
-class NormalizeBlock protected ()
+open class NormalizeBlock protected ()
   extends typings.babylonjs.nodeIndexMod.NormalizeBlock {
   /**
     * Creates a new NormalizeBlock

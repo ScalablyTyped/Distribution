@@ -29,6 +29,6 @@ object ProtectiveEquipmentSummarizationAttributes {
     
     inline def setRequiredEquipmentTypes(value: ProtectiveEquipmentTypes): Self = StObject.set(x, "RequiredEquipmentTypes", value.asInstanceOf[js.Any])
     
-    inline def setRequiredEquipmentTypesVarargs(value: ProtectiveEquipmentType*): Self = StObject.set(x, "RequiredEquipmentTypes", js.Array(value :_*))
+    inline def setRequiredEquipmentTypesVarargs(value: ProtectiveEquipmentType*): Self = StObject.set(x, "RequiredEquipmentTypes", js.Array(value*))
   }
 }

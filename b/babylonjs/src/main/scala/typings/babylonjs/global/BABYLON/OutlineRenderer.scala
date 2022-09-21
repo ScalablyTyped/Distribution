@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.OutlineRenderer")
 @js.native
-class OutlineRenderer protected ()
+open class OutlineRenderer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.OutlineRenderer {
   /**
@@ -58,6 +58,6 @@ object OutlineRenderer {
     */
   @JSGlobal("BABYLON.OutlineRenderer._StencilReference")
   @js.native
-  def _StencilReference: js.Any = js.native
-  inline def _StencilReference_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StencilReference")(x.asInstanceOf[js.Any])
+  def _StencilReference: Any = js.native
+  inline def _StencilReference_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StencilReference")(x.asInstanceOf[js.Any])
 }

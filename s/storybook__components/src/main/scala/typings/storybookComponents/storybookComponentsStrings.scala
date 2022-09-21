@@ -1,12 +1,27 @@
 package typings.storybookComponents
 
-import typings.storybookComponents.controlsTypesMod.ControlType
-import typings.storybookComponents.controlsTypesMod.OptionsControlType
-import typings.storybookComponents.iconsMod.IconKey
-import typings.storybookComponents.inputMod.Alignments
-import typings.storybookComponents.inputMod.Sizes
-import typings.storybookComponents.inputMod.ValidationStates
-import typings.storybookComponents.sectionRowMod.Level
+import typings.storybookComponents.mod.Alignments
+import typings.storybookComponents.mod.ControlType
+import typings.storybookComponents.mod.IconKey
+import typings.storybookComponents.mod.OptionsControlType
+import typings.storybookComponents.mod.Sizes
+import typings.storybookComponents.mod.SortType
+import typings.storybookComponents.mod.ValidationStates
+import typings.storybookComponents.mod._SyntaxHighlighterFormatTypes
+import typings.storybookComponents.popperjsCoreLibEnumsMod.AutoPlacement
+import typings.storybookComponents.popperjsCoreLibEnumsMod.BasePlacement
+import typings.storybookComponents.popperjsCoreLibEnumsMod.ComputedPlacement
+import typings.storybookComponents.popperjsCoreLibEnumsMod.Context
+import typings.storybookComponents.popperjsCoreLibEnumsMod.ModifierPhases_
+import typings.storybookComponents.popperjsCoreLibEnumsMod.Placement
+import typings.storybookComponents.popperjsCoreLibEnumsMod.RootBoundary
+import typings.storybookComponents.popperjsCoreLibEnumsMod.Variation
+import typings.storybookComponents.popperjsCoreLibEnumsMod.VariationPlacement
+import typings.storybookComponents.popperjsCoreLibTypesMod.PositioningStrategy
+import typings.storybookComponents.typesPrettierIndexMod.BuiltInParserName
+import typings.storybookComponents.typesPrettierIndexMod.CoreCategoryType
+import typings.storybookComponents.typesPrettierIndexMod.SupportOptionType
+import typings.storybookComponents.typesPrettierIndexMod.util.Quote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,12 +35,80 @@ object storybookComponentsStrings {
   inline def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
   
   @js.native
+  sealed trait Apostrophe
+    extends StObject
+       with Quote
+  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
+  
+  @js.native
+  sealed trait Config
+    extends StObject
+       with CoreCategoryType
+  inline def Config: Config = "Config".asInstanceOf[Config]
+  
+  @js.native
+  sealed trait Editor
+    extends StObject
+       with CoreCategoryType
+  inline def Editor: Editor = "Editor".asInstanceOf[Editor]
+  
+  @js.native
+  sealed trait Format
+    extends StObject
+       with CoreCategoryType
+  inline def Format: Format = "Format".asInstanceOf[Format]
+  
+  @js.native
+  sealed trait Global
+    extends StObject
+       with CoreCategoryType
+  inline def Global: Global = "Global".asInstanceOf[Global]
+  
+  @js.native
+  sealed trait Other
+    extends StObject
+       with CoreCategoryType
+  inline def Other: Other = "Other".asInstanceOf[Other]
+  
+  @js.native
+  sealed trait Output
+    extends StObject
+       with CoreCategoryType
+  inline def Output: Output = "Output".asInstanceOf[Output]
+  
+  @js.native
+  sealed trait Quotationmark
+    extends StObject
+       with Quote
+  inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
+  
+  @js.native
+  sealed trait Special
+    extends StObject
+       with CoreCategoryType
+  inline def Special: Special = "Special".asInstanceOf[Special]
+  
+  @js.native
+  sealed trait `[object Window]` extends StObject
+  inline def `[object Window]`: `[object Window]` = ("[object Window]").asInstanceOf[`[object Window]`]
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
   @js.native
   sealed trait abbr extends StObject
   inline def abbr: abbr = "abbr".asInstanceOf[abbr]
+  
+  @js.native
+  sealed trait absolute
+    extends StObject
+       with PositioningStrategy
+  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
   sealed trait accessibility
@@ -68,6 +151,24 @@ object storybookComponentsStrings {
   inline def admin: admin = "admin".asInstanceOf[admin]
   
   @js.native
+  sealed trait afterMain
+    extends StObject
+       with ModifierPhases_
+  inline def afterMain: afterMain = "afterMain".asInstanceOf[afterMain]
+  
+  @js.native
+  sealed trait afterRead
+    extends StObject
+       with ModifierPhases_
+  inline def afterRead: afterRead = "afterRead".asInstanceOf[afterRead]
+  
+  @js.native
+  sealed trait afterWrite
+    extends StObject
+       with ModifierPhases_
+  inline def afterWrite: afterWrite = "afterWrite".asInstanceOf[afterWrite]
+  
+  @js.native
   sealed trait alert
     extends StObject
        with IconKey
@@ -82,8 +183,20 @@ object storybookComponentsStrings {
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait ancillary extends StObject
-  inline def ancillary: ancillary = "ancillary".asInstanceOf[ancillary]
+  sealed trait alpha
+    extends StObject
+       with SortType
+  inline def alpha: alpha = "alpha".asInstanceOf[alpha]
+  
+  @js.native
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait angular
+    extends StObject
+       with BuiltInParserName
+  inline def angular: angular = "angular".asInstanceOf[angular]
   
   @js.native
   sealed trait animate extends StObject
@@ -98,6 +211,14 @@ object storybookComponentsStrings {
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
+  sealed trait applyStyles extends StObject
+  inline def applyStyles: applyStyles = "applyStyles".asInstanceOf[applyStyles]
+  
+  @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
@@ -106,6 +227,10 @@ object storybookComponentsStrings {
     extends StObject
        with ControlType
   inline def array: array = "array".asInstanceOf[array]
+  
+  @js.native
+  sealed trait arrow extends StObject
+  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
   sealed trait arrowdown
@@ -148,6 +273,10 @@ object storybookComponentsStrings {
   inline def article: article = "article".asInstanceOf[article]
   
   @js.native
+  sealed trait `as-needed` extends StObject
+  inline def `as-needed`: `as-needed` = "as-needed".asInstanceOf[`as-needed`]
+  
+  @js.native
   sealed trait ascending extends StObject
   inline def ascending: ascending = "ascending".asInstanceOf[ascending]
   
@@ -160,18 +289,66 @@ object storybookComponentsStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
+  sealed trait async extends StObject
+  inline def async: async = "async".asInstanceOf[async]
+  
+  @js.native
   sealed trait audio extends StObject
   inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
   sealed trait auto
     extends StObject
+       with AutoPlacement
+       with Placement
        with Sizes
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
+  sealed trait `auto-end`
+    extends StObject
+       with AutoPlacement
+       with Placement
+  inline def `auto-end`: `auto-end` = "auto-end".asInstanceOf[`auto-end`]
+  
+  @js.native
+  sealed trait `auto-start`
+    extends StObject
+       with AutoPlacement
+       with Placement
+  inline def `auto-start`: `auto-start` = "auto-start".asInstanceOf[`auto-start`]
+  
+  @js.native
+  sealed trait avoid extends StObject
+  inline def avoid: avoid = "avoid".asInstanceOf[avoid]
+  
+  @js.native
+  sealed trait azuredevops
+    extends StObject
+       with IconKey
+  inline def azuredevops: azuredevops = "azuredevops".asInstanceOf[azuredevops]
+  
+  @js.native
   sealed trait b extends StObject
   inline def b: b = "b".asInstanceOf[b]
+  
+  @js.native
+  sealed trait babel
+    extends StObject
+       with BuiltInParserName
+  inline def babel: babel = "babel".asInstanceOf[babel]
+  
+  @js.native
+  sealed trait `babel-flow`
+    extends StObject
+       with BuiltInParserName
+  inline def `babel-flow`: `babel-flow` = "babel-flow".asInstanceOf[`babel-flow`]
+  
+  @js.native
+  sealed trait `babel-ts`
+    extends StObject
+       with BuiltInParserName
+  inline def `babel-ts`: `babel-ts` = "babel-ts".asInstanceOf[`babel-ts`]
   
   @js.native
   sealed trait back
@@ -214,6 +391,24 @@ object storybookComponentsStrings {
     extends StObject
        with IconKey
   inline def beaker: beaker = "beaker".asInstanceOf[beaker]
+  
+  @js.native
+  sealed trait beforeMain
+    extends StObject
+       with ModifierPhases_
+  inline def beforeMain: beforeMain = "beforeMain".asInstanceOf[beforeMain]
+  
+  @js.native
+  sealed trait beforeRead
+    extends StObject
+       with ModifierPhases_
+  inline def beforeRead: beforeRead = "beforeRead".asInstanceOf[beforeRead]
+  
+  @js.native
+  sealed trait beforeWrite
+    extends StObject
+       with ModifierPhases_
+  inline def beforeWrite: beforeWrite = "beforeWrite".asInstanceOf[beforeWrite]
   
   @js.native
   sealed trait bell
@@ -261,15 +456,36 @@ object storybookComponentsStrings {
   sealed trait boolean
     extends StObject
        with ControlType
+       with SupportOptionType
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
-  
-  @js.native
-  sealed trait border extends StObject
-  inline def border: border = "border".asInstanceOf[border]
   
   @js.native
   sealed trait both extends StObject
   inline def both: both = "both".asInstanceOf[both]
+  
+  @js.native
+  sealed trait bottom
+    extends StObject
+       with BasePlacement
+       with ComputedPlacement
+       with Placement
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
+  sealed trait `bottom-end`
+    extends StObject
+       with ComputedPlacement
+       with Placement
+       with VariationPlacement
+  inline def `bottom-end`: `bottom-end` = "bottom-end".asInstanceOf[`bottom-end`]
+  
+  @js.native
+  sealed trait `bottom-start`
+    extends StObject
+       with ComputedPlacement
+       with Placement
+       with VariationPlacement
+  inline def `bottom-start`: `bottom-start` = "bottom-start".asInstanceOf[`bottom-start`]
   
   @js.native
   sealed trait bottombar
@@ -292,6 +508,10 @@ object storybookComponentsStrings {
     extends StObject
        with IconKey
   inline def branch: branch = "branch".asInstanceOf[branch]
+  
+  @js.native
+  sealed trait `break-parent` extends StObject
+  inline def `break-parent`: `break-parent` = "break-parent".asInstanceOf[`break-parent`]
   
   @js.native
   sealed trait browser
@@ -358,6 +578,12 @@ object storybookComponentsStrings {
   inline def chevrondown: chevrondown = "chevrondown".asInstanceOf[chevrondown]
   
   @js.native
+  sealed trait choice
+    extends StObject
+       with SupportOptionType
+  inline def choice: choice = "choice".asInstanceOf[choice]
+  
+  @js.native
   sealed trait chromatic
     extends StObject
        with IconKey
@@ -386,6 +612,10 @@ object storybookComponentsStrings {
   @js.native
   sealed trait clipPath extends StObject
   inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
+  
+  @js.native
+  sealed trait clippingParents extends StObject
+  inline def clippingParents: clippingParents = "clippingParents".asInstanceOf[clippingParents]
   
   @js.native
   sealed trait close
@@ -436,6 +666,18 @@ object storybookComponentsStrings {
   inline def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
+  sealed trait commentadd
+    extends StObject
+       with IconKey
+  inline def commentadd: commentadd = "commentadd".asInstanceOf[commentadd]
+  
+  @js.native
+  sealed trait comments
+    extends StObject
+       with IconKey
+  inline def comments: comments = "comments".asInstanceOf[comments]
+  
+  @js.native
   sealed trait commit
     extends StObject
        with IconKey
@@ -452,6 +694,18 @@ object storybookComponentsStrings {
     extends StObject
        with IconKey
   inline def component: component = "component".asInstanceOf[component]
+  
+  @js.native
+  sealed trait computeStyles extends StObject
+  inline def computeStyles: computeStyles = "computeStyles".asInstanceOf[computeStyles]
+  
+  @js.native
+  sealed trait concat extends StObject
+  inline def concat: concat = "concat".asInstanceOf[concat]
+  
+  @js.native
+  sealed trait consistent extends StObject
+  inline def consistent: consistent = "consistent".asInstanceOf[consistent]
   
   @js.native
   sealed trait contrast
@@ -472,6 +726,10 @@ object storybookComponentsStrings {
   inline def cpu: cpu = "cpu".asInstanceOf[cpu]
   
   @js.native
+  sealed trait cr extends StObject
+  inline def cr: cr = "cr".asInstanceOf[cr]
+  
+  @js.native
   sealed trait credit
     extends StObject
        with IconKey
@@ -482,22 +740,24 @@ object storybookComponentsStrings {
   inline def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
+  sealed trait crlf extends StObject
+  inline def crlf: crlf = "crlf".asInstanceOf[crlf]
+  
+  @js.native
   sealed trait cross
     extends StObject
        with IconKey
   inline def cross: cross = "cross".asInstanceOf[cross]
   
   @js.native
-  sealed trait dark extends StObject
-  inline def dark: dark = "dark".asInstanceOf[dark]
+  sealed trait css
+    extends StObject
+       with BuiltInParserName
+  inline def css: css = "css".asInstanceOf[css]
   
   @js.native
-  sealed trait darker extends StObject
-  inline def darker: darker = "darker".asInstanceOf[darker]
-  
-  @js.native
-  sealed trait darkest extends StObject
-  inline def darkest: darkest = "darkest".asInstanceOf[darkest]
+  sealed trait cursor extends StObject
+  inline def cursor: cursor = "cursor".asInstanceOf[cursor]
   
   @js.native
   sealed trait dashboard
@@ -534,8 +794,10 @@ object storybookComponentsStrings {
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait defaultText extends StObject
-  inline def defaultText: defaultText = "defaultText".asInstanceOf[defaultText]
+  sealed trait dedent
+    extends StObject
+       with _SyntaxHighlighterFormatTypes
+  inline def dedent: dedent = "dedent".asInstanceOf[dedent]
   
   @js.native
   sealed trait defs extends StObject
@@ -601,6 +863,7 @@ object storybookComponentsStrings {
   sealed trait document
     extends StObject
        with IconKey
+       with RootBoundary
   inline def document: document = "document".asInstanceOf[document]
   
   @js.native
@@ -612,6 +875,10 @@ object storybookComponentsStrings {
   @js.native
   sealed trait dt extends StObject
   inline def dt: dt = "dt".asInstanceOf[dt]
+  
+  @js.native
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
   sealed trait edit
@@ -647,13 +914,32 @@ object storybookComponentsStrings {
   sealed trait end
     extends StObject
        with Alignments
+       with Variation
   inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
   sealed trait error
     extends StObject
        with ValidationStates
   inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait es5 extends StObject
+  inline def es5: es5 = "es5".asInstanceOf[es5]
+  
+  @js.native
+  sealed trait espree
+    extends StObject
+       with BuiltInParserName
+  inline def espree: espree = "espree".asInstanceOf[espree]
+  
+  @js.native
+  sealed trait eventListeners extends StObject
+  inline def eventListeners: eventListeners = "eventListeners".asInstanceOf[eventListeners]
   
   @js.native
   sealed trait execute extends StObject
@@ -706,6 +992,12 @@ object storybookComponentsStrings {
     extends StObject
        with IconKey
   inline def facesad: facesad = "facesad".asInstanceOf[facesad]
+  
+  @js.native
+  sealed trait fastforward
+    extends StObject
+       with IconKey
+  inline def fastforward: fastforward = "fastforward".asInstanceOf[fastforward]
   
   @js.native
   sealed trait feBlend extends StObject
@@ -820,10 +1112,20 @@ object storybookComponentsStrings {
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
+  sealed trait fill extends StObject
+  inline def fill: fill = "fill".asInstanceOf[fill]
+  
+  @js.native
   sealed trait filter
     extends StObject
        with IconKey
   inline def filter: filter = "filter".asInstanceOf[filter]
+  
+  @js.native
+  sealed trait fixed
+    extends StObject
+       with PositioningStrategy
+  inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
   sealed trait flag
@@ -836,6 +1138,16 @@ object storybookComponentsStrings {
     extends StObject
        with Sizes
   inline def flex: flex = "flex".asInstanceOf[flex]
+  
+  @js.native
+  sealed trait flip extends StObject
+  inline def flip: flip = "flip".asInstanceOf[flip]
+  
+  @js.native
+  sealed trait flow
+    extends StObject
+       with BuiltInParserName
+  inline def flow: flow = "flow".asInstanceOf[flow]
   
   @js.native
   sealed trait folder
@@ -880,14 +1192,16 @@ object storybookComponentsStrings {
   inline def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
   
   @js.native
+  sealed trait glimmer
+    extends StObject
+       with BuiltInParserName
+  inline def glimmer: glimmer = "glimmer".asInstanceOf[glimmer]
+  
+  @js.native
   sealed trait globe
     extends StObject
        with IconKey
   inline def globe: globe = "globe".asInstanceOf[globe]
-  
-  @js.native
-  sealed trait gold extends StObject
-  inline def gold: gold = "gold".asInstanceOf[gold]
   
   @js.native
   sealed trait google
@@ -914,18 +1228,19 @@ object storybookComponentsStrings {
   @js.native
   sealed trait graphql
     extends StObject
+       with BuiltInParserName
        with IconKey
   inline def graphql: graphql = "graphql".asInstanceOf[graphql]
-  
-  @js.native
-  sealed trait green extends StObject
-  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
   sealed trait grid
     extends StObject
        with IconKey
   inline def grid: grid = "grid".asInstanceOf[grid]
+  
+  @js.native
+  sealed trait group extends StObject
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
   sealed trait grow
@@ -986,6 +1301,10 @@ object storybookComponentsStrings {
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
+  
+  @js.native
   sealed trait home
     extends StObject
        with IconKey
@@ -1010,7 +1329,9 @@ object storybookComponentsStrings {
   inline def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
-  sealed trait html extends StObject
+  sealed trait html
+    extends StObject
+       with BuiltInParserName
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
@@ -1018,8 +1339,16 @@ object storybookComponentsStrings {
   inline def i: i = "i".asInstanceOf[i]
   
   @js.native
+  sealed trait `if-break` extends StObject
+  inline def `if-break`: `if-break` = "if-break".asInstanceOf[`if-break`]
+  
+  @js.native
   sealed trait iframe extends StObject
   inline def iframe: iframe = "iframe".asInstanceOf[iframe]
+  
+  @js.native
+  sealed trait ignore extends StObject
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
   sealed trait image extends StObject
@@ -1028,6 +1357,14 @@ object storybookComponentsStrings {
   @js.native
   sealed trait img extends StObject
   inline def img: img = "img".asInstanceOf[img]
+  
+  @js.native
+  sealed trait indent extends StObject
+  inline def indent: indent = "indent".asInstanceOf[indent]
+  
+  @js.native
+  sealed trait `indent-if-break` extends StObject
+  inline def `indent-if-break`: `indent-if-break` = "indent-if-break".asInstanceOf[`indent-if-break`]
   
   @js.native
   sealed trait info
@@ -1066,8 +1403,28 @@ object storybookComponentsStrings {
   inline def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
-  sealed trait inverseText extends StObject
-  inline def inverseText: inverseText = "inverseText".asInstanceOf[inverseText]
+  sealed trait int
+    extends StObject
+       with SupportOptionType
+  inline def int: int = "int".asInstanceOf[int]
+  
+  @js.native
+  sealed trait json
+    extends StObject
+       with BuiltInParserName
+  inline def json: json = "json".asInstanceOf[json]
+  
+  @js.native
+  sealed trait `json-stringify`
+    extends StObject
+       with BuiltInParserName
+  inline def `json-stringify`: `json-stringify` = "json-stringify".asInstanceOf[`json-stringify`]
+  
+  @js.native
+  sealed trait json5
+    extends StObject
+       with BuiltInParserName
+  inline def json5: json5 = "json5".asInstanceOf[json5]
   
   @js.native
   sealed trait kbd extends StObject
@@ -1088,24 +1445,50 @@ object storybookComponentsStrings {
   inline def label: label = "label".asInstanceOf[label]
   
   @js.native
+  sealed trait `lazy` extends StObject
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
+  sealed trait left
+    extends StObject
+       with BasePlacement
+       with ComputedPlacement
+       with Placement
+  inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
+  sealed trait `left-end`
+    extends StObject
+       with ComputedPlacement
+       with Placement
+       with VariationPlacement
+  inline def `left-end`: `left-end` = "left-end".asInstanceOf[`left-end`]
+  
+  @js.native
+  sealed trait `left-start`
+    extends StObject
+       with ComputedPlacement
+       with Placement
+       with VariationPlacement
+  inline def `left-start`: `left-start` = "left-start".asInstanceOf[`left-start`]
+  
+  @js.native
   sealed trait legend extends StObject
   inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
+  sealed trait less
+    extends StObject
+       with BuiltInParserName
+  inline def less: less = "less".asInstanceOf[less]
+  
+  @js.native
+  sealed trait lf extends StObject
+  inline def lf: lf = "lf".asInstanceOf[lf]
+  
+  @js.native
   sealed trait li extends StObject
   inline def li: li = "li".asInstanceOf[li]
-  
-  @js.native
-  sealed trait light extends StObject
-  inline def light: light = "light".asInstanceOf[light]
-  
-  @js.native
-  sealed trait lighter extends StObject
-  inline def lighter: lighter = "lighter".asInstanceOf[lighter]
-  
-  @js.native
-  sealed trait lightest extends StObject
-  inline def lightest: lightest = "lightest".asInstanceOf[lightest]
   
   @js.native
   sealed trait lightning
@@ -1122,6 +1505,14 @@ object storybookComponentsStrings {
   @js.native
   sealed trait line extends StObject
   inline def line: line = "line".asInstanceOf[line]
+  
+  @js.native
+  sealed trait `line-suffix` extends StObject
+  inline def `line-suffix`: `line-suffix` = "line-suffix".asInstanceOf[`line-suffix`]
+  
+  @js.native
+  sealed trait `line-suffix-boundary` extends StObject
+  inline def `line-suffix-boundary`: `line-suffix-boundary` = "line-suffix-boundary".asInstanceOf[`line-suffix-boundary`]
   
   @js.native
   sealed trait linearGradient extends StObject
@@ -1160,7 +1551,15 @@ object storybookComponentsStrings {
   inline def lock: lock = "lock".asInstanceOf[lock]
   
   @js.native
-  sealed trait main extends StObject
+  sealed trait lwc
+    extends StObject
+       with BuiltInParserName
+  inline def lwc: lwc = "lwc".asInstanceOf[lwc]
+  
+  @js.native
+  sealed trait main
+    extends StObject
+       with ModifierPhases_
   inline def main: main = "main".asInstanceOf[main]
   
   @js.native
@@ -1170,6 +1569,12 @@ object storybookComponentsStrings {
   @js.native
   sealed trait mark extends StObject
   inline def mark: mark = "mark".asInstanceOf[mark]
+  
+  @js.native
+  sealed trait markdown
+    extends StObject
+       with BuiltInParserName
+  inline def markdown: markdown = "markdown".asInstanceOf[markdown]
   
   @js.native
   sealed trait marker extends StObject
@@ -1186,18 +1591,20 @@ object storybookComponentsStrings {
   inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
+  sealed trait maxHeight extends StObject
+  inline def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
+  
+  @js.native
+  sealed trait mdx
+    extends StObject
+       with BuiltInParserName
+  inline def mdx: mdx = "mdx".asInstanceOf[mdx]
+  
+  @js.native
   sealed trait medium
     extends StObject
        with IconKey
   inline def medium: medium = "medium".asInstanceOf[medium]
-  
-  @js.native
-  sealed trait mediumdark extends StObject
-  inline def mediumdark: mediumdark = "mediumdark".asInstanceOf[mediumdark]
-  
-  @js.native
-  sealed trait mediumlight extends StObject
-  inline def mediumlight: mediumlight = "mediumlight".asInstanceOf[mediumlight]
   
   @js.native
   sealed trait memory
@@ -1222,6 +1629,12 @@ object storybookComponentsStrings {
   inline def merge: merge = "merge".asInstanceOf[merge]
   
   @js.native
+  sealed trait meriyah
+    extends StObject
+       with BuiltInParserName
+  inline def meriyah: meriyah = "meriyah".asInstanceOf[meriyah]
+  
+  @js.native
   sealed trait meta extends StObject
   inline def meta: meta = "meta".asInstanceOf[meta]
   
@@ -1232,6 +1645,10 @@ object storybookComponentsStrings {
   @js.native
   sealed trait meter extends StObject
   inline def meter: meter = "meter".asInstanceOf[meter]
+  
+  @js.native
+  sealed trait minHeight extends StObject
+  inline def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
   
   @js.native
   sealed trait mirror
@@ -1277,6 +1694,10 @@ object storybookComponentsStrings {
   inline def neutral: neutral = "neutral".asInstanceOf[neutral]
   
   @js.native
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
+  
+  @js.native
   sealed trait no extends StObject
   inline def no: no = "no".asInstanceOf[no]
   
@@ -1285,7 +1706,9 @@ object storybookComponentsStrings {
   inline def noindex: noindex = "noindex".asInstanceOf[noindex]
   
   @js.native
-  sealed trait none extends StObject
+  sealed trait none
+    extends StObject
+       with SortType
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -1319,6 +1742,10 @@ object storybookComponentsStrings {
   inline def off: off = "off".asInstanceOf[off]
   
   @js.native
+  sealed trait offset extends StObject
+  inline def offset: offset = "offset".asInstanceOf[offset]
+  
+  @js.native
   sealed trait ol extends StObject
   inline def ol: ol = "ol".asInstanceOf[ol]
   
@@ -1335,12 +1762,8 @@ object storybookComponentsStrings {
   inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait orange extends StObject
-  inline def orange: orange = "orange".asInstanceOf[orange]
-  
-  @js.native
-  sealed trait other extends StObject
-  inline def other: other = "other".asInstanceOf[other]
+  sealed trait other_ extends StObject
+  inline def other_ : other_ = "other".asInstanceOf[other_]
   
   @js.native
   sealed trait outbox
@@ -1355,8 +1778,8 @@ object storybookComponentsStrings {
   inline def outline: outline = "outline".asInstanceOf[outline]
   
   @js.native
-  sealed trait output extends StObject
-  inline def output: output = "output".asInstanceOf[output]
+  sealed trait output_ extends StObject
+  inline def output_ : output_ = "output".asInstanceOf[output_]
   
   @js.native
   sealed trait p extends StObject
@@ -1389,7 +1812,9 @@ object storybookComponentsStrings {
   inline def param: param = "param".asInstanceOf[param]
   
   @js.native
-  sealed trait path extends StObject
+  sealed trait path
+    extends StObject
+       with SupportOptionType
   inline def path: path = "path".asInstanceOf[path]
   
   @js.native
@@ -1425,6 +1850,18 @@ object storybookComponentsStrings {
   inline def play: play = "play".asInstanceOf[play]
   
   @js.native
+  sealed trait playback
+    extends StObject
+       with IconKey
+  inline def playback: playback = "playback".asInstanceOf[playback]
+  
+  @js.native
+  sealed trait playnext
+    extends StObject
+       with IconKey
+  inline def playnext: playnext = "playnext".asInstanceOf[playnext]
+  
+  @js.native
   sealed trait plus
     extends StObject
        with IconKey
@@ -1441,6 +1878,16 @@ object storybookComponentsStrings {
   @js.native
   sealed trait polyline extends StObject
   inline def polyline: polyline = "polyline".asInstanceOf[polyline]
+  
+  @js.native
+  sealed trait popper
+    extends StObject
+       with Context
+  inline def popper: popper = "popper".asInstanceOf[popper]
+  
+  @js.native
+  sealed trait popperOffsets extends StObject
+  inline def popperOffsets: popperOffsets = "popperOffsets".asInstanceOf[popperOffsets]
   
   @js.native
   sealed trait popup extends StObject
@@ -1461,8 +1908,12 @@ object storybookComponentsStrings {
   inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
-  sealed trait primary extends StObject
-  inline def primary: primary = "primary".asInstanceOf[primary]
+  sealed trait preserve extends StObject
+  inline def preserve: preserve = "preserve".asInstanceOf[preserve]
+  
+  @js.native
+  sealed trait preventOverflow extends StObject
+  inline def preventOverflow: preventOverflow = "preventOverflow".asInstanceOf[preventOverflow]
   
   @js.native
   sealed trait print
@@ -1493,10 +1944,6 @@ object storybookComponentsStrings {
   inline def pullrequest: pullrequest = "pullrequest".asInstanceOf[pullrequest]
   
   @js.native
-  sealed trait purple extends StObject
-  inline def purple: purple = "purple".asInstanceOf[purple]
-  
-  @js.native
   sealed trait q extends StObject
   inline def q: q = "q".asInstanceOf[q]
   
@@ -1524,6 +1971,12 @@ object storybookComponentsStrings {
   inline def range: range = "range".asInstanceOf[range]
   
   @js.native
+  sealed trait read
+    extends StObject
+       with ModifierPhases_
+  inline def read: read = "read".asInstanceOf[read]
+  
+  @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
   
@@ -1538,6 +1991,12 @@ object storybookComponentsStrings {
     extends StObject
        with IconKey
   inline def redux: redux = "redux".asInstanceOf[redux]
+  
+  @js.native
+  sealed trait reference
+    extends StObject
+       with Context
+  inline def reference: reference = "reference".asInstanceOf[reference]
   
   @js.native
   sealed trait removals extends StObject
@@ -1570,12 +2029,52 @@ object storybookComponentsStrings {
   inline def requestchange: requestchange = "requestchange".asInstanceOf[requestchange]
   
   @js.native
+  sealed trait requiredFirst
+    extends StObject
+       with SortType
+  inline def requiredFirst: requiredFirst = "requiredFirst".asInstanceOf[requiredFirst]
+  
+  @js.native
   sealed trait reset extends StObject
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
+  sealed trait rewind
+    extends StObject
+       with IconKey
+  inline def rewind: rewind = "rewind".asInstanceOf[rewind]
+  
+  @js.native
+  sealed trait right
+    extends StObject
+       with BasePlacement
+       with ComputedPlacement
+       with Placement
+  inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
   sealed trait `right-click` extends StObject
   inline def `right-click`: `right-click` = "right-click".asInstanceOf[`right-click`]
+  
+  @js.native
+  sealed trait `right-end`
+    extends StObject
+       with ComputedPlacement
+       with Placement
+       with VariationPlacement
+  inline def `right-end`: `right-end` = "right-end".asInstanceOf[`right-end`]
+  
+  @js.native
+  sealed trait `right-start`
+    extends StObject
+       with ComputedPlacement
+       with Placement
+       with VariationPlacement
+  inline def `right-start`: `right-start` = "right-start".asInstanceOf[`right-start`]
+  
+  @js.native
+  sealed trait root extends StObject
+  inline def root: root = "root".asInstanceOf[root]
   
   @js.native
   sealed trait rp extends StObject
@@ -1596,6 +2095,12 @@ object storybookComponentsStrings {
   inline def ruby: ruby = "ruby".asInstanceOf[ruby]
   
   @js.native
+  sealed trait ruler
+    extends StObject
+       with IconKey
+  inline def ruler: ruler = "ruler".asInstanceOf[ruler]
+  
+  @js.native
   sealed trait s extends StObject
   inline def s: s = "s".asInstanceOf[s]
   
@@ -1608,8 +2113,10 @@ object storybookComponentsStrings {
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait seafoam extends StObject
-  inline def seafoam: seafoam = "seafoam".asInstanceOf[seafoam]
+  sealed trait scss
+    extends StObject
+       with BuiltInParserName
+  inline def scss: scss = "scss".asInstanceOf[scss]
   
   @js.native
   sealed trait search
@@ -1618,13 +2125,7 @@ object storybookComponentsStrings {
   inline def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait secondary extends StObject
-  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
-  
-  @js.native
-  sealed trait section
-    extends StObject
-       with Level
+  sealed trait section extends StObject
   inline def section: section = "section".asInstanceOf[section]
   
   @js.native
@@ -1710,6 +2211,7 @@ object storybookComponentsStrings {
   sealed trait start
     extends StObject
        with Alignments
+       with Variation
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
@@ -1721,6 +2223,16 @@ object storybookComponentsStrings {
     extends StObject
        with IconKey
   inline def stop: stop = "stop".asInstanceOf[stop]
+  
+  @js.native
+  sealed trait stopalt
+    extends StObject
+       with IconKey
+  inline def stopalt: stopalt = "stopalt".asInstanceOf[stopalt]
+  
+  @js.native
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
   sealed trait strong extends StObject
@@ -1743,12 +2255,6 @@ object storybookComponentsStrings {
   @js.native
   sealed trait submit extends StObject
   inline def submit: submit = "submit".asInstanceOf[submit]
-  
-  @js.native
-  sealed trait subsection
-    extends StObject
-       with Level
-  inline def subsection: subsection = "subsection".asInstanceOf[subsection]
   
   @js.native
   sealed trait subtract
@@ -1821,10 +2327,6 @@ object storybookComponentsStrings {
   inline def template: template = "template".asInstanceOf[template]
   
   @js.native
-  sealed trait tertiary extends StObject
-  inline def tertiary: tertiary = "tertiary".asInstanceOf[tertiary]
-  
-  @js.native
   sealed trait text
     extends StObject
        with ControlType
@@ -1885,6 +2387,30 @@ object storybookComponentsStrings {
   inline def title: title = "title".asInstanceOf[title]
   
   @js.native
+  sealed trait top
+    extends StObject
+       with BasePlacement
+       with ComputedPlacement
+       with Placement
+  inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
+  sealed trait `top-end`
+    extends StObject
+       with ComputedPlacement
+       with Placement
+       with VariationPlacement
+  inline def `top-end`: `top-end` = "top-end".asInstanceOf[`top-end`]
+  
+  @js.native
+  sealed trait `top-start`
+    extends StObject
+       with ComputedPlacement
+       with Placement
+       with VariationPlacement
+  inline def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
+  
+  @js.native
   sealed trait tr extends StObject
   inline def tr: tr = "tr".asInstanceOf[tr]
   
@@ -1909,6 +2435,10 @@ object storybookComponentsStrings {
   inline def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
+  sealed trait trim extends StObject
+  inline def trim: trim = "trim".asInstanceOf[trim]
+  
+  @js.native
   sealed trait tspan extends StObject
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
   
@@ -1919,16 +2449,18 @@ object storybookComponentsStrings {
   inline def twitter: twitter = "twitter".asInstanceOf[twitter]
   
   @js.native
+  sealed trait typescript
+    extends StObject
+       with BuiltInParserName
+  inline def typescript: typescript = "typescript".asInstanceOf[typescript]
+  
+  @js.native
   sealed trait u extends StObject
   inline def u: u = "u".asInstanceOf[u]
   
   @js.native
   sealed trait ul extends StObject
   inline def ul: ul = "ul".asInstanceOf[ul]
-  
-  @js.native
-  sealed trait ultraviolet extends StObject
-  inline def ultraviolet: ultraviolet = "ultraviolet".asInstanceOf[ultraviolet]
   
   @js.native
   sealed trait undo
@@ -1961,6 +2493,10 @@ object storybookComponentsStrings {
   @js.native
   sealed trait use extends StObject
   inline def use: use = "use".asInstanceOf[use]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait user
@@ -1997,6 +2533,12 @@ object storybookComponentsStrings {
   inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
+  sealed trait verified
+    extends StObject
+       with IconKey
+  inline def verified: verified = "verified".asInstanceOf[verified]
+  
+  @js.native
   sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
@@ -2009,6 +2551,18 @@ object storybookComponentsStrings {
   @js.native
   sealed trait view extends StObject
   inline def view: view = "view".asInstanceOf[view]
+  
+  @js.native
+  sealed trait viewport
+    extends StObject
+       with RootBoundary
+  inline def viewport: viewport = "viewport".asInstanceOf[viewport]
+  
+  @js.native
+  sealed trait vue
+    extends StObject
+       with BuiltInParserName
+  inline def vue: vue = "vue".asInstanceOf[vue]
   
   @js.native
   sealed trait warn
@@ -2039,6 +2593,18 @@ object storybookComponentsStrings {
     extends StObject
        with IconKey
   inline def wrench: wrench = "wrench".asInstanceOf[wrench]
+  
+  @js.native
+  sealed trait write
+    extends StObject
+       with ModifierPhases_
+  inline def write: write = "write".asInstanceOf[write]
+  
+  @js.native
+  sealed trait yaml
+    extends StObject
+       with BuiltInParserName
+  inline def yaml: yaml = "yaml".asInstanceOf[yaml]
   
   @js.native
   sealed trait yes extends StObject

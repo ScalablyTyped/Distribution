@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-BarChartMediaInfo.html)
   */
-class BarChartMediaInfoCls ()
+open class BarChartMediaInfoCls ()
   extends StObject
      with typings.arcgisJsApi.esri.BarChartMediaInfo {
   def this(properties: BarChartMediaInfoProperties) = this()
@@ -43,12 +43,12 @@ class BarChartMediaInfoCls ()
   var title: String = js.native
   
   /**
-    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
     */
   /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  override def toJSON(): Any = js.native
   
   /**
     * Defines the chart value.

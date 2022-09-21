@@ -13,23 +13,21 @@ object tabPaneMod {
   
   @JSImport("react-bootstrap/lib/TabPane", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[TabPaneProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[TabPaneProps, js.Object, Any]
   
-  @js.native
-  trait TabPane
-    extends Component[TabPaneProps, js.Object, js.Any]
+  type TabPane = Component[TabPaneProps, js.Object, Any]
   
   trait TabPaneProps
     extends StObject
        with TransitionCallbacks
        with HTMLProps[TabPane] {
     
-    var animation: js.UndefOr[Boolean | (ComponentClass[js.Any, ComponentState])] = js.undefined
+    var animation: js.UndefOr[Boolean | (ComponentClass[Any, ComponentState])] = js.undefined
     
     var bsClass: js.UndefOr[String] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var mountOnEnter: js.UndefOr[Boolean] = js.undefined
     
@@ -44,7 +42,7 @@ object tabPaneMod {
     
     extension [Self <: TabPaneProps](x: Self) {
       
-      inline def setAnimation(value: Boolean | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Boolean | (ComponentClass[Any, ComponentState])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
@@ -52,7 +50,7 @@ object tabPaneMod {
       
       inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       

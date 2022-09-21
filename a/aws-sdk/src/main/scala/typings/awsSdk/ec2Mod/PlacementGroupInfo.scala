@@ -24,6 +24,6 @@ object PlacementGroupInfo {
     
     inline def setSupportedStrategiesUndefined: Self = StObject.set(x, "SupportedStrategies", js.undefined)
     
-    inline def setSupportedStrategiesVarargs(value: PlacementGroupStrategy*): Self = StObject.set(x, "SupportedStrategies", js.Array(value :_*))
+    inline def setSupportedStrategiesVarargs(value: PlacementGroupStrategy*): Self = StObject.set(x, "SupportedStrategies", js.Array(value*))
   }
 }

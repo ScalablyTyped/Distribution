@@ -6,7 +6,6 @@ import typings.googleCloudCommon.utilMod.ApiError
 import typings.googleCloudCommon.utilMod.BodyResponseCallback
 import typings.googleCloudCommon.utilMod.DecorateRequestOptions
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import typings.teenyRequest.mod.Options
 import typings.teenyRequest.mod.Request
 import typings.teenyRequest.mod.Response
@@ -29,7 +28,7 @@ object serviceObjectMod {
     */
   @JSImport("@google-cloud/common/build/src/service-object", "ServiceObject")
   @js.native
-  class ServiceObject[T] protected () extends EventEmitter {
+  open class ServiceObject[T] protected () extends EventEmitter {
     def this(config: ServiceObjectConfig) = this()
     
     var baseUrl: js.UndefOr[String] = js.native
@@ -48,7 +47,7 @@ object serviceObjectMod {
     def create(options: CreateOptions): js.Promise[CreateResponse[T]] = js.native
     def create(options: CreateOptions, callback: CreateCallback[T]): Unit = js.native
     
-    /* private */ var createMethod: js.Any = js.native
+    /* private */ var createMethod: Any = js.native
     
     /**
       * Delete the object.
@@ -57,9 +56,9 @@ object serviceObjectMod {
       * @param {?error} callback.err - An error returned while making this request.
       * @param {object} callback.apiResponse - The full API response.
       */
-    def delete(): js.Promise[js.Array[Response[js.Any]]] = js.native
+    def delete(): js.Promise[js.Array[Response[Any]]] = js.native
     def delete(callback: DeleteCallback): Unit = js.native
-    def delete(options: DeleteOptions): js.Promise[js.Array[Response[js.Any]]] = js.native
+    def delete(options: DeleteOptions): js.Promise[js.Array[Response[Any]]] = js.native
     def delete(options: DeleteOptions, callback: DeleteCallback): Unit = js.native
     
     /**
@@ -121,6 +120,8 @@ object serviceObjectMod {
     
     var pollIntervalMs: js.UndefOr[Double] = js.native
     
+    var projectId: js.UndefOr[String] = js.native
+    
     /**
       * Make an authenticated API request.
       *
@@ -148,7 +149,7 @@ object serviceObjectMod {
       * @param {string} reqOpts.uri - A URI relative to the baseUrl.
       * @param {function} callback - The callback function passed to `request`.
       */
-    /* private */ var request_ : js.Any = js.native
+    /* private */ var request_ : Any = js.native
     
     /**
       * Set the metadata for this object.
@@ -168,15 +169,15 @@ object serviceObjectMod {
   type CreateCallback[T] = js.Function3[
     /* err */ ApiError | Null, 
     /* instance */ js.UndefOr[T | Null], 
-    /* repeated */ js.Any, 
+    /* repeated */ Any, 
     Unit
   ]
   
   trait CreateOptions extends StObject
   
-  type CreateResponse[T] = js.Array[js.Any]
+  type CreateResponse[T] = js.Array[Any]
   
-  type DeleteCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.UndefOr[Response[js.Any]], Unit]
+  type DeleteCallback = js.Function2[/* err */ js.Error | Null, /* apiResponse */ js.UndefOr[Response[Any]], Unit]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped object */ trait DeleteOptions extends StObject {
@@ -198,7 +199,7 @@ object serviceObjectMod {
     }
   }
   
-  type ExistsCallback = js.Function2[/* err */ Error | Null, /* exists */ js.UndefOr[Boolean], Unit]
+  type ExistsCallback = js.Function2[/* err */ js.Error | Null, /* exists */ js.UndefOr[Boolean], Unit]
   
   type ExistsOptions = js.Object
   
@@ -238,12 +239,12 @@ object serviceObjectMod {
     }
   }
   
-  type GetResponse[T] = js.Tuple2[T, Response[js.Any]]
+  type GetResponse[T] = js.Tuple2[T, Response[Any]]
   
   type InstanceResponseCallback[T] = js.Function3[
     /* err */ ApiError | Null, 
     /* instance */ js.UndefOr[T | Null], 
-    /* apiResponse */ js.UndefOr[Response[js.Any]], 
+    /* apiResponse */ js.UndefOr[Response[Any]], 
     Unit
   ]
   
@@ -264,24 +265,24 @@ object serviceObjectMod {
     }
   }
   
-  type Metadata = js.Any
+  type Metadata = Any
   
   type MetadataCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* metadata */ js.UndefOr[Metadata], 
-    /* apiResponse */ js.UndefOr[Response[js.Any]], 
+    /* apiResponse */ js.UndefOr[Response[Any]], 
     Unit
   ]
   
-  type MetadataResponse = js.Tuple2[Metadata, Response[js.Any]]
+  type MetadataResponse = js.Tuple2[Metadata, Response[Any]]
   
   type Methods = StringDictionary[ReqOpts | Boolean]
   
-  type RequestResponse = js.Tuple2[Metadata, Response[js.Any]]
+  type RequestResponse = js.Tuple2[Metadata, Response[Any]]
   
   type ResponseCallback = js.Function2[
-    /* err */ js.UndefOr[Error | Null], 
-    /* apiResponse */ js.UndefOr[Response[js.Any]], 
+    /* err */ js.UndefOr[js.Error | Null], 
+    /* apiResponse */ js.UndefOr[Response[Any]], 
     Unit
   ]
   
@@ -319,6 +320,13 @@ object serviceObjectMod {
       * for completion.
       */
     var pollIntervalMs: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Override of projectId, used to allow access to resources in another project.
+      * For example, a BigQuery dataset in another project to which the user has been
+      * granted permission.
+      */
+    var projectId: js.UndefOr[String] = js.undefined
   }
   object ServiceObjectConfig {
     
@@ -350,6 +358,10 @@ object serviceObjectMod {
       inline def setPollIntervalMs(value: Double): Self = StObject.set(x, "pollIntervalMs", value.asInstanceOf[js.Any])
       
       inline def setPollIntervalMsUndefined: Self = StObject.set(x, "pollIntervalMs", js.undefined)
+      
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     }
   }
   
@@ -381,7 +393,7 @@ object serviceObjectMod {
       
       inline def setInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
       
-      inline def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+      inline def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value*))
       
       inline def setRequest(value: (DecorateRequestOptions, BodyResponseCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
       

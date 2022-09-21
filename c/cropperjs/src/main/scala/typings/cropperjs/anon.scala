@@ -6,6 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Cropper extends StObject {
+    
+    var cropper: typings.cropperjs.Cropper
+  }
+  object Cropper {
+    
+    inline def apply(cropper: typings.cropperjs.Cropper): typings.cropperjs.anon.Cropper = {
+      val __obj = js.Dynamic.literal(cropper = cropper.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.cropperjs.anon.Cropper]
+    }
+    
+    extension [Self <: typings.cropperjs.anon.Cropper](x: Self) {
+      
+      inline def setCropper(value: typings.cropperjs.Cropper): Self = StObject.set(x, "cropper", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait X extends StObject {
     
     var x: Double

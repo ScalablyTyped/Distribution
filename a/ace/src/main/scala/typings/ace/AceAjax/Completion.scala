@@ -16,7 +16,7 @@ trait Completion extends StObject {
   
   var score: js.UndefOr[Double] = js.undefined
   
-  var snippet: js.UndefOr[js.Any] = js.undefined
+  var snippet: js.UndefOr[Any] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -49,7 +49,7 @@ object Completion {
     
     inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    inline def setSnippet(value: js.Any): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: Any): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     

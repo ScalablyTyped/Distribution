@@ -8,5 +8,5 @@ object updateFunctionCodeInputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/UpdateFunctionCodeInput", "UpdateFunctionCodeInput")
   @js.native
-  val UpdateFunctionCodeInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateFunctionCodeInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

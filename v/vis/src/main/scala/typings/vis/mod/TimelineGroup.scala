@@ -48,7 +48,7 @@ object TimelineGroup {
     
     inline def setNestedGroupsUndefined: Self = StObject.set(x, "nestedGroups", js.undefined)
     
-    inline def setNestedGroupsVarargs(value: IdType*): Self = StObject.set(x, "nestedGroups", js.Array(value :_*))
+    inline def setNestedGroupsVarargs(value: IdType*): Self = StObject.set(x, "nestedGroups", js.Array(value*))
     
     inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object TimelineGroup {
     
     inline def setSubgroupOrder(value: TimelineOptionsGroupOrderType): Self = StObject.set(x, "subgroupOrder", value.asInstanceOf[js.Any])
     
-    inline def setSubgroupOrderFunction2(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "subgroupOrder", js.Any.fromFunction2(value))
+    inline def setSubgroupOrderFunction2(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "subgroupOrder", js.Any.fromFunction2(value))
     
     inline def setSubgroupOrderUndefined: Self = StObject.set(x, "subgroupOrder", js.undefined)
     

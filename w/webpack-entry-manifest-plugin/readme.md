@@ -10,10 +10,10 @@ Webpack plugin for generating an asset manifest with grouped entry chunks.
 | ------------------ | :-------------: |
 | Full name          | webpack-entry-manifest-plugin |
 | Keywords           | Webpack, manifest, assets, chunks, entry |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 8488 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 465.3333333333333 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/nuintun/webpack-entry-manifest-plugin#readme)

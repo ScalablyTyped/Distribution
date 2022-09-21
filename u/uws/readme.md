@@ -10,10 +10,10 @@ Typings are for version 0.13
 | ------------------ | :-------------: |
 | Full name          | uws |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 198 |
-| # downloads        | 9985653 |
-| # stars            | 41 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 549917.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/uNetworking/uWebSockets.js#readme)

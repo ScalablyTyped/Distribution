@@ -10,10 +10,10 @@ Dependency Injection for Node.js. Heavily inspired by AngularJS.
 | ------------------ | :-------------: |
 | Full name          | di |
 | Keywords           | di, dependency, injection, injector |
-| # releases         | 0 |
-| # dependents       | 98 |
-| # downloads        | 84004880 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9027021.333333334 |
+| # stars            | 265.0 |
 
 ## Links
 - [Homepage](https://github.com/vojtajina/node-di#readme)

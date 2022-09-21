@@ -1,22 +1,18 @@
 package typings.serverless.anon
 
+import typings.serverless.mod.LogOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Log extends StObject {
   
-  def log(message: String): Null
-}
-object Log {
-  
-  inline def apply(log: String => Null): Log = {
-    val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
-    __obj.asInstanceOf[Log]
-  }
-  
-  extension [Self <: Log](x: Self) {
-    
-    inline def setLog(value: String => Null): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
-  }
+  /**
+    * @deprecated starting from Serverless V3, this method is deprecated, see https://www.serverless.com/framework/docs/guides/plugins/cli-output
+    */
+  def log(message: String): Null = js.native
+  def log(message: String, entity: String): Null = js.native
+  def log(message: String, entity: String, options: LogOptions): Null = js.native
+  def log(message: String, entity: Unit, options: LogOptions): Null = js.native
 }

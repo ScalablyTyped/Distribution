@@ -1,0 +1,39 @@
+package typings.jestEnvironmentVscodeExtension.mod.global.vscode
+
+import typings.vscode.mod.ShellExecutionOptions
+import typings.vscode.mod.ShellQuotedString
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSGlobal("vscode.ShellExecution")
+@js.native
+open class ShellExecution protected ()
+  extends typings.vscode.mod.ShellExecution {
+  /**
+    * Creates a shell execution with a full command line.
+    *
+    * @param commandLine The command line to execute.
+    * @param options Optional options for the started the shell.
+    */
+  def this(commandLine: String) = this()
+  def this(commandLine: String, options: ShellExecutionOptions) = this()
+  /**
+    * Creates a shell execution with a command and arguments. For the real execution the editor will
+    * construct a command line from the command and the arguments. This is subject to interpretation
+    * especially when it comes to quoting. If full control over the command line is needed please
+    * use the constructor that creates a `ShellExecution` with the full command line.
+    *
+    * @param command The command to execute.
+    * @param args The command arguments.
+    * @param options Optional options for the started the shell.
+    */
+  def this(command: String, args: js.Array[String | ShellQuotedString]) = this()
+  def this(command: ShellQuotedString, args: js.Array[String | ShellQuotedString]) = this()
+  def this(command: String, args: js.Array[String | ShellQuotedString], options: ShellExecutionOptions) = this()
+  def this(
+    command: ShellQuotedString,
+    args: js.Array[String | ShellQuotedString],
+    options: ShellExecutionOptions
+  ) = this()
+}

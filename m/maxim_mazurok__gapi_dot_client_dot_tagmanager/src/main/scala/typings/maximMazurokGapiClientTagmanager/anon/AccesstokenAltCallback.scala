@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientTagmanager.anon
 
-import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Account
+import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.UserPermission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,17 +23,14 @@ trait AccesstokenAltCallback extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** When provided, this fingerprint must match the fingerprint of the account in storage. */
-  var fingerprint: js.UndefOr[String] = js.undefined
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** GTM Accounts's API relative path. Example: accounts/{account_id} */
-  var path: String
+  /** GTM Account's API relative path. Example: accounts/{account_id} */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -42,7 +39,7 @@ trait AccesstokenAltCallback extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Account
+  var resource: UserPermission
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +49,8 @@ trait AccesstokenAltCallback extends StObject {
 }
 object AccesstokenAltCallback {
   
-  inline def apply(path: String, resource: Account): AccesstokenAltCallback = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(parent: String, resource: UserPermission): AccesstokenAltCallback = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAltCallback]
   }
   
@@ -79,10 +76,6 @@ object AccesstokenAltCallback {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
-    
-    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -91,7 +84,7 @@ object AccesstokenAltCallback {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -101,7 +94,7 @@ object AccesstokenAltCallback {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Account): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: UserPermission): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

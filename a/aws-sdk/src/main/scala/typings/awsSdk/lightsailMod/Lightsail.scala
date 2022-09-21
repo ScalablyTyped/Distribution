@@ -26,12 +26,12 @@ trait Lightsail extends Service {
   ): Request[AllocateStaticIpResult, AWSError] = js.native
   
   /**
-    * Attaches an SSL/TLS certificate to your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is attached, your distribution accepts HTTPS traffic for all of the domains that are associated with the certificate. Use the CreateCertificate action to create a certificate that you can attach to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
+    * Attaches an SSL/TLS certificate to your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is attached, your distribution accepts HTTPS traffic for all of the domains that are associated with the certificate. Use the CreateCertificate action to create a certificate that you can attach to your distribution.  Only certificates created in the us-east-1 Amazon Web Services Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any Amazon Web Services Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
     */
   def attachCertificateToDistribution(): Request[AttachCertificateToDistributionResult, AWSError] = js.native
   def attachCertificateToDistribution(callback: js.Function2[/* err */ AWSError, /* data */ AttachCertificateToDistributionResult, Unit]): Request[AttachCertificateToDistributionResult, AWSError] = js.native
   /**
-    * Attaches an SSL/TLS certificate to your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is attached, your distribution accepts HTTPS traffic for all of the domains that are associated with the certificate. Use the CreateCertificate action to create a certificate that you can attach to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
+    * Attaches an SSL/TLS certificate to your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is attached, your distribution accepts HTTPS traffic for all of the domains that are associated with the certificate. Use the CreateCertificate action to create a certificate that you can attach to your distribution.  Only certificates created in the us-east-1 Amazon Web Services Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any Amazon Web Services Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
     */
   def attachCertificateToDistribution(params: AttachCertificateToDistributionRequest): Request[AttachCertificateToDistributionResult, AWSError] = js.native
   def attachCertificateToDistribution(
@@ -40,12 +40,12 @@ trait Lightsail extends Service {
   ): Request[AttachCertificateToDistributionResult, AWSError] = js.native
   
   /**
-    * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
+    * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def attachDisk(): Request[AttachDiskResult, AWSError] = js.native
   def attachDisk(callback: js.Function2[/* err */ AWSError, /* data */ AttachDiskResult, Unit]): Request[AttachDiskResult, AWSError] = js.native
   /**
-    * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
+    * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def attachDisk(params: AttachDiskRequest): Request[AttachDiskResult, AWSError] = js.native
   def attachDisk(
@@ -54,12 +54,12 @@ trait Lightsail extends Service {
   ): Request[AttachDiskResult, AWSError] = js.native
   
   /**
-    * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available. The attach instances to load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available. The attach instances to load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Developer Guide.
     */
   def attachInstancesToLoadBalancer(): Request[AttachInstancesToLoadBalancerResult, AWSError] = js.native
   def attachInstancesToLoadBalancer(callback: js.Function2[/* err */ AWSError, /* data */ AttachInstancesToLoadBalancerResult, Unit]): Request[AttachInstancesToLoadBalancerResult, AWSError] = js.native
   /**
-    * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available. The attach instances to load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available. The attach instances to load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Developer Guide.
     */
   def attachInstancesToLoadBalancer(params: AttachInstancesToLoadBalancerRequest): Request[AttachInstancesToLoadBalancerResult, AWSError] = js.native
   def attachInstancesToLoadBalancer(
@@ -68,14 +68,14 @@ trait Lightsail extends Service {
   ): Request[AttachInstancesToLoadBalancerResult, AWSError] = js.native
   
   /**
-    * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate action with the non-attached certificate, and it will replace the existing one and become the attached certificate. The AttachLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate action with the non-attached certificate, and it will replace the existing one and become the attached certificate. The AttachLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def attachLoadBalancerTlsCertificate(): Request[AttachLoadBalancerTlsCertificateResult, AWSError] = js.native
   def attachLoadBalancerTlsCertificate(
     callback: js.Function2[/* err */ AWSError, /* data */ AttachLoadBalancerTlsCertificateResult, Unit]
   ): Request[AttachLoadBalancerTlsCertificateResult, AWSError] = js.native
   /**
-    * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate action with the non-attached certificate, and it will replace the existing one and become the attached certificate. The AttachLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate action with the non-attached certificate, and it will replace the existing one and become the attached certificate. The AttachLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def attachLoadBalancerTlsCertificate(params: AttachLoadBalancerTlsCertificateRequest): Request[AttachLoadBalancerTlsCertificateResult, AWSError] = js.native
   def attachLoadBalancerTlsCertificate(
@@ -98,12 +98,12 @@ trait Lightsail extends Service {
   ): Request[AttachStaticIpResult, AWSError] = js.native
   
   /**
-    * Closes ports for a specific Amazon Lightsail instance. The CloseInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+    * Closes ports for a specific Amazon Lightsail instance. The CloseInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def closeInstancePublicPorts(): Request[CloseInstancePublicPortsResult, AWSError] = js.native
   def closeInstancePublicPorts(callback: js.Function2[/* err */ AWSError, /* data */ CloseInstancePublicPortsResult, Unit]): Request[CloseInstancePublicPortsResult, AWSError] = js.native
   /**
-    * Closes ports for a specific Amazon Lightsail instance. The CloseInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+    * Closes ports for a specific Amazon Lightsail instance. The CloseInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def closeInstancePublicPorts(params: CloseInstancePublicPortsRequest): Request[CloseInstancePublicPortsResult, AWSError] = js.native
   def closeInstancePublicPorts(
@@ -115,12 +115,12 @@ trait Lightsail extends Service {
   var config_Lightsail: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Copies a manual snapshot of an instance or disk as another manual snapshot, or copies an automatic snapshot of an instance or disk as a manual snapshot. This operation can also be used to copy a manual or automatic snapshot of an instance or a disk from one AWS Region to another in Amazon Lightsail. When copying a manual snapshot, be sure to define the source region, source snapshot name, and target snapshot name parameters. When copying an automatic snapshot, be sure to define the source region, source resource name, target snapshot name, and either the restore date or the use latest restorable auto snapshot parameters.
+    * Copies a manual snapshot of an instance or disk as another manual snapshot, or copies an automatic snapshot of an instance or disk as a manual snapshot. This operation can also be used to copy a manual or automatic snapshot of an instance or a disk from one Amazon Web Services Region to another in Amazon Lightsail. When copying a manual snapshot, be sure to define the source region, source snapshot name, and target snapshot name parameters. When copying an automatic snapshot, be sure to define the source region, source resource name, target snapshot name, and either the restore date or the use latest restorable auto snapshot parameters.
     */
   def copySnapshot(): Request[CopySnapshotResult, AWSError] = js.native
   def copySnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CopySnapshotResult, Unit]): Request[CopySnapshotResult, AWSError] = js.native
   /**
-    * Copies a manual snapshot of an instance or disk as another manual snapshot, or copies an automatic snapshot of an instance or disk as a manual snapshot. This operation can also be used to copy a manual or automatic snapshot of an instance or a disk from one AWS Region to another in Amazon Lightsail. When copying a manual snapshot, be sure to define the source region, source snapshot name, and target snapshot name parameters. When copying an automatic snapshot, be sure to define the source region, source resource name, target snapshot name, and either the restore date or the use latest restorable auto snapshot parameters.
+    * Copies a manual snapshot of an instance or disk as another manual snapshot, or copies an automatic snapshot of an instance or disk as a manual snapshot. This operation can also be used to copy a manual or automatic snapshot of an instance or a disk from one Amazon Web Services Region to another in Amazon Lightsail. When copying a manual snapshot, be sure to define the source region, source snapshot name, and target snapshot name parameters. When copying an automatic snapshot, be sure to define the source region, source resource name, target snapshot name, and either the restore date or the use latest restorable auto snapshot parameters.
     */
   def copySnapshot(params: CopySnapshotRequest): Request[CopySnapshotResult, AWSError] = js.native
   def copySnapshot(
@@ -129,12 +129,40 @@ trait Lightsail extends Service {
   ): Request[CopySnapshotResult, AWSError] = js.native
   
   /**
-    * Creates an SSL/TLS certificate for a Amazon Lightsail content delivery network (CDN) distribution. After the certificate is created, use the AttachCertificateToDistribution action to attach the certificate to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
+    * Creates an Amazon Lightsail bucket. A bucket is a cloud storage resource available in the Lightsail object storage service. Use buckets to store objects such as data and its descriptive metadata. For more information about buckets, see Buckets in Amazon Lightsail in the Amazon Lightsail Developer Guide.
+    */
+  def createBucket(): Request[CreateBucketResult, AWSError] = js.native
+  def createBucket(callback: js.Function2[/* err */ AWSError, /* data */ CreateBucketResult, Unit]): Request[CreateBucketResult, AWSError] = js.native
+  /**
+    * Creates an Amazon Lightsail bucket. A bucket is a cloud storage resource available in the Lightsail object storage service. Use buckets to store objects such as data and its descriptive metadata. For more information about buckets, see Buckets in Amazon Lightsail in the Amazon Lightsail Developer Guide.
+    */
+  def createBucket(params: CreateBucketRequest): Request[CreateBucketResult, AWSError] = js.native
+  def createBucket(
+    params: CreateBucketRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBucketResult, Unit]
+  ): Request[CreateBucketResult, AWSError] = js.native
+  
+  /**
+    * Creates a new access key for the specified Amazon Lightsail bucket. Access keys consist of an access key ID and corresponding secret access key. Access keys grant full programmatic access to the specified bucket and its objects. You can have a maximum of two access keys per bucket. Use the GetBucketAccessKeys action to get a list of current access keys for a specific bucket. For more information about access keys, see Creating access keys for a bucket in Amazon Lightsail in the Amazon Lightsail Developer Guide.  The secretAccessKey value is returned only in response to the CreateBucketAccessKey action. You can get a secret access key only when you first create an access key; you cannot get the secret access key later. If you lose the secret access key, you must create a new access key. 
+    */
+  def createBucketAccessKey(): Request[CreateBucketAccessKeyResult, AWSError] = js.native
+  def createBucketAccessKey(callback: js.Function2[/* err */ AWSError, /* data */ CreateBucketAccessKeyResult, Unit]): Request[CreateBucketAccessKeyResult, AWSError] = js.native
+  /**
+    * Creates a new access key for the specified Amazon Lightsail bucket. Access keys consist of an access key ID and corresponding secret access key. Access keys grant full programmatic access to the specified bucket and its objects. You can have a maximum of two access keys per bucket. Use the GetBucketAccessKeys action to get a list of current access keys for a specific bucket. For more information about access keys, see Creating access keys for a bucket in Amazon Lightsail in the Amazon Lightsail Developer Guide.  The secretAccessKey value is returned only in response to the CreateBucketAccessKey action. You can get a secret access key only when you first create an access key; you cannot get the secret access key later. If you lose the secret access key, you must create a new access key. 
+    */
+  def createBucketAccessKey(params: CreateBucketAccessKeyRequest): Request[CreateBucketAccessKeyResult, AWSError] = js.native
+  def createBucketAccessKey(
+    params: CreateBucketAccessKeyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBucketAccessKeyResult, Unit]
+  ): Request[CreateBucketAccessKeyResult, AWSError] = js.native
+  
+  /**
+    * Creates an SSL/TLS certificate for an Amazon Lightsail content delivery network (CDN) distribution and a container service. After the certificate is valid, use the AttachCertificateToDistribution action to use the certificate and its domains with your distribution. Or use the UpdateContainerService action to use the certificate and its domains with your container service.  Only certificates created in the us-east-1 Amazon Web Services Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any Amazon Web Services Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
     */
   def createCertificate(): Request[CreateCertificateResult, AWSError] = js.native
   def createCertificate(callback: js.Function2[/* err */ AWSError, /* data */ CreateCertificateResult, Unit]): Request[CreateCertificateResult, AWSError] = js.native
   /**
-    * Creates an SSL/TLS certificate for a Amazon Lightsail content delivery network (CDN) distribution. After the certificate is created, use the AttachCertificateToDistribution action to attach the certificate to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
+    * Creates an SSL/TLS certificate for an Amazon Lightsail content delivery network (CDN) distribution and a container service. After the certificate is valid, use the AttachCertificateToDistribution action to use the certificate and its domains with your distribution. Or use the UpdateContainerService action to use the certificate and its domains with your container service.  Only certificates created in the us-east-1 Amazon Web Services Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any Amazon Web Services Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
     */
   def createCertificate(params: CreateCertificateRequest): Request[CreateCertificateResult, AWSError] = js.native
   def createCertificate(
@@ -157,12 +185,12 @@ trait Lightsail extends Service {
   ): Request[CreateCloudFormationStackResult, AWSError] = js.native
   
   /**
-    * Creates an email or SMS text message contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    * Creates an email or SMS text message contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each Amazon Web Services Region. However, SMS text messaging is not supported in some Amazon Web Services Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
   def createContactMethod(): Request[CreateContactMethodResult, AWSError] = js.native
   def createContactMethod(callback: js.Function2[/* err */ AWSError, /* data */ CreateContactMethodResult, Unit]): Request[CreateContactMethodResult, AWSError] = js.native
   /**
-    * Creates an email or SMS text message contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    * Creates an email or SMS text message contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each Amazon Web Services Region. However, SMS text messaging is not supported in some Amazon Web Services Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
   def createContactMethod(params: CreateContactMethodRequest): Request[CreateContactMethodResult, AWSError] = js.native
   def createContactMethod(
@@ -185,14 +213,14 @@ trait Lightsail extends Service {
   ): Request[CreateContainerServiceResult, AWSError] = js.native
   
   /**
-    * Creates a deployment for your Amazon Lightsail container service. A deployment specifies the containers that will be launched on the container service and their settings, such as the ports to open, the environment variables to apply, and the launch command to run. It also specifies the container that will serve as the public endpoint of the deployment and its settings, such as the HTTP or HTTPS port to use, and the health check configuration. You can deploy containers to your container service using container images from a public registry like Docker Hub, or from your local machine. For more information, see Creating container images for your Amazon Lightsail container services in the Lightsail Dev Guide.
+    * Creates a deployment for your Amazon Lightsail container service. A deployment specifies the containers that will be launched on the container service and their settings, such as the ports to open, the environment variables to apply, and the launch command to run. It also specifies the container that will serve as the public endpoint of the deployment and its settings, such as the HTTP or HTTPS port to use, and the health check configuration. You can deploy containers to your container service using container images from a public registry such as Amazon ECR Public, or from your local machine. For more information, see Creating container images for your Amazon Lightsail container services in the Amazon Lightsail Developer Guide.
     */
   def createContainerServiceDeployment(): Request[CreateContainerServiceDeploymentResult, AWSError] = js.native
   def createContainerServiceDeployment(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateContainerServiceDeploymentResult, Unit]
   ): Request[CreateContainerServiceDeploymentResult, AWSError] = js.native
   /**
-    * Creates a deployment for your Amazon Lightsail container service. A deployment specifies the containers that will be launched on the container service and their settings, such as the ports to open, the environment variables to apply, and the launch command to run. It also specifies the container that will serve as the public endpoint of the deployment and its settings, such as the HTTP or HTTPS port to use, and the health check configuration. You can deploy containers to your container service using container images from a public registry like Docker Hub, or from your local machine. For more information, see Creating container images for your Amazon Lightsail container services in the Lightsail Dev Guide.
+    * Creates a deployment for your Amazon Lightsail container service. A deployment specifies the containers that will be launched on the container service and their settings, such as the ports to open, the environment variables to apply, and the launch command to run. It also specifies the container that will serve as the public endpoint of the deployment and its settings, such as the HTTP or HTTPS port to use, and the health check configuration. You can deploy containers to your container service using container images from a public registry such as Amazon ECR Public, or from your local machine. For more information, see Creating container images for your Amazon Lightsail container services in the Amazon Lightsail Developer Guide.
     */
   def createContainerServiceDeployment(params: CreateContainerServiceDeploymentRequest): Request[CreateContainerServiceDeploymentResult, AWSError] = js.native
   def createContainerServiceDeployment(
@@ -201,14 +229,14 @@ trait Lightsail extends Service {
   ): Request[CreateContainerServiceDeploymentResult, AWSError] = js.native
   
   /**
-    * Creates a temporary set of log in credentials that you can use to log in to the Docker process on your local machine. After you're logged in, you can use the native Docker commands to push your local container images to the container image registry of your Amazon Lightsail account so that you can use them with your Lightsail container service. The log in credentials expire 12 hours after they are created, at which point you will need to create a new set of log in credentials.  You can only push container images to the container service registry of your Lightsail account. You cannot pull container images perform any other container image management actions on the container service registry of your Lightsail account.  After you push your container images to the container image registry of your Lightsail account, use the RegisterContainerImage action to register the pushed images to a specific Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Lightsail Dev Guide. 
+    * Creates a temporary set of log in credentials that you can use to log in to the Docker process on your local machine. After you're logged in, you can use the native Docker commands to push your local container images to the container image registry of your Amazon Lightsail account so that you can use them with your Lightsail container service. The log in credentials expire 12 hours after they are created, at which point you will need to create a new set of log in credentials.  You can only push container images to the container service registry of your Lightsail account. You cannot pull container images or perform any other container image management actions on the container service registry.  After you push your container images to the container image registry of your Lightsail account, use the RegisterContainerImage action to register the pushed images to a specific Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Amazon Lightsail Developer Guide. 
     */
   def createContainerServiceRegistryLogin(): Request[CreateContainerServiceRegistryLoginResult, AWSError] = js.native
   def createContainerServiceRegistryLogin(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateContainerServiceRegistryLoginResult, Unit]
   ): Request[CreateContainerServiceRegistryLoginResult, AWSError] = js.native
   /**
-    * Creates a temporary set of log in credentials that you can use to log in to the Docker process on your local machine. After you're logged in, you can use the native Docker commands to push your local container images to the container image registry of your Amazon Lightsail account so that you can use them with your Lightsail container service. The log in credentials expire 12 hours after they are created, at which point you will need to create a new set of log in credentials.  You can only push container images to the container service registry of your Lightsail account. You cannot pull container images perform any other container image management actions on the container service registry of your Lightsail account.  After you push your container images to the container image registry of your Lightsail account, use the RegisterContainerImage action to register the pushed images to a specific Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Lightsail Dev Guide. 
+    * Creates a temporary set of log in credentials that you can use to log in to the Docker process on your local machine. After you're logged in, you can use the native Docker commands to push your local container images to the container image registry of your Amazon Lightsail account so that you can use them with your Lightsail container service. The log in credentials expire 12 hours after they are created, at which point you will need to create a new set of log in credentials.  You can only push container images to the container service registry of your Lightsail account. You cannot pull container images or perform any other container image management actions on the container service registry.  After you push your container images to the container image registry of your Lightsail account, use the RegisterContainerImage action to register the pushed images to a specific Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Amazon Lightsail Developer Guide. 
     */
   def createContainerServiceRegistryLogin(params: CreateContainerServiceRegistryLoginRequest): Request[CreateContainerServiceRegistryLoginResult, AWSError] = js.native
   def createContainerServiceRegistryLogin(
@@ -217,12 +245,12 @@ trait Lightsail extends Service {
   ): Request[CreateContainerServiceRegistryLoginResult, AWSError] = js.native
   
   /**
-    * Creates a block storage disk that can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a block storage disk that can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDisk(): Request[CreateDiskResult, AWSError] = js.native
   def createDisk(callback: js.Function2[/* err */ AWSError, /* data */ CreateDiskResult, Unit]): Request[CreateDiskResult, AWSError] = js.native
   /**
-    * Creates a block storage disk that can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a block storage disk that can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDisk(params: CreateDiskRequest): Request[CreateDiskResult, AWSError] = js.native
   def createDisk(
@@ -231,12 +259,12 @@ trait Lightsail extends Service {
   ): Request[CreateDiskResult, AWSError] = js.native
   
   /**
-    * Creates a block storage disk from a manual or automatic snapshot of a disk. The resulting disk can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by disk snapshot name. For more information, see the Lightsail Dev Guide.
+    * Creates a block storage disk from a manual or automatic snapshot of a disk. The resulting disk can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by disk snapshot name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDiskFromSnapshot(): Request[CreateDiskFromSnapshotResult, AWSError] = js.native
   def createDiskFromSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CreateDiskFromSnapshotResult, Unit]): Request[CreateDiskFromSnapshotResult, AWSError] = js.native
   /**
-    * Creates a block storage disk from a manual or automatic snapshot of a disk. The resulting disk can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by disk snapshot name. For more information, see the Lightsail Dev Guide.
+    * Creates a block storage disk from a manual or automatic snapshot of a disk. The resulting disk can be attached to an Amazon Lightsail instance in the same Availability Zone (e.g., us-east-2a). The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by disk snapshot name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDiskFromSnapshot(params: CreateDiskFromSnapshotRequest): Request[CreateDiskFromSnapshotResult, AWSError] = js.native
   def createDiskFromSnapshot(
@@ -245,12 +273,12 @@ trait Lightsail extends Service {
   ): Request[CreateDiskFromSnapshotResult, AWSError] = js.native
   
   /**
-    * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. You can also use this operation to create a snapshot of an instance's system volume. You might want to do this, for example, to recover data from the system volume of a botched instance or to create a backup of the system volume like you would for a block storage disk. To create a snapshot of a system volume, just define the instance name parameter when issuing the snapshot command, and a snapshot of the defined instance's system volume will be created. After the snapshot is available, you can create a block storage disk from the snapshot and attach it to a running instance to access the data on the disk. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. You can also use this operation to create a snapshot of an instance's system volume. You might want to do this, for example, to recover data from the system volume of a botched instance or to create a backup of the system volume like you would for a block storage disk. To create a snapshot of a system volume, just define the instance name parameter when issuing the snapshot command, and a snapshot of the defined instance's system volume will be created. After the snapshot is available, you can create a block storage disk from the snapshot and attach it to a running instance to access the data on the disk. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDiskSnapshot(): Request[CreateDiskSnapshotResult, AWSError] = js.native
   def createDiskSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CreateDiskSnapshotResult, Unit]): Request[CreateDiskSnapshotResult, AWSError] = js.native
   /**
-    * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. You can also use this operation to create a snapshot of an instance's system volume. You might want to do this, for example, to recover data from the system volume of a botched instance or to create a backup of the system volume like you would for a block storage disk. To create a snapshot of a system volume, just define the instance name parameter when issuing the snapshot command, and a snapshot of the defined instance's system volume will be created. After the snapshot is available, you can create a block storage disk from the snapshot and attach it to a running instance to access the data on the disk. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. You can also use this operation to create a snapshot of an instance's system volume. You might want to do this, for example, to recover data from the system volume of a botched instance or to create a backup of the system volume like you would for a block storage disk. To create a snapshot of a system volume, just define the instance name parameter when issuing the snapshot command, and a snapshot of the defined instance's system volume will be created. After the snapshot is available, you can create a block storage disk from the snapshot and attach it to a running instance to access the data on the disk. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDiskSnapshot(params: CreateDiskSnapshotRequest): Request[CreateDiskSnapshotResult, AWSError] = js.native
   def createDiskSnapshot(
@@ -273,12 +301,12 @@ trait Lightsail extends Service {
   ): Request[CreateDistributionResult, AWSError] = js.native
   
   /**
-    * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDomain(): Request[CreateDomainResult, AWSError] = js.native
   def createDomain(callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResult, Unit]): Request[CreateDomainResult, AWSError] = js.native
   /**
-    * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDomain(params: CreateDomainRequest): Request[CreateDomainResult, AWSError] = js.native
   def createDomain(
@@ -287,12 +315,12 @@ trait Lightsail extends Service {
   ): Request[CreateDomainResult, AWSError] = js.native
   
   /**
-    * Creates one of the following domain name system (DNS) records in a domain DNS zone: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Creates one of the following domain name system (DNS) records in a domain DNS zone: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDomainEntry(): Request[CreateDomainEntryResult, AWSError] = js.native
   def createDomainEntry(callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainEntryResult, Unit]): Request[CreateDomainEntryResult, AWSError] = js.native
   /**
-    * Creates one of the following domain name system (DNS) records in a domain DNS zone: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Creates one of the following domain name system (DNS) records in a domain DNS zone: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createDomainEntry(params: CreateDomainEntryRequest): Request[CreateDomainEntryResult, AWSError] = js.native
   def createDomainEntry(
@@ -301,12 +329,12 @@ trait Lightsail extends Service {
   ): Request[CreateDomainEntryResult, AWSError] = js.native
   
   /**
-    * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createInstanceSnapshot(): Request[CreateInstanceSnapshotResult, AWSError] = js.native
   def createInstanceSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CreateInstanceSnapshotResult, Unit]): Request[CreateInstanceSnapshotResult, AWSError] = js.native
   /**
-    * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createInstanceSnapshot(params: CreateInstanceSnapshotRequest): Request[CreateInstanceSnapshotResult, AWSError] = js.native
   def createInstanceSnapshot(
@@ -315,12 +343,12 @@ trait Lightsail extends Service {
   ): Request[CreateInstanceSnapshotResult, AWSError] = js.native
   
   /**
-    * Creates one or more Amazon Lightsail instances. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates one or more Amazon Lightsail instances. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Developer Guide.
     */
   def createInstances(): Request[CreateInstancesResult, AWSError] = js.native
   def createInstances(callback: js.Function2[/* err */ AWSError, /* data */ CreateInstancesResult, Unit]): Request[CreateInstancesResult, AWSError] = js.native
   /**
-    * Creates one or more Amazon Lightsail instances. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates one or more Amazon Lightsail instances. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Developer Guide.
     */
   def createInstances(params: CreateInstancesRequest): Request[CreateInstancesResult, AWSError] = js.native
   def createInstances(
@@ -329,12 +357,12 @@ trait Lightsail extends Service {
   ): Request[CreateInstancesResult, AWSError] = js.native
   
   /**
-    * Creates one or more new instances from a manual or automatic snapshot of an instance. The create instances from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by instance snapshot name. For more information, see the Lightsail Dev Guide.
+    * Creates one or more new instances from a manual or automatic snapshot of an instance. The create instances from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by instance snapshot name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createInstancesFromSnapshot(): Request[CreateInstancesFromSnapshotResult, AWSError] = js.native
   def createInstancesFromSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CreateInstancesFromSnapshotResult, Unit]): Request[CreateInstancesFromSnapshotResult, AWSError] = js.native
   /**
-    * Creates one or more new instances from a manual or automatic snapshot of an instance. The create instances from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by instance snapshot name. For more information, see the Lightsail Dev Guide.
+    * Creates one or more new instances from a manual or automatic snapshot of an instance. The create instances from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by instance snapshot name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createInstancesFromSnapshot(params: CreateInstancesFromSnapshotRequest): Request[CreateInstancesFromSnapshotResult, AWSError] = js.native
   def createInstancesFromSnapshot(
@@ -343,12 +371,12 @@ trait Lightsail extends Service {
   ): Request[CreateInstancesFromSnapshotResult, AWSError] = js.native
   
   /**
-    * Creates an SSH key pair. The create key pair operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a custom SSH key pair that you can use with an Amazon Lightsail instance.  Use the DownloadDefaultKeyPair action to create a Lightsail default key pair in an Amazon Web Services Region where a default key pair does not currently exist.  The create key pair operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createKeyPair(): Request[CreateKeyPairResult, AWSError] = js.native
   def createKeyPair(callback: js.Function2[/* err */ AWSError, /* data */ CreateKeyPairResult, Unit]): Request[CreateKeyPairResult, AWSError] = js.native
   /**
-    * Creates an SSH key pair. The create key pair operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a custom SSH key pair that you can use with an Amazon Lightsail instance.  Use the DownloadDefaultKeyPair action to create a Lightsail default key pair in an Amazon Web Services Region where a default key pair does not currently exist.  The create key pair operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createKeyPair(params: CreateKeyPairRequest): Request[CreateKeyPairResult, AWSError] = js.native
   def createKeyPair(
@@ -357,12 +385,12 @@ trait Lightsail extends Service {
   ): Request[CreateKeyPairResult, AWSError] = js.native
   
   /**
-    * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation. The create load balancer operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation. The create load balancer operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createLoadBalancer(): Request[CreateLoadBalancerResult, AWSError] = js.native
   def createLoadBalancer(callback: js.Function2[/* err */ AWSError, /* data */ CreateLoadBalancerResult, Unit]): Request[CreateLoadBalancerResult, AWSError] = js.native
   /**
-    * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation. The create load balancer operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation. The create load balancer operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createLoadBalancer(params: CreateLoadBalancerRequest): Request[CreateLoadBalancerResult, AWSError] = js.native
   def createLoadBalancer(
@@ -371,14 +399,14 @@ trait Lightsail extends Service {
   ): Request[CreateLoadBalancerResult, AWSError] = js.native
   
   /**
-    * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The CreateLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Creates an SSL/TLS certificate for an Amazon Lightsail load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The CreateLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createLoadBalancerTlsCertificate(): Request[CreateLoadBalancerTlsCertificateResult, AWSError] = js.native
   def createLoadBalancerTlsCertificate(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLoadBalancerTlsCertificateResult, Unit]
   ): Request[CreateLoadBalancerTlsCertificateResult, AWSError] = js.native
   /**
-    * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The CreateLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Creates an SSL/TLS certificate for an Amazon Lightsail load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The CreateLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createLoadBalancerTlsCertificate(params: CreateLoadBalancerTlsCertificateRequest): Request[CreateLoadBalancerTlsCertificateResult, AWSError] = js.native
   def createLoadBalancerTlsCertificate(
@@ -387,12 +415,12 @@ trait Lightsail extends Service {
   ): Request[CreateLoadBalancerTlsCertificateResult, AWSError] = js.native
   
   /**
-    * Creates a new database in Amazon Lightsail. The create relational database operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a new database in Amazon Lightsail. The create relational database operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createRelationalDatabase(): Request[CreateRelationalDatabaseResult, AWSError] = js.native
   def createRelationalDatabase(callback: js.Function2[/* err */ AWSError, /* data */ CreateRelationalDatabaseResult, Unit]): Request[CreateRelationalDatabaseResult, AWSError] = js.native
   /**
-    * Creates a new database in Amazon Lightsail. The create relational database operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a new database in Amazon Lightsail. The create relational database operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createRelationalDatabase(params: CreateRelationalDatabaseRequest): Request[CreateRelationalDatabaseResult, AWSError] = js.native
   def createRelationalDatabase(
@@ -401,14 +429,14 @@ trait Lightsail extends Service {
   ): Request[CreateRelationalDatabaseResult, AWSError] = js.native
   
   /**
-    * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan. The create relational database from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by relationalDatabaseSnapshotName. For more information, see the Lightsail Dev Guide.
+    * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan. The create relational database from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by relationalDatabaseSnapshotName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createRelationalDatabaseFromSnapshot(): Request[CreateRelationalDatabaseFromSnapshotResult, AWSError] = js.native
   def createRelationalDatabaseFromSnapshot(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRelationalDatabaseFromSnapshotResult, Unit]
   ): Request[CreateRelationalDatabaseFromSnapshotResult, AWSError] = js.native
   /**
-    * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan. The create relational database from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by relationalDatabaseSnapshotName. For more information, see the Lightsail Dev Guide.
+    * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan. The create relational database from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by relationalDatabaseSnapshotName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createRelationalDatabaseFromSnapshot(params: CreateRelationalDatabaseFromSnapshotRequest): Request[CreateRelationalDatabaseFromSnapshotResult, AWSError] = js.native
   def createRelationalDatabaseFromSnapshot(
@@ -417,14 +445,14 @@ trait Lightsail extends Service {
   ): Request[CreateRelationalDatabaseFromSnapshotResult, AWSError] = js.native
   
   /**
-    * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database. The create relational database snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database. The create relational database snapshot operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createRelationalDatabaseSnapshot(): Request[CreateRelationalDatabaseSnapshotResult, AWSError] = js.native
   def createRelationalDatabaseSnapshot(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRelationalDatabaseSnapshotResult, Unit]
   ): Request[CreateRelationalDatabaseSnapshotResult, AWSError] = js.native
   /**
-    * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database. The create relational database snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+    * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database. The create relational database snapshot operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createRelationalDatabaseSnapshot(params: CreateRelationalDatabaseSnapshotRequest): Request[CreateRelationalDatabaseSnapshotResult, AWSError] = js.native
   def createRelationalDatabaseSnapshot(
@@ -447,18 +475,46 @@ trait Lightsail extends Service {
   ): Request[DeleteAlarmResult, AWSError] = js.native
   
   /**
-    * Deletes an automatic snapshot of an instance or disk. For more information, see the Lightsail Dev Guide.
+    * Deletes an automatic snapshot of an instance or disk. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteAutoSnapshot(): Request[DeleteAutoSnapshotResult, AWSError] = js.native
   def deleteAutoSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAutoSnapshotResult, Unit]): Request[DeleteAutoSnapshotResult, AWSError] = js.native
   /**
-    * Deletes an automatic snapshot of an instance or disk. For more information, see the Lightsail Dev Guide.
+    * Deletes an automatic snapshot of an instance or disk. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteAutoSnapshot(params: DeleteAutoSnapshotRequest): Request[DeleteAutoSnapshotResult, AWSError] = js.native
   def deleteAutoSnapshot(
     params: DeleteAutoSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAutoSnapshotResult, Unit]
   ): Request[DeleteAutoSnapshotResult, AWSError] = js.native
+  
+  /**
+    * Deletes a Amazon Lightsail bucket.  When you delete your bucket, the bucket name is released and can be reused for a new bucket in your account or another Amazon Web Services account. 
+    */
+  def deleteBucket(): Request[DeleteBucketResult, AWSError] = js.native
+  def deleteBucket(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBucketResult, Unit]): Request[DeleteBucketResult, AWSError] = js.native
+  /**
+    * Deletes a Amazon Lightsail bucket.  When you delete your bucket, the bucket name is released and can be reused for a new bucket in your account or another Amazon Web Services account. 
+    */
+  def deleteBucket(params: DeleteBucketRequest): Request[DeleteBucketResult, AWSError] = js.native
+  def deleteBucket(
+    params: DeleteBucketRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteBucketResult, Unit]
+  ): Request[DeleteBucketResult, AWSError] = js.native
+  
+  /**
+    * Deletes an access key for the specified Amazon Lightsail bucket. We recommend that you delete an access key if the secret access key is compromised. For more information about access keys, see Creating access keys for a bucket in Amazon Lightsail in the Amazon Lightsail Developer Guide.
+    */
+  def deleteBucketAccessKey(): Request[DeleteBucketAccessKeyResult, AWSError] = js.native
+  def deleteBucketAccessKey(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBucketAccessKeyResult, Unit]): Request[DeleteBucketAccessKeyResult, AWSError] = js.native
+  /**
+    * Deletes an access key for the specified Amazon Lightsail bucket. We recommend that you delete an access key if the secret access key is compromised. For more information about access keys, see Creating access keys for a bucket in Amazon Lightsail in the Amazon Lightsail Developer Guide.
+    */
+  def deleteBucketAccessKey(params: DeleteBucketAccessKeyRequest): Request[DeleteBucketAccessKeyResult, AWSError] = js.native
+  def deleteBucketAccessKey(
+    params: DeleteBucketAccessKeyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteBucketAccessKeyResult, Unit]
+  ): Request[DeleteBucketAccessKeyResult, AWSError] = js.native
   
   /**
     * Deletes an SSL/TLS certificate for your Amazon Lightsail content delivery network (CDN) distribution. Certificates that are currently attached to a distribution cannot be deleted. Use the DetachCertificateFromDistribution action to detach a certificate from a distribution.
@@ -475,12 +531,12 @@ trait Lightsail extends Service {
   ): Request[DeleteCertificateResult, AWSError] = js.native
   
   /**
-    * Deletes a contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    * Deletes a contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each Amazon Web Services Region. However, SMS text messaging is not supported in some Amazon Web Services Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
   def deleteContactMethod(): Request[DeleteContactMethodResult, AWSError] = js.native
   def deleteContactMethod(callback: js.Function2[/* err */ AWSError, /* data */ DeleteContactMethodResult, Unit]): Request[DeleteContactMethodResult, AWSError] = js.native
   /**
-    * Deletes a contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    * Deletes a contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each Amazon Web Services Region. However, SMS text messaging is not supported in some Amazon Web Services Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
   def deleteContactMethod(params: DeleteContactMethodRequest): Request[DeleteContactMethodResult, AWSError] = js.native
   def deleteContactMethod(
@@ -517,12 +573,12 @@ trait Lightsail extends Service {
   ): Request[DeleteContainerServiceResult, AWSError] = js.native
   
   /**
-    * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteDisk(): Request[DeleteDiskResult, AWSError] = js.native
   def deleteDisk(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDiskResult, Unit]): Request[DeleteDiskResult, AWSError] = js.native
   /**
-    * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteDisk(params: DeleteDiskRequest): Request[DeleteDiskResult, AWSError] = js.native
   def deleteDisk(
@@ -531,12 +587,12 @@ trait Lightsail extends Service {
   ): Request[DeleteDiskResult, AWSError] = js.native
   
   /**
-    * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk. The delete disk snapshot operation supports tag-based access control via resource tags applied to the resource identified by disk snapshot name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk. The delete disk snapshot operation supports tag-based access control via resource tags applied to the resource identified by disk snapshot name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteDiskSnapshot(): Request[DeleteDiskSnapshotResult, AWSError] = js.native
   def deleteDiskSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDiskSnapshotResult, Unit]): Request[DeleteDiskSnapshotResult, AWSError] = js.native
   /**
-    * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk. The delete disk snapshot operation supports tag-based access control via resource tags applied to the resource identified by disk snapshot name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk. The delete disk snapshot operation supports tag-based access control via resource tags applied to the resource identified by disk snapshot name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteDiskSnapshot(params: DeleteDiskSnapshotRequest): Request[DeleteDiskSnapshotResult, AWSError] = js.native
   def deleteDiskSnapshot(
@@ -559,12 +615,12 @@ trait Lightsail extends Service {
   ): Request[DeleteDistributionResult, AWSError] = js.native
   
   /**
-    * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteDomain(): Request[DeleteDomainResult, AWSError] = js.native
   def deleteDomain(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainResult, Unit]): Request[DeleteDomainResult, AWSError] = js.native
   /**
-    * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteDomain(params: DeleteDomainRequest): Request[DeleteDomainResult, AWSError] = js.native
   def deleteDomain(
@@ -573,12 +629,12 @@ trait Lightsail extends Service {
   ): Request[DeleteDomainResult, AWSError] = js.native
   
   /**
-    * Deletes a specific domain entry. The delete domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Deletes a specific domain entry. The delete domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteDomainEntry(): Request[DeleteDomainEntryResult, AWSError] = js.native
   def deleteDomainEntry(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainEntryResult, Unit]): Request[DeleteDomainEntryResult, AWSError] = js.native
   /**
-    * Deletes a specific domain entry. The delete domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Deletes a specific domain entry. The delete domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteDomainEntry(params: DeleteDomainEntryRequest): Request[DeleteDomainEntryResult, AWSError] = js.native
   def deleteDomainEntry(
@@ -587,12 +643,12 @@ trait Lightsail extends Service {
   ): Request[DeleteDomainEntryResult, AWSError] = js.native
   
   /**
-    * Deletes an Amazon Lightsail instance. The delete instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Deletes an Amazon Lightsail instance. The delete instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteInstance(): Request[DeleteInstanceResult, AWSError] = js.native
   def deleteInstance(callback: js.Function2[/* err */ AWSError, /* data */ DeleteInstanceResult, Unit]): Request[DeleteInstanceResult, AWSError] = js.native
   /**
-    * Deletes an Amazon Lightsail instance. The delete instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Deletes an Amazon Lightsail instance. The delete instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteInstance(params: DeleteInstanceRequest): Request[DeleteInstanceResult, AWSError] = js.native
   def deleteInstance(
@@ -601,12 +657,12 @@ trait Lightsail extends Service {
   ): Request[DeleteInstanceResult, AWSError] = js.native
   
   /**
-    * Deletes a specific snapshot of a virtual private server (or instance). The delete instance snapshot operation supports tag-based access control via resource tags applied to the resource identified by instance snapshot name. For more information, see the Lightsail Dev Guide.
+    * Deletes a specific snapshot of a virtual private server (or instance). The delete instance snapshot operation supports tag-based access control via resource tags applied to the resource identified by instance snapshot name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteInstanceSnapshot(): Request[DeleteInstanceSnapshotResult, AWSError] = js.native
   def deleteInstanceSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ DeleteInstanceSnapshotResult, Unit]): Request[DeleteInstanceSnapshotResult, AWSError] = js.native
   /**
-    * Deletes a specific snapshot of a virtual private server (or instance). The delete instance snapshot operation supports tag-based access control via resource tags applied to the resource identified by instance snapshot name. For more information, see the Lightsail Dev Guide.
+    * Deletes a specific snapshot of a virtual private server (or instance). The delete instance snapshot operation supports tag-based access control via resource tags applied to the resource identified by instance snapshot name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteInstanceSnapshot(params: DeleteInstanceSnapshotRequest): Request[DeleteInstanceSnapshotResult, AWSError] = js.native
   def deleteInstanceSnapshot(
@@ -615,12 +671,12 @@ trait Lightsail extends Service {
   ): Request[DeleteInstanceSnapshotResult, AWSError] = js.native
   
   /**
-    * Deletes a specific SSH key pair. The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by key pair name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified key pair by removing the public key from Amazon Lightsail. You can delete key pairs that were created using the ImportKeyPair and CreateKeyPair actions, as well as the Lightsail default key pair. A new default key pair will not be created unless you launch an instance without specifying a custom key pair, or you call the DownloadDefaultKeyPair API.  The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by key pair name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteKeyPair(): Request[DeleteKeyPairResult, AWSError] = js.native
   def deleteKeyPair(callback: js.Function2[/* err */ AWSError, /* data */ DeleteKeyPairResult, Unit]): Request[DeleteKeyPairResult, AWSError] = js.native
   /**
-    * Deletes a specific SSH key pair. The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by key pair name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified key pair by removing the public key from Amazon Lightsail. You can delete key pairs that were created using the ImportKeyPair and CreateKeyPair actions, as well as the Lightsail default key pair. A new default key pair will not be created unless you launch an instance without specifying a custom key pair, or you call the DownloadDefaultKeyPair API.  The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by key pair name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteKeyPair(params: DeleteKeyPairRequest): Request[DeleteKeyPairResult, AWSError] = js.native
   def deleteKeyPair(
@@ -643,12 +699,12 @@ trait Lightsail extends Service {
   ): Request[DeleteKnownHostKeysResult, AWSError] = js.native
   
   /**
-    * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteLoadBalancer(): Request[DeleteLoadBalancerResult, AWSError] = js.native
   def deleteLoadBalancer(callback: js.Function2[/* err */ AWSError, /* data */ DeleteLoadBalancerResult, Unit]): Request[DeleteLoadBalancerResult, AWSError] = js.native
   /**
-    * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteLoadBalancer(params: DeleteLoadBalancerRequest): Request[DeleteLoadBalancerResult, AWSError] = js.native
   def deleteLoadBalancer(
@@ -657,14 +713,14 @@ trait Lightsail extends Service {
   ): Request[DeleteLoadBalancerResult, AWSError] = js.native
   
   /**
-    * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The DeleteLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The DeleteLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteLoadBalancerTlsCertificate(): Request[DeleteLoadBalancerTlsCertificateResult, AWSError] = js.native
   def deleteLoadBalancerTlsCertificate(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLoadBalancerTlsCertificateResult, Unit]
   ): Request[DeleteLoadBalancerTlsCertificateResult, AWSError] = js.native
   /**
-    * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The DeleteLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The DeleteLoadBalancerTlsCertificate operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteLoadBalancerTlsCertificate(params: DeleteLoadBalancerTlsCertificateRequest): Request[DeleteLoadBalancerTlsCertificateResult, AWSError] = js.native
   def deleteLoadBalancerTlsCertificate(
@@ -673,12 +729,12 @@ trait Lightsail extends Service {
   ): Request[DeleteLoadBalancerTlsCertificateResult, AWSError] = js.native
   
   /**
-    * Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteRelationalDatabase(): Request[DeleteRelationalDatabaseResult, AWSError] = js.native
   def deleteRelationalDatabase(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRelationalDatabaseResult, Unit]): Request[DeleteRelationalDatabaseResult, AWSError] = js.native
   /**
-    * Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteRelationalDatabase(params: DeleteRelationalDatabaseRequest): Request[DeleteRelationalDatabaseResult, AWSError] = js.native
   def deleteRelationalDatabase(
@@ -687,14 +743,14 @@ trait Lightsail extends Service {
   ): Request[DeleteRelationalDatabaseResult, AWSError] = js.native
   
   /**
-    * Deletes a database snapshot in Amazon Lightsail. The delete relational database snapshot operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Deletes a database snapshot in Amazon Lightsail. The delete relational database snapshot operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteRelationalDatabaseSnapshot(): Request[DeleteRelationalDatabaseSnapshotResult, AWSError] = js.native
   def deleteRelationalDatabaseSnapshot(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRelationalDatabaseSnapshotResult, Unit]
   ): Request[DeleteRelationalDatabaseSnapshotResult, AWSError] = js.native
   /**
-    * Deletes a database snapshot in Amazon Lightsail. The delete relational database snapshot operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Deletes a database snapshot in Amazon Lightsail. The delete relational database snapshot operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def deleteRelationalDatabaseSnapshot(params: DeleteRelationalDatabaseSnapshotRequest): Request[DeleteRelationalDatabaseSnapshotResult, AWSError] = js.native
   def deleteRelationalDatabaseSnapshot(
@@ -719,12 +775,12 @@ trait Lightsail extends Service {
   ): Request[DetachCertificateFromDistributionResult, AWSError] = js.native
   
   /**
-    * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
+    * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def detachDisk(): Request[DetachDiskResult, AWSError] = js.native
   def detachDisk(callback: js.Function2[/* err */ AWSError, /* data */ DetachDiskResult, Unit]): Request[DetachDiskResult, AWSError] = js.native
   /**
-    * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
+    * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def detachDisk(params: DetachDiskRequest): Request[DetachDiskResult, AWSError] = js.native
   def detachDisk(
@@ -733,12 +789,12 @@ trait Lightsail extends Service {
   ): Request[DetachDiskResult, AWSError] = js.native
   
   /**
-    * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer. The detach instances from load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer. The detach instances from load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def detachInstancesFromLoadBalancer(): Request[DetachInstancesFromLoadBalancerResult, AWSError] = js.native
   def detachInstancesFromLoadBalancer(callback: js.Function2[/* err */ AWSError, /* data */ DetachInstancesFromLoadBalancerResult, Unit]): Request[DetachInstancesFromLoadBalancerResult, AWSError] = js.native
   /**
-    * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer. The detach instances from load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer. The detach instances from load balancer operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def detachInstancesFromLoadBalancer(params: DetachInstancesFromLoadBalancerRequest): Request[DetachInstancesFromLoadBalancerResult, AWSError] = js.native
   def detachInstancesFromLoadBalancer(
@@ -761,12 +817,12 @@ trait Lightsail extends Service {
   ): Request[DetachStaticIpResult, AWSError] = js.native
   
   /**
-    * Disables an add-on for an Amazon Lightsail resource. For more information, see the Lightsail Dev Guide.
+    * Disables an add-on for an Amazon Lightsail resource. For more information, see the Amazon Lightsail Developer Guide.
     */
   def disableAddOn(): Request[DisableAddOnResult, AWSError] = js.native
   def disableAddOn(callback: js.Function2[/* err */ AWSError, /* data */ DisableAddOnResult, Unit]): Request[DisableAddOnResult, AWSError] = js.native
   /**
-    * Disables an add-on for an Amazon Lightsail resource. For more information, see the Lightsail Dev Guide.
+    * Disables an add-on for an Amazon Lightsail resource. For more information, see the Amazon Lightsail Developer Guide.
     */
   def disableAddOn(params: DisableAddOnRequest): Request[DisableAddOnResult, AWSError] = js.native
   def disableAddOn(
@@ -775,12 +831,12 @@ trait Lightsail extends Service {
   ): Request[DisableAddOnResult, AWSError] = js.native
   
   /**
-    * Downloads the default SSH key pair from the user's account.
+    * Downloads the regional Amazon Lightsail default key pair. This action also creates a Lightsail default key pair if a default key pair does not currently exist in the Amazon Web Services Region.
     */
   def downloadDefaultKeyPair(): Request[DownloadDefaultKeyPairResult, AWSError] = js.native
   def downloadDefaultKeyPair(callback: js.Function2[/* err */ AWSError, /* data */ DownloadDefaultKeyPairResult, Unit]): Request[DownloadDefaultKeyPairResult, AWSError] = js.native
   /**
-    * Downloads the default SSH key pair from the user's account.
+    * Downloads the regional Amazon Lightsail default key pair. This action also creates a Lightsail default key pair if a default key pair does not currently exist in the Amazon Web Services Region.
     */
   def downloadDefaultKeyPair(params: DownloadDefaultKeyPairRequest): Request[DownloadDefaultKeyPairResult, AWSError] = js.native
   def downloadDefaultKeyPair(
@@ -789,12 +845,12 @@ trait Lightsail extends Service {
   ): Request[DownloadDefaultKeyPairResult, AWSError] = js.native
   
   /**
-    * Enables or modifies an add-on for an Amazon Lightsail resource. For more information, see the Lightsail Dev Guide.
+    * Enables or modifies an add-on for an Amazon Lightsail resource. For more information, see the Amazon Lightsail Developer Guide.
     */
   def enableAddOn(): Request[EnableAddOnResult, AWSError] = js.native
   def enableAddOn(callback: js.Function2[/* err */ AWSError, /* data */ EnableAddOnResult, Unit]): Request[EnableAddOnResult, AWSError] = js.native
   /**
-    * Enables or modifies an add-on for an Amazon Lightsail resource. For more information, see the Lightsail Dev Guide.
+    * Enables or modifies an add-on for an Amazon Lightsail resource. For more information, see the Amazon Lightsail Developer Guide.
     */
   def enableAddOn(params: EnableAddOnRequest): Request[EnableAddOnResult, AWSError] = js.native
   def enableAddOn(
@@ -803,12 +859,12 @@ trait Lightsail extends Service {
   ): Request[EnableAddOnResult, AWSError] = js.native
   
   /**
-    * Exports an Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by source snapshot name. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
+    * Exports an Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by source snapshot name. For more information, see the Amazon Lightsail Developer Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
     */
   def exportSnapshot(): Request[ExportSnapshotResult, AWSError] = js.native
   def exportSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ ExportSnapshotResult, Unit]): Request[ExportSnapshotResult, AWSError] = js.native
   /**
-    * Exports an Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by source snapshot name. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
+    * Exports an Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by source snapshot name. For more information, see the Amazon Lightsail Developer Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
     */
   def exportSnapshot(params: ExportSnapshotRequest): Request[ExportSnapshotResult, AWSError] = js.native
   def exportSnapshot(
@@ -845,12 +901,12 @@ trait Lightsail extends Service {
   ): Request[GetAlarmsResult, AWSError] = js.native
   
   /**
-    * Returns the available automatic snapshots for an instance or disk. For more information, see the Lightsail Dev Guide.
+    * Returns the available automatic snapshots for an instance or disk. For more information, see the Amazon Lightsail Developer Guide.
     */
   def getAutoSnapshots(): Request[GetAutoSnapshotsResult, AWSError] = js.native
   def getAutoSnapshots(callback: js.Function2[/* err */ AWSError, /* data */ GetAutoSnapshotsResult, Unit]): Request[GetAutoSnapshotsResult, AWSError] = js.native
   /**
-    * Returns the available automatic snapshots for an instance or disk. For more information, see the Lightsail Dev Guide.
+    * Returns the available automatic snapshots for an instance or disk. For more information, see the Amazon Lightsail Developer Guide.
     */
   def getAutoSnapshots(params: GetAutoSnapshotsRequest): Request[GetAutoSnapshotsResult, AWSError] = js.native
   def getAutoSnapshots(
@@ -873,12 +929,68 @@ trait Lightsail extends Service {
   ): Request[GetBlueprintsResult, AWSError] = js.native
   
   /**
-    * Returns the list of bundles that are available for purchase. A bundle describes the specs for your virtual private server (or instance).
+    * Returns the existing access key IDs for the specified Amazon Lightsail bucket.  This action does not return the secret access key value of an access key. You can get a secret access key only when you create it from the response of the CreateBucketAccessKey action. If you lose the secret access key, you must create a new access key. 
+    */
+  def getBucketAccessKeys(): Request[GetBucketAccessKeysResult, AWSError] = js.native
+  def getBucketAccessKeys(callback: js.Function2[/* err */ AWSError, /* data */ GetBucketAccessKeysResult, Unit]): Request[GetBucketAccessKeysResult, AWSError] = js.native
+  /**
+    * Returns the existing access key IDs for the specified Amazon Lightsail bucket.  This action does not return the secret access key value of an access key. You can get a secret access key only when you create it from the response of the CreateBucketAccessKey action. If you lose the secret access key, you must create a new access key. 
+    */
+  def getBucketAccessKeys(params: GetBucketAccessKeysRequest): Request[GetBucketAccessKeysResult, AWSError] = js.native
+  def getBucketAccessKeys(
+    params: GetBucketAccessKeysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBucketAccessKeysResult, Unit]
+  ): Request[GetBucketAccessKeysResult, AWSError] = js.native
+  
+  /**
+    * Returns the bundles that you can apply to a Amazon Lightsail bucket. The bucket bundle specifies the monthly cost, storage quota, and data transfer quota for a bucket. Use the UpdateBucketBundle action to update the bundle for a bucket.
+    */
+  def getBucketBundles(): Request[GetBucketBundlesResult, AWSError] = js.native
+  def getBucketBundles(callback: js.Function2[/* err */ AWSError, /* data */ GetBucketBundlesResult, Unit]): Request[GetBucketBundlesResult, AWSError] = js.native
+  /**
+    * Returns the bundles that you can apply to a Amazon Lightsail bucket. The bucket bundle specifies the monthly cost, storage quota, and data transfer quota for a bucket. Use the UpdateBucketBundle action to update the bundle for a bucket.
+    */
+  def getBucketBundles(params: GetBucketBundlesRequest): Request[GetBucketBundlesResult, AWSError] = js.native
+  def getBucketBundles(
+    params: GetBucketBundlesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBucketBundlesResult, Unit]
+  ): Request[GetBucketBundlesResult, AWSError] = js.native
+  
+  /**
+    * Returns the data points of a specific metric for an Amazon Lightsail bucket. Metrics report the utilization of a bucket. View and collect metric data regularly to monitor the number of objects stored in a bucket (including object versions) and the storage space used by those objects.
+    */
+  def getBucketMetricData(): Request[GetBucketMetricDataResult, AWSError] = js.native
+  def getBucketMetricData(callback: js.Function2[/* err */ AWSError, /* data */ GetBucketMetricDataResult, Unit]): Request[GetBucketMetricDataResult, AWSError] = js.native
+  /**
+    * Returns the data points of a specific metric for an Amazon Lightsail bucket. Metrics report the utilization of a bucket. View and collect metric data regularly to monitor the number of objects stored in a bucket (including object versions) and the storage space used by those objects.
+    */
+  def getBucketMetricData(params: GetBucketMetricDataRequest): Request[GetBucketMetricDataResult, AWSError] = js.native
+  def getBucketMetricData(
+    params: GetBucketMetricDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBucketMetricDataResult, Unit]
+  ): Request[GetBucketMetricDataResult, AWSError] = js.native
+  
+  /**
+    * Returns information about one or more Amazon Lightsail buckets. The information returned includes the synchronization status of the Amazon Simple Storage Service (Amazon S3) account-level block public access feature for your Lightsail buckets. For more information about buckets, see Buckets in Amazon Lightsail in the Amazon Lightsail Developer Guide.
+    */
+  def getBuckets(): Request[GetBucketsResult, AWSError] = js.native
+  def getBuckets(callback: js.Function2[/* err */ AWSError, /* data */ GetBucketsResult, Unit]): Request[GetBucketsResult, AWSError] = js.native
+  /**
+    * Returns information about one or more Amazon Lightsail buckets. The information returned includes the synchronization status of the Amazon Simple Storage Service (Amazon S3) account-level block public access feature for your Lightsail buckets. For more information about buckets, see Buckets in Amazon Lightsail in the Amazon Lightsail Developer Guide.
+    */
+  def getBuckets(params: GetBucketsRequest): Request[GetBucketsResult, AWSError] = js.native
+  def getBuckets(
+    params: GetBucketsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBucketsResult, Unit]
+  ): Request[GetBucketsResult, AWSError] = js.native
+  
+  /**
+    * Returns the bundles that you can apply to an Amazon Lightsail instance when you create it. A bundle describes the specifications of an instance, such as the monthly cost, amount of memory, the number of vCPUs, amount of storage space, and monthly network data transfer quota.  Bundles are referred to as instance plans in the Lightsail console. 
     */
   def getBundles(): Request[GetBundlesResult, AWSError] = js.native
   def getBundles(callback: js.Function2[/* err */ AWSError, /* data */ GetBundlesResult, Unit]): Request[GetBundlesResult, AWSError] = js.native
   /**
-    * Returns the list of bundles that are available for purchase. A bundle describes the specs for your virtual private server (or instance).
+    * Returns the bundles that you can apply to an Amazon Lightsail instance when you create it. A bundle describes the specifications of an instance, such as the monthly cost, amount of memory, the number of vCPUs, amount of storage space, and monthly network data transfer quota.  Bundles are referred to as instance plans in the Lightsail console. 
     */
   def getBundles(params: GetBundlesRequest): Request[GetBundlesResult, AWSError] = js.native
   def getBundles(
@@ -915,12 +1027,12 @@ trait Lightsail extends Service {
   ): Request[GetCloudFormationStackRecordsResult, AWSError] = js.native
   
   /**
-    * Returns information about the configured contact methods. Specify a protocol in your request to return information about a specific contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    * Returns information about the configured contact methods. Specify a protocol in your request to return information about a specific contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each Amazon Web Services Region. However, SMS text messaging is not supported in some Amazon Web Services Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
   def getContactMethods(): Request[GetContactMethodsResult, AWSError] = js.native
   def getContactMethods(callback: js.Function2[/* err */ AWSError, /* data */ GetContactMethodsResult, Unit]): Request[GetContactMethodsResult, AWSError] = js.native
   /**
-    * Returns information about the configured contact methods. Specify a protocol in your request to return information about a specific contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
+    * Returns information about the configured contact methods. Specify a protocol in your request to return information about a specific contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each Amazon Web Services Region. However, SMS text messaging is not supported in some Amazon Web Services Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
   def getContactMethods(params: GetContactMethodsRequest): Request[GetContactMethodsResult, AWSError] = js.native
   def getContactMethods(
@@ -1080,12 +1192,12 @@ trait Lightsail extends Service {
   ): Request[GetDisksResult, AWSError] = js.native
   
   /**
-    * Returns the list bundles that can be applied to you Amazon Lightsail content delivery network (CDN) distributions. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution.
+    * Returns the bundles that can be applied to your Amazon Lightsail content delivery network (CDN) distributions. A distribution bundle specifies the monthly network transfer quota and monthly cost of your distribution.
     */
   def getDistributionBundles(): Request[GetDistributionBundlesResult, AWSError] = js.native
   def getDistributionBundles(callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionBundlesResult, Unit]): Request[GetDistributionBundlesResult, AWSError] = js.native
   /**
-    * Returns the list bundles that can be applied to you Amazon Lightsail content delivery network (CDN) distributions. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution.
+    * Returns the bundles that can be applied to your Amazon Lightsail content delivery network (CDN) distributions. A distribution bundle specifies the monthly network transfer quota and monthly cost of your distribution.
     */
   def getDistributionBundles(params: GetDistributionBundlesRequest): Request[GetDistributionBundlesResult, AWSError] = js.native
   def getDistributionBundles(
@@ -1164,12 +1276,12 @@ trait Lightsail extends Service {
   ): Request[GetDomainsResult, AWSError] = js.native
   
   /**
-    * Returns the export snapshot record created as a result of the export snapshot operation. An export snapshot record can be used to create a new Amazon EC2 instance and its related resources with the create cloud formation stack operation.
+    * Returns all export snapshot records created as a result of the export snapshot operation. An export snapshot record can be used to create a new Amazon EC2 instance and its related resources with the CreateCloudFormationStack action.
     */
   def getExportSnapshotRecords(): Request[GetExportSnapshotRecordsResult, AWSError] = js.native
   def getExportSnapshotRecords(callback: js.Function2[/* err */ AWSError, /* data */ GetExportSnapshotRecordsResult, Unit]): Request[GetExportSnapshotRecordsResult, AWSError] = js.native
   /**
-    * Returns the export snapshot record created as a result of the export snapshot operation. An export snapshot record can be used to create a new Amazon EC2 instance and its related resources with the create cloud formation stack operation.
+    * Returns all export snapshot records created as a result of the export snapshot operation. An export snapshot record can be used to create a new Amazon EC2 instance and its related resources with the CreateCloudFormationStack action.
     */
   def getExportSnapshotRecords(params: GetExportSnapshotRecordsRequest): Request[GetExportSnapshotRecordsResult, AWSError] = js.native
   def getExportSnapshotRecords(
@@ -1192,12 +1304,12 @@ trait Lightsail extends Service {
   ): Request[GetInstanceResult, AWSError] = js.native
   
   /**
-    * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance. The get instance access details operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance. The get instance access details operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def getInstanceAccessDetails(): Request[GetInstanceAccessDetailsResult, AWSError] = js.native
   def getInstanceAccessDetails(callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceAccessDetailsResult, Unit]): Request[GetInstanceAccessDetailsResult, AWSError] = js.native
   /**
-    * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance. The get instance access details operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance. The get instance access details operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def getInstanceAccessDetails(params: GetInstanceAccessDetailsRequest): Request[GetInstanceAccessDetailsResult, AWSError] = js.native
   def getInstanceAccessDetails(
@@ -1358,6 +1470,20 @@ trait Lightsail extends Service {
     params: GetLoadBalancerTlsCertificatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoadBalancerTlsCertificatesResult, Unit]
   ): Request[GetLoadBalancerTlsCertificatesResult, AWSError] = js.native
+  
+  /**
+    * Returns a list of TLS security policies that you can apply to Lightsail load balancers. For more information about load balancer TLS security policies, see Configuring TLS security policies on your Amazon Lightsail load balancers in the Amazon Lightsail Developer Guide.
+    */
+  def getLoadBalancerTlsPolicies(): Request[GetLoadBalancerTlsPoliciesResult, AWSError] = js.native
+  def getLoadBalancerTlsPolicies(callback: js.Function2[/* err */ AWSError, /* data */ GetLoadBalancerTlsPoliciesResult, Unit]): Request[GetLoadBalancerTlsPoliciesResult, AWSError] = js.native
+  /**
+    * Returns a list of TLS security policies that you can apply to Lightsail load balancers. For more information about load balancer TLS security policies, see Configuring TLS security policies on your Amazon Lightsail load balancers in the Amazon Lightsail Developer Guide.
+    */
+  def getLoadBalancerTlsPolicies(params: GetLoadBalancerTlsPoliciesRequest): Request[GetLoadBalancerTlsPoliciesResult, AWSError] = js.native
+  def getLoadBalancerTlsPolicies(
+    params: GetLoadBalancerTlsPoliciesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLoadBalancerTlsPoliciesResult, Unit]
+  ): Request[GetLoadBalancerTlsPoliciesResult, AWSError] = js.native
   
   /**
     * Returns information about all load balancers in an account.
@@ -1600,12 +1726,12 @@ trait Lightsail extends Service {
   ): Request[GetRelationalDatabasesResult, AWSError] = js.native
   
   /**
-    * Returns information about a specific static IP.
+    * Returns information about an Amazon Lightsail static IP.
     */
   def getStaticIp(): Request[GetStaticIpResult, AWSError] = js.native
   def getStaticIp(callback: js.Function2[/* err */ AWSError, /* data */ GetStaticIpResult, Unit]): Request[GetStaticIpResult, AWSError] = js.native
   /**
-    * Returns information about a specific static IP.
+    * Returns information about an Amazon Lightsail static IP.
     */
   def getStaticIp(params: GetStaticIpRequest): Request[GetStaticIpResult, AWSError] = js.native
   def getStaticIp(
@@ -1656,12 +1782,12 @@ trait Lightsail extends Service {
   ): Request[IsVpcPeeredResult, AWSError] = js.native
   
   /**
-    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. The OpenInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. The OpenInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def openInstancePublicPorts(): Request[OpenInstancePublicPortsResult, AWSError] = js.native
   def openInstancePublicPorts(callback: js.Function2[/* err */ AWSError, /* data */ OpenInstancePublicPortsResult, Unit]): Request[OpenInstancePublicPortsResult, AWSError] = js.native
   /**
-    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. The OpenInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. The OpenInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def openInstancePublicPorts(params: OpenInstancePublicPortsRequest): Request[OpenInstancePublicPortsResult, AWSError] = js.native
   def openInstancePublicPorts(
@@ -1670,12 +1796,12 @@ trait Lightsail extends Service {
   ): Request[OpenInstancePublicPortsResult, AWSError] = js.native
   
   /**
-    * Tries to peer the Lightsail VPC with the user's default VPC.
+    * Peers the Lightsail VPC with the user's default VPC.
     */
   def peerVpc(): Request[PeerVpcResult, AWSError] = js.native
   def peerVpc(callback: js.Function2[/* err */ AWSError, /* data */ PeerVpcResult, Unit]): Request[PeerVpcResult, AWSError] = js.native
   /**
-    * Tries to peer the Lightsail VPC with the user's default VPC.
+    * Peers the Lightsail VPC with the user's default VPC.
     */
   def peerVpc(params: PeerVpcRequest): Request[PeerVpcResult, AWSError] = js.native
   def peerVpc(params: PeerVpcRequest, callback: js.Function2[/* err */ AWSError, /* data */ PeerVpcResult, Unit]): Request[PeerVpcResult, AWSError] = js.native
@@ -1695,12 +1821,12 @@ trait Lightsail extends Service {
   ): Request[PutAlarmResult, AWSError] = js.native
   
   /**
-    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. This action also closes all currently open ports that are not included in the request. Include all of the ports and the protocols you want to open in your PutInstancePublicPortsrequest. Or use the OpenInstancePublicPorts action to open ports without closing currently open ports. The PutInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. This action also closes all currently open ports that are not included in the request. Include all of the ports and the protocols you want to open in your PutInstancePublicPortsrequest. Or use the OpenInstancePublicPorts action to open ports without closing currently open ports. The PutInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def putInstancePublicPorts(): Request[PutInstancePublicPortsResult, AWSError] = js.native
   def putInstancePublicPorts(callback: js.Function2[/* err */ AWSError, /* data */ PutInstancePublicPortsResult, Unit]): Request[PutInstancePublicPortsResult, AWSError] = js.native
   /**
-    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. This action also closes all currently open ports that are not included in the request. Include all of the ports and the protocols you want to open in your PutInstancePublicPortsrequest. Or use the OpenInstancePublicPorts action to open ports without closing currently open ports. The PutInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+    * Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol. This action also closes all currently open ports that are not included in the request. Include all of the ports and the protocols you want to open in your PutInstancePublicPortsrequest. Or use the OpenInstancePublicPorts action to open ports without closing currently open ports. The PutInstancePublicPorts action supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def putInstancePublicPorts(params: PutInstancePublicPortsRequest): Request[PutInstancePublicPortsResult, AWSError] = js.native
   def putInstancePublicPorts(
@@ -1709,12 +1835,12 @@ trait Lightsail extends Service {
   ): Request[PutInstancePublicPortsResult, AWSError] = js.native
   
   /**
-    * Restarts a specific instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Restarts a specific instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def rebootInstance(): Request[RebootInstanceResult, AWSError] = js.native
   def rebootInstance(callback: js.Function2[/* err */ AWSError, /* data */ RebootInstanceResult, Unit]): Request[RebootInstanceResult, AWSError] = js.native
   /**
-    * Restarts a specific instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Restarts a specific instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def rebootInstance(params: RebootInstanceRequest): Request[RebootInstanceResult, AWSError] = js.native
   def rebootInstance(
@@ -1723,12 +1849,12 @@ trait Lightsail extends Service {
   ): Request[RebootInstanceResult, AWSError] = js.native
   
   /**
-    * Restarts a specific database in Amazon Lightsail. The reboot relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Restarts a specific database in Amazon Lightsail. The reboot relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def rebootRelationalDatabase(): Request[RebootRelationalDatabaseResult, AWSError] = js.native
   def rebootRelationalDatabase(callback: js.Function2[/* err */ AWSError, /* data */ RebootRelationalDatabaseResult, Unit]): Request[RebootRelationalDatabaseResult, AWSError] = js.native
   /**
-    * Restarts a specific database in Amazon Lightsail. The reboot relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Restarts a specific database in Amazon Lightsail. The reboot relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def rebootRelationalDatabase(params: RebootRelationalDatabaseRequest): Request[RebootRelationalDatabaseResult, AWSError] = js.native
   def rebootRelationalDatabase(
@@ -1737,12 +1863,12 @@ trait Lightsail extends Service {
   ): Request[RebootRelationalDatabaseResult, AWSError] = js.native
   
   /**
-    * Registers a container image to your Amazon Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Lightsail Dev Guide. 
+    * Registers a container image to your Amazon Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Amazon Lightsail Developer Guide. 
     */
   def registerContainerImage(): Request[RegisterContainerImageResult, AWSError] = js.native
   def registerContainerImage(callback: js.Function2[/* err */ AWSError, /* data */ RegisterContainerImageResult, Unit]): Request[RegisterContainerImageResult, AWSError] = js.native
   /**
-    * Registers a container image to your Amazon Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Lightsail Dev Guide. 
+    * Registers a container image to your Amazon Lightsail container service.  This action is not required if you install and use the Lightsail Control (lightsailctl) plugin to push container images to your Lightsail container service. For more information, see Pushing and managing container images on your Amazon Lightsail container services in the Amazon Lightsail Developer Guide. 
     */
   def registerContainerImage(params: RegisterContainerImageRequest): Request[RegisterContainerImageResult, AWSError] = js.native
   def registerContainerImage(
@@ -1779,12 +1905,12 @@ trait Lightsail extends Service {
   ): Request[ResetDistributionCacheResult, AWSError] = js.native
   
   /**
-    * Sends a verification request to an email contact method to ensure it's owned by the requester. SMS contact methods don't need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
+    * Sends a verification request to an email contact method to ensure it's owned by the requester. SMS contact methods don't need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each Amazon Web Services Region. However, SMS text messaging is not supported in some Amazon Web Services Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
     */
   def sendContactMethodVerification(): Request[SendContactMethodVerificationResult, AWSError] = js.native
   def sendContactMethodVerification(callback: js.Function2[/* err */ AWSError, /* data */ SendContactMethodVerificationResult, Unit]): Request[SendContactMethodVerificationResult, AWSError] = js.native
   /**
-    * Sends a verification request to an email contact method to ensure it's owned by the requester. SMS contact methods don't need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
+    * Sends a verification request to an email contact method to ensure it's owned by the requester. SMS contact methods don't need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each Amazon Web Services Region. However, SMS text messaging is not supported in some Amazon Web Services Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
     */
   def sendContactMethodVerification(params: SendContactMethodVerificationRequest): Request[SendContactMethodVerificationResult, AWSError] = js.native
   def sendContactMethodVerification(
@@ -1793,12 +1919,40 @@ trait Lightsail extends Service {
   ): Request[SendContactMethodVerificationResult, AWSError] = js.native
   
   /**
-    * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The start instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Sets the IP address type for an Amazon Lightsail resource. Use this action to enable dual-stack for a resource, which enables IPv4 and IPv6 for the specified resource. Alternately, you can use this action to disable dual-stack, and enable IPv4 only.
+    */
+  def setIpAddressType(): Request[SetIpAddressTypeResult, AWSError] = js.native
+  def setIpAddressType(callback: js.Function2[/* err */ AWSError, /* data */ SetIpAddressTypeResult, Unit]): Request[SetIpAddressTypeResult, AWSError] = js.native
+  /**
+    * Sets the IP address type for an Amazon Lightsail resource. Use this action to enable dual-stack for a resource, which enables IPv4 and IPv6 for the specified resource. Alternately, you can use this action to disable dual-stack, and enable IPv4 only.
+    */
+  def setIpAddressType(params: SetIpAddressTypeRequest): Request[SetIpAddressTypeResult, AWSError] = js.native
+  def setIpAddressType(
+    params: SetIpAddressTypeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SetIpAddressTypeResult, Unit]
+  ): Request[SetIpAddressTypeResult, AWSError] = js.native
+  
+  /**
+    * Sets the Amazon Lightsail resources that can access the specified Lightsail bucket. Lightsail buckets currently support setting access for Lightsail instances in the same Amazon Web Services Region.
+    */
+  def setResourceAccessForBucket(): Request[SetResourceAccessForBucketResult, AWSError] = js.native
+  def setResourceAccessForBucket(callback: js.Function2[/* err */ AWSError, /* data */ SetResourceAccessForBucketResult, Unit]): Request[SetResourceAccessForBucketResult, AWSError] = js.native
+  /**
+    * Sets the Amazon Lightsail resources that can access the specified Lightsail bucket. Lightsail buckets currently support setting access for Lightsail instances in the same Amazon Web Services Region.
+    */
+  def setResourceAccessForBucket(params: SetResourceAccessForBucketRequest): Request[SetResourceAccessForBucketResult, AWSError] = js.native
+  def setResourceAccessForBucket(
+    params: SetResourceAccessForBucketRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SetResourceAccessForBucketResult, Unit]
+  ): Request[SetResourceAccessForBucketResult, AWSError] = js.native
+  
+  /**
+    * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Amazon Lightsail Developer Guide.  The start instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def startInstance(): Request[StartInstanceResult, AWSError] = js.native
   def startInstance(callback: js.Function2[/* err */ AWSError, /* data */ StartInstanceResult, Unit]): Request[StartInstanceResult, AWSError] = js.native
   /**
-    * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The start instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Amazon Lightsail Developer Guide.  The start instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def startInstance(params: StartInstanceRequest): Request[StartInstanceResult, AWSError] = js.native
   def startInstance(
@@ -1807,12 +1961,12 @@ trait Lightsail extends Service {
   ): Request[StartInstanceResult, AWSError] = js.native
   
   /**
-    * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation. The start relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation. The start relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def startRelationalDatabase(): Request[StartRelationalDatabaseResult, AWSError] = js.native
   def startRelationalDatabase(callback: js.Function2[/* err */ AWSError, /* data */ StartRelationalDatabaseResult, Unit]): Request[StartRelationalDatabaseResult, AWSError] = js.native
   /**
-    * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation. The start relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation. The start relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def startRelationalDatabase(params: StartRelationalDatabaseRequest): Request[StartRelationalDatabaseResult, AWSError] = js.native
   def startRelationalDatabase(
@@ -1821,12 +1975,12 @@ trait Lightsail extends Service {
   ): Request[StartRelationalDatabaseResult, AWSError] = js.native
   
   /**
-    * Stops a specific Amazon Lightsail instance that is currently running.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Stops a specific Amazon Lightsail instance that is currently running.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Amazon Lightsail Developer Guide.  The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def stopInstance(): Request[StopInstanceResult, AWSError] = js.native
   def stopInstance(callback: js.Function2[/* err */ AWSError, /* data */ StopInstanceResult, Unit]): Request[StopInstanceResult, AWSError] = js.native
   /**
-    * Stops a specific Amazon Lightsail instance that is currently running.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Lightsail Dev Guide.
+    * Stops a specific Amazon Lightsail instance that is currently running.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Amazon Lightsail Developer Guide.  The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def stopInstance(params: StopInstanceRequest): Request[StopInstanceResult, AWSError] = js.native
   def stopInstance(
@@ -1835,12 +1989,12 @@ trait Lightsail extends Service {
   ): Request[StopInstanceResult, AWSError] = js.native
   
   /**
-    * Stops a specific database that is currently running in Amazon Lightsail. The stop relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Stops a specific database that is currently running in Amazon Lightsail. The stop relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def stopRelationalDatabase(): Request[StopRelationalDatabaseResult, AWSError] = js.native
   def stopRelationalDatabase(callback: js.Function2[/* err */ AWSError, /* data */ StopRelationalDatabaseResult, Unit]): Request[StopRelationalDatabaseResult, AWSError] = js.native
   /**
-    * Stops a specific database that is currently running in Amazon Lightsail. The stop relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Stops a specific database that is currently running in Amazon Lightsail. The stop relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def stopRelationalDatabase(params: StopRelationalDatabaseRequest): Request[StopRelationalDatabaseResult, AWSError] = js.native
   def stopRelationalDatabase(
@@ -1849,12 +2003,12 @@ trait Lightsail extends Service {
   ): Request[StopRelationalDatabaseResult, AWSError] = js.native
   
   /**
-    * Adds one or more tags to the specified Amazon Lightsail resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see the Lightsail Dev Guide. The tag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Lightsail Dev Guide.
+    * Adds one or more tags to the specified Amazon Lightsail resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see the Amazon Lightsail Developer Guide. The tag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def tagResource(): Request[TagResourceResult, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResult, Unit]): Request[TagResourceResult, AWSError] = js.native
   /**
-    * Adds one or more tags to the specified Amazon Lightsail resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see the Lightsail Dev Guide. The tag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Lightsail Dev Guide.
+    * Adds one or more tags to the specified Amazon Lightsail resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see the Amazon Lightsail Developer Guide. The tag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResult, AWSError] = js.native
   def tagResource(
@@ -1877,12 +2031,12 @@ trait Lightsail extends Service {
   ): Request[TestAlarmResult, AWSError] = js.native
   
   /**
-    * Attempts to unpeer the Lightsail VPC from the user's default VPC.
+    * Unpeers the Lightsail VPC from the user's default VPC.
     */
   def unpeerVpc(): Request[UnpeerVpcResult, AWSError] = js.native
   def unpeerVpc(callback: js.Function2[/* err */ AWSError, /* data */ UnpeerVpcResult, Unit]): Request[UnpeerVpcResult, AWSError] = js.native
   /**
-    * Attempts to unpeer the Lightsail VPC from the user's default VPC.
+    * Unpeers the Lightsail VPC from the user's default VPC.
     */
   def unpeerVpc(params: UnpeerVpcRequest): Request[UnpeerVpcResult, AWSError] = js.native
   def unpeerVpc(
@@ -1891,18 +2045,46 @@ trait Lightsail extends Service {
   ): Request[UnpeerVpcResult, AWSError] = js.native
   
   /**
-    * Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def untagResource(): Request[UntagResourceResult, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]): Request[UntagResourceResult, AWSError] = js.native
   /**
-    * Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Lightsail Dev Guide.
+    * Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resource name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResult, AWSError] = js.native
   def untagResource(
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]
   ): Request[UntagResourceResult, AWSError] = js.native
+  
+  /**
+    * Updates an existing Amazon Lightsail bucket. Use this action to update the configuration of an existing bucket, such as versioning, public accessibility, and the Amazon Web Services accounts that can access the bucket.
+    */
+  def updateBucket(): Request[UpdateBucketResult, AWSError] = js.native
+  def updateBucket(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBucketResult, Unit]): Request[UpdateBucketResult, AWSError] = js.native
+  /**
+    * Updates an existing Amazon Lightsail bucket. Use this action to update the configuration of an existing bucket, such as versioning, public accessibility, and the Amazon Web Services accounts that can access the bucket.
+    */
+  def updateBucket(params: UpdateBucketRequest): Request[UpdateBucketResult, AWSError] = js.native
+  def updateBucket(
+    params: UpdateBucketRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBucketResult, Unit]
+  ): Request[UpdateBucketResult, AWSError] = js.native
+  
+  /**
+    * Updates the bundle, or storage plan, of an existing Amazon Lightsail bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. You can update a bucket's bundle only one time within a monthly AWS billing cycle. To determine if you can update a bucket's bundle, use the GetBuckets action. The ableToUpdateBundle parameter in the response will indicate whether you can currently update a bucket's bundle. Update a bucket's bundle if it's consistently going over its storage space or data transfer quota, or if a bucket's usage is consistently in the lower range of its storage space or data transfer quota. Due to the unpredictable usage fluctuations that a bucket might experience, we strongly recommend that you update a bucket's bundle only as a long-term strategy, instead of as a short-term, monthly cost-cutting measure. Choose a bucket bundle that will provide the bucket with ample storage space and data transfer for a long time to come.
+    */
+  def updateBucketBundle(): Request[UpdateBucketBundleResult, AWSError] = js.native
+  def updateBucketBundle(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBucketBundleResult, Unit]): Request[UpdateBucketBundleResult, AWSError] = js.native
+  /**
+    * Updates the bundle, or storage plan, of an existing Amazon Lightsail bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. You can update a bucket's bundle only one time within a monthly AWS billing cycle. To determine if you can update a bucket's bundle, use the GetBuckets action. The ableToUpdateBundle parameter in the response will indicate whether you can currently update a bucket's bundle. Update a bucket's bundle if it's consistently going over its storage space or data transfer quota, or if a bucket's usage is consistently in the lower range of its storage space or data transfer quota. Due to the unpredictable usage fluctuations that a bucket might experience, we strongly recommend that you update a bucket's bundle only as a long-term strategy, instead of as a short-term, monthly cost-cutting measure. Choose a bucket bundle that will provide the bucket with ample storage space and data transfer for a long time to come.
+    */
+  def updateBucketBundle(params: UpdateBucketBundleRequest): Request[UpdateBucketBundleResult, AWSError] = js.native
+  def updateBucketBundle(
+    params: UpdateBucketBundleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBucketBundleResult, Unit]
+  ): Request[UpdateBucketBundleResult, AWSError] = js.native
   
   /**
     * Updates the configuration of your Amazon Lightsail container service, such as its power, scale, and public domain names.
@@ -1919,12 +2101,12 @@ trait Lightsail extends Service {
   ): Request[UpdateContainerServiceResult, AWSError] = js.native
   
   /**
-    * Updates an existing Amazon Lightsail content delivery network (CDN) distribution. Use this action to update the configuration of your existing distribution
+    * Updates an existing Amazon Lightsail content delivery network (CDN) distribution. Use this action to update the configuration of your existing distribution.
     */
   def updateDistribution(): Request[UpdateDistributionResult, AWSError] = js.native
   def updateDistribution(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionResult, Unit]): Request[UpdateDistributionResult, AWSError] = js.native
   /**
-    * Updates an existing Amazon Lightsail content delivery network (CDN) distribution. Use this action to update the configuration of your existing distribution
+    * Updates an existing Amazon Lightsail content delivery network (CDN) distribution. Use this action to update the configuration of your existing distribution.
     */
   def updateDistribution(params: UpdateDistributionRequest): Request[UpdateDistributionResult, AWSError] = js.native
   def updateDistribution(
@@ -1933,12 +2115,12 @@ trait Lightsail extends Service {
   ): Request[UpdateDistributionResult, AWSError] = js.native
   
   /**
-    * Updates the bundle of your Amazon Lightsail content delivery network (CDN) distribution. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution. Update your distribution's bundle if your distribution is going over its monthly network transfer quota and is incurring an overage fee. You can update your distribution's bundle only one time within your monthly AWS billing cycle. To determine if you can update your distribution's bundle, use the GetDistributions action. The ableToUpdateBundle parameter in the result will indicate whether you can currently update your distribution's bundle.
+    * Updates the bundle of your Amazon Lightsail content delivery network (CDN) distribution. A distribution bundle specifies the monthly network transfer quota and monthly cost of your distribution. Update your distribution's bundle if your distribution is going over its monthly network transfer quota and is incurring an overage fee. You can update your distribution's bundle only one time within your monthly AWS billing cycle. To determine if you can update your distribution's bundle, use the GetDistributions action. The ableToUpdateBundle parameter in the result will indicate whether you can currently update your distribution's bundle.
     */
   def updateDistributionBundle(): Request[UpdateDistributionBundleResult, AWSError] = js.native
   def updateDistributionBundle(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionBundleResult, Unit]): Request[UpdateDistributionBundleResult, AWSError] = js.native
   /**
-    * Updates the bundle of your Amazon Lightsail content delivery network (CDN) distribution. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution. Update your distribution's bundle if your distribution is going over its monthly network transfer quota and is incurring an overage fee. You can update your distribution's bundle only one time within your monthly AWS billing cycle. To determine if you can update your distribution's bundle, use the GetDistributions action. The ableToUpdateBundle parameter in the result will indicate whether you can currently update your distribution's bundle.
+    * Updates the bundle of your Amazon Lightsail content delivery network (CDN) distribution. A distribution bundle specifies the monthly network transfer quota and monthly cost of your distribution. Update your distribution's bundle if your distribution is going over its monthly network transfer quota and is incurring an overage fee. You can update your distribution's bundle only one time within your monthly AWS billing cycle. To determine if you can update your distribution's bundle, use the GetDistributions action. The ableToUpdateBundle parameter in the result will indicate whether you can currently update your distribution's bundle.
     */
   def updateDistributionBundle(params: UpdateDistributionBundleRequest): Request[UpdateDistributionBundleResult, AWSError] = js.native
   def updateDistributionBundle(
@@ -1947,12 +2129,12 @@ trait Lightsail extends Service {
   ): Request[UpdateDistributionBundleResult, AWSError] = js.native
   
   /**
-    * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def updateDomainEntry(): Request[UpdateDomainEntryResult, AWSError] = js.native
   def updateDomainEntry(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainEntryResult, Unit]): Request[UpdateDomainEntryResult, AWSError] = js.native
   /**
-    * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
+    * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def updateDomainEntry(params: UpdateDomainEntryRequest): Request[UpdateDomainEntryResult, AWSError] = js.native
   def updateDomainEntry(
@@ -1961,12 +2143,12 @@ trait Lightsail extends Service {
   ): Request[UpdateDomainEntryResult, AWSError] = js.native
   
   /**
-    * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def updateLoadBalancerAttribute(): Request[UpdateLoadBalancerAttributeResult, AWSError] = js.native
   def updateLoadBalancerAttribute(callback: js.Function2[/* err */ AWSError, /* data */ UpdateLoadBalancerAttributeResult, Unit]): Request[UpdateLoadBalancerAttributeResult, AWSError] = js.native
   /**
-    * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Lightsail Dev Guide.
+    * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def updateLoadBalancerAttribute(params: UpdateLoadBalancerAttributeRequest): Request[UpdateLoadBalancerAttributeResult, AWSError] = js.native
   def updateLoadBalancerAttribute(
@@ -1975,12 +2157,12 @@ trait Lightsail extends Service {
   ): Request[UpdateLoadBalancerAttributeResult, AWSError] = js.native
   
   /**
-    * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window. The update relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window. The update relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def updateRelationalDatabase(): Request[UpdateRelationalDatabaseResult, AWSError] = js.native
   def updateRelationalDatabase(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRelationalDatabaseResult, Unit]): Request[UpdateRelationalDatabaseResult, AWSError] = js.native
   /**
-    * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window. The update relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window. The update relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def updateRelationalDatabase(params: UpdateRelationalDatabaseRequest): Request[UpdateRelationalDatabaseResult, AWSError] = js.native
   def updateRelationalDatabase(
@@ -1989,14 +2171,14 @@ trait Lightsail extends Service {
   ): Request[UpdateRelationalDatabaseResult, AWSError] = js.native
   
   /**
-    * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which parameter updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which parameter updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def updateRelationalDatabaseParameters(): Request[UpdateRelationalDatabaseParametersResult, AWSError] = js.native
   def updateRelationalDatabaseParameters(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRelationalDatabaseParametersResult, Unit]
   ): Request[UpdateRelationalDatabaseParametersResult, AWSError] = js.native
   /**
-    * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which parameter updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which parameter updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Amazon Lightsail Developer Guide.
     */
   def updateRelationalDatabaseParameters(params: UpdateRelationalDatabaseParametersRequest): Request[UpdateRelationalDatabaseParametersResult, AWSError] = js.native
   def updateRelationalDatabaseParameters(

@@ -12,14 +12,14 @@ trait IPropertyValidationRule[T] extends StObject {
   
   def ValidateAsync(context: IValidationContext[T]): Promise[js.Array[IValidationFailure]]
   
-  var Validators: StringDictionary[js.Any]
+  var Validators: StringDictionary[Any]
 }
 object IPropertyValidationRule {
   
   inline def apply[T](
     Validate: IValidationContext[T] => js.Array[IValidationFailure],
     ValidateAsync: IValidationContext[T] => Promise[js.Array[IValidationFailure]],
-    Validators: StringDictionary[js.Any]
+    Validators: StringDictionary[Any]
   ): IPropertyValidationRule[T] = {
     val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate), ValidateAsync = js.Any.fromFunction1(ValidateAsync), Validators = Validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPropertyValidationRule[T]]
@@ -31,6 +31,6 @@ object IPropertyValidationRule {
     
     inline def setValidateAsync(value: IValidationContext[T] => Promise[js.Array[IValidationFailure]]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
     
-    inline def setValidators(value: StringDictionary[js.Any]): Self = StObject.set(x, "Validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: StringDictionary[Any]): Self = StObject.set(x, "Validators", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mdast-util-to-hast" : "9.1.0"
+      "mdast-util-to-hast" : "12.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "mdast-util-to-hast" : "9.1.0"
+      "mdast-util-to-hast" : "12.2.2"
     }
   ],
   "compile-devDependencies" : [

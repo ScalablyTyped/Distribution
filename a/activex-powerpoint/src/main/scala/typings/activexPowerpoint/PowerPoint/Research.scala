@@ -11,7 +11,7 @@ trait Research extends StObject {
   
   def IsResearchService(ServiceID: String): Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.Research_typekey")
   var PowerPointDotResearch_typekey: Research = js.native
@@ -20,22 +20,16 @@ trait Research extends StObject {
     * @param boolean [UseSelection=false]
     * @param boolean [LaunchQuery=true]
     */
-  def Query(ServiceID: String, QueryString: js.Any, QueryLanguage: js.Any): Unit = js.native
-  def Query(ServiceID: String, QueryString: js.Any, QueryLanguage: js.Any, UseSelection: Boolean): Unit = js.native
+  def Query(ServiceID: String, QueryString: Any, QueryLanguage: Any): Unit = js.native
+  def Query(ServiceID: String, QueryString: Any, QueryLanguage: Any, UseSelection: Boolean): Unit = js.native
   def Query(
     ServiceID: String,
-    QueryString: js.Any,
-    QueryLanguage: js.Any,
+    QueryString: Any,
+    QueryLanguage: Any,
     UseSelection: Boolean,
     LaunchQuery: Boolean
   ): Unit = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: js.Any,
-    QueryLanguage: js.Any,
-    UseSelection: Unit,
-    LaunchQuery: Boolean
-  ): Unit = js.native
+  def Query(ServiceID: String, QueryString: Any, QueryLanguage: Any, UseSelection: Unit, LaunchQuery: Boolean): Unit = js.native
   
-  def SetLanguagePair(Language1: js.Any, Language2: js.Any): Unit = js.native
+  def SetLanguagePair(Language1: Any, Language2: Any): Unit = js.native
 }

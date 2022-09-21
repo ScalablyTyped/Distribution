@@ -1,46 +1,50 @@
 package typings.playcanvas.global.pc
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Creates a new vertex buffer object.
-  * @param graphicsDevice - The graphics device used to manage this vertex buffer.
-  * @param format - The vertex format of this vertex buffer.
-  * @param numVertices - The number of vertices that this vertex buffer will hold.
-  * @param [usage] - The usage type of the vertex buffer (see pc.BUFFER_*).
-  * @param [initialData] - Initial data.
+  * A vertex buffer is the mechanism via which the application specifies vertex data to the graphics
+  * hardware.
   */
 @JSGlobal("pc.VertexBuffer")
 @js.native
-class VertexBuffer protected ()
-  extends StObject
-     with typings.playcanvas.pc.VertexBuffer {
+open class VertexBuffer protected ()
+  extends typings.playcanvas.mod.VertexBuffer {
+  /**
+    * Create a new VertexBuffer instance.
+    *
+    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this vertex
+    * buffer.
+    * @param {VertexFormat} format - The vertex format of this vertex buffer.
+    * @param {number} numVertices - The number of vertices that this vertex buffer will hold.
+    * @param {number} [usage] - The usage type of the vertex buffer (see BUFFER_*). Defaults to BUFFER_STATIC.
+    * @param {ArrayBuffer} [initialData] - Initial data.
+    */
   def this(
-    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
-    format: typings.playcanvas.pc.VertexFormat,
+    graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
+    format: typings.playcanvas.mod.VertexFormat,
     numVertices: Double
   ) = this()
   def this(
-    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
-    format: typings.playcanvas.pc.VertexFormat,
+    graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
+    format: typings.playcanvas.mod.VertexFormat,
     numVertices: Double,
     usage: Double
   ) = this()
   def this(
-    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
-    format: typings.playcanvas.pc.VertexFormat,
+    graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
+    format: typings.playcanvas.mod.VertexFormat,
     numVertices: Double,
     usage: Double,
-    initialData: ArrayBuffer
+    initialData: js.typedarray.ArrayBuffer
   ) = this()
   def this(
-    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
-    format: typings.playcanvas.pc.VertexFormat,
+    graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
+    format: typings.playcanvas.mod.VertexFormat,
     numVertices: Double,
     usage: Unit,
-    initialData: ArrayBuffer
+    initialData: js.typedarray.ArrayBuffer
   ) = this()
 }

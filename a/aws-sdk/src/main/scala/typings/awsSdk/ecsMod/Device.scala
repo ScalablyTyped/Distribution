@@ -40,6 +40,6 @@ object Device {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: DeviceCgroupPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: DeviceCgroupPermission*): Self = StObject.set(x, "permissions", js.Array(value*))
   }
 }

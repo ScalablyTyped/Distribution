@@ -31,6 +31,6 @@ object Buffer {
     
     inline def setState(value: js.Array[Double]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setStateVarargs(value: Double*): Self = StObject.set(x, "state", js.Array(value :_*))
+    inline def setStateVarargs(value: Double*): Self = StObject.set(x, "state", js.Array(value*))
   }
 }

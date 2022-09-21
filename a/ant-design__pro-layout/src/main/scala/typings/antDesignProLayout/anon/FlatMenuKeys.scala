@@ -23,7 +23,7 @@ object FlatMenuKeys {
     
     inline def setFlatMenuKeys(value: js.Array[String]): Self = StObject.set(x, "flatMenuKeys", value.asInstanceOf[js.Any])
     
-    inline def setFlatMenuKeysVarargs(value: String*): Self = StObject.set(x, "flatMenuKeys", js.Array(value :_*))
+    inline def setFlatMenuKeysVarargs(value: String*): Self = StObject.set(x, "flatMenuKeys", js.Array(value*))
     
     inline def setSetFlatMenuKeys(value: SetStateAction[js.Array[String]] => Unit): Self = StObject.set(x, "setFlatMenuKeys", js.Any.fromFunction1(value))
   }

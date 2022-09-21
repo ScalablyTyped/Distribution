@@ -25,7 +25,7 @@ object ListDatasetsResponse {
     
     inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     
-    inline def setDatasetsVarargs(value: Dataset*): Self = StObject.set(x, "datasets", js.Array(value :_*))
+    inline def setDatasetsVarargs(value: Dataset*): Self = StObject.set(x, "datasets", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,7 @@
 package typings.reactBreadcrumbsDynamic
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,41 +11,43 @@ object mod {
   
   @JSImport("react-breadcrumbs-dynamic", "Breadcrumbs")
   @js.native
-  class Breadcrumbs protected ()
-    extends Component[BreadcrumbsProps, js.Object, js.Any] {
+  open class Breadcrumbs protected ()
+    extends Component[BreadcrumbsProps, js.Object, Any] {
     def this(props: BreadcrumbsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BreadcrumbsProps, context: js.Any) = this()
+    def this(props: BreadcrumbsProps, context: Any) = this()
   }
   
   @JSImport("react-breadcrumbs-dynamic", "BreadcrumbsItem")
   @js.native
-  class BreadcrumbsItem protected ()
-    extends Component[BreadcrumbsItemProps, js.Object, js.Any] {
+  open class BreadcrumbsItem protected ()
+    extends Component[BreadcrumbsItemProps, js.Object, Any] {
     def this(props: BreadcrumbsItemProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BreadcrumbsItemProps, context: js.Any) = this()
+    def this(props: BreadcrumbsItemProps, context: Any) = this()
   }
   
   @JSImport("react-breadcrumbs-dynamic", "BreadcrumbsProvider")
   @js.native
-  class BreadcrumbsProvider protected ()
-    extends Component[BreadcrumbsProviderProps, js.Object, js.Any] {
+  open class BreadcrumbsProvider protected ()
+    extends Component[BreadcrumbsProviderProps, js.Object, Any] {
     def this(props: BreadcrumbsProviderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BreadcrumbsProviderProps, context: js.Any) = this()
+    def this(props: BreadcrumbsProviderProps, context: Any) = this()
   }
   
   trait BreadcrumbsItemProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var to: String
   }
@@ -56,6 +59,10 @@ object mod {
     }
     
     extension [Self <: BreadcrumbsItemProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
@@ -124,7 +131,9 @@ object mod {
   
   trait BreadcrumbsProviderProps extends StObject {
     
-    var shouldBreadcrumbsUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var shouldBreadcrumbsUpdate: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   }
   object BreadcrumbsProviderProps {
     
@@ -135,7 +144,11 @@ object mod {
     
     extension [Self <: BreadcrumbsProviderProps](x: Self) {
       
-      inline def setShouldBreadcrumbsUpdate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.Any.fromFunction1(value))
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setShouldBreadcrumbsUpdate(value: /* repeated */ Any => Any): Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.Any.fromFunction1(value))
       
       inline def setShouldBreadcrumbsUpdateUndefined: Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.undefined)
     }

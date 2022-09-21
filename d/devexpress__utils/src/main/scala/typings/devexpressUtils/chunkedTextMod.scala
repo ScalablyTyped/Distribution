@@ -8,7 +8,7 @@ object chunkedTextMod {
   
   @JSImport("@devexpress/utils/lib/class/chunked-text", "ChunkedText")
   @js.native
-  class ChunkedText protected () extends StObject {
+  open class ChunkedText protected () extends StObject {
     def this(text: String) = this()
     def this(text: String, maxChunkSize: Double) = this()
     
@@ -26,9 +26,9 @@ object chunkedTextMod {
     
     /* protected */ var chunks: js.Array[String] = js.native
     
-    val currChar: String = js.native
+    def currChar: String = js.native
     
-    val currPos: Double = js.native
+    def currPos: Double = js.native
     
     def getText(): String = js.native
     
@@ -40,16 +40,16 @@ object chunkedTextMod {
     
     /* protected */ var posInChunk: Double = js.native
     
-    /* private */ var pushText: js.Any = js.native
+    /* private */ var pushText: Any = js.native
     
     def resetToEnd(): Unit = js.native
     
     def resetToStart(): Unit = js.native
     
-    /* private */ var setChunk: js.Any = js.native
+    /* private */ var setChunk: Any = js.native
     
     def setPositionTo(position: Double): Unit = js.native
     
-    val textLength: Double = js.native
+    def textLength: Double = js.native
   }
 }

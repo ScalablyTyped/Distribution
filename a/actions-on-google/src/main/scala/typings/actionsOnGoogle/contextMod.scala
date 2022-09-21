@@ -13,7 +13,7 @@ object contextMod {
   @JSImport("actions-on-google/dist/service/dialogflow/context", "ContextValues")
   @js.native
   /** @hidden */
-  class ContextValues[TContexts /* <: Contexts */] () extends StObject {
+  open class ContextValues[TContexts /* <: Contexts */] () extends StObject {
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context]) = this()
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context], _session: String) = this()
     def this(outputContexts: Unit, _session: String) = this()
@@ -24,7 +24,7 @@ object contextMod {
     /** @hidden */
     def _serializeV1(): js.Array[DialogflowV1Context] = js.native
     
-    /* private */ var _session: js.Any = js.native
+    /* private */ var _session: Any = js.native
     
     /** @public */
     def delete(name: String): Unit = js.native

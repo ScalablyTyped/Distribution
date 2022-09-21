@@ -1,15 +1,38 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.DETECTORPL
+import typings.awsSdk.awsSdkStrings.SAGEMAKER
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BatchCreateVariableErrorList = js.Array[typings.awsSdk.frauddetectorMod.BatchCreateVariableError]
+type ATIMetricDataPointsList = js.Array[ATIMetricDataPoint]
 
-type BatchGetVariableErrorList = js.Array[typings.awsSdk.frauddetectorMod.BatchGetVariableError]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS_INITIALIZING
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.CANCEL_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.CANCELED
+  - typings.awsSdk.awsSdkStrings.COMPLETE
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type AsyncJobStatus = _AsyncJobStatus | String
 
-type CsvIndexToVariableMap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type BatchCreateVariableErrorList = js.Array[BatchCreateVariableError]
+
+type BatchGetVariableErrorList = js.Array[BatchGetVariableError]
+
+type BatchImportList = js.Array[BatchImport]
+
+type BatchPredictionList = js.Array[BatchPrediction]
+
+type Boolean = scala.Boolean
+
+type CsvIndexToVariableMap = StringDictionary[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EVENT
@@ -17,7 +40,7 @@ type CsvIndexToVariableMap = org.scalablytyped.runtime.StringDictionary[java.lan
   - typings.awsSdk.awsSdkStrings.EXTERNAL_MODEL_SCORE
   - java.lang.String
 */
-type DataSource = typings.awsSdk.frauddetectorMod._DataSource | java.lang.String
+type DataSource = _DataSource | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STRING
@@ -26,11 +49,13 @@ type DataSource = typings.awsSdk.frauddetectorMod._DataSource | java.lang.String
   - typings.awsSdk.awsSdkStrings.BOOLEAN
   - java.lang.String
 */
-type DataType = typings.awsSdk.frauddetectorMod._DataType | java.lang.String
+type DataType = _DataType | String
 
-type DetectorList = js.Array[typings.awsSdk.frauddetectorMod.Detector]
+type DeleteAuditHistory = scala.Boolean
 
-type DetectorVersionMaxResults = scala.Double
+type DetectorList = js.Array[Detector]
+
+type DetectorVersionMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DRAFT
@@ -38,176 +63,257 @@ type DetectorVersionMaxResults = scala.Double
   - typings.awsSdk.awsSdkStrings.INACTIVE
   - java.lang.String
 */
-type DetectorVersionStatus = typings.awsSdk.frauddetectorMod._DetectorVersionStatus | java.lang.String
+type DetectorVersionStatus = _DetectorVersionStatus | String
 
-type DetectorVersionSummaryList = js.Array[typings.awsSdk.frauddetectorMod.DetectorVersionSummary]
+type DetectorVersionSummaryList = js.Array[DetectorVersionSummary]
 
-type DetectorsMaxResults = scala.Double
+type DetectorsMaxResults = Double
 
-type EventVariableMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.variableValue]
+type EvaluatedRuleList = js.Array[EvaluatedRule]
 
-type ExternalModelEndpointDataBlobMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.ModelEndpointDataBlob]
+type EventAttributeMap = StringDictionary[attributeValue]
 
-type ExternalModelList = js.Array[typings.awsSdk.frauddetectorMod.ExternalModel]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type EventIngestion = _EventIngestion | String
 
-type ExternalModelsMaxResults = scala.Double
+type EventPredictionsMaxResults = Double
 
-type JsonKeyToVariableMap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type EventVariableMap = StringDictionary[variableValue]
 
-type KmsEncryptionKeyArn = java.lang.String
+type ExternalModelEndpointDataBlobMap = StringDictionary[ModelEndpointDataBlob]
 
-type Language = typings.awsSdk.awsSdkStrings.DETECTORPL | java.lang.String
+type ExternalModelList = js.Array[ExternalModel]
 
-type ListOfModelScores = js.Array[typings.awsSdk.frauddetectorMod.ModelScores]
+type ExternalModelPredictionMap = StringDictionary[String]
 
-type ListOfModelVersions = js.Array[typings.awsSdk.frauddetectorMod.ModelVersion]
+type ExternalModelsMaxResults = Double
 
-type ListOfRuleResults = js.Array[typings.awsSdk.frauddetectorMod.RuleResult]
+type Integer_ = Double
 
-type ListOfStrings = js.Array[java.lang.String]
+type JsonKeyToVariableMap = StringDictionary[String]
+
+type KmsEncryptionKeyArn = String
+
+type Language = DETECTORPL | String
+
+type ListOfAggregatedLogOddsMetrics = js.Array[AggregatedLogOddsMetric]
+
+type ListOfAggregatedVariablesImpactExplanations = js.Array[AggregatedVariablesImpactExplanation]
+
+type ListOfEvaluatedExternalModels = js.Array[EvaluatedExternalModel]
+
+type ListOfEvaluatedModelVersions = js.Array[EvaluatedModelVersion]
+
+type ListOfEventPredictionSummaries = js.Array[EventPredictionSummary]
+
+type ListOfEventVariableSummaries = js.Array[EventVariableSummary]
+
+type ListOfExternalModelOutputs = js.Array[ExternalModelOutputs]
+
+type ListOfLogOddsMetrics = js.Array[LogOddsMetric]
+
+type ListOfModelScores = js.Array[ModelScores]
+
+type ListOfModelVersionEvaluations = js.Array[ModelVersionEvaluation]
+
+type ListOfModelVersions = js.Array[ModelVersion]
+
+type ListOfRuleResults = js.Array[RuleResult]
+
+type ListOfStrings = js.Array[String]
+
+type Long = Double
+
+type MapOfStrings = StringDictionary[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASSOCIATED
   - typings.awsSdk.awsSdkStrings.DISSOCIATED
   - java.lang.String
 */
-type ModelEndpointStatus = typings.awsSdk.frauddetectorMod._ModelEndpointStatus | java.lang.String
+type ModelEndpointStatus = _ModelEndpointStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TEXT_CSV
   - typings.awsSdk.awsSdkStrings.APPLICATION_JSON
   - java.lang.String
 */
-type ModelInputDataFormat = typings.awsSdk.frauddetectorMod._ModelInputDataFormat | java.lang.String
+type ModelInputDataFormat = _ModelInputDataFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TEXT_CSV
   - typings.awsSdk.awsSdkStrings.APPLICATION_JSONLINES
   - java.lang.String
 */
-type ModelOutputDataFormat = typings.awsSdk.frauddetectorMod._ModelOutputDataFormat | java.lang.String
+type ModelOutputDataFormat = _ModelOutputDataFormat | String
 
-type ModelPredictionMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.float]
+type ModelPredictionMap = StringDictionary[float]
 
-type ModelSource = typings.awsSdk.awsSdkStrings.SAGEMAKER | java.lang.String
+type ModelSource = SAGEMAKER | String
 
-type ModelTypeEnum = typings.awsSdk.awsSdkStrings.ONLINE_FRAUD_INSIGHTS | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ONLINE_FRAUD_INSIGHTS
+  - typings.awsSdk.awsSdkStrings.TRANSACTION_FRAUD_INSIGHTS
+  - typings.awsSdk.awsSdkStrings.ACCOUNT_TAKEOVER_INSIGHTS
+  - java.lang.String
+*/
+type ModelTypeEnum = _ModelTypeEnum | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.INACTIVE
+  - typings.awsSdk.awsSdkStrings.TRAINING_CANCELLED
   - java.lang.String
 */
-type ModelVersionStatus = typings.awsSdk.frauddetectorMod._ModelVersionStatus | java.lang.String
+type ModelVersionStatus = _ModelVersionStatus | String
 
-type NameList = js.Array[java.lang.String]
+type NameList = js.Array[String]
 
-type NonEmptyListOfStrings = js.Array[java.lang.String]
+type NonEmptyListOfStrings = js.Array[String]
 
-type OutcomeList = js.Array[typings.awsSdk.frauddetectorMod.Outcome]
+type OFIMetricDataPointsList = js.Array[OFIMetricDataPoint]
 
-type OutcomesMaxResults = scala.Double
+type OutcomeList = js.Array[Outcome]
 
-type RuleDetailList = js.Array[typings.awsSdk.frauddetectorMod.RuleDetail]
+type OutcomesMaxResults = Double
+
+type RuleDetailList = js.Array[RuleDetail]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL_MATCHED
   - typings.awsSdk.awsSdkStrings.FIRST_MATCHED
   - java.lang.String
 */
-type RuleExecutionMode = typings.awsSdk.frauddetectorMod._RuleExecutionMode | java.lang.String
+type RuleExecutionMode = _RuleExecutionMode | String
 
-type RuleList = js.Array[typings.awsSdk.frauddetectorMod.Rule]
+type RuleList = js.Array[Rule]
 
-type RulesMaxResults = scala.Double
+type RulesMaxResults = Double
 
-type TagsMaxResults = scala.Double
+type TFIMetricDataPointsList = js.Array[TFIMetricDataPoint]
 
-type TrainingDataSourceEnum = typings.awsSdk.awsSdkStrings.EXTERNAL_EVENTS | java.lang.String
+type TagsMaxResults = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EXTERNAL_EVENTS
+  - typings.awsSdk.awsSdkStrings.INGESTED_EVENTS
+  - java.lang.String
+*/
+type TrainingDataSourceEnum = _TrainingDataSourceEnum | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IGNORE
+  - typings.awsSdk.awsSdkStrings.FRAUD
+  - typings.awsSdk.awsSdkStrings.LEGIT
+  - java.lang.String
+*/
+type UnlabeledEventsTreatment = _UnlabeledEventsTreatment | String
 
 type UseEventVariables = scala.Boolean
 
-type VariableEntryList = js.Array[typings.awsSdk.frauddetectorMod.VariableEntry]
+type VariableEntryList = js.Array[VariableEntry]
 
-type VariableList = js.Array[typings.awsSdk.frauddetectorMod.Variable]
+type VariableList = js.Array[Variable]
 
-type VariablesMaxResults = scala.Double
+type VariablesMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-11-15`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.frauddetectorMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.frauddetectorMod.Blob_ | java.lang.String
+type attributeKey = String
 
-type contentType = java.lang.String
+type attributeValue = String
 
-type description = java.lang.String
+type batchImportsMaxPageSize = Double
 
-type entityTypeList = js.Array[typings.awsSdk.frauddetectorMod.EntityType]
+type batchPredictionsMaxPageSize = Double
 
-type entityTypesMaxResults = scala.Double
+type blob = Buffer | js.typedarray.Uint8Array | Blob_ | String
 
-type eventTypeList = js.Array[typings.awsSdk.frauddetectorMod.EventType]
+type contentType = String
 
-type eventTypesMaxResults = scala.Double
+type description = String
 
-type fieldValidationMessageList = js.Array[typings.awsSdk.frauddetectorMod.FieldValidationMessage]
+type entityRestrictedString = String
 
-type fileValidationMessageList = js.Array[typings.awsSdk.frauddetectorMod.FileValidationMessage]
+type entityTypeList = js.Array[EntityType]
 
-type float = scala.Double
+type entityTypesMaxResults = Double
 
-type floatVersionString = java.lang.String
+type eventTypeList = js.Array[EventType]
 
-type fraudDetectorArn = java.lang.String
+type eventTypesMaxResults = Double
 
-type iamRoleArn = java.lang.String
+type fieldValidationMessageList = js.Array[FieldValidationMessage]
 
-type identifier = java.lang.String
+type fileValidationMessageList = js.Array[FileValidationMessage]
 
-type integer = scala.Double
+type filterString = String
 
-type labelList = js.Array[typings.awsSdk.frauddetectorMod.Label]
+type float = Double
 
-type labelMapper = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.ListOfStrings]
+type floatVersionString = String
 
-type labelsMaxResults = scala.Double
+type fraudDetectorArn = String
 
-type listOfEntities = js.Array[typings.awsSdk.frauddetectorMod.Entity]
+type iamRoleArn = String
 
-type metricDataPointsList = js.Array[typings.awsSdk.frauddetectorMod.MetricDataPoint]
+type identifier = String
 
-type modelIdentifier = java.lang.String
+type integer = Double
 
-type modelList = js.Array[typings.awsSdk.frauddetectorMod.Model]
+type labelList = js.Array[Label]
 
-type modelVersionDetailList = js.Array[typings.awsSdk.frauddetectorMod.ModelVersionDetail]
+type labelMapper = StringDictionary[ListOfStrings]
 
-type modelsMaxPageSize = scala.Double
+type labelsMaxResults = Double
 
-type nonEmptyString = java.lang.String
+type listOfEntities = js.Array[Entity]
 
-type ruleExpression = java.lang.String
+type listOfVariableImpactExplanations = js.Array[VariableImpactExplanation]
 
-type s3BucketLocation = java.lang.String
+type metricDataPointsList = js.Array[MetricDataPoint]
 
-type sageMakerEndpointIdentifier = java.lang.String
+type modelIdentifier = String
 
-type tagKey = java.lang.String
+type modelInputTemplate = String
 
-type tagKeyList = js.Array[typings.awsSdk.frauddetectorMod.tagKey]
+type modelList = js.Array[Model]
 
-type tagList = js.Array[typings.awsSdk.frauddetectorMod.Tag]
+type modelVersionDetailList = js.Array[ModelVersionDetail]
 
-type tagValue = java.lang.String
+type modelsMaxPageSize = Double
 
-type time = java.lang.String
+type ruleExpression = String
 
-type variableName = java.lang.String
+type s3BucketLocation = String
 
-type variableValue = java.lang.String
+type sageMakerEndpointIdentifier = String
 
-type wholeNumberVersionString = java.lang.String
+type sensitiveString = String
+
+type tagKey = String
+
+type tagKeyList = js.Array[tagKey]
+
+type tagList = js.Array[Tag]
+
+type tagValue = String
+
+type time = String
+
+type utcTimestampISO8601 = String
+
+type variableName = String
+
+type variableValue = String
+
+type wholeNumberVersionString = String

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cli-highlight" : "2.1.8"
+      "cli-highlight" : "2.1.11"
     }
   ],
   "test-dependencies" : [
     {
-      "cli-highlight" : "2.1.8"
+      "cli-highlight" : "2.1.11"
     }
   ],
   "compile-devDependencies" : [

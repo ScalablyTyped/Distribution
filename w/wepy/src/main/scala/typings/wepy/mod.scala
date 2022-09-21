@@ -24,33 +24,33 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("wepy", "default.app")
     @js.native
-    class app ()
+    open class app ()
       extends typings.wepy.appMod.default
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("wepy", "default.component")
     @js.native
-    class component ()
+    open class component ()
       extends typings.wepy.componentMod.default
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("wepy", "default.event")
     @js.native
-    class event protected ()
+    open class event protected ()
       extends typings.wepy.eventMod.default {
-      def this(name: String, source: js.Any, `type`: js.Any) = this()
+      def this(name: String, source: Any, `type`: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("wepy", "default.mixin")
     @js.native
-    class mixin ()
+    open class mixin ()
       extends typings.wepy.mixinMod.default
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("wepy", "default.page")
     @js.native
-    class page ()
+    open class page ()
       extends typings.wepy.pageMod.default
     
     type _To = DefaultExport
@@ -88,9 +88,9 @@ object mod {
       ] = js.native
     
     @JSName("$extend")
-    def $extend(): js.Any = js.native
+    def $extend(): Any = js.native
     @JSName("$extend")
-    var $extend_Original: js.Function0[js.Any] = js.native
+    var $extend_Original: js.Function0[Any] = js.native
     
     @JSName("$has")
     def $has(obj: js.Object, path: String): Boolean = js.native
@@ -98,19 +98,19 @@ object mod {
     var $has_Original: js.Function2[/* obj */ js.Object, /* path */ String, Boolean] = js.native
     
     @JSName("$isDeepEqual")
-    def $isDeepEqual(a: js.Any, b: js.Any): Boolean = js.native
+    def $isDeepEqual(a: Any, b: Any): Boolean = js.native
     @JSName("$isDeepEqual")
-    def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.Array[js.Any]): Boolean = js.native
+    def $isDeepEqual(a: Any, b: Any, aStack: js.Array[Any]): Boolean = js.native
     @JSName("$isDeepEqual")
-    def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.Array[js.Any], bStack: js.Array[js.Any]): Boolean = js.native
+    def $isDeepEqual(a: Any, b: Any, aStack: js.Array[Any], bStack: js.Array[Any]): Boolean = js.native
     @JSName("$isDeepEqual")
-    def $isDeepEqual(a: js.Any, b: js.Any, aStack: Unit, bStack: js.Array[js.Any]): Boolean = js.native
+    def $isDeepEqual(a: Any, b: Any, aStack: Unit, bStack: js.Array[Any]): Boolean = js.native
     @JSName("$isDeepEqual")
     var $isDeepEqual_Original: js.Function4[
-        /* a */ js.Any, 
-        /* b */ js.Any, 
-        /* aStack */ js.UndefOr[js.Array[js.Any]], 
-        /* bStack */ js.UndefOr[js.Array[js.Any]], 
+        /* a */ Any, 
+        /* b */ Any, 
+        /* aStack */ js.UndefOr[js.Array[Any]], 
+        /* bStack */ js.UndefOr[js.Array[Any]], 
         Boolean
       ] = js.native
     
@@ -120,26 +120,26 @@ object mod {
     var $isEmpty_Original: js.Function1[/* obj */ js.Object, Boolean] = js.native
     
     @JSName("$isEqual")
-    def $isEqual(a: js.Any, b: js.Any): Boolean = js.native
+    def $isEqual(a: Any, b: Any): Boolean = js.native
     @JSName("$isEqual")
-    def $isEqual(a: js.Any, b: js.Any, aStack: js.Array[js.Any]): Boolean = js.native
+    def $isEqual(a: Any, b: Any, aStack: js.Array[Any]): Boolean = js.native
     @JSName("$isEqual")
-    def $isEqual(a: js.Any, b: js.Any, aStack: js.Array[js.Any], bStack: js.Array[js.Any]): Boolean = js.native
+    def $isEqual(a: Any, b: Any, aStack: js.Array[Any], bStack: js.Array[Any]): Boolean = js.native
     @JSName("$isEqual")
-    def $isEqual(a: js.Any, b: js.Any, aStack: Unit, bStack: js.Array[js.Any]): Boolean = js.native
+    def $isEqual(a: Any, b: Any, aStack: Unit, bStack: js.Array[Any]): Boolean = js.native
     @JSName("$isEqual")
     var $isEqual_Original: js.Function4[
-        /* a */ js.Any, 
-        /* b */ js.Any, 
-        /* aStack */ js.UndefOr[js.Array[js.Any]], 
-        /* bStack */ js.UndefOr[js.Array[js.Any]], 
+        /* a */ Any, 
+        /* b */ Any, 
+        /* aStack */ js.UndefOr[js.Array[Any]], 
+        /* bStack */ js.UndefOr[js.Array[Any]], 
         Boolean
       ] = js.native
     
     @JSName("$isPlainObject")
-    def $isPlainObject(obj: js.Any): Boolean = js.native
+    def $isPlainObject(obj: Any): Boolean = js.native
     @JSName("$isPlainObject")
-    var $isPlainObject_Original: js.Function1[/* obj */ js.Any, Boolean] = js.native
+    var $isPlainObject_Original: js.Function1[/* obj */ Any, Boolean] = js.native
     
     var app: App = js.native
     
@@ -152,12 +152,7 @@ object mod {
     var page: Page = js.native
   }
   
-  type Event = Instantiable3[
-    /* name */ String, 
-    /* source */ js.Any, 
-    /* type */ js.Any, 
-    typings.wepy.eventMod.default
-  ]
+  type Event = Instantiable3[/* name */ String, /* source */ Any, /* type */ Any, typings.wepy.eventMod.default]
   
   type Mixin = Instantiable0[typings.wepy.mixinMod.default]
   

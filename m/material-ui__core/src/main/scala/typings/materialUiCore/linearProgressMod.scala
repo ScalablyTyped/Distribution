@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.linearProgressLinearProgressMod.LinearProgressProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object linearProgressMod extends Shortcut {
+object linearProgressMod {
   
-  @JSImport("@material-ui/core/LinearProgress", JSImport.Default)
+  @JSImport("@material-ui/core/LinearProgress", JSImport.Namespace)
   @js.native
-  val default: ComponentType[LinearProgressProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[LinearProgressProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `linearProgressMod.foo` */
-  override def _to: ComponentType[LinearProgressProps] = default
+  inline def default(props: LinearProgressProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

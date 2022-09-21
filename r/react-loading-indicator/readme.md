@@ -11,14 +11,11 @@ A loading indicator written purely in React that uses SVG and no images
 | Full name          | react-loading-indicator |
 | Keywords           | react, component, loading-indicator |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 7794 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1978.3333333333333 |
+| # stars            | 33.0 |
 
 ## Links
-- [Homepage](https://github.com/exponentjs/react-loading-indicator#readme)
-- [Bugs](https://github.com/exponentjs/react-loading-indicator/issues)
-- [Repository](https://github.com/exponentjs/react-loading-indicator)
 - [Npm](https://www.npmjs.com/package/react-loading-indicator)
     
 

@@ -10,10 +10,10 @@ Returns path to globally installed package
 | ------------------ | :-------------: |
 | Full name          | global-modules-path |
 | Keywords           | npm, global, installed, path |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 15732777 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 618492.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rosen-vladimirov/global-modules-path#readme)

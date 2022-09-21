@@ -50,6 +50,6 @@ object TextOptions {
     
     inline def setSizeSymbolsUndefined: Self = StObject.set(x, "sizeSymbols", js.undefined)
     
-    inline def setSizeSymbolsVarargs(value: String*): Self = StObject.set(x, "sizeSymbols", js.Array(value :_*))
+    inline def setSizeSymbolsVarargs(value: String*): Self = StObject.set(x, "sizeSymbols", js.Array(value*))
   }
 }

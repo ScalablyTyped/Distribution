@@ -10,15 +10,12 @@ A miniature version of html-webpack-plugin with only necessary features
 | ------------------ | :-------------: |
 | Full name          | mini-html-webpack-plugin |
 | Keywords           | webpack, html, template |
-| # releases         | 17 |
-| # dependents       | 37 |
-| # downloads        | 6380942 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 454103.6666666667 |
+| # stars            | 56.0 |
 
 ## Links
-- [Homepage](https://github.com/styleguidist/mini-html-webpack-plugin)
-- [Bugs](https://github.com/styleguidist/mini-html-webpack-plugin/issues)
-- [Repository](https://github.com/styleguidist/mini-html-webpack-plugin)
 - [Npm](https://www.npmjs.com/package/mini-html-webpack-plugin)
     
 

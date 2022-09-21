@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with Expression
+     with Standardized
      with UnaryLike {
   
   var argument: Expression

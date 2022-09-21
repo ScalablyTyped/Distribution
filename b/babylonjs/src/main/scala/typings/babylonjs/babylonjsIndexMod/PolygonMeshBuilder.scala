@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Meshes/index", "PolygonMeshBuilder")
 @js.native
-class PolygonMeshBuilder protected ()
+open class PolygonMeshBuilder protected ()
   extends typings.babylonjs.polygonMeshMod.PolygonMeshBuilder {
-  def this(name: String, contours: js.Any) = this()
   def this(name: String, contours: js.Array[Vector2]) = this()
+  def this(name: String, contours: Any) = this()
   /**
     * Creates a PolygonMeshBuilder
     * @param name name of the builder
@@ -21,13 +21,13 @@ class PolygonMeshBuilder protected ()
     * @param earcutInjection can be used to inject your own earcut reference
     */
   def this(name: String, contours: Path2) = this()
-  def this(name: String, contours: js.Any, scene: Scene) = this()
   def this(name: String, contours: js.Array[Vector2], scene: Scene) = this()
+  def this(name: String, contours: Any, scene: Scene) = this()
   def this(name: String, contours: Path2, scene: Scene) = this()
-  def this(name: String, contours: js.Any, scene: Unit, earcutInjection: js.Any) = this()
-  def this(name: String, contours: js.Any, scene: Scene, earcutInjection: js.Any) = this()
-  def this(name: String, contours: js.Array[Vector2], scene: Unit, earcutInjection: js.Any) = this()
-  def this(name: String, contours: js.Array[Vector2], scene: Scene, earcutInjection: js.Any) = this()
-  def this(name: String, contours: Path2, scene: Unit, earcutInjection: js.Any) = this()
-  def this(name: String, contours: Path2, scene: Scene, earcutInjection: js.Any) = this()
+  def this(name: String, contours: js.Array[Vector2], scene: Unit, earcutInjection: Any) = this()
+  def this(name: String, contours: js.Array[Vector2], scene: Scene, earcutInjection: Any) = this()
+  def this(name: String, contours: Any, scene: Unit, earcutInjection: Any) = this()
+  def this(name: String, contours: Any, scene: Scene, earcutInjection: Any) = this()
+  def this(name: String, contours: Path2, scene: Unit, earcutInjection: Any) = this()
+  def this(name: String, contours: Path2, scene: Scene, earcutInjection: Any) = this()
 }

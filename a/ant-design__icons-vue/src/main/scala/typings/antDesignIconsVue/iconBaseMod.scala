@@ -1,40 +1,49 @@
 package typings.antDesignIconsVue
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIconsSvg.typesMod.IconDefinition
+import typings.std.Event
+import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.vueRuntimeDom.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object iconBaseMod {
+object iconBaseMod extends Shortcut {
   
-  object default {
+  @JSImport("@ant-design/icons-vue/lib/components/IconBase", JSImport.Default)
+  @js.native
+  val default: IconBaseType = js.native
+  
+  trait Color extends StObject {
     
-    inline def apply(
-      props: IconProps,
-      context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    def getTwoToneColors(): TwoToneColorPalette
     
-    @JSImport("@ant-design/icons-vue/lib/components/IconBase", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
+    def setTwoToneColors(twoToneColors: TwoToneColorPaletteSetter): Unit
+  }
+  object Color {
     
-    inline def getTwoToneColors(): TwoToneColorPalette = ^.asInstanceOf[js.Dynamic].applyDynamic("getTwoToneColors")().asInstanceOf[TwoToneColorPalette]
-    @JSImport("@ant-design/icons-vue/lib/components/IconBase", "default.getTwoToneColors")
-    @js.native
-    def getTwoToneColors_Fdefault: js.Function0[TwoToneColorPalette] = js.native
+    inline def apply(getTwoToneColors: () => TwoToneColorPalette, setTwoToneColors: TwoToneColorPaletteSetter => Unit): Color = {
+      val __obj = js.Dynamic.literal(getTwoToneColors = js.Any.fromFunction0(getTwoToneColors), setTwoToneColors = js.Any.fromFunction1(setTwoToneColors))
+      __obj.asInstanceOf[Color]
+    }
     
-    inline def getTwoToneColors_Fdefault_=(x: js.Function0[TwoToneColorPalette]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTwoToneColors")(x.asInstanceOf[js.Any])
+    extension [Self <: Color](x: Self) {
+      
+      inline def setGetTwoToneColors(value: () => TwoToneColorPalette): Self = StObject.set(x, "getTwoToneColors", js.Any.fromFunction0(value))
+      
+      inline def setSetTwoToneColors(value: TwoToneColorPaletteSetter => Unit): Self = StObject.set(x, "setTwoToneColors", js.Any.fromFunction1(value))
+    }
+  }
+  
+  @js.native
+  trait IconBaseType
+    extends StObject
+       with Color
+       with FunctionalComponent[IconProps, js.Object] {
     
-    @JSImport("@ant-design/icons-vue/lib/components/IconBase", "default.inheritAttrs")
-    @js.native
-    def inheritAttrs: Boolean = js.native
-    inline def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-vue/lib/components/IconBase", "default.setTwoToneColors")
-    @js.native
-    def setTwoToneColors: js.Function1[/* hasPrimaryColorSecondaryColor */ TwoToneColorPaletteSetter, Unit] = js.native
-    inline def setTwoToneColors(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTwoToneColors")(hasPrimaryColorSecondaryColor.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def setTwoToneColors_=(x: js.Function1[/* hasPrimaryColorSecondaryColor */ TwoToneColorPaletteSetter, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setTwoToneColors")(x.asInstanceOf[js.Any])
+    @JSName("displayName")
+    var displayName_IconBaseType: String = js.native
   }
   
   trait IconProps extends StObject {
@@ -45,15 +54,13 @@ object iconBaseMod {
     
     var icon: IconDefinition
     
-    var onClick: js.UndefOr[js.Function] = js.undefined
+    var onClick: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
     
     var primaryColor: js.UndefOr[String] = js.undefined
     
     var secondaryColor: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSProperties */ js.Any
-      ] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object IconProps {
     
@@ -74,7 +81,7 @@ object iconBaseMod {
       
       inline def setIcon(value: IconDefinition): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      inline def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      inline def setOnClick(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -86,9 +93,7 @@ object iconBaseMod {
       
       inline def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
       
-      inline def setStyle(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSProperties */ js.Any
-      ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -137,4 +142,9 @@ object iconBaseMod {
       inline def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
     }
   }
+  
+  type _To = IconBaseType
+  
+  /* This means you don't have to write `default`, but can instead just say `iconBaseMod.foo` */
+  override def _to: IconBaseType = default
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AuthorizationLoggingOptions extends StObject {
   
-  /** The type of the permission that was checked. */
+  /** This is deprecated and has no effect. Do not use. */
   var permissionType: js.UndefOr[String] = js.undefined
 }
 object AuthorizationLoggingOptions {

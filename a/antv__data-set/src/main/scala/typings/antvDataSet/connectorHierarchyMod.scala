@@ -8,7 +8,7 @@ object connectorHierarchyMod {
   
   trait Options extends StObject {
     
-    var children: js.UndefOr[js.Function1[/* data */ js.Any, js.Array[js.Any]]] = js.undefined
+    var children: js.UndefOr[js.Function1[/* data */ Any, js.Array[Any]]] = js.undefined
     
     var pureData: js.UndefOr[Boolean] = js.undefined
   }
@@ -21,7 +21,7 @@ object connectorHierarchyMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setChildren(value: /* data */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* data */ Any => js.Array[Any]): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

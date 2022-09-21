@@ -42,6 +42,6 @@ object ListTapePoolsInput {
     
     inline def setPoolARNsUndefined: Self = StObject.set(x, "PoolARNs", js.undefined)
     
-    inline def setPoolARNsVarargs(value: PoolARN*): Self = StObject.set(x, "PoolARNs", js.Array(value :_*))
+    inline def setPoolARNsVarargs(value: PoolARN*): Self = StObject.set(x, "PoolARNs", js.Array(value*))
   }
 }

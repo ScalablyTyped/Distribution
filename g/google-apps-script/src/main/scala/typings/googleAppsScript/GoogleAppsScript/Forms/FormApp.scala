@@ -16,15 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait FormApp extends StObject {
   
-  var Alignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ js.Any
+  var Alignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ Any
   
-  var DestinationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ js.Any
+  var DestinationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ Any
   
-  var FeedbackType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ js.Any
+  var FeedbackType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ Any
   
-  var ItemType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ js.Any
+  var ItemType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ Any
   
-  var PageNavigationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ js.Any
+  var PageNavigationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ Any
   
   def create(title: String): Form
   
@@ -51,11 +51,11 @@ trait FormApp extends StObject {
 object FormApp {
   
   inline def apply(
-    Alignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ js.Any,
-    DestinationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ js.Any,
-    FeedbackType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ js.Any,
-    ItemType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ js.Any,
-    PageNavigationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ js.Any,
+    Alignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ Any,
+    DestinationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ Any,
+    FeedbackType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ Any,
+    ItemType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ Any,
+    PageNavigationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ Any,
     create: String => Form,
     createCheckboxGridValidation: () => CheckboxGridValidationBuilder,
     createCheckboxValidation: () => CheckboxValidationBuilder,
@@ -74,7 +74,7 @@ object FormApp {
   
   extension [Self <: FormApp](x: Self) {
     
-    inline def setAlignment(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ js.Any): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ Any): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     inline def setCreate(value: String => Form): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
@@ -91,25 +91,23 @@ object FormApp {
     inline def setCreateTextValidation(value: () => TextValidationBuilder): Self = StObject.set(x, "createTextValidation", js.Any.fromFunction0(value))
     
     inline def setDestinationType(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ Any
     ): Self = StObject.set(x, "DestinationType", value.asInstanceOf[js.Any])
     
-    inline def setFeedbackType(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ js.Any
-    ): Self = StObject.set(x, "FeedbackType", value.asInstanceOf[js.Any])
+    inline def setFeedbackType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ Any): Self = StObject.set(x, "FeedbackType", value.asInstanceOf[js.Any])
     
     inline def setGetActiveForm(value: () => Form): Self = StObject.set(x, "getActiveForm", js.Any.fromFunction0(value))
     
     inline def setGetUi(value: () => Ui): Self = StObject.set(x, "getUi", js.Any.fromFunction0(value))
     
-    inline def setItemType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ js.Any): Self = StObject.set(x, "ItemType", value.asInstanceOf[js.Any])
+    inline def setItemType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ Any): Self = StObject.set(x, "ItemType", value.asInstanceOf[js.Any])
     
     inline def setOpenById(value: String => Form): Self = StObject.set(x, "openById", js.Any.fromFunction1(value))
     
     inline def setOpenByUrl(value: String => Form): Self = StObject.set(x, "openByUrl", js.Any.fromFunction1(value))
     
     inline def setPageNavigationType(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ Any
     ): Self = StObject.set(x, "PageNavigationType", value.asInstanceOf[js.Any])
   }
 }

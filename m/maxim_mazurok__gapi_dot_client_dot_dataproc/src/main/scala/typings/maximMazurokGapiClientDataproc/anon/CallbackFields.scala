@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.anon
 
-import typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.SubmitJobRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +22,9 @@ trait CallbackFields extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /** Required. The job ID. */
+  var jobId: String
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
@@ -41,9 +43,6 @@ trait CallbackFields extends StObject {
   /** Required. The Dataproc region in which to handle the request. */
   var region: String
   
-  /** Request body */
-  var resource: SubmitJobRequest
-  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -52,8 +51,8 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(projectId: String, region: String, resource: SubmitJobRequest): CallbackFields = {
-    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(jobId: String, projectId: String, region: String): CallbackFields = {
+    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
   
@@ -79,6 +78,8 @@ object CallbackFields {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -98,8 +99,6 @@ object CallbackFields {
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
-    
-    inline def setResource(value: SubmitJobRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

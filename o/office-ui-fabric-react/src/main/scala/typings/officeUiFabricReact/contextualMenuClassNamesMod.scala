@@ -36,22 +36,22 @@ object contextualMenuClassNamesMod {
   
   trait IContextualMenuClassNames extends StObject {
     
-    var container: String
+    var container: js.UndefOr[String] = js.undefined
     
-    var header: String
+    var header: js.UndefOr[String] = js.undefined
     
-    var list: String
+    var list: js.UndefOr[String] = js.undefined
     
-    var root: String
+    var root: js.UndefOr[String] = js.undefined
     
     var subComponentStyles: js.UndefOr[IContextualMenuSubComponentStyles] = js.undefined
     
-    var title: String
+    var title: js.UndefOr[String] = js.undefined
   }
   object IContextualMenuClassNames {
     
-    inline def apply(container: String, header: String, list: String, root: String, title: String): IContextualMenuClassNames = {
-      val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    inline def apply(): IContextualMenuClassNames = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IContextualMenuClassNames]
     }
     
@@ -59,66 +59,64 @@ object contextualMenuClassNamesMod {
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
       inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
       inline def setSubComponentStyles(value: IContextualMenuSubComponentStyles): Self = StObject.set(x, "subComponentStyles", value.asInstanceOf[js.Any])
       
       inline def setSubComponentStylesUndefined: Self = StObject.set(x, "subComponentStyles", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
   trait IMenuItemClassNames extends StObject {
     
-    var checkmarkIcon: String
+    var checkmarkIcon: js.UndefOr[String] = js.undefined
     
-    var divider: String
+    var divider: js.UndefOr[String] = js.undefined
     
-    var icon: String
+    var icon: js.UndefOr[String] = js.undefined
     
-    var item: String
+    var item: js.UndefOr[String] = js.undefined
     
-    var label: String
+    var label: js.UndefOr[String] = js.undefined
     
-    var linkContent: String
+    var linkContent: js.UndefOr[String] = js.undefined
     
-    var linkContentMenu: String
+    var linkContentMenu: js.UndefOr[String] = js.undefined
     
-    var root: String
+    var root: js.UndefOr[String] = js.undefined
     
-    var secondaryText: String
+    var screenReaderText: js.UndefOr[String] = js.undefined
     
-    var splitContainer: String
+    var secondaryText: js.UndefOr[String] = js.undefined
     
-    var splitMenu: String
+    var splitContainer: js.UndefOr[String] = js.undefined
     
-    var splitPrimary: String
+    var splitMenu: js.UndefOr[String] = js.undefined
     
-    var subMenuIcon: String
+    var splitPrimary: js.UndefOr[String] = js.undefined
+    
+    var subMenuIcon: js.UndefOr[String] = js.undefined
   }
   object IMenuItemClassNames {
     
-    inline def apply(
-      checkmarkIcon: String,
-      divider: String,
-      icon: String,
-      item: String,
-      label: String,
-      linkContent: String,
-      linkContentMenu: String,
-      root: String,
-      secondaryText: String,
-      splitContainer: String,
-      splitMenu: String,
-      splitPrimary: String,
-      subMenuIcon: String
-    ): IMenuItemClassNames = {
-      val __obj = js.Dynamic.literal(checkmarkIcon = checkmarkIcon.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], linkContent = linkContent.asInstanceOf[js.Any], linkContentMenu = linkContentMenu.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], secondaryText = secondaryText.asInstanceOf[js.Any], splitContainer = splitContainer.asInstanceOf[js.Any], splitMenu = splitMenu.asInstanceOf[js.Any], splitPrimary = splitPrimary.asInstanceOf[js.Any], subMenuIcon = subMenuIcon.asInstanceOf[js.Any])
+    inline def apply(): IMenuItemClassNames = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMenuItemClassNames]
     }
     
@@ -126,29 +124,59 @@ object contextualMenuClassNamesMod {
       
       inline def setCheckmarkIcon(value: String): Self = StObject.set(x, "checkmarkIcon", value.asInstanceOf[js.Any])
       
+      inline def setCheckmarkIconUndefined: Self = StObject.set(x, "checkmarkIcon", js.undefined)
+      
       inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
       inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       inline def setLinkContent(value: String): Self = StObject.set(x, "linkContent", value.asInstanceOf[js.Any])
       
       inline def setLinkContentMenu(value: String): Self = StObject.set(x, "linkContentMenu", value.asInstanceOf[js.Any])
       
+      inline def setLinkContentMenuUndefined: Self = StObject.set(x, "linkContentMenu", js.undefined)
+      
+      inline def setLinkContentUndefined: Self = StObject.set(x, "linkContent", js.undefined)
+      
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setScreenReaderText(value: String): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
+      
+      inline def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
       
       inline def setSecondaryText(value: String): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
       
+      inline def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
+      
       inline def setSplitContainer(value: String): Self = StObject.set(x, "splitContainer", value.asInstanceOf[js.Any])
+      
+      inline def setSplitContainerUndefined: Self = StObject.set(x, "splitContainer", js.undefined)
       
       inline def setSplitMenu(value: String): Self = StObject.set(x, "splitMenu", value.asInstanceOf[js.Any])
       
+      inline def setSplitMenuUndefined: Self = StObject.set(x, "splitMenu", js.undefined)
+      
       inline def setSplitPrimary(value: String): Self = StObject.set(x, "splitPrimary", value.asInstanceOf[js.Any])
       
+      inline def setSplitPrimaryUndefined: Self = StObject.set(x, "splitPrimary", js.undefined)
+      
       inline def setSubMenuIcon(value: String): Self = StObject.set(x, "subMenuIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSubMenuIconUndefined: Self = StObject.set(x, "subMenuIcon", js.undefined)
     }
   }
 }

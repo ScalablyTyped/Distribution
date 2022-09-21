@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionAliasPermission extends StObject {
   
   /**
-    * Indicates whether the specified AWS account is allowed to associate the connection alias with a directory.
+    * Indicates whether the specified Amazon Web Services account is allowed to associate the connection alias with a directory.
     */
   var AllowAssociation: BooleanObject
   
   /**
-    * The identifier of the AWS account that the connection alias is shared with.
+    * The identifier of the Amazon Web Services account that the connection alias is shared with.
     */
   var SharedAccountId: AwsAccount
 }

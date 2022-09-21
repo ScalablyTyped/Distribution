@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,20 +14,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GossipBatchResponse.
   * @param [properties] Properties to set
   */
-class GossipBatchResponse ()
+open class GossipBatchResponse ()
   extends StObject
      with IGossipBatchResponse {
   def this(properties: IGossipBatchResponse) = this()
   
   /** GossipBatchResponse content. */
   @JSName("content")
-  var content_GossipBatchResponse: Uint8Array = js.native
+  var content_GossipBatchResponse: js.typedarray.Uint8Array = js.native
   
   /**
     * Converts this GossipBatchResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object GossipBatchResponse {
@@ -45,6 +44,8 @@ object GossipBatchResponse {
   inline def create(): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GossipBatchResponse]
   inline def create(properties: IGossipBatchResponse): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GossipBatchResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBatchResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): GossipBatchResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GossipBatchResponse]
   /**
     * Decodes a GossipBatchResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -55,9 +56,8 @@ object GossipBatchResponse {
     */
   inline def decode(reader: Reader): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBatchResponse]
   inline def decode(reader: Reader, length: Double): GossipBatchResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GossipBatchResponse]
-  inline def decode(reader: Uint8Array): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBatchResponse]
-  inline def decode(reader: Uint8Array, length: Double): GossipBatchResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GossipBatchResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBatchResponse]
   /**
     * Decodes a GossipBatchResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -66,7 +66,6 @@ object GossipBatchResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBatchResponse]
-  inline def decodeDelimited(reader: Uint8Array): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GossipBatchResponse]
   
   /**
     * Encodes the specified GossipBatchResponse message. Does not implicitly {@link GossipBatchResponse.verify|verify} messages.
@@ -91,7 +90,7 @@ object GossipBatchResponse {
     * @param object Plain object
     * @returns GossipBatchResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GossipBatchResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): GossipBatchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GossipBatchResponse]
   
   /**
     * Creates a plain object from a GossipBatchResponse message. Also converts values to other types if specified.
@@ -99,13 +98,13 @@ object GossipBatchResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: GossipBatchResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: GossipBatchResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: GossipBatchResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: GossipBatchResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a GossipBatchResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -6,21 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BroadcastChannelEventMap extends StObject {
   
-  var message: MessageEvent[js.Any]
+  /* standard dom */
+  var message: MessageEvent[Any]
   
-  var messageerror: MessageEvent[js.Any]
+  /* standard dom */
+  var messageerror: MessageEvent[Any]
 }
 object BroadcastChannelEventMap {
   
-  inline def apply(message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): BroadcastChannelEventMap = {
+  inline def apply(message: MessageEvent[Any], messageerror: MessageEvent[Any]): BroadcastChannelEventMap = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadcastChannelEventMap]
   }
   
   extension [Self <: BroadcastChannelEventMap](x: Self) {
     
-    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageEvent[Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
+    inline def setMessageerror(value: MessageEvent[Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
   }
 }

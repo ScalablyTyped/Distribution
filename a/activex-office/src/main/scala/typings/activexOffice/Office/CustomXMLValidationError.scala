@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomXMLValidationError extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -21,7 +21,7 @@ trait CustomXMLValidationError extends StObject {
   /* private */ @JSName("Office.CustomXMLValidationError_typekey")
   var OfficeDotCustomXMLValidationError_typekey: CustomXMLValidationError
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Text: String
   
@@ -30,14 +30,14 @@ trait CustomXMLValidationError extends StObject {
 object CustomXMLValidationError {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Delete: () => Unit,
     ErrorCode: Double,
     Name: String,
     Node: CustomXMLNode,
     OfficeDotCustomXMLValidationError_typekey: CustomXMLValidationError,
-    Parent: js.Any,
+    Parent: Any,
     Text: String,
     Type: MsoCustomXMLValidationErrorType
   ): CustomXMLValidationError = {
@@ -48,7 +48,7 @@ object CustomXMLValidationError {
   
   extension [Self <: CustomXMLValidationError](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object CustomXMLValidationError {
     
     inline def setOfficeDotCustomXMLValidationError_typekey(value: CustomXMLValidationError): Self = StObject.set(x, "Office.CustomXMLValidationError_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     

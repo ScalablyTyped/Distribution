@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an Excel PivotTable.
   To learn more about the PivotTable object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
   *
+  * @remarks
   * [Api set: ExcelApi 1.3]
   */
 trait PivotTableLoadOptions extends StObject {
@@ -20,66 +20,65 @@ trait PivotTableLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the PivotTable allows values in the data body to be edited by the user.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var enableDataValueEditing: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * ID of the PivotTable.
     *
-    * Id of the PivotTable.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The PivotLayout describing the layout and visual structure of the PivotTable.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var layout: js.UndefOr[PivotLayoutLoadOptions] = js.undefined
   
   /**
-    *
     * Name of the PivotTable.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in the UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApi 1.13]
     */
   var refreshOnOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the PivotTable uses custom lists when sorting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var useCustomSortLists: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The worksheet containing the current PivotTable.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined

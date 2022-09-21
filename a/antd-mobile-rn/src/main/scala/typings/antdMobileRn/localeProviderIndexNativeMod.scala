@@ -10,7 +10,7 @@ object localeProviderIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/locale-provider/index.native", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antdMobileRn.localeProviderMod.default
   /* static members */
   object default {

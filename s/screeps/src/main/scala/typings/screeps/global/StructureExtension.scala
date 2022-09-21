@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("StructureExtension")
 @js.native
-class StructureExtension protected ()
+open class StructureExtension protected ()
   extends StObject
      with typings.screeps.StructureExtension {
   def this(id: Id[typings.screeps.StructureExtension]) = this()

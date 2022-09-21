@@ -10,10 +10,10 @@ A small utility to parse, match and generate paths
 | ------------------ | :-------------: |
 | Full name          | path-parser |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 36 |
-| # downloads        | 2546362 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 333902.0 |
+| # stars            | 135.0 |
 
 ## Links
 - [Homepage](https://github.com/troch/path-parser)

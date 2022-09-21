@@ -74,7 +74,7 @@ object CIMObjectMarker3D {
     
     inline def setLODsUndefined: Self = StObject.set(x, "LODs", js.undefined)
     
-    inline def setLODsVarargs(value: CIMObjectMarker3DLOD*): Self = StObject.set(x, "LODs", js.Array(value :_*))
+    inline def setLODsVarargs(value: CIMObjectMarker3DLOD*): Self = StObject.set(x, "LODs", js.Array(value*))
     
     inline def setModelURI(value: String): Self = StObject.set(x, "modelURI", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object CIMObjectMarker3D {
     
     inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
-    inline def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value :_*))
+    inline def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value*))
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3D): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

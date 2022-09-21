@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-invariant
 
-Typings are for version 0.4.4
+Typings are for version 0.10.3
 
 ## Library description:
 TypeScript implementation of invariant(condition, message)
@@ -10,10 +10,10 @@ TypeScript implementation of invariant(condition, message)
 | ------------------ | :-------------: |
 | Full name          | ts-invariant |
 | Keywords           | invariant, assertion, precondition, TypeScript |
-| # releases         | 12 |
-| # dependents       | 66 |
-| # downloads        | 130864948 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1642063E7 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/invariant-packages)

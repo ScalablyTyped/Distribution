@@ -9,15 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientPivotMenuItemClickEventArgs")
 @js.native
-class ASPxClientPivotMenuItemClickEventArgs ()
+open class ASPxClientPivotMenuItemClickEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientPivotMenuItemClickEventArgs {
   
+  /**
+    * Gets the field's area.
+    */
   /* CompleteClass */
   var Area: String = js.native
   
   /**
-    * Gets the field's unique indentifier.
+    * Gets the field's unique identifier.
     */
   /* CompleteClass */
   var FieldID: String = js.native

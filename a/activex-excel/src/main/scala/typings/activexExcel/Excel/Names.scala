@@ -40,14 +40,14 @@ trait Names extends StObject {
   def Item(Index: Unit, IndexLocal: String): Name = js.native
   def Item(Index: Unit, IndexLocal: Unit, RefersTo: String): Name = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(): Name = js.native
-  def _Default(Index: js.Any): Name = js.native
-  def _Default(Index: js.Any, IndexLocal: js.Any): Name = js.native
-  def _Default(Index: js.Any, IndexLocal: js.Any, RefersTo: js.Any): Name = js.native
-  def _Default(Index: js.Any, IndexLocal: Unit, RefersTo: js.Any): Name = js.native
-  def _Default(Index: Unit, IndexLocal: js.Any): Name = js.native
-  def _Default(Index: Unit, IndexLocal: js.Any, RefersTo: js.Any): Name = js.native
-  def _Default(Index: Unit, IndexLocal: Unit, RefersTo: js.Any): Name = js.native
+  def _Default(Index: Any): Name = js.native
+  def _Default(Index: Any, IndexLocal: Any): Name = js.native
+  def _Default(Index: Any, IndexLocal: Any, RefersTo: Any): Name = js.native
+  def _Default(Index: Any, IndexLocal: Unit, RefersTo: Any): Name = js.native
+  def _Default(Index: Unit, IndexLocal: Any): Name = js.native
+  def _Default(Index: Unit, IndexLocal: Any, RefersTo: Any): Name = js.native
+  def _Default(Index: Unit, IndexLocal: Unit, RefersTo: Any): Name = js.native
 }

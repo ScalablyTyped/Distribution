@@ -17,7 +17,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("TextEncoding.TextDecoder")
     @js.native
-    class TextDecoder ()
+    open class TextDecoder ()
       extends StObject
          with typings.textEncodingUtf8.mod.TextEncoding.TextDecoder {
       def this(label: String) = this()
@@ -31,7 +31,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("TextEncoding.TextEncoder")
     @js.native
-    class TextEncoder ()
+    open class TextEncoder ()
       extends StObject
          with typings.textEncodingUtf8.mod.TextEncoding.TextEncoder {
       def this(utfLabel: String) = this()
@@ -51,7 +51,7 @@ object global {
       /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
       @JSGlobal("TextEncoding.TextEncoding.TextDecoder")
       @js.native
-      class TextDecoderCls ()
+      open class TextDecoderCls ()
         extends StObject
            with typings.textEncodingUtf8.mod.TextEncoding.TextDecoder {
         def this(label: String) = this()
@@ -62,7 +62,7 @@ object global {
       /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
       @JSGlobal("TextEncoding.TextEncoding.TextEncoder")
       @js.native
-      class TextEncoderCls ()
+      open class TextEncoderCls ()
         extends StObject
            with typings.textEncodingUtf8.mod.TextEncoding.TextEncoder {
         def this(utfLabel: String) = this()

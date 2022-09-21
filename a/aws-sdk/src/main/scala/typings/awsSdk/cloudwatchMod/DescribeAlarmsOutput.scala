@@ -34,13 +34,13 @@ object DescribeAlarmsOutput {
     
     inline def setCompositeAlarmsUndefined: Self = StObject.set(x, "CompositeAlarms", js.undefined)
     
-    inline def setCompositeAlarmsVarargs(value: CompositeAlarm*): Self = StObject.set(x, "CompositeAlarms", js.Array(value :_*))
+    inline def setCompositeAlarmsVarargs(value: CompositeAlarm*): Self = StObject.set(x, "CompositeAlarms", js.Array(value*))
     
     inline def setMetricAlarms(value: MetricAlarms): Self = StObject.set(x, "MetricAlarms", value.asInstanceOf[js.Any])
     
     inline def setMetricAlarmsUndefined: Self = StObject.set(x, "MetricAlarms", js.undefined)
     
-    inline def setMetricAlarmsVarargs(value: MetricAlarm*): Self = StObject.set(x, "MetricAlarms", js.Array(value :_*))
+    inline def setMetricAlarmsVarargs(value: MetricAlarm*): Self = StObject.set(x, "MetricAlarms", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

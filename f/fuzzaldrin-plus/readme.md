@@ -10,10 +10,10 @@ Fuzzy filtering and string similarity scoring - compatible with fuzzaldrin
 | ------------------ | :-------------: |
 | Full name          | fuzzaldrin-plus |
 | Keywords           | fuzzy, approximate, string, matching, filter, search, highlight, sublime |
-| # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 3957720 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 410824.3333333333 |
+| # stars            | 258.0 |
 
 ## Links
 - [Homepage](https://github.com/jeancroy/fuzzaldrin-plus)

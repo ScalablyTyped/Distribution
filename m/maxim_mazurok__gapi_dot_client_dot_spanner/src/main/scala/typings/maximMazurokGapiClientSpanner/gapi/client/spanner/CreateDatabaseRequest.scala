@@ -12,6 +12,12 @@ trait CreateDatabaseRequest extends StObject {
     */
   var createStatement: js.UndefOr[String] = js.undefined
   
+  /** Optional. The dialect of the Cloud Spanner Database. */
+  var databaseDialect: js.UndefOr[String] = js.undefined
+  
+  /** Optional. The encryption configuration for the database. If this field is not specified, Cloud Spanner will encrypt/decrypt all data at rest using Google default encryption. */
+  var encryptionConfig: js.UndefOr[EncryptionConfig] = js.undefined
+  
   /**
     * Optional. A list of DDL statements to run inside the newly created database. Statements can create tables, indexes, etc. These statements execute atomically with the creation of the
     * database: if there is an error in any statement, the database is not created.
@@ -31,10 +37,18 @@ object CreateDatabaseRequest {
     
     inline def setCreateStatementUndefined: Self = StObject.set(x, "createStatement", js.undefined)
     
+    inline def setDatabaseDialect(value: String): Self = StObject.set(x, "databaseDialect", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseDialectUndefined: Self = StObject.set(x, "databaseDialect", js.undefined)
+    
+    inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
+    
     inline def setExtraStatements(value: js.Array[String]): Self = StObject.set(x, "extraStatements", value.asInstanceOf[js.Any])
     
     inline def setExtraStatementsUndefined: Self = StObject.set(x, "extraStatements", js.undefined)
     
-    inline def setExtraStatementsVarargs(value: String*): Self = StObject.set(x, "extraStatements", js.Array(value :_*))
+    inline def setExtraStatementsVarargs(value: String*): Self = StObject.set(x, "extraStatements", js.Array(value*))
   }
 }

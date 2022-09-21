@@ -12,9 +12,19 @@ trait RegisterCertificateRequest extends StObject {
   var CertificateData: typings.awsSdk.directoryserviceMod.CertificateData
   
   /**
+    * A ClientCertAuthSettings object that contains client certificate authentication settings.
+    */
+  var ClientCertAuthSettings: js.UndefOr[typings.awsSdk.directoryserviceMod.ClientCertAuthSettings] = js.undefined
+  
+  /**
     * The identifier of the directory.
     */
   var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
+  
+  /**
+    * The function that the registered certificate performs. Valid values include ClientLDAPS or ClientCertAuth. The default value is ClientLDAPS.
+    */
+  var Type: js.UndefOr[CertificateType] = js.undefined
 }
 object RegisterCertificateRequest {
   
@@ -27,6 +37,14 @@ object RegisterCertificateRequest {
     
     inline def setCertificateData(value: CertificateData): Self = StObject.set(x, "CertificateData", value.asInstanceOf[js.Any])
     
+    inline def setClientCertAuthSettings(value: ClientCertAuthSettings): Self = StObject.set(x, "ClientCertAuthSettings", value.asInstanceOf[js.Any])
+    
+    inline def setClientCertAuthSettingsUndefined: Self = StObject.set(x, "ClientCertAuthSettings", js.undefined)
+    
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: CertificateType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

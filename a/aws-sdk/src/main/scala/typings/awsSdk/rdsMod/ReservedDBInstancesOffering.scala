@@ -97,7 +97,7 @@ object ReservedDBInstancesOffering {
     
     inline def setRecurringChargesUndefined: Self = StObject.set(x, "RecurringCharges", js.undefined)
     
-    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value :_*))
+    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value*))
     
     inline def setReservedDBInstancesOfferingId(value: String): Self = StObject.set(x, "ReservedDBInstancesOfferingId", value.asInstanceOf[js.Any])
     

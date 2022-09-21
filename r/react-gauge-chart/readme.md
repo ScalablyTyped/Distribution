@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-gauge-chart
 
-Typings are for version 0.2
+Typings are for version 0.4
 
 ## Library description:
 React component for displaying a gauge chart, using D3.js
@@ -10,10 +10,10 @@ React component for displaying a gauge chart, using D3.js
 | ------------------ | :-------------: |
 | Full name          | react-gauge-chart |
 | Keywords           | visualization, react, gauge chart, speedometer |
-| # releases         | 17 |
-| # dependents       | 2 |
-| # downloads        | 173230 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 51086.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://martin36.github.io/react-gauge-chart/)

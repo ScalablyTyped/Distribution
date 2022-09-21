@@ -10,7 +10,7 @@ object useRafMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Callback /* <: js.Function */](callback: Callback): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def default[Callback /* <: js.Function */](callback: Callback): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   
   inline def useRafState[T](defaultState: T): js.Tuple2[T, js.Function1[/* updater */ Callback[T], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRafState")(defaultState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* updater */ Callback[T], Unit]]]
   inline def useRafState[T](defaultState: js.Function0[T]): js.Tuple2[T, js.Function1[/* updater */ Callback[T], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRafState")(defaultState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* updater */ Callback[T], Unit]]]

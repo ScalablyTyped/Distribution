@@ -62,7 +62,7 @@ object OnenoteSection {
     
     inline def setPagesUrlUndefined: Self = StObject.set(x, "pagesUrl", js.undefined)
     
-    inline def setPagesVarargs(value: OnenotePage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: OnenotePage*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setParentNotebook(value: NullableOption[Notebook]): Self = StObject.set(x, "parentNotebook", value.asInstanceOf[js.Any])
     

@@ -1,13 +1,17 @@
 package typings.zchatBrowser
 
-import typings.zchatBrowser.mod.EventData
-import typings.zchatBrowser.mod.EventName
+import typings.zchatBrowser.mod.AccountsStatusEventData
+import typings.zchatBrowser.mod.ConnectionUpdateEventData
 import typings.zchatBrowser.mod.SendFileErrorMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zchatBrowserStrings {
+  
+  @js.native
+  sealed trait BUTTON_TEMPLATE extends StObject
+  inline def BUTTON_TEMPLATE: BUTTON_TEMPLATE = "BUTTON_TEMPLATE".asInstanceOf[BUTTON_TEMPLATE]
   
   @js.native
   sealed trait CONN_ERROR
@@ -76,21 +80,21 @@ object zchatBrowserStrings {
   inline def UNKNOWN_ERROR: UNKNOWN_ERROR = "UNKNOWN_ERROR".asInstanceOf[UNKNOWN_ERROR]
   
   @js.native
-  sealed trait account_status
-    extends StObject
-       with EventName
+  sealed trait account extends StObject
+  inline def account: account = "account".asInstanceOf[account]
+  
+  @js.native
+  sealed trait account_status extends StObject
   inline def account_status: account_status = "account_status".asInstanceOf[account_status]
   
   @js.native
-  sealed trait agent_update
-    extends StObject
-       with EventName
+  sealed trait agent_update extends StObject
   inline def agent_update: agent_update = "agent_update".asInstanceOf[agent_update]
   
   @js.native
   sealed trait away
     extends StObject
-       with EventData
+       with AccountsStatusEventData
   inline def away: away = "away".asInstanceOf[away]
   
   @js.native
@@ -98,9 +102,7 @@ object zchatBrowserStrings {
   inline def bad: bad = "bad".asInstanceOf[bad]
   
   @js.native
-  sealed trait chat
-    extends StObject
-       with EventName
+  sealed trait chat extends StObject
   inline def chat: chat = "chat".asInstanceOf[chat]
   
   @js.native
@@ -138,37 +140,35 @@ object zchatBrowserStrings {
   @js.native
   sealed trait closed
     extends StObject
-       with EventData
+       with ConnectionUpdateEventData
   inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
   sealed trait connected
     extends StObject
-       with EventData
+       with ConnectionUpdateEventData
   inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
   sealed trait connecting
     extends StObject
-       with EventData
+       with ConnectionUpdateEventData
   inline def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
-  sealed trait connection_update
-    extends StObject
-       with EventName
+  sealed trait connection_update extends StObject
   inline def connection_update: connection_update = "connection_update".asInstanceOf[connection_update]
   
   @js.native
-  sealed trait department_update
-    extends StObject
-       with EventName
+  sealed trait department extends StObject
+  inline def department: department = "department".asInstanceOf[department]
+  
+  @js.native
+  sealed trait department_update extends StObject
   inline def department_update: department_update = "department_update".asInstanceOf[department_update]
   
   @js.native
-  sealed trait error
-    extends StObject
-       with EventName
+  sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
@@ -176,9 +176,7 @@ object zchatBrowserStrings {
   inline def good: good = "good".asInstanceOf[good]
   
   @js.native
-  sealed trait history
-    extends StObject
-       with EventName
+  sealed trait history extends StObject
   inline def history: history = "history".asInstanceOf[history]
   
   @js.native
@@ -188,24 +186,20 @@ object zchatBrowserStrings {
   @js.native
   sealed trait offline
     extends StObject
-       with EventData
+       with AccountsStatusEventData
   inline def offline: offline = "offline".asInstanceOf[offline]
   
   @js.native
   sealed trait online
     extends StObject
-       with EventData
+       with AccountsStatusEventData
   inline def online: online = "online".asInstanceOf[online]
   
   @js.native
-  sealed trait typing
-    extends StObject
-       with EventName
+  sealed trait typing extends StObject
   inline def typing: typing = "typing".asInstanceOf[typing]
   
   @js.native
-  sealed trait visitor_update
-    extends StObject
-       with EventName
+  sealed trait visitor_update extends StObject
   inline def visitor_update: visitor_update = "visitor_update".asInstanceOf[visitor_update]
 }

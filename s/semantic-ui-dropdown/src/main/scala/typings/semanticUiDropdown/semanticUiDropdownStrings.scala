@@ -7,32 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object semanticUiDropdownStrings {
   
   @js.native
-  sealed trait action extends StObject
-  inline def action: action = "action".asInstanceOf[action]
-  
-  @js.native
   sealed trait activate extends StObject
   inline def activate: activate = "activate".asInstanceOf[activate]
-  
-  @js.native
-  sealed trait allowAdditions extends StObject
-  inline def allowAdditions: allowAdditions = "allowAdditions".asInstanceOf[allowAdditions]
-  
-  @js.native
-  sealed trait allowCategorySelection extends StObject
-  inline def allowCategorySelection: allowCategorySelection = "allowCategorySelection".asInstanceOf[allowCategorySelection]
-  
-  @js.native
-  sealed trait allowReselection extends StObject
-  inline def allowReselection: allowReselection = "allowReselection".asInstanceOf[allowReselection]
-  
-  @js.native
-  sealed trait allowTab extends StObject
-  inline def allowTab: allowTab = "allowTab".asInstanceOf[allowTab]
-  
-  @js.native
-  sealed trait apiSettings extends StObject
-  inline def apiSettings: apiSettings = "apiSettings".asInstanceOf[apiSettings]
   
   @js.native
   sealed trait auto extends StObject
@@ -55,28 +31,12 @@ object semanticUiDropdownStrings {
   inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait className extends StObject
-  inline def className: className = "className".asInstanceOf[className]
-  
-  @js.native
   sealed trait clear extends StObject
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
   sealed trait combo extends StObject
   inline def combo: combo = "combo".asInstanceOf[combo]
-  
-  @js.native
-  sealed trait context extends StObject
-  inline def context: context = "context".asInstanceOf[context]
-  
-  @js.native
-  sealed trait debug extends StObject
-  inline def debug: debug = "debug".asInstanceOf[debug]
-  
-  @js.native
-  sealed trait delay extends StObject
-  inline def delay: delay = "delay".asInstanceOf[delay]
   
   @js.native
   sealed trait destroy extends StObject
@@ -91,40 +51,12 @@ object semanticUiDropdownStrings {
   inline def `determine select action`: `determine select action` = ("determine select action").asInstanceOf[`determine select action`]
   
   @js.native
-  sealed trait direction extends StObject
-  inline def direction: direction = "direction".asInstanceOf[direction]
-  
-  @js.native
   sealed trait downward extends StObject
   inline def downward: downward = "downward".asInstanceOf[downward]
   
   @js.native
-  sealed trait duration extends StObject
-  inline def duration: duration = "duration".asInstanceOf[duration]
-  
-  @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
-  
-  @js.native
   sealed trait exact extends StObject
   inline def exact: exact = "exact".asInstanceOf[exact]
-  
-  @js.native
-  sealed trait fields extends StObject
-  inline def fields: fields = "fields".asInstanceOf[fields]
-  
-  @js.native
-  sealed trait filterRemoteData extends StObject
-  inline def filterRemoteData: filterRemoteData = "filterRemoteData".asInstanceOf[filterRemoteData]
-  
-  @js.native
-  sealed trait forceSelection extends StObject
-  inline def forceSelection: forceSelection = "forceSelection".asInstanceOf[forceSelection]
-  
-  @js.native
-  sealed trait fullTextSearch extends StObject
-  inline def fullTextSearch: fullTextSearch = "fullTextSearch".asInstanceOf[fullTextSearch]
   
   @js.native
   sealed trait `get default text` extends StObject
@@ -147,20 +79,12 @@ object semanticUiDropdownStrings {
   inline def `get value`: `get value` = ("get value").asInstanceOf[`get value`]
   
   @js.native
-  sealed trait glyphWidth extends StObject
-  inline def glyphWidth: glyphWidth = "glyphWidth".asInstanceOf[glyphWidth]
-  
-  @js.native
   sealed trait hide extends StObject
   inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
   sealed trait `hide others` extends StObject
   inline def `hide others`: `hide others` = ("hide others").asInstanceOf[`hide others`]
-  
-  @js.native
-  sealed trait hideAdditions extends StObject
-  inline def hideAdditions: hideAdditions = "hideAdditions".asInstanceOf[hideAdditions]
   
   @js.native
   sealed trait `is animated` extends StObject
@@ -179,108 +103,12 @@ object semanticUiDropdownStrings {
   inline def `is visible`: `is visible` = ("is visible").asInstanceOf[`is visible`]
   
   @js.native
-  sealed trait keepOnScreen extends StObject
-  inline def keepOnScreen: keepOnScreen = "keepOnScreen".asInstanceOf[keepOnScreen]
-  
-  @js.native
-  sealed trait keys extends StObject
-  inline def keys: keys = "keys".asInstanceOf[keys]
-  
-  @js.native
-  sealed trait label extends StObject
-  inline def label: label = "label".asInstanceOf[label]
-  
-  @js.native
-  sealed trait `match` extends StObject
-  inline def `match`: `match` = "match".asInstanceOf[`match`]
-  
-  @js.native
-  sealed trait maxSelections extends StObject
-  inline def maxSelections: maxSelections = "maxSelections".asInstanceOf[maxSelections]
-  
-  @js.native
-  sealed trait message extends StObject
-  inline def message: message = "message".asInstanceOf[message]
-  
-  @js.native
-  sealed trait metadata extends StObject
-  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
-  
-  @js.native
-  sealed trait minCharacters extends StObject
-  inline def minCharacters: minCharacters = "minCharacters".asInstanceOf[minCharacters]
-  
-  @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
-  
-  @js.native
-  sealed trait namespace extends StObject
-  inline def namespace: namespace = "namespace".asInstanceOf[namespace]
-  
-  @js.native
   sealed trait nothing extends StObject
   inline def nothing: nothing = "nothing".asInstanceOf[nothing]
   
   @js.native
-  sealed trait on extends StObject
-  inline def on: on = "on".asInstanceOf[on]
-  
-  @js.native
-  sealed trait onAdd extends StObject
-  inline def onAdd: onAdd = "onAdd".asInstanceOf[onAdd]
-  
-  @js.native
-  sealed trait onChange extends StObject
-  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
-  
-  @js.native
-  sealed trait onHide extends StObject
-  inline def onHide: onHide = "onHide".asInstanceOf[onHide]
-  
-  @js.native
-  sealed trait onLabelCreate extends StObject
-  inline def onLabelCreate: onLabelCreate = "onLabelCreate".asInstanceOf[onLabelCreate]
-  
-  @js.native
-  sealed trait onLabelRemove extends StObject
-  inline def onLabelRemove: onLabelRemove = "onLabelRemove".asInstanceOf[onLabelRemove]
-  
-  @js.native
-  sealed trait onLabelSelect extends StObject
-  inline def onLabelSelect: onLabelSelect = "onLabelSelect".asInstanceOf[onLabelSelect]
-  
-  @js.native
-  sealed trait onNoResults extends StObject
-  inline def onNoResults: onNoResults = "onNoResults".asInstanceOf[onNoResults]
-  
-  @js.native
-  sealed trait onRemove extends StObject
-  inline def onRemove: onRemove = "onRemove".asInstanceOf[onRemove]
-  
-  @js.native
-  sealed trait onShow extends StObject
-  inline def onShow: onShow = "onShow".asInstanceOf[onShow]
-  
-  @js.native
-  sealed trait performance extends StObject
-  inline def performance: performance = "performance".asInstanceOf[performance]
-  
-  @js.native
-  sealed trait placeholder extends StObject
-  inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
-  
-  @js.native
-  sealed trait preserveHTML extends StObject
-  inline def preserveHTML: preserveHTML = "preserveHTML".asInstanceOf[preserveHTML]
-  
-  @js.native
   sealed trait refresh extends StObject
   inline def refresh: refresh = "refresh".asInstanceOf[refresh]
-  
-  @js.native
-  sealed trait regExp extends StObject
-  inline def regExp: regExp = "regExp".asInstanceOf[regExp]
   
   @js.native
   sealed trait `remove active` extends StObject
@@ -315,20 +143,8 @@ object semanticUiDropdownStrings {
   inline def `save defaults`: `save defaults` = ("save defaults").asInstanceOf[`save defaults`]
   
   @js.native
-  sealed trait saveRemoteData extends StObject
-  inline def saveRemoteData: saveRemoteData = "saveRemoteData".asInstanceOf[saveRemoteData]
-  
-  @js.native
   sealed trait select extends StObject
   inline def select: select = "select".asInstanceOf[select]
-  
-  @js.native
-  sealed trait selectOnKeydown extends StObject
-  inline def selectOnKeydown: selectOnKeydown = "selectOnKeydown".asInstanceOf[selectOnKeydown]
-  
-  @js.native
-  sealed trait selector extends StObject
-  inline def selector: selector = "selector".asInstanceOf[selector]
   
   @js.native
   sealed trait `set active` extends StObject
@@ -367,28 +183,12 @@ object semanticUiDropdownStrings {
   inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait showOnFocus extends StObject
-  inline def showOnFocus: showOnFocus = "showOnFocus".asInstanceOf[showOnFocus]
-  
-  @js.native
-  sealed trait silent extends StObject
-  inline def silent: silent = "silent".asInstanceOf[silent]
-  
-  @js.native
-  sealed trait sortSelect extends StObject
-  inline def sortSelect: sortSelect = "sortSelect".asInstanceOf[sortSelect]
-  
-  @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait toggle extends StObject
   inline def toggle: toggle = "toggle".asInstanceOf[toggle]
-  
-  @js.native
-  sealed trait transition extends StObject
-  inline def transition: transition = "transition".asInstanceOf[transition]
   
   @js.native
   sealed trait `unbind intent` extends StObject
@@ -399,18 +199,6 @@ object semanticUiDropdownStrings {
   inline def upward: upward = "upward".asInstanceOf[upward]
   
   @js.native
-  sealed trait useLabels extends StObject
-  inline def useLabels: useLabels = "useLabels".asInstanceOf[useLabels]
-  
-  @js.native
   sealed trait value extends StObject
   inline def value: value = "value".asInstanceOf[value]
-  
-  @js.native
-  sealed trait values extends StObject
-  inline def values: values = "values".asInstanceOf[values]
-  
-  @js.native
-  sealed trait verbose extends StObject
-  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

@@ -27,7 +27,7 @@ object DescribeActionTargetsResponse {
     
     inline def setActionTargets(value: ActionTargetList): Self = StObject.set(x, "ActionTargets", value.asInstanceOf[js.Any])
     
-    inline def setActionTargetsVarargs(value: ActionTarget*): Self = StObject.set(x, "ActionTargets", js.Array(value :_*))
+    inline def setActionTargetsVarargs(value: ActionTarget*): Self = StObject.set(x, "ActionTargets", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

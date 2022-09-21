@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientChatStrings {
   
   @js.native
+  sealed trait CommonEventObject extends StObject
+  inline def CommonEventObject: CommonEventObject = "CommonEventObject".asInstanceOf[CommonEventObject]
+  
+  @js.native
+  sealed trait Status extends StObject
+  inline def Status: Status = "Status".asInstanceOf[Status]
+  
+  @js.native
   sealed trait chat extends StObject
   inline def chat: chat = "chat".asInstanceOf[chat]
   

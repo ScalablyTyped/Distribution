@@ -25,7 +25,7 @@ object ViewManagement {
   @JSGlobal("Windows.UI.ViewManagement.AccessibilitySettings")
   @js.native
   /** Initializes a new AccessibilitySettings object. */
-  class AccessibilitySettings ()
+  open class AccessibilitySettings ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.AccessibilitySettings
   
@@ -85,8 +85,8 @@ object ViewManagement {
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ApplicationView.tryUnsnapToFullscreen")
     @js.native
-    def tryUnsnapToFullscreen: js.Any = js.native
-    inline def tryUnsnapToFullscreen_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryUnsnapToFullscreen")(x.asInstanceOf[js.Any])
+    def tryUnsnapToFullscreen: Any = js.native
+    inline def tryUnsnapToFullscreen_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryUnsnapToFullscreen")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /** Gets the state of the current window (app view). */
@@ -171,8 +171,8 @@ object ViewManagement {
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ApplicationViewSwitcher.disableSystemViewActivationPolicy")
     @js.native
-    def disableSystemViewActivationPolicy: js.Any = js.native
-    inline def disableSystemViewActivationPolicy_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableSystemViewActivationPolicy")(x.asInstanceOf[js.Any])
+    def disableSystemViewActivationPolicy: Any = js.native
+    inline def disableSystemViewActivationPolicy_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableSystemViewActivationPolicy")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /**
@@ -323,7 +323,7 @@ object ViewManagement {
     
     /* unmapped type */
     /* CompleteClass */
-    var viewId: js.Any = js.native
+    var viewId: Any = js.native
   }
   object ApplicationViewTransferContext {
     
@@ -334,8 +334,8 @@ object ViewManagement {
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext.dataPackageFormatId")
     @js.native
-    def dataPackageFormatId: js.Any = js.native
-    inline def dataPackageFormatId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataPackageFormatId")(x.asInstanceOf[js.Any])
+    def dataPackageFormatId: Any = js.native
+    inline def dataPackageFormatId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataPackageFormatId")(x.asInstanceOf[js.Any])
   }
   
   /** Defines constants that specify whether the app window is auto-sized, full-screen, or set to a specific size on launch. */
@@ -428,10 +428,10 @@ object ViewManagement {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns a string that is used to enumerate device services.
@@ -444,8 +444,8 @@ object ViewManagement {
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ProjectionManager.onprojectiondisplayavailablechanged")
     @js.native
-    def onprojectiondisplayavailablechanged: EventHandler[js.Any] = js.native
-    inline def onprojectiondisplayavailablechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprojectiondisplayavailablechanged")(x.asInstanceOf[js.Any])
+    def onprojectiondisplayavailablechanged: EventHandler[Any] = js.native
+    inline def onprojectiondisplayavailablechanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprojectiondisplayavailablechanged")(x.asInstanceOf[js.Any])
     
     /** Gets whether or not a projection display is available to use. */
     /* static member */
@@ -455,10 +455,10 @@ object ViewManagement {
     inline def projectionDisplayAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("projectionDisplayAvailable")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Makes a request to asynchronously sends a window (app view) to the projector or other secondary display.
@@ -585,7 +585,7 @@ object ViewManagement {
   @JSGlobal("Windows.UI.ViewManagement.UISettings")
   @js.native
   /** Creates a new default instance of the UISettings class. */
-  class UISettings ()
+  open class UISettings ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.UISettings
   

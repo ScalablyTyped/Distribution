@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the format protection of a range object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @js.native
@@ -26,9 +26,9 @@ trait FormatProtection
   var context_FormatProtection: RequestContext = js.native
   
   /**
+    * Specifies if Excel hides the formula for the cells in the range. A `null` value indicates that the entire range doesn't have a uniform formula hidden setting.
     *
-    * Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var formulaHidden: Boolean = js.native
@@ -45,23 +45,17 @@ trait FormatProtection
   def load(propertyNames: js.Array[String]): FormatProtection = js.native
   
   /**
+    * Specifies if Excel locks the cells in the object. A `null` value indicates that the entire range doesn't have a uniform lock setting.
     *
-    * Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var locked: Boolean = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: FormatProtection): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.FormatProtection): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

@@ -25,7 +25,7 @@ object MapDataProvider {
     
     inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    inline def setBoundsVarargs(value: (LatLngBounds | LatLngBoundsLiteral | PointBounds | PointBoundsLiteral)*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: (LatLngBounds | LatLngBoundsLiteral | PointBounds | PointBoundsLiteral)*): Self = StObject.set(x, "bounds", js.Array(value*))
     
     inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     

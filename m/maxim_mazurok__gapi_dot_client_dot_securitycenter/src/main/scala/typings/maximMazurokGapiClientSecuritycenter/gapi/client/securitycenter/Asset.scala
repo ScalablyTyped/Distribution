@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Asset extends StObject {
   
+  /**
+    * The canonical name of the resource. It's either "organizations/{organization_id}/assets/{asset_id}", "folders/{folder_id}/assets/{asset_id}" or
+    * "projects/{project_number}/assets/{asset_id}", depending on the closest CRM ancestor of the resource.
+    */
+  var canonicalName: js.UndefOr[String] = js.undefined
+  
   /** The time at which the asset was created in Security Command Center. */
   var createTime: js.UndefOr[String] = js.undefined
   
@@ -26,7 +32,7 @@ trait Asset extends StObject {
   var resourceProperties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Asset & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Asset & TopLevel[Any]
   ] = js.undefined
   
   /** Security Command Center managed properties. These properties are managed by Security Command Center and cannot be modified by the user. */
@@ -35,7 +41,7 @@ trait Asset extends StObject {
   /** User specified security marks. These marks are entirely managed by the user and come from the SecurityMarks resource that belongs to the asset. */
   var securityMarks: js.UndefOr[SecurityMarks] = js.undefined
   
-  /** The time at which the asset was last updated, added, or deleted in Security Command Center. */
+  /** The time at which the asset was last updated or added in Cloud SCC. */
   var updateTime: js.UndefOr[String] = js.undefined
 }
 object Asset {
@@ -46,6 +52,10 @@ object Asset {
   }
   
   extension [Self <: Asset](x: Self) {
+    
+    inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
+    
+    inline def setCanonicalNameUndefined: Self = StObject.set(x, "canonicalName", js.undefined)
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
@@ -62,7 +72,7 @@ object Asset {
     inline def setResourceProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Asset & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Asset & TopLevel[Any]
     ): Self = StObject.set(x, "resourceProperties", value.asInstanceOf[js.Any])
     
     inline def setResourcePropertiesUndefined: Self = StObject.set(x, "resourceProperties", js.undefined)

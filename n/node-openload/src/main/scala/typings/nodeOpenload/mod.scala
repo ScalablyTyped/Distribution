@@ -7,7 +7,6 @@ import typings.nodeOpenload.anon.Contenttype
 import typings.nodeOpenload.anon.Cstatus
 import typings.nodeOpenload.anon.Id
 import typings.nodeOpenload.anon.Left
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -214,11 +213,11 @@ object mod {
       
       inline def setFiles(value: js.Array[Cstatus]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: Cstatus*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: Cstatus*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setFolders(value: js.Array[Id]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
-      inline def setFoldersVarargs(value: Id*): Self = StObject.set(x, "folders", js.Array(value :_*))
+      inline def setFoldersVarargs(value: Id*): Self = StObject.set(x, "folders", js.Array(value*))
     }
   }
   
@@ -454,7 +453,7 @@ object mod {
     
     var contentType: js.UndefOr[String] = js.undefined
     
-    var file: String | ArrayBuffer
+    var file: String | js.typedarray.ArrayBuffer
     
     var filename: js.UndefOr[String] = js.undefined
     
@@ -462,7 +461,7 @@ object mod {
   }
   object UploadParam {
     
-    inline def apply(file: String | ArrayBuffer): UploadParam = {
+    inline def apply(file: String | js.typedarray.ArrayBuffer): UploadParam = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadParam]
     }
@@ -473,7 +472,7 @@ object mod {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      inline def setFile(value: String | ArrayBuffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

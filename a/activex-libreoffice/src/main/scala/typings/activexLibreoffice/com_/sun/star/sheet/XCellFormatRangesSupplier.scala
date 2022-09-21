@@ -42,7 +42,7 @@ object XCellFormatRangesSupplier {
     CellFormatRanges: XIndexAccess,
     acquire: () => Unit,
     getCellFormatRanges: () => XIndexAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCellFormatRangesSupplier = {
     val __obj = js.Dynamic.literal(CellFormatRanges = CellFormatRanges.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getCellFormatRanges = js.Any.fromFunction0(getCellFormatRanges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

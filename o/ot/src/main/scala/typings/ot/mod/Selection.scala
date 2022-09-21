@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ot", "Selection")
 @js.native
-class Selection () extends StObject {
+open class Selection () extends StObject {
   
   /**
     * Return the more current selection information.
@@ -22,7 +22,7 @@ class Selection () extends StObject {
   
   var ranges: js.Array[Range] = js.native
   
-  var selectionEnd: js.UndefOr[js.Any] = js.native
+  var selectionEnd: js.UndefOr[Any] = js.native
   
   def somethingSelected(): Boolean = js.native
   
@@ -47,7 +47,7 @@ object Selection {
     */
   @JSImport("ot", "Selection.Range")
   @js.native
-  class Range protected () extends StObject {
+  open class Range protected () extends StObject {
     def this(anchor: Double, head: Double) = this()
     
     var anchor: Double = js.native

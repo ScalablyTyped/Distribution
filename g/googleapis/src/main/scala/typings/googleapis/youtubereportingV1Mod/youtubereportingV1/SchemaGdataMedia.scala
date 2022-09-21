@@ -4,25 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * gdata
-  */
 trait SchemaGdataMedia extends StObject {
   
   /**
     * gdata
     */
-  var algorithm: js.UndefOr[String] = js.undefined
+  var algorithm: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var bigstoreObjectRef: js.UndefOr[String] = js.undefined
+  var bigstoreObjectRef: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var blobRef: js.UndefOr[String] = js.undefined
+  var blobRef: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
@@ -37,7 +34,7 @@ trait SchemaGdataMedia extends StObject {
   /**
     * gdata
     */
-  var contentType: js.UndefOr[String] = js.undefined
+  var contentType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
@@ -47,12 +44,12 @@ trait SchemaGdataMedia extends StObject {
   /**
     * gdata
     */
-  var cosmoBinaryReference: js.UndefOr[String] = js.undefined
+  var cosmoBinaryReference: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var crc32cHash: js.UndefOr[Double] = js.undefined
+  var crc32cHash: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * gdata
@@ -87,42 +84,42 @@ trait SchemaGdataMedia extends StObject {
   /**
     * gdata
     */
-  var filename: js.UndefOr[String] = js.undefined
+  var filename: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var hash: js.UndefOr[String] = js.undefined
+  var hash: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var hashVerified: js.UndefOr[Boolean] = js.undefined
+  var hashVerified: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * gdata
     */
-  var `inline`: js.UndefOr[String] = js.undefined
+  var `inline`: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var isPotentialRetry: js.UndefOr[Boolean] = js.undefined
+  var isPotentialRetry: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * gdata
     */
-  var length: js.UndefOr[String] = js.undefined
+  var length: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var md5Hash: js.UndefOr[String] = js.undefined
+  var md5Hash: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var mediaId: js.UndefOr[String] = js.undefined
+  var mediaId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
@@ -132,32 +129,32 @@ trait SchemaGdataMedia extends StObject {
   /**
     * gdata
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var referenceType: js.UndefOr[String] = js.undefined
+  var referenceType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var sha1Hash: js.UndefOr[String] = js.undefined
+  var sha1Hash: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var sha256Hash: js.UndefOr[String] = js.undefined
+  var sha256Hash: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var timestamp: js.UndefOr[String] = js.undefined
+  var timestamp: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var token: js.UndefOr[String] = js.undefined
+  var token: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGdataMedia {
   
@@ -170,13 +167,19 @@ object SchemaGdataMedia {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
+    inline def setAlgorithmNull: Self = StObject.set(x, "algorithm", null)
+    
     inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     inline def setBigstoreObjectRef(value: String): Self = StObject.set(x, "bigstoreObjectRef", value.asInstanceOf[js.Any])
     
+    inline def setBigstoreObjectRefNull: Self = StObject.set(x, "bigstoreObjectRef", null)
+    
     inline def setBigstoreObjectRefUndefined: Self = StObject.set(x, "bigstoreObjectRef", js.undefined)
     
     inline def setBlobRef(value: String): Self = StObject.set(x, "blobRef", value.asInstanceOf[js.Any])
+    
+    inline def setBlobRefNull: Self = StObject.set(x, "blobRef", null)
     
     inline def setBlobRefUndefined: Self = StObject.set(x, "blobRef", js.undefined)
     
@@ -188,7 +191,7 @@ object SchemaGdataMedia {
     
     inline def setCompositeMediaUndefined: Self = StObject.set(x, "compositeMedia", js.undefined)
     
-    inline def setCompositeMediaVarargs(value: SchemaGdataCompositeMedia*): Self = StObject.set(x, "compositeMedia", js.Array(value :_*))
+    inline def setCompositeMediaVarargs(value: SchemaGdataCompositeMedia*): Self = StObject.set(x, "compositeMedia", js.Array(value*))
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
@@ -196,13 +199,19 @@ object SchemaGdataMedia {
     
     inline def setContentTypeInfoUndefined: Self = StObject.set(x, "contentTypeInfo", js.undefined)
     
+    inline def setContentTypeNull: Self = StObject.set(x, "contentType", null)
+    
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     inline def setCosmoBinaryReference(value: String): Self = StObject.set(x, "cosmoBinaryReference", value.asInstanceOf[js.Any])
     
+    inline def setCosmoBinaryReferenceNull: Self = StObject.set(x, "cosmoBinaryReference", null)
+    
     inline def setCosmoBinaryReferenceUndefined: Self = StObject.set(x, "cosmoBinaryReference", js.undefined)
     
     inline def setCrc32cHash(value: Double): Self = StObject.set(x, "crc32cHash", value.asInstanceOf[js.Any])
+    
+    inline def setCrc32cHashNull: Self = StObject.set(x, "crc32cHash", null)
     
     inline def setCrc32cHashUndefined: Self = StObject.set(x, "crc32cHash", js.undefined)
     
@@ -232,33 +241,49 @@ object SchemaGdataMedia {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
+    inline def setFilenameNull: Self = StObject.set(x, "filename", null)
+    
     inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    
+    inline def setHashNull: Self = StObject.set(x, "hash", null)
     
     inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     inline def setHashVerified(value: Boolean): Self = StObject.set(x, "hashVerified", value.asInstanceOf[js.Any])
     
+    inline def setHashVerifiedNull: Self = StObject.set(x, "hashVerified", null)
+    
     inline def setHashVerifiedUndefined: Self = StObject.set(x, "hashVerified", js.undefined)
     
     inline def setInline(value: String): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    
+    inline def setInlineNull: Self = StObject.set(x, "inline", null)
     
     inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     inline def setIsPotentialRetry(value: Boolean): Self = StObject.set(x, "isPotentialRetry", value.asInstanceOf[js.Any])
     
+    inline def setIsPotentialRetryNull: Self = StObject.set(x, "isPotentialRetry", null)
+    
     inline def setIsPotentialRetryUndefined: Self = StObject.set(x, "isPotentialRetry", js.undefined)
     
     inline def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthNull: Self = StObject.set(x, "length", null)
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
     
+    inline def setMd5HashNull: Self = StObject.set(x, "md5Hash", null)
+    
     inline def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
     
     inline def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
+    
+    inline def setMediaIdNull: Self = StObject.set(x, "mediaId", null)
     
     inline def setMediaIdUndefined: Self = StObject.set(x, "mediaId", js.undefined)
     
@@ -268,25 +293,37 @@ object SchemaGdataMedia {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
+    inline def setPathNull: Self = StObject.set(x, "path", null)
+    
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     inline def setReferenceType(value: String): Self = StObject.set(x, "referenceType", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceTypeNull: Self = StObject.set(x, "referenceType", null)
     
     inline def setReferenceTypeUndefined: Self = StObject.set(x, "referenceType", js.undefined)
     
     inline def setSha1Hash(value: String): Self = StObject.set(x, "sha1Hash", value.asInstanceOf[js.Any])
     
+    inline def setSha1HashNull: Self = StObject.set(x, "sha1Hash", null)
+    
     inline def setSha1HashUndefined: Self = StObject.set(x, "sha1Hash", js.undefined)
     
     inline def setSha256Hash(value: String): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
+    
+    inline def setSha256HashNull: Self = StObject.set(x, "sha256Hash", null)
     
     inline def setSha256HashUndefined: Self = StObject.set(x, "sha256Hash", js.undefined)
     
     inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
+    
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenNull: Self = StObject.set(x, "token", null)
     
     inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }

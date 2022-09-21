@@ -9,10 +9,10 @@ trait Cancel extends StObject {
   
   def cancel(): Unit = js.native
   
-  def done(args: js.Any*): js.Any = js.native
+  def done(args: Any*): Any = js.native
   
-  def `then`(): js.Promise[js.Any] = js.native
-  def `then`(onfulfilled: js.Function0[js.Any]): js.Promise[js.Any] = js.native
-  def `then`(onfulfilled: js.Function0[js.Any], onrejected: js.Function0[js.Any]): js.Promise[js.Any] = js.native
-  def `then`(onfulfilled: Unit, onrejected: js.Function0[js.Any]): js.Promise[js.Any] = js.native
+  def `then`(): js.Promise[Any] = js.native
+  def `then`(onfulfilled: js.Function0[Any]): js.Promise[Any] = js.native
+  def `then`(onfulfilled: js.Function0[Any], onrejected: js.Function0[Any]): js.Promise[Any] = js.native
+  def `then`(onfulfilled: Unit, onrejected: js.Function0[Any]): js.Promise[Any] = js.native
 }

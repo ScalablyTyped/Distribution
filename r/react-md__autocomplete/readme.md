@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__autocomplete
 
-Typings are for version 2.4.3
+Typings are for version 5.1.4
 
 ## Library description:
 Create an accessible autocomplete component that allows a user to get real-time suggestions as they type within an input. This component can also be hooked up to a backend API that handles additional filtering or sorting.
@@ -10,10 +10,10 @@ Create an accessible autocomplete component that allows a user to get real-time 
 | ------------------ | :-------------: |
 | Full name          | @react-md/autocomplete |
 | Keywords           | accessibility, a11y, react-md, material design, react, autocomplete, typeahead, component, components |
-| # releases         | 35 |
-| # dependents       | 1 |
-| # downloads        | 17634 |
-| # stars            | 0 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 6756.0 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/autocomplete/demos)

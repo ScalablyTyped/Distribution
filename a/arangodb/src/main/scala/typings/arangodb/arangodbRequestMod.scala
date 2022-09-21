@@ -7,7 +7,7 @@ import typings.arangodb.anon.FnCall
 import typings.arangodb.anon.Password
 import typings.arangodb.anon.urlstringRequestOptions
 import typings.arangodb.anon.urlstringmethodHttpMethod
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,13 +64,13 @@ object arangodbRequestMod extends Shortcut {
     
     var auth: js.UndefOr[Password | Bearer] = js.undefined
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var encoding: js.UndefOr[String | Null] = js.undefined
     
     var followRedirect: js.UndefOr[Boolean] = js.undefined
     
-    var form: js.UndefOr[js.Any] = js.undefined
+    var form: js.UndefOr[Any] = js.undefined
     
     var headers: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
     
@@ -101,7 +101,7 @@ object arangodbRequestMod extends Shortcut {
       
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -115,7 +115,7 @@ object arangodbRequestMod extends Shortcut {
       
       inline def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
       
-      inline def setForm(value: js.Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
@@ -160,7 +160,7 @@ object arangodbRequestMod extends Shortcut {
     
     var headers: StringDictionary[js.UndefOr[String]] = js.native
     
-    var json: js.UndefOr[js.Any] = js.native
+    var json: js.UndefOr[Any] = js.native
     
     var message: String = js.native
     

@@ -1,9 +1,8 @@
 package typings.checkSum
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,9 @@ object mod {
   inline def apply(
     path: String,
     hashes: Hashes,
-    callback: js.Function1[/* error */ js.UndefOr[ChecksumError | Error], Unit]
+    callback: js.Function1[/* error */ js.UndefOr[ChecksumError | js.Error], Unit]
   ): js.Function1[/* fn */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], hashes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fn */ js.Function0[Unit], Unit]]
-  inline def apply(stream: Readable, hashes: Hashes, callback: js.Function1[/* error */ ChecksumError | js.Any, Unit]): js.Function1[/* fn */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], hashes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fn */ js.Function0[Unit], Unit]]
+  inline def apply(stream: Readable, hashes: Hashes, callback: js.Function1[/* error */ ChecksumError | Any, Unit]): js.Function1[/* fn */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], hashes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fn */ js.Function0[Unit], Unit]]
   
   @JSImport("check-sum", JSImport.Namespace)
   @js.native

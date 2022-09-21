@@ -13,7 +13,7 @@ object mod extends Shortcut {
   
   @JSImport("@expo/status-bar-height", "StatusBarHeight")
   @js.native
-  class StatusBarHeight () extends StObject {
+  open class StatusBarHeight () extends StObject {
     
     /**
       * Add 'willChange' event listener

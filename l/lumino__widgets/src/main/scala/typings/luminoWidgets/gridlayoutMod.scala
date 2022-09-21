@@ -17,38 +17,38 @@ object gridlayoutMod {
     *
     * @param options - The options for initializing the layout.
     */
-  class GridLayout () extends Layout {
+  open class GridLayout () extends Layout {
     def this(options: IOptions) = this()
     
-    /* private */ var _box: js.Any = js.native
+    /* private */ var _box: Any = js.native
     
-    /* private */ var _columnSizers: js.Any = js.native
+    /* private */ var _columnSizers: Any = js.native
     
-    /* private */ var _columnSpacing: js.Any = js.native
+    /* private */ var _columnSpacing: Any = js.native
     
-    /* private */ var _columnStarts: js.Any = js.native
+    /* private */ var _columnStarts: Any = js.native
     
-    /* private */ var _dirty: js.Any = js.native
+    /* private */ var _dirty: Any = js.native
     
     /**
       * Fit the layout to the total size required by the widgets.
       */
-    /* private */ var _fit: js.Any = js.native
+    /* private */ var _fit: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _items: Any = js.native
     
-    /* private */ var _rowSizers: js.Any = js.native
+    /* private */ var _rowSizers: Any = js.native
     
-    /* private */ var _rowSpacing: js.Any = js.native
+    /* private */ var _rowSpacing: Any = js.native
     
-    /* private */ var _rowStarts: js.Any = js.native
+    /* private */ var _rowStarts: Any = js.native
     
     /**
       * Update the layout position and size of the widgets.
       *
       * The parent offset dimensions should be `-1` if unknown.
       */
-    /* private */ var _update: js.Any = js.native
+    /* private */ var _update: Any = js.native
     
     /**
       * Add a widget to the grid layout.

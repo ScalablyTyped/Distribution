@@ -4,19 +4,19 @@
 Typings are for version 1.7
 
 ## Library description:
-Provides a Redis store for the express-rate-limit RateLimit middleware.
+A Redis store for the `express-rate-limit` middleware
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rate-limit-redis |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 16 |
-| # downloads        | 1973017 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 457380.0 |
+| # stars            | 128.0 |
 
 ## Links
-- [Homepage](https://github.com/wyattjoh/rate-limit-redis#readme)
+- [Homepage](https://github.com/wyattjoh/rate-limit-redis)
 - [Bugs](https://github.com/wyattjoh/rate-limit-redis/issues)
 - [Repository](https://github.com/wyattjoh/rate-limit-redis)
 - [Npm](https://www.npmjs.com/package/rate-limit-redis)

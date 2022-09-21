@@ -12,29 +12,29 @@ object webcamIteratorMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator")
   @js.native
-  /* private */ class WebcamIterator () extends LazyIterator[Tensor3D] {
+  /* private */ open class WebcamIterator () extends LazyIterator[Tensor3D] {
     
     def capture(): js.Promise[Tensor3D] = js.native
     
     def cropAndResizeFrame(img: Tensor3D): Tensor3D = js.native
     
-    /* private */ var cropBox: js.Any = js.native
+    /* private */ var cropBox: Any = js.native
     
-    /* private */ var cropBoxInd: js.Any = js.native
+    /* private */ var cropBoxInd: Any = js.native
     
-    /* private */ var cropSize: js.Any = js.native
+    /* private */ var cropSize: Any = js.native
     
-    /* private */ var isClosed: js.Any = js.native
+    /* private */ var isClosed: Any = js.native
     
-    /* private */ var needToResize: js.Any = js.native
+    /* private */ var needToResize: Any = js.native
     
-    /* private */ var resize: js.Any = js.native
+    /* private */ var resize: Any = js.native
     
     def start(): js.Promise[Unit] = js.native
     
     def stop(): Unit = js.native
     
-    /* private */ var stream: js.Any = js.native
+    /* private */ var stream: Any = js.native
     
     /* protected */ val webcamConfig: WebcamConfig = js.native
     

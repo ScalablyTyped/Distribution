@@ -8,24 +8,24 @@ object pathParamModelMod {
   
   @JSImport("lambda-phi/lib/path-param-model", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with PathParamModel {
     
     /* private */ /* CompleteClass */
-    var _defaultValue: js.Any = js.native
+    var _defaultValue: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _index: js.Any = js.native
+    var _index: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _methodName: js.Any = js.native
+    var _methodName: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _name: js.Any = js.native
+    var _name: Any = js.native
     
     /* CompleteClass */
-    var defaultValue: js.Any = js.native
+    var defaultValue: Any = js.native
     
     /* CompleteClass */
     var index: Double = js.native
@@ -39,15 +39,15 @@ object pathParamModelMod {
   
   trait PathParamModel extends StObject {
     
-    /* private */ var _defaultValue: js.Any
+    /* private */ var _defaultValue: Any
     
-    /* private */ var _index: js.Any
+    /* private */ var _index: Any
     
-    /* private */ var _methodName: js.Any
+    /* private */ var _methodName: Any
     
-    /* private */ var _name: js.Any
+    /* private */ var _name: Any
     
-    var defaultValue: js.Any
+    var defaultValue: Any
     
     var index: Double
     
@@ -58,11 +58,11 @@ object pathParamModelMod {
   object PathParamModel {
     
     inline def apply(
-      _defaultValue: js.Any,
-      _index: js.Any,
-      _methodName: js.Any,
-      _name: js.Any,
-      defaultValue: js.Any,
+      _defaultValue: Any,
+      _index: Any,
+      _methodName: Any,
+      _name: Any,
+      defaultValue: Any,
       index: Double,
       methodName: String,
       name: String
@@ -73,7 +73,7 @@ object pathParamModelMod {
     
     extension [Self <: PathParamModel](x: Self) {
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -81,13 +81,13 @@ object pathParamModelMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def set_defaultValue(value: js.Any): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
+      inline def set_defaultValue(value: Any): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
       
-      inline def set_index(value: js.Any): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
+      inline def set_index(value: Any): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
       
-      inline def set_methodName(value: js.Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
+      inline def set_methodName(value: Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
       
-      inline def set_name(value: js.Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+      inline def set_name(value: Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     }
   }
 }

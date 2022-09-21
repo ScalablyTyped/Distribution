@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LocationSubscription extends StObject {
   
+  /**
+    * Call this function with no arguments to remove this subscription. The callback will no longer
+    * be called for location updates.
+    */
   def remove(): Unit
 }
 object LocationSubscription {

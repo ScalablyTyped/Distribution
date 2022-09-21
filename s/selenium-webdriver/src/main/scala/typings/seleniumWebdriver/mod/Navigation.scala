@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "Navigation")
 @js.native
-class Navigation protected () extends StObject {
+open class Navigation protected () extends StObject {
   // region Constructors
   /**
     * Interface for navigating back and forth in the browser history.

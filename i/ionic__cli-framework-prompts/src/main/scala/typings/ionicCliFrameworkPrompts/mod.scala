@@ -43,7 +43,7 @@ object mod {
     }
   }
   
-  type Inquirer = typings.inquirer.mod.Inquirer
+  type Inquirer = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_inquirer.Inquirer */ Any
   
   @js.native
   trait PromptModule extends StObject {
@@ -128,13 +128,13 @@ object mod {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setFallback(value: PromptValue): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      inline def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value :_*))
+      inline def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -170,13 +170,13 @@ object mod {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setFallback(value: PromptValueCheckbox): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      inline def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value :_*))
+      inline def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value*))
       
       inline def setType(value: PromptTypeCheckbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -285,5 +285,5 @@ object mod {
   
   type Question = typings.inquirer.mod.Question[Answers]
   
-  type Separator = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_inquirer.objects.Separator */ js.Any
+  type Separator = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_inquirer.objects.Separator */ Any
 }

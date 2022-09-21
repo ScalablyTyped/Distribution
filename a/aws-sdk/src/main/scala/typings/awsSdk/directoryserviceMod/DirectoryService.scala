@@ -26,12 +26,12 @@ trait DirectoryService extends Service {
   ): Request[AcceptSharedDirectoryResult, AWSError] = js.native
   
   /**
-    * If the DNS server for your on-premises domain uses a publicly addressable IP address, you must add a CIDR address block to correctly route traffic to and from your Microsoft AD on Amazon Web Services. AddIpRoutes adds this address block. You can also use AddIpRoutes to facilitate routing traffic that uses public IP ranges from your Microsoft AD on AWS to a peer VPC.  Before you call AddIpRoutes, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the AddIpRoutes operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * If the DNS server for your self-managed domain uses a publicly addressable IP address, you must add a CIDR address block to correctly route traffic to and from your Microsoft AD on Amazon Web Services. AddIpRoutes adds this address block. You can also use AddIpRoutes to facilitate routing traffic that uses public IP ranges from your Microsoft AD on Amazon Web Services to a peer VPC.  Before you call AddIpRoutes, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the AddIpRoutes operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def addIpRoutes(): Request[AddIpRoutesResult, AWSError] = js.native
   def addIpRoutes(callback: js.Function2[/* err */ AWSError, /* data */ AddIpRoutesResult, Unit]): Request[AddIpRoutesResult, AWSError] = js.native
   /**
-    * If the DNS server for your on-premises domain uses a publicly addressable IP address, you must add a CIDR address block to correctly route traffic to and from your Microsoft AD on Amazon Web Services. AddIpRoutes adds this address block. You can also use AddIpRoutes to facilitate routing traffic that uses public IP ranges from your Microsoft AD on AWS to a peer VPC.  Before you call AddIpRoutes, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the AddIpRoutes operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * If the DNS server for your self-managed domain uses a publicly addressable IP address, you must add a CIDR address block to correctly route traffic to and from your Microsoft AD on Amazon Web Services. AddIpRoutes adds this address block. You can also use AddIpRoutes to facilitate routing traffic that uses public IP ranges from your Microsoft AD on Amazon Web Services to a peer VPC.  Before you call AddIpRoutes, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the AddIpRoutes operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def addIpRoutes(params: AddIpRoutesRequest): Request[AddIpRoutesResult, AWSError] = js.native
   def addIpRoutes(
@@ -85,12 +85,12 @@ trait DirectoryService extends Service {
   var config_DirectoryService: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates an AD Connector to connect to an on-premises directory. Before you call ConnectDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the ConnectDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates an AD Connector to connect to a self-managed directory. Before you call ConnectDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the ConnectDirectory operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def connectDirectory(): Request[ConnectDirectoryResult, AWSError] = js.native
   def connectDirectory(callback: js.Function2[/* err */ AWSError, /* data */ ConnectDirectoryResult, Unit]): Request[ConnectDirectoryResult, AWSError] = js.native
   /**
-    * Creates an AD Connector to connect to an on-premises directory. Before you call ConnectDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the ConnectDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates an AD Connector to connect to a self-managed directory. Before you call ConnectDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the ConnectDirectory operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def connectDirectory(params: ConnectDirectoryRequest): Request[ConnectDirectoryResult, AWSError] = js.native
   def connectDirectory(
@@ -127,12 +127,12 @@ trait DirectoryService extends Service {
   ): Request[CreateComputerResult, AWSError] = js.native
   
   /**
-    * Creates a conditional forwarder associated with your AWS directory. Conditional forwarders are required in order to set up a trust relationship with another domain. The conditional forwarder points to the trusted domain.
+    * Creates a conditional forwarder associated with your Amazon Web Services directory. Conditional forwarders are required in order to set up a trust relationship with another domain. The conditional forwarder points to the trusted domain.
     */
   def createConditionalForwarder(): Request[CreateConditionalForwarderResult, AWSError] = js.native
   def createConditionalForwarder(callback: js.Function2[/* err */ AWSError, /* data */ CreateConditionalForwarderResult, Unit]): Request[CreateConditionalForwarderResult, AWSError] = js.native
   /**
-    * Creates a conditional forwarder associated with your AWS directory. Conditional forwarders are required in order to set up a trust relationship with another domain. The conditional forwarder points to the trusted domain.
+    * Creates a conditional forwarder associated with your Amazon Web Services directory. Conditional forwarders are required in order to set up a trust relationship with another domain. The conditional forwarder points to the trusted domain.
     */
   def createConditionalForwarder(params: CreateConditionalForwarderRequest): Request[CreateConditionalForwarderResult, AWSError] = js.native
   def createConditionalForwarder(
@@ -141,12 +141,12 @@ trait DirectoryService extends Service {
   ): Request[CreateConditionalForwarderResult, AWSError] = js.native
   
   /**
-    * Creates a Simple AD directory. For more information, see Simple Active Directory in the AWS Directory Service Admin Guide. Before you call CreateDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates a Simple AD directory. For more information, see Simple Active Directory in the Directory Service Admin Guide. Before you call CreateDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateDirectory operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def createDirectory(): Request[CreateDirectoryResult, AWSError] = js.native
   def createDirectory(callback: js.Function2[/* err */ AWSError, /* data */ CreateDirectoryResult, Unit]): Request[CreateDirectoryResult, AWSError] = js.native
   /**
-    * Creates a Simple AD directory. For more information, see Simple Active Directory in the AWS Directory Service Admin Guide. Before you call CreateDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates a Simple AD directory. For more information, see Simple Active Directory in the Directory Service Admin Guide. Before you call CreateDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateDirectory operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def createDirectory(params: CreateDirectoryRequest): Request[CreateDirectoryResult, AWSError] = js.native
   def createDirectory(
@@ -155,12 +155,12 @@ trait DirectoryService extends Service {
   ): Request[CreateDirectoryResult, AWSError] = js.native
   
   /**
-    * Creates a subscription to forward real-time Directory Service domain controller security logs to the specified Amazon CloudWatch log group in your AWS account.
+    * Creates a subscription to forward real-time Directory Service domain controller security logs to the specified Amazon CloudWatch log group in your Amazon Web Services account.
     */
   def createLogSubscription(): Request[CreateLogSubscriptionResult, AWSError] = js.native
   def createLogSubscription(callback: js.Function2[/* err */ AWSError, /* data */ CreateLogSubscriptionResult, Unit]): Request[CreateLogSubscriptionResult, AWSError] = js.native
   /**
-    * Creates a subscription to forward real-time Directory Service domain controller security logs to the specified Amazon CloudWatch log group in your AWS account.
+    * Creates a subscription to forward real-time Directory Service domain controller security logs to the specified Amazon CloudWatch log group in your Amazon Web Services account.
     */
   def createLogSubscription(params: CreateLogSubscriptionRequest): Request[CreateLogSubscriptionResult, AWSError] = js.native
   def createLogSubscription(
@@ -169,12 +169,12 @@ trait DirectoryService extends Service {
   ): Request[CreateLogSubscriptionResult, AWSError] = js.native
   
   /**
-    * Creates a Microsoft AD directory in the AWS Cloud. For more information, see AWS Managed Microsoft AD in the AWS Directory Service Admin Guide. Before you call CreateMicrosoftAD, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateMicrosoftAD operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates a Microsoft AD directory in the Amazon Web Services Cloud. For more information, see Managed Microsoft AD in the Directory Service Admin Guide. Before you call CreateMicrosoftAD, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateMicrosoftAD operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def createMicrosoftAD(): Request[CreateMicrosoftADResult, AWSError] = js.native
   def createMicrosoftAD(callback: js.Function2[/* err */ AWSError, /* data */ CreateMicrosoftADResult, Unit]): Request[CreateMicrosoftADResult, AWSError] = js.native
   /**
-    * Creates a Microsoft AD directory in the AWS Cloud. For more information, see AWS Managed Microsoft AD in the AWS Directory Service Admin Guide. Before you call CreateMicrosoftAD, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateMicrosoftAD operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates a Microsoft AD directory in the Amazon Web Services Cloud. For more information, see Managed Microsoft AD in the Directory Service Admin Guide. Before you call CreateMicrosoftAD, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateMicrosoftAD operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def createMicrosoftAD(params: CreateMicrosoftADRequest): Request[CreateMicrosoftADResult, AWSError] = js.native
   def createMicrosoftAD(
@@ -183,12 +183,12 @@ trait DirectoryService extends Service {
   ): Request[CreateMicrosoftADResult, AWSError] = js.native
   
   /**
-    * Creates a snapshot of a Simple AD or Microsoft AD directory in the AWS cloud.  You cannot take snapshots of AD Connector directories. 
+    * Creates a snapshot of a Simple AD or Microsoft AD directory in the Amazon Web Services cloud.  You cannot take snapshots of AD Connector directories. 
     */
   def createSnapshot(): Request[CreateSnapshotResult, AWSError] = js.native
   def createSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotResult, Unit]): Request[CreateSnapshotResult, AWSError] = js.native
   /**
-    * Creates a snapshot of a Simple AD or Microsoft AD directory in the AWS cloud.  You cannot take snapshots of AD Connector directories. 
+    * Creates a snapshot of a Simple AD or Microsoft AD directory in the Amazon Web Services cloud.  You cannot take snapshots of AD Connector directories. 
     */
   def createSnapshot(params: CreateSnapshotRequest): Request[CreateSnapshotResult, AWSError] = js.native
   def createSnapshot(
@@ -197,12 +197,12 @@ trait DirectoryService extends Service {
   ): Request[CreateSnapshotResult, AWSError] = js.native
   
   /**
-    * AWS Directory Service for Microsoft Active Directory allows you to configure trust relationships. For example, you can establish a trust between your AWS Managed Microsoft AD directory, and your existing on-premises Microsoft Active Directory. This would allow you to provide users and groups access to resources in either domain, with a single set of credentials. This action initiates the creation of the AWS side of a trust relationship between an AWS Managed Microsoft AD directory and an external domain. You can create either a forest trust or an external trust.
+    * Directory Service for Microsoft Active Directory allows you to configure trust relationships. For example, you can establish a trust between your Managed Microsoft AD directory, and your existing self-managed Microsoft Active Directory. This would allow you to provide users and groups access to resources in either domain, with a single set of credentials. This action initiates the creation of the Amazon Web Services side of a trust relationship between an Managed Microsoft AD directory and an external domain. You can create either a forest trust or an external trust.
     */
   def createTrust(): Request[CreateTrustResult, AWSError] = js.native
   def createTrust(callback: js.Function2[/* err */ AWSError, /* data */ CreateTrustResult, Unit]): Request[CreateTrustResult, AWSError] = js.native
   /**
-    * AWS Directory Service for Microsoft Active Directory allows you to configure trust relationships. For example, you can establish a trust between your AWS Managed Microsoft AD directory, and your existing on-premises Microsoft Active Directory. This would allow you to provide users and groups access to resources in either domain, with a single set of credentials. This action initiates the creation of the AWS side of a trust relationship between an AWS Managed Microsoft AD directory and an external domain. You can create either a forest trust or an external trust.
+    * Directory Service for Microsoft Active Directory allows you to configure trust relationships. For example, you can establish a trust between your Managed Microsoft AD directory, and your existing self-managed Microsoft Active Directory. This would allow you to provide users and groups access to resources in either domain, with a single set of credentials. This action initiates the creation of the Amazon Web Services side of a trust relationship between an Managed Microsoft AD directory and an external domain. You can create either a forest trust or an external trust.
     */
   def createTrust(params: CreateTrustRequest): Request[CreateTrustResult, AWSError] = js.native
   def createTrust(
@@ -211,12 +211,12 @@ trait DirectoryService extends Service {
   ): Request[CreateTrustResult, AWSError] = js.native
   
   /**
-    * Deletes a conditional forwarder that has been set up for your AWS directory.
+    * Deletes a conditional forwarder that has been set up for your Amazon Web Services directory.
     */
   def deleteConditionalForwarder(): Request[DeleteConditionalForwarderResult, AWSError] = js.native
   def deleteConditionalForwarder(callback: js.Function2[/* err */ AWSError, /* data */ DeleteConditionalForwarderResult, Unit]): Request[DeleteConditionalForwarderResult, AWSError] = js.native
   /**
-    * Deletes a conditional forwarder that has been set up for your AWS directory.
+    * Deletes a conditional forwarder that has been set up for your Amazon Web Services directory.
     */
   def deleteConditionalForwarder(params: DeleteConditionalForwarderRequest): Request[DeleteConditionalForwarderResult, AWSError] = js.native
   def deleteConditionalForwarder(
@@ -225,12 +225,12 @@ trait DirectoryService extends Service {
   ): Request[DeleteConditionalForwarderResult, AWSError] = js.native
   
   /**
-    * Deletes an AWS Directory Service directory. Before you call DeleteDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the DeleteDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Deletes an Directory Service directory. Before you call DeleteDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the DeleteDirectory operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def deleteDirectory(): Request[DeleteDirectoryResult, AWSError] = js.native
   def deleteDirectory(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDirectoryResult, Unit]): Request[DeleteDirectoryResult, AWSError] = js.native
   /**
-    * Deletes an AWS Directory Service directory. Before you call DeleteDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the DeleteDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Deletes an Directory Service directory. Before you call DeleteDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the DeleteDirectory operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def deleteDirectory(params: DeleteDirectoryRequest): Request[DeleteDirectoryResult, AWSError] = js.native
   def deleteDirectory(
@@ -267,12 +267,12 @@ trait DirectoryService extends Service {
   ): Request[DeleteSnapshotResult, AWSError] = js.native
   
   /**
-    * Deletes an existing trust relationship between your AWS Managed Microsoft AD directory and an external domain.
+    * Deletes an existing trust relationship between your Managed Microsoft AD directory and an external domain.
     */
   def deleteTrust(): Request[DeleteTrustResult, AWSError] = js.native
   def deleteTrust(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrustResult, Unit]): Request[DeleteTrustResult, AWSError] = js.native
   /**
-    * Deletes an existing trust relationship between your AWS Managed Microsoft AD directory and an external domain.
+    * Deletes an existing trust relationship between your Managed Microsoft AD directory and an external domain.
     */
   def deleteTrust(params: DeleteTrustRequest): Request[DeleteTrustResult, AWSError] = js.native
   def deleteTrust(
@@ -281,12 +281,12 @@ trait DirectoryService extends Service {
   ): Request[DeleteTrustResult, AWSError] = js.native
   
   /**
-    * Deletes from the system the certificate that was registered for a secured LDAP connection.
+    * Deletes from the system the certificate that was registered for secure LDAP or client certificate authentication.
     */
   def deregisterCertificate(): Request[DeregisterCertificateResult, AWSError] = js.native
   def deregisterCertificate(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterCertificateResult, Unit]): Request[DeregisterCertificateResult, AWSError] = js.native
   /**
-    * Deletes from the system the certificate that was registered for a secured LDAP connection.
+    * Deletes from the system the certificate that was registered for secure LDAP or client certificate authentication.
     */
   def deregisterCertificate(params: DeregisterCertificateRequest): Request[DeregisterCertificateResult, AWSError] = js.native
   def deregisterCertificate(
@@ -295,12 +295,12 @@ trait DirectoryService extends Service {
   ): Request[DeregisterCertificateResult, AWSError] = js.native
   
   /**
-    * Removes the specified directory as a publisher to the specified SNS topic.
+    * Removes the specified directory as a publisher to the specified Amazon SNS topic.
     */
   def deregisterEventTopic(): Request[DeregisterEventTopicResult, AWSError] = js.native
   def deregisterEventTopic(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterEventTopicResult, Unit]): Request[DeregisterEventTopicResult, AWSError] = js.native
   /**
-    * Removes the specified directory as a publisher to the specified SNS topic.
+    * Removes the specified directory as a publisher to the specified Amazon SNS topic.
     */
   def deregisterEventTopic(params: DeregisterEventTopicRequest): Request[DeregisterEventTopicResult, AWSError] = js.native
   def deregisterEventTopic(
@@ -309,18 +309,34 @@ trait DirectoryService extends Service {
   ): Request[DeregisterEventTopicResult, AWSError] = js.native
   
   /**
-    * Displays information about the certificate registered for a secured LDAP connection.
+    * Displays information about the certificate registered for secure LDAP or client certificate authentication.
     */
   def describeCertificate(): Request[DescribeCertificateResult, AWSError] = js.native
   def describeCertificate(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCertificateResult, Unit]): Request[DescribeCertificateResult, AWSError] = js.native
   /**
-    * Displays information about the certificate registered for a secured LDAP connection.
+    * Displays information about the certificate registered for secure LDAP or client certificate authentication.
     */
   def describeCertificate(params: DescribeCertificateRequest): Request[DescribeCertificateResult, AWSError] = js.native
   def describeCertificate(
     params: DescribeCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCertificateResult, Unit]
   ): Request[DescribeCertificateResult, AWSError] = js.native
+  
+  /**
+    * Retrieves information about the type of client authentication for the specified directory, if the type is specified. If no type is specified, information about all client authentication types that are supported for the specified directory is retrieved. Currently, only SmartCard is supported. 
+    */
+  def describeClientAuthenticationSettings(): Request[DescribeClientAuthenticationSettingsResult, AWSError] = js.native
+  def describeClientAuthenticationSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientAuthenticationSettingsResult, Unit]
+  ): Request[DescribeClientAuthenticationSettingsResult, AWSError] = js.native
+  /**
+    * Retrieves information about the type of client authentication for the specified directory, if the type is specified. If no type is specified, information about all client authentication types that are supported for the specified directory is retrieved. Currently, only SmartCard is supported. 
+    */
+  def describeClientAuthenticationSettings(params: DescribeClientAuthenticationSettingsRequest): Request[DescribeClientAuthenticationSettingsResult, AWSError] = js.native
+  def describeClientAuthenticationSettings(
+    params: DescribeClientAuthenticationSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientAuthenticationSettingsResult, Unit]
+  ): Request[DescribeClientAuthenticationSettingsResult, AWSError] = js.native
   
   /**
     * Obtains information about the conditional forwarders for this account. If no input parameters are provided for RemoteDomainNames, this request describes all conditional forwarders for the specified directory ID.
@@ -365,12 +381,12 @@ trait DirectoryService extends Service {
   ): Request[DescribeDomainControllersResult, AWSError] = js.native
   
   /**
-    * Obtains information about which SNS topics receive status messages from the specified directory. If no input parameters are provided, such as DirectoryId or TopicName, this request describes all of the associations in the account.
+    * Obtains information about which Amazon SNS topics receive status messages from the specified directory. If no input parameters are provided, such as DirectoryId or TopicName, this request describes all of the associations in the account.
     */
   def describeEventTopics(): Request[DescribeEventTopicsResult, AWSError] = js.native
   def describeEventTopics(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventTopicsResult, Unit]): Request[DescribeEventTopicsResult, AWSError] = js.native
   /**
-    * Obtains information about which SNS topics receive status messages from the specified directory. If no input parameters are provided, such as DirectoryId or TopicName, this request describes all of the associations in the account.
+    * Obtains information about which Amazon SNS topics receive status messages from the specified directory. If no input parameters are provided, such as DirectoryId or TopicName, this request describes all of the associations in the account.
     */
   def describeEventTopics(params: DescribeEventTopicsRequest): Request[DescribeEventTopicsResult, AWSError] = js.native
   def describeEventTopics(
@@ -405,6 +421,20 @@ trait DirectoryService extends Service {
     params: DescribeRegionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegionsResult, Unit]
   ): Request[DescribeRegionsResult, AWSError] = js.native
+  
+  /**
+    * Retrieves information about the configurable settings for the specified directory.
+    */
+  def describeSettings(): Request[DescribeSettingsResult, AWSError] = js.native
+  def describeSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSettingsResult, Unit]): Request[DescribeSettingsResult, AWSError] = js.native
+  /**
+    * Retrieves information about the configurable settings for the specified directory.
+    */
+  def describeSettings(params: DescribeSettingsRequest): Request[DescribeSettingsResult, AWSError] = js.native
+  def describeSettings(
+    params: DescribeSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSettingsResult, Unit]
+  ): Request[DescribeSettingsResult, AWSError] = js.native
   
   /**
     * Returns the shared directories in your account. 
@@ -449,6 +479,20 @@ trait DirectoryService extends Service {
   ): Request[DescribeTrustsResult, AWSError] = js.native
   
   /**
+    * Disables alternative client authentication methods for the specified directory. 
+    */
+  def disableClientAuthentication(): Request[DisableClientAuthenticationResult, AWSError] = js.native
+  def disableClientAuthentication(callback: js.Function2[/* err */ AWSError, /* data */ DisableClientAuthenticationResult, Unit]): Request[DisableClientAuthenticationResult, AWSError] = js.native
+  /**
+    * Disables alternative client authentication methods for the specified directory. 
+    */
+  def disableClientAuthentication(params: DisableClientAuthenticationRequest): Request[DisableClientAuthenticationResult, AWSError] = js.native
+  def disableClientAuthentication(
+    params: DisableClientAuthenticationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableClientAuthenticationResult, Unit]
+  ): Request[DisableClientAuthenticationResult, AWSError] = js.native
+  
+  /**
     * Deactivates LDAP secure calls for the specified directory.
     */
   def disableLDAPS(): Request[DisableLDAPSResult, AWSError] = js.native
@@ -491,6 +535,20 @@ trait DirectoryService extends Service {
   ): Request[DisableSsoResult, AWSError] = js.native
   
   /**
+    * Enables alternative client authentication methods for the specified directory.
+    */
+  def enableClientAuthentication(): Request[EnableClientAuthenticationResult, AWSError] = js.native
+  def enableClientAuthentication(callback: js.Function2[/* err */ AWSError, /* data */ EnableClientAuthenticationResult, Unit]): Request[EnableClientAuthenticationResult, AWSError] = js.native
+  /**
+    * Enables alternative client authentication methods for the specified directory.
+    */
+  def enableClientAuthentication(params: EnableClientAuthenticationRequest): Request[EnableClientAuthenticationResult, AWSError] = js.native
+  def enableClientAuthentication(
+    params: EnableClientAuthenticationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableClientAuthenticationResult, Unit]
+  ): Request[EnableClientAuthenticationResult, AWSError] = js.native
+  
+  /**
     * Activates the switch for the specific directory to always use LDAP secure calls.
     */
   def enableLDAPS(): Request[EnableLDAPSResult, AWSError] = js.native
@@ -519,12 +577,12 @@ trait DirectoryService extends Service {
   ): Request[EnableRadiusResult, AWSError] = js.native
   
   /**
-    * Enables single sign-on for a directory. Single sign-on allows users in your directory to access certain AWS services from a computer joined to the directory without having to enter their credentials separately.
+    * Enables single sign-on for a directory. Single sign-on allows users in your directory to access certain Amazon Web Services services from a computer joined to the directory without having to enter their credentials separately.
     */
   def enableSso(): Request[EnableSsoResult, AWSError] = js.native
   def enableSso(callback: js.Function2[/* err */ AWSError, /* data */ EnableSsoResult, Unit]): Request[EnableSsoResult, AWSError] = js.native
   /**
-    * Enables single sign-on for a directory. Single sign-on allows users in your directory to access certain AWS services from a computer joined to the directory without having to enter their credentials separately.
+    * Enables single sign-on for a directory. Single sign-on allows users in your directory to access certain Amazon Web Services services from a computer joined to the directory without having to enter their credentials separately.
     */
   def enableSso(params: EnableSsoRequest): Request[EnableSsoResult, AWSError] = js.native
   def enableSso(
@@ -561,12 +619,12 @@ trait DirectoryService extends Service {
   ): Request[GetSnapshotLimitsResult, AWSError] = js.native
   
   /**
-    * For the specified directory, lists all the certificates registered for a secured LDAP connection.
+    * For the specified directory, lists all the certificates registered for a secure LDAP or client certificate authentication.
     */
   def listCertificates(): Request[ListCertificatesResult, AWSError] = js.native
   def listCertificates(callback: js.Function2[/* err */ AWSError, /* data */ ListCertificatesResult, Unit]): Request[ListCertificatesResult, AWSError] = js.native
   /**
-    * For the specified directory, lists all the certificates registered for a secured LDAP connection.
+    * For the specified directory, lists all the certificates registered for a secure LDAP or client certificate authentication.
     */
   def listCertificates(params: ListCertificatesRequest): Request[ListCertificatesResult, AWSError] = js.native
   def listCertificates(
@@ -589,12 +647,12 @@ trait DirectoryService extends Service {
   ): Request[ListIpRoutesResult, AWSError] = js.native
   
   /**
-    * Lists the active log subscriptions for the AWS account.
+    * Lists the active log subscriptions for the Amazon Web Services account.
     */
   def listLogSubscriptions(): Request[ListLogSubscriptionsResult, AWSError] = js.native
   def listLogSubscriptions(callback: js.Function2[/* err */ AWSError, /* data */ ListLogSubscriptionsResult, Unit]): Request[ListLogSubscriptionsResult, AWSError] = js.native
   /**
-    * Lists the active log subscriptions for the AWS account.
+    * Lists the active log subscriptions for the Amazon Web Services account.
     */
   def listLogSubscriptions(params: ListLogSubscriptionsRequest): Request[ListLogSubscriptionsResult, AWSError] = js.native
   def listLogSubscriptions(
@@ -631,12 +689,12 @@ trait DirectoryService extends Service {
   ): Request[ListTagsForResourceResult, AWSError] = js.native
   
   /**
-    * Registers a certificate for secured LDAP connection.
+    * Registers a certificate for a secure LDAP or client certificate authentication.
     */
   def registerCertificate(): Request[RegisterCertificateResult, AWSError] = js.native
   def registerCertificate(callback: js.Function2[/* err */ AWSError, /* data */ RegisterCertificateResult, Unit]): Request[RegisterCertificateResult, AWSError] = js.native
   /**
-    * Registers a certificate for secured LDAP connection.
+    * Registers a certificate for a secure LDAP or client certificate authentication.
     */
   def registerCertificate(params: RegisterCertificateRequest): Request[RegisterCertificateResult, AWSError] = js.native
   def registerCertificate(
@@ -645,12 +703,12 @@ trait DirectoryService extends Service {
   ): Request[RegisterCertificateResult, AWSError] = js.native
   
   /**
-    * Associates a directory with an SNS topic. This establishes the directory as a publisher to the specified SNS topic. You can then receive email or text (SMS) messages when the status of your directory changes. You get notified if your directory goes from an Active status to an Impaired or Inoperable status. You also receive a notification when the directory returns to an Active status.
+    * Associates a directory with an Amazon SNS topic. This establishes the directory as a publisher to the specified Amazon SNS topic. You can then receive email or text (SMS) messages when the status of your directory changes. You get notified if your directory goes from an Active status to an Impaired or Inoperable status. You also receive a notification when the directory returns to an Active status.
     */
   def registerEventTopic(): Request[RegisterEventTopicResult, AWSError] = js.native
   def registerEventTopic(callback: js.Function2[/* err */ AWSError, /* data */ RegisterEventTopicResult, Unit]): Request[RegisterEventTopicResult, AWSError] = js.native
   /**
-    * Associates a directory with an SNS topic. This establishes the directory as a publisher to the specified SNS topic. You can then receive email or text (SMS) messages when the status of your directory changes. You get notified if your directory goes from an Active status to an Impaired or Inoperable status. You also receive a notification when the directory returns to an Active status.
+    * Associates a directory with an Amazon SNS topic. This establishes the directory as a publisher to the specified Amazon SNS topic. You can then receive email or text (SMS) messages when the status of your directory changes. You get notified if your directory goes from an Active status to an Impaired or Inoperable status. You also receive a notification when the directory returns to an Active status.
     */
   def registerEventTopic(params: RegisterEventTopicRequest): Request[RegisterEventTopicResult, AWSError] = js.native
   def registerEventTopic(
@@ -715,12 +773,12 @@ trait DirectoryService extends Service {
   ): Request[RemoveTagsFromResourceResult, AWSError] = js.native
   
   /**
-    * Resets the password for any user in your AWS Managed Microsoft AD or Simple AD directory. You can reset the password for any user in your directory with the following exceptions:   For Simple AD, you cannot reset the password for any user that is a member of either the Domain Admins or Enterprise Admins group except for the administrator user.   For AWS Managed Microsoft AD, you can only reset the password for a user that is in an OU based off of the NetBIOS name that you typed when you created your directory. For example, you cannot reset the password for a user in the AWS Reserved OU. For more information about the OU structure for an AWS Managed Microsoft AD directory, see What Gets Created in the AWS Directory Service Administration Guide.  
+    * Resets the password for any user in your Managed Microsoft AD or Simple AD directory. You can reset the password for any user in your directory with the following exceptions:   For Simple AD, you cannot reset the password for any user that is a member of either the Domain Admins or Enterprise Admins group except for the administrator user.   For Managed Microsoft AD, you can only reset the password for a user that is in an OU based off of the NetBIOS name that you typed when you created your directory. For example, you cannot reset the password for a user in the Amazon Web Services Reserved OU. For more information about the OU structure for an Managed Microsoft AD directory, see What Gets Created in the Directory Service Administration Guide.  
     */
   def resetUserPassword(): Request[ResetUserPasswordResult, AWSError] = js.native
   def resetUserPassword(callback: js.Function2[/* err */ AWSError, /* data */ ResetUserPasswordResult, Unit]): Request[ResetUserPasswordResult, AWSError] = js.native
   /**
-    * Resets the password for any user in your AWS Managed Microsoft AD or Simple AD directory. You can reset the password for any user in your directory with the following exceptions:   For Simple AD, you cannot reset the password for any user that is a member of either the Domain Admins or Enterprise Admins group except for the administrator user.   For AWS Managed Microsoft AD, you can only reset the password for a user that is in an OU based off of the NetBIOS name that you typed when you created your directory. For example, you cannot reset the password for a user in the AWS Reserved OU. For more information about the OU structure for an AWS Managed Microsoft AD directory, see What Gets Created in the AWS Directory Service Administration Guide.  
+    * Resets the password for any user in your Managed Microsoft AD or Simple AD directory. You can reset the password for any user in your directory with the following exceptions:   For Simple AD, you cannot reset the password for any user that is a member of either the Domain Admins or Enterprise Admins group except for the administrator user.   For Managed Microsoft AD, you can only reset the password for a user that is in an OU based off of the NetBIOS name that you typed when you created your directory. For example, you cannot reset the password for a user in the Amazon Web Services Reserved OU. For more information about the OU structure for an Managed Microsoft AD directory, see What Gets Created in the Directory Service Administration Guide.  
     */
   def resetUserPassword(params: ResetUserPasswordRequest): Request[ResetUserPasswordResult, AWSError] = js.native
   def resetUserPassword(
@@ -743,12 +801,12 @@ trait DirectoryService extends Service {
   ): Request[RestoreFromSnapshotResult, AWSError] = js.native
   
   /**
-    * Shares a specified directory (DirectoryId) in your AWS account (directory owner) with another AWS account (directory consumer). With this operation you can use your directory from any AWS account and from any Amazon VPC within an AWS Region. When you share your AWS Managed Microsoft AD directory, AWS Directory Service creates a shared directory in the directory consumer account. This shared directory contains the metadata to provide access to the directory within the directory owner account. The shared directory is visible in all VPCs in the directory consumer account. The ShareMethod parameter determines whether the specified directory can be shared between AWS accounts inside the same AWS organization (ORGANIZATIONS). It also determines whether you can share the directory with any other AWS account either inside or outside of the organization (HANDSHAKE). The ShareNotes parameter is only used when HANDSHAKE is called, which sends a directory sharing request to the directory consumer. 
+    * Shares a specified directory (DirectoryId) in your Amazon Web Services account (directory owner) with another Amazon Web Services account (directory consumer). With this operation you can use your directory from any Amazon Web Services account and from any Amazon VPC within an Amazon Web Services Region. When you share your Managed Microsoft AD directory, Directory Service creates a shared directory in the directory consumer account. This shared directory contains the metadata to provide access to the directory within the directory owner account. The shared directory is visible in all VPCs in the directory consumer account. The ShareMethod parameter determines whether the specified directory can be shared between Amazon Web Services accounts inside the same Amazon Web Services organization (ORGANIZATIONS). It also determines whether you can share the directory with any other Amazon Web Services account either inside or outside of the organization (HANDSHAKE). The ShareNotes parameter is only used when HANDSHAKE is called, which sends a directory sharing request to the directory consumer. 
     */
   def shareDirectory(): Request[ShareDirectoryResult, AWSError] = js.native
   def shareDirectory(callback: js.Function2[/* err */ AWSError, /* data */ ShareDirectoryResult, Unit]): Request[ShareDirectoryResult, AWSError] = js.native
   /**
-    * Shares a specified directory (DirectoryId) in your AWS account (directory owner) with another AWS account (directory consumer). With this operation you can use your directory from any AWS account and from any Amazon VPC within an AWS Region. When you share your AWS Managed Microsoft AD directory, AWS Directory Service creates a shared directory in the directory consumer account. This shared directory contains the metadata to provide access to the directory within the directory owner account. The shared directory is visible in all VPCs in the directory consumer account. The ShareMethod parameter determines whether the specified directory can be shared between AWS accounts inside the same AWS organization (ORGANIZATIONS). It also determines whether you can share the directory with any other AWS account either inside or outside of the organization (HANDSHAKE). The ShareNotes parameter is only used when HANDSHAKE is called, which sends a directory sharing request to the directory consumer. 
+    * Shares a specified directory (DirectoryId) in your Amazon Web Services account (directory owner) with another Amazon Web Services account (directory consumer). With this operation you can use your directory from any Amazon Web Services account and from any Amazon VPC within an Amazon Web Services Region. When you share your Managed Microsoft AD directory, Directory Service creates a shared directory in the directory consumer account. This shared directory contains the metadata to provide access to the directory within the directory owner account. The shared directory is visible in all VPCs in the directory consumer account. The ShareMethod parameter determines whether the specified directory can be shared between Amazon Web Services accounts inside the same Amazon Web Services organization (ORGANIZATIONS). It also determines whether you can share the directory with any other Amazon Web Services account either inside or outside of the organization (HANDSHAKE). The ShareNotes parameter is only used when HANDSHAKE is called, which sends a directory sharing request to the directory consumer. 
     */
   def shareDirectory(params: ShareDirectoryRequest): Request[ShareDirectoryResult, AWSError] = js.native
   def shareDirectory(
@@ -785,12 +843,12 @@ trait DirectoryService extends Service {
   ): Request[UnshareDirectoryResult, AWSError] = js.native
   
   /**
-    * Updates a conditional forwarder that has been set up for your AWS directory.
+    * Updates a conditional forwarder that has been set up for your Amazon Web Services directory.
     */
   def updateConditionalForwarder(): Request[UpdateConditionalForwarderResult, AWSError] = js.native
   def updateConditionalForwarder(callback: js.Function2[/* err */ AWSError, /* data */ UpdateConditionalForwarderResult, Unit]): Request[UpdateConditionalForwarderResult, AWSError] = js.native
   /**
-    * Updates a conditional forwarder that has been set up for your AWS directory.
+    * Updates a conditional forwarder that has been set up for your Amazon Web Services directory.
     */
   def updateConditionalForwarder(params: UpdateConditionalForwarderRequest): Request[UpdateConditionalForwarderResult, AWSError] = js.native
   def updateConditionalForwarder(
@@ -827,12 +885,26 @@ trait DirectoryService extends Service {
   ): Request[UpdateRadiusResult, AWSError] = js.native
   
   /**
-    * Updates the trust that has been set up between your AWS Managed Microsoft AD directory and an on-premises Active Directory.
+    * Updates the configurable settings for the specified directory.
+    */
+  def updateSettings(): Request[UpdateSettingsResult, AWSError] = js.native
+  def updateSettings(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSettingsResult, Unit]): Request[UpdateSettingsResult, AWSError] = js.native
+  /**
+    * Updates the configurable settings for the specified directory.
+    */
+  def updateSettings(params: UpdateSettingsRequest): Request[UpdateSettingsResult, AWSError] = js.native
+  def updateSettings(
+    params: UpdateSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSettingsResult, Unit]
+  ): Request[UpdateSettingsResult, AWSError] = js.native
+  
+  /**
+    * Updates the trust that has been set up between your Managed Microsoft AD directory and an self-managed Active Directory.
     */
   def updateTrust(): Request[UpdateTrustResult, AWSError] = js.native
   def updateTrust(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTrustResult, Unit]): Request[UpdateTrustResult, AWSError] = js.native
   /**
-    * Updates the trust that has been set up between your AWS Managed Microsoft AD directory and an on-premises Active Directory.
+    * Updates the trust that has been set up between your Managed Microsoft AD directory and an self-managed Active Directory.
     */
   def updateTrust(params: UpdateTrustRequest): Request[UpdateTrustResult, AWSError] = js.native
   def updateTrust(
@@ -841,12 +913,12 @@ trait DirectoryService extends Service {
   ): Request[UpdateTrustResult, AWSError] = js.native
   
   /**
-    * AWS Directory Service for Microsoft Active Directory allows you to configure and verify trust relationships. This action verifies a trust relationship between your AWS Managed Microsoft AD directory and an external domain.
+    * Directory Service for Microsoft Active Directory allows you to configure and verify trust relationships. This action verifies a trust relationship between your Managed Microsoft AD directory and an external domain.
     */
   def verifyTrust(): Request[VerifyTrustResult, AWSError] = js.native
   def verifyTrust(callback: js.Function2[/* err */ AWSError, /* data */ VerifyTrustResult, Unit]): Request[VerifyTrustResult, AWSError] = js.native
   /**
-    * AWS Directory Service for Microsoft Active Directory allows you to configure and verify trust relationships. This action verifies a trust relationship between your AWS Managed Microsoft AD directory and an external domain.
+    * Directory Service for Microsoft Active Directory allows you to configure and verify trust relationships. This action verifies a trust relationship between your Managed Microsoft AD directory and an external domain.
     */
   def verifyTrust(params: VerifyTrustRequest): Request[VerifyTrustResult, AWSError] = js.native
   def verifyTrust(

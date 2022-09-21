@@ -43,7 +43,7 @@ object CSSStyle {
     
     inline def setCssProperties(value: js.Array[CSSProperty]): Self = StObject.set(x, "cssProperties", value.asInstanceOf[js.Any])
     
-    inline def setCssPropertiesVarargs(value: CSSProperty*): Self = StObject.set(x, "cssProperties", js.Array(value :_*))
+    inline def setCssPropertiesVarargs(value: CSSProperty*): Self = StObject.set(x, "cssProperties", js.Array(value*))
     
     inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object CSSStyle {
     
     inline def setShorthandEntries(value: js.Array[ShorthandEntry]): Self = StObject.set(x, "shorthandEntries", value.asInstanceOf[js.Any])
     
-    inline def setShorthandEntriesVarargs(value: ShorthandEntry*): Self = StObject.set(x, "shorthandEntries", js.Array(value :_*))
+    inline def setShorthandEntriesVarargs(value: ShorthandEntry*): Self = StObject.set(x, "shorthandEntries", js.Array(value*))
     
     inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     

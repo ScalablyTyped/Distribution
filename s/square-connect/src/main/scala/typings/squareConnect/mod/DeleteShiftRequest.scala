@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "DeleteShiftRequest")
 @js.native
-class DeleteShiftRequest () extends StObject
+open class DeleteShiftRequest () extends StObject

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CreatePageCountFieldCommand")
 @js.native
-class CreatePageCountFieldCommand ()
+open class CreatePageCountFieldCommand ()
   extends StObject
      with typings.devexpressWeb.CreatePageCountFieldCommand {
   

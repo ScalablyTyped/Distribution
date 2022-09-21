@@ -1,34 +1,26 @@
 package typings.parse.mod.global.Parse.Cloud
 
-import typings.parse.mod.global.Parse.Attributes
-import typings.parse.mod.global.Parse.Object
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AfterSaveRequest
+trait AfterSaveRequest[T]
   extends StObject
-     with TriggerRequest {
+     with TriggerRequest[T] {
   
-  var context: js.Object
+  var context: Record[String, Any]
 }
 object AfterSaveRequest {
   
-  inline def apply(
-    context: js.Object,
-    headers: js.Any,
-    ip: String,
-    log: js.Any,
-    `object`: Object[Attributes],
-    triggerName: String
-  ): AfterSaveRequest = {
+  inline def apply[T](context: Record[String, Any], headers: Any, ip: String, log: Any, `object`: T, triggerName: String): AfterSaveRequest[T] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AfterSaveRequest]
+    __obj.asInstanceOf[AfterSaveRequest[T]]
   }
   
-  extension [Self <: AfterSaveRequest](x: Self) {
+  extension [Self <: AfterSaveRequest[?], T](x: Self & AfterSaveRequest[T]) {
     
-    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Record[String, Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

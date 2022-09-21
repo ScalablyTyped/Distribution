@@ -1,15 +1,15 @@
 package typings.reactBootstrapTypeahead.mod
 
 import typings.react.mod.InputHTMLAttributes
-import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.input
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.text
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BaseTypeaheadInputProps
   extends StObject
-     with InputHTMLAttributes[input] {
+     with InputHTMLAttributes[HTMLInputElement] {
   
   @JSName("type")
   var type_BaseTypeaheadInputProps: text

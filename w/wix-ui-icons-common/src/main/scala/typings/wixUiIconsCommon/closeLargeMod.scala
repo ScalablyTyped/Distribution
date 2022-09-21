@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object closeLargeMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/system/dist/components/CloseLarge", JSImport.Default)
+  @JSImport("wix-ui-icons-common/dist/src/on-stage/system/dist/components/CloseLarge", JSImport.Default)
   @js.native
-  val default: SFC[CloseLargeProps] = js.native
+  val default: FC[CloseLargeProps] = js.native
   
   trait CloseLargeProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object CloseLargeProps {
     
@@ -29,14 +29,14 @@ object closeLargeMod extends Shortcut {
     
     extension [Self <: CloseLargeProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[CloseLargeProps]
+  type _To = FC[CloseLargeProps]
   
   /* This means you don't have to write `default`, but can instead just say `closeLargeMod.foo` */
-  override def _to: SFC[CloseLargeProps] = default
+  override def _to: FC[CloseLargeProps] = default
 }

@@ -31,7 +31,7 @@ object Color {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

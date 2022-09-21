@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A data validation rule.
-  */
 trait SchemaDataValidationRule extends StObject {
   
   /**
@@ -17,18 +14,17 @@ trait SchemaDataValidationRule extends StObject {
   /**
     * A message to show the user when adding data to the cell.
     */
-  var inputMessage: js.UndefOr[String] = js.undefined
+  var inputMessage: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * True if the UI should be customized based on the kind of condition. If
-    * true, &quot;List&quot; conditions will show a dropdown.
+    * True if the UI should be customized based on the kind of condition. If true, "List" conditions will show a dropdown.
     */
-  var showCustomUi: js.UndefOr[Boolean] = js.undefined
+  var showCustomUi: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * True if invalid data should be rejected.
     */
-  var strict: js.UndefOr[Boolean] = js.undefined
+  var strict: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaDataValidationRule {
   
@@ -45,13 +41,19 @@ object SchemaDataValidationRule {
     
     inline def setInputMessage(value: String): Self = StObject.set(x, "inputMessage", value.asInstanceOf[js.Any])
     
+    inline def setInputMessageNull: Self = StObject.set(x, "inputMessage", null)
+    
     inline def setInputMessageUndefined: Self = StObject.set(x, "inputMessage", js.undefined)
     
     inline def setShowCustomUi(value: Boolean): Self = StObject.set(x, "showCustomUi", value.asInstanceOf[js.Any])
     
+    inline def setShowCustomUiNull: Self = StObject.set(x, "showCustomUi", null)
+    
     inline def setShowCustomUiUndefined: Self = StObject.set(x, "showCustomUi", js.undefined)
     
     inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictNull: Self = StObject.set(x, "strict", null)
     
     inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }

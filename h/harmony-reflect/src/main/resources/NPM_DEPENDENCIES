@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "harmony-reflect" : "1.6.1"
+      "harmony-reflect" : "1.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "harmony-reflect" : "1.6.1"
+      "harmony-reflect" : "1.6.2"
     }
   ],
   "compile-devDependencies" : [

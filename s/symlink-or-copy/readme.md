@@ -10,10 +10,10 @@ Symlink files or directories, falling back to copying on Windows
 | ------------------ | :-------------: |
 | Full name          | symlink-or-copy |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 95 |
-| # downloads        | 8922998 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1140041.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/broccolijs/node-symlink-or-copy#readme)

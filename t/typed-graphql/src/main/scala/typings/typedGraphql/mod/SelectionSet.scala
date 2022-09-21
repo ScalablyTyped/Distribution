@@ -31,6 +31,6 @@ object SelectionSet {
     
     inline def setSelections(value: js.Array[Selection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    inline def setSelectionsVarargs(value: Selection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: Selection*): Self = StObject.set(x, "selections", js.Array(value*))
   }
 }

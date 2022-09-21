@@ -1,7 +1,6 @@
 package typings.sudoPrompt
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import typings.sudoPrompt.anon.Env
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +16,7 @@ object mod {
   inline def exec(
     cmd: String,
     options: js.Function3[
-      /* error */ js.UndefOr[Error], 
+      /* error */ js.UndefOr[js.Error], 
       /* stdout */ js.UndefOr[String | Buffer], 
       /* stderr */ js.UndefOr[String | Buffer], 
       Unit
@@ -26,13 +25,13 @@ object mod {
   inline def exec(
     cmd: String,
     options: js.Function3[
-      /* error */ js.UndefOr[Error], 
+      /* error */ js.UndefOr[js.Error], 
       /* stdout */ js.UndefOr[String | Buffer], 
       /* stderr */ js.UndefOr[String | Buffer], 
       Unit
     ],
     callback: js.Function3[
-      /* error */ js.UndefOr[Error], 
+      /* error */ js.UndefOr[js.Error], 
       /* stdout */ js.UndefOr[String | Buffer], 
       /* stderr */ js.UndefOr[String | Buffer], 
       Unit
@@ -42,7 +41,7 @@ object mod {
     cmd: String,
     options: Unit,
     callback: js.Function3[
-      /* error */ js.UndefOr[Error], 
+      /* error */ js.UndefOr[js.Error], 
       /* stdout */ js.UndefOr[String | Buffer], 
       /* stderr */ js.UndefOr[String | Buffer], 
       Unit
@@ -53,7 +52,7 @@ object mod {
     cmd: String,
     options: Env,
     callback: js.Function3[
-      /* error */ js.UndefOr[Error], 
+      /* error */ js.UndefOr[js.Error], 
       /* stdout */ js.UndefOr[String | Buffer], 
       /* stderr */ js.UndefOr[String | Buffer], 
       Unit

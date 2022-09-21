@@ -12,7 +12,7 @@ object measurerMod {
   
   @JSImport("typesettable/build/src/measurers/measurer", "Measurer")
   @js.native
-  class Measurer protected () extends AbstractMeasurer {
+  open class Measurer protected () extends AbstractMeasurer {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()
     def this(ruler: IRuler, useGuards: Boolean) = this()
@@ -23,10 +23,10 @@ object measurerMod {
     def _measureLine(line: String): IDimensions = js.native
     def _measureLine(line: String, forceGuards: Boolean): IDimensions = js.native
     
-    /* private */ def getGuardWidth(): js.Any = js.native
+    /* private */ def getGuardWidth(): Any = js.native
     
-    /* private */ var guardWidth: js.Any = js.native
+    /* private */ var guardWidth: Any = js.native
     
-    /* private */ var useGuards: js.Any = js.native
+    /* private */ var useGuards: Any = js.native
   }
 }

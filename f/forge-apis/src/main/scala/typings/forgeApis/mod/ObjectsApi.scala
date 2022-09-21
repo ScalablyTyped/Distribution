@@ -4,17 +4,18 @@ import typings.forgeApis.anon.Access
 import typings.forgeApis.anon.BeginsWith
 import typings.forgeApis.anon.ContentDisposition
 import typings.forgeApis.anon.IfMatch
-import typings.forgeApis.anon.IfModifiedSince
 import typings.forgeApis.anon.IfNoneMatch
+import typings.forgeApis.anon.Range
 import typings.forgeApis.anon.With
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "ObjectsApi")
 @js.native
-class ObjectsApi () extends StObject {
+open class ObjectsApi () extends StObject {
+  def this(apiClient: Any) = this()
   
   /**
     * Copies an object to another object name in the same bucket.
@@ -49,7 +50,7 @@ class ObjectsApi () extends StObject {
   /**
     * Delete a signed URL. A successful call to this endpoint requires bucket owner access.
     */
-  def deleteSignedResource(id: String, region: String, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def deleteSignedResource(id: String, region: String): js.Promise[ApiResponse] = js.native
   
   /**
     * Download an object.
@@ -57,7 +58,7 @@ class ObjectsApi () extends StObject {
   def getObject(
     bucketKey: String,
     objectName: String,
-    opts: IfModifiedSince,
+    opts: IfNoneMatch,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
@@ -81,7 +82,7 @@ class ObjectsApi () extends StObject {
   /**
     * Download an object using a signed URL.
     */
-  def getSignedResource(id: String, opts: IfNoneMatch, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getSignedResource(id: String, opts: Range): js.Promise[ApiResponse] = js.native
   
   /**
     * This endpoint returns status information about a resumable upload.
@@ -147,42 +148,12 @@ class ObjectsApi () extends StObject {
     * Overwrite a existing object using a signed URL. Conditions to call this operation: Object is available Expiration
     * period is valid Signed URL should be created with `write` or `readwrite`.
     */
-  def uploadSignedResource(
-    id: String,
-    contentLength: Double,
-    body: String,
-    opts: IfMatch,
-    oauth2Client: AuthClient,
-    credentials: AuthToken
-  ): js.Promise[ApiResponse] = js.native
-  def uploadSignedResource(
-    id: String,
-    contentLength: Double,
-    body: Buffer,
-    opts: IfMatch,
-    oauth2Client: AuthClient,
-    credentials: AuthToken
-  ): js.Promise[ApiResponse] = js.native
+  def uploadSignedResource(id: String, contentLength: Double, body: String, opts: IfMatch): js.Promise[ApiResponse] = js.native
+  def uploadSignedResource(id: String, contentLength: Double, body: Buffer, opts: IfMatch): js.Promise[ApiResponse] = js.native
   
   /**
     * Resumable upload for signed URLs.
     */
-  def uploadSignedResourcesChunk(
-    id: String,
-    contentLength: Double,
-    sessionId: String,
-    body: String,
-    opts: ContentDisposition,
-    oauth2Client: AuthClient,
-    credentials: AuthToken
-  ): js.Promise[ApiResponse] = js.native
-  def uploadSignedResourcesChunk(
-    id: String,
-    contentLength: Double,
-    sessionId: String,
-    body: Buffer,
-    opts: ContentDisposition,
-    oauth2Client: AuthClient,
-    credentials: AuthToken
-  ): js.Promise[ApiResponse] = js.native
+  def uploadSignedResourcesChunk(id: String, contentRange: Double, sessionId: String, body: String, opts: IfMatch): js.Promise[ApiResponse] = js.native
+  def uploadSignedResourcesChunk(id: String, contentRange: Double, sessionId: String, body: Buffer, opts: IfMatch): js.Promise[ApiResponse] = js.native
 }

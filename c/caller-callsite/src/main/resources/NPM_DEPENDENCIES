@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "caller-callsite" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "caller-callsite" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

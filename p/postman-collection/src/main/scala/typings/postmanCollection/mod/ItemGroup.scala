@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "ItemGroup")
 @js.native
-class ItemGroup[TItem] () extends Property[ItemGroupDefinition] {
+open class ItemGroup[TItem] () extends Property[ItemGroupDefinition] {
   def this(definition: ItemGroupDefinition) = this()
   
   var auth: js.UndefOr[RequestAuth] = js.native
@@ -33,5 +33,5 @@ object ItemGroup {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isItemGroup(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItemGroup")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isItemGroup(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItemGroup")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

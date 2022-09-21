@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "anybar" : "4.0.0"
+      "anybar" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "anybar" : "4.0.0"
+      "anybar" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

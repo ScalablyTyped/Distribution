@@ -163,7 +163,7 @@ object colResizable {
       
       inline def setDisabledColumnsUndefined: Self = StObject.set(x, "disabledColumns", js.undefined)
       
-      inline def setDisabledColumnsVarargs(value: Double*): Self = StObject.set(x, "disabledColumns", js.Array(value :_*))
+      inline def setDisabledColumnsVarargs(value: Double*): Self = StObject.set(x, "disabledColumns", js.Array(value*))
       
       inline def setDragCursor(value: String): Self = StObject.set(x, "dragCursor", value.asInstanceOf[js.Any])
       

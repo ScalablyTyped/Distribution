@@ -22,9 +22,19 @@ trait AddPermissionRequest extends StObject {
   var FunctionName: typings.awsSdk.lambdaMod.FunctionName
   
   /**
-    * The AWS service or account that invokes the function. If you specify a service, use SourceArn or SourceAccount to limit who can invoke the function through that service.
+    * The type of authentication that your function URL uses. Set to AWS_IAM if you want to restrict access to authenticated IAM users only. Set to NONE if you want to bypass IAM authentication to create a public endpoint. For more information, see  Security and auth model for Lambda function URLs.
+    */
+  var FunctionUrlAuthType: js.UndefOr[typings.awsSdk.lambdaMod.FunctionUrlAuthType] = js.undefined
+  
+  /**
+    * The Amazon Web Services service or account that invokes the function. If you specify a service, use SourceArn or SourceAccount to limit who can invoke the function through that service.
     */
   var Principal: typings.awsSdk.lambdaMod.Principal
+  
+  /**
+    * The identifier for your organization in Organizations. Use this to grant permissions to all the Amazon Web Services accounts under this organization.
+    */
+  var PrincipalOrgID: js.UndefOr[typings.awsSdk.lambdaMod.PrincipalOrgID] = js.undefined
   
   /**
     * Specify a version or alias to add permissions to a published version of the function.
@@ -42,7 +52,7 @@ trait AddPermissionRequest extends StObject {
   var SourceAccount: js.UndefOr[SourceOwner] = js.undefined
   
   /**
-    * For AWS services, the ARN of the AWS resource that invokes the function. For example, an Amazon S3 bucket or Amazon SNS topic.
+    * For Amazon Web Services services, the ARN of the Amazon Web Services resource that invokes the function. For example, an Amazon S3 bucket or Amazon SNS topic. Note that Lambda configures the comparison using the StringLike operator.
     */
   var SourceArn: js.UndefOr[Arn] = js.undefined
   
@@ -68,7 +78,15 @@ object AddPermissionRequest {
     
     inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
+    inline def setFunctionUrlAuthType(value: FunctionUrlAuthType): Self = StObject.set(x, "FunctionUrlAuthType", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionUrlAuthTypeUndefined: Self = StObject.set(x, "FunctionUrlAuthType", js.undefined)
+    
     inline def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    
+    inline def setPrincipalOrgID(value: PrincipalOrgID): Self = StObject.set(x, "PrincipalOrgID", value.asInstanceOf[js.Any])
+    
+    inline def setPrincipalOrgIDUndefined: Self = StObject.set(x, "PrincipalOrgID", js.undefined)
     
     inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     

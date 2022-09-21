@@ -11,7 +11,7 @@ object global {
     /** Simulate scheduled AudioParam values */
     @JSGlobal("PseudoAudioParam")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.pseudoAudioParam.mod.^ {
       def this(defaultValue: Double) = this()
     }

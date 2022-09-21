@@ -1,5 +1,8 @@
 package typings.webappsecCredentialManagement
 
+import typings.std.FormData
+import typings.std.HTMLFormElement
+import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @see {@link https://www.w3.org/TR/credential-management-1/#typedefdef-credentialbodytype}
   */
-type CredentialBodyType = typings.std.FormData | typings.std.URLSearchParams
+type CredentialBodyType = FormData | URLSearchParams
 
 /**
   * @see {@link https://www.w3.org/TR/2017/WD-credential-management-1-20170804/#dictdef-federatedcredentialinit}
   */
-type FederatedCredentialInit = typings.webappsecCredentialManagement.FederatedCredentialData
+type FederatedCredentialInit = FederatedCredentialData
 
 /**
   * @see {@link https://www.w3.org/TR/2017/WD-credential-management-1-20170804/#typedefdef-passwordcredentialinit}
   */
-type PasswordCredentialInit = typings.webappsecCredentialManagement.PasswordCredentialData | typings.std.HTMLFormElement
+type PasswordCredentialInit = PasswordCredentialData | HTMLFormElement

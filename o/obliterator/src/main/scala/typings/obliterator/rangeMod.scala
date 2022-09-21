@@ -1,14 +1,17 @@
 package typings.obliterator
 
+import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("obliterator/range", JSImport.Namespace)
-@js.native
-object rangeMod extends js.Object {
-  def default(end: Double): typings.obliterator.iteratorMod.default[Double] = js.native
-  def default(start: Double, end: Double): typings.obliterator.iteratorMod.default[Double] = js.native
-  def default(start: Double, end: Double, step: Double): typings.obliterator.iteratorMod.default[Double] = js.native
+object rangeMod {
+  
+  @JSImport("obliterator/range", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(end: Double): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(end.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Double]]
+  inline def default(start: Double, end: Double): IterableIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Double]]
+  inline def default(start: Double, end: Double, step: Double): IterableIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Double]]
 }
-

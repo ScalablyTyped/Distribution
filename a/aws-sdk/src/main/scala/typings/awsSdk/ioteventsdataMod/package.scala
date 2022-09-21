@@ -1,19 +1,76 @@
 package typings.awsSdk.ioteventsdataMod
 
+import typings.awsSdk.awsSdkStrings.SNOOZE_TIMEOUT
+import typings.awsSdk.awsSdkStrings.STATE_CHANGE
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BatchPutMessageErrorEntries = js.Array[typings.awsSdk.ioteventsdataMod.BatchPutMessageErrorEntry]
+type AcknowledgeAlarmActionRequests = js.Array[AcknowledgeAlarmActionRequest]
 
-type BatchUpdateDetectorErrorEntries = js.Array[typings.awsSdk.ioteventsdataMod.BatchUpdateDetectorErrorEntry]
+type AlarmModelName = String
 
-type DetectorModelName = java.lang.String
+type AlarmModelVersion = String
 
-type DetectorModelVersion = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.NORMAL
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.ACKNOWLEDGED
+  - typings.awsSdk.awsSdkStrings.SNOOZE_DISABLED
+  - typings.awsSdk.awsSdkStrings.LATCHED
+  - java.lang.String
+*/
+type AlarmStateName = _AlarmStateName | String
 
-type DetectorSummaries = js.Array[typings.awsSdk.ioteventsdataMod.DetectorSummary]
+type AlarmSummaries = js.Array[AlarmSummary]
+
+type BatchAlarmActionErrorEntries = js.Array[BatchAlarmActionErrorEntry]
+
+type BatchDeleteDetectorErrorEntries = js.Array[BatchDeleteDetectorErrorEntry]
+
+type BatchPutMessageErrorEntries = js.Array[BatchPutMessageErrorEntry]
+
+type BatchUpdateDetectorErrorEntries = js.Array[BatchUpdateDetectorErrorEntry]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GREATER
+  - typings.awsSdk.awsSdkStrings.GREATER_OR_EQUAL
+  - typings.awsSdk.awsSdkStrings.LESS
+  - typings.awsSdk.awsSdkStrings.LESS_OR_EQUAL
+  - typings.awsSdk.awsSdkStrings.EQUAL
+  - typings.awsSdk.awsSdkStrings.NOT_EQUAL
+  - java.lang.String
+*/
+type ComparisonOperator = _ComparisonOperator | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SNOOZE
+  - typings.awsSdk.awsSdkStrings.ENABLE
+  - typings.awsSdk.awsSdkStrings.DISABLE
+  - typings.awsSdk.awsSdkStrings.ACKNOWLEDGE
+  - typings.awsSdk.awsSdkStrings.RESET
+  - java.lang.String
+*/
+type CustomerActionName = _CustomerActionName | String
+
+type DeleteDetectorRequests = js.Array[DeleteDetectorRequest]
+
+type DetectorModelName = String
+
+type DetectorModelVersion = String
+
+type DetectorSummaries = js.Array[DetectorSummary]
+
+type DisableAlarmActionRequests = js.Array[DisableAlarmActionRequest]
+
+type EnableAlarmActionRequests = js.Array[EnableAlarmActionRequest]
+
+type EphemeralInputName = String
+
+type EpochMilliTimestamp = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ResourceNotFoundException
@@ -23,49 +80,67 @@ type DetectorSummaries = js.Array[typings.awsSdk.ioteventsdataMod.DetectorSummar
   - typings.awsSdk.awsSdkStrings.ThrottlingException
   - java.lang.String
 */
-type ErrorCode = typings.awsSdk.ioteventsdataMod._ErrorCode | java.lang.String
+type ErrorCode = _ErrorCode | String
 
-type ErrorMessage = java.lang.String
+type ErrorMessage = String
 
-type InputName = java.lang.String
+type EventType = STATE_CHANGE | String
 
-type KeyValue = java.lang.String
+type InputPropertyValue = String
 
-type MaxResults = scala.Double
+type KeyValue = String
 
-type MessageId = java.lang.String
+type MaxResults = Double
 
-type Messages = js.Array[typings.awsSdk.ioteventsdataMod.Message]
+type MessageId = String
 
-type NextToken = java.lang.String
+type Messages = js.Array[Message]
 
-type Payload = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.ioteventsdataMod.Blob | java.lang.String
+type NextToken = String
 
-type Seconds = scala.Double
+type Note = String
 
-type StateName = java.lang.String
+type Payload = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type TimerDefinitions = js.Array[typings.awsSdk.ioteventsdataMod.TimerDefinition]
+type RequestId = String
 
-type TimerName = java.lang.String
+type ResetAlarmActionRequests = js.Array[ResetAlarmActionRequest]
 
-type Timers = js.Array[typings.awsSdk.ioteventsdataMod.Timer]
+type Seconds = Double
 
-type Timestamp = typings.std.Date
+type Severity = Double
 
-type UpdateDetectorRequests = js.Array[typings.awsSdk.ioteventsdataMod.UpdateDetectorRequest]
+type SnoozeAlarmActionRequests = js.Array[SnoozeAlarmActionRequest]
 
-type VariableDefinitions = js.Array[typings.awsSdk.ioteventsdataMod.VariableDefinition]
+type SnoozeDuration = Double
 
-type VariableName = java.lang.String
+type StateName = String
 
-type VariableValue = java.lang.String
+type ThresholdValue = String
 
-type Variables = js.Array[typings.awsSdk.ioteventsdataMod.Variable]
+type TimerDefinitions = js.Array[TimerDefinition]
+
+type TimerName = String
+
+type Timers = js.Array[Timer]
+
+type Timestamp = js.Date
+
+type TriggerType = SNOOZE_TIMEOUT | String
+
+type UpdateDetectorRequests = js.Array[UpdateDetectorRequest]
+
+type VariableDefinitions = js.Array[VariableDefinition]
+
+type VariableName = String
+
+type VariableValue = String
+
+type Variables = js.Array[Variable]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-10-23`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.ioteventsdataMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

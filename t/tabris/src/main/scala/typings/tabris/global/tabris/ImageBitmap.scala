@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.ImageBitmap")
 @js.native
-/* private */ class ImageBitmap ()
+/**
+  * Represents an in-memory Image. Unlike ImageData it is immutable, but can be created from a number of
+  * sources via [createImageBitmap](#createimagebitmapimagesource-options).
+  */
+/* private */ open class ImageBitmap ()
   extends typings.tabris.mod.ImageBitmap
 /* static members */
 object ImageBitmap {

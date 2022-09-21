@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a time event that triggers a background task to run. */
 @JSGlobal("Windows.ApplicationModel.Background.TimeTrigger")
 @js.native
-class TimeTrigger protected ()
+open class TimeTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.TimeTrigger {
   /**

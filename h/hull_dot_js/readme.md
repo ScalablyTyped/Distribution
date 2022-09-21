@@ -11,9 +11,9 @@ JavaScript library that builds concave hulls (shapes) by set of points
 | Full name          | hull.js |
 | Keywords           | geometry, concave-hull, math, alpha-shape, algorithm |
 | # releases         | 3 |
-| # dependents       | 14 |
-| # downloads        | 95267 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 21700.0 |
+| # stars            | 503.0 |
 
 ## Links
 - [Homepage](https://github.com/AndriiHeonia/hull)

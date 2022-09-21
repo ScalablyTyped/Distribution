@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemDataDelta")
 @js.native
-class ASPxClientDashboardItemDataDelta ()
+open class ASPxClientDashboardItemDataDelta ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemDataDelta {
   

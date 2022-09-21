@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents ink analysis data for an identified word formed by ink strokes.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.InkAnalysisWord")
 @js.native
-class InkAnalysisWord ()
+open class InkAnalysisWord ()
   extends StObject
      with typings.officeJsPreview.OneNote.InkAnalysisWord {
   

@@ -29,7 +29,7 @@ object DetectFacesResponse {
     
     inline def setFaceDetailsUndefined: Self = StObject.set(x, "FaceDetails", js.undefined)
     
-    inline def setFaceDetailsVarargs(value: FaceDetail*): Self = StObject.set(x, "FaceDetails", js.Array(value :_*))
+    inline def setFaceDetailsVarargs(value: FaceDetail*): Self = StObject.set(x, "FaceDetails", js.Array(value*))
     
     inline def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
     

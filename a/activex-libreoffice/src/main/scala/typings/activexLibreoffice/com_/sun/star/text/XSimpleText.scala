@@ -59,7 +59,7 @@ object XSimpleText {
     getText: () => XText,
     insertControlCharacter: (XTextRange, Double, Boolean) => Unit,
     insertString: (XTextRange, String, Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setString: String => Unit
   ): XSimpleText = {

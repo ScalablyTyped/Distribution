@@ -1,7 +1,9 @@
 package typings.flatpickr
 
+import typings.flatpickr.anon.Capture
 import typings.flatpickr.anon.GetDaysInMonth
 import typings.flatpickr.anon.PartialParsedOptions
+import typings.flatpickr.anon.Remove
 import typings.flatpickr.anon.kinkeyCustomLocaledefault
 import typings.flatpickr.anon.kinkeyofOptionsOptionsk
 import typings.flatpickr.formattingMod.Formats_
@@ -9,6 +11,7 @@ import typings.flatpickr.formattingMod.RevFormat_
 import typings.flatpickr.formattingMod.TokenRegex_
 import typings.flatpickr.globalsMod.global.Date
 import typings.flatpickr.globalsMod.global.HTMLElement
+import typings.flatpickr.globalsMod.global.Window
 import typings.flatpickr.localeMod.CustomLocale
 import typings.flatpickr.localeMod.Locale
 import typings.flatpickr.optionsMod.DateOption
@@ -16,6 +19,7 @@ import typings.flatpickr.optionsMod.Options
 import typings.flatpickr.optionsMod.ParsedOptions
 import typings.std.AddEventListenerOptions
 import typings.std.ArrayLike
+import typings.std.Document
 import typings.std.Element
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
@@ -41,11 +45,11 @@ object instanceMod {
     var $i: Double = js.native
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var dateObj: Date = js.native
     
@@ -199,7 +203,7 @@ object instanceMod {
       
       inline def setMonthElements(value: js.Array[HTMLSpanElement]): Self = StObject.set(x, "monthElements", value.asInstanceOf[js.Any])
       
-      inline def setMonthElementsVarargs(value: HTMLSpanElement*): Self = StObject.set(x, "monthElements", js.Array(value :_*))
+      inline def setMonthElementsVarargs(value: HTMLSpanElement*): Self = StObject.set(x, "monthElements", js.Array(value*))
       
       inline def setMonthNav(value: HTMLDivElement): Self = StObject.set(x, "monthNav", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,7 @@ object instanceMod {
       
       inline def setPluginElements(value: js.Array[Node]): Self = StObject.set(x, "pluginElements", value.asInstanceOf[js.Any])
       
-      inline def setPluginElementsVarargs(value: Node*): Self = StObject.set(x, "pluginElements", js.Array(value :_*))
+      inline def setPluginElementsVarargs(value: Node*): Self = StObject.set(x, "pluginElements", js.Array(value*))
       
       inline def setPrevMonthNav(value: HTMLElement): Self = StObject.set(x, "prevMonthNav", value.asInstanceOf[js.Any])
       
@@ -245,7 +249,7 @@ object instanceMod {
       
       inline def setYearElements(value: js.Array[HTMLInputElement]): Self = StObject.set(x, "yearElements", value.asInstanceOf[js.Any])
       
-      inline def setYearElementsVarargs(value: HTMLInputElement*): Self = StObject.set(x, "yearElements", js.Array(value :_*))
+      inline def setYearElementsVarargs(value: HTMLInputElement*): Self = StObject.set(x, "yearElements", js.Array(value*))
       
       inline def set_hideNextMonthArrow(value: Boolean): Self = StObject.set(x, "_hideNextMonthArrow", value.asInstanceOf[js.Any])
       
@@ -321,28 +325,47 @@ object instanceMod {
     
     var __hidePrevMonthArrow: Boolean = js.native
     
-    def _bind[E /* <: Element */](element: E, event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-    def _bind[E /* <: Element */](element: E, event: js.Array[String], handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-    def _bind[E /* <: Element */](element: js.Array[E], event: String, handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Unit = js.native
-    def _bind[E /* <: Element */](
+    def _bind[E /* <: Element | Window | Document */](element: E, event: String, handler: js.Function1[/* e */ js.UndefOr[Any], Unit]): Unit = js.native
+    def _bind[E /* <: Element | Window | Document */](element: E, event: String, handler: js.Function1[/* e */ js.UndefOr[Any], Unit], options: Capture): Unit = js.native
+    def _bind[E /* <: Element | Window | Document */](element: E, event: js.Array[String], handler: js.Function1[/* e */ js.UndefOr[Any], Unit]): Unit = js.native
+    def _bind[E /* <: Element | Window | Document */](
+      element: E,
+      event: js.Array[String],
+      handler: js.Function1[/* e */ js.UndefOr[Any], Unit],
+      options: Capture
+    ): Unit = js.native
+    def _bind[E /* <: Element | Window | Document */](element: js.Array[E], event: String, handler: js.Function1[/* e */ js.UndefOr[Any], Unit]): Unit = js.native
+    def _bind[E /* <: Element | Window | Document */](
+      element: js.Array[E],
+      event: String,
+      handler: js.Function1[/* e */ js.UndefOr[Any], Unit],
+      options: Capture
+    ): Unit = js.native
+    def _bind[E /* <: Element | Window | Document */](
       element: js.Array[E],
       event: js.Array[String],
-      handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
+      handler: js.Function1[/* e */ js.UndefOr[Any], Unit]
+    ): Unit = js.native
+    def _bind[E /* <: Element | Window | Document */](
+      element: js.Array[E],
+      event: js.Array[String],
+      handler: js.Function1[/* e */ js.UndefOr[Any], Unit],
+      options: Capture
     ): Unit = js.native
     
     def _createElement[E /* <: HTMLElement */](
-      tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
+      tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any,
       className: String
     ): E = js.native
     def _createElement[E /* <: HTMLElement */](
-      tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
+      tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any,
       className: String,
       content: String
     ): E = js.native
     
     def _debouncedChange(): Unit = js.native
     
-    var _handlers: js.Array[typings.flatpickr.anon.Element] = js.native
+    var _handlers: js.Array[Remove] = js.native
     
     var _initialDate: Date = js.native
     
@@ -368,6 +391,8 @@ object instanceMod {
     def close(): Unit = js.native
     
     var config: ParsedOptions = js.native
+    
+    def createDay(className: String, date: Date, dayNumber: Double, i: Double): DayElement = js.native
     
     var currentMonth: Double = js.native
     
@@ -405,6 +430,11 @@ object instanceMod {
     
     var now: Date = js.native
     
+    def onMouseOver(): Unit = js.native
+    def onMouseOver(elem: Unit, cellClass: String): Unit = js.native
+    def onMouseOver(elem: DayElement): Unit = js.native
+    def onMouseOver(elem: DayElement, cellClass: String): Unit = js.native
+    
     def open(): Unit = js.native
     def open(e: Unit, positionElement: HTMLElement): Unit = js.native
     def open(e: FocusEvent): Unit = js.native
@@ -432,13 +462,13 @@ object instanceMod {
     
     var selectedDates: js.Array[Date] = js.native
     
-    def set(option: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ js.Any): Unit = js.native
+    def set(option: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Unit = js.native
     def set(
-      option: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ js.Any,
-      value: js.Any
+      option: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any,
+      value: Any
     ): Unit = js.native
     def set(option: kinkeyofOptionsOptionsk): Unit = js.native
-    def set(option: kinkeyofOptionsOptionsk, value: js.Any): Unit = js.native
+    def set(option: kinkeyofOptionsOptionsk, value: Any): Unit = js.native
     
     def setDate(date: js.Array[DateOption]): Unit = js.native
     def setDate(date: js.Array[DateOption], triggerChange: Boolean): Unit = js.native
@@ -450,6 +480,9 @@ object instanceMod {
     def setDate(date: DateOption, triggerChange: Unit, format: String): Unit = js.native
     
     def toggle(): Unit = js.native
+    
+    def updateValue(): Unit = js.native
+    def updateValue(triggerChange: Boolean): Unit = js.native
     
     var utils: GetDaysInMonth = js.native
   }

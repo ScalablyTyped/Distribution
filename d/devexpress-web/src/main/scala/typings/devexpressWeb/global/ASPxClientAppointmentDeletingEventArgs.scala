@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAppointmentDeletingEventArgs")
 @js.native
-class ASPxClientAppointmentDeletingEventArgs protected ()
+open class ASPxClientAppointmentDeletingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAppointmentDeletingEventArgs {
   /**
@@ -25,7 +25,7 @@ class ASPxClientAppointmentDeletingEventArgs protected ()
   var appointmentIds: js.Array[String] = js.native
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

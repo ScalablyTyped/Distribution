@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LaunchConfigurationNamesType extends StObject {
   
   /**
-    * The launch configuration names. If you omit this parameter, all launch configurations are described.
+    * The launch configuration names. If you omit this property, all launch configurations are described. Array Members: Maximum number of 50 items.
     */
   var LaunchConfigurationNames: js.UndefOr[typings.awsSdk.autoscalingMod.LaunchConfigurationNames] = js.undefined
   
@@ -34,7 +34,7 @@ object LaunchConfigurationNamesType {
     
     inline def setLaunchConfigurationNamesUndefined: Self = StObject.set(x, "LaunchConfigurationNames", js.undefined)
     
-    inline def setLaunchConfigurationNamesVarargs(value: ResourceName*): Self = StObject.set(x, "LaunchConfigurationNames", js.Array(value :_*))
+    inline def setLaunchConfigurationNamesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "LaunchConfigurationNames", js.Array(value*))
     
     inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     

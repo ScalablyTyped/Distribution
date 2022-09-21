@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Tab")
 @js.native
-class Tab ()
+open class Tab ()
   extends typings.reactBootstrap.mod.Tab
 object Tab {
   
@@ -18,7 +18,7 @@ object Tab {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Tab.Container")
   @js.native
-  class Container ()
+  open class Container ()
     extends typings.reactBootstrap.tabContainerMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Tab.Container")
@@ -29,7 +29,7 @@ object Tab {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Tab.Content")
   @js.native
-  class Content ()
+  open class Content ()
     extends typings.reactBootstrap.tabContentMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Tab.Content")
@@ -40,7 +40,7 @@ object Tab {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Tab.Pane")
   @js.native
-  class Pane ()
+  open class Pane ()
     extends typings.reactBootstrap.tabPaneMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Tab.Pane")

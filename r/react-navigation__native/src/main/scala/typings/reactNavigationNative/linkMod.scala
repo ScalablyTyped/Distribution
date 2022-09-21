@@ -5,6 +5,8 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.Text
 import typings.reactNative.mod.TextProps
+import typings.reactNavigationCore.typesMod.global.ReactNavigation.RootParamList
+import typings.reactNavigationNative.useLinkToMod.To
 import typings.reactNavigationRouters.typesMod.NavigationAction
 import typings.std.HTMLAnchorElement
 import typings.std.MouseEvent
@@ -18,15 +20,16 @@ object linkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasToActionRest: Props): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToActionRest.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
+  inline def default[ParamList /* <: RootParamList */](hasToActionRest: Props[ParamList]): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToActionRest.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
   
-  trait Props
+  trait Props[ParamList /* <: RootParamList */]
     extends StObject
        with TextProps {
     
     var action: js.UndefOr[NavigationAction] = js.undefined
     
-    var children: ReactNode
+    @JSName("children")
+    var children_Props: ReactNode
     
     @JSName("onPress")
     var onPress_Props: js.UndefOr[
@@ -38,16 +41,16 @@ object linkMod {
     
     var target: js.UndefOr[String] = js.undefined
     
-    var to: String
+    var to: To[ParamList, /* keyof ParamList */ String]
   }
   object Props {
     
-    inline def apply(to: String): Props = {
+    inline def apply[ParamList /* <: RootParamList */](to: To[ParamList, /* keyof ParamList */ String]): Props[ParamList] = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Props]
+      __obj.asInstanceOf[Props[ParamList]]
     }
     
-    extension [Self <: Props](x: Self) {
+    extension [Self <: Props[?], ParamList /* <: RootParamList */](x: Self & Props[ParamList]) {
       
       inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -67,7 +70,7 @@ object linkMod {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: To[ParamList, /* keyof ParamList */ String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
 }

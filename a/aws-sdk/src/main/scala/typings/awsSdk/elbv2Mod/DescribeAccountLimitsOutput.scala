@@ -29,7 +29,7 @@ object DescribeAccountLimitsOutput {
     
     inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
-    inline def setLimitsVarargs(value: Limit*): Self = StObject.set(x, "Limits", js.Array(value :_*))
+    inline def setLimitsVarargs(value: Limit*): Self = StObject.set(x, "Limits", js.Array(value*))
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

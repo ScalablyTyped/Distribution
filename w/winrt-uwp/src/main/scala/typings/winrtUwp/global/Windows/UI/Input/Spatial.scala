@@ -13,83 +13,83 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialGestureRecognizer {
     
     /* CompleteClass */
-    var addEventListener: js.Any = js.native
+    var addEventListener: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var cancelPendingGestures: js.Any = js.native
+    var cancelPendingGestures: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var captureInteraction: js.Any = js.native
+    var captureInteraction: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var gestureSettings: js.Any = js.native
+    var gestureSettings: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onholdcanceled: js.Any = js.native
+    var onholdcanceled: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onholdcompleted: js.Any = js.native
+    var onholdcompleted: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onholdstarted: js.Any = js.native
+    var onholdstarted: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onmanipulationcanceled: js.Any = js.native
+    var onmanipulationcanceled: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onmanipulationcompleted: js.Any = js.native
+    var onmanipulationcompleted: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onmanipulationstarted: js.Any = js.native
+    var onmanipulationstarted: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onmanipulationupdated: js.Any = js.native
+    var onmanipulationupdated: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onnavigationcanceled: js.Any = js.native
+    var onnavigationcanceled: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onnavigationcompleted: js.Any = js.native
+    var onnavigationcompleted: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onnavigationstarted: js.Any = js.native
+    var onnavigationstarted: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onnavigationupdated: js.Any = js.native
+    var onnavigationupdated: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onrecognitionended: js.Any = js.native
+    var onrecognitionended: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onrecognitionstarted: js.Any = js.native
+    var onrecognitionstarted: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var ontapped: js.Any = js.native
+    var ontapped: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var removeEventListener: js.Any = js.native
+    var removeEventListener: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var trySetGestureSettings: js.Any = js.native
+    var trySetGestureSettings: Any = js.native
   }
   
   object SpatialGestureSettings {
@@ -101,67 +101,67 @@ object Spatial {
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.doubleTap")
     @js.native
-    def doubleTap: js.Any = js.native
-    inline def doubleTap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doubleTap")(x.asInstanceOf[js.Any])
+    def doubleTap: Any = js.native
+    inline def doubleTap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doubleTap")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.hold")
     @js.native
-    def hold: js.Any = js.native
-    inline def hold_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hold")(x.asInstanceOf[js.Any])
+    def hold: Any = js.native
+    inline def hold_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hold")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.manipulationTranslate")
     @js.native
-    def manipulationTranslate: js.Any = js.native
-    inline def manipulationTranslate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manipulationTranslate")(x.asInstanceOf[js.Any])
+    def manipulationTranslate: Any = js.native
+    inline def manipulationTranslate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manipulationTranslate")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationRailsX")
     @js.native
-    def navigationRailsX: js.Any = js.native
-    inline def navigationRailsX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsX")(x.asInstanceOf[js.Any])
+    def navigationRailsX: Any = js.native
+    inline def navigationRailsX_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsX")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationRailsY")
     @js.native
-    def navigationRailsY: js.Any = js.native
-    inline def navigationRailsY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsY")(x.asInstanceOf[js.Any])
+    def navigationRailsY: Any = js.native
+    inline def navigationRailsY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsY")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationRailsZ")
     @js.native
-    def navigationRailsZ: js.Any = js.native
-    inline def navigationRailsZ_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsZ")(x.asInstanceOf[js.Any])
+    def navigationRailsZ: Any = js.native
+    inline def navigationRailsZ_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsZ")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationX")
     @js.native
-    def navigationX: js.Any = js.native
-    inline def navigationX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationX")(x.asInstanceOf[js.Any])
+    def navigationX: Any = js.native
+    inline def navigationX_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationX")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationY")
     @js.native
-    def navigationY: js.Any = js.native
-    inline def navigationY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationY")(x.asInstanceOf[js.Any])
+    def navigationY: Any = js.native
+    inline def navigationY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationY")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationZ")
     @js.native
-    def navigationZ: js.Any = js.native
-    inline def navigationZ_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationZ")(x.asInstanceOf[js.Any])
+    def navigationZ: Any = js.native
+    inline def navigationZ_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationZ")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.none")
     @js.native
-    def none: js.Any = js.native
-    inline def none_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    def none: Any = js.native
+    inline def none_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.tap")
     @js.native
-    def tap: js.Any = js.native
-    inline def tap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tap")(x.asInstanceOf[js.Any])
+    def tap: Any = js.native
+    inline def tap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tap")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldCanceledEventArgs")
@@ -171,7 +171,7 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialHoldCanceledEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldCompletedEventArgs")
@@ -181,7 +181,7 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialHoldCompletedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldStartedEventArgs")
@@ -191,11 +191,11 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialHoldStartedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetPointerPose: js.Any = js.native
+    var tryGetPointerPose: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteraction")
@@ -205,7 +205,7 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteraction {
     
     /* CompleteClass */
-    var sourceState: js.Any = js.native
+    var sourceState: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionDetectedEventArgs")
@@ -215,15 +215,15 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionDetectedEventArgs {
     
     /* CompleteClass */
-    var interaction: js.Any = js.native
+    var interaction: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetPointerPose: js.Any = js.native
+    var tryGetPointerPose: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionManager")
@@ -234,39 +234,39 @@ object Spatial {
     
     /* unmapped type */
     /* CompleteClass */
-    var addEventListener: js.Any = js.native
+    var addEventListener: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var getDetectedSourcesAtTimestamp: js.Any = js.native
+    var getDetectedSourcesAtTimestamp: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var oninteractiondetected: js.Any = js.native
+    var oninteractiondetected: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onsourcedetected: js.Any = js.native
+    var onsourcedetected: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onsourcelost: js.Any = js.native
+    var onsourcelost: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onsourcepressed: js.Any = js.native
+    var onsourcepressed: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onsourcereleased: js.Any = js.native
+    var onsourcereleased: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var onsourceupdated: js.Any = js.native
+    var onsourceupdated: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var removeEventListener: js.Any = js.native
+    var removeEventListener: Any = js.native
   }
   object SpatialInteractionManager {
     
@@ -277,8 +277,8 @@ object Spatial {
     /* static member */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionManager.getForCurrentView")
     @js.native
-    def getForCurrentView: js.Any = js.native
-    inline def getForCurrentView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
+    def getForCurrentView: Any = js.native
+    inline def getForCurrentView_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSource")
@@ -288,11 +288,11 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSource {
     
     /* CompleteClass */
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var kind: js.Any = js.native
+    var kind: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceEventArgs")
@@ -302,7 +302,7 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSourceEventArgs {
     
     /* CompleteClass */
-    var state: js.Any = js.native
+    var state: Any = js.native
   }
   
   object SpatialInteractionSourceKind {
@@ -314,25 +314,25 @@ object Spatial {
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceKind.controller")
     @js.native
-    def controller: js.Any = js.native
-    inline def controller_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
+    def controller: Any = js.native
+    inline def controller_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceKind.hand")
     @js.native
-    def hand: js.Any = js.native
-    inline def hand_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hand")(x.asInstanceOf[js.Any])
+    def hand: Any = js.native
+    inline def hand_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hand")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceKind.other")
     @js.native
-    def other: js.Any = js.native
-    inline def other_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("other")(x.asInstanceOf[js.Any])
+    def other: Any = js.native
+    inline def other_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("other")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceKind.voice")
     @js.native
-    def voice: js.Any = js.native
-    inline def voice_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("voice")(x.asInstanceOf[js.Any])
+    def voice: Any = js.native
+    inline def voice_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("voice")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceLocation")
@@ -342,11 +342,11 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSourceLocation {
     
     /* CompleteClass */
-    var position: js.Any = js.native
+    var position: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var velocity: js.Any = js.native
+    var velocity: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceProperties")
@@ -356,15 +356,15 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSourceProperties {
     
     /* CompleteClass */
-    var sourceLossRisk: js.Any = js.native
+    var sourceLossRisk: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetLocation: js.Any = js.native
+    var tryGetLocation: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetSourceLossMitigationDirection: js.Any = js.native
+    var tryGetSourceLossMitigationDirection: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceState")
@@ -374,23 +374,23 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSourceState {
     
     /* CompleteClass */
-    var isPressed: js.Any = js.native
+    var isPressed: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var properties: js.Any = js.native
+    var properties: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var source: js.Any = js.native
+    var source: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var timestamp: js.Any = js.native
+    var timestamp: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetPointerPose: js.Any = js.native
+    var tryGetPointerPose: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationCanceledEventArgs")
@@ -400,7 +400,7 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationCanceledEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationCompletedEventArgs")
@@ -410,11 +410,11 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationCompletedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetCumulativeDelta: js.Any = js.native
+    var tryGetCumulativeDelta: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationDelta")
@@ -424,7 +424,7 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationDelta {
     
     /* CompleteClass */
-    var translation: js.Any = js.native
+    var translation: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationStartedEventArgs")
@@ -434,11 +434,11 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationStartedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetPointerPose: js.Any = js.native
+    var tryGetPointerPose: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationUpdatedEventArgs")
@@ -448,11 +448,11 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationUpdatedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetCumulativeDelta: js.Any = js.native
+    var tryGetCumulativeDelta: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationCanceledEventArgs")
@@ -462,7 +462,7 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialNavigationCanceledEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationCompletedEventArgs")
@@ -472,11 +472,11 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialNavigationCompletedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var normalizedOffset: js.Any = js.native
+    var normalizedOffset: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationStartedEventArgs")
@@ -486,23 +486,23 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialNavigationStartedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var isNavigatingX: js.Any = js.native
+    var isNavigatingX: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var isNavigatingY: js.Any = js.native
+    var isNavigatingY: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var isNavigatingZ: js.Any = js.native
+    var isNavigatingZ: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetPointerPose: js.Any = js.native
+    var tryGetPointerPose: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationUpdatedEventArgs")
@@ -512,11 +512,11 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialNavigationUpdatedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var normalizedOffset: js.Any = js.native
+    var normalizedOffset: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose")
@@ -527,11 +527,11 @@ object Spatial {
     
     /* unmapped type */
     /* CompleteClass */
-    var head: js.Any = js.native
+    var head: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var timestamp: js.Any = js.native
+    var timestamp: Any = js.native
   }
   object SpatialPointerPose {
     
@@ -542,8 +542,8 @@ object Spatial {
     /* static member */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose.tryGetAtTimestamp")
     @js.native
-    def tryGetAtTimestamp: js.Any = js.native
-    inline def tryGetAtTimestamp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryGetAtTimestamp")(x.asInstanceOf[js.Any])
+    def tryGetAtTimestamp: Any = js.native
+    inline def tryGetAtTimestamp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryGetAtTimestamp")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs")
@@ -553,7 +553,7 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialRecognitionStartedEventArgs")
@@ -563,15 +563,15 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialRecognitionStartedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var isGesturePossible: js.Any = js.native
+    var isGesturePossible: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetPointerPose: js.Any = js.native
+    var tryGetPointerPose: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialTappedEventArgs")
@@ -581,14 +581,14 @@ object Spatial {
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialTappedEventArgs {
     
     /* CompleteClass */
-    var interactionSourceKind: js.Any = js.native
+    var interactionSourceKind: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tapCount: js.Any = js.native
+    var tapCount: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetPointerPose: js.Any = js.native
+    var tryGetPointerPose: Any = js.native
   }
 }

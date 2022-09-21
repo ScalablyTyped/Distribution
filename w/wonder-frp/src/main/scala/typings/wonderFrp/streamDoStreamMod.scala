@@ -10,12 +10,12 @@ object streamDoStreamMod {
   
   @JSImport("wonder-frp/dist/es2015/stream/DoStream", "DoStream")
   @js.native
-  class DoStream protected () extends BaseStream {
+  open class DoStream protected () extends BaseStream {
     def this(source: Stream, onNext: js.Function, onError: js.Function, onCompleted: js.Function) = this()
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _observer: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
   }
   /* static members */
   object DoStream {

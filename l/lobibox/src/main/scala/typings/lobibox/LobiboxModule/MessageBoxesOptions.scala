@@ -12,13 +12,13 @@ trait MessageBoxesOptions
   
   var bodyClass: js.UndefOr[String] = js.undefined
   
-  var buttons: js.UndefOr[Cancel | js.Any] = js.undefined
+  var buttons: js.UndefOr[Cancel | Any] = js.undefined
   
   @JSName("buttonsAlign")
-  var buttonsAlign_MessageBoxesOptions: js.UndefOr[js.Any] = js.undefined
+  var buttonsAlign_MessageBoxesOptions: js.UndefOr[Any] = js.undefined
   
   var callback: js.UndefOr[
-    js.Function3[/* lobibox */ js.Any, /* type */ js.UndefOr[String], /* ev */ js.UndefOr[js.Any], Unit]
+    js.Function3[/* lobibox */ Any, /* type */ js.UndefOr[String], /* ev */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   var modalClasses: js.UndefOr[Confirm] = js.undefined
@@ -36,15 +36,15 @@ object MessageBoxesOptions {
     
     inline def setBodyClassUndefined: Self = StObject.set(x, "bodyClass", js.undefined)
     
-    inline def setButtons(value: Cancel | js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Cancel | Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    inline def setButtonsAlign(value: js.Any): Self = StObject.set(x, "buttonsAlign", value.asInstanceOf[js.Any])
+    inline def setButtonsAlign(value: Any): Self = StObject.set(x, "buttonsAlign", value.asInstanceOf[js.Any])
     
     inline def setButtonsAlignUndefined: Self = StObject.set(x, "buttonsAlign", js.undefined)
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setCallback(value: (/* lobibox */ js.Any, /* type */ js.UndefOr[String], /* ev */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+    inline def setCallback(value: (/* lobibox */ Any, /* type */ js.UndefOr[String], /* ev */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     

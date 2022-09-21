@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("UndoCommand")
 @js.native
-class UndoCommand ()
+open class UndoCommand ()
   extends StObject
      with typings.devexpressWeb.UndoCommand {
   

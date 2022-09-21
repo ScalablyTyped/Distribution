@@ -12,5 +12,9 @@ object conditionalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(condition: AnimatedInterpolation, main: AnimatedInterpolation, fallback: AnimatedInterpolation): AnimatedAddition = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(condition.asInstanceOf[js.Any], main.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[AnimatedAddition]
+  inline def default(
+    condition: AnimatedInterpolation[Double | String],
+    main: AnimatedInterpolation[Double | String],
+    fallback: AnimatedInterpolation[Double | String]
+  ): AnimatedAddition[Double | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(condition.asInstanceOf[js.Any], main.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[AnimatedAddition[Double | String]]
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.ClusterPushpin")
 @js.native
-class ClusterPushpin ()
+open class ClusterPushpin ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.ClusterPushpin {
   

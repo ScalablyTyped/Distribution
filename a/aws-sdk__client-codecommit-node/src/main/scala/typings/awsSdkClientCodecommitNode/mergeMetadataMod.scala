@@ -8,5 +8,5 @@ object mergeMetadataMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_MergeMetadata", "_MergeMetadata")
   @js.native
-  val MergeMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MergeMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

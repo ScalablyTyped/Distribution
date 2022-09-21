@@ -23,6 +23,12 @@ trait JQuery extends StObject {
     * @param options Options setting the editable select behavior
     */
   def editableSelect(): JQuery = js.native
+  /**
+    * Manually shows/hide/filters/clears/destorys the dropdown list.
+    *
+    * @param action Action to apply
+    */
+  def editableSelect(action: show | hide | filter | clear | destroy): Unit = js.native
   def editableSelect(options: EditableSelectOptions): JQuery = js.native
   /**
     * Adds a new option in the dropdown list
@@ -49,14 +55,6 @@ trait JQuery extends StObject {
   def editableSelect_add(action: add, text: String, index: Unit, attrs: js.Array[Name], data: String): Unit = js.native
   @JSName("editableSelect")
   def editableSelect_add(action: add, text: String, index: Unit, attrs: Unit, data: String): Unit = js.native
-  @JSName("editableSelect")
-  def editableSelect_clear(action: clear): Unit = js.native
-  @JSName("editableSelect")
-  def editableSelect_destroy(action: destroy): Unit = js.native
-  @JSName("editableSelect")
-  def editableSelect_filter(action: filter): Unit = js.native
-  @JSName("editableSelect")
-  def editableSelect_hide(action: hide): Unit = js.native
   /**
     * Removes an option in the dropdown list at the given index.
     *
@@ -73,11 +71,4 @@ trait JQuery extends StObject {
     */
   @JSName("editableSelect")
   def editableSelect_select(action: select, element: JQuery): Unit = js.native
-  /**
-    * Manually shows/hide/filters/clears/destorys the dropdown list.
-    *
-    * @param action Action to apply
-    */
-  @JSName("editableSelect")
-  def editableSelect_show(action: show): Unit = js.native
 }

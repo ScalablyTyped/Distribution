@@ -9,10 +9,10 @@ Prevent apps from going to sleep in background.
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-background-mode |
 | Keywords           | appplant, background, ecosystem:cordova, cordova-ios, cordova-android, cordova-browser |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 128852 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15015.333333333334 |
+| # stars            | 1354.0 |
 
 ## Links
 - [Homepage](https://github.com/katzer/cordova-plugin-background-mode#readme)

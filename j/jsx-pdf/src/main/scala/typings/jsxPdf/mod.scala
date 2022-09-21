@@ -14,7 +14,6 @@ import typings.jsxPdf.anon.Elewidthnumberstring
 import typings.jsxPdf.mod.global.JSX.DynamicChild
 import typings.jsxPdf.mod.global.JSX.Element
 import typings.pdfkit.PDFKit.Mixins.OpenTypeFeatures
-import typings.pdfmake.anon.X
 import typings.pdfmake.interfacesMod.Alignment
 import typings.pdfmake.interfacesMod.ContextPageSize
 import typings.pdfmake.interfacesMod.Decoration
@@ -22,8 +21,9 @@ import typings.pdfmake.interfacesMod.DecorationStyle
 import typings.pdfmake.interfacesMod.Margins
 import typings.pdfmake.interfacesMod.PageBreak
 import typings.pdfmake.interfacesMod.PageOrientation
-import typings.pdfmake.interfacesMod.Size
-import typings.pdfmake.interfacesMod.Style
+import typings.pdfmake.interfacesMod.PatternFill
+import typings.pdfmake.interfacesMod.Position
+import typings.pdfmake.interfacesMod.StyleReference
 import typings.pdfmake.interfacesMod.TDocumentDefinitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,8 +44,8 @@ object mod {
     
     @JSImport("jsx-pdf", "Fragment.absolutePosition")
     @js.native
-    def absolutePosition: js.UndefOr[X] = js.native
-    inline def absolutePosition_=(x: js.UndefOr[X]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("absolutePosition")(x.asInstanceOf[js.Any])
+    def absolutePosition: js.UndefOr[Position] = js.native
+    inline def absolutePosition_=(x: js.UndefOr[Position]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("absolutePosition")(x.asInstanceOf[js.Any])
     
     @JSImport("jsx-pdf", "Fragment.alignment")
     @js.native
@@ -54,13 +54,18 @@ object mod {
     
     @JSImport("jsx-pdf", "Fragment.background")
     @js.native
-    def background: js.UndefOr[String] = js.native
-    inline def background_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("background")(x.asInstanceOf[js.Any])
+    def background: js.UndefOr[String | PatternFill] = js.native
+    inline def background_=(x: js.UndefOr[String | PatternFill]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("background")(x.asInstanceOf[js.Any])
     
     @JSImport("jsx-pdf", "Fragment.bold")
     @js.native
     def bold: js.UndefOr[Boolean] = js.native
     inline def bold_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bold")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.canvas")
+    @js.native
+    def canvas: js.UndefOr[scala.Nothing] = js.native
+    inline def canvas_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canvas")(x.asInstanceOf[js.Any])
     
     @JSImport("jsx-pdf", "Fragment.characterSpacing")
     @js.native
@@ -79,8 +84,13 @@ object mod {
     
     @JSImport("jsx-pdf", "Fragment.columnGap")
     @js.native
-    def columnGap: js.UndefOr[Size] = js.native
-    inline def columnGap_=(x: js.UndefOr[Size]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("columnGap")(x.asInstanceOf[js.Any])
+    def columnGap: js.UndefOr[Double] = js.native
+    inline def columnGap_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("columnGap")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.columns")
+    @js.native
+    def columns: js.UndefOr[scala.Nothing] = js.native
+    inline def columns_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("columns")(x.asInstanceOf[js.Any])
     
     @JSImport("jsx-pdf", "Fragment.decoration")
     @js.native
@@ -100,8 +110,8 @@ object mod {
     
     @JSImport("jsx-pdf", "Fragment.fillColor")
     @js.native
-    def fillColor: js.UndefOr[String] = js.native
-    inline def fillColor_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fillColor")(x.asInstanceOf[js.Any])
+    def fillColor: js.UndefOr[String | PatternFill] = js.native
+    inline def fillColor_=(x: js.UndefOr[String | PatternFill]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fillColor")(x.asInstanceOf[js.Any])
     
     @JSImport("jsx-pdf", "Fragment.fillOpacity")
     @js.native
@@ -128,6 +138,11 @@ object mod {
     @js.native
     def headlineLevel: js.UndefOr[Double] = js.native
     inline def headlineLevel_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headlineLevel")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.image")
+    @js.native
+    def image: js.UndefOr[scala.Nothing] = js.native
+    inline def image_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("image")(x.asInstanceOf[js.Any])
     
     @JSImport("jsx-pdf", "Fragment.italics")
     @js.native
@@ -159,6 +174,11 @@ object mod {
     def noWrap: js.UndefOr[Boolean] = js.native
     inline def noWrap_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noWrap")(x.asInstanceOf[js.Any])
     
+    @JSImport("jsx-pdf", "Fragment.ol")
+    @js.native
+    def ol: js.UndefOr[scala.Nothing] = js.native
+    inline def ol_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ol")(x.asInstanceOf[js.Any])
+    
     @JSImport("jsx-pdf", "Fragment.opacity")
     @js.native
     def opacity: js.UndefOr[Double] = js.native
@@ -174,20 +194,76 @@ object mod {
     def pageOrientation: js.UndefOr[PageOrientation] = js.native
     inline def pageOrientation_=(x: js.UndefOr[PageOrientation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageOrientation")(x.asInstanceOf[js.Any])
     
+    @JSImport("jsx-pdf", "Fragment.pageReference")
+    @js.native
+    def pageReference: js.UndefOr[scala.Nothing] = js.native
+    inline def pageReference_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageReference")(x.asInstanceOf[js.Any])
+    
     @JSImport("jsx-pdf", "Fragment.preserveLeadingSpaces")
     @js.native
     def preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
     inline def preserveLeadingSpaces_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preserveLeadingSpaces")(x.asInstanceOf[js.Any])
     
+    @JSImport("jsx-pdf", "Fragment.preserveTrailingSpaces")
+    @js.native
+    def preserveTrailingSpaces: js.UndefOr[Boolean] = js.native
+    inline def preserveTrailingSpaces_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preserveTrailingSpaces")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.qr")
+    @js.native
+    def qr: js.UndefOr[scala.Nothing] = js.native
+    inline def qr_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qr")(x.asInstanceOf[js.Any])
+    
     @JSImport("jsx-pdf", "Fragment.relativePosition")
     @js.native
-    def relativePosition: js.UndefOr[X] = js.native
-    inline def relativePosition_=(x: js.UndefOr[X]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relativePosition")(x.asInstanceOf[js.Any])
+    def relativePosition: js.UndefOr[Position] = js.native
+    inline def relativePosition_=(x: js.UndefOr[Position]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relativePosition")(x.asInstanceOf[js.Any])
     
     @JSImport("jsx-pdf", "Fragment.style")
     @js.native
-    def style: js.UndefOr[String | js.Array[String] | Style] = js.native
-    inline def style_=(x: js.UndefOr[String | js.Array[String] | Style]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
+    def style: js.UndefOr[StyleReference] = js.native
+    inline def style_=(x: js.UndefOr[StyleReference]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.sub")
+    @js.native
+    def sub: js.UndefOr[Boolean] = js.native
+    inline def sub_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sub")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.sup")
+    @js.native
+    def sup: js.UndefOr[Boolean] = js.native
+    inline def sup_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sup")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.svg")
+    @js.native
+    def svg: js.UndefOr[scala.Nothing] = js.native
+    inline def svg_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svg")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.table")
+    @js.native
+    def table: js.UndefOr[scala.Nothing] = js.native
+    inline def table_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("table")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.text")
+    @js.native
+    def text: js.UndefOr[scala.Nothing] = js.native
+    
+    @JSImport("jsx-pdf", "Fragment.textReference")
+    @js.native
+    def textReference: js.UndefOr[scala.Nothing] = js.native
+    inline def textReference_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textReference")(x.asInstanceOf[js.Any])
+    
+    inline def text_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.toc")
+    @js.native
+    def toc: js.UndefOr[scala.Nothing] = js.native
+    inline def toc_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toc")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.ul")
+    @js.native
+    def ul: js.UndefOr[scala.Nothing] = js.native
+    inline def ul_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ul")(x.asInstanceOf[js.Any])
     
     @JSImport("jsx-pdf", "Fragment.unbreakable")
     @js.native
@@ -234,7 +310,7 @@ object mod {
           
           inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
           
-          inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+          inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
         }
       }
       

@@ -11,7 +11,7 @@ trait StructureWall
   extends StObject
      with Structure[STRUCTURE_WALL]
      with AnyStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The amount of game ticks when the wall will disappear (only for automatically placed border walls at the start of the game).

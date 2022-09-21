@@ -14,7 +14,7 @@ trait ClientData extends StObject {
   /**
     * The time that the disk upload ends.
     */
-  var UploadEnd: js.UndefOr[DateTime] = js.undefined
+  var UploadEnd: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The size of the uploaded disk image, in GiB.
@@ -24,7 +24,7 @@ trait ClientData extends StObject {
   /**
     * The time that the disk upload starts.
     */
-  var UploadStart: js.UndefOr[DateTime] = js.undefined
+  var UploadStart: js.UndefOr[js.Date] = js.undefined
 }
 object ClientData {
   
@@ -39,7 +39,7 @@ object ClientData {
     
     inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    inline def setUploadEnd(value: DateTime): Self = StObject.set(x, "UploadEnd", value.asInstanceOf[js.Any])
+    inline def setUploadEnd(value: js.Date): Self = StObject.set(x, "UploadEnd", value.asInstanceOf[js.Any])
     
     inline def setUploadEndUndefined: Self = StObject.set(x, "UploadEnd", js.undefined)
     
@@ -47,7 +47,7 @@ object ClientData {
     
     inline def setUploadSizeUndefined: Self = StObject.set(x, "UploadSize", js.undefined)
     
-    inline def setUploadStart(value: DateTime): Self = StObject.set(x, "UploadStart", value.asInstanceOf[js.Any])
+    inline def setUploadStart(value: js.Date): Self = StObject.set(x, "UploadStart", value.asInstanceOf[js.Any])
     
     inline def setUploadStartUndefined: Self = StObject.set(x, "UploadStart", js.undefined)
   }

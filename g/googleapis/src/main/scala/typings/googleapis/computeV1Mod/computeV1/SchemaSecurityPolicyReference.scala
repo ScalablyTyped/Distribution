@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaSecurityPolicyReference extends StObject {
   
-  var securityPolicy: js.UndefOr[String] = js.undefined
+  var securityPolicy: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSecurityPolicyReference {
   
@@ -18,6 +18,8 @@ object SchemaSecurityPolicyReference {
   extension [Self <: SchemaSecurityPolicyReference](x: Self) {
     
     inline def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityPolicyNull: Self = StObject.set(x, "securityPolicy", null)
     
     inline def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
   }

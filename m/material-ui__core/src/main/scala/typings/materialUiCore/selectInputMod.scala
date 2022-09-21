@@ -1,18 +1,20 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
+import typings.materialUiCore.anon.Name
+import typings.materialUiCore.anon.Node
 import typings.materialUiCore.anon.PartialMenuProps
-import typings.materialUiCore.anon.Value
 import typings.materialUiCore.materialUiCoreStrings.filled
 import typings.materialUiCore.materialUiCoreStrings.outlined
 import typings.materialUiCore.materialUiCoreStrings.standard
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ComponentType
+import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
+import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLSelectElement
 import org.scalablytyped.runtime.StObject
@@ -27,7 +29,7 @@ object selectInputMod extends Shortcut {
   
   trait SelectInputProps extends StObject {
     
-    var IconComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var IconComponent: js.UndefOr[ElementType[Any]] = js.undefined
     
     var MenuProps: js.UndefOr[PartialMenuProps] = js.undefined
     
@@ -39,7 +41,7 @@ object selectInputMod extends Shortcut {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Value, Unit]] = js.undefined
+    var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Node, Unit]] = js.undefined
     
     var multiple: Boolean
     
@@ -47,15 +49,13 @@ object selectInputMod extends Shortcut {
     
     var native: Boolean
     
-    var onBlur: js.UndefOr[FocusEventHandler[js.Any]] = js.undefined
+    var onBlur: js.UndefOr[FocusEventHandler[Any]] = js.undefined
     
-    var onChange: js.UndefOr[
-        js.Function2[/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode, Unit]
-      ] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* event */ ChangeEvent[Name], /* child */ ReactNode, Unit]] = js.undefined
     
     var onClose: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[js.Any]] = js.undefined
+    var onFocus: js.UndefOr[FocusEventHandler[Any]] = js.undefined
     
     var onOpen: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
     
@@ -63,28 +63,18 @@ object selectInputMod extends Shortcut {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var renderValue: js.UndefOr[
-        js.Function1[
-          /* value */ String | Double | Boolean | (js.Array[String | Double | Boolean]), 
-          ReactNode
-        ]
-      ] = js.undefined
+    var renderValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], ReactNode]] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var value: String | Double | Boolean | (js.Array[String | Double | Boolean])
+    var value: js.UndefOr[Any] = js.undefined
     
     var variant: js.UndefOr[standard | outlined | filled] = js.undefined
   }
   object SelectInputProps {
     
-    inline def apply(
-      autoWidth: Boolean,
-      multiple: Boolean,
-      native: Boolean,
-      value: String | Double | Boolean | (js.Array[String | Double | Boolean])
-    ): SelectInputProps = {
-      val __obj = js.Dynamic.literal(autoWidth = autoWidth.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(autoWidth: Boolean, multiple: Boolean, native: Boolean): SelectInputProps = {
+      val __obj = js.Dynamic.literal(autoWidth = autoWidth.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectInputProps]
     }
     
@@ -100,11 +90,11 @@ object selectInputMod extends Shortcut {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setIconComponent(value: ReactType[js.Any]): Self = StObject.set(x, "IconComponent", value.asInstanceOf[js.Any])
+      inline def setIconComponent(value: ElementType[Any]): Self = StObject.set(x, "IconComponent", value.asInstanceOf[js.Any])
       
       inline def setIconComponentUndefined: Self = StObject.set(x, "IconComponent", js.undefined)
       
-      inline def setInputRef(value: /* ref */ HTMLSelectElement | Value => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRef(value: /* ref */ HTMLSelectElement | Node => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
@@ -120,11 +110,11 @@ object selectInputMod extends Shortcut {
       
       inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       
-      inline def setOnBlur(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[Any, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: (/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* event */ ChangeEvent[Name], /* child */ ReactNode) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -132,7 +122,7 @@ object selectInputMod extends Shortcut {
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[Any, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -148,7 +138,7 @@ object selectInputMod extends Shortcut {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRenderValue(value: /* value */ String | Double | Boolean | (js.Array[String | Double | Boolean]) => ReactNode): Self = StObject.set(x, "renderValue", js.Any.fromFunction1(value))
+      inline def setRenderValue(value: /* value */ js.UndefOr[Any] => ReactNode): Self = StObject.set(x, "renderValue", js.Any.fromFunction1(value))
       
       inline def setRenderValueUndefined: Self = StObject.set(x, "renderValue", js.undefined)
       
@@ -160,9 +150,9 @@ object selectInputMod extends Shortcut {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setValue(value: String | Double | Boolean | (js.Array[String | Double | Boolean])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
       inline def setVariant(value: standard | outlined | filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       

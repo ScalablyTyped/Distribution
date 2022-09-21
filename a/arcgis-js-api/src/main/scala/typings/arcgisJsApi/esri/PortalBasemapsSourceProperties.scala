@@ -27,7 +27,7 @@ trait PortalBasemapsSourceProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#query)
     */
-  var query: js.UndefOr[js.Any | String] = js.undefined
+  var query: js.UndefOr[Any | String] = js.undefined
   
   /**
     * Callback for updating basemaps after being fetched and filtered.
@@ -53,7 +53,7 @@ object PortalBasemapsSourceProperties {
     
     inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     
-    inline def setQuery(value: js.Any | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     

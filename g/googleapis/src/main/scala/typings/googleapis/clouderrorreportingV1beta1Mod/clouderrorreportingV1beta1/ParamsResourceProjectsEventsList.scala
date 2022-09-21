@@ -1,9 +1,5 @@
 package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,50 +9,39 @@ trait ParamsResourceProjectsEventsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * [Required] The group for which events shall be returned.
+    * Required. The group for which events shall be returned.
     */
   var groupId: js.UndefOr[String] = js.undefined
   
   /**
-    * [Optional] The maximum number of results to return per response.
+    * Optional. The maximum number of results to return per response.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * [Optional] A `next_page_token` provided by a previous response.
+    * Optional. A `next_page_token` provided by a previous response.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The resource name of the Google Cloud Platform project.
-    * Written as `projects/` plus the [Google Cloud Platform project
-    * ID](https://support.google.com/cloud/answer/6158840). Example:
-    * `projects/my-project-123`.
+    * Required. The resource name of the Google Cloud Platform project. Written as `projects/{projectID\}`, where `{projectID\}` is the [Google Cloud Platform project ID](https://support.google.com/cloud/answer/6158840). Example: `projects/my-project-123`.
     */
   var projectName: js.UndefOr[String] = js.undefined
   
   /**
-    * [Optional] The exact value to match against
-    * [`ServiceContext.resource_type`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.resource_type).
+    * Optional. The exact value to match against [`ServiceContext.resource_type`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.resource_type).
     */
   @JSName("serviceFilter.resourceType")
   var serviceFilterDotresourceType: js.UndefOr[String] = js.undefined
   
   /**
-    * [Optional] The exact value to match against
-    * [`ServiceContext.service`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service).
+    * Optional. The exact value to match against [`ServiceContext.service`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service).
     */
   @JSName("serviceFilter.service")
   var serviceFilterDotservice: js.UndefOr[String] = js.undefined
   
   /**
-    * [Optional] The exact value to match against
-    * [`ServiceContext.version`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.version).
+    * Optional. The exact value to match against [`ServiceContext.version`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.version).
     */
   @JSName("serviceFilter.version")
   var serviceFilterDotversion: js.UndefOr[String] = js.undefined
@@ -75,10 +60,6 @@ object ParamsResourceProjectsEventsList {
   }
   
   extension [Self <: ParamsResourceProjectsEventsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ The swiss army knife for binary data in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | bytebuffer |
 | Keywords           | net, array, buffer, arraybuffer, typed array, bytebuffer, json, websocket, webrtc |
-| # releases         | 0 |
-| # dependents       | 499 |
-| # downloads        | 42547184 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2320294.6666666665 |
+| # stars            | 682.0 |
 
 ## Links
 - [Homepage](https://github.com/dcodeIO/bytebuffer.js#readme)

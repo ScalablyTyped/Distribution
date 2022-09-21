@@ -23,7 +23,7 @@ trait GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction extends StObje
   var postbackData: js.UndefOr[String] = js.undefined
   
   /** Suggested client side action: Share user location */
-  var shareLocation: js.UndefOr[js.Any] = js.undefined
+  var shareLocation: js.UndefOr[Any] = js.undefined
   
   /** Text to display alongside the action. */
   var text: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction {
     
     inline def setPostbackDataUndefined: Self = StObject.set(x, "postbackData", js.undefined)
     
-    inline def setShareLocation(value: js.Any): Self = StObject.set(x, "shareLocation", value.asInstanceOf[js.Any])
+    inline def setShareLocation(value: Any): Self = StObject.set(x, "shareLocation", value.asInstanceOf[js.Any])
     
     inline def setShareLocationUndefined: Self = StObject.set(x, "shareLocation", js.undefined)
     

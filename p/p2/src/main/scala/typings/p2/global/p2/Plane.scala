@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Plane")
 @js.native
-class Plane ()
+open class Plane ()
   extends typings.p2.mod.Plane {
   def this(options: SharedShapeOptions) = this()
 }

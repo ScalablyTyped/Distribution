@@ -32,7 +32,7 @@ trait ChatMember extends StObject {
   
   var can_send_other_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_polls: Boolean
+  var can_send_polls: js.UndefOr[Boolean] = js.undefined
   
   var is_member: js.UndefOr[Boolean] = js.undefined
   
@@ -44,8 +44,8 @@ trait ChatMember extends StObject {
 }
 object ChatMember {
   
-  inline def apply(can_send_polls: Boolean, status: ChatMemberStatus, user: User): ChatMember = {
-    val __obj = js.Dynamic.literal(can_send_polls = can_send_polls.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+  inline def apply(status: ChatMemberStatus, user: User): ChatMember = {
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatMember]
   }
   
@@ -104,6 +104,8 @@ object ChatMember {
     inline def setCan_send_other_messagesUndefined: Self = StObject.set(x, "can_send_other_messages", js.undefined)
     
     inline def setCan_send_polls(value: Boolean): Self = StObject.set(x, "can_send_polls", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_pollsUndefined: Self = StObject.set(x, "can_send_polls", js.undefined)
     
     inline def setIs_member(value: Boolean): Self = StObject.set(x, "is_member", value.asInstanceOf[js.Any])
     

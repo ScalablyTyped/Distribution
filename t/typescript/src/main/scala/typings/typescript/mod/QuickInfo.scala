@@ -31,13 +31,13 @@ object QuickInfo {
     
     inline def setDisplayPartsUndefined: Self = StObject.set(x, "displayParts", js.undefined)
     
-    inline def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value :_*))
+    inline def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value*))
     
     inline def setDocumentation(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    inline def setDocumentationVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "documentation", js.Array(value :_*))
+    inline def setDocumentationVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "documentation", js.Array(value*))
     
     inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object QuickInfo {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: JSDocTagInfo*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: JSDocTagInfo*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTextSpan(value: TextSpan): Self = StObject.set(x, "textSpan", value.asInstanceOf[js.Any])
   }

@@ -6,6 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("asn1js", "IA5String")
 @js.native
-class IA5String () extends LocalSimpleStringBlock {
-  def this(params: LocalSimpleStringBlockParams) = this()
+open class IA5String ()
+  extends LocalSimpleStringBlock
+     with _AsnType {
+  def this(parameters: IA5StringParams) = this()
+}
+object IA5String {
+  
+  @JSImport("asn1js", "IA5String")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("asn1js", "IA5String.NAME")
+  @js.native
+  def NAME: String = js.native
+  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

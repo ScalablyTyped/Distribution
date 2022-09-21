@@ -13,12 +13,16 @@ trait gamepadGamepadSettingsProperties extends StObject {
   /**
     * Use this property to explicitly select the gamepad device for map and scene navigation.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-gamepad-GamepadSettings.html#device)
     */
   var device: js.UndefOr[GamepadInputDeviceProperties] = js.undefined
   
   /**
     * Whether gamepad navigation is enabled on the View.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-gamepad-GamepadSettings.html#enabled)
     */
@@ -27,12 +31,16 @@ trait gamepadGamepadSettingsProperties extends StObject {
   /**
     * This setting controls the behavior of forward and back movement of the left stick.
     *
+    * @default pan
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-gamepad-GamepadSettings.html#mode)
     */
   var mode: js.UndefOr[pan | zoom] = js.undefined
   
   /**
     * Determines whether pressing the tilt axis forwards make the view tilt down (towards the nadir), or up (towards the zenith).
+    *
+    * @default forward-down
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-gamepad-GamepadSettings.html#tiltDirection)
     */

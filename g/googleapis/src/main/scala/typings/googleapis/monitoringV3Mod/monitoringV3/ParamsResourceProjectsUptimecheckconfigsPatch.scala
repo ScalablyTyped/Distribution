@@ -1,9 +1,5 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +9,7 @@ trait ParamsResourceProjectsUptimecheckconfigsPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * A unique resource name for this UptimeCheckConfig. The format
-    * is:projects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].This field
-    * should be omitted when creating the uptime check configuration; on
-    * create, the resource name is assigned by the server and included in the
-    * response.
+    * A unique resource name for this Uptime check configuration. The format is: projects/[PROJECT_ID_OR_NUMBER]/uptimeCheckConfigs/[UPTIME_CHECK_ID] [PROJECT_ID_OR_NUMBER] is the Workspace host project associated with the Uptime check.This field should be omitted when creating the Uptime check configuration; on create, the resource name is assigned by the server and included in the response.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -32,10 +19,7 @@ trait ParamsResourceProjectsUptimecheckconfigsPatch
   var requestBody: js.UndefOr[SchemaUptimeCheckConfig] = js.undefined
   
   /**
-    * Optional. If present, only the listed fields in the current uptime check
-    * configuration are updated with values from the new configuration. If this
-    * field is empty, then the current configuration is completely replaced
-    * with the new configuration.
+    * Optional. If present, only the listed fields in the current Uptime check configuration are updated with values from the new configuration. If this field is empty, then the current configuration is completely replaced with the new configuration.
     */
   var updateMask: js.UndefOr[String] = js.undefined
 }
@@ -47,10 +31,6 @@ object ParamsResourceProjectsUptimecheckconfigsPatch {
   }
   
   extension [Self <: ParamsResourceProjectsUptimecheckconfigsPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

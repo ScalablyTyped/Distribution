@@ -10,10 +10,10 @@ abstract rate limiter backed by redis
 | ------------------ | :-------------: |
 | Full name          | ratelimiter |
 | Keywords           | rate, ratelimit, limiter, limit |
-| # releases         | 5 |
-| # dependents       | 29 |
-| # downloads        | 975623 |
-| # stars            | 29 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 135022.0 |
+| # stars            | 697.0 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/node-ratelimiter#readme)

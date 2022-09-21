@@ -10,10 +10,10 @@ object backupMod {
   
   @JSImport("material-ui/svg-icons/action/backup", JSImport.Default)
   @js.native
-  class default () extends ActionBackup
+  open class default () extends ActionBackup
   
   @JSImport("material-ui/svg-icons/action/backup", "ActionBackup")
   @js.native
-  class ActionBackup ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionBackup ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

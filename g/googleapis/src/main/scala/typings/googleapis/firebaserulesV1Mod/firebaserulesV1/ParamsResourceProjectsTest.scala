@@ -1,9 +1,5 @@
 package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +9,7 @@ trait ParamsResourceProjectsTest
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Tests may either provide `source` or a `Ruleset` resource name.  For
-    * tests against `source`, the resource name must refer to the project:
-    * Format: `projects/{project_id}`  For tests against a `Ruleset`, this must
-    * be the `Ruleset` resource name: Format:
-    * `projects/{project_id}/rulesets/{ruleset_id}`
+    * Required. Tests may either provide `source` or a `Ruleset` resource name. For tests against `source`, the resource name must refer to the project: Format: `projects/{project_id\}` For tests against a `Ruleset`, this must be the `Ruleset` resource name: Format: `projects/{project_id\}/rulesets/{ruleset_id\}`
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -39,10 +26,6 @@ object ParamsResourceProjectsTest {
   }
   
   extension [Self <: ParamsResourceProjectsTest](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

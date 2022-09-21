@@ -8,18 +8,18 @@ object pathModelMod {
   
   @JSImport("lambda-phi/lib/path-model", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with PathModel {
     
     /* private */ /* CompleteClass */
-    var _httpMethods: js.Any = js.native
+    var _httpMethods: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _methodName: js.Any = js.native
+    var _methodName: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _pattern: js.Any = js.native
+    var _pattern: Any = js.native
     
     /* CompleteClass */
     var httpMethods: js.Array[String] = js.native
@@ -33,11 +33,11 @@ object pathModelMod {
   
   trait PathModel extends StObject {
     
-    /* private */ var _httpMethods: js.Any
+    /* private */ var _httpMethods: Any
     
-    /* private */ var _methodName: js.Any
+    /* private */ var _methodName: Any
     
-    /* private */ var _pattern: js.Any
+    /* private */ var _pattern: Any
     
     var httpMethods: js.Array[String]
     
@@ -48,9 +48,9 @@ object pathModelMod {
   object PathModel {
     
     inline def apply(
-      _httpMethods: js.Any,
-      _methodName: js.Any,
-      _pattern: js.Any,
+      _httpMethods: Any,
+      _methodName: Any,
+      _pattern: Any,
       httpMethods: js.Array[String],
       methodName: String,
       pattern: String
@@ -63,17 +63,17 @@ object pathModelMod {
       
       inline def setHttpMethods(value: js.Array[String]): Self = StObject.set(x, "httpMethods", value.asInstanceOf[js.Any])
       
-      inline def setHttpMethodsVarargs(value: String*): Self = StObject.set(x, "httpMethods", js.Array(value :_*))
+      inline def setHttpMethodsVarargs(value: String*): Self = StObject.set(x, "httpMethods", js.Array(value*))
       
       inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      inline def set_httpMethods(value: js.Any): Self = StObject.set(x, "_httpMethods", value.asInstanceOf[js.Any])
+      inline def set_httpMethods(value: Any): Self = StObject.set(x, "_httpMethods", value.asInstanceOf[js.Any])
       
-      inline def set_methodName(value: js.Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
+      inline def set_methodName(value: Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
       
-      inline def set_pattern(value: js.Any): Self = StObject.set(x, "_pattern", value.asInstanceOf[js.Any])
+      inline def set_pattern(value: Any): Self = StObject.set(x, "_pattern", value.asInstanceOf[js.Any])
     }
   }
 }

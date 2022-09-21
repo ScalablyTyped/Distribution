@@ -1,7 +1,7 @@
 package typings.materialList
 
+import typings.materialBase.Element
 import typings.materialList.anon.PartialMDCListAdapter
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("@material/list", "MDCList")
   @js.native
-  class MDCList protected ()
+  open class MDCList protected ()
     extends typings.materialList.componentMod.MDCList {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: typings.materialList.foundationMod.MDCListFoundation, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: typings.materialList.foundationMod.MDCListFoundation, args: Any*) = this()
   }
   /* static members */
   object MDCList {
@@ -22,38 +22,16 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialList.componentMod.MDCList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialList.componentMod.MDCList]
+    inline def attachTo(root: typings.std.Element): typings.materialList.componentMod.MDCList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialList.componentMod.MDCList]
   }
   
   @JSImport("@material/list", "MDCListFoundation")
   @js.native
-  class MDCListFoundation ()
+  open class MDCListFoundation ()
     extends typings.materialList.foundationMod.MDCListFoundation {
     def this(adapter: PartialMDCListAdapter) = this()
   }
   
-  /**
-    * @license
-    * Copyright 2018 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object cssClasses {
     
     @JSImport("@material/list", "cssClasses")
@@ -95,6 +73,10 @@ object mod {
     def ROOT: String = js.native
     inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("@material/list", "evolutionAttribute")
+  @js.native
+  val evolutionAttribute: /* "evolution" */ String = js.native
   
   object numbers {
     
@@ -149,6 +131,16 @@ object mod {
     def ARIA_DISABLED: String = js.native
     inline def ARIA_DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DISABLED")(x.asInstanceOf[js.Any])
     
+    @JSImport("@material/list", "strings.ARIA_INTERACTIVE_ROLES_SELECTOR")
+    @js.native
+    def ARIA_INTERACTIVE_ROLES_SELECTOR: String = js.native
+    inline def ARIA_INTERACTIVE_ROLES_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_INTERACTIVE_ROLES_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/list", "strings.ARIA_MULTI_SELECTABLE_SELECTOR")
+    @js.native
+    def ARIA_MULTI_SELECTABLE_SELECTOR: String = js.native
+    inline def ARIA_MULTI_SELECTABLE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_MULTI_SELECTABLE_SELECTOR")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/list", "strings.ARIA_ORIENTATION")
     @js.native
     def ARIA_ORIENTATION: String = js.native
@@ -184,6 +176,11 @@ object mod {
     def CHILD_ELEMENTS_TO_TOGGLE_TABINDEX: String = js.native
     inline def CHILD_ELEMENTS_TO_TOGGLE_TABINDEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHILD_ELEMENTS_TO_TOGGLE_TABINDEX")(x.asInstanceOf[js.Any])
     
+    @JSImport("@material/list", "strings.DEPRECATED_SELECTOR")
+    @js.native
+    def DEPRECATED_SELECTOR: String = js.native
+    inline def DEPRECATED_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEPRECATED_SELECTOR")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/list", "strings.FOCUSABLE_CHILD_ELEMENTS")
     @js.native
     def FOCUSABLE_CHILD_ELEMENTS: String = js.native
@@ -193,5 +190,15 @@ object mod {
     @js.native
     def RADIO_SELECTOR: String = js.native
     inline def RADIO_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RADIO_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/list", "strings.SELECTED_ITEM_SELECTOR")
+    @js.native
+    def SELECTED_ITEM_SELECTOR: String = js.native
+    inline def SELECTED_ITEM_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_ITEM_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/list", "strings.SELECTION_CHANGE_EVENT")
+    @js.native
+    def SELECTION_CHANGE_EVENT: String = js.native
+    inline def SELECTION_CHANGE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTION_CHANGE_EVENT")(x.asInstanceOf[js.Any])
   }
 }

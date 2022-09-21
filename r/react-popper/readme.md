@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-popper
 
-Typings are for version 2.2.4
+Typings are for version 2.3.0
 
 ## Library description:
 Official library to use Popper on React projects
@@ -10,10 +10,10 @@ Official library to use Popper on React projects
 | ------------------ | :-------------: |
 | Full name          | react-popper |
 | Keywords           | react, react-popper, popperjs, component, drop, tooltip, popover |
-| # releases         | 13 |
-| # dependents       | 652 |
-| # downloads        | 159871769 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7205285666666668E7 |
+| # stars            | 2282.0 |
 
 ## Links
 - [Homepage](https://popper.js.org/react-popper)

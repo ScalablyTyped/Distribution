@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppInstanceStreamingConfiguration extends StObject {
   
   /**
-    * The data type of the app instance.
+    * The type of data to be streamed.
     */
   var AppInstanceDataType: typings.awsSdk.chimeMod.AppInstanceDataType
   

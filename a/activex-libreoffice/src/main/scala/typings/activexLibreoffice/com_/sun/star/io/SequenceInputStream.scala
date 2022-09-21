@@ -25,7 +25,7 @@ object SequenceInputStream {
     createStreamFromSequence: SeqEquiv[Double] => Unit,
     getLength: () => Double,
     getPosition: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readBytes: (js.Array[SeqEquiv[Double]], Double) => Double,
     readSomeBytes: (js.Array[SeqEquiv[Double]], Double) => Double,
     release: () => Unit,

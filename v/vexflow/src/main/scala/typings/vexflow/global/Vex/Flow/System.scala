@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.System")
 @js.native
-class System ()
+open class System ()
   extends StObject
      with typings.vexflow.Vex.Flow.System {
-  def this(params: js.Any) = this()
+  def this(params: Any) = this()
 }

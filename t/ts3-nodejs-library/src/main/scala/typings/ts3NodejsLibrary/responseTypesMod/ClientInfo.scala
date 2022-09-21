@@ -285,7 +285,7 @@ object ClientInfo {
     
     inline def setClientServergroups(value: js.Array[String]): Self = StObject.set(x, "clientServergroups", value.asInstanceOf[js.Any])
     
-    inline def setClientServergroupsVarargs(value: String*): Self = StObject.set(x, "clientServergroups", js.Array(value :_*))
+    inline def setClientServergroupsVarargs(value: String*): Self = StObject.set(x, "clientServergroups", js.Array(value*))
     
     inline def setClientSignedBadges(value: String): Self = StObject.set(x, "clientSignedBadges", value.asInstanceOf[js.Any])
     

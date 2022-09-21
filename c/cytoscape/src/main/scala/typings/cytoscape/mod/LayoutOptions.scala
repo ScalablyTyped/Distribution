@@ -44,31 +44,33 @@ object LayoutOptions {
   
   inline def ConcentricLayoutOptions(
     concentric: Degree => Double,
+    equidistant: Boolean,
     fit: Boolean,
     height: Unit,
     levelWidth: MaxDegree => Double,
+    minNodeSpacing: Double,
     nodeDimensionsIncludeLabels: Boolean,
     spacingFactor: Unit,
     startAngle: Double,
     width: Unit
   ): typings.cytoscape.mod.ConcentricLayoutOptions = {
-    val __obj = js.Dynamic.literal(concentric = js.Any.fromFunction1(concentric), equidistant = false, fit = fit.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], levelWidth = js.Any.fromFunction1(levelWidth), minNodeSpacing = 10, name = "concentric", nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], spacingFactor = spacingFactor.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(concentric = js.Any.fromFunction1(concentric), equidistant = equidistant.asInstanceOf[js.Any], fit = fit.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], levelWidth = js.Any.fromFunction1(levelWidth), minNodeSpacing = minNodeSpacing.asInstanceOf[js.Any], name = "concentric", nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], spacingFactor = spacingFactor.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.cytoscape.mod.ConcentricLayoutOptions]
   }
   
   inline def CoseLayoutOptions(
     componentSpacing: Double,
     coolingFactor: Double,
-    edgeElasticity: js.Any => Double,
+    edgeElasticity: Any => Double,
     fit: Boolean,
     gravity: Double,
-    idealEdgeLength: js.Any => Double,
+    idealEdgeLength: Any => Double,
     initialTemp: Double,
     minTemp: Double,
     nestingFactor: Double,
     nodeDimensionsIncludeLabels: Boolean,
     nodeOverlap: Double,
-    nodeRepulsion: js.Any => Double,
+    nodeRepulsion: Any => Double,
     numIter: Double,
     randomize: Boolean,
     refresh: Double,

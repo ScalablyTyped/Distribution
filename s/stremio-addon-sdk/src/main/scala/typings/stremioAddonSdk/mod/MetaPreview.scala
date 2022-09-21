@@ -7,11 +7,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Summarized collection of meta items.
-  *
-  * Catalogs are displayed on the Stremio's Board, Discover and Search.
-  */
 trait MetaPreview extends StObject {
   
   /**

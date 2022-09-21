@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait TaggedExact[Tag /* <: String */, A, O]
-  extends ExactType[Tagged[Tag, js.Any, js.Any], A, O, js.Any]
+  extends ExactType[Tagged[Tag, Any, Any], A, O, Any]
      with _Tagged[Tag, A, O]

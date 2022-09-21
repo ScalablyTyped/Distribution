@@ -8,7 +8,8 @@ import typings.mqtt.mqttStrings.wss
 import typings.mqtt.mqttStrings.wx
 import typings.mqtt.mqttStrings.wxs
 import typings.mqttPacket.mod.QoS
-import typings.node.Buffer
+import typings.mqttPacket.mod.UserProperties
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ object anon {
     
     var topicAliasMaximum: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.undefined
+    var userProperties: js.UndefOr[UserProperties] = js.undefined
   }
   object AuthenticationData {
     
@@ -76,7 +77,7 @@ object anon {
       
       inline def setTopicAliasMaximumUndefined: Self = StObject.set(x, "topicAliasMaximum", js.undefined)
       
-      inline def setUserProperties(value: js.Object): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      inline def setUserProperties(value: UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       
       inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
     }
@@ -94,7 +95,7 @@ object anon {
     
     var responseTopic: js.UndefOr[String] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.undefined
+    var userProperties: js.UndefOr[UserProperties] = js.undefined
     
     var willDelayInterval: js.UndefOr[Double] = js.undefined
   }
@@ -127,7 +128,7 @@ object anon {
       
       inline def setResponseTopicUndefined: Self = StObject.set(x, "responseTopic", js.undefined)
       
-      inline def setUserProperties(value: js.Object): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      inline def setUserProperties(value: UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       
       inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
       
@@ -145,15 +146,15 @@ object anon {
     
     var messageExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var payloadFormatIndicator: js.UndefOr[Double] = js.undefined
+    var payloadFormatIndicator: js.UndefOr[Boolean] = js.undefined
     
     var responseTopic: js.UndefOr[String] = js.undefined
     
     var subscriptionIdentifier: js.UndefOr[Double] = js.undefined
     
-    var topicAlias: js.UndefOr[String] = js.undefined
+    var topicAlias: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.undefined
+    var userProperties: js.UndefOr[UserProperties] = js.undefined
   }
   object CorrelationData {
     
@@ -176,7 +177,7 @@ object anon {
       
       inline def setMessageExpiryIntervalUndefined: Self = StObject.set(x, "messageExpiryInterval", js.undefined)
       
-      inline def setPayloadFormatIndicator(value: Double): Self = StObject.set(x, "payloadFormatIndicator", value.asInstanceOf[js.Any])
+      inline def setPayloadFormatIndicator(value: Boolean): Self = StObject.set(x, "payloadFormatIndicator", value.asInstanceOf[js.Any])
       
       inline def setPayloadFormatIndicatorUndefined: Self = StObject.set(x, "payloadFormatIndicator", js.undefined)
       
@@ -188,11 +189,11 @@ object anon {
       
       inline def setSubscriptionIdentifierUndefined: Self = StObject.set(x, "subscriptionIdentifier", js.undefined)
       
-      inline def setTopicAlias(value: String): Self = StObject.set(x, "topicAlias", value.asInstanceOf[js.Any])
+      inline def setTopicAlias(value: Double): Self = StObject.set(x, "topicAlias", value.asInstanceOf[js.Any])
       
       inline def setTopicAliasUndefined: Self = StObject.set(x, "topicAlias", js.undefined)
       
-      inline def setUserProperties(value: js.Object): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      inline def setUserProperties(value: UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       
       inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
     }
@@ -307,6 +308,31 @@ object anon {
       inline def setRetain(value: Boolean): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
       
       inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SubscriptionIdentifier extends StObject {
+    
+    var subscriptionIdentifier: js.UndefOr[Double] = js.undefined
+    
+    var userProperties: js.UndefOr[UserProperties] = js.undefined
+  }
+  object SubscriptionIdentifier {
+    
+    inline def apply(): SubscriptionIdentifier = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SubscriptionIdentifier]
+    }
+    
+    extension [Self <: SubscriptionIdentifier](x: Self) {
+      
+      inline def setSubscriptionIdentifier(value: Double): Self = StObject.set(x, "subscriptionIdentifier", value.asInstanceOf[js.Any])
+      
+      inline def setSubscriptionIdentifierUndefined: Self = StObject.set(x, "subscriptionIdentifier", js.undefined)
+      
+      inline def setUserProperties(value: UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      
+      inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
     }
   }
 }

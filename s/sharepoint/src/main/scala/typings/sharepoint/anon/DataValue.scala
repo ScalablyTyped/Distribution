@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataValue extends StObject {
   
-  var dataValue: js.Any
+  var dataValue: Any
   
   var isValid: Boolean
   
@@ -14,14 +14,14 @@ trait DataValue extends StObject {
 }
 object DataValue {
   
-  inline def apply(dataValue: js.Any, isValid: Boolean, normalizedLocValue: String): DataValue = {
+  inline def apply(dataValue: Any, isValid: Boolean, normalizedLocValue: String): DataValue = {
     val __obj = js.Dynamic.literal(dataValue = dataValue.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], normalizedLocValue = normalizedLocValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValue]
   }
   
   extension [Self <: DataValue](x: Self) {
     
-    inline def setDataValue(value: js.Any): Self = StObject.set(x, "dataValue", value.asInstanceOf[js.Any])
+    inline def setDataValue(value: Any): Self = StObject.set(x, "dataValue", value.asInstanceOf[js.Any])
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

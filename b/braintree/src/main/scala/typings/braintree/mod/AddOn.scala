@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("braintree", "AddOn")
 @js.native
-class AddOn () extends StObject {
+open class AddOn () extends StObject {
   
   var amount: js.UndefOr[String] = js.native
   

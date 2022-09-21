@@ -9,9 +9,9 @@ trait FogBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /* private */ var _fogDistanceName: js.Any = js.native
+  /* private */ var _fogDistanceName: Any = js.native
   
-  /* private */ var _fogParameters: js.Any = js.native
+  /* private */ var _fogParameters: Any = js.native
   
   /**
     * Gets the fog color input component

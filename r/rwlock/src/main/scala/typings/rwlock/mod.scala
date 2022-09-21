@@ -1,6 +1,5 @@
 package typings.rwlock
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,17 +8,17 @@ object mod {
   
   @JSImport("rwlock", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ReadWriteLock
   
-  type AsyncCallback = js.Function2[/* err */ Error, /* release */ Release, Unit]
+  type AsyncCallback = js.Function2[/* err */ js.Error, /* release */ Release, Unit]
   
   type Callback = js.Function1[/* release */ Release, Unit]
   
   trait Options extends StObject {
     
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
     
@@ -34,7 +33,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       

@@ -6,16 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(value: js.Any): ValueType = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[ValueType]
-  
   @JSImport("jest-get-type", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("jest-get-type", "isPrimitive")
-  @js.native
-  def isPrimitive: js.Function1[/* value */ js.Any, Boolean] = js.native
-  inline def isPrimitive_=(x: js.Function1[/* value */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isPrimitive")(x.asInstanceOf[js.Any])
+  inline def getType(value: Any): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(value.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+  
+  inline def isPrimitive(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitive")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.jestGetType.jestGetTypeStrings.array

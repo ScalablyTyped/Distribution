@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-media
 
-Typings are for version 5.0.3
+Typings are for version 6.1.0
 
 ## Library description:
 Cordova Media Plugin
@@ -10,10 +10,10 @@ Cordova Media Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-media |
 | Keywords           | cordova, media, ecosystem:cordova, cordova-android, cordova-browser, cordova-ios, cordova-windows |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 311314 |
-| # stars            | 12 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 58017.0 |
+| # stars            | 369.0 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-plugin-media#readme)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_LruCache")
 @js.native
-class ClassLruCache protected ()
+open class ClassLruCache protected ()
   extends StObject
      with typings.fibjs.ClassLruCache {
   /**

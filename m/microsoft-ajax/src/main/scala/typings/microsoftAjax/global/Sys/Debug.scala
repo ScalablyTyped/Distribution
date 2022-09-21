@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the Sys.Debug class.
   */
-class Debug ()
+open class Debug ()
   extends StObject
      with typings.microsoftAjax.Sys.Debug
 object Debug {
@@ -74,6 +74,6 @@ object Debug {
     *      (Optional) The name of the object.
     */
   /* static member */
-  inline def traceDump(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def traceDump(`object`: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def traceDump(`object`: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def traceDump(`object`: Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

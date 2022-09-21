@@ -1,6 +1,5 @@
 package typings.babylonjs
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.mathAxisMod.Space
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Quaternion
@@ -17,7 +16,7 @@ object boneMod {
   
   @JSImport("babylonjs/Bones/bone", "Bone")
   @js.native
-  class Bone protected () extends Node {
+  open class Bone protected () extends Node {
     /**
       * Create a new bone
       * @param name defines the bone name
@@ -26,7 +25,7 @@ object boneMod {
       * @param localMatrix defines the local matrix
       * @param restPose defines the rest pose matrix
       * @param baseMatrix defines the base matrix
-      * @param index defines index of the bone in the hiearchy
+      * @param index defines index of the bone in the hierarchy
       */
     def this(/**
       * defines the bone name
@@ -375,17 +374,15 @@ object boneMod {
       index: Nullable[Double]
     ) = this()
     
-    /* private */ var _absoluteTransform: js.Any = js.native
+    /* private */ var _absoluteTransform: Any = js.native
     
-    /* private */ var _baseMatrix: js.Any = js.native
+    /* private */ var _baseMatrix: Any = js.native
     
-    /* private */ var _bindPose: js.Any = js.native
+    /* private */ var _compose: Any = js.native
     
-    /* private */ var _compose: js.Any = js.native
+    /* private */ var _decompose: Any = js.native
     
-    /* private */ var _decompose: js.Any = js.native
-    
-    /* private */ var _getNegativeRotationToRef: js.Any = js.native
+    /* private */ var _getNegativeRotationToRef: Any = js.native
     
     /**
       * @hidden Internal only
@@ -394,44 +391,46 @@ object boneMod {
       */
     var _index: Nullable[Double] = js.native
     
-    /* private */ var _invertedAbsoluteTransform: js.Any = js.native
+    /* private */ var _invertedAbsoluteTransform: Any = js.native
     
     /** @hidden */
     var _linkedTransformNode: Nullable[TransformNode] = js.native
     
-    /* private */ var _localMatrix: js.Any = js.native
+    /* private */ var _localMatrix: Any = js.native
     
-    /* private */ var _localPosition: js.Any = js.native
+    /* private */ var _localPosition: Any = js.native
     
-    /* private */ var _localRotation: js.Any = js.native
+    /* private */ var _localRotation: Any = js.native
     
-    /* private */ var _localScaling: js.Any = js.native
+    /* private */ var _localScaling: Any = js.native
     
     /** @hidden */
     def _markAsDirtyAndCompose(): Unit = js.native
     
-    /* private */ var _markAsDirtyAndDecompose: js.Any = js.native
+    /* private */ var _markAsDirtyAndDecompose: Any = js.native
     
     /** @hidden */
     def _matrix: Matrix = js.native
     /** @hidden */
     def _matrix_=(value: Matrix): Unit = js.native
     
-    /* private */ var _needToCompose: js.Any = js.native
+    /* private */ var _needToCompose: Any = js.native
     
-    /* private */ var _needToDecompose: js.Any = js.native
+    /* private */ var _needToDecompose: Any = js.native
     
-    /* private */ var _parent: js.Any = js.native
+    /* private */ var _restPose: Any = js.native
     
-    /* private */ var _restPose: js.Any = js.native
+    /* private */ var _rotateWithMatrix: Any = js.native
     
-    /* private */ var _rotateWithMatrix: js.Any = js.native
+    /* private */ var _scalingDeterminant: Any = js.native
     
-    /* private */ var _scalingDeterminant: js.Any = js.native
+    /* private */ var _skeleton: Any = js.native
     
-    /* private */ var _skeleton: js.Any = js.native
-    
-    /** @hidden */
+    /**
+      * @param rootMatrix
+      * @param updateChildren
+      * @hidden
+      */
     def _updateDifferenceMatrix(): Unit = js.native
     def _updateDifferenceMatrix(rootMatrix: Unit, updateChildren: Boolean): Unit = js.native
     def _updateDifferenceMatrix(rootMatrix: Matrix): Unit = js.native
@@ -440,7 +439,7 @@ object boneMod {
     /** @hidden */
     var _waitingTransformNodeId: Nullable[String] = js.native
     
-    /* private */ var _worldTransform: js.Any = js.native
+    /* private */ var _worldTransform: Any = js.native
     
     /**
       * Gets the list of child bones
@@ -471,37 +470,36 @@ object boneMod {
     
     /**
       * Get the absolute position of the bone (world space)
-      * @param mesh The mesh that this bone is attached to
+      * @param tNode The TransformNode that this bone is attached to
       * @returns The absolute position of the bone
       */
     def getAbsolutePosition(): Vector3 = js.native
-    def getAbsolutePosition(mesh: Nullable[AbstractMesh]): Vector3 = js.native
+    def getAbsolutePosition(tNode: Nullable[TransformNode]): Vector3 = js.native
     
     /**
       * Get the world position of a point that is in the local space of the bone
       * @param position The local position
-      * @param mesh The mesh that this bone is attached to
+      * @param tNode The TransformNode that this bone is attached to
       * @returns The world position
       */
     def getAbsolutePositionFromLocal(position: Vector3): Vector3 = js.native
-    def getAbsolutePositionFromLocal(position: Vector3, mesh: Nullable[AbstractMesh]): Vector3 = js.native
+    def getAbsolutePositionFromLocal(position: Vector3, tNode: Nullable[TransformNode]): Vector3 = js.native
     
-    def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: Null, result: Vector3): Unit = js.native
-    def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: Unit, result: Vector3): Unit = js.native
+    def getAbsolutePositionFromLocalToRef(position: Vector3, tNode: Unit, result: Vector3): Unit = js.native
     /**
       * Get the world position of a point that is in the local space of the bone and copy it to the result param
       * @param position The local position
-      * @param mesh The mesh that this bone is attached to
+      * @param tNode The TransformNode that this bone is attached to
       * @param result The vector3 that the world position should be copied to
       */
-    def getAbsolutePositionFromLocalToRef(position: Vector3, mesh: AbstractMesh, result: Vector3): Unit = js.native
+    def getAbsolutePositionFromLocalToRef(position: Vector3, tNode: Nullable[TransformNode], result: Vector3): Unit = js.native
     
     /**
       * Copy the absolute position of the bone (world space) to the result param
-      * @param mesh The mesh that this bone is attached to
+      * @param tNode The TransformNode that this bone is attached to
       * @param result The vector3 to copy the absolute position to
       */
-    def getAbsolutePositionToRef(mesh: AbstractMesh, result: Vector3): Unit = js.native
+    def getAbsolutePositionToRef(tNode: TransformNode, result: Vector3): Unit = js.native
     
     /**
       * Gets the absolute transform matrix (ie base matrix * parent world matrix)
@@ -511,34 +509,34 @@ object boneMod {
     
     /**
       * Gets the base matrix (initial matrix which remains unchanged)
-      * @returns a matrix
+      * @returns the base matrix (as known as bind pose matrix)
       */
     def getBaseMatrix(): Matrix = js.native
     
     /**
       * Gets the bind pose matrix
       * @returns the bind pose matrix
+      * @deprecated Please use getBaseMatrix instead
       */
     def getBindPose(): Matrix = js.native
     
     /**
       * Get the world direction from an axis that is in the local space of the bone
       * @param localAxis The local direction that is used to compute the world direction
-      * @param mesh The mesh that this bone is attached to
+      * @param tNode The TransformNode that this bone is attached to
       * @returns The world direction
       */
     def getDirection(localAxis: Vector3): Vector3 = js.native
-    def getDirection(localAxis: Vector3, mesh: Nullable[AbstractMesh]): Vector3 = js.native
+    def getDirection(localAxis: Vector3, tNode: Nullable[TransformNode]): Vector3 = js.native
     
-    def getDirectionToRef(localAxis: Vector3, mesh: Null, result: Vector3): Unit = js.native
-    def getDirectionToRef(localAxis: Vector3, mesh: Unit, result: Vector3): Unit = js.native
+    def getDirectionToRef(localAxis: Vector3, tNode: Unit, result: Vector3): Unit = js.native
     /**
       * Copy the world direction to a vector3 from an axis that is in the local space of the bone
       * @param localAxis The local direction that is used to compute the world direction
-      * @param mesh The mesh that this bone is attached to
+      * @param tNode The TransformNode that this bone is attached to
       * @param result The vector3 that the world direction will be copied to
       */
-    def getDirectionToRef(localAxis: Vector3, mesh: AbstractMesh, result: Vector3): Unit = js.native
+    def getDirectionToRef(localAxis: Vector3, tNode: Nullable[TransformNode], result: Vector3): Unit = js.native
     
     /**
       * Gets the node index in matrix array generated for rendering
@@ -562,21 +560,20 @@ object boneMod {
     /**
       * Get the local position of a point that is in world space
       * @param position The world position
-      * @param mesh The mesh that this bone is attached to
+      * @param tNode The TransformNode that this bone is attached to
       * @returns The local position
       */
     def getLocalPositionFromAbsolute(position: Vector3): Vector3 = js.native
-    def getLocalPositionFromAbsolute(position: Vector3, mesh: Nullable[AbstractMesh]): Vector3 = js.native
+    def getLocalPositionFromAbsolute(position: Vector3, tNode: Nullable[TransformNode]): Vector3 = js.native
     
-    def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: Null, result: Vector3): Unit = js.native
-    def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: Unit, result: Vector3): Unit = js.native
+    def getLocalPositionFromAbsoluteToRef(position: Vector3, tNode: Unit, result: Vector3): Unit = js.native
     /**
       * Get the local position of a point that is in world space and copy it to the result param
       * @param position The world position
-      * @param mesh The mesh that this bone is attached to
+      * @param tNode The TransformNode that this bone is attached to
       * @param result The vector3 that the local position should be copied to
       */
-    def getLocalPositionFromAbsoluteToRef(position: Vector3, mesh: AbstractMesh, result: Vector3): Unit = js.native
+    def getLocalPositionFromAbsoluteToRef(position: Vector3, tNode: Nullable[TransformNode], result: Vector3): Unit = js.native
     
     /**
       * Gets parent bone
@@ -587,22 +584,22 @@ object boneMod {
     /**
       * Get the position of the bone in local or world space
       * @param space The space that the returned position is in
-      * @param mesh The mesh that this bone is attached to. This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to. This is only used in world space
       * @returns The position of the bone
       */
     def getPosition(): Vector3 = js.native
-    def getPosition(space: Unit, mesh: Nullable[AbstractMesh]): Vector3 = js.native
+    def getPosition(space: Unit, tNode: Nullable[TransformNode]): Vector3 = js.native
     def getPosition(space: Space): Vector3 = js.native
-    def getPosition(space: Space, mesh: Nullable[AbstractMesh]): Vector3 = js.native
+    def getPosition(space: Space, tNode: Nullable[TransformNode]): Vector3 = js.native
     
-    def getPositionToRef(space: Unit, mesh: Nullable[AbstractMesh], result: Vector3): Unit = js.native
+    def getPositionToRef(space: Unit, tNode: Nullable[TransformNode], result: Vector3): Unit = js.native
     /**
       * Copy the position of the bone to a vector3 in local or world space
       * @param space The space that the returned position is in
-      * @param mesh The mesh that this bone is attached to. This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to. This is only used in world space
       * @param result The vector3 to copy the position to
       */
-    def getPositionToRef(space: Space, mesh: Nullable[AbstractMesh], result: Vector3): Unit = js.native
+    def getPositionToRef(space: Space, tNode: Nullable[TransformNode], result: Vector3): Unit = js.native
     
     /**
       * Gets the rest pose matrix
@@ -613,68 +610,64 @@ object boneMod {
     /**
       * Get the euler rotation of the bone in local or world space
       * @param space The space that the rotation should be in
-      * @param mesh The mesh that this bone is attached to.  This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to.  This is only used in world space
       * @returns The euler rotation
       */
     def getRotation(): Vector3 = js.native
-    def getRotation(space: Unit, mesh: Nullable[AbstractMesh]): Vector3 = js.native
+    def getRotation(space: Unit, tNode: Nullable[TransformNode]): Vector3 = js.native
     def getRotation(space: Space): Vector3 = js.native
-    def getRotation(space: Space, mesh: Nullable[AbstractMesh]): Vector3 = js.native
+    def getRotation(space: Space, tNode: Nullable[TransformNode]): Vector3 = js.native
     
-    def getRotationMatrix(space: Unit, mesh: AbstractMesh): Matrix = js.native
+    def getRotationMatrix(space: Unit, tNode: TransformNode): Matrix = js.native
     /**
       * Get the rotation matrix of the bone in local or world space
       * @param space The space that the rotation should be in
-      * @param mesh The mesh that this bone is attached to.  This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to.  This is only used in world space
       * @returns The rotation matrix
       */
-    def getRotationMatrix(space: Space, mesh: AbstractMesh): Matrix = js.native
+    def getRotationMatrix(space: Space, tNode: TransformNode): Matrix = js.native
     
-    def getRotationMatrixToRef(space: Unit, mesh: AbstractMesh, result: Matrix): Unit = js.native
+    def getRotationMatrixToRef(space: Unit, tNode: TransformNode, result: Matrix): Unit = js.native
     /**
       * Copy the rotation matrix of the bone to a matrix.  The rotation can be in either local or world space
       * @param space The space that the rotation should be in
-      * @param mesh The mesh that this bone is attached to.  This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to.  This is only used in world space
       * @param result The quaternion that the rotation should be copied to
       */
-    def getRotationMatrixToRef(space: Space, mesh: AbstractMesh, result: Matrix): Unit = js.native
+    def getRotationMatrixToRef(space: Space, tNode: TransformNode, result: Matrix): Unit = js.native
     
     /**
       * Get the quaternion rotation of the bone in either local or world space
       * @param space The space that the rotation should be in
-      * @param mesh The mesh that this bone is attached to.  This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to.  This is only used in world space
       * @returns The quaternion rotation
       */
     def getRotationQuaternion(): Quaternion = js.native
-    def getRotationQuaternion(space: Unit, mesh: Nullable[AbstractMesh]): Quaternion = js.native
+    def getRotationQuaternion(space: Unit, tNode: Nullable[TransformNode]): Quaternion = js.native
     def getRotationQuaternion(space: Space): Quaternion = js.native
-    def getRotationQuaternion(space: Space, mesh: Nullable[AbstractMesh]): Quaternion = js.native
+    def getRotationQuaternion(space: Space, tNode: Nullable[TransformNode]): Quaternion = js.native
     
-    def getRotationQuaternionToRef(space: Unit, mesh: Null, result: Quaternion): Unit = js.native
-    def getRotationQuaternionToRef(space: Unit, mesh: Unit, result: Quaternion): Unit = js.native
-    def getRotationQuaternionToRef(space: Unit, mesh: AbstractMesh, result: Quaternion): Unit = js.native
-    def getRotationQuaternionToRef(space: Space, mesh: Null, result: Quaternion): Unit = js.native
-    def getRotationQuaternionToRef(space: Space, mesh: Unit, result: Quaternion): Unit = js.native
+    def getRotationQuaternionToRef(space: Unit, tNode: Unit, result: Quaternion): Unit = js.native
+    def getRotationQuaternionToRef(space: Unit, tNode: Nullable[TransformNode], result: Quaternion): Unit = js.native
+    def getRotationQuaternionToRef(space: Space, tNode: Unit, result: Quaternion): Unit = js.native
     /**
       * Copy the quaternion rotation of the bone to a quaternion.  The rotation can be in either local or world space
       * @param space The space that the rotation should be in
-      * @param mesh The mesh that this bone is attached to.  This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to.  This is only used in world space
       * @param result The quaternion that the rotation should be copied to
       */
-    def getRotationQuaternionToRef(space: Space, mesh: AbstractMesh, result: Quaternion): Unit = js.native
+    def getRotationQuaternionToRef(space: Space, tNode: Nullable[TransformNode], result: Quaternion): Unit = js.native
     
-    def getRotationToRef(space: Unit, mesh: Null, result: Vector3): Unit = js.native
-    def getRotationToRef(space: Unit, mesh: Unit, result: Vector3): Unit = js.native
-    def getRotationToRef(space: Unit, mesh: AbstractMesh, result: Vector3): Unit = js.native
-    def getRotationToRef(space: Space, mesh: Null, result: Vector3): Unit = js.native
-    def getRotationToRef(space: Space, mesh: Unit, result: Vector3): Unit = js.native
+    def getRotationToRef(space: Unit, tNode: Unit, result: Vector3): Unit = js.native
+    def getRotationToRef(space: Unit, tNode: Nullable[TransformNode], result: Vector3): Unit = js.native
+    def getRotationToRef(space: Space, tNode: Unit, result: Vector3): Unit = js.native
     /**
       * Copy the euler rotation of the bone to a vector3.  The rotation can be in either local or world space
       * @param space The space that the rotation should be in
-      * @param mesh The mesh that this bone is attached to.  This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to.  This is only used in world space
       * @param result The vector3 that the rotation should be copied to
       */
-    def getRotationToRef(space: Space, mesh: AbstractMesh, result: Vector3): Unit = js.native
+    def getRotationToRef(space: Space, tNode: Nullable[TransformNode], result: Vector3): Unit = js.native
     
     /**
       * Gets the current scaling in local space
@@ -712,10 +705,7 @@ object boneMod {
       */
     def linkTransformNode(transformNode: Nullable[TransformNode]): Unit = js.native
     
-    /**
-      * Flag the bone as dirty (Forcing it to update everything)
-      */
-    def markAsDirty(): Unit = js.native
+    def parent_=(newParent: Nullable[Bone]): Unit = js.native
     
     /** Gets or sets current position (in local space) */
     def position: Vector3 = js.native
@@ -731,12 +721,12 @@ object boneMod {
       * @param axis The axis to rotate the bone on
       * @param amount The amount to rotate the bone
       * @param space The space that the axis is in
-      * @param mesh The mesh that this bone is attached to. This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to. This is only used in world space
       */
     def rotate(axis: Vector3, amount: Double): Unit = js.native
-    def rotate(axis: Vector3, amount: Double, space: Unit, mesh: AbstractMesh): Unit = js.native
+    def rotate(axis: Vector3, amount: Double, space: Unit, tNode: TransformNode): Unit = js.native
     def rotate(axis: Vector3, amount: Double, space: Space): Unit = js.native
-    def rotate(axis: Vector3, amount: Double, space: Space, mesh: AbstractMesh): Unit = js.native
+    def rotate(axis: Vector3, amount: Double, space: Space, tNode: TransformNode): Unit = js.native
     
     /** Gets or sets current rotation (in local space) */
     def rotation: Vector3 = js.native
@@ -764,26 +754,27 @@ object boneMod {
     /**
       * Set the absolute position of the bone (world space)
       * @param position The position to set the bone
-      * @param mesh The mesh that this bone is attached to
+      * @param tNode The TransformNode that this bone is attached to
       */
     def setAbsolutePosition(position: Vector3): Unit = js.native
-    def setAbsolutePosition(position: Vector3, mesh: AbstractMesh): Unit = js.native
+    def setAbsolutePosition(position: Vector3, tNode: TransformNode): Unit = js.native
     
     /**
       * Set the rotation of the bone to a particular axis angle in local or world space
       * @param axis The axis to rotate the bone on
       * @param angle The angle that the bone should be rotated to
       * @param space The space that the axis is in
-      * @param mesh The mesh that this bone is attached to.  This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to.  This is only used in world space
       */
     def setAxisAngle(axis: Vector3, angle: Double): Unit = js.native
-    def setAxisAngle(axis: Vector3, angle: Double, space: Unit, mesh: AbstractMesh): Unit = js.native
+    def setAxisAngle(axis: Vector3, angle: Double, space: Unit, tNode: TransformNode): Unit = js.native
     def setAxisAngle(axis: Vector3, angle: Double, space: Space): Unit = js.native
-    def setAxisAngle(axis: Vector3, angle: Double, space: Space, mesh: AbstractMesh): Unit = js.native
+    def setAxisAngle(axis: Vector3, angle: Double, space: Space, tNode: TransformNode): Unit = js.native
     
     /**
       * Sets the bind pose matrix
       * @param matrix the local-space bind pose to set for this bone
+      * @deprecated Please use updateMatrix instead
       */
     def setBindPose(matrix: Matrix): Unit = js.native
     
@@ -801,15 +792,15 @@ object boneMod {
     def setParent(parent: Nullable[Bone], updateDifferenceMatrix: Boolean): Unit = js.native
     
     /**
-      * Set the postion of the bone in local or world space
+      * Set the position of the bone in local or world space
       * @param position The position to set the bone
       * @param space The space that the position is in
-      * @param mesh The mesh that this bone is attached to.  This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to.  This is only used in world space
       */
     def setPosition(position: Vector3): Unit = js.native
-    def setPosition(position: Vector3, space: Unit, mesh: AbstractMesh): Unit = js.native
+    def setPosition(position: Vector3, space: Unit, tNode: TransformNode): Unit = js.native
     def setPosition(position: Vector3, space: Space): Unit = js.native
-    def setPosition(position: Vector3, space: Space, mesh: AbstractMesh): Unit = js.native
+    def setPosition(position: Vector3, space: Space, tNode: TransformNode): Unit = js.native
     
     /**
       * Sets the rest pose matrix
@@ -821,34 +812,34 @@ object boneMod {
       * Set the euler rotation of the bone in local or world space
       * @param rotation The euler rotation that the bone should be set to
       * @param space The space that the rotation is in
-      * @param mesh The mesh that this bone is attached to. This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to. This is only used in world space
       */
     def setRotation(rotation: Vector3): Unit = js.native
-    def setRotation(rotation: Vector3, space: Unit, mesh: AbstractMesh): Unit = js.native
+    def setRotation(rotation: Vector3, space: Unit, tNode: TransformNode): Unit = js.native
     def setRotation(rotation: Vector3, space: Space): Unit = js.native
-    def setRotation(rotation: Vector3, space: Space, mesh: AbstractMesh): Unit = js.native
+    def setRotation(rotation: Vector3, space: Space, tNode: TransformNode): Unit = js.native
     
     /**
       * Set the rotation matrix of the bone in local or world space
       * @param rotMat The rotation matrix that the bone should be set to
       * @param space The space that the rotation is in
-      * @param mesh The mesh that this bone is attached to. This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to. This is only used in world space
       */
     def setRotationMatrix(rotMat: Matrix): Unit = js.native
-    def setRotationMatrix(rotMat: Matrix, space: Unit, mesh: AbstractMesh): Unit = js.native
+    def setRotationMatrix(rotMat: Matrix, space: Unit, tNode: TransformNode): Unit = js.native
     def setRotationMatrix(rotMat: Matrix, space: Space): Unit = js.native
-    def setRotationMatrix(rotMat: Matrix, space: Space, mesh: AbstractMesh): Unit = js.native
+    def setRotationMatrix(rotMat: Matrix, space: Space, tNode: TransformNode): Unit = js.native
     
     /**
       * Set the quaternion rotation of the bone in local or world space
       * @param quat The quaternion rotation that the bone should be set to
       * @param space The space that the rotation is in
-      * @param mesh The mesh that this bone is attached to. This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to. This is only used in world space
       */
     def setRotationQuaternion(quat: Quaternion): Unit = js.native
-    def setRotationQuaternion(quat: Quaternion, space: Unit, mesh: AbstractMesh): Unit = js.native
+    def setRotationQuaternion(quat: Quaternion, space: Unit, tNode: TransformNode): Unit = js.native
     def setRotationQuaternion(quat: Quaternion, space: Space): Unit = js.native
-    def setRotationQuaternion(quat: Quaternion, space: Space, mesh: AbstractMesh): Unit = js.native
+    def setRotationQuaternion(quat: Quaternion, space: Space, tNode: TransformNode): Unit = js.native
     
     /**
       * Set the bone scaling in local space
@@ -862,23 +853,23 @@ object boneMod {
       * @param pitch The rotation of the bone on the x axis
       * @param roll The rotation of the bone on the z axis
       * @param space The space that the axes of rotation are in
-      * @param mesh The mesh that this bone is attached to.  This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to.  This is only used in world space
       */
     def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double): Unit = js.native
-    def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double, space: Unit, mesh: AbstractMesh): Unit = js.native
+    def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double, space: Unit, tNode: TransformNode): Unit = js.native
     def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double, space: Space): Unit = js.native
-    def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double, space: Space, mesh: AbstractMesh): Unit = js.native
+    def setYawPitchRoll(yaw: Double, pitch: Double, roll: Double, space: Space, tNode: TransformNode): Unit = js.native
     
     /**
       * Translate the bone in local or world space
       * @param vec The amount to translate the bone
       * @param space The space that the translation is in
-      * @param mesh The mesh that this bone is attached to. This is only used in world space
+      * @param tNode The TransformNode that this bone is attached to. This is only used in world space
       */
     def translate(vec: Vector3): Unit = js.native
-    def translate(vec: Vector3, space: Unit, mesh: AbstractMesh): Unit = js.native
+    def translate(vec: Vector3, space: Unit, tNode: TransformNode): Unit = js.native
     def translate(vec: Vector3, space: Space): Unit = js.native
-    def translate(vec: Vector3, space: Space, mesh: AbstractMesh): Unit = js.native
+    def translate(vec: Vector3, space: Space, tNode: TransformNode): Unit = js.native
     
     /**
       * Update the base and local matrices
@@ -898,19 +889,19 @@ object boneMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("babylonjs/Bones/bone", "Bone._tmpMats")
+    @JSImport("babylonjs/Bones/bone", "Bone._TmpMats")
     @js.native
-    def _tmpMats: js.Any = js.native
-    inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+    def _TmpMats: Any = js.native
+    inline def _TmpMats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMats")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Bones/bone", "Bone._tmpQuat")
+    @JSImport("babylonjs/Bones/bone", "Bone._TmpQuat")
     @js.native
-    def _tmpQuat: js.Any = js.native
-    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    def _TmpQuat: Any = js.native
+    inline def _TmpQuat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpQuat")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Bones/bone", "Bone._tmpVecs")
+    @JSImport("babylonjs/Bones/bone", "Bone._TmpVecs")
     @js.native
-    def _tmpVecs: js.Any = js.native
-    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    def _TmpVecs: Any = js.native
+    inline def _TmpVecs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpVecs")(x.asInstanceOf[js.Any])
   }
 }

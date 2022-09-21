@@ -34,7 +34,7 @@ object SearchFacesResponse {
     
     inline def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
-    inline def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
+    inline def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value*))
     
     inline def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     

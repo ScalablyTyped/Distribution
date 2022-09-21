@@ -21,6 +21,6 @@ object SchemaAddOrderNotesResponse {
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: SchemaMarketplaceNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: SchemaMarketplaceNote*): Self = StObject.set(x, "notes", js.Array(value*))
   }
 }

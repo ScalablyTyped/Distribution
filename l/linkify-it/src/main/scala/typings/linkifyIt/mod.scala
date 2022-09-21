@@ -1,7 +1,6 @@
 package typings.linkifyIt
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("linkify-it", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with LinkifyIt {
     def this(schemas: Options) = this()
@@ -35,11 +34,11 @@ object mod {
     
     var normalize: js.UndefOr[js.Function1[/* match */ Match, Unit]] = js.undefined
     
-    var validate: String | RegExp | Validate
+    var validate: String | js.RegExp | Validate
   }
   object FullRule {
     
-    inline def apply(validate: String | RegExp | Validate): FullRule = {
+    inline def apply(validate: String | js.RegExp | Validate): FullRule = {
       val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
       __obj.asInstanceOf[FullRule]
     }
@@ -50,7 +49,7 @@ object mod {
       
       inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
-      inline def setValidate(value: String | RegExp | Validate): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: String | js.RegExp | Validate): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
       inline def setValidateFunction3(value: (/* text */ String, /* pos */ Double, /* self */ LinkifyIt) => Double | Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
     }
@@ -59,7 +58,12 @@ object mod {
   @js.native
   trait LinkifyIt extends StObject {
     
-    def add(schema: String, rule: Rule): LinkifyIt = js.native
+    // tslint:disable-next-line: unified-signatures
+    def add(schema: String): LinkifyIt = js.native
+    // Use overloads to provide contextual typing to `FullRule.normalize`, which is ambiguous with string.normalize
+    // This appears unneeded to the unified-signatures lint rule.
+    def add(schema: String, rule: String): LinkifyIt = js.native
+    def add(schema: String, rule: FullRule): LinkifyIt = js.native
     
     def `match`(text: String): js.Array[Match] | Null = js.native
     
@@ -67,7 +71,7 @@ object mod {
     
     def pretest(text: String): Boolean = js.native
     
-    var re: StringDictionary[RegExp] = js.native
+    var re: StringDictionary[js.RegExp] = js.native
     
     def set(options: Options): LinkifyIt = js.native
     

@@ -11,7 +11,7 @@ trait Dialog
   extends StObject
      with Window {
   
-  def addButton(widget: Widget, layoutOptions: js.Any): Unit
+  def addButton(widget: Widget, layoutOptions: Any): Unit
   
   var buttonNames: js.Array[String]
   
@@ -23,7 +23,7 @@ object Dialog {
   
   inline def apply(
     absolutePosition: X,
-    addButton: (Widget, js.Any) => Unit,
+    addButton: (Widget, Any) => Unit,
     addClass: String => Unit,
     buttonNames: js.Array[String],
     buttons: js.Array[Widget],
@@ -39,7 +39,7 @@ object Dialog {
     hide: () => Unit,
     horizontalChildExpansion: Boolean,
     html: HTMLElement,
-    layoutOptions: StringDictionary[js.Any],
+    layoutOptions: StringDictionary[Any],
     maxHeight: Double,
     maxWidth: Double,
     minHeight: Double,
@@ -55,7 +55,7 @@ object Dialog {
     parent: Widget,
     parentName: String,
     position: X,
-    registerCallback: (String, String, js.Function, js.Any) => Unit,
+    registerCallback: (String, String, js.Function, Any) => Unit,
     removeButton: Widget => Unit,
     removeCallback: String => Unit,
     removeChild: Widget => Unit,
@@ -76,15 +76,15 @@ object Dialog {
   
   extension [Self <: Dialog](x: Self) {
     
-    inline def setAddButton(value: (Widget, js.Any) => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction2(value))
+    inline def setAddButton(value: (Widget, Any) => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction2(value))
     
     inline def setButtonNames(value: js.Array[String]): Self = StObject.set(x, "buttonNames", value.asInstanceOf[js.Any])
     
-    inline def setButtonNamesVarargs(value: String*): Self = StObject.set(x, "buttonNames", js.Array(value :_*))
+    inline def setButtonNamesVarargs(value: String*): Self = StObject.set(x, "buttonNames", js.Array(value*))
     
     inline def setButtons(value: js.Array[Widget]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    inline def setButtonsVarargs(value: Widget*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Widget*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setRemoveButton(value: Widget => Unit): Self = StObject.set(x, "removeButton", js.Any.fromFunction1(value))
   }

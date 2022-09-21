@@ -89,7 +89,7 @@ object XConsolidationDescriptor {
     getStartOutputPosition: () => CellAddress,
     getUseColumnHeaders: () => Boolean,
     getUseRowHeaders: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFunction: GeneralFunction => Unit,
     setInsertLinks: Boolean => Unit,

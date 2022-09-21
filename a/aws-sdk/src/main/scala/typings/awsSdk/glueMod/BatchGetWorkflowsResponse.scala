@@ -29,12 +29,12 @@ object BatchGetWorkflowsResponse {
     
     inline def setMissingWorkflowsUndefined: Self = StObject.set(x, "MissingWorkflows", js.undefined)
     
-    inline def setMissingWorkflowsVarargs(value: NameString*): Self = StObject.set(x, "MissingWorkflows", js.Array(value :_*))
+    inline def setMissingWorkflowsVarargs(value: NameString*): Self = StObject.set(x, "MissingWorkflows", js.Array(value*))
     
     inline def setWorkflows(value: Workflows): Self = StObject.set(x, "Workflows", value.asInstanceOf[js.Any])
     
     inline def setWorkflowsUndefined: Self = StObject.set(x, "Workflows", js.undefined)
     
-    inline def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "Workflows", js.Array(value :_*))
+    inline def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "Workflows", js.Array(value*))
   }
 }

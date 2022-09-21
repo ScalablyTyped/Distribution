@@ -36,7 +36,7 @@ object ProxyConfiguration {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: KeyValuePair*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: KeyValuePair*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setType(value: ProxyConfigurationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

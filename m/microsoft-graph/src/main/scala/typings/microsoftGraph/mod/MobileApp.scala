@@ -71,7 +71,7 @@ object MobileApp {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: MobileAppAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: MobileAppAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
     
     inline def setCategories(value: NullableOption[js.Array[MobileAppCategory]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object MobileApp {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: MobileAppCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: MobileAppCategory*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,8 @@
+package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+// tslint:disable-next-line:no-empty-interface
+trait GoogleCloudDatacatalogV1UnstarEntryRequest extends StObject

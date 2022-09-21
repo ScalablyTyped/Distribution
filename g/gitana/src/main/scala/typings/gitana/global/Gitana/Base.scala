@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Gitana.Base")
 @js.native
-class Base ()
+open class Base ()
   extends typings.gitana.mod.Base

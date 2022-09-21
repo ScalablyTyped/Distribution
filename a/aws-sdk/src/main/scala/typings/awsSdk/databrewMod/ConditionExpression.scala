@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionExpression extends StObject {
   
   /**
-    * A specific condition to apply to a recipe action. For more information, see Recipe structure in the AWS Glue DataBrew Developer Guide.
+    * A specific condition to apply to a recipe action. For more information, see Recipe structure in the Glue DataBrew Developer Guide.
     */
   var Condition: typings.awsSdk.databrewMod.Condition
   
   /**
-    * A column to apply this condition to, within an AWS Glue DataBrew dataset.
+    * A column to apply this condition to.
     */
   var TargetColumn: typings.awsSdk.databrewMod.TargetColumn
   

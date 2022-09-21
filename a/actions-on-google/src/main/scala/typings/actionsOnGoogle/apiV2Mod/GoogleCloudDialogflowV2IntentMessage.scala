@@ -19,7 +19,7 @@ trait GoogleCloudDialogflowV2IntentMessage extends StObject {
   
   var listSelect: js.UndefOr[GoogleCloudDialogflowV2IntentMessageListSelect] = js.undefined
   
-  var payload: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var payload: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   var platform: js.UndefOr[GoogleCloudDialogflowV2IntentMessagePlatform] = js.undefined
   
@@ -64,7 +64,7 @@ object GoogleCloudDialogflowV2IntentMessage {
     
     inline def setListSelectUndefined: Self = StObject.set(x, "listSelect", js.undefined)
     
-    inline def setPayload(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     

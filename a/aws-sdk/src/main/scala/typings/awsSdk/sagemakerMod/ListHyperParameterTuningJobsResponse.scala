@@ -27,7 +27,7 @@ object ListHyperParameterTuningJobsResponse {
     
     inline def setHyperParameterTuningJobSummaries(value: HyperParameterTuningJobSummaries): Self = StObject.set(x, "HyperParameterTuningJobSummaries", value.asInstanceOf[js.Any])
     
-    inline def setHyperParameterTuningJobSummariesVarargs(value: HyperParameterTuningJobSummary*): Self = StObject.set(x, "HyperParameterTuningJobSummaries", js.Array(value :_*))
+    inline def setHyperParameterTuningJobSummariesVarargs(value: HyperParameterTuningJobSummary*): Self = StObject.set(x, "HyperParameterTuningJobSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

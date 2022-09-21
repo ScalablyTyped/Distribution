@@ -15,12 +15,22 @@ trait SectionListProps[ItemT, SectionT]
   /**
     * Rendered in between adjacent Items within each section.
     */
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[Any] | Null] = js.undefined
+  
+  /**
+    * Styling for internal View for ListFooterComponent
+    */
+  var ListFooterComponentStyle: js.UndefOr[StyleProp[ViewStyle] | Null] = js.undefined
+  
+  /**
+    * Styling for internal View for ListHeaderComponent
+    */
+  var ListHeaderComponentStyle: js.UndefOr[StyleProp[ViewStyle] | Null] = js.undefined
   
   /**
     * Rendered in between each section.
     */
-  var SectionSeparatorComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var SectionSeparatorComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
   /**
     * `getItemLayout` is an optional optimization that lets us skip measurement of dynamic
@@ -87,7 +97,7 @@ object SectionListProps {
     
     inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
-    inline def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    inline def setItemSeparatorComponent(value: ComponentType[Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     inline def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     
@@ -96,6 +106,18 @@ object SectionListProps {
     inline def setLegacyImplementation(value: Boolean): Self = StObject.set(x, "legacyImplementation", value.asInstanceOf[js.Any])
     
     inline def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
+    
+    inline def setListFooterComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
+    
+    inline def setListFooterComponentStyleNull: Self = StObject.set(x, "ListFooterComponentStyle", null)
+    
+    inline def setListFooterComponentStyleUndefined: Self = StObject.set(x, "ListFooterComponentStyle", js.undefined)
+    
+    inline def setListHeaderComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
+    
+    inline def setListHeaderComponentStyleNull: Self = StObject.set(x, "ListHeaderComponentStyle", null)
+    
+    inline def setListHeaderComponentStyleUndefined: Self = StObject.set(x, "ListHeaderComponentStyle", js.undefined)
     
     inline def setRenderItem(value: /* info */ SectionListRenderItemInfo[ItemT, SectionT] => ReactElement | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
     
@@ -109,7 +131,7 @@ object SectionListProps {
     
     inline def setRenderSectionHeaderUndefined: Self = StObject.set(x, "renderSectionHeader", js.undefined)
     
-    inline def setSectionSeparatorComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "SectionSeparatorComponent", value.asInstanceOf[js.Any])
+    inline def setSectionSeparatorComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "SectionSeparatorComponent", value.asInstanceOf[js.Any])
     
     inline def setSectionSeparatorComponentNull: Self = StObject.set(x, "SectionSeparatorComponent", null)
     
@@ -117,7 +139,7 @@ object SectionListProps {
     
     inline def setSections(value: js.Array[SectionListData[ItemT, SectionT]]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    inline def setSectionsVarargs(value: (SectionListData[ItemT, SectionT])*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: (SectionListData[ItemT, SectionT])*): Self = StObject.set(x, "sections", js.Array(value*))
     
     inline def setStickySectionHeadersEnabled(value: Boolean): Self = StObject.set(x, "stickySectionHeadersEnabled", value.asInstanceOf[js.Any])
     

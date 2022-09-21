@@ -10,10 +10,10 @@ object gridOnMod {
   
   @JSImport("material-ui/svg-icons/image/grid-on", JSImport.Default)
   @js.native
-  class default () extends ImageGridOn
+  open class default () extends ImageGridOn
   
   @JSImport("material-ui/svg-icons/image/grid-on", "ImageGridOn")
   @js.native
-  class ImageGridOn ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageGridOn ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

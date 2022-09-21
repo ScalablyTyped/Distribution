@@ -18,7 +18,7 @@ trait CellHeight extends StObject {
   
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var palette: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var palette: js.UndefOr[js.Array[Any]] = js.undefined
   
   var value: String
 }
@@ -53,11 +53,11 @@ object CellHeight {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setPalette(value: js.Array[js.Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: js.Array[Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    inline def setPaletteVarargs(value: js.Any*): Self = StObject.set(x, "palette", js.Array(value :_*))
+    inline def setPaletteVarargs(value: Any*): Self = StObject.set(x, "palette", js.Array(value*))
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

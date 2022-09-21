@@ -23,11 +23,11 @@ object Image {
     
     inline def setImage(value: js.Array[String | Overflow]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    inline def setImageVarargs(value: (String | Overflow)*): Self = StObject.set(x, "image", js.Array(value :_*))
+    inline def setImageVarargs(value: (String | Overflow)*): Self = StObject.set(x, "image", js.Array(value*))
     
     inline def setPlaceholder(value: js.Array[String | WidthString]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    inline def setPlaceholderVarargs(value: (String | WidthString)*): Self = StObject.set(x, "placeholder", js.Array(value :_*))
+    inline def setPlaceholderVarargs(value: (String | WidthString)*): Self = StObject.set(x, "placeholder", js.Array(value*))
     
     inline def setRoot(value: Display): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

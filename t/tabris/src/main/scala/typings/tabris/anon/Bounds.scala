@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Bounds extends StObject {
   
-  val bounds: js.Any
+  val bounds: Any
 }
 object Bounds {
   
-  inline def apply(bounds: js.Any): Bounds = {
+  inline def apply(bounds: Any): Bounds = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bounds]
   }
   
   extension [Self <: Bounds](x: Self) {
     
-    inline def setBounds(value: js.Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
   }
 }

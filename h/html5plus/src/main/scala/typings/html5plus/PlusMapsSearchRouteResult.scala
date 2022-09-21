@@ -36,7 +36,7 @@ trait PlusMapsSearchRouteResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var routeList: js.UndefOr[js.Array[js.Any]] = js.native
+  var routeList: js.UndefOr[js.Array[Any]] = js.native
   
   /**
     * 本次线路检索的总方案数

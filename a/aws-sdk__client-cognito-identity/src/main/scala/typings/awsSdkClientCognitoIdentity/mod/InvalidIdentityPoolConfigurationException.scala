@@ -1,14 +1,16 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
+import typings.awsSdkClientCognitoIdentity.anon.ExceptionOptionTypeInvali
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object InvalidIdentityPoolConfigurationException {
-  
-  @JSImport("@aws-sdk/client-cognito-identity", "InvalidIdentityPoolConfigurationException")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: typings.awsSdkClientCognitoIdentity.models0Mod.InvalidIdentityPoolConfigurationException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+@JSImport("@aws-sdk/client-cognito-identity", "InvalidIdentityPoolConfigurationException")
+@js.native
+open class InvalidIdentityPoolConfigurationException protected ()
+  extends typings.awsSdkClientCognitoIdentity.modelsMod.InvalidIdentityPoolConfigurationException {
+  /**
+    * @internal
+    */
+  def this(opts: ExceptionOptionTypeInvali) = this()
 }

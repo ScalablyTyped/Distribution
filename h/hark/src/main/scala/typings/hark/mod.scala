@@ -29,12 +29,9 @@ object mod {
   @js.native
   trait Harker extends StObject {
     
-    @JSName("on")
-    def on_speaking(event: speaking, listener: js.Function0[Unit]): Unit = js.native
+    def on(event: speaking | stopped_speaking, listener: js.Function0[Unit]): Unit = js.native
     @JSName("on")
     def on_statechange(event: state_change, listener: js.Function1[/* state */ AudioContextState, Unit]): Unit = js.native
-    @JSName("on")
-    def on_stoppedspeaking(event: stopped_speaking, listener: js.Function0[Unit]): Unit = js.native
     @JSName("on")
     def on_volumechange(
       event: volume_change,

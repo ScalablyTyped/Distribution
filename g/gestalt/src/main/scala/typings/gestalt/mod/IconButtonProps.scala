@@ -1,7 +1,9 @@
 package typings.gestalt.mod
 
+import typings.gestalt.anon.DangerouslyDisableOnNavigation
 import typings.gestalt.anon.Event
 import typings.gestalt.anon.Path
+import typings.gestalt.anon.PickTooltipPropsaccessibi
 import typings.gestalt.gestaltNumbers.`-1`
 import typings.gestalt.gestaltNumbers.`0`
 import typings.gestalt.gestaltNumbers.`1`
@@ -22,13 +24,16 @@ import typings.gestalt.gestaltStrings.none
 import typings.gestalt.gestaltStrings.red
 import typings.gestalt.gestaltStrings.self
 import typings.gestalt.gestaltStrings.sm
+import typings.gestalt.gestaltStrings.submit
 import typings.gestalt.gestaltStrings.transparent
 import typings.gestalt.gestaltStrings.transparentDarkGray
 import typings.gestalt.gestaltStrings.white
 import typings.gestalt.gestaltStrings.xl
 import typings.gestalt.gestaltStrings.xs
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,7 +61,12 @@ trait IconButtonProps extends StObject {
   
   var iconColor: js.UndefOr[gray | darkGray | red | white] = js.undefined
   
-  var onClick: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLButtonElement, NativeMouseEvent], js.Object]] = js.undefined
+  var onClick: js.UndefOr[
+    AbstractEventHandler[
+      (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
+      DangerouslyDisableOnNavigation
+    ]
+  ] = js.undefined
   
   var padding: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.undefined
   
@@ -71,6 +81,10 @@ trait IconButtonProps extends StObject {
   var tabIndex: js.UndefOr[`-1` | `0`] = js.undefined
   
   var target: js.UndefOr[Null | self | blank] = js.undefined
+  
+  var tooltip: js.UndefOr[PickTooltipPropsaccessibi] = js.undefined
+  
+  var `type`: js.UndefOr[submit | button] = js.undefined
 }
 object IconButtonProps {
   
@@ -119,7 +133,11 @@ object IconButtonProps {
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    inline def setOnClick(value: /* arg */ js.Object & (Event[MouseEvent[HTMLButtonElement, NativeMouseEvent]]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(
+      value: /* arg */ DangerouslyDisableOnNavigation & (Event[
+          (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement])
+        ]) => Unit
+    ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
@@ -152,5 +170,13 @@ object IconButtonProps {
     inline def setTargetNull: Self = StObject.set(x, "target", null)
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setTooltip(value: PickTooltipPropsaccessibi): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setType(value: submit | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

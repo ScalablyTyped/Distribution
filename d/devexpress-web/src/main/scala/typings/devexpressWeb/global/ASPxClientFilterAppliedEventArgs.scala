@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFilterAppliedEventArgs")
 @js.native
-class ASPxClientFilterAppliedEventArgs protected ()
+open class ASPxClientFilterAppliedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFilterAppliedEventArgs {
   /**

@@ -50,7 +50,7 @@ object Instruction {
     
     inline def setComponents(value: js.Array[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    inline def setComponentsVarargs(value: Component*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: Component*): Self = StObject.set(x, "components", js.Array(value*))
     
     inline def setDegrees(value: Double): Self = StObject.set(x, "degrees", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ trait ImportAsProvisionedProductInput extends StObject {
   var ProductId: Id
   
   /**
-    * The user-friendly name of the provisioned product. The value must be unique for the AWS account. The name cannot be updated after the product is provisioned. 
+    * The user-friendly name of the provisioned product. The value must be unique for the Amazon Web Services account. The name cannot be updated after the product is provisioned. 
     */
   var ProvisionedProductName: typings.awsSdk.servicecatalogMod.ProvisionedProductName
   

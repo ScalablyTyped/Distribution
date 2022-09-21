@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OMathMatCols extends StObject {
   
   def Add(): OMathMatCol = js.native
-  def Add(BeforeCol: js.Any): OMathMatCol = js.native
+  def Add(BeforeCol: Any): OMathMatCol = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -18,7 +18,7 @@ trait OMathMatCols extends StObject {
   
   def Item(Index: Double): OMathMatCol = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.OMathMatCols_typekey")
   var WordDotOMathMatCols_typekey: OMathMatCols = js.native

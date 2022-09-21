@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "LngLatBounds")
 @js.native
-class LngLatBounds ()
+open class LngLatBounds ()
   extends StObject
      with _LngLatBoundsLike {
   def this(boundsLike: js.Tuple2[LngLatLike, LngLatLike]) = this()

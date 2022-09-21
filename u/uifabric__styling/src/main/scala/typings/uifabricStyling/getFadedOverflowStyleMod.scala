@@ -17,7 +17,7 @@ object getFadedOverflowStyleMod {
   inline def getFadedOverflowStyle(
     theme: ITheme,
     color: js.UndefOr[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154 */ Any
     ],
     direction: js.UndefOr[horizontal | vertical],
     width: js.UndefOr[String | Double],

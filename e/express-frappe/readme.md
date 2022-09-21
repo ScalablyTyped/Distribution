@@ -10,10 +10,10 @@ Express Frappe 🥤 - build express application another way.
 | ------------------ | :-------------: |
 | Full name          | express-frappe |
 | Keywords           | express, expressjs, typescript |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 192 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 33.333333333333336 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/chanlito/express-frappe#readme)

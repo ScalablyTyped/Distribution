@@ -19,8 +19,8 @@ trait IEdgesRenderer
   var isEnabled: Boolean
   
   /**
-    * Checks wether or not the edges renderer is ready to render.
-    * @return true if ready, otherwise false.
+    * Checks whether or not the edges renderer is ready to render.
+    * @returns true if ready, otherwise false.
     */
   def isReady(): Boolean
   

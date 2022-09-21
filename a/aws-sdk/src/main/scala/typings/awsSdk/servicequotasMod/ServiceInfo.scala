@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceInfo extends StObject {
   
   /**
-    * Specifies the service that you want to use.
+    * The service identifier.
     */
   var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.undefined
   
   /**
-    * The name of the AWS service specified in the increase request. 
+    * The service name.
     */
   var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.undefined
 }

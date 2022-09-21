@@ -20,6 +20,16 @@ trait LayerVersionContentOutput extends StObject {
     * A link to the layer archive in Amazon S3 that is valid for 10 minutes.
     */
   var Location: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of a signing job.
+    */
+  var SigningJobArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) for a signing profile version.
+    */
+  var SigningProfileVersionArn: js.UndefOr[String] = js.undefined
 }
 object LayerVersionContentOutput {
   
@@ -41,5 +51,13 @@ object LayerVersionContentOutput {
     inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    
+    inline def setSigningJobArn(value: String): Self = StObject.set(x, "SigningJobArn", value.asInstanceOf[js.Any])
+    
+    inline def setSigningJobArnUndefined: Self = StObject.set(x, "SigningJobArn", js.undefined)
+    
+    inline def setSigningProfileVersionArn(value: String): Self = StObject.set(x, "SigningProfileVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setSigningProfileVersionArnUndefined: Self = StObject.set(x, "SigningProfileVersionArn", js.undefined)
   }
 }

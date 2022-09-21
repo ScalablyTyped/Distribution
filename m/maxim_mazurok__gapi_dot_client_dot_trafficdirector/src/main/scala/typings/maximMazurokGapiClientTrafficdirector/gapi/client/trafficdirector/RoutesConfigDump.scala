@@ -25,12 +25,12 @@ object RoutesConfigDump {
     
     inline def setDynamicRouteConfigsUndefined: Self = StObject.set(x, "dynamicRouteConfigs", js.undefined)
     
-    inline def setDynamicRouteConfigsVarargs(value: DynamicRouteConfig*): Self = StObject.set(x, "dynamicRouteConfigs", js.Array(value :_*))
+    inline def setDynamicRouteConfigsVarargs(value: DynamicRouteConfig*): Self = StObject.set(x, "dynamicRouteConfigs", js.Array(value*))
     
     inline def setStaticRouteConfigs(value: js.Array[StaticRouteConfig]): Self = StObject.set(x, "staticRouteConfigs", value.asInstanceOf[js.Any])
     
     inline def setStaticRouteConfigsUndefined: Self = StObject.set(x, "staticRouteConfigs", js.undefined)
     
-    inline def setStaticRouteConfigsVarargs(value: StaticRouteConfig*): Self = StObject.set(x, "staticRouteConfigs", js.Array(value :_*))
+    inline def setStaticRouteConfigsVarargs(value: StaticRouteConfig*): Self = StObject.set(x, "staticRouteConfigs", js.Array(value*))
   }
 }

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response payload for a single Photo in batch operations including
-  * BatchGetPhotos and BatchUpdatePhotos.
-  */
 trait SchemaPhotoResponse extends StObject {
   
   /**
@@ -16,8 +12,7 @@ trait SchemaPhotoResponse extends StObject {
   var photo: js.UndefOr[SchemaPhoto] = js.undefined
   
   /**
-    * The status for the operation to get or update a single photo in the batch
-    * request.
+    * The status for the operation to get or update a single photo in the batch request.
     */
   var status: js.UndefOr[SchemaStatus] = js.undefined
 }

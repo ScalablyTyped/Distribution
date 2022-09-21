@@ -10,10 +10,10 @@ Click effect insipired by Google Material Design
 | ------------------ | :-------------: |
 | Full name          | node-waves |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 282209 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46344.0 |
+| # stars            | 3454.0 |
 
 ## Links
 - [Homepage](http://fian.my.id/Waves)

@@ -1,15 +1,16 @@
 package typings.rcMenu
 
-import typings.rcMenu.anon.ComponentClassSubPopupMen
-import typings.rcMenu.anon.PartialMenuState
+import org.scalablytyped.runtime.Shortcut
+import typings.rcMenu.anon.Active
 import typings.rcMenu.anon.PartialkeyinMenuModeother
+import typings.rcMenu.anon.Selected
 import typings.rcMenu.interfaceMod.BuiltinPlacements
-import typings.rcMenu.interfaceMod.DestroyEventHandler
+import typings.rcMenu.interfaceMod.ItemType
 import typings.rcMenu.interfaceMod.MenuClickEventHandler
 import typings.rcMenu.interfaceMod.MenuInfo
 import typings.rcMenu.interfaceMod.MenuMode
-import typings.rcMenu.interfaceMod.MiniStore
-import typings.rcMenu.interfaceMod.OpenAnimation
+import typings.rcMenu.interfaceMod.MenuRef
+import typings.rcMenu.interfaceMod.RenderIconInfo
 import typings.rcMenu.interfaceMod.RenderIconType
 import typings.rcMenu.interfaceMod.SelectEventHandler
 import typings.rcMenu.interfaceMod.SelectInfo
@@ -70,11 +71,11 @@ import typings.rcMotion.cssmotionMod.CSSMotionProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
-import typings.react.mod.Component
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
@@ -83,16 +84,19 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
-import typings.react.mod.Key
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -102,157 +106,48 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.react.mod.global.JSX.Element
+import typings.std.Element
 import typings.std.Event
-import typings.std.HTMLDivElement
 import typings.std.HTMLElement
-import typings.std.MouseEvent
+import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object menuMod {
+object menuMod extends Shortcut {
   
   @JSImport("rc-menu/es/Menu", JSImport.Default)
   @js.native
-  class default protected () extends Menu {
-    def this(props: MenuProps) = this()
-  }
-  object default {
-    
-    @JSImport("rc-menu/es/Menu", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    object defaultProps {
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.className")
-      @js.native
-      def className: String = js.native
-      inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.defaultOpenKeys")
-      @js.native
-      def defaultOpenKeys: js.Array[js.Any] = js.native
-      inline def defaultOpenKeys_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOpenKeys")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.defaultSelectedKeys")
-      @js.native
-      def defaultSelectedKeys: js.Array[js.Any] = js.native
-      inline def defaultSelectedKeys_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSelectedKeys")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.mode")
-      @js.native
-      def mode: String = js.native
-      inline def mode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.onClick")
-      @js.native
-      def onClick: js.Function0[Unit] = js.native
-      inline def onClick_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClick")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.onDeselect")
-      @js.native
-      def onDeselect: js.Function0[Unit] = js.native
-      inline def onDeselect_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onDeselect")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.onOpenChange")
-      @js.native
-      def onOpenChange: js.Function0[Unit] = js.native
-      inline def onOpenChange_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onOpenChange")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.onSelect")
-      @js.native
-      def onSelect: js.Function0[Unit] = js.native
-      inline def onSelect_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onSelect")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.overflowedIndicator")
-      @js.native
-      def overflowedIndicator: Element = js.native
-      inline def overflowedIndicator_=(x: Element): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overflowedIndicator")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.prefixCls")
-      @js.native
-      def prefixCls: String = js.native
-      inline def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.selectable")
-      @js.native
-      def selectable: Boolean = js.native
-      inline def selectable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectable")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.subMenuCloseDelay")
-      @js.native
-      def subMenuCloseDelay: Double = js.native
-      inline def subMenuCloseDelay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subMenuCloseDelay")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.subMenuOpenDelay")
-      @js.native
-      def subMenuOpenDelay: Double = js.native
-      inline def subMenuOpenDelay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subMenuOpenDelay")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-menu/es/Menu", "default.defaultProps.triggerSubMenuAction")
-      @js.native
-      def triggerSubMenuAction: String = js.native
-      inline def triggerSubMenuAction_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("triggerSubMenuAction")(x.asInstanceOf[js.Any])
-    }
-    
-    /* static member */
-    inline def getDerivedStateFromProps(nextProps: MenuProps, prevState: MenuState): PartialMenuState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialMenuState]
-  }
+  val default: ForwardRefExoticComponent[MenuProps & RefAttributes[MenuRef]] = js.native
   
-  @js.native
-  trait Menu
-    extends Component[MenuProps, MenuState, js.Any] {
-    
-    @JSName("componentDidMount")
-    def componentDidMount_MMenu(): Unit = js.native
-    
-    @JSName("componentDidUpdate")
-    def componentDidUpdate_MMenu(prevProps: MenuProps): Unit = js.native
-    
-    def getInlineCollapsed(): Boolean = js.native
-    
-    def getRealMenuMode(): MenuMode = js.native
-    
-    var innerMenu: ComponentClassSubPopupMen = js.native
-    
-    var isRootMenu: Boolean = js.native
-    
-    var onClick: MenuClickEventHandler = js.native
-    
-    def onDeselect(selectInfo: SelectInfo): Unit = js.native
-    
-    def onKeyDown(e: KeyboardEvent[HTMLElement], callback: js.Any): Unit = js.native
-    
-    def onMouseEnter(e: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Unit = js.native
-    
-    def onOpenChange(event: js.Any): Unit = js.native
-    
-    def onSelect(selectInfo: SelectInfo): Unit = js.native
-    
-    def onTransitionEnd(e: TransitionEvent[HTMLDivElement]): Unit = js.native
-    
-    var prevOpenKeys: js.Array[String] = js.native
-    
-    def restoreModeVerticalFromInline(): Unit = js.native
-    
-    def setInnerMenu(node: js.Any): Unit = js.native
-    
-    var store: MiniStore = js.native
-    
-    def updateMenuDisplay(): Unit = js.native
-    
-    def updateMiniStore(): Unit = js.native
-  }
-  
-  /* Inlined parent std.Omit<react.react.HTMLAttributes<std.HTMLDivElement>, 'onClick' | 'onSelect'> */
+  /* Inlined parent std.Omit<react.react.HTMLAttributes<std.HTMLUListElement>, 'onClick' | 'onSelect' | 'dir'> */
   trait MenuProps extends StObject {
+    
+    /***
+      * @private Only used for `pro-layout`. Do not use in your prod directly
+      * and we do not promise any compatibility for this.
+      */
+    var _internalRenderMenuItem: js.UndefOr[
+        js.Function3[
+          /* originNode */ ReactElement, 
+          /* menuItemProps */ Any, 
+          /* stateProps */ Selected, 
+          ReactElement
+        ]
+      ] = js.undefined
+    
+    /***
+      * @private Only used for `pro-layout`. Do not use in your prod directly
+      * and we do not promise any compatibility for this.
+      */
+    var _internalRenderSubMenuItem: js.UndefOr[
+        js.Function3[
+          /* originNode */ ReactElement, 
+          /* subMenuItemProps */ Any, 
+          /* stateProps */ Active, 
+          ReactElement
+        ]
+      ] = js.undefined
     
     var about: js.UndefOr[String] = js.undefined
     
@@ -262,11 +157,11 @@ object menuMod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -284,21 +179,21 @@ object menuMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -312,11 +207,11 @@ object menuMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -328,13 +223,13 @@ object menuMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -344,7 +239,7 @@ object menuMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -366,11 +261,10 @@ object menuMod {
     
     var builtinPlacements: js.UndefOr[BuiltinPlacements] = js.undefined
     
+    /** @deprecated Please use `items` instead */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
-    
-    var collapsedWidth: js.UndefOr[String | Double] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
@@ -395,10 +289,13 @@ object menuMod {
     
     var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    var dir: js.UndefOr[String] = js.undefined
-    
     /** direction of menu */
     var direction: js.UndefOr[ltr | rtl] = js.undefined
+    
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    /** @private Disable auto overflow. Pls note the prop name may refactor since we do not final decided. */
+    var disabledOverflow: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -414,7 +311,9 @@ object menuMod {
     
     var inlineCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlineIndent: js.UndefOr[Double] = js.undefined
+    
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -432,190 +331,185 @@ object menuMod {
     
     var itemType: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.undefined
+    var items: js.UndefOr[js.Array[ItemType]] = js.undefined
     
-    var level: js.UndefOr[Double] = js.undefined
+    var lang: js.UndefOr[String] = js.undefined
     
     var mode: js.UndefOr[MenuMode] = js.undefined
     
-    /** Menu motion define */
+    /** Menu motion define. Use `defaultMotions` if you need config motion of each mode */
     var motion: js.UndefOr[CSSMotionProps] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onAbort: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
+    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLUListElement]] = js.undefined
     
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
+    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLUListElement]] = js.undefined
     
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
+    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLUListElement]] = js.undefined
     
-    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLUListElement]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLUListElement]] = js.undefined
     
-    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    var onChange: js.UndefOr[FormEventHandler[HTMLUListElement]] = js.undefined
     
     var onClick: js.UndefOr[MenuClickEventHandler] = js.undefined
     
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
+    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLUListElement]] = js.undefined
     
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
+    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLUListElement]] = js.undefined
     
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
+    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLUListElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
+    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLUListElement]] = js.undefined
     
-    var onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
+    var onCut: js.UndefOr[ClipboardEventHandler[HTMLUListElement]] = js.undefined
     
     var onDeselect: js.UndefOr[SelectEventHandler] = js.undefined
     
-    var onDestroy: js.UndefOr[DestroyEventHandler] = js.undefined
+    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onDrag: js.UndefOr[DragEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDrag: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+    var onDragEnd: js.UndefOr[DragEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+    var onDragEnter: js.UndefOr[DragEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+    var onDragExit: js.UndefOr[DragEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+    var onDragLeave: js.UndefOr[DragEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+    var onDragOver: js.UndefOr[DragEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+    var onDragStart: js.UndefOr[DragEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+    var onDrop: js.UndefOr[DragEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onEmptied: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onEnded: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onError: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLUListElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
+    var onInput: js.UndefOr[FormEventHandler[HTMLUListElement]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    var onInvalid: js.UndefOr[FormEventHandler[HTMLUListElement]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLUListElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLUListElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLUListElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
+    var onLoad: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[String], Unit]] = js.undefined
     
-    var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[Key], Unit]] = js.undefined
+    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
+    var onPause: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onPlay: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onPlaying: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLUListElement]] = js.undefined
     
-    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+    var onProgress: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onRateChange: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onReset: js.UndefOr[FormEventHandler[HTMLUListElement]] = js.undefined
     
-    var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    var onScroll: js.UndefOr[UIEventHandler[HTMLUListElement]] = js.undefined
     
-    var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
+    var onSeeked: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-    
-    var onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onSeeking: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
     var onSelect: js.UndefOr[SelectEventHandler] = js.undefined
     
-    var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onStalled: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    var onSubmit: js.UndefOr[FormEventHandler[HTMLUListElement]] = js.undefined
     
-    var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onSuspend: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
+    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLUListElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
+    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLUListElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
+    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLUListElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLUListElement]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
+    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLUListElement]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    var onWaiting: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
-    var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
-    
-    /** @deprecated Please use `motion` instead */
-    var openAnimation: js.UndefOr[OpenAnimation] = js.undefined
+    var onWheel: js.UndefOr[WheelEventHandler[HTMLUListElement]] = js.undefined
     
     var openKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    /** @deprecated Please use `motion` instead */
-    var openTransitionName: js.UndefOr[String] = js.undefined
-    
     var overflowedIndicator: js.UndefOr[ReactNode] = js.undefined
+    
+    /** @private Internal usage. Do not use in your production. */
+    var overflowedIndicatorPopupClassName: js.UndefOr[String] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -631,16 +525,15 @@ object menuMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
+    
+    var rootClassName: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
     var selectable: js.UndefOr[Boolean] = js.undefined
     
     var selectedKeys: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /** SiderContextProps of layout in ant design */
-    var siderCollapsed: js.UndefOr[Boolean] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -695,7 +588,7 @@ object menuMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -703,7 +596,7 @@ object menuMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -739,7 +632,7 @@ object menuMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -751,7 +644,7 @@ object menuMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -759,7 +652,7 @@ object menuMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -767,7 +660,7 @@ object menuMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -795,15 +688,15 @@ object menuMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -827,7 +720,7 @@ object menuMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -837,7 +730,7 @@ object menuMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -857,7 +750,7 @@ object menuMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -909,10 +802,6 @@ object menuMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setCollapsedWidth(value: String | Double): Self = StObject.set(x, "collapsedWidth", value.asInstanceOf[js.Any])
-      
-      inline def setCollapsedWidthUndefined: Self = StObject.set(x, "collapsedWidth", js.undefined)
-      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
@@ -949,27 +838,31 @@ object menuMod {
       
       inline def setDefaultOpenKeysUndefined: Self = StObject.set(x, "defaultOpenKeys", js.undefined)
       
-      inline def setDefaultOpenKeysVarargs(value: String*): Self = StObject.set(x, "defaultOpenKeys", js.Array(value :_*))
+      inline def setDefaultOpenKeysVarargs(value: String*): Self = StObject.set(x, "defaultOpenKeys", js.Array(value*))
       
       inline def setDefaultSelectedKeys(value: js.Array[String]): Self = StObject.set(x, "defaultSelectedKeys", value.asInstanceOf[js.Any])
       
       inline def setDefaultSelectedKeysUndefined: Self = StObject.set(x, "defaultSelectedKeys", js.undefined)
       
-      inline def setDefaultSelectedKeysVarargs(value: String*): Self = StObject.set(x, "defaultSelectedKeys", js.Array(value :_*))
+      inline def setDefaultSelectedKeysVarargs(value: String*): Self = StObject.set(x, "defaultSelectedKeys", js.Array(value*))
       
       inline def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
-      
-      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
-      
-      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledOverflow(value: Boolean): Self = StObject.set(x, "disabledOverflow", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledOverflowUndefined: Self = StObject.set(x, "disabledOverflow", js.undefined)
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -977,7 +870,7 @@ object menuMod {
       
       inline def setExpandIcon(value: RenderIconType): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
       
-      inline def setExpandIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
+      inline def setExpandIconFunction1(value: /* props */ RenderIconInfo => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
       
       inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
       
@@ -1001,7 +894,11 @@ object menuMod {
       
       inline def setInlineCollapsedUndefined: Self = StObject.set(x, "inlineCollapsed", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlineIndent(value: Double): Self = StObject.set(x, "inlineIndent", value.asInstanceOf[js.Any])
+      
+      inline def setInlineIndentUndefined: Self = StObject.set(x, "inlineIndent", js.undefined)
+      
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -1019,7 +916,7 @@ object menuMod {
       
       inline def setItemIcon(value: RenderIconType): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
       
-      inline def setItemIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "itemIcon", js.Any.fromFunction1(value))
+      inline def setItemIconFunction1(value: /* props */ RenderIconInfo => ReactNode): Self = StObject.set(x, "itemIcon", js.Any.fromFunction1(value))
       
       inline def setItemIconUndefined: Self = StObject.set(x, "itemIcon", js.undefined)
       
@@ -1039,13 +936,15 @@ object menuMod {
       
       inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
+      inline def setItems(value: js.Array[ItemType]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      
+      inline def setItemsVarargs(value: ItemType*): Self = StObject.set(x, "items", js.Array(value*))
+      
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
-      
-      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
-      
-      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
       inline def setMode(value: MenuMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -1059,43 +958,43 @@ object menuMod {
       
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
       inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      inline def setOnAnimationEnd(value: AnimationEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+      inline def setOnAnimationEnd(value: AnimationEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       
       inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      inline def setOnAnimationIteration(value: AnimationEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
+      inline def setOnAnimationIteration(value: AnimationEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
       
       inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
       
-      inline def setOnAnimationStart(value: AnimationEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+      inline def setOnAnimationStart(value: AnimationEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
       
       inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
       
-      inline def setOnAuxClick(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+      inline def setOnAuxClick(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
       
       inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      inline def setOnBeforeInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: FormEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLUListElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnCanPlay(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+      inline def setOnCanPlay(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
       
-      inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+      inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
       
       inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: FormEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1103,27 +1002,27 @@ object menuMod {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnCompositionEnd(value: CompositionEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+      inline def setOnCompositionEnd(value: CompositionEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
       
       inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
       
-      inline def setOnCompositionStart(value: CompositionEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+      inline def setOnCompositionStart(value: CompositionEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
       
       inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
       
-      inline def setOnCompositionUpdate(value: CompositionEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
+      inline def setOnCompositionUpdate(value: CompositionEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
       
       inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
       
-      inline def setOnContextMenu(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnCopy(value: ClipboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      inline def setOnCopy(value: ClipboardEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
       inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      inline def setOnCut(value: ClipboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+      inline def setOnCut(value: ClipboardEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
       
       inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
       
@@ -1131,207 +1030,203 @@ object menuMod {
       
       inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
       
-      inline def setOnDestroy(value: /* key */ Key => Unit): Self = StObject.set(x, "onDestroy", js.Any.fromFunction1(value))
-      
-      inline def setOnDestroyUndefined: Self = StObject.set(x, "onDestroy", js.undefined)
-      
-      inline def setOnDoubleClick(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnDoubleClick(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
       inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
-      inline def setOnDrag(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: DragEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
-      inline def setOnDragEnd(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      inline def setOnDragEnd(value: DragEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
       inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      inline def setOnDragEnter(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+      inline def setOnDragEnter(value: DragEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
       inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
-      inline def setOnDragExit(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
+      inline def setOnDragExit(value: DragEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
       
       inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
       
-      inline def setOnDragLeave(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+      inline def setOnDragLeave(value: DragEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
       
       inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
-      inline def setOnDragOver(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      inline def setOnDragOver(value: DragEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
       inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      inline def setOnDragStart(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: DragEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
       inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      inline def setOnDrop(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+      inline def setOnDrop(value: DragEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
       
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      inline def setOnDurationChange(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+      inline def setOnDurationChange(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
       
       inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
       
-      inline def setOnEmptied(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+      inline def setOnEmptied(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
       
       inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
       
-      inline def setOnEncrypted(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+      inline def setOnEncrypted(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
       
       inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
       
-      inline def setOnEnded(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+      inline def setOnEnded(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnError(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLUListElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: FormEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnInvalid(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: FormEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
-      inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnKeyPress(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: KeyboardEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
       inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      inline def setOnKeyUp(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
       inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      inline def setOnLoad(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      inline def setOnLoadStart(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+      inline def setOnLoadStart(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
       
       inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      inline def setOnLoadedData(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
+      inline def setOnLoadedData(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
       
       inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
       
-      inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+      inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
       
       inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
       
-      inline def setOnMouseDown(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
       inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      inline def setOnMouseEnter(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
       inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      inline def setOnMouseLeave(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      inline def setOnMouseMove(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
       inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      inline def setOnMouseOut(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+      inline def setOnMouseOut(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
       
       inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
       
-      inline def setOnMouseOver(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+      inline def setOnMouseOver(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
       
       inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
       
-      inline def setOnMouseUp(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      inline def setOnMouseUp(value: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      inline def setOnOpenChange(value: /* openKeys */ js.Array[Key] => Unit): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction1(value))
+      inline def setOnOpenChange(value: /* openKeys */ js.Array[String] => Unit): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction1(value))
       
       inline def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
       
-      inline def setOnPaste(value: ClipboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      inline def setOnPaste(value: ClipboardEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
       
       inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
       
-      inline def setOnPause(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+      inline def setOnPause(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
       inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      inline def setOnPlay(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
       inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      inline def setOnPlaying(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+      inline def setOnPlaying(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
       
       inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
       
-      inline def setOnPointerCancel(value: PointerEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+      inline def setOnPointerCancel(value: PointerEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
       
       inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
       
-      inline def setOnPointerDown(value: PointerEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      inline def setOnPointerDown(value: PointerEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
       
       inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
       
-      inline def setOnPointerEnter(value: PointerEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+      inline def setOnPointerEnter(value: PointerEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
       
       inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
       
-      inline def setOnPointerLeave(value: PointerEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+      inline def setOnPointerLeave(value: PointerEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
       
       inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
       
-      inline def setOnPointerMove(value: PointerEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      inline def setOnPointerMove(value: PointerEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
       
       inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
       
-      inline def setOnPointerOut(value: PointerEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+      inline def setOnPointerOut(value: PointerEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
       
       inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
       
-      inline def setOnPointerOver(value: PointerEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+      inline def setOnPointerOver(value: PointerEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
       
       inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
       
-      inline def setOnPointerUp(value: PointerEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      inline def setOnPointerUp(value: PointerEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
       
       inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
-      inline def setOnProgress(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
       inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      inline def setOnRateChange(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
+      inline def setOnRateChange(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
       
       inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: FormEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      inline def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: UIEvent[HTMLUListElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOnSeeked(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+      inline def setOnSeeked(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
       
       inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
       
-      inline def setOnSeeking(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+      inline def setOnSeeking(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
       
       inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
@@ -1339,69 +1234,65 @@ object menuMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setOnStalled(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+      inline def setOnStalled(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      inline def setOnSubmit(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: FormEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      inline def setOnSuspend(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+      inline def setOnSuspend(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
       
       inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      inline def setOnTimeUpdate(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
+      inline def setOnTimeUpdate(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
       
       inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      inline def setOnTouchCancel(value: TouchEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+      inline def setOnTouchCancel(value: TouchEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
       
       inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
       
-      inline def setOnTouchEnd(value: TouchEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: TouchEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
       inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
-      inline def setOnTouchMove(value: TouchEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
       inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      inline def setOnTouchStart(value: TouchEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
       inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      inline def setOnTransitionEnd(value: TransitionEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+      inline def setOnTransitionEnd(value: TransitionEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
       inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      inline def setOnVolumeChange(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
+      inline def setOnVolumeChange(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
       
       inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
       
-      inline def setOnWaiting(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+      inline def setOnWaiting(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
       
       inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
       
-      inline def setOnWheel(value: WheelEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+      inline def setOnWheel(value: WheelEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
-      
-      inline def setOpenAnimation(value: OpenAnimation): Self = StObject.set(x, "openAnimation", value.asInstanceOf[js.Any])
-      
-      inline def setOpenAnimationUndefined: Self = StObject.set(x, "openAnimation", js.undefined)
       
       inline def setOpenKeys(value: js.Array[String]): Self = StObject.set(x, "openKeys", value.asInstanceOf[js.Any])
       
       inline def setOpenKeysUndefined: Self = StObject.set(x, "openKeys", js.undefined)
       
-      inline def setOpenKeysVarargs(value: String*): Self = StObject.set(x, "openKeys", js.Array(value :_*))
-      
-      inline def setOpenTransitionName(value: String): Self = StObject.set(x, "openTransitionName", value.asInstanceOf[js.Any])
-      
-      inline def setOpenTransitionNameUndefined: Self = StObject.set(x, "openTransitionName", js.undefined)
+      inline def setOpenKeysVarargs(value: String*): Self = StObject.set(x, "openKeys", js.Array(value*))
       
       inline def setOverflowedIndicator(value: ReactNode): Self = StObject.set(x, "overflowedIndicator", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowedIndicatorPopupClassName(value: String): Self = StObject.set(x, "overflowedIndicatorPopupClassName", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowedIndicatorPopupClassNameUndefined: Self = StObject.set(x, "overflowedIndicatorPopupClassName", js.undefined)
       
       inline def setOverflowedIndicatorUndefined: Self = StObject.set(x, "overflowedIndicator", js.undefined)
       
@@ -1433,9 +1324,13 @@ object menuMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
+      inline def setRootClassName(value: String): Self = StObject.set(x, "rootClassName", value.asInstanceOf[js.Any])
+      
+      inline def setRootClassNameUndefined: Self = StObject.set(x, "rootClassName", js.undefined)
       
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
@@ -1449,11 +1344,7 @@ object menuMod {
       
       inline def setSelectedKeysUndefined: Self = StObject.set(x, "selectedKeys", js.undefined)
       
-      inline def setSelectedKeysVarargs(value: String*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
-      
-      inline def setSiderCollapsed(value: Boolean): Self = StObject.set(x, "siderCollapsed", value.asInstanceOf[js.Any])
-      
-      inline def setSiderCollapsedUndefined: Self = StObject.set(x, "siderCollapsed", js.undefined)
+      inline def setSelectedKeysVarargs(value: String*): Self = StObject.set(x, "selectedKeys", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -1510,42 +1401,23 @@ object menuMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+      
+      inline def set_internalRenderMenuItem(
+        value: (/* originNode */ ReactElement, /* menuItemProps */ Any, /* stateProps */ Selected) => ReactElement
+      ): Self = StObject.set(x, "_internalRenderMenuItem", js.Any.fromFunction3(value))
+      
+      inline def set_internalRenderMenuItemUndefined: Self = StObject.set(x, "_internalRenderMenuItem", js.undefined)
+      
+      inline def set_internalRenderSubMenuItem(
+        value: (/* originNode */ ReactElement, /* subMenuItemProps */ Any, /* stateProps */ Active) => ReactElement
+      ): Self = StObject.set(x, "_internalRenderSubMenuItem", js.Any.fromFunction3(value))
+      
+      inline def set_internalRenderSubMenuItemUndefined: Self = StObject.set(x, "_internalRenderSubMenuItem", js.undefined)
     }
   }
   
-  trait MenuState extends StObject {
-    
-    var inlineOpenKeys: js.Array[String]
-    
-    var prevProps: MenuProps
-    
-    var store: MiniStore
-    
-    var switchingModeFromInline: Boolean
-  }
-  object MenuState {
-    
-    inline def apply(
-      inlineOpenKeys: js.Array[String],
-      prevProps: MenuProps,
-      store: MiniStore,
-      switchingModeFromInline: Boolean
-    ): MenuState = {
-      val __obj = js.Dynamic.literal(inlineOpenKeys = inlineOpenKeys.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], switchingModeFromInline = switchingModeFromInline.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MenuState]
-    }
-    
-    extension [Self <: MenuState](x: Self) {
-      
-      inline def setInlineOpenKeys(value: js.Array[String]): Self = StObject.set(x, "inlineOpenKeys", value.asInstanceOf[js.Any])
-      
-      inline def setInlineOpenKeysVarargs(value: String*): Self = StObject.set(x, "inlineOpenKeys", js.Array(value :_*))
-      
-      inline def setPrevProps(value: MenuProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
-      
-      inline def setStore(value: MiniStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
-      
-      inline def setSwitchingModeFromInline(value: Boolean): Self = StObject.set(x, "switchingModeFromInline", value.asInstanceOf[js.Any])
-    }
-  }
+  type _To = ForwardRefExoticComponent[MenuProps & RefAttributes[MenuRef]]
+  
+  /* This means you don't have to write `default`, but can instead just say `menuMod.foo` */
+  override def _to: ForwardRefExoticComponent[MenuProps & RefAttributes[MenuRef]] = default
 }

@@ -14,20 +14,20 @@ object mod {
   
   @JSImport("reflux", "ActionMethods")
   @js.native
-  val ActionMethods: js.Any = js.native
+  val ActionMethods: Any = js.native
   
   @JSImport("reflux", "Component")
   @js.native
-  class Component[TOfStore /* <: Instantiable0[Store] */, P, S] protected ()
-    extends typings.react.mod.Component[P, S, js.Any] {
+  open class Component[TOfStore /* <: Instantiable0[Store] */, P, S] protected ()
+    extends typings.react.mod.Component[P, S, Any] {
     def this(props: P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
     
-    def mapStoreToState(storeType: TOfStore, mappingFunc: js.Function1[/* newState */ js.Any, js.Any]): Unit = js.native
+    def mapStoreToState(storeType: TOfStore, mappingFunc: js.Function1[/* newState */ Any, Any]): Unit = js.native
     
     var store: TOfStore = js.native
     
@@ -36,20 +36,20 @@ object mod {
     var stores: js.Array[TOfStore] = js.native
   }
   
-  inline def ListenerMixin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListenerMixin")().asInstanceOf[js.Any]
+  inline def ListenerMixin(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListenerMixin")().asInstanceOf[Any]
   
   @JSImport("reflux", "PureComponent")
   @js.native
-  class PureComponent[TOfStore /* <: Instantiable0[Store] */, P, S, SS] protected ()
+  open class PureComponent[TOfStore /* <: Instantiable0[Store] */, P, S, SS] protected ()
     extends typings.react.mod.PureComponent[P, S, SS] {
     def this(props: P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
     
-    def mapStoreToState(storeType: TOfStore, mappingFunc: js.Function1[/* newState */ js.Any, js.Any]): Unit = js.native
+    def mapStoreToState(storeType: TOfStore, mappingFunc: js.Function1[/* newState */ Any, Any]): Unit = js.native
     
     var store: TOfStore = js.native
     
@@ -60,7 +60,7 @@ object mod {
   
   @JSImport("reflux", "Store")
   @js.native
-  class Store () extends StObject {
+  open class Store () extends StObject {
     
     def fetchInitialState(listenable: Listenable, defaultCallback: js.Function): Unit = js.native
     
@@ -68,24 +68,24 @@ object mod {
     
     var id: String = js.native
     
-    def listen(callback: js.Function, bindContext: js.Any): js.Function = js.native
+    def listen(callback: js.Function, bindContext: Any): js.Function = js.native
     
     def listenTo(listenable: Listenable, callback: js.Function): Subscription = js.native
     def listenTo(listenable: Listenable, callback: js.Function, defaultCallback: js.Function): Subscription = js.native
     
     def listenToMany(listenables: js.Array[Listenable]): Unit = js.native
     
-    var listenables: js.Any = js.native
+    var listenables: Any = js.native
     
     def setState(state: js.Object): Unit = js.native
     
-    var state: js.Any = js.native
+    var state: Any = js.native
     
     def stopListeningTo(listenable: Listenable): Boolean = js.native
     
     def stopListeningToAll(): Unit = js.native
     
-    def trigger(state: js.Any): Unit = js.native
+    def trigger(state: Any): Unit = js.native
     
     def validateListening(listenable: Listenable): String = js.native
   }
@@ -93,13 +93,13 @@ object mod {
   inline def connect(store: Store): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def connect(store: Store, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(store.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def createAction(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[js.Any]
-  inline def createAction(definition: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def createAction(definition: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def createAction(definition: ActionDefinition): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createAction(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[Any]
+  inline def createAction(definition: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createAction(definition: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createAction(definition: ActionDefinition): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def createActions(definitions: js.Array[ActionDefinition | String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(definitions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def createActions(definitions: ActionObjectDefinition): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(definitions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createActions(definitions: js.Array[ActionDefinition | String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(definitions.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createActions(definitions: ActionObjectDefinition): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(definitions.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def createStore(definition: StoreDefinition): Store = ^.asInstanceOf[js.Dynamic].applyDynamic("createStore")(definition.asInstanceOf[js.Any]).asInstanceOf[Store]
   
@@ -107,7 +107,7 @@ object mod {
   
   inline def listenTo(store: Store, handler: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenTo")(store.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setState(state: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setState")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setState(state: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setState")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait ActionDefinition
     extends StObject
@@ -138,9 +138,9 @@ object mod {
     
     var children: js.UndefOr[js.Array[String]] = js.undefined
     
-    var preEmit: js.UndefOr[js.Function1[/* repeated */ js.Any, js.UndefOr[js.Array[js.Any]]]] = js.undefined
+    var preEmit: js.UndefOr[js.Function1[/* repeated */ Any, js.UndefOr[js.Array[Any]]]] = js.undefined
     
-    var shouldEmit: js.UndefOr[js.Function1[/* repeated */ js.Any, Boolean]] = js.undefined
+    var shouldEmit: js.UndefOr[js.Function1[/* repeated */ Any, Boolean]] = js.undefined
     
     var sync: js.UndefOr[Boolean] = js.undefined
   }
@@ -161,13 +161,13 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
       
-      inline def setPreEmit(value: /* repeated */ js.Any => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "preEmit", js.Any.fromFunction1(value))
+      inline def setPreEmit(value: /* repeated */ Any => js.UndefOr[js.Array[Any]]): Self = StObject.set(x, "preEmit", js.Any.fromFunction1(value))
       
       inline def setPreEmitUndefined: Self = StObject.set(x, "preEmit", js.undefined)
       
-      inline def setShouldEmit(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "shouldEmit", js.Any.fromFunction1(value))
+      inline def setShouldEmit(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "shouldEmit", js.Any.fromFunction1(value))
       
       inline def setShouldEmitUndefined: Self = StObject.set(x, "shouldEmit", js.undefined)
       
@@ -182,7 +182,7 @@ object mod {
   @js.native
   trait ListenFn extends StObject {
     
-    def apply(params: js.Any*): js.Any = js.native
+    def apply(params: Any*): Any = js.native
     
     var completed: js.Function = js.native
     
@@ -208,13 +208,13 @@ object mod {
   
   trait StoreDefinition
     extends StObject
-       with /* propertyName */ StringDictionary[js.Any] {
+       with /* propertyName */ StringDictionary[Any] {
     
     var getInitialState: js.UndefOr[js.Function] = js.undefined
     
     var init: js.UndefOr[js.Function] = js.undefined
     
-    var listenables: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var listenables: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object StoreDefinition {
     
@@ -233,11 +233,11 @@ object mod {
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      inline def setListenables(value: js.Array[js.Any]): Self = StObject.set(x, "listenables", value.asInstanceOf[js.Any])
+      inline def setListenables(value: js.Array[Any]): Self = StObject.set(x, "listenables", value.asInstanceOf[js.Any])
       
       inline def setListenablesUndefined: Self = StObject.set(x, "listenables", js.undefined)
       
-      inline def setListenablesVarargs(value: js.Any*): Self = StObject.set(x, "listenables", js.Array(value :_*))
+      inline def setListenablesVarargs(value: Any*): Self = StObject.set(x, "listenables", js.Array(value*))
     }
   }
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "OverlapKeeper")
 @js.native
-class OverlapKeeper () extends StObject {
+open class OverlapKeeper () extends StObject {
   
   var OverlapKeeperRecordPool: typings.p2.mod.OverlapKeeperRecordPool = js.native
   
@@ -28,7 +28,7 @@ class OverlapKeeper () extends StObject {
   
   def tick(): Unit = js.native
   
-  var tmpArray1: js.Array[js.Any] = js.native
+  var tmpArray1: js.Array[Any] = js.native
   
   var tmpDict: TupleDictionary = js.native
 }

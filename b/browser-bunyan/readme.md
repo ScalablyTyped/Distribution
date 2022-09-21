@@ -10,15 +10,12 @@ Bunyan logging specifically for the browser
 | ------------------ | :-------------: |
 | Full name          | browser-bunyan |
 | Keywords           | log, logging, log4j, json, bunyan |
-| # releases         | 7 |
-| # dependents       | 15 |
-| # downloads        | 333398 |
-| # stars            | 1 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 52387.666666666664 |
+| # stars            | 89.0 |
 
 ## Links
-- [Homepage](https://github.com/philmander/browser-bunyan#readme)
-- [Bugs](https://github.com/philmander/browser-bunyan/issues)
-- [Repository](https://github.com/philmander/browser-bunyan)
 - [Npm](https://www.npmjs.com/package/browser-bunyan)
     
 

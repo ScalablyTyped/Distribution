@@ -24,6 +24,6 @@ object EnvelopeAttachmentsResult {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: EnvelopeAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: EnvelopeAttachment*): Self = StObject.set(x, "attachments", js.Array(value*))
   }
 }

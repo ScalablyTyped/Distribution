@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.Shortcut
 import typings.express.mod.ErrorRequestHandler
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.node.eventsMod.EventEmitter
 import typings.std.Console
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +19,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : HoneyBadgerInstance = js.native
   
-  type CallbackFunction = js.Function2[/* err */ Error | Null, /* notice */ js.Object | Null, Unit]
+  type CallbackFunction = js.Function2[/* err */ js.Error | Null, /* notice */ js.Object | Null, Unit]
   
   trait ConfigureOptions extends StObject {
     
@@ -56,7 +54,7 @@ object mod extends Shortcut {
       
       inline def setDevelopmentEnvironmentsUndefined: Self = StObject.set(x, "developmentEnvironments", js.undefined)
       
-      inline def setDevelopmentEnvironmentsVarargs(value: String*): Self = StObject.set(x, "developmentEnvironments", js.Array(value :_*))
+      inline def setDevelopmentEnvironmentsVarargs(value: String*): Self = StObject.set(x, "developmentEnvironments", js.Array(value*))
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -70,7 +68,7 @@ object mod extends Shortcut {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -91,53 +89,59 @@ object mod extends Shortcut {
     
     def configure(options: ConfigureOptions): Unit = js.native
     
-    def errorHandler(
-      err: js.Any,
-      req: Request[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response[js.Any, Double],
-      next: NextFunction
-    ): js.Any = js.native
+    var context: Any = js.native
+    
+    def errorHandler(err: Any, req: Request, res: Response, next: NextFunction): Any = js.native
     @JSName("errorHandler")
-    var errorHandler_Original: ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    var errorHandler_Original: ErrorRequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     def factory(): HoneyBadgerInstance = js.native
     def factory(options: ConfigureOptions): HoneyBadgerInstance = js.native
     
     def lambdaHandler(handler: LambdaHandler): LambdaHandler = js.native
     
-    def notify(err: js.Any): Unit = js.native
-    def notify(err: js.Any, name: js.Any): Unit = js.native
-    def notify(err: js.Any, name: js.Any, extra: Unit, callback: CallbackFunction): Unit = js.native
-    def notify(err: js.Any, name: js.Any, extra: CallbackFunction): Unit = js.native
-    def notify(err: js.Any, name: js.Any, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
-    def notify(err: js.Any, name: js.Any, extra: metadata): Unit = js.native
-    def notify(err: js.Any, name: js.Any, extra: metadata, callback: CallbackFunction): Unit = js.native
-    def notify(err: js.Any, name: Unit, extra: Unit, callback: CallbackFunction): Unit = js.native
-    def notify(err: js.Any, name: Unit, extra: CallbackFunction): Unit = js.native
-    def notify(err: js.Any, name: Unit, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
-    def notify(err: js.Any, name: Unit, extra: metadata): Unit = js.native
-    def notify(err: js.Any, name: Unit, extra: metadata, callback: CallbackFunction): Unit = js.native
-    def notify(err: Unit, name: js.Any): Unit = js.native
-    def notify(err: Unit, name: js.Any, extra: Unit, callback: CallbackFunction): Unit = js.native
-    def notify(err: Unit, name: js.Any, extra: CallbackFunction): Unit = js.native
-    def notify(err: Unit, name: js.Any, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
-    def notify(err: Unit, name: js.Any, extra: metadata): Unit = js.native
-    def notify(err: Unit, name: js.Any, extra: metadata, callback: CallbackFunction): Unit = js.native
+    def notify(err: Any): Unit = js.native
+    def notify(err: Any, name: Any): Unit = js.native
+    def notify(err: Any, name: Any, extra: Unit, callback: CallbackFunction): Unit = js.native
+    def notify(err: Any, name: Any, extra: CallbackFunction): Unit = js.native
+    def notify(err: Any, name: Any, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
+    def notify(err: Any, name: Any, extra: metadata): Unit = js.native
+    def notify(err: Any, name: Any, extra: metadata, callback: CallbackFunction): Unit = js.native
+    def notify(err: Any, name: Unit, extra: Unit, callback: CallbackFunction): Unit = js.native
+    def notify(err: Any, name: Unit, extra: CallbackFunction): Unit = js.native
+    def notify(err: Any, name: Unit, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
+    def notify(err: Any, name: Unit, extra: metadata): Unit = js.native
+    def notify(err: Any, name: Unit, extra: metadata, callback: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: Any): Unit = js.native
+    def notify(err: Unit, name: Any, extra: Unit, callback: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: Any, extra: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: Any, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
+    def notify(err: Unit, name: Any, extra: metadata): Unit = js.native
+    def notify(err: Unit, name: Any, extra: metadata, callback: CallbackFunction): Unit = js.native
     def notify(err: Unit, name: Unit, extra: Unit, callback: CallbackFunction): Unit = js.native
     def notify(err: Unit, name: Unit, extra: CallbackFunction): Unit = js.native
     def notify(err: Unit, name: Unit, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
     def notify(err: Unit, name: Unit, extra: metadata): Unit = js.native
     def notify(err: Unit, name: Unit, extra: metadata, callback: CallbackFunction): Unit = js.native
     
-    def onUncaughtException(func: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def onUncaughtException(func: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
-    def requestHandler(
-      req: Request[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response[js.Any, Double],
-      next: NextFunction
-    ): js.Any = js.native
+    def requestHandler(req: Request, res: Response): Any = js.native
+    def requestHandler(req: Request, res: Response, next: NextFunction): Any = js.native
     @JSName("requestHandler")
-    var requestHandler_Original: RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    var requestHandler_Original: RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     def resetContext(): Unit = js.native
     def resetContext(context: js.Object): Unit = js.native

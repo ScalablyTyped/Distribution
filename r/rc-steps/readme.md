@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-steps
 
-Typings are for version 4.1.3
+Typings are for version 5.0.0-alpha.0
 
 ## Library description:
 steps ui component for react
@@ -10,10 +10,10 @@ steps ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-steps |
 | Keywords           | react, react-component, react-steps |
-| # releases         | 10 |
-| # dependents       | 246 |
-| # downloads        | 20717952 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3257693.6666666665 |
+| # stars            | 294.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/steps)

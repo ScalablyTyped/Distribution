@@ -30,7 +30,7 @@ object DrawerSectionProps {
     
     inline def setItems(value: js.Array[DrawerSectionItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: DrawerSectionItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DrawerSectionItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setStyle(value: Item): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

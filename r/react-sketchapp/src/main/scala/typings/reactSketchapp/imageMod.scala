@@ -1,69 +1,106 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
+import typings.propTypes.mod.ReactNodeLike
+import typings.propTypes.mod.Requireable
 import typings.react.mod.Component
-import typings.react.mod.ReactNode
-import typings.reactSketchapp.propsMod.NumberProp
+import typings.reactSketchapp.anon.AlignItems
+import typings.reactSketchapp.anon.AnimationType
+import typings.reactSketchapp.anon.Bottom
+import typings.reactSketchapp.anon.DefaultSource
+import typings.reactSketchapp.anon.Name
+import typings.reactSketchapp.anon.ShadowColor
+import typings.reactSketchapp.anon.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/Image", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Image", "Image")
   @js.native
-  class default ()
-    extends Component[ImageProps, js.Object, js.Any]
-  
-  type Image = Component[ImageProps, js.Object, js.Any]
-  
-  trait ImageProps extends StObject {
-    
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
-    
-    var height: NumberProp
-    
-    var href: String
-    
-    var preserveAspectRatio: js.UndefOr[String] = js.undefined
-    
-    var width: NumberProp
-    
-    var x: js.UndefOr[NumberProp] = js.undefined
-    
-    var y: js.UndefOr[NumberProp] = js.undefined
+  open class Image protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object ImageProps {
+  /* static members */
+  object Image {
     
-    inline def apply(height: NumberProp, href: String, width: NumberProp): ImageProps = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ImageProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Image", "Image")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: ImageProps](x: Self) {
-      
-      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
-      
-      inline def setHeight(value: NumberProp): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
-      
-      inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
-      
-      inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
-      
-      inline def setWidth(value: NumberProp): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setX(value: NumberProp): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
-      
-      inline def setY(value: NumberProp): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-      
-      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
-    }
+    @JSImport("react-sketchapp/lib/components/Image", "Image.defaultProps")
+    @js.native
+    def defaultProps: Name = js.native
+    inline def defaultProps_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Image", "Image.propTypes")
+    @js.native
+    def propTypes: DefaultSource = js.native
+    inline def propTypes_=(x: DefaultSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  object ImagePropTypes {
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes.children")
+    @js.native
+    def children: Requireable[ReactNodeLike] = js.native
+    inline def children_=(x: Requireable[ReactNodeLike]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes.defaultSource")
+    @js.native
+    def defaultSource: Requireable[String | InferProps[Uri]] = js.native
+    inline def defaultSource_=(x: Requireable[String | InferProps[Uri]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSource")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes.flow")
+    @js.native
+    def flow: Requireable[InferProps[AnimationType]] = js.native
+    inline def flow_=(x: Requireable[InferProps[AnimationType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flow")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes.name")
+    @js.native
+    def name: Requireable[String] = js.native
+    inline def name_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes.resizeMode")
+    @js.native
+    def resizeMode: Requireable[String] = js.native
+    inline def resizeMode_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resizeMode")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes.resizingConstraint")
+    @js.native
+    def resizingConstraint: Requireable[InferProps[Bottom]] = js.native
+    inline def resizingConstraint_=(x: Requireable[InferProps[Bottom]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resizingConstraint")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes.shadows")
+    @js.native
+    def shadows: Requireable[js.Array[js.UndefOr[InferProps[ShadowColor] | Null]]] = js.native
+    inline def shadows_=(x: Requireable[js.Array[js.UndefOr[InferProps[ShadowColor] | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shadows")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes.source")
+    @js.native
+    def source: Requireable[String | InferProps[Uri]] = js.native
+    inline def source_=(x: Requireable[String | InferProps[Uri]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("source")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Image", "ImagePropTypes.style")
+    @js.native
+    def style: Requireable[js.UndefOr[Double | InferProps[AlignItems] | Null]] = js.native
+    inline def style_=(x: Requireable[js.UndefOr[Double | InferProps[AlignItems] | Null]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-sketchapp/lib/components/Image", "ImageSourcePropType")
+  @js.native
+  val ImageSourcePropType: Requireable[String | InferProps[Uri]] = js.native
+  
+  type Props = InferProps[DefaultSource]
 }

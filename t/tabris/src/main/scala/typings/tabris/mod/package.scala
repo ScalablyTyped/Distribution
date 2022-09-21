@@ -1,137 +1,202 @@
 package typings.tabris.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Exclude
+import typings.std.Extract
+import typings.std.InstanceType
+import typings.std.Number
+import typings.std.Partial
+import typings.std.Pick
+import typings.tabris.Crypto
+import typings.tabris.RequestInit
+import typings.tabris.anon.ApplyObject
+import typings.tabris.anon.Attribute
+import typings.tabris.anon.Bottom
+import typings.tabris.anon.Center
+import typings.tabris.anon.ChildrenJSXChildren
+import typings.tabris.anon.Cid
+import typings.tabris.anon.Data
+import typings.tabris.anon.Family
+import typings.tabris.anon.Name
+import typings.tabris.anon.Unsubscribe
+import typings.tabris.anon.`0`
+import typings.tabris.anon.`12`
+import typings.tabris.mod.^
+import typings.tabris.tabrisStrings.`type`
+import typings.tabris.tabrisStrings.absoluteBounds
+import typings.tabris.tabrisStrings.bounds
+import typings.tabris.tabrisStrings.cid
+import typings.tabris.tabrisStrings.constructor
+import typings.tabris.tabrisStrings.jsxAttributes
+import typings.tabris.tabrisStrings.nextLeftparenthesisRightparenthesis
+import typings.tabris.tabrisStrings.prevLeftparenthesisRightparenthesis
+import typings.tabris.tabrisStrings.set
+import typings.tabris.tabrisStrings.target
+import typings.tabris.tabrisStrings.timeStamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def Action: typings.tabris.mod.ActionFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Action").asInstanceOf[typings.tabris.mod.ActionFactory]
+inline def Action: ActionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Action").asInstanceOf[ActionFactory]
 type Action = typings.tabris.mod.widgets.Action
 
-inline def ActivityIndicator: typings.tabris.mod.ActivityIndicatorFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ActivityIndicator").asInstanceOf[typings.tabris.mod.ActivityIndicatorFactory]
+inline def ActivityIndicator: ActivityIndicatorFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ActivityIndicator").asInstanceOf[ActivityIndicatorFactory]
 type ActivityIndicator = typings.tabris.mod.widgets.ActivityIndicator
 
-inline def Button: typings.tabris.mod.ButtonFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Button").asInstanceOf[typings.tabris.mod.ButtonFactory]
+inline def Apply[WidgetConstructor /* <: BaseConstructor[Widget[Any]] */](attr: ApplyAttributes[WidgetConstructor]): ApplyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Apply")(attr.asInstanceOf[js.Any]).asInstanceOf[ApplyObject]
+
+inline def Button: ButtonFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Button").asInstanceOf[ButtonFactory]
 type Button = typings.tabris.mod.widgets.Button
 
-inline def CameraView: typings.tabris.mod.CameraViewFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CameraView").asInstanceOf[typings.tabris.mod.CameraViewFactory]
+inline def CameraView: CameraViewFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("CameraView").asInstanceOf[CameraViewFactory]
 type CameraView = typings.tabris.mod.widgets.CameraView
 
-inline def Canvas: typings.tabris.mod.CanvasFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Canvas").asInstanceOf[typings.tabris.mod.CanvasFactory]
+inline def Canvas: CanvasFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Canvas").asInstanceOf[CanvasFactory]
 type Canvas = typings.tabris.mod.widgets.Canvas
 
-inline def CheckBox: typings.tabris.mod.CheckBoxFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CheckBox").asInstanceOf[typings.tabris.mod.CheckBoxFactory]
+inline def CheckBox: CheckBoxFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("CheckBox").asInstanceOf[CheckBoxFactory]
 type CheckBox = typings.tabris.mod.widgets.CheckBox
 
-inline def CollectionView: typings.tabris.mod.CollectionViewFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CollectionView").asInstanceOf[typings.tabris.mod.CollectionViewFactory]
-type CollectionView[CellWidgetType /* <: typings.tabris.mod.Widget */] = typings.tabris.mod.widgets.CollectionView[CellWidgetType]
+inline def CollectionView: CollectionViewFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("CollectionView").asInstanceOf[CollectionViewFactory]
+type CollectionView[CellWidgetType /* <: Widget[Any] */] = typings.tabris.mod.widgets.CollectionView[CellWidgetType]
 
-inline def Composite: typings.tabris.mod.CompositeFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Composite").asInstanceOf[typings.tabris.mod.CompositeFactory]
-type Composite[ChildType /* <: typings.tabris.mod.Widget */] = typings.tabris.mod.widgets.Composite[ChildType]
+inline def Composite: CompositeFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Composite").asInstanceOf[CompositeFactory]
+type Composite[ChildType /* <: Widget[Any] */] = typings.tabris.mod.widgets.Composite[ChildType]
 
-inline def ImageView: typings.tabris.mod.ImageViewFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImageView").asInstanceOf[typings.tabris.mod.ImageViewFactory]
+inline def ImageView: ImageViewFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ImageView").asInstanceOf[ImageViewFactory]
 type ImageView = typings.tabris.mod.widgets.ImageView
 
-inline def NavigationView: typings.tabris.mod.NavigationViewFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NavigationView").asInstanceOf[typings.tabris.mod.NavigationViewFactory]
+inline def NavigationView: NavigationViewFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("NavigationView").asInstanceOf[NavigationViewFactory]
 type NavigationView[PageType /* <: typings.tabris.mod.Page */, ActionType /* <: typings.tabris.mod.Action */] = typings.tabris.mod.widgets.NavigationView[PageType, ActionType]
 
-inline def Page: typings.tabris.mod.PageFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Page").asInstanceOf[typings.tabris.mod.PageFactory]
+inline def ObservableData: ObservableDataFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ObservableData").asInstanceOf[ObservableDataFactory]
+type ObservableData = typings.tabris.mod.widgets.ObservableData
+
+inline def Page: PageFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Page").asInstanceOf[PageFactory]
 type Page = typings.tabris.mod.widgets.Page
 
-inline def PdfView: typings.tabris.mod.PdfViewFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PdfView").asInstanceOf[typings.tabris.mod.PdfViewFactory]
+inline def PdfView: PdfViewFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("PdfView").asInstanceOf[PdfViewFactory]
 type PdfView = typings.tabris.mod.widgets.PdfView
 
-inline def Picker: typings.tabris.mod.PickerFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Picker").asInstanceOf[typings.tabris.mod.PickerFactory]
+inline def Picker: PickerFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Picker").asInstanceOf[PickerFactory]
 type Picker = typings.tabris.mod.widgets.Picker
 
-inline def ProgressBar: typings.tabris.mod.ProgressBarFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ProgressBar").asInstanceOf[typings.tabris.mod.ProgressBarFactory]
+inline def ProgressBar: ProgressBarFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ProgressBar").asInstanceOf[ProgressBarFactory]
 type ProgressBar = typings.tabris.mod.widgets.ProgressBar
 
-inline def RadioButton: typings.tabris.mod.RadioButtonFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RadioButton").asInstanceOf[typings.tabris.mod.RadioButtonFactory]
+inline def RadioButton: RadioButtonFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("RadioButton").asInstanceOf[RadioButtonFactory]
 type RadioButton = typings.tabris.mod.widgets.RadioButton
 
-inline def RefreshComposite: typings.tabris.mod.RefreshCompositeFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RefreshComposite").asInstanceOf[typings.tabris.mod.RefreshCompositeFactory]
+inline def RefreshComposite: RefreshCompositeFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("RefreshComposite").asInstanceOf[RefreshCompositeFactory]
 type RefreshComposite = typings.tabris.mod.widgets.RefreshComposite
 
-inline def Row: typings.tabris.mod.RowFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Row").asInstanceOf[typings.tabris.mod.RowFactory]
+inline def Row: RowFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Row").asInstanceOf[RowFactory]
 type Row = typings.tabris.mod.widgets.Row
 
-inline def ScrollView: typings.tabris.mod.ScrollViewFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScrollView").asInstanceOf[typings.tabris.mod.ScrollViewFactory]
+inline def ScrollView: ScrollViewFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ScrollView").asInstanceOf[ScrollViewFactory]
 type ScrollView = typings.tabris.mod.widgets.ScrollView
 
-inline def SearchAction: typings.tabris.mod.SearchActionFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SearchAction").asInstanceOf[typings.tabris.mod.SearchActionFactory]
+inline def SearchAction: SearchActionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("SearchAction").asInstanceOf[SearchActionFactory]
 type SearchAction = typings.tabris.mod.widgets.SearchAction
 
-inline def Set_prototype[WidgetConstructor /* <: typings.tabris.mod.BaseConstructor[typings.tabris.mod.Widget] */](
-  target: WidgetConstructor,
-  attributes: typings.tabris.mod.Attributes[
-  /* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any
-]
-): typings.tabris.mod.Attributes[
-/* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any] = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Set")(target.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[typings.tabris.mod.Attributes[
-/* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any]]
+inline def Set[TargetConstructor /* <: BaseConstructor[NativeObject] */, ResultType, AttrName /* <: /* keyof ResultType */ String */](attr: Attribute[TargetConstructor, AttrName, ResultType]): ResultType = ^.asInstanceOf[js.Dynamic].applyDynamic("Set")(attr.asInstanceOf[js.Any]).asInstanceOf[ResultType]
 
-inline def Slider: typings.tabris.mod.SliderFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Slider").asInstanceOf[typings.tabris.mod.SliderFactory]
+inline def Set_prototype[WidgetConstructor /* <: BaseConstructor[Widget[Any]] */](
+  target: WidgetConstructor,
+  attributes: Attributes[
+  /* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any, 
+  Any
+]
+): Attributes[
+/* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any, 
+Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Set")(target.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Attributes[
+/* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any, 
+Any]]
+inline def Set_prototype[WidgetConstructor /* <: BaseConstructor[Widget[Any]] */](
+  target: WidgetConstructor,
+  selector: SelectorString,
+  attributes: Attributes[
+  /* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any, 
+  Any
+]
+): RuleSet[Widget[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Set")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[RuleSet[Widget[Any]]]
+
+inline def Setter[TargetConstructor /* <: BaseConstructor[NativeObject] */, ResultType, AttrName /* <: /* keyof ResultType */ String */](attr: Attribute[TargetConstructor, AttrName, ResultType]): ResultType = ^.asInstanceOf[js.Dynamic].applyDynamic("Setter")(attr.asInstanceOf[js.Any]).asInstanceOf[ResultType]
+
+inline def Setter_prototype[WidgetConstructor /* <: BaseConstructor[Widget[Any]] */](
+  target: WidgetConstructor,
+  attributes: Attributes[
+  /* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any, 
+  Any
+]
+): Attributes[
+/* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any, 
+Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Setter")(target.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Attributes[
+/* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any, 
+Any]]
+inline def Setter_prototype[WidgetConstructor /* <: BaseConstructor[Widget[Any]] */](
+  target: WidgetConstructor,
+  selector: SelectorString,
+  attributes: Attributes[
+  /* import warning: importer.ImportType#apply Failed type conversion: WidgetConstructor['prototype'] */ js.Any, 
+  Any
+]
+): RuleSet[Widget[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Setter")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[RuleSet[Widget[Any]]]
+
+inline def Slider: SliderFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Slider").asInstanceOf[SliderFactory]
 type Slider = typings.tabris.mod.widgets.Slider
 
-inline def Stack: typings.tabris.mod.StackFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Stack").asInstanceOf[typings.tabris.mod.StackFactory]
+inline def Stack: StackFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Stack").asInstanceOf[StackFactory]
 type Stack = typings.tabris.mod.widgets.Stack
 
-inline def Switch: typings.tabris.mod.SwitchFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Switch").asInstanceOf[typings.tabris.mod.SwitchFactory]
+inline def Switch: SwitchFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Switch").asInstanceOf[SwitchFactory]
 type Switch = typings.tabris.mod.widgets.Switch
 
-inline def Tab: typings.tabris.mod.TabFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Tab").asInstanceOf[typings.tabris.mod.TabFactory]
+inline def Tab: TabFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Tab").asInstanceOf[TabFactory]
 type Tab = typings.tabris.mod.widgets.Tab
 
-inline def TabFolder: typings.tabris.mod.TabFolderFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TabFolder").asInstanceOf[typings.tabris.mod.TabFolderFactory]
+inline def TabFolder: TabFolderFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("TabFolder").asInstanceOf[TabFolderFactory]
 type TabFolder[TabType /* <: typings.tabris.mod.Tab */] = typings.tabris.mod.widgets.TabFolder[TabType]
 
-inline def TextInput: typings.tabris.mod.TextInputFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextInput").asInstanceOf[typings.tabris.mod.TextInputFactory]
+inline def TextInput: TextInputFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("TextInput").asInstanceOf[TextInputFactory]
 type TextInput = typings.tabris.mod.widgets.TextInput
 
-inline def TextView: typings.tabris.mod.TextViewFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextView").asInstanceOf[typings.tabris.mod.TextViewFactory]
+inline def TextView: TextViewFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("TextView").asInstanceOf[TextViewFactory]
 type TextView = typings.tabris.mod.widgets.TextView
 
-inline def ToggleButton: typings.tabris.mod.ToggleButtonFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToggleButton").asInstanceOf[typings.tabris.mod.ToggleButtonFactory]
+inline def ToggleButton: ToggleButtonFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ToggleButton").asInstanceOf[ToggleButtonFactory]
 type ToggleButton = typings.tabris.mod.widgets.ToggleButton
 
-inline def Video: typings.tabris.mod.VideoFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Video").asInstanceOf[typings.tabris.mod.VideoFactory]
+inline def Video: VideoFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Video").asInstanceOf[VideoFactory]
 type Video = typings.tabris.mod.widgets.Video
 
-inline def WebView: typings.tabris.mod.WebViewFactory = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("WebView").asInstanceOf[typings.tabris.mod.WebViewFactory]
+inline def WebView: WebViewFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("WebView").asInstanceOf[WebViewFactory]
 type WebView = typings.tabris.mod.widgets.WebView
 
-inline def _empty(attributes: scala.Null, children: java.lang.String): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def _empty(
-  attributes: scala.Null,
-  children: js.Array[scala.Null | java.lang.String | scala.Double | scala.Boolean]
-): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def _empty(attributes: scala.Null, children: scala.Boolean): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def _empty(attributes: scala.Null, children: scala.Double): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def _empty(attributes: scala.Null, children: typings.tabris.mod.JSXChildren[typings.tabris.mod.Widget]): typings.tabris.mod.WidgetCollection[typings.tabris.mod.Widget] = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.tabris.mod.WidgetCollection[typings.tabris.mod.Widget]]
+inline def _empty(attributes: Null, children: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: Null, children: js.Array[Null | String | Double | Boolean]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: Null, children: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: Null, children: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: Null, children: JSXChildren[Widget[Any]]): WidgetCollection[Widget[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget[Any]]]
 /**
   * A JSX stateless functional component that groups all given widgets in a WidgetCollection
   * @param attributes This parameter needs to be null since <$> does not support any attributes
   * @param children The widgets to be included in the resulting WidgetCollection instance.
   */
 /* was `typeof $` */
-inline def _empty(
-  attributes: typings.tabris.anon.Children,
-  children: typings.tabris.mod.JSXChildren[typings.tabris.mod.Widget]
-): typings.tabris.mod.WidgetCollection[typings.tabris.mod.Widget] = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.tabris.mod.WidgetCollection[typings.tabris.mod.Widget]]
+inline def _empty(attributes: ChildrenJSXChildren, children: JSXChildren[Widget[Any]]): WidgetCollection[Widget[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget[Any]]]
 /**
   * A JSX stateless functional component that joins any given content in to a single string.
   * @param attributes This parameter needs to be null since <$> does not support any attributes.
   * @param children The content of the resulting string.
   */
 /* was `typeof $` */
-inline def _empty(attributes: typings.tabris.anon.`0`, children: java.lang.String): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def _empty(
-  attributes: typings.tabris.anon.`0`,
-  children: js.Array[scala.Null | java.lang.String | scala.Double | scala.Boolean]
-): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def _empty(attributes: typings.tabris.anon.`0`, children: scala.Boolean): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def _empty(attributes: typings.tabris.anon.`0`, children: scala.Double): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def _empty(attributes: `12`, children: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: js.Array[Null | String | Double | Boolean]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
 /**
   * Returns the non-disposed `NativeObject` instance (e.g. a widget) associated with the given cid
   * number. The number can be obtained via the [cid](./NativeObject.md#cid) property. Example: If the cid
@@ -145,7 +210,7 @@ inline def _empty(attributes: typings.tabris.anon.`0`, children: scala.Double): 
   * @param cidNumber The cid number is the trailing part of the [cid](./NativeObject.md#cid) property string.
   */
 /* was `typeof $` */
-inline def _empty(cidNumber: scala.Double): typings.tabris.mod.NativeObject = typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(cidNumber.asInstanceOf[js.Any]).asInstanceOf[typings.tabris.mod.NativeObject]
+inline def _empty(cidNumber: Double): NativeObject = ^.asInstanceOf[js.Dynamic].applyDynamic("$")(cidNumber.asInstanceOf[js.Any]).asInstanceOf[NativeObject]
 // $
 /**
   * A shortcut to [`tabris.contentView.find()`](./Composite.md#findselector). Returns a collection
@@ -155,115 +220,98 @@ inline def _empty(cidNumber: scala.Double): typings.tabris.mod.NativeObject = ty
   * @param selector A selector expression or a predicate function to filter the results.
   */
 /* was `typeof $` */
-inline def _empty[Result /* <: typings.tabris.mod.Widget */](): typings.tabris.mod.WidgetCollection[Result] = typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")().asInstanceOf[typings.tabris.mod.WidgetCollection[Result]]
-inline def _empty[Result /* <: typings.tabris.mod.Widget */](selector: typings.tabris.mod.Selector[typings.tabris.mod.Widget, Result]): typings.tabris.mod.WidgetCollection[Result] = typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[typings.tabris.mod.WidgetCollection[Result]]
+inline def _empty[Result /* <: Widget[Any] */](): WidgetCollection[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("$")().asInstanceOf[WidgetCollection[Result]]
+inline def _empty[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[WidgetCollection[Result]]
 
-inline def app: typings.tabris.mod.App_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("app").asInstanceOf[typings.tabris.mod.App_]
+inline def app: App_ = ^.asInstanceOf[js.Dynamic].selectDynamic("app").asInstanceOf[App_]
 
-inline def asFactory[OriginalConstructor /* <: typings.tabris.mod.Constructor[typings.tabris.mod.JSXCandidate] & js.Object */, Instance /* <: typings.tabris.mod.JSXCandidate */](constructor: OriginalConstructor): typings.tabris.mod.CallableConstructor[
+inline def asFactory[OriginalConstructor /* <: Constructor[JSXCandidate] & js.Object */, Instance /* <: JSXCandidate */](constructor: OriginalConstructor): CallableConstructor[
 OriginalConstructor, 
-typings.std.InstanceType[OriginalConstructor], 
-js.Function1[/* repeated */ js.Any, typings.std.InstanceType[OriginalConstructor]]] = typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("asFactory")(constructor.asInstanceOf[js.Any]).asInstanceOf[typings.tabris.mod.CallableConstructor[
+InstanceType[OriginalConstructor], 
+js.Function1[/* repeated */ Any, Widget[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asFactory")(constructor.asInstanceOf[js.Any]).asInstanceOf[CallableConstructor[
 OriginalConstructor, 
-typings.std.InstanceType[OriginalConstructor], 
-js.Function1[/* repeated */ js.Any, typings.std.InstanceType[OriginalConstructor]]]]
+InstanceType[OriginalConstructor], 
+js.Function1[/* repeated */ Any, Widget[Any]]]]
 
-inline def checkType(value: js.Any, `type`: typings.tabris.mod.BaseConstructor[java.lang.String]): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def authentication: Authentication_ = ^.asInstanceOf[js.Dynamic].selectDynamic("authentication").asInstanceOf[Authentication_]
+
+inline def checkType(value: Any, `type`: BaseConstructor[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
 inline def checkType(
-  value: js.Any,
-  `type`: typings.tabris.mod.BaseConstructor[scala.Boolean | typings.std.Number | java.lang.String],
-  callback: js.Function1[
-  (/* value */ scala.Boolean) | (/* value */ scala.Double) | (/* value */ java.lang.String), 
-  js.Any
-]
-): scala.Unit = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def checkType(
-  value: js.Any,
-  `type`: typings.tabris.mod.BaseConstructor[java.lang.String],
-  options: typings.tabris.anon.Name
-): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  value: Any,
+  `type`: BaseConstructor[Boolean | Number | String],
+  callback: js.Function1[(/* value */ Boolean) | (/* value */ Double) | (/* value */ String), Any]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def checkType(value: Any, `type`: BaseConstructor[String], options: Name): String = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def checkType_Boolean(value: js.Any, `type`: typings.tabris.mod.BaseConstructor[scala.Boolean]): scala.Boolean = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def checkType_Boolean(
-  value: js.Any,
-  `type`: typings.tabris.mod.BaseConstructor[scala.Boolean],
-  options: typings.tabris.anon.Name
-): scala.Boolean = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def checkType_Boolean(value: Any, `type`: BaseConstructor[Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def checkType_Boolean(value: Any, `type`: BaseConstructor[Boolean], options: Name): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def checkType_Double(value: js.Any, `type`: typings.tabris.mod.BaseConstructor[typings.std.Number]): scala.Double = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def checkType_Double(
-  value: js.Any,
-  `type`: typings.tabris.mod.BaseConstructor[typings.std.Number],
-  options: typings.tabris.anon.Name
-): scala.Double = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def checkType_Double(value: Any, `type`: BaseConstructor[Number]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def checkType_Double(value: Any, `type`: BaseConstructor[Number], options: Name): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def checkType_T[T](
-  value: js.Any,
-  `type`: typings.tabris.mod.BaseConstructor[T],
-  callback: js.Function1[/* value */ T, js.Any]
-): scala.Unit = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def checkType_T[T](value: Any, `type`: BaseConstructor[T], callback: js.Function1[/* value */ T, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def checkType_T_T[T](value: js.Any, `type`: typings.tabris.mod.BaseConstructor[T]): T = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def checkType_T_T[T](value: js.Any, `type`: typings.tabris.mod.BaseConstructor[T], options: typings.tabris.anon.Name): T = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def checkType_T_T[T](value: Any, `type`: BaseConstructor[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def checkType_T_T[T](value: Any, `type`: BaseConstructor[T], options: Name): T = (^.asInstanceOf[js.Dynamic].applyDynamic("checkType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def contentView: typings.tabris.mod.ContentView_[typings.tabris.mod.Widget] = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("contentView").asInstanceOf[typings.tabris.mod.ContentView_[typings.tabris.mod.Widget]]
+inline def contentView: ContentView_[Widget[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("contentView").asInstanceOf[ContentView_[Widget[Any]]]
 
-inline def crypto: typings.tabris.Crypto = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("crypto").asInstanceOf[typings.tabris.Crypto]
-inline def crypto_=(x: typings.tabris.Crypto): scala.Unit = typings.tabris.mod.^.asInstanceOf[js.Dynamic].updateDynamic("crypto")(x.asInstanceOf[js.Any])
+inline def crypto: Crypto = ^.asInstanceOf[js.Dynamic].selectDynamic("crypto").asInstanceOf[Crypto]
+inline def crypto_=(x: Crypto): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crypto")(x.asInstanceOf[js.Any])
 
-inline def devTools: typings.tabris.mod.DevTools_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("devTools").asInstanceOf[typings.tabris.mod.DevTools_]
+inline def devTools: DevTools_ = ^.asInstanceOf[js.Dynamic].selectDynamic("devTools").asInstanceOf[DevTools_]
 
-inline def device: typings.tabris.mod.Device_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("device").asInstanceOf[typings.tabris.mod.Device_]
+inline def device: Device_ = ^.asInstanceOf[js.Dynamic].selectDynamic("device").asInstanceOf[Device_]
 
-inline def drawer: typings.tabris.mod.Drawer_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("drawer").asInstanceOf[typings.tabris.mod.Drawer_]
+inline def drawer: Drawer_ = ^.asInstanceOf[js.Dynamic].selectDynamic("drawer").asInstanceOf[Drawer_]
 
 // fetch
 /* was `typeof fetch` */
-inline def fetch(url: java.lang.String): js.Promise[typings.tabris.Response] = typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tabris.Response]]
-inline def fetch(url: java.lang.String, init: typings.tabris.RequestInit): js.Promise[typings.tabris.Response] = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
-inline def fetch(url: typings.tabris.Request): js.Promise[typings.tabris.Response] = typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tabris.Response]]
-inline def fetch(url: typings.tabris.Request, init: typings.tabris.RequestInit): js.Promise[typings.tabris.Response] = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
+inline def fetch(url: String): js.Promise[typings.tabris.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tabris.Response]]
+inline def fetch(url: String, init: RequestInit): js.Promise[typings.tabris.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
+inline def fetch(url: typings.tabris.Request): js.Promise[typings.tabris.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tabris.Response]]
+inline def fetch(url: typings.tabris.Request, init: RequestInit): js.Promise[typings.tabris.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
 
-inline def format(data: js.Any*): java.lang.String = typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(data.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def format(message: java.lang.String, data: js.Any*): java.lang.String = (typings.tabris.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def format(data: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
+inline def format(message: String, data: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(message.asInstanceOf[js.Any]).`++`(data.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 
-inline def fs: typings.tabris.mod.FileSystem = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("fs").asInstanceOf[typings.tabris.mod.FileSystem]
+inline def fs: FileSystem = ^.asInstanceOf[js.Dynamic].selectDynamic("fs").asInstanceOf[FileSystem]
 
-inline def navigationBar: typings.tabris.mod.NavigationBar_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("navigationBar").asInstanceOf[typings.tabris.mod.NavigationBar_]
+inline def input: Input_ = ^.asInstanceOf[js.Dynamic].selectDynamic("input").asInstanceOf[Input_]
 
-inline def permission: typings.tabris.mod.Permission_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("permission").asInstanceOf[typings.tabris.mod.Permission_]
+inline def navigationBar: NavigationBar_ = ^.asInstanceOf[js.Dynamic].selectDynamic("navigationBar").asInstanceOf[NavigationBar_]
 
-inline def printer: typings.tabris.mod.Printer_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("printer").asInstanceOf[typings.tabris.mod.Printer_]
+inline def permission: Permission_ = ^.asInstanceOf[js.Dynamic].selectDynamic("permission").asInstanceOf[Permission_]
 
-inline def sizeMeasurement: typings.tabris.mod.SizeMeasurement_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("sizeMeasurement").asInstanceOf[typings.tabris.mod.SizeMeasurement_]
+inline def printer: Printer_ = ^.asInstanceOf[js.Dynamic].selectDynamic("printer").asInstanceOf[Printer_]
 
-inline def statusBar: typings.tabris.mod.StatusBar_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("statusBar").asInstanceOf[typings.tabris.mod.StatusBar_]
+inline def sizeMeasurement: SizeMeasurement_ = ^.asInstanceOf[js.Dynamic].selectDynamic("sizeMeasurement").asInstanceOf[SizeMeasurement_]
 
-inline def tabris: typings.tabris.mod.Tabris_ = typings.tabris.mod.^.asInstanceOf[js.Dynamic].selectDynamic("tabris").asInstanceOf[typings.tabris.mod.Tabris_]
+inline def statusBar: StatusBar_ = ^.asInstanceOf[js.Dynamic].selectDynamic("statusBar").asInstanceOf[StatusBar_]
 
-type ActionConstructor = typings.tabris.mod.ActionFactory
+inline def tabris: Tabris_ = ^.asInstanceOf[js.Dynamic].selectDynamic("tabris").asInstanceOf[Tabris_]
 
-type ActivityIndicatorConstructor = typings.tabris.mod.ActivityIndicatorFactory
+type ActionConstructor = ActionFactory
 
-type Attributes[T /* <: typings.tabris.mod.JSXCandidate */] = /* import warning: importer.ImportType#apply Failed type conversion: T['jsxAttributes'] */ js.Any
+type ActivityIndicatorConstructor = ActivityIndicatorFactory
 
-type BoxDimensions = scala.Double | java.lang.String | (js.Tuple4[
-scala.Double, 
-js.UndefOr[scala.Double], 
-js.UndefOr[scala.Double], 
-js.UndefOr[scala.Double]]) | typings.tabris.anon.Bottom
+type Attributes[T /* <: JSXCandidate */, TData] = (/* import warning: importer.ImportType#apply Failed type conversion: T['jsxAttributes'] */ js.Any) & `0`[TData]
 
-type ButtonConstructor = typings.tabris.mod.ButtonFactory
+type BaseConstructor[T] = js.Function
 
-type CameraViewConstructor = typings.tabris.mod.CameraViewFactory
+type BoxDimensions = Double | String | (js.Tuple4[Double, js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]]) | Bottom
 
-type CanvasConstructor = typings.tabris.mod.CanvasFactory
+type ButtonConstructor = ButtonFactory
 
-type CheckBoxConstructor = typings.tabris.mod.CheckBoxFactory
+type CameraViewConstructor = CameraViewFactory
 
-type CollectionViewConstructor = typings.tabris.mod.CollectionViewFactory
+type CanvasConstructor = CanvasFactory
 
-type ColorArray = (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double])
+type CheckBoxConstructor = CheckBoxFactory
+
+type CollectionViewConstructor = CollectionViewFactory
+
+type ColorArray = (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple3[Double, Double, Double])
 
 /* Rewritten from type alias, can be one of: 
   - typings.tabris.mod.ColorLikeObject
@@ -272,17 +320,15 @@ type ColorArray = (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Dou
   - typings.tabris.tabrisStrings.initial
   - scala.Null
 */
-type ColorValue = typings.tabris.mod._ColorValue | typings.tabris.mod.ColorArray | java.lang.String | scala.Null
+type ColorValue = _ColorValue | ColorArray | String | Null
 
-type CompositeConstructor = typings.tabris.mod.CompositeFactory
+type CompleteCb = js.Function0[Unit]
 
-type ConstraintArray = js.Tuple2[
-typings.tabris.mod.SiblingReferenceValue | typings.tabris.mod.PercentValue, 
-typings.tabris.mod.Offset]
+type CompositeConstructor = CompositeFactory
 
-type ConstraintArrayValue = js.Tuple2[
-typings.tabris.mod.SiblingReference | typings.tabris.mod.PercentValue, 
-typings.tabris.mod.Offset]
+type ConstraintArray = js.Tuple2[SiblingReferenceValue | PercentValue, Offset]
+
+type ConstraintArrayValue = js.Tuple2[SiblingReference | PercentValue, Offset]
 
 /* Rewritten from type alias, can be one of: 
   - typings.tabris.mod.Constraint
@@ -293,26 +339,33 @@ typings.tabris.mod.Offset]
   - typings.tabris.mod.SiblingReferenceValue
   - typings.tabris.tabrisBooleans.`true`
 */
-type ConstraintValue = typings.tabris.mod._ConstraintValue | typings.tabris.mod.ConstraintArrayValue | typings.tabris.mod.Offset | typings.tabris.mod.PercentValue | typings.tabris.mod.SiblingReferenceValue
+type ConstraintValue = _ConstraintValue | ConstraintArrayValue | Offset | PercentValue | SiblingReferenceValue
 
+// Crypto
+/**
+  * The global `crypto` object provides an implementation of the `RandomSource` interface that can be
+  * used to generate cryptographically secure random numbers.
+  */
 /* was `typeof Crypto` */
-type CryptoConstructor = typings.tabris.Crypto
+type CryptoConstructor = Crypto
 
-type Dimension = scala.Double
+type Dimension = Double
 
-type EventOfListeners[T /* <: typings.tabris.mod.Listeners[js.Any] */] = js.Any
+type ErrorCb = js.Function1[/* value */ Any, Unit]
 
-type ExtendedEvent[EventData, Target] = typings.tabris.mod.EventObject[Target] & EventData
+type EventOfListeners[T /* <: Listeners[Any] */] = Any
 
-type Factory[OriginalConstructor /* <: typings.tabris.mod.Constructor[typings.tabris.mod.JSXCandidate] & js.Object */, Instance /* <: typings.tabris.mod.JSXCandidate */, Selector /* <: js.Function */] = js.Function2[
-/* attributes */ js.UndefOr[typings.tabris.mod.Attributes[Instance]], 
+type ExtendedEvent[EventData, Target] = EventObject[Target] & EventData
+
+type Factory[OriginalConstructor /* <: Constructor[JSXCandidate] & js.Object */, Instance /* <: JSXCandidate */, Selector /* <: js.Function */] = js.Function2[
+/* attributes */ js.UndefOr[Attributes[Instance, Any]], 
 /* selector */ js.UndefOr[Selector], 
 Instance]
 
 type Flatten[T] = js.UndefOr[T | js.Array[T]]
 
 // This type needs to be less strict than FontLikeObject to satisfy tsc when using FontResources.from with JSON
-type FontResourceValue = typings.tabris.anon.Family | java.lang.String
+type FontResourceValue = Family | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.tabris.mod.FontLikeObject
@@ -320,7 +373,7 @@ type FontResourceValue = typings.tabris.anon.Family | java.lang.String
   - typings.tabris.tabrisStrings.initial
   - scala.Null
 */
-type FontValue = typings.tabris.mod._FontValue | java.lang.String | scala.Null
+type FontValue = _FontValue | String | Null
 
 // Headers
 /**
@@ -336,23 +389,39 @@ type HeadersConstructor = typings.tabris.Headers
 type ImageDataConstructor = typings.tabris.ImageData
 
 /* Rewritten from type alias, can be one of: 
-  - typings.tabris.mod.ImageLikeObject
-  - typings.tabris.mod.Image
   - java.lang.String
   - typings.tabris.mod.ImageBitmap
   - typings.tabris.Blob
+*/
+type ImageSource = _ImageSource | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.tabris.mod.ImageLikeObject
+  - typings.tabris.mod.Image
+  - typings.tabris.mod.ImageSource
   - scala.Null
 */
-type ImageValue = typings.tabris.mod._ImageValue | java.lang.String | scala.Null
+type ImageValue = _ImageValue | Null | String
 
-type ImageViewConstructor = typings.tabris.mod.ImageViewFactory
+type ImageViewConstructor = ImageViewFactory
 
-type JSXAttributes[T /* <: typings.tabris.mod.JSXCandidate */, U] = (typings.tabris.mod.Properties[U, typings.tabris.mod.Omit[U, typings.tabris.tabrisStrings.set]]) & typings.tabris.mod.ListenersMap[U] & typings.tabris.mod.JSXShorthands[U]
+type JSXAttributes[T /* <: JSXCandidate */, U] = (Properties[U, Omit[U, set]]) & ListenersMap[U] & JSXShorthands[U]
 
-type JSXChildren[T /* <: typings.tabris.mod.Widget */] = js.UndefOr[
-T | typings.tabris.mod.WidgetCollection[T] | (js.Array[T | typings.tabris.mod.WidgetCollection[T]])]
+/* Rewritten from type alias, can be one of: 
+  - T
+  - typings.tabris.mod.WidgetCollection[T]
+  - js.Array[T | typings.tabris.mod.WidgetCollection[T]]
+  - typings.tabris.anon.Cid
+  - scala.Unit
+*/
+type JSXChildren[T /* <: Widget[Any] */] = js.UndefOr[_JSXChildren[T] | (js.Array[T | WidgetCollection[T]]) | T]
 
-type JSXShorthands[T] = js.Object | typings.tabris.anon.Center
+type JSXCompositeAttributes[T /* <: typings.tabris.mod.Composite[Widget[Any]] */, U /* <: Widget[Any] */] = (JSXAttributes[T, Omit[T, set | jsxAttributes]]) & (typings.tabris.anon.Apply[T, U])
+
+// Tabris.js Helper Types
+type JSXDefaultChildren = Flatten[String | (Cid & js.Object)]
+
+type JSXShorthands[T] = js.Object | Center
 
 /* Rewritten from type alias, can be one of: 
   - typings.tabris.mod.LinearGradientLikeObject
@@ -360,65 +429,68 @@ type JSXShorthands[T] = js.Object | typings.tabris.anon.Center
   - typings.tabris.tabrisStrings.initial
   - scala.Null
 */
-type LinearGradientValue = typings.tabris.mod._LinearGradientValue | java.lang.String | scala.Null
+type LinearGradientValue = _LinearGradientValue | String | Null
 
-type Listener[T] = js.Function1[/* ev */ typings.tabris.mod.ExtendedEvent[T, js.Object], js.Any]
+type Listener[T] = js.Function1[/* ev */ ExtendedEvent[T, js.Object], Any]
 
 // prevent empty object type as possible result, would allow any object
 type ListenersKeysOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends tabris.tabris.Listeners<any>? K : never}[keyof T] */ js.Any
 
 type ListenersMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ Key in tabris.tabris.ListenersKeysOf<T> ]:? tabris.tabris.UnpackListeners<T[Key]>}
-  */ typings.tabris.tabrisStrings.ListenersMap & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.tabris.tabrisStrings.ListenersMap & TopLevel[T]
 
-type ListenersTriggerParam[T] = typings.tabris.mod.Omit[
+type ListenersTriggerParam[T] = Omit[
 T, 
-/* keyof tabris.tabris.EventObject<any> */ typings.tabris.tabrisStrings.constructor | typings.tabris.tabrisStrings.target | typings.tabris.tabrisStrings.timeStamp | typings.tabris.tabrisStrings.`type`]
+/* keyof tabris.tabris.EventObject<any> */ constructor | target | timeStamp | `type`]
 
 type MethodKeysOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? K : never}[keyof T] */ js.Any
 
 type ModuleLoader = js.Function5[
-/* module */ typings.tabris.mod.Module, 
+/* module */ Module, 
 /* exports */ js.Object, 
-/* require */ js.Function1[/* fn */ java.lang.String, js.Object], 
-/* __filename */ java.lang.String, 
-/* __dirname */ java.lang.String, 
-scala.Unit]
+/* require */ js.Function1[/* fn */ String, js.Object], 
+/* __filename */ String, 
+/* __dirname */ String, 
+Unit]
 
-type NamedResources[ResourceType, Keys /* <: java.lang.String | js.Symbol | scala.Double */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+type NamedResources[ResourceType, Keys /* <: String | js.Symbol | Double */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ T in std.Exclude<Keys, tabris.tabris.ReservedResourceKeys> ]: ResourceType}
-  */ typings.tabris.tabrisStrings.NamedResources & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.tabris.tabrisStrings.NamedResources & TopLevel[Any]
 
-type NavigationViewConstructor = typings.tabris.mod.NavigationViewFactory
+type NavigationViewConstructor = NavigationViewFactory
 
-type NextString = typings.tabris.tabrisStrings.nextLeftparenthesisRightparenthesis
+type NextCb[T] = js.Function1[/* value */ T, Unit]
 
-type Offset = scala.Double
+type NextString = nextLeftparenthesisRightparenthesis
 
-type Omit[T, K /* <: java.lang.String | js.Symbol | scala.Double */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+type ObservableDataConstructor = ObservableDataFactory
 
-type PageConstructor = typings.tabris.mod.PageFactory
+type Offset = Double
 
-type PdfViewConstructor = typings.tabris.mod.PdfViewFactory
+type Omit[T, K /* <: String | js.Symbol | Double */] = Pick[T, Exclude[/* keyof T */ String, K]]
 
-type PercentValue = java.lang.String | typings.tabris.mod.PercentLikeObject
+type PageConstructor = PageFactory
 
-type PickerConstructor = typings.tabris.mod.PickerFactory
+type PdfViewConstructor = PdfViewFactory
 
-type PrevString = typings.tabris.tabrisStrings.prevLeftparenthesisRightparenthesis
+type PercentString = String
 
-type ProgressBarConstructor = typings.tabris.mod.ProgressBarFactory
+type PercentValue = PercentString | PercentLikeObject
 
-type Properties[T /* <: typings.tabris.anon.Set */, U] = (typings.std.Partial[
-typings.tabris.mod.Omit[U, typings.tabris.mod.MethodKeysOf[U] | typings.tabris.mod.ReadOnlyWidgetKeys[U]]]) & typings.tabris.anon.Cid
+type PickerConstructor = PickerFactory
 
-type RadioButtonConstructor = typings.tabris.mod.RadioButtonFactory
+type PrevString = prevLeftparenthesisRightparenthesis
 
-type ReadOnlyWidgetKeys[T] = typings.std.Extract[
-/* keyof T */ java.lang.String, 
-typings.tabris.tabrisStrings.bounds | typings.tabris.tabrisStrings.absoluteBounds | typings.tabris.tabrisStrings.cid | typings.tabris.tabrisStrings.jsxAttributes]
+type ProgressBarConstructor = ProgressBarFactory
 
-type RefreshCompositeConstructor = typings.tabris.mod.RefreshCompositeFactory
+type Properties[T /* <: typings.tabris.anon.Set */, U] = (Partial[Omit[U, MethodKeysOf[U] | ReadOnlyWidgetKeys[U]]]) & Data
+
+type RadioButtonConstructor = RadioButtonFactory
+
+type ReadOnlyWidgetKeys[T] = Extract[/* keyof T */ String, bounds | absoluteBounds | cid | jsxAttributes]
+
+type RefreshCompositeConstructor = RefreshCompositeFactory
 
 // Request
 /**
@@ -443,11 +515,11 @@ type RequestConstructor = typings.tabris.Request
   - js.Symbol
   - scala.Double
 */
-type ReservedResourceKeys = typings.tabris.mod._ReservedResourceKeys | js.Symbol | scala.Double
+type ReservedResourceKeys = _ReservedResourceKeys | js.Symbol | Double
 
-type ResourceDataWithConfig[RawType] = typings.tabris.mod.NeverResources & typings.tabris.mod.Selectable[RawType] & typings.tabris.mod.ResourceInlineConfig
+type ResourceDataWithConfig[RawType] = NeverResources & Selectable[RawType] & ResourceInlineConfig
 
-type ResourceRawData[RawType] = typings.tabris.mod.NeverResources & typings.tabris.mod.Selectable[RawType] & js.Object
+type ResourceRawData[RawType] = NeverResources & Selectable[RawType] & js.Object
 
 // Response
 /**
@@ -456,44 +528,52 @@ type ResourceRawData[RawType] = typings.tabris.mod.NeverResources & typings.tabr
 /* was `typeof Response` */
 type ResponseConstructor = typings.tabris.Response
 
-type RowConstructor = typings.tabris.mod.RowFactory
+type RowConstructor = RowFactory
 
-type SFC[T] = js.Function2[/* attributes */ js.Object | scala.Null, /* children */ js.Array[js.Any], T]
+type RuleSet[Target] = RuleSetStatic | RuleSetCallback[Target] | Null
 
-type ScrollViewConstructor = typings.tabris.mod.ScrollViewFactory
+type RuleSetCallback[Target] = (js.Function1[/* widget */ Target, RuleSetStatic]) | Null
 
-type SearchActionConstructor = typings.tabris.mod.SearchActionFactory
+type RuleSetObject = StringDictionary[Any]
+
+type RuleSetStatic = RuleSetObject | js.Array[RuleSetObject]
+
+type SFC[T] = js.Function2[/* attributes */ js.Object | Null, /* children */ js.Array[Any], T]
+
+type ScrollViewConstructor = ScrollViewFactory
+
+type SearchActionConstructor = SearchActionFactory
 
 /* Rewritten from type alias, can be one of: 
   - T
-  - org.scalablytyped.runtime.StringDictionary[
-/ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias tabris.tabris.Selectable<T> * / js.Object]
+  - org.scalablytyped.runtime.StringDictionary[scala.Any]
   - scala.Unit
   - typings.tabris.anon.Inherit
   - typings.tabris.anon.Ref
 */
-type Selectable[T] = js.UndefOr[
-typings.tabris.mod._Selectable[T] | (org.scalablytyped.runtime.StringDictionary[
-  /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias tabris.tabris.Selectable<T> */ js.Object
-]) | T]
+type Selectable[T] = js.UndefOr[_Selectable[T] | StringDictionary[Any] | T]
 
-type Selector[Candidate /* <: typings.tabris.mod.Widget */, Result /* <: Candidate */] = typings.tabris.mod.SelectorString | typings.tabris.mod.SelectorFunction[Candidate] | typings.tabris.mod.Constructor[Result] | typings.tabris.mod.SFC[Result]
+type Selector[Candidate /* <: Widget[Any] */, Result /* <: Candidate */] = SelectorString | SelectorFunction[Candidate] | Constructor[Result] | SFC[Result]
 
-type SelectorFunction[Candidate /* <: typings.tabris.mod.Widget */] = js.Function3[
+type SelectorFunction[Candidate /* <: Widget[Any] */] = js.Function3[
 /* widget */ Candidate, 
-/* index */ scala.Double, 
-/* collection */ typings.tabris.mod.WidgetCollection[Candidate], 
-scala.Boolean]
+/* index */ Double, 
+/* collection */ WidgetCollection[Candidate], 
+Boolean]
 
-type SelectorString = java.lang.String
+type SelectorString = String
 
-type SiblingReference = typings.tabris.mod.Widget | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LayoutData.next */ js.Any) | typings.tabris.mod.SelectorString
+type SiblingReference = Widget[Any] | SiblingReferenceSymbol | SiblingSelectorString
 
-type SiblingReferenceValue = typings.tabris.mod.Widget | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LayoutData.next */ js.Any) | typings.tabris.mod.SelectorString
+type SiblingReferenceSymbol = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LayoutData.next */ Any
 
-type SliderConstructor = typings.tabris.mod.SliderFactory
+type SiblingReferenceValue = Widget[Any] | SiblingReferenceSymbol | SiblingSelectorString
 
-type StackConstructor = typings.tabris.mod.StackFactory
+type SiblingSelectorString = String
+
+type SliderConstructor = SliderFactory
+
+type StackConstructor = StackFactory
 
 // Storage
 /**
@@ -509,22 +589,26 @@ type StackConstructor = typings.tabris.mod.StackFactory
 /* was `typeof Storage` */
 type StorageConstructor = typings.tabris.Storage
 
-type SwitchConstructor = typings.tabris.mod.SwitchFactory
+type SubscriptionHandler[T] = js.ThisFunction1[/* this */ Observable[T], /* subscriber */ Subscriber[T], TeardownLogic]
 
-type TabConstructor = typings.tabris.mod.TabFactory
+type SwitchConstructor = SwitchFactory
 
-type TabFolderConstructor = typings.tabris.mod.TabFolderFactory
+type TabConstructor = TabFactory
 
-type TargetType[E /* <: js.Object */] = js.Any
+type TabFolderConstructor = TabFolderFactory
 
-type TextInputConstructor = typings.tabris.mod.TextInputFactory
+type TargetType[E /* <: js.Object */] = Any
 
-type TextViewConstructor = typings.tabris.mod.TextViewFactory
+type TeardownLogic = js.Function | Unsubscribe | Unit
 
-type ToggleButtonConstructor = typings.tabris.mod.ToggleButtonFactory
+type TextInputConstructor = TextInputFactory
 
-type UnpackListeners[T] = T | typings.tabris.mod.Listener[js.Any]
+type TextViewConstructor = TextViewFactory
 
-type VideoConstructor = typings.tabris.mod.VideoFactory
+type ToggleButtonConstructor = ToggleButtonFactory
 
-type WebViewConstructor = typings.tabris.mod.WebViewFactory
+type UnpackListeners[T] = T | Listener[Any]
+
+type VideoConstructor = VideoFactory
+
+type WebViewConstructor = WebViewFactory

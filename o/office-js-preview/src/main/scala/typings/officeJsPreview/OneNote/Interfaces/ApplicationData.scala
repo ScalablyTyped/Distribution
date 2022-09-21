@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "application.toJSON()". */
+/** An interface describing the data returned by calling `application.toJSON()`. */
 trait ApplicationData extends StObject {
   
   /**
+    * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance. Read-only.
     *
-    * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote on the web, only one notebook at a time is open in the application instance. Read-only.
-    *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var notebooks: js.UndefOr[js.Array[NotebookData]] = js.undefined
@@ -28,6 +28,6 @@ object ApplicationData {
     
     inline def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
     
-    inline def setNotebooksVarargs(value: NotebookData*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
+    inline def setNotebooksVarargs(value: NotebookData*): Self = StObject.set(x, "notebooks", js.Array(value*))
   }
 }

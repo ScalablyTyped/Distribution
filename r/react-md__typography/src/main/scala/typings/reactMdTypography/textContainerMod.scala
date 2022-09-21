@@ -17,11 +17,7 @@ object textContainerMod {
   
   @JSImport("@react-md/typography/types/TextContainer", "TextContainer")
   @js.native
-  val TextContainer: ForwardRefExoticComponent[
-    TextContainerProps & (RefAttributes[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ js.Any
-    ])
-  ] = js.native
+  val TextContainer: ForwardRefExoticComponent[TextContainerProps & (RefAttributes[HTMLDivElement | ElementType[Any]])] = js.native
   
   trait TextContainerProps
     extends StObject
@@ -49,7 +45,7 @@ object textContainerMod {
       * The component to render as. By default this will just be a div, but
       * anything can be provided.
       */
-    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var component: js.UndefOr[ElementType[Any]] = js.undefined
     
     /**
       * The size for the text container. This can usually just be left at the
@@ -78,7 +74,7 @@ object textContainerMod {
       
       inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       

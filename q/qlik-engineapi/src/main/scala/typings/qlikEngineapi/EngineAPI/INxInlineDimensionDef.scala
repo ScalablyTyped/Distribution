@@ -52,7 +52,7 @@ trait INxInlineDimensionDef extends StObject {
     * >>This parameter is optional.
     * Default is to sort by alphabetical order, ascending.
     */
-  var qSortCriterias: js.UndefOr[ISortCriteria] = js.undefined
+  var qSortCriterias: js.UndefOr[js.Array[ISortCriteria]] = js.undefined
 }
 object INxInlineDimensionDef {
   
@@ -71,13 +71,13 @@ object INxInlineDimensionDef {
     
     inline def setQFieldDefsUndefined: Self = StObject.set(x, "qFieldDefs", js.undefined)
     
-    inline def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
+    inline def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value*))
     
     inline def setQFieldLabels(value: js.Array[String]): Self = StObject.set(x, "qFieldLabels", value.asInstanceOf[js.Any])
     
     inline def setQFieldLabelsUndefined: Self = StObject.set(x, "qFieldLabels", js.undefined)
     
-    inline def setQFieldLabelsVarargs(value: String*): Self = StObject.set(x, "qFieldLabels", js.Array(value :_*))
+    inline def setQFieldLabelsVarargs(value: String*): Self = StObject.set(x, "qFieldLabels", js.Array(value*))
     
     inline def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
@@ -87,14 +87,16 @@ object INxInlineDimensionDef {
     
     inline def setQNumberPresentationsUndefined: Self = StObject.set(x, "qNumberPresentations", js.undefined)
     
-    inline def setQNumberPresentationsVarargs(value: IFieldAttributes*): Self = StObject.set(x, "qNumberPresentations", js.Array(value :_*))
+    inline def setQNumberPresentationsVarargs(value: IFieldAttributes*): Self = StObject.set(x, "qNumberPresentations", js.Array(value*))
     
     inline def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
     
     inline def setQReverseSortUndefined: Self = StObject.set(x, "qReverseSort", js.undefined)
     
-    inline def setQSortCriterias(value: ISortCriteria): Self = StObject.set(x, "qSortCriterias", value.asInstanceOf[js.Any])
+    inline def setQSortCriterias(value: js.Array[ISortCriteria]): Self = StObject.set(x, "qSortCriterias", value.asInstanceOf[js.Any])
     
     inline def setQSortCriteriasUndefined: Self = StObject.set(x, "qSortCriterias", js.undefined)
+    
+    inline def setQSortCriteriasVarargs(value: ISortCriteria*): Self = StObject.set(x, "qSortCriterias", js.Array(value*))
   }
 }

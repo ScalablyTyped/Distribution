@@ -12,7 +12,7 @@ trait ListMonitoringSchedulesResponse extends StObject {
   var MonitoringScheduleSummaries: MonitoringScheduleSummaryList
   
   /**
-    * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of jobs, use it in the subsequent reques
+    * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of jobs, use it in the subsequent request.
     */
   var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
@@ -27,7 +27,7 @@ object ListMonitoringSchedulesResponse {
     
     inline def setMonitoringScheduleSummaries(value: MonitoringScheduleSummaryList): Self = StObject.set(x, "MonitoringScheduleSummaries", value.asInstanceOf[js.Any])
     
-    inline def setMonitoringScheduleSummariesVarargs(value: MonitoringScheduleSummary*): Self = StObject.set(x, "MonitoringScheduleSummaries", js.Array(value :_*))
+    inline def setMonitoringScheduleSummariesVarargs(value: MonitoringScheduleSummary*): Self = StObject.set(x, "MonitoringScheduleSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

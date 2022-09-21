@@ -11,46 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SingularData extends StObject {
   
   /**
-    * Get a particular data field for the element.
-    * @param name The name of the field to get.
-    */
-  def attr(): js.Any = js.native
-  def attr(name: String): js.Any = js.native
-  /**
-    * Set a particular data field for the element.
-    * @param name The name of the field to set.
-    * @param value The value to set for the field.
-    */
-  def attr(name: String, value: js.Any): this.type = js.native
-  /**
-    * Update multiple data fields at once via an object.
-    * @param obj The object containing name- value pairs to update data fields.
-    */
-  def attr(obj: js.Any): this.type = js.native
-  
-  /**
-    * Read and write developer-defined data associated with the elements
-    * http://js.cytoscape.org/#eles.data
-    */
-  /**
-    * Get a particular data field for the element.
-    * @param name The name of the field to get.
-    */
-  def data(): js.Any = js.native
-  def data(name: String): js.Any = js.native
-  /**
-    * Set a particular data field for the element.
-    * @param name The name of the field to set.
-    * @param value The value to set for the field.
-    */
-  def data(name: String, value: js.Any): this.type = js.native
-  /**
-    * Update multiple data fields at once via an object.
-    * @param obj The object containing name- value pairs to update data fields.
-    */
-  def data(obj: js.Any): this.type = js.native
-  
-  /**
     * Get the group string that defines the type of the element.
     *
     * The group strings are 'nodes' for nodes and 'edges' for edges.
@@ -104,5 +64,5 @@ trait SingularData extends StObject {
     */
   def scratch(): Scratchpad = js.native
   def scratch(namespace: String): Scratchpad = js.native
-  def scratch(namespace: String, value: js.Any): this.type = js.native
+  def scratch(namespace: String, value: Any): this.type = js.native
 }

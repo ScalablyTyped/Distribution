@@ -10,10 +10,10 @@ Generate a fingerprint of a browser
 | ------------------ | :-------------: |
 | Full name          | browser-fingerprint |
 | Keywords           | browser, fingerprint |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3542689 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 292165.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/browser-fingerprint)

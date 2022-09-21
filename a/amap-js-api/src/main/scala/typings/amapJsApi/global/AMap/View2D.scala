@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 二维地图显示视口，用于定义二维地图静态显示属性
   * @param options 选项
   */
-class View2D ()
+open class View2D ()
   extends StObject
      with typings.amapJsApi.AMap.EventEmitter {
   def this(options: Options) = this()

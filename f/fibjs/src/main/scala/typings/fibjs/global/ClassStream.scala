@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_Stream")
 @js.native
-class ClassStream ()
+open class ClassStream ()
   extends StObject
      with typings.fibjs.ClassStream

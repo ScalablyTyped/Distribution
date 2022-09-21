@@ -32,7 +32,7 @@ object XDataPilotTablesSupplier {
     DataPilotTables: XDataPilotTables,
     acquire: () => Unit,
     getDataPilotTables: () => XDataPilotTables,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataPilotTablesSupplier = {
     val __obj = js.Dynamic.literal(DataPilotTables = DataPilotTables.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDataPilotTables = js.Any.fromFunction0(getDataPilotTables), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

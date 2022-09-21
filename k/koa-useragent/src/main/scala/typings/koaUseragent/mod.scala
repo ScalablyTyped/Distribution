@@ -12,11 +12,11 @@ object mod extends Shortcut {
   
   @JSImport("koa-useragent", JSImport.Default)
   @js.native
-  val default: Middleware[DefaultState, DefaultContext] = js.native
+  val default: Middleware[DefaultState, DefaultContext, Any] = js.native
   
   @JSImport("koa-useragent", "userAgent")
   @js.native
-  val userAgent: Middleware[DefaultState, DefaultContext] = js.native
+  val userAgent: Middleware[DefaultState, DefaultContext, Any] = js.native
   
   trait UserAgentContext extends StObject {
     
@@ -35,8 +35,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Middleware[DefaultState, DefaultContext]
+  type _To = Middleware[DefaultState, DefaultContext, Any]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Middleware[DefaultState, DefaultContext] = default
+  override def _to: Middleware[DefaultState, DefaultContext, Any] = default
 }

@@ -10,10 +10,10 @@ mobile dialog ui component for react
 | ------------------ | :-------------: |
 | Full name          | rmc-dialog |
 | Keywords           | react, m-dialog, react-component, react-dialog, dialog, mobile dialog, ui |
-| # releases         | 0 |
-| # dependents       | 60 |
-| # downloads        | 1153342 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 137661.0 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/m-dialog)

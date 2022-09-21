@@ -34,7 +34,7 @@ object DescribeEnvironmentHealthRequest {
     
     inline def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
-    inline def setAttributeNamesVarargs(value: EnvironmentHealthAttribute*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: EnvironmentHealthAttribute*): Self = StObject.set(x, "AttributeNames", js.Array(value*))
     
     inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     

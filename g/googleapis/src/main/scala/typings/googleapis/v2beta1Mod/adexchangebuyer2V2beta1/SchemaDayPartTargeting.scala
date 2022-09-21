@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specifies the day part targeting criteria.
-  */
 trait SchemaDayPartTargeting extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaDayPartTargeting extends StObject {
   /**
     * The timezone to use for interpreting the day part targeting.
     */
-  var timeZoneType: js.UndefOr[String] = js.undefined
+  var timeZoneType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDayPartTargeting {
   
@@ -32,9 +29,11 @@ object SchemaDayPartTargeting {
     
     inline def setDayPartsUndefined: Self = StObject.set(x, "dayParts", js.undefined)
     
-    inline def setDayPartsVarargs(value: SchemaDayPart*): Self = StObject.set(x, "dayParts", js.Array(value :_*))
+    inline def setDayPartsVarargs(value: SchemaDayPart*): Self = StObject.set(x, "dayParts", js.Array(value*))
     
     inline def setTimeZoneType(value: String): Self = StObject.set(x, "timeZoneType", value.asInstanceOf[js.Any])
+    
+    inline def setTimeZoneTypeNull: Self = StObject.set(x, "timeZoneType", null)
     
     inline def setTimeZoneTypeUndefined: Self = StObject.set(x, "timeZoneType", js.undefined)
   }

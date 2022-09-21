@@ -29,5 +29,5 @@ abstract class AppointmentStoreChangeReader ()
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
   /* CompleteClass */
-  override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
 }

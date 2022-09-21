@@ -97,11 +97,11 @@ object anon {
     
     var faces: js.Array[Face3]
     
-    var vertices: js.Array[js.Any]
+    var vertices: js.Array[Any]
   }
   object Faces {
     
-    inline def apply(faces: js.Array[Face3], vertices: js.Array[js.Any]): Faces = {
+    inline def apply(faces: js.Array[Face3], vertices: js.Array[Any]): Faces = {
       val __obj = js.Dynamic.literal(faces = faces.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
       __obj.asInstanceOf[Faces]
     }
@@ -110,11 +110,11 @@ object anon {
       
       inline def setFaces(value: js.Array[Face3]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
-      inline def setFacesVarargs(value: Face3*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: Face3*): Self = StObject.set(x, "faces", js.Array(value*))
       
-      inline def setVertices(value: js.Array[js.Any]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+      inline def setVertices(value: js.Array[Any]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      inline def setVerticesVarargs(value: js.Any*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: Any*): Self = StObject.set(x, "vertices", js.Array(value*))
     }
   }
   
@@ -147,22 +147,22 @@ object anon {
   
   trait X extends StObject {
     
-    var x: js.Any
+    var x: Any
     
-    var y: js.Any
+    var y: Any
   }
   object X {
     
-    inline def apply(x: js.Any, y: js.Any): X = {
+    inline def apply(x: Any, y: Any): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
     extension [Self <: X](x: Self) {
       
-      inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

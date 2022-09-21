@@ -33,13 +33,13 @@ trait Ap extends StObject {
 object Ap {
   
   inline def apply(
-    ap: (typings.kefir.mod.Observable[js.Function1[js.Any, js.Any], js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any | js.Any],
-    bimap: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any],
-    chain: (js.Function1[js.Any, typings.kefir.mod.Observable[js.Any, js.Any]], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any | js.Any],
-    concat: (typings.kefir.mod.Observable[js.Any, js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any | js.Any, js.Any | js.Any],
+    ap: (typings.kefir.mod.Observable[js.Function1[Any, Any], Any], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any, Any | Any],
+    bimap: (js.Function1[Any, Any], js.Function1[Any, Any], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any, Any],
+    chain: (js.Function1[Any, typings.kefir.mod.Observable[Any, Any]], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any, Any | Any],
+    concat: (typings.kefir.mod.Observable[Any, Any], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any | Any, Any | Any],
     empty: () => typings.kefir.mod.Observable[scala.Nothing, scala.Nothing],
-    map: (js.Function1[js.Any, js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any],
-    of: js.Any => typings.kefir.mod.Observable[js.Any, scala.Nothing]
+    map: (js.Function1[Any, Any], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any, Any],
+    of: Any => typings.kefir.mod.Observable[Any, scala.Nothing]
   ): Ap = {
     val __obj = js.Dynamic.literal(ap = js.Any.fromFunction2(ap), bimap = js.Any.fromFunction3(bimap), chain = js.Any.fromFunction2(chain), concat = js.Any.fromFunction2(concat), empty = js.Any.fromFunction0(empty), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
     __obj.asInstanceOf[Ap]
@@ -48,27 +48,27 @@ object Ap {
   extension [Self <: Ap](x: Self) {
     
     inline def setAp(
-      value: (typings.kefir.mod.Observable[js.Function1[js.Any, js.Any], js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any | js.Any]
+      value: (typings.kefir.mod.Observable[js.Function1[Any, Any], Any], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any, Any | Any]
     ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     
     inline def setBimap(
-      value: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any]
+      value: (js.Function1[Any, Any], js.Function1[Any, Any], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any, Any]
     ): Self = StObject.set(x, "bimap", js.Any.fromFunction3(value))
     
     inline def setChain(
-      value: (js.Function1[js.Any, typings.kefir.mod.Observable[js.Any, js.Any]], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any | js.Any]
+      value: (js.Function1[Any, typings.kefir.mod.Observable[Any, Any]], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any, Any | Any]
     ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     
     inline def setConcat(
-      value: (typings.kefir.mod.Observable[js.Any, js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any | js.Any, js.Any | js.Any]
+      value: (typings.kefir.mod.Observable[Any, Any], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any | Any, Any | Any]
     ): Self = StObject.set(x, "concat", js.Any.fromFunction2(value))
     
     inline def setEmpty(value: () => typings.kefir.mod.Observable[scala.Nothing, scala.Nothing]): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
     
     inline def setMap(
-      value: (js.Function1[js.Any, js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any]
+      value: (js.Function1[Any, Any], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any, Any]
     ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    inline def setOf(value: js.Any => typings.kefir.mod.Observable[js.Any, scala.Nothing]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    inline def setOf(value: Any => typings.kefir.mod.Observable[Any, scala.Nothing]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
   }
 }

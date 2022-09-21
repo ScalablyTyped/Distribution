@@ -27,7 +27,7 @@ object XSelectionChangeListener {
   inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     selectionChanged: EventObject => Unit
   ): XSelectionChangeListener = {

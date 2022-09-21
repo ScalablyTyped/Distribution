@@ -34,7 +34,7 @@ object XRef {
     BaseTypeName: String,
     acquire: () => Unit,
     getBaseTypeName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XRef = {
     val __obj = js.Dynamic.literal(BaseTypeName = BaseTypeName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getBaseTypeName = js.Any.fromFunction0(getBaseTypeName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -2,25 +2,22 @@ package typings.rxjs
 
 import typings.rxjs.actionMod.Action
 import typings.rxjs.asyncSchedulerMod.AsyncScheduler
-import typings.rxjs.typesMod.SchedulerAction
+import typings.rxjs.internalTypesMod.SchedulerAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncActionMod {
   
-  @JSImport("rxjs/internal/scheduler/AsyncAction", "AsyncAction")
+  @JSImport("rxjs/dist/types/internal/scheduler/AsyncAction", "AsyncAction")
   @js.native
-  class AsyncAction[T] protected () extends Action[T] {
+  open class AsyncAction[T] protected () extends Action[T] {
     def this(
       scheduler: AsyncScheduler,
       work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit]
     ) = this()
     
-    /* protected */ def _execute(state: T, delay: Double): js.Any = js.native
-    
-    /** @deprecated This is an internal implementation detail, do not use. */
-    def _unsubscribe(): Unit = js.native
+    /* protected */ def _execute(state: T, _delay: Double): Any = js.native
     
     var delay: Double = js.native
     
@@ -28,23 +25,23 @@ object asyncActionMod {
       * Immediately executes this action and the `work` it contains.
       * @return {any}
       */
-    def execute(state: T, delay: Double): js.Any = js.native
+    def execute(state: T, delay: Double): Any = js.native
     
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /* protected */ var pending: Boolean = js.native
     
-    /* protected */ def recycleAsyncId(scheduler: AsyncScheduler, id: js.Any): js.Any = js.native
-    /* protected */ def recycleAsyncId(scheduler: AsyncScheduler, id: js.Any, delay: Double): js.Any = js.native
+    /* protected */ def recycleAsyncId(_scheduler: AsyncScheduler, id: Any): Any = js.native
+    /* protected */ def recycleAsyncId(_scheduler: AsyncScheduler, id: Any, delay: Double): Any = js.native
     
-    /* protected */ def requestAsyncId(scheduler: AsyncScheduler): js.Any = js.native
-    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.Any): js.Any = js.native
-    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.Any, delay: Double): js.Any = js.native
-    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: Unit, delay: Double): js.Any = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler): Any = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, _id: Any): Any = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, _id: Any, delay: Double): Any = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, _id: Unit, delay: Double): Any = js.native
     
     /* protected */ var scheduler: AsyncScheduler = js.native
     
-    var state: T = js.native
+    var state: js.UndefOr[T] = js.native
     
     /* protected */ def work(): Unit = js.native
     /* protected */ def work(state: T): Unit = js.native

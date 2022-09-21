@@ -8,14 +8,13 @@ import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.accountStateBlobPbMod.AccountStateWithProof
 import typings.libraCore.transactionPbMod.SignedTransactionWithProof
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberResponse")
 @js.native
-class GetAccountTransactionBySequenceNumberResponse () extends Message {
+open class GetAccountTransactionBySequenceNumberResponse () extends Message {
   
   def clearProofOfCurrentSequenceNumber(): Unit = js.native
   
@@ -42,7 +41,7 @@ object GetAccountTransactionBySequenceNumberResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): GetAccountTransactionBySequenceNumberResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetAccountTransactionBySequenceNumberResponse]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): GetAccountTransactionBySequenceNumberResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetAccountTransactionBySequenceNumberResponse]
   
   inline def deserializeBinaryFromReader(message: GetAccountTransactionBySequenceNumberResponse, reader: BinaryReader): GetAccountTransactionBySequenceNumberResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetAccountTransactionBySequenceNumberResponse]
   

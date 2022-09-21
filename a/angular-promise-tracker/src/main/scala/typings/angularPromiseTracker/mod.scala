@@ -27,7 +27,7 @@ object mod {
       
       inline def setTrackerUndefined: Self = StObject.set(x, "tracker", js.undefined)
       
-      inline def setTrackerVarargs(value: PromiseTracker*): Self = StObject.set(x, "tracker", js.Array(value :_*))
+      inline def setTrackerVarargs(value: PromiseTracker*): Self = StObject.set(x, "tracker", js.Array(value*))
     }
   }
   
@@ -51,7 +51,7 @@ object mod {
       
       inline def apply(
         active: () => Boolean,
-        addPromise: IPromise[js.Any] => IDeferred[Unit],
+        addPromise: IPromise[Any] => IDeferred[Unit],
         cancel: () => Unit,
         createPromise: () => IDeferred[Unit],
         tracking: () => Boolean,
@@ -65,7 +65,7 @@ object mod {
         
         inline def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
         
-        inline def setAddPromise(value: IPromise[js.Any] => IDeferred[Unit]): Self = StObject.set(x, "addPromise", js.Any.fromFunction1(value))
+        inline def setAddPromise(value: IPromise[Any] => IDeferred[Unit]): Self = StObject.set(x, "addPromise", js.Any.fromFunction1(value))
         
         inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
         

@@ -1,7 +1,6 @@
 package typings.awsSdkRoute53IdNormalizerMiddleware
 
 import typings.awsSdkRoute53IdNormalizerMiddleware.mod.Change
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,18 +28,18 @@ object anon {
   
   trait Changes extends StObject {
     
-    var Changes: Iterable[Change]
+    var Changes: js.Iterable[Change]
   }
   object Changes {
     
-    inline def apply(Changes: Iterable[Change]): Changes = {
+    inline def apply(Changes: js.Iterable[Change]): Changes = {
       val __obj = js.Dynamic.literal(Changes = Changes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Changes]
     }
     
     extension [Self <: Changes](x: Self) {
       
-      inline def setChanges(value: Iterable[Change]): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
+      inline def setChanges(value: js.Iterable[Change]): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
     }
   }
   

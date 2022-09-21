@@ -12,18 +12,18 @@ object buttonGridBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/ButtonGrid/ButtonGrid.base", "ButtonGridBase")
   @js.native
-  class ButtonGridBase protected ()
-    extends Component[IButtonGridProps, js.Object, js.Any]
+  open class ButtonGridBase protected ()
+    extends Component[IButtonGridProps, js.Object, Any]
        with IButtonGrid {
     def this(props: IButtonGridProps) = this()
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("office-ui-fabric-react/lib/utilities/ButtonGrid/ButtonGrid.base", "GridBase")
   @js.native
-  class GridBase protected () extends ButtonGridBase {
+  open class GridBase protected () extends ButtonGridBase {
     def this(props: IButtonGridProps) = this()
   }
   @JSImport("office-ui-fabric-react/lib/utilities/ButtonGrid/ButtonGrid.base", "GridBase")

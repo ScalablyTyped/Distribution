@@ -1,132 +1,108 @@
 package typings.fflate.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.fflate.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def compress(data: typings.std.Uint8Array, cb: typings.fflate.mod.FlateCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compress")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
-inline def compress(
-  data: typings.std.Uint8Array,
-  opts: typings.fflate.mod.AsyncGzipOptions,
-  cb: typings.fflate.mod.FlateCallback
-): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compress")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def compress(data: js.typedarray.Uint8Array, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def compress(data: js.typedarray.Uint8Array, opts: AsyncGzipOptions, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def compressSync(data: typings.std.Uint8Array): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def compressSync(data: typings.std.Uint8Array, opts: typings.fflate.mod.GzipOptions): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def compressSync(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def compressSync(data: js.typedarray.Uint8Array, opts: GzipOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
-inline def decompress(data: typings.std.Uint8Array, cb: typings.fflate.mod.FlateCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
-inline def decompress(
-  data: typings.std.Uint8Array,
-  opts: typings.fflate.mod.AsyncInflateOptions,
-  cb: typings.fflate.mod.FlateCallback
-): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def decompress(data: js.typedarray.Uint8Array, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def decompress(data: js.typedarray.Uint8Array, opts: AsyncInflateOptions, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def decompressSync(data: typings.std.Uint8Array): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decompressSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def decompressSync(data: typings.std.Uint8Array, out: typings.std.Uint8Array): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decompressSync")(data.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def decompressSync(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressSync")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def decompressSync(data: js.typedarray.Uint8Array, out: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decompressSync")(data.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
-inline def deflate(data: typings.std.Uint8Array, cb: typings.fflate.mod.FlateCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
-inline def deflate(
-  data: typings.std.Uint8Array,
-  opts: typings.fflate.mod.AsyncDeflateOptions,
-  cb: typings.fflate.mod.FlateCallback
-): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def deflate(data: js.typedarray.Uint8Array, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def deflate(data: js.typedarray.Uint8Array, opts: AsyncDeflateOptions, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def deflateSync(data: typings.std.Uint8Array): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def deflateSync(data: typings.std.Uint8Array, opts: typings.fflate.mod.DeflateOptions): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def deflateSync(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def deflateSync(data: js.typedarray.Uint8Array, opts: DeflateOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
-inline def gunzip(data: typings.std.Uint8Array, cb: typings.fflate.mod.FlateCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gunzip")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
-inline def gunzip(
-  data: typings.std.Uint8Array,
-  opts: typings.fflate.mod.AsyncGunzipOptions,
-  cb: typings.fflate.mod.FlateCallback
-): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gunzip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def gunzip(data: js.typedarray.Uint8Array, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("gunzip")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def gunzip(data: js.typedarray.Uint8Array, opts: AsyncGunzipOptions, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("gunzip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def gunzipSync(data: typings.std.Uint8Array): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gunzipSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def gunzipSync(data: typings.std.Uint8Array, out: typings.std.Uint8Array): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gunzipSync")(data.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def gunzipSync(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("gunzipSync")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def gunzipSync(data: js.typedarray.Uint8Array, out: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("gunzipSync")(data.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
-inline def gzip(data: typings.std.Uint8Array, cb: typings.fflate.mod.FlateCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
-inline def gzip(
-  data: typings.std.Uint8Array,
-  opts: typings.fflate.mod.AsyncGzipOptions,
-  cb: typings.fflate.mod.FlateCallback
-): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def gzip(data: js.typedarray.Uint8Array, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def gzip(data: js.typedarray.Uint8Array, opts: AsyncGzipOptions, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def gzipSync(data: typings.std.Uint8Array): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def gzipSync(data: typings.std.Uint8Array, opts: typings.fflate.mod.GzipOptions): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def gzipSync(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def gzipSync(data: js.typedarray.Uint8Array, opts: GzipOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
-inline def inflate(data: typings.std.Uint8Array, cb: typings.fflate.mod.FlateCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
-inline def inflate(
-  data: typings.std.Uint8Array,
-  opts: typings.fflate.mod.AsyncInflateOptions,
-  cb: typings.fflate.mod.FlateCallback
-): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def inflate(data: js.typedarray.Uint8Array, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def inflate(data: js.typedarray.Uint8Array, opts: AsyncInflateOptions, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def inflateSync(data: typings.std.Uint8Array): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inflateSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def inflateSync(data: typings.std.Uint8Array, out: typings.std.Uint8Array): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inflateSync")(data.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def inflateSync(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("inflateSync")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def inflateSync(data: js.typedarray.Uint8Array, out: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("inflateSync")(data.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
-inline def strFromU8(dat: typings.std.Uint8Array): java.lang.String = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("strFromU8")(dat.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def strFromU8(dat: typings.std.Uint8Array, latin1: scala.Boolean): java.lang.String = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("strFromU8")(dat.asInstanceOf[js.Any], latin1.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def strFromU8(dat: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strFromU8")(dat.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def strFromU8(dat: js.typedarray.Uint8Array, latin1: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strFromU8")(dat.asInstanceOf[js.Any], latin1.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def strToU8(str: java.lang.String): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("strToU8")(str.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def strToU8(str: java.lang.String, latin1: scala.Boolean): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("strToU8")(str.asInstanceOf[js.Any], latin1.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def strToU8(str: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("strToU8")(str.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def strToU8(str: String, latin1: Boolean): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("strToU8")(str.asInstanceOf[js.Any], latin1.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
-inline def unzip(data: typings.std.Uint8Array, cb: typings.fflate.mod.UnzipCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def unzip(data: js.typedarray.Uint8Array, cb: UnzipCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def unzip(data: js.typedarray.Uint8Array, opts: AsyncUnzipOptions, cb: UnzipCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def unzipSync(data: typings.std.Uint8Array): typings.fflate.mod.Unzipped = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unzipSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.fflate.mod.Unzipped]
+inline def unzipSync(data: js.typedarray.Uint8Array): Unzipped = ^.asInstanceOf[js.Dynamic].applyDynamic("unzipSync")(data.asInstanceOf[js.Any]).asInstanceOf[Unzipped]
+inline def unzipSync(data: js.typedarray.Uint8Array, opts: UnzipOptions): Unzipped = (^.asInstanceOf[js.Dynamic].applyDynamic("unzipSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unzipped]
 
-inline def unzlib(data: typings.std.Uint8Array, cb: typings.fflate.mod.FlateCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unzlib")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
-inline def unzlib(
-  data: typings.std.Uint8Array,
-  opts: typings.fflate.mod.AsyncGunzipOptions,
-  cb: typings.fflate.mod.FlateCallback
-): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unzlib")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def unzlib(data: js.typedarray.Uint8Array, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("unzlib")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def unzlib(data: js.typedarray.Uint8Array, opts: AsyncGunzipOptions, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("unzlib")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def unzlibSync(data: typings.std.Uint8Array): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unzlibSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def unzlibSync(data: typings.std.Uint8Array, out: typings.std.Uint8Array): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unzlibSync")(data.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def unzlibSync(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("unzlibSync")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def unzlibSync(data: js.typedarray.Uint8Array, out: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("unzlibSync")(data.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
-inline def zip(data: typings.fflate.mod.AsyncZippable, cb: typings.fflate.mod.FlateCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
-inline def zip(
-  data: typings.fflate.mod.AsyncZippable,
-  opts: typings.fflate.mod.AsyncZipOptions,
-  cb: typings.fflate.mod.FlateCallback
-): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def zip(data: AsyncZippable, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def zip(data: AsyncZippable, opts: AsyncZipOptions, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def zipSync(data: typings.fflate.mod.Zippable): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("zipSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def zipSync(data: typings.fflate.mod.Zippable, opts: typings.fflate.mod.ZipOptions): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("zipSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def zipSync(data: Zippable): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("zipSync")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def zipSync(data: Zippable, opts: ZipOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("zipSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
-inline def zlib(data: typings.std.Uint8Array, cb: typings.fflate.mod.FlateCallback): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
-inline def zlib(
-  data: typings.std.Uint8Array,
-  opts: typings.fflate.mod.AsyncZlibOptions,
-  cb: typings.fflate.mod.FlateCallback
-): typings.fflate.mod.AsyncTerminable = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[typings.fflate.mod.AsyncTerminable]
+inline def zlib(data: js.typedarray.Uint8Array, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
+inline def zlib(data: js.typedarray.Uint8Array, opts: AsyncZlibOptions, cb: FlateCallback): AsyncTerminable = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AsyncTerminable]
 
-inline def zlibSync(data: typings.std.Uint8Array): typings.std.Uint8Array = typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")(data.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-inline def zlibSync(data: typings.std.Uint8Array, opts: typings.fflate.mod.ZlibOptions): typings.std.Uint8Array = (typings.fflate.mod.^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
+inline def zlibSync(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def zlibSync(data: js.typedarray.Uint8Array, opts: ZlibOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
 type AsyncFlateStreamHandler = js.Function3[
-/* err */ typings.std.Error, 
-/* data */ typings.std.Uint8Array, 
-/* final */ scala.Boolean, 
-scala.Unit]
+/* err */ FlateError | Null, 
+/* data */ js.typedarray.Uint8Array, 
+/* final */ Boolean, 
+Unit]
 
-type AsyncGunzipOptions = typings.fflate.mod.AsyncOptions
+type AsyncGunzipOptions = AsyncOptions
 
-type AsyncTerminable = js.Function0[scala.Unit]
+type AsyncTerminable = js.Function0[Unit]
 
-type AsyncUnzlibOptions = typings.fflate.mod.AsyncInflateOptions
+type AsyncUnzipOptions = UnzipOptions
 
-type AsyncZippableFile = typings.std.Uint8Array | (js.Tuple2[typings.std.Uint8Array, typings.fflate.mod.AsyncZipOptions])
+type AsyncUnzlibOptions = AsyncInflateOptions
 
-type FlateCallback = js.Function2[/* err */ typings.std.Error, /* data */ typings.std.Uint8Array, scala.Unit]
+type AsyncZippableFile = js.typedarray.Uint8Array | AsyncZippable | (js.Tuple2[js.typedarray.Uint8Array | AsyncZippable, AsyncZipOptions])
 
-type FlateStreamHandler = js.Function2[/* data */ typings.std.Uint8Array, /* final */ scala.Boolean, scala.Unit]
+type FlateCallback = js.Function2[/* err */ FlateError | Null, /* data */ js.typedarray.Uint8Array, Unit]
 
-type UnzipCallback = js.Function2[/* err */ typings.std.Error, /* data */ typings.fflate.mod.Unzipped, scala.Unit]
+type FlateStreamHandler = js.Function2[/* data */ js.typedarray.Uint8Array, /* final */ Boolean, Unit]
 
-type Unzipped = typings.std.Record[java.lang.String, typings.std.Uint8Array]
+type StringStreamHandler = js.Function2[/* data */ String, /* final */ Boolean, Unit]
 
-type ZippableFile = typings.std.Uint8Array | (js.Tuple2[typings.std.Uint8Array, typings.fflate.mod.ZipOptions])
+type UnzipCallback = js.Function2[/* err */ FlateError | Null, /* data */ Unzipped, Unit]
 
-type ZlibOptions = typings.fflate.mod.DeflateOptions
+type UnzipFileFilter = js.Function1[/* file */ UnzipFileInfo, Boolean]
+
+type UnzipFileHandler = js.Function1[/* file */ UnzipFile, Unit]
+
+type Unzipped = StringDictionary[js.typedarray.Uint8Array]
+
+type ZippableFile = js.typedarray.Uint8Array | Zippable | (js.Tuple2[js.typedarray.Uint8Array | Zippable, ZipOptions])
+
+type ZlibOptions = DeflateOptions

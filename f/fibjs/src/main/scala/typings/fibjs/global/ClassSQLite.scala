@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_SQLite")
 @js.native
-class ClassSQLite ()
+open class ClassSQLite ()
   extends StObject
      with typings.fibjs.ClassSQLite

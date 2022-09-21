@@ -1,128 +1,155 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AutomaticallyRotateAfterDaysType = scala.Double
+type AddReplicaRegionListType = js.Array[ReplicaRegionType]
 
-type BooleanType = scala.Boolean
+type AutomaticallyRotateAfterDaysType = Double
 
-type ClientRequestTokenType = java.lang.String
+type BooleanType = Boolean
 
-type CreatedDateType = typings.std.Date
+type ClientRequestTokenType = String
 
-type DeletedDateType = typings.std.Date
+type CreatedDateType = js.Date
 
-type DeletionDateType = typings.std.Date
+type DeletedDateType = js.Date
 
-type DescriptionType = java.lang.String
+type DeletionDateType = js.Date
 
-type ErrorMessage = java.lang.String
+type DescriptionType = String
 
-type ExcludeCharactersType = java.lang.String
+type DurationType = String
 
-type ExcludeLowercaseType = scala.Boolean
+type ErrorMessage = String
 
-type ExcludeNumbersType = scala.Boolean
+type ExcludeCharactersType = String
 
-type ExcludePunctuationType = scala.Boolean
+type ExcludeLowercaseType = Boolean
 
-type ExcludeUppercaseType = scala.Boolean
+type ExcludeNumbersType = Boolean
+
+type ExcludePunctuationType = Boolean
+
+type ExcludeUppercaseType = Boolean
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.description
+  - typings.awsSdk.awsSdkStrings.description_
   - typings.awsSdk.awsSdkStrings.name__
   - typings.awsSdk.awsSdkStrings.`tag-key`
   - typings.awsSdk.awsSdkStrings.`tag-value`
+  - typings.awsSdk.awsSdkStrings.`primary-region`
   - typings.awsSdk.awsSdkStrings.all__
   - java.lang.String
 */
-type FilterNameStringType = typings.awsSdk.secretsmanagerMod._FilterNameStringType | java.lang.String
+type FilterNameStringType = _FilterNameStringType | String
 
-type FilterValueStringType = java.lang.String
+type FilterValueStringType = String
 
-type FilterValuesStringList = js.Array[typings.awsSdk.secretsmanagerMod.FilterValueStringType]
+type FilterValuesStringList = js.Array[FilterValueStringType]
 
-type FiltersListType = js.Array[typings.awsSdk.secretsmanagerMod.Filter]
+type FiltersListType = js.Array[Filter]
 
-type IncludeSpaceType = scala.Boolean
+type IncludeSpaceType = Boolean
 
-type KmsKeyIdType = java.lang.String
+type KmsKeyIdListType = js.Array[KmsKeyIdType]
 
-type LastAccessedDateType = typings.std.Date
+type KmsKeyIdType = String
 
-type LastChangedDateType = typings.std.Date
+type LastAccessedDateType = js.Date
 
-type LastRotatedDateType = typings.std.Date
+type LastChangedDateType = js.Date
 
-type MaxResultsType = scala.Double
+type LastRotatedDateType = js.Date
 
-type NameType = java.lang.String
+type MaxResultsType = Double
 
-type NextTokenType = java.lang.String
+type NameType = String
 
-type NonEmptyResourcePolicyType = java.lang.String
+type NextTokenType = String
 
-type OwningServiceType = java.lang.String
+type NonEmptyResourcePolicyType = String
 
-type PasswordLengthType = scala.Double
+type OwningServiceType = String
 
-type RandomPasswordType = java.lang.String
+type PasswordLengthType = Double
 
-type RecoveryWindowInDaysType = scala.Double
+type RandomPasswordType = String
 
-type RequireEachIncludedTypeType = scala.Boolean
+type RecoveryWindowInDaysType = Double
 
-type RotationEnabledType = scala.Boolean
+type RegionType = String
 
-type RotationLambdaARNType = java.lang.String
+type RemoveReplicaRegionListType = js.Array[RegionType]
 
-type SecretARNType = java.lang.String
+type ReplicationStatusListType = js.Array[ReplicationStatusType]
 
-type SecretBinaryType = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.secretsmanagerMod.Blob | java.lang.String
+type RequireEachIncludedTypeType = Boolean
 
-type SecretIdType = java.lang.String
+type RotationEnabledType = Boolean
 
-type SecretListType = js.Array[typings.awsSdk.secretsmanagerMod.SecretListEntry]
+type RotationLambdaARNType = String
 
-type SecretNameType = java.lang.String
+type ScheduleExpressionType = String
 
-type SecretStringType = java.lang.String
+type SecretARNType = String
 
-type SecretVersionIdType = java.lang.String
+type SecretBinaryType = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type SecretVersionStageType = java.lang.String
+type SecretIdType = String
 
-type SecretVersionStagesType = js.Array[typings.awsSdk.secretsmanagerMod.SecretVersionStageType]
+type SecretListType = js.Array[SecretListEntry]
 
-type SecretVersionsListType = js.Array[typings.awsSdk.secretsmanagerMod.SecretVersionsListEntry]
+type SecretNameType = String
 
-type SecretVersionsToStagesMapType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.secretsmanagerMod.SecretVersionStagesType]
+type SecretStringType = String
+
+type SecretVersionIdType = String
+
+type SecretVersionStageType = String
+
+type SecretVersionStagesType = js.Array[SecretVersionStageType]
+
+type SecretVersionsListType = js.Array[SecretVersionsListEntry]
+
+type SecretVersionsToStagesMapType = StringDictionary[SecretVersionStagesType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.asc_
   - typings.awsSdk.awsSdkStrings.desc_
   - java.lang.String
 */
-type SortOrderType = typings.awsSdk.secretsmanagerMod._SortOrderType | java.lang.String
+type SortOrderType = _SortOrderType | String
 
-type TagKeyListType = js.Array[typings.awsSdk.secretsmanagerMod.TagKeyType]
+type StatusMessageType = String
 
-type TagKeyType = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.InSync_
+  - typings.awsSdk.awsSdkStrings.Failed_
+  - typings.awsSdk.awsSdkStrings.InProgress_
+  - java.lang.String
+*/
+type StatusType = _StatusType | String
 
-type TagListType = js.Array[typings.awsSdk.secretsmanagerMod.Tag]
+type TagKeyListType = js.Array[TagKeyType]
 
-type TagValueType = java.lang.String
+type TagKeyType = String
 
-type TimestampType = typings.std.Date
+type TagListType = js.Array[Tag]
 
-type ValidationErrorsType = js.Array[typings.awsSdk.secretsmanagerMod.ValidationErrorsEntry]
+type TagValueType = String
+
+type TimestampType = js.Date
+
+type ValidationErrorsType = js.Array[ValidationErrorsEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-10-17`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.secretsmanagerMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

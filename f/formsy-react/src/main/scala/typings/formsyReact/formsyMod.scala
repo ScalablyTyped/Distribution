@@ -1,5 +1,6 @@
 package typings.formsyReact
 
+import typings.formsyReact.anon.Children
 import typings.formsyReact.anon.Disabled
 import typings.formsyReact.anon.IsRequired
 import typings.formsyReact.anon.PartialFormsyProps
@@ -63,11 +64,13 @@ import typings.formsyReact.withFormsyMod.PassDownProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.Component
+import typings.react.mod.ComponentType
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
@@ -108,11 +111,10 @@ object formsyMod {
   
   @JSImport("formsy-react/dist/Formsy", "Formsy")
   @js.native
-  class Formsy protected ()
-    extends Component[FormsyProps, FormsyState, js.Any] {
+  open class Formsy protected () extends Component[FormsyProps, FormsyState, Any] {
     def this(props: FormsyProps) = this()
     
-    def attachToForm(component: js.Any): Unit = js.native
+    def attachToForm(component: Any): Unit = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MFormsy(): Unit = js.native
@@ -122,32 +124,32 @@ object formsyMod {
     
     def detachFromForm[V](component: InputComponent[V]): Unit = js.native
     
-    var emptyArray: js.Array[js.Any] = js.native
+    var emptyArray: js.Array[Any] = js.native
     
-    def getCurrentValues(): js.Any = js.native
+    def getCurrentValues(): Any = js.native
     
-    def getModel(): js.Any = js.native
+    def getModel(): Any = js.native
     
-    def getPristineValues(): js.Any = js.native
+    def getPristineValues(): Any = js.native
     
-    var inputs: js.Array[InstanceType[js.Any & PassDownProps[js.Any]]] = js.native
+    var inputs: js.Array[InstanceType[Any & PassDownProps[Any]]] = js.native
     
     def isChanged(): Boolean = js.native
     
     def isFormDisabled(): Boolean = js.native
     
-    def isValidValue(component: js.Any, value: js.Any): Boolean = js.native
+    def isValidValue(component: Any, value: Any): Boolean = js.native
     
     def mapModel(model: IModel): IModel = js.native
     
-    var prevInputNames: js.Array[js.Any] | Null = js.native
+    var prevInputNames: js.Array[Any] | Null = js.native
     
     def reset(): Unit = js.native
     def reset(model: IModel): Unit = js.native
     
-    /* private */ var resetInternal: js.Any = js.native
+    /* private */ var resetInternal: Any = js.native
     
-    /* private */ var resetModel: js.Any = js.native
+    /* private */ var resetModel: Any = js.native
     
     def runValidation[V](component: InputComponent[V]): IsRequired = js.native
     def runValidation[V](component: InputComponent[V], value: V): IsRequired = js.native
@@ -156,16 +158,16 @@ object formsyMod {
     
     def setFormValidState(allIsValid: Boolean): Unit = js.native
     
-    def setInputValidationErrors(errors: js.Any): Unit = js.native
+    def setInputValidationErrors(errors: Any): Unit = js.native
     
     def submit(): Unit = js.native
     def submit(event: SyntheticEvent[Element, Event]): Unit = js.native
     
-    /* private */ val throttledValidateForm: js.Any = js.native
+    /* private */ val throttledValidateForm: Any = js.native
     
     var updateInputsWithError: IUpdateInputsWithError = js.native
     
-    var updateInputsWithValue: IUpdateInputsWithValue[js.Any] = js.native
+    var updateInputsWithValue: IUpdateInputsWithValue[Any] = js.native
     
     def validate[V](component: InputComponent[V]): Unit = js.native
     
@@ -194,6 +196,8 @@ object formsyMod {
     inline def propTypes_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
+  type FormElementType = String | ComponentType[Children]
+  
   /* Inlined std.Omit<react.react.FormHTMLAttributes<std.HTMLFormElement>, 'onChange' | 'onSubmit'> */
   trait FormHTMLAttributesCleaned extends StObject {
     
@@ -207,11 +211,11 @@ object formsyMod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -229,21 +233,21 @@ object formsyMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -257,11 +261,11 @@ object formsyMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -273,13 +277,13 @@ object formsyMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -289,7 +293,7 @@ object formsyMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -339,7 +343,7 @@ object formsyMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -525,11 +529,13 @@ object formsyMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -586,7 +592,7 @@ object formsyMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -594,7 +600,7 @@ object formsyMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -630,7 +636,7 @@ object formsyMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -642,7 +648,7 @@ object formsyMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -650,7 +656,7 @@ object formsyMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -658,7 +664,7 @@ object formsyMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -686,15 +692,15 @@ object formsyMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -718,7 +724,7 @@ object formsyMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -728,7 +734,7 @@ object formsyMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -748,7 +754,7 @@ object formsyMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -828,7 +834,7 @@ object formsyMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -850,7 +856,7 @@ object formsyMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -922,7 +928,7 @@ object formsyMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLFormElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLFormElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1018,7 +1024,7 @@ object formsyMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLFormElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLFormElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1222,6 +1228,10 @@ object formsyMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1230,7 +1240,7 @@ object formsyMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1294,6 +1304,8 @@ object formsyMod {
     
     var disabled: Boolean
     
+    var formElement: js.UndefOr[FormElementType] = js.undefined
+    
     var mapping: Null | (js.Function1[/* model */ IModel, IModel])
     
     def onChange(model: IModel, isChanged: Boolean): Unit
@@ -1324,7 +1336,7 @@ object formsyMod {
       disabled: Boolean,
       onChange: (IModel, Boolean) => Unit,
       onInvalid: () => Unit,
-      onInvalidSubmit: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[js.Any], Event]) => Unit,
+      onInvalidSubmit: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit,
       onValid: () => Unit
     ): FormsyProps = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onChange = js.Any.fromFunction2(onChange), onInvalid = js.Any.fromFunction0(onInvalid), onInvalidSubmit = js.Any.fromFunction4(onInvalidSubmit), onValid = js.Any.fromFunction0(onValid), mapping = null)
@@ -1335,6 +1347,10 @@ object formsyMod {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
+      inline def setFormElement(value: FormElementType): Self = StObject.set(x, "formElement", value.asInstanceOf[js.Any])
+      
+      inline def setFormElementUndefined: Self = StObject.set(x, "formElement", js.undefined)
+      
       inline def setMapping(value: /* model */ IModel => IModel): Self = StObject.set(x, "mapping", js.Any.fromFunction1(value))
       
       inline def setMappingNull: Self = StObject.set(x, "mapping", null)
@@ -1344,7 +1360,7 @@ object formsyMod {
       inline def setOnInvalid(value: () => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction0(value))
       
       inline def setOnInvalidSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[js.Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
       ): Self = StObject.set(x, "onInvalidSubmit", js.Any.fromFunction4(value))
       
       inline def setOnReset(value: () => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
@@ -1352,7 +1368,7 @@ object formsyMod {
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
       inline def setOnSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[js.Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction4(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
@@ -1360,7 +1376,7 @@ object formsyMod {
       inline def setOnValid(value: () => Unit): Self = StObject.set(x, "onValid", js.Any.fromFunction0(value))
       
       inline def setOnValidSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[js.Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
       ): Self = StObject.set(x, "onValidSubmit", js.Any.fromFunction4(value))
       
       inline def setOnValidSubmitUndefined: Self = StObject.set(x, "onValidSubmit", js.undefined)
@@ -1426,7 +1442,7 @@ object formsyMod {
     /* model */ IModel, 
     /* resetModel */ IResetModel, 
     /* updateInputsWithError */ IUpdateInputsWithError, 
-    /* event */ SyntheticEvent[FormHTMLAttributes[js.Any], Event], 
+    /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event], 
     Unit
   ]
 }

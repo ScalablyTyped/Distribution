@@ -39,6 +39,11 @@ trait UpdateChannelRequest extends StObject {
   var LogLevel: js.UndefOr[typings.awsSdk.medialiveMod.LogLevel] = js.undefined
   
   /**
+    * Maintenance settings for this channel.
+    */
+  var Maintenance: js.UndefOr[MaintenanceUpdateSettings] = js.undefined
+  
+  /**
     * The name of the channel.
     */
   var Name: js.UndefOr[string] = js.undefined
@@ -67,7 +72,7 @@ object UpdateChannelRequest {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value*))
     
     inline def setEncoderSettings(value: EncoderSettings): Self = StObject.set(x, "EncoderSettings", value.asInstanceOf[js.Any])
     
@@ -77,7 +82,7 @@ object UpdateChannelRequest {
     
     inline def setInputAttachmentsUndefined: Self = StObject.set(x, "InputAttachments", js.undefined)
     
-    inline def setInputAttachmentsVarargs(value: InputAttachment*): Self = StObject.set(x, "InputAttachments", js.Array(value :_*))
+    inline def setInputAttachmentsVarargs(value: InputAttachment*): Self = StObject.set(x, "InputAttachments", js.Array(value*))
     
     inline def setInputSpecification(value: InputSpecification): Self = StObject.set(x, "InputSpecification", value.asInstanceOf[js.Any])
     
@@ -86,6 +91,10 @@ object UpdateChannelRequest {
     inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
     
     inline def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
+    
+    inline def setMaintenance(value: MaintenanceUpdateSettings): Self = StObject.set(x, "Maintenance", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceUndefined: Self = StObject.set(x, "Maintenance", js.undefined)
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

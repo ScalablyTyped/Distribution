@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.kendoUi.kendo.dataviz.ui.ArcGaugeOptions
 import typings.kendoUi.kendo.dataviz.ui.BarcodeOptions
 import typings.kendoUi.kendo.dataviz.ui.ChartOptions
+import typings.kendoUi.kendo.dataviz.ui.CircularGaugeOptions
 import typings.kendoUi.kendo.dataviz.ui.DiagramOptions
 import typings.kendoUi.kendo.dataviz.ui.LinearGaugeOptions
 import typings.kendoUi.kendo.dataviz.ui.MapOptions
@@ -37,6 +38,12 @@ trait TypeofuiArcGauge extends StObject {
     /* options */ js.UndefOr[ChartOptions], 
     typings.kendoUi.kendo.dataviz.ui.Chart
   ]) & TypeofChart = js.native
+  
+  var CircularGauge: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[CircularGaugeOptions], 
+    typings.kendoUi.kendo.dataviz.ui.CircularGauge
+  ]) & TypeofCircularGauge = js.native
   
   var Diagram: (Instantiable2[
     /* element */ Element, 
@@ -89,6 +96,7 @@ trait TypeofuiArcGauge extends StObject {
   def plugin(
     widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
   ): Unit = js.native
+  def plugin(widget: Any): Unit = js.native
   
-  def registerTheme(name: String, options: js.Any): Unit = js.native
+  def registerTheme(name: String, options: Any): Unit = js.native
 }

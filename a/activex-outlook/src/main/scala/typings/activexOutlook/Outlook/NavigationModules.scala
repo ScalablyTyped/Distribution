@@ -14,12 +14,12 @@ trait NavigationModules extends StObject {
   
   def GetNavigationModule(ModuleType: OlNavigationModuleType): NavigationModule
   
-  def Item(Index: js.Any): NavigationModule
+  def Item(Index: Any): NavigationModule
   
   /* private */ @JSName("Outlook.NavigationModules_typekey")
   var OutlookDotNavigationModules_typekey: NavigationModules
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -30,9 +30,9 @@ object NavigationModules {
     Class: OlObjectClass,
     Count: Double,
     GetNavigationModule: OlNavigationModuleType => NavigationModule,
-    Item: js.Any => NavigationModule,
+    Item: Any => NavigationModule,
     OutlookDotNavigationModules_typekey: NavigationModules,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): NavigationModules = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], GetNavigationModule = js.Any.fromFunction1(GetNavigationModule), Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -50,11 +50,11 @@ object NavigationModules {
     
     inline def setGetNavigationModule(value: OlNavigationModuleType => NavigationModule): Self = StObject.set(x, "GetNavigationModule", js.Any.fromFunction1(value))
     
-    inline def setItem(value: js.Any => NavigationModule): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => NavigationModule): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotNavigationModules_typekey(value: NavigationModules): Self = StObject.set(x, "Outlook.NavigationModules_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

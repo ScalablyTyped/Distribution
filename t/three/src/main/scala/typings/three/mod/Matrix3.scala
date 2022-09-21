@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Matrix3")
 @js.native
 /**
-	 * Creates an identity matrix.
-	 */
-class Matrix3 ()
-  extends typings.three.matrix3Mod.Matrix3
+  * Creates an identity matrix.
+  */
+open class Matrix3 ()
+  extends typings.three.threeMod.Matrix3

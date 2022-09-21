@@ -6,6 +6,7 @@ import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
 import typings.backboneMarionette.mod.Behavior
 import typings.backboneMarionette.mod.View
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,32 +15,32 @@ object anon {
   
   trait Dictindex
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
-    var behaviorClass: Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]
+    var behaviorClass: Instantiable1[/* options */ js.UndefOr[Any], Behavior]
   }
   object Dictindex {
     
-    inline def apply(behaviorClass: Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]): Dictindex = {
+    inline def apply(behaviorClass: Instantiable1[/* options */ js.UndefOr[Any], Behavior]): Dictindex = {
       val __obj = js.Dynamic.literal(behaviorClass = behaviorClass.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictindex]
     }
     
     extension [Self <: Dictindex](x: Self) {
       
-      inline def setBehaviorClass(value: Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]): Self = StObject.set(x, "behaviorClass", value.asInstanceOf[js.Any])
+      inline def setBehaviorClass(value: Instantiable1[/* options */ js.UndefOr[Any], Behavior]): Self = StObject.set(x, "behaviorClass", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait Instantiable[TView /* <: View[TModel] */, TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */]
+  trait Instantiable[TView /* <: View[TModel] */, TModel /* <: Model[Any, ModelSetOptions, Any] */]
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, TView]
+       with Instantiable1[/* args (repeated) */ Any, TView]
   
   @js.native
-  trait InstantiableView[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */]
+  trait InstantiableView[TModel /* <: Model[Any, ModelSetOptions, Any] */]
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, typings.backbone.mod.View[TModel]]
+       with Instantiable1[/* args (repeated) */ Any, typings.backbone.mod.View[TModel, HTMLElement]]
   
   trait PreventRender extends StObject {
     
@@ -63,9 +64,9 @@ object anon {
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
-      **/
+      */
     /* static member */
-    def extend(properties: js.Any): js.Any = js.native
-    def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
+    def extend(properties: Any): Any = js.native
+    def extend(properties: Any, classProperties: Any): Any = js.native
   }
 }

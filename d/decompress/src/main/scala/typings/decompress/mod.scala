@@ -1,6 +1,6 @@
 package typings.decompress
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +40,7 @@ object mod {
       * Array of plugins to use.
       * Default: [decompressTar(), decompressTarbz2(), decompressTargz(), decompressUnzip()]
       */
-    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var plugins: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Remove leading directory components from extracted files.
@@ -65,11 +65,11 @@ object mod {
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setStrip(value: Double): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
       

@@ -9,35 +9,7 @@ object anon {
   /* Inlined {[ k in keyof std.WindowEventMap ]:? string} */
   trait kinkeyofWindowEventMapstr extends StObject {
     
-    var MSGestureChange: js.UndefOr[String] = js.undefined
-    
-    var MSGestureDoubleTap: js.UndefOr[String] = js.undefined
-    
-    var MSGestureEnd: js.UndefOr[String] = js.undefined
-    
-    var MSGestureHold: js.UndefOr[String] = js.undefined
-    
-    var MSGestureStart: js.UndefOr[String] = js.undefined
-    
-    var MSGestureTap: js.UndefOr[String] = js.undefined
-    
-    var MSInertiaStart: js.UndefOr[String] = js.undefined
-    
-    var MSPointerCancel: js.UndefOr[String] = js.undefined
-    
-    var MSPointerDown: js.UndefOr[String] = js.undefined
-    
-    var MSPointerEnter: js.UndefOr[String] = js.undefined
-    
-    var MSPointerLeave: js.UndefOr[String] = js.undefined
-    
-    var MSPointerMove: js.UndefOr[String] = js.undefined
-    
-    var MSPointerOut: js.UndefOr[String] = js.undefined
-    
-    var MSPointerOver: js.UndefOr[String] = js.undefined
-    
-    var MSPointerUp: js.UndefOr[String] = js.undefined
+    var DOMContentLoaded: js.UndefOr[String] = js.undefined
     
     var abort: js.UndefOr[String] = js.undefined
     
@@ -53,13 +25,13 @@ object anon {
     
     var auxclick: js.UndefOr[String] = js.undefined
     
+    var beforeinput: js.UndefOr[String] = js.undefined
+    
     var beforeprint: js.UndefOr[String] = js.undefined
     
     var beforeunload: js.UndefOr[String] = js.undefined
     
     var blur: js.UndefOr[String] = js.undefined
-    
-    var cancel: js.UndefOr[String] = js.undefined
     
     var canplay: js.UndefOr[String] = js.undefined
     
@@ -71,7 +43,11 @@ object anon {
     
     var close: js.UndefOr[String] = js.undefined
     
-    var compassneedscalibration: js.UndefOr[String] = js.undefined
+    var compositionend: js.UndefOr[String] = js.undefined
+    
+    var compositionstart: js.UndefOr[String] = js.undefined
+    
+    var compositionupdate: js.UndefOr[String] = js.undefined
     
     var contextmenu: js.UndefOr[String] = js.undefined
     
@@ -79,21 +55,15 @@ object anon {
     
     var dblclick: js.UndefOr[String] = js.undefined
     
-    var devicelight: js.UndefOr[String] = js.undefined
-    
     var devicemotion: js.UndefOr[String] = js.undefined
     
     var deviceorientation: js.UndefOr[String] = js.undefined
-    
-    var deviceorientationabsolute: js.UndefOr[String] = js.undefined
     
     var drag: js.UndefOr[String] = js.undefined
     
     var dragend: js.UndefOr[String] = js.undefined
     
     var dragenter: js.UndefOr[String] = js.undefined
-    
-    var dragexit: js.UndefOr[String] = js.undefined
     
     var dragleave: js.UndefOr[String] = js.undefined
     
@@ -116,6 +86,12 @@ object anon {
     var focusin: js.UndefOr[String] = js.undefined
     
     var focusout: js.UndefOr[String] = js.undefined
+    
+    var formdata: js.UndefOr[String] = js.undefined
+    
+    var gamepadconnected: js.UndefOr[String] = js.undefined
+    
+    var gamepaddisconnected: js.UndefOr[String] = js.undefined
     
     var gotpointercapture: js.UndefOr[String] = js.undefined
     
@@ -161,8 +137,6 @@ object anon {
     
     var mouseup: js.UndefOr[String] = js.undefined
     
-    var mousewheel: js.UndefOr[String] = js.undefined
-    
     var offline: js.UndefOr[String] = js.undefined
     
     var online: js.UndefOr[String] = js.undefined
@@ -201,8 +175,6 @@ object anon {
     
     var ratechange: js.UndefOr[String] = js.undefined
     
-    var readystatechange: js.UndefOr[String] = js.undefined
-    
     var rejectionhandled: js.UndefOr[String] = js.undefined
     
     var reset: js.UndefOr[String] = js.undefined
@@ -222,6 +194,8 @@ object anon {
     var selectionchange: js.UndefOr[String] = js.undefined
     
     var selectstart: js.UndefOr[String] = js.undefined
+    
+    var slotchange: js.UndefOr[String] = js.undefined
     
     var stalled: js.UndefOr[String] = js.undefined
     
@@ -257,25 +231,15 @@ object anon {
     
     var volumechange: js.UndefOr[String] = js.undefined
     
-    var vrdisplayactivate: js.UndefOr[String] = js.undefined
-    
-    var vrdisplayblur: js.UndefOr[String] = js.undefined
-    
-    var vrdisplayconnect: js.UndefOr[String] = js.undefined
-    
-    var vrdisplaydeactivate: js.UndefOr[String] = js.undefined
-    
-    var vrdisplaydisconnect: js.UndefOr[String] = js.undefined
-    
-    var vrdisplayfocus: js.UndefOr[String] = js.undefined
-    
-    var vrdisplaypointerrestricted: js.UndefOr[String] = js.undefined
-    
-    var vrdisplaypointerunrestricted: js.UndefOr[String] = js.undefined
-    
-    var vrdisplaypresentchange: js.UndefOr[String] = js.undefined
-    
     var waiting: js.UndefOr[String] = js.undefined
+    
+    var webkitanimationend: js.UndefOr[String] = js.undefined
+    
+    var webkitanimationiteration: js.UndefOr[String] = js.undefined
+    
+    var webkitanimationstart: js.UndefOr[String] = js.undefined
+    
+    var webkittransitionend: js.UndefOr[String] = js.undefined
     
     var wheel: js.UndefOr[String] = js.undefined
   }
@@ -316,6 +280,10 @@ object anon {
       
       inline def setAuxclickUndefined: Self = StObject.set(x, "auxclick", js.undefined)
       
+      inline def setBeforeinput(value: String): Self = StObject.set(x, "beforeinput", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeinputUndefined: Self = StObject.set(x, "beforeinput", js.undefined)
+      
       inline def setBeforeprint(value: String): Self = StObject.set(x, "beforeprint", value.asInstanceOf[js.Any])
       
       inline def setBeforeprintUndefined: Self = StObject.set(x, "beforeprint", js.undefined)
@@ -327,10 +295,6 @@ object anon {
       inline def setBlur(value: String): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
       inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
-      
-      inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
-      
-      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       inline def setCanplay(value: String): Self = StObject.set(x, "canplay", value.asInstanceOf[js.Any])
       
@@ -352,9 +316,17 @@ object anon {
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      inline def setCompassneedscalibration(value: String): Self = StObject.set(x, "compassneedscalibration", value.asInstanceOf[js.Any])
+      inline def setCompositionend(value: String): Self = StObject.set(x, "compositionend", value.asInstanceOf[js.Any])
       
-      inline def setCompassneedscalibrationUndefined: Self = StObject.set(x, "compassneedscalibration", js.undefined)
+      inline def setCompositionendUndefined: Self = StObject.set(x, "compositionend", js.undefined)
+      
+      inline def setCompositionstart(value: String): Self = StObject.set(x, "compositionstart", value.asInstanceOf[js.Any])
+      
+      inline def setCompositionstartUndefined: Self = StObject.set(x, "compositionstart", js.undefined)
+      
+      inline def setCompositionupdate(value: String): Self = StObject.set(x, "compositionupdate", value.asInstanceOf[js.Any])
+      
+      inline def setCompositionupdateUndefined: Self = StObject.set(x, "compositionupdate", js.undefined)
       
       inline def setContextmenu(value: String): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
       
@@ -364,13 +336,13 @@ object anon {
       
       inline def setCuechangeUndefined: Self = StObject.set(x, "cuechange", js.undefined)
       
+      inline def setDOMContentLoaded(value: String): Self = StObject.set(x, "DOMContentLoaded", value.asInstanceOf[js.Any])
+      
+      inline def setDOMContentLoadedUndefined: Self = StObject.set(x, "DOMContentLoaded", js.undefined)
+      
       inline def setDblclick(value: String): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
       
       inline def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
-      
-      inline def setDevicelight(value: String): Self = StObject.set(x, "devicelight", value.asInstanceOf[js.Any])
-      
-      inline def setDevicelightUndefined: Self = StObject.set(x, "devicelight", js.undefined)
       
       inline def setDevicemotion(value: String): Self = StObject.set(x, "devicemotion", value.asInstanceOf[js.Any])
       
@@ -379,10 +351,6 @@ object anon {
       inline def setDeviceorientation(value: String): Self = StObject.set(x, "deviceorientation", value.asInstanceOf[js.Any])
       
       inline def setDeviceorientationUndefined: Self = StObject.set(x, "deviceorientation", js.undefined)
-      
-      inline def setDeviceorientationabsolute(value: String): Self = StObject.set(x, "deviceorientationabsolute", value.asInstanceOf[js.Any])
-      
-      inline def setDeviceorientationabsoluteUndefined: Self = StObject.set(x, "deviceorientationabsolute", js.undefined)
       
       inline def setDrag(value: String): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
@@ -395,10 +363,6 @@ object anon {
       inline def setDragenter(value: String): Self = StObject.set(x, "dragenter", value.asInstanceOf[js.Any])
       
       inline def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
-      
-      inline def setDragexit(value: String): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
-      
-      inline def setDragexitUndefined: Self = StObject.set(x, "dragexit", js.undefined)
       
       inline def setDragleave(value: String): Self = StObject.set(x, "dragleave", value.asInstanceOf[js.Any])
       
@@ -443,6 +407,18 @@ object anon {
       inline def setFocusout(value: String): Self = StObject.set(x, "focusout", value.asInstanceOf[js.Any])
       
       inline def setFocusoutUndefined: Self = StObject.set(x, "focusout", js.undefined)
+      
+      inline def setFormdata(value: String): Self = StObject.set(x, "formdata", value.asInstanceOf[js.Any])
+      
+      inline def setFormdataUndefined: Self = StObject.set(x, "formdata", js.undefined)
+      
+      inline def setGamepadconnected(value: String): Self = StObject.set(x, "gamepadconnected", value.asInstanceOf[js.Any])
+      
+      inline def setGamepadconnectedUndefined: Self = StObject.set(x, "gamepadconnected", js.undefined)
+      
+      inline def setGamepaddisconnected(value: String): Self = StObject.set(x, "gamepaddisconnected", value.asInstanceOf[js.Any])
+      
+      inline def setGamepaddisconnectedUndefined: Self = StObject.set(x, "gamepaddisconnected", js.undefined)
       
       inline def setGotpointercapture(value: String): Self = StObject.set(x, "gotpointercapture", value.asInstanceOf[js.Any])
       
@@ -496,66 +472,6 @@ object anon {
       
       inline def setLostpointercaptureUndefined: Self = StObject.set(x, "lostpointercapture", js.undefined)
       
-      inline def setMSGestureChange(value: String): Self = StObject.set(x, "MSGestureChange", value.asInstanceOf[js.Any])
-      
-      inline def setMSGestureChangeUndefined: Self = StObject.set(x, "MSGestureChange", js.undefined)
-      
-      inline def setMSGestureDoubleTap(value: String): Self = StObject.set(x, "MSGestureDoubleTap", value.asInstanceOf[js.Any])
-      
-      inline def setMSGestureDoubleTapUndefined: Self = StObject.set(x, "MSGestureDoubleTap", js.undefined)
-      
-      inline def setMSGestureEnd(value: String): Self = StObject.set(x, "MSGestureEnd", value.asInstanceOf[js.Any])
-      
-      inline def setMSGestureEndUndefined: Self = StObject.set(x, "MSGestureEnd", js.undefined)
-      
-      inline def setMSGestureHold(value: String): Self = StObject.set(x, "MSGestureHold", value.asInstanceOf[js.Any])
-      
-      inline def setMSGestureHoldUndefined: Self = StObject.set(x, "MSGestureHold", js.undefined)
-      
-      inline def setMSGestureStart(value: String): Self = StObject.set(x, "MSGestureStart", value.asInstanceOf[js.Any])
-      
-      inline def setMSGestureStartUndefined: Self = StObject.set(x, "MSGestureStart", js.undefined)
-      
-      inline def setMSGestureTap(value: String): Self = StObject.set(x, "MSGestureTap", value.asInstanceOf[js.Any])
-      
-      inline def setMSGestureTapUndefined: Self = StObject.set(x, "MSGestureTap", js.undefined)
-      
-      inline def setMSInertiaStart(value: String): Self = StObject.set(x, "MSInertiaStart", value.asInstanceOf[js.Any])
-      
-      inline def setMSInertiaStartUndefined: Self = StObject.set(x, "MSInertiaStart", js.undefined)
-      
-      inline def setMSPointerCancel(value: String): Self = StObject.set(x, "MSPointerCancel", value.asInstanceOf[js.Any])
-      
-      inline def setMSPointerCancelUndefined: Self = StObject.set(x, "MSPointerCancel", js.undefined)
-      
-      inline def setMSPointerDown(value: String): Self = StObject.set(x, "MSPointerDown", value.asInstanceOf[js.Any])
-      
-      inline def setMSPointerDownUndefined: Self = StObject.set(x, "MSPointerDown", js.undefined)
-      
-      inline def setMSPointerEnter(value: String): Self = StObject.set(x, "MSPointerEnter", value.asInstanceOf[js.Any])
-      
-      inline def setMSPointerEnterUndefined: Self = StObject.set(x, "MSPointerEnter", js.undefined)
-      
-      inline def setMSPointerLeave(value: String): Self = StObject.set(x, "MSPointerLeave", value.asInstanceOf[js.Any])
-      
-      inline def setMSPointerLeaveUndefined: Self = StObject.set(x, "MSPointerLeave", js.undefined)
-      
-      inline def setMSPointerMove(value: String): Self = StObject.set(x, "MSPointerMove", value.asInstanceOf[js.Any])
-      
-      inline def setMSPointerMoveUndefined: Self = StObject.set(x, "MSPointerMove", js.undefined)
-      
-      inline def setMSPointerOut(value: String): Self = StObject.set(x, "MSPointerOut", value.asInstanceOf[js.Any])
-      
-      inline def setMSPointerOutUndefined: Self = StObject.set(x, "MSPointerOut", js.undefined)
-      
-      inline def setMSPointerOver(value: String): Self = StObject.set(x, "MSPointerOver", value.asInstanceOf[js.Any])
-      
-      inline def setMSPointerOverUndefined: Self = StObject.set(x, "MSPointerOver", js.undefined)
-      
-      inline def setMSPointerUp(value: String): Self = StObject.set(x, "MSPointerUp", value.asInstanceOf[js.Any])
-      
-      inline def setMSPointerUpUndefined: Self = StObject.set(x, "MSPointerUp", js.undefined)
-      
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
@@ -591,10 +507,6 @@ object anon {
       inline def setMouseup(value: String): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
       
       inline def setMouseupUndefined: Self = StObject.set(x, "mouseup", js.undefined)
-      
-      inline def setMousewheel(value: String): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
-      
-      inline def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
       
       inline def setOffline(value: String): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
       
@@ -672,10 +584,6 @@ object anon {
       
       inline def setRatechangeUndefined: Self = StObject.set(x, "ratechange", js.undefined)
       
-      inline def setReadystatechange(value: String): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
-      
-      inline def setReadystatechangeUndefined: Self = StObject.set(x, "readystatechange", js.undefined)
-      
       inline def setRejectionhandled(value: String): Self = StObject.set(x, "rejectionhandled", value.asInstanceOf[js.Any])
       
       inline def setRejectionhandledUndefined: Self = StObject.set(x, "rejectionhandled", js.undefined)
@@ -715,6 +623,10 @@ object anon {
       inline def setSelectstart(value: String): Self = StObject.set(x, "selectstart", value.asInstanceOf[js.Any])
       
       inline def setSelectstartUndefined: Self = StObject.set(x, "selectstart", js.undefined)
+      
+      inline def setSlotchange(value: String): Self = StObject.set(x, "slotchange", value.asInstanceOf[js.Any])
+      
+      inline def setSlotchangeUndefined: Self = StObject.set(x, "slotchange", js.undefined)
       
       inline def setStalled(value: String): Self = StObject.set(x, "stalled", value.asInstanceOf[js.Any])
       
@@ -784,45 +696,25 @@ object anon {
       
       inline def setVolumechangeUndefined: Self = StObject.set(x, "volumechange", js.undefined)
       
-      inline def setVrdisplayactivate(value: String): Self = StObject.set(x, "vrdisplayactivate", value.asInstanceOf[js.Any])
-      
-      inline def setVrdisplayactivateUndefined: Self = StObject.set(x, "vrdisplayactivate", js.undefined)
-      
-      inline def setVrdisplayblur(value: String): Self = StObject.set(x, "vrdisplayblur", value.asInstanceOf[js.Any])
-      
-      inline def setVrdisplayblurUndefined: Self = StObject.set(x, "vrdisplayblur", js.undefined)
-      
-      inline def setVrdisplayconnect(value: String): Self = StObject.set(x, "vrdisplayconnect", value.asInstanceOf[js.Any])
-      
-      inline def setVrdisplayconnectUndefined: Self = StObject.set(x, "vrdisplayconnect", js.undefined)
-      
-      inline def setVrdisplaydeactivate(value: String): Self = StObject.set(x, "vrdisplaydeactivate", value.asInstanceOf[js.Any])
-      
-      inline def setVrdisplaydeactivateUndefined: Self = StObject.set(x, "vrdisplaydeactivate", js.undefined)
-      
-      inline def setVrdisplaydisconnect(value: String): Self = StObject.set(x, "vrdisplaydisconnect", value.asInstanceOf[js.Any])
-      
-      inline def setVrdisplaydisconnectUndefined: Self = StObject.set(x, "vrdisplaydisconnect", js.undefined)
-      
-      inline def setVrdisplayfocus(value: String): Self = StObject.set(x, "vrdisplayfocus", value.asInstanceOf[js.Any])
-      
-      inline def setVrdisplayfocusUndefined: Self = StObject.set(x, "vrdisplayfocus", js.undefined)
-      
-      inline def setVrdisplaypointerrestricted(value: String): Self = StObject.set(x, "vrdisplaypointerrestricted", value.asInstanceOf[js.Any])
-      
-      inline def setVrdisplaypointerrestrictedUndefined: Self = StObject.set(x, "vrdisplaypointerrestricted", js.undefined)
-      
-      inline def setVrdisplaypointerunrestricted(value: String): Self = StObject.set(x, "vrdisplaypointerunrestricted", value.asInstanceOf[js.Any])
-      
-      inline def setVrdisplaypointerunrestrictedUndefined: Self = StObject.set(x, "vrdisplaypointerunrestricted", js.undefined)
-      
-      inline def setVrdisplaypresentchange(value: String): Self = StObject.set(x, "vrdisplaypresentchange", value.asInstanceOf[js.Any])
-      
-      inline def setVrdisplaypresentchangeUndefined: Self = StObject.set(x, "vrdisplaypresentchange", js.undefined)
-      
       inline def setWaiting(value: String): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
       
       inline def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
+      
+      inline def setWebkitanimationend(value: String): Self = StObject.set(x, "webkitanimationend", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitanimationendUndefined: Self = StObject.set(x, "webkitanimationend", js.undefined)
+      
+      inline def setWebkitanimationiteration(value: String): Self = StObject.set(x, "webkitanimationiteration", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitanimationiterationUndefined: Self = StObject.set(x, "webkitanimationiteration", js.undefined)
+      
+      inline def setWebkitanimationstart(value: String): Self = StObject.set(x, "webkitanimationstart", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitanimationstartUndefined: Self = StObject.set(x, "webkitanimationstart", js.undefined)
+      
+      inline def setWebkittransitionend(value: String): Self = StObject.set(x, "webkittransitionend", value.asInstanceOf[js.Any])
+      
+      inline def setWebkittransitionendUndefined: Self = StObject.set(x, "webkittransitionend", js.undefined)
       
       inline def setWheel(value: String): Self = StObject.set(x, "wheel", value.asInstanceOf[js.Any])
       

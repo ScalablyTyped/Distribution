@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TableCell extends StObject {
   
-  var v: js.UndefOr[js.Any] = js.undefined
+  var v: js.UndefOr[Any] = js.undefined
 }
 object TableCell {
   
@@ -17,7 +17,7 @@ object TableCell {
   
   extension [Self <: TableCell](x: Self) {
     
-    inline def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }

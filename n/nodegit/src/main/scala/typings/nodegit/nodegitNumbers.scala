@@ -305,6 +305,7 @@ object nodegitNumbers {
        with OPTION
        with typings.nodegit.diffMod.Diff.OPTION
        with PREFERENCE
+       with typings.nodegit.worktreeMod.Worktree.PRUNE
        with PRUNE
        with REBASE_OPERATION
        with RECURSE
@@ -499,6 +500,7 @@ object nodegitNumbers {
        with OPTION
        with typings.nodegit.diffMod.Diff.OPTION
        with PREFERENCE
+       with typings.nodegit.worktreeMod.Worktree.PRUNE
        with PRUNE
        with REBASE_OPERATION
        with RECURSE
@@ -733,6 +735,7 @@ object nodegitNumbers {
        with typings.nodegit.statusMod.Status.OPT
        with OPTION
        with typings.nodegit.diffMod.Diff.OPTION
+       with typings.nodegit.worktreeMod.Worktree.PRUNE
        with REBASE_OPERATION
        with SORT
        with STATS_FORMAT

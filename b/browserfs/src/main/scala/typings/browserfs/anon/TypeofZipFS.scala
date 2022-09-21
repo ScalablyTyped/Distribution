@@ -10,7 +10,7 @@ import typings.browserfs.zipFSMod.ZipFS
 import typings.browserfs.zipFSMod.ZipFSOptions
 import typings.browserfs.zipFSMod.ZipTOC
 import typings.browserfs.zipFSMod.default
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +47,7 @@ trait TypeofZipFS
     ]
   ): Unit = js.native
   
-  /* private */ def addToIndex(cd: js.Any, index: js.Any): js.Any = js.native
+  /* private */ def addToIndex(cd: Any, index: Any): Any = js.native
   
   /**
     * **Deprecated. Please use ZipFS.Create() method instead.**
@@ -55,21 +55,13 @@ trait TypeofZipFS
   def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit]): Unit = js.native
   def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit], deprecateMsg: Boolean): Unit = js.native
   
-  /* private */ def computeIndexResponsive(
-    data: js.Any,
-    index: js.Any,
-    cdPtr: js.Any,
-    cdEnd: js.Any,
-    cb: js.Any,
-    cdEntries: js.Any,
-    eocd: js.Any
-  ): js.Any = js.native
+  /* private */ def computeIndexResponsive(data: Any, index: Any, cdPtr: Any, cdEnd: Any, cb: Any, cdEntries: Any, eocd: Any): Any = js.native
   
   /**
     * Locates the end of central directory record at the end of the file.
     * Throws an exception if it cannot be found.
     */
-  /* private */ def getEOCD(data: js.Any): js.Any = js.native
+  /* private */ def getEOCD(data: Any): Any = js.native
   
   def isAvailable(): Boolean = js.native
 }

@@ -174,15 +174,17 @@ object Errors {
   
   @JSImport("evernote", "Errors.EDAMInvalidContactsException")
   @js.native
-  class EDAMInvalidContactsException ()
+  open class EDAMInvalidContactsException ()
     extends StObject
        with Error {
     
     var contacts: js.Array[Contact] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -193,7 +195,7 @@ object Errors {
   
   @JSImport("evernote", "Errors.EDAMNotFoundException")
   @js.native
-  class EDAMNotFoundException ()
+  open class EDAMNotFoundException ()
     extends StObject
        with Error {
     
@@ -201,24 +203,28 @@ object Errors {
     
     var key: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("evernote", "Errors.EDAMSystemException")
   @js.native
-  class EDAMSystemException ()
+  open class EDAMSystemException ()
     extends StObject
        with Error {
     
     var errorCode: EDAMErrorCode = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -227,15 +233,17 @@ object Errors {
   
   @JSImport("evernote", "Errors.EDAMUserException")
   @js.native
-  class EDAMUserException ()
+  open class EDAMUserException ()
     extends StObject
        with Error {
     
     var errorCode: EDAMErrorCode = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

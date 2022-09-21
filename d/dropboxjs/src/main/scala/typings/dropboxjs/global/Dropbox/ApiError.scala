@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Dropbox.ApiError")
 @js.native
-class ApiError protected ()
+open class ApiError protected ()
   extends StObject
      with typings.dropboxjs.Dropbox.ApiError {
   def this(xhr: XMLHttpRequest, method: String, url: String) = this()

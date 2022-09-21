@@ -14,7 +14,7 @@ object compressedTextureLoaderMod {
   
   @JSImport("three/src/loaders/CompressedTextureLoader", "CompressedTextureLoader")
   @js.native
-  class CompressedTextureLoader () extends Loader {
+  open class CompressedTextureLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
     def load(url: String, onLoad: js.Function1[/* texture */ CompressedTexture, Unit]): CompressedTexture = js.native

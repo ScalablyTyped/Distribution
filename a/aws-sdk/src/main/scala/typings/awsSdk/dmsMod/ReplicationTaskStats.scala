@@ -14,12 +14,12 @@ trait ReplicationTaskStats extends StObject {
   /**
     * The date the replication task was started either with a fresh start or a target reload.
     */
-  var FreshStartDate: js.UndefOr[TStamp] = js.undefined
+  var FreshStartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date the replication task full load was completed.
     */
-  var FullLoadFinishDate: js.UndefOr[TStamp] = js.undefined
+  var FullLoadFinishDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The percent complete for the full load migration task.
@@ -29,17 +29,17 @@ trait ReplicationTaskStats extends StObject {
   /**
     * The date the replication task full load was started.
     */
-  var FullLoadStartDate: js.UndefOr[TStamp] = js.undefined
+  var FullLoadStartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date the replication task was started either with a fresh start or a resume. For more information, see StartReplicationTaskType.
     */
-  var StartDate: js.UndefOr[TStamp] = js.undefined
+  var StartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date the replication task was stopped.
     */
-  var StopDate: js.UndefOr[TStamp] = js.undefined
+  var StopDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of errors that have occurred during this task.
@@ -74,11 +74,11 @@ object ReplicationTaskStats {
     
     inline def setElapsedTimeMillisUndefined: Self = StObject.set(x, "ElapsedTimeMillis", js.undefined)
     
-    inline def setFreshStartDate(value: TStamp): Self = StObject.set(x, "FreshStartDate", value.asInstanceOf[js.Any])
+    inline def setFreshStartDate(value: js.Date): Self = StObject.set(x, "FreshStartDate", value.asInstanceOf[js.Any])
     
     inline def setFreshStartDateUndefined: Self = StObject.set(x, "FreshStartDate", js.undefined)
     
-    inline def setFullLoadFinishDate(value: TStamp): Self = StObject.set(x, "FullLoadFinishDate", value.asInstanceOf[js.Any])
+    inline def setFullLoadFinishDate(value: js.Date): Self = StObject.set(x, "FullLoadFinishDate", value.asInstanceOf[js.Any])
     
     inline def setFullLoadFinishDateUndefined: Self = StObject.set(x, "FullLoadFinishDate", js.undefined)
     
@@ -86,15 +86,15 @@ object ReplicationTaskStats {
     
     inline def setFullLoadProgressPercentUndefined: Self = StObject.set(x, "FullLoadProgressPercent", js.undefined)
     
-    inline def setFullLoadStartDate(value: TStamp): Self = StObject.set(x, "FullLoadStartDate", value.asInstanceOf[js.Any])
+    inline def setFullLoadStartDate(value: js.Date): Self = StObject.set(x, "FullLoadStartDate", value.asInstanceOf[js.Any])
     
     inline def setFullLoadStartDateUndefined: Self = StObject.set(x, "FullLoadStartDate", js.undefined)
     
-    inline def setStartDate(value: TStamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     
-    inline def setStopDate(value: TStamp): Self = StObject.set(x, "StopDate", value.asInstanceOf[js.Any])
+    inline def setStopDate(value: js.Date): Self = StObject.set(x, "StopDate", value.asInstanceOf[js.Any])
     
     inline def setStopDateUndefined: Self = StObject.set(x, "StopDate", js.undefined)
     

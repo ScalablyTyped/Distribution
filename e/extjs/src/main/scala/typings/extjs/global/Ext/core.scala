@@ -13,7 +13,7 @@ object core {
   
   @JSGlobal("Ext.core.DomHelper")
   @js.native
-  class DomHelper ()
+  open class DomHelper ()
     extends StObject
        with typings.extjs.Ext.core.DomHelper
   /* static members */
@@ -29,89 +29,89 @@ object core {
       * @param returnElement Boolean true to return a Ext.Element
       * @returns HTMLElement/Ext.Element The new node
       */
-    inline def append(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("append")().asInstanceOf[js.Any]
-    inline def append(el: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def append(el: js.Any, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def append(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def append(el: js.Any, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def append(el: Unit, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def append(el: Unit, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def append(el: Unit, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def append(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("append")().asInstanceOf[Any]
+    inline def append(el: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def append(el: Any, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def append(el: Any, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def append(el: Any, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def append(el: Unit, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def append(el: Unit, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def append(el: Unit, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /** [Method] Applies a style specification to an element
       * @param el String/HTMLElement The element to apply styles to
       * @param styles String/Object/Function A style specification string e.g. 'width:100px', or object in the form {width:'100px'}, or a function which returns such a specification.
       */
     inline def applyStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyStyles")().asInstanceOf[Unit]
-    inline def applyStyles(el: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyStyles")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def applyStyles(el: js.Any, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyStyles")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def applyStyles(el: Unit, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyStyles")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def applyStyles(el: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyStyles")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def applyStyles(el: Any, styles: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyStyles")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def applyStyles(el: Unit, styles: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyStyles")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-    inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+    inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-    inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+    inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-    inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+    inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Creates new DOM element s without inserting them to the document
       * @param o Object/String The DOM object spec (and children) or raw HTML blob
       * @returns HTMLElement The new uninserted node
       */
     inline def createDom(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createDom")().asInstanceOf[HTMLElement]
-    inline def createDom(o: js.Any): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createDom")(o.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+    inline def createDom(o: Any): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createDom")(o.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
     /** [Method] Alias for markup
       * @param spec Object The DOM object spec (and children)
       * @returns String
       */
     inline def createHtml(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtml")().asInstanceOf[java.lang.String]
-    inline def createHtml(spec: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtml")(spec.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+    inline def createHtml(spec: Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtml")(spec.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
     
     /** [Method] Creates a new Ext Template from the DOM object spec
       * @param o Object The DOM object spec (and children)
       * @returns Ext.Template The new template
       */
     inline def createTemplate(): ITemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplate")().asInstanceOf[ITemplate]
-    inline def createTemplate(o: js.Any): ITemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplate")(o.asInstanceOf[js.Any]).asInstanceOf[ITemplate]
+    inline def createTemplate(o: Any): ITemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplate")(o.asInstanceOf[js.Any]).asInstanceOf[ITemplate]
     
     /** [Method] Converts the styles from the given object to text
       * @param styles Object The object describing the styles.
       * @param buffer String[] The output buffer.
       * @returns String/String[] If buffer is passed, it is returned. Otherwise the style string is returned.
       */
-    inline def generateStyles(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStyles")().asInstanceOf[js.Any]
-    inline def generateStyles(styles: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def generateStyles(styles: js.Any, buffer: typings.extjs.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStyles")(styles.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def generateStyles(styles: Unit, buffer: typings.extjs.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStyles")(styles.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def generateStyles(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStyles")().asInstanceOf[Any]
+    inline def generateStyles(styles: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def generateStyles(styles: Any, buffer: typings.extjs.Ext.Array): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStyles")(styles.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def generateStyles(styles: Unit, buffer: typings.extjs.Ext.Array): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStyles")(styles.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-    inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+    inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
     inline def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
-    inline def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+    inline def initConfig(config: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Creates new DOM element s and inserts them after el
       * @param el String/HTMLElement/Ext.Element The context element
@@ -119,14 +119,14 @@ object core {
       * @param returnElement Boolean true to return a Ext.Element
       * @returns HTMLElement/Ext.Element The new node
       */
-    inline def insertAfter(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")().asInstanceOf[js.Any]
-    inline def insertAfter(el: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def insertAfter(el: js.Any, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertAfter(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertAfter(el: js.Any, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertAfter(el: Unit, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertAfter(el: Unit, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertAfter(el: Unit, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def insertAfter(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")().asInstanceOf[Any]
+    inline def insertAfter(el: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def insertAfter(el: Any, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertAfter(el: Any, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertAfter(el: Any, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertAfter(el: Unit, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertAfter(el: Unit, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertAfter(el: Unit, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /** [Method] Creates new DOM element s and inserts them before el
       * @param el String/HTMLElement/Ext.Element The context element
@@ -134,14 +134,14 @@ object core {
       * @param returnElement Boolean true to return a Ext.Element
       * @returns HTMLElement/Ext.Element The new node
       */
-    inline def insertBefore(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")().asInstanceOf[js.Any]
-    inline def insertBefore(el: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def insertBefore(el: js.Any, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertBefore(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertBefore(el: js.Any, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertBefore(el: Unit, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertBefore(el: Unit, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertBefore(el: Unit, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def insertBefore(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")().asInstanceOf[Any]
+    inline def insertBefore(el: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def insertBefore(el: Any, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertBefore(el: Any, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertBefore(el: Any, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertBefore(el: Unit, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertBefore(el: Unit, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertBefore(el: Unit, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /** [Method] Creates new DOM element s and inserts them as the first child of el
       * @param el String/HTMLElement/Ext.Element The context element
@@ -149,14 +149,14 @@ object core {
       * @param returnElement Boolean true to return a Ext.Element
       * @returns HTMLElement/Ext.Element The new node
       */
-    inline def insertFirst(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")().asInstanceOf[js.Any]
-    inline def insertFirst(el: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def insertFirst(el: js.Any, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertFirst(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertFirst(el: js.Any, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertFirst(el: Unit, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertFirst(el: Unit, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def insertFirst(el: Unit, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def insertFirst(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")().asInstanceOf[Any]
+    inline def insertFirst(el: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def insertFirst(el: Any, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertFirst(el: Any, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertFirst(el: Any, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertFirst(el: Unit, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertFirst(el: Unit, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def insertFirst(el: Unit, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insertFirst")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /** [Method] Inserts an HTML fragment into the DOM
       * @param where String Where to insert the html in relation to el - beforeBegin, afterBegin, beforeEnd, afterEnd. For example take the following HTML: &lt;div&gt;Contents&lt;/div&gt; Using different where values inserts element to the following places:  beforeBegin: &lt;HERE&gt;&lt;div&gt;Contents&lt;/div&gt; afterBegin: &lt;div&gt;&lt;HERE&gt;Contents&lt;/div&gt; beforeEnd: &lt;div&gt;Contents&lt;HERE&gt;&lt;/div&gt; afterEnd: &lt;div&gt;Contents&lt;/div&gt;&lt;HERE&gt;
@@ -166,11 +166,11 @@ object core {
       */
     inline def insertHtml(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")().asInstanceOf[HTMLElement]
     inline def insertHtml(where: java.lang.String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
-    inline def insertHtml(where: java.lang.String, el: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-    inline def insertHtml(where: java.lang.String, el: js.Any, html: java.lang.String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def insertHtml(where: java.lang.String, el: Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def insertHtml(where: java.lang.String, el: Any, html: java.lang.String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     inline def insertHtml(where: java.lang.String, el: Unit, html: java.lang.String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-    inline def insertHtml(where: Unit, el: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-    inline def insertHtml(where: Unit, el: js.Any, html: java.lang.String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def insertHtml(where: Unit, el: Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def insertHtml(where: Unit, el: Any, html: java.lang.String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     inline def insertHtml(where: Unit, el: Unit, html: java.lang.String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertHtml")(where.asInstanceOf[js.Any], el.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /** [Method] Returns the markup for the passed Element s config
@@ -178,7 +178,7 @@ object core {
       * @returns String
       */
     inline def markup(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("markup")().asInstanceOf[java.lang.String]
-    inline def markup(spec: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("markup")(spec.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+    inline def markup(spec: Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("markup")(spec.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
     
     /** [Method] Creates new DOM element s and overwrites the contents of el with them
       * @param el String/HTMLElement/Ext.Element The context element
@@ -186,14 +186,14 @@ object core {
       * @param returnElement Boolean true to return an Ext.Element
       * @returns HTMLElement/Ext.Element The new node
       */
-    inline def overwrite(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")().asInstanceOf[js.Any]
-    inline def overwrite(el: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def overwrite(el: js.Any, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def overwrite(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def overwrite(el: js.Any, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def overwrite(el: Unit, o: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def overwrite(el: Unit, o: js.Any, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def overwrite(el: Unit, o: Unit, returnElement: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def overwrite(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")().asInstanceOf[Any]
+    inline def overwrite(el: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def overwrite(el: Any, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def overwrite(el: Any, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def overwrite(el: Any, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def overwrite(el: Unit, o: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def overwrite(el: Unit, o: Any, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def overwrite(el: Unit, o: Unit, returnElement: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(el.asInstanceOf[js.Any], o.asInstanceOf[js.Any], returnElement.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.core.DomHelper.self")
@@ -215,7 +215,7 @@ object core {
   
   @JSGlobal("Ext.core.DomQuery")
   @js.native
-  class DomQuery ()
+  open class DomQuery ()
     extends StObject
        with typings.extjs.Ext.core.DomQuery
   /* static members */
@@ -230,10 +230,10 @@ object core {
       * @param type String Either "select" or "simple" for a simple selector match
       * @returns Function
       */
-    inline def compile(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")().asInstanceOf[js.Any]
-    inline def compile(selector: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def compile(selector: java.lang.String, `type`: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def compile(selector: Unit, `type`: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def compile(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")().asInstanceOf[Any]
+    inline def compile(selector: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def compile(selector: java.lang.String, `type`: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def compile(selector: Unit, `type`: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(selector.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /** [Method] Filters an array of elements to only include matches of a simple selector e g
       * @param el HTMLElement[] An array of elements to filter
@@ -256,8 +256,8 @@ object core {
       * @returns Boolean
       */
     inline def is(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")().asInstanceOf[Boolean]
-    inline def is(el: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    inline def is(el: js.Any, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def is(el: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def is(el: Any, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def is(el: Unit, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(el.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** [Method] Selects an array of DOM nodes using JavaScript only implementation
@@ -267,26 +267,26 @@ object core {
       */
     inline def jsSelect(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")().asInstanceOf[typings.extjs.Ext.Array]
     inline def jsSelect(selector: java.lang.String): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
-    inline def jsSelect(selector: java.lang.String, root: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-    inline def jsSelect(selector: Unit, root: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+    inline def jsSelect(selector: java.lang.String, root: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+    inline def jsSelect(selector: Unit, root: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("jsSelect")(selector.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
     
     /** [Property] (Object) */
     @JSGlobal("Ext.core.DomQuery.matchers")
     @js.native
-    def matchers: js.Any = js.native
-    inline def matchers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchers")(x.asInstanceOf[js.Any])
+    def matchers: Any = js.native
+    inline def matchers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchers")(x.asInstanceOf[js.Any])
     
     /** [Property] (Object) */
     @JSGlobal("Ext.core.DomQuery.operators")
     @js.native
-    def operators: js.Any = js.native
-    inline def operators_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operators")(x.asInstanceOf[js.Any])
+    def operators: Any = js.native
+    inline def operators_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operators")(x.asInstanceOf[js.Any])
     
     /** [Property] (Object) */
     @JSGlobal("Ext.core.DomQuery.pseudos")
     @js.native
-    def pseudos: js.Any = js.native
-    inline def pseudos_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pseudos")(x.asInstanceOf[js.Any])
+    def pseudos: Any = js.native
+    inline def pseudos_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pseudos")(x.asInstanceOf[js.Any])
     
     /** [Method] Selects an array of DOM nodes by CSS XPath selector
       * @param path String The selector/xpath query
@@ -355,7 +355,7 @@ object core {
   
   @JSGlobal("Ext.core.Element")
   @js.native
-  class Element ()
+  open class Element ()
     extends StObject
        with typings.extjs.Ext.core.Element
   /* static members */
@@ -369,28 +369,28 @@ object core {
       * @param members Object
       */
     inline def addMembers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")().asInstanceOf[Unit]
-    inline def addMembers(members: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")(members.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addMembers(members: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")(members.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Add  override static properties of this class
       * @param members Object
       * @returns Ext.Base this
       */
     inline def addStatics(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")().asInstanceOf[IBase]
-    inline def addStatics(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
+    inline def addStatics(members: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Create a new instance of this Class
       * @returns Object the created instance.
       */
-    inline def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+    inline def create(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Any]
     
     /** [Method] Create aliases for existing prototype methods
       * @param alias String/Object The new method name, or an object to set multiple aliases. See flexSetter
       * @param origin String/Object The original method name
       */
     inline def createAlias(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")().asInstanceOf[Unit]
-    inline def createAlias(alias: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def createAlias(alias: js.Any, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def createAlias(alias: Unit, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def createAlias(alias: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def createAlias(alias: Any, origin: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def createAlias(alias: Unit, origin: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Returns the top Element that is located at the passed coordinates Defined in override Ext dom AbstractElement_static
       * @param x Number The x coordinate
@@ -407,7 +407,7 @@ object core {
       * @returns Ext.dom.Element The Element object (or null if no matching element was found)
       */
     inline def get(): IElement = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[IElement]
-    inline def get(el: js.Any): IElement = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(el.asInstanceOf[js.Any]).asInstanceOf[IElement]
+    inline def get(el: Any): IElement = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(el.asInstanceOf[js.Any]).asInstanceOf[IElement]
     
     /** [Method] Retrieves the document height Defined in override Ext dom AbstractElement_static
       * @returns Number documentHeight
@@ -432,7 +432,7 @@ object core {
     /** [Method] Retrieves the viewport size of the window
       * @returns Object object containing width and height properties
       */
-    inline def getViewSize(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewSize")().asInstanceOf[js.Any]
+    inline def getViewSize(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewSize")().asInstanceOf[Any]
     
     /** [Method] Retrieves the viewport height of the window
       * @returns Number viewportHeight
@@ -453,9 +453,9 @@ object core {
       * @returns Array An array of strings representing remaining unique, merged class names. If class names were added to the first list, the changed property will be true.
       */
     inline def mergeClsList(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeClsList")().asInstanceOf[typings.extjs.Ext.Array]
-    inline def mergeClsList(clsList1: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeClsList")(clsList1.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
-    inline def mergeClsList(clsList1: js.Any, clsList2: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeClsList")(clsList1.asInstanceOf[js.Any], clsList2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-    inline def mergeClsList(clsList1: Unit, clsList2: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeClsList")(clsList1.asInstanceOf[js.Any], clsList2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+    inline def mergeClsList(clsList1: Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeClsList")(clsList1.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+    inline def mergeClsList(clsList1: Any, clsList2: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeClsList")(clsList1.asInstanceOf[js.Any], clsList2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+    inline def mergeClsList(clsList1: Unit, clsList2: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeClsList")(clsList1.asInstanceOf[js.Any], clsList2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
     
     /** [Method] Normalizes CSS property keys from dash delimited to camel case JavaScript Syntax
       * @param prop String The property to normalize
@@ -469,21 +469,21 @@ object core {
       * @returns Ext.Base this class
       */
     inline def `override`(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")().asInstanceOf[IBase]
-    inline def `override`(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
+    inline def `override`(members: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Parses a number or string representing margin sizes into an object
       * @param box Number/String The encoded margins
       * @returns Object An object with margin sizes for top, right, bottom and left
       */
-    inline def parseBox(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBox")().asInstanceOf[js.Any]
-    inline def parseBox(box: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBox")(box.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def parseBox(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBox")().asInstanceOf[Any]
+    inline def parseBox(box: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBox")(box.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Converts a CSS string into an object with a property for each style
       * @param styles String A CSS string
       * @returns Object styles
       */
-    inline def parseStyles(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStyles")().asInstanceOf[js.Any]
-    inline def parseStyles(styles: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def parseStyles(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStyles")().asInstanceOf[Any]
+    inline def parseStyles(styles: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns an array of unique class names deom the first parameter with all class names from the second parameter removed
       * @param existingClsList Mixed A string of class names, or an array of class names.
@@ -491,9 +491,9 @@ object core {
       * @returns Array An array of strings representing remaining class names. If class names were removed, the changed property will be true.
       */
     inline def removeCls(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")().asInstanceOf[typings.extjs.Ext.Array]
-    inline def removeCls(existingClsList: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(existingClsList.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
-    inline def removeCls(existingClsList: js.Any, removeClsList: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(existingClsList.asInstanceOf[js.Any], removeClsList.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-    inline def removeCls(existingClsList: Unit, removeClsList: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(existingClsList.asInstanceOf[js.Any], removeClsList.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+    inline def removeCls(existingClsList: Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(existingClsList.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+    inline def removeCls(existingClsList: Any, removeClsList: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(existingClsList.asInstanceOf[js.Any], removeClsList.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+    inline def removeCls(existingClsList: Unit, removeClsList: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(existingClsList.asInstanceOf[js.Any], removeClsList.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
     
     /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
       * @param selector String/HTMLElement[] The CSS selector or an array of elements
@@ -501,14 +501,14 @@ object core {
       * @param root HTMLElement/String The root element of the query or id of the root
       * @returns Ext.CompositeElementLite/Ext.CompositeElement
       */
-    inline def select(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")().asInstanceOf[js.Any]
-    inline def select(selector: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def select(selector: js.Any, unique: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def select(selector: js.Any, unique: Boolean, root: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def select(selector: js.Any, unique: Unit, root: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def select(selector: Unit, unique: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def select(selector: Unit, unique: Boolean, root: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def select(selector: Unit, unique: Unit, root: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def select(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")().asInstanceOf[Any]
+    inline def select(selector: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def select(selector: Any, unique: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def select(selector: Any, unique: Boolean, root: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def select(selector: Any, unique: Unit, root: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def select(selector: Unit, unique: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def select(selector: Unit, unique: Boolean, root: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def select(selector: Unit, unique: Unit, root: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], unique.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /** [Method] Parses a number or string representing margin sizes into an object
       * @param box Number/String/Object The encoded margins, or an object with top, right, bottom, and left properties
@@ -516,8 +516,8 @@ object core {
       * @returns String An string with unitized (px if units is not specified) metrics for top, right, bottom and left
       */
     inline def unitizeBox(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("unitizeBox")().asInstanceOf[java.lang.String]
-    inline def unitizeBox(box: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("unitizeBox")(box.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-    inline def unitizeBox(box: js.Any, units: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("unitizeBox")(box.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def unitizeBox(box: Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("unitizeBox")(box.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+    inline def unitizeBox(box: Any, units: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("unitizeBox")(box.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     inline def unitizeBox(box: Unit, units: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("unitizeBox")(box.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
   }
 }

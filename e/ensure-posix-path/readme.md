@@ -10,10 +10,10 @@ Typings are for version 1.1.1
 | ------------------ | :-------------: |
 | Full name          | ensure-posix-path |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 26 |
-| # downloads        | 11244055 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2124190.6666666665 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/stefanpenner/ensure-posix-path#readme)

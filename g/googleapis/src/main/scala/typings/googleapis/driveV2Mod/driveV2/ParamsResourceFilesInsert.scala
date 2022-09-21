@@ -1,9 +1,5 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,14 +10,24 @@ trait ParamsResourceFilesInsert
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Whether to convert this file to the corresponding Google Docs format.
+    * Whether to convert this file to the corresponding Docs Editors format.
     */
   var convert: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Deprecated. Creating files in multiple folders is no longer supported.
+    */
+  var enforceSingleParent: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A comma-separated list of IDs of labels to include in the labelInfo part of the response.
+    */
+  var includeLabels: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies which additional view's permissions to include in the response. Only 'published' is supported.
+    */
+  var includePermissionsForView: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
@@ -34,14 +40,12 @@ trait ParamsResourceFilesInsert
   var ocr: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If ocr is true, hints at the language to use. Valid values are BCP 47
-    * codes.
+    * If ocr is true, hints at the language to use. Valid values are BCP 47 codes.
     */
   var ocrLanguage: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to pin the head revision of the uploaded file. A file can have a
-    * maximum of 200 pinned revisions.
+    * Whether to pin the head revision of the uploaded file. A file can have a maximum of 200 pinned revisions.
     */
   var pinned: js.UndefOr[Boolean] = js.undefined
   
@@ -51,7 +55,12 @@ trait ParamsResourceFilesInsert
   var requestBody: js.UndefOr[SchemaFile] = js.undefined
   
   /**
-    * Whether the requesting application supports Team Drives.
+    * Whether the requesting application supports both My Drives and shared drives.
+    */
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Deprecated use supportsAllDrives instead.
     */
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
@@ -71,8 +80,7 @@ trait ParamsResourceFilesInsert
   var useContentAsIndexableText: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The visibility of the new file. This parameter is only relevant when
-    * convert=false.
+    * The visibility of the new file. This parameter is only relevant when convert=false.
     */
   var visibility: js.UndefOr[String] = js.undefined
 }
@@ -85,13 +93,21 @@ object ParamsResourceFilesInsert {
   
   extension [Self <: ParamsResourceFilesInsert](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
+    
+    inline def setEnforceSingleParent(value: Boolean): Self = StObject.set(x, "enforceSingleParent", value.asInstanceOf[js.Any])
+    
+    inline def setEnforceSingleParentUndefined: Self = StObject.set(x, "enforceSingleParent", js.undefined)
+    
+    inline def setIncludeLabels(value: String): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
+    
+    inline def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
+    
+    inline def setIncludePermissionsForViewUndefined: Self = StObject.set(x, "includePermissionsForView", js.undefined)
     
     inline def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
@@ -112,6 +128,10 @@ object ParamsResourceFilesInsert {
     inline def setRequestBody(value: SchemaFile): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    
+    inline def setSupportsAllDrives(value: Boolean): Self = StObject.set(x, "supportsAllDrives", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsAllDrivesUndefined: Self = StObject.set(x, "supportsAllDrives", js.undefined)
     
     inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     

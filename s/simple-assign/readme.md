@@ -11,9 +11,9 @@ Simple implementation of Object.assign
 | Full name          | simple-assign |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 118 |
-| # downloads        | 5396992 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 315835.3333333333 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/newoga/simple-assign#readme)

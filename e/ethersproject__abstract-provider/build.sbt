@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "ethersproject__abstract-provider"
-version := "5.0.6-735566"
-scalaVersion := "3.0.1"
+version := "5.7.0-b895a5"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ethersproject__bignumber" % "5.0.10-64e579",
-  "org.scalablytyped" %%% "ethersproject__bytes" % "5.0.6-b21087",
-  "org.scalablytyped" %%% "ethersproject__networks" % "5.0.5-c5c319",
-  "org.scalablytyped" %%% "ethersproject__properties" % "5.0.5-05ae41",
-  "org.scalablytyped" %%% "ethersproject__transactions" % "5.0.7-e3e13e",
-  "org.scalablytyped" %%% "ethersproject__web" % "5.0.10-594465",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "ethersproject__bignumber" % "5.7.0-bedb42",
+  "org.scalablytyped" %%% "ethersproject__bytes" % "5.7.0-974392",
+  "org.scalablytyped" %%% "ethersproject__networks" % "5.7.1-8dafae",
+  "org.scalablytyped" %%% "ethersproject__properties" % "5.7.0-7ecc05",
+  "org.scalablytyped" %%% "ethersproject__transactions" % "5.7.0-2b2d61",
+  "org.scalablytyped" %%% "ethersproject__web" % "5.7.1-034ded",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

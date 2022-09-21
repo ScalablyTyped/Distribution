@@ -18,7 +18,7 @@ trait ITranslatableGroup
   /** [Method] Returns the value of itemLength
     * @returns Object
     */
-  var getItemLength: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getItemLength: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of items
     * @returns Array
@@ -33,7 +33,7 @@ trait ITranslatableGroup
   /** [Method] Sets the value of itemLength
     * @param itemLength Object The new value.
     */
-  var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of items
     * @param items Array The new value.
@@ -53,7 +53,7 @@ object ITranslatableGroup {
     
     inline def setGetActiveIndexUndefined: Self = StObject.set(x, "getActiveIndex", js.undefined)
     
-    inline def setGetItemLength(value: () => js.Any): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
+    inline def setGetItemLength(value: () => Any): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
     
     inline def setGetItemLengthUndefined: Self = StObject.set(x, "getItemLength", js.undefined)
     
@@ -65,7 +65,7 @@ object ITranslatableGroup {
     
     inline def setSetActiveIndexUndefined: Self = StObject.set(x, "setActiveIndex", js.undefined)
     
-    inline def setSetItemLength(value: /* itemLength */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemLength", js.Any.fromFunction1(value))
+    inline def setSetItemLength(value: /* itemLength */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItemLength", js.Any.fromFunction1(value))
     
     inline def setSetItemLengthUndefined: Self = StObject.set(x, "setItemLength", js.undefined)
     

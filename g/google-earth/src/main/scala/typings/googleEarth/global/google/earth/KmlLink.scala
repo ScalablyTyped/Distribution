@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlLink")
 @js.native
-class KmlLink ()
+open class KmlLink ()
   extends StObject
      with typings.googleEarth.google.earth.KmlLink {
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_managedidentities
 
-Typings are for version 1.0.20201113
+Typings are for version 1.0.20220609
 
 ## Library description:
 TypeScript typings for Managed Service for Microsoft Active Directory API v1
@@ -10,10 +10,10 @@ TypeScript typings for Managed Service for Microsoft Active Directory API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.managedidentities |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 796 |
-| # stars            | 0 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 595.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

@@ -17,6 +17,12 @@ trait MailFolder
   // The mailFolder's display name.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * Indicates whether the mailFolder is hidden. This property can be set only when creating the folder. Find more
+    * information in Hidden mail folders.
+    */
+  var isHidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // The collection of rules that apply to the user's Inbox folder.
   var messageRules: js.UndefOr[NullableOption[js.Array[MessageRule]]] = js.undefined
   
@@ -59,7 +65,7 @@ object MailFolder {
     
     inline def setChildFoldersUndefined: Self = StObject.set(x, "childFolders", js.undefined)
     
-    inline def setChildFoldersVarargs(value: MailFolder*): Self = StObject.set(x, "childFolders", js.Array(value :_*))
+    inline def setChildFoldersVarargs(value: MailFolder*): Self = StObject.set(x, "childFolders", js.Array(value*))
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -67,13 +73,19 @@ object MailFolder {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
+    inline def setIsHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+    
+    inline def setIsHiddenNull: Self = StObject.set(x, "isHidden", null)
+    
+    inline def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
+    
     inline def setMessageRules(value: NullableOption[js.Array[MessageRule]]): Self = StObject.set(x, "messageRules", value.asInstanceOf[js.Any])
     
     inline def setMessageRulesNull: Self = StObject.set(x, "messageRules", null)
     
     inline def setMessageRulesUndefined: Self = StObject.set(x, "messageRules", js.undefined)
     
-    inline def setMessageRulesVarargs(value: MessageRule*): Self = StObject.set(x, "messageRules", js.Array(value :_*))
+    inline def setMessageRulesVarargs(value: MessageRule*): Self = StObject.set(x, "messageRules", js.Array(value*))
     
     inline def setMessages(value: NullableOption[js.Array[Message]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
@@ -81,7 +93,7 @@ object MailFolder {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
     
@@ -89,7 +101,7 @@ object MailFolder {
     
     inline def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
-    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
+    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value*))
     
     inline def setParentFolderId(value: NullableOption[String]): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
@@ -103,7 +115,7 @@ object MailFolder {
     
     inline def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
-    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
+    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value*))
     
     inline def setTotalItemCount(value: NullableOption[Double]): Self = StObject.set(x, "totalItemCount", value.asInstanceOf[js.Any])
     

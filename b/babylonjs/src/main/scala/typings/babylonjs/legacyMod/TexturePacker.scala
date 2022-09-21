@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "TexturePacker")
 @js.native
-class TexturePacker protected ()
+open class TexturePacker protected ()
   extends typings.babylonjs.indexMod.TexturePacker {
   /**
     * Initializes a texture package series from an array of meshes or a single mesh.

@@ -10,10 +10,10 @@ The `themeGet` function is an existential getter function that can be used in an
 | ------------------ | :-------------: |
 | Full name          | @styled-system/theme-get |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 133 |
-| # downloads        | 1485781 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 472791.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40styled-system%2Ftheme-get)

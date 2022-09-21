@@ -19,7 +19,7 @@ object anon {
     
     /** An event handler or array of event handlers. */
     var on: Validator[
-        (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[(js.Function1[/* repeated */ js.Any, js.Any]) | Null])
+        (js.Function1[/* repeated */ Any, Any]) | (js.Array[(js.Function1[/* repeated */ Any, Any]) | Null])
       ]
     
     /** A name of pool. */
@@ -33,7 +33,7 @@ object anon {
     inline def apply(
       name: Validator[String],
       on: Validator[
-          (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[(js.Function1[/* repeated */ js.Any, js.Any]) | Null])
+          (js.Function1[/* repeated */ Any, Any]) | (js.Array[(js.Function1[/* repeated */ Any, Any]) | Null])
         ],
       pool: Requireable[String],
       target: Requireable[js.Object]
@@ -48,7 +48,7 @@ object anon {
       
       inline def setOn(
         value: Validator[
-              (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[(js.Function1[/* repeated */ js.Any, js.Any]) | Null])
+              (js.Function1[/* repeated */ Any, Any]) | (js.Array[(js.Function1[/* repeated */ Any, Any]) | Null])
             ]
       ): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
@@ -105,7 +105,7 @@ object anon {
       
       inline def setOnFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
       
-      inline def setOnVarargs(value: EventListener*): Self = StObject.set(x, "on", js.Array(value :_*))
+      inline def setOnVarargs(value: EventListener*): Self = StObject.set(x, "on", js.Array(value*))
       
       inline def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       

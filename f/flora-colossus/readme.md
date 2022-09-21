@@ -10,10 +10,10 @@ Walks your node_modules tree
 | ------------------ | :-------------: |
 | Full name          | flora-colossus |
 | Keywords           | prune, production |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 2477564 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 371299.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/flora-colossus)

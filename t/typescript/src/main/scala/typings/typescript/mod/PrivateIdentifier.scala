@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PrivateIdentifier
   extends StObject
-     with Node
+     with PrimaryExpression
      with DeclarationName
+     with MemberName
      with PropertyName {
   
   val escapedText: String = js.native

@@ -66,6 +66,15 @@ object adapterMod {
       */
     def notifyAction(index: Double): Unit
     
+    /**
+      * Notifies that items at the given indices have changed its
+      * selection state through user interaction (e.g. click).
+      *
+      * This is invoked only for changes caused by user interaction
+      * to match with the native `change` event semantics.
+      */
+    def notifySelectionChange(changedIndices: js.Array[Double]): Unit
+    
     def removeClassForElementIndex(index: Double, className: String): Unit
     
     def setAttributeForElementIndex(index: Double, attribute: String, value: String): Unit
@@ -97,12 +106,13 @@ object adapterMod {
       isRootFocused: () => Boolean,
       listItemAtIndexHasClass: (Double, String) => Boolean,
       notifyAction: Double => Unit,
+      notifySelectionChange: js.Array[Double] => Unit,
       removeClassForElementIndex: (Double, String) => Unit,
       setAttributeForElementIndex: (Double, String, String) => Unit,
       setCheckedCheckboxOrRadioAtIndex: (Double, Boolean) => Unit,
       setTabIndexForListItemChildren: (Double, String) => Unit
     ): MDCListAdapter = {
-      val __obj = js.Dynamic.literal(addClassForElementIndex = js.Any.fromFunction2(addClassForElementIndex), focusItemAtIndex = js.Any.fromFunction1(focusItemAtIndex), getAttributeForElementIndex = js.Any.fromFunction2(getAttributeForElementIndex), getFocusedElementIndex = js.Any.fromFunction0(getFocusedElementIndex), getListItemCount = js.Any.fromFunction0(getListItemCount), getPrimaryTextAtIndex = js.Any.fromFunction1(getPrimaryTextAtIndex), hasCheckboxAtIndex = js.Any.fromFunction1(hasCheckboxAtIndex), hasRadioAtIndex = js.Any.fromFunction1(hasRadioAtIndex), isCheckboxCheckedAtIndex = js.Any.fromFunction1(isCheckboxCheckedAtIndex), isFocusInsideList = js.Any.fromFunction0(isFocusInsideList), isRootFocused = js.Any.fromFunction0(isRootFocused), listItemAtIndexHasClass = js.Any.fromFunction2(listItemAtIndexHasClass), notifyAction = js.Any.fromFunction1(notifyAction), removeClassForElementIndex = js.Any.fromFunction2(removeClassForElementIndex), setAttributeForElementIndex = js.Any.fromFunction3(setAttributeForElementIndex), setCheckedCheckboxOrRadioAtIndex = js.Any.fromFunction2(setCheckedCheckboxOrRadioAtIndex), setTabIndexForListItemChildren = js.Any.fromFunction2(setTabIndexForListItemChildren))
+      val __obj = js.Dynamic.literal(addClassForElementIndex = js.Any.fromFunction2(addClassForElementIndex), focusItemAtIndex = js.Any.fromFunction1(focusItemAtIndex), getAttributeForElementIndex = js.Any.fromFunction2(getAttributeForElementIndex), getFocusedElementIndex = js.Any.fromFunction0(getFocusedElementIndex), getListItemCount = js.Any.fromFunction0(getListItemCount), getPrimaryTextAtIndex = js.Any.fromFunction1(getPrimaryTextAtIndex), hasCheckboxAtIndex = js.Any.fromFunction1(hasCheckboxAtIndex), hasRadioAtIndex = js.Any.fromFunction1(hasRadioAtIndex), isCheckboxCheckedAtIndex = js.Any.fromFunction1(isCheckboxCheckedAtIndex), isFocusInsideList = js.Any.fromFunction0(isFocusInsideList), isRootFocused = js.Any.fromFunction0(isRootFocused), listItemAtIndexHasClass = js.Any.fromFunction2(listItemAtIndexHasClass), notifyAction = js.Any.fromFunction1(notifyAction), notifySelectionChange = js.Any.fromFunction1(notifySelectionChange), removeClassForElementIndex = js.Any.fromFunction2(removeClassForElementIndex), setAttributeForElementIndex = js.Any.fromFunction3(setAttributeForElementIndex), setCheckedCheckboxOrRadioAtIndex = js.Any.fromFunction2(setCheckedCheckboxOrRadioAtIndex), setTabIndexForListItemChildren = js.Any.fromFunction2(setTabIndexForListItemChildren))
       __obj.asInstanceOf[MDCListAdapter]
     }
     
@@ -133,6 +143,8 @@ object adapterMod {
       inline def setListItemAtIndexHasClass(value: (Double, String) => Boolean): Self = StObject.set(x, "listItemAtIndexHasClass", js.Any.fromFunction2(value))
       
       inline def setNotifyAction(value: Double => Unit): Self = StObject.set(x, "notifyAction", js.Any.fromFunction1(value))
+      
+      inline def setNotifySelectionChange(value: js.Array[Double] => Unit): Self = StObject.set(x, "notifySelectionChange", js.Any.fromFunction1(value))
       
       inline def setRemoveClassForElementIndex(value: (Double, String) => Unit): Self = StObject.set(x, "removeClassForElementIndex", js.Any.fromFunction2(value))
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-color
 
-Typings are for version 2.0
+Typings are for version 3.1
 
 ## Library description:
 Color spaces! RGB, HSL, Cubehelix, Lab and HCL (Lch).
@@ -10,10 +10,10 @@ Color spaces! RGB, HSL, Cubehelix, Lab and HCL (Lch).
 | ------------------ | :-------------: |
 | Full name          | d3-color |
 | Keywords           | d3, d3-module, color, rgb, hsl, lab, hcl, lch, cubehelix |
-| # releases         | 11 |
-| # dependents       | 285 |
-| # downloads        | 78305858 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8709847666666668E7 |
+| # stars            | 338.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-color/)

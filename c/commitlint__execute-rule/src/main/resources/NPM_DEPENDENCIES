@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@commitlint/execute-rule" : "17.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@commitlint/execute-rule" : "17.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

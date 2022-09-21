@@ -1,6 +1,6 @@
 package typings.nodegit
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.WriteStream
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
@@ -13,7 +13,7 @@ object blobMod {
   
   @JSImport("nodegit/blob", "Blob")
   @js.native
-  class Blob () extends StObject {
+  open class Blob () extends StObject {
     
     def content(): Buffer = js.native
     

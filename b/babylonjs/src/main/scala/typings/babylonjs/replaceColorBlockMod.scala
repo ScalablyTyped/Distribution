@@ -10,7 +10,7 @@ object replaceColorBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/replaceColorBlock", "ReplaceColorBlock")
   @js.native
-  class ReplaceColorBlock protected () extends NodeMaterialBlock {
+  open class ReplaceColorBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new ReplaceColorBlock
       * @param name defines the block name

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__podium
 
-Typings are for version 3.4
+Typings are for version 5.0.0
 
 ## Library description:
 Node compatible event emitter with extra features
@@ -10,10 +10,10 @@ Node compatible event emitter with extra features
 | ------------------ | :-------------: |
 | Full name          | @hapi/podium |
 | Keywords           | emitter, event |
-| # releases         | 9 |
-| # dependents       | 4 |
-| # downloads        | 13788178 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2598060.3333333335 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/podium#readme)
@@ -24,7 +24,7 @@ Node compatible event emitter with extra features
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

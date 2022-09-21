@@ -6,16 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Padding extends StObject {
   
+  /**
+    * Configures the nodes&apos; borders.
+    */
   var border: js.UndefOr[ColorVisible] = js.undefined
   
+  /**
+    * Colors the sankey nodes.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Configures the appearance a node changes to when it is hovered over or pressed.
+    */
   var hoverStyle: js.UndefOr[ColorHatching] = js.undefined
   
+  /**
+    * Specifies the nodes&apos; transparency.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the vertical distance, in pixels, between two nodes.
+    */
   var padding: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the nodes&apos; width in pixels.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object Padding {

@@ -60,15 +60,15 @@ object tasksMod {
       
       inline def setNegative(value: js.Array[Pattern]): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
       
-      inline def setNegativeVarargs(value: Pattern*): Self = StObject.set(x, "negative", js.Array(value :_*))
+      inline def setNegativeVarargs(value: Pattern*): Self = StObject.set(x, "negative", js.Array(value*))
       
       inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value*))
       
       inline def setPositive(value: js.Array[Pattern]): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
       
-      inline def setPositiveVarargs(value: Pattern*): Self = StObject.set(x, "positive", js.Array(value :_*))
+      inline def setPositiveVarargs(value: Pattern*): Self = StObject.set(x, "positive", js.Array(value*))
     }
   }
 }

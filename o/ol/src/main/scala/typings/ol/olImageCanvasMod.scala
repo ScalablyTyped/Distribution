@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.std.Error
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ object olImageCanvasMod {
   
   @JSImport("ol/ImageCanvas", JSImport.Default)
   @js.native
-  class default protected () extends ImageCanvas {
+  open class default protected () extends ImageCanvas {
     def this(extent: Extent, resolution: Double, pixelRatio: Double, canvas: HTMLCanvasElement) = this()
     def this(
       extent: Extent,
@@ -29,8 +28,8 @@ object olImageCanvasMod {
     /**
       * Get any error associated with asynchronous rendering.
       */
-    def getError(): Error = js.native
+    def getError(): js.Error = js.native
   }
   
-  type Loader = js.Function1[/* p0 */ js.Function1[/* p0 */ js.UndefOr[Error], Unit], Unit]
+  type Loader = js.Function1[/* p0 */ js.Function1[/* p0 */ js.UndefOr[js.Error], Unit], Unit]
 }

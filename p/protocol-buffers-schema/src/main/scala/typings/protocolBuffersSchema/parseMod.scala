@@ -1,6 +1,6 @@
 package typings.protocolBuffersSchema
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.protocolBuffersSchema.typesMod.Schema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

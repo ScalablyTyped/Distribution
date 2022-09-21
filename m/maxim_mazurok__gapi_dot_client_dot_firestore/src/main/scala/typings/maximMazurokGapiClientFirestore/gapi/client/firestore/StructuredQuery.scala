@@ -19,11 +19,12 @@ trait StructuredQuery extends StObject {
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The order to apply to the query results. Firestore guarantees a stable ordering through the following rules: * Any field required to appear in `order_by`, that is not already
-    * specified in `order_by`, is appended to the order in field name order by default. * If an order on `__name__` is not specified, it is appended by default. Fields are appended with
-    * the same sort direction as the last order specified, or 'ASCENDING' if no order was specified. For example: * `SELECT * FROM Foo ORDER BY A` becomes `SELECT * FROM Foo ORDER BY A,
-    * __name__` * `SELECT * FROM Foo ORDER BY A DESC` becomes `SELECT * FROM Foo ORDER BY A DESC, __name__ DESC` * `SELECT * FROM Foo WHERE A > 1` becomes `SELECT * FROM Foo WHERE A > 1
-    * ORDER BY A, __name__`
+    * The order to apply to the query results. Firestore allows callers to provide a full ordering, a partial ordering, or no ordering at all. In all cases, Firestore guarantees a stable
+    * ordering through the following rules: * The `order_by` is required to reference all fields used with an inequality filter. * All fields that are required to be in the `order_by` but
+    * are not already present are appended in lexicographical ordering of the field name. * If an order on `__name__` is not specified, it is appended by default. Fields are appended with
+    * the same sort direction as the last order specified, or 'ASCENDING' if no order was specified. For example: * `ORDER BY a` becomes `ORDER BY a ASC, __name__ ASC` * `ORDER BY a DESC`
+    * becomes `ORDER BY a DESC, __name__ DESC` * `WHERE a > 1` becomes `WHERE a > 1 ORDER BY a ASC, __name__ ASC` * `WHERE __name__ > ... AND a > 1` becomes `WHERE __name__ > ... AND a >
+    * 1 ORDER BY a ASC, __name__ ASC`
     */
   var orderBy: js.UndefOr[js.Array[Order]] = js.undefined
   
@@ -53,7 +54,7 @@ object StructuredQuery {
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    inline def setFromVarargs(value: CollectionSelector*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: CollectionSelector*): Self = StObject.set(x, "from", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
@@ -67,7 +68,7 @@ object StructuredQuery {
     
     inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    inline def setOrderByVarargs(value: Order*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+    inline def setOrderByVarargs(value: Order*): Self = StObject.set(x, "orderBy", js.Array(value*))
     
     inline def setSelect(value: Projection): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     

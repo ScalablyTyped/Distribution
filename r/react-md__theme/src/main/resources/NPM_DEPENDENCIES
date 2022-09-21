@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/theme" : "2.4.2"
+      "@react-md/theme" : "5.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/theme" : "2.4.2"
+      "@react-md/theme" : "5.1.3"
     }
   ],
   "compile-devDependencies" : [

@@ -11,7 +11,10 @@ trait GroupSettingTemplate
   // Description of the template.
   var description: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Display name of the template.
+  /**
+    * Display name of the template. The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group
+    * settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+    */
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
@@ -45,6 +48,6 @@ object GroupSettingTemplate {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: SettingTemplateValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SettingTemplateValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

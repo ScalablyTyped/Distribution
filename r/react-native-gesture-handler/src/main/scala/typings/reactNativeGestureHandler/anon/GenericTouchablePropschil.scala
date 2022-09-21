@@ -1,0 +1,436 @@
+package typings.reactNativeGestureHandler.anon
+
+import typings.react.mod.Key
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
+import typings.reactNative.mod.AccessibilityActionEvent
+import typings.reactNative.mod.AccessibilityActionInfo
+import typings.reactNative.mod.AccessibilityRole
+import typings.reactNative.mod.AccessibilityState
+import typings.reactNative.mod.AccessibilityValue
+import typings.reactNative.mod.Insets
+import typings.reactNative.mod.LayoutChangeEvent
+import typings.reactNative.mod.NativeSyntheticEvent
+import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.TargetedEvent
+import typings.reactNative.mod.ViewStyle
+import typings.reactNativeGestureHandler.genericTouchableMod.default
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`no-hide-descendants`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.assertive
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.no
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.polite
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.yes
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Inlined react-native-gesture-handler.react-native-gesture-handler/lib/typescript/components/touchables/GenericTouchable.GenericTouchableProps & {  children :react.react.ReactNode | undefined} & react.react.RefAttributes<react-native-gesture-handler.react-native-gesture-handler/lib/typescript/components/touchables/GenericTouchable.default> */
+trait GenericTouchablePropschil extends StObject {
+  
+  /**
+    * Provides an array of custom actions available for accessibility.
+    */
+  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
+  
+  /**
+    * A Boolean value indicating whether the accessibility elements contained within this accessibility element
+    * are hidden to the screen reader.
+    * @platform ios
+    */
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * An accessibility hint helps users understand what will happen when they perform an action on the accessibility element when that result is not obvious from the accessibility label.
+    */
+  var accessibilityHint: js.UndefOr[String] = js.undefined
+  
+  /**
+    * https://reactnative.dev/docs/accessibility#accessibilityignoresinvertcolorsios
+    * @platform ios
+    */
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Overrides the text that's read by the screen reader when the user interacts with the element. By default, the
+    * label is constructed by traversing all the children and accumulating all the Text nodes separated by space.
+    */
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies the nativeID of the associated label text. When the assistive technology focuses on the component with this props, the text is read aloud.
+    * @platform android
+    */
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  /**
+    * Indicates to the accessibility services that the UI component is in
+    * a specific language. The provided string should be formatted following
+    * the BCP 47 specification (https://www.rfc-editor.org/info/bcp47).
+    * @platform ios
+    */
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates to accessibility services whether the user should be notified when this view changes.
+    * Works for Android API >= 19 only.
+    * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
+    * @platform android
+    */
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  
+  /**
+    * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
+    */
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
+  
+  /**
+    * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
+    */
+  var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
+  
+  /**
+    * Represents the current value of a component. It can be a textual description of a component's value, or for range-based components, such as sliders and progress bars,
+    * it contains range information (minimum, current, and maximum).
+    */
+  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
+  
+  /**
+    * A Boolean value indicating whether VoiceOver should ignore the elements within views that are siblings of the receiver.
+    * @platform ios
+    */
+  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When true, indicates that the view is an accessibility element.
+    * By default, all the touchable elements are accessible.
+    */
+  var accessible: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
+  /**
+    * Delay in ms, from onPressIn, before onLongPress is called.
+    */
+  var delayLongPress: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Delay in ms, from the start of the touch, before onPressIn is called.
+    */
+  var delayPressIn: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Delay in ms, from the release of the touch, before onPressOut is called.
+    */
+  var delayPressOut: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * If true, disable all interactions for this component.
+    */
+  var disabled: js.UndefOr[Boolean | Null] = js.undefined
+  
+  var disallowInterruption: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * This defines how far your touch can start away from the button.
+    * This is added to pressRetentionOffset when moving off of the button.
+    * NOTE The touch area never extends past the parent view bounds and
+    * the Z-index of sibling views always takes precedence if a touch hits
+    * two overlapping views.
+    */
+  var hitSlop: js.UndefOr[Insets] = js.undefined
+  
+  /**
+    * Controls how view is important for accessibility which is if it fires accessibility events
+    * and if it is reported to accessibility services that query the screen.
+    * Works for Android only. See http://developer.android.com/reference/android/R.attr.html#importantForAccessibility for references.
+    *
+    * Possible values:
+    *      'auto' - The system determines whether the view is important for accessibility - default (recommended).
+    *      'yes' - The view is important for accessibility.
+    *      'no' - The view is not important for accessibility.
+    *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
+    */
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  
+  var key: js.UndefOr[Key | Null] = js.undefined
+  
+  var nativeID: js.UndefOr[String] = js.undefined
+  
+  /**
+    * When `accessible` is true, the system will try to invoke this function when the user performs an accessibility custom action.
+    */
+  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
+  
+  /**
+    * When accessibile is true, the system will invoke this function when the user performs the escape gesture (scrub with two fingers).
+    * @platform ios
+    */
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /**
+    * When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
+    * @platform ios
+    */
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /**
+    * When `accessible` is true (which is the default) this may be called when
+    * the OS-specific concept of "blur" occurs, meaning the element lost focus.
+    * Some platforms may not have the concept of blur.
+    */
+  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
+  
+  /**
+    * When `accessible` is true (which is the default) this may be called when
+    * the OS-specific concept of "focus" occurs. Some platforms may not have
+    * the concept of focus.
+    */
+  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
+  
+  /**
+    * Invoked on mount and layout changes with
+    * {nativeEvent: {layout: {x, y, width, height}}}
+    */
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
+  
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /**
+    * When accessible is true, the system will invoke this function when the user performs the magic tap gesture.
+    * @platform ios
+    */
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var onPressIn: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var onPressOut: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /**
+    * When the scroll view is disabled, this defines how far your
+    * touch may move off of the button, before deactivating the button.
+    * Once deactivated, try moving it back and you'll see that the button
+    * is once again reactivated! Move it back and forth several times
+    * while the scroll view is disabled. Ensure you pass in a constant
+    * to reduce memory allocations.
+    */
+  var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
+  
+  var ref: js.UndefOr[Ref[default]] = js.undefined
+  
+  var shouldActivateOnStart: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * //FIXME: not in doc but available in examples
+    */
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
+  /**
+    * Used to locate this view in end-to-end tests.
+    */
+  var testID: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If true, doesn't play a system sound on touch.
+    *
+    * @platform android
+    */
+  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+}
+object GenericTouchablePropschil {
+  
+  inline def apply(): GenericTouchablePropschil = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GenericTouchablePropschil]
+  }
+  
+  extension [Self <: GenericTouchablePropschil](x: Self) {
+    
+    inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
+    
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
+    
+    inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
+    
+    inline def setAccessibilityHint(value: String): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
+    
+    inline def setAccessibilityIgnoresInvertColors(value: Boolean): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
+    
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
+    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
+    
+    inline def setAccessibilityRole(value: AccessibilityRole): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
+    
+    inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
+    
+    inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
+    
+    inline def setAccessibilityViewIsModal(value: Boolean): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityViewIsModalUndefined: Self = StObject.set(x, "accessibilityViewIsModal", js.undefined)
+    
+    inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+    
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    
+    inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
+    
+    inline def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
+    
+    inline def setDelayPressIn(value: Double): Self = StObject.set(x, "delayPressIn", value.asInstanceOf[js.Any])
+    
+    inline def setDelayPressInUndefined: Self = StObject.set(x, "delayPressIn", js.undefined)
+    
+    inline def setDelayPressOut(value: Double): Self = StObject.set(x, "delayPressOut", value.asInstanceOf[js.Any])
+    
+    inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDisallowInterruption(value: Boolean): Self = StObject.set(x, "disallowInterruption", value.asInstanceOf[js.Any])
+    
+    inline def setDisallowInterruptionUndefined: Self = StObject.set(x, "disallowInterruption", js.undefined)
+    
+    inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
+    
+    inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
+    
+    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    
+    inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
+    
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
+    
+    inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+    
+    inline def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
+    
+    inline def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
+    
+    inline def setOnAccessibilityEscape(value: () => Unit): Self = StObject.set(x, "onAccessibilityEscape", js.Any.fromFunction0(value))
+    
+    inline def setOnAccessibilityEscapeUndefined: Self = StObject.set(x, "onAccessibilityEscape", js.undefined)
+    
+    inline def setOnAccessibilityTap(value: () => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction0(value))
+    
+    inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
+    
+    inline def setOnBlur(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    
+    inline def setOnFocus(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    
+    inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
+    
+    inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
+    
+    inline def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
+    
+    inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+    
+    inline def setOnMagicTap(value: () => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction0(value))
+    
+    inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
+    
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    
+    inline def setOnPressIn(value: () => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction0(value))
+    
+    inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+    
+    inline def setOnPressOut(value: () => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction0(value))
+    
+    inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+    
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    
+    inline def setPressRetentionOffset(value: Insets): Self = StObject.set(x, "pressRetentionOffset", value.asInstanceOf[js.Any])
+    
+    inline def setPressRetentionOffsetUndefined: Self = StObject.set(x, "pressRetentionOffset", js.undefined)
+    
+    inline def setRef(value: Ref[default]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: /* instance */ default | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    
+    inline def setShouldActivateOnStart(value: Boolean): Self = StObject.set(x, "shouldActivateOnStart", value.asInstanceOf[js.Any])
+    
+    inline def setShouldActivateOnStartUndefined: Self = StObject.set(x, "shouldActivateOnStart", js.undefined)
+    
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    
+    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    
+    inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
+    
+    inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
+  }
+}

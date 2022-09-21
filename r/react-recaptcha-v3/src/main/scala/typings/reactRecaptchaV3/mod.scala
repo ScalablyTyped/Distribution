@@ -14,14 +14,14 @@ object mod {
   
   @JSImport("react-recaptcha-v3", "ReCaptcha")
   @js.native
-  class ReCaptcha protected ()
-    extends Component[ReCaptchaProps, js.Object, js.Any] {
+  open class ReCaptcha protected ()
+    extends Component[ReCaptchaProps, js.Object, Any] {
     def this(props: ReCaptchaProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReCaptchaProps, context: js.Any) = this()
+    def this(props: ReCaptchaProps, context: Any) = this()
     
     def execute(): Unit = js.native
   }
@@ -39,8 +39,8 @@ object mod {
     
     @JSImport("react-recaptcha-v3", "ReCaptcha.propTypes")
     @js.native
-    def propTypes: js.Any = js.native
-    inline def propTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: Any = js.native
+    inline def propTypes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
     trait ReCaptchaProps extends StObject {
       

@@ -16,7 +16,7 @@ trait PersistentSettings extends StObject {
   
   def exportNodeSettings(safeSettings: js.Object): js.Object
   
-  def get(prop: String): js.Any
+  def get(prop: String): Any
   
   def getUserSettings(username: String): js.Object
   
@@ -28,7 +28,7 @@ trait PersistentSettings extends StObject {
   
   def reset(): Unit
   
-  def set(prop: String, value: js.Any): js.Promise[Unit]
+  def set(prop: String, value: Any): js.Promise[Unit]
   
   def setUserSettings(username: String, settings: js.Object): js.Promise[Unit]
 }
@@ -40,13 +40,13 @@ object PersistentSettings {
     disableNodeSettings: js.Array[String] => Unit,
     enableNodeSettings: js.Array[String] => Unit,
     exportNodeSettings: js.Object => js.Object,
-    get: String => js.Any,
+    get: String => Any,
     getUserSettings: String => js.Object,
     init: LocalSettings => Unit,
     load: StorageModule => Unit,
     registerNodeSettings: (String, js.Object) => Unit,
     reset: () => Unit,
-    set: (String, js.Any) => js.Promise[Unit],
+    set: (String, Any) => js.Promise[Unit],
     setUserSettings: (String, js.Object) => js.Promise[Unit]
   ): PersistentSettings = {
     val __obj = js.Dynamic.literal(available = js.Any.fromFunction0(available), delete = js.Any.fromFunction1(delete), disableNodeSettings = js.Any.fromFunction1(disableNodeSettings), enableNodeSettings = js.Any.fromFunction1(enableNodeSettings), exportNodeSettings = js.Any.fromFunction1(exportNodeSettings), get = js.Any.fromFunction1(get), getUserSettings = js.Any.fromFunction1(getUserSettings), init = js.Any.fromFunction1(init), load = js.Any.fromFunction1(load), registerNodeSettings = js.Any.fromFunction2(registerNodeSettings), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction2(set), setUserSettings = js.Any.fromFunction2(setUserSettings))
@@ -65,7 +65,7 @@ object PersistentSettings {
     
     inline def setExportNodeSettings(value: js.Object => js.Object): Self = StObject.set(x, "exportNodeSettings", js.Any.fromFunction1(value))
     
-    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setGetUserSettings(value: String => js.Object): Self = StObject.set(x, "getUserSettings", js.Any.fromFunction1(value))
     
@@ -77,7 +77,7 @@ object PersistentSettings {
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    inline def setSet(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, Any) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     inline def setSetUserSettings(value: (String, js.Object) => js.Promise[Unit]): Self = StObject.set(x, "setUserSettings", js.Any.fromFunction2(value))
   }

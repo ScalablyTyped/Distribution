@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The sentiment analysis response message.
-  */
 trait SchemaAnalyzeSentimentResponse extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaAnalyzeSentimentResponse extends StObject {
   var documentSentiment: js.UndefOr[SchemaSentiment] = js.undefined
   
   /**
-    * The language of the text, which will be the same as the language
-    * specified in the request or, if not specified, the automatically-detected
-    * language. See Document.language field for more details.
+    * The language of the text, which will be the same as the language specified in the request or, if not specified, the automatically-detected language. See Document.language field for more details.
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The sentiment for all the sentences in the document.
@@ -41,12 +36,14 @@ object SchemaAnalyzeSentimentResponse {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
+    
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     inline def setSentences(value: js.Array[SchemaSentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
     inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    inline def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
+    inline def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value*))
   }
 }

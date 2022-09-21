@@ -17,7 +17,7 @@ object Microsoft {
           **/
         @JSGlobal("Microsoft.PlayerFramework.Js.Advertising.RemoteAdSource")
         @js.native
-        class RemoteAdSource ()
+        open class RemoteAdSource ()
           extends StObject
              with typings.playerframework.Microsoft.PlayerFramework.Js.Advertising.RemoteAdSource
       }
@@ -28,7 +28,7 @@ object Microsoft {
     
     @JSGlobal("Microsoft.VideoAdvertising.Extensions")
     @js.native
-    class Extensions ()
+    open class Extensions ()
       extends StObject
          with typings.playerframework.Microsoft.VideoAdvertising.Extensions
     object Extensions {
@@ -46,7 +46,7 @@ object Microsoft {
     
     @JSGlobal("Microsoft.VideoAdvertising.VastAdPayloadHandler")
     @js.native
-    class VastAdPayloadHandler ()
+    open class VastAdPayloadHandler ()
       extends StObject
          with typings.playerframework.Microsoft.VideoAdvertising.VastAdPayloadHandler
     object VastAdPayloadHandler {

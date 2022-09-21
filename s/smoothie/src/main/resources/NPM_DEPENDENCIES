@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "smoothie" : "1.35.0"
+      "smoothie" : "1.36.1"
     }
   ],
   "test-dependencies" : [
     {
-      "smoothie" : "1.35.0"
+      "smoothie" : "1.36.1"
     }
   ],
   "compile-devDependencies" : [

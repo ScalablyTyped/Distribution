@@ -22,6 +22,6 @@ object QueryRequestPayload {
     
     inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    inline def setDevicesVarargs(value: AgentDeviceId*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: AgentDeviceId*): Self = StObject.set(x, "devices", js.Array(value*))
   }
 }

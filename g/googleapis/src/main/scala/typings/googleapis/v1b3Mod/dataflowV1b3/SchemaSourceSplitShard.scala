@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * DEPRECATED in favor of DerivedSource.
-  */
 trait SchemaSourceSplitShard extends StObject {
   
   /**
     * DEPRECATED
     */
-  var derivationMode: js.UndefOr[String] = js.undefined
+  var derivationMode: js.UndefOr[String | Null] = js.undefined
   
   /**
     * DEPRECATED
@@ -29,6 +26,8 @@ object SchemaSourceSplitShard {
   extension [Self <: SchemaSourceSplitShard](x: Self) {
     
     inline def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
+    
+    inline def setDerivationModeNull: Self = StObject.set(x, "derivationMode", null)
     
     inline def setDerivationModeUndefined: Self = StObject.set(x, "derivationMode", js.undefined)
     

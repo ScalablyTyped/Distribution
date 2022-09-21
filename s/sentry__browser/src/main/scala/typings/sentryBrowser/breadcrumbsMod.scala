@@ -1,7 +1,8 @@
 package typings.sentryBrowser
 
 import typings.sentryBrowser.anon.PartialBreadcrumbsOptions
-import typings.sentryTypes.eventMod.Event
+import typings.sentryBrowser.anon.ReadonlyBreadcrumbsOption
+import typings.sentryBrowser.anon.SerializeAttribute
 import typings.sentryTypes.eventprocessorMod.EventProcessor
 import typings.sentryTypes.hubMod.Hub
 import typings.sentryTypes.integrationMod.Integration
@@ -11,54 +12,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object breadcrumbsMod {
   
-  @JSImport("@sentry/browser/dist/integrations/breadcrumbs", "Breadcrumbs")
+  @JSImport("@sentry/browser/types/integrations/breadcrumbs", "BREADCRUMB_INTEGRATION_ID")
+  @js.native
+  val BREADCRUMB_INTEGRATION_ID: /* "Breadcrumbs" */ String = js.native
+  
+  @JSImport("@sentry/browser/types/integrations/breadcrumbs", "Breadcrumbs")
   @js.native
   /**
     * @inheritDoc
     */
-  class Breadcrumbs ()
+  open class Breadcrumbs ()
     extends StObject
        with Integration {
     def this(options: PartialBreadcrumbsOptions) = this()
-    
-    /**
-      * Creates breadcrumbs from console API calls
-      */
-    /* private */ var _consoleBreadcrumb: js.Any = js.native
-    
-    /**
-      * Creates breadcrumbs from DOM API calls
-      */
-    /* private */ var _domBreadcrumb: js.Any = js.native
-    
-    /**
-      * Creates breadcrumbs from fetch API calls
-      */
-    /* private */ var _fetchBreadcrumb: js.Any = js.native
-    
-    /**
-      * Creates breadcrumbs from history API calls
-      */
-    /* private */ var _historyBreadcrumb: js.Any = js.native
-    
-    /** JSDoc */
-    /* private */ val _options: js.Any = js.native
-    
-    /**
-      * Creates breadcrumbs from XHR API calls
-      */
-    /* private */ var _xhrBreadcrumb: js.Any = js.native
-    
-    /**
-      * Create a breadcrumb of `sentry` from the events themselves
-      */
-    def addSentryBreadcrumb(event: Event): Unit = js.native
     
     /**
       * Returns {@link IntegrationClass.id}
       */
     /* CompleteClass */
     var name: String = js.native
+    
+    /**
+      * Options of the breadcrumbs integration.
+      */
+    val options: ReadonlyBreadcrumbsOption = js.native
     
     /**
       * Instrument browser built-ins w/ breadcrumb capturing
@@ -82,14 +59,14 @@ object breadcrumbsMod {
   /* static members */
   object Breadcrumbs {
     
-    @JSImport("@sentry/browser/dist/integrations/breadcrumbs", "Breadcrumbs")
+    @JSImport("@sentry/browser/types/integrations/breadcrumbs", "Breadcrumbs")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/browser/dist/integrations/breadcrumbs", "Breadcrumbs.id")
+    @JSImport("@sentry/browser/types/integrations/breadcrumbs", "Breadcrumbs.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
@@ -100,7 +77,7 @@ object breadcrumbsMod {
     
     var console: Boolean
     
-    var dom: Boolean
+    var dom: Boolean | SerializeAttribute
     
     var fetch: Boolean
     
@@ -112,7 +89,14 @@ object breadcrumbsMod {
   }
   object BreadcrumbsOptions {
     
-    inline def apply(console: Boolean, dom: Boolean, fetch: Boolean, history: Boolean, sentry: Boolean, xhr: Boolean): BreadcrumbsOptions = {
+    inline def apply(
+      console: Boolean,
+      dom: Boolean | SerializeAttribute,
+      fetch: Boolean,
+      history: Boolean,
+      sentry: Boolean,
+      xhr: Boolean
+    ): BreadcrumbsOptions = {
       val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any], dom = dom.asInstanceOf[js.Any], fetch = fetch.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], sentry = sentry.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
       __obj.asInstanceOf[BreadcrumbsOptions]
     }
@@ -121,7 +105,7 @@ object breadcrumbsMod {
       
       inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      inline def setDom(value: Boolean): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: Boolean | SerializeAttribute): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
       inline def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       

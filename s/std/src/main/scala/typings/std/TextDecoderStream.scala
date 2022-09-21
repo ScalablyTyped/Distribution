@@ -9,9 +9,11 @@ trait TextDecoderStream
      with GenericTransformStream
      with TextDecoderCommon {
   
+  /* standard dom */
   @JSName("readable")
   val readable_TextDecoderStream: ReadableStream[java.lang.String]
   
+  /* standard dom */
   @JSName("writable")
   val writable_TextDecoderStream: WritableStream[BufferSource]
 }

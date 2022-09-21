@@ -13,7 +13,7 @@ trait SparkLine
   def animate(value: Boolean): this.type = js.native
   
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
-  def color(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native
+  def color(func: js.Function2[/* d */ Any, /* i */ Double, String]): this.type = js.native
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
   def color(value: js.Array[String]): this.type = js.native
   
@@ -38,9 +38,9 @@ trait SparkLine
   def width(value: Double): this.type = js.native
   
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(): js.Function2[/* d */ js.Any, /* i */ js.UndefOr[Double], Double] = js.native
+  def x(): js.Function2[/* d */ Any, /* i */ js.UndefOr[Double], Double] = js.native
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(func: js.Function2[/* d */ js.Any, /* i */ js.UndefOr[Double], Double]): this.type = js.native
+  def x(func: js.Function2[/* d */ Any, /* i */ js.UndefOr[Double], Double]): this.type = js.native
   
   /* Defines the whole X scale's domain. Using this will disable calculating the domain based on the data.*/
   def xDomain(): js.Array[Double] = js.native
@@ -53,13 +53,13 @@ trait SparkLine
   def xRange(value: js.Array[Double]): this.type = js.native
   
   /* Override the default scale type for the X axis*/
-  def xScale(): js.Any = js.native
+  def xScale(): Any = js.native
   /* Override the default scale type for the X axis*/
-  def xScale(value: js.Any): this.type = js.native
+  def xScale(value: Any): this.type = js.native
   
-  def y(): js.Function2[/* d */ js.Any, /* i */ js.UndefOr[Double], Double] = js.native
+  def y(): js.Function2[/* d */ Any, /* i */ js.UndefOr[Double], Double] = js.native
   /* Proxy function to return the y value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def y(func: js.Function2[/* d */ js.Any, /* i */ js.UndefOr[Double], Double]): this.type = js.native
+  def y(func: js.Function2[/* d */ Any, /* i */ js.UndefOr[Double], Double]): this.type = js.native
   
   /* Defines the whole y scale's domain. Using this will disable calculating the domain based on the data.*/
   def yDomain(): js.Array[Double] = js.native
@@ -72,7 +72,7 @@ trait SparkLine
   def yRange(value: js.Array[Double]): this.type = js.native
   
   /* Override the default scale type for the y axis*/
-  def yScale(): js.Any = js.native
+  def yScale(): Any = js.native
   /* Override the default scale type for the y axis*/
-  def yScale(value: js.Any): this.type = js.native
+  def yScale(value: Any): this.type = js.native
 }

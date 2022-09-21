@@ -15,23 +15,23 @@ trait ImportContext extends StObject {
   var csvImportOptions: js.UndefOr[Columns] = js.undefined
   
   /**
-    * The target database for the import. If *fileType* is *SQL*, this field is required only if the import file does not specify a database, and is overridden by any database
-    * specification in the import file. If *fileType* is *CSV*, one database must be specified.
+    * The target database for the import. If `fileType` is `SQL`, this field is required only if the import file does not specify a database, and is overridden by any database
+    * specification in the import file. If `fileType` is `CSV`, one database must be specified.
     */
   var database: js.UndefOr[String] = js.undefined
   
-  /** The file type for the specified uri. *SQL*: The file contains SQL statements. *CSV*: The file contains CSV data. */
+  /** The file type for the specified uri.\`SQL`: The file contains SQL statements. \`CSV`: The file contains CSV data. */
   var fileType: js.UndefOr[String] = js.undefined
   
   /** The PostgreSQL user for this import operation. PostgreSQL instances only. */
   var importUser: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#importContext*. */
+  /** This is always `sql#importContext`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /**
-    * Path to the import file in Cloud Storage, in the form *gs: //bucketName/fileName*. Compressed gzip files (.gz) are supported // when *fileType* is *SQL*. The instance must have //
-    * write permissions to the bucket and read access to the file.
+    * Path to the import file in Cloud Storage, in the form `gs://bucketName/fileName`. Compressed gzip files (.gz) are supported when `fileType` is `SQL`. The instance must have write
+    * permissions to the bucket and read access to the file.
     */
   var uri: js.UndefOr[String] = js.undefined
 }

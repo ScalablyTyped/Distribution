@@ -1,7 +1,6 @@
 package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,27 +8,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GeometryBufferRenderer extends StObject {
   
-  /* private */ var _assignRenderTargetIndices: js.Any = js.native
+  /* private */ var _assignRenderTargetIndices: Any = js.native
   
-  /* private */ var _attachments: js.Any = js.native
+  /* private */ var _attachments: Any = js.native
   
   /* protected */ var _cachedDefines: String = js.native
   
-  /* private */ var _copyBonesTransformationMatrices: js.Any = js.native
+  /* private */ var _copyBonesTransformationMatrices: Any = js.native
   
   /* protected */ def _createRenderTargets(): Unit = js.native
   
-  /* private */ var _depthNormalIndex: js.Any = js.native
+  /* private */ var _depthFormat: Any = js.native
   
-  /* protected */ var _effect: Effect = js.native
+  /* private */ var _depthIndex: Any = js.native
   
-  /* private */ var _enablePosition: js.Any = js.native
+  /* private */ var _enablePosition: Any = js.native
   
-  /* private */ var _enableReflectivity: js.Any = js.native
+  /* private */ var _enableReflectivity: Any = js.native
   
-  /* private */ var _enableVelocity: js.Any = js.native
+  /* private */ var _enableVelocity: Any = js.native
   
   /**
+    * @param geometryBufferType
+    * @param index
     * @hidden
     * Replaces a texture in the geometry buffer renderer
     * Useful when linking textures of the prepass renderer
@@ -37,6 +38,7 @@ trait GeometryBufferRenderer extends StObject {
   def _forceTextureType(geometryBufferType: Double, index: Double): Unit = js.native
   
   /**
+    * @param internalTexture
     * @hidden
     * Replaces the first texture which is hard coded as a depth texture in the geometry buffer
     * Useful when linking textures of the prepass renderer
@@ -44,26 +46,29 @@ trait GeometryBufferRenderer extends StObject {
   def _linkInternalTexture(internalTexture: InternalTexture): Unit = js.native
   
   /**
+    * @param prePassRenderer
     * @hidden
     * Sets up internal structures to share outputs with PrePassRenderer
     * This method should only be called by the PrePassRenderer itself
     */
   def _linkPrePassRenderer(prePassRenderer: PrePassRenderer): Unit = js.native
   
-  /* private */ var _linkedWithPrePass: js.Any = js.native
+  /* private */ var _linkedWithPrePass: Any = js.native
   
-  /* private */ var _multiRenderTarget: js.Any = js.native
+  /* private */ var _multiRenderTarget: Any = js.native
   
-  /* private */ var _positionIndex: js.Any = js.native
+  /* private */ var _normalIndex: Any = js.native
   
-  /* private */ var _prePassRenderer: js.Any = js.native
+  /* private */ var _positionIndex: Any = js.native
+  
+  /* private */ var _prePassRenderer: Any = js.native
   
   /**
     * Dictionary used to store the previous bones transformation matrices of each rendered mesh
     * in order to compute objects velocities when enableVelocity is set to "true"
     * @hidden
     */
-  var _previousBonesTransformationMatrices: NumberDictionary[Float32Array] = js.native
+  var _previousBonesTransformationMatrices: NumberDictionary[js.typedarray.Float32Array] = js.native
   
   /**
     * Dictionary used to store the previous transformation matrices of each rendered mesh
@@ -72,9 +77,9 @@ trait GeometryBufferRenderer extends StObject {
     */
   var _previousTransformationMatrices: NumberDictionary[ISavedTransformationMatrix] = js.native
   
-  /* private */ var _ratio: js.Any = js.native
+  /* private */ var _ratio: Any = js.native
   
-  /* private */ var _reflectivityIndex: js.Any = js.native
+  /* private */ var _reflectivityIndex: Any = js.native
   
   /**
     * @hidden
@@ -82,11 +87,12 @@ trait GeometryBufferRenderer extends StObject {
     */
   def _resetLayout(): Unit = js.native
   
-  /* private */ var _resizeObserver: js.Any = js.native
+  /* private */ var _resizeObserver: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /**
+    * @param attachments
     * @hidden
     * Sets texture attachments
     * Useful when linking textures of the prepass renderer
@@ -100,7 +106,9 @@ trait GeometryBufferRenderer extends StObject {
     */
   def _unlinkPrePassRenderer(): Unit = js.native
   
-  /* private */ var _velocityIndex: js.Any = js.native
+  /* private */ var _useUbo: Any = js.native
+  
+  /* private */ var _velocityIndex: Any = js.native
   
   /**
     * Disposes the renderer and frees up associated resources.
@@ -117,11 +125,15 @@ trait GeometryBufferRenderer extends StObject {
   def enablePosition_=(enable: Boolean): Unit = js.native
   
   /**
-    * Gets a boolean indicating if objects roughness are enabled in the G buffer.
+    * Gets a boolean indicating if objects reflectivity are enabled in the G buffer.
     */
   def enableReflectivity: Boolean = js.native
   /**
-    * Sets wether or not objects roughness are enabled for the G buffer.
+    * Sets whether or not objects reflectivity are enabled for the G buffer.
+    * For Metallic-Roughness workflow with ORM texture, we assume that ORM texture is defined according to the default layout:
+    * pbr.useRoughnessFromMetallicTextureAlpha = false;
+    * pbr.useRoughnessFromMetallicTextureGreen = true;
+    * pbr.useMetallnessFromMetallicTextureBlue = true;
     */
   def enableReflectivity_=(enable: Boolean): Unit = js.native
   
@@ -130,7 +142,7 @@ trait GeometryBufferRenderer extends StObject {
     */
   def enableVelocity: Boolean = js.native
   /**
-    * Sets wether or not objects velocities are enabled for the G buffer.
+    * Sets whether or not objects velocities are enabled for the G buffer.
     */
   def enableVelocity_=(enable: Boolean): Unit = js.native
   
@@ -154,7 +166,7 @@ trait GeometryBufferRenderer extends StObject {
   def getTextureIndex(textureType: Double): Double = js.native
   
   /**
-    * Checks wether everything is ready to render a submesh to the G buffer.
+    * Checks whether everything is ready to render a submesh to the G buffer.
     * @param subMesh the submesh to check readiness for
     * @param useInstances is the mesh drawn using instance or not
     * @returns true if ready otherwise false
@@ -162,7 +174,7 @@ trait GeometryBufferRenderer extends StObject {
   def isReady(subMesh: SubMesh, useInstances: Boolean): Boolean = js.native
   
   /**
-    * Gets wether or not G buffer are supported by the running hardware.
+    * Gets whether or not G buffer are supported by the running hardware.
     * This requires draw buffer supports
     */
   def isSupported: Boolean = js.native

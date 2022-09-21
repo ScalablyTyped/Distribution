@@ -36,7 +36,7 @@ object Dim3DDiagram {
     acquire: () => Unit,
     getFloor: () => XPropertySet,
     getWall: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     set3DSettingsToDefault: () => Unit,
     setDefaultIllumination: () => Unit,

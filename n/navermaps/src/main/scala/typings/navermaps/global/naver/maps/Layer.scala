@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Layer
 @JSGlobal("naver.maps.Layer")
 @js.native
-class Layer protected ()
+open class Layer protected ()
   extends StObject
      with typings.navermaps.naver.maps.Layer {
   def this(name: String, MapTypeRegistry: typings.navermaps.naver.maps.MapTypeRegistry, options: LayerOptions) = this()

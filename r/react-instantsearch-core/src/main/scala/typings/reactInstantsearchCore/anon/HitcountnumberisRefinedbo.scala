@@ -51,7 +51,7 @@ object HitcountnumberisRefinedbo {
     
     inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def set_highlightResult(value: typings.reactInstantsearchCore.mod.HighlightResult[Value]): Self = StObject.set(x, "_highlightResult", value.asInstanceOf[js.Any])
   }

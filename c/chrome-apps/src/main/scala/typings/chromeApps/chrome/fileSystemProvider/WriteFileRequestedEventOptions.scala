@@ -2,7 +2,6 @@ package typings.chromeApps.chrome.fileSystemProvider
 
 import typings.chromeApps.chrome.fileSystemProvider.internal.RequestedEventOptions
 import typings.chromeApps.chrome.integer
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait WriteFileRequestedEventOptions
      with RequestedEventOptions {
   
   /** Buffer of bytes to be operated on the file. */
-  var data: ArrayBuffer
+  var data: js.typedarray.ArrayBuffer
   
   /** Position in the file (in bytes) to start operating from. */
   var offset: integer
@@ -23,7 +22,7 @@ trait WriteFileRequestedEventOptions
 object WriteFileRequestedEventOptions {
   
   inline def apply(
-    data: ArrayBuffer,
+    data: js.typedarray.ArrayBuffer,
     fileSystemId: String,
     offset: integer,
     openRequestId: integer,
@@ -35,7 +34,7 @@ object WriteFileRequestedEventOptions {
   
   extension [Self <: WriteFileRequestedEventOptions](x: Self) {
     
-    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

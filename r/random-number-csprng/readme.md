@@ -11,9 +11,9 @@ A cryptographically secure generator for random numbers in a range.
 | Full name          | random-number-csprng |
 | Keywords           | csprng, random, number, crypto |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 507008 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 125779.33333333333 |
+| # stars            | 73.0 |
 
 ## Links
 - [Homepage](https://github.com/joepie91/node-random-number-csprng#readme)

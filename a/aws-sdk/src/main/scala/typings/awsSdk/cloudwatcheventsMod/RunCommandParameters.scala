@@ -22,6 +22,6 @@ object RunCommandParameters {
     
     inline def setRunCommandTargets(value: RunCommandTargets): Self = StObject.set(x, "RunCommandTargets", value.asInstanceOf[js.Any])
     
-    inline def setRunCommandTargetsVarargs(value: RunCommandTarget*): Self = StObject.set(x, "RunCommandTargets", js.Array(value :_*))
+    inline def setRunCommandTargetsVarargs(value: RunCommandTarget*): Self = StObject.set(x, "RunCommandTargets", js.Array(value*))
   }
 }

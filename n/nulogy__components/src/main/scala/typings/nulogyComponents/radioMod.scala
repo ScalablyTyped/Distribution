@@ -8,9 +8,9 @@ object radioMod {
   
   @JSImport("@nulogy/components/src/Radio", "Radio")
   @js.native
-  val Radio: js.Any = js.native
+  val Radio: Any = js.native
   
   @JSImport("@nulogy/components/src/Radio", "RadioGroup")
   @js.native
-  val RadioGroup: js.Any = js.native
+  val RadioGroup: Any = js.native
 }

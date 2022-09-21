@@ -72,18 +72,11 @@ trait projection extends StObject {
   def isLoaded(): Boolean = js.native
   
   /**
-    * Indicates if this module is supported in the browser.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html#isSupported)
-    */
-  def isSupported(): Boolean = js.native
-  
-  /**
     * Loads this module's dependencies.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html#load)
     */
-  def load(): js.Promise[js.Any] = js.native
+  def load(): js.Promise[Any] = js.native
   
   def project(geometry: js.Array[Geometry_], outSpatialReference: SpatialReference): Geometry_ | js.Array[Geometry_] = js.native
   def project(geometry: js.Array[Geometry_], outSpatialReference: SpatialReferenceProperties): Geometry_ | js.Array[Geometry_] = js.native

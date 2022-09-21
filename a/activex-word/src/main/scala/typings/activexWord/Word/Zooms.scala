@@ -12,7 +12,7 @@ trait Zooms extends StObject {
   
   def Item(Index: WdViewType): Zoom
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Zooms_typekey")
   var WordDotZooms_typekey: Zooms
@@ -23,7 +23,7 @@ object Zooms {
     Application: Application,
     Creator: Double,
     Item: WdViewType => Zoom,
-    Parent: js.Any,
+    Parent: Any,
     WordDotZooms_typekey: Zooms
   ): Zooms = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object Zooms {
     
     inline def setItem(value: WdViewType => Zoom): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotZooms_typekey(value: Zooms): Self = StObject.set(x, "Word.Zooms_typekey", value.asInstanceOf[js.Any])
   }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__esri.Evented")
 @js.native
-class Evented ()
+open class Evented ()
   extends StObject
      with typings.arcgisJsApi.esri.Evented

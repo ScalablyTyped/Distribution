@@ -12,6 +12,7 @@ import typings.luminoCommands.mod.CommandRegistry.ICommandOptions
 import typings.luminoCommands.mod.CommandRegistry.IKeyBinding
 import typings.luminoCommands.mod.CommandRegistry.IKeyBindingChangedArgs
 import typings.luminoCommands.mod.CommandRegistry.IKeyBindingOptions
+import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
@@ -25,62 +26,59 @@ object mod {
   
   @JSImport("@lumino/commands", "CommandRegistry")
   @js.native
-  /**
-    * Construct a new command registry.
-    */
-  class CommandRegistry () extends StObject {
+  open class CommandRegistry () extends StObject {
     
     /**
       * Clear the internal pending state.
       */
-    /* private */ var _clearPendingState: js.Any = js.native
+    /* private */ var _clearPendingState: Any = js.native
     
     /**
       * Clear the pending timeout.
       */
-    /* private */ var _clearTimer: js.Any = js.native
+    /* private */ var _clearTimer: Any = js.native
     
-    /* private */ var _commandChanged: js.Any = js.native
+    /* private */ var _commandChanged: Any = js.native
     
-    /* private */ var _commandExecuted: js.Any = js.native
+    /* private */ var _commandExecuted: Any = js.native
     
-    /* private */ var _commands: js.Any = js.native
+    /* private */ var _commands: Any = js.native
     
-    /* private */ var _exactKeyMatch: js.Any = js.native
+    /* private */ var _exactKeyMatch: Any = js.native
     
     /**
       * Execute the command for the given key binding.
       *
       * If the command is missing or disabled, a warning will be logged.
       */
-    /* private */ var _executeKeyBinding: js.Any = js.native
+    /* private */ var _executeKeyBinding: Any = js.native
     
-    /* private */ var _keyBindingChanged: js.Any = js.native
+    /* private */ var _keyBindingChanged: Any = js.native
     
-    /* private */ var _keyBindings: js.Any = js.native
+    /* private */ var _keyBindings: Any = js.native
     
-    /* private */ var _keydownEvents: js.Any = js.native
+    /* private */ var _keydownEvents: Any = js.native
     
-    /* private */ var _keystrokes: js.Any = js.native
+    /* private */ var _keystrokes: Any = js.native
     
     /**
       * Handle the partial match timeout.
       */
-    /* private */ var _onPendingTimeout: js.Any = js.native
+    /* private */ var _onPendingTimeout: Any = js.native
     
     /**
       * Replay the keydown events which were suppressed.
       */
-    /* private */ var _replayKeydownEvents: js.Any = js.native
+    /* private */ var _replayKeydownEvents: Any = js.native
     
-    /* private */ var _replaying: js.Any = js.native
+    /* private */ var _replaying: Any = js.native
     
     /**
       * Start or restart the pending timeout.
       */
-    /* private */ var _startTimer: js.Any = js.native
+    /* private */ var _startTimer: Any = js.native
     
-    /* private */ var _timerID: js.Any = js.native
+    /* private */ var _timerID: Any = js.native
     
     /**
       * Add a command to the registry.
@@ -189,8 +187,8 @@ object mod {
       * The promise will reject if the command throws an exception,
       * or if the command is not registered.
       */
-    def execute(id: String): js.Promise[js.Any] = js.native
-    def execute(id: String, args: ReadonlyPartialJSONObject): js.Promise[js.Any] = js.native
+    def execute(id: String): js.Promise[Any] = js.native
+    def execute(id: String, args: ReadonlyPartialJSONObject): js.Promise[Any] = js.native
     
     /**
       * Test whether a specific command is registered.
@@ -257,6 +255,19 @@ object mod {
       */
     def isEnabled(id: String): Boolean = js.native
     def isEnabled(id: String, args: ReadonlyPartialJSONObject): Boolean = js.native
+    
+    /**
+      * Test whether a specific command is toggleable.
+      *
+      * @param id - The id of the command of interest.
+      *
+      * @param args - The arguments for the command.
+      *
+      * @returns A boolean indicating whether the command is toggleable,
+      *   or `false` if the command is not registered.
+      */
+    def isToggleable(id: String): Boolean = js.native
+    def isToggleable(id: String, args: ReadonlyJSONObject): Boolean = js.native
     
     /**
       * Test whether a specific command is toggled.
@@ -389,6 +400,15 @@ object mod {
     inline def formatKeystroke(keystroke: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
+      * Check if `'keydown'` event is caused by pressing a modifier key that should be ignored.
+      *
+      * @param event - The event object for a `'keydown'` event.
+      *
+      * @returns `true` if modifier key was pressed, `false` otherwise.
+      */
+    inline def isModifierKeyPressed(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModifierKeyPressed")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    /**
       * Create a normalized keystroke for a `'keydown'` event.
       *
       * @param event - The event object for a `'keydown'` event.
@@ -509,11 +529,11 @@ object mod {
       /**
         * The promise which resolves with the result of the command.
         */
-      val result: js.Promise[js.Any]
+      val result: js.Promise[Any]
     }
     object ICommandExecutedArgs {
       
-      inline def apply(args: ReadonlyPartialJSONObject, id: String, result: js.Promise[js.Any]): ICommandExecutedArgs = {
+      inline def apply(args: ReadonlyPartialJSONObject, id: String, result: js.Promise[Any]): ICommandExecutedArgs = {
         val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICommandExecutedArgs]
       }
@@ -524,7 +544,7 @@ object mod {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        inline def setResult(value: js.Promise[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+        inline def setResult(value: js.Promise[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       }
     }
     
@@ -598,7 +618,7 @@ object mod {
         *
         * This may be invoked even when `isEnabled` returns `false`.
         */
-      def execute(args: ReadonlyPartialJSONObject): js.Any | js.Promise[js.Any]
+      def execute(args: ReadonlyPartialJSONObject): Any | js.Promise[Any]
       /**
         * The function to invoke when the command is executed.
         *
@@ -611,7 +631,7 @@ object mod {
         * This may be invoked even when `isEnabled` returns `false`.
         */
       @JSName("execute")
-      var execute_Original: CommandFunc[js.Any | js.Promise[js.Any]]
+      var execute_Original: CommandFunc[Any | js.Promise[Any]]
       
       /**
         * The icon renderer for the command.
@@ -667,6 +687,20 @@ object mod {
         * The default value is `() => true`.
         */
       var isEnabled: js.UndefOr[CommandFunc[Boolean]] = js.undefined
+      
+      /**
+        * A function which indicates whether the command is toggleable.
+        *
+        * #### Notes
+        * Visual representations may use this value to display a toggled command in
+        * a different form, such as a check box for a menu item or a depressed
+        * state for a toggle button. This attribute also allows for accessible
+        * interfaces to notify the user that the command corresponds to some state.
+        *
+        * The default value is `true` if an `isToggled` function is given, `false`
+        * otherwise.
+        */
+      var isToggleable: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A function which indicates whether the command is toggled.
@@ -737,7 +771,7 @@ object mod {
     }
     object ICommandOptions {
       
-      inline def apply(execute: /* args */ ReadonlyPartialJSONObject => js.Any | js.Promise[js.Any]): ICommandOptions = {
+      inline def apply(execute: /* args */ ReadonlyPartialJSONObject => Any | js.Promise[Any]): ICommandOptions = {
         val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
         __obj.asInstanceOf[ICommandOptions]
       }
@@ -762,7 +796,7 @@ object mod {
         
         inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
         
-        inline def setExecute(value: /* args */ ReadonlyPartialJSONObject => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+        inline def setExecute(value: /* args */ ReadonlyPartialJSONObject => Any | js.Promise[Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
         
         inline def setIcon(value: IRenderer | String | (CommandFunc[js.UndefOr[IRenderer | String]])): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
@@ -785,6 +819,10 @@ object mod {
         inline def setIsEnabled(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
         
         inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+        
+        inline def setIsToggleable(value: Boolean): Self = StObject.set(x, "isToggleable", value.asInstanceOf[js.Any])
+        
+        inline def setIsToggleableUndefined: Self = StObject.set(x, "isToggleable", js.undefined)
         
         inline def setIsToggled(value: /* args */ ReadonlyPartialJSONObject => Boolean): Self = StObject.set(x, "isToggled", js.Any.fromFunction1(value))
         
@@ -857,7 +895,7 @@ object mod {
         
         inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
         
-        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
         
         inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       }
@@ -984,19 +1022,19 @@ object mod {
         
         inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
         
-        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
         
         inline def setLinuxKeys(value: js.Array[String]): Self = StObject.set(x, "linuxKeys", value.asInstanceOf[js.Any])
         
         inline def setLinuxKeysUndefined: Self = StObject.set(x, "linuxKeys", js.undefined)
         
-        inline def setLinuxKeysVarargs(value: String*): Self = StObject.set(x, "linuxKeys", js.Array(value :_*))
+        inline def setLinuxKeysVarargs(value: String*): Self = StObject.set(x, "linuxKeys", js.Array(value*))
         
         inline def setMacKeys(value: js.Array[String]): Self = StObject.set(x, "macKeys", value.asInstanceOf[js.Any])
         
         inline def setMacKeysUndefined: Self = StObject.set(x, "macKeys", js.undefined)
         
-        inline def setMacKeysVarargs(value: String*): Self = StObject.set(x, "macKeys", js.Array(value :_*))
+        inline def setMacKeysVarargs(value: String*): Self = StObject.set(x, "macKeys", js.Array(value*))
         
         inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
@@ -1004,7 +1042,7 @@ object mod {
         
         inline def setWinKeysUndefined: Self = StObject.set(x, "winKeys", js.undefined)
         
-        inline def setWinKeysVarargs(value: String*): Self = StObject.set(x, "winKeys", js.Array(value :_*))
+        inline def setWinKeysVarargs(value: String*): Self = StObject.set(x, "winKeys", js.Array(value*))
       }
     }
     

@@ -30,7 +30,7 @@ object mod {
   
   inline def registerAllowables(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowables")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def registerMock(name: String, mock: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMock")(name.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerMock(name: String, mock: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMock")(name.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def registerSubstitute(name: String, substitute: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSubstitute")(name.asInstanceOf[js.Any], substitute.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

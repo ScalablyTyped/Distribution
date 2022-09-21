@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListClustersRequest extends StObject {
   
   /**
+    * Indicates whether external clusters are included in the returned list. Use 'all' to return connected clusters, or blank to return only Amazon EKS clusters. 'all' must be in lowercase otherwise an error occurs.
+    */
+  var include: js.UndefOr[IncludeClustersList] = js.undefined
+  
+  /**
     * The maximum number of cluster results returned by ListClusters in paginated output. When you use this parameter, ListClusters returns only maxResults results in a single page along with a nextToken response element. You can see the remaining results of the initial request by sending another ListClusters request with the returned nextToken value. This value can be between 1 and 100. If you don't use this parameter, ListClusters returns up to 100 results and a nextToken value if applicable.
     */
   var maxResults: js.UndefOr[ListClustersRequestMaxResults] = js.undefined
@@ -24,6 +29,12 @@ object ListClustersRequest {
   }
   
   extension [Self <: ListClustersRequest](x: Self) {
+    
+    inline def setInclude(value: IncludeClustersList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setMaxResults(value: ListClustersRequestMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,12 @@ trait EnableTransitGatewayRouteTablePropagationRequest extends StObject {
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: typings.awsSdk.ec2Mod.TransitGatewayAttachmentId
+  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayAttachmentId] = js.undefined
+  
+  /**
+    * The ID of the transit gateway route table announcement.
+    */
+  var TransitGatewayRouteTableAnnouncementId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayRouteTableAnnouncementId] = js.undefined
   
   /**
     * The ID of the propagation route table.
@@ -23,11 +28,8 @@ trait EnableTransitGatewayRouteTablePropagationRequest extends StObject {
 }
 object EnableTransitGatewayRouteTablePropagationRequest {
   
-  inline def apply(
-    TransitGatewayAttachmentId: TransitGatewayAttachmentId,
-    TransitGatewayRouteTableId: TransitGatewayRouteTableId
-  ): EnableTransitGatewayRouteTablePropagationRequest = {
-    val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any], TransitGatewayRouteTableId = TransitGatewayRouteTableId.asInstanceOf[js.Any])
+  inline def apply(TransitGatewayRouteTableId: TransitGatewayRouteTableId): EnableTransitGatewayRouteTablePropagationRequest = {
+    val __obj = js.Dynamic.literal(TransitGatewayRouteTableId = TransitGatewayRouteTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableTransitGatewayRouteTablePropagationRequest]
   }
   
@@ -38,6 +40,12 @@ object EnableTransitGatewayRouteTablePropagationRequest {
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     inline def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    
+    inline def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
+    
+    inline def setTransitGatewayRouteTableAnnouncementId(value: TransitGatewayRouteTableAnnouncementId): Self = StObject.set(x, "TransitGatewayRouteTableAnnouncementId", value.asInstanceOf[js.Any])
+    
+    inline def setTransitGatewayRouteTableAnnouncementIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableAnnouncementId", js.undefined)
     
     inline def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
   }

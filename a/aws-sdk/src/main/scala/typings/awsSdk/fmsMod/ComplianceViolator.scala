@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComplianceViolator extends StObject {
   
   /**
+    * Metadata about the resource that doesn't comply with the policy scope.
+    */
+  var Metadata: js.UndefOr[ComplianceViolatorMetadata] = js.undefined
+  
+  /**
     * The resource ID.
     */
   var ResourceId: js.UndefOr[typings.awsSdk.fmsMod.ResourceId] = js.undefined
   
   /**
-    * The resource type. This is in the format shown in the AWS Resource Types Reference. For example: AWS::ElasticLoadBalancingV2::LoadBalancer, AWS::CloudFront::Distribution, or AWS::NetworkFirewall::FirewallPolicy.
+    * The resource type. This is in the format shown in the Amazon Web Services Resource Types Reference. For example: AWS::ElasticLoadBalancingV2::LoadBalancer, AWS::CloudFront::Distribution, or AWS::NetworkFirewall::FirewallPolicy.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.fmsMod.ResourceType] = js.undefined
   
@@ -29,6 +34,10 @@ object ComplianceViolator {
   }
   
   extension [Self <: ComplianceViolator](x: Self) {
+    
+    inline def setMetadata(value: ComplianceViolatorMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

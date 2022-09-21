@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ChatMessageStore extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_messagechanged(`type`: messagechanged, listener: TypedEventHandler[ChatMessageStore, ChatMessageChangedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -160,7 +160,7 @@ trait ChatMessageStore extends StObject {
   @JSName("onstorechanged")
   var onstorechanged_Original: TypedEventHandler[ChatMessageStore, ChatMessageStoreChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_messagechanged(`type`: messagechanged, listener: TypedEventHandler[ChatMessageStore, ChatMessageChangedEventArgs]): Unit = js.native
   @JSName("removeEventListener")

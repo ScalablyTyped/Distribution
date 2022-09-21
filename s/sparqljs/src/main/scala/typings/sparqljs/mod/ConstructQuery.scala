@@ -31,6 +31,6 @@ object ConstructQuery {
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    inline def setTemplateVarargs(value: Triple*): Self = StObject.set(x, "template", js.Array(value :_*))
+    inline def setTemplateVarargs(value: Triple*): Self = StObject.set(x, "template", js.Array(value*))
   }
 }

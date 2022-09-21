@@ -63,7 +63,7 @@ object DialogOptions {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: DialogAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: DialogAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAnimation(value: Boolean | DialogAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

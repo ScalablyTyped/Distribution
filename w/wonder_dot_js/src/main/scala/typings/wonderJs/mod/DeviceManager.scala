@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "DeviceManager")
 @js.native
-class DeviceManager ()
+open class DeviceManager ()
   extends typings.wonderJs.deviceManagerMod.DeviceManager
 /* static members */
 object DeviceManager {
@@ -15,5 +15,5 @@ object DeviceManager {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+  inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
 }

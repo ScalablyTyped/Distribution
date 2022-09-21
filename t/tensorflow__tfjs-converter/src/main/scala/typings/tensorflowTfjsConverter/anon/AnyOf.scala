@@ -19,6 +19,6 @@ object AnyOf {
     
     inline def setAnyOf(value: js.Array[ItemsType | TypeString]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
     
-    inline def setAnyOfVarargs(value: (ItemsType | TypeString)*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+    inline def setAnyOfVarargs(value: (ItemsType | TypeString)*): Self = StObject.set(x, "anyOf", js.Array(value*))
   }
 }

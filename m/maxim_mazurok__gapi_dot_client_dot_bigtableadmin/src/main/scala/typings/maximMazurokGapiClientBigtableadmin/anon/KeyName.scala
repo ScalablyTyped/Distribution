@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientBigtableadmin.anon
 
-import typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin.Instance
+import typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin.UndeleteTableRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait KeyName extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The unique name of the instance. Values are of the form `projects/{project}/instances/a-z+[a-z0-9]`. */
+  /** Required. The unique name of the table to be restored. Values are of the form `projects/{project}/instances/{instance}/tables/{table}`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,10 +39,7 @@ trait KeyName extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Instance
-  
-  /** Required. The subset of Instance fields which should be replaced. Must be explicitly set. */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var resource: UndeleteTableRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +49,7 @@ trait KeyName extends StObject {
 }
 object KeyName {
   
-  inline def apply(name: String, resource: Instance): KeyName = {
+  inline def apply(name: String, resource: UndeleteTableRequest): KeyName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyName]
   }
@@ -97,11 +94,7 @@ object KeyName {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Instance): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setResource(value: UndeleteTableRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

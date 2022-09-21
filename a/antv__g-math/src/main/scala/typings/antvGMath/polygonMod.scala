@@ -11,7 +11,7 @@ object polygonMod {
   
   object default {
     
-    @JSImport("@antv/g-math/lib/polygon", JSImport.Default)
+    @JSImport("@antv/g-math/dist/polygon", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

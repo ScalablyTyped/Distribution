@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("webix.DataCollection")
 @js.native
-class DataCollectionCls ()
+open class DataCollectionCls ()
   extends StObject
      with typings.webix.mod.DataCollection {
   def this(config: DataCollectionConfig) = this()

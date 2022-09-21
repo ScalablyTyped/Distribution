@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.completionItemSlashresolve
 import typings.vscodeLanguageserverTypes.mod.CompletionItem
@@ -9,11 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CompletionResolveRequest {
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "CompletionResolveRequest.method")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "CompletionResolveRequest.messageDirection")
+  @js.native
+  val messageDirection: MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "CompletionResolveRequest.method")
   @js.native
   val method: completionItemSlashresolve = js.native
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "CompletionResolveRequest.type")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "CompletionResolveRequest.type")
   @js.native
   val `type`: ProtocolRequestType[CompletionItem, CompletionItem, scala.Nothing, Unit, Unit] = js.native
 }

@@ -11,9 +11,9 @@ Core binding library for composing asynchronous and event-based operations in Ja
 | Full name          | rx-core-binding |
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 746 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 73.0 |
+| # stars            | 19624.0 |
 
 ## Links
 - [Homepage](https://github.com/Reactive-Extensions/RxJS)

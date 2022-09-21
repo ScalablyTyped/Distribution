@@ -25,6 +25,6 @@ object AppCatalogs {
     
     inline def setTeamsAppsUndefined: Self = StObject.set(x, "teamsApps", js.undefined)
     
-    inline def setTeamsAppsVarargs(value: TeamsApp*): Self = StObject.set(x, "teamsApps", js.Array(value :_*))
+    inline def setTeamsAppsVarargs(value: TeamsApp*): Self = StObject.set(x, "teamsApps", js.Array(value*))
   }
 }

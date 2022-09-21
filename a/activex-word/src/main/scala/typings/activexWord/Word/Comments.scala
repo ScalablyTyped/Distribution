@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Comments extends StObject {
   
   def Add(Range: Range): Comment = js.native
-  def Add(Range: Range, Text: js.Any): Comment = js.native
+  def Add(Range: Range, Text: Any): Comment = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -18,7 +18,7 @@ trait Comments extends StObject {
   
   def Item(Index: Double): Comment = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var ShowBy: String = js.native
   

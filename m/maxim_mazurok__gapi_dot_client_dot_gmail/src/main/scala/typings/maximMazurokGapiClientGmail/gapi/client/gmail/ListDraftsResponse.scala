@@ -28,7 +28,7 @@ object ListDraftsResponse {
     
     inline def setDraftsUndefined: Self = StObject.set(x, "drafts", js.undefined)
     
-    inline def setDraftsVarargs(value: Draft*): Self = StObject.set(x, "drafts", js.Array(value :_*))
+    inline def setDraftsVarargs(value: Draft*): Self = StObject.set(x, "drafts", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

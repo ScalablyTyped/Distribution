@@ -18,10 +18,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-toggled", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ReactToggledProps, ComponentState, js.Any] {
+  open class default protected () extends Component[ReactToggledProps, ComponentState, Any] {
     def this(props: ReactToggledProps) = this()
-    def this(props: ReactToggledProps, context: js.Any) = this()
+    def this(props: ReactToggledProps, context: Any) = this()
   }
   @JSImport("react-toggled", JSImport.Default)
   @js.native
@@ -75,14 +74,14 @@ object mod extends Shortcut {
   @js.native
   trait TogglerStateAndHelpers extends StObject {
     
-    def getElementTogglerProps(): js.Any = js.native
-    def getElementTogglerProps(options: GetElementPropsOptions): js.Any = js.native
+    def getElementTogglerProps(): Any = js.native
+    def getElementTogglerProps(options: GetElementPropsOptions): Any = js.native
     
-    def getInputTogglerProps(): js.Any = js.native
-    def getInputTogglerProps(options: GetButtonPropsOptions): js.Any = js.native
+    def getInputTogglerProps(): Any = js.native
+    def getInputTogglerProps(options: GetButtonPropsOptions): Any = js.native
     
-    def getTogglerProps(): js.Any = js.native
-    def getTogglerProps(options: GetButtonPropsOptions): js.Any = js.native
+    def getTogglerProps(): Any = js.native
+    def getTogglerProps(options: GetButtonPropsOptions): Any = js.native
     
     val on: Boolean = js.native
     

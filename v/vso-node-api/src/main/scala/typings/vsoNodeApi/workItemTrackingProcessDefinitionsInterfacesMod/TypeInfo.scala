@@ -16,8 +16,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessDefinitionsInterfaces", "TypeInfo.FieldModel")
   @js.native
-  def FieldModel: js.Any = js.native
-  inline def FieldModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FieldModel")(x.asInstanceOf[js.Any])
+  def FieldModel: Any = js.native
+  inline def FieldModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FieldModel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessDefinitionsInterfaces", "TypeInfo.FieldType")
   @js.native
@@ -26,8 +26,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessDefinitionsInterfaces", "TypeInfo.FormLayout")
   @js.native
-  def FormLayout: js.Any = js.native
-  inline def FormLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormLayout")(x.asInstanceOf[js.Any])
+  def FormLayout: Any = js.native
+  inline def FormLayout_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormLayout")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessDefinitionsInterfaces", "TypeInfo.GetWorkItemTypeExpand")
   @js.native
@@ -36,14 +36,14 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessDefinitionsInterfaces", "TypeInfo.Page")
   @js.native
-  def Page: js.Any = js.native
+  def Page: Any = js.native
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessDefinitionsInterfaces", "TypeInfo.PageType")
   @js.native
   def PageType: EnumValuesAttachments = js.native
   inline def PageType_=(x: EnumValuesAttachments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageType")(x.asInstanceOf[js.Any])
   
-  inline def Page_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Page")(x.asInstanceOf[js.Any])
+  inline def Page_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Page")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessDefinitionsInterfaces", "TypeInfo.WorkItemTypeClass")
   @js.native
@@ -52,11 +52,11 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessDefinitionsInterfaces", "TypeInfo.WorkItemTypeFieldModel")
   @js.native
-  def WorkItemTypeFieldModel: js.Any = js.native
-  inline def WorkItemTypeFieldModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemTypeFieldModel")(x.asInstanceOf[js.Any])
+  def WorkItemTypeFieldModel: Any = js.native
+  inline def WorkItemTypeFieldModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemTypeFieldModel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessDefinitionsInterfaces", "TypeInfo.WorkItemTypeModel")
   @js.native
-  def WorkItemTypeModel: js.Any = js.native
-  inline def WorkItemTypeModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemTypeModel")(x.asInstanceOf[js.Any])
+  def WorkItemTypeModel: Any = js.native
+  inline def WorkItemTypeModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemTypeModel")(x.asInstanceOf[js.Any])
 }

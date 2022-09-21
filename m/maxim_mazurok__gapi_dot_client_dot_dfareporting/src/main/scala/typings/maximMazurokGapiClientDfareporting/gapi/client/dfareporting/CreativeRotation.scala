@@ -34,7 +34,7 @@ object CreativeRotation {
     
     inline def setCreativeAssignmentsUndefined: Self = StObject.set(x, "creativeAssignments", js.undefined)
     
-    inline def setCreativeAssignmentsVarargs(value: CreativeAssignment*): Self = StObject.set(x, "creativeAssignments", js.Array(value :_*))
+    inline def setCreativeAssignmentsVarargs(value: CreativeAssignment*): Self = StObject.set(x, "creativeAssignments", js.Array(value*))
     
     inline def setCreativeOptimizationConfigurationId(value: String): Self = StObject.set(x, "creativeOptimizationConfigurationId", value.asInstanceOf[js.Any])
     

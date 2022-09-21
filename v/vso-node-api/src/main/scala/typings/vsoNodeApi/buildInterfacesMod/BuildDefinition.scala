@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.distributedTaskCommonInterfacesMod.ProcessParameters
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
@@ -28,7 +27,7 @@ trait BuildDefinition
     */
   var comment: String
   
-  var demands: js.Array[js.Any]
+  var demands: js.Array[Any]
   
   /**
     * The description.
@@ -67,7 +66,7 @@ trait BuildDefinition
     */
   var processParameters: ProcessParameters
   
-  var properties: js.Any
+  var properties: Any
   
   /**
     * The repository.
@@ -87,13 +86,13 @@ trait BuildDefinition
 object BuildDefinition {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     authoredBy: IdentityRef,
     badgeEnabled: Boolean,
     buildNumberFormat: String,
     comment: String,
-    createdDate: Date,
-    demands: js.Array[js.Any],
+    createdDate: js.Date,
+    demands: js.Array[Any],
     description: String,
     draftOf: DefinitionReference,
     drafts: js.Array[DefinitionReference],
@@ -111,7 +110,7 @@ object BuildDefinition {
     process: BuildProcess,
     processParameters: ProcessParameters,
     project: TeamProjectReference,
-    properties: js.Any,
+    properties: Any,
     quality: DefinitionQuality,
     queue: AgentPoolQueue,
     queueStatus: DefinitionQueueStatus,
@@ -139,9 +138,9 @@ object BuildDefinition {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: Any*): Self = StObject.set(x, "demands", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -155,31 +154,31 @@ object BuildDefinition {
     
     inline def setOptions(value: js.Array[BuildOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: BuildOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: BuildOption*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setProcess(value: BuildProcess): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
     inline def setProcessParameters(value: ProcessParameters): Self = StObject.set(x, "processParameters", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setRepository(value: BuildRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def setRetentionRules(value: js.Array[RetentionPolicy]): Self = StObject.set(x, "retentionRules", value.asInstanceOf[js.Any])
     
-    inline def setRetentionRulesVarargs(value: RetentionPolicy*): Self = StObject.set(x, "retentionRules", js.Array(value :_*))
+    inline def setRetentionRulesVarargs(value: RetentionPolicy*): Self = StObject.set(x, "retentionRules", js.Array(value*))
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTriggers(value: js.Array[BuildTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
-    inline def setTriggersVarargs(value: BuildTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: BuildTrigger*): Self = StObject.set(x, "triggers", js.Array(value*))
     
     inline def setVariableGroups(value: js.Array[VariableGroup]): Self = StObject.set(x, "variableGroups", value.asInstanceOf[js.Any])
     
-    inline def setVariableGroupsVarargs(value: VariableGroup*): Self = StObject.set(x, "variableGroups", js.Array(value :_*))
+    inline def setVariableGroupsVarargs(value: VariableGroup*): Self = StObject.set(x, "variableGroups", js.Array(value*))
     
     inline def setVariables(value: StringDictionary[BuildDefinitionVariable]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }

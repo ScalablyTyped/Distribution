@@ -1,13 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ChartXAxisItem extends StObject {
   
-  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.undefined
+  var axisCrossingValue: js.UndefOr[Any | js.Date] = js.undefined
   
   var background: js.UndefOr[String] = js.undefined
   
@@ -27,9 +26,9 @@ trait ChartXAxisItem extends StObject {
   
   var majorUnit: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[js.Any] = js.undefined
+  var max: js.UndefOr[Any] = js.undefined
   
-  var min: js.UndefOr[js.Any] = js.undefined
+  var min: js.UndefOr[Any] = js.undefined
   
   var minorGridLines: js.UndefOr[ChartXAxisItemMinorGridLines] = js.undefined
   
@@ -66,7 +65,7 @@ object ChartXAxisItem {
   
   extension [Self <: ChartXAxisItem](x: Self) {
     
-    inline def setAxisCrossingValue(value: js.Any | Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
+    inline def setAxisCrossingValue(value: Any | js.Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
     
     inline def setAxisCrossingValueUndefined: Self = StObject.set(x, "axisCrossingValue", js.undefined)
     
@@ -106,11 +105,11 @@ object ChartXAxisItem {
     
     inline def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
     
-    inline def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    inline def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
@@ -146,7 +145,7 @@ object ChartXAxisItem {
     
     inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
     
-    inline def setPlotBandsVarargs(value: ChartXAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value :_*))
+    inline def setPlotBandsVarargs(value: ChartXAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value*))
     
     inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     

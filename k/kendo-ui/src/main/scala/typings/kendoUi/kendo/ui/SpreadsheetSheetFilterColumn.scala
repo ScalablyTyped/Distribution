@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +16,9 @@ trait SpreadsheetSheetFilterColumn extends StObject {
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double | String | Date] = js.undefined
+  var value: js.UndefOr[Double | String | js.Date] = js.undefined
   
-  var values: js.UndefOr[js.Any] = js.undefined
+  var values: js.UndefOr[Any] = js.undefined
 }
 object SpreadsheetSheetFilterColumn {
   
@@ -34,7 +33,7 @@ object SpreadsheetSheetFilterColumn {
     
     inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    inline def setCriteriaVarargs(value: SpreadsheetSheetFilterColumnCriteriaItem*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: SpreadsheetSheetFilterColumnCriteriaItem*): Self = StObject.set(x, "criteria", js.Array(value*))
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -52,11 +51,11 @@ object SpreadsheetSheetFilterColumn {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValue(value: Double | String | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | String | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }

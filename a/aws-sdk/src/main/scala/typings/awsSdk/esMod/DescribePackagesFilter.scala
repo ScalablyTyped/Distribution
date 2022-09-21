@@ -33,6 +33,6 @@ object DescribePackagesFilter {
     
     inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     
-    inline def setValueVarargs(value: DescribePackagesFilterValue*): Self = StObject.set(x, "Value", js.Array(value :_*))
+    inline def setValueVarargs(value: DescribePackagesFilterValue*): Self = StObject.set(x, "Value", js.Array(value*))
   }
 }

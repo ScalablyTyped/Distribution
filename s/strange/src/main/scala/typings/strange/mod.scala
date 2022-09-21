@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Date
 import typings.std.Node
 import typings.strange.strangeNumbers.`-1`
 import typings.strange.strangeNumbers.`0`
@@ -29,7 +28,7 @@ object mod extends Shortcut {
     * @param end Range's end, or right endpoint.
     * @param bounds Range's bounds.
     */
-  class Class[T /* <: Endpoint */] ()
+  open class Class[T /* <: Endpoint */] ()
     extends StObject
        with typings.std.Range {
     def this(begin: T) = this()
@@ -46,33 +45,28 @@ object mod extends Shortcut {
     def this(begin: Unit, end: Null, bounds: Bounds) = this()
     def this(begin: Unit, end: Unit, bounds: Bounds) = this()
     
-    /**
-      * Returns true if range is collapsed, and false otherwise.
-      */
+    /** Returns true if range is collapsed, and false otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val collapsed: Boolean = js.native
     
-    /**
-      * Returns range's end node.
-      */
+    /** Returns range's end node. */
+    /* standard dom */
     /* CompleteClass */
     override val endContainer: Node = js.native
     
-    /**
-      * Returns range's end offset.
-      */
+    /** Returns range's end offset. */
+    /* standard dom */
     /* CompleteClass */
     override val endOffset: Double = js.native
     
-    /**
-      * Returns range's start node.
-      */
+    /** Returns range's start node. */
+    /* standard dom */
     /* CompleteClass */
     override val startContainer: Node = js.native
     
-    /**
-      * Returns range's start offset.
-      */
+    /** Returns range's start offset. */
+    /* standard dom */
     /* CompleteClass */
     override val startOffset: Double = js.native
   }
@@ -95,7 +89,7 @@ object mod extends Shortcut {
     inline def `[]`: typings.strange.strangeStrings.`[]` = "[]".asInstanceOf[typings.strange.strangeStrings.`[]`]
   }
   
-  type Endpoint = Date | Double | String
+  type Endpoint = js.Date | Double | String
   
   @js.native
   trait Range[T /* <: Endpoint */] extends StObject {

@@ -14,7 +14,7 @@ object resourceMilestonesMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceMilestones", "ResourceMilestones")
   @js.native
-  class ResourceMilestones protected () extends BaseService {
+  open class ResourceMilestones protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()
     
     def all(resourceId: String): js.Promise[GetResponse] = js.native

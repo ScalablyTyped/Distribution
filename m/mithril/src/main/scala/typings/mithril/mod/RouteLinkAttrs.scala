@@ -12,7 +12,7 @@ trait RouteLinkAttrs
   
   var options: js.UndefOr[RouteOptions] = js.undefined
   
-  var selector: js.UndefOr[String | (ComponentTypes[js.Any, js.Object])] = js.undefined
+  var selector: js.UndefOr[String | (ComponentTypes[Any, js.Object])] = js.undefined
 }
 object RouteLinkAttrs {
   
@@ -29,9 +29,9 @@ object RouteLinkAttrs {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setSelector(value: String | (ComponentTypes[js.Any, js.Object])): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String | (ComponentTypes[Any, js.Object])): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    inline def setSelectorFunction1(value: /* vnode */ Vnode[js.Any, js.Object] => Component[js.Any, js.Object]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
+    inline def setSelectorFunction1(value: /* vnode */ Vnode[Any, js.Object] => Component[Any, js.Object]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }

@@ -28,7 +28,7 @@ object ListClientsResponse {
     
     inline def setClientsUndefined: Self = StObject.set(x, "clients", js.undefined)
     
-    inline def setClientsVarargs(value: Client*): Self = StObject.set(x, "clients", js.Array(value :_*))
+    inline def setClientsVarargs(value: Client*): Self = StObject.set(x, "clients", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for varint
 
-Typings are for version 5.0
+Typings are for version 6.0
 
 ## Library description:
 protobuf-style varint bytes - use msb to create integer values of varying sizes
@@ -10,10 +10,10 @@ protobuf-style varint bytes - use msb to create integer values of varying sizes
 | ------------------ | :-------------: |
 | Full name          | varint |
 | Keywords           | varint, protobuf, encode, decode |
-| # releases         | 0 |
-| # dependents       | 192 |
-| # downloads        | 3874105 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3037407.3333333335 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/chrisdickinson/varint#readme)

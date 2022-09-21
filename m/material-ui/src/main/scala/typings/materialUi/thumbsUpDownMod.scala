@@ -10,10 +10,10 @@ object thumbsUpDownMod {
   
   @JSImport("material-ui/svg-icons/action/thumbs-up-down", JSImport.Default)
   @js.native
-  class default () extends ActionThumbsUpDown
+  open class default () extends ActionThumbsUpDown
   
   @JSImport("material-ui/svg-icons/action/thumbs-up-down", "ActionThumbsUpDown")
   @js.native
-  class ActionThumbsUpDown ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionThumbsUpDown ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

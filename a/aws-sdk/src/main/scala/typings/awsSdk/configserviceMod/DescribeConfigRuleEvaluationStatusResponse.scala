@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeConfigRuleEvaluationStatusResponse extends StObject {
   
   /**
-    * Status information about your AWS managed Config rules.
+    * Status information about your Config managed rules.
     */
   var ConfigRulesEvaluationStatus: js.UndefOr[ConfigRuleEvaluationStatusList] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeConfigRuleEvaluationStatusResponse {
     
     inline def setConfigRulesEvaluationStatusUndefined: Self = StObject.set(x, "ConfigRulesEvaluationStatus", js.undefined)
     
-    inline def setConfigRulesEvaluationStatusVarargs(value: ConfigRuleEvaluationStatus*): Self = StObject.set(x, "ConfigRulesEvaluationStatus", js.Array(value :_*))
+    inline def setConfigRulesEvaluationStatusVarargs(value: ConfigRuleEvaluationStatus*): Self = StObject.set(x, "ConfigRulesEvaluationStatus", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

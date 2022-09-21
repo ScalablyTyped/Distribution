@@ -15,7 +15,9 @@ object PropertyTypeForEdition extends StObject {
   
   /* 1 */ val Float: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Float & Double = js.native
   
-  /* 3 */ val List: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.List & Double = js.native
+  /* 2 */ val Int: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Int & Double = js.native
   
-  /* 2 */ val Vector2: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Vector2 & Double = js.native
+  /* 4 */ val List: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.List & Double = js.native
+  
+  /* 3 */ val Vector2: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Vector2 & Double = js.native
 }

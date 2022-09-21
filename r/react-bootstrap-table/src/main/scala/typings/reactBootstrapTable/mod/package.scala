@@ -1,15 +1,19 @@
 package typings.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StringDictionary
+import typings.reactBootstrapTable.anon.Text
+import typings.reactBootstrapTable.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CustomAttrs = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
+type CustomAttrs = StringDictionary[String | Double | Boolean]
 
-type EditCheckboxOptionValue = java.lang.String
+type EditCheckboxOptionValue = String
 
-type EditSelectOptionValue = js.Array[scala.Double | java.lang.String | typings.reactBootstrapTable.anon.Value]
+type EditSelectOptionValue = js.Array[Double | String | Value]
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactBootstrapTable.mod.TextFilter
@@ -17,11 +21,11 @@ type EditSelectOptionValue = js.Array[scala.Double | java.lang.String | typings.
   - typings.reactBootstrapTable.mod.RegexFilter
   - typings.reactBootstrapTable.mod.NumberFilter
   - typings.reactBootstrapTable.mod.DateFilter
-  - typings.reactBootstrapTable.mod.CustomFilter[js.Any, js.Any]
+  - typings.reactBootstrapTable.mod.CustomFilter[scala.Any, scala.Any]
 */
-type Filter = typings.reactBootstrapTable.mod._Filter | (typings.reactBootstrapTable.mod.CustomFilter[js.Any, js.Any])
+type Filter = _Filter | (CustomFilter[Any, Any])
 
-type FilterData[CustomFilterValue /* <: js.Object */] = org.scalablytyped.runtime.StringDictionary[typings.reactBootstrapTable.mod.FilterValue | CustomFilterValue]
+type FilterData[CustomFilterValue /* <: js.Object */] = StringDictionary[FilterValue | CustomFilterValue]
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
@@ -30,8 +34,8 @@ type FilterData[CustomFilterValue /* <: js.Object */] = org.scalablytyped.runtim
   - typings.reactBootstrapTable.mod.DateFilterValue
   - typings.reactBootstrapTable.mod.NumberFilterValue
 */
-type FilterValueData = typings.reactBootstrapTable.mod._FilterValueData | (js.Array[scala.Double | java.lang.String]) | java.lang.String | scala.Double
+type FilterValueData = _FilterValueData | (js.Array[Double | String]) | String | Double
 
-type SelectFilterOptionsType = (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]) & (org.scalablytyped.runtime.NumberDictionary[java.lang.String | scala.Double | scala.Boolean])
+type SelectFilterOptionsType = (StringDictionary[String | Double | Boolean]) & (NumberDictionary[String | Double | Boolean])
 
-type SizePerPageList = js.Array[scala.Double | typings.reactBootstrapTable.anon.Text]
+type SizePerPageList = js.Array[Double | Text]

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs a vertex that does not know about any Node.
   */
-class LayoutVertex () extends StObject {
+open class LayoutVertex () extends StObject {
   
   /**
     * Adds a LayoutEdge to the list of successors (the edge will be going out from this vertex).
@@ -39,7 +39,7 @@ class LayoutVertex () extends StObject {
   def commit(): Unit = js.native
   
   /**Gets or sets the model data, used only when virtualizing*/
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /**
     * Deletes a LayoutEdge from the list of successors (the edge was going out from this vertex).

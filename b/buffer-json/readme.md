@@ -10,10 +10,10 @@ JSON.stringify & JSON.parse which can encode/decode buffers.
 | ------------------ | :-------------: |
 | Full name          | buffer-json |
 | Keywords           | JSON, parse, stringify, buffer, reviver, replacer, base64 |
-| # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 38643372 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6107505.333333333 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/jprichardson/buffer-json#readme)

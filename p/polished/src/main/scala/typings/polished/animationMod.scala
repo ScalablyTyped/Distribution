@@ -11,5 +11,5 @@ object animationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(args: ((js.Array[String | Double]) | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(args: ((js.Array[String | Double]) | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
 }

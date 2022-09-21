@@ -5,25 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Condensed representation of a node and its subtree. Only present for
-  * `SCALAR` PlanNode(s).
-  */
 trait SchemaShortRepresentation extends StObject {
   
   /**
     * A string representation of the expression subtree rooted at this node.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A mapping of (subquery variable name) -&gt; (subquery node id) for cases
-    * where the `description` string of this node references a `SCALAR`
-    * subquery contained in the expression subtree rooted at this node. The
-    * referenced `SCALAR` subquery may not necessarily be a direct child of
-    * this node.
+    * A mapping of (subquery variable name) -\> (subquery node id) for cases where the `description` string of this node references a `SCALAR` subquery contained in the expression subtree rooted at this node. The referenced `SCALAR` subquery may not necessarily be a direct child of this node.
     */
-  var subqueries: js.UndefOr[StringDictionary[Double]] = js.undefined
+  var subqueries: js.UndefOr[StringDictionary[Double] | Null] = js.undefined
 }
 object SchemaShortRepresentation {
   
@@ -36,9 +28,13 @@ object SchemaShortRepresentation {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setSubqueries(value: StringDictionary[Double]): Self = StObject.set(x, "subqueries", value.asInstanceOf[js.Any])
+    
+    inline def setSubqueriesNull: Self = StObject.set(x, "subqueries", null)
     
     inline def setSubqueriesUndefined: Self = StObject.set(x, "subqueries", js.undefined)
   }

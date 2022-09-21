@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-axe
 
-Typings are for version 3.1
+Typings are for version 3.5.4
 
 ## Library description:
 Dynamic accessibility analysis for React using axe-core
@@ -10,10 +10,10 @@ Dynamic accessibility analysis for React using axe-core
 | ------------------ | :-------------: |
 | Full name          | react-axe |
 | Keywords           | accessibility, a11y, lint, test |
-| # releases         | 33 |
-| # dependents       | 16 |
-| # downloads        | 4640506 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 187783.66666666666 |
+| # stars            | 1175.0 |
 
 ## Links
 - [Homepage](https://github.com/dequelabs/react-axe#readme)
@@ -24,7 +24,7 @@ Dynamic accessibility analysis for React using axe-core
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

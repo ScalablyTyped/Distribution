@@ -29,7 +29,7 @@ object ApplicationVersionDescriptionsMessage {
     
     inline def setApplicationVersionsUndefined: Self = StObject.set(x, "ApplicationVersions", js.undefined)
     
-    inline def setApplicationVersionsVarargs(value: ApplicationVersionDescription*): Self = StObject.set(x, "ApplicationVersions", js.Array(value :_*))
+    inline def setApplicationVersionsVarargs(value: ApplicationVersionDescription*): Self = StObject.set(x, "ApplicationVersions", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

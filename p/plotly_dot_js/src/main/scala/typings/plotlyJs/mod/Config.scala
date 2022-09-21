@@ -30,6 +30,9 @@ trait Config extends StObject {
   /** double click interaction (false, 'reset', 'autosize' or 'reset+autosize') */
   var doubleClick: resetPlussignautosize | reset | autosize | `false`
   
+  /** sets the delay for registering a double-click in ms */
+  var doubleClickDelay: Double
+  
   /** we can edit titles, move annotations, etc */
   var editable: Boolean
   
@@ -42,7 +45,7 @@ trait Config extends StObject {
   var frameMargins: Double
   
   /** Set global transform to be applied to all traces with no specification needed */
-  var globalTransforms: js.Array[js.Any]
+  var globalTransforms: js.Array[Any]
   
   /** text appearing in the sendData link */
   var linkText: String
@@ -103,7 +106,7 @@ trait Config extends StObject {
     * function to add the background color to a different container
     * or 'opaque' to ensure there's white behind it
     */
-  def setBackground(): String | opaque | transparent
+  var setBackground: (js.Function2[/* gd */ PlotlyHTMLElement, /* bgColor */ String, Unit]) | opaque | transparent
   
   /** enable axis pan/zoom drag handles */
   var showAxisDragHandles: Boolean
@@ -146,6 +149,15 @@ trait Config extends StObject {
   
   /** URL to topojson files used in geo charts */
   var topojsonURL: String
+  
+  /**
+    * Determines whether math should be typeset or not,
+    * when MathJax (either v2 or v3) is present on the page.
+    */
+  var typesetMath: Boolean
+  
+  /** Watermark the images with the company's logo */
+  var watermark: Boolean
 }
 object Config {
   
@@ -154,11 +166,12 @@ object Config {
     displayModeBar: hover | Boolean,
     displaylogo: Boolean,
     doubleClick: resetPlussignautosize | reset | autosize | `false`,
+    doubleClickDelay: Double,
     editable: Boolean,
     edits: PartialEdits,
     fillFrame: Boolean,
     frameMargins: Double,
-    globalTransforms: js.Array[js.Any],
+    globalTransforms: js.Array[Any],
     linkText: String,
     locale: String,
     logging: Boolean | `0` | `1` | `2`,
@@ -172,7 +185,7 @@ object Config {
     responsive: Boolean,
     scrollZoom: Boolean,
     sendData: Boolean,
-    setBackground: () => String | opaque | transparent,
+    setBackground: (js.Function2[/* gd */ PlotlyHTMLElement, /* bgColor */ String, Unit]) | opaque | transparent,
     showAxisDragHandles: Boolean,
     showAxisRangeEntryBoxes: Boolean,
     showEditInChartStudio: Boolean,
@@ -182,9 +195,11 @@ object Config {
     showTips: Boolean,
     staticPlot: Boolean,
     toImageButtonOptions: Partialfilenamestringscal,
-    topojsonURL: String
+    topojsonURL: String,
+    typesetMath: Boolean,
+    watermark: Boolean
   ): Config = {
-    val __obj = js.Dynamic.literal(autosizable = autosizable.asInstanceOf[js.Any], displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo.asInstanceOf[js.Any], doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], edits = edits.asInstanceOf[js.Any], fillFrame = fillFrame.asInstanceOf[js.Any], frameMargins = frameMargins.asInstanceOf[js.Any], globalTransforms = globalTransforms.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken.asInstanceOf[js.Any], modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove.asInstanceOf[js.Any], plotGlPixelRatio = plotGlPixelRatio.asInstanceOf[js.Any], plotlyServerURL = plotlyServerURL.asInstanceOf[js.Any], queueLength = queueLength.asInstanceOf[js.Any], responsive = responsive.asInstanceOf[js.Any], scrollZoom = scrollZoom.asInstanceOf[js.Any], sendData = sendData.asInstanceOf[js.Any], setBackground = js.Any.fromFunction0(setBackground), showAxisDragHandles = showAxisDragHandles.asInstanceOf[js.Any], showAxisRangeEntryBoxes = showAxisRangeEntryBoxes.asInstanceOf[js.Any], showEditInChartStudio = showEditInChartStudio.asInstanceOf[js.Any], showLink = showLink.asInstanceOf[js.Any], showSendToCloud = showSendToCloud.asInstanceOf[js.Any], showSources = showSources.asInstanceOf[js.Any], showTips = showTips.asInstanceOf[js.Any], staticPlot = staticPlot.asInstanceOf[js.Any], toImageButtonOptions = toImageButtonOptions.asInstanceOf[js.Any], topojsonURL = topojsonURL.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autosizable = autosizable.asInstanceOf[js.Any], displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo.asInstanceOf[js.Any], doubleClick = doubleClick.asInstanceOf[js.Any], doubleClickDelay = doubleClickDelay.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], edits = edits.asInstanceOf[js.Any], fillFrame = fillFrame.asInstanceOf[js.Any], frameMargins = frameMargins.asInstanceOf[js.Any], globalTransforms = globalTransforms.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken.asInstanceOf[js.Any], modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove.asInstanceOf[js.Any], plotGlPixelRatio = plotGlPixelRatio.asInstanceOf[js.Any], plotlyServerURL = plotlyServerURL.asInstanceOf[js.Any], queueLength = queueLength.asInstanceOf[js.Any], responsive = responsive.asInstanceOf[js.Any], scrollZoom = scrollZoom.asInstanceOf[js.Any], sendData = sendData.asInstanceOf[js.Any], setBackground = setBackground.asInstanceOf[js.Any], showAxisDragHandles = showAxisDragHandles.asInstanceOf[js.Any], showAxisRangeEntryBoxes = showAxisRangeEntryBoxes.asInstanceOf[js.Any], showEditInChartStudio = showEditInChartStudio.asInstanceOf[js.Any], showLink = showLink.asInstanceOf[js.Any], showSendToCloud = showSendToCloud.asInstanceOf[js.Any], showSources = showSources.asInstanceOf[js.Any], showTips = showTips.asInstanceOf[js.Any], staticPlot = staticPlot.asInstanceOf[js.Any], toImageButtonOptions = toImageButtonOptions.asInstanceOf[js.Any], topojsonURL = topojsonURL.asInstanceOf[js.Any], typesetMath = typesetMath.asInstanceOf[js.Any], watermark = watermark.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
@@ -198,6 +213,8 @@ object Config {
     
     inline def setDoubleClick(value: resetPlussignautosize | reset | autosize | `false`): Self = StObject.set(x, "doubleClick", value.asInstanceOf[js.Any])
     
+    inline def setDoubleClickDelay(value: Double): Self = StObject.set(x, "doubleClickDelay", value.asInstanceOf[js.Any])
+    
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     inline def setEdits(value: PartialEdits): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
@@ -206,9 +223,9 @@ object Config {
     
     inline def setFrameMargins(value: Double): Self = StObject.set(x, "frameMargins", value.asInstanceOf[js.Any])
     
-    inline def setGlobalTransforms(value: js.Array[js.Any]): Self = StObject.set(x, "globalTransforms", value.asInstanceOf[js.Any])
+    inline def setGlobalTransforms(value: js.Array[Any]): Self = StObject.set(x, "globalTransforms", value.asInstanceOf[js.Any])
     
-    inline def setGlobalTransformsVarargs(value: js.Any*): Self = StObject.set(x, "globalTransforms", js.Array(value :_*))
+    inline def setGlobalTransformsVarargs(value: Any*): Self = StObject.set(x, "globalTransforms", js.Array(value*))
     
     inline def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
     
@@ -222,13 +239,13 @@ object Config {
     
     inline def setModeBarButtonsToAdd(value: js.Array[ModeBarButton | ModeBarDefaultButtons]): Self = StObject.set(x, "modeBarButtonsToAdd", value.asInstanceOf[js.Any])
     
-    inline def setModeBarButtonsToAddVarargs(value: (ModeBarButton | ModeBarDefaultButtons)*): Self = StObject.set(x, "modeBarButtonsToAdd", js.Array(value :_*))
+    inline def setModeBarButtonsToAddVarargs(value: (ModeBarButton | ModeBarDefaultButtons)*): Self = StObject.set(x, "modeBarButtonsToAdd", js.Array(value*))
     
     inline def setModeBarButtonsToRemove(value: js.Array[ModeBarDefaultButtons]): Self = StObject.set(x, "modeBarButtonsToRemove", value.asInstanceOf[js.Any])
     
-    inline def setModeBarButtonsToRemoveVarargs(value: ModeBarDefaultButtons*): Self = StObject.set(x, "modeBarButtonsToRemove", js.Array(value :_*))
+    inline def setModeBarButtonsToRemoveVarargs(value: ModeBarDefaultButtons*): Self = StObject.set(x, "modeBarButtonsToRemove", js.Array(value*))
     
-    inline def setModeBarButtonsVarargs(value: (js.Array[ModeBarButton | ModeBarDefaultButtons])*): Self = StObject.set(x, "modeBarButtons", js.Array(value :_*))
+    inline def setModeBarButtonsVarargs(value: (js.Array[ModeBarButton | ModeBarDefaultButtons])*): Self = StObject.set(x, "modeBarButtons", js.Array(value*))
     
     inline def setPlotGlPixelRatio(value: Double): Self = StObject.set(x, "plotGlPixelRatio", value.asInstanceOf[js.Any])
     
@@ -242,7 +259,11 @@ object Config {
     
     inline def setSendData(value: Boolean): Self = StObject.set(x, "sendData", value.asInstanceOf[js.Any])
     
-    inline def setSetBackground(value: () => String | opaque | transparent): Self = StObject.set(x, "setBackground", js.Any.fromFunction0(value))
+    inline def setSetBackground(
+      value: (js.Function2[/* gd */ PlotlyHTMLElement, /* bgColor */ String, Unit]) | opaque | transparent
+    ): Self = StObject.set(x, "setBackground", value.asInstanceOf[js.Any])
+    
+    inline def setSetBackgroundFunction2(value: (/* gd */ PlotlyHTMLElement, /* bgColor */ String) => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction2(value))
     
     inline def setShowAxisDragHandles(value: Boolean): Self = StObject.set(x, "showAxisDragHandles", value.asInstanceOf[js.Any])
     
@@ -263,5 +284,9 @@ object Config {
     inline def setToImageButtonOptions(value: Partialfilenamestringscal): Self = StObject.set(x, "toImageButtonOptions", value.asInstanceOf[js.Any])
     
     inline def setTopojsonURL(value: String): Self = StObject.set(x, "topojsonURL", value.asInstanceOf[js.Any])
+    
+    inline def setTypesetMath(value: Boolean): Self = StObject.set(x, "typesetMath", value.asInstanceOf[js.Any])
+    
+    inline def setWatermark(value: Boolean): Self = StObject.set(x, "watermark", value.asInstanceOf[js.Any])
   }
 }

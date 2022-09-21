@@ -11,8 +11,12 @@ trait ConstructorTypeNode
      with FunctionOrConstructorTypeNodeBase
      with FunctionOrConstructorTypeNode
      with HasJSDoc
+     with HasModifiers
      with SignatureDeclaration {
   
   @JSName("kind")
   val kind_ConstructorTypeNode: ConstructorType = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ConstructorTypeNode: js.UndefOr[NodeArray[Modifier]] = js.native
 }

@@ -10,10 +10,10 @@ Stream-based library for parsing and manipulating subtitles
 | ------------------ | :-------------: |
 | Full name          | subtitle |
 | Keywords           | subtitle, webvtt, srt, vtt, captions, subrip, parse, parser, stringify, validate, validation, stream, streams, read, write, map, filter |
-| # releases         | 6 |
-| # dependents       | 21 |
-| # downloads        | 100369 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 47083.666666666664 |
+| # stars            | 304.0 |
 
 ## Links
 - [Homepage](https://github.com/gsantiago/subtitle.js#readme)

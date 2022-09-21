@@ -21,6 +21,6 @@ object ClientOptions {
     
     inline def setAdditionalAuthorizedPartiesUndefined: Self = StObject.set(x, "additionalAuthorizedParties", js.undefined)
     
-    inline def setAdditionalAuthorizedPartiesVarargs(value: String*): Self = StObject.set(x, "additionalAuthorizedParties", js.Array(value :_*))
+    inline def setAdditionalAuthorizedPartiesVarargs(value: String*): Self = StObject.set(x, "additionalAuthorizedParties", js.Array(value*))
   }
 }

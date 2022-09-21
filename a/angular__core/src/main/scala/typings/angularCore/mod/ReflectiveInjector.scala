@@ -61,7 +61,7 @@ abstract class ReflectiveInjector () extends Injector {
     * expect(car).not.toBe(injector.instantiateResolved(carProvider));
     * ```
     */
-  def instantiateResolved(provider: ResolvedReflectiveProvider): js.Any = js.native
+  def instantiateResolved(provider: ResolvedReflectiveProvider): Any = js.native
   
   /**
     * Parent of this injector.
@@ -122,7 +122,7 @@ abstract class ReflectiveInjector () extends Injector {
     * expect(car).not.toBe(injector.resolveAndInstantiate(Car));
     * ```
     */
-  def resolveAndInstantiate(provider: Provider): js.Any = js.native
+  def resolveAndInstantiate(provider: Provider): Any = js.native
 }
 /* static members */
 object ReflectiveInjector {

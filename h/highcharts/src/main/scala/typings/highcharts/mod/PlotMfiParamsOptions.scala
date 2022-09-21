@@ -11,6 +11,8 @@ trait PlotMfiParamsOptions extends StObject {
     */
   var decimals: js.UndefOr[Double] = js.undefined
   
+  var index: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) The base period for indicator calculations. This is the
     * number of data points which are taken into account for the indicator
@@ -37,6 +39,10 @@ object PlotMfiParamsOptions {
     inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
     inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

@@ -10,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a pointer drag behavior that can be attached to a mesh
   * @param options The drag axis or normal of the plane that will be dragged across. If no options are specified the drag plane will always face the ray's origin (eg. camera)
+  * @param options.dragAxis
+  * @param options.dragPlaneNormal
   */
-class PointerDragBehavior ()
+open class PointerDragBehavior ()
   extends typings.babylonjs.legacyMod.PointerDragBehavior {
   def this(options: DragAxis) = this()
 }
@@ -22,13 +24,13 @@ object PointerDragBehavior {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("babylonjs", "PointerDragBehavior._AnyMouseID")
+  @JSImport("babylonjs", "PointerDragBehavior._AnyMouseId")
   @js.native
-  def _AnyMouseID: js.Any = js.native
-  inline def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
+  def _AnyMouseId: Any = js.native
+  inline def _AnyMouseId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseId")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs", "PointerDragBehavior._planeScene")
+  @JSImport("babylonjs", "PointerDragBehavior._PlaneScene")
   @js.native
-  def _planeScene: js.Any = js.native
-  inline def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
+  def _PlaneScene: Any = js.native
+  inline def _PlaneScene_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PlaneScene")(x.asInstanceOf[js.Any])
 }

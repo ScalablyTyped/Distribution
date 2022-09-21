@@ -39,24 +39,24 @@ object UsageStatistics {
     
     inline def setSumByAccountUndefined: Self = StObject.set(x, "SumByAccount", js.undefined)
     
-    inline def setSumByAccountVarargs(value: UsageAccountResult*): Self = StObject.set(x, "SumByAccount", js.Array(value :_*))
+    inline def setSumByAccountVarargs(value: UsageAccountResult*): Self = StObject.set(x, "SumByAccount", js.Array(value*))
     
     inline def setSumByDataSource(value: UsageDataSourceResultList): Self = StObject.set(x, "SumByDataSource", value.asInstanceOf[js.Any])
     
     inline def setSumByDataSourceUndefined: Self = StObject.set(x, "SumByDataSource", js.undefined)
     
-    inline def setSumByDataSourceVarargs(value: UsageDataSourceResult*): Self = StObject.set(x, "SumByDataSource", js.Array(value :_*))
+    inline def setSumByDataSourceVarargs(value: UsageDataSourceResult*): Self = StObject.set(x, "SumByDataSource", js.Array(value*))
     
     inline def setSumByResource(value: UsageResourceResultList): Self = StObject.set(x, "SumByResource", value.asInstanceOf[js.Any])
     
     inline def setSumByResourceUndefined: Self = StObject.set(x, "SumByResource", js.undefined)
     
-    inline def setSumByResourceVarargs(value: UsageResourceResult*): Self = StObject.set(x, "SumByResource", js.Array(value :_*))
+    inline def setSumByResourceVarargs(value: UsageResourceResult*): Self = StObject.set(x, "SumByResource", js.Array(value*))
     
     inline def setTopResources(value: UsageResourceResultList): Self = StObject.set(x, "TopResources", value.asInstanceOf[js.Any])
     
     inline def setTopResourcesUndefined: Self = StObject.set(x, "TopResources", js.undefined)
     
-    inline def setTopResourcesVarargs(value: UsageResourceResult*): Self = StObject.set(x, "TopResources", js.Array(value :_*))
+    inline def setTopResourcesVarargs(value: UsageResourceResult*): Self = StObject.set(x, "TopResources", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.HDRCubeTexture")
 @js.native
-class HDRCubeTexture protected ()
+open class HDRCubeTexture protected ()
   extends StObject
      with typings.babylonjs.BABYLON.HDRCubeTexture {
   /**
@@ -20,6 +20,8 @@ class HDRCubeTexture protected ()
     * @param generateHarmonics Specifies whether you want to extract the polynomial harmonics during the generation process
     * @param gammaSpace Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space)
     * @param prefilterOnLoad Prefilters HDR texture to allow use of this texture as a PBR reflection texture.
+    * @param onLoad
+    * @param onError
     */
   def this(
     url: String,
@@ -32,7 +34,7 @@ class HDRCubeTexture protected ()
     onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
     onError: js.UndefOr[
         Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
       ]
   ) = this()
@@ -57,10 +59,10 @@ object HDRCubeTexture {
     * @param rootUrl Define the root url in case we need to load relative dependencies
     * @returns the newly created texture after parsing
     */
-  inline def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.HDRCubeTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.HDRCubeTexture]]
+  inline def Parse(parsedTexture: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.HDRCubeTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.HDRCubeTexture]]
   
-  @JSGlobal("BABYLON.HDRCubeTexture._facesMapping")
+  @JSGlobal("BABYLON.HDRCubeTexture._FacesMapping")
   @js.native
-  def _facesMapping: js.Any = js.native
-  inline def _facesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_facesMapping")(x.asInstanceOf[js.Any])
+  def _FacesMapping: Any = js.native
+  inline def _FacesMapping_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
 }

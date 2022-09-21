@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Tab")
 @js.native
-class Tab ()
-  extends Component[TabProps, js.Object, js.Any]
+open class Tab ()
+  extends Component[TabProps, js.Object, Any]

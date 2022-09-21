@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("node-localstorage", "JSONStorage")
   @js.native
-  class JSONStorage protected () extends LocalStorage {
+  open class JSONStorage protected () extends LocalStorage {
     /**
       * Creates a new LocalStorage instance
       * @param location The location in which the local storage resides
@@ -25,12 +25,12 @@ object mod {
       * @param key Unique identifier for the new local storage item
       * @param value The value associated with the `key`. This `setItem` method performs a `JSON.stringify` on the value before storage. The `value` *must* be a valid `JSON` object.
       */
-    def setItem(key: String, value: js.Any): Unit = js.native
+    def setItem(key: String, value: Any): Unit = js.native
   }
   
   @JSImport("node-localstorage", "LocalStorage")
   @js.native
-  class LocalStorage protected () extends EventEmitter {
+  open class LocalStorage protected () extends EventEmitter {
     /**
       * Creates a new LocalStorage instance
       * @param location The location in which the local storage resides
@@ -85,7 +85,7 @@ object mod {
   
   @JSImport("node-localstorage", "QUOTA_EXCEEDED_ERR")
   @js.native
-  class QUOTA_EXCEEDED_ERR protected ()
+  open class QUOTA_EXCEEDED_ERR protected ()
     extends StObject
        with Error {
     /**
@@ -94,16 +94,18 @@ object mod {
       */
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("node-localstorage", "StorageEvent")
   @js.native
-  class StorageEvent protected () extends StObject {
+  open class StorageEvent protected () extends StObject {
     /**
       * Creates an object containing information regarding a `storage` event.
       * @param key Affected `key`.

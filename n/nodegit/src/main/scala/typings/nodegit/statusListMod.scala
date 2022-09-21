@@ -11,7 +11,7 @@ object statusListMod {
   
   @JSImport("nodegit/status-list", "StatusList")
   @js.native
-  class StatusList () extends StObject {
+  open class StatusList () extends StObject {
     
     def entrycount(): Double = js.native
     

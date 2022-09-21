@@ -18,12 +18,14 @@ object materialUiCoreNumbers {
   sealed trait `1`
     extends StObject
        with GridSize
+       with GridSpacing
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `10`
     extends StObject
        with GridSize
+       with GridSpacing
   inline def `10`: `10` = 10.asInstanceOf[`10`]
   
   @js.native
@@ -39,63 +41,45 @@ object materialUiCoreNumbers {
   inline def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
-  sealed trait `16`
-    extends StObject
-       with GridSpacing
-  inline def `16`: `16` = 16.asInstanceOf[`16`]
-  
-  @js.native
   sealed trait `2`
     extends StObject
        with GridSize
-  inline def `2`: `2` = 2.asInstanceOf[`2`]
-  
-  @js.native
-  sealed trait `24`
-    extends StObject
        with GridSpacing
-  inline def `24`: `24` = 24.asInstanceOf[`24`]
+  inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
     extends StObject
        with GridSize
-  inline def `3`: `3` = 3.asInstanceOf[`3`]
-  
-  @js.native
-  sealed trait `32`
-    extends StObject
        with GridSpacing
-  inline def `32`: `32` = 32.asInstanceOf[`32`]
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `4`
     extends StObject
        with GridSize
-  inline def `4`: `4` = 4.asInstanceOf[`4`]
-  
-  @js.native
-  sealed trait `40`
-    extends StObject
        with GridSpacing
-  inline def `40`: `40` = 40.asInstanceOf[`40`]
+  inline def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
   sealed trait `5`
     extends StObject
        with GridSize
+       with GridSpacing
   inline def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
   sealed trait `6`
     extends StObject
        with GridSize
+       with GridSpacing
   inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
   sealed trait `7`
     extends StObject
        with GridSize
+       with GridSpacing
   inline def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
@@ -109,5 +93,6 @@ object materialUiCoreNumbers {
   sealed trait `9`
     extends StObject
        with GridSize
+       with GridSpacing
   inline def `9`: `9` = 9.asInstanceOf[`9`]
 }

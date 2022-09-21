@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaVoidedPurchasesListResponse extends StObject {
   
+  /**
+    * General pagination information.
+    */
   var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
+  /**
+    * Pagination information for token pagination.
+    */
   var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
   
   var voidedPurchases: js.UndefOr[js.Array[SchemaVoidedPurchase]] = js.undefined
@@ -33,6 +39,6 @@ object SchemaVoidedPurchasesListResponse {
     
     inline def setVoidedPurchasesUndefined: Self = StObject.set(x, "voidedPurchases", js.undefined)
     
-    inline def setVoidedPurchasesVarargs(value: SchemaVoidedPurchase*): Self = StObject.set(x, "voidedPurchases", js.Array(value :_*))
+    inline def setVoidedPurchasesVarargs(value: SchemaVoidedPurchase*): Self = StObject.set(x, "voidedPurchases", js.Array(value*))
   }
 }

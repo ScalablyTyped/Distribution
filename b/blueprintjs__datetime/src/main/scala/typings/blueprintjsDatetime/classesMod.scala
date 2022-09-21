@@ -34,6 +34,10 @@ object classesMod {
   @js.native
   val DATEPICKER_CAPTION_SELECT: String = js.native
   
+  @JSImport("@blueprintjs/datetime/lib/esm/common/classes", "DATEPICKER_CONTENT")
+  @js.native
+  val DATEPICKER_CONTENT: String = js.native
+  
   @JSImport("@blueprintjs/datetime/lib/esm/common/classes", "DATEPICKER_DAY")
   @js.native
   val DATEPICKER_DAY: /* "DayPicker-Day" */ String = js.native
@@ -85,6 +89,10 @@ object classesMod {
   @JSImport("@blueprintjs/datetime/lib/esm/common/classes", "DATERANGEPICKER")
   @js.native
   val DATERANGEPICKER: String = js.native
+  
+  @JSImport("@blueprintjs/datetime/lib/esm/common/classes", "DATERANGEPICKER_CALENDARS")
+  @js.native
+  val DATERANGEPICKER_CALENDARS: String = js.native
   
   @JSImport("@blueprintjs/datetime/lib/esm/common/classes", "DATERANGEPICKER_CONTIGUOUS")
   @js.native

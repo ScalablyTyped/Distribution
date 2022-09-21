@@ -10,10 +10,10 @@ A wrapper for the Piwik tracking HTTP API
 | ------------------ | :-------------: |
 | Full name          | piwik-tracker |
 | Keywords           | piwik, analytics, tracking |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 5480 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 123.66666666666667 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/fhemberger/piwik-tracker)

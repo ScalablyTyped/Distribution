@@ -17,14 +17,14 @@ object mod {
   
   @JSImport("react-mic", "ReactMic")
   @js.native
-  class ReactMic protected ()
-    extends PureComponent[ReactMicProps, js.Object, js.Any] {
+  open class ReactMic protected ()
+    extends PureComponent[ReactMicProps, js.Object, Any] {
     def this(props: ReactMicProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReactMicProps, context: js.Any) = this()
+    def this(props: ReactMicProps, context: Any) = this()
   }
   
   trait ReactMicProps extends StObject {

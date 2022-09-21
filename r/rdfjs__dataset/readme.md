@@ -1,19 +1,19 @@
 
 # Scala.js typings for rdfjs__dataset
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
-A basic implementation of the RDFJS Dataset
+An indexed implementation of the RDF/JS Dataset
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/dataset |
-| Keywords           | rdf, rdfjs, dataset |
-| # releases         | 4 |
-| # dependents       | 28 |
-| # downloads        | 86603 |
-| # stars            | 0 |
+| Keywords           | dataset, rdf, rdfjs |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 65990.66666666667 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/dataset)

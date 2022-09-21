@@ -13,7 +13,7 @@ abstract class DialRequestedEventArgs ()
   
   /** Returns the contact that was dialed. */
   /* CompleteClass */
-  var contact: js.Any = js.native
+  var contact: Any = js.native
   
   /** Indicates that the DialRequested event has been handled. */
   /* CompleteClass */

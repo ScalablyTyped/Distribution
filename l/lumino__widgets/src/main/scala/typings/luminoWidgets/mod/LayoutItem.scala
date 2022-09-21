@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@lumino/widgets", "LayoutItem")
 @js.native
-class LayoutItem protected ()
+open class LayoutItem protected ()
   extends typings.luminoWidgets.layoutMod.LayoutItem {
   /**
     * Construct a new layout item.

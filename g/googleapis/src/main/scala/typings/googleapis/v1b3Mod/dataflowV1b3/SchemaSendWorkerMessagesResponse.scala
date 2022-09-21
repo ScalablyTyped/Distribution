@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response to the worker messages.
-  */
 trait SchemaSendWorkerMessagesResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaSendWorkerMessagesResponse {
     
     inline def setWorkerMessageResponsesUndefined: Self = StObject.set(x, "workerMessageResponses", js.undefined)
     
-    inline def setWorkerMessageResponsesVarargs(value: SchemaWorkerMessageResponse*): Self = StObject.set(x, "workerMessageResponses", js.Array(value :_*))
+    inline def setWorkerMessageResponsesVarargs(value: SchemaWorkerMessageResponse*): Self = StObject.set(x, "workerMessageResponses", js.Array(value*))
   }
 }

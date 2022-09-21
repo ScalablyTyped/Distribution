@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/g-plugin-canvas-path-generator" : "1.1.17"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/g-plugin-canvas-path-generator" : "1.1.17"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

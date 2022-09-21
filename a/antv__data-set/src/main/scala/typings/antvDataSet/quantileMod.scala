@@ -41,13 +41,13 @@ object quantileMod {
       
       inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
+      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value*))
       
       inline def setP(value: js.Array[Double]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: Double*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: Double*): Self = StObject.set(x, "p", js.Array(value*))
     }
   }
 }

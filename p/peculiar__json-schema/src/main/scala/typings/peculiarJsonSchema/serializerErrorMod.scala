@@ -1,20 +1,18 @@
 package typings.peculiarJsonSchema
 
 import typings.peculiarJsonSchema.jsonErrorMod.JsonError
-import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@peculiar/json-schema/build/types/errors/serializer_error", JSImport.Namespace)
-@js.native
-object serializerErrorMod extends js.Object {
+object serializerErrorMod {
+  
+  @JSImport("@peculiar/json-schema/build/types/errors/serializer_error", "SerializerError")
   @js.native
-  class SerializerError protected () extends JsonError {
+  open class SerializerError protected () extends JsonError {
     def this(schemaName: String, message: String) = this()
-    def this(schemaName: String, message: String, innerError: Error) = this()
+    def this(schemaName: String, message: String, innerError: js.Error) = this()
+    
     var schemaName: String = js.native
   }
-  
 }
-

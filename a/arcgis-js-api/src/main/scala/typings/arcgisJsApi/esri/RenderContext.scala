@@ -16,7 +16,7 @@ trait RenderContext
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderContext)
     */
-  def bindRenderTarget(): Unit
+  def bindRenderTarget(): scala.Unit
   
   /**
     * The camera used to render the current frame.
@@ -37,7 +37,7 @@ trait RenderContext
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderContext)
     */
-  def resetWebGLState(): Unit
+  def resetWebGLState(): scala.Unit
   
   /**
     * The lighting used by [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) to render the current frame.
@@ -49,13 +49,13 @@ trait RenderContext
 object RenderContext {
   
   inline def apply(
-    bindRenderTarget: () => Unit,
+    bindRenderTarget: () => scala.Unit,
     camera: RenderCamera,
     constructor: js.Function,
     gl: WebGLRenderingContext,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    resetWebGLState: () => Unit,
+    resetWebGLState: () => scala.Unit,
     sunLight: SunLight
   ): RenderContext = {
     val __obj = js.Dynamic.literal(bindRenderTarget = js.Any.fromFunction0(bindRenderTarget), camera = camera.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], gl = gl.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resetWebGLState = js.Any.fromFunction0(resetWebGLState), sunLight = sunLight.asInstanceOf[js.Any])
@@ -64,13 +64,13 @@ object RenderContext {
   
   extension [Self <: RenderContext](x: Self) {
     
-    inline def setBindRenderTarget(value: () => Unit): Self = StObject.set(x, "bindRenderTarget", js.Any.fromFunction0(value))
+    inline def setBindRenderTarget(value: () => scala.Unit): Self = StObject.set(x, "bindRenderTarget", js.Any.fromFunction0(value))
     
     inline def setCamera(value: RenderCamera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     inline def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     
-    inline def setResetWebGLState(value: () => Unit): Self = StObject.set(x, "resetWebGLState", js.Any.fromFunction0(value))
+    inline def setResetWebGLState(value: () => scala.Unit): Self = StObject.set(x, "resetWebGLState", js.Any.fromFunction0(value))
     
     inline def setSunLight(value: SunLight): Self = StObject.set(x, "sunLight", value.asInstanceOf[js.Any])
   }

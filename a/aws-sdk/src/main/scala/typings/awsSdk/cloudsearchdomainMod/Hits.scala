@@ -47,7 +47,7 @@ object Hits {
     
     inline def setHitUndefined: Self = StObject.set(x, "hit", js.undefined)
     
-    inline def setHitVarargs(value: Hit*): Self = StObject.set(x, "hit", js.Array(value :_*))
+    inline def setHitVarargs(value: Hit*): Self = StObject.set(x, "hit", js.Array(value*))
     
     inline def setStart(value: Long): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

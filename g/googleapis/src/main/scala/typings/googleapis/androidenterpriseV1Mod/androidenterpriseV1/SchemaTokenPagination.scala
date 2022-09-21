@@ -6,9 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaTokenPagination extends StObject {
   
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  /**
+    * Tokens to pass to the standard list field 'page_token'. Whenever available, tokens are preferred over manipulating start_index.
+    */
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
-  var previousPageToken: js.UndefOr[String] = js.undefined
+  var previousPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTokenPagination {
   
@@ -21,9 +24,13 @@ object SchemaTokenPagination {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setPreviousPageToken(value: String): Self = StObject.set(x, "previousPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousPageTokenNull: Self = StObject.set(x, "previousPageToken", null)
     
     inline def setPreviousPageTokenUndefined: Self = StObject.set(x, "previousPageToken", js.undefined)
   }

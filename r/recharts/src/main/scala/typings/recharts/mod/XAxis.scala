@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "XAxis")
 @js.native
-class XAxis protected ()
-  extends Component[XAxisProps, js.Object, js.Any] {
+open class XAxis protected ()
+  extends Component[XAxisProps, js.Object, Any] {
   def this(props: XAxisProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: XAxisProps, context: js.Any) = this()
+  def this(props: XAxisProps, context: Any) = this()
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.InfragisticsMode")
 @js.native
-class InfragisticsMode protected ()
+open class InfragisticsMode protected ()
   extends StObject
      with typings.igniteUi.Infragistics.InfragisticsMode {
   def this(settings: InfragisticsModeSettings) = this()

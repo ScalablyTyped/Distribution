@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fixedBaseMod {
   
-  @JSImport("@antv/util/lib/fixed-base", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/fixed-base", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

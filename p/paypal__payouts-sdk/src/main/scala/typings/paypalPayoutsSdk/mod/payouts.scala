@@ -12,7 +12,7 @@ object payouts {
     */
   @JSImport("@paypal/payouts-sdk", "payouts.PayoutsGetRequest")
   @js.native
-  class PayoutsGetRequest protected ()
+  open class PayoutsGetRequest protected ()
     extends StObject
        with HttpRequest {
     def this(payoutBatchId: String) = this()
@@ -37,7 +37,7 @@ object payouts {
     */
   @JSImport("@paypal/payouts-sdk", "payouts.PayoutsItemCancelRequest")
   @js.native
-  class PayoutsItemCancelRequest protected ()
+  open class PayoutsItemCancelRequest protected ()
     extends StObject
        with HttpRequest {
     def this(payoutItemId: String) = this()
@@ -53,7 +53,7 @@ object payouts {
     */
   @JSImport("@paypal/payouts-sdk", "payouts.PayoutsItemGetRequest")
   @js.native
-  class PayoutsItemGetRequest protected ()
+  open class PayoutsItemGetRequest protected ()
     extends StObject
        with HttpRequest {
     def this(payoutItemId: String) = this()
@@ -71,7 +71,7 @@ object payouts {
     */
   @JSImport("@paypal/payouts-sdk", "payouts.PayoutsPostRequest")
   @js.native
-  class PayoutsPostRequest ()
+  open class PayoutsPostRequest ()
     extends StObject
        with HttpRequest {
     

@@ -5,7 +5,6 @@ import typings.cookieSession.cookieSessionStrings.lax
 import typings.cookieSession.cookieSessionStrings.none
 import typings.cookieSession.cookieSessionStrings.strict
 import typings.keygrip.mod.Keygrip
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object CookieSessionInterfaces {
   
   trait CookieSessionObject
     extends StObject
-       with /* propertyName */ StringDictionary[js.Any] {
+       with /* propertyName */ StringDictionary[Any] {
     
     /**
       * Is true if the session has been changed during the request.
@@ -64,7 +63,7 @@ object CookieSessionInterfaces {
     /**
       * a Date object indicating the cookie's expiration date (expires at the end of session by default).
       */
-    var expires: js.UndefOr[Date] = js.undefined
+    var expires: js.UndefOr[js.Date] = js.undefined
     
     /**
       * a boolean indicating whether the cookie is only to be sent over HTTP(S), and not made available to client JavaScript (true by default).
@@ -135,7 +134,7 @@ object CookieSessionInterfaces {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
@@ -147,7 +146,7 @@ object CookieSessionInterfaces {
       
       inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
@@ -192,7 +191,7 @@ object CookieSessionInterfaces {
     /**
       * Represents the session for the given request.
       */
-    var session: CookieSessionObject | Null
+    var session: js.UndefOr[CookieSessionObject | Null] = js.undefined
     
     /**
       * Represents the session options for the current request. These options are a shallow clone of what was provided at middleware construction and can be altered to change cookie setting behavior on a per-request basis.
@@ -202,7 +201,7 @@ object CookieSessionInterfaces {
   object CookieSessionRequest {
     
     inline def apply(sessionOptions: CookieSessionOptions): CookieSessionRequest = {
-      val __obj = js.Dynamic.literal(sessionOptions = sessionOptions.asInstanceOf[js.Any], session = null)
+      val __obj = js.Dynamic.literal(sessionOptions = sessionOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[CookieSessionRequest]
     }
     
@@ -213,6 +212,8 @@ object CookieSessionInterfaces {
       inline def setSessionNull: Self = StObject.set(x, "session", null)
       
       inline def setSessionOptions(value: CookieSessionOptions): Self = StObject.set(x, "sessionOptions", value.asInstanceOf[js.Any])
+      
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     }
   }
 }

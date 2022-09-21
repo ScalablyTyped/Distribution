@@ -8,22 +8,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("EventSource")
 @js.native
-class EventSource protected ()
+open class EventSource protected ()
   extends StObject
      with typings.std.EventSource {
+  /* standard dom */
   def this(url: java.lang.String) = this()
+  def this(url: typings.std.URL) = this()
   def this(url: java.lang.String, eventSourceInitDict: EventSourceInit) = this()
+  def this(url: typings.std.URL, eventSourceInitDict: EventSourceInit) = this()
 }
 object EventSource {
   
+  /* standard dom */
   @JSGlobal("EventSource.CLOSED")
   @js.native
   val CLOSED: Double = js.native
   
+  /* standard dom */
   @JSGlobal("EventSource.CONNECTING")
   @js.native
   val CONNECTING: Double = js.native
   
+  /* standard dom */
   @JSGlobal("EventSource.OPEN")
   @js.native
   val OPEN: Double = js.native

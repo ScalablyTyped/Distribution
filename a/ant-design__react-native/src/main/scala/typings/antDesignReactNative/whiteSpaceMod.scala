@@ -16,7 +16,7 @@ object whiteSpaceMod {
   
   @JSImport("@ant-design/react-native/lib/white-space", JSImport.Default)
   @js.native
-  class default () extends WhiteSpace
+  open class default () extends WhiteSpace
   object default {
     
     /* static member */
@@ -34,8 +34,7 @@ object whiteSpaceMod {
   }
   
   @js.native
-  trait WhiteSpace
-    extends Component[WhiteSpaceProps, js.Any, js.Any]
+  trait WhiteSpace extends Component[WhiteSpaceProps, Any, Any]
   
   trait WhiteSpaceProps extends StObject {
     

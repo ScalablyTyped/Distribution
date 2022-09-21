@@ -35,7 +35,7 @@ object SpekeKeyProvider {
     
     inline def setSystemIds(value: listOfString): Self = StObject.set(x, "SystemIds", value.asInstanceOf[js.Any])
     
-    inline def setSystemIdsVarargs(value: string*): Self = StObject.set(x, "SystemIds", js.Array(value :_*))
+    inline def setSystemIdsVarargs(value: string*): Self = StObject.set(x, "SystemIds", js.Array(value*))
     
     inline def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }

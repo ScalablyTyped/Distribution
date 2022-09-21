@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ResizeGroup")
 @js.native
-class ResizeGroup protected ()
+open class ResizeGroup protected ()
   extends typings.officeUiFabricReact.resizeGroupBaseMod.ResizeGroupBase {
   def this(props: IResizeGroupProps) = this()
 }

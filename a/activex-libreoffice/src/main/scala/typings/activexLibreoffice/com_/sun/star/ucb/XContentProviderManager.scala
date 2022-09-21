@@ -54,7 +54,7 @@ object XContentProviderManager {
     deregisterContentProvider: (XContentProvider, String) => Unit,
     queryContentProvider: String => XContentProvider,
     queryContentProviders: () => SafeArray[ContentProviderInfo],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerContentProvider: (XContentProvider, String, Boolean) => XContentProvider,
     release: () => Unit
   ): XContentProviderManager = {

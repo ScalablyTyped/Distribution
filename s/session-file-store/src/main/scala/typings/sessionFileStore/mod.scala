@@ -3,11 +3,9 @@ package typings.sessionFileStore
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.mod.SessionOptions
 import typings.expressSession.mod.Store
-import typings.std.RegExp
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +15,13 @@ object mod {
   inline def apply(
     options: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
-      RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+      RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]
     ]
   ): FileStore = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FileStore]
   
@@ -39,12 +43,12 @@ object mod {
     /**
       * Decoding function. Takes encoded data, returns object. Defaults to `JSON.parse`
       */
-    var decoder: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var decoder: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     /**
       * Encoding function. Takes object, returns encoded data. Defaults to `JSON.stringify`
       */
-    var encoder: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var encoder: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     /**
       * Object-to-text text encoding. Can be null. Defaults to `'utf8'`
@@ -64,7 +68,7 @@ object mod {
     /**
       * Returns fallback session object after all failed retries. No defaults
       */
-    var fallbackSessionFn: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var fallbackSessionFn: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     /**
       * File extension of saved files. Defaults to `'.json'`
@@ -74,7 +78,7 @@ object mod {
     /**
       * Undocumented
       */
-    var filePattern: js.UndefOr[RegExp] = js.undefined
+    var filePattern: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * Encryption key retrieval function. Takes secret andsession id, returns key.
@@ -85,7 +89,7 @@ object mod {
     /**
       * Log messages. Defaults to `console.log`
       */
-    var logFn: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var logFn: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     /**
       * The maximum number of milliseconds between two retries. Defaults to `100`
@@ -115,7 +119,7 @@ object mod {
     /**
       * [OUT] Contains intervalObject if reap was scheduled
       */
-    var reapIntervalObject: js.UndefOr[js.Any] = js.undefined
+    var reapIntervalObject: js.UndefOr[Any] = js.undefined
     
     /**
       * Undocumented
@@ -152,11 +156,11 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setDecoder(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "decoder", js.Any.fromFunction1(value))
+      inline def setDecoder(value: /* repeated */ Any => Unit): Self = StObject.set(x, "decoder", js.Any.fromFunction1(value))
       
       inline def setDecoderUndefined: Self = StObject.set(x, "decoder", js.undefined)
       
-      inline def setEncoder(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "encoder", js.Any.fromFunction1(value))
+      inline def setEncoder(value: /* repeated */ Any => Unit): Self = StObject.set(x, "encoder", js.Any.fromFunction1(value))
       
       inline def setEncoderUndefined: Self = StObject.set(x, "encoder", js.undefined)
       
@@ -172,7 +176,7 @@ object mod {
       
       inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
       
-      inline def setFallbackSessionFn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fallbackSessionFn", js.Any.fromFunction1(value))
+      inline def setFallbackSessionFn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "fallbackSessionFn", js.Any.fromFunction1(value))
       
       inline def setFallbackSessionFnUndefined: Self = StObject.set(x, "fallbackSessionFn", js.undefined)
       
@@ -180,7 +184,7 @@ object mod {
       
       inline def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
       
-      inline def setFilePattern(value: RegExp): Self = StObject.set(x, "filePattern", value.asInstanceOf[js.Any])
+      inline def setFilePattern(value: js.RegExp): Self = StObject.set(x, "filePattern", value.asInstanceOf[js.Any])
       
       inline def setFilePatternUndefined: Self = StObject.set(x, "filePattern", js.undefined)
       
@@ -188,7 +192,7 @@ object mod {
       
       inline def setKeyFunctionUndefined: Self = StObject.set(x, "keyFunction", js.undefined)
       
-      inline def setLogFn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logFn", js.Any.fromFunction1(value))
+      inline def setLogFn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "logFn", js.Any.fromFunction1(value))
       
       inline def setLogFnUndefined: Self = StObject.set(x, "logFn", js.undefined)
       
@@ -210,7 +214,7 @@ object mod {
       
       inline def setReapInterval(value: Double): Self = StObject.set(x, "reapInterval", value.asInstanceOf[js.Any])
       
-      inline def setReapIntervalObject(value: js.Any): Self = StObject.set(x, "reapIntervalObject", value.asInstanceOf[js.Any])
+      inline def setReapIntervalObject(value: Any): Self = StObject.set(x, "reapIntervalObject", value.asInstanceOf[js.Any])
       
       inline def setReapIntervalObjectUndefined: Self = StObject.set(x, "reapIntervalObject", js.undefined)
       

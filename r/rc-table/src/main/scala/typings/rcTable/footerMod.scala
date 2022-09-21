@@ -1,7 +1,10 @@
 package typings.rcTable
 
-import typings.rcTable.footerCellMod.SummaryCellProps
-import typings.rcTable.rowMod.FooterRowProps
+import typings.rcTable.anon.Scrollbar
+import typings.rcTable.interfaceMod.ColumnType
+import typings.rcTable.interfaceMod.StickyOffsets
+import typings.rcTable.summaryMod.SummaryProps
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -14,9 +17,14 @@ object footerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildren: FooterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[RecordType](hasChildrenStickyOffsetsFlattenColumns: FooterProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenStickyOffsetsFlattenColumns.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object FooterComponents {
+    
+    /**
+      * Syntactic sugar. Do not support HOC.
+      */
+    inline def apply(hasChildren: SummaryProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("rc-table/lib/Footer", "FooterComponents")
     @js.native
@@ -24,31 +32,47 @@ object footerMod {
     
     @JSImport("rc-table/lib/Footer", "FooterComponents.Cell")
     @js.native
-    def Cell: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element] = js.native
-    inline def Cell_=(x: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
+    def Cell: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Cell.default */ js.Any = js.native
+    inline def Cell_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Cell.default */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-table/lib/Footer", "FooterComponents.Row")
     @js.native
-    def Row: js.Function1[/* props */ FooterRowProps, Element] = js.native
-    inline def Row_=(x: js.Function1[/* props */ FooterRowProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
+    def Row: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Row.default */ js.Any = js.native
+    inline def Row_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Row.default */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
   }
   
-  trait FooterProps extends StObject {
+  type FlattenColumns[RecordType] = js.Array[ColumnType[RecordType] & Scrollbar]
+  
+  trait FooterProps[RecordType] extends StObject {
     
     var children: ReactNode
+    
+    var flattenColumns: FlattenColumns[RecordType]
+    
+    var stickyOffsets: StickyOffsets
   }
   object FooterProps {
     
-    inline def apply(): FooterProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FooterProps]
+    inline def apply[RecordType](flattenColumns: FlattenColumns[RecordType], stickyOffsets: StickyOffsets): FooterProps[RecordType] = {
+      val __obj = js.Dynamic.literal(flattenColumns = flattenColumns.asInstanceOf[js.Any], stickyOffsets = stickyOffsets.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FooterProps[RecordType]]
     }
     
-    extension [Self <: FooterProps](x: Self) {
+    extension [Self <: FooterProps[?], RecordType](x: Self & FooterProps[RecordType]) {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setFlattenColumns(value: FlattenColumns[RecordType]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
+      
+      inline def setFlattenColumnsVarargs(value: (ColumnType[RecordType] & Scrollbar)*): Self = StObject.set(x, "flattenColumns", js.Array(value*))
+      
+      inline def setStickyOffsets(value: StickyOffsets): Self = StObject.set(x, "stickyOffsets", value.asInstanceOf[js.Any])
     }
   }
 }

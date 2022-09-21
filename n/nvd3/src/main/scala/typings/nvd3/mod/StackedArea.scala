@@ -21,9 +21,9 @@ trait StackedArea
      with Scatter {
   
   /*A provided function that allows a line to be non-continuous when not defined.*/
-  def defined(): js.Function2[/* d */ js.Any, /* i */ Double, Boolean] = js.native
+  def defined(): js.Function2[/* d */ Any, /* i */ Double, Boolean] = js.native
   /*A provided function that allows a line to be non-continuous when not defined.*/
-  def defined(func: js.Function2[/* d */ js.Any, /* i */ Double, Boolean]): this.type = js.native
+  def defined(func: js.Function2[/* d */ Any, /* i */ Double, Boolean]): this.type = js.native
   
   /*controls the line interpolation between points, many options exist, see the D3 reference:*/
   def interpolate(): String = js.native
@@ -52,22 +52,22 @@ trait StackedArea
   
   def scatter(
     selection: Selection_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   def scatter(
     transition: Transition_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   @JSName("scatter")
   var scatter_Original: Scatter = js.native
   

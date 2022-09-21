@@ -14,7 +14,7 @@ object animationLoaderMod {
   
   @JSImport("three/src/loaders/AnimationLoader", "AnimationLoader")
   @js.native
-  class AnimationLoader () extends Loader {
+  open class AnimationLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
     def load(url: String, onLoad: js.Function1[/* response */ js.Array[AnimationClip], Unit]): Unit = js.native
@@ -36,6 +36,6 @@ object animationLoaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
-    def parse(json: js.Any): js.Array[AnimationClip] = js.native
+    def parse(json: Any): js.Array[AnimationClip] = js.native
   }
 }

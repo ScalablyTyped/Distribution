@@ -10,15 +10,13 @@ HTTP REST client, simplified for Node.js.
 | ------------------ | :-------------: |
 | Full name          | sendgrid-rest |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 2967551 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 207633.66666666666 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://sendgrid.com)
-- [Bugs](https://github.com/sendgrid/nodejs-http-client/issues)
-- [Repository](https://github.com/sendgrid/nodejs-http-client)
 - [Npm](https://www.npmjs.com/package/sendgrid-rest)
     
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchLoyaltyAccountsRequest")
 @js.native
-class SearchLoyaltyAccountsRequest () extends StObject {
+open class SearchLoyaltyAccountsRequest () extends StObject {
   
   /**
     * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.

@@ -41,7 +41,7 @@ object XSynchronousFrameLoader {
     acquire: () => Unit,
     cancel: () => Unit,
     load: (SeqEquiv[PropertyValue], XFrame) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSynchronousFrameLoader = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), load = js.Any.fromFunction2(load), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

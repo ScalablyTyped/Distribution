@@ -20,7 +20,7 @@ trait ConditionalStyle extends StObject {
   
   var ParagraphFormat: typings.activexWord.Word.ParagraphFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RightPadding: Double
   
@@ -41,7 +41,7 @@ object ConditionalStyle {
     Font: Font,
     LeftPadding: Double,
     ParagraphFormat: ParagraphFormat,
-    Parent: js.Any,
+    Parent: Any,
     RightPadding: Double,
     Shading: Shading,
     TopPadding: Double,
@@ -68,7 +68,7 @@ object ConditionalStyle {
     
     inline def setParagraphFormat(value: ParagraphFormat): Self = StObject.set(x, "ParagraphFormat", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRightPadding(value: Double): Self = StObject.set(x, "RightPadding", value.asInstanceOf[js.Any])
     

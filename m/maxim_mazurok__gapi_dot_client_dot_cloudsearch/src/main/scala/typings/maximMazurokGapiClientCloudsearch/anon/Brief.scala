@@ -26,7 +26,7 @@ trait Brief extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
+  /** The name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
   var connectorName: js.UndefOr[String] = js.undefined
   
   /** If you are asked by Google to help with debugging, set this field. Otherwise, ignore this field. */
@@ -39,7 +39,7 @@ trait Brief extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Name of the Data Source to list Items. Format: datasources/{source_id} */
+  /** The name of the Data Source to list Items. Format: datasources/{source_id} */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

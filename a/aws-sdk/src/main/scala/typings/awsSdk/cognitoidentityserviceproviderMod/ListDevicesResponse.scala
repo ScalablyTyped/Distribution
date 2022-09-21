@@ -29,7 +29,7 @@ object ListDevicesResponse {
     
     inline def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
     
-    inline def setDevicesVarargs(value: DeviceType*): Self = StObject.set(x, "Devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: DeviceType*): Self = StObject.set(x, "Devices", js.Array(value*))
     
     inline def setPaginationToken(value: SearchPaginationTokenType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     

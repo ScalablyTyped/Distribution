@@ -10,7 +10,7 @@ trait Shrink extends StObject {
   var shrink: js.UndefOr[Height] = js.undefined
   
   def terminal(): Terminal
-  def terminal(args: js.Any*): Terminal
+  def terminal(args: Any*): Terminal
   def terminal(str: String): Terminal
   @JSName("terminal")
   var terminal_Original: Terminal

@@ -1,7 +1,6 @@
 package typings.develarSchemaUtils
 
-import typings.ajv.mod.ErrorParameters
-import typings.develarSchemaUtils.anon.ErrorObjectchildrenArrayE
+import typings.develarSchemaUtils.anon.Children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,22 +15,22 @@ object validateMod {
       * @param {ValidationErrorConfiguration=} configuration
       * @returns {void}
       */
-    inline def apply(schema: typings.jsonSchema.mod.JSONSchema4, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(schema: typings.jsonSchema.mod.JSONSchema4, options: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply(
       schema: typings.jsonSchema.mod.JSONSchema4,
-      options: js.Any,
+      options: Any,
       configuration: ValidationErrorConfiguration
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def apply(schema: typings.jsonSchema.mod.JSONSchema6, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(schema: typings.jsonSchema.mod.JSONSchema6, options: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply(
       schema: typings.jsonSchema.mod.JSONSchema6,
-      options: js.Any,
+      options: Any,
       configuration: ValidationErrorConfiguration
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def apply(schema: typings.jsonSchema.mod.JSONSchema7, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(schema: typings.jsonSchema.mod.JSONSchema7, options: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply(
       schema: typings.jsonSchema.mod.JSONSchema7,
-      options: js.Any,
+      options: Any,
       configuration: ValidationErrorConfiguration
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -40,7 +39,7 @@ object validateMod {
     val ^ : js.Any = js.native
   }
   
-  type ErrorObject = typings.ajv.mod.ErrorObject
+  type ErrorObject = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ajv.ErrorObject */ Any
   
   type JSONSchema4 = typings.jsonSchema.mod.JSONSchema4
   
@@ -48,30 +47,43 @@ object validateMod {
   
   type JSONSchema7 = typings.jsonSchema.mod.JSONSchema7
   
-  type PostFormatter = js.Function2[/* formattedError */ String, /* error */ ErrorObjectchildrenArrayE, String]
+  type PostFormatter = js.Function2[
+    /* formattedError */ String, 
+    /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ajv.ErrorObject */ Any) & Children, 
+    String
+  ]
   
   type Schema = typings.jsonSchema.mod.JSONSchema4 | typings.jsonSchema.mod.JSONSchema6 | typings.jsonSchema.mod.JSONSchema7
   
-  trait SchemaUtilErrorObject
-    extends StObject
-       with typings.ajv.mod.ErrorObject {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ajv.ErrorObject * / any */ trait SchemaUtilErrorObject extends StObject {
     
-    var children: js.UndefOr[js.Array[typings.ajv.mod.ErrorObject]] = js.undefined
+    var children: js.UndefOr[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ajv.ErrorObject */ Any
+        ]
+      ] = js.undefined
   }
   object SchemaUtilErrorObject {
     
-    inline def apply(dataPath: String, keyword: String, params: ErrorParameters, schemaPath: String): SchemaUtilErrorObject = {
-      val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
+    inline def apply(): SchemaUtilErrorObject = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SchemaUtilErrorObject]
     }
     
     extension [Self <: SchemaUtilErrorObject](x: Self) {
       
-      inline def setChildren(value: js.Array[typings.ajv.mod.ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(
+        value: js.Array[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ajv.ErrorObject */ Any
+            ]
+      ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: typings.ajv.mod.ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ajv.ErrorObject */ Any)*
+      ): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
@@ -100,7 +112,9 @@ object validateMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setPostFormatter(value: (/* formattedError */ String, /* error */ ErrorObjectchildrenArrayE) => String): Self = StObject.set(x, "postFormatter", js.Any.fromFunction2(value))
+      inline def setPostFormatter(
+        value: (/* formattedError */ String, /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ajv.ErrorObject */ Any) & Children) => String
+      ): Self = StObject.set(x, "postFormatter", js.Any.fromFunction2(value))
       
       inline def setPostFormatterUndefined: Self = StObject.set(x, "postFormatter", js.undefined)
     }

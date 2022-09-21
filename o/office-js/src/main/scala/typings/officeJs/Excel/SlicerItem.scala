@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a slicer item in a slicer.
   *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -26,27 +26,27 @@ trait SlicerItem
   var context_SlicerItem: RequestContext = js.native
   
   /**
+    * Value is `true` if the slicer item has data.
     *
-    * True if the slicer item has data.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   val hasData: Boolean = js.native
   
   /**
-    *
-    * True if the slicer item is selected.
-    Setting this value will not clear other SlicerItems' selected state.
+    * Value is `true` if the slicer item is selected.
+    Setting this value will not clear the selected state of other slicer items.
     By default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var isSelected: Boolean = js.native
   
   /**
-    *
     * Represents the unique value representing the slicer item.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   val key: String = js.native
@@ -63,21 +63,15 @@ trait SlicerItem
   def load(propertyNames: js.Array[String]): SlicerItem = js.native
   
   /**
+    * Represents the title displayed in the Excel UI.
     *
-    * Represents the title displayed in the UI.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   val name: String = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.SlicerItem): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

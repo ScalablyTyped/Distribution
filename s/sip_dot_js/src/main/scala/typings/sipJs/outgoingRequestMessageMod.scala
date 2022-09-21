@@ -12,7 +12,7 @@ object outgoingRequestMessageMod {
   
   @JSImport("sip.js/lib/core/messages/outgoing-request-message", "OutgoingRequestMessage")
   @js.native
-  class OutgoingRequestMessage protected () extends StObject {
+  open class OutgoingRequestMessage protected () extends StObject {
     def this(method: String, ruri: URI, fromURI: URI, toURI: URI) = this()
     def this(method: String, ruri: URI, fromURI: URI, toURI: URI, options: OutgoingRequestMessageOptions) = this()
     def this(method: String, ruri: URI, fromURI: URI, toURI: URI, options: Unit, extraHeaders: js.Array[String]) = this()
@@ -94,7 +94,7 @@ object outgoingRequestMessageMod {
     
     val method: String = js.native
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
     
     val ruri: URI = js.native
     
@@ -141,13 +141,13 @@ object outgoingRequestMessageMod {
     /** Get a copy of the default options. */
     @JSImport("sip.js/lib/core/messages/outgoing-request-message", "OutgoingRequestMessage.getDefaultOptions")
     @js.native
-    def getDefaultOptions: js.Any = js.native
-    inline def getDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultOptions")(x.asInstanceOf[js.Any])
+    def getDefaultOptions: Any = js.native
+    inline def getDefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultOptions")(x.asInstanceOf[js.Any])
     
     @JSImport("sip.js/lib/core/messages/outgoing-request-message", "OutgoingRequestMessage.makeNameAddrHeader")
     @js.native
-    def makeNameAddrHeader: js.Any = js.native
-    inline def makeNameAddrHeader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
+    def makeNameAddrHeader: Any = js.native
+    inline def makeNameAddrHeader_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
   }
   
   trait OutgoingRequestMessageOptions extends StObject {
@@ -219,13 +219,13 @@ object outgoingRequestMessageMod {
       
       inline def setOptionTagsUndefined: Self = StObject.set(x, "optionTags", js.undefined)
       
-      inline def setOptionTagsVarargs(value: String*): Self = StObject.set(x, "optionTags", js.Array(value :_*))
+      inline def setOptionTagsVarargs(value: String*): Self = StObject.set(x, "optionTags", js.Array(value*))
       
       inline def setRouteSet(value: js.Array[String]): Self = StObject.set(x, "routeSet", value.asInstanceOf[js.Any])
       
       inline def setRouteSetUndefined: Self = StObject.set(x, "routeSet", js.undefined)
       
-      inline def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value :_*))
+      inline def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value*))
       
       inline def setToDisplayName(value: String): Self = StObject.set(x, "toDisplayName", value.asInstanceOf[js.Any])
       

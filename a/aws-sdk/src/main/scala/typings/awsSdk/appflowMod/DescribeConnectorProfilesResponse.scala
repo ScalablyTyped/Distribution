@@ -29,7 +29,7 @@ object DescribeConnectorProfilesResponse {
     
     inline def setConnectorProfileDetailsUndefined: Self = StObject.set(x, "connectorProfileDetails", js.undefined)
     
-    inline def setConnectorProfileDetailsVarargs(value: ConnectorProfile*): Self = StObject.set(x, "connectorProfileDetails", js.Array(value :_*))
+    inline def setConnectorProfileDetailsVarargs(value: ConnectorProfile*): Self = StObject.set(x, "connectorProfileDetails", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

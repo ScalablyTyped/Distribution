@@ -18,7 +18,7 @@ object markdowncodeblocksMod {
     
     @JSImport("@jupyterlab/coreutils/lib/markdowncodeblocks", "MarkdownCodeBlocks.MarkdownCodeBlock")
     @js.native
-    class MarkdownCodeBlock protected () extends StObject {
+    open class MarkdownCodeBlock protected () extends StObject {
       def this(startLine: Double) = this()
       
       var code: String = js.native

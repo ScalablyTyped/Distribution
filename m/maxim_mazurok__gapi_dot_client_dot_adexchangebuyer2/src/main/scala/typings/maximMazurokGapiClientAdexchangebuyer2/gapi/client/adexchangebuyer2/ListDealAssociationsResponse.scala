@@ -28,7 +28,7 @@ object ListDealAssociationsResponse {
     
     inline def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
     
-    inline def setAssociationsVarargs(value: CreativeDealAssociation*): Self = StObject.set(x, "associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: CreativeDealAssociation*): Self = StObject.set(x, "associations", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

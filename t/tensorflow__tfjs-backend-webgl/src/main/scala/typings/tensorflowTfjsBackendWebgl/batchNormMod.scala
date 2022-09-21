@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.tensorflowTfjsBackendWebgl.anon.Inputs
+import typings.tensorflowTfjsBackendWebgl.anon.AttrsFusedBatchNormAttrs
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ object batchNormMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def batchNorm(params: Inputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNorm")(params.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def batchNorm(params: AttrsFusedBatchNormAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNorm")(params.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/BatchNorm", "batchNormConfig")
   @js.native

@@ -122,7 +122,7 @@ object activityItemTypesMod {
       
       inline def setActivityDescriptionUndefined: Self = StObject.set(x, "activityDescription", js.undefined)
       
-      inline def setActivityDescriptionVarargs(value: ReactNode*): Self = StObject.set(x, "activityDescription", js.Array(value :_*))
+      inline def setActivityDescriptionVarargs(value: ReactNode*): Self = StObject.set(x, "activityDescription", js.Array(value*))
       
       inline def setActivityIcon(value: ReactNode): Self = StObject.set(x, "activityIcon", value.asInstanceOf[js.Any])
       
@@ -132,7 +132,7 @@ object activityItemTypesMod {
       
       inline def setActivityPersonasUndefined: Self = StObject.set(x, "activityPersonas", js.undefined)
       
-      inline def setActivityPersonasVarargs(value: IPersonaSharedProps*): Self = StObject.set(x, "activityPersonas", js.Array(value :_*))
+      inline def setActivityPersonasVarargs(value: IPersonaSharedProps*): Self = StObject.set(x, "activityPersonas", js.Array(value*))
       
       inline def setAnimateBeaconSignal(value: Boolean): Self = StObject.set(x, "animateBeaconSignal", value.asInstanceOf[js.Any])
       
@@ -154,7 +154,7 @@ object activityItemTypesMod {
       
       inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      inline def setCommentsVarargs(value: ReactNode*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: ReactNode*): Self = StObject.set(x, "comments", js.Array(value*))
       
       inline def setIsCompact(value: Boolean): Self = StObject.set(x, "isCompact", value.asInstanceOf[js.Any])
       
@@ -192,7 +192,7 @@ object activityItemTypesMod {
       
       inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
       
-      inline def setTimeStampVarargs(value: ReactNode*): Self = StObject.set(x, "timeStamp", js.Array(value :_*))
+      inline def setTimeStampVarargs(value: ReactNode*): Self = StObject.set(x, "timeStamp", js.Array(value*))
     }
   }
   

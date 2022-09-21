@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.TupleDictionary")
 @js.native
-class TupleDictionary ()
+open class TupleDictionary ()
   extends StObject
      with typings.cannon.CANNON.TupleDictionary {
   

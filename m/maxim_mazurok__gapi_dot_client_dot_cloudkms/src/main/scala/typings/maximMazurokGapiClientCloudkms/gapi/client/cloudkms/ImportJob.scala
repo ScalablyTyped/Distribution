@@ -27,7 +27,7 @@ trait ImportJob extends StObject {
   /** Required. Immutable. The wrapping method to be used for incoming key material. */
   var importMethod: js.UndefOr[String] = js.undefined
   
-  /** Output only. The resource name for this ImportJob in the format `projects/∗/locations/∗/keyRings/∗/importJobs/ *`. */
+  /** Output only. The resource name for this ImportJob in the format `projects/ *‍/locations/ *‍/keyRings/ *‍/importJobs/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The protection level of the ImportJob. This must match the protection_level of the version_template on the CryptoKey you attempt to import into. */

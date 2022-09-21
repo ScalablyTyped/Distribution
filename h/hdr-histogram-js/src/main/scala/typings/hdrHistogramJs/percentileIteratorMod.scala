@@ -1,6 +1,6 @@
 package typings.hdrHistogramJs
 
-import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
+import typings.hdrHistogramJs.jsHistogramMod.JsHistogram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +13,14 @@ object percentileIteratorMod {
     * <i>percentileTicksPerHalfDistance</i> parameter, ultimately reaching 100% when all recorded histogram
     * values are exhausted.
     */
-  @JSImport("hdr-histogram-js/PercentileIterator", JSImport.Default)
+  @JSImport("hdr-histogram-js/dist/PercentileIterator", JSImport.Default)
   @js.native
-  class default protected () extends PercentileIterator {
+  open class default protected () extends PercentileIterator {
     /**
       * @param histogram The histogram this iterator will operate on
       * @param percentileTicksPerHalfDistance The number of equal-sized iteration steps per half-distance to 100%.
       */
-    def this(histogram: AbstractHistogram, percentileTicksPerHalfDistance: Double) = this()
+    def this(histogram: JsHistogram, percentileTicksPerHalfDistance: Double) = this()
   }
   
   /**
@@ -31,9 +31,9 @@ object percentileIteratorMod {
     */
   @js.native
   trait PercentileIterator
-    extends typings.hdrHistogramJs.abstractHistogramIteratorMod.default {
+    extends typings.hdrHistogramJs.jsHistogramIteratorMod.default {
     
-    /* private */ var doReset: js.Any = js.native
+    /* private */ var doReset: Any = js.native
     
     var percentileLevelToIterateFrom: Double = js.native
     

@@ -9,6 +9,7 @@ import typings.vegaLite.channelMod.SingleDefChannel
 import typings.vegaLite.channeldefMod.TypedFieldDef
 import typings.vegaLite.componentMod.AxisInternalIndex
 import typings.vegaLite.encodingMod.Encoding
+import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.legendComponentMod.LegendInternalIndex
 import typings.vegaLite.legendMod.LegendInternal
 import typings.vegaLite.modelMod.Model
@@ -21,9 +22,9 @@ import typings.vegaLite.specUnitMod.NormalizedUnitSpec
 import typings.vegaLite.srcConfigMod.Config
 import typings.vegaLite.srcMarkMod.Mark
 import typings.vegaLite.srcMarkMod.MarkDef
-import typings.vegaLite.srcSelectionMod.SelectionDef
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.srcStackMod.StackProperties
-import typings.vegaLite.utilMod.Dict
 import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
@@ -34,7 +35,7 @@ object unitMod {
   
   @JSImport("vega-lite/build/src/compile/unit", "UnitModel")
   @js.native
-  class UnitModel protected () extends ModelWithField {
+  open class UnitModel protected () extends ModelWithField {
     def this(
       spec: NormalizedUnitSpec,
       parent: Model,
@@ -49,15 +50,15 @@ object unitMod {
     
     def hasProjection: Boolean = js.native
     
-    /* private */ var initAxes: js.Any = js.native
+    /* private */ var initAxes: Any = js.native
     
-    /* private */ var initAxis: js.Any = js.native
+    /* private */ var initAxis: Any = js.native
     
-    /* private */ var initLegends: js.Any = js.native
+    /* private */ var initLegends: Any = js.native
     
-    /* private */ var initScale: js.Any = js.native
+    /* private */ var initScale: Any = js.native
     
-    /* private */ var initScales: js.Any = js.native
+    /* private */ var initScales: Any = js.native
     
     def legend(channel: NonPositionScaleChannel): LegendInternal = js.native
     
@@ -71,18 +72,18 @@ object unitMod {
       */
     def scaleDomain(channel: ScaleChannel): Domain = js.native
     
-    val selection: Dict[SelectionDef] = js.native
+    val selection: js.Array[SelectionParameter[SelectionType]] = js.native
     
     /* protected */ var specifiedAxes: AxisInternalIndex = js.native
     
     /* protected */ var specifiedLegends: LegendInternalIndex = js.native
     
-    var specifiedProjection: Projection = js.native
+    var specifiedProjection: Projection[ExprRef | SignalRef] = js.native
     
     val specifiedScales: ScaleIndex = js.native
     
     val stack: StackProperties = js.native
     
-    def typedFieldDef(channel: SingleDefChannel): TypedFieldDef[String, js.Any, Boolean | BinParams | binned] = js.native
+    def typedFieldDef(channel: SingleDefChannel): TypedFieldDef[String, Any, Boolean | BinParams | binned] = js.native
   }
 }

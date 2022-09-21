@@ -1,13 +1,12 @@
 package typings.googleVisualization.google.visualization
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ChartAxis extends StObject {
   
-  var allowContainerBoundaryTextCufoff: js.UndefOr[Boolean] = js.undefined
+  var allowContainerBoundaryTextCutoff: js.UndefOr[Boolean] = js.undefined
   
   var baseline: js.UndefOr[Double] = js.undefined
   
@@ -29,11 +28,11 @@ trait ChartAxis extends StObject {
   
   var maxTextLines: js.UndefOr[Double] = js.undefined
   
-  var maxValue: js.UndefOr[Double | Date | js.Array[Double]] = js.undefined
+  var maxValue: js.UndefOr[Double | js.Date | js.Array[Double]] = js.undefined
   
   var minTextSpacing: js.UndefOr[Double] = js.undefined
   
-  var minValue: js.UndefOr[Double | Date | js.Array[Double]] = js.undefined
+  var minValue: js.UndefOr[Double | js.Date | js.Array[Double]] = js.undefined
   
   var minorGridlines: js.UndefOr[ChartGridlines] = js.undefined
   
@@ -47,7 +46,7 @@ trait ChartAxis extends StObject {
   
   var textStyle: js.UndefOr[ChartTextStyle] = js.undefined
   
-  var ticks: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var ticks: js.UndefOr[js.Array[Any]] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -66,9 +65,9 @@ object ChartAxis {
   
   extension [Self <: ChartAxis](x: Self) {
     
-    inline def setAllowContainerBoundaryTextCufoff(value: Boolean): Self = StObject.set(x, "allowContainerBoundaryTextCufoff", value.asInstanceOf[js.Any])
+    inline def setAllowContainerBoundaryTextCutoff(value: Boolean): Self = StObject.set(x, "allowContainerBoundaryTextCutoff", value.asInstanceOf[js.Any])
     
-    inline def setAllowContainerBoundaryTextCufoffUndefined: Self = StObject.set(x, "allowContainerBoundaryTextCufoff", js.undefined)
+    inline def setAllowContainerBoundaryTextCutoffUndefined: Self = StObject.set(x, "allowContainerBoundaryTextCutoff", js.undefined)
     
     inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
@@ -102,21 +101,21 @@ object ChartAxis {
     
     inline def setMaxTextLinesUndefined: Self = StObject.set(x, "maxTextLines", js.undefined)
     
-    inline def setMaxValue(value: Double | Date | js.Array[Double]): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double | js.Date | js.Array[Double]): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    inline def setMaxValueVarargs(value: Double*): Self = StObject.set(x, "maxValue", js.Array(value :_*))
+    inline def setMaxValueVarargs(value: Double*): Self = StObject.set(x, "maxValue", js.Array(value*))
     
     inline def setMinTextSpacing(value: Double): Self = StObject.set(x, "minTextSpacing", value.asInstanceOf[js.Any])
     
     inline def setMinTextSpacingUndefined: Self = StObject.set(x, "minTextSpacing", js.undefined)
     
-    inline def setMinValue(value: Double | Date | js.Array[Double]): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double | js.Date | js.Array[Double]): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    inline def setMinValueVarargs(value: Double*): Self = StObject.set(x, "minValue", js.Array(value :_*))
+    inline def setMinValueVarargs(value: Double*): Self = StObject.set(x, "minValue", js.Array(value*))
     
     inline def setMinorGridlines(value: ChartGridlines): Self = StObject.set(x, "minorGridlines", value.asInstanceOf[js.Any])
     
@@ -142,11 +141,11 @@ object ChartAxis {
     
     inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
-    inline def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: js.Array[Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    inline def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: Any*): Self = StObject.set(x, "ticks", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

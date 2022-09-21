@@ -29,7 +29,7 @@ object ListEventSourceMappingsResponse {
     
     inline def setEventSourceMappingsUndefined: Self = StObject.set(x, "EventSourceMappings", js.undefined)
     
-    inline def setEventSourceMappingsVarargs(value: EventSourceMappingConfiguration*): Self = StObject.set(x, "EventSourceMappings", js.Array(value :_*))
+    inline def setEventSourceMappingsVarargs(value: EventSourceMappingConfiguration*): Self = StObject.set(x, "EventSourceMappings", js.Array(value*))
     
     inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object packedArrayMod {
   
-  @JSImport("hdr-histogram-js/packedarray/PackedArray", "PackedArray")
+  @JSImport("hdr-histogram-js/dist/packedarray/PackedArray", "PackedArray")
   @js.native
-  class PackedArray protected () extends StObject {
+  open class PackedArray protected () extends StObject {
     def this(virtualLength: Double) = this()
     def this(virtualLength: Double, initialPhysicalLength: Double) = this()
     
@@ -19,7 +19,7 @@ object packedArrayMod {
       */
     def add(index: Double, value: Double): Unit = js.native
     
-    /* private */ var arrayContext: js.Any = js.native
+    /* private */ var arrayContext: Any = js.native
     
     /**
       * Clear the array contents
@@ -51,7 +51,7 @@ object packedArrayMod {
       */
     def length(): Double = js.native
     
-    /* private */ var safeGetPackedIndexgetPackedIndex: js.Any = js.native
+    /* private */ var safeGetPackedIndexgetPackedIndex: Any = js.native
     
     /**
       * Set the value at a virtual index in the array

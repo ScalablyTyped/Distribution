@@ -20,7 +20,11 @@ object itemMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
+    
     var label: js.UndefOr[ReactNode] = js.undefined
+    
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -45,7 +49,15 @@ object itemMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      
+      inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+      
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelStyle(value: CSSProperties): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+      
+      inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       

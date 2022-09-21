@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAppInstanceUserRequest extends StObject {
   
   /**
-    * The ARN of the app instance user.
+    * The ARN of the AppInstanceUser.
     */
   var AppInstanceUserArn: ChimeArn
 }

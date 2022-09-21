@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Companion Click-through override.
-  */
 trait SchemaCompanionClickThroughOverride extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaCompanionClickThroughOverride extends StObject {
   /**
     * ID of the creative for this companion click-through override.
     */
-  var creativeId: js.UndefOr[String] = js.undefined
+  var creativeId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCompanionClickThroughOverride {
   
@@ -33,6 +30,8 @@ object SchemaCompanionClickThroughOverride {
     inline def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
     inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+    
+    inline def setCreativeIdNull: Self = StObject.set(x, "creativeId", null)
     
     inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
   }

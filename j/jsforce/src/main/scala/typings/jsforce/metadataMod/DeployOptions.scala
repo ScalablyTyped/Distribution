@@ -71,7 +71,7 @@ object DeployOptions {
     
     inline def setRunTestsUndefined: Self = StObject.set(x, "runTests", js.undefined)
     
-    inline def setRunTestsVarargs(value: String*): Self = StObject.set(x, "runTests", js.Array(value :_*))
+    inline def setRunTestsVarargs(value: String*): Self = StObject.set(x, "runTests", js.Array(value*))
     
     inline def setSinglePackage(value: Boolean): Self = StObject.set(x, "singlePackage", value.asInstanceOf[js.Any])
     

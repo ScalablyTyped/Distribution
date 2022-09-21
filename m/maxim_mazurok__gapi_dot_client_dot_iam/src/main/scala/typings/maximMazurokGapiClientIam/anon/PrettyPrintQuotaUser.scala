@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientIam.anon
 
-import typings.maximMazurokGapiClientIam.gapi.client.iam.UndeleteServiceAccountRequest
+import typings.maximMazurokGapiClientIam.gapi.client.iam.DisableServiceAccountRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +27,8 @@ trait PrettyPrintQuotaUser extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * The resource name of the service account in the following format: `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT_UNIQUE_ID}`. Using `-` as a wildcard for the `PROJECT_ID` will
-    * infer the project from the account.
+    * The resource name of the service account in the following format: `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`. Using `-` as a wildcard for the `PROJECT_ID` will infer the
+    * project from the account. The `ACCOUNT` value can be the `email` address or the `unique_id` of the service account.
     */
   var name: String
   
@@ -42,7 +42,7 @@ trait PrettyPrintQuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: UndeleteServiceAccountRequest
+  var resource: DisableServiceAccountRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait PrettyPrintQuotaUser extends StObject {
 }
 object PrettyPrintQuotaUser {
   
-  inline def apply(name: String, resource: UndeleteServiceAccountRequest): PrettyPrintQuotaUser = {
+  inline def apply(name: String, resource: DisableServiceAccountRequest): PrettyPrintQuotaUser = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintQuotaUser]
   }
@@ -97,7 +97,7 @@ object PrettyPrintQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: UndeleteServiceAccountRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: DisableServiceAccountRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

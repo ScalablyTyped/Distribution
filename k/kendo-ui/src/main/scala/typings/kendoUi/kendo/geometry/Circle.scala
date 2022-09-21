@@ -26,7 +26,7 @@ trait Circle
   
   var radius: Double = js.native
   
-  def setCenter(value: js.Any): Point = js.native
+  def setCenter(value: Any): Point = js.native
   def setCenter(value: Point): Point = js.native
   
   def setRadius(value: Double): Circle = js.native

@@ -31,6 +31,6 @@ object DescribeConditionalForwardersRequest {
     
     inline def setRemoteDomainNamesUndefined: Self = StObject.set(x, "RemoteDomainNames", js.undefined)
     
-    inline def setRemoteDomainNamesVarargs(value: RemoteDomainName*): Self = StObject.set(x, "RemoteDomainNames", js.Array(value :_*))
+    inline def setRemoteDomainNamesVarargs(value: RemoteDomainName*): Self = StObject.set(x, "RemoteDomainNames", js.Array(value*))
   }
 }

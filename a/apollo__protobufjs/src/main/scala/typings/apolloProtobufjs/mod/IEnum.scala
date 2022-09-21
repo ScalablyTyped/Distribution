@@ -10,24 +10,24 @@ trait IEnum
      with AnyNestedObject {
   
   /** Enum options */
-  var options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.undefined
+  var options: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /** Enum values */
-  var values: StringDictionary[js.UndefOr[Double]]
+  var values: StringDictionary[Double]
 }
 object IEnum {
   
-  inline def apply(values: StringDictionary[js.UndefOr[Double]]): IEnum = {
+  inline def apply(values: StringDictionary[Double]): IEnum = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnum]
   }
   
   extension [Self <: IEnum](x: Self) {
     
-    inline def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setValues(value: StringDictionary[js.UndefOr[Double]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: StringDictionary[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

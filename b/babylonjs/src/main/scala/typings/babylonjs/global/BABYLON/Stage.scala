@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Hide ctor from the rest of the world.
   * @param items The items to add.
   */
-/* private */ class Stage[T /* <: js.Function */] ()
+/* private */ open class Stage[T /* <: js.Function */] ()
   extends StObject
      with typings.babylonjs.BABYLON.Stage[T]
 /* static members */

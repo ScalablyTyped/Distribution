@@ -43,7 +43,7 @@ object GoogleFirestoreAdminV1Index {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: GoogleFirestoreAdminV1IndexField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: GoogleFirestoreAdminV1IndexField*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

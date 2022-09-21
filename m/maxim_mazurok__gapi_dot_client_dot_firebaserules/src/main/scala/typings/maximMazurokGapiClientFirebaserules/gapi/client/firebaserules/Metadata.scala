@@ -22,6 +22,6 @@ object Metadata {
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

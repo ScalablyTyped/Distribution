@@ -10,10 +10,10 @@ Implements performance.now (based on process.hrtime).
 | ------------------ | :-------------: |
 | Full name          | performance-now |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 437 |
-| # downloads        | 872245151 |
-| # stars            | 18 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.1833514E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/braveg1rl/performance-now)

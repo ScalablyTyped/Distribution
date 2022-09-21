@@ -10,10 +10,10 @@ Replaces a file extension with another one.
 | ------------------ | :-------------: |
 | Full name          | replace-ext |
 | Keywords           | gulp, extensions, filepath, basename |
-| # releases         | 3 |
-| # dependents       | 366 |
-| # downloads        | 314386055 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7144166666666668E7 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/replace-ext#readme)

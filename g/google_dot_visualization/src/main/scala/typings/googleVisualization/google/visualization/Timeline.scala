@@ -14,5 +14,5 @@ trait Timeline extends StObject {
   def draw(data: DataView): Unit = js.native
   def draw(data: DataView, options: TimelineOptions): Unit = js.native
   
-  def getSelection(): js.Array[VisualizationSelectionArray] = js.native
+  def getSelection(): js.Array[ChartSelection] = js.native
 }

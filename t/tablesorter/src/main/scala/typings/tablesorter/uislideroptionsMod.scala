@@ -25,7 +25,7 @@ object uislideroptionsMod {
       */
     var allText: js.UndefOr[String] = js.undefined
     
-    var animate: js.UndefOr[js.Any] = js.undefined
+    var animate: js.UndefOr[Any] = js.undefined
     
     /**
       * The label of the control.
@@ -69,7 +69,7 @@ object uislideroptionsMod {
     
     var orientation: js.UndefOr[String] = js.undefined
     
-    var range: js.UndefOr[js.Any] = js.undefined
+    var range: js.UndefOr[Any] = js.undefined
     
     var slide: js.UndefOr[SliderEvent] = js.undefined
     
@@ -105,7 +105,7 @@ object uislideroptionsMod {
       
       inline def setAllTextUndefined: Self = StObject.set(x, "allText", js.undefined)
       
-      inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
       inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
@@ -125,7 +125,7 @@ object uislideroptionsMod {
       
       inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
       
-      inline def setCompareVarargs(value: String*): Self = StObject.set(x, "compare", js.Array(value :_*))
+      inline def setCompareVarargs(value: String*): Self = StObject.set(x, "compare", js.Array(value*))
       
       inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
@@ -159,7 +159,7 @@ object uislideroptionsMod {
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      inline def setRange(value: js.Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       

@@ -72,19 +72,19 @@ object EnvelopesInformation {
     
     inline def setEnvelopeTransactionStatusesUndefined: Self = StObject.set(x, "envelopeTransactionStatuses", js.undefined)
     
-    inline def setEnvelopeTransactionStatusesVarargs(value: EnvelopeTransactionStatus*): Self = StObject.set(x, "envelopeTransactionStatuses", js.Array(value :_*))
+    inline def setEnvelopeTransactionStatusesVarargs(value: EnvelopeTransactionStatus*): Self = StObject.set(x, "envelopeTransactionStatuses", js.Array(value*))
     
     inline def setEnvelopes(value: js.Array[Envelope]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
     
     inline def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
     
-    inline def setEnvelopesVarargs(value: Envelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
+    inline def setEnvelopesVarargs(value: Envelope*): Self = StObject.set(x, "envelopes", js.Array(value*))
     
     inline def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
     inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    inline def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setLastQueriedDateTime(value: String): Self = StObject.set(x, "lastQueriedDateTime", value.asInstanceOf[js.Any])
     

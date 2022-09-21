@@ -1,6 +1,8 @@
 package typings.jsreportPhantomPdf
 
+import typings.jsreportCore.mod.Engine
 import typings.jsreportCore.mod.ExtensionDefinition
+import typings.jsreportCore.mod.Template
 import typings.jsreportPhantomPdf.anon.PartialOptions
 import typings.jsreportPhantomPdf.anon.PartialPhantom
 import typings.jsreportPhantomPdf.jsreportPhantomPdfStrings.`dedicated-process`
@@ -178,29 +180,52 @@ object mod {
     }
   }
   
+  // without exporting enum, it doesn't include the require('jsreport-core') in the test.js for some reason
+  // help welcome
+  // export enum Foo { }
+  trait PhantomPDFTemplate
+    extends StObject
+       with Template {
+    
+    var phantom: js.UndefOr[PartialPhantom] = js.undefined
+    
+    @JSName("recipe")
+    var recipe_PhantomPDFTemplate: `phantom-pdf` | String
+  }
+  object PhantomPDFTemplate {
+    
+    inline def apply(content: String, engine: Engine | String, recipe: `phantom-pdf` | String): PhantomPDFTemplate = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PhantomPDFTemplate]
+    }
+    
+    extension [Self <: PhantomPDFTemplate](x: Self) {
+      
+      inline def setPhantom(value: PartialPhantom): Self = StObject.set(x, "phantom", value.asInstanceOf[js.Any])
+      
+      inline def setPhantomUndefined: Self = StObject.set(x, "phantom", js.undefined)
+      
+      inline def setRecipe(value: `phantom-pdf` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    trait Template extends StObject {
+    trait TemplateRegistry extends StObject {
       
-      var phantom: js.UndefOr[PartialPhantom] = js.undefined
-      
-      var recipe: `phantom-pdf` | String
+      var PhantomPDFTemplate: typings.jsreportPhantomPdf.mod.PhantomPDFTemplate
     }
-    object Template {
+    object TemplateRegistry {
       
-      inline def apply(recipe: `phantom-pdf` | String): Template = {
-        val __obj = js.Dynamic.literal(recipe = recipe.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Template]
+      inline def apply(PhantomPDFTemplate: PhantomPDFTemplate): TemplateRegistry = {
+        val __obj = js.Dynamic.literal(PhantomPDFTemplate = PhantomPDFTemplate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: Template](x: Self) {
+      extension [Self <: TemplateRegistry](x: Self) {
         
-        inline def setPhantom(value: PartialPhantom): Self = StObject.set(x, "phantom", value.asInstanceOf[js.Any])
-        
-        inline def setPhantomUndefined: Self = StObject.set(x, "phantom", js.undefined)
-        
-        inline def setRecipe(value: `phantom-pdf` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+        inline def setPhantomPDFTemplate(value: PhantomPDFTemplate): Self = StObject.set(x, "PhantomPDFTemplate", value.asInstanceOf[js.Any])
       }
     }
   }

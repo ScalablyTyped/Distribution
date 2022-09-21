@@ -1,5 +1,6 @@
 package typings.dashjs
 
+import typings.dashjs.mod.MediaType
 import typings.dashjs.mod.MetricType
 import typings.dashjs.mod.TrackSelectionMode
 import typings.dashjs.mod.TrackSwitchMode
@@ -30,6 +31,30 @@ object dashjsStrings {
   inline def RequestsQueue: RequestsQueue = "RequestsQueue".asInstanceOf[RequestsQueue]
   
   @js.native
+  sealed trait abrBola extends StObject
+  inline def abrBola: abrBola = "abrBola".asInstanceOf[abrBola]
+  
+  @js.native
+  sealed trait abrDynamic extends StObject
+  inline def abrDynamic: abrDynamic = "abrDynamic".asInstanceOf[abrDynamic]
+  
+  @js.native
+  sealed trait abrL2A extends StObject
+  inline def abrL2A: abrL2A = "abrL2A".asInstanceOf[abrL2A]
+  
+  @js.native
+  sealed trait abrLoLP extends StObject
+  inline def abrLoLP: abrLoLP = "abrLoLP".asInstanceOf[abrLoLP]
+  
+  @js.native
+  sealed trait abrThroughput extends StObject
+  inline def abrThroughput: abrThroughput = "abrThroughput".asInstanceOf[abrThroughput]
+  
+  @js.native
+  sealed trait adaptationSetRemovedNoCapabilities extends StObject
+  inline def adaptationSetRemovedNoCapabilities: adaptationSetRemovedNoCapabilities = "adaptationSetRemovedNoCapabilities".asInstanceOf[adaptationSetRemovedNoCapabilities]
+  
+  @js.native
   sealed trait allTextTracksAdded extends StObject
   inline def allTextTracksAdded: allTextTracksAdded = "allTextTracksAdded".asInstanceOf[allTextTracksAdded]
   
@@ -44,8 +69,14 @@ object dashjsStrings {
   inline def astInFuture: astInFuture = "astInFuture".asInstanceOf[astInFuture]
   
   @js.native
-  sealed trait audio extends StObject
+  sealed trait audio
+    extends StObject
+       with MediaType
   inline def audio: audio = "audio".asInstanceOf[audio]
+  
+  @js.native
+  sealed trait bufferLevelUpdated extends StObject
+  inline def bufferLevelUpdated: bufferLevelUpdated = "bufferLevelUpdated".asInstanceOf[bufferLevelUpdated]
   
   @js.native
   sealed trait bufferLoaded extends StObject
@@ -64,6 +95,10 @@ object dashjsStrings {
   inline def canPlay: canPlay = "canPlay".asInstanceOf[canPlay]
   
   @js.native
+  sealed trait canPlayThrough extends StObject
+  inline def canPlayThrough: canPlayThrough = "canPlayThrough".asInstanceOf[canPlayThrough]
+  
+  @js.native
   sealed trait capability extends StObject
   inline def capability: capability = "capability".asInstanceOf[capability]
   
@@ -80,16 +115,38 @@ object dashjsStrings {
   inline def cc: cc = "cc".asInstanceOf[cc]
   
   @js.native
+  sealed trait conformanceViolation extends StObject
+  inline def conformanceViolation: conformanceViolation = "conformanceViolation".asInstanceOf[conformanceViolation]
+  
+  @js.native
   sealed trait download extends StObject
   inline def download: download = "download".asInstanceOf[download]
   
   @js.native
-  sealed trait embeddedText extends StObject
-  inline def embeddedText: embeddedText = "embeddedText".asInstanceOf[embeddedText]
+  sealed trait dynamicToStatic extends StObject
+  inline def dynamicToStatic: dynamicToStatic = "dynamicToStatic".asInstanceOf[dynamicToStatic]
   
   @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait eventModeOnReceive extends StObject
+  inline def eventModeOnReceive: eventModeOnReceive = "eventModeOnReceive".asInstanceOf[eventModeOnReceive]
+  
+  @js.native
+  sealed trait eventModeOnStart extends StObject
+  inline def eventModeOnStart: eventModeOnStart = "eventModeOnStart".asInstanceOf[eventModeOnStart]
+  
+  @js.native
+  sealed trait ewma extends StObject
+  inline def ewma: ewma = "ewma".asInstanceOf[ewma]
+  
+  @js.native
+  sealed trait firstTrack
+    extends StObject
+       with TrackSelectionMode
+  inline def firstTrack: firstTrack = "firstTrack".asInstanceOf[firstTrack]
   
   @js.native
   sealed trait fragmentLoadingAbandoned extends StObject
@@ -100,12 +157,16 @@ object dashjsStrings {
   inline def fragmentLoadingCompleted: fragmentLoadingCompleted = "fragmentLoadingCompleted".asInstanceOf[fragmentLoadingCompleted]
   
   @js.native
+  sealed trait fragmentLoadingProgress extends StObject
+  inline def fragmentLoadingProgress: fragmentLoadingProgress = "fragmentLoadingProgress".asInstanceOf[fragmentLoadingProgress]
+  
+  @js.native
   sealed trait fragmentLoadingStarted extends StObject
   inline def fragmentLoadingStarted: fragmentLoadingStarted = "fragmentLoadingStarted".asInstanceOf[fragmentLoadingStarted]
   
   @js.native
-  sealed trait fragmentedText extends StObject
-  inline def fragmentedText: fragmentedText = "fragmentedText".asInstanceOf[fragmentedText]
+  sealed trait header extends StObject
+  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
   sealed trait highestBitrate
@@ -114,7 +175,21 @@ object dashjsStrings {
   inline def highestBitrate: highestBitrate = "highestBitrate".asInstanceOf[highestBitrate]
   
   @js.native
-  sealed trait image extends StObject
+  sealed trait highestEfficiency
+    extends StObject
+       with TrackSelectionMode
+  inline def highestEfficiency: highestEfficiency = "highestEfficiency".asInstanceOf[highestEfficiency]
+  
+  @js.native
+  sealed trait highestSelectionPriority
+    extends StObject
+       with TrackSelectionMode
+  inline def highestSelectionPriority: highestSelectionPriority = "highestSelectionPriority".asInstanceOf[highestSelectionPriority]
+  
+  @js.native
+  sealed trait image
+    extends StObject
+       with MediaType
   inline def image: image = "image".asInstanceOf[image]
   
   @js.native
@@ -136,6 +211,10 @@ object dashjsStrings {
   @js.native
   sealed trait manifestLoaded extends StObject
   inline def manifestLoaded: manifestLoaded = "manifestLoaded".asInstanceOf[manifestLoaded]
+  
+  @js.native
+  sealed trait manifestValidityChanged extends StObject
+  inline def manifestValidityChanged: manifestValidityChanged = "manifestValidityChanged".asInstanceOf[manifestValidityChanged]
   
   @js.native
   sealed trait mediasource extends StObject
@@ -178,6 +257,10 @@ object dashjsStrings {
   @js.native
   sealed trait playbackError extends StObject
   inline def playbackError: playbackError = "playbackError".asInstanceOf[playbackError]
+  
+  @js.native
+  sealed trait playbackLoadedData extends StObject
+  inline def playbackLoadedData: playbackLoadedData = "playbackLoadedData".asInstanceOf[playbackLoadedData]
   
   @js.native
   sealed trait playbackMetaDataLoaded extends StObject
@@ -224,6 +307,10 @@ object dashjsStrings {
   inline def playbackTimeUpdated: playbackTimeUpdated = "playbackTimeUpdated".asInstanceOf[playbackTimeUpdated]
   
   @js.native
+  sealed trait playbackVolumeChanged extends StObject
+  inline def playbackVolumeChanged: playbackVolumeChanged = "playbackVolumeChanged".asInstanceOf[playbackVolumeChanged]
+  
+  @js.native
   sealed trait playbackWaiting extends StObject
   inline def playbackWaiting: playbackWaiting = "playbackWaiting".asInstanceOf[playbackWaiting]
   
@@ -252,8 +339,16 @@ object dashjsStrings {
   inline def public_keySessionRemoved: public_keySessionRemoved = "public_keySessionRemoved".asInstanceOf[public_keySessionRemoved]
   
   @js.native
+  sealed trait public_keySessionUpdated extends StObject
+  inline def public_keySessionUpdated: public_keySessionUpdated = "public_keySessionUpdated".asInstanceOf[public_keySessionUpdated]
+  
+  @js.native
   sealed trait public_keyStatusesChanged extends StObject
   inline def public_keyStatusesChanged: public_keyStatusesChanged = "public_keyStatusesChanged".asInstanceOf[public_keyStatusesChanged]
+  
+  @js.native
+  sealed trait public_keySystemAccessComplete extends StObject
+  inline def public_keySystemAccessComplete: public_keySystemAccessComplete = "public_keySystemAccessComplete".asInstanceOf[public_keySystemAccessComplete]
   
   @js.native
   sealed trait public_keySystemSelected extends StObject
@@ -262,6 +357,26 @@ object dashjsStrings {
   @js.native
   sealed trait public_licenseRequestComplete extends StObject
   inline def public_licenseRequestComplete: public_licenseRequestComplete = "public_licenseRequestComplete".asInstanceOf[public_licenseRequestComplete]
+  
+  @js.native
+  sealed trait public_licenseRequestSending extends StObject
+  inline def public_licenseRequestSending: public_licenseRequestSending = "public_licenseRequestSending".asInstanceOf[public_licenseRequestSending]
+  
+  @js.native
+  sealed trait public_offlineRecordFinished extends StObject
+  inline def public_offlineRecordFinished: public_offlineRecordFinished = "public_offlineRecordFinished".asInstanceOf[public_offlineRecordFinished]
+  
+  @js.native
+  sealed trait public_offlineRecordLoadedmetadata extends StObject
+  inline def public_offlineRecordLoadedmetadata: public_offlineRecordLoadedmetadata = "public_offlineRecordLoadedmetadata".asInstanceOf[public_offlineRecordLoadedmetadata]
+  
+  @js.native
+  sealed trait public_offlineRecordStarted extends StObject
+  inline def public_offlineRecordStarted: public_offlineRecordStarted = "public_offlineRecordStarted".asInstanceOf[public_offlineRecordStarted]
+  
+  @js.native
+  sealed trait public_offlineRecordStopped extends StObject
+  inline def public_offlineRecordStopped: public_offlineRecordStopped = "public_offlineRecordStopped".asInstanceOf[public_offlineRecordStopped]
   
   @js.native
   sealed trait public_protectioncreated extends StObject
@@ -280,15 +395,45 @@ object dashjsStrings {
   inline def qualityChangeRequested: qualityChangeRequested = "qualityChangeRequested".asInstanceOf[qualityChangeRequested]
   
   @js.native
-  sealed trait stream extends StObject
-  inline def stream: stream = "stream".asInstanceOf[stream]
+  sealed trait query extends StObject
+  inline def query: query = "query".asInstanceOf[query]
+  
+  @js.native
+  sealed trait representationSwitch extends StObject
+  inline def representationSwitch: representationSwitch = "representationSwitch".asInstanceOf[representationSwitch]
+  
+  @js.native
+  sealed trait slidingWindow extends StObject
+  inline def slidingWindow: slidingWindow = "slidingWindow".asInstanceOf[slidingWindow]
+  
+  @js.native
+  sealed trait streamActivated extends StObject
+  inline def streamActivated: streamActivated = "streamActivated".asInstanceOf[streamActivated]
+  
+  @js.native
+  sealed trait streamDeactivated extends StObject
+  inline def streamDeactivated: streamDeactivated = "streamDeactivated".asInstanceOf[streamDeactivated]
   
   @js.native
   sealed trait streamInitialized extends StObject
   inline def streamInitialized: streamInitialized = "streamInitialized".asInstanceOf[streamInitialized]
   
   @js.native
-  sealed trait text extends StObject
+  sealed trait streamInitializing extends StObject
+  inline def streamInitializing: streamInitializing = "streamInitializing".asInstanceOf[streamInitializing]
+  
+  @js.native
+  sealed trait streamTeardownComplete extends StObject
+  inline def streamTeardownComplete: streamTeardownComplete = "streamTeardownComplete".asInstanceOf[streamTeardownComplete]
+  
+  @js.native
+  sealed trait streamUpdated extends StObject
+  inline def streamUpdated: streamUpdated = "streamUpdated".asInstanceOf[streamUpdated]
+  
+  @js.native
+  sealed trait text
+    extends StObject
+       with MediaType
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
@@ -308,7 +453,9 @@ object dashjsStrings {
   inline def ttmlToParse: ttmlToParse = "ttmlToParse".asInstanceOf[ttmlToParse]
   
   @js.native
-  sealed trait video extends StObject
+  sealed trait video
+    extends StObject
+       with MediaType
   inline def video: video = "video".asInstanceOf[video]
   
   @js.native

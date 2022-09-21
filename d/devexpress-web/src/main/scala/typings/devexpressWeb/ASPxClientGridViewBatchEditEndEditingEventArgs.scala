@@ -12,14 +12,19 @@ trait ASPxClientGridViewBatchEditEndEditingEventArgs
      with ASPxClientCancelEventArgs {
   
   /**
+    * Gets the column to which the edited cell belongs.
+    */
+  var focusedColumn: ASPxClientGridViewColumn
+  
+  /**
     * Gets the row's key.
     */
-  var key: js.Any
+  var key: Any
   
   /**
     * Gets a hashtable that maintains information about editable cells.
     */
-  var rowValues: js.Any
+  var rowValues: Any
   
   /**
     * Gets the visible index of the row whose cells has been edited.
@@ -28,16 +33,24 @@ trait ASPxClientGridViewBatchEditEndEditingEventArgs
 }
 object ASPxClientGridViewBatchEditEndEditingEventArgs {
   
-  inline def apply(cancel: Boolean, key: js.Any, rowValues: js.Any, visibleIndex: Double): ASPxClientGridViewBatchEditEndEditingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rowValues = rowValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+  inline def apply(
+    cancel: Boolean,
+    focusedColumn: ASPxClientGridViewColumn,
+    key: Any,
+    rowValues: Any,
+    visibleIndex: Double
+  ): ASPxClientGridViewBatchEditEndEditingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], focusedColumn = focusedColumn.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rowValues = rowValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGridViewBatchEditEndEditingEventArgs]
   }
   
   extension [Self <: ASPxClientGridViewBatchEditEndEditingEventArgs](x: Self) {
     
-    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setFocusedColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
     
-    inline def setRowValues(value: js.Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setRowValues(value: Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

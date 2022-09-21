@@ -10,10 +10,10 @@ Fast point-in-polygon intersection for large numbers of polygons.
 | ------------------ | :-------------: |
 | Full name          | polygon-lookup |
 | Keywords           | polygon, lookup, intersection, coarse, reverse-geocode |
-| # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 101567 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9983.666666666666 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/pelias/polygon-lookup)

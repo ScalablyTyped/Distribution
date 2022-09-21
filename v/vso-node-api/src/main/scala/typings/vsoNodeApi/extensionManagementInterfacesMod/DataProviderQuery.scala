@@ -29,6 +29,6 @@ object DataProviderQuery {
     
     inline def setContributionIds(value: js.Array[String]): Self = StObject.set(x, "contributionIds", value.asInstanceOf[js.Any])
     
-    inline def setContributionIdsVarargs(value: String*): Self = StObject.set(x, "contributionIds", js.Array(value :_*))
+    inline def setContributionIdsVarargs(value: String*): Self = StObject.set(x, "contributionIds", js.Array(value*))
   }
 }

@@ -38,7 +38,7 @@ trait InputHTMLAttributes[T]
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var files: js.UndefOr[js.Any] = js.undefined
+  var files: js.UndefOr[Any] = js.undefined
   
   var form: js.UndefOr[String] = js.undefined
   
@@ -110,11 +110,11 @@ trait InputHTMLAttributes[T]
   
   var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
   
-  var valueAsDate: js.UndefOr[js.Any] = js.undefined
+  var valueAsDate: js.UndefOr[Any] = js.undefined
   
-  var valueAsNumber: js.UndefOr[js.Any] = js.undefined
+  var valueAsNumber: js.UndefOr[Any] = js.undefined
   
-  var webkitEntries: js.UndefOr[js.Any] = js.undefined
+  var webkitEntries: js.UndefOr[Any] = js.undefined
   
   var webkitdirectory: js.UndefOr[Boolean] = js.undefined
   
@@ -177,7 +177,7 @@ object InputHTMLAttributes {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
@@ -287,19 +287,19 @@ object InputHTMLAttributes {
     
     inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueAsDate(value: js.Any): Self = StObject.set(x, "valueAsDate", value.asInstanceOf[js.Any])
+    inline def setValueAsDate(value: Any): Self = StObject.set(x, "valueAsDate", value.asInstanceOf[js.Any])
     
     inline def setValueAsDateUndefined: Self = StObject.set(x, "valueAsDate", js.undefined)
     
-    inline def setValueAsNumber(value: js.Any): Self = StObject.set(x, "valueAsNumber", value.asInstanceOf[js.Any])
+    inline def setValueAsNumber(value: Any): Self = StObject.set(x, "valueAsNumber", value.asInstanceOf[js.Any])
     
     inline def setValueAsNumberUndefined: Self = StObject.set(x, "valueAsNumber", js.undefined)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
-    inline def setWebkitEntries(value: js.Any): Self = StObject.set(x, "webkitEntries", value.asInstanceOf[js.Any])
+    inline def setWebkitEntries(value: Any): Self = StObject.set(x, "webkitEntries", value.asInstanceOf[js.Any])
     
     inline def setWebkitEntriesUndefined: Self = StObject.set(x, "webkitEntries", js.undefined)
     

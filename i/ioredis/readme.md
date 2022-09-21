@@ -1,7 +1,7 @@
 
 # Scala.js typings for ioredis
 
-Typings are for version 4.17
+Typings are for version 5.2.3
 
 ## Library description:
 A robust, performance-focused and full-featured Redis client for Node.js.
@@ -10,10 +10,10 @@ A robust, performance-focused and full-featured Redis client for Node.js.
 | ------------------ | :-------------: |
 | Full name          | ioredis |
 | Keywords           | redis, cluster, sentinel, pipelining |
-| # releases         | 45 |
-| # dependents       | 1771 |
-| # downloads        | 48643138 |
-| # stars            | 85 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0639839333333334E7 |
+| # stars            | 10856.0 |
 
 ## Links
 - [Homepage](https://github.com/luin/ioredis#readme)
@@ -24,7 +24,7 @@ A robust, performance-focused and full-featured Redis client for Node.js.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dict
   extends StObject
-     with /* _ */ StringDictionary[js.Any] {
+     with /* _ */ StringDictionary[Any] {
   
   var name: js.UndefOr[String] = js.undefined
 }

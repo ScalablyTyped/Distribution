@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("serverless/plugins/aws/provider/awsProvider", JSImport.Namespace)
 @js.native
-class ^ protected ()
+open class ^ protected ()
   extends StObject
      with Aws {
   def this(serverless: Serverless, options: Options) = this()

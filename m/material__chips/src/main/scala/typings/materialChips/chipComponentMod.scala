@@ -1,74 +1,65 @@
 package typings.materialChips
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
+import typings.materialChips.chipConstantsMod.MDCChipAnimation
 import typings.materialChips.chipFoundationMod.MDCChipFoundation
-import typings.materialChips.trailingactionComponentMod.MDCChipTrailingActionFactory
-import typings.materialRipple.componentMod.MDCRipple
-import typings.materialRipple.componentMod.MDCRippleFactory
-import typings.std.Element
+import typings.materialChips.componentMod.MDCChipActionFactory
+import typings.materialChips.constantsMod.MDCChipActionFocusBehavior
+import typings.materialChips.constantsMod.MDCChipActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chipComponentMod {
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/chips/chip/component", "MDCChip")
+  @JSImport("@material/chips/chip/component", "MDCChip")
   @js.native
-  class MDCChip protected () extends MDCComponent[MDCChipFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCChipFoundation, args: js.Any*) = this()
+  open class MDCChip protected () extends MDCComponent[MDCChipFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCChipFoundation, args: Any*) = this()
     
-    /**
-      * Begins the exit animation which leads to removal of the chip.
-      */
-    def beginExit(): Unit = js.native
+    /* private */ var actions: Any = js.native
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    /** Returns the MDCChipActionTypes for the encapsulated actions. */
+    def getActions(): js.Array[MDCChipActionType] = js.native
     
-    def focusPrimaryAction(): Unit = js.native
+    /** Returns the ID of the root element. */
+    def getElementID(): String = js.native
     
-    def focusTrailingAction(): Unit = js.native
+    /* private */ var handleActionInteraction: Any = js.native
     
-    def id: String = js.native
+    /* private */ var handleActionNavigation: Any = js.native
     
     def initialize(): Unit = js.native
-    def initialize(rippleFactory: Unit, trailingActionFactory: MDCChipTrailingActionFactory): Unit = js.native
-    def initialize(rippleFactory: MDCRippleFactory): Unit = js.native
-    def initialize(rippleFactory: MDCRippleFactory, trailingActionFactory: MDCChipTrailingActionFactory): Unit = js.native
+    def initialize(actionFactory: MDCChipActionFactory): Unit = js.native
     
+    /** Returns the focusability of the action. */
+    def isActionFocusable(action: MDCChipActionType): Boolean = js.native
+    
+    /** Returns the selectability of the action. */
+    def isActionSelectable(action: MDCChipActionType): Boolean = js.native
+    
+    /** Returns the selected state of the action. */
+    def isActionSelected(action: MDCChipActionType): Boolean = js.native
+    
+    def isDisabled(): Boolean = js.native
+    
+    /** Exposed to be called by the parent chip set. */
     def remove(): Unit = js.native
     
-    def removeFocus(): Unit = js.native
+    /* private */ val rootHTML: Any = js.native
     
-    def ripple: MDCRipple = js.native
+    /** Sets the focus behavior of the action. */
+    def setActionFocus(action: MDCChipActionType, focus: MDCChipActionFocusBehavior): Unit = js.native
     
-    /**
-      * @return Whether the chip is selected.
-      */
-    def selected: Boolean = js.native
-    /**
-      * Sets selected state on the chip.
-      */
-    def selected_=(selected: Boolean): Unit = js.native
+    /** Sets the selected state of the action. */
+    def setActionSelected(action: MDCChipActionType, isSelected: Boolean): Unit = js.native
     
-    def setSelectedFromChipSet(selected: Boolean, shouldNotifyClients: Boolean): Unit = js.native
+    def setDisabled(isDisabled: Boolean): Unit = js.native
     
-    /**
-      * Sets whether a clicking on the chip should focus the primary action.
-      */
-    def setShouldFocusPrimaryActionOnClick_=(shouldFocus: Boolean): Unit = js.native
-    
-    /**
-      * @return Whether a trailing icon click should trigger exit/removal of the chip.
-      */
-    def shouldRemoveOnTrailingIconClick: Boolean = js.native
-    /**
-      * Sets whether a trailing icon click should trigger exit/removal of the chip.
-      */
-    def shouldRemoveOnTrailingIconClick_=(shouldRemove: Boolean): Unit = js.native
-    
-    var unbounded: js.UndefOr[Boolean] = js.native
+    /** Starts the animation on the chip. */
+    def startAnimation(animation: MDCChipAnimation): Unit = js.native
   }
   /* static members */
   object MDCChip {
@@ -77,8 +68,12 @@ object chipComponentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCChip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCChip]
+    inline def attachTo(root: typings.std.Element): MDCChip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCChip]
   }
   
-  type MDCChipFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCChipFoundation], MDCChip]
+  type MDCChipFactory = js.Function2[
+    /* el */ typings.std.Element, 
+    /* foundation */ js.UndefOr[MDCChipFoundation], 
+    MDCChip
+  ]
 }

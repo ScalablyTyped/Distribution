@@ -22,6 +22,6 @@ object SettingsChange {
     
     inline def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
     
-    inline def setRestrictionChangesVarargs(value: RestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
+    inline def setRestrictionChangesVarargs(value: RestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value*))
   }
 }

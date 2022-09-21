@@ -10,10 +10,10 @@ An Embeddable Markdown Editor
 | ------------------ | :-------------: |
 | Full name          | epiceditor |
 | Keywords           | embeddable, markdown, editor |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 750 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30.0 |
+| # stars            | 4285.0 |
 
 ## Links
 - [Homepage](https://github.com/OscarGodson/EpicEditor#readme)

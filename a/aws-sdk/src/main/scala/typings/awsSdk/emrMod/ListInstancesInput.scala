@@ -68,13 +68,13 @@ object ListInstancesInput {
     
     inline def setInstanceGroupTypesUndefined: Self = StObject.set(x, "InstanceGroupTypes", js.undefined)
     
-    inline def setInstanceGroupTypesVarargs(value: InstanceGroupType*): Self = StObject.set(x, "InstanceGroupTypes", js.Array(value :_*))
+    inline def setInstanceGroupTypesVarargs(value: InstanceGroupType*): Self = StObject.set(x, "InstanceGroupTypes", js.Array(value*))
     
     inline def setInstanceStates(value: InstanceStateList): Self = StObject.set(x, "InstanceStates", value.asInstanceOf[js.Any])
     
     inline def setInstanceStatesUndefined: Self = StObject.set(x, "InstanceStates", js.undefined)
     
-    inline def setInstanceStatesVarargs(value: InstanceState*): Self = StObject.set(x, "InstanceStates", js.Array(value :_*))
+    inline def setInstanceStatesVarargs(value: InstanceState*): Self = StObject.set(x, "InstanceStates", js.Array(value*))
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

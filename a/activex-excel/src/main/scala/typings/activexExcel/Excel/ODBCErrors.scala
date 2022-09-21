@@ -17,7 +17,7 @@ trait ODBCErrors extends StObject {
   
   def Item(Index: Double): ODBCError = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: Double): ODBCError = js.native
 }

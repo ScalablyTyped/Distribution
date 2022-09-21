@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@rushstack/eslint-patch" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@rushstack/eslint-patch" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

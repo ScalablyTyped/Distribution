@@ -23,7 +23,7 @@ trait JQuery extends StObject {
   /**
     * Invoke API methods after date picker initialization.
     */
-  def pickadate(methodName: String, arguments: js.Any*): js.Any
+  def pickadate(methodName: String, arguments: Any*): Any
   def pickadate(options: DateOptions): JQuery
   @JSName("pickadate")
   var pickadate_Original: typings.pickadate.Pickadate.Pickadate
@@ -46,7 +46,7 @@ trait JQuery extends StObject {
   /**
     * Invoke API methods after time picker initialization.
     */
-  def pickatime(methodName: String, arguments: js.Any*): js.Any
+  def pickatime(methodName: String, arguments: Any*): Any
   def pickatime(options: TimeOptions): JQuery
   @JSName("pickatime")
   var pickatime_Original: Pickatime

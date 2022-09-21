@@ -22,7 +22,7 @@ object baseElevationLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with BaseElevationLayer {
     def this(properties: BaseElevationLayerProperties) = this()

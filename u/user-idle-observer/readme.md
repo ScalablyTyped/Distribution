@@ -10,10 +10,10 @@ Module that helps you to detect user inactivity on client side.
 | ------------------ | :-------------: |
 | Full name          | user-idle-observer |
 | Keywords           | js, idle, client |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 1640 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 58.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/vladagurets/user-idle-observer#readme)

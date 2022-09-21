@@ -83,6 +83,14 @@ object appleMapkitJsBrowserStrings {
   inline def `region-change-start`: `region-change-start` = "region-change-start".asInstanceOf[`region-change-start`]
   
   @js.native
+  sealed trait `rotation-end` extends StObject
+  inline def `rotation-end`: `rotation-end` = "rotation-end".asInstanceOf[`rotation-end`]
+  
+  @js.native
+  sealed trait `rotation-start` extends StObject
+  inline def `rotation-start`: `rotation-start` = "rotation-start".asInstanceOf[`rotation-start`]
+  
+  @js.native
   sealed trait `scroll-end` extends StObject
   inline def `scroll-end`: `scroll-end` = "scroll-end".asInstanceOf[`scroll-end`]
   

@@ -10,10 +10,10 @@ Methods to work with week days and weekends in moment.
 | ------------------ | :-------------: |
 | Full name          | moment-business |
 | Keywords           | moment, momentjs, moment.js, business, workday, workweek, saturday, sunday, weekend, weekends |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 1311539 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 143372.66666666666 |
+| # stars            | 99.0 |
 
 ## Links
 - [Homepage](https://github.com/jmeas/moment-business)

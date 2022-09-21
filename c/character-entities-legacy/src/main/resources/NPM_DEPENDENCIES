@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "character-entities-legacy" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "character-entities-legacy" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

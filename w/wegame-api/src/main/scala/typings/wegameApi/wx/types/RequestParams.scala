@@ -15,7 +15,7 @@ trait RequestParams extends StObject {
   /**
     * 请求的参数
     */
-  var data: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[String | StringDictionary[Any]] = js.undefined
   
   /**
     * 返回的数据格式
@@ -57,7 +57,7 @@ object RequestParams {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: json | arraybuffer): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

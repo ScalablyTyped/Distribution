@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertContentFromServerCommand")
 @js.native
-class InsertContentFromServerCommand ()
+open class InsertContentFromServerCommand ()
   extends StObject
      with typings.devexpressWeb.InsertContentFromServerCommand

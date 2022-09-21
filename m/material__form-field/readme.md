@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__form-field
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 Material Components for the web wrapper for laying out form fields and labels next to one another
@@ -10,10 +10,10 @@ Material Components for the web wrapper for laying out form fields and labels ne
 | ------------------ | :-------------: |
 | Full name          | @material/form-field |
 | Keywords           | material components, material design, form |
-| # releases         | 810 |
-| # dependents       | 71 |
-| # downloads        | 2363470 |
-| # stars            | 0 |
+| # releases         | 714 |
+| # dependents       | 0.0 |
+| # downloads        | 281978.3333333333 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

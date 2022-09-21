@@ -8,6 +8,30 @@ object global {
   
   @JSGlobal("Reveal")
   @js.native
-  def Reveal: RevealStatic = js.native
-  inline def Reveal_=(x: RevealStatic): Unit = js.Dynamic.global.updateDynamic("Reveal")(x.asInstanceOf[js.Any])
+  val Reveal: RevealStatic = js.native
+  
+  // Reveal plugins are globals since 4.0 (if not loaded through ES Modules): https://revealjs.com/plugins/
+  @JSGlobal("RevealHighlight")
+  @js.native
+  val RevealHighlight: Plugin = js.native
+  
+  @JSGlobal("RevealMarkdown")
+  @js.native
+  val RevealMarkdown: Plugin = js.native
+  
+  @JSGlobal("RevealMath")
+  @js.native
+  val RevealMath: Plugin = js.native
+  
+  @JSGlobal("RevealNotes")
+  @js.native
+  val RevealNotes: Plugin = js.native
+  
+  @JSGlobal("RevealSearch")
+  @js.native
+  val RevealSearch: Plugin = js.native
+  
+  @JSGlobal("RevealZoom")
+  @js.native
+  val RevealZoom: Plugin = js.native
 }

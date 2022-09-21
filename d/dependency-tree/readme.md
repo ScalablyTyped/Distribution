@@ -1,7 +1,7 @@
 
 # Scala.js typings for dependency-tree
 
-Typings are for version 7.2
+Typings are for version 8.1.2
 
 ## Library description:
 Get the dependency tree of a module
@@ -10,10 +10,10 @@ Get the dependency tree of a module
 | ------------------ | :-------------: |
 | Full name          | dependency-tree |
 | Keywords           | dependency, tree, graph, module, ast, requirejs, AMD, commonjs, es6, sass, stylus, less, typescript |
-| # releases         | 12 |
-| # dependents       | 52 |
-| # downloads        | 10639273 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1375817.6666666667 |
+| # stars            | 508.0 |
 
 ## Links
 - [Homepage](https://github.com/mrjoelkemp/node-dependency-tree)
@@ -24,7 +24,7 @@ Get the dependency tree of a module
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

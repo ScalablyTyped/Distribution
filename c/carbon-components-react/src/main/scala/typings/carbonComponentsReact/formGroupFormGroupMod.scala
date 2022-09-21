@@ -20,7 +20,11 @@ object formGroupFormGroupMod extends Shortcut {
     extends StObject
        with FieldsetHTMLAttributes[HTMLFieldSetElement] {
     
+    var hasMargin: js.UndefOr[Boolean] = js.undefined
+    
     var invalid: js.UndefOr[Boolean] = js.undefined
+    
+    var legendId: js.UndefOr[String] = js.undefined
     
     var legendText: NonNullable[ReactNode]
     
@@ -30,20 +34,26 @@ object formGroupFormGroupMod extends Shortcut {
   }
   object FormGroupProps {
     
-    inline def apply(): FormGroupProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(legendText: NonNullable[ReactNode]): FormGroupProps = {
+      val __obj = js.Dynamic.literal(legendText = legendText.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormGroupProps]
     }
     
     extension [Self <: FormGroupProps](x: Self) {
       
+      inline def setHasMargin(value: Boolean): Self = StObject.set(x, "hasMargin", value.asInstanceOf[js.Any])
+      
+      inline def setHasMarginUndefined: Self = StObject.set(x, "hasMargin", js.undefined)
+      
       inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
       inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      inline def setLegendText(value: NonNullable[ReactNode]): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
+      inline def setLegendId(value: String): Self = StObject.set(x, "legendId", value.asInstanceOf[js.Any])
       
-      inline def setLegendTextUndefined: Self = StObject.set(x, "legendText", js.undefined)
+      inline def setLegendIdUndefined: Self = StObject.set(x, "legendId", js.undefined)
+      
+      inline def setLegendText(value: NonNullable[ReactNode]): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

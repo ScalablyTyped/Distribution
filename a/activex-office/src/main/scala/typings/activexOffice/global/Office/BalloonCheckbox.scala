@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.BalloonCheckbox")
 @js.native
-/* private */ class BalloonCheckbox ()
+/* private */ open class BalloonCheckbox ()
   extends StObject
      with typings.activexOffice.Office.BalloonCheckbox {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var Checked: Boolean = js.native
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotBalloonCheckbox_typekey: typings.activexOffice.Office.BalloonCheckbox = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Text: String = js.native

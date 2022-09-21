@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/address" : "5.0.7"
+      "@ethersproject/address" : "5.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/address" : "5.0.7"
+      "@ethersproject/address" : "5.7.0"
     }
   ],
   "compile-devDependencies" : [

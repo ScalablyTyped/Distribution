@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertSymbolCommand")
 @js.native
-class InsertSymbolCommand ()
+open class InsertSymbolCommand ()
   extends StObject
      with typings.devexpressWeb.InsertSymbolCommand {
   

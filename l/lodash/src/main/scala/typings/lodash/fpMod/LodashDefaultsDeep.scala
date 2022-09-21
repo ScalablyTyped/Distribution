@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashDefaultsDeep extends StObject {
   
-  def apply(sources: js.Any): LodashDefaultsDeep1x1 = js.native
-  def apply(sources: js.Any, `object`: js.Any): js.Any = js.native
-  def apply(sources: __, `object`: js.Any): LodashDefaultsDeep1x2 = js.native
+  def apply(sources: Any): LodashDefaultsDeep1x1 = js.native
+  def apply(sources: Any, `object`: Any): Any = js.native
+  def apply(sources: __, `object`: Any): LodashDefaultsDeep1x2 = js.native
 }

@@ -29,6 +29,6 @@ object ListPartnersResponse {
     
     inline def setPartnersUndefined: Self = StObject.set(x, "partners", js.undefined)
     
-    inline def setPartnersVarargs(value: Partner*): Self = StObject.set(x, "partners", js.Array(value :_*))
+    inline def setPartnersVarargs(value: Partner*): Self = StObject.set(x, "partners", js.Array(value*))
   }
 }

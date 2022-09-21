@@ -78,6 +78,12 @@ trait ParagraphStyle extends StObject {
     */
   var namedStyleType: js.UndefOr[String] = js.undefined
   
+  /**
+    * Whether the current paragraph should always start at the beginning of a page. If unset, the value is inherited from the parent. Attempting to update page_break_before for paragraphs
+    * in unsupported regions, including Table, Header, Footer and Footnote, can result in an invalid document state which returns a 400 bad request error.
+    */
+  var pageBreakBefore: js.UndefOr[Boolean] = js.undefined
+  
   /** The shading of the paragraph. If unset, the value is inherited from the parent. */
   var shading: js.UndefOr[Shading] = js.undefined
   
@@ -166,6 +172,10 @@ object ParagraphStyle {
     
     inline def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
     
+    inline def setPageBreakBefore(value: Boolean): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
+    
+    inline def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
+    
     inline def setShading(value: Shading): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
     
     inline def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
@@ -186,6 +196,6 @@ object ParagraphStyle {
     
     inline def setTabStopsUndefined: Self = StObject.set(x, "tabStops", js.undefined)
     
-    inline def setTabStopsVarargs(value: TabStop*): Self = StObject.set(x, "tabStops", js.Array(value :_*))
+    inline def setTabStopsVarargs(value: TabStop*): Self = StObject.set(x, "tabStops", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ object entityMod {
   abstract class Entity protected () extends StObject {
     def this(uidPre: String) = this()
     
-    /* private */ var _uid: js.Any = js.native
+    /* private */ var _uid: Any = js.native
     
     var uid: String = js.native
   }

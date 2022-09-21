@@ -44,7 +44,7 @@ object SalesforceDestinationProperties {
     
     inline def setIdFieldNamesUndefined: Self = StObject.set(x, "idFieldNames", js.undefined)
     
-    inline def setIdFieldNamesVarargs(value: Name*): Self = StObject.set(x, "idFieldNames", js.Array(value :_*))
+    inline def setIdFieldNamesVarargs(value: Name*): Self = StObject.set(x, "idFieldNames", js.Array(value*))
     
     inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

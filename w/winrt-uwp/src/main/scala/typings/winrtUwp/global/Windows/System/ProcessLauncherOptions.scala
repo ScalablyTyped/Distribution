@@ -11,17 +11,17 @@ abstract class ProcessLauncherOptions ()
      with typings.winrtUwp.Windows.System.ProcessLauncherOptions {
   
   /* CompleteClass */
-  var standardError: js.Any = js.native
+  var standardError: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var standardInput: js.Any = js.native
+  var standardInput: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var standardOutput: js.Any = js.native
+  var standardOutput: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var workingDirectory: js.Any = js.native
+  var workingDirectory: Any = js.native
 }

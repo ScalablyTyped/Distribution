@@ -10,10 +10,10 @@ object settingsVoiceMod {
   
   @JSImport("material-ui/svg-icons/action/settings-voice", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsVoice
+  open class default () extends ActionSettingsVoice
   
   @JSImport("material-ui/svg-icons/action/settings-voice", "ActionSettingsVoice")
   @js.native
-  class ActionSettingsVoice ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsVoice ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

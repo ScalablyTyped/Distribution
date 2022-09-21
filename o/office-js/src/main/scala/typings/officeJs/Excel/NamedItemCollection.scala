@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * A collection of all the `NamedItem` objects that are part of the workbook or worksheet, depending on how it was reached.
   *
-  * A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was reached.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -26,6 +26,7 @@ trait NamedItemCollection
   /**
     * Adds a new name to the collection of the given scope.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
     * @param name The name of the named item.
@@ -39,9 +40,10 @@ trait NamedItemCollection
   /**
     * Adds a new name to the collection of the given scope using the user's locale for the formula.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
-    * @param name The "name" of the named item.
+    * @param name The name of the named item.
     * @param formula The formula in the user's locale that the name will refer to.
     * @param comment Optional. The comment associated with the named item.
     * @returns
@@ -56,13 +58,15 @@ trait NamedItemCollection
   /**
     * Gets the number of named items in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a NamedItem object using its name.
+    * Gets a `NamedItem` object using its name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
     * @param name Nameditem name.
@@ -70,8 +74,10 @@ trait NamedItemCollection
   def getItem(name: String): NamedItem = js.native
   
   /**
-    * Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object.
+    * Gets a `NamedItem` object using its name. If the object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
     * @param name Nameditem name.

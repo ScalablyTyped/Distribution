@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OperationMetadata extends StObject {
   
-  /** [Output only] API version used to start the operation. */
+  /** Output only. API version used to start the operation. */
   var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * [Output only] Identifies whether the user has requested cancellation of the operation. Operations that have successfully been cancelled have Operation.error value with a
+    * Output only. Identifies whether the user has requested cancellation of the operation. Operations that have been cancelled successfully have Operation.error value with a
     * google.rpc.Status.code of 1, corresponding to `Code.CANCELLED`.
     */
   var cancelRequested: js.UndefOr[Boolean] = js.undefined
   
-  /** [Output only] The time the operation was created. */
+  /** Output only. The time the operation was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** [Output only] The time the operation finished running. */
+  /** Output only. The time the operation finished running. */
   var endTime: js.UndefOr[String] = js.undefined
   
-  /** [Output only] Human-readable status of the operation, if any. */
+  /** Output only. Human-readable status of the operation, if any. */
   var statusDetail: js.UndefOr[String] = js.undefined
   
-  /** [Output only] Server-defined resource path for the target of the operation. */
+  /** Output only. Server-defined resource path for the target of the operation. */
   var target: js.UndefOr[String] = js.undefined
   
-  /** [Output only] Name of the verb executed by the operation. */
+  /** Output only. Name of the verb executed by the operation. */
   var verb: js.UndefOr[String] = js.undefined
 }
 object OperationMetadata {

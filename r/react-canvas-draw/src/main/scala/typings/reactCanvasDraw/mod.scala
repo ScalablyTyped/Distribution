@@ -2,6 +2,7 @@ package typings.reactCanvasDraw
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
+import typings.reactCanvasDraw.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +11,11 @@ object mod {
   
   @JSImport("react-canvas-draw", JSImport.Default)
   @js.native
-  class default () extends CanvasDraw
+  open class default () extends CanvasDraw
   
   @js.native
   trait CanvasDraw
-    extends Component[CanvasDrawProps, js.Object, js.Any] {
+    extends Component[CanvasDrawProps, js.Object, Any] {
     
     /**
       * Clears the canvas completely.
@@ -53,13 +54,27 @@ object mod {
     
     var catenaryColor: js.UndefOr[String] = js.undefined
     
+    var clampLinesToDocument: js.UndefOr[Boolean] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    var enablePanAndZoom: js.UndefOr[Boolean] = js.undefined
+    
     var gridColor: js.UndefOr[String] = js.undefined
     
+    var gridLineWidth: js.UndefOr[Double] = js.undefined
+    
+    var gridSizeX: js.UndefOr[Double] = js.undefined
+    
+    var gridSizeY: js.UndefOr[Double] = js.undefined
+    
     var hideGrid: js.UndefOr[Boolean] = js.undefined
+    
+    var hideGridX: js.UndefOr[Boolean] = js.undefined
+    
+    var hideGridY: js.UndefOr[Boolean] = js.undefined
     
     var hideInterface: js.UndefOr[Boolean] = js.undefined
     
@@ -71,11 +86,15 @@ object mod {
     
     var loadTimeOffset: js.UndefOr[Double] = js.undefined
     
+    var mouseZoomFactor: js.UndefOr[Double] = js.undefined
+    
     var onChange: js.UndefOr[(js.Function1[/* canvas */ CanvasDraw, Unit]) | Null] = js.undefined
     
     var saveData: js.UndefOr[String] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var zoomExtents: js.UndefOr[Max] = js.undefined
   }
   object CanvasDrawProps {
     
@@ -110,6 +129,10 @@ object mod {
       
       inline def setCatenaryColorUndefined: Self = StObject.set(x, "catenaryColor", js.undefined)
       
+      inline def setClampLinesToDocument(value: Boolean): Self = StObject.set(x, "clampLinesToDocument", value.asInstanceOf[js.Any])
+      
+      inline def setClampLinesToDocumentUndefined: Self = StObject.set(x, "clampLinesToDocument", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -118,13 +141,37 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
+      inline def setEnablePanAndZoom(value: Boolean): Self = StObject.set(x, "enablePanAndZoom", value.asInstanceOf[js.Any])
+      
+      inline def setEnablePanAndZoomUndefined: Self = StObject.set(x, "enablePanAndZoom", js.undefined)
+      
       inline def setGridColor(value: String): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
       
       inline def setGridColorUndefined: Self = StObject.set(x, "gridColor", js.undefined)
       
+      inline def setGridLineWidth(value: Double): Self = StObject.set(x, "gridLineWidth", value.asInstanceOf[js.Any])
+      
+      inline def setGridLineWidthUndefined: Self = StObject.set(x, "gridLineWidth", js.undefined)
+      
+      inline def setGridSizeX(value: Double): Self = StObject.set(x, "gridSizeX", value.asInstanceOf[js.Any])
+      
+      inline def setGridSizeXUndefined: Self = StObject.set(x, "gridSizeX", js.undefined)
+      
+      inline def setGridSizeY(value: Double): Self = StObject.set(x, "gridSizeY", value.asInstanceOf[js.Any])
+      
+      inline def setGridSizeYUndefined: Self = StObject.set(x, "gridSizeY", js.undefined)
+      
       inline def setHideGrid(value: Boolean): Self = StObject.set(x, "hideGrid", value.asInstanceOf[js.Any])
       
       inline def setHideGridUndefined: Self = StObject.set(x, "hideGrid", js.undefined)
+      
+      inline def setHideGridX(value: Boolean): Self = StObject.set(x, "hideGridX", value.asInstanceOf[js.Any])
+      
+      inline def setHideGridXUndefined: Self = StObject.set(x, "hideGridX", js.undefined)
+      
+      inline def setHideGridY(value: Boolean): Self = StObject.set(x, "hideGridY", value.asInstanceOf[js.Any])
+      
+      inline def setHideGridYUndefined: Self = StObject.set(x, "hideGridY", js.undefined)
       
       inline def setHideInterface(value: Boolean): Self = StObject.set(x, "hideInterface", value.asInstanceOf[js.Any])
       
@@ -146,6 +193,10 @@ object mod {
       
       inline def setLoadTimeOffsetUndefined: Self = StObject.set(x, "loadTimeOffset", js.undefined)
       
+      inline def setMouseZoomFactor(value: Double): Self = StObject.set(x, "mouseZoomFactor", value.asInstanceOf[js.Any])
+      
+      inline def setMouseZoomFactorUndefined: Self = StObject.set(x, "mouseZoomFactor", js.undefined)
+      
       inline def setOnChange(value: /* canvas */ CanvasDraw => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeNull: Self = StObject.set(x, "onChange", null)
@@ -159,6 +210,10 @@ object mod {
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setZoomExtents(value: Max): Self = StObject.set(x, "zoomExtents", value.asInstanceOf[js.Any])
+      
+      inline def setZoomExtentsUndefined: Self = StObject.set(x, "zoomExtents", js.undefined)
     }
   }
 }

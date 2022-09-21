@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "SvgStyler")
 @js.native
-class SvgStyler protected () extends StObject {
+open class SvgStyler protected () extends StObject {
   def this(elementFactory: js.Function1[/* name */ String, HTMLElement]) = this()
   
   def clear(): this.type = js.native

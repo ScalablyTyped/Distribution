@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OQuery[T] extends StObject {
   
   def all[T](): js.Promise[js.Array[T]] = js.native
-  def all[T](params: js.Any): js.Promise[js.Array[T]] = js.native
+  def all[T](params: Any): js.Promise[js.Array[T]] = js.native
   
   def column(name: String): OQuery[T] = js.native
   
-  def defaults(defaults: js.Any): OQuery[T] = js.native
+  def defaults(defaults: Any): OQuery[T] = js.native
   
   def exec[T](): js.Promise[T] = js.native
-  def exec[T](params: js.Any): js.Promise[T] = js.native
+  def exec[T](params: Any): js.Promise[T] = js.native
   
   def one[T](): js.Promise[T] = js.native
-  def one[T](params: js.Any): js.Promise[T] = js.native
+  def one[T](params: Any): js.Promise[T] = js.native
   
   def scalar[T](): js.Promise[T] = js.native
-  def scalar[T](params: js.Any): js.Promise[T] = js.native
+  def scalar[T](params: Any): js.Promise[T] = js.native
   
   def transform[T](transformer: js.Function1[/* item */ ORecord, T]): OQuery[T] = js.native
 }

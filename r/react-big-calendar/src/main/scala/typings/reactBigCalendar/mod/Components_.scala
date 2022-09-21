@@ -16,6 +16,8 @@ trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] exten
   
   var day: js.UndefOr[Header[TEvent]] = js.undefined
   
+  var dayColumnWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  
   var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.undefined
   
   var eventContainerWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
@@ -29,7 +31,7 @@ trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] exten
   
   var month: js.UndefOr[DateHeader[TEvent]] = js.undefined
   
-  var resourceHeader: js.UndefOr[ComponentType[ResourceHeaderProps]] = js.undefined
+  var resourceHeader: js.UndefOr[ComponentType[ResourceHeaderProps[TResource]]] = js.undefined
   
   var timeGutterHeader: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
@@ -40,6 +42,8 @@ trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] exten
   var toolbar: js.UndefOr[ComponentType[ToolbarProps[TEvent, TResource]]] = js.undefined
   
   var week: js.UndefOr[Header[TEvent]] = js.undefined
+  
+  var work_week: js.UndefOr[Header[TEvent]] = js.undefined
 }
 object Components_ {
   
@@ -59,6 +63,10 @@ object Components_ {
     inline def setDateCellWrapperUndefined: Self = StObject.set(x, "dateCellWrapper", js.undefined)
     
     inline def setDay(value: Header[TEvent]): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    
+    inline def setDayColumnWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "dayColumnWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setDayColumnWrapperUndefined: Self = StObject.set(x, "dayColumnWrapper", js.undefined)
     
     inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
@@ -82,7 +90,7 @@ object Components_ {
     
     inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    inline def setResourceHeader(value: ComponentType[ResourceHeaderProps]): Self = StObject.set(x, "resourceHeader", value.asInstanceOf[js.Any])
+    inline def setResourceHeader(value: ComponentType[ResourceHeaderProps[TResource]]): Self = StObject.set(x, "resourceHeader", value.asInstanceOf[js.Any])
     
     inline def setResourceHeaderUndefined: Self = StObject.set(x, "resourceHeader", js.undefined)
     
@@ -105,5 +113,9 @@ object Components_ {
     inline def setWeek(value: Header[TEvent]): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
     inline def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
+    
+    inline def setWork_week(value: Header[TEvent]): Self = StObject.set(x, "work_week", value.asInstanceOf[js.Any])
+    
+    inline def setWork_weekUndefined: Self = StObject.set(x, "work_week", js.undefined)
   }
 }

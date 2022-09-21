@@ -9,9 +9,12 @@ trait InsightsConfig extends StObject {
   /** Whether Query Insights feature is enabled. */
   var queryInsightsEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /** Number of query execution plans captured by Insights per minute for all queries combined. Default is 5. */
+  var queryPlansPerMinute: js.UndefOr[Double] = js.undefined
+  
   /**
     * Maximum query length stored in bytes. Default value: 1024 bytes. Range: 256-4500 bytes. Query length more than this field value will be truncated to this value. When unset, query
-    * length will be the default value.
+    * length will be the default value. Changing query length will restart the database.
     */
   var queryStringLength: js.UndefOr[Double] = js.undefined
   
@@ -33,6 +36,10 @@ object InsightsConfig {
     inline def setQueryInsightsEnabled(value: Boolean): Self = StObject.set(x, "queryInsightsEnabled", value.asInstanceOf[js.Any])
     
     inline def setQueryInsightsEnabledUndefined: Self = StObject.set(x, "queryInsightsEnabled", js.undefined)
+    
+    inline def setQueryPlansPerMinute(value: Double): Self = StObject.set(x, "queryPlansPerMinute", value.asInstanceOf[js.Any])
+    
+    inline def setQueryPlansPerMinuteUndefined: Self = StObject.set(x, "queryPlansPerMinute", js.undefined)
     
     inline def setQueryStringLength(value: Double): Self = StObject.set(x, "queryStringLength", value.asInstanceOf[js.Any])
     

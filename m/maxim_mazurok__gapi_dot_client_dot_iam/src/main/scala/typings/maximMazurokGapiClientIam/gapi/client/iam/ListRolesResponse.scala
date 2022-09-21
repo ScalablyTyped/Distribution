@@ -29,6 +29,6 @@ object ListRolesResponse {
     
     inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "roles", js.Array(value*))
   }
 }

@@ -6,81 +6,50 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/abide.html#javascript-reference
+@js.native
 trait Abide extends StObject {
   
-  def addErrorClasses(element: JQuery): Unit
+  def addA11yAttributes(element: JQuery): Unit = js.native
   
-  def destroy(): Unit
+  def addErrorClasses(element: JQuery): Unit = js.native
+  def addErrorClasses(element: JQuery, failedValidators: js.Array[String]): Unit = js.native
   
-  def findFormError(element: JQuery): JQuery
+  def addGlobalErrorA11yAttributes(element: JQuery): Unit = js.native
   
-  def findLabel(element: JQuery): Boolean
+  def disableValidation(): Unit = js.native
   
-  def matchValidation(element: JQuery, validators: String, required: Boolean): Boolean
+  def enableValidation(): Unit = js.native
   
-  def removeErrorClasses(element: JQuery): Unit
+  def findCheckboxLabels(elements: JQuery): Boolean = js.native
   
-  def removeRadioErrorClasses(groupName: String): Unit
+  def findFormError(element: JQuery): JQuery = js.native
+  def findFormError(element: JQuery, failedValidators: js.Array[String]): JQuery = js.native
   
-  def requiredChecked(element: JQuery): Boolean
+  def findLabel(element: JQuery): Boolean = js.native
   
-  def resetForm(): Unit
+  def findRadioLabels(elements: JQuery): Boolean = js.native
   
-  def validateForm(): Boolean
+  var initialized: Boolean = js.native
   
-  def validateInput(element: JQuery): Boolean
+  def matchValidation(element: JQuery, validators: String, required: Boolean): Boolean = js.native
   
-  def validateRadio(groupName: String): Boolean
+  def removeCheckboxErrorClasses(groupName: String): Unit = js.native
   
-  def validateText(element: JQuery, pattern: String): Boolean
-}
-object Abide {
+  def removeErrorClasses(element: JQuery): Unit = js.native
   
-  inline def apply(
-    addErrorClasses: JQuery => Unit,
-    destroy: () => Unit,
-    findFormError: JQuery => JQuery,
-    findLabel: JQuery => Boolean,
-    matchValidation: (JQuery, String, Boolean) => Boolean,
-    removeErrorClasses: JQuery => Unit,
-    removeRadioErrorClasses: String => Unit,
-    requiredChecked: JQuery => Boolean,
-    resetForm: () => Unit,
-    validateForm: () => Boolean,
-    validateInput: JQuery => Boolean,
-    validateRadio: String => Boolean,
-    validateText: (JQuery, String) => Boolean
-  ): Abide = {
-    val __obj = js.Dynamic.literal(addErrorClasses = js.Any.fromFunction1(addErrorClasses), destroy = js.Any.fromFunction0(destroy), findFormError = js.Any.fromFunction1(findFormError), findLabel = js.Any.fromFunction1(findLabel), matchValidation = js.Any.fromFunction3(matchValidation), removeErrorClasses = js.Any.fromFunction1(removeErrorClasses), removeRadioErrorClasses = js.Any.fromFunction1(removeRadioErrorClasses), requiredChecked = js.Any.fromFunction1(requiredChecked), resetForm = js.Any.fromFunction0(resetForm), validateForm = js.Any.fromFunction0(validateForm), validateInput = js.Any.fromFunction1(validateInput), validateRadio = js.Any.fromFunction1(validateRadio), validateText = js.Any.fromFunction2(validateText))
-    __obj.asInstanceOf[Abide]
-  }
+  def removeRadioErrorClasses(groupName: String): Unit = js.native
   
-  extension [Self <: Abide](x: Self) {
-    
-    inline def setAddErrorClasses(value: JQuery => Unit): Self = StObject.set(x, "addErrorClasses", js.Any.fromFunction1(value))
-    
-    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-    
-    inline def setFindFormError(value: JQuery => JQuery): Self = StObject.set(x, "findFormError", js.Any.fromFunction1(value))
-    
-    inline def setFindLabel(value: JQuery => Boolean): Self = StObject.set(x, "findLabel", js.Any.fromFunction1(value))
-    
-    inline def setMatchValidation(value: (JQuery, String, Boolean) => Boolean): Self = StObject.set(x, "matchValidation", js.Any.fromFunction3(value))
-    
-    inline def setRemoveErrorClasses(value: JQuery => Unit): Self = StObject.set(x, "removeErrorClasses", js.Any.fromFunction1(value))
-    
-    inline def setRemoveRadioErrorClasses(value: String => Unit): Self = StObject.set(x, "removeRadioErrorClasses", js.Any.fromFunction1(value))
-    
-    inline def setRequiredChecked(value: JQuery => Boolean): Self = StObject.set(x, "requiredChecked", js.Any.fromFunction1(value))
-    
-    inline def setResetForm(value: () => Unit): Self = StObject.set(x, "resetForm", js.Any.fromFunction0(value))
-    
-    inline def setValidateForm(value: () => Boolean): Self = StObject.set(x, "validateForm", js.Any.fromFunction0(value))
-    
-    inline def setValidateInput(value: JQuery => Boolean): Self = StObject.set(x, "validateInput", js.Any.fromFunction1(value))
-    
-    inline def setValidateRadio(value: String => Boolean): Self = StObject.set(x, "validateRadio", js.Any.fromFunction1(value))
-    
-    inline def setValidateText(value: (JQuery, String) => Boolean): Self = StObject.set(x, "validateText", js.Any.fromFunction2(value))
-  }
+  def requiredCheck(element: JQuery): Boolean = js.native
+  
+  def resetForm(): Unit = js.native
+  
+  def validateCheckbox(groupName: String): Boolean = js.native
+  
+  def validateForm(): Boolean = js.native
+  
+  def validateInput(element: JQuery): Boolean = js.native
+  
+  def validateRadio(groupName: String): Boolean = js.native
+  
+  def validateText(element: JQuery, pattern: String): Boolean = js.native
 }

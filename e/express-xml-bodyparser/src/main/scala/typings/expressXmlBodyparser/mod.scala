@@ -1,7 +1,6 @@
 package typings.expressXmlBodyparser
 
 import typings.express.mod.Handler
-import typings.std.RegExp
 import typings.xml2js.mod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,6 +18,6 @@ object mod {
   // @deprecated Will be removed in future versions
   @JSImport("express-xml-bodyparser", "regexp")
   @js.native
-  def regexp: RegExp = js.native
-  inline def regexp_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
+  def regexp: js.RegExp = js.native
+  inline def regexp_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
 }

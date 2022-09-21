@@ -9,7 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Viewer3DConfig
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
+  
+  var addFooter: js.UndefOr[Boolean] = js.undefined
+  
+  var extensions: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var heightAdjustment: js.UndefOr[Double] = js.undefined
+  
+  var left: js.UndefOr[Boolean] = js.undefined
+  
+  var localizeTitle: js.UndefOr[Boolean] = js.undefined
+  
+  var marginTop: js.UndefOr[Double] = js.undefined
   
   var startOnInitialize: js.UndefOr[Boolean] = js.undefined
   
@@ -23,6 +35,32 @@ object Viewer3DConfig {
   }
   
   extension [Self <: Viewer3DConfig](x: Self) {
+    
+    inline def setAddFooter(value: Boolean): Self = StObject.set(x, "addFooter", value.asInstanceOf[js.Any])
+    
+    inline def setAddFooterUndefined: Self = StObject.set(x, "addFooter", js.undefined)
+    
+    inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
+    
+    inline def setHeightAdjustment(value: Double): Self = StObject.set(x, "heightAdjustment", value.asInstanceOf[js.Any])
+    
+    inline def setHeightAdjustmentUndefined: Self = StObject.set(x, "heightAdjustment", js.undefined)
+    
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLocalizeTitle(value: Boolean): Self = StObject.set(x, "localizeTitle", value.asInstanceOf[js.Any])
+    
+    inline def setLocalizeTitleUndefined: Self = StObject.set(x, "localizeTitle", js.undefined)
+    
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     inline def setStartOnInitialize(value: Boolean): Self = StObject.set(x, "startOnInitialize", value.asInstanceOf[js.Any])
     

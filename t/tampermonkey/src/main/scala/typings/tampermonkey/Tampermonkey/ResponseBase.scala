@@ -9,7 +9,7 @@ trait ResponseBase extends StObject {
   
   val readyState: ReadyState
   
-  val response: js.Any
+  val response: Any
   
   val responseHeaders: String
   
@@ -25,7 +25,7 @@ object ResponseBase {
   
   inline def apply(
     readyState: ReadyState,
-    response: js.Any,
+    response: Any,
     responseHeaders: String,
     responseText: String,
     status: Double,
@@ -39,7 +39,7 @@ object ResponseBase {
     
     inline def setReadyState(value: ReadyState): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseHeaders(value: String): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     

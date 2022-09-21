@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "generic-names" : "2.0.1"
+      "generic-names" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "generic-names" : "2.0.1"
+      "generic-names" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

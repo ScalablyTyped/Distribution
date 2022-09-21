@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type CurriedFn1[A, R] = js.Function1[/* a */ A, R]
 
-type DurationAliased = typings.dateFns.Duration
+type DayAliased = Day
 
-type IntervalAliased = typings.dateFns.Interval
+type DurationAliased = Duration
 
-type LocaleAliased = typings.dateFns.Locale
+type IntervalAliased = Interval
+
+type LocaleAliased = Locale

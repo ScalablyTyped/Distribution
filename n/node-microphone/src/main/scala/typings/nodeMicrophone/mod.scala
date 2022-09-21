@@ -24,7 +24,7 @@ object mod {
   
   @JSImport("node-microphone", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Microphone {
     def this(options: MicrophoneOptions) = this()
@@ -59,7 +59,7 @@ object mod {
   
   trait MicrophoneOptions extends StObject {
     
-    var additionalParameters: js.UndefOr[js.Any] = js.undefined
+    var additionalParameters: js.UndefOr[Any] = js.undefined
     
     var bitwidth: js.UndefOr[`8` | `16` | `24`] = js.undefined
     
@@ -82,7 +82,7 @@ object mod {
     
     extension [Self <: MicrophoneOptions](x: Self) {
       
-      inline def setAdditionalParameters(value: js.Any): Self = StObject.set(x, "additionalParameters", value.asInstanceOf[js.Any])
+      inline def setAdditionalParameters(value: Any): Self = StObject.set(x, "additionalParameters", value.asInstanceOf[js.Any])
       
       inline def setAdditionalParametersUndefined: Self = StObject.set(x, "additionalParameters", js.undefined)
       

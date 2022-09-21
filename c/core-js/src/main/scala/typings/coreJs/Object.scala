@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Object extends StObject {
   
-  def getOwnPropertyDescriptors(`object`: js.Any): PropertyDescriptorMap
+  def getOwnPropertyDescriptors(`object`: Any): PropertyDescriptorMap
 }
 object Object {
   
-  inline def apply(getOwnPropertyDescriptors: js.Any => PropertyDescriptorMap): Object = {
+  inline def apply(getOwnPropertyDescriptors: Any => PropertyDescriptorMap): Object = {
     val __obj = js.Dynamic.literal(getOwnPropertyDescriptors = js.Any.fromFunction1(getOwnPropertyDescriptors))
     __obj.asInstanceOf[Object]
   }
   
   extension [Self <: Object](x: Self) {
     
-    inline def setGetOwnPropertyDescriptors(value: js.Any => PropertyDescriptorMap): Self = StObject.set(x, "getOwnPropertyDescriptors", js.Any.fromFunction1(value))
+    inline def setGetOwnPropertyDescriptors(value: Any => PropertyDescriptorMap): Self = StObject.set(x, "getOwnPropertyDescriptors", js.Any.fromFunction1(value))
   }
 }

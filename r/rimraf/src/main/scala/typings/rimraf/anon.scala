@@ -1,13 +1,13 @@
 package typings.rimraf
 
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.NodeJS.ErrnoException
-import typings.node.anon.BaseEncodingOptionswithFi
-import typings.node.anon.BaseEncodingOptionswithFiEncoding
 import typings.node.anon.Encoding
+import typings.node.anon.ObjectEncodingOptionswith
+import typings.node.anon.ObjectEncodingOptionswithEncoding
+import typings.node.anon.StatOptionsbigintfalseund
+import typings.node.anon.StatOptionsbiginttrue
 import typings.node.anon.WithFileTypes
-import typings.node.fsMod.BigIntOptions
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.BigIntStats
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.Mode
@@ -24,30 +24,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anon {
   
   @js.native
-  trait Fn0 extends StObject {
-    
-    def apply(path: PathLike): js.Array[Buffer | String] = js.native
-    def apply(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
-    def apply(path: PathLike, options: BaseEncodingOptionswithFi): js.Array[Buffer | String] = js.native
-    def apply(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Array[Dirent] = js.native
-    def apply(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
-    def apply(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
-    def apply(path: PathLike, options: buffer): js.Array[Buffer] = js.native
-  }
-  
-  @js.native
   trait FnCall extends StObject {
     
-    def apply(path: PathLike): Stats = js.native
-    def apply(path: PathLike, options: BigIntOptions): BigIntStats = js.native
-    def apply(path: PathLike, options: StatOptions): Stats | BigIntStats = js.native
+    def apply(path: PathLike): Unit = js.native
+    def apply(path: PathLike, options: RmDirOptions): Unit = js.native
   }
   
   @js.native
   trait FnCallPathOptions extends StObject {
     
-    def apply(path: PathLike): Unit = js.native
-    def apply(path: PathLike, options: RmDirOptions): Unit = js.native
+    def apply(path: PathLike): js.Array[Buffer | String] = js.native
+    def apply(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
+    def apply(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
+    def apply(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
+    def apply(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
+    def apply(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
+    def apply(path: PathLike, options: buffer): js.Array[Buffer] = js.native
   }
   
   @js.native
@@ -59,7 +51,50 @@ object anon {
   @js.native
   trait Typeoflstat extends StObject {
     
-    def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit = js.native
+    def apply(
+      path: PathLike,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* stats */ Stats, 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: Unit,
+      callback: js.Function2[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          BigIntStats | (/* stats */ Stats), 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: StatOptionsbigintfalseund,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* stats */ Stats, 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: StatOptionsbiginttrue,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* stats */ BigIntStats, 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: StatOptions,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* stats */ Stats | BigIntStats, 
+          Unit
+        ]
+    ): Unit = js.native
   }
   
   @js.native
@@ -67,47 +102,83 @@ object anon {
     
     def apply(
       path: PathLike,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* files */ js.Array[String], 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: Null,
-      callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+      callback: js.Function2[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* files */ js.Array[Buffer | String], 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: Unit,
-      callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
-    ): Unit = js.native
-    def apply(
-      path: PathLike,
-      options: BufferEncoding,
-      callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
-    ): Unit = js.native
-    def apply(
-      path: PathLike,
-      options: BaseEncodingOptionswithFiEncoding,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Dirent], Unit]
-    ): Unit = js.native
-    def apply(
-      path: PathLike,
-      options: BaseEncodingOptionswithFi,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+      callback: js.Function2[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* files */ js.Array[Buffer | String], 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: Encoding,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* files */ js.Array[Buffer], 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: ObjectEncodingOptionswithEncoding,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* files */ js.Array[Dirent], 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: ObjectEncodingOptionswith,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* files */ js.Array[Buffer | String], 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: WithFileTypes,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* files */ js.Array[String], 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: BufferEncoding,
+      callback: js.Function2[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* files */ js.Array[Buffer | String], 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: buffer,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* files */ js.Array[Buffer], 
+          Unit
+        ]
     ): Unit = js.native
   }
   
@@ -121,16 +192,49 @@ object anon {
   @js.native
   trait Typeofstat extends StObject {
     
-    def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit = js.native
     def apply(
       path: PathLike,
-      options: BigIntOptions,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStats, Unit]
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* stats */ Stats, 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: Unit,
+      callback: js.Function2[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          BigIntStats | (/* stats */ Stats), 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: StatOptionsbigintfalseund,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* stats */ Stats, 
+          Unit
+        ]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: StatOptionsbiginttrue,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* stats */ BigIntStats, 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: StatOptions,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats | BigIntStats, Unit]
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* stats */ Stats | BigIntStats, 
+          Unit
+        ]
     ): Unit = js.native
   }
   

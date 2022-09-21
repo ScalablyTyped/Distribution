@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object colorConvertersMod {
   
-  @JSImport("react-base16-styling/lib/colorConverters", JSImport.Namespace)
+  @JSImport("react-base16-styling/lib/types/colorConverters", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

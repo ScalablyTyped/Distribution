@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_beta.Resource$Autoscalers")
 @js.native
-class ResourceAutoscalers protected ()
+open class ResourceAutoscalers protected ()
   extends typings.googleapis.betaMod.computeBeta.ResourceAutoscalers {
   def this(context: APIRequestContext) = this()
 }

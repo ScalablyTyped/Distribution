@@ -102,13 +102,13 @@ object CustomDataSource {
     
     inline def setProfilesLinkedUndefined: Self = StObject.set(x, "profilesLinked", js.undefined)
     
-    inline def setProfilesLinkedVarargs(value: String*): Self = StObject.set(x, "profilesLinked", js.Array(value :_*))
+    inline def setProfilesLinkedVarargs(value: String*): Self = StObject.set(x, "profilesLinked", js.Array(value*))
     
     inline def setSchema(value: js.Array[String]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    inline def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value :_*))
+    inline def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

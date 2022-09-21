@@ -13,6 +13,16 @@ trait FormatConditions extends StObject {
   
   /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType): FormatCondition = js.native
+  /** @param Operator [Operator=0] */
+  def Add(Type: AcFormatConditionType, Operator: `0` | `1`, Expression1: String, Expression2: String): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: `0` | `1`, Expression1: String, Expression2: Boolean): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: `0` | `1`, Expression1: String, Expression2: Double): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: `0` | `1`, Expression1: Boolean, Expression2: String): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: `0` | `1`, Expression1: Boolean, Expression2: Boolean): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: `0` | `1`, Expression1: Boolean, Expression2: Double): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: `0` | `1`, Expression1: Double, Expression2: String): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: `0` | `1`, Expression1: Double, Expression2: Boolean): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: `0` | `1`, Expression1: Double, Expression2: Double): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: Unit, Expression1: String): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: Unit, Expression1: Boolean): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: Unit, Expression1: Double): FormatCondition = js.native
@@ -20,43 +30,6 @@ trait FormatConditions extends StObject {
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: String): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: Boolean): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: Double): FormatCondition = js.native
-  /** @param Operator [Operator=0] */
-  @JSName("Add")
-  def Add_0(Type: AcFormatConditionType, Operator: `0`, Expression1: String, Expression2: String): FormatCondition = js.native
-  @JSName("Add")
-  def Add_0(Type: AcFormatConditionType, Operator: `0`, Expression1: String, Expression2: Boolean): FormatCondition = js.native
-  @JSName("Add")
-  def Add_0(Type: AcFormatConditionType, Operator: `0`, Expression1: String, Expression2: Double): FormatCondition = js.native
-  @JSName("Add")
-  def Add_0(Type: AcFormatConditionType, Operator: `0`, Expression1: Boolean, Expression2: String): FormatCondition = js.native
-  @JSName("Add")
-  def Add_0(Type: AcFormatConditionType, Operator: `0`, Expression1: Boolean, Expression2: Boolean): FormatCondition = js.native
-  @JSName("Add")
-  def Add_0(Type: AcFormatConditionType, Operator: `0`, Expression1: Boolean, Expression2: Double): FormatCondition = js.native
-  @JSName("Add")
-  def Add_0(Type: AcFormatConditionType, Operator: `0`, Expression1: Double, Expression2: String): FormatCondition = js.native
-  @JSName("Add")
-  def Add_0(Type: AcFormatConditionType, Operator: `0`, Expression1: Double, Expression2: Boolean): FormatCondition = js.native
-  @JSName("Add")
-  def Add_0(Type: AcFormatConditionType, Operator: `0`, Expression1: Double, Expression2: Double): FormatCondition = js.native
-  @JSName("Add")
-  def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: String, Expression2: String): FormatCondition = js.native
-  @JSName("Add")
-  def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: String, Expression2: Boolean): FormatCondition = js.native
-  @JSName("Add")
-  def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: String, Expression2: Double): FormatCondition = js.native
-  @JSName("Add")
-  def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: Boolean, Expression2: String): FormatCondition = js.native
-  @JSName("Add")
-  def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: Boolean, Expression2: Boolean): FormatCondition = js.native
-  @JSName("Add")
-  def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: Boolean, Expression2: Double): FormatCondition = js.native
-  @JSName("Add")
-  def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: Double, Expression2: String): FormatCondition = js.native
-  @JSName("Add")
-  def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: Double, Expression2: Boolean): FormatCondition = js.native
-  @JSName("Add")
-  def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: Double, Expression2: Double): FormatCondition = js.native
   /** @param Operator [Operator=0] */
   @JSName("Add")
   def Add_1(Type: `1`, Operator: Unit, Expression1: String): FormatCondition = js.native
@@ -75,5 +48,5 @@ trait FormatConditions extends StObject {
   
   def Item(Index: Double): FormatCondition = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

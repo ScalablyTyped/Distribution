@@ -13,7 +13,7 @@ object strictTypePredicatesRuleMod {
   
   @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule")
   @js.native
-  class Rule protected () extends TypedRule {
+  open class Rule protected () extends TypedRule {
     def this(options: IOptions) = this()
   }
   /* static members */
@@ -23,9 +23,7 @@ object strictTypePredicatesRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def FAILURE_STRICT_PREFER_STRICT_EQUALS_null(value: `null`, isPositive: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRICT_PREFER_STRICT_EQUALS")(value.asInstanceOf[js.Any], isPositive.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def FAILURE_STRICT_PREFER_STRICT_EQUALS_undefined(value: undefined, isPositive: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRICT_PREFER_STRICT_EQUALS")(value.asInstanceOf[js.Any], isPositive.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def FAILURE_STRICT_PREFER_STRICT_EQUALS(value: `null` | undefined, isPositive: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRICT_PREFER_STRICT_EQUALS")(value.asInstanceOf[js.Any], isPositive.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def FAILURE_STRING(value: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     

@@ -54,7 +54,7 @@ object panelIconMod {
   
   @JSImport("rbx/components/panel/panel-icon", "PanelIcon")
   @js.native
-  val PanelIcon: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val PanelIcon: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait PanelIconProps extends StObject {

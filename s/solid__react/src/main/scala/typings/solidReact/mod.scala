@@ -11,7 +11,6 @@ import typings.solidReact.anon.hrefstringHTMLAttributesH
 import typings.solidReact.anon.srcstringdefaultSrcstring
 import typings.solidReact.solidReactBooleans.`false`
 import typings.solidReact.solidReactBooleans.`true`
-import typings.std.Error
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,235 +24,235 @@ object mod {
   
   @JSImport("@solid/react", "ActivityButton")
   @js.native
-  class ActivityButton protected ()
-    extends Component[ActivityButtonProps & HTMLAttributes[HTMLButtonElement], js.Object, js.Any] {
+  open class ActivityButton protected ()
+    extends Component[ActivityButtonProps & HTMLAttributes[HTMLButtonElement], js.Object, Any] {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
   
   @JSImport("@solid/react", "AuthButton")
   @js.native
-  class AuthButton protected ()
-    extends Component[AuthButtonProps, js.Object, js.Any] {
+  open class AuthButton protected ()
+    extends Component[AuthButtonProps, js.Object, Any] {
     def this(props: AuthButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: AuthButtonProps, context: js.Any) = this()
+    def this(props: AuthButtonProps, context: Any) = this()
   }
   
   @JSImport("@solid/react", "Dislike")
   @js.native
-  class Dislike protected () extends ActivityButton {
+  open class Dislike protected () extends ActivityButton {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
   
   @JSImport("@solid/react", "DislikeButton")
   @js.native
-  class DislikeButton protected () extends Dislike {
+  open class DislikeButton protected () extends Dislike {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
   
   @JSImport("@solid/react", "Follow")
   @js.native
-  class Follow protected () extends ActivityButton {
+  open class Follow protected () extends ActivityButton {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
   
   @JSImport("@solid/react", "FollowButton")
   @js.native
-  class FollowButton protected () extends Follow {
+  open class FollowButton protected () extends Follow {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
   
   @JSImport("@solid/react", "Image")
   @js.native
-  class Image protected ()
-    extends Component[srcstringdefaultSrcstring, js.Object, js.Any] {
+  open class Image protected ()
+    extends Component[srcstringdefaultSrcstring, js.Object, Any] {
     def this(props: srcstringdefaultSrcstring) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: srcstringdefaultSrcstring, context: js.Any) = this()
+    def this(props: srcstringdefaultSrcstring, context: Any) = this()
   }
   
   @JSImport("@solid/react", "Label")
   @js.native
-  class Label protected ()
-    extends Component[Src, js.Object, js.Any] {
+  open class Label protected ()
+    extends Component[Src, js.Object, Any] {
     def this(props: Src) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Src, context: js.Any) = this()
+    def this(props: Src, context: Any) = this()
   }
   
   @JSImport("@solid/react", "Like")
   @js.native
-  class Like protected () extends ActivityButton {
+  open class Like protected () extends ActivityButton {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
   
   @JSImport("@solid/react", "LikeButton")
   @js.native
-  class LikeButton protected () extends Like {
+  open class LikeButton protected () extends Like {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
   
   @JSImport("@solid/react", "Link")
   @js.native
-  class Link protected ()
-    extends Component[hrefstringHTMLAttributesH, js.Object, js.Any] {
+  open class Link protected ()
+    extends Component[hrefstringHTMLAttributesH, js.Object, Any] {
     def this(props: hrefstringHTMLAttributesH) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: hrefstringHTMLAttributesH, context: js.Any) = this()
+    def this(props: hrefstringHTMLAttributesH, context: Any) = this()
   }
   
   @JSImport("@solid/react", "List")
   @js.native
-  class List protected ()
-    extends Component[ListProps, js.Object, js.Any] {
+  open class List protected ()
+    extends Component[ListProps, js.Object, Any] {
     def this(props: ListProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ListProps, context: js.Any) = this()
+    def this(props: ListProps, context: Any) = this()
   }
   
   @JSImport("@solid/react", "LiveUpdate")
   @js.native
-  class LiveUpdate protected ()
-    extends Component[Subscribe, js.Object, js.Any] {
+  open class LiveUpdate protected ()
+    extends Component[Subscribe, js.Object, Any] {
     def this(props: Subscribe) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Subscribe, context: js.Any) = this()
+    def this(props: Subscribe, context: Any) = this()
   }
   
   @JSImport("@solid/react", "LoggedIn")
   @js.native
-  class LoggedIn protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class LoggedIn protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
   }
   
   @JSImport("@solid/react", "LoggedOut")
   @js.native
-  class LoggedOut protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class LoggedOut protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
   }
   
   @JSImport("@solid/react", "LoginButton")
   @js.native
-  class LoginButton protected ()
-    extends Component[LoginButtonProps, js.Object, js.Any] {
+  open class LoginButton protected ()
+    extends Component[LoginButtonProps, js.Object, Any] {
     def this(props: LoginButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LoginButtonProps, context: js.Any) = this()
+    def this(props: LoginButtonProps, context: Any) = this()
   }
   
   @JSImport("@solid/react", "LogoutButton")
   @js.native
-  class LogoutButton protected ()
-    extends Component[ClassName, js.Object, js.Any] {
+  open class LogoutButton protected ()
+    extends Component[ClassName, js.Object, Any] {
     def this(props: ClassName) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ClassName, context: js.Any) = this()
+    def this(props: ClassName, context: Any) = this()
   }
   
   @JSImport("@solid/react", "Name")
   @js.native
-  class Name protected ()
-    extends Component[Src, js.Object, js.Any] {
+  open class Name protected ()
+    extends Component[Src, js.Object, Any] {
     def this(props: Src) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Src, context: js.Any) = this()
+    def this(props: Src, context: Any) = this()
   }
   
   @JSImport("@solid/react", "Value")
   @js.native
-  class Value protected ()
-    extends Component[Src, js.Object, js.Any] {
+  open class Value protected ()
+    extends Component[Src, js.Object, Any] {
     def this(props: Src) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Src, context: js.Any) = this()
+    def this(props: Src, context: Any) = this()
   }
   
-  inline def useLDflex(expression: String): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]]]
+  inline def useLDflex(expression: String): js.Tuple3[LDflexValue, Boolean, js.UndefOr[js.Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[js.Error]]]
   
   inline def useLDflexList(expression: String): js.Array[LDflexValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflexList")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Array[LDflexValue]]
   
   inline def useLDflexValue(expression: String): js.UndefOr[LDflexValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflexValue")(expression.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[LDflexValue]]
   
-  inline def useLDflex_false(expression: String, listMode: `false`): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]]]
+  inline def useLDflex_false(expression: String, listMode: `false`): js.Tuple3[LDflexValue, Boolean, js.UndefOr[js.Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[js.Error]]]
   
-  inline def useLDflex_true(expression: String, listMode: `true`): js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[Error]]]
+  inline def useLDflex_true(expression: String, listMode: `true`): js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[js.Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[js.Error]]]
   
   inline def useLoggedIn(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoggedIn")().asInstanceOf[js.UndefOr[Boolean]]
   

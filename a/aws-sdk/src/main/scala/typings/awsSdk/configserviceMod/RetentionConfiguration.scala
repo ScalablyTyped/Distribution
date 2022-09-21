@@ -12,7 +12,7 @@ trait RetentionConfiguration extends StObject {
   var Name: RetentionConfigurationName
   
   /**
-    * Number of days AWS Config stores your historical information.  Currently, only applicable to the configuration item history. 
+    * Number of days Config stores your historical information.  Currently, only applicable to the configuration item history. 
     */
   var RetentionPeriodInDays: typings.awsSdk.configserviceMod.RetentionPeriodInDays
 }

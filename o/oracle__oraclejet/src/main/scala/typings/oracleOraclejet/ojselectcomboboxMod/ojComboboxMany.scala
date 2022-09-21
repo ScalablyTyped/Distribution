@@ -53,9 +53,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ojComboboxMany[K, D]
   extends StObject
      with ojCombobox[
-      js.Array[js.Any] | Null, 
+      js.Array[Any] | Null, 
       ojComboboxManySettableProperties[K, D], 
-      js.Array[js.Any] | Null, 
+      js.Array[Any] | Null, 
       String
     ] {
   
@@ -64,8 +64,8 @@ trait ojComboboxMany[K, D]
     `type`: asyncValidatorsChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.Array[AsyncValidator[js.Array[js.Any]]]], 
-      js.Any
+      /* ev */ JetElementCustomEvent[js.Array[AsyncValidator[js.Array[Any]]]], 
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -73,8 +73,8 @@ trait ojComboboxMany[K, D]
     `type`: asyncValidatorsChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.Array[AsyncValidator[js.Array[js.Any]]]], 
-      js.Any
+      /* ev */ JetElementCustomEvent[js.Array[AsyncValidator[js.Array[Any]]]], 
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -83,8 +83,8 @@ trait ojComboboxMany[K, D]
     `type`: converterChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null], 
-      js.Any
+      /* ev */ JetElementCustomEvent[Converter[Any] | RegisteredConverter | Null], 
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -92,20 +92,20 @@ trait ojComboboxMany[K, D]
     `type`: converterChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null], 
-      js.Any
+      /* ev */ JetElementCustomEvent[Converter[Any] | RegisteredConverter | Null], 
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minLengthChanged(
     `type`: minLengthChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minLengthChanged(
     `type`: minLengthChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -114,7 +114,7 @@ trait ojComboboxMany[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -123,7 +123,7 @@ trait ojComboboxMany[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -137,7 +137,7 @@ trait ojComboboxMany[K, D]
           typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
         ]) | (DataProvider[K, D]) | Null
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -150,74 +150,74 @@ trait ojComboboxMany[K, D]
           typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
         ]) | (DataProvider[K, D]) | Null
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Children], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Children], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Children], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Children], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_placeholderChanged(
     `type`: placeholderChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_placeholderChanged(
     `type`: placeholderChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_rawValueChanged(
     `type`: rawValueChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_rawValueChanged(
     `type`: rawValueChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String | Null], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readOnlyChanged(
     `type`: readOnlyChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readOnlyChanged(
     `type`: readOnlyChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_requiredChanged(
     `type`: requiredChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_requiredChanged(
     `type`: requiredChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -225,8 +225,8 @@ trait ojComboboxMany[K, D]
     `type`: validatorsChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[(js.Array[Validator[js.Array[js.Any]] | RegisteredValidator]) | Null], 
-      js.Any
+      /* ev */ JetElementCustomEvent[(js.Array[Validator[js.Array[Any]] | RegisteredValidator]) | Null], 
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -234,8 +234,8 @@ trait ojComboboxMany[K, D]
     `type`: validatorsChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[(js.Array[Validator[js.Array[js.Any]] | RegisteredValidator]) | Null], 
-      js.Any
+      /* ev */ JetElementCustomEvent[(js.Array[Validator[js.Array[Any]] | RegisteredValidator]) | Null], 
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -245,7 +245,7 @@ trait ojComboboxMany[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Array[LabelValue] | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -254,19 +254,19 @@ trait ojComboboxMany[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Array[LabelValue] | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   
-  var asyncValidators: js.Array[AsyncValidator[js.Array[js.Any]]] = js.native
+  var asyncValidators: js.Array[AsyncValidator[js.Array[Any]]] = js.native
   
-  var converter: Converter[js.Any] | RegisteredConverter | Null = js.native
+  var converter: Converter[Any] | RegisteredConverter | Null = js.native
   
   @JSName("getProperty")
-  def getProperty_asyncValidators(property: asyncValidators): js.Array[AsyncValidator[js.Array[js.Any]]] = js.native
+  def getProperty_asyncValidators(property: asyncValidators): js.Array[AsyncValidator[js.Array[Any]]] = js.native
   @JSName("getProperty")
-  def getProperty_converter(property: converter): Converter[js.Any] | RegisteredConverter | Null = js.native
+  def getProperty_converter(property: converter): Converter[Any] | RegisteredConverter | Null = js.native
   @JSName("getProperty")
   def getProperty_minLength(property: minLength): Double = js.native
   @JSName("getProperty")
@@ -288,33 +288,30 @@ trait ojComboboxMany[K, D]
   @JSName("getProperty")
   def getProperty_required(property: required): Boolean = js.native
   @JSName("getProperty")
-  def getProperty_validators(property: validators): (js.Array[Validator[js.Array[js.Any]] | RegisteredValidator]) | Null = js.native
+  def getProperty_validators(property: validators): (js.Array[Validator[js.Array[Any]] | RegisteredValidator]) | Null = js.native
   @JSName("getProperty")
   def getProperty_valueOptions(property: valueOptions): js.Array[LabelValue] | Null = js.native
   
   var minLength: Double = js.native
   
-  var onAsyncValidatorsChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.Array[AsyncValidator[js.Array[js.Any]]]], 
-    js.Any
-  ]) | Null = js.native
+  var onAsyncValidatorsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[AsyncValidator[js.Array[Any]]]], Any]) | Null = js.native
   
   var onConverterChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[Converter[js.Any] | RegisteredConverter | Null], 
-    js.Any
+    /* event */ JetElementCustomEvent[Converter[Any] | RegisteredConverter | Null], 
+    Any
   ]) | Null = js.native
   
-  var onMinLengthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
+  var onMinLengthChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], Any]) | Null = js.native
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojComboboxMany: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
+  var onOjAnimateEnd_ojComboboxMany: (js.Function1[/* event */ ojAnimateEnd, Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojComboboxMany: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
+  var onOjAnimateStart_ojComboboxMany: (js.Function1[/* event */ ojAnimateStart, Any]) | Null = js.native
   
   var onOptionRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]], 
-    js.Any
+    Any
   ]) | Null = js.native
   
   var onOptionsChanged: (js.Function1[
@@ -323,27 +320,27 @@ trait ojComboboxMany[K, D]
         typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
       ]) | (DataProvider[K, D]) | Null
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[Children], js.Any]) | Null = js.native
+  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[Children], Any]) | Null = js.native
   
-  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[Class], js.Any]) | Null = js.native
+  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[Class], Any]) | Null = js.native
   
-  var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
+  var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], Any]) | Null = js.native
   
-  var onRawValueChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], js.Any]) | Null = js.native
+  var onRawValueChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], Any]) | Null = js.native
   
-  var onReadOnlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
+  var onReadOnlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], Any]) | Null = js.native
   
-  var onRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
+  var onRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], Any]) | Null = js.native
   
   var onValidatorsChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[(js.Array[Validator[js.Array[js.Any]] | RegisteredValidator]) | Null], 
-    js.Any
+    /* event */ JetElementCustomEvent[(js.Array[Validator[js.Array[Any]] | RegisteredValidator]) | Null], 
+    Any
   ]) | Null = js.native
   
-  var onValueOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[LabelValue] | Null], js.Any]) | Null = js.native
+  var onValueOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[LabelValue] | Null], Any]) | Null = js.native
   
   var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null] = js.native
   
@@ -366,11 +363,11 @@ trait ojComboboxMany[K, D]
   def setProperties(properties: ojComboboxManySettablePropertiesLenient[K, D]): Unit = js.native
   
   @JSName("setProperty")
-  def setProperty_asyncValidators(property: asyncValidators, value: js.Array[AsyncValidator[js.Array[js.Any]]]): Unit = js.native
+  def setProperty_asyncValidators(property: asyncValidators, value: js.Array[AsyncValidator[js.Array[Any]]]): Unit = js.native
   @JSName("setProperty")
   def setProperty_converter(property: converter): Unit = js.native
   @JSName("setProperty")
-  def setProperty_converter(property: converter, value: Converter[js.Any]): Unit = js.native
+  def setProperty_converter(property: converter, value: Converter[Any]): Unit = js.native
   @JSName("setProperty")
   def setProperty_converter(property: converter, value: RegisteredConverter): Unit = js.native
   @JSName("setProperty")
@@ -411,7 +408,7 @@ trait ojComboboxMany[K, D]
   @JSName("setProperty")
   def setProperty_validators(property: validators): Unit = js.native
   @JSName("setProperty")
-  def setProperty_validators(property: validators, value: js.Array[Validator[js.Array[js.Any]] | RegisteredValidator]): Unit = js.native
+  def setProperty_validators(property: validators, value: js.Array[Validator[js.Array[Any]] | RegisteredValidator]): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
@@ -422,7 +419,7 @@ trait ojComboboxMany[K, D]
   @JSName("translations")
   var translations_ojComboboxMany: FilterFurther = js.native
   
-  var validators: (js.Array[Validator[js.Array[js.Any]] | RegisteredValidator]) | Null = js.native
+  var validators: (js.Array[Validator[js.Array[Any]] | RegisteredValidator]) | Null = js.native
   
   var valueOptions: js.Array[LabelValue] | Null = js.native
 }

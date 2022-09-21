@@ -50,7 +50,7 @@ object XTypeDetection {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryTypeByDescriptor: (js.Array[SeqEquiv[PropertyValue]], Boolean) => String,
     queryTypeByURL: String => String,
     release: () => Unit

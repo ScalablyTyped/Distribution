@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Paper")
 @js.native
-class Paper ()
-  extends Component[PaperProps, js.Object, js.Any]
+open class Paper ()
+  extends Component[PaperProps, js.Object, Any]

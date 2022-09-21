@@ -46,7 +46,7 @@ object CreateReservedInstancesListingRequest {
     
     inline def setPriceSchedules(value: PriceScheduleSpecificationList): Self = StObject.set(x, "PriceSchedules", value.asInstanceOf[js.Any])
     
-    inline def setPriceSchedulesVarargs(value: PriceScheduleSpecification*): Self = StObject.set(x, "PriceSchedules", js.Array(value :_*))
+    inline def setPriceSchedulesVarargs(value: PriceScheduleSpecification*): Self = StObject.set(x, "PriceSchedules", js.Array(value*))
     
     inline def setReservedInstancesId(value: ReservationId): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
   }

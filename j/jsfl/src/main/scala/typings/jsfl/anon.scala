@@ -12,13 +12,13 @@ object anon {
     
     var layer: FlashLayer
     
-    var parent: js.Any
+    var parent: Any
     
     var timeline: FlashTimeline
   }
   object Keyframe {
     
-    inline def apply(keyframe: FlashFrame, layer: FlashLayer, parent: js.Any, timeline: FlashTimeline): Keyframe = {
+    inline def apply(keyframe: FlashFrame, layer: FlashLayer, parent: Any, timeline: FlashTimeline): Keyframe = {
       val __obj = js.Dynamic.literal(keyframe = keyframe.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
       __obj.asInstanceOf[Keyframe]
     }
@@ -29,7 +29,7 @@ object anon {
       
       inline def setLayer(value: FlashLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setTimeline(value: FlashTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     }

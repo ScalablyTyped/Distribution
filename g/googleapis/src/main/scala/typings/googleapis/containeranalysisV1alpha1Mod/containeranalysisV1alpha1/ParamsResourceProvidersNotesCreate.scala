@@ -1,9 +1,5 @@
 package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceProvidersNotesCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The name of the project. Should be of the form "providers/{provider_id}".
-    * @Deprecated
+    * The name of the project. Should be of the form "providers/{provider_id\}". @Deprecated
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -29,7 +19,7 @@ trait ParamsResourceProvidersNotesCreate
   var noteId: js.UndefOr[String] = js.undefined
   
   /**
-    * This field contains the project Id for example: "projects/{project_id}
+    * This field contains the project Id for example: "projects/{project_id\}
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -46,10 +36,6 @@ object ParamsResourceProvidersNotesCreate {
   }
   
   extension [Self <: ParamsResourceProvidersNotesCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.angularCompiler.anon
 
-import typings.angularCompiler.tagsMod.TagContentType
+import typings.angularCompiler.mod.TagContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait ClosedByChildren extends StObject {
   
   var closedByParent: js.UndefOr[Boolean] = js.undefined
   
-  var contentType: js.UndefOr[TagContentType] = js.undefined
+  var contentType: js.UndefOr[TagContentType | Dictnamespace] = js.undefined
   
   var ignoreFirstLf: js.UndefOr[Boolean] = js.undefined
   
@@ -34,13 +34,13 @@ object ClosedByChildren {
     
     inline def setClosedByChildrenUndefined: Self = StObject.set(x, "closedByChildren", js.undefined)
     
-    inline def setClosedByChildrenVarargs(value: String*): Self = StObject.set(x, "closedByChildren", js.Array(value :_*))
+    inline def setClosedByChildrenVarargs(value: String*): Self = StObject.set(x, "closedByChildren", js.Array(value*))
     
     inline def setClosedByParent(value: Boolean): Self = StObject.set(x, "closedByParent", value.asInstanceOf[js.Any])
     
     inline def setClosedByParentUndefined: Self = StObject.set(x, "closedByParent", js.undefined)
     
-    inline def setContentType(value: TagContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: TagContentType | Dictnamespace): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     

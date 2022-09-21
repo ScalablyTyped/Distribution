@@ -23,7 +23,7 @@ trait ASPxClientFileManagerItem extends StObject {
   /**
     * Gets the current item's metadata.
     */
-  def GetMetadata(): js.Any = js.native
+  def GetMetadata(): Any = js.native
   
   /**
     * Gets a value indicating whether the item is selected in the file manager.

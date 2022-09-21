@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigateToMiniProgramOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   var appId: String
   
@@ -15,7 +15,7 @@ trait NavigateToMiniProgramOptions
   var envVersion: js.UndefOr[String] = js.undefined
   
   // 打开的页面路径，如果为空则打开首页
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   // 要打开的小程序 appId
   var path: js.UndefOr[String] = js.undefined
@@ -39,7 +39,7 @@ object NavigateToMiniProgramOptions {
     
     inline def setEnvVersionUndefined: Self = StObject.set(x, "envVersion", js.undefined)
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     

@@ -29,6 +29,6 @@ object DetectorModelDefinition {
     
     inline def setStates(value: States): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    inline def setStatesVarargs(value: State*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: State*): Self = StObject.set(x, "states", js.Array(value*))
   }
 }

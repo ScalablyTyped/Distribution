@@ -41,14 +41,15 @@ import typings.jquery.jqueryStrings.`var`
 import typings.jquery.jqueryStrings.a
 import typings.jquery.jqueryStrings.abbr
 import typings.jquery.jqueryStrings.address
-import typings.jquery.jqueryStrings.applet
+import typings.jquery.jqueryStrings.animate
+import typings.jquery.jqueryStrings.animateMotion
+import typings.jquery.jqueryStrings.animateTransform
 import typings.jquery.jqueryStrings.area
 import typings.jquery.jqueryStrings.article
 import typings.jquery.jqueryStrings.aside
 import typings.jquery.jqueryStrings.audio
 import typings.jquery.jqueryStrings.b
 import typings.jquery.jqueryStrings.base
-import typings.jquery.jqueryStrings.basefont
 import typings.jquery.jqueryStrings.bdi
 import typings.jquery.jqueryStrings.bdo
 import typings.jquery.jqueryStrings.blockquote
@@ -77,7 +78,6 @@ import typings.jquery.jqueryStrings.desc
 import typings.jquery.jqueryStrings.details
 import typings.jquery.jqueryStrings.dfn
 import typings.jquery.jqueryStrings.dialog
-import typings.jquery.jqueryStrings.dir
 import typings.jquery.jqueryStrings.div
 import typings.jquery.jqueryStrings.dl
 import typings.jquery.jqueryStrings.drag
@@ -100,6 +100,7 @@ import typings.jquery.jqueryStrings.feConvolveMatrix
 import typings.jquery.jqueryStrings.feDiffuseLighting
 import typings.jquery.jqueryStrings.feDisplacementMap
 import typings.jquery.jqueryStrings.feDistantLight
+import typings.jquery.jqueryStrings.feDropShadow
 import typings.jquery.jqueryStrings.feFlood
 import typings.jquery.jqueryStrings.feFuncA
 import typings.jquery.jqueryStrings.feFuncB
@@ -123,12 +124,9 @@ import typings.jquery.jqueryStrings.filter
 import typings.jquery.jqueryStrings.focus
 import typings.jquery.jqueryStrings.focusin
 import typings.jquery.jqueryStrings.focusout
-import typings.jquery.jqueryStrings.font
 import typings.jquery.jqueryStrings.footer
 import typings.jquery.jqueryStrings.foreignObject
 import typings.jquery.jqueryStrings.form
-import typings.jquery.jqueryStrings.frame
-import typings.jquery.jqueryStrings.frameset
 import typings.jquery.jqueryStrings.g
 import typings.jquery.jqueryStrings.get
 import typings.jquery.jqueryStrings.h1
@@ -164,7 +162,6 @@ import typings.jquery.jqueryStrings.main
 import typings.jquery.jqueryStrings.map
 import typings.jquery.jqueryStrings.mark
 import typings.jquery.jqueryStrings.marker
-import typings.jquery.jqueryStrings.marquee
 import typings.jquery.jqueryStrings.mask
 import typings.jquery.jqueryStrings.menu
 import typings.jquery.jqueryStrings.meta
@@ -177,6 +174,7 @@ import typings.jquery.jqueryStrings.mousemove
 import typings.jquery.jqueryStrings.mouseout
 import typings.jquery.jqueryStrings.mouseover
 import typings.jquery.jqueryStrings.mouseup
+import typings.jquery.jqueryStrings.mpath
 import typings.jquery.jqueryStrings.nav
 import typings.jquery.jqueryStrings.noscript
 import typings.jquery.jqueryStrings.ol
@@ -184,7 +182,6 @@ import typings.jquery.jqueryStrings.optgroup
 import typings.jquery.jqueryStrings.option
 import typings.jquery.jqueryStrings.output
 import typings.jquery.jqueryStrings.p
-import typings.jquery.jqueryStrings.param
 import typings.jquery.jqueryStrings.path
 import typings.jquery.jqueryStrings.pattern
 import typings.jquery.jqueryStrings.pending
@@ -268,12 +265,10 @@ import typings.std.Element
 import typings.std.EventTarget
 import typings.std.HTMLAllCollection
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -282,15 +277,11 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
-import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
-import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
-import typings.std.HTMLFrameElement
-import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -303,7 +294,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
-import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -314,7 +304,6 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
-import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -326,10 +315,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -342,7 +330,9 @@ import typings.std.HTMLVideoElement
 import typings.std.Iterable
 import typings.std.Partial
 import typings.std.Pick
-import typings.std.RegExp
+import typings.std.SVGAnimateElement
+import typings.std.SVGAnimateMotionElement
+import typings.std.SVGAnimateTransformElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -356,6 +346,7 @@ import typings.std.SVGFEConvolveMatrixElement
 import typings.std.SVGFEDiffuseLightingElement
 import typings.std.SVGFEDisplacementMapElement
 import typings.std.SVGFEDistantLightElement
+import typings.std.SVGFEDropShadowElement
 import typings.std.SVGFEFloodElement
 import typings.std.SVGFEFuncAElement
 import typings.std.SVGFEFuncBElement
@@ -378,6 +369,7 @@ import typings.std.SVGGElement
 import typings.std.SVGImageElement
 import typings.std.SVGLineElement
 import typings.std.SVGLinearGradientElement
+import typings.std.SVGMPathElement
 import typings.std.SVGMarkerElement
 import typings.std.SVGMaskElement
 import typings.std.SVGMetadataElement
@@ -388,6 +380,7 @@ import typings.std.SVGPolylineElement
 import typings.std.SVGRadialGradientElement
 import typings.std.SVGRectElement
 import typings.std.SVGSVGElement
+import typings.std.SVGSetElement
 import typings.std.SVGStopElement
 import typings.std.SVGSwitchElement
 import typings.std.SVGSymbolElement
@@ -891,8 +884,8 @@ trait JQuery[TElement]
     handler: js.ThisFunction3[
       /* this */ Document, 
       /* event */ TriggeredEvent[Document, Unit, Document, Document], 
-      /* jqXHR */ jqXHR[js.Any], 
-      /* ajaxOptions */ AjaxSettings[js.Any], 
+      /* jqXHR */ jqXHR[Any], 
+      /* ajaxOptions */ AjaxSettings[Any], 
       Unit | `false`
     ]
   ): this.type = js.native
@@ -914,8 +907,8 @@ trait JQuery[TElement]
     handler: js.ThisFunction4[
       /* this */ Document, 
       /* event */ TriggeredEvent[Document, Unit, Document, Document], 
-      /* jqXHR */ jqXHR[js.Any], 
-      /* ajaxSettings */ AjaxSettings[js.Any], 
+      /* jqXHR */ jqXHR[Any], 
+      /* ajaxSettings */ AjaxSettings[Any], 
       /* thrownError */ String, 
       Unit | `false`
     ]
@@ -938,8 +931,8 @@ trait JQuery[TElement]
     handler: js.ThisFunction3[
       /* this */ Document, 
       /* event */ TriggeredEvent[Document, Unit, Document, Document], 
-      /* jqXHR */ jqXHR[js.Any], 
-      /* ajaxOptions */ AjaxSettings[js.Any], 
+      /* jqXHR */ jqXHR[Any], 
+      /* ajaxOptions */ AjaxSettings[Any], 
       Unit | `false`
     ]
   ): this.type = js.native
@@ -991,9 +984,9 @@ trait JQuery[TElement]
     handler: js.ThisFunction4[
       /* this */ Document, 
       /* event */ TriggeredEvent[Document, Unit, Document, Document], 
-      /* jqXHR */ jqXHR[js.Any], 
-      /* ajaxOptions */ AjaxSettings[js.Any], 
-      /* data */ PlainObject[js.Any], 
+      /* jqXHR */ jqXHR[Any], 
+      /* ajaxOptions */ AjaxSettings[Any], 
+      /* data */ PlainObject[Any], 
       Unit | `false`
     ]
   ): this.type = js.native
@@ -1005,11 +998,11 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/animate/ }\`
     * @since 1.0
     */
-  def animate(properties: PlainObject[js.Any]): this.type = js.native
-  def animate(properties: PlainObject[js.Any], complete: js.ThisFunction0[/* this */ TElement, Unit]): this.type = js.native
-  def animate(properties: PlainObject[js.Any], duration_easing: String): this.type = js.native
+  def animate(properties: PlainObject[Any]): this.type = js.native
+  def animate(properties: PlainObject[Any], complete: js.ThisFunction0[/* this */ TElement, Unit]): this.type = js.native
+  def animate(properties: PlainObject[Any], duration_easing: String): this.type = js.native
   def animate(
-    properties: PlainObject[js.Any],
+    properties: PlainObject[Any],
     duration_easing: String,
     complete: js.ThisFunction0[/* this */ TElement, Unit]
   ): this.type = js.native
@@ -1114,9 +1107,9 @@ trait JQuery[TElement]
   }, 500 );
   ```
     */
-  def animate(properties: PlainObject[js.Any], duration_easing: Duration): this.type = js.native
+  def animate(properties: PlainObject[Any], duration_easing: Duration): this.type = js.native
   def animate(
-    properties: PlainObject[js.Any],
+    properties: PlainObject[Any],
     duration_easing: Duration,
     complete: js.ThisFunction0[/* this */ TElement, Unit]
   ): this.type = js.native
@@ -1145,9 +1138,9 @@ trait JQuery[TElement]
   });
   ```
     */
-  def animate(properties: PlainObject[js.Any], duration: Duration, easing: String): this.type = js.native
+  def animate(properties: PlainObject[Any], duration: Duration, easing: String): this.type = js.native
   def animate(
-    properties: PlainObject[js.Any],
+    properties: PlainObject[Any],
     duration: Duration,
     easing: String,
     complete: js.ThisFunction0[/* this */ TElement, Unit]
@@ -1301,7 +1294,7 @@ trait JQuery[TElement]
   });
   ```
     */
-  def animate(properties: PlainObject[js.Any], options: EffectsOptions[TElement]): this.type = js.native
+  def animate(properties: PlainObject[Any], options: EffectsOptions[TElement]): this.type = js.native
   
   /**
     * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
@@ -1572,7 +1565,7 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def attr(attributes: PlainObject[js.Any]): this.type = js.native
+  def attr(attributes: PlainObject[Any]): this.type = js.native
   /**
     * Get the value of an attribute for the first element in the set of matched elements.
     * @param attributeName The name of the attribute to get.
@@ -2051,6 +2044,8 @@ trait JQuery[TElement]
   @JSName("change")
   def change_false(handler: `false`): this.type = js.native
   
+  def children(): JQuery[HTMLElement] = js.native
+  def children(selector: Selector): JQuery[HTMLElement] = js.native
   /**
     * Get the children of each element in the set of matched elements, optionally filtered by a selector.
     * @param selector A string containing a selector expression to match elements against.
@@ -2217,8 +2212,346 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def children(): this.type = js.native
-  def children(selector: Selector): this.type = js.native
+  @JSName("children")
+  def children_a(selector: a): JQuery[HTMLAnchorElement] = js.native
+  @JSName("children")
+  def children_abbr(selector: abbr): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_address(selector: address): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_animate(selector: animate): JQuery[SVGAnimateElement] = js.native
+  @JSName("children")
+  def children_animateMotion(selector: animateMotion): JQuery[SVGAnimateMotionElement] = js.native
+  @JSName("children")
+  def children_animateTransform(selector: animateTransform): JQuery[SVGAnimateTransformElement] = js.native
+  @JSName("children")
+  def children_area(selector: area): JQuery[HTMLAreaElement] = js.native
+  @JSName("children")
+  def children_article(selector: article): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_aside(selector: aside): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_audio(selector: audio): JQuery[HTMLAudioElement] = js.native
+  @JSName("children")
+  def children_b(selector: b): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_base(selector: base): JQuery[HTMLBaseElement] = js.native
+  @JSName("children")
+  def children_bdi(selector: bdi): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_bdo(selector: bdo): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_blockquote(selector: blockquote): JQuery[HTMLQuoteElement] = js.native
+  @JSName("children")
+  def children_body(selector: body): JQuery[HTMLBodyElement] = js.native
+  @JSName("children")
+  def children_br(selector: br): JQuery[HTMLBRElement] = js.native
+  @JSName("children")
+  def children_button(selector: button): JQuery[HTMLButtonElement] = js.native
+  @JSName("children")
+  def children_canvas(selector: canvas): JQuery[HTMLCanvasElement] = js.native
+  @JSName("children")
+  def children_caption(selector: caption): JQuery[HTMLTableCaptionElement] = js.native
+  @JSName("children")
+  def children_circle(selector: circle): JQuery[SVGCircleElement] = js.native
+  @JSName("children")
+  def children_cite(selector: cite): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_clipPath(selector: clipPath): JQuery[SVGClipPathElement] = js.native
+  @JSName("children")
+  def children_code(selector: code): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_col(selector: col): JQuery[HTMLTableColElement] = js.native
+  @JSName("children")
+  def children_colgroup(selector: colgroup): JQuery[HTMLTableColElement] = js.native
+  @JSName("children")
+  def children_data(selector: data): JQuery[HTMLDataElement] = js.native
+  @JSName("children")
+  def children_datalist(selector: datalist): JQuery[HTMLDataListElement] = js.native
+  @JSName("children")
+  def children_dd(selector: dd): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_defs(selector: defs): JQuery[SVGDefsElement] = js.native
+  @JSName("children")
+  def children_del(selector: del): JQuery[HTMLModElement] = js.native
+  @JSName("children")
+  def children_desc(selector: desc): JQuery[SVGDescElement] = js.native
+  @JSName("children")
+  def children_details(selector: details): JQuery[HTMLDetailsElement] = js.native
+  @JSName("children")
+  def children_dfn(selector: dfn): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_dialog(selector: dialog): JQuery[HTMLDialogElement] = js.native
+  @JSName("children")
+  def children_div(selector: div): JQuery[HTMLDivElement] = js.native
+  @JSName("children")
+  def children_dl(selector: dl): JQuery[HTMLDListElement] = js.native
+  @JSName("children")
+  def children_dt(selector: dt): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_ellipse(selector: ellipse): JQuery[SVGEllipseElement] = js.native
+  @JSName("children")
+  def children_em(selector: em): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_embed(selector: embed): JQuery[HTMLEmbedElement] = js.native
+  @JSName("children")
+  def children_feBlend(selector: feBlend): JQuery[SVGFEBlendElement] = js.native
+  @JSName("children")
+  def children_feColorMatrix(selector: feColorMatrix): JQuery[SVGFEColorMatrixElement] = js.native
+  @JSName("children")
+  def children_feComponentTransfer(selector: feComponentTransfer): JQuery[SVGFEComponentTransferElement] = js.native
+  @JSName("children")
+  def children_feComposite(selector: feComposite): JQuery[SVGFECompositeElement] = js.native
+  @JSName("children")
+  def children_feConvolveMatrix(selector: feConvolveMatrix): JQuery[SVGFEConvolveMatrixElement] = js.native
+  @JSName("children")
+  def children_feDiffuseLighting(selector: feDiffuseLighting): JQuery[SVGFEDiffuseLightingElement] = js.native
+  @JSName("children")
+  def children_feDisplacementMap(selector: feDisplacementMap): JQuery[SVGFEDisplacementMapElement] = js.native
+  @JSName("children")
+  def children_feDistantLight(selector: feDistantLight): JQuery[SVGFEDistantLightElement] = js.native
+  @JSName("children")
+  def children_feDropShadow(selector: feDropShadow): JQuery[SVGFEDropShadowElement] = js.native
+  @JSName("children")
+  def children_feFlood(selector: feFlood): JQuery[SVGFEFloodElement] = js.native
+  @JSName("children")
+  def children_feFuncA(selector: feFuncA): JQuery[SVGFEFuncAElement] = js.native
+  @JSName("children")
+  def children_feFuncB(selector: feFuncB): JQuery[SVGFEFuncBElement] = js.native
+  @JSName("children")
+  def children_feFuncG(selector: feFuncG): JQuery[SVGFEFuncGElement] = js.native
+  @JSName("children")
+  def children_feFuncR(selector: feFuncR): JQuery[SVGFEFuncRElement] = js.native
+  @JSName("children")
+  def children_feGaussianBlur(selector: feGaussianBlur): JQuery[SVGFEGaussianBlurElement] = js.native
+  @JSName("children")
+  def children_feImage(selector: feImage): JQuery[SVGFEImageElement] = js.native
+  @JSName("children")
+  def children_feMerge(selector: feMerge): JQuery[SVGFEMergeElement] = js.native
+  @JSName("children")
+  def children_feMergeNode(selector: feMergeNode): JQuery[SVGFEMergeNodeElement] = js.native
+  @JSName("children")
+  def children_feMorphology(selector: feMorphology): JQuery[SVGFEMorphologyElement] = js.native
+  @JSName("children")
+  def children_feOffset(selector: feOffset): JQuery[SVGFEOffsetElement] = js.native
+  @JSName("children")
+  def children_fePointLight(selector: fePointLight): JQuery[SVGFEPointLightElement] = js.native
+  @JSName("children")
+  def children_feSpecularLighting(selector: feSpecularLighting): JQuery[SVGFESpecularLightingElement] = js.native
+  @JSName("children")
+  def children_feSpotLight(selector: feSpotLight): JQuery[SVGFESpotLightElement] = js.native
+  @JSName("children")
+  def children_feTile(selector: feTile): JQuery[SVGFETileElement] = js.native
+  @JSName("children")
+  def children_feTurbulence(selector: feTurbulence): JQuery[SVGFETurbulenceElement] = js.native
+  @JSName("children")
+  def children_fieldset(selector: fieldset): JQuery[HTMLFieldSetElement] = js.native
+  @JSName("children")
+  def children_figcaption(selector: figcaption): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_figure(selector: figure): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_filter(selector: filter): JQuery[SVGFilterElement] = js.native
+  @JSName("children")
+  def children_footer(selector: footer): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_foreignObject(selector: foreignObject): JQuery[SVGForeignObjectElement] = js.native
+  @JSName("children")
+  def children_form(selector: form): JQuery[HTMLFormElement] = js.native
+  @JSName("children")
+  def children_g(selector: g): JQuery[SVGGElement] = js.native
+  @JSName("children")
+  def children_h1(selector: h1): JQuery[HTMLHeadingElement] = js.native
+  @JSName("children")
+  def children_h2(selector: h2): JQuery[HTMLHeadingElement] = js.native
+  @JSName("children")
+  def children_h3(selector: h3): JQuery[HTMLHeadingElement] = js.native
+  @JSName("children")
+  def children_h4(selector: h4): JQuery[HTMLHeadingElement] = js.native
+  @JSName("children")
+  def children_h5(selector: h5): JQuery[HTMLHeadingElement] = js.native
+  @JSName("children")
+  def children_h6(selector: h6): JQuery[HTMLHeadingElement] = js.native
+  @JSName("children")
+  def children_head(selector: head): JQuery[HTMLHeadElement] = js.native
+  @JSName("children")
+  def children_header(selector: header): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_hgroup(selector: hgroup): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_hr(selector: hr): JQuery[HTMLHRElement] = js.native
+  @JSName("children")
+  def children_html(selector: html): JQuery[HTMLHtmlElement] = js.native
+  @JSName("children")
+  def children_i(selector: i): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_iframe(selector: iframe): JQuery[HTMLIFrameElement] = js.native
+  @JSName("children")
+  def children_image(selector: image): JQuery[SVGImageElement] = js.native
+  @JSName("children")
+  def children_img(selector: img): JQuery[HTMLImageElement] = js.native
+  @JSName("children")
+  def children_input(selector: input): JQuery[HTMLInputElement] = js.native
+  @JSName("children")
+  def children_ins(selector: ins): JQuery[HTMLModElement] = js.native
+  @JSName("children")
+  def children_kbd(selector: kbd): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_label(selector: label): JQuery[HTMLLabelElement] = js.native
+  @JSName("children")
+  def children_legend(selector: legend): JQuery[HTMLLegendElement] = js.native
+  @JSName("children")
+  def children_li(selector: li): JQuery[HTMLLIElement] = js.native
+  @JSName("children")
+  def children_line(selector: line): JQuery[SVGLineElement] = js.native
+  @JSName("children")
+  def children_linearGradient(selector: linearGradient): JQuery[SVGLinearGradientElement] = js.native
+  @JSName("children")
+  def children_link(selector: link): JQuery[HTMLLinkElement] = js.native
+  @JSName("children")
+  def children_main(selector: main): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_map(selector: map): JQuery[HTMLMapElement] = js.native
+  @JSName("children")
+  def children_mark(selector: mark): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_marker(selector: marker): JQuery[SVGMarkerElement] = js.native
+  @JSName("children")
+  def children_mask(selector: mask): JQuery[SVGMaskElement] = js.native
+  @JSName("children")
+  def children_menu(selector: menu): JQuery[HTMLMenuElement] = js.native
+  @JSName("children")
+  def children_meta(selector: meta): JQuery[HTMLMetaElement] = js.native
+  @JSName("children")
+  def children_metadata(selector: metadata): JQuery[SVGMetadataElement] = js.native
+  @JSName("children")
+  def children_meter(selector: meter): JQuery[HTMLMeterElement] = js.native
+  @JSName("children")
+  def children_mpath(selector: mpath): JQuery[SVGMPathElement] = js.native
+  @JSName("children")
+  def children_nav(selector: nav): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_noscript(selector: noscript): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_object(selector: `object`): JQuery[HTMLObjectElement] = js.native
+  @JSName("children")
+  def children_ol(selector: ol): JQuery[HTMLOListElement] = js.native
+  @JSName("children")
+  def children_optgroup(selector: optgroup): JQuery[HTMLOptGroupElement] = js.native
+  @JSName("children")
+  def children_option(selector: option): JQuery[HTMLOptionElement] = js.native
+  @JSName("children")
+  def children_output(selector: output): JQuery[HTMLOutputElement] = js.native
+  @JSName("children")
+  def children_p(selector: p): JQuery[HTMLParagraphElement] = js.native
+  @JSName("children")
+  def children_path(selector: path): JQuery[SVGPathElement] = js.native
+  @JSName("children")
+  def children_pattern(selector: pattern): JQuery[SVGPatternElement] = js.native
+  @JSName("children")
+  def children_picture(selector: picture): JQuery[HTMLPictureElement] = js.native
+  @JSName("children")
+  def children_polygon(selector: polygon): JQuery[SVGPolygonElement] = js.native
+  @JSName("children")
+  def children_polyline(selector: polyline): JQuery[SVGPolylineElement] = js.native
+  @JSName("children")
+  def children_pre(selector: pre): JQuery[HTMLPreElement] = js.native
+  @JSName("children")
+  def children_progress(selector: progress): JQuery[HTMLProgressElement] = js.native
+  @JSName("children")
+  def children_q(selector: q): JQuery[HTMLQuoteElement] = js.native
+  @JSName("children")
+  def children_radialGradient(selector: radialGradient): JQuery[SVGRadialGradientElement] = js.native
+  @JSName("children")
+  def children_rect(selector: rect): JQuery[SVGRectElement] = js.native
+  @JSName("children")
+  def children_rp(selector: rp): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_rt(selector: rt): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_ruby(selector: ruby): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_s(selector: s): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_samp(selector: samp): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_script(selector: script): JQuery[HTMLScriptElement] = js.native
+  @JSName("children")
+  def children_section(selector: section): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_select(selector: select): JQuery[HTMLSelectElement] = js.native
+  @JSName("children")
+  def children_set(selector: set): JQuery[SVGSetElement] = js.native
+  @JSName("children")
+  def children_slot(selector: slot): JQuery[HTMLSlotElement] = js.native
+  @JSName("children")
+  def children_small(selector: small): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_source(selector: source): JQuery[HTMLSourceElement] = js.native
+  @JSName("children")
+  def children_span(selector: span): JQuery[HTMLSpanElement] = js.native
+  @JSName("children")
+  def children_stop(selector: stop): JQuery[SVGStopElement] = js.native
+  @JSName("children")
+  def children_strong(selector: strong): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_style(selector: style): JQuery[HTMLStyleElement] = js.native
+  @JSName("children")
+  def children_sub(selector: sub): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_summary(selector: summary): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_sup(selector: sup): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_svg(selector: svg): JQuery[SVGSVGElement] = js.native
+  @JSName("children")
+  def children_switch(selector: switch): JQuery[SVGSwitchElement] = js.native
+  @JSName("children")
+  def children_symbol(selector: symbol): JQuery[SVGSymbolElement] = js.native
+  @JSName("children")
+  def children_table(selector: table): JQuery[HTMLTableElement] = js.native
+  @JSName("children")
+  def children_tbody(selector: tbody): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("children")
+  def children_td(selector: td): JQuery[HTMLTableCellElement] = js.native
+  @JSName("children")
+  def children_template(selector: template): JQuery[HTMLTemplateElement] = js.native
+  @JSName("children")
+  def children_text(selector: text): JQuery[SVGTextElement] = js.native
+  @JSName("children")
+  def children_textPath(selector: textPath): JQuery[SVGTextPathElement] = js.native
+  @JSName("children")
+  def children_textarea(selector: textarea): JQuery[HTMLTextAreaElement] = js.native
+  @JSName("children")
+  def children_tfoot(selector: tfoot): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("children")
+  def children_th(selector: th): JQuery[HTMLTableCellElement] = js.native
+  @JSName("children")
+  def children_thead(selector: thead): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("children")
+  def children_time(selector: time): JQuery[HTMLTimeElement] = js.native
+  @JSName("children")
+  def children_title(selector: title): JQuery[HTMLTitleElement] = js.native
+  @JSName("children")
+  def children_tr(selector: tr): JQuery[HTMLTableRowElement] = js.native
+  @JSName("children")
+  def children_track(selector: track): JQuery[HTMLTrackElement] = js.native
+  @JSName("children")
+  def children_tspan(selector: tspan): JQuery[SVGTSpanElement] = js.native
+  @JSName("children")
+  def children_u(selector: u): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_ul(selector: ul): JQuery[HTMLUListElement] = js.native
+  @JSName("children")
+  def children_use(selector: use): JQuery[SVGUseElement] = js.native
+  @JSName("children")
+  def children_var(selector: `var`): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  def children_video(selector: video): JQuery[HTMLVideoElement] = js.native
+  @JSName("children")
+  def children_view(selector: view): JQuery[SVGViewElement] = js.native
+  @JSName("children")
+  def children_wbr(selector: wbr): JQuery[HTMLElement] = js.native
   
   /**
     * Remove from the queue all items that have not yet been run.
@@ -2918,7 +3251,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/data/ }\`
     * @since 1.4
     */
-  def data(): PlainObject[js.Any] = js.native
+  def data(): PlainObject[Any] = js.native
   /**
     * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
     * @param key Name of the data stored.
@@ -2989,7 +3322,7 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def data(key: String): js.Any = js.native
+  def data(key: String): Any = js.native
   def data(key: String, value: String): this.type = js.native
   def data(key: String, value: js.Object): this.type = js.native
   def data(key: String, value: js.Symbol): this.type = js.native
@@ -3006,14 +3339,14 @@ trait JQuery[TElement]
   // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
   // results in potential confusion for users from an unexpected parameter.
   // tslint:disable-next-line:unified-signatures
-  def data(key: String, value: Unit): js.Any = js.native
+  def data(key: String, value: Unit): Any = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     * @param obj An object of key-value pairs of data to update.
     * @see \`{@link https://api.jquery.com/data/ }\`
     * @since 1.4.3
     */
-  def data(obj: PlainObject[js.Any]): this.type = js.native
+  def data(obj: PlainObject[Any]): this.type = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     * @param key A string naming the piece of data to set.
@@ -3195,7 +3528,7 @@ trait JQuery[TElement]
     *
     * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
     */
-  def delegate(selector: Selector, events: TypeEventHandlers[TElement, Unit, js.Any, js.Any]): this.type = js.native
+  def delegate(selector: Selector, events: TypeEventHandlers[TElement, Unit, Any, Any]): this.type = js.native
   /**
     * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
     * @param selector A selector to filter the elements that trigger the event.
@@ -3307,11 +3640,7 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def delegate[TType /* <: String */](
-    selector: Selector,
-    eventType: TType,
-    handler: TypeEventHandler[TElement, Unit, js.Any, js.Any, TType]
-  ): this.type = js.native
+  def delegate[TType /* <: String */](selector: Selector, eventType: TType, handler: TypeEventHandler[TElement, Unit, Any, Any, TType]): this.type = js.native
   /**
     * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
     * @param selector A selector to filter the elements that trigger the event.
@@ -3331,7 +3660,7 @@ trait JQuery[TElement]
     selector: Selector,
     eventType: TType,
     eventData: TData,
-    handler: TypeEventHandler[TElement, TData, js.Any, js.Any, TType]
+    handler: TypeEventHandler[TElement, TData, Any, Any, TType]
   ): this.type = js.native
   @JSName("delegate")
   def delegate_false[TType /* <: String */](selector: Selector, eventType: TType, handler: `false`): this.type = js.native
@@ -4558,8 +4887,6 @@ trait JQuery[TElement]
   def find[E /* <: HTMLElement */](selector_element: JQuery[E]): JQuery[E] = js.native
   def find[E /* <: HTMLElement */](selector_element: Selector): JQuery[E] = js.native
   def find[E /* <: HTMLElement */](selector_element: Element): JQuery[E] = js.native
-  @JSName("find")
-  def find_a(selector_element: JQuery[a]): JQuery[HTMLAnchorElement] = js.native
   /**
     * Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
     * @param selector_element _&#x40;param_ `selector_element`
@@ -4672,6 +4999,8 @@ trait JQuery[TElement]
   ```
     */
   @JSName("find")
+  def find_a(selector_element: JQuery[a]): JQuery[HTMLAnchorElement] = js.native
+  @JSName("find")
   def find_a(selector_element: a): JQuery[HTMLAnchorElement] = js.native
   @JSName("find")
   def find_abbr(selector_element: JQuery[abbr]): JQuery[HTMLElement] = js.native
@@ -4682,9 +5011,17 @@ trait JQuery[TElement]
   @JSName("find")
   def find_address(selector_element: address): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_applet(selector_element: JQuery[applet]): JQuery[HTMLAppletElement] = js.native
+  def find_animate(selector_element: JQuery[animate]): JQuery[SVGAnimateElement] = js.native
   @JSName("find")
-  def find_applet(selector_element: applet): JQuery[HTMLAppletElement] = js.native
+  def find_animate(selector_element: animate): JQuery[SVGAnimateElement] = js.native
+  @JSName("find")
+  def find_animateMotion(selector_element: JQuery[animateMotion]): JQuery[SVGAnimateMotionElement] = js.native
+  @JSName("find")
+  def find_animateMotion(selector_element: animateMotion): JQuery[SVGAnimateMotionElement] = js.native
+  @JSName("find")
+  def find_animateTransform(selector_element: JQuery[animateTransform]): JQuery[SVGAnimateTransformElement] = js.native
+  @JSName("find")
+  def find_animateTransform(selector_element: animateTransform): JQuery[SVGAnimateTransformElement] = js.native
   @JSName("find")
   def find_area(selector_element: JQuery[area]): JQuery[HTMLAreaElement] = js.native
   @JSName("find")
@@ -4709,10 +5046,6 @@ trait JQuery[TElement]
   def find_base(selector_element: JQuery[base]): JQuery[HTMLBaseElement] = js.native
   @JSName("find")
   def find_base(selector_element: base): JQuery[HTMLBaseElement] = js.native
-  @JSName("find")
-  def find_basefont(selector_element: JQuery[basefont]): JQuery[HTMLBaseFontElement] = js.native
-  @JSName("find")
-  def find_basefont(selector_element: basefont): JQuery[HTMLBaseFontElement] = js.native
   @JSName("find")
   def find_bdi(selector_element: JQuery[bdi]): JQuery[HTMLElement] = js.native
   @JSName("find")
@@ -4806,10 +5139,6 @@ trait JQuery[TElement]
   @JSName("find")
   def find_dialog(selector_element: dialog): JQuery[HTMLDialogElement] = js.native
   @JSName("find")
-  def find_dir(selector_element: JQuery[dir]): JQuery[HTMLDirectoryElement] = js.native
-  @JSName("find")
-  def find_dir(selector_element: dir): JQuery[HTMLDirectoryElement] = js.native
-  @JSName("find")
   def find_div(selector_element: JQuery[div]): JQuery[HTMLDivElement] = js.native
   @JSName("find")
   def find_div(selector_element: div): JQuery[HTMLDivElement] = js.native
@@ -4865,6 +5194,10 @@ trait JQuery[TElement]
   def find_feDistantLight(selector_element: JQuery[feDistantLight]): JQuery[SVGFEDistantLightElement] = js.native
   @JSName("find")
   def find_feDistantLight(selector_element: feDistantLight): JQuery[SVGFEDistantLightElement] = js.native
+  @JSName("find")
+  def find_feDropShadow(selector_element: JQuery[feDropShadow]): JQuery[SVGFEDropShadowElement] = js.native
+  @JSName("find")
+  def find_feDropShadow(selector_element: feDropShadow): JQuery[SVGFEDropShadowElement] = js.native
   @JSName("find")
   def find_feFlood(selector_element: JQuery[feFlood]): JQuery[SVGFEFloodElement] = js.native
   @JSName("find")
@@ -4946,10 +5279,6 @@ trait JQuery[TElement]
   @JSName("find")
   def find_filter(selector_element: filter): JQuery[SVGFilterElement] = js.native
   @JSName("find")
-  def find_font(selector_element: JQuery[font]): JQuery[HTMLFontElement] = js.native
-  @JSName("find")
-  def find_font(selector_element: font): JQuery[HTMLFontElement] = js.native
-  @JSName("find")
   def find_footer(selector_element: JQuery[footer]): JQuery[HTMLElement] = js.native
   @JSName("find")
   def find_footer(selector_element: footer): JQuery[HTMLElement] = js.native
@@ -4961,14 +5290,6 @@ trait JQuery[TElement]
   def find_form(selector_element: JQuery[form]): JQuery[HTMLFormElement] = js.native
   @JSName("find")
   def find_form(selector_element: form): JQuery[HTMLFormElement] = js.native
-  @JSName("find")
-  def find_frame(selector_element: JQuery[frame]): JQuery[HTMLFrameElement] = js.native
-  @JSName("find")
-  def find_frame(selector_element: frame): JQuery[HTMLFrameElement] = js.native
-  @JSName("find")
-  def find_frameset(selector_element: JQuery[frameset]): JQuery[HTMLFrameSetElement] = js.native
-  @JSName("find")
-  def find_frameset(selector_element: frameset): JQuery[HTMLFrameSetElement] = js.native
   @JSName("find")
   def find_g(selector_element: JQuery[g]): JQuery[SVGGElement] = js.native
   @JSName("find")
@@ -5086,10 +5407,6 @@ trait JQuery[TElement]
   @JSName("find")
   def find_marker(selector_element: marker): JQuery[SVGMarkerElement] = js.native
   @JSName("find")
-  def find_marquee(selector_element: JQuery[marquee]): JQuery[HTMLMarqueeElement] = js.native
-  @JSName("find")
-  def find_marquee(selector_element: marquee): JQuery[HTMLMarqueeElement] = js.native
-  @JSName("find")
   def find_mask(selector_element: JQuery[mask]): JQuery[SVGMaskElement] = js.native
   @JSName("find")
   def find_mask(selector_element: mask): JQuery[SVGMaskElement] = js.native
@@ -5109,6 +5426,10 @@ trait JQuery[TElement]
   def find_meter(selector_element: JQuery[meter]): JQuery[HTMLMeterElement] = js.native
   @JSName("find")
   def find_meter(selector_element: meter): JQuery[HTMLMeterElement] = js.native
+  @JSName("find")
+  def find_mpath(selector_element: JQuery[mpath]): JQuery[SVGMPathElement] = js.native
+  @JSName("find")
+  def find_mpath(selector_element: mpath): JQuery[SVGMPathElement] = js.native
   @JSName("find")
   def find_nav(selector_element: JQuery[nav]): JQuery[HTMLElement] = js.native
   @JSName("find")
@@ -5141,10 +5462,6 @@ trait JQuery[TElement]
   def find_p(selector_element: JQuery[p]): JQuery[HTMLParagraphElement] = js.native
   @JSName("find")
   def find_p(selector_element: p): JQuery[HTMLParagraphElement] = js.native
-  @JSName("find")
-  def find_param(selector_element: JQuery[param]): JQuery[HTMLParamElement] = js.native
-  @JSName("find")
-  def find_param(selector_element: param): JQuery[HTMLParamElement] = js.native
   @JSName("find")
   def find_path(selector_element: JQuery[path]): JQuery[SVGPathElement] = js.native
   @JSName("find")
@@ -5218,6 +5535,10 @@ trait JQuery[TElement]
   @JSName("find")
   def find_select(selector_element: select): JQuery[HTMLSelectElement] = js.native
   @JSName("find")
+  def find_set(selector_element: JQuery[set]): JQuery[SVGSetElement] = js.native
+  @JSName("find")
+  def find_set(selector_element: set): JQuery[SVGSetElement] = js.native
+  @JSName("find")
   def find_slot(selector_element: JQuery[slot]): JQuery[HTMLSlotElement] = js.native
   @JSName("find")
   def find_slot(selector_element: slot): JQuery[HTMLSlotElement] = js.native
@@ -5278,9 +5599,9 @@ trait JQuery[TElement]
   @JSName("find")
   def find_tbody(selector_element: tbody): JQuery[HTMLTableSectionElement] = js.native
   @JSName("find")
-  def find_td(selector_element: JQuery[td]): JQuery[HTMLTableDataCellElement] = js.native
+  def find_td(selector_element: JQuery[td]): JQuery[HTMLTableCellElement] = js.native
   @JSName("find")
-  def find_td(selector_element: td): JQuery[HTMLTableDataCellElement] = js.native
+  def find_td(selector_element: td): JQuery[HTMLTableCellElement] = js.native
   @JSName("find")
   def find_template(selector_element: JQuery[template]): JQuery[HTMLTemplateElement] = js.native
   @JSName("find")
@@ -5302,9 +5623,9 @@ trait JQuery[TElement]
   @JSName("find")
   def find_tfoot(selector_element: tfoot): JQuery[HTMLTableSectionElement] = js.native
   @JSName("find")
-  def find_th(selector_element: JQuery[th]): JQuery[HTMLTableHeaderCellElement] = js.native
+  def find_th(selector_element: JQuery[th]): JQuery[HTMLTableCellElement] = js.native
   @JSName("find")
-  def find_th(selector_element: th): JQuery[HTMLTableHeaderCellElement] = js.native
+  def find_th(selector_element: th): JQuery[HTMLTableCellElement] = js.native
   @JSName("find")
   def find_thead(selector_element: JQuery[thead]): JQuery[HTMLTableSectionElement] = js.native
   @JSName("find")
@@ -5724,7 +6045,7 @@ trait JQuery[TElement]
   def focusout_focusout[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, focusout]): this.type = js.native
   
   /**
-    * Retrieve the elements matched by the jQuery object.
+    * Retrieve the elements matched by the jQuery object. If the value of index is out of bounds — less than the negative number of elements or equal to or greater than the number of elements — it returns undefined.
     * @see \`{@link https://api.jquery.com/get/ }\`
     * @since 1.0
     * @example ​ ````Select all divs in the document and return the DOM Elements as an Array; then use the built-in reverse() method to reverse that array.
@@ -5805,7 +6126,7 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def get(index: Double): TElement = js.native
+  def get(index: Double): js.UndefOr[TElement] = js.native
   
   /**
     * Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
@@ -7626,11 +7947,11 @@ trait JQuery[TElement]
       /* this */ TElement, 
       /* responseText */ String, 
       /* textStatus */ TextStatus, 
-      /* jqXHR */ jqXHR[js.Any], 
+      /* jqXHR */ jqXHR[Any], 
       Unit
     ]
   ): this.type = js.native
-  def load(url: String, complete_data: PlainObject[js.Any]): this.type = js.native
+  def load(url: String, complete_data: PlainObject[Any]): this.type = js.native
   /**
     * Load data from the server and place the returned HTML into the matched element.
     * @param url A string containing the URL to which the request is sent.
@@ -7652,18 +7973,18 @@ trait JQuery[TElement]
       /* this */ TElement, 
       /* responseText */ String, 
       /* textStatus */ TextStatus, 
-      /* jqXHR */ jqXHR[js.Any], 
+      /* jqXHR */ jqXHR[Any], 
       Unit
     ]
   ): this.type = js.native
   def load(
     url: String,
-    data: PlainObject[js.Any],
+    data: PlainObject[Any],
     complete: js.ThisFunction3[
       /* this */ TElement, 
       /* responseText */ String, 
       /* textStatus */ TextStatus, 
-      /* jqXHR */ jqXHR[js.Any], 
+      /* jqXHR */ jqXHR[Any], 
       Unit
     ]
   ): this.type = js.native
@@ -8752,9 +9073,9 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/off/ }\`
     * @since 1.7
     */
-  def off(events: TypeEventHandlers[TElement, js.Any, js.Any, js.Any]): this.type = js.native
-  def off(events: TypeEventHandlers[TElement, js.Any, js.Any, js.Any], selector: Selector): this.type = js.native
-  def off(event: TriggeredEvent[TElement, js.Any, js.Any, js.Any]): this.type = js.native
+  def off(events: TypeEventHandlers[TElement, Any, Any, Any]): this.type = js.native
+  def off(events: TypeEventHandlers[TElement, Any, Any, Any], selector: Selector): this.type = js.native
+  def off(event: TriggeredEvent[TElement, Any, Any, Any]): this.type = js.native
   /**
     * Remove an event handler.
     * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
@@ -8786,7 +9107,7 @@ trait JQuery[TElement]
     */
   def off[TType /* <: String */](events: TType): this.type = js.native
   def off[TType /* <: String */](events: TType, selector_handler: Selector): this.type = js.native
-  def off[TType /* <: String */](events: TType, selector_handler: TypeEventHandler[TElement, js.Any, js.Any, js.Any, TType]): this.type = js.native
+  def off[TType /* <: String */](events: TType, selector_handler: TypeEventHandler[TElement, Any, Any, Any, TType]): this.type = js.native
   /**
     * Remove an event handler.
     * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
@@ -8854,11 +9175,7 @@ trait JQuery[TElement]
   $( "body" ).off( "click", "p", foo );
   ```
     */
-  def off[TType /* <: String */](
-    events: TType,
-    selector: Selector,
-    handler: TypeEventHandler[TElement, js.Any, js.Any, js.Any, TType]
-  ): this.type = js.native
+  def off[TType /* <: String */](events: TType, selector: Selector, handler: TypeEventHandler[TElement, Any, Any, Any, TType]): this.type = js.native
   @JSName("off")
   def off_false[TType /* <: String */](events: TType, selector_handler: `false`): this.type = js.native
   @JSName("off")
@@ -9193,17 +9510,17 @@ trait JQuery[TElement]
   $( "p" ).on( "click", { foo: "bar" }, myHandler );
   ```
     */
-  def on(events: String, selector_data: js.Any, handler: js.Function1[/* event */ JQueryEventObject, Unit]): this.type = js.native
+  def on(events: String, selector_data: Any, handler: js.Function1[/* event */ JQueryEventObject, Unit]): this.type = js.native
   def on(
     events: String,
     selector: Null,
-    data: js.Any,
+    data: Any,
     handler: js.Function1[/* event */ JQueryEventObject, Unit]
   ): this.type = js.native
   def on(
     events: String,
     selector: Unit,
-    data: js.Any,
+    data: Any,
     handler: js.Function1[/* event */ JQueryEventObject, Unit]
   ): this.type = js.native
   /**
@@ -9220,7 +9537,7 @@ trait JQuery[TElement]
   def on(
     events: String,
     selector: Selector,
-    data: js.Any,
+    data: Any,
     handler: js.Function1[/* event */ JQueryEventObject, Unit]
   ): this.type = js.native
   /**
@@ -9281,7 +9598,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/on/ }\`
     * @since 1.7
     */
-  def on(events: TypeEventHandlers[TElement, Unit, js.Any, js.Any], selector: Selector): this.type = js.native
+  def on(events: TypeEventHandlers[TElement, Unit, Any, Any], selector: Selector): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9434,11 +9751,7 @@ trait JQuery[TElement]
   });
   ```
     */
-  def on[TType /* <: String */](
-    events: TType,
-    selector: Selector,
-    handler: TypeEventHandler[TElement, Unit, js.Any, js.Any, TType]
-  ): this.type = js.native
+  def on[TType /* <: String */](events: TType, selector: Selector, handler: TypeEventHandler[TElement, Unit, Any, Any, TType]): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -9470,7 +9783,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/on/ }\`
     * @since 1.7
     */
-  def on[TData](events: TypeEventHandlers[TElement, TData, js.Any, js.Any], selector: Selector, data: TData): this.type = js.native
+  def on[TData](events: TypeEventHandlers[TElement, TData, Any, Any], selector: Selector, data: TData): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9523,7 +9836,7 @@ trait JQuery[TElement]
     events: TType,
     selector: Selector,
     data: TData,
-    handler: TypeEventHandler[TElement, TData, js.Any, js.Any, TType]
+    handler: TypeEventHandler[TElement, TData, Any, Any, TType]
   ): this.type = js.native
   @JSName("on")
   def on_false[TType /* <: String */](events: TType, handler: `false`): this.type = js.native
@@ -9547,7 +9860,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one(events: TypeEventHandlers[TElement, Unit, js.Any, js.Any], selector: Selector): this.type = js.native
+  def one(events: TypeEventHandlers[TElement, Unit, Any, Any], selector: Selector): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9647,11 +9960,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one[TType /* <: String */](
-    events: TType,
-    selector: Selector,
-    handler: TypeEventHandler[TElement, Unit, js.Any, js.Any, TType]
-  ): this.type = js.native
+  def one[TType /* <: String */](events: TType, selector: Selector, handler: TypeEventHandler[TElement, Unit, Any, Any, TType]): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -9683,7 +9992,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one[TData](events: TypeEventHandlers[TElement, TData, js.Any, js.Any], selector: Selector, data: TData): this.type = js.native
+  def one[TData](events: TypeEventHandlers[TElement, TData, Any, Any], selector: Selector, data: TData): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9729,7 +10038,7 @@ trait JQuery[TElement]
     events: TType,
     selector: Selector,
     data: TData,
-    handler: TypeEventHandler[TElement, TData, js.Any, js.Any, TType]
+    handler: TypeEventHandler[TElement, TData, Any, Any, TType]
   ): this.type = js.native
   @JSName("one")
   def one_false[TType /* <: String */](events: TType, handler: `false`): this.type = js.native
@@ -10023,8 +10332,9 @@ trait JQuery[TElement]
   def parent(): this.type = js.native
   def parent(selector: Selector): this.type = js.native
   
-  def parents(): this.type = js.native
-  def parents(selector: Selector): this.type = js.native
+  // tslint:disable-next-line:no-unnecessary-generics
+  def parents[E /* <: HTMLElement */](): JQuery[E] = js.native
+  def parents[E /* <: HTMLElement */](selector: Selector): JQuery[E] = js.native
   
   /**
     * Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.
@@ -10088,8 +10398,6 @@ trait JQuery[TElement]
   def parentsUntil(selector_element: Element): this.type = js.native
   def parentsUntil(selector_element: Element, filter: Selector): this.type = js.native
   
-  @JSName("parents")
-  def parents_a(selector: JQuery[a]): JQuery[HTMLAnchorElement] = js.native
   /**
     * Get the ancestors of each element in the current set of matched elements, optionally filtered by a selector.
     * @param selector A string containing a selector expression to match elements against.
@@ -10202,6 +10510,8 @@ trait JQuery[TElement]
   ```
     */
   @JSName("parents")
+  def parents_a(selector: JQuery[a]): JQuery[HTMLAnchorElement] = js.native
+  @JSName("parents")
   def parents_a(selector: a): JQuery[HTMLAnchorElement] = js.native
   @JSName("parents")
   def parents_abbr(selector: JQuery[abbr]): JQuery[HTMLElement] = js.native
@@ -10212,9 +10522,17 @@ trait JQuery[TElement]
   @JSName("parents")
   def parents_address(selector: address): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_applet(selector: JQuery[applet]): JQuery[HTMLAppletElement] = js.native
+  def parents_animate(selector: JQuery[animate]): JQuery[SVGAnimateElement] = js.native
   @JSName("parents")
-  def parents_applet(selector: applet): JQuery[HTMLAppletElement] = js.native
+  def parents_animate(selector: animate): JQuery[SVGAnimateElement] = js.native
+  @JSName("parents")
+  def parents_animateMotion(selector: JQuery[animateMotion]): JQuery[SVGAnimateMotionElement] = js.native
+  @JSName("parents")
+  def parents_animateMotion(selector: animateMotion): JQuery[SVGAnimateMotionElement] = js.native
+  @JSName("parents")
+  def parents_animateTransform(selector: JQuery[animateTransform]): JQuery[SVGAnimateTransformElement] = js.native
+  @JSName("parents")
+  def parents_animateTransform(selector: animateTransform): JQuery[SVGAnimateTransformElement] = js.native
   @JSName("parents")
   def parents_area(selector: JQuery[area]): JQuery[HTMLAreaElement] = js.native
   @JSName("parents")
@@ -10239,10 +10557,6 @@ trait JQuery[TElement]
   def parents_base(selector: JQuery[base]): JQuery[HTMLBaseElement] = js.native
   @JSName("parents")
   def parents_base(selector: base): JQuery[HTMLBaseElement] = js.native
-  @JSName("parents")
-  def parents_basefont(selector: JQuery[basefont]): JQuery[HTMLBaseFontElement] = js.native
-  @JSName("parents")
-  def parents_basefont(selector: basefont): JQuery[HTMLBaseFontElement] = js.native
   @JSName("parents")
   def parents_bdi(selector: JQuery[bdi]): JQuery[HTMLElement] = js.native
   @JSName("parents")
@@ -10336,10 +10650,6 @@ trait JQuery[TElement]
   @JSName("parents")
   def parents_dialog(selector: dialog): JQuery[HTMLDialogElement] = js.native
   @JSName("parents")
-  def parents_dir(selector: JQuery[dir]): JQuery[HTMLDirectoryElement] = js.native
-  @JSName("parents")
-  def parents_dir(selector: dir): JQuery[HTMLDirectoryElement] = js.native
-  @JSName("parents")
   def parents_div(selector: JQuery[div]): JQuery[HTMLDivElement] = js.native
   @JSName("parents")
   def parents_div(selector: div): JQuery[HTMLDivElement] = js.native
@@ -10395,6 +10705,10 @@ trait JQuery[TElement]
   def parents_feDistantLight(selector: JQuery[feDistantLight]): JQuery[SVGFEDistantLightElement] = js.native
   @JSName("parents")
   def parents_feDistantLight(selector: feDistantLight): JQuery[SVGFEDistantLightElement] = js.native
+  @JSName("parents")
+  def parents_feDropShadow(selector: JQuery[feDropShadow]): JQuery[SVGFEDropShadowElement] = js.native
+  @JSName("parents")
+  def parents_feDropShadow(selector: feDropShadow): JQuery[SVGFEDropShadowElement] = js.native
   @JSName("parents")
   def parents_feFlood(selector: JQuery[feFlood]): JQuery[SVGFEFloodElement] = js.native
   @JSName("parents")
@@ -10476,10 +10790,6 @@ trait JQuery[TElement]
   @JSName("parents")
   def parents_filter(selector: filter): JQuery[SVGFilterElement] = js.native
   @JSName("parents")
-  def parents_font(selector: JQuery[font]): JQuery[HTMLFontElement] = js.native
-  @JSName("parents")
-  def parents_font(selector: font): JQuery[HTMLFontElement] = js.native
-  @JSName("parents")
   def parents_footer(selector: JQuery[footer]): JQuery[HTMLElement] = js.native
   @JSName("parents")
   def parents_footer(selector: footer): JQuery[HTMLElement] = js.native
@@ -10491,14 +10801,6 @@ trait JQuery[TElement]
   def parents_form(selector: JQuery[form]): JQuery[HTMLFormElement] = js.native
   @JSName("parents")
   def parents_form(selector: form): JQuery[HTMLFormElement] = js.native
-  @JSName("parents")
-  def parents_frame(selector: JQuery[frame]): JQuery[HTMLFrameElement] = js.native
-  @JSName("parents")
-  def parents_frame(selector: frame): JQuery[HTMLFrameElement] = js.native
-  @JSName("parents")
-  def parents_frameset(selector: JQuery[frameset]): JQuery[HTMLFrameSetElement] = js.native
-  @JSName("parents")
-  def parents_frameset(selector: frameset): JQuery[HTMLFrameSetElement] = js.native
   @JSName("parents")
   def parents_g(selector: JQuery[g]): JQuery[SVGGElement] = js.native
   @JSName("parents")
@@ -10616,10 +10918,6 @@ trait JQuery[TElement]
   @JSName("parents")
   def parents_marker(selector: marker): JQuery[SVGMarkerElement] = js.native
   @JSName("parents")
-  def parents_marquee(selector: JQuery[marquee]): JQuery[HTMLMarqueeElement] = js.native
-  @JSName("parents")
-  def parents_marquee(selector: marquee): JQuery[HTMLMarqueeElement] = js.native
-  @JSName("parents")
   def parents_mask(selector: JQuery[mask]): JQuery[SVGMaskElement] = js.native
   @JSName("parents")
   def parents_mask(selector: mask): JQuery[SVGMaskElement] = js.native
@@ -10639,6 +10937,10 @@ trait JQuery[TElement]
   def parents_meter(selector: JQuery[meter]): JQuery[HTMLMeterElement] = js.native
   @JSName("parents")
   def parents_meter(selector: meter): JQuery[HTMLMeterElement] = js.native
+  @JSName("parents")
+  def parents_mpath(selector: JQuery[mpath]): JQuery[SVGMPathElement] = js.native
+  @JSName("parents")
+  def parents_mpath(selector: mpath): JQuery[SVGMPathElement] = js.native
   @JSName("parents")
   def parents_nav(selector: JQuery[nav]): JQuery[HTMLElement] = js.native
   @JSName("parents")
@@ -10671,10 +10973,6 @@ trait JQuery[TElement]
   def parents_p(selector: JQuery[p]): JQuery[HTMLParagraphElement] = js.native
   @JSName("parents")
   def parents_p(selector: p): JQuery[HTMLParagraphElement] = js.native
-  @JSName("parents")
-  def parents_param(selector: JQuery[param]): JQuery[HTMLParamElement] = js.native
-  @JSName("parents")
-  def parents_param(selector: param): JQuery[HTMLParamElement] = js.native
   @JSName("parents")
   def parents_path(selector: JQuery[path]): JQuery[SVGPathElement] = js.native
   @JSName("parents")
@@ -10748,6 +11046,10 @@ trait JQuery[TElement]
   @JSName("parents")
   def parents_select(selector: select): JQuery[HTMLSelectElement] = js.native
   @JSName("parents")
+  def parents_set(selector: JQuery[set]): JQuery[SVGSetElement] = js.native
+  @JSName("parents")
+  def parents_set(selector: set): JQuery[SVGSetElement] = js.native
+  @JSName("parents")
   def parents_slot(selector: JQuery[slot]): JQuery[HTMLSlotElement] = js.native
   @JSName("parents")
   def parents_slot(selector: slot): JQuery[HTMLSlotElement] = js.native
@@ -10808,9 +11110,9 @@ trait JQuery[TElement]
   @JSName("parents")
   def parents_tbody(selector: tbody): JQuery[HTMLTableSectionElement] = js.native
   @JSName("parents")
-  def parents_td(selector: JQuery[td]): JQuery[HTMLTableDataCellElement] = js.native
+  def parents_td(selector: JQuery[td]): JQuery[HTMLTableCellElement] = js.native
   @JSName("parents")
-  def parents_td(selector: td): JQuery[HTMLTableDataCellElement] = js.native
+  def parents_td(selector: td): JQuery[HTMLTableCellElement] = js.native
   @JSName("parents")
   def parents_template(selector: JQuery[template]): JQuery[HTMLTemplateElement] = js.native
   @JSName("parents")
@@ -10832,9 +11134,9 @@ trait JQuery[TElement]
   @JSName("parents")
   def parents_tfoot(selector: tfoot): JQuery[HTMLTableSectionElement] = js.native
   @JSName("parents")
-  def parents_th(selector: JQuery[th]): JQuery[HTMLTableHeaderCellElement] = js.native
+  def parents_th(selector: JQuery[th]): JQuery[HTMLTableCellElement] = js.native
   @JSName("parents")
-  def parents_th(selector: th): JQuery[HTMLTableHeaderCellElement] = js.native
+  def parents_th(selector: th): JQuery[HTMLTableCellElement] = js.native
   @JSName("parents")
   def parents_thead(selector: JQuery[thead]): JQuery[HTMLTableSectionElement] = js.native
   @JSName("parents")
@@ -11360,15 +11662,15 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def promise(): Promise[this.type, js.Any, js.Any] = js.native
-  def promise(`type`: String): Promise[this.type, js.Any, js.Any] = js.native
+  def promise(): Promise[this.type, Any, Any] = js.native
+  def promise(`type`: String): Promise[this.type, Any, Any] = js.native
   /**
     * Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished.
     * @param target Object onto which the promise methods have to be attached
     * @see \`{@link https://api.jquery.com/promise/ }\`
     * @since 1.6
     */
-  def promise[T /* <: js.Object */](target: T): T & (Promise[this.type, js.Any, js.Any]) = js.native
+  def promise[T /* <: js.Object */](target: T): T & (Promise[this.type, Any, Any]) = js.native
   /**
     * Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished.
     * @param type The type of queue that needs to be observed.
@@ -11376,7 +11678,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/promise/ }\`
     * @since 1.6
     */
-  def promise[T /* <: js.Object */](`type`: String, target: T): T & (Promise[this.type, js.Any, js.Any]) = js.native
+  def promise[T /* <: js.Object */](`type`: String, target: T): T & (Promise[this.type, Any, Any]) = js.native
   
   /**
     * Set one or more properties for the set of matched elements.
@@ -11418,7 +11720,7 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def prop(properties: PlainObject[js.Any]): this.type = js.native
+  def prop(properties: PlainObject[Any]): this.type = js.native
   /**
     * Get the value of a property for the first element in the set of matched elements.
     * @param propertyName The name of the property to get.
@@ -11461,13 +11763,13 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def prop(propertyName: String): js.Any = js.native
+  def prop(propertyName: String): Any = js.native
   def prop(propertyName: String, value_function: String): this.type = js.native
   def prop(propertyName: String, value_function: js.Object): this.type = js.native
   def prop(propertyName: String, value_function: js.Symbol): this.type = js.native
   def prop(
     propertyName: String,
-    value_function: js.ThisFunction2[/* this */ TElement, /* index */ Double, /* oldPropertyValue */ js.Any, js.Any]
+    value_function: js.ThisFunction2[/* this */ TElement, /* index */ Double, /* oldPropertyValue */ Any, Any]
   ): this.type = js.native
   def prop(propertyName: String, value_function: Boolean): this.type = js.native
   def prop(propertyName: String, value_function: Double): this.type = js.native
@@ -11507,7 +11809,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/pushStack/ }\`
     * @since 1.3
     */
-  def pushStack(elements: ArrayLike[Element], name: String, args: js.Array[js.Any]): this.type = js.native
+  def pushStack(elements: ArrayLike[Element], name: String, args: js.Array[Any]): this.type = js.native
   
   /**
     * Show the queue of functions to be executed on the matched elements.
@@ -14233,16 +14535,16 @@ trait JQuery[TElement]
     */
   def trigger(eventType_event: String): this.type = js.native
   def trigger(eventType_event: String, extraParameters: String): this.type = js.native
-  def trigger(eventType_event: String, extraParameters: js.Array[js.Any]): this.type = js.native
+  def trigger(eventType_event: String, extraParameters: js.Array[Any]): this.type = js.native
   def trigger(eventType_event: String, extraParameters: Boolean): this.type = js.native
   def trigger(eventType_event: String, extraParameters: Double): this.type = js.native
-  def trigger(eventType_event: String, extraParameters: PlainObject[js.Any]): this.type = js.native
+  def trigger(eventType_event: String, extraParameters: PlainObject[Any]): this.type = js.native
   def trigger(eventType_event: typings.jquery.JQuery.Event): this.type = js.native
   def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: String): this.type = js.native
-  def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: js.Array[js.Any]): this.type = js.native
+  def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: js.Array[Any]): this.type = js.native
   def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: Boolean): this.type = js.native
   def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: Double): this.type = js.native
-  def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: PlainObject[js.Any]): this.type = js.native
+  def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: PlainObject[Any]): this.type = js.native
   
   /**
     * Execute all handlers attached to an element for an event.
@@ -14286,18 +14588,18 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def triggerHandler(eventType_event: String): js.Any = js.native
-  def triggerHandler(eventType_event: String, extraParameters: String): js.Any = js.native
-  def triggerHandler(eventType_event: String, extraParameters: js.Array[js.Any]): js.Any = js.native
-  def triggerHandler(eventType_event: String, extraParameters: Boolean): js.Any = js.native
-  def triggerHandler(eventType_event: String, extraParameters: Double): js.Any = js.native
-  def triggerHandler(eventType_event: String, extraParameters: PlainObject[js.Any]): js.Any = js.native
-  def triggerHandler(eventType_event: typings.jquery.JQuery.Event): js.Any = js.native
-  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: String): js.Any = js.native
-  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: js.Array[js.Any]): js.Any = js.native
-  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: Boolean): js.Any = js.native
-  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: Double): js.Any = js.native
-  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: PlainObject[js.Any]): js.Any = js.native
+  def triggerHandler(eventType_event: String): Any = js.native
+  def triggerHandler(eventType_event: String, extraParameters: String): Any = js.native
+  def triggerHandler(eventType_event: String, extraParameters: js.Array[Any]): Any = js.native
+  def triggerHandler(eventType_event: String, extraParameters: Boolean): Any = js.native
+  def triggerHandler(eventType_event: String, extraParameters: Double): Any = js.native
+  def triggerHandler(eventType_event: String, extraParameters: PlainObject[Any]): Any = js.native
+  def triggerHandler(eventType_event: typings.jquery.JQuery.Event): Any = js.native
+  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: String): Any = js.native
+  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: js.Array[Any]): Any = js.native
+  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: Boolean): Any = js.native
+  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: Double): Any = js.native
+  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: PlainObject[Any]): Any = js.native
   
   /**
     * Remove a previously-attached event handler from the elements.
@@ -14321,7 +14623,7 @@ trait JQuery[TElement]
     */
   def unbind(): this.type = js.native
   def unbind(event: String): this.type = js.native
-  def unbind(event: TriggeredEvent[TElement, js.Any, js.Any, js.Any]): this.type = js.native
+  def unbind(event: TriggeredEvent[TElement, Any, Any, Any]): this.type = js.native
   /**
     * Remove a previously-attached event handler from the elements.
     * @param event A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
@@ -14389,7 +14691,7 @@ trait JQuery[TElement]
   $( "p" ).unbind( "click", foo ); // ... foo will no longer be called.
   ```
     */
-  def unbind[TType /* <: String */](event: TType, handler: TypeEventHandler[TElement, js.Any, TElement, TElement, TType]): this.type = js.native
+  def unbind[TType /* <: String */](event: TType, handler: TypeEventHandler[TElement, Any, TElement, TElement, TType]): this.type = js.native
   @JSName("unbind")
   def unbind_false[TType /* <: String */](event: TType, handler: `false`): this.type = js.native
   
@@ -14446,7 +14748,7 @@ trait JQuery[TElement]
     * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
     */
   def undelegate(selector: Selector, eventType_events: String): this.type = js.native
-  def undelegate(selector: Selector, eventType_events: TypeEventHandlers[TElement, js.Any, js.Any, js.Any]): this.type = js.native
+  def undelegate(selector: Selector, eventType_events: TypeEventHandlers[TElement, Any, Any, Any]): this.type = js.native
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
     * @param selector A selector which will be used to filter the event results.
@@ -14516,11 +14818,7 @@ trait JQuery[TElement]
   $( "body" ).undelegate( "p", "click", foo );
   ```
     */
-  def undelegate[TType /* <: String */](
-    selector: Selector,
-    eventType: TType,
-    handler: TypeEventHandler[TElement, js.Any, js.Any, js.Any, TType]
-  ): this.type = js.native
+  def undelegate[TType /* <: String */](selector: Selector, eventType: TType, handler: TypeEventHandler[TElement, Any, Any, Any, TType]): this.type = js.native
   @JSName("undelegate")
   def undelegate_false[TType /* <: String */](selector: Selector, eventType: TType, handler: `false`): this.type = js.native
   
@@ -15376,12 +15674,7 @@ object JQuery {
         * A pre-request callback function that can be used to modify the jqXHR (in jQuery 1.4.x, XMLHTTPRequest) object before it is sent. Use this to set custom headers, etc. The jqXHR and settings objects are passed as arguments. This is an Ajax Event. Returning false in the beforeSend function will cancel the request. As of jQuery 1.5, the beforeSend option will be called regardless of the type of request.
         */
       var beforeSend: js.UndefOr[
-            js.ThisFunction2[
-              /* this */ TContext, 
-              /* jqXHR */ jqXHR[js.Any], 
-              /* settings */ this.type, 
-              `false` | Unit
-            ]
+            js.ThisFunction2[/* this */ TContext, /* jqXHR */ jqXHR[Any], /* settings */ this.type, `false` | Unit]
           ] = js.undefined
       
       /**
@@ -15402,7 +15695,7 @@ object JQuery {
       /**
         * An object of string/regular-expression pairs that determine how jQuery will parse the response, given its content type.
         */
-      var contents: js.UndefOr[PlainObject[RegExp]] = js.undefined
+      var contents: js.UndefOr[PlainObject[js.RegExp]] = js.undefined
       
       /**
         * This object will be the context of all Ajax-related callbacks. By default, the context is an object that represents the Ajax settings used in the call ($.ajaxSettings merged with the settings passed to $.ajax).
@@ -15412,7 +15705,7 @@ object JQuery {
       /**
         * An object containing dataType-to-dataType converters. Each converter's value is a function that returns the transformed value of the response.
         */
-      var converters: js.UndefOr[PlainObject[(js.Function1[/* value */ js.Any, js.Any]) | `true`]] = js.undefined
+      var converters: js.UndefOr[PlainObject[(js.Function1[/* value */ Any, Any]) | `true`]] = js.undefined
       
       /**
         * If you wish to force a crossDomain request (such as JSONP) on the same domain, set the value of crossDomain to true. This allows, for example, server-side redirection to another domain.
@@ -15422,12 +15715,12 @@ object JQuery {
       /**
         * Data to be sent to the server. It is converted to a query string, if not already a string. It's appended to the url for GET-requests. See processData option to prevent this automatic processing. Object must be Key/Value pairs. If value is an Array, jQuery serializes multiple values with same key based on the value of the traditional setting (described below).
         */
-      var data: js.UndefOr[PlainObject[js.Any] | String] = js.undefined
+      var data: js.UndefOr[PlainObject[Any] | String] = js.undefined
       
       /**
         * A function to be used to handle the raw response data of XMLHttpRequest. This is a pre-filtering function to sanitize the response. You should return the sanitized data. The function accepts two arguments: The raw data returned from the server and the 'dataType' parameter.
         */
-      var dataFilter: js.UndefOr[js.Function2[/* data */ String, /* type */ String, js.Any]] = js.undefined
+      var dataFilter: js.UndefOr[js.Function2[/* data */ String, /* type */ String, Any]] = js.undefined
       
       /**
         * The type of data that you're expecting back from the server. If none is specified, jQuery will try to infer it based on the MIME type of the response (an XML MIME type will yield XML, in 1.4 JSON will yield a JavaScript object, in 1.4 script will execute the script, and anything else will be returned as a string). The available types (and the result passed as the first argument to your success callback) are:
@@ -15586,7 +15879,7 @@ object JQuery {
         inline def setBeforeSend(
           value: js.ThisFunction2[
                   /* this */ TContext, 
-                  /* jqXHR */ jqXHR[js.Any], 
+                  /* jqXHR */ jqXHR[Any], 
                   AjaxSettingsBase[TContext], 
                   `false` | Unit
                 ]
@@ -15602,13 +15895,13 @@ object JQuery {
         
         inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
         
-        inline def setCompleteVarargs(value: CompleteCallback[TContext]*): Self = StObject.set(x, "complete", js.Array(value :_*))
+        inline def setCompleteVarargs(value: CompleteCallback[TContext]*): Self = StObject.set(x, "complete", js.Array(value*))
         
         inline def setContentType(value: String | `false`): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
         inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
         
-        inline def setContents(value: PlainObject[RegExp]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+        inline def setContents(value: PlainObject[js.RegExp]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
         
         inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
         
@@ -15616,7 +15909,7 @@ object JQuery {
         
         inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
-        inline def setConverters(value: PlainObject[(js.Function1[/* value */ js.Any, js.Any]) | `true`]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
+        inline def setConverters(value: PlainObject[(js.Function1[/* value */ Any, Any]) | `true`]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
         
         inline def setConvertersUndefined: Self = StObject.set(x, "converters", js.undefined)
         
@@ -15624,9 +15917,9 @@ object JQuery {
         
         inline def setCrossDomainUndefined: Self = StObject.set(x, "crossDomain", js.undefined)
         
-        inline def setData(value: PlainObject[js.Any] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: PlainObject[Any] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        inline def setDataFilter(value: (/* data */ String, /* type */ String) => js.Any): Self = StObject.set(x, "dataFilter", js.Any.fromFunction2(value))
+        inline def setDataFilter(value: (/* data */ String, /* type */ String) => Any): Self = StObject.set(x, "dataFilter", js.Any.fromFunction2(value))
         
         inline def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
         
@@ -15644,7 +15937,7 @@ object JQuery {
         
         inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
         
-        inline def setErrorVarargs(value: ErrorCallback[TContext]*): Self = StObject.set(x, "error", js.Array(value :_*))
+        inline def setErrorVarargs(value: ErrorCallback[TContext]*): Self = StObject.set(x, "error", js.Array(value*))
         
         inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
         
@@ -15698,7 +15991,7 @@ object JQuery {
         
         inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
         
-        inline def setSuccessVarargs(value: SuccessCallback[TContext]*): Self = StObject.set(x, "success", js.Array(value :_*))
+        inline def setSuccessVarargs(value: SuccessCallback[TContext]*): Self = StObject.set(x, "success", js.Array(value*))
         
         inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
@@ -15726,11 +16019,11 @@ object JQuery {
       }
     }
     
-    type CompleteCallback[TContext] = js.ThisFunction2[/* this */ TContext, /* jqXHR */ jqXHR[js.Any], /* textStatus */ TextStatus, Unit]
+    type CompleteCallback[TContext] = js.ThisFunction2[/* this */ TContext, /* jqXHR */ jqXHR[Any], /* textStatus */ TextStatus, Unit]
     
     type ErrorCallback[TContext] = js.ThisFunction3[
         /* this */ TContext, 
-        /* jqXHR */ jqXHR[js.Any], 
+        /* jqXHR */ jqXHR[Any], 
         /* textStatus */ ErrorTextStatus, 
         /* errorThrown */ String, 
         Unit
@@ -18181,9 +18474,9 @@ object JQuery {
     
     type SuccessCallback[TContext] = js.ThisFunction3[
         /* this */ TContext, 
-        /* data */ js.Any, 
+        /* data */ Any, 
         /* textStatus */ SuccessTextStatus, 
-        /* jqXHR */ jqXHR[js.Any], 
+        /* jqXHR */ jqXHR[Any], 
         Unit
       ]
     
@@ -18236,9 +18529,7 @@ object JQuery {
       
       var msCaching: js.UndefOr[String] = js.undefined
       
-      var onreadystatechange: js.UndefOr[
-            (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, js.Any]) | Null
-          ] = js.undefined
+      var onreadystatechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null] = js.undefined
       
       var responseType: js.UndefOr[XMLHttpRequestResponseType] = js.undefined
       
@@ -18259,7 +18550,7 @@ object JQuery {
         
         inline def setMsCachingUndefined: Self = StObject.set(x, "msCaching", js.undefined)
         
-        inline def setOnreadystatechange(value: js.ThisFunction1[XHRFields, /* ev */ typings.std.Event, js.Any]): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
+        inline def setOnreadystatechange(value: js.ThisFunction1[XHRFields, /* ev */ typings.std.Event, Any]): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
         
         inline def setOnreadystatechangeNull: Self = StObject.set(x, "onreadystatechange", null)
         
@@ -18368,14 +18659,14 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
       * @since 1.8
       */
-    var originalProps: PlainObject[js.Any] = js.native
+    var originalProps: PlainObject[Any] = js.native
     
     /**
       * The final value of each property animating
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
       * @since 1.8
       */
-    var props: PlainObject[js.Any] = js.native
+    var props: PlainObject[Any] = js.native
     
     /**
       * The numeric value of `new Date()` when the animation began
@@ -18419,7 +18710,7 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
       * @since 1.8
       */
-    def apply[TElement](element: TElement, props: PlainObject[js.Any], opts: EffectsOptions[TElement]): Animation[TElement] = js.native
+    def apply[TElement](element: TElement, props: PlainObject[Any], opts: EffectsOptions[TElement]): Animation[TElement] = js.native
     
     /**
       * During the initial setup, `jQuery.Animation` will call any callbacks that have been registered through `jQuery.Animation.prefilter( function( element, props, opts ) )`.
@@ -18434,7 +18725,7 @@ object JQuery {
       callback: js.ThisFunction3[
           /* this */ Animation[TElement], 
           /* element */ TElement, 
-          /* props */ PlainObject[js.Any], 
+          /* props */ PlainObject[Any], 
           /* opts */ EffectsOptions[TElement], 
           Animation[TElement] | Falsy | Unit
         ]
@@ -18443,7 +18734,7 @@ object JQuery {
       callback: js.ThisFunction3[
           /* this */ Animation[TElement], 
           /* element */ TElement, 
-          /* props */ PlainObject[js.Any], 
+          /* props */ PlainObject[Any], 
           /* opts */ EffectsOptions[TElement], 
           Animation[TElement] | Falsy | Unit
         ],
@@ -18462,7 +18753,7 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweeners }\`
       * @since 1.8
       */
-    def tweener(props: String, callback: Tweener[js.Any]): Unit = js.native
+    def tweener(props: String, callback: Tweener[Any]): Unit = js.native
   }
   
   trait BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
@@ -18532,7 +18823,7 @@ object JQuery {
   // region CSS hooks
   // #region CSS hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type CSSHook[TElement] = Partial[_CSSHook[TElement]] & (Pick[_CSSHook[TElement], get | set])
+  type CSSHook[TElement] = ((Pick[_CSSHook[TElement], get]) & Partial[_CSSHook[TElement]]) | ((Pick[_CSSHook[TElement], set]) & Partial[_CSSHook[TElement]])
   
   type CSSHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   StringDictionary[CSSHook[HTMLElement]]
@@ -18711,7 +19002,7 @@ object JQuery {
     // "bar: hello again"
     ```
       */
-    def fire(args: js.Any*): this.type = js.native
+    def fire(args: Any*): this.type = js.native
     
     /**
       * Call all callbacks in a list with the given context and arguments.
@@ -18739,7 +19030,7 @@ object JQuery {
     ```
       */
     def fireWith(context: js.Object): this.type = js.native
-    def fireWith(context: js.Object, args: ArrayLike[js.Any]): this.type = js.native
+    def fireWith(context: js.Object, args: ArrayLike[Any]): this.type = js.native
     
     /**
       * Determine if the callbacks have already been called at least once.
@@ -20385,7 +20676,7 @@ object JQuery {
     ): Deferred[TR, TJ, TN] = js.native
     
     // https://jquery.com/upgrade-guide/3.0/#callback-exit
-    var exceptionHook: js.Any = js.native
+    var exceptionHook: Any = js.native
   }
   
   trait DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
@@ -20952,7 +21243,7 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#plugging-in-a-different-timer-loop }\`
       * @since 1.8
       */
-    def timer(tickFunction: TickFunction[js.Any]): Unit
+    def timer(tickFunction: TickFunction[Any]): Unit
   }
   object Effects {
     
@@ -20962,7 +21253,7 @@ object JQuery {
       step: PlainObject[AnimationHook[Node]],
       stop: () => Unit,
       tick: () => Unit,
-      timer: TickFunction[js.Any] => Unit
+      timer: TickFunction[Any] => Unit
     ): Effects = {
       val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], off = off.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop), tick = js.Any.fromFunction0(tick), timer = js.Any.fromFunction1(timer))
       __obj.asInstanceOf[Effects]
@@ -20980,7 +21271,7 @@ object JQuery {
       
       inline def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
       
-      inline def setTimer(value: TickFunction[js.Any] => Unit): Self = StObject.set(x, "timer", js.Any.fromFunction1(value))
+      inline def setTimer(value: TickFunction[Any] => Unit): Self = StObject.set(x, "timer", js.Any.fromFunction1(value))
     }
   }
   
@@ -20989,7 +21280,7 @@ object JQuery {
     */
   trait EffectsOptions[TElement]
     extends StObject
-       with PlainObject[js.Any] {
+       with PlainObject[Any] {
     
     /**
       * A function to be called when the animation on an element completes or stops without completing (its Promise object is either resolved or rejected).
@@ -22237,13 +22528,13 @@ object JQuery {
     }
   }
   
-  type EventHandler[TCurrentTarget, TData] = EventHandlerBase[TCurrentTarget, TriggeredEvent[TCurrentTarget, TData, js.Any, js.Any]]
+  type EventHandler[TCurrentTarget, TData] = EventHandlerBase[TCurrentTarget, TriggeredEvent[TCurrentTarget, TData, Any, Any]]
   
   // Extra parameters can be passed from trigger()
   @js.native
   trait EventHandlerBase[TContext, T] extends StObject {
     
-    def apply(t: T, args: js.Any*): js.Any = js.native
+    def apply(t: T, args: Any*): Any = js.native
   }
   
   // #endregion
@@ -22916,7 +23207,7 @@ object JQuery {
     /**
       * Event handler function passed to jQuery during event binding. If `false` was passed during event binding, the handler refers to a single shared function that simply returns `false`.
       */
-    def handler(t: TriggeredEvent[TTarget, TData, js.Any, js.Any], args: js.Any*): js.Any
+    def handler(t: TriggeredEvent[TTarget, TData, Any, Any], args: Any*): Any
     
     /**
       * Namespace(s), if any, provided when the event was attached, such as `"myPlugin"`. When multiple namespaces are given, they are separated by periods and sorted in ascending alphabetical order. If no namespaces are provided, this property is an empty string.
@@ -22942,7 +23233,7 @@ object JQuery {
     
     inline def apply[TTarget, TData](
       data: TData,
-      handler: (TriggeredEvent[TTarget, TData, js.Any, js.Any], /* repeated */ js.Any) => js.Any,
+      handler: (TriggeredEvent[TTarget, TData, Any, Any], /* repeated */ Any) => Any,
       namespace: String,
       origType: String,
       `type`: String
@@ -22956,7 +23247,7 @@ object JQuery {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setHandler(value: (TriggeredEvent[TTarget, TData, js.Any, js.Any], /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+      inline def setHandler(value: (TriggeredEvent[TTarget, TData, Any, Any], /* repeated */ Any) => Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -25934,11 +26225,11 @@ object JQuery {
     - typings.jquery.anon.Handle[TTarget, TData]
     - typings.jquery.anon.PreDispatch[TTarget]
     - typings.jquery.anon.PostDispatch[TTarget]
-    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+    - org.scalablytyped.runtime.StringDictionary[scala.Any]
   */
-  type SpecialEventHook[TTarget, TData] = (_SpecialEventHook[TTarget, TData]) | StringDictionary[scala.Nothing]
+  type SpecialEventHook[TTarget, TData] = (_SpecialEventHook[TTarget, TData]) | StringDictionary[Any]
   
-  type SpecialEventHooks = StringDictionary[SpecialEventHook[EventTarget, js.Any]]
+  type SpecialEventHooks = StringDictionary[SpecialEventHook[EventTarget, Any]]
   
   // #endregion
   // region Speed
@@ -26027,7 +26318,7 @@ object JQuery {
   @js.native
   trait TickFunction[TElement] extends StObject {
     
-    def apply(): js.Any = js.native
+    def apply(): Any = js.native
     
     var anim: Animation[TElement] = js.native
     
@@ -26674,11 +26965,11 @@ object JQuery {
     
     def abort(): Unit
     
-    def send(headers: PlainObject[js.Any], completeCallback: SuccessCallback): Unit
+    def send(headers: PlainObject[Any], completeCallback: SuccessCallback): Unit
   }
   object Transport {
     
-    inline def apply(abort: () => Unit, send: (PlainObject[js.Any], SuccessCallback) => Unit): Transport = {
+    inline def apply(abort: () => Unit, send: (PlainObject[Any], SuccessCallback) => Unit): Transport = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), send = js.Any.fromFunction2(send))
       __obj.asInstanceOf[Transport]
     }
@@ -26686,7 +26977,7 @@ object JQuery {
     type SuccessCallback = js.Function4[
         /* status */ Double, 
         /* statusText */ TextStatus, 
-        /* responses */ js.UndefOr[PlainObject[js.Any]], 
+        /* responses */ js.UndefOr[PlainObject[Any]], 
         /* headers */ js.UndefOr[String], 
         Unit
       ]
@@ -26695,7 +26986,7 @@ object JQuery {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      inline def setSend(value: (PlainObject[js.Any], SuccessCallback) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+      inline def setSend(value: (PlainObject[Any], SuccessCallback) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     }
   }
   
@@ -26843,7 +27134,7 @@ object JQuery {
     </html>
     ```
       */
-    var result: js.UndefOr[js.Any] = js.undefined
+    var result: js.UndefOr[Any] = js.undefined
     
     /**
       * The DOM element that initiated the event.
@@ -26962,7 +27253,7 @@ object JQuery {
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
@@ -26982,7 +27273,7 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    def cur(): js.Any
+    def cur(): Any
     
     /**
       * The easing used
@@ -27054,7 +27345,7 @@ object JQuery {
   object Tween {
     
     inline def apply[TElement](
-      cur: () => js.Any,
+      cur: () => Any,
       easing: String,
       elem: TElement,
       end: Double,
@@ -27071,7 +27362,7 @@ object JQuery {
     
     extension [Self <: Tween[?], TElement](x: Self & Tween[TElement]) {
       
-      inline def setCur(value: () => js.Any): Self = StObject.set(x, "cur", js.Any.fromFunction0(value))
+      inline def setCur(value: () => Any): Self = StObject.set(x, "cur", js.Any.fromFunction0(value))
       
       inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
@@ -27487,22 +27778,22 @@ object JQuery {
   
   trait _CSSHook[TElement] extends StObject {
     
-    def get(elem: TElement, computed: js.Any, extra: js.Any): js.Any
+    def get(elem: TElement, computed: Any, extra: Any): Any
     
-    def set(elem: TElement, value: js.Any): Unit
+    def set(elem: TElement, value: Any): Unit
   }
   object _CSSHook {
     
-    inline def apply[TElement](get: (TElement, js.Any, js.Any) => js.Any, set: (TElement, js.Any) => Unit): _CSSHook[TElement] = {
+    inline def apply[TElement](get: (TElement, Any, Any) => Any, set: (TElement, Any) => Unit): _CSSHook[TElement] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[_CSSHook[TElement]]
     }
     
     extension [Self <: _CSSHook[?], TElement](x: Self & _CSSHook[TElement]) {
       
-      inline def setGet(value: (TElement, js.Any, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+      inline def setGet(value: (TElement, Any, Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
-      inline def setSet(value: (TElement, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (TElement, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -27527,7 +27818,7 @@ object JQuery {
   trait _PropHook[TElement] extends StObject
   object _PropHook {
     
-    inline def Get[TElement](get: Tween[TElement] => js.Any): typings.jquery.anon.Get[TElement] = {
+    inline def Get[TElement](get: Tween[TElement] => Any): typings.jquery.anon.Get[TElement] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[typings.jquery.anon.Get[TElement]]
     }
@@ -27551,7 +27842,7 @@ object JQuery {
       __obj.asInstanceOf[typings.jquery.anon.BindType]
     }
     
-    inline def Default[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, js.Any, js.Any], TData) => Unit | `false`): typings.jquery.anon.Default[TTarget, TData] = {
+    inline def Default[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, Any, Any], TData) => Unit | `false`): typings.jquery.anon.Default[TTarget, TData] = {
       val __obj = js.Dynamic.literal(_default = js.Any.fromFunction2(_default))
       __obj.asInstanceOf[typings.jquery.anon.Default[TTarget, TData]]
     }
@@ -27562,7 +27853,7 @@ object JQuery {
     }
     
     inline def Handle[TTarget, TData](
-      handle: ((TriggeredEvent[TTarget, TData, js.Any, js.Any]) & (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
+      handle: ((TriggeredEvent[TTarget, TData, Any, Any]) & (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
     ): typings.jquery.anon.Handle[TTarget, TData] = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
       __obj.asInstanceOf[typings.jquery.anon.Handle[TTarget, TData]]
@@ -27992,12 +28283,12 @@ object JQuery {
   trait _ValHook[TElement] extends StObject
   object _ValHook {
     
-    inline def `0`[TElement](get: TElement => js.Any): typings.jquery.anon.`0`[TElement] = {
+    inline def `0`[TElement](get: TElement => Any): typings.jquery.anon.`0`[TElement] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[typings.jquery.anon.`0`[TElement]]
     }
     
-    inline def `1`[TElement](set: (TElement, js.Any) => js.Any): typings.jquery.anon.`1`[TElement] = {
+    inline def `1`[TElement](set: (TElement, Any) => Any): typings.jquery.anon.`1`[TElement] = {
       val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[typings.jquery.anon.`1`[TElement]]
     }
@@ -28702,7 +28993,7 @@ object JQuery {
     
     var readyState: Double = js.native
     
-    var responseJSON: js.UndefOr[js.Any] = js.native
+    var responseJSON: js.UndefOr[Any] = js.native
     
     var responseText: String = js.native
     
@@ -28721,7 +29012,7 @@ object JQuery {
     
     var status: Double = js.native
     
-    def statusCode(map: StatusCodeCallbacks[js.Any]): Unit = js.native
+    def statusCode(map: StatusCodeCallbacks[Any]): Unit = js.native
     
     var statusText: String = js.native
     

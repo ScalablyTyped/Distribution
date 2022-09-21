@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "DayOfWeek")
 @js.native
-/* private */ class DayOfWeek () extends Temporal {
+/* private */ open class DayOfWeek () extends Temporal {
   
   def adjustInto(temporal: TemporalAdjuster): this.type = js.native
   
   def compareTo(other: DayOfWeek): Double = js.native
-  
-  def equals(other: js.Any): Boolean = js.native
   
   def getDisplayName(style: TextStyle, locale: Locale): String = js.native
   

@@ -33,6 +33,6 @@ object ListComplianceStatusResponse {
     
     inline def setPolicyComplianceStatusListUndefined: Self = StObject.set(x, "PolicyComplianceStatusList", js.undefined)
     
-    inline def setPolicyComplianceStatusListVarargs(value: PolicyComplianceStatus*): Self = StObject.set(x, "PolicyComplianceStatusList", js.Array(value :_*))
+    inline def setPolicyComplianceStatusListVarargs(value: PolicyComplianceStatus*): Self = StObject.set(x, "PolicyComplianceStatusList", js.Array(value*))
   }
 }

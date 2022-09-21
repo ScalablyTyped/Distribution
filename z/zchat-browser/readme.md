@@ -1,7 +1,7 @@
 
 # Scala.js typings for zchat-browser
 
-Typings are for version 1.81
+Typings are for version 1.112
 
 
 

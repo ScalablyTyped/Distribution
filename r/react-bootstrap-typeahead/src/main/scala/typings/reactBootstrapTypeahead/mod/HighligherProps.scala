@@ -7,14 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HighligherProps extends StObject {
   
+  /* Highlighter expects a string as the only child. */
   var children: ReactNode
   
-  var search: js.UndefOr[String] = js.undefined
+  /* Classname applied to the highlighted text. */
+  var highlightClassName: js.UndefOr[String] = js.undefined
+  
+  /* he substring to look for. This value should correspond to the input text of the typeahead and can be obtained via the
+    onInputChange prop or from the text property of props being passed down via renderMenu or renderMenuItemChildren. */
+  var search: String
 }
 object HighligherProps {
   
-  inline def apply(): HighligherProps = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(search: String): HighligherProps = {
+    val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighligherProps]
   }
   
@@ -24,8 +30,10 @@ object HighligherProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setHighlightClassName(value: String): Self = StObject.set(x, "highlightClassName", value.asInstanceOf[js.Any])
     
-    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setHighlightClassNameUndefined: Self = StObject.set(x, "highlightClassName", js.undefined)
+    
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
   }
 }

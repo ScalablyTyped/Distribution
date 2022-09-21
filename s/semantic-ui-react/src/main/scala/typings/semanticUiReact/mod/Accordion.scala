@@ -15,10 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Accordion")
 @js.native
-class Accordion protected ()
-  extends Component[AccordionProps, ComponentState, js.Any] {
+open class Accordion protected () extends Component[AccordionProps, ComponentState, Any] {
   def this(props: AccordionProps) = this()
-  def this(props: AccordionProps, context: js.Any) = this()
+  def this(props: AccordionProps, context: Any) = this()
 }
 object Accordion extends Shortcut {
   
@@ -28,24 +27,22 @@ object Accordion extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Accordion.Accordion")
   @js.native
-  class Accordion protected ()
-    extends Component[AccordionAccordionProps, ComponentState, js.Any] {
+  open class Accordion protected () extends Component[AccordionAccordionProps, ComponentState, Any] {
     def this(props: AccordionAccordionProps) = this()
-    def this(props: AccordionAccordionProps, context: js.Any) = this()
+    def this(props: AccordionAccordionProps, context: Any) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Accordion.Panel")
   @js.native
-  class Panel () extends default
+  open class Panel () extends default
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Accordion.Title")
   @js.native
-  class Title protected ()
-    extends Component[AccordionTitleProps, ComponentState, js.Any] {
+  open class Title protected () extends Component[AccordionTitleProps, ComponentState, Any] {
     def this(props: AccordionTitleProps) = this()
-    def this(props: AccordionTitleProps, context: js.Any) = this()
+    def this(props: AccordionTitleProps, context: Any) = this()
   }
   
   type _To = AccordionComponent

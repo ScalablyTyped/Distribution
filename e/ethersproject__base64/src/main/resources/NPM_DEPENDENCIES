@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/base64" : "5.0.5"
+      "@ethersproject/base64" : "5.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/base64" : "5.0.5"
+      "@ethersproject/base64" : "5.7.0"
     }
   ],
   "compile-devDependencies" : [

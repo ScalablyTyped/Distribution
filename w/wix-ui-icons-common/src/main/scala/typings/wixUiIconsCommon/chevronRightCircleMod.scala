@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object chevronRightCircleMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/ChevronRightCircle", JSImport.Default)
   @js.native
-  val default: SFC[ChevronRightCircleProps] = js.native
+  val default: FC[ChevronRightCircleProps] = js.native
   
   trait ChevronRightCircleProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object ChevronRightCircleProps {
     
@@ -29,14 +29,14 @@ object chevronRightCircleMod extends Shortcut {
     
     extension [Self <: ChevronRightCircleProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[ChevronRightCircleProps]
+  type _To = FC[ChevronRightCircleProps]
   
   /* This means you don't have to write `default`, but can instead just say `chevronRightCircleMod.foo` */
-  override def _to: SFC[ChevronRightCircleProps] = default
+  override def _to: FC[ChevronRightCircleProps] = default
 }

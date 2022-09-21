@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object highlightMod {
   
-  @JSImport("@storybook/addon-a11y/dist/highlight", JSImport.Namespace)
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/highlight", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

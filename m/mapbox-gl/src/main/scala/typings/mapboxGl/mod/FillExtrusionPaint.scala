@@ -99,7 +99,7 @@ object FillExtrusionPaint {
     
     inline def `setFill-extrusion-translateUndefined`: Self = StObject.set(x, "fill-extrusion-translate", js.undefined)
     
-    inline def `setFill-extrusion-translateVarargs`(value: Double*): Self = StObject.set(x, "fill-extrusion-translate", js.Array(value :_*))
+    inline def `setFill-extrusion-translateVarargs`(value: Double*): Self = StObject.set(x, "fill-extrusion-translate", js.Array(value*))
     
     inline def `setFill-extrusion-vertical-gradient`(value: Boolean): Self = StObject.set(x, "fill-extrusion-vertical-gradient", value.asInstanceOf[js.Any])
     

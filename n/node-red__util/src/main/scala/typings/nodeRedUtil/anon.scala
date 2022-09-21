@@ -27,6 +27,54 @@ object anon {
     }
   }
   
+  trait Id extends StObject {
+    
+    /** node id */
+    var id: String
+    
+    var node: typings.nodeRedRegistry.mod.Node[js.Object]
+    
+    /** index of port being sent on */
+    var port: Double
+  }
+  object Id {
+    
+    inline def apply(id: String, node: typings.nodeRedRegistry.mod.Node[js.Object], port: Double): Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Id]
+    }
+    
+    extension [Self <: Id](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setNode(value: typings.nodeRedRegistry.mod.Node[js.Object]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait IdNode extends StObject {
+    
+    var id: String
+    
+    var node: typings.nodeRedRegistry.mod.Node[js.Object]
+  }
+  object IdNode {
+    
+    inline def apply(id: String, node: typings.nodeRedRegistry.mod.Node[js.Object]): IdNode = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IdNode]
+    }
+    
+    extension [Self <: IdNode](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setNode(value: typings.nodeRedRegistry.mod.Node[js.Object]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Key extends StObject {
     
     var key: String
@@ -71,18 +119,40 @@ object anon {
   
   trait Msg extends StObject {
     
-    var msg: js.Any
+    var msg: Any
   }
   object Msg {
     
-    inline def apply(msg: js.Any): Msg = {
+    inline def apply(msg: Any): Msg = {
       val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Msg]
     }
     
     extension [Self <: Msg](x: Self) {
       
-      inline def setMsg(value: js.Any): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: Any): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Node extends StObject {
+    
+    /** node id */
+    var id: String
+    
+    var node: Unit
+  }
+  object Node {
+    
+    inline def apply(id: String, node: Unit): Node = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Node]
+    }
+    
+    extension [Self <: Node](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setNode(value: Unit): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
 }

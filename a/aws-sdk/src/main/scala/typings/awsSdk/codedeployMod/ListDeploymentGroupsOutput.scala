@@ -38,7 +38,7 @@ object ListDeploymentGroupsOutput {
     
     inline def setDeploymentGroupsUndefined: Self = StObject.set(x, "deploymentGroups", js.undefined)
     
-    inline def setDeploymentGroupsVarargs(value: DeploymentGroupName*): Self = StObject.set(x, "deploymentGroups", js.Array(value :_*))
+    inline def setDeploymentGroupsVarargs(value: DeploymentGroupName*): Self = StObject.set(x, "deploymentGroups", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

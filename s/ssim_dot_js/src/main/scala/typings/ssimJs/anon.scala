@@ -8,11 +8,6 @@ import typings.ssimJs.ssimJsStrings.original
 import typings.ssimJs.ssimJsStrings.weber
 import typings.ssimJs.typesMod.ImageMatrix
 import typings.ssimJs.typesMod.Matrix
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +16,7 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.Array[js.Any]
+    var data: js.Array[Any]
     
     var height: Double
     
@@ -29,16 +24,16 @@ object anon {
   }
   object Data {
     
-    inline def apply(data: js.Array[js.Any], height: Double, width: Double): Data = {
+    inline def apply(data: js.Array[Any], height: Double, width: Double): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -48,7 +43,7 @@ object anon {
   
   trait DataHeight extends StObject {
     
-    var data: Int32Array
+    var data: js.typedarray.Int32Array
     
     var height: Double
     
@@ -56,14 +51,14 @@ object anon {
   }
   object DataHeight {
     
-    inline def apply(data: Int32Array, height: Double, width: Double): DataHeight = {
+    inline def apply(data: js.typedarray.Int32Array, height: Double, width: Double): DataHeight = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataHeight]
     }
     
     extension [Self <: DataHeight](x: Self) {
       
-      inline def setData(value: Int32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Int32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -75,7 +70,7 @@ object anon {
     extends StObject
        with ImageMatrix {
     
-    var data: Uint8Array | Int8Array | Uint32Array | Int32Array | Uint16Array
+    var data: js.typedarray.Uint8Array | js.typedarray.Int8Array | js.typedarray.Uint32Array | js.typedarray.Int32Array | js.typedarray.Uint16Array
     
     var height: Double
     
@@ -84,7 +79,7 @@ object anon {
   object Height {
     
     inline def apply(
-      data: Uint8Array | Int8Array | Uint32Array | Int32Array | Uint16Array,
+      data: js.typedarray.Uint8Array | js.typedarray.Int8Array | js.typedarray.Uint32Array | js.typedarray.Int32Array | js.typedarray.Uint16Array,
       height: Double,
       width: Double
     ): Height = {
@@ -94,7 +89,9 @@ object anon {
     
     extension [Self <: Height](x: Self) {
       
-      inline def setData(value: Uint8Array | Int8Array | Uint32Array | Int32Array | Uint16Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(
+        value: js.typedarray.Uint8Array | js.typedarray.Int8Array | js.typedarray.Uint32Array | js.typedarray.Int32Array | js.typedarray.Uint16Array
+      ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -191,7 +188,7 @@ object anon {
   
   trait Width extends StObject {
     
-    var data: Int32Array
+    var data: js.typedarray.Int32Array
     
     var height: Double
     
@@ -199,14 +196,14 @@ object anon {
   }
   object Width {
     
-    inline def apply(data: Int32Array, height: Double, width: Double): Width = {
+    inline def apply(data: js.typedarray.Int32Array, height: Double, width: Double): Width = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Width]
     }
     
     extension [Self <: Width](x: Self) {
       
-      inline def setData(value: Int32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Int32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

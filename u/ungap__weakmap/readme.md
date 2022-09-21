@@ -10,15 +10,12 @@ An essential WeakMap polyfill for legacy browsers.
 | ------------------ | :-------------: |
 | Full name          | @ungap/weakmap |
 | Keywords           | WeakMap, polyfill, legacy, ungap |
-| # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 83782 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10110.0 |
+| # stars            | 12.0 |
 
 ## Links
-- [Homepage](https://github.com/ungap/weakmap#readme)
-- [Bugs](https://github.com/ungap/weakmap/issues)
-- [Repository](https://github.com/ungap/weakmap)
 - [Npm](https://www.npmjs.com/package/%40ungap%2Fweakmap)
     
 

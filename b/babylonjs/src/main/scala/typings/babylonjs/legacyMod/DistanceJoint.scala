@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "DistanceJoint")
 @js.native
-class DistanceJoint protected ()
+open class DistanceJoint protected ()
   extends typings.babylonjs.indexMod.DistanceJoint {
   /**
     *

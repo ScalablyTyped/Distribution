@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("@hapi/ammo", "Clip")
   @js.native
-  class Clip protected () extends Transform {
+  open class Clip protected () extends Transform {
     /**
       * Constructs a new transform steam.
       * 

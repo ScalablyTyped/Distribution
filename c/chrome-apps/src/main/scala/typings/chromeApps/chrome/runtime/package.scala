@@ -1,5 +1,7 @@
 package typings.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.NumberDictionary
+import typings.chromeApps.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chromeApps.chrome.runtime.AutomationDesktop
   - typings.chromeApps.chrome.runtime.AutomationNonInteractive
 */
-type AutomationOptions = typings.chromeApps.chrome.runtime._AutomationOptions | scala.Boolean
+type AutomationOptions = _AutomationOptions | Boolean
 
-type ExtensionConnectEvent = typings.chromeApps.chrome.events.Event[js.Function1[/* port */ typings.chromeApps.chrome.runtime.Port, scala.Unit]]
+type ExtensionConnectEvent = Event[js.Function1[/* port */ Port, Unit]]
 
-type ExtensionMessageEvent = typings.chromeApps.chrome.events.Event[
+type ExtensionMessageEvent = Event[
 js.Function3[
-  /* message */ js.Any, 
-  /* sender */ typings.chromeApps.chrome.runtime.MessageSender, 
-  /* sendResponse */ js.Function1[/* response */ js.Any, scala.Unit], 
-  scala.Unit
+  /* message */ Any, 
+  /* sender */ MessageSender, 
+  /* sendResponse */ js.Function1[/* response */ Any, Unit], 
+  Unit
 ]]
 
 type ManifestIcons = /**
@@ -30,6 +32,6 @@ type ManifestIcons = /**
   *   '128': 'icon128.png'
   * }
   */
-org.scalablytyped.runtime.NumberDictionary[java.lang.String]
+NumberDictionary[String]
 
-type RuntimeEvent = typings.chromeApps.chrome.events.Event[js.Function0[scala.Unit]]
+type RuntimeEvent = Event[js.Function0[Unit]]

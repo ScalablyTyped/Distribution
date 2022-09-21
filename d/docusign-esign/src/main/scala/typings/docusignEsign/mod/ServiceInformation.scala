@@ -59,12 +59,12 @@ object ServiceInformation {
     
     inline def setLinkedSitesUndefined: Self = StObject.set(x, "linkedSites", js.undefined)
     
-    inline def setLinkedSitesVarargs(value: String*): Self = StObject.set(x, "linkedSites", js.Array(value :_*))
+    inline def setLinkedSitesVarargs(value: String*): Self = StObject.set(x, "linkedSites", js.Array(value*))
     
     inline def setServiceVersions(value: js.Array[ServiceVersion]): Self = StObject.set(x, "serviceVersions", value.asInstanceOf[js.Any])
     
     inline def setServiceVersionsUndefined: Self = StObject.set(x, "serviceVersions", js.undefined)
     
-    inline def setServiceVersionsVarargs(value: ServiceVersion*): Self = StObject.set(x, "serviceVersions", js.Array(value :_*))
+    inline def setServiceVersionsVarargs(value: ServiceVersion*): Self = StObject.set(x, "serviceVersions", js.Array(value*))
   }
 }

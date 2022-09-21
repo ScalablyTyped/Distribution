@@ -19,5 +19,5 @@ trait Forms extends StObject {
   def Item(Index: String): Form = js.native
   def Item(Index: Double): Form = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

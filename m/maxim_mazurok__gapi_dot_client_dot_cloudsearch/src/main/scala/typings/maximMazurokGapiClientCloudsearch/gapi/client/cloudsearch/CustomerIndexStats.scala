@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomerIndexStats extends StObject {
   
-  /** Date for which statistics were calculated. */
+  /** The date for which statistics were calculated. */
   var date: js.UndefOr[Date] = js.undefined
   
   /** Number of items aggregrated by status code. */
@@ -29,6 +29,6 @@ object CustomerIndexStats {
     
     inline def setItemCountByStatusUndefined: Self = StObject.set(x, "itemCountByStatus", js.undefined)
     
-    inline def setItemCountByStatusVarargs(value: ItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value :_*))
+    inline def setItemCountByStatusVarargs(value: ItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value*))
   }
 }

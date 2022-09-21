@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@expo/config-types" : "46.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@expo/config-types" : "46.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

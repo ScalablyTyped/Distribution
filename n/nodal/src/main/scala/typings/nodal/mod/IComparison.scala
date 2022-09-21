@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IComparison
   extends StObject
-     with /* item */ StringDictionary[js.Any] {
+     with /* item */ StringDictionary[Any] {
   
   var __count: js.UndefOr[Double] = js.undefined
   

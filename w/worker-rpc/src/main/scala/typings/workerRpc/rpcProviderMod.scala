@@ -11,7 +11,7 @@ object rpcProviderMod {
   
   @JSImport("worker-rpc/lib/RpcProvider", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with RpcProvider {
     def this(_dispatch: Dispatcher) = this()
@@ -39,38 +39,38 @@ object rpcProviderMod {
     extends StObject
        with RpcProviderInterface {
     
-    /* private */ var _clearTransaction: js.Any = js.native
+    /* private */ var _clearTransaction: Any = js.native
     
-    /* private */ var _dispatch: js.Any = js.native
+    /* private */ var _dispatch: Any = js.native
     
-    /* private */ var _handeRpc: js.Any = js.native
+    /* private */ var _handeRpc: Any = js.native
     
-    /* private */ var _handleInternal: js.Any = js.native
+    /* private */ var _handleInternal: Any = js.native
     
-    /* private */ var _handleSignal: js.Any = js.native
+    /* private */ var _handleSignal: Any = js.native
     
-    /* private */ var _nextTransactionId: js.Any = js.native
+    /* private */ var _nextTransactionId: Any = js.native
     
-    /* private */ var _pendingTransactions: js.Any = js.native
+    /* private */ var _pendingTransactions: Any = js.native
     
-    /* private */ var _raiseError: js.Any = js.native
+    /* private */ var _raiseError: Any = js.native
     
-    /* private */ var _rpcHandlers: js.Any = js.native
+    /* private */ var _rpcHandlers: Any = js.native
     
-    /* private */ var _rpcTimeout: js.Any = js.native
+    /* private */ var _rpcTimeout: Any = js.native
     
-    /* private */ var _signalHandlers: js.Any = js.native
+    /* private */ var _signalHandlers: Any = js.native
     
-    /* private */ var _transactionTimeout: js.Any = js.native
+    /* private */ var _transactionTimeout: Any = js.native
     
     @JSName("error")
     var error_RpcProvider: Event = js.native
     
-    def rpc[T, U](id: String, payload: T, transfer: js.Any): js.Promise[U] = js.native
-    def rpc[T, U](id: String, payload: Unit, transfer: js.Any): js.Promise[U] = js.native
+    def rpc[T, U](id: String, payload: T, transfer: Any): js.Promise[U] = js.native
+    def rpc[T, U](id: String, payload: Unit, transfer: Any): js.Promise[U] = js.native
     
-    def signal[T](id: String, payload: T, transfer: js.Any): this.type = js.native
-    def signal[T](id: String, payload: Unit, transfer: js.Any): this.type = js.native
+    def signal[T](id: String, payload: T, transfer: Any): this.type = js.native
+    def signal[T](id: String, payload: Unit, transfer: Any): this.type = js.native
   }
   object RpcProvider {
     
@@ -96,13 +96,13 @@ object rpcProviderMod {
            with MessageType
     }
     
-    type Dispatcher = js.Function2[/* message */ Message, /* transfer */ js.UndefOr[js.Array[js.Any]], Unit]
+    type Dispatcher = js.Function2[/* message */ Message, /* transfer */ js.UndefOr[js.Array[Any]], Unit]
     
     trait Message extends StObject {
       
       var id: String
       
-      var payload: js.UndefOr[js.Any] = js.undefined
+      var payload: js.UndefOr[Any] = js.undefined
       
       var transactionId: js.UndefOr[Double] = js.undefined
       
@@ -120,7 +120,7 @@ object rpcProviderMod {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+        inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
         
         inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
         

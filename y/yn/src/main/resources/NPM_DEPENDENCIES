@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "yn" : "4.0.0"
+      "yn" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "yn" : "4.0.0"
+      "yn" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

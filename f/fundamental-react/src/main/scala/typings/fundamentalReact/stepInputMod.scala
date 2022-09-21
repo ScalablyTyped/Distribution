@@ -4,7 +4,6 @@ import typings.fundamentalReact.anon.PartialStepInputProps
 import typings.fundamentalReact.anon.State
 import typings.fundamentalReact.anon.WeakValidationMapStepInpu
 import typings.fundamentalReact.fundamentalReactStrings.StepInput
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -16,8 +15,8 @@ object stepInputMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/StepInput/StepInput.StepInputProps> & {  displayName :'StepInput'} */
   object default {
     
-    inline def apply(props: PropsWithChildren[StepInputProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[StepInputProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: StepInputProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: StepInputProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/StepInput/StepInput", JSImport.Default)
     @js.native
@@ -25,8 +24,8 @@ object stepInputMod {
     
     @JSImport("fundamental-react/lib/StepInput/StepInput", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/StepInput/StepInput", "default.defaultProps")
     @js.native
@@ -52,7 +51,9 @@ object stepInputMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var localizedText: js.UndefOr[js.Any] = js.undefined
+    var localizedText: js.UndefOr[Any] = js.undefined
+    
+    var onChange: js.UndefOr[js.Function1[/* stepValue */ Double, Unit]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -83,9 +84,13 @@ object stepInputMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setLocalizedText(value: js.Any): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+      inline def setLocalizedText(value: Any): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
       
       inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+      
+      inline def setOnChange(value: /* stepValue */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       

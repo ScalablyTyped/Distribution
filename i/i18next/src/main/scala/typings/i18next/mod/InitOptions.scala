@@ -1,7 +1,6 @@
 package typings.i18next.mod
 
 import typings.i18next.anon.AllowedHosts
-import typings.i18next.anon.AutoOpen
 import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextStrings.all
 import typings.i18next.i18nextStrings.current
@@ -11,10 +10,12 @@ import typings.i18next.i18nextStrings.languageOnly
 import typings.i18next.i18nextStrings.v1
 import typings.i18next.i18nextStrings.v2
 import typings.i18next.i18nextStrings.v3
+import typings.i18next.i18nextStrings.v4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined parent i18next.i18next.MergeBy<i18next.i18next.DefaultPluginOptions, i18next.i18next.PluginOptions> */
 trait InitOptions extends StObject {
   
   /**
@@ -29,16 +30,8 @@ trait InitOptions extends StObject {
     */
   var appendNamespaceToMissingKey: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Options for backend - check documentation of plugin
-    * @default undefined
-    */
   var backend: js.UndefOr[js.Object] = js.undefined
   
-  /**
-    * Options for cache layer - check documentation of plugin
-    * @default undefined
-    */
   var cache: js.UndefOr[js.Object] = js.undefined
   
   /**
@@ -49,9 +42,9 @@ trait InitOptions extends StObject {
   
   /**
     * Compatibility JSON version
-    * @default 'v3'
+    * @default 'v4'
     */
-  var compatibilityJSON: js.UndefOr[v1 | v2 | v3] = js.undefined
+  var compatibilityJSON: js.UndefOr[v1 | v2 | v3 | v4] = js.undefined
   
   /**
     * Char to split context from key
@@ -69,19 +62,9 @@ trait InitOptions extends StObject {
     * Default namespace used if not passed to translation function
     * @default 'translation'
     */
-  var defaultNS: js.UndefOr[String] = js.undefined
+  var defaultNS: js.UndefOr[String | `false` | js.Array[String]] = js.undefined
   
-  /**
-    * Options for language detection - check documentation of plugin
-    * @default undefined
-    */
   var detection: js.UndefOr[js.Object] = js.undefined
-  
-  /**
-    * Options for https://github.com/locize/locize-editor
-    * @default undefined
-    */
-  var editor: js.UndefOr[AutoOpen] = js.undefined
   
   /**
     * Language to use if translations in user language are not available.
@@ -95,11 +78,13 @@ trait InitOptions extends StObject {
     */
   var fallbackNS: js.UndefOr[`false` | String | js.Array[String]] = js.undefined
   
-  /**
-    * Options for i18n message format - check documentation of plugin
-    * @default undefined
-    */
   var i18nFormat: js.UndefOr[js.Object] = js.undefined
+  
+  /**
+    * Automatically lookup for a flat key if a nested key is not found an vice-versa
+    * @default true
+    */
+  var ignoreJSONStructure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Triggers resource loading in init function inside a setTimeout (default async behaviour).
@@ -154,38 +139,57 @@ trait InitOptions extends StObject {
   var lowerCaseLng: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Limit parallelism of calls to backend
+    * This is needed to prevent trying to open thousands of
+    * sockets or file descriptors, which can cause failures
+    * and actually make the entire process take longer.
+    * @default 10
+    */
+  var maxParallelReads: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The maximum number of retries to perform.
+    * Note that retries are only performed when a request has no response
+    * and throws an error.
+    * The default value is used if value is set below 0.
+    * @default 5
+    */
+  var maxRetries: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Gets called in case a interpolation value is undefined. This method will not be called if the value is empty string or null
     * @default noop
     */
-  var missingInterpolationHandler: js.UndefOr[
-    js.Function3[/* text */ String, /* value */ js.Any, /* options */ this.type, js.Any]
-  ] = js.undefined
+  var missingInterpolationHandler: js.UndefOr[js.Function3[/* text */ String, /* value */ Any, /* options */ this.type, Any]] = js.undefined
   
   /**
     * Used for custom missing key handling (needs saveMissing set to true!)
     * @default false
     */
   var missingKeyHandler: js.UndefOr[
-    `false` | (js.Function4[
+    `false` | (js.Function6[
       /* lngs */ js.Array[String], 
       /* ns */ String, 
       /* key */ String, 
       /* fallbackValue */ String, 
+      /* updateMissing */ Boolean, 
+      /* options */ Any, 
       Unit
     ])
   ] = js.undefined
+  
+  /**
+    * Used to not fallback to the key as default value, when using saveMissing functionality.
+    * i.e. when using with i18next-http-backend this will result in having a key with an empty string value.
+    * @default false
+    */
+  var missingKeyNoValueFallbackToKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true will pass eg. en-US if finding en in supportedLngs
     * @default false
     */
   var nonExplicitSupportedLngs: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * DEPRECTADED use nonExplicitSupportedLngs
-    * @default false
-    */
-  var nonExplicitWhitelist: js.UndefOr[Boolean] = js.undefined
   
   /**
     * String or array of namespaces to load
@@ -209,7 +213,7 @@ trait InitOptions extends StObject {
     * Receives a key that was not found in `t()` and returns a value, that will be returned by `t()`
     * @default noop
     */
-  var parseMissingKeyHandler: js.UndefOr[js.Function1[/* key */ String, js.Any]] = js.undefined
+  var parseMissingKeyHandler: js.UndefOr[js.Function2[/* key */ String, /* defaultValue */ js.UndefOr[String], Any]] = js.undefined
   
   /**
     * Allow initializing with bundled resources while using a backend to load non bundled ones.
@@ -254,6 +258,19 @@ trait InitOptions extends StObject {
   var resources: js.UndefOr[Resource] = js.undefined
   
   /**
+    * Set how long to wait, in milliseconds, betweeen retries of failed requests.
+    * This number is compounded by a factor of 2 for subsequent retry.
+    * The default value is used if value is set below 1ms.
+    * @default 350
+    */
+  var retryTimeout: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Returns an object that includes information about the used language, namespace, key and value
+    */
+  var returnDetails: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Allows empty string as valid translation
     * @default true
     */
@@ -275,13 +292,19 @@ trait InitOptions extends StObject {
     * Gets called if object was passed in as key but returnObjects was set to false
     * @default noop
     */
-  var returnedObjectHandler: js.UndefOr[js.Function3[/* key */ String, /* value */ String, /* options */ js.Any, Unit]] = js.undefined
+  var returnedObjectHandler: js.UndefOr[js.Function3[/* key */ String, /* value */ String, /* options */ Any, Unit]] = js.undefined
   
   /**
-    * Calls save missing key function on backend if key not found
+    * Calls save missing key function on backend if key not found.
     * @default false
     */
   var saveMissing: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Calls save missing key function on backend if key not found also for plural forms.
+    * @default false
+    */
+  var saveMissingPlurals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default 'fallback'
@@ -308,12 +331,6 @@ trait InitOptions extends StObject {
     * @default false
     */
   var updateMissing: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * DEPRECATED use supportedLngs
-    * @default false
-    */
-  var whitelist: js.UndefOr[`false` | js.Array[String]] = js.undefined
 }
 object InitOptions {
   
@@ -344,7 +361,7 @@ object InitOptions {
     
     inline def setCleanCodeUndefined: Self = StObject.set(x, "cleanCode", js.undefined)
     
-    inline def setCompatibilityJSON(value: v1 | v2 | v3): Self = StObject.set(x, "compatibilityJSON", value.asInstanceOf[js.Any])
+    inline def setCompatibilityJSON(value: v1 | v2 | v3 | v4): Self = StObject.set(x, "compatibilityJSON", value.asInstanceOf[js.Any])
     
     inline def setCompatibilityJSONUndefined: Self = StObject.set(x, "compatibilityJSON", js.undefined)
     
@@ -356,17 +373,15 @@ object InitOptions {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDefaultNS(value: String): Self = StObject.set(x, "defaultNS", value.asInstanceOf[js.Any])
+    inline def setDefaultNS(value: String | `false` | js.Array[String]): Self = StObject.set(x, "defaultNS", value.asInstanceOf[js.Any])
     
     inline def setDefaultNSUndefined: Self = StObject.set(x, "defaultNS", js.undefined)
+    
+    inline def setDefaultNSVarargs(value: String*): Self = StObject.set(x, "defaultNS", js.Array(value*))
     
     inline def setDetection(value: js.Object): Self = StObject.set(x, "detection", value.asInstanceOf[js.Any])
     
     inline def setDetectionUndefined: Self = StObject.set(x, "detection", js.undefined)
-    
-    inline def setEditor(value: AutoOpen): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
-    
-    inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
     inline def setFallbackLng(value: `false` | FallbackLng): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
     
@@ -374,17 +389,21 @@ object InitOptions {
     
     inline def setFallbackLngUndefined: Self = StObject.set(x, "fallbackLng", js.undefined)
     
-    inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value :_*))
+    inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value*))
     
     inline def setFallbackNS(value: `false` | String | js.Array[String]): Self = StObject.set(x, "fallbackNS", value.asInstanceOf[js.Any])
     
     inline def setFallbackNSUndefined: Self = StObject.set(x, "fallbackNS", js.undefined)
     
-    inline def setFallbackNSVarargs(value: String*): Self = StObject.set(x, "fallbackNS", js.Array(value :_*))
+    inline def setFallbackNSVarargs(value: String*): Self = StObject.set(x, "fallbackNS", js.Array(value*))
     
     inline def setI18nFormat(value: js.Object): Self = StObject.set(x, "i18nFormat", value.asInstanceOf[js.Any])
     
     inline def setI18nFormatUndefined: Self = StObject.set(x, "i18nFormat", js.undefined)
+    
+    inline def setIgnoreJSONStructure(value: Boolean): Self = StObject.set(x, "ignoreJSONStructure", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreJSONStructureUndefined: Self = StObject.set(x, "ignoreJSONStructure", js.undefined)
     
     inline def setInitImmediate(value: Boolean): Self = StObject.set(x, "initImmediate", value.asInstanceOf[js.Any])
     
@@ -418,33 +437,43 @@ object InitOptions {
     
     inline def setLowerCaseLngUndefined: Self = StObject.set(x, "lowerCaseLng", js.undefined)
     
-    inline def setMissingInterpolationHandler(value: (/* text */ String, /* value */ js.Any, InitOptions) => js.Any): Self = StObject.set(x, "missingInterpolationHandler", js.Any.fromFunction3(value))
+    inline def setMaxParallelReads(value: Double): Self = StObject.set(x, "maxParallelReads", value.asInstanceOf[js.Any])
+    
+    inline def setMaxParallelReadsUndefined: Self = StObject.set(x, "maxParallelReads", js.undefined)
+    
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    
+    inline def setMissingInterpolationHandler(value: (/* text */ String, /* value */ Any, InitOptions) => Any): Self = StObject.set(x, "missingInterpolationHandler", js.Any.fromFunction3(value))
     
     inline def setMissingInterpolationHandlerUndefined: Self = StObject.set(x, "missingInterpolationHandler", js.undefined)
     
     inline def setMissingKeyHandler(
-      value: `false` | (js.Function4[
+      value: `false` | (js.Function6[
           /* lngs */ js.Array[String], 
           /* ns */ String, 
           /* key */ String, 
           /* fallbackValue */ String, 
+          /* updateMissing */ Boolean, 
+          /* options */ Any, 
           Unit
         ])
     ): Self = StObject.set(x, "missingKeyHandler", value.asInstanceOf[js.Any])
     
-    inline def setMissingKeyHandlerFunction4(
-      value: (/* lngs */ js.Array[String], /* ns */ String, /* key */ String, /* fallbackValue */ String) => Unit
-    ): Self = StObject.set(x, "missingKeyHandler", js.Any.fromFunction4(value))
+    inline def setMissingKeyHandlerFunction6(
+      value: (/* lngs */ js.Array[String], /* ns */ String, /* key */ String, /* fallbackValue */ String, /* updateMissing */ Boolean, /* options */ Any) => Unit
+    ): Self = StObject.set(x, "missingKeyHandler", js.Any.fromFunction6(value))
     
     inline def setMissingKeyHandlerUndefined: Self = StObject.set(x, "missingKeyHandler", js.undefined)
+    
+    inline def setMissingKeyNoValueFallbackToKey(value: Boolean): Self = StObject.set(x, "missingKeyNoValueFallbackToKey", value.asInstanceOf[js.Any])
+    
+    inline def setMissingKeyNoValueFallbackToKeyUndefined: Self = StObject.set(x, "missingKeyNoValueFallbackToKey", js.undefined)
     
     inline def setNonExplicitSupportedLngs(value: Boolean): Self = StObject.set(x, "nonExplicitSupportedLngs", value.asInstanceOf[js.Any])
     
     inline def setNonExplicitSupportedLngsUndefined: Self = StObject.set(x, "nonExplicitSupportedLngs", js.undefined)
-    
-    inline def setNonExplicitWhitelist(value: Boolean): Self = StObject.set(x, "nonExplicitWhitelist", value.asInstanceOf[js.Any])
-    
-    inline def setNonExplicitWhitelistUndefined: Self = StObject.set(x, "nonExplicitWhitelist", js.undefined)
     
     inline def setNs(value: String | js.Array[String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
@@ -454,13 +483,13 @@ object InitOptions {
     
     inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
     
-    inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value :_*))
+    inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value*))
     
     inline def setOverloadTranslationOptionHandler(value: /* args */ js.Array[String] => TOptions[StringMap]): Self = StObject.set(x, "overloadTranslationOptionHandler", js.Any.fromFunction1(value))
     
     inline def setOverloadTranslationOptionHandlerUndefined: Self = StObject.set(x, "overloadTranslationOptionHandler", js.undefined)
     
-    inline def setParseMissingKeyHandler(value: /* key */ String => js.Any): Self = StObject.set(x, "parseMissingKeyHandler", js.Any.fromFunction1(value))
+    inline def setParseMissingKeyHandler(value: (/* key */ String, /* defaultValue */ js.UndefOr[String]) => Any): Self = StObject.set(x, "parseMissingKeyHandler", js.Any.fromFunction2(value))
     
     inline def setParseMissingKeyHandlerUndefined: Self = StObject.set(x, "parseMissingKeyHandler", js.undefined)
     
@@ -480,13 +509,13 @@ object InitOptions {
     
     inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     
-    inline def setPostProcessVarargs(value: String*): Self = StObject.set(x, "postProcess", js.Array(value :_*))
+    inline def setPostProcessVarargs(value: String*): Self = StObject.set(x, "postProcess", js.Array(value*))
     
     inline def setPreload(value: `false` | js.Array[String]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
-    inline def setPreloadVarargs(value: String*): Self = StObject.set(x, "preload", js.Array(value :_*))
+    inline def setPreloadVarargs(value: String*): Self = StObject.set(x, "preload", js.Array(value*))
     
     inline def setReact(value: ReactOptions): Self = StObject.set(x, "react", value.asInstanceOf[js.Any])
     
@@ -495,6 +524,14 @@ object InitOptions {
     inline def setResources(value: Resource): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    
+    inline def setRetryTimeout(value: Double): Self = StObject.set(x, "retryTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setRetryTimeoutUndefined: Self = StObject.set(x, "retryTimeout", js.undefined)
+    
+    inline def setReturnDetails(value: Boolean): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
+    
+    inline def setReturnDetailsUndefined: Self = StObject.set(x, "returnDetails", js.undefined)
     
     inline def setReturnEmptyString(value: Boolean): Self = StObject.set(x, "returnEmptyString", value.asInstanceOf[js.Any])
     
@@ -508,11 +545,15 @@ object InitOptions {
     
     inline def setReturnObjectsUndefined: Self = StObject.set(x, "returnObjects", js.undefined)
     
-    inline def setReturnedObjectHandler(value: (/* key */ String, /* value */ String, /* options */ js.Any) => Unit): Self = StObject.set(x, "returnedObjectHandler", js.Any.fromFunction3(value))
+    inline def setReturnedObjectHandler(value: (/* key */ String, /* value */ String, /* options */ Any) => Unit): Self = StObject.set(x, "returnedObjectHandler", js.Any.fromFunction3(value))
     
     inline def setReturnedObjectHandlerUndefined: Self = StObject.set(x, "returnedObjectHandler", js.undefined)
     
     inline def setSaveMissing(value: Boolean): Self = StObject.set(x, "saveMissing", value.asInstanceOf[js.Any])
+    
+    inline def setSaveMissingPlurals(value: Boolean): Self = StObject.set(x, "saveMissingPlurals", value.asInstanceOf[js.Any])
+    
+    inline def setSaveMissingPluralsUndefined: Self = StObject.set(x, "saveMissingPlurals", js.undefined)
     
     inline def setSaveMissingTo(value: current | all | fallback): Self = StObject.set(x, "saveMissingTo", value.asInstanceOf[js.Any])
     
@@ -528,16 +569,10 @@ object InitOptions {
     
     inline def setSupportedLngsUndefined: Self = StObject.set(x, "supportedLngs", js.undefined)
     
-    inline def setSupportedLngsVarargs(value: String*): Self = StObject.set(x, "supportedLngs", js.Array(value :_*))
+    inline def setSupportedLngsVarargs(value: String*): Self = StObject.set(x, "supportedLngs", js.Array(value*))
     
     inline def setUpdateMissing(value: Boolean): Self = StObject.set(x, "updateMissing", value.asInstanceOf[js.Any])
     
     inline def setUpdateMissingUndefined: Self = StObject.set(x, "updateMissing", js.undefined)
-    
-    inline def setWhitelist(value: `false` | js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
-    
-    inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
-    
-    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
   }
 }

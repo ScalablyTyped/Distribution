@@ -14,12 +14,12 @@ trait Recipients extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): Recipient
+  def Item(Index: Any): Recipient
   
   /* private */ @JSName("Outlook.Recipients_typekey")
   var OutlookDotRecipients_typekey: Recipients
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Remove(Index: Double): Unit
   
@@ -34,9 +34,9 @@ object Recipients {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => Recipient,
+    Item: Any => Recipient,
     OutlookDotRecipients_typekey: Recipients,
-    Parent: js.Any,
+    Parent: Any,
     Remove: Double => Unit,
     ResolveAll: () => Boolean,
     Session: NameSpace
@@ -56,11 +56,11 @@ object Recipients {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Recipient): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Recipient): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotRecipients_typekey(value: Recipients): Self = StObject.set(x, "Outlook.Recipients_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     

@@ -12,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def locationConstraintMiddleware[Input /* <: LocationConstraintAwareInput */, Output /* <: js.Object */](regionProvider: Provider[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("locationConstraintMiddleware")(regionProvider.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def locationConstraintMiddleware[Input /* <: LocationConstraintAwareInput */, Output /* <: js.Object */](regionProvider: Provider[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("locationConstraintMiddleware")(regionProvider.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait LocationConstraintAwareInput extends StObject {
     

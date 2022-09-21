@@ -9,13 +9,13 @@ Fast multidimensional filtering for coordinated views.
 | ------------------ | :-------------: |
 | Full name          | crossfilter |
 | Keywords           | square, analytics, visualization |
-| # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 1311785 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 27623.666666666668 |
+| # stars            | 6211.0 |
 
 ## Links
-- [Homepage](http://square.github.com/crossfilter/)
+- [Homepage](https://github.com/square/crossfilter#readme)
 - [Bugs](https://github.com/square/crossfilter/issues)
 - [Repository](https://github.com/square/crossfilter)
 - [Npm](https://www.npmjs.com/package/crossfilter)

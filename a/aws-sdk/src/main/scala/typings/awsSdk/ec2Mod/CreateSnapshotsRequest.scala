@@ -27,6 +27,11 @@ trait CreateSnapshotsRequest extends StObject {
   var InstanceSpecification: typings.awsSdk.ec2Mod.InstanceSpecification
   
   /**
+    * The Amazon Resource Name (ARN) of the Outpost on which to create the local snapshots.   To create snapshots from an instance in a Region, omit this parameter. The snapshots are created in the same Region as the instance.   To create snapshots from an instance on an Outpost and store the snapshots in the Region, omit this parameter. The snapshots are created in the Region for the Outpost.   To create snapshots from an instance on an Outpost and store the snapshots on an Outpost, specify the ARN of the destination Outpost. The snapshots must be created on the same Outpost as the instance.   For more information, see  Create multi-volume local snapshots from instances on an Outpost in the Amazon Elastic Compute Cloud User Guide.
+    */
+  var OutpostArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * Tags to apply to every snapshot specified by the instance.
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
@@ -54,10 +59,14 @@ object CreateSnapshotsRequest {
     
     inline def setInstanceSpecification(value: InstanceSpecification): Self = StObject.set(x, "InstanceSpecification", value.asInstanceOf[js.Any])
     
+    inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    
     inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
   }
 }

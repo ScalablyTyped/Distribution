@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("jCaptcha")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.jsCaptcha.mod.^ {
       def this(options: Options) = this()
     }

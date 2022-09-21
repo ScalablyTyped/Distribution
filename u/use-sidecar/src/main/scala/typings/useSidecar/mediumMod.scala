@@ -1,7 +1,7 @@
 package typings.useSidecar
 
-import typings.useSidecar.anon.ReadonlySideCarMedium
 import typings.useSidecar.typesMod.MiddlewareCallback
+import typings.useSidecar.typesMod.SideCarMedium
 import typings.useSidecar.typesMod.SideCarMediumOptions
 import typings.useSidecar.typesMod.SideMedium
 import org.scalablytyped.runtime.StObject
@@ -19,6 +19,6 @@ object mediumMod {
   inline def createMedium[T](defaults: T, middleware: MiddlewareCallback[T]): SideMedium[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMedium")(defaults.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[SideMedium[T]]
   inline def createMedium[T](defaults: Unit, middleware: MiddlewareCallback[T]): SideMedium[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMedium")(defaults.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[SideMedium[T]]
   
-  inline def createSidecarMedium(): ReadonlySideCarMedium = ^.asInstanceOf[js.Dynamic].applyDynamic("createSidecarMedium")().asInstanceOf[ReadonlySideCarMedium]
-  inline def createSidecarMedium(options: SideCarMediumOptions): ReadonlySideCarMedium = ^.asInstanceOf[js.Dynamic].applyDynamic("createSidecarMedium")(options.asInstanceOf[js.Any]).asInstanceOf[ReadonlySideCarMedium]
+  inline def createSidecarMedium[T](): SideCarMedium[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSidecarMedium")().asInstanceOf[SideCarMedium[T]]
+  inline def createSidecarMedium[T](options: SideCarMediumOptions): SideCarMedium[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSidecarMedium")(options.asInstanceOf[js.Any]).asInstanceOf[SideCarMedium[T]]
 }

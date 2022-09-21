@@ -1,33 +1,33 @@
 package typings.tensorflowTfjsBackendCpu.anon
 
 import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
-import typings.tensorflowTfjsCore.kernelNamesMod.AvgPoolAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.AvgPoolInputs
+import typings.tensorflowTfjsCore.kernelNamesMod.AllAttrs
+import typings.tensorflowTfjsCore.kernelNamesMod.AllInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Attrs extends StObject {
   
-  var attrs: AvgPoolAttrs
+  var attrs: AllAttrs
   
   var backend: MathBackendCPU
   
-  var inputs: AvgPoolInputs
+  var inputs: AllInputs
 }
 object Attrs {
   
-  inline def apply(attrs: AvgPoolAttrs, backend: MathBackendCPU, inputs: AvgPoolInputs): Attrs = {
+  inline def apply(attrs: AllAttrs, backend: MathBackendCPU, inputs: AllInputs): Attrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attrs]
   }
   
   extension [Self <: Attrs](x: Self) {
     
-    inline def setAttrs(value: AvgPoolAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: AllAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    inline def setInputs(value: AvgPoolInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: AllInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

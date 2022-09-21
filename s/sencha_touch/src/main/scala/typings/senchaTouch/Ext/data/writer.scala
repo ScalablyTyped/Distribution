@@ -136,7 +136,7 @@ object writer {
       * @param record Object The record that we are writing to the server.
       * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
       */
-    var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method] Returns the value of writeAllFields
       * @returns Boolean
@@ -178,7 +178,7 @@ object writer {
       
       inline def setGetNamePropertyUndefined: Self = StObject.set(x, "getNameProperty", js.undefined)
       
-      inline def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
+      inline def setGetRecordData(value: /* record */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
       
       inline def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
       
@@ -269,9 +269,7 @@ object writer {
       * @param data Array
       * @returns Object
       */
-    var writeRecords: js.UndefOr[
-        js.Function2[/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array], js.Any]
-      ] = js.undefined
+    var writeRecords: js.UndefOr[js.Function2[/* request */ js.UndefOr[Any], /* data */ js.UndefOr[Array], Any]] = js.undefined
   }
   object IXml {
     
@@ -330,7 +328,7 @@ object writer {
       
       inline def setSetRecordUndefined: Self = StObject.set(x, "setRecord", js.undefined)
       
-      inline def setWriteRecords(value: (/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array]) => js.Any): Self = StObject.set(x, "writeRecords", js.Any.fromFunction2(value))
+      inline def setWriteRecords(value: (/* request */ js.UndefOr[Any], /* data */ js.UndefOr[Array]) => Any): Self = StObject.set(x, "writeRecords", js.Any.fromFunction2(value))
       
       inline def setWriteRecordsUndefined: Self = StObject.set(x, "writeRecords", js.undefined)
     }

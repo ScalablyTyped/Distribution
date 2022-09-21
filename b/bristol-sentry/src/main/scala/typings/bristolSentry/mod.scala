@@ -1,8 +1,6 @@
 package typings.bristolSentry
 
 import typings.raven.mod.Client
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +13,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def formatter(opts: js.Object, severity: String, date: Date, elems: js.Array[js.Any]): FormattedLog = (^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(opts.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], date.asInstanceOf[js.Any], elems.asInstanceOf[js.Any])).asInstanceOf[FormattedLog]
+  inline def formatter(opts: js.Object, severity: String, date: js.Date, elems: js.Array[Any]): FormattedLog = (^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(opts.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], date.asInstanceOf[js.Any], elems.asInstanceOf[js.Any])).asInstanceOf[FormattedLog]
   
   trait FormattedLog extends StObject {
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var extra: js.Array[js.Object]
     
@@ -34,13 +32,13 @@ object mod {
     
     extension [Self <: FormattedLog](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setExtra(value: js.Array[js.Object]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      inline def setExtraVarargs(value: js.Object*): Self = StObject.set(x, "extra", js.Array(value :_*))
+      inline def setExtraVarargs(value: js.Object*): Self = StObject.set(x, "extra", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

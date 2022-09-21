@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-tabs
 
-Typings are for version 11.7.1
+Typings are for version 12.1.0-alpha.1
 
 ## Library description:
 tabs ui component for react
@@ -10,10 +10,10 @@ tabs ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-tabs |
 | Keywords           | react, react-component, react-tabs |
-| # releases         | 47 |
-| # dependents       | 274 |
-| # downloads        | 20571587 |
-| # stars            | 8 |
+| # releases         | 31 |
+| # dependents       | 0.0 |
+| # downloads        | 3467695.3333333335 |
+| # stars            | 493.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/tabs)

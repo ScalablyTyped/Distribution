@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Globalization.GeographicRegion")
 @js.native
 /** Creates a GeographicRegion object that defaults to the user's home region. */
-class GeographicRegion ()
+open class GeographicRegion ()
   extends StObject
      with typings.winrtUwp.Windows.Globalization.GeographicRegion {
   /**

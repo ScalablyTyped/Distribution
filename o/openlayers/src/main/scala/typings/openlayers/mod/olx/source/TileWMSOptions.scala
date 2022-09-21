@@ -27,7 +27,7 @@ trait TileWMSOptions extends StObject {
   
   var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var params: StringDictionary[js.Any]
+  var params: StringDictionary[Any]
   
   var projection: js.UndefOr[ProjectionLike] = js.undefined
   
@@ -49,7 +49,7 @@ trait TileWMSOptions extends StObject {
 }
 object TileWMSOptions {
   
-  inline def apply(params: StringDictionary[js.Any]): TileWMSOptions = {
+  inline def apply(params: StringDictionary[Any]): TileWMSOptions = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileWMSOptions]
   }
@@ -60,7 +60,7 @@ object TileWMSOptions {
     
     inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
     
     inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object TileWMSOptions {
     
     inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
@@ -116,7 +116,7 @@ object TileWMSOptions {
     
     inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
     
     inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     

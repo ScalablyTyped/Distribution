@@ -57,7 +57,7 @@ object jasmineUtilMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "TestKernelBackend")
   @js.native
-  class TestKernelBackend () extends KernelBackend
+  open class TestKernelBackend () extends KernelBackend
   
   inline def describeWithFlags(name: String, constraints: Constraints, tests: js.Function1[/* env */ TestEnv, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeWithFlags")(name.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -66,6 +66,15 @@ object jasmineUtilMod {
   inline def parseTestEnvFromKarmaFlags(args: js.Array[String], registeredTestEnvs: js.Array[TestEnv]): TestEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTestEnvFromKarmaFlags")(args.asInstanceOf[js.Any], registeredTestEnvs.asInstanceOf[js.Any])).asInstanceOf[TestEnv]
   
   inline def registerTestEnv(testEnv: TestEnv): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTestEnv")(testEnv.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def runWithLock(
+    spec: js.Function1[
+      /* done */ js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DoneFn */ Any
+      ], 
+      js.Promise[Unit] | Unit
+    ]
+  ): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("runWithLock")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
   
   inline def setTestEnvs(testEnvs: js.Array[TestEnv]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTestEnvs")(testEnvs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -150,7 +159,7 @@ object jasmineUtilMod {
       
       inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
       
-      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
       
       inline def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       

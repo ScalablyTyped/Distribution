@@ -22,6 +22,6 @@ object BatchGetReportsInput {
     
     inline def setReportArns(value: ReportArns): Self = StObject.set(x, "reportArns", value.asInstanceOf[js.Any])
     
-    inline def setReportArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportArns", js.Array(value :_*))
+    inline def setReportArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportArns", js.Array(value*))
   }
 }

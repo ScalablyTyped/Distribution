@@ -11,9 +11,9 @@ XML canonicalisation
 | Full name          | xml-c14n |
 | Keywords           | xml, canonicalise, canonicalize, canonicalisation, canonicalization, c14n, exc-c14n, exclusive |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 20555 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6341.666666666667 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/deoxxa/xml-c14n#readme)

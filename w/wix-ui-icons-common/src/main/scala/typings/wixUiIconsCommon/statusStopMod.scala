@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object statusStopMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/StatusStop", JSImport.Default)
   @js.native
-  val default: SFC[StatusStopProps] = js.native
+  val default: FC[StatusStopProps] = js.native
   
   trait StatusStopProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object StatusStopProps {
     
@@ -29,14 +29,14 @@ object statusStopMod extends Shortcut {
     
     extension [Self <: StatusStopProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[StatusStopProps]
+  type _To = FC[StatusStopProps]
   
   /* This means you don't have to write `default`, but can instead just say `statusStopMod.foo` */
-  override def _to: SFC[StatusStopProps] = default
+  override def _to: FC[StatusStopProps] = default
 }

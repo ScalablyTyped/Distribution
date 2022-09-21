@@ -35,15 +35,15 @@ trait Callback extends StObject {
   var orderBy: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. Limit on the number of ReusableConfigs to include in the response. Further ReusableConfigs can subsequently be obtained by including the
-    * ListReusableConfigsResponse.next_page_token in a subsequent request. If unspecified, the server will pick an appropriate default.
+    * Optional. Limit on the number of CertificateTemplates to include in the response. Further CertificateTemplates can subsequently be obtained by including the
+    * ListCertificateTemplatesResponse.next_page_token in a subsequent request. If unspecified, the server will pick an appropriate default.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** Optional. Pagination token, returned earlier via ListReusableConfigsResponse.next_page_token. */
+  /** Optional. Pagination token, returned earlier via ListCertificateTemplatesResponse.next_page_token. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name of the location associated with the ReusableConfigs, in the format `projects/∗/locations/ *`. */
+  /** Required. The resource name of the location associated with the CertificateTemplates, in the format `projects/ *‍/locations/ *`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

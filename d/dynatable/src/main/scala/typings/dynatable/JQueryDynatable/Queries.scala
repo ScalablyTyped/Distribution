@@ -13,7 +13,7 @@ trait Queries extends StObject {
     * @param value The value we wish to find
     * @return A reference to the related Dynatable object
     */
-  def add(name: String, value: js.Any): Dynatable
+  def add(name: String, value: Any): Dynatable
   
   /** functions object for Queries */
   var functions: QueriesFunctions
@@ -37,14 +37,14 @@ trait Queries extends StObject {
   def remove(name: String): Dynatable
   
   /**  Run a search with all the saved queries */
-  def run(): js.Any
+  def run(): Any
   
   /**
     * Shortcut for performing simple query from built-in search
     *
     * @param q The value that will be searched for
     */
-  def runSearch(q: js.Any): Unit
+  def runSearch(q: Any): Unit
   
   /** Set up the input fields for creating queries */
   def setupInputs(): Unit
@@ -52,13 +52,13 @@ trait Queries extends StObject {
 object Queries {
   
   inline def apply(
-    add: (String, js.Any) => Dynatable,
+    add: (String, Any) => Dynatable,
     functions: QueriesFunctions,
     init: () => Unit,
     initOnLoad: () => Boolean,
     remove: String => Dynatable,
-    run: () => js.Any,
-    runSearch: js.Any => Unit,
+    run: () => Any,
+    runSearch: Any => Unit,
     setupInputs: () => Unit
   ): Queries = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), functions = functions.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), remove = js.Any.fromFunction1(remove), run = js.Any.fromFunction0(run), runSearch = js.Any.fromFunction1(runSearch), setupInputs = js.Any.fromFunction0(setupInputs))
@@ -67,7 +67,7 @@ object Queries {
   
   extension [Self <: Queries](x: Self) {
     
-    inline def setAdd(value: (String, js.Any) => Dynatable): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, Any) => Dynatable): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     inline def setFunctions(value: QueriesFunctions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
@@ -77,9 +77,9 @@ object Queries {
     
     inline def setRemove(value: String => Dynatable): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    inline def setRun(value: () => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
-    inline def setRunSearch(value: js.Any => Unit): Self = StObject.set(x, "runSearch", js.Any.fromFunction1(value))
+    inline def setRunSearch(value: Any => Unit): Self = StObject.set(x, "runSearch", js.Any.fromFunction1(value))
     
     inline def setSetupInputs(value: () => Unit): Self = StObject.set(x, "setupInputs", js.Any.fromFunction0(value))
   }

@@ -11,7 +11,7 @@ trait SpreadsheetInsertSheetOptions extends StObject {
   
   var columns: js.UndefOr[Double] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dataSource: js.UndefOr[DataSource] = js.undefined
   
@@ -40,7 +40,7 @@ object SpreadsheetInsertSheetOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

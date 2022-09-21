@@ -24,6 +24,6 @@ object Encrypted {
     
     inline def setSafeBags(value: js.Array[Bag]): Self = StObject.set(x, "safeBags", value.asInstanceOf[js.Any])
     
-    inline def setSafeBagsVarargs(value: Bag*): Self = StObject.set(x, "safeBags", js.Array(value :_*))
+    inline def setSafeBagsVarargs(value: Bag*): Self = StObject.set(x, "safeBags", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "OverflowSetBase")
 @js.native
-class OverflowSetBase protected ()
+open class OverflowSetBase protected ()
   extends typings.officeUiFabricReact.libOverflowSetMod.OverflowSetBase {
   def this(props: IOverflowSetProps) = this()
 }

@@ -39,7 +39,7 @@ object GridsterResizable {
     
     inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    inline def setAxesVarargs(value: String*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: String*): Self = StObject.set(x, "axes", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
@@ -57,13 +57,13 @@ object GridsterResizable {
     
     inline def setMax_sizeUndefined: Self = StObject.set(x, "max_size", js.undefined)
     
-    inline def setMax_sizeVarargs(value: Double*): Self = StObject.set(x, "max_size", js.Array(value :_*))
+    inline def setMax_sizeVarargs(value: Double*): Self = StObject.set(x, "max_size", js.Array(value*))
     
     inline def setMin_size(value: js.Array[Double]): Self = StObject.set(x, "min_size", value.asInstanceOf[js.Any])
     
     inline def setMin_sizeUndefined: Self = StObject.set(x, "min_size", js.undefined)
     
-    inline def setMin_sizeVarargs(value: Double*): Self = StObject.set(x, "min_size", js.Array(value :_*))
+    inline def setMin_sizeVarargs(value: Double*): Self = StObject.set(x, "min_size", js.Array(value*))
     
     inline def setResize(value: (/* event */ Event, /* ui */ GridsterUi, /* $el */ JQuery) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
     

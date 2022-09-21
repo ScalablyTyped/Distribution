@@ -37,7 +37,7 @@ trait CreateReplicationJobRequest extends StObject {
   var numberOfRecentAmisToKeep: js.UndefOr[NumberOfRecentAmisToKeep] = js.undefined
   
   /**
-    * The name of the IAM role to be used by the AWS SMS.
+    * The name of the IAM role to be used by the Server Migration Service.
     */
   var roleName: js.UndefOr[RoleName] = js.undefined
   
@@ -49,7 +49,7 @@ trait CreateReplicationJobRequest extends StObject {
   /**
     * The seed replication time.
     */
-  var seedReplicationTime: Timestamp
+  var seedReplicationTime: js.Date
   
   /**
     * The ID of the server.
@@ -58,7 +58,7 @@ trait CreateReplicationJobRequest extends StObject {
 }
 object CreateReplicationJobRequest {
   
-  inline def apply(seedReplicationTime: Timestamp, serverId: ServerId): CreateReplicationJobRequest = {
+  inline def apply(seedReplicationTime: js.Date, serverId: ServerId): CreateReplicationJobRequest = {
     val __obj = js.Dynamic.literal(seedReplicationTime = seedReplicationTime.asInstanceOf[js.Any], serverId = serverId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReplicationJobRequest]
   }
@@ -97,7 +97,7 @@ object CreateReplicationJobRequest {
     
     inline def setRunOnceUndefined: Self = StObject.set(x, "runOnce", js.undefined)
     
-    inline def setSeedReplicationTime(value: Timestamp): Self = StObject.set(x, "seedReplicationTime", value.asInstanceOf[js.Any])
+    inline def setSeedReplicationTime(value: js.Date): Self = StObject.set(x, "seedReplicationTime", value.asInstanceOf[js.Any])
     
     inline def setServerId(value: ServerId): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
   }

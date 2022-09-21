@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlColumn")
 @js.native
-class MjmlColumn protected ()
+open class MjmlColumn protected ()
   extends Component[
-      RequiredChildrenProps & MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps, 
+      MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps & InnerBorderProps, 
       js.Object, 
-      js.Any
+      Any
     ] {
-  def this(props: RequiredChildrenProps & MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps) = this()
+  def this(props: MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps & InnerBorderProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
   def this(
-    props: RequiredChildrenProps & MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps,
-    context: js.Any
+    props: MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps & InnerBorderProps,
+    context: Any
   ) = this()
 }

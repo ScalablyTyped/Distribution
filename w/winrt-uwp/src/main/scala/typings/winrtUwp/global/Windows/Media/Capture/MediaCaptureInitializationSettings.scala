@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Capture.MediaCaptureInitializationSettings")
 @js.native
 /** Creates a new instance of the MediaCaptureInitializationSettings object. */
-class MediaCaptureInitializationSettings ()
+open class MediaCaptureInitializationSettings ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.MediaCaptureInitializationSettings {
   

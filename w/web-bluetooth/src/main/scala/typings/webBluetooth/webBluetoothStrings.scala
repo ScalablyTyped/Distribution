@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object webBluetoothStrings {
   
   @js.native
-  sealed trait BluetoothServiceDataFilter extends StObject
-  inline def BluetoothServiceDataFilter: BluetoothServiceDataFilter = "BluetoothServiceDataFilter".asInstanceOf[BluetoothServiceDataFilter]
-  
-  @js.native
   sealed trait advertisementreceived extends StObject
   inline def advertisementreceived: advertisementreceived = "advertisementreceived".asInstanceOf[advertisementreceived]
   

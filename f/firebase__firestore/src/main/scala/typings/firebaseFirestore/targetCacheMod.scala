@@ -2,22 +2,22 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
-import typings.firebaseFirestore.persistenceMod.PersistenceTransaction
 import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
+import typings.firebaseFirestore.persistenceTransactionMod.PersistenceTransaction
 import typings.firebaseFirestore.snapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.targetDataMod.TargetData
 import typings.firebaseFirestore.targetMod.Target
 import typings.firebaseFirestore.typesMod.ListenSequenceNumber
 import typings.firebaseFirestore.typesMod.TargetId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/target_cache", JSImport.Namespace)
-@js.native
-object targetCacheMod extends js.Object {
+object targetCacheMod {
+  
   @js.native
-  trait TargetCache extends js.Object {
+  trait TargetCache extends StObject {
+    
     /**
       * Adds the given document keys to cached query results of the given target
       * ID.
@@ -25,15 +25,17 @@ object targetCacheMod extends js.Object {
       * Multi-Tab Note: This operation should only be called by the primary client.
       */
     def addMatchingKeys(transaction: PersistenceTransaction, keys: DocumentKeySet_, targetId: TargetId): PersistencePromise[Unit] = js.native
+    
     /**
       * Adds an entry in the cache.
       *
       * The cache key is extracted from `targetData.target`. The key must not already
       * exist in the cache.
       *
-      * @param targetData A TargetData instance to put in the cache.
+      * @param targetData - A TargetData instance to put in the cache.
       */
     def addTargetData(transaction: PersistenceTransaction, targetData: TargetData): PersistencePromise[Unit] = js.native
+    
     /**
       * Returns a new target ID that is higher than any query in the cache. If
       * there are no queries in the cache, returns the first valid target ID.
@@ -41,16 +43,20 @@ object targetCacheMod extends js.Object {
       * return the same ID twice.
       */
     def allocateTargetId(transaction: PersistenceTransaction): PersistencePromise[TargetId] = js.native
+    
     def containsKey(transaction: PersistenceTransaction, key: DocumentKey): PersistencePromise[Boolean] = js.native
+    
     /**
       * Call provided function with each `TargetData` that we have cached.
       */
     def forEachTarget(txn: PersistenceTransaction, f: js.Function1[/* q */ TargetData, Unit]): PersistencePromise[Unit] = js.native
+    
     /**
-      * @return The highest sequence number observed, including any that might be
+      * @returns The highest sequence number observed, including any that might be
       *         persisted on-disk.
       */
     def getHighestSequenceNumber(transaction: PersistenceTransaction): PersistencePromise[ListenSequenceNumber] = js.native
+    
     /**
       * A global snapshot version representing the last consistent snapshot we
       * received from the backend. This is monotonically increasing and any
@@ -63,22 +69,26 @@ object targetCacheMod extends js.Object {
       * empty target_ids.
       */
     def getLastRemoteSnapshotVersion(transaction: PersistenceTransaction): PersistencePromise[SnapshotVersion] = js.native
+    
     /**
       * Returns the document keys that match the provided target ID.
       */
     def getMatchingKeysForTargetId(transaction: PersistenceTransaction, targetId: TargetId): PersistencePromise[DocumentKeySet_] = js.native
+    
     /**
       * The number of targets currently in the cache.
       */
     def getTargetCount(transaction: PersistenceTransaction): PersistencePromise[Double] = js.native
+    
     /**
       * Looks up a TargetData entry by target.
       *
-      * @param target The query target corresponding to the entry to look up.
-      * @return The cached TargetData entry, or null if the cache has no entry for
+      * @param target - The query target corresponding to the entry to look up.
+      * @returns The cached TargetData entry, or null if the cache has no entry for
       * the target.
       */
     def getTargetData(transaction: PersistenceTransaction, target: Target): PersistencePromise[TargetData | Null] = js.native
+    
     /**
       * Removes the given document keys from the cached query results of the
       * given target ID.
@@ -86,12 +96,14 @@ object targetCacheMod extends js.Object {
       * Multi-Tab Note: This operation should only be called by the primary client.
       */
     def removeMatchingKeys(transaction: PersistenceTransaction, keys: DocumentKeySet_, targetId: TargetId): PersistencePromise[Unit] = js.native
+    
     /**
       * Removes all the keys in the query results of the given target ID.
       *
       * Multi-Tab Note: This operation should only be called by the primary client.
       */
     def removeMatchingKeysForTargetId(transaction: PersistenceTransaction, targetId: TargetId): PersistencePromise[Unit] = js.native
+    
     /**
       * Removes the cached entry for the given target data. It is an error to remove
       * a target data that does not exist.
@@ -99,13 +111,14 @@ object targetCacheMod extends js.Object {
       * Multi-Tab Note: This operation should only be called by the primary client.
       */
     def removeTargetData(transaction: PersistenceTransaction, targetData: TargetData): PersistencePromise[Unit] = js.native
+    
     /**
       * Set the highest listen sequence number and optionally updates the
       * snapshot version of the last consistent snapshot received from the backend
       * (see getLastRemoteSnapshotVersion() for more details).
       *
-      * @param highestListenSequenceNumber The new maximum listen sequence number.
-      * @param lastRemoteSnapshotVersion The new snapshot version. Optional.
+      * @param highestListenSequenceNumber - The new maximum listen sequence number.
+      * @param lastRemoteSnapshotVersion - The new snapshot version. Optional.
       */
     def setTargetsMetadata(transaction: PersistenceTransaction, highestListenSequenceNumber: Double): PersistencePromise[Unit] = js.native
     def setTargetsMetadata(
@@ -113,15 +126,14 @@ object targetCacheMod extends js.Object {
       highestListenSequenceNumber: Double,
       lastRemoteSnapshotVersion: SnapshotVersion
     ): PersistencePromise[Unit] = js.native
+    
     /**
       * Updates an entry in the cache.
       *
       * The cache key is extracted from `targetData.target`. The entry must already
       * exist in the cache, and it will be replaced.
-      * @param {TargetData} targetData The TargetData to be replaced into the cache.
+      * @param targetData - The TargetData to be replaced into the cache.
       */
     def updateTargetData(transaction: PersistenceTransaction, targetData: TargetData): PersistencePromise[Unit] = js.native
   }
-  
 }
-

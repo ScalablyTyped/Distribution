@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DiagramNode")
 @js.native
-/* private */ class DiagramNode ()
+/* private */ open class DiagramNode ()
   extends StObject
      with typings.activexExcel.Excel.DiagramNode

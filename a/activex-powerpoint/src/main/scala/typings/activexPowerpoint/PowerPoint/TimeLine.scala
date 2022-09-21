@@ -12,7 +12,7 @@ trait TimeLine extends StObject {
   
   val MainSequence: Sequence
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.TimeLine_typekey")
   var PowerPointDotTimeLine_typekey: TimeLine
@@ -23,7 +23,7 @@ object TimeLine {
     Application: Application,
     InteractiveSequences: Sequences,
     MainSequence: Sequence,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotTimeLine_typekey: TimeLine
   ): TimeLine = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], InteractiveSequences = InteractiveSequences.asInstanceOf[js.Any], MainSequence = MainSequence.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object TimeLine {
     
     inline def setMainSequence(value: Sequence): Self = StObject.set(x, "MainSequence", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotTimeLine_typekey(value: TimeLine): Self = StObject.set(x, "PowerPoint.TimeLine_typekey", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,7 @@ trait Location
   
   def round(digits: Double): Location
   
-  def toArray(): js.Any
+  def toArray(): Any
   
   def wrap(): Location
 }
@@ -37,7 +37,7 @@ object Location {
     lng: Double,
     options: LocationOptions,
     round: Double => Location,
-    toArray: () => js.Any,
+    toArray: () => Any,
     wrap: () => Location
   ): Location = {
     val __obj = js.Dynamic.literal(destination = js.Any.fromFunction2(destination), distanceTo = js.Any.fromFunction2(distanceTo), lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], round = js.Any.fromFunction1(round), toArray = js.Any.fromFunction0(toArray), wrap = js.Any.fromFunction0(wrap))
@@ -61,7 +61,7 @@ object Location {
     
     inline def setRound(value: Double => Location): Self = StObject.set(x, "round", js.Any.fromFunction1(value))
     
-    inline def setToArray(value: () => js.Any): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => Any): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
     inline def setWrap(value: () => Location): Self = StObject.set(x, "wrap", js.Any.fromFunction0(value))
   }

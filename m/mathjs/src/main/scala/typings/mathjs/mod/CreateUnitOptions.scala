@@ -32,7 +32,7 @@ object CreateUnitOptions {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

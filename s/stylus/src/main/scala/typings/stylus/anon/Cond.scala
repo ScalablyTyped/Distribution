@@ -49,7 +49,7 @@ object Cond {
     
     inline def setElses(value: js.Array[Expression]): Self = StObject.set(x, "elses", value.asInstanceOf[js.Any])
     
-    inline def setElsesVarargs(value: Expression*): Self = StObject.set(x, "elses", js.Array(value :_*))
+    inline def setElsesVarargs(value: Expression*): Self = StObject.set(x, "elses", js.Array(value*))
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

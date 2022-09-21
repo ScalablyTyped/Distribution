@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ShaderDefineIsDefinedOperator")
 @js.native
-class ShaderDefineIsDefinedOperator protected ()
+open class ShaderDefineIsDefinedOperator protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ShaderDefineIsDefinedOperator {
   def this(define: String) = this()

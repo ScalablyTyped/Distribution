@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@lumino/widgets", "DockLayout")
 @js.native
-class DockLayout protected ()
+open class DockLayout protected ()
   extends typings.luminoWidgets.docklayoutMod.DockLayout {
   /**
     * Construct a new dock layout.

@@ -17,12 +17,12 @@ trait ListDeploymentsRequest extends StObject {
   var EnvironmentId: Id
   
   /**
-    * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
+    * The maximum number of items that may be returned for this call. If there are items that have not yet been returned, the response will include a non-null NextToken that you can provide in a subsequent call to get the next set of results.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.appconfigMod.MaxResults] = js.undefined
   
   /**
-    * A token to start the list. Use this token to get the next set of results.
+    * The token returned by a prior call to this operation indicating the next set of results to be returned. If not specified, the operation will return the first set of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.appconfigMod.NextToken] = js.undefined
 }

@@ -42,6 +42,11 @@ trait CreateNetworkInput extends StObject {
   var Name: NameString
   
   /**
+    * Tags to assign to the network. Each tag consists of a key and optional value. When specifying tags during creation, you can specify multiple key-value pairs in a single request, with an overall maximum of 50 tags added to each resource. For more information about tags, see Tagging Resources in the Amazon Managed Blockchain Ethereum Developer Guide, or Tagging Resources in the Amazon Managed Blockchain Hyperledger Fabric Developer Guide.
+    */
+  var Tags: js.UndefOr[InputTagMap] = js.undefined
+  
+  /**
     *  The voting rules used by the network to determine if a proposal is approved. 
     */
   var VotingPolicy: typings.awsSdk.managedblockchainMod.VotingPolicy
@@ -79,6 +84,10 @@ object CreateNetworkInput {
     inline def setMemberConfiguration(value: MemberConfiguration): Self = StObject.set(x, "MemberConfiguration", value.asInstanceOf[js.Any])
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: InputTagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     inline def setVotingPolicy(value: VotingPolicy): Self = StObject.set(x, "VotingPolicy", value.asInstanceOf[js.Any])
   }

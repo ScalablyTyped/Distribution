@@ -151,21 +151,8 @@ object novaEditorNodeStrings {
   @js.native
   sealed trait hex
     extends StObject
-       with ColorFormat
        with Encoding
   inline def hex: hex = "hex".asInstanceOf[hex]
-  
-  @js.native
-  sealed trait hsb
-    extends StObject
-       with ColorFormat
-  inline def hsb: hsb = "hsb".asInstanceOf[hsb]
-  
-  @js.native
-  sealed trait hsl
-    extends StObject
-       with ColorFormat
-  inline def hsl: hsl = "hsl".asInstanceOf[hsl]
   
   @js.native
   sealed trait ignore extends StObject
@@ -216,12 +203,6 @@ object novaEditorNodeStrings {
   inline def onSave: onSave = "onSave".asInstanceOf[onSave]
   
   @js.native
-  sealed trait p3
-    extends StObject
-       with ColorFormat
-  inline def p3: p3 = "p3".asInstanceOf[p3]
-  
-  @js.native
   sealed trait pipe extends StObject
   inline def pipe: pipe = "pipe".asInstanceOf[pipe]
   
@@ -236,12 +217,6 @@ object novaEditorNodeStrings {
     extends StObject
        with NovaSymbolType
   inline def reference: reference = "reference".asInstanceOf[reference]
-  
-  @js.native
-  sealed trait rgb
-    extends StObject
-       with ColorFormat
-  inline def rgb: rgb = "rgb".asInstanceOf[rgb]
   
   @js.native
   sealed trait `secure-input` extends StObject

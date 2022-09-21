@@ -33,6 +33,6 @@ object GetConnectionsFilter {
     
     inline def setMatchCriteriaUndefined: Self = StObject.set(x, "MatchCriteria", js.undefined)
     
-    inline def setMatchCriteriaVarargs(value: NameString*): Self = StObject.set(x, "MatchCriteria", js.Array(value :_*))
+    inline def setMatchCriteriaVarargs(value: NameString*): Self = StObject.set(x, "MatchCriteria", js.Array(value*))
   }
 }

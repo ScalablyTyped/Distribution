@@ -4,7 +4,6 @@ import typings.axeCore.mod.Result
 import typings.axeCore.mod.RunOptions
 import typings.axeCore.mod.Spec
 import typings.seleniumWebdriver.mod.WebDriver
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,7 +96,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("axe-webdriverjs", "AxeBuilder")
   @js.native
-  class AxeBuilderCls protected ()
+  open class AxeBuilderCls protected ()
     extends StObject
        with AxeBuilder {
     def this(driver: WebDriver) = this()
@@ -106,7 +105,7 @@ object mod {
     def this(driver: WebDriver, source: Unit, builderOptions: BuilderOptions) = this()
   }
   
-  type AnalyzeCallback = js.Function2[/* err */ Error | Null, /* results */ AxeAnalysis, Unit]
+  type AnalyzeCallback = js.Function2[/* err */ js.Error | Null, /* results */ AxeAnalysis, Unit]
   
   trait AxeAnalysis extends StObject {
     
@@ -140,15 +139,15 @@ object mod {
       
       inline def setInapplicable(value: js.Array[Result]): Self = StObject.set(x, "inapplicable", value.asInstanceOf[js.Any])
       
-      inline def setInapplicableVarargs(value: Result*): Self = StObject.set(x, "inapplicable", js.Array(value :_*))
+      inline def setInapplicableVarargs(value: Result*): Self = StObject.set(x, "inapplicable", js.Array(value*))
       
       inline def setIncomplete(value: js.Array[Result]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
       
-      inline def setIncompleteVarargs(value: Result*): Self = StObject.set(x, "incomplete", js.Array(value :_*))
+      inline def setIncompleteVarargs(value: Result*): Self = StObject.set(x, "incomplete", js.Array(value*))
       
       inline def setPasses(value: js.Array[Result]): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
       
-      inline def setPassesVarargs(value: Result*): Self = StObject.set(x, "passes", js.Array(value :_*))
+      inline def setPassesVarargs(value: Result*): Self = StObject.set(x, "passes", js.Array(value*))
       
       inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
@@ -156,7 +155,7 @@ object mod {
       
       inline def setViolations(value: js.Array[Result]): Self = StObject.set(x, "violations", value.asInstanceOf[js.Any])
       
-      inline def setViolationsVarargs(value: Result*): Self = StObject.set(x, "violations", js.Array(value :_*))
+      inline def setViolationsVarargs(value: Result*): Self = StObject.set(x, "violations", js.Array(value*))
     }
   }
   

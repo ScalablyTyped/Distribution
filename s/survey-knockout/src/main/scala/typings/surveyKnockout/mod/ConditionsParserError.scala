@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ConditionsParserError")
 @js.native
-class ConditionsParserError protected () extends StObject {
+open class ConditionsParserError protected () extends StObject {
   def this(at: Double, code: String) = this()
   
   var at: Double = js.native

@@ -33,7 +33,7 @@ object XImageProducerSupplier {
     ImageProducer: XImageProducer,
     acquire: () => Unit,
     getImageProducer: () => XImageProducer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XImageProducerSupplier = {
     val __obj = js.Dynamic.literal(ImageProducer = ImageProducer.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getImageProducer = js.Any.fromFunction0(getImageProducer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

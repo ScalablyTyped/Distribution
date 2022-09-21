@@ -1,11 +1,13 @@
 package typings.puppeteerCore
 
+import typings.devtoolsProtocol.mod.Protocol.Input.DragData
 import typings.puppeteerCore.anon.DelayText
 import typings.puppeteerCore.anon.MouseOptionsdelaynumberun
 import typings.puppeteerCore.anon.Steps
 import typings.puppeteerCore.anon.Text
 import typings.puppeteerCore.anon.`0`
-import typings.puppeteerCore.connectionMod.CDPSession
+import typings.puppeteerCore.commonConnectionMod.CDPSession
+import typings.puppeteerCore.jshandleMod.Point
 import typings.puppeteerCore.uskeyboardlayoutMod.KeyInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,22 +17,18 @@ object inputMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/Input", "Keyboard")
   @js.native
-  class Keyboard protected () extends StObject {
-    /** @internal */
+  open class Keyboard protected () extends StObject {
+    /**
+      * @internal
+      */
     def this(client: CDPSession) = this()
     
-    /* private */ var _client: js.Any = js.native
-    
-    /* private */ var _keyDescriptionForString: js.Any = js.native
-    
-    /* private */ var _modifierBit: js.Any = js.native
-    
-    /** @internal */
+    /**
+      * @internal
+      */
     var _modifiers: Double = js.native
     
-    /* private */ var _pressedKeys: js.Any = js.native
-    
-    /* private */ var charIsKey: js.Any = js.native
+    /* private */ var charIsKey: Any = js.native
     
     /**
       * Dispatches a `keydown` event.
@@ -83,6 +81,8 @@ object inputMod {
     def press(key: KeyInput): js.Promise[Unit] = js.native
     def press(key: KeyInput, options: DelayText): js.Promise[Unit] = js.native
     
+    /* private */ var `private`: Any = js.native
+    
     /**
       * Dispatches a `keypress` and `input` event.
       * This does not send a `keydown` or `keyup` event.
@@ -92,7 +92,8 @@ object inputMod {
       * Holding down `Shift` will not type the text in upper case.
       *
       * @example
-      * ```js
+      *
+      * ```ts
       * page.keyboard.sendCharacter('嗨');
       * ```
       *
@@ -112,7 +113,8 @@ object inputMod {
       * Holding down `Shift` will not type the text in upper case.
       *
       * @example
-      * ```js
+      *
+      * ```ts
       * await page.keyboard.type('Hello'); // Types instantly
       * await page.keyboard.type('World', {delay: 100}); // Types slower, like a user
       * ```
@@ -137,21 +139,11 @@ object inputMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/Input", "Mouse")
   @js.native
-  class Mouse protected () extends StObject {
+  open class Mouse protected () extends StObject {
     /**
       * @internal
       */
     def this(client: CDPSession, keyboard: Keyboard) = this()
-    
-    /* private */ var _button: js.Any = js.native
-    
-    /* private */ var _client: js.Any = js.native
-    
-    /* private */ var _keyboard: js.Any = js.native
-    
-    /* private */ var _x: js.Any = js.native
-    
-    /* private */ var _y: js.Any = js.native
     
     /**
       * Shortcut for `mouse.move`, `mouse.down` and `mouse.up`.
@@ -170,6 +162,45 @@ object inputMod {
     def down(options: MouseOptions): js.Promise[Unit] = js.native
     
     /**
+      * Dispatches a `drag` event.
+      * @param start - starting point for drag
+      * @param target - point to drag to
+      */
+    def drag(start: Point, target: Point): js.Promise[DragData] = js.native
+    
+    /**
+      * Performs a drag, dragenter, dragover, and drop in sequence.
+      * @param target - point to drag from
+      * @param target - point to drop on
+      * @param options - An object of options. Accepts delay which,
+      * if specified, is the time to wait between `dragover` and `drop` in milliseconds.
+      * Defaults to 0.
+      */
+    def dragAndDrop(start: Point, target: Point): js.Promise[Unit] = js.native
+    def dragAndDrop(start: Point, target: Point, options: `0`): js.Promise[Unit] = js.native
+    
+    /**
+      * Dispatches a `dragenter` event.
+      * @param target - point for emitting `dragenter` event
+      * @param data - drag data containing items and operations mask
+      */
+    def dragEnter(target: Point, data: DragData): js.Promise[Unit] = js.native
+    
+    /**
+      * Dispatches a `dragover` event.
+      * @param target - point for emitting `dragover` event
+      * @param data - drag data containing items and operations mask
+      */
+    def dragOver(target: Point, data: DragData): js.Promise[Unit] = js.native
+    
+    /**
+      * Performs a dragenter, dragover, and drop in sequence.
+      * @param target - point to drop on
+      * @param data - drag data containing items and operations mask
+      */
+    def drop(target: Point, data: DragData): js.Promise[Unit] = js.native
+    
+    /**
       * Dispatches a `mousemove` event.
       * @param x - Horizontal position of the mouse.
       * @param y - Vertical position of the mouse.
@@ -178,6 +209,8 @@ object inputMod {
       */
     def move(x: Double, y: Double): js.Promise[Unit] = js.native
     def move(x: Double, y: Double, options: Steps): js.Promise[Unit] = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     /**
       * Dispatches a `mouseup` event.
@@ -192,8 +225,11 @@ object inputMod {
       *
       * @example
       * An example of zooming into an element:
-      * ```js
-      * await page.goto('https://mdn.mozillademos.org/en-US/docs/Web/API/Element/wheel_event$samples/Scaling_an_element_via_the_wheel?revision=1587366');
+      *
+      * ```ts
+      * await page.goto(
+      *   'https://mdn.mozillademos.org/en-US/docs/Web/API/Element/wheel_event$samples/Scaling_an_element_via_the_wheel?revision=1587366'
+      * );
       *
       * const elem = await page.$('div');
       * const boundingBox = await elem.boundingBox();
@@ -202,7 +238,7 @@ object inputMod {
       *   boundingBox.y + boundingBox.height / 2
       * );
       *
-      * await page.mouse.wheel({ deltaY: -100 })
+      * await page.mouse.wheel({deltaY: -100});
       * ```
       */
     def wheel(): js.Promise[Unit] = js.native
@@ -211,15 +247,13 @@ object inputMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/Input", "Touchscreen")
   @js.native
-  class Touchscreen protected () extends StObject {
+  open class Touchscreen protected () extends StObject {
     /**
       * @internal
       */
     def this(client: CDPSession, keyboard: Keyboard) = this()
     
-    /* private */ var _client: js.Any = js.native
-    
-    /* private */ var _keyboard: js.Any = js.native
+    /* private */ var `private`: Any = js.native
     
     /**
       * Dispatches a `touchstart` and `touchend` event.
@@ -233,9 +267,15 @@ object inputMod {
     - typings.puppeteerCore.puppeteerCoreStrings.left
     - typings.puppeteerCore.puppeteerCoreStrings.right
     - typings.puppeteerCore.puppeteerCoreStrings.middle
+    - typings.puppeteerCore.puppeteerCoreStrings.back
+    - typings.puppeteerCore.puppeteerCoreStrings.forward
   */
   trait MouseButton extends StObject
   object MouseButton {
+    
+    inline def back: typings.puppeteerCore.puppeteerCoreStrings.back = "back".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.back]
+    
+    inline def forward: typings.puppeteerCore.puppeteerCoreStrings.forward = "forward".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.forward]
     
     inline def left: typings.puppeteerCore.puppeteerCoreStrings.left = "left".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.left]
     

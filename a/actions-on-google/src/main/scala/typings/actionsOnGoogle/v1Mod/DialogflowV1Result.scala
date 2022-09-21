@@ -47,7 +47,7 @@ object DialogflowV1Result {
     
     inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    inline def setContextsVarargs(value: DialogflowV1Context*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: DialogflowV1Context*): Self = StObject.set(x, "contexts", js.Array(value*))
     
     inline def setFulfillment(value: DialogflowV1Fulfillment): Self = StObject.set(x, "fulfillment", value.asInstanceOf[js.Any])
     

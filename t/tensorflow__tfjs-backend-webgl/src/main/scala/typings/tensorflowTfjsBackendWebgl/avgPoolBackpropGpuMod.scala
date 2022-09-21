@@ -11,7 +11,7 @@ object avgPoolBackpropGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/avg_pool_backprop_gpu", "AvgPool2DBackpropProgram")
   @js.native
-  class AvgPool2DBackpropProgram protected ()
+  open class AvgPool2DBackpropProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -28,7 +28,7 @@ object avgPoolBackpropGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/avg_pool_backprop_gpu", "AvgPool3DBackpropProgram")
   @js.native
-  class AvgPool3DBackpropProgram protected ()
+  open class AvgPool3DBackpropProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv3DInfo) = this()

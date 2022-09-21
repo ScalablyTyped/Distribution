@@ -14,10 +14,14 @@ import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Physics.Arcade.ArcadePhysics
 import typings.phaser.Phaser.Physics.Matter.MatterPhysics
 import typings.phaser.Phaser.Plugins.PluginManager
+import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
+import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Scale.ScaleManager
 import typings.phaser.Phaser.Scenes.ScenePlugin
 import typings.phaser.Phaser.Scenes.Systems
-import typings.phaser.Phaser.Sound.BaseSoundManager
+import typings.phaser.Phaser.Sound.HTML5AudioSoundManager
+import typings.phaser.Phaser.Sound.NoAudioSoundManager
+import typings.phaser.Phaser.Sound.WebAudioSoundManager
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Time.Clock
 import typings.phaser.Phaser.Tweens.TweenManager
@@ -33,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "Scene")
 @js.native
-class Scene protected ()
+open class Scene protected ()
   extends StObject
      with typings.phaser.Phaser.Scene {
   /**
@@ -44,7 +48,8 @@ class Scene protected ()
   def this(config: SettingsConfig) = this()
   
   /**
-    * A scene level Game Object Factory.
+    * The Scene Game Object Factory.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
@@ -52,6 +57,7 @@ class Scene protected ()
   
   /**
     * A reference to the global Animation Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
@@ -59,41 +65,49 @@ class Scene protected ()
   
   /**
     * A reference to the global Cache.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
   var cache: CacheManager = js.native
   
   /**
-    * A scene level Camera System.
+    * The Scene Camera Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
   var cameras: CameraManager = js.native
   
   /**
-    * A scene level Game Object Display List.
+    * The Game Object Display List belonging to this Scene.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
   var children: DisplayList = js.native
   
   /**
-    * A scene level Data Manager Plugin.
+    * A Scene specific Data Manager Plugin.
+    * 
+    * See the `registry` property for the global Data Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   /* CompleteClass */
   var data: DataManager = js.native
   
   /**
-    * A scene level Event Emitter.
+    * A Scene specific Event Emitter.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
   var events: EventEmitter = js.native
   
   /**
-    * A scene level Facebook Instant Games Plugin.
+    * The Facebook Instant Games Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map, the plugin is installed and configured.
     */
   /* CompleteClass */
@@ -101,55 +115,62 @@ class Scene protected ()
   
   /**
     * A reference to the Phaser.Game instance.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
   var game: typings.phaser.Phaser.Game = js.native
   
   /**
-    * A scene level Input Manager Plugin.
+    * The Scene Input Manager Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   /* CompleteClass */
   var input: InputPlugin = js.native
   
   /**
-    * A scene level Lights Manager Plugin.
+    * The Scene Lights Manager Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   /* CompleteClass */
   var lights: LightsManager = js.native
   
   /**
-    * A scene level Loader Plugin.
+    * The Scene Loader Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   /* CompleteClass */
   var load: LoaderPlugin = js.native
   
   /**
-    * A scene level Game Object Creator.
+    * The Scene Game Object Creator.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
   var make: GameObjectCreator = js.native
   
   /**
-    * A scene level Matter Physics Plugin.
+    * The Scene Matter Physics Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map, the plugin is installed and configured.
     */
   /* CompleteClass */
   var matter: MatterPhysics = js.native
   
   /**
-    * A scene level Arcade Physics Plugin.
+    * The Scene Arcade Physics Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map, the plugin is installed and configured.
     */
   /* CompleteClass */
   var physics: ArcadePhysics = js.native
   
   /**
-    * A reference to the Plugin Manager.
+    * A reference to the global Plugin Manager.
     * 
     * The Plugin Manager is a global system that allows plugins to register themselves with it, and can then install
     * those plugins into Scenes as required.
@@ -158,14 +179,22 @@ class Scene protected ()
   var plugins: PluginManager = js.native
   
   /**
-    * A reference to the game level Data Manager.
+    * A reference to the global Data Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
   var registry: DataManager = js.native
   
   /**
+    * A reference to the renderer instance Phaser is using, either Canvas Renderer or WebGL Renderer.
+    */
+  /* CompleteClass */
+  var renderer: CanvasRenderer | WebGLRenderer = js.native
+  
+  /**
     * A reference to the global Scale Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
@@ -173,6 +202,7 @@ class Scene protected ()
   
   /**
     * A reference to the Scene Manager Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
@@ -180,10 +210,11 @@ class Scene protected ()
   
   /**
     * A reference to the Sound Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   /* CompleteClass */
-  var sound: BaseSoundManager = js.native
+  var sound: NoAudioSoundManager | HTML5AudioSoundManager | WebAudioSoundManager = js.native
   
   /**
     * The Scene Systems. You must never overwrite this property, or all hell will break lose.
@@ -193,27 +224,31 @@ class Scene protected ()
   
   /**
     * A reference to the Texture Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   /* CompleteClass */
   var textures: TextureManager = js.native
   
   /**
-    * A scene level Time and Clock Plugin.
+    * The Scene Time and Clock Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   /* CompleteClass */
   var time: Clock = js.native
   
   /**
-    * A scene level Tween Manager Plugin.
+    * The Scene Tween Manager Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   /* CompleteClass */
   var tweens: TweenManager = js.native
   
   /**
-    * Should be overridden by your own Scenes.
+    * This method should be overridden by your own Scenes.
+    * 
     * This method is called once per game step while the scene is running.
     * @param time The current time. Either a High Resolution Timer value if it comes from Request Animation Frame, or Date.now if using SetTimeout.
     * @param delta The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.

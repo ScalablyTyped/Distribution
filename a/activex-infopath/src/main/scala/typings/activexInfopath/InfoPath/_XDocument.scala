@@ -13,11 +13,11 @@ trait _XDocument extends StObject {
   
   val DataObjects: DataObjectsCollection
   
-  def Errors(Index: js.Any): Error
+  def Errors(Index: Any): Error
   @JSName("Errors")
   val Errors_Original: Errors
   
-  val Extension: js.Any
+  val Extension: Any
   
   def GetDOM(bstrName: String): IXMLDOMDocument
   
@@ -44,7 +44,7 @@ trait _XDocument extends StObject {
   
   def Query(): Unit
   
-  val QueryAdapter: js.Any
+  val QueryAdapter: Any
   
   def Save(): Unit
   
@@ -70,7 +70,7 @@ object _XDocument {
     DOM: IXMLDOMDocument,
     DataObjects: DataObjectsCollection,
     Errors: Errors,
-    Extension: js.Any,
+    Extension: Any,
     GetDOM: String => IXMLDOMDocument,
     GetDataVariable: Double => String,
     ImportFile: String => Unit,
@@ -83,7 +83,7 @@ object _XDocument {
     Language: String,
     PrintOut: () => Unit,
     Query: () => Unit,
-    QueryAdapter: js.Any,
+    QueryAdapter: Any,
     Save: () => Unit,
     SaveAs: String => Unit,
     SetDataVariable: (Double, String) => Unit,
@@ -107,7 +107,7 @@ object _XDocument {
     
     inline def setErrors(value: Errors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    inline def setExtension(value: js.Any): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: Any): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
     inline def setGetDOM(value: String => IXMLDOMDocument): Self = StObject.set(x, "GetDOM", js.Any.fromFunction1(value))
     
@@ -133,7 +133,7 @@ object _XDocument {
     
     inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    inline def setQueryAdapter(value: js.Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
+    inline def setQueryAdapter(value: Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
     
     inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     

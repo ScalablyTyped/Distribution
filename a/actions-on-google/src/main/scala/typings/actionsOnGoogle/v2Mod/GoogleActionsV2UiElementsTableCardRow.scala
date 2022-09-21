@@ -31,7 +31,7 @@ object GoogleActionsV2UiElementsTableCardRow {
     
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    inline def setCellsVarargs(value: GoogleActionsV2UiElementsTableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: GoogleActionsV2UiElementsTableCardCell*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
     

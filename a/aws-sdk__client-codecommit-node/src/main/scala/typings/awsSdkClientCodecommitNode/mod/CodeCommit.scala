@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "CodeCommit")
 @js.native
-class CodeCommit protected ()
+open class CodeCommit protected ()
   extends typings.awsSdkClientCodecommitNode.codeCommitMod.CodeCommit {
   def this(configuration: CodeCommitConfiguration) = this()
 }

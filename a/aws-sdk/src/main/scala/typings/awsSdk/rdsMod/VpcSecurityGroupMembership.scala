@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VpcSecurityGroupMembership extends StObject {
   
   /**
-    * The status of the VPC security group.
+    * The membership status of the VPC security group. Currently, the only valid status is active.
     */
   var Status: js.UndefOr[String] = js.undefined
   

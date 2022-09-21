@@ -16,7 +16,7 @@ object anon {
     /**
       * Comparator for custom equality checks.
       */
-    var comparator: js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, Boolean]] = js.undefined
+    var comparator: js.UndefOr[js.Function2[/* left */ Any, /* right */ Any, Boolean]] = js.undefined
     
     /**
       * `true` to ignore casing difference.
@@ -37,7 +37,7 @@ object anon {
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      inline def setComparator(value: (/* left */ js.Any, /* right */ js.Any) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
+      inline def setComparator(value: (/* left */ Any, /* right */ Any) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
       
       inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       

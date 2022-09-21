@@ -27,7 +27,7 @@ object mod {
     
     @JSImport("deku", "diff.Actions")
     @js.native
-    class Actions () extends StObject {
+    open class Actions () extends StObject {
       
       /* private */ var _keys: js.Array[String] = js.native
       
@@ -40,46 +40,46 @@ object mod {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def `case`(pat: js.Any, action: Actions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("case")(pat.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def `case`(pat: Any, action: Actions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("case")(pat.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Any]
       
       /* static member */
       inline def insertBefore(a: Double): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(a.asInstanceOf[js.Any]).asInstanceOf[Actions]
       
       /* static member */
-      inline def insertChild(a: js.Any, b: Double, c: String): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("insertChild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Actions]
+      inline def insertChild(a: Any, b: Double, c: String): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("insertChild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Actions]
       
       /* static member */
-      inline def removeAttribute(a: String, b: js.Any): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAttribute")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Actions]
+      inline def removeAttribute(a: String, b: Any): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAttribute")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Actions]
       
       /* static member */
       inline def removeChild(a: Double): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChild")(a.asInstanceOf[js.Any]).asInstanceOf[Actions]
       
       /* static member */
-      inline def removeNode(a: js.Any): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNode")(a.asInstanceOf[js.Any]).asInstanceOf[Actions]
+      inline def removeNode(a: Any): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNode")(a.asInstanceOf[js.Any]).asInstanceOf[Actions]
       
       /* static member */
-      inline def replaceNode(a: js.Any, b: js.Any, c: String): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Actions]
+      inline def replaceNode(a: Any, b: Any, c: String): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Actions]
       
       /* static member */
       inline def sameNode(): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("sameNode")().asInstanceOf[Actions]
       
       /* static member */
-      inline def setAttribute(a: String, b: js.Any, c: js.Any): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttribute")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Actions]
+      inline def setAttribute(a: String, b: Any, c: Any): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttribute")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Actions]
       
       /* static member */
-      inline def updateChild(a: Double, b: js.Array[js.Any]): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("updateChild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Actions]
+      inline def updateChild(a: Double, b: js.Array[Any]): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("updateChild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Actions]
       
       /* static member */
-      inline def updateChildren(a: js.Array[js.Any]): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("updateChildren")(a.asInstanceOf[js.Any]).asInstanceOf[Actions]
+      inline def updateChildren(a: js.Array[Any]): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("updateChildren")(a.asInstanceOf[js.Any]).asInstanceOf[Actions]
       
       /* static member */
-      inline def updateThunk(a: js.Any, b: js.Any, c: String): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("updateThunk")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Actions]
+      inline def updateThunk(a: Any, b: Any, c: String): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("updateThunk")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Actions]
     }
     
     /**
       * Compare two virtual nodes and return an array of changes to turn the left into the right.
       */
-    inline def diffNode(prevNode: VirtualElement, nextNode: VirtualElement): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffNode")(prevNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def diffNode(prevNode: VirtualElement, nextNode: VirtualElement): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffNode")(prevNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   }
   
   object dom {
@@ -107,13 +107,13 @@ object mod {
     */
   inline def element(`type`: String): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
   inline def element(`type`: Thunk): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
-  inline def element[A](`type`: String, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
-  inline def element[A](`type`: Thunk, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
+  inline def element[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+  inline def element[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
   
   inline def h(`type`: String): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
   inline def h(`type`: Thunk): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
-  inline def h[A](`type`: String, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
-  inline def h[A](`type`: Thunk, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
+  inline def h[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+  inline def h[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
   
   object string {
     
@@ -143,9 +143,9 @@ object mod {
     /* was `typeof element` */
     inline def create(`type`: Thunk): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
     /* was `typeof element` */
-    inline def create[A](`type`: String, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
+    inline def create[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
     /* was `typeof element` */
-    inline def create[A](`type`: Thunk, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
+    inline def create[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
     
     inline def createEmptyElement(): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyElement")().asInstanceOf[VirtualElement]
     
@@ -153,7 +153,7 @@ object mod {
     /**
       * Create a node path, eg. (23,5,2,4) => '23.5.2.4'
       */
-    inline def createPath(paths: (Double | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createPath(paths: (Double | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     /**
       * Text nodes are stored as objects to keep things simple
@@ -182,11 +182,11 @@ object mod {
   
   trait Component extends StObject {
     
-    var onCreate: js.UndefOr[js.Function1[/* model */ Model, js.Any]] = js.undefined
+    var onCreate: js.UndefOr[js.Function1[/* model */ Model, Any]] = js.undefined
     
-    var onRemove: js.UndefOr[js.Function1[/* model */ Model, js.Any]] = js.undefined
+    var onRemove: js.UndefOr[js.Function1[/* model */ Model, Any]] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function1[/* model */ Model, js.Any]] = js.undefined
+    var onUpdate: js.UndefOr[js.Function1[/* model */ Model, Any]] = js.undefined
     
     def render(model: Model): VirtualElement
   }
@@ -199,15 +199,15 @@ object mod {
     
     extension [Self <: Component](x: Self) {
       
-      inline def setOnCreate(value: /* model */ Model => js.Any): Self = StObject.set(x, "onCreate", js.Any.fromFunction1(value))
+      inline def setOnCreate(value: /* model */ Model => Any): Self = StObject.set(x, "onCreate", js.Any.fromFunction1(value))
       
       inline def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
       
-      inline def setOnRemove(value: /* model */ Model => js.Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+      inline def setOnRemove(value: /* model */ Model => Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
       
       inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
       
-      inline def setOnUpdate(value: /* model */ Model => js.Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* model */ Model => Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
       inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
@@ -215,19 +215,19 @@ object mod {
     }
   }
   
-  type Dispatch = js.Function1[/* action */ js.Any, js.Any]
+  type Dispatch = js.Function1[/* action */ Any, Any]
   
   trait Model extends StObject {
     
-    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var children: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var dispatch: js.UndefOr[Dispatch] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
     
-    var props: js.UndefOr[js.Any] = js.undefined
+    var props: js.UndefOr[Any] = js.undefined
   }
   object Model {
     
@@ -238,17 +238,17 @@ object mod {
     
     extension [Self <: Model](x: Self) {
       
-      inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setDispatch(value: /* action */ js.Any => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* action */ Any => Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
       inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
@@ -256,13 +256,13 @@ object mod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   
-  type Render = js.Function2[/* vnode */ VirtualElement, /* context */ js.UndefOr[js.Any], Unit]
+  type Render = js.Function2[/* vnode */ VirtualElement, /* context */ js.UndefOr[Any], Unit]
   
   /**
     * Thunk object passed to `element`

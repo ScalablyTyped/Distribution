@@ -12,13 +12,11 @@ trait LodashProperty extends StObject {
   
   def apply(path: Double): LodashProperty9x1 = js.native
   def apply(path: PropertyPath): Unit = js.native
-  def apply(path: PropertyPath, `object`: js.Any): js.Any = js.native
+  def apply(path: PropertyPath, `object`: Any): Any = js.native
   def apply(path: __): LodashProperty11x2 = js.native
-  def apply(path: __, `object`: js.Any): LodashProperty12x2 = js.native
+  def apply(path: __, `object`: Any): LodashProperty12x2 = js.native
   def apply[T](path: Double, `object`: NumericDictionary[T]): js.UndefOr[T] = js.native
-  def apply[TObject /* <: js.Object */](path: __, `object`: TObject): LodashProperty1x2[TObject] = js.native
   def apply[T](path: __, `object`: NumericDictionary[T]): LodashProperty10x2[T] = js.native
-  def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](path: js.Array[TKey]): LodashProperty1x1[TObject, TKey] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](path: js.Array[TKey], `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   def apply[TObject /* <: js.Object */, TKey1 /* <: /* keyof TObject */ String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): LodashProperty3x1[TObject, TKey1, TKey2] = js.native

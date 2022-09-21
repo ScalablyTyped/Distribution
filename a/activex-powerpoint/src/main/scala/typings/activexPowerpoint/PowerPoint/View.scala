@@ -24,7 +24,7 @@ trait View extends StObject {
   
   val MediaControlsWidth: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Paste(): Unit = js.native
   
@@ -45,7 +45,7 @@ trait View extends StObject {
     Link: js.UndefOr[MsoTriState]
   ): Unit = js.native
   
-  def Player(ShapeId: js.Any): typings.activexPowerpoint.PowerPoint.Player = js.native
+  def Player(ShapeId: Any): typings.activexPowerpoint.PowerPoint.Player = js.native
   
   /* private */ @JSName("PowerPoint.View_typekey")
   var PowerPointDotView_typekey: View = js.native
@@ -92,7 +92,7 @@ trait View extends StObject {
   def PrintOut(From: Unit, To: Unit, PrintToFile: Unit, Copies: Double, Collate: MsoTriState): Unit = js.native
   def PrintOut(From: Unit, To: Unit, PrintToFile: Unit, Copies: Unit, Collate: MsoTriState): Unit = js.native
   
-  var Slide: js.Any = js.native
+  var Slide: Any = js.native
   
   val Type: PpViewType = js.native
   

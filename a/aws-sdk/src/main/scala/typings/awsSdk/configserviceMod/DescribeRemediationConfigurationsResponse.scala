@@ -24,6 +24,6 @@ object DescribeRemediationConfigurationsResponse {
     
     inline def setRemediationConfigurationsUndefined: Self = StObject.set(x, "RemediationConfigurations", js.undefined)
     
-    inline def setRemediationConfigurationsVarargs(value: RemediationConfiguration*): Self = StObject.set(x, "RemediationConfigurations", js.Array(value :_*))
+    inline def setRemediationConfigurationsVarargs(value: RemediationConfiguration*): Self = StObject.set(x, "RemediationConfigurations", js.Array(value*))
   }
 }

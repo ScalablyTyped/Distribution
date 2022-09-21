@@ -1,5 +1,10 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.FAILED_ACTIONS
+import typings.awsSdk.awsSdkStrings.KMS
+import typings.awsSdk.awsSdkStrings.S3
+import typings.awsSdk.awsSdkStrings.Schedule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,21 +17,21 @@ type AccessKeyId = java.lang.String
 type AccountId = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.Source
+  - typings.awsSdk.awsSdkStrings.Source_
   - typings.awsSdk.awsSdkStrings.Build_
-  - typings.awsSdk.awsSdkStrings.Deploy
+  - typings.awsSdk.awsSdkStrings.Deploy_
   - typings.awsSdk.awsSdkStrings.Test_
   - typings.awsSdk.awsSdkStrings.Invoke
   - typings.awsSdk.awsSdkStrings.Approval
   - java.lang.String
 */
-type ActionCategory = typings.awsSdk.codepipelineMod._ActionCategory | java.lang.String
+type ActionCategory = _ActionCategory | java.lang.String
 
 type ActionConfigurationKey = java.lang.String
 
-type ActionConfigurationMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codepipelineMod.ActionConfigurationValue]
+type ActionConfigurationMap = StringDictionary[ActionConfigurationValue]
 
-type ActionConfigurationPropertyList = js.Array[typings.awsSdk.codepipelineMod.ActionConfigurationProperty]
+type ActionConfigurationPropertyList = js.Array[ActionConfigurationProperty]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.String_
@@ -34,13 +39,13 @@ type ActionConfigurationPropertyList = js.Array[typings.awsSdk.codepipelineMod.A
   - typings.awsSdk.awsSdkStrings.Boolean_
   - java.lang.String
 */
-type ActionConfigurationPropertyType = typings.awsSdk.codepipelineMod._ActionConfigurationPropertyType | java.lang.String
+type ActionConfigurationPropertyType = _ActionConfigurationPropertyType | java.lang.String
 
 type ActionConfigurationQueryableValue = java.lang.String
 
 type ActionConfigurationValue = java.lang.String
 
-type ActionExecutionDetailList = js.Array[typings.awsSdk.codepipelineMod.ActionExecutionDetail]
+type ActionExecutionDetailList = js.Array[ActionExecutionDetail]
 
 type ActionExecutionId = java.lang.String
 
@@ -51,7 +56,7 @@ type ActionExecutionId = java.lang.String
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type ActionExecutionStatus = typings.awsSdk.codepipelineMod._ActionExecutionStatus | java.lang.String
+type ActionExecutionStatus = _ActionExecutionStatus | java.lang.String
 
 type ActionExecutionToken = java.lang.String
 
@@ -65,46 +70,56 @@ type ActionNamespace = java.lang.String
   - typings.awsSdk.awsSdkStrings.Custom_
   - java.lang.String
 */
-type ActionOwner = typings.awsSdk.codepipelineMod._ActionOwner | java.lang.String
+type ActionOwner = _ActionOwner | java.lang.String
 
 type ActionProvider = java.lang.String
 
-type ActionRunOrder = scala.Double
+type ActionRunOrder = Double
 
-type ActionStateList = js.Array[typings.awsSdk.codepipelineMod.ActionState]
+type ActionStateList = js.Array[ActionState]
 
-type ActionTypeList = js.Array[typings.awsSdk.codepipelineMod.ActionType]
+type ActionTypeDescription = java.lang.String
+
+type ActionTypeList = js.Array[ActionType]
+
+type ActionTypeOwner = java.lang.String
+
+type ActionTypeProperties = js.Array[ActionTypeProperty]
+
+type AllowedAccount = java.lang.String
+
+type AllowedAccounts = js.Array[AllowedAccount]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Approved_
   - typings.awsSdk.awsSdkStrings.Rejected_
   - java.lang.String
 */
-type ApprovalStatus = typings.awsSdk.codepipelineMod._ApprovalStatus | java.lang.String
+type ApprovalStatus = _ApprovalStatus | java.lang.String
 
 type ApprovalSummary = java.lang.String
 
 type ApprovalToken = java.lang.String
 
-type ArtifactDetailList = js.Array[typings.awsSdk.codepipelineMod.ArtifactDetail]
+type ArtifactDetailList = js.Array[ArtifactDetail]
 
-type ArtifactList = js.Array[typings.awsSdk.codepipelineMod.Artifact]
+type ArtifactList = js.Array[Artifact]
 
-type ArtifactLocationType = typings.awsSdk.awsSdkStrings.S3 | java.lang.String
+type ArtifactLocationType = S3 | java.lang.String
 
 type ArtifactName = java.lang.String
 
-type ArtifactRevisionList = js.Array[typings.awsSdk.codepipelineMod.ArtifactRevision]
+type ArtifactRevisionList = js.Array[ArtifactRevision]
 
 type ArtifactStoreLocation = java.lang.String
 
-type ArtifactStoreMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codepipelineMod.ArtifactStore]
+type ArtifactStoreMap = StringDictionary[ArtifactStore]
 
-type ArtifactStoreType = typings.awsSdk.awsSdkStrings.S3 | java.lang.String
+type ArtifactStoreType = S3 | java.lang.String
 
 type BlockerName = java.lang.String
 
-type BlockerType = typings.awsSdk.awsSdkStrings.Schedule | java.lang.String
+type BlockerType = Schedule | java.lang.String
 
 type Boolean = scala.Boolean
 
@@ -126,11 +141,18 @@ type Enabled = scala.Boolean
 
 type EncryptionKeyId = java.lang.String
 
-type EncryptionKeyType = typings.awsSdk.awsSdkStrings.KMS | java.lang.String
+type EncryptionKeyType = KMS | java.lang.String
 
 type ExecutionId = java.lang.String
 
 type ExecutionSummary = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.JobWorker
+  - typings.awsSdk.awsSdkStrings.Lambda_
+  - java.lang.String
+*/
+type ExecutorType = _ExecutorType | java.lang.String
 
 type ExternalExecutionId = java.lang.String
 
@@ -145,13 +167,13 @@ type ExternalExecutionSummary = java.lang.String
   - typings.awsSdk.awsSdkStrings.SystemUnavailable
   - java.lang.String
 */
-type FailureType = typings.awsSdk.codepipelineMod._FailureType | java.lang.String
+type FailureType = _FailureType | java.lang.String
 
-type InputArtifactList = js.Array[typings.awsSdk.codepipelineMod.InputArtifact]
+type InputArtifactList = js.Array[InputArtifact]
 
 type JobId = java.lang.String
 
-type JobList = js.Array[typings.awsSdk.codepipelineMod.Job]
+type JobList = js.Array[Job]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Created_
@@ -163,11 +185,15 @@ type JobList = js.Array[typings.awsSdk.codepipelineMod.Job]
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type JobStatus = typings.awsSdk.codepipelineMod._JobStatus | java.lang.String
+type JobStatus = _JobStatus | java.lang.String
+
+type JobTimeout = Double
 
 type JsonPath = java.lang.String
 
-type LastChangedAt = typings.std.Date
+type LambdaFunctionArn = java.lang.String
+
+type LastChangedAt = js.Date
 
 type LastChangedBy = java.lang.String
 
@@ -175,35 +201,42 @@ type LastUpdatedBy = java.lang.String
 
 type MatchEquals = java.lang.String
 
-type MaxBatchSize = scala.Double
+type MaxBatchSize = Double
 
-type MaxResults = scala.Double
+type MaxPipelines = Double
 
-type MaximumArtifactCount = scala.Double
+type MaxResults = Double
+
+type MaximumActionTypeArtifactCount = Double
+
+type MaximumArtifactCount = Double
 
 type Message = java.lang.String
 
-type MinimumArtifactCount = scala.Double
+type MinimumActionTypeArtifactCount = Double
+
+type MinimumArtifactCount = Double
 
 type NextToken = java.lang.String
 
 type Nonce = java.lang.String
 
-type OutputArtifactList = js.Array[typings.awsSdk.codepipelineMod.OutputArtifact]
+type OutputArtifactList = js.Array[OutputArtifact]
 
 type OutputVariablesKey = java.lang.String
 
-type OutputVariablesMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codepipelineMod.OutputVariablesValue]
+type OutputVariablesMap = StringDictionary[OutputVariablesValue]
 
 type OutputVariablesValue = java.lang.String
 
-type Percentage = scala.Double
+type Percentage = Double
 
 type PipelineArn = java.lang.String
 
 type PipelineExecutionId = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Cancelled_
   - typings.awsSdk.awsSdkStrings.InProgress_
   - typings.awsSdk.awsSdkStrings.Stopped_
   - typings.awsSdk.awsSdkStrings.Stopping_
@@ -212,21 +245,31 @@ type PipelineExecutionId = java.lang.String
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type PipelineExecutionStatus = typings.awsSdk.codepipelineMod._PipelineExecutionStatus | java.lang.String
+type PipelineExecutionStatus = _PipelineExecutionStatus | java.lang.String
 
-type PipelineExecutionSummaryList = js.Array[typings.awsSdk.codepipelineMod.PipelineExecutionSummary]
+type PipelineExecutionStatusSummary = java.lang.String
 
-type PipelineList = js.Array[typings.awsSdk.codepipelineMod.PipelineSummary]
+type PipelineExecutionSummaryList = js.Array[PipelineExecutionSummary]
+
+type PipelineList = js.Array[PipelineSummary]
 
 type PipelineName = java.lang.String
 
-type PipelineStageDeclarationList = js.Array[typings.awsSdk.codepipelineMod.StageDeclaration]
+type PipelineStageDeclarationList = js.Array[StageDeclaration]
 
-type PipelineVersion = scala.Double
+type PipelineVersion = Double
 
-type QueryParamMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codepipelineMod.ActionConfigurationQueryableValue]
+type PolicyStatementsTemplate = java.lang.String
 
-type ResolvedActionConfigurationMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codepipelineMod.String]
+type PollingAccountList = js.Array[AccountId]
+
+type PollingServicePrincipalList = js.Array[ServicePrincipal]
+
+type PropertyDescription = java.lang.String
+
+type QueryParamMap = StringDictionary[ActionConfigurationQueryableValue]
+
+type ResolvedActionConfigurationMap = StringDictionary[String]
 
 type ResourceArn = java.lang.String
 
@@ -248,15 +291,18 @@ type S3ObjectKey = java.lang.String
 
 type SecretAccessKey = java.lang.String
 
+type ServicePrincipal = java.lang.String
+
 type SessionToken = java.lang.String
 
-type SourceRevisionList = js.Array[typings.awsSdk.codepipelineMod.SourceRevision]
+type SourceRevisionList = js.Array[SourceRevision]
 
-type StageActionDeclarationList = js.Array[typings.awsSdk.codepipelineMod.ActionDeclaration]
+type StageActionDeclarationList = js.Array[ActionDeclaration]
 
-type StageBlockerDeclarationList = js.Array[typings.awsSdk.codepipelineMod.BlockerDeclaration]
+type StageBlockerDeclarationList = js.Array[BlockerDeclaration]
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Cancelled_
   - typings.awsSdk.awsSdkStrings.InProgress_
   - typings.awsSdk.awsSdkStrings.Failed_
   - typings.awsSdk.awsSdkStrings.Stopped_
@@ -264,20 +310,20 @@ type StageBlockerDeclarationList = js.Array[typings.awsSdk.codepipelineMod.Block
   - typings.awsSdk.awsSdkStrings.Succeeded_
   - java.lang.String
 */
-type StageExecutionStatus = typings.awsSdk.codepipelineMod._StageExecutionStatus | java.lang.String
+type StageExecutionStatus = _StageExecutionStatus | java.lang.String
 
 type StageName = java.lang.String
 
-type StageRetryMode = typings.awsSdk.awsSdkStrings.FAILED_ACTIONS | java.lang.String
+type StageRetryMode = FAILED_ACTIONS | java.lang.String
 
-type StageStateList = js.Array[typings.awsSdk.codepipelineMod.StageState]
+type StageStateList = js.Array[StageState]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Inbound_
   - typings.awsSdk.awsSdkStrings.Outbound_
   - java.lang.String
 */
-type StageTransitionType = typings.awsSdk.codepipelineMod._StageTransitionType | java.lang.String
+type StageTransitionType = _StageTransitionType | java.lang.String
 
 type StopPipelineExecutionReason = java.lang.String
 
@@ -285,19 +331,19 @@ type String = java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.codepipelineMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.codepipelineMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
 type ThirdPartyJobId = java.lang.String
 
-type ThirdPartyJobList = js.Array[typings.awsSdk.codepipelineMod.ThirdPartyJob]
+type ThirdPartyJobList = js.Array[ThirdPartyJob]
 
-type Time = typings.std.Date
+type Time = js.Date
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 type TriggerDetail = java.lang.String
 
@@ -310,7 +356,7 @@ type TriggerDetail = java.lang.String
   - typings.awsSdk.awsSdkStrings.PutActionRevision
   - java.lang.String
 */
-type TriggerType = typings.awsSdk.codepipelineMod._TriggerType | java.lang.String
+type TriggerType = _TriggerType | java.lang.String
 
 type Url = java.lang.String
 
@@ -330,17 +376,17 @@ type WebhookAuthConfigurationSecretToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.UNAUTHENTICATED
   - java.lang.String
 */
-type WebhookAuthenticationType = typings.awsSdk.codepipelineMod._WebhookAuthenticationType | java.lang.String
+type WebhookAuthenticationType = _WebhookAuthenticationType | java.lang.String
 
 type WebhookErrorCode = java.lang.String
 
 type WebhookErrorMessage = java.lang.String
 
-type WebhookFilters = js.Array[typings.awsSdk.codepipelineMod.WebhookFilterRule]
+type WebhookFilters = js.Array[WebhookFilterRule]
 
-type WebhookLastTriggered = typings.std.Date
+type WebhookLastTriggered = js.Date
 
-type WebhookList = js.Array[typings.awsSdk.codepipelineMod.ListWebhookItem]
+type WebhookList = js.Array[ListWebhookItem]
 
 type WebhookName = java.lang.String
 
@@ -351,4 +397,4 @@ type WebhookUrl = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.codepipelineMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

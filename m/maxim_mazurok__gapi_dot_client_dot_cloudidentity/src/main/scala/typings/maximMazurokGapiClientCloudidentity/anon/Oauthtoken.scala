@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientCloudidentity.anon
 
-import typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest
+import typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +27,8 @@ trait Oauthtoken extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. [Resource name](https://cloud.google.com/apis/design/resource_names) of the Device in format: `devices/{device_id}/deviceUsers/{device_user_id}`, where device_id is
-    * the unique ID assigned to the Device, and device_user_id is the unique ID assigned to the User.
+    * Required. [Resource name](https://cloud.google.com/apis/design/resource_names) of the Device in format: `devices/{device}/deviceUsers/{device_user}`, where device is the unique
+    * ID assigned to the Device, and device_user is the unique ID assigned to the User.
     */
   var name: String
   
@@ -42,7 +42,7 @@ trait Oauthtoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest
+  var resource: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait Oauthtoken extends StObject {
 }
 object Oauthtoken {
   
-  inline def apply(name: String, resource: GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest): Oauthtoken = {
+  inline def apply(name: String, resource: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest): Oauthtoken = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Oauthtoken]
   }
@@ -97,7 +97,7 @@ object Oauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

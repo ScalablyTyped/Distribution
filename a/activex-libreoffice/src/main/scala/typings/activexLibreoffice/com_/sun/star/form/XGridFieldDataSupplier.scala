@@ -29,7 +29,7 @@ trait XGridFieldDataSupplier
     * If a column does not support the requested type, `NULL` is returned at the respective position.
     * @see XGridFieldDataSupplier.queryFieldDataType
     */
-  def queryFieldData(nRow: Double, xType: `type`): SafeArray[js.Any]
+  def queryFieldData(nRow: Double, xType: `type`): SafeArray[Any]
   
   /**
     * checks whether or not the content of the grid's columns can be retrieved in the requested format.
@@ -47,9 +47,9 @@ object XGridFieldDataSupplier {
   
   inline def apply(
     acquire: () => Unit,
-    queryFieldData: (Double, `type`) => SafeArray[js.Any],
+    queryFieldData: (Double, `type`) => SafeArray[Any],
     queryFieldDataType: `type` => SafeArray[Boolean],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XGridFieldDataSupplier = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryFieldData = js.Any.fromFunction2(queryFieldData), queryFieldDataType = js.Any.fromFunction1(queryFieldDataType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -58,7 +58,7 @@ object XGridFieldDataSupplier {
   
   extension [Self <: XGridFieldDataSupplier](x: Self) {
     
-    inline def setQueryFieldData(value: (Double, `type`) => SafeArray[js.Any]): Self = StObject.set(x, "queryFieldData", js.Any.fromFunction2(value))
+    inline def setQueryFieldData(value: (Double, `type`) => SafeArray[Any]): Self = StObject.set(x, "queryFieldData", js.Any.fromFunction2(value))
     
     inline def setQueryFieldDataType(value: `type` => SafeArray[Boolean]): Self = StObject.set(x, "queryFieldDataType", js.Any.fromFunction1(value))
   }

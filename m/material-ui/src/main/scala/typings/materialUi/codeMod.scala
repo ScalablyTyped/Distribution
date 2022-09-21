@@ -10,10 +10,10 @@ object codeMod {
   
   @JSImport("material-ui/svg-icons/action/code", JSImport.Default)
   @js.native
-  class default () extends ActionCode
+  open class default () extends ActionCode
   
   @JSImport("material-ui/svg-icons/action/code", "ActionCode")
   @js.native
-  class ActionCode ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionCode ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param position the position of the vertex (defaut: 0,0,0)
   * @param normal the normal of the vertex (defaut: 0,1,0)
   */
-class PositionNormalVertex ()
+open class PositionNormalVertex ()
   extends typings.babylonjs.mathVertexFormatMod.PositionNormalVertex {
   def this(/** the position of the vertex (defaut: 0,0,0) */
   position: typings.babylonjs.mathVectorMod.Vector3) = this()

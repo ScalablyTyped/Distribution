@@ -37,7 +37,7 @@ object GetSnapshotRequest {
     
     inline def setComputedStyleWhitelist(value: js.Array[String]): Self = StObject.set(x, "computedStyleWhitelist", value.asInstanceOf[js.Any])
     
-    inline def setComputedStyleWhitelistVarargs(value: String*): Self = StObject.set(x, "computedStyleWhitelist", js.Array(value :_*))
+    inline def setComputedStyleWhitelistVarargs(value: String*): Self = StObject.set(x, "computedStyleWhitelist", js.Array(value*))
     
     inline def setIncludeEventListeners(value: Boolean): Self = StObject.set(x, "includeEventListeners", value.asInstanceOf[js.Any])
     

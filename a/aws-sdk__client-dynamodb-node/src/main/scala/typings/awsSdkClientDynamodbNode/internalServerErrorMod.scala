@@ -8,5 +8,5 @@ object internalServerErrorMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/InternalServerError", "InternalServerError")
   @js.native
-  val InternalServerError: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InternalServerError: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -37,7 +37,7 @@ object CodeGenNode {
     
     inline def setArgs(value: CodeGenNodeArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Args", js.Array(value*))
     
     inline def setId(value: CodeGenIdentifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,7 @@ object Attributes {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: (String | FetchAttribute)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: (String | FetchAttribute)*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setDataMapping(value: DataMapping[K, D, Kin, Din]): Self = StObject.set(x, "dataMapping", value.asInstanceOf[js.Any])
     
@@ -50,6 +50,6 @@ object Attributes {
     
     inline def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
     
-    inline def setSortCriteriaVarargs(value: SortCriterion[D]*): Self = StObject.set(x, "sortCriteria", js.Array(value :_*))
+    inline def setSortCriteriaVarargs(value: SortCriterion[D]*): Self = StObject.set(x, "sortCriteria", js.Array(value*))
   }
 }

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IDataPackagePropertySetView
   extends StObject
-     with IMapView[String, js.Any] {
+     with IMapView[String, Any] {
   
   var applicationListingUri: Uri
   
@@ -34,11 +34,11 @@ object IDataPackagePropertySetView {
     applicationName: String,
     description: String,
     fileTypes: IVectorView[String],
-    first: () => IIterator[IKeyValuePair[String, js.Any]],
+    first: () => IIterator[IKeyValuePair[String, Any]],
     hasKey: String => Boolean,
-    lookup: String => js.Any,
+    lookup: String => Any,
     size: Double,
-    split: () => First[String, js.Any],
+    split: () => First[String, Any],
     thumbnail: RandomAccessStreamReference,
     title: String
   ): IDataPackagePropertySetView = {

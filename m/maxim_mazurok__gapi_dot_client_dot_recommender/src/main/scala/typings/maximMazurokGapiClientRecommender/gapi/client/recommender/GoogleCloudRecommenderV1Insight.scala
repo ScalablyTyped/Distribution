@@ -17,7 +17,7 @@ trait GoogleCloudRecommenderV1Insight extends StObject {
   var content: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight & TopLevel[Any]
   ] = js.undefined
   
   /** Free-form human readable summary in English. The maximum length is 500 characters. */
@@ -38,6 +38,9 @@ trait GoogleCloudRecommenderV1Insight extends StObject {
   /** Observation period that led to the insight. The source data used to generate the insight ends at last_refresh_time and begins at (last_refresh_time - observation_period). */
   var observationPeriod: js.UndefOr[String] = js.undefined
   
+  /** Insight's severity. */
+  var severity: js.UndefOr[String] = js.undefined
+  
   /** Information state and metadata. */
   var stateInfo: js.UndefOr[GoogleCloudRecommenderV1InsightStateInfo] = js.undefined
   
@@ -57,7 +60,7 @@ object GoogleCloudRecommenderV1Insight {
     
     inline def setAssociatedRecommendationsUndefined: Self = StObject.set(x, "associatedRecommendations", js.undefined)
     
-    inline def setAssociatedRecommendationsVarargs(value: GoogleCloudRecommenderV1InsightRecommendationReference*): Self = StObject.set(x, "associatedRecommendations", js.Array(value :_*))
+    inline def setAssociatedRecommendationsVarargs(value: GoogleCloudRecommenderV1InsightRecommendationReference*): Self = StObject.set(x, "associatedRecommendations", js.Array(value*))
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -66,7 +69,7 @@ object GoogleCloudRecommenderV1Insight {
     inline def setContent(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight & TopLevel[Any]
     ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
@@ -95,6 +98,10 @@ object GoogleCloudRecommenderV1Insight {
     
     inline def setObservationPeriodUndefined: Self = StObject.set(x, "observationPeriod", js.undefined)
     
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    
     inline def setStateInfo(value: GoogleCloudRecommenderV1InsightStateInfo): Self = StObject.set(x, "stateInfo", value.asInstanceOf[js.Any])
     
     inline def setStateInfoUndefined: Self = StObject.set(x, "stateInfo", js.undefined)
@@ -103,6 +110,6 @@ object GoogleCloudRecommenderV1Insight {
     
     inline def setTargetResourcesUndefined: Self = StObject.set(x, "targetResources", js.undefined)
     
-    inline def setTargetResourcesVarargs(value: String*): Self = StObject.set(x, "targetResources", js.Array(value :_*))
+    inline def setTargetResourcesVarargs(value: String*): Self = StObject.set(x, "targetResources", js.Array(value*))
   }
 }

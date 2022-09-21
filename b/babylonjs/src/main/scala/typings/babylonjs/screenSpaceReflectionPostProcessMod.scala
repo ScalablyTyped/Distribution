@@ -14,7 +14,7 @@ object screenSpaceReflectionPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/screenSpaceReflectionPostProcess", "ScreenSpaceReflectionPostProcess")
   @js.native
-  class ScreenSpaceReflectionPostProcess protected () extends PostProcess {
+  open class ScreenSpaceReflectionPostProcess protected () extends PostProcess {
     /**
       * Creates a new instance of ScreenSpaceReflectionPostProcess.
       * @param name The name of the effect.
@@ -41,27 +41,29 @@ object screenSpaceReflectionPostProcessMod {
       forceGeometryBuffer: js.UndefOr[Boolean]
     ) = this()
     
-    /* private */ var _enableSmoothReflections: js.Any = js.native
+    /* private */ var _enableSmoothReflections: Any = js.native
     
-    /* private */ var _forceGeometryBuffer: js.Any = js.native
+    /* private */ var _forceGeometryBuffer: Any = js.native
     
-    /* private */ var _geometryBufferRenderer: js.Any = js.native
+    /* private */ def _geometryBufferRenderer: Any = js.native
     
-    /* private */ var _prePassRenderer: js.Any = js.native
+    /* private */ var _isSceneRightHanded: Any = js.native
     
-    /* private */ var _reflectionSamples: js.Any = js.native
+    /* private */ def _prePassRenderer: Any = js.native
     
-    /* private */ var _smoothSteps: js.Any = js.native
+    /* private */ var _reflectionSamples: Any = js.native
     
-    /* private */ var _updateEffectDefines: js.Any = js.native
+    /* private */ var _smoothSteps: Any = js.native
+    
+    /* private */ var _updateEffectDefines: Any = js.native
     
     /**
-      * Gets wether or not smoothing reflections is enabled.
+      * Gets whether or not smoothing reflections is enabled.
       * Enabling smoothing will require more GPU power and can generate a drop in FPS.
       */
     def enableSmoothReflections: Boolean = js.native
     /**
-      * Sets wether or not smoothing reflections is enabled.
+      * Sets whether or not smoothing reflections is enabled.
       * Enabling smoothing will require more GPU power and can generate a drop in FPS.
       */
     def enableSmoothReflections_=(enabled: Boolean): Unit = js.native
@@ -117,7 +119,13 @@ object screenSpaceReflectionPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): ScreenSpaceReflectionPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ScreenSpaceReflectionPostProcess]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): ScreenSpaceReflectionPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ScreenSpaceReflectionPostProcess]
   }
 }

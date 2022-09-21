@@ -35,12 +35,12 @@ object distributedSystemArrayMod {
     /**
       * @hidden
       */
-    /* private */ var estimate_process_resource: js.Any = js.native
+    /* private */ var estimate_process_resource: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var estimate_system_performance: js.Any = js.native
+    /* private */ var estimate_system_performance: Any = js.native
     
     /**
       * Get a process.
@@ -58,7 +58,7 @@ object distributedSystemArrayMod {
       *
       * @return An {@link HasmMap> containing pairs of string and {@link DistributedProcess} object.
       */
-    def getProcessMap(): js.Any = js.native
+    def getProcessMap(): Any = js.native
     
     /**
       * Test whether the process exists.
@@ -80,6 +80,6 @@ object distributedSystemArrayMod {
     /**
       * @hidden
       */
-    /* private */ var process_map_ : js.Any = js.native
+    /* private */ var process_map_ : Any = js.native
   }
 }

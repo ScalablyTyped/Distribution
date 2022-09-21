@@ -18,7 +18,7 @@ trait IDataWriter
     * @param record Object The record that we are writing to the server.
     * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
     */
-  var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the value of writeAllFields
     * @returns Boolean
@@ -60,7 +60,7 @@ object IDataWriter {
     
     inline def setGetNamePropertyUndefined: Self = StObject.set(x, "getNameProperty", js.undefined)
     
-    inline def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
+    inline def setGetRecordData(value: /* record */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
     
     inline def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
     

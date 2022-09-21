@@ -9,7 +9,7 @@ object modalIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/modal/index.native", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antdMobileRn.modalNativeMod.default
   object default {
     
@@ -20,8 +20,8 @@ object modalIndexNativeMod {
     /* static member */
     @JSImport("antd-mobile-rn/lib/modal/index.native", "default.alert")
     @js.native
-    def alert: js.Any = js.native
-    inline def alert_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
+    def alert: Any = js.native
+    inline def alert_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
     
     /* static member */
     object contextTypes {
@@ -94,13 +94,13 @@ object modalIndexNativeMod {
     /* static member */
     @JSImport("antd-mobile-rn/lib/modal/index.native", "default.operation")
     @js.native
-    def operation: js.Any = js.native
-    inline def operation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operation")(x.asInstanceOf[js.Any])
+    def operation: Any = js.native
+    inline def operation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operation")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("antd-mobile-rn/lib/modal/index.native", "default.prompt")
     @js.native
-    def prompt: js.Any = js.native
-    inline def prompt_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prompt")(x.asInstanceOf[js.Any])
+    def prompt: Any = js.native
+    inline def prompt_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prompt")(x.asInstanceOf[js.Any])
   }
 }

@@ -10,7 +10,7 @@ trait IgGridSummariesLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Text of the button Cancel in the summaries dropdown

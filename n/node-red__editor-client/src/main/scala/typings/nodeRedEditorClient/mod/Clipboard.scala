@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Clipboard extends StObject {
   
-  def copyText(value: js.Any, element: HTMLElement, msg: String): Boolean = js.native
+  def copyText(value: Any, element: HTMLElement, msg: String): Boolean = js.native
   
   def `export`(): Unit = js.native
   def `export`(mode: String): Unit = js.native

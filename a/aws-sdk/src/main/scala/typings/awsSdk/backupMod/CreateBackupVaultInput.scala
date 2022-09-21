@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateBackupVaultInput extends StObject {
   
   /**
-    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
+    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Amazon Web Services Region where they are created. They consist of letters, numbers, and hyphens.
     */
   var BackupVaultName: typings.awsSdk.backupMod.BackupVaultName
   
@@ -17,7 +17,7 @@ trait CreateBackupVaultInput extends StObject {
   var BackupVaultTags: js.UndefOr[Tags] = js.undefined
   
   /**
-    * A unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice.
+    * A unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice. This parameter is optional. If used, this parameter must contain 1 to 50 alphanumeric or '-_.' characters.
     */
   var CreatorRequestId: js.UndefOr[String] = js.undefined
   

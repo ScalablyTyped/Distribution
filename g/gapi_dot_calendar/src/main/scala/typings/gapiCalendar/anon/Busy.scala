@@ -21,12 +21,12 @@ object Busy {
     
     inline def setBusy(value: js.Array[End]): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     
-    inline def setBusyVarargs(value: End*): Self = StObject.set(x, "busy", js.Array(value :_*))
+    inline def setBusyVarargs(value: End*): Self = StObject.set(x, "busy", js.Array(value*))
     
     inline def setErrors(value: js.Array[Domain]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: Domain*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Domain*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

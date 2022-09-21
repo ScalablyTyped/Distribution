@@ -1,64 +1,69 @@
 package typings.devextreme.mod.DevExpress
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Component extends StObject {
+trait Component[TProperties] extends StObject {
   
   /**
-    * [descr:Component.beginUpdate()]
+    * Prevents the UI component from refreshing until the endUpdate() method is called.
     */
   def beginUpdate(): Unit = js.native
   
   /**
-    * [descr:Component.endUpdate()]
+    * Refreshes the UI component after a call of the beginUpdate() method.
     */
   def endUpdate(): Unit = js.native
   
   /**
-    * [descr:Component.instance()]
+    * Gets the UI component&apos;s instance. Use it to access other methods of the UI component.
     */
   def instance(): this.type = js.native
   
   /**
-    * [descr:Component.off(eventName)]
+    * Detaches all event handlers from a single event.
     */
   def off(eventName: String): this.type = js.native
   /**
-    * [descr:Component.off(eventName, eventHandler)]
+    * Detaches a particular event handler from a single event.
     */
   def off(eventName: String, eventHandler: js.Function): this.type = js.native
   
   /**
-    * [descr:Component.on(eventName, eventHandler)]
+    * Subscribes to an event.
     */
   def on(eventName: String, eventHandler: js.Function): this.type = js.native
   /**
-    * [descr:Component.on(events)]
+    * Subscribes to events.
     */
-  def on(events: js.Any): this.type = js.native
+  def on(events: StringDictionary[js.Function]): this.type = js.native
   
   /**
-    * [descr:Component.option()]
+    * Gets all UI component properties.
     */
-  def option(): js.Any = js.native
+  def option(): TProperties = js.native
   /**
-    * [descr:Component.option(optionName)]
+    * Updates the values of several properties.
     */
-  def option(optionName: String): js.Any = js.native
+  def option(options: Partial[TProperties]): Unit = js.native
   /**
-    * [descr:Component.option(optionName, optionValue)]
+    * Gets the value of a single property.
     */
-  def option(optionName: String, optionValue: js.Any): Unit = js.native
+  def option[TPropertyName /* <: String */](optionName: TPropertyName): Any | (/* import warning: importer.ImportType#apply Failed type conversion: TProperties[TPropertyName] */ js.Any) = js.native
   /**
-    * [descr:Component.option(options)]
+    * Updates the value of a single property.
     */
-  def option(options: js.Any): Unit = js.native
+  def option[TPropertyName /* <: String */](
+    optionName: TPropertyName,
+    optionValue: Any | (/* import warning: importer.ImportType#apply Failed type conversion: TProperties[TPropertyName] */ js.Any)
+  ): Unit = js.native
   
   /**
-    * [descr:Component.resetOption(optionName)]
+    * Resets a property to its default value.
     */
   def resetOption(optionName: String): Unit = js.native
 }

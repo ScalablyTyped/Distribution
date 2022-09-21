@@ -1,16 +1,21 @@
 package typings.googleapis
 
 import typings.gaxios.commonMod.GaxiosPromise
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.googleapisCommon.mod.BaseExternalAccountClient
+import typings.googleapisCommon.mod.Compute
+import typings.googleapisCommon.mod.GoogleAuth
+import typings.googleapisCommon.mod.JWT
+import typings.googleapisCommon.mod.OAuth2Client
+import typings.googleapisCommon.mod.UserRefreshClient
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +24,9 @@ object libraryagentV1Mod {
   
   object libraryagentV1 {
     
-    /**
-      * Library Agent API
-      *
-      * A simple Google Example Library API.
-      *
-      * @example
-      * const {google} = require('googleapis');
-      * const libraryagent = google.libraryagent('v1');
-      *
-      * @namespace libraryagent
-      * @type {Function}
-      * @version v1
-      * @variation v1
-      * @param {object=} options Options for Libraryagent
-      */
     @JSImport("googleapis/build/src/apis/libraryagent/v1", "libraryagent_v1.Libraryagent")
     @js.native
-    class Libraryagent protected () extends StObject {
+    open class Libraryagent protected () extends StObject {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
       
@@ -47,25 +37,13 @@ object libraryagentV1Mod {
     
     @JSImport("googleapis/build/src/apis/libraryagent/v1", "libraryagent_v1.Resource$Shelves")
     @js.native
-    class ResourceShelves protected () extends StObject {
+    open class ResourceShelves protected () extends StObject {
       def this(context: APIRequestContext) = this()
       
       var books: ResourceShelvesBooks = js.native
       
       var context: APIRequestContext = js.native
       
-      /**
-        * libraryagent.shelves.get
-        * @desc Gets a shelf. Returns NOT_FOUND if the shelf does not exist.
-        * @alias libraryagent.shelves.get
-        * @memberOf! ()
-        *
-        * @param {object} params Parameters for request
-        * @param {string} params.name The name of the shelf to retrieve.
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
-        */
       def get(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Shelf] = js.native
       def get(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Shelf]): Unit = js.native
       def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Shelf] = js.native
@@ -76,8 +54,8 @@ object libraryagentV1Mod {
       ): Unit = js.native
       def get(
         params: ParamsResourceShelvesGet,
-        options: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Shelf],
-        callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Shelf]
+        options: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1Shelf],
+        callback: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1Shelf]
       ): Unit = js.native
       def get(params: ParamsResourceShelvesGet, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Shelf] = js.native
       def get(
@@ -85,21 +63,64 @@ object libraryagentV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Shelf]
       ): Unit = js.native
-      
       /**
-        * libraryagent.shelves.list
-        * @desc Lists shelves. The order is unspecified but deterministic. Newly
-        * created shelves will not necessarily be added to the end of this list.
-        * @alias libraryagent.shelves.list
-        * @memberOf! ()
+        * Gets a shelf. Returns NOT_FOUND if the shelf does not exist.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/libraryagent.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
         *
-        * @param {object} params Parameters for request
-        * @param {integer=} params.pageSize Requested page size. Server may return fewer shelves than requested. If unspecified, server will pick an appropriate default.
-        * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListShelvesResponse.next_page_token returned from the previous call to `ListShelves` method.
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
+        * const {google} = require('googleapis');
+        * const libraryagent = google.libraryagent('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await libraryagent.shelves.get({
+        *     // Required. The name of the shelf to retrieve.
+        *     name: 'shelves/my-shelve',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "name": "my_name",
+        *   //   "theme": "my_theme"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
         */
+      def get(params: ParamsResourceShelvesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def get(
+        params: ParamsResourceShelvesGet,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
+      
       def list(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListShelvesResponse] = js.native
       def list(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListShelvesResponse]): Unit = js.native
       def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListShelvesResponse] = js.native
@@ -110,8 +131,8 @@ object libraryagentV1Mod {
       ): Unit = js.native
       def list(
         params: ParamsResourceShelvesList,
-        options: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListShelvesResponse],
-        callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListShelvesResponse]
+        options: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1ListShelvesResponse],
+        callback: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1ListShelvesResponse]
       ): Unit = js.native
       def list(params: ParamsResourceShelvesList, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListShelvesResponse] = js.native
       def list(
@@ -119,28 +140,72 @@ object libraryagentV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListShelvesResponse]
       ): Unit = js.native
+      /**
+        * Lists shelves. The order is unspecified but deterministic. Newly created shelves will not necessarily be added to the end of this list.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/libraryagent.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
+        *
+        * const {google} = require('googleapis');
+        * const libraryagent = google.libraryagent('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await libraryagent.shelves.list({
+        *     // Requested page size. Server may return fewer shelves than requested. If unspecified, server will pick an appropriate default.
+        *     pageSize: 'placeholder-value',
+        *     // A token identifying a page of results the server should return. Typically, this is the value of ListShelvesResponse.next_page_token returned from the previous call to `ListShelves` method.
+        *     pageToken: 'placeholder-value',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "nextPageToken": "my_nextPageToken",
+        *   //   "shelves": []
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
+        */
+      def list(params: ParamsResourceShelvesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def list(
+        params: ParamsResourceShelvesList,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
     }
     
     @JSImport("googleapis/build/src/apis/libraryagent/v1", "libraryagent_v1.Resource$Shelves$Books")
     @js.native
-    class ResourceShelvesBooks protected () extends StObject {
+    open class ResourceShelvesBooks protected () extends StObject {
       def this(context: APIRequestContext) = this()
       
-      /**
-        * libraryagent.shelves.books.borrow
-        * @desc Borrow a book from the library. Returns the book if it is borrowed
-        * successfully. Returns NOT_FOUND if the book does not exist in the
-        * library. Returns quota exceeded error if the amount of books borrowed
-        * exceeds allocation quota in any dimensions.
-        * @alias libraryagent.shelves.books.borrow
-        * @memberOf! ()
-        *
-        * @param {object} params Parameters for request
-        * @param {string} params.name The name of the book to borrow.
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
-        */
       def borrow(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
       def borrow(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]): Unit = js.native
       def borrow(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
@@ -151,8 +216,8 @@ object libraryagentV1Mod {
       ): Unit = js.native
       def borrow(
         params: ParamsResourceShelvesBooksBorrow,
-        options: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book],
-        callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]
+        options: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1Book],
+        callback: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1Book]
       ): Unit = js.native
       def borrow(params: ParamsResourceShelvesBooksBorrow, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
       def borrow(
@@ -160,21 +225,68 @@ object libraryagentV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]
       ): Unit = js.native
+      /**
+        * Borrow a book from the library. Returns the book if it is borrowed successfully. Returns NOT_FOUND if the book does not exist in the library. Returns quota exceeded error if the amount of books borrowed exceeds allocation quota in any dimensions.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/libraryagent.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
+        *
+        * const {google} = require('googleapis');
+        * const libraryagent = google.libraryagent('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await libraryagent.shelves.books.borrow({
+        *     // Required. The name of the book to borrow.
+        *     name: 'shelves/my-shelve/books/my-book',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "author": "my_author",
+        *   //   "name": "my_name",
+        *   //   "read": false,
+        *   //   "title": "my_title"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
+        */
+      def borrow(params: ParamsResourceShelvesBooksBorrow, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def borrow(
+        params: ParamsResourceShelvesBooksBorrow,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
       
       var context: APIRequestContext = js.native
       
-      /**
-        * libraryagent.shelves.books.get
-        * @desc Gets a book. Returns NOT_FOUND if the book does not exist.
-        * @alias libraryagent.shelves.books.get
-        * @memberOf! ()
-        *
-        * @param {object} params Parameters for request
-        * @param {string} params.name The name of the book to retrieve.
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
-        */
       def get(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
       def get(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]): Unit = js.native
       def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
@@ -185,8 +297,8 @@ object libraryagentV1Mod {
       ): Unit = js.native
       def get(
         params: ParamsResourceShelvesBooksGet,
-        options: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book],
-        callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]
+        options: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1Book],
+        callback: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1Book]
       ): Unit = js.native
       def get(params: ParamsResourceShelvesBooksGet, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
       def get(
@@ -194,23 +306,66 @@ object libraryagentV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]
       ): Unit = js.native
-      
       /**
-        * libraryagent.shelves.books.list
-        * @desc Lists books in a shelf. The order is unspecified but deterministic.
-        * Newly created books will not necessarily be added to the end of this
-        * list. Returns NOT_FOUND if the shelf does not exist.
-        * @alias libraryagent.shelves.books.list
-        * @memberOf! ()
+        * Gets a book. Returns NOT_FOUND if the book does not exist.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/libraryagent.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
         *
-        * @param {object} params Parameters for request
-        * @param {integer=} params.pageSize Requested page size. Server may return fewer books than requested. If unspecified, server will pick an appropriate default.
-        * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListBooksResponse.next_page_token. returned from the previous call to `ListBooks` method.
-        * @param {string} params.parent The name of the shelf whose books we'd like to list.
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
+        * const {google} = require('googleapis');
+        * const libraryagent = google.libraryagent('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await libraryagent.shelves.books.get({
+        *     // Required. The name of the book to retrieve.
+        *     name: 'shelves/my-shelve/books/my-book',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "author": "my_author",
+        *   //   "name": "my_name",
+        *   //   "read": false,
+        *   //   "title": "my_title"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
         */
+      def get(params: ParamsResourceShelvesBooksGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def get(
+        params: ParamsResourceShelvesBooksGet,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
+      
       def list(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListBooksResponse] = js.native
       def list(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListBooksResponse]): Unit = js.native
       def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListBooksResponse] = js.native
@@ -221,8 +376,8 @@ object libraryagentV1Mod {
       ): Unit = js.native
       def list(
         params: ParamsResourceShelvesBooksList,
-        options: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListBooksResponse],
-        callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListBooksResponse]
+        options: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1ListBooksResponse],
+        callback: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1ListBooksResponse]
       ): Unit = js.native
       def list(params: ParamsResourceShelvesBooksList, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListBooksResponse] = js.native
       def list(
@@ -230,21 +385,68 @@ object libraryagentV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListBooksResponse]
       ): Unit = js.native
-      
       /**
-        * libraryagent.shelves.books.return
-        * @desc Return a book to the library. Returns the book if it is returned to
-        * the library successfully. Returns error if the book does not belong to
-        * the library or the users didn't borrow before.
-        * @alias libraryagent.shelves.books.return
-        * @memberOf! ()
+        * Lists books in a shelf. The order is unspecified but deterministic. Newly created books will not necessarily be added to the end of this list. Returns NOT_FOUND if the shelf does not exist.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/libraryagent.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
         *
-        * @param {object} params Parameters for request
-        * @param {string} params.name The name of the book to return.
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
+        * const {google} = require('googleapis');
+        * const libraryagent = google.libraryagent('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await libraryagent.shelves.books.list({
+        *     // Requested page size. Server may return fewer books than requested. If unspecified, server will pick an appropriate default.
+        *     pageSize: 'placeholder-value',
+        *     // A token identifying a page of results the server should return. Typically, this is the value of ListBooksResponse.next_page_token. returned from the previous call to `ListBooks` method.
+        *     pageToken: 'placeholder-value',
+        *     // Required. The name of the shelf whose books we'd like to list.
+        *     parent: 'shelves/my-shelve',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "books": [],
+        *   //   "nextPageToken": "my_nextPageToken"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
         */
+      def list(params: ParamsResourceShelvesBooksList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def list(
+        params: ParamsResourceShelvesBooksList,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
+      
       def `return`(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
       def `return`(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]): Unit = js.native
       def `return`(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
@@ -255,14 +457,73 @@ object libraryagentV1Mod {
       ): Unit = js.native
       def `return`(
         params: ParamsResourceShelvesBooksReturn,
-        options: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book],
-        callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]
+        options: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1Book],
+        callback: BodyResponseCallback[Readable | SchemaGoogleExampleLibraryagentV1Book]
       ): Unit = js.native
       def `return`(params: ParamsResourceShelvesBooksReturn, options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
       def `return`(
         params: ParamsResourceShelvesBooksReturn,
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]
+      ): Unit = js.native
+      /**
+        * Return a book to the library. Returns the book if it is returned to the library successfully. Returns error if the book does not belong to the library or the users didn't borrow before.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/libraryagent.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
+        *
+        * const {google} = require('googleapis');
+        * const libraryagent = google.libraryagent('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await libraryagent.shelves.books.return({
+        *     // Required. The name of the book to return.
+        *     name: 'shelves/my-shelve/books/my-book',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "author": "my_author",
+        *   //   "name": "my_name",
+        *   //   "read": false,
+        *   //   "title": "my_title"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
+        */
+      def `return`(params: ParamsResourceShelvesBooksReturn, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def `return`(
+        params: ParamsResourceShelvesBooksReturn,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
       ): Unit = js.native
     }
     
@@ -290,12 +551,7 @@ object libraryagentV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * The name of the book to borrow.
+        * Required. The name of the book to borrow.
         */
       var name: js.UndefOr[String] = js.undefined
     }
@@ -308,10 +564,6 @@ object libraryagentV1Mod {
       
       extension [Self <: ParamsResourceShelvesBooksBorrow](x: Self) {
         
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-        
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -323,12 +575,7 @@ object libraryagentV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * The name of the book to retrieve.
+        * Required. The name of the book to retrieve.
         */
       var name: js.UndefOr[String] = js.undefined
     }
@@ -341,10 +588,6 @@ object libraryagentV1Mod {
       
       extension [Self <: ParamsResourceShelvesBooksGet](x: Self) {
         
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-        
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -356,25 +599,17 @@ object libraryagentV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * Requested page size. Server may return fewer books than requested. If
-        * unspecified, server will pick an appropriate default.
+        * Requested page size. Server may return fewer books than requested. If unspecified, server will pick an appropriate default.
         */
       var pageSize: js.UndefOr[Double] = js.undefined
       
       /**
-        * A token identifying a page of results the server should return.
-        * Typically, this is the value of ListBooksResponse.next_page_token.
-        * returned from the previous call to `ListBooks` method.
+        * A token identifying a page of results the server should return. Typically, this is the value of ListBooksResponse.next_page_token. returned from the previous call to `ListBooks` method.
         */
       var pageToken: js.UndefOr[String] = js.undefined
       
       /**
-        * The name of the shelf whose books we'd like to list.
+        * Required. The name of the shelf whose books we'd like to list.
         */
       var parent: js.UndefOr[String] = js.undefined
     }
@@ -386,10 +621,6 @@ object libraryagentV1Mod {
       }
       
       extension [Self <: ParamsResourceShelvesBooksList](x: Self) {
-        
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
@@ -410,12 +641,7 @@ object libraryagentV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * The name of the book to return.
+        * Required. The name of the book to return.
         */
       var name: js.UndefOr[String] = js.undefined
     }
@@ -428,10 +654,6 @@ object libraryagentV1Mod {
       
       extension [Self <: ParamsResourceShelvesBooksReturn](x: Self) {
         
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-        
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -443,12 +665,7 @@ object libraryagentV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * The name of the shelf to retrieve.
+        * Required. The name of the shelf to retrieve.
         */
       var name: js.UndefOr[String] = js.undefined
     }
@@ -461,10 +678,6 @@ object libraryagentV1Mod {
       
       extension [Self <: ParamsResourceShelvesGet](x: Self) {
         
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-        
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -476,20 +689,12 @@ object libraryagentV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * Requested page size. Server may return fewer shelves than requested. If
-        * unspecified, server will pick an appropriate default.
+        * Requested page size. Server may return fewer shelves than requested. If unspecified, server will pick an appropriate default.
         */
       var pageSize: js.UndefOr[Double] = js.undefined
       
       /**
-        * A token identifying a page of results the server should return.
-        * Typically, this is the value of ListShelvesResponse.next_page_token
-        * returned from the previous call to `ListShelves` method.
+        * A token identifying a page of results the server should return. Typically, this is the value of ListShelvesResponse.next_page_token returned from the previous call to `ListShelves` method.
         */
       var pageToken: js.UndefOr[String] = js.undefined
     }
@@ -502,10 +707,6 @@ object libraryagentV1Mod {
       
       extension [Self <: ParamsResourceShelvesList](x: Self) {
         
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-        
         inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
         inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
@@ -516,32 +717,27 @@ object libraryagentV1Mod {
       }
     }
     
-    /**
-      * A single book in the library.
-      */
     trait SchemaGoogleExampleLibraryagentV1Book extends StObject {
       
       /**
         * The name of the book author.
         */
-      var author: js.UndefOr[String] = js.undefined
+      var author: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * The resource name of the book. Book names have the form
-        * `shelves/{shelf_id}/books/{book_id}`. The name is ignored when creating a
-        * book.
+        * The resource name of the book. Book names have the form `shelves/{shelf_id\}/books/{book_id\}`. The name is ignored when creating a book.
         */
-      var name: js.UndefOr[String] = js.undefined
+      var name: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Value indicating whether the book has been read.
         */
-      var read: js.UndefOr[Boolean] = js.undefined
+      var read: js.UndefOr[Boolean | Null] = js.undefined
       
       /**
         * The title of the book.
         */
-      var title: js.UndefOr[String] = js.undefined
+      var title: js.UndefOr[String | Null] = js.undefined
     }
     object SchemaGoogleExampleLibraryagentV1Book {
       
@@ -554,25 +750,30 @@ object libraryagentV1Mod {
         
         inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
         
+        inline def setAuthorNull: Self = StObject.set(x, "author", null)
+        
         inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        
+        inline def setNameNull: Self = StObject.set(x, "name", null)
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
         inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
         
+        inline def setReadNull: Self = StObject.set(x, "read", null)
+        
         inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        
+        inline def setTitleNull: Self = StObject.set(x, "title", null)
         
         inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
-    /**
-      * Response message for LibraryAgent.ListBooks.
-      */
     trait SchemaGoogleExampleLibraryagentV1ListBooksResponse extends StObject {
       
       /**
@@ -581,11 +782,9 @@ object libraryagentV1Mod {
       var books: js.UndefOr[js.Array[SchemaGoogleExampleLibraryagentV1Book]] = js.undefined
       
       /**
-        * A token to retrieve next page of results. Pass this value in the
-        * ListBooksRequest.page_token field in the subsequent call to `ListBooks`
-        * method to retrieve the next page of results.
+        * A token to retrieve next page of results. Pass this value in the ListBooksRequest.page_token field in the subsequent call to `ListBooks` method to retrieve the next page of results.
         */
-      var nextPageToken: js.UndefOr[String] = js.undefined
+      var nextPageToken: js.UndefOr[String | Null] = js.undefined
     }
     object SchemaGoogleExampleLibraryagentV1ListBooksResponse {
       
@@ -600,25 +799,22 @@ object libraryagentV1Mod {
         
         inline def setBooksUndefined: Self = StObject.set(x, "books", js.undefined)
         
-        inline def setBooksVarargs(value: SchemaGoogleExampleLibraryagentV1Book*): Self = StObject.set(x, "books", js.Array(value :_*))
+        inline def setBooksVarargs(value: SchemaGoogleExampleLibraryagentV1Book*): Self = StObject.set(x, "books", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        
+        inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
         
         inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
-    /**
-      * Response message for LibraryAgent.ListShelves.
-      */
     trait SchemaGoogleExampleLibraryagentV1ListShelvesResponse extends StObject {
       
       /**
-        * A token to retrieve next page of results. Pass this value in the
-        * ListShelvesRequest.page_token field in the subsequent call to
-        * `ListShelves` method to retrieve the next page of results.
+        * A token to retrieve next page of results. Pass this value in the ListShelvesRequest.page_token field in the subsequent call to `ListShelves` method to retrieve the next page of results.
         */
-      var nextPageToken: js.UndefOr[String] = js.undefined
+      var nextPageToken: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The list of shelves.
@@ -636,31 +832,29 @@ object libraryagentV1Mod {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
+        inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+        
         inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
         inline def setShelves(value: js.Array[SchemaGoogleExampleLibraryagentV1Shelf]): Self = StObject.set(x, "shelves", value.asInstanceOf[js.Any])
         
         inline def setShelvesUndefined: Self = StObject.set(x, "shelves", js.undefined)
         
-        inline def setShelvesVarargs(value: SchemaGoogleExampleLibraryagentV1Shelf*): Self = StObject.set(x, "shelves", js.Array(value :_*))
+        inline def setShelvesVarargs(value: SchemaGoogleExampleLibraryagentV1Shelf*): Self = StObject.set(x, "shelves", js.Array(value*))
       }
     }
     
-    /**
-      * A Shelf contains a collection of books with a theme.
-      */
     trait SchemaGoogleExampleLibraryagentV1Shelf extends StObject {
       
       /**
-        * Output only. The resource name of the shelf. Shelf names have the form
-        * `shelves/{shelf_id}`. The name is ignored when creating a shelf.
+        * Output only. The resource name of the shelf. Shelf names have the form `shelves/{shelf_id\}`. The name is ignored when creating a shelf.
         */
-      var name: js.UndefOr[String] = js.undefined
+      var name: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The theme of the shelf
         */
-      var theme: js.UndefOr[String] = js.undefined
+      var theme: js.UndefOr[String | Null] = js.undefined
     }
     object SchemaGoogleExampleLibraryagentV1Shelf {
       
@@ -673,9 +867,13 @@ object libraryagentV1Mod {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
+        inline def setNameNull: Self = StObject.set(x, "name", null)
+        
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
         inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+        
+        inline def setThemeNull: Self = StObject.set(x, "theme", null)
         
         inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       }
@@ -700,6 +898,13 @@ object libraryagentV1Mod {
       var alt: js.UndefOr[String] = js.undefined
       
       /**
+        * Auth client or API Key for the request
+        */
+      var auth: js.UndefOr[
+            String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+          ] = js.undefined
+      
+      /**
         * JSONP
         */
       var callback: js.UndefOr[String] = js.undefined
@@ -710,9 +915,7 @@ object libraryagentV1Mod {
       var fields: js.UndefOr[String] = js.undefined
       
       /**
-        * API key. Your API key identifies your project and provides you with API
-        * access, quota, and reports. Required unless you provide an OAuth 2.0
-        * token.
+        * API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.
         */
       var key: js.UndefOr[String] = js.undefined
       
@@ -727,9 +930,7 @@ object libraryagentV1Mod {
       var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * Available to use for quota purposes for server-side applications. Can be
-        * any arbitrary string assigned to a user, but should not exceed 40
-        * characters.
+        * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
         */
       var quotaUser: js.UndefOr[String] = js.undefined
       
@@ -763,6 +964,12 @@ object libraryagentV1Mod {
         inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
         inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        
+        inline def setAuth(
+          value: String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+        ): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
         

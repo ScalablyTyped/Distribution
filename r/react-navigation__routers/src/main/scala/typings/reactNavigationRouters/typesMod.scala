@@ -4,8 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNavigationRouters.anon.KeyName
 import typings.reactNavigationRouters.anon.KeyState
 import typings.reactNavigationRouters.anon.ParamsReadonly
+import typings.reactNavigationRouters.anon.RouterConfigOptionsrouteK
 import typings.reactNavigationRouters.anon.Routes
 import typings.reactNavigationRouters.anon.State
+import typings.reactNavigationRouters.anon.`0`
 import typings.reactNavigationRouters.anon.`1`
 import typings.reactNavigationRouters.anon.`2`
 import typings.reactNavigationRouters.commonActionsMod.Action
@@ -23,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  type ActionCreators[Action /* <: NavigationAction */] = StringDictionary[js.Function1[/* args */ js.Any, Action]]
+  type ActionCreators[Action /* <: NavigationAction */] = StringDictionary[js.Function1[/* args */ Any, Action]]
   
   type CommonNavigationAction = Action
   
@@ -53,7 +55,7 @@ object typesMod {
   /* Inlined std.Readonly<std.Partial<std.Omit<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.NavigationState<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase>, 'stale' | 'routes'>> & {  routes :std.Array<std.Omit<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.Route<string, object | undefined>, 'key'> & {  state :@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.InitialState | undefined}>}> */
   trait InitialState extends StObject {
     
-    val history: js.UndefOr[js.Array[js.Any]] = js.undefined
+    val history: js.UndefOr[js.Array[Any]] = js.undefined
     
     val index: js.UndefOr[Double] = js.undefined
     
@@ -72,25 +74,25 @@ object typesMod {
         (Omit[
           Route[String, js.UndefOr[js.Object]], 
           typings.reactNavigationRouters.reactNavigationRoutersStrings.key
-        ]) & `1`
+        ]) & `0`
       ]
     
     val `type`: js.UndefOr[String] = js.undefined
   }
   object InitialState {
     
-    inline def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `1`]): InitialState = {
+    inline def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `0`]): InitialState = {
       val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialState]
     }
     
     extension [Self <: InitialState](x: Self) {
       
-      inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: Any*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -116,11 +118,11 @@ object typesMod {
               /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String, 
               String
             ])*
-      ): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      ): Self = StObject.set(x, "routeNames", js.Array(value*))
       
-      inline def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `1`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `0`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) & `1`)*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) & `0`)*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,7 @@ object typesMod {
   /* Inlined std.Readonly<{  key :string,   index :number,   routeNames :std.Array<std.Extract<keyof ParamList, string>>,   history :std.Array<unknown> | undefined,   routes :std.Array<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.NavigationRoute<ParamList, keyof ParamList>>,   type :string,   stale :false}> */
   trait NavigationState[ParamList /* <: ParamListBase */] extends StObject {
     
-    val history: js.UndefOr[js.Array[js.Any]] = js.undefined
+    val history: js.UndefOr[js.Array[Any]] = js.undefined
     
     val index: Double
     
@@ -203,11 +205,11 @@ object typesMod {
     
     extension [Self <: NavigationState[?], ParamList /* <: ParamListBase */](x: Self & NavigationState[ParamList]) {
       
-      inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: Any*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -215,11 +217,11 @@ object typesMod {
       
       inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value*))
       
       inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,7 @@ object typesMod {
   
   type PartialState[State /* <: NavigationState[ParamListBase] */] = (Partial[Omit[State, stale | routes]]) & Routes[State]
   
-  type Route[RouteName /* <: String */, Params /* <: js.UndefOr[js.Object] */] = KeyName[RouteName] & (ParamsReadonly[Params] | `2`[Params])
+  type Route[RouteName /* <: String */, Params /* <: js.UndefOr[js.Object] */] = KeyName[RouteName] & (ParamsReadonly[Params] | `1`[Params])
   
   @js.native
   trait Router[State /* <: NavigationState[ParamListBase] */, Action /* <: NavigationAction */] extends StObject {
@@ -287,7 +289,7 @@ object typesMod {
       * @param options.routeNames New list of route names.
       * @param options.routeParamsList Object containing params for each route.
       */
-    def getStateForRouteNamesChange(state: State, options: RouterConfigOptions): State = js.native
+    def getStateForRouteNamesChange(state: State, options: RouterConfigOptionsrouteK): State = js.native
     
     /**
       * Whether the action should also change focus in parent navigator
@@ -305,22 +307,30 @@ object typesMod {
   
   trait RouterConfigOptions extends StObject {
     
+    var routeGetIdList: Record[String, js.UndefOr[js.Function1[/* options */ `2`, js.UndefOr[String]]]]
+    
     var routeNames: js.Array[String]
     
     var routeParamList: ParamListBase
   }
   object RouterConfigOptions {
     
-    inline def apply(routeNames: js.Array[String], routeParamList: ParamListBase): RouterConfigOptions = {
-      val __obj = js.Dynamic.literal(routeNames = routeNames.asInstanceOf[js.Any], routeParamList = routeParamList.asInstanceOf[js.Any])
+    inline def apply(
+      routeGetIdList: Record[String, js.UndefOr[js.Function1[/* options */ `2`, js.UndefOr[String]]]],
+      routeNames: js.Array[String],
+      routeParamList: ParamListBase
+    ): RouterConfigOptions = {
+      val __obj = js.Dynamic.literal(routeGetIdList = routeGetIdList.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routeParamList = routeParamList.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterConfigOptions]
     }
     
     extension [Self <: RouterConfigOptions](x: Self) {
       
+      inline def setRouteGetIdList(value: Record[String, js.UndefOr[js.Function1[/* options */ `2`, js.UndefOr[String]]]]): Self = StObject.set(x, "routeGetIdList", value.asInstanceOf[js.Any])
+      
       inline def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value*))
       
       inline def setRouteParamList(value: ParamListBase): Self = StObject.set(x, "routeParamList", value.asInstanceOf[js.Any])
     }

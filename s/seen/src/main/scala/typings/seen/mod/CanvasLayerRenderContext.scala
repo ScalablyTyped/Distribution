@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "CanvasLayerRenderContext")
 @js.native
-class CanvasLayerRenderContext protected () extends RenderLayerContext {
+open class CanvasLayerRenderContext protected () extends RenderLayerContext {
   def this(ctx: CanvasRenderingContext2D) = this()
 }

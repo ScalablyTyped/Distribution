@@ -16,7 +16,7 @@ object badgeMod {
   
   @JSImport("@ant-design/react-native/lib/badge", JSImport.Default)
   @js.native
-  class default () extends Badge
+  open class default () extends Badge
   /* static members */
   object default {
     
@@ -31,8 +31,7 @@ object badgeMod {
   }
   
   @js.native
-  trait Badge
-    extends Component[BadgeProps, js.Any, js.Any]
+  trait Badge extends Component[BadgeProps, Any, Any]
   
   trait BadgeProps
     extends StObject
@@ -48,7 +47,7 @@ object badgeMod {
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var text: js.UndefOr[js.Any] = js.undefined
+    var text: js.UndefOr[Any] = js.undefined
   }
   object BadgeProps {
     
@@ -81,7 +80,7 @@ object badgeMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }

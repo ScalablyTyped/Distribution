@@ -10,10 +10,10 @@ object subheaderMod {
   
   @JSImport("material-ui/Subheader", JSImport.Default)
   @js.native
-  class default () extends Subheader
+  open class default () extends Subheader
   
   @JSImport("material-ui/Subheader", "Subheader")
   @js.native
-  class Subheader ()
-    extends Component[SubheaderProps, js.Object, js.Any]
+  open class Subheader ()
+    extends Component[SubheaderProps, js.Object, Any]
 }

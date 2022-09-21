@@ -14,5 +14,5 @@ object transportServiceMod {
   
   inline def setupTransportService(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupTransportService")().asInstanceOf[Unit]
   
-  inline def transportHandler(serializer: js.Function1[/* repeated */ js.Any, String]): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transportHandler")(serializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def transportHandler(serializer: js.Function1[/* repeated */ Any, String]): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transportHandler")(serializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
 }

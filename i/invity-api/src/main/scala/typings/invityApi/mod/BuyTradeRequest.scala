@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BuyTradeRequest extends StObject {
   
+  /**
+    * URL where to return after the trade is done
+    */
   var returnUrl: String
   
+  /**
+    * The trade object
+    */
   var trade: BuyTrade
 }
 object BuyTradeRequest {

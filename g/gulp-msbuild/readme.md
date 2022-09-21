@@ -10,10 +10,10 @@ msbuild plugin for gulp. Inspired by grunt-msbuild.
 | ------------------ | :-------------: |
 | Full name          | gulp-msbuild |
 | Keywords           | gulpplugin, msbuild, xbuild |
-| # releases         | 10 |
-| # dependents       | 14 |
-| # downloads        | 227721 |
-| # stars            | 5 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 17469.666666666668 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/fluffynuts/gulp-msbuild#readme)

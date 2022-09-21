@@ -13,16 +13,6 @@ trait PlotWordcloudOptions extends StObject {
   var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   
   /**
-    * (Highcharts) If there is no space for a word on the playing field, then
-    * this option will allow the playing field to be extended to fit the word.
-    * If false then the word will be dropped from the visualization.
-    *
-    * NB! This option is currently not decided to be published in the API, and
-    * is therefore marked as private.
-    */
-  var allowExtendPlayingField: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highcharts) Allow this series' points to be selected by clicking on the
     * graphic (columns, point markers, pie slices, map areas etc).
     *
@@ -170,16 +160,13 @@ trait PlotWordcloudOptions extends StObject {
   var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) When the series contains less points than
-    * the crop threshold, all points are drawn, event if the points fall
-    * outside the visible plot area at the current zoom. The advantage of
-    * drawing all points (including markers and columns), is that animation is
-    * performed on updates. On the other hand, when the series contains more
-    * points than the crop threshold, the series data is cropped to only
-    * contain points that fall within the plot area. The advantage of cropping
-    * away invisible points is to increase performance on large series.
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
     */
-  var cropThreshold: js.UndefOr[Double] = js.undefined
+  var cumulative: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
@@ -196,7 +183,7 @@ trait PlotWordcloudOptions extends StObject {
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * (Highcharts) Name of the dash style to use for the graph, or for some
@@ -206,6 +193,11 @@ trait PlotWordcloudOptions extends StObject {
     * listed under series.color.
     */
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  
+  /**
+    * (Highcharts) Indicates data is structured as columns instead of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) A description of the series to add to the screen reader
@@ -296,6 +288,12 @@ trait PlotWordcloudOptions extends StObject {
   var minFontSize: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts) Options for the _Series on point_ feature. Only `pie` and
+    * `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotWordcloudOnPointOptions] = js.undefined
+  
+  /**
     * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
@@ -308,7 +306,7 @@ trait PlotWordcloudOptions extends StObject {
     * to add their own custom placement strategies for use in word cloud. Read
     * more about it in our documentation
     */
-  var placementStrategy: js.UndefOr[String] = js.undefined
+  var placementStrategy: js.UndefOr[OptionsPlacementStrategyValue] = js.undefined
   
   /**
     * (Highcharts) Properties for each single point.
@@ -316,10 +314,22 @@ trait PlotWordcloudOptions extends StObject {
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
-    * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
-    * individual series. Overrides the chart wide configuration.
+    * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
+    * an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Rotation options for the words in the wordcloud.
@@ -353,7 +363,7 @@ trait PlotWordcloudOptions extends StObject {
     * possible for users to add their own custom spiralling algorithms for use
     * in word cloud. Read more about it in our documentation
     */
-  var spiral: js.UndefOr[String] = js.undefined
+  var spiral: js.UndefOr[OptionsSpiralValue] = js.undefined
   
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
@@ -420,10 +430,6 @@ object PlotWordcloudOptions {
     
     inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
-    inline def setAllowExtendPlayingField(value: Boolean): Self = StObject.set(x, "allowExtendPlayingField", value.asInstanceOf[js.Any])
-    
-    inline def setAllowExtendPlayingFieldUndefined: Self = StObject.set(x, "allowExtendPlayingField", js.undefined)
-    
     inline def setAllowPointSelect(value: Boolean): Self = StObject.set(x, "allowPointSelect", value.asInstanceOf[js.Any])
     
     inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
@@ -480,7 +486,7 @@ object PlotWordcloudOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setCompareStart(value: Boolean): Self = StObject.set(x, "compareStart", value.asInstanceOf[js.Any])
     
@@ -490,21 +496,25 @@ object PlotWordcloudOptions {
     
     inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
     
-    inline def setCropThreshold(value: Double): Self = StObject.set(x, "cropThreshold", value.asInstanceOf[js.Any])
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
-    inline def setCropThresholdUndefined: Self = StObject.set(x, "cropThreshold", js.undefined)
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
     
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -530,7 +540,7 @@ object PlotWordcloudOptions {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLabel(value: SeriesLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -556,11 +566,15 @@ object PlotWordcloudOptions {
     
     inline def setMinFontSizeUndefined: Self = StObject.set(x, "minFontSize", js.undefined)
     
+    inline def setOnPoint(value: js.Object | PlotWordcloudOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
+    
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setPlacementStrategy(value: String): Self = StObject.set(x, "placementStrategy", value.asInstanceOf[js.Any])
+    inline def setPlacementStrategy(value: OptionsPlacementStrategyValue): Self = StObject.set(x, "placementStrategy", value.asInstanceOf[js.Any])
     
     inline def setPlacementStrategyUndefined: Self = StObject.set(x, "placementStrategy", js.undefined)
     
@@ -571,6 +585,10 @@ object PlotWordcloudOptions {
     inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setRotation(value: PlotWordcloudRotationOptions): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
@@ -588,7 +606,7 @@ object PlotWordcloudOptions {
     
     inline def setSkipKeyboardNavigationUndefined: Self = StObject.set(x, "skipKeyboardNavigation", js.undefined)
     
-    inline def setSpiral(value: String): Self = StObject.set(x, "spiral", value.asInstanceOf[js.Any])
+    inline def setSpiral(value: OptionsSpiralValue): Self = StObject.set(x, "spiral", value.asInstanceOf[js.Any])
     
     inline def setSpiralUndefined: Self = StObject.set(x, "spiral", js.undefined)
     

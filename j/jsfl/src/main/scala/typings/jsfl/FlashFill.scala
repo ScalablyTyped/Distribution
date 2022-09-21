@@ -18,10 +18,10 @@ trait FlashFill extends StObject {
     * - A hexadecimal number in the format 0xRRGGBB
     * - An integer that represents the decimal equivalent of a hexadecimal number
     */
-  var color: js.Any
+  var color: Any
   
   /** Property; an array of colors in the gradient, expressed as integers. This property is available only if the value of the fill.style property is either "radialGradient" or "linearGradient". See fill.style */
-  var colorArray: js.Array[js.Any]
+  var colorArray: js.Array[Any]
   
   var focalPoint: Double
   
@@ -40,8 +40,8 @@ object FlashFill {
   inline def apply(
     bitmapIsClipped: Boolean,
     bitmapPath: String,
-    color: js.Any,
-    colorArray: js.Array[js.Any],
+    color: Any,
+    colorArray: js.Array[Any],
     focalPoint: Double,
     linearRGB: Boolean,
     matrix: FlashMatrix,
@@ -59,11 +59,11 @@ object FlashFill {
     
     inline def setBitmapPath(value: String): Self = StObject.set(x, "bitmapPath", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorArray(value: js.Array[js.Any]): Self = StObject.set(x, "colorArray", value.asInstanceOf[js.Any])
+    inline def setColorArray(value: js.Array[Any]): Self = StObject.set(x, "colorArray", value.asInstanceOf[js.Any])
     
-    inline def setColorArrayVarargs(value: js.Any*): Self = StObject.set(x, "colorArray", js.Array(value :_*))
+    inline def setColorArrayVarargs(value: Any*): Self = StObject.set(x, "colorArray", js.Array(value*))
     
     inline def setFocalPoint(value: Double): Self = StObject.set(x, "focalPoint", value.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object FlashFill {
     
     inline def setPosArray(value: js.Array[Double]): Self = StObject.set(x, "posArray", value.asInstanceOf[js.Any])
     
-    inline def setPosArrayVarargs(value: Double*): Self = StObject.set(x, "posArray", js.Array(value :_*))
+    inline def setPosArrayVarargs(value: Double*): Self = StObject.set(x, "posArray", js.Array(value*))
     
     inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

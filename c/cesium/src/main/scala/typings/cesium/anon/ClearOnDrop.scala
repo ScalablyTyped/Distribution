@@ -1,6 +1,5 @@
 package typings.cesium.anon
 
-import typings.cesium.mod.DefaultProxy
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait ClearOnDrop extends StObject {
   
   var flyToOnDrop: js.UndefOr[Boolean] = js.undefined
   
-  var proxy: js.UndefOr[DefaultProxy] = js.undefined
+  var proxy: js.UndefOr[typings.cesium.mod.Proxy] = js.undefined
 }
 object ClearOnDrop {
   
@@ -43,7 +42,7 @@ object ClearOnDrop {
     
     inline def setFlyToOnDropUndefined: Self = StObject.set(x, "flyToOnDrop", js.undefined)
     
-    inline def setProxy(value: DefaultProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: typings.cesium.mod.Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
   }

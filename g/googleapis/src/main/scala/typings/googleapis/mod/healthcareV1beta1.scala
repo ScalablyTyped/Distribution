@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object healthcareV1beta1 {
   
-  /**
-    * Cloud Healthcare API
-    *
-    * Manage, store, and access healthcare data in Google Cloud Platform.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const healthcare = google.healthcare('v1beta1');
-    *
-    * @namespace healthcare
-    * @type {Function}
-    * @version v1beta1
-    * @variation v1beta1
-    * @param {object=} options Options for Healthcare
-    */
   @JSImport("googleapis", "healthcare_v1beta1.Healthcare")
   @js.native
-  class Healthcare protected ()
+  open class Healthcare protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,113 +19,155 @@ object healthcareV1beta1 {
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjects {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations")
   @js.native
-  class ResourceProjectsLocations protected ()
+  open class ResourceProjectsLocations protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets")
   @js.native
-  class ResourceProjectsLocationsDatasets protected ()
+  open class ResourceProjectsLocationsDatasets protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasets {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Annotationstores")
+  @js.native
+  open class ResourceProjectsLocationsDatasetsAnnotationstores protected ()
+    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsAnnotationstores {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Annotationstores$Annotations")
+  @js.native
+  open class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected ()
+    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Consentstores")
+  @js.native
+  open class ResourceProjectsLocationsDatasetsConsentstores protected ()
+    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsConsentstores {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Consentstores$Attributedefinitions")
+  @js.native
+  open class ResourceProjectsLocationsDatasetsConsentstoresAttributedefinitions protected ()
+    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsConsentstoresAttributedefinitions {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Consentstores$Consentartifacts")
+  @js.native
+  open class ResourceProjectsLocationsDatasetsConsentstoresConsentartifacts protected ()
+    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsConsentstoresConsentartifacts {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Consentstores$Consents")
+  @js.native
+  open class ResourceProjectsLocationsDatasetsConsentstoresConsents protected ()
+    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsConsentstoresConsents {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Consentstores$Userdatamappings")
+  @js.native
+  open class ResourceProjectsLocationsDatasetsConsentstoresUserdatamappings protected ()
+    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsConsentstoresUserdatamappings {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Dicomstores")
   @js.native
-  class ResourceProjectsLocationsDatasetsDicomstores protected ()
+  open class ResourceProjectsLocationsDatasetsDicomstores protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsDicomstores {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Dicomstores$Studies")
   @js.native
-  class ResourceProjectsLocationsDatasetsDicomstoresStudies protected ()
+  open class ResourceProjectsLocationsDatasetsDicomstoresStudies protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsDicomstoresStudies {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Dicomstores$Studies$Series")
   @js.native
-  class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeries protected ()
+  open class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeries protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsDicomstoresStudiesSeries {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Dicomstores$Studies$Series$Instances")
   @js.native
-  class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstances protected ()
+  open class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstances protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstances {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Dicomstores$Studies$Series$Instances$Frames")
   @js.native
-  class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFrames protected ()
+  open class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFrames protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFrames {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Fhirstores")
   @js.native
-  class ResourceProjectsLocationsDatasetsFhirstores protected ()
+  open class ResourceProjectsLocationsDatasetsFhirstores protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsFhirstores {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Fhirstores$Fhir")
   @js.native
-  class ResourceProjectsLocationsDatasetsFhirstoresFhir protected ()
+  open class ResourceProjectsLocationsDatasetsFhirstoresFhir protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsFhirstoresFhir {
-    def this(context: APIRequestContext) = this()
-  }
-  
-  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Fhirstores$Fhir$_history")
-  @js.native
-  class ResourceProjectsLocationsDatasetsFhirstoresFhirHistory protected ()
-    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsFhirstoresFhirHistory {
-    def this(context: APIRequestContext) = this()
-  }
-  
-  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Fhirstores$Fhir$Observation")
-  @js.native
-  class ResourceProjectsLocationsDatasetsFhirstoresFhirObservation protected ()
-    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsFhirstoresFhirObservation {
-    def this(context: APIRequestContext) = this()
-  }
-  
-  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Fhirstores$Fhir$Patient")
-  @js.native
-  class ResourceProjectsLocationsDatasetsFhirstoresFhirPatient protected ()
-    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsFhirstoresFhirPatient {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Hl7v2stores")
   @js.native
-  class ResourceProjectsLocationsDatasetsHl7v2stores protected ()
+  open class ResourceProjectsLocationsDatasetsHl7v2stores protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsHl7v2stores {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Hl7v2stores$Messages")
   @js.native
-  class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected ()
+  open class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsHl7v2storesMessages {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Operations")
   @js.native
-  class ResourceProjectsLocationsDatasetsOperations protected ()
+  open class ResourceProjectsLocationsDatasetsOperations protected ()
     extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsDatasetsOperations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Services")
+  @js.native
+  open class ResourceProjectsLocationsServices protected ()
+    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsServices {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "healthcare_v1beta1.Resource$Projects$Locations$Services$Nlp")
+  @js.native
+  open class ResourceProjectsLocationsServicesNlp protected ()
+    extends typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.ResourceProjectsLocationsServicesNlp {
     def this(context: APIRequestContext) = this()
   }
 }

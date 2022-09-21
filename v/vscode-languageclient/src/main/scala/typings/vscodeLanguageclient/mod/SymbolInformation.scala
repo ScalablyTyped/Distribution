@@ -16,32 +16,20 @@ object SymbolInformation {
     * @param name The name of the symbol.
     * @param kind The kind of the symbol.
     * @param range The range of the location of the symbol.
-    * @param uri The resource of the location of symbol, defaults to the current document.
+    * @param uri The resource of the location of symbol.
     * @param containerName The name of the symbol containing the symbol.
     */
   inline def create(
     name: String,
     kind: typings.vscodeLanguageserverTypes.mod.SymbolKind,
-    range: typings.vscodeLanguageserverTypes.mod.Range
-  ): typings.vscodeLanguageserverTypes.mod.SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SymbolInformation]
-  inline def create(
-    name: String,
-    kind: typings.vscodeLanguageserverTypes.mod.SymbolKind,
     range: typings.vscodeLanguageserverTypes.mod.Range,
-    uri: String
+    uri: typings.vscodeLanguageserverTypes.mod.DocumentUri
   ): typings.vscodeLanguageserverTypes.mod.SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SymbolInformation]
   inline def create(
     name: String,
     kind: typings.vscodeLanguageserverTypes.mod.SymbolKind,
     range: typings.vscodeLanguageserverTypes.mod.Range,
-    uri: String,
-    containerName: String
-  ): typings.vscodeLanguageserverTypes.mod.SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SymbolInformation]
-  inline def create(
-    name: String,
-    kind: typings.vscodeLanguageserverTypes.mod.SymbolKind,
-    range: typings.vscodeLanguageserverTypes.mod.Range,
-    uri: Unit,
+    uri: typings.vscodeLanguageserverTypes.mod.DocumentUri,
     containerName: String
   ): typings.vscodeLanguageserverTypes.mod.SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SymbolInformation]
 }

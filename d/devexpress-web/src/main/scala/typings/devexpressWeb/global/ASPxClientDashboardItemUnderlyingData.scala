@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemUnderlyingData")
 @js.native
-class ASPxClientDashboardItemUnderlyingData ()
+open class ASPxClientDashboardItemUnderlyingData ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemUnderlyingData {
   
@@ -37,7 +37,7 @@ class ASPxClientDashboardItemUnderlyingData ()
     * @param dataMember A String that specifies the required data member.
     */
   /* CompleteClass */
-  override def GetRowValue(rowIndex: Double, dataMember: String): js.Any = js.native
+  override def GetRowValue(rowIndex: Double, dataMember: String): Any = js.native
   
   /**
     * Returns whether a request for underlying data was successful.

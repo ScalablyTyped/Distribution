@@ -10,11 +10,11 @@ trait Priority extends StObject {
   var Dotpriority: String | Double | Null
   
   @JSName(".value")
-  var Dotvalue: js.Any
+  var Dotvalue: Any
 }
 object Priority {
   
-  inline def apply(Dotvalue: js.Any): Priority = {
+  inline def apply(Dotvalue: Any): Priority = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic(".value")(Dotvalue.asInstanceOf[js.Any])
     __obj.updateDynamic(".priority")(null)
@@ -27,6 +27,6 @@ object Priority {
     
     inline def setDotpriorityNull: Self = StObject.set(x, ".priority", null)
     
-    inline def setDotvalue(value: js.Any): Self = StObject.set(x, ".value", value.asInstanceOf[js.Any])
+    inline def setDotvalue(value: Any): Self = StObject.set(x, ".value", value.asInstanceOf[js.Any])
   }
 }

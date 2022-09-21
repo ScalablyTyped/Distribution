@@ -24,7 +24,6 @@ import typings.reactEasyChart.reactEasyChartStrings.monotone
 import typings.reactEasyChart.reactEasyChartStrings.step
 import typings.reactEasyChart.reactEasyChartStrings.text
 import typings.reactEasyChart.reactEasyChartStrings.time
-import typings.std.Date
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,74 +33,74 @@ object mod {
   
   @JSImport("react-easy-chart", "AreaChart")
   @js.native
-  class AreaChart protected ()
-    extends Component[AreaChartProps, js.Object, js.Any] {
+  open class AreaChart protected ()
+    extends Component[AreaChartProps, js.Object, Any] {
     def this(props: AreaChartProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: AreaChartProps, context: js.Any) = this()
+    def this(props: AreaChartProps, context: Any) = this()
   }
   
   @JSImport("react-easy-chart", "BarChart")
   @js.native
-  class BarChart protected ()
-    extends Component[BarChartProps, js.Object, js.Any] {
+  open class BarChart protected ()
+    extends Component[BarChartProps, js.Object, Any] {
     def this(props: BarChartProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BarChartProps, context: js.Any) = this()
+    def this(props: BarChartProps, context: Any) = this()
   }
   
   @JSImport("react-easy-chart", "Legend")
   @js.native
-  class Legend protected ()
-    extends Component[LegendProps, js.Object, js.Any] {
+  open class Legend protected ()
+    extends Component[LegendProps, js.Object, Any] {
     def this(props: LegendProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LegendProps, context: js.Any) = this()
+    def this(props: LegendProps, context: Any) = this()
   }
   
   @JSImport("react-easy-chart", "LineChart")
   @js.native
-  class LineChart protected ()
-    extends Component[LineChartProps, js.Object, js.Any] {
+  open class LineChart protected ()
+    extends Component[LineChartProps, js.Object, Any] {
     def this(props: LineChartProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LineChartProps, context: js.Any) = this()
+    def this(props: LineChartProps, context: Any) = this()
   }
   
   @JSImport("react-easy-chart", "PieChart")
   @js.native
-  class PieChart protected ()
-    extends Component[PieChartProps, js.Object, js.Any] {
+  open class PieChart protected ()
+    extends Component[PieChartProps, js.Object, Any] {
     def this(props: PieChartProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PieChartProps, context: js.Any) = this()
+    def this(props: PieChartProps, context: Any) = this()
   }
   
   @JSImport("react-easy-chart", "ScatterplotChart")
   @js.native
-  class ScatterplotChart protected ()
-    extends Component[ScatterplotChartProps, js.Object, js.Any] {
+  open class ScatterplotChart protected ()
+    extends Component[ScatterplotChartProps, js.Object, Any] {
     def this(props: ScatterplotChartProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScatterplotChartProps, context: js.Any) = this()
+    def this(props: ScatterplotChartProps, context: Any) = this()
   }
   
   trait AreaChartProps
@@ -137,7 +136,7 @@ object mod {
     /** The width of an individual bar in pixels */
     var barWidth: js.UndefOr[Double] = js.undefined
     
-    var clickHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var clickHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
     /** Whether to automatically color the bars */
     var colorBars: js.UndefOr[Boolean] = js.undefined
@@ -161,11 +160,11 @@ object mod {
     /** css margins */
     var margin: js.UndefOr[Bottom] = js.undefined
     
-    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
-    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
-    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
     /** The d3 time format to be used for the x axis (when xType is 'time') */
     var tickTimeDisplayFormat: js.UndefOr[String] = js.undefined
@@ -174,7 +173,7 @@ object mod {
     var width: js.UndefOr[Double] = js.undefined
     
     /** The range that the x axis should show (otherwise automatically calculated) */
-    var xDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
+    var xDomainRange: js.UndefOr[js.Array[js.Date | Double | String]] = js.undefined
     
     /** The amount of ticks to be shown on the x axis */
     var xTickNumber: js.UndefOr[Double] = js.undefined
@@ -215,7 +214,7 @@ object mod {
       
       inline def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
       
-      inline def setClickHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
+      inline def setClickHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
       
       inline def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
       
@@ -225,7 +224,7 @@ object mod {
       
       inline def setData(value: js.Array[BarData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: BarData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: BarData*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatePattern(value: String): Self = StObject.set(x, "datePattern", value.asInstanceOf[js.Any])
       
@@ -247,21 +246,21 @@ object mod {
       
       inline def setLineDataUndefined: Self = StObject.set(x, "lineData", js.undefined)
       
-      inline def setLineDataVarargs(value: LineData*): Self = StObject.set(x, "lineData", js.Array(value :_*))
+      inline def setLineDataVarargs(value: LineData*): Self = StObject.set(x, "lineData", js.Array(value*))
       
       inline def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMouseMoveHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
+      inline def setMouseMoveHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
       
       inline def setMouseMoveHandlerUndefined: Self = StObject.set(x, "mouseMoveHandler", js.undefined)
       
-      inline def setMouseOutHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
+      inline def setMouseOutHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
       
       inline def setMouseOutHandlerUndefined: Self = StObject.set(x, "mouseOutHandler", js.undefined)
       
-      inline def setMouseOverHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
+      inline def setMouseOverHandler(value: (/* data */ BarData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
       
       inline def setMouseOverHandlerUndefined: Self = StObject.set(x, "mouseOverHandler", js.undefined)
       
@@ -273,11 +272,11 @@ object mod {
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setXDomainRange(value: js.Array[Date | Double | String]): Self = StObject.set(x, "xDomainRange", value.asInstanceOf[js.Any])
+      inline def setXDomainRange(value: js.Array[js.Date | Double | String]): Self = StObject.set(x, "xDomainRange", value.asInstanceOf[js.Any])
       
       inline def setXDomainRangeUndefined: Self = StObject.set(x, "xDomainRange", js.undefined)
       
-      inline def setXDomainRangeVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "xDomainRange", js.Array(value :_*))
+      inline def setXDomainRangeVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "xDomainRange", js.Array(value*))
       
       inline def setXTickNumber(value: Double): Self = StObject.set(x, "xTickNumber", value.asInstanceOf[js.Any])
       
@@ -299,7 +298,7 @@ object mod {
       
       inline def setYDomainRangeUndefined: Self = StObject.set(x, "yDomainRange", js.undefined)
       
-      inline def setYDomainRangeVarargs(value: Double*): Self = StObject.set(x, "yDomainRange", js.Array(value :_*))
+      inline def setYDomainRangeVarargs(value: Double*): Self = StObject.set(x, "yDomainRange", js.Array(value*))
       
       inline def setYTickNumber(value: Double): Self = StObject.set(x, "yTickNumber", value.asInstanceOf[js.Any])
       
@@ -311,13 +310,13 @@ object mod {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var x: Double | Date | String
+    var x: Double | js.Date | String
     
     var y: Double
   }
   object BarData {
     
-    inline def apply(x: Double | Date | String, y: Double): BarData = {
+    inline def apply(x: Double | js.Date | String, y: Double): BarData = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[BarData]
     }
@@ -328,7 +327,7 @@ object mod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setX(value: Double | Date | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double | js.Date | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
@@ -339,7 +338,7 @@ object mod {
     /** Override the color of the items */
     var config: js.UndefOr[js.Array[ColorString]] = js.undefined
     
-    var data: js.Array[js.Any]
+    var data: js.Array[Any]
     
     var dataId: String
     
@@ -351,7 +350,7 @@ object mod {
   }
   object LegendProps {
     
-    inline def apply(data: js.Array[js.Any], dataId: String): LegendProps = {
+    inline def apply(data: js.Array[Any], dataId: String): LegendProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataId = dataId.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegendProps]
     }
@@ -362,13 +361,13 @@ object mod {
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      inline def setConfigVarargs(value: ColorString*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: ColorString*): Self = StObject.set(x, "config", js.Array(value*))
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataId(value: String): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -388,7 +387,7 @@ object mod {
     /** Labels for each of the axis */
     var axisLabels: js.UndefOr[Y] = js.undefined
     
-    var clickHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var clickHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
     var data: js.Array[js.Array[LineData]]
     
@@ -411,11 +410,11 @@ object mod {
     /** css margins */
     var margin: js.UndefOr[Bottom] = js.undefined
     
-    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
-    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
-    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
     /** The d3 time format to be used for the x axis (when xType is 'time') */
     var tickTimeDisplayFormat: js.UndefOr[String] = js.undefined
@@ -427,7 +426,7 @@ object mod {
     var width: js.UndefOr[Double] = js.undefined
     
     /** The range that the x axis should show (otherwise automatically calculated) */
-    var xDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
+    var xDomainRange: js.UndefOr[js.Array[js.Date | Double | String]] = js.undefined
     
     /** The amount of ticks to be shown on the x axis */
     var xTicks: js.UndefOr[Double] = js.undefined
@@ -464,7 +463,7 @@ object mod {
       
       inline def setAxisLabelsUndefined: Self = StObject.set(x, "axisLabels", js.undefined)
       
-      inline def setClickHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
+      inline def setClickHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
       
       inline def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
       
@@ -474,7 +473,7 @@ object mod {
       
       inline def setDataPointsUndefined: Self = StObject.set(x, "dataPoints", js.undefined)
       
-      inline def setDataVarargs(value: js.Array[LineData]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[LineData]*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setGrid(value: Boolean): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
@@ -494,21 +493,21 @@ object mod {
       
       inline def setLineColorsUndefined: Self = StObject.set(x, "lineColors", js.undefined)
       
-      inline def setLineColorsVarargs(value: String*): Self = StObject.set(x, "lineColors", js.Array(value :_*))
+      inline def setLineColorsVarargs(value: String*): Self = StObject.set(x, "lineColors", js.Array(value*))
       
       inline def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMouseMoveHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
+      inline def setMouseMoveHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
       
       inline def setMouseMoveHandlerUndefined: Self = StObject.set(x, "mouseMoveHandler", js.undefined)
       
-      inline def setMouseOutHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
+      inline def setMouseOutHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
       
       inline def setMouseOutHandlerUndefined: Self = StObject.set(x, "mouseOutHandler", js.undefined)
       
-      inline def setMouseOverHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
+      inline def setMouseOverHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
       
       inline def setMouseOverHandlerUndefined: Self = StObject.set(x, "mouseOverHandler", js.undefined)
       
@@ -524,11 +523,11 @@ object mod {
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setXDomainRange(value: js.Array[Date | Double | String]): Self = StObject.set(x, "xDomainRange", value.asInstanceOf[js.Any])
+      inline def setXDomainRange(value: js.Array[js.Date | Double | String]): Self = StObject.set(x, "xDomainRange", value.asInstanceOf[js.Any])
       
       inline def setXDomainRangeUndefined: Self = StObject.set(x, "xDomainRange", js.undefined)
       
-      inline def setXDomainRangeVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "xDomainRange", js.Array(value :_*))
+      inline def setXDomainRangeVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "xDomainRange", js.Array(value*))
       
       inline def setXTicks(value: Double): Self = StObject.set(x, "xTicks", value.asInstanceOf[js.Any])
       
@@ -546,7 +545,7 @@ object mod {
       
       inline def setYDomainRangeUndefined: Self = StObject.set(x, "yDomainRange", js.undefined)
       
-      inline def setYDomainRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "yDomainRange", js.Array(value :_*))
+      inline def setYDomainRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "yDomainRange", js.Array(value*))
       
       inline def setYTicks(value: Double): Self = StObject.set(x, "yTicks", value.asInstanceOf[js.Any])
       
@@ -560,28 +559,28 @@ object mod {
   
   trait LineData extends StObject {
     
-    var x: Double | Date | String
+    var x: Double | js.Date | String
     
-    var y: Double | Date | String
+    var y: Double | js.Date | String
   }
   object LineData {
     
-    inline def apply(x: Double | Date | String, y: Double | Date | String): LineData = {
+    inline def apply(x: Double | js.Date | String, y: Double | js.Date | String): LineData = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[LineData]
     }
     
     extension [Self <: LineData](x: Self) {
       
-      inline def setX(value: Double | Date | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double | js.Date | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setY(value: Double | Date | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double | js.Date | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
   trait PieChartProps extends StObject {
     
-    var clickHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var clickHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
     var data: js.Array[Color]
     
@@ -591,11 +590,11 @@ object mod {
     /** Whether to add labels the to pie segments */
     var labels: js.UndefOr[Boolean] = js.undefined
     
-    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
-    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
-    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
     /** Padding around the chart in pixels */
     var padding: js.UndefOr[Double] = js.undefined
@@ -614,13 +613,13 @@ object mod {
     
     extension [Self <: PieChartProps](x: Self) {
       
-      inline def setClickHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
+      inline def setClickHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
       
       inline def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
       
       inline def setData(value: js.Array[Color]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Color*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Color*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setInnerHoleSize(value: Double): Self = StObject.set(x, "innerHoleSize", value.asInstanceOf[js.Any])
       
@@ -630,15 +629,15 @@ object mod {
       
       inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      inline def setMouseMoveHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
+      inline def setMouseMoveHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
       
       inline def setMouseMoveHandlerUndefined: Self = StObject.set(x, "mouseMoveHandler", js.undefined)
       
-      inline def setMouseOutHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
+      inline def setMouseOutHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
       
       inline def setMouseOutHandlerUndefined: Self = StObject.set(x, "mouseOutHandler", js.undefined)
       
-      inline def setMouseOverHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
+      inline def setMouseOverHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
       
       inline def setMouseOverHandlerUndefined: Self = StObject.set(x, "mouseOverHandler", js.undefined)
       
@@ -691,7 +690,7 @@ object mod {
     /** Labels for each of the axis */
     var axisLabels: js.UndefOr[Y] = js.undefined
     
-    var clickHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var clickHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
     /** Allows styling of individual types of points */
     var config: js.UndefOr[js.Array[Stroke]] = js.undefined
@@ -710,11 +709,11 @@ object mod {
     /** css margins */
     var margin: js.UndefOr[Bottom] = js.undefined
     
-    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
-    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseOutHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
-    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, js.Any]] = js.undefined
+    var mouseOverHandler: js.UndefOr[js.Function2[/* data */ ScatterplotData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
     /** Whether to show vertical grid lines on the chart */
     var verticalGrid: js.UndefOr[Boolean] = js.undefined
@@ -723,7 +722,7 @@ object mod {
     var width: js.UndefOr[Double] = js.undefined
     
     /** The range that the x axis should show (otherwise automatically calculated) */
-    var xDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
+    var xDomainRange: js.UndefOr[js.Array[js.Date | Double | String]] = js.undefined
     
     /** What data type the x axis is */
     var xType: js.UndefOr[time | text | linear] = js.undefined
@@ -732,7 +731,7 @@ object mod {
     var yAxisOrientRight: js.UndefOr[Boolean] = js.undefined
     
     /** The range that the y axis should show (otherwise automatically calculated) */
-    var yDomainRange: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
+    var yDomainRange: js.UndefOr[js.Array[js.Date | Double | String]] = js.undefined
     
     /** What data type the x axis is */
     var yType: js.UndefOr[time | text | linear] = js.undefined
@@ -754,7 +753,7 @@ object mod {
       
       inline def setAxisLabelsUndefined: Self = StObject.set(x, "axisLabels", js.undefined)
       
-      inline def setClickHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
+      inline def setClickHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
       
       inline def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
       
@@ -762,11 +761,11 @@ object mod {
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      inline def setConfigVarargs(value: Stroke*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: Stroke*): Self = StObject.set(x, "config", js.Array(value*))
       
       inline def setData(value: js.Array[ScatterplotData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: ScatterplotData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: ScatterplotData*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDotRadius(value: Double): Self = StObject.set(x, "dotRadius", value.asInstanceOf[js.Any])
       
@@ -784,15 +783,15 @@ object mod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMouseMoveHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
+      inline def setMouseMoveHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseMoveHandler", js.Any.fromFunction2(value))
       
       inline def setMouseMoveHandlerUndefined: Self = StObject.set(x, "mouseMoveHandler", js.undefined)
       
-      inline def setMouseOutHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
+      inline def setMouseOutHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction2(value))
       
       inline def setMouseOutHandlerUndefined: Self = StObject.set(x, "mouseOutHandler", js.undefined)
       
-      inline def setMouseOverHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
+      inline def setMouseOverHandler(value: (/* data */ ScatterplotData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction2(value))
       
       inline def setMouseOverHandlerUndefined: Self = StObject.set(x, "mouseOverHandler", js.undefined)
       
@@ -804,11 +803,11 @@ object mod {
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setXDomainRange(value: js.Array[Date | Double | String]): Self = StObject.set(x, "xDomainRange", value.asInstanceOf[js.Any])
+      inline def setXDomainRange(value: js.Array[js.Date | Double | String]): Self = StObject.set(x, "xDomainRange", value.asInstanceOf[js.Any])
       
       inline def setXDomainRangeUndefined: Self = StObject.set(x, "xDomainRange", js.undefined)
       
-      inline def setXDomainRangeVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "xDomainRange", js.Array(value :_*))
+      inline def setXDomainRangeVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "xDomainRange", js.Array(value*))
       
       inline def setXType(value: time | text | linear): Self = StObject.set(x, "xType", value.asInstanceOf[js.Any])
       
@@ -818,11 +817,11 @@ object mod {
       
       inline def setYAxisOrientRightUndefined: Self = StObject.set(x, "yAxisOrientRight", js.undefined)
       
-      inline def setYDomainRange(value: js.Array[Date | Double | String]): Self = StObject.set(x, "yDomainRange", value.asInstanceOf[js.Any])
+      inline def setYDomainRange(value: js.Array[js.Date | Double | String]): Self = StObject.set(x, "yDomainRange", value.asInstanceOf[js.Any])
       
       inline def setYDomainRangeUndefined: Self = StObject.set(x, "yDomainRange", js.undefined)
       
-      inline def setYDomainRangeVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "yDomainRange", js.Array(value :_*))
+      inline def setYDomainRangeVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "yDomainRange", js.Array(value*))
       
       inline def setYType(value: time | text | linear): Self = StObject.set(x, "yType", value.asInstanceOf[js.Any])
       
@@ -834,15 +833,15 @@ object mod {
     
     var `type`: String | Double
     
-    var x: Double | Date | String
+    var x: Double | js.Date | String
     
-    var y: Double | Date | String
+    var y: Double | js.Date | String
     
     var z: js.UndefOr[Double] = js.undefined
   }
   object ScatterplotData {
     
-    inline def apply(`type`: String | Double, x: Double | Date | String, y: Double | Date | String): ScatterplotData = {
+    inline def apply(`type`: String | Double, x: Double | js.Date | String, y: Double | js.Date | String): ScatterplotData = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScatterplotData]
@@ -852,9 +851,9 @@ object mod {
       
       inline def setType(value: String | Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setX(value: Double | Date | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double | js.Date | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setY(value: Double | Date | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double | js.Date | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
       inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
       

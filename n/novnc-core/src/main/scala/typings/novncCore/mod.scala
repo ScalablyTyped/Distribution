@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("novnc-core", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with RFB {
     def this(defaults: NvRFBDefaults) = this()
@@ -109,7 +109,7 @@ object mod {
           /* rfb */ RFB, 
           /* msg */ String, 
           /* level */ normal | warn | error, 
-          /* options */ js.UndefOr[StringDictionary[js.Any]], 
+          /* options */ js.UndefOr[StringDictionary[Any]], 
           Unit
         ]
       ] = js.undefined
@@ -190,7 +190,7 @@ object mod {
       inline def setOnFBUReceiveUndefined: Self = StObject.set(x, "onFBUReceive", js.undefined)
       
       inline def setOnNotification(
-        value: (/* rfb */ RFB, /* msg */ String, /* level */ normal | warn | error, /* options */ js.UndefOr[StringDictionary[js.Any]]) => Unit
+        value: (/* rfb */ RFB, /* msg */ String, /* level */ normal | warn | error, /* options */ js.UndefOr[StringDictionary[Any]]) => Unit
       ): Self = StObject.set(x, "onNotification", js.Any.fromFunction4(value))
       
       inline def setOnNotificationUndefined: Self = StObject.set(x, "onNotification", js.undefined)
@@ -231,7 +231,7 @@ object mod {
       
       inline def setWsProtocolsUndefined: Self = StObject.set(x, "wsProtocols", js.undefined)
       
-      inline def setWsProtocolsVarargs(value: String*): Self = StObject.set(x, "wsProtocols", js.Array(value :_*))
+      inline def setWsProtocolsVarargs(value: String*): Self = StObject.set(x, "wsProtocols", js.Array(value*))
       
       inline def setXvp_password_sep(value: String): Self = StObject.set(x, "xvp_password_sep", value.asInstanceOf[js.Any])
       
@@ -298,7 +298,7 @@ object mod {
         /* rfb */ this.type, 
         /* msg */ String, 
         /* level */ normal | warn | error, 
-        /* options */ js.UndefOr[StringDictionary[js.Any]], 
+        /* options */ js.UndefOr[StringDictionary[Any]], 
         Unit
       ] = js.native
     
@@ -363,7 +363,7 @@ object mod {
           /* rfb */ this.type, 
           /* msg */ String, 
           /* level */ normal | warn | error, 
-          /* options */ js.UndefOr[StringDictionary[js.Any]], 
+          /* options */ js.UndefOr[StringDictionary[Any]], 
           Unit
         ]
     ): Unit = js.native

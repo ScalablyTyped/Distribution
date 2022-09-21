@@ -1,7 +1,7 @@
 
 # Scala.js typings for assemblyscript__loader
 
-Typings are for version 0.9.4
+Typings are for version 0.21.3
 
 ## Library description:
 A convenient loader for AssemblyScript modules.
@@ -10,10 +10,10 @@ A convenient loader for AssemblyScript modules.
 | ------------------ | :-------------: |
 | Full name          | @assemblyscript/loader |
 | Keywords           | assemblyscript, loader, glue, interop, webassembly, wasm |
-| # releases         | 135 |
-| # dependents       | 25 |
-| # downloads        | 707225 |
-| # stars            | 1 |
+| # releases         | 103 |
+| # dependents       | 0.0 |
+| # downloads        | 6153259.333333333 |
+| # stars            | 14462.0 |
 
 ## Links
 - [Homepage](https://assemblyscript.org)

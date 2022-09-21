@@ -1,7 +1,7 @@
 package typings.cassandraDriver
 
 import typings.cassandraDriver.anon.AuthorizationId
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object authMod {
     
     @JSImport("cassandra-driver/lib/auth", "auth.DseGssapiAuthProvider")
     @js.native
-    class DseGssapiAuthProvider ()
+    open class DseGssapiAuthProvider ()
       extends StObject
          with AuthProvider {
       def this(gssOptions: AuthorizationId) = this()
@@ -23,7 +23,7 @@ object authMod {
     
     @JSImport("cassandra-driver/lib/auth", "auth.DsePlainTextAuthProvider")
     @js.native
-    class DsePlainTextAuthProvider protected ()
+    open class DsePlainTextAuthProvider protected ()
       extends StObject
          with AuthProvider {
       def this(username: String, password: String) = this()
@@ -35,7 +35,7 @@ object authMod {
     
     @JSImport("cassandra-driver/lib/auth", "auth.PlainTextAuthProvider")
     @js.native
-    class PlainTextAuthProvider protected ()
+    open class PlainTextAuthProvider protected ()
       extends StObject
          with AuthProvider {
       def this(username: String, password: String) = this()

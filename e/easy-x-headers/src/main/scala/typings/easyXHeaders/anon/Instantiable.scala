@@ -2,8 +2,7 @@ package typings.easyXHeaders.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ trait Instantiable
   * @param size count of octets to allocate.
   */
 Instantiable1[
-      (/* array */ js.Array[js.Any]) | (/* size */ Double) | (/* str */ String) | (/* array */ Uint8Array), 
+      (/* array */ js.Array[Any]) | (/* size */ Double) | (/* str */ String) | (/* array */ js.typedarray.Uint8Array), 
       Buffer
     ]
      with Instantiable2[/* str */ String, /* encoding */ String, Buffer] {
@@ -67,7 +66,7 @@ Instantiable1[
     *
     * @param obj object to test.
     */
-  def isBuffer(obj: js.Any): Boolean = js.native
+  def isBuffer(obj: Any): Boolean = js.native
   
   /**
     * Returns true if {encoding} is a valid encoding argument.

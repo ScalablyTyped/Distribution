@@ -19,7 +19,7 @@ trait ICarousel
   /** [Method] Returns the value of animation
     * @returns Object
     */
-  var getAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of bufferSize
     * @returns Number
@@ -39,17 +39,17 @@ trait ICarousel
   /** [Method] Returns the value of indicator
     * @returns any
     */
-  var getIndicator: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getIndicator: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of itemConfig
     * @returns Object
     */
-  var getItemConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getItemConfig: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of itemLength
     * @returns Object
     */
-  var getItemLength: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getItemLength: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var indicator: js.UndefOr[Boolean] = js.undefined
@@ -82,7 +82,7 @@ trait ICarousel
   /** [Method] Sets the value of animation
     * @param animation Object The new value.
     */
-  var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of bufferSize
     * @param bufferSize Number The new value.
@@ -107,12 +107,12 @@ trait ICarousel
   /** [Method] Sets the value of itemConfig
     * @param itemConfig Object The new value.
     */
-  var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of itemLength
     * @param itemLength Object The new value.
     */
-  var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object ICarousel {
   
@@ -131,7 +131,7 @@ object ICarousel {
     
     inline def setGetActiveIndexUndefined: Self = StObject.set(x, "getActiveIndex", js.undefined)
     
-    inline def setGetAnimation(value: () => js.Any): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
+    inline def setGetAnimation(value: () => Any): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
     
     inline def setGetAnimationUndefined: Self = StObject.set(x, "getAnimation", js.undefined)
     
@@ -147,15 +147,15 @@ object ICarousel {
     
     inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
     
-    inline def setGetIndicator(value: () => js.Any): Self = StObject.set(x, "getIndicator", js.Any.fromFunction0(value))
+    inline def setGetIndicator(value: () => Any): Self = StObject.set(x, "getIndicator", js.Any.fromFunction0(value))
     
     inline def setGetIndicatorUndefined: Self = StObject.set(x, "getIndicator", js.undefined)
     
-    inline def setGetItemConfig(value: () => js.Any): Self = StObject.set(x, "getItemConfig", js.Any.fromFunction0(value))
+    inline def setGetItemConfig(value: () => Any): Self = StObject.set(x, "getItemConfig", js.Any.fromFunction0(value))
     
     inline def setGetItemConfigUndefined: Self = StObject.set(x, "getItemConfig", js.undefined)
     
-    inline def setGetItemLength(value: () => js.Any): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
+    inline def setGetItemLength(value: () => Any): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
     
     inline def setGetItemLengthUndefined: Self = StObject.set(x, "getItemLength", js.undefined)
     
@@ -183,7 +183,7 @@ object ICarousel {
     
     inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
-    inline def setSetAnimation(value: /* animation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1(value))
+    inline def setSetAnimation(value: /* animation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1(value))
     
     inline def setSetAnimationUndefined: Self = StObject.set(x, "setAnimation", js.undefined)
     
@@ -203,11 +203,11 @@ object ICarousel {
     
     inline def setSetIndicatorUndefined: Self = StObject.set(x, "setIndicator", js.undefined)
     
-    inline def setSetItemConfig(value: /* itemConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1(value))
+    inline def setSetItemConfig(value: /* itemConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1(value))
     
     inline def setSetItemConfigUndefined: Self = StObject.set(x, "setItemConfig", js.undefined)
     
-    inline def setSetItemLength(value: /* itemLength */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemLength", js.Any.fromFunction1(value))
+    inline def setSetItemLength(value: /* itemLength */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItemLength", js.Any.fromFunction1(value))
     
     inline def setSetItemLengthUndefined: Self = StObject.set(x, "setItemLength", js.undefined)
   }

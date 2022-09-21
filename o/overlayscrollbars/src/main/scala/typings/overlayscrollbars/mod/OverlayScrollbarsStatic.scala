@@ -54,7 +54,7 @@ trait OverlayScrollbarsStatic extends StObject {
       /* this */ OverlayScrollbars, 
       /* defaultOptions */ js.Object, 
       /* compatibility */ Compatibility, 
-      /* framework */ js.Any, 
+      /* framework */ Any, 
       Extension
     ]
   ): Unit = js.native
@@ -64,7 +64,7 @@ trait OverlayScrollbarsStatic extends StObject {
       /* this */ OverlayScrollbars, 
       /* defaultOptions */ js.Object, 
       /* compatibility */ Compatibility, 
-      /* framework */ js.Any, 
+      /* framework */ Any, 
       Extension
     ],
     defaultOptions: js.Object
@@ -74,5 +74,5 @@ trait OverlayScrollbarsStatic extends StObject {
   
   def globals(): Globals = js.native
   
-  def valid(osInstance: js.Any): Boolean = js.native
+  def valid(osInstance: Any): Boolean = js.native
 }

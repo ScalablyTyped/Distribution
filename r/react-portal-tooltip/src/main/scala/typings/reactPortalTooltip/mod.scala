@@ -8,11 +8,11 @@ object mod {
   
   @JSImport("react-portal-tooltip", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.reactPortalTooltip.toolTipMod.default
   
   @JSImport("react-portal-tooltip", "StatefulToolTip")
   @js.native
-  class StatefulToolTip ()
+  open class StatefulToolTip ()
     extends typings.reactPortalTooltip.statefulToolTipMod.default
 }

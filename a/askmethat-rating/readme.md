@@ -10,15 +10,13 @@ Simple plugin providing to use fonts as rating
 | ------------------ | :-------------: |
 | Full name          | askmethat-rating |
 | Keywords           | rating, font, askmethat, plugin, font-awesome, glyphicon |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 352 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 39.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://alexteixeira.github.io/Askmethat-Rating/)
-- [Bugs](https://github.com/AlexTeixeira/Askmethat-Rating/issues)
-- [Repository](https://github.com/AlexTeixeira/Askmethat-Rating)
 - [Npm](https://www.npmjs.com/package/askmethat-rating)
     
 

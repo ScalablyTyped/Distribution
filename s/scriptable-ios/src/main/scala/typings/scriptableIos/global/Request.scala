@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Request")
 @js.native
-class Request protected ()
+open class Request protected ()
   extends StObject
      with typings.scriptableIos.Request {
   /**

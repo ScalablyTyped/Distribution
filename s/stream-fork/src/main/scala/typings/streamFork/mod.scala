@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("stream-fork", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Fork_ {
+  open class ^ protected () extends Fork_ {
     /**
       * A specialized Writable stream. It propagates every piece of data downstream to its dependent Writable streams (including Transform and Duplex streams).
       * @param outputs outputs is an array of Writable streams, which will be used duplicate written chunks or items.

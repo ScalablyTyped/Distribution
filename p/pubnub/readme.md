@@ -1,7 +1,7 @@
 
 # Scala.js typings for pubnub
 
-Typings are for version 4.28
+Typings are for version 7.2
 
 ## Library description:
 Publish & Subscribe Real-time Messaging with PubNub
@@ -10,10 +10,10 @@ Publish & Subscribe Real-time Messaging with PubNub
 | ------------------ | :-------------: |
 | Full name          | pubnub |
 | Keywords           | cloud, publish, subscribe, websockets, comet, bosh, xmpp, real-time, messaging |
-| # releases         | 41 |
-| # dependents       | 125 |
-| # downloads        | 3645524 |
-| # stars            | 9 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 489193.6666666667 |
+| # stars            | 521.0 |
 
 ## Links
 - [Homepage](https://github.com/pubnub/javascript#readme)

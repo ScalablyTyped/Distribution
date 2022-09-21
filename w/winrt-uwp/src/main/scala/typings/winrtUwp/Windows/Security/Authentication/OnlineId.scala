@@ -55,13 +55,13 @@ object OnlineId {
       * @param credentialPromptType The type of credentials.
       * @return An object representing the authentication operation.
       */
-    def authenticateUserAsync(requests: IIterable[OnlineIdServiceTicketRequest], credentialPromptType: CredentialPromptType): IPromiseWithOperation[js.Any, UserAuthenticationOperation] = js.native
+    def authenticateUserAsync(requests: IIterable[OnlineIdServiceTicketRequest], credentialPromptType: CredentialPromptType): IPromiseWithOperation[Any, UserAuthenticationOperation] = js.native
     /**
       * Starts the async authentication request with one OnlineIdServiceTicketRequest . If a user is signed into a Windows 8 system with a Microsoft account, this user will be used for the authentication request.
       * @param request A request object that provides the ability for an app to specify the service and policy used to authenticate a Live user to obtain identity properties and tickets.
       * @return An object representing the authentication operation.
       */
-    def authenticateUserAsync(request: OnlineIdServiceTicketRequest): IPromiseWithOperation[js.Any, UserAuthenticationOperation] = js.native
+    def authenticateUserAsync(request: OnlineIdServiceTicketRequest): IPromiseWithOperation[Any, UserAuthenticationOperation] = js.native
     
     /** Returns the ID of a user who has been successfully authenticated for your app. */
     var authenticatedSafeCustomerId: String = js.native
@@ -73,7 +73,7 @@ object OnlineId {
       * Allows users to sign out of your app.
       * @return An object that contains additional information about the why the user signed out.
       */
-    def signOutUserAsync(): IPromiseWithOperation[js.Any, SignOutUserOperation] = js.native
+    def signOutUserAsync(): IPromiseWithOperation[Any, SignOutUserOperation] = js.native
   }
   
   /** Contains the ticket that is obtained after the user authenticates to this app or has provided consent to access user data stored in Live. */

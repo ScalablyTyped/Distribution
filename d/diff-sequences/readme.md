@@ -1,7 +1,7 @@
 
 # Scala.js typings for diff-sequences
 
-Typings are for version 26.6.2
+Typings are for version 29.0.0
 
 ## Library description:
 Compare items in two sequences to find a longest common subsequence
@@ -10,10 +10,10 @@ Compare items in two sequences to find a longest common subsequence
 | ------------------ | :-------------: |
 | Full name          | diff-sequences |
 | Keywords           | fast, linear, space, callback, diff |
-| # releases         | 19 |
-| # dependents       | 46 |
-| # downloads        | 517740619 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 1.13587275E8 |
+| # stars            | 39951.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

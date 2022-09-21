@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassHttpCookie ()
+open class ClassHttpCookie ()
   extends StObject
      with typings.fibjs.ClassHttpCookie {
   def this(opts: js.Object) = this()

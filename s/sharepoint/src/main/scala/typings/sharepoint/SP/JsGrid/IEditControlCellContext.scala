@@ -21,9 +21,9 @@ trait IEditControlCellContext
   var cellHeight: Double
   
   // TODO: Determine correct type
-  var cellRect: js.Any
+  var cellRect: Any
   
-  var cellStyle: js.Any
+  var cellStyle: Any
   
   var cellWidth: Double
 }
@@ -33,12 +33,12 @@ object IEditControlCellContext {
     Hide: HTMLElement => Unit,
     NotifyEditComplete: () => Unit,
     NotifyExpandControl: () => Unit,
-    SetCurrentValue: js.Any => Unit,
+    SetCurrentValue: Any => Unit,
     Show: HTMLElement => Unit,
     cellExpandSpace: Bottom,
     cellHeight: Double,
-    cellRect: js.Any,
-    cellStyle: js.Any,
+    cellRect: Any,
+    cellStyle: Any,
     cellWidth: Double,
     column: ColumnInfo,
     field: GridField,
@@ -55,9 +55,9 @@ object IEditControlCellContext {
     
     inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
-    inline def setCellRect(value: js.Any): Self = StObject.set(x, "cellRect", value.asInstanceOf[js.Any])
+    inline def setCellRect(value: Any): Self = StObject.set(x, "cellRect", value.asInstanceOf[js.Any])
     
-    inline def setCellStyle(value: js.Any): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
+    inline def setCellStyle(value: Any): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
     
     inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
     

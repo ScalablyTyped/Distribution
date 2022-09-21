@@ -12,36 +12,36 @@ object loaderMod {
   
   @JSImport("three/src/loaders/Loader", "Loader")
   @js.native
-  class Loader () extends StObject {
+  open class Loader () extends StObject {
     def this(manager: LoadingManager) = this()
     
     /**
-    	 * @default 'anonymous'
-    	 */
+      * @default 'anonymous'
+      */
     var crossOrigin: String = js.native
     
     /*
     	load(): void;
     	parse(): void;
     	*/
-    def loadAsync(url: String): js.Promise[js.Any] = js.native
-    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[js.Any] = js.native
+    def loadAsync(url: String): js.Promise[Any] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[Any] = js.native
     
     var manager: LoadingManager = js.native
     
     /**
-    	 * @default ''
-    	 */
+      * @default ''
+      */
     var path: String = js.native
     
     /**
-    	 * @default {}
-    	 */
+      * @default {}
+      */
     var requestHeader: StringDictionary[String] = js.native
     
     /**
-    	 * @default ''
-    	 */
+      * @default ''
+      */
     var resourcePath: String = js.native
     
     def setCrossOrigin(crossOrigin: String): this.type = js.native
@@ -55,8 +55,8 @@ object loaderMod {
     def setWithCredentials(value: Boolean): this.type = js.native
     
     /**
-    	 * @default: false
-    	 */
+      * @default: false
+      */
     var withCredentials: Boolean = js.native
   }
 }

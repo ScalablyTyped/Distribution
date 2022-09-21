@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "navigo" : "8.11.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "navigo" : "8.11.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

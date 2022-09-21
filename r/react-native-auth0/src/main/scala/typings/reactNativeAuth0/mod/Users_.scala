@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-auth0", "Users")
 @js.native
-class Users_ protected () extends StObject {
+open class Users_ protected () extends StObject {
   def this(options: UsersOptions) = this()
   
   /* tslint:disable-next-line no-unnecessary-generics */

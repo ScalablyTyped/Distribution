@@ -8,10 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WritableStream[W] extends StObject {
   
+  /* standard dom */
   def abort(): js.Promise[Unit] = js.native
-  def abort(reason: js.Any): js.Promise[Unit] = js.native
+  def abort(reason: Any): js.Promise[Unit] = js.native
   
+  /* standard dom */
+  def close(): js.Promise[Unit] = js.native
+  
+  /* standard dom */
   def getWriter(): WritableStreamDefaultWriter[W] = js.native
   
+  /* standard dom */
   val locked: scala.Boolean = js.native
 }

@@ -125,5 +125,5 @@ trait IPhysicsEnginePlugin extends StObject {
   
   def wakeUpBody(impostor: PhysicsImpostor): Unit = js.native
   
-  var world: js.Any = js.native
+  var world: Any = js.native
 }

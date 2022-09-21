@@ -1,6 +1,7 @@
 package typings.fluentuiTheme
 
-import typings.uifabricMergeStyles.stylesheetMod.IStyleSheetConfig
+import typings.fluentuiMergeStyles.stylesheetMod.ISerializedStylesheet
+import typings.fluentuiMergeStyles.stylesheetMod.IStyleSheetConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +19,11 @@ object ifabricconfigMod {
       * The mergeStyles stylesheet config.
       */
     var mergeStyles: js.UndefOr[IStyleSheetConfig] = js.undefined
+    
+    /**
+      * Serialized form of Stylesheet used for rehydration.
+      */
+    var serializedStylesheet: js.UndefOr[ISerializedStylesheet] = js.undefined
   }
   object IFabricConfig {
     
@@ -35,6 +41,10 @@ object ifabricconfigMod {
       inline def setMergeStyles(value: IStyleSheetConfig): Self = StObject.set(x, "mergeStyles", value.asInstanceOf[js.Any])
       
       inline def setMergeStylesUndefined: Self = StObject.set(x, "mergeStyles", js.undefined)
+      
+      inline def setSerializedStylesheet(value: ISerializedStylesheet): Self = StObject.set(x, "serializedStylesheet", value.asInstanceOf[js.Any])
+      
+      inline def setSerializedStylesheetUndefined: Self = StObject.set(x, "serializedStylesheet", js.undefined)
     }
   }
 }

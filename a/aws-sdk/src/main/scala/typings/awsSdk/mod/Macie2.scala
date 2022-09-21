@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Macie2 ()
+open class Macie2 ()
   extends typings.awsSdk.allMod.Macie2 {
   def this(options: ClientConfiguration) = this()
 }

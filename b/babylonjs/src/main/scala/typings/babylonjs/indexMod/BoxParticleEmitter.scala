@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new instance BoxParticleEmitter
   */
-class BoxParticleEmitter ()
+open class BoxParticleEmitter ()
   extends typings.babylonjs.particlesIndexMod.BoxParticleEmitter

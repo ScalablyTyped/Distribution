@@ -12,7 +12,7 @@ trait EncryptionConfig extends StObject {
   var EncryptionType: typings.awsSdk.connectMod.EncryptionType
   
   /**
-    * The identifier of the encryption key.
+    * The full ARN of the encryption key.   Be sure to provide the full ARN of the encryption key, not just the ID. 
     */
   var KeyId: typings.awsSdk.connectMod.KeyId
 }

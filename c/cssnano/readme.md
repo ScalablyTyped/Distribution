@@ -1,7 +1,7 @@
 
 # Scala.js typings for cssnano
 
-Typings are for version 4.0
+Typings are for version 5.1.13
 
 ## Library description:
 A modular minifier, built on top of the PostCSS ecosystem.
@@ -10,10 +10,10 @@ A modular minifier, built on top of the PostCSS ecosystem.
 | ------------------ | :-------------: |
 | Full name          | cssnano |
 | Keywords           | css, compress, minify, optimise, optimisation, postcss, postcss-plugin |
-| # releases         | 17 |
-| # dependents       | 1779 |
-| # downloads        | 339550699 |
-| # stars            | 52 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 4.5958399666666664E7 |
+| # stars            | 4204.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)
@@ -24,7 +24,7 @@ A modular minifier, built on top of the PostCSS ecosystem.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

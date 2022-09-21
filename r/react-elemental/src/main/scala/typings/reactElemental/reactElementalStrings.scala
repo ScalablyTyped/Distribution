@@ -104,6 +104,10 @@ object reactElementalStrings {
   inline def enter: enter = "enter".asInstanceOf[enter]
   
   @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
   sealed trait error
     extends StObject
        with AlertType
@@ -303,6 +307,10 @@ object reactElementalStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait vertical extends StObject

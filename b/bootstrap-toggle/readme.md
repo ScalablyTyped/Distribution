@@ -11,14 +11,12 @@ Bootstrap Toggle is a highly flexible Bootstrap plugin that converts checkboxes 
 | Full name          | bootstrap-toggle |
 | Keywords           | bootstrap, toggle, bootstrap-toggle, switch, bootstrap-switch |
 | # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 958754 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 110799.66666666667 |
+| # stars            | 1479.0 |
 
 ## Links
 - [Homepage](http://www.bootstraptoggle.com)
-- [Bugs](https://github.com/minhur/bootstrap-toggle/issues)
-- [Repository](https://github.com/minhur/bootstrap-toggle)
 - [Npm](https://www.npmjs.com/package/bootstrap-toggle)
     
 

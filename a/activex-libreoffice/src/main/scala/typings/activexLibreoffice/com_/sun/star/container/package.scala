@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.container
 
+import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XNameContainer
   * @see XNameContainer.insertByName
   */
-type ElementExistException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type ElementExistException = Exception
 
 /**
   * is thrown by child access methods of collections, if the addressed child does not exist.
   * @see XEnumeration
   * @see XEnumeration.nextElement
   */
-type NoSuchElementException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type NoSuchElementException = Exception

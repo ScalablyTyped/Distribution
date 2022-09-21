@@ -8,7 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
+    * (Highcharts, Highstock, Gantt) When using multiple axes, align the
+    * thresholds. When this is true, other ticks will also be aligned.
+    *
+    * Note that for line series and some other series types, the `threshold`
+    * option is set to `null` by default. This will in turn cause their y-axis
+    * to not have a threshold. In order to avoid that, set the series
+    * `threshold` to 0 or another number.
+    *
+    * If `startOnTick` or `endOnTick` in the axis options are set to false, or
+    * if the axis is logarithmic, the threshold will not be aligned.
+    */
+  var alignThresholds: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) When using multiple axes, the ticks of two
     * or more opposite axes will automatically be aligned by adding ticks to
     * the axis or axes with the least ticks, as if `tickAmount` were specified.
     *
@@ -16,12 +30,22 @@ trait ChartOptions extends StObject {
     * look messy, it's a good idea to hide them for the secondary axis by
     * setting `gridLineWidth` to 0.
     *
-    * If `startOnTick` or `endOnTick` in an Axis options are set to false, then
-    * the `alignTicks ` will be disabled for the Axis.
+    * If `startOnTick` or `endOnTick` in the axis options are set to false,
+    * then the `alignTicks ` will be disabled for the axis.
     *
     * Disabled for logarithmic axes.
     */
   var alignTicks: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) By default, (because of memory
+    * and performance reasons) the chart does not copy the data but keeps it as
+    * a reference. In some cases, this might result in mutating the original
+    * data source. In order to prevent that, set that property to false. Please
+    * note that changing that might decrease performance, especially with
+    * bigger sets of data.
+    */
+  var allowMutatingData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Set the overall animation for
@@ -128,17 +152,20 @@ trait ChartOptions extends StObject {
   var inverted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highmaps) Default `mapData` for all series. If set to a string, it
-    * functions as an index into the `Highcharts.maps` array. Otherwise it is
-    * interpreted as map data.
+    * (Highmaps) Default `mapData` for all series, in terms of a GeoJSON or
+    * TopoJSON object. If set to a string, it functions as an index into the
+    * `Highcharts.maps` array.
+    *
+    * For picking out individual shapes and geometries to use for each series
+    * of the map, see series.mapData.
     */
-  var map: js.UndefOr[String | GeoJSON | js.Array[js.Any]] = js.undefined
+  var map: js.UndefOr[String | GeoJSON | TopoJSON | js.Array[Any]] = js.undefined
   
   /**
     * (Highmaps) Set lat/lon transformation definitions for the chart. If not
     * defined, these are extracted from the map data.
     */
-  var mapTransforms: js.UndefOr[js.Any] = js.undefined
+  var mapTransforms: js.UndefOr[Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the outer
@@ -210,8 +237,8 @@ trait ChartOptions extends StObject {
   var panKey: js.UndefOr[OptionsPanKeyValue] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) Allow panning in a chart. Best used with
-    * panKey to combine zooming and panning.
+    * (Highcharts, Highstock, Highmaps, Gantt) Allow panning in a chart. Best
+    * used with panKey to combine zooming and panning.
     *
     * On touch devices, when the tooltip.followTouchMove option is `true`
     * (default), panning requires two fingers. To allow panning with one
@@ -235,16 +262,6 @@ trait ChartOptions extends StObject {
     * `modules/parallel-coordinates.js`.
     */
   var parallelCoordinates: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) Equivalent to zoomType, but for multitouch
-    * gestures only. By default, the `pinchType` is the same as the `zoomType`
-    * setting. However, pinching can be enabled separately in some cases, for
-    * example in stock charts where a mouse drag pans the chart, while pinching
-    * is enabled. When tooltip.followTouchMove is true, pinchType only applies
-    * to two-finger touches.
-    */
-  var pinchType: js.UndefOr[OptionsPinchTypeValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
@@ -310,12 +327,6 @@ trait ChartOptions extends StObject {
     * needed.
     */
   var renderTo: js.UndefOr[String | HTMLDOMElement] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The button that appears after a
-    * selection zoom, allowing the user to reset zoom.
-    */
-  var resetZoomButton: js.UndefOr[ChartResetZoomButtonOptions] = js.undefined
   
   /**
     * (Highcharts, Gantt) Options for a scrollable plot area. This feature
@@ -425,17 +436,9 @@ trait ChartOptions extends StObject {
   var width: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Set a key to hold when dragging
-    * to zoom the chart. This is useful to avoid zooming while moving points.
-    * Should be set different than chart.panKey.
+    * (Highcharts, Highstock, Highmaps, Gantt) Chart zooming options.
     */
-  var zoomKey: js.UndefOr[OptionsZoomKeyValue] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) Decides in what dimensions the user can
-    * zoom by dragging the mouse. Can be one of `x`, `y` or `xy`.
-    */
-  var zoomType: js.UndefOr[OptionsZoomTypeValue] = js.undefined
+  var zooming: js.UndefOr[ChartZoomingOptions] = js.undefined
 }
 object ChartOptions {
   
@@ -446,9 +449,17 @@ object ChartOptions {
   
   extension [Self <: ChartOptions](x: Self) {
     
+    inline def setAlignThresholds(value: Boolean): Self = StObject.set(x, "alignThresholds", value.asInstanceOf[js.Any])
+    
+    inline def setAlignThresholdsUndefined: Self = StObject.set(x, "alignThresholds", js.undefined)
+    
     inline def setAlignTicks(value: Boolean): Self = StObject.set(x, "alignTicks", value.asInstanceOf[js.Any])
     
     inline def setAlignTicksUndefined: Self = StObject.set(x, "alignTicks", js.undefined)
+    
+    inline def setAllowMutatingData(value: Boolean): Self = StObject.set(x, "allowMutatingData", value.asInstanceOf[js.Any])
+    
+    inline def setAllowMutatingDataUndefined: Self = StObject.set(x, "allowMutatingData", js.undefined)
     
     inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
@@ -500,15 +511,15 @@ object ChartOptions {
     
     inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
     
-    inline def setMap(value: String | GeoJSON | js.Array[js.Any]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: String | GeoJSON | TopoJSON | js.Array[Any]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    inline def setMapTransforms(value: js.Any): Self = StObject.set(x, "mapTransforms", value.asInstanceOf[js.Any])
+    inline def setMapTransforms(value: Any): Self = StObject.set(x, "mapTransforms", value.asInstanceOf[js.Any])
     
     inline def setMapTransformsUndefined: Self = StObject.set(x, "mapTransforms", js.undefined)
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setMapVarargs(value: js.Any*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: Any*): Self = StObject.set(x, "map", js.Array(value*))
     
     inline def setMargin(value: Double | js.Array[Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
@@ -530,7 +541,7 @@ object ChartOptions {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value*))
     
     inline def setNumberFormatter(
       value: (/* number */ Double, /* decimals */ Double, /* decimalPoint */ js.UndefOr[String], /* thousandsSep */ js.UndefOr[String]) => String
@@ -554,15 +565,11 @@ object ChartOptions {
     
     inline def setParallelAxesUndefined: Self = StObject.set(x, "parallelAxes", js.undefined)
     
-    inline def setParallelAxesVarargs(value: ChartParallelAxesOptions*): Self = StObject.set(x, "parallelAxes", js.Array(value :_*))
+    inline def setParallelAxesVarargs(value: ChartParallelAxesOptions*): Self = StObject.set(x, "parallelAxes", js.Array(value*))
     
     inline def setParallelCoordinates(value: Boolean): Self = StObject.set(x, "parallelCoordinates", value.asInstanceOf[js.Any])
     
     inline def setParallelCoordinatesUndefined: Self = StObject.set(x, "parallelCoordinates", js.undefined)
-    
-    inline def setPinchType(value: OptionsPinchTypeValue): Self = StObject.set(x, "pinchType", value.asInstanceOf[js.Any])
-    
-    inline def setPinchTypeUndefined: Self = StObject.set(x, "pinchType", js.undefined)
     
     inline def setPlotBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "plotBackgroundColor", value.asInstanceOf[js.Any])
     
@@ -600,10 +607,6 @@ object ChartOptions {
     
     inline def setRenderToUndefined: Self = StObject.set(x, "renderTo", js.undefined)
     
-    inline def setResetZoomButton(value: ChartResetZoomButtonOptions): Self = StObject.set(x, "resetZoomButton", value.asInstanceOf[js.Any])
-    
-    inline def setResetZoomButtonUndefined: Self = StObject.set(x, "resetZoomButton", js.undefined)
-    
     inline def setScrollablePlotArea(value: ChartScrollablePlotAreaOptions): Self = StObject.set(x, "scrollablePlotArea", value.asInstanceOf[js.Any])
     
     inline def setScrollablePlotAreaUndefined: Self = StObject.set(x, "scrollablePlotArea", js.undefined)
@@ -640,7 +643,7 @@ object ChartOptions {
     
     inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
-    inline def setSpacingVarargs(value: Double*): Self = StObject.set(x, "spacing", js.Array(value :_*))
+    inline def setSpacingVarargs(value: Double*): Self = StObject.set(x, "spacing", js.Array(value*))
     
     inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -660,12 +663,8 @@ object ChartOptions {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setZoomKey(value: OptionsZoomKeyValue): Self = StObject.set(x, "zoomKey", value.asInstanceOf[js.Any])
+    inline def setZooming(value: ChartZoomingOptions): Self = StObject.set(x, "zooming", value.asInstanceOf[js.Any])
     
-    inline def setZoomKeyUndefined: Self = StObject.set(x, "zoomKey", js.undefined)
-    
-    inline def setZoomType(value: OptionsZoomTypeValue): Self = StObject.set(x, "zoomType", value.asInstanceOf[js.Any])
-    
-    inline def setZoomTypeUndefined: Self = StObject.set(x, "zoomType", js.undefined)
+    inline def setZoomingUndefined: Self = StObject.set(x, "zooming", js.undefined)
   }
 }

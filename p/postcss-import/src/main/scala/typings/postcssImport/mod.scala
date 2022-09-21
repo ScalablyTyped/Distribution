@@ -42,6 +42,14 @@ object mod {
     var addModulesDirectories: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
+      * Only transform imports for which the test function returns `true`. Imports for which the test function returns `false` will be left as is. The function gets the path to import as an
+      * argument and should return a boolean.
+      *
+      * @default () => true
+      */
+    var filter: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.undefined
+    
+    /**
       * You can overwrite the default loading way by setting this option. This function gets `(filename, importOptions)` arguments and returns content or promised content.
       */
     var load: js.UndefOr[
@@ -102,7 +110,11 @@ object mod {
       
       inline def setAddModulesDirectoriesUndefined: Self = StObject.set(x, "addModulesDirectories", js.undefined)
       
-      inline def setAddModulesDirectoriesVarargs(value: String*): Self = StObject.set(x, "addModulesDirectories", js.Array(value :_*))
+      inline def setAddModulesDirectoriesVarargs(value: String*): Self = StObject.set(x, "addModulesDirectories", js.Array(value*))
+      
+      inline def setFilter(value: /* path */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       inline def setLoad(value: (/* filename */ String, AtImportOptions) => String | js.Promise[String]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
@@ -112,13 +124,13 @@ object mod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setPlugins(value: js.Array[AcceptedPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: AcceptedPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: AcceptedPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setResolve(
         value: (/* id */ String, /* basedir */ String, AtImportOptions) => String | js.Array[String] | (js.Thenable[String | js.Array[String]])

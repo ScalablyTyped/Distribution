@@ -1,10 +1,9 @@
 package typings.qIo
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.q.mod.Promise
 import typings.qIo.QioFS.Stats
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +16,9 @@ object anon {
     def absolute(path: String): String = js.native
     
     def append(path: String, content: String): Promise[Unit] = js.native
-    def append(path: String, content: String, options: js.Any): Promise[Unit] = js.native
+    def append(path: String, content: String, options: Any): Promise[Unit] = js.native
     def append(path: String, content: Buffer): Promise[Unit] = js.native
-    def append(path: String, content: Buffer, options: js.Any): Promise[Unit] = js.native
+    def append(path: String, content: Buffer, options: Any): Promise[Unit] = js.native
     
     def base(path: String, `extension`: String): String = js.native
     
@@ -58,18 +57,18 @@ object anon {
     def join(paths: String*): String = js.native
     def join(paths: js.Array[String]): String = js.native
     
-    def lastAccessed(path: String): Promise[Date] = js.native
+    def lastAccessed(path: String): Promise[js.Date] = js.native
     
-    def lastModified(path: String): Promise[Date] = js.native
+    def lastModified(path: String): Promise[js.Date] = js.native
     
-    def link(source: String, target: js.Any): Promise[Unit] = js.native
+    def link(source: String, target: Any): Promise[Unit] = js.native
     
     def list(path: String): Promise[js.Array[String]] = js.native
     
     def listDirectoryTree(path: String): Promise[js.Array[String]] = js.native
     
     def listTree(path: String): Promise[js.Array[String]] = js.native
-    def listTree(path: String, guard: js.Function2[/* path */ String, /* stat */ js.Any, Boolean]): Promise[js.Array[String]] = js.native
+    def listTree(path: String, guard: js.Function2[/* path */ String, /* stat */ Any, Boolean]): Promise[js.Array[String]] = js.native
     
     def makeDirectory(path: String): Promise[Unit] = js.native
     def makeDirectory(path: String, mode: String): Promise[Unit] = js.native
@@ -84,11 +83,11 @@ object anon {
     def normal(path: String*): String = js.native
     def normal(paths: js.Array[String]): String = js.native
     
-    def open(path: String): Promise[js.Any] = js.native
-    def open(path: String, options: js.Any): Promise[js.Any] = js.native
+    def open(path: String): Promise[Any] = js.native
+    def open(path: String, options: Any): Promise[Any] = js.native
     
-    def read(path: String): Promise[js.Any] = js.native
-    def read(path: String, options: js.Any): Promise[js.Any] = js.native
+    def read(path: String): Promise[Any] = js.native
+    def read(path: String, options: Any): Promise[Any] = js.native
     
     def readLink(path: String): Promise[String] = js.native
     
@@ -126,8 +125,8 @@ object anon {
     def toObject(path: String): StringDictionary[Buffer] = js.native
     
     def write(path: String, content: String): Promise[Unit] = js.native
-    def write(path: String, content: String, options: js.Any): Promise[Unit] = js.native
+    def write(path: String, content: String, options: Any): Promise[Unit] = js.native
     def write(path: String, content: Buffer): Promise[Unit] = js.native
-    def write(path: String, content: Buffer, options: js.Any): Promise[Unit] = js.native
+    def write(path: String, content: Buffer, options: Any): Promise[Unit] = js.native
   }
 }

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +8,11 @@ trait ReleaseTask extends StObject {
   
   var agentName: String
   
-  var dateEnded: Date
+  var dateEnded: js.Date
   
-  var dateStarted: Date
+  var dateStarted: js.Date
   
-  var finishTime: Date
+  var finishTime: js.Date
   
   var id: Double
   
@@ -29,7 +28,7 @@ trait ReleaseTask extends StObject {
   
   var rank: Double
   
-  var startTime: Date
+  var startTime: js.Date
   
   var status: TaskStatus
   
@@ -41,9 +40,9 @@ object ReleaseTask {
   
   inline def apply(
     agentName: String,
-    dateEnded: Date,
-    dateStarted: Date,
-    finishTime: Date,
+    dateEnded: js.Date,
+    dateStarted: js.Date,
+    finishTime: js.Date,
     id: Double,
     issues: js.Array[Issue],
     lineCount: Double,
@@ -51,7 +50,7 @@ object ReleaseTask {
     name: String,
     percentComplete: Double,
     rank: Double,
-    startTime: Date,
+    startTime: js.Date,
     status: TaskStatus,
     task: WorkflowTaskReference,
     timelineRecordId: String
@@ -64,17 +63,17 @@ object ReleaseTask {
     
     inline def setAgentName(value: String): Self = StObject.set(x, "agentName", value.asInstanceOf[js.Any])
     
-    inline def setDateEnded(value: Date): Self = StObject.set(x, "dateEnded", value.asInstanceOf[js.Any])
+    inline def setDateEnded(value: js.Date): Self = StObject.set(x, "dateEnded", value.asInstanceOf[js.Any])
     
-    inline def setDateStarted(value: Date): Self = StObject.set(x, "dateStarted", value.asInstanceOf[js.Any])
+    inline def setDateStarted(value: js.Date): Self = StObject.set(x, "dateStarted", value.asInstanceOf[js.Any])
     
-    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: js.Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
-    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value*))
     
     inline def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
     
@@ -86,7 +85,7 @@ object ReleaseTask {
     
     inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: TaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

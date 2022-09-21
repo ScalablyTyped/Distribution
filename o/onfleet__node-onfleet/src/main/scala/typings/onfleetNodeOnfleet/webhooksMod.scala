@@ -36,7 +36,7 @@ object webhooksMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Webhooks", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Webhook {
     

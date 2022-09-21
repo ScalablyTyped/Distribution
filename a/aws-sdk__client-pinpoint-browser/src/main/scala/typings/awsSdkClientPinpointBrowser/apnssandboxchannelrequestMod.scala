@@ -8,5 +8,5 @@ object apnssandboxchannelrequestMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_APNSSandboxChannelRequest", "_APNSSandboxChannelRequest")
   @js.native
-  val APNSSandboxChannelRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val APNSSandboxChannelRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

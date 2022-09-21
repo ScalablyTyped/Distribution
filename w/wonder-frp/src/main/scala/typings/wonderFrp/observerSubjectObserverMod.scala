@@ -11,29 +11,29 @@ object observerSubjectObserverMod {
   
   @JSImport("wonder-frp/dist/es2015/observer/SubjectObserver", "SubjectObserver")
   @js.native
-  class SubjectObserver ()
+  open class SubjectObserver ()
     extends StObject
        with IObserver {
     
-    /* private */ var _disposable: js.Any = js.native
+    /* private */ var _disposable: Any = js.native
     
     def addChild(observer: Observer): Unit = js.native
     
     /* CompleteClass */
-    override def completed(): js.Any = js.native
+    override def completed(): Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
     
     /* CompleteClass */
-    override def error(error: js.Any): js.Any = js.native
+    override def error(error: Any): Any = js.native
     
     def isEmpty(): Boolean = js.native
     
     /* CompleteClass */
-    override def next(value: js.Any): js.Any = js.native
+    override def next(value: Any): Any = js.native
     
-    var observers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<IObserver> */ js.Any = js.native
+    var observers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<IObserver> */ Any = js.native
     
     def removeChild(observer: Observer): Unit = js.native
     

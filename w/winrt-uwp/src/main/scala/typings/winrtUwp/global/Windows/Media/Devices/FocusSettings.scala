@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Devices.FocusSettings")
 @js.native
 /** Initializes a new instance of the FocusSettings class. */
-class FocusSettings ()
+open class FocusSettings ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.FocusSettings {
   

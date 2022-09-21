@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LinkStyle extends StObject {
   
+  /* standard dom */
   val sheet: CSSStyleSheet | Null
 }
 object LinkStyle {

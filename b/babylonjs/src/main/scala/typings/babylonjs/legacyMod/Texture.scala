@@ -1,18 +1,17 @@
 package typings.babylonjs.legacyMod
 
-import typings.babylonjs.ImageBitmap
+import typings.babylonjs.textureMod.ITextureCreationOptions
 import typings.babylonjs.typesMod.Nullable
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.Blob
 import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "Texture")
 @js.native
-class Texture protected ()
+open class Texture protected ()
   extends typings.babylonjs.indexMod.Texture {
   /**
     * Instantiates a new texture.
@@ -20,9 +19,9 @@ class Texture protected ()
     * @see https://doc.babylonjs.com/babylon101/materials#texture
     * @param url defines the url of the picture to load as a texture
     * @param sceneOrEngine defines the scene or engine the texture will belong to
-    * @param noMipmap defines if the texture will require mip maps or not
+    * @param noMipmapOrOptions defines if the texture will require mip maps or not or set of all options to create the texture
     * @param invertY defines if the texture needs to be inverted on the y axis during loading
-    * @param samplingMode defines the sampling mode we want for the texture while fectching from it (Texture.NEAREST_SAMPLINGMODE...)
+    * @param samplingMode defines the sampling mode we want for the texture while fetching from it (Texture.NEAREST_SAMPLINGMODE...)
     * @param onLoad defines a callback triggered when the texture has been loaded
     * @param onError defines a callback triggered when an error occurred during the loading session
     * @param buffer defines the buffer to load the texture from in case the texture is loaded from a buffer representation
@@ -30,26 +29,34 @@ class Texture protected ()
     * @param format defines the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
     * @param mimeType defines an optional mime type information
     * @param loaderOptions options to be passed to the loader
+    * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
+    * @param forcedExtension defines the extension to use to pick the right loader
     */
   def this(
     url: Nullable[String],
-    sceneOrEngine: Nullable[typings.babylonjs.sceneMod.Scene | typings.babylonjs.thinEngineMod.ThinEngine],
-    noMipmap: js.UndefOr[Boolean],
+    sceneOrEngine: js.UndefOr[
+        Nullable[typings.babylonjs.sceneMod.Scene | typings.babylonjs.thinEngineMod.ThinEngine]
+      ],
+    noMipmapOrOptions: js.UndefOr[Boolean | ITextureCreationOptions],
     invertY: js.UndefOr[Boolean],
     samplingMode: js.UndefOr[Double],
     onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
     onError: js.UndefOr[
         Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
       ],
     buffer: js.UndefOr[
-        Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob | ImageBitmap]
+        Nullable[
+          String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
+        ]
       ],
     deleteBuffer: js.UndefOr[Boolean],
     format: js.UndefOr[Double],
     mimeType: js.UndefOr[String],
-    loaderOptions: js.UndefOr[js.Any]
+    loaderOptions: js.UndefOr[Any],
+    creationFlags: js.UndefOr[Double],
+    forcedExtension: js.UndefOr[String]
   ) = this()
 }
 /* static members */
@@ -79,25 +86,27 @@ object Texture {
     * @param data Define the base64 payload without the data: prefix
     * @param name Define the name of the texture in the scene useful fo caching purpose for instance
     * @param scene Define the scene the texture should belong to
-    * @param noMipmap Forces the texture to not create mip map information if true
+    * @param noMipmapOrOptions defines if the texture will require mip maps or not or set of all options to create the texture
     * @param invertY define if the texture needs to be inverted on the y axis during loading
-    * @param samplingMode define the sampling mode we want for the texture while fectching from it (Texture.NEAREST_SAMPLINGMODE...)
+    * @param samplingMode define the sampling mode we want for the texture while fetching from it (Texture.NEAREST_SAMPLINGMODE...)
     * @param onLoad define a callback triggered when the texture has been loaded
     * @param onError define a callback triggered when an error occurred during the loading session
     * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
+    * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
     * @returns the created texture
     */
   inline def CreateFromBase64String(
     data: String,
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
-    noMipmap: js.UndefOr[Boolean],
+    noMipmapOrOptions: js.UndefOr[Boolean | ITextureCreationOptions],
     invertY: js.UndefOr[Boolean],
     samplingMode: js.UndefOr[Double],
     onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
     onError: js.UndefOr[Nullable[js.Function0[Unit]]],
-    format: js.UndefOr[Double]
-  ): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromBase64String")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
+    format: js.UndefOr[Double],
+    creationFlags: js.UndefOr[Double]
+  ): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromBase64String")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmapOrOptions.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
   
   /** Equirectangular coordinates mode */
   @JSImport("babylonjs/Legacy/legacy", "Texture.EQUIRECTANGULAR_MODE")
@@ -165,35 +174,36 @@ object Texture {
   
   /**
     * Creates a texture from its data: representation. (data: will be added in case only the payload has been passed in)
-    * @param data Define the base64 payload without the data: prefix
     * @param name Define the name of the texture in the scene useful fo caching purpose for instance
     * @param buffer define the buffer to load the texture from in case the texture is loaded from a buffer representation
     * @param scene Define the scene the texture should belong to
     * @param deleteBuffer define if the buffer we are loading the texture from should be deleted after load
-    * @param noMipmap Forces the texture to not create mip map information if true
+    * @param noMipmapOrOptions defines if the texture will require mip maps or not or set of all options to create the texture
     * @param invertY define if the texture needs to be inverted on the y axis during loading
-    * @param samplingMode define the sampling mode we want for the texture while fectching from it (Texture.NEAREST_SAMPLINGMODE...)
+    * @param samplingMode define the sampling mode we want for the texture while fetching from it (Texture.NEAREST_SAMPLINGMODE...)
     * @param onLoad define a callback triggered when the texture has been loaded
     * @param onError define a callback triggered when an error occurred during the loading session
     * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
+    * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
     * @returns the created texture
     */
   inline def LoadFromDataString(
     name: String,
-    buffer: js.Any,
+    buffer: Any,
     scene: typings.babylonjs.sceneMod.Scene,
     deleteBuffer: js.UndefOr[Boolean],
-    noMipmap: js.UndefOr[Boolean],
+    noMipmapOrOptions: js.UndefOr[Boolean | ITextureCreationOptions],
     invertY: js.UndefOr[Boolean],
     samplingMode: js.UndefOr[Double],
     onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
     onError: js.UndefOr[
       Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
     ],
-    format: js.UndefOr[Double]
-  ): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFromDataString")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], deleteBuffer.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
+    format: js.UndefOr[Double],
+    creationFlags: js.UndefOr[Double]
+  ): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFromDataString")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], deleteBuffer.asInstanceOf[js.Any], noMipmapOrOptions.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
   
   /** Texture is repeating and mirrored */
   @JSImport("babylonjs/Legacy/legacy", "Texture.MIRROR_ADDRESSMODE")
@@ -235,6 +245,14 @@ object Texture {
   @js.native
   val NEAREST_SAMPLINGMODE: Double = js.native
   
+  /**
+    * This observable will notify when any texture had a loading error
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Texture.OnTextureLoadErrorObservable")
+  @js.native
+  def OnTextureLoadErrorObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.baseTextureMod.BaseTexture] = js.native
+  inline def OnTextureLoadErrorObservable_=(x: typings.babylonjs.observableMod.Observable[typings.babylonjs.baseTextureMod.BaseTexture]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnTextureLoadErrorObservable")(x.asInstanceOf[js.Any])
+  
   /** Planar coordinates mode */
   @JSImport("babylonjs/Legacy/legacy", "Texture.PLANAR_MODE")
   @js.native
@@ -252,7 +270,7 @@ object Texture {
     * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
     * @returns The parsed texture if successful
     */
-  inline def Parse(parsedTexture: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.baseTextureMod.BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.baseTextureMod.BaseTexture]]
+  inline def Parse(parsedTexture: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.baseTextureMod.BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.baseTextureMod.BaseTexture]]
   
   /** Inverse Cubic coordinates mode */
   @JSImport("babylonjs/Legacy/legacy", "Texture.SKYBOX_MODE")
@@ -290,7 +308,13 @@ object Texture {
   @js.native
   val WRAP_ADDRESSMODE: Double = js.native
   
-  /** @hidden */
+  /**
+    * @param name
+    * @param renderTargetSize
+    * @param scene
+    * @param generateMipMaps
+    * @hidden
+    */
   inline def _CreateMirror(
     name: String,
     renderTargetSize: Double,
@@ -298,14 +322,33 @@ object Texture {
     generateMipMaps: Boolean
   ): typings.babylonjs.mirrorTextureMod.MirrorTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateMirror")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mirrorTextureMod.MirrorTexture]
   
-  /** @hidden */
+  /**
+    * @param name
+    * @param renderTargetSize
+    * @param scene
+    * @param generateMipMaps
+    * @param creationFlags
+    * @hidden
+    */
   inline def _CreateRenderTargetTexture(
     name: String,
     renderTargetSize: Double,
     scene: typings.babylonjs.sceneMod.Scene,
     generateMipMaps: Boolean
   ): typings.babylonjs.renderTargetTextureMod.RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.renderTargetTextureMod.RenderTargetTexture]
+  inline def _CreateRenderTargetTexture(
+    name: String,
+    renderTargetSize: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    generateMipMaps: Boolean,
+    creationFlags: Double
+  ): typings.babylonjs.renderTargetTextureMod.RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.renderTargetTextureMod.RenderTargetTexture]
   
-  /** @hidden */
-  inline def _CubeTextureParser(jsonTexture: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
+  /**
+    * @param jsonTexture
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
+  inline def _CubeTextureParser(jsonTexture: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
 }

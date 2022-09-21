@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeOrganizationConfigRulesRequest extends StObject {
   
   /**
-    * The maximum number of organization config rules returned on each page. If you do no specify a number, AWS Config uses the default. The default is 100.
+    * The maximum number of organization Config rules returned on each page. If you do no specify a number, Config uses the default. The default is 100.
     */
   var Limit: js.UndefOr[CosmosPageLimit] = js.undefined
   
@@ -17,7 +17,7 @@ trait DescribeOrganizationConfigRulesRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The names of organization config rules for which you want details. If you do not specify any names, AWS Config returns details for all your organization config rules.
+    * The names of organization Config rules for which you want details. If you do not specify any names, Config returns details for all your organization Config rules.
     */
   var OrganizationConfigRuleNames: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationConfigRuleNames] = js.undefined
 }
@@ -42,6 +42,6 @@ object DescribeOrganizationConfigRulesRequest {
     
     inline def setOrganizationConfigRuleNamesUndefined: Self = StObject.set(x, "OrganizationConfigRuleNames", js.undefined)
     
-    inline def setOrganizationConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "OrganizationConfigRuleNames", js.Array(value :_*))
+    inline def setOrganizationConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "OrganizationConfigRuleNames", js.Array(value*))
   }
 }

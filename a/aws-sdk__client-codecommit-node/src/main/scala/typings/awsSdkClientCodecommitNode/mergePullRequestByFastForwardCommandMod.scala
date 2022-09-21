@@ -16,7 +16,7 @@ object mergePullRequestByFastForwardCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/MergePullRequestByFastForwardCommand", "MergePullRequestByFastForwardCommand")
   @js.native
-  class MergePullRequestByFastForwardCommand protected ()
+  open class MergePullRequestByFastForwardCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object mergePullRequestByFastForwardCommandMod {
     override val middlewareStack: MiddlewareStack[MergePullRequestByFastForwardInput, MergePullRequestByFastForwardOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: CodeCommitResolvedConfiguration
     ): Handler[MergePullRequestByFastForwardInput, MergePullRequestByFastForwardOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CodeCommitResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[MergePullRequestByFastForwardInput, MergePullRequestByFastForwardOutput] = js.native
   }
 }

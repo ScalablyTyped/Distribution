@@ -13,7 +13,7 @@ object pointModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/models/PointModel", "PointModel")
   @js.native
-  class PointModel protected () extends BaseModel[LinkModel[LinkModelListener], BaseModelListener] {
+  open class PointModel protected () extends BaseModel[LinkModel[LinkModelListener], BaseModelListener] {
     def this(link: LinkModel[LinkModelListener], points: X) = this()
     
     def getLink(): LinkModel[LinkModelListener] = js.native

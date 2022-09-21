@@ -28,11 +28,11 @@ object mod {
   @js.native
   trait Cache extends StObject {
     
-    def all(): StringDictionary[js.Any] = js.native
+    def all(): StringDictionary[Any] = js.native
     
     def destroy(): Unit = js.native
     
-    def getKey(key: String): js.Any = js.native
+    def getKey(key: String): Any = js.native
     
     def keys(): js.Array[String] = js.native
     
@@ -48,6 +48,6 @@ object mod {
     def save(): Unit = js.native
     def save(noPrune: Boolean): Unit = js.native
     
-    def setKey(key: String, value: js.Any): Unit = js.native
+    def setKey(key: String, value: Any): Unit = js.native
   }
 }

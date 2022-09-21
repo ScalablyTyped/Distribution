@@ -1,6 +1,5 @@
 package typings.svg2ttf
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,18 +68,18 @@ object mod {
   
   trait MicroBuffer extends StObject {
     
-    var buffer: Uint8Array
+    var buffer: js.typedarray.Uint8Array
   }
   object MicroBuffer {
     
-    inline def apply(buffer: Uint8Array): MicroBuffer = {
+    inline def apply(buffer: js.typedarray.Uint8Array): MicroBuffer = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
       __obj.asInstanceOf[MicroBuffer]
     }
     
     extension [Self <: MicroBuffer](x: Self) {
       
-      inline def setBuffer(value: Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }
   }
 }

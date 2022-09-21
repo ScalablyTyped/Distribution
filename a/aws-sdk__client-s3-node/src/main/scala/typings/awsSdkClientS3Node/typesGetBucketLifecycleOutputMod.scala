@@ -33,7 +33,7 @@ object typesGetBucketLifecycleOutputMod {
       
       inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
       
-      inline def setRulesVarargs(value: UnmarshalledRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: UnmarshalledRule*): Self = StObject.set(x, "Rules", js.Array(value*))
     }
   }
 }

@@ -10,12 +10,11 @@ trait Font extends StObject {
   /**
     *   Underlying opentype font implementation
     */
-  var font: js.Any = js.native
+  var font: Any = js.native
   
   /**
     *   Returns a tight bounding box for the given text
-    *   string using this font (currently only supports
-    *   single lines)
+    *   string using this font
     *   @param line a line of text
     *   @param x x-position
     *   @param y y-position
@@ -56,6 +55,6 @@ trait Font extends StObject {
     *   @return an array of points, each with x, y, alpha
     *   (the path angle)
     */
-  def textToPoints(txt: String, x: Double, y: Double, fontSize: Double): js.Array[js.Any] = js.native
-  def textToPoints(txt: String, x: Double, y: Double, fontSize: Double, options: js.Object): js.Array[js.Any] = js.native
+  def textToPoints(txt: String, x: Double, y: Double, fontSize: Double): js.Array[Any] = js.native
+  def textToPoints(txt: String, x: Double, y: Double, fontSize: Double, options: js.Object): js.Array[Any] = js.native
 }

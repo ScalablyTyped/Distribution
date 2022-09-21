@@ -25,6 +25,6 @@ object QueryList {
     
     inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value*))
   }
 }

@@ -17,7 +17,7 @@ trait DeepMerge extends StObject {
   
   def deepMerge(target: js.Object, args: js.Object*): js.Object
   
-  def getTheme(props: js.Object, `type`: String, defaultValue: js.Any): js.Any
+  def getTheme(props: js.Object, `type`: String, defaultValue: Any): Any
   
   def parseToCss(values: js.Array[Double], key: String): StringDictionary[Double]
   
@@ -32,10 +32,10 @@ object DeepMerge {
     ThemeConsumer: ElementType[ThemeConsumerProps],
     ThemeProvider: ElementType[ThemeProviderProps],
     deepMerge: (js.Object, /* repeated */ js.Object) => js.Object,
-    getTheme: (js.Object, String, js.Any) => js.Any,
+    getTheme: (js.Object, String, Any) => Any,
     parseToCss: (js.Array[Double], String) => StringDictionary[Double],
     parseToStyle: (js.Array[Double], String) => StringDictionary[Double],
-    withTheme: ComponentType[js.Any] => ComponentType[js.Any]
+    withTheme: ComponentType[Any] => ComponentType[Any]
   ): DeepMerge = {
     val __obj = js.Dynamic.literal(ThemeConsumer = ThemeConsumer.asInstanceOf[js.Any], ThemeProvider = ThemeProvider.asInstanceOf[js.Any], deepMerge = js.Any.fromFunction2(deepMerge), getTheme = js.Any.fromFunction3(getTheme), parseToCss = js.Any.fromFunction2(parseToCss), parseToStyle = js.Any.fromFunction2(parseToStyle), withTheme = js.Any.fromFunction1(withTheme))
     __obj.asInstanceOf[DeepMerge]
@@ -45,7 +45,7 @@ object DeepMerge {
     
     inline def setDeepMerge(value: (js.Object, /* repeated */ js.Object) => js.Object): Self = StObject.set(x, "deepMerge", js.Any.fromFunction2(value))
     
-    inline def setGetTheme(value: (js.Object, String, js.Any) => js.Any): Self = StObject.set(x, "getTheme", js.Any.fromFunction3(value))
+    inline def setGetTheme(value: (js.Object, String, Any) => Any): Self = StObject.set(x, "getTheme", js.Any.fromFunction3(value))
     
     inline def setParseToCss(value: (js.Array[Double], String) => StringDictionary[Double]): Self = StObject.set(x, "parseToCss", js.Any.fromFunction2(value))
     
@@ -55,6 +55,6 @@ object DeepMerge {
     
     inline def setThemeProvider(value: ElementType[ThemeProviderProps]): Self = StObject.set(x, "ThemeProvider", value.asInstanceOf[js.Any])
     
-    inline def setWithTheme(value: ComponentType[js.Any] => ComponentType[js.Any]): Self = StObject.set(x, "withTheme", js.Any.fromFunction1(value))
+    inline def setWithTheme(value: ComponentType[Any] => ComponentType[Any]): Self = StObject.set(x, "withTheme", js.Any.fromFunction1(value))
   }
 }

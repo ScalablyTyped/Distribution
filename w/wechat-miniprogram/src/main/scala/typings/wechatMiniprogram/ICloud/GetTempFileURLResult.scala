@@ -24,6 +24,6 @@ object GetTempFileURLResult {
     
     inline def setFileList(value: js.Array[GetTempFileURLResultItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    inline def setFileListVarargs(value: GetTempFileURLResultItem*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: GetTempFileURLResultItem*): Self = StObject.set(x, "fileList", js.Array(value*))
   }
 }

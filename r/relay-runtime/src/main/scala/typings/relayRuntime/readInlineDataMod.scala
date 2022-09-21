@@ -1,8 +1,7 @@
 package typings.relayRuntime
 
-import typings.relayRuntime.mod.FragmentRef
-import typings.relayRuntime.mod.RefType
 import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
+import typings.relayRuntime.relayStoreTypesMod.FragmentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +12,37 @@ object readInlineDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def readInlineData[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode): js.UndefOr[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T | Null]]
-  inline def readInlineData[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): js.UndefOr[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T | Null]]
+  inline def readInlineData[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode): (KeyTypeData[TKey, Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[(KeyTypeData[TKey, Any]) | Null]
+  inline def readInlineData[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): KeyTypeData[TKey, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[KeyTypeData[TKey, Any]]
   
-  inline def readInlineData_T_RefTypeAny_T[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def readInlineData_TKey_KeyTypeAny_Union[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (KeyTypeData[TKey, Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[(KeyTypeData[TKey, Any]) | Null]
+  
+  /* Inlined std.Readonly<{   $data :TData | undefined,    $fragmentSpreads :relay-runtime.relay-runtime/lib/store/RelayStoreTypes.FragmentType}> */
+  trait KeyType[TData] extends StObject {
+    
+    @JSName(" $data")
+    val Space$data: js.UndefOr[TData] = js.undefined
+    
+    @JSName(" $fragmentSpreads")
+    val Space$fragmentSpreads: FragmentType
+  }
+  object KeyType {
+    
+    inline def apply[TData](Space$fragmentSpreads: FragmentType): KeyType[TData] = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic(" $fragmentSpreads")(Space$fragmentSpreads.asInstanceOf[js.Any])
+      __obj.asInstanceOf[KeyType[TData]]
+    }
+    
+    extension [Self <: KeyType[?], TData](x: Self & KeyType[TData]) {
+      
+      inline def setSpace$data(value: TData): Self = StObject.set(x, " $data", value.asInstanceOf[js.Any])
+      
+      inline def setSpace$dataUndefined: Self = StObject.set(x, " $data", js.undefined)
+      
+      inline def setSpace$fragmentSpreads(value: FragmentType): Self = StObject.set(x, " $fragmentSpreads", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type KeyTypeData[TKey /* <: KeyType[TData] */, TData] = /* import warning: importer.ImportType#apply Failed type conversion: std.Required<TKey>[' $data'] */ js.Any
 }

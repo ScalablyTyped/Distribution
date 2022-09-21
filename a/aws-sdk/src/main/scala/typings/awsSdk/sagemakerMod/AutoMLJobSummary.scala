@@ -7,44 +7,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoMLJobSummary extends StObject {
   
   /**
-    * The ARN of the job.
+    * The ARN of the AutoML job.
     */
   var AutoMLJobArn: typings.awsSdk.sagemakerMod.AutoMLJobArn
   
   /**
-    * The name of the object you are requesting.
+    * The name of the AutoML job you are requesting.
     */
   var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName
   
   /**
-    * The job's secondary status.
+    * The secondary status of the AutoML job.
     */
   var AutoMLJobSecondaryStatus: typings.awsSdk.sagemakerMod.AutoMLJobSecondaryStatus
   
   /**
-    * The job's status.
+    * The status of the AutoML job.
     */
   var AutoMLJobStatus: typings.awsSdk.sagemakerMod.AutoMLJobStatus
   
   /**
-    * When the job was created.
+    * When the AutoML job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The end time of an AutoML job.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The failure reason of a job.
+    * The failure reason of an AutoML job.
     */
   var FailureReason: js.UndefOr[AutoMLFailureReason] = js.undefined
   
   /**
-    * When the job was last modified.
+    * When the AutoML job was last modified.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
+  
+  /**
+    * The list of reasons for partial failures within an AutoML job.
+    */
+  var PartialFailureReasons: js.UndefOr[AutoMLPartialFailureReasons] = js.undefined
 }
 object AutoMLJobSummary {
   
@@ -53,8 +58,8 @@ object AutoMLJobSummary {
     AutoMLJobName: AutoMLJobName,
     AutoMLJobSecondaryStatus: AutoMLJobSecondaryStatus,
     AutoMLJobStatus: AutoMLJobStatus,
-    CreationTime: Timestamp,
-    LastModifiedTime: Timestamp
+    CreationTime: js.Date,
+    LastModifiedTime: js.Date
   ): AutoMLJobSummary = {
     val __obj = js.Dynamic.literal(AutoMLJobArn = AutoMLJobArn.asInstanceOf[js.Any], AutoMLJobName = AutoMLJobName.asInstanceOf[js.Any], AutoMLJobSecondaryStatus = AutoMLJobSecondaryStatus.asInstanceOf[js.Any], AutoMLJobStatus = AutoMLJobStatus.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLJobSummary]
@@ -70,9 +75,9 @@ object AutoMLJobSummary {
     
     inline def setAutoMLJobStatus(value: AutoMLJobStatus): Self = StObject.set(x, "AutoMLJobStatus", value.asInstanceOf[js.Any])
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -80,6 +85,12 @@ object AutoMLJobSummary {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    
+    inline def setPartialFailureReasons(value: AutoMLPartialFailureReasons): Self = StObject.set(x, "PartialFailureReasons", value.asInstanceOf[js.Any])
+    
+    inline def setPartialFailureReasonsUndefined: Self = StObject.set(x, "PartialFailureReasons", js.undefined)
+    
+    inline def setPartialFailureReasonsVarargs(value: AutoMLPartialFailureReason*): Self = StObject.set(x, "PartialFailureReasons", js.Array(value*))
   }
 }

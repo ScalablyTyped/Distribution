@@ -19,6 +19,6 @@ object UnregistrationParams {
     
     inline def setUnregisterations(value: js.Array[Unregistration]): Self = StObject.set(x, "unregisterations", value.asInstanceOf[js.Any])
     
-    inline def setUnregisterationsVarargs(value: Unregistration*): Self = StObject.set(x, "unregisterations", js.Array(value :_*))
+    inline def setUnregisterationsVarargs(value: Unregistration*): Self = StObject.set(x, "unregisterations", js.Array(value*))
   }
 }

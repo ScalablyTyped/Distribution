@@ -32,10 +32,10 @@ object Input {
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value*))
     
     inline def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+    inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value*))
   }
 }

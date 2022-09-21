@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bindingWhenSyntaxMod {
   
-  @JSImport("inversify/dts/syntax/binding_when_syntax", "BindingWhenSyntax")
+  @JSImport("inversify/lib/syntax/binding_when_syntax", "BindingWhenSyntax")
   @js.native
-  class BindingWhenSyntax[T] protected ()
+  open class BindingWhenSyntax[T] protected ()
     extends StObject
        with typings.inversify.interfacesMod.interfaces.BindingWhenSyntax[T] {
     def this(binding: Binding[T]) = this()
     
-    /* private */ var _binding: js.Any = js.native
+    /* private */ var _binding: Any = js.native
   }
 }

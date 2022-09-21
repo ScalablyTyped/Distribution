@@ -1,6 +1,5 @@
 package typings.typedGithubApi
 
-import typings.std.Date
 import typings.typedGithubApi.branchMod.BranchSummary
 import typings.typedGithubApi.issueMod.IssueComment
 import typings.typedGithubApi.milestoneMod.Milestone
@@ -28,13 +27,13 @@ object pullRequestMod {
     
     var body: String
     
-    var closed_at: Date | Null
+    var closed_at: js.Date | Null
     
     var comments_url: String
     
     var commits_url: String
     
-    var created_at: Date
+    var created_at: js.Date
     
     var head: BranchSummary
     
@@ -46,7 +45,7 @@ object pullRequestMod {
     
     var locked: Boolean
     
-    var merged_at: Date | Null
+    var merged_at: js.Date | Null
     
     var milestone: Milestone | Null
     
@@ -62,7 +61,7 @@ object pullRequestMod {
     
     var title: String
     
-    var updated_at: Date
+    var updated_at: js.Date
     
     var url: String
     
@@ -76,7 +75,7 @@ object pullRequestMod {
       body: String,
       comments_url: String,
       commits_url: String,
-      created_at: Date,
+      created_at: js.Date,
       head: BranchSummary,
       html_url: String,
       id: Double,
@@ -88,7 +87,7 @@ object pullRequestMod {
       state: open | closed,
       statuses_url: String,
       title: String,
-      updated_at: Date,
+      updated_at: js.Date,
       url: String,
       user: UserSummary
     ): PullRequest = {
@@ -104,13 +103,13 @@ object pullRequestMod {
       
       inline def setAssignees(value: js.Array[UserSummary]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
       
-      inline def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value :_*))
+      inline def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value*))
       
       inline def setBase(value: BranchSummary): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setClosed_at(value: Date): Self = StObject.set(x, "closed_at", value.asInstanceOf[js.Any])
+      inline def setClosed_at(value: js.Date): Self = StObject.set(x, "closed_at", value.asInstanceOf[js.Any])
       
       inline def setClosed_atNull: Self = StObject.set(x, "closed_at", null)
       
@@ -118,7 +117,7 @@ object pullRequestMod {
       
       inline def setCommits_url(value: String): Self = StObject.set(x, "commits_url", value.asInstanceOf[js.Any])
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setHead(value: BranchSummary): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
@@ -130,7 +129,7 @@ object pullRequestMod {
       
       inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
       
-      inline def setMerged_at(value: Date): Self = StObject.set(x, "merged_at", value.asInstanceOf[js.Any])
+      inline def setMerged_at(value: js.Date): Self = StObject.set(x, "merged_at", value.asInstanceOf[js.Any])
       
       inline def setMerged_atNull: Self = StObject.set(x, "merged_at", null)
       
@@ -150,7 +149,7 @@ object pullRequestMod {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: js.Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -232,7 +231,7 @@ object pullRequestMod {
     inline def apply(
       body: String,
       commit_id: String,
-      created_at: Date,
+      created_at: js.Date,
       diff_hunk: String,
       html_url: String,
       id: Double,
@@ -242,7 +241,7 @@ object pullRequestMod {
       position: Double,
       pull_request_review_id: Double,
       pull_request_url: String,
-      updated_at: Date,
+      updated_at: js.Date,
       url: String,
       user: UserSummary
     ): ReviewComment = {
@@ -287,11 +286,11 @@ object pullRequestMod {
       
       inline def setTeams(value: js.Array[Team]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      inline def setTeamsVarargs(value: Team*): Self = StObject.set(x, "teams", js.Array(value :_*))
+      inline def setTeamsVarargs(value: Team*): Self = StObject.set(x, "teams", js.Array(value*))
       
       inline def setUsers(value: js.Array[UserSummary]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
 }

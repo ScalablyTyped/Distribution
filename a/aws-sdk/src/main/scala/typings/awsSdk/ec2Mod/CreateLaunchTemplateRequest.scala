@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLaunchTemplateRequest extends StObject {
   
   /**
-    * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraint: Maximum 128 ASCII characters.
+    * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring idempotency. Constraint: Maximum 128 ASCII characters.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
@@ -27,7 +27,7 @@ trait CreateLaunchTemplateRequest extends StObject {
   var LaunchTemplateName: typings.awsSdk.ec2Mod.LaunchTemplateName
   
   /**
-    * The tags to apply to the launch template during creation.
+    * The tags to apply to the launch template on creation. To tag the launch template, the resource type must be launch-template.  To specify the tags for the resources that are created when an instance is launched, you must use the TagSpecifications parameter in the launch template data structure. 
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
@@ -61,7 +61,7 @@ object CreateLaunchTemplateRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setVersionDescription(value: VersionDescription): Self = StObject.set(x, "VersionDescription", value.asInstanceOf[js.Any])
     

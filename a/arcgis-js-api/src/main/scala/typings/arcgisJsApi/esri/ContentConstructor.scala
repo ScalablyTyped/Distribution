@@ -17,5 +17,5 @@ trait ContentConstructor
 Instantiable0[Content_]
      with Instantiable1[/* properties */ ContentProperties, Content_] {
   
-  def fromJSON(json: js.Any): Content_ = js.native
+  def fromJSON(json: Any): Content_ = js.native
 }

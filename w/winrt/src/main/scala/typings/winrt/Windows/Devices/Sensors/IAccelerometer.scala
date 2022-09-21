@@ -10,9 +10,9 @@ trait IAccelerometer extends StObject {
   
   var minimumReportInterval: Double
   
-  var onreadingchanged: js.Any
+  var onreadingchanged: Any
   
-  var onshaken: js.Any
+  var onshaken: Any
   
   var reportInterval: Double
 }
@@ -21,8 +21,8 @@ object IAccelerometer {
   inline def apply(
     getCurrentReading: () => AccelerometerReading,
     minimumReportInterval: Double,
-    onreadingchanged: js.Any,
-    onshaken: js.Any,
+    onreadingchanged: Any,
+    onshaken: Any,
     reportInterval: Double
   ): IAccelerometer = {
     val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], onshaken = onshaken.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])
@@ -35,9 +35,9 @@ object IAccelerometer {
     
     inline def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
     
-    inline def setOnreadingchanged(value: js.Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
+    inline def setOnreadingchanged(value: Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
     
-    inline def setOnshaken(value: js.Any): Self = StObject.set(x, "onshaken", value.asInstanceOf[js.Any])
+    inline def setOnshaken(value: Any): Self = StObject.set(x, "onshaken", value.asInstanceOf[js.Any])
     
     inline def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
   }

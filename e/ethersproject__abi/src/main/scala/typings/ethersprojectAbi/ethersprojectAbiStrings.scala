@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ethersprojectAbiStrings {
   
   @js.native
+  sealed trait ErrorDescription extends StObject
+  inline def ErrorDescription: ErrorDescription = "ErrorDescription".asInstanceOf[ErrorDescription]
+  
+  @js.native
   sealed trait Indexed extends StObject
   inline def Indexed: Indexed = "Indexed".asInstanceOf[Indexed]
   

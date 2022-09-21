@@ -12,44 +12,38 @@ object Preview {
     
     trait GameListEntry extends StObject {
       
-      var category: js.Any
+      var category: Any
       
       /* unmapped type */
-      var displayInfo: js.Any
+      var displayInfo: Any
       
       /* unmapped type */
-      var launchAsync: js.Any
+      var launchAsync: Any
       
       /* unmapped type */
-      var properties: js.Any
+      var properties: Any
       
       /* unmapped type */
-      var setCategoryAsync: js.Any
+      var setCategoryAsync: Any
     }
     object GameListEntry {
       
-      inline def apply(
-        category: js.Any,
-        displayInfo: js.Any,
-        launchAsync: js.Any,
-        properties: js.Any,
-        setCategoryAsync: js.Any
-      ): GameListEntry = {
+      inline def apply(category: Any, displayInfo: Any, launchAsync: Any, properties: Any, setCategoryAsync: Any): GameListEntry = {
         val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], displayInfo = displayInfo.asInstanceOf[js.Any], launchAsync = launchAsync.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], setCategoryAsync = setCategoryAsync.asInstanceOf[js.Any])
         __obj.asInstanceOf[GameListEntry]
       }
       
       extension [Self <: GameListEntry](x: Self) {
         
-        inline def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+        inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
-        inline def setDisplayInfo(value: js.Any): Self = StObject.set(x, "displayInfo", value.asInstanceOf[js.Any])
+        inline def setDisplayInfo(value: Any): Self = StObject.set(x, "displayInfo", value.asInstanceOf[js.Any])
         
-        inline def setLaunchAsync(value: js.Any): Self = StObject.set(x, "launchAsync", value.asInstanceOf[js.Any])
+        inline def setLaunchAsync(value: Any): Self = StObject.set(x, "launchAsync", value.asInstanceOf[js.Any])
         
-        inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+        inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
-        inline def setSetCategoryAsync(value: js.Any): Self = StObject.set(x, "setCategoryAsync", value.asInstanceOf[js.Any])
+        inline def setSetCategoryAsync(value: Any): Self = StObject.set(x, "setCategoryAsync", value.asInstanceOf[js.Any])
       }
     }
   }

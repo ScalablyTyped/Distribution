@@ -13,7 +13,7 @@ object anon {
     
     var bus: DBusConnection
     
-    def getProperties(callback: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[js.Any], Unit]): Unit
+    def getProperties(callback: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[Any], Unit]): Unit
     
     def getProperty(name: String, callback: js.Function2[/* err */ Error | Null, /* name */ String, Unit]): Unit
     
@@ -23,18 +23,18 @@ object anon {
     
     var serviceName: String
     
-    def setProperty(name: String, value: js.Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit
+    def setProperty(name: String, value: Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit
   }
   object Bus {
     
     inline def apply(
       bus: DBusConnection,
-      getProperties: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[js.Any], Unit] => Unit,
+      getProperties: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[Any], Unit] => Unit,
       getProperty: (String, js.Function2[/* err */ Error | Null, /* name */ String, Unit]) => Unit,
       interfaceName: String,
       objectPath: String,
       serviceName: String,
-      setProperty: (String, js.Any, js.Function1[/* err */ Error | Null, Unit]) => Unit
+      setProperty: (String, Any, js.Function1[/* err */ Error | Null, Unit]) => Unit
     ): Bus = {
       val __obj = js.Dynamic.literal(bus = bus.asInstanceOf[js.Any], getProperties = js.Any.fromFunction1(getProperties), getProperty = js.Any.fromFunction2(getProperty), interfaceName = interfaceName.asInstanceOf[js.Any], objectPath = objectPath.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], setProperty = js.Any.fromFunction3(setProperty))
       __obj.asInstanceOf[Bus]
@@ -44,9 +44,7 @@ object anon {
       
       inline def setBus(value: DBusConnection): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
       
-      inline def setGetProperties(
-        value: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[js.Any], Unit] => Unit
-      ): Self = StObject.set(x, "getProperties", js.Any.fromFunction1(value))
+      inline def setGetProperties(value: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[Any], Unit] => Unit): Self = StObject.set(x, "getProperties", js.Any.fromFunction1(value))
       
       inline def setGetProperty(value: (String, js.Function2[/* err */ Error | Null, /* name */ String, Unit]) => Unit): Self = StObject.set(x, "getProperty", js.Any.fromFunction2(value))
       
@@ -56,7 +54,7 @@ object anon {
       
       inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
       
-      inline def setSetProperty(value: (String, js.Any, js.Function1[/* err */ Error | Null, Unit]) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction3(value))
+      inline def setSetProperty(value: (String, Any, js.Function1[/* err */ Error | Null, Unit]) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction3(value))
     }
   }
   
@@ -64,7 +62,7 @@ object anon {
     
     def getter(cb: js.Function1[/* val */ String, Unit]): Unit
     
-    var setter: js.UndefOr[js.Function2[/* value */ js.Any, /* done */ js.Function0[Unit], Unit]] = js.undefined
+    var setter: js.UndefOr[js.Function2[/* value */ Any, /* done */ js.Function0[Unit], Unit]] = js.undefined
     
     var `type`: String
   }
@@ -80,7 +78,7 @@ object anon {
       
       inline def setGetter(value: js.Function1[/* val */ String, Unit] => Unit): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
       
-      inline def setSetter(value: (/* value */ js.Any, /* done */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "setter", js.Any.fromFunction2(value))
+      inline def setSetter(value: (/* value */ Any, /* done */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "setter", js.Any.fromFunction2(value))
       
       inline def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
       
@@ -124,7 +122,7 @@ object anon {
       
       inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
 }

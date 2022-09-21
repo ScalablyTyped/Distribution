@@ -10,5 +10,5 @@ trait CanvasFactory
   extends Factory[
       CanvasConstructor, 
       InstanceType[CanvasConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[CanvasConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

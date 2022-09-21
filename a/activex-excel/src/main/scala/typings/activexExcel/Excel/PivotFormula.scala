@@ -19,7 +19,7 @@ trait PivotFormula extends StObject {
   
   var Index: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var StandardFormula: String
   
@@ -36,7 +36,7 @@ object PivotFormula {
     ExcelDotPivotFormula_typekey: PivotFormula,
     Formula: String,
     Index: Double,
-    Parent: js.Any,
+    Parent: Any,
     StandardFormula: String,
     Value: String,
     _Default: String
@@ -60,7 +60,7 @@ object PivotFormula {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setStandardFormula(value: String): Self = StObject.set(x, "StandardFormula", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ CSS unit and integration testing
 | ------------------ | :-------------: |
 | Full name          | quixote |
 | Keywords           | css, test, tdd |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 3882 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 267.3333333333333 |
+| # stars            | 810.0 |
 
 ## Links
 - [Homepage](https://github.com/jamesshore/quixote)

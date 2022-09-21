@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsCodeBuildProjectDetails extends StObject {
   
   /**
-    * The AWS Key Management Service (AWS KMS) customer master key (CMK) used to encrypt the build output artifacts. You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK alias (using the format alias/alias-name). 
+    * Information about the build artifacts for the CodeBuild project.
+    */
+  var Artifacts: js.UndefOr[AwsCodeBuildProjectArtifactsList] = js.undefined
+  
+  /**
+    * The KMS key used to encrypt the build output artifacts. You can specify either the ARN of the KMS key or, if available, the KMS key alias (using the format alias/alias-name). 
     */
   var EncryptionKey: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -17,12 +22,22 @@ trait AwsCodeBuildProjectDetails extends StObject {
   var Environment: js.UndefOr[AwsCodeBuildProjectEnvironment] = js.undefined
   
   /**
+    * Information about logs for the build project.
+    */
+  var LogsConfig: js.UndefOr[AwsCodeBuildProjectLogsConfigDetails] = js.undefined
+  
+  /**
     * The name of the build project.
     */
   var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The ARN of the IAM role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
+    * Information about the secondary artifacts for the CodeBuild project.
+    */
+  var SecondaryArtifacts: js.UndefOr[AwsCodeBuildProjectArtifactsList] = js.undefined
+  
+  /**
+    * The ARN of the IAM role that enables CodeBuild to interact with dependent Amazon Web Services services on behalf of the Amazon Web Services account.
     */
   var ServiceRole: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -32,7 +47,7 @@ trait AwsCodeBuildProjectDetails extends StObject {
   var Source: js.UndefOr[AwsCodeBuildProjectSource] = js.undefined
   
   /**
-    * Information about the VPC configuration that AWS CodeBuild accesses.
+    * Information about the VPC configuration that CodeBuild accesses.
     */
   var VpcConfig: js.UndefOr[AwsCodeBuildProjectVpcConfig] = js.undefined
 }
@@ -45,6 +60,12 @@ object AwsCodeBuildProjectDetails {
   
   extension [Self <: AwsCodeBuildProjectDetails](x: Self) {
     
+    inline def setArtifacts(value: AwsCodeBuildProjectArtifactsList): Self = StObject.set(x, "Artifacts", value.asInstanceOf[js.Any])
+    
+    inline def setArtifactsUndefined: Self = StObject.set(x, "Artifacts", js.undefined)
+    
+    inline def setArtifactsVarargs(value: AwsCodeBuildProjectArtifactsDetails*): Self = StObject.set(x, "Artifacts", js.Array(value*))
+    
     inline def setEncryptionKey(value: NonEmptyString): Self = StObject.set(x, "EncryptionKey", value.asInstanceOf[js.Any])
     
     inline def setEncryptionKeyUndefined: Self = StObject.set(x, "EncryptionKey", js.undefined)
@@ -53,9 +74,19 @@ object AwsCodeBuildProjectDetails {
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
+    inline def setLogsConfig(value: AwsCodeBuildProjectLogsConfigDetails): Self = StObject.set(x, "LogsConfig", value.asInstanceOf[js.Any])
+    
+    inline def setLogsConfigUndefined: Self = StObject.set(x, "LogsConfig", js.undefined)
+    
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setSecondaryArtifacts(value: AwsCodeBuildProjectArtifactsList): Self = StObject.set(x, "SecondaryArtifacts", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryArtifactsUndefined: Self = StObject.set(x, "SecondaryArtifacts", js.undefined)
+    
+    inline def setSecondaryArtifactsVarargs(value: AwsCodeBuildProjectArtifactsDetails*): Self = StObject.set(x, "SecondaryArtifacts", js.Array(value*))
     
     inline def setServiceRole(value: NonEmptyString): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     

@@ -17,9 +17,9 @@ object AppLicenseCollection {
   
   inline def apply(
     add: AppLicense => Unit,
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     getEnumerator: () => IEnumerator[AppLicense],
     get_count: () => Double,
     get_item: Double => AppLicense,

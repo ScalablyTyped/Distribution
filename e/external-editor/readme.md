@@ -10,10 +10,10 @@ Edit a string with the users preferred text editor using $VISUAL or $ENVIRONMENT
 | ------------------ | :-------------: |
 | Full name          | external-editor |
 | Keywords           | editor, external, user, visual |
-| # releases         | 5 |
-| # dependents       | 86 |
-| # downloads        | 592662716 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.905662E7 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/mrkmg/node-external-editor#readme)

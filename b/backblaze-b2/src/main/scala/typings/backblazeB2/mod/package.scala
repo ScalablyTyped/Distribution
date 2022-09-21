@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type UploadProgressFn = js.Function1[/* event */ js.Any, scala.Unit]
+type UploadProgressFn = js.Function1[/* event */ Any, Unit]

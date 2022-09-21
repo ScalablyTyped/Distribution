@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Graphics.Printing
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Graphics.Printing.PrintTaskSourceRequestedHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ abstract class PrintTaskRequest ()
   
   /** Gets a DateTime value that indicates how long an app has to respond to the PrintTaskRequested event. If the system has not received a response from the PrintTaskRequested event handler by the time the deadline is reached, then the print task is ignored. */
   /* CompleteClass */
-  var deadline: Date = js.native
+  var deadline: js.Date = js.native
   
   /**
     * Retrieves the deferral object associated with the PrintTaskRequest . The deferral object is used to handle asynchronous calls in the PrintTaskRequested event handler.

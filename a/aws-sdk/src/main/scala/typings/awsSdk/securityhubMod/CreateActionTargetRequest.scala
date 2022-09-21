@@ -12,12 +12,12 @@ trait CreateActionTargetRequest extends StObject {
   var Description: NonEmptyString
   
   /**
-    * The ID for the custom action target.
+    * The ID for the custom action target. Can contain up to 20 alphanumeric characters.
     */
   var Id: NonEmptyString
   
   /**
-    * The name of the custom action target.
+    * The name of the custom action target. Can contain up to 20 characters.
     */
   var Name: NonEmptyString
 }

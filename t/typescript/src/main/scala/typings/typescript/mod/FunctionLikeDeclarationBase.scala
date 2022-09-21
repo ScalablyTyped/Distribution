@@ -9,7 +9,7 @@ trait FunctionLikeDeclarationBase
   extends StObject
      with SignatureDeclarationBase {
   
-  var _functionLikeDeclarationBrand: js.Any = js.native
+  var _functionLikeDeclarationBrand: Any = js.native
   
   val asteriskToken: js.UndefOr[AsteriskToken] = js.native
   

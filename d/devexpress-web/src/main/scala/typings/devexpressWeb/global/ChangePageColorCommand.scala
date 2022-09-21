@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangePageColorCommand")
 @js.native
-class ChangePageColorCommand ()
+open class ChangePageColorCommand ()
   extends StObject
      with typings.devexpressWeb.ChangePageColorCommand {
   

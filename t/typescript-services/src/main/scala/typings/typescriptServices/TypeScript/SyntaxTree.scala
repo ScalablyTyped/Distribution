@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SyntaxTree extends StObject {
   
-  /* private */ var _allDiagnostics: js.Any
+  /* private */ var _allDiagnostics: Any
   
-  /* private */ var _fileName: js.Any
+  /* private */ var _fileName: Any
   
-  /* private */ var _isDeclaration: js.Any
+  /* private */ var _isDeclaration: Any
   
-  /* private */ var _lineMap: js.Any
+  /* private */ var _lineMap: Any
   
-  /* private */ var _parseOptions: js.Any
+  /* private */ var _parseOptions: Any
   
-  /* private */ var _parserDiagnostics: js.Any
+  /* private */ var _parserDiagnostics: Any
   
-  /* private */ var _sourceUnit: js.Any
+  /* private */ var _sourceUnit: Any
   
-  /* private */ def computeDiagnostics(): js.Any
+  /* private */ def computeDiagnostics(): Any
   
   def diagnostics(): js.Array[Diagnostic]
   
@@ -36,19 +36,19 @@ trait SyntaxTree extends StObject {
   
   def structuralEquals(tree: SyntaxTree): Boolean
   
-  def toJSON(key: js.Any): js.Any
+  def toJSON(key: Any): Any
 }
 object SyntaxTree {
   
   inline def apply(
-    _allDiagnostics: js.Any,
-    _fileName: js.Any,
-    _isDeclaration: js.Any,
-    _lineMap: js.Any,
-    _parseOptions: js.Any,
-    _parserDiagnostics: js.Any,
-    _sourceUnit: js.Any,
-    computeDiagnostics: () => js.Any,
+    _allDiagnostics: Any,
+    _fileName: Any,
+    _isDeclaration: Any,
+    _lineMap: Any,
+    _parseOptions: Any,
+    _parserDiagnostics: Any,
+    _sourceUnit: Any,
+    computeDiagnostics: () => Any,
     diagnostics: () => js.Array[Diagnostic],
     fileName: () => String,
     isDeclaration: () => Boolean,
@@ -56,7 +56,7 @@ object SyntaxTree {
     parseOptions: () => ParseOptions,
     sourceUnit: () => SourceUnitSyntax,
     structuralEquals: SyntaxTree => Boolean,
-    toJSON: js.Any => js.Any
+    toJSON: Any => Any
   ): SyntaxTree = {
     val __obj = js.Dynamic.literal(_allDiagnostics = _allDiagnostics.asInstanceOf[js.Any], _fileName = _fileName.asInstanceOf[js.Any], _isDeclaration = _isDeclaration.asInstanceOf[js.Any], _lineMap = _lineMap.asInstanceOf[js.Any], _parseOptions = _parseOptions.asInstanceOf[js.Any], _parserDiagnostics = _parserDiagnostics.asInstanceOf[js.Any], _sourceUnit = _sourceUnit.asInstanceOf[js.Any], computeDiagnostics = js.Any.fromFunction0(computeDiagnostics), diagnostics = js.Any.fromFunction0(diagnostics), fileName = js.Any.fromFunction0(fileName), isDeclaration = js.Any.fromFunction0(isDeclaration), lineMap = js.Any.fromFunction0(lineMap), parseOptions = js.Any.fromFunction0(parseOptions), sourceUnit = js.Any.fromFunction0(sourceUnit), structuralEquals = js.Any.fromFunction1(structuralEquals), toJSON = js.Any.fromFunction1(toJSON))
     __obj.asInstanceOf[SyntaxTree]
@@ -64,7 +64,7 @@ object SyntaxTree {
   
   extension [Self <: SyntaxTree](x: Self) {
     
-    inline def setComputeDiagnostics(value: () => js.Any): Self = StObject.set(x, "computeDiagnostics", js.Any.fromFunction0(value))
+    inline def setComputeDiagnostics(value: () => Any): Self = StObject.set(x, "computeDiagnostics", js.Any.fromFunction0(value))
     
     inline def setDiagnostics(value: () => js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", js.Any.fromFunction0(value))
     
@@ -80,20 +80,20 @@ object SyntaxTree {
     
     inline def setStructuralEquals(value: SyntaxTree => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction1(value))
     
-    inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+    inline def setToJSON(value: Any => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     
-    inline def set_allDiagnostics(value: js.Any): Self = StObject.set(x, "_allDiagnostics", value.asInstanceOf[js.Any])
+    inline def set_allDiagnostics(value: Any): Self = StObject.set(x, "_allDiagnostics", value.asInstanceOf[js.Any])
     
-    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     
-    inline def set_isDeclaration(value: js.Any): Self = StObject.set(x, "_isDeclaration", value.asInstanceOf[js.Any])
+    inline def set_isDeclaration(value: Any): Self = StObject.set(x, "_isDeclaration", value.asInstanceOf[js.Any])
     
-    inline def set_lineMap(value: js.Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
+    inline def set_lineMap(value: Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
     
-    inline def set_parseOptions(value: js.Any): Self = StObject.set(x, "_parseOptions", value.asInstanceOf[js.Any])
+    inline def set_parseOptions(value: Any): Self = StObject.set(x, "_parseOptions", value.asInstanceOf[js.Any])
     
-    inline def set_parserDiagnostics(value: js.Any): Self = StObject.set(x, "_parserDiagnostics", value.asInstanceOf[js.Any])
+    inline def set_parserDiagnostics(value: Any): Self = StObject.set(x, "_parserDiagnostics", value.asInstanceOf[js.Any])
     
-    inline def set_sourceUnit(value: js.Any): Self = StObject.set(x, "_sourceUnit", value.asInstanceOf[js.Any])
+    inline def set_sourceUnit(value: Any): Self = StObject.set(x, "_sourceUnit", value.asInstanceOf[js.Any])
   }
 }

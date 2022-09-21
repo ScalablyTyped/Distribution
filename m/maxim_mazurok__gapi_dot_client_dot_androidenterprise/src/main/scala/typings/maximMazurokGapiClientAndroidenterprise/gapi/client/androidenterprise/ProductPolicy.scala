@@ -12,6 +12,13 @@ trait ProductPolicy extends StObject {
   /** The auto-update mode for the product. */
   var autoUpdateMode: js.UndefOr[String] = js.undefined
   
+  /**
+    * An authentication URL configuration for the authenticator app of an identity provider. This helps to launch the identity provider's authenticator app during the authentication
+    * happening in a private app using Android WebView. Authenticator app should already be the [default
+    * handler](https://developer.android.com/training/app-links/verify-site-associations) for the authentication url on the device.
+    */
+  var enterpriseAuthenticationAppLinkConfigs: js.UndefOr[js.Array[EnterpriseAuthenticationAppLinkConfig]] = js.undefined
+  
   /** The managed configuration for the product. */
   var managedConfiguration: js.UndefOr[ManagedConfiguration] = js.undefined
   
@@ -41,6 +48,12 @@ object ProductPolicy {
     
     inline def setAutoUpdateModeUndefined: Self = StObject.set(x, "autoUpdateMode", js.undefined)
     
+    inline def setEnterpriseAuthenticationAppLinkConfigs(value: js.Array[EnterpriseAuthenticationAppLinkConfig]): Self = StObject.set(x, "enterpriseAuthenticationAppLinkConfigs", value.asInstanceOf[js.Any])
+    
+    inline def setEnterpriseAuthenticationAppLinkConfigsUndefined: Self = StObject.set(x, "enterpriseAuthenticationAppLinkConfigs", js.undefined)
+    
+    inline def setEnterpriseAuthenticationAppLinkConfigsVarargs(value: EnterpriseAuthenticationAppLinkConfig*): Self = StObject.set(x, "enterpriseAuthenticationAppLinkConfigs", js.Array(value*))
+    
     inline def setManagedConfiguration(value: ManagedConfiguration): Self = StObject.set(x, "managedConfiguration", value.asInstanceOf[js.Any])
     
     inline def setManagedConfigurationUndefined: Self = StObject.set(x, "managedConfiguration", js.undefined)
@@ -53,12 +66,12 @@ object ProductPolicy {
     
     inline def setTrackIdsUndefined: Self = StObject.set(x, "trackIds", js.undefined)
     
-    inline def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value :_*))
+    inline def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value*))
     
     inline def setTracks(value: js.Array[String]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    inline def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

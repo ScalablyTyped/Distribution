@@ -30,5 +30,5 @@ object typeDefsMod {
   
   type Mutable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof T ]: T[P] extends std.Array<infer U>? std.Array<any> : T[P]}
-    */ typings.storybookAddonKnobs.storybookAddonKnobsStrings.Mutable & TopLevel[js.Any]
+    */ typings.storybookAddonKnobs.storybookAddonKnobsStrings.Mutable & TopLevel[Any]
 }

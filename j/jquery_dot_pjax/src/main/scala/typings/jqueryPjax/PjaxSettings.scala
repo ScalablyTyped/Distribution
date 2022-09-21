@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PjaxSettings
   extends StObject
-     with AjaxSettings[js.Any] {
+     with AjaxSettings[Any] {
   
   /**
     * A jQuery selector indicates where to stick the response body. E.g., $(container).html(xhr.responseBody).

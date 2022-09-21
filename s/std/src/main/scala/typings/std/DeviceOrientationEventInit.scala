@@ -8,12 +8,16 @@ trait DeviceOrientationEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var absolute: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var alpha: js.UndefOr[Double | Null] = js.undefined
   
+  /* standard dom */
   var beta: js.UndefOr[Double | Null] = js.undefined
   
+  /* standard dom */
   var gamma: js.UndefOr[Double | Null] = js.undefined
 }
 object DeviceOrientationEventInit {

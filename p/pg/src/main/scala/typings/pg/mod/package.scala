@@ -1,14 +1,17 @@
 package typings.pg.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.pg.anon.TypeofPg
+import typings.pg.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def defaults: typings.pg.mod.Defaults_ & typings.pg.mod.ClientConfig = typings.pg.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaults").asInstanceOf[typings.pg.mod.Defaults_ & typings.pg.mod.ClientConfig]
+inline def defaults: Defaults_ & ClientConfig = ^.asInstanceOf[js.Dynamic].selectDynamic("defaults").asInstanceOf[Defaults_ & ClientConfig]
 
-inline def native: typings.pg.anon.TypeofPg | scala.Null = typings.pg.mod.^.asInstanceOf[js.Dynamic].selectDynamic("native").asInstanceOf[typings.pg.anon.TypeofPg | scala.Null]
+inline def native: TypeofPg | Null = ^.asInstanceOf[js.Dynamic].selectDynamic("native").asInstanceOf[TypeofPg | Null]
 
-type ConnectionConfig = typings.pg.mod.ClientConfig
+type ConnectionConfig = ClientConfig
 
-type QueryResultRow = org.scalablytyped.runtime.StringDictionary[js.Any]
+type QueryResultRow = StringDictionary[Any]

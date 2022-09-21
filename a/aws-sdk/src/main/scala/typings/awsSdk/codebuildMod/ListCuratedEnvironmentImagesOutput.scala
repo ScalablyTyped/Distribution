@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListCuratedEnvironmentImagesOutput extends StObject {
   
   /**
-    * Information about supported platforms for Docker images that are managed by AWS CodeBuild.
+    * Information about supported platforms for Docker images that are managed by CodeBuild.
     */
   var platforms: js.UndefOr[EnvironmentPlatforms] = js.undefined
 }
@@ -24,6 +24,6 @@ object ListCuratedEnvironmentImagesOutput {
     
     inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
-    inline def setPlatformsVarargs(value: EnvironmentPlatform*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: EnvironmentPlatform*): Self = StObject.set(x, "platforms", js.Array(value*))
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.BlogPostWebPartPageComponent")
 @js.native
-class BlogPostWebPartPageComponent ()
+open class BlogPostWebPartPageComponent ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.BlogPostWebPartPageComponent

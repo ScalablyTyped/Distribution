@@ -10,7 +10,7 @@ trait IgLayoutManagerBorderLayout
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Option specifying the width of the left region, either in px or percentages

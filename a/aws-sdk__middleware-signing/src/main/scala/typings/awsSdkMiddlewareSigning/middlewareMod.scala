@@ -10,15 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object middlewareMod {
   
-  @JSImport("@aws-sdk/middleware-signing/dist/cjs/middleware", JSImport.Namespace)
+  @JSImport("@aws-sdk/middleware-signing/dist-types/middleware", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def awsAuthMiddleware[Input /* <: js.Object */, Output /* <: js.Object */](options: AwsAuthResolvedConfig): FinalizeRequestMiddleware[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("awsAuthMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[FinalizeRequestMiddleware[Input, Output]]
   
-  @JSImport("@aws-sdk/middleware-signing/dist/cjs/middleware", "awsAuthMiddlewareOptions")
+  @JSImport("@aws-sdk/middleware-signing/dist-types/middleware", "awsAuthMiddlewareOptions")
   @js.native
   val awsAuthMiddlewareOptions: RelativeMiddlewareOptions = js.native
   
-  inline def getAwsAuthPlugin(options: AwsAuthResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAwsAuthPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getAwsAuthPlugin(options: AwsAuthResolvedConfig): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAwsAuthPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
+  
+  inline def getSigV4AuthPlugin(options: AwsAuthResolvedConfig): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSigV4AuthPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
 }

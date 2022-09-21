@@ -61,19 +61,19 @@ object SendParamsMessage {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value*))
     
     inline def setBcc(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
     
     inline def setBccUndefined: Self = StObject.set(x, "Bcc", js.undefined)
     
-    inline def setBccVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Bcc", js.Array(value :_*))
+    inline def setBccVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Bcc", js.Array(value*))
     
     inline def setCc(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
     
     inline def setCcUndefined: Self = StObject.set(x, "Cc", js.undefined)
     
-    inline def setCcVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Cc", js.Array(value :_*))
+    inline def setCcVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Cc", js.Array(value*))
     
     inline def setCustomCampaign(value: String): Self = StObject.set(x, "CustomCampaign", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object SendParamsMessage {
     
     inline def setInlinedAttachmentsUndefined: Self = StObject.set(x, "InlinedAttachments", js.undefined)
     
-    inline def setInlinedAttachmentsVarargs(value: InlinedAttachment*): Self = StObject.set(x, "InlinedAttachments", js.Array(value :_*))
+    inline def setInlinedAttachmentsVarargs(value: InlinedAttachment*): Self = StObject.set(x, "InlinedAttachments", js.Array(value*))
     
     inline def setMonitoringCategory(value: String): Self = StObject.set(x, "MonitoringCategory", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object SendParamsMessage {
     
     inline def setTo(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    inline def setToVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "To", js.Array(value :_*))
+    inline def setToVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "To", js.Array(value*))
     
     inline def setURLTags(value: String): Self = StObject.set(x, "URLTags", value.asInstanceOf[js.Any])
     

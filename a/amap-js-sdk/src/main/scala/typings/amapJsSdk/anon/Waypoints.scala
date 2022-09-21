@@ -20,6 +20,6 @@ object Waypoints {
     
     inline def setWaypoints(value: js.Array[LngLat]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    inline def setWaypointsVarargs(value: LngLat*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: LngLat*): Self = StObject.set(x, "waypoints", js.Array(value*))
   }
 }

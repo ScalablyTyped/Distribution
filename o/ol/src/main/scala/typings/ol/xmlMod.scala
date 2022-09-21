@@ -17,15 +17,15 @@ object xmlMod {
   @js.native
   trait XML extends StObject {
     
-    def read(source: String): js.Any = js.native
+    def read(source: String): Any = js.native
     /**
       * Read the source document.
       */
-    def read(source: Document): js.Any = js.native
-    def read(source: Element): js.Any = js.native
+    def read(source: Document): Any = js.native
+    def read(source: Element): Any = js.native
     
-    def readFromDocument(doc: Document): js.Any = js.native
+    def readFromDocument(doc: Document): Any = js.native
     
-    def readFromNode(node: Element): js.Any = js.native
+    def readFromNode(node: Element): Any = js.native
   }
 }

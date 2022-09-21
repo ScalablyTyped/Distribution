@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.File")
 @js.native
-class File protected ()
+open class File protected ()
   extends StObject
      with _FieldType {
   def this(name: String, data: js.Array[Double]) = this()
@@ -53,9 +53,11 @@ class File protected ()
   def this(name: String, data: Size, `type`: String) = this()
   def this(name: String, data: Uri, `type`: String) = this()
   
-  def addMetadata(key: String, value: js.Any): Unit = js.native
+  val _url: String = js.native
   
-  def addTag(key: String, value: js.Any): Unit = js.native
+  def addMetadata(key: String, value: Any): Unit = js.native
+  
+  def addTag(key: String, value: Any): Unit = js.native
   
   def cancel(): Unit = js.native
   
@@ -72,18 +74,18 @@ class File protected ()
     */
   def getData(): js.Promise[String] = js.native
   
-  def metadata(): Record[String, js.Any] = js.native
+  def metadata(): Record[String, Any] = js.native
   
   def name(): String = js.native
   
   def save(): js.Promise[File] = js.native
-  def save(options: SuccessFailureOptions): js.Promise[File] = js.native
+  def save(options: FullOptions): js.Promise[File] = js.native
   
-  def setMetadata(metadata: Record[String, js.Any]): Unit = js.native
+  def setMetadata(metadata: Record[String, Any]): Unit = js.native
   
-  def setTags(tags: Record[String, js.Any]): Unit = js.native
+  def setTags(tags: Record[String, Any]): Unit = js.native
   
-  def tags(): Record[String, js.Any] = js.native
+  def tags(): Record[String, Any] = js.native
   
   def toJSON(): Name = js.native
   

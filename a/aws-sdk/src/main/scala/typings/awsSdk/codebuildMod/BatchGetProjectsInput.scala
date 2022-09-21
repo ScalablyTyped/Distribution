@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchGetProjectsInput extends StObject {
   
   /**
-    * The names or ARNs of the build projects. To get information about a project shared with your AWS account, its ARN must be specified. You cannot specify a shared project using its name.
+    * The names or ARNs of the build projects. To get information about a project shared with your Amazon Web Services account, its ARN must be specified. You cannot specify a shared project using its name.
     */
   var names: ProjectNames
 }
@@ -22,6 +22,6 @@ object BatchGetProjectsInput {
     
     inline def setNames(value: ProjectNames): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    inline def setNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "names", js.Array(value*))
   }
 }

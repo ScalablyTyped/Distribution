@@ -11,7 +11,9 @@ object webInstallerTargetMod {
   
   @JSImport("app-builder-lib/out/targets/nsis/WebInstallerTarget", "WebInstallerTarget")
   @js.native
-  class WebInstallerTarget protected () extends NsisTarget {
+  open class WebInstallerTarget protected () extends NsisTarget {
     def this(packager: WinPackager, outDir: String, targetName: String, packageHelper: AppPackageHelper) = this()
+    
+    /* protected */ def configureDefines(oneClick: Boolean, defines: Any): js.Promise[Any] = js.native
   }
 }

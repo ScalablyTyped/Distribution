@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Time")
 @js.native
-class Time ()
+open class Time ()
   extends typings.nodegit.timeMod.Time

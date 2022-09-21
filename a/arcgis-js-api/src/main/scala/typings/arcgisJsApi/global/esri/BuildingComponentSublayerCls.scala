@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html)
   */
-class BuildingComponentSublayerCls ()
+open class BuildingComponentSublayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.BuildingComponentSublayer {
   def this(properties: BuildingComponentSublayerProperties) = this()

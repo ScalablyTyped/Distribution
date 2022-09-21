@@ -29,7 +29,7 @@ object ListByoipCidrsResponse {
     
     inline def setByoipCidrsUndefined: Self = StObject.set(x, "ByoipCidrs", js.undefined)
     
-    inline def setByoipCidrsVarargs(value: ByoipCidr*): Self = StObject.set(x, "ByoipCidrs", js.Array(value :_*))
+    inline def setByoipCidrsVarargs(value: ByoipCidr*): Self = StObject.set(x, "ByoipCidrs", js.Array(value*))
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

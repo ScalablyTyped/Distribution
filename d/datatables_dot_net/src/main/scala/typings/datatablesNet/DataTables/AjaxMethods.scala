@@ -17,7 +17,7 @@ trait AjaxMethods
     * @param resetPaging Reset (default action or true) or hold the current paging position (false).
     */
   def load(): Api = js.native
-  def load(callback: js.Function1[/* json */ js.Any, Unit]): Api = js.native
-  def load(callback: js.Function1[/* json */ js.Any, Unit], resetPaging: Boolean): Api = js.native
+  def load(callback: js.Function1[/* json */ Any, Unit]): Api = js.native
+  def load(callback: js.Function1[/* json */ Any, Unit], resetPaging: Boolean): Api = js.native
   def load(callback: Unit, resetPaging: Boolean): Api = js.native
 }

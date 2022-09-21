@@ -8,5 +8,5 @@ object mergeDeveloperIdentitiesOutputMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/MergeDeveloperIdentitiesOutput", "MergeDeveloperIdentitiesOutput")
   @js.native
-  val MergeDeveloperIdentitiesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MergeDeveloperIdentitiesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

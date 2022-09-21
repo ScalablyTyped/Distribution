@@ -1,9 +1,8 @@
 package typings.readableStream.mod
 
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.BufferEncoding
 import typings.readableStream.anon.Chunk
 import typings.std.ArrayLike
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,36 +13,36 @@ trait WritableOptions
   
   var destroy: js.UndefOr[
     js.ThisFunction2[
-      /* this */ Writable, 
-      /* error */ Error | Null, 
-      /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+      /* this */ IWritable, 
+      /* error */ js.Error | Null, 
+      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
     ]
   ] = js.undefined
   
   var `final`: js.UndefOr[
     js.ThisFunction1[
-      /* this */ Writable, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      /* this */ IWritable, 
+      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ] = js.undefined
   
   var write: js.UndefOr[
     js.ThisFunction3[
-      /* this */ Writable, 
-      /* chunk */ js.Any, 
+      /* this */ IWritable, 
+      /* chunk */ Any, 
       /* encoding */ BufferEncoding | String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ] = js.undefined
   
   var writev: js.UndefOr[
     js.ThisFunction2[
-      /* this */ Writable, 
+      /* this */ IWritable, 
       /* chunk */ ArrayLike[Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ] = js.undefined
@@ -59,9 +58,9 @@ object WritableOptions {
     
     inline def setDestroy(
       value: js.ThisFunction2[
-          /* this */ Writable, 
-          /* error */ Error | Null, 
-          /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+          /* this */ IWritable, 
+          /* error */ js.Error | Null, 
+          /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
           Unit
         ]
     ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
@@ -70,8 +69,8 @@ object WritableOptions {
     
     inline def setFinal(
       value: js.ThisFunction1[
-          /* this */ Writable, 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* this */ IWritable, 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
     ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
@@ -80,10 +79,10 @@ object WritableOptions {
     
     inline def setWrite(
       value: js.ThisFunction3[
-          /* this */ Writable, 
-          /* chunk */ js.Any, 
+          /* this */ IWritable, 
+          /* chunk */ Any, 
           /* encoding */ BufferEncoding | String, 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
     ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
@@ -92,9 +91,9 @@ object WritableOptions {
     
     inline def setWritev(
       value: js.ThisFunction2[
-          /* this */ Writable, 
+          /* this */ IWritable, 
           /* chunk */ ArrayLike[Chunk], 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
     ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])

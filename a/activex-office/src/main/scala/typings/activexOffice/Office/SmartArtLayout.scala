@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SmartArtLayout extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Category: String
   
@@ -21,19 +21,19 @@ trait SmartArtLayout extends StObject {
   /* private */ @JSName("Office.SmartArtLayout_typekey")
   var OfficeDotSmartArtLayout_typekey: SmartArtLayout
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object SmartArtLayout {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Category: String,
     Creator: Double,
     Description: String,
     Id: String,
     Name: String,
     OfficeDotSmartArtLayout_typekey: SmartArtLayout,
-    Parent: js.Any
+    Parent: Any
   ): SmartArtLayout = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Category = Category.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.SmartArtLayout_typekey")(OfficeDotSmartArtLayout_typekey.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object SmartArtLayout {
   
   extension [Self <: SmartArtLayout](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
@@ -56,6 +56,6 @@ object SmartArtLayout {
     
     inline def setOfficeDotSmartArtLayout_typekey(value: SmartArtLayout): Self = StObject.set(x, "Office.SmartArtLayout_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

@@ -8,5 +8,5 @@ object getShardIteratorMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/GetShardIterator", "GetShardIterator")
   @js.native
-  val GetShardIterator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetShardIterator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

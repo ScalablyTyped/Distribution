@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveTagsFromResourceMessage extends StObject {
   
   /**
-    * An AWS DMS resource from which you want to remove tag(s). The value for this parameter is an Amazon Resource Name (ARN).
+    * An DMS resource from which you want to remove tag(s). The value for this parameter is an Amazon Resource Name (ARN).
     */
   var ResourceArn: String
   
@@ -29,6 +29,6 @@ object RemoveTagsFromResourceMessage {
     
     inline def setTagKeys(value: KeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

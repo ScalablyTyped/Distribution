@@ -10,10 +10,10 @@ Web-hacking proxy API for node
 | ------------------ | :-------------: |
 | Full name          | hoxy |
 | Keywords           | develop, development, test, testing, debug, debugging, proxy, charles, fiddler, web |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 35578 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1355.3333333333333 |
+| # stars            | 576.0 |
 
 ## Links
 - [Homepage](https://github.com/greim/hoxy#readme)

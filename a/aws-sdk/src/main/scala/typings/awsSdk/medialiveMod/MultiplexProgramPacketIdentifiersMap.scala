@@ -45,13 +45,13 @@ object MultiplexProgramPacketIdentifiersMap {
     
     inline def setAudioPidsUndefined: Self = StObject.set(x, "AudioPids", js.undefined)
     
-    inline def setAudioPidsVarargs(value: integer*): Self = StObject.set(x, "AudioPids", js.Array(value :_*))
+    inline def setAudioPidsVarargs(value: integer*): Self = StObject.set(x, "AudioPids", js.Array(value*))
     
     inline def setDvbSubPids(value: listOfInteger): Self = StObject.set(x, "DvbSubPids", value.asInstanceOf[js.Any])
     
     inline def setDvbSubPidsUndefined: Self = StObject.set(x, "DvbSubPids", js.undefined)
     
-    inline def setDvbSubPidsVarargs(value: integer*): Self = StObject.set(x, "DvbSubPids", js.Array(value :_*))
+    inline def setDvbSubPidsVarargs(value: integer*): Self = StObject.set(x, "DvbSubPids", js.Array(value*))
     
     inline def setDvbTeletextPid(value: integer): Self = StObject.set(x, "DvbTeletextPid", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object MultiplexProgramPacketIdentifiersMap {
     
     inline def setKlvDataPidsUndefined: Self = StObject.set(x, "KlvDataPids", js.undefined)
     
-    inline def setKlvDataPidsVarargs(value: integer*): Self = StObject.set(x, "KlvDataPids", js.Array(value :_*))
+    inline def setKlvDataPidsVarargs(value: integer*): Self = StObject.set(x, "KlvDataPids", js.Array(value*))
     
     inline def setPcrPid(value: integer): Self = StObject.set(x, "PcrPid", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object MultiplexProgramPacketIdentifiersMap {
     
     inline def setScte27PidsUndefined: Self = StObject.set(x, "Scte27Pids", js.undefined)
     
-    inline def setScte27PidsVarargs(value: integer*): Self = StObject.set(x, "Scte27Pids", js.Array(value :_*))
+    inline def setScte27PidsVarargs(value: integer*): Self = StObject.set(x, "Scte27Pids", js.Array(value*))
     
     inline def setScte35Pid(value: integer): Self = StObject.set(x, "Scte35Pid", value.asInstanceOf[js.Any])
     

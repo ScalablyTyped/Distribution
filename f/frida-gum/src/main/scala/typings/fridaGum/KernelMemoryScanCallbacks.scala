@@ -9,7 +9,7 @@ trait KernelMemoryScanCallbacks extends StObject {
   /**
     * Called when the memory range has been fully scanned.
     */
-  def onComplete(): Unit
+  var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Called when there was a memory access error while scanning.
@@ -28,14 +28,16 @@ trait KernelMemoryScanCallbacks extends StObject {
 }
 object KernelMemoryScanCallbacks {
   
-  inline def apply(onComplete: () => Unit, onMatch: (UInt64, Double) => Unit | EnumerateAction): KernelMemoryScanCallbacks = {
-    val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction2(onMatch))
+  inline def apply(onMatch: (UInt64, Double) => Unit | EnumerateAction): KernelMemoryScanCallbacks = {
+    val __obj = js.Dynamic.literal(onMatch = js.Any.fromFunction2(onMatch))
     __obj.asInstanceOf[KernelMemoryScanCallbacks]
   }
   
   extension [Self <: KernelMemoryScanCallbacks](x: Self) {
     
     inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+    
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     inline def setOnError(value: /* reason */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     

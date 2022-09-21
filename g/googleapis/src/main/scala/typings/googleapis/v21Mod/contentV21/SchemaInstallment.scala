@@ -14,7 +14,7 @@ trait SchemaInstallment extends StObject {
   /**
     * The number of installments the buyer has to pay.
     */
-  var months: js.UndefOr[String] = js.undefined
+  var months: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInstallment {
   
@@ -30,6 +30,8 @@ object SchemaInstallment {
     inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     inline def setMonths(value: String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    
+    inline def setMonthsNull: Self = StObject.set(x, "months", null)
     
     inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
   }

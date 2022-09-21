@@ -125,7 +125,7 @@ object XRelationshipAccess {
     hasByID: String => Boolean,
     insertRelationshipByID: (String, SeqEquiv[StringPair], Boolean) => Unit,
     insertRelationships: (SeqEquiv[SeqEquiv[StringPair]], Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeRelationshipByID: String => Unit
   ): XRelationshipAccess = {

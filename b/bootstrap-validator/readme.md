@@ -10,15 +10,12 @@ A user-friendly HTML5 Form validator for Bootstrap 3
 | ------------------ | :-------------: |
 | Full name          | bootstrap-validator |
 | Keywords           | bootstrap, bootstrap3, jquery, form, validator, validation, plugin |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 452904 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 34364.666666666664 |
+| # stars            | 2400.0 |
 
 ## Links
-- [Homepage](https://github.com/1000hz/bootstrap-validator#readme)
-- [Bugs](https://github.com/1000hz/bootstrap-validator/issues)
-- [Repository](https://github.com/1000hz/bootstrap-validator)
 - [Npm](https://www.npmjs.com/package/bootstrap-validator)
     
 

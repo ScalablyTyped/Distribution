@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientHealthcare.anon
 
-import typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.ExportResourcesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,10 @@ trait CallbackFields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name of the FHIR store to export resource from, in the format of `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`. */
+  /**
+    * Resource name of the consent store, of the form `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{consent_store_id}`. Cannot be changed after
+    * creation.
+    */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +41,14 @@ trait CallbackFields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ExportResourcesRequest
+  var resource: typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.ConsentStore
+  
+  /**
+    * Required. The update mask that applies to the resource. For the `FieldMask` definition, see
+    * https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask. Only the `labels`, `default_consent_ttl`, and `enable_consent_create_on_update` fields
+    * are allowed to be updated.
+    */
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +58,10 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(name: String, resource: ExportResourcesRequest): CallbackFields = {
+  inline def apply(
+    name: String,
+    resource: typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.ConsentStore
+  ): CallbackFields = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
@@ -94,7 +106,11 @@ object CallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ExportResourcesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.ConsentStore): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

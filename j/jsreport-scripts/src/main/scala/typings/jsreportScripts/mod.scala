@@ -1,6 +1,9 @@
 package typings.jsreportScripts
 
+import typings.jsreportCore.mod.Engine
 import typings.jsreportCore.mod.ExtensionDefinition
+import typings.jsreportCore.mod.Recipe
+import typings.jsreportCore.mod.Template
 import typings.jsreportScripts.jsreportScriptsStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +35,30 @@ object mod {
       
       inline def setAllowedModulesUndefined: Self = StObject.set(x, "allowedModules", js.undefined)
       
-      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
+      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value*))
+    }
+  }
+  
+  trait ScriptsTemplate
+    extends StObject
+       with Template {
+    
+    var scripts: js.UndefOr[js.Array[TemplateScript]] = js.undefined
+  }
+  object ScriptsTemplate {
+    
+    inline def apply(content: String, engine: Engine | String, recipe: Recipe | String): ScriptsTemplate = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ScriptsTemplate]
+    }
+    
+    extension [Self <: ScriptsTemplate](x: Self) {
+      
+      inline def setScripts(value: js.Array[TemplateScript]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      
+      inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+      
+      inline def setScriptsVarargs(value: TemplateScript*): Self = StObject.set(x, "scripts", js.Array(value*))
     }
   }
   
@@ -70,24 +96,20 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    trait Template extends StObject {
+    trait TemplateRegistry extends StObject {
       
-      var scripts: js.UndefOr[js.Array[TemplateScript]] = js.undefined
+      var ScriptsTemplate: typings.jsreportScripts.mod.ScriptsTemplate
     }
-    object Template {
+    object TemplateRegistry {
       
-      inline def apply(): Template = {
-        val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[Template]
+      inline def apply(ScriptsTemplate: ScriptsTemplate): TemplateRegistry = {
+        val __obj = js.Dynamic.literal(ScriptsTemplate = ScriptsTemplate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: Template](x: Self) {
+      extension [Self <: TemplateRegistry](x: Self) {
         
-        inline def setScripts(value: js.Array[TemplateScript]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
-        
-        inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
-        
-        inline def setScriptsVarargs(value: TemplateScript*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+        inline def setScriptsTemplate(value: ScriptsTemplate): Self = StObject.set(x, "ScriptsTemplate", value.asInstanceOf[js.Any])
       }
     }
   }

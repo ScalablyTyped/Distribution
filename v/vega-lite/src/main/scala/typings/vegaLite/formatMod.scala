@@ -1,7 +1,11 @@
 package typings.vegaLite
 
 import typings.vegaLite.anon.Expr
+import typings.vegaLite.anon.IsUTCScale
+import typings.vegaLite.anon.NormalizeStack
+import typings.vegaLite.anon.OmitTimeFormatConfig
 import typings.vegaLite.anon.Signal
+import typings.vegaLite.anon.SpecifiedFormat
 import typings.vegaLite.channeldefMod.DatumDef
 import typings.vegaLite.channeldefMod.FieldDef
 import typings.vegaLite.channeldefMod.PrimitiveValue
@@ -9,11 +13,11 @@ import typings.vegaLite.datetimeMod.DateTime
 import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.scaleMod.ScaleType
 import typings.vegaLite.srcConfigMod.Config
-import typings.vegaLite.srcTimeunitMod.TimeUnit
 import typings.vegaLite.srcTypeMod.Type
 import typings.vegaLite.utilMod.Dict
 import typings.vegaLite.vegaLiteStrings.number
 import typings.vegaLite.vegaLiteStrings.time
+import typings.vegaLite.vegaLiteStrings.utc
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,14 +43,14 @@ object formatMod {
   inline def binFormatExpression(
     startField: String,
     endField: String,
-    format: Dict[js.Any],
+    format: Dict[Any],
     formatType: String,
     config: Config[ExprRef | SignalRef]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("binFormatExpression")(startField.asInstanceOf[js.Any], endField.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def formatCustomType(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfigField: Expr): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCustomType")(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfigField.asInstanceOf[js.Any]).asInstanceOf[Signal]
+  inline def formatCustomType(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfigField: NormalizeStack): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCustomType")(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfigField.asInstanceOf[js.Any]).asInstanceOf[Signal]
   
-  inline def formatSignalRef(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfig: typings.vegaLite.anon.Config): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSignalRef")(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfig.asInstanceOf[js.Any]).asInstanceOf[Signal]
+  inline def formatSignalRef(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfig: Expr): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSignalRef")(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfig.asInstanceOf[js.Any]).asInstanceOf[Signal]
   
   inline def guideFormat(
     fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
@@ -59,13 +63,13 @@ object formatMod {
   inline def guideFormat(
     fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
     `type`: Type,
-    format: Dict[js.Any],
+    format: Dict[Any],
     formatType: String,
     config: Config[ExprRef | SignalRef],
     omitTimeFormatConfig: Boolean
   ): String | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormat")(fieldOrDatumDef.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], omitTimeFormatConfig.asInstanceOf[js.Any])).asInstanceOf[String | Signal]
   inline def guideFormat(
-    fieldOrDatumDef: FieldDef[String, js.Any],
+    fieldOrDatumDef: FieldDef[String, Any],
     `type`: Type,
     format: String,
     formatType: String,
@@ -73,9 +77,9 @@ object formatMod {
     omitTimeFormatConfig: Boolean
   ): String | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormat")(fieldOrDatumDef.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], omitTimeFormatConfig.asInstanceOf[js.Any])).asInstanceOf[String | Signal]
   inline def guideFormat(
-    fieldOrDatumDef: FieldDef[String, js.Any],
+    fieldOrDatumDef: FieldDef[String, Any],
     `type`: Type,
-    format: Dict[js.Any],
+    format: Dict[Any],
     formatType: String,
     config: Config[ExprRef | SignalRef],
     omitTimeFormatConfig: Boolean
@@ -85,41 +89,20 @@ object formatMod {
     formatType: String,
     fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
     scaleType: ScaleType
-  ): time | number | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormatType")(formatType.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[time | number | SignalRef]
-  inline def guideFormatType(formatType: String, fieldOrDatumDef: FieldDef[String, js.Any], scaleType: ScaleType): time | number | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormatType")(formatType.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[time | number | SignalRef]
+  ): time | number | SignalRef | utc = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormatType")(formatType.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[time | number | SignalRef | utc]
+  inline def guideFormatType(formatType: String, fieldOrDatumDef: FieldDef[String, Any], scaleType: ScaleType): time | number | SignalRef | utc = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormatType")(formatType.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[time | number | SignalRef | utc]
   inline def guideFormatType(
     formatType: SignalRef,
     fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
     scaleType: ScaleType
-  ): time | number | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormatType")(formatType.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[time | number | SignalRef]
-  inline def guideFormatType(formatType: SignalRef, fieldOrDatumDef: FieldDef[String, js.Any], scaleType: ScaleType): time | number | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormatType")(formatType.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[time | number | SignalRef]
+  ): time | number | SignalRef | utc = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormatType")(formatType.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[time | number | SignalRef | utc]
+  inline def guideFormatType(formatType: SignalRef, fieldOrDatumDef: FieldDef[String, Any], scaleType: ScaleType): time | number | SignalRef | utc = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormatType")(formatType.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[time | number | SignalRef | utc]
   
   inline def isCustomFormatType(formatType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCustomFormatType")(formatType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def numberFormat(`type`: Type, specifiedFormat: String, config: Config[ExprRef | SignalRef]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`type`.asInstanceOf[js.Any], specifiedFormat.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def numberFormat(`type`: Type, specifiedFormat: Dict[js.Any], config: Config[ExprRef | SignalRef]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`type`.asInstanceOf[js.Any], specifiedFormat.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def numberFormat(hasTypeSpecifiedFormatConfigNormalizeStack: SpecifiedFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(hasTypeSpecifiedFormatConfigNormalizeStack.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def timeFormat(
-    specifiedFormat: String,
-    timeUnit: TimeUnit,
-    config: Config[ExprRef | SignalRef],
-    omitTimeFormatConfig: Boolean
-  ): String | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(specifiedFormat.asInstanceOf[js.Any], timeUnit.asInstanceOf[js.Any], config.asInstanceOf[js.Any], omitTimeFormatConfig.asInstanceOf[js.Any])).asInstanceOf[String | Signal]
+  inline def timeFormat(hasSpecifiedFormatTimeUnitConfigOmitTimeFormatConfig: OmitTimeFormatConfig): String | Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(hasSpecifiedFormatTimeUnitConfigOmitTimeFormatConfig.asInstanceOf[js.Any]).asInstanceOf[String | Signal]
   
-  inline def timeFormatExpression(
-    field: String,
-    timeUnit: TimeUnit,
-    format: String,
-    rawTimeFormat: String,
-    // should be provided only for actual text and headers, not axis/legend labels
-  isUTCScale: Boolean
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatExpression")(field.asInstanceOf[js.Any], timeUnit.asInstanceOf[js.Any], format.asInstanceOf[js.Any], rawTimeFormat.asInstanceOf[js.Any], isUTCScale.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def timeFormatExpression(
-    field: String,
-    timeUnit: TimeUnit,
-    format: Dict[js.Any],
-    rawTimeFormat: String,
-    // should be provided only for actual text and headers, not axis/legend labels
-  isUTCScale: Boolean
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatExpression")(field.asInstanceOf[js.Any], timeUnit.asInstanceOf[js.Any], format.asInstanceOf[js.Any], rawTimeFormat.asInstanceOf[js.Any], isUTCScale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def timeFormatExpression(hasFieldTimeUnitFormatFormatTypeRawTimeFormatIsUTCScale: IsUTCScale): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatExpression")(hasFieldTimeUnitFormatFormatTypeRawTimeFormatIsUTCScale.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateApplicationRequest extends StObject {
   
   /**
+    *  Turns auto-configuration on or off. 
+    */
+  var AutoConfigEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.AutoConfigEnabled] = js.undefined
+  
+  /**
     *  Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others. 
     */
   var CWEMonitorEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.CWEMonitorEnabled] = js.undefined
@@ -39,6 +44,10 @@ object UpdateApplicationRequest {
   }
   
   extension [Self <: UpdateApplicationRequest](x: Self) {
+    
+    inline def setAutoConfigEnabled(value: AutoConfigEnabled): Self = StObject.set(x, "AutoConfigEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAutoConfigEnabledUndefined: Self = StObject.set(x, "AutoConfigEnabled", js.undefined)
     
     inline def setCWEMonitorEnabled(value: CWEMonitorEnabled): Self = StObject.set(x, "CWEMonitorEnabled", value.asInstanceOf[js.Any])
     

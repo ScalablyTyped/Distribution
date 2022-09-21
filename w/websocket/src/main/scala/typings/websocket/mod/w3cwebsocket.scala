@@ -1,10 +1,7 @@
 package typings.websocket.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Error
 import typings.websocket.websocketStrings.arraybuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("websocket", "w3cwebsocket")
 @js.native
-class w3cwebsocket protected () extends StObject {
+open class w3cwebsocket protected () extends StObject {
   def this(url: String) = this()
   def this(url: String, protocols: String) = this()
   def this(url: String, protocols: js.Array[String]) = this()
@@ -303,7 +300,7 @@ class w3cwebsocket protected () extends StObject {
   
   def onclose(event: ICloseEvent): Unit = js.native
   
-  def onerror(error: Error): Unit = js.native
+  def onerror(error: js.Error): Unit = js.native
   
   def onmessage(message: IMessageEvent): Unit = js.native
   
@@ -313,9 +310,9 @@ class w3cwebsocket protected () extends StObject {
   
   var readyState: Double = js.native
   
+  def send(data: js.typedarray.ArrayBuffer): Unit = js.native
+  def send(data: js.typedarray.ArrayBufferView): Unit = js.native
   def send(data: Buffer): Unit = js.native
-  def send(data: ArrayBuffer): Unit = js.native
-  def send(data: ArrayBufferView): Unit = js.native
   def send(data: IStringified): Unit = js.native
   
   var url: String = js.native

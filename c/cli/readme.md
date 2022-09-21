@@ -10,15 +10,12 @@ A tool for rapidly building command line apps
 | ------------------ | :-------------: |
 | Full name          | cli |
 | Keywords           | cli, command line, opts, parseopt, opt, args, console, argsparse, optparse, autocomplete, command, autocompletion |
-| # releases         | 0 |
-| # dependents       | 569 |
-| # downloads        | 30058613 |
-| # stars            | 69 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3759447.0 |
+| # stars            | 792.0 |
 
 ## Links
-- [Homepage](http://github.com/node-js-libs/cli)
-- [Bugs](http://github.com/node-js-libs/cli/issues)
-- [Repository](https://github.com/node-js-libs/cli)
 - [Npm](https://www.npmjs.com/package/cli)
     
 

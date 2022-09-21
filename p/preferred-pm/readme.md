@@ -1,7 +1,7 @@
 
 # Scala.js typings for preferred-pm
 
-Typings are for version 2.0
+Typings are for version 3.0.3
 
 ## Library description:
 Detects what package manager was used for installation
@@ -10,10 +10,10 @@ Detects what package manager was used for installation
 | ------------------ | :-------------: |
 | Full name          | preferred-pm |
 | Keywords           | npm, pnpm, yarn |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 3409982 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1598792.0 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/zkochan/packages#readme)
@@ -24,7 +24,7 @@ Detects what package manager was used for installation
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

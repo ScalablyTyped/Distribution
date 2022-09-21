@@ -365,12 +365,12 @@ object Components {
       * 
       * Calling this methods resets previous properties you may have set on the body, including
       * plugins, mass, friction, etc. So be sure to re-apply these in the options object if needed.
-      * @param sides The number of sides the polygon will have.
       * @param radius The "radius" of the polygon, i.e. the distance from its center to any vertex. This is also the radius of its circumcircle.
+      * @param sides The number of sides the polygon will have.
       * @param options An optional Body configuration object that is used to set initial Body properties on creation.
       */
-    def setPolygon(sides: Double, radius: Double): GameObject = js.native
-    def setPolygon(sides: Double, radius: Double, options: MatterBodyConfig): GameObject = js.native
+    def setPolygon(radius: Double, sides: Double): GameObject = js.native
+    def setPolygon(radius: Double, sides: Double, options: MatterBodyConfig): GameObject = js.native
     
     /**
       * Set the body on a Game Object to a rectangle.

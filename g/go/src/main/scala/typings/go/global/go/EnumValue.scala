@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("go.EnumValue")
 @js.native
-class EnumValue ()
+open class EnumValue ()
   extends typings.go.mod.EnumValue

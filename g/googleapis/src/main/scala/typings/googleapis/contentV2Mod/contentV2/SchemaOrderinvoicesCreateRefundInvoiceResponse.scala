@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrderinvoicesCreateRefundInvoiceResponse extends StObject {
   
   /**
-    * The status of the execution.
+    * The status of the execution. Acceptable values are: - "`duplicate`" - "`executed`"
     */
-  var executionStatus: js.UndefOr[String] = js.undefined
+  var executionStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#orderinvoicesCreateRefundInvoiceResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "content#orderinvoicesCreateRefundInvoiceResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrderinvoicesCreateRefundInvoiceResponse {
   
@@ -28,9 +27,13 @@ object SchemaOrderinvoicesCreateRefundInvoiceResponse {
     
     inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
+    inline def setExecutionStatusNull: Self = StObject.set(x, "executionStatus", null)
+    
     inline def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

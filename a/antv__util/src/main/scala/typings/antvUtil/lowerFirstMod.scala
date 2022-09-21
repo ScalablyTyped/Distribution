@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object lowerFirstMod {
   
-  @JSImport("@antv/util/lib/lower-first", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/lower-first", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

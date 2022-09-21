@@ -49,7 +49,7 @@ object PartialChipsOptions {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: ChipData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ChipData*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

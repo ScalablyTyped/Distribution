@@ -84,7 +84,7 @@ object XAccessibleTextMarkup {
     getTextMarkupAtIndex: (Double, Double) => SafeArray[TextSegment],
     getTextMarkupCount: Double => Double,
     getTextRange: (Double, Double) => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCaretPosition: Double => Boolean,
     setSelection: (Double, Double) => Boolean

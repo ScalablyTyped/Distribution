@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BuildingFilterConstructor
   extends StObject
-     with Instantiable0[BuildingFilter]
+     with /**
+  * The `BuildingFilter` class defines a set of conditions that can be used to show or hide specific features of a [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) in the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html)
+  */
+Instantiable0[BuildingFilter]
      with Instantiable1[/* properties */ BuildingFilterProperties, BuildingFilter] {
   
-  def fromJSON(json: js.Any): BuildingFilter = js.native
+  def fromJSON(json: Any): BuildingFilter = js.native
 }

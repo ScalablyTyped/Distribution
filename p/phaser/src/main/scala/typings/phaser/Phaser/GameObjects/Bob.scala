@@ -1,7 +1,6 @@
 package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.Textures.Frame
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,8 +78,8 @@ trait Bob extends StObject {
     */
   def reset(x: Double, y: Double): this.type = js.native
   def reset(x: Double, y: Double, frame: String): this.type = js.native
+  def reset(x: Double, y: Double, frame: Double): this.type = js.native
   def reset(x: Double, y: Double, frame: Frame): this.type = js.native
-  def reset(x: Double, y: Double, frame: integer): this.type = js.native
   
   /**
     * Resets the horizontal and vertical flipped state of this Bob back to their default un-flipped state.
@@ -123,8 +122,8 @@ trait Bob extends StObject {
     */
   def setFrame(): this.type = js.native
   def setFrame(frame: String): this.type = js.native
+  def setFrame(frame: Double): this.type = js.native
   def setFrame(frame: Frame): this.type = js.native
-  def setFrame(frame: integer): this.type = js.native
   
   /**
     * Changes the position of this Bob to the values given.

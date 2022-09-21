@@ -17,7 +17,7 @@ trait BatchGetImageRequest extends StObject {
   var imageIds: ImageIdentifierList
   
   /**
-    * The AWS account ID associated with the registry that contains the images to describe. If you do not specify a registry, the default registry is assumed.
+    * The Amazon Web Services account ID associated with the registry that contains the images to describe. If you do not specify a registry, the default registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
@@ -39,11 +39,11 @@ object BatchGetImageRequest {
     
     inline def setAcceptedMediaTypesUndefined: Self = StObject.set(x, "acceptedMediaTypes", js.undefined)
     
-    inline def setAcceptedMediaTypesVarargs(value: MediaType*): Self = StObject.set(x, "acceptedMediaTypes", js.Array(value :_*))
+    inline def setAcceptedMediaTypesVarargs(value: MediaType*): Self = StObject.set(x, "acceptedMediaTypes", js.Array(value*))
     
     inline def setImageIds(value: ImageIdentifierList): Self = StObject.set(x, "imageIds", value.asInstanceOf[js.Any])
     
-    inline def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value :_*))
+    inline def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value*))
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

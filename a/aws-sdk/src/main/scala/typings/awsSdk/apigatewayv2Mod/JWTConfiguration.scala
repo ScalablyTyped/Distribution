@@ -30,7 +30,7 @@ object JWTConfiguration {
     
     inline def setAudienceUndefined: Self = StObject.set(x, "Audience", js.undefined)
     
-    inline def setAudienceVarargs(value: string*): Self = StObject.set(x, "Audience", js.Array(value :_*))
+    inline def setAudienceVarargs(value: string*): Self = StObject.set(x, "Audience", js.Array(value*))
     
     inline def setIssuer(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     

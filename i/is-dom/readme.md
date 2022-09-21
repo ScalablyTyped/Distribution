@@ -10,10 +10,10 @@ Check if the given object is a dom node
 | ------------------ | :-------------: |
 | Full name          | is-dom |
 | Keywords           | dom, html, is dom, dom node, dom object |
-| # releases         | 2 |
-| # dependents       | 54 |
-| # downloads        | 62452781 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4112317666666666E7 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/npm-dom/is-dom#readme)

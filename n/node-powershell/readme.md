@@ -1,24 +1,24 @@
 
 # Scala.js typings for node-powershell
 
-Typings are for version v3.1.1
+Typings are for version 4.0
 
 ## Library description:
-Easily run PowerShell from your NodeJS app
+Node.js binding for PowerShell
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | node-powershell |
-| Keywords           | node-powershell, ps, powershell, node-ps, microsoft, shell, cmd, commandline, command, Line, windows, windows powershell, script, spwan, shells, terminal, linux powershell, powershell github, PowerShell for every system, PowerShell cross-platform, powershell linux, powershell centos, powershell rhel, powershell ubuntu, powershell macos, powershell docker, PowerShell Core, PowerShell Core 6.0, PowerShell 6.0, pwsh |
-| # releases         | 3 |
-| # dependents       | 53 |
-| # downloads        | 693184 |
-| # stars            | 9 |
+| Keywords           | child-shell, node-shell, node-powershell, powershell, windows powershell, powershell core, pwsh, node-ps, ps, microsoft, spwan, cmd, command, script, commandline, shell, terminal, cross-platform, unix, linux, macos, windows |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 106734.0 |
+| # stars            | 266.0 |
 
 ## Links
-- [Homepage](http://rannn505.github.io/node-powershell/)
-- [Bugs](https://github.com/rannn505/node-powershell/issues)
-- [Repository](https://github.com/rannn505/node-powershell)
+- [Homepage](https://github.com/rannn505/child-shell/tree/master/packages/node-powershell#readme)
+- [Bugs](https://github.com/rannn505/child-shell/issues)
+- [Repository](https://github.com/rannn505/child-shell)
 - [Npm](https://www.npmjs.com/package/node-powershell)
     
 

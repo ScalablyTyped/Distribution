@@ -16,7 +16,7 @@ object locationsApiMod {
   
   @JSImport("vso-node-api/LocationsApi", "LocationsApi")
   @js.native
-  class LocationsApi protected () extends ILocationsApi {
+  open class LocationsApi protected () extends ILocationsApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }

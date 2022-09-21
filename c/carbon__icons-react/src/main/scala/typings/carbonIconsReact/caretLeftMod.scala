@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object caretLeftMod extends Shortcut {
   
-  @JSImport("@carbon/icons-react/lib/caret--left", JSImport.Default)
+  @JSImport("@carbon/icons-react/lib/CaretLeft", JSImport.Default)
   @js.native
   val default: CarbonIconType = js.native
   

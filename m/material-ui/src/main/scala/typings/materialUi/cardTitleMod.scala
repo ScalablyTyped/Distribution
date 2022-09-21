@@ -10,10 +10,10 @@ object cardTitleMod {
   
   @JSImport("material-ui/Card/CardTitle", JSImport.Default)
   @js.native
-  class default () extends CardTitle
+  open class default () extends CardTitle
   
   @JSImport("material-ui/Card/CardTitle", "CardTitle")
   @js.native
-  class CardTitle ()
-    extends Component[CardTitleProps, js.Object, js.Any]
+  open class CardTitle ()
+    extends Component[CardTitleProps, js.Object, Any]
 }

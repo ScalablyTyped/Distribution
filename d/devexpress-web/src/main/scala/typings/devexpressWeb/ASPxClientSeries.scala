@@ -186,17 +186,17 @@ object ASPxClientSeries {
     
     inline def setCrosshairValueItems(value: js.Array[ASPxClientCrosshairValueItem]): Self = StObject.set(x, "crosshairValueItems", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairValueItemsVarargs(value: ASPxClientCrosshairValueItem*): Self = StObject.set(x, "crosshairValueItems", js.Array(value :_*))
+    inline def setCrosshairValueItemsVarargs(value: ASPxClientCrosshairValueItem*): Self = StObject.set(x, "crosshairValueItems", js.Array(value*))
     
     inline def setFibonacciIndicators(value: js.Array[ASPxClientFibonacciIndicator]): Self = StObject.set(x, "fibonacciIndicators", value.asInstanceOf[js.Any])
     
-    inline def setFibonacciIndicatorsVarargs(value: ASPxClientFibonacciIndicator*): Self = StObject.set(x, "fibonacciIndicators", js.Array(value :_*))
+    inline def setFibonacciIndicatorsVarargs(value: ASPxClientFibonacciIndicator*): Self = StObject.set(x, "fibonacciIndicators", js.Array(value*))
     
     inline def setGroupedElementsPattern(value: String): Self = StObject.set(x, "groupedElementsPattern", value.asInstanceOf[js.Any])
     
     inline def setIndicators(value: js.Array[ASPxClientIndicator]): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
     
-    inline def setIndicatorsVarargs(value: ASPxClientIndicator*): Self = StObject.set(x, "indicators", js.Array(value :_*))
+    inline def setIndicatorsVarargs(value: ASPxClientIndicator*): Self = StObject.set(x, "indicators", js.Array(value*))
     
     inline def setLabel(value: ASPxClientSeriesLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -204,17 +204,17 @@ object ASPxClientSeries {
     
     inline def setPoints(value: js.Array[ASPxClientSeriesPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: ASPxClientSeriesPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: ASPxClientSeriesPoint*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setRegressionLines(value: js.Array[ASPxClientRegressionLine]): Self = StObject.set(x, "regressionLines", value.asInstanceOf[js.Any])
     
-    inline def setRegressionLinesVarargs(value: ASPxClientRegressionLine*): Self = StObject.set(x, "regressionLines", js.Array(value :_*))
+    inline def setRegressionLinesVarargs(value: ASPxClientRegressionLine*): Self = StObject.set(x, "regressionLines", js.Array(value*))
     
     inline def setStackedGroup(value: String): Self = StObject.set(x, "stackedGroup", value.asInstanceOf[js.Any])
     
     inline def setTitles(value: js.Array[ASPxClientSeriesTitle]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
-    inline def setTitlesVarargs(value: ASPxClientSeriesTitle*): Self = StObject.set(x, "titles", js.Array(value :_*))
+    inline def setTitlesVarargs(value: ASPxClientSeriesTitle*): Self = StObject.set(x, "titles", js.Array(value*))
     
     inline def setToolTipEnabled(value: Boolean): Self = StObject.set(x, "toolTipEnabled", value.asInstanceOf[js.Any])
     
@@ -224,7 +224,7 @@ object ASPxClientSeries {
     
     inline def setTrendLines(value: js.Array[ASPxClientTrendLine]): Self = StObject.set(x, "trendLines", value.asInstanceOf[js.Any])
     
-    inline def setTrendLinesVarargs(value: ASPxClientTrendLine*): Self = StObject.set(x, "trendLines", js.Array(value :_*))
+    inline def setTrendLinesVarargs(value: ASPxClientTrendLine*): Self = StObject.set(x, "trendLines", js.Array(value*))
     
     inline def setValueScaleType(value: String): Self = StObject.set(x, "valueScaleType", value.asInstanceOf[js.Any])
     

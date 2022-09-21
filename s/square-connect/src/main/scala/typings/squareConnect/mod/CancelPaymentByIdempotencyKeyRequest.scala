@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CancelPaymentByIdempotencyKeyRequest")
 @js.native
-class CancelPaymentByIdempotencyKeyRequest () extends StObject {
+open class CancelPaymentByIdempotencyKeyRequest () extends StObject {
   
   /**
     * The `idempotency_key` identifying the payment to be canceled.

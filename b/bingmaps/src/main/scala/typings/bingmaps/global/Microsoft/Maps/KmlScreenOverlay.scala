@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param htmlElement The new htmlElement to set for the overlay.
   * @param options The options to customize the screen overlay.
   */
-class KmlScreenOverlay ()
+open class KmlScreenOverlay ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.KmlScreenOverlay {
   def this(htmlElement: String) = this()

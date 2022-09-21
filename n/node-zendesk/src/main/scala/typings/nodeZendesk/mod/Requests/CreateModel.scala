@@ -52,7 +52,7 @@ object CreateModel {
     
     inline def setCollaboratorsUndefined: Self = StObject.set(x, "collaborators", js.undefined)
     
-    inline def setCollaboratorsVarargs(value: (Collaborator | String | ZendeskID)*): Self = StObject.set(x, "collaborators", js.Array(value :_*))
+    inline def setCollaboratorsVarargs(value: (Collaborator | String | ZendeskID)*): Self = StObject.set(x, "collaborators", js.Array(value*))
     
     inline def setComment(value: typings.nodeZendesk.mod.Requests.Comments.CreateModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object CreateModel {
     
     inline def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
     
-    inline def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value :_*))
+    inline def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value*))
     
     inline def setDue_at(value: String): Self = StObject.set(x, "due_at", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object CreateModel {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object ListFindingsResponse {
     
     inline def setFindingIdsUndefined: Self = StObject.set(x, "findingIds", js.undefined)
     
-    inline def setFindingIdsVarargs(value: string*): Self = StObject.set(x, "findingIds", js.Array(value :_*))
+    inline def setFindingIdsVarargs(value: string*): Self = StObject.set(x, "findingIds", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

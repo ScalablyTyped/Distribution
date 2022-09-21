@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ArmRelocator")
 @js.native
-class ArmRelocator protected ()
+open class ArmRelocator protected ()
   extends StObject
      with typings.fridaGum.ArmRelocator {
   /**

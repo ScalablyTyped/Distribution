@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_beta.Resource$Regions")
 @js.native
-class ResourceRegions protected ()
+open class ResourceRegions protected ()
   extends typings.googleapis.betaMod.computeBeta.ResourceRegions {
   def this(context: APIRequestContext) = this()
 }

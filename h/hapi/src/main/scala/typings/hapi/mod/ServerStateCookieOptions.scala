@@ -60,7 +60,7 @@ trait ServerStateCookieOptions extends StObject {
   var isSecure: js.UndefOr[Boolean] = js.undefined
   
   /** used by proxy plugins (e.g. h2o2). */
-  var passThrough: js.UndefOr[js.Any] = js.undefined
+  var passThrough: js.UndefOr[Any] = js.undefined
   
   /** password used for 'iron' encoding (must be at least 32 characters long). */
   var password: js.UndefOr[String] = js.undefined
@@ -129,7 +129,7 @@ object ServerStateCookieOptions {
     
     inline def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
     
-    inline def setPassThrough(value: js.Any): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
+    inline def setPassThrough(value: Any): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
     
     inline def setPassThroughUndefined: Self = StObject.set(x, "passThrough", js.undefined)
     

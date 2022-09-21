@@ -2,10 +2,10 @@ package typings.swaggerUiExpress
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.serveStatic.mod.ServeStaticOptions
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateHTML(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateHTML")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def generateHTML(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateHTML")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   inline def generateHTML(
     swaggerDoc: js.UndefOr[JsonObject],
     opts: js.UndefOr[SwaggerUiOptions],
@@ -26,22 +38,158 @@ object mod {
     swaggerUrl: js.UndefOr[String],
     customSiteTitle: js.UndefOr[String]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateHTML")(swaggerDoc.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], options.asInstanceOf[js.Any], customCss.asInstanceOf[js.Any], customfavIcon.asInstanceOf[js.Any], swaggerUrl.asInstanceOf[js.Any], customSiteTitle.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def generateHTML(swaggerDoc: Unit, isExplorer: Boolean): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateHTML")(swaggerDoc.asInstanceOf[js.Any], isExplorer.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def generateHTML(swaggerDoc: JsonObject): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateHTML")(swaggerDoc.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def generateHTML(swaggerDoc: JsonObject, isExplorer: Boolean): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateHTML")(swaggerDoc.asInstanceOf[js.Any], isExplorer.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def generateHTML(swaggerDoc: Unit, isExplorer: Boolean): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateHTML")(swaggerDoc.asInstanceOf[js.Any], isExplorer.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def generateHTML(swaggerDoc: JsonObject): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateHTML")(swaggerDoc.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def generateHTML(swaggerDoc: JsonObject, isExplorer: Boolean): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateHTML")(swaggerDoc.asInstanceOf[js.Any], isExplorer.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("swagger-ui-express", "serve")
   @js.native
-  val serve: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
+  val serve: js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = js.native
   
-  inline def serveFiles(): js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("serveFiles")().asInstanceOf[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  inline def serveFiles(swaggerDoc: Unit, opts: SwaggerUiOptions): js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = (^.asInstanceOf[js.Dynamic].applyDynamic("serveFiles")(swaggerDoc.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  inline def serveFiles(swaggerDoc: JsonObject): js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("serveFiles")(swaggerDoc.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  inline def serveFiles(swaggerDoc: JsonObject, opts: SwaggerUiOptions): js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = (^.asInstanceOf[js.Dynamic].applyDynamic("serveFiles")(swaggerDoc.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def serveFiles(): js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("serveFiles")().asInstanceOf[js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
+  inline def serveFiles(swaggerDoc: Unit, opts: SwaggerUiOptions): js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("serveFiles")(swaggerDoc.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
+  inline def serveFiles(swaggerDoc: JsonObject): js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("serveFiles")(swaggerDoc.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
+  inline def serveFiles(swaggerDoc: JsonObject, opts: SwaggerUiOptions): js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("serveFiles")(swaggerDoc.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
   
-  inline def serveWithOptions(options: ServeStaticOptions[ServerResponse]): js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("serveWithOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def serveWithOptions(options: ServeStaticOptions[ServerResponse[IncomingMessage]]): js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("serveWithOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
   
-  inline def setup(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def setup(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   inline def setup(
     swaggerDoc: js.UndefOr[JsonObject],
     opts: js.UndefOr[SwaggerUiOptions],
@@ -50,14 +198,62 @@ object mod {
     customfavIcon: js.UndefOr[String],
     swaggerUrl: js.UndefOr[String],
     customSiteTitle: js.UndefOr[String]
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(swaggerDoc.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], options.asInstanceOf[js.Any], customCss.asInstanceOf[js.Any], customfavIcon.asInstanceOf[js.Any], swaggerUrl.asInstanceOf[js.Any], customSiteTitle.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def setup(swaggerDoc: Unit, isExplorer: Boolean): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(swaggerDoc.asInstanceOf[js.Any], isExplorer.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def setup(swaggerDoc: JsonObject): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(swaggerDoc.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def setup(swaggerDoc: JsonObject, isExplorer: Boolean): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(swaggerDoc.asInstanceOf[js.Any], isExplorer.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(swaggerDoc.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], options.asInstanceOf[js.Any], customCss.asInstanceOf[js.Any], customfavIcon.asInstanceOf[js.Any], swaggerUrl.asInstanceOf[js.Any], customSiteTitle.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def setup(swaggerDoc: Unit, isExplorer: Boolean): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(swaggerDoc.asInstanceOf[js.Any], isExplorer.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def setup(swaggerDoc: JsonObject): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(swaggerDoc.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def setup(swaggerDoc: JsonObject, isExplorer: Boolean): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(swaggerDoc.asInstanceOf[js.Any], isExplorer.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  type JsonObject = StringDictionary[js.Any]
+  type JsonObject = StringDictionary[Any]
   
-  type SwaggerOptions = StringDictionary[js.Any]
+  type SwaggerOptions = StringDictionary[Any]
   
   trait SwaggerUiOptions extends StObject {
     
@@ -130,7 +326,7 @@ object mod {
       
       inline def setSwaggerUrlsUndefined: Self = StObject.set(x, "swaggerUrls", js.undefined)
       
-      inline def setSwaggerUrlsVarargs(value: String*): Self = StObject.set(x, "swaggerUrls", js.Array(value :_*))
+      inline def setSwaggerUrlsVarargs(value: String*): Self = StObject.set(x, "swaggerUrls", js.Array(value*))
     }
   }
 }

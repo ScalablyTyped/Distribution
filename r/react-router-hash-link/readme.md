@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-router-hash-link
 
-Typings are for version 1.2
+Typings are for version 2.4
 
 ## Library description:
 Hash link scroll functionality for React Router v4/5
@@ -10,10 +10,10 @@ Hash link scroll functionality for React Router v4/5
 | ------------------ | :-------------: |
 | Full name          | react-router-hash-link |
 | Keywords           | react, react-router, link, hash-link, scroll |
-| # releases         | 8 |
-| # dependents       | 38 |
-| # downloads        | 3734729 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 656492.6666666666 |
+| # stars            | 649.0 |
 
 ## Links
 - [Homepage](https://github.com/rafgraph/react-router-hash-link#readme)

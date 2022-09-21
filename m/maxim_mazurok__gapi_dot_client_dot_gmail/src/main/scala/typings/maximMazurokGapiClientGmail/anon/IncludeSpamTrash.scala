@@ -28,7 +28,7 @@ trait IncludeSpamTrash extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Maximum number of drafts to return. */
+  /** Maximum number of drafts to return. This field defaults to 100. The maximum allowed value for this field is 500. */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */

@@ -8,5 +8,5 @@ object deregisterStreamConsumerInputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/DeregisterStreamConsumerInput", "DeregisterStreamConsumerInput")
   @js.native
-  val DeregisterStreamConsumerInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeregisterStreamConsumerInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

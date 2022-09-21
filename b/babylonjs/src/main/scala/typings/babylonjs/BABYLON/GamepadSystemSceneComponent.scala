@@ -8,12 +8,12 @@ trait GamepadSystemSceneComponent
   extends StObject
      with ISceneComponent {
   
-  /* private */ var _beforeCameraUpdate: js.Any
+  /* private */ var _beforeCameraUpdate: Any
 }
 object GamepadSystemSceneComponent {
   
   inline def apply(
-    _beforeCameraUpdate: js.Any,
+    _beforeCameraUpdate: Any,
     dispose: () => Unit,
     name: String,
     rebuild: () => Unit,
@@ -26,6 +26,6 @@ object GamepadSystemSceneComponent {
   
   extension [Self <: GamepadSystemSceneComponent](x: Self) {
     
-    inline def set_beforeCameraUpdate(value: js.Any): Self = StObject.set(x, "_beforeCameraUpdate", value.asInstanceOf[js.Any])
+    inline def set_beforeCameraUpdate(value: Any): Self = StObject.set(x, "_beforeCameraUpdate", value.asInstanceOf[js.Any])
   }
 }

@@ -21,8 +21,8 @@ trait SlicerCacheLevels extends StObject {
   def Item(Level: String): SlicerCacheLevel = js.native
   def Item(Level: Double): SlicerCacheLevel = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(): SlicerCacheLevel = js.native
-  def _Default(Level: js.Any): SlicerCacheLevel = js.native
+  def _Default(Level: Any): SlicerCacheLevel = js.native
 }

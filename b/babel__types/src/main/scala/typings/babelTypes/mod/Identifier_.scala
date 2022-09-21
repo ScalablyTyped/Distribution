@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with Expression
      with LVal
      with PatternLike
+     with Standardized
      with TSEntityName {
   
   var decorators: js.Array[Decorator_] | Null
@@ -39,7 +40,7 @@ object Identifier_ {
     
     inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
-    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait ListAvailableManagementCidrRangesResult extends StObject {
   var ManagementCidrRanges: js.UndefOr[DedicatedTenancyCidrRangeList] = js.undefined
   
   /**
-    * The token to use to retrieve the next set of results, or null if no more results are available.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListAvailableManagementCidrRangesResult {
     
     inline def setManagementCidrRangesUndefined: Self = StObject.set(x, "ManagementCidrRanges", js.undefined)
     
-    inline def setManagementCidrRangesVarargs(value: DedicatedTenancyManagementCidrRange*): Self = StObject.set(x, "ManagementCidrRanges", js.Array(value :_*))
+    inline def setManagementCidrRangesVarargs(value: DedicatedTenancyManagementCidrRange*): Self = StObject.set(x, "ManagementCidrRanges", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

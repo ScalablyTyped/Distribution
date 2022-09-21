@@ -14,7 +14,7 @@ trait CloudFormationStackRecord extends StObject {
   /**
     * The date when the CloudFormation stack record was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of objects describing the destination service, which is AWS CloudFormation, and the Amazon Resource Name (ARN) of the AWS CloudFormation stack.
@@ -22,7 +22,7 @@ trait CloudFormationStackRecord extends StObject {
   var destinationInfo: js.UndefOr[DestinationInfo] = js.undefined
   
   /**
-    * A list of objects describing the Availability Zone and AWS Region of the CloudFormation stack record.
+    * A list of objects describing the Availability Zone and Amazon Web Services Region of the CloudFormation stack record.
     */
   var location: js.UndefOr[ResourceLocation] = js.undefined
   
@@ -59,7 +59,7 @@ object CloudFormationStackRecord {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -83,7 +83,7 @@ object CloudFormationStackRecord {
     
     inline def setSourceInfoUndefined: Self = StObject.set(x, "sourceInfo", js.undefined)
     
-    inline def setSourceInfoVarargs(value: CloudFormationStackRecordSourceInfo*): Self = StObject.set(x, "sourceInfo", js.Array(value :_*))
+    inline def setSourceInfoVarargs(value: CloudFormationStackRecordSourceInfo*): Self = StObject.set(x, "sourceInfo", js.Array(value*))
     
     inline def setState(value: RecordState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

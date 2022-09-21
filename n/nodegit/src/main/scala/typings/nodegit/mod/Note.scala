@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Note")
 @js.native
-class Note ()
+open class Note ()
   extends typings.nodegit.noteMod.Note
 /* static members */
 object Note {
@@ -29,12 +29,12 @@ object Note {
     repo: typings.nodegit.repositoryMod.Repository,
     notesRef: String,
     noteCb: js.Function,
-    payload: js.Any
+    payload: Any
   ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any], notesRef.asInstanceOf[js.Any], noteCb.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  inline def iteratorNew(repo: typings.nodegit.repositoryMod.Repository, notesRef: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorNew")(repo.asInstanceOf[js.Any], notesRef.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def iteratorNew(repo: typings.nodegit.repositoryMod.Repository, notesRef: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorNew")(repo.asInstanceOf[js.Any], notesRef.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def next(noteId: typings.nodegit.oidMod.Oid, annotatedId: typings.nodegit.oidMod.Oid, it: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(noteId.asInstanceOf[js.Any], annotatedId.asInstanceOf[js.Any], it.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def next(noteId: typings.nodegit.oidMod.Oid, annotatedId: typings.nodegit.oidMod.Oid, it: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(noteId.asInstanceOf[js.Any], annotatedId.asInstanceOf[js.Any], it.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def read(repo: typings.nodegit.repositoryMod.Repository, notesRef: String, oid: typings.nodegit.oidMod.Oid): js.Promise[typings.nodegit.noteMod.Note] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(repo.asInstanceOf[js.Any], notesRef.asInstanceOf[js.Any], oid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.noteMod.Note]]
   

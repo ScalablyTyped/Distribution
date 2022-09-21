@@ -24,13 +24,23 @@ object mod {
     
     def evict(): this.type = js.native
     
+    var first: T | Null = js.native
+    
     def get(key: String): js.UndefOr[T] = js.native
     
     def has(key: String): Boolean = js.native
     
     def keys(): js.Array[String] = js.native
     
+    var last: T | Null = js.native
+    
+    var max: Double = js.native
+    
     def set(key: String, value: T): this.type = js.native
     def set(key: String, value: T, bypass: Boolean): this.type = js.native
+    
+    var size: Double = js.native
+    
+    var ttl: Double = js.native
   }
 }

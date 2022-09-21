@@ -1,0 +1,15 @@
+package typings.typescriptNn5FuAjk.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.PlusPlusToken
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.MinusMinusToken
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.PlusToken
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.MinusToken
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.TildeToken
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ExclamationToken
+*/
+trait PrefixUnaryOperator extends StObject

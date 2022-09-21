@@ -1,10 +1,7 @@
 package typings.dynamodb
 
-import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.dynamodb.anon.Dynamodb
 import typings.dynamodb.anon.ReadCapacity
-import typings.dynamodb.anon.TypeofModel
 import typings.dynamodb.callbackMod.Callback
 import typings.dynamodb.dynamoDBMod.DocumentClient
 import typings.dynamodb.dynamoDBMod.DynamoDB
@@ -13,14 +10,6 @@ import typings.dynamodb.dynamoDBMod.Projection
 import typings.dynamodb.dynamodbStrings.global
 import typings.dynamodb.dynamodbStrings.local
 import typings.dynamodb.modelMod.Model
-import typings.dynamodb.modelMod.Model.CreateOperation
-import typings.dynamodb.modelMod.Model.DestroyOperation
-import typings.dynamodb.modelMod.Model.GetItemsOperation
-import typings.dynamodb.modelMod.Model.GetOperation
-import typings.dynamodb.modelMod.Model.UpdateOperation
-import typings.dynamodb.queryMod.Query
-import typings.dynamodb.scanMod.ParallelScan
-import typings.dynamodb.scanMod.Scan
 import typings.joi.mod.AnySchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,89 +23,23 @@ object mod {
   
   @JSImport("dynamodb", "AWS")
   @js.native
-  val AWS: js.Any = js.native
+  val AWS: Any = js.native
   
   @JSImport("dynamodb", "Model")
   @js.native
-  class Model_ protected () extends Model {
-    def this(attrs: js.Any) = this()
-  }
-  object Model_ {
-    
-    @JSImport("dynamodb", "Model")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("dynamodb", "Model.after")
-    @js.native
-    val after: js.Any = js.native
-    
-    inline def batchGetItems(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    inline def batchGetItems(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    
-    @JSImport("dynamodb", "Model.before")
-    @js.native
-    val before: js.Any = js.native
-    
-    inline def config(config: Dynamodb): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    
-    @JSImport("dynamodb", "Model.create")
-    @js.native
-    val create: CreateOperation = js.native
-    
-    inline def createTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    inline def createTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    
-    inline def deleteTable(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")().asInstanceOf[js.Promise[js.Any]]
-    inline def deleteTable(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def describeTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    inline def describeTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    
-    @JSImport("dynamodb", "Model.destroy")
-    @js.native
-    val destroy: DestroyOperation = js.native
-    
-    @JSImport("dynamodb", "Model.get")
-    @js.native
-    val get: GetOperation = js.native
-    
-    @JSImport("dynamodb", "Model.getItems")
-    @js.native
-    val getItems: GetItemsOperation = js.native
-    
-    @JSImport("dynamodb", "Model.itemFactory")
-    @js.native
-    val itemFactory: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Model */ js.Any = js.native
-    
-    @JSImport("dynamodb", "Model.log")
-    @js.native
-    val log: typings.bunyan.mod.^ = js.native
-    
-    inline def parallelScan(totalSegments: Double): ParallelScan = ^.asInstanceOf[js.Dynamic].applyDynamic("parallelScan")(totalSegments.asInstanceOf[js.Any]).asInstanceOf[ParallelScan]
-    
-    inline def query(hashKey: String): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(hashKey.asInstanceOf[js.Any]).asInstanceOf[Query]
-    
-    inline def scan(): Scan = ^.asInstanceOf[js.Dynamic].applyDynamic("scan")().asInstanceOf[Scan]
-    
-    inline def tableName(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    inline def tableName(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    @JSImport("dynamodb", "Model.update")
-    @js.native
-    val update: UpdateOperation = js.native
-    
-    inline def updateTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    inline def updateTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+  open class Model_[T] protected () extends Model[T] {
+    def this(attrs: T) = this()
   }
   
-  inline def Set(data: js.Array[js.Any], `type`: String): DynamoDbSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Set")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DynamoDbSet]
+  inline def Set(data: js.Array[Any], `type`: String): DynamoDbSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Set")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DynamoDbSet]
   
   @JSImport("dynamodb", "createTables")
   @js.native
   val createTables: CreateTables_ = js.native
   
-  inline def define(name: String, config: DefineConfig): TypeofModel & (Instantiable1[/* attrs */ js.Any, Model]) = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[TypeofModel & (Instantiable1[/* attrs */ js.Any, Model])]
+  inline def define(name: String, config: DefineConfig[Any]): Model[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Model[Any]]
+  
+  inline def define_T[T](name: String, config: DefineConfig[T]): Model[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Model[T]]
   
   inline def documentClient(): DocumentClient = ^.asInstanceOf[js.Dynamic].applyDynamic("documentClient")().asInstanceOf[DocumentClient]
   inline def documentClient(docClient: DocumentClient): DocumentClient = ^.asInstanceOf[js.Dynamic].applyDynamic("documentClient")(docClient.asInstanceOf[js.Any]).asInstanceOf[DocumentClient]
@@ -128,8 +51,11 @@ object mod {
   @js.native
   val log: typings.bunyan.mod.^ = js.native
   
-  inline def model(name: String): TypeofModel & (Instantiable1[/* attrs */ js.Any, Model]) = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofModel & (Instantiable1[/* attrs */ js.Any, Model])]
-  inline def model(name: String, model: Model): TypeofModel & (Instantiable1[/* attrs */ js.Any, Model]) = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[TypeofModel & (Instantiable1[/* attrs */ js.Any, Model])]
+  inline def model(name: String): Model[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[Model[Any]]
+  inline def model(name: String, model: Model[Any]): Model[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Model[Any]]
+  
+  inline def model_T[T](name: String): Model[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[Model[T]]
+  inline def model_T[T](name: String, model: Model[T]): Model[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Model[T]]
   
   inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
@@ -139,15 +65,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def binarySet(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("binarySet")().asInstanceOf[AnySchema]
+    inline def binarySet(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("binarySet")().asInstanceOf[AnySchema[Any]]
     
-    inline def numberSet(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("numberSet")().asInstanceOf[AnySchema]
+    inline def numberSet(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("numberSet")().asInstanceOf[AnySchema[Any]]
     
-    inline def stringSet(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("stringSet")().asInstanceOf[AnySchema]
+    inline def stringSet(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringSet")().asInstanceOf[AnySchema[Any]]
     
-    inline def timeUUID(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUUID")().asInstanceOf[AnySchema]
+    inline def timeUUID(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUUID")().asInstanceOf[AnySchema[Any]]
     
-    inline def uuid(): AnySchema = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[AnySchema]
+    inline def uuid(): AnySchema[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[AnySchema[Any]]
   }
   
   type CreateTablesOptions = StringDictionary[ReadCapacity]
@@ -155,13 +81,13 @@ object mod {
   @js.native
   trait CreateTables_ extends StObject {
     
-    def apply(): js.Promise[js.Any] = js.native
-    def apply(callback: Callback): Unit = js.native
-    def apply(options: CreateTablesOptions): js.Promise[js.Any] = js.native
-    def apply(options: CreateTablesOptions, callback: Callback): Unit = js.native
+    def apply(): js.Promise[Any] = js.native
+    def apply(callback: Callback[Any]): Unit = js.native
+    def apply(options: CreateTablesOptions): js.Promise[Any] = js.native
+    def apply(options: CreateTablesOptions, callback: Callback[Any]): Unit = js.native
   }
   
-  trait DefineConfig extends StObject {
+  trait DefineConfig[T] extends StObject {
     
     var createdAt: js.UndefOr[Boolean | String] = js.undefined
     
@@ -171,7 +97,7 @@ object mod {
     
     var rangeKey: js.UndefOr[String] = js.undefined
     
-    var schema: js.UndefOr[StringDictionary[AnySchema | StringDictionary[AnySchema]]] = js.undefined
+    var schema: js.UndefOr[StringDictionary[AnySchema[Any] | StringDictionary[AnySchema[Any]]]] = js.undefined
     
     var tableName: js.UndefOr[String | js.Function0[String]] = js.undefined
     
@@ -181,12 +107,12 @@ object mod {
   }
   object DefineConfig {
     
-    inline def apply(hashKey: String): DefineConfig = {
+    inline def apply[T](hashKey: String): DefineConfig[T] = {
       val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DefineConfig]
+      __obj.asInstanceOf[DefineConfig[T]]
     }
     
-    extension [Self <: DefineConfig](x: Self) {
+    extension [Self <: DefineConfig[?], T](x: Self & DefineConfig[T]) {
       
       inline def setCreatedAt(value: Boolean | String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -198,13 +124,13 @@ object mod {
       
       inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
       
-      inline def setIndexesVarargs(value: IndexDefinition*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+      inline def setIndexesVarargs(value: IndexDefinition*): Self = StObject.set(x, "indexes", js.Array(value*))
       
       inline def setRangeKey(value: String): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
       
       inline def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
       
-      inline def setSchema(value: StringDictionary[AnySchema | StringDictionary[AnySchema]]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: StringDictionary[AnySchema[Any] | StringDictionary[AnySchema[Any]]]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       

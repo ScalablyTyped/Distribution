@@ -19,8 +19,8 @@ trait ColumnsMethodsModel extends StObject {
     * @param cellSelector Cell selector.
     * @param Option used to specify how the cells should be ordered, and if paging or filtering in the table should be taken into account.
     */
-  def apply(columnSelector: js.Any): ColumnsMethods = js.native
-  def apply(columnSelector: js.Any, modifier: ObjectSelectorModifier): ColumnsMethods = js.native
+  def apply(columnSelector: Any): ColumnsMethods = js.native
+  def apply(columnSelector: Any, modifier: ObjectSelectorModifier): ColumnsMethods = js.native
   def apply(modifier: ObjectSelectorModifier): ColumnsMethods = js.native
   
   /**

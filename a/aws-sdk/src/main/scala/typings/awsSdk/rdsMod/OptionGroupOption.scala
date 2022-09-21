@@ -72,17 +72,17 @@ trait OptionGroupOption extends StObject {
   var PortRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If true, you must enable the Auto Minor Version Upgrade setting for your DB instance before you can use this option. You can enable Auto Minor Version Upgrade when you first create your DB instance, or by modifying your DB instance later. 
+    * If true, you must enable the Auto Minor Version Upgrade setting for your DB instance before you can use this option. You can enable Auto Minor Version Upgrade when you first create your DB instance, or by modifying your DB instance later.
     */
   var RequiresAutoMinorEngineVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If true, you can change the option to an earlier version of the option. This only applies to options that have different versions available. 
+    * If true, you can change the option to an earlier version of the option. This only applies to options that have different versions available.
     */
   var SupportsOptionVersionDowngrade: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * If true, you can only use this option with a DB instance that is in a VPC. 
+    * If true, you can only use this option with a DB instance that is in a VPC.
     */
   var VpcOnly: js.UndefOr[Boolean] = js.undefined
 }
@@ -123,25 +123,25 @@ object OptionGroupOption {
     
     inline def setOptionGroupOptionSettingsUndefined: Self = StObject.set(x, "OptionGroupOptionSettings", js.undefined)
     
-    inline def setOptionGroupOptionSettingsVarargs(value: OptionGroupOptionSetting*): Self = StObject.set(x, "OptionGroupOptionSettings", js.Array(value :_*))
+    inline def setOptionGroupOptionSettingsVarargs(value: OptionGroupOptionSetting*): Self = StObject.set(x, "OptionGroupOptionSettings", js.Array(value*))
     
     inline def setOptionGroupOptionVersions(value: OptionGroupOptionVersionsList): Self = StObject.set(x, "OptionGroupOptionVersions", value.asInstanceOf[js.Any])
     
     inline def setOptionGroupOptionVersionsUndefined: Self = StObject.set(x, "OptionGroupOptionVersions", js.undefined)
     
-    inline def setOptionGroupOptionVersionsVarargs(value: OptionVersion*): Self = StObject.set(x, "OptionGroupOptionVersions", js.Array(value :_*))
+    inline def setOptionGroupOptionVersionsVarargs(value: OptionVersion*): Self = StObject.set(x, "OptionGroupOptionVersions", js.Array(value*))
     
     inline def setOptionsConflictsWith(value: OptionsConflictsWith): Self = StObject.set(x, "OptionsConflictsWith", value.asInstanceOf[js.Any])
     
     inline def setOptionsConflictsWithUndefined: Self = StObject.set(x, "OptionsConflictsWith", js.undefined)
     
-    inline def setOptionsConflictsWithVarargs(value: String*): Self = StObject.set(x, "OptionsConflictsWith", js.Array(value :_*))
+    inline def setOptionsConflictsWithVarargs(value: String*): Self = StObject.set(x, "OptionsConflictsWith", js.Array(value*))
     
     inline def setOptionsDependedOn(value: OptionsDependedOn): Self = StObject.set(x, "OptionsDependedOn", value.asInstanceOf[js.Any])
     
     inline def setOptionsDependedOnUndefined: Self = StObject.set(x, "OptionsDependedOn", js.undefined)
     
-    inline def setOptionsDependedOnVarargs(value: String*): Self = StObject.set(x, "OptionsDependedOn", js.Array(value :_*))
+    inline def setOptionsDependedOnVarargs(value: String*): Self = StObject.set(x, "OptionsDependedOn", js.Array(value*))
     
     inline def setPermanent(value: Boolean): Self = StObject.set(x, "Permanent", value.asInstanceOf[js.Any])
     

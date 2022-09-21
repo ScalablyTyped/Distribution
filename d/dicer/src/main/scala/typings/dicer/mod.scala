@@ -13,10 +13,9 @@ import typings.dicer.dicerStrings.preamble
 import typings.dicer.dicerStrings.readable
 import typings.dicer.dicerStrings.trailer
 import typings.dicer.dicerStrings.unpipe
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ object mod {
     */
   @JSImport("dicer", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Dicer {
+  open class ^ protected () extends Dicer {
     /**
       * Creates and returns a new Dicer instance with the following valid config settings:
       *
@@ -104,7 +103,7 @@ object mod {
     @JSName("addListener")
     def addListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
@@ -123,7 +122,7 @@ object mod {
     @JSName("on")
     def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
@@ -142,7 +141,7 @@ object mod {
     @JSName("once")
     def once_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("once")
     def once_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
@@ -161,7 +160,7 @@ object mod {
     @JSName("prependListener")
     def prependListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
@@ -180,7 +179,7 @@ object mod {
     @JSName("prependOnceListener")
     def prependOnceListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
@@ -199,7 +198,7 @@ object mod {
     @JSName("removeListener")
     def removeListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
@@ -238,7 +237,7 @@ object mod {
     @JSName("addListener")
     def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
     @JSName("addListener")
@@ -251,7 +250,7 @@ object mod {
     @JSName("on")
     def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
     @JSName("on")
@@ -264,7 +263,7 @@ object mod {
     @JSName("once")
     def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("once")
     def once_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
     @JSName("once")
@@ -277,7 +276,7 @@ object mod {
     @JSName("prependListener")
     def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
     @JSName("prependListener")
@@ -290,7 +289,7 @@ object mod {
     @JSName("prependOnceListener")
     def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
     @JSName("prependOnceListener")
@@ -303,7 +302,7 @@ object mod {
     @JSName("removeListener")
     def removeListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_header(event: header, listener: js.Function1[/* header */ js.Object, Unit]): this.type = js.native
     @JSName("removeListener")

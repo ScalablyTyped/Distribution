@@ -1,7 +1,7 @@
 
 # Scala.js typings for mustache
 
-Typings are for version 4.0.0
+Typings are for version 4.2
 
 ## Library description:
 Logic-less {{mustache}} templates with JavaScript
@@ -10,10 +10,10 @@ Logic-less {{mustache}} templates with JavaScript
 | ------------------ | :-------------: |
 | Full name          | mustache |
 | Keywords           | mustache, template, templates, ejs |
-| # releases         | 9 |
-| # dependents       | 2727 |
-| # downloads        | 84525736 |
-| # stars            | 62 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1732800333333334E7 |
+| # stars            | 15487.0 |
 
 ## Links
 - [Homepage](https://github.com/janl/mustache.js)

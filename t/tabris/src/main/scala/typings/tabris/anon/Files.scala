@@ -28,7 +28,7 @@ object Files {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

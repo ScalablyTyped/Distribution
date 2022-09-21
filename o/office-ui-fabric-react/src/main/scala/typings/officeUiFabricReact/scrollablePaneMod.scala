@@ -18,7 +18,7 @@ object scrollablePaneMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ScrollablePane", "ScrollablePaneBase")
   @js.native
-  class ScrollablePaneBase protected ()
+  open class ScrollablePaneBase protected ()
     extends typings.officeUiFabricReact.scrollablePaneBaseMod.ScrollablePaneBase {
     def this(props: IScrollablePaneProps) = this()
   }

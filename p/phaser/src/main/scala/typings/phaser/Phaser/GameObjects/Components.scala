@@ -1,21 +1,22 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.Phaser.Animations.AnimationFrame
-import typings.phaser.Phaser.Animations.AnimationManager
 import typings.phaser.Phaser.BlendModes
+import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Curves.Path
 import typings.phaser.Phaser.Display.Masks.BitmapMask
 import typings.phaser.Phaser.Display.Masks.GeometryMask
 import typings.phaser.Phaser.Geom.Point
 import typings.phaser.Phaser.Math.Vector2
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.PostFXPipeline
 import typings.phaser.Phaser.Renderer.WebGL.WebGLPipeline
 import typings.phaser.Phaser.Textures.CanvasTexture
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Types.GameObjects.PathFollower.PathConfig
+import typings.phaser.Phaser.Types.Math.Vector2Like
+import typings.phaser.Phaser.Types.Math.Vector3Like
+import typings.phaser.Phaser.Types.Math.Vector4Like
 import typings.phaser.Phaser.Types.Tweens.NumberTweenBuilderConfig
-import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,371 +125,6 @@ object Components {
       */
     def setAlpha(): this.type = js.native
     def setAlpha(value: Double): this.type = js.native
-  }
-  
-  @js.native
-  trait Animation extends StObject {
-    
-    /**
-      * Load an Animation and fires 'onStartEvent' event, extracted from 'play' method.
-      * @param key The string-based key of the animation to play, as defined previously in the Animation Manager.
-      * @param startFrame Optionally start the animation playing from this frame index. Default 0.
-      */
-    def _startAnimation(key: String): GameObject = js.native
-    def _startAnimation(key: String, startFrame: integer): GameObject = js.native
-    
-    /**
-      * Internal time overflow accumulator.
-      */
-    var accumulator: Double = js.native
-    
-    /**
-      * A reference to the global Animation Manager.
-      */
-    var animationManager: AnimationManager = js.native
-    
-    /**
-      * Sets an animation to be played immediately after the current one completes.
-      * 
-      * The current animation must enter a 'completed' state for this to happen, i.e. finish all of its repeats, delays, etc, or have the `stop` method called directly on it.
-      * 
-      * An animation set to repeat forever will never enter a completed state.
-      * 
-      * You can chain a new animation at any point, including before the current one starts playing, during it, or when it ends (via its `animationcomplete` callback).
-      * Chained animations are specific to a Game Object, meaning different Game Objects can have different chained animations without impacting the global animation they're playing.
-      * 
-      * Call this method with no arguments to reset the chained animation.
-      * @param key The string-based key of the animation to play next, as defined previously in the Animation Manager. Or an Animation instance.
-      */
-    def chain(): GameObject = js.native
-    def chain(key: String): GameObject = js.native
-    def chain(key: typings.phaser.Phaser.Animations.Animation): GameObject = js.native
-    
-    /**
-      * The current Animation loaded into this Animation Controller.
-      */
-    var currentAnim: typings.phaser.Phaser.Animations.Animation = js.native
-    
-    /**
-      * The current AnimationFrame being displayed by this Animation Controller.
-      */
-    var currentFrame: AnimationFrame = js.native
-    
-    /**
-      * Waits for the specified delay, in milliseconds, then starts playback of the requested animation.
-      * @param delay The delay, in milliseconds, to wait before starting the animation playing.
-      * @param key The key of the animation to play.
-      * @param startFrame The frame of the animation to start from. Default 0.
-      */
-    def delayedPlay(delay: integer, key: String): GameObject = js.native
-    def delayedPlay(delay: integer, key: String, startFrame: integer): GameObject = js.native
-    
-    /**
-      * Destroy this Animation component.
-      * 
-      * Unregisters event listeners and cleans up its references.
-      */
-    def destroy(): Unit = js.native
-    
-    /**
-      * How long the animation should play for, in milliseconds.
-      * If the `frameRate` property has been set then it overrides this value,
-      * otherwise the `frameRate` is derived from `duration`.
-      */
-    var duration: Double = js.native
-    
-    /**
-      * Will the playhead move forwards (`true`) or in reverse (`false`).
-      */
-    var forward: Boolean = js.native
-    
-    /**
-      * The frame rate of playback in frames per second.
-      * The default is 24 if the `duration` property is `null`.
-      */
-    var frameRate: Double = js.native
-    
-    /**
-      * Returns the key of the animation currently loaded into this component.
-      */
-    def getCurrentKey(): String = js.native
-    
-    /**
-      * Gets the amount of time, in milliseconds that the animation will be delayed before starting playback.
-      */
-    def getDelay(): integer = js.native
-    
-    /**
-      * Returns a value between 0 and 1 indicating how far this animation is through, ignoring repeats and yoyos.
-      * If the animation has a non-zero repeat defined, `getProgress` and `getTotalProgress` will be different
-      * because `getProgress` doesn't include any repeats or repeat delays, whereas `getTotalProgress` does.
-      */
-    def getProgress(): Double = js.native
-    
-    /**
-      * Gets the number of times that the animation will repeat
-      * after its first iteration. For example, if returns 1, the animation will
-      * play a total of twice (the initial play plus 1 repeat).
-      * A value of -1 means the animation will repeat indefinitely.
-      */
-    def getRepeat(): integer = js.native
-    
-    /**
-      * Gets the amount of delay between repeats, if any.
-      */
-    def getRepeatDelay(): Double = js.native
-    
-    /**
-      * Gets the Time Scale factor.
-      */
-    def getTimeScale(): Double = js.native
-    
-    /**
-      * Returns the total number of frames in this animation.
-      */
-    def getTotalFrames(): integer = js.native
-    
-    /**
-      * Gets if the current Animation will yoyo when it reaches the end.
-      * A yoyo'ing animation will play through consecutively, and then reverse-play back to the start again.
-      */
-    def getYoyo(): Boolean = js.native
-    
-    /**
-      * `true` if the current animation is paused, otherwise `false`.
-      */
-    val isPaused: Boolean = js.native
-    
-    /**
-      * Is an animation currently playing or not?
-      */
-    var isPlaying: Boolean = js.native
-    
-    /**
-      * Internal method used to load an animation into this component.
-      * @param key The key of the animation to load.
-      * @param startFrame The start frame of the animation to load. Default 0.
-      */
-    def load(key: String): GameObject = js.native
-    def load(key: String, startFrame: integer): GameObject = js.native
-    
-    /**
-      * ms per frame, not including frame specific modifiers that may be present in the Animation data.
-      */
-    var msPerFrame: Double = js.native
-    
-    /**
-      * The key of the next Animation to be loaded into this Animation Controller when the current animation completes.
-      */
-    var nextAnim: String = js.native
-    
-    /**
-      * A queue of keys of the next Animations to be loaded into this Animation Controller when the current animation completes.
-      */
-    var nextAnimsQueue: js.Array[String] = js.native
-    
-    /**
-      * Advances the animation to the next frame, regardless of the time or animation state.
-      * If the animation is set to repeat, or yoyo, this will still take effect.
-      * 
-      * Calling this does not change the direction of the animation. I.e. if it was currently
-      * playing in reverse, calling this method doesn't then change the direction to forwards.
-      */
-    def nextFrame(): GameObject = js.native
-    
-    /**
-      * The time point at which the next animation frame will change.
-      */
-    var nextTick: Double = js.native
-    
-    /**
-      * The Game Object to which this animation controller belongs.
-      */
-    var parent: GameObject = js.native
-    
-    /**
-      * Pause the current animation and set the `isPlaying` property to `false`.
-      * You can optionally pause it at a specific frame.
-      * @param atFrame An optional frame to set after pausing the animation.
-      */
-    def pause(): GameObject = js.native
-    def pause(atFrame: AnimationFrame): GameObject = js.native
-    
-    /**
-      * An internal flag keeping track of pending repeats.
-      */
-    var pendingRepeat: Boolean = js.native
-    
-    /**
-      * Plays an Animation on a Game Object that has the Animation component, such as a Sprite.
-      * 
-      * Animations are stored in the global Animation Manager and are referenced by a unique string-based key.
-      * @param key The string-based key of the animation to play, as defined previously in the Animation Manager. Or an Animation instance.
-      * @param ignoreIfPlaying If this animation is already playing then ignore this call. Default false.
-      * @param startFrame Optionally start the animation playing from this frame index. Default 0.
-      */
-    def play(key: String): GameObject = js.native
-    def play(key: String, ignoreIfPlaying: Boolean): GameObject = js.native
-    def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
-    def play(key: String, ignoreIfPlaying: Unit, startFrame: integer): GameObject = js.native
-    def play(key: typings.phaser.Phaser.Animations.Animation): GameObject = js.native
-    def play(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean): GameObject = js.native
-    def play(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
-    def play(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Unit, startFrame: integer): GameObject = js.native
-    
-    /**
-      * Plays an Animation (in reverse mode) on the Game Object that owns this Animation Component.
-      * @param key The string-based key of the animation to play, as defined previously in the Animation Manager. Or an Animation instance.
-      * @param ignoreIfPlaying If an animation is already playing then ignore this call. Default false.
-      * @param startFrame Optionally start the animation playing from this frame index. Default 0.
-      */
-    def playReverse(key: String): GameObject = js.native
-    def playReverse(key: String, ignoreIfPlaying: Boolean): GameObject = js.native
-    def playReverse(key: String, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
-    def playReverse(key: String, ignoreIfPlaying: Unit, startFrame: integer): GameObject = js.native
-    def playReverse(key: typings.phaser.Phaser.Animations.Animation): GameObject = js.native
-    def playReverse(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean): GameObject = js.native
-    def playReverse(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
-    def playReverse(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Unit, startFrame: integer): GameObject = js.native
-    
-    /**
-      * Advances the animation to the previous frame, regardless of the time or animation state.
-      * If the animation is set to repeat, or yoyo, this will still take effect.
-      * 
-      * Calling this does not change the direction of the animation. I.e. if it was currently
-      * playing in forwards, calling this method doesn't then change the direction to backwards.
-      */
-    def previousFrame(): GameObject = js.native
-    
-    /**
-      * Handle the removal of an animation from the Animation Manager.
-      * @param key The key of the removed Animation.
-      * @param animation The removed Animation.
-      */
-    def remove(): Unit = js.native
-    def remove(key: String): Unit = js.native
-    def remove(key: String, animation: typings.phaser.Phaser.Animations.Animation): Unit = js.native
-    def remove(key: Unit, animation: typings.phaser.Phaser.Animations.Animation): Unit = js.native
-    
-    /**
-      * An internal counter keeping track of how many repeats are left to play.
-      */
-    var repeatCounter: Double = js.native
-    
-    /**
-      * Restarts the current animation from its beginning, optionally including its delay value.
-      * @param includeDelay Whether to include the delay value of the animation when restarting. Default false.
-      */
-    def restart(): GameObject = js.native
-    def restart(includeDelay: Boolean): GameObject = js.native
-    
-    /**
-      * Resumes playback of a paused animation and sets the `isPlaying` property to `true`.
-      * You can optionally tell it to start playback from a specific frame.
-      * @param fromFrame An optional frame to set before restarting playback.
-      */
-    def resume(): GameObject = js.native
-    def resume(fromFrame: AnimationFrame): GameObject = js.native
-    
-    /**
-      * Reverse the Animation that is already playing on the Game Object.
-      */
-    def reverse(): GameObject = js.native
-    
-    /**
-      * Sets the given Animation Frame as being the current frame
-      * and applies it to the parent Game Object, adjusting its size and origin as needed.
-      * @param animationFrame The Animation Frame to set as being current.
-      */
-    def setCurrentFrame(animationFrame: AnimationFrame): GameObject = js.native
-    
-    /**
-      * Sets the amount of time, in milliseconds, that the animation will be delayed before starting playback.
-      * @param value The amount of time, in milliseconds, to wait before starting playback. Default 0.
-      */
-    def setDelay(): GameObject = js.native
-    def setDelay(value: integer): GameObject = js.native
-    
-    /**
-      * Takes a value between 0 and 1 and uses it to set how far this animation is through playback.
-      * Does not factor in repeats or yoyos, but does handle playing forwards or backwards.
-      * @param value The progress value, between 0 and 1. Default 0.
-      */
-    def setProgress(): GameObject = js.native
-    def setProgress(value: Double): GameObject = js.native
-    
-    /**
-      * Sets the number of times that the animation should repeat
-      * after its first iteration. For example, if repeat is 1, the animation will
-      * play a total of twice (the initial play plus 1 repeat).
-      * To repeat indefinitely, use -1. repeat should always be an integer.
-      * @param value The number of times that the animation should repeat.
-      */
-    def setRepeat(value: integer): GameObject = js.native
-    
-    /**
-      * Sets the amount of time in seconds between repeats.
-      * For example, if `repeat` is 2 and `repeatDelay` is 10, the animation will play initially,
-      * then wait for 10 seconds before repeating, then play again, then wait another 10 seconds
-      * before doing its final repeat.
-      * @param value The delay to wait between repeats, in seconds.
-      */
-    def setRepeatDelay(value: Double): GameObject = js.native
-    
-    /**
-      * Sets the Time Scale factor, allowing you to make the animation go go faster or slower than default.
-      * Where 1 = normal speed (the default), 0.5 = half speed, 2 = double speed, etc.
-      * @param value The time scale factor, where 1 is no change, 0.5 is half speed, etc. Default 1.
-      */
-    def setTimeScale(): GameObject = js.native
-    def setTimeScale(value: Double): GameObject = js.native
-    
-    /**
-      * Sets if the current Animation will yoyo when it reaches the end.
-      * A yoyo'ing animation will play through consecutively, and then reverse-play back to the start again.
-      * @param value `true` if the animation should yoyo, `false` to not. Default false.
-      */
-    def setYoyo(): GameObject = js.native
-    def setYoyo(value: Boolean): GameObject = js.native
-    
-    /**
-      * Skip frames if the time lags, or always advanced anyway?
-      */
-    var skipMissedFrames: Boolean = js.native
-    
-    /**
-      * Immediately stops the current animation from playing and dispatches the `animationcomplete` event.
-      * 
-      * If no animation is set, no event will be dispatched.
-      * 
-      * If there is another animation queued (via the `chain` method) then it will start playing immediately.
-      */
-    def stop(): GameObject = js.native
-    
-    /**
-      * Stops the current animation from playing after the specified time delay, given in milliseconds.
-      * @param delay The number of milliseconds to wait before stopping this animation.
-      */
-    def stopAfterDelay(delay: integer): GameObject = js.native
-    
-    /**
-      * Stops the current animation from playing when it next sets the given frame.
-      * If this frame doesn't exist within the animation it will not stop it from playing.
-      * @param frame The frame to check before stopping this animation.
-      */
-    def stopOnFrame(frame: AnimationFrame): GameObject = js.native
-    
-    /**
-      * Stops the current animation from playing when it next repeats.
-      */
-    def stopOnRepeat(): GameObject = js.native
-    
-    /**
-      * The internal update loop for the Animation Component.
-      * @param time The current timestamp.
-      * @param delta The delta time, in ms, elapsed since the last frame.
-      */
-    def update(time: Double, delta: Double): Unit = js.native
   }
   
   /**
@@ -750,11 +386,11 @@ object Components {
       * Setting the depth will queue a depth sort event within the Scene.
       * @param value The depth of this Game Object.
       */
-    def setDepth(value: integer): this.type
+    def setDepth(value: Double): this.type
   }
   object Depth {
     
-    inline def apply(depth: Double, setDepth: integer => Depth): Depth = {
+    inline def apply(depth: Double, setDepth: Double => Depth): Depth = {
       val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], setDepth = js.Any.fromFunction1(setDepth))
       __obj.asInstanceOf[Depth]
     }
@@ -763,7 +399,7 @@ object Components {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      inline def setSetDepth(value: integer => Depth): Self = StObject.set(x, "setDepth", js.Any.fromFunction1(value))
+      inline def setSetDepth(value: Double => Depth): Self = StObject.set(x, "setDepth", js.Any.fromFunction1(value))
     }
   }
   
@@ -1002,6 +638,8 @@ object Components {
       * Creates and returns a Bitmap Mask. This mask can be used by any Game Object,
       * including this one.
       * 
+      * Note: Bitmap Masks only work on WebGL. Geometry Masks work on both WebGL and Canvas.
+      * 
       * To create the mask you need to pass in a reference to a renderable Game Object.
       * A renderable Game Object is one that uses a texture to render with, such as an
       * Image, Sprite, Render Texture or BitmapText.
@@ -1221,6 +859,8 @@ object Components {
     
     /**
       * The initial WebGL pipeline of this Game Object.
+      * 
+      * If you call `resetPipeline` on this Game Object, the pipeline is reset to this default.
       */
     var defaultPipeline: WebGLPipeline = js.native
     
@@ -1230,12 +870,26 @@ object Components {
     def getPipelineName(): String = js.native
     
     /**
-      * Sets the initial WebGL Pipeline of this Game Object.
-      * This should only be called during the instantiation of the Game Object.
-      * @param pipelineName The name of the pipeline to set on this Game Object. Defaults to the Texture Tint Pipeline. Default TextureTintPipeline.
+      * Gets a Post Pipeline instance from this Game Object, based on the given name, and returns it.
+      * @param pipeline The string-based name of the pipeline, or a pipeline class.
       */
-    def initPipeline(): Boolean = js.native
-    def initPipeline(pipelineName: String): Boolean = js.native
+    def getPostPipeline(pipeline: String): PostFXPipeline | js.Array[PostFXPipeline] = js.native
+    def getPostPipeline(pipeline: js.Function): PostFXPipeline | js.Array[PostFXPipeline] = js.native
+    def getPostPipeline(pipeline: PostFXPipeline): PostFXPipeline | js.Array[PostFXPipeline] = js.native
+    
+    /**
+      * Does this Game Object have any Post Pipelines set?
+      */
+    var hasPostPipeline: Boolean = js.native
+    
+    /**
+      * Sets the initial WebGL Pipeline of this Game Object.
+      * 
+      * This should only be called during the instantiation of the Game Object. After that, use `setPipeline`.
+      * @param pipeline Either the string-based name of the pipeline, or a pipeline instance to set.
+      */
+    def initPipeline(pipeline: String): Boolean = js.native
+    def initPipeline(pipeline: WebGLPipeline): Boolean = js.native
     
     /**
       * The current WebGL pipeline of this Game Object.
@@ -1243,15 +897,121 @@ object Components {
     var pipeline: WebGLPipeline = js.native
     
     /**
-      * Resets the WebGL Pipeline of this Game Object back to the default it was created with.
+      * An object to store pipeline specific data in, to be read by the pipelines this Game Object uses.
       */
-    def resetPipeline(): Boolean = js.native
+    var pipelineData: js.Object = js.native
     
     /**
-      * Sets the active WebGL Pipeline of this Game Object.
-      * @param pipelineName The name of the pipeline to set on this Game Object.
+      * The WebGL Post FX Pipelines this Game Object uses for post-render effects.
+      * 
+      * The pipelines are processed in the order in which they appear in this array.
+      * 
+      * If you modify this array directly, be sure to set the
+      * `hasPostPipeline` property accordingly.
       */
-    def setPipeline(pipelineName: String): this.type = js.native
+    var postPipelines: js.Array[PostFXPipeline] = js.native
+    
+    /**
+      * Removes a type of Post Pipeline instances from this Game Object, based on the given name, and destroys them.
+      * 
+      * If you wish to remove all Post Pipelines use the `resetPostPipeline` method instead.
+      * @param pipeline The string-based name of the pipeline, or a pipeline class.
+      */
+    def removePostPipeline(pipeline: String): this.type = js.native
+    def removePostPipeline(pipeline: PostFXPipeline): this.type = js.native
+    
+    /**
+      * Resets the WebGL Pipeline of this Game Object back to the default it was created with.
+      * @param resetPostPipelines Reset all of the post pipelines? Default false.
+      * @param resetData Reset the `pipelineData` object to being an empty object? Default false.
+      */
+    def resetPipeline(): Boolean = js.native
+    def resetPipeline(resetPostPipelines: Boolean): Boolean = js.native
+    def resetPipeline(resetPostPipelines: Boolean, resetData: Boolean): Boolean = js.native
+    def resetPipeline(resetPostPipelines: Unit, resetData: Boolean): Boolean = js.native
+    
+    /**
+      * Resets the WebGL Post Pipelines of this Game Object. It does this by calling
+      * the `destroy` method on each post pipeline and then clearing the local array.
+      * @param resetData Reset the `pipelineData` object to being an empty object? Default false.
+      */
+    def resetPostPipeline(): Unit = js.native
+    def resetPostPipeline(resetData: Boolean): Unit = js.native
+    
+    /**
+      * Sets the main WebGL Pipeline of this Game Object.
+      * 
+      * Also sets the `pipelineData` property, if the parameter is given.
+      * 
+      * Both the pipeline and post pipelines share the same pipeline data object.
+      * @param pipeline Either the string-based name of the pipeline, or a pipeline instance to set.
+      * @param pipelineData Optional pipeline data object that is _deep copied_ into the `pipelineData` property of this Game Object.
+      * @param copyData Should the pipeline data object be _deep copied_ into the `pipelineData` property of this Game Object? If `false` it will be set by reference instead. Default true.
+      */
+    def setPipeline(pipeline: String): this.type = js.native
+    def setPipeline(pipeline: String, pipelineData: js.Object): this.type = js.native
+    def setPipeline(pipeline: String, pipelineData: js.Object, copyData: Boolean): this.type = js.native
+    def setPipeline(pipeline: String, pipelineData: Unit, copyData: Boolean): this.type = js.native
+    def setPipeline(pipeline: WebGLPipeline): this.type = js.native
+    def setPipeline(pipeline: WebGLPipeline, pipelineData: js.Object): this.type = js.native
+    def setPipeline(pipeline: WebGLPipeline, pipelineData: js.Object, copyData: Boolean): this.type = js.native
+    def setPipeline(pipeline: WebGLPipeline, pipelineData: Unit, copyData: Boolean): this.type = js.native
+    
+    /**
+      * Adds an entry to the `pipelineData` object belonging to this Game Object.
+      * 
+      * If the 'key' already exists, its value is updated. If it doesn't exist, it is created.
+      * 
+      * If `value` is undefined, and `key` exists, `key` is removed from the data object.
+      * 
+      * Both the pipeline and post pipelines share the pipeline data object together.
+      * @param key The key of the pipeline data to set, update, or delete.
+      * @param value The value to be set with the key. If `undefined` then `key` will be deleted from the object.
+      */
+    def setPipelineData(key: String): this.type = js.native
+    def setPipelineData(key: String, value: Any): this.type = js.native
+    
+    /**
+      * Sets one, or more, Post Pipelines on this Game Object.
+      * 
+      * Post Pipelines are invoked after this Game Object has rendered to its target and
+      * are commonly used for post-fx.
+      * 
+      * The post pipelines are appended to the `postPipelines` array belonging to this
+      * Game Object. When the renderer processes this Game Object, it iterates through the post
+      * pipelines in the order in which they appear in the array. If you are stacking together
+      * multiple effects, be aware that the order is important.
+      * 
+      * If you call this method multiple times, the new pipelines will be appended to any existing
+      * post pipelines already set. Use the `resetPostPipeline` method to clear them first, if required.
+      * 
+      * You can optionally also sets the `pipelineData` property, if the parameter is given.
+      * 
+      * Both the pipeline and post pipelines share the pipeline data object together.
+      * @param pipelines Either the string-based name of the pipeline, or a pipeline instance, or class, or an array of them.
+      * @param pipelineData Optional pipeline data object that is _deep copied_ into the `pipelineData` property of this Game Object.
+      * @param copyData Should the pipeline data object be _deep copied_ into the `pipelineData` property of this Game Object? If `false` it will be set by reference instead. Default true.
+      */
+    def setPostPipeline(pipelines: String): this.type = js.native
+    def setPostPipeline(pipelines: String, pipelineData: js.Object): this.type = js.native
+    def setPostPipeline(pipelines: String, pipelineData: js.Object, copyData: Boolean): this.type = js.native
+    def setPostPipeline(pipelines: String, pipelineData: Unit, copyData: Boolean): this.type = js.native
+    def setPostPipeline(pipelines: js.Array[js.Function | PostFXPipeline | String]): this.type = js.native
+    def setPostPipeline(pipelines: js.Array[js.Function | PostFXPipeline | String], pipelineData: js.Object): this.type = js.native
+    def setPostPipeline(
+      pipelines: js.Array[js.Function | PostFXPipeline | String],
+      pipelineData: js.Object,
+      copyData: Boolean
+    ): this.type = js.native
+    def setPostPipeline(pipelines: js.Array[js.Function | PostFXPipeline | String], pipelineData: Unit, copyData: Boolean): this.type = js.native
+    def setPostPipeline(pipelines: js.Function): this.type = js.native
+    def setPostPipeline(pipelines: js.Function, pipelineData: js.Object): this.type = js.native
+    def setPostPipeline(pipelines: js.Function, pipelineData: js.Object, copyData: Boolean): this.type = js.native
+    def setPostPipeline(pipelines: js.Function, pipelineData: Unit, copyData: Boolean): this.type = js.native
+    def setPostPipeline(pipelines: PostFXPipeline): this.type = js.native
+    def setPostPipeline(pipelines: PostFXPipeline, pipelineData: js.Object): this.type = js.native
+    def setPostPipeline(pipelines: PostFXPipeline, pipelineData: js.Object, copyData: Boolean): this.type = js.native
+    def setPostPipeline(pipelines: PostFXPipeline, pipelineData: Unit, copyData: Boolean): this.type = js.native
   }
   
   /**
@@ -1461,10 +1221,10 @@ object Components {
     def setFrame(frame: String, updateSize: Boolean): this.type = js.native
     def setFrame(frame: String, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: String, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
-    def setFrame(frame: integer): this.type = js.native
-    def setFrame(frame: integer, updateSize: Boolean): this.type = js.native
-    def setFrame(frame: integer, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
-    def setFrame(frame: integer, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: Double): this.type = js.native
+    def setFrame(frame: Double, updateSize: Boolean): this.type = js.native
+    def setFrame(frame: Double, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: Double, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
     
     /**
       * Sets the texture and frame this Game Object will use to render with.
@@ -1475,10 +1235,10 @@ object Components {
       */
     def setTexture(key: String): this.type = js.native
     def setTexture(key: String, frame: String): this.type = js.native
-    def setTexture(key: String, frame: integer): this.type = js.native
+    def setTexture(key: String, frame: Double): this.type = js.native
     def setTexture(key: typings.phaser.Phaser.Textures.Texture): this.type = js.native
     def setTexture(key: typings.phaser.Phaser.Textures.Texture, frame: String): this.type = js.native
-    def setTexture(key: typings.phaser.Phaser.Textures.Texture, frame: integer): this.type = js.native
+    def setTexture(key: typings.phaser.Phaser.Textures.Texture, frame: Double): this.type = js.native
     
     /**
       * The Texture this Game Object is using to render with.
@@ -1573,10 +1333,10 @@ object Components {
     def setFrame(frame: String, updateSize: Boolean): this.type = js.native
     def setFrame(frame: String, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: String, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
-    def setFrame(frame: integer): this.type = js.native
-    def setFrame(frame: integer, updateSize: Boolean): this.type = js.native
-    def setFrame(frame: integer, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
-    def setFrame(frame: integer, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: Double): this.type = js.native
+    def setFrame(frame: Double, updateSize: Boolean): this.type = js.native
+    def setFrame(frame: Double, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: Double, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
     
     /**
       * Sets the texture and frame this Game Object will use to render with.
@@ -1587,7 +1347,7 @@ object Components {
       */
     def setTexture(key: String): this.type = js.native
     def setTexture(key: String, frame: String): this.type = js.native
-    def setTexture(key: String, frame: integer): this.type = js.native
+    def setTexture(key: String, frame: Double): this.type = js.native
     
     /**
       * The Texture this Game Object is using to render with.
@@ -1611,7 +1371,10 @@ object Components {
     def clearTint(): this.type = js.native
     
     /**
-      * Does this Game Object have a tint applied to it or not?
+      * Does this Game Object have a tint applied?
+      * 
+      * It checks to see if the 4 tint properties are set to the value 0xffffff
+      * and that the `tintFill` property is `false`. This indicates that a Game Object isn't tinted.
       */
     val isTinted: Boolean = js.native
     
@@ -1636,21 +1399,21 @@ object Components {
       * @param bottomRight The tint being applied to the bottom-right of the Game Object.
       */
     def setTint(): this.type = js.native
-    def setTint(topLeft: Unit, topRight: Unit, bottomLeft: Unit, bottomRight: integer): this.type = js.native
-    def setTint(topLeft: Unit, topRight: Unit, bottomLeft: integer): this.type = js.native
-    def setTint(topLeft: Unit, topRight: Unit, bottomLeft: integer, bottomRight: integer): this.type = js.native
-    def setTint(topLeft: Unit, topRight: integer): this.type = js.native
-    def setTint(topLeft: Unit, topRight: integer, bottomLeft: Unit, bottomRight: integer): this.type = js.native
-    def setTint(topLeft: Unit, topRight: integer, bottomLeft: integer): this.type = js.native
-    def setTint(topLeft: Unit, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
-    def setTint(topLeft: integer): this.type = js.native
-    def setTint(topLeft: integer, topRight: Unit, bottomLeft: Unit, bottomRight: integer): this.type = js.native
-    def setTint(topLeft: integer, topRight: Unit, bottomLeft: integer): this.type = js.native
-    def setTint(topLeft: integer, topRight: Unit, bottomLeft: integer, bottomRight: integer): this.type = js.native
-    def setTint(topLeft: integer, topRight: integer): this.type = js.native
-    def setTint(topLeft: integer, topRight: integer, bottomLeft: Unit, bottomRight: integer): this.type = js.native
-    def setTint(topLeft: integer, topRight: integer, bottomLeft: integer): this.type = js.native
-    def setTint(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
+    def setTint(topLeft: Double): this.type = js.native
+    def setTint(topLeft: Double, topRight: Double): this.type = js.native
+    def setTint(topLeft: Double, topRight: Double, bottomLeft: Double): this.type = js.native
+    def setTint(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setTint(topLeft: Double, topRight: Double, bottomLeft: Unit, bottomRight: Double): this.type = js.native
+    def setTint(topLeft: Double, topRight: Unit, bottomLeft: Double): this.type = js.native
+    def setTint(topLeft: Double, topRight: Unit, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setTint(topLeft: Double, topRight: Unit, bottomLeft: Unit, bottomRight: Double): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Double): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Double, bottomLeft: Double): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Double, bottomLeft: Unit, bottomRight: Double): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Unit, bottomLeft: Double): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Unit, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setTint(topLeft: Unit, topRight: Unit, bottomLeft: Unit, bottomRight: Double): this.type = js.native
     
     /**
       * Sets a fill-based tint on this Game Object.
@@ -1674,56 +1437,63 @@ object Components {
       * @param bottomRight The tint being applied to the bottom-right of the Game Object.
       */
     def setTintFill(): this.type = js.native
-    def setTintFill(topLeft: Unit, topRight: Unit, bottomLeft: Unit, bottomRight: integer): this.type = js.native
-    def setTintFill(topLeft: Unit, topRight: Unit, bottomLeft: integer): this.type = js.native
-    def setTintFill(topLeft: Unit, topRight: Unit, bottomLeft: integer, bottomRight: integer): this.type = js.native
-    def setTintFill(topLeft: Unit, topRight: integer): this.type = js.native
-    def setTintFill(topLeft: Unit, topRight: integer, bottomLeft: Unit, bottomRight: integer): this.type = js.native
-    def setTintFill(topLeft: Unit, topRight: integer, bottomLeft: integer): this.type = js.native
-    def setTintFill(topLeft: Unit, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
-    def setTintFill(topLeft: integer): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: Unit, bottomLeft: Unit, bottomRight: integer): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: Unit, bottomLeft: integer): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: Unit, bottomLeft: integer, bottomRight: integer): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: integer): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: integer, bottomLeft: Unit, bottomRight: integer): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: integer, bottomLeft: integer): this.type = js.native
-    def setTintFill(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
+    def setTintFill(topLeft: Double): this.type = js.native
+    def setTintFill(topLeft: Double, topRight: Double): this.type = js.native
+    def setTintFill(topLeft: Double, topRight: Double, bottomLeft: Double): this.type = js.native
+    def setTintFill(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setTintFill(topLeft: Double, topRight: Double, bottomLeft: Unit, bottomRight: Double): this.type = js.native
+    def setTintFill(topLeft: Double, topRight: Unit, bottomLeft: Double): this.type = js.native
+    def setTintFill(topLeft: Double, topRight: Unit, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setTintFill(topLeft: Double, topRight: Unit, bottomLeft: Unit, bottomRight: Double): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Double): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Double, bottomLeft: Double): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Double, bottomLeft: Unit, bottomRight: Double): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Unit, bottomLeft: Double): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Unit, bottomLeft: Double, bottomRight: Double): this.type = js.native
+    def setTintFill(topLeft: Unit, topRight: Unit, bottomLeft: Unit, bottomRight: Double): this.type = js.native
     
     /**
       * The tint value being applied to the whole of the Game Object.
       * This property is a setter-only. Use the properties `tintTopLeft` etc to read the current tint value.
       */
-    var tint: integer = js.native
+    var tint: Double = js.native
     
     /**
-      * The tint value being applied to the bottom-left of the Game Object.
+      * The tint value being applied to the bottom-left vertice of the Game Object.
       * This value is interpolated from the corner to the center of the Game Object.
+      * The value should be set as a hex number, i.e. 0xff0000 for red, or 0xff00ff for purple.
       */
-    var tintBottomLeft: integer = js.native
+    var tintBottomLeft: Double = js.native
     
     /**
-      * The tint value being applied to the bottom-right of the Game Object.
+      * The tint value being applied to the bottom-right vertice of the Game Object.
       * This value is interpolated from the corner to the center of the Game Object.
+      * The value should be set as a hex number, i.e. 0xff0000 for red, or 0xff00ff for purple.
       */
-    var tintBottomRight: integer = js.native
+    var tintBottomRight: Double = js.native
     
     /**
-      * Fill or additive?
+      * The tint fill mode.
+      * 
+      * `false` = An additive tint (the default), where vertices colors are blended with the texture.
+      * `true` = A fill tint, where the vertices colors replace the texture, but respects texture alpha.
       */
     var tintFill: Boolean = js.native
     
     /**
-      * The tint value being applied to the top-left of the Game Object.
+      * The tint value being applied to the top-left vertice of the Game Object.
       * This value is interpolated from the corner to the center of the Game Object.
+      * The value should be set as a hex number, i.e. 0xff0000 for red, or 0xff00ff for purple.
       */
-    var tintTopLeft: integer = js.native
+    var tintTopLeft: Double = js.native
     
     /**
-      * The tint value being applied to the top-right of the Game Object.
+      * The tint value being applied to the top-right vertice of the Game Object.
       * This value is interpolated from the corner to the center of the Game Object.
+      * The value should be set as a hex number, i.e. 0xff0000 for red, or 0xff00ff for purple.
       */
-    var tintTopRight: integer = js.native
+    var tintTopRight: Double = js.native
   }
   
   /**
@@ -1747,7 +1517,34 @@ object Components {
       * 
       * If you prefer to work in radians, see the `rotation` property instead.
       */
-    var angle: integer = js.native
+    var angle: Double = js.native
+    
+    /**
+      * Copies an object's coordinates to this Game Object's position.
+      * @param source An object with numeric 'x', 'y', 'z', or 'w' properties. Undefined values are not copied.
+      */
+    def copyPosition(source: Vector2Like): this.type = js.native
+    def copyPosition(source: Vector3Like): this.type = js.native
+    def copyPosition(source: Vector4Like): this.type = js.native
+    
+    /**
+      * Takes the given `x` and `y` coordinates and converts them into local space for this
+      * Game Object, taking into account parent and local transforms, and the Display Origin.
+      * 
+      * The returned Vector2 contains the translated point in its properties.
+      * 
+      * A Camera needs to be provided in order to handle modified scroll factors. If no
+      * camera is specified, it will use the `main` camera from the Scene to which this
+      * Game Object belongs.
+      * @param x The x position to translate.
+      * @param y The y position to translate.
+      * @param point A Vector2, or point-like object, to store the results in.
+      * @param camera The Camera which is being tested against. If not given will use the Scene default camera.
+      */
+    def getLocalPoint(x: Double, y: Double): Vector2 = js.native
+    def getLocalPoint(x: Double, y: Double, point: Unit, camera: Camera): Vector2 = js.native
+    def getLocalPoint(x: Double, y: Double, point: Vector2): Vector2 = js.native
+    def getLocalPoint(x: Double, y: Double, point: Vector2, camera: Camera): Vector2 = js.native
     
     /**
       * Gets the local transform matrix for this Game Object.
@@ -1995,7 +1792,7 @@ object Components {
       * Where array indexes 0, 1, 2, 3, 4 and 5 are mapped to a, b, c, d, e and f.
       * @param src The array of values to set into this matrix.
       */
-    def copyFromArray(src: js.Array[js.Any]): this.type = js.native
+    def copyFromArray(src: js.Array[Any]): this.type = js.native
     
     /**
       * Copy the values in this Matrix to the array given.
@@ -2003,8 +1800,8 @@ object Components {
       * Where array indexes 0, 1, 2, 3, 4 and 5 are mapped to a, b, c, d, e and f.
       * @param out The array to copy the matrix values in to.
       */
-    def copyToArray(): js.Array[js.Any] = js.native
-    def copyToArray(out: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def copyToArray(): js.Array[Any] = js.native
+    def copyToArray(out: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Copy the values from this Matrix to the given Canvas Rendering Context.
@@ -2061,12 +1858,34 @@ object Components {
     def getX(x: Double, y: Double): Double = js.native
     
     /**
+      * Returns the X component of this matrix multiplied by the given values.
+      * 
+      * This is the same as `x * a + y * c + e`, optionally passing via `Math.round`.
+      * @param x The x value.
+      * @param y The y value.
+      * @param round Math.round the resulting value? Default false.
+      */
+    def getXRound(x: Double, y: Double): Double = js.native
+    def getXRound(x: Double, y: Double, round: Boolean): Double = js.native
+    
+    /**
       * Returns the Y component of this matrix multiplied by the given values.
       * This is the same as `x * b + y * d + f`.
       * @param x The x value.
       * @param y The y value.
       */
     def getY(x: Double, y: Double): Double = js.native
+    
+    /**
+      * Returns the Y component of this matrix multiplied by the given values.
+      * 
+      * This is the same as `x * b + y * d + f`, optionally passing via `Math.round`.
+      * @param x The x value.
+      * @param y The y value.
+      * @param round Math.round the resulting value? Default false.
+      */
+    def getYRound(x: Double, y: Double): Double = js.native
+    def getYRound(x: Double, y: Double, round: Boolean): Double = js.native
     
     /**
       * Invert the Matrix.
@@ -2081,7 +1900,7 @@ object Components {
     /**
       * The matrix values.
       */
-    var matrix: Float32Array = js.native
+    var matrix: js.typedarray.Float32Array = js.native
     
     /**
       * Multiply this Matrix by the given Matrix.

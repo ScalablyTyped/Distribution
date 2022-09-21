@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * gRPC config to access the SDS server.
-  */
 trait SchemaGrpcServiceConfig extends StObject {
   
   /**
@@ -22,7 +19,7 @@ trait SchemaGrpcServiceConfig extends StObject {
   /**
     * The target URI of the SDS server.
     */
-  var targetUri: js.UndefOr[String] = js.undefined
+  var targetUri: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGrpcServiceConfig {
   
@@ -42,6 +39,8 @@ object SchemaGrpcServiceConfig {
     inline def setChannelCredentialsUndefined: Self = StObject.set(x, "channelCredentials", js.undefined)
     
     inline def setTargetUri(value: String): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUriNull: Self = StObject.set(x, "targetUri", null)
     
     inline def setTargetUriUndefined: Self = StObject.set(x, "targetUri", js.undefined)
   }

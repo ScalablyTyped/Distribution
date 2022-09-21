@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GenerateRandomRequest extends StObject {
   
   /**
-    * Generates the random byte string in the AWS CloudHSM cluster that is associated with the specified custom key store. To find the ID of a custom key store, use the DescribeCustomKeyStores operation.
+    * Generates the random byte string in the CloudHSM cluster that is associated with the specified custom key store. To find the ID of a custom key store, use the DescribeCustomKeyStores operation.
     */
   var CustomKeyStoreId: js.UndefOr[CustomKeyStoreIdType] = js.undefined
   
   /**
-    * The length of the byte string.
+    * The length of the random byte string. This parameter is required.
     */
   var NumberOfBytes: js.UndefOr[NumberOfBytesType] = js.undefined
 }

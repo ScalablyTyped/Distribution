@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Screen")
 @js.native
-/* private */ class Screen ()
+/* private */ open class Screen ()
   extends StObject
      with typings.activexAccess.Access.Screen {
   
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MousePointer: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PreviousControl: typings.activexAccess.Access.Control = js.native

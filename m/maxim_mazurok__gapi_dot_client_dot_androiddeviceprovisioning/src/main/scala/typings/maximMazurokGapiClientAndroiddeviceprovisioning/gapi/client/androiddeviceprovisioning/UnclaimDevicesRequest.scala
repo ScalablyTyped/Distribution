@@ -22,6 +22,6 @@ object UnclaimDevicesRequest {
     
     inline def setUnclaimsUndefined: Self = StObject.set(x, "unclaims", js.undefined)
     
-    inline def setUnclaimsVarargs(value: PartnerUnclaim*): Self = StObject.set(x, "unclaims", js.Array(value :_*))
+    inline def setUnclaimsVarargs(value: PartnerUnclaim*): Self = StObject.set(x, "unclaims", js.Array(value*))
   }
 }

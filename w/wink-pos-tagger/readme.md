@@ -10,10 +10,10 @@ English Part-of-speech (POS) tagger
 | ------------------ | :-------------: |
 | Full name          | wink-pos-tagger |
 | Keywords           | POS, Tagger, Part-of-speech, Tags, Tagging, NLP, Natural Language Processing, wink |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 9558 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1037.6666666666667 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](http://winkjs.org/)

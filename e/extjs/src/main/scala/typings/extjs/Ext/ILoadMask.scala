@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Changes the data store bound to this LoadMask
     * @param store Ext.data.Store The store to bind to this LoadMask
     */
-  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any | IStore], Unit]] = js.undefined
+  var bindStore: js.UndefOr[js.Function1[js.UndefOr[Any | IStore], Unit]] = js.undefined
   
   /** [Method] Binds listeners for this component to the store
     * @param store Ext.data.AbstractStore The store to bind to
@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this floating Component was rendered.
     */
   @JSName("doConstrain")
-  var doConstrain_ILoadMask: js.UndefOr[js.Function1[/* constrainTo */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var doConstrain_ILoadMask: js.UndefOr[js.Function1[/* constrainTo */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Gets the current store instance
     * @returns Ext.data.AbstractStore The store, null if one does not exist.
@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param store Object
     * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
     */
-  var getStoreListeners: js.UndefOr[js.Function1[js.UndefOr[js.Any | IStore], js.Any]] = js.undefined
+  var getStoreListeners: js.UndefOr[js.Function1[js.UndefOr[Any | IStore], Any]] = js.undefined
   
   /** [Method] Hides this Component setting it to invisible using the configured hideMode
     * @returns Ext.Component this
@@ -143,7 +143,7 @@ object ILoadMask {
     
     inline def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
     
-    inline def setBindStore(value: js.UndefOr[js.Any | IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+    inline def setBindStore(value: js.UndefOr[Any | IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
     inline def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
     
@@ -155,13 +155,13 @@ object ILoadMask {
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    inline def setDoConstrain(value: /* constrainTo */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "doConstrain", js.Any.fromFunction1(value))
+    inline def setDoConstrain(value: /* constrainTo */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "doConstrain", js.Any.fromFunction1(value))
     
     inline def setDoConstrainUndefined: Self = StObject.set(x, "doConstrain", js.undefined)
     
     inline def setGetStore(value: () => IAbstractStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
-    inline def setGetStoreListeners(value: js.UndefOr[js.Any | IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+    inline def setGetStoreListeners(value: js.UndefOr[Any | IStore] => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
     
     inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
     

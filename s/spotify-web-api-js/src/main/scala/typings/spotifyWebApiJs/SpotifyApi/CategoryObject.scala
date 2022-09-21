@@ -31,7 +31,7 @@ object CategoryObject {
     
     inline def setIcons(value: js.Array[ImageObject]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    inline def setIconsVarargs(value: ImageObject*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: ImageObject*): Self = StObject.set(x, "icons", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

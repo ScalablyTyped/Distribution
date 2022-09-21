@@ -8,83 +8,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object eventQueueMod {
   
-  @JSImport("@firebase/database/dist/src/core/view/EventQueue", "EventList")
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/EventQueue", JSImport.Namespace)
   @js.native
-  class EventList protected () extends StObject {
-    def this(path_ : Path) = this()
-    
-    /**
-      * @param {!Event} eventData
-      */
-    def add(eventData: Event): Unit = js.native
-    
-    /**
-      * @type {!Array.<Event>}
-      * @private
-      */
-    /* private */ var events_ : js.Any = js.native
-    
-    /**
-      * @return {!Path}
-      */
-    def getPath(): Path = js.native
-    
-    /* private */ val path_ : js.Any = js.native
-    
-    /**
-      * Iterates through the list and raises each event
-      */
-    def raise(): Unit = js.native
-  }
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/database/dist/src/core/view/EventQueue", "EventQueue")
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/EventQueue", "EventQueue")
   @js.native
-  class EventQueue () extends StObject {
+  open class EventQueue () extends StObject {
     
-    /**
-      * @private
-      * @type {!Array.<EventList>}
-      */
-    /* private */ var eventLists_ : js.Any = js.native
-    
-    /**
-      * @param {!Array.<Event>} eventDataList The new events to queue.
-      */
-    def queueEvents(eventDataList: js.Array[Event]): Unit = js.native
-    
-    /**
-      * Queues the specified events and synchronously raises all events (including previously queued ones)
-      * for the specified path.
-      *
-      * It is assumed that the new events are all for the specified path.
-      *
-      * @param {!Path} path The path to raise events for.
-      * @param {!Array.<Event>} eventDataList The new events to raise.
-      */
-    def raiseEventsAtPath(path: Path, eventDataList: js.Array[Event]): Unit = js.native
-    
-    /**
-      * Queues the specified events and synchronously raises all events (including previously queued ones) for
-      * locations related to the specified change path (i.e. all ancestors and descendants).
-      *
-      * It is assumed that the new events are all related (ancestor or descendant) to the specified path.
-      *
-      * @param {!Path} changedPath The path to raise events for.
-      * @param {!Array.<!Event>} eventDataList The events to raise
-      */
-    def raiseEventsForChangedPath(changedPath: Path, eventDataList: js.Array[Event]): Unit = js.native
-    
-    /**
-      * @param {!function(!Path):boolean} predicate
-      * @private
-      */
-    /* private */ var raiseQueuedEventsMatchingPredicate_ : js.Any = js.native
+    var eventLists_ : js.Array[EventList] = js.native
     
     /**
       * Tracks recursion depth of raiseQueuedEvents_, for debugging purposes.
-      * @private
-      * @type {!number}
       */
-    /* private */ var recursionDepth_ : js.Any = js.native
+    var recursionDepth_ : Double = js.native
+  }
+  
+  inline def eventQueueQueueEvents(eventQueue: EventQueue, eventDataList: js.Array[Event]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventQueueQueueEvents")(eventQueue.asInstanceOf[js.Any], eventDataList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def eventQueueRaiseEventsAtPath(eventQueue: EventQueue, path: Path, eventDataList: js.Array[Event]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventQueueRaiseEventsAtPath")(eventQueue.asInstanceOf[js.Any], path.asInstanceOf[js.Any], eventDataList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def eventQueueRaiseEventsForChangedPath(eventQueue: EventQueue, changedPath: Path, eventDataList: js.Array[Event]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventQueueRaiseEventsForChangedPath")(eventQueue.asInstanceOf[js.Any], changedPath.asInstanceOf[js.Any], eventDataList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait EventList extends StObject {
+    
+    var events: js.Array[Event]
+    
+    var path: Path
+  }
+  object EventList {
+    
+    inline def apply(events: js.Array[Event], path: Path): EventList = {
+      val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EventList]
+    }
+    
+    extension [Self <: EventList](x: Self) {
+      
+      inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      
+      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
+      
+      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    }
   }
 }

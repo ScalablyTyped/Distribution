@@ -5,4 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DecimalLocale = typings.validator.mod.validator.FloatLocale
+type DecimalLocale = FloatLocale
+
+type IsEmailOptions = typings.validator.isEmailMod.IsEmailOptions
+
+type IsFQDNOptions = typings.validator.isFQDNMod.IsFQDNOptions
+
+type IsURLOptions = typings.validator.isURLMod.IsURLOptions

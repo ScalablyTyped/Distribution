@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDiscovererRequest extends StObject {
   
   /**
+    * Support discovery of schemas in events sent to the bus from another account. (default: true).
+    */
+  var CrossAccount: js.UndefOr[boolean] = js.undefined
+  
+  /**
     * A description for the discoverer.
     */
   var Description: js.UndefOr[stringMin0Max256] = js.undefined
@@ -29,6 +34,10 @@ object CreateDiscovererRequest {
   }
   
   extension [Self <: CreateDiscovererRequest](x: Self) {
+    
+    inline def setCrossAccount(value: boolean): Self = StObject.set(x, "CrossAccount", value.asInstanceOf[js.Any])
+    
+    inline def setCrossAccountUndefined: Self = StObject.set(x, "CrossAccount", js.undefined)
     
     inline def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

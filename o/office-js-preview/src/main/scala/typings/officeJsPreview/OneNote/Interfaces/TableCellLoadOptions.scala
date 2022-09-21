@@ -5,60 +5,63 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a cell in a OneNote table.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait TableCellLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the index of the cell in its row. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var cellIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the ID of the cell. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the collection of Paragraph objects in the TableCell.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var paragraphs: js.UndefOr[ParagraphCollectionLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the parent row of the cell.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var parentRow: js.UndefOr[TableRowLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the index of the cell's row in the table. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var rowIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the shading color of the cell
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var shadingColor: js.UndefOr[Boolean] = js.undefined

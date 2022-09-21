@@ -22,7 +22,7 @@ object XContextMenuInterceptor {
   inline def apply(
     acquire: () => Unit,
     notifyContextMenuExecute: ContextMenuExecuteEvent => ContextMenuInterceptorAction,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContextMenuInterceptor = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), notifyContextMenuExecute = js.Any.fromFunction1(notifyContextMenuExecute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

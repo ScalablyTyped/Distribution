@@ -1,389 +1,1491 @@
 package typings.reactMarkdown
 
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.mdast.mod.Content
-import typings.react.mod.ElementType
-import typings.react.mod.ReactElement
-import typings.react.mod.ReactNode
-import typings.unified.mod.Pluggable
-import typings.unified.mod.PluggableList
-import typings.unified.mod.Settings
+import typings.propTypes.mod.Requireable
+import typings.reactMarkdown.astToReactMod.CodeComponent
+import typings.reactMarkdown.astToReactMod.HeadingComponent
+import typings.reactMarkdown.astToReactMod.LiComponent
+import typings.reactMarkdown.astToReactMod.OrderedListComponent
+import typings.reactMarkdown.astToReactMod.ReactMarkdownNames
+import typings.reactMarkdown.astToReactMod.TableCellComponent
+import typings.reactMarkdown.astToReactMod.TableRowComponent
+import typings.reactMarkdown.astToReactMod.UnorderedListComponent
+import typings.reactMarkdown.reactMarkdownMod.ReactElement
+import typings.reactMarkdown.reactMarkdownMod.ReactMarkdownOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(props: ReactMarkdownProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-  
   @JSImport("react-markdown", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-markdown", "renderers")
-  @js.native
-  val renderers: Renderers_ = js.native
-  
-  @JSImport("react-markdown", "types")
-  @js.native
-  val types: js.Array[NodeType] = js.native
+  object default {
+    
+    inline def apply(options: ReactMarkdownOptions): ReactElement = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
+    @JSImport("react-markdown", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    object propTypes {
+      
+      @JSImport("react-markdown", "default.propTypes.allowElement")
+      @js.native
+      val allowElement: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.allowedElements")
+      @js.native
+      val allowedElements: Requireable[js.Array[js.UndefOr[String | Null]]] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.children")
+      @js.native
+      val children: Requireable[String] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.className")
+      @js.native
+      val className: Requireable[String] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.components")
+      @js.native
+      val components: Requireable[js.Object] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.disallowedElements")
+      @js.native
+      val disallowedElements: Requireable[js.Array[js.UndefOr[String | Null]]] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.includeElementIndex")
+      @js.native
+      val includeElementIndex: Requireable[Boolean] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.linkTarget")
+      @js.native
+      val linkTarget: Requireable[String | (js.Function1[/* repeated */ Any, Any])] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.rawSourcePos")
+      @js.native
+      val rawSourcePos: Requireable[Boolean] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.rehypePlugins")
+      @js.native
+      val rehypePlugins: Requireable[js.Array[js.UndefOr[js.Object | Null]]] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.remarkPlugins")
+      @js.native
+      val remarkPlugins: Requireable[js.Array[js.UndefOr[js.Object | Null]]] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.skipHtml")
+      @js.native
+      val skipHtml: Requireable[Boolean] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.sourcePos")
+      @js.native
+      val sourcePos: Requireable[Boolean] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.transformImageUri")
+      @js.native
+      val transformImageUri: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.transformLinkUri")
+      @js.native
+      val transformLinkUri: Requireable[Boolean | (js.Function1[/* repeated */ Any, Any])] = js.native
+      
+      @JSImport("react-markdown", "default.propTypes.unwrapDisallowed")
+      @js.native
+      val unwrapDisallowed: Requireable[Boolean] = js.native
+    }
+  }
   
   inline def uriTransformer(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTransformer")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type AlignType = typings.mdast.mod.AlignType
-  
-  trait AllowDangerousHtmlProp extends StObject {
+  /* Inlined react-markdown.react-markdown/lib/ast-to-react.Components */
+  trait Components extends StObject {
     
-    val allowDangerousHtml: js.UndefOr[Boolean] = js.undefined
-  }
-  object AllowDangerousHtmlProp {
-    
-    inline def apply(): AllowDangerousHtmlProp = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AllowDangerousHtmlProp]
-    }
-    
-    extension [Self <: AllowDangerousHtmlProp](x: Self) {
-      
-      inline def setAllowDangerousHtml(value: Boolean): Self = StObject.set(x, "allowDangerousHtml", value.asInstanceOf[js.Any])
-      
-      inline def setAllowDangerousHtmlUndefined: Self = StObject.set(x, "allowDangerousHtml", js.undefined)
-    }
-  }
-  
-  trait AllowedTypesProp extends StObject {
-    
-    val allowedTypes: js.UndefOr[js.Array[NodeType]] = js.undefined
-  }
-  object AllowedTypesProp {
-    
-    inline def apply(): AllowedTypesProp = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AllowedTypesProp]
-    }
-    
-    extension [Self <: AllowedTypesProp](x: Self) {
-      
-      inline def setAllowedTypes(value: js.Array[NodeType]): Self = StObject.set(x, "allowedTypes", value.asInstanceOf[js.Any])
-      
-      inline def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
-      
-      inline def setAllowedTypesVarargs(value: NodeType*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
-    }
-  }
-  
-  trait ChildrenProp extends StObject {
-    
-    val children: String
-  }
-  object ChildrenProp {
-    
-    inline def apply(children: String): ChildrenProp = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ChildrenProp]
-    }
-    
-    extension [Self <: ChildrenProp](x: Self) {
-      
-      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait DisallowedTypesProp extends StObject {
-    
-    val disallowedTypes: js.Array[NodeType]
-  }
-  object DisallowedTypesProp {
-    
-    inline def apply(disallowedTypes: js.Array[NodeType]): DisallowedTypesProp = {
-      val __obj = js.Dynamic.literal(disallowedTypes = disallowedTypes.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DisallowedTypesProp]
-    }
-    
-    extension [Self <: DisallowedTypesProp](x: Self) {
-      
-      inline def setDisallowedTypes(value: js.Array[NodeType]): Self = StObject.set(x, "disallowedTypes", value.asInstanceOf[js.Any])
-      
-      inline def setDisallowedTypesVarargs(value: NodeType*): Self = StObject.set(x, "disallowedTypes", js.Array(value :_*))
-    }
-  }
-  
-  trait EscapeHtmlProp extends StObject {
-    
-    /** @deprecated use allowDangerousHtml */
-    val escapeHtml: js.UndefOr[Boolean] = js.undefined
-  }
-  object EscapeHtmlProp {
-    
-    inline def apply(): EscapeHtmlProp = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[EscapeHtmlProp]
-    }
-    
-    extension [Self <: EscapeHtmlProp](x: Self) {
-      
-      inline def setEscapeHtml(value: Boolean): Self = StObject.set(x, "escapeHtml", value.asInstanceOf[js.Any])
-      
-      inline def setEscapeHtmlUndefined: Self = StObject.set(x, "escapeHtml", js.undefined)
-    }
-  }
-  
-  type LinkTargetResolver = js.Function3[/* uri */ String, /* text */ String, /* title */ js.UndefOr[String], String]
-  
-  type MutuallyExclusive[T, U] = (T & Not[U]) | (U & Not[T])
-  
-  /* Inlined mdast.mdast.Content['type'] */
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactMarkdown.reactMarkdownStrings.html
-    - typings.reactMarkdown.reactMarkdownStrings.heading
-    - typings.reactMarkdown.reactMarkdownStrings.break
-    - typings.reactMarkdown.reactMarkdownStrings.delete
-    - typings.reactMarkdown.reactMarkdownStrings.linkReference
-    - typings.reactMarkdown.reactMarkdownStrings.footnoteReference
-    - typings.reactMarkdown.reactMarkdownStrings.definition
-    - typings.reactMarkdown.reactMarkdownStrings.image
-    - typings.reactMarkdown.reactMarkdownStrings.tableCell
-    - typings.reactMarkdown.reactMarkdownStrings.paragraph
-    - typings.reactMarkdown.reactMarkdownStrings.text
-    - typings.reactMarkdown.reactMarkdownStrings.strong
-    - typings.reactMarkdown.reactMarkdownStrings.imageReference
-    - typings.reactMarkdown.reactMarkdownStrings.footnote
-    - typings.reactMarkdown.reactMarkdownStrings.thematicBreak
-    - typings.reactMarkdown.reactMarkdownStrings.footnoteDefinition
-    - typings.reactMarkdown.reactMarkdownStrings.inlineCode
-    - typings.reactMarkdown.reactMarkdownStrings.code
-    - typings.reactMarkdown.reactMarkdownStrings.listItem
-    - typings.reactMarkdown.reactMarkdownStrings.table
-    - typings.reactMarkdown.reactMarkdownStrings.list
-    - typings.reactMarkdown.reactMarkdownStrings.emphasis
-    - typings.reactMarkdown.reactMarkdownStrings.tableRow
-    - typings.reactMarkdown.reactMarkdownStrings.blockquote
-    - typings.reactMarkdown.reactMarkdownStrings.yaml
-    - typings.reactMarkdown.reactMarkdownStrings.link
-  */
-  trait NodeType extends StObject
-  object NodeType {
-    
-    inline def blockquote: typings.reactMarkdown.reactMarkdownStrings.blockquote = "blockquote".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.blockquote]
-    
-    inline def break: typings.reactMarkdown.reactMarkdownStrings.break = "break".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.break]
-    
-    inline def code: typings.reactMarkdown.reactMarkdownStrings.code = "code".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.code]
-    
-    inline def definition: typings.reactMarkdown.reactMarkdownStrings.definition = "definition".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.definition]
-    
-    inline def delete: typings.reactMarkdown.reactMarkdownStrings.delete = "delete".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.delete]
-    
-    inline def emphasis: typings.reactMarkdown.reactMarkdownStrings.emphasis = "emphasis".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.emphasis]
-    
-    inline def footnote: typings.reactMarkdown.reactMarkdownStrings.footnote = "footnote".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.footnote]
-    
-    inline def footnoteDefinition: typings.reactMarkdown.reactMarkdownStrings.footnoteDefinition = "footnoteDefinition".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.footnoteDefinition]
-    
-    inline def footnoteReference: typings.reactMarkdown.reactMarkdownStrings.footnoteReference = "footnoteReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.footnoteReference]
-    
-    inline def heading: typings.reactMarkdown.reactMarkdownStrings.heading = "heading".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.heading]
-    
-    inline def html: typings.reactMarkdown.reactMarkdownStrings.html = "html".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.html]
-    
-    inline def image: typings.reactMarkdown.reactMarkdownStrings.image = "image".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.image]
-    
-    inline def imageReference: typings.reactMarkdown.reactMarkdownStrings.imageReference = "imageReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.imageReference]
-    
-    inline def inlineCode: typings.reactMarkdown.reactMarkdownStrings.inlineCode = "inlineCode".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.inlineCode]
-    
-    inline def link: typings.reactMarkdown.reactMarkdownStrings.link = "link".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.link]
-    
-    inline def linkReference: typings.reactMarkdown.reactMarkdownStrings.linkReference = "linkReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.linkReference]
-    
-    inline def list: typings.reactMarkdown.reactMarkdownStrings.list = "list".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.list]
-    
-    inline def listItem: typings.reactMarkdown.reactMarkdownStrings.listItem = "listItem".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.listItem]
-    
-    inline def paragraph: typings.reactMarkdown.reactMarkdownStrings.paragraph = "paragraph".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.paragraph]
-    
-    inline def strong: typings.reactMarkdown.reactMarkdownStrings.strong = "strong".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.strong]
-    
-    inline def table: typings.reactMarkdown.reactMarkdownStrings.table = "table".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.table]
-    
-    inline def tableCell: typings.reactMarkdown.reactMarkdownStrings.tableCell = "tableCell".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableCell]
-    
-    inline def tableRow: typings.reactMarkdown.reactMarkdownStrings.tableRow = "tableRow".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableRow]
-    
-    inline def text: typings.reactMarkdown.reactMarkdownStrings.text = "text".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.text]
-    
-    inline def thematicBreak: typings.reactMarkdown.reactMarkdownStrings.thematicBreak = "thematicBreak".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.thematicBreak]
-    
-    inline def yaml: typings.reactMarkdown.reactMarkdownStrings.yaml = "yaml".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.yaml]
-  }
-  
-  type Not[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]:? never}
-    */ typings.reactMarkdown.reactMarkdownStrings.Not & TopLevel[js.Any]
-  
-  type Point = typings.unist.mod.Point
-  
-  type Position = typings.unist.mod.Position
-  
-  type ReactMarkdownProps = ReactMarkdownPropsBase & (MutuallyExclusive[ChildrenProp, SourceProp]) & (MutuallyExclusive[AllowedTypesProp, DisallowedTypesProp]) & (MutuallyExclusive[EscapeHtmlProp, MutuallyExclusive[SkipHtmlProp, AllowDangerousHtmlProp]])
-  
-  trait ReactMarkdownPropsBase extends StObject {
-    
-    val allowNode: js.UndefOr[
-        js.Function3[/* node */ Content, /* index */ Double, /* parent */ NodeType, Boolean]
+    var a: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
       ] = js.undefined
     
-    val astPlugins: js.UndefOr[PluggableList[Settings]] = js.undefined
-    
-    val className: js.UndefOr[String] = js.undefined
-    
-    val includeNodeIndex: js.UndefOr[Boolean] = js.undefined
-    
-    val linkTarget: js.UndefOr[String | LinkTargetResolver] = js.undefined
-    
-    val plugins: js.UndefOr[PluggableList[Settings]] = js.undefined
-    
-    val rawSourcePos: js.UndefOr[Boolean] = js.undefined
-    
-    val renderers: js.UndefOr[StringDictionary[ElementType[js.Any]]] = js.undefined
-    
-    val sourcePos: js.UndefOr[Boolean] = js.undefined
-    
-    val transformImageUri: js.UndefOr[
-        (js.Function4[
-          /* uri */ String, 
-          /* children */ js.UndefOr[ReactNode], 
-          /* title */ js.UndefOr[String], 
-          /* alt */ js.UndefOr[String], 
-          String
-        ]) | Null
+    var abbr: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
       ] = js.undefined
     
-    val transformLinkUri: js.UndefOr[
-        (js.Function3[
-          /* uri */ String, 
-          /* children */ js.UndefOr[ReactNode], 
-          /* title */ js.UndefOr[String], 
-          String
-        ]) | Null
+    var address: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
       ] = js.undefined
     
-    val unwrapDisallowed: js.UndefOr[Boolean] = js.undefined
-  }
-  object ReactMarkdownPropsBase {
+    var animate: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
     
-    inline def apply(): ReactMarkdownPropsBase = {
+    var animateMotion: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var animateTransform: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var area: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var article: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var aside: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var audio: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var b: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var base: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var bdi: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var bdo: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var big: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var blockquote: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var body: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var br: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var button: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var canvas: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var caption: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var circle: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var cite: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var clipPath: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var code: js.UndefOr[CodeComponent | ReactMarkdownNames] = js.undefined
+    
+    var col: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var colgroup: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var data: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var datalist: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var dd: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var defs: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var del: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var desc: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var details: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var dfn: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var dialog: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var div: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var dl: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var dt: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var ellipse: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var em: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var embed: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feBlend: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feColorMatrix: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feComponentTransfer: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feComposite: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feConvolveMatrix: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feDiffuseLighting: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feDisplacementMap: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feDistantLight: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feDropShadow: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feFlood: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feFuncA: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feFuncB: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feFuncG: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feFuncR: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feGaussianBlur: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feImage: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feMerge: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feMergeNode: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feMorphology: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feOffset: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var fePointLight: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feSpecularLighting: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feSpotLight: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feTile: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var feTurbulence: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var fieldset: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var figcaption: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var figure: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var filter: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var footer: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var foreignObject: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var form: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var g: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var h1: js.UndefOr[HeadingComponent | ReactMarkdownNames] = js.undefined
+    
+    var h2: js.UndefOr[HeadingComponent | ReactMarkdownNames] = js.undefined
+    
+    var h3: js.UndefOr[HeadingComponent | ReactMarkdownNames] = js.undefined
+    
+    var h4: js.UndefOr[HeadingComponent | ReactMarkdownNames] = js.undefined
+    
+    var h5: js.UndefOr[HeadingComponent | ReactMarkdownNames] = js.undefined
+    
+    var h6: js.UndefOr[HeadingComponent | ReactMarkdownNames] = js.undefined
+    
+    var head: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var header: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var hgroup: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var hr: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var html: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var i: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var iframe: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var image: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var img: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var input: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var ins: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var kbd: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var keygen: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var label: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var legend: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var li: js.UndefOr[LiComponent | ReactMarkdownNames] = js.undefined
+    
+    var line: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var linearGradient: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var link: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var main: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var map: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var mark: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var marker: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var mask: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var menu: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var menuitem: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var meta: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var metadata: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var meter: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var mpath: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var nav: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var noindex: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var noscript: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var `object`: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var ol: js.UndefOr[OrderedListComponent | ReactMarkdownNames] = js.undefined
+    
+    var optgroup: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var option: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var output: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var p: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var param: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var path: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var pattern: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var picture: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var polygon: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var polyline: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var pre: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var progress: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var q: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var radialGradient: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var rect: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var rp: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var rt: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var ruby: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var s: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var samp: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var script: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var section: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var select: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var slot: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var small: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var source: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var span: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var stop: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var strong: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var style: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var sub: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var summary: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var sup: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var svg: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var switch: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var symbol: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var table: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var tbody: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var td: js.UndefOr[TableCellComponent | ReactMarkdownNames] = js.undefined
+    
+    var template: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var text: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var textPath: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var textarea: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var tfoot: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var th: js.UndefOr[TableCellComponent | ReactMarkdownNames] = js.undefined
+    
+    var thead: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var time: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var title: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var tr: js.UndefOr[TableRowComponent | ReactMarkdownNames] = js.undefined
+    
+    var track: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var tspan: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var u: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var ul: js.UndefOr[UnorderedListComponent | ReactMarkdownNames] = js.undefined
+    
+    var use: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var `var`: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var video: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var view: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var wbr: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+    
+    var webview: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+      ] = js.undefined
+  }
+  object Components {
+    
+    inline def apply(): Components = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ReactMarkdownPropsBase]
+      __obj.asInstanceOf[Components]
     }
     
-    extension [Self <: ReactMarkdownPropsBase](x: Self) {
+    extension [Self <: Components](x: Self) {
       
-      inline def setAllowNode(value: (/* node */ Content, /* index */ Double, /* parent */ NodeType) => Boolean): Self = StObject.set(x, "allowNode", js.Any.fromFunction3(value))
+      inline def setA(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      inline def setAllowNodeUndefined: Self = StObject.set(x, "allowNode", js.undefined)
+      inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
       
-      inline def setAstPlugins(value: PluggableList[Settings]): Self = StObject.set(x, "astPlugins", value.asInstanceOf[js.Any])
+      inline def setAbbr(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
-      inline def setAstPluginsUndefined: Self = StObject.set(x, "astPlugins", js.undefined)
+      inline def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
       
-      inline def setAstPluginsVarargs(value: (Pluggable[js.Array[js.UndefOr[js.Any]], Settings])*): Self = StObject.set(x, "astPlugins", js.Array(value :_*))
+      inline def setAddress(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setAnimate(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      inline def setIncludeNodeIndex(value: Boolean): Self = StObject.set(x, "includeNodeIndex", value.asInstanceOf[js.Any])
+      inline def setAnimateMotion(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
       
-      inline def setIncludeNodeIndexUndefined: Self = StObject.set(x, "includeNodeIndex", js.undefined)
+      inline def setAnimateMotionUndefined: Self = StObject.set(x, "animateMotion", js.undefined)
       
-      inline def setLinkTarget(value: String | LinkTargetResolver): Self = StObject.set(x, "linkTarget", value.asInstanceOf[js.Any])
+      inline def setAnimateTransform(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
       
-      inline def setLinkTargetFunction3(value: (/* uri */ String, /* text */ String, /* title */ js.UndefOr[String]) => String): Self = StObject.set(x, "linkTarget", js.Any.fromFunction3(value))
+      inline def setAnimateTransformUndefined: Self = StObject.set(x, "animateTransform", js.undefined)
       
-      inline def setLinkTargetUndefined: Self = StObject.set(x, "linkTarget", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      inline def setPlugins(value: PluggableList[Settings]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setArea(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
       
-      inline def setPluginsVarargs(value: (Pluggable[js.Array[js.UndefOr[js.Any]], Settings])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setArticle(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
       
-      inline def setRawSourcePos(value: Boolean): Self = StObject.set(x, "rawSourcePos", value.asInstanceOf[js.Any])
+      inline def setArticleUndefined: Self = StObject.set(x, "article", js.undefined)
       
-      inline def setRawSourcePosUndefined: Self = StObject.set(x, "rawSourcePos", js.undefined)
+      inline def setAside(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
       
-      inline def setRenderers(value: StringDictionary[ElementType[js.Any]]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
+      inline def setAsideUndefined: Self = StObject.set(x, "aside", js.undefined)
       
-      inline def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
+      inline def setAudio(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      inline def setSourcePos(value: Boolean): Self = StObject.set(x, "sourcePos", value.asInstanceOf[js.Any])
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      inline def setSourcePosUndefined: Self = StObject.set(x, "sourcePos", js.undefined)
+      inline def setB(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      inline def setTransformImageUri(
-        value: (/* uri */ String, /* children */ js.UndefOr[ReactNode], /* title */ js.UndefOr[String], /* alt */ js.UndefOr[String]) => String
-      ): Self = StObject.set(x, "transformImageUri", js.Any.fromFunction4(value))
+      inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
       
-      inline def setTransformImageUriNull: Self = StObject.set(x, "transformImageUri", null)
+      inline def setBase(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      inline def setTransformImageUriUndefined: Self = StObject.set(x, "transformImageUri", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setTransformLinkUri(
-        value: (/* uri */ String, /* children */ js.UndefOr[ReactNode], /* title */ js.UndefOr[String]) => String
-      ): Self = StObject.set(x, "transformLinkUri", js.Any.fromFunction3(value))
+      inline def setBdi(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
       
-      inline def setTransformLinkUriNull: Self = StObject.set(x, "transformLinkUri", null)
+      inline def setBdiUndefined: Self = StObject.set(x, "bdi", js.undefined)
       
-      inline def setTransformLinkUriUndefined: Self = StObject.set(x, "transformLinkUri", js.undefined)
+      inline def setBdo(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
       
-      inline def setUnwrapDisallowed(value: Boolean): Self = StObject.set(x, "unwrapDisallowed", value.asInstanceOf[js.Any])
+      inline def setBdoUndefined: Self = StObject.set(x, "bdo", js.undefined)
       
-      inline def setUnwrapDisallowedUndefined: Self = StObject.set(x, "unwrapDisallowed", js.undefined)
+      inline def setBig(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
+      
+      inline def setBigUndefined: Self = StObject.set(x, "big", js.undefined)
+      
+      inline def setBlockquote(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+      
+      inline def setBlockquoteUndefined: Self = StObject.set(x, "blockquote", js.undefined)
+      
+      inline def setBody(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      
+      inline def setBr(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+      
+      inline def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
+      
+      inline def setButton(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      
+      inline def setCanvas(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      
+      inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+      
+      inline def setCaption(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      
+      inline def setCircle(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      
+      inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+      
+      inline def setCite(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+      
+      inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
+      
+      inline def setClipPath(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
+      
+      inline def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
+      
+      inline def setCode(value: CodeComponent | ReactMarkdownNames): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      
+      inline def setCol(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      
+      inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
+      
+      inline def setColgroup(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
+      
+      inline def setColgroupUndefined: Self = StObject.set(x, "colgroup", js.undefined)
+      
+      inline def setData(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setDatalist(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
+      
+      inline def setDatalistUndefined: Self = StObject.set(x, "datalist", js.undefined)
+      
+      inline def setDd(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
+      
+      inline def setDdUndefined: Self = StObject.set(x, "dd", js.undefined)
+      
+      inline def setDefs(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+      
+      inline def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
+      
+      inline def setDel(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+      
+      inline def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
+      
+      inline def setDesc(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      
+      inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+      
+      inline def setDetails(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      
+      inline def setDfn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
+      
+      inline def setDfnUndefined: Self = StObject.set(x, "dfn", js.undefined)
+      
+      inline def setDialog(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+      
+      inline def setDialogUndefined: Self = StObject.set(x, "dialog", js.undefined)
+      
+      inline def setDiv(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+      
+      inline def setDivUndefined: Self = StObject.set(x, "div", js.undefined)
+      
+      inline def setDl(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
+      
+      inline def setDlUndefined: Self = StObject.set(x, "dl", js.undefined)
+      
+      inline def setDt(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
+      
+      inline def setDtUndefined: Self = StObject.set(x, "dt", js.undefined)
+      
+      inline def setEllipse(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+      
+      inline def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
+      
+      inline def setEm(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
+      
+      inline def setEmUndefined: Self = StObject.set(x, "em", js.undefined)
+      
+      inline def setEmbed(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+      
+      inline def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
+      
+      inline def setFeBlend(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
+      
+      inline def setFeBlendUndefined: Self = StObject.set(x, "feBlend", js.undefined)
+      
+      inline def setFeColorMatrix(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
+      
+      inline def setFeColorMatrixUndefined: Self = StObject.set(x, "feColorMatrix", js.undefined)
+      
+      inline def setFeComponentTransfer(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
+      
+      inline def setFeComponentTransferUndefined: Self = StObject.set(x, "feComponentTransfer", js.undefined)
+      
+      inline def setFeComposite(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
+      
+      inline def setFeCompositeUndefined: Self = StObject.set(x, "feComposite", js.undefined)
+      
+      inline def setFeConvolveMatrix(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
+      
+      inline def setFeConvolveMatrixUndefined: Self = StObject.set(x, "feConvolveMatrix", js.undefined)
+      
+      inline def setFeDiffuseLighting(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
+      
+      inline def setFeDiffuseLightingUndefined: Self = StObject.set(x, "feDiffuseLighting", js.undefined)
+      
+      inline def setFeDisplacementMap(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
+      
+      inline def setFeDisplacementMapUndefined: Self = StObject.set(x, "feDisplacementMap", js.undefined)
+      
+      inline def setFeDistantLight(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
+      
+      inline def setFeDistantLightUndefined: Self = StObject.set(x, "feDistantLight", js.undefined)
+      
+      inline def setFeDropShadow(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
+      
+      inline def setFeDropShadowUndefined: Self = StObject.set(x, "feDropShadow", js.undefined)
+      
+      inline def setFeFlood(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
+      
+      inline def setFeFloodUndefined: Self = StObject.set(x, "feFlood", js.undefined)
+      
+      inline def setFeFuncA(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feFuncA", value.asInstanceOf[js.Any])
+      
+      inline def setFeFuncAUndefined: Self = StObject.set(x, "feFuncA", js.undefined)
+      
+      inline def setFeFuncB(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feFuncB", value.asInstanceOf[js.Any])
+      
+      inline def setFeFuncBUndefined: Self = StObject.set(x, "feFuncB", js.undefined)
+      
+      inline def setFeFuncG(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feFuncG", value.asInstanceOf[js.Any])
+      
+      inline def setFeFuncGUndefined: Self = StObject.set(x, "feFuncG", js.undefined)
+      
+      inline def setFeFuncR(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feFuncR", value.asInstanceOf[js.Any])
+      
+      inline def setFeFuncRUndefined: Self = StObject.set(x, "feFuncR", js.undefined)
+      
+      inline def setFeGaussianBlur(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
+      
+      inline def setFeGaussianBlurUndefined: Self = StObject.set(x, "feGaussianBlur", js.undefined)
+      
+      inline def setFeImage(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
+      
+      inline def setFeImageUndefined: Self = StObject.set(x, "feImage", js.undefined)
+      
+      inline def setFeMerge(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
+      
+      inline def setFeMergeNode(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
+      
+      inline def setFeMergeNodeUndefined: Self = StObject.set(x, "feMergeNode", js.undefined)
+      
+      inline def setFeMergeUndefined: Self = StObject.set(x, "feMerge", js.undefined)
+      
+      inline def setFeMorphology(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
+      
+      inline def setFeMorphologyUndefined: Self = StObject.set(x, "feMorphology", js.undefined)
+      
+      inline def setFeOffset(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
+      
+      inline def setFeOffsetUndefined: Self = StObject.set(x, "feOffset", js.undefined)
+      
+      inline def setFePointLight(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "fePointLight", value.asInstanceOf[js.Any])
+      
+      inline def setFePointLightUndefined: Self = StObject.set(x, "fePointLight", js.undefined)
+      
+      inline def setFeSpecularLighting(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
+      
+      inline def setFeSpecularLightingUndefined: Self = StObject.set(x, "feSpecularLighting", js.undefined)
+      
+      inline def setFeSpotLight(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feSpotLight", value.asInstanceOf[js.Any])
+      
+      inline def setFeSpotLightUndefined: Self = StObject.set(x, "feSpotLight", js.undefined)
+      
+      inline def setFeTile(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
+      
+      inline def setFeTileUndefined: Self = StObject.set(x, "feTile", js.undefined)
+      
+      inline def setFeTurbulence(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
+      
+      inline def setFeTurbulenceUndefined: Self = StObject.set(x, "feTurbulence", js.undefined)
+      
+      inline def setFieldset(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsetUndefined: Self = StObject.set(x, "fieldset", js.undefined)
+      
+      inline def setFigcaption(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
+      
+      inline def setFigcaptionUndefined: Self = StObject.set(x, "figcaption", js.undefined)
+      
+      inline def setFigure(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
+      
+      inline def setFigureUndefined: Self = StObject.set(x, "figure", js.undefined)
+      
+      inline def setFilter(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      inline def setFooter(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      
+      inline def setForeignObject(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
+      
+      inline def setForeignObjectUndefined: Self = StObject.set(x, "foreignObject", js.undefined)
+      
+      inline def setForm(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      
+      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      
+      inline def setG(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      
+      inline def setGUndefined: Self = StObject.set(x, "g", js.undefined)
+      
+      inline def setH1(value: HeadingComponent | ReactMarkdownNames): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+      
+      inline def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
+      
+      inline def setH2(value: HeadingComponent | ReactMarkdownNames): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+      
+      inline def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
+      
+      inline def setH3(value: HeadingComponent | ReactMarkdownNames): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+      
+      inline def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
+      
+      inline def setH4(value: HeadingComponent | ReactMarkdownNames): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+      
+      inline def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
+      
+      inline def setH5(value: HeadingComponent | ReactMarkdownNames): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+      
+      inline def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
+      
+      inline def setH6(value: HeadingComponent | ReactMarkdownNames): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+      
+      inline def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
+      
+      inline def setHead(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      
+      inline def setHeader(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setHgroup(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
+      
+      inline def setHgroupUndefined: Self = StObject.set(x, "hgroup", js.undefined)
+      
+      inline def setHr(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+      
+      inline def setHrUndefined: Self = StObject.set(x, "hr", js.undefined)
+      
+      inline def setHtml(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      
+      inline def setI(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+      
+      inline def setIUndefined: Self = StObject.set(x, "i", js.undefined)
+      
+      inline def setIframe(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
+      
+      inline def setIframeUndefined: Self = StObject.set(x, "iframe", js.undefined)
+      
+      inline def setImage(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      
+      inline def setImg(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      
+      inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+      
+      inline def setInput(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      
+      inline def setIns(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
+      
+      inline def setInsUndefined: Self = StObject.set(x, "ins", js.undefined)
+      
+      inline def setKbd(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
+      
+      inline def setKbdUndefined: Self = StObject.set(x, "kbd", js.undefined)
+      
+      inline def setKeygen(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
+      
+      inline def setKeygenUndefined: Self = StObject.set(x, "keygen", js.undefined)
+      
+      inline def setLabel(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setLegend(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      
+      inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+      
+      inline def setLi(value: LiComponent | ReactMarkdownNames): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
+      
+      inline def setLiUndefined: Self = StObject.set(x, "li", js.undefined)
+      
+      inline def setLine(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      
+      inline def setLinearGradient(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
+      
+      inline def setLinearGradientUndefined: Self = StObject.set(x, "linearGradient", js.undefined)
+      
+      inline def setLink(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      
+      inline def setMain(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      
+      inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+      
+      inline def setMap(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      
+      inline def setMark(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      
+      inline def setMarker(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      
+      inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+      
+      inline def setMask(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setMenu(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      
+      inline def setMenuitem(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
+      
+      inline def setMenuitemUndefined: Self = StObject.set(x, "menuitem", js.undefined)
+      
+      inline def setMeta(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      
+      inline def setMetadata(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      
+      inline def setMeter(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+      
+      inline def setMeterUndefined: Self = StObject.set(x, "meter", js.undefined)
+      
+      inline def setMpath(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
+      
+      inline def setMpathUndefined: Self = StObject.set(x, "mpath", js.undefined)
+      
+      inline def setNav(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
+      
+      inline def setNavUndefined: Self = StObject.set(x, "nav", js.undefined)
+      
+      inline def setNoindex(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "noindex", value.asInstanceOf[js.Any])
+      
+      inline def setNoindexUndefined: Self = StObject.set(x, "noindex", js.undefined)
+      
+      inline def setNoscript(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      
+      inline def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
+      
+      inline def setObject(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      
+      inline def setOl(value: OrderedListComponent | ReactMarkdownNames): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+      
+      inline def setOlUndefined: Self = StObject.set(x, "ol", js.undefined)
+      
+      inline def setOptgroup(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
+      
+      inline def setOptgroupUndefined: Self = StObject.set(x, "optgroup", js.undefined)
+      
+      inline def setOption(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+      
+      inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+      
+      inline def setOutput(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      
+      inline def setP(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      
+      inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+      
+      inline def setParam(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      
+      inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+      
+      inline def setPath(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
+      inline def setPattern(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      
+      inline def setPicture(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+      
+      inline def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
+      
+      inline def setPolygon(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+      
+      inline def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
+      
+      inline def setPolyline(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+      
+      inline def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
+      
+      inline def setPre(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      
+      inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+      
+      inline def setProgress(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      
+      inline def setQ(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+      
+      inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+      
+      inline def setRadialGradient(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
+      
+      inline def setRadialGradientUndefined: Self = StObject.set(x, "radialGradient", js.undefined)
+      
+      inline def setRect(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+      
+      inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+      
+      inline def setRp(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
+      
+      inline def setRpUndefined: Self = StObject.set(x, "rp", js.undefined)
+      
+      inline def setRt(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
+      
+      inline def setRtUndefined: Self = StObject.set(x, "rt", js.undefined)
+      
+      inline def setRuby(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
+      
+      inline def setRubyUndefined: Self = StObject.set(x, "ruby", js.undefined)
+      
+      inline def setS(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      
+      inline def setSamp(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
+      
+      inline def setSampUndefined: Self = StObject.set(x, "samp", js.undefined)
+      
+      inline def setScript(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      
+      inline def setSection(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      
+      inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+      
+      inline def setSelect(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      
+      inline def setSlot(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      
+      inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+      
+      inline def setSmall(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      
+      inline def setSource(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      
+      inline def setSpan(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      
+      inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+      
+      inline def setStop(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+      
+      inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+      
+      inline def setStrong(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      
+      inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
+      
+      inline def setStyle(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setSub(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setSummary(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      
+      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+      
+      inline def setSup(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
+      
+      inline def setSvg(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      
+      inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+      
+      inline def setSwitch(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
+      
+      inline def setSwitchUndefined: Self = StObject.set(x, "switch", js.undefined)
+      
+      inline def setSymbol(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      
+      inline def setTable(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      
+      inline def setTbody(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
+      
+      inline def setTbodyUndefined: Self = StObject.set(x, "tbody", js.undefined)
+      
+      inline def setTd(value: TableCellComponent | ReactMarkdownNames): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
+      
+      inline def setTdUndefined: Self = StObject.set(x, "td", js.undefined)
+      
+      inline def setTemplate(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      
+      inline def setText(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextPath(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
+      
+      inline def setTextPathUndefined: Self = StObject.set(x, "textPath", js.undefined)
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      
+      inline def setTextarea(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+      
+      inline def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
+      
+      inline def setTfoot(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
+      
+      inline def setTfootUndefined: Self = StObject.set(x, "tfoot", js.undefined)
+      
+      inline def setTh(value: TableCellComponent | ReactMarkdownNames): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+      
+      inline def setThUndefined: Self = StObject.set(x, "th", js.undefined)
+      
+      inline def setThead(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
+      
+      inline def setTheadUndefined: Self = StObject.set(x, "thead", js.undefined)
+      
+      inline def setTime(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      
+      inline def setTitle(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      inline def setTr(value: TableRowComponent | ReactMarkdownNames): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+      
+      inline def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
+      
+      inline def setTrack(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      
+      inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+      
+      inline def setTspan(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
+      
+      inline def setTspanUndefined: Self = StObject.set(x, "tspan", js.undefined)
+      
+      inline def setU(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+      
+      inline def setUUndefined: Self = StObject.set(x, "u", js.undefined)
+      
+      inline def setUl(value: UnorderedListComponent | ReactMarkdownNames): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+      
+      inline def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
+      
+      inline def setUse(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      
+      inline def setVar(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
+      
+      inline def setVarUndefined: Self = StObject.set(x, "var", js.undefined)
+      
+      inline def setVideo(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      
+      inline def setView(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      
+      inline def setWbr(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
+      
+      inline def setWbrUndefined: Self = StObject.set(x, "wbr", js.undefined)
+      
+      inline def setWebview(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
+      
+      inline def setWebviewUndefined: Self = StObject.set(x, "webview", js.undefined)
     }
   }
   
-  type ReferenceType = typings.mdast.mod.ReferenceType
-  
-  type Renderer[T] = js.Function1[/* props */ T, ElementType[T]]
-  
-  type Renderers_ = StringDictionary[String | Renderer[js.Any]]
-  
-  trait SkipHtmlProp extends StObject {
-    
-    val skipHtml: js.UndefOr[Boolean] = js.undefined
-  }
-  object SkipHtmlProp {
-    
-    inline def apply(): SkipHtmlProp = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SkipHtmlProp]
-    }
-    
-    extension [Self <: SkipHtmlProp](x: Self) {
-      
-      inline def setSkipHtml(value: Boolean): Self = StObject.set(x, "skipHtml", value.asInstanceOf[js.Any])
-      
-      inline def setSkipHtmlUndefined: Self = StObject.set(x, "skipHtml", js.undefined)
-    }
-  }
-  
-  trait SourceProp extends StObject {
-    
-    /** @deprecated use children */
-    val source: String
-  }
-  object SourceProp {
-    
-    inline def apply(source: String): SourceProp = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SourceProp]
-    }
-    
-    extension [Self <: SourceProp](x: Self) {
-      
-      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-    }
-  }
+  type Options = ReactMarkdownOptions
 }

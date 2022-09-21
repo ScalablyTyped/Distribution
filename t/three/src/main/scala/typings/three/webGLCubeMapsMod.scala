@@ -9,11 +9,11 @@ object webGLCubeMapsMod {
   
   @JSImport("three/src/renderers/webgl/WebGLCubeMaps", "WebGLCubeMaps")
   @js.native
-  class WebGLCubeMaps protected () extends StObject {
+  open class WebGLCubeMaps protected () extends StObject {
     def this(renderer: WebGLRenderer) = this()
     
     def dispose(): Unit = js.native
     
-    def get(texture: js.Any): js.Any = js.native
+    def get(texture: Any): Any = js.native
   }
 }

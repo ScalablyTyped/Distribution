@@ -1,17 +1,150 @@
 package typings.phaser.Phaser.Types
 
 import typings.phaser.Phaser.Display.Color
-import typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
+import typings.phaser.Phaser.GameObjects.Container
+import typings.phaser.Phaser.GameObjects.GameObject
+import typings.phaser.Phaser.Scene
+import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Tilemaps.LayerData
-import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
+import typings.phaser.Phaser.Tilemaps.TilemapLayer
 import typings.phaser.Phaser.Tilemaps.Tileset
 import typings.phaser.Phaser.Types.Math.Vector2Like
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tilemaps {
+  
+  trait CreateFromObjectLayerConfig extends StObject {
+    
+    /**
+      * A custom class type to convert the objects in to.
+      */
+    var classType: js.UndefOr[GameObject] = js.undefined
+    
+    /**
+      * Optional Container to which the Game Objects are added.
+      */
+    var container: js.UndefOr[Container] = js.undefined
+    
+    /**
+      * Optional name or index of the frame within the Texture.
+      */
+    var frame: js.UndefOr[String | Double] = js.undefined
+    
+    /**
+      * An Object GID to convert.
+      */
+    var gid: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * A unique Object ID to convert.
+      */
+    var id: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Optional key of a Texture to be used, as stored in the Texture Manager, or a Texture instance.
+      */
+    var key: js.UndefOr[String | Texture] = js.undefined
+    
+    /**
+      * An Object Name to convert.
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A Scene reference, passed to the Game Objects constructors.
+      */
+    var scene: js.UndefOr[Scene] = js.undefined
+  }
+  object CreateFromObjectLayerConfig {
+    
+    inline def apply(): CreateFromObjectLayerConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CreateFromObjectLayerConfig]
+    }
+    
+    extension [Self <: CreateFromObjectLayerConfig](x: Self) {
+      
+      inline def setClassType(value: GameObject): Self = StObject.set(x, "classType", value.asInstanceOf[js.Any])
+      
+      inline def setClassTypeUndefined: Self = StObject.set(x, "classType", js.undefined)
+      
+      inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      
+      inline def setFrame(value: String | Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      
+      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+      
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      
+      inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+      
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setKey(value: String | Texture): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+      
+      inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+    }
+  }
+  
+  trait DebugStyleOptions extends StObject {
+    
+    /**
+      * Color to use for drawing a filled
+      * rectangle at colliding tile locations. If set to null, colliding tiles will not be drawn.
+      */
+    @JSName("styleConfig.collidingTileColor")
+    var styleConfigDotcollidingTileColor: js.UndefOr[Color] = js.undefined
+    
+    /**
+      * Color to use for drawing a line at interesting
+      * tile faces. If set to null, interesting tile faces will not be drawn.
+      */
+    @JSName("styleConfig.faceColor")
+    var styleConfigDotfaceColor: js.UndefOr[Color] = js.undefined
+    
+    /**
+      * Color to use for drawing a filled rectangle at
+      * non-colliding tile locations. If set to null, non-colliding tiles will not be drawn.
+      */
+    @JSName("styleConfig.tileColor")
+    var styleConfigDottileColor: js.UndefOr[Color] = js.undefined
+  }
+  object DebugStyleOptions {
+    
+    inline def apply(): DebugStyleOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DebugStyleOptions]
+    }
+    
+    extension [Self <: DebugStyleOptions](x: Self) {
+      
+      inline def setStyleConfigDotcollidingTileColor(value: Color): Self = StObject.set(x, "styleConfig.collidingTileColor", value.asInstanceOf[js.Any])
+      
+      inline def setStyleConfigDotcollidingTileColorUndefined: Self = StObject.set(x, "styleConfig.collidingTileColor", js.undefined)
+      
+      inline def setStyleConfigDotfaceColor(value: Color): Self = StObject.set(x, "styleConfig.faceColor", value.asInstanceOf[js.Any])
+      
+      inline def setStyleConfigDotfaceColorUndefined: Self = StObject.set(x, "styleConfig.faceColor", js.undefined)
+      
+      inline def setStyleConfigDottileColor(value: Color): Self = StObject.set(x, "styleConfig.tileColor", value.asInstanceOf[js.Any])
+      
+      inline def setStyleConfigDottileColorUndefined: Self = StObject.set(x, "styleConfig.tileColor", js.undefined)
+    }
+  }
   
   trait FilteringOptions extends StObject {
     
@@ -115,46 +248,6 @@ object Tilemaps {
     }
   }
   
-  trait GetTilesWithinFilteringOptions extends StObject {
-    
-    /**
-      * If true, only return tiles that have at least one interesting face.
-      */
-    var hasInterestingFace: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * If true, only return tiles that collide on at least one side.
-      */
-    var isColliding: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * If true, only return tiles that don't have -1 for an index.
-      */
-    var isNotEmpty: js.UndefOr[Boolean] = js.undefined
-  }
-  object GetTilesWithinFilteringOptions {
-    
-    inline def apply(): GetTilesWithinFilteringOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GetTilesWithinFilteringOptions]
-    }
-    
-    extension [Self <: GetTilesWithinFilteringOptions](x: Self) {
-      
-      inline def setHasInterestingFace(value: Boolean): Self = StObject.set(x, "hasInterestingFace", value.asInstanceOf[js.Any])
-      
-      inline def setHasInterestingFaceUndefined: Self = StObject.set(x, "hasInterestingFace", js.undefined)
-      
-      inline def setIsColliding(value: Boolean): Self = StObject.set(x, "isColliding", value.asInstanceOf[js.Any])
-      
-      inline def setIsCollidingUndefined: Self = StObject.set(x, "isColliding", js.undefined)
-      
-      inline def setIsNotEmpty(value: Boolean): Self = StObject.set(x, "isNotEmpty", value.asInstanceOf[js.Any])
-      
-      inline def setIsNotEmptyUndefined: Self = StObject.set(x, "isNotEmpty", js.undefined)
-    }
-  }
-  
   trait LayerDataConfig extends StObject {
     
     /**
@@ -175,22 +268,22 @@ object Tilemaps {
     /**
       * An array of physics bodies.
       */
-    var bodies: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var bodies: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * An array of callbacks.
       */
-    var callbacks: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var callbacks: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Tile Collision ID index map.
       */
-    var collideIndexes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var collideIndexes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * An array of the tile data indexes.
       */
-    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var data: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The height of the layer in tiles.
@@ -205,7 +298,7 @@ object Tilemaps {
     /**
       * Tile ID index map.
       */
-    var indexes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var indexes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The name of the layer, if specified in Tiled.
@@ -230,7 +323,7 @@ object Tilemaps {
     /**
       * A reference to the Tilemap layer that owns this data.
       */
-    var tilemapLayer: js.UndefOr[DynamicTilemapLayer | StaticTilemapLayer] = js.undefined
+    var tilemapLayer: js.UndefOr[TilemapLayer] = js.undefined
     
     /**
       * Is the layer visible or not?
@@ -278,29 +371,29 @@ object Tilemaps {
       
       inline def setBaseTileWidthUndefined: Self = StObject.set(x, "baseTileWidth", js.undefined)
       
-      inline def setBodies(value: js.Array[js.Any]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
+      inline def setBodies(value: js.Array[Any]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
       
       inline def setBodiesUndefined: Self = StObject.set(x, "bodies", js.undefined)
       
-      inline def setBodiesVarargs(value: js.Any*): Self = StObject.set(x, "bodies", js.Array(value :_*))
+      inline def setBodiesVarargs(value: Any*): Self = StObject.set(x, "bodies", js.Array(value*))
       
-      inline def setCallbacks(value: js.Array[js.Any]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: js.Array[Any]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
       inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
-      inline def setCallbacksVarargs(value: js.Any*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+      inline def setCallbacksVarargs(value: Any*): Self = StObject.set(x, "callbacks", js.Array(value*))
       
-      inline def setCollideIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "collideIndexes", value.asInstanceOf[js.Any])
+      inline def setCollideIndexes(value: js.Array[Any]): Self = StObject.set(x, "collideIndexes", value.asInstanceOf[js.Any])
       
       inline def setCollideIndexesUndefined: Self = StObject.set(x, "collideIndexes", js.undefined)
       
-      inline def setCollideIndexesVarargs(value: js.Any*): Self = StObject.set(x, "collideIndexes", js.Array(value :_*))
+      inline def setCollideIndexesVarargs(value: Any*): Self = StObject.set(x, "collideIndexes", js.Array(value*))
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -310,11 +403,11 @@ object Tilemaps {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+      inline def setIndexes(value: js.Array[Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
       
       inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
       
-      inline def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+      inline def setIndexesVarargs(value: Any*): Self = StObject.set(x, "indexes", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -324,7 +417,7 @@ object Tilemaps {
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setPropertiesVarargs(value: js.Object*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: js.Object*): Self = StObject.set(x, "properties", js.Array(value*))
       
       inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
       
@@ -334,7 +427,7 @@ object Tilemaps {
       
       inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
       
-      inline def setTilemapLayer(value: DynamicTilemapLayer | StaticTilemapLayer): Self = StObject.set(x, "tilemapLayer", value.asInstanceOf[js.Any])
+      inline def setTilemapLayer(value: TilemapLayer): Self = StObject.set(x, "tilemapLayer", value.asInstanceOf[js.Any])
       
       inline def setTilemapLayerUndefined: Self = StObject.set(x, "tilemapLayer", js.undefined)
       
@@ -370,7 +463,7 @@ object Tilemaps {
     /**
       * The format of the Tilemap, as defined in Tiled.
       */
-    var format: js.UndefOr[integer] = js.undefined
+    var format: js.UndefOr[Double] = js.undefined
     
     /**
       * The height of the entire tilemap.
@@ -385,12 +478,12 @@ object Tilemaps {
     /**
       * The collection of images the map uses(specified in Tiled).
       */
-    var imageCollections: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var imageCollections: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * An array with all the layers configured to the MapData.
       */
-    var images: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var images: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The layers of the tilemap.
@@ -435,7 +528,7 @@ object Tilemaps {
     /**
       * Array of Tile instances.
       */
-    var tiles: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var tiles: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The tilesets the map uses.
@@ -470,7 +563,7 @@ object Tilemaps {
       
       inline def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
       
-      inline def setFormat(value: integer): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -482,23 +575,23 @@ object Tilemaps {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setImageCollections(value: js.Array[js.Any]): Self = StObject.set(x, "imageCollections", value.asInstanceOf[js.Any])
+      inline def setImageCollections(value: js.Array[Any]): Self = StObject.set(x, "imageCollections", value.asInstanceOf[js.Any])
       
       inline def setImageCollectionsUndefined: Self = StObject.set(x, "imageCollections", js.undefined)
       
-      inline def setImageCollectionsVarargs(value: js.Any*): Self = StObject.set(x, "imageCollections", js.Array(value :_*))
+      inline def setImageCollectionsVarargs(value: Any*): Self = StObject.set(x, "imageCollections", js.Array(value*))
       
-      inline def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      inline def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: Any*): Self = StObject.set(x, "images", js.Array(value*))
       
       inline def setLayers(value: js.Array[LayerData]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: LayerData*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: LayerData*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -528,17 +621,17 @@ object Tilemaps {
       
       inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
       
-      inline def setTiles(value: js.Array[js.Any]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+      inline def setTiles(value: js.Array[Any]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
       
       inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
       
-      inline def setTilesVarargs(value: js.Any*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+      inline def setTilesVarargs(value: Any*): Self = StObject.set(x, "tiles", js.Array(value*))
       
       inline def setTilesets(value: js.Array[Tileset]): Self = StObject.set(x, "tilesets", value.asInstanceOf[js.Any])
       
       inline def setTilesetsUndefined: Self = StObject.set(x, "tilesets", js.undefined)
       
-      inline def setTilesetsVarargs(value: Tileset*): Self = StObject.set(x, "tilesets", js.Array(value :_*))
+      inline def setTilesetsVarargs(value: Tileset*): Self = StObject.set(x, "tilesets", js.Array(value*))
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -564,7 +657,7 @@ object Tilemaps {
     /**
       * An array of all objects on this Object Layer.
       */
-    var objects: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var objects: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The opacity of the layer, between 0 and 1.
@@ -574,12 +667,12 @@ object Tilemaps {
     /**
       * The custom properties defined on the Object Layer, keyed by their name.
       */
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
     /**
       * The type of each custom property defined on the Object Layer, keyed by its name.
       */
-    var propertytypes: js.UndefOr[js.Any] = js.undefined
+    var propertytypes: js.UndefOr[Any] = js.undefined
     
     /**
       * The type of the layer, which should be `objectgroup`.
@@ -604,21 +697,21 @@ object Tilemaps {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Array[Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
       inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
       
-      inline def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: Any*): Self = StObject.set(x, "objects", js.Array(value*))
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setPropertytypes(value: js.Any): Self = StObject.set(x, "propertytypes", value.asInstanceOf[js.Any])
+      inline def setPropertytypes(value: Any): Self = StObject.set(x, "propertytypes", value.asInstanceOf[js.Any])
       
       inline def setPropertytypesUndefined: Self = StObject.set(x, "propertytypes", js.undefined)
       
@@ -703,7 +796,7 @@ object Tilemaps {
     /**
       * Only set if of type 'tile'.
       */
-    var gid: js.UndefOr[integer] = js.undefined
+    var gid: js.UndefOr[Double] = js.undefined
     
     /**
       * The height of this object, in pixels.
@@ -713,7 +806,7 @@ object Tilemaps {
     /**
       * The unique object ID.
       */
-    var id: integer
+    var id: Double
     
     /**
       * The name this object was assigned in Tiled.
@@ -738,7 +831,7 @@ object Tilemaps {
     /**
       * Custom properties object.
       */
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
     /**
       * Only set, and set to `true`, if a rectangle object.
@@ -753,10 +846,10 @@ object Tilemaps {
     /**
       * Only set if a text object. Contains the text objects properties.
       */
-    var text: js.UndefOr[js.Any] = js.undefined
+    var text: js.UndefOr[Any] = js.undefined
     
     /**
-      * The type, as assigned in Tiled.
+      * The string type of this instance, as assigned in Tiled. Tiled supports inheriting instance types from tilesets; in that case, the type will be set in the tile's data, but will be `''` here; use the `gid` to fetch the tile data or properties.
       */
     var `type`: String
     
@@ -782,7 +875,7 @@ object Tilemaps {
   }
   object TiledObject {
     
-    inline def apply(id: integer, name: String, `type`: String): TiledObject = {
+    inline def apply(id: Double, name: String, `type`: String): TiledObject = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TiledObject]
@@ -806,7 +899,7 @@ object Tilemaps {
       
       inline def setFlippedVerticalUndefined: Self = StObject.set(x, "flippedVertical", js.undefined)
       
-      inline def setGid(value: integer): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
       inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
@@ -814,7 +907,7 @@ object Tilemaps {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -826,15 +919,15 @@ object Tilemaps {
       
       inline def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
       
-      inline def setPolygonVarargs(value: Vector2Like*): Self = StObject.set(x, "polygon", js.Array(value :_*))
+      inline def setPolygonVarargs(value: Vector2Like*): Self = StObject.set(x, "polygon", js.Array(value*))
       
       inline def setPolyline(value: js.Array[Vector2Like]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
       
       inline def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
       
-      inline def setPolylineVarargs(value: Vector2Like*): Self = StObject.set(x, "polyline", js.Array(value :_*))
+      inline def setPolylineVarargs(value: Vector2Like*): Self = StObject.set(x, "polyline", js.Array(value*))
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
@@ -846,7 +939,7 @@ object Tilemaps {
       
       inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
@@ -875,12 +968,12 @@ object Tilemaps {
     /**
       * Instead of loading from the cache, you can also load directly from a 2D array of tile indexes.
       */
-    var data: js.UndefOr[js.Array[js.Array[integer]]] = js.undefined
+    var data: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
     
     /**
       * The height of the map in tiles.
       */
-    var height: js.UndefOr[integer] = js.undefined
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Controls how empty tiles, tiles with an index of -1,
@@ -900,17 +993,17 @@ object Tilemaps {
     /**
       * The height of a tile in pixels.
       */
-    var tileHeight: js.UndefOr[integer] = js.undefined
+    var tileHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The width of a tile in pixels.
       */
-    var tileWidth: js.UndefOr[integer] = js.undefined
+    var tileWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The width of the map in tiles.
       */
-    var width: js.UndefOr[integer] = js.undefined
+    var width: js.UndefOr[Double] = js.undefined
   }
   object TilemapConfig {
     
@@ -921,13 +1014,13 @@ object Tilemaps {
     
     extension [Self <: TilemapConfig](x: Self) {
       
-      inline def setData(value: js.Array[js.Array[integer]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Array[integer]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[Double]*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
@@ -939,15 +1032,15 @@ object Tilemaps {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setTileHeight(value: integer): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+      inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
       
       inline def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
       
-      inline def setTileWidth(value: integer): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+      inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
       
       inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
       
-      inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }

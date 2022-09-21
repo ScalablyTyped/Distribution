@@ -35,10 +35,10 @@ trait GlideScopedEvaluator extends StObject {
     *   gs.info(evaluator.evaluateScript(gr, 'test_script', vars));
     * }
     */
-  def evaluateScript(grObj: ScopedGlideRecord): js.Any = js.native
-  def evaluateScript(grObj: ScopedGlideRecord, scriptField: String): js.Any = js.native
-  def evaluateScript(grObj: ScopedGlideRecord, scriptField: String, variables: js.Object): js.Any = js.native
-  def evaluateScript(grObj: ScopedGlideRecord, scriptField: Unit, variables: js.Object): js.Any = js.native
+  def evaluateScript(grObj: ScopedGlideRecord): Any = js.native
+  def evaluateScript(grObj: ScopedGlideRecord, scriptField: String): Any = js.native
+  def evaluateScript(grObj: ScopedGlideRecord, scriptField: String, variables: js.Object): Any = js.native
+  def evaluateScript(grObj: ScopedGlideRecord, scriptField: Unit, variables: js.Object): Any = js.native
   
   /**
     * Returns a variable from a GlideScopedEvaluator object.
@@ -65,7 +65,7 @@ trait GlideScopedEvaluator extends StObject {
     *   gs.info(evaluator.getVariable('result'));
     * }
     */
-  def getVariable(name: String): js.Any = js.native
+  def getVariable(name: String): Any = js.native
   
   /**
     * Puts a variable into the GlideScopedEvaluator object. These variables are available to
@@ -93,5 +93,5 @@ trait GlideScopedEvaluator extends StObject {
     *   gs.info(evaluator.getVariable('result'));
     * }
     */
-  def putVariable(name: String, value: js.Any): Unit = js.native
+  def putVariable(name: String, value: Any): Unit = js.native
 }

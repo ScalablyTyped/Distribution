@@ -9,16 +9,16 @@ object mod {
   
   @JSImport("node-xmpp-client", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(options: XmppOptions) = this()
     
     def connect(): Unit = js.native
     
     def disconnect(): Unit = js.native
     
-    def on(event: String, c: js.Function2[/* e */ js.Any, /* d */ js.Any, js.Any]): Unit = js.native
+    def on(event: String, c: js.Function2[/* e */ Any, /* d */ Any, Any]): Unit = js.native
     
-    def send(stanza: js.Any): Unit = js.native
+    def send(stanza: Any): Unit = js.native
   }
   /* static members */
   object Client {
@@ -35,7 +35,7 @@ object mod {
   
   trait Bosh extends StObject {
     
-    var prebind: js.UndefOr[js.Function2[/* error */ js.Any, /* data */ js.Any, Unit]] = js.undefined
+    var prebind: js.UndefOr[js.Function2[/* error */ Any, /* data */ Any, Unit]] = js.undefined
     
     var url: js.UndefOr[String] = js.undefined
   }
@@ -48,7 +48,7 @@ object mod {
     
     extension [Self <: Bosh](x: Self) {
       
-      inline def setPrebind(value: (/* error */ js.Any, /* data */ js.Any) => Unit): Self = StObject.set(x, "prebind", js.Any.fromFunction2(value))
+      inline def setPrebind(value: (/* error */ Any, /* data */ Any) => Unit): Self = StObject.set(x, "prebind", js.Any.fromFunction2(value))
       
       inline def setPrebindUndefined: Self = StObject.set(x, "prebind", js.undefined)
       
@@ -61,16 +61,16 @@ object mod {
   @js.native
   trait Element extends StObject {
     
-    def attr(attr: js.Any, `val`: js.Any): js.Any = js.native
+    def attr(attr: Any, `val`: Any): Any = js.native
     
     def c(name: String): Element = js.native
-    def c(name: String, attrs: js.Any): Element = js.native
+    def c(name: String, attrs: Any): Element = js.native
     
     def cnode(child: Element): Element = js.native
     
     def findNS(prefix: String): String = js.native
     
-    def getAttrs(): js.Any = js.native
+    def getAttrs(): Any = js.native
     
     def getNS(): String = js.native
     
@@ -82,11 +82,11 @@ object mod {
     
     def remove(el: Element, xmnls: String): Element = js.native
     
-    def setAttrs(attrs: js.Any): Unit = js.native
+    def setAttrs(attrs: Any): Unit = js.native
     
     def t(text: String): Element = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     def up(): Element = js.native
   }
@@ -98,7 +98,7 @@ object mod {
        with // This has to be used for the static class initializer new Client.Stanza(..). If there is a better way feel free to
   // contribute.
   // tslint:disable-next-line:no-misused-new
-  Instantiable2[/* name */ String, /* attr */ js.Any, Stanza] {
+  Instantiable2[/* name */ String, /* attr */ Any, Stanza] {
     
     var from: String = js.native
     
@@ -120,7 +120,7 @@ object mod {
     var bosh: js.UndefOr[Bosh] = js.undefined
     
     // connect to the legacy SSL port, requires at least the host to be specified
-    var credentials: js.UndefOr[js.Any] = js.undefined
+    var credentials: js.UndefOr[Any] = js.undefined
     
     // if admin user act on behalf of another user (just user)
     var disallowTLS: js.UndefOr[Boolean] = js.undefined
@@ -165,7 +165,7 @@ object mod {
       
       inline def setBoshUndefined: Self = StObject.set(x, "bosh", js.undefined)
       
-      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("TextBoxRelativeSizeSettings")
 @js.native
-class TextBoxRelativeSizeSettings ()
+open class TextBoxRelativeSizeSettings ()
   extends StObject
      with typings.devexpressWeb.TextBoxRelativeSizeSettings {
   

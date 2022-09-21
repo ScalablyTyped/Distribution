@@ -21,20 +21,20 @@ object reduxMod {
       /* keyof {} */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
-  ] */, TAction /* <: js.Any */](orm: ORM[I, /* keyof I */ String]): ORMReducer[I, TAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(orm.asInstanceOf[js.Any]).asInstanceOf[ORMReducer[I, TAction]]
+  ] */, TAction /* <: Any */](orm: ORM[I, /* keyof I */ String]): ORMReducer[I, TAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(orm.asInstanceOf[js.Any]).asInstanceOf[ORMReducer[I, TAction]]
   inline def createReducer[I /* <: IndexedModelClasses[
     js.Object, 
     Extract[
       /* keyof {} */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
-  ] */, TAction /* <: js.Any */](orm: ORM[I, /* keyof I */ String], updater: defaultUpdater[I, TAction]): ORMReducer[I, TAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(orm.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[ORMReducer[I, TAction]]
+  ] */, TAction /* <: Any */](orm: ORM[I, /* keyof I */ String], updater: defaultUpdater[I, TAction]): ORMReducer[I, TAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(orm.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[ORMReducer[I, TAction]]
   
-  inline def createSelector[I, R](orm: ORM[I, /* keyof I */ String], ormSelector: ORMSelector[I, js.Array[js.Any], R]): Selector[OrmState[I], R] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSelector")(orm.asInstanceOf[js.Any], ormSelector.asInstanceOf[js.Any])).asInstanceOf[Selector[OrmState[I], R]]
+  inline def createSelector[I, R](orm: ORM[I, /* keyof I */ String], ormSelector: ORMSelector[I, js.Array[Any], R]): Selector[OrmState[I], R] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSelector")(orm.asInstanceOf[js.Any], ormSelector.asInstanceOf[js.Any])).asInstanceOf[Selector[OrmState[I], R]]
   inline def createSelector[S, I, R](
     orm: ORM[I, /* keyof I */ String],
     ormStateSelector: Selector[S, OrmState[I]],
-    ormSelector: ORMSelector[I, js.Array[js.Any], R]
+    ormSelector: ORMSelector[I, js.Array[Any], R]
   ): Selector[S, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSelector")(orm.asInstanceOf[js.Any], ormStateSelector.asInstanceOf[js.Any], ormSelector.asInstanceOf[js.Any])).asInstanceOf[Selector[S, R]]
   inline def createSelector[S, I, R1, R](
     orm: ORM[I, /* keyof I */ String],
@@ -94,7 +94,7 @@ object reduxMod {
       /* keyof {} */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
-  ] */, TAction /* <: js.Any */] = js.Function2[/* state */ js.UndefOr[OrmState[I]], /* action */ TAction, OrmState[I]]
+  ] */, TAction /* <: Any */] = js.Function2[/* state */ js.UndefOr[OrmState[I]], /* action */ TAction, OrmState[I]]
   
   type ORMSelector[I /* <: IndexedModelClasses[
     js.Object, 
@@ -102,7 +102,7 @@ object reduxMod {
       /* keyof {} */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
-  ] */, Args /* <: js.Array[js.Any] */, R] = js.Function2[/* session */ OrmSession[I], /* args */ Args, R]
+  ] */, Args /* <: js.Array[Any] */, R] = js.Function2[/* session */ OrmSession[I], /* args */ Args, R]
   
   type Selector[S, R] = js.Function1[/* state */ S, R]
   
@@ -112,5 +112,5 @@ object reduxMod {
       /* keyof {} */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
-  ] */, TAction /* <: js.Any */] = js.Function2[/* session */ OrmSession[I], /* action */ TAction, Unit]
+  ] */, TAction /* <: Any */] = js.Function2[/* session */ OrmSession[I], /* action */ TAction, Unit]
 }

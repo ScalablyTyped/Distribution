@@ -29,7 +29,7 @@ object ListDataSetsResponse {
     
     inline def setDataSetsUndefined: Self = StObject.set(x, "DataSets", js.undefined)
     
-    inline def setDataSetsVarargs(value: DataSetEntry*): Self = StObject.set(x, "DataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: DataSetEntry*): Self = StObject.set(x, "DataSets", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

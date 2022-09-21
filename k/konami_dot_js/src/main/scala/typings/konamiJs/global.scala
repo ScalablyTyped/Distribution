@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("Konami")
   @js.native
-  class Konami protected ()
+  open class Konami protected ()
     extends StObject
        with typings.konamiJs.Konami {
     def this(action: String) = this()

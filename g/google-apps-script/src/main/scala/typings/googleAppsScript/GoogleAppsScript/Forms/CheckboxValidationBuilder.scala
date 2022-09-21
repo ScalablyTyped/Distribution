@@ -24,6 +24,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait CheckboxValidationBuilder extends StObject {
   
+  def build(): CheckboxValidation
+  
   def requireSelectAtLeast(number: Integer): CheckboxValidationBuilder
   
   def requireSelectAtMost(number: Integer): CheckboxValidationBuilder
@@ -33,15 +35,18 @@ trait CheckboxValidationBuilder extends StObject {
 object CheckboxValidationBuilder {
   
   inline def apply(
+    build: () => CheckboxValidation,
     requireSelectAtLeast: Integer => CheckboxValidationBuilder,
     requireSelectAtMost: Integer => CheckboxValidationBuilder,
     requireSelectExactly: Integer => CheckboxValidationBuilder
   ): CheckboxValidationBuilder = {
-    val __obj = js.Dynamic.literal(requireSelectAtLeast = js.Any.fromFunction1(requireSelectAtLeast), requireSelectAtMost = js.Any.fromFunction1(requireSelectAtMost), requireSelectExactly = js.Any.fromFunction1(requireSelectExactly))
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireSelectAtLeast = js.Any.fromFunction1(requireSelectAtLeast), requireSelectAtMost = js.Any.fromFunction1(requireSelectAtMost), requireSelectExactly = js.Any.fromFunction1(requireSelectExactly))
     __obj.asInstanceOf[CheckboxValidationBuilder]
   }
   
   extension [Self <: CheckboxValidationBuilder](x: Self) {
+    
+    inline def setBuild(value: () => CheckboxValidation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     inline def setRequireSelectAtLeast(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtLeast", js.Any.fromFunction1(value))
     

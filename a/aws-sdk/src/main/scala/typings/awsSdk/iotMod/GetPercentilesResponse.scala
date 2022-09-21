@@ -24,6 +24,6 @@ object GetPercentilesResponse {
     
     inline def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
     
-    inline def setPercentilesVarargs(value: PercentPair*): Self = StObject.set(x, "percentiles", js.Array(value :_*))
+    inline def setPercentilesVarargs(value: PercentPair*): Self = StObject.set(x, "percentiles", js.Array(value*))
   }
 }

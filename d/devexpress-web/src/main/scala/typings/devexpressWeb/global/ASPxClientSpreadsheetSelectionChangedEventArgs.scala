@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpreadsheetSelectionChangedEventArgs")
 @js.native
-class ASPxClientSpreadsheetSelectionChangedEventArgs protected ()
+open class ASPxClientSpreadsheetSelectionChangedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpreadsheetSelectionChangedEventArgs {
   /**

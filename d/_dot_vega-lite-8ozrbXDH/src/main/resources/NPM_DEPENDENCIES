@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".vega-lite-8ozrbXDH" : "5.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".vega-lite-8ozrbXDH" : "5.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

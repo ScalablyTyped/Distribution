@@ -29,7 +29,7 @@ object Group {
     
     inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value*))
     
     inline def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     

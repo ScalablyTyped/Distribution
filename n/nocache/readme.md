@@ -1,7 +1,7 @@
 
 # Scala.js typings for nocache
 
-Typings are for version 2.1.0
+Typings are for version 3.0.4
 
 ## Library description:
 Middleware to destroy caching
@@ -9,16 +9,13 @@ Middleware to destroy caching
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | nocache |
-| Keywords           | helmet, security, express, connect, nocache, caching, cache |
-| # releases         | 2 |
-| # dependents       | 57 |
-| # downloads        | 46432457 |
-| # stars            | 2 |
+| Keywords           | express, connect, nocache, caching, cache |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 6247084.666666667 |
+| # stars            | 104.0 |
 
 ## Links
-- [Homepage](https://helmetjs.github.io/docs/nocache/)
-- [Bugs](https://github.com/helmetjs/nocache/issues)
-- [Repository](https://github.com/helmetjs/nocache)
 - [Npm](https://www.npmjs.com/package/nocache)
     
 

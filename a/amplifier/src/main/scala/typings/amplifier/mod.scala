@@ -15,11 +15,11 @@ object mod extends Shortcut {
   
   trait AjaxSettings
     extends StObject
-       with typings.jquery.JQuery.AjaxSettings[js.Any] {
+       with typings.jquery.JQuery.AjaxSettings[Any] {
     
-    var dataMap: js.UndefOr[js.Object | (js.Function1[/* data */ js.Any, js.Object])] = js.undefined
+    var dataMap: js.UndefOr[js.Object | (js.Function1[/* data */ Any, js.Object])] = js.undefined
     
-    var decoder: js.UndefOr[js.Any] = js.undefined
+    var decoder: js.UndefOr[Any] = js.undefined
   }
   object AjaxSettings {
     
@@ -30,24 +30,24 @@ object mod extends Shortcut {
     
     extension [Self <: AjaxSettings](x: Self) {
       
-      inline def setDataMap(value: js.Object | (js.Function1[/* data */ js.Any, js.Object])): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
+      inline def setDataMap(value: js.Object | (js.Function1[/* data */ Any, js.Object])): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
       
-      inline def setDataMapFunction1(value: /* data */ js.Any => js.Object): Self = StObject.set(x, "dataMap", js.Any.fromFunction1(value))
+      inline def setDataMapFunction1(value: /* data */ Any => js.Object): Self = StObject.set(x, "dataMap", js.Any.fromFunction1(value))
       
       inline def setDataMapUndefined: Self = StObject.set(x, "dataMap", js.undefined)
       
-      inline def setDecoder(value: js.Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
+      inline def setDecoder(value: Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
       inline def setDecoderUndefined: Self = StObject.set(x, "decoder", js.undefined)
     }
   }
   
   type Decoder = js.Function5[
-    /* data */ js.UndefOr[js.Any], 
+    /* data */ js.UndefOr[Any], 
     /* status */ js.UndefOr[String], 
     /* xhr */ js.UndefOr[JQueryXHR], 
-    /* success */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]], 
-    /* error */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]], 
+    /* success */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
+    /* error */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
     Unit
   ]
   
@@ -56,132 +56,114 @@ object mod extends Shortcut {
        with /* decoderName */ StringDictionary[Decoder] {
     
     def jsSend(): Unit
-    def jsSend(data: js.Any): Unit
-    def jsSend(data: js.Any, status: String): Unit
-    def jsSend(data: js.Any, status: String, xhr: Unit, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(data: Any): Unit
+    def jsSend(data: Any, status: String): Unit
+    def jsSend(data: Any, status: String, xhr: Unit, success: js.Function1[/* repeated */ Any, Unit]): Unit
     def jsSend(
-      data: js.Any,
+      data: Any,
       status: String,
       xhr: Unit,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      success: js.Function1[/* repeated */ Any, Unit],
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
+    def jsSend(data: Any, status: String, xhr: Unit, success: Unit, error: js.Function1[/* repeated */ Any, Unit]): Unit
+    def jsSend(data: Any, status: String, xhr: JQueryXHR): Unit
+    def jsSend(data: Any, status: String, xhr: JQueryXHR, success: js.Function1[/* repeated */ Any, Unit]): Unit
     def jsSend(
-      data: js.Any,
-      status: String,
-      xhr: Unit,
-      success: Unit,
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit
-    def jsSend(data: js.Any, status: String, xhr: JQueryXHR): Unit
-    def jsSend(data: js.Any, status: String, xhr: JQueryXHR, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
-    def jsSend(
-      data: js.Any,
+      data: Any,
       status: String,
       xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      success: js.Function1[/* repeated */ Any, Unit],
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
     def jsSend(
-      data: js.Any,
+      data: Any,
       status: String,
       xhr: JQueryXHR,
       success: Unit,
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
-    def jsSend(data: js.Any, status: Unit, xhr: Unit, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(data: Any, status: Unit, xhr: Unit, success: js.Function1[/* repeated */ Any, Unit]): Unit
     def jsSend(
-      data: js.Any,
+      data: Any,
       status: Unit,
       xhr: Unit,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      success: js.Function1[/* repeated */ Any, Unit],
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
+    def jsSend(data: Any, status: Unit, xhr: Unit, success: Unit, error: js.Function1[/* repeated */ Any, Unit]): Unit
+    def jsSend(data: Any, status: Unit, xhr: JQueryXHR): Unit
+    def jsSend(data: Any, status: Unit, xhr: JQueryXHR, success: js.Function1[/* repeated */ Any, Unit]): Unit
     def jsSend(
-      data: js.Any,
-      status: Unit,
-      xhr: Unit,
-      success: Unit,
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit
-    def jsSend(data: js.Any, status: Unit, xhr: JQueryXHR): Unit
-    def jsSend(data: js.Any, status: Unit, xhr: JQueryXHR, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
-    def jsSend(
-      data: js.Any,
+      data: Any,
       status: Unit,
       xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      success: js.Function1[/* repeated */ Any, Unit],
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
     def jsSend(
-      data: js.Any,
+      data: Any,
       status: Unit,
       xhr: JQueryXHR,
       success: Unit,
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
     def jsSend(data: Unit, status: String): Unit
-    def jsSend(data: Unit, status: String, xhr: Unit, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(data: Unit, status: String, xhr: Unit, success: js.Function1[/* repeated */ Any, Unit]): Unit
     def jsSend(
       data: Unit,
       status: String,
       xhr: Unit,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      success: js.Function1[/* repeated */ Any, Unit],
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
     def jsSend(
       data: Unit,
       status: String,
       xhr: Unit,
       success: Unit,
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
     def jsSend(data: Unit, status: String, xhr: JQueryXHR): Unit
-    def jsSend(data: Unit, status: String, xhr: JQueryXHR, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(data: Unit, status: String, xhr: JQueryXHR, success: js.Function1[/* repeated */ Any, Unit]): Unit
     def jsSend(
       data: Unit,
       status: String,
       xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      success: js.Function1[/* repeated */ Any, Unit],
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
     def jsSend(
       data: Unit,
       status: String,
       xhr: JQueryXHR,
       success: Unit,
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
-    def jsSend(data: Unit, status: Unit, xhr: Unit, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(data: Unit, status: Unit, xhr: Unit, success: js.Function1[/* repeated */ Any, Unit]): Unit
     def jsSend(
       data: Unit,
       status: Unit,
       xhr: Unit,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      success: js.Function1[/* repeated */ Any, Unit],
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
-    def jsSend(
-      data: Unit,
-      status: Unit,
-      xhr: Unit,
-      success: Unit,
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit
+    def jsSend(data: Unit, status: Unit, xhr: Unit, success: Unit, error: js.Function1[/* repeated */ Any, Unit]): Unit
     def jsSend(data: Unit, status: Unit, xhr: JQueryXHR): Unit
-    def jsSend(data: Unit, status: Unit, xhr: JQueryXHR, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(data: Unit, status: Unit, xhr: JQueryXHR, success: js.Function1[/* repeated */ Any, Unit]): Unit
     def jsSend(
       data: Unit,
       status: Unit,
       xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      success: js.Function1[/* repeated */ Any, Unit],
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
     def jsSend(
       data: Unit,
       status: Unit,
       xhr: JQueryXHR,
       success: Unit,
-      error: js.Function1[/* repeated */ js.Any, Unit]
+      error: js.Function1[/* repeated */ Any, Unit]
     ): Unit
     @JSName("jsSend")
     var jsSend_Original: Decoder
@@ -189,7 +171,7 @@ object mod extends Shortcut {
   object Decoders {
     
     inline def apply(
-      jsSend: (/* data */ js.UndefOr[js.Any], /* status */ js.UndefOr[String], /* xhr */ js.UndefOr[JQueryXHR], /* success */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]], /* error */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]]) => Unit
+      jsSend: (/* data */ js.UndefOr[Any], /* status */ js.UndefOr[String], /* xhr */ js.UndefOr[JQueryXHR], /* success */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], /* error */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]]) => Unit
     ): Decoders = {
       val __obj = js.Dynamic.literal(jsSend = js.Any.fromFunction5(jsSend))
       __obj.asInstanceOf[Decoders]
@@ -198,7 +180,7 @@ object mod extends Shortcut {
     extension [Self <: Decoders](x: Self) {
       
       inline def setJsSend(
-        value: (/* data */ js.UndefOr[js.Any], /* status */ js.UndefOr[String], /* xhr */ js.UndefOr[JQueryXHR], /* success */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]], /* error */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]]) => Unit
+        value: (/* data */ js.UndefOr[Any], /* status */ js.UndefOr[String], /* xhr */ js.UndefOr[JQueryXHR], /* success */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], /* error */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]]) => Unit
       ): Self = StObject.set(x, "jsSend", js.Any.fromFunction5(value))
     }
   }
@@ -213,9 +195,9 @@ object mod extends Shortcut {
       * callback: A function to invoke if the resource is retrieved successfully.
       */
     def apply(resourceId: String): Unit = js.native
-    def apply(resourceId: String, hash: js.Any): Unit = js.native
-    def apply(resourceId: String, hash: js.Any, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
-    def apply(resourceId: String, hash: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def apply(resourceId: String, hash: Any): Unit = js.native
+    def apply(resourceId: String, hash: Any, callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+    def apply(resourceId: String, hash: Unit, callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     /***
       * Request a resource.
       * settings: A set of key/value pairs of settings for the request.
@@ -224,9 +206,9 @@ object mod extends Shortcut {
       *   success (optional): Function to invoke on success.
       *   error (optional): Function to invoke on error.
       */
-    def apply(settings: RequestSettings): js.Any = js.native
+    def apply(settings: RequestSettings): Any = js.native
     
-    var cache: js.Any = js.native
+    var cache: Any = js.native
     
     var decoders: Decoders = js.native
     
@@ -255,13 +237,13 @@ object mod extends Shortcut {
   
   trait RequestSettings extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var error: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var resourceId: String
     
-    var success: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var success: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   }
   object RequestSettings {
     
@@ -272,17 +254,17 @@ object mod extends Shortcut {
     
     extension [Self <: RequestSettings](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      inline def setSuccess(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* repeated */ Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
@@ -298,7 +280,7 @@ object mod extends Shortcut {
       * The return value is true if none of the subscriptions returned false, and false otherwise.
       * Note that only one subscription can return false because doing so will prevent additional subscriptions from being invoked.
       */
-    def publish(topic: String, args: js.Any*): Boolean
+    def publish(topic: String, args: Any*): Boolean
     
     /***
       * Request a resource.
@@ -307,9 +289,9 @@ object mod extends Shortcut {
       * callback: A function to invoke if the resource is retrieved successfully.
       */
     def request(resourceId: String): Unit
-    def request(resourceId: String, hash: js.Any): Unit
-    def request(resourceId: String, hash: js.Any, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit
-    def request(resourceId: String, hash: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit
+    def request(resourceId: String, hash: Any): Unit
+    def request(resourceId: String, hash: Any, callback: js.Function1[/* repeated */ Any, Any]): Unit
+    def request(resourceId: String, hash: Unit, callback: js.Function1[/* repeated */ Any, Any]): Unit
     /***
       * Request a resource.
       * settings: A set of key/value pairs of settings for the request.
@@ -318,15 +300,15 @@ object mod extends Shortcut {
       *   success (optional): Function to invoke on success.
       *   error (optional): Function to invoke on error.
       */
-    def request(settings: RequestSettings): js.Any
+    def request(settings: RequestSettings): Any
     @JSName("request")
     var request_Original: Request
     
     /***
       * Gets a stored value based on the key of a hash of all stored values.
       */
-    def store(): js.Any
-    def store(key: String): js.Any
+    def store(): Any
+    def store(key: String): Any
     /***
       * Stores a value for a given key using the default storage type.
       *
@@ -334,8 +316,8 @@ object mod extends Shortcut {
       * value: The value to store. The value can be anything that can be serialized as JSON.
       * [options]: A set of key/value pairs that relate to settings for storing the value.
       */
-    def store(key: String, value: js.Any): Unit
-    def store(key: String, value: js.Any, options: js.Any): Unit
+    def store(key: String, value: Any): Unit
+    def store(key: String, value: Any, options: Any): Unit
     @JSName("store")
     var store_Original: Store
     
@@ -345,8 +327,8 @@ object mod extends Shortcut {
       * callback: Function to invoke when the message is published.
       * [priority]: Priority relative to other subscriptions for the same message. Lower values have higher priority. Default is 10.
       */
-    def subscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit
-    def subscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, js.Any], priority: Double): Unit
+    def subscribe(topic: String, callback: js.Function1[/* repeated */ Any, Any]): Unit
+    def subscribe(topic: String, callback: js.Function1[/* repeated */ Any, Any], priority: Double): Unit
     /***
       * Subscribe to a message.
       * topic: Name of the message to subscribe to.
@@ -354,13 +336,8 @@ object mod extends Shortcut {
       * callback: Function to invoke when the message is published.
       * [priority]: Priority relative to other subscriptions for the same message. Lower values have higher priority. Default is 10.
       */
-    def subscribe(topic: String, context: js.Any, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit
-    def subscribe(
-      topic: String,
-      context: js.Any,
-      callback: js.Function1[/* repeated */ js.Any, js.Any],
-      priority: Double
-    ): Unit
+    def subscribe(topic: String, context: Any, callback: js.Function1[/* repeated */ Any, Any]): Unit
+    def subscribe(topic: String, context: Any, callback: js.Function1[/* repeated */ Any, Any], priority: Double): Unit
     @JSName("subscribe")
     var subscribe_Original: Subscribe
     
@@ -369,16 +346,16 @@ object mod extends Shortcut {
       * topic: The topic being unsubscribed from.
       * callback: The callback that was originally subscribed.
       */
-    def unsubscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit
+    def unsubscribe(topic: String, callback: js.Function1[/* repeated */ Any, Any]): Unit
   }
   object Static {
     
     inline def apply(
-      publish: (String, /* repeated */ js.Any) => Boolean,
+      publish: (String, /* repeated */ Any) => Boolean,
       request: Request,
       store: Store,
       subscribe: Subscribe,
-      unsubscribe: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit
+      unsubscribe: (String, js.Function1[/* repeated */ Any, Any]) => Unit
     ): Static = {
       val __obj = js.Dynamic.literal(publish = js.Any.fromFunction2(publish), request = request.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], subscribe = subscribe.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction2(unsubscribe))
       __obj.asInstanceOf[Static]
@@ -386,7 +363,7 @@ object mod extends Shortcut {
     
     extension [Self <: Static](x: Self) {
       
-      inline def setPublish(value: (String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
+      inline def setPublish(value: (String, /* repeated */ Any) => Boolean): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
       
       inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -394,7 +371,7 @@ object mod extends Shortcut {
       
       inline def setSubscribe(value: Subscribe): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
       
-      inline def setUnsubscribe(value: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
+      inline def setUnsubscribe(value: (String, js.Function1[/* repeated */ Any, Any]) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
     }
   }
   
@@ -404,8 +381,8 @@ object mod extends Shortcut {
     /***
       * Gets a stored value based on the key of a hash of all stored values.
       */
-    def apply(): js.Any = js.native
-    def apply(key: String): js.Any = js.native
+    def apply(): Any = js.native
+    def apply(key: String): Any = js.native
     /***
       * Stores a value for a given key using the default storage type.
       *
@@ -413,8 +390,8 @@ object mod extends Shortcut {
       * value: The value to store. The value can be anything that can be serialized as JSON.
       * [options]: A set of key/value pairs that relate to settings for storing the value.
       */
-    def apply(key: String, value: js.Any): Unit = js.native
-    def apply(key: String, value: js.Any, options: js.Any): Unit = js.native
+    def apply(key: String, value: Any): Unit = js.native
+    def apply(key: String, value: Any, options: Any): Unit = js.native
   }
   
   @js.native
@@ -428,8 +405,8 @@ object mod extends Shortcut {
     /***
       * Firefox 2+
       */
-    def globalStorage(): js.Any = js.native
-    def globalStorage(key: String): js.Any = js.native
+    def globalStorage(): Any = js.native
+    def globalStorage(key: String): Any = js.native
     /***
       * Stores a value for a given key using the default storage type.
       *
@@ -440,8 +417,8 @@ object mod extends Shortcut {
     /***
       * Firefox 2+
       */
-    def globalStorage(key: String, value: js.Any): Unit = js.native
-    def globalStorage(key: String, value: js.Any, options: js.Any): Unit = js.native
+    def globalStorage(key: String, value: Any): Unit = js.native
+    def globalStorage(key: String, value: Any, options: Any): Unit = js.native
     /***
       * Firefox 2+
       */
@@ -454,8 +431,8 @@ object mod extends Shortcut {
     /***
       * IE 8+, Firefox 3.5+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
       */
-    def localStorage(): js.Any = js.native
-    def localStorage(key: String): js.Any = js.native
+    def localStorage(): Any = js.native
+    def localStorage(key: String): Any = js.native
     /***
       * Stores a value for a given key using the default storage type.
       *
@@ -466,8 +443,8 @@ object mod extends Shortcut {
     /***
       * IE 8+, Firefox 3.5+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
       */
-    def localStorage(key: String, value: js.Any): Unit = js.native
-    def localStorage(key: String, value: js.Any, options: js.Any): Unit = js.native
+    def localStorage(key: String, value: Any): Unit = js.native
+    def localStorage(key: String, value: Any, options: Any): Unit = js.native
     /***
       * IE 8+, Firefox 3.5+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
       */
@@ -480,8 +457,8 @@ object mod extends Shortcut {
     /***
       * An in-memory store is provided as a fallback if none of the other storage types are available.
       */
-    def memory(): js.Any = js.native
-    def memory(key: String): js.Any = js.native
+    def memory(): Any = js.native
+    def memory(key: String): Any = js.native
     /***
       * Stores a value for a given key using the default storage type.
       *
@@ -492,8 +469,8 @@ object mod extends Shortcut {
     /***
       * An in-memory store is provided as a fallback if none of the other storage types are available.
       */
-    def memory(key: String, value: js.Any): Unit = js.native
-    def memory(key: String, value: js.Any, options: js.Any): Unit = js.native
+    def memory(key: String, value: Any): Unit = js.native
+    def memory(key: String, value: Any, options: Any): Unit = js.native
     /***
       * An in-memory store is provided as a fallback if none of the other storage types are available.
       */
@@ -506,8 +483,8 @@ object mod extends Shortcut {
     /***
       * IE 8+, Firefox 2+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
       */
-    def sessionStorage(): js.Any = js.native
-    def sessionStorage(key: String): js.Any = js.native
+    def sessionStorage(): Any = js.native
+    def sessionStorage(key: String): Any = js.native
     /***
       * Stores a value for a given key using the default storage type.
       *
@@ -518,8 +495,8 @@ object mod extends Shortcut {
     /***
       * IE 8+, Firefox 2+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
       */
-    def sessionStorage(key: String, value: js.Any): Unit = js.native
-    def sessionStorage(key: String, value: js.Any, options: js.Any): Unit = js.native
+    def sessionStorage(key: String, value: Any): Unit = js.native
+    def sessionStorage(key: String, value: Any, options: Any): Unit = js.native
     /***
       * IE 8+, Firefox 2+, Safari 4+, Chrome, Opera 10.5+, iPhone 2+, Android 2+
       */
@@ -532,8 +509,8 @@ object mod extends Shortcut {
     /***
       * IE 5 - 7
       */
-    def userData(): js.Any = js.native
-    def userData(key: String): js.Any = js.native
+    def userData(): Any = js.native
+    def userData(key: String): Any = js.native
     /***
       * Stores a value for a given key using the default storage type.
       *
@@ -544,8 +521,8 @@ object mod extends Shortcut {
     /***
       * IE 5 - 7
       */
-    def userData(key: String, value: js.Any): Unit = js.native
-    def userData(key: String, value: js.Any, options: js.Any): Unit = js.native
+    def userData(key: String, value: Any): Unit = js.native
+    def userData(key: String, value: Any, options: Any): Unit = js.native
     /***
       * IE 5 - 7
       */
@@ -562,8 +539,8 @@ object mod extends Shortcut {
       * callback: Function to invoke when the message is published.
       * [priority]: Priority relative to other subscriptions for the same message. Lower values have higher priority. Default is 10.
       */
-    def apply(topic: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
-    def apply(topic: String, callback: js.Function1[/* repeated */ js.Any, js.Any], priority: Double): Unit = js.native
+    def apply(topic: String, callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+    def apply(topic: String, callback: js.Function1[/* repeated */ Any, Any], priority: Double): Unit = js.native
     /***
       * Subscribe to a message.
       * topic: Name of the message to subscribe to.
@@ -571,13 +548,8 @@ object mod extends Shortcut {
       * callback: Function to invoke when the message is published.
       * [priority]: Priority relative to other subscriptions for the same message. Lower values have higher priority. Default is 10.
       */
-    def apply(topic: String, context: js.Any, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
-    def apply(
-      topic: String,
-      context: js.Any,
-      callback: js.Function1[/* repeated */ js.Any, js.Any],
-      priority: Double
-    ): Unit = js.native
+    def apply(topic: String, context: Any, callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+    def apply(topic: String, context: Any, callback: js.Function1[/* repeated */ Any, Any], priority: Double): Unit = js.native
   }
   
   type _To = Static

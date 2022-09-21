@@ -1,12 +1,13 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.plotlyJsStrings.dot_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.plotlyJs.plotlyJsStrings.solid
-  - typings.plotlyJs.plotlyJsStrings.dot
+  - typings.plotlyJs.plotlyJsStrings.dot_
   - typings.plotlyJs.plotlyJsStrings.dash
   - typings.plotlyJs.plotlyJsStrings.longdash
   - typings.plotlyJs.plotlyJsStrings.dashdot
@@ -19,7 +20,7 @@ object Dash {
   
   inline def dashdot: typings.plotlyJs.plotlyJsStrings.dashdot = "dashdot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dashdot]
   
-  inline def dot: typings.plotlyJs.plotlyJsStrings.dot = "dot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dot]
+  inline def dot: dot_ = "dot".asInstanceOf[dot_]
   
   inline def longdash: typings.plotlyJs.plotlyJsStrings.longdash = "longdash".asInstanceOf[typings.plotlyJs.plotlyJsStrings.longdash]
   

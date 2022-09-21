@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewColumn")
 @js.native
-class ASPxClientCardViewColumn ()
+open class ASPxClientCardViewColumn ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewColumn {
   

@@ -21,7 +21,7 @@ object sourceTileMod {
   
   @JSImport("ol/source/Tile", "TileSourceEvent")
   @js.native
-  class TileSourceEvent protected ()
+  open class TileSourceEvent protected ()
     extends typings.ol.eventMod.default {
     def this(`type`: String, tile: typings.ol.olTileMod.default) = this()
     
@@ -76,7 +76,7 @@ object sourceTileMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       

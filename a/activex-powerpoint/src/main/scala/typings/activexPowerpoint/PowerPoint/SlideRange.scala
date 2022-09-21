@@ -65,7 +65,7 @@ trait SlideRange extends StObject {
   
   val Hyperlinks: typings.activexPowerpoint.PowerPoint.Hyperlinks = js.native
   
-  def Item(Index: js.Any): Slide = js.native
+  def Item(Index: Any): Slide = js.native
   
   var Layout: PpSlideLayout = js.native
   
@@ -79,7 +79,7 @@ trait SlideRange extends StObject {
   
   val NotesPage: SlideRange = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.SlideRange_typekey")
   var PowerPointDotSlideRange_typekey: SlideRange = js.native
@@ -95,7 +95,7 @@ trait SlideRange extends StObject {
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Boolean, UseSlideOrder: Boolean): Unit = js.native
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Unit, UseSlideOrder: Boolean): Unit = js.native
   
-  def Scripts(Index: js.Any): Script = js.native
+  def Scripts(Index: Any): Script = js.native
   @JSName("Scripts")
   val Scripts_Original: Scripts = js.native
   

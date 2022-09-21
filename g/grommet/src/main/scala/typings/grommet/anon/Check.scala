@@ -1,6 +1,10 @@
 package typings.grommet.anon
 
+import typings.grommet.baseMod.ExtendProps
+import typings.grommet.baseMod.ExtendType
+import typings.grommet.baseMod.ExtendValue
 import typings.grommet.utilsMod.ColorType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,15 +13,19 @@ trait Check extends StObject {
   
   var border: js.UndefOr[ColorWidth] = js.undefined
   
-  var check: js.UndefOr[BackgroundRadius] = js.undefined
+  var check: js.UndefOr[ExtendRadius] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var font: js.UndefOr[`10`] = js.undefined
+  var container: js.UndefOr[`15`] = js.undefined
+  
+  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
+  
+  var font: js.UndefOr[`23`] = js.undefined
   
   var gap: js.UndefOr[String] = js.undefined
   
-  var hover: js.UndefOr[`19`] = js.undefined
+  var hover: js.UndefOr[`22`] = js.undefined
   
   var icon: js.UndefOr[ExtendSize] = js.undefined
   
@@ -38,7 +46,7 @@ object Check {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setCheck(value: BackgroundRadius): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+    inline def setCheck(value: ExtendRadius): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
     inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
@@ -46,7 +54,17 @@ object Check {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setFont(value: `10`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setContainer(value: `15`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    
+    inline def setFont(value: `23`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
@@ -54,7 +72,7 @@ object Check {
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setHover(value: `19`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `22`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     

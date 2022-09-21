@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGLength")
 @js.native
-/* private */ class SVGLength ()
+/* private */ open class SVGLength ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGLength {
   

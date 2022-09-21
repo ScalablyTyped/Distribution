@@ -1,6 +1,6 @@
 package typings.whatwgUrl
 
-import typings.std.URLSearchParams
+import typings.webidlConversions.mod.Globals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +9,10 @@ object urlImplMod {
   
   @JSImport("whatwg-url/lib/URL-impl", "implementation")
   @js.native
-  class implementation protected ()
+  open class implementation protected ()
     extends StObject
        with URLImpl {
-    def this(globalObject: js.Object, hasUrlBase: js.Tuple2[String, js.UndefOr[String]]) = this()
-    def this(globalObject: js.Object, hasUrlBase: js.Tuple2[String, js.UndefOr[String]], privateData: js.Object) = this()
+    def this(globalObject: Globals, constructorArgs: js.Tuple2[/* url */ String, /* base */ js.UndefOr[String]]) = this()
     
     /* CompleteClass */
     var hash: String = js.native
@@ -46,7 +45,7 @@ object urlImplMod {
     var search: String = js.native
     
     /* CompleteClass */
-    override val searchParams: URLSearchParams = js.native
+    override val searchParams: typings.whatwgUrl.urlsearchparamsImplMod.implementation = js.native
     
     /* CompleteClass */
     override def toJSON(): String = js.native
@@ -77,7 +76,7 @@ object urlImplMod {
     
     var search: String
     
-    val searchParams: URLSearchParams
+    val searchParams: typings.whatwgUrl.urlsearchparamsImplMod.implementation
     
     def toJSON(): String
     
@@ -96,7 +95,7 @@ object urlImplMod {
       port: String,
       protocol: String,
       search: String,
-      searchParams: URLSearchParams,
+      searchParams: typings.whatwgUrl.urlsearchparamsImplMod.implementation,
       toJSON: () => String,
       username: String
     ): URLImpl = {
@@ -126,7 +125,7 @@ object urlImplMod {
       
       inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      inline def setSearchParams(value: URLSearchParams): Self = StObject.set(x, "searchParams", value.asInstanceOf[js.Any])
+      inline def setSearchParams(value: typings.whatwgUrl.urlsearchparamsImplMod.implementation): Self = StObject.set(x, "searchParams", value.asInstanceOf[js.Any])
       
       inline def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       

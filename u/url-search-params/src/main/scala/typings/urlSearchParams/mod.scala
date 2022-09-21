@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("url-search-params", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with URLSearchParams {
     def this(init: String) = this()
@@ -31,7 +31,7 @@ object mod {
     def forEach(callbackfn: js.Function3[/* value */ String, /* key */ String, /* parent */ this.type, Unit]): Unit = js.native
     def forEach(
       callbackfn: js.Function3[/* value */ String, /* key */ String, /* parent */ this.type, Unit],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
     def get(name: String): String | Null = js.native

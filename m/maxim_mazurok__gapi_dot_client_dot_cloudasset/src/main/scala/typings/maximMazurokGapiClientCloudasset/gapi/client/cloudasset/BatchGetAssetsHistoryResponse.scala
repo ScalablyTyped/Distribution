@@ -22,6 +22,6 @@ object BatchGetAssetsHistoryResponse {
     
     inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
     
-    inline def setAssetsVarargs(value: TemporalAsset*): Self = StObject.set(x, "assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: TemporalAsset*): Self = StObject.set(x, "assets", js.Array(value*))
   }
 }

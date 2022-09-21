@@ -11,9 +11,9 @@ Easily execute a function when you scroll to an element
 | Full name          | waypoints |
 | Keywords           | scroll |
 | # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 2477825 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 153782.66666666666 |
+| # stars            | 10322.0 |
 
 ## Links
 - [Homepage](https://github.com/imakewebthings/waypoints#readme)

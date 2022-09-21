@@ -23,7 +23,7 @@ object XSheetDataProvider {
     acquire: () => Unit,
     createDataSequenceByFormulaTokens: SeqEquiv[FormulaToken] => XDataSequence,
     createDataSequenceByFormulaTokensPossible: SeqEquiv[FormulaToken] => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSheetDataProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDataSequenceByFormulaTokens = js.Any.fromFunction1(createDataSequenceByFormulaTokens), createDataSequenceByFormulaTokensPossible = js.Any.fromFunction1(createDataSequenceByFormulaTokensPossible), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

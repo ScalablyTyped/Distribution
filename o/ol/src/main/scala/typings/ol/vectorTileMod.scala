@@ -18,7 +18,7 @@ object vectorTileMod {
   
   @JSImport("ol/layer/VectorTile", JSImport.Default)
   @js.native
-  class default () extends VectorTileLayer {
+  open class default () extends VectorTileLayer {
     def this(opt_options: Options) = this()
   }
   
@@ -135,7 +135,7 @@ object vectorTileMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setUpdateWhileAnimating(value: Boolean): Self = StObject.set(x, "updateWhileAnimating", value.asInstanceOf[js.Any])
       

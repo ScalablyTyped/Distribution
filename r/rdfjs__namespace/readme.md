@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdfjs__namespace
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 Named Node builder
@@ -9,11 +9,11 @@ Named Node builder
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/namespace |
-| Keywords           | rdf, rdfjs, namednode, namespace |
-| # releases         | 3 |
-| # dependents       | 41 |
-| # downloads        | 59946 |
-| # stars            | 0 |
+| Keywords           | namednode, namespace, rdf, rdfjs |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 54408.666666666664 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/namespace)

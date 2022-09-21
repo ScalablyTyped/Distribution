@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The FineUploader Core only constructor
   */
-class FineUploaderBasic () extends StObject {
+open class FineUploaderBasic () extends StObject {
   def this(fineuploaderOptions: CoreOptions) = this()
   
   /**
@@ -39,28 +39,24 @@ class FineUploaderBasic () extends StObject {
     * @param string endpoint : The endpoint to send this file to
     */
   def addFiles(files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement]): Unit = js.native
-  def addFiles(files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement], params: js.Any): Unit = js.native
-  def addFiles(
-    files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement],
-    params: js.Any,
-    endpoint: String
-  ): Unit = js.native
+  def addFiles(files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement], params: Any): Unit = js.native
+  def addFiles(files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement], params: Any, endpoint: String): Unit = js.native
   def addFiles(
     files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement],
     params: Unit,
     endpoint: String
   ): Unit = js.native
   def addFiles(files: BlobWrapper): Unit = js.native
-  def addFiles(files: BlobWrapper, params: js.Any): Unit = js.native
-  def addFiles(files: BlobWrapper, params: js.Any, endpoint: String): Unit = js.native
+  def addFiles(files: BlobWrapper, params: Any): Unit = js.native
+  def addFiles(files: BlobWrapper, params: Any, endpoint: String): Unit = js.native
   def addFiles(files: BlobWrapper, params: Unit, endpoint: String): Unit = js.native
   def addFiles(files: CanvasWrapper): Unit = js.native
-  def addFiles(files: CanvasWrapper, params: js.Any): Unit = js.native
-  def addFiles(files: CanvasWrapper, params: js.Any, endpoint: String): Unit = js.native
+  def addFiles(files: CanvasWrapper, params: Any): Unit = js.native
+  def addFiles(files: CanvasWrapper, params: Any, endpoint: String): Unit = js.native
   def addFiles(files: CanvasWrapper, params: Unit, endpoint: String): Unit = js.native
   def addFiles(files: FileList): Unit = js.native
-  def addFiles(files: FileList, params: js.Any): Unit = js.native
-  def addFiles(files: FileList, params: js.Any, endpoint: String): Unit = js.native
+  def addFiles(files: FileList, params: Any): Unit = js.native
+  def addFiles(files: FileList, params: Any, endpoint: String): Unit = js.native
   def addFiles(files: FileList, params: Unit, endpoint: String): Unit = js.native
   
   /**
@@ -68,7 +64,7 @@ class FineUploaderBasic () extends StObject {
     *
     * @param any[] initialFiles : An array of objects that describe files already on the server
     */
-  def addInitialFiles(initialFiles: js.Array[js.Any]): Unit = js.native
+  def addInitialFiles(initialFiles: js.Array[Any]): Unit = js.native
   
   /**
     * Attach an event handler to this element for a specific DOM event.
@@ -77,7 +73,7 @@ class FineUploaderBasic () extends StObject {
     * @param function handler : A function that will be invoked whenever the respective event occurs
     * @returns function : Call this function to detach the event
     */
-  def attach(event: String, handler: js.Function0[js.Any | Unit]): js.Function0[js.Any | Unit] = js.native
+  def attach(event: String, handler: js.Function0[Any | Unit]): js.Function0[Any | Unit] = js.native
   
   /**
     * Shim for `Function.prototype.bind`
@@ -90,7 +86,7 @@ class FineUploaderBasic () extends StObject {
     * @param Object context : The context the function will assume
     * @returns function : A new function, same as the old one, but bound to the passed in `context`
     */
-  def bind(oldFunc: js.Function0[js.Any | Unit], context: js.Any): js.Function0[js.Any] = js.native
+  def bind(oldFunc: js.Function0[Any | Unit], context: Any): js.Function0[Any] = js.native
   
   /**
     * Cancel the queued or currently uploading item which corresponds to the id
@@ -145,7 +141,7 @@ class FineUploaderBasic () extends StObject {
     * @param Object styles : An object with styles to apply to this element
     * @returns Object : Returns the current context to allow method chaining
     */
-  def css(styles: js.Any): this.type = js.native
+  def css(styles: Any): this.type = js.native
   
   /**
     * Send a delete request to the server for the corresponding file id
@@ -161,7 +157,7 @@ class FineUploaderBasic () extends StObject {
     * @param function originalHandler : A function that will be detached from this event
     * @returns Object : Call this function to detach the event
     */
-  def detach(event: String, originalHandler: js.Function0[js.Any | Unit]): this.type = js.native
+  def detach(event: String, originalHandler: js.Function0[Any | Unit]): this.type = js.native
   
   /**
     * Draws a thumbnail
@@ -210,17 +206,14 @@ class FineUploaderBasic () extends StObject {
     customResizer: CustomResizerCallBack
   ): PromiseOptions = js.native
   
-  def each(iterable: js.Any, callback: js.Function2[/* index */ Double, /* item */ js.Any, js.Any | Unit]): js.Function0[js.Any | Unit] = js.native
   /**
     * Iterates through a collection, passing the key and value into the provided callback. `return false;` to stop iteration.
     *
     * @param Array or Object :
     * @param function callback : A function that will be called for each item returned by looping through the iterable. This function takes an index and an item.
     */
-  def each(
-    iterable: js.Array[js.Any],
-    callback: js.Function2[/* index */ Double, /* item */ js.Any, js.Any | Unit]
-  ): js.Function0[js.Any | Unit] = js.native
+  def each(iterable: js.Array[Any], callback: js.Function2[/* index */ Double, /* item */ Any, Any | Unit]): js.Function0[Any | Unit] = js.native
+  def each(iterable: Any, callback: js.Function2[/* index */ Double, /* item */ Any, Any | Unit]): js.Function0[Any | Unit] = js.native
   
   /**
     * Shallowly copies the parameters of secondobj to firstobj. if extendnested is true then a deep-copy is performed.
@@ -230,8 +223,8 @@ class FineUploaderBasic () extends StObject {
     * @param boolean extendNested : If `true` then a deep-copy is performed, else a shallow copy
     * @returns Object : The new object created by the extension
     */
-  def extend(firstObj: js.Any, secondObj: js.Any): js.Any = js.native
-  def extend(firstObj: js.Any, secondObj: js.Any, extendNested: Boolean): js.Any = js.native
+  def extend(firstObj: Any, secondObj: Any): Any = js.native
+  def extend(firstObj: Any, secondObj: Any, extendNested: Boolean): Any = js.native
   
   /**
     * Returns a string, swapping argument values with the associated occurrence of `{}` in the passed string
@@ -392,8 +385,8 @@ class FineUploaderBasic () extends StObject {
     * @param number startingIndex : the index to search from
     * @returns number : The index of `item` in the array
     */
-  def indexOf(array: js.Array[js.Any], item: js.Any): Double = js.native
-  def indexOf(array: js.Array[js.Any], item: js.Any, startingIndex: Double): Double = js.native
+  def indexOf(array: js.Array[Any], item: Any): Double = js.native
+  def indexOf(array: js.Array[Any], item: Any, startingIndex: Double): Double = js.native
   
   /**
     * Inserts the element directly before the passed element in the DOM.
@@ -408,7 +401,7 @@ class FineUploaderBasic () extends StObject {
     * @param Object func : The object to test
     * @returns boolean : Whether the parameter is a function or not
     */
-  def isFunction(func: js.Any): Boolean = js.native
+  def isFunction(func: Any): Boolean = js.native
   
   /**
     * Check if the parameter is object
@@ -416,7 +409,7 @@ class FineUploaderBasic () extends StObject {
     * @param Object obj : The thing to test
     * @returns boolean : Whether the parameter is a object or not
     */
-  def isObject(obj: js.Any): Boolean = js.native
+  def isObject(obj: Any): Boolean = js.native
   
   /**
     * Returns true if the file can be auto-resumed, false otherwise.
@@ -432,7 +425,7 @@ class FineUploaderBasic () extends StObject {
     * @param Object str : The object to test
     * @returns boolean : Whether the parameter is a string or not
     */
-  def isString(str: js.Any): Boolean = js.native
+  def isString(str: Any): Boolean = js.native
   
   /**
     * Output a message to the console, if possible
@@ -506,8 +499,8 @@ class FineUploaderBasic () extends StObject {
     * @param any customHeaders : The custom headers to include in the upload request. Fine Uploader may also send some other required headers
     * @param number id : The file id
     */
-  def setCustomHeaders(customHeaders: js.Any): Unit = js.native
-  def setCustomHeaders(customHeaders: js.Any, id: Double): Unit = js.native
+  def setCustomHeaders(customHeaders: Any): Unit = js.native
+  def setCustomHeaders(customHeaders: Any, id: Double): Unit = js.native
   
   /**
     * Set custom resume data for a potentially resumable file.
@@ -524,8 +517,8 @@ class FineUploaderBasic () extends StObject {
     * @param any customHeaders : The custom headers to include in the upload request. Fine Uploader may also send some other required headers
     * @param number id : The file id
     */
-  def setDeleteFileCustomHeaders(customHeaders: js.Any): Unit = js.native
-  def setDeleteFileCustomHeaders(customHeaders: js.Any, id: Double): Unit = js.native
+  def setDeleteFileCustomHeaders(customHeaders: Any): Unit = js.native
+  def setDeleteFileCustomHeaders(customHeaders: Any, id: Double): Unit = js.native
   
   /**
     * Modify the location where delete requests should be directed. Pass in a file id to change the endpoint for that specific item
@@ -543,8 +536,8 @@ class FineUploaderBasic () extends StObject {
     * @param any params : The parameters to include in the delete request
     * @param number id : The file id
     */
-  def setDeleteFileParams(params: js.Any): Unit = js.native
-  def setDeleteFileParams(params: js.Any, id: Double): Unit = js.native
+  def setDeleteFileParams(params: Any): Unit = js.native
+  def setDeleteFileParams(params: Any, id: Double): Unit = js.native
   
   /**
     * Modify the location where upload requests should be directed. Pass in a file id to change the endpoint for that specific item
@@ -585,8 +578,8 @@ class FineUploaderBasic () extends StObject {
     * @param any params : The parameters to include in the upload request
     * @param number id : The file id
     */
-  def setParams(params: js.Any): Unit = js.native
-  def setParams(params: js.Any, id: Double): Unit = js.native
+  def setParams(params: Any): Unit = js.native
+  def setParams(params: Any, id: Double): Unit = js.native
   
   /**
     * Modify the status of an file.

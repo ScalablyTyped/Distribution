@@ -12,7 +12,7 @@ trait DescribeAccountModificationsResult extends StObject {
   var AccountModifications: js.UndefOr[AccountModificationList] = js.undefined
   
   /**
-    * The token to use to retrieve the next set of results, or null if no more results are available.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeAccountModificationsResult {
     
     inline def setAccountModificationsUndefined: Self = StObject.set(x, "AccountModifications", js.undefined)
     
-    inline def setAccountModificationsVarargs(value: AccountModification*): Self = StObject.set(x, "AccountModifications", js.Array(value :_*))
+    inline def setAccountModificationsVarargs(value: AccountModification*): Self = StObject.set(x, "AccountModifications", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

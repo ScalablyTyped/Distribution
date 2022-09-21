@@ -12,7 +12,7 @@ trait OutputDataConfig extends StObject {
   var S3Bucket: typings.awsSdk.comprehendmedicalMod.S3Bucket
   
   /**
-    * The path to the output data files in the S3 bucket. Amazon Comprehend Medical creates an output directory using the job ID so that the output from one job does not overwrite the output of another.
+    * The path to the output data files in the S3 bucket. Comprehend Medical; creates an output directory using the job ID so that the output from one job does not overwrite the output of another.
     */
   var S3Key: js.UndefOr[typings.awsSdk.comprehendmedicalMod.S3Key] = js.undefined
 }

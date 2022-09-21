@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.System
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -73,7 +72,7 @@ object Diagnostics {
     
     /** Gets the time the process was started. */
     /* CompleteClass */
-    var processStartTime: Date = js.native
+    var processStartTime: js.Date = js.native
   }
   object ProcessDiagnosticInfo {
     

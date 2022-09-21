@@ -40,14 +40,14 @@ object BuildCompletedEvent {
     
     inline def setBuildErrors(value: js.Array[BuildRequestValidationResult]): Self = StObject.set(x, "buildErrors", value.asInstanceOf[js.Any])
     
-    inline def setBuildErrorsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "buildErrors", js.Array(value :_*))
+    inline def setBuildErrorsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "buildErrors", js.Array(value*))
     
     inline def setBuildWarnings(value: js.Array[BuildRequestValidationResult]): Self = StObject.set(x, "buildWarnings", value.asInstanceOf[js.Any])
     
-    inline def setBuildWarningsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "buildWarnings", js.Array(value :_*))
+    inline def setBuildWarningsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "buildWarnings", js.Array(value*))
     
     inline def setChanges(value: js.Array[Change]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "changes", js.Array(value*))
   }
 }

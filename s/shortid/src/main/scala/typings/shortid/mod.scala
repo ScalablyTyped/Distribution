@@ -20,7 +20,7 @@ object mod extends Shortcut {
     
     def generate(): String = js.native
     
-    def isValid(id: js.Any): Boolean = js.native
+    def isValid(id: Any): Boolean = js.native
     
     def seed(float: Double): Unit = js.native
     

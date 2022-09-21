@@ -8,7 +8,7 @@ object isBetweenMod {
   
   @JSImport("ol/format/filter/IsBetween", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.ol.comparisonMod.default {
     def this(propertyName: String, lowerBoundary: Double, upperBoundary: Double) = this()
   }

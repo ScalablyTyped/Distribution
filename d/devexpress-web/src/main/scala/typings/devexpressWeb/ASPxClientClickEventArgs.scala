@@ -24,7 +24,7 @@ trait ASPxClientClickEventArgs
   /**
     * Gets a column field value.
     */
-  var ColumnValue: js.Any
+  var ColumnValue: Any
   
   /**
     * Gets a column value type.
@@ -39,7 +39,7 @@ trait ASPxClientClickEventArgs
   /**
     * Provides access to the parameters associated with the ASPxClientPivotGrid.CellClick and ASPxClientPivotGrid.CellDblClick events.
     */
-  var HtmlEvent: js.Any
+  var HtmlEvent: Any
   
   /**
     * Gets a row field name.
@@ -54,7 +54,7 @@ trait ASPxClientClickEventArgs
   /**
     * Gets a row field value.
     */
-  var RowValue: js.Any
+  var RowValue: Any
   
   /**
     * Gets a row value type.
@@ -64,22 +64,22 @@ trait ASPxClientClickEventArgs
   /**
     * Gets the processed cell's value.
     */
-  var Value: js.Any
+  var Value: Any
 }
 object ASPxClientClickEventArgs {
   
   inline def apply(
     ColumnFieldName: String,
     ColumnIndex: Double,
-    ColumnValue: js.Any,
+    ColumnValue: Any,
     ColumnValueType: String,
     DataIndex: Double,
-    HtmlEvent: js.Any,
+    HtmlEvent: Any,
     RowFieldName: String,
     RowIndex: Double,
-    RowValue: js.Any,
+    RowValue: Any,
     RowValueType: String,
-    Value: js.Any
+    Value: Any
   ): ASPxClientClickEventArgs = {
     val __obj = js.Dynamic.literal(ColumnFieldName = ColumnFieldName.asInstanceOf[js.Any], ColumnIndex = ColumnIndex.asInstanceOf[js.Any], ColumnValue = ColumnValue.asInstanceOf[js.Any], ColumnValueType = ColumnValueType.asInstanceOf[js.Any], DataIndex = DataIndex.asInstanceOf[js.Any], HtmlEvent = HtmlEvent.asInstanceOf[js.Any], RowFieldName = RowFieldName.asInstanceOf[js.Any], RowIndex = RowIndex.asInstanceOf[js.Any], RowValue = RowValue.asInstanceOf[js.Any], RowValueType = RowValueType.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientClickEventArgs]
@@ -91,22 +91,22 @@ object ASPxClientClickEventArgs {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "ColumnIndex", value.asInstanceOf[js.Any])
     
-    inline def setColumnValue(value: js.Any): Self = StObject.set(x, "ColumnValue", value.asInstanceOf[js.Any])
+    inline def setColumnValue(value: Any): Self = StObject.set(x, "ColumnValue", value.asInstanceOf[js.Any])
     
     inline def setColumnValueType(value: String): Self = StObject.set(x, "ColumnValueType", value.asInstanceOf[js.Any])
     
     inline def setDataIndex(value: Double): Self = StObject.set(x, "DataIndex", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "HtmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "HtmlEvent", value.asInstanceOf[js.Any])
     
     inline def setRowFieldName(value: String): Self = StObject.set(x, "RowFieldName", value.asInstanceOf[js.Any])
     
     inline def setRowIndex(value: Double): Self = StObject.set(x, "RowIndex", value.asInstanceOf[js.Any])
     
-    inline def setRowValue(value: js.Any): Self = StObject.set(x, "RowValue", value.asInstanceOf[js.Any])
+    inline def setRowValue(value: Any): Self = StObject.set(x, "RowValue", value.asInstanceOf[js.Any])
     
     inline def setRowValueType(value: String): Self = StObject.set(x, "RowValueType", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,22 @@ object pickerMixinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(ComposedComponent: js.Any): ContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ContextType]
+  inline def default(ComposedComponent: Any): ContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ContextType]
   
   trait ItemProps extends StObject {
     
-    var value: js.Any
+    var value: Any
   }
   object ItemProps {
     
-    inline def apply(value: js.Any): ItemProps = {
+    inline def apply(value: Any): ItemProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemProps]
     }
     
     extension [Self <: ItemProps](x: Self) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

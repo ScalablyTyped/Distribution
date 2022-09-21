@@ -17,7 +17,7 @@ trait Notification extends StObject {
   var NotifyAll: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The new SNS TopicArn that you want to associate with this job. You can create Amazon Resource Names (ARNs) for topics by using the CreateTopic Amazon SNS API action. You can subscribe email addresses to an Amazon SNS topic through the AWS Management Console, or by using the Subscribe AWS Simple Notification Service (SNS) API action.
+    * The new SNS TopicArn that you want to associate with this job. You can create Amazon Resource Names (ARNs) for topics by using the CreateTopic Amazon SNS API action. You can subscribe email addresses to an Amazon SNS topic through the Amazon Web Services Management Console, or by using the Subscribe Amazon Simple Notification Service (Amazon SNS) API action.
     */
   var SnsTopicARN: js.UndefOr[typings.awsSdk.snowballMod.SnsTopicARN] = js.undefined
 }
@@ -34,7 +34,7 @@ object Notification {
     
     inline def setJobStatesToNotifyUndefined: Self = StObject.set(x, "JobStatesToNotify", js.undefined)
     
-    inline def setJobStatesToNotifyVarargs(value: JobState*): Self = StObject.set(x, "JobStatesToNotify", js.Array(value :_*))
+    inline def setJobStatesToNotifyVarargs(value: JobState*): Self = StObject.set(x, "JobStatesToNotify", js.Array(value*))
     
     inline def setNotifyAll(value: Boolean): Self = StObject.set(x, "NotifyAll", value.asInstanceOf[js.Any])
     

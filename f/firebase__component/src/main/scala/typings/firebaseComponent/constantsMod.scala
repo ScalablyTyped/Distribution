@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object constantsMod {
   
-  @JSImport("@firebase/component/dist/src/constants", "DEFAULT_ENTRY_NAME")
+  @JSImport("@firebase/component/dist/esm/src/constants", "DEFAULT_ENTRY_NAME")
   @js.native
   val DEFAULT_ENTRY_NAME: /* "[DEFAULT]" */ String = js.native
 }

@@ -10,10 +10,10 @@ official nodejs client of ip2region
 | ------------------ | :-------------: |
 | Full name          | node-ip2region |
 | Keywords           | ip2region, ip, region |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 3003 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 564.0 |
+| # stars            | 10661.0 |
 
 ## Links
 - [Homepage](https://github.com/lionsoul2014/ip2region)

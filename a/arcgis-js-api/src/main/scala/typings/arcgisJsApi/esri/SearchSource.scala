@@ -13,6 +13,8 @@ trait SearchSource
   /**
     * Indicates whether to automatically navigate to the selected result once selected.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#autoNavigate)
     */
   var autoNavigate: Boolean = js.native
@@ -27,11 +29,15 @@ trait SearchSource
   /**
     * Function used to get search results.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getResults)
     */
-  def getResults(params: js.Any): js.Promise[js.Array[SearchResult]] = js.native
+  def getResults(params: Any): js.Promise[js.Array[SearchResult]] = js.native
   /**
     * Function used to get search results.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getResults)
     */
@@ -41,11 +47,15 @@ trait SearchSource
   /**
     * Function used to get search suggestions.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getSuggestions)
     */
-  def getSuggestions(params: js.Any): js.Promise[js.Array[SuggestResult]] = js.native
+  def getSuggestions(params: Any): js.Promise[js.Array[SuggestResult]] = js.native
   /**
     * Function used to get search suggestions.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getSuggestions)
     */
@@ -55,6 +65,8 @@ trait SearchSource
   /**
     * Indicates the maximum number of search results to return.
     *
+    * @default 6
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#maxResults)
     */
   var maxResults: Double = js.native
@@ -62,12 +74,16 @@ trait SearchSource
   /**
     * Indicates the maximum number of suggestions to return for the widget's input.
     *
+    * @default 6
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#maxSuggestions)
     */
   var maxSuggestions: Double = js.native
   
   /**
     * Indicates the minimum number of characters required before querying for a suggestion.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#minSuggestCharacters)
     */
@@ -132,6 +148,8 @@ trait SearchSource
   /**
     * Indicates whether to display suggestions as the user enters input text in the widget.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#suggestionsEnabled)
     */
   var suggestionsEnabled: Boolean = js.native
@@ -139,12 +157,16 @@ trait SearchSource
   /**
     * Indicates whether to constrain the search results to the view's extent.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#withinViewEnabled)
     */
   var withinViewEnabled: Boolean = js.native
   
   /**
     * The set zoom scale for the resulting search result.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#zoomScale)
     */

@@ -34,7 +34,7 @@ object ObjectSchema {
     
     inline def setRequired(value: js.Array[Required]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    inline def setRequiredVarargs(value: Required*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: Required*): Self = StObject.set(x, "required", js.Array(value*))
     
     inline def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

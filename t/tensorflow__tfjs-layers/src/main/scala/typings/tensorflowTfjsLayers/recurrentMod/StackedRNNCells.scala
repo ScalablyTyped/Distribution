@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "StackedRNNCells")
 @js.native
-class StackedRNNCells protected () extends RNNCell {
+open class StackedRNNCells protected () extends RNNCell {
   def this(args: StackedRNNCellsArgs) = this()
   
   /* protected */ var cells: js.Array[RNNCell] = js.native

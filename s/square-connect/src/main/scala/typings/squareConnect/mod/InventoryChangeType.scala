@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "InventoryChangeType")
 @js.native
-class InventoryChangeType () extends StObject
+open class InventoryChangeType () extends StObject

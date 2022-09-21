@@ -10,10 +10,10 @@ A simple tool to find an open port on the current machine
 | ------------------ | :-------------: |
 | Full name          | portfinder |
 | Keywords           | http, ports, utilities |
-| # releases         | 9 |
-| # dependents       | 1203 |
-| # downloads        | 435412825 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.4509757333333336E7 |
+| # stars            | 802.0 |
 
 ## Links
 - [Homepage](https://github.com/http-party/node-portfinder#readme)

@@ -10,15 +10,12 @@ Get a property from a nested object using a dot path or custom separator
 | ------------------ | :-------------: |
 | Full name          | @strikeentco/get |
 | Keywords           | obj, object, prop, property, dot, path, get, access, notation, dotty, key, nested, paths, properties, props, segment, value, values, custom, separator, small, fast |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 82090 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13237.0 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/strikeentco/get#readme)
-- [Bugs](https://github.com/strikeentco/get/issues)
-- [Repository](https://github.com/strikeentco/get)
 - [Npm](https://www.npmjs.com/package/%40strikeentco%2Fget)
     
 

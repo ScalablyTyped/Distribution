@@ -1,6 +1,7 @@
 package typings.googleVisualization.google.visualization
 
 import typings.googleVisualization.anon.BarLabelStyle
+import typings.googleVisualization.anon.IsHtml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +16,17 @@ trait TimelineOptions extends StObject {
   
   var enableInteractivity: js.UndefOr[Boolean] = js.undefined
   
+  var fontName: js.UndefOr[String] = js.undefined
+  
+  var fontSize: js.UndefOr[Double] = js.undefined
+  
   var forceIFrame: js.UndefOr[Boolean] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
   var timeline: js.UndefOr[BarLabelStyle] = js.undefined
+  
+  var tooltip: js.UndefOr[IsHtml] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -44,11 +51,19 @@ object TimelineOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setEnableInteractivity(value: Boolean): Self = StObject.set(x, "enableInteractivity", value.asInstanceOf[js.Any])
     
     inline def setEnableInteractivityUndefined: Self = StObject.set(x, "enableInteractivity", js.undefined)
+    
+    inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    
+    inline def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     inline def setForceIFrame(value: Boolean): Self = StObject.set(x, "forceIFrame", value.asInstanceOf[js.Any])
     
@@ -61,6 +76,10 @@ object TimelineOptions {
     inline def setTimeline(value: BarLabelStyle): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     
     inline def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
+    
+    inline def setTooltip(value: IsHtml): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

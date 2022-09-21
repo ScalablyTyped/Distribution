@@ -10,10 +10,10 @@ Open a URL via the operating system (http: in default browser, mailto: in mail c
 | ------------------ | :-------------: |
 | Full name          | openurl2 |
 | Keywords           | desktop, browser |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1081 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/interagierende-systeme/openurl2#readme)

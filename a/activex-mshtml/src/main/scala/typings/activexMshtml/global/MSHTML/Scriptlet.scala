@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.Scriptlet")
 @js.native
-/* private */ class Scriptlet ()
+/* private */ open class Scriptlet ()
   extends StObject
      with typings.activexMshtml.MSHTML.Scriptlet {
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var embed: Boolean = js.native
   
   /* CompleteClass */
-  override val event: js.Any = js.native
+  override val event: Any = js.native
   
   /* CompleteClass */
   override val readyState: Double = js.native

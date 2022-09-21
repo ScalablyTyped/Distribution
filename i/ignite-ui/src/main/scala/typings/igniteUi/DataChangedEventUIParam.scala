@@ -9,12 +9,12 @@ trait DataChangedEventUIParam extends StObject {
   /**
     * Used to obtain the new data.
     */
-  var newData: js.UndefOr[js.Any] = js.undefined
+  var newData: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to obtain reference to the barcode widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object DataChangedEventUIParam {
   
@@ -25,11 +25,11 @@ object DataChangedEventUIParam {
   
   extension [Self <: DataChangedEventUIParam](x: Self) {
     
-    inline def setNewData(value: js.Any): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
+    inline def setNewData(value: Any): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
     
     inline def setNewDataUndefined: Self = StObject.set(x, "newData", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

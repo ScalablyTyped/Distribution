@@ -4,7 +4,7 @@ import typings.jimp.mod.DepreciatedJimp
 import typings.mergeImg.mergeImgStrings.center
 import typings.mergeImg.mergeImgStrings.end
 import typings.mergeImg.mergeImgStrings.start
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

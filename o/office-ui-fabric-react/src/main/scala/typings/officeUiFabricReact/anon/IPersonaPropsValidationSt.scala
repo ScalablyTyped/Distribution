@@ -67,6 +67,7 @@ import typings.officeUiFabricReact.personaTypesMod.PersonaSize
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -98,7 +99,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.react.mod.global.JSX.Element
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
@@ -123,7 +124,7 @@ trait IPersonaPropsValidationSt extends StObject {
   /**
     * Whether initials are calculated for phone numbers and number sequences.
     * Example: Set property to true to get initials for project names consisting of numbers only.
-    * @defaultvalue false
+    * @default false
     */
   var allowPhoneInitials: js.UndefOr[Boolean] = js.undefined
   
@@ -131,7 +132,7 @@ trait IPersonaPropsValidationSt extends StObject {
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
   /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
-  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+  var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
   
   /**
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
@@ -140,7 +141,7 @@ trait IPersonaPropsValidationSt extends StObject {
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
-  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+  var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
   /**
     * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
@@ -191,7 +192,7 @@ trait IPersonaPropsValidationSt extends StObject {
     * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
     * @see aria-hidden @see aria-readonly.
     */
-  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+  var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
   
   /**
     * Indicates what functions can be performed when a dragged object is released on the drop target.
@@ -206,7 +207,7 @@ trait IPersonaPropsValidationSt extends StObject {
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
   /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
-  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+  var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
   
   /**
     * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
@@ -218,7 +219,7 @@ trait IPersonaPropsValidationSt extends StObject {
     * Indicates an element's "grabbed" state in a drag-and-drop operation.
     * @deprecated in ARIA 1.1
     */
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+  var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
   /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
   var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
@@ -227,7 +228,7 @@ trait IPersonaPropsValidationSt extends StObject {
     * Indicates whether the element is exposed to an accessibility API.
     * @see aria-disabled.
     */
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+  var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
   
   /**
     * Indicates the entered value does not conform to the format expected by the application.
@@ -257,13 +258,13 @@ trait IPersonaPropsValidationSt extends StObject {
   var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
   /** Indicates whether an element is modal when displayed. */
-  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+  var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
   
   /** Indicates whether a text box accepts multiple lines of input or only a single line. */
-  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
   
   /** Indicates that the user may select more than one item from the current selectable descendants. */
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
   /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
   var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
@@ -297,7 +298,7 @@ trait IPersonaPropsValidationSt extends StObject {
     * Indicates that the element is not editable, but is otherwise operable.
     * @see aria-disabled.
     */
-  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+  var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
   
   /**
     * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
@@ -308,7 +309,7 @@ trait IPersonaPropsValidationSt extends StObject {
   ] = js.undefined
   
   /** Indicates that user input is required on the element before a form may be submitted. */
-  var `aria-required`: js.UndefOr[Boolean] = js.undefined
+  var `aria-required`: js.UndefOr[Booleanish] = js.undefined
   
   /** Defines a human-readable, author-localized description for the role of an element. */
   var `aria-roledescription`: js.UndefOr[String] = js.undefined
@@ -335,7 +336,7 @@ trait IPersonaPropsValidationSt extends StObject {
     * Indicates the current "selected" state of various widgets.
     * @see aria-checked @see aria-pressed.
     */
-  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+  var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
   
   /**
     * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
@@ -426,7 +427,7 @@ trait IPersonaPropsValidationSt extends StObject {
   
   /**
     * The user's initials to display in the image area when there is no image.
-    * @defaultvalue [Derived from text]
+    * @default [Derived from text]
     */
   var imageInitials: js.UndefOr[String] = js.undefined
   
@@ -438,7 +439,7 @@ trait IPersonaPropsValidationSt extends StObject {
   /**
     * If true, the image starts as visible and is hidden on error. Otherwise, the image is hidden until
     * it is successfully loaded. This disables imageShouldFadeIn.
-    * @defaultvalue false
+    * @default false
     */
   var imageShouldStartVisible: js.UndefOr[Boolean] = js.undefined
   
@@ -449,11 +450,16 @@ trait IPersonaPropsValidationSt extends StObject {
   
   /**
     * The background color when the user's initials are displayed.
-    * @defaultvalue [Derived from text]
+    * @default [Derived from text]
     */
   var initialsColor: js.UndefOr[PersonaInitialsColor | String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.undefined
+  /**
+    * The text color when the user's initials are displayed
+    */
+  var initialsTextColor: js.UndefOr[String] = js.undefined
+  
+  var inlist: js.UndefOr[Any] = js.undefined
   
   // Living Standard
   /**
@@ -565,6 +571,7 @@ trait IPersonaPropsValidationSt extends StObject {
   // Keyboard Events
   var onKeyDown: js.UndefOr[KeyboardEventHandler[PersonaBase | PersonaCoinBase | HTMLDivElement]] = js.undefined
   
+  /** @deprecated */
   var onKeyPress: js.UndefOr[KeyboardEventHandler[PersonaBase | PersonaCoinBase | HTMLDivElement]] = js.undefined
   
   var onKeyUp: js.UndefOr[KeyboardEventHandler[PersonaBase | PersonaCoinBase | HTMLDivElement]] = js.undefined
@@ -712,7 +719,7 @@ trait IPersonaPropsValidationSt extends StObject {
   
   /**
     * Presence of the person to display - will not display presence if undefined.
-    * @defaultvalue PersonaPresence.none
+    * @default PersonaPresence.none
     */
   var presence: js.UndefOr[PersonaPresence] = js.undefined
   
@@ -741,7 +748,7 @@ trait IPersonaPropsValidationSt extends StObject {
   
   // <command>, <menuitem>
   // WAI-ARIA
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[AriaRole] = js.undefined
   
   /**
     * Secondary text to display, usually the role of the user.
@@ -753,9 +760,15 @@ trait IPersonaPropsValidationSt extends StObject {
   /**
     * If true renders the initials while the image is loading.
     * This only applies when an imageUrl is provided.
-    * @defaultvalue false
+    * @default false
     */
   var showInitialsUntilImageLoads: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether clipped overflow text should render in a tooltip.
+    * @default true
+    */
+  var showOverflowTooltip: js.UndefOr[Boolean] = js.undefined
   
   var showSecondaryText: js.UndefOr[Boolean] = js.undefined
   
@@ -767,7 +780,7 @@ trait IPersonaPropsValidationSt extends StObject {
   
   /**
     * Decides the size of the control.
-    * @defaultvalue PersonaSize.size48
+    * @default PersonaSize.size48
     */
   var size: js.UndefOr[PersonaSize] = js.undefined
   
@@ -839,7 +852,7 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
     
-    inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+    inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
@@ -847,7 +860,7 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
-    inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+    inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
@@ -883,7 +896,7 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
     
-    inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+    inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
@@ -895,7 +908,7 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
     
-    inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+    inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     
     inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
     
@@ -903,7 +916,7 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
     
-    inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+    inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
@@ -911,7 +924,7 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
-    inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+    inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
@@ -939,15 +952,15 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
-    inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+    inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
     
     inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
     
-    inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+    inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
     
     inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
     
-    inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+    inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
@@ -971,7 +984,7 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
-    inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+    inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
@@ -981,7 +994,7 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
     
-    inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+    inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
     
     inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
     
@@ -1001,7 +1014,7 @@ object IPersonaPropsValidationSt {
     
     inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
     
-    inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+    inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
     
     inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
     
@@ -1091,7 +1104,7 @@ object IPersonaPropsValidationSt {
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
@@ -1137,7 +1150,11 @@ object IPersonaPropsValidationSt {
     
     inline def setInitialsColorUndefined: Self = StObject.set(x, "initialsColor", js.undefined)
     
-    inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInitialsTextColor(value: String): Self = StObject.set(x, "initialsTextColor", value.asInstanceOf[js.Any])
+    
+    inline def setInitialsTextColorUndefined: Self = StObject.set(x, "initialsTextColor", js.undefined)
+    
+    inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
@@ -1201,7 +1218,7 @@ object IPersonaPropsValidationSt {
     
     inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
-    inline def setOnBlur(value: FocusEvent[PersonaBase | PersonaCoinBase | HTMLDivElement] => scala.Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: FocusEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, Element] => scala.Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
@@ -1301,7 +1318,7 @@ object IPersonaPropsValidationSt {
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnFocus(value: FocusEvent[PersonaBase | PersonaCoinBase | HTMLDivElement] => scala.Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: FocusEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, Element] => scala.Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
@@ -1430,43 +1447,66 @@ object IPersonaPropsValidationSt {
     inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
     
     inline def setOnRenderCoin(
-      value: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IPersonaSharedProps], 
+            typings.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderCoin", js.Any.fromFunction2(value))
     
     inline def setOnRenderCoinUndefined: Self = StObject.set(x, "onRenderCoin", js.undefined)
     
     inline def setOnRenderInitials(
-      value: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IPersonaSharedProps], 
+            typings.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderInitials", js.Any.fromFunction2(value))
     
     inline def setOnRenderInitialsUndefined: Self = StObject.set(x, "onRenderInitials", js.undefined)
     
     inline def setOnRenderOptionalText(
-      value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IPersonaProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderOptionalText", js.Any.fromFunction2(value))
     
     inline def setOnRenderOptionalTextUndefined: Self = StObject.set(x, "onRenderOptionalText", js.undefined)
     
     inline def setOnRenderPersonaCoin(
-      value: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IPersonaSharedProps], 
+            typings.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderPersonaCoin", js.Any.fromFunction2(value))
     
     inline def setOnRenderPersonaCoinUndefined: Self = StObject.set(x, "onRenderPersonaCoin", js.undefined)
     
     inline def setOnRenderPrimaryText(
-      value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IPersonaProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderPrimaryText", js.Any.fromFunction2(value))
     
     inline def setOnRenderPrimaryTextUndefined: Self = StObject.set(x, "onRenderPrimaryText", js.undefined)
     
     inline def setOnRenderSecondaryText(
-      value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IPersonaProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderSecondaryText", js.Any.fromFunction2(value))
     
     inline def setOnRenderSecondaryTextUndefined: Self = StObject.set(x, "onRenderSecondaryText", js.undefined)
     
     inline def setOnRenderTertiaryText(
-      value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IPersonaProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderTertiaryText", js.Any.fromFunction2(value))
     
     inline def setOnRenderTertiaryTextUndefined: Self = StObject.set(x, "onRenderTertiaryText", js.undefined)
@@ -1583,7 +1623,7 @@ object IPersonaPropsValidationSt {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
@@ -1598,6 +1638,10 @@ object IPersonaPropsValidationSt {
     inline def setShowInitialsUntilImageLoads(value: Boolean): Self = StObject.set(x, "showInitialsUntilImageLoads", value.asInstanceOf[js.Any])
     
     inline def setShowInitialsUntilImageLoadsUndefined: Self = StObject.set(x, "showInitialsUntilImageLoads", js.undefined)
+    
+    inline def setShowOverflowTooltip(value: Boolean): Self = StObject.set(x, "showOverflowTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setShowOverflowTooltipUndefined: Self = StObject.set(x, "showOverflowTooltip", js.undefined)
     
     inline def setShowSecondaryText(value: Boolean): Self = StObject.set(x, "showSecondaryText", value.asInstanceOf[js.Any])
     

@@ -1,14 +1,25 @@
 package typings.asn1js.mod
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "Primitive")
 @js.native
-class Primitive () extends BaseBlock[LocalPrimitiveValueBlock] {
-  def this(parameters: BaseBlockParams) = this()
-  def this(parameters: Unit, valueBlockType: Instantiable0[LocalValueBlock]) = this()
-  def this(parameters: BaseBlockParams, valueBlockType: Instantiable0[LocalValueBlock]) = this()
+open class Primitive ()
+  extends BaseBlock[LocalPrimitiveValueBlock, LocalPrimitiveValueBlockJson]
+     with _AsnType {
+  def this(parameters: PrimitiveParams) = this()
+}
+object Primitive {
+  
+  @JSImport("asn1js", "Primitive")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("asn1js", "Primitive.NAME")
+  @js.native
+  def NAME: String = js.native
+  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

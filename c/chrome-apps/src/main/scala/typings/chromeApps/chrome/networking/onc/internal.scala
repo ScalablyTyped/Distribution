@@ -12,8 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Partial classes for internal use
-  * @internal
-  * @private
   */
 object internal {
   

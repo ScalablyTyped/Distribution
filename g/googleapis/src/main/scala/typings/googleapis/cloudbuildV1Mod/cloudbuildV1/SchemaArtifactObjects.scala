@@ -4,25 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Files in the workspace to upload to Cloud Storage upon successful
-  * completion of all build steps.
-  */
 trait SchemaArtifactObjects extends StObject {
   
   /**
-    * Cloud Storage bucket and optional object path, in the form
-    * &quot;gs://bucket/path/to/somewhere/&quot;. (see [Bucket Name
-    * Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)).
-    * Files in the workspace matching any path pattern will be uploaded to
-    * Cloud Storage with this location as a prefix.
+    * Cloud Storage bucket and optional object path, in the form "gs://bucket/path/to/somewhere/". (see [Bucket Name Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)). Files in the workspace matching any path pattern will be uploaded to Cloud Storage with this location as a prefix.
     */
-  var location: js.UndefOr[String] = js.undefined
+  var location: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Path globs used to match files in the build&#39;s workspace.
+    * Path globs used to match files in the build's workspace.
     */
-  var paths: js.UndefOr[js.Array[String]] = js.undefined
+  var paths: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Output only. Stores timing information for pushing all artifact objects.
@@ -40,13 +32,17 @@ object SchemaArtifactObjects {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
+    inline def setPathsNull: Self = StObject.set(x, "paths", null)
+    
     inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
     
     inline def setTiming(value: SchemaTimeSpan): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     

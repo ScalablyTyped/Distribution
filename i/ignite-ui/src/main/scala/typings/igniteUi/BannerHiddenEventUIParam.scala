@@ -9,12 +9,12 @@ trait BannerHiddenEventUIParam extends StObject {
   /**
     * Get the banner object from the banners array.
     */
-  var banner: js.UndefOr[js.Any] = js.undefined
+  var banner: js.UndefOr[Any] = js.undefined
   
   /**
     * Get the banner html element in the DOM.
     */
-  var bannerElement: js.UndefOr[js.Any] = js.undefined
+  var bannerElement: js.UndefOr[Any] = js.undefined
   
   /**
     * Get the banner index in the banners array.
@@ -30,9 +30,9 @@ object BannerHiddenEventUIParam {
   
   extension [Self <: BannerHiddenEventUIParam](x: Self) {
     
-    inline def setBanner(value: js.Any): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    inline def setBanner(value: Any): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
-    inline def setBannerElement(value: js.Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
+    inline def setBannerElement(value: Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
     
     inline def setBannerElementUndefined: Self = StObject.set(x, "bannerElement", js.undefined)
     

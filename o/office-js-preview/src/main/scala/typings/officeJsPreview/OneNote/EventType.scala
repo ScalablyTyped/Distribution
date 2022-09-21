@@ -7,29 +7,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait EventType extends StObject
 /**
-  * [Api set: OneNoteApi 1.3]
+  * @remarks
+  * [Api set: OneNoteApi 1.9]
   */
 @JSGlobal("OneNote.EventType")
 @js.native
 object EventType extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.9]
+    */
   @js.native
-  sealed trait notebookChanged
+  sealed trait alterationSelected
     extends StObject
        with EventType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.9]
+    */
   @js.native
-  sealed trait pageSelectionChanged
+  sealed trait inkSelectedForCorrection
     extends StObject
        with EventType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.9]
+    */
   @js.native
-  sealed trait sectionSelectionChanged
+  sealed trait reset
     extends StObject
        with EventType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.9]
+    */
   @js.native
-  sealed trait stickyNotesContextMenuExecuted
+  sealed trait restrictionsCalculated
     extends StObject
        with EventType
 }

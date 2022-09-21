@@ -29,7 +29,7 @@ object dialogMod {
   
   inline def addContext(name: String, modalContext: DialogContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContext")(name.asInstanceOf[js.Any], modalContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def close(obj: js.Any, results: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(obj.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def close(obj: Any, results: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(List(obj.asInstanceOf[js.Any]).`++`(results.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("plugins/dialog", "currentZIndex")
   @js.native
@@ -39,7 +39,7 @@ object dialogMod {
   inline def getContext(): DialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[DialogContext]
   inline def getContext(name: String): DialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(name.asInstanceOf[js.Any]).asInstanceOf[DialogContext]
   
-  inline def getDialog(obj: js.Any): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getDialog")(obj.asInstanceOf[js.Any]).asInstanceOf[Dialog]
+  inline def getDialog(obj: Any): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getDialog")(obj.asInstanceOf[js.Any]).asInstanceOf[Dialog]
   
   inline def getNextZIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextZIndex")().asInstanceOf[Double]
   
@@ -47,10 +47,10 @@ object dialogMod {
   
   inline def isOpen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpen")().asInstanceOf[Boolean]
   
-  inline def show(obj: js.Any): DurandalPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[js.Any]]
-  inline def show(obj: js.Any, activationData: js.Any): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
-  inline def show(obj: js.Any, activationData: js.Any, context: String): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
-  inline def show(obj: js.Any, activationData: Unit, context: String): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  inline def show(obj: Any): DurandalPromise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[Any]]
+  inline def show(obj: Any, activationData: Any): DurandalPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[Any]]
+  inline def show(obj: Any, activationData: Any, context: String): DurandalPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[Any]]
+  inline def show(obj: Any, activationData: Unit, context: String): DurandalPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[Any]]
   
   inline def showMessage(message: String): DurandalPromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[String]]
   inline def showMessage(message: String, title: String): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
@@ -128,26 +128,26 @@ object dialogMod {
   
   trait Dialog extends StObject {
     
-    var activator: DurandalActivator[js.Any]
+    var activator: DurandalActivator[Any]
     
-    def close(): DurandalPromise[js.Any]
+    def close(): DurandalPromise[Any]
     
     var context: DialogContext
     
     var host: HTMLElement
     
-    var owner: js.Any
+    var owner: Any
     
     var settings: CompositionContext
   }
   object Dialog {
     
     inline def apply(
-      activator: DurandalActivator[js.Any],
-      close: () => DurandalPromise[js.Any],
+      activator: DurandalActivator[Any],
+      close: () => DurandalPromise[Any],
       context: DialogContext,
       host: HTMLElement,
-      owner: js.Any,
+      owner: Any,
       settings: CompositionContext
     ): Dialog = {
       val __obj = js.Dynamic.literal(activator = activator.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), context = context.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
@@ -156,15 +156,15 @@ object dialogMod {
     
     extension [Self <: Dialog](x: Self) {
       
-      inline def setActivator(value: DurandalActivator[js.Any]): Self = StObject.set(x, "activator", value.asInstanceOf[js.Any])
+      inline def setActivator(value: DurandalActivator[Any]): Self = StObject.set(x, "activator", value.asInstanceOf[js.Any])
       
-      inline def setClose(value: () => DurandalPromise[js.Any]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => DurandalPromise[Any]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
       inline def setContext(value: DialogContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
       inline def setSettings(value: CompositionContext): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }

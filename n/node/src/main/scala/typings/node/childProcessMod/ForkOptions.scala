@@ -1,10 +1,7 @@
 package typings.node.childProcessMod
 
-import typings.node.nodeStrings.ignore
-import typings.node.nodeStrings.inherit
+import typings.node.nodeStreamMod.Stream
 import typings.node.nodeStrings.ipc
-import typings.node.nodeStrings.pipe
-import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +40,7 @@ object ForkOptions {
     
     inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
     
-    inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
+    inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value*))
     
     inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
     
@@ -57,7 +54,7 @@ object ForkOptions {
     
     inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     
-    inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+    inline def setStdioVarargs(value: (js.UndefOr[IOType | ipc | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value*))
     
     inline def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
     

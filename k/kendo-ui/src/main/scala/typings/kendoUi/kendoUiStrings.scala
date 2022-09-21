@@ -43,6 +43,10 @@ object kendoUiStrings {
   inline def item: item = "item".asInstanceOf[item]
   
   @js.native
+  sealed trait kendoActionSheet extends StObject
+  inline def kendoActionSheet: kendoActionSheet = "kendoActionSheet".asInstanceOf[kendoActionSheet]
+  
+  @js.native
   sealed trait kendoAlert extends StObject
   inline def kendoAlert: kendoAlert = "kendoAlert".asInstanceOf[kendoAlert]
   
@@ -59,8 +63,20 @@ object kendoUiStrings {
   inline def kendoAutoComplete: kendoAutoComplete = "kendoAutoComplete".asInstanceOf[kendoAutoComplete]
   
   @js.native
+  sealed trait kendoAvatar extends StObject
+  inline def kendoAvatar: kendoAvatar = "kendoAvatar".asInstanceOf[kendoAvatar]
+  
+  @js.native
+  sealed trait kendoBadge extends StObject
+  inline def kendoBadge: kendoBadge = "kendoBadge".asInstanceOf[kendoBadge]
+  
+  @js.native
   sealed trait kendoBarcode extends StObject
   inline def kendoBarcode: kendoBarcode = "kendoBarcode".asInstanceOf[kendoBarcode]
+  
+  @js.native
+  sealed trait kendoBottomNavigation extends StObject
+  inline def kendoBottomNavigation: kendoBottomNavigation = "kendoBottomNavigation".asInstanceOf[kendoBottomNavigation]
   
   @js.native
   sealed trait kendoButton extends StObject
@@ -75,12 +91,36 @@ object kendoUiStrings {
   inline def kendoCalendar: kendoCalendar = "kendoCalendar".asInstanceOf[kendoCalendar]
   
   @js.native
+  sealed trait kendoCaptcha extends StObject
+  inline def kendoCaptcha: kendoCaptcha = "kendoCaptcha".asInstanceOf[kendoCaptcha]
+  
+  @js.native
   sealed trait kendoChart extends StObject
   inline def kendoChart: kendoChart = "kendoChart".asInstanceOf[kendoChart]
   
   @js.native
   sealed trait kendoChat extends StObject
   inline def kendoChat: kendoChat = "kendoChat".asInstanceOf[kendoChat]
+  
+  @js.native
+  sealed trait kendoCheckBox extends StObject
+  inline def kendoCheckBox: kendoCheckBox = "kendoCheckBox".asInstanceOf[kendoCheckBox]
+  
+  @js.native
+  sealed trait kendoCheckBoxGroup extends StObject
+  inline def kendoCheckBoxGroup: kendoCheckBoxGroup = "kendoCheckBoxGroup".asInstanceOf[kendoCheckBoxGroup]
+  
+  @js.native
+  sealed trait kendoCircularGauge extends StObject
+  inline def kendoCircularGauge: kendoCircularGauge = "kendoCircularGauge".asInstanceOf[kendoCircularGauge]
+  
+  @js.native
+  sealed trait kendoCircularProgressBar extends StObject
+  inline def kendoCircularProgressBar: kendoCircularProgressBar = "kendoCircularProgressBar".asInstanceOf[kendoCircularProgressBar]
+  
+  @js.native
+  sealed trait kendoColorGradient extends StObject
+  inline def kendoColorGradient: kendoColorGradient = "kendoColorGradient".asInstanceOf[kendoColorGradient]
   
   @js.native
   sealed trait kendoColorPalette extends StObject
@@ -155,6 +195,10 @@ object kendoUiStrings {
   inline def kendoEditor: kendoEditor = "kendoEditor".asInstanceOf[kendoEditor]
   
   @js.native
+  sealed trait kendoExpansionPanel extends StObject
+  inline def kendoExpansionPanel: kendoExpansionPanel = "kendoExpansionPanel".asInstanceOf[kendoExpansionPanel]
+  
+  @js.native
   sealed trait kendoFilter extends StObject
   inline def kendoFilter: kendoFilter = "kendoFilter".asInstanceOf[kendoFilter]
   
@@ -165,6 +209,14 @@ object kendoUiStrings {
   @js.native
   sealed trait kendoFlatColorPicker extends StObject
   inline def kendoFlatColorPicker: kendoFlatColorPicker = "kendoFlatColorPicker".asInstanceOf[kendoFlatColorPicker]
+  
+  @js.native
+  sealed trait kendoFloatingActionButton extends StObject
+  inline def kendoFloatingActionButton: kendoFloatingActionButton = "kendoFloatingActionButton".asInstanceOf[kendoFloatingActionButton]
+  
+  @js.native
+  sealed trait kendoForm extends StObject
+  inline def kendoForm: kendoForm = "kendoForm".asInstanceOf[kendoForm]
   
   @js.native
   sealed trait kendoGantt extends StObject
@@ -311,6 +363,10 @@ object kendoUiStrings {
   inline def kendoNumericTextBox: kendoNumericTextBox = "kendoNumericTextBox".asInstanceOf[kendoNumericTextBox]
   
   @js.native
+  sealed trait kendoOrgChart extends StObject
+  inline def kendoOrgChart: kendoOrgChart = "kendoOrgChart".asInstanceOf[kendoOrgChart]
+  
+  @js.native
   sealed trait kendoPDFViewer extends StObject
   inline def kendoPDFViewer: kendoPDFViewer = "kendoPDFViewer".asInstanceOf[kendoPDFViewer]
   
@@ -327,8 +383,28 @@ object kendoUiStrings {
   inline def kendoPivotConfigurator: kendoPivotConfigurator = "kendoPivotConfigurator".asInstanceOf[kendoPivotConfigurator]
   
   @js.native
+  sealed trait kendoPivotConfiguratorButton extends StObject
+  inline def kendoPivotConfiguratorButton: kendoPivotConfiguratorButton = "kendoPivotConfiguratorButton".asInstanceOf[kendoPivotConfiguratorButton]
+  
+  @js.native
+  sealed trait kendoPivotConfiguratorV2 extends StObject
+  inline def kendoPivotConfiguratorV2: kendoPivotConfiguratorV2 = "kendoPivotConfiguratorV2".asInstanceOf[kendoPivotConfiguratorV2]
+  
+  @js.native
+  sealed trait kendoPivotContainer extends StObject
+  inline def kendoPivotContainer: kendoPivotContainer = "kendoPivotContainer".asInstanceOf[kendoPivotContainer]
+  
+  @js.native
   sealed trait kendoPivotGrid extends StObject
   inline def kendoPivotGrid: kendoPivotGrid = "kendoPivotGrid".asInstanceOf[kendoPivotGrid]
+  
+  @js.native
+  sealed trait kendoPivotGridV2 extends StObject
+  inline def kendoPivotGridV2: kendoPivotGridV2 = "kendoPivotGridV2".asInstanceOf[kendoPivotGridV2]
+  
+  @js.native
+  sealed trait kendoPopover extends StObject
+  inline def kendoPopover: kendoPopover = "kendoPopover".asInstanceOf[kendoPopover]
   
   @js.native
   sealed trait kendoPopup extends StObject
@@ -351,6 +427,14 @@ object kendoUiStrings {
   inline def kendoRadialGauge: kendoRadialGauge = "kendoRadialGauge".asInstanceOf[kendoRadialGauge]
   
   @js.native
+  sealed trait kendoRadioButton extends StObject
+  inline def kendoRadioButton: kendoRadioButton = "kendoRadioButton".asInstanceOf[kendoRadioButton]
+  
+  @js.native
+  sealed trait kendoRadioGroup extends StObject
+  inline def kendoRadioGroup: kendoRadioGroup = "kendoRadioGroup".asInstanceOf[kendoRadioGroup]
+  
+  @js.native
   sealed trait kendoRangeSlider extends StObject
   inline def kendoRangeSlider: kendoRangeSlider = "kendoRangeSlider".asInstanceOf[kendoRangeSlider]
   
@@ -369,6 +453,10 @@ object kendoUiStrings {
   @js.native
   sealed trait kendoScrollView extends StObject
   inline def kendoScrollView: kendoScrollView = "kendoScrollView".asInstanceOf[kendoScrollView]
+  
+  @js.native
+  sealed trait kendoSkeletonContainer extends StObject
+  inline def kendoSkeletonContainer: kendoSkeletonContainer = "kendoSkeletonContainer".asInstanceOf[kendoSkeletonContainer]
   
   @js.native
   sealed trait kendoSlider extends StObject

@@ -10,10 +10,10 @@ Render multiline textboxes in HTML5 canvas with auto line breaks and better alig
 | ------------------ | :-------------: |
 | Full name          | canvas-txt |
 | Keywords           | vue, react, library, canvas, Multiline, es6 |
-| # releases         | 21 |
-| # dependents       | 4 |
-| # downloads        | 17936 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 5596.333333333333 |
+| # stars            | 353.0 |
 
 ## Links
 - [Homepage](https://canvas-txt.geongeorge.com)

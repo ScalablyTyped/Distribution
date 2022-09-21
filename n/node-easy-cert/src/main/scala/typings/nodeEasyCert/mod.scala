@@ -1,6 +1,5 @@
 package typings.nodeEasyCert
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("node-easy-cert", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with CertManager {
     def this(options: CertManagerOptions) = this()
@@ -44,7 +43,7 @@ object mod {
       * @param callback Optional callback called when all certificates are cleared.
       */
     def clearCerts(): Unit = js.native
-    def clearCerts(callback: js.Function0[js.Any]): Unit = js.native
+    def clearCerts(callback: js.Function0[Any]): Unit = js.native
     
     /**
       * Generates a new Root CA certificate.
@@ -107,7 +106,7 @@ object mod {
       
       inline def setDefaultCertAttrsUndefined: Self = StObject.set(x, "defaultCertAttrs", js.undefined)
       
-      inline def setDefaultCertAttrsVarargs(value: CertificateAttribute*): Self = StObject.set(x, "defaultCertAttrs", js.Array(value :_*))
+      inline def setDefaultCertAttrsVarargs(value: CertificateAttribute*): Self = StObject.set(x, "defaultCertAttrs", js.Array(value*))
       
       inline def setRootDirPath(value: String): Self = StObject.set(x, "rootDirPath", value.asInstanceOf[js.Any])
       
@@ -180,10 +179,10 @@ object mod {
   }
   
   type GenerateCallback = js.Function3[
-    /* err */ Error | CertErrors | Null, 
+    /* err */ js.Error | CertErrors | Null, 
     /* keyPath */ String, 
     /* certPath */ String, 
-    js.Any
+    Any
   ]
   
   trait GenerateConfig extends StObject {
@@ -215,9 +214,9 @@ object mod {
   }
   
   type GetCertificateCallback = js.Function3[
-    /* err */ Error | CertErrors | Null, 
+    /* err */ js.Error | CertErrors | Null, 
     /* keyContent */ String, 
     /* certContent */ String, 
-    js.Any
+    Any
   ]
 }

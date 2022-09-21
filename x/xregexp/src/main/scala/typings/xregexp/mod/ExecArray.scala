@@ -17,7 +17,7 @@ trait ExecArray
   * Named capture groups are accessible as properties when the `namespacing`
   * feature is not installed.
   */
-/* propName */ StringDictionary[js.Any] {
+/* propName */ StringDictionary[Any] {
   
   /**
     * This is only present if the the `namespacing` feature is installed

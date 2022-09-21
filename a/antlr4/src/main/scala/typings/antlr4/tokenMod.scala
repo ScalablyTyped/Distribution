@@ -9,32 +9,32 @@ object tokenMod {
   
   @JSImport("antlr4/Token", "CommonToken")
   @js.native
-  class CommonToken protected () extends Token {
-    def this(source: js.Any, `type`: js.Any, channel: js.Any, start: Double, stop: Double) = this()
+  open class CommonToken protected () extends Token {
+    def this(source: Any, `type`: Any, channel: Any, start: Double, stop: Double) = this()
   }
   /* static members */
   object CommonToken {
     
     @JSImport("antlr4/Token", "CommonToken.EMPTY_SOURCE")
     @js.native
-    val EMPTY_SOURCE: js.Any = js.native
+    val EMPTY_SOURCE: Any = js.native
   }
   
   @JSImport("antlr4/Token", "Token")
   @js.native
-  class Token () extends StObject {
+  open class Token () extends StObject {
     
-    var channel: js.Any = js.native
+    var channel: Any = js.native
     
     var column: Double = js.native
     
     def getInputStream(): InputStream = js.native
     
-    def getTokenSource(): js.Any = js.native
+    def getTokenSource(): Any = js.native
     
     var line: Double = js.native
     
-    var source: js.Any = js.native
+    var source: Any = js.native
     
     var start: Double = js.native
     
@@ -44,7 +44,7 @@ object tokenMod {
     
     var tokenIndex: Double = js.native
     
-    var `type`: js.Any = js.native
+    var `type`: Any = js.native
   }
   /* static members */
   object Token {

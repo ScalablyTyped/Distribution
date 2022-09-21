@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateProfileJobRequest extends StObject {
   
   /**
+    * Configuration for profile jobs. Used to select columns, do evaluations, and override default parameters of evaluations. When configuration is null, the profile job will run with default settings.
+    */
+  var Configuration: js.UndefOr[ProfileConfiguration] = js.undefined
+  
+  /**
     * The name of the dataset that this job is to act upon.
     */
   var DatasetName: typings.awsSdk.databrewMod.DatasetName
@@ -17,12 +22,17 @@ trait CreateProfileJobRequest extends StObject {
   var EncryptionKeyArn: js.UndefOr[typings.awsSdk.databrewMod.EncryptionKeyArn] = js.undefined
   
   /**
-    * The encryption mode for the job, which can be one of the following:    SSE-KMS - para&gt;SSE-KMS - server-side encryption with AWS KMS-managed keys.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
+    * The encryption mode for the job, which can be one of the following:    SSE-KMS - SSE-KMS - Server-side encryption with KMS-managed keys.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
     */
   var EncryptionMode: js.UndefOr[typings.awsSdk.databrewMod.EncryptionMode] = js.undefined
   
   /**
-    * A value that enables or disables Amazon CloudWatch logging for the current AWS account. If logging is enabled, CloudWatch writes one log stream for each job run.
+    * Sample configuration for profile jobs only. Determines the number of rows on which the profile job will be executed. If a JobSample value is not provided, the default value will be used. The default value is CUSTOM_ROWS for the mode parameter and 20000 for the size parameter.
+    */
+  var JobSample: js.UndefOr[typings.awsSdk.databrewMod.JobSample] = js.undefined
+  
+  /**
+    * Enables or disables Amazon CloudWatch logging for the job. If logging is enabled, CloudWatch writes one log stream for each job run.
     */
   var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.undefined
   
@@ -37,14 +47,14 @@ trait CreateProfileJobRequest extends StObject {
   var MaxRetries: js.UndefOr[typings.awsSdk.databrewMod.MaxRetries] = js.undefined
   
   /**
-    * The name of the job to be created.
+    * The name of the job to be created. Valid characters are alphanumeric (A-Z, a-z, 0-9), hyphen (-), period (.), and space.
     */
   var Name: JobName
   
   var OutputLocation: S3Location
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role to be assumed for this request.
+    * The Amazon Resource Name (ARN) of the Identity and Access Management (IAM) role to be assumed when DataBrew runs the job.
     */
   var RoleArn: Arn
   
@@ -57,6 +67,11 @@ trait CreateProfileJobRequest extends StObject {
     * The job's timeout in minutes. A job that attempts to run longer than this timeout period ends with a status of TIMEOUT.
     */
   var Timeout: js.UndefOr[typings.awsSdk.databrewMod.Timeout] = js.undefined
+  
+  /**
+    * List of validation configurations that are applied to the profile job.
+    */
+  var ValidationConfigurations: js.UndefOr[ValidationConfigurationList] = js.undefined
 }
 object CreateProfileJobRequest {
   
@@ -67,6 +82,10 @@ object CreateProfileJobRequest {
   
   extension [Self <: CreateProfileJobRequest](x: Self) {
     
+    inline def setConfiguration(value: ProfileConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
+    
     inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
     inline def setEncryptionKeyArn(value: EncryptionKeyArn): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
@@ -76,6 +95,10 @@ object CreateProfileJobRequest {
     inline def setEncryptionMode(value: EncryptionMode): Self = StObject.set(x, "EncryptionMode", value.asInstanceOf[js.Any])
     
     inline def setEncryptionModeUndefined: Self = StObject.set(x, "EncryptionMode", js.undefined)
+    
+    inline def setJobSample(value: JobSample): Self = StObject.set(x, "JobSample", value.asInstanceOf[js.Any])
+    
+    inline def setJobSampleUndefined: Self = StObject.set(x, "JobSample", js.undefined)
     
     inline def setLogSubscription(value: LogSubscription): Self = StObject.set(x, "LogSubscription", value.asInstanceOf[js.Any])
     
@@ -102,5 +125,11 @@ object CreateProfileJobRequest {
     inline def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
+    
+    inline def setValidationConfigurations(value: ValidationConfigurationList): Self = StObject.set(x, "ValidationConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setValidationConfigurationsUndefined: Self = StObject.set(x, "ValidationConfigurations", js.undefined)
+    
+    inline def setValidationConfigurationsVarargs(value: ValidationConfiguration*): Self = StObject.set(x, "ValidationConfigurations", js.Array(value*))
   }
 }

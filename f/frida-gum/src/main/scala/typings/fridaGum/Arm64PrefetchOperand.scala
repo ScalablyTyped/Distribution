@@ -16,8 +16,8 @@ trait Arm64PrefetchOperand
 }
 object Arm64PrefetchOperand {
   
-  inline def apply(value: Double): Arm64PrefetchOperand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, value: Double): Arm64PrefetchOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("prefetch")
     __obj.asInstanceOf[Arm64PrefetchOperand]
   }

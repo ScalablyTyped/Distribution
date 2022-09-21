@@ -19,7 +19,7 @@ trait XFetchProviderForContentAccess
     * @param nRowStartPosition the starting row of the result set
     * @param nRowCount the count of rows
     * @param bDirection `TRUE` , if you want the rows to be read in the same order, as they are contained in the result set ( `TRUE` <-> forward step; `FALSE`
-    * @returns {@link FetchResult.Rows} contains a sequence of anys. Each of these anys contains a string.
+    * @returns contains a sequence of anys. Each of these anys contains a string.
     */
   def fetchContentIdentifierStrings(nRowStartPosition: Double, nRowCount: Double, bDirection: Boolean): FetchResult
   
@@ -28,7 +28,7 @@ trait XFetchProviderForContentAccess
     * @param nRowStartPosition the starting row of the result set
     * @param nRowCount the count of rows
     * @param bDirection `TRUE` , if you want the rows to be read in the same order, as they are contained in the result set ( `TRUE` <-> forward step; `FALSE`
-    * @returns {@link FetchResult.Rows} contains a sequence of anys. Each of these anys contains an {@link XContentIdentifier} .
+    * @returns contains a sequence of anys. Each of these anys contains an {@link XContentIdentifier} .
     */
   def fetchContentIdentifiers(nRowStartPosition: Double, nRowCount: Double, bDirection: Boolean): FetchResult
   
@@ -37,7 +37,7 @@ trait XFetchProviderForContentAccess
     * @param nRowStartPosition the starting row of the result set
     * @param nRowCount the count of rows
     * @param bDirection `TRUE` , if you want the rows to be read in the same order, as they are contained in the result set ( `TRUE` <-> forward step; `FALSE`
-    * @returns {@link FetchResult.Rows} contains a sequence of anys. Each of these anys contains an {@link XContent} .
+    * @returns contains a sequence of anys. Each of these anys contains an {@link XContent} .
     */
   def fetchContents(nRowStartPosition: Double, nRowCount: Double, bDirection: Boolean): FetchResult
 }
@@ -48,7 +48,7 @@ object XFetchProviderForContentAccess {
     fetchContentIdentifierStrings: (Double, Double, Boolean) => FetchResult,
     fetchContentIdentifiers: (Double, Double, Boolean) => FetchResult,
     fetchContents: (Double, Double, Boolean) => FetchResult,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFetchProviderForContentAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), fetchContentIdentifierStrings = js.Any.fromFunction3(fetchContentIdentifierStrings), fetchContentIdentifiers = js.Any.fromFunction3(fetchContentIdentifiers), fetchContents = js.Any.fromFunction3(fetchContents), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

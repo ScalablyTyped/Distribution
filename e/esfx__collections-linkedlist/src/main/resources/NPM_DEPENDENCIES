@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@esfx/collections-linkedlist" : "1.0.0-pre.13"
+      "@esfx/collections-linkedlist" : "1.0.0-pre.24"
     }
   ],
   "test-dependencies" : [
     {
-      "@esfx/collections-linkedlist" : "1.0.0-pre.13"
+      "@esfx/collections-linkedlist" : "1.0.0-pre.24"
     }
   ],
   "compile-devDependencies" : [

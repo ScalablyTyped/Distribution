@@ -25,7 +25,7 @@ object ListFoldersResponse {
     
     inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value :_*))
+    inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

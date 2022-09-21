@@ -31,7 +31,7 @@ object XScenarioEnhanced {
     Ranges: SafeArray[CellRangeAddress],
     acquire: () => Unit,
     getRanges: () => SafeArray[CellRangeAddress],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XScenarioEnhanced = {
     val __obj = js.Dynamic.literal(Ranges = Ranges.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getRanges = js.Any.fromFunction0(getRanges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -21,5 +21,5 @@ Instantiable0[IBlendImageFilter]
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IBlendImageFilter = js.native
+  def fromObject(`object`: Any): IBlendImageFilter = js.native
 }

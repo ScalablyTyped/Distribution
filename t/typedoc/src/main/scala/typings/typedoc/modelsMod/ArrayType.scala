@@ -1,0 +1,16 @@
+package typings.typedoc.modelsMod
+
+import typings.typedoc.modelsTypesMod.SomeType
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("typedoc/dist/lib/models", "ArrayType")
+@js.native
+open class ArrayType protected ()
+  extends typings.typedoc.modelsTypesMod.ArrayType {
+  /**
+    * @param elementType The type of the elements in the array.
+    */
+  def this(elementType: SomeType) = this()
+}

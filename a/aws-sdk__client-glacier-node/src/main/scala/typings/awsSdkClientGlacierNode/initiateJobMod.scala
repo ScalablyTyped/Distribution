@@ -8,5 +8,5 @@ object initiateJobMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/InitiateJob", "InitiateJob")
   @js.native
-  val InitiateJob: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val InitiateJob: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

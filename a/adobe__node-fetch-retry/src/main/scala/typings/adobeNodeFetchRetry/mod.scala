@@ -1,6 +1,7 @@
 package typings.adobeNodeFetchRetry
 
-import typings.nodeFetch.mod.Request
+import typings.adobeNodeFetchRetry.adobeNodeFetchRetryBooleans.`false`
+import typings.nodeFetch.mod.RequestInfo
 import typings.nodeFetch.mod.RequestInit
 import typings.nodeFetch.mod.Response
 import org.scalablytyped.runtime.StObject
@@ -9,74 +10,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(url: String, options: Options): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
-  inline def apply(url: Request, options: Options): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
-  
   @JSImport("@adobe/node-fetch-retry", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * options for fetch-retry
-    */
-  trait Options
+  inline def default(url: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  inline def default(url: RequestInfo, init: RequestInitWithRetry): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  
+  trait RequestInitWithRetry
     extends StObject
        with RequestInit {
     
-    /**
-      * options for retry or false if want to disable retry
-      * ... other options for fetch call (method, headers, etc...)
-      */
-    var retryOptions: js.UndefOr[RetryOptions] = js.undefined
+    var retryOptions: js.UndefOr[RetryOptions | `false`] = js.undefined
   }
-  object Options {
+  object RequestInitWithRetry {
     
-    inline def apply(): Options = {
+    inline def apply(): RequestInitWithRetry = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[RequestInitWithRetry]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: RequestInitWithRetry](x: Self) {
       
-      inline def setRetryOptions(value: RetryOptions): Self = StObject.set(x, "retryOptions", value.asInstanceOf[js.Any])
+      inline def setRetryOptions(value: RetryOptions | `false`): Self = StObject.set(x, "retryOptions", value.asInstanceOf[js.Any])
       
       inline def setRetryOptionsUndefined: Self = StObject.set(x, "retryOptions", js.undefined)
     }
   }
   
-  /**
-    * options for retry or false if want to disable retry
-    */
   trait RetryOptions extends StObject {
     
-    /**
-      * If true, socket timeout will be forced to use `socketTimeout` property declared (defaults to false)
-      */
     var forceSocketTimeout: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * backoff factor for wait time between retries (defaults to 2.0)
-      */
     var retryBackoff: js.UndefOr[Double] = js.undefined
     
-    /**
-      * time to wait between retries in milliseconds
-      */
     var retryInitialDelay: js.UndefOr[Double] = js.undefined
     
-    /**
-      * time (in milliseconds) to retry until throwing an error
-      */
     var retryMaxDuration: js.UndefOr[Double] = js.undefined
     
-    /**
-      * a function determining whether to retry on a specific HTTP code
-      */
+    var retryOnHttpError: js.UndefOr[js.Function1[/* error */ js.Error, Boolean]] = js.undefined
+    
     var retryOnHttpResponse: js.UndefOr[js.Function1[/* response */ Response, Boolean]] = js.undefined
     
-    /**
-      * Optional socket timeout in milliseconds (defaults to 60000ms)
-      */
     var socketTimeout: js.UndefOr[Double] = js.undefined
   }
   object RetryOptions {
@@ -103,6 +78,10 @@ object mod {
       inline def setRetryMaxDuration(value: Double): Self = StObject.set(x, "retryMaxDuration", value.asInstanceOf[js.Any])
       
       inline def setRetryMaxDurationUndefined: Self = StObject.set(x, "retryMaxDuration", js.undefined)
+      
+      inline def setRetryOnHttpError(value: /* error */ js.Error => Boolean): Self = StObject.set(x, "retryOnHttpError", js.Any.fromFunction1(value))
+      
+      inline def setRetryOnHttpErrorUndefined: Self = StObject.set(x, "retryOnHttpError", js.undefined)
       
       inline def setRetryOnHttpResponse(value: /* response */ Response => Boolean): Self = StObject.set(x, "retryOnHttpResponse", js.Any.fromFunction1(value))
       

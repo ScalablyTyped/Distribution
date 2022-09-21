@@ -14,7 +14,7 @@ trait LookupTransform
     *
     * __Default value:__ `null`
     */
-  var default: js.UndefOr[String] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   /**
     * The output fields on which to store the looked up data values.
@@ -52,9 +52,9 @@ object LookupTransform {
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    inline def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value*))
     
-    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     

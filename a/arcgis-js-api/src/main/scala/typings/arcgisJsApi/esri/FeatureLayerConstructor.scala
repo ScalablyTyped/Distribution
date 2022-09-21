@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayerConstructor
   extends StObject
      with /**
-  * A FeatureLayer is a single layer that can be created from a [Map Service](http://server.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm) or [Feature Service](http://server.arcgis.com/en/server/latest/publish-services/windows/what-is-a-feature-service-.htm); ArcGIS Online or ArcGIS Enterprise portal items; or from an array of client-side features.
+  * A FeatureLayer is a single layer that can be created from a [Map Service](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm) or [Feature Service](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-feature-service-.htm); ArcGIS Online or ArcGIS Enterprise portal items; or from an array of client-side features.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html)
   */
 Instantiable0[FeatureLayer]
      with Instantiable1[/* properties */ FeatureLayerProperties, FeatureLayer] {
   
-  def fromJSON(json: js.Any): FeatureLayer = js.native
+  def fromJSON(json: Any): FeatureLayer = js.native
 }

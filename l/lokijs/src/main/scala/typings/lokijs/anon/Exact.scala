@@ -9,21 +9,21 @@ trait Exact[E /* <: js.Object */] extends StObject {
   
   var exact: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.ExactIndex<E>}
-    */ typings.lokijs.lokijsStrings.Exact & TopLevel[js.Any]
+    */ typings.lokijs.lokijsStrings.Exact & TopLevel[Any]
   
   var unique: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.UniqueIndex<E>}
-    */ typings.lokijs.lokijsStrings.Exact & TopLevel[js.Any]
+    */ typings.lokijs.lokijsStrings.Exact & TopLevel[Any]
 }
 object Exact {
   
   inline def apply[E /* <: js.Object */](
     exact: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.ExactIndex<E>}
-    */ typings.lokijs.lokijsStrings.Exact & TopLevel[js.Any],
+    */ typings.lokijs.lokijsStrings.Exact & TopLevel[Any],
     unique: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.UniqueIndex<E>}
-    */ typings.lokijs.lokijsStrings.Exact & TopLevel[js.Any]
+    */ typings.lokijs.lokijsStrings.Exact & TopLevel[Any]
   ): Exact[E] = {
     val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[Exact[E]]
@@ -34,13 +34,13 @@ object Exact {
     inline def setExact(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof E ]: lokijs.ExactIndex<E>}
-      */ typings.lokijs.lokijsStrings.Exact & TopLevel[js.Any]
+      */ typings.lokijs.lokijsStrings.Exact & TopLevel[Any]
     ): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     inline def setUnique(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof E ]: lokijs.UniqueIndex<E>}
-      */ typings.lokijs.lokijsStrings.Exact & TopLevel[js.Any]
+      */ typings.lokijs.lokijsStrings.Exact & TopLevel[Any]
     ): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
   }
 }

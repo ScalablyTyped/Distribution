@@ -1,7 +1,7 @@
 
 # Scala.js typings for file-exists
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Check if filepath exists and is a file
@@ -10,10 +10,10 @@ Check if filepath exists and is a file
 | ------------------ | :-------------: |
 | Full name          | file-exists |
 | Keywords           | file, exists, fs, isfile, is-file |
-| # releases         | 0 |
-| # dependents       | 274 |
-| # downloads        | 2257572 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 647602.0 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/scottcorgan/file-exists)

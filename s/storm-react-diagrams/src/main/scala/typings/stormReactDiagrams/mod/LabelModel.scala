@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "LabelModel")
 @js.native
-class LabelModel ()
+open class LabelModel ()
   extends typings.stormReactDiagrams.labelModelMod.LabelModel {
   def this(`type`: String) = this()
   def this(`type`: String, id: String) = this()

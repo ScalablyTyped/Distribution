@@ -10,10 +10,10 @@ object restaurantMenuMod {
   
   @JSImport("material-ui/svg-icons/maps/restaurant-menu", JSImport.Default)
   @js.native
-  class default () extends MapsRestaurantMenu
+  open class default () extends MapsRestaurantMenu
   
   @JSImport("material-ui/svg-icons/maps/restaurant-menu", "MapsRestaurantMenu")
   @js.native
-  class MapsRestaurantMenu ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsRestaurantMenu ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

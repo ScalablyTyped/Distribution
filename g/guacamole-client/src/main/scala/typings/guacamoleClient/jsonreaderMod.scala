@@ -9,7 +9,7 @@ object jsonreaderMod {
   
   @JSImport("guacamole-client/lib/JSONReader", "JSONReader")
   @js.native
-  class JSONReader protected () extends StObject {
+  open class JSONReader protected () extends StObject {
     /**
       * @param stream The stream that JSON will be read from.
       */

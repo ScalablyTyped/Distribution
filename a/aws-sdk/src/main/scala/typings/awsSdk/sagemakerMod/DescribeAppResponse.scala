@@ -24,7 +24,7 @@ trait DescribeAppResponse extends StObject {
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The domain ID.
@@ -39,12 +39,12 @@ trait DescribeAppResponse extends StObject {
   /**
     * The timestamp of the last health check.
     */
-  var LastHealthCheckTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastHealthCheckTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The timestamp of the last user's activity.
+    * The timestamp of the last user's activity. LastUserActivityTimestamp is also updated when SageMaker performs health checks without user activity. As a result, this value is set to the same value as LastHealthCheckTimestamp.
     */
-  var LastUserActivityTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastUserActivityTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The instance type and the Amazon Resource Name (ARN) of the SageMaker image created on the instance.
@@ -82,7 +82,7 @@ object DescribeAppResponse {
     
     inline def setAppTypeUndefined: Self = StObject.set(x, "AppType", js.undefined)
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -94,11 +94,11 @@ object DescribeAppResponse {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setLastHealthCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastHealthCheckTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastHealthCheckTimestamp(value: js.Date): Self = StObject.set(x, "LastHealthCheckTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastHealthCheckTimestampUndefined: Self = StObject.set(x, "LastHealthCheckTimestamp", js.undefined)
     
-    inline def setLastUserActivityTimestamp(value: Timestamp): Self = StObject.set(x, "LastUserActivityTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUserActivityTimestamp(value: js.Date): Self = StObject.set(x, "LastUserActivityTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUserActivityTimestampUndefined: Self = StObject.set(x, "LastUserActivityTimestamp", js.undefined)
     

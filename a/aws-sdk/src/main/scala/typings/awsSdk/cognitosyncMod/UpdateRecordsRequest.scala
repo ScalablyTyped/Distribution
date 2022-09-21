@@ -73,7 +73,7 @@ object UpdateRecordsRequest {
     
     inline def setRecordPatchesUndefined: Self = StObject.set(x, "RecordPatches", js.undefined)
     
-    inline def setRecordPatchesVarargs(value: RecordPatch*): Self = StObject.set(x, "RecordPatches", js.Array(value :_*))
+    inline def setRecordPatchesVarargs(value: RecordPatch*): Self = StObject.set(x, "RecordPatches", js.Array(value*))
     
     inline def setSyncSessionToken(value: SyncSessionToken): Self = StObject.set(x, "SyncSessionToken", value.asInstanceOf[js.Any])
   }

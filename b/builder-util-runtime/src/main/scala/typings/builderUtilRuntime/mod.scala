@@ -5,18 +5,17 @@ import typings.builderUtilRuntime.anon.Variant
 import typings.builderUtilRuntime.builderUtilRuntimeBooleans.`false`
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.DELETE
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.GET
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.POST
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.PUT
-import typings.builderUtilRuntime.builderUtilRuntimeStrings.base64
-import typings.builderUtilRuntime.builderUtilRuntimeStrings.hex
-import typings.builderUtilRuntime.builderUtilRuntimeStrings.latin1
+import typings.builderUtilRuntime.httpExecutorMod.Request
 import typings.builderUtilRuntime.progressCallbackTransformMod.ProgressInfo
 import typings.builderUtilRuntime.publishOptionsMod.GithubOptions
 import typings.builderUtilRuntime.publishOptionsMod.PublishConfiguration
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.cryptoMod.BinaryToTextEncoding
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.URL_
-import typings.std.Error
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -39,44 +38,40 @@ object mod {
   
   @JSImport("builder-util-runtime", "CancellationError")
   @js.native
-  class CancellationError ()
+  open class CancellationError ()
     extends typings.builderUtilRuntime.cancellationTokenMod.CancellationError
   
   @JSImport("builder-util-runtime", "CancellationToken")
   @js.native
-  class CancellationToken ()
+  open class CancellationToken ()
     extends typings.builderUtilRuntime.cancellationTokenMod.CancellationToken {
     def this(parent: typings.builderUtilRuntime.cancellationTokenMod.CancellationToken) = this()
   }
   
   @JSImport("builder-util-runtime", "DigestTransform")
   @js.native
-  class DigestTransform protected ()
+  open class DigestTransform protected ()
     extends typings.builderUtilRuntime.httpExecutorMod.DigestTransform {
     def this(expected: String) = this()
     def this(expected: String, algorithm: String) = this()
-    def this(expected: String, algorithm: String, encoding: base64) = this()
-    def this(expected: String, algorithm: String, encoding: hex) = this()
-    def this(expected: String, algorithm: String, encoding: latin1) = this()
-    def this(expected: String, algorithm: Unit, encoding: base64) = this()
-    def this(expected: String, algorithm: Unit, encoding: hex) = this()
-    def this(expected: String, algorithm: Unit, encoding: latin1) = this()
+    def this(expected: String, algorithm: String, encoding: BinaryToTextEncoding) = this()
+    def this(expected: String, algorithm: Unit, encoding: BinaryToTextEncoding) = this()
   }
   
   @JSImport("builder-util-runtime", "HttpError")
   @js.native
-  class HttpError protected ()
+  open class HttpError protected ()
     extends typings.builderUtilRuntime.httpExecutorMod.HttpError {
     def this(statusCode: Double) = this()
     def this(statusCode: Double, message: String) = this()
-    def this(statusCode: Double, message: String, description: js.Any) = this()
-    def this(statusCode: Double, message: Unit, description: js.Any) = this()
+    def this(statusCode: Double, message: String, description: Any) = this()
+    def this(statusCode: Double, message: Unit, description: Any) = this()
   }
   
   @JSImport("builder-util-runtime", "HttpExecutor")
   @js.native
-  abstract class HttpExecutor[REQUEST] ()
-    extends typings.builderUtilRuntime.httpExecutorMod.HttpExecutor[REQUEST]
+  abstract class HttpExecutor[T /* <: Request */] ()
+    extends typings.builderUtilRuntime.httpExecutorMod.HttpExecutor[T]
   /* static members */
   object HttpExecutor {
     
@@ -85,22 +80,25 @@ object mod {
     val ^ : js.Any = js.native
     
     inline def prepareRedirectUrlOptions(redirectUrl: String, options: RequestOptions): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareRedirectUrlOptions")(redirectUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+    
+    inline def retryOnServerError(task: js.Function0[js.Promise[Any]]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("retryOnServerError")(task.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def retryOnServerError(task: js.Function0[js.Promise[Any]], maxRetries: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("retryOnServerError")(task.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   }
   
   @JSImport("builder-util-runtime", "ProgressCallbackTransform")
   @js.native
-  class ProgressCallbackTransform protected ()
+  open class ProgressCallbackTransform protected ()
     extends typings.builderUtilRuntime.progressCallbackTransformMod.ProgressCallbackTransform {
     def this(
       total: Double,
       cancellationToken: typings.builderUtilRuntime.cancellationTokenMod.CancellationToken,
-      onProgress: js.Function1[/* info */ ProgressInfo, js.Any]
+      onProgress: js.Function1[/* info */ ProgressInfo, Any]
     ) = this()
   }
   
   @JSImport("builder-util-runtime", "UUID")
   @js.native
-  class UUID protected ()
+  open class UUID protected ()
     extends typings.builderUtilRuntime.uuidMod.UUID {
     def this(uuid: String) = this()
     def this(uuid: Buffer) = this()
@@ -123,13 +121,13 @@ object mod {
     
     inline def parse(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    inline def v5(name: String, namespace: Buffer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(name.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def v5(name: Buffer, namespace: Buffer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(name.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def v5(name: String, namespace: Buffer): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(name.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def v5(name: Buffer, namespace: Buffer): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(name.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   @JSImport("builder-util-runtime", "XElement")
   @js.native
-  class XElement protected ()
+  open class XElement protected ()
     extends typings.builderUtilRuntime.xmlMod.XElement {
     def this(name: String) = this()
   }
@@ -140,41 +138,32 @@ object mod {
   
   inline def configureRequestOptions(options: RequestOptions): RequestOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any]).asInstanceOf[RequestOptions]
   inline def configureRequestOptions(options: RequestOptions, token: String): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  inline def configureRequestOptions(options: RequestOptions, token: String, method: GET | DELETE | PUT | POST): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  inline def configureRequestOptions(options: RequestOptions, token: Null, method: GET | DELETE | PUT | POST): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  inline def configureRequestOptions(options: RequestOptions, token: Unit, method: GET | DELETE | PUT | POST): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
   
   inline def configureRequestOptionsFromUrl(url: String, options: RequestOptions): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptionsFromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  
-  inline def configureRequestOptions_DELETE(options: RequestOptions, token: String, method: DELETE): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  inline def configureRequestOptions_DELETE(options: RequestOptions, token: Null, method: DELETE): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  inline def configureRequestOptions_DELETE(options: RequestOptions, token: Unit, method: DELETE): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  
-  inline def configureRequestOptions_GET(options: RequestOptions, token: String, method: GET): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  inline def configureRequestOptions_GET(options: RequestOptions, token: Null, method: GET): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  inline def configureRequestOptions_GET(options: RequestOptions, token: Unit, method: GET): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  
-  inline def configureRequestOptions_PUT(options: RequestOptions, token: String, method: PUT): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  inline def configureRequestOptions_PUT(options: RequestOptions, token: Null, method: PUT): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  inline def configureRequestOptions_PUT(options: RequestOptions, token: Unit, method: PUT): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
   
   inline def configureRequestUrl(url: URL_, options: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def createHttpError(response: IncomingMessage): typings.builderUtilRuntime.httpExecutorMod.HttpError = ^.asInstanceOf[js.Dynamic].applyDynamic("createHttpError")(response.asInstanceOf[js.Any]).asInstanceOf[typings.builderUtilRuntime.httpExecutorMod.HttpError]
-  inline def createHttpError(response: IncomingMessage, description: js.Any): typings.builderUtilRuntime.httpExecutorMod.HttpError = (^.asInstanceOf[js.Dynamic].applyDynamic("createHttpError")(response.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[typings.builderUtilRuntime.httpExecutorMod.HttpError]
+  inline def createHttpError(response: IncomingMessage, description: Any): typings.builderUtilRuntime.httpExecutorMod.HttpError = (^.asInstanceOf[js.Dynamic].applyDynamic("createHttpError")(response.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[typings.builderUtilRuntime.httpExecutorMod.HttpError]
   
   inline def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getS3LikeProviderBaseUrl")(configuration.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def githubUrl(options: GithubOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def githubUrl(options: GithubOptions, defaultHost: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any], defaultHost.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def newError(message: String, code: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("newError")(message.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def newError(message: String, code: String): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("newError")(message.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
   inline def parseDn(seq: String): Map[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDn")(seq.asInstanceOf[js.Any]).asInstanceOf[Map[String, String]]
   
-  inline def parseJson(result: js.Promise[String | Null]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJson")(result.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def parseJson(result: js.Promise[String | Null]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJson")(result.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   inline def parseXml(data: String): typings.builderUtilRuntime.xmlMod.XElement = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(data.asInstanceOf[js.Any]).asInstanceOf[typings.builderUtilRuntime.xmlMod.XElement]
   
-  inline def safeGetHeader(response: js.Any, headerKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("safeGetHeader")(response.asInstanceOf[js.Any], headerKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def safeGetHeader(response: Any, headerKey: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("safeGetHeader")(response.asInstanceOf[js.Any], headerKey.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def safeStringifyJson(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeStringifyJson")(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def safeStringifyJson(data: js.Any, skippedNames: Set[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("safeStringifyJson")(data.asInstanceOf[js.Any], skippedNames.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def safeStringifyJson(data: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeStringifyJson")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def safeStringifyJson(data: Any, skippedNames: Set[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("safeStringifyJson")(data.asInstanceOf[js.Any], skippedNames.asInstanceOf[js.Any])).asInstanceOf[String]
 }

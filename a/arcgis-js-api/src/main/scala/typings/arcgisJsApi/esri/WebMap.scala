@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebMap
   extends StObject
      with Map
-     with corePromise {
+     with corePromise
+     with _ProfileVariableInstanceType {
   
   /**
     * The applicationProperties contains the viewing properties of the WebMap.
@@ -42,6 +43,20 @@ trait WebMap
   var bookmarks: Collection[Bookmark] = js.native
   
   /**
+    * When a web map is configured as floor-aware, it has a floorInfo property defined.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#floorInfo)
+    */
+  var floorInfo: MapFloorInfo = js.native
+  
+  /**
+    * Information relating to a list of Geotriggers.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#geotriggersInfo)
+    */
+  var geotriggersInfo: GeotriggersInfo = js.native
+  
+  /**
     * The initial view of the WebMap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#initialViewProperties)
@@ -53,7 +68,7 @@ trait WebMap
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#load)
     */
-  def load(): js.Promise[js.Any] = js.native
+  def load(): js.Promise[Any] = js.native
   
   /**
     * Loads all the externally loadable resources associated with the webmap.
@@ -65,6 +80,8 @@ trait WebMap
   /**
     * The Error object returned if an error occurred while loading.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#loadError)
     */
   val loadError: Error = js.native
@@ -72,12 +89,16 @@ trait WebMap
   /**
     * Represents the status of a [load](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#load) operation.
     *
+    * @default not-loaded
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#loadStatus)
     */
   val loadStatus: `not-loaded` | loading | failed | typings.arcgisJsApi.arcgisJsApiStrings.loaded = js.native
   
   /**
     * Indicates whether the instance has loaded.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#loaded)
     */
@@ -95,7 +116,7 @@ trait WebMap
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#presentation)
     */
-  var presentation: js.Any = js.native
+  var presentation: Any = js.native
   
   /**
     * Saves the webmap to its associated portal item.
@@ -134,8 +155,15 @@ trait WebMap
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
-  def updateFrom(view: MapView): js.Promise[js.Any] = js.native
-  def updateFrom(view: MapView, options: WebMapUpdateFromOptions): js.Promise[js.Any] = js.native
+  def updateFrom(view: MapView): js.Promise[Any] = js.native
+  def updateFrom(view: MapView, options: WebMapUpdateFromOptions): js.Promise[Any] = js.native
+  
+  /**
+    * The utilityNetworks object contains a collection of [UtilityNetworks](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-UtilityNetwork.html) saved on the web map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#utilityNetworks)
+    */
+  var utilityNetworks: Collection[UtilityNetwork] = js.native
   
   /**
     * The widgets object contains widgets that are exposed to the user.

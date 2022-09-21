@@ -11,36 +11,36 @@ trait PivotTableChangeList extends StObject {
   def apply(Index: Double): ValueChange = js.native
   
   def Add(Tuple: String, Value: Double): ValueChange = js.native
-  def Add(Tuple: String, Value: Double, AllocationValue: js.Any): ValueChange = js.native
-  def Add(Tuple: String, Value: Double, AllocationValue: js.Any, AllocationMethod: js.Any): ValueChange = js.native
+  def Add(Tuple: String, Value: Double, AllocationValue: Any): ValueChange = js.native
+  def Add(Tuple: String, Value: Double, AllocationValue: Any, AllocationMethod: Any): ValueChange = js.native
   def Add(
     Tuple: String,
     Value: Double,
-    AllocationValue: js.Any,
-    AllocationMethod: js.Any,
-    AllocationWeightExpression: js.Any
+    AllocationValue: Any,
+    AllocationMethod: Any,
+    AllocationWeightExpression: Any
   ): ValueChange = js.native
   def Add(
     Tuple: String,
     Value: Double,
-    AllocationValue: js.Any,
+    AllocationValue: Any,
     AllocationMethod: Unit,
-    AllocationWeightExpression: js.Any
+    AllocationWeightExpression: Any
   ): ValueChange = js.native
-  def Add(Tuple: String, Value: Double, AllocationValue: Unit, AllocationMethod: js.Any): ValueChange = js.native
+  def Add(Tuple: String, Value: Double, AllocationValue: Unit, AllocationMethod: Any): ValueChange = js.native
   def Add(
     Tuple: String,
     Value: Double,
     AllocationValue: Unit,
-    AllocationMethod: js.Any,
-    AllocationWeightExpression: js.Any
+    AllocationMethod: Any,
+    AllocationWeightExpression: Any
   ): ValueChange = js.native
   def Add(
     Tuple: String,
     Value: Double,
     AllocationValue: Unit,
     AllocationMethod: Unit,
-    AllocationWeightExpression: js.Any
+    AllocationWeightExpression: Any
   ): ValueChange = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
@@ -52,7 +52,7 @@ trait PivotTableChangeList extends StObject {
   def Item(Index: String): ValueChange = js.native
   def Item(Index: Double): ValueChange = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): ValueChange = js.native
+  def _Default(Index: Any): ValueChange = js.native
 }

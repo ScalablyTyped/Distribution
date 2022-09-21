@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "Toolkit")
 @js.native
-class Toolkit ()
+open class Toolkit ()
   extends typings.stormReactDiagrams.toolkitMod.Toolkit
 /* static members */
 object Toolkit {
@@ -38,7 +38,7 @@ object Toolkit {
     * @param  {Element} element  [description]
     * @param  {string}  selector [description]
     */
-  inline def closest(element: Element, selector: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def closest(element: Element, selector: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def generateCurvePath(
     firstPoint: typings.stormReactDiagrams.pointModelMod.PointModel,
@@ -50,7 +50,7 @@ object Toolkit {
     curvy: Double
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCurvePath")(firstPoint.asInstanceOf[js.Any], lastPoint.asInstanceOf[js.Any], curvy.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def generateDynamicPath(pathCoords: js.Array[js.Array[Double]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateDynamicPath")(pathCoords.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def generateDynamicPath(pathCoords: js.Array[js.Array[Double]]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateDynamicPath")(pathCoords.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def generateLinePath(
     firstPoint: typings.stormReactDiagrams.pointModelMod.PointModel,

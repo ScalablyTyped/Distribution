@@ -1,6 +1,5 @@
 package typings.moji
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,11 +104,11 @@ object mod {
     
     var list: js.Array[String]
     
-    var regexp: RegExp
+    var regexp: js.RegExp
   }
   object MojisyuRegExp {
     
-    inline def apply(list: js.Array[String], regexp: RegExp): MojisyuRegExp = {
+    inline def apply(list: js.Array[String], regexp: js.RegExp): MojisyuRegExp = {
       val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any])
       __obj.asInstanceOf[MojisyuRegExp]
     }
@@ -118,9 +117,9 @@ object mod {
       
       inline def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      inline def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value*))
       
-      inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: js.RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     }
   }
 }

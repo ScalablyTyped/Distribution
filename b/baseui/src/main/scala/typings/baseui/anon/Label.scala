@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Label extends StObject {
   
-  var dialCode: Plussign355
+  val dialCode: Plussign355
   
-  var id: AL
+  val id: AL
   
-  var label: `Albania LeftparenthesisShqipëriRightparenthesis`
+  val label: `Albania LeftparenthesisShqipëriRightparenthesis`
 }
 object Label {
   

@@ -27,6 +27,11 @@ trait CreateQuantumTaskRequest extends StObject {
   var deviceParameters: js.UndefOr[CreateQuantumTaskRequestDeviceParametersString] = js.undefined
   
   /**
+    * The token for an Amazon Braket job that associates it with the quantum task.
+    */
+  var jobToken: js.UndefOr[JobToken] = js.undefined
+  
+  /**
     * The S3 bucket to store task result files in.
     */
   var outputS3Bucket: CreateQuantumTaskRequestOutputS3BucketString
@@ -71,6 +76,10 @@ object CreateQuantumTaskRequest {
     inline def setDeviceParameters(value: CreateQuantumTaskRequestDeviceParametersString): Self = StObject.set(x, "deviceParameters", value.asInstanceOf[js.Any])
     
     inline def setDeviceParametersUndefined: Self = StObject.set(x, "deviceParameters", js.undefined)
+    
+    inline def setJobToken(value: JobToken): Self = StObject.set(x, "jobToken", value.asInstanceOf[js.Any])
+    
+    inline def setJobTokenUndefined: Self = StObject.set(x, "jobToken", js.undefined)
     
     inline def setOutputS3Bucket(value: CreateQuantumTaskRequestOutputS3BucketString): Self = StObject.set(x, "outputS3Bucket", value.asInstanceOf[js.Any])
     

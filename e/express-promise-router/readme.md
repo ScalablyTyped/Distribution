@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-promise-router
 
-Typings are for version 4.0.1
+Typings are for version 4.1.1
 
 ## Library description:
 A lightweight wrapper for Express 4's Router that allows middleware to return promises
@@ -11,14 +11,11 @@ A lightweight wrapper for Express 4's Router that allows middleware to return pr
 | Full name          | express-promise-router |
 | Keywords           | express, promise, router |
 | # releases         | 3 |
-| # dependents       | 60 |
-| # downloads        | 2166910 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 465572.3333333333 |
+| # stars            | 354.0 |
 
 ## Links
-- [Homepage](https://github.com/express-promise-router/express-promise-router)
-- [Bugs](https://github.com/express-promise-router/express-promise-router/issues)
-- [Repository](https://github.com/express-promise-router/express-promise-router)
 - [Npm](https://www.npmjs.com/package/express-promise-router)
     
 

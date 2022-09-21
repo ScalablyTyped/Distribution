@@ -3,10 +3,8 @@ package typings.yogLog
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
+import typings.std.Record
 import typings.yogLog.yogLogBooleans.`false`
 import typings.yogLog.yogLogNumbers.`-1`
 import typings.yogLog.yogLogNumbers.`0`
@@ -26,26 +24,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(): js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
-    js.Any
+    Any
   ]]
   inline def apply(config: LogConfig): js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
-    js.Any
+    Any
   ]]
   
   @JSImport("yog-log", JSImport.Namespace)
@@ -54,8 +76,17 @@ object mod {
   
   @JSImport("yog-log", "Logger")
   @js.native
-  class Logger protected () extends StObject {
-    def this(opts: LogConfig, req: Request_[ParamsDictionary, js.Any, js.Any, Query]) = this()
+  open class Logger protected () extends StObject {
+    def this(
+      opts: LogConfig,
+      req: Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ]
+    ) = this()
     
     def debug(info: LogInput): Unit | `false` = js.native
     
@@ -69,7 +100,16 @@ object mod {
     
     def getLogFormat(level: LevelName): String | `false` = js.native
     
-    def getLogID(req: Request_[ParamsDictionary, js.Any, js.Any, Query], logIDName: String): String = js.native
+    def getLogID(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      logIDName: String
+    ): String = js.native
     
     def getLogLevelInt(level: LevelName): LevelInt | `-1` = js.native
     
@@ -92,12 +132,21 @@ object mod {
     // 解析日志配置，生成相应的模板函数的字符串内容
     def parseFormat(format: String): String = js.native
     
-    def parseReqParams(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): Unit | `false` = js.native
+    def parseReqParams(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]]
+    ): Unit | `false` = js.native
     
-    def parseStackInfo(info: Error): Unit = js.native
+    def parseStackInfo(info: js.Error): Unit = js.native
     def parseStackInfo(info: LogInfo): Unit = js.native
     
-    def setParams(name: String, value: js.Any): Unit = js.native
+    def setParams(name: String, value: Any): Unit = js.native
     
     def trace(info: LogInput): Unit | `false` = js.native
     
@@ -315,7 +364,7 @@ object mod {
     }
   }
   
-  type LogInput = String | LogInfo | Error
+  type LogInput = String | LogInfo | js.Error
   
   type LogReturn = js.UndefOr[`false`]
   

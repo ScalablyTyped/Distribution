@@ -16,8 +16,13 @@ object collapsePanelMod extends Shortcut {
   
   trait CollapsePanelProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
+    var collapsible: js.UndefOr[CollapsibleType] = js.undefined
+    
+    /** @deprecated Use `collapsible="disabled"` instead */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var extra: js.UndefOr[ReactNode] = js.undefined
@@ -45,9 +50,17 @@ object collapsePanelMod extends Shortcut {
     
     extension [Self <: CollapsePanelProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setCollapsible(value: CollapsibleType): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+      
+      inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -83,6 +96,18 @@ object collapsePanelMod extends Shortcut {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.antd.antdStrings.header
+    - typings.antd.antdStrings.disabled
+  */
+  trait CollapsibleType extends StObject
+  object CollapsibleType {
+    
+    inline def disabled: typings.antd.antdStrings.disabled = "disabled".asInstanceOf[typings.antd.antdStrings.disabled]
+    
+    inline def header: typings.antd.antdStrings.header = "header".asInstanceOf[typings.antd.antdStrings.header]
   }
   
   type _To = FC[CollapsePanelProps]

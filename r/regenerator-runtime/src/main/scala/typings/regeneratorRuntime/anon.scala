@@ -14,11 +14,11 @@ object anon {
   trait `0`[TYield] extends StObject {
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[typings.std.Iterator[TYield, js.Any, js.Any]] = js.native
+    var iterator: js.Function0[js.Iterator[TYield]] = js.native
   }
   
   @js.native
-  trait Iterator[I /* <: typings.std.Iterator[js.Any, js.Any, js.Any] */] extends StObject {
+  trait Iterator[I /* <: js.Iterator[Any] */] extends StObject {
     
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[I] = js.native
@@ -27,13 +27,13 @@ object anon {
   /* Inlined std.Readonly<regenerator-runtime.regenerator-runtime.CompletionRecord> */
   trait ReadonlyCompletionRecord extends StObject {
     
-    val arg: js.Any
+    val arg: Any
     
     val `type`: CompletionType
   }
   object ReadonlyCompletionRecord {
     
-    inline def apply(arg: js.Any, `type`: CompletionType): ReadonlyCompletionRecord = {
+    inline def apply(arg: Any, `type`: CompletionType): ReadonlyCompletionRecord = {
       val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyCompletionRecord]
@@ -41,7 +41,7 @@ object anon {
     
     extension [Self <: ReadonlyCompletionRecord](x: Self) {
       
-      inline def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+      inline def setArg(value: Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
       inline def setType(value: CompletionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

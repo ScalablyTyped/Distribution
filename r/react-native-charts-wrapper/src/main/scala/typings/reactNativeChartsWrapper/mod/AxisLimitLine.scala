@@ -55,7 +55,7 @@ object AxisLimitLine {
     
     inline def setLineDashLengthsUndefined: Self = StObject.set(x, "lineDashLengths", js.undefined)
     
-    inline def setLineDashLengthsVarargs(value: Double*): Self = StObject.set(x, "lineDashLengths", js.Array(value :_*))
+    inline def setLineDashLengthsVarargs(value: Double*): Self = StObject.set(x, "lineDashLengths", js.Array(value*))
     
     inline def setLineDashPhase(value: Double): Self = StObject.set(x, "lineDashPhase", value.asInstanceOf[js.Any])
     

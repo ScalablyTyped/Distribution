@@ -38,7 +38,7 @@ object FileList {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setIncompleteSearch(value: Boolean): Self = StObject.set(x, "incompleteSearch", value.asInstanceOf[js.Any])
     

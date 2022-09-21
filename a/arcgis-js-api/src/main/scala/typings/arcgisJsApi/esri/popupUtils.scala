@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Various utils for working with [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) widget functionality.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html)
+  */
 @js.native
 trait popupUtils extends StObject {
   

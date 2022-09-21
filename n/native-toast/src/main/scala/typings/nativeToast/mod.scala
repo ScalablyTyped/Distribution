@@ -114,7 +114,7 @@ object mod {
       
       inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      inline def setElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "elements", js.Array(value*))
       
       inline def setIcon(value: Boolean): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

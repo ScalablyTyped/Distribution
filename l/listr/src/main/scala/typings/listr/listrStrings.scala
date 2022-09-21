@@ -10,18 +10,18 @@ object listrStrings {
   @js.native
   sealed trait default
     extends StObject
-       with ListrRendererValue[js.Any]
+       with ListrRendererValue[Any]
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait silent
     extends StObject
-       with ListrRendererValue[js.Any]
+       with ListrRendererValue[Any]
   inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
   sealed trait verbose
     extends StObject
-       with ListrRendererValue[js.Any]
+       with ListrRendererValue[Any]
   inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

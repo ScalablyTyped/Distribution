@@ -1,7 +1,7 @@
 package typings.fluentuiTheme
 
+import typings.fluentuiMergeStyles.irawstylebaseMod.IFontWeight
 import typings.fluentuiTheme.ifontstylesMod.IFontStyles
-import typings.uifabricMergeStyles.irawstylebaseMod.IFontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

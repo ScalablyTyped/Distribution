@@ -33,6 +33,6 @@ object ListTableMetadataOutput {
     
     inline def setTableMetadataListUndefined: Self = StObject.set(x, "TableMetadataList", js.undefined)
     
-    inline def setTableMetadataListVarargs(value: TableMetadata*): Self = StObject.set(x, "TableMetadataList", js.Array(value :_*))
+    inline def setTableMetadataListVarargs(value: TableMetadata*): Self = StObject.set(x, "TableMetadataList", js.Array(value*))
   }
 }

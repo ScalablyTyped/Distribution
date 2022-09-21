@@ -44,6 +44,6 @@ object ILinterOptions {
     
     inline def setRulesDirectoryUndefined: Self = StObject.set(x, "rulesDirectory", js.undefined)
     
-    inline def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value :_*))
+    inline def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value*))
   }
 }

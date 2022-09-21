@@ -1,8 +1,6 @@
 package typings.passportGithub2
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.passport.mod.AuthenticateOptions
 import typings.passportGithub2.passportGithub2Booleans.`false`
@@ -11,6 +9,7 @@ import typings.passportOauth2.mod.OAuth2Strategy
 import typings.passportOauth2.mod.StateStore
 import typings.passportOauth2.mod.VerifyFunction
 import typings.passportOauth2.mod.VerifyFunctionWithRequest
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +18,22 @@ object mod {
   
   @JSImport("passport-github2", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends StObject
        with OAuth2Strategy {
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: AuthenticateOptions): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: AuthenticateOptions
+    ): Unit = js.native
   }
   
   /* Inlined std.Pick<passport-oauth2.passport-oauth2._StrategyOptionsBase, std.Exclude<keyof passport-oauth2.passport-oauth2._StrategyOptionsBase, 'authorizationURL' | 'tokenURL'>> */
@@ -41,7 +49,7 @@ object mod {
     
     var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.undefined
+    var proxy: js.UndefOr[Any] = js.undefined
     
     var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -49,9 +57,9 @@ object mod {
     
     var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
+    var skipUserProfile: js.UndefOr[Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var store: js.UndefOr[StateStore] = js.undefined
   }
@@ -80,7 +88,7 @@ object mod {
       
       inline def setPkceUndefined: Self = StObject.set(x, "pkce", js.undefined)
       
-      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
@@ -92,17 +100,17 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setSkipUserProfile(value: js.Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
+      inline def setSkipUserProfile(value: Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
       
       inline def setSkipUserProfileUndefined: Self = StObject.set(x, "skipUserProfile", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
@@ -189,7 +197,7 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setTokenURL(value: String): Self = StObject.set(x, "tokenURL", value.asInstanceOf[js.Any])
       
@@ -272,7 +280,7 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       

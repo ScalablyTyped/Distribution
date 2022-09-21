@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("braintree", "SettlementBatchSummary")
 @js.native
-class SettlementBatchSummary () extends StObject {
+open class SettlementBatchSummary () extends StObject {
   
-  var records: js.Array[Record[String, js.Any]] = js.native
+  var records: js.Array[Record[String, Any]] = js.native
 }

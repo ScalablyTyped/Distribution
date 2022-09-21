@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "secure-json-parse" : "2.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "secure-json-parse" : "2.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

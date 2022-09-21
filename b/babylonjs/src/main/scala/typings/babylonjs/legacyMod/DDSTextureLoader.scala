@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "_DDSTextureLoader")
 @js.native
-class DDSTextureLoader ()
+open class DDSTextureLoader ()
   extends typings.babylonjs.indexMod.DDSTextureLoader

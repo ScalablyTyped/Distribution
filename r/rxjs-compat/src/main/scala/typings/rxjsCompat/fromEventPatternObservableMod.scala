@@ -9,7 +9,7 @@ object fromEventPatternObservableMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs-compat/observable/FromEventPatternObservable", "FromEventPatternObservable")
   @js.native
-  class FromEventPatternObservable[T] () extends StObject
+  open class FromEventPatternObservable[T] () extends StObject
   /* static members */
   object FromEventPatternObservable {
     
@@ -17,20 +17,20 @@ object fromEventPatternObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T](addHandler: js.Function1[/* handler */ js.Function, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T](addHandler: js.Function1[/* handler */ js.Function, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def create[T](
-      addHandler: js.Function1[/* handler */ js.Function, js.Any],
-      removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[js.Any], Unit]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      addHandler: js.Function1[/* handler */ js.Function, Any],
+      removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[Any], Unit]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def create[T](
-      addHandler: js.Function1[/* handler */ js.Function, js.Any],
-      removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[js.Any], Unit],
-      selector: js.Function1[/* repeated */ js.Any, T]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      addHandler: js.Function1[/* handler */ js.Function, Any],
+      removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[Any], Unit],
+      selector: js.Function1[/* repeated */ Any, T]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def create[T](
-      addHandler: js.Function1[/* handler */ js.Function, js.Any],
+      addHandler: js.Function1[/* handler */ js.Function, Any],
       removeHandler: Unit,
-      selector: js.Function1[/* repeated */ js.Any, T]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      selector: js.Function1[/* repeated */ Any, T]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

@@ -39,7 +39,7 @@ trait InsightRuleMetricDatapoint extends StObject {
   /**
     * The timestamp of the data point.
     */
-  var Timestamp: typings.awsSdk.cloudwatchMod.Timestamp
+  var Timestamp: js.Date
   
   /**
     * The number of unique contributors who published data during this timestamp. This statistic is returned only if you included it in the Metrics array in your request.
@@ -48,7 +48,7 @@ trait InsightRuleMetricDatapoint extends StObject {
 }
 object InsightRuleMetricDatapoint {
   
-  inline def apply(Timestamp: Timestamp): InsightRuleMetricDatapoint = {
+  inline def apply(Timestamp: js.Date): InsightRuleMetricDatapoint = {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightRuleMetricDatapoint]
   }
@@ -79,7 +79,7 @@ object InsightRuleMetricDatapoint {
     
     inline def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setUniqueContributors(value: InsightRuleUnboundDouble): Self = StObject.set(x, "UniqueContributors", value.asInstanceOf[js.Any])
     

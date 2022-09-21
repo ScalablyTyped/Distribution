@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListJournalS3ExportsResponse extends StObject {
   
   /**
-    * The array of journal export job descriptions for all ledgers that are associated with the current AWS account and Region.
+    * The array of journal export job descriptions for all ledgers that are associated with the current Amazon Web Services account and Region.
     */
   var JournalS3Exports: js.UndefOr[JournalS3ExportList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListJournalS3ExportsResponse {
     
     inline def setJournalS3ExportsUndefined: Self = StObject.set(x, "JournalS3Exports", js.undefined)
     
-    inline def setJournalS3ExportsVarargs(value: JournalS3ExportDescription*): Self = StObject.set(x, "JournalS3Exports", js.Array(value :_*))
+    inline def setJournalS3ExportsVarargs(value: JournalS3ExportDescription*): Self = StObject.set(x, "JournalS3Exports", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

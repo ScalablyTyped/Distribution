@@ -25,35 +25,35 @@ object mod extends Shortcut {
       @js.native
       trait AssertStatic extends StObject {
         
-        def afterMoment(`val`: js.Any, exp: js.Any): Unit = js.native
-        def afterMoment(`val`: js.Any, exp: js.Any, granularity: Granularity): Unit = js.native
-        def afterMoment(`val`: js.Any, exp: js.Any, granularity: Granularity, msg: String): Unit = js.native
-        def afterMoment(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native
+        def afterMoment(`val`: Any, exp: Any): Unit = js.native
+        def afterMoment(`val`: Any, exp: Any, granularity: Granularity): Unit = js.native
+        def afterMoment(`val`: Any, exp: Any, granularity: Granularity, msg: String): Unit = js.native
+        def afterMoment(`val`: Any, exp: Any, msg: String): Unit = js.native
         
-        def beforeMoment(`val`: js.Any, exp: js.Any): Unit = js.native
-        def beforeMoment(`val`: js.Any, exp: js.Any, granularity: Unit, msg: String): Unit = js.native
-        def beforeMoment(`val`: js.Any, exp: js.Any, granularity: Granularity): Unit = js.native
-        def beforeMoment(`val`: js.Any, exp: js.Any, granularity: Granularity, msg: String): Unit = js.native
-        def beforeMoment(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native
+        def beforeMoment(`val`: Any, exp: Any): Unit = js.native
+        def beforeMoment(`val`: Any, exp: Any, granularity: Unit, msg: String): Unit = js.native
+        def beforeMoment(`val`: Any, exp: Any, granularity: Granularity): Unit = js.native
+        def beforeMoment(`val`: Any, exp: Any, granularity: Granularity, msg: String): Unit = js.native
+        def beforeMoment(`val`: Any, exp: Any, msg: String): Unit = js.native
         
-        def sameMoment(`val`: js.Any, exp: js.Any): Unit = js.native
-        def sameMoment(`val`: js.Any, exp: js.Any, granularity: Unit, msg: String): Unit = js.native
-        def sameMoment(`val`: js.Any, exp: js.Any, granularity: Granularity): Unit = js.native
-        def sameMoment(`val`: js.Any, exp: js.Any, granularity: Granularity, msg: String): Unit = js.native
-        def sameMoment(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native
+        def sameMoment(`val`: Any, exp: Any): Unit = js.native
+        def sameMoment(`val`: Any, exp: Any, granularity: Unit, msg: String): Unit = js.native
+        def sameMoment(`val`: Any, exp: Any, granularity: Granularity): Unit = js.native
+        def sameMoment(`val`: Any, exp: Any, granularity: Granularity, msg: String): Unit = js.native
+        def sameMoment(`val`: Any, exp: Any, msg: String): Unit = js.native
       }
       
       @js.native
       trait Assertion extends StObject {
         
-        def afterMoment(expected: js.Any): Unit = js.native
-        def afterMoment(expected: js.Any, granularity: Granularity): Unit = js.native
+        def afterMoment(expected: Any): Unit = js.native
+        def afterMoment(expected: Any, granularity: Granularity): Unit = js.native
         
-        def beforeMoment(expected: js.Any): Unit = js.native
-        def beforeMoment(expected: js.Any, granularity: Granularity): Unit = js.native
+        def beforeMoment(expected: Any): Unit = js.native
+        def beforeMoment(expected: Any, granularity: Granularity): Unit = js.native
         
-        def sameMoment(expected: js.Any): Unit = js.native
-        def sameMoment(expected: js.Any, granularity: Granularity): Unit = js.native
+        def sameMoment(expected: Any): Unit = js.native
+        def sameMoment(expected: Any, granularity: Granularity): Unit = js.native
       }
     }
     

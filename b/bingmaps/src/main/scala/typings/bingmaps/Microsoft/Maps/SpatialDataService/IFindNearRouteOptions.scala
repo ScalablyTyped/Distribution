@@ -60,7 +60,7 @@ object IFindNearRouteOptions {
     
     inline def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
     
-    inline def setAvoidVarargs(value: String*): Self = StObject.set(x, "avoid", js.Array(value :_*))
+    inline def setAvoidVarargs(value: String*): Self = StObject.set(x, "avoid", js.Array(value*))
     
     inline def setDistanceBeforeFirstTurn(value: Double): Self = StObject.set(x, "distanceBeforeFirstTurn", value.asInstanceOf[js.Any])
     

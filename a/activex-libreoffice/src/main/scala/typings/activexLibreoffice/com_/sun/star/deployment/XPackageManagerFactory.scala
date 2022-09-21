@@ -20,7 +20,7 @@ trait XPackageManagerFactory extends StObject {
     *
     * Context strings other than `"user"` , `"shared"` will last in an {@link com.sun.star.lang.IllegalArgumentException} .
     * @param context context string, e.g. `"user"` => persistent storage and registration into installation's user layer`"shared"` => persistent storage and r
-    * @returns {@link XPackageManager} object
+    * @returns object
     * @throws com::sun::star::lang::IllegalArgumentException in case of an invalid context
     */
   def getPackageManager(context: String): XPackageManager

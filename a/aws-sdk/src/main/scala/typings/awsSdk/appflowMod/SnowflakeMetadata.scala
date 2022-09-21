@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SnowflakeMetadata extends StObject {
   
   /**
-    *  Specifies the supported AWS Regions when using Snowflake. 
+    *  Specifies the supported Amazon Web Services Regions when using Snowflake. 
     */
   var supportedRegions: js.UndefOr[RegionList] = js.undefined
 }
@@ -24,6 +24,6 @@ object SnowflakeMetadata {
     
     inline def setSupportedRegionsUndefined: Self = StObject.set(x, "supportedRegions", js.undefined)
     
-    inline def setSupportedRegionsVarargs(value: Region*): Self = StObject.set(x, "supportedRegions", js.Array(value :_*))
+    inline def setSupportedRegionsVarargs(value: Region*): Self = StObject.set(x, "supportedRegions", js.Array(value*))
   }
 }

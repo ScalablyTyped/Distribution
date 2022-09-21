@@ -11,7 +11,7 @@ object clientclusterMod {
   
   @JSImport("sc-broker-cluster/clientcluster", "ClientCluster")
   @js.native
-  class ClientCluster protected () extends EventEmitter {
+  open class ClientCluster protected () extends EventEmitter {
     def this(clients: js.Array[SCBrokerClient]) = this()
     
     def getMapper(): mapperFunction = js.native

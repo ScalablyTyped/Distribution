@@ -176,9 +176,9 @@ object ExtendedExecution {
     @js.native
     trait ExtendedExecutionForegroundSession extends StObject {
       
-      def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+      def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
       @JSName("addEventListener")
-      def addEventListener_revoked(`type`: revoked, listener: TypedEventHandler[js.Any, ExtendedExecutionForegroundRevokedEventArgs]): Unit = js.native
+      def addEventListener_revoked(`type`: revoked, listener: TypedEventHandler[Any, ExtendedExecutionForegroundRevokedEventArgs]): Unit = js.native
       
       /** Closes the session and removes the application's extended execution capability. */
       def close(): Unit = js.native
@@ -187,17 +187,17 @@ object ExtendedExecution {
       var description: String = js.native
       
       /** This event occurs when the system revokes extended execution. */
-      def onrevoked(ev: ExtendedExecutionForegroundRevokedEventArgs & WinRTEvent[js.Any]): Unit = js.native
+      def onrevoked(ev: ExtendedExecutionForegroundRevokedEventArgs & WinRTEvent[Any]): Unit = js.native
       /** This event occurs when the system revokes extended execution. */
       @JSName("onrevoked")
-      var onrevoked_Original: TypedEventHandler[js.Any, ExtendedExecutionForegroundRevokedEventArgs] = js.native
+      var onrevoked_Original: TypedEventHandler[Any, ExtendedExecutionForegroundRevokedEventArgs] = js.native
       
       /** Gets or sets the reason for the extended execution request. */
       var reason: ExtendedExecutionForegroundReason = js.native
       
-      def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+      def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
       @JSName("removeEventListener")
-      def removeEventListener_revoked(`type`: revoked, listener: TypedEventHandler[js.Any, ExtendedExecutionForegroundRevokedEventArgs]): Unit = js.native
+      def removeEventListener_revoked(`type`: revoked, listener: TypedEventHandler[Any, ExtendedExecutionForegroundRevokedEventArgs]): Unit = js.native
       
       /**
         * Requests extended execution
@@ -230,9 +230,9 @@ object ExtendedExecution {
   @js.native
   trait ExtendedExecutionSession extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_revoked(`type`: revoked, listener: TypedEventHandler[js.Any, ExtendedExecutionRevokedEventArgs]): Unit = js.native
+    def addEventListener_revoked(`type`: revoked, listener: TypedEventHandler[Any, ExtendedExecutionRevokedEventArgs]): Unit = js.native
     
     /** Closes the session and removes the application's capability to run in the background. */
     def close(): Unit = js.native
@@ -241,10 +241,10 @@ object ExtendedExecution {
     var description: String = js.native
     
     /** The Revoked event occurs when the system revokes background execution. */
-    def onrevoked(ev: ExtendedExecutionRevokedEventArgs & WinRTEvent[js.Any]): Unit = js.native
+    def onrevoked(ev: ExtendedExecutionRevokedEventArgs & WinRTEvent[Any]): Unit = js.native
     /** The Revoked event occurs when the system revokes background execution. */
     @JSName("onrevoked")
-    var onrevoked_Original: TypedEventHandler[js.Any, ExtendedExecutionRevokedEventArgs] = js.native
+    var onrevoked_Original: TypedEventHandler[Any, ExtendedExecutionRevokedEventArgs] = js.native
     
     /** Gets or sets a value to show progress in the shell. */
     var percentProgress: Double = js.native
@@ -252,9 +252,9 @@ object ExtendedExecution {
     /** Gets or sets the reason for the for the background execution request. */
     var reason: ExtendedExecutionReason = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_revoked(`type`: revoked, listener: TypedEventHandler[js.Any, ExtendedExecutionRevokedEventArgs]): Unit = js.native
+    def removeEventListener_revoked(`type`: revoked, listener: TypedEventHandler[Any, ExtendedExecutionRevokedEventArgs]): Unit = js.native
     
     /**
       * Requests background execution.

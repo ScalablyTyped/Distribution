@@ -10,10 +10,10 @@ Javascript implementation of merkle trees
 | ------------------ | :-------------: |
 | Full name          | merkle |
 | Keywords           | hash trees, cryptography |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 3728 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 259.0 |
+| # stars            | 126.0 |
 
 ## Links
 - [Homepage](https://github.com/c-geek/merkle#readme)

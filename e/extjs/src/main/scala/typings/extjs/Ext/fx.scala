@@ -20,7 +20,7 @@ object fx {
     var alternate: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var callback: js.UndefOr[js.Any] = js.undefined
+    var callback: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Number) */
     var currentIteration: js.UndefOr[Double] = js.undefined
@@ -41,7 +41,7 @@ object fx {
     var end: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var from: js.UndefOr[js.Any] = js.undefined
+    var from: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Boolean) */
     var isAnimation: js.UndefOr[Boolean] = js.undefined
@@ -50,7 +50,7 @@ object fx {
     var iterations: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var keyframes: js.UndefOr[js.Any] = js.undefined
+    var keyframes: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Boolean) */
     var paused: js.UndefOr[Boolean] = js.undefined
@@ -62,16 +62,16 @@ object fx {
     var running: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Date) */
-    var startTime: js.UndefOr[js.Any] = js.undefined
+    var startTime: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var to: js.UndefOr[js.Any] = js.undefined
+    var to: js.UndefOr[Any] = js.undefined
   }
   object IAnim {
     
@@ -86,7 +86,7 @@ object fx {
       
       inline def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
       
-      inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
@@ -114,7 +114,7 @@ object fx {
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      inline def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
@@ -126,7 +126,7 @@ object fx {
       
       inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      inline def setKeyframes(value: js.Any): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+      inline def setKeyframes(value: Any): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
       
       inline def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
       
@@ -142,19 +142,19 @@ object fx {
       
       inline def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setStartTime(value: js.Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
@@ -192,7 +192,7 @@ object fx {
     var keyframeStep: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var keyframes: js.UndefOr[js.Any] = js.undefined
+    var keyframes: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Boolean) */
     var paused: js.UndefOr[Boolean] = js.undefined
@@ -248,7 +248,7 @@ object fx {
       
       inline def setKeyframeStepUndefined: Self = StObject.set(x, "keyframeStep", js.undefined)
       
-      inline def setKeyframes(value: js.Any): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+      inline def setKeyframes(value: Any): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
       
       inline def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
       

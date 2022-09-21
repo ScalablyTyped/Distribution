@@ -8,5 +8,5 @@ object kmsinternalexceptionMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/KMSInternalException", "KMSInternalException")
   @js.native
-  val KMSInternalException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val KMSInternalException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

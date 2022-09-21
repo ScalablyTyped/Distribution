@@ -1,7 +1,7 @@
 package typings.lightMyRequest
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.lightMyRequest.mod.Request
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -81,22 +81,22 @@ object anon {
   
   trait Req extends StObject {
     
-    var req: Request
+    var req: IncomingMessage
     
-    var res: ServerResponse
+    var res: ServerResponse[IncomingMessage]
   }
   object Req {
     
-    inline def apply(req: Request, res: ServerResponse): Req = {
+    inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Req = {
       val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
       __obj.asInstanceOf[Req]
     }
     
     extension [Self <: Req](x: Self) {
       
-      inline def setReq(value: Request): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: IncomingMessage): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      inline def setRes(value: ServerResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: ServerResponse[IncomingMessage]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,7 +28,7 @@ object BuildBazelRemoteExecutionV2GetTreeResponse {
     
     inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    inline def setDirectoriesVarargs(value: BuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: BuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "directories", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

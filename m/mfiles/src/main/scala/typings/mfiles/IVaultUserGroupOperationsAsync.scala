@@ -13,12 +13,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def AddOrUndeleteUserGroup(
     UserGroup: IUserGroupAdmin,
     successCallback: js.Function1[/* result */ IUserGroupAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddOrUndeleteUserGroup(
     UserGroup: IUserGroupAdmin,
     successCallback: js.Function1[/* result */ IUserGroupAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddOrUndeleteUserGroup(
@@ -30,12 +30,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def AddOrUndeleteUserGroup(
     UserGroup: IUserGroupAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddOrUndeleteUserGroup(
     UserGroup: IUserGroupAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddOrUndeleteUserGroup(
@@ -50,12 +50,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def AddUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
     successCallback: js.Function1[/* result */ IUserGroupAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
     successCallback: js.Function1[/* result */ IUserGroupAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddUserGroupAdmin(
@@ -67,12 +67,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def AddUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddUserGroupAdmin(
@@ -92,13 +92,13 @@ trait IVaultUserGroupOperationsAsync extends StObject {
     UserOrGroupID: Double,
     IsGroup: Boolean,
     successCallback: js.Function1[/* result */ IUserGroups, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetGroupsOfUserOrGroup(
     UserOrGroupID: Double,
     IsGroup: Boolean,
     successCallback: js.Function1[/* result */ IUserGroups, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetGroupsOfUserOrGroup(
@@ -112,13 +112,13 @@ trait IVaultUserGroupOperationsAsync extends StObject {
     UserOrGroupID: Double,
     IsGroup: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetGroupsOfUserOrGroup(
     UserOrGroupID: Double,
     IsGroup: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetGroupsOfUserOrGroup(
@@ -134,12 +134,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroup(
     UserGroupID: Double,
     successCallback: js.Function1[/* result */ IUserGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroup(
     UserGroupID: Double,
     successCallback: js.Function1[/* result */ IUserGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroup(
@@ -151,12 +151,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroup(
     UserGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroup(
     UserGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroup(
@@ -170,12 +170,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroup(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: js.Function1[/* result */ IUserGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroup(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: js.Function1[/* result */ IUserGroup, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroup(
@@ -187,12 +187,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroup(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroup(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroup(
@@ -207,12 +207,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupAdmin(
     UserGroupID: Double,
     successCallback: js.Function1[/* result */ IUserGroupAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupAdmin(
     UserGroupID: Double,
     successCallback: js.Function1[/* result */ IUserGroupAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupAdmin(
@@ -224,12 +224,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupAdmin(
     UserGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupAdmin(
     UserGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupAdmin(
@@ -243,12 +243,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupAdmin(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: js.Function1[/* result */ IUserGroupAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupAdmin(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: js.Function1[/* result */ IUserGroupAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupAdmin(
@@ -260,12 +260,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupAdmin(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupAdmin(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupAdmin(
@@ -280,12 +280,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupIDByAlias(
     Alias: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupIDByAlias(
     Alias: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupIDByAlias(
@@ -297,12 +297,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupIDByAlias(
     Alias: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupIDByAlias(
     Alias: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupIDByAlias(Alias: String, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -312,12 +312,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupIDByGUID(
     UserGroupGUID: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupIDByGUID(
     UserGroupGUID: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupIDByGUID(
@@ -329,12 +329,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupIDByGUID(
     UserGroupGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupIDByGUID(
     UserGroupGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupIDByGUID(
@@ -348,11 +348,11 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupList(successCallback: js.Function1[/* result */ IKeyNamePairs, Unit]): Unit = js.native
   def GetUserGroupList(
     successCallback: js.Function1[/* result */ IKeyNamePairs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupList(
     successCallback: js.Function1[/* result */ IKeyNamePairs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupList(
@@ -362,11 +362,11 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   ): Unit = js.native
   def GetUserGroupList(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupList(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupList(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -375,11 +375,11 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroups(successCallback: js.Function1[/* result */ IUserGroups, Unit]): Unit = js.native
   def GetUserGroups(
     successCallback: js.Function1[/* result */ IUserGroups, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroups(
     successCallback: js.Function1[/* result */ IUserGroups, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroups(
@@ -389,11 +389,11 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   ): Unit = js.native
   def GetUserGroups(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroups(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroups(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -402,11 +402,11 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def GetUserGroupsAdmin(successCallback: js.Function1[/* result */ IUserGroupsAdmin, Unit]): Unit = js.native
   def GetUserGroupsAdmin(
     successCallback: js.Function1[/* result */ IUserGroupsAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupsAdmin(
     successCallback: js.Function1[/* result */ IUserGroupsAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupsAdmin(
@@ -416,11 +416,11 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   ): Unit = js.native
   def GetUserGroupsAdmin(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserGroupsAdmin(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserGroupsAdmin(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -430,12 +430,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def RemoveUserGroupAdmin(
     UserGroupID: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveUserGroupAdmin(
     UserGroupID: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveUserGroupAdmin(
@@ -447,12 +447,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def RemoveUserGroupAdmin(
     UserGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveUserGroupAdmin(
     UserGroupID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveUserGroupAdmin(
@@ -466,12 +466,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def RemoveUserGroupAdmin(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveUserGroupAdmin(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveUserGroupAdmin(
@@ -483,12 +483,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def RemoveUserGroupAdmin(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveUserGroupAdmin(
     UserGroupID: MFBuiltInUserGroup,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveUserGroupAdmin(
@@ -503,12 +503,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def UpdateUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UpdateUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UpdateUserGroupAdmin(
@@ -520,12 +520,12 @@ trait IVaultUserGroupOperationsAsync extends StObject {
   def UpdateUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UpdateUserGroupAdmin(
     UserGroup: IUserGroupAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UpdateUserGroupAdmin(

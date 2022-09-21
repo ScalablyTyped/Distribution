@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a PositionGizmo
   * @param gizmoLayer The utility layer the gizmo will be added to
   @param thickness display gizmo axis thickness
+  * @param gizmoManager
   */
-class PositionGizmo ()
+open class PositionGizmo ()
   extends typings.babylonjs.gizmosIndexMod.PositionGizmo {
   def this(gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer) = this()
   def this(gizmoLayer: Unit, thickness: Double) = this()

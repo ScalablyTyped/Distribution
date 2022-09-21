@@ -184,13 +184,13 @@ object Types {
     
     var `type`: array | boolean | date | documentid | fieldvalue | geopoint | `null` | number | `object` | reference | string
     
-    var value: js.Any
+    var value: Any
   }
   object TypeMap {
     
     inline def apply(
       `type`: array | boolean | date | documentid | fieldvalue | geopoint | `null` | number | `object` | reference | string,
-      value: js.Any
+      value: Any
     ): TypeMap = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -203,7 +203,7 @@ object Types {
         value: array | boolean | date | documentid | fieldvalue | geopoint | `null` | number | `object` | reference | string
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

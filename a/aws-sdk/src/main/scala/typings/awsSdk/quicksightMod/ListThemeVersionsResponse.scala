@@ -12,7 +12,7 @@ trait ListThemeVersionsResponse extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -51,6 +51,6 @@ object ListThemeVersionsResponse {
     
     inline def setThemeVersionSummaryListUndefined: Self = StObject.set(x, "ThemeVersionSummaryList", js.undefined)
     
-    inline def setThemeVersionSummaryListVarargs(value: ThemeVersionSummary*): Self = StObject.set(x, "ThemeVersionSummaryList", js.Array(value :_*))
+    inline def setThemeVersionSummaryListVarargs(value: ThemeVersionSummary*): Self = StObject.set(x, "ThemeVersionSummaryList", js.Array(value*))
   }
 }

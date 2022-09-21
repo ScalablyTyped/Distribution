@@ -9,11 +9,11 @@ trait CountQueuingStrategy extends StObject {
   
   var highWaterMark: Double
   
-  def size(chunk: js.Any): `1`
+  def size(chunk: Any): `1`
 }
 object CountQueuingStrategy {
   
-  inline def apply(highWaterMark: Double, size: js.Any => `1`): CountQueuingStrategy = {
+  inline def apply(highWaterMark: Double, size: Any => `1`): CountQueuingStrategy = {
     val __obj = js.Dynamic.literal(highWaterMark = highWaterMark.asInstanceOf[js.Any], size = js.Any.fromFunction1(size))
     __obj.asInstanceOf[CountQueuingStrategy]
   }
@@ -22,6 +22,6 @@ object CountQueuingStrategy {
     
     inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    inline def setSize(value: js.Any => `1`): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
+    inline def setSize(value: Any => `1`): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
   }
 }

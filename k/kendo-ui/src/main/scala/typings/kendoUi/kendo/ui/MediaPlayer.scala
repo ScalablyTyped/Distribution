@@ -19,8 +19,8 @@ trait MediaPlayer
   
   def isPlaying(): Boolean = js.native
   
-  def media(): js.Any = js.native
-  def media(value: js.Any): Unit = js.native
+  def media(): Any = js.native
+  def media(value: Any): Unit = js.native
   
   def mute(value: Boolean): Boolean = js.native
   

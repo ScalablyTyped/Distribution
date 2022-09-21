@@ -22,7 +22,7 @@ trait XSingleComponentFactory
     * @param Context the instance gets its deployment values from this
     * @returns component instance
     */
-  def createInstanceWithArgumentsAndContext(Arguments: SeqEquiv[js.Any], Context: XComponentContext): XInterface
+  def createInstanceWithArgumentsAndContext(Arguments: SeqEquiv[Any], Context: XComponentContext): XInterface
   
   /**
     * Creates an instance of a service implementation.
@@ -35,9 +35,9 @@ object XSingleComponentFactory {
   
   inline def apply(
     acquire: () => Unit,
-    createInstanceWithArgumentsAndContext: (SeqEquiv[js.Any], XComponentContext) => XInterface,
+    createInstanceWithArgumentsAndContext: (SeqEquiv[Any], XComponentContext) => XInterface,
     createInstanceWithContext: XComponentContext => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSingleComponentFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceWithArgumentsAndContext = js.Any.fromFunction2(createInstanceWithArgumentsAndContext), createInstanceWithContext = js.Any.fromFunction1(createInstanceWithContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -46,7 +46,7 @@ object XSingleComponentFactory {
   
   extension [Self <: XSingleComponentFactory](x: Self) {
     
-    inline def setCreateInstanceWithArgumentsAndContext(value: (SeqEquiv[js.Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction2(value))
+    inline def setCreateInstanceWithArgumentsAndContext(value: (SeqEquiv[Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction2(value))
     
     inline def setCreateInstanceWithContext(value: XComponentContext => XInterface): Self = StObject.set(x, "createInstanceWithContext", js.Any.fromFunction1(value))
   }

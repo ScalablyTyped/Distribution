@@ -8,5 +8,5 @@ object objectIdentifierMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_ObjectIdentifier", "_ObjectIdentifier")
   @js.native
-  val ObjectIdentifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ObjectIdentifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

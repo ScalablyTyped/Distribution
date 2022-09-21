@@ -123,8 +123,8 @@ trait ClassSocket
     * 
     * @async
     */
-  def recvfrom(): js.Any = js.native
-  def recvfrom(bytes: Double): js.Any = js.native
+  def recvfrom(): Any = js.native
+  def recvfrom(bytes: Double): Any = js.native
   
   /**
     * class prop 

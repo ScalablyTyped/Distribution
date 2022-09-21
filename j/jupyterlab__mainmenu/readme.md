@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__mainmenu
 
-Typings are for version 2.2.4
+Typings are for version 3.4.7
 
 ## Library description:
 JupyterLab - Main Menu
@@ -10,10 +10,10 @@ JupyterLab - Main Menu
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/mainmenu |
 | Keywords           | - |
-| # releases         | 124 |
-| # dependents       | 203 |
-| # downloads        | 1620179 |
-| # stars            | 0 |
+| # releases         | 145 |
+| # dependents       | 0.0 |
+| # downloads        | 206133.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

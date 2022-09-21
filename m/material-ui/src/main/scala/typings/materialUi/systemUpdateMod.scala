@@ -10,10 +10,10 @@ object systemUpdateMod {
   
   @JSImport("material-ui/svg-icons/notification/system-update", JSImport.Default)
   @js.native
-  class default () extends NotificationSystemUpdate
+  open class default () extends NotificationSystemUpdate
   
   @JSImport("material-ui/svg-icons/notification/system-update", "NotificationSystemUpdate")
   @js.native
-  class NotificationSystemUpdate ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationSystemUpdate ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

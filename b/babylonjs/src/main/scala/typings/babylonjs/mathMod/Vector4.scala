@@ -2,14 +2,13 @@ package typings.babylonjs.mathMod
 
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/math", "Vector4")
 @js.native
-class Vector4 protected ()
+open class Vector4 protected ()
   extends typings.babylonjs.mathVectorMod.Vector4 {
   /**
     * Creates a Vector4 object from the given floats.
@@ -40,7 +39,7 @@ object Vector4 {
     * Returns a new Vector4 located at the center between the vectors "value1" and "value2".
     * @param value1 value to calulate the center between
     * @param value2 value to calulate the center between
-    * @return the center between the two vectors
+    * @returns the center between the two vectors
     */
   inline def Center(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
@@ -48,10 +47,23 @@ object Vector4 {
   ): typings.babylonjs.mathVectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
+    * Gets the center of the vectors "value1" and "value2" and stores the result in the vector "ref"
+    * @param value1 defines first vector
+    * @param value2 defines second vector
+    * @param ref defines third vector
+    * @returns ref
+    */
+  inline def CenterToRef(
+    value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
+    value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
+    ref: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4]
+  ): typings.babylonjs.mathVectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterToRef")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
+  
+  /**
     * Returns the distance (float) between the vectors "value1" and "value2".
     * @param value1 value to calulate the distance between
     * @param value2 value to calulate the distance between
-    * @return the distance between the two vectors
+    * @returns the distance between the two vectors
     */
   inline def Distance(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
@@ -62,7 +74,7 @@ object Vector4 {
     * Returns the squared distance (float) between the vectors "value1" and "value2".
     * @param value1 value to calulate the distance between
     * @param value2 value to calulate the distance between
-    * @return the distance between the two vectors squared
+    * @returns the distance between the two vectors squared
     */
   inline def DistanceSquared(
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector4],
@@ -97,7 +109,7 @@ object Vector4 {
     * @param result the vector to store the result in
     */
   inline def FromFloatArrayToRef(
-    array: DeepImmutable[Float32Array],
+    array: DeepImmutable[js.typedarray.Float32Array],
     offset: Double,
     result: typings.babylonjs.mathVectorMod.Vector4
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -167,6 +179,51 @@ object Vector4 {
   inline def One(): typings.babylonjs.mathVectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("One")().asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
   
   /**
+    * Returns a new Vector4 set with the result of the transformation by the given matrix of the given vector.
+    * This method computes tranformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
+    * The difference with Vector3.TransformCoordinates is that the w component is not used to divide the other coordinates but is returned in the w coordinate instead
+    * @param vector defines the Vector3 to transform
+    * @param transformation defines the transformation matrix
+    * @returns the transformed Vector4
+    */
+  inline def TransformCoordinates(
+    vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathVectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformCoordinates")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
+  
+  /**
+    * Sets the given vector "result" coordinates with the result of the transformation by the given matrix of the given floats (x, y, z)
+    * This method computes tranformed coordinates only, not transformed direction vectors
+    * The difference with Vector3.TransformCoordinatesFromFloatsToRef is that the w component is not used to divide the other coordinates but is returned in the w coordinate instead
+    * @param x define the x coordinate of the source vector
+    * @param y define the y coordinate of the source vector
+    * @param z define the z coordinate of the source vector
+    * @param transformation defines the transformation matrix
+    * @param result defines the Vector4 where to store the result
+    */
+  inline def TransformCoordinatesFromFloatsToRef(
+    x: Double,
+    y: Double,
+    z: Double,
+    transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
+    result: typings.babylonjs.mathVectorMod.Vector4
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformCoordinatesFromFloatsToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Sets the given vector "result" coordinates with the result of the transformation by the given matrix of the given vector
+    * This method computes tranformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
+    * The difference with Vector3.TransformCoordinatesToRef is that the w component is not used to divide the other coordinates but is returned in the w coordinate instead
+    * @param vector defines the Vector3 to transform
+    * @param transformation defines the transformation matrix
+    * @param result defines the Vector4 where to store the result
+    */
+  inline def TransformCoordinatesToRef(
+    vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    transformation: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
+    result: typings.babylonjs.mathVectorMod.Vector4
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformCoordinatesToRef")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
     * Returns a new Vector4 set with the result of the normal transformation by the given matrix of the given vector.
     * This methods computes transformed normalized direction vectors only.
     * @param vector the vector to transform
@@ -215,4 +272,9 @@ object Vector4 {
     * @returns the new vector
     */
   inline def Zero(): typings.babylonjs.mathVectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathVectorMod.Vector4]
+  
+  @JSImport("babylonjs/Maths/math", "Vector4._ZeroReadOnly")
+  @js.native
+  def _ZeroReadOnly: Any = js.native
+  inline def _ZeroReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroReadOnly")(x.asInstanceOf[js.Any])
 }

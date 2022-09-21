@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("go", "PathSegment")
 @js.native
-class PathSegment protected () extends StObject {
+open class PathSegment protected () extends StObject {
   /**
     * Constructs a segment that goes nowhere unless you specify some Points.
     * @param {EnumValue} type

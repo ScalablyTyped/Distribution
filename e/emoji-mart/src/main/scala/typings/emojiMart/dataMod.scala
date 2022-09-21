@@ -36,7 +36,7 @@ object dataMod {
       
       inline def setEmojis(value: js.Array[String]): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
       
-      inline def setEmojisVarargs(value: String*): Self = StObject.set(x, "emojis", js.Array(value :_*))
+      inline def setEmojisVarargs(value: String*): Self = StObject.set(x, "emojis", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -72,7 +72,7 @@ object dataMod {
       
       inline def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
       
@@ -189,7 +189,7 @@ object dataMod {
       
       inline def setEmoticonsUndefined: Self = StObject.set(x, "emoticons", js.undefined)
       
-      inline def setEmoticonsVarargs(value: String*): Self = StObject.set(x, "emoticons", js.Array(value :_*))
+      inline def setEmoticonsVarargs(value: String*): Self = StObject.set(x, "emoticons", js.Array(value*))
       
       inline def setF(value: Boolean): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
@@ -235,25 +235,25 @@ object dataMod {
       
       inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
       
-      inline def setJVarargs(value: String*): Self = StObject.set(x, "j", js.Array(value :_*))
+      inline def setJVarargs(value: String*): Self = StObject.set(x, "j", js.Array(value*))
       
       inline def setK(value: js.Array[Double]): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
       inline def setKUndefined: Self = StObject.set(x, "k", js.undefined)
       
-      inline def setKVarargs(value: Double*): Self = StObject.set(x, "k", js.Array(value :_*))
+      inline def setKVarargs(value: Double*): Self = StObject.set(x, "k", js.Array(value*))
       
       inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
       inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setL(value: js.Array[String]): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
       
       inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
       
-      inline def setLVarargs(value: String*): Self = StObject.set(x, "l", js.Array(value :_*))
+      inline def setLVarargs(value: String*): Self = StObject.set(x, "l", js.Array(value*))
       
       inline def setM(value: String): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
@@ -263,7 +263,7 @@ object dataMod {
       
       inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
       
-      inline def setNVarargs(value: String*): Self = StObject.set(x, "n", js.Array(value :_*))
+      inline def setNVarargs(value: String*): Self = StObject.set(x, "n", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -289,7 +289,7 @@ object dataMod {
       
       inline def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
       
-      inline def setSheetVarargs(value: Double*): Self = StObject.set(x, "sheet", js.Array(value :_*))
+      inline def setSheetVarargs(value: Double*): Self = StObject.set(x, "sheet", js.Array(value*))
       
       inline def setSheet_x(value: Double): Self = StObject.set(x, "sheet_x", value.asInstanceOf[js.Any])
       
@@ -303,7 +303,7 @@ object dataMod {
       
       inline def setShort_namesUndefined: Self = StObject.set(x, "short_names", js.undefined)
       
-      inline def setShort_namesVarargs(value: String*): Self = StObject.set(x, "short_names", js.Array(value :_*))
+      inline def setShort_namesVarargs(value: String*): Self = StObject.set(x, "short_names", js.Array(value*))
       
       inline def setSkin_variations(value: StringDictionary[SkinVariation]): Self = StObject.set(x, "skin_variations", value.asInstanceOf[js.Any])
       
@@ -325,13 +325,13 @@ object dataMod {
     
     var has_img_apple: Boolean
     
-    var has_img_emojione: Boolean
+    var has_img_emojione: js.UndefOr[Boolean] = js.undefined
     
     var has_img_facebook: Boolean
     
     var has_img_google: Boolean
     
-    var has_img_messenger: Boolean
+    var has_img_messenger: js.UndefOr[Boolean] = js.undefined
     
     var has_img_twitter: Boolean
     
@@ -354,17 +354,15 @@ object dataMod {
     inline def apply(
       added_in: String,
       has_img_apple: Boolean,
-      has_img_emojione: Boolean,
       has_img_facebook: Boolean,
       has_img_google: Boolean,
-      has_img_messenger: Boolean,
       has_img_twitter: Boolean,
       image: String,
       sheet_x: Double,
       sheet_y: Double,
       unified: String
     ): SkinVariation = {
-      val __obj = js.Dynamic.literal(added_in = added_in.asInstanceOf[js.Any], has_img_apple = has_img_apple.asInstanceOf[js.Any], has_img_emojione = has_img_emojione.asInstanceOf[js.Any], has_img_facebook = has_img_facebook.asInstanceOf[js.Any], has_img_google = has_img_google.asInstanceOf[js.Any], has_img_messenger = has_img_messenger.asInstanceOf[js.Any], has_img_twitter = has_img_twitter.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], sheet_x = sheet_x.asInstanceOf[js.Any], sheet_y = sheet_y.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any], non_qualified = null)
+      val __obj = js.Dynamic.literal(added_in = added_in.asInstanceOf[js.Any], has_img_apple = has_img_apple.asInstanceOf[js.Any], has_img_facebook = has_img_facebook.asInstanceOf[js.Any], has_img_google = has_img_google.asInstanceOf[js.Any], has_img_twitter = has_img_twitter.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], sheet_x = sheet_x.asInstanceOf[js.Any], sheet_y = sheet_y.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any], non_qualified = null)
       __obj.asInstanceOf[SkinVariation]
     }
     
@@ -376,11 +374,15 @@ object dataMod {
       
       inline def setHas_img_emojione(value: Boolean): Self = StObject.set(x, "has_img_emojione", value.asInstanceOf[js.Any])
       
+      inline def setHas_img_emojioneUndefined: Self = StObject.set(x, "has_img_emojione", js.undefined)
+      
       inline def setHas_img_facebook(value: Boolean): Self = StObject.set(x, "has_img_facebook", value.asInstanceOf[js.Any])
       
       inline def setHas_img_google(value: Boolean): Self = StObject.set(x, "has_img_google", value.asInstanceOf[js.Any])
       
       inline def setHas_img_messenger(value: Boolean): Self = StObject.set(x, "has_img_messenger", value.asInstanceOf[js.Any])
+      
+      inline def setHas_img_messengerUndefined: Self = StObject.set(x, "has_img_messenger", js.undefined)
       
       inline def setHas_img_twitter(value: Boolean): Self = StObject.set(x, "has_img_twitter", value.asInstanceOf[js.Any])
       

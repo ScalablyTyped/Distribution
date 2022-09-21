@@ -1,5 +1,6 @@
 package typings.i18next
 
+import typings.i18next.mod.ModuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,9 @@ object i18nextStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `3rdParty` extends StObject
+  sealed trait `3rdParty`
+    extends StObject
+       with ModuleType
   inline def `3rdParty`: `3rdParty` = "3rdParty".asInstanceOf[`3rdParty`]
   
   @js.native
@@ -23,16 +26,10 @@ object i18nextStrings {
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait altKey extends StObject
-  inline def altKey: altKey = "altKey".asInstanceOf[altKey]
-  
-  @js.native
-  sealed trait backend extends StObject
+  sealed trait backend
+    extends StObject
+       with ModuleType
   inline def backend: backend = "backend".asInstanceOf[backend]
-  
-  @js.native
-  sealed trait ctrlKey extends StObject
-  inline def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
   
   @js.native
   sealed trait current extends StObject
@@ -51,12 +48,16 @@ object i18nextStrings {
   inline def fallback: fallback = "fallback".asInstanceOf[fallback]
   
   @js.native
-  sealed trait i18nFormat extends StObject
-  inline def i18nFormat: i18nFormat = "i18nFormat".asInstanceOf[i18nFormat]
+  sealed trait formatter
+    extends StObject
+       with ModuleType
+  inline def formatter: formatter = "formatter".asInstanceOf[formatter]
   
   @js.native
-  sealed trait iframe extends StObject
-  inline def iframe: iframe = "iframe".asInstanceOf[iframe]
+  sealed trait i18nFormat
+    extends StObject
+       with ModuleType
+  inline def i18nFormat: i18nFormat = "i18nFormat".asInstanceOf[i18nFormat]
   
   @js.native
   sealed trait initialized extends StObject
@@ -67,7 +68,9 @@ object i18nextStrings {
   inline def languageChanged: languageChanged = "languageChanged".asInstanceOf[languageChanged]
   
   @js.native
-  sealed trait languageDetector extends StObject
+  sealed trait languageDetector
+    extends StObject
+       with ModuleType
   inline def languageDetector: languageDetector = "languageDetector".asInstanceOf[languageDetector]
   
   @js.native
@@ -79,7 +82,9 @@ object i18nextStrings {
   inline def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
-  sealed trait logger extends StObject
+  sealed trait logger
+    extends StObject
+       with ModuleType
   inline def logger: logger = "logger".asInstanceOf[logger]
   
   @js.native
@@ -87,15 +92,13 @@ object i18nextStrings {
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait metaKey extends StObject
-  inline def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
-  
-  @js.native
   sealed trait missingKey extends StObject
   inline def missingKey: missingKey = "missingKey".asInstanceOf[missingKey]
   
   @js.native
-  sealed trait postProcessor extends StObject
+  sealed trait postProcessor
+    extends StObject
+       with ModuleType
   inline def postProcessor: postProcessor = "postProcessor".asInstanceOf[postProcessor]
   
   @js.native
@@ -105,10 +108,6 @@ object i18nextStrings {
   @js.native
   sealed trait rtl extends StObject
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
-  
-  @js.native
-  sealed trait shiftKey extends StObject
-  inline def shiftKey: shiftKey = "shiftKey".asInstanceOf[shiftKey]
   
   @js.native
   sealed trait v1 extends StObject
@@ -123,6 +122,6 @@ object i18nextStrings {
   inline def v3: v3 = "v3".asInstanceOf[v3]
   
   @js.native
-  sealed trait window extends StObject
-  inline def window: window = "window".asInstanceOf[window]
+  sealed trait v4 extends StObject
+  inline def v4: v4 = "v4".asInstanceOf[v4]
 }

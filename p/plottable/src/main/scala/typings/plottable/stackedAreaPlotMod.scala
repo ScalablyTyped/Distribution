@@ -14,21 +14,21 @@ object stackedAreaPlotMod {
   /**
     * @constructor
     */
-  class StackedArea[X] () extends Area[X] {
+  open class StackedArea[X] () extends Area[X] {
     
-    /* private */ var _baseline: js.Any = js.native
+    /* private */ var _baseline: Any = js.native
     
-    /* private */ var _baselineValue: js.Any = js.native
+    /* private */ var _baselineValue: Any = js.native
     
-    /* private */ var _baselineValueProvider: js.Any = js.native
+    /* private */ var _baselineValueProvider: Any = js.native
     
-    /* private */ def _checkSameDomain(): js.Any = js.native
+    /* private */ var _checkSameDomain: Any = js.native
     
-    /* private */ var _stackedExtent: js.Any = js.native
+    /* private */ var _stackedExtent: Any = js.native
     
-    /* private */ var _stackingOrder: js.Any = js.native
+    /* private */ var _stackingOrder: Any = js.native
     
-    /* private */ var _stackingResult: js.Any = js.native
+    /* private */ var _stackingResult: Any = js.native
     
     /**
       * Gets the stacking order of the plot.
@@ -52,7 +52,7 @@ object stackedAreaPlotMod {
       * @param dataset The dataset from which to retrieve the y value offset
       * @param x The x value corresponding to the y-value of interest.
       */
-    def yOffset(dataset: Dataset, x: js.Any): Double = js.native
+    def yOffset(dataset: Dataset, x: Any): Double = js.native
   }
   /* static members */
   object StackedArea {
@@ -70,6 +70,9 @@ object stackedAreaPlotMod {
       * @param {Accessor<any>} keyAccessor The accessor for the key of the data
       * @return {string[]} An array of stringified keys
       */
-    inline def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_domainKeys")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/plots/stackedAreaPlot", "StackedArea._domainKeys")
+    @js.native
+    def _domainKeys: Any = js.native
+    inline def _domainKeys_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_domainKeys")(x.asInstanceOf[js.Any])
   }
 }

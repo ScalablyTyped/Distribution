@@ -15,6 +15,9 @@ trait Create extends StObject {
   /** Number of pixels high. */
   var height: Double
   
+  /** Describes a noise to be created. */
+  var noise: js.UndefOr[Noise] = js.undefined
+  
   /** Number of pixels wide. */
   var width: Double
 }
@@ -32,6 +35,10 @@ object Create {
     inline def setChannels(value: Channels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setNoise(value: Noise): Self = StObject.set(x, "noise", value.asInstanceOf[js.Any])
+    
+    inline def setNoiseUndefined: Self = StObject.set(x, "noise", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }

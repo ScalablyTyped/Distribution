@@ -37,9 +37,24 @@ trait Source extends StObject {
   var IngestPort: js.UndefOr[integer] = js.undefined
   
   /**
+    * The media streams that are associated with the source, and the parameters for those associations.
+    */
+  var MediaStreamSourceConfigurations: js.UndefOr[listOfMediaStreamSourceConfiguration] = js.undefined
+  
+  /**
     * The name of the source.
     */
   var Name: string
+  
+  /**
+    * The port that the flow uses to send outbound requests to initiate connection with the sender.
+    */
+  var SenderControlPort: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The IP address that the flow communicates with to initiate connection with the sender.
+    */
+  var SenderIpAddress: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the source.
@@ -52,7 +67,7 @@ trait Source extends StObject {
   var Transport: js.UndefOr[typings.awsSdk.mediaconnectMod.Transport] = js.undefined
   
   /**
-    * The name of the VPC Interface this Source is configured with.
+    * The name of the VPC interface that is used for this source.
     */
   var VpcInterfaceName: js.UndefOr[string] = js.undefined
   
@@ -94,7 +109,21 @@ object Source {
     
     inline def setIngestPortUndefined: Self = StObject.set(x, "IngestPort", js.undefined)
     
+    inline def setMediaStreamSourceConfigurations(value: listOfMediaStreamSourceConfiguration): Self = StObject.set(x, "MediaStreamSourceConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setMediaStreamSourceConfigurationsUndefined: Self = StObject.set(x, "MediaStreamSourceConfigurations", js.undefined)
+    
+    inline def setMediaStreamSourceConfigurationsVarargs(value: MediaStreamSourceConfiguration*): Self = StObject.set(x, "MediaStreamSourceConfigurations", js.Array(value*))
+    
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setSenderControlPort(value: integer): Self = StObject.set(x, "SenderControlPort", value.asInstanceOf[js.Any])
+    
+    inline def setSenderControlPortUndefined: Self = StObject.set(x, "SenderControlPort", js.undefined)
+    
+    inline def setSenderIpAddress(value: string): Self = StObject.set(x, "SenderIpAddress", value.asInstanceOf[js.Any])
+    
+    inline def setSenderIpAddressUndefined: Self = StObject.set(x, "SenderIpAddress", js.undefined)
     
     inline def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     

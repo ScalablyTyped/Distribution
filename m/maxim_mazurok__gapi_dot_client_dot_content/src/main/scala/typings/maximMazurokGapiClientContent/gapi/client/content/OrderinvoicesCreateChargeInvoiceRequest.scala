@@ -45,7 +45,7 @@ object OrderinvoicesCreateChargeInvoiceRequest {
     
     inline def setLineItemInvoicesUndefined: Self = StObject.set(x, "lineItemInvoices", js.undefined)
     
-    inline def setLineItemInvoicesVarargs(value: ShipmentInvoiceLineItemInvoice*): Self = StObject.set(x, "lineItemInvoices", js.Array(value :_*))
+    inline def setLineItemInvoicesVarargs(value: ShipmentInvoiceLineItemInvoice*): Self = StObject.set(x, "lineItemInvoices", js.Array(value*))
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     

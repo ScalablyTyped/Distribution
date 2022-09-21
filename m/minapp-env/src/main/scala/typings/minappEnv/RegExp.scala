@@ -65,7 +65,7 @@ trait RegExp extends StObject {
   @JSName(js.Symbol.replace)
   var replace: (js.Function2[/* string */ java.lang.String, /* replaceValue */ java.lang.String, java.lang.String]) & (js.Function2[
     /* string */ java.lang.String, 
-    /* replacer */ js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String], 
+    /* replacer */ js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String], 
     java.lang.String
   ]) = js.native
   

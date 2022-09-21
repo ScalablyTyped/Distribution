@@ -8,7 +8,6 @@ import typings.dateFns.dateFnsNumbers.`3`
 import typings.dateFns.dateFnsNumbers.`4`
 import typings.dateFns.dateFnsNumbers.`5`
 import typings.dateFns.dateFnsNumbers.`6`
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +18,11 @@ object fpGetDayMod {
     
     @JSImport("date-fns/fp/getDay", JSImport.Default)
     @js.native
-    val ^ : CurriedFn1[Date | Double, `0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+    val ^ : CurriedFn1[js.Date | Double, `0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
     
-    type _To = CurriedFn1[Date | Double, `0` | `1` | `2` | `3` | `4` | `5` | `6`]
+    type _To = CurriedFn1[js.Date | Double, `0` | `1` | `2` | `3` | `4` | `5` | `6`]
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn1[Date | Double, `0` | `1` | `2` | `3` | `4` | `5` | `6`] = ^
+    override def _to: CurriedFn1[js.Date | Double, `0` | `1` | `2` | `3` | `4` | `5` | `6`] = ^
   }
 }

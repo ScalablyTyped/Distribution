@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteDistributionConfigurationResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the distribution configuration that was deleted. 
+    * The Amazon Resource Name (ARN) of the distribution configuration that was deleted.
     */
   var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }

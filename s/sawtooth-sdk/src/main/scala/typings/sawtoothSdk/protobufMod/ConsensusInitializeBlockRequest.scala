@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,20 +14,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ConsensusInitializeBlockRequest.
   * @param [properties] Properties to set
   */
-class ConsensusInitializeBlockRequest ()
+open class ConsensusInitializeBlockRequest ()
   extends StObject
      with IConsensusInitializeBlockRequest {
   def this(properties: IConsensusInitializeBlockRequest) = this()
   
   /** ConsensusInitializeBlockRequest previousId. */
   @JSName("previousId")
-  var previousId_ConsensusInitializeBlockRequest: Uint8Array = js.native
+  var previousId_ConsensusInitializeBlockRequest: js.typedarray.Uint8Array = js.native
   
   /**
     * Converts this ConsensusInitializeBlockRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ConsensusInitializeBlockRequest {
@@ -45,6 +44,8 @@ object ConsensusInitializeBlockRequest {
   inline def create(): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusInitializeBlockRequest]
   inline def create(properties: IConsensusInitializeBlockRequest): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusInitializeBlockRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusInitializeBlockRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ConsensusInitializeBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusInitializeBlockRequest]
   /**
     * Decodes a ConsensusInitializeBlockRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -55,9 +56,8 @@ object ConsensusInitializeBlockRequest {
     */
   inline def decode(reader: Reader): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusInitializeBlockRequest]
   inline def decode(reader: Reader, length: Double): ConsensusInitializeBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusInitializeBlockRequest]
-  inline def decode(reader: Uint8Array): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusInitializeBlockRequest]
-  inline def decode(reader: Uint8Array, length: Double): ConsensusInitializeBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusInitializeBlockRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusInitializeBlockRequest]
   /**
     * Decodes a ConsensusInitializeBlockRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -66,7 +66,6 @@ object ConsensusInitializeBlockRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusInitializeBlockRequest]
-  inline def decodeDelimited(reader: Uint8Array): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusInitializeBlockRequest]
   
   /**
     * Encodes the specified ConsensusInitializeBlockRequest message. Does not implicitly {@link ConsensusInitializeBlockRequest.verify|verify} messages.
@@ -91,7 +90,7 @@ object ConsensusInitializeBlockRequest {
     * @param object Plain object
     * @returns ConsensusInitializeBlockRequest
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusInitializeBlockRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): ConsensusInitializeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusInitializeBlockRequest]
   
   /**
     * Creates a plain object from a ConsensusInitializeBlockRequest message. Also converts values to other types if specified.
@@ -99,13 +98,13 @@ object ConsensusInitializeBlockRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ConsensusInitializeBlockRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ConsensusInitializeBlockRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusInitializeBlockRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ConsensusInitializeBlockRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ConsensusInitializeBlockRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

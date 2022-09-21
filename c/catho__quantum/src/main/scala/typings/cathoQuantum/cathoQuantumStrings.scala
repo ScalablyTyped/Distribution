@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object cathoQuantumStrings {
   
   @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
   sealed trait `3d_rotation`
     extends StObject
        with IconNames
@@ -1319,6 +1323,10 @@ object cathoQuantumStrings {
     extends StObject
        with IconNames
   inline def crop_square: crop_square = "crop_square".asInstanceOf[crop_square]
+  
+  @js.native
+  sealed trait dark extends StObject
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait dashboard
@@ -3745,6 +3753,12 @@ object cathoQuantumStrings {
   inline def person_add: person_add = "person_add".asInstanceOf[person_add]
   
   @js.native
+  sealed trait person_circle
+    extends StObject
+       with IconNames
+  inline def person_circle: person_circle = "person_circle".asInstanceOf[person_circle]
+  
+  @js.native
   sealed trait person_outline
     extends StObject
        with IconNames
@@ -5587,6 +5601,12 @@ object cathoQuantumStrings {
   inline def vpn_lock: vpn_lock = "vpn_lock".asInstanceOf[vpn_lock]
   
   @js.native
+  sealed trait wallet
+    extends StObject
+       with IconNames
+  inline def wallet: wallet = "wallet".asInstanceOf[wallet]
+  
+  @js.native
   sealed trait wallpaper
     extends StObject
        with IconNames
@@ -5707,9 +5727,7 @@ object cathoQuantumStrings {
   inline def wrap_text: wrap_text = "wrap_text".asInstanceOf[wrap_text]
   
   @js.native
-  sealed trait xlarge
-    extends StObject
-       with BreakpointsType
+  sealed trait xlarge extends StObject
   inline def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
   
   @js.native

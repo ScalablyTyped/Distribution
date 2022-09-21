@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ForwardRefRenderFunction[T, P] extends StObject {
   
-  def apply(props: PropsWithChildren[P]): (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | Null = js.native
-  def apply(props: PropsWithChildren[P], ref: js.Function1[/* instance */ T | Null, Unit]): (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | Null = js.native
-  def apply(props: PropsWithChildren[P], ref: MutableRefObject[T | Null]): (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | Null = js.native
+  def apply(props: PropsWithChildren[P]): (ReactElement[Any, String | JSXElementConstructor[Any]]) | Null = js.native
+  def apply(props: PropsWithChildren[P], ref: js.Function1[/* instance */ T | Null, Unit]): (ReactElement[Any, String | JSXElementConstructor[Any]]) | Null = js.native
+  def apply(props: PropsWithChildren[P], ref: MutableRefObject[T | Null]): (ReactElement[Any, String | JSXElementConstructor[Any]]) | Null = js.native
   
   // explicit rejected with `never` required due to
   // https://github.com/microsoft/TypeScript/issues/36826

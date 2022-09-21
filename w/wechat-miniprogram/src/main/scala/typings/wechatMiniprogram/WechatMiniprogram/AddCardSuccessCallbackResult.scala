@@ -22,7 +22,7 @@ object AddCardSuccessCallbackResult {
     
     inline def setCardList(value: js.Array[AddCardResponseInfo]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
-    inline def setCardListVarargs(value: AddCardResponseInfo*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: AddCardResponseInfo*): Self = StObject.set(x, "cardList", js.Array(value*))
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

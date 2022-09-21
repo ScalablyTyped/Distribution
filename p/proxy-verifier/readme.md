@@ -4,16 +4,16 @@
 Typings are for version 0.4
 
 ## Library description:
-Check that proxies are working, verify their anonymity level, check for other capabilities such as tunneling and available protocols.
+Check that proxies are working, verify their anonymity level, lookup their geographic location by IP address, check for other capabilities such as tunneling and available protocols.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | proxy-verifier |
 | Keywords           | proxy, proxies, verify, check, anonymity |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 2787 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 163.0 |
+| # stars            | 72.0 |
 
 ## Links
 - [Homepage](https://github.com/chill117/proxy-verifier#readme)

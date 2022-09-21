@@ -5,9 +5,7 @@ import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressBrute.anon.Reset
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.std.Date
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +18,7 @@ object mod {
     */
   @JSImport("express-brute", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ExpressBrute {
     /**
@@ -28,15 +26,21 @@ object mod {
       * @constructor
       * @param {any} store The store.
       */
-    def this(store: js.Any) = this()
-    def this(store: js.Any, options: Options) = this()
+    def this(store: Any) = this()
+    def this(store: Any, options: Options) = this()
     
     /**
       * @summary Generates middleware that will bounce requests with the same key and IP address that happen faster than the current wait time by calling failCallback.
       * @param {Object} options The options.
       */
     /* CompleteClass */
-    override def getMiddleware(options: Middleware): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    override def getMiddleware(options: Middleware): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     /**
       * @summary Middleware that will bounce requests that happen faster than the current wait time by calling failCallback.
@@ -47,10 +51,22 @@ object mod {
       */
     /* CompleteClass */
     override def prevent(
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      response: Response_[js.Any],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      response: Response_[Any, Record[String, Any]],
       next: NextFunction
-    ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    ): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     /**
       * @summary Resets the wait time between requests back to its initial value.
@@ -60,7 +76,13 @@ object mod {
       * @return {RequestHandler} The Request handler.
       */
     /* CompleteClass */
-    override def reset(ip: String, key: String, next: NextFunction): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    override def reset(ip: String, key: String, next: NextFunction): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
   }
   
   @JSImport("express-brute", "FailForbidden")
@@ -82,7 +104,7 @@ object mod {
     * @constructor
     * @param {Object} options The options.
     */
-  class MemoryStore () extends StObject {
+  open class MemoryStore () extends StObject {
     def this(options: MemoryStoreOptions) = this()
     
     /**
@@ -90,14 +112,14 @@ object mod {
       * @param {string}      key     The key name.
       * @param {Function}    callbck The callback.
       */
-    def get(key: String, callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = js.native
+    def get(key: String, callback: js.Function2[/* error */ Any, /* data */ js.Object, Unit]): Unit = js.native
     
     /**
       * @summary Deletes the key.
       * @param {string}      key      The name.
       * @param {Function}    callback The callback.
       */
-    def reset(key: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def reset(key: String, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
     
     /**
       * @summary Sets the key value.
@@ -106,7 +128,7 @@ object mod {
       * @param {number}      lifetime The lifetime.
       * @param {Function}    callback The callback.
       */
-    def set(key: String, value: js.Any, lifetime: Double, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def set(key: String, value: Any, lifetime: Double, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
   }
   
   /**
@@ -119,7 +141,13 @@ object mod {
       * @summary Generates middleware that will bounce requests with the same key and IP address that happen faster than the current wait time by calling failCallback.
       * @param {Object} options The options.
       */
-    def getMiddleware(options: Middleware): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+    def getMiddleware(options: Middleware): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]
     
     /**
       * @summary Middleware that will bounce requests that happen faster than the current wait time by calling failCallback.
@@ -129,10 +157,22 @@ object mod {
       * @return {RequestHandler} The Request handler.
       */
     def prevent(
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      response: Response_[js.Any],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      response: Response_[Any, Record[String, Any]],
       next: NextFunction
-    ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+    ): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]
     
     /**
       * @summary Resets the wait time between requests back to its initial value.
@@ -141,14 +181,44 @@ object mod {
       * @param {Function}    next    The next middleware.
       * @return {RequestHandler} The Request handler.
       */
-    def reset(ip: String, key: String, next: NextFunction): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+    def reset(ip: String, key: String, next: NextFunction): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]
   }
   object ExpressBrute {
     
     inline def apply(
-      getMiddleware: Middleware => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
-      prevent: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
-      reset: (String, String, NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+      getMiddleware: Middleware => RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      prevent: (Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], Response_[Any, Record[String, Any]], NextFunction) => RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      reset: (String, String, NextFunction) => RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): ExpressBrute = {
       val __obj = js.Dynamic.literal(getMiddleware = js.Any.fromFunction1(getMiddleware), prevent = js.Any.fromFunction3(prevent), reset = js.Any.fromFunction3(reset))
       __obj.asInstanceOf[ExpressBrute]
@@ -156,21 +226,55 @@ object mod {
     
     extension [Self <: ExpressBrute](x: Self) {
       
-      inline def setGetMiddleware(value: Middleware => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "getMiddleware", js.Any.fromFunction1(value))
+      inline def setGetMiddleware(
+        value: Middleware => RequestHandler[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]
+      ): Self = StObject.set(x, "getMiddleware", js.Any.fromFunction1(value))
       
       inline def setPrevent(
-        value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+        value: (Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], Response_[Any, Record[String, Any]], NextFunction) => RequestHandler[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]
       ): Self = StObject.set(x, "prevent", js.Any.fromFunction3(value))
       
-      inline def setReset(value: (String, String, NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "reset", js.Any.fromFunction3(value))
+      inline def setReset(
+        value: (String, String, NextFunction) => RequestHandler[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]
+      ): Self = StObject.set(x, "reset", js.Any.fromFunction3(value))
     }
   }
   
   type FailCallback = js.Function4[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
-    /* nextValidRequestDate */ Date, 
+    /* nextValidRequestDate */ js.Date, 
     Unit
   ]
   
@@ -215,10 +319,16 @@ object mod {
       */
     var key: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* res */ Response_[Any, Record[String, Any]], 
           /* next */ NextFunction, 
-          js.Any
+          Any
         ]
       ] = js.undefined
   }
@@ -232,7 +342,13 @@ object mod {
     extension [Self <: Middleware](x: Self) {
       
       inline def setFailCallback(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction, /* nextValidRequestDate */ Date) => Unit
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* next */ NextFunction, /* nextValidRequestDate */ js.Date) => Unit
       ): Self = StObject.set(x, "failCallback", js.Any.fromFunction4(value))
       
       inline def setFailCallbackUndefined: Self = StObject.set(x, "failCallback", js.undefined)
@@ -242,7 +358,13 @@ object mod {
       inline def setIgnoreIPUndefined: Self = StObject.set(x, "ignoreIP", js.undefined)
       
       inline def setKey(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => js.Any
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* next */ NextFunction) => Any
       ): Self = StObject.set(x, "key", js.Any.fromFunction3(value))
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -305,7 +427,13 @@ object mod {
       inline def setAttachResetToRequestUndefined: Self = StObject.set(x, "attachResetToRequest", js.undefined)
       
       inline def setFailCallback(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction, /* nextValidRequestDate */ Date) => Unit
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* next */ NextFunction, /* nextValidRequestDate */ js.Date) => Unit
       ): Self = StObject.set(x, "failCallback", js.Any.fromFunction4(value))
       
       inline def setFailCallbackUndefined: Self = StObject.set(x, "failCallback", js.undefined)

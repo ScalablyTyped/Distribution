@@ -60,7 +60,7 @@ object GoogleCloudDatalabelingV1beta1AnnotatedDataset {
     
     inline def setBlockingResourcesUndefined: Self = StObject.set(x, "blockingResources", js.undefined)
     
-    inline def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value :_*))
+    inline def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value*))
     
     inline def setCompletedExampleCount(value: String): Self = StObject.set(x, "completedExampleCount", value.asInstanceOf[js.Any])
     

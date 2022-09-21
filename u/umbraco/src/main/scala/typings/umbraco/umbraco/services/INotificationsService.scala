@@ -42,7 +42,7 @@ trait INotificationsService extends StObject {
     */
   def add(item: INotificationItem): INotification
   
-  def addView(view: String, args: js.Any*): Unit
+  def addView(view: String, args: Any*): Unit
   
   /**
     * @ngdoc property
@@ -168,7 +168,7 @@ object INotificationsService {
   
   inline def apply(
     add: INotificationItem => INotification,
-    addView: (String, /* repeated */ js.Any) => Unit,
+    addView: (String, /* repeated */ Any) => Unit,
     current: js.Array[String],
     error: (String, String) => INotification,
     getCurrent: () => js.Array[INotification],
@@ -188,11 +188,11 @@ object INotificationsService {
     
     inline def setAdd(value: INotificationItem => INotification): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    inline def setAddView(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "addView", js.Any.fromFunction2(value))
+    inline def setAddView(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "addView", js.Any.fromFunction2(value))
     
     inline def setCurrent(value: js.Array[String]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    inline def setCurrentVarargs(value: String*): Self = StObject.set(x, "current", js.Array(value :_*))
+    inline def setCurrentVarargs(value: String*): Self = StObject.set(x, "current", js.Array(value*))
     
     inline def setError(value: (String, String) => INotification): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     

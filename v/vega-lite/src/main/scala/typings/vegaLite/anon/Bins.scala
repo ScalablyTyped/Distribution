@@ -36,20 +36,20 @@ object Bins {
     
     inline def setAggregate(value: js.Array[AggregatedFieldDef]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
-    inline def setAggregateVarargs(value: AggregatedFieldDef*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
+    inline def setAggregateVarargs(value: AggregatedFieldDef*): Self = StObject.set(x, "aggregate", js.Array(value*))
     
     inline def setBins(value: js.Array[BinTransform]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
-    inline def setBinsVarargs(value: BinTransform*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: BinTransform*): Self = StObject.set(x, "bins", js.Array(value*))
     
     inline def setEncoding(value: typings.vegaLite.encodingMod.Encoding[String]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setGroupby(value: js.Array[String]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    inline def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setTimeUnits(value: js.Array[TimeUnitTransform]): Self = StObject.set(x, "timeUnits", value.asInstanceOf[js.Any])
     
-    inline def setTimeUnitsVarargs(value: TimeUnitTransform*): Self = StObject.set(x, "timeUnits", js.Array(value :_*))
+    inline def setTimeUnitsVarargs(value: TimeUnitTransform*): Self = StObject.set(x, "timeUnits", js.Array(value*))
   }
 }

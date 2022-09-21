@@ -12,6 +12,8 @@ trait IndicesPutTemplateParams
   
   var flatSettings: js.UndefOr[Boolean] = js.undefined
   
+  var includeTypeName: js.UndefOr[Boolean] = js.undefined
+  
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
   var name: String
@@ -36,6 +38,10 @@ object IndicesPutTemplateParams {
     inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     
     inline def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
+    
+    inline def setIncludeTypeName(value: Boolean): Self = StObject.set(x, "includeTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTypeNameUndefined: Self = StObject.set(x, "includeTypeName", js.undefined)
     
     inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     

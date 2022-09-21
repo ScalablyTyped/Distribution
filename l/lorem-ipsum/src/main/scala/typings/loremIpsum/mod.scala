@@ -1,16 +1,10 @@
 package typings.loremIpsum
 
+import typings.loremIpsum.formatsMod.LoremFormat
 import typings.loremIpsum.generatorMod.IGeneratorOptions
 import typings.loremIpsum.generatorMod.IPrng
 import typings.loremIpsum.loremIpsumMod.default
-import typings.loremIpsum.loremIpsumStrings.html
-import typings.loremIpsum.loremIpsumStrings.paragraph
-import typings.loremIpsum.loremIpsumStrings.paragraphs
-import typings.loremIpsum.loremIpsumStrings.plain
-import typings.loremIpsum.loremIpsumStrings.sentence
-import typings.loremIpsum.loremIpsumStrings.sentences
-import typings.loremIpsum.loremIpsumStrings.word
-import typings.loremIpsum.loremIpsumStrings.words
+import typings.loremIpsum.unitsMod.LoremUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,14 +17,14 @@ object mod {
   
   @JSImport("lorem-ipsum", "LoremIpsum")
   @js.native
-  class LoremIpsum_ () extends default {
+  open class LoremIpsum_ () extends default {
     def this(options: IGeneratorOptions) = this()
-    def this(options: Unit, format: String) = this()
-    def this(options: IGeneratorOptions, format: String) = this()
-    def this(options: Unit, format: String, suffix: String) = this()
+    def this(options: Unit, format: LoremFormat) = this()
+    def this(options: IGeneratorOptions, format: LoremFormat) = this()
     def this(options: Unit, format: Unit, suffix: String) = this()
-    def this(options: IGeneratorOptions, format: String, suffix: String) = this()
+    def this(options: Unit, format: LoremFormat, suffix: String) = this()
     def this(options: IGeneratorOptions, format: Unit, suffix: String) = this()
+    def this(options: IGeneratorOptions, format: LoremFormat, suffix: String) = this()
   }
   
   inline def loremIpsum(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loremIpsum")().asInstanceOf[String]
@@ -42,7 +36,7 @@ object mod {
     
     var count: js.UndefOr[Double] = js.undefined
     
-    var format: js.UndefOr[plain | html] = js.undefined
+    var format: js.UndefOr[LoremFormat] = js.undefined
     
     var paragraphLowerBound: js.UndefOr[Double] = js.undefined
     
@@ -56,7 +50,7 @@ object mod {
     
     var suffix: js.UndefOr[String] = js.undefined
     
-    var units: js.UndefOr[words | word | sentences | sentence | paragraphs | paragraph] = js.undefined
+    var units: js.UndefOr[LoremUnit] = js.undefined
     
     var words: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -73,7 +67,7 @@ object mod {
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setFormat(value: plain | html): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: LoremFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -101,7 +95,7 @@ object mod {
       
       inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      inline def setUnits(value: words | word | sentences | sentence | paragraphs | paragraph): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: LoremUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
       inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
       
@@ -109,7 +103,7 @@ object mod {
       
       inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
       
-      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value*))
     }
   }
 }

@@ -12,7 +12,7 @@ trait UntagResourceRequest extends StObject {
   var resourceArn: String
   
   /**
-    * pecify the keys for the tags to remove from the resource.
+    * Specify the keys for the tags to remove from the resource.
     */
   var tagKeys: TagKeys
 }
@@ -29,6 +29,6 @@ object UntagResourceRequest {
     
     inline def setTagKeys(value: TagKeys): Self = StObject.set(x, "tagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "tagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "tagKeys", js.Array(value*))
   }
 }

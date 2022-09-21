@@ -11,11 +11,10 @@ object sheetMod {
   
   @JSImport("react-native-share/Sheet", JSImport.Default)
   @js.native
-  class default () extends Sheet
+  open class default () extends Sheet
   
   @js.native
-  trait Sheet
-    extends Component[SheetProps, SheetState, js.Any] {
+  trait Sheet extends Component[SheetProps, SheetState, Any] {
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MSheet(newProps: SheetProps): Unit = js.native

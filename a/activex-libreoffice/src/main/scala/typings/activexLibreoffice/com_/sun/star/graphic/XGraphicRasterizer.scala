@@ -41,7 +41,7 @@ trait XGraphicRasterizer
     * @param ShearAngle_X The horizontal shear angle of the graphic to be rasterized. This parameter is used without taking other transformation values into a
     * @param ShearAngle_Y The vertical shear angle of the graphic to be rasterized. This parameter is used without taking other transformation values into acc
     * @param RasterizeProperties Additional properties for special needs (undefined by now)
-    * @returns {@link com.sun.star.graphic.XGraphic} An interface to a graphic container that holds the rasterized pixel data
+    * @returns An interface to a graphic container that holds the rasterized pixel data
     * @see com.sun.star.beans.PropertyValues
     * @see com.sun.star.graphic.XGraphic
     */
@@ -59,7 +59,7 @@ object XGraphicRasterizer {
   inline def apply(
     acquire: () => Unit,
     initializeData: (XInputStream, Double, Double, js.Array[Size]) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     rasterize: (Double, Double, Double, Double, Double, PropertyValues) => XGraphic,
     release: () => Unit
   ): XGraphicRasterizer = {

@@ -55,7 +55,7 @@ object XLinePolyPolygon2D {
     getPoint: (Double, Double) => RealPoint2D,
     getPoints: (Double, Double, Double, Double) => SafeArray[SafeArray[RealPoint2D]],
     isClosed: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setClosed: (Double, Boolean) => Unit,
     setFillRule: FillRule => Unit,

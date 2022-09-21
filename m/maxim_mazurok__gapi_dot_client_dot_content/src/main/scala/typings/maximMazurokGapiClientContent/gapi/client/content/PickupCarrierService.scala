@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PickupCarrierService extends StObject {
   
-  /** The name of the pickup carrier (e.g., `"UPS"`). Required. */
+  /** The name of the pickup carrier (for example, `"UPS"`). Required. */
   var carrierName: js.UndefOr[String] = js.undefined
   
-  /** The name of the pickup service (e.g., `"Access point"`). Required. */
+  /** The name of the pickup service (for example, `"Access point"`). Required. */
   var serviceName: js.UndefOr[String] = js.undefined
 }
 object PickupCarrierService {

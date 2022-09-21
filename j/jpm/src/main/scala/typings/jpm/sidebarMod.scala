@@ -29,38 +29,17 @@ object sidebarMod {
     
     var id: String = js.native
     
-    @JSName("on")
-    def on_attach(event: attach, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_detach(event: detach, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_hide(event: hide, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_ready(event: ready, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_show(event: show, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
+    def on(
+      event: show | hide | attach | detach | ready,
+      handler: js.Function1[/* worker */ SidebarWorker, Any]
+    ): Unit = js.native
     
-    @JSName("once")
-    def once_attach(event: attach, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_detach(event: detach, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_hide(event: hide, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_ready(event: ready, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_show(event: show, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
+    def once(
+      event: show | hide | attach | detach | ready,
+      handler: js.Function1[/* worker */ SidebarWorker, Any]
+    ): Unit = js.native
     
-    @JSName("removeListener")
-    def removeListener_attach(event: attach, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_detach(event: detach, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_hide(event: hide, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_ready(event: ready, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_show(event: show, handler: js.Function): Unit = js.native
+    def removeListener(event: show | hide | attach | detach | ready, handler: js.Function): Unit = js.native
     
     def show(): Unit = js.native
     def show(window: BrowserWindow): Unit = js.native

@@ -24,7 +24,7 @@ object XHandoutMasterSupplier {
     HandoutMasterPage: XDrawPage,
     acquire: () => Unit,
     getHandoutMasterPage: () => XDrawPage,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XHandoutMasterSupplier = {
     val __obj = js.Dynamic.literal(HandoutMasterPage = HandoutMasterPage.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getHandoutMasterPage = js.Any.fromFunction0(getHandoutMasterPage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

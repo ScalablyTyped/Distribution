@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.algoliaClientSearch.algoliaClientSearchStrings.editSettings
   - typings.algoliaClientSearch.algoliaClientSearchStrings.listIndexes
   - typings.algoliaClientSearch.algoliaClientSearchStrings.logs
+  - typings.algoliaClientSearch.algoliaClientSearchStrings.personalization
   - typings.algoliaClientSearch.algoliaClientSearchStrings.recommendation
   - typings.algoliaClientSearch.algoliaClientSearchStrings.search
   - typings.algoliaClientSearch.algoliaClientSearchStrings.seeUnretrievableAttributes
@@ -37,6 +38,8 @@ object ApiKeyACLType {
   inline def listIndexes: typings.algoliaClientSearch.algoliaClientSearchStrings.listIndexes = "listIndexes".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.listIndexes]
   
   inline def logs: typings.algoliaClientSearch.algoliaClientSearchStrings.logs = "logs".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.logs]
+  
+  inline def personalization: typings.algoliaClientSearch.algoliaClientSearchStrings.personalization = "personalization".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.personalization]
   
   inline def recommendation: typings.algoliaClientSearch.algoliaClientSearchStrings.recommendation = "recommendation".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.recommendation]
   

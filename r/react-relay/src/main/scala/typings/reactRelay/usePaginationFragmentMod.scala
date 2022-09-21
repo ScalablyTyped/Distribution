@@ -15,18 +15,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object usePaginationFragmentMod {
   
-  @JSImport("react-relay/lib/relay-experimental/usePaginationFragment", JSImport.Namespace)
+  @JSImport("react-relay/relay-hooks/usePaginationFragment", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
-  ReturnType[TQuery, TKey | Null, (KeyTypeData[TKey, js.Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
-  ReturnType[TQuery, TKey | Null, (KeyTypeData[TKey, js.Any]) | Null]]
-  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
-  ReturnType[TQuery, TKey, KeyTypeData[TKey, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
-  ReturnType[TQuery, TKey, KeyTypeData[TKey, js.Any]]]
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey | Null, (KeyTypeData[TKey, Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey | Null, (KeyTypeData[TKey, Any]) | Null]]
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey, KeyTypeData[TKey, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey, KeyTypeData[TKey, Any]]]
   
-  trait ReturnType[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TFragmentData] extends StObject {
+  trait usePaginationFragmentHookType[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TFragmentData] extends StObject {
     
     var data: TFragmentData
     
@@ -44,9 +44,9 @@ object usePaginationFragmentMod {
     
     var refetch: RefetchFnDynamic[TQuery, TKey, Options]
   }
-  object ReturnType {
+  object usePaginationFragmentHookType {
     
-    inline def apply[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TFragmentData](
+    inline def apply[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TFragmentData](
       data: TFragmentData,
       hasNext: Boolean,
       hasPrevious: Boolean,
@@ -55,12 +55,12 @@ object usePaginationFragmentMod {
       loadNext: (/* count */ Double, /* options */ js.UndefOr[OnComplete[TQuery]]) => Disposable,
       loadPrevious: (/* count */ Double, /* options */ js.UndefOr[OnComplete[TQuery]]) => Disposable,
       refetch: RefetchFnDynamic[TQuery, TKey, Options]
-    ): ReturnType[TQuery, TKey, TFragmentData] = {
+    ): usePaginationFragmentHookType[TQuery, TKey, TFragmentData] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], isLoadingNext = isLoadingNext.asInstanceOf[js.Any], isLoadingPrevious = isLoadingPrevious.asInstanceOf[js.Any], loadNext = js.Any.fromFunction2(loadNext), loadPrevious = js.Any.fromFunction2(loadPrevious), refetch = refetch.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ReturnType[TQuery, TKey, TFragmentData]]
+      __obj.asInstanceOf[usePaginationFragmentHookType[TQuery, TKey, TFragmentData]]
     }
     
-    extension [Self <: ReturnType[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TFragmentData](x: Self & (ReturnType[TQuery, TKey, TFragmentData])) {
+    extension [Self <: usePaginationFragmentHookType[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TFragmentData](x: Self & (usePaginationFragmentHookType[TQuery, TKey, TFragmentData])) {
       
       inline def setData(value: TFragmentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

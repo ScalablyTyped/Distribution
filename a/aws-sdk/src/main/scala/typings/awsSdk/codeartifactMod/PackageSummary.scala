@@ -13,14 +13,19 @@ trait PackageSummary extends StObject {
   var _package: js.UndefOr[PackageName] = js.undefined
   
   /**
-    *  The format of the package. Valid values are:     npm     pypi     maven   
+    *  The format of the package. 
     */
   var format: js.UndefOr[PackageFormat] = js.undefined
   
   /**
-    *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
+    * The namespace of the package. The package component that specifies its namespace depends on its type. For example:    The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     Python and NuGet packages do not contain a corresponding component, packages of those formats do not have a namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
+  
+  /**
+    * A PackageOriginConfiguration object that contains a PackageOriginRestrictions object that contains information about the upstream and publish package origin restrictions.
+    */
+  var originConfiguration: js.UndefOr[PackageOriginConfiguration] = js.undefined
 }
 object PackageSummary {
   
@@ -38,6 +43,10 @@ object PackageSummary {
     inline def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    
+    inline def setOriginConfiguration(value: PackageOriginConfiguration): Self = StObject.set(x, "originConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setOriginConfigurationUndefined: Self = StObject.set(x, "originConfiguration", js.undefined)
     
     inline def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     

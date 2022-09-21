@@ -65,7 +65,7 @@ object controlMod {
   
   @JSImport("rbx/elements/form/control", "Control")
   @js.native
-  val Control: ForwardRefAsExoticComponent[ControlProps, ElementType[js.Any]] = js.native
+  val Control: ForwardRefAsExoticComponent[ControlProps, ElementType[Any]] = js.native
   
   trait ControlModifierProps extends StObject {
     

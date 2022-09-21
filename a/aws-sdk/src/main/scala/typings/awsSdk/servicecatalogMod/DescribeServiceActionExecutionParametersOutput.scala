@@ -24,6 +24,6 @@ object DescribeServiceActionExecutionParametersOutput {
     
     inline def setServiceActionParametersUndefined: Self = StObject.set(x, "ServiceActionParameters", js.undefined)
     
-    inline def setServiceActionParametersVarargs(value: ExecutionParameter*): Self = StObject.set(x, "ServiceActionParameters", js.Array(value :_*))
+    inline def setServiceActionParametersVarargs(value: ExecutionParameter*): Self = StObject.set(x, "ServiceActionParameters", js.Array(value*))
   }
 }

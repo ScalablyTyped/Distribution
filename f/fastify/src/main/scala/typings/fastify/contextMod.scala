@@ -8,18 +8,20 @@ object contextMod {
   
   trait FastifyContext[ContextConfig] extends StObject {
     
-    var config: ContextConfig
+    var config: FastifyContextConfig & ContextConfig
   }
   object FastifyContext {
     
-    inline def apply[ContextConfig](config: ContextConfig): FastifyContext[ContextConfig] = {
+    inline def apply[ContextConfig](config: FastifyContextConfig & ContextConfig): FastifyContext[ContextConfig] = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastifyContext[ContextConfig]]
     }
     
     extension [Self <: FastifyContext[?], ContextConfig](x: Self & FastifyContext[ContextConfig]) {
       
-      inline def setConfig(value: ContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: FastifyContextConfig & ContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait FastifyContextConfig extends StObject
 }

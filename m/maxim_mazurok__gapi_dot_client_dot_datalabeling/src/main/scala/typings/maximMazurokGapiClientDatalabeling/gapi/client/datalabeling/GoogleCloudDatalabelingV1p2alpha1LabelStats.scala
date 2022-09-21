@@ -14,7 +14,7 @@ trait GoogleCloudDatalabelingV1p2alpha1LabelStats extends StObject {
   var exampleCount: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1p2alpha1LabelStats & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1p2alpha1LabelStats & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudDatalabelingV1p2alpha1LabelStats {
@@ -29,7 +29,7 @@ object GoogleCloudDatalabelingV1p2alpha1LabelStats {
     inline def setExampleCount(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1p2alpha1LabelStats & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1p2alpha1LabelStats & TopLevel[Any]
     ): Self = StObject.set(x, "exampleCount", value.asInstanceOf[js.Any])
     
     inline def setExampleCountUndefined: Self = StObject.set(x, "exampleCount", js.undefined)

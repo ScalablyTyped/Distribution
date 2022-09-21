@@ -17,7 +17,7 @@ trait UpdateableQueryBuilder[T] extends StObject {
     value: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
-  ): TypeMatchedValue[T, K, js.Array[js.Any] | Set[js.Any], this.type] = js.native
+  ): TypeMatchedValue[T, K, js.Array[Any] | Set[Any], this.type] = js.native
   def add[K /* <: /* keyof T */ String */](
     key: K,
     value: StringDictionary[

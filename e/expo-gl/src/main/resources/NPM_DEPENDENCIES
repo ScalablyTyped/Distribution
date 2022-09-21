@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "expo-gl" : "11.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "expo-gl" : "11.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

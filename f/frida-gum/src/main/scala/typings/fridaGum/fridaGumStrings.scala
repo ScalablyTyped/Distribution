@@ -267,10 +267,24 @@ object fridaGumStrings {
   inline def DUK: DUK = "DUK".asInstanceOf[DUK]
   
   @js.native
+  sealed trait DotDotDot extends StObject
+  inline def DotDotDot: DotDotDot = "...".asInstanceOf[DotDotDot]
+  
+  @js.native
+  sealed trait GetValue extends StObject
+  inline def GetValue: GetValue = "GetValue".asInstanceOf[GetValue]
+  
+  @js.native
   sealed trait V8
     extends StObject
        with ScriptRuntime
   inline def V8: V8 = "V8".asInstanceOf[V8]
+  
+  @js.native
+  sealed trait _empty
+    extends StObject
+       with OperandAccess
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait a0
@@ -344,6 +358,12 @@ object fridaGumStrings {
     extends StObject
        with UnixSocketType
   inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
+  sealed trait any
+    extends StObject
+       with CModuleToolchain
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait `apsr-nzcvq` extends StObject
@@ -463,192 +483,224 @@ object fridaGumStrings {
   sealed trait d0
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d0: d0 = "d0".asInstanceOf[d0]
   
   @js.native
   sealed trait d1
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d1: d1 = "d1".asInstanceOf[d1]
   
   @js.native
   sealed trait d10
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d10: d10 = "d10".asInstanceOf[d10]
   
   @js.native
   sealed trait d11
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d11: d11 = "d11".asInstanceOf[d11]
   
   @js.native
   sealed trait d12
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d12: d12 = "d12".asInstanceOf[d12]
   
   @js.native
   sealed trait d13
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d13: d13 = "d13".asInstanceOf[d13]
   
   @js.native
   sealed trait d14
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d14: d14 = "d14".asInstanceOf[d14]
   
   @js.native
   sealed trait d15
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d15: d15 = "d15".asInstanceOf[d15]
   
   @js.native
   sealed trait d16
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d16: d16 = "d16".asInstanceOf[d16]
   
   @js.native
   sealed trait d17
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d17: d17 = "d17".asInstanceOf[d17]
   
   @js.native
   sealed trait d18
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d18: d18 = "d18".asInstanceOf[d18]
   
   @js.native
   sealed trait d19
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d19: d19 = "d19".asInstanceOf[d19]
   
   @js.native
   sealed trait d2
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d2: d2 = "d2".asInstanceOf[d2]
   
   @js.native
   sealed trait d20
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d20: d20 = "d20".asInstanceOf[d20]
   
   @js.native
   sealed trait d21
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d21: d21 = "d21".asInstanceOf[d21]
   
   @js.native
   sealed trait d22
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d22: d22 = "d22".asInstanceOf[d22]
   
   @js.native
   sealed trait d23
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d23: d23 = "d23".asInstanceOf[d23]
   
   @js.native
   sealed trait d24
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d24: d24 = "d24".asInstanceOf[d24]
   
   @js.native
   sealed trait d25
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d25: d25 = "d25".asInstanceOf[d25]
   
   @js.native
   sealed trait d26
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d26: d26 = "d26".asInstanceOf[d26]
   
   @js.native
   sealed trait d27
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d27: d27 = "d27".asInstanceOf[d27]
   
   @js.native
   sealed trait d28
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d28: d28 = "d28".asInstanceOf[d28]
   
   @js.native
   sealed trait d29
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d29: d29 = "d29".asInstanceOf[d29]
   
   @js.native
   sealed trait d3
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d3: d3 = "d3".asInstanceOf[d3]
   
   @js.native
   sealed trait d30
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d30: d30 = "d30".asInstanceOf[d30]
   
   @js.native
   sealed trait d31
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d31: d31 = "d31".asInstanceOf[d31]
   
   @js.native
   sealed trait d4
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d4: d4 = "d4".asInstanceOf[d4]
   
   @js.native
   sealed trait d5
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d5: d5 = "d5".asInstanceOf[d5]
   
   @js.native
   sealed trait d6
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d6: d6 = "d6".asInstanceOf[d6]
   
   @js.native
   sealed trait d7
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d7: d7 = "d7".asInstanceOf[d7]
   
   @js.native
   sealed trait d8
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d8: d8 = "d8".asInstanceOf[d8]
   
   @js.native
   sealed trait d9
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def d9: d9 = "d9".asInstanceOf[d9]
   
   @js.native
@@ -753,6 +805,12 @@ object fridaGumStrings {
     extends StObject
        with MemoryOperation
   inline def execute: execute = "execute".asInstanceOf[execute]
+  
+  @js.native
+  sealed trait external
+    extends StObject
+       with CModuleToolchain
+  inline def external: external = "external".asInstanceOf[external]
   
   @js.native
   sealed trait fastcall
@@ -875,6 +933,12 @@ object fridaGumStrings {
     extends StObject
        with ObjectKind
   inline def instance: instance = "instance".asInstanceOf[instance]
+  
+  @js.native
+  sealed trait internal
+    extends StObject
+       with CModuleToolchain
+  inline def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
   sealed trait ip
@@ -1108,6 +1172,12 @@ object fridaGumStrings {
   inline def lt: lt = "lt".asInstanceOf[lt]
   
   @js.native
+  sealed trait md5
+    extends StObject
+       with ChecksumType
+  inline def md5: md5 = "md5".asInstanceOf[md5]
+  
+  @js.native
   sealed trait mem
     extends StObject
        with Arm64OperandType
@@ -1261,48 +1331,56 @@ object fridaGumStrings {
   sealed trait q0
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q0: q0 = "q0".asInstanceOf[q0]
   
   @js.native
   sealed trait q1
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q1: q1 = "q1".asInstanceOf[q1]
   
   @js.native
   sealed trait q10
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q10: q10 = "q10".asInstanceOf[q10]
   
   @js.native
   sealed trait q11
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q11: q11 = "q11".asInstanceOf[q11]
   
   @js.native
   sealed trait q12
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q12: q12 = "q12".asInstanceOf[q12]
   
   @js.native
   sealed trait q13
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q13: q13 = "q13".asInstanceOf[q13]
   
   @js.native
   sealed trait q14
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q14: q14 = "q14".asInstanceOf[q14]
   
   @js.native
   sealed trait q15
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q15: q15 = "q15".asInstanceOf[q15]
   
   @js.native
@@ -1333,6 +1411,7 @@ object fridaGumStrings {
   sealed trait q2
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q2: q2 = "q2".asInstanceOf[q2]
   
   @js.native
@@ -1399,6 +1478,7 @@ object fridaGumStrings {
   sealed trait q3
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q3: q3 = "q3".asInstanceOf[q3]
   
   @js.native
@@ -1417,36 +1497,42 @@ object fridaGumStrings {
   sealed trait q4
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q4: q4 = "q4".asInstanceOf[q4]
   
   @js.native
   sealed trait q5
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q5: q5 = "q5".asInstanceOf[q5]
   
   @js.native
   sealed trait q6
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q6: q6 = "q6".asInstanceOf[q6]
   
   @js.native
   sealed trait q7
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q7: q7 = "q7".asInstanceOf[q7]
   
   @js.native
   sealed trait q8
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q8: q8 = "q8".asInstanceOf[q8]
   
   @js.native
   sealed trait q9
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def q9: q9 = "q9".asInstanceOf[q9]
   
   @js.native
@@ -1460,6 +1546,12 @@ object fridaGumStrings {
     extends StObject
        with X86PointerTarget
   inline def qword: qword = "qword".asInstanceOf[qword]
+  
+  @js.native
+  sealed trait r
+    extends StObject
+       with OperandAccess
+  inline def r: r = "r".asInstanceOf[r]
   
   @js.native
   sealed trait r0
@@ -1756,9 +1848,16 @@ object fridaGumStrings {
   inline def running: running = "running".asInstanceOf[running]
   
   @js.native
+  sealed trait rw
+    extends StObject
+       with OperandAccess
+  inline def rw: rw = "rw".asInstanceOf[rw]
+  
+  @js.native
   sealed trait s0
     extends StObject
        with Arm64Register
+       with ArmRegister
        with MipsRegister
   inline def s0: s0 = "s0".asInstanceOf[s0]
   
@@ -1766,6 +1865,7 @@ object fridaGumStrings {
   sealed trait s1
     extends StObject
        with Arm64Register
+       with ArmRegister
        with MipsRegister
   inline def s1: s1 = "s1".asInstanceOf[s1]
   
@@ -1773,66 +1873,77 @@ object fridaGumStrings {
   sealed trait s10
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s10: s10 = "s10".asInstanceOf[s10]
   
   @js.native
   sealed trait s11
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s11: s11 = "s11".asInstanceOf[s11]
   
   @js.native
   sealed trait s12
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s12: s12 = "s12".asInstanceOf[s12]
   
   @js.native
   sealed trait s13
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s13: s13 = "s13".asInstanceOf[s13]
   
   @js.native
   sealed trait s14
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s14: s14 = "s14".asInstanceOf[s14]
   
   @js.native
   sealed trait s15
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s15: s15 = "s15".asInstanceOf[s15]
   
   @js.native
   sealed trait s16
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s16: s16 = "s16".asInstanceOf[s16]
   
   @js.native
   sealed trait s17
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s17: s17 = "s17".asInstanceOf[s17]
   
   @js.native
   sealed trait s18
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s18: s18 = "s18".asInstanceOf[s18]
   
   @js.native
   sealed trait s19
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s19: s19 = "s19".asInstanceOf[s19]
   
   @js.native
   sealed trait s2
     extends StObject
        with Arm64Register
+       with ArmRegister
        with MipsRegister
   inline def s2: s2 = "s2".asInstanceOf[s2]
   
@@ -1840,66 +1951,77 @@ object fridaGumStrings {
   sealed trait s20
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s20: s20 = "s20".asInstanceOf[s20]
   
   @js.native
   sealed trait s21
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s21: s21 = "s21".asInstanceOf[s21]
   
   @js.native
   sealed trait s22
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s22: s22 = "s22".asInstanceOf[s22]
   
   @js.native
   sealed trait s23
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s23: s23 = "s23".asInstanceOf[s23]
   
   @js.native
   sealed trait s24
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s24: s24 = "s24".asInstanceOf[s24]
   
   @js.native
   sealed trait s25
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s25: s25 = "s25".asInstanceOf[s25]
   
   @js.native
   sealed trait s26
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s26: s26 = "s26".asInstanceOf[s26]
   
   @js.native
   sealed trait s27
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s27: s27 = "s27".asInstanceOf[s27]
   
   @js.native
   sealed trait s28
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s28: s28 = "s28".asInstanceOf[s28]
   
   @js.native
   sealed trait s29
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s29: s29 = "s29".asInstanceOf[s29]
   
   @js.native
   sealed trait s3
     extends StObject
        with Arm64Register
+       with ArmRegister
        with MipsRegister
   inline def s3: s3 = "s3".asInstanceOf[s3]
   
@@ -1907,18 +2029,21 @@ object fridaGumStrings {
   sealed trait s30
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s30: s30 = "s30".asInstanceOf[s30]
   
   @js.native
   sealed trait s31
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s31: s31 = "s31".asInstanceOf[s31]
   
   @js.native
   sealed trait s4
     extends StObject
        with Arm64Register
+       with ArmRegister
        with MipsRegister
   inline def s4: s4 = "s4".asInstanceOf[s4]
   
@@ -1926,6 +2051,7 @@ object fridaGumStrings {
   sealed trait s5
     extends StObject
        with Arm64Register
+       with ArmRegister
        with MipsRegister
   inline def s5: s5 = "s5".asInstanceOf[s5]
   
@@ -1933,6 +2059,7 @@ object fridaGumStrings {
   sealed trait s6
     extends StObject
        with Arm64Register
+       with ArmRegister
        with MipsRegister
   inline def s6: s6 = "s6".asInstanceOf[s6]
   
@@ -1940,6 +2067,7 @@ object fridaGumStrings {
   sealed trait s7
     extends StObject
        with Arm64Register
+       with ArmRegister
        with MipsRegister
   inline def s7: s7 = "s7".asInstanceOf[s7]
   
@@ -1947,6 +2075,7 @@ object fridaGumStrings {
   sealed trait s8
     extends StObject
        with Arm64Register
+       with ArmRegister
        with MipsRegister
   inline def s8: s8 = "s8".asInstanceOf[s8]
   
@@ -1954,6 +2083,7 @@ object fridaGumStrings {
   sealed trait s9
     extends StObject
        with Arm64Register
+       with ArmRegister
   inline def s9: s9 = "s9".asInstanceOf[s9]
   
   @js.native
@@ -1973,6 +2103,30 @@ object fridaGumStrings {
     extends StObject
        with ArmOperandType
   inline def setend: setend = "setend".asInstanceOf[setend]
+  
+  @js.native
+  sealed trait sha1
+    extends StObject
+       with ChecksumType
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  
+  @js.native
+  sealed trait sha256
+    extends StObject
+       with ChecksumType
+  inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  
+  @js.native
+  sealed trait sha384
+    extends StObject
+       with ChecksumType
+  inline def sha384: sha384 = "sha384".asInstanceOf[sha384]
+  
+  @js.native
+  sealed trait sha512
+    extends StObject
+       with ChecksumType
+  inline def sha512: sha512 = "sha512".asInstanceOf[sha512]
   
   @js.native
   sealed trait `signed-offset`
@@ -2282,6 +2436,12 @@ object fridaGumStrings {
        with Arm64ConditionCode
        with ArmConditionCode
   inline def vs: vs = "vs".asInstanceOf[vs]
+  
+  @js.native
+  sealed trait w
+    extends StObject
+       with OperandAccess
+  inline def w: w = "w".asInstanceOf[w]
   
   @js.native
   sealed trait w0

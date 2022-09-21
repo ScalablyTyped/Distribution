@@ -5,8 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.estree.mod.Node because Already inherited */ trait AssignmentProperty
+trait AssignmentProperty
   extends StObject
      with Property {
   
@@ -18,7 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object AssignmentProperty {
   
-  inline def apply(computed: Boolean, key: Expression, method: Boolean, shorthand: Boolean, value: Pattern): AssignmentProperty = {
+  inline def apply(
+    computed: Boolean,
+    key: Expression | PrivateIdentifier,
+    method: Boolean,
+    shorthand: Boolean,
+    value: Pattern
+  ): AssignmentProperty = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = "init", method = method.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Property")
     __obj.asInstanceOf[AssignmentProperty]

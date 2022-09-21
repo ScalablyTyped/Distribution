@@ -1,137 +1,137 @@
 package typings.babylonWalk
 
-import typings.babelTypes.ts36Mod.AnyTypeAnnotation_
-import typings.babelTypes.ts36Mod.ArrayExpression_
-import typings.babelTypes.ts36Mod.ArrayPattern_
-import typings.babelTypes.ts36Mod.ArrayTypeAnnotation_
-import typings.babelTypes.ts36Mod.ArrowFunctionExpression_
-import typings.babelTypes.ts36Mod.AssignmentExpression_
-import typings.babelTypes.ts36Mod.AssignmentPattern_
-import typings.babelTypes.ts36Mod.AwaitExpression_
-import typings.babelTypes.ts36Mod.BinaryExpression_
-import typings.babelTypes.ts36Mod.BindExpression_
-import typings.babelTypes.ts36Mod.BlockStatement_
-import typings.babelTypes.ts36Mod.BooleanLiteralTypeAnnotation_
-import typings.babelTypes.ts36Mod.BooleanLiteral_
-import typings.babelTypes.ts36Mod.BooleanTypeAnnotation_
-import typings.babelTypes.ts36Mod.BreakStatement_
-import typings.babelTypes.ts36Mod.CallExpression_
-import typings.babelTypes.ts36Mod.CatchClause_
-import typings.babelTypes.ts36Mod.ClassBody_
-import typings.babelTypes.ts36Mod.ClassDeclaration_
-import typings.babelTypes.ts36Mod.ClassExpression_
-import typings.babelTypes.ts36Mod.ClassImplements_
-import typings.babelTypes.ts36Mod.ClassMethod_
-import typings.babelTypes.ts36Mod.ClassProperty_
-import typings.babelTypes.ts36Mod.ConditionalExpression_
-import typings.babelTypes.ts36Mod.ContinueStatement_
-import typings.babelTypes.ts36Mod.DebuggerStatement_
-import typings.babelTypes.ts36Mod.DeclareClass_
-import typings.babelTypes.ts36Mod.DeclareFunction_
-import typings.babelTypes.ts36Mod.DeclareInterface_
-import typings.babelTypes.ts36Mod.DeclareModule_
-import typings.babelTypes.ts36Mod.DeclareTypeAlias_
-import typings.babelTypes.ts36Mod.DeclareVariable_
-import typings.babelTypes.ts36Mod.Decorator_
-import typings.babelTypes.ts36Mod.DirectiveLiteral_
-import typings.babelTypes.ts36Mod.Directive_
-import typings.babelTypes.ts36Mod.DoExpression_
-import typings.babelTypes.ts36Mod.DoWhileStatement_
-import typings.babelTypes.ts36Mod.EmptyStatement_
-import typings.babelTypes.ts36Mod.ExportAllDeclaration_
-import typings.babelTypes.ts36Mod.ExportDefaultDeclaration_
-import typings.babelTypes.ts36Mod.ExportDefaultSpecifier_
-import typings.babelTypes.ts36Mod.ExportNamedDeclaration_
-import typings.babelTypes.ts36Mod.ExportNamespaceSpecifier_
-import typings.babelTypes.ts36Mod.ExportSpecifier_
-import typings.babelTypes.ts36Mod.ExpressionStatement_
-import typings.babelTypes.ts36Mod.File_
-import typings.babelTypes.ts36Mod.ForInStatement_
-import typings.babelTypes.ts36Mod.ForOfStatement_
-import typings.babelTypes.ts36Mod.ForStatement_
-import typings.babelTypes.ts36Mod.FunctionDeclaration_
-import typings.babelTypes.ts36Mod.FunctionExpression_
-import typings.babelTypes.ts36Mod.FunctionTypeAnnotation_
-import typings.babelTypes.ts36Mod.FunctionTypeParam_
-import typings.babelTypes.ts36Mod.GenericTypeAnnotation_
-import typings.babelTypes.ts36Mod.Identifier_
-import typings.babelTypes.ts36Mod.IfStatement_
-import typings.babelTypes.ts36Mod.ImportDeclaration_
-import typings.babelTypes.ts36Mod.ImportDefaultSpecifier_
-import typings.babelTypes.ts36Mod.ImportNamespaceSpecifier_
-import typings.babelTypes.ts36Mod.ImportSpecifier_
-import typings.babelTypes.ts36Mod.InterfaceDeclaration_
-import typings.babelTypes.ts36Mod.InterfaceExtends_
-import typings.babelTypes.ts36Mod.IntersectionTypeAnnotation_
-import typings.babelTypes.ts36Mod.JSXAttribute_
-import typings.babelTypes.ts36Mod.JSXClosingElement_
-import typings.babelTypes.ts36Mod.JSXElement_
-import typings.babelTypes.ts36Mod.JSXEmptyExpression_
-import typings.babelTypes.ts36Mod.JSXExpressionContainer_
-import typings.babelTypes.ts36Mod.JSXIdentifier_
-import typings.babelTypes.ts36Mod.JSXMemberExpression_
-import typings.babelTypes.ts36Mod.JSXNamespacedName_
-import typings.babelTypes.ts36Mod.JSXOpeningElement_
-import typings.babelTypes.ts36Mod.JSXSpreadAttribute_
-import typings.babelTypes.ts36Mod.JSXText_
-import typings.babelTypes.ts36Mod.LabeledStatement_
-import typings.babelTypes.ts36Mod.LogicalExpression_
-import typings.babelTypes.ts36Mod.MemberExpression_
-import typings.babelTypes.ts36Mod.MetaProperty_
-import typings.babelTypes.ts36Mod.MixedTypeAnnotation_
-import typings.babelTypes.ts36Mod.NewExpression_
-import typings.babelTypes.ts36Mod.Node
-import typings.babelTypes.ts36Mod.Noop_
-import typings.babelTypes.ts36Mod.NullLiteralTypeAnnotation_
-import typings.babelTypes.ts36Mod.NullLiteral_
-import typings.babelTypes.ts36Mod.NullableTypeAnnotation_
-import typings.babelTypes.ts36Mod.NumberTypeAnnotation_
-import typings.babelTypes.ts36Mod.NumericLiteral_
-import typings.babelTypes.ts36Mod.ObjectExpression_
-import typings.babelTypes.ts36Mod.ObjectMethod_
-import typings.babelTypes.ts36Mod.ObjectPattern_
-import typings.babelTypes.ts36Mod.ObjectProperty_
-import typings.babelTypes.ts36Mod.ObjectTypeAnnotation_
-import typings.babelTypes.ts36Mod.ObjectTypeCallProperty_
-import typings.babelTypes.ts36Mod.ObjectTypeIndexer_
-import typings.babelTypes.ts36Mod.ObjectTypeProperty_
-import typings.babelTypes.ts36Mod.ParenthesizedExpression_
-import typings.babelTypes.ts36Mod.Program_
-import typings.babelTypes.ts36Mod.QualifiedTypeIdentifier_
-import typings.babelTypes.ts36Mod.RegExpLiteral_
-import typings.babelTypes.ts36Mod.RestElement_
-import typings.babelTypes.ts36Mod.ReturnStatement_
-import typings.babelTypes.ts36Mod.SequenceExpression_
-import typings.babelTypes.ts36Mod.SpreadElement_
-import typings.babelTypes.ts36Mod.StringLiteralTypeAnnotation_
-import typings.babelTypes.ts36Mod.StringLiteral_
-import typings.babelTypes.ts36Mod.StringTypeAnnotation_
-import typings.babelTypes.ts36Mod.Super
-import typings.babelTypes.ts36Mod.SwitchCase_
-import typings.babelTypes.ts36Mod.SwitchStatement_
-import typings.babelTypes.ts36Mod.TaggedTemplateExpression_
-import typings.babelTypes.ts36Mod.TemplateElement_
-import typings.babelTypes.ts36Mod.TemplateLiteral_
-import typings.babelTypes.ts36Mod.ThisExpression_
-import typings.babelTypes.ts36Mod.ThisTypeAnnotation_
-import typings.babelTypes.ts36Mod.ThrowStatement_
-import typings.babelTypes.ts36Mod.TryStatement_
-import typings.babelTypes.ts36Mod.TupleTypeAnnotation_
-import typings.babelTypes.ts36Mod.TypeAlias_
-import typings.babelTypes.ts36Mod.TypeAnnotation_
-import typings.babelTypes.ts36Mod.TypeCastExpression_
-import typings.babelTypes.ts36Mod.TypeParameterDeclaration_
-import typings.babelTypes.ts36Mod.TypeParameterInstantiation_
-import typings.babelTypes.ts36Mod.TypeofTypeAnnotation_
-import typings.babelTypes.ts36Mod.UnaryExpression_
-import typings.babelTypes.ts36Mod.UnionTypeAnnotation_
-import typings.babelTypes.ts36Mod.UpdateExpression_
-import typings.babelTypes.ts36Mod.VariableDeclaration_
-import typings.babelTypes.ts36Mod.VariableDeclarator_
-import typings.babelTypes.ts36Mod.VoidTypeAnnotation_
-import typings.babelTypes.ts36Mod.WhileStatement_
-import typings.babelTypes.ts36Mod.WithStatement_
-import typings.babelTypes.ts36Mod.YieldExpression_
+import typings.babelTypes.mod.AnyTypeAnnotation_
+import typings.babelTypes.mod.ArrayExpression_
+import typings.babelTypes.mod.ArrayPattern_
+import typings.babelTypes.mod.ArrayTypeAnnotation_
+import typings.babelTypes.mod.ArrowFunctionExpression_
+import typings.babelTypes.mod.AssignmentExpression_
+import typings.babelTypes.mod.AssignmentPattern_
+import typings.babelTypes.mod.AwaitExpression_
+import typings.babelTypes.mod.BinaryExpression_
+import typings.babelTypes.mod.BindExpression_
+import typings.babelTypes.mod.BlockStatement_
+import typings.babelTypes.mod.BooleanLiteralTypeAnnotation_
+import typings.babelTypes.mod.BooleanLiteral_
+import typings.babelTypes.mod.BooleanTypeAnnotation_
+import typings.babelTypes.mod.BreakStatement_
+import typings.babelTypes.mod.CallExpression_
+import typings.babelTypes.mod.CatchClause_
+import typings.babelTypes.mod.ClassBody_
+import typings.babelTypes.mod.ClassDeclaration_
+import typings.babelTypes.mod.ClassExpression_
+import typings.babelTypes.mod.ClassImplements_
+import typings.babelTypes.mod.ClassMethod_
+import typings.babelTypes.mod.ClassProperty_
+import typings.babelTypes.mod.ConditionalExpression_
+import typings.babelTypes.mod.ContinueStatement_
+import typings.babelTypes.mod.DebuggerStatement_
+import typings.babelTypes.mod.DeclareClass_
+import typings.babelTypes.mod.DeclareFunction_
+import typings.babelTypes.mod.DeclareInterface_
+import typings.babelTypes.mod.DeclareModule_
+import typings.babelTypes.mod.DeclareTypeAlias_
+import typings.babelTypes.mod.DeclareVariable_
+import typings.babelTypes.mod.Decorator_
+import typings.babelTypes.mod.DirectiveLiteral_
+import typings.babelTypes.mod.Directive_
+import typings.babelTypes.mod.DoExpression_
+import typings.babelTypes.mod.DoWhileStatement_
+import typings.babelTypes.mod.EmptyStatement_
+import typings.babelTypes.mod.ExportAllDeclaration_
+import typings.babelTypes.mod.ExportDefaultDeclaration_
+import typings.babelTypes.mod.ExportDefaultSpecifier_
+import typings.babelTypes.mod.ExportNamedDeclaration_
+import typings.babelTypes.mod.ExportNamespaceSpecifier_
+import typings.babelTypes.mod.ExportSpecifier_
+import typings.babelTypes.mod.ExpressionStatement_
+import typings.babelTypes.mod.File_
+import typings.babelTypes.mod.ForInStatement_
+import typings.babelTypes.mod.ForOfStatement_
+import typings.babelTypes.mod.ForStatement_
+import typings.babelTypes.mod.FunctionDeclaration_
+import typings.babelTypes.mod.FunctionExpression_
+import typings.babelTypes.mod.FunctionTypeAnnotation_
+import typings.babelTypes.mod.FunctionTypeParam_
+import typings.babelTypes.mod.GenericTypeAnnotation_
+import typings.babelTypes.mod.Identifier_
+import typings.babelTypes.mod.IfStatement_
+import typings.babelTypes.mod.ImportDeclaration_
+import typings.babelTypes.mod.ImportDefaultSpecifier_
+import typings.babelTypes.mod.ImportNamespaceSpecifier_
+import typings.babelTypes.mod.ImportSpecifier_
+import typings.babelTypes.mod.InterfaceDeclaration_
+import typings.babelTypes.mod.InterfaceExtends_
+import typings.babelTypes.mod.IntersectionTypeAnnotation_
+import typings.babelTypes.mod.JSXAttribute_
+import typings.babelTypes.mod.JSXClosingElement_
+import typings.babelTypes.mod.JSXElement_
+import typings.babelTypes.mod.JSXEmptyExpression_
+import typings.babelTypes.mod.JSXExpressionContainer_
+import typings.babelTypes.mod.JSXIdentifier_
+import typings.babelTypes.mod.JSXMemberExpression_
+import typings.babelTypes.mod.JSXNamespacedName_
+import typings.babelTypes.mod.JSXOpeningElement_
+import typings.babelTypes.mod.JSXSpreadAttribute_
+import typings.babelTypes.mod.JSXText_
+import typings.babelTypes.mod.LabeledStatement_
+import typings.babelTypes.mod.LogicalExpression_
+import typings.babelTypes.mod.MemberExpression_
+import typings.babelTypes.mod.MetaProperty_
+import typings.babelTypes.mod.MixedTypeAnnotation_
+import typings.babelTypes.mod.NewExpression_
+import typings.babelTypes.mod.Node
+import typings.babelTypes.mod.Noop_
+import typings.babelTypes.mod.NullLiteralTypeAnnotation_
+import typings.babelTypes.mod.NullLiteral_
+import typings.babelTypes.mod.NullableTypeAnnotation_
+import typings.babelTypes.mod.NumberTypeAnnotation_
+import typings.babelTypes.mod.NumericLiteral_
+import typings.babelTypes.mod.ObjectExpression_
+import typings.babelTypes.mod.ObjectMethod_
+import typings.babelTypes.mod.ObjectPattern_
+import typings.babelTypes.mod.ObjectProperty_
+import typings.babelTypes.mod.ObjectTypeAnnotation_
+import typings.babelTypes.mod.ObjectTypeCallProperty_
+import typings.babelTypes.mod.ObjectTypeIndexer_
+import typings.babelTypes.mod.ObjectTypeProperty_
+import typings.babelTypes.mod.ParenthesizedExpression_
+import typings.babelTypes.mod.Program_
+import typings.babelTypes.mod.QualifiedTypeIdentifier_
+import typings.babelTypes.mod.RegExpLiteral_
+import typings.babelTypes.mod.RestElement_
+import typings.babelTypes.mod.ReturnStatement_
+import typings.babelTypes.mod.SequenceExpression_
+import typings.babelTypes.mod.SpreadElement_
+import typings.babelTypes.mod.StringLiteralTypeAnnotation_
+import typings.babelTypes.mod.StringLiteral_
+import typings.babelTypes.mod.StringTypeAnnotation_
+import typings.babelTypes.mod.Super
+import typings.babelTypes.mod.SwitchCase_
+import typings.babelTypes.mod.SwitchStatement_
+import typings.babelTypes.mod.TaggedTemplateExpression_
+import typings.babelTypes.mod.TemplateElement_
+import typings.babelTypes.mod.TemplateLiteral_
+import typings.babelTypes.mod.ThisExpression_
+import typings.babelTypes.mod.ThisTypeAnnotation_
+import typings.babelTypes.mod.ThrowStatement_
+import typings.babelTypes.mod.TryStatement_
+import typings.babelTypes.mod.TupleTypeAnnotation_
+import typings.babelTypes.mod.TypeAlias_
+import typings.babelTypes.mod.TypeAnnotation_
+import typings.babelTypes.mod.TypeCastExpression_
+import typings.babelTypes.mod.TypeParameterDeclaration_
+import typings.babelTypes.mod.TypeParameterInstantiation_
+import typings.babelTypes.mod.TypeofTypeAnnotation_
+import typings.babelTypes.mod.UnaryExpression_
+import typings.babelTypes.mod.UnionTypeAnnotation_
+import typings.babelTypes.mod.UpdateExpression_
+import typings.babelTypes.mod.VariableDeclaration_
+import typings.babelTypes.mod.VariableDeclarator_
+import typings.babelTypes.mod.VoidTypeAnnotation_
+import typings.babelTypes.mod.WhileStatement_
+import typings.babelTypes.mod.WithStatement_
+import typings.babelTypes.mod.YieldExpression_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -142,28 +142,28 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ancestor(node: NodeTypes, visitors: visitors[AncestorVisitor], state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ancestor(node: NodeTypes, visitors: visitors[AncestorVisitor], state: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def recursive(node: NodeTypes, visitors: visitors[RecursiveVisitor], state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def recursive(node: NodeTypes, visitors: visitors[RecursiveVisitor], state: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def simple(node: NodeTypes, visitors: visitors[SimpleVisitor], state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simple")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def simple(node: NodeTypes, visitors: visitors[SimpleVisitor], state: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simple")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type AncestorStatelessVisitor = js.Function3[/* node */ NodeTypes, /* state */ js.Any, /* ancestors */ js.Array[Node], Unit]
+  type AncestorStatelessVisitor = js.Function3[/* node */ NodeTypes, /* state */ Any, /* ancestors */ js.Array[Node], Unit]
   
-  type AncestorVisitor = js.Function3[/* node */ NodeTypes, /* state */ js.Any, /* ancestors */ js.Array[Node], Unit]
+  type AncestorVisitor = js.Function3[/* node */ NodeTypes, /* state */ Any, /* ancestors */ js.Array[Node], Unit]
   
   type NodeTypes = coreTypes | es2015Types | flowTypes | jsxTypes | miscTypes
   
   type RecursiveVisitor = js.Function3[
     /* node */ NodeTypes, 
-    /* state */ js.Any, 
+    /* state */ Any, 
     /* next */ js.Function1[/* node */ Node, Unit], 
     Unit
   ]
   
-  type SimpleVisitor = js.Function2[/* node */ NodeTypes, /* state */ js.Any, Unit]
+  type SimpleVisitor = js.Function2[/* node */ NodeTypes, /* state */ Any, Unit]
   
-  type Visitor = js.Function2[/* commentBlock */ NodeTypes, /* state */ js.Any, Unit]
+  type Visitor = js.Function2[/* commentBlock */ NodeTypes, /* state */ Any, Unit]
   
   type coreTypes = ArrayExpression_ | AssignmentExpression_ | BinaryExpression_ | Directive_ | DirectiveLiteral_ | BlockStatement_ | BreakStatement_ | CallExpression_ | CatchClause_ | ConditionalExpression_ | ContinueStatement_ | DebuggerStatement_ | DoWhileStatement_ | EmptyStatement_ | ExpressionStatement_ | File_ | ForInStatement_ | ForStatement_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | IfStatement_ | LabeledStatement_ | StringLiteral_ | NumericLiteral_ | NullLiteral_ | BooleanLiteral_ | RegExpLiteral_ | LogicalExpression_ | MemberExpression_ | NewExpression_ | Program_ | ObjectExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | ReturnStatement_ | SequenceExpression_ | SwitchCase_ | SwitchStatement_ | ThisExpression_ | ThrowStatement_ | TryStatement_ | UnaryExpression_ | UpdateExpression_ | VariableDeclaration_ | VariableDeclarator_ | WhileStatement_ | WithStatement_
   

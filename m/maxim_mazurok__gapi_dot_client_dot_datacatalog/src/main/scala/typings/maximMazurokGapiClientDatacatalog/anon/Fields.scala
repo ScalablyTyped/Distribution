@@ -19,7 +19,7 @@ trait Fields extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Required. The id of the entry to create. */
+  /** Required. The ID of the entry to create. The ID must contain only letters (a-z, A-Z), numbers (0-9), and underscores (_). The maximum size is 64 bytes when encoded in UTF-8. */
   var entryId: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
@@ -31,10 +31,7 @@ trait Fields extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. The name of the entry group this entry is in. Example: * projects/{project_id}/locations/{location}/entryGroups/{entry_group_id} Note that this Entry and its child
-    * resources may not actually be stored in the location in this name.
-    */
+  /** Required. The name of the entry group this entry belongs to. Note: The entry itself and its child resources might not be stored in the location specified in its name. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

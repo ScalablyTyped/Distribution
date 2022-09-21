@@ -10,7 +10,7 @@ trait IgGridUpdatingColumnSetting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Identifies the grid column by key.
@@ -22,13 +22,13 @@ trait IgGridUpdatingColumnSetting
     * Specifies the default value for the column when adding new rows. When in edit mode for adding a row the value will be pre-filled in the column's editor (if the column is not read-only). The value should be of the type specified for the column in the grid's [columns](ui.iggrid#options:columns) collection.
     *
     */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies options to initialize the corresponding editor with.
     *
     */
-  var editorOptions: js.UndefOr[js.Any] = js.undefined
+  var editorOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies а custom editor provider instance. More information about editor providers can be found [here](http://www.igniteui.com/help/implementing-custom-editor-provider) and [here](http://www.igniteui.com/help/working-with-combo-editor-provider).
@@ -50,7 +50,7 @@ trait IgGridUpdatingColumnSetting
     * });
     *
     */
-  var editorProvider: js.UndefOr[js.Any] = js.undefined
+  var editorProvider: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies the type of editor to use for the column.
@@ -102,15 +102,15 @@ object IgGridUpdatingColumnSetting {
     
     inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setEditorOptions(value: js.Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
+    inline def setEditorOptions(value: Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
     
     inline def setEditorOptionsUndefined: Self = StObject.set(x, "editorOptions", js.undefined)
     
-    inline def setEditorProvider(value: js.Any): Self = StObject.set(x, "editorProvider", value.asInstanceOf[js.Any])
+    inline def setEditorProvider(value: Any): Self = StObject.set(x, "editorProvider", value.asInstanceOf[js.Any])
     
     inline def setEditorProviderUndefined: Self = StObject.set(x, "editorProvider", js.undefined)
     

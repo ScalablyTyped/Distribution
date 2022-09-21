@@ -22,7 +22,7 @@ trait AwsJobAbortCriteria extends StObject {
   var minNumberOfExecutedThings: AwsJobAbortCriteriaMinimumNumberOfExecutedThings
   
   /**
-    * The minimum percentage of job execution failures that must occur to initiate the job abort. AWS IoT supports up to two digits after the decimal (for example, 10.9 and 10.99, but not 10.999).
+    * The minimum percentage of job execution failures that must occur to initiate the job abort. Amazon Web Services IoT Core supports up to two digits after the decimal (for example, 10.9 and 10.99, but not 10.999).
     */
   var thresholdPercentage: AwsJobAbortCriteriaAbortThresholdPercentage
 }

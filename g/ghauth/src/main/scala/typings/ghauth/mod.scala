@@ -1,13 +1,15 @@
 package typings.ghauth
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(authOptions: AuthOptions, callback: js.Function2[/* err */ Error, /* tokenData */ TokenData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(authOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
+    authOptions: AuthOptions,
+    callback: js.Function2[/* err */ js.Error, /* tokenData */ TokenData, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(authOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("ghauth", JSImport.Namespace)
   @js.native
@@ -78,7 +80,7 @@ object mod {
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       

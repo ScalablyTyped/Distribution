@@ -10,15 +10,12 @@ it's a column filter addon for react-bootstrap-table2
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-table2-filter |
 | Keywords           | react, bootstrap, table, grid, react-bootstrap-table-addons, react-component |
-| # releases         | 14 |
-| # dependents       | 15 |
-| # downloads        | 892576 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 92378.33333333333 |
+| # stars            | 1202.0 |
 
 ## Links
-- [Homepage](https://github.com/react-bootstrap-table/react-bootstrap-table2#readme)
-- [Bugs](https://github.com/react-bootstrap-table/react-bootstrap-table2/issues)
-- [Repository](https://github.com/react-bootstrap-table/react-bootstrap-table2)
 - [Npm](https://www.npmjs.com/package/react-bootstrap-table2-filter)
     
 

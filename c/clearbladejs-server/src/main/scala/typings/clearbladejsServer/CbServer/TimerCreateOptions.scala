@@ -1,6 +1,5 @@
 package typings.clearbladejsServer.CbServer
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait TimerCreateOptions extends StObject {
   
   var service_name: js.UndefOr[String] = js.undefined
   
-  var start_time: js.UndefOr[Date] = js.undefined
+  var start_time: js.UndefOr[js.Date] = js.undefined
   
   var user_id: js.UndefOr[String] = js.undefined
   
@@ -46,7 +45,7 @@ object TimerCreateOptions {
     
     inline def setService_nameUndefined: Self = StObject.set(x, "service_name", js.undefined)
     
-    inline def setStart_time(value: Date): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+    inline def setStart_time(value: js.Date): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     inline def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
     

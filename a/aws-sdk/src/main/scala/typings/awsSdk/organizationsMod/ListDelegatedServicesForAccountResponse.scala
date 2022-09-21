@@ -29,7 +29,7 @@ object ListDelegatedServicesForAccountResponse {
     
     inline def setDelegatedServicesUndefined: Self = StObject.set(x, "DelegatedServices", js.undefined)
     
-    inline def setDelegatedServicesVarargs(value: DelegatedService*): Self = StObject.set(x, "DelegatedServices", js.Array(value :_*))
+    inline def setDelegatedServicesVarargs(value: DelegatedService*): Self = StObject.set(x, "DelegatedServices", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

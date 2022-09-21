@@ -16,7 +16,7 @@ object testRepositoryTriggersCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/TestRepositoryTriggersCommand", "TestRepositoryTriggersCommand")
   @js.native
-  class TestRepositoryTriggersCommand protected ()
+  open class TestRepositoryTriggersCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object testRepositoryTriggersCommandMod {
     override val middlewareStack: MiddlewareStack[TestRepositoryTriggersInput, TestRepositoryTriggersOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: CodeCommitResolvedConfiguration
     ): Handler[TestRepositoryTriggersInput, TestRepositoryTriggersOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CodeCommitResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[TestRepositoryTriggersInput, TestRepositoryTriggersOutput] = js.native
   }
 }

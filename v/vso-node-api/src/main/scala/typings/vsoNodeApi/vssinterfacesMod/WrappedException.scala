@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WrappedException extends StObject {
   
-  var customProperties: StringDictionary[js.Any]
+  var customProperties: StringDictionary[Any]
   
   var errorCode: Double
   
@@ -28,7 +28,7 @@ trait WrappedException extends StObject {
 object WrappedException {
   
   inline def apply(
-    customProperties: StringDictionary[js.Any],
+    customProperties: StringDictionary[Any],
     errorCode: Double,
     eventId: Double,
     helpLink: String,
@@ -44,7 +44,7 @@ object WrappedException {
   
   extension [Self <: WrappedException](x: Self) {
     
-    inline def setCustomProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
+    inline def setCustomProperties(value: StringDictionary[Any]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

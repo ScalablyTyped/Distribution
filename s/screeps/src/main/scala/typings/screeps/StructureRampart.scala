@@ -12,7 +12,7 @@ trait StructureRampart
   extends StObject
      with OwnedStructure[STRUCTURE_RAMPART]
      with AnyOwnedStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * If false (default), only your creeps can step on the same square. If true, any hostile creeps can pass through.

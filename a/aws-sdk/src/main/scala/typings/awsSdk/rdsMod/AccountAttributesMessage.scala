@@ -24,6 +24,6 @@ object AccountAttributesMessage {
     
     inline def setAccountQuotasUndefined: Self = StObject.set(x, "AccountQuotas", js.undefined)
     
-    inline def setAccountQuotasVarargs(value: AccountQuota*): Self = StObject.set(x, "AccountQuotas", js.Array(value :_*))
+    inline def setAccountQuotasVarargs(value: AccountQuota*): Self = StObject.set(x, "AccountQuotas", js.Array(value*))
   }
 }

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientHealthcare.anon
 
-import typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.Hl7V2Store
+import typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.DicomStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait OauthtokenPrettyPrint extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Resource name of the HL7v2 store, of the form `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7v2_store_id}`. */
+  /** Resource name of the DICOM store, of the form `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait OauthtokenPrettyPrint extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Hl7V2Store
+  var resource: DicomStore
   
   /** The update mask applies to the resource. For the `FieldMask` definition, see https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask */
   var updateMask: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait OauthtokenPrettyPrint extends StObject {
 }
 object OauthtokenPrettyPrint {
   
-  inline def apply(name: String, resource: Hl7V2Store): OauthtokenPrettyPrint = {
+  inline def apply(name: String, resource: DicomStore): OauthtokenPrettyPrint = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenPrettyPrint]
   }
@@ -97,7 +97,7 @@ object OauthtokenPrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Hl7V2Store): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: DicomStore): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

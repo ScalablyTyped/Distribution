@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "SPHSystem")
 @js.native
-class SPHSystem ()
+open class SPHSystem ()
   extends StObject
      with typings.cannon.CANNON.SPHSystem {
   

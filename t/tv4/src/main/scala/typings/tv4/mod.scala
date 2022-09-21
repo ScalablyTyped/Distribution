@@ -2,7 +2,6 @@ package typings.tv4
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object mod extends Shortcut {
       
       inline def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       
-      inline def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
+      inline def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value*))
       
       inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
@@ -46,39 +45,39 @@ object mod extends Shortcut {
     extends StObject
        with ValidationError {
     
-    var params: js.Any
+    var params: Any
     
     var stack: String
   }
   object ErrorVar {
     
-    inline def apply(code: Double, message: js.Any, params: js.Any, stack: String): ErrorVar = {
+    inline def apply(code: Double, message: Any, params: Any, stack: String): ErrorVar = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorVar]
     }
     
     extension [Self <: ErrorVar](x: Self) {
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
   }
   
-  type FormatValidationFunction = js.Function2[/* data */ js.Any, /* schema */ JsonSchema, String]
+  type FormatValidationFunction = js.Function2[/* data */ Any, /* schema */ JsonSchema, Null | String]
   
   trait JsonSchema
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     @JSName("$schema")
     var $schema: js.UndefOr[String] = js.undefined
     
     var additionalProperties: js.UndefOr[Boolean] = js.undefined
     
-    var definitions: js.UndefOr[js.Any] = js.undefined
+    var definitions: js.UndefOr[Any] = js.undefined
     
     // used for humans only, and not used for computation
     var description: js.UndefOr[String] = js.undefined
@@ -86,11 +85,11 @@ object mod extends Shortcut {
     // used for humans only, and not used for computation
     var id: js.UndefOr[String] = js.undefined
     
-    var items: js.UndefOr[js.Any] = js.undefined
+    var items: js.UndefOr[Any] = js.undefined
     
-    var patternProperties: js.UndefOr[js.Any] = js.undefined
+    var patternProperties: js.UndefOr[Any] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
     var required: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -115,11 +114,11 @@ object mod extends Shortcut {
       
       inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setDefinitions(value: js.Any): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+      inline def setDefinitions(value: Any): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
       
       inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
       
@@ -131,15 +130,15 @@ object mod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setPatternProperties(value: js.Any): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
+      inline def setPatternProperties(value: Any): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
       
       inline def setPatternPropertiesUndefined: Self = StObject.set(x, "patternProperties", js.undefined)
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
@@ -147,7 +146,7 @@ object mod extends Shortcut {
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -157,16 +156,16 @@ object mod extends Shortcut {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   
   type KeywordValidationFunction = js.Function4[
-    /* data */ js.Any, 
-    /* value */ js.Any, 
+    /* data */ Any, 
+    /* value */ Any, 
     /* schema */ JsonSchema, 
     /* dataPointerPath */ String, 
-    String | ValidationError
+    Null | String | ValidationError
   ]
   
   trait MultiResult
@@ -186,7 +185,7 @@ object mod extends Shortcut {
       
       inline def setErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
   
@@ -236,21 +235,21 @@ object mod extends Shortcut {
     def freshApi(): TV4 = js.native
     
     def getMissingUris(): js.Array[String] = js.native
-    def getMissingUris(filter: RegExp): js.Array[String] = js.native
+    def getMissingUris(filter: js.RegExp): js.Array[String] = js.native
     
     def getSchema(uri: String): JsonSchema = js.native
     
     def getSchemaMap(): SchemaMap = js.native
     
     def getSchemaUris(): js.Array[String] = js.native
-    def getSchemaUris(filter: RegExp): js.Array[String] = js.native
+    def getSchemaUris(filter: js.RegExp): js.Array[String] = js.native
     
     def language(code: String): Unit = js.native
     
     var missing: js.Array[String] = js.native
     
     // not documented
-    def normSchema(schema: JsonSchema, baseUri: String): js.Any = js.native
+    def normSchema(schema: JsonSchema, baseUri: String): Any = js.native
     
     def reset(): Unit = js.native
     
@@ -258,31 +257,31 @@ object mod extends Shortcut {
     
     def setErrorReporter(lang: String): Unit = js.native
     def setErrorReporter(
-      reporter: js.Function3[/* error */ ValidationError, /* data */ js.Any, /* schema */ JsonSchema, String]
+      reporter: js.Function3[/* error */ ValidationError, /* data */ Any, /* schema */ JsonSchema, String]
     ): Unit = js.native
     
     // primary API
-    def validate(data: js.Any, schema: JsonSchema): Boolean = js.native
+    def validate(data: Any, schema: JsonSchema): Boolean = js.native
     // from including: tv4.async-jquery.js
-    def validate(data: js.Any, schema: JsonSchema, callback: AsyncValidationCallback): Unit = js.native
-    def validate(data: js.Any, schema: JsonSchema, callback: AsyncValidationCallback, checkRecursive: Boolean): Unit = js.native
+    def validate(data: Any, schema: JsonSchema, callback: AsyncValidationCallback): Unit = js.native
+    def validate(data: Any, schema: JsonSchema, callback: AsyncValidationCallback, checkRecursive: Boolean): Unit = js.native
     def validate(
-      data: js.Any,
+      data: Any,
       schema: JsonSchema,
       callback: AsyncValidationCallback,
       checkRecursive: Boolean,
       banUnknownProperties: Boolean
     ): Unit = js.native
-    def validate(data: js.Any, schema: JsonSchema, checkRecursive: Boolean): Boolean = js.native
-    def validate(data: js.Any, schema: JsonSchema, checkRecursive: Boolean, banUnknownProperties: Boolean): Boolean = js.native
+    def validate(data: Any, schema: JsonSchema, checkRecursive: Boolean): Boolean = js.native
+    def validate(data: Any, schema: JsonSchema, checkRecursive: Boolean, banUnknownProperties: Boolean): Boolean = js.native
     
-    def validateMultiple(data: js.Any, schema: JsonSchema): MultiResult = js.native
-    def validateMultiple(data: js.Any, schema: JsonSchema, checkRecursive: Boolean): MultiResult = js.native
-    def validateMultiple(data: js.Any, schema: JsonSchema, checkRecursive: Boolean, banUnknownProperties: Boolean): MultiResult = js.native
+    def validateMultiple(data: Any, schema: JsonSchema): MultiResult = js.native
+    def validateMultiple(data: Any, schema: JsonSchema, checkRecursive: Boolean): MultiResult = js.native
+    def validateMultiple(data: Any, schema: JsonSchema, checkRecursive: Boolean, banUnknownProperties: Boolean): MultiResult = js.native
     
-    def validateResult(data: js.Any, schema: JsonSchema): SingleResult = js.native
-    def validateResult(data: js.Any, schema: JsonSchema, checkRecursive: Boolean): SingleResult = js.native
-    def validateResult(data: js.Any, schema: JsonSchema, checkRecursive: Boolean, banUnknownProperties: Boolean): SingleResult = js.native
+    def validateResult(data: Any, schema: JsonSchema): SingleResult = js.native
+    def validateResult(data: Any, schema: JsonSchema, checkRecursive: Boolean): SingleResult = js.native
+    def validateResult(data: Any, schema: JsonSchema, checkRecursive: Boolean, banUnknownProperties: Boolean): SingleResult = js.native
   }
   
   trait ValidationError extends StObject {
@@ -291,7 +290,7 @@ object mod extends Shortcut {
     
     var dataPath: js.UndefOr[String] = js.undefined
     
-    var message: js.Any
+    var message: Any
     
     var schemaPath: js.UndefOr[String] = js.undefined
     
@@ -299,7 +298,7 @@ object mod extends Shortcut {
   }
   object ValidationError {
     
-    inline def apply(code: Double, message: js.Any): ValidationError = {
+    inline def apply(code: Double, message: Any): ValidationError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationError]
     }
@@ -312,7 +311,7 @@ object mod extends Shortcut {
       
       inline def setDataPathUndefined: Self = StObject.set(x, "dataPath", js.undefined)
       
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
       
@@ -322,7 +321,7 @@ object mod extends Shortcut {
       
       inline def setSubErrorsUndefined: Self = StObject.set(x, "subErrors", js.undefined)
       
-      inline def setSubErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "subErrors", js.Array(value :_*))
+      inline def setSubErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "subErrors", js.Array(value*))
     }
   }
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.ApplicationDataContainerSettings")
 @js.native
-class ApplicationDataContainerSettings ()
+open class ApplicationDataContainerSettings ()
   extends StObject
      with typings.winrt.Windows.Storage.ApplicationDataContainerSettings {
   
@@ -17,22 +17,22 @@ class ApplicationDataContainerSettings ()
   override def clear(): Unit = js.native
   
   /* CompleteClass */
-  override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
+  override def first(): IIterator[IKeyValuePair[String, Any]] = js.native
   
   /* CompleteClass */
-  override def getView(): IMapView[String, js.Any] = js.native
+  override def getView(): IMapView[String, Any] = js.native
   
   /* CompleteClass */
   override def hasKey(key: String): Boolean = js.native
   
   /* CompleteClass */
-  override def insert(key: String, value: js.Any): Boolean = js.native
+  override def insert(key: String, value: Any): Boolean = js.native
   
   /* CompleteClass */
-  override def lookup(key: String): js.Any = js.native
+  override def lookup(key: String): Any = js.native
   
   /* CompleteClass */
-  var onmapchanged: js.Any = js.native
+  var onmapchanged: Any = js.native
   
   /* CompleteClass */
   override def remove(key: String): Unit = js.native

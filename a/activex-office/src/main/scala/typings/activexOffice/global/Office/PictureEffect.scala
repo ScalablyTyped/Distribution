@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PictureEffect")
 @js.native
-/* private */ class PictureEffect ()
+/* private */ open class PictureEffect ()
   extends StObject
      with typings.activexOffice.Office.PictureEffect {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native

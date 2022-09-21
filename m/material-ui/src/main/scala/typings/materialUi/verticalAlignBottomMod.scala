@@ -10,10 +10,10 @@ object verticalAlignBottomMod {
   
   @JSImport("material-ui/svg-icons/editor/vertical-align-bottom", JSImport.Default)
   @js.native
-  class default () extends EditorVerticalAlignBottom
+  open class default () extends EditorVerticalAlignBottom
   
   @JSImport("material-ui/svg-icons/editor/vertical-align-bottom", "EditorVerticalAlignBottom")
   @js.native
-  class EditorVerticalAlignBottom ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorVerticalAlignBottom ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

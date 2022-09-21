@@ -10,10 +10,10 @@ Simplifies communications with Workbox packages running in the service worker
 | ------------------ | :-------------: |
 | Full name          | workbox-window |
 | Keywords           | workbox, workboxjs, service worker, sw, window, message, postMessage |
-| # releases         | 29 |
-| # dependents       | 16 |
-| # downloads        | 102210441 |
-| # stars            | 0 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6786058333333332E7 |
+| # stars            | 10909.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/workbox)

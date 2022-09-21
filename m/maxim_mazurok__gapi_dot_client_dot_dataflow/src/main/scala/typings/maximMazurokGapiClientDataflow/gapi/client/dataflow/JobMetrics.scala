@@ -29,6 +29,6 @@ object JobMetrics {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: MetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value*))
   }
 }

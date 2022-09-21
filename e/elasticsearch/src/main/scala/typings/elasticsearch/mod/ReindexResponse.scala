@@ -9,7 +9,7 @@ trait ReindexResponse
   extends StObject
      with ReindexResponseBase {
   
-  var failures: js.Array[js.Any]
+  var failures: js.Array[Any]
   
   var slices: js.UndefOr[js.Array[ReindexOrByQueryResponseSlice]] = js.undefined
   
@@ -22,7 +22,7 @@ object ReindexResponse {
   inline def apply(
     batches: Double,
     deleted: Double,
-    failures: js.Array[js.Any],
+    failures: js.Array[Any],
     noops: Double,
     requests_per_second: Double,
     retries: Bulk,
@@ -40,15 +40,15 @@ object ReindexResponse {
   
   extension [Self <: ReindexResponse](x: Self) {
     
-    inline def setFailures(value: js.Array[js.Any]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: js.Array[Any]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    inline def setFailuresVarargs(value: js.Any*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Any*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setSlices(value: js.Array[ReindexOrByQueryResponseSlice]): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
     
     inline def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
     
-    inline def setSlicesVarargs(value: ReindexOrByQueryResponseSlice*): Self = StObject.set(x, "slices", js.Array(value :_*))
+    inline def setSlicesVarargs(value: ReindexOrByQueryResponseSlice*): Self = StObject.set(x, "slices", js.Array(value*))
     
     inline def setTimed_out(value: Boolean): Self = StObject.set(x, "timed_out", value.asInstanceOf[js.Any])
     

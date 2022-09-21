@@ -25,33 +25,23 @@ trait CanvasRenderingContext2D extends StObject {
   
   def closePath(): Unit
   
-  def createImageData(a1: js.Any, a2: js.Any): ICanvasImageData
+  def createImageData(a1: Any, a2: Any): ICanvasImageData
   
   def createLinearGradient(x0: Double, y0: Double, x1: Double, y1: Double): ICanvasGradient
   
-  def createPattern(Image: js.Any, repetition: js.Any): ICanvasPattern
+  def createPattern(Image: Any, repetition: Any): ICanvasPattern
   
   def createRadialGradient(x0: Double, y0: Double, r0: Double, x1: Double, y1: Double, r1: Double): ICanvasGradient
   
-  def drawImage(
-    pSrc: js.Any,
-    a1: js.Any,
-    a2: js.Any,
-    a3: js.Any,
-    a4: js.Any,
-    a5: js.Any,
-    a6: js.Any,
-    a7: js.Any,
-    a8: js.Any
-  ): Unit
+  def drawImage(pSrc: Any, a1: Any, a2: Any, a3: Any, a4: Any, a5: Any, a6: Any, a7: Any, a8: Any): Unit
   
   def fill(): Unit
   
   def fillRect(x: Double, y: Double, w: Double, h: Double): Unit
   
-  var fillStyle: js.Any
+  var fillStyle: Any
   
-  def fillText(text: String, x: Double, y: Double, maxWidth: js.Any): Unit
+  def fillText(text: String, x: Double, y: Double, maxWidth: Any): Unit
   
   var font: String
   
@@ -81,10 +71,10 @@ trait CanvasRenderingContext2D extends StObject {
     imagedata: ICanvasImageData,
     dx: Double,
     dy: Double,
-    dirtyX: js.Any,
-    dirtyY: js.Any,
-    dirtyWidth: js.Any,
-    dirtyHeight: js.Any
+    dirtyX: Any,
+    dirtyY: Any,
+    dirtyWidth: Any,
+    dirtyHeight: Any
   ): Unit
   
   def quadraticCurveTo(cpx: Double, cpy: Double, x: Double, y: Double): Unit
@@ -113,9 +103,9 @@ trait CanvasRenderingContext2D extends StObject {
   
   def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit
   
-  var strokeStyle: js.Any
+  var strokeStyle: Any
   
-  def strokeText(text: String, x: Double, y: Double, maxWidth: js.Any): Unit
+  def strokeText(text: String, x: Double, y: Double, maxWidth: Any): Unit
   
   var textAlign: String
   
@@ -137,15 +127,15 @@ object CanvasRenderingContext2D {
     clearRect: (Double, Double, Double, Double) => Unit,
     clip: () => Unit,
     closePath: () => Unit,
-    createImageData: (js.Any, js.Any) => ICanvasImageData,
+    createImageData: (Any, Any) => ICanvasImageData,
     createLinearGradient: (Double, Double, Double, Double) => ICanvasGradient,
-    createPattern: (js.Any, js.Any) => ICanvasPattern,
+    createPattern: (Any, Any) => ICanvasPattern,
     createRadialGradient: (Double, Double, Double, Double, Double, Double) => ICanvasGradient,
-    drawImage: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => Unit,
+    drawImage: (Any, Any, Any, Any, Any, Any, Any, Any, Any) => Unit,
     fill: () => Unit,
     fillRect: (Double, Double, Double, Double) => Unit,
-    fillStyle: js.Any,
-    fillText: (String, Double, Double, js.Any) => Unit,
+    fillStyle: Any,
+    fillText: (String, Double, Double, Any) => Unit,
     font: String,
     getImageData: (Double, Double, Double, Double) => ICanvasImageData,
     globalAlpha: Double,
@@ -158,7 +148,7 @@ object CanvasRenderingContext2D {
     measureText: String => ICanvasTextMetrics,
     miterLimit: Double,
     moveTo: (Double, Double) => Unit,
-    putImageData: (ICanvasImageData, Double, Double, js.Any, js.Any, js.Any, js.Any) => Unit,
+    putImageData: (ICanvasImageData, Double, Double, Any, Any, Any, Any) => Unit,
     quadraticCurveTo: (Double, Double, Double, Double) => Unit,
     rect: (Double, Double, Double, Double) => Unit,
     restore: () => Unit,
@@ -172,8 +162,8 @@ object CanvasRenderingContext2D {
     shadowOffsetY: Double,
     stroke: () => Unit,
     strokeRect: (Double, Double, Double, Double) => Unit,
-    strokeStyle: js.Any,
-    strokeText: (String, Double, Double, js.Any) => Unit,
+    strokeStyle: Any,
+    strokeText: (String, Double, Double, Any) => Unit,
     textAlign: String,
     textBaseline: String,
     transform: (Double, Double, Double, Double, Double, Double) => Unit,
@@ -202,23 +192,23 @@ object CanvasRenderingContext2D {
     
     inline def setClosePath(value: () => Unit): Self = StObject.set(x, "closePath", js.Any.fromFunction0(value))
     
-    inline def setCreateImageData(value: (js.Any, js.Any) => ICanvasImageData): Self = StObject.set(x, "createImageData", js.Any.fromFunction2(value))
+    inline def setCreateImageData(value: (Any, Any) => ICanvasImageData): Self = StObject.set(x, "createImageData", js.Any.fromFunction2(value))
     
     inline def setCreateLinearGradient(value: (Double, Double, Double, Double) => ICanvasGradient): Self = StObject.set(x, "createLinearGradient", js.Any.fromFunction4(value))
     
-    inline def setCreatePattern(value: (js.Any, js.Any) => ICanvasPattern): Self = StObject.set(x, "createPattern", js.Any.fromFunction2(value))
+    inline def setCreatePattern(value: (Any, Any) => ICanvasPattern): Self = StObject.set(x, "createPattern", js.Any.fromFunction2(value))
     
     inline def setCreateRadialGradient(value: (Double, Double, Double, Double, Double, Double) => ICanvasGradient): Self = StObject.set(x, "createRadialGradient", js.Any.fromFunction6(value))
     
-    inline def setDrawImage(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "drawImage", js.Any.fromFunction9(value))
+    inline def setDrawImage(value: (Any, Any, Any, Any, Any, Any, Any, Any, Any) => Unit): Self = StObject.set(x, "drawImage", js.Any.fromFunction9(value))
     
     inline def setFill(value: () => Unit): Self = StObject.set(x, "fill", js.Any.fromFunction0(value))
     
     inline def setFillRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "fillRect", js.Any.fromFunction4(value))
     
-    inline def setFillStyle(value: js.Any): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+    inline def setFillStyle(value: Any): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     
-    inline def setFillText(value: (String, Double, Double, js.Any) => Unit): Self = StObject.set(x, "fillText", js.Any.fromFunction4(value))
+    inline def setFillText(value: (String, Double, Double, Any) => Unit): Self = StObject.set(x, "fillText", js.Any.fromFunction4(value))
     
     inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
@@ -246,7 +236,7 @@ object CanvasRenderingContext2D {
     
     inline def setMoveTo(value: (Double, Double) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
     
-    inline def setPutImageData(value: (ICanvasImageData, Double, Double, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "putImageData", js.Any.fromFunction7(value))
+    inline def setPutImageData(value: (ICanvasImageData, Double, Double, Any, Any, Any, Any) => Unit): Self = StObject.set(x, "putImageData", js.Any.fromFunction7(value))
     
     inline def setQuadraticCurveTo(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "quadraticCurveTo", js.Any.fromFunction4(value))
     
@@ -274,9 +264,9 @@ object CanvasRenderingContext2D {
     
     inline def setStrokeRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "strokeRect", js.Any.fromFunction4(value))
     
-    inline def setStrokeStyle(value: js.Any): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+    inline def setStrokeStyle(value: Any): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
-    inline def setStrokeText(value: (String, Double, Double, js.Any) => Unit): Self = StObject.set(x, "strokeText", js.Any.fromFunction4(value))
+    inline def setStrokeText(value: (String, Double, Double, Any) => Unit): Self = StObject.set(x, "strokeText", js.Any.fromFunction4(value))
     
     inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     

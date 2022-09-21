@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "load-yaml-file" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "load-yaml-file" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

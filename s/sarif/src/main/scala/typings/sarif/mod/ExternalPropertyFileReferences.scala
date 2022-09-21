@@ -105,13 +105,13 @@ object ExternalPropertyFileReferences {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setArtifacts(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
-    inline def setArtifactsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "artifacts", js.Array(value*))
     
     inline def setConversion(value: ExternalPropertyFileReference): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
@@ -125,7 +125,7 @@ object ExternalPropertyFileReferences {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setExternalizedProperties(value: ExternalPropertyFileReference): Self = StObject.set(x, "externalizedProperties", value.asInstanceOf[js.Any])
     
@@ -135,25 +135,25 @@ object ExternalPropertyFileReferences {
     
     inline def setGraphsUndefined: Self = StObject.set(x, "graphs", js.undefined)
     
-    inline def setGraphsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "graphs", js.Array(value :_*))
+    inline def setGraphsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "graphs", js.Array(value*))
     
     inline def setInvocations(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
     
     inline def setInvocationsUndefined: Self = StObject.set(x, "invocations", js.undefined)
     
-    inline def setInvocationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "invocations", js.Array(value :_*))
+    inline def setInvocationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "invocations", js.Array(value*))
     
     inline def setLogicalLocations(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "logicalLocations", value.asInstanceOf[js.Any])
     
     inline def setLogicalLocationsUndefined: Self = StObject.set(x, "logicalLocations", js.undefined)
     
-    inline def setLogicalLocationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "logicalLocations", js.Array(value :_*))
+    inline def setLogicalLocationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "logicalLocations", js.Array(value*))
     
     inline def setPolicies(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "policies", js.Array(value*))
     
     inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
@@ -163,36 +163,36 @@ object ExternalPropertyFileReferences {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setTaxonomies(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
     
     inline def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
     
-    inline def setTaxonomiesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
+    inline def setTaxonomiesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "taxonomies", js.Array(value*))
     
     inline def setThreadFlowLocations(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "threadFlowLocations", value.asInstanceOf[js.Any])
     
     inline def setThreadFlowLocationsUndefined: Self = StObject.set(x, "threadFlowLocations", js.undefined)
     
-    inline def setThreadFlowLocationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "threadFlowLocations", js.Array(value :_*))
+    inline def setThreadFlowLocationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "threadFlowLocations", js.Array(value*))
     
     inline def setTranslations(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
-    inline def setTranslationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "translations", js.Array(value :_*))
+    inline def setTranslationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "translations", js.Array(value*))
     
     inline def setWebRequests(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "webRequests", value.asInstanceOf[js.Any])
     
     inline def setWebRequestsUndefined: Self = StObject.set(x, "webRequests", js.undefined)
     
-    inline def setWebRequestsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "webRequests", js.Array(value :_*))
+    inline def setWebRequestsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "webRequests", js.Array(value*))
     
     inline def setWebResponses(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "webResponses", value.asInstanceOf[js.Any])
     
     inline def setWebResponsesUndefined: Self = StObject.set(x, "webResponses", js.undefined)
     
-    inline def setWebResponsesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "webResponses", js.Array(value :_*))
+    inline def setWebResponsesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "webResponses", js.Array(value*))
   }
 }

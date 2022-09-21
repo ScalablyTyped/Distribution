@@ -4,17 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A PageElement kind representing a generic shape that does not have a more
-  * specific classification.
-  */
 trait SchemaShape extends StObject {
   
   /**
-    * Placeholders are shapes that are inherit from corresponding placeholders
-    * on layouts and masters.  If set, the shape is a placeholder shape and any
-    * inherited properties can be resolved by looking at the parent placeholder
-    * identified by the Placeholder.parent_object_id field.
+    * Placeholders are page elements that inherit from corresponding placeholders on layouts and masters. If set, the shape is a placeholder shape and any inherited properties can be resolved by looking at the parent placeholder identified by the Placeholder.parent_object_id field.
     */
   var placeholder: js.UndefOr[SchemaPlaceholder] = js.undefined
   
@@ -26,7 +19,7 @@ trait SchemaShape extends StObject {
   /**
     * The type of the shape.
     */
-  var shapeType: js.UndefOr[String] = js.undefined
+  var shapeType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The text content of the shape.
@@ -51,6 +44,8 @@ object SchemaShape {
     inline def setShapePropertiesUndefined: Self = StObject.set(x, "shapeProperties", js.undefined)
     
     inline def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
+    
+    inline def setShapeTypeNull: Self = StObject.set(x, "shapeType", null)
     
     inline def setShapeTypeUndefined: Self = StObject.set(x, "shapeType", js.undefined)
     

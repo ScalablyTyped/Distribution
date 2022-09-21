@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "Period")
 @js.native
-/* private */ class Period () extends TemporalAmount {
+/* private */ open class Period () extends TemporalAmount {
   
   def chronology(): IsoChronology = js.native
   
   def days(): Double = js.native
-  
-  def equals(obj: js.Any): Boolean = js.native
   
   def isNegative(): Boolean = js.native
   

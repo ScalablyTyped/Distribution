@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRControllerPointerSelection")
 @js.native
-class WebXRControllerPointerSelection protected ()
+open class WebXRControllerPointerSelection protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRControllerPointerSelection {
   /**
@@ -38,7 +38,7 @@ object WebXRControllerPointerSelection {
     */
   @JSGlobal("BABYLON.WebXRControllerPointerSelection.Name")
   @js.native
-  val Name: String = js.native
+  val Name: /* "xr-controller-pointer-selection" */ String = js.native
   
   /**
     * The (Babylon) version of this module.
@@ -47,10 +47,10 @@ object WebXRControllerPointerSelection {
     */
   @JSGlobal("BABYLON.WebXRControllerPointerSelection.Version")
   @js.native
-  val Version: Double = js.native
+  val Version: /* 1 */ Double = js.native
   
-  @JSGlobal("BABYLON.WebXRControllerPointerSelection._idCounter")
+  @JSGlobal("BABYLON.WebXRControllerPointerSelection._IdCounter")
   @js.native
-  def _idCounter: js.Any = js.native
-  inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+  def _IdCounter: Any = js.native
+  inline def _IdCounter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IdCounter")(x.asInstanceOf[js.Any])
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Upload")
 @js.native
-class Upload protected ()
+open class Upload protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Upload {
   def this(element: Element) = this()

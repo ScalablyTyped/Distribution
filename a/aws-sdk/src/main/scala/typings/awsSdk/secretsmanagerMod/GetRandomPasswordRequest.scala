@@ -7,42 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetRandomPasswordRequest extends StObject {
   
   /**
-    * A string that includes characters that should not be included in the generated password. The default is that all characters from the included sets can be used.
+    * A string of the characters that you don't want in the password.
     */
   var ExcludeCharacters: js.UndefOr[ExcludeCharactersType] = js.undefined
   
   /**
-    * Specifies that the generated password should not include lowercase letters. The default if you do not include this switch parameter is that lowercase letters can be included.
+    * Specifies whether to exclude lowercase letters from the password. If you don't include this switch, the password can contain lowercase letters.
     */
   var ExcludeLowercase: js.UndefOr[ExcludeLowercaseType] = js.undefined
   
   /**
-    * Specifies that the generated password should not include digits. The default if you do not include this switch parameter is that digits can be included.
+    * Specifies whether to exclude numbers from the password. If you don't include this switch, the password can contain numbers.
     */
   var ExcludeNumbers: js.UndefOr[ExcludeNumbersType] = js.undefined
   
   /**
-    * Specifies that the generated password should not include punctuation characters. The default if you do not include this switch parameter is that punctuation characters can be included. The following are the punctuation characters that can be included in the generated password if you don't explicitly exclude them with ExcludeCharacters or ExcludePunctuation:  ! " # $ % &amp; ' ( ) * + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ ` { | } ~ 
+    * Specifies whether to exclude the following punctuation characters from the password: ! " # $ % &amp; ' ( ) * + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ ` { | } ~. If you don't include this switch, the password can contain punctuation.
     */
   var ExcludePunctuation: js.UndefOr[ExcludePunctuationType] = js.undefined
   
   /**
-    * Specifies that the generated password should not include uppercase letters. The default if you do not include this switch parameter is that uppercase letters can be included.
+    * Specifies whether to exclude uppercase letters from the password. If you don't include this switch, the password can contain uppercase letters.
     */
   var ExcludeUppercase: js.UndefOr[ExcludeUppercaseType] = js.undefined
   
   /**
-    * Specifies that the generated password can include the space character. The default if you do not include this switch parameter is that the space character is not included.
+    * Specifies whether to include the space character. If you include this switch, the password can contain space characters.
     */
   var IncludeSpace: js.UndefOr[IncludeSpaceType] = js.undefined
   
   /**
-    * The desired length of the generated password. The default value if you do not include this parameter is 32 characters.
+    * The length of the password. If you don't include this parameter, the default length is 32 characters.
     */
   var PasswordLength: js.UndefOr[PasswordLengthType] = js.undefined
   
   /**
-    * A boolean value that specifies whether the generated password must include at least one of every allowed character type. The default value is True and the operation requires at least one of every character type.
+    * Specifies whether to include at least one upper and lowercase letter, one number, and one punctuation. If you don't include this switch, the password contains at least one of every character type.
     */
   var RequireEachIncludedType: js.UndefOr[RequireEachIncludedTypeType] = js.undefined
 }

@@ -10,21 +10,21 @@ object eventStackMod {
   
   @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventStack", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with EventStack
   
   @js.native
   trait EventStack extends StObject {
     
-    /* private */ var getTarget: js.Any = js.native
+    /* private */ var getTarget: Any = js.native
     
-    /* private */ var removeTarget: js.Any = js.native
+    /* private */ var removeTarget: Any = js.native
     
     def sub(eventName: String, eventHandlers: InputEventListener): Unit = js.native
     def sub(eventName: String, eventHandlers: InputEventListener, options: Options): Unit = js.native
     
-    /* private */ val targets: js.Any = js.native
+    /* private */ val targets: Any = js.native
     
     def unsub(eventName: String, eventHandlers: InputEventListener): Unit = js.native
     def unsub(eventName: String, eventHandlers: InputEventListener, options: Options): Unit = js.native

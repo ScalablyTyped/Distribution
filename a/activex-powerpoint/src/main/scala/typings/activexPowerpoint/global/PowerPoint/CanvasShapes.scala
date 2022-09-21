@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.CanvasShapes")
 @js.native
-/* private */ class CanvasShapes ()
+/* private */ open class CanvasShapes ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.CanvasShapes

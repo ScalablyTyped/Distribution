@@ -6,26 +6,69 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Between extends StObject {
   
+  /**
+    * The &apos;between&apos; operation&apos;s description.
+    */
   var between: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;contains&apos; operation&apos;s description.
+    */
   var contains: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;endswith&apos; operation&apos;s description.
+    */
   var endsWith: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;=&apos; operation&apos;s description.
+    */
   var equal: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;&gt;&apos; operation&apos;s description.
+    */
   var greaterThan: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;&gt;=&apos; operation&apos;s description.
+    */
   var greaterThanOrEqual: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;isblank&apos; operation&apos;s description.
+    */
+  var isBlank: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The &apos;isnotblank&apos; operation&apos;s description.
+    */
+  var isNotBlank: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The &apos;&lt;&apos; operation&apos;s description.
+    */
   var lessThan: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;&lt;=&apos; operation&apos;s description.
+    */
   var lessThanOrEqual: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;notcontains&apos; operation&apos;s description.
+    */
   var notContains: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;&lt;&gt;&apos; operation&apos;s description.
+    */
   var notEqual: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;startswith&apos; operation&apos;s description.
+    */
   var startsWith: js.UndefOr[String] = js.undefined
 }
 object Between {
@@ -60,6 +103,14 @@ object Between {
     inline def setGreaterThanOrEqualUndefined: Self = StObject.set(x, "greaterThanOrEqual", js.undefined)
     
     inline def setGreaterThanUndefined: Self = StObject.set(x, "greaterThan", js.undefined)
+    
+    inline def setIsBlank(value: String): Self = StObject.set(x, "isBlank", value.asInstanceOf[js.Any])
+    
+    inline def setIsBlankUndefined: Self = StObject.set(x, "isBlank", js.undefined)
+    
+    inline def setIsNotBlank(value: String): Self = StObject.set(x, "isNotBlank", value.asInstanceOf[js.Any])
+    
+    inline def setIsNotBlankUndefined: Self = StObject.set(x, "isNotBlank", js.undefined)
     
     inline def setLessThan(value: String): Self = StObject.set(x, "lessThan", value.asInstanceOf[js.Any])
     

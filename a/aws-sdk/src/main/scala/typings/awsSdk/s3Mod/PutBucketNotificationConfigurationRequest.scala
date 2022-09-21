@@ -12,11 +12,16 @@ trait PutBucketNotificationConfigurationRequest extends StObject {
   var Bucket: BucketName
   
   /**
-    * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
+    * The account ID of the expected bucket owner. If the bucket is owned by a different account, the request fails with the HTTP status code 403 Forbidden (access denied).
     */
   var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   var NotificationConfiguration: typings.awsSdk.s3Mod.NotificationConfiguration
+  
+  /**
+    * Skips validation of Amazon SQS, Amazon SNS, and Lambda destinations. True or false value.
+    */
+  var SkipDestinationValidation: js.UndefOr[SkipValidation] = js.undefined
 }
 object PutBucketNotificationConfigurationRequest {
   
@@ -34,5 +39,9 @@ object PutBucketNotificationConfigurationRequest {
     inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setSkipDestinationValidation(value: SkipValidation): Self = StObject.set(x, "SkipDestinationValidation", value.asInstanceOf[js.Any])
+    
+    inline def setSkipDestinationValidationUndefined: Self = StObject.set(x, "SkipDestinationValidation", js.undefined)
   }
 }

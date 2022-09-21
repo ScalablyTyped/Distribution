@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gherkin/dist/src/Parser", JSImport.Default)
 @js.native
-class default protected ()
+open class default protected ()
   extends StObject
      with Parser {
   def this(builder: typings.gherkin.astBuilderMod.default) = this()

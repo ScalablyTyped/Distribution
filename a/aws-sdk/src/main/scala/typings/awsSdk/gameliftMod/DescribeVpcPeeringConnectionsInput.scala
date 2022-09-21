@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeVpcPeeringConnectionsInput extends StObject {
   
   /**
-    * A unique identifier for a fleet. You can use either the fleet ID or ARN value.
+    * A unique identifier for the fleet. You can use either the fleet ID or ARN value.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
 }

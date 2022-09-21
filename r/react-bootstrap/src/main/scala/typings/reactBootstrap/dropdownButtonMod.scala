@@ -1,12 +1,9 @@
 package typings.reactBootstrap
 
 import typings.react.mod.Component
-import typings.react.mod.HTMLProps
 import typings.react.mod.ReactNode
 import typings.reactBootstrap.dropdownMod.DropdownBaseProps
-import typings.reactBootstrap.mod.Omit
 import typings.reactBootstrap.mod.Sizes
-import typings.reactBootstrap.reactBootstrapStrings.title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +12,10 @@ object dropdownButtonMod {
   
   @JSImport("react-bootstrap/lib/DropdownButton", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[DropdownButtonProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[DropdownButtonProps, js.Object, Any]
   
-  @js.native
-  trait DropdownButton
-    extends Component[DropdownButtonProps, js.Object, js.Any]
+  type DropdownButton = Component[DropdownButtonProps, js.Object, Any]
   
   trait DropdownButtonBaseProps
     extends StObject
@@ -75,5 +70,15 @@ object dropdownButtonMod {
     }
   }
   
-  type DropdownButtonProps = DropdownButtonBaseProps & (Omit[HTMLProps[DropdownButton], title])
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/DropdownButton.DropdownButton> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/DropdownButton.DropdownButton>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/DropdownButton.DropdownButton>[P]} */ trait DropdownButtonProps
+    extends StObject
+       with DropdownButtonBaseProps
+  object DropdownButtonProps {
+    
+    inline def apply(id: String): DropdownButtonProps = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DropdownButtonProps]
+    }
+  }
 }

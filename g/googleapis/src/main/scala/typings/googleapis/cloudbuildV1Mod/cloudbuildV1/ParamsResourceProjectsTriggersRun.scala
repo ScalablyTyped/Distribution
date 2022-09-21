@@ -1,9 +1,5 @@
 package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +9,12 @@ trait ParamsResourceProjectsTriggersRun
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * The name of the `Trigger` to run. Format: `projects/{project\}/locations/{location\}/triggers/{trigger\}`
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   
   /**
-    * ID of the project.
+    * Required. ID of the project.
     */
   var projectId: js.UndefOr[String] = js.undefined
   
@@ -28,7 +24,7 @@ trait ParamsResourceProjectsTriggersRun
   var requestBody: js.UndefOr[SchemaRepoSource] = js.undefined
   
   /**
-    * ID of the trigger.
+    * Required. ID of the trigger.
     */
   var triggerId: js.UndefOr[String] = js.undefined
 }
@@ -41,9 +37,9 @@ object ParamsResourceProjectsTriggersRun {
   
   extension [Self <: ParamsResourceProjectsTriggersRun](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

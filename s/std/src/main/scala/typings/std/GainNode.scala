@@ -10,5 +10,6 @@ trait GainNode
   extends StObject
      with AudioNode {
   
+  /* standard dom */
   val gain: AudioParam = js.native
 }

@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sharedb", JSImport.Namespace)
 @js.native
-class ^ ()
-  extends StObject
-     with sharedb {
+open class ^ () extends sharedb {
   def this(options: Db) = this()
 }
 @JSImport("sharedb", JSImport.Namespace)

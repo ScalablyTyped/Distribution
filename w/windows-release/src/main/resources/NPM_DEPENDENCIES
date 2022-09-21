@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "windows-release" : "3.3.3"
+      "windows-release" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "windows-release" : "3.3.3"
+      "windows-release" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

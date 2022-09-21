@@ -11,96 +11,95 @@ trait IDBRequest[T]
   extends StObject
      with EventTarget {
   
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: typings.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any]
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: typings.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: typings.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_success(`type`: success, listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_success(`type`: success, listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_success(
     `type`: success,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_success(
     `type`: success,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /**
-    * When a request is completed, returns the error (a DOMException), or null if the request succeeded. Throws a "InvalidStateError" DOMException if the request is still pending.
-    */
+  /** When a request is completed, returns the error (a DOMException), or null if the request succeeded. Throws a "InvalidStateError" DOMException if the request is still pending. */
+  /* standard dom */
   val error: DOMException | Null = js.native
   
-  var onerror: (js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onerror: (js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]) | Null = js.native
   
-  var onsuccess: (js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onsuccess: (js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]) | Null = js.native
   
-  /**
-    * Returns "pending" until a request is complete, then returns "done".
-    */
+  /** Returns "pending" until a request is complete, then returns "done". */
+  /* standard dom */
   val readyState: IDBRequestReadyState = js.native
   
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: typings.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any]
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: typings.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: typings.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_success(`type`: success, listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_success(`type`: success, listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_success(
     `type`: success,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_success(
     `type`: success,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   
-  /**
-    * When a request is completed, returns the result, or undefined if the request failed. Throws a "InvalidStateError" DOMException if the request is still pending.
-    */
+  /** When a request is completed, returns the result, or undefined if the request failed. Throws a "InvalidStateError" DOMException if the request is still pending. */
+  /* standard dom */
   val result: T = js.native
   
-  /**
-    * Returns the IDBObjectStore, IDBIndex, or IDBCursor the request was made against, or null if is was an open request.
-    */
+  /** Returns the IDBObjectStore, IDBIndex, or IDBCursor the request was made against, or null if is was an open request. */
+  /* standard dom */
   val source: IDBObjectStore | IDBIndex | IDBCursor = js.native
   
-  /**
-    * Returns the IDBTransaction the request was made within. If this as an open request, then it returns an upgrade transaction while it is running, or null otherwise.
-    */
+  /** Returns the IDBTransaction the request was made within. If this as an open request, then it returns an upgrade transaction while it is running, or null otherwise. */
+  /* standard dom */
   val transaction: IDBTransaction | Null = js.native
 }

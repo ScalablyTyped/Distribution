@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-audio-player" : "0.17.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-audio-player" : "0.17.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

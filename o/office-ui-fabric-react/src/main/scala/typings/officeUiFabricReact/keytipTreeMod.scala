@@ -14,15 +14,15 @@ object keytipTreeMod {
   /**
     * KeytipTree constructor
     */
-  class KeytipTree () extends StObject {
+  open class KeytipTree () extends StObject {
     
-    /* private */ var _createNode: js.Any = js.native
+    /* private */ var _createNode: Any = js.native
     
-    /* private */ var _getFullSequence: js.Any = js.native
+    /* private */ var _getFullSequence: Any = js.native
     
-    /* private */ var _getNodeSequence: js.Any = js.native
+    /* private */ var _getNodeSequence: Any = js.native
     
-    /* private */ var _getParentID: js.Any = js.native
+    /* private */ var _getParentID: Any = js.native
     
     /**
       * Add a keytip node to this KeytipTree

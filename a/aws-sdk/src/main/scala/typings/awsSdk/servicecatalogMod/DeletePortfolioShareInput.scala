@@ -12,7 +12,7 @@ trait DeletePortfolioShareInput extends StObject {
   var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var AccountId: js.UndefOr[typings.awsSdk.servicecatalogMod.AccountId] = js.undefined
   

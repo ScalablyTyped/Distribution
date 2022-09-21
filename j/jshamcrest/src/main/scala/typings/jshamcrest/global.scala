@@ -14,7 +14,6 @@ import typings.jshamcrest.JsHamcrest.SelfDescribing
 import typings.jshamcrest.JsHamcrest.SimpleMatcher
 import typings.jshamcrest.anon.AttachAssertions
 import typings.jshamcrest.anon.Scope
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,17 +28,17 @@ object global {
     
     @JSGlobal("JsHamcrest.BetweenBuilder")
     @js.native
-    class BetweenBuilder ()
+    open class BetweenBuilder ()
       extends StObject
          with typings.jshamcrest.JsHamcrest.BetweenBuilder {
       
       /* CompleteClass */
-      override def and(end: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = js.native
+      override def and(end: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = js.native
     }
     
     @JSGlobal("JsHamcrest.CombinableMatcher")
     @js.native
-    class CombinableMatcher ()
+    open class CombinableMatcher ()
       extends StObject
          with typings.jshamcrest.JsHamcrest.CombinableMatcher {
       
@@ -50,7 +49,7 @@ object global {
         * @return {CombinableMatcher} Instance of JsHamcrest.CombinableMatcher
         */
       /* CompleteClass */
-      override def and(matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.CombinableMatcher = js.native
+      override def and(matcherOrValue: Any): typings.jshamcrest.JsHamcrest.CombinableMatcher = js.native
       
       /* CompleteClass */
       override def describeTo(description: typings.jshamcrest.JsHamcrest.Description): Unit = js.native
@@ -59,13 +58,13 @@ object global {
       var describeTo_Original: DescribeTo = js.native
       
       /* CompleteClass */
-      override def describeValueTo(value: js.Any, description: typings.jshamcrest.JsHamcrest.Description): Unit = js.native
+      override def describeValueTo(value: Any, description: typings.jshamcrest.JsHamcrest.Description): Unit = js.native
       /* CompleteClass */
       @JSName("describeValueTo")
       var describeValueTo_Original: DescribeValueTo = js.native
       
       /* CompleteClass */
-      override def matches(value: js.Any): Boolean = js.native
+      override def matches(value: Any): Boolean = js.native
       /* CompleteClass */
       @JSName("matches")
       var matches_Original: Matches = js.native
@@ -77,12 +76,12 @@ object global {
         * @return {CombinableMatcher} Instance of JsHamcrest.CombinableMatcher
         */
       /* CompleteClass */
-      override def or(matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.CombinableMatcher = js.native
+      override def or(matcherOrValue: Any): typings.jshamcrest.JsHamcrest.CombinableMatcher = js.native
     }
     
     @JSGlobal("JsHamcrest.Description")
     @js.native
-    class Description ()
+    open class Description ()
       extends StObject
          with typings.jshamcrest.JsHamcrest.Description {
       
@@ -93,7 +92,7 @@ object global {
         * @return {Description} Itself for method chaining
         */
       /* CompleteClass */
-      override def append(text: js.Any): typings.jshamcrest.JsHamcrest.Description = js.native
+      override def append(text: Any): typings.jshamcrest.JsHamcrest.Description = js.native
       
       /**
         * Appends the description of a self describing object to this description.
@@ -114,7 +113,7 @@ object global {
         * @return {Description} Itself for method chaining
         */
       /* CompleteClass */
-      override def appendList(start: String, separator: String, end: String, list: js.Array[js.Any]): typings.jshamcrest.JsHamcrest.Description = js.native
+      override def appendList(start: String, separator: String, end: String, list: js.Array[Any]): typings.jshamcrest.JsHamcrest.Description = js.native
       
       /**
         * Appends a JavaScript language’s literal to this description.
@@ -123,7 +122,7 @@ object global {
         * @return {Description} Itself for method chaining
         */
       /* CompleteClass */
-      override def appendLiteral(literal: js.Any): typings.jshamcrest.JsHamcrest.Description = js.native
+      override def appendLiteral(literal: Any): typings.jshamcrest.JsHamcrest.Description = js.native
       
       /**
         * Appends an array of values to this description.
@@ -146,7 +145,7 @@ object global {
       override def get(): String = js.native
     }
     
-    inline def EqualTo(factory: js.Function1[/* matcher */ Matcher, Matcher]): js.Function1[/* matcherOrValue */ js.Any, Matcher] = ^.asInstanceOf[js.Dynamic].applyDynamic("EqualTo")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* matcherOrValue */ js.Any, Matcher]]
+    inline def EqualTo(factory: js.Function1[/* matcher */ Matcher, Matcher]): js.Function1[/* matcherOrValue */ Any, Matcher] = ^.asInstanceOf[js.Dynamic].applyDynamic("EqualTo")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* matcherOrValue */ Any, Matcher]]
     
     /**
       * Provides methods for exposing matchers and operators for several testing frameworks.
@@ -202,17 +201,17 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def allOf(matchersOrValues: js.Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("allOf")(matchersOrValues.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def allOf(matchersOrValues: Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("allOf")(matchersOrValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def anyOf(matchersOrValues: js.Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("anyOf")(matchersOrValues.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def anyOf(matchersOrValues: Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("anyOf")(matchersOrValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def anything(): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def between(start: js.Any): typings.jshamcrest.JsHamcrest.BetweenBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(start.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.BetweenBuilder]
+      inline def between(start: Any): typings.jshamcrest.JsHamcrest.BetweenBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(start.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.BetweenBuilder]
       
       inline def bool(): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")().asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def both(matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.CombinableMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("both")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.CombinableMatcher]
+      inline def both(matcherOrValue: Any): typings.jshamcrest.JsHamcrest.CombinableMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("both")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.CombinableMatcher]
       
       inline def closeTo(expected: Double): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("closeTo")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       inline def closeTo(expected: Double, delta: Double): typings.jshamcrest.JsHamcrest.SimpleMatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("closeTo")(expected.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
@@ -221,7 +220,7 @@ object global {
       
       inline def divisibleBy(divisor: Double): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("divisibleBy")(divisor.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def either(matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.CombinableMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("either")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.CombinableMatcher]
+      inline def either(matcherOrValue: Any): typings.jshamcrest.JsHamcrest.CombinableMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("either")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.CombinableMatcher]
       
       inline def emailAddress(): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("emailAddress")().asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
@@ -231,44 +230,44 @@ object global {
       
       inline def equalIgnoringCase(str: String): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("equalIgnoringCase")(str.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def equalTo(expected: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def equalTo(expected: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def even(): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("even")().asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def everyItem(matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("everyItem")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def everyItem(matcherOrValue: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("everyItem")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def func(): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("func")().asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def greaterThan(expected: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("greaterThan")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def greaterThan(expected: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("greaterThan")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def greaterThanOrEqualTo(expected: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("greaterThanOrEqualTo")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def greaterThanOrEqualTo(expected: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("greaterThanOrEqualTo")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def hasFunction(functionName: String): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("hasFunction")(functionName.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def hasItem(matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("hasItem")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def hasItem(matcherOrValue: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("hasItem")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def hasItems(matchersOrValues: js.Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("hasItems")(matchersOrValues.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def hasItems(matchersOrValues: Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("hasItems")(matchersOrValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def hasMember(memberName: String): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMember")(memberName.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
-      inline def hasMember(memberName: String, matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMember")(memberName.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def hasMember(memberName: String, matcherOrValue: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMember")(memberName.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def hasSize(matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSize")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def hasSize(matcherOrValue: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSize")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def instanceOf(clazz: Instantiable0[js.Any]): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceOf")(clazz.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def instanceOf(clazz: Instantiable0[Any]): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceOf")(clazz.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def is(matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def is(matcherOrValue: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def isIn(items: js.Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("isIn")(items.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def isIn(items: Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("isIn")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def lessThan(expected: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("lessThan")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def lessThan(expected: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("lessThan")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def lessThanOrEqualTo(expected: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("lessThanOrEqualTo")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def lessThanOrEqualTo(expected: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("lessThanOrEqualTo")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def matches(regex: RegExp): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("matches")(regex.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def matches(regex: js.RegExp): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("matches")(regex.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def nil(): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("nil")().asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def not(matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def not(matcherOrValue: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def notANumber(): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("notANumber")().asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
@@ -278,13 +277,13 @@ object global {
       
       inline def odd(): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("odd")().asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def oneOf(items: js.Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(items.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def oneOf(items: Any*): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def raises(exceptionName: String): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("raises")(exceptionName.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def raisesAnything(): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("raisesAnything")().asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
-      inline def sameAs(expected: js.Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("sameAs")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
+      inline def sameAs(expected: Any): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("sameAs")(expected.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
       inline def startsWith(str: String): typings.jshamcrest.JsHamcrest.SimpleMatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("startsWith")(str.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.SimpleMatcher]
       
@@ -306,19 +305,19 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def assert(actual: js.Any): typings.jshamcrest.JsHamcrest.Description = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
-      inline def assert(actual: js.Any, matcherOrValue: js.Any): typings.jshamcrest.JsHamcrest.Description = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
-      inline def assert(actual: js.Any, matcherOrValue: js.Any, options: AssertOptions): typings.jshamcrest.JsHamcrest.Description = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
-      inline def assert(actual: js.Any, matcherOrValue: Unit, options: AssertOptions): typings.jshamcrest.JsHamcrest.Description = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
+      inline def assert(actual: Any): typings.jshamcrest.JsHamcrest.Description = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any]).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
+      inline def assert(actual: Any, matcherOrValue: Any): typings.jshamcrest.JsHamcrest.Description = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
+      inline def assert(actual: Any, matcherOrValue: Any, options: AssertOptions): typings.jshamcrest.JsHamcrest.Description = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
+      inline def assert(actual: Any, matcherOrValue: Unit, options: AssertOptions): typings.jshamcrest.JsHamcrest.Description = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
       
-      inline def callTo(func: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("callTo")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+      inline def callTo(func: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function0[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("callTo")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Any]]
       
-      inline def filter(array: js.Array[js.Any], matcherOrValue: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      inline def filter(array: js.Array[Any], matcherOrValue: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     }
     
     @JSGlobal("JsHamcrest.SimpleMatcher")
     @js.native
-    class SimpleMatcher protected ()
+    open class SimpleMatcher protected ()
       extends StObject
          with typings.jshamcrest.JsHamcrest.SimpleMatcher {
       def this(config: MatcherConfig) = this()
@@ -330,19 +329,19 @@ object global {
       var describeTo_Original: DescribeTo = js.native
       
       /* CompleteClass */
-      override def describeValueTo(value: js.Any, description: typings.jshamcrest.JsHamcrest.Description): Unit = js.native
+      override def describeValueTo(value: Any, description: typings.jshamcrest.JsHamcrest.Description): Unit = js.native
       /* CompleteClass */
       @JSName("describeValueTo")
       var describeValueTo_Original: DescribeValueTo = js.native
       
       /* CompleteClass */
-      override def matches(value: js.Any): Boolean = js.native
+      override def matches(value: Any): Boolean = js.native
       /* CompleteClass */
       @JSName("matches")
       var matches_Original: Matches = js.native
     }
     
-    inline def isMatcher(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMatcher")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isMatcher(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMatcher")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSGlobal("JsHamcrest.version")
     @js.native
@@ -359,7 +358,7 @@ object global {
     * @param matchersOrValues Instances of JsHamcrest.SimpleMatcher and/or values
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def allOf(matchersOrValues: js.Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("allOf")(matchersOrValues.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def allOf(matchersOrValues: Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("allOf")(matchersOrValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SimpleMatcher]
   
   /**
     * At least one of the matchersOrValues should match the actual value. This matcher behaves pretty much like the JavaScript || (or) operator.
@@ -367,7 +366,7 @@ object global {
     * @param matchersOrValues Instances of JsHamcrest.SimpleMatcher and/or values
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def anyOf(matchersOrValues: js.Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("anyOf")(matchersOrValues.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def anyOf(matchersOrValues: Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("anyOf")(matchersOrValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SimpleMatcher]
   
   /**
     * Useless always-match matcher.
@@ -392,10 +391,10 @@ object global {
     * @param message Prepends the built description
     * @return {JsHamcrest.Description} Contains the message, actual value, matcher, and result
     */
-  inline def assertThat(actual: js.Any): Description = js.Dynamic.global.applyDynamic("assertThat")(actual.asInstanceOf[js.Any]).asInstanceOf[Description]
-  inline def assertThat(actual: js.Any, matcher: Unit, message: js.Any): Description = (js.Dynamic.global.applyDynamic("assertThat")(actual.asInstanceOf[js.Any], matcher.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Description]
-  inline def assertThat(actual: js.Any, matcher: Matcher): Description = (js.Dynamic.global.applyDynamic("assertThat")(actual.asInstanceOf[js.Any], matcher.asInstanceOf[js.Any])).asInstanceOf[Description]
-  inline def assertThat(actual: js.Any, matcher: Matcher, message: js.Any): Description = (js.Dynamic.global.applyDynamic("assertThat")(actual.asInstanceOf[js.Any], matcher.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Description]
+  inline def assertThat(actual: Any): Description = js.Dynamic.global.applyDynamic("assertThat")(actual.asInstanceOf[js.Any]).asInstanceOf[Description]
+  inline def assertThat(actual: Any, matcher: Unit, message: Any): Description = (js.Dynamic.global.applyDynamic("assertThat")(actual.asInstanceOf[js.Any], matcher.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Description]
+  inline def assertThat(actual: Any, matcher: Matcher): Description = (js.Dynamic.global.applyDynamic("assertThat")(actual.asInstanceOf[js.Any], matcher.asInstanceOf[js.Any])).asInstanceOf[Description]
+  inline def assertThat(actual: Any, matcher: Matcher, message: Any): Description = (js.Dynamic.global.applyDynamic("assertThat")(actual.asInstanceOf[js.Any], matcher.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Description]
   
   //
   // Number Matchers
@@ -406,7 +405,7 @@ object global {
     * @param start Range start
     * @return {JsHamcrest.BetweenBuilder} Builder object with an and(end) method, which returns a JsHamcrest.SimpleMatcher instance and thus should be called to finish the matcher creation
     */
-  inline def between(start: js.Any): BetweenBuilder = js.Dynamic.global.applyDynamic("between")(start.asInstanceOf[js.Any]).asInstanceOf[BetweenBuilder]
+  inline def between(start: Any): BetweenBuilder = js.Dynamic.global.applyDynamic("between")(start.asInstanceOf[js.Any]).asInstanceOf[BetweenBuilder]
   
   //
   // Object Matchers
@@ -424,7 +423,7 @@ object global {
     * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
     * @return {JsHamcrest.CombinableMatcher} Instance of JsHamcrest.CombinableMatcher
     */
-  inline def both(matcherOrValue: js.Any): CombinableMatcher = js.Dynamic.global.applyDynamic("both")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[CombinableMatcher]
+  inline def both(matcherOrValue: Any): CombinableMatcher = js.Dynamic.global.applyDynamic("both")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[CombinableMatcher]
   
   /**
     * The actual number must be close enough to expected, that is, the actual number is equal to a value within some range of acceptable error.
@@ -461,7 +460,7 @@ object global {
     * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
     * @return {JsHamcrest.CombinableMatcher} Instance of JsHamcrest.CombinableMatcher
     */
-  inline def either(matcherOrValue: js.Any): CombinableMatcher = js.Dynamic.global.applyDynamic("either")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[CombinableMatcher]
+  inline def either(matcherOrValue: Any): CombinableMatcher = js.Dynamic.global.applyDynamic("either")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[CombinableMatcher]
   
   /**
     * The actual string must look like an e-mail address.
@@ -504,7 +503,7 @@ object global {
     * @param expected Expected value
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def equalTo(expected: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("equalTo")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def equalTo(expected: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("equalTo")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual number must be even.
@@ -519,7 +518,7 @@ object global {
     * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def everyItem(matcherOrValue: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("everyItem")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def everyItem(matcherOrValue: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("everyItem")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual value must be a function.
@@ -534,7 +533,7 @@ object global {
     * @param expected Expected number
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def greaterThan(expected: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("greaterThan")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def greaterThan(expected: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("greaterThan")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual number must be greater than or equal to expected.
@@ -542,7 +541,7 @@ object global {
     * @param expected Expected number
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def greaterThanOrEqualTo(expected: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("greaterThanOrEqualTo")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def greaterThanOrEqualTo(expected: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("greaterThanOrEqualTo")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual value has a function with the given name.
@@ -558,7 +557,7 @@ object global {
     * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def hasItem(matcherOrValue: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("hasItem")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def hasItem(matcherOrValue: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("hasItem")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual value should be an array and matchersOrValues must match at least one item.
@@ -566,7 +565,7 @@ object global {
     * @param matchersOrValues Instances of JsHamcrest.SimpleMatcher and/or values
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def hasItems(matchersOrValues: js.Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("hasItems")(matchersOrValues.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def hasItems(matchersOrValues: Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("hasItems")(matchersOrValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual value has an attribute with the given name.
@@ -576,7 +575,7 @@ object global {
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
   inline def hasMember(memberName: String): SimpleMatcher = js.Dynamic.global.applyDynamic("hasMember")(memberName.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
-  inline def hasMember(memberName: String, matcherOrValue: js.Any): SimpleMatcher = (js.Dynamic.global.applyDynamic("hasMember")(memberName.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any])).asInstanceOf[SimpleMatcher]
+  inline def hasMember(memberName: String, matcherOrValue: Any): SimpleMatcher = (js.Dynamic.global.applyDynamic("hasMember")(memberName.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any])).asInstanceOf[SimpleMatcher]
   
   /**
     * The length of the actual value must match matcherOrValue.
@@ -584,7 +583,7 @@ object global {
     * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def hasSize(matcherOrValue: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("hasSize")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def hasSize(matcherOrValue: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("hasSize")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual value must be an instance of clazz.
@@ -592,7 +591,7 @@ object global {
     * @param clazz Constructor function
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def instanceOf(clazz: Instantiable0[js.Any]): SimpleMatcher = js.Dynamic.global.applyDynamic("instanceOf")(clazz.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def instanceOf(clazz: Instantiable0[Any]): SimpleMatcher = js.Dynamic.global.applyDynamic("instanceOf")(clazz.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * Delegate-only matcher frequently used to improve readability.
@@ -600,7 +599,7 @@ object global {
     * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def is(matcherOrValue: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("is")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def is(matcherOrValue: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("is")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The given array or arguments must contain the actual value.
@@ -608,7 +607,7 @@ object global {
     * @param items Array or list of values
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def isIn(items: js.Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("isIn")(items.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def isIn(items: Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("isIn")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual number must be less than expected.
@@ -616,7 +615,7 @@ object global {
     * @param expected Expected number
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def lessThan(expected: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("lessThan")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def lessThan(expected: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("lessThan")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual number must be less than or equal to expected.
@@ -624,7 +623,7 @@ object global {
     * @param expected Expected number
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def lessThanOrEqualTo(expected: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("lessThanOrEqualTo")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def lessThanOrEqualTo(expected: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("lessThanOrEqualTo")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual string must match regex.
@@ -632,7 +631,7 @@ object global {
     * @param regex String
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def matches(regex: RegExp): SimpleMatcher = js.Dynamic.global.applyDynamic("matches")(regex.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def matches(regex: js.RegExp): SimpleMatcher = js.Dynamic.global.applyDynamic("matches")(regex.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual value must be null or undefined.
@@ -647,7 +646,7 @@ object global {
     * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def not(matcherOrValue: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("not")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def not(matcherOrValue: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("not")(matcherOrValue.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual value must not be a number.
@@ -683,7 +682,7 @@ object global {
     * @param items Array or list of values
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def oneOf(items: js.Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("oneOf")(items.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def oneOf(items: Any*): SimpleMatcher = js.Dynamic.global.applyDynamic("oneOf")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual value is a function and, when invoked, it should throw an exception with the given name.
@@ -706,7 +705,7 @@ object global {
     * @param expected Expected value
     * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
     */
-  inline def sameAs(expected: js.Any): SimpleMatcher = js.Dynamic.global.applyDynamic("sameAs")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
+  inline def sameAs(expected: Any): SimpleMatcher = js.Dynamic.global.applyDynamic("sameAs")(expected.asInstanceOf[js.Any]).asInstanceOf[SimpleMatcher]
   
   /**
     * The actual string must start with str.

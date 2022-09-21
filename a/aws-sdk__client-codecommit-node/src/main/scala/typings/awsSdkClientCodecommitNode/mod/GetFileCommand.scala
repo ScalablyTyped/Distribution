@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "GetFileCommand")
 @js.native
-class GetFileCommand protected ()
+open class GetFileCommand protected ()
   extends typings.awsSdkClientCodecommitNode.getFileCommandMod.GetFileCommand {
   def this(input: GetFileInput) = this()
 }

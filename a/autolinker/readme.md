@@ -1,7 +1,7 @@
 
 # Scala.js typings for autolinker
 
-Typings are for version 3.14.2
+Typings are for version 4.0.0
 
 ## Library description:
 Utility to automatically link the URLs, email addresses, phone numbers, hashtags, and mentions (Twitter, Instagram) in a given block of text/HTML
@@ -10,10 +10,10 @@ Utility to automatically link the URLs, email addresses, phone numbers, hashtags
 | ------------------ | :-------------: |
 | Full name          | autolinker |
 | Keywords           | auto, link, autolink, url, urls, anchor |
-| # releases         | 22 |
-| # dependents       | 82 |
-| # downloads        | 17166985 |
-| # stars            | 10 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2833445.0 |
+| # stars            | 1414.0 |
 
 ## Links
 - [Homepage](https://github.com/gregjacobs/Autolinker.js)

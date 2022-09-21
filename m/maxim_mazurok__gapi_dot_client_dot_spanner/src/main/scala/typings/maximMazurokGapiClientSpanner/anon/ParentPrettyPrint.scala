@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSpanner.anon
 
-import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.RestoreDatabaseRequest
+import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.CreateInstanceRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +29,7 @@ trait ParentPrettyPrint extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. The name of the instance in which to create the restored database. This instance must be in the same project and have the same instance configuration as the instance
-    * containing the source backup. Values are of the form `projects//instances/`.
-    */
+  /** Required. The name of the project in which to create the instance. Values are of the form `projects/`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,7 +39,7 @@ trait ParentPrettyPrint extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: RestoreDatabaseRequest
+  var resource: CreateInstanceRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +49,7 @@ trait ParentPrettyPrint extends StObject {
 }
 object ParentPrettyPrint {
   
-  inline def apply(parent: String, resource: RestoreDatabaseRequest): ParentPrettyPrint = {
+  inline def apply(parent: String, resource: CreateInstanceRequest): ParentPrettyPrint = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParentPrettyPrint]
   }
@@ -97,7 +94,7 @@ object ParentPrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: RestoreDatabaseRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CreateInstanceRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

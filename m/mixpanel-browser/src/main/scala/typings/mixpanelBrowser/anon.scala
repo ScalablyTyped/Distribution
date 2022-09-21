@@ -157,8 +157,6 @@ object anon {
     
     var track_links_timeout: js.UndefOr[Double] = js.undefined
     
-    var track_pageview: js.UndefOr[Boolean] = js.undefined
-    
     var upgrade: js.UndefOr[Boolean] = js.undefined
     
     var verbose: js.UndefOr[Boolean] = js.undefined
@@ -302,7 +300,7 @@ object anon {
       
       inline def setProperty_blacklistUndefined: Self = StObject.set(x, "property_blacklist", js.undefined)
       
-      inline def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value :_*))
+      inline def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value*))
       
       inline def setSave_referrer(value: Boolean): Self = StObject.set(x, "save_referrer", value.asInstanceOf[js.Any])
       
@@ -323,10 +321,6 @@ object anon {
       inline def setTrack_links_timeout(value: Double): Self = StObject.set(x, "track_links_timeout", value.asInstanceOf[js.Any])
       
       inline def setTrack_links_timeoutUndefined: Self = StObject.set(x, "track_links_timeout", js.undefined)
-      
-      inline def setTrack_pageview(value: Boolean): Self = StObject.set(x, "track_pageview", value.asInstanceOf[js.Any])
-      
-      inline def setTrack_pageviewUndefined: Self = StObject.set(x, "track_pageview", js.undefined)
       
       inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       
@@ -418,8 +412,6 @@ object anon {
     var test: js.UndefOr[Boolean] = js.undefined
     
     var track_links_timeout: js.UndefOr[Double] = js.undefined
-    
-    var track_pageview: js.UndefOr[Boolean] = js.undefined
     
     var upgrade: js.UndefOr[Boolean] = js.undefined
     
@@ -564,7 +556,7 @@ object anon {
       
       inline def setProperty_blacklistUndefined: Self = StObject.set(x, "property_blacklist", js.undefined)
       
-      inline def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value :_*))
+      inline def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value*))
       
       inline def setSave_referrer(value: Boolean): Self = StObject.set(x, "save_referrer", value.asInstanceOf[js.Any])
       
@@ -585,10 +577,6 @@ object anon {
       inline def setTrack_links_timeout(value: Double): Self = StObject.set(x, "track_links_timeout", value.asInstanceOf[js.Any])
       
       inline def setTrack_links_timeoutUndefined: Self = StObject.set(x, "track_links_timeout", js.undefined)
-      
-      inline def setTrack_pageview(value: Boolean): Self = StObject.set(x, "track_pageview", value.asInstanceOf[js.Any])
-      
-      inline def setTrack_pageviewUndefined: Self = StObject.set(x, "track_pageview", js.undefined)
       
       inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       

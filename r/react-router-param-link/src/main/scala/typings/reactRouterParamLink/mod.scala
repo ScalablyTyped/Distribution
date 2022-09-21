@@ -1,6 +1,5 @@
 package typings.reactRouterParamLink
 
-import typings.history.mod.LocationState
 import typings.react.mod.Component
 import typings.reactRouterDom.mod.LinkProps
 import org.scalablytyped.runtime.StObject
@@ -11,13 +10,12 @@ object mod {
   
   @JSImport("react-router-param-link", "ParamLink")
   @js.native
-  class ParamLink protected ()
-    extends Component[LinkProps[LocationState], js.Any, js.Any] {
-    def this(props: LinkProps[LocationState]) = this()
+  open class ParamLink protected () extends Component[LinkProps, Any, Any] {
+    def this(props: LinkProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LinkProps[LocationState], context: js.Any) = this()
+    def this(props: LinkProps, context: Any) = this()
   }
 }

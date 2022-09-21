@@ -53,7 +53,7 @@ trait VisualVariableResult
   var statistics: SummaryStatisticsResult
   
   /**
-    * A color visual variable configured based on the statistics of the data and the given basemap and scheme.
+    * A color visual variable configured based on the statistics of the data and the view's background.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
     */

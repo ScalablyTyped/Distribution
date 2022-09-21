@@ -15,12 +15,10 @@ object hueMod {
   
   @JSImport("react-color/lib/components/common/Hue", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[HueProps, js.Object, js.Any]
+  open class default ()
+    extends Component[HueProps, js.Object, Any]
   
-  @js.native
-  trait Hue
-    extends Component[HueProps, js.Object, js.Any]
+  type Hue = Component[HueProps, js.Object, Any]
   
   trait HueProps
     extends StObject

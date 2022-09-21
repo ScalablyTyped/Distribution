@@ -9,7 +9,6 @@ import typings.ariClient.anon.Lang
 import typings.ariClient.anon.Media
 import typings.ariClient.anon.MohClass
 import typings.ariClient.anon.Name
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ trait Bridges extends StObject {
     * @param [params.absorbDTMF] - Absorb DTMF coming from this channel, preventing it to pass through to the bridge.
     * @param [params.mute] - Mute audio from this channel, preventing it to pass through to the bridge.
     */
-  def addChannel(params: AbsorbDTMF, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def addChannel(params: AbsorbDTMF, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Removes any explicit video source in a multi-party mixing bridge. This operation has no effect on bridges with two or fewer participants. When no explicit video source is set, talk
@@ -51,7 +50,7 @@ trait Bridges extends StObject {
     *
     * @param params.bridgeId - Bridges id.
     */
-  def clearVideoSource(params: BridgeIdString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def clearVideoSource(params: BridgeIdString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Create a new bridge.
@@ -66,7 +65,7 @@ trait Bridges extends StObject {
     * Create a new bridge.
     * This bridge persists until it has been shut down, or Asterisk has been shut down.
     */
-  def create(callback: js.Function2[/* err */ Error, /* bridge */ Bridge, Unit]): Unit = js.native
+  def create(callback: js.Function2[/* err */ js.Error, /* bridge */ Bridge, Unit]): Unit = js.native
   def create(params: BridgeId): js.Promise[Bridge] = js.native
   /**
     * Create a new bridge.
@@ -76,7 +75,7 @@ trait Bridges extends StObject {
     * @param [params.bridgeId] - Unique ID to give to the bridge being created.
     * @param [params.name] - Name to give to the bridge being created.
     */
-  def create(params: BridgeId, callback: js.Function2[/* err */ Error, /* bridge */ Bridge, Unit]): Unit = js.native
+  def create(params: BridgeId, callback: js.Function2[/* err */ js.Error, /* bridge */ Bridge, Unit]): Unit = js.native
   
   /**
     * Create a new bridge or updates an existing one.
@@ -95,7 +94,7 @@ trait Bridges extends StObject {
     * @param params.bridgeId - Unique ID to give to the bridge being created.
     * @param [params.name] - Set the name of the bridge.
     */
-  def createWithId(params: Name, callback: js.Function2[/* err */ Error, /* bridge */ Bridge, Unit]): Unit = js.native
+  def createWithId(params: Name, callback: js.Function2[/* err */ js.Error, /* bridge */ Bridge, Unit]): Unit = js.native
   
   /**
     * Shut down a bridge.
@@ -110,7 +109,7 @@ trait Bridges extends StObject {
     *
     * @param params.bridgeId - Bridges id.
     */
-  def destroy(params: BridgeIdString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def destroy(params: BridgeIdString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Get bridge details.
@@ -123,7 +122,7 @@ trait Bridges extends StObject {
     *
     * @param params.bridgeId - Bridges id.
     */
-  def get(params: BridgeIdString, callback: js.Function2[/* err */ Error, /* bridge */ Bridge, Unit]): Unit = js.native
+  def get(params: BridgeIdString, callback: js.Function2[/* err */ js.Error, /* bridge */ Bridge, Unit]): Unit = js.native
   
   /**
     * List all active bridges in Asterisk.
@@ -132,7 +131,7 @@ trait Bridges extends StObject {
   /**
     * List all active bridges in Asterisk.
     */
-  def list(callback: js.Function2[/* err */ Error, /* bridges */ js.Array[Bridge], Unit]): Unit = js.native
+  def list(callback: js.Function2[/* err */ js.Error, /* bridges */ js.Array[Bridge], Unit]): Unit = js.native
   
   /**
     * Start playback of media on a bridge.
@@ -159,7 +158,7 @@ trait Bridges extends StObject {
     * @param [params.skipms] - Number of milliseconds to skip for forward/reverse operations.
     * @param [params.playbackId] - Playback Id.
     */
-  def play(params: Lang, callback: js.Function2[/* err */ Error, /* playback */ Playback, Unit]): Unit = js.native
+  def play(params: Lang, callback: js.Function2[/* err */ js.Error, /* playback */ Playback, Unit]): Unit = js.native
   
   /**
     * Start playback of media on a bridge.
@@ -186,7 +185,7 @@ trait Bridges extends StObject {
     * @param [params.offsetms] - Number of milliseconds to skip before playing. Only applies to the first URI if multiple media URIs are specified.
     * @param [params.skipms] - Number of milliseconds to skip for forward/reverse operations.
     */
-  def playWithId(params: Media, callback: js.Function2[/* err */ Error, /* playback */ Playback, Unit]): Unit = js.native
+  def playWithId(params: Media, callback: js.Function2[/* err */ js.Error, /* playback */ Playback, Unit]): Unit = js.native
   
   /**
     * Start a recording.
@@ -215,7 +214,7 @@ trait Bridges extends StObject {
     * @param [params.beep] - Play beep when recording begins.
     * @param [params.terminateOn] - DTMF input to terminate recording.
     */
-  def record(params: Beep, callback: js.Function2[/* err */ Error, /* liverecording */ LiveRecording, Unit]): Unit = js.native
+  def record(params: Beep, callback: js.Function2[/* err */ js.Error, /* liverecording */ LiveRecording, Unit]): Unit = js.native
   
   /**
     * Remove a channel from a bridge.
@@ -230,7 +229,7 @@ trait Bridges extends StObject {
     * @param params.bridgeId - Bridges id.
     * @param params.channel - Ids of channels to remove from bridge.
     */
-  def removeChannel(params: typings.ariClient.anon.Channel, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def removeChannel(params: typings.ariClient.anon.Channel, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Set a channel as the video source in a multi-party mixing bridge. This operation has no effect on bridges with two or fewer participants.
@@ -245,7 +244,7 @@ trait Bridges extends StObject {
     * @param params.bridgeId - Bridges id.
     * @param params.channelId - Channels id.
     */
-  def setVideoSource(params: ChannelId, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def setVideoSource(params: ChannelId, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Play music on hold to a bridge or change the MOH class that is playing.
@@ -260,7 +259,7 @@ trait Bridges extends StObject {
     * @param params.bridgeId - Bridges id.
     * @param [params.mohClass] - Channels id.
     */
-  def startMoh(params: MohClass, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def startMoh(params: MohClass, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Stop playing music on hold to a bridge.
@@ -275,5 +274,5 @@ trait Bridges extends StObject {
     *
     * @param params.bridgeId - Bridges id.
     */
-  def stopMoh(params: BridgeIdString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def stopMoh(params: BridgeIdString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

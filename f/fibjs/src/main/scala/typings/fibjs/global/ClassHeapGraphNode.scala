@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_HeapGraphNode")
 @js.native
-class ClassHeapGraphNode ()
+open class ClassHeapGraphNode ()
   extends StObject
      with typings.fibjs.ClassHeapGraphNode

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.System.FolderLauncherOptions")
 @js.native
 /** Initializes a new instance of the FolderLauncherOptions class. */
-class FolderLauncherOptions ()
+open class FolderLauncherOptions ()
   extends StObject
      with typings.winrtUwp.Windows.System.FolderLauncherOptions {
   

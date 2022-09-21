@@ -30,7 +30,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Color")
   @js.native
-  class Color protected ()
+  open class Color protected ()
     extends StObject
        with typings.paper.paper.Color {
     /** 
@@ -70,7 +70,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "CompoundPath")
   @js.native
-  class CompoundPath protected ()
+  open class CompoundPath protected ()
     extends StObject
        with typings.paper.paper.CompoundPath {
     /** 
@@ -90,7 +90,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Curve")
   @js.native
-  class Curve protected ()
+  open class Curve protected ()
     extends StObject
        with typings.paper.paper.Curve {
     /** 
@@ -109,7 +109,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "CurveLocation")
   @js.native
-  class CurveLocation protected ()
+  open class CurveLocation protected ()
     extends StObject
        with typings.paper.paper.CurveLocation {
     /** 
@@ -283,7 +283,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Event")
   @js.native
-  class Event ()
+  open class Event ()
     extends StObject
        with typings.paper.paper.Event {
     
@@ -293,7 +293,7 @@ object paperCoreMod {
       * @see Key.modifiers
       */
     /* CompleteClass */
-    override val modifiers: js.Any = js.native
+    override val modifiers: Any = js.native
     
     /** 
       * Cancels the event if it is cancelable, without stopping further
@@ -333,7 +333,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Gradient")
   @js.native
-  class Gradient ()
+  open class Gradient ()
     extends StObject
        with typings.paper.paper.Gradient {
     
@@ -372,7 +372,7 @@ object paperCoreMod {
     * ramp as a value between `0` and `1`; `null` or `undefined` for automatic
     * assignment.
     */
-  class GradientStop ()
+  open class GradientStop ()
     extends StObject
        with typings.paper.paper.GradientStop {
     def this(color: typings.paper.paper.Color) = this()
@@ -417,7 +417,7 @@ object paperCoreMod {
     * @param children - An array of children that will be added to the
     * newly created group
     */
-  class Group ()
+  open class Group ()
     extends StObject
        with typings.paper.paper.Group {
     def this(children: js.Array[typings.paper.paper.Item]) = this()
@@ -438,7 +438,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "HitResult")
   @js.native
-  class HitResult ()
+  open class HitResult ()
     extends StObject
        with typings.paper.paper.HitResult {
     
@@ -499,7 +499,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends StObject
        with typings.paper.paper.Item
   @JSImport("paper/dist/paper-core", "Item")
@@ -510,7 +510,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Key")
   @js.native
-  class Key ()
+  open class Key ()
     extends StObject
        with typings.paper.paper.Key
   @JSImport("paper/dist/paper-core", "Key")
@@ -520,7 +520,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "KeyEvent")
   @js.native
-  class KeyEvent ()
+  open class KeyEvent ()
     extends StObject
        with typings.paper.paper.KeyEvent {
     
@@ -545,7 +545,7 @@ object paperCoreMod {
       * @see Key.modifiers
       */
     /* CompleteClass */
-    override val modifiers: js.Any = js.native
+    override val modifiers: Any = js.native
     
     /** 
       * Cancels the event if it is cancelable, without stopping further
@@ -601,7 +601,7 @@ object paperCoreMod {
     * @param children - An array of items that will be added to the
     * newly created layer
     */
-  class Layer ()
+  open class Layer ()
     extends StObject
        with typings.paper.paper.Layer {
     def this(children: js.Array[typings.paper.paper.Item]) = this()
@@ -626,7 +626,7 @@ object paperCoreMod {
     * Creates a 2D affine transformation matrix that describes the identity
     * transformation.
     */
-  class Matrix ()
+  open class Matrix ()
     extends StObject
        with typings.paper.paper.Matrix
   @JSImport("paper/dist/paper-core", "Matrix")
@@ -637,7 +637,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "MouseEvent")
   @js.native
-  class MouseEvent ()
+  open class MouseEvent ()
     extends StObject
        with typings.paper.paper.MouseEvent {
     
@@ -659,7 +659,7 @@ object paperCoreMod {
       * @see Key.modifiers
       */
     /* CompleteClass */
-    override val modifiers: js.Any = js.native
+    override val modifiers: Any = js.native
     
     /** 
       * The position of the mouse in project coordinates when the event was
@@ -723,7 +723,7 @@ object paperCoreMod {
   /** 
     * Creates a PaperScope object.
     */
-  class PaperScope ()
+  open class PaperScope ()
     extends StObject
        with typings.paper.paper.PaperScope
   @JSImport("paper/dist/paper-core", "PaperScope")
@@ -740,7 +740,7 @@ object paperCoreMod {
     * @param segments - An array of segments (or points to be
     * converted to segments) that will be added to the path
     */
-  class Path ()
+  open class Path ()
     extends StObject
        with typings.paper.paper.Path {
     def this(segments: js.Array[typings.paper.paper.Segment]) = this()
@@ -755,7 +755,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "PathItem")
   @js.native
-  class PathItem ()
+  open class PathItem ()
     extends StObject
        with typings.paper.paper.PathItem
   @JSImport("paper/dist/paper-core", "PathItem")
@@ -773,7 +773,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with typings.paper.paper.Point {
     /** 
@@ -791,7 +791,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "PointText")
   @js.native
-  class PointText protected ()
+  open class PointText protected ()
     extends StObject
        with typings.paper.paper.PointText {
     /** 
@@ -811,7 +811,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Project")
   @js.native
-  class Project protected ()
+  open class Project protected ()
     extends StObject
        with typings.paper.paper.Project {
     def this(element: String) = this()
@@ -858,7 +858,7 @@ object paperCoreMod {
     * @param position - the center position at which the raster item is
     *     placed
     */
-  class Raster ()
+  open class Raster ()
     extends StObject
        with typings.paper.paper.Raster {
     def this(source: String) = this()
@@ -887,7 +887,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Rectangle")
   @js.native
-  class Rectangle protected ()
+  open class Rectangle protected ()
     extends StObject
        with typings.paper.paper.Rectangle {
     /** 
@@ -927,7 +927,7 @@ object paperCoreMod {
     *     anchor point of the segment that describes the out tangent of the
     *     segment
     */
-  class Segment ()
+  open class Segment ()
     extends StObject
        with typings.paper.paper.Segment {
     def this(point: typings.paper.paper.Point) = this()
@@ -962,7 +962,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Shape")
   @js.native
-  class Shape ()
+  open class Shape ()
     extends StObject
        with typings.paper.paper.Shape
   @JSImport("paper/dist/paper-core", "Shape")
@@ -973,7 +973,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Size")
   @js.native
-  class Size protected ()
+  open class Size protected ()
     extends StObject
        with typings.paper.paper.Size {
     /** 
@@ -992,7 +992,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Style")
   @js.native
-  class Style protected ()
+  open class Style protected ()
     extends StObject
        with typings.paper.paper.Style {
     /** 
@@ -1141,7 +1141,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "SymbolDefinition")
   @js.native
-  class SymbolDefinition protected ()
+  open class SymbolDefinition protected ()
     extends StObject
        with typings.paper.paper.SymbolDefinition {
     /** 
@@ -1171,7 +1171,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "SymbolItem")
   @js.native
-  class SymbolItem protected ()
+  open class SymbolItem protected ()
     extends StObject
        with typings.paper.paper.SymbolItem {
     def this(definition: typings.paper.paper.Item) = this()
@@ -1204,7 +1204,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "TextItem")
   @js.native
-  class TextItem ()
+  open class TextItem ()
     extends StObject
        with typings.paper.paper.TextItem
   @JSImport("paper/dist/paper-core", "TextItem")
@@ -1215,14 +1215,14 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Tool")
   @js.native
-  class Tool ()
+  open class Tool ()
     extends StObject
        with typings.paper.paper.Tool
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "ToolEvent")
   @js.native
-  class ToolEvent ()
+  open class ToolEvent ()
     extends StObject
        with typings.paper.paper.ToolEvent {
     
@@ -1279,7 +1279,7 @@ object paperCoreMod {
       * @see Key.modifiers
       */
     /* CompleteClass */
-    override val modifiers: js.Any = js.native
+    override val modifiers: Any = js.native
     
     /** 
       * The position of the mouse in project coordinates when the event was
@@ -1338,7 +1338,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Tween")
   @js.native
-  class Tween protected ()
+  open class Tween protected ()
     extends StObject
        with typings.paper.paper.Tween {
     /** 
@@ -1435,7 +1435,7 @@ object paperCoreMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "View")
   @js.native
-  class View ()
+  open class View ()
     extends StObject
        with typings.paper.paper.View
   @JSImport("paper/dist/paper-core", "View")
@@ -1460,9 +1460,9 @@ object paperCoreMod {
   
   @JSImport("paper/dist/paper-core", "install")
   @js.native
-  def install: js.Function1[/* scope */ js.Any, Unit] = js.native
-  inline def install(scope: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def install_=(x: js.Function1[/* scope */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
+  def install: js.Function1[/* scope */ Any, Unit] = js.native
+  inline def install(scope: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install_=(x: js.Function1[/* scope */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "project")
   @js.native
@@ -1476,8 +1476,8 @@ object paperCoreMod {
   
   @JSImport("paper/dist/paper-core", "settings")
   @js.native
-  def settings: js.Any = js.native
-  inline def settings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
+  def settings: Any = js.native
+  inline def settings_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "setup")
   @js.native

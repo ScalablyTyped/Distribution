@@ -9,5 +9,5 @@ object iclassnamesMod {
   
   type IClassNames[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]: string}
-    */ typings.uifabricUtilities.uifabricUtilitiesStrings.IClassNames & TopLevel[js.Any]
+    */ typings.uifabricUtilities.uifabricUtilitiesStrings.IClassNames & TopLevel[Any]
 }

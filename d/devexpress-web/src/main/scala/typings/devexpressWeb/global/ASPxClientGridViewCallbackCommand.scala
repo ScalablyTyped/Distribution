@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewCallbackCommand")
 @js.native
-class ASPxClientGridViewCallbackCommand ()
+open class ASPxClientGridViewCallbackCommand ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewCallbackCommand
 object ASPxClientGridViewCallbackCommand {

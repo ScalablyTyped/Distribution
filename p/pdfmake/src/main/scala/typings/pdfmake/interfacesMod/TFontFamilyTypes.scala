@@ -7,12 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TFontFamilyTypes extends StObject {
   
+  /** Font variant that is bold. */
   var bold: js.UndefOr[PDFFontSource] = js.undefined
   
+  /** Font variant that is bold and italic. */
   var bolditalics: js.UndefOr[PDFFontSource] = js.undefined
   
+  /** Font variant that is italic. */
   var italics: js.UndefOr[PDFFontSource] = js.undefined
   
+  /** Font variant that is neither bold nor italic. */
   var normal: js.UndefOr[PDFFontSource] = js.undefined
 }
 object TFontFamilyTypes {

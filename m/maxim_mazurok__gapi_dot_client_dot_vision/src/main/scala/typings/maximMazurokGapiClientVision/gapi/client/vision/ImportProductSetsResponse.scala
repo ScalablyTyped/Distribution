@@ -28,12 +28,12 @@ object ImportProductSetsResponse {
     
     inline def setReferenceImagesUndefined: Self = StObject.set(x, "referenceImages", js.undefined)
     
-    inline def setReferenceImagesVarargs(value: ReferenceImage*): Self = StObject.set(x, "referenceImages", js.Array(value :_*))
+    inline def setReferenceImagesVarargs(value: ReferenceImage*): Self = StObject.set(x, "referenceImages", js.Array(value*))
     
     inline def setStatuses(value: js.Array[Status]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
     inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
-    inline def setStatusesVarargs(value: Status*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: Status*): Self = StObject.set(x, "statuses", js.Array(value*))
   }
 }

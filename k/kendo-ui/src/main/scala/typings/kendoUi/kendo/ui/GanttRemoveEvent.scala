@@ -9,7 +9,7 @@ trait GanttRemoveEvent
   extends StObject
      with GanttEvent {
   
-  var dependencies: js.UndefOr[js.Any] = js.undefined
+  var dependencies: js.UndefOr[Any] = js.undefined
   
   var task: js.UndefOr[GanttTask] = js.undefined
 }
@@ -22,7 +22,7 @@ object GanttRemoveEvent {
   
   extension [Self <: GanttRemoveEvent](x: Self) {
     
-    inline def setDependencies(value: js.Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     

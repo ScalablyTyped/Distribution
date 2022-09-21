@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "GRU")
 @js.native
-class GRU protected () extends RNN_ {
+open class GRU protected () extends RNN_ {
   def this(args: GRULayerArgs) = this()
 }
 /* static members */

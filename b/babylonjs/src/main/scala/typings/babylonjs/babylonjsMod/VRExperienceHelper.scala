@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Cameras/index", "VRExperienceHelper")
 @js.native
-class VRExperienceHelper protected ()
+open class VRExperienceHelper protected ()
   extends typings.babylonjs.vRIndexMod.VRExperienceHelper {
   /**
     * Instantiates a VRExperienceHelper.

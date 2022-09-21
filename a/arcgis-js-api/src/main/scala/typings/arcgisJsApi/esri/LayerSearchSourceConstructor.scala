@@ -17,5 +17,5 @@ trait LayerSearchSourceConstructor
 Instantiable0[LayerSearchSource]
      with Instantiable1[/* properties */ LayerSearchSourceProperties, LayerSearchSource] {
   
-  def fromJSON(json: js.Any): LayerSearchSource = js.native
+  def fromJSON(json: Any): LayerSearchSource = js.native
 }

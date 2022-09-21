@@ -1,6 +1,5 @@
 package typings.tabris
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ trait File
 object File {
   
   inline def apply(
-    arrayBuffer: () => js.Promise[ArrayBuffer],
+    arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
     lastModified: Double,
     name: String,
     size: Double,

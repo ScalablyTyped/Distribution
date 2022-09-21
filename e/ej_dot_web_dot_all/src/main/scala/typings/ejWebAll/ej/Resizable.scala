@@ -95,7 +95,7 @@ object Resizable {
     /** Sets the offset of the resizing helper relative to the mouse cursor.
       * @Default {{ top: -1, left: -2 }}
       */
-    var cursorAt: js.UndefOr[js.Any] = js.undefined
+    var cursorAt: js.UndefOr[Any] = js.undefined
     
     /** This event is triggered when the widget destroys.
       */
@@ -149,7 +149,7 @@ object Resizable {
     
     extension [Self <: typings.ejWebAll.ej.Resizable.Model](x: Self) {
       
-      inline def setCursorAt(value: js.Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
+      inline def setCursorAt(value: Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
       
       inline def setCursorAtUndefined: Self = StObject.set(x, "cursorAt", js.undefined)
       

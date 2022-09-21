@@ -10,10 +10,10 @@ for adding, subtracting, and indexing discontinuous ranges of numbers
 | ------------------ | :-------------: |
 | Full name          | discontinuous-range |
 | Keywords           | discontinuous, range, set |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 105036999 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1457257666666666E7 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/dtudury/discontinuous-range)

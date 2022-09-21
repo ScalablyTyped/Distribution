@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersInStoreRefundLineItemRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.OrderreturnsCreateOrderReturnRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,9 +32,6 @@ trait FieldsKeyMerchantId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the order. */
-  var orderId: String
-  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
@@ -42,7 +39,7 @@ trait FieldsKeyMerchantId extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrdersInStoreRefundLineItemRequest
+  var resource: OrderreturnsCreateOrderReturnRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +49,8 @@ trait FieldsKeyMerchantId extends StObject {
 }
 object FieldsKeyMerchantId {
   
-  inline def apply(merchantId: String, orderId: String, resource: OrdersInStoreRefundLineItemRequest): FieldsKeyMerchantId = {
-    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(merchantId: String, resource: OrderreturnsCreateOrderReturnRequest): FieldsKeyMerchantId = {
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKeyMerchantId]
   }
   
@@ -89,8 +86,6 @@ object FieldsKeyMerchantId {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
-    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -99,7 +94,7 @@ object FieldsKeyMerchantId {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrdersInStoreRefundLineItemRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: OrderreturnsCreateOrderReturnRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

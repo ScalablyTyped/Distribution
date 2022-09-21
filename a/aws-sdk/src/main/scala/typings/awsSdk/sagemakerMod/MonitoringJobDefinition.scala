@@ -78,7 +78,7 @@ object MonitoringJobDefinition {
     
     inline def setMonitoringInputs(value: MonitoringInputs): Self = StObject.set(x, "MonitoringInputs", value.asInstanceOf[js.Any])
     
-    inline def setMonitoringInputsVarargs(value: MonitoringInput*): Self = StObject.set(x, "MonitoringInputs", js.Array(value :_*))
+    inline def setMonitoringInputsVarargs(value: MonitoringInput*): Self = StObject.set(x, "MonitoringInputs", js.Array(value*))
     
     inline def setMonitoringOutputConfig(value: MonitoringOutputConfig): Self = StObject.set(x, "MonitoringOutputConfig", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ object mp4tagreaderMod {
   
   @JSImport("jsmediatags/build2/MP4TagReader", JSImport.Default)
   @js.native
-  class default () extends MP4TagReader
+  open class default () extends MP4TagReader
   /* static members */
   object default {
     
@@ -39,16 +39,16 @@ object mp4tagreaderMod {
       callbacks: LoadCallbackType
     ): Unit = js.native
     
-    def _readAtom(tags: js.Any, data: typings.jsmediatags.mediaFileReaderMod.default, offset: Double, length: Double): Unit = js.native
+    def _readAtom(tags: Any, data: typings.jsmediatags.mediaFileReaderMod.default, offset: Double, length: Double): Unit = js.native
     def _readAtom(
-      tags: js.Any,
+      tags: Any,
       data: typings.jsmediatags.mediaFileReaderMod.default,
       offset: Double,
       length: Double,
       tagsToRead: js.Array[String]
     ): Unit = js.native
     def _readAtom(
-      tags: js.Any,
+      tags: Any,
       data: typings.jsmediatags.mediaFileReaderMod.default,
       offset: Double,
       length: Double,
@@ -56,7 +56,7 @@ object mp4tagreaderMod {
       parentAtomFullName: String
     ): Unit = js.native
     def _readAtom(
-      tags: js.Any,
+      tags: Any,
       data: typings.jsmediatags.mediaFileReaderMod.default,
       offset: Double,
       length: Double,
@@ -65,7 +65,7 @@ object mp4tagreaderMod {
       indent: String
     ): Unit = js.native
     def _readAtom(
-      tags: js.Any,
+      tags: Any,
       data: typings.jsmediatags.mediaFileReaderMod.default,
       offset: Double,
       length: Double,
@@ -74,7 +74,7 @@ object mp4tagreaderMod {
       indent: String
     ): Unit = js.native
     def _readAtom(
-      tags: js.Any,
+      tags: Any,
       data: typings.jsmediatags.mediaFileReaderMod.default,
       offset: Double,
       length: Double,
@@ -82,7 +82,7 @@ object mp4tagreaderMod {
       parentAtomFullName: String
     ): Unit = js.native
     def _readAtom(
-      tags: js.Any,
+      tags: Any,
       data: typings.jsmediatags.mediaFileReaderMod.default,
       offset: Double,
       length: Double,
@@ -91,7 +91,7 @@ object mp4tagreaderMod {
       indent: String
     ): Unit = js.native
     def _readAtom(
-      tags: js.Any,
+      tags: Any,
       data: typings.jsmediatags.mediaFileReaderMod.default,
       offset: Double,
       length: Double,

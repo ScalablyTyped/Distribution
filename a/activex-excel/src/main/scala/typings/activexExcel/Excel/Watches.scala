@@ -10,7 +10,7 @@ trait Watches extends StObject {
   def apply(Index: String): Watch = js.native
   def apply(Index: Double): Watch = js.native
   
-  def Add(Source: js.Any): Watch = js.native
+  def Add(Source: Any): Watch = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -23,7 +23,7 @@ trait Watches extends StObject {
   def Item(Index: String): Watch = js.native
   def Item(Index: Double): Watch = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Watch = js.native
+  def _Default(Index: Any): Watch = js.native
 }

@@ -24,7 +24,7 @@ trait EventQueue extends StObject {
   
   def interrupt(entry: TrackEntry): Unit
   
-  var objects: js.Array[js.Any]
+  var objects: js.Array[Any]
   
   def start(entry: TrackEntry): Unit
 }
@@ -40,7 +40,7 @@ object EventQueue {
     end: TrackEntry => Unit,
     event: (TrackEntry, Event) => Unit,
     interrupt: TrackEntry => Unit,
-    objects: js.Array[js.Any],
+    objects: js.Array[Any],
     start: TrackEntry => Unit
   ): EventQueue = {
     val __obj = js.Dynamic.literal(animState = animState.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), complete = js.Any.fromFunction1(complete), dispose = js.Any.fromFunction1(dispose), drain = js.Any.fromFunction0(drain), drainDisabled = drainDisabled.asInstanceOf[js.Any], end = js.Any.fromFunction1(end), event = js.Any.fromFunction2(event), interrupt = js.Any.fromFunction1(interrupt), objects = objects.asInstanceOf[js.Any], start = js.Any.fromFunction1(start))
@@ -67,9 +67,9 @@ object EventQueue {
     
     inline def setInterrupt(value: TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
     
-    inline def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: js.Array[Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    inline def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: Any*): Self = StObject.set(x, "objects", js.Array(value*))
     
     inline def setStart(value: TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
   }

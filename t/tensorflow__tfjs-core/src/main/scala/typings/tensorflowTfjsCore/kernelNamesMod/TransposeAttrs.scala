@@ -19,6 +19,6 @@ object TransposeAttrs {
     
     inline def setPerm(value: js.Array[Double]): Self = StObject.set(x, "perm", value.asInstanceOf[js.Any])
     
-    inline def setPermVarargs(value: Double*): Self = StObject.set(x, "perm", js.Array(value :_*))
+    inline def setPermVarargs(value: Double*): Self = StObject.set(x, "perm", js.Array(value*))
   }
 }

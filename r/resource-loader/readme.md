@@ -1,7 +1,7 @@
 
 # Scala.js typings for resource-loader
 
-Typings are for version 3.0.1
+Typings are for version 4.0.0-rc4
 
 ## Library description:
 A generic asset loader, made with web games in mind.
@@ -10,10 +10,10 @@ A generic asset loader, made with web games in mind.
 | ------------------ | :-------------: |
 | Full name          | resource-loader |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 21 |
-| # downloads        | 1442246 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 167994.33333333334 |
+| # stars            | 399.0 |
 
 ## Links
 - [Homepage](https://github.com/englercj/resource-loader)

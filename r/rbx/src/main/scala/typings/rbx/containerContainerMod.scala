@@ -59,7 +59,7 @@ object containerContainerMod {
   
   @JSImport("rbx/elements/container/container", "Container")
   @js.native
-  val Container: ForwardRefAsExoticComponent[ContainerProps, ElementType[js.Any]] = js.native
+  val Container: ForwardRefAsExoticComponent[ContainerProps, ElementType[Any]] = js.native
   
   trait ContainerModifierProps extends StObject {
     

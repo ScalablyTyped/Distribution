@@ -10,15 +10,12 @@ angular-load ============
 | ------------------ | :-------------: |
 | Full name          | angular-load |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 98960 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10472.666666666666 |
+| # stars            | 242.0 |
 
 ## Links
-- [Homepage](https://github.com/urish/angular-load#readme)
-- [Bugs](https://github.com/urish/angular-load/issues)
-- [Repository](https://github.com/urish/angular-load)
 - [Npm](https://www.npmjs.com/package/angular-load)
     
 

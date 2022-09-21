@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "PowerEdge")
 @js.native
-class PowerEdge protected ()
+open class PowerEdge protected ()
   extends typings.webcola.powergraphMod.PowerEdge {
-  def this(source: js.Any, target: js.Any, `type`: Double) = this()
+  def this(source: Any, target: Any, `type`: Double) = this()
 }

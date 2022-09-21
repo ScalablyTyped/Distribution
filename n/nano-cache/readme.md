@@ -10,10 +10,10 @@ simple node cache module
 | ------------------ | :-------------: |
 | Full name          | nano-cache |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 108443 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8216.333333333334 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/akhoury/nano-cache#readme)

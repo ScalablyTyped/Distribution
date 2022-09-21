@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The constructor sets the default fixture definition values.
   **/
-class b2FixtureDef ()
+open class b2FixtureDef ()
   extends StObject
      with typings.box2d.Box2D.Dynamics.b2FixtureDef {
   
@@ -54,5 +54,5 @@ class b2FixtureDef ()
     * Use this to store application specific fixture data.
     **/
   /* CompleteClass */
-  var userData: js.Any = js.native
+  var userData: Any = js.native
 }

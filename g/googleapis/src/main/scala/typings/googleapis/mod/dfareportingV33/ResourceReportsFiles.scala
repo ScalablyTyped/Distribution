@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "dfareporting_v3_3.Resource$Reports$Files")
 @js.native
-class ResourceReportsFiles protected ()
+open class ResourceReportsFiles protected ()
   extends typings.googleapis.v33Mod.dfareportingV33.ResourceReportsFiles {
   def this(context: APIRequestContext) = this()
 }

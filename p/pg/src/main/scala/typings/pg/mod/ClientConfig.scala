@@ -25,6 +25,8 @@ trait ClientConfig extends StObject {
   
   var keepAliveInitialDelayMillis: js.UndefOr[Double] = js.undefined
   
+  var options: js.UndefOr[String] = js.undefined
+  
   var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined
   
   var password: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
@@ -38,6 +40,8 @@ trait ClientConfig extends StObject {
   var statement_timeout: js.UndefOr[`false` | Double] = js.undefined
   
   var stream: js.UndefOr[Duplex] = js.undefined
+  
+  var types: js.UndefOr[CustomTypesConfig] = js.undefined
   
   var user: js.UndefOr[String] = js.undefined
 }
@@ -82,6 +86,10 @@ object ClientConfig {
     
     inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
     inline def setParseInputDatesAsUTC(value: Boolean): Self = StObject.set(x, "parseInputDatesAsUTC", value.asInstanceOf[js.Any])
     
     inline def setParseInputDatesAsUTCUndefined: Self = StObject.set(x, "parseInputDatesAsUTC", js.undefined)
@@ -111,6 +119,10 @@ object ClientConfig {
     inline def setStream(value: Duplex): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    
+    inline def setTypes(value: CustomTypesConfig): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Validation Library
 | ------------------ | :-------------: |
 | Full name          | spected |
 | Keywords           | Validation, Deeply Nested Validation Rules, Forms |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 66480 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3965.3333333333335 |
+| # stars            | 706.0 |
 
 ## Links
 - [Homepage](https://github.com/25th-floor/spected#readme)

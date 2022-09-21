@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentDetached extends StObject {
   
   /**
-    * Implement this hook if you want to perform custom logic if/when the component is removed from the the DOM.
-    */
+  	* Implement this hook if you want to perform custom logic if/when the component is removed from the the DOM.
+  	*/
   def detached(): Unit
 }
 object ComponentDetached {

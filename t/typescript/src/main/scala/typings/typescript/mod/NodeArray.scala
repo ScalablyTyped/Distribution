@@ -11,5 +11,5 @@ trait NodeArray[T /* <: Node */]
      with ReadonlyArray[T]
      with ReadonlyTextRange {
   
-  var hasTrailingComma: js.UndefOr[Boolean] = js.native
+  val hasTrailingComma: Boolean = js.native
 }

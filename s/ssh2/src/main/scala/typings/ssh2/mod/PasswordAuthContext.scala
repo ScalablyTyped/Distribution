@@ -16,4 +16,6 @@ trait PasswordAuthContext
   
   /** The password sent by the client. */
   var password: String = js.native
+  
+  def requestChange(prompt: String, cb: ChangePasswordCallback): Unit = js.native
 }

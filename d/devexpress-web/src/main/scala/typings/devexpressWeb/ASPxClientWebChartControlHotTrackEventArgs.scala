@@ -49,7 +49,7 @@ trait ASPxClientWebChartControlHotTrackEventArgs
   /**
     * Gets the HTML object that contains the processed item.
     */
-  var htmlElement: js.Any
+  var htmlElement: Any
   
   /**
     * Gets the X-coordinate of the hit test point, relative to the top left corner of the chart.
@@ -71,7 +71,7 @@ object ASPxClientWebChartControlHotTrackEventArgs {
     chart: ASPxClientWebChart,
     hitInfo: ASPxClientWebChartHitInfo,
     hitObject: ASPxClientWebChartElement,
-    htmlElement: js.Any,
+    htmlElement: Any,
     processOnServer: Boolean,
     x: Double,
     y: Double
@@ -96,7 +96,7 @@ object ASPxClientWebChartControlHotTrackEventArgs {
     
     inline def setHitObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "hitObject", value.asInstanceOf[js.Any])
     
-    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

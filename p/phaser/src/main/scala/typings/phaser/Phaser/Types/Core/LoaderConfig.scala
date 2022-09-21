@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Types.Core
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ trait LoaderConfig extends StObject {
   /**
     * The maximum number of resources the loader will start loading at once.
     */
-  var maxParallelDownloads: js.UndefOr[integer] = js.undefined
+  var maxParallelDownloads: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional password for all XHR requests.
@@ -45,7 +44,7 @@ trait LoaderConfig extends StObject {
   /**
     * Optional XHR timeout value, in ms.
     */
-  var timeout: js.UndefOr[integer] = js.undefined
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional username for all XHR requests.
@@ -73,7 +72,7 @@ object LoaderConfig {
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    inline def setMaxParallelDownloads(value: integer): Self = StObject.set(x, "maxParallelDownloads", value.asInstanceOf[js.Any])
+    inline def setMaxParallelDownloads(value: Double): Self = StObject.set(x, "maxParallelDownloads", value.asInstanceOf[js.Any])
     
     inline def setMaxParallelDownloadsUndefined: Self = StObject.set(x, "maxParallelDownloads", js.undefined)
     
@@ -89,7 +88,7 @@ object LoaderConfig {
     
     inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    inline def setTimeout(value: integer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     

@@ -10,10 +10,10 @@ Easily-extendable error for use with ES6 classes
 | ------------------ | :-------------: |
 | Full name          | es6-error |
 | Keywords           | es6, error, babel |
-| # releases         | 0 |
-| # dependents       | 438 |
-| # downloads        | 86075006 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6213287666666666E7 |
+| # stars            | 218.0 |
 
 ## Links
 - [Homepage](https://github.com/bjyoungblood/es6-error)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.icon because var conflicts: $compareValue_Original, $height, $prepareValue_Original, $scope, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.icon")
+- typings.webix.webix.ui.icon because var conflicts: $compareValue_Original, $height, $prepareValue_Original, $scope, $setNode, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.icon")
 @js.native
-class icon ()
+open class icon ()
   extends typings.webix.mod.ui.icon

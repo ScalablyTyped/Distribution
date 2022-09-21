@@ -48,7 +48,7 @@ object Distribution {
     
     inline def setBucketCountsUndefined: Self = StObject.set(x, "bucketCounts", js.undefined)
     
-    inline def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value :_*))
+    inline def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value*))
     
     inline def setBucketOptions(value: BucketOptions): Self = StObject.set(x, "bucketOptions", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object Distribution {
     
     inline def setExemplarsUndefined: Self = StObject.set(x, "exemplars", js.undefined)
     
-    inline def setExemplarsVarargs(value: Exemplar*): Self = StObject.set(x, "exemplars", js.Array(value :_*))
+    inline def setExemplarsVarargs(value: Exemplar*): Self = StObject.set(x, "exemplars", js.Array(value*))
     
     inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     

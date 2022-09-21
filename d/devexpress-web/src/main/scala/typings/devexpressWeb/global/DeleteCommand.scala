@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DeleteCommand")
 @js.native
-class DeleteCommand ()
+open class DeleteCommand ()
   extends StObject
      with typings.devexpressWeb.DeleteCommand {
   

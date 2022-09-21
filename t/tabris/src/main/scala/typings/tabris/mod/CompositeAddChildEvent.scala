@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CompositeAddChildEvent[Target] extends EventObject[Target] {
   
-  val child: Widget = js.native
+  val child: Widget[Any] = js.native
   
   val index: Double = js.native
 }

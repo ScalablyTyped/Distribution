@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A representation of a floating point mean metric contribution.
-  */
 trait SchemaFloatingPointMean extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaFloatingPointMean extends StObject {
   /**
     * The sum of all values being aggregated.
     */
-  var sum: js.UndefOr[Double] = js.undefined
+  var sum: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaFloatingPointMean {
   
@@ -33,6 +30,8 @@ object SchemaFloatingPointMean {
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     inline def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    
+    inline def setSumNull: Self = StObject.set(x, "sum", null)
     
     inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }

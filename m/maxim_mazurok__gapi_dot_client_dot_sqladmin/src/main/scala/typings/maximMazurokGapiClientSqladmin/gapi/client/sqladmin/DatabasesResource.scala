@@ -2,8 +2,8 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSqladmin.anon.Callback
-import typings.maximMazurokGapiClientSqladmin.anon.Instance
-import typings.maximMazurokGapiClientSqladmin.anon.Key
+import typings.maximMazurokGapiClientSqladmin.anon.Oauthtoken
+import typings.maximMazurokGapiClientSqladmin.anon.PrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ trait DatabasesResource extends StObject {
   
   def insert(request: Callback, body: Database): Request[Operation] = js.native
   /** Inserts a resource containing information about a database inside a Cloud SQL instance. */
-  def insert(request: Instance): Request[Operation] = js.native
+  def insert(request: Oauthtoken): Request[Operation] = js.native
   
   /** Lists databases in the specified Cloud SQL instance. */
   def list(): Request[DatabasesListResponse] = js.native
@@ -29,9 +29,9 @@ trait DatabasesResource extends StObject {
   
   def patch(request: typings.maximMazurokGapiClientSqladmin.anon.Database, body: Database): Request[Operation] = js.native
   /** Partially updates a resource containing information about a database inside a Cloud SQL instance. This method supports patch semantics. */
-  def patch(request: Key): Request[Operation] = js.native
+  def patch(request: PrettyPrint): Request[Operation] = js.native
   
   def update(request: typings.maximMazurokGapiClientSqladmin.anon.Database, body: Database): Request[Operation] = js.native
   /** Updates a resource containing information about a database inside a Cloud SQL instance. */
-  def update(request: Key): Request[Operation] = js.native
+  def update(request: PrettyPrint): Request[Operation] = js.native
 }

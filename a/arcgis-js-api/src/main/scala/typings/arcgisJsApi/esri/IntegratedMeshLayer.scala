@@ -11,7 +11,8 @@ trait IntegratedMeshLayer
      with Layer
      with SceneService
      with PortalLayer
-     with ScaleRangeLayer {
+     with ScaleRangeLayer
+     with APIKeyMixin {
   
   /**
     * Specifies how the mesh is placed on the vertical axis (z).

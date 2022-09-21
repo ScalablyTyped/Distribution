@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/completion-context/
+/// https://docs.nova.app/api-reference/completion-context/
 trait CompletionContext extends StObject {
   
   val line: String

@@ -17,7 +17,7 @@ trait GraphqlApi extends StObject {
   var apiId: js.UndefOr[String] = js.undefined
   
   /**
-    * The ARN.
+    * The Amazon Resource Name (ARN).
     */
   var arn: js.UndefOr[String] = js.undefined
   
@@ -25,6 +25,11 @@ trait GraphqlApi extends StObject {
     * The authentication type.
     */
   var authenticationType: js.UndefOr[AuthenticationType] = js.undefined
+  
+  /**
+    * Configuration for Lambda function authorization.
+    */
+  var lambdaAuthorizerConfig: js.UndefOr[LambdaAuthorizerConfig] = js.undefined
   
   /**
     * The Amazon CloudWatch Logs configuration.
@@ -57,12 +62,12 @@ trait GraphqlApi extends StObject {
   var userPoolConfig: js.UndefOr[UserPoolConfig] = js.undefined
   
   /**
-    * The ARN of the AWS Web Application Firewall (WAF) ACL associated with this GraphqlApi, if one exists.
+    * The ARN of the WAF access control list (ACL) associated with this GraphqlApi, if one exists.
     */
   var wafWebAclArn: js.UndefOr[String] = js.undefined
   
   /**
-    * A flag representing whether X-Ray tracing is enabled for this GraphqlApi.
+    * A flag indicating whether to use X-Ray tracing for this GraphqlApi.
     */
   var xrayEnabled: js.UndefOr[Boolean] = js.undefined
 }
@@ -79,7 +84,7 @@ object GraphqlApi {
     
     inline def setAdditionalAuthenticationProvidersUndefined: Self = StObject.set(x, "additionalAuthenticationProviders", js.undefined)
     
-    inline def setAdditionalAuthenticationProvidersVarargs(value: AdditionalAuthenticationProvider*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value :_*))
+    inline def setAdditionalAuthenticationProvidersVarargs(value: AdditionalAuthenticationProvider*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value*))
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
@@ -92,6 +97,10 @@ object GraphqlApi {
     inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
     inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
+    
+    inline def setLambdaAuthorizerConfig(value: LambdaAuthorizerConfig): Self = StObject.set(x, "lambdaAuthorizerConfig", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaAuthorizerConfigUndefined: Self = StObject.set(x, "lambdaAuthorizerConfig", js.undefined)
     
     inline def setLogConfig(value: LogConfig): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
     

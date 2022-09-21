@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-version-number
 
-Typings are for version 0.3
+Typings are for version 0.3.6
 
 ## Library description:
 Access app version inside React Native
@@ -10,10 +10,10 @@ Access app version inside React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-version-number |
 | Keywords           | react, react-native, ios, react-component |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 1199415 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 90291.33333333333 |
+| # stars            | 366.0 |
 
 ## Links
 - [Homepage](https://github.com/APSL/react-native-version-number#readme)
@@ -24,7 +24,7 @@ Access app version inside React Native
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

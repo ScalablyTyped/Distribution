@@ -12,7 +12,7 @@ object panelMod {
   
   @JSImport("rc-collapse/es/Panel", JSImport.Default)
   @js.native
-  class default () extends CollapsePanel
+  open class default () extends CollapsePanel
   object default {
     
     /* static member */
@@ -47,12 +47,15 @@ object panelMod {
   }
   
   @js.native
-  trait CollapsePanel
-    extends Component[CollapsePanelProps, js.Any, js.Any] {
-    
-    def handleItemClick(): Unit = js.native
+  trait CollapsePanel extends Component[CollapsePanelProps, Any, Any] {
     
     def handleKeyPress(e: KeyboardEvent[Element]): Unit = js.native
+    
+    def onItemClick(): Unit = js.native
+    
+    def renderIcon(): typings.react.mod.global.JSX.Element = js.native
+    
+    def renderTitle(): typings.react.mod.global.JSX.Element = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MCollapsePanel(nextProps: CollapsePanelProps): Boolean = js.native

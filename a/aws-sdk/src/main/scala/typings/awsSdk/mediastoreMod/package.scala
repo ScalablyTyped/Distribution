@@ -5,30 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AllowedHeaders = js.Array[typings.awsSdk.mediastoreMod.Header]
+type AllowedHeaders = js.Array[Header]
 
-type AllowedMethods = js.Array[typings.awsSdk.mediastoreMod.MethodName]
+type AllowedMethods = js.Array[MethodName]
 
-type AllowedOrigins = js.Array[typings.awsSdk.mediastoreMod.Origin]
+type AllowedOrigins = js.Array[Origin]
 
-type ContainerARN = java.lang.String
+type ContainerARN = String
 
-type ContainerAccessLoggingEnabled = scala.Boolean
+type ContainerAccessLoggingEnabled = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type ContainerLevelMetrics = typings.awsSdk.mediastoreMod._ContainerLevelMetrics | java.lang.String
+type ContainerLevelMetrics = _ContainerLevelMetrics | String
 
-type ContainerList = js.Array[typings.awsSdk.mediastoreMod.Container]
+type ContainerList = js.Array[Container]
 
-type ContainerListLimit = scala.Double
+type ContainerListLimit = Double
 
-type ContainerName = java.lang.String
+type ContainerName = String
 
-type ContainerPolicy = java.lang.String
+type ContainerPolicy = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -36,19 +36,19 @@ type ContainerPolicy = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type ContainerStatus = typings.awsSdk.mediastoreMod._ContainerStatus | java.lang.String
+type ContainerStatus = _ContainerStatus | String
 
-type CorsPolicy = js.Array[typings.awsSdk.mediastoreMod.CorsRule]
+type CorsPolicy = js.Array[CorsRule]
 
-type Endpoint = java.lang.String
+type Endpoint = String
 
-type ExposeHeaders = js.Array[typings.awsSdk.mediastoreMod.Header]
+type ExposeHeaders = js.Array[Header]
 
-type Header = java.lang.String
+type Header = String
 
-type LifecyclePolicy = java.lang.String
+type LifecyclePolicy = String
 
-type MaxAgeSeconds = scala.Double
+type MaxAgeSeconds = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUT
@@ -57,31 +57,31 @@ type MaxAgeSeconds = scala.Double
   - typings.awsSdk.awsSdkStrings.HEAD
   - java.lang.String
 */
-type MethodName = typings.awsSdk.mediastoreMod._MethodName | java.lang.String
+type MethodName = _MethodName | String
 
-type MetricPolicyRules = js.Array[typings.awsSdk.mediastoreMod.MetricPolicyRule]
+type MetricPolicyRules = js.Array[MetricPolicyRule]
 
-type ObjectGroup = java.lang.String
+type ObjectGroup = String
 
-type ObjectGroupName = java.lang.String
+type ObjectGroupName = String
 
-type Origin = java.lang.String
+type Origin = String
 
-type PaginationToken = java.lang.String
+type PaginationToken = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.mediastoreMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.mediastoreMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TimeStamp = typings.std.Date
+type TimeStamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-09-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.mediastoreMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

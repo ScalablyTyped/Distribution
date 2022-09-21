@@ -26,7 +26,7 @@ object NetworkEndpointGroupsScopedList {
     
     inline def setNetworkEndpointGroupsUndefined: Self = StObject.set(x, "networkEndpointGroups", js.undefined)
     
-    inline def setNetworkEndpointGroupsVarargs(value: NetworkEndpointGroup*): Self = StObject.set(x, "networkEndpointGroups", js.Array(value :_*))
+    inline def setNetworkEndpointGroupsVarargs(value: NetworkEndpointGroup*): Self = StObject.set(x, "networkEndpointGroups", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

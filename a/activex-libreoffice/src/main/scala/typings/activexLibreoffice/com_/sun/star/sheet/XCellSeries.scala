@@ -43,7 +43,7 @@ object XCellSeries {
     acquire: () => Unit,
     fillAuto: (FillDirection, Double) => Unit,
     fillSeries: (FillDirection, FillMode, FillDateMode, Double, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCellSeries = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), fillAuto = js.Any.fromFunction2(fillAuto), fillSeries = js.Any.fromFunction5(fillSeries), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

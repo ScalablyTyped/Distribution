@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("dialogflow-fulfillment", "Card")
   @js.native
-  class Card protected () extends RichResponse {
+  open class Card protected () extends RichResponse {
     def this(card: String) = this()
     def this(card: js.Object) = this()
     
@@ -36,7 +36,7 @@ object mod {
   
   @JSImport("dialogflow-fulfillment", "Image")
   @js.native
-  class Image protected () extends RichResponse {
+  open class Image protected () extends RichResponse {
     def this(image: String) = this()
     def this(image: ImageUrl) = this()
     
@@ -49,9 +49,9 @@ object mod {
   
   @JSImport("dialogflow-fulfillment", "Payload")
   @js.native
-  class Payload protected () extends RichResponse {
-    def this(platform: Platforms, payload: js.Any) = this()
-    def this(platform: Platforms, payload: js.Any, options: RawPayload) = this()
+  open class Payload protected () extends RichResponse {
+    def this(platform: Platforms, payload: Any) = this()
+    def this(platform: Platforms, payload: Any, options: RawPayload) = this()
     
     /* private */ def getPayload_(platform: Platforms): js.Object = js.native
     
@@ -59,7 +59,7 @@ object mod {
     
     /* private */ def getV2ResponseObject_(platform: Platforms): js.Object = js.native
     
-    var payload: js.Any = js.native
+    var payload: Any = js.native
     
     def setPayload(payload: String): Payload = js.native
   }
@@ -130,7 +130,7 @@ object mod {
   
   @JSImport("dialogflow-fulfillment", "RichResponse")
   @js.native
-  class RichResponse () extends StObject {
+  open class RichResponse () extends StObject {
     
     var platform: Platforms = js.native
     
@@ -139,7 +139,7 @@ object mod {
   
   @JSImport("dialogflow-fulfillment", "Suggestion")
   @js.native
-  class Suggestion protected () extends RichResponse {
+  open class Suggestion protected () extends RichResponse {
     def this(suggestion: String) = this()
     def this(suggestion: js.Object) = this()
     
@@ -154,7 +154,7 @@ object mod {
   
   @JSImport("dialogflow-fulfillment", "Text")
   @js.native
-  class Text protected () extends RichResponse {
+  open class Text protected () extends RichResponse {
     def this(text: String) = this()
     def this(text: js.Object) = this()
     
@@ -169,7 +169,7 @@ object mod {
   
   @JSImport("dialogflow-fulfillment", "WebhookClient")
   @js.native
-  class WebhookClient protected () extends StObject {
+  open class WebhookClient protected () extends StObject {
     def this(options: js.Object) = this()
     /**
       * Constructor for WebhookClient object To be used in the Dialogflow fulfillment webhook logic
@@ -218,7 +218,7 @@ object mod {
     /**
       * Get Actions on Google DialogflowConversation object
       */
-    def conv(): DialogflowConversation[js.Any, JsonObject, Contexts] = js.native
+    def conv(): DialogflowConversation[Any, JsonObject, Contexts] = js.native
     
     def end(responses: String): Unit = js.native
     def end(responses: js.Array[RichResponse | String]): Unit = js.native
@@ -239,12 +239,12 @@ object mod {
       */
     def getContext(contextName: String): Lifespan = js.native
     
-    def handleRequest(handler: js.Function1[/* agent */ this.type, Unit]): js.Promise[js.Any] = js.native
+    def handleRequest(handler: js.Function1[/* agent */ this.type, Unit]): js.Promise[Any] = js.native
     /**
       * Handles the incoming Dialogflow request using a handler or Map of handlers Each handler must be a function callback.
       * @param handler map of Dialogflow action name to handler function or function to handle all requests (regardless of Dialogflow action).
       */
-    def handleRequest(handler: Map[String, js.Function1[/* agent */ this.type, Unit]]): js.Promise[js.Any] = js.native
+    def handleRequest(handler: Map[String, js.Function1[/* agent */ this.type, Unit]]): js.Promise[Any] = js.native
     
     /** Dialogflow intent name or null if no value */
     val intent: String = js.native

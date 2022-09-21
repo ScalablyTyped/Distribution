@@ -6,87 +6,101 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Attachment extends StObject {
+  trait Attachments extends StObject {
     
-    var attachment: js.UndefOr[Name] = js.undefined
+    var attachments: js.UndefOr[js.Array[MimeType]] = js.undefined
     
     var bccRecipients: js.UndefOr[js.Array[String]] = js.undefined
     
-    var body: String
+    var body: js.UndefOr[String] = js.undefined
     
     var ccRecipients: js.UndefOr[js.Array[String]] = js.undefined
     
-    var isHTML: Boolean
+    var customChooserTitle: js.UndefOr[String] = js.undefined
+    
+    var isHTML: js.UndefOr[Boolean] = js.undefined
     
     var recipients: js.UndefOr[js.Array[String]] = js.undefined
     
-    var subject: String
+    var subject: js.UndefOr[String] = js.undefined
   }
-  object Attachment {
+  object Attachments {
     
-    inline def apply(body: String, isHTML: Boolean, subject: String): Attachment = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], isHTML = isHTML.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Attachment]
+    inline def apply(): Attachments = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Attachments]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    extension [Self <: Attachments](x: Self) {
       
-      inline def setAttachment(value: Name): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[MimeType]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      inline def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
+      inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+      
+      inline def setAttachmentsVarargs(value: MimeType*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setBccRecipients(value: js.Array[String]): Self = StObject.set(x, "bccRecipients", value.asInstanceOf[js.Any])
       
       inline def setBccRecipientsUndefined: Self = StObject.set(x, "bccRecipients", js.undefined)
       
-      inline def setBccRecipientsVarargs(value: String*): Self = StObject.set(x, "bccRecipients", js.Array(value :_*))
+      inline def setBccRecipientsVarargs(value: String*): Self = StObject.set(x, "bccRecipients", js.Array(value*))
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
       inline def setCcRecipients(value: js.Array[String]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
       
       inline def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
       
-      inline def setCcRecipientsVarargs(value: String*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
+      inline def setCcRecipientsVarargs(value: String*): Self = StObject.set(x, "ccRecipients", js.Array(value*))
+      
+      inline def setCustomChooserTitle(value: String): Self = StObject.set(x, "customChooserTitle", value.asInstanceOf[js.Any])
+      
+      inline def setCustomChooserTitleUndefined: Self = StObject.set(x, "customChooserTitle", js.undefined)
       
       inline def setIsHTML(value: Boolean): Self = StObject.set(x, "isHTML", value.asInstanceOf[js.Any])
+      
+      inline def setIsHTMLUndefined: Self = StObject.set(x, "isHTML", js.undefined)
       
       inline def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
       
       inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
       
-      inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+      inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value*))
       
       inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     }
   }
   
-  trait Name extends StObject {
+  trait MimeType extends StObject {
     
-    /**
-      * Optional: Custom filename for attachment
-      */
+    // Specify either 'type' or 'mimeType'
+    var mimeType: js.UndefOr[String] = js.undefined
+    
     var name: js.UndefOr[String] = js.undefined
     
-    /**
-      * The absolute path of the file from which to read data.
-      */
-    var path: String
+    var path: js.UndefOr[String] = js.undefined
     
-    /**
-      * Mime Type: jpg, png, doc, ppt, html, pdf, csv
-      */
-    var `type`: String
+    var `type`: js.UndefOr[String] = js.undefined
+    
+    // Specify either 'path' or 'uri'
+    var uri: js.UndefOr[String] = js.undefined
   }
-  object Name {
+  object MimeType {
     
-    inline def apply(path: String, `type`: String): Name = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Name]
+    inline def apply(): MimeType = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MimeType]
     }
     
-    extension [Self <: Name](x: Self) {
+    extension [Self <: MimeType](x: Self) {
+      
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -94,7 +108,15 @@ object anon {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
 }

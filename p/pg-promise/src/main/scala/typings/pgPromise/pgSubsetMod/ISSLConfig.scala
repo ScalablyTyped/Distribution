@@ -1,9 +1,7 @@
 package typings.pgPromise.pgSubsetMod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.tlsMod.PeerCertificate
-import typings.std.Error
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // http://nodejs.org/api/tls.html#tls_tls_connect_options_callback
 trait ISSLConfig extends StObject {
   
-  var NPNProtocols: js.UndefOr[(js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array] = js.undefined
+  var NPNProtocols: js.UndefOr[
+    (js.Array[Buffer | String | js.typedarray.Uint8Array]) | Buffer | js.typedarray.Uint8Array
+  ] = js.undefined
   
   var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
   var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.undefined
+  var checkServerIdentity: js.UndefOr[
+    js.Function2[/* hostname */ String, /* cert */ PeerCertificate, js.UndefOr[js.Error]]
+  ] = js.undefined
   
   var key: js.UndefOr[String | Buffer | (js.Array[Buffer | js.Object])] = js.undefined
   
@@ -44,15 +46,15 @@ object ISSLConfig {
     
     inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
-    inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+    inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
     
     inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
-    inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+    inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value*))
     
-    inline def setCheckServerIdentity(value: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+    inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
     
     inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
     
@@ -60,13 +62,13 @@ object ISSLConfig {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setKeyVarargs(value: (Buffer | js.Object)*): Self = StObject.set(x, "key", js.Array(value :_*))
+    inline def setKeyVarargs(value: (Buffer | js.Object)*): Self = StObject.set(x, "key", js.Array(value*))
     
-    inline def setNPNProtocols(value: (js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array): Self = StObject.set(x, "NPNProtocols", value.asInstanceOf[js.Any])
+    inline def setNPNProtocols(value: (js.Array[Buffer | String | js.typedarray.Uint8Array]) | Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "NPNProtocols", value.asInstanceOf[js.Any])
     
     inline def setNPNProtocolsUndefined: Self = StObject.set(x, "NPNProtocols", js.undefined)
     
-    inline def setNPNProtocolsVarargs(value: (Buffer | String | Uint8Array)*): Self = StObject.set(x, "NPNProtocols", js.Array(value :_*))
+    inline def setNPNProtocolsVarargs(value: (Buffer | String | js.typedarray.Uint8Array)*): Self = StObject.set(x, "NPNProtocols", js.Array(value*))
     
     inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
@@ -76,7 +78,7 @@ object ISSLConfig {
     
     inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
     
-    inline def setPfxVarargs(value: (String | Buffer | js.Object)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
+    inline def setPfxVarargs(value: (String | Buffer | js.Object)*): Self = StObject.set(x, "pfx", js.Array(value*))
     
     inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
     

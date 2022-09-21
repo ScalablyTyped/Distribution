@@ -39,7 +39,7 @@ object BqmlTrainingRun {
     
     inline def setIterationResultsUndefined: Self = StObject.set(x, "iterationResults", js.undefined)
     
-    inline def setIterationResultsVarargs(value: BqmlIterationResult*): Self = StObject.set(x, "iterationResults", js.Array(value :_*))
+    inline def setIterationResultsVarargs(value: BqmlIterationResult*): Self = StObject.set(x, "iterationResults", js.Array(value*))
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

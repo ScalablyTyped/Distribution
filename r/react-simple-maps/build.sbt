@@ -1,16 +1,21 @@
 organization := "org.scalablytyped"
 name := "react-simple-maps"
-version := "1.0-dt-20200629Z-d308b0"
-scalaVersion := "3.0.1"
+version := "1.0-dt-20220125Z-5c0db7"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
-  "org.scalablytyped" %%% "d3-geo" % "2.0-dt-20201002Z-886c89",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20201002Z-2461bc",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-7b6cf2",
+  "org.scalablytyped" %%% "d3-color" % "3.1-dt-20220522Z-72e26c",
+  "org.scalablytyped" %%% "d3-geo" % "3.0-dt-20211202Z-a2b86e",
+  "org.scalablytyped" %%% "d3-interpolate" % "3.0-dt-20220624Z-289c33",
+  "org.scalablytyped" %%% "d3-selection" % "3.0-dt-20220720Z-acb353",
+  "org.scalablytyped" %%% "d3-zoom" % "3.0-dt-20220624Z-ae5189",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20220713Z-5d61ed",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-737217",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220913Z-bad9e4",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fce63f",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,5 +1,7 @@
 package typings.vscodeLanguageclient.clientMod
 
+import typings.vscodeJsonrpc.messageReaderMod.MessageReader
+import typings.vscodeJsonrpc.messageWriterMod.MessageWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,25 +10,22 @@ trait MessageTransports extends StObject {
   
   var detached: js.UndefOr[Boolean] = js.undefined
   
-  var reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader
+  var reader: MessageReader
   
-  var writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
+  var writer: MessageWriter
 }
 object MessageTransports {
   
-  inline def apply(
-    reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-    writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
-  ): MessageTransports = {
+  inline def apply(reader: MessageReader, writer: MessageWriter): MessageTransports = {
     val __obj = js.Dynamic.literal(reader = reader.asInstanceOf[js.Any], writer = writer.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageTransports]
   }
   
-  @JSImport("vscode-languageclient/lib/client", "MessageTransports")
+  @JSImport("vscode-languageclient/lib/common/client", "MessageTransports")
   @js.native
   val ^ : js.Any = js.native
   
-  inline def is(value: js.Any): /* is vscode-languageclient.vscode-languageclient/lib/client.MessageTransports */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageclient.vscode-languageclient/lib/client.MessageTransports */ Boolean]
+  inline def is(value: Any): /* is vscode-languageclient.vscode-languageclient/lib/common/client.MessageTransports */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageclient.vscode-languageclient/lib/common/client.MessageTransports */ Boolean]
   
   extension [Self <: MessageTransports](x: Self) {
     
@@ -34,8 +33,8 @@ object MessageTransports {
     
     inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
-    inline def setReader(value: typings.vscodeJsonrpc.messageReaderMod.MessageReader): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
+    inline def setReader(value: MessageReader): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
     
-    inline def setWriter(value: typings.vscodeJsonrpc.messageWriterMod.MessageWriter): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
+    inline def setWriter(value: MessageWriter): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
   }
 }

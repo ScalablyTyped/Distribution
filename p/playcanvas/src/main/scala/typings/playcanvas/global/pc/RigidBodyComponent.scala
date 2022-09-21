@@ -5,44 +5,89 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new RigidBodyComponent.
-  * @property mass - The mass of the body. This is only relevant for {@link pc.BODYTYPE_DYNAMIC}
-  * bodies, other types have infinite mass. Defaults to 1.
-  * @property linearVelocity - Defines the speed of the body in a given direction.
-  * @property angularVelocity - Defines the rotational speed of the body around each world axis.
-  * @property linearDamping - Controls the rate at which a body loses linear velocity over time.
-  * Defaults to 0.
-  * @property angularDamping - Controls the rate at which a body loses angular velocity over time.
-  * Defaults to 0.
-  * @property linearFactor - Scaling factor for linear movement of the body in each axis. Only
-  * valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
-  * @property angularFactor - Scaling factor for angular movement of the body in each axis. Only
-  * valid for rigid bodies of type pc.BODYTYPE_DYNAMIC. Defaults to 1 in all axes.
-  * @property friction - The friction value used when contacts occur between two bodies. A higher
-  * value indicates more friction. Should be set in the range 0 to 1. Defaults to 0.5.
-  * @property restitution - Influences the amount of energy lost when two rigid bodies collide. The
-  * calculation multiplies the restitution values for both colliding bodies. A multiplied value of 0 means
-  * that all energy is lost in the collision while a value of 1 means that no energy is lost. Should be
-  * set in the range 0 to 1. Defaults to 0.
-  * @property group - The collision group this body belongs to. Combine the group and the mask to
-  * prevent bodies colliding with each other. Defaults to 1.
-  * @property mask - The collision mask sets which groups this body collides with. It is a bitfield
-  * of 16 bits, the first 8 bits are reserved for engine use. Defaults to 65535.
-  * @property type - The rigid body type determines how the body is simulated. Can be:
+  * The rigidbody component, when combined with a {@link CollisionComponent}, allows your entities
+  * to be simulated using realistic physics. A rigidbody component will fall under gravity and
+  * collide with other rigid bodies. Using scripts, you can apply forces and impulses to rigid
+  * bodies.
   *
-  * * {@link pc.BODYTYPE_STATIC}: infinite mass and cannot move.
-  * * {@link pc.BODYTYPE_DYNAMIC}: simulated according to applied forces.
-  * * {@link pc.BODYTYPE_KINEMATIC}: infinite mass and does not respond to forces but can still be moved
-  * by setting their velocity or position.
+  * You should never need to use the RigidBodyComponent constructor. To add an RigidBodyComponent to
+  * a {@link Entity}, use {@link Entity#addComponent}:
   *
-  * Defaults to pc.BODYTYPE_STATIC.
-  * @param system - The ComponentSystem that created this component.
-  * @param entity - The entity this component is attached to.
+  * ```javascript
+  * // Create a static 1x1x1 box-shaped rigid body
+  * const entity = pc.Entity();
+  * entity.addComponent("rigidbody"); // With no options specified, this defaults to a 'static' body
+  * entity.addComponent("collision"); // With no options specified, this defaults to a 1x1x1 box shape
+  * ```
+  *
+  * To create a dynamic sphere with mass of 10, do:
+  *
+  * ```javascript
+  * const entity = pc.Entity();
+  * entity.addComponent("rigidbody", {
+  *     type: pc.BODYTYPE_DYNAMIC,
+  *     mass: 10
+  * });
+  * entity.addComponent("collision", {
+  *     type: "sphere"
+  * });
+  * ```
+  *
+  * Relevant 'Engine-only' examples:
+  *
+  * - [Falling shapes](http://playcanvas.github.io/#physics/falling-shapes)
+  * - [Vehicle physics](http://playcanvas.github.io/#physics/vehicle)
+  *
+  * @augments Component
   */
 @JSGlobal("pc.RigidBodyComponent")
 @js.native
-class RigidBodyComponent protected ()
-  extends StObject
-     with typings.playcanvas.pc.RigidBodyComponent {
-  def this(system: typings.playcanvas.pc.RigidBodyComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
+open class RigidBodyComponent protected ()
+  extends typings.playcanvas.mod.RigidBodyComponent {
+  /**
+    * Create a new RigidBodyComponent instance.
+    *
+    * @param {RigidBodyComponentSystem} system - The ComponentSystem that created this component.
+    * @param {Entity} entity - The entity this component is attached to.
+    */
+  def this(system: typings.playcanvas.mod.RigidBodyComponentSystem, entity: typings.playcanvas.mod.Entity) = this()
+}
+object RigidBodyComponent {
+  
+  @JSGlobal("pc.RigidBodyComponent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Fired when a contact occurs between two rigid bodies.
+    *
+    * @event RigidBodyComponent#contact
+    * @param {ContactResult} result - Details of the contact between the two rigid bodies.
+    */
+  /**
+    * Fired when two rigid bodies start touching.
+    *
+    * @event RigidBodyComponent#collisionstart
+    * @param {ContactResult} result - Details of the contact between the two rigid bodies.
+    */
+  /**
+    * Fired when two rigid bodies stop touching.
+    *
+    * @event RigidBodyComponent#collisionend
+    * @param {Entity} other - The {@link Entity} that stopped touching this rigid body.
+    */
+  /**
+    * Fired when a rigid body enters a trigger volume.
+    *
+    * @event RigidBodyComponent#triggerenter
+    * @param {Entity} other - The {@link Entity} with trigger volume that this rigid body entered.
+    */
+  /**
+    * Fired when a rigid body exits a trigger volume.
+    *
+    * @event RigidBodyComponent#triggerleave
+    * @param {Entity} other - The {@link Entity} with trigger volume that this rigid body exited.
+    */
+  /* static member */
+  inline def onLibraryLoaded(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLibraryLoaded")().asInstanceOf[Unit]
 }

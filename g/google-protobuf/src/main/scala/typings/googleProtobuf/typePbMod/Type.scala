@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.googleProtobuf.sourceContextPbMod.SourceContext
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/type_pb", "Type")
 @js.native
-class Type () extends Message {
+open class Type () extends Message {
   
   def addFields(): Field = js.native
   def addFields(value: Unit, index: Double): Field = js.native
@@ -71,7 +70,7 @@ object Type {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Type]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Type]
   
   inline def deserializeBinaryFromReader(message: Type, reader: BinaryReader): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Type]
   
@@ -121,17 +120,17 @@ object Type {
       
       inline def setFieldsList(value: js.Array[typings.googleProtobuf.typePbMod.Field.AsObject]): Self = StObject.set(x, "fieldsList", value.asInstanceOf[js.Any])
       
-      inline def setFieldsListVarargs(value: typings.googleProtobuf.typePbMod.Field.AsObject*): Self = StObject.set(x, "fieldsList", js.Array(value :_*))
+      inline def setFieldsListVarargs(value: typings.googleProtobuf.typePbMod.Field.AsObject*): Self = StObject.set(x, "fieldsList", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOneofsList(value: js.Array[String]): Self = StObject.set(x, "oneofsList", value.asInstanceOf[js.Any])
       
-      inline def setOneofsListVarargs(value: String*): Self = StObject.set(x, "oneofsList", js.Array(value :_*))
+      inline def setOneofsListVarargs(value: String*): Self = StObject.set(x, "oneofsList", js.Array(value*))
       
       inline def setOptionsList(value: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]): Self = StObject.set(x, "optionsList", value.asInstanceOf[js.Any])
       
-      inline def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value :_*))
+      inline def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value*))
       
       inline def setSourceContext(value: typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
       

@@ -14,7 +14,7 @@ sealed trait ProjectResourceFields extends StObject
   * A ProjectResourceFields constant can be used as a parameter of the {@link Office.Document | Document}.getResourceFieldAsync method.
   *
   * For more information about working with fields in Project, see
-  * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In
+  * {@link https://support.microsoft.com/office/615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In
   * Project Help, search for Available fields.
   */
 @JSGlobal("Office.ProjectResourceFields")

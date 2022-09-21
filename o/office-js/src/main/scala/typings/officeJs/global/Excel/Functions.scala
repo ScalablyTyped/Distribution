@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * An object for evaluating Excel functions.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.Functions")
 @js.native
-class Functions ()
+open class Functions ()
   extends StObject
      with typings.officeJs.Excel.Functions {
   

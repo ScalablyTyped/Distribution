@@ -9,7 +9,7 @@ object comparersMod {
   
   @JSImport("@devexpress/utils/lib/utils/comparers", "Comparers")
   @js.native
-  class Comparers () extends StObject
+  open class Comparers () extends StObject
   /* static members */
   object Comparers {
     
@@ -26,7 +26,7 @@ object comparersMod {
   
   @JSImport("@devexpress/utils/lib/utils/comparers", "Equals")
   @js.native
-  class Equals () extends StObject
+  open class Equals () extends StObject
   /* static members */
   object Equals {
     

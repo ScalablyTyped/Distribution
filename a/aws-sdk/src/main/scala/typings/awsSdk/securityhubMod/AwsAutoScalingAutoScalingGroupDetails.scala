@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsAutoScalingAutoScalingGroupDetails extends StObject {
   
   /**
+    * The list of Availability Zones for the automatic scaling group.
+    */
+  var AvailabilityZones: js.UndefOr[AwsAutoScalingAutoScalingGroupAvailabilityZonesList] = js.undefined
+  
+  /**
+    * Indicates whether capacity rebalancing is enabled. 
+    */
+  var CapacityRebalance: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Indicates when the auto scaling group was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
   var CreatedTime: js.UndefOr[NonEmptyString] = js.undefined
@@ -17,7 +27,7 @@ trait AwsAutoScalingAutoScalingGroupDetails extends StObject {
   var HealthCheckGracePeriod: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The service to use for the health checks.
+    * The service to use for the health checks. Valid values are EC2 or ELB.
     */
   var HealthCheckType: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -27,9 +37,19 @@ trait AwsAutoScalingAutoScalingGroupDetails extends StObject {
   var LaunchConfigurationName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    * The launch template to use.
+    */
+  var LaunchTemplate: js.UndefOr[AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecification] = js.undefined
+  
+  /**
     * The list of load balancers associated with the group.
     */
   var LoadBalancerNames: js.UndefOr[StringList] = js.undefined
+  
+  /**
+    * The mixed instances policy for the automatic scaling group.
+    */
+  var MixedInstancesPolicy: js.UndefOr[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetails] = js.undefined
 }
 object AwsAutoScalingAutoScalingGroupDetails {
   
@@ -39,6 +59,16 @@ object AwsAutoScalingAutoScalingGroupDetails {
   }
   
   extension [Self <: AwsAutoScalingAutoScalingGroupDetails](x: Self) {
+    
+    inline def setAvailabilityZones(value: AwsAutoScalingAutoScalingGroupAvailabilityZonesList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    
+    inline def setAvailabilityZonesVarargs(value: AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetails*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
+    
+    inline def setCapacityRebalance(value: Boolean): Self = StObject.set(x, "CapacityRebalance", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityRebalanceUndefined: Self = StObject.set(x, "CapacityRebalance", js.undefined)
     
     inline def setCreatedTime(value: NonEmptyString): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
@@ -56,10 +86,18 @@ object AwsAutoScalingAutoScalingGroupDetails {
     
     inline def setLaunchConfigurationNameUndefined: Self = StObject.set(x, "LaunchConfigurationName", js.undefined)
     
+    inline def setLaunchTemplate(value: AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecification): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
+    
     inline def setLoadBalancerNames(value: StringList): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
     
     inline def setLoadBalancerNamesUndefined: Self = StObject.set(x, "LoadBalancerNames", js.undefined)
     
-    inline def setLoadBalancerNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
+    inline def setLoadBalancerNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value*))
+    
+    inline def setMixedInstancesPolicy(value: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetails): Self = StObject.set(x, "MixedInstancesPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setMixedInstancesPolicyUndefined: Self = StObject.set(x, "MixedInstancesPolicy", js.undefined)
   }
 }

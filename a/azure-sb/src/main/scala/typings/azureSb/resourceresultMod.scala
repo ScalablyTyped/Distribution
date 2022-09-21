@@ -21,7 +21,7 @@ object resourceresultMod {
           def serialize(resourceName: String, resource: js.Object, properties: js.Array[String]): String = js.native
           
           def setName(
-            entry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<any> */ js.Any,
+            entry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<any> */ Any,
             nameProperty: String
           ): Unit = js.native
           def setName(entry: _empty, nameProperty: String): Unit = js.native

@@ -10,7 +10,7 @@ object projectMembersMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectMembers", "ProjectMembers")
   @js.native
-  class ProjectMembers protected () extends ResourceMembers {
+  open class ProjectMembers protected () extends ResourceMembers {
     def this(options: BaseServiceOptions) = this()
   }
 }

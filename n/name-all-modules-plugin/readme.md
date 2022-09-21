@@ -10,10 +10,10 @@ Names all remaining modules that do not get named via NamedModulesPlugin Edit
 | ------------------ | :-------------: |
 | Full name          | name-all-modules-plugin |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 17900149 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 736295.0 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/timse/name-all-modules-plugin#readme)

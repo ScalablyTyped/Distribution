@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "SurveyValidator")
 @js.native
-class SurveyValidator () extends Base {
+open class SurveyValidator () extends Base {
   
   /* protected */ def createCustomError(name: String): SurveyError = js.native
   
@@ -16,30 +16,33 @@ class SurveyValidator () extends Base {
   
   /* protected */ def getErrorText(name: String): String = js.native
   
-  def getLocale(): String = js.native
-  
-  def getMarkdownHtml(text: String): String = js.native
+  def getMarkdownHtml(text: String, name: String): String = js.native
   
   def getProcessedText(text: String): String = js.native
   
-  val isAsync: Boolean = js.native
+  def getRenderer(name: String): String = js.native
   
-  val isRunning: Boolean = js.native
+  def getRendererContext(locStr: LocalizableString): Any = js.native
   
-  val isValidateAllValues: Boolean = js.native
+  def isAsync: Boolean = js.native
   
-  val locText: LocalizableString = js.native
+  def isRunning: Boolean = js.native
+  
+  def isValidateAllValues: Boolean = js.native
+  
+  def locText: LocalizableString = js.native
   
   def onAsyncCompleted(result: ValidatorResult): Unit = js.native
   
-  var text: String = js.native
+  def text: String = js.native
+  def text_=(`val`: String): Unit = js.native
   
-  def validate(value: js.Any): ValidatorResult = js.native
-  def validate(value: js.Any, name: String): ValidatorResult = js.native
-  def validate(value: js.Any, name: String, values: js.Any): ValidatorResult = js.native
-  def validate(value: js.Any, name: String, values: js.Any, properties: js.Any): ValidatorResult = js.native
-  def validate(value: js.Any, name: String, values: Unit, properties: js.Any): ValidatorResult = js.native
-  def validate(value: js.Any, name: Unit, values: js.Any): ValidatorResult = js.native
-  def validate(value: js.Any, name: Unit, values: js.Any, properties: js.Any): ValidatorResult = js.native
-  def validate(value: js.Any, name: Unit, values: Unit, properties: js.Any): ValidatorResult = js.native
+  def validate(value: Any): ValidatorResult = js.native
+  def validate(value: Any, name: String): ValidatorResult = js.native
+  def validate(value: Any, name: String, values: Any): ValidatorResult = js.native
+  def validate(value: Any, name: String, values: Any, properties: Any): ValidatorResult = js.native
+  def validate(value: Any, name: String, values: Unit, properties: Any): ValidatorResult = js.native
+  def validate(value: Any, name: Unit, values: Any): ValidatorResult = js.native
+  def validate(value: Any, name: Unit, values: Any, properties: Any): ValidatorResult = js.native
+  def validate(value: Any, name: Unit, values: Unit, properties: Any): ValidatorResult = js.native
 }

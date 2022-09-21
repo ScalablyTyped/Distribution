@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object faToiletPaperSlashMod {
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faToiletPaperSlash", "aliases")
+  @js.native
+  val aliases: js.Array[String | Double] = js.native
+  
   @JSImport("@fortawesome/free-solid-svg-icons/faToiletPaperSlash", "definition")
   @js.native
   val definition: IconDefinition = js.native
@@ -27,7 +31,7 @@ object faToiletPaperSlashMod {
   
   @JSImport("@fortawesome/free-solid-svg-icons/faToiletPaperSlash", "ligatures")
   @js.native
-  val ligatures: js.Array[String] = js.native
+  val ligatures: js.Array[String | Double] = js.native
   
   @JSImport("@fortawesome/free-solid-svg-icons/faToiletPaperSlash", "prefix")
   @js.native

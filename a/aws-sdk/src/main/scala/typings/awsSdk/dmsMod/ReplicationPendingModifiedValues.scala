@@ -22,7 +22,7 @@ trait ReplicationPendingModifiedValues extends StObject {
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The compute and memory capacity of the replication instance as defined for the specified replication instance class. For more information on the settings and capacities for the available replication instance classes, see  Selecting the right AWS DMS replication instance for your migration. 
+    * The compute and memory capacity of the replication instance as defined for the specified replication instance class. For more information on the settings and capacities for the available replication instance classes, see  Selecting the right DMS replication instance for your migration. 
     */
   var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
 }

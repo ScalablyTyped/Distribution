@@ -4,29 +4,41 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @typedef {import('../graphics/texture.js').Texture} Texture */
 /**
   * Represents the resource of a font asset.
-  * @property intensity - The font intensity.
-  * @property textures - The font textures.
-  * @param textures - The font textures.
-  * @param data - The font data.
   */
 @JSImport("playcanvas", "Font")
 @js.native
-class Font protected ()
-  extends StObject
-     with typings.playcanvas.pc.Font {
-  def this(textures: js.Array[typings.playcanvas.pc.Texture], data: js.Any) = this()
+open class Font protected () extends StObject {
+  /**
+    * Create a new Font instance.
+    *
+    * @param {Texture[]} textures - The font textures.
+    * @param {object} data - The font data.
+    */
+  def this(textures: js.Array[Texture], data: js.Object) = this()
+  
+  var _data: Any = js.native
+  
+  def data: Any = js.native
+  def data_=(arg: Any): Unit = js.native
+  
+  var em: Double = js.native
   
   /**
     * The font intensity.
+    *
+    * @type {number}
     */
-  /* CompleteClass */
   var intensity: Double = js.native
   
   /**
     * The font textures.
+    *
+    * @type {Texture[]}
     */
-  /* CompleteClass */
-  var textures: js.Array[typings.playcanvas.pc.Texture] = js.native
+  var textures: js.Array[Texture] = js.native
+  
+  var `type`: Any = js.native
 }

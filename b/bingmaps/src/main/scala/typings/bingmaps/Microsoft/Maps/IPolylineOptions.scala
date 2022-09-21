@@ -41,7 +41,7 @@ object IPolylineOptions {
     
     inline def setStrokeDashArrayUndefined: Self = StObject.set(x, "strokeDashArray", js.undefined)
     
-    inline def setStrokeDashArrayVarargs(value: Double*): Self = StObject.set(x, "strokeDashArray", js.Array(value :_*))
+    inline def setStrokeDashArrayVarargs(value: Double*): Self = StObject.set(x, "strokeDashArray", js.Array(value*))
     
     inline def setStrokeThickness(value: Double): Self = StObject.set(x, "strokeThickness", value.asInstanceOf[js.Any])
     

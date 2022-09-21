@@ -17,12 +17,12 @@ trait AggregateComplianceByConfigRule extends StObject {
   var AwsRegion: js.UndefOr[typings.awsSdk.configserviceMod.AwsRegion] = js.undefined
   
   /**
-    * Indicates whether an AWS resource or AWS Config rule is compliant and provides the number of contributors that affect the compliance.
+    * Indicates whether an Amazon Web Services resource or Config rule is compliant and provides the number of contributors that affect the compliance.
     */
   var Compliance: js.UndefOr[typings.awsSdk.configserviceMod.Compliance] = js.undefined
   
   /**
-    * The name of the AWS Config rule.
+    * The name of the Config rule.
     */
   var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.undefined
 }

@@ -10,10 +10,10 @@ The lodash method `_.intersectionBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.intersectionby |
 | Keywords           | lodash-modularized, intersectionby |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 227871 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32958.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

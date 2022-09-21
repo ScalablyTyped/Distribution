@@ -9,7 +9,7 @@ trait ColorCorrectionPostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _colorTableTexture: js.Any = js.native
+  /* private */ var _colorTableTexture: Any = js.native
   
   /**
     * Gets the color table url used to create the LUT texture

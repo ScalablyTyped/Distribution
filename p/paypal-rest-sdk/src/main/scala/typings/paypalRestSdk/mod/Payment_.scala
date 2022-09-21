@@ -63,7 +63,7 @@ object Payment_ {
     
     inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setNote_to_payer(value: String): Self = StObject.set(x, "note_to_payer", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object Payment_ {
     
     inline def setTransactions(value: js.Array[Transaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
-    inline def setTransactionsVarargs(value: Transaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: Transaction*): Self = StObject.set(x, "transactions", js.Array(value*))
     
     inline def setUpdate_time(value: String): Self = StObject.set(x, "update_time", value.asInstanceOf[js.Any])
     

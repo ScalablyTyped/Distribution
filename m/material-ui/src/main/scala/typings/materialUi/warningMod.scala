@@ -10,10 +10,10 @@ object warningMod {
   
   @JSImport("material-ui/svg-icons/alert/warning", JSImport.Default)
   @js.native
-  class default () extends AlertWarning
+  open class default () extends AlertWarning
   
   @JSImport("material-ui/svg-icons/alert/warning", "AlertWarning")
   @js.native
-  class AlertWarning ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AlertWarning ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -13,13 +13,7 @@ object anon {
   trait Cb extends StObject {
     
     var cb: js.UndefOr[
-        js.Function4[
-          /* index */ Double, 
-          /* success */ Boolean, 
-          /* result */ js.Any, 
-          /* delay */ Double, 
-          js.Any
-        ]
+        js.Function4[/* index */ Double, /* success */ Boolean, /* result */ Any, /* delay */ Double, Any]
       ] = js.undefined
   }
   object Cb {
@@ -31,9 +25,7 @@ object anon {
     
     extension [Self <: Cb](x: Self) {
       
-      inline def setCb(
-        value: (/* index */ Double, /* success */ Boolean, /* result */ js.Any, /* delay */ Double) => js.Any
-      ): Self = StObject.set(x, "cb", js.Any.fromFunction4(value))
+      inline def setCb(value: (/* index */ Double, /* success */ Boolean, /* result */ Any, /* delay */ Double) => Any): Self = StObject.set(x, "cb", js.Any.fromFunction4(value))
       
       inline def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
     }
@@ -41,7 +33,7 @@ object anon {
   
   trait Dest extends StObject {
     
-    var dest: js.UndefOr[js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any]] = js.undefined
+    var dest: js.UndefOr[js.Function3[/* index */ Double, /* data */ Any, /* delay */ Double, Any]] = js.undefined
     
     var limit: js.UndefOr[Double] = js.undefined
   }
@@ -54,7 +46,7 @@ object anon {
     
     extension [Self <: Dest](x: Self) {
       
-      inline def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => js.Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
+      inline def setDest(value: (/* index */ Double, /* data */ Any, /* delay */ Double) => Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
       
       inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
@@ -66,7 +58,7 @@ object anon {
   
   trait Limit extends StObject {
     
-    var dest: js.UndefOr[js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any]] = js.undefined
+    var dest: js.UndefOr[js.Function3[/* index */ Double, /* data */ Any, /* delay */ Double, Any]] = js.undefined
     
     var limit: js.UndefOr[Double] = js.undefined
     
@@ -81,7 +73,7 @@ object anon {
     
     extension [Self <: Limit](x: Self) {
       
-      inline def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => js.Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
+      inline def setDest(value: (/* index */ Double, /* data */ Any, /* delay */ Double) => Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
       
       inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       

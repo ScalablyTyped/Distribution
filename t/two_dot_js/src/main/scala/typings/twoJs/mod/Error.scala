@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "Error")
 @js.native
-class Error protected () extends StObject {
+open class Error protected () extends StObject {
   def this(message: String) = this()
   
   var message: String = js.native

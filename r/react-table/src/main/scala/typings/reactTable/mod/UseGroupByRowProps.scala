@@ -58,11 +58,11 @@ object UseGroupByRowProps {
     
     inline def setLeafRows(value: js.Array[Row[D]]): Self = StObject.set(x, "leafRows", value.asInstanceOf[js.Any])
     
-    inline def setLeafRowsVarargs(value: Row[D]*): Self = StObject.set(x, "leafRows", js.Array(value :_*))
+    inline def setLeafRowsVarargs(value: Row[D]*): Self = StObject.set(x, "leafRows", js.Array(value*))
     
     inline def setSubRows(value: js.Array[Row[D]]): Self = StObject.set(x, "subRows", value.asInstanceOf[js.Any])
     
-    inline def setSubRowsVarargs(value: Row[D]*): Self = StObject.set(x, "subRows", js.Array(value :_*))
+    inline def setSubRowsVarargs(value: Row[D]*): Self = StObject.set(x, "subRows", js.Array(value*))
     
     inline def setValues(value: Record[IdType[D], AggregatedValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }

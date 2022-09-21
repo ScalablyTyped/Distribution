@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentence-case
 
-Typings are for version 3.0.3
+Typings are for version 3.0.4
 
 ## Library description:
 Transform into a lower case with spaces between words, then capitalize the string
@@ -10,10 +10,10 @@ Transform into a lower case with spaces between words, then capitalize the strin
 | ------------------ | :-------------: |
 | Full name          | sentence-case |
 | Keywords           | sentence, case, lower, capitalize, convert, transform |
-| # releases         | 6 |
-| # dependents       | 29 |
-| # downloads        | 80427137 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8516624E7 |
+| # stars            | 1767.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/sentence-case#readme)

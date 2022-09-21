@@ -13,9 +13,7 @@ object expandedRowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasPrefixClsChildrenComponentCellComponentFixHeaderFixColumnHorizonScrollClassNameExpandedComponentWidthColSpan: ExpandedRowProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsChildrenComponentCellComponentFixHeaderFixColumnHorizonScrollClassNameExpandedComponentWidthColSpan.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasPrefixClsChildrenComponentCellComponentClassNameExpandedColSpanIsEmpty: ExpandedRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsChildrenComponentCellComponentClassNameExpandedColSpanIsEmpty.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ExpandedRowProps extends StObject {
     
@@ -29,15 +27,9 @@ object expandedRowMod {
     
     var component: CustomizeComponent
     
-    var componentWidth: Double
-    
     var expanded: Boolean
     
-    var fixColumn: Boolean
-    
-    var fixHeader: Boolean
-    
-    var horizonScroll: Boolean
+    var isEmpty: Boolean
     
     var prefixCls: String
   }
@@ -48,14 +40,11 @@ object expandedRowMod {
       className: String,
       colSpan: Double,
       component: CustomizeComponent,
-      componentWidth: Double,
       expanded: Boolean,
-      fixColumn: Boolean,
-      fixHeader: Boolean,
-      horizonScroll: Boolean,
+      isEmpty: Boolean,
       prefixCls: String
     ): ExpandedRowProps = {
-      val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], colSpan = colSpan.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], componentWidth = componentWidth.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], fixColumn = fixColumn.asInstanceOf[js.Any], fixHeader = fixHeader.asInstanceOf[js.Any], horizonScroll = horizonScroll.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], colSpan = colSpan.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], isEmpty = isEmpty.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpandedRowProps]
     }
     
@@ -73,15 +62,9 @@ object expandedRowMod {
       
       inline def setComponent(value: CustomizeComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      inline def setComponentWidth(value: Double): Self = StObject.set(x, "componentWidth", value.asInstanceOf[js.Any])
-      
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      inline def setFixColumn(value: Boolean): Self = StObject.set(x, "fixColumn", value.asInstanceOf[js.Any])
-      
-      inline def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
-      
-      inline def setHorizonScroll(value: Boolean): Self = StObject.set(x, "horizonScroll", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }

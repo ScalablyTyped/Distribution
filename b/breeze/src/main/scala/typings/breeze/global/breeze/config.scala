@@ -2,6 +2,10 @@ package typings.breeze.global.breeze
 
 import typings.breeze.breeze.config.AdapterInstancesConfig
 import typings.breeze.breeze.promises.IPromiseService
+import typings.breeze.breezeStrings.ajax
+import typings.breeze.breezeStrings.dataService
+import typings.breeze.breezeStrings.modelLibrary
+import typings.breeze.breezeStrings.uriBuilder
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,14 +32,18 @@ object config {
   def functionRegistry: js.Object = js.native
   inline def functionRegistry_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("functionRegistry")(x.asInstanceOf[js.Any])
   
-  inline def getAdapter(interfaceName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdapter")(interfaceName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-  inline def getAdapter(interfaceName: String, adapterName: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdapter")(interfaceName.asInstanceOf[js.Any], adapterName.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def getAdapter(interfaceName: ajax | dataService | modelLibrary | uriBuilder): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdapter")(interfaceName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def getAdapter(interfaceName: ajax | dataService | modelLibrary | uriBuilder, adapterName: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdapter")(interfaceName.asInstanceOf[js.Any], adapterName.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  inline def getAdapterInstance(interfaceName: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdapterInstance")(interfaceName.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  inline def getAdapterInstance(interfaceName: String, adapterName: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdapterInstance")(interfaceName.asInstanceOf[js.Any], adapterName.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def getAdapterInstance(interfaceName: ajax | dataService | modelLibrary | uriBuilder): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdapterInstance")(interfaceName.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def getAdapterInstance(interfaceName: ajax | dataService | modelLibrary | uriBuilder, adapterName: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdapterInstance")(interfaceName.asInstanceOf[js.Any], adapterName.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  inline def initializeAdapterInstance(interfaceName: String, adapterName: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAdapterInstance")(interfaceName.asInstanceOf[js.Any], adapterName.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def initializeAdapterInstance(interfaceName: String, adapterName: String, isDefault: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAdapterInstance")(interfaceName.asInstanceOf[js.Any], adapterName.asInstanceOf[js.Any], isDefault.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def initializeAdapterInstance(interfaceName: ajax | dataService | modelLibrary | uriBuilder, adapterName: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAdapterInstance")(interfaceName.asInstanceOf[js.Any], adapterName.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def initializeAdapterInstance(
+    interfaceName: ajax | dataService | modelLibrary | uriBuilder,
+    adapterName: String,
+    isDefault: Boolean
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAdapterInstance")(interfaceName.asInstanceOf[js.Any], adapterName.asInstanceOf[js.Any], isDefault.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   inline def initializeAdapterInstances(config: AdapterInstancesConfig): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeAdapterInstances")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
   
@@ -54,7 +62,7 @@ object config {
   def objectRegistry: js.Object = js.native
   inline def objectRegistry_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("objectRegistry")(x.asInstanceOf[js.Any])
   
-  inline def registerAdapter(interfaceName: String, adapterCtor: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAdapter")(interfaceName.asInstanceOf[js.Any], adapterCtor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerAdapter(interfaceName: ajax | dataService | modelLibrary | uriBuilder, adapterCtor: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAdapter")(interfaceName.asInstanceOf[js.Any], adapterCtor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def registerFunction(fn: js.Function, fnName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunction")(fn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

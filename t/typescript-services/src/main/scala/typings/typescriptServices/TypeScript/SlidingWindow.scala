@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SlidingWindow extends StObject {
   
-  /* private */ var _pinCount: js.Any
+  /* private */ var _pinCount: Any
   
   def absoluteIndex(): Double
   
-  /* private */ def addMoreItemsToWindow(argument: js.Any): js.Any
+  /* private */ def addMoreItemsToWindow(argument: Any): Any
   
-  def currentItem(argument: js.Any): js.Any
+  def currentItem(argument: Any): Any
   
   var currentRelativeItemIndex: Double
   
-  /* private */ var defaultValue: js.Any
+  /* private */ var defaultValue: Any
   
   def disgardAllItemsFromCurrentIndexOnwards(): Unit
   
-  /* private */ var firstPinnedAbsoluteIndex: js.Any
+  /* private */ var firstPinnedAbsoluteIndex: Any
   
   def getAndPinAbsoluteIndex(): Double
   
@@ -28,7 +28,7 @@ trait SlidingWindow extends StObject {
   
   def moveToNextItem(): Unit
   
-  def peekItemN(n: Double): js.Any
+  def peekItemN(n: Double): Any
   
   def pinCount(): Double
   
@@ -38,15 +38,15 @@ trait SlidingWindow extends StObject {
   
   def setAbsoluteIndex(absoluteIndex: Double): Unit
   
-  /* private */ var source: js.Any
+  /* private */ var source: Any
   
-  /* private */ var sourceLength: js.Any
+  /* private */ var sourceLength: Any
   
-  /* private */ def tryShiftOrGrowWindow(): js.Any
+  /* private */ def tryShiftOrGrowWindow(): Any
   
-  var window: js.Array[js.Any]
+  var window: js.Array[Any]
   
-  /* private */ def windowAbsoluteEndIndex(): js.Any
+  /* private */ def windowAbsoluteEndIndex(): Any
   
   var windowAbsoluteStartIndex: Double
   
@@ -55,27 +55,27 @@ trait SlidingWindow extends StObject {
 object SlidingWindow {
   
   inline def apply(
-    _pinCount: js.Any,
+    _pinCount: Any,
     absoluteIndex: () => Double,
-    addMoreItemsToWindow: js.Any => js.Any,
-    currentItem: js.Any => js.Any,
+    addMoreItemsToWindow: Any => Any,
+    currentItem: Any => Any,
     currentRelativeItemIndex: Double,
-    defaultValue: js.Any,
+    defaultValue: Any,
     disgardAllItemsFromCurrentIndexOnwards: () => Unit,
-    firstPinnedAbsoluteIndex: js.Any,
+    firstPinnedAbsoluteIndex: Any,
     getAndPinAbsoluteIndex: () => Double,
     isAtEndOfSource: () => Boolean,
     moveToNextItem: () => Unit,
-    peekItemN: Double => js.Any,
+    peekItemN: Double => Any,
     pinCount: () => Double,
     releaseAndUnpinAbsoluteIndex: Double => Unit,
     rewindToPinnedIndex: Double => Unit,
     setAbsoluteIndex: Double => Unit,
-    source: js.Any,
-    sourceLength: js.Any,
-    tryShiftOrGrowWindow: () => js.Any,
-    window: js.Array[js.Any],
-    windowAbsoluteEndIndex: () => js.Any,
+    source: Any,
+    sourceLength: Any,
+    tryShiftOrGrowWindow: () => Any,
+    window: js.Array[Any],
+    windowAbsoluteEndIndex: () => Any,
     windowAbsoluteStartIndex: Double,
     windowCount: Double
   ): SlidingWindow = {
@@ -87,17 +87,17 @@ object SlidingWindow {
     
     inline def setAbsoluteIndex(value: () => Double): Self = StObject.set(x, "absoluteIndex", js.Any.fromFunction0(value))
     
-    inline def setAddMoreItemsToWindow(value: js.Any => js.Any): Self = StObject.set(x, "addMoreItemsToWindow", js.Any.fromFunction1(value))
+    inline def setAddMoreItemsToWindow(value: Any => Any): Self = StObject.set(x, "addMoreItemsToWindow", js.Any.fromFunction1(value))
     
-    inline def setCurrentItem(value: js.Any => js.Any): Self = StObject.set(x, "currentItem", js.Any.fromFunction1(value))
+    inline def setCurrentItem(value: Any => Any): Self = StObject.set(x, "currentItem", js.Any.fromFunction1(value))
     
     inline def setCurrentRelativeItemIndex(value: Double): Self = StObject.set(x, "currentRelativeItemIndex", value.asInstanceOf[js.Any])
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDisgardAllItemsFromCurrentIndexOnwards(value: () => Unit): Self = StObject.set(x, "disgardAllItemsFromCurrentIndexOnwards", js.Any.fromFunction0(value))
     
-    inline def setFirstPinnedAbsoluteIndex(value: js.Any): Self = StObject.set(x, "firstPinnedAbsoluteIndex", value.asInstanceOf[js.Any])
+    inline def setFirstPinnedAbsoluteIndex(value: Any): Self = StObject.set(x, "firstPinnedAbsoluteIndex", value.asInstanceOf[js.Any])
     
     inline def setGetAndPinAbsoluteIndex(value: () => Double): Self = StObject.set(x, "getAndPinAbsoluteIndex", js.Any.fromFunction0(value))
     
@@ -105,7 +105,7 @@ object SlidingWindow {
     
     inline def setMoveToNextItem(value: () => Unit): Self = StObject.set(x, "moveToNextItem", js.Any.fromFunction0(value))
     
-    inline def setPeekItemN(value: Double => js.Any): Self = StObject.set(x, "peekItemN", js.Any.fromFunction1(value))
+    inline def setPeekItemN(value: Double => Any): Self = StObject.set(x, "peekItemN", js.Any.fromFunction1(value))
     
     inline def setPinCount(value: () => Double): Self = StObject.set(x, "pinCount", js.Any.fromFunction0(value))
     
@@ -115,22 +115,22 @@ object SlidingWindow {
     
     inline def setSetAbsoluteIndex(value: Double => Unit): Self = StObject.set(x, "setAbsoluteIndex", js.Any.fromFunction1(value))
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setSourceLength(value: js.Any): Self = StObject.set(x, "sourceLength", value.asInstanceOf[js.Any])
+    inline def setSourceLength(value: Any): Self = StObject.set(x, "sourceLength", value.asInstanceOf[js.Any])
     
-    inline def setTryShiftOrGrowWindow(value: () => js.Any): Self = StObject.set(x, "tryShiftOrGrowWindow", js.Any.fromFunction0(value))
+    inline def setTryShiftOrGrowWindow(value: () => Any): Self = StObject.set(x, "tryShiftOrGrowWindow", js.Any.fromFunction0(value))
     
-    inline def setWindow(value: js.Array[js.Any]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: js.Array[Any]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    inline def setWindowAbsoluteEndIndex(value: () => js.Any): Self = StObject.set(x, "windowAbsoluteEndIndex", js.Any.fromFunction0(value))
+    inline def setWindowAbsoluteEndIndex(value: () => Any): Self = StObject.set(x, "windowAbsoluteEndIndex", js.Any.fromFunction0(value))
     
     inline def setWindowAbsoluteStartIndex(value: Double): Self = StObject.set(x, "windowAbsoluteStartIndex", value.asInstanceOf[js.Any])
     
     inline def setWindowCount(value: Double): Self = StObject.set(x, "windowCount", value.asInstanceOf[js.Any])
     
-    inline def setWindowVarargs(value: js.Any*): Self = StObject.set(x, "window", js.Array(value :_*))
+    inline def setWindowVarargs(value: Any*): Self = StObject.set(x, "window", js.Array(value*))
     
-    inline def set_pinCount(value: js.Any): Self = StObject.set(x, "_pinCount", value.asInstanceOf[js.Any])
+    inline def set_pinCount(value: Any): Self = StObject.set(x, "_pinCount", value.asInstanceOf[js.Any])
   }
 }

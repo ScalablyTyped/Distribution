@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSplitterPaneEventArgs")
 @js.native
-class ASPxClientSplitterPaneEventArgs protected ()
+open class ASPxClientSplitterPaneEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSplitterPaneEventArgs {
   /**

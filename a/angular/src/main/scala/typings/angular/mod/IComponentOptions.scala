@@ -50,7 +50,7 @@ trait IComponentOptions extends StObject {
     * $attrs - Current attributes object for the element
     * Use the array form to define dependencies (necessary if strictDi is enabled and you require dependency injection)
     */
-  var template: js.UndefOr[String | (Injectable[js.Function1[/* repeated */ js.Any, String]])] = js.undefined
+  var template: js.UndefOr[String | (Injectable[js.Function1[/* repeated */ Any, String]])] = js.undefined
   
   /**
     * Path or function that returns a path to an html template that should be used as the contents of this component.
@@ -59,7 +59,7 @@ trait IComponentOptions extends StObject {
     * $attrs - Current attributes object for the element
     * Use the array form to define dependencies (necessary if strictDi is enabled and you require dependency injection)
     */
-  var templateUrl: js.UndefOr[String | (Injectable[js.Function1[/* repeated */ js.Any, String]])] = js.undefined
+  var templateUrl: js.UndefOr[String | (Injectable[js.Function1[/* repeated */ Any, String]])] = js.undefined
   
   /**
     * Whether transclusion is enabled. Disabled by default.
@@ -85,31 +85,31 @@ object IComponentOptions {
     
     inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
-    inline def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+    inline def setControllerFunction1(value: /* repeated */ Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value*))
     
     inline def setRequire(value: StringDictionary[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
     inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
-    inline def setTemplate(value: String | (Injectable[js.Function1[/* repeated */ js.Any, String]])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | (Injectable[js.Function1[/* repeated */ Any, String]])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    inline def setTemplateFunction1(value: /* repeated */ js.Any => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplateFunction1(value: /* repeated */ Any => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    inline def setTemplateUrl(value: String | (Injectable[js.Function1[/* repeated */ js.Any, String]])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    inline def setTemplateUrl(value: String | (Injectable[js.Function1[/* repeated */ Any, String]])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
-    inline def setTemplateUrlFunction1(value: /* repeated */ js.Any => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
+    inline def setTemplateUrlFunction1(value: /* repeated */ Any => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
     
     inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
-    inline def setTemplateUrlVarargs(value: (String | (js.Function1[/* repeated */ js.Any, String]))*): Self = StObject.set(x, "templateUrl", js.Array(value :_*))
+    inline def setTemplateUrlVarargs(value: (String | (js.Function1[/* repeated */ Any, String]))*): Self = StObject.set(x, "templateUrl", js.Array(value*))
     
-    inline def setTemplateVarargs(value: (String | (js.Function1[/* repeated */ js.Any, String]))*): Self = StObject.set(x, "template", js.Array(value :_*))
+    inline def setTemplateVarargs(value: (String | (js.Function1[/* repeated */ Any, String]))*): Self = StObject.set(x, "template", js.Array(value*))
     
     inline def setTransclude(value: Boolean | StringDictionary[String]): Self = StObject.set(x, "transclude", value.asInstanceOf[js.Any])
     

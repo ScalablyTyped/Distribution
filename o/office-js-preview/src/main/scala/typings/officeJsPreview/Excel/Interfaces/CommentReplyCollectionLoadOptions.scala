@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of comment reply objects that are part of the comment.
   *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait CommentReplyCollectionLoadOptions extends StObject {
@@ -19,73 +19,73 @@ trait CommentReplyCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the email of the comment reply's author.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var authorEmail: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the name of the comment reply's author.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var authorName: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The comment reply's content. The string is plain text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The content type of the reply.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var contentType: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the creation time of the comment reply.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var creationDate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the comment reply identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The entities (e.g., people) that are mentioned in comments.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var mentions: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The comment reply status. A value of `true` means the reply is in the resolved state.
     *
-    * For EACH ITEM in the collection: The comment reply status. A value of "true" means the reply is in the resolved state.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var resolved: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var richContent: js.UndefOr[Boolean] = js.undefined

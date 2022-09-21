@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
-import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.Listing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,9 +43,6 @@ trait Language extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: Listing
-  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -55,8 +51,8 @@ trait Language extends StObject {
 }
 object Language {
   
-  inline def apply(editId: String, language: String, packageName: String, resource: Listing): Language = {
-    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(editId: String, language: String, packageName: String): Language = {
+    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Language]
   }
   
@@ -103,8 +99,6 @@ object Language {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: Listing): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

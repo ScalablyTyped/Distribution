@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticlunr", "Pipeline")
 @js.native
-class Pipeline () extends StObject {
+open class Pipeline () extends StObject {
   
   def add(functions: PipelineFunction*): Unit = js.native
   

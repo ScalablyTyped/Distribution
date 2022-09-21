@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PickingInfo")
 @js.native
-class PickingInfo ()
+open class PickingInfo ()
   extends StObject
      with typings.babylonjs.BABYLON.PickingInfo

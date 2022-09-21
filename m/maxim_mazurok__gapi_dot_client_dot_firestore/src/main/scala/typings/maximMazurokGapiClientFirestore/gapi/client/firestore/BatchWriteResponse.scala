@@ -25,12 +25,12 @@ object BatchWriteResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setStatusVarargs(value: Status*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: Status*): Self = StObject.set(x, "status", js.Array(value*))
     
     inline def setWriteResults(value: js.Array[WriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
     
     inline def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
     
-    inline def setWriteResultsVarargs(value: WriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
+    inline def setWriteResultsVarargs(value: WriteResult*): Self = StObject.set(x, "writeResults", js.Array(value*))
   }
 }

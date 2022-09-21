@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MultiLevelSelectOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   // 标题
   var list: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.undefined
@@ -37,7 +37,7 @@ object MultiLevelSelectOptions {
     
     inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    inline def setListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "list", js.Array(value :_*))
+    inline def setListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "list", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object MultiLevelSelectOptions {
     
     inline def setSubListUndefined: Self = StObject.set(x, "subList", js.undefined)
     
-    inline def setSubListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "subList", js.Array(value :_*))
+    inline def setSubListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "subList", js.Array(value*))
     
     inline def setSuccess(value: /* res */ Result => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

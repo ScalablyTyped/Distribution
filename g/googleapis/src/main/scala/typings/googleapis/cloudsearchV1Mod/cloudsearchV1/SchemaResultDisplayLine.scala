@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The collection of fields that make up a displayed line
-  */
 trait SchemaResultDisplayLine extends StObject {
   
   var fields: js.UndefOr[js.Array[SchemaResultDisplayField]] = js.undefined
@@ -24,6 +21,6 @@ object SchemaResultDisplayLine {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: SchemaResultDisplayField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaResultDisplayField*): Self = StObject.set(x, "fields", js.Array(value*))
   }
 }

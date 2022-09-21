@@ -10,11 +10,11 @@ trait DataPropertyOptions extends StObject {
   
   var concurrencyMode: js.UndefOr[String] = js.undefined
   
-  var custom: js.UndefOr[js.Any] = js.undefined
+  var custom: js.UndefOr[Any] = js.undefined
   
   var dataType: js.UndefOr[DataTypeSymbol] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   var displayName: js.UndefOr[String] = js.undefined
   
@@ -51,7 +51,7 @@ object DataPropertyOptions {
     
     inline def setConcurrencyModeUndefined: Self = StObject.set(x, "concurrencyMode", js.undefined)
     
-    inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
@@ -59,7 +59,7 @@ object DataPropertyOptions {
     
     inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -99,6 +99,6 @@ object DataPropertyOptions {
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value*))
   }
 }

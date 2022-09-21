@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait TfvcItem
   extends StObject
      with ItemModel {
   
-  var changeDate: Date
+  var changeDate: js.Date
   
   var deletionId: Double
   
@@ -32,8 +31,8 @@ trait TfvcItem
 object TfvcItem {
   
   inline def apply(
-    _links: js.Any,
-    changeDate: Date,
+    _links: Any,
+    changeDate: js.Date,
     contentMetadata: FileContentMetadata,
     deletionId: Double,
     hashValue: String,
@@ -52,7 +51,7 @@ object TfvcItem {
   
   extension [Self <: TfvcItem](x: Self) {
     
-    inline def setChangeDate(value: Date): Self = StObject.set(x, "changeDate", value.asInstanceOf[js.Any])
+    inline def setChangeDate(value: js.Date): Self = StObject.set(x, "changeDate", value.asInstanceOf[js.Any])
     
     inline def setDeletionId(value: Double): Self = StObject.set(x, "deletionId", value.asInstanceOf[js.Any])
     

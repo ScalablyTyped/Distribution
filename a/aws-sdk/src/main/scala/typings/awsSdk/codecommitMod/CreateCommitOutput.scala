@@ -48,19 +48,19 @@ object CreateCommitOutput {
     
     inline def setFilesAddedUndefined: Self = StObject.set(x, "filesAdded", js.undefined)
     
-    inline def setFilesAddedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesAdded", js.Array(value :_*))
+    inline def setFilesAddedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesAdded", js.Array(value*))
     
     inline def setFilesDeleted(value: FilesMetadata): Self = StObject.set(x, "filesDeleted", value.asInstanceOf[js.Any])
     
     inline def setFilesDeletedUndefined: Self = StObject.set(x, "filesDeleted", js.undefined)
     
-    inline def setFilesDeletedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesDeleted", js.Array(value :_*))
+    inline def setFilesDeletedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesDeleted", js.Array(value*))
     
     inline def setFilesUpdated(value: FilesMetadata): Self = StObject.set(x, "filesUpdated", value.asInstanceOf[js.Any])
     
     inline def setFilesUpdatedUndefined: Self = StObject.set(x, "filesUpdated", js.undefined)
     
-    inline def setFilesUpdatedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesUpdated", js.Array(value :_*))
+    inline def setFilesUpdatedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesUpdated", js.Array(value*))
     
     inline def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     

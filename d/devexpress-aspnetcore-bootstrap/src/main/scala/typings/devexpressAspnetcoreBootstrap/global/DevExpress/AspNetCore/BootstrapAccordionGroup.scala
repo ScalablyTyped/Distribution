@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapAccordionGroup")
 @js.native
-class BootstrapAccordionGroup protected ()
+open class BootstrapAccordionGroup protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapAccordionGroup {
-  /* protected */ def this(instance: js.Any) = this()
+  /* protected */ def this(instance: Any) = this()
   
   /* CompleteClass */
   override def getEnabled(): Boolean = js.native
@@ -42,7 +42,7 @@ class BootstrapAccordionGroup protected ()
   override val index: Double = js.native
   
   /* protected */ /* CompleteClass */
-  override val instance: js.Any = js.native
+  override val instance: Any = js.native
   
   /* CompleteClass */
   override val name: String = js.native

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for chart error bars.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ChartErrorBarsFormatLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait ChartErrorBarsFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the chart line formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var line: js.UndefOr[ChartLineFormatLoadOptions] = js.undefined

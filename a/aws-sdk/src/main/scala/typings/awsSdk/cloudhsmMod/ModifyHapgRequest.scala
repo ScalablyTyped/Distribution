@@ -40,6 +40,6 @@ object ModifyHapgRequest {
     
     inline def setPartitionSerialListUndefined: Self = StObject.set(x, "PartitionSerialList", js.undefined)
     
-    inline def setPartitionSerialListVarargs(value: PartitionSerial*): Self = StObject.set(x, "PartitionSerialList", js.Array(value :_*))
+    inline def setPartitionSerialListVarargs(value: PartitionSerial*): Self = StObject.set(x, "PartitionSerialList", js.Array(value*))
   }
 }

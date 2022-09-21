@@ -29,7 +29,7 @@ object JobManifestSpec {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
-    inline def setFieldsVarargs(value: JobManifestFieldName*): Self = StObject.set(x, "Fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: JobManifestFieldName*): Self = StObject.set(x, "Fields", js.Array(value*))
     
     inline def setFormat(value: JobManifestFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
   }

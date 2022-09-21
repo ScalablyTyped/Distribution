@@ -4,34 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a session entity type.  Extends or replaces a developer entity
-  * type at the user session level (we refer to the entity types defined at the
-  * agent level as &quot;developer entity types&quot;).  Note: session entity
-  * types apply to all queries, regardless of the language.
-  */
 trait SchemaGoogleCloudDialogflowV2SessionEntityType extends StObject {
   
   /**
-    * Required. The collection of entities associated with this session entity
-    * type.
+    * Required. The collection of entities associated with this session entity type.
     */
   var entities: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2EntityTypeEntity]] = js.undefined
   
   /**
-    * Required. Indicates whether the additional data should override or
-    * supplement the developer entity type definition.
+    * Required. Indicates whether the additional data should override or supplement the custom entity type definition.
     */
-  var entityOverrideMode: js.UndefOr[String] = js.undefined
+  var entityOverrideMode: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required. The unique identifier of this session entity type. Format:
-    * `projects/&lt;Project ID&gt;/agent/sessions/&lt;Session
-    * ID&gt;/entityTypes/&lt;Entity Type Display Name&gt;`.  `&lt;Entity Type
-    * Display Name&gt;` must be the display name of an existing entity type in
-    * the same agent that will be overridden or supplemented.
+    * Required. The unique identifier of this session entity type. Format: `projects//agent/sessions//entityTypes/`, or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. `` must be the display name of an existing entity type in the same agent that will be overridden or supplemented.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2SessionEntityType {
   
@@ -46,13 +34,17 @@ object SchemaGoogleCloudDialogflowV2SessionEntityType {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: SchemaGoogleCloudDialogflowV2EntityTypeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: SchemaGoogleCloudDialogflowV2EntityTypeEntity*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setEntityOverrideMode(value: String): Self = StObject.set(x, "entityOverrideMode", value.asInstanceOf[js.Any])
+    
+    inline def setEntityOverrideModeNull: Self = StObject.set(x, "entityOverrideMode", null)
     
     inline def setEntityOverrideModeUndefined: Self = StObject.set(x, "entityOverrideMode", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

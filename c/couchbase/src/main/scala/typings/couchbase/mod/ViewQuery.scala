@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("couchbase", "ViewQuery")
 @js.native
-class ViewQuery () extends StObject {
+open class ViewQuery () extends StObject {
   
   /**
     * Allows you to specify custom view options that may not be available though the fluent interface defined by this class.
     * @param opts
     */
-  def custom(opts: js.Any): ViewQuery = js.native
+  def custom(opts: Any): ViewQuery = js.native
   
   /**
     * Specifies the design document and view name to use for this query.
@@ -50,7 +50,7 @@ class ViewQuery () extends StObject {
     * @param start
     * @param end
     */
-  def id_range(start: js.Any, end: js.Any): ViewQuery = js.native
+  def id_range(start: Any, end: Any): ViewQuery = js.native
   
   /**
     * Flag to request a view request include the full document value.
@@ -62,13 +62,13 @@ class ViewQuery () extends StObject {
     * Specifies a specified key to retrieve from the index.
     * @param key
     */
-  def key(key: js.Any): ViewQuery = js.native
+  def key(key: Any): ViewQuery = js.native
   
   /**
     * Specifies a list of keys you wish to retrieve from the index.
     * @param keys
     */
-  def keys(key: js.Array[js.Any]): ViewQuery = js.native
+  def keys(key: js.Array[Any]): ViewQuery = js.native
   
   /**
     * Specifies the maximum number of results to return.
@@ -88,20 +88,20 @@ class ViewQuery () extends StObject {
     */
   def order(order: Order): ViewQuery = js.native
   
+  def range(start: js.Array[Any], end: js.Array[Any]): ViewQuery = js.native
+  def range(start: js.Array[Any], end: js.Array[Any], inclusive_end: Boolean): ViewQuery = js.native
+  def range(start: js.Array[Any], end: Any): ViewQuery = js.native
+  def range(start: js.Array[Any], end: Any, inclusive_end: Boolean): ViewQuery = js.native
+  def range(start: Any, end: js.Array[Any]): ViewQuery = js.native
+  def range(start: Any, end: js.Array[Any], inclusive_end: Boolean): ViewQuery = js.native
   /**
     * Specifies a range of keys to retrieve from the index. You may specify both a start and an end point and additionally specify whether or not the end value is inclusive or exclusive.
     * @param start
     * @param end
     * @param inclusive_end
     */
-  def range(start: js.Any, end: js.Any): ViewQuery = js.native
-  def range(start: js.Any, end: js.Any, inclusive_end: Boolean): ViewQuery = js.native
-  def range(start: js.Any, end: js.Array[js.Any]): ViewQuery = js.native
-  def range(start: js.Any, end: js.Array[js.Any], inclusive_end: Boolean): ViewQuery = js.native
-  def range(start: js.Array[js.Any], end: js.Any): ViewQuery = js.native
-  def range(start: js.Array[js.Any], end: js.Any, inclusive_end: Boolean): ViewQuery = js.native
-  def range(start: js.Array[js.Any], end: js.Array[js.Any]): ViewQuery = js.native
-  def range(start: js.Array[js.Any], end: js.Array[js.Any], inclusive_end: Boolean): ViewQuery = js.native
+  def range(start: Any, end: Any): ViewQuery = js.native
+  def range(start: Any, end: Any, inclusive_end: Boolean): ViewQuery = js.native
   
   /**
     * Specifies whether to execute the map-reduce reduce step.

@@ -69,7 +69,7 @@ trait Application extends StObject {
   
   val DefaultWebOptions: typings.activexPowerpoint.PowerPoint.DefaultWebOptions = js.native
   
-  val Dialogs: js.Any = js.native
+  val Dialogs: Any = js.native
   
   var DisplayAlerts: PpAlertLevel = js.native
   
@@ -110,11 +110,11 @@ trait Application extends StObject {
   
   def LaunchPublishSlidesDialog(SlideLibraryUrl: String): Unit = js.native
   
-  def LaunchSendToPPTDialog(SlideUrls: js.Any): Unit = js.native
+  def LaunchSendToPPTDialog(SlideUrls: Any): Unit = js.native
   
   var Left: Double = js.native
   
-  val Marker: js.Any = js.native
+  val Marker: Any = js.native
   
   val MsoDebugOptions: typings.activexOffice.Office.MsoDebugOptions = js.native
   
@@ -126,7 +126,7 @@ trait Application extends StObject {
   
   val Options: typings.activexPowerpoint.PowerPoint.Options = js.native
   
-  def PPFileDialog(Type: PpFileDialogType): js.Any = js.native
+  def PPFileDialog(Type: PpFileDialogType): Any = js.native
   
   val Path: String = js.native
   
@@ -143,7 +143,7 @@ trait Application extends StObject {
   
   val ResampleMediaTasks: typings.activexPowerpoint.PowerPoint.ResampleMediaTasks = js.native
   
-  def Run(MacroName: String, safeArrayOfParams: js.Any*): js.Any = js.native
+  def Run(MacroName: String, safeArrayOfParams: Any*): Any = js.native
   
   /** @param boolean [Persist=false] */
   def SetOptionFlag(Option: Double, State: Boolean): Unit = js.native

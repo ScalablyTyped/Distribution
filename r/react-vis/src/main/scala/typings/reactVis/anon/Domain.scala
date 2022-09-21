@@ -24,11 +24,11 @@ object Domain {
     
     inline def setDomain(value: js.Array[Double]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    inline def setDomainVarargs(value: Double*): Self = StObject.set(x, "domain", js.Array(value :_*))
+    inline def setDomainVarargs(value: Double*): Self = StObject.set(x, "domain", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setTickFormat(value: /* tick */ js.Any => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
+    inline def setTickFormat(value: /* tick */ Any => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
     
     inline def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
   }

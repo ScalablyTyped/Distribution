@@ -1,31 +1,34 @@
 package typings.reactNavigationCore.anon
 
-import typings.react.mod.ReactNode
+import typings.reactNavigationCore.typesMod.RouteConfigComponent
+import typings.reactNavigationCore.typesMod.ScreenComponentType
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
+trait GetComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */]
+  extends StObject
+     with RouteConfigComponent[ParamList, RouteName] {
   
-  /**
-    * Render callback to render content of this screen.
-    */
-  def children(props: Route[ParamList, RouteName]): ReactNode
+  var children: js.UndefOr[scala.Nothing] = js.undefined
   
   var component: js.UndefOr[scala.Nothing] = js.undefined
   
-  var getComponent: js.UndefOr[scala.Nothing] = js.undefined
+  /**
+    * Lazily get a React component to render for this screen.
+    */
+  def getComponent(): ScreenComponentType[ParamList, RouteName]
 }
 object GetComponent {
   
-  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](children: Route[ParamList, RouteName] => ReactNode): GetComponent[ParamList, RouteName] = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](getComponent: () => ScreenComponentType[ParamList, RouteName]): GetComponent[ParamList, RouteName] = {
+    val __obj = js.Dynamic.literal(getComponent = js.Any.fromFunction0(getComponent))
     __obj.asInstanceOf[GetComponent[ParamList, RouteName]]
   }
   
   extension [Self <: GetComponent[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (GetComponent[ParamList, RouteName])) {
     
-    inline def setChildren(value: Route[ParamList, RouteName] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setGetComponent(value: () => ScreenComponentType[ParamList, RouteName]): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
   }
 }

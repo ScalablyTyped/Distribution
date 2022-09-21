@@ -29,7 +29,7 @@ object SingleMasterChannelEndpointConfiguration {
     
     inline def setProtocolsUndefined: Self = StObject.set(x, "Protocols", js.undefined)
     
-    inline def setProtocolsVarargs(value: ChannelProtocol*): Self = StObject.set(x, "Protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: ChannelProtocol*): Self = StObject.set(x, "Protocols", js.Array(value*))
     
     inline def setRole(value: ChannelRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     

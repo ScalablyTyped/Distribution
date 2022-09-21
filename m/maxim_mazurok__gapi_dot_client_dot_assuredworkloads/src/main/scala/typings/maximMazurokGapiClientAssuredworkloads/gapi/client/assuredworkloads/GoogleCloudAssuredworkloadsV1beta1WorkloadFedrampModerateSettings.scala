@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings extends StObject {
   
-  /** Required. Input only. Immutable. Settings used to create a CMEK crypto key. */
+  /** Input only. Immutable. Settings used to create a CMEK crypto key. */
   var kmsSettings: js.UndefOr[GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings] = js.undefined
 }
 object GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings {

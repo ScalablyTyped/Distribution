@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartExecutionOutput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) that id entifies the execution.
+    * The Amazon Resource Name (ARN) that identifies the execution.
     */
   var executionArn: Arn
   
   /**
     * The date the execution is started.
     */
-  var startDate: Timestamp
+  var startDate: js.Date
 }
 object StartExecutionOutput {
   
-  inline def apply(executionArn: Arn, startDate: Timestamp): StartExecutionOutput = {
+  inline def apply(executionArn: Arn, startDate: js.Date): StartExecutionOutput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartExecutionOutput]
   }
@@ -27,6 +27,6 @@ object StartExecutionOutput {
     
     inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
     
-    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
   }
 }

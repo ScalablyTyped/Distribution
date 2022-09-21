@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NAryOperation
   extends StObject
      with Operation
-     with Instantiable2[/* operator */ String, /* values */ js.Array[js.Any], Operation] {
+     with Instantiable2[/* operator */ String, /* values */ js.Array[Any], Operation] {
   
   var _operator: String = js.native
   

@@ -1,8 +1,20 @@
 package typings.bootstrap
 
 import typings.bootstrap.anon.PartialOptionsBackdrop
+import typings.bootstrap.baseComponentMod.GetInstanceFactory
+import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.bootstrapStrings.dispose
+import typings.bootstrap.bootstrapStrings.handleUpdate
+import typings.bootstrap.bootstrapStrings.hide
+import typings.bootstrap.bootstrapStrings.show
 import typings.bootstrap.bootstrapStrings.static
-import typings.std.Element
+import typings.bootstrap.bootstrapStrings.toggle
+import typings.bootstrap.mod.global.Element
+import typings.bootstrap.mod.global.JQuery
+import typings.bootstrap.modalMod.Modal.Options
+import typings.bootstrap.modalMod.Modal.jQueryInterface
+import typings.std.CustomEvent
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,52 +23,28 @@ object modalMod {
   
   @JSImport("bootstrap/js/dist/modal", JSImport.Default)
   @js.native
-  class default protected ()
-    extends StObject
-       with Modal {
+  open class default protected () extends Modal {
+    def this(element: String) = this()
     def this(element: Element) = this()
+    def this(element: String, options: PartialOptionsBackdrop) = this()
     def this(element: Element, options: PartialOptionsBackdrop) = this()
-    
-    /**
-      * Destroys an element's dropdown.
-      */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    
-    /**
-      * Manually readjust the modal’s position if the height of a modal
-      * changes while it is open (i.e. in case a scrollbar appears).
-      */
-    /* CompleteClass */
-    override def handleUpdate(): Unit = js.native
-    
-    /**
-      * Manually hides a modal. Returns to the caller before the modal has
-      * actually been hidden (i.e. before the hidden.bs.modal event occurs).
-      */
-    /* CompleteClass */
-    override def hide(): Unit = js.native
-    
-    /**
-      * Manually opens a modal. Returns to the caller before the modal has
-      * actually been shown (i.e. before the shown.bs.modal event occurs).
-      */
-    /* CompleteClass */
-    override def show(): Unit = js.native
-    
-    /**
-      * Manually toggles a modal. Returns to the caller before the modal has
-      * actually been shown or hidden (i.e. before the shown.bs.modal or
-      * hidden.bs.modal event occurs).
-      */
-    /* CompleteClass */
-    override def toggle(): Unit = js.native
   }
   object default {
     
     @JSImport("bootstrap/js/dist/modal", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Default settings of this plugin
+      *
+      * @link https://getbootstrap.com/docs/5.0/getting-started/javascript/#default-settings
+      */
+    /* static member */
+    @JSImport("bootstrap/js/dist/modal", "default.Default")
+    @js.native
+    def Default: Options = js.native
+    inline def Default_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSImport("bootstrap/js/dist/modal", "default.Events")
     @js.native
@@ -81,54 +69,60 @@ object modalMod {
       * a DOM element
       */
     /* static member */
-    inline def getInstance(element: Element): Modal = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Modal]
-    inline def getInstance(element: Element, options: PartialOptionsBackdrop): Modal = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Modal]
-  }
-  
-  trait Modal extends StObject {
+    @JSImport("bootstrap/js/dist/modal", "default.getInstance")
+    @js.native
+    def getInstance: GetInstanceFactory[Modal] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[Modal]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
-      * Destroys an element's dropdown.
+      * Static method which allows you to get the modal instance associated with
+      * a DOM element, or create a new one in case it wasn’t initialised
       */
-    def dispose(): Unit
+    /* static member */
+    @JSImport("bootstrap/js/dist/modal", "default.getOrCreateInstance")
+    @js.native
+    def getOrCreateInstance: GetOrCreateInstanceFactory[Modal, PartialOptionsBackdrop] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[Modal, PartialOptionsBackdrop]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/modal", "default.jQueryInterface")
+    @js.native
+    def jQueryInterface: typings.bootstrap.modalMod.Modal.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  trait Modal
+    extends typings.bootstrap.baseComponentMod.default {
     
     /**
       * Manually readjust the modal’s position if the height of a modal
       * changes while it is open (i.e. in case a scrollbar appears).
       */
-    def handleUpdate(): Unit
+    def handleUpdate(): Unit = js.native
     
     /**
       * Manually hides a modal. Returns to the caller before the modal has
       * actually been hidden (i.e. before the hidden.bs.modal event occurs).
       */
-    def hide(): Unit
+    def hide(): Unit = js.native
     
     /**
       * Manually opens a modal. Returns to the caller before the modal has
       * actually been shown (i.e. before the shown.bs.modal event occurs).
       */
-    def show(): Unit
+    def show(): Unit = js.native
+    def show(relatedTarget: HTMLElement): Unit = js.native
     
     /**
       * Manually toggles a modal. Returns to the caller before the modal has
       * actually been shown or hidden (i.e. before the shown.bs.modal or
       * hidden.bs.modal event occurs).
       */
-    def toggle(): Unit
+    def toggle(): Unit = js.native
+    def toggle(relatedTarget: HTMLElement): Unit = js.native
   }
   object Modal {
-    
-    inline def apply(
-      dispose: () => Unit,
-      handleUpdate: () => Unit,
-      hide: () => Unit,
-      show: () => Unit,
-      toggle: () => Unit
-    ): Modal = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), handleUpdate = js.Any.fromFunction0(handleUpdate), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
-      __obj.asInstanceOf[Modal]
-    }
     
     @js.native
     sealed trait Events extends StObject
@@ -186,17 +180,23 @@ object modalMod {
            with Events
     }
     
-    extension [Self <: Modal](x: Self) {
+    @js.native
+    trait Event
+      extends StObject
+         with CustomEvent[Any] {
       
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      /**
+        * Only present for `show.bs.modal` and `shown.bs.modal` events when
+        * the event was triggered by a click. In that case, it's the element
+        * that was clicked. Otherwise, it's undefined.
+        */
+      var relatedTarget: js.UndefOr[HTMLElement] = js.native
       
-      inline def setHandleUpdate(value: () => Unit): Self = StObject.set(x, "handleUpdate", js.Any.fromFunction0(value))
-      
-      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
-      
-      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
-      
-      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      /**
+        * The modal DOM element.
+        */
+      @JSName("target")
+      var target_Event: HTMLElement = js.native
     }
     
     trait Options extends StObject {
@@ -222,18 +222,11 @@ object modalMod {
         * @default true
         */
       var keyboard: Boolean
-      
-      /**
-        * Shows the modal when initialized.
-        *
-        * @default true
-        */
-      var show: Boolean
     }
     object Options {
       
-      inline def apply(backdrop: static | Boolean, focus: Boolean, keyboard: Boolean, show: Boolean): Options = {
-        val __obj = js.Dynamic.literal(backdrop = backdrop.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
+      inline def apply(backdrop: static | Boolean, focus: Boolean, keyboard: Boolean): Options = {
+        val __obj = js.Dynamic.literal(backdrop = backdrop.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
@@ -244,9 +237,12 @@ object modalMod {
         inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
         
         inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
-        
-        inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       }
     }
+    
+    type jQueryInterface = js.Function1[
+        /* config */ js.UndefOr[PartialOptionsBackdrop | toggle | show | hide | handleUpdate | dispose], 
+        JQuery
+      ]
   }
 }

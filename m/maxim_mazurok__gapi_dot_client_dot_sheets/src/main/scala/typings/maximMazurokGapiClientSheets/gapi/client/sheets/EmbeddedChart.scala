@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EmbeddedChart extends StObject {
   
+  /** The border of the chart. */
+  var border: js.UndefOr[EmbeddedObjectBorder] = js.undefined
+  
   /** The ID of the chart. */
   var chartId: js.UndefOr[Double] = js.undefined
   
@@ -23,6 +26,10 @@ object EmbeddedChart {
   }
   
   extension [Self <: EmbeddedChart](x: Self) {
+    
+    inline def setBorder(value: EmbeddedObjectBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     

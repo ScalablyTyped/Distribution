@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RunJobFlowOutput extends StObject {
   
   /**
-    * The Amazon Resource Name of the cluster.
+    * The Amazon Resource Name (ARN) of the cluster.
     */
   var ClusterArn: js.UndefOr[ArnType] = js.undefined
   
   /**
-    * An unique identifier for the job flow.
+    * A unique identifier for the job flow.
     */
   var JobFlowId: js.UndefOr[XmlStringMaxLen256] = js.undefined
 }

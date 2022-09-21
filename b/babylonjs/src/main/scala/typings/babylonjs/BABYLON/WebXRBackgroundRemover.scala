@@ -9,7 +9,7 @@ trait WebXRBackgroundRemover
   extends StObject
      with WebXRAbstractFeature {
   
-  /* private */ var _setBackgroundState: js.Any = js.native
+  /* private */ var _setBackgroundState: Any = js.native
   
   /**
     * registered observers will be triggered when the background state changes

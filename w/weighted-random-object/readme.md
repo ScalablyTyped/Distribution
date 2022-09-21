@@ -10,10 +10,10 @@ Get a weighted random object from an array of objects.
 | ------------------ | :-------------: |
 | Full name          | weighted-random-object |
 | Keywords           | simple, random, weighted, weights |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 1424 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1976.3333333333333 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/misund/weighted-random-object#readme)

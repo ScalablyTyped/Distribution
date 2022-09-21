@@ -26,7 +26,7 @@ object NetworkAttachmentConfig {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "Aliases", js.Array(value*))
     
     inline def setDriverOpts(value: StringDictionary[String]): Self = StObject.set(x, "DriverOpts", value.asInstanceOf[js.Any])
     

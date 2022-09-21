@@ -22,12 +22,12 @@ trait DescribeCasesRequest extends StObject {
   var caseIdList: js.UndefOr[CaseIdList] = js.undefined
   
   /**
-    * The ID displayed for a case in the AWS Support Center user interface.
+    * The ID displayed for a case in the Amazon Web Services Support Center user interface.
     */
   var displayId: js.UndefOr[DisplayId] = js.undefined
   
   /**
-    * Specifies whether to include communications in the DescribeCases response. By default, communications are incuded.
+    * Specifies whether to include communications in the DescribeCases response. By default, communications are included.
     */
   var includeCommunications: js.UndefOr[IncludeCommunications] = js.undefined
   
@@ -37,7 +37,7 @@ trait DescribeCasesRequest extends StObject {
   var includeResolvedCases: js.UndefOr[IncludeResolvedCases] = js.undefined
   
   /**
-    * The ISO 639-1 code for the language in which AWS provides support. AWS Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
+    * The ISO 639-1 code for the language in which Amazon Web Services provides support. Amazon Web Services Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
     */
   var language: js.UndefOr[Language] = js.undefined
   
@@ -72,7 +72,7 @@ object DescribeCasesRequest {
     
     inline def setCaseIdListUndefined: Self = StObject.set(x, "caseIdList", js.undefined)
     
-    inline def setCaseIdListVarargs(value: CaseId*): Self = StObject.set(x, "caseIdList", js.Array(value :_*))
+    inline def setCaseIdListVarargs(value: CaseId*): Self = StObject.set(x, "caseIdList", js.Array(value*))
     
     inline def setDisplayId(value: DisplayId): Self = StObject.set(x, "displayId", value.asInstanceOf[js.Any])
     

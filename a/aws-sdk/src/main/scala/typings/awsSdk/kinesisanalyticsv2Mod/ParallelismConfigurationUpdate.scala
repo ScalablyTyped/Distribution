@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParallelismConfigurationUpdate extends StObject {
   
   /**
-    * Describes updates to whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.
+    * Describes updates to whether the Kinesis Data Analytics service can increase the parallelism of a Flink-based Kinesis Data Analytics application in response to increased throughput.
     */
   var AutoScalingEnabledUpdate: js.UndefOr[BooleanObject] = js.undefined
   

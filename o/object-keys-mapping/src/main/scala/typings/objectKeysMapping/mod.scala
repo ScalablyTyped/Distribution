@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("object-keys-mapping", "Operator")
   @js.native
-  class Operator () extends StObject {
+  open class Operator () extends StObject {
     def this(opts: Camelcase) = this()
     
     def map(origin: js.Array[js.Object]): js.Array[js.Object] = js.native
@@ -33,9 +33,9 @@ object mod {
   inline def toCamelcase(origin: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("toCamelcase")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   inline def trim(origin: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
-  inline def trim(origin: js.Array[js.Object], ignore: js.Function1[/* v */ js.Any, Boolean]): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+  inline def trim(origin: js.Array[js.Object], ignore: js.Function1[/* v */ Any, Boolean]): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
   inline def trim(origin: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  inline def trim(origin: js.Object, ignore: js.Function1[/* v */ js.Any, Boolean]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def trim(origin: js.Object, ignore: js.Function1[/* v */ Any, Boolean]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(origin.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   trait OperatorOptions extends StObject {
     

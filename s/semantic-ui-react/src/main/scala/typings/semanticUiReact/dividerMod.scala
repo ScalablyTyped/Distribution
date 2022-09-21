@@ -1,7 +1,7 @@
 package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import typings.semanticUiReact.dividerDividerMod.DividerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object dividerMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Divider", JSImport.Default)
   @js.native
-  val default: StatelessComponent[DividerProps] = js.native
+  val default: FC[DividerProps] = js.native
   
-  type _To = StatelessComponent[DividerProps]
+  type _To = FC[DividerProps]
   
   /* This means you don't have to write `default`, but can instead just say `dividerMod.foo` */
-  override def _to: StatelessComponent[DividerProps] = default
+  override def _to: FC[DividerProps] = default
 }

@@ -1,21 +1,32 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentTransform extends js.Object {
+trait DocumentTransform extends StObject {
+  
   var document: js.UndefOr[String] = js.undefined
+  
   var fieldTransforms: js.UndefOr[js.Array[FieldTransform]] = js.undefined
 }
-
 object DocumentTransform {
-  @scala.inline
-  def apply(document: String = null, fieldTransforms: js.Array[FieldTransform] = null): DocumentTransform = {
+  
+  inline def apply(): DocumentTransform = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (fieldTransforms != null) __obj.updateDynamic("fieldTransforms")(fieldTransforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentTransform]
   }
+  
+  extension [Self <: DocumentTransform](x: Self) {
+    
+    inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    
+    inline def setFieldTransforms(value: js.Array[FieldTransform]): Self = StObject.set(x, "fieldTransforms", value.asInstanceOf[js.Any])
+    
+    inline def setFieldTransformsUndefined: Self = StObject.set(x, "fieldTransforms", js.undefined)
+    
+    inline def setFieldTransformsVarargs(value: FieldTransform*): Self = StObject.set(x, "fieldTransforms", js.Array(value*))
+  }
 }
-

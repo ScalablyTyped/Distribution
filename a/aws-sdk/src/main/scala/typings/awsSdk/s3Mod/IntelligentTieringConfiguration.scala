@@ -45,6 +45,6 @@ object IntelligentTieringConfiguration {
     
     inline def setTierings(value: TieringList): Self = StObject.set(x, "Tierings", value.asInstanceOf[js.Any])
     
-    inline def setTieringsVarargs(value: Tiering*): Self = StObject.set(x, "Tierings", js.Array(value :_*))
+    inline def setTieringsVarargs(value: Tiering*): Self = StObject.set(x, "Tierings", js.Array(value*))
   }
 }

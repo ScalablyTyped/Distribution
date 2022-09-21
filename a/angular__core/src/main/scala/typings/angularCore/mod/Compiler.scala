@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "Compiler")
 @js.native
-class Compiler () extends StObject {
+open class Compiler () extends StObject {
   
   /**
     * Clears all caches.
@@ -16,7 +16,7 @@ class Compiler () extends StObject {
   /**
     * Clears the cache for the given component/ngModule.
     */
-  def clearCacheFor(`type`: Type[js.Any]): Unit = js.native
+  def clearCacheFor(`type`: Type[Any]): Unit = js.native
   
   /**
     * Same as {@link #compileModuleAsync} but also creates ComponentFactories for all components.
@@ -42,5 +42,22 @@ class Compiler () extends StObject {
   /**
     * Returns the id for a given NgModule, if one is defined and known to the compiler.
     */
-  def getModuleId(moduleType: Type[js.Any]): js.UndefOr[String] = js.native
+  def getModuleId(moduleType: Type[Any]): js.UndefOr[String] = js.native
+}
+/* static members */
+object Compiler {
+  
+  @JSImport("@angular/core", "Compiler")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/core", "Compiler.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[Compiler, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[Compiler, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/core", "Compiler.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[Compiler] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[Compiler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

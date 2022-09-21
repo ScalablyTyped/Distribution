@@ -11,9 +11,9 @@ Drag and drop so simple it hurts
 | Full name          | dragula |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 174 |
-| # downloads        | 5908889 |
-| # stars            | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 795983.0 |
+| # stars            | 21218.0 |
 
 ## Links
 - [Homepage](https://github.com/bevacqua/dragula)

@@ -31,7 +31,7 @@ trait IAssetsService extends StObject {
     * @param {Scope} scope optional scope to pass into the loader
     * @returns {Promise} Promise object which resolves when all the files has loaded
     */
-  def load(pathArray: js.Array[String], scope: IScope): IPromise[js.Any]
+  def load(pathArray: js.Array[String], scope: IScope): IPromise[Any]
   
   /**
     * @ngdoc method
@@ -47,7 +47,7 @@ trait IAssetsService extends StObject {
     * @param {Number} timeout in milliseconds
     * @returns {Promise} Promise object which resolves when the file has loaded
     */
-  def loadCss(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[js.Any]
+  def loadCss(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[Any]
   
   /**
     * @ngdoc method
@@ -63,14 +63,14 @@ trait IAssetsService extends StObject {
     * @param {Number} timeout in milliseconds
     * @returns {Promise} Promise object which resolves when the file has loaded
     */
-  def loadJs(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[js.Any]
+  def loadJs(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[Any]
 }
 object IAssetsService {
   
   inline def apply(
-    load: (js.Array[String], IScope) => IPromise[js.Any],
-    loadCss: (String, IScope, js.Object, Double) => IPromise[js.Any],
-    loadJs: (String, IScope, js.Object, Double) => IPromise[js.Any]
+    load: (js.Array[String], IScope) => IPromise[Any],
+    loadCss: (String, IScope, js.Object, Double) => IPromise[Any],
+    loadJs: (String, IScope, js.Object, Double) => IPromise[Any]
   ): IAssetsService = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction2(load), loadCss = js.Any.fromFunction4(loadCss), loadJs = js.Any.fromFunction4(loadJs))
     __obj.asInstanceOf[IAssetsService]
@@ -78,10 +78,10 @@ object IAssetsService {
   
   extension [Self <: IAssetsService](x: Self) {
     
-    inline def setLoad(value: (js.Array[String], IScope) => IPromise[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+    inline def setLoad(value: (js.Array[String], IScope) => IPromise[Any]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     
-    inline def setLoadCss(value: (String, IScope, js.Object, Double) => IPromise[js.Any]): Self = StObject.set(x, "loadCss", js.Any.fromFunction4(value))
+    inline def setLoadCss(value: (String, IScope, js.Object, Double) => IPromise[Any]): Self = StObject.set(x, "loadCss", js.Any.fromFunction4(value))
     
-    inline def setLoadJs(value: (String, IScope, js.Object, Double) => IPromise[js.Any]): Self = StObject.set(x, "loadJs", js.Any.fromFunction4(value))
+    inline def setLoadJs(value: (String, IScope, js.Object, Double) => IPromise[Any]): Self = StObject.set(x, "loadJs", js.Any.fromFunction4(value))
   }
 }

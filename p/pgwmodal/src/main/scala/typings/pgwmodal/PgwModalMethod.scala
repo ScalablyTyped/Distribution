@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PgwModalMethod extends StObject {
   
-  def apply(action: String): js.Any = js.native
+  def apply(action: String): Any = js.native
   def apply(action: close): Boolean = js.native
-  def apply(action: getData): js.Any = js.native
+  def apply(action: getData): Any = js.native
   def apply(action: isOpen): Boolean = js.native
   def apply(action: reposition): Boolean = js.native
   def apply(option: PgwModalOption): Boolean = js.native

@@ -57,7 +57,7 @@ object DescribeConfigurationOptionsMessage {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
-    inline def setOptionsVarargs(value: OptionSpecification*): Self = StObject.set(x, "Options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: OptionSpecification*): Self = StObject.set(x, "Options", js.Array(value*))
     
     inline def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
     

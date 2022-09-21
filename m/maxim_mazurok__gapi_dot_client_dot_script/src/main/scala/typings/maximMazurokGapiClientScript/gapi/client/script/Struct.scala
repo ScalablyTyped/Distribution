@@ -11,7 +11,7 @@ trait Struct extends StObject {
   var fields: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.script.gapi.client.script.Value}
-    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Struct & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Struct & TopLevel[Any]
   ] = js.undefined
 }
 object Struct {
@@ -26,7 +26,7 @@ object Struct {
     inline def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.script.gapi.client.script.Value}
-      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Struct & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Struct & TopLevel[Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)

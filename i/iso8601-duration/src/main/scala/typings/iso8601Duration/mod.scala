@@ -1,7 +1,5 @@
 package typings.iso8601Duration
 
-import typings.std.Date
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,43 +16,31 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("iso8601-duration", "default.end")
-    @js.native
-    def end: js.Function2[/* duration */ Duration, /* startDate */ js.UndefOr[Date], Date] = js.native
-    inline def end(duration: Duration): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(duration.asInstanceOf[js.Any]).asInstanceOf[Date]
-    inline def end(duration: Duration, startDate: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(duration.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any])).asInstanceOf[Date]
-    inline def end_=(x: js.Function2[/* duration */ Duration, /* startDate */ js.UndefOr[Date], Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("end")(x.asInstanceOf[js.Any])
+    inline def end(durationInput: Duration): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(durationInput.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def end(durationInput: Duration, startDate: js.Date): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(durationInput.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any])).asInstanceOf[js.Date]
     
-    @JSImport("iso8601-duration", "default.parse")
-    @js.native
-    def parse: js.Function1[/* durationString */ String, Duration] = js.native
     inline def parse(durationString: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(durationString.asInstanceOf[js.Any]).asInstanceOf[Duration]
-    inline def parse_=(x: js.Function1[/* durationString */ String, Duration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
     
     @JSImport("iso8601-duration", "default.pattern")
     @js.native
-    def pattern: RegExp = js.native
-    inline def pattern_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pattern")(x.asInstanceOf[js.Any])
+    def pattern: js.RegExp = js.native
+    inline def pattern_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pattern")(x.asInstanceOf[js.Any])
     
-    @JSImport("iso8601-duration", "default.toSeconds")
-    @js.native
-    def toSeconds: js.Function2[/* duration */ Duration, /* startDate */ js.UndefOr[Date], Double] = js.native
-    inline def toSeconds(duration: Duration): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(duration.asInstanceOf[js.Any]).asInstanceOf[Double]
-    inline def toSeconds(duration: Duration, startDate: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(duration.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def toSeconds_=(x: js.Function2[/* duration */ Duration, /* startDate */ js.UndefOr[Date], Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toSeconds")(x.asInstanceOf[js.Any])
+    inline def toSeconds(durationInput: Duration): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(durationInput.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def toSeconds(durationInput: Duration, startDate: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(durationInput.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
-  inline def end(duration: Duration): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(duration.asInstanceOf[js.Any]).asInstanceOf[Date]
-  inline def end(duration: Duration, startDate: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(duration.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def end(durationInput: Duration): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(durationInput.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  inline def end(durationInput: Duration, startDate: js.Date): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(durationInput.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
   inline def parse(durationString: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(durationString.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   @JSImport("iso8601-duration", "pattern")
   @js.native
-  val pattern: RegExp = js.native
+  val pattern: js.RegExp = js.native
   
-  inline def toSeconds(duration: Duration): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(duration.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def toSeconds(duration: Duration, startDate: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(duration.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def toSeconds(durationInput: Duration): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(durationInput.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toSeconds(durationInput: Duration, startDate: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(durationInput.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait Duration extends StObject {
     

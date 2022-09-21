@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColorWidth extends StObject {
   
+  /**
+    * Colors the tile borders in the selected state.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the width of the tile borders in pixels. Applies to a tile in the selected state.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object ColorWidth {

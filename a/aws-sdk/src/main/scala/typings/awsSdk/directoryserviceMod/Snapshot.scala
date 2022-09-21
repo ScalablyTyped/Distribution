@@ -24,7 +24,7 @@ trait Snapshot extends StObject {
   /**
     * The date and time that the snapshot was taken.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.directoryserviceMod.StartTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The snapshot status.
@@ -57,7 +57,7 @@ object Snapshot {
     
     inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

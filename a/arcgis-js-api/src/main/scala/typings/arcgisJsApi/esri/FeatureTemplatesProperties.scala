@@ -9,11 +9,11 @@ trait FeatureTemplatesProperties
      with WidgetProperties {
   
   /**
-    * When `true`, displays the template [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterFunction).
+    * Specifies whether or not the list should be forced to scroll within its containing element
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterEnabled)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#enableListScroll)
     */
-  var filterEnabled: js.UndefOr[Boolean] = js.undefined
+  var enableListScroll: js.UndefOr[scala.Unit] = js.undefined
   
   /**
     * [Function](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#FilterFunction) can be defined to help filter [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) within the widget.
@@ -32,9 +32,20 @@ trait FeatureTemplatesProperties
   /**
     * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).
     *
+    * @default layer
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#groupBy)
     */
   var groupBy: js.UndefOr[String | GroupByFunction] = js.undefined
+  
+  /**
+    * Indicates the heading level to use for the labels of grouped feature templates.
+    *
+    * @default 4
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#headingLevel)
+    */
+  var headingLevel: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of [Featurelayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) to display within the widget.
@@ -66,11 +77,11 @@ object FeatureTemplatesProperties {
   
   extension [Self <: FeatureTemplatesProperties](x: Self) {
     
-    inline def setFilterEnabled(value: Boolean): Self = StObject.set(x, "filterEnabled", value.asInstanceOf[js.Any])
+    inline def setEnableListScroll(value: scala.Unit): Self = StObject.set(x, "enableListScroll", value.asInstanceOf[js.Any])
     
-    inline def setFilterEnabledUndefined: Self = StObject.set(x, "filterEnabled", js.undefined)
+    inline def setEnableListScrollUndefined: Self = StObject.set(x, "enableListScroll", js.undefined)
     
-    inline def setFilterFunction(value: /* filterName */ js.Any => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction1(value))
+    inline def setFilterFunction(value: /* filterName */ Any => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction1(value))
     
     inline def setFilterFunctionUndefined: Self = StObject.set(x, "filterFunction", js.undefined)
     
@@ -80,15 +91,19 @@ object FeatureTemplatesProperties {
     
     inline def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    inline def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+    inline def setGroupByFunction1(value: /* grouping */ Any => String | Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
     
     inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+    
+    inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
     
     inline def setLayers(value: js.Array[FeatureLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: FeatureLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: FeatureLayerProperties*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setViewModel(value: FeatureTemplatesViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

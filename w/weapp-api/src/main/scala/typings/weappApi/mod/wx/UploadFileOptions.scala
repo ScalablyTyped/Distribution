@@ -16,7 +16,7 @@ trait UploadFileOptions extends StObject {
   var filePath: String
   
   /** HTTP 请求中其他额外的 form data */
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
   
   /** HTTP 请求 Header , header 中不能设置 Referer */
   var header: js.UndefOr[RequestHeader] = js.undefined
@@ -39,17 +39,17 @@ object UploadFileOptions {
   
   extension [Self <: UploadFileOptions](x: Self) {
     
-    inline def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setFail(value: /* res */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
@@ -59,7 +59,7 @@ object UploadFileOptions {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setSuccess(value: /* res */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     

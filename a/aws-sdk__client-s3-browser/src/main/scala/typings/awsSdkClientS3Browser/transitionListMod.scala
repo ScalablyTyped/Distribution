@@ -8,5 +8,5 @@ object transitionListMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_TransitionList", "_TransitionList")
   @js.native
-  val TransitionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val TransitionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

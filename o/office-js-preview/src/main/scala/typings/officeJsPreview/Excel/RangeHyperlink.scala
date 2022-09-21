@@ -5,41 +5,41 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the necessary strings to get/set a hyperlink (XHL) object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait RangeHyperlink extends StObject {
   
   /**
+    * Represents the URL target for the hyperlink.
     *
-    * Represents the url target for the hyperlink.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var address: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the document reference target for the hyperlink.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var documentReference: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the string displayed when hovering over the hyperlink.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var screenTip: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the string that is displayed in the top left most cell in the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var textToDisplay: js.UndefOr[String] = js.undefined

@@ -19,19 +19,19 @@ object mod {
   
   @JSImport("json-rules-engine", "Almanac")
   @js.native
-  class Almanac () extends StObject {
+  open class Almanac () extends StObject {
     
-    def addRuntimeFact(factId: String, value: js.Any): Unit = js.native
+    def addRuntimeFact(factId: String, value: Any): Unit = js.native
     
     def factValue[T](factId: String): js.Promise[T] = js.native
     def factValue[T](factId: String, params: Unit, path: String): js.Promise[T] = js.native
-    def factValue[T](factId: String, params: Record[String, js.Any]): js.Promise[T] = js.native
-    def factValue[T](factId: String, params: Record[String, js.Any], path: String): js.Promise[T] = js.native
+    def factValue[T](factId: String, params: Record[String, Any]): js.Promise[T] = js.native
+    def factValue[T](factId: String, params: Record[String, Any], path: String): js.Promise[T] = js.native
   }
   
   @JSImport("json-rules-engine", "Engine")
   @js.native
-  class Engine () extends StObject {
+  open class Engine () extends StObject {
     def this(rules: js.Array[RuleProperties]) = this()
     def this(rules: js.Array[RuleProperties], options: EngineOptions) = this()
     def this(rules: Unit, options: EngineOptions) = this()
@@ -42,8 +42,8 @@ object mod {
     def addFact[T](id: String, valueCallback: DynamicFactCallback[T]): this.type = js.native
     def addFact[T](id: String, valueCallback: DynamicFactCallback[T], options: FactOptions): this.type = js.native
     
-    def addOperator(operator: Operator[js.Any, js.Any]): Map[String, Operator[js.Any, js.Any]] = js.native
-    def addOperator[A, B](operatorName: String, callback: OperatorEvaluator[A, B]): Map[String, Operator[js.Any, js.Any]] = js.native
+    def addOperator(operator: Operator[Any, Any]): Map[String, Operator[Any, Any]] = js.native
+    def addOperator[A, B](operatorName: String, callback: OperatorEvaluator[A, B]): Map[String, Operator[Any, Any]] = js.native
     
     def addRule(rule: RuleProperties): this.type = js.native
     
@@ -56,22 +56,25 @@ object mod {
     def on_success(eventName: success, handler: EventHandler): this.type = js.native
     
     def removeFact(factOrId: String): Boolean = js.native
-    def removeFact(factOrId: Fact[js.Any]): Boolean = js.native
+    def removeFact(factOrId: Fact[Any]): Boolean = js.native
     
     def removeOperator(operator: String): Boolean = js.native
-    def removeOperator(operator: Operator[js.Any, js.Any]): Boolean = js.native
+    def removeOperator(operator: Operator[Any, Any]): Boolean = js.native
     
-    def removeRule(rule: Rule): Boolean = js.native
+    def removeRule(ruleOrName: String): Boolean = js.native
+    def removeRule(ruleOrName: Rule): Boolean = js.native
     
     def run(): js.Promise[EngineResult] = js.native
-    def run(facts: Record[String, js.Any]): js.Promise[EngineResult] = js.native
+    def run(facts: Record[String, Any]): js.Promise[EngineResult] = js.native
     
     def stop(): this.type = js.native
+    
+    def updateRule(rule: Rule): Unit = js.native
   }
   
   @JSImport("json-rules-engine", "Fact")
   @js.native
-  class Fact[T] protected () extends StObject {
+  open class Fact[T] protected () extends StObject {
     def this(id: String, value: T) = this()
     def this(id: String, value: DynamicFactCallback[T]) = this()
     def this(id: String, value: T, options: FactOptions) = this()
@@ -90,7 +93,7 @@ object mod {
   
   @JSImport("json-rules-engine", "Operator")
   @js.native
-  class Operator[A, B] protected () extends StObject {
+  open class Operator[A, B] protected () extends StObject {
     def this(name: String, evaluator: OperatorEvaluator[A, B]) = this()
     def this(
       name: String,
@@ -103,7 +106,7 @@ object mod {
   
   @JSImport("json-rules-engine", "Rule")
   @js.native
-  class Rule protected ()
+  open class Rule protected ()
     extends StObject
        with RuleProperties {
     def this(ruleProps: String) = this()
@@ -148,7 +151,7 @@ object mod {
       
       inline def setAll(value: js.Array[NestedCondition]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      inline def setAllVarargs(value: NestedCondition*): Self = StObject.set(x, "all", js.Array(value :_*))
+      inline def setAllVarargs(value: NestedCondition*): Self = StObject.set(x, "all", js.Array(value*))
     }
   }
   
@@ -169,7 +172,7 @@ object mod {
       
       inline def setAny(value: js.Array[NestedCondition]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
       
-      inline def setAnyVarargs(value: NestedCondition*): Self = StObject.set(x, "any", js.Array(value :_*))
+      inline def setAnyVarargs(value: NestedCondition*): Self = StObject.set(x, "any", js.Array(value*))
     }
   }
   
@@ -181,17 +184,17 @@ object mod {
     
     var operator: String
     
-    var params: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var params: js.UndefOr[Record[String, Any]] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
     
     var priority: js.UndefOr[Double] = js.undefined
     
-    var value: typings.jsonRulesEngine.anon.Fact | js.Any
+    var value: typings.jsonRulesEngine.anon.Fact | Any
   }
   object ConditionProperties {
     
-    inline def apply(fact: String, operator: String, value: typings.jsonRulesEngine.anon.Fact | js.Any): ConditionProperties = {
+    inline def apply(fact: String, operator: String, value: typings.jsonRulesEngine.anon.Fact | Any): ConditionProperties = {
       val __obj = js.Dynamic.literal(fact = fact.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConditionProperties]
     }
@@ -202,7 +205,7 @@ object mod {
       
       inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -214,26 +217,34 @@ object mod {
       
       inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      inline def setValue(value: typings.jsonRulesEngine.anon.Fact | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: typings.jsonRulesEngine.anon.Fact | Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  type DynamicFactCallback[T] = js.Function2[/* params */ Record[String, js.Any], /* almanac */ Almanac, T]
+  type DynamicFactCallback[T] = js.Function2[/* params */ Record[String, Any], /* almanac */ Almanac, T]
   
   trait EngineOptions extends StObject {
     
-    var allowUndefinedFacts: Boolean
+    var allowUndefinedFacts: js.UndefOr[Boolean] = js.undefined
+    
+    var pathResolver: js.UndefOr[PathResolver] = js.undefined
   }
   object EngineOptions {
     
-    inline def apply(allowUndefinedFacts: Boolean): EngineOptions = {
-      val __obj = js.Dynamic.literal(allowUndefinedFacts = allowUndefinedFacts.asInstanceOf[js.Any])
+    inline def apply(): EngineOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EngineOptions]
     }
     
     extension [Self <: EngineOptions](x: Self) {
       
       inline def setAllowUndefinedFacts(value: Boolean): Self = StObject.set(x, "allowUndefinedFacts", value.asInstanceOf[js.Any])
+      
+      inline def setAllowUndefinedFactsUndefined: Self = StObject.set(x, "allowUndefinedFacts", js.undefined)
+      
+      inline def setPathResolver(value: (/* value */ js.Object, /* path */ String) => Any): Self = StObject.set(x, "pathResolver", js.Any.fromFunction2(value))
+      
+      inline def setPathResolverUndefined: Self = StObject.set(x, "pathResolver", js.undefined)
     }
   }
   
@@ -242,11 +253,23 @@ object mod {
     var almanac: Almanac
     
     var events: js.Array[Event]
+    
+    var failureEvents: js.Array[Event]
+    
+    var failureResults: js.Array[RuleResult]
+    
+    var results: js.Array[RuleResult]
   }
   object EngineResult {
     
-    inline def apply(almanac: Almanac, events: js.Array[Event]): EngineResult = {
-      val __obj = js.Dynamic.literal(almanac = almanac.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
+    inline def apply(
+      almanac: Almanac,
+      events: js.Array[Event],
+      failureEvents: js.Array[Event],
+      failureResults: js.Array[RuleResult],
+      results: js.Array[RuleResult]
+    ): EngineResult = {
+      val __obj = js.Dynamic.literal(almanac = almanac.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], failureEvents = failureEvents.asInstanceOf[js.Any], failureResults = failureResults.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[EngineResult]
     }
     
@@ -256,13 +279,25 @@ object mod {
       
       inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
+      
+      inline def setFailureEvents(value: js.Array[Event]): Self = StObject.set(x, "failureEvents", value.asInstanceOf[js.Any])
+      
+      inline def setFailureEventsVarargs(value: Event*): Self = StObject.set(x, "failureEvents", js.Array(value*))
+      
+      inline def setFailureResults(value: js.Array[RuleResult]): Self = StObject.set(x, "failureResults", value.asInstanceOf[js.Any])
+      
+      inline def setFailureResultsVarargs(value: RuleResult*): Self = StObject.set(x, "failureResults", js.Array(value*))
+      
+      inline def setResults(value: js.Array[RuleResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      
+      inline def setResultsVarargs(value: RuleResult*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   
   trait Event extends StObject {
     
-    var params: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var params: js.UndefOr[Record[String, Any]] = js.undefined
     
     var `type`: String
   }
@@ -276,7 +311,7 @@ object mod {
     
     extension [Self <: Event](x: Self) {
       
-      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -328,13 +363,15 @@ object mod {
       __obj.asInstanceOf[typings.jsonRulesEngine.mod.AnyConditions]
     }
     
-    inline def ConditionProperties(fact: String, operator: String, value: typings.jsonRulesEngine.anon.Fact | js.Any): typings.jsonRulesEngine.mod.ConditionProperties = {
+    inline def ConditionProperties(fact: String, operator: String, value: typings.jsonRulesEngine.anon.Fact | Any): typings.jsonRulesEngine.mod.ConditionProperties = {
       val __obj = js.Dynamic.literal(fact = fact.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonRulesEngine.mod.ConditionProperties]
     }
   }
   
   type OperatorEvaluator[A, B] = js.Function2[/* factValue */ A, /* compareToValue */ B, Boolean]
+  
+  type PathResolver = js.Function2[/* value */ js.Object, /* path */ String, Any]
   
   trait RuleProperties extends StObject {
     
@@ -391,11 +428,11 @@ object mod {
     
     var priority: js.UndefOr[Double] = js.undefined
     
-    var result: js.Any
+    var result: Any
   }
   object RuleResult {
     
-    inline def apply(conditions: TopLevelCondition, name: String, result: js.Any): RuleResult = {
+    inline def apply(conditions: TopLevelCondition, name: String, result: Any): RuleResult = {
       val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuleResult]
     }
@@ -414,7 +451,7 @@ object mod {
       
       inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for registry-url
 
-Typings are for version 5.1.0
+Typings are for version 6.0.1
 
 ## Library description:
 Get the set npm registry URL
@@ -10,10 +10,10 @@ Get the set npm registry URL
 | ------------------ | :-------------: |
 | Full name          | registry-url |
 | Keywords           | npm, conf, config, npmconf, registry, url, uri, scope |
-| # releases         | 3 |
-| # dependents       | 122 |
-| # downloads        | 351236894 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4.8655471333333336E7 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/registry-url#readme)

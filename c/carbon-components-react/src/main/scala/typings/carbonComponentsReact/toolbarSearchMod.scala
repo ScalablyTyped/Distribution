@@ -11,6 +11,6 @@ object toolbarSearchMod {
     */
   @JSImport("carbon-components-react/lib/components/ToolbarSearch", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.toolbarSearchToolbarSearchMod.default
 }

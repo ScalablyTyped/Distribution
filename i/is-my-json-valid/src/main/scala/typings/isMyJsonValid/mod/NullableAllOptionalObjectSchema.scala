@@ -33,6 +33,6 @@ object NullableAllOptionalObjectSchema {
     
     inline def setType(value: js.Array[`object` | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: (`object` | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: (`object` | `null`)*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

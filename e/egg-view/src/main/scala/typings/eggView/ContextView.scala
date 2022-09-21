@@ -9,7 +9,7 @@ trait ContextView
   extends StObject
      with ViewBase {
   
-  var app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Application */ js.Any = js.native
+  var app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Application */ Any = js.native
   
   var viewManager: ViewManager = js.native
 }

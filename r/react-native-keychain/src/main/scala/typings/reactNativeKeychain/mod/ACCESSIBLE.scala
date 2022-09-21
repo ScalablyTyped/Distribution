@@ -32,12 +32,6 @@ object ACCESSIBLE extends StObject {
   /* "AccessibleAlways" */ val ALWAYS: typings.reactNativeKeychain.mod.ACCESSIBLE.ALWAYS & String = js.native
   
   @js.native
-  sealed trait ALWAYS_THIS_DEVICE_ONLY
-    extends StObject
-       with ACCESSIBLE
-  /* "AccessibleAlwaysThisDeviceOnly" */ val ALWAYS_THIS_DEVICE_ONLY: typings.reactNativeKeychain.mod.ACCESSIBLE.ALWAYS_THIS_DEVICE_ONLY & String = js.native
-  
-  @js.native
   sealed trait WHEN_PASSCODE_SET_THIS_DEVICE_ONLY
     extends StObject
        with ACCESSIBLE

@@ -80,8 +80,48 @@ object jsonwebtokenStrings {
   inline def RS512: RS512 = "RS512".asInstanceOf[RS512]
   
   @js.native
+  sealed trait alg extends StObject
+  inline def alg: alg = "alg".asInstanceOf[alg]
+  
+  @js.native
+  sealed trait crit extends StObject
+  inline def crit: crit = "crit".asInstanceOf[crit]
+  
+  @js.native
+  sealed trait cty extends StObject
+  inline def cty: cty = "cty".asInstanceOf[cty]
+  
+  @js.native
+  sealed trait jku extends StObject
+  inline def jku: jku = "jku".asInstanceOf[jku]
+  
+  @js.native
+  sealed trait kid extends StObject
+  inline def kid: kid = "kid".asInstanceOf[kid]
+  
+  @js.native
   sealed trait none
     extends StObject
        with Algorithm
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait typ extends StObject
+  inline def typ: typ = "typ".asInstanceOf[typ]
+  
+  @js.native
+  sealed trait x5c extends StObject
+  inline def x5c: x5c = "x5c".asInstanceOf[x5c]
+  
+  @js.native
+  sealed trait x5t extends StObject
+  inline def x5t: x5t = "x5t".asInstanceOf[x5t]
+  
+  @js.native
+  sealed trait x5tNumbersignS256 extends StObject
+  inline def x5tNumbersignS256: x5tNumbersignS256 = "x5t#S256".asInstanceOf[x5tNumbersignS256]
+  
+  @js.native
+  sealed trait x5u extends StObject
+  inline def x5u: x5u = "x5u".asInstanceOf[x5u]
 }

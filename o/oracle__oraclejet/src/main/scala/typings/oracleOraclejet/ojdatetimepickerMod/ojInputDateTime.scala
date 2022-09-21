@@ -24,12 +24,12 @@ trait ojInputDateTime[SP /* <: ojInputDateTimeSettableProperties */]
   @JSName("addEventListener")
   def addEventListener_timePickerChanged(
     `type`: timePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_timePickerChanged(
     `type`: timePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -39,12 +39,12 @@ trait ojInputDateTime[SP /* <: ojInputDateTimeSettableProperties */]
   def hideTimePicker(): Unit = js.native
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojInputDateTime: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
+  var onOjAnimateEnd_ojInputDateTime: (js.Function1[/* event */ ojAnimateEnd, Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojInputDateTime: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
+  var onOjAnimateStart_ojInputDateTime: (js.Function1[/* event */ ojAnimateStart, Any]) | Null = js.native
   
-  var onTimePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[FooterLayout], js.Any]) | Null = js.native
+  var onTimePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[FooterLayout], Any]) | Null = js.native
   
   def setProperties(properties: ojInputDateTimeSettablePropertiesLenient): Unit = js.native
   

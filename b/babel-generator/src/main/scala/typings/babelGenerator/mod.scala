@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.babelGenerator.babelGeneratorStrings.auto
 import typings.babelGenerator.babelGeneratorStrings.double
 import typings.babelGenerator.babelGeneratorStrings.single
-import typings.babelTypes.ts36Mod.Node
+import typings.babelTypes.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

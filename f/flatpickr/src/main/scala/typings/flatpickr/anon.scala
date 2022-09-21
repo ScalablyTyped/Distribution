@@ -1,5 +1,14 @@
 package typings.flatpickr
 
+import typings.flatpickr.flatpickrStrings.`above center`
+import typings.flatpickr.flatpickrStrings.`above left`
+import typings.flatpickr.flatpickrStrings.`above right`
+import typings.flatpickr.flatpickrStrings.`auto center`
+import typings.flatpickr.flatpickrStrings.`auto left`
+import typings.flatpickr.flatpickrStrings.`auto right`
+import typings.flatpickr.flatpickrStrings.`below center`
+import typings.flatpickr.flatpickrStrings.`below left`
+import typings.flatpickr.flatpickrStrings.`below right`
 import typings.flatpickr.flatpickrStrings.above
 import typings.flatpickr.flatpickrStrings.auto
 import typings.flatpickr.flatpickrStrings.below
@@ -20,8 +29,7 @@ import typings.flatpickr.optionsMod.DateOption
 import typings.flatpickr.optionsMod.Hook
 import typings.flatpickr.optionsMod.ParsedOptions
 import typings.flatpickr.optionsMod.Plugin
-import typings.std.Error
-import typings.std.Event
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,6 +39,10 @@ object anon {
   trait Capture extends StObject {
     
     var capture: js.UndefOr[Boolean] = js.undefined
+    
+    var once: js.UndefOr[Boolean] = js.undefined
+    
+    var passive: js.UndefOr[Boolean] = js.undefined
   }
   object Capture {
     
@@ -44,6 +56,14 @@ object anon {
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      
+      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+      
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      
+      inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
     }
   }
   
@@ -73,19 +93,6 @@ object anon {
   }
   
   @js.native
-  trait Element extends StObject {
-    
-    var element: typings.std.Element = js.native
-    
-    var event: String = js.native
-    
-    def handler(): Unit = js.native
-    def handler(e: Event): Unit = js.native
-    
-    var options: js.UndefOr[Capture] = js.native
-  }
-  
-  @js.native
   trait GetDaysInMonth extends StObject {
     
     def getDaysInMonth(): Double = js.native
@@ -94,17 +101,42 @@ object anon {
     def getDaysInMonth(month: Unit, year: Double): Double = js.native
   }
   
+  trait Hours extends StObject {
+    
+    var hours: Double
+    
+    var minutes: Double
+    
+    var seconds: Double
+  }
+  object Hours {
+    
+    inline def apply(hours: Double, minutes: Double, seconds: Double): Hours = {
+      val __obj = js.Dynamic.literal(hours = hours.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Hours]
+    }
+    
+    extension [Self <: Hours](x: Self) {
+      
+      inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      
+      inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Longhand extends StObject {
     
-    var longhand: js.Tuple7[String, String, String, String, String, String, String]
+    var longhand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
     
-    var shorthand: js.Tuple7[String, String, String, String, String, String, String]
+    var shorthand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
   }
   object Longhand {
     
     inline def apply(
-      longhand: js.Tuple7[String, String, String, String, String, String, String],
-      shorthand: js.Tuple7[String, String, String, String, String, String, String]
+      longhand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String],
+      shorthand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
     ): Longhand = {
       val __obj = js.Dynamic.literal(longhand = longhand.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any])
       __obj.asInstanceOf[Longhand]
@@ -112,14 +144,20 @@ object anon {
     
     extension [Self <: Longhand](x: Self) {
       
-      inline def setLonghand(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "longhand", value.asInstanceOf[js.Any])
+      inline def setLonghand(
+        value: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
+      ): Self = StObject.set(x, "longhand", value.asInstanceOf[js.Any])
       
-      inline def setShorthand(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
+      inline def setShorthand(
+        value: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
+      ): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined std.Partial<flatpickr.flatpickr/dist/plugins/monthSelect.Config> */
   trait PartialConfig extends StObject {
+    
+    var _stubbedCurrentMonth: js.UndefOr[Double] = js.undefined
     
     var altFormat: js.UndefOr[String] = js.undefined
     
@@ -153,6 +191,118 @@ object anon {
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      
+      inline def set_stubbedCurrentMonth(value: Double): Self = StObject.set(x, "_stubbedCurrentMonth", value.asInstanceOf[js.Any])
+      
+      inline def set_stubbedCurrentMonthUndefined: Self = StObject.set(x, "_stubbedCurrentMonth", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<flatpickr.flatpickr/dist/types/locale.CustomLocale> */
+  trait PartialCustomLocale extends StObject {
+    
+    var amPM: js.UndefOr[js.Tuple2[String, String]] = js.undefined
+    
+    var daysInMonth: js.UndefOr[
+        js.Tuple12[Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double]
+      ] = js.undefined
+    
+    var firstDayOfWeek: js.UndefOr[Double] = js.undefined
+    
+    var hourAriaLabel: js.UndefOr[String] = js.undefined
+    
+    var minuteAriaLabel: js.UndefOr[String] = js.undefined
+    
+    var monthAriaLabel: js.UndefOr[String] = js.undefined
+    
+    var months: js.UndefOr[Longhand] = js.undefined
+    
+    var ordinal: js.UndefOr[js.Function1[/* nth */ Double, String]] = js.undefined
+    
+    var rangeSeparator: js.UndefOr[String] = js.undefined
+    
+    var scrollTitle: js.UndefOr[String] = js.undefined
+    
+    var time_24hr: js.UndefOr[Boolean] = js.undefined
+    
+    var toggleTitle: js.UndefOr[String] = js.undefined
+    
+    var weekAbbreviation: js.UndefOr[String] = js.undefined
+    
+    var weekdays: js.UndefOr[Shorthand] = js.undefined
+    
+    var yearAriaLabel: js.UndefOr[String] = js.undefined
+  }
+  object PartialCustomLocale {
+    
+    inline def apply(): PartialCustomLocale = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialCustomLocale]
+    }
+    
+    extension [Self <: PartialCustomLocale](x: Self) {
+      
+      inline def setAmPM(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
+      
+      inline def setAmPMUndefined: Self = StObject.set(x, "amPM", js.undefined)
+      
+      inline def setDaysInMonth(
+        value: js.Tuple12[Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double]
+      ): Self = StObject.set(x, "daysInMonth", value.asInstanceOf[js.Any])
+      
+      inline def setDaysInMonthUndefined: Self = StObject.set(x, "daysInMonth", js.undefined)
+      
+      inline def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+      
+      inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
+      
+      inline def setHourAriaLabel(value: String): Self = StObject.set(x, "hourAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setHourAriaLabelUndefined: Self = StObject.set(x, "hourAriaLabel", js.undefined)
+      
+      inline def setMinuteAriaLabel(value: String): Self = StObject.set(x, "minuteAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setMinuteAriaLabelUndefined: Self = StObject.set(x, "minuteAriaLabel", js.undefined)
+      
+      inline def setMonthAriaLabel(value: String): Self = StObject.set(x, "monthAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setMonthAriaLabelUndefined: Self = StObject.set(x, "monthAriaLabel", js.undefined)
+      
+      inline def setMonths(value: Longhand): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      
+      inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
+      
+      inline def setOrdinal(value: /* nth */ Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
+      
+      inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+      
+      inline def setRangeSeparator(value: String): Self = StObject.set(x, "rangeSeparator", value.asInstanceOf[js.Any])
+      
+      inline def setRangeSeparatorUndefined: Self = StObject.set(x, "rangeSeparator", js.undefined)
+      
+      inline def setScrollTitle(value: String): Self = StObject.set(x, "scrollTitle", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTitleUndefined: Self = StObject.set(x, "scrollTitle", js.undefined)
+      
+      inline def setTime_24hr(value: Boolean): Self = StObject.set(x, "time_24hr", value.asInstanceOf[js.Any])
+      
+      inline def setTime_24hrUndefined: Self = StObject.set(x, "time_24hr", js.undefined)
+      
+      inline def setToggleTitle(value: String): Self = StObject.set(x, "toggleTitle", value.asInstanceOf[js.Any])
+      
+      inline def setToggleTitleUndefined: Self = StObject.set(x, "toggleTitle", js.undefined)
+      
+      inline def setWeekAbbreviation(value: String): Self = StObject.set(x, "weekAbbreviation", value.asInstanceOf[js.Any])
+      
+      inline def setWeekAbbreviationUndefined: Self = StObject.set(x, "weekAbbreviation", js.undefined)
+      
+      inline def setWeekdays(value: Shorthand): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+      
+      inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
+      
+      inline def setYearAriaLabel(value: String): Self = StObject.set(x, "yearAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setYearAriaLabelUndefined: Self = StObject.set(x, "yearAriaLabel", js.undefined)
     }
   }
   
@@ -215,7 +365,7 @@ object anon {
     
     var enableTime: js.UndefOr[Boolean] = js.undefined
     
-    var errorHandler: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var errorHandler: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
     
     var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.undefined
     
@@ -277,7 +427,9 @@ object anon {
     
     var plugins: js.UndefOr[js.Array[Plugin[js.Object]]] = js.undefined
     
-    var position: js.UndefOr[auto | above | below] = js.undefined
+    var position: js.UndefOr[
+        auto | above | below | (`auto left`) | (`auto center`) | (`auto right`) | (`above left`) | (`above center`) | (`above right`) | (`below left`) | (`below center`) | (`below right`) | (js.Function2[/* self */ Instance, /* customElement */ js.UndefOr[HTMLElement], Unit])
+      ] = js.undefined
     
     var positionElement: js.UndefOr[HTMLElement] = js.undefined
     
@@ -360,7 +512,7 @@ object anon {
       
       inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
       
-      inline def setDefaultDateVarargs(value: Date*): Self = StObject.set(x, "defaultDate", js.Array(value :_*))
+      inline def setDefaultDateVarargs(value: Date*): Self = StObject.set(x, "defaultDate", js.Array(value*))
       
       inline def setDefaultHour(value: Double): Self = StObject.set(x, "defaultHour", value.asInstanceOf[js.Any])
       
@@ -382,7 +534,7 @@ object anon {
       
       inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      inline def setDisableVarargs(value: DateLimit[Date]*): Self = StObject.set(x, "disable", js.Array(value :_*))
+      inline def setDisableVarargs(value: DateLimit[Date]*): Self = StObject.set(x, "disable", js.Array(value*))
       
       inline def setEnable(value: js.Array[DateLimit[Date]]): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -396,9 +548,9 @@ object anon {
       
       inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      inline def setEnableVarargs(value: DateLimit[Date]*): Self = StObject.set(x, "enable", js.Array(value :_*))
+      inline def setEnableVarargs(value: DateLimit[Date]*): Self = StObject.set(x, "enable", js.Array(value*))
       
-      inline def setErrorHandler(value: /* err */ Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setErrorHandler(value: /* err */ js.Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
@@ -418,7 +570,7 @@ object anon {
       
       inline def setIgnoredFocusElementsUndefined: Self = StObject.set(x, "ignoredFocusElements", js.undefined)
       
-      inline def setIgnoredFocusElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "ignoredFocusElements", js.Array(value :_*))
+      inline def setIgnoredFocusElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "ignoredFocusElements", js.Array(value*))
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
@@ -472,73 +624,73 @@ object anon {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnChangeVarargs(value: Hook*): Self = StObject.set(x, "onChange", js.Array(value :_*))
+      inline def setOnChangeVarargs(value: Hook*): Self = StObject.set(x, "onChange", js.Array(value*))
       
       inline def setOnClose(value: js.Array[Hook]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setOnCloseVarargs(value: Hook*): Self = StObject.set(x, "onClose", js.Array(value :_*))
+      inline def setOnCloseVarargs(value: Hook*): Self = StObject.set(x, "onClose", js.Array(value*))
       
       inline def setOnDayCreate(value: js.Array[Hook]): Self = StObject.set(x, "onDayCreate", value.asInstanceOf[js.Any])
       
       inline def setOnDayCreateUndefined: Self = StObject.set(x, "onDayCreate", js.undefined)
       
-      inline def setOnDayCreateVarargs(value: Hook*): Self = StObject.set(x, "onDayCreate", js.Array(value :_*))
+      inline def setOnDayCreateVarargs(value: Hook*): Self = StObject.set(x, "onDayCreate", js.Array(value*))
       
       inline def setOnDestroy(value: js.Array[Hook]): Self = StObject.set(x, "onDestroy", value.asInstanceOf[js.Any])
       
       inline def setOnDestroyUndefined: Self = StObject.set(x, "onDestroy", js.undefined)
       
-      inline def setOnDestroyVarargs(value: Hook*): Self = StObject.set(x, "onDestroy", js.Array(value :_*))
+      inline def setOnDestroyVarargs(value: Hook*): Self = StObject.set(x, "onDestroy", js.Array(value*))
       
       inline def setOnKeyDown(value: js.Array[Hook]): Self = StObject.set(x, "onKeyDown", value.asInstanceOf[js.Any])
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnKeyDownVarargs(value: Hook*): Self = StObject.set(x, "onKeyDown", js.Array(value :_*))
+      inline def setOnKeyDownVarargs(value: Hook*): Self = StObject.set(x, "onKeyDown", js.Array(value*))
       
       inline def setOnMonthChange(value: js.Array[Hook]): Self = StObject.set(x, "onMonthChange", value.asInstanceOf[js.Any])
       
       inline def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
       
-      inline def setOnMonthChangeVarargs(value: Hook*): Self = StObject.set(x, "onMonthChange", js.Array(value :_*))
+      inline def setOnMonthChangeVarargs(value: Hook*): Self = StObject.set(x, "onMonthChange", js.Array(value*))
       
       inline def setOnOpen(value: js.Array[Hook]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
       
       inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      inline def setOnOpenVarargs(value: Hook*): Self = StObject.set(x, "onOpen", js.Array(value :_*))
+      inline def setOnOpenVarargs(value: Hook*): Self = StObject.set(x, "onOpen", js.Array(value*))
       
       inline def setOnParseConfig(value: js.Array[Hook]): Self = StObject.set(x, "onParseConfig", value.asInstanceOf[js.Any])
       
       inline def setOnParseConfigUndefined: Self = StObject.set(x, "onParseConfig", js.undefined)
       
-      inline def setOnParseConfigVarargs(value: Hook*): Self = StObject.set(x, "onParseConfig", js.Array(value :_*))
+      inline def setOnParseConfigVarargs(value: Hook*): Self = StObject.set(x, "onParseConfig", js.Array(value*))
       
       inline def setOnPreCalendarPosition(value: js.Array[Hook]): Self = StObject.set(x, "onPreCalendarPosition", value.asInstanceOf[js.Any])
       
       inline def setOnPreCalendarPositionUndefined: Self = StObject.set(x, "onPreCalendarPosition", js.undefined)
       
-      inline def setOnPreCalendarPositionVarargs(value: Hook*): Self = StObject.set(x, "onPreCalendarPosition", js.Array(value :_*))
+      inline def setOnPreCalendarPositionVarargs(value: Hook*): Self = StObject.set(x, "onPreCalendarPosition", js.Array(value*))
       
       inline def setOnReady(value: js.Array[Hook]): Self = StObject.set(x, "onReady", value.asInstanceOf[js.Any])
       
       inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
-      inline def setOnReadyVarargs(value: Hook*): Self = StObject.set(x, "onReady", js.Array(value :_*))
+      inline def setOnReadyVarargs(value: Hook*): Self = StObject.set(x, "onReady", js.Array(value*))
       
       inline def setOnValueUpdate(value: js.Array[Hook]): Self = StObject.set(x, "onValueUpdate", value.asInstanceOf[js.Any])
       
       inline def setOnValueUpdateUndefined: Self = StObject.set(x, "onValueUpdate", js.undefined)
       
-      inline def setOnValueUpdateVarargs(value: Hook*): Self = StObject.set(x, "onValueUpdate", js.Array(value :_*))
+      inline def setOnValueUpdateVarargs(value: Hook*): Self = StObject.set(x, "onValueUpdate", js.Array(value*))
       
       inline def setOnYearChange(value: js.Array[Hook]): Self = StObject.set(x, "onYearChange", value.asInstanceOf[js.Any])
       
       inline def setOnYearChangeUndefined: Self = StObject.set(x, "onYearChange", js.undefined)
       
-      inline def setOnYearChangeVarargs(value: Hook*): Self = StObject.set(x, "onYearChange", js.Array(value :_*))
+      inline def setOnYearChangeVarargs(value: Hook*): Self = StObject.set(x, "onYearChange", js.Array(value*))
       
       inline def setParseDate(value: (/* date */ String, /* format */ String) => Date): Self = StObject.set(x, "parseDate", js.Any.fromFunction2(value))
       
@@ -548,13 +700,17 @@ object anon {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: Plugin[js.Object]*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin[js.Object]*): Self = StObject.set(x, "plugins", js.Array(value*))
       
-      inline def setPosition(value: auto | above | below): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(
+        value: auto | above | below | (`auto left`) | (`auto center`) | (`auto right`) | (`above left`) | (`above center`) | (`above right`) | (`below left`) | (`below center`) | (`below right`) | (js.Function2[/* self */ Instance, /* customElement */ js.UndefOr[HTMLElement], Unit])
+      ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionElement(value: HTMLElement): Self = StObject.set(x, "positionElement", value.asInstanceOf[js.Any])
       
       inline def setPositionElementUndefined: Self = StObject.set(x, "positionElement", js.undefined)
+      
+      inline def setPositionFunction2(value: (/* self */ Instance, /* customElement */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
@@ -590,13 +746,13 @@ object anon {
       
       inline def set_disableUndefined: Self = StObject.set(x, "_disable", js.undefined)
       
-      inline def set_disableVarargs(value: DateLimit[Date]*): Self = StObject.set(x, "_disable", js.Array(value :_*))
+      inline def set_disableVarargs(value: DateLimit[Date]*): Self = StObject.set(x, "_disable", js.Array(value*))
       
       inline def set_enable(value: js.Array[DateLimit[Date]]): Self = StObject.set(x, "_enable", value.asInstanceOf[js.Any])
       
       inline def set_enableUndefined: Self = StObject.set(x, "_enable", js.undefined)
       
-      inline def set_enableVarargs(value: DateLimit[Date]*): Self = StObject.set(x, "_enable", js.Array(value :_*))
+      inline def set_enableVarargs(value: DateLimit[Date]*): Self = StObject.set(x, "_enable", js.Array(value*))
       
       inline def set_maxDate(value: Date): Self = StObject.set(x, "_maxDate", value.asInstanceOf[js.Any])
       
@@ -616,17 +772,34 @@ object anon {
     }
   }
   
+  trait Remove extends StObject {
+    
+    def remove(): Unit
+  }
+  object Remove {
+    
+    inline def apply(remove: () => Unit): Remove = {
+      val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
+      __obj.asInstanceOf[Remove]
+    }
+    
+    extension [Self <: Remove](x: Self) {
+      
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    }
+  }
+  
   trait Shorthand extends StObject {
     
-    var longhand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
+    var longhand: js.Tuple7[String, String, String, String, String, String, String]
     
-    var shorthand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
+    var shorthand: js.Tuple7[String, String, String, String, String, String, String]
   }
   object Shorthand {
     
     inline def apply(
-      longhand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String],
-      shorthand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
+      longhand: js.Tuple7[String, String, String, String, String, String, String],
+      shorthand: js.Tuple7[String, String, String, String, String, String, String]
     ): Shorthand = {
       val __obj = js.Dynamic.literal(longhand = longhand.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any])
       __obj.asInstanceOf[Shorthand]
@@ -634,13 +807,9 @@ object anon {
     
     extension [Self <: Shorthand](x: Self) {
       
-      inline def setLonghand(
-        value: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
-      ): Self = StObject.set(x, "longhand", value.asInstanceOf[js.Any])
+      inline def setLonghand(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "longhand", value.asInstanceOf[js.Any])
       
-      inline def setShorthand(
-        value: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
-      ): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
+      inline def setShorthand(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
     }
   }
   
@@ -666,6 +835,8 @@ object anon {
     var ca: js.UndefOr[CustomLocale] = js.undefined
     
     var cat: js.UndefOr[CustomLocale] = js.undefined
+    
+    var ckb: js.UndefOr[CustomLocale] = js.undefined
     
     var cs: js.UndefOr[CustomLocale] = js.undefined
     
@@ -701,6 +872,8 @@ object anon {
     
     var hu: js.UndefOr[CustomLocale] = js.undefined
     
+    var hy: js.UndefOr[CustomLocale] = js.undefined
+    
     var id: js.UndefOr[CustomLocale] = js.undefined
     
     var is: js.UndefOr[CustomLocale] = js.undefined
@@ -730,6 +903,8 @@ object anon {
     var my: js.UndefOr[CustomLocale] = js.undefined
     
     var nl: js.UndefOr[CustomLocale] = js.undefined
+    
+    var nn: js.UndefOr[CustomLocale] = js.undefined
     
     var no: js.UndefOr[CustomLocale] = js.undefined
     
@@ -816,6 +991,10 @@ object anon {
       
       inline def setCatUndefined: Self = StObject.set(x, "cat", js.undefined)
       
+      inline def setCkb(value: CustomLocale): Self = StObject.set(x, "ckb", value.asInstanceOf[js.Any])
+      
+      inline def setCkbUndefined: Self = StObject.set(x, "ckb", js.undefined)
+      
       inline def setCs(value: CustomLocale): Self = StObject.set(x, "cs", value.asInstanceOf[js.Any])
       
       inline def setCsUndefined: Self = StObject.set(x, "cs", js.undefined)
@@ -886,6 +1065,10 @@ object anon {
       
       inline def setHuUndefined: Self = StObject.set(x, "hu", js.undefined)
       
+      inline def setHy(value: CustomLocale): Self = StObject.set(x, "hy", value.asInstanceOf[js.Any])
+      
+      inline def setHyUndefined: Self = StObject.set(x, "hy", js.undefined)
+      
       inline def setId(value: CustomLocale): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -945,6 +1128,10 @@ object anon {
       inline def setNl(value: CustomLocale): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
       
       inline def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
+      
+      inline def setNn(value: CustomLocale): Self = StObject.set(x, "nn", value.asInstanceOf[js.Any])
+      
+      inline def setNnUndefined: Self = StObject.set(x, "nn", js.undefined)
       
       inline def setNo(value: CustomLocale): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
       
@@ -1075,7 +1262,7 @@ object anon {
     
     var enableTime: js.UndefOr[Boolean] = js.undefined
     
-    var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
+    var errorHandler: js.UndefOr[js.Function1[/* e */ js.Error, Unit]] = js.undefined
     
     var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.undefined
     
@@ -1087,7 +1274,7 @@ object anon {
     
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[key | CustomLocale] = js.undefined
+    var locale: js.UndefOr[key | PartialCustomLocale] = js.undefined
     
     var maxDate: js.UndefOr[DateOption] = js.undefined
     
@@ -1137,9 +1324,11 @@ object anon {
     
     var plugins: js.UndefOr[js.Array[Plugin[js.Object]]] = js.undefined
     
-    var position: js.UndefOr[auto | above | below] = js.undefined
+    var position: js.UndefOr[
+        auto | above | below | (`auto left`) | (`auto center`) | (`auto right`) | (`above left`) | (`above center`) | (`above right`) | (`below left`) | (`below center`) | (`below right`) | (js.Function2[/* self */ this.type, /* customElement */ js.UndefOr[HTMLElement], Unit])
+      ] = js.undefined
     
-    var positionElement: js.UndefOr[typings.std.Element] = js.undefined
+    var positionElement: js.UndefOr[Element] = js.undefined
     
     var prevArrow: js.UndefOr[String] = js.undefined
     
@@ -1220,7 +1409,7 @@ object anon {
       
       inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
       
-      inline def setDefaultDateVarargs(value: DateOption*): Self = StObject.set(x, "defaultDate", js.Array(value :_*))
+      inline def setDefaultDateVarargs(value: DateOption*): Self = StObject.set(x, "defaultDate", js.Array(value*))
       
       inline def setDefaultHour(value: Double): Self = StObject.set(x, "defaultHour", value.asInstanceOf[js.Any])
       
@@ -1242,7 +1431,7 @@ object anon {
       
       inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      inline def setDisableVarargs(value: DateLimit[DateOption]*): Self = StObject.set(x, "disable", js.Array(value :_*))
+      inline def setDisableVarargs(value: DateLimit[DateOption]*): Self = StObject.set(x, "disable", js.Array(value*))
       
       inline def setEnable(value: js.Array[DateLimit[DateOption]]): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -1256,9 +1445,9 @@ object anon {
       
       inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      inline def setEnableVarargs(value: DateLimit[DateOption]*): Self = StObject.set(x, "enable", js.Array(value :_*))
+      inline def setEnableVarargs(value: DateLimit[DateOption]*): Self = StObject.set(x, "enable", js.Array(value*))
       
-      inline def setErrorHandler(value: /* e */ Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setErrorHandler(value: /* e */ js.Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
@@ -1278,13 +1467,13 @@ object anon {
       
       inline def setIgnoredFocusElementsUndefined: Self = StObject.set(x, "ignoredFocusElements", js.undefined)
       
-      inline def setIgnoredFocusElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "ignoredFocusElements", js.Array(value :_*))
+      inline def setIgnoredFocusElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "ignoredFocusElements", js.Array(value*))
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setLocale(value: key | CustomLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: key | PartialCustomLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
@@ -1331,122 +1520,122 @@ object anon {
       inline def setOnChange(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
       inline def setOnChangeFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnChangeVarargs(value: Hook*): Self = StObject.set(x, "onChange", js.Array(value :_*))
+      inline def setOnChangeVarargs(value: Hook*): Self = StObject.set(x, "onChange", js.Array(value*))
       
       inline def setOnClose(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
       
       inline def setOnCloseFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onClose", js.Any.fromFunction4(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setOnCloseVarargs(value: Hook*): Self = StObject.set(x, "onClose", js.Array(value :_*))
+      inline def setOnCloseVarargs(value: Hook*): Self = StObject.set(x, "onClose", js.Array(value*))
       
       inline def setOnDayCreate(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onDayCreate", value.asInstanceOf[js.Any])
       
       inline def setOnDayCreateFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onDayCreate", js.Any.fromFunction4(value))
       
       inline def setOnDayCreateUndefined: Self = StObject.set(x, "onDayCreate", js.undefined)
       
-      inline def setOnDayCreateVarargs(value: Hook*): Self = StObject.set(x, "onDayCreate", js.Array(value :_*))
+      inline def setOnDayCreateVarargs(value: Hook*): Self = StObject.set(x, "onDayCreate", js.Array(value*))
       
       inline def setOnDestroy(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onDestroy", value.asInstanceOf[js.Any])
       
       inline def setOnDestroyFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onDestroy", js.Any.fromFunction4(value))
       
       inline def setOnDestroyUndefined: Self = StObject.set(x, "onDestroy", js.undefined)
       
-      inline def setOnDestroyVarargs(value: Hook*): Self = StObject.set(x, "onDestroy", js.Array(value :_*))
+      inline def setOnDestroyVarargs(value: Hook*): Self = StObject.set(x, "onDestroy", js.Array(value*))
       
       inline def setOnKeyDown(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onKeyDown", value.asInstanceOf[js.Any])
       
       inline def setOnKeyDownFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction4(value))
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnKeyDownVarargs(value: Hook*): Self = StObject.set(x, "onKeyDown", js.Array(value :_*))
+      inline def setOnKeyDownVarargs(value: Hook*): Self = StObject.set(x, "onKeyDown", js.Array(value*))
       
       inline def setOnMonthChange(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onMonthChange", value.asInstanceOf[js.Any])
       
       inline def setOnMonthChangeFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction4(value))
       
       inline def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
       
-      inline def setOnMonthChangeVarargs(value: Hook*): Self = StObject.set(x, "onMonthChange", js.Array(value :_*))
+      inline def setOnMonthChangeVarargs(value: Hook*): Self = StObject.set(x, "onMonthChange", js.Array(value*))
       
       inline def setOnOpen(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
       
       inline def setOnOpenFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onOpen", js.Any.fromFunction4(value))
       
       inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      inline def setOnOpenVarargs(value: Hook*): Self = StObject.set(x, "onOpen", js.Array(value :_*))
+      inline def setOnOpenVarargs(value: Hook*): Self = StObject.set(x, "onOpen", js.Array(value*))
       
       inline def setOnParseConfig(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onParseConfig", value.asInstanceOf[js.Any])
       
       inline def setOnParseConfigFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onParseConfig", js.Any.fromFunction4(value))
       
       inline def setOnParseConfigUndefined: Self = StObject.set(x, "onParseConfig", js.undefined)
       
-      inline def setOnParseConfigVarargs(value: Hook*): Self = StObject.set(x, "onParseConfig", js.Array(value :_*))
+      inline def setOnParseConfigVarargs(value: Hook*): Self = StObject.set(x, "onParseConfig", js.Array(value*))
       
       inline def setOnPreCalendarPosition(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onPreCalendarPosition", value.asInstanceOf[js.Any])
       
       inline def setOnPreCalendarPositionFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onPreCalendarPosition", js.Any.fromFunction4(value))
       
       inline def setOnPreCalendarPositionUndefined: Self = StObject.set(x, "onPreCalendarPosition", js.undefined)
       
-      inline def setOnPreCalendarPositionVarargs(value: Hook*): Self = StObject.set(x, "onPreCalendarPosition", js.Array(value :_*))
+      inline def setOnPreCalendarPositionVarargs(value: Hook*): Self = StObject.set(x, "onPreCalendarPosition", js.Array(value*))
       
       inline def setOnReady(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onReady", value.asInstanceOf[js.Any])
       
       inline def setOnReadyFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onReady", js.Any.fromFunction4(value))
       
       inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
-      inline def setOnReadyVarargs(value: Hook*): Self = StObject.set(x, "onReady", js.Array(value :_*))
+      inline def setOnReadyVarargs(value: Hook*): Self = StObject.set(x, "onReady", js.Array(value*))
       
       inline def setOnValueUpdate(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onValueUpdate", value.asInstanceOf[js.Any])
       
       inline def setOnValueUpdateFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onValueUpdate", js.Any.fromFunction4(value))
       
       inline def setOnValueUpdateUndefined: Self = StObject.set(x, "onValueUpdate", js.undefined)
       
-      inline def setOnValueUpdateVarargs(value: Hook*): Self = StObject.set(x, "onValueUpdate", js.Array(value :_*))
+      inline def setOnValueUpdateVarargs(value: Hook*): Self = StObject.set(x, "onValueUpdate", js.Array(value*))
       
       inline def setOnYearChange(value: Hook | js.Array[Hook]): Self = StObject.set(x, "onYearChange", value.asInstanceOf[js.Any])
       
       inline def setOnYearChangeFunction4(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onYearChange", js.Any.fromFunction4(value))
       
       inline def setOnYearChangeUndefined: Self = StObject.set(x, "onYearChange", js.undefined)
       
-      inline def setOnYearChangeVarargs(value: Hook*): Self = StObject.set(x, "onYearChange", js.Array(value :_*))
+      inline def setOnYearChangeVarargs(value: Hook*): Self = StObject.set(x, "onYearChange", js.Array(value*))
       
       inline def setParseDate(value: (/* date */ String, /* format */ String) => Date): Self = StObject.set(x, "parseDate", js.Any.fromFunction2(value))
       
@@ -1456,13 +1645,17 @@ object anon {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: Plugin[js.Object]*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin[js.Object]*): Self = StObject.set(x, "plugins", js.Array(value*))
       
-      inline def setPosition(value: auto | above | below): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(
+        value: auto | above | below | (`auto left`) | (`auto center`) | (`auto right`) | (`above left`) | (`above center`) | (`above right`) | (`below left`) | (`below center`) | (`below right`) | (js.Function2[kinkeyofOptionsOptionsk, /* customElement */ js.UndefOr[HTMLElement], Unit])
+      ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setPositionElement(value: typings.std.Element): Self = StObject.set(x, "positionElement", value.asInstanceOf[js.Any])
+      inline def setPositionElement(value: Element): Self = StObject.set(x, "positionElement", value.asInstanceOf[js.Any])
       
       inline def setPositionElementUndefined: Self = StObject.set(x, "positionElement", js.undefined)
+      
+      inline def setPositionFunction2(value: (kinkeyofOptionsOptionsk, /* customElement */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       

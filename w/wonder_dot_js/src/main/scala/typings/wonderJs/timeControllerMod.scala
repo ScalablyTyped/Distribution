@@ -14,7 +14,7 @@ object timeControllerMod {
     
     var elapsed: Double = js.native
     
-    /* protected */ def getNow(): js.Any = js.native
+    /* protected */ def getNow(): Any = js.native
     
     def pause(): Unit = js.native
     

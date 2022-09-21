@@ -26,7 +26,7 @@ trait BarSize extends StObject {
     */
   var direction: js.UndefOr[vertical | horizontal] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {Boolean} [fixed=false]
@@ -56,7 +56,7 @@ trait BarSize extends StObject {
     * support max two times
     *
     */
-  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * @cfg {Number/Array} [minSize=30]
@@ -76,7 +76,7 @@ trait BarSize extends StObject {
     */
   var splitterClass: js.UndefOr[String] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[Any] = js.undefined
 }
 object BarSize {
   
@@ -99,7 +99,7 @@ object BarSize {
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
@@ -115,23 +115,23 @@ object BarSize {
     
     inline def setInitSizeUndefined: Self = StObject.set(x, "initSize", js.undefined)
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setMinSize(value: Double | js.Array[Double]): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
-    inline def setMinSizeVarargs(value: Double*): Self = StObject.set(x, "minSize", js.Array(value :_*))
+    inline def setMinSizeVarargs(value: Double*): Self = StObject.set(x, "minSize", js.Array(value*))
     
     inline def setSplitterClass(value: String): Self = StObject.set(x, "splitterClass", value.asInstanceOf[js.Any])
     
     inline def setSplitterClassUndefined: Self = StObject.set(x, "splitterClass", js.undefined)
     
-    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }

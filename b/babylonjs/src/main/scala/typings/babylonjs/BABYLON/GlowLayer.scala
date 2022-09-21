@@ -9,27 +9,33 @@ trait GlowLayer
   extends StObject
      with EffectLayer {
   
-  /* private */ var _blurTexture1: js.Any = js.native
+  /* private */ var _blurTexture1: Any = js.native
   
-  /* private */ var _blurTexture2: js.Any = js.native
+  /* private */ var _blurTexture2: Any = js.native
   
-  /* private */ var _excludedMeshes: js.Any = js.native
+  /* private */ var _excludedMeshes: Any = js.native
   
-  /* private */ var _horizontalBlurPostprocess1: js.Any = js.native
+  /* private */ var _horizontalBlurPostprocess1: Any = js.native
   
-  /* private */ var _horizontalBlurPostprocess2: js.Any = js.native
+  /* private */ var _horizontalBlurPostprocess2: Any = js.native
   
-  /* private */ var _includedOnlyMeshes: js.Any = js.native
+  /* private */ var _includedOnlyMeshes: Any = js.native
   
-  /* private */ var _intensity: js.Any = js.native
+  /* private */ var _intensity: Any = js.native
   
-  /* private */ var _meshesUsingTheirOwnMaterials: js.Any = js.native
+  /**
+    * Implementation specific of rendering the generating effect on the main canvas.
+    * @param effect The effect used to render through
+    */
+  /* protected */ def _internalRender(effect: Effect): Unit = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /* private */ var _meshesUsingTheirOwnMaterials: Any = js.native
   
-  /* private */ var _postProcesses1: js.Any = js.native
+  /* private */ var _options: Any = js.native
   
-  /* private */ var _postProcesses2: js.Any = js.native
+  /* private */ var _postProcesses1: Any = js.native
+  
+  /* private */ var _postProcesses2: Any = js.native
   
   /**
     * Returns true if the mesh should render, otherwise false.
@@ -38,9 +44,9 @@ trait GlowLayer
     */
   /* protected */ def _shouldRenderMesh(mesh: Mesh): Boolean = js.native
   
-  /* private */ var _verticalBlurPostprocess1: js.Any = js.native
+  /* private */ var _verticalBlurPostprocess1: Any = js.native
   
-  /* private */ var _verticalBlurPostprocess2: js.Any = js.native
+  /* private */ var _verticalBlurPostprocess2: Any = js.native
   
   /**
     * Add a mesh in the exclusion list to prevent it to impact or being impacted by the glow layer.
@@ -105,7 +111,7 @@ trait GlowLayer
     * @returns a serialized glow layer object
     */
   @JSName("serialize")
-  def serialize_MGlowLayer(): js.Any = js.native
+  def serialize_MGlowLayer(): Any = js.native
   
   /**
     * Remove a mesh from being rendered through its own material and not with emissive only.

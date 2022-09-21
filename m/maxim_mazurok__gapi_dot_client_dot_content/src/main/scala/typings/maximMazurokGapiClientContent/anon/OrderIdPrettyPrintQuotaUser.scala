@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersReturnRefundLineItemRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersCancelTestOrderByCustomerRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ trait OrderIdPrettyPrintQuotaUser extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the order. */
+  /** The ID of the test order to cancel. */
   var orderId: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,7 +42,7 @@ trait OrderIdPrettyPrintQuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrdersReturnRefundLineItemRequest
+  var resource: OrdersCancelTestOrderByCustomerRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait OrderIdPrettyPrintQuotaUser extends StObject {
 }
 object OrderIdPrettyPrintQuotaUser {
   
-  inline def apply(merchantId: String, orderId: String, resource: OrdersReturnRefundLineItemRequest): OrderIdPrettyPrintQuotaUser = {
+  inline def apply(merchantId: String, orderId: String, resource: OrdersCancelTestOrderByCustomerRequest): OrderIdPrettyPrintQuotaUser = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderIdPrettyPrintQuotaUser]
   }
@@ -99,7 +99,7 @@ object OrderIdPrettyPrintQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrdersReturnRefundLineItemRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: OrdersCancelTestOrderByCustomerRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

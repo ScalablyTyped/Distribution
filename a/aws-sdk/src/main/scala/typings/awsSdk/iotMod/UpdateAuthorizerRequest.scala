@@ -17,6 +17,11 @@ trait UpdateAuthorizerRequest extends StObject {
   var authorizerName: AuthorizerName
   
   /**
+    * When true, the result from the authorizer’s Lambda function is cached for the time specified in refreshAfterInSeconds. The cached result is used while the device reuses the same HTTP connection.
+    */
+  var enableCachingForHttp: js.UndefOr[EnableCachingForHttp] = js.undefined
+  
+  /**
     * The status of the update authorizer request.
     */
   var status: js.UndefOr[AuthorizerStatus] = js.undefined
@@ -45,6 +50,10 @@ object UpdateAuthorizerRequest {
     inline def setAuthorizerFunctionArnUndefined: Self = StObject.set(x, "authorizerFunctionArn", js.undefined)
     
     inline def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
+    
+    inline def setEnableCachingForHttp(value: EnableCachingForHttp): Self = StObject.set(x, "enableCachingForHttp", value.asInstanceOf[js.Any])
+    
+    inline def setEnableCachingForHttpUndefined: Self = StObject.set(x, "enableCachingForHttp", js.undefined)
     
     inline def setStatus(value: AuthorizerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

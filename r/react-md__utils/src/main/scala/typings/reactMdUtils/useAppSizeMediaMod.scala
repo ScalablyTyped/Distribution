@@ -104,7 +104,7 @@ object useAppSizeMediaMod {
     var desktopMinWidth: js.UndefOr[QuerySize] = js.undefined
     
     /**
-      * The max width to use for phones. This one is a max width unline the others
+      * The max width to use for phones. This one is a max width unlike the others
       * since everything from 0 to this value will be considered a phone.
       */
     var phoneMaxWidth: js.UndefOr[QuerySize] = js.undefined

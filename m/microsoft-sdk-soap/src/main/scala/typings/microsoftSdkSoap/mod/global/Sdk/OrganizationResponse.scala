@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.OrganizationResponse")
 @js.native
-class OrganizationResponse () extends StObject
+open class OrganizationResponse () extends StObject

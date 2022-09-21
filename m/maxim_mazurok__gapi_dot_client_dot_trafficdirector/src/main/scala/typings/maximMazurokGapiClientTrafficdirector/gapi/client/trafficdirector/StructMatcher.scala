@@ -25,7 +25,7 @@ object StructMatcher {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setPathVarargs(value: PathSegment*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: PathSegment*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setValue(value: ValueMatcher): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

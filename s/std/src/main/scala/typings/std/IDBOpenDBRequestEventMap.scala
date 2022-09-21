@@ -8,8 +8,10 @@ trait IDBOpenDBRequestEventMap
   extends StObject
      with IDBRequestEventMap {
   
+  /* standard dom */
   var blocked: Event
   
+  /* standard dom */
   var upgradeneeded: IDBVersionChangeEvent
 }
 object IDBOpenDBRequestEventMap {

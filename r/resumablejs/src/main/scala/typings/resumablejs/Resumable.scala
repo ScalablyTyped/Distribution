@@ -78,7 +78,7 @@ object Resumable {
     /**
       * A function which displays an error a selected file has type not allowed. (Default: displays an alert for every bad file.)
       **/
-    var fileTypeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
+    var fileTypeErrorCallback: js.UndefOr[js.Function2[/* file */ Any, /* errorCount */ Any, Unit]] = js.undefined
     
     /**
       * Force all chunks to be less or equal than chunkSize. Otherwise, the last chunk will be greater than or equal to chunkSize. (Default: false)
@@ -93,7 +93,7 @@ object Resumable {
     /**
       * Extra headers to include in the multipart POST with data. This can be an object or a function that allows you to construct and return a value, based on supplied file (Default: {})
       **/
-    var headers: js.UndefOr[js.Object | (js.Function1[/* file */ js.Any, js.Object])] = js.undefined
+    var headers: js.UndefOr[js.Object | (js.Function1[/* file */ Any, js.Object])] = js.undefined
     
     /**
       * The name of the unique identifier POST parameter to use for the file chunk (Default: resumableIdentifier)
@@ -113,7 +113,7 @@ object Resumable {
     /**
       * A function which displays an error a selected file is larger than allowed. (Default: displays an alert for every bad file.)
       **/
-    var maxFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
+    var maxFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ Any, /* errorCount */ Any, Unit]] = js.undefined
     
     /**
       * Indicates how many files can be uploaded in a single session. Valid values are any positive integer and undefined for no limit. (Default: undefined)
@@ -123,7 +123,7 @@ object Resumable {
     /**
       * A function which displays the please upload n file(s) at a time message. (Default: displays an alert box with the message Please n one file(s) at a time.)
       **/
-    var maxFilesErrorCallback: js.UndefOr[js.Function2[/* files */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
+    var maxFilesErrorCallback: js.UndefOr[js.Function2[/* files */ Any, /* errorCount */ Any, Unit]] = js.undefined
     
     /**
       * Method to use when POSTing chunks to the server (multipart or octet) (Default: multipart)
@@ -138,7 +138,7 @@ object Resumable {
     /**
       * A function which displays an error a selected file is smaller than allowed. (Default: displays an alert for every bad file.)
       **/
-    var minFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
+    var minFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ Any, /* errorCount */ Any, Unit]] = js.undefined
     
     /**
       * Extra prefix added before the name of each parameter included in the multipart POST or in the test GET. (Default: '')
@@ -254,13 +254,13 @@ object Resumable {
       
       inline def setFileType(value: js.Array[String]): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      inline def setFileTypeErrorCallback(value: (/* file */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "fileTypeErrorCallback", js.Any.fromFunction2(value))
+      inline def setFileTypeErrorCallback(value: (/* file */ Any, /* errorCount */ Any) => Unit): Self = StObject.set(x, "fileTypeErrorCallback", js.Any.fromFunction2(value))
       
       inline def setFileTypeErrorCallbackUndefined: Self = StObject.set(x, "fileTypeErrorCallback", js.undefined)
       
       inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
       
-      inline def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value :_*))
+      inline def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value*))
       
       inline def setForceChunkSize(value: Boolean): Self = StObject.set(x, "forceChunkSize", value.asInstanceOf[js.Any])
       
@@ -270,9 +270,9 @@ object Resumable {
       
       inline def setGenerateUniqueIdentifierUndefined: Self = StObject.set(x, "generateUniqueIdentifier", js.undefined)
       
-      inline def setHeaders(value: js.Object | (js.Function1[/* file */ js.Any, js.Object])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object | (js.Function1[/* file */ Any, js.Object])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersFunction1(value: /* file */ js.Any => js.Object): Self = StObject.set(x, "headers", js.Any.fromFunction1(value))
+      inline def setHeadersFunction1(value: /* file */ Any => js.Object): Self = StObject.set(x, "headers", js.Any.fromFunction1(value))
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -286,7 +286,7 @@ object Resumable {
       
       inline def setMaxFileSize(value: Boolean): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
       
-      inline def setMaxFileSizeErrorCallback(value: (/* file */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "maxFileSizeErrorCallback", js.Any.fromFunction2(value))
+      inline def setMaxFileSizeErrorCallback(value: (/* file */ Any, /* errorCount */ Any) => Unit): Self = StObject.set(x, "maxFileSizeErrorCallback", js.Any.fromFunction2(value))
       
       inline def setMaxFileSizeErrorCallbackUndefined: Self = StObject.set(x, "maxFileSizeErrorCallback", js.undefined)
       
@@ -294,7 +294,7 @@ object Resumable {
       
       inline def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
       
-      inline def setMaxFilesErrorCallback(value: (/* files */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "maxFilesErrorCallback", js.Any.fromFunction2(value))
+      inline def setMaxFilesErrorCallback(value: (/* files */ Any, /* errorCount */ Any) => Unit): Self = StObject.set(x, "maxFilesErrorCallback", js.Any.fromFunction2(value))
       
       inline def setMaxFilesErrorCallbackUndefined: Self = StObject.set(x, "maxFilesErrorCallback", js.undefined)
       
@@ -306,7 +306,7 @@ object Resumable {
       
       inline def setMinFileSize(value: Boolean): Self = StObject.set(x, "minFileSize", value.asInstanceOf[js.Any])
       
-      inline def setMinFileSizeErrorCallback(value: (/* file */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "minFileSizeErrorCallback", js.Any.fromFunction2(value))
+      inline def setMinFileSizeErrorCallback(value: (/* file */ Any, /* errorCount */ Any) => Unit): Self = StObject.set(x, "minFileSizeErrorCallback", js.Any.fromFunction2(value))
       
       inline def setMinFileSizeErrorCallbackUndefined: Self = StObject.set(x, "minFileSizeErrorCallback", js.undefined)
       
@@ -404,7 +404,7 @@ object Resumable {
       **/
     def cancel(): Unit = js.native
     
-    var events: js.Array[js.Any] = js.native
+    var events: js.Array[Any] = js.native
     
     /**
       * An array of ResumableFile file objects added by the user (see full docs for this object type below).
@@ -418,7 +418,7 @@ object Resumable {
       **/
     def getFromUniqueIdentifier(uniqueIdentifier: String): Unit = js.native
     
-    def getOpt(o: String): js.Any = js.native
+    def getOpt(o: String): Any = js.native
     
     /**
       * Returns the total size of the upload in bytes.
@@ -449,7 +449,7 @@ object Resumable {
       * Listen to all the events listed above with the same callback function.
       **/
     @JSName("on")
-    def on_catchAll(event: catchAll, callback: js.Function0[Unit]): js.Any = js.native
+    def on_catchAll(event: catchAll, callback: js.Function0[Unit]): Any = js.native
     /**
       *  File is ready for upload
       **/
@@ -459,10 +459,7 @@ object Resumable {
       *  Show progress in file preparation
       **/
     @JSName("on")
-    def on_chunkingProgress(
-      event: chunkingProgress,
-      callback: js.Function2[/* file */ ResumableFile, /* ratio */ js.Any, Unit]
-    ): Unit = js.native
+    def on_chunkingProgress(event: chunkingProgress, callback: js.Function2[/* file */ ResumableFile, /* ratio */ Any, Unit]): Unit = js.native
     /**
       *  Started preparing file for upload
       **/
@@ -502,7 +499,7 @@ object Resumable {
       *  A specific file was completed.
       **/
     @JSName("on")
-    def on_fileSuccess(event: fileSuccess, callback: js.Function1[/* file */ ResumableFile, Unit]): js.Any = js.native
+    def on_fileSuccess(event: fileSuccess, callback: js.Function1[/* file */ ResumableFile, Unit]): Any = js.native
     /**
       *  New files were added.
       **/
@@ -561,7 +558,7 @@ object Resumable {
     
     var version: Double = js.native
     
-    var void: js.Any = js.native
+    var void: Any = js.native
   }
   
   trait ResumableChunk extends StObject
@@ -670,7 +667,7 @@ object Resumable {
       
       inline def setChunks(value: js.Array[ResumableChunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
-      inline def setChunksVarargs(value: ResumableChunk*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: ResumableChunk*): Self = StObject.set(x, "chunks", js.Array(value*))
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

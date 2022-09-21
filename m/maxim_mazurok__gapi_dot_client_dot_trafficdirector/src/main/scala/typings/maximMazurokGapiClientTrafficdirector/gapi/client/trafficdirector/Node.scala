@@ -48,7 +48,7 @@ trait Node extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.Node & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.Node & TopLevel[Any]
   ] = js.undefined
   
   /** Structured version of the entity requesting config. */
@@ -77,7 +77,7 @@ object Node {
     
     inline def setClientFeaturesUndefined: Self = StObject.set(x, "clientFeatures", js.undefined)
     
-    inline def setClientFeaturesVarargs(value: String*): Self = StObject.set(x, "clientFeatures", js.Array(value :_*))
+    inline def setClientFeaturesVarargs(value: String*): Self = StObject.set(x, "clientFeatures", js.Array(value*))
     
     inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object Node {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object Node {
     
     inline def setListeningAddressesUndefined: Self = StObject.set(x, "listeningAddresses", js.undefined)
     
-    inline def setListeningAddressesVarargs(value: Address*): Self = StObject.set(x, "listeningAddresses", js.Array(value :_*))
+    inline def setListeningAddressesVarargs(value: Address*): Self = StObject.set(x, "listeningAddresses", js.Array(value*))
     
     inline def setLocality(value: Locality): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object Node {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.Node & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.Node & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

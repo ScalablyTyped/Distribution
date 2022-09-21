@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Client extends StObject {
   
-  var addons: js.UndefOr[js.Any] = js.undefined
+  var addons: js.UndefOr[Any] = js.undefined
   
   var allowed_clients: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -33,7 +33,7 @@ trait Client extends StObject {
     */
   var client_id: js.UndefOr[String] = js.undefined
   
-  var client_metadata: js.UndefOr[js.Any] = js.undefined
+  var client_metadata: js.UndefOr[Any] = js.undefined
   
   /**
     * The client secret, it must not be public.
@@ -87,7 +87,7 @@ trait Client extends StObject {
     */
   var logo_uri: js.UndefOr[String] = js.undefined
   
-  var mobile: js.UndefOr[js.Any] = js.undefined
+  var mobile: js.UndefOr[Any] = js.undefined
   
   /**
     * The name of the client.
@@ -112,7 +112,10 @@ trait Client extends StObject {
   var sso_disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Defines the requested authentication method for the token endpoint. Possible values are 'none' (public client without a client secret), 'client_secret_post' (client uses HTTP POST parameters) or 'client_secret_basic' (client uses HTTP Basic) ['none' or 'client_secret_post' or 'client_secret_basic']
+    * Defines the requested authentication method for the token endpoint.
+    * Possible values are 'none' (public client without a client secret),
+    * 'client_secret_post' (client uses HTTP POST parameters) or 'client_secret_basic' (client uses HTTP Basic)
+    * ['none' or 'client_secret_post' or 'client_secret_basic']
     */
   var token_endpoint_auth_method: js.UndefOr[String] = js.undefined
   
@@ -127,7 +130,7 @@ object Client {
   
   extension [Self <: Client](x: Self) {
     
-    inline def setAddons(value: js.Any): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
+    inline def setAddons(value: Any): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     
     inline def setAddonsUndefined: Self = StObject.set(x, "addons", js.undefined)
     
@@ -135,19 +138,19 @@ object Client {
     
     inline def setAllowed_clientsUndefined: Self = StObject.set(x, "allowed_clients", js.undefined)
     
-    inline def setAllowed_clientsVarargs(value: String*): Self = StObject.set(x, "allowed_clients", js.Array(value :_*))
+    inline def setAllowed_clientsVarargs(value: String*): Self = StObject.set(x, "allowed_clients", js.Array(value*))
     
     inline def setAllowed_logout_urls(value: js.Array[String]): Self = StObject.set(x, "allowed_logout_urls", value.asInstanceOf[js.Any])
     
     inline def setAllowed_logout_urlsUndefined: Self = StObject.set(x, "allowed_logout_urls", js.undefined)
     
-    inline def setAllowed_logout_urlsVarargs(value: String*): Self = StObject.set(x, "allowed_logout_urls", js.Array(value :_*))
+    inline def setAllowed_logout_urlsVarargs(value: String*): Self = StObject.set(x, "allowed_logout_urls", js.Array(value*))
     
     inline def setAllowed_origins(value: js.Array[String]): Self = StObject.set(x, "allowed_origins", value.asInstanceOf[js.Any])
     
     inline def setAllowed_originsUndefined: Self = StObject.set(x, "allowed_origins", js.undefined)
     
-    inline def setAllowed_originsVarargs(value: String*): Self = StObject.set(x, "allowed_origins", js.Array(value :_*))
+    inline def setAllowed_originsVarargs(value: String*): Self = StObject.set(x, "allowed_origins", js.Array(value*))
     
     inline def setApp_type(value: String): Self = StObject.set(x, "app_type", value.asInstanceOf[js.Any])
     
@@ -157,19 +160,19 @@ object Client {
     
     inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
     
-    inline def setCallbacksVarargs(value: String*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+    inline def setCallbacksVarargs(value: String*): Self = StObject.set(x, "callbacks", js.Array(value*))
     
     inline def setClient_aliases(value: js.Array[String]): Self = StObject.set(x, "client_aliases", value.asInstanceOf[js.Any])
     
     inline def setClient_aliasesUndefined: Self = StObject.set(x, "client_aliases", js.undefined)
     
-    inline def setClient_aliasesVarargs(value: String*): Self = StObject.set(x, "client_aliases", js.Array(value :_*))
+    inline def setClient_aliasesVarargs(value: String*): Self = StObject.set(x, "client_aliases", js.Array(value*))
     
     inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
-    inline def setClient_metadata(value: js.Any): Self = StObject.set(x, "client_metadata", value.asInstanceOf[js.Any])
+    inline def setClient_metadata(value: Any): Self = StObject.set(x, "client_metadata", value.asInstanceOf[js.Any])
     
     inline def setClient_metadataUndefined: Self = StObject.set(x, "client_metadata", js.undefined)
     
@@ -213,7 +216,7 @@ object Client {
     
     inline def setGrant_typesUndefined: Self = StObject.set(x, "grant_types", js.undefined)
     
-    inline def setGrant_typesVarargs(value: Grant*): Self = StObject.set(x, "grant_types", js.Array(value :_*))
+    inline def setGrant_typesVarargs(value: Grant*): Self = StObject.set(x, "grant_types", js.Array(value*))
     
     inline def setInitiate_login_uri(value: String): Self = StObject.set(x, "initiate_login_uri", value.asInstanceOf[js.Any])
     
@@ -231,7 +234,7 @@ object Client {
     
     inline def setLogo_uriUndefined: Self = StObject.set(x, "logo_uri", js.undefined)
     
-    inline def setMobile(value: js.Any): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Any): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
     
@@ -247,7 +250,7 @@ object Client {
     
     inline def setSigning_keysUndefined: Self = StObject.set(x, "signing_keys", js.undefined)
     
-    inline def setSigning_keysVarargs(value: String*): Self = StObject.set(x, "signing_keys", js.Array(value :_*))
+    inline def setSigning_keysVarargs(value: String*): Self = StObject.set(x, "signing_keys", js.Array(value*))
     
     inline def setSso(value: Boolean): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
     
@@ -265,6 +268,6 @@ object Client {
     
     inline def setWeb_originsUndefined: Self = StObject.set(x, "web_origins", js.undefined)
     
-    inline def setWeb_originsVarargs(value: String*): Self = StObject.set(x, "web_origins", js.Array(value :_*))
+    inline def setWeb_originsVarargs(value: String*): Self = StObject.set(x, "web_origins", js.Array(value*))
   }
 }

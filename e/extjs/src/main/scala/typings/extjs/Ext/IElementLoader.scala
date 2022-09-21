@@ -13,22 +13,22 @@ trait IElementLoader
   var abort: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var ajaxOptions: js.UndefOr[js.Any] = js.undefined
+  var ajaxOptions: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var autoLoad: js.UndefOr[js.Any] = js.undefined
+  var autoLoad: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var baseParams: js.UndefOr[js.Any] = js.undefined
+  var baseParams: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Function) */
-  var callback: js.UndefOr[js.Any] = js.undefined
+  var callback: js.UndefOr[Any] = js.undefined
   
   /** [Method] Destroys the loader  */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var failure: js.UndefOr[js.Any] = js.undefined
+  var failure: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the target of this loader
     * @returns Ext.Component The target or null if none exists.
@@ -46,19 +46,19 @@ trait IElementLoader
   /** [Method] Loads new data from the server
     * @param options Object The options for the request. They can be any configuration option that can be specified for the class, with the exception of the target option. Note that any options passed to the method will override any class defaults.
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean/String) */
-  var loadMask: js.UndefOr[js.Any] = js.undefined
+  var loadMask: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Function) */
-  var renderer: js.UndefOr[js.Any] = js.undefined
+  var renderer: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var scripts: js.UndefOr[Boolean] = js.undefined
@@ -66,24 +66,24 @@ trait IElementLoader
   /** [Method] Sets an Ext Element as the target of this loader
     * @param target String/HTMLElement/Ext.Element The element or its ID.
     */
-  var setTarget: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTarget: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Automatically refreshes the content over a specified period
     * @param interval Number The interval to refresh in ms.
     * @param options Object The options to pass to the load method. See load
     */
   var startAutoRefresh: js.UndefOr[
-    js.Function2[/* interval */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* interval */ js.UndefOr[Double], /* options */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] Clears any auto refresh  */
   var stopAutoRefresh: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var success: js.UndefOr[js.Any] = js.undefined
+  var success: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (HTMLElement/Ext.Element/String) */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var url: js.UndefOr[java.lang.String] = js.undefined
@@ -101,19 +101,19 @@ object IElementLoader {
     
     inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
-    inline def setAjaxOptions(value: js.Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
+    inline def setAjaxOptions(value: Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
     
     inline def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
     
-    inline def setAutoLoad(value: js.Any): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
+    inline def setAutoLoad(value: Any): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
     inline def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
-    inline def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
+    inline def setBaseParams(value: Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
     
     inline def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
     
-    inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
@@ -121,7 +121,7 @@ object IElementLoader {
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    inline def setFailure(value: js.Any): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+    inline def setFailure(value: Any): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
     inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
     
@@ -137,23 +137,23 @@ object IElementLoader {
     
     inline def setIsLoaderUndefined: Self = StObject.set(x, "isLoader", js.undefined)
     
-    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    inline def setLoadMask(value: js.Any): Self = StObject.set(x, "loadMask", value.asInstanceOf[js.Any])
+    inline def setLoadMask(value: Any): Self = StObject.set(x, "loadMask", value.asInstanceOf[js.Any])
     
     inline def setLoadMaskUndefined: Self = StObject.set(x, "loadMask", js.undefined)
     
     inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -161,11 +161,11 @@ object IElementLoader {
     
     inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
-    inline def setSetTarget(value: /* target */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
+    inline def setSetTarget(value: /* target */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
     
     inline def setSetTargetUndefined: Self = StObject.set(x, "setTarget", js.undefined)
     
-    inline def setStartAutoRefresh(value: (/* interval */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "startAutoRefresh", js.Any.fromFunction2(value))
+    inline def setStartAutoRefresh(value: (/* interval */ js.UndefOr[Double], /* options */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "startAutoRefresh", js.Any.fromFunction2(value))
     
     inline def setStartAutoRefreshUndefined: Self = StObject.set(x, "startAutoRefresh", js.undefined)
     
@@ -173,11 +173,11 @@ object IElementLoader {
     
     inline def setStopAutoRefreshUndefined: Self = StObject.set(x, "stopAutoRefresh", js.undefined)
     
-    inline def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     

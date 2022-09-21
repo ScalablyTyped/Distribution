@@ -35,7 +35,7 @@ object TableRow {
     
     inline def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
     
-    inline def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
+    inline def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value*))
     
     inline def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
     

@@ -26,6 +26,13 @@ trait AccessibilityPointOptions extends StObject {
   var dateFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Whether or not to describe
+    * points with the value `null` to assistive technology, such as screen
+    * readers.
+    */
+  var describeNull: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Formatter function to use
     * instead of the default for point descriptions.
     *
@@ -50,6 +57,9 @@ trait AccessibilityPointOptions extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Format to use for describing the
     * values of data points to assistive technology - including screen readers.
     * The point context is available as `{point}`.
+    *
+    * Other available context variables include `{index}`, `{value}`, and
+    * `{xDescription}`.
     *
     * Additionally, the series name, annotation info, and description added in
     * `point.accessibility.description` is added by default if relevant. To
@@ -85,6 +95,10 @@ object AccessibilityPointOptions {
     inline def setDateFormatter(value: Point => String): Self = StObject.set(x, "dateFormatter", js.Any.fromFunction1(value))
     
     inline def setDateFormatterUndefined: Self = StObject.set(x, "dateFormatter", js.undefined)
+    
+    inline def setDescribeNull(value: Boolean): Self = StObject.set(x, "describeNull", value.asInstanceOf[js.Any])
+    
+    inline def setDescribeNullUndefined: Self = StObject.set(x, "describeNull", js.undefined)
     
     inline def setDescriptionFormatter(value: Point => String): Self = StObject.set(x, "descriptionFormatter", js.Any.fromFunction1(value))
     

@@ -11,10 +11,10 @@ object stateInlineMod {
   
   @JSImport("markdown-it/lib/rules_inline/state_inline", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with StateInline {
-    def this(src: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]) = this()
+    def this(src: String, md: MarkdownIt, env: Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]) = this()
     
     /* CompleteClass */
     var Token: Instantiable3[
@@ -29,7 +29,7 @@ object stateInlineMod {
       * optimization of pairs parse (emphasis, strikes).
       */
     /* CompleteClass */
-    var cache: js.Any = js.native
+    var cache: Any = js.native
     
     /**
       * List of emphasis-like delimiters for current tag
@@ -38,7 +38,7 @@ object stateInlineMod {
     var delimiters: js.Array[Delimiter] = js.native
     
     /* CompleteClass */
-    var env: js.Any = js.native
+    var env: Any = js.native
     
     /* CompleteClass */
     var level: Double = js.native
@@ -180,14 +180,14 @@ object stateInlineMod {
       * Stores { start: end } pairs. Useful for backtrack
       * optimization of pairs parse (emphasis, strikes).
       */
-    var cache: js.Any
+    var cache: Any
     
     /**
       * List of emphasis-like delimiters for current tag
       */
     var delimiters: js.Array[Delimiter]
     
-    var env: js.Any
+    var env: Any
     
     var level: Double
     
@@ -238,9 +238,9 @@ object stateInlineMod {
           /* nesting */ Nesting, 
           typings.markdownIt.tokenMod.^
         ],
-      cache: js.Any,
+      cache: Any,
       delimiters: js.Array[Delimiter],
-      env: js.Any,
+      env: Any,
       level: Double,
       md: MarkdownIt,
       pending: String,
@@ -260,13 +260,13 @@ object stateInlineMod {
     
     extension [Self <: StateInline](x: Self) {
       
-      inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       inline def setDelimiters(value: js.Array[Delimiter]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value*))
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -299,11 +299,11 @@ object stateInlineMod {
       
       inline def setTokens(value: js.Array[typings.markdownIt.tokenMod.^]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      inline def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value*))
       
       inline def setTokens_meta(value: js.Array[TokenMata | Null]): Self = StObject.set(x, "tokens_meta", value.asInstanceOf[js.Any])
       
-      inline def setTokens_metaVarargs(value: (TokenMata | Null)*): Self = StObject.set(x, "tokens_meta", js.Array(value :_*))
+      inline def setTokens_metaVarargs(value: (TokenMata | Null)*): Self = StObject.set(x, "tokens_meta", js.Array(value*))
     }
   }
   
@@ -322,7 +322,7 @@ object stateInlineMod {
       
       inline def setDelimiters(value: js.Array[Delimiter]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value*))
     }
   }
 }

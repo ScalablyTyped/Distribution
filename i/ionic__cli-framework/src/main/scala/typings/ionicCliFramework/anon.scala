@@ -8,13 +8,7 @@ import typings.ionicCliFramework.definitionsMod.Footnote
 import typings.ionicCliFramework.definitionsMod.HydratedCommandMetadata
 import typings.ionicCliFramework.definitionsMod.ICommand
 import typings.ionicCliFramework.definitionsMod.INamespace
-import typings.ionicCliFramework.loggerMod.LogRecord
-import typings.ionicCliFramework.loggerMod.LoggerFormatter
-import typings.ionicCliFramework.loggerMod.LoggerHandler
-import typings.ionicCliFramework.loggerMod.LoggerLevelWeight
-import typings.node.NodeJS.WritableStream
 import typings.node.processMod.global.NodeJS.ProcessEnv
-import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +41,7 @@ object anon {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
       
       inline def setCommand(value: C): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -55,7 +49,7 @@ object anon {
       
       inline def setPath(value: js.Array[CommandPathItem[C, N, M, I, O]]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: (CommandPathItem[C, N, M, I, O])*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (CommandPathItem[C, N, M, I, O])*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
@@ -78,7 +72,7 @@ object anon {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value*))
       
       inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
@@ -139,7 +133,7 @@ object anon {
       
       inline def setCommands(value: js.Array[HydratedCommandMetadata[C, N, M, I, O]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      inline def setCommandsVarargs(value: (HydratedCommandMetadata[C, N, M, I, O])*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: (HydratedCommandMetadata[C, N, M, I, O])*): Self = StObject.set(x, "commands", js.Array(value*))
     }
   }
   
@@ -159,90 +153,6 @@ object anon {
       inline def setIncludeSeparated(value: Boolean): Self = StObject.set(x, "includeSeparated", value.asInstanceOf[js.Any])
       
       inline def setIncludeSeparatedUndefined: Self = StObject.set(x, "includeSeparated", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Partial<@ionic/cli-framework.@ionic/cli-framework/lib/logger.LoggerOptions> */
-  trait PartialLoggerOptions extends StObject {
-    
-    var handlers: js.UndefOr[Set[LoggerHandler]] = js.undefined
-    
-    var level: js.UndefOr[LoggerLevelWeight] = js.undefined
-  }
-  object PartialLoggerOptions {
-    
-    inline def apply(): PartialLoggerOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialLoggerOptions]
-    }
-    
-    extension [Self <: PartialLoggerOptions](x: Self) {
-      
-      inline def setHandlers(value: Set[LoggerHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
-      
-      inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
-      
-      inline def setLevel(value: LoggerLevelWeight): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
-      
-      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Partial<@ionic/cli-framework.@ionic/cli-framework/lib/logger.StreamHandlerOptions> */
-  trait PartialStreamHandlerOptio extends StObject {
-    
-    var filter: js.UndefOr[js.Function1[/* record */ LogRecord, Boolean]] = js.undefined
-    
-    var formatter: js.UndefOr[LoggerFormatter] = js.undefined
-    
-    var stream: js.UndefOr[WritableStream] = js.undefined
-  }
-  object PartialStreamHandlerOptio {
-    
-    inline def apply(): PartialStreamHandlerOptio = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialStreamHandlerOptio]
-    }
-    
-    extension [Self <: PartialStreamHandlerOptio](x: Self) {
-      
-      inline def setFilter(value: /* record */ LogRecord => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
-      
-      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
-      
-      inline def setFormatter(value: /* record */ LogRecord => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
-      
-      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
-      
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
-      
-      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Partial<@ionic/cli-framework.@ionic/cli-framework/lib/tasks.TaskOptions> */
-  trait PartialTaskOptions extends StObject {
-    
-    var msg: js.UndefOr[String] = js.undefined
-    
-    var tickInterval: js.UndefOr[Double] = js.undefined
-  }
-  object PartialTaskOptions {
-    
-    inline def apply(): PartialTaskOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialTaskOptions]
-    }
-    
-    extension [Self <: PartialTaskOptions](x: Self) {
-      
-      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
-      
-      inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
-      
-      inline def setTickInterval(value: Double): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
-      
-      inline def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
     }
   }
   
@@ -287,25 +197,25 @@ object anon {
       
       inline def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])
       
-      inline def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value :_*))
+      inline def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value*))
       
       inline def setFootnotes(value: js.Array[Footnote]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
       
-      inline def setFootnotesVarargs(value: Footnote*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
+      inline def setFootnotesVarargs(value: Footnote*): Self = StObject.set(x, "footnotes", js.Array(value*))
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setInputs(value: js.Array[CommandMetadataInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: CommandMetadataInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: CommandMetadataInput*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: js.Array[CommandMetadataOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: CommandMetadataOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: CommandMetadataOption*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     }

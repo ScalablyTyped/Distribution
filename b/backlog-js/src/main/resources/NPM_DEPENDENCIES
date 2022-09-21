@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "backlog-js" : "0.12.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "backlog-js" : "0.12.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

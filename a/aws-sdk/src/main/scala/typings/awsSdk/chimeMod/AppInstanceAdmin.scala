@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppInstanceAdmin extends StObject {
   
   /**
-    * The name and metadata of the app instance administrator.
+    * The AppInstanceAdmin data.
     */
   var Admin: js.UndefOr[Identity] = js.undefined
   
   /**
-    * The ARN of the app instance administrator.
+    * The ARN of the AppInstance for which the user is an administrator.
     */
   var AppInstanceArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The time at which an administrator was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object AppInstanceAdmin {
   
@@ -38,7 +38,7 @@ object AppInstanceAdmin {
     
     inline def setAppInstanceArnUndefined: Self = StObject.set(x, "AppInstanceArn", js.undefined)
     
-    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
   }

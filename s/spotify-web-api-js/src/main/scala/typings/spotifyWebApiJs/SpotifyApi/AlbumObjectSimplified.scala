@@ -53,7 +53,7 @@ object AlbumObjectSimplified {
     
     inline def setAvailable_marketsUndefined: Self = StObject.set(x, "available_markets", js.undefined)
     
-    inline def setAvailable_marketsVarargs(value: String*): Self = StObject.set(x, "available_markets", js.Array(value :_*))
+    inline def setAvailable_marketsVarargs(value: String*): Self = StObject.set(x, "available_markets", js.Array(value*))
     
     inline def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object AlbumObjectSimplified {
     
     inline def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

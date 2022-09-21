@@ -9,7 +9,7 @@ object contentTypeUnsupportedMod {
   
   @JSImport("sip.js/lib/api/exceptions/content-type-unsupported", "ContentTypeUnsupportedError")
   @js.native
-  class ContentTypeUnsupportedError () extends Exception {
+  open class ContentTypeUnsupportedError () extends Exception {
     def this(message: String) = this()
   }
 }

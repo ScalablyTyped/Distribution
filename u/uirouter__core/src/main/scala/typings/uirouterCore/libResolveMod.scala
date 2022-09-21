@@ -21,7 +21,7 @@ object libResolveMod {
   
   @JSImport("@uirouter/core/lib/resolve", "Resolvable")
   @js.native
-  class Resolvable protected ()
+  open class Resolvable protected ()
     extends typings.uirouterCore.resolvableMod.Resolvable {
     /** This constructor creates a Resolvable copy */
     def this(resolvable: typings.uirouterCore.resolvableMod.Resolvable) = this()
@@ -46,14 +46,14 @@ object libResolveMod {
       * @param policy the [[ResolvePolicy]] defines when and how the Resolvable is processed
       * @param data Pre-resolved data. If the resolve value is already known, it may be provided here.
       */
-    def this(token: js.Any, resolveFn: js.Function) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any]) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any], policy: ResolvePolicy) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any], policy: Unit, data: js.Any) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any], policy: ResolvePolicy, data: js.Any) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: Unit, policy: Unit, data: js.Any) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy, data: js.Any) = this()
+    def this(token: Any, resolveFn: js.Function) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any]) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: ResolvePolicy) = this()
+    def this(token: Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: Unit, data: Any) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: ResolvePolicy, data: Any) = this()
+    def this(token: Any, resolveFn: js.Function, deps: Unit, policy: Unit, data: Any) = this()
+    def this(token: Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy, data: Any) = this()
   }
   /* static members */
   object Resolvable {
@@ -62,12 +62,12 @@ object libResolveMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromData(token: js.Any, data: js.Any): typings.uirouterCore.resolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.resolvableMod.Resolvable]
+    inline def fromData(token: Any, data: Any): typings.uirouterCore.resolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.resolvableMod.Resolvable]
   }
   
   @JSImport("@uirouter/core/lib/resolve", "ResolveContext")
   @js.native
-  class ResolveContext protected ()
+  open class ResolveContext protected ()
     extends typings.uirouterCore.resolveContextMod.ResolveContext {
     def this(_path: js.Array[PathNode]) = this()
   }

@@ -1,5 +1,7 @@
 package typings.vegaCanvas
 
+import typings.canvas.mod.Canvas
+import typings.canvas.mod.Image
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.vegaCanvas.vegaCanvasStrings.pdf
@@ -14,19 +16,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def canvas(w: Double, h: Double): HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null]
-  
-  inline def canvas_pdf(w: Double, h: Double, `type`: pdf): HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null]
-  
-  inline def canvas_svg(w: Double, h: Double, `type`: svg): HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null]
+  inline def canvas(w: Double, h: Double): HTMLCanvasElement | Canvas | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement | Canvas | Null]
+  inline def canvas(w: Double, h: Double, `type`: pdf | svg): HTMLCanvasElement | Canvas | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement | Canvas | Null]
   
   inline def domCanvas(w: Double, h: Double): HTMLCanvasElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("domCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement | Null]
   
-  inline def image(): HTMLImageElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Image */ js.Any) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("image")().asInstanceOf[HTMLImageElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Image */ js.Any) | Null]
+  inline def image(): HTMLImageElement | Image | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("image")().asInstanceOf[HTMLImageElement | Image | Null]
   
-  inline def nodeCanvas(w: Double, h: Double): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null]
-  
-  inline def nodeCanvas_pdf(w: Double, h: Double, `type`: pdf): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null]
-  
-  inline def nodeCanvas_svg(w: Double, h: Double, `type`: svg): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Canvas */ js.Any) | Null]
+  inline def nodeCanvas(w: Double, h: Double): Canvas | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Canvas | Null]
+  inline def nodeCanvas(w: Double, h: Double, `type`: pdf | svg): Canvas | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Canvas | Null]
 }

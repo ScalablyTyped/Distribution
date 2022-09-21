@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A notification of one event relating to an enterprise.
-  */
 trait SchemaNotification extends StObject {
   
   /**
@@ -20,10 +17,14 @@ trait SchemaNotification extends StObject {
   var appUpdateEvent: js.UndefOr[SchemaAppUpdateEvent] = js.undefined
   
   /**
-    * The ID of the enterprise for which the notification is sent. This will
-    * always be present.
+    * Notifications about device report updates.
     */
-  var enterpriseId: js.UndefOr[String] = js.undefined
+  var deviceReportUpdateEvent: js.UndefOr[SchemaDeviceReportUpdateEvent] = js.undefined
+  
+  /**
+    * The ID of the enterprise for which the notification is sent. This will always be present.
+    */
+  var enterpriseId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Notifications about an app installation failure.
@@ -43,10 +44,10 @@ trait SchemaNotification extends StObject {
   /**
     * Type of the notification.
     */
-  var notificationType: js.UndefOr[String] = js.undefined
+  var notificationType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Notifications about changes to a product&#39;s approval status.
+    * Notifications about changes to a product's approval status.
     */
   var productApprovalEvent: js.UndefOr[SchemaProductApprovalEvent] = js.undefined
   
@@ -56,10 +57,9 @@ trait SchemaNotification extends StObject {
   var productAvailabilityChangeEvent: js.UndefOr[SchemaProductAvailabilityChangeEvent] = js.undefined
   
   /**
-    * The time when the notification was published in milliseconds since
-    * 1970-01-01T00:00:00Z. This will always be present.
+    * The time when the notification was published in milliseconds since 1970-01-01T00:00:00Z. This will always be present.
     */
-  var timestampMillis: js.UndefOr[String] = js.undefined
+  var timestampMillis: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaNotification {
   
@@ -78,7 +78,13 @@ object SchemaNotification {
     
     inline def setAppUpdateEventUndefined: Self = StObject.set(x, "appUpdateEvent", js.undefined)
     
+    inline def setDeviceReportUpdateEvent(value: SchemaDeviceReportUpdateEvent): Self = StObject.set(x, "deviceReportUpdateEvent", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceReportUpdateEventUndefined: Self = StObject.set(x, "deviceReportUpdateEvent", js.undefined)
+    
     inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+    
+    inline def setEnterpriseIdNull: Self = StObject.set(x, "enterpriseId", null)
     
     inline def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
     
@@ -96,6 +102,8 @@ object SchemaNotification {
     
     inline def setNotificationType(value: String): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
+    inline def setNotificationTypeNull: Self = StObject.set(x, "notificationType", null)
+    
     inline def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
     
     inline def setProductApprovalEvent(value: SchemaProductApprovalEvent): Self = StObject.set(x, "productApprovalEvent", value.asInstanceOf[js.Any])
@@ -107,6 +115,8 @@ object SchemaNotification {
     inline def setProductAvailabilityChangeEventUndefined: Self = StObject.set(x, "productAvailabilityChangeEvent", js.undefined)
     
     inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampMillisNull: Self = StObject.set(x, "timestampMillis", null)
     
     inline def setTimestampMillisUndefined: Self = StObject.set(x, "timestampMillis", js.undefined)
   }

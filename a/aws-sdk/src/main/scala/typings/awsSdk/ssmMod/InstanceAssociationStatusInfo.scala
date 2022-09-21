@@ -12,17 +12,17 @@ trait InstanceAssociationStatusInfo extends StObject {
   var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.undefined
   
   /**
-    * The name of the association applied to the instance.
+    * The name of the association applied to the managed node.
     */
   var AssociationName: js.UndefOr[typings.awsSdk.ssmMod.AssociationName] = js.undefined
   
   /**
-    * The version of the association applied to the instance.
+    * The version of the association applied to the managed node.
     */
   var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
-    * Detailed status information about the instance association.
+    * Detailed status information about the association.
     */
   var DetailedStatus: js.UndefOr[StatusName] = js.undefined
   
@@ -37,9 +37,9 @@ trait InstanceAssociationStatusInfo extends StObject {
   var ErrorCode: js.UndefOr[AgentErrorCode] = js.undefined
   
   /**
-    * The date the instance association ran. 
+    * The date the association ran. 
     */
-  var ExecutionDate: js.UndefOr[DateTime] = js.undefined
+  var ExecutionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Summary information about association execution.
@@ -47,7 +47,7 @@ trait InstanceAssociationStatusInfo extends StObject {
   var ExecutionSummary: js.UndefOr[InstanceAssociationExecutionSummary] = js.undefined
   
   /**
-    * The instance ID where the association was created.
+    * The managed node ID where the association was created.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
@@ -62,7 +62,7 @@ trait InstanceAssociationStatusInfo extends StObject {
   var OutputUrl: js.UndefOr[InstanceAssociationOutputUrl] = js.undefined
   
   /**
-    * Status information about the instance association.
+    * Status information about the association.
     */
   var Status: js.UndefOr[StatusName] = js.undefined
 }
@@ -99,7 +99,7 @@ object InstanceAssociationStatusInfo {
     
     inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    inline def setExecutionDate(value: DateTime): Self = StObject.set(x, "ExecutionDate", value.asInstanceOf[js.Any])
+    inline def setExecutionDate(value: js.Date): Self = StObject.set(x, "ExecutionDate", value.asInstanceOf[js.Any])
     
     inline def setExecutionDateUndefined: Self = StObject.set(x, "ExecutionDate", js.undefined)
     

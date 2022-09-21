@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
@@ -108,7 +107,7 @@ trait EmailMessage extends StObject {
   var sender: EmailRecipient
   
   /** Gets or sets the time an email was sent. */
-  var sentTime: Date
+  var sentTime: js.Date
   
   /**
     * Sets the value of the specified body stream in an email message.
@@ -163,7 +162,7 @@ object EmailMessage {
     preview: String,
     remoteId: String,
     sender: EmailRecipient,
-    sentTime: Date,
+    sentTime: js.Date,
     setBodyStream: (EmailMessageBodyKind, IRandomAccessStreamReference) => Unit,
     smimeData: IRandomAccessStreamReference,
     smimeKind: EmailMessageSmimeKind,
@@ -238,7 +237,7 @@ object EmailMessage {
     
     inline def setSender(value: EmailRecipient): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    inline def setSentTime(value: Date): Self = StObject.set(x, "sentTime", value.asInstanceOf[js.Any])
+    inline def setSentTime(value: js.Date): Self = StObject.set(x, "sentTime", value.asInstanceOf[js.Any])
     
     inline def setSetBodyStream(value: (EmailMessageBodyKind, IRandomAccessStreamReference) => Unit): Self = StObject.set(x, "setBodyStream", js.Any.fromFunction2(value))
     

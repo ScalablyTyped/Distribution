@@ -8,5 +8,5 @@ object putKeyPolicyMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/PutKeyPolicy", "PutKeyPolicy")
   @js.native
-  val PutKeyPolicy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val PutKeyPolicy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

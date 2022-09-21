@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "MapType")
 @js.native
-class MapType protected () extends StObject {
+open class MapType protected () extends StObject {
   def this(name: String, layers: js.Array[IClassConstructor[Layer] | String]) = this()
 }

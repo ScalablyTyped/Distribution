@@ -49,12 +49,12 @@ trait UpdateAction extends StObject {
   /**
     * The recommended date to apply the service update to ensure compliance. For information on compliance, see Self-Service Security Updates for Compliance.
     */
-  var ServiceUpdateRecommendedApplyByDate: js.UndefOr[TStamp] = js.undefined
+  var ServiceUpdateRecommendedApplyByDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date the update is first available
     */
-  var ServiceUpdateReleaseDate: js.UndefOr[TStamp] = js.undefined
+  var ServiceUpdateReleaseDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The severity of the service update
@@ -79,7 +79,7 @@ trait UpdateAction extends StObject {
   /**
     * The date that the service update is available to a replication group
     */
-  var UpdateActionAvailableDate: js.UndefOr[TStamp] = js.undefined
+  var UpdateActionAvailableDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the update action
@@ -89,7 +89,7 @@ trait UpdateAction extends StObject {
   /**
     * The date when the UpdateActionStatus was last modified
     */
-  var UpdateActionStatusModifiedDate: js.UndefOr[TStamp] = js.undefined
+  var UpdateActionStatusModifiedDate: js.UndefOr[js.Date] = js.undefined
 }
 object UpdateAction {
   
@@ -108,7 +108,7 @@ object UpdateAction {
     
     inline def setCacheNodeUpdateStatusUndefined: Self = StObject.set(x, "CacheNodeUpdateStatus", js.undefined)
     
-    inline def setCacheNodeUpdateStatusVarargs(value: CacheNodeUpdateStatus*): Self = StObject.set(x, "CacheNodeUpdateStatus", js.Array(value :_*))
+    inline def setCacheNodeUpdateStatusVarargs(value: CacheNodeUpdateStatus*): Self = StObject.set(x, "CacheNodeUpdateStatus", js.Array(value*))
     
     inline def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
@@ -122,7 +122,7 @@ object UpdateAction {
     
     inline def setNodeGroupUpdateStatusUndefined: Self = StObject.set(x, "NodeGroupUpdateStatus", js.undefined)
     
-    inline def setNodeGroupUpdateStatusVarargs(value: NodeGroupUpdateStatus*): Self = StObject.set(x, "NodeGroupUpdateStatus", js.Array(value :_*))
+    inline def setNodeGroupUpdateStatusVarargs(value: NodeGroupUpdateStatus*): Self = StObject.set(x, "NodeGroupUpdateStatus", js.Array(value*))
     
     inline def setNodesUpdated(value: String): Self = StObject.set(x, "NodesUpdated", value.asInstanceOf[js.Any])
     
@@ -136,11 +136,11 @@ object UpdateAction {
     
     inline def setServiceUpdateNameUndefined: Self = StObject.set(x, "ServiceUpdateName", js.undefined)
     
-    inline def setServiceUpdateRecommendedApplyByDate(value: TStamp): Self = StObject.set(x, "ServiceUpdateRecommendedApplyByDate", value.asInstanceOf[js.Any])
+    inline def setServiceUpdateRecommendedApplyByDate(value: js.Date): Self = StObject.set(x, "ServiceUpdateRecommendedApplyByDate", value.asInstanceOf[js.Any])
     
     inline def setServiceUpdateRecommendedApplyByDateUndefined: Self = StObject.set(x, "ServiceUpdateRecommendedApplyByDate", js.undefined)
     
-    inline def setServiceUpdateReleaseDate(value: TStamp): Self = StObject.set(x, "ServiceUpdateReleaseDate", value.asInstanceOf[js.Any])
+    inline def setServiceUpdateReleaseDate(value: js.Date): Self = StObject.set(x, "ServiceUpdateReleaseDate", value.asInstanceOf[js.Any])
     
     inline def setServiceUpdateReleaseDateUndefined: Self = StObject.set(x, "ServiceUpdateReleaseDate", js.undefined)
     
@@ -160,13 +160,13 @@ object UpdateAction {
     
     inline def setSlaMetUndefined: Self = StObject.set(x, "SlaMet", js.undefined)
     
-    inline def setUpdateActionAvailableDate(value: TStamp): Self = StObject.set(x, "UpdateActionAvailableDate", value.asInstanceOf[js.Any])
+    inline def setUpdateActionAvailableDate(value: js.Date): Self = StObject.set(x, "UpdateActionAvailableDate", value.asInstanceOf[js.Any])
     
     inline def setUpdateActionAvailableDateUndefined: Self = StObject.set(x, "UpdateActionAvailableDate", js.undefined)
     
     inline def setUpdateActionStatus(value: UpdateActionStatus): Self = StObject.set(x, "UpdateActionStatus", value.asInstanceOf[js.Any])
     
-    inline def setUpdateActionStatusModifiedDate(value: TStamp): Self = StObject.set(x, "UpdateActionStatusModifiedDate", value.asInstanceOf[js.Any])
+    inline def setUpdateActionStatusModifiedDate(value: js.Date): Self = StObject.set(x, "UpdateActionStatusModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setUpdateActionStatusModifiedDateUndefined: Self = StObject.set(x, "UpdateActionStatusModifiedDate", js.undefined)
     

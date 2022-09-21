@@ -1,7 +1,7 @@
 
 # Scala.js typings for classnames
 
-Typings are for version 2.2
+Typings are for version 2.3.2
 
 ## Library description:
 A simple utility for conditionally joining classNames together
@@ -10,10 +10,10 @@ A simple utility for conditionally joining classNames together
 | ------------------ | :-------------: |
 | Full name          | classnames |
 | Keywords           | react, css, classes, classname, classnames, util, utility |
-| # releases         | 1 |
-| # dependents       | 16861 |
-| # downloads        | 240449704 |
-| # stars            | 225 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 4.116949E7 |
+| # stars            | 15822.0 |
 
 ## Links
 - [Homepage](https://github.com/JedWatson/classnames#readme)
@@ -24,7 +24,7 @@ A simple utility for conditionally joining classNames together
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

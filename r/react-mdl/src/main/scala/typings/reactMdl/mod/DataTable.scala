@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "DataTable")
 @js.native
-class DataTable protected () extends Table {
+open class DataTable protected () extends Table {
   def this(props: TableProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TableProps, context: js.Any) = this()
+  def this(props: TableProps, context: Any) = this()
 }

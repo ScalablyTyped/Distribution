@@ -12,14 +12,14 @@ trait BooleanArraySupportOption
      with BaseSupportOption[boolean]
      with _SupportOption {
   
-  var default: js.Array[ValueArray]
+  var default: js.UndefOr[js.Array[ValueArray]] = js.undefined
   
   var array: `true`
 }
 object BooleanArraySupportOption {
   
-  inline def apply(category: String, default: js.Array[ValueArray], since: String): BooleanArraySupportOption = {
-    val __obj = js.Dynamic.literal(array = true, category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
+  inline def apply(category: String, since: String): BooleanArraySupportOption = {
+    val __obj = js.Dynamic.literal(array = true, category = category.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[BooleanArraySupportOption]
   }
@@ -30,6 +30,8 @@ object BooleanArraySupportOption {
     
     inline def setDefault(value: js.Array[ValueArray]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setDefaultVarargs(value: ValueArray*): Self = StObject.set(x, "default", js.Array(value :_*))
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setDefaultVarargs(value: ValueArray*): Self = StObject.set(x, "default", js.Array(value*))
   }
 }

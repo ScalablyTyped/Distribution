@@ -22,8 +22,9 @@ trait Advertiser extends StObject {
   var displayName: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. Controls whether or not insertion orders and line items of the advertiser can spend their budgets and bid on inventory. * Accepted values are `ENTITY_STATUS_ACTIVE` and
-    * `ENTITY_STATUS_SCHEDULED_FOR_DELETION`. * If set to `ENTITY_STATUS_SCHEDULED_FOR_DELETION`, the advertiser will be deleted 30 days from when it was first scheduled for deletion.
+    * Required. Controls whether or not insertion orders and line items of the advertiser can spend their budgets and bid on inventory. * Accepted values are `ENTITY_STATUS_ACTIVE`,
+    * `ENTITY_STATUS_PAUSED` and `ENTITY_STATUS_SCHEDULED_FOR_DELETION`. * If set to `ENTITY_STATUS_SCHEDULED_FOR_DELETION`, the advertiser will be deleted 30 days from when it was first
+    * scheduled for deletion.
     */
   var entityStatus: js.UndefOr[String] = js.undefined
   
@@ -41,6 +42,13 @@ trait Advertiser extends StObject {
   
   /** Required. Immutable. The unique ID of the partner that the advertiser belongs to. */
   var partnerId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Whether integration with Mediaocean (Prisma) is enabled. By enabling this, you agree to the following: On behalf of my company, I authorize Mediaocean (Prisma) to send budget
+    * segment plans to Google, and I authorize Google to send corresponding reporting and invoices from DV360 to Mediaocean for the purposes of budget planning, billing, and
+    * reconciliation for this advertiser.
+    */
+  var prismaEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Targeting settings related to ad serving of the advertiser. */
   var servingConfig: js.UndefOr[AdvertiserTargetingConfig] = js.undefined
@@ -96,6 +104,10 @@ object Advertiser {
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
+    
+    inline def setPrismaEnabled(value: Boolean): Self = StObject.set(x, "prismaEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPrismaEnabledUndefined: Self = StObject.set(x, "prismaEnabled", js.undefined)
     
     inline def setServingConfig(value: AdvertiserTargetingConfig): Self = StObject.set(x, "servingConfig", value.asInstanceOf[js.Any])
     

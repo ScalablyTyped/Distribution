@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddRuleOptions extends StObject {
   
-  var args: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var args: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var name: String
 }
@@ -20,7 +20,7 @@ object AddRuleOptions {
   
   extension [Self <: AddRuleOptions](x: Self) {
     
-    inline def setArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: StringDictionary[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Line")
 @js.native
-/* private */ class Line ()
+/* private */ open class Line ()
   extends StObject
      with typings.activexAccess.Access.Line

@@ -17,9 +17,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the chart axes.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -28,9 +28,9 @@ trait ChartAxes
      with ClientObject {
   
   /**
-    *
     * Represents the category axis in a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val categoryAxis: ChartAxis = js.native
@@ -42,37 +42,25 @@ trait ChartAxes
   /**
     * Returns the specific axis identified by type and group.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
-    * @param type Specifies the axis type. See Excel.ChartAxisType for details.
-    * @param group Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
+    * @param type Specifies the axis type. See `Excel.ChartAxisType` for details.
+    * @param group Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for details.
     */
-  def getItem(`type`: ChartAxisType): ChartAxis = js.native
-  def getItem(`type`: ChartAxisType, group: ChartAxisGroup): ChartAxis = js.native
-  def getItem(`type`: Category, group: Primary): ChartAxis = js.native
-  def getItem(`type`: Category, group: Secondary): ChartAxis = js.native
-  def getItem(`type`: Invalid, group: Primary): ChartAxis = js.native
-  def getItem(`type`: Invalid, group: Secondary): ChartAxis = js.native
-  def getItem(`type`: Series, group: Primary): ChartAxis = js.native
-  def getItem(`type`: Series, group: Secondary): ChartAxis = js.native
-  def getItem(`type`: Value, group: Primary): ChartAxis = js.native
-  def getItem(`type`: Value, group: Secondary): ChartAxis = js.native
-  @JSName("getItem")
-  def getItem_Category(`type`: Category): ChartAxis = js.native
+  def getItem(`type`: Invalid | Category | Value | Series): ChartAxis = js.native
+  def getItem(`type`: Invalid | Category | Value | Series, group: Primary | Secondary): ChartAxis = js.native
   /**
     * Returns the specific axis identified by type and group.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
-    * @param type Specifies the axis type. See Excel.ChartAxisType for details.
-    * @param group Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
+    * @param type Specifies the axis type. See `Excel.ChartAxisType` for details.
+    * @param group Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for details.
     */
-  @JSName("getItem")
-  def getItem_Invalid(`type`: Invalid): ChartAxis = js.native
-  @JSName("getItem")
-  def getItem_Series(`type`: Series): ChartAxis = js.native
-  @JSName("getItem")
-  def getItem_Value(`type`: Value): ChartAxis = js.native
+  def getItem(`type`: ChartAxisType): ChartAxis = js.native
+  def getItem(`type`: ChartAxisType, group: ChartAxisGroup): ChartAxis = js.native
   
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -86,23 +74,17 @@ trait ChartAxes
   def load(propertyNames: js.Array[String]): ChartAxes = js.native
   
   /**
+    * Represents the series axis of a 3-D chart.
     *
-    * Represents the series axis of a 3-dimensional chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val seriesAxis: ChartAxis = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartAxes): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartAxes): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -116,9 +98,9 @@ trait ChartAxes
   def toJSON(): ChartAxesData = js.native
   
   /**
-    *
     * Represents the value axis in an axis.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val valueAxis: ChartAxis = js.native

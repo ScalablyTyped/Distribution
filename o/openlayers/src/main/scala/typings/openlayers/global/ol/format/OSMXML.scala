@@ -20,5 +20,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @api stable
   */
-class OSMXML ()
+open class OSMXML ()
   extends typings.openlayers.mod.format.OSMXML

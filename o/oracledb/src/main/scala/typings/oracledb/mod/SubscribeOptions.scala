@@ -19,7 +19,7 @@ trait SubscribeOptions extends StObject {
     * Enables CQN “client initiated” connections which internally use the same approach as normal connections to the database,
     * and do not require the database to be able to connect back to the application. Since client initiated connections
     * do not need additional network configuration, they have ease-of-use and security advantages.
-    * 
+    *
     * @default false
     * @since 4.2
     */
@@ -91,7 +91,7 @@ object SubscribeOptions {
     
     inline def setBindsUndefined: Self = StObject.set(x, "binds", js.undefined)
     
-    inline def setBindsVarargs(value: (js.Any | BindParameter)*): Self = StObject.set(x, "binds", js.Array(value :_*))
+    inline def setBindsVarargs(value: (Any | BindParameter)*): Self = StObject.set(x, "binds", js.Array(value*))
     
     inline def setCallback(value: SubscriptionMessage => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

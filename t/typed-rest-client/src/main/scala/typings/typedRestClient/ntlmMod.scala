@@ -13,7 +13,7 @@ object ntlmMod {
   
   @JSImport("typed-rest-client/handlers/ntlm", "NtlmCredentialHandler")
   @js.native
-  class NtlmCredentialHandler protected ()
+  open class NtlmCredentialHandler protected ()
     extends StObject
        with IRequestHandler {
     def this(username: String, password: String) = this()
@@ -21,21 +21,21 @@ object ntlmMod {
     def this(username: String, password: String, workstation: String, domain: String) = this()
     def this(username: String, password: String, workstation: Unit, domain: String) = this()
     
-    /* private */ var _ntlmOptions: js.Any = js.native
+    /* private */ var _ntlmOptions: Any = js.native
     
     /* CompleteClass */
     override def canHandleAuthentication(response: IHttpClientResponse): Boolean = js.native
     
     /* CompleteClass */
-    override def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): js.Promise[IHttpClientResponse] = js.native
+    override def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: Any): js.Promise[IHttpClientResponse] = js.native
     
-    /* private */ var handleAuthenticationPrivate: js.Any = js.native
+    /* private */ var handleAuthenticationPrivate: Any = js.native
     
     /* CompleteClass */
     override def prepareRequest(options: RequestOptions): Unit = js.native
     
-    /* private */ var sendType1Message: js.Any = js.native
+    /* private */ var sendType1Message: Any = js.native
     
-    /* private */ var sendType3Message: js.Any = js.native
+    /* private */ var sendType3Message: Any = js.native
   }
 }

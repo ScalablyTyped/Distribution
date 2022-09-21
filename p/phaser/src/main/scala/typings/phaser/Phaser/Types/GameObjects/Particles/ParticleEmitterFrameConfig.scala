@@ -1,7 +1,6 @@
 package typings.phaser.Phaser.Types.GameObjects.Particles
 
 import typings.phaser.Phaser.Textures.Frame
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait ParticleEmitterFrameConfig extends StObject {
   /**
     * The number of consecutive particles receiving each texture frame, when `cycle` is true.
     */
-  var quantity: js.UndefOr[integer] = js.undefined
+  var quantity: js.UndefOr[Double] = js.undefined
 }
 object ParticleEmitterFrameConfig {
   
@@ -40,9 +39,9 @@ object ParticleEmitterFrameConfig {
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setFramesVarargs(value: (Double | Frame | String)*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: (Double | Frame | String)*): Self = StObject.set(x, "frames", js.Array(value*))
     
-    inline def setQuantity(value: integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }

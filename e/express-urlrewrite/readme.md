@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-urlrewrite
 
-Typings are for version 1.2
+Typings are for version 2.0.0
 
 ## Library description:
 URL rewrite middleware for express
@@ -11,9 +11,9 @@ URL rewrite middleware for express
 | Full name          | express-urlrewrite |
 | Keywords           | express, middleware, rewrite, redirect, url |
 | # releases         | 3 |
-| # dependents       | 60 |
-| # downloads        | 7061518 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 897111.3333333334 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/kapouer/express-urlrewrite#readme)
@@ -24,7 +24,7 @@ URL rewrite middleware for express
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

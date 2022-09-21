@@ -1,7 +1,7 @@
 
 # Scala.js typings for human-interval
 
-Typings are for version 1.0
+Typings are for version 2.0.1
 
 ## Library description:
 Human readable time measurements
@@ -10,10 +10,10 @@ Human readable time measurements
 | ------------------ | :-------------: |
 | Full name          | human-interval |
 | Keywords           | interval, time, date |
-| # releases         | 4 |
-| # dependents       | 65 |
-| # downloads        | 2703963 |
-| # stars            | 4 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 465897.6666666667 |
+| # stars            | 415.0 |
 
 ## Links
 - [Homepage](https://github.com/agenda/human-interval#readme)
@@ -24,7 +24,7 @@ Human readable time measurements
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

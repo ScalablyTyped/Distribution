@@ -34,7 +34,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.BackgroundExecutionManager")
   @js.native
-  class BackgroundExecutionManager ()
+  open class BackgroundExecutionManager ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.BackgroundExecutionManager
   /* static members */
@@ -56,7 +56,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskBuilder")
   @js.native
-  class BackgroundTaskBuilder ()
+  open class BackgroundTaskBuilder ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskBuilder {
     
@@ -96,7 +96,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs")
   @js.native
-  class BackgroundTaskCompletedEventArgs ()
+  open class BackgroundTaskCompletedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs {
     
@@ -109,7 +109,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskDeferral")
   @js.native
-  class BackgroundTaskDeferral ()
+  open class BackgroundTaskDeferral ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskDeferral {
     
@@ -119,7 +119,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs")
   @js.native
-  class BackgroundTaskProgressEventArgs ()
+  open class BackgroundTaskProgressEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs {
     
@@ -132,7 +132,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration")
   @js.native
-  class BackgroundTaskRegistration ()
+  open class BackgroundTaskRegistration ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskRegistration {
     
@@ -140,10 +140,10 @@ object Background {
     var name: String = js.native
     
     /* CompleteClass */
-    var oncompleted: js.Any = js.native
+    var oncompleted: Any = js.native
     
     /* CompleteClass */
-    var onprogress: js.Any = js.native
+    var onprogress: Any = js.native
     
     /* CompleteClass */
     var taskId: String = js.native
@@ -166,7 +166,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.MaintenanceTrigger")
   @js.native
-  class MaintenanceTrigger protected ()
+  open class MaintenanceTrigger protected ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.MaintenanceTrigger {
     def this(freshnessTime: Double, oneShot: Boolean) = this()
@@ -180,13 +180,13 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.NetworkOperatorHotspotAuthenticationTrigger")
   @js.native
-  class NetworkOperatorHotspotAuthenticationTrigger ()
+  open class NetworkOperatorHotspotAuthenticationTrigger ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.NetworkOperatorHotspotAuthenticationTrigger
   
   @JSGlobal("Windows.ApplicationModel.Background.NetworkOperatorNotificationTrigger")
   @js.native
-  class NetworkOperatorNotificationTrigger protected ()
+  open class NetworkOperatorNotificationTrigger protected ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.NetworkOperatorNotificationTrigger {
     def this(networkAccountId: String) = this()
@@ -197,7 +197,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.PushNotificationTrigger")
   @js.native
-  class PushNotificationTrigger ()
+  open class PushNotificationTrigger ()
     extends StObject
        with IBackgroundTrigger {
     def this(applicationId: String) = this()
@@ -205,7 +205,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.SystemCondition")
   @js.native
-  class SystemCondition protected ()
+  open class SystemCondition protected ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.SystemCondition {
     def this(conditionType: SystemConditionType) = this()
@@ -238,7 +238,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.SystemTrigger")
   @js.native
-  class SystemTrigger protected ()
+  open class SystemTrigger protected ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.SystemTrigger {
     def this(triggerType: SystemTriggerType, oneShot: Boolean) = this()
@@ -286,7 +286,7 @@ object Background {
   
   @JSGlobal("Windows.ApplicationModel.Background.TimeTrigger")
   @js.native
-  class TimeTrigger protected ()
+  open class TimeTrigger protected ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Background.TimeTrigger {
     def this(freshnessTime: Double, oneShot: Boolean) = this()

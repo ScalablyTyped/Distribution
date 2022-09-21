@@ -14,7 +14,7 @@ trait AssetModelSummary extends StObject {
   /**
     * The date the asset model was created, in Unix epoch time.
     */
-  var creationDate: Timestamp
+  var creationDate: js.Date
   
   /**
     * The asset model description.
@@ -22,14 +22,14 @@ trait AssetModelSummary extends StObject {
   var description: Description
   
   /**
-    * The ID of the asset model (used with AWS IoT SiteWise APIs).
+    * The ID of the asset model (used with IoT SiteWise APIs).
     */
   var id: ID
   
   /**
     * The date the asset model was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: Timestamp
+  var lastUpdateDate: js.Date
   
   /**
     * The name of the asset model.
@@ -45,10 +45,10 @@ object AssetModelSummary {
   
   inline def apply(
     arn: ARN,
-    creationDate: Timestamp,
+    creationDate: js.Date,
     description: Description,
     id: ID,
-    lastUpdateDate: Timestamp,
+    lastUpdateDate: js.Date,
     name: Name,
     status: AssetModelStatus
   ): AssetModelSummary = {
@@ -60,13 +60,13 @@ object AssetModelSummary {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: js.Date): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

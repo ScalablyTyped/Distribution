@@ -11,8 +11,30 @@ trait RadialGradientProps
   extends StObject
      with RadialGradientBackground {
   
+  /**
+    * @language zh-CN
+    * @description 渐变 id
+    * @defaultValue "linear-gradient"
+    */
+  /**
+    * @language en-US
+    * @description Gradient ID
+    * @defaultValue "linear-gradient"
+    */
   var gradientId: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 容器样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object RadialGradientProps {

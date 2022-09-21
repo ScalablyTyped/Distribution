@@ -1,6 +1,5 @@
 package typings.tzOffset
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,9 @@ object mod {
   
   inline def offsetOf(timezone: Timezone): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetOf")(timezone.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def removeOffset(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOffset")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def removeOffset(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOffset")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def timeAt(date: Date, timezone: Timezone): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("timeAt")(date.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def timeAt(date: js.Date, timezone: Timezone): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("timeAt")(date.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
   /* Rewritten from type alias, can be one of: 
     - typings.tzOffset.tzOffsetStrings.EtcSlashGMTPlussign12

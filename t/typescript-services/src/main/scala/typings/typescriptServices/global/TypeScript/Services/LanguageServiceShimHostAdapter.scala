@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.LanguageServiceShimHostAdapter")
 @js.native
-class LanguageServiceShimHostAdapter protected ()
+open class LanguageServiceShimHostAdapter protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.LanguageServiceShimHostAdapter {
   def this(shimHost: ILanguageServiceShimHost) = this()
@@ -38,7 +38,7 @@ class LanguageServiceShimHostAdapter protected ()
   override def getDiagnosticsObject(): ILanguageServicesDiagnostics = js.native
   
   /* CompleteClass */
-  override def getLocalizedDiagnosticMessages(): js.Any = js.native
+  override def getLocalizedDiagnosticMessages(): Any = js.native
   
   /* CompleteClass */
   override def getParentDirectory(path: String): String = js.native
@@ -68,7 +68,7 @@ class LanguageServiceShimHostAdapter protected ()
   override def resolveRelativePath(path: String, directory: String): String = js.native
   
   /* private */ /* CompleteClass */
-  var shimHost: js.Any = js.native
+  var shimHost: Any = js.native
   
   /* CompleteClass */
   override def warning(): Boolean = js.native

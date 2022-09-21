@@ -21,23 +21,23 @@ trait Envelope extends StObject {
   /**
     *   Level once attack is complete.
     */
-  var attackLevel: js.Any = js.native
+  var attackLevel: Any = js.native
   
   /**
     *   Time until envelope reaches attackLevel
     */
-  var attackTime: js.Any = js.native
+  var attackTime: Any = js.native
   
   /**
     *   Level after decay. The envelope will sustain here
     *   until it is released.
     */
-  var decayLevel: js.Any = js.native
+  var decayLevel: Any = js.native
   
   /**
     *   Time until envelope reaches decayLevel.
     */
-  var decayTime: js.Any = js.native
+  var decayTime: Any = js.native
   
   /**
     *   Multiply the p5.Envelope's output amplitude by a
@@ -75,7 +75,7 @@ trait Envelope extends StObject {
     *   @param unit p5.sound Object or Web Audio Param
     *   @param secondsFromNow When to trigger the ramp
     *   @param v Target value
-    *   @param [v2] Second target value (optional)
+    *   @param [v2] Second target value
     */
   def ramp(unit: js.Object, secondsFromNow: Double, v: Double): Unit = js.native
   def ramp(unit: js.Object, secondsFromNow: Double, v: Double, v2: Double): Unit = js.native
@@ -83,12 +83,12 @@ trait Envelope extends StObject {
   /**
     *   Level at the end of the release.
     */
-  var releaseLevel: js.Any = js.native
+  var releaseLevel: Any = js.native
   
   /**
     *   Duration of the release portion of the envelope.
     */
-  var releaseTime: js.Any = js.native
+  var releaseTime: Any = js.native
   
   /**
     *   Scale this envelope's amplitude values to a given

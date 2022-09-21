@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__window-size
 
-Typings are for version 0.1
+Typings are for version 0.17.0
 
 ## Library description:
 Measure the window size in React
@@ -10,10 +10,10 @@ Measure the window size in React
 | ------------------ | :-------------: |
 | Full name          | @reach/window-size |
 | Keywords           | - |
-| # releases         | 35 |
-| # dependents       | 8 |
-| # downloads        | 467716 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 58681.0 |
+| # stars            | 5390.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Measure the window size in React
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

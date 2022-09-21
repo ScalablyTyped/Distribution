@@ -8,5 +8,5 @@ object timePickerMod {
   
   @JSImport("@nulogy/components/src/TimePicker", "TimePicker")
   @js.native
-  val TimePicker: js.Any = js.native
+  val TimePicker: Any = js.native
 }

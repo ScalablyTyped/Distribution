@@ -24,7 +24,7 @@ object XTextEmbeddedObjectsSupplier {
     EmbeddedObjects: XNameAccess,
     acquire: () => Unit,
     getEmbeddedObjects: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextEmbeddedObjectsSupplier = {
     val __obj = js.Dynamic.literal(EmbeddedObjects = EmbeddedObjects.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getEmbeddedObjects = js.Any.fromFunction0(getEmbeddedObjects), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

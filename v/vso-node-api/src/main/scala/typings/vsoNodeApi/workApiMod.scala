@@ -1,7 +1,6 @@
 package typings.vsoNodeApi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
 import typings.vsoNodeApi.coreInterfacesMod.TeamContext
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
@@ -40,7 +39,7 @@ object workApiMod {
   
   @JSImport("vso-node-api/WorkApi", "WorkApi")
   @js.native
-  class WorkApi protected () extends IWorkApi {
+  open class WorkApi protected () extends IWorkApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -89,12 +88,12 @@ object workApiMod {
     
     def getDeliveryTimelineData(project: String, id: String): js.Promise[DeliveryViewData] = js.native
     def getDeliveryTimelineData(project: String, id: String, revision: Double): js.Promise[DeliveryViewData] = js.native
-    def getDeliveryTimelineData(project: String, id: String, revision: Double, startDate: Unit, endDate: Date): js.Promise[DeliveryViewData] = js.native
-    def getDeliveryTimelineData(project: String, id: String, revision: Double, startDate: Date): js.Promise[DeliveryViewData] = js.native
-    def getDeliveryTimelineData(project: String, id: String, revision: Double, startDate: Date, endDate: Date): js.Promise[DeliveryViewData] = js.native
-    def getDeliveryTimelineData(project: String, id: String, revision: Unit, startDate: Unit, endDate: Date): js.Promise[DeliveryViewData] = js.native
-    def getDeliveryTimelineData(project: String, id: String, revision: Unit, startDate: Date): js.Promise[DeliveryViewData] = js.native
-    def getDeliveryTimelineData(project: String, id: String, revision: Unit, startDate: Date, endDate: Date): js.Promise[DeliveryViewData] = js.native
+    def getDeliveryTimelineData(project: String, id: String, revision: Double, startDate: js.Date): js.Promise[DeliveryViewData] = js.native
+    def getDeliveryTimelineData(project: String, id: String, revision: Double, startDate: js.Date, endDate: js.Date): js.Promise[DeliveryViewData] = js.native
+    def getDeliveryTimelineData(project: String, id: String, revision: Double, startDate: Unit, endDate: js.Date): js.Promise[DeliveryViewData] = js.native
+    def getDeliveryTimelineData(project: String, id: String, revision: Unit, startDate: js.Date): js.Promise[DeliveryViewData] = js.native
+    def getDeliveryTimelineData(project: String, id: String, revision: Unit, startDate: js.Date, endDate: js.Date): js.Promise[DeliveryViewData] = js.native
+    def getDeliveryTimelineData(project: String, id: String, revision: Unit, startDate: Unit, endDate: js.Date): js.Promise[DeliveryViewData] = js.native
     
     def getPlan(project: String, id: String): js.Promise[Plan] = js.native
     

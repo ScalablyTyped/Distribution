@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "Type")
 @js.native
-class Type_[A, O, I] protected ()
+open class Type_[A, O, I] protected ()
   extends StObject
      with Decoder[I, A]
      with Encoder[A, O] {
@@ -53,7 +53,7 @@ class Type_[A, O, I] protected ()
   override def encode(a: A): O = js.native
   
   /** a custom type guard */
-  def is(u: js.Any): /* is A */ Boolean = js.native
+  def is(u: Any): /* is A */ Boolean = js.native
   
   /* CompleteClass */
   override val name: String = js.native

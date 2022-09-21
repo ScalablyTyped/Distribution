@@ -10,10 +10,10 @@ Measure + analyse the speed of your webpack loaders and plugins
 | ------------------ | :-------------: |
 | Full name          | speed-measure-webpack-plugin |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 126 |
-| # downloads        | 65994538 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 4720867.0 |
+| # stars            | 2155.0 |
 
 ## Links
 - [Homepage](https://github.com/stephencookdev/speed-measure-webpack-plugin#readme)

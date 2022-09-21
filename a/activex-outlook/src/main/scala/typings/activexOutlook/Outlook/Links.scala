@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Links extends StObject {
   
-  def Add(Item: js.Any): Link
+  def Add(Item: Any): Link
   
   val Application: typings.activexOutlook.Outlook.Application
   
@@ -14,28 +14,28 @@ trait Links extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): Link
+  def Item(Index: Any): Link
   
   /* private */ @JSName("Outlook.Links_typekey")
   var OutlookDotLinks_typekey: Links
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Remove(Index: js.Any): Unit
+  def Remove(Index: Any): Unit
   
   val Session: NameSpace
 }
 object Links {
   
   inline def apply(
-    Add: js.Any => Link,
+    Add: Any => Link,
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => Link,
+    Item: Any => Link,
     OutlookDotLinks_typekey: Links,
-    Parent: js.Any,
-    Remove: js.Any => Unit,
+    Parent: Any,
+    Remove: Any => Unit,
     Session: NameSpace
   ): Links = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Remove = js.Any.fromFunction1(Remove), Session = Session.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object Links {
   
   extension [Self <: Links](x: Self) {
     
-    inline def setAdd(value: js.Any => Link): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Any => Link): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
@@ -53,13 +53,13 @@ object Links {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Link): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Link): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotLinks_typekey(value: Links): Self = StObject.set(x, "Outlook.Links_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

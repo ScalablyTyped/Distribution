@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetObjectLegalHoldOutput extends StObject {
   
   /**
-    * The current Legal Hold status for the specified object.
+    * The current legal hold status for the specified object.
     */
   var LegalHold: js.UndefOr[ObjectLockLegalHold] = js.undefined
 }

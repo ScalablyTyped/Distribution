@@ -11,5 +11,5 @@ object textInputsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(states: InteractionState*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(states.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(states: InteractionState*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(states.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
 }

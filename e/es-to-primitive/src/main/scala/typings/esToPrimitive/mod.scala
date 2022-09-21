@@ -11,7 +11,7 @@ object mod extends Shortcut {
   @JSImport("es-to-primitive", JSImport.Namespace)
   @js.native
   val ^ : (js.Function2[
-    /* input */ js.Any, 
+    /* input */ Any, 
     /* hint */ js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof String */ js.Any
     ], 
@@ -19,7 +19,7 @@ object mod extends Shortcut {
   ]) & ES2015 = js.native
   
   type _To = (js.Function2[
-    /* input */ js.Any, 
+    /* input */ Any, 
     /* hint */ js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof String */ js.Any
     ], 
@@ -28,7 +28,7 @@ object mod extends Shortcut {
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: (js.Function2[
-    /* input */ js.Any, 
+    /* input */ Any, 
     /* hint */ js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof String */ js.Any
     ], 

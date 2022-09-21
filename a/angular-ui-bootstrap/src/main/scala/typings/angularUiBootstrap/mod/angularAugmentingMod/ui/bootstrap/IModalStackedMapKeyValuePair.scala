@@ -8,11 +8,11 @@ trait IModalStackedMapKeyValuePair extends StObject {
   
   var key: IModalInstanceService
   
-  var value: js.Any
+  var value: Any
 }
 object IModalStackedMapKeyValuePair {
   
-  inline def apply(key: IModalInstanceService, value: js.Any): IModalStackedMapKeyValuePair = {
+  inline def apply(key: IModalInstanceService, value: Any): IModalStackedMapKeyValuePair = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModalStackedMapKeyValuePair]
   }
@@ -21,6 +21,6 @@ object IModalStackedMapKeyValuePair {
     
     inline def setKey(value: IModalInstanceService): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

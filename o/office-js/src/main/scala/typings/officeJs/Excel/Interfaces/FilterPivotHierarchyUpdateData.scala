@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterPivotHierarchyUpdateData extends StObject {
   
   /**
-    *
     * Determines whether to allow multiple filter items.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var enableMultipleFilterItems: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Name of the FilterPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Position of the FilterPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Double] = js.undefined

@@ -17,11 +17,12 @@ trait FormatConditions extends StObject {
     Operator: js.UndefOr[XlFormatConditionOperator],
     Formula1: js.UndefOr[String],
     Formula2: js.UndefOr[String],
-    String: js.UndefOr[js.Any],
-    TextOperator: js.UndefOr[js.Any],
-    DateOperator: js.UndefOr[js.Any],
-    ScopeType: js.UndefOr[js.Any]
+    String: js.UndefOr[Any],
+    TextOperator: js.UndefOr[Any],
+    DateOperator: js.UndefOr[Any],
+    ScopeType: js.UndefOr[Any]
   ): FormatCondition = js.native
+  def Add(Type: XlFormatConditionType, Operator: `1` | `2`, Formula1: String, Formula2: String): FormatCondition = js.native
   
   def AddAboveAverage(): AboveAverage = js.native
   
@@ -36,10 +37,6 @@ trait FormatConditions extends StObject {
   def AddUniqueValues(): UniqueValues = js.native
   
   @JSName("Add")
-  def Add_1(Type: XlFormatConditionType, Operator: `1`, Formula1: String, Formula2: String): FormatCondition = js.native
-  @JSName("Add")
-  def Add_2(Type: XlFormatConditionType, Operator: `2`, Formula1: String, Formula2: String): FormatCondition = js.native
-  @JSName("Add")
   def Add_2(Type: `2`, Operator: Unit, Formula1: String): FormatCondition = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
@@ -53,7 +50,7 @@ trait FormatConditions extends StObject {
   def Item(Index: String): FormatCondition = js.native
   def Item(Index: Double): FormatCondition = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): js.Any = js.native
+  def _Default(Index: Any): Any = js.native
 }

@@ -8,5 +8,5 @@ object describeGlobalTableMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/DescribeGlobalTable", "DescribeGlobalTable")
   @js.native
-  val DescribeGlobalTable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DescribeGlobalTable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

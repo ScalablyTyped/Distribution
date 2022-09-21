@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object classMod {
   
-  @JSImport("snabbdom/build/package/modules/class", "classModule")
+  @JSImport("snabbdom/build/modules/class", "classModule")
   @js.native
   val classModule: Module = js.native
   

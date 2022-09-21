@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Subscriber extends StObject {
   
   /**
-    * The address that AWS sends budget notifications to, either an SNS topic or an email. When you create a subscriber, the value of Address can't contain line breaks.
+    * The address that Amazon Web Services sends budget notifications to, either an SNS topic or an email. When you create a subscriber, the value of Address can't contain line breaks.
     */
   var Address: SubscriberAddress
   
   /**
-    * The type of notification that AWS sends to a subscriber.
+    * The type of notification that Amazon Web Services sends to a subscriber.
     */
   var SubscriptionType: typings.awsSdk.budgetsMod.SubscriptionType
 }

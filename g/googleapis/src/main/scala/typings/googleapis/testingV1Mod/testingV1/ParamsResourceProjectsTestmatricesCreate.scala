@@ -1,9 +1,5 @@
 package typings.googleapis.testingV1Mod.testingV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceProjectsTestmatricesCreate
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The GCE project under which this job will run.
@@ -28,9 +19,7 @@ trait ParamsResourceProjectsTestmatricesCreate
   var requestBody: js.UndefOr[SchemaTestMatrix] = js.undefined
   
   /**
-    * A string id used to detect duplicated requests. Ids are automatically
-    * scoped to a project, so users should ensure the ID is unique per-project.
-    * A UUID is recommended.  Optional, but strongly recommended.
+    * A string id used to detect duplicated requests. Ids are automatically scoped to a project, so users should ensure the ID is unique per-project. A UUID is recommended. Optional, but strongly recommended.
     */
   var requestId: js.UndefOr[String] = js.undefined
 }
@@ -42,10 +31,6 @@ object ParamsResourceProjectsTestmatricesCreate {
   }
   
   extension [Self <: ParamsResourceProjectsTestmatricesCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

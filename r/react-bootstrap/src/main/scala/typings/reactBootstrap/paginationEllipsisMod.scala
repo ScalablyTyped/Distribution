@@ -10,12 +10,10 @@ object paginationEllipsisMod {
   
   @JSImport("react-bootstrap/lib/PaginationEllipsis", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PaginationEllipsisProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PaginationEllipsisProps, js.Object, Any]
   
-  @js.native
-  trait PaginationEllipsis
-    extends Component[PaginationEllipsisProps, js.Object, js.Any]
+  type PaginationEllipsis = Component[PaginationEllipsisProps, js.Object, Any]
   
   trait PaginationEllipsisProps
     extends StObject

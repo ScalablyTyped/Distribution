@@ -294,7 +294,7 @@ object XLayoutManager {
     isVisible: () => Boolean,
     lock: () => Unit,
     lockWindow: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     requestElement: String => Boolean,
     reset: () => Unit,

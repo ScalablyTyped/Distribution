@@ -22,7 +22,12 @@ trait ClassificationDetails extends StObject {
   var jobId: js.UndefOr[string] = js.undefined
   
   /**
-    * The status and other details for the finding.
+    * Specifies how Amazon Macie found the sensitive data that produced the finding: SENSITIVE_DATA_DISCOVERY_JOB, for a classification job.
+    */
+  var originType: js.UndefOr[OriginType] = js.undefined
+  
+  /**
+    * The status and other details of the finding.
     */
   var result: js.UndefOr[ClassificationResult] = js.undefined
 }
@@ -46,6 +51,10 @@ object ClassificationDetails {
     inline def setJobId(value: string): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    
+    inline def setOriginType(value: OriginType): Self = StObject.set(x, "originType", value.asInstanceOf[js.Any])
+    
+    inline def setOriginTypeUndefined: Self = StObject.set(x, "originType", js.undefined)
     
     inline def setResult(value: ClassificationResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

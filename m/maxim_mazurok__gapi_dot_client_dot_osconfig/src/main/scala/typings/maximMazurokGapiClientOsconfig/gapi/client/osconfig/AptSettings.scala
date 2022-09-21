@@ -31,13 +31,13 @@ object AptSettings {
     
     inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
     
     inline def setExclusivePackages(value: js.Array[String]): Self = StObject.set(x, "exclusivePackages", value.asInstanceOf[js.Any])
     
     inline def setExclusivePackagesUndefined: Self = StObject.set(x, "exclusivePackages", js.undefined)
     
-    inline def setExclusivePackagesVarargs(value: String*): Self = StObject.set(x, "exclusivePackages", js.Array(value :_*))
+    inline def setExclusivePackagesVarargs(value: String*): Self = StObject.set(x, "exclusivePackages", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

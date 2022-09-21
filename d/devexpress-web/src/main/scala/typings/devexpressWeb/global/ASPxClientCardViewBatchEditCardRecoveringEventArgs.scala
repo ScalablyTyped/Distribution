@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewBatchEditCardRecoveringEventArgs")
 @js.native
-class ASPxClientCardViewBatchEditCardRecoveringEventArgs protected ()
+open class ASPxClientCardViewBatchEditCardRecoveringEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewBatchEditCardRecoveringEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientCardViewBatchEditCardRecoveringEventArgs protected ()
     * @param visibleIndex An integer value specifying a card's visible index.
     * @param cardValues An object representing card values.
     */
-  def this(visibleIndex: Double, cardValues: js.Any) = this()
+  def this(visibleIndex: Double, cardValues: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -29,7 +29,7 @@ class ASPxClientCardViewBatchEditCardRecoveringEventArgs protected ()
     * Gets a hashtable that maintains information about recovered cells.
     */
   /* CompleteClass */
-  var cardValues: js.Any = js.native
+  var cardValues: Any = js.native
   
   /**
     * Gets the visible index of the card whose cells has been recovered.

@@ -35,6 +35,6 @@ object VoidedPurchasesListResponse {
     
     inline def setVoidedPurchasesUndefined: Self = StObject.set(x, "voidedPurchases", js.undefined)
     
-    inline def setVoidedPurchasesVarargs(value: VoidedPurchase*): Self = StObject.set(x, "voidedPurchases", js.Array(value :_*))
+    inline def setVoidedPurchasesVarargs(value: VoidedPurchase*): Self = StObject.set(x, "voidedPurchases", js.Array(value*))
   }
 }

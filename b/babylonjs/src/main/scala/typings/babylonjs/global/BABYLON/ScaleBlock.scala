@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ScaleBlock")
 @js.native
-class ScaleBlock protected ()
+open class ScaleBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ScaleBlock {
   /**

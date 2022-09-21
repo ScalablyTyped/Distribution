@@ -43,6 +43,9 @@ trait PageToken extends StObject {
   /** Whether or not to show keys in the DELETED state. */
   var showDeletedKeys: js.UndefOr[Boolean] = js.undefined
   
+  /** Upload protocol for media (e.g. "media", "multipart", "resumable"). */
+  var uploadType: js.UndefOr[String] = js.undefined
+  
   /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
   
@@ -99,6 +102,10 @@ object PageToken {
     inline def setShowDeletedKeys(value: Boolean): Self = StObject.set(x, "showDeletedKeys", value.asInstanceOf[js.Any])
     
     inline def setShowDeletedKeysUndefined: Self = StObject.set(x, "showDeletedKeys", js.undefined)
+    
+    inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+    
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
     
     inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     

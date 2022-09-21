@@ -16,7 +16,10 @@ trait Group extends StObject {
   /** The display name of the `Group`. */
   var displayName: js.UndefOr[String] = js.undefined
   
-  /** Required. Immutable. The `EntityKey` of the `Group`. */
+  /** Optional. Dynamic group metadata like queries and status. */
+  var dynamicGroupMetadata: js.UndefOr[DynamicGroupMetadata] = js.undefined
+  
+  /** Required. The `EntityKey` of the `Group`. */
   var groupKey: js.UndefOr[EntityKey] = js.undefined
   
   /**
@@ -24,20 +27,20 @@ trait Group extends StObject {
     * label with a key of `cloudidentity.googleapis.com/groups.discussion_forum` and an empty value. Existing Google Groups can have an additional label with a key of
     * `cloudidentity.googleapis.com/groups.security` and an empty value added to them. **This is an immutable change and the security label cannot be removed once added.** Dynamic groups
     * have a label with a key of `cloudidentity.googleapis.com/groups.dynamic`. Identity-mapped groups for Cloud Search have a label with a key of `system/groups/external` and an empty
-    * value. Examples: {"cloudidentity.googleapis.com/groups.discussion_forum": ""} or {"system/groups/external": ""}.
+    * value.
     */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.Group & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.Group & TopLevel[Any]
   ] = js.undefined
   
-  /** Output only. The [resource name](https://cloud.google.com/apis/design/resource_names) of the `Group`. Shall be of the form `groups/{group_id}`. */
+  /** Output only. The [resource name](https://cloud.google.com/apis/design/resource_names) of the `Group`. Shall be of the form `groups/{group}`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Immutable. The resource name of the entity under which this `Group` resides in the Cloud Identity resource hierarchy. Must be of the form
-    * `identitysources/{identity_source_id}` for external- identity-mapped groups or `customers/{customer_id}` for Google Groups.
+    * `identitysources/{identity_source}` for external- identity-mapped groups or `customers/{customer}` for Google Groups. The `customer` must begin with "C" (for example, 'C046psxkn').
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -65,6 +68,10 @@ object Group {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
+    inline def setDynamicGroupMetadata(value: DynamicGroupMetadata): Self = StObject.set(x, "dynamicGroupMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicGroupMetadataUndefined: Self = StObject.set(x, "dynamicGroupMetadata", js.undefined)
+    
     inline def setGroupKey(value: EntityKey): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     
     inline def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
@@ -72,7 +79,7 @@ object Group {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.Group & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.Group & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

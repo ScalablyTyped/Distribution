@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "CloneUtils")
 @js.native
-class CloneUtils ()
+open class CloneUtils ()
   extends typings.wonderJs.cloneMod.CloneUtils
 /* static members */
 object CloneUtils {
@@ -16,18 +16,18 @@ object CloneUtils {
   val ^ : js.Any = js.native
   
   inline def clone[T](sourceInstance: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def clone[T](sourceInstance: T, cloneData: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def clone[T](sourceInstance: T, cloneData: js.Any, createDataArr: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def clone[T](sourceInstance: T, cloneData: js.Any, createDataArr: js.Array[js.Any], target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def clone[T](sourceInstance: T, cloneData: js.Any, createDataArr: Unit, target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: js.Array[js.Any], target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: Unit, target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def clone[T](sourceInstance: T, cloneData: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def clone[T](sourceInstance: T, cloneData: Any, createDataArr: js.Array[Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def clone[T](sourceInstance: T, cloneData: Any, createDataArr: js.Array[Any], target: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def clone[T](sourceInstance: T, cloneData: Any, createDataArr: Unit, target: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: js.Array[Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: js.Array[Any], target: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: Unit, target: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def cloneArray(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")().asInstanceOf[js.Any]
-  inline def cloneArray(arr: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def cloneArray(arr: js.Array[js.Any], isDeep: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any], isDeep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def cloneArray(arr: Null, isDeep: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any], isDeep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def cloneArray(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")().asInstanceOf[Any]
+  inline def cloneArray(arr: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def cloneArray(arr: js.Array[Any], isDeep: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any], isDeep.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def cloneArray(arr: Null, isDeep: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any], isDeep.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def isNotClone(entityObject: typings.wonderJs.entityObjectMod.EntityObject): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotClone")(entityObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

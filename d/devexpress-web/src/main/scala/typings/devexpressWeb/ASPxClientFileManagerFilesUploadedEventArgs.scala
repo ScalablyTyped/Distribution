@@ -32,7 +32,7 @@ object ASPxClientFileManagerFilesUploadedEventArgs {
     
     inline def setFileNames(value: js.Array[String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
     
-    inline def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value :_*))
+    inline def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value*))
     
     inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomerUnclaimDeviceRequest extends StObject {
   
-  /** Required. The device to unclaim. */
+  /** Required. The device to unclaim. There are custom validations in UnclaimDeviceRequestValidator. */
   var device: js.UndefOr[DeviceReference] = js.undefined
 }
 object CustomerUnclaimDeviceRequest {

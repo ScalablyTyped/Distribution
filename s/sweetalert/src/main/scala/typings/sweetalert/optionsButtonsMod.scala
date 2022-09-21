@@ -37,7 +37,7 @@ object optionsButtonsMod {
     
     var text: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
     
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -54,7 +54,7 @@ object optionsButtonsMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
+      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value*))
       
       inline def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
       
@@ -64,7 +64,7 @@ object optionsButtonsMod {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       

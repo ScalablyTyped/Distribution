@@ -47,7 +47,7 @@ object XDispatchInformationProvider {
     acquire: () => Unit,
     getConfigurableDispatchInformation: Double => SafeArray[DispatchInformation],
     getSupportedCommandGroups: () => SafeArray[Double],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDispatchInformationProvider = {
     val __obj = js.Dynamic.literal(SupportedCommandGroups = SupportedCommandGroups.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getConfigurableDispatchInformation = js.Any.fromFunction1(getConfigurableDispatchInformation), getSupportedCommandGroups = js.Any.fromFunction0(getSupportedCommandGroups), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

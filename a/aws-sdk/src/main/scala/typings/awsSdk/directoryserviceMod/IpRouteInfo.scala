@@ -9,7 +9,7 @@ trait IpRouteInfo extends StObject {
   /**
     * The date and time the address block was added to the directory.
     */
-  var AddedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.AddedDateTime] = js.undefined
+  var AddedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * IP address block in the IpRoute.
@@ -45,7 +45,7 @@ object IpRouteInfo {
   
   extension [Self <: IpRouteInfo](x: Self) {
     
-    inline def setAddedDateTime(value: AddedDateTime): Self = StObject.set(x, "AddedDateTime", value.asInstanceOf[js.Any])
+    inline def setAddedDateTime(value: js.Date): Self = StObject.set(x, "AddedDateTime", value.asInstanceOf[js.Any])
     
     inline def setAddedDateTimeUndefined: Self = StObject.set(x, "AddedDateTime", js.undefined)
     

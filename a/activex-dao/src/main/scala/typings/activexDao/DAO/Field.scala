@@ -9,7 +9,7 @@ trait Field extends StObject {
   
   var AllowZeroLength: Boolean = js.native
   
-  def AppendChunk(Val: js.Any): Unit = js.native
+  def AppendChunk(Val: Any): Unit = js.native
   
   var AppendOnly: Boolean = js.native
   
@@ -23,19 +23,19 @@ trait Field extends StObject {
   
   def CreateProperty(): Property = js.native
   def CreateProperty(Name: String): Property = js.native
-  def CreateProperty(Name: String, Type: Unit, Value: js.Any): Property = js.native
-  def CreateProperty(Name: String, Type: Unit, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: Any): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: Unit, Value: Unit, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum): Property = js.native
-  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any): Property = js.native
-  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: Any): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
-  def CreateProperty(Name: Unit, Type: Unit, Value: js.Any): Property = js.native
-  def CreateProperty(Name: Unit, Type: Unit, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: Any): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: Unit, Value: Unit, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: DataTypeEnum): Property = js.native
-  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any): Property = js.native
-  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Any): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
   
   /* private */ @JSName("DAO.Field2_typekey")
@@ -43,7 +43,7 @@ trait Field extends StObject {
   
   val DataUpdatable: Boolean = js.native
   
-  var DefaultValue: js.Any = js.native
+  var DefaultValue: Any = js.native
   
   var Expression: String = js.native
   
@@ -51,7 +51,7 @@ trait Field extends StObject {
   
   var ForeignName: String = js.native
   
-  def GetChunk(Offset: Double, Bytes: Double): js.Any = js.native
+  def GetChunk(Offset: Double, Bytes: Double): Any = js.native
   
   val IsComplex: Boolean = js.native
   
@@ -61,7 +61,7 @@ trait Field extends StObject {
   
   var OrdinalPosition: Double = js.native
   
-  val OriginalValue: js.Any = js.native
+  val OriginalValue: Any = js.native
   
   def Properties(Item: String): Property = js.native
   def Properties(Item: Double): Property = js.native
@@ -86,7 +86,7 @@ trait Field extends StObject {
   
   var ValidationText: String = js.native
   
-  var Value: js.Any = js.native
+  var Value: Any = js.native
   
-  val VisibleValue: js.Any = js.native
+  val VisibleValue: Any = js.native
 }

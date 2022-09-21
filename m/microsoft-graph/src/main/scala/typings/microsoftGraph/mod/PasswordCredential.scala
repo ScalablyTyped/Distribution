@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PasswordCredential extends StObject {
   
   // Do not use.
-  var customKeyIdentifier: js.UndefOr[NullableOption[Double]] = js.undefined
+  var customKeyIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Friendly name for the password. Optional.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For
-    * example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Optional.
+    * example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
     */
   var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -33,8 +33,7 @@ trait PasswordCredential extends StObject {
   
   /**
     * The date and time at which the password becomes valid. The Timestamp type represents date and time information using
-    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'. Optional.
+    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
     */
   var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
@@ -47,7 +46,7 @@ object PasswordCredential {
   
   extension [Self <: PasswordCredential](x: Self) {
     
-    inline def setCustomKeyIdentifier(value: NullableOption[Double]): Self = StObject.set(x, "customKeyIdentifier", value.asInstanceOf[js.Any])
+    inline def setCustomKeyIdentifier(value: NullableOption[String]): Self = StObject.set(x, "customKeyIdentifier", value.asInstanceOf[js.Any])
     
     inline def setCustomKeyIdentifierNull: Self = StObject.set(x, "customKeyIdentifier", null)
     

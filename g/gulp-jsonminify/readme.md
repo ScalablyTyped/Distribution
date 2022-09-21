@@ -10,10 +10,10 @@ Minifies blocks of JSON-like content into valid JSON by removing all whitespace 
 | ------------------ | :-------------: |
 | Full name          | gulp-jsonminify |
 | Keywords           | gulpplugin, json, minify, jsonminify, gulp |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 499682 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29578.333333333332 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/tcarlsen/gulp-jsonminify#readme)

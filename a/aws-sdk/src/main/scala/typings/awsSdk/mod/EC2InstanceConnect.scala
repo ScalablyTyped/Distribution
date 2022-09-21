@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class EC2InstanceConnect ()
+open class EC2InstanceConnect ()
   extends typings.awsSdk.allMod.EC2InstanceConnect {
   def this(options: ClientConfiguration) = this()
 }

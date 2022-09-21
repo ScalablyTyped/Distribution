@@ -4,17 +4,17 @@ import typings.grpcGrpcJs.callCredentialsMod.CallCredentials
 import typings.grpcGrpcJs.channelMod.ChannelImplementation
 import typings.grpcGrpcJs.constantsMod.Status
 import typings.grpcGrpcJs.filterMod.Filter
-import typings.grpcGrpcJs.filterMod.FilterFactory
+import typings.grpcGrpcJs.filterStackMod.FilterStack
 import typings.grpcGrpcJs.filterStackMod.FilterStackFactory
 import typings.grpcGrpcJs.grpcGrpcJsNumbers.`1`
 import typings.grpcGrpcJs.grpcGrpcJsNumbers.`2`
 import typings.grpcGrpcJs.grpcGrpcJsNumbers.`4`
 import typings.grpcGrpcJs.metadataMod.Metadata
-import typings.grpcGrpcJs.subchannelMod.Subchannel
-import typings.node.Buffer
+import typings.grpcGrpcJs.serverCallMod.ServerSurfaceCall
+import typings.grpcGrpcJs.srcSubchannelMod.Subchannel
+import typings.grpcGrpcJs.srcSubchannelMod.SubchannelCallStatsTracker
+import typings.node.bufferMod.global.Buffer
 import typings.node.http2Mod.ClientHttp2Stream
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object callStreamMod {
   
   @JSImport("@grpc/grpc-js/build/src/call-stream", "Http2CallStream")
   @js.native
-  class Http2CallStream protected ()
+  open class Http2CallStream protected ()
     extends StObject
        with Call {
     def this(
@@ -39,40 +39,56 @@ object callStreamMod {
       callNumber: Double
     ) = this()
     
-    def attachHttp2Stream(stream: ClientHttp2Stream, subchannel: Subchannel): Unit = js.native
-    def attachHttp2Stream(stream: ClientHttp2Stream, subchannel: Subchannel, extraFilterFactory: FilterFactory[Filter]): Unit = js.native
+    def addFilters(extraFilters: js.Array[Filter]): Unit = js.native
     
-    /* private */ val callNumber: js.Any = js.native
+    def addStatusWatcher(watcher: js.Function1[/* status */ StatusObject, Unit]): Unit = js.native
     
-    /* private */ var canPush: js.Any = js.native
+    def addStreamEndWatcher(watcher: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+    
+    def attachHttp2Stream(
+      stream: ClientHttp2Stream,
+      subchannel: Subchannel,
+      extraFilters: js.Array[Filter],
+      callStatsTracker: SubchannelCallStatsTracker
+    ): Unit = js.native
+    
+    /* private */ val callNumber: Any = js.native
+    
+    /* private */ var callStatsTracker: Any = js.native
+    
+    /* private */ var canPush: Any = js.native
     
     /* CompleteClass */
     override def cancelWithStatus(status: Status, details: String): Unit = js.native
     
-    /* private */ val channel: js.Any = js.native
+    /* private */ val channel: Any = js.native
     
-    /* private */ val channelCallCredentials: js.Any = js.native
+    /* private */ val channelCallCredentials: Any = js.native
+    
+    /* private */ var configDeadline: Any = js.native
     
     var credentials: CallCredentials = js.native
     
-    /* private */ var decoder: js.Any = js.native
+    /* private */ var decoder: Any = js.native
     
-    /* private */ var destroyHttp2Stream: js.Any = js.native
+    /* private */ var destroyHttp2Stream: Any = js.native
     
-    /* private */ var disconnectListener: js.Any = js.native
+    /* private */ var disconnectListener: Any = js.native
     
     /**
       * On first call, emits a 'status' event with the given StatusObject.
       * Subsequent calls are no-ops.
       * @param status The status of the call.
       */
-    /* private */ var endCall: js.Any = js.native
+    /* private */ var endCall: Any = js.native
     
-    /* private */ var filterReceivedMessage: js.Any = js.native
+    /* private */ var filterReceivedMessage: Any = js.native
     
-    var filterStack: Filter = js.native
+    var filterStack: FilterStack = js.native
     
-    /* private */ var finalStatus: js.Any = js.native
+    /* private */ var finalStatus: Any = js.native
+    
+    def getCallNumber(): Double = js.native
     
     /* CompleteClass */
     override def getCredentials(): CallCredentials = js.native
@@ -94,48 +110,52 @@ object callStreamMod {
     /* CompleteClass */
     override def halfClose(): Unit = js.native
     
-    /* private */ var handleFilterError: js.Any = js.native
+    /* private */ var handleFilterError: Any = js.native
     
-    /* private */ var handleFilteredRead: js.Any = js.native
+    /* private */ var handleFilteredRead: Any = js.native
     
-    /* private */ var handleTrailers: js.Any = js.native
+    /* private */ var handleTrailers: Any = js.native
     
-    /* private */ var http2Stream: js.Any = js.native
+    /* private */ var http2Stream: Any = js.native
     
-    /* private */ var isReadFilterPending: js.Any = js.native
+    /* private */ var internalError: Any = js.native
     
-    /* private */ var isWriteFilterPending: js.Any = js.native
+    /* private */ var isReadFilterPending: Any = js.native
     
-    /* private */ var listener: js.Any = js.native
+    /* private */ var isWriteFilterPending: Any = js.native
     
-    /* private */ var mappedStatusCode: js.Any = js.native
+    /* private */ var listener: Any = js.native
     
-    /* private */ var maybeCloseWrites: js.Any = js.native
+    /* private */ var mappedStatusCode: Any = js.native
     
-    /* private */ var maybeOutputStatus: js.Any = js.native
+    /* private */ var maybeCloseWrites: Any = js.native
     
-    /* private */ val methodName: js.Any = js.native
+    /* private */ var maybeOutputStatus: Any = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val methodName: Any = js.native
     
-    /* private */ var outputStatus: js.Any = js.native
+    /* private */ val options: Any = js.native
     
-    /* private */ var pendingRead: js.Any = js.native
+    /* private */ var outputStatus: Any = js.native
     
-    /* private */ var pendingWrite: js.Any = js.native
+    /* private */ var pendingRead: Any = js.native
     
-    /* private */ var pendingWriteCallback: js.Any = js.native
+    /* private */ var pendingWrite: Any = js.native
     
-    /* private */ var push: js.Any = js.native
+    /* private */ var pendingWriteCallback: Any = js.native
+    
+    /* private */ var push: Any = js.native
     
     /**
       * Indicates that an 'end' event has come from the http2 stream, so there
       * will be no more data events.
       */
-    /* private */ var readsClosed: js.Any = js.native
+    /* private */ var readsClosed: Any = js.native
     
     /* CompleteClass */
     override def sendMessageWithContext(context: MessageContext, message: Buffer): Unit = js.native
+    
+    def setConfigDeadline(configDeadline: Deadline): Unit = js.native
     
     /* CompleteClass */
     override def setCredentials(credentials: CallCredentials): Unit = js.native
@@ -146,34 +166,42 @@ object callStreamMod {
     /* CompleteClass */
     override def startRead(): Unit = js.native
     
-    /* private */ var statusOutput: js.Any = js.native
+    /* private */ var statusOutput: Any = js.native
     
-    /* private */ var subchannel: js.Any = js.native
+    /* private */ var statusWatchers: Any = js.native
     
-    /* private */ var trace: js.Any = js.native
+    /* private */ var streamEndWatchers: Any = js.native
     
-    /* private */ var tryPush: js.Any = js.native
+    /* private */ var subchannel: Any = js.native
     
-    /* private */ var unfilteredReadMessages: js.Any = js.native
+    /* private */ var trace: Any = js.native
     
-    /* private */ var unpushedReadMessages: js.Any = js.native
+    /* private */ var tryPush: Any = js.native
     
-    /* private */ var writesClosed: js.Any = js.native
+    /* private */ var unfilteredReadMessages: Any = js.native
+    
+    /* private */ var unpushedReadMessages: Any = js.native
+    
+    /* private */ var writeMessageToStream: Any = js.native
+    
+    /* private */ var writesClosed: Any = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/call-stream", "InterceptingListenerImpl")
   @js.native
-  class InterceptingListenerImpl protected ()
+  open class InterceptingListenerImpl protected ()
     extends StObject
        with InterceptingListener {
     def this(listener: FullListener, nextListener: InterceptingListener) = this()
     
-    /* private */ var listener: js.Any = js.native
+    /* private */ var hasPendingMessage: Any = js.native
     
-    /* private */ var nextListener: js.Any = js.native
+    /* private */ var listener: Any = js.native
+    
+    /* private */ var nextListener: Any = js.native
     
     /* CompleteClass */
-    override def onReceiveMessage(message: js.Any): Unit = js.native
+    override def onReceiveMessage(message: Any): Unit = js.native
     
     /* CompleteClass */
     override def onReceiveMetadata(metadata: Metadata): Unit = js.native
@@ -181,9 +209,17 @@ object callStreamMod {
     /* CompleteClass */
     override def onReceiveStatus(status: StatusObject): Unit = js.native
     
-    /* private */ var pendingStatus: js.Any = js.native
+    /* private */ var pendingMessage: Any = js.native
     
-    /* private */ var processingMessage: js.Any = js.native
+    /* private */ var pendingStatus: Any = js.native
+    
+    /* private */ var processPendingMessage: Any = js.native
+    
+    /* private */ var processPendingStatus: Any = js.native
+    
+    /* private */ var processingMessage: Any = js.native
+    
+    /* private */ var processingMetadata: Any = js.native
   }
   
   inline def isInterceptingListener(listener: InterceptingListener): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterceptingListener")(listener.asInstanceOf[js.Any]).asInstanceOf[/* is @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener */ Boolean]
@@ -266,7 +302,7 @@ object callStreamMod {
     
     var host: String
     
-    var parentCall: Call | Null
+    var parentCall: ServerSurfaceCall | Null
   }
   object CallStreamOptions {
     
@@ -283,17 +319,17 @@ object callStreamMod {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      inline def setParentCall(value: Call): Self = StObject.set(x, "parentCall", value.asInstanceOf[js.Any])
+      inline def setParentCall(value: ServerSurfaceCall): Self = StObject.set(x, "parentCall", value.asInstanceOf[js.Any])
       
       inline def setParentCallNull: Self = StObject.set(x, "parentCall", null)
     }
   }
   
-  type Deadline = Date | Double
+  type Deadline = js.Date | Double
   
   trait FullListener extends StObject {
     
-    def onReceiveMessage(message: js.Any, next: js.Function1[/* message */ js.Any, Unit]): Unit
+    def onReceiveMessage(message: Any, next: js.Function1[/* message */ Any, Unit]): Unit
     @JSName("onReceiveMessage")
     var onReceiveMessage_Original: MessageListener
     
@@ -308,7 +344,7 @@ object callStreamMod {
   object FullListener {
     
     inline def apply(
-      onReceiveMessage: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit,
+      onReceiveMessage: (/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit]) => Unit,
       onReceiveMetadata: (/* metadata */ Metadata, /* next */ js.Function1[/* metadata */ Metadata, Unit]) => Unit,
       onReceiveStatus: (/* status */ StatusObject, /* next */ js.Function1[/* status */ StatusObject, Unit]) => Unit
     ): FullListener = {
@@ -318,7 +354,7 @@ object callStreamMod {
     
     extension [Self <: FullListener](x: Self) {
       
-      inline def setOnReceiveMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
+      inline def setOnReceiveMessage(value: (/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit]) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
       
       inline def setOnReceiveMetadata(value: (/* metadata */ Metadata, /* next */ js.Function1[/* metadata */ Metadata, Unit]) => Unit): Self = StObject.set(x, "onReceiveMetadata", js.Any.fromFunction2(value))
       
@@ -330,7 +366,7 @@ object callStreamMod {
   
   trait InterceptingListener extends StObject {
     
-    def onReceiveMessage(message: js.Any): Unit
+    def onReceiveMessage(message: Any): Unit
     
     def onReceiveMetadata(metadata: Metadata): Unit
     
@@ -339,7 +375,7 @@ object callStreamMod {
   object InterceptingListener {
     
     inline def apply(
-      onReceiveMessage: js.Any => Unit,
+      onReceiveMessage: Any => Unit,
       onReceiveMetadata: Metadata => Unit,
       onReceiveStatus: StatusObject => Unit
     ): InterceptingListener = {
@@ -349,7 +385,7 @@ object callStreamMod {
     
     extension [Self <: InterceptingListener](x: Self) {
       
-      inline def setOnReceiveMessage(value: js.Any => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction1(value))
+      inline def setOnReceiveMessage(value: Any => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction1(value))
       
       inline def setOnReceiveMetadata(value: Metadata => Unit): Self = StObject.set(x, "onReceiveMetadata", js.Any.fromFunction1(value))
       
@@ -375,7 +411,7 @@ object callStreamMod {
     
     extension [Self <: Listener](x: Self) {
       
-      inline def setOnReceiveMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
+      inline def setOnReceiveMessage(value: (/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit]) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
       
       inline def setOnReceiveMessageUndefined: Self = StObject.set(x, "onReceiveMessage", js.undefined)
       
@@ -406,7 +442,7 @@ object callStreamMod {
     
     extension [Self <: MessageContext](x: Self) {
       
-      inline def setCallback(value: /* error */ js.UndefOr[Error | Null] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* error */ js.UndefOr[js.Error | Null] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
@@ -416,7 +452,7 @@ object callStreamMod {
     }
   }
   
-  type MessageListener = js.Function2[/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit], Unit]
+  type MessageListener = js.Function2[/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit], Unit]
   
   type MetadataListener = js.Function2[
     /* metadata */ Metadata, 
@@ -433,7 +469,7 @@ object callStreamMod {
     
     var host: js.UndefOr[String] = js.undefined
     
-    var parentCall: js.UndefOr[Call | Null] = js.undefined
+    var parentCall: js.UndefOr[ServerSurfaceCall | Null] = js.undefined
   }
   object PartialCallStreamOptions {
     
@@ -456,7 +492,7 @@ object callStreamMod {
       
       inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      inline def setParentCall(value: Call): Self = StObject.set(x, "parentCall", value.asInstanceOf[js.Any])
+      inline def setParentCall(value: ServerSurfaceCall): Self = StObject.set(x, "parentCall", value.asInstanceOf[js.Any])
       
       inline def setParentCallNull: Self = StObject.set(x, "parentCall", null)
       
@@ -495,7 +531,7 @@ object callStreamMod {
     }
   }
   
-  type WriteCallback = js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  type WriteCallback = js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.grpcGrpcJs.grpcGrpcJsNumbers.`1`

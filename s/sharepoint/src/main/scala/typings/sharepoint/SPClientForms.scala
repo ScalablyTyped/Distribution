@@ -56,7 +56,7 @@ object SPClientForms {
   
   trait ClientForm extends StObject {
     
-    def NotifyControlEvent(eventName: FormManagerEvents, fldName: String, eventArg: js.Any): Unit
+    def NotifyControlEvent(eventName: FormManagerEvents, fldName: String, eventArg: Any): Unit
     
     def RenderClientForm(): Unit
     
@@ -65,7 +65,7 @@ object SPClientForms {
   object ClientForm {
     
     inline def apply(
-      NotifyControlEvent: (FormManagerEvents, String, js.Any) => Unit,
+      NotifyControlEvent: (FormManagerEvents, String, Any) => Unit,
       RenderClientForm: () => Unit,
       SubmitClientForm: () => Boolean
     ): ClientForm = {
@@ -75,7 +75,7 @@ object SPClientForms {
     
     extension [Self <: ClientForm](x: Self) {
       
-      inline def setNotifyControlEvent(value: (FormManagerEvents, String, js.Any) => Unit): Self = StObject.set(x, "NotifyControlEvent", js.Any.fromFunction3(value))
+      inline def setNotifyControlEvent(value: (FormManagerEvents, String, Any) => Unit): Self = StObject.set(x, "NotifyControlEvent", js.Any.fromFunction3(value))
       
       inline def setRenderClientForm(value: () => Unit): Self = StObject.set(x, "RenderClientForm", js.Any.fromFunction0(value))
       
@@ -89,18 +89,18 @@ object SPClientForms {
     
     trait IValidator extends StObject {
       
-      def Validate(value: js.Any): ValidationResult
+      def Validate(value: Any): ValidationResult
     }
     object IValidator {
       
-      inline def apply(Validate: js.Any => ValidationResult): IValidator = {
+      inline def apply(Validate: Any => ValidationResult): IValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[IValidator]
       }
       
       extension [Self <: IValidator](x: Self) {
         
-        inline def setValidate(value: js.Any => ValidationResult): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
+        inline def setValidate(value: Any => ValidationResult): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
       }
     }
     
@@ -109,7 +109,7 @@ object SPClientForms {
          with IValidator
     object MaxLengthUrlValidator {
       
-      inline def apply(Validate: js.Any => ValidationResult): MaxLengthUrlValidator = {
+      inline def apply(Validate: Any => ValidationResult): MaxLengthUrlValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[MaxLengthUrlValidator]
       }
@@ -120,7 +120,7 @@ object SPClientForms {
          with IValidator
     object RequiredFileValidator {
       
-      inline def apply(Validate: js.Any => ValidationResult): RequiredFileValidator = {
+      inline def apply(Validate: Any => ValidationResult): RequiredFileValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[RequiredFileValidator]
       }
@@ -131,7 +131,7 @@ object SPClientForms {
          with IValidator
     object RequiredRichTextValidator {
       
-      inline def apply(Validate: js.Any => ValidationResult): RequiredRichTextValidator = {
+      inline def apply(Validate: Any => ValidationResult): RequiredRichTextValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[RequiredRichTextValidator]
       }
@@ -142,7 +142,7 @@ object SPClientForms {
          with IValidator
     object RequiredValidator {
       
-      inline def apply(Validate: js.Any => ValidationResult): RequiredValidator = {
+      inline def apply(Validate: Any => ValidationResult): RequiredValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[RequiredValidator]
       }

@@ -16,12 +16,10 @@ object photoshopMod {
   
   @JSImport("react-color/lib/components/photoshop/Photoshop", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PhotoshopPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PhotoshopPickerProps, js.Object, Any]
   
-  @js.native
-  trait PhotoshopPicker
-    extends Component[PhotoshopPickerProps, js.Object, js.Any]
+  type PhotoshopPicker = Component[PhotoshopPickerProps, js.Object, Any]
   
   trait PhotoshopPickerProps
     extends StObject

@@ -10,10 +10,10 @@ A cross browser microtask library
 | ------------------ | :-------------: |
 | Full name          | immediate |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 140163049 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9641851666666668E7 |
+| # stars            | 141.0 |
 
 ## Links
 - [Homepage](https://github.com/calvinmetcalf/immediate#readme)

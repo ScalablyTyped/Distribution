@@ -37,7 +37,7 @@ object FieldSchemaInFormMultiLineText {
     Direction: String,
     FieldType: String,
     Hidden: Boolean,
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     Name: String,
     NumberOfLines: Double,

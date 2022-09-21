@@ -59,20 +59,20 @@ object Tracing {
   
   trait DataCollectedEvent extends StObject {
     
-    var value: js.Array[js.Any]
+    var value: js.Array[Any]
   }
   object DataCollectedEvent {
     
-    inline def apply(value: js.Array[js.Any]): DataCollectedEvent = {
+    inline def apply(value: js.Array[Any]): DataCollectedEvent = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataCollectedEvent]
     }
     
     extension [Self <: DataCollectedEvent](x: Self) {
       
-      inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -94,11 +94,26 @@ object Tracing {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     }
   }
   
   type MemoryDumpConfig = StringDictionary[String]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.background
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.light
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.detailed
+  */
+  trait MemoryDumpLevelOfDetail extends StObject
+  object MemoryDumpLevelOfDetail {
+    
+    inline def background: typings.devtoolsProtocol.devtoolsProtocolStrings.background = "background".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.background]
+    
+    inline def detailed: typings.devtoolsProtocol.devtoolsProtocolStrings.detailed = "detailed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.detailed]
+    
+    inline def light: typings.devtoolsProtocol.devtoolsProtocolStrings.light = "light".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.light]
+  }
   
   trait RecordClockSyncMarkerRequest extends StObject {
     
@@ -126,6 +141,11 @@ object Tracing {
       * Enables more deterministic results by forcing garbage collection
       */
     var deterministic: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies level of details in memory dump. Defaults to "detailed".
+      */
+    var levelOfDetail: js.UndefOr[MemoryDumpLevelOfDetail] = js.undefined
   }
   object RequestMemoryDumpRequest {
     
@@ -139,6 +159,10 @@ object Tracing {
       inline def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
       
       inline def setDeterministicUndefined: Self = StObject.set(x, "deterministic", js.undefined)
+      
+      inline def setLevelOfDetail(value: MemoryDumpLevelOfDetail): Self = StObject.set(x, "levelOfDetail", value.asInstanceOf[js.Any])
+      
+      inline def setLevelOfDetailUndefined: Self = StObject.set(x, "levelOfDetail", js.undefined)
     }
   }
   
@@ -187,6 +211,13 @@ object Tracing {
     var options: js.UndefOr[String] = js.undefined
     
     /**
+      * Base64-encoded serialized perfetto.protos.TraceConfig protobuf message
+      * When specified, the parameters `categories`, `options`, `traceConfig`
+      * are ignored. (Encoded as a base64 string when passed over JSON)
+      */
+    var perfettoConfig: js.UndefOr[String] = js.undefined
+    
+    /**
       * Compression format to use. This only applies when using `ReturnAsStream`
       * transfer mode (defaults to `none`)
       */
@@ -199,6 +230,11 @@ object Tracing {
     var streamFormat: js.UndefOr[StreamFormat] = js.undefined
     
     var traceConfig: js.UndefOr[TraceConfig] = js.undefined
+    
+    /**
+      * Backend type (defaults to `auto`)
+      */
+    var tracingBackend: js.UndefOr[TracingBackend] = js.undefined
     
     /**
       * Whether to report trace events as series of dataCollected events or to save trace to a
@@ -227,6 +263,10 @@ object Tracing {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
+      inline def setPerfettoConfig(value: String): Self = StObject.set(x, "perfettoConfig", value.asInstanceOf[js.Any])
+      
+      inline def setPerfettoConfigUndefined: Self = StObject.set(x, "perfettoConfig", js.undefined)
+      
       inline def setStreamCompression(value: StreamCompression): Self = StObject.set(x, "streamCompression", value.asInstanceOf[js.Any])
       
       inline def setStreamCompressionUndefined: Self = StObject.set(x, "streamCompression", js.undefined)
@@ -238,6 +278,10 @@ object Tracing {
       inline def setTraceConfig(value: TraceConfig): Self = StObject.set(x, "traceConfig", value.asInstanceOf[js.Any])
       
       inline def setTraceConfigUndefined: Self = StObject.set(x, "traceConfig", js.undefined)
+      
+      inline def setTracingBackend(value: TracingBackend): Self = StObject.set(x, "tracingBackend", value.asInstanceOf[js.Any])
+      
+      inline def setTracingBackendUndefined: Self = StObject.set(x, "tracingBackend", js.undefined)
       
       inline def setTransferMode(value: ReportEvents | ReturnAsStream): Self = StObject.set(x, "transferMode", value.asInstanceOf[js.Any])
       
@@ -322,6 +366,12 @@ object Tracing {
       * Configuration to synthesize the delays in tracing.
       */
     var syntheticDelays: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Size of the trace buffer in kilobytes. If not specified or zero is passed, a default value
+      * of 200 MB would be used.
+      */
+    var traceBufferSizeInKb: js.UndefOr[Double] = js.undefined
   }
   object TraceConfig {
     
@@ -348,13 +398,13 @@ object Tracing {
       
       inline def setExcludedCategoriesUndefined: Self = StObject.set(x, "excludedCategories", js.undefined)
       
-      inline def setExcludedCategoriesVarargs(value: String*): Self = StObject.set(x, "excludedCategories", js.Array(value :_*))
+      inline def setExcludedCategoriesVarargs(value: String*): Self = StObject.set(x, "excludedCategories", js.Array(value*))
       
       inline def setIncludedCategories(value: js.Array[String]): Self = StObject.set(x, "includedCategories", value.asInstanceOf[js.Any])
       
       inline def setIncludedCategoriesUndefined: Self = StObject.set(x, "includedCategories", js.undefined)
       
-      inline def setIncludedCategoriesVarargs(value: String*): Self = StObject.set(x, "includedCategories", js.Array(value :_*))
+      inline def setIncludedCategoriesVarargs(value: String*): Self = StObject.set(x, "includedCategories", js.Array(value*))
       
       inline def setMemoryDumpConfig(value: MemoryDumpConfig): Self = StObject.set(x, "memoryDumpConfig", value.asInstanceOf[js.Any])
       
@@ -368,7 +418,11 @@ object Tracing {
       
       inline def setSyntheticDelaysUndefined: Self = StObject.set(x, "syntheticDelays", js.undefined)
       
-      inline def setSyntheticDelaysVarargs(value: String*): Self = StObject.set(x, "syntheticDelays", js.Array(value :_*))
+      inline def setSyntheticDelaysVarargs(value: String*): Self = StObject.set(x, "syntheticDelays", js.Array(value*))
+      
+      inline def setTraceBufferSizeInKb(value: Double): Self = StObject.set(x, "traceBufferSizeInKb", value.asInstanceOf[js.Any])
+      
+      inline def setTraceBufferSizeInKbUndefined: Self = StObject.set(x, "traceBufferSizeInKb", js.undefined)
     }
   }
   
@@ -388,6 +442,21 @@ object Tracing {
     inline def RecordContinuously: recordContinuously = "recordContinuously".asInstanceOf[recordContinuously]
     
     inline def RecordUntilFull: recordUntilFull = "recordUntilFull".asInstanceOf[recordUntilFull]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.auto
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.chrome
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.system
+  */
+  trait TracingBackend extends StObject
+  object TracingBackend {
+    
+    inline def auto: typings.devtoolsProtocol.devtoolsProtocolStrings.auto = "auto".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.auto]
+    
+    inline def chrome: typings.devtoolsProtocol.devtoolsProtocolStrings.chrome = "chrome".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.chrome]
+    
+    inline def system: typings.devtoolsProtocol.devtoolsProtocolStrings.system = "system".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.system]
   }
   
   trait TracingCompleteEvent extends StObject {

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Core.SceneAnalysisEffectDefinition")
 @js.native
 /** Initializes a new instance of the SceneAnalysisEffectDefinition class. */
-class SceneAnalysisEffectDefinition ()
+open class SceneAnalysisEffectDefinition ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.SceneAnalysisEffectDefinition {
   

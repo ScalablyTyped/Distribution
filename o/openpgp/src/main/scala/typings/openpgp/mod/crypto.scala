@@ -9,7 +9,6 @@ import typings.openpgp.mod.crypto.publicKey.elliptic.curve.Curve
 import typings.openpgp.mod.enums.hash
 import typings.openpgp.mod.enums.publicKey
 import typings.openpgp.mod.enums.symmetric
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object crypto {
       * @returns
       * @throws
       */
-    inline def unwrap(key: String, data: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def unwrap(key: String, data: String): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
     /**
       * AES key wrap
@@ -40,7 +39,7 @@ object crypto {
       * @param data
       * @returns
       */
-    inline def wrap(key: String, data: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def wrap(key: String, data: String): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   }
   
   object cfb {
@@ -49,9 +48,9 @@ object crypto {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def decrypt(algo: js.Any, key: js.Any, ciphertext: js.Any, iv: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def decrypt(algo: Any, key: Any, ciphertext: Any, iv: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
-    inline def encrypt(algo: js.Any, key: js.Any, plaintext: js.Any, iv: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], plaintext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def encrypt(algo: Any, key: Any, plaintext: Any, iv: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], plaintext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   object cipher {
@@ -145,7 +144,7 @@ object crypto {
       */
     @JSImport("openpgp", "crypto.cmac.blockLength")
     @js.native
-    val blockLength: js.Any = js.native
+    val blockLength: Any = js.native
     
     /**
       * xor `padding` into the end of `data`. This function implements "the
@@ -155,7 +154,7 @@ object crypto {
       * @param data
       * @param padding
       */
-    inline def rightXorMut(data: Uint8Array, padding: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rightXorMut")(data.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rightXorMut(data: js.typedarray.Uint8Array, padding: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rightXorMut")(data.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object crypto {
@@ -171,7 +170,7 @@ object crypto {
       * @param oid Object identifier for ECC keys
       * @returns The array of parameters
       */
-    inline def generateParams(algo: String, bits: Integer, oid: OID): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateParams")(algo.asInstanceOf[js.Any], bits.asInstanceOf[js.Any], oid.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def generateParams(algo: String, bits: Integer, oid: OID): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateParams")(algo.asInstanceOf[js.Any], bits.asInstanceOf[js.Any], oid.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Generating a session key for the specified symmetric algorithm
@@ -179,14 +178,14 @@ object crypto {
       * @param algo Symmetric encryption algorithm
       * @returns Random bytes as a string to be used as a key
       */
-    inline def generateSessionKey(algo: symmetric): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSessionKey")(algo.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def generateSessionKey(algo: symmetric): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSessionKey")(algo.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     /**
       * Returns the types comprising the encrypted session key of an algorithm
       * @param algo The public key algorithm
       * @returns The array of types
       */
-    inline def getEncSessionKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncSessionKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def getEncSessionKeyParamTypes(algo: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncSessionKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
     /**
       * Generates a random byte prefix for the specified algorithm
@@ -194,21 +193,21 @@ object crypto {
       * @param algo Symmetric encryption algorithm
       * @returns Random bytes with length equal to the block size of the cipher, plus the last two bytes repeated.
       */
-    inline def getPrefixRandom(algo: symmetric): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixRandom")(algo.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def getPrefixRandom(algo: symmetric): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixRandom")(algo.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     /**
       * Returns the types comprising the private key of an algorithm
       * @param algo The public key algorithm
       * @returns The array of types
       */
-    inline def getPrivKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrivKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def getPrivKeyParamTypes(algo: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrivKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
     /**
       * Returns the types comprising the public key of an algorithm
       * @param algo The public key algorithm
       * @returns The array of types
       */
-    inline def getPubKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPubKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def getPubKeyParamTypes(algo: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPubKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
     /**
       * Decrypts data using specified algorithm and private key parameters.
@@ -235,7 +234,7 @@ object crypto {
       * @param fingerprint Recipient fingerprint
       * @returns encrypted session key parameters
       */
-    inline def publicKeyEncrypt(algo: publicKey, pub_params: js.Array[MPI | OID | KDFParams], data: MPI, fingerprint: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyEncrypt")(algo.asInstanceOf[js.Any], pub_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def publicKeyEncrypt(algo: publicKey, pub_params: js.Array[MPI | OID | KDFParams], data: MPI, fingerprint: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyEncrypt")(algo.asInstanceOf[js.Any], pub_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   }
   
   object eax {
@@ -249,7 +248,7 @@ object crypto {
       * @param cipher The symmetric cipher algorithm to use e.g. 'aes128'
       * @param key The encryption key
       */
-    inline def EAX(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EAX")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def EAX(cipher: String, key: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EAX")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Decrypt ciphertext input.
@@ -258,7 +257,11 @@ object crypto {
       * @param adata Associated data to verify
       * @returns The plaintext output
       */
-    inline def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def decrypt(
+      ciphertext: js.typedarray.Uint8Array,
+      nonce: js.typedarray.Uint8Array,
+      adata: js.typedarray.Uint8Array
+    ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
     
     /**
       * Encrypt plaintext input.
@@ -267,7 +270,11 @@ object crypto {
       * @param adata Associated data to sign
       * @returns The ciphertext output
       */
-    inline def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def encrypt(
+      plaintext: js.typedarray.Uint8Array,
+      nonce: js.typedarray.Uint8Array,
+      adata: js.typedarray.Uint8Array
+    ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
   }
   
   object gcm {
@@ -281,7 +288,7 @@ object crypto {
       * @param cipher The symmetric cipher algorithm to use e.g. 'aes128'
       * @param key The encryption key
       */
-    inline def GCM(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GCM")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def GCM(cipher: String, key: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GCM")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -300,7 +307,7 @@ object crypto {
       * @param data Data to be hashed
       * @returns hash value
       */
-    inline def digest(algo: typings.openpgp.mod.enums.hash, data: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(algo.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def digest(algo: typings.openpgp.mod.enums.hash, data: js.typedarray.Uint8Array): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(algo.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
     
     /**
       * Returns the hash size in bytes of the specified hash algorithm type
@@ -314,56 +321,56 @@ object crypto {
       */
     @JSImport("openpgp", "crypto.hash.md5")
     @js.native
-    def md5: js.Any = js.native
-    inline def md5_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md5")(x.asInstanceOf[js.Any])
+    def md5: Any = js.native
+    inline def md5_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md5")(x.asInstanceOf[js.Any])
     
     /**
       * @see hash.js
       */
     @JSImport("openpgp", "crypto.hash.ripemd")
     @js.native
-    def ripemd: js.Any = js.native
-    inline def ripemd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ripemd")(x.asInstanceOf[js.Any])
+    def ripemd: Any = js.native
+    inline def ripemd_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ripemd")(x.asInstanceOf[js.Any])
     
     /**
       * @see asmCrypto
       */
     @JSImport("openpgp", "crypto.hash.sha1")
     @js.native
-    def sha1: js.Any = js.native
-    inline def sha1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha1")(x.asInstanceOf[js.Any])
+    def sha1: Any = js.native
+    inline def sha1_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha1")(x.asInstanceOf[js.Any])
     
     /**
       * @see hash.js
       */
     @JSImport("openpgp", "crypto.hash.sha224")
     @js.native
-    def sha224: js.Any = js.native
-    inline def sha224_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha224")(x.asInstanceOf[js.Any])
+    def sha224: Any = js.native
+    inline def sha224_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha224")(x.asInstanceOf[js.Any])
     
     /**
       * @see asmCrypto
       */
     @JSImport("openpgp", "crypto.hash.sha256")
     @js.native
-    def sha256: js.Any = js.native
-    inline def sha256_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
+    def sha256: Any = js.native
+    inline def sha256_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
     
     /**
       * @see hash.js
       */
     @JSImport("openpgp", "crypto.hash.sha384")
     @js.native
-    def sha384: js.Any = js.native
-    inline def sha384_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha384")(x.asInstanceOf[js.Any])
+    def sha384: Any = js.native
+    inline def sha384_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha384")(x.asInstanceOf[js.Any])
     
     /**
       * @see asmCrypto
       */
     @JSImport("openpgp", "crypto.hash.sha512")
     @js.native
-    def sha512: js.Any = js.native
-    inline def sha512_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
+    def sha512: Any = js.native
+    inline def sha512_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
   }
   
   object ocb {
@@ -377,7 +384,7 @@ object crypto {
       * @param cipher The symmetric cipher algorithm to use e.g. 'aes128'
       * @param key The encryption key
       */
-    inline def OCB(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OCB")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def OCB(cipher: String, key: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OCB")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Decrypt ciphertext input.
@@ -386,7 +393,11 @@ object crypto {
       * @param adata Associated data to sign
       * @returns The ciphertext output
       */
-    inline def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def decrypt(
+      ciphertext: js.typedarray.Uint8Array,
+      nonce: js.typedarray.Uint8Array,
+      adata: js.typedarray.Uint8Array
+    ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
     
     /**
       * Encrypt plaintext input.
@@ -395,7 +406,11 @@ object crypto {
       * @param adata Associated data to sign
       * @returns The ciphertext output
       */
-    inline def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def encrypt(
+      plaintext: js.typedarray.Uint8Array,
+      nonce: js.typedarray.Uint8Array,
+      adata: js.typedarray.Uint8Array
+    ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
   }
   
   /**
@@ -443,7 +458,7 @@ object crypto {
         * @param emLen intended length in octets of the encoded message
         * @returns encoded message
         */
-      inline def encode(algo: Integer, hashed: Uint8Array, emLen: Integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(algo.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], emLen.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def encode(algo: Integer, hashed: js.typedarray.Uint8Array, emLen: Integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(algo.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], emLen.asInstanceOf[js.Any])).asInstanceOf[String]
     }
     
     /**
@@ -452,7 +467,7 @@ object crypto {
       */
     @JSImport("openpgp", "crypto.pkcs1.hash_headers")
     @js.native
-    val hashHeaders: js.Any = js.native
+    val hashHeaders: Any = js.native
   }
   
   /**
@@ -499,11 +514,11 @@ object crypto {
         */
       inline def sign(
         hash_algo: Integer,
-        hashed: Uint8Array,
-        g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+        hashed: js.typedarray.Uint8Array,
+        g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(hash_algo.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], g.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       /**
@@ -520,14 +535,14 @@ object crypto {
         */
       inline def verify(
         hash_algo: Integer,
-        r: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        hashed: Uint8Array,
-        g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hash_algo.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], g.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        r: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        hashed: js.typedarray.Uint8Array,
+        g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
+      ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hash_algo.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], g.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Any]
     }
     
     object elgamal {
@@ -545,11 +560,11 @@ object crypto {
         * @returns BN
         */
       inline def decrypt(
-        c1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        c2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], p.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        c1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        c2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
+      ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], p.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Any]
       
       /**
         * ElGamal Encryption function
@@ -560,10 +575,10 @@ object crypto {
         * @returns
         */
       inline def encrypt(
-        m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+        m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
       ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(m.asInstanceOf[js.Any], p.asInstanceOf[js.Any], g.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     }
     
@@ -579,7 +594,7 @@ object crypto {
         
         @JSImport("openpgp", "crypto.public_key.elliptic.curve.Curve")
         @js.native
-        class Curve () extends StObject
+        open class Curve () extends StObject
       }
       
       object ecdh {
@@ -603,14 +618,14 @@ object crypto {
           oid: OID,
           cipher_algo: symmetric,
           hash_algo: hash,
-          V: Uint8Array,
-          C: Uint8Array,
-          d: Uint8Array,
+          V: js.typedarray.Uint8Array,
+          C: js.typedarray.Uint8Array,
+          d: js.typedarray.Uint8Array,
           fingerprint: String
         ): js.Promise[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(oid.asInstanceOf[js.Any], cipher_algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], V.asInstanceOf[js.Any], C.asInstanceOf[js.Any], d.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
               ]]
         
         /**
@@ -623,7 +638,14 @@ object crypto {
           * @param fingerprint Recipient fingerprint
           * @returns Returns public part of ephemeral key and encoded session key
           */
-        inline def encrypt(oid: OID, cipher_algo: symmetric, hash_algo: hash, m: MPI, Q: Uint8Array, fingerprint: String): js.Promise[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(oid.asInstanceOf[js.Any], cipher_algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[C]]
+        inline def encrypt(
+          oid: OID,
+          cipher_algo: symmetric,
+          hash_algo: hash,
+          m: MPI,
+          Q: js.typedarray.Uint8Array,
+          fingerprint: String
+        ): js.Promise[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(oid.asInstanceOf[js.Any], cipher_algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[C]]
         
         /**
           * Generate ECDHE secret from private key and public part of ephemeral key
@@ -632,10 +654,10 @@ object crypto {
           * @param d Recipient private key
           * @returns Generated ephemeral secret
           */
-        inline def genPrivateEphemeralKey(curve: Curve, V: Uint8Array, d: Uint8Array): js.Promise[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+        inline def genPrivateEphemeralKey(curve: Curve, V: js.typedarray.Uint8Array, d: js.typedarray.Uint8Array): js.Promise[
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("genPrivateEphemeralKey")(curve.asInstanceOf[js.Any], V.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
               ]]
         
         /**
@@ -644,7 +666,7 @@ object crypto {
           * @param Q Recipient public key
           * @returns Returns public part of ephemeral key and generated ephemeral secret
           */
-        inline def genPublicEphemeralKey(curve: Curve, Q: Uint8Array): js.Promise[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("genPublicEphemeralKey")(curve.asInstanceOf[js.Any], Q.asInstanceOf[js.Any])).asInstanceOf[js.Promise[S]]
+        inline def genPublicEphemeralKey(curve: Curve, Q: js.typedarray.Uint8Array): js.Promise[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("genPublicEphemeralKey")(curve.asInstanceOf[js.Any], Q.asInstanceOf[js.Any])).asInstanceOf[js.Promise[S]]
       }
       
       object ecdsa {
@@ -662,7 +684,13 @@ object crypto {
           * @param hashed The hashed message
           * @returns Signature of the message
           */
-        inline def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+        inline def sign(
+          oid: OID,
+          hash_algo: hash,
+          m: js.typedarray.Uint8Array,
+          d: js.typedarray.Uint8Array,
+          hashed: js.typedarray.Uint8Array
+        ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
         
         /**
           * Verifies if a signature is valid for a message
@@ -674,7 +702,14 @@ object crypto {
           * @param hashed The hashed message
           * @returns
           */
-        inline def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+        inline def verify(
+          oid: OID,
+          hash_algo: hash,
+          signature: js.Object,
+          m: js.typedarray.Uint8Array,
+          Q: js.typedarray.Uint8Array,
+          hashed: js.typedarray.Uint8Array
+        ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       }
       
       object eddsa {
@@ -692,7 +727,13 @@ object crypto {
           * @param hashed The hashed message
           * @returns Signature of the message
           */
-        inline def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+        inline def sign(
+          oid: OID,
+          hash_algo: hash,
+          m: js.typedarray.Uint8Array,
+          d: js.typedarray.Uint8Array,
+          hashed: js.typedarray.Uint8Array
+        ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
         
         /**
           * Verifies if a signature is valid for a message
@@ -704,14 +745,21 @@ object crypto {
           * @param hashed The hashed message
           * @returns
           */
-        inline def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+        inline def verify(
+          oid: OID,
+          hash_algo: hash,
+          signature: js.Object,
+          m: js.typedarray.Uint8Array,
+          Q: js.typedarray.Uint8Array,
+          hashed: js.typedarray.Uint8Array
+        ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       }
       
       object key {
         
         @JSImport("openpgp", "crypto.public_key.elliptic.key.KeyPair")
         @js.native
-        class KeyPair () extends StObject
+        open class KeyPair () extends StObject
       }
     }
     
@@ -729,7 +777,7 @@ object crypto {
         * @returns
         */
       inline def fermat(
-        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
         b: Integer
       ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fermat")(n.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
@@ -741,8 +789,8 @@ object crypto {
         * @returns
         */
       inline def isProbablePrime(
-        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
         k: Integer
       ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isProbablePrime")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
@@ -755,7 +803,7 @@ object crypto {
         * @returns
         */
       inline def millerRabin(
-        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
         k: Integer,
         rand: js.Function
       ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("millerRabin")(n.asInstanceOf[js.Any], k.asInstanceOf[js.Any], rand.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -769,9 +817,9 @@ object crypto {
         */
       inline def randomProbablePrime(
         bits: Integer,
-        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
         k: Integer
-      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("randomProbablePrime")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("randomProbablePrime")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Any]
     }
     
     object rsa {
@@ -792,14 +840,14 @@ object crypto {
         * @returns RSA Plaintext
         */
       inline def decrypt(
-        m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        d: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        u: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], d.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], u.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        d: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        u: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
+      ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], d.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], u.asInstanceOf[js.Any])).asInstanceOf[Any]
       
       /**
         * Encrypt message
@@ -809,10 +857,10 @@ object crypto {
         * @returns RSA Ciphertext
         */
       inline def encrypt(
-        m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
+      ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Any]
       
       /**
         * Generate a new random private key B bits long with public exponent E.
@@ -835,11 +883,11 @@ object crypto {
         * @returns RSA Signature
         */
       inline def sign(
-        m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        d: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        d: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
+      ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
       
       /**
         * Verify signature
@@ -849,10 +897,10 @@ object crypto {
         * @returns
         */
       inline def verify(
-        s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(s.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
+        e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
+      ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(s.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Any]
     }
   }
   
@@ -873,14 +921,14 @@ object crypto {
       * @param max Upper bound, excluded
       * @returns Random MPI
       */
-    inline def getRandomBN(min: MPI, max: MPI): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBN")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getRandomBN(min: MPI, max: MPI): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBN")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Retrieve secure random byte array of the specified length
       * @param length Length in bytes to generate
       * @returns Random byte array
       */
-    inline def getRandomBytes(length: Integer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(length.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def getRandomBytes(length: Integer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(length.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   }
   
   object signature {
@@ -901,7 +949,13 @@ object crypto {
       * @param hashed The hashed data
       * @returns Signature
       */
-    inline def sign(algo: publicKey, hash_algo: hash, key_params: js.Array[MPI], data: Uint8Array, hashed: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], key_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def sign(
+      algo: publicKey,
+      hash_algo: hash,
+      key_params: js.Array[MPI],
+      data: js.typedarray.Uint8Array,
+      hashed: js.typedarray.Uint8Array
+    ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], key_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
     /**
       * Verifies the signature provided for data using specified algorithms and public key parameters.
@@ -921,8 +975,8 @@ object crypto {
       hash_algo: hash,
       msg_MPIs: js.Array[MPI],
       pub_MPIs: js.Array[MPI],
-      data: Uint8Array,
-      hashed: Uint8Array
+      data: js.typedarray.Uint8Array,
+      hashed: js.typedarray.Uint8Array
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], msg_MPIs.asInstanceOf[js.Any], pub_MPIs.asInstanceOf[js.Any], data.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

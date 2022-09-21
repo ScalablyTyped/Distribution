@@ -20,6 +20,9 @@ trait ColumnDefinition
   // For site columns, the name of the group this column belongs to. Helps organize related columns.
   var columnGroup: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // This column stores content approval status.
+  var contentApprovalStatus: js.UndefOr[NullableOption[ContentApprovalStatusColumn]] = js.undefined
+  
   // This column stores currency values.
   var currency: js.UndefOr[NullableOption[CurrencyColumn]] = js.undefined
   
@@ -44,8 +47,20 @@ trait ColumnDefinition
   // Specifies whether the column is displayed in the user interface.
   var hidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // Specifies whether the column values can used for sorting and searching.
+  // This column stores hyperlink or picture values.
+  var hyperlinkOrPicture: js.UndefOr[NullableOption[HyperlinkOrPictureColumn]] = js.undefined
+  
+  // Specifies whether the column values can be used for sorting and searching.
   var indexed: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // Indicates whether this column can be deleted.
+  var isDeletable: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // Indicates whether values in the column can be reordered. Read-only.
+  var isReorderable: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // Specifies whether the column can be changed.
+  var isSealed: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // This column's data is looked up from another source in the site.
   var lookup: js.UndefOr[NullableOption[LookupColumn]] = js.undefined
@@ -62,14 +77,35 @@ trait ColumnDefinition
   // This column stores Person or Group values.
   var personOrGroup: js.UndefOr[NullableOption[PersonOrGroupColumn]] = js.undefined
   
+  // If 'true', changes to this column will be propagated to lists that implement the column.
+  var propagateChanges: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Specifies whether the column values can be modified.
   var readOnly: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // Specifies whether the column value is not optional.
+  // Specifies whether the column value isn't optional.
   var required: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // The source column for the content type column.
+  var sourceColumn: js.UndefOr[NullableOption[ColumnDefinition]] = js.undefined
+  
+  // ContentType from which this column is inherited from. Present only in contentTypes columns response. Read-only.
+  var sourceContentType: js.UndefOr[NullableOption[ContentTypeInfo]] = js.undefined
+  
+  // This column stores taxonomy terms.
+  var term: js.UndefOr[NullableOption[TermColumn]] = js.undefined
   
   // This column stores text values.
   var text: js.UndefOr[NullableOption[TextColumn]] = js.undefined
+  
+  // This column stores thumbnail values.
+  var thumbnail: js.UndefOr[NullableOption[ThumbnailColumn]] = js.undefined
+  
+  // For site columns, the type of column. Read-only.
+  var `type`: js.UndefOr[NullableOption[ColumnTypes]] = js.undefined
+  
+  // This column stores validation formula and message for the column.
+  var validation: js.UndefOr[NullableOption[ColumnValidation]] = js.undefined
 }
 object ColumnDefinition {
   
@@ -103,6 +139,12 @@ object ColumnDefinition {
     inline def setColumnGroupNull: Self = StObject.set(x, "columnGroup", null)
     
     inline def setColumnGroupUndefined: Self = StObject.set(x, "columnGroup", js.undefined)
+    
+    inline def setContentApprovalStatus(value: NullableOption[ContentApprovalStatusColumn]): Self = StObject.set(x, "contentApprovalStatus", value.asInstanceOf[js.Any])
+    
+    inline def setContentApprovalStatusNull: Self = StObject.set(x, "contentApprovalStatus", null)
+    
+    inline def setContentApprovalStatusUndefined: Self = StObject.set(x, "contentApprovalStatus", js.undefined)
     
     inline def setCurrency(value: NullableOption[CurrencyColumn]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
@@ -152,11 +194,35 @@ object ColumnDefinition {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
+    inline def setHyperlinkOrPicture(value: NullableOption[HyperlinkOrPictureColumn]): Self = StObject.set(x, "hyperlinkOrPicture", value.asInstanceOf[js.Any])
+    
+    inline def setHyperlinkOrPictureNull: Self = StObject.set(x, "hyperlinkOrPicture", null)
+    
+    inline def setHyperlinkOrPictureUndefined: Self = StObject.set(x, "hyperlinkOrPicture", js.undefined)
+    
     inline def setIndexed(value: NullableOption[Boolean]): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
     
     inline def setIndexedNull: Self = StObject.set(x, "indexed", null)
     
     inline def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
+    
+    inline def setIsDeletable(value: NullableOption[Boolean]): Self = StObject.set(x, "isDeletable", value.asInstanceOf[js.Any])
+    
+    inline def setIsDeletableNull: Self = StObject.set(x, "isDeletable", null)
+    
+    inline def setIsDeletableUndefined: Self = StObject.set(x, "isDeletable", js.undefined)
+    
+    inline def setIsReorderable(value: NullableOption[Boolean]): Self = StObject.set(x, "isReorderable", value.asInstanceOf[js.Any])
+    
+    inline def setIsReorderableNull: Self = StObject.set(x, "isReorderable", null)
+    
+    inline def setIsReorderableUndefined: Self = StObject.set(x, "isReorderable", js.undefined)
+    
+    inline def setIsSealed(value: NullableOption[Boolean]): Self = StObject.set(x, "isSealed", value.asInstanceOf[js.Any])
+    
+    inline def setIsSealedNull: Self = StObject.set(x, "isSealed", null)
+    
+    inline def setIsSealedUndefined: Self = StObject.set(x, "isSealed", js.undefined)
     
     inline def setLookup(value: NullableOption[LookupColumn]): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
     
@@ -182,6 +248,12 @@ object ColumnDefinition {
     
     inline def setPersonOrGroupUndefined: Self = StObject.set(x, "personOrGroup", js.undefined)
     
+    inline def setPropagateChanges(value: NullableOption[Boolean]): Self = StObject.set(x, "propagateChanges", value.asInstanceOf[js.Any])
+    
+    inline def setPropagateChangesNull: Self = StObject.set(x, "propagateChanges", null)
+    
+    inline def setPropagateChangesUndefined: Self = StObject.set(x, "propagateChanges", js.undefined)
+    
     inline def setReadOnly(value: NullableOption[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     inline def setReadOnlyNull: Self = StObject.set(x, "readOnly", null)
@@ -194,10 +266,46 @@ object ColumnDefinition {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
+    inline def setSourceColumn(value: NullableOption[ColumnDefinition]): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceColumnNull: Self = StObject.set(x, "sourceColumn", null)
+    
+    inline def setSourceColumnUndefined: Self = StObject.set(x, "sourceColumn", js.undefined)
+    
+    inline def setSourceContentType(value: NullableOption[ContentTypeInfo]): Self = StObject.set(x, "sourceContentType", value.asInstanceOf[js.Any])
+    
+    inline def setSourceContentTypeNull: Self = StObject.set(x, "sourceContentType", null)
+    
+    inline def setSourceContentTypeUndefined: Self = StObject.set(x, "sourceContentType", js.undefined)
+    
+    inline def setTerm(value: NullableOption[TermColumn]): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    
+    inline def setTermNull: Self = StObject.set(x, "term", null)
+    
+    inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+    
     inline def setText(value: NullableOption[TextColumn]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setThumbnail(value: NullableOption[ThumbnailColumn]): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailNull: Self = StObject.set(x, "thumbnail", null)
+    
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    
+    inline def setType(value: NullableOption[ColumnTypes]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValidation(value: NullableOption[ColumnValidation]): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    
+    inline def setValidationNull: Self = StObject.set(x, "validation", null)
+    
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

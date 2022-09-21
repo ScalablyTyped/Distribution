@@ -1,5 +1,6 @@
 package typings.sipJs
 
+import typings.sipJs.ackMod.Ack
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler
 import typings.sipJs.byeMod.Bye
 import typings.sipJs.coreMod.IncomingRequestMessage
@@ -14,6 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sessionDelegateMod {
   
   trait SessionDelegate extends StObject {
+    
+    /**
+      * Called upon receiving an incoming in dialog ACK request.
+      * @param ack - The ack.
+      */
+    var onAck: js.UndefOr[js.Function1[/* ack */ Ack, Unit]] = js.undefined
     
     /**
       * Called upon receiving an incoming in dialog BYE request.
@@ -103,6 +110,10 @@ object sessionDelegateMod {
     }
     
     extension [Self <: SessionDelegate](x: Self) {
+      
+      inline def setOnAck(value: /* ack */ Ack => Unit): Self = StObject.set(x, "onAck", js.Any.fromFunction1(value))
+      
+      inline def setOnAckUndefined: Self = StObject.set(x, "onAck", js.undefined)
       
       inline def setOnBye(value: /* bye */ Bye => Unit): Self = StObject.set(x, "onBye", js.Any.fromFunction1(value))
       

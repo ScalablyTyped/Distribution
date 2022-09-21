@@ -1,6 +1,6 @@
 package typings.smartBuffer
 
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.BufferEncoding
 import typings.smartBuffer.mod.SmartBuffer
 import typings.smartBuffer.smartBufferStrings.readBigInt64BE
 import typings.smartBuffer.smartBufferStrings.readBigInt64LE
@@ -109,14 +109,14 @@ object utilsMod {
     *
     * @param { Number } length The value to check.
     */
-  inline def checkLengthValue(length: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLengthValue")(length.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkLengthValue(length: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLengthValue")(length.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Checks if a offset value is valid. (Throws an exception if check fails)
     *
     * @param { Number } offset The value to check.
     */
-  inline def checkOffsetValue(offset: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOffsetValue")(offset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkOffsetValue(offset: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOffsetValue")(offset.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Checks if a target offset value is out of bounds. (Throws an exception if check fails)

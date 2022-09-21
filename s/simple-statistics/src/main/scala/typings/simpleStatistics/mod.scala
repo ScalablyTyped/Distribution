@@ -1,6 +1,7 @@
 package typings.simpleStatistics
 
 import typings.simpleStatistics.anon.B
+import typings.simpleStatistics.anon.Centroids
 import typings.simpleStatistics.anon.M
 import typings.simpleStatistics.bayesianClassifierMod.default
 import typings.simpleStatistics.chiSquaredDistributionTableMod.DistributionTable
@@ -21,11 +22,11 @@ object mod {
     */
   @JSImport("simple-statistics", "BayesianClassifier")
   @js.native
-  class BayesianClassifier () extends default
+  open class BayesianClassifier () extends default
   
   @JSImport("simple-statistics", "PerceptronModel")
   @js.native
-  class PerceptronModel ()
+  open class PerceptronModel ()
     extends typings.simpleStatistics.perceptronMod.default
   
   inline def addToMean(mean: Double, n: Double, newValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addToMean")(mean.asInstanceOf[js.Any], n.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -37,14 +38,14 @@ object mod {
     */
   @JSImport("simple-statistics", "bayesian")
   @js.native
-  class bayesian () extends default
+  open class bayesian () extends default
   
   inline def bernoulliDistribution(p: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("bernoulliDistribution")(p.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   inline def binomialDistribution(trials: Double, probability: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("binomialDistribution")(trials.asInstanceOf[js.Any], probability.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def bisect(
-    func: js.Function1[/* x */ js.Any, Double],
+    func: js.Function1[/* x */ Any, Double],
     start: Double,
     end: Double,
     maxIterations: Double,
@@ -207,13 +208,13 @@ object mod {
   
   inline def chiSquaredGoodnessOfFit(data: js.Array[Double], distributionType: js.Function, significance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("chiSquaredGoodnessOfFit")(data.asInstanceOf[js.Any], distributionType.asInstanceOf[js.Any], significance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def chunk[T /* <: js.Any */](x: js.Array[T], chunkSize: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk")(x.asInstanceOf[js.Any], chunkSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+  inline def chunk[T /* <: Any */](x: js.Array[T], chunkSize: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk")(x.asInstanceOf[js.Any], chunkSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
   
   inline def ckmeans[T /* <: js.Array[Double] */](x: T, nClusters: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ckmeans")(x.asInstanceOf[js.Any], nClusters.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def combinations[T /* <: js.Array[js.Any] */](x: T, k: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("combinations")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def combinations[T /* <: js.Array[Any] */](x: T, k: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("combinations")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def combinationsReplacement[T /* <: js.Array[js.Any] */](x: T, k: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("combinationsReplacement")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def combinationsReplacement[T /* <: js.Array[Any] */](x: T, k: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("combinationsReplacement")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def combineMeans(mean1: Double, n1: Double, mean2: Double, n2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("combineMeans")(mean1.asInstanceOf[js.Any], n1.asInstanceOf[js.Any], mean2.asInstanceOf[js.Any], n2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -231,6 +232,8 @@ object mod {
   
   inline def errorFunction(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("errorFunction")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  inline def extent(x: js.Array[Double]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(x.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  
   inline def factorial(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("factorial")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def geometricMean(x: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geometricMean")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -242,6 +245,9 @@ object mod {
   inline def inverseErrorFunction(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inverseErrorFunction")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def iqr(x: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("iqr")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def kMeansCluster(points: js.Array[js.Array[Double]], numCluster: Double): Centroids = (^.asInstanceOf[js.Dynamic].applyDynamic("kMeansCluster")(points.asInstanceOf[js.Any], numCluster.asInstanceOf[js.Any])).asInstanceOf[Centroids]
+  inline def kMeansCluster(points: js.Array[js.Array[Double]], numCluster: Double, randomSource: js.Function0[Double]): Centroids = (^.asInstanceOf[js.Dynamic].applyDynamic("kMeansCluster")(points.asInstanceOf[js.Any], numCluster.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[Centroids]
   
   /**
     * https://simplestatistics.org/docs/#kde
@@ -301,7 +307,7 @@ object mod {
   
   inline def mode(x: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mode")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def modeFast[T /* <: js.Any */](x: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("modeFast")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def modeFast[T /* <: Any */](x: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("modeFast")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def modeSorted(sorted: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("modeSorted")(sorted.asInstanceOf[js.Any]).asInstanceOf[Double]
   
@@ -309,10 +315,43 @@ object mod {
   
   @JSImport("simple-statistics", "perceptron")
   @js.native
-  class perceptron ()
+  open class perceptron ()
     extends typings.simpleStatistics.perceptronMod.default
   
-  inline def permutationsHeap[T /* <: js.Array[js.Any] */](elements: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("permutationsHeap")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def permutationTest(sampleX: js.Array[Double], sampleY: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def permutationTest(sampleX: js.Array[Double], sampleY: js.Array[Double], string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def permutationTest(sampleX: js.Array[Double], sampleY: js.Array[Double], string: String, k: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def permutationTest(
+    sampleX: js.Array[Double],
+    sampleY: js.Array[Double],
+    string: String,
+    k: Double,
+    randomSource: js.Function0[Double]
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any], k.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def permutationTest(
+    sampleX: js.Array[Double],
+    sampleY: js.Array[Double],
+    string: String,
+    k: Unit,
+    randomSource: js.Function0[Double]
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any], k.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def permutationTest(sampleX: js.Array[Double], sampleY: js.Array[Double], string: Unit, k: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def permutationTest(
+    sampleX: js.Array[Double],
+    sampleY: js.Array[Double],
+    string: Unit,
+    k: Double,
+    randomSource: js.Function0[Double]
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any], k.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def permutationTest(
+    sampleX: js.Array[Double],
+    sampleY: js.Array[Double],
+    string: Unit,
+    k: Unit,
+    randomSource: js.Function0[Double]
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any], k.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def permutationsHeap[T /* <: js.Array[Any] */](elements: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("permutationsHeap")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   inline def poissonDistribution(lambda: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("poissonDistribution")(lambda.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
@@ -340,7 +379,7 @@ object mod {
   
   inline def rootMeanSquare(x: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rootMeanSquare")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def sample[T /* <: js.Any */](x: js.Array[T], n: Double, randomSource: js.Function0[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def sample[T /* <: Any */](x: js.Array[T], n: Double, randomSource: js.Function0[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def sampleCorrelation(x: js.Array[Double], y: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleCorrelation")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -354,16 +393,20 @@ object mod {
   
   inline def sampleVariance(x: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sampleVariance")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def sampleWithReplacement[T /* <: js.Any */](x: js.Array[T], n: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleWithReplacement")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def sampleWithReplacement[T /* <: js.Any */](x: js.Array[T], n: Double, randomSource: js.Function0[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleWithReplacement")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def sampleWithReplacement[T /* <: Any */](x: js.Array[T], n: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleWithReplacement")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def sampleWithReplacement[T /* <: Any */](x: js.Array[T], n: Double, randomSource: js.Function0[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleWithReplacement")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def shuffle[T /* <: js.Array[js.Any] */](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def shuffle[T /* <: js.Array[js.Any] */](x: T, randomSource: js.Function0[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(x.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def shuffle[T /* <: js.Array[Any] */](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def shuffle[T /* <: js.Array[Any] */](x: T, randomSource: js.Function0[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(x.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def shuffleInPlace[T /* <: js.Array[js.Any] */](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleInPlace")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def shuffleInPlace[T /* <: js.Array[js.Any] */](x: T, randomSource: js.Function0[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffleInPlace")(x.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def shuffleInPlace[T /* <: js.Array[Any] */](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleInPlace")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def shuffleInPlace[T /* <: js.Array[Any] */](x: T, randomSource: js.Function0[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffleInPlace")(x.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def sign(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def silhouette(points: js.Array[js.Array[Double]], labels: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("silhouette")(points.asInstanceOf[js.Any], labels.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  inline def silhouetteMetric(points: js.Array[js.Array[Double]], labels: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("silhouetteMetric")(points.asInstanceOf[js.Any], labels.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def standardDeviation(x: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("standardDeviation")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
@@ -385,7 +428,7 @@ object mod {
   inline def tTestTwoSample(sampleX: js.Array[Double], sampleY: js.Array[Double]): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("tTestTwoSample")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   inline def tTestTwoSample(sampleX: js.Array[Double], sampleY: js.Array[Double], difference: Double): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("tTestTwoSample")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], difference.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  inline def uniqueCountSorted(x: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueCountSorted")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def uniqueCountSorted(x: js.Array[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueCountSorted")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def variance(x: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   

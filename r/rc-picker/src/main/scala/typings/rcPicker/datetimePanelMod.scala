@@ -29,7 +29,7 @@ object datetimePanelMod {
   
   inline def default[DateType](props: DatetimePanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Inlined parent std.Omit<rc-picker.rc-picker/es/panels/DatePanel.DatePanelProps<DateType>, 'disabledHours' | 'disabledMinutes' | 'disabledSeconds'> */
+  /* Inlined {  disabledTime :rc-picker.rc-picker/es/interface.DisabledTime<DateType> | undefined,   showTime :boolean | rc-picker.rc-picker/es/panels/TimePanel.SharedTimeProps<DateType> | undefined,   defaultValue :DateType | undefined} & std.Omit<rc-picker.rc-picker/es/panels/DatePanel.DatePanelProps<DateType>, 'disabledHours' | 'disabledMinutes' | 'disabledSeconds'> */
   trait DatetimePanelProps[DateType] extends StObject {
     
     var active: js.UndefOr[Boolean] = js.undefined

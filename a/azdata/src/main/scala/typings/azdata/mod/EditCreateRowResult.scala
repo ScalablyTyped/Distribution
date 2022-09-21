@@ -21,7 +21,7 @@ object EditCreateRowResult {
     
     inline def setDefaultValues(value: js.Array[String]): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
     
-    inline def setDefaultValuesVarargs(value: String*): Self = StObject.set(x, "defaultValues", js.Array(value :_*))
+    inline def setDefaultValuesVarargs(value: String*): Self = StObject.set(x, "defaultValues", js.Array(value*))
     
     inline def setNewRowId(value: Double): Self = StObject.set(x, "newRowId", value.asInstanceOf[js.Any])
   }

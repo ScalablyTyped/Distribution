@@ -1,6 +1,5 @@
 package typings.ydnDb.ydn.db
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,18 +32,18 @@ object events {
     extends StObject
        with Event {
     
-    def getKey(): js.Any
+    def getKey(): Any
     
     def getStoreName(): String
     
-    def getValue(): js.Any
+    def getValue(): Any
   }
   object RecordEvent {
     
     inline def apply(
-      getKey: () => js.Any,
+      getKey: () => Any,
       getStoreName: () => String,
-      getValue: () => js.Any,
+      getValue: () => Any,
       name: String,
       `type`: EventType
     ): RecordEvent = {
@@ -55,11 +54,11 @@ object events {
     
     extension [Self <: RecordEvent](x: Self) {
       
-      inline def setGetKey(value: () => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
+      inline def setGetKey(value: () => Any): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
       
       inline def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
       
-      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }
   }
   
@@ -67,7 +66,7 @@ object events {
     extends StObject
        with Event {
     
-    def getError(): Error
+    def getError(): js.Error
     
     def getOldVersion(): Double
     
@@ -76,7 +75,7 @@ object events {
   object StorageEvent {
     
     inline def apply(
-      getError: () => Error,
+      getError: () => js.Error,
       getOldVersion: () => Double,
       getVersion: () => Double,
       name: String,
@@ -89,7 +88,7 @@ object events {
     
     extension [Self <: StorageEvent](x: Self) {
       
-      inline def setGetError(value: () => Error): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+      inline def setGetError(value: () => js.Error): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
       
       inline def setGetOldVersion(value: () => Double): Self = StObject.set(x, "getOldVersion", js.Any.fromFunction0(value))
       
@@ -101,18 +100,18 @@ object events {
     extends StObject
        with Event {
     
-    def getKeys(): js.Array[js.Any]
+    def getKeys(): js.Array[Any]
     
     def getStoreName(): String
     
-    def getValues(): js.Array[js.Any]
+    def getValues(): js.Array[Any]
   }
   object StoreEvent {
     
     inline def apply(
-      getKeys: () => js.Array[js.Any],
+      getKeys: () => js.Array[Any],
       getStoreName: () => String,
-      getValues: () => js.Array[js.Any],
+      getValues: () => js.Array[Any],
       name: String,
       `type`: EventType
     ): StoreEvent = {
@@ -123,11 +122,11 @@ object events {
     
     extension [Self <: StoreEvent](x: Self) {
       
-      inline def setGetKeys(value: () => js.Array[js.Any]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+      inline def setGetKeys(value: () => js.Array[Any]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
       
       inline def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
       
-      inline def setGetValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => js.Array[Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     }
   }
 }

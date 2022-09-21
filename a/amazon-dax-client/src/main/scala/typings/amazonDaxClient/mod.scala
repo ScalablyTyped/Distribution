@@ -1,7 +1,6 @@
 package typings.amazonDaxClient
 
 import typings.awsSdk.mod.Request
-import typings.std.Date
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("amazon-dax-client", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with AmazonDaxClient {
     def this(options: AmazonDaxClientOptions) = this()
@@ -20,15 +19,15 @@ object mod {
   @js.native
   trait AmazonDaxClient extends StObject {
     
-    def createCluster(): Request[js.Object, js.Any] = js.native
-    def createCluster(params: js.Object): Request[js.Object, js.Any] = js.native
-    def createCluster(params: js.Object, callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]): Request[js.Object, js.Any] = js.native
-    def createCluster(params: Unit, callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]): Request[js.Object, js.Any] = js.native
+    def createCluster(): Request[js.Object, Any] = js.native
+    def createCluster(params: js.Object): Request[js.Object, Any] = js.native
+    def createCluster(params: js.Object, callback: js.Function2[/* err */ Any, /* data */ js.Object, Unit]): Request[js.Object, Any] = js.native
+    def createCluster(params: Unit, callback: js.Function2[/* err */ Any, /* data */ js.Object, Unit]): Request[js.Object, Any] = js.native
   }
   
   trait AmazonDaxClientHttpOptions extends StObject {
     
-    var agent: js.UndefOr[js.Any] = js.undefined
+    var agent: js.UndefOr[Any] = js.undefined
     
     var connectTimeout: js.UndefOr[Double] = js.undefined
     
@@ -49,7 +48,7 @@ object mod {
     
     extension [Self <: AmazonDaxClientHttpOptions](x: Self) {
       
-      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
@@ -79,7 +78,7 @@ object mod {
     
     var accessKeyId: js.UndefOr[String] = js.undefined
     
-    var apiVersion: js.UndefOr[String | Date] = js.undefined
+    var apiVersion: js.UndefOr[String | js.Date] = js.undefined
     
     var endpoint: js.UndefOr[String] = js.undefined
     
@@ -91,7 +90,7 @@ object mod {
     
     var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var params: js.UndefOr[Map[String, js.Any]] = js.undefined
+    var params: js.UndefOr[Map[String, Any]] = js.undefined
     
     var region: js.UndefOr[String] = js.undefined
     
@@ -110,7 +109,7 @@ object mod {
       
       inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
       
-      inline def setApiVersion(value: String | Date): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String | js.Date): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
       inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
@@ -122,7 +121,7 @@ object mod {
       
       inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
       
-      inline def setEndpointsVarargs(value: String*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: String*): Self = StObject.set(x, "endpoints", js.Array(value*))
       
       inline def setHttpOptions(value: AmazonDaxClientHttpOptions): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
       
@@ -136,7 +135,7 @@ object mod {
       
       inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      inline def setParams(value: Map[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Map[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       

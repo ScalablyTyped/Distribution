@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScriptApplicationManager extends StObject {
   
   /** Adds handler for the load event */
-  def add_load(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  def add_load(handlerFunction: js.Function2[/* instance */ Any, /* eventArgs */ Any, Unit]): Unit = js.native
   
   /** Adds handler for the postload event */
-  def add_postLoad(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  def add_postLoad(handlerFunction: js.Function2[/* instance */ Any, /* eventArgs */ Any, Unit]): Unit = js.native
   
   /** Adds handler for the preload event */
-  def add_preLoad(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  def add_preLoad(handlerFunction: js.Function2[/* instance */ Any, /* eventArgs */ Any, Unit]): Unit = js.native
   
   def dispose(): Unit = js.native
   
@@ -70,13 +70,13 @@ trait ScriptApplicationManager extends StObject {
   def registerClientControl(clientControl: SearchBox): Unit = js.native
   
   /** Removes handler for the load event */
-  def remove_load(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  def remove_load(handlerFunction: js.Function2[/* instance */ Any, /* eventArgs */ Any, Unit]): Unit = js.native
   
   /** Removes handler for the postload event */
-  def remove_postLoad(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  def remove_postLoad(handlerFunction: js.Function2[/* instance */ Any, /* eventArgs */ Any, Unit]): Unit = js.native
   
   /** Removes handler for the preload event */
-  def remove_preLoad(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  def remove_preLoad(handlerFunction: js.Function2[/* instance */ Any, /* eventArgs */ Any, Unit]): Unit = js.native
   
   var states: ContextTitle = js.native
 }

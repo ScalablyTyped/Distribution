@@ -9,15 +9,12 @@ wechat api
 | ------------------ | :-------------: |
 | Full name          | weapp-api |
 | Keywords           | weapp, wechat, api |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 634 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42.0 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/yeungeek/weapp-api)
-- [Bugs](https://github.com/yeungeek/weapp-api/issues)
-- [Repository](https://github.com/yeungeek/weapp-api)
 - [Npm](https://www.npmjs.com/package/weapp-api)
     
 

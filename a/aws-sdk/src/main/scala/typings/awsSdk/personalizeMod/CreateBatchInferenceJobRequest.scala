@@ -12,7 +12,7 @@ trait CreateBatchInferenceJobRequest extends StObject {
   var batchInferenceJobConfig: js.UndefOr[BatchInferenceJobConfig] = js.undefined
   
   /**
-    * The ARN of the filter to apply to the batch inference job. For more information on using filters, see Using Filters with Amazon Personalize.
+    * The ARN of the filter to apply to the batch inference job. For more information on using filters, see Filtering batch recommendations.
     */
   var filterArn: js.UndefOr[Arn] = js.undefined
   
@@ -32,12 +32,12 @@ trait CreateBatchInferenceJobRequest extends StObject {
   var jobOutput: BatchInferenceJobOutput
   
   /**
-    * The number of recommendations to retreive.
+    * The number of recommendations to retrieve.
     */
   var numResults: js.UndefOr[NumBatchResults] = js.undefined
   
   /**
-    * The ARN of the Amazon Identity and Access Management role that has permissions to read and write to your input and out Amazon S3 buckets respectively.
+    * The ARN of the Amazon Identity and Access Management role that has permissions to read and write to your input and output Amazon S3 buckets respectively.
     */
   var roleArn: RoleArn
   
@@ -45,6 +45,11 @@ trait CreateBatchInferenceJobRequest extends StObject {
     * The Amazon Resource Name (ARN) of the solution version that will be used to generate the batch inference recommendations.
     */
   var solutionVersionArn: Arn
+  
+  /**
+    * A list of tags to apply to the batch inference job.
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateBatchInferenceJobRequest {
   
@@ -82,5 +87,11 @@ object CreateBatchInferenceJobRequest {
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     inline def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

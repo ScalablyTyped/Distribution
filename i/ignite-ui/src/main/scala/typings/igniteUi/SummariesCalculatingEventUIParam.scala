@@ -9,7 +9,7 @@ trait SummariesCalculatingEventUIParam extends StObject {
   /**
     * Gets the igGridSummaries widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object SummariesCalculatingEventUIParam {
   
@@ -20,7 +20,7 @@ object SummariesCalculatingEventUIParam {
   
   extension [Self <: SummariesCalculatingEventUIParam](x: Self) {
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

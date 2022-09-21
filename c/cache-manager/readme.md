@@ -1,7 +1,7 @@
 
 # Scala.js typings for cache-manager
 
-Typings are for version v2.10.0
+Typings are for version v4.0.1
 
 ## Library description:
 Cache module for Node.js
@@ -10,10 +10,10 @@ Cache module for Node.js
 | ------------------ | :-------------: |
 | Full name          | cache-manager |
 | Keywords           | cache, redis, lru-cache, memory cache, multiple cache |
-| # releases         | 12 |
-| # dependents       | 204 |
-| # downloads        | 19983556 |
-| # stars            | 38 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 3359552.3333333335 |
+| # stars            | 969.0 |
 
 ## Links
 - [Homepage](https://github.com/BryanDonovan/node-cache-manager#readme)

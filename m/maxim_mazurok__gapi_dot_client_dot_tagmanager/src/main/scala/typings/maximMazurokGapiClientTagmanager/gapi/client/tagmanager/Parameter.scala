@@ -66,13 +66,13 @@ object Parameter {
     
     inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    inline def setListVarargs(value: Parameter*): Self = StObject.set(x, "list", js.Array(value :_*))
+    inline def setListVarargs(value: Parameter*): Self = StObject.set(x, "list", js.Array(value*))
     
     inline def setMap(value: js.Array[Parameter]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setMapVarargs(value: Parameter*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: Parameter*): Self = StObject.set(x, "map", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

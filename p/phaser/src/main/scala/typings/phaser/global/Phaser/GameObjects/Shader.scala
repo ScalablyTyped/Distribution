@@ -2,7 +2,6 @@ package typings.phaser.global.Phaser.GameObjects
 
 import typings.phaser.Phaser.Display.BaseShader
 import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {
   *     this.load.glsl('fire', 'shaders/fire.glsl.js');
   * }
-  *  
+  * 
   * function create ()
   * {
   *     this.add.shader('fire', 400, 300, 512, 512);
@@ -49,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Phaser.GameObjects.Shader")
 @js.native
-class Shader protected ()
+open class Shader protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Shader {
   /**
@@ -71,7 +70,7 @@ class Shader protected ()
     width: js.UndefOr[Double],
     height: js.UndefOr[Double],
     textures: js.UndefOr[js.Array[String]],
-    textureData: js.UndefOr[js.Any]
+    textureData: js.UndefOr[Any]
   ) = this()
   
   /**
@@ -131,7 +130,7 @@ class Shader protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

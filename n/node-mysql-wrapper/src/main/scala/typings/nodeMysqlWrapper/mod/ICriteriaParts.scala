@@ -8,7 +8,7 @@ trait ICriteriaParts extends StObject {
   
   var noDatabaseProperties: js.Array[String]
   
-  var rawCriteriaObject: js.Any
+  var rawCriteriaObject: Any
   
   def selectFromClause[T](_table: Table[T]): String
   
@@ -20,8 +20,8 @@ object ICriteriaParts {
   
   inline def apply(
     noDatabaseProperties: js.Array[String],
-    rawCriteriaObject: js.Any,
-    selectFromClause: Table[js.Any] => String,
+    rawCriteriaObject: Any,
+    selectFromClause: Table[Any] => String,
     tables: js.Array[TableToSearchPart],
     whereClause: String
   ): ICriteriaParts = {
@@ -33,15 +33,15 @@ object ICriteriaParts {
     
     inline def setNoDatabaseProperties(value: js.Array[String]): Self = StObject.set(x, "noDatabaseProperties", value.asInstanceOf[js.Any])
     
-    inline def setNoDatabasePropertiesVarargs(value: String*): Self = StObject.set(x, "noDatabaseProperties", js.Array(value :_*))
+    inline def setNoDatabasePropertiesVarargs(value: String*): Self = StObject.set(x, "noDatabaseProperties", js.Array(value*))
     
-    inline def setRawCriteriaObject(value: js.Any): Self = StObject.set(x, "rawCriteriaObject", value.asInstanceOf[js.Any])
+    inline def setRawCriteriaObject(value: Any): Self = StObject.set(x, "rawCriteriaObject", value.asInstanceOf[js.Any])
     
-    inline def setSelectFromClause(value: Table[js.Any] => String): Self = StObject.set(x, "selectFromClause", js.Any.fromFunction1(value))
+    inline def setSelectFromClause(value: Table[Any] => String): Self = StObject.set(x, "selectFromClause", js.Any.fromFunction1(value))
     
     inline def setTables(value: js.Array[TableToSearchPart]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    inline def setTablesVarargs(value: TableToSearchPart*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: TableToSearchPart*): Self = StObject.set(x, "tables", js.Array(value*))
     
     inline def setWhereClause(value: String): Self = StObject.set(x, "whereClause", value.asInstanceOf[js.Any])
   }

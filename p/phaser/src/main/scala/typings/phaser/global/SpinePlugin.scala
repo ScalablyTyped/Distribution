@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SpinePlugin")
 @js.native
-class SpinePlugin protected ()
+open class SpinePlugin protected ()
   extends StObject
      with typings.phaser.SpinePlugin {
   def this(scene: Scene, pluginManager: PluginManager) = this()

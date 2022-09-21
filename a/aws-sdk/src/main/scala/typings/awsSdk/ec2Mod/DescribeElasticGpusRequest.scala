@@ -48,13 +48,13 @@ object DescribeElasticGpusRequest {
     
     inline def setElasticGpuIdsUndefined: Self = StObject.set(x, "ElasticGpuIds", js.undefined)
     
-    inline def setElasticGpuIdsVarargs(value: ElasticGpuId*): Self = StObject.set(x, "ElasticGpuIds", js.Array(value :_*))
+    inline def setElasticGpuIdsVarargs(value: ElasticGpuId*): Self = StObject.set(x, "ElasticGpuIds", js.Array(value*))
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: DescribeElasticGpusMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

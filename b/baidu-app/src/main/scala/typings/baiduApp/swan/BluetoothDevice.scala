@@ -1,6 +1,5 @@
 package typings.baiduApp.swan
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait BluetoothDevice extends StObject {
   /**
     * 当前蓝牙设备的广播内容
     */
-  var advertisData: ArrayBuffer
+  var advertisData: js.typedarray.ArrayBuffer
   
   /**
     * 用于区分设备的 id
@@ -32,14 +31,14 @@ trait BluetoothDevice extends StObject {
 }
 object BluetoothDevice {
   
-  inline def apply(RSSI: Double, advertisData: ArrayBuffer, deviceId: String, name: String): BluetoothDevice = {
+  inline def apply(RSSI: Double, advertisData: js.typedarray.ArrayBuffer, deviceId: String, name: String): BluetoothDevice = {
     val __obj = js.Dynamic.literal(RSSI = RSSI.asInstanceOf[js.Any], advertisData = advertisData.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothDevice]
   }
   
   extension [Self <: BluetoothDevice](x: Self) {
     
-    inline def setAdvertisData(value: ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
+    inline def setAdvertisData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

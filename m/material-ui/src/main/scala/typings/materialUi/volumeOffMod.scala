@@ -10,10 +10,10 @@ object volumeOffMod {
   
   @JSImport("material-ui/svg-icons/av/volume-off", JSImport.Default)
   @js.native
-  class default () extends AvVolumeOff
+  open class default () extends AvVolumeOff
   
   @JSImport("material-ui/svg-icons/av/volume-off", "AvVolumeOff")
   @js.native
-  class AvVolumeOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvVolumeOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

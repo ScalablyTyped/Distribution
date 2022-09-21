@@ -29,7 +29,7 @@ trait ConnectivityTest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNetworkmanagement.maximMazurokGapiClientNetworkmanagementStrings.ConnectivityTest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientNetworkmanagement.maximMazurokGapiClientNetworkmanagementStrings.ConnectivityTest & TopLevel[Any]
   ] = js.undefined
   
   /** Required. Unique name of the resource using the form: `projects/{project_id}/locations/global/connectivityTests/{test_id}` */
@@ -88,7 +88,7 @@ object ConnectivityTest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNetworkmanagement.maximMazurokGapiClientNetworkmanagementStrings.ConnectivityTest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientNetworkmanagement.maximMazurokGapiClientNetworkmanagementStrings.ConnectivityTest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -109,7 +109,7 @@ object ConnectivityTest {
     
     inline def setRelatedProjectsUndefined: Self = StObject.set(x, "relatedProjects", js.undefined)
     
-    inline def setRelatedProjectsVarargs(value: String*): Self = StObject.set(x, "relatedProjects", js.Array(value :_*))
+    inline def setRelatedProjectsVarargs(value: String*): Self = StObject.set(x, "relatedProjects", js.Array(value*))
     
     inline def setSource(value: Endpoint): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

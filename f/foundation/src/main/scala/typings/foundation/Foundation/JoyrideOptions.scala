@@ -104,7 +104,7 @@ object JoyrideOptions {
     
     inline def setExposedUndefined: Self = StObject.set(x, "exposed", js.undefined)
     
-    inline def setExposedVarargs(value: String*): Self = StObject.set(x, "exposed", js.Array(value :_*))
+    inline def setExposedVarargs(value: String*): Self = StObject.set(x, "exposed", js.Array(value*))
     
     inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
@@ -126,7 +126,7 @@ object JoyrideOptions {
     
     inline def setPause_afterUndefined: Self = StObject.set(x, "pause_after", js.undefined)
     
-    inline def setPause_afterVarargs(value: Double*): Self = StObject.set(x, "pause_after", js.Array(value :_*))
+    inline def setPause_afterVarargs(value: Double*): Self = StObject.set(x, "pause_after", js.Array(value*))
     
     inline def setPost_expose_callback(value: () => Unit): Self = StObject.set(x, "post_expose_callback", js.Any.fromFunction0(value))
     

@@ -4,21 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Creates a line.
-  */
 trait SchemaCreateLineRequest extends StObject {
   
   /**
-    * The category of the line to be created.  The exact line type created is
-    * determined based on the category and how it&#39;s routed to connect to
-    * other page elements.  If you specify both a `category` and a
-    * `line_category`, the `category` takes precedence.  If you do not specify
-    * a value for `category`, but specify a value for `line_category`, then the
-    * specified `line_category` value is used.  If you do not specify either,
-    * then STRAIGHT is used.
+    * The category of the line to be created. The exact line type created is determined based on the category and how it's routed to connect to other page elements. If you specify both a `category` and a `line_category`, the `category` takes precedence. If you do not specify a value for `category`, but specify a value for `line_category`, then the specified `line_category` value is used. If you do not specify either, then STRAIGHT is used.
     */
-  var category: js.UndefOr[String] = js.undefined
+  var category: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The element properties for the line.
@@ -26,24 +17,14 @@ trait SchemaCreateLineRequest extends StObject {
   var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.undefined
   
   /**
-    * The category of the line to be created.  &lt;b&gt;Deprecated&lt;/b&gt;:
-    * use `category` instead.  The exact line type created is determined based
-    * on the category and how it&#39;s routed to connect to other page
-    * elements.  If you specify both a `category` and a `line_category`, the
-    * `category` takes precedence.
+    * The category of the line to be created. *Deprecated*: use `category` instead. The exact line type created is determined based on the category and how it's routed to connect to other page elements. If you specify both a `category` and a `line_category`, the `category` takes precedence.
     */
-  var lineCategory: js.UndefOr[String] = js.undefined
+  var lineCategory: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A user-supplied object ID.  If you specify an ID, it must be unique among
-    * all pages and page elements in the presentation. The ID must start with
-    * an alphanumeric character or an underscore (matches regex
-    * `[a-zA-Z0-9_]`); remaining characters may include those as well as a
-    * hyphen or colon (matches regex `[a-zA-Z0-9_-:]`). The length of the ID
-    * must not be less than 5 or greater than 50.  If you don&#39;t specify an
-    * ID, a unique one is generated.
+    * A user-supplied object ID. If you specify an ID, it must be unique among all pages and page elements in the presentation. The ID must start with an alphanumeric character or an underscore (matches regex `[a-zA-Z0-9_]`); remaining characters may include those as well as a hyphen or colon (matches regex `[a-zA-Z0-9_-:]`). The length of the ID must not be less than 5 or greater than 50. If you don't specify an ID, a unique one is generated.
     */
-  var objectId: js.UndefOr[String] = js.undefined
+  var objectId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCreateLineRequest {
   
@@ -56,6 +37,8 @@ object SchemaCreateLineRequest {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
+    inline def setCategoryNull: Self = StObject.set(x, "category", null)
+    
     inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     inline def setElementProperties(value: SchemaPageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
@@ -64,9 +47,13 @@ object SchemaCreateLineRequest {
     
     inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
     
+    inline def setLineCategoryNull: Self = StObject.set(x, "lineCategory", null)
+    
     inline def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    
+    inline def setObjectIdNull: Self = StObject.set(x, "objectId", null)
     
     inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }

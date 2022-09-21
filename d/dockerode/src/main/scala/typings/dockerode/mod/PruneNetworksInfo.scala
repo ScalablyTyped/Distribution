@@ -19,6 +19,6 @@ object PruneNetworksInfo {
     
     inline def setNetworksDeleted(value: js.Array[String]): Self = StObject.set(x, "NetworksDeleted", value.asInstanceOf[js.Any])
     
-    inline def setNetworksDeletedVarargs(value: String*): Self = StObject.set(x, "NetworksDeleted", js.Array(value :_*))
+    inline def setNetworksDeletedVarargs(value: String*): Self = StObject.set(x, "NetworksDeleted", js.Array(value*))
   }
 }

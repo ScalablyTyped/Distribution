@@ -8,5 +8,5 @@ object encryptionKeyUnavailableExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/EncryptionKeyUnavailableException", "EncryptionKeyUnavailableException")
   @js.native
-  val EncryptionKeyUnavailableException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EncryptionKeyUnavailableException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

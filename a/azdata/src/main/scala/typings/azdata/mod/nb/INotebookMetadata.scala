@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait INotebookMetadata extends StObject {
   
-  var kernelspec: IKernelInfo
+  var kernelspec: js.UndefOr[IKernelSpec] = js.undefined
   
   var language_info: js.UndefOr[ILanguageInfo] = js.undefined
   
@@ -14,14 +14,16 @@ trait INotebookMetadata extends StObject {
 }
 object INotebookMetadata {
   
-  inline def apply(kernelspec: IKernelInfo): INotebookMetadata = {
-    val __obj = js.Dynamic.literal(kernelspec = kernelspec.asInstanceOf[js.Any])
+  inline def apply(): INotebookMetadata = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INotebookMetadata]
   }
   
   extension [Self <: INotebookMetadata](x: Self) {
     
-    inline def setKernelspec(value: IKernelInfo): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
+    inline def setKernelspec(value: IKernelSpec): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
+    
+    inline def setKernelspecUndefined: Self = StObject.set(x, "kernelspec", js.undefined)
     
     inline def setLanguage_info(value: ILanguageInfo): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
     
@@ -31,6 +33,6 @@ object INotebookMetadata {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object callbackMod {
   
-  type Callback = js.Function2[/* err */ js.Any, /* result */ js.Any, Unit]
+  type Callback[T] = js.Function2[/* err */ Any, /* result */ T, Unit]
 }

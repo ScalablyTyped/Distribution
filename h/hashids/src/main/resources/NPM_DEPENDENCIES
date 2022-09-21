@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hashids" : "2.2.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hashids" : "2.2.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

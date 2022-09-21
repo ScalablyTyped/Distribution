@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreatePartitionRequest extends StObject {
   
   /**
-    * The AWS account ID of the catalog in which the partition is to be created.
+    * The Amazon Web Services account ID of the catalog in which the partition is to be created.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   

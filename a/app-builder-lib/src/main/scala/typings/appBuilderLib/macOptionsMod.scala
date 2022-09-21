@@ -176,7 +176,7 @@ object macOptionsMod {
       
       inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       
-      inline def setContentsVarargs(value: DmgContent*): Self = StObject.set(x, "contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: DmgContent*): Self = StObject.set(x, "contents", js.Array(value*))
       
       inline def setFormat(value: UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -323,12 +323,15 @@ object macOptionsMod {
     /**
       * The path to entitlements file for signing the app. `build/entitlements.mac.plist` will be used if exists (it is a recommended way to set).
       * MAS entitlements is specified in the [mas](/configuration/mas).
+      * See [this folder in osx-sign's repository](https://github.com/electron/osx-sign/tree/main/entitlements) for examples.
+      * Be aware that your app may crash if the right entitlements are not set like `com.apple.security.cs.allow-jit` for example on arm64 builds with Electron 20+.
+      * See [Signing and Notarizing macOS Builds from the Electron documentation](https://www.electronjs.org/docs/latest/tutorial/code-signing#signing--notarizing-macos-builds) for more information.
       */
     val entitlements: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The path to child entitlements which inherit the security settings for signing frameworks and bundles of a distribution. `build/entitlements.mac.inherit.plist` will be used if exists (it is a recommended way to set).
-      * Otherwise [default](https://github.com/electron-userland/electron-osx-sign/blob/master/default.entitlements.darwin.inherit.plist).
+      * See [this folder in osx-sign's repository](https://github.com/electron/osx-sign/tree/main/entitlements) for examples.
       *
       * This option only applies when signing with `entitlements` provided.
       */
@@ -344,7 +347,7 @@ object macOptionsMod {
     /**
       * The extra entries for `Info.plist`.
       */
-    val extendInfo: js.UndefOr[js.Any] = js.undefined
+    val extendInfo: js.UndefOr[Any] = js.undefined
     
     /**
       * Extra files to put in archive. Not applicable for `tar.*`.
@@ -406,6 +409,14 @@ object macOptionsMod {
     val identity: js.UndefOr[String | Null] = js.undefined
     
     /**
+      * Whether to merge ASAR files for different architectures or not.
+      *
+      * This option has no effect unless building for "universal" arch.
+      * @default true
+      */
+    val mergeASARs: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The minimum version of macOS required for the app to run. Corresponds to `LSMinimumSystemVersion`.
       */
     val minimumSystemVersion: js.UndefOr[String | Null] = js.undefined
@@ -426,6 +437,15 @@ object macOptionsMod {
     val signIgnore: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /**
+      * Minimatch pattern of paths that are allowed to be present in one of the
+      * ASAR files, but not in the other.
+      *
+      * This option has no effect unless building for "universal" arch and applies
+      * only if `mergeASARs` is `true`.
+      */
+    val singleArchFiles: js.UndefOr[String] = js.undefined
+    
+    /**
       * Whether to let electron-osx-sign verify the contents or not.
       * @default true
       */
@@ -440,10 +460,24 @@ object macOptionsMod {
       ] = js.undefined
     
     /**
+      * Specify the URL of the timestamp authority server
+      */
+    val timestamp: js.UndefOr[String | Null] = js.undefined
+    
+    /**
       * Whether to sign app for development or for distribution.
       * @default distribution
       */
     val `type`: js.UndefOr[distribution | development | Null] = js.undefined
+    
+    /**
+      * Minimatch pattern of paths that are allowed to be x64 binaries in both
+      * ASAR files
+      *
+      * This option has no effect unless building for "universal" arch and applies
+      * only if `mergeASARs` is `true`.
+      */
+    val x64ArchFiles: js.UndefOr[String] = js.undefined
   }
   object MacConfiguration {
     
@@ -460,7 +494,7 @@ object macOptionsMod {
       
       inline def setBinariesUndefined: Self = StObject.set(x, "binaries", js.undefined)
       
-      inline def setBinariesVarargs(value: String*): Self = StObject.set(x, "binaries", js.Array(value :_*))
+      inline def setBinariesVarargs(value: String*): Self = StObject.set(x, "binaries", js.Array(value*))
       
       inline def setBundleShortVersion(value: String): Self = StObject.set(x, "bundleShortVersion", value.asInstanceOf[js.Any])
       
@@ -500,7 +534,7 @@ object macOptionsMod {
       
       inline def setElectronLanguagesUndefined: Self = StObject.set(x, "electronLanguages", js.undefined)
       
-      inline def setElectronLanguagesVarargs(value: String*): Self = StObject.set(x, "electronLanguages", js.Array(value :_*))
+      inline def setElectronLanguagesVarargs(value: String*): Self = StObject.set(x, "electronLanguages", js.Array(value*))
       
       inline def setEntitlements(value: String): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
       
@@ -520,7 +554,7 @@ object macOptionsMod {
       
       inline def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
       
-      inline def setExtendInfo(value: js.Any): Self = StObject.set(x, "extendInfo", value.asInstanceOf[js.Any])
+      inline def setExtendInfo(value: Any): Self = StObject.set(x, "extendInfo", value.asInstanceOf[js.Any])
       
       inline def setExtendInfoUndefined: Self = StObject.set(x, "extendInfo", js.undefined)
       
@@ -530,7 +564,7 @@ object macOptionsMod {
       
       inline def setExtraDistFilesUndefined: Self = StObject.set(x, "extraDistFiles", js.undefined)
       
-      inline def setExtraDistFilesVarargs(value: String*): Self = StObject.set(x, "extraDistFiles", js.Array(value :_*))
+      inline def setExtraDistFilesVarargs(value: String*): Self = StObject.set(x, "extraDistFiles", js.Array(value*))
       
       inline def setGatekeeperAssess(value: Boolean): Self = StObject.set(x, "gatekeeperAssess", value.asInstanceOf[js.Any])
       
@@ -582,6 +616,10 @@ object macOptionsMod {
       
       inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
       
+      inline def setMergeASARs(value: Boolean): Self = StObject.set(x, "mergeASARs", value.asInstanceOf[js.Any])
+      
+      inline def setMergeASARsUndefined: Self = StObject.set(x, "mergeASARs", js.undefined)
+      
       inline def setMinimumSystemVersion(value: String): Self = StObject.set(x, "minimumSystemVersion", value.asInstanceOf[js.Any])
       
       inline def setMinimumSystemVersionNull: Self = StObject.set(x, "minimumSystemVersion", null)
@@ -606,13 +644,17 @@ object macOptionsMod {
       
       inline def setSignIgnoreUndefined: Self = StObject.set(x, "signIgnore", js.undefined)
       
-      inline def setSignIgnoreVarargs(value: String*): Self = StObject.set(x, "signIgnore", js.Array(value :_*))
+      inline def setSignIgnoreVarargs(value: String*): Self = StObject.set(x, "signIgnore", js.Array(value*))
+      
+      inline def setSingleArchFiles(value: String): Self = StObject.set(x, "singleArchFiles", value.asInstanceOf[js.Any])
+      
+      inline def setSingleArchFilesUndefined: Self = StObject.set(x, "singleArchFiles", js.undefined)
       
       inline def setStrictVerify(value: js.Array[String] | String | Boolean): Self = StObject.set(x, "strictVerify", value.asInstanceOf[js.Any])
       
       inline def setStrictVerifyUndefined: Self = StObject.set(x, "strictVerify", js.undefined)
       
-      inline def setStrictVerifyVarargs(value: String*): Self = StObject.set(x, "strictVerify", js.Array(value :_*))
+      inline def setStrictVerifyVarargs(value: String*): Self = StObject.set(x, "strictVerify", js.Array(value*))
       
       inline def setTarget(value: (js.Array[MacOsTargetName | TargetConfiguration]) | MacOsTargetName | TargetConfiguration): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -620,13 +662,23 @@ object macOptionsMod {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTargetVarargs(value: (MacOsTargetName | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: (MacOsTargetName | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value*))
+      
+      inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      
+      inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
+      
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
       inline def setType(value: distribution | development): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeNull: Self = StObject.set(x, "type", null)
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setX64ArchFiles(value: String): Self = StObject.set(x, "x64ArchFiles", value.asInstanceOf[js.Any])
+      
+      inline def setX64ArchFilesUndefined: Self = StObject.set(x, "x64ArchFiles", js.undefined)
     }
   }
   

@@ -8,18 +8,18 @@ object Page {
   
   trait CommandDispatcher extends StObject {
     
-    def executeCommand(commandId: String, properties: js.Any): js.Any
+    def executeCommand(commandId: String, properties: Any): Any
   }
   object CommandDispatcher {
     
-    inline def apply(executeCommand: (String, js.Any) => js.Any): CommandDispatcher = {
+    inline def apply(executeCommand: (String, Any) => Any): CommandDispatcher = {
       val __obj = js.Dynamic.literal(executeCommand = js.Any.fromFunction2(executeCommand))
       __obj.asInstanceOf[CommandDispatcher]
     }
     
     extension [Self <: CommandDispatcher](x: Self) {
       
-      inline def setExecuteCommand(value: (String, js.Any) => js.Any): Self = StObject.set(x, "executeCommand", js.Any.fromFunction2(value))
+      inline def setExecuteCommand(value: (String, Any) => Any): Self = StObject.set(x, "executeCommand", js.Any.fromFunction2(value))
     }
   }
   
@@ -32,20 +32,20 @@ object Page {
     
     def releaseAllFoci(): Boolean
     
-    def releaseFocusFromComponent(component: Component): js.Any
+    def releaseFocusFromComponent(component: Component): Any
     
-    def requestFocusForComponent(component: Component): js.Any
+    def requestFocusForComponent(component: Component): Any
   }
   object FocusManager {
     
     inline def apply(
       canHandleCommand: String => Boolean,
-      executeCommand: (String, js.Any) => js.Any,
+      executeCommand: (String, Any) => Any,
       getFocusedComponents: () => js.Array[Component],
-      handleCommand: (String, js.Any, Double) => Boolean,
+      handleCommand: (String, Any, Double) => Boolean,
       releaseAllFoci: () => Boolean,
-      releaseFocusFromComponent: Component => js.Any,
-      requestFocusForComponent: Component => js.Any
+      releaseFocusFromComponent: Component => Any,
+      requestFocusForComponent: Component => Any
     ): FocusManager = {
       val __obj = js.Dynamic.literal(canHandleCommand = js.Any.fromFunction1(canHandleCommand), executeCommand = js.Any.fromFunction2(executeCommand), getFocusedComponents = js.Any.fromFunction0(getFocusedComponents), handleCommand = js.Any.fromFunction3(handleCommand), releaseAllFoci = js.Any.fromFunction0(releaseAllFoci), releaseFocusFromComponent = js.Any.fromFunction1(releaseFocusFromComponent), requestFocusForComponent = js.Any.fromFunction1(requestFocusForComponent))
       __obj.asInstanceOf[FocusManager]
@@ -57,9 +57,9 @@ object Page {
       
       inline def setReleaseAllFoci(value: () => Boolean): Self = StObject.set(x, "releaseAllFoci", js.Any.fromFunction0(value))
       
-      inline def setReleaseFocusFromComponent(value: Component => js.Any): Self = StObject.set(x, "releaseFocusFromComponent", js.Any.fromFunction1(value))
+      inline def setReleaseFocusFromComponent(value: Component => Any): Self = StObject.set(x, "releaseFocusFromComponent", js.Any.fromFunction1(value))
       
-      inline def setRequestFocusForComponent(value: Component => js.Any): Self = StObject.set(x, "requestFocusForComponent", js.Any.fromFunction1(value))
+      inline def setRequestFocusForComponent(value: Component => Any): Self = StObject.set(x, "requestFocusForComponent", js.Any.fromFunction1(value))
     }
   }
   
@@ -67,11 +67,11 @@ object Page {
     
     def canHandleCommand(commandId: String): Boolean
     
-    def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean
+    def handleCommand(commandId: String, properties: Any, sequenceNumber: Double): Boolean
   }
   object ICommandHandler {
     
-    inline def apply(canHandleCommand: String => Boolean, handleCommand: (String, js.Any, Double) => Boolean): ICommandHandler = {
+    inline def apply(canHandleCommand: String => Boolean, handleCommand: (String, Any, Double) => Boolean): ICommandHandler = {
       val __obj = js.Dynamic.literal(canHandleCommand = js.Any.fromFunction1(canHandleCommand), handleCommand = js.Any.fromFunction3(handleCommand))
       __obj.asInstanceOf[ICommandHandler]
     }
@@ -80,7 +80,7 @@ object Page {
       
       inline def setCanHandleCommand(value: String => Boolean): Self = StObject.set(x, "canHandleCommand", js.Any.fromFunction1(value))
       
-      inline def setHandleCommand(value: (String, js.Any, Double) => Boolean): Self = StObject.set(x, "handleCommand", js.Any.fromFunction3(value))
+      inline def setHandleCommand(value: (String, Any, Double) => Boolean): Self = StObject.set(x, "handleCommand", js.Any.fromFunction3(value))
     }
   }
   
@@ -109,7 +109,7 @@ object Page {
       getFocusedCommands: () => js.Array[String],
       getGlobalCommands: () => js.Array[String],
       getId: () => String,
-      handleCommand: (String, js.Any, Double) => Boolean,
+      handleCommand: (String, Any, Double) => Boolean,
       init: () => scala.Unit,
       isFocusable: () => Boolean,
       receiveFocus: () => Boolean,
@@ -143,7 +143,7 @@ object Page {
        with ICommandHandler
        with IRootBuildClient {
     
-    def add_ribbonInited(value: js.Function0[scala.Unit]): js.Any
+    def add_ribbonInited(value: js.Function0[scala.Unit]): Any
     
     def get_commandDispatcher(): CommandDispatcher
     
@@ -154,12 +154,12 @@ object Page {
   object PageManager {
     
     inline def apply(
-      add_ribbonInited: js.Function0[scala.Unit] => js.Any,
+      add_ribbonInited: js.Function0[scala.Unit] => Any,
       canHandleCommand: String => Boolean,
       get_commandDispatcher: () => CommandDispatcher,
       get_focusManager: () => FocusManager,
       get_undoManager: () => UndoManager,
-      handleCommand: (String, js.Any, Double) => Boolean
+      handleCommand: (String, Any, Double) => Boolean
     ): PageManager = {
       val __obj = js.Dynamic.literal(add_ribbonInited = js.Any.fromFunction1(add_ribbonInited), canHandleCommand = js.Any.fromFunction1(canHandleCommand), get_commandDispatcher = js.Any.fromFunction0(get_commandDispatcher), get_focusManager = js.Any.fromFunction0(get_focusManager), get_undoManager = js.Any.fromFunction0(get_undoManager), handleCommand = js.Any.fromFunction3(handleCommand))
       __obj.asInstanceOf[PageManager]
@@ -167,7 +167,7 @@ object Page {
     
     extension [Self <: PageManager](x: Self) {
       
-      inline def setAdd_ribbonInited(value: js.Function0[scala.Unit] => js.Any): Self = StObject.set(x, "add_ribbonInited", js.Any.fromFunction1(value))
+      inline def setAdd_ribbonInited(value: js.Function0[scala.Unit] => Any): Self = StObject.set(x, "add_ribbonInited", js.Any.fromFunction1(value))
       
       inline def setGet_commandDispatcher(value: () => CommandDispatcher): Self = StObject.set(x, "get_commandDispatcher", js.Any.fromFunction0(value))
       
@@ -182,7 +182,7 @@ object Page {
        with ICommandHandler
   object UndoManager {
     
-    inline def apply(canHandleCommand: String => Boolean, handleCommand: (String, js.Any, Double) => Boolean): UndoManager = {
+    inline def apply(canHandleCommand: String => Boolean, handleCommand: (String, Any, Double) => Boolean): UndoManager = {
       val __obj = js.Dynamic.literal(canHandleCommand = js.Any.fromFunction1(canHandleCommand), handleCommand = js.Any.fromFunction3(handleCommand))
       __obj.asInstanceOf[UndoManager]
     }

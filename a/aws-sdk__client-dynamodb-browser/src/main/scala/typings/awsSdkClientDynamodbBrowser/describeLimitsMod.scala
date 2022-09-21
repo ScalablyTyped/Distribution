@@ -8,5 +8,5 @@ object describeLimitsMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/DescribeLimits", "DescribeLimits")
   @js.native
-  val DescribeLimits: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DescribeLimits: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

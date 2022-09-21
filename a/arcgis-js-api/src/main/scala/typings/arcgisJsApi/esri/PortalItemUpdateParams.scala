@@ -15,13 +15,13 @@ trait PortalItemUpdateParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#update)
     */
-  var data: String | js.Any
+  var data: String | Any
 }
 object PortalItemUpdateParams {
   
   inline def apply(
     constructor: js.Function,
-    data: String | js.Any,
+    data: String | Any,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
   ): PortalItemUpdateParams = {
@@ -31,6 +31,6 @@ object PortalItemUpdateParams {
   
   extension [Self <: PortalItemUpdateParams](x: Self) {
     
-    inline def setData(value: String | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

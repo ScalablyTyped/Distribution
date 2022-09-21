@@ -1,6 +1,5 @@
 package typings.html5plus
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait PlusNativeUIPickDateOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 日期选择对话框可选择的最大日期
@@ -27,7 +26,7 @@ trait PlusNativeUIPickDateOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var maxDate: js.UndefOr[Date] = js.undefined
+  var maxDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 日期选择对话框可选择的最小日期
@@ -35,7 +34,7 @@ trait PlusNativeUIPickDateOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var minDate: js.UndefOr[Date] = js.undefined
+  var minDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 时间选择对话框弹出指示区域
@@ -44,7 +43,7 @@ trait PlusNativeUIPickDateOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var popover: js.UndefOr[js.Any] = js.undefined
+  var popover: js.UndefOr[Any] = js.undefined
   
   /**
     * 日期选择对话框显示的标题
@@ -63,19 +62,19 @@ object PlusNativeUIPickDateOption {
   
   extension [Self <: PlusNativeUIPickDateOption](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
-    inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
-    inline def setPopover(value: js.Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
+    inline def setPopover(value: Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
     inline def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
     

@@ -40,7 +40,7 @@ object mod extends Shortcut {
     def `with`(block: String, elem: String): ElemFormatter = js.native
   }
   
-  type Mods = StringDictionary[js.Any]
+  type Mods = StringDictionary[Any]
   
   trait Options extends StObject {
     

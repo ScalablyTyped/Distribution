@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "Blame")
 @js.native
-class Blame protected () extends StObject {
-  def this(repo: Repo, file: String, callback: js.Function2[/* err */ js.Any, /* blame */ Blame, Unit]) = this()
+open class Blame protected () extends StObject {
+  def this(repo: Repo, file: String, callback: js.Function2[/* err */ Any, /* blame */ Blame, Unit]) = this()
   def this(
     repo: Repo,
     file: String,
     commit: String,
-    callback: js.Function2[/* err */ js.Any, /* blame */ Blame, Unit]
+    callback: js.Function2[/* err */ Any, /* blame */ Blame, Unit]
   ) = this()
   
   var commit: String = js.native

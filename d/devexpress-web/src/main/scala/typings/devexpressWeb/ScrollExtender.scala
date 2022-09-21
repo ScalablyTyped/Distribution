@@ -14,5 +14,5 @@ trait ScrollExtender extends StObject {
     * Applies the current scroll extender to the specified DOM element.
     */
   def ChangeElement(id: String): Unit = js.native
-  def ChangeElement(id: js.Any): Unit = js.native
+  def ChangeElement(id: Any): Unit = js.native
 }

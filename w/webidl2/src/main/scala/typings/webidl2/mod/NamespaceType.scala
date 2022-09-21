@@ -42,7 +42,7 @@ object NamespaceType {
     
     inline def setMembers(value: js.Array[IDLNamespaceMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: IDLNamespaceMemberType*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: IDLNamespaceMemberType*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

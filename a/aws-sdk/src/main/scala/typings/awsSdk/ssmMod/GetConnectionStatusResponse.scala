@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetConnectionStatusResponse extends StObject {
   
   /**
-    * The status of the connection to the instance. For example, 'Connected' or 'Not Connected'.
+    * The status of the connection to the managed node. For example, 'Connected' or 'Not Connected'.
     */
   var Status: js.UndefOr[ConnectionStatus] = js.undefined
   
   /**
-    * The ID of the instance to check connection status. 
+    * The ID of the managed node to check connection status. 
     */
   var Target: js.UndefOr[SessionTarget] = js.undefined
 }

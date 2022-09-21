@@ -9,7 +9,7 @@ trait StandardMaterial
   extends StObject
      with PushMaterial {
   
-  /* private */ var _ambientTexture: js.Any = js.native
+  /* private */ var _ambientTexture: Any = js.native
   
   /**
     * Attaches a new image processing configuration to the Standard Material.
@@ -17,17 +17,19 @@ trait StandardMaterial
     */
   /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
   
-  /* private */ var _bumpTexture: js.Any = js.native
+  /* private */ var _bumpTexture: Any = js.native
   
-  /* private */ var _diffuseFresnelParameters: js.Any = js.native
+  /* protected */ var _cacheHasRenderTargetTextures: Boolean = js.native
   
-  /* private */ var _diffuseTexture: js.Any = js.native
+  /* private */ var _diffuseFresnelParameters: Any = js.native
   
-  /* private */ var _disableLighting: js.Any = js.native
+  /* private */ var _diffuseTexture: Any = js.native
   
-  /* private */ var _emissiveFresnelParameters: js.Any = js.native
+  /* private */ var _disableLighting: Any = js.native
   
-  /* private */ var _emissiveTexture: js.Any = js.native
+  /* private */ var _emissiveFresnelParameters: Any = js.native
+  
+  /* private */ var _emissiveTexture: Any = js.native
   
   /* protected */ var _globalAmbientColor: Color3 = js.native
   
@@ -44,66 +46,64 @@ trait StandardMaterial
   /**
     * Keep track of the image processing observer to allow dispose and replace.
     */
-  /* private */ var _imageProcessingObserver: js.Any = js.native
+  /* private */ var _imageProcessingObserver: Any = js.native
   
-  /* private */ var _invertNormalMapX: js.Any = js.native
+  /* private */ var _invertNormalMapX: Any = js.native
   
-  /* private */ var _invertNormalMapY: js.Any = js.native
+  /* private */ var _invertNormalMapY: Any = js.native
   
-  /* private */ var _lightmapTexture: js.Any = js.native
+  /* private */ var _lightmapTexture: Any = js.native
   
-  /* private */ var _linkEmissiveWithDiffuse: js.Any = js.native
+  /* private */ var _linkEmissiveWithDiffuse: Any = js.native
   
-  /* private */ var _maxSimultaneousLights: js.Any = js.native
+  /* private */ var _maxSimultaneousLights: Any = js.native
   
-  /* private */ var _opacityFresnelParameters: js.Any = js.native
+  /* private */ var _opacityFresnelParameters: Any = js.native
   
-  /* private */ var _opacityTexture: js.Any = js.native
+  /* private */ var _opacityTexture: Any = js.native
   
-  /* protected */ var _rebuildInParallel: Boolean = js.native
+  /* private */ var _reflectionFresnelParameters: Any = js.native
   
-  /* private */ var _reflectionFresnelParameters: js.Any = js.native
+  /* private */ var _reflectionTexture: Any = js.native
   
-  /* private */ var _reflectionTexture: js.Any = js.native
+  /* private */ var _refractionFresnelParameters: Any = js.native
   
-  /* private */ var _refractionFresnelParameters: js.Any = js.native
-  
-  /* private */ var _refractionTexture: js.Any = js.native
+  /* private */ var _refractionTexture: Any = js.native
   
   /* protected */ var _renderTargets: SmartArray[RenderTargetTexture] = js.native
   
-  /* private */ var _roughness: js.Any = js.native
+  /* private */ var _roughness: Any = js.native
   
   /**
     * Specifies whether or not the alpha value of the diffuse texture should be used for alpha blending.
     */
   /* protected */ def _shouldUseAlphaFromDiffuseTexture(): Boolean = js.native
   
-  /* private */ var _specularTexture: js.Any = js.native
+  /* private */ var _specularTexture: Any = js.native
   
-  /* private */ var _twoSidedLighting: js.Any = js.native
+  /* private */ var _twoSidedLighting: Any = js.native
   
-  /* private */ var _useAlphaFromDiffuseTexture: js.Any = js.native
+  /* private */ var _useAlphaFromDiffuseTexture: Any = js.native
   
-  /* private */ var _useEmissiveAsIllumination: js.Any = js.native
+  /* private */ var _useEmissiveAsIllumination: Any = js.native
   
-  /* private */ var _useGlossinessFromSpecularMapAlpha: js.Any = js.native
+  /* private */ var _useGlossinessFromSpecularMapAlpha: Any = js.native
   
-  /* private */ var _useLightmapAsShadowmap: js.Any = js.native
+  /* private */ var _useLightmapAsShadowmap: Any = js.native
   
   /* protected */ var _useLogarithmicDepth: Boolean = js.native
   
-  /* private */ var _useObjectSpaceNormalMap: js.Any = js.native
+  /* private */ var _useObjectSpaceNormalMap: Any = js.native
   
-  /* private */ var _useParallax: js.Any = js.native
+  /* private */ var _useParallax: Any = js.native
   
-  /* private */ var _useParallaxOcclusion: js.Any = js.native
+  /* private */ var _useParallaxOcclusion: Any = js.native
   
-  /* private */ var _useReflectionFresnelFromSpecular: js.Any = js.native
+  /* private */ var _useReflectionFresnelFromSpecular: Any = js.native
   
-  /* private */ var _useReflectionOverAlpha: js.Any = js.native
+  /* private */ var _useReflectionOverAlpha: Any = js.native
   
-  /* private */ var _useSpecularOverAlpha: js.Any = js.native
+  /* private */ var _useSpecularOverAlpha: Any = js.native
   
   /* protected */ var _worldViewProjectionMatrix: Matrix = js.native
   
@@ -124,12 +124,6 @@ trait StandardMaterial
   var ambientTexture: Nullable[BaseTexture] = js.native
   
   /**
-    * Builds the material UBO layouts.
-    * Used internally during the effect preparation.
-    */
-  def buildUniformLayout(): Unit = js.native
-  
-  /**
     * Bump mapping is a technique to simulate bump and dents on a rendered surface.
     * These are made by creating a normal map from an image. The means to do this can be found on the web, a search for 'normal map generator' will bring up free and paid for methods of doing this.
     * @see https://doc.babylonjs.com/how_to/more_materials#bump-map
@@ -145,16 +139,16 @@ trait StandardMaterial
   def cameraColorCurves: Nullable[ColorCurves] = js.native
   
   /**
-    * Gets wether the color curves effect is enabled.
+    * Gets whether the color curves effect is enabled.
     */
   def cameraColorCurvesEnabled: Boolean = js.native
   /**
-    * Sets wether the color curves effect is enabled.
+    * Sets whether the color curves effect is enabled.
     */
   def cameraColorCurvesEnabled_=(value: Boolean): Unit = js.native
   
   /**
-    * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
+    * The color grading curves provide additional color adjustment that is applied after any color grading transform (3D LUT).
     * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
     * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
     * corresponding to low luminance, medium luminance, and high luminance areas respectively.
@@ -162,11 +156,11 @@ trait StandardMaterial
   def cameraColorCurves_=(value: Nullable[ColorCurves]): Unit = js.native
   
   /**
-    * Gets wether the color grading effect is enabled.
+    * Gets whether the color grading effect is enabled.
     */
   def cameraColorGradingEnabled: Boolean = js.native
   /**
-    * Gets wether the color grading effect is enabled.
+    * Gets whether the color grading effect is enabled.
     */
   def cameraColorGradingEnabled_=(value: Boolean): Unit = js.native
   
@@ -202,11 +196,11 @@ trait StandardMaterial
   def cameraExposure_=(value: Double): Unit = js.native
   
   /**
-    * Gets wether tonemapping is enabled or not.
+    * Gets whether tonemapping is enabled or not.
     */
   def cameraToneMappingEnabled: Boolean = js.native
   /**
-    * Sets wether tonemapping is enabled or not
+    * Sets whether tonemapping is enabled or not
     */
   def cameraToneMappingEnabled_=(value: Boolean): Unit = js.native
   
@@ -254,12 +248,6 @@ trait StandardMaterial
     * This will be mixed in the final result even in the absence of light.
     */
   var emissiveTexture: Nullable[BaseTexture] = js.native
-  
-  /**
-    * Get the list of animatables in the material.
-    * @returns the list of animatables object used in the material
-    */
-  def getAnimatables(): js.Array[IAnimatable] = js.native
   
   /**
     * Gets the image processing configuration used either in this material.
@@ -332,7 +320,7 @@ trait StandardMaterial
   var parallaxScaleBias: Double = js.native
   
   /**
-    * Defines additionnal PrePass parameters for the material.
+    * Defines additional PrePass parameters for the material.
     */
   val prePassConfiguration: PrePassConfiguration = js.native
   
@@ -440,13 +428,13 @@ trait StandardMaterial
   var useReflectionFresnelFromSpecular: Boolean = js.native
   
   /**
-    * Specifies that the material will keeps the reflection highlights over a transparent surface (only the most limunous ones).
+    * Specifies that the material will keeps the reflection highlights over a transparent surface (only the most luminous ones).
     * A car glass is a good exemple of that. When the street lights reflects on it you can not see what is behind.
     */
   var useReflectionOverAlpha: Boolean = js.native
   
   /**
-    * Specifies that the material will keep the specular highlights over a transparent surface (only the most limunous ones).
+    * Specifies that the material will keep the specular highlights over a transparent surface (only the most luminous ones).
     * A car glass is a good exemple of that. When sun reflects on it you can not see what is behind.
     */
   var useSpecularOverAlpha: Boolean = js.native

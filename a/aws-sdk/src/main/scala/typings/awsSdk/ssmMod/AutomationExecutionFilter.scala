@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutomationExecutionFilter extends StObject {
   
   /**
-    * One or more keys to limit the results. Valid filter keys include the following: DocumentNamePrefix, ExecutionStatus, ExecutionId, ParentExecutionId, CurrentAction, StartTimeBefore, StartTimeAfter, TargetResourceGroup.
+    * One or more keys to limit the results.
     */
   var Key: AutomationExecutionFilterKey
   
@@ -29,6 +29,6 @@ object AutomationExecutionFilter {
     
     inline def setValues(value: AutomationExecutionFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: AutomationExecutionFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: AutomationExecutionFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

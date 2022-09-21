@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "KeyDuplicationError")
 @js.native
-class KeyDuplicationError protected () extends SurveyError {
+open class KeyDuplicationError protected () extends SurveyError {
   def this(text: String) = this()
   def this(text: String, errorOwner: ISurveyErrorOwner) = this()
 }

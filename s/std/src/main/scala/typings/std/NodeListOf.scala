@@ -9,6 +9,7 @@ trait NodeListOf[TNode /* <: Node */]
   extends StObject
      with NodeList {
   
+  /* standard dom.iterable */
   @JSName(js.Symbol.iterator)
   var iterator_NodeListOf: js.Function0[IterableIterator[TNode]] = js.native
 }

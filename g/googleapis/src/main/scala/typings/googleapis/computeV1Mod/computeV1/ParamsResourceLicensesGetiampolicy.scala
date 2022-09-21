@@ -1,8 +1,5 @@
 package typings.googleapis.computeV1Mod.computeV1
 
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +9,9 @@ trait ParamsResourceLicensesGetiampolicy
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Requested IAM Policy version.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var optionsRequestedPolicyVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * Project ID for this request.
@@ -35,9 +32,9 @@ object ParamsResourceLicensesGetiampolicy {
   
   extension [Self <: ParamsResourceLicensesGetiampolicy](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setOptionsRequestedPolicyVersion(value: Double): Self = StObject.set(x, "optionsRequestedPolicyVersion", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setOptionsRequestedPolicyVersionUndefined: Self = StObject.set(x, "optionsRequestedPolicyVersion", js.undefined)
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

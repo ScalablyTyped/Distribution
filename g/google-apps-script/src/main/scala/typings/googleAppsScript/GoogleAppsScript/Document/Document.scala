@@ -49,7 +49,7 @@ trait Document extends StObject {
   
   def getBookmarks(): js.Array[Bookmark] = js.native
   
-  def getCursor(): Position = js.native
+  def getCursor(): Position | Null = js.native
   
   def getEditors(): js.Array[User] = js.native
   

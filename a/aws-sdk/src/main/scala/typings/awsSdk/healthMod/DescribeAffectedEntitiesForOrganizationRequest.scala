@@ -14,7 +14,7 @@ trait DescribeAffectedEntitiesForOrganizationRequest extends StObject {
   /**
     * The maximum number of items to return in one batch, between 10 and 100, inclusive.
     */
-  var maxResults: js.UndefOr[typings.awsSdk.healthMod.maxResults] = js.undefined
+  var maxResults: js.UndefOr[maxResultsLowerRange] = js.undefined
   
   /**
     * If the results of a search are large, only a portion of the results are returned, and a nextToken pagination token is returned in the response. To retrieve the next batch of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value.
@@ -39,7 +39,7 @@ object DescribeAffectedEntitiesForOrganizationRequest {
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: maxResultsLowerRange): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
@@ -49,6 +49,6 @@ object DescribeAffectedEntitiesForOrganizationRequest {
     
     inline def setOrganizationEntityFilters(value: OrganizationEntityFiltersList): Self = StObject.set(x, "organizationEntityFilters", value.asInstanceOf[js.Any])
     
-    inline def setOrganizationEntityFiltersVarargs(value: EventAccountFilter*): Self = StObject.set(x, "organizationEntityFilters", js.Array(value :_*))
+    inline def setOrganizationEntityFiltersVarargs(value: EventAccountFilter*): Self = StObject.set(x, "organizationEntityFilters", js.Array(value*))
   }
 }

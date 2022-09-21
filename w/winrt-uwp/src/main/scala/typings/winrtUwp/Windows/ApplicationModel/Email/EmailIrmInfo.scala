@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +32,7 @@ trait EmailIrmInfo extends StObject {
   var canReplyAll: Boolean
   
   /** Gets or sets the expiration date for the information rights management (IRM) permissions. */
-  var expirationDate: Date
+  var expirationDate: js.Date
   
   /** Gets or sets a Boolean value that indicates if the sender is the information rights management (IRM) originator. */
   var isIrmOriginator: Boolean
@@ -55,7 +54,7 @@ object EmailIrmInfo {
     canRemoveIrmOnResponse: Boolean,
     canReply: Boolean,
     canReplyAll: Boolean,
-    expirationDate: Date,
+    expirationDate: js.Date,
     isIrmOriginator: Boolean,
     isProgramaticAccessAllowed: Boolean,
     template: EmailIrmTemplate
@@ -82,7 +81,7 @@ object EmailIrmInfo {
     
     inline def setCanReplyAll(value: Boolean): Self = StObject.set(x, "canReplyAll", value.asInstanceOf[js.Any])
     
-    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setIsIrmOriginator(value: Boolean): Self = StObject.set(x, "isIrmOriginator", value.asInstanceOf[js.Any])
     

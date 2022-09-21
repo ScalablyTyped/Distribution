@@ -14,7 +14,7 @@ object richMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/rich", "RichResponse")
   @js.native
-  class RichResponse protected ()
+  open class RichResponse protected ()
     extends StObject
        with GoogleActionsV2RichResponse {
     /**
@@ -94,7 +94,7 @@ object richMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: RichResponseItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: RichResponseItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLink(value: GoogleActionsV2UiElementsLinkOutSuggestion): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
@@ -104,7 +104,7 @@ object richMod {
       
       inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
       
-      inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+      inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value*))
     }
   }
   

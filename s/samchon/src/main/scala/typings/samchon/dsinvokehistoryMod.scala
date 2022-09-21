@@ -12,7 +12,7 @@ object dsinvokehistoryMod {
   
   @JSImport("samchon/templates/distributed/DSInvokeHistory", "DSInvokeHistory")
   @js.native
-  class DSInvokeHistory protected () extends InvokeHistory {
+  open class DSInvokeHistory protected () extends InvokeHistory {
     /**
       * Construct from a DistributedSystem.
       *
@@ -49,16 +49,16 @@ object dsinvokehistoryMod {
     /**
       * @hidden
       */
-    /* private */ var process_ : js.Any = js.native
+    /* private */ var process_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var system_ : js.Any = js.native
+    /* private */ var system_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var weight_ : js.Any = js.native
+    /* private */ var weight_ : Any = js.native
   }
 }

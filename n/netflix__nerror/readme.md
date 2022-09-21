@@ -10,10 +10,10 @@ Rich errors
 | ------------------ | :-------------: |
 | Full name          | @netflix/nerror |
 | Keywords           | nerror, error, multierror, verror |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 3787495 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 583483.0 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/Netflix/nerror)

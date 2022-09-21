@@ -29,7 +29,7 @@ object DescribeDomainControllersResult {
     
     inline def setDomainControllersUndefined: Self = StObject.set(x, "DomainControllers", js.undefined)
     
-    inline def setDomainControllersVarargs(value: DomainController*): Self = StObject.set(x, "DomainControllers", js.Array(value :_*))
+    inline def setDomainControllersVarargs(value: DomainController*): Self = StObject.set(x, "DomainControllers", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

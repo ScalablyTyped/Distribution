@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLSelect extends StObject {
   
-  var DisplayValues: js.Any
+  var DisplayValues: Any
   
   var HTMLName: String
   
@@ -19,18 +19,18 @@ trait HTMLSelect extends StObject {
   
   var Size: Double
   
-  var Values: js.Any
+  var Values: Any
 }
 object HTMLSelect {
   
   inline def apply(
-    DisplayValues: js.Any,
+    DisplayValues: Any,
     HTMLName: String,
     MSFormsDotHTMLSelect_typekey: HTMLSelect,
     MultiSelect: Boolean,
     Selected: String,
     Size: Double,
-    Values: js.Any
+    Values: Any
   ): HTMLSelect = {
     val __obj = js.Dynamic.literal(DisplayValues = DisplayValues.asInstanceOf[js.Any], HTMLName = HTMLName.asInstanceOf[js.Any], MultiSelect = MultiSelect.asInstanceOf[js.Any], Selected = Selected.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.updateDynamic("MSForms.HTMLSelect_typekey")(MSFormsDotHTMLSelect_typekey.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object HTMLSelect {
   
   extension [Self <: HTMLSelect](x: Self) {
     
-    inline def setDisplayValues(value: js.Any): Self = StObject.set(x, "DisplayValues", value.asInstanceOf[js.Any])
+    inline def setDisplayValues(value: Any): Self = StObject.set(x, "DisplayValues", value.asInstanceOf[js.Any])
     
     inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
@@ -51,6 +51,6 @@ object HTMLSelect {
     
     inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "looks-same" : "7.2.4"
+      "looks-same" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "looks-same" : "7.2.4"
+      "looks-same" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

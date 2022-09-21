@@ -23,5 +23,5 @@ object MessageDialog {
   /**
     * Shows the dialog using the specified content.
     */
-  inline def show(shareContent: ShareContent): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(shareContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def show(shareContent: ShareContent): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(shareContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }

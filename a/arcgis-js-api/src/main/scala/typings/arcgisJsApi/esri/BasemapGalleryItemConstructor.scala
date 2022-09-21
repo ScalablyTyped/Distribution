@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BasemapGalleryItemConstructor
   extends StObject
-     with Instantiable0[BasemapGalleryItem]
+     with /**
+  * The BasemapGalleryItem class represents one of the [items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-BasemapGalleryViewModel.html#items) in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-BasemapGalleryItem.html)
+  */
+Instantiable0[BasemapGalleryItem]
      with Instantiable1[/* properties */ BasemapGalleryItemProperties, BasemapGalleryItem]

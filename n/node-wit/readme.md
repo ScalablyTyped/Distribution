@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-wit
 
-Typings are for version 4.2
+Typings are for version 6.0
 
 ## Library description:
 Wit.ai Node.js SDK
@@ -10,10 +10,10 @@ Wit.ai Node.js SDK
 | ------------------ | :-------------: |
 | Full name          | node-wit |
 | Keywords           | wit, wit.ai, bot, botengine, bots, nlp, automation |
-| # releases         | 1 |
-| # dependents       | 35 |
-| # downloads        | 212935 |
-| # stars            | 14 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 3900.0 |
+| # stars            | 1903.0 |
 
 ## Links
 - [Homepage](https://github.com/wit-ai/node-wit#readme)

@@ -4,35 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a whole calendar date, for example a date of birth. The time of
-  * day and time zone are either specified elsewhere or are not significant.
-  * The date is relative to the [Proleptic Gregorian
-  * Calendar](https://en.wikipedia.org/wiki/Proleptic_Gregorian_calendar). The
-  * day may be 0 to represent a year and month where the day is not
-  * significant. The year may be 0 to represent a month and day independent of
-  * year; for example, anniversary date.
-  */
 trait SchemaDate extends StObject {
   
   /**
-    * Day of month. Must be from 1 to 31 and valid for the year and month, or 0
-    * if specifying a year by itself or a year and month where the day is not
-    * significant.
+    * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant.
     */
-  var day: js.UndefOr[Double] = js.undefined
+  var day: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Month of year. Must be from 1 to 12, or 0 if specifying a year without a
-    * month and day.
+    * Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day.
     */
-  var month: js.UndefOr[Double] = js.undefined
+  var month: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Year of date. Must be from 1 to 9999, or 0 if specifying a date without a
-    * year.
+    * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
     */
-  var year: js.UndefOr[Double] = js.undefined
+  var year: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaDate {
   
@@ -45,13 +32,19 @@ object SchemaDate {
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
+    inline def setDayNull: Self = StObject.set(x, "day", null)
+    
     inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
+    inline def setMonthNull: Self = StObject.set(x, "month", null)
+    
     inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
     inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    
+    inline def setYearNull: Self = StObject.set(x, "year", null)
     
     inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }

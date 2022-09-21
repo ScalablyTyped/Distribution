@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3BucketDefinitionForJob extends StObject {
   
   /**
-    * The unique identifier for the AWS account that owns the buckets. If you specify this value and don't specify a value for the buckets array, the job analyzes objects in all the buckets that are owned by the account and meet other conditions specified for the job.
+    * The unique identifier for the Amazon Web Services account that owns the buckets.
     */
-  var accountId: js.UndefOr[string] = js.undefined
+  var accountId: string
   
   /**
     * An array that lists the names of the buckets.
     */
-  var buckets: js.UndefOr[listOfString] = js.undefined
+  var buckets: listOfString
 }
 object S3BucketDefinitionForJob {
   
-  inline def apply(): S3BucketDefinitionForJob = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(accountId: string, buckets: listOfString): S3BucketDefinitionForJob = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], buckets = buckets.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3BucketDefinitionForJob]
   }
   
@@ -27,12 +27,8 @@ object S3BucketDefinitionForJob {
     
     inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
-    
     inline def setBuckets(value: listOfString): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
-    
-    inline def setBucketsVarargs(value: string*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: string*): Self = StObject.set(x, "buckets", js.Array(value*))
   }
 }

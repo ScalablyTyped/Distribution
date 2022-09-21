@@ -31,7 +31,7 @@ object ExternalReferencePolygon {
     
     inline def setCurveRingsUndefined: Self = StObject.set(x, "curveRings", js.undefined)
     
-    inline def setCurveRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "curveRings", js.Array(value :_*))
+    inline def setCurveRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "curveRings", js.Array(value*))
     
     inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object ExternalReferencePolygon {
     
     inline def setRingsUndefined: Self = StObject.set(x, "rings", js.undefined)
     
-    inline def setRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "rings", js.Array(value :_*))
+    inline def setRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "rings", js.Array(value*))
     
     inline def setSpatialReference(value: ExternalReferenceSpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     

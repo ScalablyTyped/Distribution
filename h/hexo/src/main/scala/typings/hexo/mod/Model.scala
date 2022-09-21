@@ -42,7 +42,7 @@ object Model {
     count: () => Double,
     filter: js.Function2[/* v */ T, /* i */ Double, Boolean] => Model[T],
     forEach: js.Function2[/* v */ T, /* i */ Double, Unit] => Unit,
-    map: js.Function2[/* v */ T, /* i */ Double, js.Any] => js.Array[js.Any],
+    map: js.Function2[/* v */ T, /* i */ Double, Any] => js.Array[Any],
     toArray: () => js.Array[T]
   ): Model[T] = {
     val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), map = js.Any.fromFunction1(map), toArray = js.Any.fromFunction0(toArray))
@@ -57,7 +57,7 @@ object Model {
     
     inline def setForEach(value: js.Function2[/* v */ T, /* i */ Double, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
-    inline def setMap(value: js.Function2[/* v */ T, /* i */ Double, js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+    inline def setMap(value: js.Function2[/* v */ T, /* i */ Double, Any] => js.Array[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
     inline def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }

@@ -9,15 +9,13 @@ A mobile and touch friendly input spinner component for Bootstrap 3 & 4.
 | ------------------ | :-------------: |
 | Full name          | bootstrap-touchspin |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 913311 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 80079.66666666667 |
+| # stars            | 495.0 |
 
 ## Links
 - [Homepage](https://www.virtuosoft.eu/code/bootstrap-touchspin/)
-- [Bugs](https://github.com/istvan-ujjmeszaros/bootstrap-touchspin/issues)
-- [Repository](https://github.com/istvan-ujjmeszaros/bootstrap-touchspin)
 - [Npm](https://www.npmjs.com/package/bootstrap-touchspin)
     
 

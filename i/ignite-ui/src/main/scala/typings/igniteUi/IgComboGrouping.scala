@@ -10,7 +10,7 @@ trait IgComboGrouping
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the sort order - ascending or descending.

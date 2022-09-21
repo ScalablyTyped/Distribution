@@ -18,10 +18,10 @@ object startMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/start", "StartCommand")
   @js.native
-  class StartCommand protected () extends Command {
+  open class StartCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
-    /* private */ var canRemoveExisting: js.Any = js.native
+    /* private */ var canRemoveExisting: Any = js.native
     
     def checkForExisting(projectDir: String): js.Promise[Unit] = js.native
     
@@ -40,7 +40,7 @@ object startMod {
     
     def run(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     
-    /* private */ var schema: js.Any = js.native
+    /* private */ var schema: Any = js.native
     
     def showNextSteps(projectDir: String, cloned: Boolean, linkConfirmed: Boolean): js.Promise[Unit] = js.native
     

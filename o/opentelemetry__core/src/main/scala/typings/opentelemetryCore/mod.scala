@@ -1,18 +1,24 @@
 package typings.opentelemetryCore
 
-import typings.node.NodeJS.Timer
 import typings.node.perfHooksMod.Performance_
-import typings.opentelemetryApi.correlationContextMod.CorrelationContext
-import typings.opentelemetryApi.samplerMod.Sampler
+import typings.node.timersMod.global.NodeJS.Timer
+import typings.opentelemetryApi.contextTypesMod.Context
+import typings.opentelemetryApi.exceptionMod.Exception
 import typings.opentelemetryApi.spanContextMod.SpanContext
-import typings.opentelemetryApi.spanMod.Span
 import typings.opentelemetryApi.timeMod.HrTime
 import typings.opentelemetryApi.timeMod.TimeInput
-import typings.opentelemetryContextBase.mod.Context
-import typings.opentelemetryCore.anon.RequiredENVIRONMENT
-import typings.opentelemetryCore.propagationTypesMod.CompositePropagatorConfig
-import typings.opentelemetryCore.typesMod.LogLevel
-import typings.std.RegExp
+import typings.opentelemetryApi.traceAttributesMod.SpanAttributes
+import typings.opentelemetryApi.typesMod.Baggage
+import typings.opentelemetryCore.anchoredClockMod.Clock
+import typings.opentelemetryCore.compositeMod.CompositePropagatorConfig
+import typings.opentelemetryCore.parentBasedSamplerMod.ParentBasedSamplerConfig
+import typings.opentelemetryCore.rpcMetadataMod.RPCMetadata
+import typings.opentelemetryCore.typesMod.ErrorHandler
+import typings.opentelemetryCore.utilsEnvironmentMod.ENVIRONMENT
+import typings.opentelemetryCore.utilsEnvironmentMod.RAW_ENVIRONMENT
+import typings.opentelemetryCore.utilsMod.ParsedBaggageKeyValue
+import typings.std.Record
+import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +29,35 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@opentelemetry/core", "ACTIVE_SPAN_KEY")
-  @js.native
-  val ACTIVE_SPAN_KEY: js.Symbol = js.native
-  
   @JSImport("@opentelemetry/core", "AlwaysOffSampler")
   @js.native
-  class AlwaysOffSampler ()
+  open class AlwaysOffSampler ()
     extends typings.opentelemetryCore.alwaysOffSamplerMod.AlwaysOffSampler
   
   @JSImport("@opentelemetry/core", "AlwaysOnSampler")
   @js.native
-  class AlwaysOnSampler ()
+  open class AlwaysOnSampler ()
     extends typings.opentelemetryCore.alwaysOnSamplerMod.AlwaysOnSampler
   
-  @JSImport("@opentelemetry/core", "B3Propagator")
+  @JSImport("@opentelemetry/core", "AnchoredClock")
   @js.native
-  class B3Propagator ()
-    extends typings.opentelemetryCore.b3PropagatorMod.B3Propagator
-  
-  @JSImport("@opentelemetry/core", "BasePlugin")
-  @js.native
-  abstract class BasePlugin[T] protected ()
-    extends typings.opentelemetryCore.platformMod.BasePlugin[T] {
-    def this(_tracerName: String) = this()
-    def this(_tracerName: String, _tracerVersion: String) = this()
+  open class AnchoredClock protected ()
+    extends typings.opentelemetryCore.anchoredClockMod.AnchoredClock {
+    /**
+      * Create a new AnchoredClock anchored to the current time returned by systemClock.
+      *
+      * @param systemClock should be a clock that returns the number of milliseconds since January 1 1970 such as Date
+      * @param monotonicClock should be a clock that counts milliseconds monotonically such as window.performance or perf_hooks.performance
+      */
+    def this(systemClock: Clock, monotonicClock: Clock) = this()
   }
   
-  @JSImport("@opentelemetry/core", "CORRELATION_CONTEXT_HEADER")
+  @JSImport("@opentelemetry/core", "BindOnceFuture")
   @js.native
-  val CORRELATION_CONTEXT_HEADER: /* "otcorrelations" */ String = js.native
+  open class BindOnceFuture[R, This, T /* <: js.ThisFunction1[/* this */ This, /* repeated */ Any, R] */] protected ()
+    extends typings.opentelemetryCore.callbackMod.BindOnceFuture[R, This, T] {
+    def this(_callback: T, _that: This) = this()
+  }
   
   @JSImport("@opentelemetry/core", "CompositePropagator")
   @js.native
@@ -61,139 +66,56 @@ object mod {
     *
     * @param [config] Configuration object for composite propagator
     */
-  class CompositePropagator ()
+  open class CompositePropagator ()
     extends typings.opentelemetryCore.compositeMod.CompositePropagator {
     def this(config: CompositePropagatorConfig) = this()
   }
   
-  @JSImport("@opentelemetry/core", "ConsoleLogger")
+  @JSImport("@opentelemetry/core", "DEFAULT_ATTRIBUTE_COUNT_LIMIT")
   @js.native
-  class ConsoleLogger ()
-    extends typings.opentelemetryCore.consoleLoggerMod.ConsoleLogger {
-    def this(level: LogLevel) = this()
-  }
+  val DEFAULT_ATTRIBUTE_COUNT_LIMIT: /* 128 */ Double = js.native
   
-  @JSImport("@opentelemetry/core", "DEBUG_FLAG_KEY")
+  @JSImport("@opentelemetry/core", "DEFAULT_ATTRIBUTE_VALUE_LENGTH_LIMIT")
   @js.native
-  val DEBUG_FLAG_KEY: js.Symbol = js.native
+  val DEFAULT_ATTRIBUTE_VALUE_LENGTH_LIMIT: Double = js.native
   
-  @JSImport("@opentelemetry/core", "ExportResult")
+  @JSImport("@opentelemetry/core", "DEFAULT_ENVIRONMENT")
   @js.native
-  object ExportResult extends StObject {
+  val DEFAULT_ENVIRONMENT: Required[ENVIRONMENT] = js.native
+  
+  @JSImport("@opentelemetry/core", "ExportResultCode")
+  @js.native
+  object ExportResultCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryCore.exportResultMod.ExportResult & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryCore.exportResultMod.ExportResultCode & Double] = js.native
     
-    /* 1 */ val FAILED_NOT_RETRYABLE: typings.opentelemetryCore.exportResultMod.ExportResult.FAILED_NOT_RETRYABLE & Double = js.native
+    /* 1 */ val FAILED: typings.opentelemetryCore.exportResultMod.ExportResultCode.FAILED & Double = js.native
     
-    /* 2 */ val FAILED_RETRYABLE: typings.opentelemetryCore.exportResultMod.ExportResult.FAILED_RETRYABLE & Double = js.native
-    
-    /* 0 */ val SUCCESS: typings.opentelemetryCore.exportResultMod.ExportResult.SUCCESS & Double = js.native
+    /* 0 */ val SUCCESS: typings.opentelemetryCore.exportResultMod.ExportResultCode.SUCCESS & Double = js.native
   }
   
-  @JSImport("@opentelemetry/core", "HttpCorrelationContext")
+  @JSImport("@opentelemetry/core", "ParentBasedSampler")
   @js.native
-  class HttpCorrelationContext ()
-    extends typings.opentelemetryCore.httpCorrelationContextMod.HttpCorrelationContext
+  open class ParentBasedSampler protected ()
+    extends typings.opentelemetryCore.parentBasedSamplerMod.ParentBasedSampler {
+    def this(config: ParentBasedSamplerConfig) = this()
+  }
   
-  @JSImport("@opentelemetry/core", "HttpTraceContext")
+  @JSImport("@opentelemetry/core", "RPCType")
   @js.native
-  class HttpTraceContext ()
-    extends typings.opentelemetryCore.httpTraceContextMod.HttpTraceContext
-  
-  @JSImport("@opentelemetry/core", "LogLevel")
-  @js.native
-  object LogLevel extends StObject {
+  object RPCType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryCore.typesMod.LogLevel & Double] = js.native
+    def apply(value: String): js.UndefOr[typings.opentelemetryCore.rpcMetadataMod.RPCType & String] = js.native
     
-    /* 3 */ val DEBUG: typings.opentelemetryCore.typesMod.LogLevel.DEBUG & Double = js.native
-    
-    /* 0 */ val ERROR: typings.opentelemetryCore.typesMod.LogLevel.ERROR & Double = js.native
-    
-    /* 2 */ val INFO: typings.opentelemetryCore.typesMod.LogLevel.INFO & Double = js.native
-    
-    /* 1 */ val WARN: typings.opentelemetryCore.typesMod.LogLevel.WARN & Double = js.native
-  }
-  
-  @JSImport("@opentelemetry/core", "MAX_NAME_VALUE_PAIRS")
-  @js.native
-  val MAX_NAME_VALUE_PAIRS: /* 180 */ Double = js.native
-  
-  @JSImport("@opentelemetry/core", "MAX_PER_NAME_VALUE_PAIRS")
-  @js.native
-  val MAX_PER_NAME_VALUE_PAIRS: /* 4096 */ Double = js.native
-  
-  @JSImport("@opentelemetry/core", "MAX_TOTAL_LENGTH")
-  @js.native
-  val MAX_TOTAL_LENGTH: /* 8192 */ Double = js.native
-  
-  @JSImport("@opentelemetry/core", "NoRecordingSpan")
-  @js.native
-  class NoRecordingSpan protected ()
-    extends typings.opentelemetryCore.noRecordingSpanMod.NoRecordingSpan {
-    def this(spanContext: SpanContext) = this()
-  }
-  
-  @JSImport("@opentelemetry/core", "NoopLogger")
-  @js.native
-  class NoopLogger ()
-    extends typings.opentelemetryCore.noopLoggerMod.NoopLogger
-  
-  @JSImport("@opentelemetry/core", "PARENT_SPAN_ID_KEY")
-  @js.native
-  val PARENT_SPAN_ID_KEY: js.Symbol = js.native
-  
-  @JSImport("@opentelemetry/core", "ParentOrElseSampler")
-  @js.native
-  class ParentOrElseSampler protected ()
-    extends typings.opentelemetryCore.parentOrElseSamplerMod.ParentOrElseSampler {
-    def this(_delegateSampler: Sampler) = this()
-  }
-  
-  @JSImport("@opentelemetry/core", "ProbabilitySampler")
-  @js.native
-  class ProbabilitySampler ()
-    extends typings.opentelemetryCore.probabilitySamplerMod.ProbabilitySampler {
-    def this(_probability: Double) = this()
+    /* "http" */ val HTTP: typings.opentelemetryCore.rpcMetadataMod.RPCType.HTTP & String = js.native
   }
   
   @JSImport("@opentelemetry/core", "RandomIdGenerator")
   @js.native
-  class RandomIdGenerator ()
+  open class RandomIdGenerator ()
     extends typings.opentelemetryCore.platformMod.RandomIdGenerator
-  
-  object SDK_INFO {
-    
-    @JSImport("@opentelemetry/core", "SDK_INFO")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@opentelemetry/core", "SDK_INFO.LANGUAGE")
-    @js.native
-    def LANGUAGE: String = js.native
-    inline def LANGUAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LANGUAGE")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@opentelemetry/core", "SDK_INFO.NAME")
-    @js.native
-    def NAME: String = js.native
-    inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@opentelemetry/core", "SDK_INFO.RUNTIME")
-    @js.native
-    def RUNTIME: String = js.native
-    inline def RUNTIME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNTIME")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@opentelemetry/core", "SDK_INFO.VERSION")
-    @js.native
-    def VERSION: String = js.native
-    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("@opentelemetry/core", "SUPPRESS_INSTRUMENTATION_KEY")
-  @js.native
-  val SUPPRESS_INSTRUMENTATION_KEY: js.Symbol = js.native
   
   @JSImport("@opentelemetry/core", "TRACE_PARENT_HEADER")
   @js.native
@@ -203,46 +125,83 @@ object mod {
   @js.native
   val TRACE_STATE_HEADER: /* "tracestate" */ String = js.native
   
+  @JSImport("@opentelemetry/core", "TraceIdRatioBasedSampler")
+  @js.native
+  open class TraceIdRatioBasedSampler ()
+    extends typings.opentelemetryCore.traceIdRatioBasedSamplerMod.TraceIdRatioBasedSampler {
+    def this(_ratio: Double) = this()
+  }
+  
   @JSImport("@opentelemetry/core", "TraceState")
   @js.native
-  class TraceState ()
+  open class TraceState ()
     extends typings.opentelemetryCore.traceStateMod.TraceState {
     def this(rawTraceState: String) = this()
   }
   
+  @JSImport("@opentelemetry/core", "TracesSamplerValues")
+  @js.native
+  object TracesSamplerValues extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.opentelemetryCore.samplingMod.TracesSamplerValues & String] = js.native
+    
+    /* "always_off" */ val AlwaysOff: typings.opentelemetryCore.samplingMod.TracesSamplerValues.AlwaysOff & String = js.native
+    
+    /* "always_on" */ val AlwaysOn: typings.opentelemetryCore.samplingMod.TracesSamplerValues.AlwaysOn & String = js.native
+    
+    /* "parentbased_always_off" */ val ParentBasedAlwaysOff: typings.opentelemetryCore.samplingMod.TracesSamplerValues.ParentBasedAlwaysOff & String = js.native
+    
+    /* "parentbased_always_on" */ val ParentBasedAlwaysOn: typings.opentelemetryCore.samplingMod.TracesSamplerValues.ParentBasedAlwaysOn & String = js.native
+    
+    /* "parentbased_traceidratio" */ val ParentBasedTraceIdRatio: typings.opentelemetryCore.samplingMod.TracesSamplerValues.ParentBasedTraceIdRatio & String = js.native
+    
+    /* "traceidratio" */ val TraceIdRatio: typings.opentelemetryCore.samplingMod.TracesSamplerValues.TraceIdRatio & String = js.native
+  }
+  
   @JSImport("@opentelemetry/core", "VERSION")
   @js.native
-  val VERSION: /* "0.11.0" */ String = js.native
+  val VERSION: /* "1.7.0" */ String = js.native
   
-  @JSImport("@opentelemetry/core", "X_B3_FLAGS")
+  @JSImport("@opentelemetry/core", "W3CBaggagePropagator")
   @js.native
-  val X_B3_FLAGS: /* "x-b3-flags" */ String = js.native
+  open class W3CBaggagePropagator ()
+    extends typings.opentelemetryCore.w3CBaggagePropagatorMod.W3CBaggagePropagator
   
-  @JSImport("@opentelemetry/core", "X_B3_PARENT_SPAN_ID")
+  @JSImport("@opentelemetry/core", "W3CTraceContextPropagator")
   @js.native
-  val X_B3_PARENT_SPAN_ID: /* "x-b3-parentspanid" */ String = js.native
+  open class W3CTraceContextPropagator ()
+    extends typings.opentelemetryCore.w3CTraceContextPropagatorMod.W3CTraceContextPropagator
   
-  @JSImport("@opentelemetry/core", "X_B3_SAMPLED")
+  object baggageUtils {
+    
+    @JSImport("@opentelemetry/core", "baggageUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getKeyPairs(baggage: Baggage): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyPairs")(baggage.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def parseKeyPairsIntoRecord(): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeyPairsIntoRecord")().asInstanceOf[Record[String, String]]
+    inline def parseKeyPairsIntoRecord(value: String): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeyPairsIntoRecord")(value.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+    
+    inline def parsePairKeyValue(entry: String): js.UndefOr[ParsedBaggageKeyValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePairKeyValue")(entry.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ParsedBaggageKeyValue]]
+    
+    inline def serializeKeyPairs(keyPairs: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeKeyPairs")(keyPairs.asInstanceOf[js.Any]).asInstanceOf[String]
+  }
+  
+  inline def deleteRPCMetadata(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRPCMetadata")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
+  
+  inline def getEnv(): Required[ENVIRONMENT] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[Required[ENVIRONMENT]]
+  
+  inline def getEnvWithoutDefaults(): ENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvWithoutDefaults")().asInstanceOf[ENVIRONMENT]
+  
+  inline def getRPCMetadata(context: Context): js.UndefOr[RPCMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRPCMetadata")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[RPCMetadata]]
+  
+  inline def globalErrorHandler(ex: Exception): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("globalErrorHandler")(ex.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("@opentelemetry/core", "_globalThis")
   @js.native
-  val X_B3_SAMPLED: /* "x-b3-sampled" */ String = js.native
-  
-  @JSImport("@opentelemetry/core", "X_B3_SPAN_ID")
-  @js.native
-  val X_B3_SPAN_ID: /* "x-b3-spanid" */ String = js.native
-  
-  @JSImport("@opentelemetry/core", "X_B3_TRACE_ID")
-  @js.native
-  val X_B3_TRACE_ID: /* "x-b3-traceid" */ String = js.native
-  
-  inline def getActiveSpan(context: Context): js.UndefOr[Span] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveSpan")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Span]]
-  
-  inline def getCorrelationContext(context: Context): js.UndefOr[CorrelationContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCorrelationContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CorrelationContext]]
-  
-  inline def getEnv(): RequiredENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[RequiredENVIRONMENT]
-  
-  inline def getExtractedSpanContext(context: Context): js.UndefOr[SpanContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtractedSpanContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SpanContext]]
-  
-  inline def getParentSpanContext(context: Context): js.UndefOr[SpanContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParentSpanContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SpanContext]]
+  val globalThis: /* globalThis */ Any = js.native
   
   inline def hexToBase64(hexStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToBase64")(hexStr.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -251,49 +210,55 @@ object mod {
   
   inline def hrTimeDuration(startTime: HrTime, endTime: HrTime): HrTime = (^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeDuration")(startTime.asInstanceOf[js.Any], endTime.asInstanceOf[js.Any])).asInstanceOf[HrTime]
   
-  inline def hrTimeToMicroseconds(hrTime: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToMicroseconds")(hrTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def hrTimeToMicroseconds(time: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToMicroseconds")(time.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def hrTimeToMilliseconds(hrTime: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToMilliseconds")(hrTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def hrTimeToMilliseconds(time: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToMilliseconds")(time.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def hrTimeToNanoseconds(hrTime: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToNanoseconds")(hrTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def hrTimeToNanoseconds(time: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToNanoseconds")(time.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def hrTimeToTimeStamp(hrTime: HrTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToTimeStamp")(hrTime.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hrTimeToTimeStamp(time: HrTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToTimeStamp")(time.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def invokeGlobalShutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_invokeGlobalShutdown")().asInstanceOf[Unit]
+  inline def isAttributeKey(key: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAttributeKey")(key.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  inline def isInstrumentationSuppressed(context: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstrumentationSuppressed")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAttributeValue(`val`: Any): /* is @opentelemetry/api.@opentelemetry/api/build/src/trace/attributes.SpanAttributeValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAttributeValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is @opentelemetry/api.@opentelemetry/api/build/src/trace/attributes.SpanAttributeValue */ Boolean]
   
-  inline def isTimeInput(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInput")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTimeInput(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInput")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isTimeInputHrTime(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInputHrTime")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTimeInputHrTime(value: Any): /* is @opentelemetry/api.@opentelemetry/api/build/src/common/Time.HrTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInputHrTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @opentelemetry/api.@opentelemetry/api/build/src/common/Time.HrTime */ Boolean]
+  
+  inline def isTracingSuppressed(context: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTracingSuppressed")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isUrlIgnored(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlIgnored")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isUrlIgnored(url: String, ignoredUrls: js.Array[String | RegExp]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUrlIgnored")(url.asInstanceOf[js.Any], ignoredUrls.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isUrlIgnored(url: String, ignoredUrls: js.Array[String | js.RegExp]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUrlIgnored")(url.asInstanceOf[js.Any], ignoredUrls.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isWrapped(func: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWrapped")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWrapped(func: Any): /* is @opentelemetry/core.@opentelemetry/core/build/src/common/types.ShimWrapped */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWrapped")(func.asInstanceOf[js.Any]).asInstanceOf[/* is @opentelemetry/core.@opentelemetry/core/build/src/common/types.ShimWrapped */ Boolean]
   
-  inline def notifyOnGlobalShutdown(cb: js.Function0[Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyOnGlobalShutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def loggingErrorHandler(): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("loggingErrorHandler")().asInstanceOf[ErrorHandler]
+  
+  inline def merge(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   @JSImport("@opentelemetry/core", "otperformance")
   @js.native
   val otperformance: Performance_ = js.native
   
+  inline def parseEnvironment(values: RAW_ENVIRONMENT): ENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEnvironment")(values.asInstanceOf[js.Any]).asInstanceOf[ENVIRONMENT]
+  
   inline def parseTraceParent(traceParent: String): SpanContext | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTraceParent")(traceParent.asInstanceOf[js.Any]).asInstanceOf[SpanContext | Null]
   
-  inline def setActiveSpan(context: Context, span: Span): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setActiveSpan")(context.asInstanceOf[js.Any], span.asInstanceOf[js.Any])).asInstanceOf[Context]
+  inline def sanitizeAttributes(attributes: Any): SpanAttributes = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeAttributes")(attributes.asInstanceOf[js.Any]).asInstanceOf[SpanAttributes]
   
-  inline def setCorrelationContext(context: Context, correlationContext: CorrelationContext): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setCorrelationContext")(context.asInstanceOf[js.Any], correlationContext.asInstanceOf[js.Any])).asInstanceOf[Context]
+  inline def setGlobalErrorHandler(handler: ErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalErrorHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setExtractedSpanContext(context: Context, spanContext: SpanContext): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtractedSpanContext")(context.asInstanceOf[js.Any], spanContext.asInstanceOf[js.Any])).asInstanceOf[Context]
+  inline def setRPCMetadata(context: Context, meta: RPCMetadata): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setRPCMetadata")(context.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[Context]
   
-  inline def suppressInstrumentation(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressInstrumentation")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def suppressTracing(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressTracing")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
   
   inline def timeInputToHrTime(time: TimeInput): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timeInputToHrTime")(time.asInstanceOf[js.Any]).asInstanceOf[HrTime]
   
   inline def unrefTimer(timer: Timer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unrefTimer")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def unsuppressInstrumentation(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("unsuppressInstrumentation")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def unsuppressTracing(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("unsuppressTracing")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
   
   inline def urlMatches(url: String, urlToMatch: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("urlMatches")(url.asInstanceOf[js.Any], urlToMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def urlMatches(url: String, urlToMatch: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("urlMatches")(url.asInstanceOf[js.Any], urlToMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def urlMatches(url: String, urlToMatch: js.RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("urlMatches")(url.asInstanceOf[js.Any], urlToMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

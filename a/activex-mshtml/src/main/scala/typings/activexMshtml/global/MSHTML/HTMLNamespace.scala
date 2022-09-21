@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLNamespace")
 @js.native
-/* private */ class HTMLNamespace ()
+/* private */ open class HTMLNamespace ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLNamespace {
   
@@ -15,13 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotHTMLNamespace_typekey: typings.activexMshtml.MSHTML.HTMLNamespace = js.native
   
   /* CompleteClass */
-  override def attachEvent(event: String, pdisp: js.Any): Boolean = js.native
+  override def attachEvent(event: String, pdisp: Any): Boolean = js.native
   
   /* CompleteClass */
-  override val constructor: js.Any = js.native
+  override val constructor: Any = js.native
   
   /* CompleteClass */
-  override def detachEvent(event: String, pdisp: js.Any): Unit = js.native
+  override def detachEvent(event: String, pdisp: Any): Unit = js.native
   
   /* CompleteClass */
   override def doImport(bstrImplementationUrl: String): Unit = js.native
@@ -30,13 +30,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val name: String = js.native
   
   /* CompleteClass */
-  var onreadystatechange: js.Any = js.native
+  var onreadystatechange: Any = js.native
   
   /* CompleteClass */
-  override val readyState: js.Any = js.native
+  override val readyState: Any = js.native
   
   /* CompleteClass */
-  override val tagNames: js.Any = js.native
+  override val tagNames: Any = js.native
   
   /* CompleteClass */
   override val urn: String = js.native

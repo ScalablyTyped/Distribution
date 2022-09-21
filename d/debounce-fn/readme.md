@@ -1,7 +1,7 @@
 
 # Scala.js typings for debounce-fn
 
-Typings are for version 4.0.0
+Typings are for version 5.1.2
 
 ## Library description:
 Debounce a function
@@ -10,15 +10,12 @@ Debounce a function
 | ------------------ | :-------------: |
 | Full name          | debounce-fn |
 | Keywords           | debounce, function, debouncer, fn, func, throttle, delay, invoked |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 3205871 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1382447.6666666667 |
+| # stars            | 110.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/debounce-fn#readme)
-- [Bugs](https://github.com/sindresorhus/debounce-fn/issues)
-- [Repository](https://github.com/sindresorhus/debounce-fn)
 - [Npm](https://www.npmjs.com/package/debounce-fn)
     
 

@@ -26,7 +26,7 @@ trait MailMessage extends StObject {
   
   def GoToPrevious(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reply(): Unit
   
@@ -50,7 +50,7 @@ object MailMessage {
     Forward: () => Unit,
     GoToNext: () => Unit,
     GoToPrevious: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Reply: () => Unit,
     ReplyAll: () => Unit,
     ToggleHeader: () => Unit,
@@ -83,7 +83,7 @@ object MailMessage {
     
     inline def setGoToPrevious(value: () => Unit): Self = StObject.set(x, "GoToPrevious", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReply(value: () => Unit): Self = StObject.set(x, "Reply", js.Any.fromFunction0(value))
     

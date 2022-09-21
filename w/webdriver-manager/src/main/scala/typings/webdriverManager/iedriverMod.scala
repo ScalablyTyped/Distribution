@@ -10,7 +10,7 @@ object iedriverMod {
   
   @JSImport("webdriver-manager/built/lib/binaries/iedriver", "IEDriver")
   @js.native
-  class IEDriver () extends Binary {
+  open class IEDriver () extends Binary {
     def this(opt_alternativeCdn: String) = this()
   }
   /* static members */

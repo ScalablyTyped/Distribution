@@ -16,7 +16,7 @@ object mod {
   def testCase: ITestCase = js.native
   inline def testCase_=(x: ITestCase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("testCase")(x.asInstanceOf[js.Any])
   
-  type ICallbackFunction = js.Function1[/* err */ js.UndefOr[js.Any], Unit]
+  type ICallbackFunction = js.Function1[/* err */ js.UndefOr[Any], Unit]
   
   type ITestBody = js.Function1[/* callback */ Test, Unit]
   
@@ -56,56 +56,56 @@ object mod {
   @js.native
   trait Test extends StObject {
     
-    def assert(value: js.Any, message: String): Unit = js.native
+    def assert(value: Any, message: String): Unit = js.native
     
-    def deepEqual(actual: js.Any, expected: js.Any): Unit = js.native
-    def deepEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+    def deepEqual(actual: Any, expected: Any): Unit = js.native
+    def deepEqual(actual: Any, expected: Any, message: String): Unit = js.native
     
-    def doesNotThrow(block: js.Any): Unit = js.native
-    def doesNotThrow(block: js.Any, error: js.Any): Unit = js.native
-    def doesNotThrow(block: js.Any, error: js.Any, message: String): Unit = js.native
-    def doesNotThrow(block: js.Any, error: Unit, message: String): Unit = js.native
+    def doesNotThrow(block: Any): Unit = js.native
+    def doesNotThrow(block: Any, error: Any): Unit = js.native
+    def doesNotThrow(block: Any, error: Any, message: String): Unit = js.native
+    def doesNotThrow(block: Any, error: Unit, message: String): Unit = js.native
     
     def done(): Unit = js.native
-    def done(err: js.Any): Unit = js.native
+    def done(err: Any): Unit = js.native
     @JSName("done")
     var done_Original: ICallbackFunction = js.native
     
-    def equal(actual: js.Any, expected: js.Any): Unit = js.native
-    def equal(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+    def equal(actual: Any, expected: Any): Unit = js.native
+    def equal(actual: Any, expected: Any, message: String): Unit = js.native
     
     //assertion wrappers
-    def equals(actual: js.Any, expected: js.Any): Unit = js.native
-    def equals(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+    def equals(actual: Any, expected: Any): Unit = js.native
+    def equals(actual: Any, expected: Any, message: String): Unit = js.native
     
     def expect(num: Double): Unit = js.native
     
     //assersions from node assert module
-    def fail(actual: js.Any, expected: js.Any, message: String, operator: String): Unit = js.native
+    def fail(actual: Any, expected: Any, message: String, operator: String): Unit = js.native
     
-    def ifError(value: js.Any): Unit = js.native
+    def ifError(value: Any): Unit = js.native
     
-    def notDeepEqual(actual: js.Any, expected: js.Any): Unit = js.native
-    def notDeepEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+    def notDeepEqual(actual: Any, expected: Any): Unit = js.native
+    def notDeepEqual(actual: Any, expected: Any, message: String): Unit = js.native
     
-    def notEqual(actual: js.Any, expected: js.Any): Unit = js.native
-    def notEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+    def notEqual(actual: Any, expected: Any): Unit = js.native
+    def notEqual(actual: Any, expected: Any, message: String): Unit = js.native
     
-    def notStrictEqual(actual: js.Any, expected: js.Any): Unit = js.native
-    def notStrictEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+    def notStrictEqual(actual: Any, expected: Any): Unit = js.native
+    def notStrictEqual(actual: Any, expected: Any, message: String): Unit = js.native
     
-    def ok(value: js.Any): Unit = js.native
-    def ok(value: js.Any, message: String): Unit = js.native
+    def ok(value: Any): Unit = js.native
+    def ok(value: Any, message: String): Unit = js.native
     
-    def same(actual: js.Any, expected: js.Any): Unit = js.native
-    def same(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+    def same(actual: Any, expected: Any): Unit = js.native
+    def same(actual: Any, expected: Any, message: String): Unit = js.native
     
-    def strictEqual(actual: js.Any, expected: js.Any): Unit = js.native
-    def strictEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
+    def strictEqual(actual: Any, expected: Any): Unit = js.native
+    def strictEqual(actual: Any, expected: Any, message: String): Unit = js.native
     
-    def throws(block: js.Any): Unit = js.native
-    def throws(block: js.Any, error: js.Any): Unit = js.native
-    def throws(block: js.Any, error: js.Any, message: String): Unit = js.native
-    def throws(block: js.Any, error: Unit, message: String): Unit = js.native
+    def throws(block: Any): Unit = js.native
+    def throws(block: Any, error: Any): Unit = js.native
+    def throws(block: Any, error: Any, message: String): Unit = js.native
+    def throws(block: Any, error: Unit, message: String): Unit = js.native
   }
 }

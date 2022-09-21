@@ -13,12 +13,12 @@ object viewport {
     /** [Method] Returns the value of translatable
       * @returns Object
       */
-    var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTranslatable: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of translatable
       * @param translatable Object The new value.
       */
-    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IAndroid {
     
@@ -29,11 +29,11 @@ object viewport {
     
     extension [Self <: IAndroid](x: Self) {
       
-      inline def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+      inline def setGetTranslatable(value: () => Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
       inline def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)
       
-      inline def setSetTranslatable(value: /* translatable */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
+      inline def setSetTranslatable(value: /* translatable */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
       
       inline def setSetTranslatableUndefined: Self = StObject.set(x, "setTranslatable", js.undefined)
     }
@@ -54,7 +54,7 @@ object viewport {
     /** [Method] Returns the value of layout
       * @returns Object/String
       */
-    var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getLayout: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the current orientation
       * @returns String portrait or landscape
@@ -89,7 +89,7 @@ object viewport {
     /** [Method] Hides all visible menus
       * @param animation Object
       */
-    var hideAllMenus: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var hideAllMenus: js.UndefOr[js.Function1[/* animation */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Hides a menu specified by the menu s side
       * @param side String The side which the menu is placed.
@@ -131,9 +131,7 @@ object viewport {
       * @param menu Ext.Menu The menu to assign to the viewport
       * @param config Object The configuration for the menu.
       */
-    var setMenu: js.UndefOr[
-        js.Function2[/* menu */ js.UndefOr[IMenu], /* config */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var setMenu: js.UndefOr[js.Function2[/* menu */ js.UndefOr[IMenu], /* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of preventPanning
       * @param preventPanning Boolean The new value.
@@ -177,7 +175,7 @@ object viewport {
       
       inline def setGetAutoMaximizeUndefined: Self = StObject.set(x, "getAutoMaximize", js.undefined)
       
-      inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
       inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
       
@@ -205,7 +203,7 @@ object viewport {
       
       inline def setGetWindowWidthUndefined: Self = StObject.set(x, "getWindowWidth", js.undefined)
       
-      inline def setHideAllMenus(value: /* animation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "hideAllMenus", js.Any.fromFunction1(value))
+      inline def setHideAllMenus(value: /* animation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "hideAllMenus", js.Any.fromFunction1(value))
       
       inline def setHideAllMenusUndefined: Self = StObject.set(x, "hideAllMenus", js.undefined)
       
@@ -239,7 +237,7 @@ object viewport {
       
       inline def setSetAutoMaximizeUndefined: Self = StObject.set(x, "setAutoMaximize", js.undefined)
       
-      inline def setSetMenu(value: (/* menu */ js.UndefOr[IMenu], /* config */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setMenu", js.Any.fromFunction2(value))
+      inline def setSetMenu(value: (/* menu */ js.UndefOr[IMenu], /* config */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setMenu", js.Any.fromFunction2(value))
       
       inline def setSetMenuUndefined: Self = StObject.set(x, "setMenu", js.undefined)
       
@@ -276,12 +274,12 @@ object viewport {
     /** [Method] Returns the value of translatable
       * @returns Object
       */
-    var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTranslatable: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of translatable
       * @param translatable Object The new value.
       */
-    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IWP {
     
@@ -292,11 +290,11 @@ object viewport {
     
     extension [Self <: IWP](x: Self) {
       
-      inline def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+      inline def setGetTranslatable(value: () => Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
       inline def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)
       
-      inline def setSetTranslatable(value: /* translatable */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
+      inline def setSetTranslatable(value: /* translatable */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
       
       inline def setSetTranslatableUndefined: Self = StObject.set(x, "setTranslatable", js.undefined)
     }
@@ -309,12 +307,12 @@ object viewport {
     /** [Method] Returns the value of translatable
       * @returns Object
       */
-    var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTranslatable: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of translatable
       * @param translatable Object The new value.
       */
-    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IWindowsPhone {
     
@@ -325,11 +323,11 @@ object viewport {
     
     extension [Self <: IWindowsPhone](x: Self) {
       
-      inline def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+      inline def setGetTranslatable(value: () => Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
       inline def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)
       
-      inline def setSetTranslatable(value: /* translatable */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
+      inline def setSetTranslatable(value: /* translatable */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
       
       inline def setSetTranslatableUndefined: Self = StObject.set(x, "setTranslatable", js.undefined)
     }

@@ -10,10 +10,10 @@ MCrypt bindings
 | ------------------ | :-------------: |
 | Full name          | mcrypt |
 | Keywords           | mcrypt, crypto |
-| # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 118428 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12532.0 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/tugrul/node-mcrypt)

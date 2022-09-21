@@ -10,10 +10,10 @@ Find, read and parse the package.json of the parent module
 | ------------------ | :-------------: |
 | Full name          | parent-package-json |
 | Keywords           | parent, package.json, find, search, parse, read |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 99004 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 24749.666666666668 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/maxrimue/parent-package-json#readme)

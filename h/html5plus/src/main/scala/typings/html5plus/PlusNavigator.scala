@@ -59,9 +59,9 @@ trait PlusNavigator extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def createShortcut(): Unit = js.native
-  def createShortcut(options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createShortcut(options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def createShortcut(options: PlusNavigatorShortcutOptions): Unit = js.native
-  def createShortcut(options: PlusNavigatorShortcutOptions, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createShortcut(options: PlusNavigatorShortcutOptions, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 获取Cookie值
@@ -116,9 +116,9 @@ trait PlusNavigator extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def hasShortcut(): Unit = js.native
-  def hasShortcut(options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def hasShortcut(options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def hasShortcut(options: PlusNavigatorShortcutOptions): Unit = js.native
-  def hasShortcut(options: PlusNavigatorShortcutOptions, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def hasShortcut(options: PlusNavigatorShortcutOptions, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 查询应用启动界面是否已关闭

@@ -13,13 +13,13 @@ trait IField
   var allowNull: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var convert: js.UndefOr[js.Any] = js.undefined
+  var convert: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var dateFormat: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of allowNull
     * @returns Boolean
@@ -34,7 +34,7 @@ trait IField
   /** [Method] Returns the value of convert
     * @returns Function
     */
-  var getConvert: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getConvert: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of dateFormat
     * @returns String
@@ -44,22 +44,22 @@ trait IField
   /** [Method] Returns the value of decode
     * @returns Object
     */
-  var getDecode: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDecode: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of defaultValue
     * @returns Object
     */
-  var getDefaultValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDefaultValue: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of encode
     * @returns Object
     */
-  var getEncode: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getEncode: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of mapping
     * @returns String/Number
     */
-  var getMapping: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getMapping: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of name
     * @returns String
@@ -79,15 +79,15 @@ trait IField
   /** [Method] Returns the value of sortType
     * @returns Function
     */
-  var getSortType: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSortType: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of type
     * @returns String/Object
     */
-  var getType: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getType: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (String/Number) */
-  var mapping: js.UndefOr[js.Any] = js.undefined
+  var mapping: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var name: js.UndefOr[String] = js.undefined
@@ -108,7 +108,7 @@ trait IField
   /** [Method] Sets the value of convert
     * @param convert Function The new value.
     */
-  var setConvert: js.UndefOr[js.Function1[/* convert */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setConvert: js.UndefOr[js.Function1[/* convert */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of dateFormat
     * @param dateFormat String The new value.
@@ -118,22 +118,22 @@ trait IField
   /** [Method] Sets the value of decode
     * @param decode Object The new value.
     */
-  var setDecode: js.UndefOr[js.Function1[/* decode */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDecode: js.UndefOr[js.Function1[/* decode */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultValue
     * @param defaultValue Object The new value.
     */
-  var setDefaultValue: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDefaultValue: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of encode
     * @param encode Object The new value.
     */
-  var setEncode: js.UndefOr[js.Function1[/* encode */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setEncode: js.UndefOr[js.Function1[/* encode */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of mapping
     * @param mapping String/Number The new value.
     */
-  var setMapping: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMapping: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of name
     * @param name String The new value.
@@ -153,21 +153,21 @@ trait IField
   /** [Method] Sets the value of sortType
     * @param sortType Function The new value.
     */
-  var setSortType: js.UndefOr[js.Function1[/* sortType */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setSortType: js.UndefOr[js.Function1[/* sortType */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of type
     * @param type String/Object The new value.
     */
-  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var sortDir: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Function) */
-  var sortType: js.UndefOr[js.Any] = js.undefined
+  var sortType: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var useNull: js.UndefOr[Boolean] = js.undefined
@@ -185,7 +185,7 @@ object IField {
     
     inline def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
     
-    inline def setConvert(value: js.Any): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+    inline def setConvert(value: Any): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
@@ -193,7 +193,7 @@ object IField {
     
     inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -205,7 +205,7 @@ object IField {
     
     inline def setGetBubbleEventsUndefined: Self = StObject.set(x, "getBubbleEvents", js.undefined)
     
-    inline def setGetConvert(value: () => js.Any): Self = StObject.set(x, "getConvert", js.Any.fromFunction0(value))
+    inline def setGetConvert(value: () => Any): Self = StObject.set(x, "getConvert", js.Any.fromFunction0(value))
     
     inline def setGetConvertUndefined: Self = StObject.set(x, "getConvert", js.undefined)
     
@@ -213,19 +213,19 @@ object IField {
     
     inline def setGetDateFormatUndefined: Self = StObject.set(x, "getDateFormat", js.undefined)
     
-    inline def setGetDecode(value: () => js.Any): Self = StObject.set(x, "getDecode", js.Any.fromFunction0(value))
+    inline def setGetDecode(value: () => Any): Self = StObject.set(x, "getDecode", js.Any.fromFunction0(value))
     
     inline def setGetDecodeUndefined: Self = StObject.set(x, "getDecode", js.undefined)
     
-    inline def setGetDefaultValue(value: () => js.Any): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
+    inline def setGetDefaultValue(value: () => Any): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
     
     inline def setGetDefaultValueUndefined: Self = StObject.set(x, "getDefaultValue", js.undefined)
     
-    inline def setGetEncode(value: () => js.Any): Self = StObject.set(x, "getEncode", js.Any.fromFunction0(value))
+    inline def setGetEncode(value: () => Any): Self = StObject.set(x, "getEncode", js.Any.fromFunction0(value))
     
     inline def setGetEncodeUndefined: Self = StObject.set(x, "getEncode", js.undefined)
     
-    inline def setGetMapping(value: () => js.Any): Self = StObject.set(x, "getMapping", js.Any.fromFunction0(value))
+    inline def setGetMapping(value: () => Any): Self = StObject.set(x, "getMapping", js.Any.fromFunction0(value))
     
     inline def setGetMappingUndefined: Self = StObject.set(x, "getMapping", js.undefined)
     
@@ -241,15 +241,15 @@ object IField {
     
     inline def setGetSortDirUndefined: Self = StObject.set(x, "getSortDir", js.undefined)
     
-    inline def setGetSortType(value: () => js.Any): Self = StObject.set(x, "getSortType", js.Any.fromFunction0(value))
+    inline def setGetSortType(value: () => Any): Self = StObject.set(x, "getSortType", js.Any.fromFunction0(value))
     
     inline def setGetSortTypeUndefined: Self = StObject.set(x, "getSortType", js.undefined)
     
-    inline def setGetType(value: () => js.Any): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => Any): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     inline def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)
     
-    inline def setMapping(value: js.Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
     inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
@@ -269,7 +269,7 @@ object IField {
     
     inline def setSetBubbleEventsUndefined: Self = StObject.set(x, "setBubbleEvents", js.undefined)
     
-    inline def setSetConvert(value: /* convert */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setConvert", js.Any.fromFunction1(value))
+    inline def setSetConvert(value: /* convert */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setConvert", js.Any.fromFunction1(value))
     
     inline def setSetConvertUndefined: Self = StObject.set(x, "setConvert", js.undefined)
     
@@ -277,19 +277,19 @@ object IField {
     
     inline def setSetDateFormatUndefined: Self = StObject.set(x, "setDateFormat", js.undefined)
     
-    inline def setSetDecode(value: /* decode */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDecode", js.Any.fromFunction1(value))
+    inline def setSetDecode(value: /* decode */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDecode", js.Any.fromFunction1(value))
     
     inline def setSetDecodeUndefined: Self = StObject.set(x, "setDecode", js.undefined)
     
-    inline def setSetDefaultValue(value: /* defaultValue */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaultValue", js.Any.fromFunction1(value))
+    inline def setSetDefaultValue(value: /* defaultValue */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDefaultValue", js.Any.fromFunction1(value))
     
     inline def setSetDefaultValueUndefined: Self = StObject.set(x, "setDefaultValue", js.undefined)
     
-    inline def setSetEncode(value: /* encode */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEncode", js.Any.fromFunction1(value))
+    inline def setSetEncode(value: /* encode */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setEncode", js.Any.fromFunction1(value))
     
     inline def setSetEncodeUndefined: Self = StObject.set(x, "setEncode", js.undefined)
     
-    inline def setSetMapping(value: /* mapping */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMapping", js.Any.fromFunction1(value))
+    inline def setSetMapping(value: /* mapping */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMapping", js.Any.fromFunction1(value))
     
     inline def setSetMappingUndefined: Self = StObject.set(x, "setMapping", js.undefined)
     
@@ -305,11 +305,11 @@ object IField {
     
     inline def setSetSortDirUndefined: Self = StObject.set(x, "setSortDir", js.undefined)
     
-    inline def setSetSortType(value: /* sortType */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSortType", js.Any.fromFunction1(value))
+    inline def setSetSortType(value: /* sortType */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSortType", js.Any.fromFunction1(value))
     
     inline def setSetSortTypeUndefined: Self = StObject.set(x, "setSortType", js.undefined)
     
-    inline def setSetType(value: /* type */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+    inline def setSetType(value: /* type */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
     
     inline def setSetTypeUndefined: Self = StObject.set(x, "setType", js.undefined)
     
@@ -317,11 +317,11 @@ object IField {
     
     inline def setSortDirUndefined: Self = StObject.set(x, "sortDir", js.undefined)
     
-    inline def setSortType(value: js.Any): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
+    inline def setSortType(value: Any): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
     
     inline def setSortTypeUndefined: Self = StObject.set(x, "sortType", js.undefined)
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

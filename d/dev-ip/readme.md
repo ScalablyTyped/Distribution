@@ -10,10 +10,10 @@ Find a suitable IP host to view local websites on.
 | ------------------ | :-------------: |
 | Full name          | dev-ip |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 24854549 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2581147.3333333335 |
+| # stars            | 117.0 |
 
 ## Links
 - [Homepage](https://github.com/shakyshane/dev-ip)

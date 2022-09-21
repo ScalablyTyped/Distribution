@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsonFormData.anon.FnCall
 import typings.std.Blob
-import typings.std.Date
 import typings.std.File
 import typings.std.FileList
 import typings.std.FormData
@@ -161,7 +160,7 @@ object mod extends Shortcut {
   
   trait ValidJSON
     extends StObject
-       with /* key */ StringDictionary[ValidJSON | ValidJSONValue | js.Array[ValidJSONValue] | FileList]
+       with /* key */ StringDictionary[ValidJSON | (js.Array[ValidJSON | ValidJSONValue]) | ValidJSONValue | FileList]
   object ValidJSON {
     
     inline def apply(): ValidJSON = {
@@ -170,7 +169,7 @@ object mod extends Shortcut {
     }
   }
   
-  type ValidJSONValue = js.UndefOr[String | Double | Boolean | File | Blob | Date | Null]
+  type ValidJSONValue = js.UndefOr[String | Double | Boolean | File | Blob | js.Date | Null]
   
   type _To = FormDataFormatter
   

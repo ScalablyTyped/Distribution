@@ -1,52 +1,11 @@
 package typings.nodeJose
 
 import typings.nodeJose.mod.JWK.KeyUse
-import typings.nodeJose.nodeJoseStrings.DEF
-import typings.nodeJose.nodeJoseStrings.compact
-import typings.nodeJose.nodeJoseStrings.flattened
-import typings.nodeJose.nodeJoseStrings.general
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait Alg extends StObject {
-    
-    var alg: js.UndefOr[String] = js.undefined
-    
-    var compact: js.UndefOr[Boolean] = js.undefined
-    
-    var fields: js.UndefOr[js.Object] = js.undefined
-    
-    var format: js.UndefOr[compact | flattened] = js.undefined
-  }
-  object Alg {
-    
-    inline def apply(): Alg = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Alg]
-    }
-    
-    extension [Self <: Alg](x: Self) {
-      
-      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
-      
-      inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
-      
-      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
-      
-      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
-      
-      inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
-      
-      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-      
-      inline def setFormat(value: compact | flattened): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
-    }
-  }
   
   trait Algorithms extends StObject {
     
@@ -54,7 +13,7 @@ object anon {
     
     var allowEmbeddedKey: js.UndefOr[Boolean] = js.undefined
     
-    var handlers: js.UndefOr[js.Any] = js.undefined
+    var handlers: js.UndefOr[Any] = js.undefined
   }
   object Algorithms {
     
@@ -69,13 +28,13 @@ object anon {
       
       inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value*))
       
       inline def setAllowEmbeddedKey(value: Boolean): Self = StObject.set(x, "allowEmbeddedKey", value.asInstanceOf[js.Any])
       
       inline def setAllowEmbeddedKeyUndefined: Self = StObject.set(x, "allowEmbeddedKey", js.undefined)
       
-      inline def setHandlers(value: js.Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
       inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     }
@@ -97,51 +56,6 @@ object anon {
       inline def setAllowEmbeddedKey(value: Boolean): Self = StObject.set(x, "allowEmbeddedKey", value.asInstanceOf[js.Any])
       
       inline def setAllowEmbeddedKeyUndefined: Self = StObject.set(x, "allowEmbeddedKey", js.undefined)
-    }
-  }
-  
-  trait ContentAlg extends StObject {
-    
-    var contentAlg: js.UndefOr[String] = js.undefined
-    
-    var fields: js.UndefOr[js.Object] = js.undefined
-    
-    var format: js.UndefOr[general | compact | flattened] = js.undefined
-    
-    var protect: js.UndefOr[String | js.Array[String]] = js.undefined
-    
-    var zip: js.UndefOr[Boolean | DEF] = js.undefined
-  }
-  object ContentAlg {
-    
-    inline def apply(): ContentAlg = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ContentAlg]
-    }
-    
-    extension [Self <: ContentAlg](x: Self) {
-      
-      inline def setContentAlg(value: String): Self = StObject.set(x, "contentAlg", value.asInstanceOf[js.Any])
-      
-      inline def setContentAlgUndefined: Self = StObject.set(x, "contentAlg", js.undefined)
-      
-      inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
-      
-      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-      
-      inline def setFormat(value: general | compact | flattened): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
-      
-      inline def setProtect(value: String | js.Array[String]): Self = StObject.set(x, "protect", value.asInstanceOf[js.Any])
-      
-      inline def setProtectUndefined: Self = StObject.set(x, "protect", js.undefined)
-      
-      inline def setProtectVarargs(value: String*): Self = StObject.set(x, "protect", js.Array(value :_*))
-      
-      inline def setZip(value: Boolean | DEF): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
-      
-      inline def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
     }
   }
   

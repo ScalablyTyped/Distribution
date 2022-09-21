@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLMediaElement")
 @js.native
-/* private */ class HTMLMediaElement ()
+/* private */ open class HTMLMediaElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLMediaElement

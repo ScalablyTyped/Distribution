@@ -24,6 +24,9 @@ trait EntityAspect extends StObject {
   def getKey(): EntityKey = js.native
   def getKey(forceRefresh: Boolean): EntityKey = js.native
   
+  def getPropertyValue(property: String): Any = js.native
+  def getPropertyValue(property: DataProperty): Any = js.native
+  
   def getValidationErrors(): js.Array[ValidationError] = js.native
   def getValidationErrors(property: String): js.Array[ValidationError] = js.native
   def getValidationErrors(property: IProperty): js.Array[ValidationError] = js.native
@@ -43,6 +46,8 @@ trait EntityAspect extends StObject {
   def loadNavigationProperty(navigationProperty: NavigationProperty, callback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: NavigationProperty, callback: js.Function, errorCallback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: NavigationProperty, callback: Unit, errorCallback: js.Function): js.Promise[QueryResult] = js.native
+  
+  def markNavigationPropertyAsLoaded(navigationProperty: String): Unit = js.native
   
   var originalValues: js.Object = js.native
   
@@ -70,11 +75,11 @@ trait EntityAspect extends StObject {
   def validateEntity(): Boolean = js.native
   
   def validateProperty(property: String): Boolean = js.native
-  def validateProperty(property: String, context: js.Any): Boolean = js.native
+  def validateProperty(property: String, context: Any): Boolean = js.native
   def validateProperty(property: DataProperty): Boolean = js.native
-  def validateProperty(property: DataProperty, context: js.Any): Boolean = js.native
+  def validateProperty(property: DataProperty, context: Any): Boolean = js.native
   def validateProperty(property: NavigationProperty): Boolean = js.native
-  def validateProperty(property: NavigationProperty, context: js.Any): Boolean = js.native
+  def validateProperty(property: NavigationProperty, context: Any): Boolean = js.native
   
   var validationErrorsChanged: ValidationErrorsChangedEvent = js.native
 }

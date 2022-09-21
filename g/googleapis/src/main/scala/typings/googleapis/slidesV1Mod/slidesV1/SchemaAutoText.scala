@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A TextElement kind that represents auto text.
-  */
 trait SchemaAutoText extends StObject {
   
   /**
     * The rendered content of this auto text, if available.
     */
-  var content: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The styling applied to this auto text.
@@ -22,7 +19,7 @@ trait SchemaAutoText extends StObject {
   /**
     * The type of this auto text.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAutoText {
   
@@ -35,6 +32,8 @@ object SchemaAutoText {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
+    inline def setContentNull: Self = StObject.set(x, "content", null)
+    
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setStyle(value: SchemaTextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
@@ -42,6 +41,8 @@ object SchemaAutoText {
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

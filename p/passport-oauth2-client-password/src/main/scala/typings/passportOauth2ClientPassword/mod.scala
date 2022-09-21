@@ -1,8 +1,7 @@
 package typings.passportOauth2ClientPassword
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +10,22 @@ object mod {
   
   @JSImport("passport-oauth2-client-password", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends StObject
        with typings.passport.mod.Strategy {
     def this(verify: VerifyFunction) = this()
     def this(options: StrategyOptionsWithRequestInterface, verify: VerifyFunctionWithRequest) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
   }
   
   trait StrategyOptionsWithRequestInterface extends StObject {
@@ -40,25 +48,21 @@ object mod {
   type VerifyFunction = js.Function3[
     /* clientId */ String, 
     /* clientSecret */ String, 
-    /* done */ js.Function3[
-      /* error */ js.Any, 
-      /* client */ js.UndefOr[js.Any], 
-      /* info */ js.UndefOr[js.Any], 
-      Unit
-    ], 
+    /* done */ js.Function3[/* error */ Any, /* client */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit], 
     Unit
   ]
   
   type VerifyFunctionWithRequest = js.Function4[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* clientId */ String, 
     /* clientSecret */ String, 
-    /* done */ js.Function3[
-      /* error */ js.Any, 
-      /* client */ js.UndefOr[js.Any], 
-      /* info */ js.UndefOr[js.Any], 
-      Unit
-    ], 
+    /* done */ js.Function3[/* error */ Any, /* client */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit], 
     Unit
   ]
 }

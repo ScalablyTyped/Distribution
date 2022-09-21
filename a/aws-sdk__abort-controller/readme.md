@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__abort-controller
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 A simple abort controller library
@@ -10,10 +10,10 @@ A simple abort controller library
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/abort-controller |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 3 |
-| # downloads        | 6970777 |
-| # stars            | 0 |
+| # releases         | 53 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5300574E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/abort-controller)

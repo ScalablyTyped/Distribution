@@ -20,14 +20,14 @@ object mod {
     
     @JSImport("jsonrpc-serializer", "err.InvalidParamsError")
     @js.native
-    class InvalidParamsError protected () extends JsonRpcError {
-      def this(args: js.Any*) = this()
+    open class InvalidParamsError protected () extends JsonRpcError {
+      def this(args: Any*) = this()
     }
     
     @JSImport("jsonrpc-serializer", "err.InvalidRequestError")
     @js.native
-    class InvalidRequestError protected () extends JsonRpcError {
-      def this(args: js.Any*) = this()
+    open class InvalidRequestError protected () extends JsonRpcError {
+      def this(args: Any*) = this()
     }
     
     // const ErrorCode = {
@@ -39,19 +39,21 @@ object mod {
     // };
     @JSImport("jsonrpc-serializer", "err.JsonRpcError")
     @js.native
-    class JsonRpcError protected ()
+    open class JsonRpcError protected ()
       extends StObject
          with SerializerError {
-      def this(msg: String, args: js.Any*) = this()
+      def this(msg: String, args: Any*) = this()
       
       /* CompleteClass */
       var code: Double = js.native
       @JSName("code")
       var code_JsonRpcError: Double | ErrorCode = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var message: String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: String = js.native
       @JSName("name")
@@ -62,14 +64,14 @@ object mod {
     
     @JSImport("jsonrpc-serializer", "err.MethodNotFoundError")
     @js.native
-    class MethodNotFoundError protected () extends JsonRpcError {
-      def this(args: js.Any*) = this()
+    open class MethodNotFoundError protected () extends JsonRpcError {
+      def this(args: Any*) = this()
     }
     
     @JSImport("jsonrpc-serializer", "err.ParseError")
     @js.native
-    class ParseError protected () extends JsonRpcError {
-      def this(args: js.Any*) = this()
+    open class ParseError protected () extends JsonRpcError {
+      def this(args: Any*) = this()
     }
     
     // const ErrorName = {
@@ -129,26 +131,26 @@ object mod {
   inline def errorObject(id: Double, error: SerializerError): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("errorObject")(id.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
   
   inline def notification(method: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("notification")(method.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def notification(method: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def notification(method: String, params: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def notificationObject(method: String): PayloadObject = ^.asInstanceOf[js.Dynamic].applyDynamic("notificationObject")(method.asInstanceOf[js.Any]).asInstanceOf[PayloadObject]
-  inline def notificationObject(method: String, params: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("notificationObject")(method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  inline def notificationObject(method: String, params: Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("notificationObject")(method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
   
   inline def request(id: String, method: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def request(id: String, method: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def request(id: String, method: String, params: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def request(id: Double, method: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def request(id: Double, method: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def request(id: Double, method: String, params: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def requestObject(id: String, method: String): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
-  inline def requestObject(id: String, method: String, params: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  inline def requestObject(id: String, method: String, params: Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
   inline def requestObject(id: Double, method: String): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
-  inline def requestObject(id: Double, method: String, params: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  inline def requestObject(id: Double, method: String, params: Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("requestObject")(id.asInstanceOf[js.Any], method.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
   
-  inline def success(id: String, result: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def success(id: Double, result: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def success(id: String, result: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def success(id: Double, result: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def successObject(id: String, result: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("successObject")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
-  inline def successObject(id: Double, result: js.Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("successObject")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  inline def successObject(id: String, result: Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("successObject")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
+  inline def successObject(id: Double, result: Any): PayloadObject = (^.asInstanceOf[js.Dynamic].applyDynamic("successObject")(id.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PayloadObject]
   
   trait DeserializeObject_ extends StObject {
     
@@ -230,9 +232,9 @@ object mod {
     
     var method: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
-    var result: js.UndefOr[js.Any] = js.undefined
+    var result: js.UndefOr[Any] = js.undefined
   }
   object PayloadObject {
     
@@ -255,11 +257,11 @@ object mod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
@@ -314,7 +316,7 @@ object mod {
     
     var code: Double
     
-    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var data: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object SerializerError {
     
@@ -327,11 +329,11 @@ object mod {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     }
   }
   

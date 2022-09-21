@@ -10,10 +10,10 @@ object turnedInMod {
   
   @JSImport("material-ui/svg-icons/action/turned-in", JSImport.Default)
   @js.native
-  class default () extends ActionTurnedIn
+  open class default () extends ActionTurnedIn
   
   @JSImport("material-ui/svg-icons/action/turned-in", "ActionTurnedIn")
   @js.native
-  class ActionTurnedIn ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionTurnedIn ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

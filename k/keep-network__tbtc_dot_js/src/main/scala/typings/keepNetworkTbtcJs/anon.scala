@@ -4,7 +4,7 @@ import typings.keepNetworkTbtcJs.bitcoinHelpersMod.BitcoinNetworkType
 import typings.keepNetworkTbtcJs.bitcoinHelpersMod.FoundTransaction
 import typings.keepNetworkTbtcJs.bitcoinHelpersMod.SPVProof
 import typings.keepNetworkTbtcJs.electrumClientMod.default
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,7 +95,7 @@ object anon {
     
     def constructOneInputOneOutputWitnessTransaction(previousOutpoint: String, inputSequence: Double, outputValue: Double, outputScript: String): String
     
-    def estimateFee(tbtcConstantsContract: js.Any): js.Promise[Double]
+    def estimateFee(tbtcConstantsContract: Any): js.Promise[Double]
     
     def find(bitcoinAddress: String, expectedValue: Double): js.Promise[FoundTransaction]
     
@@ -126,7 +126,7 @@ object anon {
       broadcast: String => js.Promise[TransactionID],
       checkForConfirmations: (String, Double) => js.Promise[Double],
       constructOneInputOneOutputWitnessTransaction: (String, Double, Double, String) => String,
-      estimateFee: js.Any => js.Promise[Double],
+      estimateFee: Any => js.Promise[Double],
       find: (String, Double) => js.Promise[FoundTransaction],
       findAllUnspent: String => js.Promise[js.Array[FoundTransaction]],
       findAllUnspentWithClient: (default, String) => js.Promise[js.Array[FoundTransaction]],
@@ -151,7 +151,7 @@ object anon {
       
       inline def setConstructOneInputOneOutputWitnessTransaction(value: (String, Double, Double, String) => String): Self = StObject.set(x, "constructOneInputOneOutputWitnessTransaction", js.Any.fromFunction4(value))
       
-      inline def setEstimateFee(value: js.Any => js.Promise[Double]): Self = StObject.set(x, "estimateFee", js.Any.fromFunction1(value))
+      inline def setEstimateFee(value: Any => js.Promise[Double]): Self = StObject.set(x, "estimateFee", js.Any.fromFunction1(value))
       
       inline def setFind(value: (String, Double) => js.Promise[FoundTransaction]): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
       
@@ -273,30 +273,30 @@ object anon {
   
   trait Locktime extends StObject {
     
-    var locktime: js.Any
+    var locktime: Any
     
-    var txInVector: js.Any
+    var txInVector: Any
     
-    var txOutVector: js.Any
+    var txOutVector: Any
     
-    var version: js.Any
+    var version: Any
   }
   object Locktime {
     
-    inline def apply(locktime: js.Any, txInVector: js.Any, txOutVector: js.Any, version: js.Any): Locktime = {
+    inline def apply(locktime: Any, txInVector: Any, txOutVector: Any, version: Any): Locktime = {
       val __obj = js.Dynamic.literal(locktime = locktime.asInstanceOf[js.Any], txInVector = txInVector.asInstanceOf[js.Any], txOutVector = txOutVector.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locktime]
     }
     
     extension [Self <: Locktime](x: Self) {
       
-      inline def setLocktime(value: js.Any): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
+      inline def setLocktime(value: Any): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
       
-      inline def setTxInVector(value: js.Any): Self = StObject.set(x, "txInVector", value.asInstanceOf[js.Any])
+      inline def setTxInVector(value: Any): Self = StObject.set(x, "txInVector", value.asInstanceOf[js.Any])
       
-      inline def setTxOutVector(value: js.Any): Self = StObject.set(x, "txOutVector", value.asInstanceOf[js.Any])
+      inline def setTxOutVector(value: Any): Self = StObject.set(x, "txOutVector", value.asInstanceOf[js.Any])
       
-      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

@@ -30,7 +30,7 @@ object XPrintSettingsSupplier {
     PrintSettings: XPropertySet,
     acquire: () => Unit,
     getPrintSettings: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPrintSettingsSupplier = {
     val __obj = js.Dynamic.literal(PrintSettings = PrintSettings.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getPrintSettings = js.Any.fromFunction0(getPrintSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

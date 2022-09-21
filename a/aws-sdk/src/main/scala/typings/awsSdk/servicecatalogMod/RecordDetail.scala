@@ -9,7 +9,7 @@ trait RecordDetail extends StObject {
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the launch role associated with the provisioned product.
@@ -74,7 +74,7 @@ trait RecordDetail extends StObject {
   /**
     * The time when the record was last updated.
     */
-  var UpdatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.UpdatedTime] = js.undefined
+  var UpdatedTime: js.UndefOr[js.Date] = js.undefined
 }
 object RecordDetail {
   
@@ -85,7 +85,7 @@ object RecordDetail {
   
   extension [Self <: RecordDetail](x: Self) {
     
-    inline def setCreatedTime(value: CreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -121,7 +121,7 @@ object RecordDetail {
     
     inline def setRecordErrorsUndefined: Self = StObject.set(x, "RecordErrors", js.undefined)
     
-    inline def setRecordErrorsVarargs(value: RecordError*): Self = StObject.set(x, "RecordErrors", js.Array(value :_*))
+    inline def setRecordErrorsVarargs(value: RecordError*): Self = StObject.set(x, "RecordErrors", js.Array(value*))
     
     inline def setRecordId(value: Id): Self = StObject.set(x, "RecordId", value.asInstanceOf[js.Any])
     
@@ -131,7 +131,7 @@ object RecordDetail {
     
     inline def setRecordTagsUndefined: Self = StObject.set(x, "RecordTags", js.undefined)
     
-    inline def setRecordTagsVarargs(value: RecordTag*): Self = StObject.set(x, "RecordTags", js.Array(value :_*))
+    inline def setRecordTagsVarargs(value: RecordTag*): Self = StObject.set(x, "RecordTags", js.Array(value*))
     
     inline def setRecordType(value: RecordType): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
     
@@ -141,7 +141,7 @@ object RecordDetail {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setUpdatedTime(value: UpdatedTime): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
+    inline def setUpdatedTime(value: js.Date): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setUpdatedTimeUndefined: Self = StObject.set(x, "UpdatedTime", js.undefined)
   }

@@ -12,6 +12,11 @@ trait ConnectorOperator extends StObject {
   var Amplitude: js.UndefOr[AmplitudeConnectorOperator] = js.undefined
   
   /**
+    * Operators supported by the custom connector.
+    */
+  var CustomConnector: js.UndefOr[Operator] = js.undefined
+  
+  /**
     *  The operation to be performed on the provided Datadog source fields. 
     */
   var Datadog: js.UndefOr[DatadogConnectorOperator] = js.undefined
@@ -40,6 +45,11 @@ trait ConnectorOperator extends StObject {
     *  The operation to be performed on the provided Amazon S3 source fields. 
     */
   var S3: js.UndefOr[S3ConnectorOperator] = js.undefined
+  
+  /**
+    *  The operation to be performed on the provided SAPOData source fields. 
+    */
+  var SAPOData: js.UndefOr[SAPODataConnectorOperator] = js.undefined
   
   /**
     *  The operation to be performed on the provided Salesforce source fields. 
@@ -89,6 +99,10 @@ object ConnectorOperator {
     
     inline def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
     
+    inline def setCustomConnector(value: Operator): Self = StObject.set(x, "CustomConnector", value.asInstanceOf[js.Any])
+    
+    inline def setCustomConnectorUndefined: Self = StObject.set(x, "CustomConnector", js.undefined)
+    
     inline def setDatadog(value: DatadogConnectorOperator): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
     
     inline def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
@@ -112,6 +126,10 @@ object ConnectorOperator {
     inline def setS3(value: S3ConnectorOperator): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+    
+    inline def setSAPOData(value: SAPODataConnectorOperator): Self = StObject.set(x, "SAPOData", value.asInstanceOf[js.Any])
+    
+    inline def setSAPODataUndefined: Self = StObject.set(x, "SAPOData", js.undefined)
     
     inline def setSalesforce(value: SalesforceConnectorOperator): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     

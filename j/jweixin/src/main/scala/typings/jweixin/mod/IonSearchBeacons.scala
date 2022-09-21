@@ -10,17 +10,17 @@ trait IonSearchBeacons
   
   // 回调函数，可以数组形式取得该商家注册的在周边的相关设备列表
   @JSName("complete")
-  def complete_MIonSearchBeacons(argv: js.Any): Unit
+  def complete_MIonSearchBeacons(argv: Any): Unit
 }
 object IonSearchBeacons {
   
-  inline def apply(complete: js.Any => Unit): IonSearchBeacons = {
+  inline def apply(complete: Any => Unit): IonSearchBeacons = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
     __obj.asInstanceOf[IonSearchBeacons]
   }
   
   extension [Self <: IonSearchBeacons](x: Self) {
     
-    inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }
 }

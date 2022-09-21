@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PromptArgs
   extends StObject
-     with AsyncCallback[Unit] {
+     with AsyncCallback[PromptCallbackValue] {
   
   /**
     * Message alignment, supporting enumeration left/center/right, iOS center, android left.

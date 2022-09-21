@@ -1,7 +1,8 @@
 package typings.materialUi
 
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,20 +11,20 @@ object renderToLayerMod {
   
   @JSImport("material-ui/internal/RenderToLayer", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[RenderToLayerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[RenderToLayerProps, js.Object, Any]
   
-  @js.native
-  trait RenderToLayer
-    extends Component[RenderToLayerProps, js.Object, js.Any]
+  type RenderToLayer = Component[RenderToLayerProps, js.Object, Any]
   
-  trait RenderToLayerProps
-    extends StObject
-       with Props[RenderToLayer] {
+  trait RenderToLayerProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var componentClickAway: js.UndefOr[js.Function] = js.undefined
     
     var open: Boolean
+    
+    var ref: js.UndefOr[LegacyRef[RenderToLayer]] = js.undefined
     
     var render: js.Function
     
@@ -38,11 +39,23 @@ object renderToLayerMod {
     
     extension [Self <: RenderToLayerProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setComponentClickAway(value: js.Function): Self = StObject.set(x, "componentClickAway", value.asInstanceOf[js.Any])
       
       inline def setComponentClickAwayUndefined: Self = StObject.set(x, "componentClickAway", js.undefined)
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
+      inline def setRef(value: LegacyRef[RenderToLayer]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ RenderToLayer | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setRender(value: js.Function): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "SymbolInformation")
 @js.native
-class SymbolInformation protected () extends StObject {
+open class SymbolInformation protected () extends StObject {
   /**
     * Creates a new symbol information object.
     *
-    * @deprecated Please use the constructor taking a [location](#Location) object.
+    * @deprecated Please use the constructor taking a {@link Location} object.
     *
     * @param name The name of the symbol.
     * @param kind The kind of the symbol.

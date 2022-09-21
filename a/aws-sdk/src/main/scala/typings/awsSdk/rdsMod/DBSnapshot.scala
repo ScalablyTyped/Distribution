@@ -32,7 +32,7 @@ trait DBSnapshot extends StObject {
   var DBSnapshotIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier for the source DB instance, which can't be changed and which is unique to an AWS Region.
+    * The identifier for the source DB instance, which can't be changed and which is unique to an Amazon Web Services Region.
     */
   var DbiResourceId: js.UndefOr[String] = js.undefined
   
@@ -52,14 +52,14 @@ trait DBSnapshot extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
+    * True if mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the time in Coordinated Universal Time (UTC) when the DB instance, from which the snapshot was taken, was created.
     */
-  var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
+  var InstanceCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
@@ -67,7 +67,7 @@ trait DBSnapshot extends StObject {
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    *  If Encrypted is true, the AWS KMS key identifier for the encrypted DB snapshot. 
+    * If Encrypted is true, the Amazon Web Services KMS key identifier for the encrypted DB snapshot. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -87,6 +87,11 @@ trait DBSnapshot extends StObject {
   var OptionGroupName: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies the time of the CreateDBSnapshot operation in Coordinated Universal Time (UTC). Doesn't change when the snapshot is copied.
+    */
+  var OriginalSnapshotCreateTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The percentage of the estimated data that has been transferred.
     */
   var PercentProgress: js.UndefOr[Integer] = js.undefined
@@ -102,9 +107,19 @@ trait DBSnapshot extends StObject {
   var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.undefined
   
   /**
-    * Specifies when the snapshot was taken in Coordinated Universal Time (UTC).
+    * Specifies when the snapshot was taken in Coordinated Universal Time (UTC). Changes for the copy when the snapshot is copied.
     */
-  var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
+  var SnapshotCreateTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The timestamp of the most recent transaction applied to the database that you're backing up. Thus, if you restore a snapshot, SnapshotDatabaseTime is the most recent transaction in the restored DB instance. In contrast, originalSnapshotCreateTime specifies the system time that the snapshot completed. If you back up a read replica, you can determine the replica lag by comparing SnapshotDatabaseTime with originalSnapshotCreateTime. For example, if originalSnapshotCreateTime is two hours later than SnapshotDatabaseTime, then the replica lag is two hours.
+    */
+  var SnapshotDatabaseTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Specifies where manual snapshots are stored: Amazon Web Services Outposts or the Amazon Web Services Region.
+    */
+  var SnapshotTarget: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the type of the DB snapshot.
@@ -112,12 +127,12 @@ trait DBSnapshot extends StObject {
   var SnapshotType: js.UndefOr[String] = js.undefined
   
   /**
-    * The DB snapshot Amazon Resource Name (ARN) that the DB snapshot was copied from. It only has value in case of cross-customer or cross-region copy.
+    * The DB snapshot Amazon Resource Name (ARN) that the DB snapshot was copied from. It only has a value in the case of a cross-account or cross-Region copy.
     */
   var SourceDBSnapshotIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS Region that the DB snapshot was created in or copied from.
+    * The Amazon Web Services Region that the DB snapshot was created in or copied from.
     */
   var SourceRegion: js.UndefOr[String] = js.undefined
   
@@ -139,7 +154,7 @@ trait DBSnapshot extends StObject {
   var TdeCredentialArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The time zone of the DB snapshot. In most cases, the Timezone element is empty. Timezone content appears only for snapshots taken from Microsoft SQL Server DB instances that were created with a time zone specified. 
+    * The time zone of the DB snapshot. In most cases, the Timezone element is empty. Timezone content appears only for snapshots taken from Microsoft SQL Server DB instances that were created with a time zone specified.
     */
   var Timezone: js.UndefOr[String] = js.undefined
   
@@ -197,7 +212,7 @@ object DBSnapshot {
     
     inline def setIAMDatabaseAuthenticationEnabledUndefined: Self = StObject.set(x, "IAMDatabaseAuthenticationEnabled", js.undefined)
     
-    inline def setInstanceCreateTime(value: TStamp): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
+    inline def setInstanceCreateTime(value: js.Date): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
     
     inline def setInstanceCreateTimeUndefined: Self = StObject.set(x, "InstanceCreateTime", js.undefined)
     
@@ -221,6 +236,10 @@ object DBSnapshot {
     
     inline def setOptionGroupNameUndefined: Self = StObject.set(x, "OptionGroupName", js.undefined)
     
+    inline def setOriginalSnapshotCreateTime(value: js.Date): Self = StObject.set(x, "OriginalSnapshotCreateTime", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalSnapshotCreateTimeUndefined: Self = StObject.set(x, "OriginalSnapshotCreateTime", js.undefined)
+    
     inline def setPercentProgress(value: Integer): Self = StObject.set(x, "PercentProgress", value.asInstanceOf[js.Any])
     
     inline def setPercentProgressUndefined: Self = StObject.set(x, "PercentProgress", js.undefined)
@@ -233,11 +252,19 @@ object DBSnapshot {
     
     inline def setProcessorFeaturesUndefined: Self = StObject.set(x, "ProcessorFeatures", js.undefined)
     
-    inline def setProcessorFeaturesVarargs(value: ProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value :_*))
+    inline def setProcessorFeaturesVarargs(value: ProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value*))
     
-    inline def setSnapshotCreateTime(value: TStamp): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotCreateTime(value: js.Date): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
     
     inline def setSnapshotCreateTimeUndefined: Self = StObject.set(x, "SnapshotCreateTime", js.undefined)
+    
+    inline def setSnapshotDatabaseTime(value: js.Date): Self = StObject.set(x, "SnapshotDatabaseTime", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotDatabaseTimeUndefined: Self = StObject.set(x, "SnapshotDatabaseTime", js.undefined)
+    
+    inline def setSnapshotTarget(value: String): Self = StObject.set(x, "SnapshotTarget", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotTargetUndefined: Self = StObject.set(x, "SnapshotTarget", js.undefined)
     
     inline def setSnapshotType(value: String): Self = StObject.set(x, "SnapshotType", value.asInstanceOf[js.Any])
     
@@ -263,7 +290,7 @@ object DBSnapshot {
     
     inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
     
     inline def setTdeCredentialArn(value: String): Self = StObject.set(x, "TdeCredentialArn", value.asInstanceOf[js.Any])
     

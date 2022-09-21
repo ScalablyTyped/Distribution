@@ -11,10 +11,10 @@ object endpointCacheMod {
   
   @JSImport("aws-sdk/vendor/endpoint-cache", "EndpointCache")
   @js.native
-  class EndpointCache () extends StObject {
+  open class EndpointCache () extends StObject {
     def this(maxSize: Double) = this()
     
-    /* private */ var cache: js.Any = js.native
+    /* private */ var cache: Any = js.native
     
     def empty(): Unit = js.native
     
@@ -23,7 +23,7 @@ object endpointCacheMod {
     
     val maxSize: Double = js.native
     
-    /* private */ var populateValue: js.Any = js.native
+    /* private */ var populateValue: Any = js.native
     
     def put(key: String, value: DiscoveredEndpoints): Unit = js.native
     def put(key: EndpointIdentifier, value: DiscoveredEndpoints): Unit = js.native

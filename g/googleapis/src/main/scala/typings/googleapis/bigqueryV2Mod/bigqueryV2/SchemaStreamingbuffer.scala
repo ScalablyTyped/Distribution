@@ -7,23 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaStreamingbuffer extends StObject {
   
   /**
-    * [Output-only] A lower-bound estimate of the number of bytes currently in
-    * the streaming buffer.
+    * [Output-only] A lower-bound estimate of the number of bytes currently in the streaming buffer.
     */
-  var estimatedBytes: js.UndefOr[String] = js.undefined
+  var estimatedBytes: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output-only] A lower-bound estimate of the number of rows currently in
-    * the streaming buffer.
+    * [Output-only] A lower-bound estimate of the number of rows currently in the streaming buffer.
     */
-  var estimatedRows: js.UndefOr[String] = js.undefined
+  var estimatedRows: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output-only] Contains the timestamp of the oldest entry in the streaming
-    * buffer, in milliseconds since the epoch, if the streaming buffer is
-    * available.
+    * [Output-only] Contains the timestamp of the oldest entry in the streaming buffer, in milliseconds since the epoch, if the streaming buffer is available.
     */
-  var oldestEntryTime: js.UndefOr[String] = js.undefined
+  var oldestEntryTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaStreamingbuffer {
   
@@ -36,13 +32,19 @@ object SchemaStreamingbuffer {
     
     inline def setEstimatedBytes(value: String): Self = StObject.set(x, "estimatedBytes", value.asInstanceOf[js.Any])
     
+    inline def setEstimatedBytesNull: Self = StObject.set(x, "estimatedBytes", null)
+    
     inline def setEstimatedBytesUndefined: Self = StObject.set(x, "estimatedBytes", js.undefined)
     
     inline def setEstimatedRows(value: String): Self = StObject.set(x, "estimatedRows", value.asInstanceOf[js.Any])
     
+    inline def setEstimatedRowsNull: Self = StObject.set(x, "estimatedRows", null)
+    
     inline def setEstimatedRowsUndefined: Self = StObject.set(x, "estimatedRows", js.undefined)
     
     inline def setOldestEntryTime(value: String): Self = StObject.set(x, "oldestEntryTime", value.asInstanceOf[js.Any])
+    
+    inline def setOldestEntryTimeNull: Self = StObject.set(x, "oldestEntryTime", null)
     
     inline def setOldestEntryTimeUndefined: Self = StObject.set(x, "oldestEntryTime", js.undefined)
   }

@@ -9,7 +9,6 @@ import typings.awsSdkClientXrayNode.typesTraceUserMod.TraceUser
 import typings.awsSdkClientXrayNode.typesTraceUserMod.UnmarshalledTraceUser
 import typings.awsSdkClientXrayNode.typesValueWithServiceIdsMod.UnmarshalledValueWithServiceIds
 import typings.awsSdkClientXrayNode.typesValueWithServiceIdsMod.ValueWithServiceIds
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,9 @@ object typesTraceSummaryMod {
       * <p>Annotations from the trace's segment documents.</p>
       */
     var Annotations: js.UndefOr[
-        (StringDictionary[js.Array[ValueWithServiceIds] | Iterable[ValueWithServiceIds]]) | (Iterable[js.Tuple2[String, js.Array[ValueWithServiceIds] | Iterable[ValueWithServiceIds]]])
+        (StringDictionary[js.Array[ValueWithServiceIds] | js.Iterable[ValueWithServiceIds]]) | (js.Iterable[
+          js.Tuple2[String, js.Array[ValueWithServiceIds] | js.Iterable[ValueWithServiceIds]]
+        ])
       ] = js.undefined
     
     /**
@@ -68,12 +69,12 @@ object typesTraceSummaryMod {
     /**
       * <p>Service IDs from the trace's segment documents.</p>
       */
-    var ServiceIds: js.UndefOr[js.Array[ServiceId] | Iterable[ServiceId]] = js.undefined
+    var ServiceIds: js.UndefOr[js.Array[ServiceId] | js.Iterable[ServiceId]] = js.undefined
     
     /**
       * <p>Users from the trace's segment documents.</p>
       */
-    var Users: js.UndefOr[js.Array[TraceUser] | Iterable[TraceUser]] = js.undefined
+    var Users: js.UndefOr[js.Array[TraceUser] | js.Iterable[TraceUser]] = js.undefined
   }
   object TraceSummary {
     
@@ -85,7 +86,9 @@ object typesTraceSummaryMod {
     extension [Self <: TraceSummary](x: Self) {
       
       inline def setAnnotations(
-        value: (StringDictionary[js.Array[ValueWithServiceIds] | Iterable[ValueWithServiceIds]]) | (Iterable[js.Tuple2[String, js.Array[ValueWithServiceIds] | Iterable[ValueWithServiceIds]]])
+        value: (StringDictionary[js.Array[ValueWithServiceIds] | js.Iterable[ValueWithServiceIds]]) | (js.Iterable[
+              js.Tuple2[String, js.Array[ValueWithServiceIds] | js.Iterable[ValueWithServiceIds]]
+            ])
       ): Self = StObject.set(x, "Annotations", value.asInstanceOf[js.Any])
       
       inline def setAnnotationsUndefined: Self = StObject.set(x, "Annotations", js.undefined)
@@ -122,17 +125,17 @@ object typesTraceSummaryMod {
       
       inline def setResponseTimeUndefined: Self = StObject.set(x, "ResponseTime", js.undefined)
       
-      inline def setServiceIds(value: js.Array[ServiceId] | Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
+      inline def setServiceIds(value: js.Array[ServiceId] | js.Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
       
       inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
       
-      inline def setUsers(value: js.Array[TraceUser] | Iterable[TraceUser]): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[TraceUser] | js.Iterable[TraceUser]): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
       
       inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
       
-      inline def setUsersVarargs(value: TraceUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
+      inline def setUsersVarargs(value: TraceUser*): Self = StObject.set(x, "Users", js.Array(value*))
     }
   }
   
@@ -185,13 +188,13 @@ object typesTraceSummaryMod {
       
       inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      inline def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
       
       inline def setUsers(value: js.Array[UnmarshalledTraceUser]): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
       
       inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
       
-      inline def setUsersVarargs(value: UnmarshalledTraceUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
+      inline def setUsersVarargs(value: UnmarshalledTraceUser*): Self = StObject.set(x, "Users", js.Array(value*))
     }
   }
 }

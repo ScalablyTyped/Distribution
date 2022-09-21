@@ -21,7 +21,7 @@ object CreatePayoutRequestBody {
     
     inline def setItems(value: js.Array[PayoutItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: PayoutItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PayoutItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSender_batch_header(value: SenderBatchHeader): Self = StObject.set(x, "sender_batch_header", value.asInstanceOf[js.Any])
   }

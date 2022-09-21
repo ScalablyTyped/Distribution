@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_cloudbilling
 
-Typings are for version 1.0.20201017
+Typings are for version 1.0.20220722
 
 ## Library description:
 TypeScript typings for Cloud Billing API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Billing API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudbilling |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 2405 |
-| # stars            | 0 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 999.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

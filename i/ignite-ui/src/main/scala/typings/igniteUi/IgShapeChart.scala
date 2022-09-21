@@ -11,7 +11,7 @@ trait IgShapeChart
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets a value indicating whether grid and tick lines are aligned to device pixels.
@@ -33,7 +33,7 @@ trait IgShapeChart
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var brushes: js.UndefOr[js.Any] = js.undefined
+  var brushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Occurs when the style of a callout is updated.
@@ -53,7 +53,7 @@ trait IgShapeChart
   /**
     * Gets or sets the collection of callout data to be annotated.
     */
-  var calloutsItemsSource: js.UndefOr[js.Any] = js.undefined
+  var calloutsItemsSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the member path of the label data for the callouts.
@@ -95,7 +95,7 @@ trait IgShapeChart
   /**
     * Gets or sets a function for creating wrapped tooltip
     */
-  var createWrappedTooltip: js.UndefOr[js.Any] = js.undefined
+  var createWrappedTooltip: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets whether annotations are shown along the axis for crosshair values
@@ -142,7 +142,7 @@ trait IgShapeChart
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets sets data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
@@ -162,7 +162,7 @@ trait IgShapeChart
   /**
     * Gets or sets a set of property paths that should be excluded from consideration by the category chart.
     */
-  var excludedProperties: js.UndefOr[js.Any] = js.undefined
+  var excludedProperties: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets whether annotations for the final value of each series is displayed on the axis.
@@ -187,7 +187,7 @@ trait IgShapeChart
   /**
     * Gets or sets a set of property paths that should be included for consideration by the category chart, leaving the remainder excluded. If null, all properties will be considered.
     */
-  var includedProperties: js.UndefOr[js.Any] = js.undefined
+  var includedProperties: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets whether the chart can be horizontally zoomed through user interactions.
@@ -213,7 +213,7 @@ trait IgShapeChart
     * Databinding can be further configured by attributing the data item classes
     * with the DataSeriesMemberIntentAttribute.
     */
-  var itemsSource: js.UndefOr[js.Any] = js.undefined
+  var itemsSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the left margin of the chart content.
@@ -224,14 +224,14 @@ trait IgShapeChart
     * Gets or sets the legend to connect this chart to.
     * When the legend property is set, the chart will use it to display information about its series.  Legends can be shared by multiple chart controls.
     */
-  var legend: js.UndefOr[js.Any] = js.undefined
+  var legend: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the palette of brushes used for rendering fill area of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var markerBrushes: js.UndefOr[js.Any] = js.undefined
+  var markerBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets collision avoidance between markers on series that support this behaviour.
@@ -255,13 +255,13 @@ trait IgShapeChart
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var markerOutlines: js.UndefOr[js.Any] = js.undefined
+  var markerOutlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the marker shapes used for indicating location of data points in this chart.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     */
-  var markerTypes: js.UndefOr[js.Any] = js.undefined
+  var markerTypes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets sets maximum number of displayed records in chart.
@@ -273,7 +273,7 @@ trait IgShapeChart
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var outlines: js.UndefOr[js.Any] = js.undefined
+  var outlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
@@ -459,12 +459,12 @@ trait IgShapeChart
   /**
     * Gets or sets the id of a template element to use for tooltips, or markup representing the tooltip template.
     */
-  var tooltipTemplate: js.UndefOr[js.Any] = js.undefined
+  var tooltipTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the names of tooltip templates
     */
-  var tooltipTemplates: js.UndefOr[js.Any] = js.undefined
+  var tooltipTemplates: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the top margin of the chart content.
@@ -480,14 +480,14 @@ trait IgShapeChart
     * Gets or sets the easing function used for animating series plots when the data is changing.
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     */
-  var transitionEasingFunction: js.UndefOr[js.Any] = js.undefined
+  var transitionEasingFunction: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the palette of brushes to used for coloring trend lines in this chart.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var trendLineBrushes: js.UndefOr[js.Any] = js.undefined
+  var trendLineBrushes: js.UndefOr[Any] = js.undefined
   
   var trendLinePeriod: js.UndefOr[Double] = js.undefined
   
@@ -550,7 +550,7 @@ trait IgShapeChart
   /**
     * Gets or sets the widget of this control
     */
-  var widget: js.UndefOr[js.Any] = js.undefined
+  var widget: js.UndefOr[Any] = js.undefined
   
   /**
     * The width of the chart.
@@ -562,7 +562,7 @@ trait IgShapeChart
     * WindowRect is expressed as a Rectangle with coordinates and sizes between 0 and 1.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  var windowRect: js.UndefOr[js.Any] = js.undefined
+  var windowRect: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets whether the large numbers on the X-axis labels are abbreviated.
@@ -577,7 +577,7 @@ trait IgShapeChart
   /**
     * Gets or sets function which takes an context object and returns a formatted label for the X-axis.
     */
-  var xAxisFormatLabel: js.UndefOr[js.Any] = js.undefined
+  var xAxisFormatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the frequency of displayed labels along the X-axis.
@@ -599,7 +599,7 @@ trait IgShapeChart
   /**
     * Gets or sets the format for labels along the X-axis.
     */
-  var xAxisLabel: js.UndefOr[js.Any] = js.undefined
+  var xAxisLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the angle of rotation for labels along the X-axis.
@@ -808,7 +808,7 @@ trait IgShapeChart
   /**
     * Gets or sets function which takes a context object and returns a formatted label for the Y-axis.
     */
-  var yAxisFormatLabel: js.UndefOr[js.Any] = js.undefined
+  var yAxisFormatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the distance between each label and grid line along the Y-axis.
@@ -829,7 +829,7 @@ trait IgShapeChart
   /**
     * Gets or sets the property or string from which the labels are derived.
     */
-  var yAxisLabel: js.UndefOr[js.Any] = js.undefined
+  var yAxisLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the angle of rotation for labels along the Y-axis.
@@ -1060,7 +1060,7 @@ object IgShapeChart {
     
     inline def setBottomMarginUndefined: Self = StObject.set(x, "bottomMargin", js.undefined)
     
-    inline def setBrushes(value: js.Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
+    inline def setBrushes(value: Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
     
     inline def setBrushesUndefined: Self = StObject.set(x, "brushes", js.undefined)
     
@@ -1076,7 +1076,7 @@ object IgShapeChart {
     
     inline def setCalloutsContentMemberPathUndefined: Self = StObject.set(x, "calloutsContentMemberPath", js.undefined)
     
-    inline def setCalloutsItemsSource(value: js.Any): Self = StObject.set(x, "calloutsItemsSource", value.asInstanceOf[js.Any])
+    inline def setCalloutsItemsSource(value: Any): Self = StObject.set(x, "calloutsItemsSource", value.asInstanceOf[js.Any])
     
     inline def setCalloutsItemsSourceUndefined: Self = StObject.set(x, "calloutsItemsSource", js.undefined)
     
@@ -1100,7 +1100,7 @@ object IgShapeChart {
     
     inline def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
     
-    inline def setCreateWrappedTooltip(value: js.Any): Self = StObject.set(x, "createWrappedTooltip", value.asInstanceOf[js.Any])
+    inline def setCreateWrappedTooltip(value: Any): Self = StObject.set(x, "createWrappedTooltip", value.asInstanceOf[js.Any])
     
     inline def setCreateWrappedTooltipUndefined: Self = StObject.set(x, "createWrappedTooltip", js.undefined)
     
@@ -1124,7 +1124,7 @@ object IgShapeChart {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -1140,7 +1140,7 @@ object IgShapeChart {
     
     inline def setDatabaseSourceUndefined: Self = StObject.set(x, "databaseSource", js.undefined)
     
-    inline def setExcludedProperties(value: js.Any): Self = StObject.set(x, "excludedProperties", value.asInstanceOf[js.Any])
+    inline def setExcludedProperties(value: Any): Self = StObject.set(x, "excludedProperties", value.asInstanceOf[js.Any])
     
     inline def setExcludedPropertiesUndefined: Self = StObject.set(x, "excludedProperties", js.undefined)
     
@@ -1156,7 +1156,7 @@ object IgShapeChart {
     
     inline def setHideTooltipUndefined: Self = StObject.set(x, "hideTooltip", js.undefined)
     
-    inline def setIncludedProperties(value: js.Any): Self = StObject.set(x, "includedProperties", value.asInstanceOf[js.Any])
+    inline def setIncludedProperties(value: Any): Self = StObject.set(x, "includedProperties", value.asInstanceOf[js.Any])
     
     inline def setIncludedPropertiesUndefined: Self = StObject.set(x, "includedProperties", js.undefined)
     
@@ -1172,7 +1172,7 @@ object IgShapeChart {
     
     inline def setIsVerticalZoomEnabledUndefined: Self = StObject.set(x, "isVerticalZoomEnabled", js.undefined)
     
-    inline def setItemsSource(value: js.Any): Self = StObject.set(x, "itemsSource", value.asInstanceOf[js.Any])
+    inline def setItemsSource(value: Any): Self = StObject.set(x, "itemsSource", value.asInstanceOf[js.Any])
     
     inline def setItemsSourceUndefined: Self = StObject.set(x, "itemsSource", js.undefined)
     
@@ -1180,11 +1180,11 @@ object IgShapeChart {
     
     inline def setLeftMarginUndefined: Self = StObject.set(x, "leftMargin", js.undefined)
     
-    inline def setLegend(value: js.Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    inline def setMarkerBrushes(value: js.Any): Self = StObject.set(x, "markerBrushes", value.asInstanceOf[js.Any])
+    inline def setMarkerBrushes(value: Any): Self = StObject.set(x, "markerBrushes", value.asInstanceOf[js.Any])
     
     inline def setMarkerBrushesUndefined: Self = StObject.set(x, "markerBrushes", js.undefined)
     
@@ -1196,11 +1196,11 @@ object IgShapeChart {
     
     inline def setMarkerMaxCountUndefined: Self = StObject.set(x, "markerMaxCount", js.undefined)
     
-    inline def setMarkerOutlines(value: js.Any): Self = StObject.set(x, "markerOutlines", value.asInstanceOf[js.Any])
+    inline def setMarkerOutlines(value: Any): Self = StObject.set(x, "markerOutlines", value.asInstanceOf[js.Any])
     
     inline def setMarkerOutlinesUndefined: Self = StObject.set(x, "markerOutlines", js.undefined)
     
-    inline def setMarkerTypes(value: js.Any): Self = StObject.set(x, "markerTypes", value.asInstanceOf[js.Any])
+    inline def setMarkerTypes(value: Any): Self = StObject.set(x, "markerTypes", value.asInstanceOf[js.Any])
     
     inline def setMarkerTypesUndefined: Self = StObject.set(x, "markerTypes", js.undefined)
     
@@ -1208,7 +1208,7 @@ object IgShapeChart {
     
     inline def setMaxRecCountUndefined: Self = StObject.set(x, "maxRecCount", js.undefined)
     
-    inline def setOutlines(value: js.Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
+    inline def setOutlines(value: Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
     
     inline def setOutlinesUndefined: Self = StObject.set(x, "outlines", js.undefined)
     
@@ -1340,11 +1340,11 @@ object IgShapeChart {
     
     inline def setToolTipTypeUndefined: Self = StObject.set(x, "toolTipType", js.undefined)
     
-    inline def setTooltipTemplate(value: js.Any): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
+    inline def setTooltipTemplate(value: Any): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
     
     inline def setTooltipTemplateUndefined: Self = StObject.set(x, "tooltipTemplate", js.undefined)
     
-    inline def setTooltipTemplates(value: js.Any): Self = StObject.set(x, "tooltipTemplates", value.asInstanceOf[js.Any])
+    inline def setTooltipTemplates(value: Any): Self = StObject.set(x, "tooltipTemplates", value.asInstanceOf[js.Any])
     
     inline def setTooltipTemplatesUndefined: Self = StObject.set(x, "tooltipTemplates", js.undefined)
     
@@ -1356,11 +1356,11 @@ object IgShapeChart {
     
     inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
-    inline def setTransitionEasingFunction(value: js.Any): Self = StObject.set(x, "transitionEasingFunction", value.asInstanceOf[js.Any])
+    inline def setTransitionEasingFunction(value: Any): Self = StObject.set(x, "transitionEasingFunction", value.asInstanceOf[js.Any])
     
     inline def setTransitionEasingFunctionUndefined: Self = StObject.set(x, "transitionEasingFunction", js.undefined)
     
-    inline def setTrendLineBrushes(value: js.Any): Self = StObject.set(x, "trendLineBrushes", value.asInstanceOf[js.Any])
+    inline def setTrendLineBrushes(value: Any): Self = StObject.set(x, "trendLineBrushes", value.asInstanceOf[js.Any])
     
     inline def setTrendLineBrushesUndefined: Self = StObject.set(x, "trendLineBrushes", js.undefined)
     
@@ -1388,7 +1388,7 @@ object IgShapeChart {
     
     inline def setUpdateTooltipUndefined: Self = StObject.set(x, "updateTooltip", js.undefined)
     
-    inline def setWidget(value: js.Any): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
+    inline def setWidget(value: Any): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
     
     inline def setWidgetUndefined: Self = StObject.set(x, "widget", js.undefined)
     
@@ -1396,7 +1396,7 @@ object IgShapeChart {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWindowRect(value: js.Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
+    inline def setWindowRect(value: Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
     
     inline def setWindowRectUndefined: Self = StObject.set(x, "windowRect", js.undefined)
     
@@ -1408,7 +1408,7 @@ object IgShapeChart {
     
     inline def setXAxisExtentUndefined: Self = StObject.set(x, "xAxisExtent", js.undefined)
     
-    inline def setXAxisFormatLabel(value: js.Any): Self = StObject.set(x, "xAxisFormatLabel", value.asInstanceOf[js.Any])
+    inline def setXAxisFormatLabel(value: Any): Self = StObject.set(x, "xAxisFormatLabel", value.asInstanceOf[js.Any])
     
     inline def setXAxisFormatLabelUndefined: Self = StObject.set(x, "xAxisFormatLabel", js.undefined)
     
@@ -1424,7 +1424,7 @@ object IgShapeChart {
     
     inline def setXAxisIsLogarithmicUndefined: Self = StObject.set(x, "xAxisIsLogarithmic", js.undefined)
     
-    inline def setXAxisLabel(value: js.Any): Self = StObject.set(x, "xAxisLabel", value.asInstanceOf[js.Any])
+    inline def setXAxisLabel(value: Any): Self = StObject.set(x, "xAxisLabel", value.asInstanceOf[js.Any])
     
     inline def setXAxisLabelAngle(value: Double): Self = StObject.set(x, "xAxisLabelAngle", value.asInstanceOf[js.Any])
     
@@ -1572,7 +1572,7 @@ object IgShapeChart {
     
     inline def setYAxisExtentUndefined: Self = StObject.set(x, "yAxisExtent", js.undefined)
     
-    inline def setYAxisFormatLabel(value: js.Any): Self = StObject.set(x, "yAxisFormatLabel", value.asInstanceOf[js.Any])
+    inline def setYAxisFormatLabel(value: Any): Self = StObject.set(x, "yAxisFormatLabel", value.asInstanceOf[js.Any])
     
     inline def setYAxisFormatLabelUndefined: Self = StObject.set(x, "yAxisFormatLabel", js.undefined)
     
@@ -1588,7 +1588,7 @@ object IgShapeChart {
     
     inline def setYAxisIsLogarithmicUndefined: Self = StObject.set(x, "yAxisIsLogarithmic", js.undefined)
     
-    inline def setYAxisLabel(value: js.Any): Self = StObject.set(x, "yAxisLabel", value.asInstanceOf[js.Any])
+    inline def setYAxisLabel(value: Any): Self = StObject.set(x, "yAxisLabel", value.asInstanceOf[js.Any])
     
     inline def setYAxisLabelAngle(value: Double): Self = StObject.set(x, "yAxisLabelAngle", value.asInstanceOf[js.Any])
     

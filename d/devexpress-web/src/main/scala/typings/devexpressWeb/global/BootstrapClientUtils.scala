@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientUtils")
 @js.native
-class BootstrapClientUtils ()
+open class BootstrapClientUtils ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientUtils
 object BootstrapClientUtils {

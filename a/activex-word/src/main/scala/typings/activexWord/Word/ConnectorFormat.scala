@@ -32,7 +32,7 @@ trait ConnectorFormat extends StObject {
   
   def EndDisconnect(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Type: MsoConnectorType
   
@@ -54,7 +54,7 @@ object ConnectorFormat {
     EndConnectedShape: Shape,
     EndConnectionSite: Double,
     EndDisconnect: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Type: MsoConnectorType,
     WordDotConnectorFormat_typekey: ConnectorFormat
   ): ConnectorFormat = {
@@ -89,7 +89,7 @@ object ConnectorFormat {
     
     inline def setEndDisconnect(value: () => Unit): Self = StObject.set(x, "EndDisconnect", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setType(value: MsoConnectorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

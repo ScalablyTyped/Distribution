@@ -33,6 +33,6 @@ object GetReplicationJobsResponse {
     
     inline def setReplicationJobListUndefined: Self = StObject.set(x, "replicationJobList", js.undefined)
     
-    inline def setReplicationJobListVarargs(value: ReplicationJob*): Self = StObject.set(x, "replicationJobList", js.Array(value :_*))
+    inline def setReplicationJobListVarargs(value: ReplicationJob*): Self = StObject.set(x, "replicationJobList", js.Array(value*))
   }
 }

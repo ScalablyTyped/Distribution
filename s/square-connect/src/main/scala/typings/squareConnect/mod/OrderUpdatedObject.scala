@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderUpdatedObject")
 @js.native
-class OrderUpdatedObject () extends StObject {
+open class OrderUpdatedObject () extends StObject {
   
   /**
     * Information about the updated order.

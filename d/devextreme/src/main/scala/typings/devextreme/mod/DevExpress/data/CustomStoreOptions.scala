@@ -3,86 +3,74 @@ package typings.devextreme.mod.DevExpress.data
 import typings.devextreme.anon.Filter
 import typings.devextreme.devextremeStrings.processed
 import typings.devextreme.devextremeStrings.raw
-import typings.devextreme.mod.global.JQueryPromise
-import typings.devextreme.mod.global.Promise
+import typings.devextreme.mod.DevExpress.core.utils.DxPromise
+import typings.devextreme.mod.DevExpress.data.CustomStore.GroupItem
+import typings.devextreme.mod.DevExpress.data.CustomStore.ResolvedData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomStoreOptions
+trait CustomStoreOptions[TItem, TKey]
   extends StObject
-     with StoreOptions[CustomStore] {
+     with StoreOptions[TItem, TKey] {
   
   /**
-    * [descr:CustomStore.Options.byKey]
+    * Specifies a custom implementation of the byKey(key) method.
     */
-  var byKey: js.UndefOr[
-    js.Function1[/* key */ js.Any | String | Double, Promise[js.Any] | JQueryPromise[js.Any]]
-  ] = js.undefined
+  var byKey: js.UndefOr[js.Function1[/* key */ TKey, js.Thenable[TItem]]] = js.undefined
   
   /**
-    * [descr:CustomStore.Options.cacheRawData]
+    * Specifies whether raw data should be saved in the cache. Applies only if loadMode is &apos;raw&apos;.
     */
   var cacheRawData: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:CustomStore.Options.insert]
+    * Specifies a custom implementation of the insert(values) method.
     */
-  var insert: js.UndefOr[js.Function1[/* values */ js.Any, Promise[js.Any] | JQueryPromise[js.Any]]] = js.undefined
+  var insert: js.UndefOr[js.Function1[/* values */ TItem, js.Thenable[TItem]]] = js.undefined
   
   /**
-    * [descr:CustomStore.Options.load]
+    * Specifies a custom implementation of the load(options) method.
     */
-  var load: js.UndefOr[
-    js.Function1[
-      /* options */ LoadOptions, 
-      Promise[js.Any] | JQueryPromise[js.Any] | js.Array[js.Any]
-    ]
-  ] = js.undefined
+  def load(options: LoadOptions[TItem]): DxPromise[ResolvedData[TItem]] | js.Thenable[ResolvedData[TItem]] | (js.Array[GroupItem[Any] | TItem])
   
   /**
-    * [descr:CustomStore.Options.loadMode]
+    * Specifies how data returned by the load function is treated.
     */
   var loadMode: js.UndefOr[processed | raw] = js.undefined
   
   /**
-    * [descr:CustomStore.Options.remove]
+    * Specifies a custom implementation of the remove(key) method.
     */
-  var remove: js.UndefOr[
-    js.Function1[/* key */ js.Any | String | Double, Promise[Unit] | JQueryPromise[Unit]]
-  ] = js.undefined
+  var remove: js.UndefOr[js.Function1[/* key */ TKey, js.Thenable[Unit]]] = js.undefined
   
   /**
-    * [descr:CustomStore.Options.totalCount]
+    * Specifies a custom implementation of the totalCount(options) method.
     */
-  var totalCount: js.UndefOr[js.Function1[/* loadOptions */ Filter, Promise[Double] | JQueryPromise[Double]]] = js.undefined
+  var totalCount: js.UndefOr[js.Function1[/* loadOptions */ Filter[TItem], js.Thenable[Double]]] = js.undefined
   
   /**
-    * [descr:CustomStore.Options.update]
+    * Specifies a custom implementation of the update(key, values) method.
     */
-  var update: js.UndefOr[
-    js.Function2[
-      /* key */ js.Any | String | Double, 
-      /* values */ js.Any, 
-      Promise[js.Any] | JQueryPromise[js.Any]
-    ]
-  ] = js.undefined
+  var update: js.UndefOr[js.Function2[/* key */ TKey, /* values */ TItem, js.Thenable[Any]]] = js.undefined
   
   /**
-    * [descr:CustomStore.Options.useDefaultSearch]
+    * Specifies whether the store combines the search and filter expressions. Defaults to true if the loadMode is &apos;raw&apos; and false if it is &apos;processed&apos;.
     */
   var useDefaultSearch: js.UndefOr[Boolean] = js.undefined
 }
 object CustomStoreOptions {
   
-  inline def apply(): CustomStoreOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[CustomStoreOptions]
+  inline def apply[TItem, TKey](
+    load: LoadOptions[TItem] => DxPromise[ResolvedData[TItem]] | js.Thenable[ResolvedData[TItem]] | (js.Array[GroupItem[Any] | TItem])
+  ): CustomStoreOptions[TItem, TKey] = {
+    val __obj = js.Dynamic.literal(load = js.Any.fromFunction1(load))
+    __obj.asInstanceOf[CustomStoreOptions[TItem, TKey]]
   }
   
-  extension [Self <: CustomStoreOptions](x: Self) {
+  extension [Self <: CustomStoreOptions[?, ?], TItem, TKey](x: Self & (CustomStoreOptions[TItem, TKey])) {
     
-    inline def setByKey(value: /* key */ js.Any | String | Double => Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "byKey", js.Any.fromFunction1(value))
+    inline def setByKey(value: /* key */ TKey => js.Thenable[TItem]): Self = StObject.set(x, "byKey", js.Any.fromFunction1(value))
     
     inline def setByKeyUndefined: Self = StObject.set(x, "byKey", js.undefined)
     
@@ -90,29 +78,27 @@ object CustomStoreOptions {
     
     inline def setCacheRawDataUndefined: Self = StObject.set(x, "cacheRawData", js.undefined)
     
-    inline def setInsert(value: /* values */ js.Any => Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: /* values */ TItem => js.Thenable[TItem]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
     
     inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    inline def setLoad(value: /* options */ LoadOptions => Promise[js.Any] | JQueryPromise[js.Any] | js.Array[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(
+      value: LoadOptions[TItem] => DxPromise[ResolvedData[TItem]] | js.Thenable[ResolvedData[TItem]] | (js.Array[GroupItem[Any] | TItem])
+    ): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     inline def setLoadMode(value: processed | raw): Self = StObject.set(x, "loadMode", value.asInstanceOf[js.Any])
     
     inline def setLoadModeUndefined: Self = StObject.set(x, "loadMode", js.undefined)
     
-    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
-    
-    inline def setRemove(value: /* key */ js.Any | String | Double => Promise[Unit] | JQueryPromise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* key */ TKey => js.Thenable[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setTotalCount(value: /* loadOptions */ Filter => Promise[Double] | JQueryPromise[Double]): Self = StObject.set(x, "totalCount", js.Any.fromFunction1(value))
+    inline def setTotalCount(value: /* loadOptions */ Filter[TItem] => js.Thenable[Double]): Self = StObject.set(x, "totalCount", js.Any.fromFunction1(value))
     
     inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
     
-    inline def setUpdate(
-      value: (/* key */ js.Any | String | Double, /* values */ js.Any) => Promise[js.Any] | JQueryPromise[js.Any]
-    ): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (/* key */ TKey, /* values */ TItem) => js.Thenable[Any]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     

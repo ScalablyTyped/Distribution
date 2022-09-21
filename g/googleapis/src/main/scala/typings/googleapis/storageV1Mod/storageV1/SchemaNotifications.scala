@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of notification subscriptions.
-  */
 trait SchemaNotifications extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaNotifications extends StObject {
   var items: js.UndefOr[js.Array[SchemaNotification]] = js.undefined
   
   /**
-    * The kind of item this is. For lists of notifications, this is always
-    * storage#notifications.
+    * The kind of item this is. For lists of notifications, this is always storage#notifications.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaNotifications {
   
@@ -33,9 +29,11 @@ object SchemaNotifications {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaNotification*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaNotification*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

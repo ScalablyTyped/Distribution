@@ -1,7 +1,7 @@
 
 # Scala.js typings for cucumber-html-reporter
 
-Typings are for version 5.2.0
+Typings are for version 5.5.0
 
 ## Library description:
 Generates Cucumber HTML reports in three different themes
@@ -10,10 +10,10 @@ Generates Cucumber HTML reports in three different themes
 | ------------------ | :-------------: |
 | Full name          | cucumber-html-reporter |
 | Keywords           | cucumber, html, cucumber-html-reporter, html report, json to html |
-| # releases         | 8 |
-| # dependents       | 52 |
-| # downloads        | 5827404 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1222934.6666666667 |
+| # stars            | 207.0 |
 
 ## Links
 - [Homepage](https://github.com/gkushang/cucumber-html-reporter#readme)

@@ -1,16 +1,23 @@
 package typings.p2.global.p2
 
+import typings.p2.mod.SolverOptions
+import typings.p2.p2Numbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("p2.Solver")
 @js.native
-class Solver ()
+open class Solver protected ()
   extends typings.p2.mod.Solver {
-  def this(options: js.Object) = this()
-  def this(options: js.Object, `type`: Double) = this()
-  def this(options: Unit, `type`: Double) = this()
+  def this(
+    options: Unit,
+    `type`: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Solver.GS */ Any
+  ) = this()
+  def this(
+    options: SolverOptions,
+    `type`: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Solver.GS */ Any
+  ) = this()
 }
 /* static members */
 object Solver {
@@ -21,11 +28,6 @@ object Solver {
   
   @JSGlobal("p2.Solver.GS")
   @js.native
-  def GS: Double = js.native
-  inline def GS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GS")(x.asInstanceOf[js.Any])
-  
-  @JSGlobal("p2.Solver.ISLAND")
-  @js.native
-  def ISLAND: Double = js.native
-  inline def ISLAND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISLAND")(x.asInstanceOf[js.Any])
+  def GS: `1` = js.native
+  inline def GS_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GS")(x.asInstanceOf[js.Any])
 }

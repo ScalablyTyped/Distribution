@@ -10,10 +10,10 @@ object titleMod {
   
   @JSImport("material-ui/svg-icons/editor/title", JSImport.Default)
   @js.native
-  class default () extends EditorTitle
+  open class default () extends EditorTitle
   
   @JSImport("material-ui/svg-icons/editor/title", "EditorTitle")
   @js.native
-  class EditorTitle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorTitle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

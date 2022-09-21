@@ -14,7 +14,7 @@ trait SharedEventProperties extends StObject {
   var args: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in string ]: any}
-    */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties & TopLevel[js.Any]
+    */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -74,7 +74,7 @@ object SharedEventProperties {
     inline def setArgs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: any}
-      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties & TopLevel[js.Any]
+      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties & TopLevel[Any]
     ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

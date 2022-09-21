@@ -2,7 +2,6 @@ package typings.relayRuntime
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.relayRuntime.anon.Stop
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,14 +93,14 @@ object relayProfilerMod {
       * attached profile handlers will receive this as the second argument.
       */
     inline def profile(name: String): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")(name.asInstanceOf[js.Any]).asInstanceOf[Stop]
-    inline def profile(name: String, state: js.Any): Stop = (^.asInstanceOf[js.Dynamic].applyDynamic("profile")(name.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stop]
+    inline def profile(name: String, state: Any): Stop = (^.asInstanceOf[js.Dynamic].applyDynamic("profile")(name.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stop]
   }
   
   type Handler = js.Function2[/* name */ String, /* callback */ js.Function0[Unit], Unit]
   
   type ProfileHandler = js.Function2[
     /* name */ String, 
-    /* state */ js.UndefOr[js.Any], 
-    js.Function1[/* error */ js.UndefOr[Error], Unit]
+    /* state */ js.UndefOr[Any], 
+    js.Function1[/* error */ js.UndefOr[js.Error], Unit]
   ]
 }

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  inline def param(obj: js.Any): String = js.Dynamic.global.applyDynamic("param")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def param(obj: Any): String = js.Dynamic.global.applyDynamic("param")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

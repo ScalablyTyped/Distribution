@@ -15,14 +15,14 @@ object urlServiceMod {
   
   @JSImport("@uirouter/core/lib/url/urlService", "UrlService")
   @js.native
-  class UrlService protected ()
+  open class UrlService protected ()
     extends StObject
        with LocationServices
        with UrlSyncApi {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     
-    /** @internal */ /* private */ var _stopListeningFn: js.Any = js.native
+    /** @internal */ /* private */ var _stopListeningFn: Any = js.native
     
     /**
       * The nested [[UrlConfig]] API to configure the URL and retrieve URL information
@@ -64,7 +64,7 @@ object urlServiceMod {
       */
     def parts(): UrlParts = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     /**
       * The nested [[UrlRules]] API for managing URL rules and rewrites
@@ -76,9 +76,9 @@ object urlServiceMod {
     /** See: [[UrlService.sync]] */ /* CompleteClass */
     override def sync(): Unit = js.native
     /* CompleteClass */
-    override def sync(evt: js.Any): Unit = js.native
+    override def sync(evt: Any): Unit = js.native
     /** See: [[UrlService.sync]] */ /* CompleteClass */
     @JSName("sync")
-    var sync_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[js.Any], Unit]) = js.native
+    var sync_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[Any], Unit]) = js.native
   }
 }

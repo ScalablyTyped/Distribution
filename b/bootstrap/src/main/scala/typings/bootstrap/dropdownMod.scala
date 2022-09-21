@@ -1,13 +1,25 @@
 package typings.bootstrap
 
-import typings.bootstrap.anon.PartialOptionsBoundary
+import typings.bootstrap.anon.PartialOptionsAutoClose
+import typings.bootstrap.anon.PartialOptionsModifiers
+import typings.bootstrap.baseComponentMod.GetInstanceFactory
+import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.bootstrapStrings.dispose
 import typings.bootstrap.bootstrapStrings.dynamic
+import typings.bootstrap.bootstrapStrings.hide
+import typings.bootstrap.bootstrapStrings.inside
+import typings.bootstrap.bootstrapStrings.outside
 import typings.bootstrap.bootstrapStrings.parent
+import typings.bootstrap.bootstrapStrings.show
 import typings.bootstrap.bootstrapStrings.static
 import typings.bootstrap.bootstrapStrings.toggle
-import typings.popperJs.mod.Boundary
-import typings.popperJs.mod.PopperOptions
-import typings.std.Element
+import typings.bootstrap.bootstrapStrings.update
+import typings.bootstrap.dropdownMod.Dropdown.Options
+import typings.bootstrap.dropdownMod.Dropdown.jQueryInterface
+import typings.bootstrap.mod.global.Element
+import typings.bootstrap.mod.global.JQuery
+import typings.popperjsCore.enumsMod.Boundary
+import typings.popperjsCore.typesMod.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,47 +28,68 @@ object dropdownMod {
   
   @JSImport("bootstrap/js/dist/dropdown", JSImport.Default)
   @js.native
-  class default protected ()
-    extends StObject
-       with Dropdown {
+  open class default protected () extends Dropdown {
+    def this(element: String) = this()
     def this(element: Element) = this()
-    def this(element: Element, options: PartialOptionsBoundary) = this()
-    
-    /**
-      * Destroys an element's dropdown.
-      */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    
-    /**
-      * Hides the dropdown menu of a given navbar or tabbed navigation.
-      */
-    /* CompleteClass */
-    override def hide(): Unit = js.native
-    
-    /**
-      * Shows the dropdown menu of a given navbar or tabbed navigation.
-      */
-    /* CompleteClass */
-    override def show(): Unit = js.native
-    
-    /**
-      * Toggles the dropdown menu of a given navbar or tabbed navigation.
-      */
-    /* CompleteClass */
-    override def toggle(): Unit = js.native
-    
-    /**
-      * Updates the position of an element's dropdown.
-      */
-    /* CompleteClass */
-    override def update(): Unit = js.native
+    def this(element: String, options: PartialOptionsAutoClose) = this()
+    def this(element: Element, options: PartialOptionsAutoClose) = this()
   }
   object default {
     
     @JSImport("bootstrap/js/dist/dropdown", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Default settings of this plugin
+      *
+      * @link https://getbootstrap.com/docs/5.0/getting-started/javascript/#default-settings
+      */
+    /* static member */
+    @JSImport("bootstrap/js/dist/dropdown", "default.Default")
+    @js.native
+    def Default: Options = js.native
+    
+    /* static member */
+    /* Inlined std.Record<keyof bootstrap.bootstrap/js/dist/dropdown.Dropdown.Options, string> */
+    object DefaultType {
+      
+      @JSImport("bootstrap/js/dist/dropdown", "default.DefaultType")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("bootstrap/js/dist/dropdown", "default.DefaultType.autoClose")
+      @js.native
+      def autoClose: String = js.native
+      inline def autoClose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoClose")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/dropdown", "default.DefaultType.boundary")
+      @js.native
+      def boundary: String = js.native
+      inline def boundary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boundary")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/dropdown", "default.DefaultType.display")
+      @js.native
+      def display: String = js.native
+      inline def display_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("display")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/dropdown", "default.DefaultType.offset")
+      @js.native
+      def offset: String = js.native
+      inline def offset_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offset")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/dropdown", "default.DefaultType.popperConfig")
+      @js.native
+      def popperConfig: js.UndefOr[String] = js.native
+      inline def popperConfig_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popperConfig")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/dropdown", "default.DefaultType.reference")
+      @js.native
+      def reference: String = js.native
+      inline def reference_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reference")(x.asInstanceOf[js.Any])
+    }
+    
+    inline def Default_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSImport("bootstrap/js/dist/dropdown", "default.Events")
     @js.native
@@ -79,43 +112,54 @@ object dropdownMod {
       * with a DOM element.
       */
     /* static member */
-    inline def getInstance(element: Element): Dropdown = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Dropdown]
-    inline def getInstance(element: Element, options: PartialOptionsBoundary): Dropdown = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dropdown]
-  }
-  
-  trait Dropdown extends StObject {
+    @JSImport("bootstrap/js/dist/dropdown", "default.getInstance")
+    @js.native
+    def getInstance: GetInstanceFactory[Dropdown] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[Dropdown]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
-      * Destroys an element's dropdown.
+      * Static method which returns a dropdown instance associated to a DOM element or
+      *  create a new one in case it wasn't initialised.
+      * You can use it like this: bootstrap.Dropdown.getOrCreateInstance(element)
       */
-    def dispose(): Unit
+    /* static member */
+    @JSImport("bootstrap/js/dist/dropdown", "default.getOrCreateInstance")
+    @js.native
+    def getOrCreateInstance: GetOrCreateInstanceFactory[Dropdown, PartialOptionsAutoClose] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[Dropdown, PartialOptionsAutoClose]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/dropdown", "default.jQueryInterface")
+    @js.native
+    def jQueryInterface: typings.bootstrap.dropdownMod.Dropdown.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  trait Dropdown
+    extends typings.bootstrap.baseComponentMod.default {
     
     /**
       * Hides the dropdown menu of a given navbar or tabbed navigation.
       */
-    def hide(): Unit
+    def hide(): Unit = js.native
     
     /**
       * Shows the dropdown menu of a given navbar or tabbed navigation.
       */
-    def show(): Unit
+    def show(): Unit = js.native
     
     /**
       * Toggles the dropdown menu of a given navbar or tabbed navigation.
       */
-    def toggle(): Unit
+    def toggle(): Unit = js.native
     
     /**
       * Updates the position of an element's dropdown.
       */
-    def update(): Unit
+    def update(): Unit = js.native
   }
   object Dropdown {
-    
-    inline def apply(dispose: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit, update: () => Unit): Dropdown = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle), update = js.Any.fromFunction0(update))
-      __obj.asInstanceOf[Dropdown]
-    }
     
     @js.native
     sealed trait Events extends StObject
@@ -158,20 +202,18 @@ object dropdownMod {
            with Events
     }
     
-    extension [Self <: Dropdown](x: Self) {
-      
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
-      
-      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
-      
-      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
-      
-      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
-      
-      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
-    }
+    type Offset = js.Tuple2[Double, Double]
+    
+    type OffsetFunction = js.Function0[Offset]
     
     trait Options extends StObject {
+      
+      /**
+        * Configure the auto close behavior of the dropdown
+        *
+        * @default true
+        */
+      var autoClose: Boolean | inside | outside
       
       /**
         * Overflow constraint boundary of the dropdown menu. Accepts the values
@@ -179,7 +221,7 @@ object dropdownMod {
         * (JavaScript only). For more information refer to Popper.js's
         * preventOverflow docs.
         *
-        * @see {@link https://popper.js.org/docs/v1/#modifiers..preventOverflow.boundariesElement}
+        * @see {@link https://popper.js.org/docs/v2/modifiers/prevent-overflow/#boundary}
         * @default "scrollParent"
         */
       var boundary: Boundary | Element
@@ -193,77 +235,90 @@ object dropdownMod {
       var display: dynamic | static
       
       /**
-        * Allow Dropdown to flip in case of an overlapping on the reference
-        * element. For more information refer to Popper.js's flip docs.
-        *
-        * @see {@link https://popper.js.org/docs/v1/#modifiers..flip.enabled}
-        * @default true
-        */
-      var flip: Boolean
-      
-      /**
-        * Offset of the dropdown relative to its target.
+        * Offset of the dropdown relative to its target. You can pass a string
+        * in data attributes with comma separated values like:
+        * data-bs-offset="10,20"
         *
         * When a function is used to determine the offset, it is called with an
-        * object containing the offset data as its first argument. The function
-        * must return an object with the same structure. The triggering element
-        * DOM node is passed as the second argument.
+        * object containing the popper placement, the reference, and popper
+        * rects as its first argument. The triggering element DOM node is
+        * passed as the second argument. The function must return an array with
+        * two numbers: [skidding, distance].
         *
-        * For more information refer to Popper.js's offset docs.
+        * For more information refer to Popper's offset docs.
         *
-        * @see {@link https://popper.js.org/docs/v1/#modifiers..offset.offset}
-        * @default 0
+        * @default [0, 2]
         */
-      var offset: Double
+      var offset: Offset | String | OffsetFunction
       
       /**
         * To change Bootstrap's default Popper.js config, see Popper.js's
         * configuration
         *
-        * @see {@link https://popper.js.org/docs/v1/#Popper.Defaults}
+        * When a function is used to create the Popper configuration, it's
+        * called with an object that contains the Bootstrap's default Popper
+        * configuration. It helps you use and merge the default with your own
+        * configuration. The function must return a configuration object for
+        * Popper.
+        *
+        * @see {@link https://popper.js.org/docs/v2}
         * @default null
         */
-      var popperConfig: PopperOptions | Null
+      var popperConfig: PartialOptionsModifiers | PopperConfigFunction | Null
       
       /**
         * Reference element of the dropdown menu. Accepts the values of
-        * 'toggle', 'parent', or an HTMLElement reference. For more information
-        * refer to Popper.js's referenceObject docs.
+        * 'toggle', 'parent', an HTMLElement reference or an object providing
+        * getBoundingClientRect. For more information refer to Popper.js's
+        * referenceObject docs.
         *
-        * @see {@link https://popper.js.org/docs/v1/#referenceObject}
+        * @see {@link https://popper.js.org/docs/v2/constructors/#createpopper}
         * @default "toggle"
         */
-      var reference: toggle | parent | Element
+      var reference: toggle | parent | Element | Rect
     }
     object Options {
       
       inline def apply(
+        autoClose: Boolean | inside | outside,
         boundary: Boundary | Element,
         display: dynamic | static,
-        flip: Boolean,
-        offset: Double,
-        reference: toggle | parent | Element
+        offset: Offset | String | OffsetFunction,
+        reference: toggle | parent | Element | Rect
       ): Options = {
-        val __obj = js.Dynamic.literal(boundary = boundary.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], flip = flip.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], popperConfig = null)
+        val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], popperConfig = null)
         __obj.asInstanceOf[Options]
       }
       
       extension [Self <: Options](x: Self) {
         
+        inline def setAutoClose(value: Boolean | inside | outside): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+        
         inline def setBoundary(value: Boundary | Element): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+        
+        inline def setBoundaryVarargs(value: typings.std.Element*): Self = StObject.set(x, "boundary", js.Array(value*))
         
         inline def setDisplay(value: dynamic | static): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
-        inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Offset | String | OffsetFunction): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffsetFunction0(value: () => Offset): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
         
-        inline def setPopperConfig(value: PopperOptions): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
+        inline def setPopperConfig(value: PartialOptionsModifiers | PopperConfigFunction): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
+        
+        inline def setPopperConfigFunction0(value: () => PartialOptionsModifiers): Self = StObject.set(x, "popperConfig", js.Any.fromFunction0(value))
         
         inline def setPopperConfigNull: Self = StObject.set(x, "popperConfig", null)
         
-        inline def setReference(value: toggle | parent | Element): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+        inline def setReference(value: toggle | parent | Element | Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
       }
     }
+    
+    type PopperConfigFunction = js.Function0[PartialOptionsModifiers]
+    
+    type jQueryInterface = js.Function1[
+        /* config */ js.UndefOr[PartialOptionsAutoClose | toggle | show | hide | update | dispose], 
+        JQuery
+      ]
   }
 }

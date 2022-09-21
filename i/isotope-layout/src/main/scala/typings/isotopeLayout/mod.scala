@@ -36,7 +36,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("isotope-layout", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Isotope {
     def this(elementOrSelector: String, options: IsotopeOptions) = this()
@@ -663,7 +663,7 @@ object mod {
       
       inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
       
-      inline def setSortByVarargs(value: String*): Self = StObject.set(x, "sortBy", js.Array(value :_*))
+      inline def setSortByVarargs(value: String*): Self = StObject.set(x, "sortBy", js.Array(value*))
       
       inline def setStagger(value: Double | String): Self = StObject.set(x, "stagger", value.asInstanceOf[js.Any])
       

@@ -10,10 +10,10 @@ Minimal bit array implementation that is compatible with ndarrays
 | ------------------ | :-------------: |
 | Full name          | minimal-bit-array |
 | Keywords           | bitarray, bit, set, ndarray |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1070 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 553.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/mikolalysenko/minimal-bit-array)

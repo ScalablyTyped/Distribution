@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("cassandra-store", JSImport.Namespace)
   @js.native
-  class ^ protected () extends CassandraStore {
+  open class ^ protected () extends CassandraStore {
     def this(opts: CassandraStoreOptions) = this()
     def this(opts: CassandraStoreOptions, callback: EmptyCallback) = this()
   }
@@ -29,7 +29,7 @@ object mod {
     @JSName("all")
     def all_MCassandraStore(
       callback: js.Function2[
-          /* err */ js.Any, 
+          /* err */ Any, 
           /* obj */ js.UndefOr[js.Array[SessionData] | StringDictionary[SessionData] | Null], 
           Unit
         ]
@@ -38,7 +38,7 @@ object mod {
     @JSName("clear")
     def clear_MCassandraStore(): Unit = js.native
     @JSName("clear")
-    def clear_MCassandraStore(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def clear_MCassandraStore(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
     
     def client: Client = js.native
     
@@ -48,7 +48,7 @@ object mod {
     def client_=(value: Client): Unit = js.native
     
     @JSName("length")
-    def length_MCassandraStore(callback: js.Function2[/* err */ js.Any, /* length */ Double, Unit]): Unit = js.native
+    def length_MCassandraStore(callback: js.Function2[/* err */ Any, /* length */ Double, Unit]): Unit = js.native
     
     def table: String = js.native
     def table_=(value: String): Unit = js.native

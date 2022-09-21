@@ -3,7 +3,6 @@ package typings.virtualKeyboard
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import typings.std.Event
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +51,7 @@ object mod {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var comboRegex: js.UndefOr[RegExp] = js.undefined
+    var comboRegex: js.UndefOr[js.RegExp] = js.undefined
     
     var combos: js.UndefOr[js.Object] = js.undefined
     
@@ -240,7 +239,7 @@ object mod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setComboRegex(value: RegExp): Self = StObject.set(x, "comboRegex", value.asInstanceOf[js.Any])
+      inline def setComboRegex(value: js.RegExp): Self = StObject.set(x, "comboRegex", value.asInstanceOf[js.Any])
       
       inline def setComboRegexUndefined: Self = StObject.set(x, "comboRegex", js.undefined)
       
@@ -296,7 +295,7 @@ object mod {
       
       inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      inline def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value :_*))
+      inline def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value*))
       
       inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
@@ -457,7 +456,7 @@ object mod {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
+      inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value*))
       
       inline def setRowLooping(value: Boolean): Self = StObject.set(x, "rowLooping", value.asInstanceOf[js.Any])
       

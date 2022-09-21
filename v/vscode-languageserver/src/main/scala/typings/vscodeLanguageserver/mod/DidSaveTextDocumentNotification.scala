@@ -1,7 +1,6 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashdidSave
-import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
 import typings.vscodeLanguageserverProtocol.protocolMod.DidSaveTextDocumentParams
 import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentSaveRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -10,11 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DidSaveTextDocumentNotification {
   
+  @JSImport("vscode-languageserver", "DidSaveTextDocumentNotification.messageDirection")
+  @js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
   @JSImport("vscode-languageserver", "DidSaveTextDocumentNotification.method")
   @js.native
   val method: textDocumentSlashdidSave = js.native
   
   @JSImport("vscode-languageserver", "DidSaveTextDocumentNotification.type")
   @js.native
-  val `type`: ProtocolNotificationType[DidSaveTextDocumentParams, TextDocumentSaveRegistrationOptions] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[DidSaveTextDocumentParams, TextDocumentSaveRegistrationOptions] = js.native
 }

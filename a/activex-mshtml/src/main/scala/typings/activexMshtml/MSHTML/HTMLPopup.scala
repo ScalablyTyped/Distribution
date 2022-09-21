@@ -11,9 +11,9 @@ trait HTMLPopup extends StObject {
   /* private */ @JSName("MSHTML.HTMLPopup_typekey")
   var MSHTMLDotHTMLPopup_typekey: HTMLPopup
   
-  def Show(x: Double, y: Double, w: Double, h: Double, pElement: js.Any): Unit
+  def Show(x: Double, y: Double, w: Double, h: Double, pElement: Any): Unit
   
-  val constructor: js.Any
+  val constructor: Any
   
   val document: IHTMLDocument
   
@@ -24,8 +24,8 @@ object HTMLPopup {
   inline def apply(
     Hide: () => Unit,
     MSHTMLDotHTMLPopup_typekey: HTMLPopup,
-    Show: (Double, Double, Double, Double, js.Any) => Unit,
-    constructor: js.Any,
+    Show: (Double, Double, Double, Double, Any) => Unit,
+    constructor: Any,
     document: IHTMLDocument,
     isOpen: Boolean
   ): HTMLPopup = {
@@ -36,7 +36,7 @@ object HTMLPopup {
   
   extension [Self <: HTMLPopup](x: Self) {
     
-    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     inline def setDocument(value: IHTMLDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
@@ -46,6 +46,6 @@ object HTMLPopup {
     
     inline def setMSHTMLDotHTMLPopup_typekey(value: HTMLPopup): Self = StObject.set(x, "MSHTML.HTMLPopup_typekey", value.asInstanceOf[js.Any])
     
-    inline def setShow(value: (Double, Double, Double, Double, js.Any) => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction5(value))
+    inline def setShow(value: (Double, Double, Double, Double, Any) => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction5(value))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Transformable")
 @js.native
-class Transformable () extends StObject {
+open class Transformable () extends StObject {
   
   def bake(): this.type = js.native
   def bake(m: js.Array[Double]): this.type = js.native

@@ -42,12 +42,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def cycle(): JQuery = js.native
-  def cycle(methodNameDontCallMe: String, arg1DontCallMe: js.Any, arg2DontCallMe: js.Any): JQuery = js.native
+  def cycle(methodNameDontCallMe: String, arg1DontCallMe: Any, arg2DontCallMe: Any): JQuery = js.native
   def cycle(options: Options): JQuery = js.native
   @JSName("cycle")
   var cycle_Original: Cycle2 = js.native
   @JSName("cycle")
-  def cycle_add(methodName: add, newSlide: js.Any): JQuery = js.native
+  def cycle_add(methodName: add, newSlide: Any): JQuery = js.native
   // string or JQuery
   @JSName("cycle")
   def cycle_destroy(methodName: destroy): JQuery = js.native

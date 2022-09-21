@@ -17,7 +17,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T /* <: NamedStyles[js.Any | T] */](stylesObject: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def create[T /* <: NamedStyles[Any | T] */](stylesObject: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>}
       */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.create & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stylesObject.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>}
@@ -46,7 +46,7 @@ object mod {
   
   type NamedStyles[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: react-native.react-native.ViewStyle | react-native.react-native.TextStyle | react-native.react-native.ImageStyle | react-native-size-matters.react-native-size-matters.StringifiedStyles}
-    */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.NamedStyles & TopLevel[js.Any]
+    */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.NamedStyles & TopLevel[Any]
   
   trait StringifiedStyles extends StObject {
     

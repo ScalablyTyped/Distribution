@@ -5,13 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new ModelComponentSystem.
-  * @param app - The Application.
+  * Allows an Entity to render a model or a primitive shape like a box, capsule, sphere, cylinder,
+  * cone etc.
+  *
+  * @augments ComponentSystem
   */
 @JSGlobal("pc.ModelComponentSystem")
 @js.native
-class ModelComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.EventHandler {
-  def this(app: typings.playcanvas.pc.Application) = this()
+open class ModelComponentSystem protected ()
+  extends typings.playcanvas.mod.ModelComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

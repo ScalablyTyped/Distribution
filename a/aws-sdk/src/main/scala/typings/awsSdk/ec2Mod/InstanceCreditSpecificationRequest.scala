@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceCreditSpecificationRequest extends StObject {
   
   /**
-    * The credit option for CPU usage of the instance. Valid values are standard and unlimited.
+    * The credit option for CPU usage of the instance. Valid values: standard | unlimited  T3 instances with host tenancy do not support the unlimited CPU credit option.
     */
   var CpuCredits: js.UndefOr[String] = js.undefined
   

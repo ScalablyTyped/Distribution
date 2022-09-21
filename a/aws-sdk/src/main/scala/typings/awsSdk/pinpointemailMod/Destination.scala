@@ -34,18 +34,18 @@ object Destination {
     
     inline def setBccAddressesUndefined: Self = StObject.set(x, "BccAddresses", js.undefined)
     
-    inline def setBccAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "BccAddresses", js.Array(value :_*))
+    inline def setBccAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "BccAddresses", js.Array(value*))
     
     inline def setCcAddresses(value: EmailAddressList): Self = StObject.set(x, "CcAddresses", value.asInstanceOf[js.Any])
     
     inline def setCcAddressesUndefined: Self = StObject.set(x, "CcAddresses", js.undefined)
     
-    inline def setCcAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "CcAddresses", js.Array(value :_*))
+    inline def setCcAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "CcAddresses", js.Array(value*))
     
     inline def setToAddresses(value: EmailAddressList): Self = StObject.set(x, "ToAddresses", value.asInstanceOf[js.Any])
     
     inline def setToAddressesUndefined: Self = StObject.set(x, "ToAddresses", js.undefined)
     
-    inline def setToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ToAddresses", js.Array(value :_*))
+    inline def setToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ToAddresses", js.Array(value*))
   }
 }

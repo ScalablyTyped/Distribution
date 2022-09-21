@@ -18,7 +18,7 @@ trait FieldsResource extends StObject {
   
   /**
     * Lists the field configuration and metadata for this database. Currently, FirestoreAdmin.ListFields only supports listing fields that have been explicitly overridden. To issue this
-    * query, call FirestoreAdmin.ListFields with the filter set to `indexConfig.usesAncestorConfig:false`.
+    * query, call FirestoreAdmin.ListFields with the filter set to `indexConfig.usesAncestorConfig:false` .
     */
   def list(): Request[GoogleFirestoreAdminV1ListFieldsResponse] = js.native
   def list(request: Alt): Request[GoogleFirestoreAdminV1ListFieldsResponse] = js.native

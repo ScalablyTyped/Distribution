@@ -15,7 +15,7 @@ object VisualizationAPI {
       * Closes a visualization and releases the session object.
       * @return - A promise.
       */
-    def close(): IPromise[js.Any] = js.native
+    def close(): IPromise[Any] = js.native
     
     /**
       * Tells the visualization it has been resized and should re-paint.
@@ -27,7 +27,7 @@ object VisualizationAPI {
       * @param options - Options to set (using applyPatches).
       */
     def setOptions(): Unit = js.native
-    def setOptions(options: js.Any): Unit = js.native
+    def setOptions(options: Any): Unit = js.native
     
     /**
       * Shows the visualization in an HTML element.
@@ -40,10 +40,10 @@ object VisualizationAPI {
       */
     def show(): Unit = js.native
     def show(element: String): Unit = js.native
-    def show(element: String, options: js.Any): Unit = js.native
-    def show(element: js.Any): Unit = js.native
-    def show(element: js.Any, options: js.Any): Unit = js.native
-    def show(element: Unit, options: js.Any): Unit = js.native
+    def show(element: String, options: Any): Unit = js.native
+    def show(element: Any): Unit = js.native
+    def show(element: Any, options: Any): Unit = js.native
+    def show(element: Unit, options: Any): Unit = js.native
     
     /**
       * Table object for this visualization.
@@ -70,6 +70,7 @@ object VisualizationAPI {
       *       # table
       *       # treemap
       *       # extension
+      *       # listbox
       * @param [cols] - Optional. Column definitions, dimensions and measures.
       *       Each entry can be of the following structures:
       *       # String
@@ -80,17 +81,17 @@ object VisualizationAPI {
       * @param [options] - Optional. Options to set.
       * @return - A promise of a QVisualization.
       */
-    def create(`type`: VisualizationType): IPromise[js.Any] = js.native
-    def create(`type`: VisualizationType, cols: js.Array[js.Any]): IPromise[js.Any] = js.native
-    def create(`type`: VisualizationType, cols: js.Array[js.Any], options: js.Any): IPromise[js.Any] = js.native
-    def create(`type`: VisualizationType, cols: Unit, options: js.Any): IPromise[js.Any] = js.native
+    def create(`type`: VisualizationType): IPromise[Any] = js.native
+    def create(`type`: VisualizationType, cols: js.Array[Any]): IPromise[Any] = js.native
+    def create(`type`: VisualizationType, cols: js.Array[Any], options: Any): IPromise[Any] = js.native
+    def create(`type`: VisualizationType, cols: Unit, options: Any): IPromise[Any] = js.native
     
     /**
       * Gets an existing visualization.
       * @param id - Id for an existing visualization.
       * @return - A promise of a QVisualization.
       */
-    def get(id: String): IPromise[js.Any] = js.native
+    def get(id: String): IPromise[Any] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -105,6 +106,7 @@ object VisualizationAPI {
     - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.table
     - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.treemap
     - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.`extension`
+    - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.listbox
   */
   trait VisualizationType extends StObject
   object VisualizationType {
@@ -120,6 +122,8 @@ object VisualizationAPI {
     inline def kpi: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.kpi = "kpi".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.kpi]
     
     inline def linechart: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.linechart = "linechart".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.linechart]
+    
+    inline def listbox: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.listbox = "listbox".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.listbox]
     
     inline def piechart: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.piechart = "piechart".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.piechart]
     

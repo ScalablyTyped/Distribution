@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "NavigatorIOS")
 @js.native
-class NavigatorIOS protected ()
-  extends Component[NavigatorIOSProps, js.Object, js.Any] {
+open class NavigatorIOS protected ()
+  extends Component[NavigatorIOSProps, js.Object, Any] {
   def this(props: NavigatorIOSProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: NavigatorIOSProps, context: js.Any) = this()
+  def this(props: NavigatorIOSProps, context: Any) = this()
   
   /**
     * Go back one page

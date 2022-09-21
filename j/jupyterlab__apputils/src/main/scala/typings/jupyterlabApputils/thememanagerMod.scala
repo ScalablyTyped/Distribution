@@ -6,6 +6,7 @@ import typings.jupyterlabApputils.tokensMod.IThemeManager
 import typings.jupyterlabApputils.tokensMod.IThemeManager.ITheme
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
+import typings.jupyterlabTranslation.tokensMod.ITranslator
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
@@ -17,7 +18,7 @@ object thememanagerMod {
   
   @JSImport("@jupyterlab/apputils/lib/thememanager", "ThemeManager")
   @js.native
-  class ThemeManager protected ()
+  open class ThemeManager protected ()
     extends StObject
        with IThemeManager {
     /**
@@ -25,28 +26,28 @@ object thememanagerMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _base: js.Any = js.native
+    /* private */ var _base: Any = js.native
     
-    /* private */ var _current: js.Any = js.native
+    /* private */ var _current: Any = js.native
     
-    /* private */ var _host: js.Any = js.native
+    /* private */ var _host: Any = js.native
     
     /**
       * Change a font size by a positive or negative increment.
       */
-    /* private */ var _incrFontSize: js.Any = js.native
+    /* private */ var _incrFontSize: Any = js.native
     
     /**
       * Initialize the key -> property dict for the overrides
       */
-    /* private */ var _initOverrideProps: js.Any = js.native
+    /* private */ var _initOverrideProps: Any = js.native
     
-    /* private */ var _links: js.Any = js.native
+    /* private */ var _links: Any = js.native
     
     /**
       * Handle the current settings.
       */
-    /* private */ var _loadSettings: js.Any = js.native
+    /* private */ var _loadSettings: Any = js.native
     
     /**
       * Load the theme.
@@ -54,30 +55,32 @@ object thememanagerMod {
       * #### Notes
       * This method assumes that the `theme` exists.
       */
-    /* private */ var _loadTheme: js.Any = js.native
+    /* private */ var _loadTheme: Any = js.native
     
     /**
       * Handle a theme error.
       */
-    /* private */ var _onError: js.Any = js.native
+    /* private */ var _onError: Any = js.native
     
-    /* private */ var _outstanding: js.Any = js.native
+    /* private */ var _outstanding: Any = js.native
     
-    /* private */ var _overrideProps: js.Any = js.native
+    /* private */ var _overrideProps: Any = js.native
     
-    /* private */ var _overrides: js.Any = js.native
+    /* private */ var _overrides: Any = js.native
     
-    /* private */ var _pending: js.Any = js.native
+    /* private */ var _pending: Any = js.native
     
-    /* private */ var _requests: js.Any = js.native
+    /* private */ var _requests: Any = js.native
     
-    /* private */ var _settings: js.Any = js.native
+    /* private */ var _settings: Any = js.native
     
-    /* private */ var _splash: js.Any = js.native
+    /* private */ var _splash: Any = js.native
     
-    /* private */ var _themeChanged: js.Any = js.native
+    /* private */ var _themeChanged: Any = js.native
     
-    /* private */ var _themes: js.Any = js.native
+    /* private */ var _themes: Any = js.native
+    
+    /* private */ var _trans: Any = js.native
     
     /**
       * Decrease a font size w.r.t. its current setting or its value in the
@@ -95,6 +98,12 @@ object thememanagerMod {
       * @return value - The current value of the Jupyterlab CSS variable
       */
     def getCSS(key: String): String = js.native
+    
+    /**
+      * Get display name for theme.
+      */
+    /* CompleteClass */
+    override def getDisplayName(name: String): String = js.native
     
     /**
       * Increase a font size w.r.t. its current setting or its value in the
@@ -192,9 +201,11 @@ object thememanagerMod {
     def themes_MThemeManager: js.Array[String] = js.native
     
     /**
-      * Toggle the `theme-scrollbbars` setting.
+      * Toggle the `theme-scrollbars` setting.
       */
     def toggleThemeScrollbars(): js.Promise[Unit] = js.native
+    
+    /* protected */ var translator: ITranslator = js.native
     
     /**
       * Validate a CSS value w.r.t. a key
@@ -233,6 +244,11 @@ object thememanagerMod {
       var splash: js.UndefOr[ISplashScreen] = js.undefined
       
       /**
+        * The application language translator.
+        */
+      var translator: js.UndefOr[ITranslator] = js.undefined
+      
+      /**
         * The url for local theme loading.
         */
       var url: String
@@ -255,6 +271,10 @@ object thememanagerMod {
         inline def setSplash(value: ISplashScreen): Self = StObject.set(x, "splash", value.asInstanceOf[js.Any])
         
         inline def setSplashUndefined: Self = StObject.set(x, "splash", js.undefined)
+        
+        inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
+        
+        inline def setTranslatorUndefined: Self = StObject.set(x, "translator", js.undefined)
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }

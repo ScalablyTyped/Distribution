@@ -9,7 +9,7 @@ trait SearchSchemaVersionSummary extends StObject {
   /**
     * The date the schema version was created.
     */
-  var CreatedDate: js.UndefOr[timestampIso8601] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The version number of the schema
@@ -30,7 +30,7 @@ object SearchSchemaVersionSummary {
   
   extension [Self <: SearchSchemaVersionSummary](x: Self) {
     
-    inline def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     

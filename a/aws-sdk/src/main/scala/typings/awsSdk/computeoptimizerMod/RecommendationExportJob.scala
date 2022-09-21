@@ -9,7 +9,7 @@ trait RecommendationExportJob extends StObject {
   /**
     * The timestamp of when the export job was created.
     */
-  var creationTimestamp: js.UndefOr[CreationTimestamp] = js.undefined
+  var creationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An object that describes the destination of the export file.
@@ -29,7 +29,7 @@ trait RecommendationExportJob extends StObject {
   /**
     * The timestamp of when the export job was last updated.
     */
-  var lastUpdatedTimestamp: js.UndefOr[LastUpdatedTimestamp] = js.undefined
+  var lastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The resource type of the exported recommendations.
@@ -50,7 +50,7 @@ object RecommendationExportJob {
   
   extension [Self <: RecommendationExportJob](x: Self) {
     
-    inline def setCreationTimestamp(value: CreationTimestamp): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: js.Date): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
@@ -66,7 +66,7 @@ object RecommendationExportJob {
     
     inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    inline def setLastUpdatedTimestamp(value: LastUpdatedTimestamp): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
     

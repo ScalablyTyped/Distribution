@@ -39,6 +39,6 @@ object RowSize {
     
     inline def setTupleUndefined: Self = StObject.set(x, "tuple", js.undefined)
     
-    inline def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value :_*))
+    inline def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value*))
   }
 }

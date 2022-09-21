@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("photonui.Dialog")
 @js.native
-class Dialog ()
+open class Dialog ()
   extends StObject
      with typings.photonui.photonui.Dialog {
   
@@ -17,7 +17,7 @@ class Dialog ()
   var absolutePosition: X = js.native
   
   /* CompleteClass */
-  override def addButton(widget: typings.photonui.photonui.Widget, layoutOptions: js.Any): Unit = js.native
+  override def addButton(widget: typings.photonui.photonui.Widget, layoutOptions: Any): Unit = js.native
   
   /* CompleteClass */
   override def addClass(className: String): Unit = js.native
@@ -68,7 +68,7 @@ class Dialog ()
   
   // readonly
   /* CompleteClass */
-  var layoutOptions: StringDictionary[js.Any] = js.native
+  var layoutOptions: StringDictionary[Any] = js.native
   
   /* CompleteClass */
   var maxHeight: Double = js.native
@@ -118,7 +118,7 @@ class Dialog ()
   var position: X = js.native
   
   /* CompleteClass */
-  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit = js.native
+  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: Any): Unit = js.native
   
   /* CompleteClass */
   override def removeButton(widget: typings.photonui.photonui.Widget): Unit = js.native

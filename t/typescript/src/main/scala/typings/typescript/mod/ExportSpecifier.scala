@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExportSpecifier
   extends StObject
      with NamedDeclaration
+     with JSDocContainer
+     with HasJSDoc
      with ImportOrExportSpecifier {
+  
+  val isTypeOnly: Boolean = js.native
   
   @JSName("kind")
   val kind_ExportSpecifier: typings.typescript.mod.SyntaxKind.ExportSpecifier = js.native

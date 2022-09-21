@@ -6,29 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Occurrence extends StObject {
   
+  /** Describes the installation of a package on the linked resource. */
+  @JSName("package")
+  var _package: js.UndefOr[PackageOccurrence] = js.undefined
+  
   /** Describes an attestation of an artifact. */
-  var attestation: js.UndefOr[Details] = js.undefined
+  var attestation: js.UndefOr[AttestationOccurrence] = js.undefined
   
   /** Describes a verifiable build. */
-  var build: js.UndefOr[GrafeasV1beta1BuildDetails] = js.undefined
+  var build: js.UndefOr[BuildOccurrence] = js.undefined
+  
+  /** Describes a compliance violation on a linked resource. */
+  var compliance: js.UndefOr[ComplianceOccurrence] = js.undefined
   
   /** Output only. The time this occurrence was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
   /** Describes the deployment of an artifact on a runtime. */
-  var deployment: js.UndefOr[GrafeasV1beta1DeploymentDetails] = js.undefined
-  
-  /** Describes how this resource derives from the basis in the associated note. */
-  var derivedImage: js.UndefOr[GrafeasV1beta1ImageDetails] = js.undefined
+  var deployment: js.UndefOr[DeploymentOccurrence] = js.undefined
   
   /** Describes when a resource was discovered. */
-  var discovered: js.UndefOr[GrafeasV1beta1DiscoveryDetails] = js.undefined
+  var discovery: js.UndefOr[DiscoveryOccurrence] = js.undefined
   
-  /** Describes the installation of a package on the linked resource. */
-  var installation: js.UndefOr[GrafeasV1beta1PackageDetails] = js.undefined
+  /** Describes an attestation of an artifact using dsse. */
+  var dsseAttestation: js.UndefOr[DSSEAttestationOccurrence] = js.undefined
   
-  /** Describes a specific in-toto link. */
-  var intoto: js.UndefOr[GrafeasV1beta1IntotoDetails] = js.undefined
+  /** https://github.com/secure-systems-lab/dsse */
+  var envelope: js.UndefOr[Envelope] = js.undefined
+  
+  /** Describes how this resource derives from the basis in the associated note. */
+  var image: js.UndefOr[ImageOccurrence] = js.undefined
   
   /** Output only. This explicitly denotes which of the occurrence details are specified. This field can be used as a filter in list requests. */
   var kind: js.UndefOr[String] = js.undefined
@@ -42,14 +49,17 @@ trait Occurrence extends StObject {
   /** A description of actions that can be taken to remedy the note. */
   var remediation: js.UndefOr[String] = js.undefined
   
-  /** Required. Immutable. The resource for which the occurrence applies. */
-  var resource: js.UndefOr[Resource] = js.undefined
+  /** Required. Immutable. A URI that represents the resource for which the occurrence applies. For example, `https://gcr.io/project/image@sha256:123abc` for a Docker image. */
+  var resourceUri: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this occurrence was last updated. */
   var updateTime: js.UndefOr[String] = js.undefined
   
+  /** Describes an available package upgrade on the linked resource. */
+  var upgrade: js.UndefOr[UpgradeOccurrence] = js.undefined
+  
   /** Describes a security vulnerability. */
-  var vulnerability: js.UndefOr[GrafeasV1beta1VulnerabilityDetails] = js.undefined
+  var vulnerability: js.UndefOr[VulnerabilityOccurrence] = js.undefined
 }
 object Occurrence {
   
@@ -60,37 +70,41 @@ object Occurrence {
   
   extension [Self <: Occurrence](x: Self) {
     
-    inline def setAttestation(value: Details): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
+    inline def setAttestation(value: AttestationOccurrence): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
     inline def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
     
-    inline def setBuild(value: GrafeasV1beta1BuildDetails): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: BuildOccurrence): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    
+    inline def setCompliance(value: ComplianceOccurrence): Self = StObject.set(x, "compliance", value.asInstanceOf[js.Any])
+    
+    inline def setComplianceUndefined: Self = StObject.set(x, "compliance", js.undefined)
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    inline def setDeployment(value: GrafeasV1beta1DeploymentDetails): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: DeploymentOccurrence): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
     inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
     
-    inline def setDerivedImage(value: GrafeasV1beta1ImageDetails): Self = StObject.set(x, "derivedImage", value.asInstanceOf[js.Any])
+    inline def setDiscovery(value: DiscoveryOccurrence): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
     
-    inline def setDerivedImageUndefined: Self = StObject.set(x, "derivedImage", js.undefined)
+    inline def setDiscoveryUndefined: Self = StObject.set(x, "discovery", js.undefined)
     
-    inline def setDiscovered(value: GrafeasV1beta1DiscoveryDetails): Self = StObject.set(x, "discovered", value.asInstanceOf[js.Any])
+    inline def setDsseAttestation(value: DSSEAttestationOccurrence): Self = StObject.set(x, "dsseAttestation", value.asInstanceOf[js.Any])
     
-    inline def setDiscoveredUndefined: Self = StObject.set(x, "discovered", js.undefined)
+    inline def setDsseAttestationUndefined: Self = StObject.set(x, "dsseAttestation", js.undefined)
     
-    inline def setInstallation(value: GrafeasV1beta1PackageDetails): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
+    inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
     
-    inline def setInstallationUndefined: Self = StObject.set(x, "installation", js.undefined)
+    inline def setEnvelopeUndefined: Self = StObject.set(x, "envelope", js.undefined)
     
-    inline def setIntoto(value: GrafeasV1beta1IntotoDetails): Self = StObject.set(x, "intoto", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageOccurrence): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    inline def setIntotoUndefined: Self = StObject.set(x, "intoto", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -108,16 +122,24 @@ object Occurrence {
     
     inline def setRemediationUndefined: Self = StObject.set(x, "remediation", js.undefined)
     
-    inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
-    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    inline def setVulnerability(value: GrafeasV1beta1VulnerabilityDetails): Self = StObject.set(x, "vulnerability", value.asInstanceOf[js.Any])
+    inline def setUpgrade(value: UpgradeOccurrence): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
+    
+    inline def setUpgradeUndefined: Self = StObject.set(x, "upgrade", js.undefined)
+    
+    inline def setVulnerability(value: VulnerabilityOccurrence): Self = StObject.set(x, "vulnerability", value.asInstanceOf[js.Any])
     
     inline def setVulnerabilityUndefined: Self = StObject.set(x, "vulnerability", js.undefined)
+    
+    inline def set_package(value: PackageOccurrence): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

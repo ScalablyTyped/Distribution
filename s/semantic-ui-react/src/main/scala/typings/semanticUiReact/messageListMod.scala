@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.messageItemMod.MessageItemProps
@@ -15,12 +15,12 @@ object messageListMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Message/MessageList", JSImport.Default)
   @js.native
-  val default: StatelessComponent[MessageListProps] = js.native
+  val default: FC[MessageListProps] = js.native
   
   trait MessageListProps
     extends StObject
        with StrictMessageListProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object MessageListProps {
     
     inline def apply(): MessageListProps = {
@@ -32,7 +32,7 @@ object messageListMod extends Shortcut {
   trait StrictMessageListProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -52,7 +52,7 @@ object messageListMod extends Shortcut {
     
     extension [Self <: StrictMessageListProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,12 +68,12 @@ object messageListMod extends Shortcut {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: SemanticShorthandItem[MessageItemProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SemanticShorthandItem[MessageItemProps]*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   
-  type _To = StatelessComponent[MessageListProps]
+  type _To = FC[MessageListProps]
   
   /* This means you don't have to write `default`, but can instead just say `messageListMod.foo` */
-  override def _to: StatelessComponent[MessageListProps] = default
+  override def _to: FC[MessageListProps] = default
 }

@@ -12,14 +12,14 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("content-type", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with MediaType {
     def this(s: String) = this()
-    def this(s: String, p: js.Any) = this()
+    def this(s: String, p: Any) = this()
     
     /* CompleteClass */
-    var params: js.Any = js.native
+    var params: Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native

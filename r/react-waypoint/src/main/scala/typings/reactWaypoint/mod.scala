@@ -1,6 +1,7 @@
 package typings.reactWaypoint
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactWaypoint.mod.Waypoint.WaypointProps
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
@@ -11,14 +12,14 @@ object mod {
   
   @JSImport("react-waypoint", "Waypoint")
   @js.native
-  class Waypoint protected ()
-    extends Component[WaypointProps, js.Object, js.Any] {
+  open class Waypoint protected ()
+    extends Component[WaypointProps, js.Object, Any] {
     def this(props: WaypointProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: WaypointProps, context: js.Any) = this()
+    def this(props: WaypointProps, context: Any) = this()
   }
   /* static members */
   object Waypoint {
@@ -116,9 +117,22 @@ object mod {
     trait WaypointProps extends StObject {
       
       /**
-        * `bottomOffset` is like `topOffset`, but for the bottom of the container.
+        * `bottomOffset` can either be a number, in which case its a distance from the
+        * bottom of the container in pixels, or a string value. Valid string values are
+        * of the form "20px", which is parsed as pixels, or "20%", which is parsed
+        * as a percentage of the height of the containing element.
+        * For instance, if you pass "20%", and the containing element is 100px tall,
+        * then the waypoint will be triggered when it has been scrolled 20px beyond
+        * the bottom of the containing element.
+        * 
+        * Similar to `topOffset`, but for the bottom of the container.
         */
       var bottomOffset: js.UndefOr[String | Double] = js.undefined
+      
+      /**
+        * Since React 18 Children are no longer implied, therefore we specify them here
+        */
+      var children: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * Use this prop to get debug information in the console log. This slows
@@ -161,7 +175,7 @@ object mod {
         * ancestor to be the container. For example, when your target is in a div
         * that has overflow auto but you are detecting onEnter based on the window.
         */
-      var scrollableAncestor: js.UndefOr[js.Any] = js.undefined
+      var scrollableAncestor: js.UndefOr[Any] = js.undefined
       
       /**
         * `topOffset` can either be a number, in which case its a distance from the
@@ -187,6 +201,10 @@ object mod {
         
         inline def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
         
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        
         inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
         inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
@@ -211,7 +229,7 @@ object mod {
         
         inline def setOnPositionChangeUndefined: Self = StObject.set(x, "onPositionChange", js.undefined)
         
-        inline def setScrollableAncestor(value: js.Any): Self = StObject.set(x, "scrollableAncestor", value.asInstanceOf[js.Any])
+        inline def setScrollableAncestor(value: Any): Self = StObject.set(x, "scrollableAncestor", value.asInstanceOf[js.Any])
         
         inline def setScrollableAncestorUndefined: Self = StObject.set(x, "scrollableAncestor", js.undefined)
         

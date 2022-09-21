@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides the list of matters.
-  */
 trait SchemaListMattersResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaListMattersResponse extends StObject {
   /**
     * Page token to retrieve the next page of results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListMattersResponse {
   
@@ -32,9 +29,11 @@ object SchemaListMattersResponse {
     
     inline def setMattersUndefined: Self = StObject.set(x, "matters", js.undefined)
     
-    inline def setMattersVarargs(value: SchemaMatter*): Self = StObject.set(x, "matters", js.Array(value :_*))
+    inline def setMattersVarargs(value: SchemaMatter*): Self = StObject.set(x, "matters", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

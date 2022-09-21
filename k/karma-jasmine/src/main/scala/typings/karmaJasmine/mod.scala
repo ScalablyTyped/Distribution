@@ -1,6 +1,6 @@
 package typings.karmaJasmine
 
-import typings.karmaJasmine.anon.EnvConfigurationtimeoutIn
+import typings.karmaJasmine.anon.ConfigurationtimeoutInter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object mod {
   
   trait ClientOptions extends StObject {
     
-    var jasmine: js.UndefOr[EnvConfigurationtimeoutIn] = js.undefined
+    var jasmine: js.UndefOr[ConfigurationtimeoutInter] = js.undefined
     
     /**
       * run a subset of the full set of specs.
@@ -38,7 +38,7 @@ object mod {
     
     extension [Self <: ClientOptions](x: Self) {
       
-      inline def setJasmine(value: EnvConfigurationtimeoutIn): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
+      inline def setJasmine(value: ConfigurationtimeoutInter): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
       
       inline def setJasmineUndefined: Self = StObject.set(x, "jasmine", js.undefined)
       

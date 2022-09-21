@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with Declaration
-     with Statement {
+     with Statement
+     with TypeScript {
   
   var async: Boolean
   
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var id: Identifier_ | Null
   
-  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+  var params: js.Array[Identifier_ | Pattern | RestElement_]
   
   var returnType: TSTypeAnnotation_ | Noop_ | Null
   
@@ -31,11 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSDeclareFunction_ {
   
-  inline def apply(
-    async: Boolean,
-    generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-  ): TSDeclareFunction_ = {
+  inline def apply(async: Boolean, generator: Boolean, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("TSDeclareFunction")
     __obj.asInstanceOf[TSDeclareFunction_]
@@ -55,9 +52,9 @@ object TSDeclareFunction_ {
     
     inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    inline def setParams(value: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Identifier_ | Pattern | RestElement_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: (Identifier_ | Pattern | RestElement_ | TSParameterProperty_)*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: (Identifier_ | Pattern | RestElement_)*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setReturnType(value: TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     

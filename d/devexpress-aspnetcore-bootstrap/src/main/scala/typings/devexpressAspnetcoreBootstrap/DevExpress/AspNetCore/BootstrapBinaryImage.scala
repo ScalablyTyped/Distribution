@@ -88,8 +88,8 @@ trait BootstrapBinaryImage
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EndCallbackEventArgs], Unit]
   ): this.type = js.native
   
-  def performCallback(data: js.Any): js.Promise[Unit] = js.native
-  def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  def performCallback(data: Any): js.Promise[Unit] = js.native
+  def performCallback(data: Any, onSuccess: js.Function0[Unit]): Unit = js.native
   
   def setSize(width: Double, height: Double): Unit = js.native
 }

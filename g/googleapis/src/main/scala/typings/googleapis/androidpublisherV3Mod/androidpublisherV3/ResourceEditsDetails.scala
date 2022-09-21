@@ -4,31 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Edits$Details")
 @js.native
-class ResourceEditsDetails protected () extends StObject {
+open class ResourceEditsDetails protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * androidpublisher.edits.details.get
-    * @desc Fetches app details for this edit. This includes the default
-    * language and developer support contact information.
-    * @alias androidpublisher.edits.details.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.editId Unique identifier for this edit.
-    * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaAppDetails] = js.native
   def get(callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
@@ -36,8 +24,8 @@ class ResourceEditsDetails protected () extends StObject {
   def get(params: ParamsResourceEditsDetailsGet, callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def get(
     params: ParamsResourceEditsDetailsGet,
-    options: BodyResponseCallback[SchemaAppDetails],
-    callback: BodyResponseCallback[SchemaAppDetails]
+    options: BodyResponseCallback[Readable | SchemaAppDetails],
+    callback: BodyResponseCallback[Readable | SchemaAppDetails]
   ): Unit = js.native
   def get(params: ParamsResourceEditsDetailsGet, options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
   def get(
@@ -45,22 +33,68 @@ class ResourceEditsDetails protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppDetails]
   ): Unit = js.native
-  
   /**
-    * androidpublisher.edits.details.patch
-    * @desc Updates app details for this edit. This method supports patch
-    * semantics.
-    * @alias androidpublisher.edits.details.patch
-    * @memberOf! ()
+    * Gets details of an app.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidpublisher.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.editId Unique identifier for this edit.
-    * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
-    * @param {().AppDetails} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidpublisher = google.androidpublisher('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidpublisher'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidpublisher.edits.details.get({
+    *     // Identifier of the edit.
+    *     editId: 'placeholder-value',
+    *     // Package name of the app.
+    *     packageName: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contactEmail": "my_contactEmail",
+    *   //   "contactPhone": "my_contactPhone",
+    *   //   "contactWebsite": "my_contactWebsite",
+    *   //   "defaultLanguage": "my_defaultLanguage"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceEditsDetailsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceEditsDetailsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaAppDetails] = js.native
   def patch(callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
@@ -68,8 +102,8 @@ class ResourceEditsDetails protected () extends StObject {
   def patch(params: ParamsResourceEditsDetailsPatch, callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def patch(
     params: ParamsResourceEditsDetailsPatch,
-    options: BodyResponseCallback[SchemaAppDetails],
-    callback: BodyResponseCallback[SchemaAppDetails]
+    options: BodyResponseCallback[Readable | SchemaAppDetails],
+    callback: BodyResponseCallback[Readable | SchemaAppDetails]
   ): Unit = js.native
   def patch(params: ParamsResourceEditsDetailsPatch, options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
   def patch(
@@ -77,21 +111,79 @@ class ResourceEditsDetails protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppDetails]
   ): Unit = js.native
-  
   /**
-    * androidpublisher.edits.details.update
-    * @desc Updates app details for this edit.
-    * @alias androidpublisher.edits.details.update
-    * @memberOf! ()
+    * Patches details of an app.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidpublisher.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.editId Unique identifier for this edit.
-    * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
-    * @param {().AppDetails} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidpublisher = google.androidpublisher('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidpublisher'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidpublisher.edits.details.patch({
+    *     // Identifier of the edit.
+    *     editId: 'placeholder-value',
+    *     // Package name of the app.
+    *     packageName: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "contactEmail": "my_contactEmail",
+    *       //   "contactPhone": "my_contactPhone",
+    *       //   "contactWebsite": "my_contactWebsite",
+    *       //   "defaultLanguage": "my_defaultLanguage"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contactEmail": "my_contactEmail",
+    *   //   "contactPhone": "my_contactPhone",
+    *   //   "contactWebsite": "my_contactWebsite",
+    *   //   "defaultLanguage": "my_defaultLanguage"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceEditsDetailsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceEditsDetailsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaAppDetails] = js.native
   def update(callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
@@ -99,13 +191,85 @@ class ResourceEditsDetails protected () extends StObject {
   def update(params: ParamsResourceEditsDetailsUpdate, callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def update(
     params: ParamsResourceEditsDetailsUpdate,
-    options: BodyResponseCallback[SchemaAppDetails],
-    callback: BodyResponseCallback[SchemaAppDetails]
+    options: BodyResponseCallback[Readable | SchemaAppDetails],
+    callback: BodyResponseCallback[Readable | SchemaAppDetails]
   ): Unit = js.native
   def update(params: ParamsResourceEditsDetailsUpdate, options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
   def update(
     params: ParamsResourceEditsDetailsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAppDetails]
+  ): Unit = js.native
+  /**
+    * Updates details of an app.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidpublisher.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const androidpublisher = google.androidpublisher('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidpublisher'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidpublisher.edits.details.update({
+    *     // Identifier of the edit.
+    *     editId: 'placeholder-value',
+    *     // Package name of the app.
+    *     packageName: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "contactEmail": "my_contactEmail",
+    *       //   "contactPhone": "my_contactPhone",
+    *       //   "contactWebsite": "my_contactWebsite",
+    *       //   "defaultLanguage": "my_defaultLanguage"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contactEmail": "my_contactEmail",
+    *   //   "contactPhone": "my_contactPhone",
+    *   //   "contactWebsite": "my_contactWebsite",
+    *   //   "defaultLanguage": "my_defaultLanguage"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceEditsDetailsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceEditsDetailsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

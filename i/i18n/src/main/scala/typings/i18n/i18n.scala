@@ -1,6 +1,9 @@
 package typings.i18n
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.i18n.Express.Request
+import typings.i18n.anon.Disable
+import typings.i18n.anon.Partiali18nAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,6 +62,12 @@ object i18n {
     var fallbacks: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
+      * Sets a custom header name to read the language preference from - accept-language header by default
+      * @default 'accept-language'
+      */
+    var header: js.UndefOr[String] = js.undefined
+    
+    /**
       * What to use as the indentation unit
       * @default "\t"
       */
@@ -89,6 +98,17 @@ object i18n {
     var logWarnFn: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
     /**
+      * Function to provide missing translations.
+      * @since 0.10.0
+      */
+    var missingKeyFn: js.UndefOr[js.Function2[/* locale */ String, /* value */ String, String]] = js.undefined
+    
+    /**
+      * Use mustache with customTags (https://www.npmjs.com/package/mustache#custom-delimiters) or disable mustache entirely
+      */
+    var mustacheConfig: js.UndefOr[Disable] = js.undefined
+    
+    /**
       * Enable object notation
       * @default false
       */
@@ -117,7 +137,21 @@ object i18n {
       * object or [obj1, obj2] to bind the i18n api and current locale to
       * @default null
       */
-    var register: js.UndefOr[js.Any] = js.undefined
+    var register: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * Will return translation from defaultLocale in case current locale doesn't provide it
+      * @default false
+      */
+    var retryInDefaultLocale: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Static translation catalog. Setting this option overrides `locales`.
+      *
+      * **NOTE**: Enabling `staticCatalog` disables all other fs realated options such as `updateFiles`, `autoReload` and `syncFiles`.
+      * @since 0.10.0
+      */
+    var staticCatalog: js.UndefOr[GlobalCatalog] = js.undefined
     
     /**
       * Sync locale information across all files
@@ -172,6 +206,10 @@ object i18n {
       
       inline def setFallbacksUndefined: Self = StObject.set(x, "fallbacks", js.undefined)
       
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
       inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
       inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
@@ -180,7 +218,7 @@ object i18n {
       
       inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
       
-      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value*))
       
       inline def setLogDebugFn(value: /* msg */ String => Unit): Self = StObject.set(x, "logDebugFn", js.Any.fromFunction1(value))
       
@@ -193,6 +231,14 @@ object i18n {
       inline def setLogWarnFn(value: /* msg */ String => Unit): Self = StObject.set(x, "logWarnFn", js.Any.fromFunction1(value))
       
       inline def setLogWarnFnUndefined: Self = StObject.set(x, "logWarnFn", js.undefined)
+      
+      inline def setMissingKeyFn(value: (/* locale */ String, /* value */ String) => String): Self = StObject.set(x, "missingKeyFn", js.Any.fromFunction2(value))
+      
+      inline def setMissingKeyFnUndefined: Self = StObject.set(x, "missingKeyFn", js.undefined)
+      
+      inline def setMustacheConfig(value: Disable): Self = StObject.set(x, "mustacheConfig", value.asInstanceOf[js.Any])
+      
+      inline def setMustacheConfigUndefined: Self = StObject.set(x, "mustacheConfig", js.undefined)
       
       inline def setObjectNotation(value: Boolean): Self = StObject.set(x, "objectNotation", value.asInstanceOf[js.Any])
       
@@ -210,9 +256,17 @@ object i18n {
       
       inline def setQueryParameterUndefined: Self = StObject.set(x, "queryParameter", js.undefined)
       
-      inline def setRegister(value: js.Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+      inline def setRegister(value: Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
       
       inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+      
+      inline def setRetryInDefaultLocale(value: Boolean): Self = StObject.set(x, "retryInDefaultLocale", value.asInstanceOf[js.Any])
+      
+      inline def setRetryInDefaultLocaleUndefined: Self = StObject.set(x, "retryInDefaultLocale", js.undefined)
+      
+      inline def setStaticCatalog(value: GlobalCatalog): Self = StObject.set(x, "staticCatalog", value.asInstanceOf[js.Any])
+      
+      inline def setStaticCatalogUndefined: Self = StObject.set(x, "staticCatalog", js.undefined)
       
       inline def setSyncFiles(value: Boolean): Self = StObject.set(x, "syncFiles", value.asInstanceOf[js.Any])
       
@@ -227,6 +281,64 @@ object i18n {
   type GlobalCatalog = StringDictionary[LocaleCatalog]
   
   type HashedList = StringDictionary[String]
+  
+  @js.native
+  trait I18n extends StObject {
+    
+    def __(phraseOrOptions: String, replace: String*): String = js.native
+    def __(phraseOrOptions: String, replacements: Replacements): String = js.native
+    def __(phraseOrOptions: TranslateOptions, replace: String*): String = js.native
+    def __(phraseOrOptions: TranslateOptions, replacements: Replacements): String = js.native
+    
+    def __h(phrase: String): js.Array[HashedList] = js.native
+    
+    def __l(phrase: String): js.Array[String] = js.native
+    
+    def __mf(phraseOrOptions: String, replace: Any*): String = js.native
+    def __mf(phraseOrOptions: String, replacements: Replacements): String = js.native
+    def __mf(phraseOrOptions: TranslateOptions, replace: Any*): String = js.native
+    def __mf(phraseOrOptions: TranslateOptions, replacements: Replacements): String = js.native
+    
+    def __n(options: PluralOptions): String = js.native
+    def __n(options: PluralOptions, count: Double): String = js.native
+    def __n(phrase: String, count: Double): String = js.native
+    def __n(singular: String, plural: String, count: String): String = js.native
+    def __n(singular: String, plural: String, count: Double): String = js.native
+    
+    def addLocale(locale: String): Unit = js.native
+    
+    def configure(options: ConfigurationOptions): Unit = js.native
+    
+    def getCatalog(): GlobalCatalog = js.native
+    def getCatalog(locale: String): LocaleCatalog = js.native
+    def getCatalog(request: Request): LocaleCatalog = js.native
+    def getCatalog(request: Request, locale: String): LocaleCatalog = js.native
+    
+    def getLocale(): String = js.native
+    def getLocale(request: Request): String = js.native
+    
+    def getLocales(): js.Array[String] = js.native
+    
+    def init(request: Request, response: typings.i18n.Express.Response): Unit = js.native
+    def init(request: Request, response: typings.i18n.Express.Response, next: js.Function0[Unit]): Unit = js.native
+    
+    def overrideLocaleFromQuery(): Unit = js.native
+    def overrideLocaleFromQuery(request: Request): Unit = js.native
+    
+    def removeLocale(locale: String): Unit = js.native
+    
+    def setLocale(locale: String): Unit = js.native
+    def setLocale(objects: js.Array[Any], locale: String): Unit = js.native
+    def setLocale(objects: js.Array[Any], locale: String, inheritance: Boolean): Unit = js.native
+    // tslint:disable-next-line:unified-signatures
+    def setLocale(objects: Any, locale: String): Unit = js.native
+    def setLocale(objects: Any, locale: String, inheritance: Boolean): Unit = js.native
+    // tslint:disable-next-line:unified-signatures
+    def setLocale(requestOrResponse: Request | typings.i18n.Express.Response, locale: String): Unit = js.native
+    def setLocale(requestOrResponse: Request | typings.i18n.Express.Response, locale: String, inheritance: Boolean): Unit = js.native
+    
+    var version: String = js.native
+  }
   
   type LocaleCatalog = StringDictionary[String]
   
@@ -264,6 +376,14 @@ object i18n {
   }
   
   type Replacements = StringDictionary[String]
+  
+  @js.native
+  trait Response
+    extends StObject
+       with i18nAPI {
+    
+    var locals: Partiali18nAPI = js.native
+  }
   
   trait TranslateOptions extends StObject {
     

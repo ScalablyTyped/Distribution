@@ -15,7 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Node = typings.babelTypes.ts36Mod.Node
+  type Node = typings.babelTypes.mod.Node
   
   type UseTemplate = js.Function1[/* nodes */ js.UndefOr[StringDictionary[Node]], Node]
 }

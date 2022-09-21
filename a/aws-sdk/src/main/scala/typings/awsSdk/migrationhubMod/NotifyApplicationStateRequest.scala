@@ -24,7 +24,7 @@ trait NotifyApplicationStateRequest extends StObject {
   /**
     * The timestamp when the application state changed.
     */
-  var UpdateDateTime: js.UndefOr[typings.awsSdk.migrationhubMod.UpdateDateTime] = js.undefined
+  var UpdateDateTime: js.UndefOr[js.Date] = js.undefined
 }
 object NotifyApplicationStateRequest {
   
@@ -43,7 +43,7 @@ object NotifyApplicationStateRequest {
     
     inline def setStatus(value: ApplicationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateDateTime(value: js.Date): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateDateTimeUndefined: Self = StObject.set(x, "UpdateDateTime", js.undefined)
   }

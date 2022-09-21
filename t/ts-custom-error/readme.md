@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-custom-error
 
-Typings are for version 2.2.2
+Typings are for version 3.2.2
 
 ## Library description:
 Extend native Error to create custom errors
@@ -10,10 +10,10 @@ Extend native Error to create custom errors
 | ------------------ | :-------------: |
 | Full name          | ts-custom-error |
 | Keywords           | custom Error, extend, Error |
-| # releases         | 5 |
-| # dependents       | 77 |
-| # downloads        | 2048071 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 973586.6666666666 |
+| # stars            | 105.0 |
 
 ## Links
 - [Homepage](https://github.com/adriengibrat/ts-custom-error#readme)

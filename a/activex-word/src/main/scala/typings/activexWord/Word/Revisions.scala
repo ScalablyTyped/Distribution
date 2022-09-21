@@ -16,7 +16,7 @@ trait Revisions extends StObject {
   
   def Item(Index: Double): Revision
   
-  val Parent: js.Any
+  val Parent: Any
   
   def RejectAll(): Unit
   
@@ -31,7 +31,7 @@ object Revisions {
     Count: Double,
     Creator: Double,
     Item: Double => Revision,
-    Parent: js.Any,
+    Parent: Any,
     RejectAll: () => Unit,
     WordDotRevisions_typekey: Revisions
   ): Revisions = {
@@ -52,7 +52,7 @@ object Revisions {
     
     inline def setItem(value: Double => Revision): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRejectAll(value: () => Unit): Self = StObject.set(x, "RejectAll", js.Any.fromFunction0(value))
     

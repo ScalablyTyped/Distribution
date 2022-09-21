@@ -14,11 +14,11 @@ trait InsightRuleContributorDatapoint extends StObject {
   /**
     * The timestamp of the data point.
     */
-  var Timestamp: typings.awsSdk.cloudwatchMod.Timestamp
+  var Timestamp: js.Date
 }
 object InsightRuleContributorDatapoint {
   
-  inline def apply(ApproximateValue: InsightRuleUnboundDouble, Timestamp: Timestamp): InsightRuleContributorDatapoint = {
+  inline def apply(ApproximateValue: InsightRuleUnboundDouble, Timestamp: js.Date): InsightRuleContributorDatapoint = {
     val __obj = js.Dynamic.literal(ApproximateValue = ApproximateValue.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightRuleContributorDatapoint]
   }
@@ -27,6 +27,6 @@ object InsightRuleContributorDatapoint {
     
     inline def setApproximateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "ApproximateValue", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

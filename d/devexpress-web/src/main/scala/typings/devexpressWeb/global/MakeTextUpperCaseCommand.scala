@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MakeTextUpperCaseCommand")
 @js.native
-class MakeTextUpperCaseCommand ()
+open class MakeTextUpperCaseCommand ()
   extends StObject
      with typings.devexpressWeb.MakeTextUpperCaseCommand {
   

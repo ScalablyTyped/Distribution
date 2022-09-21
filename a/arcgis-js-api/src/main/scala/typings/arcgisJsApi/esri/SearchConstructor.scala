@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SearchConstructor
   extends StObject
-     with Instantiable0[Search]
+     with /**
+  * Represents the search parameters set within the web scene or the web map.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Search.html)
+  */
+Instantiable0[Search]
      with Instantiable1[/* properties */ SearchProperties, Search]

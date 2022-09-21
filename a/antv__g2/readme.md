@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__g2
 
-Typings are for version 3.5.15
+Typings are for version 4.2.8
 
 ## Library description:
 the Grammar of Graphics in Javascript
@@ -10,10 +10,10 @@ the Grammar of Graphics in Javascript
 | ------------------ | :-------------: |
 | Full name          | @antv/g2 |
 | Keywords           | antv, g2, visualization, chart, grammar, graphics, interaction |
-| # releases         | 131 |
-| # dependents       | 132 |
-| # downloads        | 2542995 |
-| # stars            | 2 |
+| # releases         | 77 |
+| # dependents       | 0.0 |
+| # downloads        | 420798.0 |
+| # stars            | 11367.0 |
 
 ## Links
 - [Homepage](https://g2.antv.vision)

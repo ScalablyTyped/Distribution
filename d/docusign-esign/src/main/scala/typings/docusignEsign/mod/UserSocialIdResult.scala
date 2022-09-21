@@ -31,7 +31,7 @@ object UserSocialIdResult {
     
     inline def setSocialAccountInformationUndefined: Self = StObject.set(x, "socialAccountInformation", js.undefined)
     
-    inline def setSocialAccountInformationVarargs(value: SocialAccountInformation*): Self = StObject.set(x, "socialAccountInformation", js.Array(value :_*))
+    inline def setSocialAccountInformationVarargs(value: SocialAccountInformation*): Self = StObject.set(x, "socialAccountInformation", js.Array(value*))
     
     inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     

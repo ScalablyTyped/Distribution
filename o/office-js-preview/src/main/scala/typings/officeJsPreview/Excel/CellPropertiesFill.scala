@@ -26,25 +26,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the `format.fill` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the `format.fill` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesFill extends StObject {
   
   /**
-    *
     * Represents the `format.fill.color` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the `format.fill.pattern` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pattern: js.UndefOr[
@@ -52,25 +52,25 @@ trait CellPropertiesFill extends StObject {
   ] = js.undefined
   
   /**
-    *
     * Represents the `format.fill.patternColor` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternColor: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the `format.fill.patternTintAndShade` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternTintAndShade: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Represents the `format.fill.tintAndShade` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Double] = js.undefined

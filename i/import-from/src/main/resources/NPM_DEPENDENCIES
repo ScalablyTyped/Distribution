@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "import-from" : "3.0.0"
+      "import-from" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "import-from" : "3.0.0"
+      "import-from" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

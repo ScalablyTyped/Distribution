@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientBigqueryreservation.anon
 
-import typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryreservation.Reservation
+import typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryreservation.Assignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,10 @@ trait UpdateMask extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The resource name of the reservation, e.g., `projects/∗/locations/∗/reservations/team1-prod`. */
+  /**
+    * Output only. Name of the resource. E.g.: `projects/myproject/locations/US/reservations/team1-prod/assignments/123`. The assignment_id must only contain lower case alphanumeric
+    * characters or dashes and the max length is 64 characters.
+    */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +42,7 @@ trait UpdateMask extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Reservation
+  var resource: Assignment
   
   /** Standard field mask for the set of fields to be updated. */
   var updateMask: js.UndefOr[String] = js.undefined
@@ -52,7 +55,7 @@ trait UpdateMask extends StObject {
 }
 object UpdateMask {
   
-  inline def apply(name: String, resource: Reservation): UpdateMask = {
+  inline def apply(name: String, resource: Assignment): UpdateMask = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMask]
   }
@@ -97,7 +100,7 @@ object UpdateMask {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Reservation): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Assignment): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

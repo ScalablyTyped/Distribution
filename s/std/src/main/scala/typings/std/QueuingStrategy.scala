@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueuingStrategy[T] extends StObject {
   
+  /* standard dom */
   var highWaterMark: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[QueuingStrategySizeCallback[T]] = js.undefined
+  /* standard dom */
+  var size: js.UndefOr[QueuingStrategySize[T]] = js.undefined
 }
 object QueuingStrategy {
   

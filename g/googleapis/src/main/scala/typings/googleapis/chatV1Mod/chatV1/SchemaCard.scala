@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A card is a UI element that can contain UI widgets such as texts, images.
-  */
 trait SchemaCard extends StObject {
   
   /**
@@ -22,7 +19,7 @@ trait SchemaCard extends StObject {
   /**
     * Name of the card.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Sections are separated by a line divider.
@@ -42,7 +39,7 @@ object SchemaCard {
     
     inline def setCardActionsUndefined: Self = StObject.set(x, "cardActions", js.undefined)
     
-    inline def setCardActionsVarargs(value: SchemaCardAction*): Self = StObject.set(x, "cardActions", js.Array(value :_*))
+    inline def setCardActionsVarargs(value: SchemaCardAction*): Self = StObject.set(x, "cardActions", js.Array(value*))
     
     inline def setHeader(value: SchemaCardHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
@@ -50,12 +47,14 @@ object SchemaCard {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setSections(value: js.Array[SchemaSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
     inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    inline def setSectionsVarargs(value: SchemaSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: SchemaSection*): Self = StObject.set(x, "sections", js.Array(value*))
   }
 }

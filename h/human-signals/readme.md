@@ -1,7 +1,7 @@
 
 # Scala.js typings for human-signals
 
-Typings are for version 2.1.0
+Typings are for version 4.2.0
 
 ## Library description:
 Human-friendly process signals
@@ -9,14 +9,14 @@ Human-friendly process signals
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | human-signals |
-| Keywords           | signal, signals, handlers, error-handling, errors, interrupts, sigterm, sigint, irq, process, exit, exit-code, status, operating-system, es6, javascript, linux, macos, windows, nodejs |
-| # releases         | 6 |
-| # dependents       | 43 |
-| # downloads        | 276757616 |
-| # stars            | 0 |
+| Keywords           | signal, signals, handlers, error-handling, interrupts, sigterm, sigint, irq, process, exit, exit-code, status, operating-system, es6, javascript, typescript, linux, macos, windows, nodejs |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2001033933333333E8 |
+| # stars            | 233.0 |
 
 ## Links
-- [Homepage](https://git.io/JeluP)
+- [Homepage](https://www.github.com/ehmicky/human-signals)
 - [Bugs](https://github.com/ehmicky/human-signals/issues)
 - [Repository](https://github.com/ehmicky/human-signals)
 - [Npm](https://www.npmjs.com/package/human-signals)

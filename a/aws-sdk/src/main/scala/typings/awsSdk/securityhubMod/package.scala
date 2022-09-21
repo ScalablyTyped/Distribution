@@ -1,155 +1,332 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.DAYS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountDetailsList = js.Array[typings.awsSdk.securityhubMod.AccountDetails]
+type AccountDetailsList = js.Array[AccountDetails]
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type AccountIdList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type AccountIdList = js.Array[NonEmptyString]
 
-type ActionTargetList = js.Array[typings.awsSdk.securityhubMod.ActionTarget]
+type ActionTargetList = js.Array[ActionTarget]
 
-type ArnList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type AdjustmentList = js.Array[Adjustment]
 
-type AvailabilityZones = js.Array[typings.awsSdk.securityhubMod.AvailabilityZone]
+type AdminAccounts = js.Array[AdminAccount]
 
-type AwsApiGatewayMethodSettingsList = js.Array[typings.awsSdk.securityhubMod.AwsApiGatewayMethodSettings]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLE_IN_PROGRESS
+  - java.lang.String
+*/
+type AdminStatus = _AdminStatus | String
 
-type AwsCertificateManagerCertificateDomainValidationOptions = js.Array[
-typings.awsSdk.securityhubMod.AwsCertificateManagerCertificateDomainValidationOption]
+type AdminsMaxResults = scala.Double
 
-type AwsCertificateManagerCertificateExtendedKeyUsages = js.Array[typings.awsSdk.securityhubMod.AwsCertificateManagerCertificateExtendedKeyUsage]
+type ArnList = js.Array[NonEmptyString]
 
-type AwsCertificateManagerCertificateKeyUsages = js.Array[typings.awsSdk.securityhubMod.AwsCertificateManagerCertificateKeyUsage]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.DEFAULT
+  - java.lang.String
+*/
+type AutoEnableStandards = _AutoEnableStandards | String
 
-type AwsCloudFrontDistributionCacheBehaviorsItemList = js.Array[typings.awsSdk.securityhubMod.AwsCloudFrontDistributionCacheBehavior]
+type AvailabilityZones = js.Array[AvailabilityZone]
 
-type AwsCloudFrontDistributionOriginGroupFailoverStatusCodesItemList = js.Array[typings.awsSdk.securityhubMod.Integer]
+type AwsApiGatewayMethodSettingsList = js.Array[AwsApiGatewayMethodSettings]
 
-type AwsCloudFrontDistributionOriginGroupsItemList = js.Array[typings.awsSdk.securityhubMod.AwsCloudFrontDistributionOriginGroup]
+type AwsAutoScalingAutoScalingGroupAvailabilityZonesList = js.Array[AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetails]
 
-type AwsCloudFrontDistributionOriginItemList = js.Array[typings.awsSdk.securityhubMod.AwsCloudFrontDistributionOriginItem]
+type AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesList = js.Array[
+AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetails]
 
-type AwsDynamoDbTableAttributeDefinitionList = js.Array[typings.awsSdk.securityhubMod.AwsDynamoDbTableAttributeDefinition]
+type AwsAutoScalingLaunchConfigurationBlockDeviceMappingsList = js.Array[AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetails]
 
-type AwsDynamoDbTableGlobalSecondaryIndexList = js.Array[typings.awsSdk.securityhubMod.AwsDynamoDbTableGlobalSecondaryIndex]
+type AwsBackupBackupPlanAdvancedBackupSettingsList = js.Array[AwsBackupBackupPlanAdvancedBackupSettingsDetails]
 
-type AwsDynamoDbTableKeySchemaList = js.Array[typings.awsSdk.securityhubMod.AwsDynamoDbTableKeySchema]
+type AwsBackupBackupPlanRuleCopyActionsList = js.Array[AwsBackupBackupPlanRuleCopyActionsDetails]
 
-type AwsDynamoDbTableLocalSecondaryIndexList = js.Array[typings.awsSdk.securityhubMod.AwsDynamoDbTableLocalSecondaryIndex]
+type AwsBackupBackupPlanRuleList = js.Array[AwsBackupBackupPlanRuleDetails]
 
-type AwsDynamoDbTableReplicaGlobalSecondaryIndexList = js.Array[typings.awsSdk.securityhubMod.AwsDynamoDbTableReplicaGlobalSecondaryIndex]
+type AwsCertificateManagerCertificateDomainValidationOptions = js.Array[AwsCertificateManagerCertificateDomainValidationOption]
 
-type AwsDynamoDbTableReplicaList = js.Array[typings.awsSdk.securityhubMod.AwsDynamoDbTableReplica]
+type AwsCertificateManagerCertificateExtendedKeyUsages = js.Array[AwsCertificateManagerCertificateExtendedKeyUsage]
 
-type AwsEc2NetworkInterfaceSecurityGroupList = js.Array[typings.awsSdk.securityhubMod.AwsEc2NetworkInterfaceSecurityGroup]
+type AwsCertificateManagerCertificateKeyUsages = js.Array[AwsCertificateManagerCertificateKeyUsage]
 
-type AwsEc2SecurityGroupIpPermissionList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupIpPermission]
+type AwsCloudFormationStackOutputsList = js.Array[AwsCloudFormationStackOutputsDetails]
 
-type AwsEc2SecurityGroupIpRangeList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupIpRange]
+type AwsCloudFrontDistributionCacheBehaviorsItemList = js.Array[AwsCloudFrontDistributionCacheBehavior]
 
-type AwsEc2SecurityGroupIpv6RangeList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupIpv6Range]
+type AwsCloudFrontDistributionOriginGroupFailoverStatusCodesItemList = js.Array[Integer]
 
-type AwsEc2SecurityGroupPrefixListIdList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupPrefixListId]
+type AwsCloudFrontDistributionOriginGroupsItemList = js.Array[AwsCloudFrontDistributionOriginGroup]
 
-type AwsEc2SecurityGroupUserIdGroupPairList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupUserIdGroupPair]
+type AwsCloudFrontDistributionOriginItemList = js.Array[AwsCloudFrontDistributionOriginItem]
 
-type AwsEc2VolumeAttachmentList = js.Array[typings.awsSdk.securityhubMod.AwsEc2VolumeAttachment]
+type AwsCloudWatchAlarmDimensionsList = js.Array[AwsCloudWatchAlarmDimensionsDetails]
 
-type AwsElbAppCookieStickinessPolicies = js.Array[typings.awsSdk.securityhubMod.AwsElbAppCookieStickinessPolicy]
+type AwsCodeBuildProjectArtifactsList = js.Array[AwsCodeBuildProjectArtifactsDetails]
 
-type AwsElbLbCookieStickinessPolicies = js.Array[typings.awsSdk.securityhubMod.AwsElbLbCookieStickinessPolicy]
+type AwsCodeBuildProjectEnvironmentEnvironmentVariablesList = js.Array[AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails]
 
-type AwsElbLoadBalancerBackendServerDescriptions = js.Array[typings.awsSdk.securityhubMod.AwsElbLoadBalancerBackendServerDescription]
+type AwsDynamoDbTableAttributeDefinitionList = js.Array[AwsDynamoDbTableAttributeDefinition]
 
-type AwsElbLoadBalancerInstances = js.Array[typings.awsSdk.securityhubMod.AwsElbLoadBalancerInstance]
+type AwsDynamoDbTableGlobalSecondaryIndexList = js.Array[AwsDynamoDbTableGlobalSecondaryIndex]
 
-type AwsElbLoadBalancerListenerDescriptions = js.Array[typings.awsSdk.securityhubMod.AwsElbLoadBalancerListenerDescription]
+type AwsDynamoDbTableKeySchemaList = js.Array[AwsDynamoDbTableKeySchema]
+
+type AwsDynamoDbTableLocalSecondaryIndexList = js.Array[AwsDynamoDbTableLocalSecondaryIndex]
+
+type AwsDynamoDbTableReplicaGlobalSecondaryIndexList = js.Array[AwsDynamoDbTableReplicaGlobalSecondaryIndex]
+
+type AwsDynamoDbTableReplicaList = js.Array[AwsDynamoDbTableReplica]
+
+type AwsEc2InstanceNetworkInterfacesList = js.Array[AwsEc2InstanceNetworkInterfacesDetails]
+
+type AwsEc2NetworkAclAssociationList = js.Array[AwsEc2NetworkAclAssociation]
+
+type AwsEc2NetworkAclEntryList = js.Array[AwsEc2NetworkAclEntry]
+
+type AwsEc2NetworkInterfaceIpV6AddressList = js.Array[AwsEc2NetworkInterfaceIpV6AddressDetail]
+
+type AwsEc2NetworkInterfacePrivateIpAddressList = js.Array[AwsEc2NetworkInterfacePrivateIpAddressDetail]
+
+type AwsEc2NetworkInterfaceSecurityGroupList = js.Array[AwsEc2NetworkInterfaceSecurityGroup]
+
+type AwsEc2SecurityGroupIpPermissionList = js.Array[AwsEc2SecurityGroupIpPermission]
+
+type AwsEc2SecurityGroupIpRangeList = js.Array[AwsEc2SecurityGroupIpRange]
+
+type AwsEc2SecurityGroupIpv6RangeList = js.Array[AwsEc2SecurityGroupIpv6Range]
+
+type AwsEc2SecurityGroupPrefixListIdList = js.Array[AwsEc2SecurityGroupPrefixListId]
+
+type AwsEc2SecurityGroupUserIdGroupPairList = js.Array[AwsEc2SecurityGroupUserIdGroupPair]
+
+type AwsEc2VolumeAttachmentList = js.Array[AwsEc2VolumeAttachment]
+
+type AwsEc2VpcEndpointServiceServiceTypeList = js.Array[AwsEc2VpcEndpointServiceServiceTypeDetails]
+
+type AwsEc2VpnConnectionOptionsTunnelOptionsList = js.Array[AwsEc2VpnConnectionOptionsTunnelOptionsDetails]
+
+type AwsEc2VpnConnectionRoutesList = js.Array[AwsEc2VpnConnectionRoutesDetails]
+
+type AwsEc2VpnConnectionVgwTelemetryList = js.Array[AwsEc2VpnConnectionVgwTelemetryDetails]
+
+type AwsEcsClusterClusterSettingsList = js.Array[AwsEcsClusterClusterSettingsDetails]
+
+type AwsEcsClusterDefaultCapacityProviderStrategyList = js.Array[AwsEcsClusterDefaultCapacityProviderStrategyDetails]
+
+type AwsEcsContainerDetailsList = js.Array[AwsEcsContainerDetails]
+
+type AwsEcsServiceCapacityProviderStrategyList = js.Array[AwsEcsServiceCapacityProviderStrategyDetails]
+
+type AwsEcsServiceLoadBalancersList = js.Array[AwsEcsServiceLoadBalancersDetails]
+
+type AwsEcsServicePlacementConstraintsList = js.Array[AwsEcsServicePlacementConstraintsDetails]
+
+type AwsEcsServicePlacementStrategiesList = js.Array[AwsEcsServicePlacementStrategiesDetails]
+
+type AwsEcsServiceServiceRegistriesList = js.Array[AwsEcsServiceServiceRegistriesDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsDependsOnList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsEnvironmentList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsExtraHostsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsMountPointsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsPortMappingsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsSecretsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsSecretsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsSystemControlsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsUlimitsList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetails]
+
+type AwsEcsTaskDefinitionContainerDefinitionsVolumesFromList = js.Array[AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetails]
+
+type AwsEcsTaskDefinitionInferenceAcceleratorsList = js.Array[AwsEcsTaskDefinitionInferenceAcceleratorsDetails]
+
+type AwsEcsTaskDefinitionPlacementConstraintsList = js.Array[AwsEcsTaskDefinitionPlacementConstraintsDetails]
+
+type AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesList = js.Array[AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetails]
+
+type AwsEcsTaskDefinitionVolumesList = js.Array[AwsEcsTaskDefinitionVolumesDetails]
+
+type AwsEcsTaskVolumeDetailsList = js.Array[AwsEcsTaskVolumeDetails]
+
+type AwsEksClusterLoggingClusterLoggingList = js.Array[AwsEksClusterLoggingClusterLoggingDetails]
+
+type AwsElasticBeanstalkEnvironmentEnvironmentLinks = js.Array[AwsElasticBeanstalkEnvironmentEnvironmentLink]
+
+type AwsElasticBeanstalkEnvironmentOptionSettings = js.Array[AwsElasticBeanstalkEnvironmentOptionSetting]
+
+type AwsElbAppCookieStickinessPolicies = js.Array[AwsElbAppCookieStickinessPolicy]
+
+type AwsElbLbCookieStickinessPolicies = js.Array[AwsElbLbCookieStickinessPolicy]
+
+type AwsElbLoadBalancerAdditionalAttributeList = js.Array[AwsElbLoadBalancerAdditionalAttribute]
+
+type AwsElbLoadBalancerBackendServerDescriptions = js.Array[AwsElbLoadBalancerBackendServerDescription]
+
+type AwsElbLoadBalancerInstances = js.Array[AwsElbLoadBalancerInstance]
+
+type AwsElbLoadBalancerListenerDescriptions = js.Array[AwsElbLoadBalancerListenerDescription]
+
+type AwsElbv2LoadBalancerAttributes = js.Array[AwsElbv2LoadBalancerAttribute]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_
   - typings.awsSdk.awsSdkStrings.Inactive_
   - java.lang.String
 */
-type AwsIamAccessKeyStatus = typings.awsSdk.securityhubMod._AwsIamAccessKeyStatus | java.lang.String
+type AwsIamAccessKeyStatus = _AwsIamAccessKeyStatus | String
 
-type AwsIamAttachedManagedPolicyList = js.Array[typings.awsSdk.securityhubMod.AwsIamAttachedManagedPolicy]
+type AwsIamAttachedManagedPolicyList = js.Array[AwsIamAttachedManagedPolicy]
 
-type AwsIamGroupPolicyList = js.Array[typings.awsSdk.securityhubMod.AwsIamGroupPolicy]
+type AwsIamGroupPolicyList = js.Array[AwsIamGroupPolicy]
 
-type AwsIamInstanceProfileList = js.Array[typings.awsSdk.securityhubMod.AwsIamInstanceProfile]
+type AwsIamInstanceProfileList = js.Array[AwsIamInstanceProfile]
 
-type AwsIamInstanceProfileRoles = js.Array[typings.awsSdk.securityhubMod.AwsIamInstanceProfileRole]
+type AwsIamInstanceProfileRoles = js.Array[AwsIamInstanceProfileRole]
 
-type AwsIamPolicyVersionList = js.Array[typings.awsSdk.securityhubMod.AwsIamPolicyVersion]
+type AwsIamPolicyVersionList = js.Array[AwsIamPolicyVersion]
 
-type AwsIamRoleAssumeRolePolicyDocument = java.lang.String
+type AwsIamRoleAssumeRolePolicyDocument = String
 
-type AwsIamRolePolicyList = js.Array[typings.awsSdk.securityhubMod.AwsIamRolePolicy]
+type AwsIamRolePolicyList = js.Array[AwsIamRolePolicy]
 
-type AwsIamUserPolicyList = js.Array[typings.awsSdk.securityhubMod.AwsIamUserPolicy]
+type AwsIamUserPolicyList = js.Array[AwsIamUserPolicy]
 
-type AwsLambdaFunctionLayerList = js.Array[typings.awsSdk.securityhubMod.AwsLambdaFunctionLayer]
+type AwsLambdaFunctionLayerList = js.Array[AwsLambdaFunctionLayer]
 
 type AwsLambdaLayerVersionNumber = scala.Double
 
-type AwsRdsDbClusterAssociatedRoles = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbClusterAssociatedRole]
+type AwsMountPointList = js.Array[AwsMountPoint]
 
-type AwsRdsDbClusterMembers = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbClusterMember]
+type AwsNetworkFirewallFirewallSubnetMappingsList = js.Array[AwsNetworkFirewallFirewallSubnetMappingsDetails]
 
-type AwsRdsDbClusterOptionGroupMemberships = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbClusterOptionGroupMembership]
+type AwsRdsDbClusterAssociatedRoles = js.Array[AwsRdsDbClusterAssociatedRole]
 
-type AwsRdsDbDomainMemberships = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbDomainMembership]
+type AwsRdsDbClusterMembers = js.Array[AwsRdsDbClusterMember]
 
-type AwsRdsDbInstanceAssociatedRoles = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbInstanceAssociatedRole]
+type AwsRdsDbClusterOptionGroupMemberships = js.Array[AwsRdsDbClusterOptionGroupMembership]
 
-type AwsRdsDbInstanceVpcSecurityGroups = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbInstanceVpcSecurityGroup]
+type AwsRdsDbDomainMemberships = js.Array[AwsRdsDbDomainMembership]
 
-type AwsRdsDbOptionGroupMemberships = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbOptionGroupMembership]
+type AwsRdsDbInstanceAssociatedRoles = js.Array[AwsRdsDbInstanceAssociatedRole]
 
-type AwsRdsDbParameterGroups = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbParameterGroup]
+type AwsRdsDbInstanceVpcSecurityGroups = js.Array[AwsRdsDbInstanceVpcSecurityGroup]
 
-type AwsRdsDbProcessorFeatures = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbProcessorFeature]
+type AwsRdsDbOptionGroupMemberships = js.Array[AwsRdsDbOptionGroupMembership]
 
-type AwsRdsDbStatusInfos = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbStatusInfo]
+type AwsRdsDbParameterGroups = js.Array[AwsRdsDbParameterGroup]
 
-type AwsRdsDbSubnetGroupSubnets = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbSubnetGroupSubnet]
+type AwsRdsDbProcessorFeatures = js.Array[AwsRdsDbProcessorFeature]
 
-type AwsRedshiftClusterClusterNodes = js.Array[typings.awsSdk.securityhubMod.AwsRedshiftClusterClusterNode]
+type AwsRdsDbSecurityGroupEc2SecurityGroups = js.Array[AwsRdsDbSecurityGroupEc2SecurityGroup]
 
-type AwsRedshiftClusterClusterParameterGroups = js.Array[typings.awsSdk.securityhubMod.AwsRedshiftClusterClusterParameterGroup]
+type AwsRdsDbSecurityGroupIpRanges = js.Array[AwsRdsDbSecurityGroupIpRange]
 
-type AwsRedshiftClusterClusterParameterStatusList = js.Array[typings.awsSdk.securityhubMod.AwsRedshiftClusterClusterParameterStatus]
+type AwsRdsDbStatusInfos = js.Array[AwsRdsDbStatusInfo]
 
-type AwsRedshiftClusterClusterSecurityGroups = js.Array[typings.awsSdk.securityhubMod.AwsRedshiftClusterClusterSecurityGroup]
+type AwsRdsDbSubnetGroupSubnets = js.Array[AwsRdsDbSubnetGroupSubnet]
 
-type AwsRedshiftClusterDeferredMaintenanceWindows = js.Array[typings.awsSdk.securityhubMod.AwsRedshiftClusterDeferredMaintenanceWindow]
+type AwsRedshiftClusterClusterNodes = js.Array[AwsRedshiftClusterClusterNode]
 
-type AwsRedshiftClusterIamRoles = js.Array[typings.awsSdk.securityhubMod.AwsRedshiftClusterIamRole]
+type AwsRedshiftClusterClusterParameterGroups = js.Array[AwsRedshiftClusterClusterParameterGroup]
 
-type AwsRedshiftClusterVpcSecurityGroups = js.Array[typings.awsSdk.securityhubMod.AwsRedshiftClusterVpcSecurityGroup]
+type AwsRedshiftClusterClusterParameterStatusList = js.Array[AwsRedshiftClusterClusterParameterStatus]
 
-type AwsS3BucketServerSideEncryptionRules = js.Array[typings.awsSdk.securityhubMod.AwsS3BucketServerSideEncryptionRule]
+type AwsRedshiftClusterClusterSecurityGroups = js.Array[AwsRedshiftClusterClusterSecurityGroup]
 
-type AwsSecurityFindingIdentifierList = js.Array[typings.awsSdk.securityhubMod.AwsSecurityFindingIdentifier]
+type AwsRedshiftClusterDeferredMaintenanceWindows = js.Array[AwsRedshiftClusterDeferredMaintenanceWindow]
 
-type AwsSecurityFindingList = js.Array[typings.awsSdk.securityhubMod.AwsSecurityFinding]
+type AwsRedshiftClusterIamRoles = js.Array[AwsRedshiftClusterIamRole]
 
-type AwsSnsTopicSubscriptionList = js.Array[typings.awsSdk.securityhubMod.AwsSnsTopicSubscription]
+type AwsRedshiftClusterVpcSecurityGroups = js.Array[AwsRedshiftClusterVpcSecurityGroup]
 
-type AwsWafWebAclRuleList = js.Array[typings.awsSdk.securityhubMod.AwsWafWebAclRule]
+type AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsList = js.Array[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetails]
 
-type BatchUpdateFindingsUnprocessedFindingsList = js.Array[typings.awsSdk.securityhubMod.BatchUpdateFindingsUnprocessedFinding]
+type AwsS3BucketBucketLifecycleConfigurationRulesList = js.Array[AwsS3BucketBucketLifecycleConfigurationRulesDetails]
+
+type AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsList = js.Array[AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetails]
+
+type AwsS3BucketBucketLifecycleConfigurationRulesTransitionsList = js.Array[AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetails]
+
+type AwsS3BucketNotificationConfigurationDetails = js.Array[AwsS3BucketNotificationConfigurationDetail]
+
+type AwsS3BucketNotificationConfigurationEvents = js.Array[NonEmptyString]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Prefix_
+  - typings.awsSdk.awsSdkStrings.Suffix
+  - java.lang.String
+*/
+type AwsS3BucketNotificationConfigurationS3KeyFilterRuleName = _AwsS3BucketNotificationConfigurationS3KeyFilterRuleName | String
+
+type AwsS3BucketNotificationConfigurationS3KeyFilterRules = js.Array[AwsS3BucketNotificationConfigurationS3KeyFilterRule]
+
+type AwsS3BucketServerSideEncryptionRules = js.Array[AwsS3BucketServerSideEncryptionRule]
+
+type AwsS3BucketWebsiteConfigurationRoutingRules = js.Array[AwsS3BucketWebsiteConfigurationRoutingRule]
+
+type AwsSecurityFindingIdentifierList = js.Array[AwsSecurityFindingIdentifier]
+
+type AwsSecurityFindingList = js.Array[AwsSecurityFinding]
+
+type AwsSnsTopicSubscriptionList = js.Array[AwsSnsTopicSubscription]
+
+type AwsWafRateBasedRuleMatchPredicateList = js.Array[AwsWafRateBasedRuleMatchPredicate]
+
+type AwsWafRegionalRateBasedRuleMatchPredicateList = js.Array[AwsWafRegionalRateBasedRuleMatchPredicate]
+
+type AwsWafRegionalRuleGroupRulesList = js.Array[AwsWafRegionalRuleGroupRulesDetails]
+
+type AwsWafRegionalRulePredicateList = js.Array[AwsWafRegionalRulePredicateListDetails]
+
+type AwsWafRegionalWebAclRulesList = js.Array[AwsWafRegionalWebAclRulesListDetails]
+
+type AwsWafRuleGroupRulesList = js.Array[AwsWafRuleGroupRulesDetails]
+
+type AwsWafRulePredicateList = js.Array[AwsWafRulePredicateListDetails]
+
+type AwsWafWebAclRuleList = js.Array[AwsWafWebAclRule]
+
+type BatchImportFindingsRequestFindingList = js.Array[AwsSecurityFinding]
+
+type BatchUpdateFindingsUnprocessedFindingsList = js.Array[BatchUpdateFindingsUnprocessedFinding]
 
 type Boolean = scala.Boolean
 
-type CategoryList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type BooleanFilterList = js.Array[BooleanFilter]
 
-type CidrBlockAssociationList = js.Array[typings.awsSdk.securityhubMod.CidrBlockAssociation]
+type CategoryList = js.Array[NonEmptyString]
+
+type Cells = js.Array[Cell]
+
+type CidrBlockAssociationList = js.Array[CidrBlockAssociation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PASSED
@@ -158,53 +335,70 @@ type CidrBlockAssociationList = js.Array[typings.awsSdk.securityhubMod.CidrBlock
   - typings.awsSdk.awsSdkStrings.NOT_AVAILABLE
   - java.lang.String
 */
-type ComplianceStatus = typings.awsSdk.securityhubMod._ComplianceStatus | java.lang.String
+type ComplianceStatus = _ComplianceStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type ControlStatus = typings.awsSdk.securityhubMod._ControlStatus | java.lang.String
+type ControlStatus = _ControlStatus | String
 
-type CvssList = js.Array[typings.awsSdk.securityhubMod.Cvss]
+type CrossAccountMaxResults = scala.Double
 
-type DateFilterList = js.Array[typings.awsSdk.securityhubMod.DateFilter]
+type CustomDataIdentifiersDetectionsList = js.Array[CustomDataIdentifiersDetections]
 
-type DateRangeUnit = typings.awsSdk.awsSdkStrings.DAYS | java.lang.String
+type CvssList = js.Array[Cvss]
+
+type DateFilterList = js.Array[DateFilter]
+
+type DateRangeUnit = DAYS | String
 
 type Double = scala.Double
 
-type FieldMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.securityhubMod.NonEmptyString]
+type FieldMap = StringDictionary[NonEmptyString]
 
-type ImportFindingsErrorList = js.Array[typings.awsSdk.securityhubMod.ImportFindingsError]
+type FilePathList = js.Array[FilePaths]
 
-type InsightList = js.Array[typings.awsSdk.securityhubMod.Insight]
+type FindingAggregatorList = js.Array[FindingAggregator]
 
-type InsightResultValueList = js.Array[typings.awsSdk.securityhubMod.InsightResultValue]
+type FirewallPolicyStatefulRuleGroupReferencesList = js.Array[FirewallPolicyStatefulRuleGroupReferencesDetails]
+
+type FirewallPolicyStatelessCustomActionsList = js.Array[FirewallPolicyStatelessCustomActionsDetails]
+
+type FirewallPolicyStatelessRuleGroupReferencesList = js.Array[FirewallPolicyStatelessRuleGroupReferencesDetails]
+
+type ImportFindingsErrorList = js.Array[ImportFindingsError]
+
+type InsightList = js.Array[Insight]
+
+type InsightResultValueList = js.Array[InsightResultValue]
 
 type Integer = scala.Double
+
+type IntegerList = js.Array[Integer]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SEND_FINDINGS_TO_SECURITY_HUB
   - typings.awsSdk.awsSdkStrings.RECEIVE_FINDINGS_FROM_SECURITY_HUB
+  - typings.awsSdk.awsSdkStrings.UPDATE_FINDINGS_IN_SECURITY_HUB
   - java.lang.String
 */
-type IntegrationType = typings.awsSdk.securityhubMod._IntegrationType | java.lang.String
+type IntegrationType = _IntegrationType | String
 
-type IntegrationTypeList = js.Array[typings.awsSdk.securityhubMod.IntegrationType]
+type IntegrationTypeList = js.Array[IntegrationType]
 
-type InvitationList = js.Array[typings.awsSdk.securityhubMod.Invitation]
+type InvitationList = js.Array[Invitation]
 
-type IpFilterList = js.Array[typings.awsSdk.securityhubMod.IpFilter]
+type IpFilterList = js.Array[IpFilter]
 
-type Ipv6CidrBlockAssociationList = js.Array[typings.awsSdk.securityhubMod.Ipv6CidrBlockAssociation]
+type Ipv6CidrBlockAssociationList = js.Array[Ipv6CidrBlockAssociation]
 
-type KeywordFilterList = js.Array[typings.awsSdk.securityhubMod.KeywordFilter]
+type KeywordFilterList = js.Array[KeywordFilter]
 
 type Long = scala.Double
 
-type MalwareList = js.Array[typings.awsSdk.securityhubMod.Malware]
+type MalwareList = js.Array[Malware]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OBSERVED
@@ -212,7 +406,7 @@ type MalwareList = js.Array[typings.awsSdk.securityhubMod.Malware]
   - typings.awsSdk.awsSdkStrings.REMOVED
   - java.lang.String
 */
-type MalwareState = typings.awsSdk.securityhubMod._MalwareState | java.lang.String
+type MalwareState = _MalwareState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ADWARE
@@ -232,37 +426,39 @@ type MalwareState = typings.awsSdk.securityhubMod._MalwareState | java.lang.Stri
   - typings.awsSdk.awsSdkStrings.WORM
   - java.lang.String
 */
-type MalwareType = typings.awsSdk.securityhubMod._MalwareType | java.lang.String
+type MalwareType = _MalwareType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EQUALS
   - typings.awsSdk.awsSdkStrings.NOT_EQUALS
   - java.lang.String
 */
-type MapFilterComparison = typings.awsSdk.securityhubMod._MapFilterComparison | java.lang.String
+type MapFilterComparison = _MapFilterComparison | String
 
-type MapFilterList = js.Array[typings.awsSdk.securityhubMod.MapFilter]
+type MapFilterList = js.Array[MapFilter]
 
 type MaxResults = scala.Double
 
-type MemberList = js.Array[typings.awsSdk.securityhubMod.Member]
+type MemberList = js.Array[Member]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN
   - typings.awsSdk.awsSdkStrings.OUT
   - java.lang.String
 */
-type NetworkDirection = typings.awsSdk.securityhubMod._NetworkDirection | java.lang.String
+type NetworkDirection = _NetworkDirection | String
 
-type NetworkPathList = js.Array[typings.awsSdk.securityhubMod.NetworkPathComponent]
+type NetworkPathList = js.Array[NetworkPathComponent]
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type NonEmptyString = java.lang.String
+type NonEmptyString = String
 
-type NonEmptyStringList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type NonEmptyStringList = js.Array[NonEmptyString]
 
-type NumberFilterList = js.Array[typings.awsSdk.securityhubMod.NumberFilter]
+type NumberFilterList = js.Array[NumberFilter]
+
+type Pages = js.Array[Page]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.aws_
@@ -270,13 +466,17 @@ type NumberFilterList = js.Array[typings.awsSdk.securityhubMod.NumberFilter]
   - typings.awsSdk.awsSdkStrings.`aws-us-gov`
   - java.lang.String
 */
-type Partition = typings.awsSdk.securityhubMod._Partition | java.lang.String
+type Partition = _Partition | String
 
-type PortRangeList = js.Array[typings.awsSdk.securityhubMod.PortRange]
+type PortProbeDetailList = js.Array[PortProbeDetail]
 
-type ProductSubscriptionArnList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type PortRangeList = js.Array[PortRange]
 
-type ProductsList = js.Array[typings.awsSdk.securityhubMod.Product]
+type ProductSubscriptionArnList = js.Array[NonEmptyString]
+
+type ProductsList = js.Array[Product]
+
+type Ranges = js.Array[Range]
 
 type RatioScale = scala.Double
 
@@ -285,19 +485,47 @@ type RatioScale = scala.Double
   - typings.awsSdk.awsSdkStrings.ARCHIVED
   - java.lang.String
 */
-type RecordState = typings.awsSdk.securityhubMod._RecordState | java.lang.String
+type RecordState = _RecordState | String
 
-type RelatedFindingList = js.Array[typings.awsSdk.securityhubMod.RelatedFinding]
+type Records = js.Array[Record]
 
-type RelatedRequirementsList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type RelatedFindingList = js.Array[RelatedFinding]
 
-type ResourceArn = java.lang.String
+type RelatedRequirementsList = js.Array[NonEmptyString]
 
-type ResourceList = js.Array[typings.awsSdk.securityhubMod.Resource]
+type ResourceArn = String
 
-type ResultList = js.Array[typings.awsSdk.securityhubMod.Result]
+type ResourceList = js.Array[Resource]
 
-type SecurityGroups = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type ResultList = js.Array[Result]
+
+type RuleGroupSourceCustomActionsList = js.Array[RuleGroupSourceCustomActionsDetails]
+
+type RuleGroupSourceStatefulRulesList = js.Array[RuleGroupSourceStatefulRulesDetails]
+
+type RuleGroupSourceStatefulRulesOptionsList = js.Array[RuleGroupSourceStatefulRulesOptionsDetails]
+
+type RuleGroupSourceStatefulRulesRuleOptionsSettingsList = js.Array[NonEmptyString]
+
+type RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsList = js.Array[RuleGroupSourceStatelessRuleMatchAttributesDestinationPorts]
+
+type RuleGroupSourceStatelessRuleMatchAttributesDestinationsList = js.Array[RuleGroupSourceStatelessRuleMatchAttributesDestinations]
+
+type RuleGroupSourceStatelessRuleMatchAttributesProtocolsList = js.Array[Integer]
+
+type RuleGroupSourceStatelessRuleMatchAttributesSourcePortsList = js.Array[RuleGroupSourceStatelessRuleMatchAttributesSourcePorts]
+
+type RuleGroupSourceStatelessRuleMatchAttributesSourcesList = js.Array[RuleGroupSourceStatelessRuleMatchAttributesSources]
+
+type RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsList = js.Array[RuleGroupSourceStatelessRuleMatchAttributesTcpFlags]
+
+type RuleGroupSourceStatelessRulesList = js.Array[RuleGroupSourceStatelessRulesDetails]
+
+type SecurityGroups = js.Array[NonEmptyString]
+
+type SensitiveDataDetectionsList = js.Array[SensitiveDataDetections]
+
+type SensitiveDataResultList = js.Array[SensitiveDataResult]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INFORMATIONAL
@@ -307,7 +535,7 @@ type SecurityGroups = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   - typings.awsSdk.awsSdkStrings.CRITICAL
   - java.lang.String
 */
-type SeverityLabel = typings.awsSdk.securityhubMod._SeverityLabel | java.lang.String
+type SeverityLabel = _SeverityLabel | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LOW
@@ -316,26 +544,26 @@ type SeverityLabel = typings.awsSdk.securityhubMod._SeverityLabel | java.lang.St
   - typings.awsSdk.awsSdkStrings.CRITICAL
   - java.lang.String
 */
-type SeverityRating = typings.awsSdk.securityhubMod._SeverityRating | java.lang.String
+type SeverityRating = _SeverityRating | String
 
 type SizeBytes = scala.Double
 
-type SoftwarePackageList = js.Array[typings.awsSdk.securityhubMod.SoftwarePackage]
+type SoftwarePackageList = js.Array[SoftwarePackage]
 
-type SortCriteria = js.Array[typings.awsSdk.securityhubMod.SortCriterion]
+type SortCriteria = js.Array[SortCriterion]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.asc_
   - typings.awsSdk.awsSdkStrings.desc_
   - java.lang.String
 */
-type SortOrder = typings.awsSdk.securityhubMod._SortOrder | java.lang.String
+type SortOrder = _SortOrder | String
 
-type Standards = js.Array[typings.awsSdk.securityhubMod.Standard]
+type Standards = js.Array[Standard]
 
-type StandardsControls = js.Array[typings.awsSdk.securityhubMod.StandardsControl]
+type StandardsControls = js.Array[StandardsControl]
 
-type StandardsInputParameterMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.securityhubMod.NonEmptyString]
+type StandardsInputParameterMap = StringDictionary[NonEmptyString]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -345,15 +573,24 @@ type StandardsInputParameterMap = org.scalablytyped.runtime.StringDictionary[typ
   - typings.awsSdk.awsSdkStrings.INCOMPLETE
   - java.lang.String
 */
-type StandardsStatus = typings.awsSdk.securityhubMod._StandardsStatus | java.lang.String
+type StandardsStatus = _StandardsStatus | String
 
-type StandardsSubscriptionArns = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type StandardsSubscriptionArns = js.Array[NonEmptyString]
 
-type StandardsSubscriptionRequests = js.Array[typings.awsSdk.securityhubMod.StandardsSubscriptionRequest]
+type StandardsSubscriptionRequests = js.Array[StandardsSubscriptionRequest]
 
-type StandardsSubscriptions = js.Array[typings.awsSdk.securityhubMod.StandardsSubscription]
+type StandardsSubscriptions = js.Array[StandardsSubscription]
 
-type StatusReasonsList = js.Array[typings.awsSdk.securityhubMod.StatusReason]
+type StatelessCustomPublishMetricActionDimensionsList = js.Array[StatelessCustomPublishMetricActionDimension]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NO_AVAILABLE_CONFIGURATION_RECORDER
+  - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
+  - java.lang.String
+*/
+type StatusReasonCode = _StatusReasonCode | String
+
+type StatusReasonsList = js.Array[StatusReason]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EQUALS
@@ -362,19 +599,19 @@ type StatusReasonsList = js.Array[typings.awsSdk.securityhubMod.StatusReason]
   - typings.awsSdk.awsSdkStrings.PREFIX_NOT_EQUALS
   - java.lang.String
 */
-type StringFilterComparison = typings.awsSdk.securityhubMod._StringFilterComparison | java.lang.String
+type StringFilterComparison = _StringFilterComparison | String
 
-type StringFilterList = js.Array[typings.awsSdk.securityhubMod.StringFilter]
+type StringFilterList = js.Array[StringFilter]
 
-type StringList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type StringList = js.Array[NonEmptyString]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.securityhubMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.securityhubMod.TagValue]
+type TagMap = StringDictionary[TagValue]
 
-type TagValue = java.lang.String
+type TagValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BACKDOOR
@@ -385,9 +622,9 @@ type TagValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.KEYLOGGER
   - java.lang.String
 */
-type ThreatIntelIndicatorCategory = typings.awsSdk.securityhubMod._ThreatIntelIndicatorCategory | java.lang.String
+type ThreatIntelIndicatorCategory = _ThreatIntelIndicatorCategory | String
 
-type ThreatIntelIndicatorList = js.Array[typings.awsSdk.securityhubMod.ThreatIntelIndicator]
+type ThreatIntelIndicatorList = js.Array[ThreatIntelIndicator]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DOMAIN
@@ -403,11 +640,13 @@ type ThreatIntelIndicatorList = js.Array[typings.awsSdk.securityhubMod.ThreatInt
   - typings.awsSdk.awsSdkStrings.URL
   - java.lang.String
 */
-type ThreatIntelIndicatorType = typings.awsSdk.securityhubMod._ThreatIntelIndicatorType | java.lang.String
+type ThreatIntelIndicatorType = _ThreatIntelIndicatorType | String
 
-type Timestamp = typings.std.Date
+type ThreatList = js.Array[Threat]
 
-type TypeList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+type Timestamp = js.Date
+
+type TypeList = js.Array[NonEmptyString]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNKNOWN
@@ -416,11 +655,25 @@ type TypeList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   - typings.awsSdk.awsSdkStrings.BENIGN_POSITIVE
   - java.lang.String
 */
-type VerificationState = typings.awsSdk.securityhubMod._VerificationState | java.lang.String
+type VerificationState = _VerificationState | String
 
-type VulnerabilityList = js.Array[typings.awsSdk.securityhubMod.Vulnerability]
+type VolumeMountList = js.Array[VolumeMount]
 
-type WafExcludedRuleList = js.Array[typings.awsSdk.securityhubMod.WafExcludedRule]
+type VpcInfoCidrBlockSetList = js.Array[VpcInfoCidrBlockSetDetails]
+
+type VpcInfoIpv6CidrBlockSetList = js.Array[VpcInfoIpv6CidrBlockSetDetails]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.YES
+  - typings.awsSdk.awsSdkStrings.NO
+  - typings.awsSdk.awsSdkStrings.PARTIAL
+  - java.lang.String
+*/
+type VulnerabilityFixAvailable = _VulnerabilityFixAvailable | String
+
+type VulnerabilityList = js.Array[Vulnerability]
+
+type WafExcludedRuleList = js.Array[WafExcludedRule]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NEW
@@ -430,7 +683,7 @@ type WafExcludedRuleList = js.Array[typings.awsSdk.securityhubMod.WafExcludedRul
   - typings.awsSdk.awsSdkStrings.RESOLVED
   - java.lang.String
 */
-type WorkflowState = typings.awsSdk.securityhubMod._WorkflowState | java.lang.String
+type WorkflowState = _WorkflowState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NEW
@@ -439,11 +692,11 @@ type WorkflowState = typings.awsSdk.securityhubMod._WorkflowState | java.lang.St
   - typings.awsSdk.awsSdkStrings.SUPPRESSED
   - java.lang.String
 */
-type WorkflowStatus = typings.awsSdk.securityhubMod._WorkflowStatus | java.lang.String
+type WorkflowStatus = _WorkflowStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-10-26`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.securityhubMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

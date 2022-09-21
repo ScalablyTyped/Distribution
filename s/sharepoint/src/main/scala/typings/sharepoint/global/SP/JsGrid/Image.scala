@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.Image")
 @js.native
-class Image protected ()
+open class Image protected ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.Image {
   /** optOuterCssNames and optImgCssNames are strings that contain css class names separated by spaces.

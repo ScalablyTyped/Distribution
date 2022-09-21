@@ -13,7 +13,7 @@ trait StructureTerminal
      with OwnedStructure[STRUCTURE_TERMINAL]
      with AnyOwnedStructure
      with AnyStoreStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The remaining amount of ticks while this terminal cannot be used to make StructureTerminal.send or Game.market.deal calls.

@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("squirejs", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Squire {
     def this(context: String) = this()
@@ -33,8 +33,8 @@ object mod {
     def clean(name: String): Squire = js.native
     def clean(name: js.Array[String]): Squire = js.native
     
-    def mock(mocks: StringDictionary[js.Any]): Squire = js.native
-    def mock(name: String, mock: js.Any): Squire = js.native
+    def mock(mocks: StringDictionary[Any]): Squire = js.native
+    def mock(name: String, mock: Any): Squire = js.native
     
     def remove(): String = js.native
     

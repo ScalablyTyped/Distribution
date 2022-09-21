@@ -1,0 +1,79 @@
+package typings.googleapis.osconfigV1betaMod.osconfigV1beta
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaPatchInstanceFilter extends StObject {
+  
+  /**
+    * Target all VM instances in the project. If true, no other criteria is permitted.
+    */
+  var all: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * Targets VM instances matching at least one of these label sets. This allows targeting of disparate groups, for example "env=prod or env=staging".
+    */
+  var groupLabels: js.UndefOr[js.Array[SchemaPatchInstanceFilterGroupLabel]] = js.undefined
+  
+  /**
+    * Targets VMs whose name starts with one of these prefixes. Similar to labels, this is another way to group VMs when targeting configs, for example prefix="prod-".
+    */
+  var instanceNamePrefixes: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Targets any of the VM instances specified. Instances are specified by their URI in the form `zones/[ZONE]/instances/[INSTANCE_NAME]`, `projects/[PROJECT_ID]/zones/[ZONE]/instances/[INSTANCE_NAME]`, or `https://www.googleapis.com/compute/v1/projects/[PROJECT_ID]/zones/[ZONE]/instances/[INSTANCE_NAME]`
+    */
+  var instances: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Targets VM instances in ANY of these zones. Leave empty to target VM instances in any zone.
+    */
+  var zones: js.UndefOr[js.Array[String] | Null] = js.undefined
+}
+object SchemaPatchInstanceFilter {
+  
+  inline def apply(): SchemaPatchInstanceFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaPatchInstanceFilter]
+  }
+  
+  extension [Self <: SchemaPatchInstanceFilter](x: Self) {
+    
+    inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    
+    inline def setAllNull: Self = StObject.set(x, "all", null)
+    
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    
+    inline def setGroupLabels(value: js.Array[SchemaPatchInstanceFilterGroupLabel]): Self = StObject.set(x, "groupLabels", value.asInstanceOf[js.Any])
+    
+    inline def setGroupLabelsUndefined: Self = StObject.set(x, "groupLabels", js.undefined)
+    
+    inline def setGroupLabelsVarargs(value: SchemaPatchInstanceFilterGroupLabel*): Self = StObject.set(x, "groupLabels", js.Array(value*))
+    
+    inline def setInstanceNamePrefixes(value: js.Array[String]): Self = StObject.set(x, "instanceNamePrefixes", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceNamePrefixesNull: Self = StObject.set(x, "instanceNamePrefixes", null)
+    
+    inline def setInstanceNamePrefixesUndefined: Self = StObject.set(x, "instanceNamePrefixes", js.undefined)
+    
+    inline def setInstanceNamePrefixesVarargs(value: String*): Self = StObject.set(x, "instanceNamePrefixes", js.Array(value*))
+    
+    inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    
+    inline def setInstancesNull: Self = StObject.set(x, "instances", null)
+    
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value*))
+    
+    inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    
+    inline def setZonesNull: Self = StObject.set(x, "zones", null)
+    
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value*))
+  }
+}

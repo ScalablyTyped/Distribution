@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectDefinition extends StObject {
   
   /**
-    * Name for the object, which then defines its type. Item indexing requests should set the objectType field equal to this value. For example, if *name* is *Document*, then indexing
+    * The name for the object, which then defines its type. Item indexing requests should set the objectType field equal to this value. For example, if *name* is *Document*, then indexing
     * requests for items of type Document should set objectType equal to *Document*. Each object definition must be uniquely named within a schema. The name must start with a letter and
     * can only contain letters (A-Z, a-z) or numbers (0-9). The maximum length is 256 characters.
     */
@@ -40,6 +40,6 @@ object ObjectDefinition {
     
     inline def setPropertyDefinitionsUndefined: Self = StObject.set(x, "propertyDefinitions", js.undefined)
     
-    inline def setPropertyDefinitionsVarargs(value: PropertyDefinition*): Self = StObject.set(x, "propertyDefinitions", js.Array(value :_*))
+    inline def setPropertyDefinitionsVarargs(value: PropertyDefinition*): Self = StObject.set(x, "propertyDefinitions", js.Array(value*))
   }
 }

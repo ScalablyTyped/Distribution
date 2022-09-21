@@ -7,20 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Collider extends StObject {
   
-  /* private */ var _basePoint: js.Any = js.native
+  /* private */ var _basePoint: Any = js.native
   
   /** @hidden */
   var _basePointWorld: Vector3 = js.native
   
-  /* private */ var _baseToVertex: js.Any = js.native
+  /* private */ var _baseToVertex: Any = js.native
   
-  /** @hidden */
+  /**
+    * @param sphereCenter
+    * @param sphereRadius
+    * @param vecMin
+    * @param vecMax
+    * @hidden
+    */
   def _canDoCollision(sphereCenter: Vector3, sphereRadius: Double, vecMin: Vector3, vecMax: Vector3): Boolean = js.native
   
-  /** @hidden */
+  /**
+    * @param point
+    * @param pa
+    * @param pb
+    * @param pc
+    * @param n
+    * @hidden
+    */
   def _checkPointInTriangle(point: Vector3, pa: Vector3, pb: Vector3, pc: Vector3, n: Vector3): Boolean = js.native
   
-  /** @hidden */
+  /**
+    * @param trianglePlaneArray
+    * @param pts
+    * @param indices
+    * @param indexStart
+    * @param indexEnd
+    * @param decal
+    * @param hasMaterial
+    * @param hostMesh
+    * @param invertTriangles
+    * @param triangleStrip
+    * @hidden
+    */
   def _collide(
     trianglePlaneArray: js.Array[Plane],
     pts: js.Array[Vector3],
@@ -31,20 +56,59 @@ trait Collider extends StObject {
     hasMaterial: Boolean,
     hostMesh: AbstractMesh
   ): Unit = js.native
+  def _collide(
+    trianglePlaneArray: js.Array[Plane],
+    pts: js.Array[Vector3],
+    indices: IndicesArray,
+    indexStart: Double,
+    indexEnd: Double,
+    decal: Double,
+    hasMaterial: Boolean,
+    hostMesh: AbstractMesh,
+    invertTriangles: Boolean
+  ): Unit = js.native
+  def _collide(
+    trianglePlaneArray: js.Array[Plane],
+    pts: js.Array[Vector3],
+    indices: IndicesArray,
+    indexStart: Double,
+    indexEnd: Double,
+    decal: Double,
+    hasMaterial: Boolean,
+    hostMesh: AbstractMesh,
+    invertTriangles: Boolean,
+    triangleStrip: Boolean
+  ): Unit = js.native
+  def _collide(
+    trianglePlaneArray: js.Array[Plane],
+    pts: js.Array[Vector3],
+    indices: IndicesArray,
+    indexStart: Double,
+    indexEnd: Double,
+    decal: Double,
+    hasMaterial: Boolean,
+    hostMesh: AbstractMesh,
+    invertTriangles: Unit,
+    triangleStrip: Boolean
+  ): Unit = js.native
   
-  /* private */ var _collisionMask: js.Any = js.native
+  /* private */ var _collisionMask: Any = js.native
   
-  /* private */ var _collisionPoint: js.Any = js.native
+  /* private */ var _collisionPoint: Any = js.native
   
-  /* private */ var _destinationPoint: js.Any = js.native
+  /* private */ var _destinationPoint: Any = js.native
   
-  /* private */ var _displacementVector: js.Any = js.native
+  /* private */ var _displacementVector: Any = js.native
   
-  /* private */ var _edge: js.Any = js.native
+  /* private */ var _edge: Any = js.native
   
-  /* private */ var _epsilon: js.Any = js.native
+  /* private */ var _epsilon: Any = js.native
   
-  /** @hidden */
+  /**
+    * @param pos
+    * @param vel
+    * @hidden
+    */
   def _getResponse(pos: Vector3, vel: Vector3): Unit = js.native
   
   /** @hidden */
@@ -53,14 +117,21 @@ trait Collider extends StObject {
   /** @hidden */
   var _initialVelocity: Vector3 = js.native
   
-  /** @hidden */
+  /**
+    * @param source
+    * @param dir
+    * @param e
+    * @hidden
+    */
   def _initialize(source: Vector3, dir: Vector3, e: Double): Unit = js.native
   
-  /* private */ var _nearestDistance: js.Any = js.native
+  /* private */ var _nearestDistance: Any = js.native
   
-  /* private */ var _normalizedVelocity: js.Any = js.native
+  /* private */ var _nearestDistanceSquared: Any = js.native
   
-  /* private */ var _planeIntersectionPoint: js.Any = js.native
+  /* private */ var _normalizedVelocity: Any = js.native
+  
+  /* private */ var _planeIntersectionPoint: Any = js.native
   
   /** @hidden */
   var _radius: Vector3 = js.native
@@ -68,17 +139,26 @@ trait Collider extends StObject {
   /** @hidden */
   var _retry: Double = js.native
   
-  /* private */ var _slidePlaneNormal: js.Any = js.native
+  /* private */ var _slidePlaneNormal: Any = js.native
   
-  /* private */ var _tempVector: js.Any = js.native
+  /* private */ var _tempVector: Any = js.native
   
-  /* private */ var _tempVector2: js.Any = js.native
+  /* private */ var _tempVector2: Any = js.native
   
-  /* private */ var _tempVector3: js.Any = js.native
+  /* private */ var _tempVector3: Any = js.native
   
-  /* private */ var _tempVector4: js.Any = js.native
+  /* private */ var _tempVector4: Any = js.native
   
-  /** @hidden */
+  /**
+    * @param faceIndex
+    * @param trianglePlaneArray
+    * @param p1
+    * @param p2
+    * @param p3
+    * @param hasMaterial
+    * @param hostMesh
+    * @hidden
+    */
   def _testTriangle(
     faceIndex: Double,
     trianglePlaneArray: js.Array[Plane],
@@ -89,9 +169,11 @@ trait Collider extends StObject {
     hostMesh: AbstractMesh
   ): Unit = js.native
   
-  /* private */ var _velocity: js.Any = js.native
+  /* private */ var _velocity: Any = js.native
   
-  /* private */ var _velocityWorld: js.Any = js.native
+  /* private */ var _velocitySquaredLength: Any = js.native
+  
+  /* private */ var _velocityWorld: Any = js.native
   
   /** @hidden */
   var _velocityWorldLength: Double = js.native

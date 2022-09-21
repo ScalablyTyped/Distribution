@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IAppearance extends StObject {
   
-  var items: js.Any
+  var items: Any
   
   var max: js.UndefOr[Double] = js.undefined
   
@@ -17,14 +17,14 @@ trait IAppearance extends StObject {
 }
 object IAppearance {
   
-  inline def apply(items: js.Any): IAppearance = {
+  inline def apply(items: Any): IAppearance = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], uses = "settings")
     __obj.asInstanceOf[IAppearance]
   }
   
   extension [Self <: IAppearance](x: Self) {
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

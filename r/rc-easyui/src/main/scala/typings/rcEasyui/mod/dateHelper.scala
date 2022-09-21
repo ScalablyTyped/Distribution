@@ -14,11 +14,11 @@ object dateHelper {
   @js.native
   val ampm: js.Array[String] = js.native
   
-  inline def formatDate(e: js.Any, t: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def formatDate(e: Any, t: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def parseDate(e: js.Any, t: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseDate(e: Any, t: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def parseSelections(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelections")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parseSelections(e: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelections")(e.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def setAmPm(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAmPm")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setAmPm(e: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAmPm")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

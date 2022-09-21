@@ -14,21 +14,21 @@ trait DialogSettings extends StObject {
   var closeOnEscape: js.UndefOr[Boolean] = js.undefined
   
   //Events
-  var closed: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var closed: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var closing: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var closing: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var drag: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var dragStart: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var dragStart: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var dragStop: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var dragStop: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var draggable: js.UndefOr[Boolean] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
   
-  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var initialized: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var locale: js.UndefOr[String] = js.undefined
   
@@ -42,17 +42,17 @@ trait DialogSettings extends StObject {
   
   var modal: js.UndefOr[Boolean] = js.undefined
   
-  var opened: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var opened: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var opening: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var opening: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var resizable: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var resize: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var resizeStart: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var resizeStart: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var resizeStop: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var resizeStop: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var scrollable: js.UndefOr[Boolean] = js.undefined
   
@@ -83,21 +83,21 @@ object DialogSettings {
     
     inline def setCloseOnEscapeUndefined: Self = StObject.set(x, "closeOnEscape", js.undefined)
     
-    inline def setClosed(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+    inline def setClosed(value: /* e */ Any => Any): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
     
     inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
-    inline def setClosing(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "closing", js.Any.fromFunction1(value))
+    inline def setClosing(value: /* e */ Any => Any): Self = StObject.set(x, "closing", js.Any.fromFunction1(value))
     
     inline def setClosingUndefined: Self = StObject.set(x, "closing", js.undefined)
     
-    inline def setDrag(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
+    inline def setDrag(value: /* e */ Any => Any): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
-    inline def setDragStart(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
+    inline def setDragStart(value: /* e */ Any => Any): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
     
     inline def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
     
-    inline def setDragStop(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dragStop", js.Any.fromFunction1(value))
+    inline def setDragStop(value: /* e */ Any => Any): Self = StObject.set(x, "dragStop", js.Any.fromFunction1(value))
     
     inline def setDragStopUndefined: Self = StObject.set(x, "dragStop", js.undefined)
     
@@ -111,7 +111,7 @@ object DialogSettings {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setInitialized(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
+    inline def setInitialized(value: /* e */ Any => Any): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
     
     inline def setInitializedUndefined: Self = StObject.set(x, "initialized", js.undefined)
     
@@ -139,11 +139,11 @@ object DialogSettings {
     
     inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
-    inline def setOpened(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
+    inline def setOpened(value: /* e */ Any => Any): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
     
     inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
     
-    inline def setOpening(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "opening", js.Any.fromFunction1(value))
+    inline def setOpening(value: /* e */ Any => Any): Self = StObject.set(x, "opening", js.Any.fromFunction1(value))
     
     inline def setOpeningUndefined: Self = StObject.set(x, "opening", js.undefined)
     
@@ -151,13 +151,13 @@ object DialogSettings {
     
     inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
-    inline def setResize(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+    inline def setResize(value: /* e */ Any => Any): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
-    inline def setResizeStart(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "resizeStart", js.Any.fromFunction1(value))
+    inline def setResizeStart(value: /* e */ Any => Any): Self = StObject.set(x, "resizeStart", js.Any.fromFunction1(value))
     
     inline def setResizeStartUndefined: Self = StObject.set(x, "resizeStart", js.undefined)
     
-    inline def setResizeStop(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "resizeStop", js.Any.fromFunction1(value))
+    inline def setResizeStop(value: /* e */ Any => Any): Self = StObject.set(x, "resizeStop", js.Any.fromFunction1(value))
     
     inline def setResizeStopUndefined: Self = StObject.set(x, "resizeStop", js.undefined)
     

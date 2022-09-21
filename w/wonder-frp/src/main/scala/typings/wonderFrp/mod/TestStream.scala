@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "TestStream")
 @js.native
-class TestStream protected ()
+open class TestStream protected ()
   extends typings.wonderFrp.testStreamMod.TestStream {
   def this(
     messages: js.Array[typings.wonderFrp.recordMod.Record],

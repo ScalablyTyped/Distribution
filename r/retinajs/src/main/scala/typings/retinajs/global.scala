@@ -22,5 +22,5 @@ object global {
   // function getImages(images: any[] | null): any[];
   // function cleanBgImg(img: any): any;
   inline def retinajs(): Unit = js.Dynamic.global.applyDynamic("retinajs")().asInstanceOf[Unit]
-  inline def retinajs(images: js.Any): Unit = js.Dynamic.global.applyDynamic("retinajs")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def retinajs(images: Any): Unit = js.Dynamic.global.applyDynamic("retinajs")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -9,7 +9,7 @@ object tileMod {
   
   @JSImport("ol/layer/Tile", JSImport.Default)
   @js.native
-  class default () extends TileLayer {
+  open class default () extends TileLayer {
     def this(opt_options: Options) = this()
   }
   

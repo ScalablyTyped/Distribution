@@ -7,11 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait XPathEvaluatorBase extends StObject {
   
+  /* standard dom */
   def createExpression(expression: java.lang.String): XPathExpression = js.native
   def createExpression(expression: java.lang.String, resolver: XPathNSResolver): XPathExpression = js.native
   
+  /* standard dom */
   def createNSResolver(nodeResolver: Node): XPathNSResolver = js.native
   
+  /* standard dom */
   def evaluate(expression: java.lang.String, contextNode: Node): XPathResult = js.native
   def evaluate(expression: java.lang.String, contextNode: Node, resolver: Null, `type`: Double): XPathResult = js.native
   def evaluate(

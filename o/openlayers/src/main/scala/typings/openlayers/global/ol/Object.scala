@@ -50,7 +50,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @fires ol.ObjectEvent
   * @api
   */
-class Object ()
+open class Object ()
   extends typings.openlayers.mod.Object {
-  def this(opt_values: StringDictionary[js.Any]) = this()
+  def this(opt_values: StringDictionary[Any]) = this()
 }

@@ -34,7 +34,7 @@ trait KeyMapper extends StObject {
 object KeyMapper {
   
   inline def apply(
-    keyMapper: /* value */ js.Any => js.Any,
+    keyMapper: /* value */ Any => Any,
     onCellsRendered: () => Unit,
     onScroll: () => Unit,
     scrollingResetTimeInterval: /* 150 */ Double,
@@ -48,7 +48,7 @@ object KeyMapper {
     
     inline def setAutoHeight(value: `false`): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
     
-    inline def setKeyMapper(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "keyMapper", js.Any.fromFunction1(value))
+    inline def setKeyMapper(value: /* value */ Any => Any): Self = StObject.set(x, "keyMapper", js.Any.fromFunction1(value))
     
     inline def setOnCellsRendered(value: () => Unit): Self = StObject.set(x, "onCellsRendered", js.Any.fromFunction0(value))
     

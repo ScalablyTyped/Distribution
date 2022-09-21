@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [points] Array of points
   * @param [options] Options object
   */
-class Line ()
+open class Line ()
   extends typings.fabric.fabricImplMod.Line {
   def this(points: js.Array[Double]) = this()
   def this(points: js.Array[Double], objObjects: ILineOptions) = this()
@@ -48,5 +48,5 @@ object Line {
     * Returns fabric.Line instance from an object representation
     * @param object Object to create an instance from
     */
-  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Line]
+  inline def fromObject(`object`: Any): typings.fabric.fabricImplMod.Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Line]
 }

@@ -166,6 +166,10 @@ object trtcJsSdkStrings {
   inline def detail: detail = "detail".asInstanceOf[detail]
   
   @js.native
+  sealed trait ended extends StObject
+  inline def ended: ended = "ended".asInstanceOf[ended]
+  
+  @js.native
   sealed trait environment extends StObject
   inline def environment: environment = "environment".asInstanceOf[environment]
   
@@ -194,12 +198,20 @@ object trtcJsSdkStrings {
   inline def motion: motion = "motion".asInstanceOf[motion]
   
   @js.native
+  sealed trait mute extends StObject
+  inline def mute: mute = "mute".asInstanceOf[mute]
+  
+  @js.native
   sealed trait `mute-audio` extends StObject
   inline def `mute-audio`: `mute-audio` = "mute-audio".asInstanceOf[`mute-audio`]
   
   @js.native
   sealed trait `mute-video` extends StObject
   inline def `mute-video`: `mute-video` = "mute-video".asInstanceOf[`mute-video`]
+  
+  @js.native
+  sealed trait `network-quality` extends StObject
+  inline def `network-quality`: `network-quality` = "network-quality".asInstanceOf[`network-quality`]
   
   @js.native
   sealed trait none extends StObject
@@ -216,6 +228,14 @@ object trtcJsSdkStrings {
   @js.native
   sealed trait `player-state-changed` extends StObject
   inline def `player-state-changed`: `player-state-changed` = "player-state-changed".asInstanceOf[`player-state-changed`]
+  
+  @js.native
+  sealed trait playing_ extends StObject
+  inline def playing_ : playing_ = "playing".asInstanceOf[playing_]
+  
+  @js.native
+  sealed trait rtc extends StObject
+  inline def rtc: rtc = "rtc".asInstanceOf[rtc]
   
   @js.native
   sealed trait `scale-down` extends StObject
@@ -250,6 +270,10 @@ object trtcJsSdkStrings {
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
+  sealed trait unmute extends StObject
+  inline def unmute: unmute = "unmute".asInstanceOf[unmute]
+  
+  @js.native
   sealed trait `unmute-audio` extends StObject
   inline def `unmute-audio`: `unmute-audio` = "unmute-audio".asInstanceOf[`unmute-audio`]
   
@@ -264,8 +288,4 @@ object trtcJsSdkStrings {
   @js.native
   sealed trait video extends StObject
   inline def video: video = "video".asInstanceOf[video]
-  
-  @js.native
-  sealed trait videoCall extends StObject
-  inline def videoCall: videoCall = "videoCall".asInstanceOf[videoCall]
 }

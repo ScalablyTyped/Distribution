@@ -8,5 +8,5 @@ object pullRequestTargetListMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_PullRequestTargetList", "_PullRequestTargetList")
   @js.native
-  val PullRequestTargetList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val PullRequestTargetList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

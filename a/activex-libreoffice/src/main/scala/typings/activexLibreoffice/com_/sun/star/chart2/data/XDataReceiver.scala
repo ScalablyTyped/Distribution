@@ -85,7 +85,7 @@ object XDataReceiver {
     getRangeHighlighter: () => XRangeHighlighter,
     getUsedData: () => XDataSource,
     getUsedRangeRepresentations: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setArguments: SeqEquiv[PropertyValue] => Unit
   ): XDataReceiver = {

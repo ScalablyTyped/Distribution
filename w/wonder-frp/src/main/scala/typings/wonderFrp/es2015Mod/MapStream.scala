@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "MapStream")
 @js.native
-class MapStream protected ()
+open class MapStream protected ()
   extends typings.wonderFrp.streamMapStreamMod.MapStream {
   def this(source: typings.wonderFrp.coreStreamMod.Stream, selector: js.Function) = this()
 }

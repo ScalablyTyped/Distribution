@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientWeightedClose")
 @js.native
-class ASPxClientWeightedClose ()
+open class ASPxClientWeightedClose ()
   extends StObject
      with typings.devexpressWeb.ASPxClientIndicator {
   

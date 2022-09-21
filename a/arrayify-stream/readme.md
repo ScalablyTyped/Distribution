@@ -9,11 +9,11 @@ Converts a Node readable stream into an array
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | arrayify-stream |
-| Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 27490 |
-| # stars            | 0 |
+| Keywords           | stream, array, readable stream |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 20559.666666666668 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/rubensworks/arrayify-stream.js#readme)

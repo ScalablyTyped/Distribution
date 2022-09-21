@@ -46,6 +46,6 @@ object RefinementCategory {
     
     inline def setT(value: js.Array[String]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    inline def setTVarargs(value: String*): Self = StObject.set(x, "t", js.Array(value :_*))
+    inline def setTVarargs(value: String*): Self = StObject.set(x, "t", js.Array(value*))
   }
 }

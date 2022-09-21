@@ -11,7 +11,7 @@ trait IgBulletGraph
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event which is raised when a label of the bullet graph is aligned along the scale.
@@ -121,7 +121,7 @@ trait IgBulletGraph
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the maximum value of the scale.
@@ -180,7 +180,7 @@ trait IgBulletGraph
     * Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var rangeBrushes: js.UndefOr[js.Any] = js.undefined
+  var rangeBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.
@@ -198,7 +198,7 @@ trait IgBulletGraph
     * Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var rangeOutlines: js.UndefOr[js.Any] = js.undefined
+  var rangeOutlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the ranges' tooltip template.
@@ -461,7 +461,7 @@ object IgBulletGraph {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -501,7 +501,7 @@ object IgBulletGraph {
     
     inline def setPixelScalingRatioUndefined: Self = StObject.set(x, "pixelScalingRatio", js.undefined)
     
-    inline def setRangeBrushes(value: js.Any): Self = StObject.set(x, "rangeBrushes", value.asInstanceOf[js.Any])
+    inline def setRangeBrushes(value: Any): Self = StObject.set(x, "rangeBrushes", value.asInstanceOf[js.Any])
     
     inline def setRangeBrushesUndefined: Self = StObject.set(x, "rangeBrushes", js.undefined)
     
@@ -513,7 +513,7 @@ object IgBulletGraph {
     
     inline def setRangeOuterExtentUndefined: Self = StObject.set(x, "rangeOuterExtent", js.undefined)
     
-    inline def setRangeOutlines(value: js.Any): Self = StObject.set(x, "rangeOutlines", value.asInstanceOf[js.Any])
+    inline def setRangeOutlines(value: Any): Self = StObject.set(x, "rangeOutlines", value.asInstanceOf[js.Any])
     
     inline def setRangeOutlinesUndefined: Self = StObject.set(x, "rangeOutlines", js.undefined)
     
@@ -525,7 +525,7 @@ object IgBulletGraph {
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: IgBulletGraphRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: IgBulletGraphRange*): Self = StObject.set(x, "ranges", js.Array(value*))
     
     inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     

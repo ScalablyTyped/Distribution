@@ -15,7 +15,7 @@ trait ErrorSettings extends StObject {
   /*This is the CSS style description to use for the error messages produced by internal MathJax errors. See the
     * section on CSS style objects for details on how these are specified in JavaScript.
     */
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[Any] = js.undefined
 }
 object ErrorSettings {
   
@@ -30,9 +30,9 @@ object ErrorSettings {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setMessageVarargs(value: String*): Self = StObject.set(x, "message", js.Array(value :_*))
+    inline def setMessageVarargs(value: String*): Self = StObject.set(x, "message", js.Array(value*))
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

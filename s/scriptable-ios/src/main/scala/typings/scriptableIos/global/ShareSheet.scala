@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import typings.scriptableIos.ShareSheet.ShareSheetResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,5 +22,5 @@ object ShareSheet {
     * @param activityItems - Items to perform activity on.
     * @see https://docs.scriptable.app/sharesheet/#present
     */
-  inline def present(activityItems: js.Array[js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("present")(activityItems.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def present(activityItems: js.Array[Any]): js.Promise[ShareSheetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("present")(activityItems.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShareSheetResult]]
 }

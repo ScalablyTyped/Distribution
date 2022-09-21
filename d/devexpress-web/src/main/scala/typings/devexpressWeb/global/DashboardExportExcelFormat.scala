@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardExportExcelFormat")
 @js.native
-class DashboardExportExcelFormat ()
+open class DashboardExportExcelFormat ()
   extends StObject
      with typings.devexpressWeb.DashboardExportExcelFormat
 object DashboardExportExcelFormat {

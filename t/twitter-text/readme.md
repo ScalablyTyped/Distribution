@@ -1,7 +1,7 @@
 
 # Scala.js typings for twitter-text
 
-Typings are for version v2.0.0
+Typings are for version 3.1
 
 ## Library description:
 official twitter text linkification
@@ -10,10 +10,10 @@ official twitter text linkification
 | ------------------ | :-------------: |
 | Full name          | twitter-text |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 66 |
-| # downloads        | 1255873 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 162551.0 |
+| # stars            | 2789.0 |
 
 ## Links
 - [Homepage](https://github.com/twitter/twitter-text)

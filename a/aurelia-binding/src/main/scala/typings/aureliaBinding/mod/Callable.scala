@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Callable extends StObject {
   
-  def call(context: js.Any, changeRecords: js.Any): Unit = js.native
-  def call(context: js.Any, newValue: js.Any, oldValue: js.Any): Unit = js.native
+  def call(context: Any, changeRecords: Any): Unit = js.native
+  def call(context: Any, newValue: Any, oldValue: Any): Unit = js.native
 }

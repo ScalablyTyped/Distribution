@@ -12,26 +12,25 @@ object imageBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Image/Image.base", "ImageBase")
   @js.native
-  class ImageBase protected ()
-    extends Component[IImageProps, IImageState, js.Any] {
+  open class ImageBase protected () extends Component[IImageProps, IImageState, Any] {
     def this(props: IImageProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MImageBase(nextProps: IImageProps): Unit = js.native
     
-    /* private */ var _checkImageLoaded: js.Any = js.native
+    /* private */ var _checkImageLoaded: Any = js.native
     
-    /* private */ var _computeCoverStyle: js.Any = js.native
+    /* private */ var _computeCoverStyle: Any = js.native
     
-    /* private */ var _coverStyle: js.Any = js.native
+    /* private */ var _coverStyle: Any = js.native
     
-    /* private */ var _frameElement: js.Any = js.native
+    /* private */ var _frameElement: Any = js.native
     
-    /* private */ var _imageElement: js.Any = js.native
+    /* private */ var _imageElement: Any = js.native
     
-    /* private */ var _onImageError: js.Any = js.native
+    /* private */ var _onImageError: Any = js.native
     
-    /* private */ var _onImageLoaded: js.Any = js.native
+    /* private */ var _onImageLoaded: Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MImageBase(prevProps: IImageProps, prevState: IImageState): Unit = js.native
@@ -45,8 +44,8 @@ object imageBaseMod {
     
     @JSImport("office-ui-fabric-react/lib/components/Image/Image.base", "ImageBase._svgRegex")
     @js.native
-    def _svgRegex: js.Any = js.native
-    inline def _svgRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
+    def _svgRegex: Any = js.native
+    inline def _svgRegex_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/Image/Image.base", "ImageBase.defaultProps")
     @js.native

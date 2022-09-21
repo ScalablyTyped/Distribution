@@ -9,7 +9,7 @@ object dragPanMod {
   
   @JSImport("ol/interaction/DragPan", JSImport.Default)
   @js.native
-  class default () extends DragPan {
+  open class default () extends DragPan {
     def this(opt_options: Options) = this()
   }
   

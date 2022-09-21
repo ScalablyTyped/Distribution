@@ -44,11 +44,11 @@ object LocationPokemon {
     
     inline def setDay_timesUndefined: Self = StObject.set(x, "day_times", js.undefined)
     
-    inline def setDay_timesVarargs(value: String*): Self = StObject.set(x, "day_times", js.Array(value :_*))
+    inline def setDay_timesVarargs(value: String*): Self = StObject.set(x, "day_times", js.Array(value*))
     
     inline def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
-    inline def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
+    inline def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value*))
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object LocationPokemon {
     
     inline def setSeasonsUndefined: Self = StObject.set(x, "seasons", js.undefined)
     
-    inline def setSeasonsVarargs(value: String*): Self = StObject.set(x, "seasons", js.Array(value :_*))
+    inline def setSeasonsVarargs(value: String*): Self = StObject.set(x, "seasons", js.Array(value*))
     
     inline def setVariation(value: String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     

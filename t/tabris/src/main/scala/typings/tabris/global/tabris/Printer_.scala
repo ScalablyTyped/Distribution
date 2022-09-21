@@ -6,5 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.Printer")
 @js.native
-/* private */ class Printer_ ()
+/**
+  * Allows to print PDF documents or images from the device. A printer object is always available from
+  * tabris.printer.
+  */
+/* private */ open class Printer_ ()
   extends typings.tabris.mod.Printer_

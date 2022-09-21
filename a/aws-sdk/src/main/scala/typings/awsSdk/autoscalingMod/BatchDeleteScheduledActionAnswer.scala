@@ -24,6 +24,6 @@ object BatchDeleteScheduledActionAnswer {
     
     inline def setFailedScheduledActionsUndefined: Self = StObject.set(x, "FailedScheduledActions", js.undefined)
     
-    inline def setFailedScheduledActionsVarargs(value: FailedScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "FailedScheduledActions", js.Array(value :_*))
+    inline def setFailedScheduledActionsVarargs(value: FailedScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "FailedScheduledActions", js.Array(value*))
   }
 }

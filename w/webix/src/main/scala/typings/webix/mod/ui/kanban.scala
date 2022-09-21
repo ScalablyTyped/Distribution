@@ -10,28 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webix", "ui.kanban")
 @js.native
-class kanban ()
+open class kanban ()
   extends StObject
      with typings.webix.webix.ui.baseview {
   
   @JSName("$skin")
   var $skin_Original_kanban: WebixCallback = js.native
   
-  def add(obj: js.Any): String | Double = js.native
-  def add(obj: js.Any, index: Double): String | Double = js.native
+  def add(obj: Any): String | Double = js.native
+  def add(obj: Any, index: Double): String | Double = js.native
   
-  def addView(view: js.Any): String | Double = js.native
-  def addView(view: js.Any, index: Double): String | Double = js.native
+  def addView(view: Any): String | Double = js.native
+  def addView(view: Any, index: Double): String | Double = js.native
   
   def attachEvent(`type`: kanbanEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: kanbanEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
-  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: Any, rule: WebixCallback): Unit = js.native
+  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   def clearAll(): Unit = js.native
   def clearAll(soft: Boolean): Unit = js.native
@@ -66,8 +66,8 @@ class kanban ()
   def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
-  def find(criterion: WebixCallback): js.Any = js.native
-  def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
+  def find(criterion: WebixCallback): Any = js.native
+  def find(criterion: WebixCallback, first: Boolean): Any = js.native
   
   def getColors(): DataCollection = js.native
   
@@ -83,8 +83,8 @@ class kanban ()
   def getIndexById(id: String): Double = js.native
   def getIndexById(id: Double): Double = js.native
   
-  def getItem(id: String): js.Any = js.native
-  def getItem(id: Double): js.Any = js.native
+  def getItem(id: String): Any = js.native
+  def getItem(id: Double): Any = js.native
   
   def getLastId(): Double | String = js.native
   
@@ -93,15 +93,15 @@ class kanban ()
   def getNextId(id: String, step: Double): String | Double = js.native
   def getNextId(id: Double, step: Double): String | Double = js.native
   
-  def getOwnerList(itemId: String): js.Any = js.native
-  def getOwnerList(itemId: Double): js.Any = js.native
+  def getOwnerList(itemId: String): Any = js.native
+  def getOwnerList(itemId: Double): Any = js.native
   
   def getPrevId(id: String, step: Double): String | Double = js.native
   def getPrevId(id: Double, step: Double): String | Double = js.native
   
   def getSelectedId(): String | Double = js.native
   
-  def getStatuses(): js.Array[js.Any] = js.native
+  def getStatuses(): js.Array[Any] = js.native
   
   def getTags(): DataCollection = js.native
   
@@ -111,18 +111,18 @@ class kanban ()
   
   def hasEvent(name: String): Boolean = js.native
   
-  def index(obj: js.Any): Double = js.native
+  def index(obj: Any): Double = js.native
   
-  def load(url: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[js.Any] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[Any] = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
-  def parse(data: js.Any, `type`: String): Unit = js.native
+  def parse(data: Any, `type`: String): Unit = js.native
   
   def reconstruct(): Unit = js.native
   
@@ -131,41 +131,41 @@ class kanban ()
   def refresh(id: Double): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[js.Any]): Unit = js.native
+  def remove(id: js.Array[Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
-  def removeView(id: js.Any): Unit = js.native
+  def removeView(id: Any): Unit = js.native
   
   def resizeChildren(): Unit = js.native
   
-  def restore(state: js.Any): Unit = js.native
-  def restore(state: js.Any, factory: WebixCallback): Unit = js.native
+  def restore(state: Any): Unit = js.native
+  def restore(state: Any, factory: WebixCallback): Unit = js.native
   
   def select(id: String): Unit = js.native
   def select(id: Double): Unit = js.native
   
-  def serialize(): js.Array[js.Any] = js.native
-  def serialize(all: Boolean): js.Array[js.Any] = js.native
+  def serialize(): js.Array[Any] = js.native
+  def serialize(all: Boolean): js.Array[Any] = js.native
   
   def showBatch(name: String): Unit = js.native
   def showBatch(name: String, mode: Boolean): Unit = js.native
   
   def showEditor(): Unit = js.native
-  def showEditor(obj: js.Any): Unit = js.native
+  def showEditor(obj: Any): Unit = js.native
   
   def sort(by: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sort(by: String, dir: Unit, as: String): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def unblockEvent(): Unit = js.native
   
-  def updateItem(id: String, data: js.Any): Unit = js.native
-  def updateItem(id: Double, data: js.Any): Unit = js.native
+  def updateItem(id: String, data: Any): Unit = js.native
+  def updateItem(id: Double, data: Any): Unit = js.native
   
-  var waitData: js.Promise[js.Any] = js.native
+  var waitData: js.Promise[Any] = js.native
   
-  def waitSave(handler: WebixCallback): js.Promise[js.Any] = js.native
+  def waitSave(handler: WebixCallback): js.Promise[Any] = js.native
 }

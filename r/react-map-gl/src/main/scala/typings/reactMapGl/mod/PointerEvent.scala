@@ -12,7 +12,7 @@ trait PointerEvent
      with MouseEvent {
   
   // backward compatibility: v3 interface
-  var features: js.Array[js.Any] = js.native
+  var features: js.Array[Any] = js.native
   
   var lngLat: js.Tuple2[Double, Double] = js.native
   
@@ -20,5 +20,5 @@ trait PointerEvent
   
   var point: js.Tuple2[Double, Double] = js.native
   
-  var srcEvent: js.Any = js.native
+  var srcEvent: Any = js.native
 }

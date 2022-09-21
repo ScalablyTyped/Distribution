@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Drag")
 @js.native
-class Drag protected () extends StObject {
+open class Drag protected () extends StObject {
   def this(elementOrId: String) = this()
   def this(elementOrId: HTMLElement) = this()
   def this(elementOrId: String, options: `0`) = this()

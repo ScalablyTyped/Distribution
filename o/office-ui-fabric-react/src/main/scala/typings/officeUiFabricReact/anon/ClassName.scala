@@ -19,7 +19,7 @@ trait ClassName extends StObject {
   
   def onTouchStart(event: MouseTouchEvent[HTMLElement]): js.UndefOr[`false`]
   
-  var style: js.Any
+  var style: Any
 }
 object ClassName {
   
@@ -29,7 +29,7 @@ object ClassName {
     onMouseUp: MouseTouchEvent[HTMLElement] => scala.Unit,
     onTouchEnd: MouseTouchEvent[HTMLElement] => scala.Unit,
     onTouchStart: MouseTouchEvent[HTMLElement] => js.UndefOr[`false`],
-    style: js.Any
+    style: Any
   ): ClassName = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassName]
@@ -47,6 +47,6 @@ object ClassName {
     
     inline def setOnTouchStart(value: MouseTouchEvent[HTMLElement] => js.UndefOr[`false`]): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

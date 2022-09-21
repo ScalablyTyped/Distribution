@@ -41,7 +41,7 @@ object ASPxClientHtmlEditorInsertImageCommandArguments {
   inline def apply(
     align: String,
     alt: String,
-    selectedElement: js.Any,
+    selectedElement: Any,
     src: String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
     useFloat: Boolean

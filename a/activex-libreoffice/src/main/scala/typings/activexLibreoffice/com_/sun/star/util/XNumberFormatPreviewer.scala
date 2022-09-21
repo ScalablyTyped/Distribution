@@ -43,7 +43,7 @@ object XNumberFormatPreviewer {
   inline def apply(
     acquire: () => Unit,
     convertNumberToPreviewString: (String, Double, Locale, Boolean) => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryPreviewColorForNumber: (String, Double, Locale, Boolean, Color) => Color,
     release: () => Unit
   ): XNumberFormatPreviewer = {

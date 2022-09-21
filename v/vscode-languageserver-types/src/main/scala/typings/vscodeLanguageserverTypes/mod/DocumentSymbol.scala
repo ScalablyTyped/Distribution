@@ -13,6 +13,8 @@ trait DocumentSymbol extends StObject {
   
   /**
     * Indicates if this symbol is deprecated.
+    *
+    * @deprecated Use tags instead
     */
   var deprecated: js.UndefOr[Boolean] = js.undefined
   
@@ -34,16 +36,23 @@ trait DocumentSymbol extends StObject {
   
   /**
     * The range enclosing this symbol not including leading/trailing whitespace but everything else
-    * like comments. This information is typically used to determine if the the clients cursor is
+    * like comments. This information is typically used to determine if the clients cursor is
     * inside the symbol to reveal in the symbol in the UI.
     */
   var range: Range
   
   /**
     * The range that should be selected and revealed when this symbol is being picked, e.g the name of a function.
-    * Must be contained by the the `range`.
+    * Must be contained by the `range`.
     */
   var selectionRange: Range
+  
+  /**
+    * Tags for this document symbol.
+    *
+    * @since 3.16.0
+    */
+  var tags: js.UndefOr[js.Array[SymbolTag]] = js.undefined
 }
 object DocumentSymbol {
   
@@ -88,7 +97,7 @@ object DocumentSymbol {
   /**
     * Checks whether the given literal conforms to the [DocumentSymbol](#DocumentSymbol) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean]
   
   extension [Self <: DocumentSymbol](x: Self) {
     
@@ -96,7 +105,7 @@ object DocumentSymbol {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: DocumentSymbol*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: DocumentSymbol*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
@@ -113,5 +122,11 @@ object DocumentSymbol {
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setSelectionRange(value: Range): Self = StObject.set(x, "selectionRange", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: js.Array[SymbolTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: SymbolTag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

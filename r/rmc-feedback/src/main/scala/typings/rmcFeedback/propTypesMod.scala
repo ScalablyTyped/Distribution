@@ -10,9 +10,9 @@ object propTypesMod {
     
     var activeClassName: js.UndefOr[String] = js.undefined
     
-    var activeStyle: js.UndefOr[js.Any] = js.undefined
+    var activeStyle: js.UndefOr[Any] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
   }
@@ -29,11 +29,11 @@ object propTypesMod {
       
       inline def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
       
-      inline def setActiveStyle(value: js.Any): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
+      inline def setActiveStyle(value: Any): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
       
       inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

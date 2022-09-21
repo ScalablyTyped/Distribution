@@ -45,6 +45,13 @@ object reactOverlaysStrings {
   inline def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   
   @js.native
+  sealed trait at
+    extends StObject
+       with Modifiers
+       with typings.reactOverlays.usePopperMod.Modifiers
+  inline def at: at = "at".asInstanceOf[at]
+  
+  @js.native
   sealed trait auxclick
     extends StObject
        with MouseEvents
@@ -52,18 +59,18 @@ object reactOverlaysStrings {
   inline def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
   
   @js.native
+  sealed trait beforeinput
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
+  
+  @js.native
   sealed trait blur
     extends StObject
        with MouseEvents
        with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
   inline def blur: blur = "blur".asInstanceOf[blur]
-  
-  @js.native
-  sealed trait cancel
-    extends StObject
-       with MouseEvents
-       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
-  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
   sealed trait canplay
@@ -99,6 +106,27 @@ object reactOverlaysStrings {
        with MouseEvents
        with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
   inline def close: close = "close".asInstanceOf[close]
+  
+  @js.native
+  sealed trait compositionend
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
   
   @js.native
   sealed trait concat
@@ -162,13 +190,6 @@ object reactOverlaysStrings {
        with MouseEvents
        with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
   inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
-  
-  @js.native
-  sealed trait dragexit
-    extends StObject
-       with MouseEvents
-       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
-  inline def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
   
   @js.native
   sealed trait dragleave
@@ -309,6 +330,13 @@ object reactOverlaysStrings {
        with Modifiers
        with typings.reactOverlays.usePopperMod.Modifiers
   inline def forEach: forEach = "forEach".asInstanceOf[forEach]
+  
+  @js.native
+  sealed trait formdata
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
   
   @js.native
   sealed trait gotpointercapture
@@ -707,6 +735,13 @@ object reactOverlaysStrings {
   inline def slice: slice = "slice".asInstanceOf[slice]
   
   @js.native
+  sealed trait slotchange
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
+  
+  @js.native
   sealed trait some
     extends StObject
        with Modifiers
@@ -868,6 +903,34 @@ object reactOverlaysStrings {
        with MouseEvents
        with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
   inline def waiting: waiting = "waiting".asInstanceOf[waiting]
+  
+  @js.native
+  sealed trait webkitanimationend
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend
+    extends StObject
+       with MouseEvents
+       with typings.reactOverlays.esmUseRootCloseMod.MouseEvents
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
   
   @js.native
   sealed trait wheel

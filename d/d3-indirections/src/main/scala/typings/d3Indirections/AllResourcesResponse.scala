@@ -25,6 +25,6 @@ object AllResourcesResponse {
     
     inline def setResult(value: js.Array[Resource[T]]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: Resource[T]*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: Resource[T]*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

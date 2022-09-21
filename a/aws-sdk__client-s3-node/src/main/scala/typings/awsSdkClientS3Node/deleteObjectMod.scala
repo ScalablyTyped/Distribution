@@ -8,5 +8,5 @@ object deleteObjectMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/DeleteObject", "DeleteObject")
   @js.native
-  val DeleteObject: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteObject: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

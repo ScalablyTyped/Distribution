@@ -3,7 +3,7 @@ package typings.xstate
 import typings.std.Partial
 import typings.std.Record
 import typings.xstate.anon.Initial
-import typings.xstate.anon.TypeTEventType
+import typings.xstate.anon.`0`
 import typings.xstate.typesMod.AtomicStateNodeConfig
 import typings.xstate.typesMod.Event
 import typings.xstate.typesMod.EventObject
@@ -18,19 +18,19 @@ object patternsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def sequence_states[TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](
+  inline def sequence_states[TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
     items: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
     ]
   ): Initial[TStateSchema, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(items.asInstanceOf[js.Any]).asInstanceOf[Initial[TStateSchema, TEvent]]
-  inline def sequence_states[TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](
+  inline def sequence_states[TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
     items: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
     ],
     options: Partial[SequencePatternOptions[TEvent]]
   ): Initial[TStateSchema, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(items.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Initial[TStateSchema, TEvent]]
   
-  inline def toggle[TEventType /* <: String */](onState: String, offState: String, eventType: TEventType): Record[String, AtomicStateNodeConfig[js.Any, TypeTEventType[TEventType]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(onState.asInstanceOf[js.Any], offState.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Record[String, AtomicStateNodeConfig[js.Any, TypeTEventType[TEventType]]]]
+  inline def toggle[TEventType /* <: String */](onState: String, offState: String, eventType: TEventType): Record[String, AtomicStateNodeConfig[Any, `0`[TEventType]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(onState.asInstanceOf[js.Any], offState.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Record[String, AtomicStateNodeConfig[Any, `0`[TEventType]]]]
   
   trait SequencePatternOptions[TEvent /* <: EventObject */] extends StObject {
     

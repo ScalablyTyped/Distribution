@@ -1,6 +1,5 @@
 package typings.actionsOnGoogle.v2Mod
 
-import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,24 +66,6 @@ trait GoogleActionsOrdersV3LineItem extends StObject {
     * Reservation orders like restaurant, haircut etc.
     */
   var reservation: js.UndefOr[GoogleActionsOrdersV3VerticalsReservationReservationItemExtension] = js.undefined
-  
-  /**
-    * Deprecated. Use vertical level status instead. For example, for purchases,
-    * use PurchaseOrderExtension.status.
-    * User visible label for the state of this line item.
-    */
-  var userVisibleStateLabel: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Deprecated: Use verticals instead.
-    * Required: Semantic Contents of line item based on its type/vertical.
-    * Every vertical should include its own fulfillment details.
-    * Must be either one of the following values:
-    * google.actions.orders.v3.verticals.purchase.PurchaseItemExtension
-    * google.actions.orders.v3.verticals.reservation.ReservationItemExtension
-    * google.actions.orders.v3.verticals.ticket.TicketItemExtension
-    */
-  var vertical: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
 }
 object GoogleActionsOrdersV3LineItem {
   
@@ -103,7 +84,7 @@ object GoogleActionsOrdersV3LineItem {
     
     inline def setFollowUpActionsUndefined: Self = StObject.set(x, "followUpActions", js.undefined)
     
-    inline def setFollowUpActionsVarargs(value: GoogleActionsOrdersV3Action*): Self = StObject.set(x, "followUpActions", js.Array(value :_*))
+    inline def setFollowUpActionsVarargs(value: GoogleActionsOrdersV3Action*): Self = StObject.set(x, "followUpActions", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -121,13 +102,13 @@ object GoogleActionsOrdersV3LineItem {
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value*))
     
     inline def setPriceAttributes(value: js.Array[GoogleActionsOrdersV3PriceAttribute]): Self = StObject.set(x, "priceAttributes", value.asInstanceOf[js.Any])
     
     inline def setPriceAttributesUndefined: Self = StObject.set(x, "priceAttributes", js.undefined)
     
-    inline def setPriceAttributesVarargs(value: GoogleActionsOrdersV3PriceAttribute*): Self = StObject.set(x, "priceAttributes", js.Array(value :_*))
+    inline def setPriceAttributesVarargs(value: GoogleActionsOrdersV3PriceAttribute*): Self = StObject.set(x, "priceAttributes", js.Array(value*))
     
     inline def setProvider(value: GoogleActionsOrdersV3Merchant): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
@@ -141,18 +122,10 @@ object GoogleActionsOrdersV3LineItem {
     
     inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    inline def setRecipientsVarargs(value: GoogleActionsOrdersV3UserInfo*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: GoogleActionsOrdersV3UserInfo*): Self = StObject.set(x, "recipients", js.Array(value*))
     
     inline def setReservation(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtension): Self = StObject.set(x, "reservation", value.asInstanceOf[js.Any])
     
     inline def setReservationUndefined: Self = StObject.set(x, "reservation", js.undefined)
-    
-    inline def setUserVisibleStateLabel(value: String): Self = StObject.set(x, "userVisibleStateLabel", value.asInstanceOf[js.Any])
-    
-    inline def setUserVisibleStateLabelUndefined: Self = StObject.set(x, "userVisibleStateLabel", js.undefined)
-    
-    inline def setVertical(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
-    
-    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

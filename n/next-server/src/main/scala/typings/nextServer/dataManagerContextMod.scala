@@ -9,5 +9,5 @@ object dataManagerContextMod {
   
   @JSImport("next-server/dist/lib/data-manager-context", "DataManagerContext")
   @js.native
-  val DataManagerContext: Context[js.Any] = js.native
+  val DataManagerContext: Context[Any] = js.native
 }

@@ -28,7 +28,7 @@ object runtimeMod {
   
   @JSImport("handlebars/runtime", "Exception")
   @js.native
-  class Exception protected ()
+  open class Exception protected ()
     extends StObject
        with typings.handlebars.Handlebars.Exception {
     def this(message: String) = this()
@@ -54,7 +54,7 @@ object runtimeMod {
   
   @JSImport("handlebars/runtime", "SafeString")
   @js.native
-  class SafeString protected ()
+  open class SafeString protected ()
     extends StObject
        with typings.handlebars.Handlebars.SafeString {
     def this(str: String) = this()
@@ -69,21 +69,21 @@ object runtimeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def blockParams(obj: js.Array[js.Any], ids: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("blockParams")(obj.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def blockParams(obj: js.Array[Any], ids: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("blockParams")(obj.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
-    inline def createFrame(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createFrame")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def createFrame(`object`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createFrame")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def escapeExpression(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeExpression")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def extend(obj: js.Any, source: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(obj.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(obj: Any, source: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(obj.asInstanceOf[js.Any]).`++`(source.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
-    inline def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isArray(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isEmpty(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isEmpty(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isFunction(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFunction(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def toString_(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toString_(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("handlebars/runtime", "VERSION")
@@ -96,30 +96,30 @@ object runtimeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def resolvePartial[T](partial: Unit, context: js.Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePartial")(partial.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HandlebarsTemplateDelegate[T]]
-    inline def resolvePartial[T](partial: HandlebarsTemplateDelegate[T], context: js.Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePartial")(partial.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HandlebarsTemplateDelegate[T]]
+    inline def resolvePartial[T](partial: Unit, context: Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePartial")(partial.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HandlebarsTemplateDelegate[T]]
+    inline def resolvePartial[T](partial: HandlebarsTemplateDelegate[T], context: Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePartial")(partial.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HandlebarsTemplateDelegate[T]]
   }
   
   @JSImport("handlebars/runtime", "Visitor")
   @js.native
-  class Visitor ()
+  open class Visitor ()
     extends StObject
        with typings.handlebars.Handlebars.Visitor
   
-  inline def blockParams(obj: js.Array[js.Any], ids: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("blockParams")(obj.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def blockParams(obj: js.Array[Any], ids: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("blockParams")(obj.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def compile[T](input: js.Any): HandlebarsTemplateDelegate[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(input.asInstanceOf[js.Any]).asInstanceOf[HandlebarsTemplateDelegate[T]]
-  inline def compile[T](input: js.Any, options: CompileOptions): HandlebarsTemplateDelegate[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HandlebarsTemplateDelegate[T]]
+  inline def compile[T](input: Any): HandlebarsTemplateDelegate[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(input.asInstanceOf[js.Any]).asInstanceOf[HandlebarsTemplateDelegate[T]]
+  inline def compile[T](input: Any, options: CompileOptions): HandlebarsTemplateDelegate[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HandlebarsTemplateDelegate[T]]
   
   inline def create(): TypeofHandlebars = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TypeofHandlebars]
   
-  inline def createFrame(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createFrame")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createFrame(`object`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createFrame")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("handlebars/runtime", "escapeExpression")
   @js.native
   val escapeExpression: js.Function1[/* str */ String, String] = js.native
   
-  inline def log(level: Double, obj: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log(level: Double, obj: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("handlebars/runtime", "logger")
   @js.native
@@ -133,16 +133,16 @@ object runtimeMod {
   inline def parseWithoutProcessing(input: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parseWithoutProcessing")(input.asInstanceOf[js.Any]).asInstanceOf[Program]
   inline def parseWithoutProcessing(input: String, options: ParseOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithoutProcessing")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Program]
   
-  inline def precompile(input: js.Any): TemplateSpecification = ^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(input.asInstanceOf[js.Any]).asInstanceOf[TemplateSpecification]
-  inline def precompile(input: js.Any, options: PrecompileOptions): TemplateSpecification = (^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TemplateSpecification]
+  inline def precompile(input: Any): TemplateSpecification = ^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(input.asInstanceOf[js.Any]).asInstanceOf[TemplateSpecification]
+  inline def precompile(input: Any, options: PrecompileOptions): TemplateSpecification = (^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TemplateSpecification]
   
   inline def registerDecorator(name: String, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDecorator")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def registerHelper(name: String, fn: HelperDelegate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHelper")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def registerHelper(name: HelperDeclareSpec): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerHelper")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def registerPartial(name: String, fn: Template[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPartial")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def registerPartial(spec: StringDictionary[HandlebarsTemplateDelegate[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPartial")(spec.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerPartial(name: String, fn: Template[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPartial")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerPartial(spec: StringDictionary[HandlebarsTemplateDelegate[Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPartial")(spec.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def template[T](precompilation: TemplateSpecification): HandlebarsTemplateDelegate[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(precompilation.asInstanceOf[js.Any]).asInstanceOf[HandlebarsTemplateDelegate[T]]
   

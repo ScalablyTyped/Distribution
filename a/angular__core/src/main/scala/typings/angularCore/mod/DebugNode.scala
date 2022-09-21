@@ -1,65 +1,61 @@
 package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DebugNode extends StObject {
+@JSImport("@angular/core", "DebugNode")
+@js.native
+open class DebugNode protected () extends StObject {
+  def this(nativeNode: Node) = this()
   
-  val componentInstance: js.Any
+  /**
+    * The element's own component instance, if it has one.
+    */
+  def componentInstance: Any = js.native
   
-  val context: js.Any
+  /**
+    * An object that provides parent context for this element. Often an ancestor component instance
+    * that governs this element.
+    *
+    * When an element is repeated within *ngFor, the context is an `NgForOf` whose `$implicit`
+    * property is the value of the row instance value. For example, the `hero` in `*ngFor="let hero
+    * of heroes"`.
+    */
+  def context: Any = js.native
   
-  val injector: Injector
+  /**
+    * The host dependency injector. For example, the root element's component instance injector.
+    */
+  def injector: Injector = js.native
   
-  val listeners: js.Array[DebugEventListener]
+  /**
+    * The callbacks attached to the component's @Output properties and/or the element's event
+    * properties.
+    */
+  def listeners: js.Array[DebugEventListener] = js.native
   
-  val nativeNode: js.Any
+  /**
+    * The underlying DOM node.
+    */
+  val nativeNode: Any = js.native
   
-  val parent: DebugElement | Null
+  /**
+    * The `DebugElement` parent. Will be `null` if this is the root element.
+    */
+  def parent: DebugElement | Null = js.native
   
-  val providerTokens: js.Array[js.Any]
+  /**
+    * This component's injector lookup tokens. Includes the component itself plus the tokens that the
+    * component lists in its providers metadata.
+    */
+  def providerTokens: js.Array[Any] = js.native
   
-  val references: StringDictionary[js.Any]
-}
-object DebugNode {
-  
-  inline def apply(
-    componentInstance: js.Any,
-    context: js.Any,
-    injector: Injector,
-    listeners: js.Array[DebugEventListener],
-    nativeNode: js.Any,
-    providerTokens: js.Array[js.Any],
-    references: StringDictionary[js.Any]
-  ): DebugNode = {
-    val __obj = js.Dynamic.literal(componentInstance = componentInstance.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], nativeNode = nativeNode.asInstanceOf[js.Any], providerTokens = providerTokens.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], parent = null)
-    __obj.asInstanceOf[DebugNode]
-  }
-  
-  extension [Self <: DebugNode](x: Self) {
-    
-    inline def setComponentInstance(value: js.Any): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
-    
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-    
-    inline def setInjector(value: Injector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
-    
-    inline def setListeners(value: js.Array[DebugEventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
-    
-    inline def setListenersVarargs(value: DebugEventListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
-    
-    inline def setNativeNode(value: js.Any): Self = StObject.set(x, "nativeNode", value.asInstanceOf[js.Any])
-    
-    inline def setParent(value: DebugElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-    
-    inline def setParentNull: Self = StObject.set(x, "parent", null)
-    
-    inline def setProviderTokens(value: js.Array[js.Any]): Self = StObject.set(x, "providerTokens", value.asInstanceOf[js.Any])
-    
-    inline def setProviderTokensVarargs(value: js.Any*): Self = StObject.set(x, "providerTokens", js.Array(value :_*))
-    
-    inline def setReferences(value: StringDictionary[js.Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
-  }
+  /**
+    * Dictionary of objects associated with template local variables (e.g. #foo), keyed by the local
+    * variable name.
+    */
+  def references: StringDictionary[Any] = js.native
 }

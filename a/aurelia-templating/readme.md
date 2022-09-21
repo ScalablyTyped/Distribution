@@ -1,7 +1,7 @@
 
 # Scala.js typings for aurelia-templating
 
-Typings are for version 1.10.4
+Typings are for version 1.11.1
 
 ## Library description:
 An extensible HTML templating engine supporting databinding, custom elements, attached behaviors and more.
@@ -10,15 +10,13 @@ An extensible HTML templating engine supporting databinding, custom elements, at
 | ------------------ | :-------------: |
 | Full name          | aurelia-templating |
 | Keywords           | aurelia, templating, html, custom element, databinding |
-| # releases         | 4 |
-| # dependents       | 112 |
-| # downloads        | 552579 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 54257.0 |
+| # stars            | 115.0 |
 
 ## Links
 - [Homepage](http://aurelia.io)
-- [Bugs](https://github.com/aurelia/templating/issues)
-- [Repository](https://github.com/aurelia/templating)
 - [Npm](https://www.npmjs.com/package/aurelia-templating)
     
 

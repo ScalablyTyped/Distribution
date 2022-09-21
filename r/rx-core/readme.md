@@ -11,9 +11,9 @@ Core library for composing asynchronous and event-based operations in JavaScript
 | Full name          | rx-core |
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1275 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 100.0 |
+| # stars            | 19624.0 |
 
 ## Links
 - [Homepage](https://github.com/Reactive-Extensions/RxJS)

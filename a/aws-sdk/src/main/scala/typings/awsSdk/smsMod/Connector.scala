@@ -9,7 +9,7 @@ trait Connector extends StObject {
   /**
     * The time the connector was associated.
     */
-  var associatedOn: js.UndefOr[Timestamp] = js.undefined
+  var associatedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The capabilities of the connector.
@@ -65,7 +65,7 @@ object Connector {
   
   extension [Self <: Connector](x: Self) {
     
-    inline def setAssociatedOn(value: Timestamp): Self = StObject.set(x, "associatedOn", value.asInstanceOf[js.Any])
+    inline def setAssociatedOn(value: js.Date): Self = StObject.set(x, "associatedOn", value.asInstanceOf[js.Any])
     
     inline def setAssociatedOnUndefined: Self = StObject.set(x, "associatedOn", js.undefined)
     
@@ -73,7 +73,7 @@ object Connector {
     
     inline def setCapabilityListUndefined: Self = StObject.set(x, "capabilityList", js.undefined)
     
-    inline def setCapabilityListVarargs(value: ConnectorCapability*): Self = StObject.set(x, "capabilityList", js.Array(value :_*))
+    inline def setCapabilityListVarargs(value: ConnectorCapability*): Self = StObject.set(x, "capabilityList", js.Array(value*))
     
     inline def setConnectorId(value: ConnectorId): Self = StObject.set(x, "connectorId", value.asInstanceOf[js.Any])
     

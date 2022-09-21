@@ -32,6 +32,6 @@ object StartEnvironmentRequest {
     
     inline def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
-    inline def setPublicKeysVarargs(value: String*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
+    inline def setPublicKeysVarargs(value: String*): Self = StObject.set(x, "publicKeys", js.Array(value*))
   }
 }

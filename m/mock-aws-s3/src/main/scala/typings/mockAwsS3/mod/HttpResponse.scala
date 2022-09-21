@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mock-aws-s3", "HttpResponse")
 @js.native
-class HttpResponse ()
+open class HttpResponse ()
   extends typings.awsSdk.mod.HttpResponse

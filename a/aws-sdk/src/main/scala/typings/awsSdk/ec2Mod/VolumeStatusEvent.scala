@@ -29,12 +29,12 @@ trait VolumeStatusEvent extends StObject {
   /**
     * The latest end time of the event.
     */
-  var NotAfter: js.UndefOr[MillisecondDateTime] = js.undefined
+  var NotAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The earliest start time of the event.
     */
-  var NotBefore: js.UndefOr[MillisecondDateTime] = js.undefined
+  var NotBefore: js.UndefOr[js.Date] = js.undefined
 }
 object VolumeStatusEvent {
   
@@ -61,11 +61,11 @@ object VolumeStatusEvent {
     
     inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    inline def setNotAfter(value: MillisecondDateTime): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: js.Date): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
     inline def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
-    inline def setNotBefore(value: MillisecondDateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: js.Date): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
     inline def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
   }

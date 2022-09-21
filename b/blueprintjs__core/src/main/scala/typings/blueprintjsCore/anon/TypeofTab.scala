@@ -11,7 +11,7 @@ trait TypeofTab
   extends StObject
      with Instantiable0[Tab] {
   
-  var defaultProps: PartialITabProps = js.native
+  var defaultProps: PartialTabProps = js.native
   
   var displayName: String = js.native
 }

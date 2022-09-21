@@ -10,7 +10,7 @@ object vsoFormatterMod {
   
   @JSImport("tslint/lib/formatters/vsoFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter
+  open class Formatter () extends AbstractFormatter
   /* static members */
   object Formatter {
     

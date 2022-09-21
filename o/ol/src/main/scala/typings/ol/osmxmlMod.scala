@@ -8,7 +8,7 @@ object osmxmlMod {
   
   @JSImport("ol/format/OSMXML", JSImport.Default)
   @js.native
-  class default () extends OSMXML
+  open class default () extends OSMXML
   
   @js.native
   trait OSMXML

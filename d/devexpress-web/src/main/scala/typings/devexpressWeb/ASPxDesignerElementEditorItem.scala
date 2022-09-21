@@ -8,11 +8,11 @@ trait ASPxDesignerElementEditorItem extends StObject {
   
   var displayValue: String
   
-  var value: js.Any
+  var value: Any
 }
 object ASPxDesignerElementEditorItem {
   
-  inline def apply(displayValue: String, value: js.Any): ASPxDesignerElementEditorItem = {
+  inline def apply(displayValue: String, value: Any): ASPxDesignerElementEditorItem = {
     val __obj = js.Dynamic.literal(displayValue = displayValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxDesignerElementEditorItem]
   }
@@ -21,6 +21,6 @@ object ASPxDesignerElementEditorItem {
     
     inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

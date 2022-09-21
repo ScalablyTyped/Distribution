@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.QuadraticBezierCurve")
 @js.native
-class QuadraticBezierCurve protected ()
+open class QuadraticBezierCurve protected ()
   extends typings.three.mod.QuadraticBezierCurve {
   def this(
     v0: typings.three.vector2Mod.Vector2,

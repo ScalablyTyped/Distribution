@@ -40,7 +40,7 @@ trait PlusWebviewWebviewContentAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var region: js.UndefOr[js.Any] = js.undefined
+  var region: js.UndefOr[Any] = js.undefined
   
   /**
     * 动画类型
@@ -68,7 +68,7 @@ object PlusWebviewWebviewContentAnimationOptions {
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setRegion(value: js.Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     

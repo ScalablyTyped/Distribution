@@ -18,36 +18,36 @@ object boxlayoutMod {
     *
     * @param options - The options for initializing the layout.
     */
-  class BoxLayout () extends PanelLayout {
+  open class BoxLayout () extends PanelLayout {
     def this(options: IOptions) = this()
     
-    /* private */ var _alignment: js.Any = js.native
+    /* private */ var _alignment: Any = js.native
     
-    /* private */ var _box: js.Any = js.native
+    /* private */ var _box: Any = js.native
     
-    /* private */ var _direction: js.Any = js.native
+    /* private */ var _direction: Any = js.native
     
-    /* private */ var _dirty: js.Any = js.native
+    /* private */ var _dirty: Any = js.native
     
     /**
       * Fit the layout to the total size required by the widgets.
       */
-    /* private */ var _fit: js.Any = js.native
+    /* private */ var _fit: Any = js.native
     
-    /* private */ var _fixed: js.Any = js.native
+    /* private */ var _fixed: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _items: Any = js.native
     
-    /* private */ var _sizers: js.Any = js.native
+    /* private */ var _sizers: Any = js.native
     
-    /* private */ var _spacing: js.Any = js.native
+    /* private */ var _spacing: Any = js.native
     
     /**
       * Update the layout position and size of the widgets.
       *
       * The parent offset dimensions should be `-1` if unknown.
       */
-    /* private */ var _update: js.Any = js.native
+    /* private */ var _update: Any = js.native
     
     /**
       * Get the content alignment for the box layout.

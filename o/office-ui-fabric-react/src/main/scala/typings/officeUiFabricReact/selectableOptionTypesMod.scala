@@ -44,7 +44,7 @@ object selectableOptionTypesMod {
     /**
       * Data available to custom onRender functions.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * Whether the option is disabled
@@ -104,7 +104,7 @@ object selectableOptionTypesMod {
       
       inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

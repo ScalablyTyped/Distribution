@@ -14,11 +14,11 @@ object treeIteratorMod {
   
   @JSImport("symbol-tree/lib/TreeIterator", JSImport.Namespace)
   @js.native
-  class ^[T /* <: js.Object */] protected ()
+  open class ^[T /* <: js.Object */] protected ()
     extends StObject
        with TreeIterator[T] {
     def this(
-      tree: typings.symbolTree.symbolTreeMod.^[js.Any],
+      tree: typings.symbolTree.symbolTreeMod.^[Any],
       root: T,
       firstResult: T,
       iterateFunction: IterateFunction

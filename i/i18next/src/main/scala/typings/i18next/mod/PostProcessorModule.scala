@@ -12,14 +12,14 @@ trait PostProcessorModule
   /** Unique name */
   var name: String
   
-  def process(value: String, key: String, options: TOptions[StringMap], translator: js.Any): String
+  def process(value: String, key: String, options: TOptions[StringMap], translator: Any): String
   
   @JSName("type")
   var type_PostProcessorModule: postProcessor
 }
 object PostProcessorModule {
   
-  inline def apply(name: String, process: (String, String, TOptions[StringMap], js.Any) => String): PostProcessorModule = {
+  inline def apply(name: String, process: (String, String, TOptions[StringMap], Any) => String): PostProcessorModule = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], process = js.Any.fromFunction4(process))
     __obj.updateDynamic("type")("postProcessor")
     __obj.asInstanceOf[PostProcessorModule]
@@ -29,7 +29,7 @@ object PostProcessorModule {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setProcess(value: (String, String, TOptions[StringMap], js.Any) => String): Self = StObject.set(x, "process", js.Any.fromFunction4(value))
+    inline def setProcess(value: (String, String, TOptions[StringMap], Any) => String): Self = StObject.set(x, "process", js.Any.fromFunction4(value))
     
     inline def setType(value: postProcessor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

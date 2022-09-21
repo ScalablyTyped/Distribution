@@ -18,7 +18,7 @@ trait SasPortalDeviceConfig extends StObject {
   /** Installation parameters for the device. */
   var installationParams: js.UndefOr[SasPortalInstallationParams] = js.undefined
   
-  /** Output-only. Whether the configuration has been signed by a CPI. */
+  /** Output only. Whether the configuration has been signed by a CPI. */
   var isSigned: js.UndefOr[Boolean] = js.undefined
   
   /** Measurement reporting capabilities of the device. */
@@ -30,7 +30,7 @@ trait SasPortalDeviceConfig extends StObject {
   /** State of the configuration. */
   var state: js.UndefOr[String] = js.undefined
   
-  /** Output-only. The last time the device configuration was edited. */
+  /** Output only. The last time the device configuration was edited. */
   var updateTime: js.UndefOr[String] = js.undefined
   
   /** The identifier of a device user. */
@@ -69,7 +69,7 @@ object SasPortalDeviceConfig {
     
     inline def setMeasurementCapabilitiesUndefined: Self = StObject.set(x, "measurementCapabilities", js.undefined)
     
-    inline def setMeasurementCapabilitiesVarargs(value: String*): Self = StObject.set(x, "measurementCapabilities", js.Array(value :_*))
+    inline def setMeasurementCapabilitiesVarargs(value: String*): Self = StObject.set(x, "measurementCapabilities", js.Array(value*))
     
     inline def setModel(value: SasPortalDeviceModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,6 @@ import typings.awsSdkClientDynamodbNode.typesReplicaUpdateMod.ReplicaUpdate
 import typings.awsSdkClientDynamodbNode.typesTagMod.Tag
 import typings.awsSdkClientDynamodbNode.typesTimeToLiveSpecificationMod.TimeToLiveSpecification
 import typings.awsSdkClientDynamodbNode.typesWriteRequestMod.WriteRequest
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,14 +58,14 @@ object inputTypesUnionMod {
   object InputTypesUnion {
     
     inline def BatchGetItemInput(
-      RequestItems: StringDictionary[KeysAndAttributes] | (Iterable[js.Tuple2[String, KeysAndAttributes]])
+      RequestItems: StringDictionary[KeysAndAttributes] | (js.Iterable[js.Tuple2[String, KeysAndAttributes]])
     ): typings.awsSdkClientDynamodbNode.typesBatchGetItemInputMod.BatchGetItemInput = {
       val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesBatchGetItemInputMod.BatchGetItemInput]
     }
     
     inline def BatchWriteItemInput(
-      RequestItems: (StringDictionary[js.Array[WriteRequest] | Iterable[WriteRequest]]) | (Iterable[js.Tuple2[String, js.Array[WriteRequest] | Iterable[WriteRequest]]])
+      RequestItems: (StringDictionary[js.Array[WriteRequest] | js.Iterable[WriteRequest]]) | (js.Iterable[js.Tuple2[String, js.Array[WriteRequest] | js.Iterable[WriteRequest]]])
     ): typings.awsSdkClientDynamodbNode.typesBatchWriteItemInputMod.BatchWriteItemInput = {
       val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesBatchWriteItemInputMod.BatchWriteItemInput]
@@ -77,14 +76,14 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesCreateBackupInputMod.CreateBackupInput]
     }
     
-    inline def CreateGlobalTableInput(GlobalTableName: String, ReplicationGroup: js.Array[Replica] | Iterable[Replica]): typings.awsSdkClientDynamodbNode.typesCreateGlobalTableInputMod.CreateGlobalTableInput = {
+    inline def CreateGlobalTableInput(GlobalTableName: String, ReplicationGroup: js.Array[Replica] | js.Iterable[Replica]): typings.awsSdkClientDynamodbNode.typesCreateGlobalTableInputMod.CreateGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicationGroup = ReplicationGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesCreateGlobalTableInputMod.CreateGlobalTableInput]
     }
     
     inline def CreateTableInput(
-      AttributeDefinitions: js.Array[AttributeDefinition] | Iterable[AttributeDefinition],
-      KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement],
+      AttributeDefinitions: js.Array[AttributeDefinition] | js.Iterable[AttributeDefinition],
+      KeySchema: js.Array[KeySchemaElement] | js.Iterable[KeySchemaElement],
       ProvisionedThroughput: ProvisionedThroughput,
       TableName: String
     ): typings.awsSdkClientDynamodbNode.typesCreateTableInputMod.CreateTableInput = {
@@ -98,7 +97,7 @@ object inputTypesUnionMod {
     }
     
     inline def DeleteItemInput(
-      Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
+      Key: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]]),
       TableName: String
     ): typings.awsSdkClientDynamodbNode.typesDeleteItemInputMod.DeleteItemInput = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
@@ -151,7 +150,7 @@ object inputTypesUnionMod {
     }
     
     inline def GetItemInput(
-      Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
+      Key: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]]),
       TableName: String
     ): typings.awsSdkClientDynamodbNode.typesGetItemInputMod.GetItemInput = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
@@ -179,7 +178,7 @@ object inputTypesUnionMod {
     }
     
     inline def PutItemInput(
-      Item: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
+      Item: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]]),
       TableName: String
     ): typings.awsSdkClientDynamodbNode.typesPutItemInputMod.PutItemInput = {
       val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
@@ -206,12 +205,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesScanInputMod.ScanInput]
     }
     
-    inline def TagResourceInput(ResourceArn: String, Tags: js.Array[Tag] | Iterable[Tag]): typings.awsSdkClientDynamodbNode.typesTagResourceInputMod.TagResourceInput = {
+    inline def TagResourceInput(ResourceArn: String, Tags: js.Array[Tag] | js.Iterable[Tag]): typings.awsSdkClientDynamodbNode.typesTagResourceInputMod.TagResourceInput = {
       val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesTagResourceInputMod.TagResourceInput]
     }
     
-    inline def UntagResourceInput(ResourceArn: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientDynamodbNode.typesUntagResourceInputMod.UntagResourceInput = {
+    inline def UntagResourceInput(ResourceArn: String, TagKeys: js.Array[String] | js.Iterable[String]): typings.awsSdkClientDynamodbNode.typesUntagResourceInputMod.UntagResourceInput = {
       val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUntagResourceInputMod.UntagResourceInput]
     }
@@ -221,7 +220,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUpdateContinuousBackupsInputMod.UpdateContinuousBackupsInput]
     }
     
-    inline def UpdateGlobalTableInput(GlobalTableName: String, ReplicaUpdates: js.Array[ReplicaUpdate] | Iterable[ReplicaUpdate]): typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableInputMod.UpdateGlobalTableInput = {
+    inline def UpdateGlobalTableInput(GlobalTableName: String, ReplicaUpdates: js.Array[ReplicaUpdate] | js.Iterable[ReplicaUpdate]): typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableInputMod.UpdateGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicaUpdates = ReplicaUpdates.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableInputMod.UpdateGlobalTableInput]
     }
@@ -232,7 +231,7 @@ object inputTypesUnionMod {
     }
     
     inline def UpdateItemInput(
-      Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
+      Key: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]]),
       TableName: String
     ): typings.awsSdkClientDynamodbNode.typesUpdateItemInputMod.UpdateItemInput = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])

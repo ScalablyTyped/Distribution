@@ -1,6 +1,5 @@
 package typings.typedoc
 
-import typings.typedoc.anon.PartialProjectReflection
 import typings.typedoc.modelsMod.ProjectReflection
 import typings.typedoc.utilsEventsMod.Event
 import org.scalablytyped.runtime.StObject
@@ -11,15 +10,25 @@ object serializationEventsMod {
   
   @JSImport("typedoc/dist/lib/serialization/events", "SerializeEvent")
   @js.native
-  class SerializeEvent protected () extends Event {
-    def this(name: String, project: ProjectReflection, output: PartialProjectReflection) = this()
+  open class SerializeEvent protected () extends Event {
+    def this(name: String, project: ProjectReflection) = this()
+    def this(name: String, project: ProjectReflection, output: typings.typedoc.schemaMod.ProjectReflection) = this()
     
-    var output: PartialProjectReflection = js.native
+    var output: js.UndefOr[typings.typedoc.schemaMod.ProjectReflection] = js.native
     
+    /**
+      * The path of the directory the serialized JSON should be written to.
+      */
     var outputDirectory: js.UndefOr[String] = js.native
     
+    /**
+      * The name of the main JSON file (base + ext)
+      */
     var outputFile: js.UndefOr[String] = js.native
     
+    /**
+      * The project the renderer is currently processing.
+      */
     val project: ProjectReflection = js.native
   }
   

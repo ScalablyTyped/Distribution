@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the split panel.
   */
-class SplitPanel ()
+open class SplitPanel ()
   extends typings.luminoWidgets.splitpanelMod.SplitPanel {
   def this(options: IOptions) = this()
 }
@@ -27,7 +27,7 @@ object SplitPanel {
     */
   @JSImport("@lumino/widgets", "SplitPanel.Renderer")
   @js.native
-  class Renderer ()
+  open class Renderer ()
     extends typings.luminoWidgets.splitpanelMod.SplitPanel.Renderer
   
   /**

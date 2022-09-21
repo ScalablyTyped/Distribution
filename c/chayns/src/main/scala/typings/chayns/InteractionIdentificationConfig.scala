@@ -9,7 +9,7 @@ trait InteractionIdentificationConfig extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var callback: js.Any
+  var callback: Any
   
   var delay: js.UndefOr[Double] = js.undefined
   
@@ -21,7 +21,7 @@ trait InteractionIdentificationConfig extends StObject {
 }
 object InteractionIdentificationConfig {
   
-  inline def apply(callback: js.Any, duration: Double, foregroundColor: String): InteractionIdentificationConfig = {
+  inline def apply(callback: Any, duration: Double, foregroundColor: String): InteractionIdentificationConfig = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], foregroundColor = foregroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionIdentificationConfig]
   }
@@ -32,7 +32,7 @@ object InteractionIdentificationConfig {
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

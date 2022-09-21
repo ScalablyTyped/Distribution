@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,15 +9,13 @@ trait DynamicTexture
   extends StObject
      with Texture {
   
-  /* private */ var _IsCanvasElement: js.Any = js.native
+  /* private */ var _canvas: Any = js.native
   
-  /* private */ var _canvas: js.Any = js.native
+  /* private */ var _context: Any = js.native
   
-  /* private */ var _context: js.Any = js.native
+  /* private */ var _generateMipMaps: Any = js.native
   
-  /* private */ var _generateMipMaps: js.Any = js.native
-  
-  /* private */ var _recreate: js.Any = js.native
+  /* private */ var _recreate: Any = js.native
   
   /**
     * Clears the texture
@@ -42,7 +39,7 @@ trait DynamicTexture
     y: js.UndefOr[Double | Null],
     font: String,
     color: String | Null,
-    clearColor: String,
+    clearColor: String | Null,
     invertY: js.UndefOr[Boolean],
     update: js.UndefOr[Boolean]
   ): Unit = js.native
@@ -51,7 +48,7 @@ trait DynamicTexture
     * Gets the context of the canvas used by the texture
     * @returns the canvas context of the dynamic texture
     */
-  def getContext(): CanvasRenderingContext2D = js.native
+  def getContext(): ICanvasRenderingContext = js.native
   
   /**
     * Resizes the texture
@@ -64,9 +61,14 @@ trait DynamicTexture
     * Updates the texture
     * @param invertY defines the direction for the Y axis (default is true - y increases downwards)
     * @param premulAlpha defines if alpha is stored as premultiplied (default is false)
+    * @param allowGPUOptimization true to allow some specific GPU optimizations (subject to engine feature "allowGPUOptimizationsForGUI" being true)
     */
   def update(): Unit = js.native
   def update(invertY: Boolean): Unit = js.native
   def update(invertY: Boolean, premulAlpha: Boolean): Unit = js.native
+  def update(invertY: Boolean, premulAlpha: Boolean, allowGPUOptimization: Boolean): Unit = js.native
+  def update(invertY: Boolean, premulAlpha: Unit, allowGPUOptimization: Boolean): Unit = js.native
   def update(invertY: Unit, premulAlpha: Boolean): Unit = js.native
+  def update(invertY: Unit, premulAlpha: Boolean, allowGPUOptimization: Boolean): Unit = js.native
+  def update(invertY: Unit, premulAlpha: Unit, allowGPUOptimization: Boolean): Unit = js.native
 }

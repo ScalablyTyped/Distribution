@@ -1,6 +1,5 @@
 package typings.xhrMock
 
-import typings.std.RegExp
 import typings.xhrMock.typesMod.Mock
 import typings.xhrMock.typesMod.MockFunction
 import org.scalablytyped.runtime.StObject
@@ -14,5 +13,5 @@ object createMockFunctionMod {
   val ^ : js.Any = js.native
   
   inline def default(method: String, url: String, mock: Mock): MockFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[MockFunction]
-  inline def default(method: String, url: RegExp, mock: Mock): MockFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[MockFunction]
+  inline def default(method: String, url: js.RegExp, mock: Mock): MockFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[MockFunction]
 }

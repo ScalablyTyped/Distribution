@@ -1,24 +1,37 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
 import typings.firebaseFirestore.firestoreProtoApiMod.FieldFilterOp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldFilter extends js.Object {
+trait FieldFilter extends StObject {
+  
   var field: js.UndefOr[FieldReference] = js.undefined
+  
   var op: js.UndefOr[FieldFilterOp] = js.undefined
+  
   var value: js.UndefOr[Value] = js.undefined
 }
-
 object FieldFilter {
-  @scala.inline
-  def apply(field: FieldReference = null, op: FieldFilterOp = null, value: Value = null): FieldFilter = {
+  
+  inline def apply(): FieldFilter = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldFilter]
   }
+  
+  extension [Self <: FieldFilter](x: Self) {
+    
+    inline def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setOp(value: FieldFilterOp): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

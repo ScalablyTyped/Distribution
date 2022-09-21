@@ -1,7 +1,6 @@
 package typings.yandexMoneySdk.YandexMoneySDK
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.yandexMoneySdk.anon.Amount
 import typings.yandexMoneySdk.anon.Article
 import typings.yandexMoneySdk.anon.Available
@@ -62,7 +61,7 @@ object Wallet {
       
       inline def setCards_linkedUndefined: Self = StObject.set(x, "cards_linked", js.undefined)
       
-      inline def setCards_linkedVarargs(value: Panfragment*): Self = StObject.set(x, "cards_linked", js.Array(value :_*))
+      inline def setCards_linkedVarargs(value: Panfragment*): Self = StObject.set(x, "cards_linked", js.Array(value*))
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     }
@@ -306,7 +305,7 @@ object Wallet {
     
     var details: js.UndefOr[Boolean] = js.undefined
     
-    var from: js.UndefOr[String | Date] = js.undefined
+    var from: js.UndefOr[String | js.Date] = js.undefined
     
     var label: js.UndefOr[String] = js.undefined
     
@@ -314,7 +313,7 @@ object Wallet {
     
     var start_record: js.UndefOr[String] = js.undefined
     
-    var till: js.UndefOr[String | Date] = js.undefined
+    var till: js.UndefOr[String | js.Date] = js.undefined
     
     var `type`: String
   }
@@ -332,7 +331,7 @@ object Wallet {
       
       inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      inline def setFrom(value: String | Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String | js.Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
@@ -348,7 +347,7 @@ object Wallet {
       
       inline def setStart_recordUndefined: Self = StObject.set(x, "start_record", js.undefined)
       
-      inline def setTill(value: String | Date): Self = StObject.set(x, "till", value.asInstanceOf[js.Any])
+      inline def setTill(value: String | js.Date): Self = StObject.set(x, "till", value.asInstanceOf[js.Any])
       
       inline def setTillUndefined: Self = StObject.set(x, "till", js.undefined)
       
@@ -385,7 +384,7 @@ object Wallet {
       
       inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
       
-      inline def setOperationsVarargs(value: Amount*): Self = StObject.set(x, "operations", js.Array(value :_*))
+      inline def setOperationsVarargs(value: Amount*): Self = StObject.set(x, "operations", js.Array(value*))
     }
   }
   
@@ -545,7 +544,7 @@ object Wallet {
   
   trait RequestPaymentOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var amount: js.UndefOr[Double] = js.undefined
     
@@ -719,9 +718,9 @@ object Wallet {
   
   trait SendAuthenticatedRequestParams extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     var url: String
   }
@@ -734,11 +733,11 @@ object Wallet {
     
     extension [Self <: SendAuthenticatedRequestParams](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       

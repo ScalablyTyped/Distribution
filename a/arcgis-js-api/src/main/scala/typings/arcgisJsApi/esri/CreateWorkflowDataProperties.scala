@@ -16,6 +16,8 @@ trait CreateWorkflowDataProperties extends StObject {
   /**
     * The [edits](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Edits.html) used to keep track of a feature being modified.
     *
+    * @deprecated since 4.23. Use {@link module:esri/widgets/Editor/CreateFeaturesWorkflow#pendingFeatures CreateFeaturesWorkflow.pendingFeatures} to access edits made to the workflow data.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflowData.html#edits)
     */
   var edits: js.UndefOr[EditsProperties] = js.undefined

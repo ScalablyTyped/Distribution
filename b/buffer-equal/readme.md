@@ -1,7 +1,7 @@
 
 # Scala.js typings for buffer-equal
 
-Typings are for version 0.0.1
+Typings are for version 1.0
 
 ## Library description:
 return whether two buffers are equal
@@ -10,10 +10,10 @@ return whether two buffers are equal
 | ------------------ | :-------------: |
 | Full name          | buffer-equal |
 | Keywords           | buffer, equal |
-| # releases         | 0 |
-| # dependents       | 83 |
-| # downloads        | 132676325 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6971329E7 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-buffer-equal#readme)

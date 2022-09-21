@@ -12,7 +12,7 @@ trait ColumnInfo extends StObject {
   var Name: js.UndefOr[String] = js.undefined
   
   /**
-    *  The data type of the result set column. The data type can be a scalar or complex. Scalar data types are integers, strings, doubles, booleans, and others. Complex data types are types such as arrays, rows, and others. 
+    * The data type of the result set column. The data type can be a scalar or complex. Scalar data types are integers, strings, doubles, Booleans, and others. Complex data types are types such as arrays, rows, and others. 
     */
   var Type: typings.awsSdk.timestreamqueryMod.Type
 }

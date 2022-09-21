@@ -1,7 +1,7 @@
 package typings.jupyterlabServices
 
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
-import typings.jupyterlabServices.anon.PartialIModelId
+import typings.jupyterlabServices.anon.PartialIModelConnections
 import typings.jupyterlabServices.kernelKernelMod.ConnectionStatus
 import typings.jupyterlabServices.kernelKernelMod.IAnyMessageArgs
 import typings.jupyterlabServices.kernelKernelMod.IKernelConnection
@@ -24,7 +24,7 @@ object sessionDefaultMod {
   
   @JSImport("@jupyterlab/services/lib/session/default", "SessionConnection")
   @js.native
-  class SessionConnection protected ()
+  open class SessionConnection protected ()
     extends StObject
        with ISessionConnection {
     /**
@@ -32,51 +32,53 @@ object sessionDefaultMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _anyMessage: js.Any = js.native
+    /* private */ var _anyMessage: Any = js.native
     
-    /* private */ var _clientId: js.Any = js.native
+    /* private */ var _clientId: Any = js.native
     
-    /* private */ var _connectToKernel: js.Any = js.native
+    /* private */ var _connectToKernel: Any = js.native
     
-    /* private */ var _connectionStatusChanged: js.Any = js.native
+    /* private */ var _connectionStatusChanged: Any = js.native
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
     /**
       * Handle a change to the model.
       */
-    /* private */ var _handleModelChange: js.Any = js.native
+    /* private */ var _handleModelChange: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _iopubMessage: js.Any = js.native
+    /* private */ var _iopubMessage: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _kernel: js.Any = js.native
+    /* private */ var _kernel: Any = js.native
     
-    /* private */ var _kernelChanged: js.Any = js.native
+    /* private */ var _kernelChanged: Any = js.native
     
-    /* private */ var _kernelConnectionOptions: js.Any = js.native
+    /* private */ var _kernelConnectionOptions: Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
     /**
       * Send a PATCH to the server, updating the session path or the kernel.
       */
-    /* private */ var _patch: js.Any = js.native
+    /* private */ var _patch: Any = js.native
     
-    /* private */ var _path: js.Any = js.native
+    /* private */ var _path: Any = js.native
     
-    /* private */ var _propertyChanged: js.Any = js.native
+    /* private */ var _pendingInput: Any = js.native
     
-    /* private */ var _statusChanged: js.Any = js.native
+    /* private */ var _propertyChanged: Any = js.native
     
-    /* private */ var _type: js.Any = js.native
+    /* private */ var _statusChanged: Any = js.native
     
-    /* private */ var _unhandledMessage: js.Any = js.native
+    /* private */ var _type: Any = js.native
     
-    /* private */ var _username: js.Any = js.native
+    /* private */ var _unhandledMessage: Any = js.native
+    
+    /* private */ var _username: Any = js.native
     
     /**
       * The kernel anyMessage signal, proxied from the current kernel.
@@ -108,7 +110,7 @@ object sessionDefaultMod {
       * To start now kernel, pass an empty dictionary.
       */
     /* CompleteClass */
-    override def changeKernel(options: PartialIModelId): js.Promise[IKernelConnection | Null] = js.native
+    override def changeKernel(options: PartialIModelConnections): js.Promise[IKernelConnection | Null] = js.native
     
     /**
       * The kernel connectionStatusChanged signal, proxied from the current
@@ -265,6 +267,11 @@ object sessionDefaultMod {
     /* protected */ def onKernelStatus(sender: IKernelConnection, state: Status): Unit = js.native
     
     /**
+      * Handle a change in the pendingInput.
+      */
+    /* protected */ def onPendingInput(sender: IKernelConnection, state: Boolean): Unit = js.native
+    
+    /**
       * Handle unhandled kernel messages.
       */
     /* protected */ def onUnhandledMessage(sender: IKernelConnection, msg: IMessage[MessageType]): Unit = js.native
@@ -279,6 +286,18 @@ object sessionDefaultMod {
       */
     @JSName("path")
     def path_MSessionConnection: String = js.native
+    
+    /**
+      * The kernel pendingInput signal, proxied from the current
+      * kernel.
+      */
+    /* CompleteClass */
+    var pendingInput: ISignal[this.type, Boolean] = js.native
+    /**
+      * A signal proxied from the kernel pending input.
+      */
+    @JSName("pendingInput")
+    def pendingInput_MSessionConnection: ISignal[this.type, Boolean] = js.native
     
     /**
       * A signal emitted when a session property changes.

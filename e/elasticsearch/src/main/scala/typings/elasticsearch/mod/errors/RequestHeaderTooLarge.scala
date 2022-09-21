@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.RequestHeaderTooLarge")
 @js.native
-class RequestHeaderTooLarge () extends Abstract
+open class RequestHeaderTooLarge () extends Abstract

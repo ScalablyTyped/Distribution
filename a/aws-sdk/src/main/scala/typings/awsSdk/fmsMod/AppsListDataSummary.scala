@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppsListDataSummary extends StObject {
   
   /**
-    * An array of App objects in the AWS Firewall Manager applications list.
+    * An array of App objects in the Firewall Manager applications list.
     */
   var AppsList: js.UndefOr[typings.awsSdk.fmsMod.AppsList] = js.undefined
   
@@ -39,7 +39,7 @@ object AppsListDataSummary {
     
     inline def setAppsListUndefined: Self = StObject.set(x, "AppsList", js.undefined)
     
-    inline def setAppsListVarargs(value: App*): Self = StObject.set(x, "AppsList", js.Array(value :_*))
+    inline def setAppsListVarargs(value: App*): Self = StObject.set(x, "AppsList", js.Array(value*))
     
     inline def setListArn(value: ResourceArn): Self = StObject.set(x, "ListArn", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,7 @@ trait DistListItem extends StObject {
   
   val ConversationTopic: String = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   val CreationTime: VarDate = js.native
   
@@ -53,7 +53,7 @@ trait DistListItem extends StObject {
   def Delete(): Unit = js.native
   
   def Display(): Unit = js.native
-  def Display(Modal: js.Any): Unit = js.native
+  def Display(Modal: Any): Unit = js.native
   
   val DownloadState: OlDownloadState = js.native
   
@@ -79,7 +79,7 @@ trait DistListItem extends StObject {
   
   val Links: typings.activexOutlook.Outlook.Links = js.native
   
-  val MAPIOBJECT: js.Any = js.native
+  val MAPIOBJECT: Any = js.native
   
   def MarkAsTask(MarkInterval: OlMarkInterval): Unit = js.native
   
@@ -87,17 +87,17 @@ trait DistListItem extends StObject {
   
   val MemberCount: Double = js.native
   
-  var Members: js.Any = js.native
+  var Members: Any = js.native
   
   var MessageClass: String = js.native
   
   var Mileage: String = js.native
   
-  def Move(DestFldr: Folder): js.Any = js.native
+  def Move(DestFldr: Folder): Any = js.native
   
   var NoAging: Boolean = js.native
   
-  var OneOffMembers: js.Any = js.native
+  var OneOffMembers: Any = js.native
   
   /* private */ @JSName("Outlook.DistListItem_typekey")
   var OutlookDotDistListItem_typekey: DistListItem = js.native
@@ -106,13 +106,13 @@ trait DistListItem extends StObject {
   
   val OutlookVersion: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PrintOut(): Unit = js.native
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
   
-  var RTFBody: js.Any = js.native
+  var RTFBody: Any = js.native
   
   var ReminderOverrideDefault: Boolean = js.native
   
@@ -131,7 +131,7 @@ trait DistListItem extends StObject {
   def Save(): Unit = js.native
   
   def SaveAs(Path: String): Unit = js.native
-  def SaveAs(Path: String, Type: js.Any): Unit = js.native
+  def SaveAs(Path: String, Type: Any): Unit = js.native
   
   val Saved: Boolean = js.native
   

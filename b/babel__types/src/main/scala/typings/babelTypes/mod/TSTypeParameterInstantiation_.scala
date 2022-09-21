@@ -5,10 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TSTypeParameterInstantiation_
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babelTypes.mod._Node because Already inherited */ trait TSTypeParameterInstantiation_
   extends StObject
      with BaseNode
-     with _Node {
+     with TypeScript {
   
   var params: js.Array[TSType]
   
@@ -27,7 +28,7 @@ object TSTypeParameterInstantiation_ {
     
     inline def setParams(value: js.Array[TSType]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: TSType*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: TSType*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setType(value: TSTypeParameterInstantiation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

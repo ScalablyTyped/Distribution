@@ -24,7 +24,7 @@ object mod {
   trait Options
     extends StObject
        with // ...args support
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     var bail: js.UndefOr[Boolean] = js.undefined
     
@@ -36,6 +36,8 @@ object mod {
     var check: js.UndefOr[Boolean] = js.undefined
     
     var config: js.UndefOr[ResolveConfigOptions] = js.undefined
+    
+    var ignorePath: js.UndefOr[String] = js.undefined
     
     var onCheckFile: js.UndefOr[js.Function2[/* file */ String, /* isFormatted */ Boolean, Unit]] = js.undefined
     
@@ -86,6 +88,10 @@ object mod {
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
+      inline def setIgnorePath(value: String): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
+      
+      inline def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
+      
       inline def setOnCheckFile(value: (/* file */ String, /* isFormatted */ Boolean) => Unit): Self = StObject.set(x, "onCheckFile", js.Any.fromFunction2(value))
       
       inline def setOnCheckFileUndefined: Self = StObject.set(x, "onCheckFile", js.undefined)
@@ -114,7 +120,7 @@ object mod {
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+      inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value*))
       
       inline def setRestage(value: Boolean): Self = StObject.set(x, "restage", value.asInstanceOf[js.Any])
       
@@ -151,7 +157,7 @@ object mod {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }

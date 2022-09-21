@@ -1,34 +1,26 @@
 package typings.opentok.mod
 
-import typings.opentok.opentokStrings.bestFit
-import typings.opentok.opentokStrings.custom
-import typings.opentok.opentokStrings.horizontalPresentation
-import typings.opentok.opentokStrings.pip
-import typings.opentok.opentokStrings.verticalPresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BroadcastLayoutOptions extends StObject {
+trait BroadcastLayoutOptions
+  extends StObject
+     with BroadcastLayout {
   
-  var stylesheet: js.UndefOr[String] = js.undefined
-  
-  var `type`: bestFit | pip | verticalPresentation | horizontalPresentation | custom
+  var `type`: js.UndefOr[BroadcastLayoutType] = js.undefined
 }
 object BroadcastLayoutOptions {
   
-  inline def apply(`type`: bestFit | pip | verticalPresentation | horizontalPresentation | custom): BroadcastLayoutOptions = {
+  inline def apply(): BroadcastLayoutOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadcastLayoutOptions]
   }
   
   extension [Self <: BroadcastLayoutOptions](x: Self) {
     
-    inline def setStylesheet(value: String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+    inline def setType(value: BroadcastLayoutType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
-    
-    inline def setType(value: bestFit | pip | verticalPresentation | horizontalPresentation | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

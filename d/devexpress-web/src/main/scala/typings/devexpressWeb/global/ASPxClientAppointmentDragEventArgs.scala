@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAppointmentDragEventArgs")
 @js.native
-class ASPxClientAppointmentDragEventArgs protected ()
+open class ASPxClientAppointmentDragEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAppointmentDragEventArgs {
   /**
@@ -17,7 +17,7 @@ class ASPxClientAppointmentDragEventArgs protected ()
     * @param mouseEvent A mouse event object related to the drag operation.
     * @param dragInformation An array of ASPxClientAppointmentDragInfo objects storing information about dragged appointments.
     */
-  def this(mouseEvent: js.Any, dragInformation: js.Array[typings.devexpressWeb.ASPxClientAppointmentDragInfo]) = this()
+  def this(mouseEvent: Any, dragInformation: js.Array[typings.devexpressWeb.ASPxClientAppointmentDragInfo]) = this()
   
   /**
     * Specifies whether or not appointments can be dropped into the intervals over which they are currently dragged.
@@ -35,5 +35,5 @@ class ASPxClientAppointmentDragEventArgs protected ()
     * Gets a mouse event object related to the current drag operation.
     */
   /* CompleteClass */
-  var mouseEvent: js.Any = js.native
+  var mouseEvent: Any = js.native
 }

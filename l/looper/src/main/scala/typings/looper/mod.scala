@@ -12,5 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Fn = js.Function0[js.Any]
+  type Fn = js.Function0[Any]
 }

@@ -102,7 +102,7 @@ object eventNameHandlerMod {
   
   @JSImport("wonder.js/dist/es2015/event/object/EventNameHandler", "EventNameHandler")
   @js.native
-  class EventNameHandler () extends StObject
+  open class EventNameHandler () extends StObject
   /* static members */
   object EventNameHandler {
     
@@ -110,6 +110,6 @@ object eventNameHandlerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def handleEventName(domEventName: EEventName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEventName")(domEventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def handleEventName(domEventName: EEventName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEventName")(domEventName.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

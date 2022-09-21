@@ -67,15 +67,15 @@ object modelAnalysisMod {
       
       inline def setMissingInputs(value: js.Array[String]): Self = StObject.set(x, "missingInputs", value.asInstanceOf[js.Any])
       
-      inline def setMissingInputsVarargs(value: String*): Self = StObject.set(x, "missingInputs", js.Array(value :_*))
+      inline def setMissingInputsVarargs(value: String*): Self = StObject.set(x, "missingInputs", js.Array(value*))
       
       inline def setOutputs(value: js.Array[Node]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      inline def setOutputsVarargs(value: Node*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: Node*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setSyncInputs(value: js.Array[String]): Self = StObject.set(x, "syncInputs", value.asInstanceOf[js.Any])
       
-      inline def setSyncInputsVarargs(value: String*): Self = StObject.set(x, "syncInputs", js.Array(value :_*))
+      inline def setSyncInputsVarargs(value: String*): Self = StObject.set(x, "syncInputs", js.Array(value*))
       
       inline def setUsedNodes(value: Set[String]): Self = StObject.set(x, "usedNodes", value.asInstanceOf[js.Any])
     }

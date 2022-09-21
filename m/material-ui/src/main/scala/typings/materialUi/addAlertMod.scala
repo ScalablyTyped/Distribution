@@ -10,10 +10,10 @@ object addAlertMod {
   
   @JSImport("material-ui/svg-icons/alert/add-alert", JSImport.Default)
   @js.native
-  class default () extends AlertAddAlert
+  open class default () extends AlertAddAlert
   
   @JSImport("material-ui/svg-icons/alert/add-alert", "AlertAddAlert")
   @js.native
-  class AlertAddAlert ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AlertAddAlert ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

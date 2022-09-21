@@ -33,6 +33,6 @@ object ListAuditSuppressionsResponse {
     
     inline def setSuppressionsUndefined: Self = StObject.set(x, "suppressions", js.undefined)
     
-    inline def setSuppressionsVarargs(value: AuditSuppression*): Self = StObject.set(x, "suppressions", js.Array(value :_*))
+    inline def setSuppressionsVarargs(value: AuditSuppression*): Self = StObject.set(x, "suppressions", js.Array(value*))
   }
 }

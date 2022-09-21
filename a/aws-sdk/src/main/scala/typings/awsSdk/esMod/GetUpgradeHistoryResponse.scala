@@ -33,6 +33,6 @@ object GetUpgradeHistoryResponse {
     
     inline def setUpgradeHistoriesUndefined: Self = StObject.set(x, "UpgradeHistories", js.undefined)
     
-    inline def setUpgradeHistoriesVarargs(value: UpgradeHistory*): Self = StObject.set(x, "UpgradeHistories", js.Array(value :_*))
+    inline def setUpgradeHistoriesVarargs(value: UpgradeHistory*): Self = StObject.set(x, "UpgradeHistories", js.Array(value*))
   }
 }

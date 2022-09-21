@@ -8,7 +8,7 @@ object stringUtilsMod {
   
   @JSImport("jsmediatags/build2/StringUtils", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with InternalDecodedString {
     def this(value: String, bytesReadCount: Double) = this()

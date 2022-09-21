@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Set")
 @js.native
-class Set[T] ()
+open class Set[T] ()
   extends StObject
      with typings.minappEnv.Set[T] {
   def this(iterable: Iterable[T]) = this()

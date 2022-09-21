@@ -19,8 +19,8 @@ trait Alt extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Identifier of the edit. */
-  var editId: String
+  /** Required. Id of an existing device tier config. */
+  var deviceTierConfigId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -48,8 +48,8 @@ trait Alt extends StObject {
 }
 object Alt {
   
-  inline def apply(editId: String, packageName: String): Alt = {
-    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
+  inline def apply(deviceTierConfigId: String, packageName: String): Alt = {
+    val __obj = js.Dynamic.literal(deviceTierConfigId = deviceTierConfigId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alt]
   }
   
@@ -71,7 +71,7 @@ object Alt {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setEditId(value: String): Self = StObject.set(x, "editId", value.asInstanceOf[js.Any])
+    inline def setDeviceTierConfigId(value: String): Self = StObject.set(x, "deviceTierConfigId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

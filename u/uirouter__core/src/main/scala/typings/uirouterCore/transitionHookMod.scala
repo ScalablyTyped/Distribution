@@ -14,7 +14,7 @@ object transitionHookMod {
   
   @JSImport("@uirouter/core/lib/transition/transitionHook", "TransitionHook")
   @js.native
-  class TransitionHook protected () extends StObject {
+  open class TransitionHook protected () extends StObject {
     def this(
       transition: Transition,
       stateContext: StateDeclaration,
@@ -26,7 +26,7 @@ object transitionHookMod {
       * Return a Rejection promise if the transition is no longer current due
       * to a stopped router (disposed), or a new transition has started and superseded this one.
       */
-    /* private */ var getNotCurrentRejection: js.Any = js.native
+    /* private */ var getNotCurrentRejection: Any = js.native
     
     /**
       * This method handles the return value of a Transition Hook.
@@ -41,17 +41,17 @@ object transitionHookMod {
     
     def invokeHook(): js.Promise[HookResult] | Unit = js.native
     
-    /* private */ var isSuperseded: js.Any = js.native
+    /* private */ var isSuperseded: Any = js.native
     
-    def logError(err: js.Any): js.Any = js.native
+    def logError(err: Any): Any = js.native
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
     
-    /* private */ var registeredHook: js.Any = js.native
+    /* private */ var registeredHook: Any = js.native
     
-    /* private */ var stateContext: js.Any = js.native
+    /* private */ var stateContext: Any = js.native
     
-    /* private */ var transition: js.Any = js.native
+    /* private */ var transition: Any = js.native
     
     var `type`: TransitionEventType = js.native
   }
@@ -134,8 +134,8 @@ object transitionHookMod {
       * @param waitFor if provided, the chain is `.then()`'ed off this promise
       * @returns a `Promise` for sequentially invoking the hooks (in order)
       */
-    inline def chain(hooks: js.Array[TransitionHook]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def chain(hooks: js.Array[TransitionHook], waitFor: js.Promise[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any], waitFor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def chain(hooks: js.Array[TransitionHook]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def chain(hooks: js.Array[TransitionHook], waitFor: js.Promise[Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any], waitFor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     /**
       * Invokes all the provided TransitionHooks, in order.
@@ -151,7 +151,7 @@ object transitionHookMod {
     inline def invokeHooks[T](
       hooks: js.Array[TransitionHook],
       doneCallback: js.Function1[/* result */ js.UndefOr[HookResult], T]
-    ): js.Promise[js.Any] | T = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeHooks")(hooks.asInstanceOf[js.Any], doneCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | T]
+    ): js.Promise[Any] | T = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeHooks")(hooks.asInstanceOf[js.Any], doneCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any] | T]
     
     /**
       * Run all TransitionHooks, ignoring their return value.
@@ -159,7 +159,7 @@ object transitionHookMod {
     inline def runAllHooks(hooks: js.Array[TransitionHook]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAllHooks")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  type ErrorHandler = js.Function1[/* error */ js.Any, js.Promise[js.Any]]
+  type ErrorHandler = js.Function1[/* error */ Any, js.Promise[Any]]
   
   type GetErrorHandler = js.Function1[/* hook */ TransitionHook, ErrorHandler]
   

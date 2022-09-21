@@ -29,7 +29,7 @@ object DBParameterGroupsMessage {
     
     inline def setDBParameterGroupsUndefined: Self = StObject.set(x, "DBParameterGroups", js.undefined)
     
-    inline def setDBParameterGroupsVarargs(value: DBParameterGroup*): Self = StObject.set(x, "DBParameterGroups", js.Array(value :_*))
+    inline def setDBParameterGroupsVarargs(value: DBParameterGroup*): Self = StObject.set(x, "DBParameterGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Typings are for version 8.2
 | ------------------ | :-------------: |
 | Full name          | jwplayer |
 | Keywords           | jwplayer, platform, jwplayer, API |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 4057 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 348.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/jwplayer)

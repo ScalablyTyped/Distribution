@@ -1,7 +1,6 @@
 package typings.ariClient.mod
 
 import typings.ariClient.anon.OperationString
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ trait Playback
     *
     * @param params.operation - Operation to perform on the playback.
     */
-  def control(params: OperationString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def control(params: OperationString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Get a playbacks details.
@@ -31,7 +30,7 @@ trait Playback
   /**
     * Get a playbacks details.
     */
-  def get(callback: js.Function2[/* err */ Error, /* playback */ this.type, Unit]): Unit = js.native
+  def get(callback: js.Function2[/* err */ js.Error, /* playback */ this.type, Unit]): Unit = js.native
   
   /**
     * ID for this playback operation.
@@ -65,7 +64,7 @@ trait Playback
   /**
     * Stop a playback.
     */
-  def stop(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def stop(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * URI for the channel or bridge to play the media on.

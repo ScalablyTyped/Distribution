@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait BuiltInSlicerStyle extends StObject
 /**
-  *
   * Represents a built-in slicer style.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -19,7 +19,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with dark shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark1
@@ -28,7 +30,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with dark shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark2
@@ -37,7 +41,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with dark shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark3
@@ -46,7 +52,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with dark shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark4
@@ -55,7 +63,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with dark shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark5
@@ -64,7 +74,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with dark shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark6
@@ -73,7 +85,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with light shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light1
@@ -82,7 +96,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with light shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light2
@@ -91,7 +107,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with light shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light3
@@ -100,7 +118,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with light shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light4
@@ -109,7 +129,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with light shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light5
@@ -118,7 +140,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with light shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light6
@@ -127,7 +151,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * Dark gray with light shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait other1
@@ -136,7 +162,9 @@ object BuiltInSlicerStyle extends StObject {
   
   /**
     * Medium blue with light shading.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait other2

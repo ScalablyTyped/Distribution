@@ -51,13 +51,13 @@ object XInvocation2 {
     getInfoForName: (String, Boolean) => InvocationInfo,
     getIntrospection: () => XIntrospectionAccess,
     getMemberNames: () => SafeArray[String],
-    getValue: String => js.Any,
+    getValue: String => Any,
     hasMethod: String => Boolean,
     hasProperty: String => Boolean,
-    invoke: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
-    queryInterface: `type` => js.Any,
+    invoke: (String, SeqEquiv[Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[Any]]) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    setValue: (String, js.Any) => Unit
+    setValue: (String, Any) => Unit
   ): XInvocation2 = {
     val __obj = js.Dynamic.literal(Info = Info.asInstanceOf[js.Any], Introspection = Introspection.asInstanceOf[js.Any], MemberNames = MemberNames.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getInfo = js.Any.fromFunction0(getInfo), getInfoForName = js.Any.fromFunction2(getInfoForName), getIntrospection = js.Any.fromFunction0(getIntrospection), getMemberNames = js.Any.fromFunction0(getMemberNames), getValue = js.Any.fromFunction1(getValue), hasMethod = js.Any.fromFunction1(hasMethod), hasProperty = js.Any.fromFunction1(hasProperty), invoke = js.Any.fromFunction4(invoke), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setValue = js.Any.fromFunction2(setValue))
     __obj.asInstanceOf[XInvocation2]

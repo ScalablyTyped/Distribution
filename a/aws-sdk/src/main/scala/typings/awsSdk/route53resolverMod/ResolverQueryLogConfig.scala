@@ -22,7 +22,7 @@ trait ResolverQueryLogConfig extends StObject {
   var CreationTime: js.UndefOr[Rfc3339TimeString] = js.undefined
   
   /**
-    * A unique string that identifies the request that created the query logging configuration. The CreatorRequestId allows failed requests to be retried without the risk of executing the operation twice.
+    * A unique string that identifies the request that created the query logging configuration. The CreatorRequestId allows failed requests to be retried without the risk of running the operation twice.
     */
   var CreatorRequestId: js.UndefOr[typings.awsSdk.route53resolverMod.CreatorRequestId] = js.undefined
   
@@ -42,12 +42,12 @@ trait ResolverQueryLogConfig extends StObject {
   var Name: js.UndefOr[ResolverQueryLogConfigName] = js.undefined
   
   /**
-    * The AWS account ID for the account that created the query logging configuration. 
+    * The Amazon Web Services account ID for the account that created the query logging configuration. 
     */
   var OwnerId: js.UndefOr[AccountId] = js.undefined
   
   /**
-    * An indication of whether the query logging configuration is shared with other AWS accounts, or was shared with the current account by another AWS account. Sharing is configured through AWS Resource Access Manager (AWS RAM).
+    * An indication of whether the query logging configuration is shared with other Amazon Web Services accounts, or was shared with the current account by another Amazon Web Services account. Sharing is configured through Resource Access Manager (RAM).
     */
   var ShareStatus: js.UndefOr[typings.awsSdk.route53resolverMod.ShareStatus] = js.undefined
   

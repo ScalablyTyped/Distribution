@@ -11,7 +11,7 @@ object reflectionBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/reflectionBlock", "ReflectionBlock")
   @js.native
-  class ReflectionBlock protected () extends ReflectionTextureBaseBlock {
+  open class ReflectionBlock protected () extends ReflectionTextureBaseBlock {
     /**
       * Create a new ReflectionBlock
       * @param name defines the block name
@@ -24,9 +24,9 @@ object reflectionBlockMod {
     /** @hidden */
     var _defineLinearSpecularReflection: String = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _vEnvironmentIrradianceName: js.Any = js.native
+    /* private */ var _vEnvironmentIrradianceName: Any = js.native
     
     /** @hidden */
     var _vReflectionFilteringInfoName: String = js.native

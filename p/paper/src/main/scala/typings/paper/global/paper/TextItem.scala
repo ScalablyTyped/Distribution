@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.TextItem")
 @js.native
-class TextItem ()
+open class TextItem ()
   extends StObject
      with typings.paper.paper.TextItem

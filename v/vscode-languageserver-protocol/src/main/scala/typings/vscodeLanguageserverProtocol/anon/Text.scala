@@ -9,9 +9,6 @@ trait Text
   extends StObject
      with TextDocumentContentChangeEvent {
   
-  /**
-    * The new text of the whole document.
-    */
   var text: String
 }
 object Text {

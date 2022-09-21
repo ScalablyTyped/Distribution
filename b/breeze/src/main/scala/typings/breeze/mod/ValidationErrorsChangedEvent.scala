@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("breeze", "ValidationErrorsChangedEvent")
 @js.native
-class ValidationErrorsChangedEvent ()
+open class ValidationErrorsChangedEvent ()
   extends StObject
      with typings.breeze.breeze.ValidationErrorsChangedEvent

@@ -51,7 +51,7 @@ trait BarChartBuilder extends StObject {
   
   def setLegendTextStyle(textStyle: TextStyle): BarChartBuilder = js.native
   
-  def setOption(option: String, value: js.Any): BarChartBuilder = js.native
+  def setOption(option: String, value: Any): BarChartBuilder = js.native
   
   def setRange(start: Double, end: Double): BarChartBuilder = js.native
   

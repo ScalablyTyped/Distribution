@@ -19,7 +19,7 @@ trait ResultTableCollection
   
   def get_item(index: Double): ResultTable
   
-  def get_properties(): StringDictionary[js.Any]
+  def get_properties(): StringDictionary[Any]
   
   def get_queryErrors(): StringDictionary[ControlMessage]
   
@@ -29,27 +29,27 @@ trait ResultTableCollection
   
   def get_triggeredRules(): js.Array[Guid]
   
-  def initPropertiesFromJson(parentNode: js.Any): Unit
+  def initPropertiesFromJson(parentNode: Any): Unit
   
   def set_elapsedTime(value: Double): Unit
 }
 object ResultTableCollection {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     getEnumerator: () => IEnumerator[ResultTable],
     get_count: () => Double,
     get_elapsedTime: () => Double,
     get_item: Double => ResultTable,
-    get_properties: () => StringDictionary[js.Any],
+    get_properties: () => StringDictionary[Any],
     get_queryErrors: () => StringDictionary[ControlMessage],
     get_queryId: () => String,
     get_spellingSuggestion: () => String,
     get_triggeredRules: () => js.Array[Guid],
     get_typeId: () => String,
-    initPropertiesFromJson: js.Any => Unit,
+    initPropertiesFromJson: Any => Unit,
     set_elapsedTime: Double => Unit,
     writeToXml: (XmlWriter, SerializationContext) => Unit
   ): ResultTableCollection = {
@@ -63,7 +63,7 @@ object ResultTableCollection {
     
     inline def setGet_item(value: Double => ResultTable): Self = StObject.set(x, "get_item", js.Any.fromFunction1(value))
     
-    inline def setGet_properties(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
+    inline def setGet_properties(value: () => StringDictionary[Any]): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
     
     inline def setGet_queryErrors(value: () => StringDictionary[ControlMessage]): Self = StObject.set(x, "get_queryErrors", js.Any.fromFunction0(value))
     
@@ -73,7 +73,7 @@ object ResultTableCollection {
     
     inline def setGet_triggeredRules(value: () => js.Array[Guid]): Self = StObject.set(x, "get_triggeredRules", js.Any.fromFunction0(value))
     
-    inline def setInitPropertiesFromJson(value: js.Any => Unit): Self = StObject.set(x, "initPropertiesFromJson", js.Any.fromFunction1(value))
+    inline def setInitPropertiesFromJson(value: Any => Unit): Self = StObject.set(x, "initPropertiesFromJson", js.Any.fromFunction1(value))
     
     inline def setSet_elapsedTime(value: Double => Unit): Self = StObject.set(x, "set_elapsedTime", js.Any.fromFunction1(value))
   }

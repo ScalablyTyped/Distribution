@@ -15,7 +15,7 @@ trait RuleTerm extends StObject {
   var CaseSensitive: Boolean
   
   /** the value of the property used to compare with the document property. */
-  var Operand: js.Any
+  var Operand: Any
   
   /**
     * the operator used to compare the property of the document with the given value (e.g. "contains" or "greater equal").
@@ -34,7 +34,7 @@ object RuleTerm {
   
   inline def apply(
     CaseSensitive: Boolean,
-    Operand: js.Any,
+    Operand: Any,
     Operator: Double,
     Property: String,
     RegularExpression: Boolean
@@ -47,7 +47,7 @@ object RuleTerm {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
     
-    inline def setOperand(value: js.Any): Self = StObject.set(x, "Operand", value.asInstanceOf[js.Any])
+    inline def setOperand(value: Any): Self = StObject.set(x, "Operand", value.asInstanceOf[js.Any])
     
     inline def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     

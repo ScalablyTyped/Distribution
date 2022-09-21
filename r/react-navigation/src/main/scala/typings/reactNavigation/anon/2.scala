@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `2`[T, P] extends StObject {
   
-  var onRef: js.UndefOr[Ref[Component[T & NavigationInjectedProps[P], js.Object, js.Any]]] = js.undefined
+  var onRef: js.UndefOr[Ref[Component[T & NavigationInjectedProps[P], js.Object, Any]]] = js.undefined
 }
 object `2` {
   
@@ -20,11 +20,9 @@ object `2` {
   
   extension [Self <: `2`[?, ?], T, P](x: Self & (`2`[T, P])) {
     
-    inline def setOnRef(value: Ref[Component[T & NavigationInjectedProps[P], js.Object, js.Any]]): Self = StObject.set(x, "onRef", value.asInstanceOf[js.Any])
+    inline def setOnRef(value: Ref[Component[T & NavigationInjectedProps[P], js.Object, Any]]): Self = StObject.set(x, "onRef", value.asInstanceOf[js.Any])
     
-    inline def setOnRefFunction1(
-      value: /* instance */ (Component[T & NavigationInjectedProps[P], js.Object, js.Any]) | Null => Unit
-    ): Self = StObject.set(x, "onRef", js.Any.fromFunction1(value))
+    inline def setOnRefFunction1(value: /* instance */ (Component[T & NavigationInjectedProps[P], js.Object, Any]) | Null => Unit): Self = StObject.set(x, "onRef", js.Any.fromFunction1(value))
     
     inline def setOnRefNull: Self = StObject.set(x, "onRef", null)
     

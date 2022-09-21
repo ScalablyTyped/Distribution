@@ -22,7 +22,7 @@ object infrastructureMod {
   
   @JSImport("gitlab/dist/types/core/infrastructure", "BaseService")
   @js.native
-  class BaseService ()
+  open class BaseService ()
     extends typings.gitlab.baseServiceMod.BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
   }
@@ -119,16 +119,16 @@ object infrastructureMod {
         /* service */ typings.gitlab.baseServiceMod.BaseService, 
         /* endpoint */ String, 
         /* options */ js.UndefOr[BaseRequestOptions], 
-        js.Any
+        Any
       ] = js.native
-    inline def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def stream_=(
       x: js.Function3[
           /* service */ typings.gitlab.baseServiceMod.BaseService, 
           /* endpoint */ String, 
           /* options */ js.UndefOr[BaseRequestOptions], 
-          js.Any
+          Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
   }

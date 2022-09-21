@@ -3,12 +3,10 @@ package typings.jpegJs
 import typings.jpegJs.anon.BufferRetcommentsArraystr
 import typings.jpegJs.anon.ColorTransform
 import typings.jpegJs.anon.FormatAsRGBA
+import typings.jpegJs.anon.RawImageDataBufferLikecom
 import typings.jpegJs.anon.UintArrRetcommentsArrayst
-import typings.node.Buffer
-import typings.std.ArrayBuffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.ArrayLike
-import typings.std.Iterable
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +21,10 @@ object mod {
   inline def decode(jpegData: BufferLike, opts: ColorTransform): UintArrRetcommentsArrayst = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(jpegData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UintArrRetcommentsArrayst]
   inline def decode(jpegData: BufferLike, opts: FormatAsRGBA): BufferRetcommentsArraystr = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(jpegData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BufferRetcommentsArraystr]
   
-  inline def encode(imgData: RawImageData[BufferLike]): BufferRet = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgData.asInstanceOf[js.Any]).asInstanceOf[BufferRet]
-  inline def encode(imgData: RawImageData[BufferLike], quality: Double): BufferRet = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgData.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[BufferRet]
+  inline def encode(imgData: RawImageDataBufferLikecom): BufferRet = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgData.asInstanceOf[js.Any]).asInstanceOf[BufferRet]
+  inline def encode(imgData: RawImageDataBufferLikecom, quality: Double): BufferRet = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgData.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[BufferRet]
   
-  type BufferLike = Buffer | Uint8Array | ArrayLike[Double] | Iterable[Double] | ArrayBuffer
+  type BufferLike = Buffer | js.typedarray.Uint8Array | ArrayLike[Double] | js.Iterable[Double] | js.typedarray.ArrayBuffer
   
   type BufferRet = RawImageData[Buffer]
   
@@ -57,5 +55,5 @@ object mod {
     }
   }
   
-  type UintArrRet = RawImageData[Uint8Array]
+  type UintArrRet = RawImageData[js.typedarray.Uint8Array]
 }

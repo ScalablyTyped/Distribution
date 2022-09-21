@@ -1,30 +1,31 @@
 package typings.estree.ESTree
 
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AnyTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+type AnyTypeAnnotation = FlowBaseTypeAnnotation
 
-type BooleanLiteralTypeAnnotation = typings.estree.ESTree.FlowLiteralTypeAnnotation
+type BooleanLiteralTypeAnnotation = FlowLiteralTypeAnnotation
 
-type BooleanTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+type BooleanTypeAnnotation = FlowBaseTypeAnnotation
 
-type FlowBaseTypeAnnotation = typings.estree.ESTree.FlowTypeAnnotation
+type FlowBaseTypeAnnotation = FlowTypeAnnotation
 
-type FlowDeclaration = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Declaration */ js.Any
+type FlowDeclaration = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Declaration */ Any
 
-type FlowTypeAnnotation = typings.std.Node
+type FlowTypeAnnotation = Node
 
-type MixedTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+type MixedTypeAnnotation = FlowBaseTypeAnnotation
 
-type NumberLiteralTypeAnnotation = typings.estree.ESTree.FlowLiteralTypeAnnotation
+type NumberLiteralTypeAnnotation = FlowLiteralTypeAnnotation
 
-type NumberTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+type NumberTypeAnnotation = FlowBaseTypeAnnotation
 
-type StringLiteralTypeAnnotation = typings.estree.ESTree.FlowLiteralTypeAnnotation
+type StringLiteralTypeAnnotation = FlowLiteralTypeAnnotation
 
-type StringTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+type StringTypeAnnotation = FlowBaseTypeAnnotation
 
-type VoidTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+type VoidTypeAnnotation = FlowBaseTypeAnnotation

@@ -14,7 +14,7 @@ trait WorkGroup extends StObject {
   /**
     * The date and time the workgroup was created.
     */
-  var CreationTime: js.UndefOr[Date] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The workgroup description.
@@ -44,7 +44,7 @@ object WorkGroup {
     
     inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
-    inline def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

@@ -11,14 +11,12 @@ ASCII transliterations of Unicode text
 | Full name          | unidecode |
 | Keywords           | unidecode, unicode, utf8 |
 | # releases         | 0 |
-| # dependents       | 58 |
-| # downloads        | 9515274 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1053916.3333333333 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](http://blog.fgribreau.com/2012/05/unidecode-for-javascript-nodejs.html)
-- [Bugs](https://github.com/FGRibreau/node-unidecode/issues)
-- [Repository](https://github.com/FGRibreau/node-unidecode)
 - [Npm](https://www.npmjs.com/package/unidecode)
     
 

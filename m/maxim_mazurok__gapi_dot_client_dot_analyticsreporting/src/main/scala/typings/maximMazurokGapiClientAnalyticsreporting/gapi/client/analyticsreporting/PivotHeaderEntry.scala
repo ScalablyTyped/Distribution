@@ -28,13 +28,13 @@ object PivotHeaderEntry {
     
     inline def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
     
-    inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
+    inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value*))
     
     inline def setDimensionValues(value: js.Array[String]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
     inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
-    inline def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+    inline def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value*))
     
     inline def setMetric(value: MetricHeaderEntry): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     

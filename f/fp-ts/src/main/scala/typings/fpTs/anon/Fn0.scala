@@ -1,13 +1,15 @@
 package typings.fpTs.anon
 
-import typings.fpTs.optionMod.Option_
+import typings.fpTs.predicateMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn0[K] extends StObject {
+trait Fn0 extends StObject {
   
-  def apply(k: K): js.Function1[/* m */ typings.std.Map[K, js.Any], Option_[js.Tuple2[K, js.Any]]] = js.native
-  def apply[A](k: K, m: typings.std.Map[K, A]): Option_[js.Tuple2[K, A]] = js.native
+  def apply[A](predicate: Predicate[A]): js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, B>> */ /* fgb */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, B>> */ Any
+  ] = js.native
 }

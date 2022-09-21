@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileMatch extends StObject {
   
   /**
-    * A list of file names that are associated to the schema. The '*' wildcard can be used. For example '*.schema.json', 'package.json'
+    * A list of glob patterns that describe for which file URIs the JSON schema will be used.
+    * '*' and '**' wildcards are supported. Exclusion patterns start with '!'.
+    * For example '*.schema.json', 'package.json', '!foo*.schema.json', 'foo/ **\/BADRESP.json'.
+    * A match succeeds when there is at least one pattern matching and last matching pattern does not start with '!'.
     */
   val fileMatch: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The schema for the given URI.
     */
-  val schema: js.UndefOr[js.Any] = js.undefined
+  val schema: js.UndefOr[Any] = js.undefined
   
   /**
     * The URI of the schema, which is also the identifier of the schema.
@@ -34,9 +37,9 @@ object FileMatch {
     
     inline def setFileMatchUndefined: Self = StObject.set(x, "fileMatch", js.undefined)
     
-    inline def setFileMatchVarargs(value: String*): Self = StObject.set(x, "fileMatch", js.Array(value :_*))
+    inline def setFileMatchVarargs(value: String*): Self = StObject.set(x, "fileMatch", js.Array(value*))
     
-    inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     

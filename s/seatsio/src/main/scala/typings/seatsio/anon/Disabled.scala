@@ -23,14 +23,14 @@ object Disabled {
     
     inline def setDisabled(value: js.Array[String]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setDisabledVarargs(value: String*): Self = StObject.set(x, "disabled", js.Array(value :_*))
+    inline def setDisabledVarargs(value: String*): Self = StObject.set(x, "disabled", js.Array(value*))
     
     inline def setEnabled(value: js.Array[String]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    inline def setEnabledVarargs(value: String*): Self = StObject.set(x, "enabled", js.Array(value :_*))
+    inline def setEnabledVarargs(value: String*): Self = StObject.set(x, "enabled", js.Array(value*))
     
     inline def setReadOnly(value: js.Array[String]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    inline def setReadOnlyVarargs(value: String*): Self = StObject.set(x, "readOnly", js.Array(value :_*))
+    inline def setReadOnlyVarargs(value: String*): Self = StObject.set(x, "readOnly", js.Array(value*))
   }
 }

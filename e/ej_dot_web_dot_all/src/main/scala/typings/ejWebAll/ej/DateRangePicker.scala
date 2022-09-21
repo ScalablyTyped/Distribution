@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait DateRangePicker
     * @param {any[]} StartDate and endDate of range.
     * @returns {void}
     */
-  def addRanges(label: String, range: js.Array[js.Any]): Unit = js.native
+  def addRanges(label: String, range: js.Array[Any]): Unit = js.native
   
   /** Clears the all ranges selections in DateRangePicker popup
     * @returns {void}
@@ -38,7 +37,7 @@ trait DateRangePicker
   /** Returns the startDate and endDate values in the selected ranges in the DateRangePicker control.
     * @returns {any}
     */
-  def getSelectedRange(): js.Any = js.native
+  def getSelectedRange(): Any = js.native
   
   @JSName("model")
   var model_DateRangePicker: Model = js.native
@@ -72,7 +71,7 @@ object DateRangePicker {
     
     /** returns the event parameters from DateRangePicker.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** returns the DateRangePicker model
       */
@@ -99,7 +98,7 @@ object DateRangePicker {
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -125,7 +124,7 @@ object DateRangePicker {
     
     /** returns the event parameters from DateRangePicker.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** returns the DateRangePicker model.
       */
@@ -152,7 +151,7 @@ object DateRangePicker {
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -170,7 +169,7 @@ object DateRangePicker {
     
     /** returns the endDate of the DateRangePicker popup.
       */
-    var endDate: js.UndefOr[js.Any] = js.undefined
+    var endDate: js.UndefOr[Any] = js.undefined
     
     /** returns the DateRangePicker model.
       */
@@ -178,7 +177,7 @@ object DateRangePicker {
     
     /** returns the startDate of DateRangePicker.
       */
-    var startDate: js.UndefOr[js.Any] = js.undefined
+    var startDate: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -197,7 +196,7 @@ object DateRangePicker {
     
     extension [Self <: ChangeEventArgs](x: Self) {
       
-      inline def setEndDate(value: js.Any): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: Any): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
@@ -205,7 +204,7 @@ object DateRangePicker {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setStartDate(value: js.Any): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: Any): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
@@ -223,7 +222,7 @@ object DateRangePicker {
     
     /** returns the current date object.
       */
-    var date: js.UndefOr[js.Any] = js.undefined
+    var date: js.UndefOr[Any] = js.undefined
     
     /** returns the DateRangePicker popup.
       */
@@ -246,7 +245,7 @@ object DateRangePicker {
     
     extension [Self <: CloseEventArgs](x: Self) {
       
-      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -352,7 +351,7 @@ object DateRangePicker {
     /** Sets the specified text value to the available buttons (Reset, Cancel, Apply) in the DateRangePicker popup.
       * @Default {{ reset: Reset, cancel: Cancel, apply: Apply}}
       */
-    var buttonText: js.UndefOr[js.Any] = js.undefined
+    var buttonText: js.UndefOr[Any] = js.undefined
     
     /** Fires when DateRangePicker popup is closed.
       */
@@ -393,7 +392,7 @@ object DateRangePicker {
     /** Specifies the end date of the date ranges.
       * @Default {null}
       */
-    var endDate: js.UndefOr[String | Date] = js.undefined
+    var endDate: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the height of the DateRangePicker input.
       * @Default {28px}
@@ -408,12 +407,12 @@ object DateRangePicker {
     /** Specifies the maximum date in the calendar that the user can select as a startDate or endDate.
       * @Default {new Date(2099, 11, 31)}
       */
-    var maxDate: js.UndefOr[String | Date] = js.undefined
+    var maxDate: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the minimum date in the calendar that the user can select as a startDate or endDate.
       * @Default {new Date(1900, 00, 01)}
       */
-    var minDate: js.UndefOr[String | Date] = js.undefined
+    var minDate: js.UndefOr[String | js.Date] = js.undefined
     
     /** Fires when DateRangePicker popup is opened.
       */
@@ -422,7 +421,7 @@ object DateRangePicker {
     /** Used to add the preset ranges. Added ranges using this, will show in popup in right side for easy selection of different preset ranges.
       * @Default {null}
       */
-    var ranges: js.UndefOr[js.Any] = js.undefined
+    var ranges: js.UndefOr[Any] = js.undefined
     
     /** Fires when a date ranges is selected from the DateRangePicker popup.
       */
@@ -446,7 +445,7 @@ object DateRangePicker {
     /** Specifies the start date of the date ranges
       * @Default {null}
       */
-    var startDate: js.UndefOr[String | Date] = js.undefined
+    var startDate: js.UndefOr[String | js.Date] = js.undefined
     
     /** Formats the date value of the DateRangePicker in to the specified time format. If this API is not specified, timeFormat will be set based on the current culture of DateRangePicker.
       * @Default {HH:mm tt}
@@ -489,7 +488,7 @@ object DateRangePicker {
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
-      inline def setButtonText(value: js.Any): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: Any): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
       inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
       
@@ -529,7 +528,7 @@ object DateRangePicker {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setEndDate(value: String | Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: String | js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
@@ -541,11 +540,11 @@ object DateRangePicker {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: String | Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: String | js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: String | Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: String | js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -553,7 +552,7 @@ object DateRangePicker {
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      inline def setRanges(value: js.Any): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+      inline def setRanges(value: Any): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
       inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
       
@@ -573,7 +572,7 @@ object DateRangePicker {
       
       inline def setShowRoundedCornerUndefined: Self = StObject.set(x, "showRoundedCorner", js.undefined)
       
-      inline def setStartDate(value: String | Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: String | js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
@@ -599,7 +598,7 @@ object DateRangePicker {
     
     /** returns the current date object.
       */
-    var date: js.UndefOr[js.Any] = js.undefined
+    var date: js.UndefOr[Any] = js.undefined
     
     /** returns the DateRangePicker popup.
       */
@@ -622,7 +621,7 @@ object DateRangePicker {
     
     extension [Self <: OpenEventArgs](x: Self) {
       
-      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -644,7 +643,7 @@ object DateRangePicker {
     
     /** returns the current date value.
       */
-    var endDate: js.UndefOr[js.Any] = js.undefined
+    var endDate: js.UndefOr[Any] = js.undefined
     
     /** returns the DateRangePicker model.
       */
@@ -652,7 +651,7 @@ object DateRangePicker {
     
     /** returns the selected date object.
       */
-    var startDate: js.UndefOr[js.Any] = js.undefined
+    var startDate: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -667,7 +666,7 @@ object DateRangePicker {
     
     extension [Self <: SelectEventArgs](x: Self) {
       
-      inline def setEndDate(value: js.Any): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: Any): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
@@ -675,7 +674,7 @@ object DateRangePicker {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setStartDate(value: js.Any): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: Any): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for circle-to-polygon
 
-Typings are for version 2.0
+Typings are for version 2.2
 
 ## Library description:
 Receives a Coordinate, a Radius and a Number of edges and aproximates a circle by creating a polygon that fills its area
@@ -11,9 +11,9 @@ Receives a Coordinate, a Radius and a Number of edges and aproximates a circle b
 | Full name          | circle-to-polygon |
 | Keywords           | GeoJSON, circle, polygon |
 | # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 151489 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47562.0 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://github.com/gabzim/circle-to-polygon#readme)

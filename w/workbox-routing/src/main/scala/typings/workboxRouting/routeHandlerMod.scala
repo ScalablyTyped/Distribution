@@ -17,7 +17,7 @@ object routeHandlerMod {
   trait RouteHandlerCallbackContext extends StObject {
     
     var event: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ Any
       ] = js.undefined
     
     var params: js.UndefOr[js.Array[String] | (Record[String, String])] = js.undefined
@@ -36,7 +36,7 @@ object routeHandlerMod {
     extension [Self <: RouteHandlerCallbackContext](x: Self) {
       
       inline def setEvent(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ Any
       ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
@@ -45,7 +45,7 @@ object routeHandlerMod {
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofclose extends StObject {
   
+  def apply(fd: Double): Unit = js.native
   def apply(fd: Double, callback: NoParamCallback): Unit = js.native
 }

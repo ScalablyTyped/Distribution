@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LogInterceptor extends StObject {
   
-  def apply(level: error, module: String, args: js.Any*): Boolean = js.native
-  def apply(level: info, module: String, args: js.Any*): Boolean = js.native
-  def apply(level: warn, module: String, args: js.Any*): Boolean = js.native
+  def apply(level: error | warn | info, module: String, args: Any*): Boolean = js.native
 }

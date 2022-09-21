@@ -115,7 +115,7 @@ object AxisLine {
     
     inline def setReferenceObjects(value: js.Array[Categories]): Self = StObject.set(x, "referenceObjects", value.asInstanceOf[js.Any])
     
-    inline def setReferenceObjectsVarargs(value: Categories*): Self = StObject.set(x, "referenceObjects", js.Array(value :_*))
+    inline def setReferenceObjectsVarargs(value: Categories*): Self = StObject.set(x, "referenceObjects", js.Array(value*))
     
     inline def setRendered(value: off | on): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     

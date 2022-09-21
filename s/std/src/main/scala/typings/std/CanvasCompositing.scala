@@ -6,13 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CanvasCompositing extends StObject {
   
+  /* standard dom */
   var globalAlpha: Double
   
-  var globalCompositeOperation: java.lang.String
+  /* standard dom */
+  var globalCompositeOperation: GlobalCompositeOperation
 }
 object CanvasCompositing {
   
-  inline def apply(globalAlpha: Double, globalCompositeOperation: java.lang.String): CanvasCompositing = {
+  inline def apply(globalAlpha: Double, globalCompositeOperation: GlobalCompositeOperation): CanvasCompositing = {
     val __obj = js.Dynamic.literal(globalAlpha = globalAlpha.asInstanceOf[js.Any], globalCompositeOperation = globalCompositeOperation.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasCompositing]
   }
@@ -21,6 +23,6 @@ object CanvasCompositing {
     
     inline def setGlobalAlpha(value: Double): Self = StObject.set(x, "globalAlpha", value.asInstanceOf[js.Any])
     
-    inline def setGlobalCompositeOperation(value: java.lang.String): Self = StObject.set(x, "globalCompositeOperation", value.asInstanceOf[js.Any])
+    inline def setGlobalCompositeOperation(value: GlobalCompositeOperation): Self = StObject.set(x, "globalCompositeOperation", value.asInstanceOf[js.Any])
   }
 }

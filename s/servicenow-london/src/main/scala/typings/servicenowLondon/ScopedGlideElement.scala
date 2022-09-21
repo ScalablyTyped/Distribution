@@ -67,7 +67,7 @@ trait ScopedGlideElement extends StObject {
     *   gs.eventQueue('incident.inactive', current, current.incident_state, previous.incident_state);
     * }
     */
-  def changesFrom(o: js.Any): Boolean = js.native
+  def changesFrom(o: Any): Boolean = js.native
   
   /**
     * Determines if the new value of a field, after a change, matches the specified object.
@@ -84,7 +84,7 @@ trait ScopedGlideElement extends StObject {
     *   gs.eventQueue('incident.inactive', current, current.incident_state, previous.incident_state);
     * }
     */
-  def changesTo(o: js.Any): Boolean = js.native
+  def changesTo(o: Any): Boolean = js.native
   
   /**
     * Returns the value of the specified attribute from the dictionary.
@@ -150,8 +150,8 @@ trait ScopedGlideElement extends StObject {
     * var choices = glideRecord.urgency.getChoices();
     * gs.info(choices);
     */
-  def getChoices(): js.Array[js.Any] = js.native
-  def getChoices(dependent: String): js.Array[js.Any] = js.native
+  def getChoices(): js.Array[Any] = js.native
+  def getChoices(dependent: String): js.Array[Any] = js.native
   
   /**
     * Returns the clear text value for Password (2 way encrypted) fields in scoped
@@ -206,7 +206,7 @@ trait ScopedGlideElement extends StObject {
     *
     * @returns The phone number in international format.
     */
-  def getGlobalDisplayValue(): js.Any = js.native
+  def getGlobalDisplayValue(): Any = js.native
   
   /**
     * Returns the HTML value of a field.
@@ -420,7 +420,7 @@ trait ScopedGlideElement extends StObject {
     * number.
     * @returns True if the value was set.
     */
-  def setPhoneNumber(phoneNumber: js.Any, strict: Boolean): Boolean = js.native
+  def setPhoneNumber(phoneNumber: Any, strict: Boolean): Boolean = js.native
   
   /**
     * Sets the value of a field.
@@ -435,5 +435,5 @@ trait ScopedGlideElement extends StObject {
     * glideRecord.short_description.setValue('Network failure');
     * gs.info(glideRecord.short_description);
     */
-  def setValue(value: js.Any): Unit = js.native
+  def setValue(value: Any): Unit = js.native
 }

@@ -1,5 +1,6 @@
 package typings.cesium.anon
 
+import typings.cesium.mod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,17 +11,17 @@ trait Credit extends StObject {
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var proxy: js.UndefOr[js.Any] = js.undefined
+  var requestMetadata: js.UndefOr[Boolean] = js.undefined
   
-  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.undefined
+  var requestVertexNormals: js.UndefOr[Boolean] = js.undefined
   
-  var token: js.UndefOr[String] = js.undefined
+  var requestWaterMask: js.UndefOr[Boolean] = js.undefined
   
-  var url: String
+  var url: Resource | String | (js.Promise[Resource | String])
 }
 object Credit {
   
-  inline def apply(url: String): Credit = {
+  inline def apply(url: Resource | String | (js.Promise[Resource | String])): Credit = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credit]
   }
@@ -35,18 +36,18 @@ object Credit {
     
     inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
-    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setRequestMetadata(value: Boolean): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
     
-    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
     
-    inline def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = StObject.set(x, "tilingScheme", value.asInstanceOf[js.Any])
+    inline def setRequestVertexNormals(value: Boolean): Self = StObject.set(x, "requestVertexNormals", value.asInstanceOf[js.Any])
     
-    inline def setTilingSchemeUndefined: Self = StObject.set(x, "tilingScheme", js.undefined)
+    inline def setRequestVertexNormalsUndefined: Self = StObject.set(x, "requestVertexNormals", js.undefined)
     
-    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setRequestWaterMask(value: Boolean): Self = StObject.set(x, "requestWaterMask", value.asInstanceOf[js.Any])
     
-    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setRequestWaterMaskUndefined: Self = StObject.set(x, "requestWaterMask", js.undefined)
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Resource | String | (js.Promise[Resource | String])): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

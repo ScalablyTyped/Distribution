@@ -4,46 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Partially mask a string by replacing a given number of characters with a
-  * fixed character. Masking can start from the beginning or end of the string.
-  * This can be used on data of any type (numbers, longs, and so on) and when
-  * de-identifying structured data we&#39;ll attempt to preserve the original
-  * data&#39;s type. (This allows you to take a long like 123 and modify it to
-  * a string like **3.
-  */
 trait SchemaGooglePrivacyDlpV2CharacterMaskConfig extends StObject {
   
   /**
-    * When masking a string, items in this list will be skipped when replacing.
-    * For example, if your string is 555-555-5555 and you ask us to skip `-`
-    * and mask 5 chars with * we would produce ***-*55-5555.
+    * When masking a string, items in this list will be skipped when replacing characters. For example, if the input string is `555-555-5555` and you instruct Cloud DLP to skip `-` and mask 5 characters with `*`, Cloud DLP returns `***-**5-5555`.
     */
   var charactersToIgnore: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2CharsToIgnore]] = js.undefined
   
   /**
-    * Character to mask the sensitive values&amp;mdash;for example,
-    * &quot;*&quot; for an alphabetic string such as name, or &quot;0&quot; for
-    * a numeric string such as ZIP code or credit card number. String must have
-    * length 1. If not supplied, we will default to &quot;*&quot; for strings,
-    * 0 for digits.
+    * Character to use to mask the sensitive values—for example, `*` for an alphabetic string such as a name, or `0` for a numeric string such as ZIP code or credit card number. This string must have a length of 1. If not supplied, this value defaults to `*` for strings, and `0` for digits.
     */
-  var maskingCharacter: js.UndefOr[String] = js.undefined
+  var maskingCharacter: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Number of characters to mask. If not set, all matching chars will be
-    * masked. Skipped characters do not count towards this tally.
+    * Number of characters to mask. If not set, all matching chars will be masked. Skipped characters do not count towards this tally. If `number_to_mask` is negative, this denotes inverse masking. Cloud DLP masks all but a number of characters. For example, suppose you have the following values: - `masking_character` is `*` - `number_to_mask` is `-4` - `reverse_order` is `false` - `CharsToIgnore` includes `-` - Input string is `1234-5678-9012-3456` The resulting de-identified string is `****-****-****-3456`. Cloud DLP masks all but the last four characters. If `reverse_order` is `true`, all but the first four characters are masked as `1234-****-****-****`.
     */
-  var numberToMask: js.UndefOr[Double] = js.undefined
+  var numberToMask: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Mask characters in reverse order. For example, if `masking_character` is
-    * &#39;0&#39;, number_to_mask is 14, and `reverse_order` is false, then
-    * 1234-5678-9012-3456 -&gt; 00000000000000-3456 If `masking_character` is
-    * &#39;*&#39;, `number_to_mask` is 3, and `reverse_order` is true, then
-    * 12345 -&gt; 12***
+    * Mask characters in reverse order. For example, if `masking_character` is `0`, `number_to_mask` is `14`, and `reverse_order` is `false`, then the input string `1234-5678-9012-3456` is masked as `00000000000000-3456`. If `masking_character` is `*`, `number_to_mask` is `3`, and `reverse_order` is `true`, then the string `12345` is masked as `12***`.
     */
-  var reverseOrder: js.UndefOr[Boolean] = js.undefined
+  var reverseOrder: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CharacterMaskConfig {
   
@@ -58,17 +39,23 @@ object SchemaGooglePrivacyDlpV2CharacterMaskConfig {
     
     inline def setCharactersToIgnoreUndefined: Self = StObject.set(x, "charactersToIgnore", js.undefined)
     
-    inline def setCharactersToIgnoreVarargs(value: SchemaGooglePrivacyDlpV2CharsToIgnore*): Self = StObject.set(x, "charactersToIgnore", js.Array(value :_*))
+    inline def setCharactersToIgnoreVarargs(value: SchemaGooglePrivacyDlpV2CharsToIgnore*): Self = StObject.set(x, "charactersToIgnore", js.Array(value*))
     
     inline def setMaskingCharacter(value: String): Self = StObject.set(x, "maskingCharacter", value.asInstanceOf[js.Any])
+    
+    inline def setMaskingCharacterNull: Self = StObject.set(x, "maskingCharacter", null)
     
     inline def setMaskingCharacterUndefined: Self = StObject.set(x, "maskingCharacter", js.undefined)
     
     inline def setNumberToMask(value: Double): Self = StObject.set(x, "numberToMask", value.asInstanceOf[js.Any])
     
+    inline def setNumberToMaskNull: Self = StObject.set(x, "numberToMask", null)
+    
     inline def setNumberToMaskUndefined: Self = StObject.set(x, "numberToMask", js.undefined)
     
     inline def setReverseOrder(value: Boolean): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
+    
+    inline def setReverseOrderNull: Self = StObject.set(x, "reverseOrder", null)
     
     inline def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
   }

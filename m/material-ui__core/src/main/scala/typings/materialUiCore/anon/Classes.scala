@@ -1,25 +1,25 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.withStylesMod.ClassNameMap
-import typings.materialUiCore.withStylesMod.StyleRules
-import typings.materialUiCore.withStylesMod.StyleRulesCallback
+import typings.materialUiStyles.withStylesWithStylesMod.ClassKeyOfStyles
+import typings.materialUiStyles.withStylesWithStylesMod.ClassNameMap
+import typings.materialUiStyles.withStylesWithStylesMod.Styles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Classes[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */] extends StObject {
+trait Classes[StylesOrClassKey /* <: String | (Styles[Any, Any, Any]) */] extends StObject {
   
-  var classes: ClassNameMap[js.Any | T]
+  var classes: ClassNameMap[ClassKeyOfStyles[StylesOrClassKey]]
 }
 object Classes {
   
-  inline def apply[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */](classes: ClassNameMap[js.Any | T]): Classes[T] = {
+  inline def apply[StylesOrClassKey /* <: String | (Styles[Any, Any, Any]) */](classes: ClassNameMap[ClassKeyOfStyles[StylesOrClassKey]]): Classes[StylesOrClassKey] = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Classes[T]]
+    __obj.asInstanceOf[Classes[StylesOrClassKey]]
   }
   
-  extension [Self <: Classes[?], T /* <: String | StyleRules[String] | StyleRulesCallback[String] */](x: Self & Classes[T]) {
+  extension [Self <: Classes[?], StylesOrClassKey /* <: String | (Styles[Any, Any, Any]) */](x: Self & Classes[StylesOrClassKey]) {
     
-    inline def setClasses(value: ClassNameMap[js.Any | T]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: ClassNameMap[ClassKeyOfStyles[StylesOrClassKey]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
   }
 }

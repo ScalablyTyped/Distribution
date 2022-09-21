@@ -10,7 +10,7 @@ trait IgGridResponsiveAllowedColumnWidthPerType
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Minimal width in pixels bool columns can take before forcing vertical rendering

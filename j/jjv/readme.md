@@ -10,10 +10,10 @@ A simple and extensible json-schema validator written in javascript. JJV runs in
 | ------------------ | :-------------: |
 | Full name          | jjv |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 451126 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 43464.333333333336 |
+| # stars            | 193.0 |
 
 ## Links
 - [Homepage](https://github.com/acornejo/jjv)

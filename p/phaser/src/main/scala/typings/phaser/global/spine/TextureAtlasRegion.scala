@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.TextureAtlasRegion")
 @js.native
-class TextureAtlasRegion ()
+open class TextureAtlasRegion ()
   extends StObject
      with typings.phaser.spine.TextureAtlasRegion {
   
@@ -38,7 +38,7 @@ class TextureAtlasRegion ()
   var page: typings.phaser.spine.TextureAtlasPage = js.native
   
   /* CompleteClass */
-  var renderObject: js.Any = js.native
+  var renderObject: Any = js.native
   
   /* CompleteClass */
   var rotate: Boolean = js.native

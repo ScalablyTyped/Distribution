@@ -33,6 +33,6 @@ object ListStackInstancesForProvisionedProductOutput {
     
     inline def setStackInstancesUndefined: Self = StObject.set(x, "StackInstances", js.undefined)
     
-    inline def setStackInstancesVarargs(value: StackInstance*): Self = StObject.set(x, "StackInstances", js.Array(value :_*))
+    inline def setStackInstancesVarargs(value: StackInstance*): Self = StObject.set(x, "StackInstances", js.Array(value*))
   }
 }

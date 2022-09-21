@@ -87,7 +87,7 @@ object XExtendedIndexEntrySupplier {
     getLocaleList: () => SafeArray[Locale],
     getPhoneticCandidate: (String, Locale) => String,
     loadAlgorithm: (Locale, String, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     usePhoneticEntry: Locale => Boolean
   ): XExtendedIndexEntrySupplier = {

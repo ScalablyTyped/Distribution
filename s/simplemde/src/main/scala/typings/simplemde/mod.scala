@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("simplemde", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with SimpleMDE {
     def this(options: Options) = this()
@@ -234,25 +234,25 @@ object mod {
       
       inline def setHorizontalRuleUndefined: Self = StObject.set(x, "horizontalRule", js.undefined)
       
-      inline def setHorizontalRuleVarargs(value: String*): Self = StObject.set(x, "horizontalRule", js.Array(value :_*))
+      inline def setHorizontalRuleVarargs(value: String*): Self = StObject.set(x, "horizontalRule", js.Array(value*))
       
       inline def setImage(value: js.Array[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
       inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      inline def setImageVarargs(value: String*): Self = StObject.set(x, "image", js.Array(value :_*))
+      inline def setImageVarargs(value: String*): Self = StObject.set(x, "image", js.Array(value*))
       
       inline def setLink(value: js.Array[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
       inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      inline def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value :_*))
+      inline def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value*))
       
       inline def setTable(value: js.Array[String]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
       inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      inline def setTableVarargs(value: String*): Self = StObject.set(x, "table", js.Array(value :_*))
+      inline def setTableVarargs(value: String*): Self = StObject.set(x, "table", js.Array(value*))
     }
   }
   
@@ -345,7 +345,7 @@ object mod {
       
       inline def setHideIconsUndefined: Self = StObject.set(x, "hideIcons", js.undefined)
       
-      inline def setHideIconsVarargs(value: String*): Self = StObject.set(x, "hideIcons", js.Array(value :_*))
+      inline def setHideIconsVarargs(value: String*): Self = StObject.set(x, "hideIcons", js.Array(value*))
       
       inline def setIndentWithTabs(value: Boolean): Self = StObject.set(x, "indentWithTabs", value.asInstanceOf[js.Any])
       
@@ -391,7 +391,7 @@ object mod {
       
       inline def setShowIconsUndefined: Self = StObject.set(x, "showIcons", js.undefined)
       
-      inline def setShowIconsVarargs(value: String*): Self = StObject.set(x, "showIcons", js.Array(value :_*))
+      inline def setShowIconsVarargs(value: String*): Self = StObject.set(x, "showIcons", js.Array(value*))
       
       inline def setSpellChecker(value: Boolean): Self = StObject.set(x, "spellChecker", value.asInstanceOf[js.Any])
       
@@ -401,7 +401,7 @@ object mod {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setStatusVarargs(value: (String | StatusBarItem)*): Self = StObject.set(x, "status", js.Array(value :_*))
+      inline def setStatusVarargs(value: (String | StatusBarItem)*): Self = StObject.set(x, "status", js.Array(value*))
       
       inline def setStyleSelectedText(value: Boolean): Self = StObject.set(x, "styleSelectedText", value.asInstanceOf[js.Any])
       
@@ -419,7 +419,7 @@ object mod {
       
       inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
       
-      inline def setToolbarVarargs(value: (String | ToolbarIcon)*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+      inline def setToolbarVarargs(value: (String | ToolbarIcon)*): Self = StObject.set(x, "toolbar", js.Array(value*))
     }
   }
   
@@ -581,7 +581,7 @@ object mod {
     
     def clearAutosavedValue(): Unit = js.native
     
-    var codemirror: js.Any = js.native
+    var codemirror: Any = js.native
     
     def isFullscreenActive(): Boolean = js.native
     

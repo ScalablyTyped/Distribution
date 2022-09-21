@@ -1,43 +1,33 @@
 package typings.algoliaClientSearch.mod
 
+import typings.algoliaClientSearch.algoliaClientSearchStrings.default
+import typings.algoliaClientSearch.algoliaClientSearchStrings.facet
+import typings.algoliaClientSearch.anon.FacetQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultipleQueriesQuery extends StObject {
-  
-  /**
-    * The index name.
-    */
-  val indexName: String
-  
-  /**
-    * The search options.
-    */
-  val params: js.UndefOr[SearchOptions] = js.undefined
-  
-  /**
-    * The query associated with the request.
-    */
-  val query: js.UndefOr[String] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.algoliaClientSearch.anon.readonlytypedefaultundefi
+  - typings.algoliaClientSearch.anon.readonlytypefacetreadonly
+*/
+trait MultipleQueriesQuery extends StObject
 object MultipleQueriesQuery {
   
-  inline def apply(indexName: String): MultipleQueriesQuery = {
+  inline def readonlytypedefaultundefi(indexName: String, `type`: js.UndefOr[default] & (js.UndefOr[default | facet])): typings.algoliaClientSearch.anon.readonlytypedefaultundefi = {
     val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MultipleQueriesQuery]
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.algoliaClientSearch.anon.readonlytypedefaultundefi]
   }
   
-  extension [Self <: MultipleQueriesQuery](x: Self) {
-    
-    inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
-    
-    inline def setParams(value: SearchOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-    
-    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
-    
-    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-    
-    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+  inline def readonlytypefacetreadonly(
+    facet: String,
+    indexName: String,
+    params: (js.UndefOr[js.UndefOr[SearchOptions] & FacetQuery]) & js.UndefOr[SearchOptions],
+    `type`: facet & (js.UndefOr[default | facet])
+  ): typings.algoliaClientSearch.anon.readonlytypefacetreadonly = {
+    val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.algoliaClientSearch.anon.readonlytypefacetreadonly]
   }
 }

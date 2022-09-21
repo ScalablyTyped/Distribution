@@ -10,10 +10,10 @@ Get and typecast environment variables.
 | ------------------ | :-------------: |
 | Full name          | getenv |
 | Keywords           | env, environment, config, configuration, 12factor |
-| # releases         | 2 |
-| # dependents       | 65 |
-| # downloads        | 3768929 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1776620.3333333333 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/ctavan/node-getenv)

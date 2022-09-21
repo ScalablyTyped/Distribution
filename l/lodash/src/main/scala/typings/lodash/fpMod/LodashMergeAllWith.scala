@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashMergeAllWith extends StObject {
   
   def apply(customizer: MergeWithCustomizer): LodashMergeAllWith1x1 = js.native
-  def apply(customizer: MergeWithCustomizer, args: js.Array[js.Any]): js.Any = js.native
-  def apply(customizer: __, args: js.Array[js.Any]): LodashMergeAllWith1x2 = js.native
+  def apply(customizer: MergeWithCustomizer, args: js.Array[Any]): Any = js.native
+  def apply(customizer: __, args: js.Array[Any]): LodashMergeAllWith1x2 = js.native
 }

@@ -10,14 +10,14 @@ object jsonFormatMod {
   
   @JSImport("@blueprintjs/table/lib/esm/cell/formats/jsonFormat", "JSONFormat")
   @js.native
-  class JSONFormat protected ()
-    extends Component[IJSONFormatProps, js.Object, js.Any] {
+  open class JSONFormat protected ()
+    extends Component[IJSONFormatProps, js.Object, Any] {
     def this(props: IJSONFormatProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IJSONFormatProps, context: js.Any) = this()
+    def this(props: IJSONFormatProps, context: Any) = this()
   }
   /* static members */
   object JSONFormat {
@@ -42,12 +42,13 @@ object jsonFormatMod {
        with ITruncatedFormatProps {
     
     @JSName("children")
-    var children_IJSONFormatProps: js.UndefOr[js.Any] = js.undefined
+    var children_IJSONFormatProps: js.UndefOr[Any] = js.undefined
     
     /**
       * By default, we omit stringifying native JavaScript strings since
       * `JSON.stringify` awkwardly adds double-quotes to the display value.
       * This behavior can be turned off by setting this boolean to `false`.
+      *
       * @default true
       */
     var omitQuotesOnStrings: js.UndefOr[Boolean] = js.undefined
@@ -56,7 +57,7 @@ object jsonFormatMod {
       * Optionally specify the stringify method. Default is `JSON.stringify`
       * with 2-space indentation.
       */
-    var stringify: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.undefined
+    var stringify: js.UndefOr[js.Function1[/* obj */ Any, String]] = js.undefined
   }
   object IJSONFormatProps {
     
@@ -67,7 +68,7 @@ object jsonFormatMod {
     
     extension [Self <: IJSONFormatProps](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -75,9 +76,11 @@ object jsonFormatMod {
       
       inline def setOmitQuotesOnStringsUndefined: Self = StObject.set(x, "omitQuotesOnStrings", js.undefined)
       
-      inline def setStringify(value: /* obj */ js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: /* obj */ Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
       
       inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
     }
   }
+  
+  type JSONFormatProps = IJSONFormatProps
 }

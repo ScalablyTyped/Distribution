@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "ConcatStream")
 @js.native
-class ConcatStream protected ()
+open class ConcatStream protected ()
   extends typings.wonderFrp.streamConcatStreamMod.ConcatStream {
   def this(sources: js.Array[typings.wonderFrp.coreStreamMod.Stream]) = this()
 }

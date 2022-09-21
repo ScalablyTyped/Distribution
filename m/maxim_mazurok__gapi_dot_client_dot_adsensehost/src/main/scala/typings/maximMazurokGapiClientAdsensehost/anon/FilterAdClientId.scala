@@ -49,7 +49,7 @@ object FilterAdClientId {
     
     inline def setFilterAdClientId(value: String | js.Array[String]): Self = StObject.set(x, "filterAdClientId", value.asInstanceOf[js.Any])
     
-    inline def setFilterAdClientIdVarargs(value: String*): Self = StObject.set(x, "filterAdClientId", js.Array(value :_*))
+    inline def setFilterAdClientIdVarargs(value: String*): Self = StObject.set(x, "filterAdClientId", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

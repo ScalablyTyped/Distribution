@@ -8,7 +8,11 @@ trait SelectHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
+  var autoComplete: js.UndefOr[String] = js.undefined
+  
   var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
+  var autocomplete: js.UndefOr[String] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -30,6 +34,10 @@ object SelectHTMLAttributes {
   }
   
   extension [Self <: SelectHTMLAttributes[?], T](x: Self & SelectHTMLAttributes[T]) {
+    
+    inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

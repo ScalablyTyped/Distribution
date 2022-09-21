@@ -37,36 +37,36 @@ object ConditionalAccessUsers {
     
     inline def setExcludeGroupsUndefined: Self = StObject.set(x, "excludeGroups", js.undefined)
     
-    inline def setExcludeGroupsVarargs(value: String*): Self = StObject.set(x, "excludeGroups", js.Array(value :_*))
+    inline def setExcludeGroupsVarargs(value: String*): Self = StObject.set(x, "excludeGroups", js.Array(value*))
     
     inline def setExcludeRoles(value: js.Array[String]): Self = StObject.set(x, "excludeRoles", value.asInstanceOf[js.Any])
     
     inline def setExcludeRolesUndefined: Self = StObject.set(x, "excludeRoles", js.undefined)
     
-    inline def setExcludeRolesVarargs(value: String*): Self = StObject.set(x, "excludeRoles", js.Array(value :_*))
+    inline def setExcludeRolesVarargs(value: String*): Self = StObject.set(x, "excludeRoles", js.Array(value*))
     
     inline def setExcludeUsers(value: js.Array[String]): Self = StObject.set(x, "excludeUsers", value.asInstanceOf[js.Any])
     
     inline def setExcludeUsersUndefined: Self = StObject.set(x, "excludeUsers", js.undefined)
     
-    inline def setExcludeUsersVarargs(value: String*): Self = StObject.set(x, "excludeUsers", js.Array(value :_*))
+    inline def setExcludeUsersVarargs(value: String*): Self = StObject.set(x, "excludeUsers", js.Array(value*))
     
     inline def setIncludeGroups(value: js.Array[String]): Self = StObject.set(x, "includeGroups", value.asInstanceOf[js.Any])
     
     inline def setIncludeGroupsUndefined: Self = StObject.set(x, "includeGroups", js.undefined)
     
-    inline def setIncludeGroupsVarargs(value: String*): Self = StObject.set(x, "includeGroups", js.Array(value :_*))
+    inline def setIncludeGroupsVarargs(value: String*): Self = StObject.set(x, "includeGroups", js.Array(value*))
     
     inline def setIncludeRoles(value: js.Array[String]): Self = StObject.set(x, "includeRoles", value.asInstanceOf[js.Any])
     
     inline def setIncludeRolesUndefined: Self = StObject.set(x, "includeRoles", js.undefined)
     
-    inline def setIncludeRolesVarargs(value: String*): Self = StObject.set(x, "includeRoles", js.Array(value :_*))
+    inline def setIncludeRolesVarargs(value: String*): Self = StObject.set(x, "includeRoles", js.Array(value*))
     
     inline def setIncludeUsers(value: js.Array[String]): Self = StObject.set(x, "includeUsers", value.asInstanceOf[js.Any])
     
     inline def setIncludeUsersUndefined: Self = StObject.set(x, "includeUsers", js.undefined)
     
-    inline def setIncludeUsersVarargs(value: String*): Self = StObject.set(x, "includeUsers", js.Array(value :_*))
+    inline def setIncludeUsersVarargs(value: String*): Self = StObject.set(x, "includeUsers", js.Array(value*))
   }
 }

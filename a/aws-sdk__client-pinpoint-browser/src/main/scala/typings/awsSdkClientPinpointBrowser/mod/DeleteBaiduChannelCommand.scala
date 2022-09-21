@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "DeleteBaiduChannelCommand")
 @js.native
-class DeleteBaiduChannelCommand protected ()
+open class DeleteBaiduChannelCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.deleteBaiduChannelCommandMod.DeleteBaiduChannelCommand {
   def this(input: DeleteBaiduChannelInput) = this()
 }

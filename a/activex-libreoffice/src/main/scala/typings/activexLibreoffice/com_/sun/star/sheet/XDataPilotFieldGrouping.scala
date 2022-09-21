@@ -49,7 +49,7 @@ object XDataPilotFieldGrouping {
     acquire: () => Unit,
     createDateGroup: DataPilotFieldGroupInfo => XDataPilotField,
     createNameGroup: SeqEquiv[String] => XDataPilotField,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataPilotFieldGrouping = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDateGroup = js.Any.fromFunction1(createDateGroup), createNameGroup = js.Any.fromFunction1(createNameGroup), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

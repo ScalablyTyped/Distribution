@@ -11,10 +11,10 @@ object mod extends Shortcut {
   
   @JSImport("es6-set-proptypes", JSImport.Namespace)
   @js.native
-  val ^ : Requireable[Set[js.Any]] = js.native
+  val ^ : Requireable[Set[Any]] = js.native
   
-  type _To = Requireable[Set[js.Any]]
+  type _To = Requireable[Set[Any]]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Requireable[Set[js.Any]] = ^
+  override def _to: Requireable[Set[Any]] = ^
 }

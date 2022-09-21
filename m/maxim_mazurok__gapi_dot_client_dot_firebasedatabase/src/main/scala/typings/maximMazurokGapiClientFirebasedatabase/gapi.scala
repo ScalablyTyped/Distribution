@@ -7,6 +7,7 @@ import typings.maximMazurokGapiClientFirebasedatabase.anon.Callback
 import typings.maximMazurokGapiClientFirebasedatabase.anon.Fields
 import typings.maximMazurokGapiClientFirebasedatabase.anon.Key
 import typings.maximMazurokGapiClientFirebasedatabase.anon.Name
+import typings.maximMazurokGapiClientFirebasedatabase.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,22 +20,19 @@ object gapi {
       
       trait DatabaseInstance extends StObject {
         
-        /** Immutable. The globally unique hostname of the database. */
+        /** Output only. Output Only. The globally unique hostname of the database. */
         var databaseUrl: js.UndefOr[String] = js.undefined
         
-        /**
-          * The fully qualified resource name of the database instance, in the form: `projects/{project-number}/locations/{location-id}/instances/{database-id}`. Currently the only supported
-          * location is 'us-central1'.
-          */
+        /** The fully qualified resource name of the database instance, in the form: `projects/{project-number}/locations/{location-id}/instances/{database-id}`. */
         var name: js.UndefOr[String] = js.undefined
         
-        /** The resource name of the project this instance belongs to. For example: `projects/{project-number}`. */
+        /** Output only. The resource name of the project this instance belongs to. For example: `projects/{project-number}`. */
         var project: js.UndefOr[String] = js.undefined
         
-        /** The database's lifecycle state. Read-only. */
+        /** Output only. The database's lifecycle state. Read-only. */
         var state: js.UndefOr[String] = js.undefined
         
-        /** The database instance type. On creation only USER_DATABASE is allowed, which is also the default when omitted. */
+        /** Immutable. The database instance type. On creation only USER_DATABASE is allowed, which is also the default when omitted. */
         var `type`: js.UndefOr[String] = js.undefined
       }
       object DatabaseInstance {
@@ -83,8 +81,8 @@ object gapi {
         def create(request: Alt, body: DatabaseInstance): Request[DatabaseInstance] = js.native
         
         /**
-          * Marks a DatabaseInstance to be deleted. The DatabaseInstance will be purged within 30 days. The default database cannot be deleted. IDs for deleted database instances may never be
-          * recovered or re-used. The Database may only be deleted if it is already in a DISABLED state.
+          * Marks a DatabaseInstance to be deleted. The DatabaseInstance will be set to the DELETED state for 20 days, and will be purged within 30 days. The default database cannot be deleted.
+          * IDs for deleted database instances may never be recovered or re-used. The Database may only be deleted if it is already in a DISABLED state.
           */
         def delete(): Request[DatabaseInstance] = js.native
         def delete(request: Callback): Request[DatabaseInstance] = js.native
@@ -111,6 +109,14 @@ object gapi {
         def reenable(request: Callback, body: ReenableDatabaseInstanceRequest): Request[DatabaseInstance] = js.native
         /** Enables a DatabaseInstance. The database must have been disabled previously using DisableDatabaseInstance. The state of a successfully reenabled DatabaseInstance is ACTIVE. */
         def reenable(request: Name): Request[DatabaseInstance] = js.native
+        
+        def undelete(request: Callback, body: UndeleteDatabaseInstanceRequest): Request[DatabaseInstance] = js.native
+        /**
+          * Restores a DatabaseInstance that was previously marked to be deleted. After the delete method is used, DatabaseInstances are set to the DELETED state for 20 days, and will be purged
+          * within 30 days. Databases in the DELETED state can be undeleted without losing any data. This method may only be used on a DatabaseInstance in the DELETED state. Purged
+          * DatabaseInstances may not be recovered.
+          */
+        def undelete(request: Oauthtoken): Request[DatabaseInstance] = js.native
       }
       
       trait ListDatabaseInstancesResponse extends StObject {
@@ -137,7 +143,7 @@ object gapi {
           
           inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
           
-          inline def setInstancesVarargs(value: DatabaseInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+          inline def setInstancesVarargs(value: DatabaseInstance*): Self = StObject.set(x, "instances", js.Array(value*))
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -181,6 +187,9 @@ object gapi {
       
       // tslint:disable-next-line:no-empty-interface
       trait ReenableDatabaseInstanceRequest extends StObject
+      
+      // tslint:disable-next-line:no-empty-interface
+      trait UndeleteDatabaseInstanceRequest extends StObject
     }
   }
 }

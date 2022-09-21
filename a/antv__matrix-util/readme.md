@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__matrix-util
 
-Typings are for version 3.1.0-beta.2
+Typings are for version 3.0.4
 
 ## Library description:
 A common util collection for antv projects
@@ -10,10 +10,10 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/matrix-util |
 | Keywords           | util, antv, g |
-| # releases         | 30 |
-| # dependents       | 24 |
-| # downloads        | 1283879 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 691772.0 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/util#readme)

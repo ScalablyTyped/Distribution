@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NetworkConnectionsData extends StObject {
   
-  var localaddress: String
+  var localAddress: String
   
-  var localport: String
+  var localPort: String
   
-  var peeraddress: String
+  var peerAddress: String
   
-  var peerport: String
+  var peerPort: String
   
   var pid: Double
   
@@ -25,28 +25,28 @@ trait NetworkConnectionsData extends StObject {
 object NetworkConnectionsData {
   
   inline def apply(
-    localaddress: String,
-    localport: String,
-    peeraddress: String,
-    peerport: String,
+    localAddress: String,
+    localPort: String,
+    peerAddress: String,
+    peerPort: String,
     pid: Double,
     process: String,
     protocol: String,
     state: String
   ): NetworkConnectionsData = {
-    val __obj = js.Dynamic.literal(localaddress = localaddress.asInstanceOf[js.Any], localport = localport.asInstanceOf[js.Any], peeraddress = peeraddress.asInstanceOf[js.Any], peerport = peerport.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(localAddress = localAddress.asInstanceOf[js.Any], localPort = localPort.asInstanceOf[js.Any], peerAddress = peerAddress.asInstanceOf[js.Any], peerPort = peerPort.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkConnectionsData]
   }
   
   extension [Self <: NetworkConnectionsData](x: Self) {
     
-    inline def setLocaladdress(value: String): Self = StObject.set(x, "localaddress", value.asInstanceOf[js.Any])
+    inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
-    inline def setLocalport(value: String): Self = StObject.set(x, "localport", value.asInstanceOf[js.Any])
+    inline def setLocalPort(value: String): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
     
-    inline def setPeeraddress(value: String): Self = StObject.set(x, "peeraddress", value.asInstanceOf[js.Any])
+    inline def setPeerAddress(value: String): Self = StObject.set(x, "peerAddress", value.asInstanceOf[js.Any])
     
-    inline def setPeerport(value: String): Self = StObject.set(x, "peerport", value.asInstanceOf[js.Any])
+    inline def setPeerPort(value: String): Self = StObject.set(x, "peerPort", value.asInstanceOf[js.Any])
     
     inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     

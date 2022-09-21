@@ -10,10 +10,10 @@ object tabMod {
   
   @JSImport("material-ui/svg-icons/action/tab", JSImport.Default)
   @js.native
-  class default () extends ActionTab
+  open class default () extends ActionTab
   
   @JSImport("material-ui/svg-icons/action/tab", "ActionTab")
   @js.native
-  class ActionTab ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionTab ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -18,11 +18,11 @@ object attributionMod extends Shortcut {
   @JSImport("esri/widgets/Attribution", JSImport.Namespace)
   @js.native
   /**
-    * The Attribution displays attribution text for the layers in a map.
+    * The Attribution widget displays attribution text for the layers in a map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Attribution {
     def this(properties: AttributionProperties) = this()

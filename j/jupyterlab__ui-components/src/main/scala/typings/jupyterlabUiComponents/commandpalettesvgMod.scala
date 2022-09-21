@@ -13,7 +13,7 @@ object commandpalettesvgMod {
       */
     @JSImport("@jupyterlab/ui-components/lib/icon/widgets/commandpalettesvg", "CommandPaletteSvg.Renderer")
     @js.native
-    class Renderer ()
+    open class Renderer ()
       extends typings.luminoWidgets.mod.CommandPalette.Renderer
     
     @JSImport("@jupyterlab/ui-components/lib/icon/widgets/commandpalettesvg", "CommandPaletteSvg.defaultRenderer")

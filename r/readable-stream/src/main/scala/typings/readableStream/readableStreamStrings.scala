@@ -15,6 +15,10 @@ object readableStreamStrings {
   inline def data: data = "data".asInstanceOf[data]
   
   @js.native
+  sealed trait drain extends StObject
+  inline def drain: drain = "drain".asInstanceOf[drain]
+  
+  @js.native
   sealed trait end extends StObject
   inline def end: end = "end".asInstanceOf[end]
   
@@ -23,14 +27,18 @@ object readableStreamStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait pause extends StObject
-  inline def pause: pause = "pause".asInstanceOf[pause]
+  sealed trait finish extends StObject
+  inline def finish: finish = "finish".asInstanceOf[finish]
+  
+  @js.native
+  sealed trait pipe extends StObject
+  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
   sealed trait readable extends StObject
   inline def readable: readable = "readable".asInstanceOf[readable]
   
   @js.native
-  sealed trait resume extends StObject
-  inline def resume: resume = "resume".asInstanceOf[resume]
+  sealed trait unpipe extends StObject
+  inline def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
 }

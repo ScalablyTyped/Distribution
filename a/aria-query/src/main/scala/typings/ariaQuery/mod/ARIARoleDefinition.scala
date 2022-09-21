@@ -57,7 +57,7 @@ object ARIARoleDefinition {
     
     inline def setBaseConcepts(value: js.Array[ARIARoleRelation]): Self = StObject.set(x, "baseConcepts", value.asInstanceOf[js.Any])
     
-    inline def setBaseConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "baseConcepts", js.Array(value :_*))
+    inline def setBaseConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "baseConcepts", js.Array(value*))
     
     inline def setChildrenPresentational(value: Boolean): Self = StObject.set(x, "childrenPresentational", value.asInstanceOf[js.Any])
     
@@ -67,12 +67,12 @@ object ARIARoleDefinition {
     
     inline def setRelatedConcepts(value: js.Array[ARIARoleRelation]): Self = StObject.set(x, "relatedConcepts", value.asInstanceOf[js.Any])
     
-    inline def setRelatedConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "relatedConcepts", js.Array(value :_*))
+    inline def setRelatedConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "relatedConcepts", js.Array(value*))
     
     inline def setRequiredProps(value: ARIAPropertyMap): Self = StObject.set(x, "requiredProps", value.asInstanceOf[js.Any])
     
     inline def setSuperClass(value: js.Array[js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole]]): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
     
-    inline def setSuperClassVarargs(value: (js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole])*): Self = StObject.set(x, "superClass", js.Array(value :_*))
+    inline def setSuperClassVarargs(value: (js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole])*): Self = StObject.set(x, "superClass", js.Array(value*))
   }
 }

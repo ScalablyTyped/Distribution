@@ -44,7 +44,7 @@ object XDocumentIndexMark {
     dispose: () => Unit,
     getAnchor: () => XTextRange,
     getMarkEntry: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setMarkEntry: String => Unit

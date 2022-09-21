@@ -50,7 +50,7 @@ object XXMLSignatureTemplate {
     getStatus: () => SecurityOperationStatus,
     getTargets: () => SafeArray[XXMLElementWrapper],
     getTemplate: () => XXMLElementWrapper,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setBinding: XUriBinding => Unit,
     setStatus: SecurityOperationStatus => Unit,

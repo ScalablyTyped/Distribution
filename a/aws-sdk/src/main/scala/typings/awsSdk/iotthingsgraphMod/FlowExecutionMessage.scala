@@ -24,7 +24,7 @@ trait FlowExecutionMessage extends StObject {
   /**
     * The date and time when the message was last updated.
     */
-  var timestamp: js.UndefOr[Timestamp] = js.undefined
+  var timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object FlowExecutionMessage {
   
@@ -47,7 +47,7 @@ object FlowExecutionMessage {
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }

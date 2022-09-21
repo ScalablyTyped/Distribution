@@ -10,10 +10,10 @@ object intervalRequestStreamMod {
   
   @JSImport("wonder-frp/dist/commonjs/stream/IntervalRequestStream", "IntervalRequestStream")
   @js.native
-  class IntervalRequestStream protected () extends BaseStream {
+  open class IntervalRequestStream protected () extends BaseStream {
     def this(scheduler: Scheduler) = this()
     
-    /* private */ var _isEnd: js.Any = js.native
+    /* private */ var _isEnd: Any = js.native
   }
   /* static members */
   object IntervalRequestStream {

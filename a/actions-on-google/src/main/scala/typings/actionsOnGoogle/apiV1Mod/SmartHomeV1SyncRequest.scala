@@ -23,7 +23,7 @@ object SmartHomeV1SyncRequest {
     
     inline def setInputs(value: js.Array[SmartHomeV1SyncRequestInputs]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    inline def setInputsVarargs(value: SmartHomeV1SyncRequestInputs*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: SmartHomeV1SyncRequestInputs*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }

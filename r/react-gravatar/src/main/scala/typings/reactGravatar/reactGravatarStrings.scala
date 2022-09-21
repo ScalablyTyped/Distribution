@@ -45,6 +45,12 @@ object reactGravatarStrings {
   inline def monsterid: monsterid = "monsterid".asInstanceOf[monsterid]
   
   @js.native
+  sealed trait mp
+    extends StObject
+       with DefaultImage
+  inline def mp: mp = "mp".asInstanceOf[mp]
+  
+  @js.native
   sealed trait pg
     extends StObject
        with Rating

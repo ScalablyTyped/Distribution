@@ -11,6 +11,9 @@ trait RateBasedStatementManagedKeysIPSet extends StObject {
     */
   var Addresses: js.UndefOr[IPAddresses] = js.undefined
   
+  /**
+    * The version of the IP addresses, either IPV4 or IPV6. 
+    */
   var IPAddressVersion: js.UndefOr[typings.awsSdk.wafv2Mod.IPAddressVersion] = js.undefined
 }
 object RateBasedStatementManagedKeysIPSet {
@@ -26,7 +29,7 @@ object RateBasedStatementManagedKeysIPSet {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: IPAddress*): Self = StObject.set(x, "Addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: IPAddress*): Self = StObject.set(x, "Addresses", js.Array(value*))
     
     inline def setIPAddressVersion(value: IPAddressVersion): Self = StObject.set(x, "IPAddressVersion", value.asInstanceOf[js.Any])
     

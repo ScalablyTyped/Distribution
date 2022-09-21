@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("photonui.ColorPickerDialog")
 @js.native
-class ColorPickerDialog ()
+open class ColorPickerDialog ()
   extends StObject
      with typings.photonui.photonui.ColorPickerDialog {
   
@@ -17,7 +17,7 @@ class ColorPickerDialog ()
   var absolutePosition: X = js.native
   
   /* CompleteClass */
-  override def addButton(widget: typings.photonui.photonui.Widget, layoutOptions: js.Any): Unit = js.native
+  override def addButton(widget: typings.photonui.photonui.Widget, layoutOptions: Any): Unit = js.native
   
   /* CompleteClass */
   override def addClass(className: String): Unit = js.native
@@ -71,7 +71,7 @@ class ColorPickerDialog ()
   
   // readonly
   /* CompleteClass */
-  var layoutOptions: StringDictionary[js.Any] = js.native
+  var layoutOptions: StringDictionary[Any] = js.native
   
   /* CompleteClass */
   var maxHeight: Double = js.native
@@ -121,7 +121,7 @@ class ColorPickerDialog ()
   var position: X = js.native
   
   /* CompleteClass */
-  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit = js.native
+  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: Any): Unit = js.native
   
   /* CompleteClass */
   override def removeButton(widget: typings.photonui.photonui.Widget): Unit = js.native

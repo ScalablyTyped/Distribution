@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "lru-cache" : "7.14.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "lru-cache" : "7.14.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

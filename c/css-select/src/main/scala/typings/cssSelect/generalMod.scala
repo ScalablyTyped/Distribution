@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object generalMod {
   
-  @JSImport("css-select/lib/general", JSImport.Namespace)
+  @JSImport("css-select/lib/esm/general", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -18,7 +18,7 @@ object generalMod {
     next: CompiledQuery[ElementNode],
     selector: InternalSelector,
     options: InternalOptions[Node, ElementNode],
-    context: js.Array[ElementNode],
+    context: js.Array[Node],
     compileToken: CompileToken[Node, ElementNode]
   ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileGeneralSelector")(next.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], compileToken.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
   inline def compileGeneralSelector[Node, ElementNode /* <: Node */](

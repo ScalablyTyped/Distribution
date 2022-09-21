@@ -27,7 +27,7 @@ trait IJsonSchema extends StObject {
   
   var description: js.UndefOr[String] = js.undefined
   
-  var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var `enum`: js.UndefOr[js.Array[Any]] = js.undefined
   
   var exclusiveMaximum: js.UndefOr[Boolean] = js.undefined
   
@@ -104,13 +104,13 @@ object IJsonSchema {
     
     inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
     
-    inline def setAllOfVarargs(value: IJsonSchema*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+    inline def setAllOfVarargs(value: IJsonSchema*): Self = StObject.set(x, "allOf", js.Array(value*))
     
     inline def setAnyOf(value: js.Array[IJsonSchema]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
     
     inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
     
-    inline def setAnyOfVarargs(value: IJsonSchema*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+    inline def setAnyOfVarargs(value: IJsonSchema*): Self = StObject.set(x, "anyOf", js.Array(value*))
     
     inline def setDefinitions(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
@@ -124,11 +124,11 @@ object IJsonSchema {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: js.Array[Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    inline def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: Any*): Self = StObject.set(x, "enum", js.Array(value*))
     
     inline def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
     
@@ -150,7 +150,7 @@ object IJsonSchema {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: IJsonSchema*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IJsonSchema*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     
@@ -196,7 +196,7 @@ object IJsonSchema {
     
     inline def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
     
-    inline def setOneOfVarargs(value: IJsonSchema*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+    inline def setOneOfVarargs(value: IJsonSchema*): Self = StObject.set(x, "oneOf", js.Array(value*))
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
@@ -214,7 +214,7 @@ object IJsonSchema {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
@@ -224,7 +224,7 @@ object IJsonSchema {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
     
     inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
     

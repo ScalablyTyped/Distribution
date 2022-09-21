@@ -32,20 +32,20 @@ object CanvasGauges {
   @js.native
   trait Animation extends StObject {
     
-    def animate(): js.Any = js.native
-    def animate(draw: Unit, end: EndEventCallback): js.Any = js.native
-    def animate(draw: DrawEventCallback): js.Any = js.native
-    def animate(draw: DrawEventCallback, end: EndEventCallback): js.Any = js.native
+    def animate(): Any = js.native
+    def animate(draw: Unit, end: EndEventCallback): Any = js.native
+    def animate(draw: DrawEventCallback): Any = js.native
+    def animate(draw: DrawEventCallback, end: EndEventCallback): Any = js.native
     
-    def destroy(): js.Any = js.native
+    def destroy(): Any = js.native
     
-    def draw(percent: Double): js.Any = js.native
+    def draw(percent: Double): Any = js.native
     @JSName("draw")
     var draw_Original: DrawEventCallback = js.native
     
     var duration: Double = js.native
     
-    def end(): js.Any = js.native
+    def end(): Any = js.native
     @JSName("end")
     var end_Original: EndEventCallback = js.native
     
@@ -61,7 +61,7 @@ object CanvasGauges {
     
     var canvas: SmartCanvas = js.native
     
-    def destroy(): js.Any = js.native
+    def destroy(): Any = js.native
     
     def draw(): BaseGauge = js.native
     
@@ -130,21 +130,21 @@ object CanvasGauges {
     
     var mutationsObserved: Boolean = js.native
     
-    def observe(records: js.Array[MutationRecord]): js.Any = js.native
+    def observe(records: js.Array[MutationRecord]): Any = js.native
     
     var options: GenericOptions = js.native
     
     def process(node: HTMLElement): BaseGauge = js.native
     def process(node: Node): BaseGauge = js.native
     
-    def traverse(): js.Any = js.native
+    def traverse(): Any = js.native
     
     var `type`: String = js.native
   }
   
-  type DrawEventCallback = js.Function1[/* percent */ Double, js.Any]
+  type DrawEventCallback = js.Function1[/* percent */ Double, Any]
   
-  type EndEventCallback = js.Function0[js.Any]
+  type EndEventCallback = js.Function0[Any]
   
   type EventListeners = StringDictionary[js.Function | js.Array[js.Function]]
   
@@ -645,7 +645,7 @@ object CanvasGauges {
       
       inline def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
       
-      inline def setHighlightsVarargs(value: Highlight*): Self = StObject.set(x, "highlights", js.Array(value :_*))
+      inline def setHighlightsVarargs(value: Highlight*): Self = StObject.set(x, "highlights", js.Array(value*))
       
       inline def setHighlightsWidth(value: Double): Self = StObject.set(x, "highlightsWidth", value.asInstanceOf[js.Any])
       
@@ -667,7 +667,7 @@ object CanvasGauges {
       
       inline def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
       
-      inline def setMajorTicksVarargs(value: (Double | String)*): Self = StObject.set(x, "majorTicks", js.Array(value :_*))
+      inline def setMajorTicksVarargs(value: (Double | String)*): Self = StObject.set(x, "majorTicks", js.Array(value*))
       
       inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
@@ -988,7 +988,7 @@ object CanvasGauges {
     
     var contextClone: CanvasRenderingContext2D
     
-    def destroy(): js.Any
+    def destroy(): Any
     
     var drawHeight: Double
     
@@ -1004,11 +1004,11 @@ object CanvasGauges {
     
     var height: Double
     
-    def init(): js.Any
+    def init(): Any
     
     var minSide: Double
     
-    def onRedraw(): js.Any
+    def onRedraw(): Any
     
     var pixelRatio: Double
     
@@ -1022,7 +1022,7 @@ object CanvasGauges {
       commit: () => SmartCanvas,
       context: CanvasRenderingContext2D,
       contextClone: CanvasRenderingContext2D,
-      destroy: () => js.Any,
+      destroy: () => Any,
       drawHeight: Double,
       drawWidth: Double,
       drawX: Double,
@@ -1030,9 +1030,9 @@ object CanvasGauges {
       element: HTMLCanvasElement,
       elementClone: HTMLCanvasElement,
       height: Double,
-      init: () => js.Any,
+      init: () => Any,
       minSide: Double,
-      onRedraw: () => js.Any,
+      onRedraw: () => Any,
       pixelRatio: Double,
       redraw: () => SmartCanvas,
       width: Double
@@ -1049,7 +1049,7 @@ object CanvasGauges {
       
       inline def setContextClone(value: CanvasRenderingContext2D): Self = StObject.set(x, "contextClone", value.asInstanceOf[js.Any])
       
-      inline def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
       inline def setDrawHeight(value: Double): Self = StObject.set(x, "drawHeight", value.asInstanceOf[js.Any])
       
@@ -1065,11 +1065,11 @@ object CanvasGauges {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      inline def setInit(value: () => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => Any): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
       inline def setMinSide(value: Double): Self = StObject.set(x, "minSide", value.asInstanceOf[js.Any])
       
-      inline def setOnRedraw(value: () => js.Any): Self = StObject.set(x, "onRedraw", js.Any.fromFunction0(value))
+      inline def setOnRedraw(value: () => Any): Self = StObject.set(x, "onRedraw", js.Any.fromFunction0(value))
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       

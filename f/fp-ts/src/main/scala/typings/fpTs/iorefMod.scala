@@ -13,7 +13,7 @@ object iorefMod {
   
   @JSImport("fp-ts/lib/IORef", "IORef")
   @js.native
-  class IORef[A] protected () extends StObject {
+  open class IORef[A] protected () extends StObject {
     def this(value: A) = this()
     
     /**

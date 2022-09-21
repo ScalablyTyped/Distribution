@@ -6,7 +6,6 @@ import typings.react.mod.ClassicComponent
 import typings.react.mod.ClassicComponentClass
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.StatelessComponent
 import typings.reactNative.mod.ImageProperties
 import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.NativeMethods
@@ -35,9 +34,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-native-animatable", "Image")
   @js.native
-  class ImageCls protected () extends ClassicComponent[AnimatableProperties[ImageStyle] & ImageProperties, ComponentState] {
+  open class ImageCls protected () extends ClassicComponent[AnimatableProperties[ImageStyle] & ImageProperties, ComponentState] {
     def this(props: AnimatableProperties[ImageStyle] & ImageProperties) = this()
-    def this(props: AnimatableProperties[ImageStyle] & ImageProperties, context: js.Any) = this()
+    def this(props: AnimatableProperties[ImageStyle] & ImageProperties, context: Any) = this()
   }
   
   @JSImport("react-native-animatable", "Text")
@@ -48,9 +47,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-native-animatable", "Text")
   @js.native
-  class TextCls protected () extends ClassicComponent[AnimatableProperties[TextStyle] & TextProperties, ComponentState] {
+  open class TextCls protected () extends ClassicComponent[AnimatableProperties[TextStyle] & TextProperties, ComponentState] {
     def this(props: AnimatableProperties[TextStyle] & TextProperties) = this()
-    def this(props: AnimatableProperties[TextStyle] & TextProperties, context: js.Any) = this()
+    def this(props: AnimatableProperties[TextStyle] & TextProperties, context: Any) = this()
   }
   
   @JSImport("react-native-animatable", "View")
@@ -61,14 +60,16 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-native-animatable", "View")
   @js.native
-  class ViewCls protected () extends ClassicComponent[AnimatableProperties[ViewStyle] & ViewProperties, ComponentState] {
+  open class ViewCls protected () extends ClassicComponent[AnimatableProperties[ViewStyle] & ViewProperties, ComponentState] {
     def this(props: AnimatableProperties[ViewStyle] & ViewProperties) = this()
-    def this(props: AnimatableProperties[ViewStyle] & ViewProperties, context: js.Any) = this()
+    def this(props: AnimatableProperties[ViewStyle] & ViewProperties, context: Any) = this()
   }
   
+  inline def createAnimatableComponent[P /* <: Style */, S](
+    Component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StatelessComponent<P> */ Any
+  ): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
   inline def createAnimatableComponent[P /* <: Style */, S](Component: ClassicComponentClass[P]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
   inline def createAnimatableComponent[P /* <: Style */, S](Component: ComponentClass[P, ComponentState]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
-  inline def createAnimatableComponent[P /* <: Style */, S](Component: StatelessComponent[P]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
   
   inline def createAnimation(animation: CustomAnimation[TextStyle & ViewStyle & ImageStyle]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(animation.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
@@ -569,7 +570,7 @@ object mod {
       
       inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
-      inline def setTransitionVarargs(value: (/* keyof S */ String)*): Self = StObject.set(x, "transition", js.Array(value :_*))
+      inline def setTransitionVarargs(value: (/* keyof S */ String)*): Self = StObject.set(x, "transition", js.Array(value*))
       
       inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       

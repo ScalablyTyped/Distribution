@@ -16,7 +16,7 @@ trait Constraint extends StObject {
   
   def enable(): Unit
   
-  var equations: js.Array[js.Any]
+  var equations: js.Array[Any]
   
   var id: Double
   
@@ -30,7 +30,7 @@ object Constraint {
     collideConnected: Boolean,
     disable: () => Unit,
     enable: () => Unit,
-    equations: js.Array[js.Any],
+    equations: js.Array[Any],
     id: Double,
     update: () => Unit
   ): Constraint = {
@@ -50,9 +50,9 @@ object Constraint {
     
     inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    inline def setEquations(value: js.Array[js.Any]): Self = StObject.set(x, "equations", value.asInstanceOf[js.Any])
+    inline def setEquations(value: js.Array[Any]): Self = StObject.set(x, "equations", value.asInstanceOf[js.Any])
     
-    inline def setEquationsVarargs(value: js.Any*): Self = StObject.set(x, "equations", js.Array(value :_*))
+    inline def setEquationsVarargs(value: Any*): Self = StObject.set(x, "equations", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

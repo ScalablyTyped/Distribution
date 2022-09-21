@@ -5,31 +5,6 @@ import typings.semanticUiShape.SemanticUI.Shape.ClassNameSettings.Param
 import typings.semanticUiShape.SemanticUI.Shape.ErrorSettings
 import typings.semanticUiShape.SemanticUI.Shape.SelectorSettings
 import typings.semanticUiShape.SemanticUI.Shape.Translation
-import typings.semanticUiShape.anon.PartialPickImplkeyofImpl
-import typings.semanticUiShape.anon.PartialPickImplkeyofImplActive
-import typings.semanticUiShape.anon.PartialPickImplkeyofImplMethod
-import typings.semanticUiShape.anon.PartialPickImplkeyofImplSide
-import typings.semanticUiShape.anon.PickImplactive
-import typings.semanticUiShape.anon.PickImplanimating
-import typings.semanticUiShape.anon.PickImplbeforeChange
-import typings.semanticUiShape.anon.PickImplclassName
-import typings.semanticUiShape.anon.PickImpldebug
-import typings.semanticUiShape.anon.PickImplduration
-import typings.semanticUiShape.anon.PickImplerror
-import typings.semanticUiShape.anon.PickImplheight
-import typings.semanticUiShape.anon.PickImplhidden
-import typings.semanticUiShape.anon.PickImplloading
-import typings.semanticUiShape.anon.PickImplmethod
-import typings.semanticUiShape.anon.PickImplname
-import typings.semanticUiShape.anon.PickImplnamespace
-import typings.semanticUiShape.anon.PickImplonChange
-import typings.semanticUiShape.anon.PickImplperformance
-import typings.semanticUiShape.anon.PickImplselector
-import typings.semanticUiShape.anon.PickImplside
-import typings.semanticUiShape.anon.PickImplsides
-import typings.semanticUiShape.anon.PickImplsilent
-import typings.semanticUiShape.anon.PickImplverbose
-import typings.semanticUiShape.anon.PickImplwidth
 import typings.semanticUiShape.semanticUiShapeStrings.`flip back`
 import typings.semanticUiShape.semanticUiShapeStrings.`flip down`
 import typings.semanticUiShape.semanticUiShapeStrings.`flip left`
@@ -44,28 +19,14 @@ import typings.semanticUiShape.semanticUiShapeStrings.`is animating`
 import typings.semanticUiShape.semanticUiShapeStrings.`set default side`
 import typings.semanticUiShape.semanticUiShapeStrings.`set next side`
 import typings.semanticUiShape.semanticUiShapeStrings.`set stage size`
-import typings.semanticUiShape.semanticUiShapeStrings.beforeChange
-import typings.semanticUiShape.semanticUiShapeStrings.className
-import typings.semanticUiShape.semanticUiShapeStrings.debug
 import typings.semanticUiShape.semanticUiShapeStrings.destroy
-import typings.semanticUiShape.semanticUiShapeStrings.duration
-import typings.semanticUiShape.semanticUiShapeStrings.error
-import typings.semanticUiShape.semanticUiShapeStrings.height
 import typings.semanticUiShape.semanticUiShapeStrings.initial
-import typings.semanticUiShape.semanticUiShapeStrings.name
-import typings.semanticUiShape.semanticUiShapeStrings.namespace
 import typings.semanticUiShape.semanticUiShapeStrings.next
-import typings.semanticUiShape.semanticUiShapeStrings.onChange
-import typings.semanticUiShape.semanticUiShapeStrings.performance
 import typings.semanticUiShape.semanticUiShapeStrings.queue
 import typings.semanticUiShape.semanticUiShapeStrings.refresh
 import typings.semanticUiShape.semanticUiShapeStrings.repaint
 import typings.semanticUiShape.semanticUiShapeStrings.reset
-import typings.semanticUiShape.semanticUiShapeStrings.selector
 import typings.semanticUiShape.semanticUiShapeStrings.setting
-import typings.semanticUiShape.semanticUiShapeStrings.silent
-import typings.semanticUiShape.semanticUiShapeStrings.verbose
-import typings.semanticUiShape.semanticUiShapeStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -150,40 +111,14 @@ object SemanticUI {
       * Removes all inline styles
       */
     def apply(behavior: reset): JQuery = js.native
-    def apply(behavior: setting, name: beforeChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: beforeChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
-    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: height, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: height, value: Unit): next | initial | Double = js.native
-    def apply(behavior: setting, name: height, value: initial): JQuery = js.native
-    def apply(behavior: setting, name: height, value: next): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
-    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: width, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: width, value: Unit): next | initial | Double = js.native
-    def apply(behavior: setting, name: width, value: initial): JQuery = js.native
-    def apply(behavior: setting, name: width, value: next): JQuery = js.native
     def apply(behavior: setting, value: ShapeSettings): JQuery = js.native
     def apply(settings: ShapeSettings): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-shape.SemanticUI.ShapeSettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-shape.SemanticUI.ShapeSettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-shape.SemanticUI.ShapeSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-shape.SemanticUI.ShapeSettings._Impl[K] */ js.Any = js.native
     
     var settings: ShapeSettings = js.native
   }
@@ -232,7 +167,35 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplanimating | PickImplhidden | PickImplloading | PickImplactive) & PartialPickImplkeyofImplActive
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiShape.anon.PickImplanimatingPartialP
+        - typings.semanticUiShape.anon.PickImplhiddenPartialPick
+        - typings.semanticUiShape.anon.PickImplloadingPartialPic
+        - typings.semanticUiShape.anon.PickImplactivePartialPick
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplactivePartialPick = {
+          val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplactivePartialPick]
+        }
+        
+        inline def PickImplanimatingPartialP(animating: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplanimatingPartialP = {
+          val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplanimatingPartialP]
+        }
+        
+        inline def PickImplhiddenPartialPick(hidden: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplhiddenPartialPick = {
+          val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplhiddenPartialPick]
+        }
+        
+        inline def PickImplloadingPartialPic(loading: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplloadingPartialPic = {
+          val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplloadingPartialPic]
+        }
+      }
     }
     type ClassNameSettings = Param
     
@@ -265,7 +228,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplside | PickImplmethod) & PartialPickImplkeyofImplMethod
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiShape.anon.PickImplsidePartialPickImMethod
+        - typings.semanticUiShape.anon.PickImplmethodPartialPick
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplmethodPartialPick(method: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplmethodPartialPick = {
+          val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplmethodPartialPick]
+        }
+        
+        inline def PickImplsidePartialPickImMethod(side: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplsidePartialPickImMethod = {
+          val __obj = js.Dynamic.literal(side = side.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplsidePartialPickImMethod]
+        }
+      }
     }
     type ErrorSettings = typings.semanticUiShape.SemanticUI.Shape.ErrorSettings.Param
     
@@ -298,7 +277,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplsides | PickImplside) & PartialPickImplkeyofImplSide
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiShape.anon.PickImplsidesPartialPickI
+        - typings.semanticUiShape.anon.PickImplsidePartialPickIm
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplsidePartialPickIm(side: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplsidePartialPickIm = {
+          val __obj = js.Dynamic.literal(side = side.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplsidePartialPickIm]
+        }
+        
+        inline def PickImplsidesPartialPickI(sides: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplsidesPartialPickI = {
+          val __obj = js.Dynamic.literal(sides = sides.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplsidesPartialPickI]
+        }
+      }
     }
     type SelectorSettings = typings.semanticUiShape.SemanticUI.Shape.SelectorSettings.Param
     
@@ -463,7 +458,99 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplduration | PickImplwidth | PickImplheight | PickImplbeforeChange | PickImplonChange | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiShape.anon.PickImpldurationPartialPi
+      - typings.semanticUiShape.anon.PickImplwidthPartialPickI
+      - typings.semanticUiShape.anon.PickImplheightPartialPick
+      - typings.semanticUiShape.anon.PickImplbeforeChangeParti
+      - typings.semanticUiShape.anon.PickImplonChangePartialPi
+      - typings.semanticUiShape.anon.PickImplselectorPartialPi
+      - typings.semanticUiShape.anon.PickImplclassNamePartialP
+      - typings.semanticUiShape.anon.PickImplerrorPartialPickI
+      - typings.semanticUiShape.anon.PickImplnamespacePartialP
+      - typings.semanticUiShape.anon.PickImplnamePartialPickIm
+      - typings.semanticUiShape.anon.PickImplsilentPartialPick
+      - typings.semanticUiShape.anon.PickImpldebugPartialPickI
+      - typings.semanticUiShape.anon.PickImplperformancePartia
+      - typings.semanticUiShape.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplbeforeChangeParti(
+        beforeChange: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiShape.anon.PickImplbeforeChangeParti = {
+        val __obj = js.Dynamic.literal(beforeChange = beforeChange.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplbeforeChangeParti]
+      }
+      
+      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiShape.anon.PickImplclassNamePartialP = {
+        val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplclassNamePartialP]
+      }
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiShape.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImpldurationPartialPi(duration: Double & js.UndefOr[Double]): typings.semanticUiShape.anon.PickImpldurationPartialPi = {
+        val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImpldurationPartialPi]
+      }
+      
+      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiShape.anon.PickImplerrorPartialPickI = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplerrorPartialPickI]
+      }
+      
+      inline def PickImplheightPartialPick(height: (next | initial | Double) & (js.UndefOr[next | initial | Double])): typings.semanticUiShape.anon.PickImplheightPartialPick = {
+        val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplheightPartialPick]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiShape.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplonChangePartialPi(
+        onChange: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiShape.anon.PickImplonChangePartialPi = {
+        val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplonChangePartialPi]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiShape.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiShape.anon.PickImplselectorPartialPi = {
+        val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplselectorPartialPi]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiShape.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiShape.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplverbosePartialPic]
+      }
+      
+      inline def PickImplwidthPartialPickI(width: (next | initial | Double) & (js.UndefOr[next | initial | Double])): typings.semanticUiShape.anon.PickImplwidthPartialPickI = {
+        val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiShape.anon.PickImplwidthPartialPickI]
+      }
+    }
   }
   /**
     * @see {@link http://semantic-ui.com/modules/shape.html#/settings}

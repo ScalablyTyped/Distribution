@@ -126,7 +126,7 @@ object tzDatabaseMod {
   
   @JSImport("timezonecomplete/dist/lib/tz-database", "RuleInfo")
   @js.native
-  class RuleInfo protected () extends StObject {
+  open class RuleInfo protected () extends StObject {
     /**
       * Constructor
       * @param from
@@ -148,7 +148,6 @@ object tzDatabaseMod {
     def this(
       /**
       * FROM column year number.
-      * Note, can be -10000 for NaN value (e.g. for "SystemV" rules)
       */
     from: Double,
       /**
@@ -233,13 +232,20 @@ object tzDatabaseMod {
     var atType: AtType = js.native
     
     /**
-      * Returns the date that the rule takes effect. Note that the time
-      * is NOT adjusted for wall clock time or standard time, i.e. this.atType is
-      * not taken into account
-      * @throws NotApplicable if this rule is not applicable in the given year
-      * @throws timezonecomplete.InvalidTimeZoneData if this rule depends on a weekday and the weekday in question doesn't exist
+      * Returns the year-relative date that the rule takes effect. Depending on the rule this can be a UTC time, a wall clock time, or a
+      * time in standard offset (i.e. you still need to compensate for this.atType)
+      * @throws timezonecomplete.NotApplicable if this rule is not applicable in the given year
       */
     def effectiveDate(year: Double): TimeStruct = js.native
+    
+    /**
+      * Effective date in UTC in the given year, in a specific time zone
+      * @param year
+      * @param standardOffset the standard offset from UT of the time zone
+      * @param dstOffset the DST offset before the rule
+      */
+    def effectiveDateUtc(year: Double, standardOffset: Duration): TimeStruct = js.native
+    def effectiveDateUtc(year: Double, standardOffset: Duration, dstOffset: Duration): TimeStruct = js.native
     
     /**
       * Sort comparison
@@ -257,7 +263,6 @@ object tzDatabaseMod {
     
     /**
       * FROM column year number.
-      * Note, can be -10000 for NaN value (e.g. for "SystemV" rules)
       */
     var from: Double = js.native
     
@@ -301,18 +306,6 @@ object tzDatabaseMod {
       * If TO column is a year, the year number. If TO column is "only", the FROM year.
       */
     var toYear: Double = js.native
-    
-    /**
-      * Returns the transition moment in UTC in the given year
-      *
-      * @param year	The year for which to return the transition
-      * @param standardOffset	The standard offset for the timezone without DST
-      * @param prevRule	The previous rule
-      * @throws NotApplicable if this rule is not applicable in the given year
-      * @throws timezonecomplete.InvalidTimeZoneData for invalid internal structure of the database
-      */
-    def transitionTimeUtc(year: Double, standardOffset: Duration): Double = js.native
-    def transitionTimeUtc(year: Double, standardOffset: Duration, prevRule: RuleInfo): Double = js.native
     
     /**
       * TYPE column, not used so far
@@ -387,7 +380,7 @@ object tzDatabaseMod {
   
   @JSImport("timezonecomplete/dist/lib/tz-database", "Transition")
   @js.native
-  class Transition protected () extends StObject {
+  open class Transition protected () extends StObject {
     /**
       * Constructor
       * @param at
@@ -433,32 +426,67 @@ object tzDatabaseMod {
     * @throws AlreadyCreated if an instance already exists
     * @throws timezonecomplete.InvalidTimeZoneData if `data` is empty or invalid
     */
-  /* private */ class TzDatabase () extends StObject {
+  /* private */ open class TzDatabase () extends StObject {
     
     /**
       * Time zone database data
       */
-    /* private */ var _data: js.Any = js.native
+    /* private */ var _data: Any = js.native
+    
+    /**
+      * Get pre-calculated rule transitions
+      * @param ruleName
+      * @throws timezonecomplete.NotFound.Rule if rule not found
+      * @throws timezonecomplete.InvalidTimeZoneData for invalid values in the time zone database
+      */
+    /* private */ var _getRuleTransitions: Any = js.native
+    
+    /**
+      * Returns a map of ruleName->CachedRuleTransitions for all rule sets that are referenced by a zone
+      * @param zoneName
+      * @throws timezonecomplete.NotFound.Zone if zone does not exist or a linked zone does not exit
+      * @throws timezonecomplete.NotFound.Rule if rule not found
+      * @throws timezonecomplete.InvalidTimeZoneData for invalid values in the time zone database
+      */
+    /* private */ var _getRuleTransitionsForZone: Any = js.native
+    
+    /**
+      * Get pre-calculated zone transitions
+      * @param zoneName
+      * @throws timezonecomplete.NotFound.Zone if zone does not exist or a linked zone does not exit
+      * @throws timezonecomplete.InvalidTimeZoneData for invalid values in the time zone database
+      */
+    /* private */ var _getZoneTransitions: Any = js.native
     
     /**
       * Cached min/max DST values
       */
-    /* private */ var _minmax: js.Any = js.native
+    /* private */ var _minmax: Any = js.native
     
     /**
       * Performance improvement: rule info cache
       */
-    /* private */ var _ruleInfoCache: js.Any = js.native
+    /* private */ var _ruleInfoCache: Any = js.native
+    
+    /**
+      * pre-calculated transitions per ruleset
+      */
+    /* private */ var _ruleTransitionsCache: Any = js.native
     
     /**
       * Performance improvement: zone info cache
       */
-    /* private */ var _zoneInfoCache: js.Any = js.native
+    /* private */ var _zoneInfoCache: Any = js.native
     
     /**
       * Cached zone names
       */
-    /* private */ var _zoneNames: js.Any = js.native
+    /* private */ var _zoneNames: Any = js.native
+    
+    /**
+      * pre-calculated transitions per zone
+      */
+    /* private */ var _zoneTransitionsCache: Any = js.native
     
     def abbreviation(zoneName: String, utcTime: Double): String = js.native
     def abbreviation(zoneName: String, utcTime: Double, dstDependent: Boolean): String = js.native
@@ -479,9 +507,10 @@ object tzDatabaseMod {
     
     def dstOffsetForRule(ruleName: String, utcTime: Double, standardOffset: Duration): Duration = js.native
     /**
-      * Returns the DST offset (WITHOUT the standard zone offset) for the given
-      * ruleset and the given UTC timestamp
+      * DEPRECATED because DST offset depends on the zone too, not just on the ruleset
+      * Returns the DST offset (WITHOUT the standard zone offset) for the given ruleset and the given UTC timestamp
       *
+      * @deprecated
       * @param ruleName	name of ruleset
       * @param utcTime	UTC timestamp
       * @param standardOffset	Standard offset without DST for the time zone
@@ -509,8 +538,10 @@ object tzDatabaseMod {
     def getRuleInfos(ruleName: String): js.Array[RuleInfo] = js.native
     
     /**
+      * DEPRECATED because DST offset depends on the zone too, not just on the ruleset
       * Return a list of all transitions in [fromYear..toYear] sorted by effective date
       *
+      * @deprecated
       * @param ruleName	Name of the rule set
       * @param fromYear	first year to return transitions for
       * @param toYear	Last year to return transitions for
@@ -525,7 +556,7 @@ object tzDatabaseMod {
     
     /**
       * Return both zone and rule changes as total (std + dst) offsets.
-      * Adds an initial transition if there is no zone change within the range.
+      * Adds an initial transition if there is none within the range.
       *
       * @param zoneName	IANA zone name
       * @param fromYear	First year to include
@@ -548,7 +579,7 @@ object tzDatabaseMod {
     def getZoneInfo(zoneName: String, utcTime: TimeStruct): ZoneInfo = js.native
     
     /**
-      * Return the zone records for a given zone name, after
+      * Return the zone records for a given zone name sorted by UNTIL, after
       * following any links.
       *
       * @param zoneName	IANA zone name like "Pacific/Efate"
@@ -569,6 +600,7 @@ object tzDatabaseMod {
       * Returns the time zone letter for the given
       * ruleset and the given UTC timestamp
       *
+      * @deprecated
       * @param ruleName	name of ruleset
       * @param utcTime	UTC timestamp as TimeStruct or unix millis
       * @param standardOffset	Standard offset without DST for the time zone
@@ -652,7 +684,7 @@ object tzDatabaseMod {
       * and see what kind of entry it is.
       * @throws nothing
       */
-    def parseAtType(at: js.Any): AtType = js.native
+    def parseAtType(at: Any): AtType = js.native
     
     /**
       * Get the day number from an ON column string, 0 if no day.
@@ -771,8 +803,8 @@ object tzDatabaseMod {
       */
     @JSImport("timezonecomplete/dist/lib/tz-database", "TzDatabase._instance")
     @js.native
-    def _instance: js.Any = js.native
-    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    def _instance: Any = js.native
+    inline def _instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /**
       * (re-) initialize timezonecomplete with time zone data
@@ -782,8 +814,8 @@ object tzDatabaseMod {
       * @throws timezonecomplete.InvalidTimeZoneData if `data` or the global time zone data is invalid
       */
     inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-    inline def init(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def init(data: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(data: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(data: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Single instance of this database
@@ -794,7 +826,7 @@ object tzDatabaseMod {
   
   @JSImport("timezonecomplete/dist/lib/tz-database", "ZoneInfo")
   @js.native
-  class ZoneInfo protected () extends StObject {
+  open class ZoneInfo protected () extends StObject {
     /**
       * Constructor
       * @param gmtoff

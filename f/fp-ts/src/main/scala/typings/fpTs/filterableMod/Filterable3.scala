@@ -1,18 +1,18 @@
 package typings.fpTs.filterableMod
 
 import typings.fpTs.compactableMod.Compactable3
-import typings.fpTs.compactableMod.Separated
 import typings.fpTs.eitherMod.Either_
-import typings.fpTs.functionMod.Predicate
-import typings.fpTs.functionMod.Refinement
 import typings.fpTs.functorMod.Functor3
 import typings.fpTs.optionMod.Option_
+import typings.fpTs.predicateMod.Predicate
+import typings.fpTs.refinementMod.Refinement
+import typings.fpTs.separatedMod.Separated_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filterable3[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */]
+trait Filterable3[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */]
   extends StObject
      with Functor3[F]
      with Compactable3[F] {
@@ -21,43 +21,43 @@ trait Filterable3[F /* <: /* import warning: transforms.QualifyReferences#resolv
   override val URI: F = js.native
   
   def filter[R, E, A](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
     predicate: Predicate[A]
-  ): js.Any = js.native
+  ): Any = js.native
   
   def filterMap[R, E, A, B](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
     f: js.Function1[/* a */ A, Option_[B]]
-  ): js.Any = js.native
+  ): Any = js.native
   
   @JSName("filter")
   def filter_REAB_A[R, E, A, B /* <: A */](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
     refinement: Refinement[A, B]
-  ): js.Any = js.native
+  ): Any = js.native
   
   def partition[R, E, A](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
     predicate: Predicate[A]
-  ): Separated[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any
+  ): Separated_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
   ] = js.native
   
   def partitionMap[R, E, A, B, C](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
     f: js.Function1[/* a */ A, Either_[B, C]]
-  ): Separated[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, C> */ js.Any
+  ): Separated_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, C> */ Any
   ] = js.native
   
   @JSName("partition")
   def partition_REAB_A[R, E, A, B /* <: A */](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
     refinement: Refinement[A, B]
-  ): Separated[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
+  ): Separated_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ Any
   ] = js.native
 }

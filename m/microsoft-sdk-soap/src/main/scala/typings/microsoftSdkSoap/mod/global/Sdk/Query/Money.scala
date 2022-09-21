@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.Query.Money")
 @js.native
-class Money protected () extends ValueBase {
+open class Money protected () extends ValueBase {
   def this(args: js.Array[Double]) = this()
   
   /**

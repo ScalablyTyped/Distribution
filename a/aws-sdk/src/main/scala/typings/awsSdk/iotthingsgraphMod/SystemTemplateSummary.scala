@@ -14,7 +14,7 @@ trait SystemTemplateSummary extends StObject {
   /**
     * The date when the system was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the system.
@@ -39,7 +39,7 @@ object SystemTemplateSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

@@ -10,7 +10,7 @@ object lerpBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/lerpBlock", "LerpBlock")
   @js.native
-  class LerpBlock protected () extends NodeMaterialBlock {
+  open class LerpBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new LerpBlock
       * @param name defines the block name

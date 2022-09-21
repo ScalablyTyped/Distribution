@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-error-constructor
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a value is an error constructor
@@ -10,10 +10,10 @@ Check if a value is an error constructor
 | ------------------ | :-------------: |
 | Full name          | is-error-constructor |
 | Keywords           | is, error, constructor, ctor, check, detect, instanceof |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 10458 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3129.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-error-constructor#readme)

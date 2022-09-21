@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLRect")
 @js.native
-/* private */ class IHTMLRect ()
+/* private */ open class IHTMLRect ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLRect {
   

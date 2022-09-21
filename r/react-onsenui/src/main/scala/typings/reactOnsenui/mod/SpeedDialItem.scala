@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "SpeedDialItem")
 @js.native
-class SpeedDialItem protected ()
-  extends Component[`1`, js.Any] {
+open class SpeedDialItem protected () extends Component[`1`, Any] {
   def this(props: HTMLAttributesidclassName & `1`) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & `1`, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & `1`, context: Any) = this()
 }

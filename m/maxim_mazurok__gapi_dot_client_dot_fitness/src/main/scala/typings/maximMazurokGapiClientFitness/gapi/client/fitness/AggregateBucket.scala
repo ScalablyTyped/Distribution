@@ -41,7 +41,7 @@ object AggregateBucket {
     
     inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    inline def setDatasetVarargs(value: Dataset*): Self = StObject.set(x, "dataset", js.Array(value :_*))
+    inline def setDatasetVarargs(value: Dataset*): Self = StObject.set(x, "dataset", js.Array(value*))
     
     inline def setEndTimeMillis(value: String): Self = StObject.set(x, "endTimeMillis", value.asInstanceOf[js.Any])
     

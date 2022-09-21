@@ -10,7 +10,7 @@ trait IgUploadLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Get or set error message when AJAX Request to get file size throws error.

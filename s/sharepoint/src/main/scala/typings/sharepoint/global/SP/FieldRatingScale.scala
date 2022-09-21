@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FieldRatingScale")
 @js.native
-class FieldRatingScale ()
+open class FieldRatingScale ()
   extends StObject
      with typings.sharepoint.SP.FieldRatingScale

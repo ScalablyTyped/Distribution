@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__checkbox
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web checkbox component
@@ -10,10 +10,10 @@ The Material Components for the web checkbox component
 | ------------------ | :-------------: |
 | Full name          | @material/checkbox |
 | Keywords           | material components, material design, checkbox |
-| # releases         | 619 |
-| # dependents       | 76 |
-| # downloads        | 2371928 |
-| # stars            | 0 |
+| # releases         | 714 |
+| # dependents       | 0.0 |
+| # downloads        | 279672.6666666667 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

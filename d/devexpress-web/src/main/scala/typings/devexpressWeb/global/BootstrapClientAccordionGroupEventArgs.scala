@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientAccordionGroupEventArgs")
 @js.native
-class BootstrapClientAccordionGroupEventArgs protected ()
+open class BootstrapClientAccordionGroupEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientAccordionGroupEventArgs {
   /**

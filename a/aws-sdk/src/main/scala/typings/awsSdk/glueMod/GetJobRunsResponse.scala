@@ -29,7 +29,7 @@ object GetJobRunsResponse {
     
     inline def setJobRunsUndefined: Self = StObject.set(x, "JobRuns", js.undefined)
     
-    inline def setJobRunsVarargs(value: JobRun*): Self = StObject.set(x, "JobRuns", js.Array(value :_*))
+    inline def setJobRunsVarargs(value: JobRun*): Self = StObject.set(x, "JobRuns", js.Array(value*))
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

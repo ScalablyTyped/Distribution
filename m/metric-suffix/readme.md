@@ -10,10 +10,10 @@ Display big numbers in short using metric suffixes like kilo (k), Mega(M).
 | ------------------ | :-------------: |
 | Full name          | metric-suffix |
 | Keywords           | metric, suffix, kilo, mega, giga, teta, peta, short |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2724 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 396.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/mstdokumaci/metric-suffix.js)

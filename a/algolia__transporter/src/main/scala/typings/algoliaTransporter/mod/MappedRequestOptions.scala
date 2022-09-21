@@ -25,7 +25,7 @@ trait MappedRequestOptions extends StObject {
   /**
     * The query parameters of the request.
     */
-  val queryParameters: Record[String, js.Any]
+  val queryParameters: Record[String, Any]
   
   /**
     * The `read` or `write` timeout of the request.
@@ -34,7 +34,7 @@ trait MappedRequestOptions extends StObject {
 }
 object MappedRequestOptions {
   
-  inline def apply(headers: Record[String, String], queryParameters: Record[String, js.Any]): MappedRequestOptions = {
+  inline def apply(headers: Record[String, String], queryParameters: Record[String, Any]): MappedRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], queryParameters = queryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappedRequestOptions]
   }
@@ -51,7 +51,7 @@ object MappedRequestOptions {
     
     inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setQueryParameters(value: Record[String, js.Any]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: Record[String, Any]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

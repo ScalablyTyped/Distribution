@@ -10,10 +10,10 @@ Promise-based queue
 | ------------------ | :-------------: |
 | Full name          | promise-queue |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 168 |
-| # downloads        | 24143298 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3694728.3333333335 |
+| # stars            | 222.0 |
 
 ## Links
 - [Homepage](https://github.com/azproduction/promise-queue#readme)

@@ -38,7 +38,7 @@ trait GoogleActionsV2OrdersOrderUpdate extends StObject {
     * Extra data based on a custom order state or in addition to info of a
     * standard state.
     */
-  var infoExtension: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var infoExtension: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Map of line item-level changes, keyed by item id. Optional.
@@ -117,7 +117,7 @@ object GoogleActionsV2OrdersOrderUpdate {
     
     inline def setInTransitInfoUndefined: Self = StObject.set(x, "inTransitInfo", js.undefined)
     
-    inline def setInfoExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "infoExtension", value.asInstanceOf[js.Any])
+    inline def setInfoExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "infoExtension", value.asInstanceOf[js.Any])
     
     inline def setInfoExtensionUndefined: Self = StObject.set(x, "infoExtension", js.undefined)
     
@@ -129,7 +129,7 @@ object GoogleActionsV2OrdersOrderUpdate {
     
     inline def setOrderManagementActionsUndefined: Self = StObject.set(x, "orderManagementActions", js.undefined)
     
-    inline def setOrderManagementActionsVarargs(value: GoogleActionsV2OrdersOrderUpdateAction*): Self = StObject.set(x, "orderManagementActions", js.Array(value :_*))
+    inline def setOrderManagementActionsVarargs(value: GoogleActionsV2OrdersOrderUpdateAction*): Self = StObject.set(x, "orderManagementActions", js.Array(value*))
     
     inline def setOrderState(value: GoogleActionsV2OrdersOrderState): Self = StObject.set(x, "orderState", value.asInstanceOf[js.Any])
     

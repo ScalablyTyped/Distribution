@@ -29,7 +29,7 @@ object Icons {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setIconsVarargs(value: String*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: String*): Self = StObject.set(x, "icons", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -37,7 +37,7 @@ object Icons {
     
     inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

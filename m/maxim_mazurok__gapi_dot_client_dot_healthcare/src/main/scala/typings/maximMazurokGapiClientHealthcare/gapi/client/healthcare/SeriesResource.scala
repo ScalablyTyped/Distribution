@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientHealthcare.anon.Accesstoken
+import typings.maximMazurokGapiClientHealthcare.anon.DicomWebPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +11,12 @@ trait SeriesResource extends StObject {
   
   /**
     * DeleteSeries deletes all instances within the given study and series. Delete requests are equivalent to the GET requests specified in the Retrieve transaction. The method returns an
-    * Operation which will be marked successful when the deletion is complete. Warning: Inserting instances into a series while a delete operation is running for that series could result
-    * in the new instances not appearing in search results until the deletion operation finishes. For samples that show how to call DeleteSeries, see [Deleting a study, series, or
+    * Operation which will be marked successful when the deletion is complete. Warning: Instances cannot be inserted into a series that is being deleted by an operation until the
+    * operation completes. For samples that show how to call DeleteSeries, see [Deleting a study, series, or
     * instance](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#deleting_a_study_series_or_instance).
     */
   def delete(): Request[Operation] = js.native
-  def delete(request: Accesstoken): Request[Operation] = js.native
+  def delete(request: DicomWebPath): Request[Operation] = js.native
   
   var instances: InstancesResource = js.native
   
@@ -27,7 +27,7 @@ trait SeriesResource extends StObject {
     * RetrieveSeriesMetadata, see [Retrieving metadata](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#retrieving_metadata).
     */
   def retrieveMetadata(): Request[HttpBody] = js.native
-  def retrieveMetadata(request: Accesstoken): Request[HttpBody] = js.native
+  def retrieveMetadata(request: DicomWebPath): Request[HttpBody] = js.native
   
   /**
     * RetrieveSeries returns all instances within the given study and series. See [RetrieveTransaction] (http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4).
@@ -36,7 +36,7 @@ trait SeriesResource extends StObject {
     * data](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#retrieving_dicom_data).
     */
   def retrieveSeries(): Request[HttpBody] = js.native
-  def retrieveSeries(request: Accesstoken): Request[HttpBody] = js.native
+  def retrieveSeries(request: DicomWebPath): Request[HttpBody] = js.native
   
   /**
     * SearchForInstances returns a list of matching instances. See [Search Transaction] (http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6). For details on the
@@ -45,5 +45,5 @@ trait SeriesResource extends StObject {
     * frames](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#searching_for_studies_series_instances_and_frames).
     */
   def searchForInstances(): Request[HttpBody] = js.native
-  def searchForInstances(request: Accesstoken): Request[HttpBody] = js.native
+  def searchForInstances(request: DicomWebPath): Request[HttpBody] = js.native
 }

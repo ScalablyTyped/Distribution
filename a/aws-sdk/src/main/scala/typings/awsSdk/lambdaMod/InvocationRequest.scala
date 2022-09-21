@@ -22,12 +22,12 @@ trait InvocationRequest extends StObject {
   var InvocationType: js.UndefOr[typings.awsSdk.lambdaMod.InvocationType] = js.undefined
   
   /**
-    * Set to Tail to include the execution log in the response.
+    * Set to Tail to include the execution log in the response. Applies to synchronously invoked functions only.
     */
   var LogType: js.UndefOr[typings.awsSdk.lambdaMod.LogType] = js.undefined
   
   /**
-    * The JSON that you want to provide to your Lambda function as input.
+    * The JSON that you want to provide to your Lambda function as input. You can enter the JSON directly. For example, --payload '{ "key": "value" }'. You can also specify a file path. For example, --payload file://payload.json. 
     */
   var Payload: js.UndefOr[_Blob] = js.undefined
   

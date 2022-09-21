@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait GetId[M /* <: Model[Instantiable0[AnyModel], js.Any] */] extends StObject {
+  trait GetId[M /* <: Model[Instantiable0[AnyModel], Any] */] extends StObject {
     
     def getId(): IdType[M]
   }
   object GetId {
     
-    inline def apply[M /* <: Model[Instantiable0[AnyModel], js.Any] */](getId: () => IdType[M]): GetId[M] = {
+    inline def apply[M /* <: Model[Instantiable0[AnyModel], Any] */](getId: () => IdType[M]): GetId[M] = {
       val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId))
       __obj.asInstanceOf[GetId[M]]
     }
     
-    extension [Self <: GetId[?], M /* <: Model[Instantiable0[AnyModel], js.Any] */](x: Self & GetId[M]) {
+    extension [Self <: GetId[?], M /* <: Model[Instantiable0[AnyModel], Any] */](x: Self & GetId[M]) {
       
       inline def setGetId(value: () => IdType[M]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     }

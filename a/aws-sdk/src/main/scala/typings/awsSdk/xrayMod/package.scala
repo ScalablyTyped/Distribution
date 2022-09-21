@@ -1,25 +1,27 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.FAULT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AliasList = js.Array[typings.awsSdk.xrayMod.Alias]
+type AliasList = js.Array[Alias]
 
-type AliasNames = js.Array[typings.awsSdk.xrayMod.String]
+type AliasNames = js.Array[String]
 
 type AmazonResourceName = java.lang.String
 
 type AnnotationKey = java.lang.String
 
-type Annotations = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.xrayMod.ValuesWithServiceIds]
+type Annotations = StringDictionary[ValuesWithServiceIds]
 
-type AnomalousServiceList = js.Array[typings.awsSdk.xrayMod.AnomalousService]
+type AnomalousServiceList = js.Array[AnomalousService]
 
 type AttributeKey = java.lang.String
 
-type AttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.xrayMod.AttributeValue]
+type AttributeMap = StringDictionary[AttributeValue]
 
 type AttributeValue = java.lang.String
 
@@ -33,7 +35,7 @@ type Double = scala.Double
 
 type EC2InstanceId = java.lang.String
 
-type EdgeList = js.Array[typings.awsSdk.xrayMod.Edge]
+type EdgeList = js.Array[Edge]
 
 type EncryptionKeyId = java.lang.String
 
@@ -42,30 +44,30 @@ type EncryptionKeyId = java.lang.String
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - java.lang.String
 */
-type EncryptionStatus = typings.awsSdk.xrayMod._EncryptionStatus | java.lang.String
+type EncryptionStatus = _EncryptionStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.KMS
   - java.lang.String
 */
-type EncryptionType = typings.awsSdk.xrayMod._EncryptionType | java.lang.String
+type EncryptionType = _EncryptionType | java.lang.String
 
 type EntitySelectorExpression = java.lang.String
 
-type ErrorRootCauseEntityPath = js.Array[typings.awsSdk.xrayMod.ErrorRootCauseEntity]
+type ErrorRootCauseEntityPath = js.Array[ErrorRootCauseEntity]
 
-type ErrorRootCauseServices = js.Array[typings.awsSdk.xrayMod.ErrorRootCauseService]
+type ErrorRootCauseServices = js.Array[ErrorRootCauseService]
 
-type ErrorRootCauses = js.Array[typings.awsSdk.xrayMod.ErrorRootCause]
+type ErrorRootCauses = js.Array[ErrorRootCause]
 
 type EventSummaryText = java.lang.String
 
-type FaultRootCauseEntityPath = js.Array[typings.awsSdk.xrayMod.FaultRootCauseEntity]
+type FaultRootCauseEntityPath = js.Array[FaultRootCauseEntity]
 
-type FaultRootCauseServices = js.Array[typings.awsSdk.xrayMod.FaultRootCauseService]
+type FaultRootCauseServices = js.Array[FaultRootCauseService]
 
-type FaultRootCauses = js.Array[typings.awsSdk.xrayMod.FaultRootCause]
+type FaultRootCauses = js.Array[FaultRootCause]
 
 type FilterExpression = java.lang.String
 
@@ -81,38 +83,38 @@ type GroupARN = java.lang.String
 
 type GroupName = java.lang.String
 
-type GroupSummaryList = js.Array[typings.awsSdk.xrayMod.GroupSummary]
+type GroupSummaryList = js.Array[GroupSummary]
 
 type HTTPMethod = java.lang.String
 
-type Histogram = js.Array[typings.awsSdk.xrayMod.HistogramEntry]
+type Histogram = js.Array[HistogramEntry]
 
 type Host = java.lang.String
 
 type Hostname = java.lang.String
 
-type InsightCategory = typings.awsSdk.awsSdkStrings.FAULT | java.lang.String
+type InsightCategory = FAULT | java.lang.String
 
-type InsightCategoryList = js.Array[typings.awsSdk.xrayMod.InsightCategory]
+type InsightCategoryList = js.Array[InsightCategory]
 
-type InsightEventList = js.Array[typings.awsSdk.xrayMod.InsightEvent]
+type InsightEventList = js.Array[InsightEvent]
 
 type InsightId = java.lang.String
 
-type InsightImpactGraphEdgeList = js.Array[typings.awsSdk.xrayMod.InsightImpactGraphEdge]
+type InsightImpactGraphEdgeList = js.Array[InsightImpactGraphEdge]
 
-type InsightImpactGraphServiceList = js.Array[typings.awsSdk.xrayMod.InsightImpactGraphService]
+type InsightImpactGraphServiceList = js.Array[InsightImpactGraphService]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.CLOSED
   - java.lang.String
 */
-type InsightState = typings.awsSdk.xrayMod._InsightState | java.lang.String
+type InsightState = _InsightState | java.lang.String
 
-type InsightStateList = js.Array[typings.awsSdk.xrayMod.InsightState]
+type InsightStateList = js.Array[InsightState]
 
-type InsightSummaryList = js.Array[typings.awsSdk.xrayMod.InsightSummary]
+type InsightSummaryList = js.Array[InsightSummary]
 
 type InsightSummaryText = java.lang.String
 
@@ -134,46 +136,46 @@ type ReservoirSize = scala.Double
 
 type ResourceARN = java.lang.String
 
-type ResponseTimeRootCauseEntityPath = js.Array[typings.awsSdk.xrayMod.ResponseTimeRootCauseEntity]
+type ResponseTimeRootCauseEntityPath = js.Array[ResponseTimeRootCauseEntity]
 
-type ResponseTimeRootCauseServices = js.Array[typings.awsSdk.xrayMod.ResponseTimeRootCauseService]
+type ResponseTimeRootCauseServices = js.Array[ResponseTimeRootCauseService]
 
-type ResponseTimeRootCauses = js.Array[typings.awsSdk.xrayMod.ResponseTimeRootCause]
+type ResponseTimeRootCauses = js.Array[ResponseTimeRootCause]
 
-type RootCauseExceptions = js.Array[typings.awsSdk.xrayMod.RootCauseException]
+type RootCauseExceptions = js.Array[RootCauseException]
 
 type RuleName = java.lang.String
 
 type SampledCount = scala.Double
 
-type SamplingRuleRecordList = js.Array[typings.awsSdk.xrayMod.SamplingRuleRecord]
+type SamplingRuleRecordList = js.Array[SamplingRuleRecord]
 
-type SamplingStatisticSummaryList = js.Array[typings.awsSdk.xrayMod.SamplingStatisticSummary]
+type SamplingStatisticSummaryList = js.Array[SamplingStatisticSummary]
 
-type SamplingStatisticsDocumentList = js.Array[typings.awsSdk.xrayMod.SamplingStatisticsDocument]
+type SamplingStatisticsDocumentList = js.Array[SamplingStatisticsDocument]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PartialScan
   - typings.awsSdk.awsSdkStrings.FixedRate
   - java.lang.String
 */
-type SamplingStrategyName = typings.awsSdk.xrayMod._SamplingStrategyName | java.lang.String
+type SamplingStrategyName = _SamplingStrategyName | java.lang.String
 
-type SamplingTargetDocumentList = js.Array[typings.awsSdk.xrayMod.SamplingTargetDocument]
+type SamplingTargetDocumentList = js.Array[SamplingTargetDocument]
 
 type SegmentDocument = java.lang.String
 
 type SegmentId = java.lang.String
 
-type SegmentList = js.Array[typings.awsSdk.xrayMod.Segment]
+type SegmentList = js.Array[Segment]
 
-type ServiceIds = js.Array[typings.awsSdk.xrayMod.ServiceId]
+type ServiceIds = js.Array[ServiceId]
 
-type ServiceList = js.Array[typings.awsSdk.xrayMod.Service]
+type ServiceList = js.Array[Service]
 
 type ServiceName = java.lang.String
 
-type ServiceNames = js.Array[typings.awsSdk.xrayMod.String]
+type ServiceNames = js.Array[String]
 
 type ServiceType = java.lang.String
 
@@ -181,56 +183,56 @@ type String = java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.xrayMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.xrayMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type TelemetryRecordList = js.Array[typings.awsSdk.xrayMod.TelemetryRecord]
+type TelemetryRecordList = js.Array[TelemetryRecord]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TraceId
   - typings.awsSdk.awsSdkStrings.Event_
   - java.lang.String
 */
-type TimeRangeType = typings.awsSdk.xrayMod._TimeRangeType | java.lang.String
+type TimeRangeType = _TimeRangeType | java.lang.String
 
-type TimeSeriesServiceStatisticsList = js.Array[typings.awsSdk.xrayMod.TimeSeriesServiceStatistics]
+type TimeSeriesServiceStatisticsList = js.Array[TimeSeriesServiceStatistics]
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 type Token = java.lang.String
 
-type TraceAvailabilityZones = js.Array[typings.awsSdk.xrayMod.AvailabilityZoneDetail]
+type TraceAvailabilityZones = js.Array[AvailabilityZoneDetail]
 
 type TraceId = java.lang.String
 
-type TraceIdList = js.Array[typings.awsSdk.xrayMod.TraceId]
+type TraceIdList = js.Array[TraceId]
 
-type TraceInstanceIds = js.Array[typings.awsSdk.xrayMod.InstanceIdDetail]
+type TraceInstanceIds = js.Array[InstanceIdDetail]
 
-type TraceList = js.Array[typings.awsSdk.xrayMod.Trace]
+type TraceList = js.Array[Trace]
 
-type TraceResourceARNs = js.Array[typings.awsSdk.xrayMod.ResourceARNDetail]
+type TraceResourceARNs = js.Array[ResourceARNDetail]
 
 type TraceSegmentDocument = java.lang.String
 
-type TraceSegmentDocumentList = js.Array[typings.awsSdk.xrayMod.TraceSegmentDocument]
+type TraceSegmentDocumentList = js.Array[TraceSegmentDocument]
 
-type TraceSummaryList = js.Array[typings.awsSdk.xrayMod.TraceSummary]
+type TraceSummaryList = js.Array[TraceSummary]
 
-type TraceUsers = js.Array[typings.awsSdk.xrayMod.TraceUser]
+type TraceUsers = js.Array[TraceUser]
 
 type URLPath = java.lang.String
 
-type UnprocessedStatisticsList = js.Array[typings.awsSdk.xrayMod.UnprocessedStatistics]
+type UnprocessedStatisticsList = js.Array[UnprocessedStatistics]
 
-type UnprocessedTraceIdList = js.Array[typings.awsSdk.xrayMod.TraceId]
+type UnprocessedTraceIdList = js.Array[TraceId]
 
-type UnprocessedTraceSegmentList = js.Array[typings.awsSdk.xrayMod.UnprocessedTraceSegment]
+type UnprocessedTraceSegmentList = js.Array[UnprocessedTraceSegment]
 
-type ValuesWithServiceIds = js.Array[typings.awsSdk.xrayMod.ValueWithServiceIds]
+type ValuesWithServiceIds = js.Array[ValueWithServiceIds]
 
 type Version = scala.Double
 
@@ -239,4 +241,4 @@ type Version = scala.Double
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.xrayMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

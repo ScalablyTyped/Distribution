@@ -28,7 +28,7 @@ object ListLogsResponse {
     
     inline def setLogNamesUndefined: Self = StObject.set(x, "logNames", js.undefined)
     
-    inline def setLogNamesVarargs(value: String*): Self = StObject.set(x, "logNames", js.Array(value :_*))
+    inline def setLogNamesVarargs(value: String*): Self = StObject.set(x, "logNames", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.ionicCliFramework
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,25 +12,23 @@ object stringMod {
   
   @JSImport("@ionic/cli-framework/utils/string", "EMAIL_REGEX")
   @js.native
-  val EMAIL_REGEX: RegExp = js.native
+  val EMAIL_REGEX: js.RegExp = js.native
   
   @JSImport("@ionic/cli-framework/utils/string", "URL_REGEX")
   @js.native
-  val URL_REGEX: RegExp = js.native
-  
-  inline def enforceLF(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceLF")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  val URL_REGEX: js.RegExp = js.native
   
   inline def isValidEmail(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidEmail")().asInstanceOf[Boolean]
-  inline def isValidEmail(email: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidEmail(email: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isValidURL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")().asInstanceOf[Boolean]
-  inline def isValidURL(url: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidURL(url: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def slugify(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def slugify(input: String, hasSeparator: SlugifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any], hasSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def str2num(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def str2num(value: js.Any, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def str2num(value: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def str2num(value: Any, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def strcmp(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")().asInstanceOf[Double]
   inline def strcmp(a: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any]).asInstanceOf[Double]

@@ -11,9 +11,9 @@ lock asynchronous resources.
 | Full name          | lock |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 41 |
-| # downloads        | 12404720 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2089063.6666666667 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/lock)

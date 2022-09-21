@@ -23,5 +23,5 @@ trait CommonCellMethods
     *
     * @param f Data type to get. This can be one of: 'display', 'filter', 'sort', 'type'
     */
-  def render(t: String): js.Any = js.native
+  def render(t: String): Any = js.native
 }

@@ -10,10 +10,10 @@ Rails like credentials store for database passwords, API keys, etc. encrypted in
 | ------------------ | :-------------: |
 | Full name          | schluessel |
 | Keywords           | schluessel, credentials, secret, secrets, password, key, vault, encrypted, rails |
-| # releases         | 12 |
-| # dependents       | 0 |
-| # downloads        | 1291 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 331.6666666666667 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/Pik-9/schluessel#readme)

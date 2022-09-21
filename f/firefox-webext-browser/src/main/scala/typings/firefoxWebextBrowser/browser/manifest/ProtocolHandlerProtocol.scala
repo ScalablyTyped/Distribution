@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bitcoin
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dat
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ftp
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.im
@@ -17,6 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ircs
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.matrix
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.news
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nntp
@@ -40,6 +42,8 @@ object ProtocolHandlerProtocol {
   
   inline def dweb: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb = "dweb".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb]
   
+  inline def ftp: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ftp = "ftp".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ftp]
+  
   inline def geo: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo = "geo".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo]
   
   inline def gopher: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher = "gopher".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher]
@@ -57,6 +61,8 @@ object ProtocolHandlerProtocol {
   inline def magnet: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet = "magnet".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet]
   
   inline def mailto: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto = "mailto".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto]
+  
+  inline def matrix: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.matrix = "matrix".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.matrix]
   
   inline def mms: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms = "mms".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms]
   

@@ -9,7 +9,7 @@ trait ActiveWorksheetChangedEventUIParam extends StObject {
   /**
     * Gets the current active [worksheet](ig.excel.Worksheet).
     */
-  var newActiveWorksheet: js.UndefOr[js.Any] = js.undefined
+  var newActiveWorksheet: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the name of the new active worksheet or null if newActiveWorksheet is null.
@@ -19,7 +19,7 @@ trait ActiveWorksheetChangedEventUIParam extends StObject {
   /**
     * Gets the previous active [worksheet](ig.excel.Worksheet).
     */
-  var oldActiveWorksheet: js.UndefOr[js.Any] = js.undefined
+  var oldActiveWorksheet: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the name of the previous active worksheet or null if oldActiveWorksheet is null.
@@ -29,7 +29,7 @@ trait ActiveWorksheetChangedEventUIParam extends StObject {
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ActiveWorksheetChangedEventUIParam {
   
@@ -40,7 +40,7 @@ object ActiveWorksheetChangedEventUIParam {
   
   extension [Self <: ActiveWorksheetChangedEventUIParam](x: Self) {
     
-    inline def setNewActiveWorksheet(value: js.Any): Self = StObject.set(x, "newActiveWorksheet", value.asInstanceOf[js.Any])
+    inline def setNewActiveWorksheet(value: Any): Self = StObject.set(x, "newActiveWorksheet", value.asInstanceOf[js.Any])
     
     inline def setNewActiveWorksheetName(value: String): Self = StObject.set(x, "newActiveWorksheetName", value.asInstanceOf[js.Any])
     
@@ -48,7 +48,7 @@ object ActiveWorksheetChangedEventUIParam {
     
     inline def setNewActiveWorksheetUndefined: Self = StObject.set(x, "newActiveWorksheet", js.undefined)
     
-    inline def setOldActiveWorksheet(value: js.Any): Self = StObject.set(x, "oldActiveWorksheet", value.asInstanceOf[js.Any])
+    inline def setOldActiveWorksheet(value: Any): Self = StObject.set(x, "oldActiveWorksheet", value.asInstanceOf[js.Any])
     
     inline def setOldActiveWorksheetName(value: String): Self = StObject.set(x, "oldActiveWorksheetName", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object ActiveWorksheetChangedEventUIParam {
     
     inline def setOldActiveWorksheetUndefined: Self = StObject.set(x, "oldActiveWorksheet", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

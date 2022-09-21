@@ -1,9 +1,5 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceProjectsLocationsJobsWorkitemsLease
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Identifies the workflow job this worker belongs to.
     */
   var jobId: js.UndefOr[String] = js.undefined
   
   /**
-    * The [regional endpoint]
-    * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-    * contains the WorkItem's job.
+    * The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the WorkItem's job.
     */
   var location: js.UndefOr[String] = js.undefined
   
@@ -47,10 +36,6 @@ object ParamsResourceProjectsLocationsJobsWorkitemsLease {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsJobsWorkitemsLease](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

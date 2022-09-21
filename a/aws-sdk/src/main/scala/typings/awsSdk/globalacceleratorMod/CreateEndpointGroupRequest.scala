@@ -12,7 +12,7 @@ trait CreateEndpointGroupRequest extends StObject {
   var EndpointConfigurations: js.UndefOr[typings.awsSdk.globalacceleratorMod.EndpointConfigurations] = js.undefined
   
   /**
-    * The AWS Region where the endpoint group is located. A listener can have only one endpoint group in a specific Region.
+    * The Amazon Web Services Region where the endpoint group is located. A listener can have only one endpoint group in a specific Region.
     */
   var EndpointGroupRegion: GenericString
   
@@ -24,15 +24,15 @@ trait CreateEndpointGroupRequest extends StObject {
   /**
     * If the protocol is HTTP/S, then this specifies the path that is the destination for health check targets. The default value is slash (/).
     */
-  var HealthCheckPath: js.UndefOr[GenericString] = js.undefined
+  var HealthCheckPath: js.UndefOr[typings.awsSdk.globalacceleratorMod.HealthCheckPath] = js.undefined
   
   /**
-    * The port that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default port is the listener port that this endpoint group is associated with. If listener port is a list of ports, Global Accelerator uses the first port in the list.
+    * The port that Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default port is the listener port that this endpoint group is associated with. If listener port is a list of ports, Global Accelerator uses the first port in the list.
     */
   var HealthCheckPort: js.UndefOr[typings.awsSdk.globalacceleratorMod.HealthCheckPort] = js.undefined
   
   /**
-    * The protocol that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.
+    * The protocol that Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.
     */
   var HealthCheckProtocol: js.UndefOr[typings.awsSdk.globalacceleratorMod.HealthCheckProtocol] = js.undefined
   
@@ -47,7 +47,7 @@ trait CreateEndpointGroupRequest extends StObject {
   var ListenerArn: GenericString
   
   /**
-    * Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. For example, you can create a port override in which the listener receives user traffic on ports 80 and 443, but your accelerator routes that traffic to ports 1080 and 1443, respectively, on the endpoints. For more information, see  Port overrides in the AWS Global Accelerator Developer Guide.
+    * Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. For example, you can create a port override in which the listener receives user traffic on ports 80 and 443, but your accelerator routes that traffic to ports 1080 and 1443, respectively, on the endpoints. For more information, see  Overriding listener ports in the Global Accelerator Developer Guide.
     */
   var PortOverrides: js.UndefOr[typings.awsSdk.globalacceleratorMod.PortOverrides] = js.undefined
   
@@ -57,7 +57,7 @@ trait CreateEndpointGroupRequest extends StObject {
   var ThresholdCount: js.UndefOr[typings.awsSdk.globalacceleratorMod.ThresholdCount] = js.undefined
   
   /**
-    * The percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener.  Use this action to increase (dial up) or decrease (dial down) traffic to a specific Region. The percentage is applied to the traffic that would otherwise have been routed to the Region based on optimal routing. The default value is 100.
+    * The percentage of traffic to send to an Amazon Web Services Region. Additional traffic is distributed to other endpoint groups for this listener.  Use this action to increase (dial up) or decrease (dial down) traffic to a specific Region. The percentage is applied to the traffic that would otherwise have been routed to the Region based on optimal routing. The default value is 100.
     */
   var TrafficDialPercentage: js.UndefOr[typings.awsSdk.globalacceleratorMod.TrafficDialPercentage] = js.undefined
 }
@@ -74,7 +74,7 @@ object CreateEndpointGroupRequest {
     
     inline def setEndpointConfigurationsUndefined: Self = StObject.set(x, "EndpointConfigurations", js.undefined)
     
-    inline def setEndpointConfigurationsVarargs(value: EndpointConfiguration*): Self = StObject.set(x, "EndpointConfigurations", js.Array(value :_*))
+    inline def setEndpointConfigurationsVarargs(value: EndpointConfiguration*): Self = StObject.set(x, "EndpointConfigurations", js.Array(value*))
     
     inline def setEndpointGroupRegion(value: GenericString): Self = StObject.set(x, "EndpointGroupRegion", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object CreateEndpointGroupRequest {
     
     inline def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "HealthCheckIntervalSeconds", js.undefined)
     
-    inline def setHealthCheckPath(value: GenericString): Self = StObject.set(x, "HealthCheckPath", value.asInstanceOf[js.Any])
+    inline def setHealthCheckPath(value: HealthCheckPath): Self = StObject.set(x, "HealthCheckPath", value.asInstanceOf[js.Any])
     
     inline def setHealthCheckPathUndefined: Self = StObject.set(x, "HealthCheckPath", js.undefined)
     
@@ -102,7 +102,7 @@ object CreateEndpointGroupRequest {
     
     inline def setPortOverridesUndefined: Self = StObject.set(x, "PortOverrides", js.undefined)
     
-    inline def setPortOverridesVarargs(value: PortOverride*): Self = StObject.set(x, "PortOverrides", js.Array(value :_*))
+    inline def setPortOverridesVarargs(value: PortOverride*): Self = StObject.set(x, "PortOverrides", js.Array(value*))
     
     inline def setThresholdCount(value: ThresholdCount): Self = StObject.set(x, "ThresholdCount", value.asInstanceOf[js.Any])
     

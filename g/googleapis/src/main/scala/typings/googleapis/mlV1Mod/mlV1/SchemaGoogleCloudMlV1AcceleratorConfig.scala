@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a hardware accelerator request config.
-  */
 trait SchemaGoogleCloudMlV1AcceleratorConfig extends StObject {
   
   /**
     * The number of accelerators to attach to each machine running the job.
     */
-  var count: js.UndefOr[String] = js.undefined
+  var count: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The type of accelerator to use.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudMlV1AcceleratorConfig {
   
@@ -30,9 +27,13 @@ object SchemaGoogleCloudMlV1AcceleratorConfig {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
+    inline def setCountNull: Self = StObject.set(x, "count", null)
+    
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

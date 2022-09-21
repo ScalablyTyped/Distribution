@@ -14,7 +14,7 @@ object messageBarMod {
   
   @JSImport("office-ui-fabric-react/lib/components/MessageBar", "MessageBarBase")
   @js.native
-  class MessageBarBase protected ()
+  open class MessageBarBase protected ()
     extends typings.officeUiFabricReact.messageBarBaseMod.MessageBarBase {
     def this(props: IMessageBarProps) = this()
   }

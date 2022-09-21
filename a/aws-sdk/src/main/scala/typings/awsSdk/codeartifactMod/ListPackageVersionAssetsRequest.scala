@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPackageVersionAssetsRequest extends StObject {
   
   /**
-    *  The name of the package that contains the returned package version assets. 
+    *  The name of the package that contains the requested package version assets. 
     */
   @JSName("package")
   var _package: PackageName
@@ -18,12 +18,12 @@ trait ListPackageVersionAssetsRequest extends StObject {
   var domain: DomainName
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain. It does not include dashes or spaces. 
     */
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
-    *  The format of the package that contains the returned package version assets. The valid package types are:     npm: A Node Package Manager (npm) package.     pypi: A Python Package Index (PyPI) package.     maven: A Maven package that contains compiled code in a distributable format, such as a JAR file.   
+    *  The format of the package that contains the requested package version assets. 
     */
   var format: PackageFormat
   
@@ -33,7 +33,7 @@ trait ListPackageVersionAssetsRequest extends StObject {
   var maxResults: js.UndefOr[ListPackageVersionAssetsMaxResults] = js.undefined
   
   /**
-    *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
+    * The namespace of the package version that contains the requested package version assets. The package version component that specifies its namespace depends on its type. For example:    The namespace of a Maven package version is its groupId.     The namespace of an npm package version is its scope.     Python and NuGet package versions do not contain a corresponding component, package versions of those formats do not have a namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
@@ -48,7 +48,7 @@ trait ListPackageVersionAssetsRequest extends StObject {
   var packageVersion: PackageVersion
   
   /**
-    *  The name of the repository that contains the package that contains the returned package version assets. 
+    *  The name of the repository that contains the package that contains the requested package version assets. 
     */
   var repository: RepositoryName
 }

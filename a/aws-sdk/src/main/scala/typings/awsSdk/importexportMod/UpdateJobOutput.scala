@@ -25,7 +25,7 @@ object UpdateJobOutput {
     
     inline def setArtifactListUndefined: Self = StObject.set(x, "ArtifactList", js.undefined)
     
-    inline def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value :_*))
+    inline def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value*))
     
     inline def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     

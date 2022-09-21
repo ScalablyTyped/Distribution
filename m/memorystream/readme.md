@@ -10,10 +10,10 @@ This is lightweight memory stream module for node.js.
 | ------------------ | :-------------: |
 | Full name          | memorystream |
 | Keywords           | memory, test, stream, tools, streams, buffer |
-| # releases         | 0 |
-| # dependents       | 122 |
-| # downloads        | 73394012 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2885594E7 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/JSBizon/node-memorystream)

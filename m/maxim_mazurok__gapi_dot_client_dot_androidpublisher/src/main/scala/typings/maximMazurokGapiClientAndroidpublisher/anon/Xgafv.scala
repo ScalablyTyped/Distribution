@@ -16,12 +16,6 @@ trait Xgafv extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
-  /**
-    * If true the prices for all regions targeted by the parent app that don't have a price specified for this in-app product will be auto converted to the target currency based on
-    * the default price. Defaults to false.
-    */
-  var autoConvertMissingPrices: js.UndefOr[Boolean] = js.undefined
-  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
@@ -34,17 +28,14 @@ trait Xgafv extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Package name of the app. */
-  var packageName: String
+  /** Required. The developer account to add the user to. Format: developers/{developer} */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Unique identifier for the in-app product. */
-  var sku: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -54,8 +45,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(packageName: String, sku: String): Xgafv = {
-    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any])
+  inline def apply(parent: String): Xgafv = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -73,10 +64,6 @@ object Xgafv {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    inline def setAutoConvertMissingPrices(value: Boolean): Self = StObject.set(x, "autoConvertMissingPrices", value.asInstanceOf[js.Any])
-    
-    inline def setAutoConvertMissingPricesUndefined: Self = StObject.set(x, "autoConvertMissingPrices", js.undefined)
-    
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
@@ -93,7 +80,7 @@ object Xgafv {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -102,8 +89,6 @@ object Xgafv {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

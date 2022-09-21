@@ -27,7 +27,7 @@ object BeforePlotEvent {
     
     inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }

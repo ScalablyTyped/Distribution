@@ -10,10 +10,21 @@ object javascriptIndexPluginMod {
   
   @JSImport("typedoc/dist/lib/output/plugins/JavascriptIndexPlugin", "JavascriptIndexPlugin")
   @js.native
-  class JavascriptIndexPlugin protected () extends RendererComponent {
-    def this(owner: js.Symbol) = this()
+  open class JavascriptIndexPlugin protected () extends RendererComponent {
+    /**
+      * Create new Component instance.
+      */
     def this(owner: Renderer) = this()
     
-    /* private */ var onRendererBegin: js.Any = js.native
+    /* private */ var getCommentSearchText: Any = js.native
+    
+    /**
+      * Triggered after a document has been rendered, just before it is written to disc.
+      *
+      * @param event  An event object describing the current render operation.
+      */
+    /* private */ var onRendererBegin: Any = js.native
+    
+    var searchComments: Boolean = js.native
   }
 }

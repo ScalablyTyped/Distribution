@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("chrome.cast.Volume")
 @js.native
 /**
-  * @param {?number=} opt_level
-  * @param {?boolean=} opt_muted
-  * @constructor
+  * @param opt_level
+  * @param opt_muted
   * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Volume
   */
-class Volume ()
+open class Volume ()
   extends StObject
      with typings.chrome.chrome.cast.Volume {
   def this(level: Double) = this()

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.UI
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
@@ -165,7 +164,7 @@ object StartScreen {
   @JSGlobal("Windows.UI.StartScreen.SecondaryTile")
   @js.native
   /** Creates a SecondaryTile object. The caller must then set any mandatory properties through the object before attempting to pin, update, or delete the tile. */
-  class SecondaryTile ()
+  open class SecondaryTile ()
     extends StObject
        with typings.winrtUwp.Windows.UI.StartScreen.SecondaryTile {
     /**
@@ -238,21 +237,21 @@ object StartScreen {
       * @return An enumeration object that allows you to examine the set of tiles.
       */
     /* static member */
-    inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     /**
       * Retrieves a list of secondary tiles created for another app in the same package as the calling app.
       * @param applicationId The Package Relative Application ID (PRAID) of the app.
       * @return An enumeration object that allows you to examine the set of tiles.
       */
     /* static member */
-    inline def findAllAsync(applicationId: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAsync(applicationId: String): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Retrieves a list of secondary tiles created for all of the apps in the package of the calling app.
       * @return An enumeration object that allows you to examine the set of tiles.
       */
     /* static member */
-    inline def findAllForPackageAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllForPackageAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllForPackageAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllForPackageAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   }
   
   /** Contains properties through which you can get or set a secondary tile's background color, foreground text, tile images, and app name display options. The properties in this class replace these SecondaryTile properties: */
@@ -366,7 +365,7 @@ object StartScreen {
     
     /** Gets the approximate time at which the deferral will time-out. */
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /**
       * Retrieves a deferral object, which allows the app time to provide information and assets used in the Pin to Start flyout.

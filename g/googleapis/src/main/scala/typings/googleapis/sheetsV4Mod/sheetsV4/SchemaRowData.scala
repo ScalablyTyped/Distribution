@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Data about each cell in a row.
-  */
 trait SchemaRowData extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaRowData {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: SchemaCellData*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaCellData*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

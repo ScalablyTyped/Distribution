@@ -10,5 +10,6 @@ trait ClipboardEvent
   extends StObject
      with Event {
   
+  /* standard dom */
   val clipboardData: DataTransfer | Null = js.native
 }

@@ -31,6 +31,7 @@ object anon {
     	 */
     def aggregate(metricsArr: js.Array[js.Object]): Registry = js.native
     
+    // TODO Promise?
     /**
     	 * Sets the registry or registries to be aggregated. Call from workers to
     	 * use a registry/registries other than the default global registry.
@@ -60,17 +61,17 @@ object anon {
     var AggregatorRegistry: TypeofAggregatorRegistry = js.native
     
     var Counter: Instantiable1[
-        /* configuration */ CounterConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* configuration */ CounterConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.promClient.mod.Counter[String]
       ] = js.native
     
     var Gauge: Instantiable1[
-        /* configuration */ GaugeConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* configuration */ GaugeConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.promClient.mod.Gauge[String]
       ] = js.native
     
     var Histogram: Instantiable1[
-        /* configuration */ HistogramConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* configuration */ HistogramConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.promClient.mod.Histogram[String]
       ] = js.native
     
@@ -79,12 +80,14 @@ object anon {
     var Registry: TypeofRegistry = js.native
     
     var Summary: Instantiable1[
-        /* configuration */ SummaryConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* configuration */ SummaryConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.promClient.mod.Summary[String]
       ] = js.native
     
     def collectDefaultMetrics(): Unit = js.native
     def collectDefaultMetrics(config: DefaultMetricsCollectorConfiguration): Unit = js.native
+    
+    val contentType: String = js.native
     
     def exponentialBuckets(start: Double, factor: Double, count: Double): js.Array[Double] = js.native
     

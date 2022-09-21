@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "Source")
 @js.native
-class Source protected ()
-  extends PureComponent[SourceProps, js.Object, js.Any] {
+open class Source protected ()
+  extends PureComponent[SourceProps, js.Object, Any] {
   def this(props: SourceProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SourceProps, context: js.Any) = this()
+  def this(props: SourceProps, context: Any) = this()
 }

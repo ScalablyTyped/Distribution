@@ -10,10 +10,10 @@ flow typed nullthrows
 | ------------------ | :-------------: |
 | Full name          | nullthrows |
 | Keywords           | assert, flow, invariant, nullthrows |
-| # releases         | 0 |
-| # dependents       | 214 |
-| # downloads        | 47676133 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0133211333333334E7 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/zertosh/nullthrows#readme)

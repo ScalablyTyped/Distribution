@@ -1,7 +1,7 @@
 package typings.nodeObjectHash
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
+import typings.nodeObjectHash.mod.Hashable
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -24,6 +24,11 @@ object stringifiersMod {
     @js.native
     def array: String = js.native
     inline def array_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("array")(x.asInstanceOf[js.Any])
+    
+    @JSImport("node-object-hash/dist/stringifiers", "PREFIX.bigint")
+    @js.native
+    def bigint: String = js.native
+    inline def bigint_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bigint")(x.asInstanceOf[js.Any])
     
     @JSImport("node-object-hash/dist/stringifiers", "PREFIX.boolean")
     @js.native
@@ -75,17 +80,21 @@ object stringifiersMod {
     inline def undefined_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefined")(x.asInstanceOf[js.Any])
   }
   
-  inline def array(obj: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_array")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def array(obj: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_array")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def arraySort(obj: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_arraySort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def arraySort(obj: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_arraySort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def bigInt(obj: js.BigInt): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_bigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def bigIntCoerce(obj: js.BigInt): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_bigIntCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def boolean(obj: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_boolean")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def booleanCoerce(obj: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_booleanCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def date(obj: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_date")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def date(obj: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_date")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def dateCoerce(obj: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_dateCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dateCoerce(obj: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_dateCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def function(obj: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_function")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -95,9 +104,11 @@ object stringifiersMod {
   
   inline def functionTrimCoerce(obj: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_functionTrimCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def map(obj: Map[js.Any, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_map")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hashable(obj: Hashable): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_hashable")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def mapSort(obj: Map[js.Any, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_mapSort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def map(obj: Map[Any, Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_map")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def mapSort(obj: Map[Any, Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_mapSort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def `null`(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_null")().asInstanceOf[String]
   
@@ -107,17 +118,17 @@ object stringifiersMod {
   
   inline def numberCoerce(obj: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_numberCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def `object`(obj: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_object")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def `object`(obj: StringDictionary[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_object")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def objectSort(obj: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_objectSort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def objectSort(obj: StringDictionary[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_objectSort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def set(obj: Set[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_set")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def set(obj: Set[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_set")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def setCoerce(obj: Set[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_setCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def setCoerce(obj: Set[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_setCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def setSort(obj: Set[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_setSort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def setSort(obj: Set[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_setSort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def setSortCoerce(obj: Set[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_setSortCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def setSortCoerce(obj: Set[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_setSortCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def string(obj: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_string")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -131,9 +142,17 @@ object stringifiersMod {
   
   inline def symbolCoerce(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_symbolCoerce")().asInstanceOf[String]
   
+  inline def typedArray(
+    obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TypedArray */ Any
+  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_typedArray")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def typedArraySort(
+    obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TypedArray */ Any
+  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_typedArraySort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def undefined(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_undefined")().asInstanceOf[String]
   
   inline def undefinedCoerce(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_undefinedCoerce")().asInstanceOf[String]
   
-  type Stringifiers = StringDictionary[js.Function1[/* obj */ js.Any, String]]
+  type Stringifiers = StringDictionary[js.Function1[/* obj */ Any, String]]
 }

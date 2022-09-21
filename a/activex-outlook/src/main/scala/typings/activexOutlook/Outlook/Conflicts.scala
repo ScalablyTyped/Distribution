@@ -20,12 +20,12 @@ trait Conflicts extends StObject {
   
   def GetPrevious(): Conflict
   
-  def Item(Index: js.Any): Conflict
+  def Item(Index: Any): Conflict
   
   /* private */ @JSName("Outlook.Conflicts_typekey")
   var OutlookDotConflicts_typekey: Conflicts
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -39,9 +39,9 @@ object Conflicts {
     GetLast: () => Conflict,
     GetNext: () => Conflict,
     GetPrevious: () => Conflict,
-    Item: js.Any => Conflict,
+    Item: Any => Conflict,
     OutlookDotConflicts_typekey: Conflicts,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): Conflicts = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], GetFirst = js.Any.fromFunction0(GetFirst), GetLast = js.Any.fromFunction0(GetLast), GetNext = js.Any.fromFunction0(GetNext), GetPrevious = js.Any.fromFunction0(GetPrevious), Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -65,11 +65,11 @@ object Conflicts {
     
     inline def setGetPrevious(value: () => Conflict): Self = StObject.set(x, "GetPrevious", js.Any.fromFunction0(value))
     
-    inline def setItem(value: js.Any => Conflict): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Conflict): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotConflicts_typekey(value: Conflicts): Self = StObject.set(x, "Outlook.Conflicts_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

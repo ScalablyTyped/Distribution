@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__properties
 
-Typings are for version 1.2.3
+Typings are for version 1.8.2
 
 ## Library description:
 Lumino Attached Properties
@@ -10,10 +10,10 @@ Lumino Attached Properties
 | ------------------ | :-------------: |
 | Full name          | @lumino/properties |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 18 |
-| # downloads        | 723659 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 282780.6666666667 |
+| # stars            | 370.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

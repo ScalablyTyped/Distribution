@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-sql-2
 
-Typings are for version 0.78.0
+Typings are for version 0.80.1
 
 ## Library description:
 sql builder
@@ -10,10 +10,10 @@ sql builder
 | ------------------ | :-------------: |
 | Full name          | node-sql-2 |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 54660 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 27241.666666666668 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/TokyoFarmer/node-sql-2)

@@ -25,7 +25,7 @@ object PostBucketsPayload {
     
     inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
-    inline def setAllowVarargs(value: PostBucketsPayloadAllow*): Self = StObject.set(x, "allow", js.Array(value :_*))
+    inline def setAllowVarargs(value: PostBucketsPayloadAllow*): Self = StObject.set(x, "allow", js.Array(value*))
     
     inline def setBucketKey(value: String): Self = StObject.set(x, "bucketKey", value.asInstanceOf[js.Any])
     

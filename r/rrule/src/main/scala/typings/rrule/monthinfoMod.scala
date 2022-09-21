@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object monthinfoMod {
   
-  @JSImport("rrule/dist/esm/src/iterinfo/monthinfo", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/iterinfo/monthinfo", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -43,7 +43,7 @@ object monthinfoMod {
       
       inline def setNwdaymask(value: js.Array[Double]): Self = StObject.set(x, "nwdaymask", value.asInstanceOf[js.Any])
       
-      inline def setNwdaymaskVarargs(value: Double*): Self = StObject.set(x, "nwdaymask", js.Array(value :_*))
+      inline def setNwdaymaskVarargs(value: Double*): Self = StObject.set(x, "nwdaymask", js.Array(value*))
     }
   }
 }

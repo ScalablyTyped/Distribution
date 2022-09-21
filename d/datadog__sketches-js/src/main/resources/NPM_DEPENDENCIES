@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@datadog/sketches-js" : "2.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@datadog/sketches-js" : "2.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

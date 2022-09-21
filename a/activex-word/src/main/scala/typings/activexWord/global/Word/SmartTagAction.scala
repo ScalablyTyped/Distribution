@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.SmartTagAction")
 @js.native
-/* private */ class SmartTagAction ()
+/* private */ open class SmartTagAction ()
   extends StObject
      with typings.activexWord.Word.SmartTagAction {
   
   /* CompleteClass */
-  override val ActiveXControl: js.Any = js.native
+  override val ActiveXControl: Any = js.native
   
   /* CompleteClass */
   override val Application: typings.activexWord.Word.Application = js.native
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PresentInPane: Boolean = js.native

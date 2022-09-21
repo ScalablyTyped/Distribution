@@ -10,15 +10,12 @@ HashMap Class for JavaScript
 | ------------------ | :-------------: |
 | Full name          | hashmap |
 | Keywords           | hashmap, map, object, array, associative, javascript, nodejs, node, browser |
-| # releases         | 2 |
-| # dependents       | 102 |
-| # downloads        | 1462903 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 110626.33333333333 |
+| # stars            | 379.0 |
 
 ## Links
-- [Homepage](https://github.com/flesler/hashmap)
-- [Bugs](https://github.com/flesler/hashmap/issues)
-- [Repository](https://github.com/flesler/hashmap)
 - [Npm](https://www.npmjs.com/package/hashmap)
     
 

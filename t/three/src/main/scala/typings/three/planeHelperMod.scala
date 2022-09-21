@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.geometryMod.Geometry
 import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
 import typings.three.planeMod.Plane
@@ -13,13 +12,13 @@ object planeHelperMod {
   
   @JSImport("three/src/helpers/PlaneHelper", "PlaneHelper")
   @js.native
-  class PlaneHelper protected ()
-    extends LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]] {
+  open class PlaneHelper protected ()
+    extends LineSegments[BufferGeometry, Material | js.Array[Material]] {
     /**
-    	 * @param plane
-    	 * @param [size=1]
-    	 * @param [hex=0xffff00]
-    	 */
+      * @param plane
+      * @param [size=1]
+      * @param [hex=0xffff00]
+      */
     def this(plane: Plane) = this()
     def this(plane: Plane, size: Double) = this()
     def this(plane: Plane, size: Double, hex: Double) = this()
@@ -28,8 +27,8 @@ object planeHelperMod {
     var plane: Plane = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var size: Double = js.native
   }
 }

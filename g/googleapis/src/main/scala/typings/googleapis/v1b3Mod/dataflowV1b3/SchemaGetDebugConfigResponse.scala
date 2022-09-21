@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response to a get debug configuration request.
-  */
 trait SchemaGetDebugConfigResponse extends StObject {
   
   /**
     * The encoded debug configuration for the requested component.
     */
-  var config: js.UndefOr[String] = js.undefined
+  var config: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGetDebugConfigResponse {
   
@@ -24,6 +21,8 @@ object SchemaGetDebugConfigResponse {
   extension [Self <: SchemaGetDebugConfigResponse](x: Self) {
     
     inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setConfigNull: Self = StObject.set(x, "config", null)
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
   }

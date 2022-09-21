@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab/dist/types/core/services", "GroupBadges")
 @js.native
-class GroupBadges protected ()
+open class GroupBadges protected ()
   extends typings.gitlab.groupBadgesMod.GroupBadges {
   def this(options: BaseServiceOptions) = this()
 }

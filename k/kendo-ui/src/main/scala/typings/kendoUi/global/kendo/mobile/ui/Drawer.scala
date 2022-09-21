@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.mobile.ui.Drawer")
 @js.native
-class Drawer protected ()
+open class Drawer protected ()
   extends StObject
      with typings.kendoUi.kendo.mobile.ui.Drawer {
   def this(element: Element) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.HtmlBuilder")
 @js.native
-class HtmlBuilder ()
+open class HtmlBuilder ()
   extends StObject
      with typings.sharepoint.SP.HtmlBuilder {
   

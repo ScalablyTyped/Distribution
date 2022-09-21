@@ -29,7 +29,7 @@ trait Sorts extends StObject {
     * @param attr The key of the property
     * @return A string containing one of the types ('string' or 'number')
     */
-  def guessType(a: js.Any, b: js.Any, attr: String): String
+  def guessType(a: Any, b: Any, attr: String): String
   
   /** Create and init the sorts */
   def init(): Unit
@@ -55,7 +55,7 @@ object Sorts {
     add: (String, Double) => Dynatable,
     clear: () => Unit,
     functions: SortsFunctions,
-    guessType: (js.Any, js.Any, String) => String,
+    guessType: (Any, Any, String) => String,
     init: () => Unit,
     initOnLoad: () => Boolean,
     remove: String => Dynatable
@@ -72,7 +72,7 @@ object Sorts {
     
     inline def setFunctions(value: SortsFunctions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    inline def setGuessType(value: (js.Any, js.Any, String) => String): Self = StObject.set(x, "guessType", js.Any.fromFunction3(value))
+    inline def setGuessType(value: (Any, Any, String) => String): Self = StObject.set(x, "guessType", js.Any.fromFunction3(value))
     
     inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     

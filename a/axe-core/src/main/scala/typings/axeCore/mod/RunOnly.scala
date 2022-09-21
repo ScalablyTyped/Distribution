@@ -24,6 +24,6 @@ object RunOnly {
     
     inline def setValues(value: js.Array[String | TagValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: (String | TagValue)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (String | TagValue)*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

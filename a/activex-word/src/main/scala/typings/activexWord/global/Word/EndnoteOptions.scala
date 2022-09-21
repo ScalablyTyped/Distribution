@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.EndnoteOptions")
 @js.native
-/* private */ class EndnoteOptions ()
+/* private */ open class EndnoteOptions ()
   extends StObject
      with typings.activexWord.Word.EndnoteOptions {
   
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var NumberingRule: WdNumberingRule = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var StartingNumber: Double = js.native

@@ -3,12 +3,14 @@ package typings.reactMdLayout
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
+import typings.react.mod.Dispatch
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.ElementType
@@ -29,6 +31,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
+import typings.react.mod.SetStateAction
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -103,6 +106,7 @@ import typings.reactMdTree.typesMod.TreeItemId
 import typings.reactMdTree.typesMod.TreeItemRenderer
 import typings.reactMdTree.typesMod.TreeItemSorter
 import typings.reactMdTree.typesMod.TreeItemStates
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
@@ -124,11 +128,11 @@ object layoutTreeMod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -146,21 +150,21 @@ object layoutTreeMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -170,11 +174,11 @@ object layoutTreeMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -186,13 +190,13 @@ object layoutTreeMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -202,7 +206,7 @@ object layoutTreeMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -262,7 +266,7 @@ object layoutTreeMod {
     
     var horizontal: js.UndefOr[Boolean] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -284,7 +288,7 @@ object layoutTreeMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var linkComponent: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var linkComponent: js.UndefOr[ElementType[Any]] = js.undefined
     
     var multiSelect: js.UndefOr[Boolean] = js.undefined
     
@@ -388,7 +392,7 @@ object layoutTreeMod {
     
     var onMouseUp: js.UndefOr[MouseEventHandler[ListElement]] = js.undefined
     
-    var onMultiItemExpansion: js.Function1[/* itemIds */ ExpandedIds, Unit]
+    var onMultiItemExpansion: Dispatch[SetStateAction[ExpandedIds]]
     
     var onMultiItemSelect: js.Function1[/* itemIds */ SelectedIds, Unit]
     
@@ -468,7 +472,7 @@ object layoutTreeMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rootId: js.UndefOr[Null | TreeItemId] = js.undefined
     
@@ -508,7 +512,7 @@ object layoutTreeMod {
       expandedIds: ExpandedIds,
       onItemExpansion: (/* itemId */ TreeItemId, /* expanded */ Boolean) => Unit,
       onItemSelect: /* itemId */ TreeItemId => Unit,
-      onMultiItemExpansion: /* itemIds */ ExpandedIds => Unit,
+      onMultiItemExpansion: SetStateAction[ExpandedIds] => Unit,
       onMultiItemSelect: /* itemIds */ SelectedIds => Unit,
       selectedIds: SelectedIds
     ): BaseLayoutTreeProps[T] = {
@@ -530,7 +534,7 @@ object layoutTreeMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -538,7 +542,7 @@ object layoutTreeMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -574,7 +578,7 @@ object layoutTreeMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -586,7 +590,7 @@ object layoutTreeMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -594,7 +598,7 @@ object layoutTreeMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -602,7 +606,7 @@ object layoutTreeMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -622,15 +626,15 @@ object layoutTreeMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -654,7 +658,7 @@ object layoutTreeMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -664,7 +668,7 @@ object layoutTreeMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -684,7 +688,7 @@ object layoutTreeMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -760,7 +764,7 @@ object layoutTreeMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
@@ -776,7 +780,7 @@ object layoutTreeMod {
       
       inline def setExpandedIds(value: ExpandedIds): Self = StObject.set(x, "expandedIds", value.asInstanceOf[js.Any])
       
-      inline def setExpandedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "expandedIds", js.Array(value :_*))
+      inline def setExpandedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "expandedIds", js.Array(value*))
       
       inline def setExpanderIcon(value: ReactNode): Self = StObject.set(x, "expanderIcon", value.asInstanceOf[js.Any])
       
@@ -806,7 +810,7 @@ object layoutTreeMod {
       
       inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -852,7 +856,7 @@ object layoutTreeMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setLinkComponent(value: ElementType[js.Any]): Self = StObject.set(x, "linkComponent", value.asInstanceOf[js.Any])
+      inline def setLinkComponent(value: ElementType[Any]): Self = StObject.set(x, "linkComponent", value.asInstanceOf[js.Any])
       
       inline def setLinkComponentUndefined: Self = StObject.set(x, "linkComponent", js.undefined)
       
@@ -884,7 +888,7 @@ object layoutTreeMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[ListElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[ListElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -984,7 +988,7 @@ object layoutTreeMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[ListElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[ListElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1056,7 +1060,7 @@ object layoutTreeMod {
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      inline def setOnMultiItemExpansion(value: /* itemIds */ ExpandedIds => Unit): Self = StObject.set(x, "onMultiItemExpansion", js.Any.fromFunction1(value))
+      inline def setOnMultiItemExpansion(value: SetStateAction[ExpandedIds] => Unit): Self = StObject.set(x, "onMultiItemExpansion", js.Any.fromFunction1(value))
       
       inline def setOnMultiItemSelect(value: /* itemIds */ SelectedIds => Unit): Self = StObject.set(x, "onMultiItemSelect", js.Any.fromFunction1(value))
       
@@ -1212,7 +1216,7 @@ object layoutTreeMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1228,7 +1232,7 @@ object layoutTreeMod {
       
       inline def setSelectedIds(value: SelectedIds): Self = StObject.set(x, "selectedIds", value.asInstanceOf[js.Any])
       
-      inline def setSelectedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "selectedIds", js.Array(value :_*))
+      inline def setSelectedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "selectedIds", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -1318,6 +1322,23 @@ object layoutTreeMod {
     var id: js.UndefOr[String] = js.undefined
     
     /**
+      * Boolean if the `LayoutTree` is being rendered as the mini variant. This
+      * will update the `itemRenderer` to default to the
+      * `defaultMiniNavigationItemRenderer` instead of the
+      * `defaultNavigationItemRenderer`.
+      *
+      * @remarks \@since 2.7.0
+      */
+    var mini: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The {@link TreeItemRenderer} to use if the `mini` prop is enabled.
+      *
+      * @remarks \@since 2.8.3
+      */
+    var miniItemRenderer: js.UndefOr[TreeItemRenderer[T]] = js.undefined
+    
+    /**
       * Optional className to provide to the `<nav>` element surrounding the tree
       */
     var navClassName: js.UndefOr[String] = js.undefined
@@ -1331,6 +1352,15 @@ object layoutTreeMod {
       * Optional style to provide to the `<nav>` element surrounding the tree
       */
     var navStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    /**
+      * Boolean if the mini navigation should be treated as a "sticky" element.
+      * This should really only be `true` if disabling the fixed `AppBar` behavior
+      * in the `Layout`.
+      *
+      * @remarks \@since 2.8.3
+      */
+    var sticky: js.UndefOr[Boolean] = js.undefined
   }
   object LayoutTreeProps {
     
@@ -1339,7 +1369,7 @@ object layoutTreeMod {
       navItems: TreeData[T],
       onItemExpansion: (/* itemId */ TreeItemId, /* expanded */ Boolean) => Unit,
       onItemSelect: /* itemId */ TreeItemId => Unit,
-      onMultiItemExpansion: /* itemIds */ ExpandedIds => Unit,
+      onMultiItemExpansion: SetStateAction[ExpandedIds] => Unit,
       onMultiItemSelect: /* itemIds */ SelectedIds => Unit,
       selectedIds: SelectedIds
     ): LayoutTreeProps[T] = {
@@ -1365,6 +1395,16 @@ object layoutTreeMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
+      inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+      
+      inline def setMiniItemRenderer(
+        value: (/* providedProps */ ProvidedTreeItemProps, /* item */ T & VisibleIndex, /* treeProps */ ProvidedTreeProps) => ReactElement | Null
+      ): Self = StObject.set(x, "miniItemRenderer", js.Any.fromFunction3(value))
+      
+      inline def setMiniItemRendererUndefined: Self = StObject.set(x, "miniItemRenderer", js.undefined)
+      
+      inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+      
       inline def setNavClassName(value: String): Self = StObject.set(x, "navClassName", value.asInstanceOf[js.Any])
       
       inline def setNavClassNameUndefined: Self = StObject.set(x, "navClassName", js.undefined)
@@ -1374,6 +1414,10 @@ object layoutTreeMod {
       inline def setNavStyle(value: CSSProperties): Self = StObject.set(x, "navStyle", value.asInstanceOf[js.Any])
       
       inline def setNavStyleUndefined: Self = StObject.set(x, "navStyle", js.undefined)
+      
+      inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+      
+      inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
     }
   }
 }

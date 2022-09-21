@@ -1,15 +1,15 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.AltFieldsKeyOauthtokenPrettyPrintProject
+import typings.maximMazurokGapiClientCompute.anon.AltCallbackFieldsKeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.Direction
-import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.FieldsKeyNetwork
 import typings.maximMazurokGapiClientCompute.anon.KeyNetwork
 import typings.maximMazurokGapiClientCompute.anon.KeyNetworkOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
 import typings.maximMazurokGapiClientCompute.anon.NetworkOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.NetworkOauthtokenPrettyPrint
+import typings.maximMazurokGapiClientCompute.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,9 +29,13 @@ trait NetworksResource extends StObject {
   def get(): Request[Network] = js.native
   def get(request: NetworkOauthtoken): Request[Network] = js.native
   
+  /** Returns the effective firewalls on a given network. */
+  def getEffectiveFirewalls(): Request[NetworksGetEffectiveFirewallsResponse] = js.native
+  def getEffectiveFirewalls(request: NetworkOauthtoken): Request[NetworksGetEffectiveFirewallsResponse] = js.native
+  
   /** Creates a network in the specified project using the data included in the request. */
-  def insert(request: AltFieldsKeyOauthtokenPrettyPrintProject): Request[Operation] = js.native
-  def insert(request: FieldsKey, body: Network): Request[Operation] = js.native
+  def insert(request: AltCallbackFieldsKeyOauthtoken): Request[Operation] = js.native
+  def insert(request: Xgafv, body: Network): Request[Operation] = js.native
   
   /** Retrieves the list of networks available to the specified project. */
   def list(): Request[NetworkList] = js.native

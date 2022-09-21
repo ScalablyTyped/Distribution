@@ -41,7 +41,7 @@ trait ISizeModel
   var name: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var names: js.UndefOr[js.Any] = js.undefined
+  var names: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Boolean) */
   var natural: js.UndefOr[Boolean] = js.undefined
@@ -104,7 +104,7 @@ object ISizeModel {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNames(value: js.Any): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Any): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     

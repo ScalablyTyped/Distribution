@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGURIReference extends StObject {
   
+  /* standard dom */
   val href: SVGAnimatedString
 }
 object SVGURIReference {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ProvidedIn extends StObject {
   
-  var providedIn: Type[js.Any] | root | platform | any | Null
+  var providedIn: Type[Any] | root | platform | any | Null
 }
 object ProvidedIn {
   
@@ -21,7 +21,7 @@ object ProvidedIn {
   
   extension [Self <: ProvidedIn](x: Self) {
     
-    inline def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type[Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
   }

@@ -10,10 +10,10 @@ object attachMoneyMod {
   
   @JSImport("material-ui/svg-icons/editor/attach-money", JSImport.Default)
   @js.native
-  class default () extends EditorAttachMoney
+  open class default () extends EditorAttachMoney
   
   @JSImport("material-ui/svg-icons/editor/attach-money", "EditorAttachMoney")
   @js.native
-  class EditorAttachMoney ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorAttachMoney ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

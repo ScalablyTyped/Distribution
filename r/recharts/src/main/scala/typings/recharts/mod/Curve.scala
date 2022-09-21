@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Curve")
 @js.native
-class Curve protected ()
-  extends Component[CurveProps, js.Object, js.Any] {
+open class Curve protected ()
+  extends Component[CurveProps, js.Object, Any] {
   def this(props: CurveProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CurveProps, context: js.Any) = this()
+  def this(props: CurveProps, context: Any) = this()
 }

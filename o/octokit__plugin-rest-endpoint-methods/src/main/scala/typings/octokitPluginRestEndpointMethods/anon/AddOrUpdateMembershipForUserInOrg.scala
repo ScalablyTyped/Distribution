@@ -25,15 +25,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/{org_id}/team/{team_id}/memberships/{username}`.
     */
   def addOrUpdateMembershipForUserInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/teams/:team_slug/memberships/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/teams/{team_slug}/memberships/{username}']['response'] */ js.Any
   ]
   def addOrUpdateMembershipForUserInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/teams/:team_slug/memberships/:username']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/teams/{team_slug}/memberships/{username}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/teams/:team_slug/memberships/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/teams/{team_slug}/memberships/{username}']['response'] */ js.Any
   ]
   /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -49,7 +49,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/{org_id}/team/{team_id}/memberships/{username}`.
     */
   @JSName("addOrUpdateMembershipForUserInOrg")
-  var addOrUpdateMembershipForUserInOrg_Original: `485`
+  var addOrUpdateMembershipForUserInOrg_Original: `700`
   
   /**
     * Adds an organization project to a team. To add a project to a team or update the team's permission on a project, the authenticated user must have `admin` permissions for the project. The project and team must be part of the same organization.
@@ -57,15 +57,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/{org_id}/team/{team_id}/projects/{project_id}`.
     */
   def addOrUpdateProjectPermissionsInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/teams/:team_slug/projects/:project_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/teams/{team_slug}/projects/{project_id}']['response'] */ js.Any
   ]
   def addOrUpdateProjectPermissionsInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/teams/:team_slug/projects/:project_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/teams/{team_slug}/projects/{project_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/teams/:team_slug/projects/:project_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/teams/{team_slug}/projects/{project_id}']['response'] */ js.Any
   ]
   /**
     * Adds an organization project to a team. To add a project to a team or update the team's permission on a project, the authenticated user must have `admin` permissions for the project. The project and team must be part of the same organization.
@@ -73,35 +73,35 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/{org_id}/team/{team_id}/projects/{project_id}`.
     */
   @JSName("addOrUpdateProjectPermissionsInOrg")
-  var addOrUpdateProjectPermissionsInOrg_Original: `486`
+  var addOrUpdateProjectPermissionsInOrg_Original: `701`
   
   /**
-    * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization. Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization. Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/{org_id}/team/{team_id}/repos/{owner}/{repo}`.
     *
     * For more information about the permission levels, see "[Repository permission levels for an organization](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization)".
     */
   def addOrUpdateRepoPermissionsInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/teams/:team_slug/repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['response'] */ js.Any
   ]
   def addOrUpdateRepoPermissionsInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/teams/:team_slug/repos/:owner/:repo']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/:org/teams/:team_slug/repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['response'] */ js.Any
   ]
   /**
-    * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization. Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization. Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/{org_id}/team/{team_id}/repos/{owner}/{repo}`.
     *
     * For more information about the permission levels, see "[Repository permission levels for an organization](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization)".
     */
   @JSName("addOrUpdateRepoPermissionsInOrg")
-  var addOrUpdateRepoPermissionsInOrg_Original: `487`
+  var addOrUpdateRepoPermissionsInOrg_Original: `702`
   
   /**
     * Checks whether a team has `read`, `write`, or `admin` permissions for an organization project. The response includes projects inherited from a parent team.
@@ -109,15 +109,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/projects/{project_id}`.
     */
   def checkPermissionsForProjectInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/projects/:project_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/projects/{project_id}']['response'] */ js.Any
   ]
   def checkPermissionsForProjectInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/projects/:project_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/projects/{project_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/projects/:project_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/projects/{project_id}']['response'] */ js.Any
   ]
   /**
     * Checks whether a team has `read`, `write`, or `admin` permissions for an organization project. The response includes projects inherited from a parent team.
@@ -125,39 +125,39 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/projects/{project_id}`.
     */
   @JSName("checkPermissionsForProjectInOrg")
-  var checkPermissionsForProjectInOrg_Original: `488`
+  var checkPermissionsForProjectInOrg_Original: `703`
   
   /**
     * Checks whether a team has `admin`, `push`, `maintain`, `triage`, or `pull` permission for a repository. Repositories inherited through a parent team will also be checked.
     *
-    * You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `application/vnd.github.v3.repository+json` accept header.
+    * You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `application/vnd.github.v3.repository+json` accept header.
     *
     * If a team doesn't have permission for the repository, you will receive a `404 Not Found` response status.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/repos/{owner}/{repo}`.
     */
   def checkPermissionsForRepoInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['response'] */ js.Any
   ]
   def checkPermissionsForRepoInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/repos/:owner/:repo']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['response'] */ js.Any
   ]
   /**
     * Checks whether a team has `admin`, `push`, `maintain`, `triage`, or `pull` permission for a repository. Repositories inherited through a parent team will also be checked.
     *
-    * You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `application/vnd.github.v3.repository+json` accept header.
+    * You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `application/vnd.github.v3.repository+json` accept header.
     *
     * If a team doesn't have permission for the repository, you will receive a `404 Not Found` response status.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/repos/{owner}/{repo}`.
     */
   @JSName("checkPermissionsForRepoInOrg")
-  var checkPermissionsForRepoInOrg_Original: `489`
+  var checkPermissionsForRepoInOrg_Original: `704`
   
   /**
     * To create a team, the authenticated user must be a member or owner of `{org}`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://docs.github.com/en/articles/setting-team-creation-permissions-in-your-organization)."
@@ -165,72 +165,72 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * When you create a new team, you automatically become a team maintainer without explicitly adding yourself to the optional array of `maintainers`. For more information, see "[About teams](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-teams)".
     */
   def create(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/teams']['response'] */ js.Any
   ]
   def create(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/teams']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/teams']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/teams']['response'] */ js.Any
   ]
   
   /**
-    * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments`.
     */
   def createDiscussionCommentInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments']['response'] */ js.Any
   ]
   def createDiscussionCommentInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments']['response'] */ js.Any
   ]
   /**
-    * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments`.
     */
   @JSName("createDiscussionCommentInOrg")
-  var createDiscussionCommentInOrg_Original: `491`
+  var createDiscussionCommentInOrg_Original: `706`
   
   /**
-    * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/{org_id}/team/{team_id}/discussions`.
     */
   def createDiscussionInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/teams/:team_slug/discussions']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/teams/{team_slug}/discussions']['response'] */ js.Any
   ]
   def createDiscussionInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/teams/:team_slug/discussions']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/teams/{team_slug}/discussions']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/teams/:team_slug/discussions']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/teams/{team_slug}/discussions']['response'] */ js.Any
   ]
   /**
-    * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/{org_id}/team/{team_id}/discussions`.
     */
   @JSName("createDiscussionInOrg")
-  var createDiscussionInOrg_Original: `492`
+  var createDiscussionInOrg_Original: `707`
   
   /**
     * To create a team, the authenticated user must be a member or owner of `{org}`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://docs.github.com/en/articles/setting-team-creation-permissions-in-your-organization)."
@@ -238,55 +238,55 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * When you create a new team, you automatically become a team maintainer without explicitly adding yourself to the optional array of `maintainers`. For more information, see "[About teams](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-teams)".
     */
   @JSName("create")
-  var create_Original: `490`
+  var create_Original: `705`
   
   /**
-    * Deletes a comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Deletes a comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
   def deleteDiscussionCommentInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}']['response'] */ js.Any
   ]
   def deleteDiscussionCommentInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}']['response'] */ js.Any
   ]
   /**
-    * Deletes a comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Deletes a comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
   @JSName("deleteDiscussionCommentInOrg")
-  var deleteDiscussionCommentInOrg_Original: `493`
+  var deleteDiscussionCommentInOrg_Original: `708`
   
   /**
-    * Delete a discussion from a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Delete a discussion from a team's page. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`.
     */
   def deleteDiscussionInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}']['response'] */ js.Any
   ]
   def deleteDiscussionInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}']['response'] */ js.Any
   ]
   /**
-    * Delete a discussion from a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Delete a discussion from a team's page. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`.
     */
   @JSName("deleteDiscussionInOrg")
-  var deleteDiscussionInOrg_Original: `494`
+  var deleteDiscussionInOrg_Original: `709`
   
   /**
     * To delete a team, the authenticated user must be an organization owner or team maintainer.
@@ -296,15 +296,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}`.
     */
   def deleteInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}']['response'] */ js.Any
   ]
   def deleteInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}']['response'] */ js.Any
   ]
   /**
     * To delete a team, the authenticated user must be an organization owner or team maintainer.
@@ -314,7 +314,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}`.
     */
   @JSName("deleteInOrg")
-  var deleteInOrg_Original: `495`
+  var deleteInOrg_Original: `710`
   
   /**
     * Gets a team using the team's `slug`. GitHub generates the `slug` from the team `name`.
@@ -322,15 +322,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}`.
     */
   def getByName(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}']['response'] */ js.Any
   ]
   def getByName(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}']['response'] */ js.Any
   ]
   /**
     * Gets a team using the team's `slug`. GitHub generates the `slug` from the team `name`.
@@ -338,55 +338,55 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}`.
     */
   @JSName("getByName")
-  var getByName_Original: `496`
+  var getByName_Original: `711`
   
   /**
-    * Get a specific comment on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Get a specific comment on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
   def getDiscussionCommentInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}']['response'] */ js.Any
   ]
   def getDiscussionCommentInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}']['response'] */ js.Any
   ]
   /**
-    * Get a specific comment on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Get a specific comment on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
   @JSName("getDiscussionCommentInOrg")
-  var getDiscussionCommentInOrg_Original: `497`
+  var getDiscussionCommentInOrg_Original: `712`
   
   /**
-    * Get a specific discussion on a team's page. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Get a specific discussion on a team's page. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`.
     */
   def getDiscussionInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions/:discussion_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}']['response'] */ js.Any
   ]
   def getDiscussionInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions/:discussion_number']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions/:discussion_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}']['response'] */ js.Any
   ]
   /**
-    * Get a specific discussion on a team's page. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Get a specific discussion on a team's page. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`.
     */
   @JSName("getDiscussionInOrg")
-  var getDiscussionInOrg_Original: `498`
+  var getDiscussionInOrg_Original: `713`
   
   /**
     * Team members will include the members of child teams.
@@ -395,18 +395,21 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/memberships/{username}`.
     *
-    * **Note:** The `role` for organization owners returns as `maintainer`. For more information about `maintainer` roles, see [Create a team](https://developer.github.com/v3/teams/#create-a-team).
+    * **Note:**
+    * The response contains the `state` of the membership and the member's `role`.
+    *
+    * The `role` for organization owners is set to `maintainer`. For more information about `maintainer` roles, see see [Create a team](https://docs.github.com/rest/reference/teams#create-a-team).
     */
   def getMembershipForUserInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/memberships/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/memberships/{username}']['response'] */ js.Any
   ]
   def getMembershipForUserInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/memberships/:username']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/memberships/{username}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/memberships/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/memberships/{username}']['response'] */ js.Any
   ]
   /**
     * Team members will include the members of child teams.
@@ -415,24 +418,27 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/memberships/{username}`.
     *
-    * **Note:** The `role` for organization owners returns as `maintainer`. For more information about `maintainer` roles, see [Create a team](https://developer.github.com/v3/teams/#create-a-team).
+    * **Note:**
+    * The response contains the `state` of the membership and the member's `role`.
+    *
+    * The `role` for organization owners is set to `maintainer`. For more information about `maintainer` roles, see see [Create a team](https://docs.github.com/rest/reference/teams#create-a-team).
     */
   @JSName("getMembershipForUserInOrg")
-  var getMembershipForUserInOrg_Original: `499`
+  var getMembershipForUserInOrg_Original: `714`
   
   /**
     * Lists all teams in an organization that are visible to the authenticated user.
     */
   def list(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams']['response'] */ js.Any
   ]
   def list(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams']['response'] */ js.Any
   ]
   
   /**
@@ -441,15 +447,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/teams`.
     */
   def listChildInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/teams']['response'] */ js.Any
   ]
   def listChildInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/teams']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/teams']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/teams']['response'] */ js.Any
   ]
   /**
     * Lists the child teams of the team specified by `{team_slug}`.
@@ -457,58 +463,58 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/teams`.
     */
   @JSName("listChildInOrg")
-  var listChildInOrg_Original: `501`
+  var listChildInOrg_Original: `716`
   
   /**
-    * List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments`.
     */
   def listDiscussionCommentsInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments']['response'] */ js.Any
   ]
   def listDiscussionCommentsInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments']['response'] */ js.Any
   ]
   /**
-    * List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments`.
     */
   @JSName("listDiscussionCommentsInOrg")
-  var listDiscussionCommentsInOrg_Original: `502`
+  var listDiscussionCommentsInOrg_Original: `717`
   
   /**
-    * List all discussions on a team's page. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * List all discussions on a team's page. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions`.
     */
   def listDiscussionsInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions']['response'] */ js.Any
   ]
   def listDiscussionsInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/discussions']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/discussions']['response'] */ js.Any
   ]
   /**
-    * List all discussions on a team's page. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * List all discussions on a team's page. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions`.
     */
   @JSName("listDiscussionsInOrg")
-  var listDiscussionsInOrg_Original: `503`
+  var listDiscussionsInOrg_Original: `718`
   
   /**
-    * List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://developer.github.com/apps/building-oauth-apps/).
+    * List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://docs.github.com/apps/building-oauth-apps/).
     */
   def listForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/teams']['response'] */ js.Any
@@ -522,10 +528,10 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/teams']['response'] */ js.Any
   ]
   /**
-    * List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://developer.github.com/apps/building-oauth-apps/).
+    * List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://docs.github.com/apps/building-oauth-apps/).
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `504`
+  var listForAuthenticatedUser_Original: `719`
   
   /**
     * Team members will include the members of child teams.
@@ -533,15 +539,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * To list members in a team, the team must be visible to the authenticated user.
     */
   def listMembersInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/members']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/members']['response'] */ js.Any
   ]
   def listMembersInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/members']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/members']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/members']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/members']['response'] */ js.Any
   ]
   /**
     * Team members will include the members of child teams.
@@ -549,7 +555,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * To list members in a team, the team must be visible to the authenticated user.
     */
   @JSName("listMembersInOrg")
-  var listMembersInOrg_Original: `505`
+  var listMembersInOrg_Original: `720`
   
   /**
     * The return hash contains a `role` field which refers to the Organization Invitation role and will be one of the following values: `direct_member`, `admin`, `billing_manager`, `hiring_manager`, or `reinstate`. If the invitee is not a GitHub member, the `login` field in the return hash will be `null`.
@@ -557,15 +563,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/invitations`.
     */
   def listPendingInvitationsInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/invitations']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/invitations']['response'] */ js.Any
   ]
   def listPendingInvitationsInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/invitations']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/invitations']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/invitations']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/invitations']['response'] */ js.Any
   ]
   /**
     * The return hash contains a `role` field which refers to the Organization Invitation role and will be one of the following values: `direct_member`, `admin`, `billing_manager`, `hiring_manager`, or `reinstate`. If the invitee is not a GitHub member, the `login` field in the return hash will be `null`.
@@ -573,7 +579,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/invitations`.
     */
   @JSName("listPendingInvitationsInOrg")
-  var listPendingInvitationsInOrg_Original: `506`
+  var listPendingInvitationsInOrg_Original: `721`
   
   /**
     * Lists the organization projects for a team.
@@ -581,15 +587,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/projects`.
     */
   def listProjectsInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/projects']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/projects']['response'] */ js.Any
   ]
   def listProjectsInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/projects']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/projects']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/projects']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/projects']['response'] */ js.Any
   ]
   /**
     * Lists the organization projects for a team.
@@ -597,7 +603,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/projects`.
     */
   @JSName("listProjectsInOrg")
-  var listProjectsInOrg_Original: `507`
+  var listProjectsInOrg_Original: `722`
   
   /**
     * Lists a team's repositories visible to the authenticated user.
@@ -605,15 +611,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/repos`.
     */
   def listReposInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/repos']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/repos']['response'] */ js.Any
   ]
   def listReposInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/repos']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/repos']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/teams/:team_slug/repos']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}/repos']['response'] */ js.Any
   ]
   /**
     * Lists a team's repositories visible to the authenticated user.
@@ -621,13 +627,13 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/repos`.
     */
   @JSName("listReposInOrg")
-  var listReposInOrg_Original: `508`
+  var listReposInOrg_Original: `723`
   
   /**
     * Lists all teams in an organization that are visible to the authenticated user.
     */
   @JSName("list")
-  var list_Original: `500`
+  var list_Original: `715`
   
   /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -639,15 +645,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/memberships/{username}`.
     */
   def removeMembershipForUserInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/memberships/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/memberships/{username}']['response'] */ js.Any
   ]
   def removeMembershipForUserInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/memberships/:username']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/memberships/{username}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/memberships/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/memberships/{username}']['response'] */ js.Any
   ]
   /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -659,7 +665,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/memberships/{username}`.
     */
   @JSName("removeMembershipForUserInOrg")
-  var removeMembershipForUserInOrg_Original: `509`
+  var removeMembershipForUserInOrg_Original: `724`
   
   /**
     * Removes an organization project from a team. An organization owner or a team maintainer can remove any project from the team. To remove a project from a team as an organization member, the authenticated user must have `read` access to both the team and project, or `admin` access to the team or project. This endpoint removes the project from the team, but does not delete the project.
@@ -667,15 +673,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/projects/{project_id}`.
     */
   def removeProjectInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/projects/:project_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/projects/{project_id}']['response'] */ js.Any
   ]
   def removeProjectInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/projects/:project_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/projects/{project_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/projects/:project_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/projects/{project_id}']['response'] */ js.Any
   ]
   /**
     * Removes an organization project from a team. An organization owner or a team maintainer can remove any project from the team. To remove a project from a team as an organization member, the authenticated user must have `read` access to both the team and project, or `admin` access to the team or project. This endpoint removes the project from the team, but does not delete the project.
@@ -683,7 +689,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/projects/{project_id}`.
     */
   @JSName("removeProjectInOrg")
-  var removeProjectInOrg_Original: `510`
+  var removeProjectInOrg_Original: `725`
   
   /**
     * If the authenticated user is an organization owner or a team maintainer, they can remove any repositories from the team. To remove a repository from a team as an organization member, the authenticated user must have admin access to the repository and must be able to see the team. This does not delete the repository, it just removes it from the team.
@@ -691,15 +697,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/repos/{owner}/{repo}`.
     */
   def removeRepoInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['response'] */ js.Any
   ]
   def removeRepoInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/repos/:owner/:repo']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/:org/teams/:team_slug/repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['response'] */ js.Any
   ]
   /**
     * If the authenticated user is an organization owner or a team maintainer, they can remove any repositories from the team. To remove a repository from a team as an organization member, the authenticated user must have admin access to the repository and must be able to see the team. This does not delete the repository, it just removes it from the team.
@@ -707,55 +713,55 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/repos/{owner}/{repo}`.
     */
   @JSName("removeRepoInOrg")
-  var removeRepoInOrg_Original: `511`
+  var removeRepoInOrg_Original: `726`
   
   /**
-    * Edits the body text of a discussion comment. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Edits the body text of a discussion comment. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
   def updateDiscussionCommentInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}']['response'] */ js.Any
   ]
   def updateDiscussionCommentInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}']['response'] */ js.Any
   ]
   /**
-    * Edits the body text of a discussion comment. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Edits the body text of a discussion comment. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
   @JSName("updateDiscussionCommentInOrg")
-  var updateDiscussionCommentInOrg_Original: `512`
+  var updateDiscussionCommentInOrg_Original: `727`
   
   /**
-    * Edits the title and body text of a discussion post. Only the parameters you provide are updated. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Edits the title and body text of a discussion post. Only the parameters you provide are updated. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`.
     */
   def updateDiscussionInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}']['response'] */ js.Any
   ]
   def updateDiscussionInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}']['response'] */ js.Any
   ]
   /**
-    * Edits the title and body text of a discussion post. Only the parameters you provide are updated. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Edits the title and body text of a discussion post. Only the parameters you provide are updated. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`.
     */
   @JSName("updateDiscussionInOrg")
-  var updateDiscussionInOrg_Original: `513`
+  var updateDiscussionInOrg_Original: `728`
   
   /**
     * To edit a team, the authenticated user must either be an organization owner or a team maintainer.
@@ -763,15 +769,15 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}`.
     */
   def updateInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/teams/:team_slug']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}/teams/{team_slug}']['response'] */ js.Any
   ]
   def updateInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/teams/:team_slug']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}/teams/{team_slug}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/:org/teams/:team_slug']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}/teams/{team_slug}']['response'] */ js.Any
   ]
   /**
     * To edit a team, the authenticated user must either be an organization owner or a team maintainer.
@@ -779,41 +785,41 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}`.
     */
   @JSName("updateInOrg")
-  var updateInOrg_Original: `514`
+  var updateInOrg_Original: `729`
 }
 object AddOrUpdateMembershipForUserInOrg {
   
   inline def apply(
-    addOrUpdateMembershipForUserInOrg: `485`,
-    addOrUpdateProjectPermissionsInOrg: `486`,
-    addOrUpdateRepoPermissionsInOrg: `487`,
-    checkPermissionsForProjectInOrg: `488`,
-    checkPermissionsForRepoInOrg: `489`,
-    create: `490`,
-    createDiscussionCommentInOrg: `491`,
-    createDiscussionInOrg: `492`,
-    deleteDiscussionCommentInOrg: `493`,
-    deleteDiscussionInOrg: `494`,
-    deleteInOrg: `495`,
-    getByName: `496`,
-    getDiscussionCommentInOrg: `497`,
-    getDiscussionInOrg: `498`,
-    getMembershipForUserInOrg: `499`,
-    list: `500`,
-    listChildInOrg: `501`,
-    listDiscussionCommentsInOrg: `502`,
-    listDiscussionsInOrg: `503`,
-    listForAuthenticatedUser: `504`,
-    listMembersInOrg: `505`,
-    listPendingInvitationsInOrg: `506`,
-    listProjectsInOrg: `507`,
-    listReposInOrg: `508`,
-    removeMembershipForUserInOrg: `509`,
-    removeProjectInOrg: `510`,
-    removeRepoInOrg: `511`,
-    updateDiscussionCommentInOrg: `512`,
-    updateDiscussionInOrg: `513`,
-    updateInOrg: `514`
+    addOrUpdateMembershipForUserInOrg: `700`,
+    addOrUpdateProjectPermissionsInOrg: `701`,
+    addOrUpdateRepoPermissionsInOrg: `702`,
+    checkPermissionsForProjectInOrg: `703`,
+    checkPermissionsForRepoInOrg: `704`,
+    create: `705`,
+    createDiscussionCommentInOrg: `706`,
+    createDiscussionInOrg: `707`,
+    deleteDiscussionCommentInOrg: `708`,
+    deleteDiscussionInOrg: `709`,
+    deleteInOrg: `710`,
+    getByName: `711`,
+    getDiscussionCommentInOrg: `712`,
+    getDiscussionInOrg: `713`,
+    getMembershipForUserInOrg: `714`,
+    list: `715`,
+    listChildInOrg: `716`,
+    listDiscussionCommentsInOrg: `717`,
+    listDiscussionsInOrg: `718`,
+    listForAuthenticatedUser: `719`,
+    listMembersInOrg: `720`,
+    listPendingInvitationsInOrg: `721`,
+    listProjectsInOrg: `722`,
+    listReposInOrg: `723`,
+    removeMembershipForUserInOrg: `724`,
+    removeProjectInOrg: `725`,
+    removeRepoInOrg: `726`,
+    updateDiscussionCommentInOrg: `727`,
+    updateDiscussionInOrg: `728`,
+    updateInOrg: `729`
   ): AddOrUpdateMembershipForUserInOrg = {
     val __obj = js.Dynamic.literal(addOrUpdateMembershipForUserInOrg = addOrUpdateMembershipForUserInOrg.asInstanceOf[js.Any], addOrUpdateProjectPermissionsInOrg = addOrUpdateProjectPermissionsInOrg.asInstanceOf[js.Any], addOrUpdateRepoPermissionsInOrg = addOrUpdateRepoPermissionsInOrg.asInstanceOf[js.Any], checkPermissionsForProjectInOrg = checkPermissionsForProjectInOrg.asInstanceOf[js.Any], checkPermissionsForRepoInOrg = checkPermissionsForRepoInOrg.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], createDiscussionCommentInOrg = createDiscussionCommentInOrg.asInstanceOf[js.Any], createDiscussionInOrg = createDiscussionInOrg.asInstanceOf[js.Any], deleteDiscussionCommentInOrg = deleteDiscussionCommentInOrg.asInstanceOf[js.Any], deleteDiscussionInOrg = deleteDiscussionInOrg.asInstanceOf[js.Any], deleteInOrg = deleteInOrg.asInstanceOf[js.Any], getByName = getByName.asInstanceOf[js.Any], getDiscussionCommentInOrg = getDiscussionCommentInOrg.asInstanceOf[js.Any], getDiscussionInOrg = getDiscussionInOrg.asInstanceOf[js.Any], getMembershipForUserInOrg = getMembershipForUserInOrg.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listChildInOrg = listChildInOrg.asInstanceOf[js.Any], listDiscussionCommentsInOrg = listDiscussionCommentsInOrg.asInstanceOf[js.Any], listDiscussionsInOrg = listDiscussionsInOrg.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listMembersInOrg = listMembersInOrg.asInstanceOf[js.Any], listPendingInvitationsInOrg = listPendingInvitationsInOrg.asInstanceOf[js.Any], listProjectsInOrg = listProjectsInOrg.asInstanceOf[js.Any], listReposInOrg = listReposInOrg.asInstanceOf[js.Any], removeMembershipForUserInOrg = removeMembershipForUserInOrg.asInstanceOf[js.Any], removeProjectInOrg = removeProjectInOrg.asInstanceOf[js.Any], removeRepoInOrg = removeRepoInOrg.asInstanceOf[js.Any], updateDiscussionCommentInOrg = updateDiscussionCommentInOrg.asInstanceOf[js.Any], updateDiscussionInOrg = updateDiscussionInOrg.asInstanceOf[js.Any], updateInOrg = updateInOrg.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOrUpdateMembershipForUserInOrg]
@@ -821,64 +827,64 @@ object AddOrUpdateMembershipForUserInOrg {
   
   extension [Self <: AddOrUpdateMembershipForUserInOrg](x: Self) {
     
-    inline def setAddOrUpdateMembershipForUserInOrg(value: `485`): Self = StObject.set(x, "addOrUpdateMembershipForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setAddOrUpdateMembershipForUserInOrg(value: `700`): Self = StObject.set(x, "addOrUpdateMembershipForUserInOrg", value.asInstanceOf[js.Any])
     
-    inline def setAddOrUpdateProjectPermissionsInOrg(value: `486`): Self = StObject.set(x, "addOrUpdateProjectPermissionsInOrg", value.asInstanceOf[js.Any])
+    inline def setAddOrUpdateProjectPermissionsInOrg(value: `701`): Self = StObject.set(x, "addOrUpdateProjectPermissionsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setAddOrUpdateRepoPermissionsInOrg(value: `487`): Self = StObject.set(x, "addOrUpdateRepoPermissionsInOrg", value.asInstanceOf[js.Any])
+    inline def setAddOrUpdateRepoPermissionsInOrg(value: `702`): Self = StObject.set(x, "addOrUpdateRepoPermissionsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCheckPermissionsForProjectInOrg(value: `488`): Self = StObject.set(x, "checkPermissionsForProjectInOrg", value.asInstanceOf[js.Any])
+    inline def setCheckPermissionsForProjectInOrg(value: `703`): Self = StObject.set(x, "checkPermissionsForProjectInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCheckPermissionsForRepoInOrg(value: `489`): Self = StObject.set(x, "checkPermissionsForRepoInOrg", value.asInstanceOf[js.Any])
+    inline def setCheckPermissionsForRepoInOrg(value: `704`): Self = StObject.set(x, "checkPermissionsForRepoInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCreate(value: `490`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: `705`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    inline def setCreateDiscussionCommentInOrg(value: `491`): Self = StObject.set(x, "createDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateDiscussionCommentInOrg(value: `706`): Self = StObject.set(x, "createDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCreateDiscussionInOrg(value: `492`): Self = StObject.set(x, "createDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateDiscussionInOrg(value: `707`): Self = StObject.set(x, "createDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeleteDiscussionCommentInOrg(value: `493`): Self = StObject.set(x, "deleteDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteDiscussionCommentInOrg(value: `708`): Self = StObject.set(x, "deleteDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeleteDiscussionInOrg(value: `494`): Self = StObject.set(x, "deleteDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteDiscussionInOrg(value: `709`): Self = StObject.set(x, "deleteDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeleteInOrg(value: `495`): Self = StObject.set(x, "deleteInOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteInOrg(value: `710`): Self = StObject.set(x, "deleteInOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetByName(value: `496`): Self = StObject.set(x, "getByName", value.asInstanceOf[js.Any])
+    inline def setGetByName(value: `711`): Self = StObject.set(x, "getByName", value.asInstanceOf[js.Any])
     
-    inline def setGetDiscussionCommentInOrg(value: `497`): Self = StObject.set(x, "getDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setGetDiscussionCommentInOrg(value: `712`): Self = StObject.set(x, "getDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetDiscussionInOrg(value: `498`): Self = StObject.set(x, "getDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setGetDiscussionInOrg(value: `713`): Self = StObject.set(x, "getDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetMembershipForUserInOrg(value: `499`): Self = StObject.set(x, "getMembershipForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setGetMembershipForUserInOrg(value: `714`): Self = StObject.set(x, "getMembershipForUserInOrg", value.asInstanceOf[js.Any])
     
-    inline def setList(value: `500`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: `715`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    inline def setListChildInOrg(value: `501`): Self = StObject.set(x, "listChildInOrg", value.asInstanceOf[js.Any])
+    inline def setListChildInOrg(value: `716`): Self = StObject.set(x, "listChildInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListDiscussionCommentsInOrg(value: `502`): Self = StObject.set(x, "listDiscussionCommentsInOrg", value.asInstanceOf[js.Any])
+    inline def setListDiscussionCommentsInOrg(value: `717`): Self = StObject.set(x, "listDiscussionCommentsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListDiscussionsInOrg(value: `503`): Self = StObject.set(x, "listDiscussionsInOrg", value.asInstanceOf[js.Any])
+    inline def setListDiscussionsInOrg(value: `718`): Self = StObject.set(x, "listDiscussionsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListForAuthenticatedUser(value: `504`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `719`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListMembersInOrg(value: `505`): Self = StObject.set(x, "listMembersInOrg", value.asInstanceOf[js.Any])
+    inline def setListMembersInOrg(value: `720`): Self = StObject.set(x, "listMembersInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListPendingInvitationsInOrg(value: `506`): Self = StObject.set(x, "listPendingInvitationsInOrg", value.asInstanceOf[js.Any])
+    inline def setListPendingInvitationsInOrg(value: `721`): Self = StObject.set(x, "listPendingInvitationsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListProjectsInOrg(value: `507`): Self = StObject.set(x, "listProjectsInOrg", value.asInstanceOf[js.Any])
+    inline def setListProjectsInOrg(value: `722`): Self = StObject.set(x, "listProjectsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListReposInOrg(value: `508`): Self = StObject.set(x, "listReposInOrg", value.asInstanceOf[js.Any])
+    inline def setListReposInOrg(value: `723`): Self = StObject.set(x, "listReposInOrg", value.asInstanceOf[js.Any])
     
-    inline def setRemoveMembershipForUserInOrg(value: `509`): Self = StObject.set(x, "removeMembershipForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveMembershipForUserInOrg(value: `724`): Self = StObject.set(x, "removeMembershipForUserInOrg", value.asInstanceOf[js.Any])
     
-    inline def setRemoveProjectInOrg(value: `510`): Self = StObject.set(x, "removeProjectInOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveProjectInOrg(value: `725`): Self = StObject.set(x, "removeProjectInOrg", value.asInstanceOf[js.Any])
     
-    inline def setRemoveRepoInOrg(value: `511`): Self = StObject.set(x, "removeRepoInOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveRepoInOrg(value: `726`): Self = StObject.set(x, "removeRepoInOrg", value.asInstanceOf[js.Any])
     
-    inline def setUpdateDiscussionCommentInOrg(value: `512`): Self = StObject.set(x, "updateDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateDiscussionCommentInOrg(value: `727`): Self = StObject.set(x, "updateDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setUpdateDiscussionInOrg(value: `513`): Self = StObject.set(x, "updateDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateDiscussionInOrg(value: `728`): Self = StObject.set(x, "updateDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    inline def setUpdateInOrg(value: `514`): Self = StObject.set(x, "updateInOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateInOrg(value: `729`): Self = StObject.set(x, "updateInOrg", value.asInstanceOf[js.Any])
   }
 }

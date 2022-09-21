@@ -43,7 +43,7 @@ object XSimpleFileAccess2 {
     openFileRead: String => XInputStream,
     openFileReadWrite: String => XStream,
     openFileWrite: String => XOutputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setInteractionHandler: XInteractionHandler => Unit,
     setReadOnly: (String, Boolean) => Unit,

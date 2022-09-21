@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response to a request to list job messages.
-  */
 trait SchemaListJobMessagesResponse extends StObject {
   
   /**
@@ -22,7 +19,7 @@ trait SchemaListJobMessagesResponse extends StObject {
   /**
     * The token to obtain the next page of results if there are more.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListJobMessagesResponse {
   
@@ -37,15 +34,17 @@ object SchemaListJobMessagesResponse {
     
     inline def setAutoscalingEventsUndefined: Self = StObject.set(x, "autoscalingEvents", js.undefined)
     
-    inline def setAutoscalingEventsVarargs(value: SchemaAutoscalingEvent*): Self = StObject.set(x, "autoscalingEvents", js.Array(value :_*))
+    inline def setAutoscalingEventsVarargs(value: SchemaAutoscalingEvent*): Self = StObject.set(x, "autoscalingEvents", js.Array(value*))
     
     inline def setJobMessages(value: js.Array[SchemaJobMessage]): Self = StObject.set(x, "jobMessages", value.asInstanceOf[js.Any])
     
     inline def setJobMessagesUndefined: Self = StObject.set(x, "jobMessages", js.undefined)
     
-    inline def setJobMessagesVarargs(value: SchemaJobMessage*): Self = StObject.set(x, "jobMessages", js.Array(value :_*))
+    inline def setJobMessagesVarargs(value: SchemaJobMessage*): Self = StObject.set(x, "jobMessages", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

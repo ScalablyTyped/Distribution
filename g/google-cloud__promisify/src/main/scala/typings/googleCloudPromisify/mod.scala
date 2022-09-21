@@ -16,8 +16,8 @@ object mod {
   inline def callbackifyAll(Class: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackifyAll")(Class.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def callbackifyAll(Class: js.Function, options: CallbackifyAllOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callbackifyAll")(Class.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def promisify(originalMethod: PromiseMethod): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def promisify(originalMethod: PromiseMethod, options: PromisifyOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def promisify(originalMethod: PromiseMethod): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def promisify(originalMethod: PromiseMethod, options: PromisifyOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def promisifyAll(Class: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(Class.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def promisifyAll(Class: js.Function, options: PromisifyAllOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(Class.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -49,7 +49,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     }
   }
   
@@ -82,7 +82,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     }
   }
   

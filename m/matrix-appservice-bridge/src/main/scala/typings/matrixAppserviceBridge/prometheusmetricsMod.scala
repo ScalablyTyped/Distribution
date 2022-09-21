@@ -8,8 +8,6 @@ import typings.promClient.mod.Counter
 import typings.promClient.mod.Gauge
 import typings.promClient.mod.Histogram
 import typings.promClient.mod.Registry
-import typings.std.Partial
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +16,13 @@ object prometheusmetricsMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/prometheusmetrics", "PrometheusMetrics")
   @js.native
-  class PrometheusMetrics () extends StObject {
+  /**
+    * Constructs a new Prometheus Metrics instance.
+    * The metric `app_version` will be set here, so ensure that `getBridgeVersion`
+    * will return the correct bridge version.
+    * @param register A custom registry to provide, if not using the global default.
+    */
+  open class PrometheusMetrics () extends StObject {
     def this(register: Registry) = this()
     
     /**
@@ -76,16 +80,17 @@ object prometheusmetricsMod {
       * new metric. Default: <code>"bridge"</code>.
       * @param {string} opts.name The variable name for the new metric.
       * @param {string} opts.help Descriptive help text for the new metric.
+      * @param {string} opts.buckets The buckets that should be used for the histogram.
       * @param {Array<string>=} opts.labels An optional list of string label names
       * @return {Histogram} A histogram metric.
       * Once created, the value of this metric can be incremented with the
       * <code>startTimer</code> method.
       */
-    def addTimer(opts: CounterOpts): Histogram[String] = js.native
+    def addTimer(opts: HistogramOpts): Histogram[String] = js.native
     
-    /* private */ var collectors: js.Any = js.native
+    /* private */ var collectors: Any = js.native
     
-    /* private */ var counters: js.Any = js.native
+    /* private */ var counters: Any = js.native
     
     /**
       * Increments the value of a counter metric
@@ -94,9 +99,12 @@ object prometheusmetricsMod {
       */
     def incCounter(name: String, labels: StringDictionary[String]): Unit = js.native
     
-    def refresh(): Unit = js.native
+    /**
+      * Fetch metrics from all configured collectors
+      */
+    def refresh(): js.Promise[Unit] = js.native
     
-    /* private */ var register: js.Any = js.native
+    /* private */ var register: Any = js.native
     
     /**
       * Registers some exported metrics that expose counts of various kinds of
@@ -104,14 +112,16 @@ object prometheusmetricsMod {
       * @param {BridgeGaugesCallback} counterFunc A function that when invoked
       * returns the current counts of various items in the bridge.
       */
-    def registerBridgeGauges(counterFunc: js.Function0[BridgeGaugesCounts]): Unit = js.native
+    def registerBridgeGauges(counterFunc: js.Function0[js.Promise[BridgeGaugesCounts] | BridgeGaugesCounts]): js.Promise[Unit] = js.native
     
     /**
       * Registers some exported metrics that relate to operations of the embedded
-      * matrix-js-sdk. In particular, a metric is added that counts the number of
+      * matrix-bot-sdk. In particular, a metric is added that counts the number of
       * calls to client API endpoints made by the client library.
       */
-    def registerMatrixSdkMetrics(): Unit = js.native
+    def registerMatrixSdkMetrics(
+      appservice: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdkAppservice */ Any
+    ): Unit = js.native
     
     /**
       * Begins a new timer observation for a timer metric.
@@ -120,9 +130,9 @@ object prometheusmetricsMod {
       * @return {function} A function to be called to end the timer and report the
       * observation.
       */
-    def startTimer(name: String, labels: StringDictionary[String]): js.Function1[/* labels */ js.UndefOr[Partial[Record[String, String | Double]]], Unit] = js.native
+    def startTimer(name: String, labels: StringDictionary[String]): js.Function0[Unit] = js.native
     
-    /* private */ var timers: js.Any = js.native
+    /* private */ var timers: Any = js.native
   }
   /* static members */
   object PrometheusMetrics {
@@ -157,6 +167,8 @@ object prometheusmetricsMod {
     var remoteRoomsByAge: js.UndefOr[AgeCounters] = js.undefined
     
     var remoteUsersByAge: js.UndefOr[AgeCounters] = js.undefined
+    
+    var rmau: js.UndefOr[Double] = js.undefined
   }
   object BridgeGaugesCounts {
     
@@ -198,10 +210,14 @@ object prometheusmetricsMod {
       inline def setRemoteUsersByAge(value: AgeCounters): Self = StObject.set(x, "remoteUsersByAge", value.asInstanceOf[js.Any])
       
       inline def setRemoteUsersByAgeUndefined: Self = StObject.set(x, "remoteUsersByAge", js.undefined)
+      
+      inline def setRmau(value: Double): Self = StObject.set(x, "rmau", value.asInstanceOf[js.Any])
+      
+      inline def setRmauUndefined: Self = StObject.set(x, "rmau", js.undefined)
     }
   }
   
-  type CollectorFunction = js.Function0[Unit]
+  type CollectorFunction = js.Function0[js.Promise[Unit] | Unit]
   
   trait CounterOpts extends StObject {
     
@@ -228,7 +244,7 @@ object prometheusmetricsMod {
       
       inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -238,15 +254,9 @@ object prometheusmetricsMod {
     }
   }
   
-  trait GagueOpts extends StObject {
-    
-    var help: String
-    
-    var labels: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var name: String
-    
-    var namespace: js.UndefOr[String] = js.undefined
+  trait GagueOpts
+    extends StObject
+       with CounterOpts {
     
     var refresh: js.UndefOr[js.Function1[/* gauge */ Gauge[String], Unit]] = js.undefined
   }
@@ -259,23 +269,32 @@ object prometheusmetricsMod {
     
     extension [Self <: GagueOpts](x: Self) {
       
-      inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
-      
-      inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
-      
-      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
-      
-      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
-      
-      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
-      
       inline def setRefresh(value: /* gauge */ Gauge[String] => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
       
       inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    }
+  }
+  
+  trait HistogramOpts
+    extends StObject
+       with CounterOpts {
+    
+    var buckets: js.UndefOr[js.Array[Double]] = js.undefined
+  }
+  object HistogramOpts {
+    
+    inline def apply(help: String, name: String): HistogramOpts = {
+      val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HistogramOpts]
+    }
+    
+    extension [Self <: HistogramOpts](x: Self) {
+      
+      inline def setBuckets(value: js.Array[Double]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+      
+      inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+      
+      inline def setBucketsVarargs(value: Double*): Self = StObject.set(x, "buckets", js.Array(value*))
     }
   }
 }

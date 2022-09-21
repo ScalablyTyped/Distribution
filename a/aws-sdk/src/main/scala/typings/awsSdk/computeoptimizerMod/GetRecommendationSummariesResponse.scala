@@ -33,6 +33,6 @@ object GetRecommendationSummariesResponse {
     
     inline def setRecommendationSummariesUndefined: Self = StObject.set(x, "recommendationSummaries", js.undefined)
     
-    inline def setRecommendationSummariesVarargs(value: RecommendationSummary*): Self = StObject.set(x, "recommendationSummaries", js.Array(value :_*))
+    inline def setRecommendationSummariesVarargs(value: RecommendationSummary*): Self = StObject.set(x, "recommendationSummaries", js.Array(value*))
   }
 }

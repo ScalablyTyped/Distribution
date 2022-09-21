@@ -12,9 +12,9 @@ trait ReadabilityStatistics extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): ReadabilityStatistic
+  def Item(Index: Any): ReadabilityStatistic
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.ReadabilityStatistics_typekey")
   var WordDotReadabilityStatistics_typekey: ReadabilityStatistics
@@ -25,8 +25,8 @@ object ReadabilityStatistics {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => ReadabilityStatistic,
-    Parent: js.Any,
+    Item: Any => ReadabilityStatistic,
+    Parent: Any,
     WordDotReadabilityStatistics_typekey: ReadabilityStatistics
   ): ReadabilityStatistics = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -42,9 +42,9 @@ object ReadabilityStatistics {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => ReadabilityStatistic): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => ReadabilityStatistic): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotReadabilityStatistics_typekey(value: ReadabilityStatistics): Self = StObject.set(x, "Word.ReadabilityStatistics_typekey", value.asInstanceOf[js.Any])
   }

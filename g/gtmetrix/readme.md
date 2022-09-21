@@ -10,10 +10,10 @@ Run and access GTmetrix tests to measure website performance (unofficial)
 | ------------------ | :-------------: |
 | Full name          | gtmetrix |
 | Keywords           | api, gtmetrix, meassure, metrics, pagespeed, performance, screenshot, website, yslow |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 9390 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 279.3333333333333 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/fvdm/nodejs-gtmetrix#readme)

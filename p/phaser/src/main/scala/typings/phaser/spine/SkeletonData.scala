@@ -108,19 +108,19 @@ object SkeletonData {
     
     inline def setAnimations(value: js.Array[Animation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    inline def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value*))
     
     inline def setAudioPath(value: String): Self = StObject.set(x, "audioPath", value.asInstanceOf[js.Any])
     
     inline def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    inline def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value*))
     
     inline def setDefaultSkin(value: Skin): Self = StObject.set(x, "defaultSkin", value.asInstanceOf[js.Any])
     
     inline def setEvents(value: js.Array[EventData]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: EventData*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: EventData*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFindAnimation(value: String => Animation): Self = StObject.set(x, "findAnimation", js.Any.fromFunction1(value))
     
@@ -152,7 +152,7 @@ object SkeletonData {
     
     inline def setIkConstraints(value: js.Array[IkConstraintData]): Self = StObject.set(x, "ikConstraints", value.asInstanceOf[js.Any])
     
-    inline def setIkConstraintsVarargs(value: IkConstraintData*): Self = StObject.set(x, "ikConstraints", js.Array(value :_*))
+    inline def setIkConstraintsVarargs(value: IkConstraintData*): Self = StObject.set(x, "ikConstraints", js.Array(value*))
     
     inline def setImagesPath(value: String): Self = StObject.set(x, "imagesPath", value.asInstanceOf[js.Any])
     
@@ -160,19 +160,19 @@ object SkeletonData {
     
     inline def setPathConstraints(value: js.Array[PathConstraintData]): Self = StObject.set(x, "pathConstraints", value.asInstanceOf[js.Any])
     
-    inline def setPathConstraintsVarargs(value: PathConstraintData*): Self = StObject.set(x, "pathConstraints", js.Array(value :_*))
+    inline def setPathConstraintsVarargs(value: PathConstraintData*): Self = StObject.set(x, "pathConstraints", js.Array(value*))
     
     inline def setSkins(value: js.Array[Skin]): Self = StObject.set(x, "skins", value.asInstanceOf[js.Any])
     
-    inline def setSkinsVarargs(value: Skin*): Self = StObject.set(x, "skins", js.Array(value :_*))
+    inline def setSkinsVarargs(value: Skin*): Self = StObject.set(x, "skins", js.Array(value*))
     
     inline def setSlots(value: js.Array[SlotData]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    inline def setSlotsVarargs(value: SlotData*): Self = StObject.set(x, "slots", js.Array(value :_*))
+    inline def setSlotsVarargs(value: SlotData*): Self = StObject.set(x, "slots", js.Array(value*))
     
     inline def setTransformConstraints(value: js.Array[TransformConstraintData]): Self = StObject.set(x, "transformConstraints", value.asInstanceOf[js.Any])
     
-    inline def setTransformConstraintsVarargs(value: TransformConstraintData*): Self = StObject.set(x, "transformConstraints", js.Array(value :_*))
+    inline def setTransformConstraintsVarargs(value: TransformConstraintData*): Self = StObject.set(x, "transformConstraints", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

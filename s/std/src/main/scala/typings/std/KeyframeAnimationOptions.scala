@@ -8,6 +8,7 @@ trait KeyframeAnimationOptions
   extends StObject
      with KeyframeEffectOptions {
   
+  /* standard dom */
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 object KeyframeAnimationOptions {

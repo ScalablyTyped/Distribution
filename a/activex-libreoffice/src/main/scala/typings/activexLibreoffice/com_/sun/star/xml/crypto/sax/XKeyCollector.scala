@@ -23,12 +23,7 @@ trait XKeyCollector
 }
 object XKeyCollector {
   
-  inline def apply(
-    acquire: () => Unit,
-    queryInterface: `type` => js.Any,
-    release: () => Unit,
-    setKeyId: Double => Unit
-  ): XKeyCollector = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit, setKeyId: Double => Unit): XKeyCollector = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setKeyId = js.Any.fromFunction1(setKeyId))
     __obj.asInstanceOf[XKeyCollector]
   }

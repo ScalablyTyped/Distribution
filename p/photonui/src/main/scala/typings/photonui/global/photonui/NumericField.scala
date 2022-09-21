@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("photonui.NumericField")
 @js.native
-class NumericField ()
+open class NumericField ()
   extends StObject
      with typings.photonui.photonui.NumericField {
   
@@ -43,7 +43,7 @@ class NumericField ()
   
   // readonly
   /* CompleteClass */
-  var layoutOptions: StringDictionary[js.Any] = js.native
+  var layoutOptions: StringDictionary[Any] = js.native
   
   /* CompleteClass */
   var max: Double = js.native
@@ -72,7 +72,7 @@ class NumericField ()
   var placeholder: String = js.native
   
   /* CompleteClass */
-  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit = js.native
+  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: Any): Unit = js.native
   
   /* CompleteClass */
   override def removeCallback(id: String): Unit = js.native

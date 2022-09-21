@@ -4,23 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * AllocationAffinity is the configuration of desired allocation which this
-  * instance could take capacity from.
-  */
 trait SchemaReservationAffinity extends StObject {
   
-  var consumeReservationType: js.UndefOr[String] = js.undefined
+  /**
+    * Specifies the type of reservation from which this instance can consume resources: ANY_RESERVATION (default), SPECIFIC_RESERVATION, or NO_RESERVATION. See Consuming reserved instances for examples.
+    */
+  var consumeReservationType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Corresponds to the label key of reservation resource.
+    * Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify googleapis.com/reservation-name as the key and specify the name of your reservation as its value.
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Corresponds to the label values of reservation resource.
+    * Corresponds to the label values of a reservation resource. This can be either a name to a reservation in the same project or "projects/different-project/reservations/some-reservation-name" to target a shared reservation in the same zone but in a different project.
     */
-  var values: js.UndefOr[js.Array[String]] = js.undefined
+  var values: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaReservationAffinity {
   
@@ -33,16 +32,22 @@ object SchemaReservationAffinity {
     
     inline def setConsumeReservationType(value: String): Self = StObject.set(x, "consumeReservationType", value.asInstanceOf[js.Any])
     
+    inline def setConsumeReservationTypeNull: Self = StObject.set(x, "consumeReservationType", null)
+    
     inline def setConsumeReservationTypeUndefined: Self = StObject.set(x, "consumeReservationType", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
+    inline def setValuesNull: Self = StObject.set(x, "values", null)
+    
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

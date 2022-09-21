@@ -2,7 +2,6 @@ package typings.flushWriteStream
 
 import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("flush-write-stream", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Writable {
+  open class ^ protected () extends Writable {
     def this(write: Write) = this()
     def this(opts: WritableOptions, write: Write) = this()
     def this(write: Write, flush: Flush) = this()
@@ -32,9 +31,9 @@ object mod {
   inline def obj(write: Write): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(write.asInstanceOf[js.Any]).asInstanceOf[Writable]
   inline def obj(write: Write, flush: Flush): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(write.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
-  type Callback = js.Function1[/* error */ js.UndefOr[Error], Unit]
+  type Callback = js.Function1[/* error */ js.UndefOr[js.Error], Unit]
   
   type Flush = js.Function1[/* callback */ Callback, Unit]
   
-  type Write = js.Function3[/* chunk */ js.Any, /* encoding */ String, /* callback */ Callback, Unit]
+  type Write = js.Function3[/* chunk */ Any, /* encoding */ String, /* callback */ Callback, Unit]
 }

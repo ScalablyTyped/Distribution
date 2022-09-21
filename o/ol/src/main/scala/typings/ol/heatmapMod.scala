@@ -17,7 +17,7 @@ object heatmapMod {
   
   @JSImport("ol/layer/Heatmap", JSImport.Default)
   @js.native
-  class default () extends Heatmap {
+  open class default () extends Heatmap {
     def this(opt_options: Options) = this()
   }
   
@@ -152,7 +152,7 @@ object heatmapMod {
       
       inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
       
-      inline def setGradientVarargs(value: String*): Self = StObject.set(x, "gradient", js.Array(value :_*))
+      inline def setGradientVarargs(value: String*): Self = StObject.set(x, "gradient", js.Array(value*))
       
       inline def setMaxResolution(value: Double): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
       

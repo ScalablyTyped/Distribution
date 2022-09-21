@@ -11,16 +11,21 @@ object helperTextFoundationMod {
   
   @JSImport("@material/textfield/helper-text/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCTextFieldHelperTextFoundation {
+  open class default () extends MDCTextFieldHelperTextFoundation {
     def this(adapter: PartialMDCTextFieldHelper) = this()
   }
   
   @JSImport("@material/textfield/helper-text/foundation", "MDCTextFieldHelperTextFoundation")
   @js.native
-  class MDCTextFieldHelperTextFoundation () extends MDCFoundation[MDCTextFieldHelperTextAdapter] {
+  open class MDCTextFieldHelperTextFoundation () extends MDCFoundation[MDCTextFieldHelperTextAdapter] {
     def this(adapter: PartialMDCTextFieldHelper) = this()
     
     def getId(): String | Null = js.native
+    
+    /**
+      * Hides the help text from screen readers.
+      */
+    /* private */ var hide: Any = js.native
     
     def isPersistent(): Boolean = js.native
     
@@ -30,6 +35,8 @@ object helperTextFoundationMod {
     def isValidation(): Boolean = js.native
     
     def isVisible(): Boolean = js.native
+    
+    /* private */ var refreshAlertRole: Any = js.native
     
     /**
       * Sets the content of the helper text field.

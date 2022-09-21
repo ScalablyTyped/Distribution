@@ -1,42 +1,20 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.react.mod.FC
+import typings.wixUiIconsCommon.componentsAlignRightMod.AlignRightProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignRightMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/AlignRight", JSImport.Default)
+  @JSImport("wix-ui-icons-common/classic-editor/system/AlignRight", JSImport.Default)
   @js.native
-  val default: SFC[AlignRightProps] = js.native
+  val default: FC[AlignRightProps] = js.native
   
-  trait AlignRightProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String] = js.undefined
-  }
-  object AlignRightProps {
-    
-    inline def apply(): AlignRightProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AlignRightProps]
-    }
-    
-    extension [Self <: AlignRightProps](x: Self) {
-      
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
-  
-  type _To = SFC[AlignRightProps]
+  type _To = FC[AlignRightProps]
   
   /* This means you don't have to write `default`, but can instead just say `alignRightMod.foo` */
-  override def _to: SFC[AlignRightProps] = default
+  override def _to: FC[AlignRightProps] = default
 }

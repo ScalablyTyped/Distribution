@@ -13,7 +13,7 @@ trait htmlform
      with baseview {
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("$tooltipIn")
   def $tooltipIn(node: HTMLElement): HTMLElement = js.native
@@ -31,7 +31,7 @@ trait htmlform
   
   def blur(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   def clear(): Unit = js.native
   def clear(all: Boolean): Unit = js.native
@@ -43,50 +43,50 @@ trait htmlform
   
   def focus(item: String): Unit = js.native
   
-  def getCleanValues(): js.Any = js.native
+  def getCleanValues(): Any = js.native
   
-  def getDirtyValues(): js.Any = js.native
+  def getDirtyValues(): Any = js.native
   
-  def getScrollState(): js.Any = js.native
+  def getScrollState(): Any = js.native
   
-  def getValues(): js.Any = js.native
-  def getValues(details: js.Any): js.Any = js.native
+  def getValues(): Any = js.native
+  def getValues(details: Any): Any = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
   def isDirty(): Boolean = js.native
   
-  def load(url: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def markInvalid(name: String): Unit = js.native
   def markInvalid(name: String, state: String): Unit = js.native
   def markInvalid(name: String, state: Boolean): Unit = js.native
   
-  def parse(data: js.Any, `type`: String): Unit = js.native
+  def parse(data: Any, `type`: String): Unit = js.native
   
   def refresh(): Unit = js.native
   
-  def render(id: String, data: js.Any, `type`: String): Unit = js.native
-  def render(id: Double, data: js.Any, `type`: String): Unit = js.native
+  def render(id: String, data: Any, `type`: String): Unit = js.native
+  def render(id: Double, data: Any, `type`: String): Unit = js.native
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   
-  def setContent(node: js.Any): Unit = js.native
+  def setContent(node: Any): Unit = js.native
   
   def setDirty(): Unit = js.native
   def setDirty(mark: Boolean): Unit = js.native
   
   def setHTML(html: String): Unit = js.native
   
-  def setValues(values: js.Any): Unit = js.native
-  def setValues(values: js.Any, update: Boolean): Unit = js.native
+  def setValues(values: Any): Unit = js.native
+  def setValues(values: Any, update: Boolean): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

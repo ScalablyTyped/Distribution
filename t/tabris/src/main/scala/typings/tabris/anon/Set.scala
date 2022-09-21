@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Set extends StObject {
   
-  var set: js.UndefOr[js.Any] = js.undefined
+  var set: js.UndefOr[Any] = js.undefined
 }
 object Set {
   
@@ -17,7 +17,7 @@ object Set {
   
   extension [Self <: Set](x: Self) {
     
-    inline def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
   }

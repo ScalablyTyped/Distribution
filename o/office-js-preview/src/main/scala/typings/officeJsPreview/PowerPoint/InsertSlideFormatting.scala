@@ -7,11 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait InsertSlideFormatting extends StObject
 /**
-  *
   * Specifies the formatting options for when slides are inserted.
   *
-  * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-  * @beta
+  * @remarks
+  * [Api set: PowerPointApi 1.2]
   */
 @JSGlobal("PowerPoint.InsertSlideFormatting")
 @js.native
@@ -19,7 +18,8 @@ object InsertSlideFormatting extends StObject {
   
   /**
     * Copy the source theme into the target presentation and use that theme.
-    *
+    * @remarks
+    * [Api set: PowerPointApi 1.2]
     */
   @js.native
   sealed trait keepSourceFormatting
@@ -28,7 +28,8 @@ object InsertSlideFormatting extends StObject {
   
   /**
     * Use the existing theme in the target presentation.
-    *
+    * @remarks
+    * [Api set: PowerPointApi 1.2]
     */
   @js.native
   sealed trait useDestinationTheme

@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RunQueryRequest extends StObject {
   
-  /** The GQL query to run. */
+  /** The ID of the database against which to make the request. '(default)' is not allowed; please use empty string '' to refer the default database. */
+  var databaseId: js.UndefOr[String] = js.undefined
+  
+  /** The GQL query to run. This query must be a non-aggregation query. */
   var gqlQuery: js.UndefOr[GqlQuery] = js.undefined
   
   /**
@@ -29,6 +32,10 @@ object RunQueryRequest {
   }
   
   extension [Self <: RunQueryRequest](x: Self) {
+    
+    inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseIdUndefined: Self = StObject.set(x, "databaseId", js.undefined)
     
     inline def setGqlQuery(value: GqlQuery): Self = StObject.set(x, "gqlQuery", value.asInstanceOf[js.Any])
     

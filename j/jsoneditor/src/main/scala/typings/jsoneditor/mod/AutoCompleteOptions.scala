@@ -19,10 +19,8 @@ trait AutoCompleteOptions extends StObject {
   
   /**
     * Pick one of the two strategies, or define a custom filter function.
-    *
-    * 'start': Match your input from the start, e.g. 'ap' matches 'apple' but 'pl' does not.
-    *
-    * 'contain': Contains the user's input or not, e.g. 'pl' matches 'apple' too.
+    * - 'start': Match your input from the start, e.g. 'ap' matches 'apple' but 'pl' does not.
+    * - 'contain': Contains the user's input or not, e.g. 'pl' matches 'apple' too.
     */
   var filter: js.UndefOr[AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean])] = js.undefined
   
@@ -34,22 +32,12 @@ trait AutoCompleteOptions extends StObject {
     * @param input Can be 'field' or 'value' depending if the user is editing a field name or a value of a node.
     * @param editor The editor instance object that is being edited.
     */
-  var getOptions: js.UndefOr[
-    js.Function4[
-      /* text */ String, 
-      /* path */ JSONPath, 
-      /* input */ AutoCompleteElementType, 
-      /* editor */ JSONEditor, 
-      AutoCompleteCompletion | js.Promise[AutoCompleteCompletion]
-    ]
-  ] = js.undefined
+  var getOptions: js.UndefOr[AutoCompleteGetOptions] = js.undefined
   
   /**
     * Indicate the way to trigger autocomplete menu.
-    *
-    * 'keydown': When you type something in the field or value, it will trigger autocomplete immediately.
-    *
-    * 'focus': When you focus in the field or value, it will trigger the autocomplete.
+    * - 'keydown': When you type something in the field or value, it will trigger autocomplete immediately.
+    * - 'focus': When you focus in the field or value, it will trigger the autocomplete.
     * @default 'keydown'
     */
   var trigger: js.UndefOr[AutoCompleteTrigger] = js.undefined
@@ -71,7 +59,7 @@ object AutoCompleteOptions {
     
     inline def setConfirmKeysUndefined: Self = StObject.set(x, "confirmKeys", js.undefined)
     
-    inline def setConfirmKeysVarargs(value: Double*): Self = StObject.set(x, "confirmKeys", js.Array(value :_*))
+    inline def setConfirmKeysVarargs(value: Double*): Self = StObject.set(x, "confirmKeys", js.Array(value*))
     
     inline def setFilter(value: AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

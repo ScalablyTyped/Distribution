@@ -41,7 +41,7 @@ object HealthConfig {
     
     inline def setTestUndefined: Self = StObject.set(x, "Test", js.undefined)
     
-    inline def setTestVarargs(value: String*): Self = StObject.set(x, "Test", js.Array(value :_*))
+    inline def setTestVarargs(value: String*): Self = StObject.set(x, "Test", js.Array(value*))
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     

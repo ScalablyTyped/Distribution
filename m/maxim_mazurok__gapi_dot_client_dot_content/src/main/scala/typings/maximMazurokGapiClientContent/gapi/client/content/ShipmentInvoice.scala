@@ -35,7 +35,7 @@ object ShipmentInvoice {
     
     inline def setLineItemInvoicesUndefined: Self = StObject.set(x, "lineItemInvoices", js.undefined)
     
-    inline def setLineItemInvoicesVarargs(value: ShipmentInvoiceLineItemInvoice*): Self = StObject.set(x, "lineItemInvoices", js.Array(value :_*))
+    inline def setLineItemInvoicesVarargs(value: ShipmentInvoiceLineItemInvoice*): Self = StObject.set(x, "lineItemInvoices", js.Array(value*))
     
     inline def setShipmentGroupId(value: String): Self = StObject.set(x, "shipmentGroupId", value.asInstanceOf[js.Any])
     

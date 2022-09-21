@@ -20,7 +20,7 @@ trait ISceneLoaderPluginBase extends StObject {
     * @param data string containing the data
     * @returns data to pass to the plugin
     */
-  var directLoad: js.UndefOr[js.Function2[/* scene */ Scene, /* data */ String, js.Any]] = js.undefined
+  var directLoad: js.UndefOr[js.Function2[/* scene */ Scene, /* data */ String, Any]] = js.undefined
   
   /**
     * The file extensions supported by this plugin.
@@ -28,53 +28,37 @@ trait ISceneLoaderPluginBase extends StObject {
   var extensions: String | ISceneLoaderPluginExtensions
   
   /**
-    * The friendly name of this plugin.
-    */
-  var name: String
-  
-  /**
-    * The callback called when loading from a file object.
-    * @param scene scene loading this file
-    * @param file defines the file to load
-    * @param onSuccess defines the callback to call when data is loaded
-    * @param onProgress defines the callback to call during loading process
-    * @param useArrayBuffer defines a boolean indicating that data must be returned as an ArrayBuffer
-    * @param onError defines the callback to call when an error occurs
-    * @returns a file request object
-    */
-  var readFile: js.UndefOr[
-    js.Function6[
-      /* scene */ Scene, 
-      /* file */ File, 
-      /* onSuccess */ js.Function1[/* data */ js.Any, Unit], 
-      /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, js.Any]], 
-      /* useArrayBuffer */ js.UndefOr[Boolean], 
-      /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]], 
-      IFileRequest
-    ]
-  ] = js.undefined
-  
-  /**
     * The callback called when loading from a url.
     * @param scene scene loading this url
-    * @param url url to load
+    * @param fileOrUrl file or url to load
     * @param onSuccess callback called when the file successfully loads
     * @param onProgress callback called while file is loading (if the server supports this mode)
     * @param useArrayBuffer defines a boolean indicating that date must be returned as ArrayBuffer
     * @param onError callback called when the file fails to load
     * @returns a file request object
     */
-  var requestFile: js.UndefOr[
+  var loadFile: js.UndefOr[
     js.Function6[
       /* scene */ Scene, 
-      /* url */ String, 
-      /* onSuccess */ js.Function2[/* data */ js.Any, /* request */ js.UndefOr[WebRequest], Unit], 
+      /* fileOrUrl */ File | String, 
+      /* onSuccess */ js.Function2[/* data */ Any, /* responseURL */ js.UndefOr[String], Unit], 
       /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, Unit]], 
       /* useArrayBuffer */ js.UndefOr[Boolean], 
-      /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]], 
+      /* onError */ js.UndefOr[
+        js.Function2[
+          /* request */ js.UndefOr[WebRequest], 
+          /* exception */ js.UndefOr[LoadFileError], 
+          Unit
+        ]
+      ], 
       IFileRequest
     ]
   ] = js.undefined
+  
+  /**
+    * The friendly name of this plugin.
+    */
+  var name: String
   
   /**
     * The callback that allows custom handling of the root url based on the response url.
@@ -97,25 +81,25 @@ object ISceneLoaderPluginBase {
     
     inline def setCanDirectLoadUndefined: Self = StObject.set(x, "canDirectLoad", js.undefined)
     
-    inline def setDirectLoad(value: (/* scene */ Scene, /* data */ String) => js.Any): Self = StObject.set(x, "directLoad", js.Any.fromFunction2(value))
+    inline def setDirectLoad(value: (/* scene */ Scene, /* data */ String) => Any): Self = StObject.set(x, "directLoad", js.Any.fromFunction2(value))
     
     inline def setDirectLoadUndefined: Self = StObject.set(x, "directLoad", js.undefined)
     
     inline def setExtensions(value: String | ISceneLoaderPluginExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
+    inline def setLoadFile(
+      value: (/* scene */ Scene, /* fileOrUrl */ File | String, /* onSuccess */ js.Function2[/* data */ Any, /* responseURL */ js.UndefOr[String], Unit], /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, Unit]], /* useArrayBuffer */ js.UndefOr[Boolean], /* onError */ js.UndefOr[
+          js.Function2[
+            /* request */ js.UndefOr[WebRequest], 
+            /* exception */ js.UndefOr[LoadFileError], 
+            Unit
+          ]
+        ]) => IFileRequest
+    ): Self = StObject.set(x, "loadFile", js.Any.fromFunction6(value))
+    
+    inline def setLoadFileUndefined: Self = StObject.set(x, "loadFile", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setReadFile(
-      value: (/* scene */ Scene, /* file */ File, /* onSuccess */ js.Function1[/* data */ js.Any, Unit], /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, js.Any]], /* useArrayBuffer */ js.UndefOr[Boolean], /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]]) => IFileRequest
-    ): Self = StObject.set(x, "readFile", js.Any.fromFunction6(value))
-    
-    inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
-    
-    inline def setRequestFile(
-      value: (/* scene */ Scene, /* url */ String, /* onSuccess */ js.Function2[/* data */ js.Any, /* request */ js.UndefOr[WebRequest], Unit], /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, Unit]], /* useArrayBuffer */ js.UndefOr[Boolean], /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]]) => IFileRequest
-    ): Self = StObject.set(x, "requestFile", js.Any.fromFunction6(value))
-    
-    inline def setRequestFileUndefined: Self = StObject.set(x, "requestFile", js.undefined)
     
     inline def setRewriteRootURL(value: (/* rootUrl */ String, /* responseURL */ js.UndefOr[String]) => String): Self = StObject.set(x, "rewriteRootURL", js.Any.fromFunction2(value))
     

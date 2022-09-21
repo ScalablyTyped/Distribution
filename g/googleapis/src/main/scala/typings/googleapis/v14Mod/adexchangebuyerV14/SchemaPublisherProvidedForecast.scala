@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This message carries publisher provided forecasting information.
-  */
 trait SchemaPublisherProvidedForecast extends StObject {
   
   /**
@@ -17,12 +14,12 @@ trait SchemaPublisherProvidedForecast extends StObject {
   /**
     * Publisher provided weekly impressions.
     */
-  var weeklyImpressions: js.UndefOr[String] = js.undefined
+  var weeklyImpressions: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Publisher provided weekly uniques.
     */
-  var weeklyUniques: js.UndefOr[String] = js.undefined
+  var weeklyUniques: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPublisherProvidedForecast {
   
@@ -37,13 +34,17 @@ object SchemaPublisherProvidedForecast {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setWeeklyImpressions(value: String): Self = StObject.set(x, "weeklyImpressions", value.asInstanceOf[js.Any])
+    
+    inline def setWeeklyImpressionsNull: Self = StObject.set(x, "weeklyImpressions", null)
     
     inline def setWeeklyImpressionsUndefined: Self = StObject.set(x, "weeklyImpressions", js.undefined)
     
     inline def setWeeklyUniques(value: String): Self = StObject.set(x, "weeklyUniques", value.asInstanceOf[js.Any])
+    
+    inline def setWeeklyUniquesNull: Self = StObject.set(x, "weeklyUniques", null)
     
     inline def setWeeklyUniquesUndefined: Self = StObject.set(x, "weeklyUniques", js.undefined)
   }

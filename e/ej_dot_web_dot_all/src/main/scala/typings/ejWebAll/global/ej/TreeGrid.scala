@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.TreeGrid")
 @js.native
-class TreeGrid protected ()
+open class TreeGrid protected ()
   extends StObject
      with typings.ejWebAll.ej.TreeGrid {
   def this(element: JQuery) = this()
@@ -169,8 +169,8 @@ object TreeGrid {
   /* static member */
   @JSGlobal("ej.TreeGrid.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.TreeGrid.PageSizeMode")
   @js.native

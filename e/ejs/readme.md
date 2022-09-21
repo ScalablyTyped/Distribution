@@ -1,7 +1,7 @@
 
 # Scala.js typings for ejs
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 Embedded JavaScript templates
@@ -10,10 +10,10 @@ Embedded JavaScript templates
 | ------------------ | :-------------: |
 | Full name          | ejs |
 | Keywords           | template, engine, ejs |
-| # releases         | 12 |
-| # dependents       | 7128 |
-| # downloads        | 346269324 |
-| # stars            | 299 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 4.5123627333333336E7 |
+| # stars            | 6416.0 |
 
 ## Links
 - [Homepage](https://github.com/mde/ejs)

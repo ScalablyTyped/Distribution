@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TemplateStatic
   extends StObject
      with typings.meteorTypings.Blaze.TemplateStatic
-     with /* index */ StringDictionary[js.Any | Template] {
+     with /* index */ StringDictionary[Any | Template] {
   
   var body: Template = js.native
 }

@@ -15,22 +15,6 @@ object semanticUiCheckboxStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait beforeChecked extends StObject
-  inline def beforeChecked: beforeChecked = "beforeChecked".asInstanceOf[beforeChecked]
-  
-  @js.native
-  sealed trait beforeDeterminate extends StObject
-  inline def beforeDeterminate: beforeDeterminate = "beforeDeterminate".asInstanceOf[beforeDeterminate]
-  
-  @js.native
-  sealed trait beforeIndeterminate extends StObject
-  inline def beforeIndeterminate: beforeIndeterminate = "beforeIndeterminate".asInstanceOf[beforeIndeterminate]
-  
-  @js.native
-  sealed trait beforeUnchecked extends StObject
-  inline def beforeUnchecked: beforeUnchecked = "beforeUnchecked".asInstanceOf[beforeUnchecked]
-  
-  @js.native
   sealed trait `can change` extends StObject
   inline def `can change`: `can change` = ("can change").asInstanceOf[`can change`]
   
@@ -43,14 +27,6 @@ object semanticUiCheckboxStrings {
   inline def check: check = "check".asInstanceOf[check]
   
   @js.native
-  sealed trait className extends StObject
-  inline def className: className = "className".asInstanceOf[className]
-  
-  @js.native
-  sealed trait debug extends StObject
-  inline def debug: debug = "debug".asInstanceOf[debug]
-  
-  @js.native
   sealed trait destroy extends StObject
   inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
@@ -61,14 +37,6 @@ object semanticUiCheckboxStrings {
   @js.native
   sealed trait enable extends StObject
   inline def enable: enable = "enable".asInstanceOf[enable]
-  
-  @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
-  
-  @js.native
-  sealed trait fireOnInit extends StObject
-  inline def fireOnInit: fireOnInit = "fireOnInit".asInstanceOf[fireOnInit]
   
   @js.native
   sealed trait indeterminate extends StObject
@@ -85,58 +53,6 @@ object semanticUiCheckboxStrings {
   @js.native
   sealed trait `is unchecked` extends StObject
   inline def `is unchecked`: `is unchecked` = ("is unchecked").asInstanceOf[`is unchecked`]
-  
-  @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
-  
-  @js.native
-  sealed trait namespace extends StObject
-  inline def namespace: namespace = "namespace".asInstanceOf[namespace]
-  
-  @js.native
-  sealed trait onChange extends StObject
-  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
-  
-  @js.native
-  sealed trait onChecked extends StObject
-  inline def onChecked: onChecked = "onChecked".asInstanceOf[onChecked]
-  
-  @js.native
-  sealed trait onDeterminate extends StObject
-  inline def onDeterminate: onDeterminate = "onDeterminate".asInstanceOf[onDeterminate]
-  
-  @js.native
-  sealed trait onDisable extends StObject
-  inline def onDisable: onDisable = "onDisable".asInstanceOf[onDisable]
-  
-  @js.native
-  sealed trait onDisabled extends StObject
-  inline def onDisabled: onDisabled = "onDisabled".asInstanceOf[onDisabled]
-  
-  @js.native
-  sealed trait onEnable extends StObject
-  inline def onEnable: onEnable = "onEnable".asInstanceOf[onEnable]
-  
-  @js.native
-  sealed trait onEnabled extends StObject
-  inline def onEnabled: onEnabled = "onEnabled".asInstanceOf[onEnabled]
-  
-  @js.native
-  sealed trait onIndeterminate extends StObject
-  inline def onIndeterminate: onIndeterminate = "onIndeterminate".asInstanceOf[onIndeterminate]
-  
-  @js.native
-  sealed trait onUnchecked extends StObject
-  inline def onUnchecked: onUnchecked = "onUnchecked".asInstanceOf[onUnchecked]
-  
-  @js.native
-  sealed trait performance extends StObject
-  inline def performance: performance = "performance".asInstanceOf[performance]
-  
-  @js.native
-  sealed trait selector extends StObject
-  inline def selector: selector = "selector".asInstanceOf[selector]
   
   @js.native
   sealed trait `set checked` extends StObject
@@ -183,22 +99,10 @@ object semanticUiCheckboxStrings {
   inline def `should allow uncheck`: `should allow uncheck` = ("should allow uncheck").asInstanceOf[`should allow uncheck`]
   
   @js.native
-  sealed trait silent extends StObject
-  inline def silent: silent = "silent".asInstanceOf[silent]
-  
-  @js.native
   sealed trait toggle extends StObject
   inline def toggle: toggle = "toggle".asInstanceOf[toggle]
   
   @js.native
   sealed trait uncheck extends StObject
   inline def uncheck: uncheck = "uncheck".asInstanceOf[uncheck]
-  
-  @js.native
-  sealed trait uncheckable extends StObject
-  inline def uncheckable: uncheckable = "uncheckable".asInstanceOf[uncheckable]
-  
-  @js.native
-  sealed trait verbose extends StObject
-  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

@@ -1,9 +1,15 @@
 package typings.msportalfxMock
 
-import typings.msportalfxMock.expressServeStaticCoreMod.Application
-import typings.msportalfxMock.mod.RequestHandler
+import org.scalablytyped.runtime.Instantiable1
+import typings.express.mod.RequestHandler
+import typings.expressServeStaticCore.mod.Application
+import typings.expressServeStaticCore.mod.Express
 import typings.node.httpsMod.Server
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.q.mod.Promise
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,8 +31,19 @@ object httpsProxyMod {
       * @param defaultHandler The default handler for incoming requests. The default handler return 404.
       * @return A promise that when resolved will return the proxy server.
       */
-    inline def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    inline def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions, defaultHandler: RequestHandler): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any], defaultHandler.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServer(sslOptions: Any, targetHost: String, options: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServer(
+      sslOptions: Any,
+      targetHost: String,
+      options: ServerOptions,
+      defaultHandler: RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any], defaultHandler.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     
     /**
       * Creates a local server running express with a proxy to allow forwarding call to a target host.
@@ -37,20 +54,19 @@ object httpsProxyMod {
       * @param proxOptions The proxy options.
       * @return A promise that when resolved will return the proxy server.
       */
-    inline def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    inline def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions, proxOptions: ProxyOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any], proxOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServerWithProxy(sslOptions: Any, targetHost: String, serverOptions: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServerWithProxy(sslOptions: Any, targetHost: String, serverOptions: ServerOptions, proxOptions: ProxyOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any], proxOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     
     /**
       * The local express server interface.
       */
     @js.native
-    trait ExpressServer
-      extends typings.msportalfxMock.expressServeStaticCoreMod.Express {
+    trait ExpressServer extends Express {
       
       /**
         * The instance of http proxy.
         */
-      var proxy: js.UndefOr[js.Any] = js.native
+      var proxy: js.UndefOr[Any] = js.native
     }
     
     /**
@@ -61,26 +77,22 @@ object httpsProxyMod {
       /**
         * NOTE: if not defined default will be used.
         */
-      var closeCallback: js.UndefOr[
-            js.Function3[/* res */ js.Any, /* socket */ js.Any, /* head */ js.Any, js.Object]
-          ] = js.undefined
+      var closeCallback: js.UndefOr[js.Function3[/* res */ Any, /* socket */ Any, /* head */ Any, js.Object]] = js.undefined
       
       /**
         * NOTE: if not defined default will be used.
         */
-      var errorCallback: js.UndefOr[js.Function3[/* err */ js.Any, /* req */ js.Any, /* res */ js.Any, js.Object]] = js.undefined
+      var errorCallback: js.UndefOr[js.Function3[/* err */ Any, /* req */ Any, /* res */ Any, js.Object]] = js.undefined
       
       /**
         * NOTE: if not defined default will be used.
         */
-      var openCallback: js.UndefOr[js.Function1[/* proxySocket */ js.Any, js.Object]] = js.undefined
+      var openCallback: js.UndefOr[js.Function1[/* proxySocket */ Any, js.Object]] = js.undefined
       
       /**
         * NOTE: if not defined default will be used.
         */
-      var responseCallback: js.UndefOr[
-            js.Function3[/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any, js.Object]
-          ] = js.undefined
+      var responseCallback: js.UndefOr[js.Function3[/* proxyRes */ Any, /* req */ Any, /* res */ Any, js.Object]] = js.undefined
     }
     object ProxyOptions {
       
@@ -91,19 +103,19 @@ object httpsProxyMod {
       
       extension [Self <: ProxyOptions](x: Self) {
         
-        inline def setCloseCallback(value: (/* res */ js.Any, /* socket */ js.Any, /* head */ js.Any) => js.Object): Self = StObject.set(x, "closeCallback", js.Any.fromFunction3(value))
+        inline def setCloseCallback(value: (/* res */ Any, /* socket */ Any, /* head */ Any) => js.Object): Self = StObject.set(x, "closeCallback", js.Any.fromFunction3(value))
         
         inline def setCloseCallbackUndefined: Self = StObject.set(x, "closeCallback", js.undefined)
         
-        inline def setErrorCallback(value: (/* err */ js.Any, /* req */ js.Any, /* res */ js.Any) => js.Object): Self = StObject.set(x, "errorCallback", js.Any.fromFunction3(value))
+        inline def setErrorCallback(value: (/* err */ Any, /* req */ Any, /* res */ Any) => js.Object): Self = StObject.set(x, "errorCallback", js.Any.fromFunction3(value))
         
         inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
         
-        inline def setOpenCallback(value: /* proxySocket */ js.Any => js.Object): Self = StObject.set(x, "openCallback", js.Any.fromFunction1(value))
+        inline def setOpenCallback(value: /* proxySocket */ Any => js.Object): Self = StObject.set(x, "openCallback", js.Any.fromFunction1(value))
         
         inline def setOpenCallbackUndefined: Self = StObject.set(x, "openCallback", js.undefined)
         
-        inline def setResponseCallback(value: (/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any) => js.Object): Self = StObject.set(x, "responseCallback", js.Any.fromFunction3(value))
+        inline def setResponseCallback(value: (/* proxyRes */ Any, /* req */ Any, /* res */ Any) => js.Object): Self = StObject.set(x, "responseCallback", js.Any.fromFunction3(value))
         
         inline def setResponseCallbackUndefined: Self = StObject.set(x, "responseCallback", js.undefined)
       }
@@ -137,16 +149,33 @@ object httpsProxyMod {
       /**
         * The instance of http proxy.
         */
-      var proxy: js.UndefOr[js.Any] = js.undefined
+      var proxy: js.UndefOr[Any] = js.undefined
       
       /**
         * The local server.
         */
-      var server: Server
+      var server: Server[
+            Instantiable1[/* socket */ Socket, IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              ServerResponse[typings.node.httpMod.IncomingMessage]
+            ]
+          ]
     }
     object ProxyServer {
       
-      inline def apply(app: ExpressServer, initializeDefaultRoutes: () => Unit, patchAddress: String, server: Server): ProxyServer = {
+      inline def apply(
+        app: ExpressServer,
+        initializeDefaultRoutes: () => Unit,
+        patchAddress: String,
+        server: Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[typings.node.httpMod.IncomingMessage]
+              ]
+            ]
+      ): ProxyServer = {
         val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], initializeDefaultRoutes = js.Any.fromFunction0(initializeDefaultRoutes), patchAddress = patchAddress.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProxyServer]
       }
@@ -159,11 +188,19 @@ object httpsProxyMod {
         
         inline def setPatchAddress(value: String): Self = StObject.set(x, "patchAddress", value.asInstanceOf[js.Any])
         
-        inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+        inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
         
         inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
         
-        inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+        inline def setServer(
+          value: Server[
+                  Instantiable1[/* socket */ Socket, IncomingMessage], 
+                  Instantiable1[
+                    /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                    ServerResponse[typings.node.httpMod.IncomingMessage]
+                  ]
+                ]
+        ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       }
     }
     

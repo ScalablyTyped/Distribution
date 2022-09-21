@@ -6,19 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Navigator extends StObject {
   
-  val mediaSession: js.UndefOr[MediaSession] = js.undefined
+  val mediaSession: MediaSession
 }
 object Navigator {
   
-  inline def apply(): Navigator = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(mediaSession: MediaSession): Navigator = {
+    val __obj = js.Dynamic.literal(mediaSession = mediaSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
   
   extension [Self <: Navigator](x: Self) {
     
     inline def setMediaSession(value: MediaSession): Self = StObject.set(x, "mediaSession", value.asInstanceOf[js.Any])
-    
-    inline def setMediaSessionUndefined: Self = StObject.set(x, "mediaSession", js.undefined)
   }
 }

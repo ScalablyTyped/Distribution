@@ -1,6 +1,6 @@
 package typings.pngjs
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.zlibMod.Deflate_
 import typings.node.zlibMod.ZlibOptions
 import typings.pngjs.mod.PNG

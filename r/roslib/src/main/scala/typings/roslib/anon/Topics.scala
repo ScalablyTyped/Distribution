@@ -21,10 +21,10 @@ object Topics {
     
     inline def setTopics(value: js.Array[java.lang.String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
-    inline def setTopicsVarargs(value: java.lang.String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: java.lang.String*): Self = StObject.set(x, "topics", js.Array(value*))
     
     inline def setTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

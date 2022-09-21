@@ -9,12 +9,12 @@ trait ActiveCellChangedEventUIParam extends StObject {
   /**
     * Gets reference to the cell object.
     */
-  var cell: js.UndefOr[js.Any] = js.undefined
+  var cell: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to GridSelection.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ActiveCellChangedEventUIParam {
   
@@ -25,11 +25,11 @@ object ActiveCellChangedEventUIParam {
   
   extension [Self <: ActiveCellChangedEventUIParam](x: Self) {
     
-    inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

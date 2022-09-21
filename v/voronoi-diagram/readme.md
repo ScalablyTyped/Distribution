@@ -11,14 +11,11 @@ Constructs a Voronoi diagram for a collection of points
 | Full name          | voronoi-diagram |
 | Keywords           | voronoi, diagram, point, delaunay, incremental |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 806 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 771.0 |
+| # stars            | 43.0 |
 
 ## Links
-- [Homepage](https://github.com/mikolalysenko/voronoi-diagram)
-- [Bugs](https://github.com/mikolalysenko/voronoi-diagram/issues)
-- [Repository](https://github.com/mikolalysenko/voronoi-diagram)
 - [Npm](https://www.npmjs.com/package/voronoi-diagram)
     
 

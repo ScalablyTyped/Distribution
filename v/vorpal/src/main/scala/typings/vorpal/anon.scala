@@ -50,7 +50,7 @@ object anon {
       
       inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      inline def setStringVarargs(value: java.lang.String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: java.lang.String*): Self = StObject.set(x, "string", js.Array(value*))
     }
   }
 }

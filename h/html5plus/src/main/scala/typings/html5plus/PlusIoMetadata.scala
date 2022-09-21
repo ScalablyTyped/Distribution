@@ -1,6 +1,5 @@
 package typings.html5plus
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +33,7 @@ trait PlusIoMetadata extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var modificationTime: js.UndefOr[Date] = js.undefined
+  var modificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 文件的大小
@@ -61,7 +60,7 @@ object PlusIoMetadata {
     
     inline def setFileCountUndefined: Self = StObject.set(x, "fileCount", js.undefined)
     
-    inline def setModificationTime(value: Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+    inline def setModificationTime(value: js.Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
     inline def setModificationTimeUndefined: Self = StObject.set(x, "modificationTime", js.undefined)
     

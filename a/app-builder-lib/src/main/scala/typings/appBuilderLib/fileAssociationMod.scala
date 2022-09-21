@@ -21,7 +21,7 @@ object fileAssociationMod {
     /**
       * The path to icon (`.icns` for MacOS and `.ico` for Windows), relative to `build` (build resources directory). Defaults to `${firstExt}.icns`/`${firstExt}.ico` (if several extensions specified, first is used) or to application icon.
       *
-      * Not supported on Linux, file issue if need (default icon will be `x-office-document`).
+      * Not supported on Linux, file issue if need (default icon will be `x-office-document`). Not supported on MSI.
       */
     val icon: js.UndefOr[String | Null] = js.undefined
     
@@ -69,7 +69,7 @@ object fileAssociationMod {
       
       inline def setExt(value: String | js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
+      inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value*))
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

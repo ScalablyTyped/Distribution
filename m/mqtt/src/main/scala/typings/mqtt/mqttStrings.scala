@@ -7,8 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mqttStrings {
   
   @js.native
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
+  
+  @js.native
   sealed trait connect extends StObject
   inline def connect: connect = "connect".asInstanceOf[connect]
+  
+  @js.native
+  sealed trait disconnect extends StObject
+  inline def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  
+  @js.native
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait error extends StObject
@@ -27,12 +39,24 @@ object mqttStrings {
   inline def mqtts: mqtts = "mqtts".asInstanceOf[mqtts]
   
   @js.native
+  sealed trait offline extends StObject
+  inline def offline: offline = "offline".asInstanceOf[offline]
+  
+  @js.native
+  sealed trait outgoingEmpty extends StObject
+  inline def outgoingEmpty: outgoingEmpty = "outgoingEmpty".asInstanceOf[outgoingEmpty]
+  
+  @js.native
   sealed trait packetreceive extends StObject
   inline def packetreceive: packetreceive = "packetreceive".asInstanceOf[packetreceive]
   
   @js.native
   sealed trait packetsend extends StObject
   inline def packetsend: packetsend = "packetsend".asInstanceOf[packetsend]
+  
+  @js.native
+  sealed trait reconnect extends StObject
+  inline def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
   
   @js.native
   sealed trait ssl extends StObject

@@ -33,6 +33,6 @@ object ListVPCEConfigurationsResult {
     
     inline def setVpceConfigurationsUndefined: Self = StObject.set(x, "vpceConfigurations", js.undefined)
     
-    inline def setVpceConfigurationsVarargs(value: VPCEConfiguration*): Self = StObject.set(x, "vpceConfigurations", js.Array(value :_*))
+    inline def setVpceConfigurationsVarargs(value: VPCEConfiguration*): Self = StObject.set(x, "vpceConfigurations", js.Array(value*))
   }
 }

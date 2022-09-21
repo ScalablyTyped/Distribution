@@ -34,12 +34,6 @@ object ListIdentitiesInput {
     __obj.asInstanceOf[ListIdentitiesInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ListIdentitiesInput")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: ListIdentitiesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: ListIdentitiesInput](x: Self) {
     
     inline def setHideDisabled(value: Boolean): Self = StObject.set(x, "HideDisabled", value.asInstanceOf[js.Any])

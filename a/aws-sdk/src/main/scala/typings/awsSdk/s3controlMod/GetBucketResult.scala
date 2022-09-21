@@ -14,7 +14,7 @@ trait GetBucketResult extends StObject {
   /**
     * The creation date of the Outposts bucket.
     */
-  var CreationDate: js.UndefOr[typings.awsSdk.s3controlMod.CreationDate] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 
@@ -34,7 +34,7 @@ object GetBucketResult {
     
     inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

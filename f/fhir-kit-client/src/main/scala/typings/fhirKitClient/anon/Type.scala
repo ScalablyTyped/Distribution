@@ -1,23 +1,24 @@
 package typings.fhirKitClient.anon
 
+import typings.fhirKitClient.fhirKitClientStrings.batch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Type[T /* <: String */] extends StObject {
+trait Type extends StObject {
   
-  var `type`: T
+  var `type`: batch
 }
 object Type {
   
-  inline def apply[T /* <: String */](`type`: T): Type[T] = {
+  inline def apply(): Type = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Type[T]]
+    __obj.updateDynamic("type")("batch")
+    __obj.asInstanceOf[Type]
   }
   
-  extension [Self <: Type[?], T /* <: String */](x: Self & Type[T]) {
+  extension [Self <: Type](x: Self) {
     
-    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: batch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

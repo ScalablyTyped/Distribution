@@ -19,6 +19,6 @@ object KruskalMST {
     
     inline def setMst(value: js.Array[Edge]): Self = StObject.set(x, "mst", value.asInstanceOf[js.Any])
     
-    inline def setMstVarargs(value: Edge*): Self = StObject.set(x, "mst", js.Array(value :_*))
+    inline def setMstVarargs(value: Edge*): Self = StObject.set(x, "mst", js.Array(value*))
   }
 }

@@ -16,8 +16,8 @@ object logSerializationMod {
     
     @JSImport("expo/build/logs/LogSerialization", "default.serializeLogDataAsync")
     @js.native
-    def serializeLogDataAsync: js.Function2[/* data */ js.Array[js.Any], /* level */ LogLevel, js.Promise[SerializedData]] = js.native
-    inline def serializeLogDataAsync_=(x: js.Function2[/* data */ js.Array[js.Any], /* level */ LogLevel, js.Promise[SerializedData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serializeLogDataAsync")(x.asInstanceOf[js.Any])
+    def serializeLogDataAsync: js.Function2[/* data */ js.Array[Any], /* level */ LogLevel, js.Promise[SerializedData]] = js.native
+    inline def serializeLogDataAsync_=(x: js.Function2[/* data */ js.Array[Any], /* level */ LogLevel, js.Promise[SerializedData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serializeLogDataAsync")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("expo/build/logs/LogSerialization", "EXPO_CONSOLE_METHOD_NAME")
@@ -41,7 +41,7 @@ object logSerializationMod {
       
       inline def setBody(value: js.Array[LogData]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setBodyVarargs(value: LogData*): Self = StObject.set(x, "body", js.Array(value :_*))
+      inline def setBodyVarargs(value: LogData*): Self = StObject.set(x, "body", js.Array(value*))
       
       inline def setIncludesStack(value: Boolean): Self = StObject.set(x, "includesStack", value.asInstanceOf[js.Any])
     }

@@ -11,9 +11,9 @@ object fetchOptionsMod {
   
   @JSImport("nodegit/fetch-options", "FetchOptions")
   @js.native
-  class FetchOptions ()
+  open class FetchOptions ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var callbacks: js.UndefOr[RemoteCallbacks] = js.native
     
@@ -21,7 +21,7 @@ object fetchOptionsMod {
     
     var downloadTags: js.UndefOr[Double] = js.native
     
-    var proxyOpts: js.UndefOr[js.Any] = js.native
+    var proxyOpts: js.UndefOr[Any] = js.native
     
     var prune: js.UndefOr[Double] = js.native
     

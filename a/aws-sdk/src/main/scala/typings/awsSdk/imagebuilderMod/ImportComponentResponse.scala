@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportComponentResponse extends StObject {
   
   /**
-    * The idempotency token used to make this request idempotent. 
+    * The idempotency token used to make this request idempotent.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the imported component. 
+    * The Amazon Resource Name (ARN) of the imported component.
     */
   var componentBuildVersionArn: js.UndefOr[ComponentBuildVersionArn] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }

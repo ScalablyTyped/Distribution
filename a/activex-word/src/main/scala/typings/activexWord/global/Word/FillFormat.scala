@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.FillFormat")
 @js.native
-/* private */ class FillFormat ()
+/* private */ open class FillFormat ()
   extends StObject
      with typings.activexWord.Word.FillFormat {
   
@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def OneColorGradient(Style: MsoGradientStyle, Variant: Double, Degree: Double): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Pattern: MsoPatternType = js.native

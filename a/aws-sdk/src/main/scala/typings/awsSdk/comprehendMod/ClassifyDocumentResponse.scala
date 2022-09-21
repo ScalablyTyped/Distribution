@@ -12,7 +12,7 @@ trait ClassifyDocumentResponse extends StObject {
   var Classes: js.UndefOr[ListOfClasses] = js.undefined
   
   /**
-    * The labels used the document being analyzed. These are used for multi-label trained models. Individual labels represent different categories that are related in some manner and are not multually exclusive. For example, a movie can be just an action movie, or it can be an action movie, a science fiction movie, and a comedy, all at the same time. 
+    * The labels used the document being analyzed. These are used for multi-label trained models. Individual labels represent different categories that are related in some manner and are not mutually exclusive. For example, a movie can be just an action movie, or it can be an action movie, a science fiction movie, and a comedy, all at the same time. 
     */
   var Labels: js.UndefOr[ListOfLabels] = js.undefined
 }
@@ -29,12 +29,12 @@ object ClassifyDocumentResponse {
     
     inline def setClassesUndefined: Self = StObject.set(x, "Classes", js.undefined)
     
-    inline def setClassesVarargs(value: DocumentClass*): Self = StObject.set(x, "Classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: DocumentClass*): Self = StObject.set(x, "Classes", js.Array(value*))
     
     inline def setLabels(value: ListOfLabels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    inline def setLabelsVarargs(value: DocumentLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: DocumentLabel*): Self = StObject.set(x, "Labels", js.Array(value*))
   }
 }

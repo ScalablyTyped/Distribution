@@ -1,7 +1,6 @@
 package typings.opener
 
 import typings.node.childProcessMod.ChildProcess
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,5 +20,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
+  type Callback = js.Function3[/* error */ js.Error, /* stdout */ String, /* stderr */ String, Unit]
 }

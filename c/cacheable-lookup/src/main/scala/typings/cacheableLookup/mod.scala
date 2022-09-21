@@ -2,7 +2,7 @@ package typings.cacheableLookup
 
 import typings.cacheableLookup.anon.LookupOptionsalltrue
 import typings.cacheableLookup.anon.Typeoflookup
-import typings.node.NodeJS.ErrnoException
+import typings.cacheableLookup.cacheableLookupBooleans.`false`
 import typings.node.dnsMod.promises.Resolver
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("cacheable-lookup", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with CacheableLookup {
     def this(options: Options) = this()
@@ -71,7 +71,12 @@ object mod {
     
     def lookup(
       hostname: String,
-      callback: js.Function3[/* error */ ErrnoException, /* address */ String, /* family */ IPFamily, Unit]
+      callback: js.Function3[
+          /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* address */ String, 
+          /* family */ IPFamily, 
+          Unit
+        ]
     ): Unit = js.native
     /**
     	 * @see https://nodejs.org/api/dns.html#dns_dns_lookup_hostname_options_callback
@@ -79,17 +84,31 @@ object mod {
     def lookup(
       hostname: String,
       family: IPFamily,
-      callback: js.Function3[/* error */ ErrnoException, /* address */ String, /* family */ IPFamily, Unit]
+      callback: js.Function3[
+          /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* address */ String, 
+          /* family */ IPFamily, 
+          Unit
+        ]
     ): Unit = js.native
     def lookup(
       hostname: String,
       options: LookupOptionsalltrue,
-      callback: js.Function2[/* error */ ErrnoException, /* result */ js.Array[EntryObject], Unit]
+      callback: js.Function2[
+          /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* result */ js.Array[EntryObject], 
+          Unit
+        ]
     ): Unit = js.native
     def lookup(
       hostname: String,
       options: LookupOptions,
-      callback: js.Function3[/* error */ ErrnoException, /* address */ String, /* family */ IPFamily, Unit]
+      callback: js.Function3[
+          /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* address */ String, 
+          /* family */ IPFamily, 
+          Unit
+        ]
     ): Unit = js.native
     
     def lookupAsync(hostname: String): js.Promise[EntryObject] = js.native
@@ -146,6 +165,11 @@ object mod {
     val family: IPFamily
     
     /**
+    	 * Whether this entry comes from the cache or a query
+    	 */
+    val source: js.UndefOr[EntrySource] = js.undefined
+    
+    /**
     	 * The original TTL.
     	 */
     val ttl: js.UndefOr[Double] = js.undefined
@@ -167,10 +191,26 @@ object mod {
       
       inline def setFamily(value: IPFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
+      inline def setSource(value: EntrySource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      
       inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
       inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.cacheableLookup.cacheableLookupStrings.query
+    - typings.cacheableLookup.cacheableLookupStrings.cache
+  */
+  trait EntrySource extends StObject
+  object EntrySource {
+    
+    inline def cache: typings.cacheableLookup.cacheableLookupStrings.cache = "cache".asInstanceOf[typings.cacheableLookup.cacheableLookupStrings.cache]
+    
+    inline def query: typings.cacheableLookup.cacheableLookupStrings.query = "query".asInstanceOf[typings.cacheableLookup.cacheableLookupStrings.query]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -258,7 +298,7 @@ object mod {
     	 * **Note**: This has no effect if the `fallbackDuration` option is less than `1`.
     	 * @default dns.lookup
     	 */
-    var lookup: js.UndefOr[Typeoflookup] = js.undefined
+    var lookup: js.UndefOr[Typeoflookup | `false`] = js.undefined
     
     /**
     	 * Limits the cache time (TTL). If set to `0`, it will make a new DNS query each time.
@@ -293,7 +333,7 @@ object mod {
       
       inline def setFallbackDurationUndefined: Self = StObject.set(x, "fallbackDuration", js.undefined)
       
-      inline def setLookup(value: Typeoflookup): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+      inline def setLookup(value: Typeoflookup | `false`): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
       
       inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
       

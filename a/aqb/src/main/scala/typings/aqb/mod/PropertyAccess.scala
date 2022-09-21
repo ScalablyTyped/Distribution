@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyAccess
   extends StObject
      with Expression
-     with Instantiable2[/* obj */ js.Any, /* keys */ js.Array[js.Any], Expression] {
+     with Instantiable2[/* obj */ Any, /* keys */ js.Array[Any], Expression] {
   
   var _keys: js.Array[Expression] = js.native
   

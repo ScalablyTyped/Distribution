@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteChannelBanRequest extends StObject {
   
   /**
-    * The ARN of the channel from which the app instance user was banned.
+    * The ARN of the channel from which the AppInstanceUser was banned.
     */
   var ChannelArn: ChimeArn
   
   /**
-    * The ARN of the app instance user that you want to reinstate.
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
+    * The ARN of the AppInstanceUser that you want to reinstate.
     */
   var MemberArn: ChimeArn
 }
@@ -26,6 +31,10 @@ object DeleteChannelBanRequest {
   extension [Self <: DeleteChannelBanRequest](x: Self) {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
     
     inline def setMemberArn(value: ChimeArn): Self = StObject.set(x, "MemberArn", value.asInstanceOf[js.Any])
   }

@@ -1,9 +1,5 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,28 +9,22 @@ trait ParamsResourceInappproductsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    *
+    * Deprecated and ignored. The page size is determined by the server.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Unique identifier for the Android app with in-app products; for example,
-    * "com.spiffygame".
+    * Package name of the app.
     */
   var packageName: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Deprecated and ignored. Set the `token` parameter to rertieve the next page.
     */
   var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    *
+    * Pagination token. If empty, list starts at the first product.
     */
   var token: js.UndefOr[String] = js.undefined
 }
@@ -46,10 +36,6 @@ object ParamsResourceInappproductsList {
   }
   
   extension [Self <: ParamsResourceInappproductsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

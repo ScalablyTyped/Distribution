@@ -11,7 +11,7 @@ trait FreedomModuleFactoryManager[T] extends StObject {
   
   // This is the factory constructor for a new instance of a stub/channel to a
   // module.
-  def apply(args: js.Any*): T = js.native
+  def apply(args: Any*): T = js.native
   
   var api: String = js.native
   

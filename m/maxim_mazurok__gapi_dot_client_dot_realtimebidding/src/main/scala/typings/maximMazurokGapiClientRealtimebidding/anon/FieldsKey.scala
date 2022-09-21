@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientRealtimebidding.anon
 
-import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.CloseUserListRequest
+import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.SuspendPretargetingConfigRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait FieldsKey extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the user list to close. See UserList.name */
+  /** Required. The name of the pretargeting configuration. Format: bidders/{bidderAccountId}/pretargetingConfig/{configId} */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait FieldsKey extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CloseUserListRequest
+  var resource: SuspendPretargetingConfigRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait FieldsKey extends StObject {
 }
 object FieldsKey {
   
-  inline def apply(name: String, resource: CloseUserListRequest): FieldsKey = {
+  inline def apply(name: String, resource: SuspendPretargetingConfigRequest): FieldsKey = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKey]
   }
@@ -94,7 +94,7 @@ object FieldsKey {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CloseUserListRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SuspendPretargetingConfigRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -24,6 +24,6 @@ object ListVoiceConnectorTerminationCredentialsResponse {
     
     inline def setUsernamesUndefined: Self = StObject.set(x, "Usernames", js.undefined)
     
-    inline def setUsernamesVarargs(value: SensitiveString*): Self = StObject.set(x, "Usernames", js.Array(value :_*))
+    inline def setUsernamesVarargs(value: SensitiveString*): Self = StObject.set(x, "Usernames", js.Array(value*))
   }
 }

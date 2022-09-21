@@ -115,11 +115,11 @@ object ProductVariant {
     
     inline def setImageVariant(value: js.Array[ImageVariant]): Self = StObject.set(x, "imageVariant", value.asInstanceOf[js.Any])
     
-    inline def setImageVariantVarargs(value: ImageVariant*): Self = StObject.set(x, "imageVariant", js.Array(value :_*))
+    inline def setImageVariantVarargs(value: ImageVariant*): Self = StObject.set(x, "imageVariant", js.Array(value*))
     
     inline def setOptionValues(value: js.Array[OptionValue]): Self = StObject.set(x, "optionValues", value.asInstanceOf[js.Any])
     
-    inline def setOptionValuesVarargs(value: OptionValue*): Self = StObject.set(x, "optionValues", js.Array(value :_*))
+    inline def setOptionValuesVarargs(value: OptionValue*): Self = StObject.set(x, "optionValues", js.Array(value*))
     
     inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     

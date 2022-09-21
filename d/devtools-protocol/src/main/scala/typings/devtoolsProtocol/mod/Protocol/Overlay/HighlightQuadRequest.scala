@@ -42,6 +42,6 @@ object HighlightQuadRequest {
     
     inline def setQuad(value: Quad): Self = StObject.set(x, "quad", value.asInstanceOf[js.Any])
     
-    inline def setQuadVarargs(value: Double*): Self = StObject.set(x, "quad", js.Array(value :_*))
+    inline def setQuadVarargs(value: Double*): Self = StObject.set(x, "quad", js.Array(value*))
   }
 }

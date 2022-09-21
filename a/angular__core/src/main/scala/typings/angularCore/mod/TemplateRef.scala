@@ -9,13 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 abstract class TemplateRef[C] () extends StObject {
   
   /**
-    * Instantiates an embedded view based on this template,
-    * and attaches it to the view container.
+    * Instantiates an unattached embedded view based on this template.
     * @param context The data-binding context of the embedded view, as declared
     * in the `<ng-template>` usage.
+    * @param injector Injector to be used within the embedded view.
     * @returns The new embedded view object.
     */
   def createEmbeddedView(context: C): EmbeddedViewRef[C] = js.native
+  def createEmbeddedView(context: C, injector: Injector): EmbeddedViewRef[C] = js.native
   
   /**
     * The anchor element in the parent view for this embedded view.
@@ -28,5 +29,5 @@ abstract class TemplateRef[C] () extends StObject {
     * data-binding and injection context from the original location.
     *
     */
-  def elementRef: ElementRef[js.Any] = js.native
+  val elementRef: ElementRef[Any] = js.native
 }

@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A test of an Android Application with a Test Loop. The intent
-  * \&lt;intent-name\&gt; will be implicitly added, since Games is the only
-  * user of this api, for the time being.
-  */
 trait SchemaAndroidTestLoop extends StObject {
   
   /**
@@ -22,26 +17,19 @@ trait SchemaAndroidTestLoop extends StObject {
   var appBundle: js.UndefOr[SchemaAppBundle] = js.undefined
   
   /**
-    * The java package for the application under test. The default is
-    * determined by examining the application&#39;s manifest.
+    * The java package for the application under test. The default is determined by examining the application's manifest.
     */
-  var appPackageId: js.UndefOr[String] = js.undefined
+  var appPackageId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The list of scenario labels that should be run during the test. The
-    * scenario labels should map to labels defined in the application&#39;s
-    * manifest. For example, player_experience and
-    * com.google.test.loops.player_experience add all of the loops labeled in
-    * the manifest with the com.google.test.loops.player_experience name to the
-    * execution. Scenarios can also be specified in the scenarios field.
+    * The list of scenario labels that should be run during the test. The scenario labels should map to labels defined in the application's manifest. For example, player_experience and com.google.test.loops.player_experience add all of the loops labeled in the manifest with the com.google.test.loops.player_experience name to the execution. Scenarios can also be specified in the scenarios field.
     */
-  var scenarioLabels: js.UndefOr[js.Array[String]] = js.undefined
+  var scenarioLabels: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The list of scenarios that should be run during the test. The default is
-    * all test loops, derived from the application&#39;s manifest.
+    * The list of scenarios that should be run during the test. The default is all test loops, derived from the application's manifest.
     */
-  var scenarios: js.UndefOr[js.Array[Double]] = js.undefined
+  var scenarios: js.UndefOr[js.Array[Double] | Null] = js.undefined
 }
 object SchemaAndroidTestLoop {
   
@@ -62,18 +50,24 @@ object SchemaAndroidTestLoop {
     
     inline def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
     
+    inline def setAppPackageIdNull: Self = StObject.set(x, "appPackageId", null)
+    
     inline def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
     
     inline def setScenarioLabels(value: js.Array[String]): Self = StObject.set(x, "scenarioLabels", value.asInstanceOf[js.Any])
     
+    inline def setScenarioLabelsNull: Self = StObject.set(x, "scenarioLabels", null)
+    
     inline def setScenarioLabelsUndefined: Self = StObject.set(x, "scenarioLabels", js.undefined)
     
-    inline def setScenarioLabelsVarargs(value: String*): Self = StObject.set(x, "scenarioLabels", js.Array(value :_*))
+    inline def setScenarioLabelsVarargs(value: String*): Self = StObject.set(x, "scenarioLabels", js.Array(value*))
     
     inline def setScenarios(value: js.Array[Double]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
     
+    inline def setScenariosNull: Self = StObject.set(x, "scenarios", null)
+    
     inline def setScenariosUndefined: Self = StObject.set(x, "scenarios", js.undefined)
     
-    inline def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+    inline def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value*))
   }
 }

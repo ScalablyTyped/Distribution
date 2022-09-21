@@ -26,6 +26,6 @@ object IExtensionModule {
     
     inline def setDefault(value: IExtension | js.Array[IExtension]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setDefaultVarargs(value: IExtension*): Self = StObject.set(x, "default", js.Array(value :_*))
+    inline def setDefaultVarargs(value: IExtension*): Self = StObject.set(x, "default", js.Array(value*))
   }
 }

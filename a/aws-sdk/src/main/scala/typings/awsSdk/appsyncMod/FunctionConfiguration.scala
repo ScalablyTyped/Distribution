@@ -17,7 +17,7 @@ trait FunctionConfiguration extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The ARN of the Function object.
+    * The Amazon Resource Name (ARN) of the Function object.
     */
   var functionArn: js.UndefOr[String] = js.undefined
   
@@ -27,9 +27,14 @@ trait FunctionConfiguration extends StObject {
   var functionId: js.UndefOr[String] = js.undefined
   
   /**
-    * The version of the request mapping template. Currently only the 2018-05-29 version of the template is supported.
+    * The version of the request mapping template. Currently, only the 2018-05-29 version of the template is supported.
     */
   var functionVersion: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The maximum batching size for a resolver.
+    */
+  var maxBatchSize: js.UndefOr[MaxBatchSize] = js.undefined
   
   /**
     * The name of the Function object.
@@ -45,6 +50,8 @@ trait FunctionConfiguration extends StObject {
     * The Function response mapping template.
     */
   var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
+  
+  var syncConfig: js.UndefOr[SyncConfig] = js.undefined
 }
 object FunctionConfiguration {
   
@@ -75,6 +82,10 @@ object FunctionConfiguration {
     
     inline def setFunctionVersionUndefined: Self = StObject.set(x, "functionVersion", js.undefined)
     
+    inline def setMaxBatchSize(value: MaxBatchSize): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
+    
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -86,5 +97,9 @@ object FunctionConfiguration {
     inline def setResponseMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
     
     inline def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
+    
+    inline def setSyncConfig(value: SyncConfig): Self = StObject.set(x, "syncConfig", value.asInstanceOf[js.Any])
+    
+    inline def setSyncConfigUndefined: Self = StObject.set(x, "syncConfig", js.undefined)
   }
 }

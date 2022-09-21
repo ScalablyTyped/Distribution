@@ -1,7 +1,7 @@
 
 # Scala.js typings for saml2-js
 
-Typings are for version 1.6.0
+Typings are for version 3.0.2
 
 ## Library description:
 SAML 2.0 node helpers
@@ -11,9 +11,9 @@ SAML 2.0 node helpers
 | Full name          | saml2-js |
 | Keywords           | saml, node |
 | # releases         | 7 |
-| # dependents       | 15 |
-| # downloads        | 1445843 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 258827.66666666666 |
+| # stars            | 329.0 |
 
 ## Links
 - [Homepage](https://github.com/Clever/saml2#readme)

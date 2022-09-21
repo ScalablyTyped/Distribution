@@ -74,7 +74,7 @@ object ScalingPlanResource {
     
     inline def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
     
-    inline def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
+    inline def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = StObject.set(x, "ScalingPolicies", js.Array(value*))
     
     inline def setScalingStatusCode(value: ScalingStatusCode): Self = StObject.set(x, "ScalingStatusCode", value.asInstanceOf[js.Any])
     

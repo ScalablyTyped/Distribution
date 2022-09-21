@@ -7,22 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompilerError
   extends StObject
-     with Error {
+     with Error
+     with InferCompilerError[Any] {
   
-  var code: Double
+  var code: Double | String
   
   var loc: js.UndefOr[SourceLocation] = js.undefined
 }
 object CompilerError {
   
-  inline def apply(code: Double, message: String, name: String): CompilerError = {
+  inline def apply(code: Double | String, message: String, name: String): CompilerError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilerError]
   }
   
   extension [Self <: CompilerError](x: Self) {
     
-    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,7 @@ object searchBarPropsTypeMod {
     
     var showCancelButton: js.UndefOr[Boolean] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     var value: js.UndefOr[String] = js.undefined
   }
@@ -157,7 +157,7 @@ object searchBarPropsTypeMod {
       
       inline def setShowCancelButtonUndefined: Self = StObject.set(x, "showCancelButton", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

@@ -37,1023 +37,1023 @@ object commonUskeyboardlayoutMod {
   /* Inlined std.Readonly<std.Record<puppeteer-core.puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout.KeyInput, puppeteer-core.puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout.KeyDefinition>> */
   object keyDefinitions extends Shortcut {
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions")
     @js.native
     val ^ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.$")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.$")
     @js.native
     val $: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.0")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.0")
     @js.native
     val `0`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.1")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.1")
     @js.native
     val `1`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.2")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.2")
     @js.native
     val `2`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.3")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.3")
     @js.native
     val `3`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.4")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.4")
     @js.native
     val `4`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.5")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.5")
     @js.native
     val `5`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.6")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.6")
     @js.native
     val `6`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.7")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.7")
     @js.native
     val `7`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.8")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.8")
     @js.native
     val `8`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.9")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.9")
     @js.native
     val `9`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.@")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.@")
     @js.native
     val `@`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.A")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.A")
     @js.native
     val A_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Abort")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Abort")
     @js.native
     val Abort: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Accept")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Accept")
     @js.native
     val Accept: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Alt")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Alt")
     @js.native
     val Alt: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.AltGraph")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.AltGraph")
     @js.native
     val AltGraph: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.AltLeft")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.AltLeft")
     @js.native
     val AltLeft: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.AltRight")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.AltRight")
     @js.native
     val AltRight: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.&")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.&")
     @js.native
     val Ampersand: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.'")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.'")
     @js.native
     val Apostrophe: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ArrowDown")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ArrowDown")
     @js.native
     val ArrowDown: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ArrowLeft")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ArrowLeft")
     @js.native
     val ArrowLeft: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ArrowRight")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ArrowRight")
     @js.native
     val ArrowRight: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ArrowUp")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ArrowUp")
     @js.native
     val ArrowUp: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.*")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.*")
     @js.native
     val Asterisk: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Attn")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Attn")
     @js.native
     val Attn: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.AudioVolumeDown")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.AudioVolumeDown")
     @js.native
     val AudioVolumeDown: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.AudioVolumeMute")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.AudioVolumeMute")
     @js.native
     val AudioVolumeMute: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.AudioVolumeUp")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.AudioVolumeUp")
     @js.native
     val AudioVolumeUp: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.B")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.B")
     @js.native
     val B_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Backquote")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Backquote")
     @js.native
     val Backquote: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Backslash")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Backslash")
     @js.native
     val Backslash: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Backspace")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Backspace")
     @js.native
     val Backspace: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.BracketLeft")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.BracketLeft")
     @js.native
     val BracketLeft: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.BracketRight")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.BracketRight")
     @js.native
     val BracketRight: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.C")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.C")
     @js.native
     val C_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Call")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Call")
     @js.native
     val Call: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Camera")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Camera")
     @js.native
     val Camera: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Cancel")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Cancel")
     @js.native
     val Cancel: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.CapsLock")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.CapsLock")
     @js.native
     val CapsLock: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.\r")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.\r")
     @js.native
     val Carriagereturn: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Clear")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Clear")
     @js.native
     val Clear: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.:")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.:")
     @js.native
     val Colon: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.,")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.,")
     @js.native
     val Comma: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Comma")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Comma")
     @js.native
     val Comma_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ContextMenu")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ContextMenu")
     @js.native
     val ContextMenu: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Control")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Control")
     @js.native
     val Control: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ControlLeft")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ControlLeft")
     @js.native
     val ControlLeft: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ControlRight")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ControlRight")
     @js.native
     val ControlRight: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Convert")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Convert")
     @js.native
     val Convert: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.CrSel")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.CrSel")
     @js.native
     val CrSel: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.D")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.D")
     @js.native
     val D_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Delete")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Delete")
     @js.native
     val Delete: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit0")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit0")
     @js.native
     val Digit0: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit1")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit1")
     @js.native
     val Digit1: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit2")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit2")
     @js.native
     val Digit2: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit3")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit3")
     @js.native
     val Digit3: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit4")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit4")
     @js.native
     val Digit4: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit5")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit5")
     @js.native
     val Digit5: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit6")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit6")
     @js.native
     val Digit6: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit7")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit7")
     @js.native
     val Digit7: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit8")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit8")
     @js.native
     val Digit8: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Digit9")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Digit9")
     @js.native
     val Digit9: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions..")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions..")
     @js.native
     val Dot: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.E")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.E")
     @js.native
     val E_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Eject")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Eject")
     @js.native
     val Eject: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.End")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.End")
     @js.native
     val End: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.EndCall")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.EndCall")
     @js.native
     val EndCall: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Enter")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Enter")
     @js.native
     val Enter: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Equal")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Equal")
     @js.native
     val Equal: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.=")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.=")
     @js.native
     val Equalssign: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.EraseEof")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.EraseEof")
     @js.native
     val EraseEof: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Escape")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Escape")
     @js.native
     val Escape: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ExSel")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ExSel")
     @js.native
     val ExSel: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.!")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.!")
     @js.native
     val Exclamationmark: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Execute")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Execute")
     @js.native
     val Execute: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F1")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F1")
     @js.native
     val F1: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F10")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F10")
     @js.native
     val F10: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F11")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F11")
     @js.native
     val F11: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F12")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F12")
     @js.native
     val F12: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F13")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F13")
     @js.native
     val F13: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F14")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F14")
     @js.native
     val F14: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F15")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F15")
     @js.native
     val F15: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F16")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F16")
     @js.native
     val F16: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F17")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F17")
     @js.native
     val F17: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F18")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F18")
     @js.native
     val F18: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F19")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F19")
     @js.native
     val F19: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F2")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F2")
     @js.native
     val F2: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F20")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F20")
     @js.native
     val F20: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F21")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F21")
     @js.native
     val F21: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F22")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F22")
     @js.native
     val F22: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F23")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F23")
     @js.native
     val F23: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F24")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F24")
     @js.native
     val F24: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F3")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F3")
     @js.native
     val F3: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F4")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F4")
     @js.native
     val F4: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F5")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F5")
     @js.native
     val F5: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F6")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F6")
     @js.native
     val F6: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F7")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F7")
     @js.native
     val F7: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F8")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F8")
     @js.native
     val F8: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F9")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F9")
     @js.native
     val F9: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.F")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.F")
     @js.native
     val F_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.G")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.G")
     @js.native
     val G_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.`")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.`")
     @js.native
     val Graveaccent: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.>")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.>")
     @js.native
     val Greaterthansign: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.H")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.H")
     @js.native
     val H_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Help")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Help")
     @js.native
     val Help: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Home")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Home")
     @js.native
     val Home: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.I")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.I")
     @js.native
     val I_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Insert")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Insert")
     @js.native
     val Insert: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.J")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.J")
     @js.native
     val J_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.K")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.K")
     @js.native
     val K_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyA")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyA")
     @js.native
     val KeyA: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyB")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyB")
     @js.native
     val KeyB: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyC")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyC")
     @js.native
     val KeyC: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyD")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyD")
     @js.native
     val KeyD: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyE")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyE")
     @js.native
     val KeyE: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyF")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyF")
     @js.native
     val KeyF: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyG")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyG")
     @js.native
     val KeyG: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyH")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyH")
     @js.native
     val KeyH: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyI")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyI")
     @js.native
     val KeyI: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyJ")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyJ")
     @js.native
     val KeyJ: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyK")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyK")
     @js.native
     val KeyK: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyL")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyL")
     @js.native
     val KeyL: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyM")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyM")
     @js.native
     val KeyM: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyN")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyN")
     @js.native
     val KeyN: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyO")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyO")
     @js.native
     val KeyO: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyP")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyP")
     @js.native
     val KeyP: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyQ")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyQ")
     @js.native
     val KeyQ: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyR")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyR")
     @js.native
     val KeyR: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyS")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyS")
     @js.native
     val KeyS: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyT")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyT")
     @js.native
     val KeyT: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyU")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyU")
     @js.native
     val KeyU: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyV")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyV")
     @js.native
     val KeyV: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyW")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyW")
     @js.native
     val KeyW: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyX")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyX")
     @js.native
     val KeyX: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyY")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyY")
     @js.native
     val KeyY: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.KeyZ")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.KeyZ")
     @js.native
     val KeyZ: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.L")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.L")
     @js.native
     val L_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.{")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.{")
     @js.native
     val Leftcurlybracket: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.(")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.(")
     @js.native
     val Leftparenthesis: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.<")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.<")
     @js.native
     val Lessthansign: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.\n")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.\n")
     @js.native
     val Linefeed: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.M")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.M")
     @js.native
     val M_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.MediaPlayPause")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.MediaPlayPause")
     @js.native
     val MediaPlayPause: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.MediaStop")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.MediaStop")
     @js.native
     val MediaStop: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.MediaTrackNext")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.MediaTrackNext")
     @js.native
     val MediaTrackNext: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.MediaTrackPrevious")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.MediaTrackPrevious")
     @js.native
     val MediaTrackPrevious: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Meta")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Meta")
     @js.native
     val Meta: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.MetaLeft")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.MetaLeft")
     @js.native
     val MetaLeft: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.MetaRight")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.MetaRight")
     @js.native
     val MetaRight: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Minus")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Minus")
     @js.native
     val Minus: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ModeChange")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ModeChange")
     @js.native
     val ModeChange: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.N")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.N")
     @js.native
     val N_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.NonConvert")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.NonConvert")
     @js.native
     val NonConvert: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.NumLock")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.NumLock")
     @js.native
     val NumLock: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.#")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.#")
     @js.native
     val Numbersign: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad0")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad0")
     @js.native
     val Numpad0: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad1")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad1")
     @js.native
     val Numpad1: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad2")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad2")
     @js.native
     val Numpad2: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad3")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad3")
     @js.native
     val Numpad3: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad4")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad4")
     @js.native
     val Numpad4: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad5")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad5")
     @js.native
     val Numpad5: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad6")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad6")
     @js.native
     val Numpad6: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad7")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad7")
     @js.native
     val Numpad7: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad8")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad8")
     @js.native
     val Numpad8: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Numpad9")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Numpad9")
     @js.native
     val Numpad9: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.NumpadAdd")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.NumpadAdd")
     @js.native
     val NumpadAdd: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.NumpadDecimal")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.NumpadDecimal")
     @js.native
     val NumpadDecimal: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.NumpadDivide")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.NumpadDivide")
     @js.native
     val NumpadDivide: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.NumpadEnter")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.NumpadEnter")
     @js.native
     val NumpadEnter: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.NumpadEqual")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.NumpadEqual")
     @js.native
     val NumpadEqual: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.NumpadMultiply")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.NumpadMultiply")
     @js.native
     val NumpadMultiply: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.NumpadSubtract")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.NumpadSubtract")
     @js.native
     val NumpadSubtract: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.O")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.O")
     @js.native
     val O_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Open")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Open")
     @js.native
     val Open: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.P")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.P")
     @js.native
     val P_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.PageDown")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.PageDown")
     @js.native
     val PageDown: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.PageUp")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.PageUp")
     @js.native
     val PageUp: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Pause")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Pause")
     @js.native
     val Pause: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.%")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.%")
     @js.native
     val Percentsign: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Period")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Period")
     @js.native
     val Period: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Play")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Play")
     @js.native
     val Play: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.+")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.+")
     @js.native
     val Plussign: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Power")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Power")
     @js.native
     val Power: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Print")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Print")
     @js.native
     val Print: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.PrintScreen")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.PrintScreen")
     @js.native
     val PrintScreen: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Props")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Props")
     @js.native
     val Props: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Q")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Q")
     @js.native
     val Q_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.?")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.?")
     @js.native
     val Questionmark: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.\"")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.\"")
     @js.native
     val Quotationmark: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Quote")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Quote")
     @js.native
     val Quote: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.R")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.R")
     @js.native
     val R_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.}")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.}")
     @js.native
     val Rightcurlybracket: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.)")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.)")
     @js.native
     val Rightparenthesis: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.S")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.S")
     @js.native
     val S_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ScrollLock")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ScrollLock")
     @js.native
     val ScrollLock: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Select")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Select")
     @js.native
     val Select: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.;")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.;")
     @js.native
     val Semicolon: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Semicolon")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Semicolon")
     @js.native
     val Semicolon_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Shift")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Shift")
     @js.native
     val Shift: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ShiftLeft")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ShiftLeft")
     @js.native
     val ShiftLeft: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ShiftRight")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ShiftRight")
     @js.native
     val ShiftRight: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions./")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions./")
     @js.native
     val Slash: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Slash")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Slash")
     @js.native
     val Slash_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.SoftLeft")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.SoftLeft")
     @js.native
     val SoftLeft: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.SoftRight")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.SoftRight")
     @js.native
     val SoftRight: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions. ")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions. ")
     @js.native
     val Space: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Space")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Space")
     @js.native
     val Space_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.T")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.T")
     @js.native
     val T_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Tab")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Tab")
     @js.native
     val Tab: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.~")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.~")
     @js.native
     val Tilde: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.U")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.U")
     @js.native
     val U_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.V")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.V")
     @js.native
     val V_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.|")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.|")
     @js.native
     val Verticalline: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.VolumeDown")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.VolumeDown")
     @js.native
     val VolumeDown: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.VolumeUp")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.VolumeUp")
     @js.native
     val VolumeUp: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.W")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.W")
     @js.native
     val W_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.X")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.X")
     @js.native
     val X_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Y")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Y")
     @js.native
     val Y_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.Z")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.Z")
     @js.native
     val Z_ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.ZoomOut")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.ZoomOut")
     @js.native
     val ZoomOut: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.[")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.[")
     @js.native
     val `[`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.]")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.]")
     @js.native
     val `]`: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions._")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions._")
     @js.native
     val __ : KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.-")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.-")
     @js.native
     val _dash: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.\u0000")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.\u0000")
     @js.native
     val _empty: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.\\")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.\\")
     @js.native
     val _underscore: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.a")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.a")
     @js.native
     val a: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.b")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.b")
     @js.native
     val b: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.c")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.c")
     @js.native
     val c: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.d")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.d")
     @js.native
     val d: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.e")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.e")
     @js.native
     val e: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.f")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.f")
     @js.native
     val f: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.g")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.g")
     @js.native
     val g: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.h")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.h")
     @js.native
     val h: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.i")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.i")
     @js.native
     val i: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.j")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.j")
     @js.native
     val j: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.k")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.k")
     @js.native
     val k: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.l")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.l")
     @js.native
     val l: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.m")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.m")
     @js.native
     val m: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.n")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.n")
     @js.native
     val n: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.o")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.o")
     @js.native
     val o: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.p")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.p")
     @js.native
     val p: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.q")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.q")
     @js.native
     val q: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.r")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.r")
     @js.native
     val r: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.s")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.s")
     @js.native
     val s: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.t")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.t")
     @js.native
     val t: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.u")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.u")
     @js.native
     val u: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.v")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.v")
     @js.native
     val v: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.w")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.w")
     @js.native
     val w: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.x")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.x")
     @js.native
     val x: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.y")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.y")
     @js.native
     val y: KeyDefinition = js.native
     
-    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "keyDefinitions.z")
+    @JSImport("puppeteer-core/lib/esm/puppeteer/common/USKeyboardLayout", "_keyDefinitions.z")
     @js.native
     val z: KeyDefinition = js.native
     

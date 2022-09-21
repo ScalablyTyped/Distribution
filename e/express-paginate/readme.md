@@ -10,10 +10,10 @@ Node.js pagination middleware and view helpers
 | ------------------ | :-------------: |
 | Full name          | express-paginate |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 165820 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 25277.666666666668 |
+| # stars            | 409.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/express-paginate)

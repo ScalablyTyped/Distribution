@@ -29,7 +29,7 @@ object PutVoiceConnectorTerminationCredentialsRequest {
     
     inline def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
-    inline def setCredentialsVarargs(value: Credential*): Self = StObject.set(x, "Credentials", js.Array(value :_*))
+    inline def setCredentialsVarargs(value: Credential*): Self = StObject.set(x, "Credentials", js.Array(value*))
     
     inline def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }

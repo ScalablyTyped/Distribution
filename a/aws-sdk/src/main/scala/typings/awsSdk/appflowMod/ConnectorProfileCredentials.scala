@@ -11,6 +11,8 @@ trait ConnectorProfileCredentials extends StObject {
     */
   var Amplitude: js.UndefOr[AmplitudeConnectorProfileCredentials] = js.undefined
   
+  var CustomConnector: js.UndefOr[CustomConnectorProfileCredentials] = js.undefined
+  
   /**
     *  The connector-specific credentials required when using Datadog. 
     */
@@ -27,6 +29,11 @@ trait ConnectorProfileCredentials extends StObject {
   var GoogleAnalytics: js.UndefOr[GoogleAnalyticsConnectorProfileCredentials] = js.undefined
   
   /**
+    *  The connector-specific credentials required when using Amazon Honeycode. 
+    */
+  var Honeycode: js.UndefOr[HoneycodeConnectorProfileCredentials] = js.undefined
+  
+  /**
     *  The connector-specific credentials required when using Infor Nexus. 
     */
   var InforNexus: js.UndefOr[InforNexusConnectorProfileCredentials] = js.undefined
@@ -40,6 +47,8 @@ trait ConnectorProfileCredentials extends StObject {
     *  The connector-specific credentials required when using Amazon Redshift. 
     */
   var Redshift: js.UndefOr[RedshiftConnectorProfileCredentials] = js.undefined
+  
+  var SAPOData: js.UndefOr[SAPODataConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Salesforce. 
@@ -94,6 +103,10 @@ object ConnectorProfileCredentials {
     
     inline def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
     
+    inline def setCustomConnector(value: CustomConnectorProfileCredentials): Self = StObject.set(x, "CustomConnector", value.asInstanceOf[js.Any])
+    
+    inline def setCustomConnectorUndefined: Self = StObject.set(x, "CustomConnector", js.undefined)
+    
     inline def setDatadog(value: DatadogConnectorProfileCredentials): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
     
     inline def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
@@ -106,6 +119,10 @@ object ConnectorProfileCredentials {
     
     inline def setGoogleAnalyticsUndefined: Self = StObject.set(x, "GoogleAnalytics", js.undefined)
     
+    inline def setHoneycode(value: HoneycodeConnectorProfileCredentials): Self = StObject.set(x, "Honeycode", value.asInstanceOf[js.Any])
+    
+    inline def setHoneycodeUndefined: Self = StObject.set(x, "Honeycode", js.undefined)
+    
     inline def setInforNexus(value: InforNexusConnectorProfileCredentials): Self = StObject.set(x, "InforNexus", value.asInstanceOf[js.Any])
     
     inline def setInforNexusUndefined: Self = StObject.set(x, "InforNexus", js.undefined)
@@ -117,6 +134,10 @@ object ConnectorProfileCredentials {
     inline def setRedshift(value: RedshiftConnectorProfileCredentials): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
     
     inline def setRedshiftUndefined: Self = StObject.set(x, "Redshift", js.undefined)
+    
+    inline def setSAPOData(value: SAPODataConnectorProfileCredentials): Self = StObject.set(x, "SAPOData", value.asInstanceOf[js.Any])
+    
+    inline def setSAPODataUndefined: Self = StObject.set(x, "SAPOData", js.undefined)
     
     inline def setSalesforce(value: SalesforceConnectorProfileCredentials): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     

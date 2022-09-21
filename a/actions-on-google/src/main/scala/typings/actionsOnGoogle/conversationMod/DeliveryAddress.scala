@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options The raw {@link GoogleActionsV2DeliveryAddressValueSpec}
   * @public
   */
-class DeliveryAddress ()
+open class DeliveryAddress ()
   extends typings.actionsOnGoogle.helperMod.DeliveryAddress {
   def this(options: GoogleActionsV2DeliveryAddressValueSpec) = this()
 }

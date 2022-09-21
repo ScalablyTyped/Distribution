@@ -1,7 +1,6 @@
 package typings.cassandraDriver
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object searchMod {
     
     @JSImport("cassandra-driver/lib/datastax/search", "search.DateRange")
     @js.native
-    class DateRange protected () extends StObject {
+    open class DateRange protected () extends StObject {
       def this(lowerBound: DateRangeBound, upperBound: DateRangeBound) = this()
       
       def equals(other: DateRangeBound): Boolean = js.native
@@ -36,9 +35,9 @@ object searchMod {
     
     @JSImport("cassandra-driver/lib/datastax/search", "search.DateRangeBound")
     @js.native
-    class DateRangeBound () extends StObject {
+    open class DateRangeBound () extends StObject {
       
-      var date: Date = js.native
+      var date: js.Date = js.native
       
       def equals(other: DateRangeBound): Boolean = js.native
       

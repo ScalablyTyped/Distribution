@@ -8,25 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object linkMod {
   
-  @JSImport("@storybook/addon-links/dist/react/components/link", JSImport.Default)
+  @JSImport("@storybook/addon-links/dist/ts3.9/react/components/link", JSImport.Default)
   @js.native
-  class default () extends LinkTo
+  open class default () extends LinkTo
   /* static members */
   object default {
     
-    @JSImport("@storybook/addon-links/dist/react/components/link", JSImport.Default)
+    @JSImport("@storybook/addon-links/dist/ts3.9/react/components/link", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@storybook/addon-links/dist/react/components/link", "default.defaultProps")
+    @JSImport("@storybook/addon-links/dist/ts3.9/react/components/link", "default.defaultProps")
     @js.native
     def defaultProps: Props = js.native
     inline def defaultProps_=(x: Props): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
-  trait LinkTo
-    extends PureComponent[Props, State, js.Any] {
+  trait LinkTo extends PureComponent[Props, State, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MLinkTo(): Unit = js.native

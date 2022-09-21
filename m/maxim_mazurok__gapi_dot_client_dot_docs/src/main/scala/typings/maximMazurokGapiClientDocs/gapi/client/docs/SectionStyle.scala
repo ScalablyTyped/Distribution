@@ -132,7 +132,7 @@ object SectionStyle {
     
     inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
-    inline def setColumnPropertiesVarargs(value: SectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+    inline def setColumnPropertiesVarargs(value: SectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value*))
     
     inline def setColumnSeparatorStyle(value: String): Self = StObject.set(x, "columnSeparatorStyle", value.asInstanceOf[js.Any])
     

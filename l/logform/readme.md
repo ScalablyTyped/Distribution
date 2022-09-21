@@ -1,7 +1,7 @@
 
 # Scala.js typings for logform
 
-Typings are for version 2.2.0
+Typings are for version 2.4.2
 
 ## Library description:
 An mutable object-based log format designed for chaining & objectMode streams.
@@ -10,10 +10,10 @@ An mutable object-based log format designed for chaining & objectMode streams.
 | ------------------ | :-------------: |
 | Full name          | logform |
 | Keywords           | winston, logging, format, winstonjs |
-| # releases         | 6 |
-| # dependents       | 94 |
-| # downloads        | 105145406 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2.4679225666666668E7 |
+| # stars            | 191.0 |
 
 ## Links
 - [Homepage](https://github.com/winstonjs/logform#readme)

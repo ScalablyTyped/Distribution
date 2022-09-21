@@ -14,6 +14,8 @@ trait FeatureReductionCluster
   /**
     * Defines the symbol size of the largest cluster in points (or pixels if specified).
     *
+    * @default 37.5
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterMaxSize)
     */
   var clusterMaxSize: Double = js.native
@@ -21,12 +23,16 @@ trait FeatureReductionCluster
   /**
     * Defines the symbol size of the smallest cluster in points (or pixels if specified).
     *
+    * @default 9
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterMinSize)
     */
   var clusterMinSize: Double = js.native
   
   /**
     * Defines the radius in points (or pixels if specified) of each area in which multiple points will be grouped and visualized as a single cluster.
+    *
+    * @default 60
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterRadius)
     */
@@ -42,12 +48,16 @@ trait FeatureReductionCluster
   /**
     * Indicates whether to display labels for the clusters.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#labelsVisible)
     */
   var labelsVisible: Boolean = js.native
   
   /**
     * Indicates whether to display the cluster popup.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#popupEnabled)
     */

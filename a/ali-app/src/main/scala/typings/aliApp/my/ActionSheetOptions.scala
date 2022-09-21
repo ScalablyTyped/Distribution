@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ActionSheetOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /**
     * 需飘红选项的数组，数组内部对象字段见下表
@@ -52,7 +52,7 @@ object ActionSheetOptions {
     
     inline def setBadgesUndefined: Self = StObject.set(x, "badges", js.undefined)
     
-    inline def setBadgesVarargs(value: PartialBadge*): Self = StObject.set(x, "badges", js.Array(value :_*))
+    inline def setBadgesVarargs(value: PartialBadge*): Self = StObject.set(x, "badges", js.Array(value*))
     
     inline def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object ActionSheetOptions {
     
     inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSuccess(value: /* res */ Index => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

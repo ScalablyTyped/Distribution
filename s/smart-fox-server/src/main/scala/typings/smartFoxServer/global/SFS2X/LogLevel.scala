@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SFS2X.LogLevel")
 @js.native
-class LogLevel ()
+open class LogLevel ()
   extends StObject
      with typings.smartFoxServer.SFS2X.LogLevel
 /* static members */

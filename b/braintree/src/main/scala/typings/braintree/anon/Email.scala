@@ -8,7 +8,7 @@ trait Email extends StObject {
   
   var company: js.UndefOr[String] = js.undefined
   
-  var customFields: js.UndefOr[js.Any] = js.undefined
+  var customFields: js.UndefOr[Any] = js.undefined
   
   var email: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ object Email {
     
     inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
-    inline def setCustomFields(value: js.Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     

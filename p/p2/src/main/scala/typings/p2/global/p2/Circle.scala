@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Circle")
 @js.native
-class Circle ()
+open class Circle ()
   extends typings.p2.mod.Circle {
   def this(options: CircleOptions) = this()
 }

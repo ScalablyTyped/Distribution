@@ -1,9 +1,8 @@
 package typings.pdfFillForm
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.pdfFillForm.anon.Id
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,6 +31,9 @@ object mod {
   
   inline def writeBufferSync(sourceBuffer: Buffer, fields: WritableFields): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBufferSync")(sourceBuffer.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def writeBufferSync(sourceBuffer: Buffer, fields: WritableFields, options: Options): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBufferSync")(sourceBuffer.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  inline def writeSync(sourceFile: String, fields: WritableFields): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(sourceFile.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def writeSync(sourceFile: String, fields: WritableFields, options: Options): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(sourceFile.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.pdfFillForm.mod.Options because Already inherited */ trait ImgPdfOptions
@@ -120,7 +122,7 @@ object mod {
   
   type ReadableFields = js.Array[Id]
   
-  type WritableFields = StringDictionary[String]
+  type WritableFields = StringDictionary[String | Boolean | Double]
   
-  type WriteAsyncCallback = js.Function2[/* err */ Error, /* result */ Buffer, Unit]
+  type WriteAsyncCallback = js.Function2[/* err */ js.Error, /* result */ Buffer, Unit]
 }

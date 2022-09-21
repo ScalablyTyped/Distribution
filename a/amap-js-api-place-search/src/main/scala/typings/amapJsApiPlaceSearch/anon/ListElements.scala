@@ -11,7 +11,7 @@ trait ListElements extends StObject {
   
   var listElements: js.Array[HTMLElement]
   
-  var markers: js.Array[Marker[js.Any]]
+  var markers: js.Array[Marker[Any]]
   
   var result: js.Array[SelectChangeEventData]
 }
@@ -19,7 +19,7 @@ object ListElements {
   
   inline def apply(
     listElements: js.Array[HTMLElement],
-    markers: js.Array[Marker[js.Any]],
+    markers: js.Array[Marker[Any]],
     result: js.Array[SelectChangeEventData]
   ): ListElements = {
     val __obj = js.Dynamic.literal(listElements = listElements.asInstanceOf[js.Any], markers = markers.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
@@ -30,14 +30,14 @@ object ListElements {
     
     inline def setListElements(value: js.Array[HTMLElement]): Self = StObject.set(x, "listElements", value.asInstanceOf[js.Any])
     
-    inline def setListElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "listElements", js.Array(value :_*))
+    inline def setListElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "listElements", js.Array(value*))
     
-    inline def setMarkers(value: js.Array[Marker[js.Any]]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: js.Array[Marker[Any]]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    inline def setMarkersVarargs(value: Marker[js.Any]*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: Marker[Any]*): Self = StObject.set(x, "markers", js.Array(value*))
     
     inline def setResult(value: js.Array[SelectChangeEventData]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: SelectChangeEventData*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: SelectChangeEventData*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

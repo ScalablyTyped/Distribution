@@ -1,37 +1,55 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
-import typings.std.Uint8Array
+import typings.firebaseFirestore.firestoreProtoApiMod.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Target extends js.Object {
+trait Target extends StObject {
+  
   var documents: js.UndefOr[DocumentsTarget] = js.undefined
+  
   var once: js.UndefOr[Boolean] = js.undefined
+  
   var query: js.UndefOr[QueryTarget] = js.undefined
-  var readTime: js.UndefOr[String] = js.undefined
-  var resumeToken: js.UndefOr[String | Uint8Array] = js.undefined
+  
+  var readTime: js.UndefOr[Timestamp] = js.undefined
+  
+  var resumeToken: js.UndefOr[String | js.typedarray.Uint8Array] = js.undefined
+  
   var targetId: js.UndefOr[Double] = js.undefined
 }
-
 object Target {
-  @scala.inline
-  def apply(
-    documents: DocumentsTarget = null,
-    once: js.UndefOr[Boolean] = js.undefined,
-    query: QueryTarget = null,
-    readTime: String = null,
-    resumeToken: String | Uint8Array = null,
-    targetId: js.UndefOr[Double] = js.undefined
-  ): Target = {
+  
+  inline def apply(): Target = {
     val __obj = js.Dynamic.literal()
-    if (documents != null) __obj.updateDynamic("documents")(documents.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetId)) __obj.updateDynamic("targetId")(targetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target]
   }
+  
+  extension [Self <: Target](x: Self) {
+    
+    inline def setDocuments(value: DocumentsTarget): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
+    
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    
+    inline def setQuery(value: QueryTarget): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setReadTime(value: Timestamp): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    
+    inline def setResumeToken(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+    
+    inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+    
+    inline def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+  }
 }
-

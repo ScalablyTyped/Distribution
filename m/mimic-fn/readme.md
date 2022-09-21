@@ -1,7 +1,7 @@
 
 # Scala.js typings for mimic-fn
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Make a function mimic another one
@@ -10,10 +10,10 @@ Make a function mimic another one
 | ------------------ | :-------------: |
 | Full name          | mimic-fn |
 | Keywords           | function, mimic, imitate, rename, copy, inherit, properties, name, func, fn, set, infer, change |
-| # releases         | 5 |
-| # dependents       | 118 |
-| # downloads        | 956193186 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.60422428E8 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/mimic-fn#readme)

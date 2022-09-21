@@ -2,6 +2,7 @@ package typings.dayjs
 
 import org.scalablytyped.runtime.Shortcut
 import typings.dayjs.esmMod.ConfigType
+import typings.dayjs.esmMod.OpUnitType
 import typings.dayjs.esmMod.PluginFunc
 import typings.dayjs.esmMod.QUnitType
 import org.scalablytyped.runtime.StObject
@@ -12,12 +13,12 @@ object quarterOfYearMod extends Shortcut {
   
   @JSImport("dayjs/esm/plugin/quarterOfYear", JSImport.Namespace)
   @js.native
-  val ^ : PluginFunc[js.Any] = js.native
+  val ^ : PluginFunc[Any] = js.native
   
-  type _To = PluginFunc[js.Any]
+  type _To = PluginFunc[Any]
   
   /* This means you don't have to write `^`, but can instead just say `quarterOfYearMod.foo` */
-  override def _to: PluginFunc[js.Any] = ^
+  override def _to: PluginFunc[Any] = ^
   
   /* augmented module */
   object dayjsEsmAugmentingMod {
@@ -27,6 +28,7 @@ object quarterOfYearMod extends Shortcut {
       
       def add(value: Double, unit: QUnitType): Dayjs = js.native
       
+      def endOf(unit: OpUnitType): Dayjs = js.native
       def endOf(unit: QUnitType): Dayjs = js.native
       
       def isAfter(date: ConfigType): Boolean = js.native
@@ -41,6 +43,7 @@ object quarterOfYearMod extends Shortcut {
       def quarter(): Double = js.native
       def quarter(quarter: Double): Dayjs = js.native
       
+      def startOf(unit: OpUnitType): Dayjs = js.native
       def startOf(unit: QUnitType): Dayjs = js.native
       
       def subtract(value: Double, unit: QUnitType): Dayjs = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-error-constructor" : "2.1.0"
+      "is-error-constructor" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-error-constructor" : "2.1.0"
+      "is-error-constructor" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

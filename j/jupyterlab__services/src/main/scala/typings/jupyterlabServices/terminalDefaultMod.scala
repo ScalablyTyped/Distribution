@@ -15,7 +15,7 @@ object terminalDefaultMod {
   
   @JSImport("@jupyterlab/services/lib/terminal/default", "TerminalConnection")
   @js.native
-  class TerminalConnection protected ()
+  open class TerminalConnection protected ()
     extends StObject
        with ITerminalConnection {
     /**
@@ -32,11 +32,11 @@ object terminalDefaultMod {
       * responsible for updating the connection status as needed and recreating
       * the socket if you plan to reconnect.
       */
-    /* private */ var _clearSocket: js.Any = js.native
+    /* private */ var _clearSocket: Any = js.native
     
-    /* private */ var _connectionStatus: js.Any = js.native
+    /* private */ var _connectionStatus: Any = js.native
     
-    /* private */ var _connectionStatusChanged: js.Any = js.native
+    /* private */ var _connectionStatusChanged: Any = js.native
     
     /**
       * Create the terminal websocket connection and add socket status handlers.
@@ -44,39 +44,39 @@ object terminalDefaultMod {
       * #### Notes
       * You are responsible for updating the connection status as appropriate.
       */
-    /* private */ var _createSocket: js.Any = js.native
+    /* private */ var _createSocket: Any = js.native
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
     /**
       * Utility function to throw an error if this instance is disposed.
       */
-    /* private */ var _errorIfDisposed: js.Any = js.native
+    /* private */ var _errorIfDisposed: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _messageReceived: js.Any = js.native
+    /* private */ var _messageReceived: Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
-    /* private */ var _noOp: js.Any = js.native
+    /* private */ var _noOp: Any = js.native
     
-    /* private */ var _onWSClose: js.Any = js.native
+    /* private */ var _onWSClose: Any = js.native
     
-    /* private */ var _onWSMessage: js.Any = js.native
+    /* private */ var _onWSMessage: Any = js.native
     
-    /* private */ var _pendingMessages: js.Any = js.native
+    /* private */ var _pendingMessages: Any = js.native
     
     /**
       * Attempt a connection if we have not exhausted connection attempts.
       */
     def _reconnect(): Unit = js.native
     
-    /* private */ var _reconnectAttempt: js.Any = js.native
+    /* private */ var _reconnectAttempt: Any = js.native
     
-    /* private */ var _reconnectLimit: js.Any = js.native
+    /* private */ var _reconnectLimit: Any = js.native
     
-    /* private */ var _reconnectTimeout: js.Any = js.native
+    /* private */ var _reconnectTimeout: Any = js.native
     
     /**
       * Send a message on the websocket, or possibly queue for later sending.
@@ -89,14 +89,14 @@ object terminalDefaultMod {
     /**
       * Send pending messages to the kernel.
       */
-    /* private */ var _sendPending: js.Any = js.native
+    /* private */ var _sendPending: Any = js.native
     
     /**
       * Handle connection status changes.
       */
-    /* private */ var _updateConnectionStatus: js.Any = js.native
+    /* private */ var _updateConnectionStatus: Any = js.native
     
-    /* private */ var _ws: js.Any = js.native
+    /* private */ var _ws: Any = js.native
     
     /**
       * The current connection status of the terminal.

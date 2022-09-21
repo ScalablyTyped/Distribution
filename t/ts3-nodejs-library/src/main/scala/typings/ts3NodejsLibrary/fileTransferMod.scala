@@ -1,6 +1,6 @@
 package typings.ts3NodejsLibrary
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ object fileTransferMod {
   
   @JSImport("ts3-nodejs-library/lib/transport/FileTransfer", "FileTransfer")
   @js.native
-  class FileTransfer protected () extends StObject {
+  open class FileTransfer protected () extends StObject {
     /**
       * Initializes a File Transfer
       * @param host TeamSpeak's File transfer Host
@@ -21,9 +21,9 @@ object fileTransferMod {
     def this(host: String, port: Double, timeout: Double) = this()
     def this(host: String, port: Unit, timeout: Double) = this()
     
-    /* private */ var buffer: js.Any = js.native
+    /* private */ var buffer: Any = js.native
     
-    /* private */ var bytesreceived: js.Any = js.native
+    /* private */ var bytesreceived: Any = js.native
     
     /**
       * Starts the download of a File
@@ -32,18 +32,18 @@ object fileTransferMod {
       */
     def download(ftkey: String, size: Double): js.Promise[Buffer] = js.native
     
-    /* private */ var host: js.Any = js.native
+    /* private */ var host: Any = js.native
     
     /**
       * connects to the File Transfer Server
       * @param ftkey the Filetransfer Key
       * @returns returns a Promise Object with the socket
       */
-    /* private */ var init: js.Any = js.native
+    /* private */ var init: Any = js.native
     
-    /* private */ var port: js.Any = js.native
+    /* private */ var port: Any = js.native
     
-    /* private */ var timeout: js.Any = js.native
+    /* private */ var timeout: Any = js.native
     
     /**
       * starts the upload of a File

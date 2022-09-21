@@ -23,12 +23,12 @@ object VideoSourceOptions {
     
     inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    inline def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value*))
     
     inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
   }
 }

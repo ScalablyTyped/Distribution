@@ -54,7 +54,7 @@ object blockMod {
   
   @JSImport("rbx/elements/other/block", "Block")
   @js.native
-  val Block: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Block: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait BlockProps extends StObject {

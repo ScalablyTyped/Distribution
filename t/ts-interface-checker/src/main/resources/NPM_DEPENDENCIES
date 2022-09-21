@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ts-interface-checker" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ts-interface-checker" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

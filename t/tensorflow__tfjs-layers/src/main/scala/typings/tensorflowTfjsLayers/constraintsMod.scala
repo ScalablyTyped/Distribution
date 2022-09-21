@@ -25,16 +25,16 @@ object constraintsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/constraints", "MaxNorm")
   @js.native
-  class MaxNorm protected () extends Constraint {
+  open class MaxNorm protected () extends Constraint {
     def this(args: MaxNormArgs) = this()
     
-    /* private */ var axis: js.Any = js.native
+    /* private */ var axis: Any = js.native
     
-    /* private */ val defaultAxis: js.Any = js.native
+    /* private */ val defaultAxis: Any = js.native
     
-    /* private */ val defaultMaxValue: js.Any = js.native
+    /* private */ val defaultMaxValue: Any = js.native
     
-    /* private */ var maxValue: js.Any = js.native
+    /* private */ var maxValue: Any = js.native
   }
   /* static members */
   object MaxNorm {
@@ -47,24 +47,24 @@ object constraintsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/constraints", "MinMaxNorm")
   @js.native
-  class MinMaxNorm protected () extends Constraint {
+  open class MinMaxNorm protected () extends Constraint {
     def this(args: MinMaxNormArgs) = this()
     
-    /* private */ var axis: js.Any = js.native
+    /* private */ var axis: Any = js.native
     
-    /* private */ val defaultAxis: js.Any = js.native
+    /* private */ val defaultAxis: Any = js.native
     
-    /* private */ val defaultMaxValue: js.Any = js.native
+    /* private */ val defaultMaxValue: Any = js.native
     
-    /* private */ val defaultMinValue: js.Any = js.native
+    /* private */ val defaultMinValue: Any = js.native
     
-    /* private */ val defaultRate: js.Any = js.native
+    /* private */ val defaultRate: Any = js.native
     
-    /* private */ var maxValue: js.Any = js.native
+    /* private */ var maxValue: Any = js.native
     
-    /* private */ var minValue: js.Any = js.native
+    /* private */ var minValue: Any = js.native
     
-    /* private */ var rate: js.Any = js.native
+    /* private */ var rate: Any = js.native
   }
   /* static members */
   object MinMaxNorm {
@@ -77,7 +77,7 @@ object constraintsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/constraints", "NonNeg")
   @js.native
-  class NonNeg () extends Constraint
+  open class NonNeg () extends Constraint
   /* static members */
   object NonNeg {
     
@@ -89,12 +89,12 @@ object constraintsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/constraints", "UnitNorm")
   @js.native
-  class UnitNorm protected () extends Constraint {
+  open class UnitNorm protected () extends Constraint {
     def this(args: UnitNormArgs) = this()
     
-    /* private */ var axis: js.Any = js.native
+    /* private */ var axis: Any = js.native
     
-    /* private */ val defaultAxis: js.Any = js.native
+    /* private */ val defaultAxis: Any = js.native
   }
   /* static members */
   object UnitNorm {

@@ -14,7 +14,7 @@ trait EnrollmentTroubleshootingEvent
   /**
     * Type of the enrollment. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser,
     * appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin,
-    * windowsCoManagement.
+    * windowsCoManagement, windowsAzureADJoinUsingDeviceAuth, appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
     */
   var enrollmentType: js.UndefOr[DeviceEnrollmentType] = js.undefined
   

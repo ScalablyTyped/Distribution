@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.ClusterPlacemark")
 @js.native
-class ClusterPlacemark protected ()
+open class ClusterPlacemark protected ()
   extends typings.yandexMaps.mod.ClusterPlacemark {
   def this(geometry: js.Array[Double], properties: IClusterPlacemarkProperties) = this()
   def this(geometry: js.Object, properties: IClusterPlacemarkProperties) = this()

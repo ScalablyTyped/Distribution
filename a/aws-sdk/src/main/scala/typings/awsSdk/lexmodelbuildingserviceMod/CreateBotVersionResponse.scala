@@ -29,7 +29,7 @@ trait CreateBotVersionResponse extends StObject {
   /**
     * The date when the bot version was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the bot.
@@ -64,7 +64,7 @@ trait CreateBotVersionResponse extends StObject {
   /**
     * The date when the $LATEST version of this bot was updated. 
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  Specifies the target locale for the bot. 
@@ -116,7 +116,7 @@ object CreateBotVersionResponse {
     
     inline def setClarificationPromptUndefined: Self = StObject.set(x, "clarificationPrompt", js.undefined)
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
@@ -144,9 +144,9 @@ object CreateBotVersionResponse {
     
     inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    inline def setIntentsVarargs(value: Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: Intent*): Self = StObject.set(x, "intents", js.Array(value*))
     
-    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     

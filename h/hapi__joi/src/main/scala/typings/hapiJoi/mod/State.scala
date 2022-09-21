@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait State extends StObject {
   
-  var ancestors: js.UndefOr[js.Any] = js.undefined
+  var ancestors: js.UndefOr[Any] = js.undefined
   
   var key: js.UndefOr[String] = js.undefined
   
-  var localize: js.UndefOr[js.Function1[/* repeated */ js.Any, this.type]] = js.undefined
+  var localize: js.UndefOr[js.Function1[/* repeated */ Any, this.type]] = js.undefined
   
-  var parent: js.UndefOr[js.Any] = js.undefined
+  var parent: js.UndefOr[Any] = js.undefined
   
   var path: js.UndefOr[String] = js.undefined
   
-  var reference: js.UndefOr[js.Any] = js.undefined
+  var reference: js.UndefOr[Any] = js.undefined
 }
 object State {
   
@@ -27,7 +27,7 @@ object State {
   
   extension [Self <: State](x: Self) {
     
-    inline def setAncestors(value: js.Any): Self = StObject.set(x, "ancestors", value.asInstanceOf[js.Any])
+    inline def setAncestors(value: Any): Self = StObject.set(x, "ancestors", value.asInstanceOf[js.Any])
     
     inline def setAncestorsUndefined: Self = StObject.set(x, "ancestors", js.undefined)
     
@@ -35,11 +35,11 @@ object State {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLocalize(value: /* repeated */ js.Any => State): Self = StObject.set(x, "localize", js.Any.fromFunction1(value))
+    inline def setLocalize(value: /* repeated */ Any => State): Self = StObject.set(x, "localize", js.Any.fromFunction1(value))
     
     inline def setLocalizeUndefined: Self = StObject.set(x, "localize", js.undefined)
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
@@ -47,7 +47,7 @@ object State {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setReference(value: js.Any): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Any): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
   }

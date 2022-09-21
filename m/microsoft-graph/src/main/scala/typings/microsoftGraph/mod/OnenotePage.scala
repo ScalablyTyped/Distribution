@@ -9,7 +9,7 @@ trait OnenotePage
      with OnenoteEntitySchemaObjectModel {
   
   // The page's HTML content.
-  var content: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var content: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // The URL for the page's HTML content. Read-only.
   var contentUrl: js.UndefOr[NullableOption[String]] = js.undefined
@@ -19,8 +19,7 @@ trait OnenotePage
   
   /**
     * The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601
-    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'. Read-only.
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     */
   var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -56,7 +55,7 @@ object OnenotePage {
   
   extension [Self <: OnenotePage](x: Self) {
     
-    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentNull: Self = StObject.set(x, "content", null)
     
@@ -122,6 +121,6 @@ object OnenotePage {
     
     inline def setUserTagsUndefined: Self = StObject.set(x, "userTags", js.undefined)
     
-    inline def setUserTagsVarargs(value: String*): Self = StObject.set(x, "userTags", js.Array(value :_*))
+    inline def setUserTagsVarargs(value: String*): Self = StObject.set(x, "userTags", js.Array(value*))
   }
 }

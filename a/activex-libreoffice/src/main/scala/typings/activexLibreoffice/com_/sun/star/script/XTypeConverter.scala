@@ -21,7 +21,7 @@ trait XTypeConverter
     * @param xDestinationType destination type
     * @returns converted value (any carrying value of type `xDestinationType`
     */
-  def convertTo(aFrom: js.Any, xDestinationType: `type`): js.Any
+  def convertTo(aFrom: Any, xDestinationType: `type`): Any
   
   /**
     * Converts the value `aFrom` to the specified simple type `aDestinationType` . Throws an {@link CannotConvertException} if the conversion failed and an
@@ -30,15 +30,15 @@ trait XTypeConverter
     * @param aDestinationType destination type class
     * @returns converted value (any carrying value of type `aDestinationType`
     */
-  def convertToSimpleType(aFrom: js.Any, aDestinationType: TypeClass): js.Any
+  def convertToSimpleType(aFrom: Any, aDestinationType: TypeClass): Any
 }
 object XTypeConverter {
   
   inline def apply(
     acquire: () => Unit,
-    convertTo: (js.Any, `type`) => js.Any,
-    convertToSimpleType: (js.Any, TypeClass) => js.Any,
-    queryInterface: `type` => js.Any,
+    convertTo: (Any, `type`) => Any,
+    convertToSimpleType: (Any, TypeClass) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTypeConverter = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertTo = js.Any.fromFunction2(convertTo), convertToSimpleType = js.Any.fromFunction2(convertToSimpleType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -47,8 +47,8 @@ object XTypeConverter {
   
   extension [Self <: XTypeConverter](x: Self) {
     
-    inline def setConvertTo(value: (js.Any, `type`) => js.Any): Self = StObject.set(x, "convertTo", js.Any.fromFunction2(value))
+    inline def setConvertTo(value: (Any, `type`) => Any): Self = StObject.set(x, "convertTo", js.Any.fromFunction2(value))
     
-    inline def setConvertToSimpleType(value: (js.Any, TypeClass) => js.Any): Self = StObject.set(x, "convertToSimpleType", js.Any.fromFunction2(value))
+    inline def setConvertToSimpleType(value: (Any, TypeClass) => Any): Self = StObject.set(x, "convertToSimpleType", js.Any.fromFunction2(value))
   }
 }

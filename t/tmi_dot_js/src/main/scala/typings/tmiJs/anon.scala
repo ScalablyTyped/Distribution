@@ -11,6 +11,18 @@ object anon {
     var clientId: js.UndefOr[String] = js.undefined
     
     var debug: js.UndefOr[Boolean] = js.undefined
+    
+    var globalDefaultChannel: js.UndefOr[String] = js.undefined
+    
+    var joinInterval: js.UndefOr[Double] = js.undefined
+    
+    var messagesLogLevel: js.UndefOr[String] = js.undefined
+    
+    var skipMembership: js.UndefOr[Boolean] = js.undefined
+    
+    var skipUpdatingEmotesets: js.UndefOr[Boolean] = js.undefined
+    
+    var updateEmotesetsTimer: js.UndefOr[Double] = js.undefined
   }
   object ClientId {
     
@@ -28,6 +40,30 @@ object anon {
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      
+      inline def setGlobalDefaultChannel(value: String): Self = StObject.set(x, "globalDefaultChannel", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalDefaultChannelUndefined: Self = StObject.set(x, "globalDefaultChannel", js.undefined)
+      
+      inline def setJoinInterval(value: Double): Self = StObject.set(x, "joinInterval", value.asInstanceOf[js.Any])
+      
+      inline def setJoinIntervalUndefined: Self = StObject.set(x, "joinInterval", js.undefined)
+      
+      inline def setMessagesLogLevel(value: String): Self = StObject.set(x, "messagesLogLevel", value.asInstanceOf[js.Any])
+      
+      inline def setMessagesLogLevelUndefined: Self = StObject.set(x, "messagesLogLevel", js.undefined)
+      
+      inline def setSkipMembership(value: Boolean): Self = StObject.set(x, "skipMembership", value.asInstanceOf[js.Any])
+      
+      inline def setSkipMembershipUndefined: Self = StObject.set(x, "skipMembership", js.undefined)
+      
+      inline def setSkipUpdatingEmotesets(value: Boolean): Self = StObject.set(x, "skipUpdatingEmotesets", value.asInstanceOf[js.Any])
+      
+      inline def setSkipUpdatingEmotesetsUndefined: Self = StObject.set(x, "skipUpdatingEmotesets", js.undefined)
+      
+      inline def setUpdateEmotesetsTimer(value: Double): Self = StObject.set(x, "updateEmotesetsTimer", value.asInstanceOf[js.Any])
+      
+      inline def setUpdateEmotesetsTimerUndefined: Self = StObject.set(x, "updateEmotesetsTimer", js.undefined)
     }
   }
   
@@ -54,32 +90,26 @@ object anon {
   
   trait Error extends StObject {
     
-    var error: js.UndefOr[js.Function1[/* message */ String, js.Any]] = js.undefined
+    def error(message: String): Any
     
-    var info: js.UndefOr[js.Function1[/* message */ String, js.Any]] = js.undefined
+    def info(message: String): Any
     
-    var warn: js.UndefOr[js.Function1[/* message */ String, js.Any]] = js.undefined
+    def warn(message: String): Any
   }
   object Error {
     
-    inline def apply(): Error = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(error: String => Any, info: String => Any, warn: String => Any): Error = {
+      val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
       __obj.asInstanceOf[Error]
     }
     
     extension [Self <: Error](x: Self) {
       
-      inline def setError(value: /* message */ String => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: String => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setInfo(value: String => Any): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      inline def setInfo(value: /* message */ String => js.Any): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
-      
-      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
-      
-      inline def setWarn(value: /* message */ String => js.Any): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
-      
-      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarn(value: String => Any): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -152,7 +182,7 @@ object anon {
   
   trait Password extends StObject {
     
-    var password: js.UndefOr[String] = js.undefined
+    var password: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
     
     var username: js.UndefOr[String] = js.undefined
   }
@@ -165,7 +195,9 @@ object anon {
     
     extension [Self <: Password](x: Self) {
       
-      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setPasswordFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "password", js.Any.fromFunction0(value))
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       

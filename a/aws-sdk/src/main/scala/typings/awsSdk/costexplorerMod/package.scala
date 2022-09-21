@@ -1,5 +1,10 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ALLOCATION_PERCENTAGES
+import typings.awsSdk.awsSdkStrings.COST_EXPLORER
+import typings.awsSdk.awsSdkStrings.CostCategoryExpressionDotv1
+import typings.awsSdk.awsSdkStrings.SERVICE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.LINKED
   - java.lang.String
 */
-type AccountScope = typings.awsSdk.costexplorerMod._AccountScope | java.lang.String
+type AccountScope = _AccountScope | String
 
-type AmortizedRecurringFee = java.lang.String
+type AmortizedRecurringFee = String
 
-type AmortizedUpfrontFee = java.lang.String
+type AmortizedUpfrontFee = String
 
-type Anomalies = js.Array[typings.awsSdk.costexplorerMod.Anomaly]
+type Anomalies = js.Array[Anomaly]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.YES
@@ -24,9 +29,9 @@ type Anomalies = js.Array[typings.awsSdk.costexplorerMod.Anomaly]
   - typings.awsSdk.awsSdkStrings.PLANNED_ACTIVITY
   - java.lang.String
 */
-type AnomalyFeedbackType = typings.awsSdk.costexplorerMod._AnomalyFeedbackType | java.lang.String
+type AnomalyFeedbackType = _AnomalyFeedbackType | String
 
-type AnomalyMonitors = js.Array[typings.awsSdk.costexplorerMod.AnomalyMonitor]
+type AnomalyMonitors = js.Array[AnomalyMonitor]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DAILY
@@ -34,17 +39,17 @@ type AnomalyMonitors = js.Array[typings.awsSdk.costexplorerMod.AnomalyMonitor]
   - typings.awsSdk.awsSdkStrings.WEEKLY
   - java.lang.String
 */
-type AnomalySubscriptionFrequency = typings.awsSdk.costexplorerMod._AnomalySubscriptionFrequency | java.lang.String
+type AnomalySubscriptionFrequency = _AnomalySubscriptionFrequency | String
 
-type AnomalySubscriptions = js.Array[typings.awsSdk.costexplorerMod.AnomalySubscription]
+type AnomalySubscriptions = js.Array[AnomalySubscription]
 
-type Arn = java.lang.String
+type Arn = String
 
-type AttributeType = java.lang.String
+type AttributeType = String
 
-type AttributeValue = java.lang.String
+type AttributeValue = String
 
-type Attributes = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.costexplorerMod.AttributeValue]
+type Attributes = StringDictionary[AttributeValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COST_AND_USAGE
@@ -52,38 +57,94 @@ type Attributes = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cost
   - typings.awsSdk.awsSdkStrings.SAVINGS_PLANS
   - java.lang.String
 */
-type Context = typings.awsSdk.costexplorerMod._Context | java.lang.String
+type Context = _Context | String
 
-type CostCategoryMaxResults = scala.Double
+type CostAllocationTagKeyList = js.Array[TagKey]
 
-type CostCategoryName = java.lang.String
+type CostAllocationTagList = js.Array[CostAllocationTag]
 
-type CostCategoryProcessingStatusList = js.Array[typings.awsSdk.costexplorerMod.CostCategoryProcessingStatus]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.Inactive_
+  - java.lang.String
+*/
+type CostAllocationTagStatus = _CostAllocationTagStatus | String
 
-type CostCategoryReferencesList = js.Array[typings.awsSdk.costexplorerMod.CostCategoryReference]
+type CostAllocationTagStatusList = js.Array[CostAllocationTagStatusEntry]
 
-type CostCategoryRuleVersion = typings.awsSdk.awsSdkStrings.CostCategoryExpressionDotv1 | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWSGenerated
+  - typings.awsSdk.awsSdkStrings.UserDefined
+  - java.lang.String
+*/
+type CostAllocationTagType = _CostAllocationTagType | String
 
-type CostCategoryRulesList = js.Array[typings.awsSdk.costexplorerMod.CostCategoryRule]
+type CostAllocationTagsMaxResults = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LINKED_ACCOUNT_NAME
+  - typings.awsSdk.awsSdkStrings.TAG
+  - java.lang.String
+*/
+type CostCategoryInheritedValueDimensionName = _CostCategoryInheritedValueDimensionName | String
+
+type CostCategoryMaxResults = Double
+
+type CostCategoryName = String
+
+type CostCategoryNamesList = js.Array[CostCategoryName]
+
+type CostCategoryProcessingStatusList = js.Array[CostCategoryProcessingStatus]
+
+type CostCategoryReferencesList = js.Array[CostCategoryReference]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.REGULAR
+  - typings.awsSdk.awsSdkStrings.INHERITED_VALUE
+  - java.lang.String
+*/
+type CostCategoryRuleType = _CostCategoryRuleType | String
+
+type CostCategoryRuleVersion = CostCategoryExpressionDotv1 | String
+
+type CostCategoryRulesList = js.Array[CostCategoryRule]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FIXED
+  - typings.awsSdk.awsSdkStrings.PROPORTIONAL
+  - typings.awsSdk.awsSdkStrings.EVEN
+  - java.lang.String
+*/
+type CostCategorySplitChargeMethod = _CostCategorySplitChargeMethod | String
+
+type CostCategorySplitChargeRuleParameterType = ALLOCATION_PERCENTAGES | String
+
+type CostCategorySplitChargeRuleParameterValuesList = js.Array[GenericString]
+
+type CostCategorySplitChargeRuleParametersList = js.Array[CostCategorySplitChargeRuleParameter]
+
+type CostCategorySplitChargeRuleTargetsList = js.Array[GenericString]
+
+type CostCategorySplitChargeRulesList = js.Array[CostCategorySplitChargeRule]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROCESSING
   - typings.awsSdk.awsSdkStrings.APPLIED
   - java.lang.String
 */
-type CostCategoryStatus = typings.awsSdk.costexplorerMod._CostCategoryStatus | java.lang.String
+type CostCategoryStatus = _CostCategoryStatus | String
 
-type CostCategoryStatusComponent = typings.awsSdk.awsSdkStrings.COST_EXPLORER | java.lang.String
+type CostCategoryStatusComponent = COST_EXPLORER | String
 
-type CostCategoryValue = java.lang.String
+type CostCategoryValue = String
 
-type CostCategoryValuesList = js.Array[typings.awsSdk.costexplorerMod.CostCategoryValue]
+type CostCategoryValuesList = js.Array[CostCategoryValue]
 
-type CoverageHoursPercentage = java.lang.String
+type CoverageHoursPercentage = String
 
-type CoverageNormalizedUnitsPercentage = java.lang.String
+type CoverageNormalizedUnitsPercentage = String
 
-type CoveragesByTime = js.Array[typings.awsSdk.costexplorerMod.CoverageByTime]
+type CoveragesByTime = js.Array[CoverageByTime]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AZ
@@ -115,25 +176,53 @@ type CoveragesByTime = js.Array[typings.awsSdk.costexplorerMod.CoverageByTime]
   - typings.awsSdk.awsSdkStrings.SAVINGS_PLANS_TYPE
   - typings.awsSdk.awsSdkStrings.SAVINGS_PLAN_ARN
   - typings.awsSdk.awsSdkStrings.PAYMENT_OPTION
+  - typings.awsSdk.awsSdkStrings.AGREEMENT_END_DATE_TIME_AFTER
+  - typings.awsSdk.awsSdkStrings.AGREEMENT_END_DATE_TIME_BEFORE
+  - typings.awsSdk.awsSdkStrings.INVOICING_ENTITY
   - java.lang.String
 */
-type Dimension = typings.awsSdk.costexplorerMod._Dimension | java.lang.String
+type Dimension = _Dimension | String
 
-type DimensionValuesWithAttributesList = js.Array[typings.awsSdk.costexplorerMod.DimensionValuesWithAttributes]
+type DimensionValuesWithAttributesList = js.Array[DimensionValuesWithAttributes]
 
-type Entity = java.lang.String
+type Entity = String
 
-type Estimated = scala.Boolean
+type ErrorMessage = String
 
-type Expressions = js.Array[typings.awsSdk.costexplorerMod.Expression]
+type Estimated = Boolean
 
-type ForecastResultsByTime = js.Array[typings.awsSdk.costexplorerMod.ForecastResult]
+type Expressions = js.Array[Expression]
 
-type GenericBoolean = scala.Boolean
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CPU_OVER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.CPU_UNDER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.MEMORY_OVER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.MEMORY_UNDER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.EBS_THROUGHPUT_OVER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.EBS_THROUGHPUT_UNDER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.EBS_IOPS_OVER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.EBS_IOPS_UNDER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.NETWORK_BANDWIDTH_OVER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.NETWORK_BANDWIDTH_UNDER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.NETWORK_PPS_OVER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.NETWORK_PPS_UNDER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.DISK_IOPS_OVER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.DISK_IOPS_UNDER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.DISK_THROUGHPUT_OVER_PROVISIONED
+  - typings.awsSdk.awsSdkStrings.DISK_THROUGHPUT_UNDER_PROVISIONED
+  - java.lang.String
+*/
+type FindingReasonCode = _FindingReasonCode | String
 
-type GenericDouble = scala.Double
+type FindingReasonCodes = js.Array[FindingReasonCode]
 
-type GenericString = java.lang.String
+type ForecastResultsByTime = js.Array[ForecastResult]
+
+type GenericBoolean = Boolean
+
+type GenericDouble = Double
+
+type GenericString = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DAILY
@@ -141,9 +230,9 @@ type GenericString = java.lang.String
   - typings.awsSdk.awsSdkStrings.HOURLY
   - java.lang.String
 */
-type Granularity = typings.awsSdk.costexplorerMod._Granularity | java.lang.String
+type Granularity = _Granularity | String
 
-type GroupDefinitionKey = java.lang.String
+type GroupDefinitionKey = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DIMENSION
@@ -151,15 +240,15 @@ type GroupDefinitionKey = java.lang.String
   - typings.awsSdk.awsSdkStrings.COST_CATEGORY
   - java.lang.String
 */
-type GroupDefinitionType = typings.awsSdk.costexplorerMod._GroupDefinitionType | java.lang.String
+type GroupDefinitionType = _GroupDefinitionType | String
 
-type GroupDefinitions = js.Array[typings.awsSdk.costexplorerMod.GroupDefinition]
+type GroupDefinitions = js.Array[GroupDefinition]
 
-type Groups = js.Array[typings.awsSdk.costexplorerMod.Group]
+type Groups = js.Array[Group]
 
-type Key = java.lang.String
+type Key = String
 
-type Keys = js.Array[typings.awsSdk.costexplorerMod.Key]
+type Keys = js.Array[Key]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SEVEN_DAYS
@@ -167,10 +256,11 @@ type Keys = js.Array[typings.awsSdk.costexplorerMod.Key]
   - typings.awsSdk.awsSdkStrings.SIXTY_DAYS
   - java.lang.String
 */
-type LookbackPeriodInDays = typings.awsSdk.costexplorerMod._LookbackPeriodInDays | java.lang.String
+type LookbackPeriodInDays = _LookbackPeriodInDays | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EQUALS
+  - typings.awsSdk.awsSdkStrings.ABSENT
   - typings.awsSdk.awsSdkStrings.STARTS_WITH
   - typings.awsSdk.awsSdkStrings.ENDS_WITH
   - typings.awsSdk.awsSdkStrings.CONTAINS
@@ -178,11 +268,11 @@ type LookbackPeriodInDays = typings.awsSdk.costexplorerMod._LookbackPeriodInDays
   - typings.awsSdk.awsSdkStrings.CASE_INSENSITIVE
   - java.lang.String
 */
-type MatchOption = typings.awsSdk.costexplorerMod._MatchOption | java.lang.String
+type MatchOption = _MatchOption | String
 
-type MatchOptions = js.Array[typings.awsSdk.costexplorerMod.MatchOption]
+type MatchOptions = js.Array[MatchOption]
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BLENDED_COST
@@ -194,34 +284,36 @@ type MaxResults = scala.Double
   - typings.awsSdk.awsSdkStrings.NORMALIZED_USAGE_AMOUNT
   - java.lang.String
 */
-type Metric = typings.awsSdk.costexplorerMod._Metric | java.lang.String
+type Metric = _Metric | String
 
-type MetricAmount = java.lang.String
+type MetricAmount = String
 
-type MetricName = java.lang.String
+type MetricName = String
 
-type MetricNames = js.Array[typings.awsSdk.costexplorerMod.MetricName]
+type MetricNames = js.Array[MetricName]
 
-type MetricUnit = java.lang.String
+type MetricUnit = String
 
-type Metrics = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.costexplorerMod.MetricValue]
+type Metrics = StringDictionary[MetricValue]
 
-type MonitorDimension = typings.awsSdk.awsSdkStrings.SERVICE | java.lang.String
+type MonitorArnList = js.Array[Arn]
+
+type MonitorDimension = SERVICE | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DIMENSIONAL
   - typings.awsSdk.awsSdkStrings.CUSTOM
   - java.lang.String
 */
-type MonitorType = typings.awsSdk.costexplorerMod._MonitorType | java.lang.String
+type MonitorType = _MonitorType | String
 
-type NetRISavings = java.lang.String
+type NetRISavings = String
 
-type NextPageToken = java.lang.String
+type NextPageToken = String
 
-type NonNegativeInteger = scala.Double
+type NonNegativeInteger = Double
 
-type NullableNonNegativeDouble = scala.Double
+type NullableNonNegativeDouble = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EQUAL
@@ -232,24 +324,24 @@ type NullableNonNegativeDouble = scala.Double
   - typings.awsSdk.awsSdkStrings.BETWEEN
   - java.lang.String
 */
-type NumericOperator = typings.awsSdk.costexplorerMod._NumericOperator | java.lang.String
+type NumericOperator = _NumericOperator | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
   - typings.awsSdk.awsSdkStrings.CONVERTIBLE
   - java.lang.String
 */
-type OfferingClass = typings.awsSdk.costexplorerMod._OfferingClass | java.lang.String
+type OfferingClass = _OfferingClass | String
 
-type OnDemandCost = java.lang.String
+type OnDemandCost = String
 
-type OnDemandCostOfRIHoursUsed = java.lang.String
+type OnDemandCostOfRIHoursUsed = String
 
-type OnDemandHours = java.lang.String
+type OnDemandHours = String
 
-type OnDemandNormalizedUnits = java.lang.String
+type OnDemandNormalizedUnits = String
 
-type PageSize = scala.Double
+type PageSize = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NO_UPFRONT
@@ -260,135 +352,186 @@ type PageSize = scala.Double
   - typings.awsSdk.awsSdkStrings.HEAVY_UTILIZATION
   - java.lang.String
 */
-type PaymentOption = typings.awsSdk.costexplorerMod._PaymentOption | java.lang.String
+type PaymentOption = _PaymentOption | String
 
-type PredictionIntervalLevel = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HYPERVISOR
+  - typings.awsSdk.awsSdkStrings.NETWORK_INTERFACE
+  - typings.awsSdk.awsSdkStrings.STORAGE_INTERFACE
+  - typings.awsSdk.awsSdkStrings.INSTANCE_STORE_AVAILABILITY
+  - typings.awsSdk.awsSdkStrings.VIRTUALIZATION_TYPE
+  - java.lang.String
+*/
+type PlatformDifference = _PlatformDifference | String
 
-type PurchasedHours = java.lang.String
+type PlatformDifferences = js.Array[PlatformDifference]
 
-type PurchasedUnits = java.lang.String
+type PredictionIntervalLevel = Double
+
+type PurchasedHours = String
+
+type PurchasedUnits = String
+
+type RICostForUnusedHours = String
+
+type RealizedSavings = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SAME_INSTANCE_FAMILY
   - typings.awsSdk.awsSdkStrings.CROSS_INSTANCE_FAMILY
   - java.lang.String
 */
-type RecommendationTarget = typings.awsSdk.costexplorerMod._RecommendationTarget | java.lang.String
+type RecommendationTarget = _RecommendationTarget | String
 
-type ReservationCoverageGroups = js.Array[typings.awsSdk.costexplorerMod.ReservationCoverageGroup]
+type ReservationCoverageGroups = js.Array[ReservationCoverageGroup]
 
-type ReservationGroupKey = java.lang.String
+type ReservationGroupKey = String
 
-type ReservationGroupValue = java.lang.String
+type ReservationGroupValue = String
 
-type ReservationPurchaseRecommendationDetails = js.Array[typings.awsSdk.costexplorerMod.ReservationPurchaseRecommendationDetail]
+type ReservationPurchaseRecommendationDetails = js.Array[ReservationPurchaseRecommendationDetail]
 
-type ReservationPurchaseRecommendations = js.Array[typings.awsSdk.costexplorerMod.ReservationPurchaseRecommendation]
+type ReservationPurchaseRecommendations = js.Array[ReservationPurchaseRecommendation]
 
-type ReservationUtilizationGroups = js.Array[typings.awsSdk.costexplorerMod.ReservationUtilizationGroup]
+type ReservationUtilizationGroups = js.Array[ReservationUtilizationGroup]
 
-type ReservedHours = java.lang.String
+type ReservedHours = String
 
-type ReservedNormalizedUnits = java.lang.String
+type ReservedNormalizedUnits = String
 
-type ResultsByTime = js.Array[typings.awsSdk.costexplorerMod.ResultByTime]
+type ResourceTagKey = String
 
-type RightsizingRecommendationList = js.Array[typings.awsSdk.costexplorerMod.RightsizingRecommendation]
+type ResourceTagKeyList = js.Array[ResourceTagKey]
+
+type ResourceTagList = js.Array[ResourceTag]
+
+type ResourceTagValue = String
+
+type ResultsByTime = js.Array[ResultByTime]
+
+type RightsizingRecommendationList = js.Array[RightsizingRecommendation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TERMINATE
   - typings.awsSdk.awsSdkStrings.MODIFY
   - java.lang.String
 */
-type RightsizingType = typings.awsSdk.costexplorerMod._RightsizingType | java.lang.String
+type RightsizingType = _RightsizingType | String
 
-type RootCauses = js.Array[typings.awsSdk.costexplorerMod.RootCause]
+type RootCauses = js.Array[RootCause]
 
-type SavingsPlanArn = java.lang.String
+type SavingsPlanArn = String
 
-type SavingsPlansCoverages = js.Array[typings.awsSdk.costexplorerMod.SavingsPlansCoverage]
+type SavingsPlansCoverages = js.Array[SavingsPlansCoverage]
 
-type SavingsPlansPurchaseRecommendationDetailList = js.Array[typings.awsSdk.costexplorerMod.SavingsPlansPurchaseRecommendationDetail]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ATTRIBUTES
+  - typings.awsSdk.awsSdkStrings.UTILIZATION
+  - typings.awsSdk.awsSdkStrings.AMORTIZED_COMMITMENT
+  - typings.awsSdk.awsSdkStrings.SAVINGS
+  - java.lang.String
+*/
+type SavingsPlansDataType = _SavingsPlansDataType | String
 
-type SavingsPlansUtilizationDetails = js.Array[typings.awsSdk.costexplorerMod.SavingsPlansUtilizationDetail]
+type SavingsPlansDataTypes = js.Array[SavingsPlansDataType]
 
-type SavingsPlansUtilizationsByTime = js.Array[typings.awsSdk.costexplorerMod.SavingsPlansUtilizationByTime]
+type SavingsPlansPurchaseRecommendationDetailList = js.Array[SavingsPlansPurchaseRecommendationDetail]
 
-type SearchString = java.lang.String
+type SavingsPlansUtilizationDetails = js.Array[SavingsPlansUtilizationDetail]
 
-type SubscriberAddress = java.lang.String
+type SavingsPlansUtilizationsByTime = js.Array[SavingsPlansUtilizationByTime]
+
+type SearchString = String
+
+type SortDefinitionKey = String
+
+type SortDefinitions = js.Array[SortDefinition]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASCENDING
+  - typings.awsSdk.awsSdkStrings.DESCENDING
+  - java.lang.String
+*/
+type SortOrder = _SortOrder | String
+
+type SubscriberAddress = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONFIRMED
   - typings.awsSdk.awsSdkStrings.DECLINED
   - java.lang.String
 */
-type SubscriberStatus = typings.awsSdk.costexplorerMod._SubscriberStatus | java.lang.String
+type SubscriberStatus = _SubscriberStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EMAIL
   - typings.awsSdk.awsSdkStrings.SNS
   - java.lang.String
 */
-type SubscriberType = typings.awsSdk.costexplorerMod._SubscriberType | java.lang.String
+type SubscriberType = _SubscriberType | String
 
-type Subscribers = js.Array[typings.awsSdk.costexplorerMod.Subscriber]
+type Subscribers = js.Array[Subscriber]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPUTE_SP
   - typings.awsSdk.awsSdkStrings.EC2_INSTANCE_SP
+  - typings.awsSdk.awsSdkStrings.SAGEMAKER_SP
   - java.lang.String
 */
-type SupportedSavingsPlansType = typings.awsSdk.costexplorerMod._SupportedSavingsPlansType | java.lang.String
+type SupportedSavingsPlansType = _SupportedSavingsPlansType | String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagList = js.Array[typings.awsSdk.costexplorerMod.Entity]
+type TagList = js.Array[Entity]
 
-type TagValuesList = js.Array[typings.awsSdk.costexplorerMod.TagValues]
+type TagValuesList = js.Array[TagValues]
 
-type TargetInstancesList = js.Array[typings.awsSdk.costexplorerMod.TargetInstance]
+type TargetInstancesList = js.Array[TargetInstance]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ONE_YEAR
   - typings.awsSdk.awsSdkStrings.THREE_YEARS
   - java.lang.String
 */
-type TermInYears = typings.awsSdk.costexplorerMod._TermInYears | java.lang.String
+type TermInYears = _TermInYears | String
 
-type TotalActualHours = java.lang.String
+type TotalActualHours = String
 
-type TotalActualUnits = java.lang.String
+type TotalActualUnits = String
 
-type TotalAmortizedFee = java.lang.String
+type TotalAmortizedFee = String
 
-type TotalPotentialRISavings = java.lang.String
+type TotalPotentialRISavings = String
 
-type TotalRunningHours = java.lang.String
+type TotalRunningHours = String
 
-type TotalRunningNormalizedUnits = java.lang.String
+type TotalRunningNormalizedUnits = String
 
-type UnusedHours = java.lang.String
+type UnrealizedSavings = String
 
-type UnusedUnits = java.lang.String
+type UnusedHours = String
 
-type UtilizationPercentage = java.lang.String
+type UnusedUnits = String
 
-type UtilizationPercentageInUnits = java.lang.String
+type UpdateCostAllocationTagsStatusErrors = js.Array[UpdateCostAllocationTagsStatusError]
 
-type UtilizationsByTime = js.Array[typings.awsSdk.costexplorerMod.UtilizationByTime]
+type UtilizationPercentage = String
 
-type Value = java.lang.String
+type UtilizationPercentageInUnits = String
 
-type Values = js.Array[typings.awsSdk.costexplorerMod.Value]
+type UtilizationsByTime = js.Array[UtilizationByTime]
 
-type YearMonthDay = java.lang.String
+type Value = String
 
-type ZonedDateTime = java.lang.String
+type Values = js.Array[Value]
+
+type YearMonthDay = String
+
+type ZonedDateTime = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-10-25`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.costexplorerMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

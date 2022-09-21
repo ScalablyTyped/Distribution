@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "IconToggle")
 @js.native
-class IconToggle protected () extends _MDLComponent[IconToggleProps] {
+open class IconToggle protected () extends _MDLComponent[IconToggleProps] {
   def this(props: IconToggleProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IconToggleProps, context: js.Any) = this()
+  def this(props: IconToggleProps, context: Any) = this()
 }

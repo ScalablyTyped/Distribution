@@ -46,7 +46,7 @@ trait FeatureLayerCapabilities
   var operations: FeatureLayerCapabilitiesOperations
   
   /**
-    * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) operations that can be performed on features in the layer.
+    * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) operations that can be performed on features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
@@ -58,6 +58,13 @@ trait FeatureLayerCapabilities
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var queryRelated: FeatureLayerCapabilitiesQueryRelated
+  
+  /**
+    * Describes [top features query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFeaturesQuery.html) operations that can be performed on features in the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
+    */
+  var queryTopFeatures: FeatureLayerCapabilitiesQueryTopFeatures
 }
 object FeatureLayerCapabilities {
   
@@ -71,9 +78,10 @@ object FeatureLayerCapabilities {
     operations: FeatureLayerCapabilitiesOperations,
     propertyIsEnumerable: PropertyKey => Boolean,
     query: FeatureLayerCapabilitiesQuery,
-    queryRelated: FeatureLayerCapabilitiesQueryRelated
+    queryRelated: FeatureLayerCapabilitiesQueryRelated,
+    queryTopFeatures: FeatureLayerCapabilitiesQueryTopFeatures
   ): FeatureLayerCapabilities = {
-    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), metadata = metadata.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), metadata = metadata.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any], queryTopFeatures = queryTopFeatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilities]
   }
   
@@ -92,5 +100,7 @@ object FeatureLayerCapabilities {
     inline def setQuery(value: FeatureLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryRelated(value: FeatureLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
+    
+    inline def setQueryTopFeatures(value: FeatureLayerCapabilitiesQueryTopFeatures): Self = StObject.set(x, "queryTopFeatures", value.asInstanceOf[js.Any])
   }
 }

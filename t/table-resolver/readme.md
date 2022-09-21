@@ -11,9 +11,9 @@ Table resolution utilities
 | Full name          | table-resolver |
 | Keywords           | table, tables, resolve, resolving, algorithm, reactabular |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 451096 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 20885.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/reactabular/table-resolver#readme)

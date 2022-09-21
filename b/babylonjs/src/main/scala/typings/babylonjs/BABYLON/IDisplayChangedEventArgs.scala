@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDisplayChangedEventArgs extends StObject {
   
   /** Gets the vrDisplay object (if any) */
-  var vrDisplay: Nullable[js.Any]
+  var vrDisplay: Nullable[Any]
   
   /** Gets a boolean indicating if webVR is supported */
   var vrSupported: Boolean
@@ -21,7 +21,7 @@ object IDisplayChangedEventArgs {
   
   extension [Self <: IDisplayChangedEventArgs](x: Self) {
     
-    inline def setVrDisplay(value: Nullable[js.Any]): Self = StObject.set(x, "vrDisplay", value.asInstanceOf[js.Any])
+    inline def setVrDisplay(value: Nullable[Any]): Self = StObject.set(x, "vrDisplay", value.asInstanceOf[js.Any])
     
     inline def setVrDisplayNull: Self = StObject.set(x, "vrDisplay", null)
     

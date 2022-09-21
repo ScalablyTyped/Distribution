@@ -44,7 +44,7 @@ object GMLOptions {
     
     inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
     
-    inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
+    inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value*))
     
     inline def setMultiCurve(value: Boolean): Self = StObject.set(x, "multiCurve", value.asInstanceOf[js.Any])
     

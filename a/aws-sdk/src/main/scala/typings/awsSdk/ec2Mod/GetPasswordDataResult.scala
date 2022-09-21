@@ -19,7 +19,7 @@ trait GetPasswordDataResult extends StObject {
   /**
     * The time the data was last updated.
     */
-  var Timestamp: js.UndefOr[DateTime] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object GetPasswordDataResult {
   
@@ -38,7 +38,7 @@ object GetPasswordDataResult {
     
     inline def setPasswordDataUndefined: Self = StObject.set(x, "PasswordData", js.undefined)
     
-    inline def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }

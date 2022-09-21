@@ -14,7 +14,7 @@ trait StockChartCategoryAxisItemTitle extends StObject {
   
   var font: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[Double | js.Any] = js.undefined
+  var margin: js.UndefOr[Double | Any] = js.undefined
   
   var position: js.UndefOr[String] = js.undefined
   
@@ -49,7 +49,7 @@ object StockChartCategoryAxisItemTitle {
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setMargin(value: Double | js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double | Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     

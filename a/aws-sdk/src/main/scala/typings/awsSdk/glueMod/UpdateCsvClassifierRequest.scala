@@ -70,7 +70,7 @@ object UpdateCsvClassifierRequest {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
     
-    inline def setHeaderVarargs(value: NameString*): Self = StObject.set(x, "Header", js.Array(value :_*))
+    inline def setHeaderVarargs(value: NameString*): Self = StObject.set(x, "Header", js.Array(value*))
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

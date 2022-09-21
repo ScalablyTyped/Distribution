@@ -10,10 +10,10 @@ An ES6 promise adapter for fs-extra for use with ES7 async/await
 | ------------------ | :-------------: |
 | Full name          | fs-extra-promise-es6 |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 16199 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 830.6666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/vinsonchuong/fs-extra-promise-es6)

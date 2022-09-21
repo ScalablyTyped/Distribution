@@ -1,9 +1,5 @@
 package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,33 +9,22 @@ trait ParamsResourceObjectsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Name of the bucket in which to look for objects.
     */
   var bucket: js.UndefOr[String] = js.undefined
   
   /**
-    * Returns results in a directory-like mode. items will contain only objects
-    * whose names, aside from the prefix, do not contain delimiter. Objects
-    * whose names, aside from the prefix, contain delimiter will have their
-    * name, truncated after the delimiter, returned in prefixes. Duplicate
-    * prefixes are omitted.
+    * Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.
     */
   var delimiter: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of items plus prefixes to return. As duplicate prefixes
-    * are omitted, fewer total results may be returned than requested.
+    * Maximum number of items plus prefixes to return. As duplicate prefixes are omitted, fewer total results may be returned than requested.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * A previously-returned page token representing part of the larger set of
-    * results to view.
+    * A previously-returned page token representing part of the larger set of results to view.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -66,10 +51,6 @@ object ParamsResourceObjectsList {
   }
   
   extension [Self <: ParamsResourceObjectsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

@@ -35,6 +35,6 @@ object ApigatewayApiConfigGrpcServiceDefinition {
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setSourceVarargs(value: ApigatewayApiConfigFile*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: ApigatewayApiConfigFile*): Self = StObject.set(x, "source", js.Array(value*))
   }
 }

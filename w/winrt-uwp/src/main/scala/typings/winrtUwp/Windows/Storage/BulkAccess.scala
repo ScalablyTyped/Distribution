@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
@@ -39,11 +38,11 @@ object BulkAccess {
   @js.native
   trait FileInformation extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_propertiesupdated(`type`: propertiesupdated, listener: TypedEventHandler[IStorageItemInformation, js.Any]): Unit = js.native
+    def addEventListener_propertiesupdated(`type`: propertiesupdated, listener: TypedEventHandler[IStorageItemInformation, Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_thumbnailupdated(`type`: thumbnailupdated, listener: TypedEventHandler[IStorageItemInformation, js.Any]): Unit = js.native
+    def addEventListener_thumbnailupdated(`type`: thumbnailupdated, listener: TypedEventHandler[IStorageItemInformation, Any]): Unit = js.native
     
     /** Gets the attributes of a file. */
     var attributes: FileAttributes = js.native
@@ -84,7 +83,7 @@ object BulkAccess {
     def copyAsync(destinationFolder: IStorageFolder, desiredNewName: String, option: NameCollisionOption): IPromiseWithIAsyncOperation[StorageFile] = js.native
     
     /** Gets the date that the file was created. */
-    var dateCreated: Date = js.native
+    var dateCreated: js.Date = js.native
     
     /**
       * Deletes a file.
@@ -203,16 +202,16 @@ object BulkAccess {
     var name: String = js.native
     
     /** Occurs when one or more of the StorageFile 's properties is updated. */
-    def onpropertiesupdated(ev: js.Any & WinRTEvent[IStorageItemInformation]): Unit = js.native
+    def onpropertiesupdated(ev: Any & WinRTEvent[IStorageItemInformation]): Unit = js.native
     /** Occurs when one or more of the StorageFile 's properties is updated. */
     @JSName("onpropertiesupdated")
-    var onpropertiesupdated_Original: TypedEventHandler[IStorageItemInformation, js.Any] = js.native
+    var onpropertiesupdated_Original: TypedEventHandler[IStorageItemInformation, Any] = js.native
     
     /** Fires when the StorageFile 's thumbnail is updated or a better quality thumbnail is available. */
-    def onthumbnailupdated(ev: js.Any & WinRTEvent[IStorageItemInformation]): Unit = js.native
+    def onthumbnailupdated(ev: Any & WinRTEvent[IStorageItemInformation]): Unit = js.native
     /** Fires when the StorageFile 's thumbnail is updated or a better quality thumbnail is available. */
     @JSName("onthumbnailupdated")
-    var onthumbnailupdated_Original: TypedEventHandler[IStorageItemInformation, js.Any] = js.native
+    var onthumbnailupdated_Original: TypedEventHandler[IStorageItemInformation, Any] = js.native
     
     /**
       * Opens a random-access stream with the specified options over the specified file.
@@ -261,11 +260,11 @@ object BulkAccess {
     /** Gets the StorageProvider object that contains info about the service that stores the current file. */
     var provider: StorageProvider = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_propertiesupdated(`type`: propertiesupdated, listener: TypedEventHandler[IStorageItemInformation, js.Any]): Unit = js.native
+    def removeEventListener_propertiesupdated(`type`: propertiesupdated, listener: TypedEventHandler[IStorageItemInformation, Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_thumbnailupdated(`type`: thumbnailupdated, listener: TypedEventHandler[IStorageItemInformation, js.Any]): Unit = js.native
+    def removeEventListener_thumbnailupdated(`type`: thumbnailupdated, listener: TypedEventHandler[IStorageItemInformation, Any]): Unit = js.native
     
     /**
       * Renames the StorageFile .
@@ -296,69 +295,69 @@ object BulkAccess {
       * Retrieves a collection of FileInformation objects that contain information about all StorageFile objects in a collection.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of FileInformation objects.
       */
-    def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     /**
       * Retrieves a collection of FileInformation objects that contain information about a range of StorageFile objects in a collection.
       * @param startIndex The zero-based index of the first StorageFile in the range.
       * @param maxItemsToRetrieve The maximum number of StorageFile objects to retrieve information for.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of FileInformation objects.
       */
-    def getFilesAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFilesAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Retrieves a collection of FolderInformation objects that contain information about all StorageFolder objects in a collection.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of FolderInformation objects.
       */
-    def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     /**
       * Retrieves a collection of FolderInformation objects that contain information about a range of StorageFolder objects in a collection.
       * @param startIndex The zero-based index of the first StorageFolder in the range.
       * @param maxItemsToRetrieve The maximum number of StorageFolder objects to retrieve information for.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of FolderInformation objects.
       */
-    def getFoldersAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFoldersAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Retrieves a collection of IStorageItemInformation objects that contain information about all the items in the collection.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of FileInformation and FolderInformation objects.
       */
-    def getItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     /**
       * Retrieves a collection of IStorageItemInformation objects that contain information about a range of items in a collection.
       * @param startIndex The zero-based index of the first item in the range.
       * @param maxItemsToRetrieve The maximum number of items to retrieve information for.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of FileInformation and FolderInformation objects.
       */
-    def getItemsAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getItemsAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Gets a virtualized vector of IStorageItemInformation objects that can be bound to ListView or GridView controls in C#, C++, and VB.
       * @return The virtualized vector of IStorageItemInformation objects.
       */
-    def getVirtualizedFilesVector(): js.Any = js.native
+    def getVirtualizedFilesVector(): Any = js.native
     
     /**
       * Gets a virtualized vector of IStorageItemInformation objects that can be bound to ListView or GridView controls in C#, C++, and VB.
       * @return The virtualized vector of IStorageItemInformation objects.
       */
-    def getVirtualizedFoldersVector(): js.Any = js.native
+    def getVirtualizedFoldersVector(): Any = js.native
     
     /**
       * Gets a virtualized vector of IStorageItemInformation objects that can be bound to ListView or GridView controls in C#, C++, and VB.
       * @return The virtualized vector of IStorageItemInformation objects.
       */
-    def getVirtualizedItemsVector(): js.Any = js.native
+    def getVirtualizedItemsVector(): Any = js.native
   }
   
   /** Provides synchronous access to the properties exposed off StorageFolder and lets an app perform asynchronous management operations such as copy, delete, move, and rename. */
   @js.native
   trait FolderInformation extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_propertiesupdated(`type`: propertiesupdated, listener: TypedEventHandler[IStorageItemInformation, js.Any]): Unit = js.native
+    def addEventListener_propertiesupdated(`type`: propertiesupdated, listener: TypedEventHandler[IStorageItemInformation, Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_thumbnailupdated(`type`: thumbnailupdated, listener: TypedEventHandler[IStorageItemInformation, js.Any]): Unit = js.native
+    def addEventListener_thumbnailupdated(`type`: thumbnailupdated, listener: TypedEventHandler[IStorageItemInformation, Any]): Unit = js.native
     
     /**
       * Retrieves a value that indicates whether the folder supports the specified search query options.
@@ -453,7 +452,7 @@ object BulkAccess {
     def createItemQueryWithOptions(queryOptions: QueryOptions): StorageItemQueryResult = js.native
     
     /** Gets the date that the folder was created. */
-    var dateCreated: Date = js.native
+    var dateCreated: js.Date = js.native
     
     /**
       * Deletes the current folder.
@@ -496,13 +495,13 @@ object BulkAccess {
       * Retrieves all files from the current folder.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of StorageFile objects in the folder.
       */
-    def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     /**
       * Retrieves files from the current folder based on a common folder query.
       * @param query The common file query.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of StorageFile objects in the folder.
       */
-    def getFilesAsync(query: CommonFileQuery): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFilesAsync(query: CommonFileQuery): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     /**
       * Retrieves a range of files from the current folder based on a common file query.
       * @param query The common file query.
@@ -510,7 +509,7 @@ object BulkAccess {
       * @param maxItemsToRetrieve The maximum number of files to retrieve.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of StorageFile objects in the folder.
       */
-    def getFilesAsync(query: CommonFileQuery, startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFilesAsync(query: CommonFileQuery, startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Retrieves the specified child folder from the current folder.
@@ -523,13 +522,13 @@ object BulkAccess {
       * Retrieves all child folders from the current folder.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of child folders. Each child folder in this list is represented by a StorageFolder object.
       */
-    def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     /**
       * Retrieves child folders from the current folder based on a common folder query.
       * @param query The common folder query.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of child folders. Each child folder in this list is represented by a StorageFolder object.
       */
-    def getFoldersAsync(query: CommonFolderQuery): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFoldersAsync(query: CommonFolderQuery): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     /**
       * Retrieves a range of child folders from the current folder based on a common folder query.
       * @param query The common folder query.
@@ -537,7 +536,7 @@ object BulkAccess {
       * @param maxItemsToRetrieve The maximum number of child folders to retrieve.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of child folders. Each child folder in this list is represented by a StorageFolder object.
       */
-    def getFoldersAsync(query: CommonFolderQuery, startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getFoldersAsync(query: CommonFolderQuery, startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Retrieves the indexed state of the folder.
@@ -556,14 +555,14 @@ object BulkAccess {
       * Retrieves all items from the current folder.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of items.
       */
-    def getItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     /**
       * Retrieves a range of items from the current folder.
       * @param startIndex The zero-based index of the first item in the range.
       * @param maxItemsToRetrieve The maximum number of items to retrieve.
       * @return When this method completes successfully, it returns the list (type IVectorView ) of items.
       */
-    def getItemsAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def getItemsAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Gets the parent folder of the current folder.
@@ -631,16 +630,16 @@ object BulkAccess {
     var name: String = js.native
     
     /** Occurs when one or more of the StorageFolder 's properties is updated. */
-    def onpropertiesupdated(ev: js.Any & WinRTEvent[IStorageItemInformation]): Unit = js.native
+    def onpropertiesupdated(ev: Any & WinRTEvent[IStorageItemInformation]): Unit = js.native
     /** Occurs when one or more of the StorageFolder 's properties is updated. */
     @JSName("onpropertiesupdated")
-    var onpropertiesupdated_Original: TypedEventHandler[IStorageItemInformation, js.Any] = js.native
+    var onpropertiesupdated_Original: TypedEventHandler[IStorageItemInformation, Any] = js.native
     
     /** Fires when the StorageFolder 's thumbnail is updated or a better quality thumbnail is available. */
-    def onthumbnailupdated(ev: js.Any & WinRTEvent[IStorageItemInformation]): Unit = js.native
+    def onthumbnailupdated(ev: Any & WinRTEvent[IStorageItemInformation]): Unit = js.native
     /** Fires when the StorageFolder 's thumbnail is updated or a better quality thumbnail is available. */
     @JSName("onthumbnailupdated")
-    var onthumbnailupdated_Original: TypedEventHandler[IStorageItemInformation, js.Any] = js.native
+    var onthumbnailupdated_Original: TypedEventHandler[IStorageItemInformation, Any] = js.native
     
     /** Gets the path of the StorageFolder . */
     var path: String = js.native
@@ -651,11 +650,11 @@ object BulkAccess {
     /** Gets the StorageProvider object that contains info about the service that stores the current folder. */
     var provider: StorageProvider = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_propertiesupdated(`type`: propertiesupdated, listener: TypedEventHandler[IStorageItemInformation, js.Any]): Unit = js.native
+    def removeEventListener_propertiesupdated(`type`: propertiesupdated, listener: TypedEventHandler[IStorageItemInformation, Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_thumbnailupdated(`type`: thumbnailupdated, listener: TypedEventHandler[IStorageItemInformation, js.Any]): Unit = js.native
+    def removeEventListener_thumbnailupdated(`type`: thumbnailupdated, listener: TypedEventHandler[IStorageItemInformation, Any]): Unit = js.native
     
     /**
       * Renames the StorageFolder .

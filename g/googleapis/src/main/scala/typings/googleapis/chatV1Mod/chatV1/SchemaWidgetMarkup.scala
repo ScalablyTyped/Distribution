@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A widget is a UI element that presents texts, images, etc.
-  */
 trait SchemaWidgetMarkup extends StObject {
   
   /**
-    * A list of buttons. Buttons is also oneof data and only one of these
-    * fields should be set.
+    * A list of buttons. Buttons is also oneof data and only one of these fields should be set.
     */
   var buttons: js.UndefOr[js.Array[SchemaButton]] = js.undefined
   
@@ -43,7 +39,7 @@ object SchemaWidgetMarkup {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: SchemaButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: SchemaButton*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

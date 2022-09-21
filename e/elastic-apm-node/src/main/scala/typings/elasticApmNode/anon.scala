@@ -1,6 +1,6 @@
 package typings.elasticApmNode
 
-import typings.elasticApmNode.mod.Connect.ErrorHandleFunction
+import typings.elasticApmNode.connectMod.Connect.ErrorHandleFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,6 +86,56 @@ object anon {
       inline def setTransactionDotid(value: String): Self = StObject.set(x, "transaction.id", value.asInstanceOf[js.Any])
       
       inline def setTransactionDotidUndefined: Self = StObject.set(x, "transaction.id", js.undefined)
+    }
+  }
+  
+  trait SpanidTraceid extends StObject {
+    
+    @JSName("span.id")
+    var spanDotid: String
+    
+    @JSName("trace.id")
+    var traceDotid: String
+  }
+  object SpanidTraceid {
+    
+    inline def apply(spanDotid: String, traceDotid: String): SpanidTraceid = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("span.id")(spanDotid.asInstanceOf[js.Any])
+      __obj.updateDynamic("trace.id")(traceDotid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SpanidTraceid]
+    }
+    
+    extension [Self <: SpanidTraceid](x: Self) {
+      
+      inline def setSpanDotid(value: String): Self = StObject.set(x, "span.id", value.asInstanceOf[js.Any])
+      
+      inline def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Traceid extends StObject {
+    
+    @JSName("trace.id")
+    var traceDotid: String
+    
+    @JSName("transaction.id")
+    var transactionDotid: String
+  }
+  object Traceid {
+    
+    inline def apply(traceDotid: String, transactionDotid: String): Traceid = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("trace.id")(traceDotid.asInstanceOf[js.Any])
+      __obj.updateDynamic("transaction.id")(transactionDotid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Traceid]
+    }
+    
+    extension [Self <: Traceid](x: Self) {
+      
+      inline def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
+      
+      inline def setTransactionDotid(value: String): Self = StObject.set(x, "transaction.id", value.asInstanceOf[js.Any])
     }
   }
 }

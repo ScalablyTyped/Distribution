@@ -10,10 +10,10 @@ Provides a base class and pin management functions for the Raspi.js library suit
 | ------------------ | :-------------: |
 | Full name          | raspi-peripheral |
 | Keywords           | nodebots, robotics, raspberry pi |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 11856 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 582.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/nebrius/raspi-peripheral)

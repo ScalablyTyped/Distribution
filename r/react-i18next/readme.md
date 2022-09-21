@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-i18next
 
-Typings are for version 11.7.3
+Typings are for version 11.18.6
 
 ## Library description:
 Internationalization for react done right. Using the i18next i18n ecosystem.
@@ -10,10 +10,10 @@ Internationalization for react done right. Using the i18next i18n ecosystem.
 | ------------------ | :-------------: |
 | Full name          | react-i18next |
 | Keywords           | i18next, internationalization, i18n, translation, localization, l10n, globalization, react, reactjs |
-| # releases         | 68 |
-| # dependents       | 743 |
-| # downloads        | 31294369 |
-| # stars            | 8 |
+| # releases         | 64 |
+| # dependents       | 0.0 |
+| # downloads        | 7493596.333333333 |
+| # stars            | 7668.0 |
 
 ## Links
 - [Homepage](https://github.com/i18next/react-i18next)

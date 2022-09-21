@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "TeachingBubbleContentBase")
 @js.native
-class TeachingBubbleContentBase protected ()
+open class TeachingBubbleContentBase protected ()
   extends typings.officeUiFabricReact.mod.TeachingBubbleContentBase {
   def this(props: ITeachingBubbleProps) = this()
 }

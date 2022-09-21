@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("datadog-tracer", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Tracer {
+  open class ^ protected () extends Tracer {
     def this(tracerOptions: TracerOptions) = this()
   }
   
@@ -20,12 +20,12 @@ object mod {
     @JSName("addEventListener")
     def addEventListener_error(method: error): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_error(method: error, cb: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+    def addEventListener_error(method: error, cb: js.Function1[/* e */ Any, Unit]): Unit = js.native
     
     @JSName("on")
     def on_error(method: error): Unit = js.native
     @JSName("on")
-    def on_error(method: error, cb: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+    def on_error(method: error, cb: js.Function1[/* e */ Any, Unit]): Unit = js.native
   }
   
   trait TracerOptions extends StObject {

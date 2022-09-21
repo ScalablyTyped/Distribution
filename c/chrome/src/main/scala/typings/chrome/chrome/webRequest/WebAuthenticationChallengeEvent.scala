@@ -1,6 +1,6 @@
 package typings.chrome.chrome.webRequest
 
-import typings.chrome.chrome.events.Event
+import typings.chrome.chrome.events.EventWithRequiredFilterInAddListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebAuthenticationChallengeEvent
   extends StObject
-     with Event[
+     with EventWithRequiredFilterInAddListener[
       js.Function2[
         /* details */ WebAuthenticationChallengeDetails, 
         /* callback */ js.UndefOr[js.Function1[/* response */ BlockingResponse, Unit]], 
@@ -16,23 +16,6 @@ trait WebAuthenticationChallengeEvent
       ]
     ] {
   
-  def addListener(
-    callback: js.Function2[
-      /* details */ WebAuthenticationChallengeDetails, 
-      /* callback */ js.UndefOr[js.Function1[/* response */ BlockingResponse, Unit]], 
-      Unit
-    ],
-    filter: Unit,
-    opt_extraInfoSpec: js.Array[String]
-  ): Unit = js.native
-  def addListener(
-    callback: js.Function2[
-      /* details */ WebAuthenticationChallengeDetails, 
-      /* callback */ js.UndefOr[js.Function1[/* response */ BlockingResponse, Unit]], 
-      Unit
-    ],
-    filter: RequestFilter
-  ): Unit = js.native
   def addListener(
     callback: js.Function2[
       /* details */ WebAuthenticationChallengeDetails, 

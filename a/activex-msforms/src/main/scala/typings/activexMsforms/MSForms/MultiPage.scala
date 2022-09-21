@@ -33,7 +33,7 @@ trait MultiPage extends StObject {
   
   var MultiRow: Boolean
   
-  def Pages(varg: js.Any): js.Any
+  def Pages(varg: Any): Any
   @JSName("Pages")
   val Pages_Original: Pages
   

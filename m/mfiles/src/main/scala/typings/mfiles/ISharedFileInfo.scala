@@ -1,13 +1,12 @@
 package typings.mfiles
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ISharedFileInfo extends StObject {
   
-  val ChangeTimeUtc: Date
+  val ChangeTimeUtc: js.Date
   
   def Clone(): ISharedFileInfo
   
@@ -22,7 +21,7 @@ trait ISharedFileInfo extends StObject {
 object ISharedFileInfo {
   
   inline def apply(
-    ChangeTimeUtc: Date,
+    ChangeTimeUtc: js.Date,
     Clone: () => ISharedFileInfo,
     Extension: String,
     LogicalSize: Double,
@@ -35,7 +34,7 @@ object ISharedFileInfo {
   
   extension [Self <: ISharedFileInfo](x: Self) {
     
-    inline def setChangeTimeUtc(value: Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
+    inline def setChangeTimeUtc(value: js.Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
     
     inline def setClone(value: () => ISharedFileInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

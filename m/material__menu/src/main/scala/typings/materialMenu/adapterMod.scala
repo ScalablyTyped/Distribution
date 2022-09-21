@@ -44,6 +44,12 @@ object adapterMod {
     def focusListRoot(): Unit = js.native
     
     /**
+      * @return the attribute string if present on an element at the index
+      * provided, null otherwise.
+      */
+    def getAttributeFromElementAtIndex(index: Double, attr: String): String | Null = js.native
+    
+    /**
       * @return Index of the element in the list or -1 if it is not in the list.
       */
     def getElementIndex(element: Element): Double = js.native

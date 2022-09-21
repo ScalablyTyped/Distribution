@@ -10,10 +10,10 @@ object playArrowMod {
   
   @JSImport("material-ui/svg-icons/av/play-arrow", JSImport.Default)
   @js.native
-  class default () extends AvPlayArrow
+  open class default () extends AvPlayArrow
   
   @JSImport("material-ui/svg-icons/av/play-arrow", "AvPlayArrow")
   @js.native
-  class AvPlayArrow ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvPlayArrow ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

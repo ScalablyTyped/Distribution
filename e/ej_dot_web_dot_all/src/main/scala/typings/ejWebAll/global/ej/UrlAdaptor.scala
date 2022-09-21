@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.UrlAdaptor")
 @js.native
-class UrlAdaptor ()
+open class UrlAdaptor ()
   extends StObject
      with typings.ejWebAll.ej.UrlAdaptor

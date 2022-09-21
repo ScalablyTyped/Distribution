@@ -20,5 +20,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The InputEvent class constructor produces an empty InputEvent.
   */
-class InputEvent ()
+open class InputEvent ()
   extends typings.go.mod.InputEvent

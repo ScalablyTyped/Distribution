@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ArrayContaining
   extends StObject
-     with Instantiable1[/* sample */ js.Array[js.Any], js.Any] {
+     with Instantiable1[/* sample */ js.Array[scala.Any], scala.Any] {
   
-  def asymmetricMatch(other: js.Any): Boolean = js.native
+  def asymmetricMatch(other: scala.Any): Boolean = js.native
   
   def jasmineToString(): String = js.native
 }

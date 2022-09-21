@@ -50,7 +50,7 @@ object SocketConnectParams {
     
     inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
     
     inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     

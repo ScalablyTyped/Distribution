@@ -10,10 +10,10 @@ object personAddMod {
   
   @JSImport("material-ui/svg-icons/social/person-add", JSImport.Default)
   @js.native
-  class default () extends SocialPersonAdd
+  open class default () extends SocialPersonAdd
   
   @JSImport("material-ui/svg-icons/social/person-add", "SocialPersonAdd")
   @js.native
-  class SocialPersonAdd ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialPersonAdd ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

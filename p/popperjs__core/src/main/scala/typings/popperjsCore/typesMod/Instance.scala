@@ -12,7 +12,7 @@ trait Instance extends StObject {
   
   def forceUpdate(): Unit
   
-  def setOptions(options: PartialOptionsGenericany): js.Promise[PartialState]
+  def setOptions(setOptionsAction: SetAction[PartialOptionsGenericany]): js.Promise[PartialState]
   
   var state: State
   
@@ -23,7 +23,7 @@ object Instance {
   inline def apply(
     destroy: () => Unit,
     forceUpdate: () => Unit,
-    setOptions: PartialOptionsGenericany => js.Promise[PartialState],
+    setOptions: SetAction[PartialOptionsGenericany] => js.Promise[PartialState],
     state: State,
     update: () => js.Promise[PartialState]
   ): Instance = {
@@ -37,7 +37,7 @@ object Instance {
     
     inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
     
-    inline def setSetOptions(value: PartialOptionsGenericany => js.Promise[PartialState]): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: SetAction[PartialOptionsGenericany] => js.Promise[PartialState]): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
     inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

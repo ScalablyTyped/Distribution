@@ -6,12 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "Interval")
 @js.native
-class Interval () extends StObject {
+open class Interval () extends StObject {
   def this(start: Double) = this()
   def this(start: Double, stop: Double) = this()
   def this(start: Unit, stop: Double) = this()
   
+  /**
+    * The beginning of the interval.
+    */
   var start: Double = js.native
   
+  /**
+    * The end of the interval.
+    */
   var stop: Double = js.native
 }

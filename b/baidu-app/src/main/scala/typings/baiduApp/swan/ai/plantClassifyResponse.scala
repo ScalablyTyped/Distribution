@@ -25,6 +25,6 @@ object plantClassifyResponse {
     
     inline def setResult(value: js.Array[Score]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: Score*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: Score*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

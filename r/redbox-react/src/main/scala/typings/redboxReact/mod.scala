@@ -2,8 +2,6 @@ package typings.redboxReact
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.react.mod.Props
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,32 +10,31 @@ object mod {
   
   @JSImport("redbox-react", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[RedBoxProps, js.Object, js.Any]
+  open class default ()
+    extends Component[RedBoxProps, js.Object, Any]
   
   @JSImport("redbox-react", "RedBoxError")
   @js.native
-  class RedBoxError protected ()
-    extends Component[RedBoxProps, js.Object, js.Any] {
+  open class RedBoxError protected ()
+    extends Component[RedBoxProps, js.Object, Any] {
     def this(props: RedBoxProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RedBoxProps, context: js.Any) = this()
+    def this(props: RedBoxProps, context: Any) = this()
   }
   
-  type RedBox = Component[RedBoxProps, js.Object, js.Any]
+  type RedBox = Component[RedBoxProps, js.Object, Any]
   
-  trait RedBoxProps
-    extends StObject
-       with Props[RedBoxError] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.Props<RedBoxError> * / any */ trait RedBoxProps extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
     
     var editorScheme: js.UndefOr[String] = js.undefined
     
-    var error: Error
+    var error: js.Error
     
     var filename: js.UndefOr[String] = js.undefined
     
@@ -49,7 +46,7 @@ object mod {
   }
   object RedBoxProps {
     
-    inline def apply(error: Error): RedBoxProps = {
+    inline def apply(error: js.Error): RedBoxProps = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedBoxProps]
     }
@@ -64,7 +61,7 @@ object mod {
       
       inline def setEditorSchemeUndefined: Self = StObject.set(x, "editorScheme", js.undefined)
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

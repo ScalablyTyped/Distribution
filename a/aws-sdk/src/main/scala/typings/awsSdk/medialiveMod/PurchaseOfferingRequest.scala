@@ -22,6 +22,11 @@ trait PurchaseOfferingRequest extends StObject {
   var OfferingId: string
   
   /**
+    * Renewal settings for the reservation
+    */
+  var RenewalSettings: js.UndefOr[typings.awsSdk.medialiveMod.RenewalSettings] = js.undefined
+  
+  /**
     * Unique request ID to be specified. This is needed to prevent retries from creating multiple resources.
     */
   var RequestId: js.UndefOr[string] = js.undefined
@@ -52,6 +57,10 @@ object PurchaseOfferingRequest {
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     inline def setOfferingId(value: string): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
+    
+    inline def setRenewalSettings(value: RenewalSettings): Self = StObject.set(x, "RenewalSettings", value.asInstanceOf[js.Any])
+    
+    inline def setRenewalSettingsUndefined: Self = StObject.set(x, "RenewalSettings", js.undefined)
     
     inline def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

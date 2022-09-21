@@ -95,7 +95,7 @@ object FileExplorer {
     
     /** returns the AJAX request data
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model
       */
@@ -118,7 +118,7 @@ object FileExplorer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -152,7 +152,7 @@ object FileExplorer {
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -175,7 +175,7 @@ object FileExplorer {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -185,7 +185,7 @@ object FileExplorer {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
@@ -211,11 +211,11 @@ object FileExplorer {
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the expected image size.
       */
-    var size: js.UndefOr[js.Any] = js.undefined
+    var size: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -242,11 +242,11 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -276,7 +276,7 @@ object FileExplorer {
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -307,7 +307,7 @@ object FileExplorer {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
@@ -321,11 +321,11 @@ object FileExplorer {
     
     /** returns Selected FileList objects
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -340,11 +340,11 @@ object FileExplorer {
     
     extension [Self <: BeforeUploadDialogOpenEventArgs](x: Self) {
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -370,7 +370,7 @@ object FileExplorer {
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -378,7 +378,7 @@ object FileExplorer {
     
     /** returns the upload item details.
       */
-    var uploadItemDetails: js.UndefOr[js.Any] = js.undefined
+    var uploadItemDetails: js.UndefOr[Any] = js.undefined
   }
   object BeforeUploadEventArgs {
     
@@ -401,7 +401,7 @@ object FileExplorer {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
@@ -409,7 +409,7 @@ object FileExplorer {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setUploadItemDetails(value: js.Any): Self = StObject.set(x, "uploadItemDetails", value.asInstanceOf[js.Any])
+      inline def setUploadItemDetails(value: Any): Self = StObject.set(x, "uploadItemDetails", value.asInstanceOf[js.Any])
       
       inline def setUploadItemDetailsUndefined: Self = StObject.set(x, "uploadItemDetails", js.undefined)
     }
@@ -423,11 +423,11 @@ object FileExplorer {
     
     /** selected FileList Object
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the upload model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -435,7 +435,7 @@ object FileExplorer {
     
     /** XHR-AJAX Object for reference
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object BeforeUploadSendEventArgs {
     
@@ -450,11 +450,11 @@ object FileExplorer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -462,7 +462,7 @@ object FileExplorer {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -473,13 +473,13 @@ object FileExplorer {
     /** The customMenuFields property is used to define custom functionality for custom ContextMenu item's which are defined in items property.
       * @Default {[]}
       */
-    var customMenuFields: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var customMenuFields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** The items property is used to configure and group the required ContextMenu items in FileExplorer control.
       * @Default {{% highlight javascript %}{navbar: [NewFolder, Upload, |, Delete, Rename, |, Cut, Copy, Paste, |, Getinfo],cwd: [Refresh, Paste,|, SortBy, |, NewFolder, Upload, |,
       * Getinfo],files: [Open, Download, |, Upload, |, Delete, Rename, |, Cut, Copy, Paste, |, OpenFolderLocation, Getinfo]}{% endhighlight %}}
       */
-    var items: js.UndefOr[js.Any] = js.undefined
+    var items: js.UndefOr[Any] = js.undefined
   }
   object ContextMenuSettings {
     
@@ -490,13 +490,13 @@ object FileExplorer {
     
     extension [Self <: ContextMenuSettings](x: Self) {
       
-      inline def setCustomMenuFields(value: js.Array[js.Any]): Self = StObject.set(x, "customMenuFields", value.asInstanceOf[js.Any])
+      inline def setCustomMenuFields(value: js.Array[Any]): Self = StObject.set(x, "customMenuFields", value.asInstanceOf[js.Any])
       
       inline def setCustomMenuFieldsUndefined: Self = StObject.set(x, "customMenuFields", js.undefined)
       
-      inline def setCustomMenuFieldsVarargs(value: js.Any*): Self = StObject.set(x, "customMenuFields", js.Array(value :_*))
+      inline def setCustomMenuFieldsVarargs(value: Any*): Self = StObject.set(x, "customMenuFields", js.Array(value*))
       
-      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     }
@@ -518,7 +518,7 @@ object FileExplorer {
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the source path.
       */
@@ -549,9 +549,9 @@ object FileExplorer {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
@@ -610,7 +610,7 @@ object FileExplorer {
     
     /** returns the AJAX response data
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model
       */
@@ -618,7 +618,7 @@ object FileExplorer {
     
     /** returns the selected item details
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -637,7 +637,7 @@ object FileExplorer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -645,7 +645,7 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
@@ -671,7 +671,7 @@ object FileExplorer {
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the source path.
       */
@@ -702,9 +702,9 @@ object FileExplorer {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
@@ -767,7 +767,7 @@ object FileExplorer {
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of target element.
       */
@@ -798,7 +798,7 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetElementName(value: String): Self = StObject.set(x, "targetElementName", value.asInstanceOf[js.Any])
       
@@ -828,11 +828,11 @@ object FileExplorer {
     
     /** returns the dragging file details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the dragging element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the path of dragging element.
       */
@@ -859,11 +859,11 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
       
@@ -889,7 +889,7 @@ object FileExplorer {
     
     /** returns the dragging file details
       */
-    var fileInfo: js.UndefOr[js.Any] = js.undefined
+    var fileInfo: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -897,7 +897,7 @@ object FileExplorer {
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of target element
       */
@@ -928,7 +928,7 @@ object FileExplorer {
       
       inline def setDropActionUndefined: Self = StObject.set(x, "dropAction", js.undefined)
       
-      inline def setFileInfo(value: js.Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
+      inline def setFileInfo(value: Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
       
       inline def setFileInfoUndefined: Self = StObject.set(x, "fileInfo", js.undefined)
       
@@ -936,7 +936,7 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetElementName(value: String): Self = StObject.set(x, "targetElementName", value.asInstanceOf[js.Any])
       
@@ -966,7 +966,7 @@ object FileExplorer {
     
     /** returns the dragging element details.
       */
-    var fileInfo: js.UndefOr[js.Any] = js.undefined
+    var fileInfo: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -974,7 +974,7 @@ object FileExplorer {
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of target folder.
       */
@@ -1005,7 +1005,7 @@ object FileExplorer {
       
       inline def setDropActionUndefined: Self = StObject.set(x, "dropAction", js.undefined)
       
-      inline def setFileInfo(value: js.Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
+      inline def setFileInfo(value: Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
       
       inline def setFileInfoUndefined: Self = StObject.set(x, "fileInfo", js.undefined)
       
@@ -1013,7 +1013,7 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetFolder(value: String): Self = StObject.set(x, "targetFolder", value.asInstanceOf[js.Any])
       
@@ -1083,7 +1083,7 @@ object FileExplorer {
     
     /** loaded image element
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -1091,7 +1091,7 @@ object FileExplorer {
     
     /** original arguments of image load or error event
       */
-    var originalArgs: js.UndefOr[js.Any] = js.undefined
+    var originalArgs: js.UndefOr[Any] = js.undefined
     
     /** loaded image path.
       */
@@ -1118,7 +1118,7 @@ object FileExplorer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -1126,7 +1126,7 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setOriginalArgs(value: js.Any): Self = StObject.set(x, "originalArgs", value.asInstanceOf[js.Any])
+      inline def setOriginalArgs(value: Any): Self = StObject.set(x, "originalArgs", value.asInstanceOf[js.Any])
       
       inline def setOriginalArgsUndefined: Self = StObject.set(x, "originalArgs", js.undefined)
       
@@ -1156,7 +1156,7 @@ object FileExplorer {
       * @Default {[{ field: name, headerText: Name, width: 30% }, { field: dateModified, headerText: Date Modified, width: 30% }, { field: type, headerText: Type, width: 15% }, { field:
       * size, headerText: Size, width: 12%, textAlign: right, headerTextAlign: left }]}
       */
-    var columns: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var columns: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object GridSettings {
     
@@ -1175,11 +1175,11 @@ object FileExplorer {
       
       inline def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
       
-      inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Any*): Self = StObject.set(x, "columns", js.Array(value*))
     }
   }
   
@@ -1207,7 +1207,7 @@ object FileExplorer {
     
     /** returns the event object.
       */
-    var originalArgs: js.UndefOr[js.Any] = js.undefined
+    var originalArgs: js.UndefOr[Any] = js.undefined
     
     /** returns shiftKey value.
       */
@@ -1246,7 +1246,7 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setOriginalArgs(value: js.Any): Self = StObject.set(x, "originalArgs", value.asInstanceOf[js.Any])
+      inline def setOriginalArgs(value: Any): Self = StObject.set(x, "originalArgs", value.asInstanceOf[js.Any])
       
       inline def setOriginalArgsUndefined: Self = StObject.set(x, "originalArgs", js.undefined)
       
@@ -1276,7 +1276,7 @@ object FileExplorer {
     
     /** returns the FileExplorer model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1303,7 +1303,7 @@ object FileExplorer {
       
       inline def setLayoutTypeUndefined: Self = StObject.set(x, "layoutType", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1325,15 +1325,15 @@ object FileExplorer {
     
     /** returns the dataSource of ContextMenu.
       */
-    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the element of ContextMenu.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the event of ContextMenu.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -1341,7 +1341,7 @@ object FileExplorer {
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1364,17 +1364,17 @@ object FileExplorer {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -1382,7 +1382,7 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1408,11 +1408,11 @@ object FileExplorer {
     
     /** returns the element of clicked ContextMenu item.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the event of ContextMenu.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -1451,11 +1451,11 @@ object FileExplorer {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -1497,7 +1497,7 @@ object FileExplorer {
     
     /** returns the element of ContextMenu.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -1505,7 +1505,7 @@ object FileExplorer {
     
     /** returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1528,7 +1528,7 @@ object FileExplorer {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -1536,7 +1536,7 @@ object FileExplorer {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1561,7 +1561,7 @@ object FileExplorer {
       * dataType and success. For upload, download and getImage API, you can only customize URL.
       * @Default {{ read: {}, createFolder: {}, remove: {}, rename: {}, paste: {}, getDetails: {}, download: {}, upload: {}, getImage: {}, search: {}}}
       */
-    var ajaxSettings: js.UndefOr[js.Any] = js.undefined
+    var ajaxSettings: js.UndefOr[Any] = js.undefined
     
     /** The FileExplorer allows to move the files from one folder to another folder of FileExplorer by using drag and drop option. Also it supports to upload a file by dragging it from
       * windows explorer to the necessary folder of ejFileExplorer.
@@ -1793,7 +1793,7 @@ object FileExplorer {
     
     /** The selectedItems is used to select the specified items (file, folder) of FileExplorer control.
       */
-    var selectedItems: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+    var selectedItems: js.UndefOr[String | js.Array[Any]] = js.undefined
     
     /** Enables or disables the checkbox option in FileExplorer control.
       * @Default {true}
@@ -1840,12 +1840,12 @@ object FileExplorer {
       * @Default {{ creation: [NewFolder], navigation: [Back, Forward, Upward], addressBar: [Addressbar], editing: [Refresh, Upload, Delete, Rename, Download], copyPaste: [Cut, Copy,
       * Paste], getProperties: [Details], searchBar: [Searchbar], layout: [Layout], sortBy: [SortBy]}}
       */
-    var tools: js.UndefOr[js.Any] = js.undefined
+    var tools: js.UndefOr[Any] = js.undefined
     
     /** The toolsList property is used to arrange the toolbar items in the FileExplorer control.
       * @Default {[layout, creation, navigation, addressBar, editing, copyPaste, sortBy, getProperties, searchBar]}
       */
-    var toolsList: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var toolsList: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Fires when the items from grid view or tile view or large icons view of FileExplorer control is unselected.
       */
@@ -1894,7 +1894,7 @@ object FileExplorer {
       
       inline def setAjaxDataTypeUndefined: Self = StObject.set(x, "ajaxDataType", js.undefined)
       
-      inline def setAjaxSettings(value: js.Any): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
+      inline def setAjaxSettings(value: Any): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
       
       inline def setAjaxSettingsUndefined: Self = StObject.set(x, "ajaxSettings", js.undefined)
       
@@ -2106,11 +2106,11 @@ object FileExplorer {
       
       inline def setSelectedFolderUndefined: Self = StObject.set(x, "selectedFolder", js.undefined)
       
-      inline def setSelectedItems(value: String | js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: String | js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      inline def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
       
       inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
       
@@ -2144,13 +2144,13 @@ object FileExplorer {
       
       inline def setTemplateRefreshUndefined: Self = StObject.set(x, "templateRefresh", js.undefined)
       
-      inline def setTools(value: js.Any): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+      inline def setTools(value: Any): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
       
-      inline def setToolsList(value: js.Array[js.Any]): Self = StObject.set(x, "toolsList", value.asInstanceOf[js.Any])
+      inline def setToolsList(value: js.Array[Any]): Self = StObject.set(x, "toolsList", value.asInstanceOf[js.Any])
       
       inline def setToolsListUndefined: Self = StObject.set(x, "toolsList", js.undefined)
       
-      inline def setToolsListVarargs(value: js.Any*): Self = StObject.set(x, "toolsList", js.Array(value :_*))
+      inline def setToolsListVarargs(value: Any*): Self = StObject.set(x, "toolsList", js.Array(value*))
       
       inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
       
@@ -2204,7 +2204,7 @@ object FileExplorer {
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -2235,7 +2235,7 @@ object FileExplorer {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
@@ -2261,11 +2261,11 @@ object FileExplorer {
     
     /** returns the selected item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the target folder item details.
       */
-    var targetFolder: js.UndefOr[js.Any] = js.undefined
+    var targetFolder: js.UndefOr[Any] = js.undefined
     
     /** returns the target path.
       */
@@ -2296,13 +2296,13 @@ object FileExplorer {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      inline def setTargetFolder(value: js.Any): Self = StObject.set(x, "targetFolder", value.asInstanceOf[js.Any])
+      inline def setTargetFolder(value: Any): Self = StObject.set(x, "targetFolder", value.asInstanceOf[js.Any])
       
       inline def setTargetFolderUndefined: Self = StObject.set(x, "targetFolder", js.undefined)
       
@@ -2324,7 +2324,7 @@ object FileExplorer {
     
     /** returns the AJAX response data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -2340,7 +2340,7 @@ object FileExplorer {
     
     /** returns the removed item details.
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -2359,7 +2359,7 @@ object FileExplorer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -2375,7 +2375,7 @@ object FileExplorer {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
@@ -2393,7 +2393,7 @@ object FileExplorer {
     
     /** returns the mouse move event args.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -2416,7 +2416,7 @@ object FileExplorer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2438,7 +2438,7 @@ object FileExplorer {
     
     /** returns the mouse down event args.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -2461,7 +2461,7 @@ object FileExplorer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2483,7 +2483,7 @@ object FileExplorer {
     
     /** returns the mouse leave event args.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the FileExplorer model.
       */
@@ -2506,7 +2506,7 @@ object FileExplorer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2540,7 +2540,7 @@ object FileExplorer {
     
     /** returns the selected item details
       */
-    var selectedItems: js.UndefOr[js.Any] = js.undefined
+    var selectedItems: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -2567,13 +2567,13 @@ object FileExplorer {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setSelectedItems(value: js.Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: Any): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
@@ -2595,15 +2595,15 @@ object FileExplorer {
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the current row data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model of FileExplorer.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the current row index.
       */
@@ -2630,15 +2630,15 @@ object FileExplorer {
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2680,11 +2680,11 @@ object FileExplorer {
     
     /** Returns the unselected item details.
       */
-    var unselectedItem: js.UndefOr[js.Any] = js.undefined
+    var unselectedItem: js.UndefOr[Any] = js.undefined
     
     /** Returns the unselected items details.
       */
-    var unselectedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var unselectedItems: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object UnselectEventArgs {
     
@@ -2707,7 +2707,7 @@ object FileExplorer {
       
       inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
       
       inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
@@ -2721,15 +2721,15 @@ object FileExplorer {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setUnselectedItem(value: js.Any): Self = StObject.set(x, "unselectedItem", value.asInstanceOf[js.Any])
+      inline def setUnselectedItem(value: Any): Self = StObject.set(x, "unselectedItem", value.asInstanceOf[js.Any])
       
       inline def setUnselectedItemUndefined: Self = StObject.set(x, "unselectedItem", js.undefined)
       
-      inline def setUnselectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "unselectedItems", value.asInstanceOf[js.Any])
+      inline def setUnselectedItems(value: js.Array[Any]): Self = StObject.set(x, "unselectedItems", value.asInstanceOf[js.Any])
       
       inline def setUnselectedItemsUndefined: Self = StObject.set(x, "unselectedItems", js.undefined)
       
-      inline def setUnselectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "unselectedItems", js.Array(value :_*))
+      inline def setUnselectedItemsVarargs(value: Any*): Self = StObject.set(x, "unselectedItems", js.Array(value*))
     }
   }
   
@@ -2737,7 +2737,7 @@ object FileExplorer {
     
     /** AJAX event argument for reference
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** details about the error information
       */
@@ -2745,11 +2745,11 @@ object FileExplorer {
     
     /** uploaded file list
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the Upload model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** response from the server
       */
@@ -2757,7 +2757,7 @@ object FileExplorer {
     
     /** successfully uploaded files list
       */
-    var success: js.UndefOr[js.Any] = js.undefined
+    var success: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2765,7 +2765,7 @@ object FileExplorer {
     
     /** XHR-AJAX Object for reference
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object UploadCompleteEventArgs {
     
@@ -2776,7 +2776,7 @@ object FileExplorer {
     
     extension [Self <: UploadCompleteEventArgs](x: Self) {
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
@@ -2784,11 +2784,11 @@ object FileExplorer {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2796,7 +2796,7 @@ object FileExplorer {
       
       inline def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
       
-      inline def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
@@ -2804,7 +2804,7 @@ object FileExplorer {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -2822,7 +2822,7 @@ object FileExplorer {
     
     /** returns the details of the uploaded files
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2845,7 +2845,7 @@ object FileExplorer {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
@@ -2870,12 +2870,12 @@ object FileExplorer {
     /** Specifies the actions for upload dialog during initialization.
       * @Default {{ modal:false, closeOnComplete:false, content:null, drag:true }}
       */
-    var dialogAction: js.UndefOr[js.Any] = js.undefined
+    var dialogAction: js.UndefOr[Any] = js.undefined
     
     /** Specifies the position at which the upload dialog is displayed using X and Y values. X: Sets the left position value for dialog. Y: Sets the top position value for dialog.
       * @Default {null}
       */
-    var dialogPosition: js.UndefOr[js.Any] = js.undefined
+    var dialogPosition: js.UndefOr[Any] = js.undefined
     
     /** Specifies the maximum file size allowed to upload. It accepts the value in bytes.
       * @Default {31457280}
@@ -2904,11 +2904,11 @@ object FileExplorer {
       
       inline def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
       
-      inline def setDialogAction(value: js.Any): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
+      inline def setDialogAction(value: Any): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
       
       inline def setDialogActionUndefined: Self = StObject.set(x, "dialogAction", js.undefined)
       
-      inline def setDialogPosition(value: js.Any): Self = StObject.set(x, "dialogPosition", value.asInstanceOf[js.Any])
+      inline def setDialogPosition(value: Any): Self = StObject.set(x, "dialogPosition", value.asInstanceOf[js.Any])
       
       inline def setDialogPositionUndefined: Self = StObject.set(x, "dialogPosition", js.undefined)
       
@@ -2926,15 +2926,15 @@ object FileExplorer {
     
     /** AJAX event argument for reference
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** uploaded file list
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the Upload model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** response from the server
       */
@@ -2946,7 +2946,7 @@ object FileExplorer {
     
     /** XHR-AJAX Object for reference
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object UploadSuccessEventArgs {
     
@@ -2957,15 +2957,15 @@ object FileExplorer {
     
     extension [Self <: UploadSuccessEventArgs](x: Self) {
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2977,7 +2977,7 @@ object FileExplorer {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }

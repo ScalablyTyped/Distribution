@@ -23,7 +23,7 @@ trait ScrollResponderMixin
     * Components can pass what node to use by defining a `getScrollableNode`
     * function otherwise `this` is used.
     */
-  def scrollResponderGetScrollableNode(): js.Any = js.native
+  def scrollResponderGetScrollableNode(): Any = js.native
   
   /**
     * Invoke this from an `onMomentumScrollBegin` event.
@@ -50,7 +50,7 @@ trait ScrollResponderMixin
     * altogether. To improve this, find a way to disable the `UIScrollView` after
     * a touch has already started.
     */
-  def scrollResponderHandleResponderReject(): js.Any = js.native
+  def scrollResponderHandleResponderReject(): Any = js.native
   
   /**
     * Invoke this from an `onResponderRelease` event.
@@ -233,10 +233,10 @@ trait ScrollResponderMixin
     * @param preventNegativeScrolling Whether to allow pulling the content
     *        down to make it meet the keyboard's top. Default is false.
     */
-  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any): Unit = js.native
-  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Double): Unit = js.native
-  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Double, preventNegativeScrollOffset: Boolean): Unit = js.native
-  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Unit, preventNegativeScrollOffset: Boolean): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: Any): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: Any, additionalOffset: Double): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: Any, additionalOffset: Double, preventNegativeScrollOffset: Boolean): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: Any, additionalOffset: Unit, preventNegativeScrollOffset: Boolean): Unit = js.native
   
   /**
     * A helper function to scroll to a specific point  in the scrollview.

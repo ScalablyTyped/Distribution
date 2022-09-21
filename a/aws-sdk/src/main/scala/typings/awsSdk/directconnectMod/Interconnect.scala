@@ -12,9 +12,14 @@ trait Interconnect extends StObject {
   var awsDevice: js.UndefOr[AwsDevice] = js.undefined
   
   /**
-    * The Direct Connect endpoint on which the physical connection terminates.
+    * The Direct Connect endpoint that terminates the physical connection.
     */
   var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.undefined
+  
+  /**
+    * The Direct Connect endpoint that terminates the logical connection. This device might be different than the device that terminates the physical connection.
+    */
+  var awsLogicalDeviceId: js.UndefOr[AwsLogicalDeviceId] = js.undefined
   
   /**
     * The bandwidth of the connection.
@@ -54,7 +59,7 @@ trait Interconnect extends StObject {
   /**
     * The time of the most recent call to DescribeLoa for this connection.
     */
-  var loaIssueTime: js.UndefOr[LoaIssueTime] = js.undefined
+  var loaIssueTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The location of the connection.
@@ -67,7 +72,7 @@ trait Interconnect extends StObject {
   var providerName: js.UndefOr[ProviderName] = js.undefined
   
   /**
-    * The AWS Region where the connection is located.
+    * The Amazon Web Services Region where the connection is located.
     */
   var region: js.UndefOr[Region] = js.undefined
   
@@ -92,6 +97,10 @@ object Interconnect {
     inline def setAwsDeviceV2(value: AwsDeviceV2): Self = StObject.set(x, "awsDeviceV2", value.asInstanceOf[js.Any])
     
     inline def setAwsDeviceV2Undefined: Self = StObject.set(x, "awsDeviceV2", js.undefined)
+    
+    inline def setAwsLogicalDeviceId(value: AwsLogicalDeviceId): Self = StObject.set(x, "awsLogicalDeviceId", value.asInstanceOf[js.Any])
+    
+    inline def setAwsLogicalDeviceIdUndefined: Self = StObject.set(x, "awsLogicalDeviceId", js.undefined)
     
     inline def setBandwidth(value: Bandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
@@ -121,7 +130,7 @@ object Interconnect {
     
     inline def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
     
-    inline def setLoaIssueTime(value: LoaIssueTime): Self = StObject.set(x, "loaIssueTime", value.asInstanceOf[js.Any])
+    inline def setLoaIssueTime(value: js.Date): Self = StObject.set(x, "loaIssueTime", value.asInstanceOf[js.Any])
     
     inline def setLoaIssueTimeUndefined: Self = StObject.set(x, "loaIssueTime", js.undefined)
     
@@ -141,6 +150,6 @@ object Interconnect {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -8,5 +8,5 @@ object putBucketTaggingInputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/PutBucketTaggingInput", "PutBucketTaggingInput")
   @js.native
-  val PutBucketTaggingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutBucketTaggingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

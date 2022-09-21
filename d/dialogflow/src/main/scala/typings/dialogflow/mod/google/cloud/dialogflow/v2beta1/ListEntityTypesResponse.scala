@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ListEntityTypesResponse.
   * @param [properties] Properties to set
   */
-class ListEntityTypesResponse ()
+open class ListEntityTypesResponse ()
   extends StObject
      with IListEntityTypesResponse {
   def this(properties: IListEntityTypesResponse) = this()
@@ -33,7 +32,7 @@ class ListEntityTypesResponse ()
     * Converts this ListEntityTypesResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object ListEntityTypesResponse {
   
@@ -50,6 +49,8 @@ object ListEntityTypesResponse {
   inline def create(): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListEntityTypesResponse]
   inline def create(properties: IListEntityTypesResponse): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListEntityTypesResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListEntityTypesResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ListEntityTypesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListEntityTypesResponse]
   /**
     * Decodes a ListEntityTypesResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object ListEntityTypesResponse {
   /* static member */
   inline def decode(reader: Reader): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListEntityTypesResponse]
   inline def decode(reader: Reader, length: Double): ListEntityTypesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListEntityTypesResponse]
-  inline def decode(reader: Uint8Array): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListEntityTypesResponse]
-  inline def decode(reader: Uint8Array, length: Double): ListEntityTypesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListEntityTypesResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListEntityTypesResponse]
   /**
     * Decodes a ListEntityTypesResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object ListEntityTypesResponse {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListEntityTypesResponse]
-  inline def decodeDelimited(reader: Uint8Array): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListEntityTypesResponse]
   
   /**
     * Encodes the specified ListEntityTypesResponse message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ListEntityTypesResponse.verify|verify} messages.
@@ -101,7 +100,7 @@ object ListEntityTypesResponse {
     * @returns ListEntityTypesResponse
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListEntityTypesResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ListEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListEntityTypesResponse]
   
   /**
     * Creates a plain object from a ListEntityTypesResponse message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object ListEntityTypesResponse {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: ListEntityTypesResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ListEntityTypesResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListEntityTypesResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ListEntityTypesResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ListEntityTypesResponse message.
@@ -119,5 +118,5 @@ object ListEntityTypesResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

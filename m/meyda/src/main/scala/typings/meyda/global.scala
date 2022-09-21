@@ -25,7 +25,7 @@ object global {
     
     @JSGlobal("Meyda.MeydaAnalyzer")
     @js.native
-    class MeydaAnalyzer ()
+    open class MeydaAnalyzer ()
       extends typings.meyda.mod.MeydaAnalyzer
     
     @JSGlobal("Meyda.audioContext")
@@ -51,7 +51,7 @@ object global {
     
     @JSGlobal("Meyda.featureExtractors")
     @js.native
-    val featureExtractors: js.Any = js.native
+    val featureExtractors: Any = js.native
     
     @JSGlobal("Meyda.melBands")
     @js.native

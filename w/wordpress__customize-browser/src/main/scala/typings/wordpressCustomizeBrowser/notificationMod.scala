@@ -11,7 +11,7 @@ object notificationMod {
   
   @JSImport("@wordpress/customize-browser/Notification", "Notification")
   @js.native
-  class Notification protected () extends Class {
+  open class Notification protected () extends Class {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

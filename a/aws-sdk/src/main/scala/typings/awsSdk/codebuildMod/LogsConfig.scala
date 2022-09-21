@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogsConfig extends StObject {
   
   /**
-    *  Information about Amazon CloudWatch Logs for a build project. Amazon CloudWatch Logs are enabled by default. 
+    *  Information about CloudWatch Logs for a build project. CloudWatch Logs are enabled by default. 
     */
   var cloudWatchLogs: js.UndefOr[CloudWatchLogsConfig] = js.undefined
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PsbtOutputExtended
   extends StObject
      with PsbtOutput
-     with /* index */ StringDictionary[js.Any]
+     with /* index */ StringDictionary[Any]
 object PsbtOutputExtended {
   
   inline def apply(): PsbtOutputExtended = {

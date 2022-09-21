@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGRect")
 @js.native
-/* private */ class SVGRect ()
+/* private */ open class SVGRect ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGRect {
   

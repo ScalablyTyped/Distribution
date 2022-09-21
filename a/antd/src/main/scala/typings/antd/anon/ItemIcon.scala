@@ -1,43 +1,56 @@
 package typings.antd.anon
 
+import typings.antd.iconUtilMod.RenderNode
+import typings.react.mod.ReactFragment
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ItemIcon extends StObject {
   
-  var clearIcon: ReactNode
+  var clearIcon: RenderNode
   
-  var itemIcon: js.Object | Null
+  var itemIcon: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode]) | Null
   
-  var removeIcon: js.Object | Null
+  var removeIcon: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode]) | Null
   
-  var suffixIcon: js.Object | Null
+  var suffixIcon: Element | (js.Function1[/* hasOpenShowSearch */ Open, Element])
 }
 object ItemIcon {
   
-  inline def apply(): ItemIcon = {
-    val __obj = js.Dynamic.literal(itemIcon = null, removeIcon = null, suffixIcon = null)
+  inline def apply(suffixIcon: Element | (js.Function1[/* hasOpenShowSearch */ Open, Element])): ItemIcon = {
+    val __obj = js.Dynamic.literal(suffixIcon = suffixIcon.asInstanceOf[js.Any], itemIcon = null, removeIcon = null)
     __obj.asInstanceOf[ItemIcon]
   }
   
   extension [Self <: ItemIcon](x: Self) {
     
-    inline def setClearIcon(value: ReactNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+    inline def setClearIcon(value: RenderNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+    
+    inline def setClearIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "clearIcon", js.Any.fromFunction1(value))
     
     inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
-    inline def setItemIcon(value: js.Object): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
+    inline def setItemIcon(
+      value: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode])
+    ): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
+    
+    inline def setItemIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "itemIcon", js.Any.fromFunction1(value))
     
     inline def setItemIconNull: Self = StObject.set(x, "itemIcon", null)
     
-    inline def setRemoveIcon(value: js.Object): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+    inline def setRemoveIcon(
+      value: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode])
+    ): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
     
     inline def setRemoveIconNull: Self = StObject.set(x, "removeIcon", null)
     
-    inline def setSuffixIcon(value: js.Object): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
+    inline def setSuffixIcon(value: Element | (js.Function1[/* hasOpenShowSearch */ Open, Element])): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
     
-    inline def setSuffixIconNull: Self = StObject.set(x, "suffixIcon", null)
+    inline def setSuffixIconFunction1(value: /* hasOpenShowSearch */ Open => Element): Self = StObject.set(x, "suffixIcon", js.Any.fromFunction1(value))
   }
 }

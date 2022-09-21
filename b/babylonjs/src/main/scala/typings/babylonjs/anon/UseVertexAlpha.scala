@@ -16,6 +16,8 @@ trait UseVertexAlpha extends StObject {
   
   var lines: js.Array[js.Array[Vector3]]
   
+  var material: js.UndefOr[typings.babylonjs.BABYLON.Material] = js.undefined
+  
   var updatable: js.UndefOr[Boolean] = js.undefined
   
   var useVertexAlpha: js.UndefOr[Boolean] = js.undefined
@@ -35,7 +37,7 @@ object UseVertexAlpha {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: js.Array[Color4]*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: js.Array[Color4]*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setInstance(value: Nullable[LinesMesh]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
@@ -45,7 +47,11 @@ object UseVertexAlpha {
     
     inline def setLines(value: js.Array[js.Array[Vector3]]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    inline def setLinesVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "lines", js.Array(value*))
+    
+    inline def setMaterial(value: typings.babylonjs.BABYLON.Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     

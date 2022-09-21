@@ -10,11 +10,11 @@ trait BLimitToList extends StObject {
   
   var id: String
   
-  var items: js.Array[js.Any]
+  var items: js.Array[Any]
 }
 object BLimitToList {
   
-  inline def apply(bLimitToList: Boolean, id: String, items: js.Array[js.Any]): BLimitToList = {
+  inline def apply(bLimitToList: Boolean, id: String, items: js.Array[Any]): BLimitToList = {
     val __obj = js.Dynamic.literal(bLimitToList = bLimitToList.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[BLimitToList]
   }
@@ -25,8 +25,8 @@ object BLimitToList {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

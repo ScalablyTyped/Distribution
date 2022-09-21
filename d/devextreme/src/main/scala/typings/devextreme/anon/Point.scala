@@ -9,7 +9,7 @@ trait Point extends StObject {
   
   var point: js.UndefOr[chartPointObject] = js.undefined
   
-  var value: js.UndefOr[typings.std.Date | Double | String] = js.undefined
+  var value: js.UndefOr[js.Date | Double | String] = js.undefined
   
   var valueText: js.UndefOr[String] = js.undefined
 }
@@ -26,7 +26,7 @@ object Point {
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    inline def setValue(value: typings.std.Date | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Date | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     

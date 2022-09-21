@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagResourceRequest extends StObject {
   
   /**
-    * An Amazon Resource Name (ARN) for a specific AWS resource, such as a server, user, or role.
+    * An Amazon Resource Name (ARN) for a specific Amazon Web Services resource, such as a server, user, or role.
     */
   var Arn: typings.awsSdk.transferMod.Arn
   
@@ -29,6 +29,6 @@ object TagResourceRequest {
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

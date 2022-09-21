@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.resizingTool, which you can modify.
   */
-class ResizingTool ()
+open class ResizingTool ()
   extends typings.go.mod.ResizingTool

@@ -33,7 +33,7 @@ object CodeLensProvider {
   extension [Self <: CodeLensProvider](x: Self) {
     
     inline def setOnDidChange(
-      value: (/* listener */ js.Function1[CodeLensProvider, js.Any], /* thisArg */ js.UndefOr[js.Any]) => IDisposable
+      value: (/* listener */ js.Function1[CodeLensProvider, Any], /* thisArg */ js.UndefOr[Any]) => IDisposable
     ): Self = StObject.set(x, "onDidChange", js.Any.fromFunction2(value))
     
     inline def setOnDidChangeUndefined: Self = StObject.set(x, "onDidChange", js.undefined)

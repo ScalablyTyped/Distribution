@@ -10,7 +10,7 @@ object operationalMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Operational", "Operational")
   @js.native
-  class Operational () extends StObject
+  open class Operational () extends StObject
   /* static members */
   object Operational {
     

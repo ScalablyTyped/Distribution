@@ -6,14 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.ShapeGeometry")
 @js.native
-class ShapeGeometry protected ()
+open class ShapeGeometry ()
   extends typings.three.mod.ShapeGeometry {
   def this(shapes: js.Array[typings.three.shapeMod.Shape]) = this()
-  /**
-  	 * @param shapes
-  	 * @param [curveSegments=12]
-  	 */
   def this(shapes: typings.three.shapeMod.Shape) = this()
   def this(shapes: js.Array[typings.three.shapeMod.Shape], curveSegments: Double) = this()
+  def this(shapes: Unit, curveSegments: Double) = this()
   def this(shapes: typings.three.shapeMod.Shape, curveSegments: Double) = this()
+}
+/* static members */
+object ShapeGeometry {
+  
+  @JSGlobal("THREE.ShapeGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromJSON(data: Any): typings.three.shapeGeometryMod.ShapeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.shapeGeometryMod.ShapeGeometry]
 }

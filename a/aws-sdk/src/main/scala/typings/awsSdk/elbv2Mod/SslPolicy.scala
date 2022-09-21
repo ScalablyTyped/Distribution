@@ -20,6 +20,11 @@ trait SslPolicy extends StObject {
     * The protocols.
     */
   var SslProtocols: js.UndefOr[typings.awsSdk.elbv2Mod.SslProtocols] = js.undefined
+  
+  /**
+    *  The supported load balancers. 
+    */
+  var SupportedLoadBalancerTypes: js.UndefOr[ListOfString] = js.undefined
 }
 object SslPolicy {
   
@@ -34,7 +39,7 @@ object SslPolicy {
     
     inline def setCiphersUndefined: Self = StObject.set(x, "Ciphers", js.undefined)
     
-    inline def setCiphersVarargs(value: Cipher*): Self = StObject.set(x, "Ciphers", js.Array(value :_*))
+    inline def setCiphersVarargs(value: Cipher*): Self = StObject.set(x, "Ciphers", js.Array(value*))
     
     inline def setName(value: SslPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -44,6 +49,12 @@ object SslPolicy {
     
     inline def setSslProtocolsUndefined: Self = StObject.set(x, "SslProtocols", js.undefined)
     
-    inline def setSslProtocolsVarargs(value: SslProtocol*): Self = StObject.set(x, "SslProtocols", js.Array(value :_*))
+    inline def setSslProtocolsVarargs(value: SslProtocol*): Self = StObject.set(x, "SslProtocols", js.Array(value*))
+    
+    inline def setSupportedLoadBalancerTypes(value: ListOfString): Self = StObject.set(x, "SupportedLoadBalancerTypes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedLoadBalancerTypesUndefined: Self = StObject.set(x, "SupportedLoadBalancerTypes", js.undefined)
+    
+    inline def setSupportedLoadBalancerTypesVarargs(value: StringValue*): Self = StObject.set(x, "SupportedLoadBalancerTypes", js.Array(value*))
   }
 }

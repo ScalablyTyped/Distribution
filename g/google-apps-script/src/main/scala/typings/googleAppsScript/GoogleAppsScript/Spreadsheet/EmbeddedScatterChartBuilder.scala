@@ -64,7 +64,7 @@ trait EmbeddedScatterChartBuilder extends StObject {
   
   def setNumHeaders(headers: Integer): EmbeddedChartBuilder
   
-  def setOption(option: String, value: js.Any): EmbeddedChartBuilder
+  def setOption(option: String, value: Any): EmbeddedChartBuilder
   
   def setPointStyle(style: PointStyle): EmbeddedScatterChartBuilder
   
@@ -123,7 +123,7 @@ object EmbeddedScatterChartBuilder {
     setLegendTextStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle => EmbeddedScatterChartBuilder,
     setMergeStrategy: ChartMergeStrategy => EmbeddedChartBuilder,
     setNumHeaders: Integer => EmbeddedChartBuilder,
-    setOption: (String, js.Any) => EmbeddedChartBuilder,
+    setOption: (String, Any) => EmbeddedChartBuilder,
     setPointStyle: PointStyle => EmbeddedScatterChartBuilder,
     setPosition: (Integer, Integer, Integer, Integer) => EmbeddedChartBuilder,
     setTitle: String => EmbeddedScatterChartBuilder,
@@ -194,7 +194,7 @@ object EmbeddedScatterChartBuilder {
     
     inline def setSetNumHeaders(value: Integer => EmbeddedChartBuilder): Self = StObject.set(x, "setNumHeaders", js.Any.fromFunction1(value))
     
-    inline def setSetOption(value: (String, js.Any) => EmbeddedChartBuilder): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
+    inline def setSetOption(value: (String, Any) => EmbeddedChartBuilder): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
     
     inline def setSetPointStyle(value: PointStyle => EmbeddedScatterChartBuilder): Self = StObject.set(x, "setPointStyle", js.Any.fromFunction1(value))
     

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TemplateItemGroupConstructor
   extends StObject
-     with Instantiable0[TemplateItemGroup]
+     with /**
+  * This is a read-only support class that represents a group of items displayed within the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItemGroup.html)
+  */
+Instantiable0[TemplateItemGroup]
      with Instantiable1[/* properties */ TemplateItemGroupProperties, TemplateItemGroup]

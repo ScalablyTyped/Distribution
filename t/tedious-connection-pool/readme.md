@@ -11,9 +11,9 @@ Connection Pool for tedious.
 | Full name          | tedious-connection-pool |
 | Keywords           | tedious, connection, pool |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 144897 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9050.333333333334 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/tediousjs/tedious-connection-pool)

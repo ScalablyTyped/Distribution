@@ -25,13 +25,13 @@ trait DataValidationBuilder extends StObject {
   
   def getCriteriaType(): DataValidationCriteria = js.native
   
-  def getCriteriaValues(): js.Array[js.Any] = js.native
+  def getCriteriaValues(): js.Array[Any] = js.native
   
   def getHelpText(): String | Null = js.native
   
   def requireCheckbox(): DataValidationBuilder = js.native
-  def requireCheckbox(checkedValue: js.Any): DataValidationBuilder = js.native
-  def requireCheckbox(checkedValue: js.Any, uncheckedValue: js.Any): DataValidationBuilder = js.native
+  def requireCheckbox(checkedValue: Any): DataValidationBuilder = js.native
+  def requireCheckbox(checkedValue: Any, uncheckedValue: Any): DataValidationBuilder = js.native
   
   def requireDate(): DataValidationBuilder = js.native
   
@@ -87,5 +87,5 @@ trait DataValidationBuilder extends StObject {
   
   def setHelpText(helpText: String): DataValidationBuilder = js.native
   
-  def withCriteria(criteria: DataValidationCriteria, args: js.Array[js.Any]): DataValidationBuilder = js.native
+  def withCriteria(criteria: DataValidationCriteria, args: js.Array[Any]): DataValidationBuilder = js.native
 }

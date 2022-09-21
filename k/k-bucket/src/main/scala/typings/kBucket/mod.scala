@@ -6,7 +6,6 @@ import typings.kBucket.kBucketStrings.ping
 import typings.kBucket.kBucketStrings.removed
 import typings.kBucket.kBucketStrings.updated
 import typings.node.eventsMod.EventEmitter
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +40,7 @@ object mod {
     *
     * @param options optional
     */
-  class ^[T /* <: Contact */] () extends KBucket[T] {
+  open class ^[T /* <: Contact */] () extends KBucket[T] {
     def this(options: Arbiter[T]) = this()
   }
   @JSImport("k-bucket", JSImport.Namespace)
@@ -82,26 +81,30 @@ object mod {
   
   trait Contact extends StObject {
     
-    var id: Uint8Array
+    var id: js.typedarray.Uint8Array
     
     var vectorClock: Double
   }
   object Contact {
     
-    inline def apply(id: Uint8Array, vectorClock: Double): Contact = {
+    inline def apply(id: js.typedarray.Uint8Array, vectorClock: Double): Contact = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], vectorClock = vectorClock.asInstanceOf[js.Any])
       __obj.asInstanceOf[Contact]
     }
     
     extension [Self <: Contact](x: Self) {
       
-      inline def setId(value: Uint8Array): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setVectorClock(value: Double): Self = StObject.set(x, "vectorClock", value.asInstanceOf[js.Any])
     }
   }
   
-  type Distance_ = js.Function2[/* firstId */ Uint8Array, /* secondId */ Uint8Array, Double]
+  type Distance_ = js.Function2[
+    /* firstId */ js.typedarray.Uint8Array, 
+    /* secondId */ js.typedarray.Uint8Array, 
+    Double
+  ]
   
   @js.native
   trait KBucket[T /* <: Contact */] extends EventEmitter {
@@ -125,8 +128,8 @@ object mod {
       * @param n Integer (Default: Infinity) The maximum number of closest contacts to return
       * @return Array Maximum of n closest contacts to the node id
       */
-    def closest(id: Uint8Array): js.Array[T] = js.native
-    def closest(id: Uint8Array, n: Double): js.Array[T] = js.native
+    def closest(id: js.typedarray.Uint8Array): js.Array[T] = js.native
+    def closest(id: js.typedarray.Uint8Array, n: Double): js.Array[T] = js.native
     
     /**
       * Counts the total number of contacts in the tree.
@@ -135,7 +138,7 @@ object mod {
       */
     def count(): Double = js.native
     
-    def distance(firstId: Uint8Array, secondId: Uint8Array): Double = js.native
+    def distance(firstId: js.typedarray.Uint8Array, secondId: js.typedarray.Uint8Array): Double = js.native
     @JSName("distance")
     var distance_Original: Distance_ = js.native
     
@@ -148,22 +151,19 @@ object mod {
       * @param id The ID of the contact to fetch.
       * @return The contact if available, otherwise null
       */
-    def get(id: Uint8Array): T | Null = js.native
+    def get(id: js.typedarray.Uint8Array): T | Null = js.native
     
-    var localNodeId: Uint8Array = js.native
+    var localNodeId: js.typedarray.Uint8Array = js.native
     
-    var metadata: js.Any = js.native
+    var metadata: Any = js.native
     
     var numberOfNodesPerKBucket: Double = js.native
     
     var numberOfNodesToPing: Double = js.native
     
-    @JSName("on")
-    def on_added(`type`: added, listener: js.Function1[/* peer */ T, Unit]): this.type = js.native
+    def on(`type`: added | removed, listener: js.Function1[/* peer */ T, Unit]): this.type = js.native
     @JSName("on")
     def on_ping(`type`: ping, listener: js.Function2[/* peers */ js.Array[T], /* peer */ T, Unit]): this.type = js.native
-    @JSName("on")
-    def on_removed(`type`: removed, listener: js.Function1[/* peer */ T, Unit]): this.type = js.native
     @JSName("on")
     def on_updated(`type`: updated, listener: js.Function2[/* incumbent */ T, /* selection */ T, Unit]): this.type = js.native
     
@@ -173,7 +173,7 @@ object mod {
       * @param id The ID of the contact to remove.
       * @return The k-bucket itself.
       */
-    def remove(id: Uint8Array): KBucket[T] = js.native
+    def remove(id: js.typedarray.Uint8Array): KBucket[T] = js.native
     
     var root: Node[T] = js.native
     
@@ -210,7 +210,7 @@ object mod {
       
       inline def setContacts(value: js.Array[T]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       
-      inline def setContactsVarargs(value: T*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+      inline def setContactsVarargs(value: T*): Self = StObject.set(x, "contacts", js.Array(value*))
       
       inline def setDontSplit(value: Boolean): Self = StObject.set(x, "dontSplit", value.asInstanceOf[js.Any])
       

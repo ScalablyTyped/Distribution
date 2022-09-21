@@ -11,7 +11,7 @@ object lensRenderingPipelineMod {
   
   @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/lensRenderingPipeline", "LensRenderingPipeline")
   @js.native
-  class LensRenderingPipeline protected () extends PostProcessRenderPipeline {
+  open class LensRenderingPipeline protected () extends PostProcessRenderPipeline {
     /**
       * @constructor
       *
@@ -19,7 +19,7 @@ object lensRenderingPipelineMod {
       * {
       *      chromatic_aberration: number;       // from 0 to x (1 for realism)
       *      edge_blur: number;                  // from 0 to x (1 for realism)
-      *      distortion: number;                 // from 0 to x (1 for realism)
+      *      distortion: number;                 // from 0 to x (1 for realism), note that this will effect the pointer position precision
       *      grain_amount: number;               // from 0 to 1
       *      grain_texture: BABYLON.Texture;     // texture to use for grain effect; if unset, use random B&W noise
       *      dof_focus_distance: number;         // depth-of-field: focus distance; unset to disable (disabled by default)
@@ -38,10 +38,10 @@ object lensRenderingPipelineMod {
       * @param ratio The size of the postprocesses (0.5 means that your postprocess will have a width = canvas.width 0.5 and a height = canvas.height 0.5)
       * @param cameras The array of cameras that the rendering pipeline will be attached to
       */
-    def this(name: String, parameters: js.Any, scene: Scene) = this()
-    def this(name: String, parameters: js.Any, scene: Scene, ratio: Double) = this()
-    def this(name: String, parameters: js.Any, scene: Scene, ratio: Double, cameras: js.Array[Camera]) = this()
-    def this(name: String, parameters: js.Any, scene: Scene, ratio: Unit, cameras: js.Array[Camera]) = this()
+    def this(name: String, parameters: Any, scene: Scene) = this()
+    def this(name: String, parameters: Any, scene: Scene, ratio: Double) = this()
+    def this(name: String, parameters: Any, scene: Scene, ratio: Double, cameras: js.Array[Camera]) = this()
+    def this(name: String, parameters: Any, scene: Scene, ratio: Unit, cameras: js.Array[Camera]) = this()
     
     /**
       * @ignore
@@ -61,49 +61,49 @@ object lensRenderingPipelineMod {
       */
     var LensDepthOfFieldEffect: String = js.native
     
-    /* private */ var _blurNoise: js.Any = js.native
+    /* private */ var _blurNoise: Any = js.native
     
-    /* private */ var _chromaticAberration: js.Any = js.native
+    /* private */ var _chromaticAberration: Any = js.native
     
-    /* private */ var _chromaticAberrationPostProcess: js.Any = js.native
+    /* private */ var _chromaticAberrationPostProcess: Any = js.native
     
-    /* private */ var _createChromaticAberrationPostProcess: js.Any = js.native
+    /* private */ var _createChromaticAberrationPostProcess: Any = js.native
     
-    /* private */ var _createDepthOfFieldPostProcess: js.Any = js.native
+    /* private */ var _createDepthOfFieldPostProcess: Any = js.native
     
-    /* private */ var _createGrainTexture: js.Any = js.native
+    /* private */ var _createGrainTexture: Any = js.native
     
-    /* private */ var _createHighlightsPostProcess: js.Any = js.native
+    /* private */ var _createHighlightsPostProcess: Any = js.native
     
-    /* private */ var _depthOfFieldPostProcess: js.Any = js.native
+    /* private */ var _depthOfFieldPostProcess: Any = js.native
     
-    /* private */ var _depthTexture: js.Any = js.native
+    /* private */ var _depthTexture: Any = js.native
     
-    /* private */ var _distortion: js.Any = js.native
+    /* private */ var _distortion: Any = js.native
     
-    /* private */ var _dofAperture: js.Any = js.native
+    /* private */ var _dofAperture: Any = js.native
     
-    /* private */ var _dofDarken: js.Any = js.native
+    /* private */ var _dofDarken: Any = js.native
     
-    /* private */ var _dofDistance: js.Any = js.native
+    /* private */ var _dofDistance: Any = js.native
     
-    /* private */ var _dofPentagon: js.Any = js.native
+    /* private */ var _dofPentagon: Any = js.native
     
-    /* private */ var _edgeBlur: js.Any = js.native
+    /* private */ var _edgeBlur: Any = js.native
     
-    /* private */ var _grainAmount: js.Any = js.native
+    /* private */ var _grainAmount: Any = js.native
     
-    /* private */ var _grainTexture: js.Any = js.native
+    /* private */ var _grainTexture: Any = js.native
     
-    /* private */ var _highlightsGain: js.Any = js.native
+    /* private */ var _highlightsGain: Any = js.native
     
-    /* private */ var _highlightsPostProcess: js.Any = js.native
+    /* private */ var _highlightsPostProcess: Any = js.native
     
-    /* private */ var _highlightsThreshold: js.Any = js.native
+    /* private */ var _highlightsThreshold: Any = js.native
     
-    /* private */ var _pentagonBokehIsEnabled: js.Any = js.native
+    /* private */ var _pentagonBokehIsEnabled: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /**
       * Gets or sets a boolean indicating if blur noise is enabled
@@ -265,7 +265,7 @@ object lensRenderingPipelineMod {
     def setFocusDistance(amount: Double): Unit = js.native
     
     /**
-      * Sets the amout of grain
+      * Sets the amount of grain
       * @param amount Amount of grain
       */
     def setGrainAmount(amount: Double): Unit = js.native

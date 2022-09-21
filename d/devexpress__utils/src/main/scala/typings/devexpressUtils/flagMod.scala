@@ -9,7 +9,7 @@ object flagMod {
   
   @JSImport("@devexpress/utils/lib/class/flag", "Flag")
   @js.native
-  class Flag ()
+  open class Flag ()
     extends StObject
        with ICloneable[Flag] {
     def this(initValue: Double) = this()
@@ -24,6 +24,6 @@ object flagMod {
     
     def set(enumVal: Double, newValue: Boolean): this.type = js.native
     
-    /* private */ var value: js.Any = js.native
+    /* private */ var value: Any = js.native
   }
 }

@@ -28,7 +28,7 @@ object XLinkTargetSupplier {
     Links: XNameAccess,
     acquire: () => Unit,
     getLinks: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XLinkTargetSupplier = {
     val __obj = js.Dynamic.literal(Links = Links.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getLinks = js.Any.fromFunction0(getLinks), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

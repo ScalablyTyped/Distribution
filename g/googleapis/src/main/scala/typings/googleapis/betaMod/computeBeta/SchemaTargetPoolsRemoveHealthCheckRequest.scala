@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTargetPoolsRemoveHealthCheckRequest extends StObject {
   
   /**
-    * Health check URL to be removed. This can be a full or valid partial URL.
-    * For example, the following are valid URLs:   -
-    * https://www.googleapis.com/compute/beta/projects/project/global/httpHealthChecks/health-check
-    * - projects/project/global/httpHealthChecks/health-check  -
-    * global/httpHealthChecks/health-check
+    * Health check URL to be removed. This can be a full or valid partial URL. For example, the following are valid URLs: - https://www.googleapis.com/compute/beta/projects/project /global/httpHealthChecks/health-check - projects/project/global/httpHealthChecks/health-check - global/httpHealthChecks/health-check
     */
   var healthChecks: js.UndefOr[js.Array[SchemaHealthCheckReference]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaTargetPoolsRemoveHealthCheckRequest {
     
     inline def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
-    inline def setHealthChecksVarargs(value: SchemaHealthCheckReference*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
+    inline def setHealthChecksVarargs(value: SchemaHealthCheckReference*): Self = StObject.set(x, "healthChecks", js.Array(value*))
   }
 }

@@ -2,14 +2,19 @@ package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
+import typings.googleAuthLibrary.authclientMod.AuthClient
+import typings.googleAuthLibrary.awsclientMod.AwsClientOptions
+import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClientOptions
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapis.searchconsoleV1Mod.searchconsoleV1.Options
 import typings.googleapis.searchconsoleV1Mod.searchconsoleV1.Searchconsole
+import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
-import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +25,13 @@ object searchconsoleMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("googleapis/build/src/apis/searchconsole", "AuthPlus")
+  @js.native
+  open class AuthPlus ()
+    extends typings.googleapisCommon.mod.AuthPlus {
+    def this(opts: GoogleAuthOptions[JSONClient]) = this()
+  }
+  
   object VERSIONS {
     
     @JSImport("googleapis/build/src/apis/searchconsole", "VERSIONS")
@@ -29,7 +41,7 @@ object searchconsoleMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/searchconsole", "VERSIONS.v1")
     @js.native
-    class v1 protected () extends Searchconsole {
+    open class v1 protected () extends Searchconsole {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
@@ -53,7 +65,25 @@ object searchconsoleMod {
     
     @JSImport("googleapis/build/src/apis/searchconsole", "auth")
     @js.native
-    val ^ : AuthPlus = js.native
+    val ^ : typings.googleapisCommon.mod.AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/searchconsole", "auth.AwsClient")
+    @js.native
+    open class AwsClient protected ()
+      extends typings.googleAuthLibrary.mod.AwsClient {
+      /**
+        * Instantiates an AwsClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid AWS credential.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: AwsClientOptions) = this()
+    }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/searchconsole", "auth.Compute")
@@ -64,7 +94,7 @@ object searchconsoleMod {
       * Retrieve access token from the metadata server.
       * See: https://developers.google.com/compute/docs/authentication
       */
-    class Compute ()
+    open class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
     /**
@@ -73,7 +103,7 @@ object searchconsoleMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/searchconsole", "auth.DefaultTransporter")
     @js.native
-    class DefaultTransporter ()
+    open class DefaultTransporter ()
       extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
     /* static members */
     object DefaultTransporter {
@@ -82,13 +112,45 @@ object searchconsoleMod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/searchconsole", "auth.ExternalAccountClient")
+    @js.native
+    open class ExternalAccountClient ()
+      extends typings.googleAuthLibrary.mod.ExternalAccountClient
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/searchconsole", "auth.GoogleAuth")
+    @js.native
+    open class GoogleAuth[T /* <: AuthClient */] ()
+      extends typings.googleAuthLibrary.mod.GoogleAuth[T]
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/searchconsole", "auth.IdentityPoolClient")
+    @js.native
+    open class IdentityPoolClient protected ()
+      extends typings.googleAuthLibrary.mod.IdentityPoolClient {
+      /**
+        * Instantiate an IdentityPoolClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid file-sourced or
+        * url-sourced credential or a workforce pool user project is provided
+        * with a non workforce audience.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: IdentityPoolClientOptions) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/searchconsole", "auth.JWT")
     @js.native
-    class JWT protected ()
+    open class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
       /**
         * JWT service account credentials.
@@ -118,15 +180,75 @@ object searchconsoleMod {
       * @param opts optional options for overriding the given parameters.
       * @constructor
       */
-    class OAuth2 () extends OAuth2Client
+    open class OAuth2 () extends OAuth2Client
     
-    type _To = AuthPlus
+    type _To = typings.googleapisCommon.mod.AuthPlus
     
     /* This means you don't have to write `^`, but can instead just say `auth.foo` */
-    override def _to: AuthPlus = ^
+    override def _to: typings.googleapisCommon.mod.AuthPlus = ^
   }
   
   inline def searchconsole(options: Options): Searchconsole = ^.asInstanceOf[js.Dynamic].applyDynamic("searchconsole")(options.asInstanceOf[js.Any]).asInstanceOf[Searchconsole]
+  
+  object searchconsoleV1 {
+    
+    @JSImport("googleapis/build/src/apis/searchconsole", "searchconsole_v1.Resource$Searchanalytics")
+    @js.native
+    open class ResourceSearchanalytics protected ()
+      extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceSearchanalytics {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/searchconsole", "searchconsole_v1.Resource$Sitemaps")
+    @js.native
+    open class ResourceSitemaps protected ()
+      extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceSitemaps {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/searchconsole", "searchconsole_v1.Resource$Sites")
+    @js.native
+    open class ResourceSites protected ()
+      extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceSites {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/searchconsole", "searchconsole_v1.Resource$Urlinspection")
+    @js.native
+    open class ResourceUrlinspection protected ()
+      extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceUrlinspection {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/searchconsole", "searchconsole_v1.Resource$Urlinspection$Index")
+    @js.native
+    open class ResourceUrlinspectionIndex protected ()
+      extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceUrlinspectionIndex {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/searchconsole", "searchconsole_v1.Resource$Urltestingtools")
+    @js.native
+    open class ResourceUrltestingtools protected ()
+      extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceUrltestingtools {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/searchconsole", "searchconsole_v1.Resource$Urltestingtools$Mobilefriendlytest")
+    @js.native
+    open class ResourceUrltestingtoolsMobilefriendlytest protected ()
+      extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceUrltestingtoolsMobilefriendlytest {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/searchconsole", "searchconsole_v1.Searchconsole")
+    @js.native
+    open class Searchconsole protected ()
+      extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.Searchconsole {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+  }
   
   inline def searchconsole_v1(version: v1): Searchconsole = ^.asInstanceOf[js.Dynamic].applyDynamic("searchconsole")(version.asInstanceOf[js.Any]).asInstanceOf[Searchconsole]
 }

@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnhanceInstruction extends StObject {
   
   /**
-    * A binding context for the enhancement.
-    */
+  	* A binding context for the enhancement.
+  	*/
   var bindingContext: js.UndefOr[js.Object] = js.undefined
   
   /**
-    * The DI container to use as the root for UI enhancement.
-    */
+  	* The DI container to use as the root for UI enhancement.
+  	*/
   var container: js.UndefOr[Container] = js.undefined
   
   /**
-    * The element to enhance.
-    */
+  	* The element to enhance.
+  	*/
   var element: Element
   
   /**
-    * A secondary binding context that can override the standard context.
-    */
-  var overrideContext: js.UndefOr[js.Any] = js.undefined
+  	* A secondary binding context that can override the standard context.
+  	*/
+  var overrideContext: js.UndefOr[Any] = js.undefined
   
   /**
-    * The resources available for enhancement.
-    */
+  	* The resources available for enhancement.
+  	*/
   var resources: js.UndefOr[ViewResources_] = js.undefined
 }
 object EnhanceInstruction {
@@ -52,7 +52,7 @@ object EnhanceInstruction {
     
     inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    inline def setOverrideContext(value: js.Any): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
+    inline def setOverrideContext(value: Any): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
     
     inline def setOverrideContextUndefined: Self = StObject.set(x, "overrideContext", js.undefined)
     

@@ -8,20 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.VRDeviceOrientationArcRotateCamera")
 @js.native
-class VRDeviceOrientationArcRotateCamera protected ()
+open class VRDeviceOrientationArcRotateCamera protected ()
   extends StObject
      with typings.babylonjs.BABYLON.VRDeviceOrientationArcRotateCamera {
   /**
     * Creates a new VRDeviceOrientationArcRotateCamera
     * @param name defines camera name
-    * @param alpha defines the camera rotation along the logitudinal axis
+    * @param alpha defines the camera rotation along the longitudinal axis
     * @param beta defines the camera rotation along the latitudinal axis
     * @param radius defines the camera distance from its target
     * @param target defines the camera target
     * @param scene defines the scene the camera belongs to
-    * @param compensateDistortion defines if the camera needs to compensate the lens distorsion
+    * @param compensateDistortion defines if the camera needs to compensate the lens distortion
     * @param vrCameraMetrics defines the vr metrics associated to the camera
     */
+  def this(
+    name: String,
+    alpha: Double,
+    beta: Double,
+    radius: Double,
+    target: typings.babylonjs.BABYLON.Vector3
+  ) = this()
   def this(
     name: String,
     alpha: Double,
@@ -36,8 +43,37 @@ class VRDeviceOrientationArcRotateCamera protected ()
     beta: Double,
     radius: Double,
     target: typings.babylonjs.BABYLON.Vector3,
+    scene: Unit,
+    compensateDistortion: Boolean
+  ) = this()
+  def this(
+    name: String,
+    alpha: Double,
+    beta: Double,
+    radius: Double,
+    target: typings.babylonjs.BABYLON.Vector3,
     scene: typings.babylonjs.BABYLON.Scene,
     compensateDistortion: Boolean
+  ) = this()
+  def this(
+    name: String,
+    alpha: Double,
+    beta: Double,
+    radius: Double,
+    target: typings.babylonjs.BABYLON.Vector3,
+    scene: Unit,
+    compensateDistortion: Boolean,
+    vrCameraMetrics: typings.babylonjs.BABYLON.VRCameraMetrics
+  ) = this()
+  def this(
+    name: String,
+    alpha: Double,
+    beta: Double,
+    radius: Double,
+    target: typings.babylonjs.BABYLON.Vector3,
+    scene: Unit,
+    compensateDistortion: Unit,
+    vrCameraMetrics: typings.babylonjs.BABYLON.VRCameraMetrics
   ) = this()
   def this(
     name: String,

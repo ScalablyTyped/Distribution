@@ -38,7 +38,7 @@ object RemoveFlowVpcInterfaceResponse {
     
     inline def setNonDeletedNetworkInterfaceIdsUndefined: Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", js.undefined)
     
-    inline def setNonDeletedNetworkInterfaceIdsVarargs(value: string*): Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", js.Array(value :_*))
+    inline def setNonDeletedNetworkInterfaceIdsVarargs(value: string*): Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", js.Array(value*))
     
     inline def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
     

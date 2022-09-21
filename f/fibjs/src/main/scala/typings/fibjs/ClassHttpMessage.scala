@@ -27,7 +27,7 @@ trait ClassHttpMessage
     * 
     * 
     */
-  def addHeader(name: String, value: js.Any): Unit = js.native
+  def addHeader(name: String, value: Any): Unit = js.native
   
   /**
     * 
@@ -38,7 +38,7 @@ trait ClassHttpMessage
     * 
     * 
     */
-  def allHeader(name: String): js.Array[js.Any] = js.native
+  def allHeader(name: String): js.Array[Any] = js.native
   
   /**
     * 
@@ -49,7 +49,7 @@ trait ClassHttpMessage
     * 
     * 
     */
-  def firstHeader(name: String): js.Any = js.native
+  def firstHeader(name: String): Any = js.native
   
   /**
     * 
@@ -145,7 +145,7 @@ trait ClassHttpMessage
     * 
     * 
     */
-  def setHeader(name: String, value: js.Any): Unit = js.native
+  def setHeader(name: String, value: Any): Unit = js.native
   
   /**
     * class prop 

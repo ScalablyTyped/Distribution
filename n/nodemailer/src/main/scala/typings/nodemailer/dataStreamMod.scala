@@ -13,7 +13,7 @@ object dataStreamMod {
     */
   @JSImport("nodemailer/lib/smtp-connection/data-stream", JSImport.Namespace)
   @js.native
-  class ^ () extends Transform
+  open class ^ () extends Transform
   
   /**
     * Escapes dots in the beginning of lines. Ends the stream with <CR><LF>.<CR><LF>

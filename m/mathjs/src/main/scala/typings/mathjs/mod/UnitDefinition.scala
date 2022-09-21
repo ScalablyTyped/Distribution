@@ -27,7 +27,7 @@ object UnitDefinition {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
     
     inline def setDefinition(value: String | Unit): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

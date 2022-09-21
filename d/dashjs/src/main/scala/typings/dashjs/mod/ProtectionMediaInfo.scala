@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dashjs", "ProtectionMediaInfo")
 @js.native
-class ProtectionMediaInfo () extends StObject {
+open class ProtectionMediaInfo () extends StObject {
   
   var codec: String | Null = js.native
   
-  var contentProtection: js.Any | Null = js.native
+  var contentProtection: Any | Null = js.native
 }

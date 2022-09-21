@@ -9,7 +9,8 @@ trait AccessFailCallbackResult extends StObject {
   /** 错误信息
     *
     * 可选值：
-    * - 'fail no such file or directory ${path}': 文件/目录不存在; */
+    * - 'fail no such file or directory ${path}': 文件/目录不存在;
+    * - 'fail sdcard not mounted': Android sdcard 挂载失败; */
   var errMsg: String
 }
 object AccessFailCallbackResult {

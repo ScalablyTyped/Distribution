@@ -11,9 +11,9 @@ Give your JavaScript the ability to speak many languages.
 | Full name          | node-polyglot |
 | Keywords           | i18n, internationalization, internationalisation, translation, interpolation, translate, polyglot |
 | # releases         | 3 |
-| # dependents       | 170 |
-| # downloads        | 6719017 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 695767.6666666666 |
+| # stars            | 3538.0 |
 
 ## Links
 - [Homepage](https://github.com/airbnb/polyglot.js#readme)

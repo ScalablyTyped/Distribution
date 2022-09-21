@@ -10,15 +10,12 @@ Lazy brush - smooth drawing using mouse or finger
 | ------------------ | :-------------: |
 | Full name          | lazy-brush |
 | Keywords           | brush, mouse, lazy, canvas, drawing, smooth, pencil, string, radius |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 148348 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40350.333333333336 |
+| # stars            | 540.0 |
 
 ## Links
-- [Homepage](https://github.com/dulnan/lazy-brush#readme)
-- [Bugs](https://github.com/dulnan/lazy-brush/issues)
-- [Repository](https://github.com/dulnan/lazy-brush)
 - [Npm](https://www.npmjs.com/package/lazy-brush)
     
 

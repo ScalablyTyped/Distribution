@@ -1,65 +1,29 @@
 package typings.appRootPath
 
-import org.scalablytyped.runtime.Shortcut
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("app-root-path", JSImport.Namespace)
   @js.native
-  val ^ : RootPath = js.native
+  val ^ : js.Any = js.native
   
-  trait RootPath extends StObject {
-    
-    /**
-      * Application root directory absolute path
-      * @type {string}
-      */
-    var path: String
-    
-    /**
-      * Resolve module by relative addressing from root
-      * @param {string} pathToModule
-      * @returns {*}
-      */
-    def require(pathToModule: String): js.Any
-    
-    /**
-      * Resolves relative path from root to absolute path
-      * @param {string} pathToModule
-      * @returns {string}
-      */
-    def resolve(pathToModule: String): String
-    
-    /**
-      * Explicitly set root path
-      * @param {string} explicitlySetPath
-      */
-    def setPath(explicitlySetPath: String): Unit
-  }
-  object RootPath {
-    
-    inline def apply(path: String, require: String => js.Any, resolve: String => String, setPath: String => Unit): RootPath = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], require = js.Any.fromFunction1(require), resolve = js.Any.fromFunction1(resolve), setPath = js.Any.fromFunction1(setPath))
-      __obj.asInstanceOf[RootPath]
-    }
-    
-    extension [Self <: RootPath](x: Self) {
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
-      
-      inline def setResolve(value: String => String): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
-      
-      inline def setSetPath(value: String => Unit): Self = StObject.set(x, "setPath", js.Any.fromFunction1(value))
-    }
-  }
+  @JSImport("app-root-path", "path")
+  @js.native
+  val path: String = js.native
   
-  type _To = RootPath
+  inline def require(pathToModule: String): ReturnType[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(pathToModule.asInstanceOf[js.Any]).asInstanceOf[ReturnType[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
+  ]]
   
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: RootPath = ^
+  inline def resolve(pathToModule: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathToModule.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def setPath(explicitlySetPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(explicitlySetPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def toString_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[String]
 }

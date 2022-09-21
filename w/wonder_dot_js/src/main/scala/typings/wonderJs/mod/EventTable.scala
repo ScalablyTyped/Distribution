@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "EventTable")
 @js.native
-class EventTable ()
+open class EventTable ()
   extends typings.wonderJs.eventTableMod.EventTable
 /* static members */
 object EventTable {

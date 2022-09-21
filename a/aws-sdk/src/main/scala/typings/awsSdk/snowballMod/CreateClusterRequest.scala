@@ -22,12 +22,12 @@ trait CreateClusterRequest extends StObject {
   var ForwardingAddressId: js.UndefOr[AddressId] = js.undefined
   
   /**
-    * The type of job for this cluster. Currently, the only job type supported for clusters is LOCAL_USE.
+    * The type of job for this cluster. Currently, the only job type supported for clusters is LOCAL_USE. For more information, see "https://docs.aws.amazon.com/snowball/latest/snowcone-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide or "https://docs.aws.amazon.com/snowball/latest/developer-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide.
     */
   var JobType: typings.awsSdk.snowballMod.JobType
   
   /**
-    * The KmsKeyARN value that you want to associate with this cluster. KmsKeyARN values are created by using the CreateKey API action in AWS Key Management Service (AWS KMS). 
+    * The KmsKeyARN value that you want to associate with this cluster. KmsKeyARN values are created by using the CreateKey API action in Key Management Service (KMS). 
     */
   var KmsKeyARN: js.UndefOr[typings.awsSdk.snowballMod.KmsKeyARN] = js.undefined
   
@@ -37,27 +37,37 @@ trait CreateClusterRequest extends StObject {
   var Notification: js.UndefOr[typings.awsSdk.snowballMod.Notification] = js.undefined
   
   /**
-    * The resources associated with the cluster job. These resources include Amazon S3 buckets and optional AWS Lambda functions written in the Python language. 
+    * Specifies the service or services on the Snow Family device that your transferred data will be exported from or imported into. Amazon Web Services Snow Family device clusters support Amazon S3 and NFS (Network File System).
+    */
+  var OnDeviceServiceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.OnDeviceServiceConfiguration] = js.undefined
+  
+  /**
+    * Allows you to securely operate and manage Snow devices in a cluster remotely from outside of your internal network. When set to INSTALLED_AUTOSTART, remote management will automatically be available when the device arrives at your location. Otherwise, you need to use the Snowball Client to manage the device.
+    */
+  var RemoteManagement: js.UndefOr[typings.awsSdk.snowballMod.RemoteManagement] = js.undefined
+  
+  /**
+    * The resources associated with the cluster job. These resources include Amazon S3 buckets and optional Lambda functions written in the Python language. 
     */
   var Resources: JobResource
   
   /**
-    * The RoleARN that you want to associate with this cluster. RoleArn values are created by using the CreateRole API action in AWS Identity and Access Management (IAM).
+    * The RoleARN that you want to associate with this cluster. RoleArn values are created by using the CreateRole API action in Identity and Access Management (IAM).
     */
   var RoleARN: typings.awsSdk.snowballMod.RoleARN
   
   /**
-    * The shipping speed for each node in this cluster. This speed doesn't dictate how soon you'll get each Snowball Edge device, rather it represents how quickly each device moves to its destination while in transit. Regional shipping speeds are as follows:    In Australia, you have access to express shipping. Typically, Snow devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, Snow devices shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, Snow device are delivered in one to seven days.   In the United States of America (US), you have access to one-day shipping and two-day shipping.     In Australia, you have access to express shipping. Typically, devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, Snow devices shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, Snow device are delivered in one to seven days.   In the US, you have access to one-day shipping and two-day shipping.  
+    * The shipping speed for each node in this cluster. This speed doesn't dictate how soon you'll get each Snowball Edge device, rather it represents how quickly each device moves to its destination while in transit. Regional shipping speeds are as follows:    In Australia, you have access to express shipping. Typically, Snow devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, Snow devices shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, Snow devices are delivered in one to seven days.   In the United States of America (US), you have access to one-day shipping and two-day shipping.     In Australia, you have access to express shipping. Typically, devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, Snow devices shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, Snow devices are delivered in one to seven days.   In the US, you have access to one-day shipping and two-day shipping.  
     */
   var ShippingOption: typings.awsSdk.snowballMod.ShippingOption
   
   /**
-    * The type of AWS Snow Family device to use for this cluster.   For cluster jobs, AWS Snow Family currently supports only the EDGE device type. 
+    * The type of Snow Family Devices to use for this cluster.   For cluster jobs, Amazon Web Services Snow Family currently supports only the EDGE device type.  For more information, see "https://docs.aws.amazon.com/snowball/latest/snowcone-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide or "https://docs.aws.amazon.com/snowball/latest/developer-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide.
     */
-  var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.undefined
+  var SnowballType: typings.awsSdk.snowballMod.SnowballType
   
   /**
-    * The tax documents required in your AWS Region.
+    * The tax documents required in your Amazon Web Services Region.
     */
   var TaxDocuments: js.UndefOr[typings.awsSdk.snowballMod.TaxDocuments] = js.undefined
 }
@@ -68,9 +78,10 @@ object CreateClusterRequest {
     JobType: JobType,
     Resources: JobResource,
     RoleARN: RoleARN,
-    ShippingOption: ShippingOption
+    ShippingOption: ShippingOption,
+    SnowballType: SnowballType
   ): CreateClusterRequest = {
-    val __obj = js.Dynamic.literal(AddressId = AddressId.asInstanceOf[js.Any], JobType = JobType.asInstanceOf[js.Any], Resources = Resources.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], ShippingOption = ShippingOption.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AddressId = AddressId.asInstanceOf[js.Any], JobType = JobType.asInstanceOf[js.Any], Resources = Resources.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], ShippingOption = ShippingOption.asInstanceOf[js.Any], SnowballType = SnowballType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]
   }
   
@@ -96,6 +107,14 @@ object CreateClusterRequest {
     
     inline def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
     
+    inline def setOnDeviceServiceConfiguration(value: OnDeviceServiceConfiguration): Self = StObject.set(x, "OnDeviceServiceConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setOnDeviceServiceConfigurationUndefined: Self = StObject.set(x, "OnDeviceServiceConfiguration", js.undefined)
+    
+    inline def setRemoteManagement(value: RemoteManagement): Self = StObject.set(x, "RemoteManagement", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteManagementUndefined: Self = StObject.set(x, "RemoteManagement", js.undefined)
+    
     inline def setResources(value: JobResource): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     inline def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
@@ -103,8 +122,6 @@ object CreateClusterRequest {
     inline def setShippingOption(value: ShippingOption): Self = StObject.set(x, "ShippingOption", value.asInstanceOf[js.Any])
     
     inline def setSnowballType(value: SnowballType): Self = StObject.set(x, "SnowballType", value.asInstanceOf[js.Any])
-    
-    inline def setSnowballTypeUndefined: Self = StObject.set(x, "SnowballType", js.undefined)
     
     inline def setTaxDocuments(value: TaxDocuments): Self = StObject.set(x, "TaxDocuments", value.asInstanceOf[js.Any])
     

@@ -16,15 +16,19 @@ trait ConstructorDeclaration
      with FunctionLikeDeclarationBase
      with FunctionLikeDeclaration
      with HasJSDoc
+     with HasModifiers
      with SignatureDeclaration {
   
-  var _classElementBrand: js.Any = js.native
+  var _classElementBrand: Any = js.native
   
   @JSName("body")
   val body_ConstructorDeclaration: js.UndefOr[FunctionBody] = js.native
   
   @JSName("kind")
   val kind_ConstructorDeclaration: Constructor = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ConstructorDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("parent")
   val parent_ConstructorDeclaration: ClassLikeDeclaration = js.native

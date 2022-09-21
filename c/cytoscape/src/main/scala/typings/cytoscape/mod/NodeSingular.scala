@@ -33,8 +33,10 @@ trait NodeSingular
      with NodeSingularMetadata
      with NodeSingularPosition
      with NodeSingularCompound
+     with NodeSingularLayout
      with SingularElementArgument
      with NodeCollectionMetadata
      with NodeCollectionPosition
      with NodeCollectionTraversing
      with NodeCollectionCompound
+     with NodeCollectionLayout

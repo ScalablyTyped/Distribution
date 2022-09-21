@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-iot-device-sdk
 
-Typings are for version 2.2.0
+Typings are for version 2.2.11
 
 ## Library description:
 AWS IoT Node.js SDK for Embedded Devices
@@ -10,10 +10,10 @@ AWS IoT Node.js SDK for Embedded Devices
 | ------------------ | :-------------: |
 | Full name          | aws-iot-device-sdk |
 | Keywords           | api, amazon, aws, iot, mqtt |
-| # releases         | 4 |
-| # dependents       | 68 |
-| # downloads        | 1650868 |
-| # stars            | 4 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 270209.3333333333 |
+| # stars            | 934.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-iot-device-sdk-js)

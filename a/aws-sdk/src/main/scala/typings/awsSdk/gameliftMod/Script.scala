@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Script extends StObject {
   
   /**
-    * A time stamp indicating when this data object was created. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A descriptive label that is associated with a script. Script names do not need to be unique.
@@ -17,12 +17,12 @@ trait Script extends StObject {
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * Amazon Resource Name (ARN) that is assigned to a GameLift script resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift script ARN, the resource ID matches the ScriptId value.
+    * The Amazon Resource Name (ARN) that is assigned to a GameLift script resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift script ARN, the resource ID matches the ScriptId value.
     */
   var ScriptArn: js.UndefOr[typings.awsSdk.gameliftMod.ScriptArn] = js.undefined
   
   /**
-    * A unique identifier for a Realtime script
+    * A unique identifier for the Realtime script
     */
   var ScriptId: js.UndefOr[typings.awsSdk.gameliftMod.ScriptId] = js.undefined
   
@@ -34,7 +34,7 @@ trait Script extends StObject {
   var StorageLocation: js.UndefOr[S3Location] = js.undefined
   
   /**
-    * The version that is associated with a build or script. Version strings do not need to be unique.
+    * Version information that is associated with a build or script. Version strings do not need to be unique.
     */
   var Version: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
@@ -47,7 +47,7 @@ object Script {
   
   extension [Self <: Script](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

@@ -32,6 +32,6 @@ object ListUserListsResponse {
     
     inline def setUserListsUndefined: Self = StObject.set(x, "userLists", js.undefined)
     
-    inline def setUserListsVarargs(value: UserList*): Self = StObject.set(x, "userLists", js.Array(value :_*))
+    inline def setUserListsVarargs(value: UserList*): Self = StObject.set(x, "userLists", js.Array(value*))
   }
 }

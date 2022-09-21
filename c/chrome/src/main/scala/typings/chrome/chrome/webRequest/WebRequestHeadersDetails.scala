@@ -34,6 +34,6 @@ object WebRequestHeadersDetails {
     
     inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
-    inline def setRequestHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+    inline def setRequestHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
   }
 }

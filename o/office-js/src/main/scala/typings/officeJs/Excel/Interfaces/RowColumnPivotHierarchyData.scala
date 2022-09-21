@@ -8,33 +8,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RowColumnPivotHierarchyData extends StObject {
   
   /**
-    *
     * Returns the PivotFields associated with the RowColumnPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var fields: js.UndefOr[js.Array[PivotFieldData]] = js.undefined
   
   /**
+    * ID of the RowColumnPivotHierarchy.
     *
-    * Id of the RowColumnPivotHierarchy.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Name of the RowColumnPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Position of the RowColumnPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Double] = js.undefined
@@ -52,7 +52,7 @@ object RowColumnPivotHierarchyData {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: PivotFieldData*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: PivotFieldData*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

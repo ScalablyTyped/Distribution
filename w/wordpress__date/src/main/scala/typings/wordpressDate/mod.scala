@@ -1,7 +1,7 @@
 package typings.wordpressDate
 
 import typings.moment.mod.MomentInput
-import typings.std.Date
+import typings.wordpressDate.anon.Date
 import typings.wordpressDate.anon.Locale
 import typings.wordpressDate.anon.Offset
 import org.scalablytyped.runtime.StObject
@@ -15,18 +15,24 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def date(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def date(dateFormat: String, dateValue: Unit, timezone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def date(dateFormat: String, dateValue: Unit, timezone: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def date(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def date(dateFormat: String, dateValue: MomentInput, timezone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def date(dateFormat: String, dateValue: MomentInput, timezone: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def dateI18n(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def dateI18n(dateFormat: String, dateValue: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def dateI18n(dateFormat: String, dateValue: Unit, timezone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def dateI18n(dateFormat: String, dateValue: Unit, timezone: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def dateI18n(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def dateI18n(dateFormat: String, dateValue: MomentInput, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def dateI18n(dateFormat: String, dateValue: MomentInput, timezone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def dateI18n(dateFormat: String, dateValue: MomentInput, timezone: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def format(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def format(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")().asInstanceOf[Date]
-  inline def getDate(dateValue: MomentInput): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def getDate(): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")().asInstanceOf[js.Date]
+  inline def getDate(dateValue: MomentInput): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(dateValue.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
   inline def gmdate(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gmdate")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def gmdate(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gmdate")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -37,7 +43,7 @@ object mod {
   
   trait DateSettings extends StObject {
     
-    var formats: typings.wordpressDate.anon.Date
+    var formats: Date
     
     var l10n: Locale
     
@@ -45,14 +51,14 @@ object mod {
   }
   object DateSettings {
     
-    inline def apply(formats: typings.wordpressDate.anon.Date, l10n: Locale, timezone: Offset): DateSettings = {
+    inline def apply(formats: Date, l10n: Locale, timezone: Offset): DateSettings = {
       val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], l10n = l10n.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateSettings]
     }
     
     extension [Self <: DateSettings](x: Self) {
       
-      inline def setFormats(value: typings.wordpressDate.anon.Date): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: Date): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
       inline def setL10n(value: Locale): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
       

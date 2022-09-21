@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param leftJoystick defines that the joystick is for left hand (false by default)
   * @param customizations Defines the options we want to customize the VirtualJoystick
   */
-class VirtualJoystick ()
+open class VirtualJoystick ()
   extends typings.babylonjs.miscIndexMod.VirtualJoystick {
   def this(leftJoystick: Boolean) = this()
   def this(leftJoystick: Boolean, customizations: PartialVirtualJoystickCus) = this()
@@ -35,38 +35,38 @@ object VirtualJoystick {
   def Canvas: Nullable[HTMLCanvasElement] = js.native
   inline def Canvas_=(x: Nullable[HTMLCanvasElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canvas")(x.asInstanceOf[js.Any])
   
+  @JSImport("babylonjs/index", "VirtualJoystick._AlwaysVisibleSticks")
+  @js.native
+  def _AlwaysVisibleSticks: Any = js.native
+  inline def _AlwaysVisibleSticks_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AlwaysVisibleSticks")(x.asInstanceOf[js.Any])
+  
   @JSImport("babylonjs/index", "VirtualJoystick._GetDefaultOptions")
   @js.native
-  def _GetDefaultOptions: js.Any = js.native
-  inline def _GetDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
+  def _GetDefaultOptions: Any = js.native
+  inline def _GetDefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "VirtualJoystick._alwaysVisibleSticks")
+  @JSImport("babylonjs/index", "VirtualJoystick._GlobalJoystickIndex")
   @js.native
-  def _alwaysVisibleSticks: js.Any = js.native
-  inline def _alwaysVisibleSticks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_alwaysVisibleSticks")(x.asInstanceOf[js.Any])
+  def _GlobalJoystickIndex: Any = js.native
+  inline def _GlobalJoystickIndex_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalJoystickIndex")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "VirtualJoystick._globalJoystickIndex")
+  @JSImport("babylonjs/index", "VirtualJoystick._HalfWidth")
   @js.native
-  def _globalJoystickIndex: js.Any = js.native
-  inline def _globalJoystickIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_globalJoystickIndex")(x.asInstanceOf[js.Any])
+  def _HalfWidth: Any = js.native
+  inline def _HalfWidth_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_HalfWidth")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "VirtualJoystick.halfWidth")
+  @JSImport("babylonjs/index", "VirtualJoystick._VJCanvasContext")
   @js.native
-  def halfWidth: js.Any = js.native
-  inline def halfWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("halfWidth")(x.asInstanceOf[js.Any])
+  def _VJCanvasContext: Any = js.native
+  inline def _VJCanvasContext_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VJCanvasContext")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "VirtualJoystick.vjCanvasContext")
+  @JSImport("babylonjs/index", "VirtualJoystick._VJCanvasHeight")
   @js.native
-  def vjCanvasContext: js.Any = js.native
-  inline def vjCanvasContext_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasContext")(x.asInstanceOf[js.Any])
+  def _VJCanvasHeight: Any = js.native
+  inline def _VJCanvasHeight_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VJCanvasHeight")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "VirtualJoystick.vjCanvasHeight")
+  @JSImport("babylonjs/index", "VirtualJoystick._VJCanvasWidth")
   @js.native
-  def vjCanvasHeight: js.Any = js.native
-  inline def vjCanvasHeight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasHeight")(x.asInstanceOf[js.Any])
-  
-  @JSImport("babylonjs/index", "VirtualJoystick.vjCanvasWidth")
-  @js.native
-  def vjCanvasWidth: js.Any = js.native
-  inline def vjCanvasWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasWidth")(x.asInstanceOf[js.Any])
+  def _VJCanvasWidth: Any = js.native
+  inline def _VJCanvasWidth_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VJCanvasWidth")(x.asInstanceOf[js.Any])
 }

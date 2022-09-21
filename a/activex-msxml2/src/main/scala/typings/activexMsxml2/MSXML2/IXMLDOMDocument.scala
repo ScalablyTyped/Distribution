@@ -56,7 +56,7 @@ trait IXMLDOMDocument extends StObject {
   def createEntityReference(name: String): IXMLDOMEntityReference
   
   /** create a node of the specified node type and name */
-  def createNode(`type`: js.Any, name: String, namespaceURI: String): IXMLDOMNode
+  def createNode(`type`: Any, name: String, namespaceURI: String): IXMLDOMNode
   
   /** create a processing instruction node */
   def createProcessingInstruction(target: String, data: String): IXMLDOMProcessingInstruction
@@ -65,7 +65,7 @@ trait IXMLDOMDocument extends StObject {
   def createTextNode(data: String): IXMLDOMText
   
   /** the data type of the node */
-  var dataType: js.Any
+  var dataType: Any
   
   /** pointer to the definition of the node in the DTD or schema */
   val definition: IXMLDOMNode
@@ -88,13 +88,13 @@ trait IXMLDOMDocument extends StObject {
   val implementation: IXMLDOMImplementation
   
   /** insert a child node */
-  def insertBefore(newChild: IXMLDOMNode, refChild: js.Any): IXMLDOMNode
+  def insertBefore(newChild: IXMLDOMNode, refChild: Any): IXMLDOMNode
   
   /** last child of the node */
   val lastChild: IXMLDOMNode
   
   /** load document from the specified XML source */
-  def load(xmlSource: js.Any): Boolean
+  def load(xmlSource: Any): Boolean
   
   /** load the document from a string */
   def loadXML(bstrXML: String): Boolean
@@ -118,19 +118,19 @@ trait IXMLDOMDocument extends StObject {
   val nodeTypeString: String
   
   /** get the strongly typed value of the node */
-  var nodeTypedValue: js.Any
+  var nodeTypedValue: Any
   
   /** value stored in the node */
-  var nodeValue: js.Any
+  var nodeValue: Any
   
   /** register an ondataavailable event handler */
-  val ondataavailable: js.Any
+  val ondataavailable: Any
   
   /** register a readystatechange event handler */
-  val onreadystatechange: js.Any
+  val onreadystatechange: Any
   
   /** register an ontransformnode event handler */
-  val ontransformnode: js.Any
+  val ontransformnode: Any
   
   /** document that contains the node */
   val ownerDocument: IXMLDOMDocument
@@ -166,7 +166,7 @@ trait IXMLDOMDocument extends StObject {
   var resolveExternals: Boolean
   
   /** save the document to a specified destination */
-  def save(destination: js.Any): Unit
+  def save(destination: Any): Unit
   
   /** execute query on the subtree */
   def selectNodes(queryString: String): IXMLDOMNodeList
@@ -184,7 +184,7 @@ trait IXMLDOMDocument extends StObject {
   def transformNode(stylesheet: IXMLDOMNode): String
   
   /** apply the stylesheet to the subtree, returning the result through a document or a stream */
-  def transformNodeToObject(stylesheet: IXMLDOMNode, outputObject: js.Any): Unit
+  def transformNodeToObject(stylesheet: IXMLDOMNode, outputObject: Any): Unit
   
   /** get the URL for the loaded XML document */
   val url: String
@@ -212,10 +212,10 @@ object IXMLDOMDocument {
     createDocumentFragment: () => IXMLDOMDocumentFragment,
     createElement: String => IXMLDOMElement,
     createEntityReference: String => IXMLDOMEntityReference,
-    createNode: (js.Any, String, String) => IXMLDOMNode,
+    createNode: (Any, String, String) => IXMLDOMNode,
     createProcessingInstruction: (String, String) => IXMLDOMProcessingInstruction,
     createTextNode: String => IXMLDOMText,
-    dataType: js.Any,
+    dataType: Any,
     definition: IXMLDOMNode,
     doctype: IXMLDOMDocumentType,
     documentElement: IXMLDOMElement,
@@ -223,9 +223,9 @@ object IXMLDOMDocument {
     getElementsByTagName: String => IXMLDOMNodeList,
     hasChildNodes: () => Boolean,
     implementation: IXMLDOMImplementation,
-    insertBefore: (IXMLDOMNode, js.Any) => IXMLDOMNode,
+    insertBefore: (IXMLDOMNode, Any) => IXMLDOMNode,
     lastChild: IXMLDOMNode,
-    load: js.Any => Boolean,
+    load: Any => Boolean,
     loadXML: String => Boolean,
     namespaceURI: String,
     nextSibling: IXMLDOMNode,
@@ -233,11 +233,11 @@ object IXMLDOMDocument {
     nodeName: String,
     nodeType: DOMNodeType,
     nodeTypeString: String,
-    nodeTypedValue: js.Any,
-    nodeValue: js.Any,
-    ondataavailable: js.Any,
-    onreadystatechange: js.Any,
-    ontransformnode: js.Any,
+    nodeTypedValue: Any,
+    nodeValue: Any,
+    ondataavailable: Any,
+    onreadystatechange: Any,
+    ontransformnode: Any,
     ownerDocument: IXMLDOMDocument,
     parentNode: IXMLDOMNode,
     parseError: IXMLDOMParseError,
@@ -249,13 +249,13 @@ object IXMLDOMDocument {
     removeChild: IXMLDOMNode => IXMLDOMNode,
     replaceChild: (IXMLDOMNode, IXMLDOMNode) => IXMLDOMNode,
     resolveExternals: Boolean,
-    save: js.Any => Unit,
+    save: Any => Unit,
     selectNodes: String => IXMLDOMNodeList,
     selectSingleNode: String => IXMLDOMNode,
     specified: Boolean,
     text: String,
     transformNode: IXMLDOMNode => String,
-    transformNodeToObject: (IXMLDOMNode, js.Any) => Unit,
+    transformNodeToObject: (IXMLDOMNode, Any) => Unit,
     url: String,
     validateOnParse: Boolean,
     xml: String
@@ -293,13 +293,13 @@ object IXMLDOMDocument {
     
     inline def setCreateEntityReference(value: String => IXMLDOMEntityReference): Self = StObject.set(x, "createEntityReference", js.Any.fromFunction1(value))
     
-    inline def setCreateNode(value: (js.Any, String, String) => IXMLDOMNode): Self = StObject.set(x, "createNode", js.Any.fromFunction3(value))
+    inline def setCreateNode(value: (Any, String, String) => IXMLDOMNode): Self = StObject.set(x, "createNode", js.Any.fromFunction3(value))
     
     inline def setCreateProcessingInstruction(value: (String, String) => IXMLDOMProcessingInstruction): Self = StObject.set(x, "createProcessingInstruction", js.Any.fromFunction2(value))
     
     inline def setCreateTextNode(value: String => IXMLDOMText): Self = StObject.set(x, "createTextNode", js.Any.fromFunction1(value))
     
-    inline def setDataType(value: js.Any): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: Any): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     inline def setDefinition(value: IXMLDOMNode): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
@@ -315,11 +315,11 @@ object IXMLDOMDocument {
     
     inline def setImplementation(value: IXMLDOMImplementation): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    inline def setInsertBefore(value: (IXMLDOMNode, js.Any) => IXMLDOMNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
+    inline def setInsertBefore(value: (IXMLDOMNode, Any) => IXMLDOMNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
     inline def setLastChild(value: IXMLDOMNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
-    inline def setLoad(value: js.Any => Boolean): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: Any => Boolean): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     inline def setLoadXML(value: String => Boolean): Self = StObject.set(x, "loadXML", js.Any.fromFunction1(value))
     
@@ -337,15 +337,15 @@ object IXMLDOMDocument {
     
     inline def setNodeTypeString(value: String): Self = StObject.set(x, "nodeTypeString", value.asInstanceOf[js.Any])
     
-    inline def setNodeTypedValue(value: js.Any): Self = StObject.set(x, "nodeTypedValue", value.asInstanceOf[js.Any])
+    inline def setNodeTypedValue(value: Any): Self = StObject.set(x, "nodeTypedValue", value.asInstanceOf[js.Any])
     
-    inline def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
-    inline def setOndataavailable(value: js.Any): Self = StObject.set(x, "ondataavailable", value.asInstanceOf[js.Any])
+    inline def setOndataavailable(value: Any): Self = StObject.set(x, "ondataavailable", value.asInstanceOf[js.Any])
     
-    inline def setOnreadystatechange(value: js.Any): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
+    inline def setOnreadystatechange(value: Any): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
     
-    inline def setOntransformnode(value: js.Any): Self = StObject.set(x, "ontransformnode", value.asInstanceOf[js.Any])
+    inline def setOntransformnode(value: Any): Self = StObject.set(x, "ontransformnode", value.asInstanceOf[js.Any])
     
     inline def setOwnerDocument(value: IXMLDOMDocument): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
     
@@ -369,7 +369,7 @@ object IXMLDOMDocument {
     
     inline def setResolveExternals(value: Boolean): Self = StObject.set(x, "resolveExternals", value.asInstanceOf[js.Any])
     
-    inline def setSave(value: js.Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+    inline def setSave(value: Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
     inline def setSelectNodes(value: String => IXMLDOMNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
     
@@ -381,7 +381,7 @@ object IXMLDOMDocument {
     
     inline def setTransformNode(value: IXMLDOMNode => String): Self = StObject.set(x, "transformNode", js.Any.fromFunction1(value))
     
-    inline def setTransformNodeToObject(value: (IXMLDOMNode, js.Any) => Unit): Self = StObject.set(x, "transformNodeToObject", js.Any.fromFunction2(value))
+    inline def setTransformNodeToObject(value: (IXMLDOMNode, Any) => Unit): Self = StObject.set(x, "transformNodeToObject", js.Any.fromFunction2(value))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

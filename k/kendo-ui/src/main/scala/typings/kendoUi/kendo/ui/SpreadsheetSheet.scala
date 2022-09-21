@@ -19,7 +19,7 @@ trait SpreadsheetSheet extends StObject {
   
   var frozenRows: js.UndefOr[Double] = js.undefined
   
-  var mergedCells: js.UndefOr[js.Any] = js.undefined
+  var mergedCells: js.UndefOr[Any] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -48,7 +48,7 @@ object SpreadsheetSheet {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: SpreadsheetSheetColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: SpreadsheetSheetColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object SpreadsheetSheet {
     
     inline def setFrozenRowsUndefined: Self = StObject.set(x, "frozenRows", js.undefined)
     
-    inline def setMergedCells(value: js.Any): Self = StObject.set(x, "mergedCells", value.asInstanceOf[js.Any])
+    inline def setMergedCells(value: Any): Self = StObject.set(x, "mergedCells", value.asInstanceOf[js.Any])
     
     inline def setMergedCellsUndefined: Self = StObject.set(x, "mergedCells", js.undefined)
     
@@ -78,7 +78,7 @@ object SpreadsheetSheet {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: SpreadsheetSheetRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SpreadsheetSheetRow*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     

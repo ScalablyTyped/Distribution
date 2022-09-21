@@ -14,7 +14,7 @@ object links extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-firebase", "links.DynamicLink")
   @js.native
-  class DynamicLink protected ()
+  open class DynamicLink protected ()
     extends typings.reactNativeFirebase.mod.RNFirebase.links.DynamicLink {
     def this(link: String, domainURIPrefix: String) = this()
   }

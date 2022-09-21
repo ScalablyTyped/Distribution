@@ -49,7 +49,7 @@ object DescribeHostReservationOfferingsRequest {
     
     inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value*))
     
     inline def setMaxDuration(value: Integer): Self = StObject.set(x, "MaxDuration", value.asInstanceOf[js.Any])
     

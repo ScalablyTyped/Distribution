@@ -13,15 +13,15 @@ object eventEmitterMod {
   /**
     * @internal
     */
-  class EventEmitter ()
+  open class EventEmitter ()
     extends StObject
        with CommonEventEmitter {
     
-    /* private */ var emitter: js.Any = js.native
+    /* private */ var emitter: Any = js.native
     
-    /* private */ var eventListenersCount: js.Any = js.native
+    /* private */ var eventListenersCount: Any = js.native
     
-    /* private */ var eventsMap: js.Any = js.native
+    /* private */ var eventsMap: Any = js.native
     
     /**
       * Gets the number of listeners for a given event.
@@ -35,22 +35,22 @@ object eventEmitterMod {
   @js.native
   trait CommonEventEmitter extends StObject {
     
-    def addListener(event: EventType, handler: Handler[js.Any]): CommonEventEmitter = js.native
+    def addListener(event: EventType, handler: Handler[Any]): CommonEventEmitter = js.native
     
     def emit(event: EventType): Boolean = js.native
-    def emit(event: EventType, eventData: js.Any): Boolean = js.native
+    def emit(event: EventType, eventData: Any): Boolean = js.native
     
     def listenerCount(event: String): Double = js.native
     
-    def off(event: EventType, handler: Handler[js.Any]): CommonEventEmitter = js.native
+    def off(event: EventType, handler: Handler[Any]): CommonEventEmitter = js.native
     
-    def on(event: EventType, handler: Handler[js.Any]): CommonEventEmitter = js.native
+    def on(event: EventType, handler: Handler[Any]): CommonEventEmitter = js.native
     
-    def once(event: EventType, handler: Handler[js.Any]): CommonEventEmitter = js.native
+    def once(event: EventType, handler: Handler[Any]): CommonEventEmitter = js.native
     
     def removeAllListeners(): CommonEventEmitter = js.native
     def removeAllListeners(event: EventType): CommonEventEmitter = js.native
     
-    def removeListener(event: EventType, handler: Handler[js.Any]): CommonEventEmitter = js.native
+    def removeListener(event: EventType, handler: Handler[Any]): CommonEventEmitter = js.native
   }
 }

@@ -2,14 +2,13 @@ package typings.blessed.mod.Widgets
 
 import typings.blessed.blessedStrings.`select item`
 import typings.blessed.blessedStrings.select
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "Widgets.ListElement")
 @js.native
-class ListElement protected () extends BoxElement {
+open class ListElement protected () extends BoxElement {
   def this(opts: ListOptions[ListElementStyle]) = this()
   
   /**
@@ -37,7 +36,7 @@ class ListElement protected () extends BoxElement {
     */
   def fuzzyFind(arg: String): Unit = js.native
   def fuzzyFind(arg: js.Function0[Unit]): Unit = js.native
-  def fuzzyFind(arg: RegExp): Unit = js.native
+  def fuzzyFind(arg: js.RegExp): Unit = js.native
   
   def getItem(child: String): BlessedElement = js.native
   def getItem(child: Double): BlessedElement = js.native

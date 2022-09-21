@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.BoundsFactory")
 @js.native
-class BoundsFactory ()
+open class BoundsFactory ()
   extends StObject
      with typings.phaser.MatterJS.BoundsFactory {
   

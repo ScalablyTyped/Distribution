@@ -10,10 +10,10 @@ Cross-browser lib for inserting text at selection in a textarea / input
 | ------------------ | :-------------: |
 | Full name          | insert-text-at-cursor |
 | Keywords           | text, range, selection, textarea |
-| # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 89204 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29973.0 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/grassator/insert-text-at-cursor#readme)

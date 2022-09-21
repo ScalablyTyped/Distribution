@@ -10,15 +10,12 @@ A npm friendly version of history.js
 | ------------------ | :-------------: |
 | Full name          | html5-history |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 6639 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 255.66666666666666 |
+| # stars            | 5.0 |
 
 ## Links
-- [Homepage](https://github.com/Raynos/html5-history)
-- [Bugs](https://github.com/Raynos/html5-history/issues)
-- [Repository](https://github.com/Raynos/html5-history)
 - [Npm](https://www.npmjs.com/package/html5-history)
     
 

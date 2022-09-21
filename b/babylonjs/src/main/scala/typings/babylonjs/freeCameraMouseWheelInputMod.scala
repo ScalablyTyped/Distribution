@@ -12,34 +12,42 @@ object freeCameraMouseWheelInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/freeCameraMouseWheelInput", "FreeCameraMouseWheelInput")
   @js.native
-  class FreeCameraMouseWheelInput () extends BaseCameraMouseWheelInput {
+  open class FreeCameraMouseWheelInput () extends BaseCameraMouseWheelInput {
     
-    /* private */ var _moveRelative: js.Any = js.native
+    /* private */ var _moveRelative: Any = js.native
     
-    /* private */ var _moveScene: js.Any = js.native
+    /* private */ var _moveScene: Any = js.native
     
-    /* private */ var _rotateRelative: js.Any = js.native
+    /* private */ var _rotateRelative: Any = js.native
     
     /**
       * Update the camera according to any configured properties for the 3
       * mouse-wheel axis.
       */
-    /* private */ var _updateCamera: js.Any = js.native
+    /* private */ var _updateCamera: Any = js.native
+    
+    /**
+      * Update one property of the camera.
+      * @param value
+      * @param cameraProperty
+      * @param coordinate
+      */
+    /* private */ var _updateCameraProperty: Any = js.native
     
     /**
       * These are set to the desired default behaviour.
       */
-    /* private */ var _wheelXAction: js.Any = js.native
+    /* private */ var _wheelXAction: Any = js.native
     
-    /* private */ var _wheelXActionCoordinate: js.Any = js.native
+    /* private */ var _wheelXActionCoordinate: Any = js.native
     
-    /* private */ var _wheelYAction: js.Any = js.native
+    /* private */ var _wheelYAction: Any = js.native
     
-    /* private */ var _wheelYActionCoordinate: js.Any = js.native
+    /* private */ var _wheelYActionCoordinate: Any = js.native
     
-    /* private */ var _wheelZAction: js.Any = js.native
+    /* private */ var _wheelZAction: Any = js.native
     
-    /* private */ var _wheelZActionCoordinate: js.Any = js.native
+    /* private */ var _wheelZActionCoordinate: Any = js.native
     
     /**
       * Defines the camera the input is attached to.

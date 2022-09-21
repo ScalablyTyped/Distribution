@@ -23,7 +23,7 @@ object XDataDescriptorFactory {
   inline def apply(
     acquire: () => Unit,
     createDataDescriptor: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataDescriptorFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDataDescriptor = js.Any.fromFunction0(createDataDescriptor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

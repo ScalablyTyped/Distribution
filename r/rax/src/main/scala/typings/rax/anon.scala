@@ -7,6 +7,7 @@ import typings.propTypes.mod.InferType
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.ValidationMap
 import typings.propTypes.mod.Validator
+import typings.rax.mod.Component
 import typings.rax.mod.RaxNode
 import typings.std.Exclude
 import typings.std.NonNullable
@@ -38,7 +39,7 @@ object anon {
   
   trait `1` extends StObject {
     
-    var ref: js.UndefOr[Exclude[js.Any, String]] = js.undefined
+    var ref: js.UndefOr[Exclude[Any, String]] = js.undefined
   }
   object `1` {
     
@@ -49,7 +50,7 @@ object anon {
     
     extension [Self <: `1`](x: Self) {
       
-      inline def setRef(value: Exclude[js.Any, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Exclude[Any, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
@@ -103,7 +104,7 @@ object anon {
   @js.native
   trait Fn0 extends StObject {
     
-    def apply[T /* <: Validator[js.Any] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = js.native
+    def apply[T /* <: Validator[Any] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = js.native
   }
   
   @js.native
@@ -112,26 +113,26 @@ object anon {
     def apply[T](`type`: Validator[T]): Requireable[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: T}
-      */ typings.rax.raxStrings.Fn1 & TopLevel[js.Any]
+      */ typings.rax.raxStrings.Fn1 & TopLevel[Any]
       ] = js.native
   }
   
   @js.native
   trait Fn2 extends StObject {
     
-    def apply[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[InferProps[P]] = js.native
+    def apply[P /* <: ValidationMap[Any] */](`type`: P): Requireable[InferProps[P]] = js.native
   }
   
   @js.native
   trait Fn3 extends StObject {
     
-    def apply[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[Required[InferProps[P]]] = js.native
+    def apply[P /* <: ValidationMap[Any] */](`type`: P): Requireable[Required[InferProps[P]]] = js.native
   }
   
   @js.native
   trait FnCall extends StObject {
     
-    def apply[T](expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]): Requireable[T] = js.native
+    def apply[T](expectedClass: Instantiable1[/* args (repeated) */ Any, T]): Requireable[T] = js.native
   }
   
   @js.native
@@ -162,6 +163,11 @@ object anon {
       inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
     }
   }
+  
+  @js.native
+  trait Instantiable
+    extends StObject
+       with Instantiable1[/* props */ Any, Component[Any, js.Object, Any]]
   
   trait PropTypes extends StObject {
     

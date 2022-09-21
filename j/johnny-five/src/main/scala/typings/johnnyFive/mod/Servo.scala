@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Servo")
 @js.native
-class Servo protected () extends StObject {
+open class Servo protected () extends StObject {
   def this(option: String) = this()
   def this(option: Double) = this()
   def this(option: ServoGeneralOption) = this()
@@ -18,7 +18,7 @@ class Servo protected () extends StObject {
   
   def cw(speed: Double): Unit = js.native
   
-  var history: js.Array[js.Any] = js.native
+  var history: js.Array[Any] = js.native
   
   def home(): Unit = js.native
   
@@ -30,7 +30,7 @@ class Servo protected () extends StObject {
   
   var isMoving: Boolean = js.native
   
-  val last: js.Any = js.native
+  val last: Any = js.native
   
   def max(): Unit = js.native
   

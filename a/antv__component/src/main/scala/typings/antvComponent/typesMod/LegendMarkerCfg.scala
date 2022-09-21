@@ -22,7 +22,7 @@ trait LegendMarkerCfg extends StObject {
   /**
     * 图例 marker 形状
     */
-  var symbol: js.UndefOr[String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, js.Any])] = js.undefined
+  var symbol: js.UndefOr[String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, Any])] = js.undefined
 }
 object LegendMarkerCfg {
   
@@ -41,9 +41,9 @@ object LegendMarkerCfg {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setSymbol(value: String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, js.Any])): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, Any])): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    inline def setSymbolFunction3(value: (/* x */ Double, /* y */ Double, /* r */ Double) => js.Any): Self = StObject.set(x, "symbol", js.Any.fromFunction3(value))
+    inline def setSymbolFunction3(value: (/* x */ Double, /* y */ Double, /* r */ Double) => Any): Self = StObject.set(x, "symbol", js.Any.fromFunction3(value))
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }

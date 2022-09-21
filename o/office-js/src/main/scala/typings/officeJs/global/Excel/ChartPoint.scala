@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a point of a series in a chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartPoint")
 @js.native
-class ChartPoint ()
+open class ChartPoint ()
   extends StObject
      with typings.officeJs.Excel.ChartPoint {
   

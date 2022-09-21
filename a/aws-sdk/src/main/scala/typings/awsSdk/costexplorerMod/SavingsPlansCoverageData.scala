@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SavingsPlansCoverageData extends StObject {
   
   /**
-    * The percentage of your existing Savings Plans covered usage, divided by all of your eligible Savings Plans usage in an account(or set of accounts).
+    * The percentage of your existing Savings Plans covered usage, divided by all of your eligible Savings Plans usage in an account (or set of accounts).
     */
   var CoveragePercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The cost of your AWS usage at the public On-Demand rate.
+    * The cost of your Amazon Web Services usage at the public On-Demand rate.
     */
   var OnDemandCost: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The amount of your AWS usage that is covered by a Savings Plans.
+    * The amount of your Amazon Web Services usage that's covered by a Savings Plans.
     */
   var SpendCoveredBySavingsPlans: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The total cost of your AWS usage, regardless of your purchase option.
+    * The total cost of your Amazon Web Services usage, regardless of your purchase option.
     */
   var TotalCost: js.UndefOr[GenericString] = js.undefined
 }

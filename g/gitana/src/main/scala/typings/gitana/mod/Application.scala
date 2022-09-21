@@ -6,100 +6,100 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitana", "Application")
 @js.native
-class Application protected () extends AbstractPlatformObject {
-  def this(platform: js.Any, `object`: js.Any) = this()
+open class Application protected () extends AbstractPlatformObject {
+  def this(platform: Any, `object`: Any) = this()
   
-  def checkEmailAuthorities(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkEmailAuthorities(checks: Any, callback: Any): Any = js.native
   
-  def checkEmailPermissions(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkEmailPermissions(checks: Any, callback: Any): Any = js.native
   
-  def checkEmailProviderAuthorities(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkEmailProviderAuthorities(checks: Any, callback: Any): Any = js.native
   
-  def checkEmailProviderPermissions(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkEmailProviderPermissions(checks: Any, callback: Any): Any = js.native
   
-  def checkMessageAuthorities(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkMessageAuthorities(checks: Any, callback: Any): Any = js.native
   
-  def checkMessagePermissions(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkMessagePermissions(checks: Any, callback: Any): Any = js.native
   
-  def checkPageRenditionAuthorities(deploymentKey: js.Any, checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkPageRenditionAuthorities(deploymentKey: Any, checks: Any, callback: Any): Any = js.native
   
-  def checkPageRenditionPermissions(deploymentKey: js.Any, checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkPageRenditionPermissions(deploymentKey: Any, checks: Any, callback: Any): Any = js.native
   
-  def checkRegistrationAuthorities(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkRegistrationAuthorities(checks: Any, callback: Any): Any = js.native
   
-  def checkRegistrationPermissions(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkRegistrationPermissions(checks: Any, callback: Any): Any = js.native
   
-  def checkSettingAuthorities(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkSettingAuthorities(checks: Any, callback: Any): Any = js.native
   
-  def checkSettingPermissions(checks: js.Any, callback: js.Any): js.Any = js.native
+  def checkSettingPermissions(checks: Any, callback: Any): Any = js.native
   
-  def createEmail(`object`: js.Any): js.Any = js.native
+  def createEmail(`object`: Any): Any = js.native
   
-  def createEmailProvider(`object`: js.Any): js.Any = js.native
+  def createEmailProvider(`object`: Any): Any = js.native
   
-  def createMessage(`object`: js.Any): js.Any = js.native
+  def createMessage(`object`: Any): Any = js.native
   
-  def createPageRendition(deploymentKey: js.Any, `object`: js.Any): js.Any = js.native
+  def createPageRendition(deploymentKey: Any, `object`: Any): Any = js.native
   
-  def createRegistration(`object`: js.Any): js.Any = js.native
+  def createRegistration(`object`: Any): Any = js.native
   
-  def createSettings(`object`: js.Any): js.Any = js.native
+  def createSettings(`object`: Any): Any = js.native
   
-  def deploy(deploymentKey: js.Any): js.Any = js.native
+  def deploy(deploymentKey: Any): Any = js.native
   
-  def findDeployedApplication(deploymentKey: js.Any): js.Any = js.native
+  def findDeployedApplication(deploymentKey: Any): Any = js.native
   
-  def invalidateAllPageRenditions(deploymentKey: js.Any): js.Any = js.native
+  def invalidateAllPageRenditions(deploymentKey: Any): Any = js.native
   
-  def listAutoClientMappingObjects(callback: js.Any, pagination: js.Any): js.Any = js.native
+  def listAutoClientMappingObjects(callback: Any, pagination: Any): Any = js.native
   
-  def listEmailProviders(pagination: js.Any): EmailProviderMap = js.native
+  def listEmailProviders(pagination: Any): EmailProviderMap = js.native
   
-  def listEmails(pagination: js.Any): EmailMap = js.native
+  def listEmails(pagination: Any): EmailMap = js.native
   
-  def listMessages(pagination: js.Any): MessageMap = js.native
+  def listMessages(pagination: Any): MessageMap = js.native
   
-  def listPageRenditions(deploymentKey: js.Any, pagination: js.Any): js.Any = js.native
+  def listPageRenditions(deploymentKey: Any, pagination: Any): Any = js.native
   
-  def listRegistrations(pagination: js.Any): js.Any = js.native
+  def listRegistrations(pagination: Any): Any = js.native
   
-  def listSettings(pagination: js.Any): SettingsMap = js.native
+  def listSettings(pagination: Any): SettingsMap = js.native
   
-  def listTrustedDomainMappingObjects(callback: js.Any, pagination: js.Any): js.Any = js.native
+  def listTrustedDomainMappingObjects(callback: Any, pagination: Any): Any = js.native
   
-  def loadDeploymentInfo(deploymentKey: js.Any, callback: js.Any): js.Any = js.native
+  def loadDeploymentInfo(deploymentKey: Any, callback: Any): Any = js.native
   
-  def queryEmailProviders(query: js.Any, pagination: js.Any): EmailProviderMap = js.native
+  def queryEmailProviders(query: Any, pagination: Any): EmailProviderMap = js.native
   
-  def queryEmails(query: js.Any, pagination: js.Any): EmailMap = js.native
+  def queryEmails(query: Any, pagination: Any): EmailMap = js.native
   
-  def queryMessages(query: js.Any, pagination: js.Any): MessageMap = js.native
+  def queryMessages(query: Any, pagination: Any): MessageMap = js.native
   
-  def queryPageRenditions(deploymentKey: js.Any, query: js.Any, pagination: js.Any): js.Any = js.native
+  def queryPageRenditions(deploymentKey: Any, query: Any, pagination: Any): Any = js.native
   
-  def queryRegistrations(query: js.Any, pagination: js.Any): js.Any = js.native
+  def queryRegistrations(query: Any, pagination: Any): Any = js.native
   
-  def querySettings(query: js.Any, pagination: js.Any): SettingsMap = js.native
+  def querySettings(query: Any, pagination: Any): SettingsMap = js.native
   
-  def readApplicationPrincipalSettings(args: js.Any*): js.Any = js.native
+  def readApplicationPrincipalSettings(args: Any*): Any = js.native
   
-  def readApplicationSettings(scope: js.Any, key: js.Any): js.Any = js.native
+  def readApplicationSettings(scope: Any, key: Any): Any = js.native
   
-  def readEmail(emailId: js.Any): Email = js.native
+  def readEmail(emailId: Any): Email = js.native
   
-  def readEmailProvider(emailProviderId: js.Any): EmailProvider = js.native
+  def readEmailProvider(emailProviderId: Any): EmailProvider = js.native
   
-  def readMessage(messageId: js.Any): Message = js.native
+  def readMessage(messageId: Any): Message = js.native
   
-  def readPageRendition(deploymentKey: js.Any, pageRenditionIdOrKey: js.Any): js.Any = js.native
+  def readPageRendition(deploymentKey: Any, pageRenditionIdOrKey: Any): Any = js.native
   
-  def readRegistration(registrationId: js.Any): js.Any = js.native
+  def readRegistration(registrationId: Any): Any = js.native
   
-  def readSettings(settingId: js.Any): js.Any = js.native
+  def readSettings(settingId: Any): Any = js.native
   
-  def refreshDeploymentKeys(deploymentKey: js.Any): js.Any = js.native
+  def refreshDeploymentKeys(deploymentKey: Any): Any = js.native
   
-  def undeploy(deploymentKey: js.Any): js.Any = js.native
+  def undeploy(deploymentKey: Any): Any = js.native
 }
 object Application {
   
@@ -108,17 +108,17 @@ object Application {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(_instance: Any, _static: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")((List(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   /* static member */
-  inline def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach(`object`: Any, block: Any, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def implement(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   /* static member */
-  inline def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
+  inline def toString_(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[Any]
   
   /* static member */
-  inline def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def valueOf_(`type`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

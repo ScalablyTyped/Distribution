@@ -9,9 +9,9 @@ trait Ribbon
   extends StObject
      with Root {
   
-  def addChildAtIndex(child: js.Any, index: Double): scala.Unit
+  def addChildAtIndex(child: Any, index: Double): scala.Unit
   
-  def addContextualGroup(id: String, title: String, color: js.Any, command: String): js.Any
+  def addContextualGroup(id: String, title: String, color: Any, command: String): Any
   
   def get_contextualGroupIds(): js.Array[String]
   
@@ -37,8 +37,8 @@ object Ribbon {
     _lastTopUpdate: Double,
     _lastWidthUpdate: Double,
     addChild: Component => scala.Unit,
-    addChildAtIndex: (js.Any, Double) => scala.Unit,
-    addContextualGroup: (String, String, js.Any, String) => js.Any,
+    addChildAtIndex: (Any, Double) => scala.Unit,
+    addContextualGroup: (String, String, Any, String) => Any,
     appendChildrenToElement: Element => scala.Unit,
     createChildArray: () => scala.Unit,
     dispose: () => scala.Unit,
@@ -61,10 +61,10 @@ object Ribbon {
     get_visible: () => Boolean,
     get_visibleInDOM: () => Boolean,
     hideContextualGroup: String => scala.Unit,
-    initRootMember: Component => js.Any,
-    onEnabledChanged: Boolean => js.Any,
+    initRootMember: Component => Any,
+    onEnabledChanged: Boolean => Any,
     onMenuClosed: () => scala.Unit,
-    raiseCommandEvent: (String, CommandType, js.Any) => js.Any,
+    raiseCommandEvent: (String, CommandType, Any) => Any,
     receiveFocus: () => scala.Unit,
     refresh: () => scala.Unit,
     removeChild: String => scala.Unit,
@@ -88,9 +88,9 @@ object Ribbon {
   
   extension [Self <: Ribbon](x: Self) {
     
-    inline def setAddChildAtIndex(value: (js.Any, Double) => scala.Unit): Self = StObject.set(x, "addChildAtIndex", js.Any.fromFunction2(value))
+    inline def setAddChildAtIndex(value: (Any, Double) => scala.Unit): Self = StObject.set(x, "addChildAtIndex", js.Any.fromFunction2(value))
     
-    inline def setAddContextualGroup(value: (String, String, js.Any, String) => js.Any): Self = StObject.set(x, "addContextualGroup", js.Any.fromFunction4(value))
+    inline def setAddContextualGroup(value: (String, String, Any, String) => Any): Self = StObject.set(x, "addContextualGroup", js.Any.fromFunction4(value))
     
     inline def setGet_contextualGroupIds(value: () => js.Array[String]): Self = StObject.set(x, "get_contextualGroupIds", js.Any.fromFunction0(value))
     

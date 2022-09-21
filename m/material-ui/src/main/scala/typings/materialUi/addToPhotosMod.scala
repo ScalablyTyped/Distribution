@@ -10,10 +10,10 @@ object addToPhotosMod {
   
   @JSImport("material-ui/svg-icons/image/add-to-photos", JSImport.Default)
   @js.native
-  class default () extends ImageAddToPhotos
+  open class default () extends ImageAddToPhotos
   
   @JSImport("material-ui/svg-icons/image/add-to-photos", "ImageAddToPhotos")
   @js.native
-  class ImageAddToPhotos ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageAddToPhotos ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

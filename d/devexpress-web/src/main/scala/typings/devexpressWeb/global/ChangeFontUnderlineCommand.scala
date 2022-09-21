@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFontUnderlineCommand")
 @js.native
-class ChangeFontUnderlineCommand ()
+open class ChangeFontUnderlineCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFontUnderlineCommand {
   

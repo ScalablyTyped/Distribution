@@ -1,12 +1,14 @@
 package typings.googleCloudStorage.bucketMod
 
+import typings.googleCloudStorage.storageMod.PreconditionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DeleteFilesOptions
   extends StObject
-     with GetFilesOptions {
+     with GetFilesOptions
+     with PreconditionOptions {
   
   var force: js.UndefOr[Boolean] = js.undefined
 }

@@ -33,6 +33,6 @@ object DescribeScalingActivitiesResponse {
     
     inline def setScalingActivitiesUndefined: Self = StObject.set(x, "ScalingActivities", js.undefined)
     
-    inline def setScalingActivitiesVarargs(value: ScalingActivity*): Self = StObject.set(x, "ScalingActivities", js.Array(value :_*))
+    inline def setScalingActivitiesVarargs(value: ScalingActivity*): Self = StObject.set(x, "ScalingActivities", js.Array(value*))
   }
 }

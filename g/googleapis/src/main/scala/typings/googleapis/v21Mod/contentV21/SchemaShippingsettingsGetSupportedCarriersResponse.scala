@@ -12,10 +12,9 @@ trait SchemaShippingsettingsGetSupportedCarriersResponse extends StObject {
   var carriers: js.UndefOr[js.Array[SchemaCarriersCarrier]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#shippingsettingsGetSupportedCarriersResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#shippingsettingsGetSupportedCarriersResponse`".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaShippingsettingsGetSupportedCarriersResponse {
   
@@ -30,9 +29,11 @@ object SchemaShippingsettingsGetSupportedCarriersResponse {
     
     inline def setCarriersUndefined: Self = StObject.set(x, "carriers", js.undefined)
     
-    inline def setCarriersVarargs(value: SchemaCarriersCarrier*): Self = StObject.set(x, "carriers", js.Array(value :_*))
+    inline def setCarriersVarargs(value: SchemaCarriersCarrier*): Self = StObject.set(x, "carriers", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

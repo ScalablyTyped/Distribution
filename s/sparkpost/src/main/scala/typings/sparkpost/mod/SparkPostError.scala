@@ -27,7 +27,7 @@ object SparkPostError {
     
     inline def setErrors(value: js.Array[ErrorWithDescription | ErrorWithParam]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: (ErrorWithDescription | ErrorWithParam)*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: (ErrorWithDescription | ErrorWithParam)*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setName(value: typings.sparkpost.sparkpostStrings.SparkPostError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

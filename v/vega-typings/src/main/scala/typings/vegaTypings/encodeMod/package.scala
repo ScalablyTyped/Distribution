@@ -1,17 +1,23 @@
 package typings.vegaTypings.encodeMod
 
+import typings.vegaTypings.anon.Exponent
+import typings.vegaTypings.anon.Test
+import typings.vegaTypings.anon.exponentnumberNumericValu
+import typings.vegaTypings.colorMod.Color
+import typings.vegaTypings.configMod.StrokeCap
+import typings.vegaTypings.titleMod.TitleAnchor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AlignValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.Align]
+type AlignValueRef = ScaledValueRef[Align]
 
-type AnchorValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.titleMod.TitleAnchor]
+type AnchorValueRef = ScaledValueRef[TitleAnchor]
 
-type ArbitraryValueRef = typings.vegaTypings.encodeMod.NumericValueRef | typings.vegaTypings.encodeMod.ColorValueRef | typings.vegaTypings.encodeMod.ScaledValueRef[js.Any]
+type ArbitraryValueRef = NumericValueRef | ColorValueRef | ScaledValueRef[Any]
 
-type ArrayValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[js.Array[js.Any]]
+type ArrayValueRef = ScaledValueRef[js.Array[Any]]
 
 /* Rewritten from type alias, can be one of: 
   - scala.Null
@@ -31,9 +37,9 @@ type ArrayValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[js.Array[js.An
   - typings.vegaTypings.vegaTypingsStrings.color
   - typings.vegaTypings.vegaTypingsStrings.luminosity
 */
-type Blend = typings.vegaTypings.encodeMod._Blend | scala.Null
+type Blend = _Blend | Null
 
-type BooleanValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[scala.Boolean]
+type BooleanValueRef = ScaledValueRef[Boolean]
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.colorMod.Color]
@@ -41,7 +47,7 @@ type BooleanValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[scala.Boolea
   - typings.vegaTypings.anon.Count
   - typings.vegaTypings.anon.Color
 */
-type ColorValueRef = typings.vegaTypings.encodeMod._ColorValueRef | typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.colorMod.Color]
+type ColorValueRef = _ColorValueRef | ScaledValueRef[Color]
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
@@ -50,7 +56,7 @@ type ColorValueRef = typings.vegaTypings.encodeMod._ColorValueRef | typings.vega
   - typings.vegaTypings.encodeMod.GroupFieldRef
   - typings.vegaTypings.encodeMod.ParentFieldRef
 */
-type Field = typings.vegaTypings.encodeMod._Field | java.lang.String
+type Field = _Field | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.vegaTypingsStrings.normal
@@ -58,23 +64,23 @@ type Field = typings.vegaTypings.encodeMod._Field | java.lang.String
   - typings.vegaTypings.vegaTypingsStrings.oblique
   - java.lang.String
 */
-type FontStyle = typings.vegaTypings.encodeMod._FontStyle | java.lang.String
+type FontStyle = _FontStyle | String
 
-type FontStyleValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.FontStyle]
+type FontStyleValueRef = ScaledValueRef[FontStyle]
 
-type FontWeightValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.FontWeight]
+type FontWeightValueRef = ScaledValueRef[FontWeight]
 
-type NumericValueRef = (typings.vegaTypings.encodeMod.ScaledValueRef[scala.Double] | js.Object) & typings.vegaTypings.anon.Exponent
+type NumericValueRef = (ScaledValueRef[Double] & Exponent) | exponentnumberNumericValu
 
-type OrientValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.Orient]
+type OrientValueRef = ScaledValueRef[Orient]
 
-type ProductionRule[T] = T | (js.Array[typings.vegaTypings.anon.Test & T])
+type ProductionRule[T] = T | (js.Array[Test & T])
 
-type RuleEncodeEntry = typings.vegaTypings.encodeMod.EncodeEntry
+type RuleEncodeEntry = EncodeEntry
 
-type StringValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[java.lang.String]
+type StringValueRef = ScaledValueRef[String]
 
-type StrokeCapValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.configMod.StrokeCap]
+type StrokeCapValueRef = ScaledValueRef[StrokeCap]
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.vegaTypingsStrings.circle
@@ -91,12 +97,12 @@ type StrokeCapValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.ve
   - typings.vegaTypings.vegaTypingsStrings.stroke
   - java.lang.String
 */
-type SymbolShape = typings.vegaTypings.encodeMod._SymbolShape | java.lang.String
+type SymbolShape = _SymbolShape | String
 
-type SymbolShapeValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.SymbolShape]
+type SymbolShapeValueRef = ScaledValueRef[SymbolShape]
 
-type Text = java.lang.String | js.Array[java.lang.String]
+type Text = String | js.Array[String]
 
-type TextBaselineValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.TextBaseline]
+type TextBaselineValueRef = ScaledValueRef[TextBaseline]
 
-type TextValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.Text]
+type TextValueRef = ScaledValueRef[Text]

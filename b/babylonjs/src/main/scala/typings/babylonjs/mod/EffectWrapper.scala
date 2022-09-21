@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "EffectWrapper")
 @js.native
-class EffectWrapper protected ()
+open class EffectWrapper protected ()
   extends typings.babylonjs.legacyMod.EffectWrapper {
   /**
     * Creates an effect to be renderer

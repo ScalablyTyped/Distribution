@@ -34,7 +34,7 @@ object XActiveDataSink {
     InputStream: XInputStream,
     acquire: () => Unit,
     getInputStream: () => XInputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setInputStream: XInputStream => Unit
   ): XActiveDataSink = {

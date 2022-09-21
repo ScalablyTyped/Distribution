@@ -10,10 +10,10 @@ Flake ID generator yields k-ordered, conflict-free ids in a distributed environm
 | ------------------ | :-------------: |
 | Full name          | flake-idgen |
 | Keywords           | id, unique, twitter, snowflake, flake, distributed |
-| # releases         | 6 |
-| # dependents       | 37 |
-| # downloads        | 252183 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42066.0 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/T-PWK/flake-idgen)

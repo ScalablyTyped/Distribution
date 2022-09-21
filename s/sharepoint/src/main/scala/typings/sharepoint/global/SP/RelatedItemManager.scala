@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.RelatedItemManager")
 @js.native
-class RelatedItemManager ()
+open class RelatedItemManager ()
   extends StObject
      with typings.sharepoint.SP.ClientObject
 object RelatedItemManager {

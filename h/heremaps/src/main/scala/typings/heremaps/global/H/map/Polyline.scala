@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.Polyline")
 @js.native
-class Polyline protected ()
+open class Polyline protected ()
   extends StObject
      with typings.heremaps.H.map.Polyline {
   /**

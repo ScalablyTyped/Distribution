@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Image extends StObject {
   
+  /**
+    * Specifies the background color for the RangeSelector.
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[LocationUrl] = js.undefined
+  /**
+    * Specifies image properties.
+    */
+  var image: js.UndefOr[Location] = js.undefined
   
+  /**
+    * Indicates whether or not the background (background color and/or image) is visible.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Image {
@@ -25,7 +34,7 @@ object Image {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setImage(value: LocationUrl): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Location): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     

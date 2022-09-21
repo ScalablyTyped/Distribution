@@ -18,14 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Encoding extends StObject {
   
-  var encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size
+  var encoding: fill | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | x | y | shape
   
   var order: Unit
 }
 object Encoding {
   
   inline def apply(
-    encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size,
+    encoding: fill | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | x | y | shape,
     order: Unit
   ): Encoding = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
@@ -35,7 +35,7 @@ object Encoding {
   extension [Self <: Encoding](x: Self) {
     
     inline def setEncoding(
-      value: text | fill | stroke | color | shape | typings.vegaLite.vegaLiteStrings.x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size
+      value: fill | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | typings.vegaLite.vegaLiteStrings.x | y | shape
     ): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setOrder(value: Unit): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])

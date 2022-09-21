@@ -86,7 +86,7 @@ object RegressionTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setMethod(value: linear | log | exp | pow | quad | poly): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

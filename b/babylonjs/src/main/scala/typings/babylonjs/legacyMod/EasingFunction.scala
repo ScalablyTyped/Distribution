@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "EasingFunction")
 @js.native
-class EasingFunction ()
+open class EasingFunction ()
   extends typings.babylonjs.indexMod.EasingFunction
 /* static members */
 object EasingFunction {

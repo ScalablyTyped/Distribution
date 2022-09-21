@@ -22,7 +22,7 @@ object LineString {
     
     inline def setCoordinates(value: js.Array[Coordinate]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    inline def setCoordinatesVarargs(value: Coordinate*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: Coordinate*): Self = StObject.set(x, "coordinates", js.Array(value*))
     
     inline def setType(value: typings.osrm.osrmStrings.LineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

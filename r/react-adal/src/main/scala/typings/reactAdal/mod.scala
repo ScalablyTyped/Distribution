@@ -3,7 +3,7 @@ package typings.reactAdal
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
 import typings.reactAdal.anon.ACCESSTOKENKEY
 import typings.reactAdal.anon.ERROR
@@ -34,7 +34,7 @@ object mod {
   
   @JSImport("react-adal", "AuthenticationContext")
   @js.native
-  class AuthenticationContext protected () extends StObject {
+  open class AuthenticationContext protected () extends StObject {
     def this(options: AdalConfig) = this()
     
     var CONSTANTS: Constants = js.native
@@ -102,14 +102,14 @@ object mod {
       * @param message Message to log.
       * @param error Error to log.
       */
-    def error(message: String, error: js.Any): Unit = js.native
+    def error(message: String, error: Any): Unit = js.native
     
     /**
       * Logs Pii messages when Logging Level is set to 0 and window.piiLoggingEnabled is set to true.
       * @param message Message to log.
       * @param error Error to log.
       */
-    def errorPii(message: String, error: js.Any): Unit = js.native
+    def errorPii(message: String, error: Any): Unit = js.native
     
     /**
       * Gets token for the specified resource from the cache.
@@ -179,7 +179,7 @@ object mod {
       * @param message Message to log.
       * @param error Error to log.
       */
-    def log(level: LoggingLevel, message: String, error: js.Any): Unit = js.native
+    def log(level: LoggingLevel, message: String, error: Any): Unit = js.native
     
     /**
       * Redirects user to logout endpoint. After logout, it will redirect to `postLogoutRedirectUri` if added as a property on the config object.
@@ -245,24 +245,24 @@ object mod {
   inline def adalFetch(
     authContext: AuthenticationContext,
     resource: String,
-    fetch: js.Function2[/* input */ String, /* init */ js.Any, js.Promise[js.Any]],
+    fetch: js.Function2[/* input */ String, /* init */ Any, js.Promise[Any]],
     url: String,
-    options: js.Any
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("adalFetch")(authContext.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    options: Any
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("adalFetch")(authContext.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   inline def adalGetToken(authContext: AuthenticationContext, resourceUrl: String): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("adalGetToken")(authContext.asInstanceOf[js.Any], resourceUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
   
   inline def runWithAdal(authContext: AuthenticationContext, app: js.Function0[Unit], doNotLogin: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runWithAdal")(authContext.asInstanceOf[js.Any], app.asInstanceOf[js.Any], doNotLogin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def withAdalLogin(authContext: AuthenticationContext, resource: String): js.Function3[
-    /* wrappedComponent */ (ComponentClass[js.Object, ComponentState]) | StatelessComponent[js.Object], 
+    /* wrappedComponent */ (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object], 
     /* renderLoading */ js.Function0[Element | Null], 
-    /* renderError */ js.Function1[/* error */ js.Any, Element | Null], 
+    /* renderError */ js.Function1[/* error */ Any, Element | Null], 
     ComponentClass[js.Object, ComponentState]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withAdalLogin")(authContext.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-    /* wrappedComponent */ (ComponentClass[js.Object, ComponentState]) | StatelessComponent[js.Object], 
+    /* wrappedComponent */ (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object], 
     /* renderLoading */ js.Function0[Element | Null], 
-    /* renderError */ js.Function1[/* error */ js.Any, Element | Null], 
+    /* renderError */ js.Function1[/* error */ Any, Element | Null], 
     ComponentClass[js.Object, ComponentState]
   ]]
   
@@ -376,13 +376,13 @@ object mod {
       
       inline def setAnonymousEndpointsUndefined: Self = StObject.set(x, "anonymousEndpoints", js.undefined)
       
-      inline def setAnonymousEndpointsVarargs(value: String*): Self = StObject.set(x, "anonymousEndpoints", js.Array(value :_*))
+      inline def setAnonymousEndpointsVarargs(value: String*): Self = StObject.set(x, "anonymousEndpoints", js.Array(value*))
       
       inline def setCacheLocation(value: localStorage | sessionStorage): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
       
       inline def setCacheLocationUndefined: Self = StObject.set(x, "cacheLocation", js.undefined)
       
-      inline def setCallback(value: (/* errorDesc */ String | Null, /* token */ String | Null, /* error */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+      inline def setCallback(value: (/* errorDesc */ String | Null, /* token */ String | Null, /* error */ Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
@@ -546,7 +546,7 @@ object mod {
     /**
       * Object comprising of fields such as id_token/error, session_state, state, e.t.c.
       */
-    var parameters: js.Any
+    var parameters: Any
     
     /**
       * Request type.
@@ -571,7 +571,7 @@ object mod {
   object RequestInfo {
     
     inline def apply(
-      parameters: js.Any,
+      parameters: Any,
       requestType: RequestType,
       stateMatch: Boolean,
       stateResponse: String,
@@ -583,7 +583,7 @@ object mod {
     
     extension [Self <: RequestInfo](x: Self) {
       
-      inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       inline def setRequestType(value: RequestType): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
       
@@ -622,7 +622,7 @@ object mod {
     inline def token: typings.reactAdal.reactAdalStrings.token = "token".asInstanceOf[typings.reactAdal.reactAdalStrings.token]
   }
   
-  type TokenCallback = js.Function3[/* errorDesc */ String | Null, /* token */ String | Null, /* error */ js.Any, Unit]
+  type TokenCallback = js.Function3[/* errorDesc */ String | Null, /* token */ String | Null, /* error */ Any, Unit]
   
   type UserCallback = js.Function2[/* errorDesc */ String | Null, /* user */ UserInfo | Null, Unit]
   
@@ -631,7 +631,7 @@ object mod {
     /**
       * Properties parsed from `id_token`.
       */
-    var profile: js.Any
+    var profile: Any
     
     /**
       * Username assigned from UPN or email.
@@ -640,14 +640,14 @@ object mod {
   }
   object UserInfo {
     
-    inline def apply(profile: js.Any, userName: String): UserInfo = {
+    inline def apply(profile: Any, userName: String): UserInfo = {
       val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserInfo]
     }
     
     extension [Self <: UserInfo](x: Self) {
       
-      inline def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
       inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     }

@@ -10,17 +10,17 @@ object mod {
   
   @JSImport("spin.js", "Spinner")
   @js.native
-  class Spinner () extends StObject {
+  open class Spinner () extends StObject {
     def this(opts: SpinnerOptions) = this()
     
-    /* private */ var animateId: js.Any = js.native
+    /* private */ var animateId: Any = js.native
     
     /**
       * The Spinner's HTML element - can be used to manually insert the spinner into the DOM
       */
     var el: js.UndefOr[HTMLElement] = js.native
     
-    /* private */ var opts: js.Any = js.native
+    /* private */ var opts: Any = js.native
     
     /**
       * Adds the spinner to the given target element. If this instance is already

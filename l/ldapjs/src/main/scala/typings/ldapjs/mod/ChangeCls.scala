@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("ldapjs", "Change")
 @js.native
-class ChangeCls protected ()
+open class ChangeCls protected ()
   extends StObject
      with Change {
   def this(change: Change) = this()
   
   /* CompleteClass */
-  var modification: StringDictionary[js.Any] = js.native
+  var modification: StringDictionary[Any] = js.native
   
   /* CompleteClass */
   var operation: String = js.native

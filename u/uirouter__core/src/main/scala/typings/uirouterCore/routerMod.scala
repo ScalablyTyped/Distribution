@@ -29,7 +29,7 @@ object routerMod {
     * @param locationConfig a [[LocationConfig]] implementation
     * @internal
     */
-  class UIRouter () extends StObject {
+  open class UIRouter () extends StObject {
     def this(locationService: LocationServices) = this()
     def this(locationService: Unit, locationConfig: LocationConfig) = this()
     def this(locationService: LocationServices, locationConfig: LocationConfig) = this()
@@ -37,12 +37,12 @@ object routerMod {
     /** @internal */ @JSName("$id")
     var $id: Double = js.native
     
-    /** @internal */ /* private */ var _disposables: js.Any = js.native
+    /** @internal */ /* private */ var _disposables: Any = js.native
     
     /** @internal */ var _disposed: Boolean = js.native
     
     /** @internal plugin instances are registered here */
-    /* private */ var _plugins: js.Any = js.native
+    /* private */ var _plugins: Any = js.native
     
     /** Registers an object to be notified when the router is disposed */
     def disposable(disposable: Disposable): Unit = js.native
@@ -59,7 +59,7 @@ object routerMod {
       * @param disposable (optional) the disposable to dispose
       */
     def dispose(): Unit = js.native
-    def dispose(disposable: js.Any): Unit = js.native
+    def dispose(disposable: Any): Unit = js.native
     
     /**
       * Returns all registered plugins
@@ -84,15 +84,15 @@ object routerMod {
     /** Add plugin (as javascript constructor function) */
     /** Add plugin (as javascript factory function) */
     def plugin[T /* <: UIRouterPlugin */](
-      plugin: (js.Function2[/* router */ this.type, /* options */ js.UndefOr[js.Any], Unit]) | PluginFactory[T]
+      plugin: (js.Function2[/* router */ this.type, /* options */ js.UndefOr[Any], Unit]) | PluginFactory[T]
     ): T = js.native
     def plugin[T /* <: UIRouterPlugin */](
-      plugin: (js.Function2[/* router */ this.type, /* options */ js.UndefOr[js.Any], Unit]) | PluginFactory[T],
-      options: js.Any
+      plugin: (js.Function2[/* router */ this.type, /* options */ js.UndefOr[Any], Unit]) | PluginFactory[T],
+      options: Any
     ): T = js.native
     /** Add plugin (as ES6 class) */
     def plugin[T /* <: UIRouterPlugin */](plugin: InstantiableT[T]): T = js.native
-    def plugin[T /* <: UIRouterPlugin */](plugin: InstantiableT[T], options: js.Any): T = js.native
+    def plugin[T /* <: UIRouterPlugin */](plugin: InstantiableT[T], options: Any): T = js.native
     
     /** Provides a registry for states, and related registration services */
     var stateRegistry: StateRegistry = js.native
@@ -125,5 +125,5 @@ object routerMod {
     var viewService: ViewService = js.native
   }
   
-  type PluginFactory[T] = js.Function2[/* router */ UIRouter, /* options */ js.UndefOr[js.Any], T]
+  type PluginFactory[T] = js.Function2[/* router */ UIRouter, /* options */ js.UndefOr[Any], T]
 }

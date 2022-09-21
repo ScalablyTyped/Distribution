@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object clampMod {
   
-  @JSImport("@antv/util/lib/clamp", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/clamp", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

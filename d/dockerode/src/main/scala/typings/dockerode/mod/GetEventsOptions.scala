@@ -1,10 +1,13 @@
 package typings.dockerode.mod
 
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GetEventsOptions extends StObject {
+  
+  var abortSignal: js.UndefOr[AbortSignal] = js.undefined
   
   var filters: js.UndefOr[String | typings.dockerode.anon.Container] = js.undefined
   
@@ -20,6 +23,10 @@ object GetEventsOptions {
   }
   
   extension [Self <: GetEventsOptions](x: Self) {
+    
+    inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
+    
+    inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
     
     inline def setFilters(value: String | typings.dockerode.anon.Container): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

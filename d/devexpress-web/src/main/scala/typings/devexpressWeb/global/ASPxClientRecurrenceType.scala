@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRecurrenceType")
 @js.native
-class ASPxClientRecurrenceType ()
+open class ASPxClientRecurrenceType ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRecurrenceType {
   

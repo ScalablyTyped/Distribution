@@ -24,6 +24,6 @@ object ListProvisionedCapacityOutput {
     
     inline def setProvisionedCapacityListUndefined: Self = StObject.set(x, "ProvisionedCapacityList", js.undefined)
     
-    inline def setProvisionedCapacityListVarargs(value: ProvisionedCapacityDescription*): Self = StObject.set(x, "ProvisionedCapacityList", js.Array(value :_*))
+    inline def setProvisionedCapacityListVarargs(value: ProvisionedCapacityDescription*): Self = StObject.set(x, "ProvisionedCapacityList", js.Array(value*))
   }
 }

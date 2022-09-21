@@ -1,12 +1,12 @@
 package typings.nodeStreamZip
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.nodeStreamZip.nodeStreamZipStrings.entry
 import typings.nodeStreamZip.nodeStreamZipStrings.error
 import typings.nodeStreamZip.nodeStreamZipStrings.extract
 import typings.nodeStreamZip.nodeStreamZipStrings.ready
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,17 +15,59 @@ object mod {
   
   @JSImport("node-stream-zip", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with StreamZip {
     def this(config: StreamZipOptions) = this()
   }
+  @JSImport("node-stream-zip", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("node-stream-zip", "StreamZipAsync")
+  @js.native
+  open class StreamZipAsync protected () extends StObject {
+    def this(config: StreamZipOptions) = this()
+    
+    def close(): js.Promise[Unit] = js.native
+    
+    var comment: js.Promise[String] = js.native
+    
+    def entries(): js.Promise[StringDictionary[ZipEntry]] = js.native
+    
+    var entriesCount: js.Promise[Double] = js.native
+    
+    def entry(name: String): js.Promise[js.UndefOr[ZipEntry]] = js.native
+    
+    def entryData(entry: String): js.Promise[Buffer] = js.native
+    def entryData(entry: ZipEntry): js.Promise[Buffer] = js.native
+    
+    def extract(entry: String, outPath: String): js.Promise[js.UndefOr[Double]] = js.native
+    def extract(entry: Null, outPath: String): js.Promise[js.UndefOr[Double]] = js.native
+    def extract(entry: ZipEntry, outPath: String): js.Promise[js.UndefOr[Double]] = js.native
+    
+    @JSName("on")
+    def on_entry(event: entry, handler: js.Function1[/* entry */ ZipEntry, Unit]): Unit = js.native
+    @JSName("on")
+    def on_extract(event: extract, handler: js.Function2[/* entry */ ZipEntry, /* outPath */ String, Unit]): Unit = js.native
+    
+    def stream(entry: String): js.Promise[ReadableStream[Any]] = js.native
+    def stream(entry: ZipEntry): js.Promise[ReadableStream[Any]] = js.native
+  }
+  
+  /* static member */
+  @JSImport("node-stream-zip", "async")
+  @js.native
+  def async: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof StreamZip.StreamZipAsync */ Any = js.native
+  inline def async_=(
+    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof StreamZip.StreamZipAsync */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("async")(x.asInstanceOf[js.Any])
   
   @js.native
   trait StreamZip extends StObject {
     
     def close(): Unit = js.native
-    def close(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def close(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /**
       * archive comment
@@ -44,14 +86,26 @@ object mod {
     def entryDataSync(entry: String): Buffer = js.native
     def entryDataSync(entry: ZipEntry): Buffer = js.native
     
-    def extract(entry: String, outPath: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
-    def extract(entry: Null, outPath: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
-    def extract(entry: ZipEntry, outPath: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def extract(
+      entry: String,
+      outPath: String,
+      callback: js.Function2[/* err */ js.UndefOr[Any], /* res */ js.UndefOr[Double], Unit]
+    ): Unit = js.native
+    def extract(
+      entry: Null,
+      outPath: String,
+      callback: js.Function2[/* err */ js.UndefOr[Any], /* res */ js.UndefOr[Double], Unit]
+    ): Unit = js.native
+    def extract(
+      entry: ZipEntry,
+      outPath: String,
+      callback: js.Function2[/* err */ js.UndefOr[Any], /* res */ js.UndefOr[Double], Unit]
+    ): Unit = js.native
     
     @JSName("on")
     def on_entry(event: entry, handler: js.Function1[/* entry */ ZipEntry, Unit]): Unit = js.native
     @JSName("on")
-    def on_error(event: error, handler: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def on_error(event: error, handler: js.Function1[/* error */ Any, Unit]): Unit = js.native
     @JSName("on")
     def on_extract(event: extract, handler: js.Function2[/* entry */ ZipEntry, /* outPath */ String, Unit]): Unit = js.native
     @JSName("on")
@@ -59,22 +113,22 @@ object mod {
     
     def openEntry(
       entry: String,
-      callback: js.Function2[/* err */ js.Any | Null, /* entry */ js.UndefOr[ZipEntry], Unit],
+      callback: js.Function2[/* err */ Any | Null, /* entry */ js.UndefOr[ZipEntry], Unit],
       sync: Boolean
     ): Unit = js.native
     def openEntry(
       entry: ZipEntry,
-      callback: js.Function2[/* err */ js.Any | Null, /* entry */ js.UndefOr[ZipEntry], Unit],
+      callback: js.Function2[/* err */ Any | Null, /* entry */ js.UndefOr[ZipEntry], Unit],
       sync: Boolean
     ): Unit = js.native
     
     def stream(
       entry: String,
-      callback: js.Function2[/* err */ js.Any | Null, /* stream */ js.UndefOr[ReadableStream], Unit]
+      callback: js.Function2[/* err */ Any | Null, /* stream */ js.UndefOr[ReadableStream[Any]], Unit]
     ): Unit = js.native
     def stream(
       entry: ZipEntry,
-      callback: js.Function2[/* err */ js.Any | Null, /* stream */ js.UndefOr[ReadableStream], Unit]
+      callback: js.Function2[/* err */ Any | Null, /* stream */ js.UndefOr[ReadableStream[Any]], Unit]
     ): Unit = js.native
   }
   
@@ -97,6 +151,12 @@ object mod {
       * @default undefined
       */
     var file: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Encoding used to decode file names
+      * @default UTF8
+      */
+    var nameEncoding: js.UndefOr[String] = js.undefined
     
     /**
       * By default, entry name is checked for malicious characters, like ../ or c:\123,
@@ -132,6 +192,10 @@ object mod {
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
       inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      
+      inline def setNameEncoding(value: String): Self = StObject.set(x, "nameEncoding", value.asInstanceOf[js.Any])
+      
+      inline def setNameEncodingUndefined: Self = StObject.set(x, "nameEncoding", js.undefined)
       
       inline def setSkipEntryNameValidation(value: Boolean): Self = StObject.set(x, "skipEntryNameValidation", value.asInstanceOf[js.Any])
       

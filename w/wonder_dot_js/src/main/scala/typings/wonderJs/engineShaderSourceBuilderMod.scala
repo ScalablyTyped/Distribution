@@ -9,19 +9,19 @@ object engineShaderSourceBuilderMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/shader/sourceBuilder/EngineShaderSourceBuilder", "EngineShaderSourceBuilder")
   @js.native
-  class EngineShaderSourceBuilder () extends ShaderSourceBuilder {
+  open class EngineShaderSourceBuilder () extends ShaderSourceBuilder {
     
     def build(
-      libs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<EngineShaderLib> */ js.Any
+      libs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<EngineShaderLib> */ Any
     ): Unit = js.native
     
     var fsSourceBody: String = js.native
     
     var fsSourceDefine: String = js.native
     
-    var fsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<SourceDefine> */ js.Any = js.native
+    var fsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<SourceDefine> */ Any = js.native
     
-    var fsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ js.Any = js.native
+    var fsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ Any = js.native
     
     var fsSourceFuncDeclare: String = js.native
     
@@ -35,9 +35,9 @@ object engineShaderSourceBuilderMod {
     
     var vsSourceDefine: String = js.native
     
-    var vsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<SourceDefine> */ js.Any = js.native
+    var vsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<SourceDefine> */ Any = js.native
     
-    var vsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ js.Any = js.native
+    var vsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ Any = js.native
     
     var vsSourceFuncDeclare: String = js.native
     

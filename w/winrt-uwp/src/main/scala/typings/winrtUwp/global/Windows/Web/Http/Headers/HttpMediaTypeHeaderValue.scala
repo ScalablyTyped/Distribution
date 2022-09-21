@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents the value of the Content-Type HTTP header on the HTTP content in a request or a response. */
 @JSGlobal("Windows.Web.Http.Headers.HttpMediaTypeHeaderValue")
 @js.native
-class HttpMediaTypeHeaderValue protected ()
+open class HttpMediaTypeHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpMediaTypeHeaderValue {
   /**

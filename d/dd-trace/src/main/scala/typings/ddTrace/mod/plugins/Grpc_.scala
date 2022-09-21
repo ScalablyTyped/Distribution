@@ -16,7 +16,7 @@ trait Grpc_
     * `variables => variables` would record all variables.
     */
   var metadata: js.UndefOr[
-    js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[js.Any]])
+    js.Array[String] | (js.Function1[/* variables */ StringDictionary[Any], StringDictionary[Any]])
   ] = js.undefined
 }
 object Grpc_ {
@@ -29,13 +29,13 @@ object Grpc_ {
   extension [Self <: Grpc_](x: Self) {
     
     inline def setMetadata(
-      value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[js.Any]])
+      value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[Any], StringDictionary[Any]])
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    inline def setMetadataFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "metadata", js.Any.fromFunction1(value))
+    inline def setMetadataFunction1(value: /* variables */ StringDictionary[Any] => StringDictionary[Any]): Self = StObject.set(x, "metadata", js.Any.fromFunction1(value))
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value*))
   }
 }

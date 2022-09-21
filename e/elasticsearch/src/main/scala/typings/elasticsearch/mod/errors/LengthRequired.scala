@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.LengthRequired")
 @js.native
-class LengthRequired () extends Abstract
+open class LengthRequired () extends Abstract

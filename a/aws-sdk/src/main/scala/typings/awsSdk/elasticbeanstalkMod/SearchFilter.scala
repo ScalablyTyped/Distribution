@@ -42,6 +42,6 @@ object SearchFilter {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: SearchFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SearchFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

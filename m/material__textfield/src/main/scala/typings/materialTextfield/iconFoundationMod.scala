@@ -13,17 +13,21 @@ object iconFoundationMod {
   
   @JSImport("@material/textfield/icon/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCTextFieldIconFoundation {
+  open class default () extends MDCTextFieldIconFoundation {
     def this(adapter: PartialMDCTextFieldIconAd) = this()
   }
   
   @JSImport("@material/textfield/icon/foundation", "MDCTextFieldIconFoundation")
   @js.native
-  class MDCTextFieldIconFoundation () extends MDCFoundation[MDCTextFieldIconAdapter] {
+  open class MDCTextFieldIconFoundation () extends MDCFoundation[MDCTextFieldIconAdapter] {
     def this(adapter: PartialMDCTextFieldIconAd) = this()
     
     def handleInteraction(evt: KeyboardEvent): Unit = js.native
     def handleInteraction(evt: MouseEvent): Unit = js.native
+    
+    /* private */ val interactionHandler: Any = js.native
+    
+    /* private */ var savedTabIndex: Any = js.native
     
     def setAriaLabel(label: String): Unit = js.native
     

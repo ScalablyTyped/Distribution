@@ -23,6 +23,13 @@ trait BookmarksVisibleElements
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
     */
   var thumbnail: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * _Since 4.22_ Indicates whether the time (`h:m:s`) is displayed alongside the date if the bookmark has a [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#timeExtent) defined.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
+    */
+  var time: js.UndefOr[Boolean] = js.undefined
 }
 object BookmarksVisibleElements {
   
@@ -44,5 +51,9 @@ object BookmarksVisibleElements {
     inline def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    
+    inline def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

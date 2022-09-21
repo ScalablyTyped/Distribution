@@ -11,11 +11,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A scoped collection of custom XML parts.
   A scoped collection is the result of some operation (e.g., filtering by namespace).
   A scoped collection cannot be scoped any further.
   *
+  * @remarks
   * [Api set: ExcelApi 1.5]
   */
 @js.native
@@ -30,6 +30,7 @@ trait CustomXmlPartScopedCollection
   /**
     * Gets the number of CustomXML parts in this collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -37,6 +38,7 @@ trait CustomXmlPartScopedCollection
   /**
     * Gets a custom XML part based on its ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     *
     * @param id ID of the object to be retrieved.
@@ -45,8 +47,10 @@ trait CustomXmlPartScopedCollection
   
   /**
     * Gets a custom XML part based on its ID.
-    If the CustomXmlPart does not exist, the return object's isNull property will be true.
+    If the `CustomXmlPart` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     *
     * @param id ID of the object to be retrieved.
@@ -57,14 +61,16 @@ trait CustomXmlPartScopedCollection
     * If the collection contains exactly one item, this method returns it.
     Otherwise, this method produces an error.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   def getOnlyItem(): CustomXmlPart = js.native
   
   /**
     * If the collection contains exactly one item, this method returns it.
-    Otherwise, this method returns Null.
+    Otherwise, this method returns `null`.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   def getOnlyItemOrNullObject(): CustomXmlPart = js.native

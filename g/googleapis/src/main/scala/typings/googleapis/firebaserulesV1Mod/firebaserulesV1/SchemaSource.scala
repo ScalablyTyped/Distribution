@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * `Source` is one or more `File` messages comprising a logical set of rules.
-  */
 trait SchemaSource extends StObject {
   
   /**
-    * `File` set constituting the `Source` bundle.
+    * Required. `File` set constituting the `Source` bundle.
     */
   var files: js.UndefOr[js.Array[SchemaFile]] = js.undefined
 }
@@ -27,6 +24,6 @@ object SchemaSource {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: SchemaFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: SchemaFile*): Self = StObject.set(x, "files", js.Array(value*))
   }
 }

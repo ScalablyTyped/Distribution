@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-overlays" : "4.1.1"
+      "react-overlays" : "5.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-overlays" : "4.1.1"
+      "react-overlays" : "5.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,5 +1,6 @@
 package typings.fundamentalReact.anon
 
+import typings.react.mod.ReactNode
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WeakValidationMapSwitchPr extends StObject {
   
   var checked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  
+  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
   
   var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -20,13 +23,13 @@ trait WeakValidationMapSwitchPr extends StObject {
   
   var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var inputProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var inputProps: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
   
   var internalLabels: js.UndefOr[Validator[js.UndefOr[Checked | Null]]] = js.undefined
   
-  var labelProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var labelProps: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
   
-  var onChange: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]] = js.undefined
+  var onChange: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ Any, Any]) | Null]]] = js.undefined
   
   var semantic: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
 }
@@ -42,6 +45,10 @@ object WeakValidationMapSwitchPr {
     inline def setChecked(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    
+    inline def setChildren(value: Validator[js.UndefOr[Null | ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -63,7 +70,7 @@ object WeakValidationMapSwitchPr {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInputProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+    inline def setInputProps(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
     
     inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
     
@@ -71,11 +78,11 @@ object WeakValidationMapSwitchPr {
     
     inline def setInternalLabelsUndefined: Self = StObject.set(x, "internalLabels", js.undefined)
     
-    inline def setLabelProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
+    inline def setLabelProps(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
     
     inline def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
     
-    inline def setOnChange(value: Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: Validator[js.UndefOr[(js.Function1[/* repeated */ Any, Any]) | Null]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

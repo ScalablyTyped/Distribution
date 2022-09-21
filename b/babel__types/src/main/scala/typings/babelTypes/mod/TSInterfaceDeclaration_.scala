@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with Declaration
-     with Statement {
+     with Statement
+     with TypeScript {
   
   var body: TSInterfaceBody_
   
@@ -46,7 +47,7 @@ object TSInterfaceDeclaration_ {
     
     inline def setExtendsNull: Self = StObject.set(x, "extends", null)
     
-    inline def setExtendsVarargs(value: TSExpressionWithTypeArguments_ *): Self = StObject.set(x, "extends", js.Array(value :_*))
+    inline def setExtendsVarargs(value: TSExpressionWithTypeArguments_ *): Self = StObject.set(x, "extends", js.Array(value*))
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

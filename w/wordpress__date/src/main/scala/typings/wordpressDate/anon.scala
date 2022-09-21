@@ -122,9 +122,9 @@ object anon {
       
       inline def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
       
-      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value*))
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setRelative(value: Future): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -132,9 +132,9 @@ object anon {
       
       inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
       
-      inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+      inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value*))
       
-      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value*))
     }
   }
   

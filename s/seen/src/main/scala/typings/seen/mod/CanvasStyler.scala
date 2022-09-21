@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "CanvasStyler")
 @js.native
-class CanvasStyler protected () extends StObject {
+open class CanvasStyler protected () extends StObject {
   def this(ctx: CanvasRenderingContext2D) = this()
   
   def draw(): this.type = js.native

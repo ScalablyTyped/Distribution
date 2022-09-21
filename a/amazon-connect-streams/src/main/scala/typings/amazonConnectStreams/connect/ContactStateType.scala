@@ -65,4 +65,10 @@ object ContactStateType extends StObject {
   sealed trait PENDING
     extends StObject
        with ContactStateType
+  
+  /** Indicates the contact is rejected */
+  @js.native
+  sealed trait REJECTED
+    extends StObject
+       with ContactStateType
 }

@@ -33,6 +33,6 @@ object GeographicTransformation {
     
     inline def setSteps(value: js.Array[GeographicTransformationStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: GeographicTransformationStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: GeographicTransformationStep*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

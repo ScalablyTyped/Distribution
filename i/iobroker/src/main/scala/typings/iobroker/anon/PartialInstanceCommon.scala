@@ -1,6 +1,9 @@
 package typings.iobroker.anon
 
 import typings.iobroker.iobrokerBooleans.`true`
+import typings.iobroker.iobrokerNumbers.`1`
+import typings.iobroker.iobrokerNumbers.`2`
+import typings.iobroker.iobrokerNumbers.`3`
 import typings.iobroker.objectsMod.global.ioBroker.InstanceMode
 import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
 import org.scalablytyped.runtime.StObject
@@ -27,6 +30,8 @@ trait PartialInstanceCommon extends StObject {
   var name: js.UndefOr[StringOrTranslated] = js.undefined
   
   var role: js.UndefOr[String] = js.undefined
+  
+  var tier: js.UndefOr[`1` | `2` | `3`] = js.undefined
 }
 object PartialInstanceCommon {
   
@@ -70,5 +75,9 @@ object PartialInstanceCommon {
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    
+    inline def setTier(value: `1` | `2` | `3`): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

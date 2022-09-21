@@ -18,7 +18,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("ko.bindingProvider")
     @js.native
-    class bindingProvider ()
+    open class bindingProvider ()
       extends StObject
          with KnockoutBindingProvider {
       
@@ -35,14 +35,14 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("ko.nativeTemplateEngine")
     @js.native
-    class nativeTemplateEngine ()
+    open class nativeTemplateEngine ()
       extends StObject
          with KnockoutNativeTemplateEngine
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("ko.subscribable")
     @js.native
-    class subscribable[T] ()
+    open class subscribable[T] ()
       extends StObject
          with KnockoutSubscribable[T]
     
@@ -52,7 +52,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("ko.templateEngine")
     @js.native
-    class templateEngine ()
+    open class templateEngine ()
       extends StObject
          with KnockoutTemplateEngine
     

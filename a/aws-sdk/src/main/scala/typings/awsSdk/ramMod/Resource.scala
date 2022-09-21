@@ -7,32 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Resource extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the resource.
+    * The Amazon Resoure Name (ARN) of the resource.
     */
   var arn: js.UndefOr[String] = js.undefined
   
   /**
-    * The time when the resource was associated with the resource share.
+    * The date and time when the resource was associated with the resource share.
     */
-  var creationTime: js.UndefOr[DateTime] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The time when the association was last updated.
+    * The date an time when the association was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
+  var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ARN of the resource group. This value is returned only if the resource is a resource group.
+    * The Amazon Resoure Name (ARN) of the resource group. This value is available only if the resource is part of a resource group.
     */
   var resourceGroupArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the resource share.
+    * Specifies the scope of visibility of this resource:    REGIONAL – The resource can be accessed only by using requests that target the Amazon Web Services Region in which the resource exists.    GLOBAL – The resource can be accessed from any Amazon Web Services Region.  
+    */
+  var resourceRegionScope: js.UndefOr[ResourceRegionScope] = js.undefined
+  
+  /**
+    * The Amazon Resoure Name (ARN) of the resource share this resource is associated with.
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the resource.
+    * The current status of the resource.
     */
   var status: js.UndefOr[ResourceStatus] = js.undefined
   
@@ -42,7 +47,7 @@ trait Resource extends StObject {
   var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * The resource type.
+    * The resource type. This takes the form of: service-code:resource-code 
     */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -59,17 +64,21 @@ object Resource {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    inline def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
     inline def setResourceGroupArn(value: String): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
     
     inline def setResourceGroupArnUndefined: Self = StObject.set(x, "resourceGroupArn", js.undefined)
+    
+    inline def setResourceRegionScope(value: ResourceRegionScope): Self = StObject.set(x, "resourceRegionScope", value.asInstanceOf[js.Any])
+    
+    inline def setResourceRegionScopeUndefined: Self = StObject.set(x, "resourceRegionScope", js.undefined)
     
     inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
     

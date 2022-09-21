@@ -1,7 +1,6 @@
 package typings.vsoNodeApi
 
-import typings.node.NodeJS.ReadableStream
-import typings.std.Date
+import typings.std.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
 import typings.vsoNodeApi.coreInterfacesMod.TeamContext
 import typings.vsoNodeApi.testInterfacesMod.AggregatedDataForResultTrend
@@ -75,7 +74,7 @@ object testApiMod {
   
   @JSImport("vso-node-api/TestApi", "TestApi")
   @js.native
-  class TestApi protected () extends ITestApi {
+  open class TestApi protected () extends ITestApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -407,9 +406,9 @@ object testApiMod {
     def getTestIterations(project: String, runId: Double, testCaseResultId: Double): js.Promise[js.Array[TestIterationDetailsModel]] = js.native
     def getTestIterations(project: String, runId: Double, testCaseResultId: Double, includeActionResults: Boolean): js.Promise[js.Array[TestIterationDetailsModel]] = js.native
     
-    def getTestResultAttachmentContent(project: String, runId: Double, testCaseResultId: Double, attachmentId: Double): js.Promise[ReadableStream] = js.native
+    def getTestResultAttachmentContent(project: String, runId: Double, testCaseResultId: Double, attachmentId: Double): js.Promise[ReadableStream[Any]] = js.native
     
-    def getTestResultAttachmentZip(project: String, runId: Double, testCaseResultId: Double, attachmentId: Double): js.Promise[ReadableStream] = js.native
+    def getTestResultAttachmentZip(project: String, runId: Double, testCaseResultId: Double, attachmentId: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getTestResultAttachments(project: String, runId: Double, testCaseResultId: Double): js.Promise[js.Array[TestAttachment]] = js.native
     
@@ -673,9 +672,9 @@ object testApiMod {
     
     def getTestResultsByQuery(query: TestResultsQuery, project: String): js.Promise[TestResultsQuery] = js.native
     
-    def getTestRunAttachmentContent(project: String, runId: Double, attachmentId: Double): js.Promise[ReadableStream] = js.native
+    def getTestRunAttachmentContent(project: String, runId: Double, attachmentId: Double): js.Promise[ReadableStream[Any]] = js.native
     
-    def getTestRunAttachmentZip(project: String, runId: Double, attachmentId: Double): js.Promise[ReadableStream] = js.native
+    def getTestRunAttachmentZip(project: String, runId: Double, attachmentId: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getTestRunAttachments(project: String, runId: Double): js.Promise[js.Array[TestAttachment]] = js.native
     
@@ -976,6 +975,39 @@ object testApiMod {
       workItemCategory: String,
       automatedTestName: String,
       testCaseId: Double,
+      maxCompleteDate: js.Date
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Double,
+      maxCompleteDate: js.Date,
+      days: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Double,
+      maxCompleteDate: js.Date,
+      days: Double,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Double,
+      maxCompleteDate: js.Date,
+      days: Unit,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Double,
       maxCompleteDate: Unit,
       days: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
@@ -1001,23 +1033,23 @@ object testApiMod {
       project: String,
       workItemCategory: String,
       automatedTestName: String,
-      testCaseId: Double,
-      maxCompleteDate: Date
+      testCaseId: Unit,
+      maxCompleteDate: js.Date
     ): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(
       project: String,
       workItemCategory: String,
       automatedTestName: String,
-      testCaseId: Double,
-      maxCompleteDate: Date,
+      testCaseId: Unit,
+      maxCompleteDate: js.Date,
       days: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(
       project: String,
       workItemCategory: String,
       automatedTestName: String,
-      testCaseId: Double,
-      maxCompleteDate: Date,
+      testCaseId: Unit,
+      maxCompleteDate: js.Date,
       days: Double,
       workItemCount: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
@@ -1025,8 +1057,8 @@ object testApiMod {
       project: String,
       workItemCategory: String,
       automatedTestName: String,
-      testCaseId: Double,
-      maxCompleteDate: Date,
+      testCaseId: Unit,
+      maxCompleteDate: js.Date,
       days: Unit,
       workItemCount: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
@@ -1053,39 +1085,6 @@ object testApiMod {
       automatedTestName: String,
       testCaseId: Unit,
       maxCompleteDate: Unit,
-      days: Unit,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: Unit,
-      maxCompleteDate: Date
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: Unit,
-      maxCompleteDate: Date,
-      days: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: Unit,
-      maxCompleteDate: Date,
-      days: Double,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: Unit,
-      maxCompleteDate: Date,
       days: Unit,
       workItemCount: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
@@ -1095,6 +1094,39 @@ object testApiMod {
       workItemCategory: String,
       automatedTestName: Unit,
       testCaseId: Double,
+      maxCompleteDate: js.Date
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: js.Date,
+      days: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: js.Date,
+      days: Double,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: js.Date,
+      days: Unit,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
       maxCompleteDate: Unit,
       days: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
@@ -1120,23 +1152,23 @@ object testApiMod {
       project: String,
       workItemCategory: String,
       automatedTestName: Unit,
-      testCaseId: Double,
-      maxCompleteDate: Date
+      testCaseId: Unit,
+      maxCompleteDate: js.Date
     ): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(
       project: String,
       workItemCategory: String,
       automatedTestName: Unit,
-      testCaseId: Double,
-      maxCompleteDate: Date,
+      testCaseId: Unit,
+      maxCompleteDate: js.Date,
       days: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(
       project: String,
       workItemCategory: String,
       automatedTestName: Unit,
-      testCaseId: Double,
-      maxCompleteDate: Date,
+      testCaseId: Unit,
+      maxCompleteDate: js.Date,
       days: Double,
       workItemCount: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
@@ -1144,8 +1176,8 @@ object testApiMod {
       project: String,
       workItemCategory: String,
       automatedTestName: Unit,
-      testCaseId: Double,
-      maxCompleteDate: Date,
+      testCaseId: Unit,
+      maxCompleteDate: js.Date,
       days: Unit,
       workItemCount: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
@@ -1172,39 +1204,6 @@ object testApiMod {
       automatedTestName: Unit,
       testCaseId: Unit,
       maxCompleteDate: Unit,
-      days: Unit,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: Unit,
-      testCaseId: Unit,
-      maxCompleteDate: Date
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: Unit,
-      testCaseId: Unit,
-      maxCompleteDate: Date,
-      days: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: Unit,
-      testCaseId: Unit,
-      maxCompleteDate: Date,
-      days: Double,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: Unit,
-      testCaseId: Unit,
-      maxCompleteDate: Date,
       days: Unit,
       workItemCount: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
@@ -1295,8 +1294,8 @@ object testApiMod {
     
     def queryTestRuns(
       project: String,
-      minLastUpdatedDate: Date,
-      maxLastUpdatedDate: Date,
+      minLastUpdatedDate: js.Date,
+      maxLastUpdatedDate: js.Date,
       state: js.UndefOr[TestRunState],
       planIds: js.UndefOr[js.Array[Double]],
       isAutomated: js.UndefOr[Boolean],

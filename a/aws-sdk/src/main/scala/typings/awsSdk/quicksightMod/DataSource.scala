@@ -19,10 +19,10 @@ trait DataSource extends StObject {
   /**
     * The time that this data source was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ID of the data source. This ID is unique per AWS Region for each AWS account.
+    * The ID of the data source. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
   var DataSourceId: js.UndefOr[ResourceId] = js.undefined
   
@@ -39,7 +39,7 @@ trait DataSource extends StObject {
   /**
     * The last time that this data source was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A display name for the data source.
@@ -47,7 +47,7 @@ trait DataSource extends StObject {
   var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * Secure Socket Layer (SSL) properties that apply when QuickSight connects to your underlying source.
+    * Secure Socket Layer (SSL) properties that apply when Amazon QuickSight connects to your underlying source.
     */
   var SslProperties: js.UndefOr[typings.awsSdk.quicksightMod.SslProperties] = js.undefined
   
@@ -62,7 +62,7 @@ trait DataSource extends StObject {
   var Type: js.UndefOr[DataSourceType] = js.undefined
   
   /**
-    * The VPC connection information. You need to use this parameter only when you want QuickSight to use a VPC connection when connecting to your underlying source.
+    * The VPC connection information. You need to use this parameter only when you want Amazon QuickSight to use a VPC connection when connecting to your underlying source.
     */
   var VpcConnectionProperties: js.UndefOr[typings.awsSdk.quicksightMod.VpcConnectionProperties] = js.undefined
 }
@@ -79,13 +79,13 @@ object DataSource {
     
     inline def setAlternateDataSourceParametersUndefined: Self = StObject.set(x, "AlternateDataSourceParameters", js.undefined)
     
-    inline def setAlternateDataSourceParametersVarargs(value: DataSourceParameters*): Self = StObject.set(x, "AlternateDataSourceParameters", js.Array(value :_*))
+    inline def setAlternateDataSourceParametersVarargs(value: DataSourceParameters*): Self = StObject.set(x, "AlternateDataSourceParameters", js.Array(value*))
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -101,7 +101,7 @@ object DataSource {
     
     inline def setErrorInfoUndefined: Self = StObject.set(x, "ErrorInfo", js.undefined)
     
-    inline def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     

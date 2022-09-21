@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
+import typings.devtoolsProtocol.devtoolsProtocolStrings.activated_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.installing
   - typings.devtoolsProtocol.devtoolsProtocolStrings.installed
   - typings.devtoolsProtocol.devtoolsProtocolStrings.activating
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.activated
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.activated_
   - typings.devtoolsProtocol.devtoolsProtocolStrings.redundant
 */
 trait ServiceWorkerVersionStatus extends StObject
 object ServiceWorkerVersionStatus {
   
-  inline def activated: typings.devtoolsProtocol.devtoolsProtocolStrings.activated = "activated".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.activated]
+  inline def activated: activated_ = "activated".asInstanceOf[activated_]
   
   inline def activating: typings.devtoolsProtocol.devtoolsProtocolStrings.activating = "activating".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.activating]
   

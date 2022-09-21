@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/form-field" : "8.0.0"
+      "@material/form-field" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/form-field" : "8.0.0"
+      "@material/form-field" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

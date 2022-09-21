@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Song ============================================================================================
 trait Song extends StObject {
   
-  var album: js.UndefOr[js.Any] = js.undefined
+  var album: js.UndefOr[Any] = js.undefined
   
   var annotation_count: Double
   
   var api_path: String
   
-  var apple_music_id: js.UndefOr[js.Any] = js.undefined
+  var apple_music_id: js.UndefOr[Any] = js.undefined
   
   var apple_music_player_url: String
   
   var current_user_metadata: Excludedpermissions
   
-  var custom_performances: js.Array[js.Any]
+  var custom_performances: js.Array[Any]
   
   var description: Description
   
@@ -30,7 +30,7 @@ trait Song extends StObject {
   
   var embed_content: String
   
-  var featured_artists: js.Array[js.Any]
+  var featured_artists: js.Array[Any]
   
   var featured_video: Boolean
   
@@ -44,7 +44,7 @@ trait Song extends StObject {
   
   var lyrics: String
   
-  var lyrics_marked_complete_by: js.UndefOr[js.Any] = js.undefined
+  var lyrics_marked_complete_by: js.UndefOr[Any] = js.undefined
   
   var lyrics_owner_id: Double
   
@@ -58,9 +58,9 @@ trait Song extends StObject {
   
   var producer_artists: js.Array[ArtistBrief]
   
-  var pyongs_count: js.UndefOr[js.Any] = js.undefined
+  var pyongs_count: js.UndefOr[Any] = js.undefined
   
-  var recording_location: js.UndefOr[js.Any] = js.undefined
+  var recording_location: js.UndefOr[Any] = js.undefined
   
   var release_date: String
   
@@ -78,11 +78,11 @@ trait Song extends StObject {
   
   var url: String
   
-  var verified_annotations_by: js.Array[js.Any]
+  var verified_annotations_by: js.Array[Any]
   
-  var verified_contributors: js.Array[js.Any]
+  var verified_contributors: js.Array[Any]
   
-  var verified_lyrics_by: js.Array[js.Any]
+  var verified_lyrics_by: js.Array[Any]
   
   var writer_artists: js.Array[ArtistBrief]
 }
@@ -93,11 +93,11 @@ object Song {
     api_path: String,
     apple_music_player_url: String,
     current_user_metadata: Excludedpermissions,
-    custom_performances: js.Array[js.Any],
+    custom_performances: js.Array[Any],
     description: Description,
     description_annotation: DescriptionAnnotation,
     embed_content: String,
-    featured_artists: js.Array[js.Any],
+    featured_artists: js.Array[Any],
     featured_video: Boolean,
     full_title: String,
     header_image_thumbnail_url: String,
@@ -118,9 +118,9 @@ object Song {
     title: String,
     title_with_featured: String,
     url: String,
-    verified_annotations_by: js.Array[js.Any],
-    verified_contributors: js.Array[js.Any],
-    verified_lyrics_by: js.Array[js.Any],
+    verified_annotations_by: js.Array[Any],
+    verified_contributors: js.Array[Any],
+    verified_lyrics_by: js.Array[Any],
     writer_artists: js.Array[ArtistBrief]
   ): Song = {
     val __obj = js.Dynamic.literal(annotation_count = annotation_count.asInstanceOf[js.Any], api_path = api_path.asInstanceOf[js.Any], apple_music_player_url = apple_music_player_url.asInstanceOf[js.Any], current_user_metadata = current_user_metadata.asInstanceOf[js.Any], custom_performances = custom_performances.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], description_annotation = description_annotation.asInstanceOf[js.Any], embed_content = embed_content.asInstanceOf[js.Any], featured_artists = featured_artists.asInstanceOf[js.Any], featured_video = featured_video.asInstanceOf[js.Any], full_title = full_title.asInstanceOf[js.Any], header_image_thumbnail_url = header_image_thumbnail_url.asInstanceOf[js.Any], header_image_url = header_image_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lyrics = lyrics.asInstanceOf[js.Any], lyrics_owner_id = lyrics_owner_id.asInstanceOf[js.Any], lyrics_state = lyrics_state.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], primary_artist = primary_artist.asInstanceOf[js.Any], producer_artists = producer_artists.asInstanceOf[js.Any], release_date = release_date.asInstanceOf[js.Any], song_art_image_thumbnail_url = song_art_image_thumbnail_url.asInstanceOf[js.Any], song_art_image_url = song_art_image_url.asInstanceOf[js.Any], song_relationships = song_relationships.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], title_with_featured = title_with_featured.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified_annotations_by = verified_annotations_by.asInstanceOf[js.Any], verified_contributors = verified_contributors.asInstanceOf[js.Any], verified_lyrics_by = verified_lyrics_by.asInstanceOf[js.Any], writer_artists = writer_artists.asInstanceOf[js.Any])
@@ -129,7 +129,7 @@ object Song {
   
   extension [Self <: Song](x: Self) {
     
-    inline def setAlbum(value: js.Any): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    inline def setAlbum(value: Any): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     
     inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
     
@@ -137,7 +137,7 @@ object Song {
     
     inline def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
-    inline def setApple_music_id(value: js.Any): Self = StObject.set(x, "apple_music_id", value.asInstanceOf[js.Any])
+    inline def setApple_music_id(value: Any): Self = StObject.set(x, "apple_music_id", value.asInstanceOf[js.Any])
     
     inline def setApple_music_idUndefined: Self = StObject.set(x, "apple_music_id", js.undefined)
     
@@ -145,9 +145,9 @@ object Song {
     
     inline def setCurrent_user_metadata(value: Excludedpermissions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
-    inline def setCustom_performances(value: js.Array[js.Any]): Self = StObject.set(x, "custom_performances", value.asInstanceOf[js.Any])
+    inline def setCustom_performances(value: js.Array[Any]): Self = StObject.set(x, "custom_performances", value.asInstanceOf[js.Any])
     
-    inline def setCustom_performancesVarargs(value: js.Any*): Self = StObject.set(x, "custom_performances", js.Array(value :_*))
+    inline def setCustom_performancesVarargs(value: Any*): Self = StObject.set(x, "custom_performances", js.Array(value*))
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -155,9 +155,9 @@ object Song {
     
     inline def setEmbed_content(value: String): Self = StObject.set(x, "embed_content", value.asInstanceOf[js.Any])
     
-    inline def setFeatured_artists(value: js.Array[js.Any]): Self = StObject.set(x, "featured_artists", value.asInstanceOf[js.Any])
+    inline def setFeatured_artists(value: js.Array[Any]): Self = StObject.set(x, "featured_artists", value.asInstanceOf[js.Any])
     
-    inline def setFeatured_artistsVarargs(value: js.Any*): Self = StObject.set(x, "featured_artists", js.Array(value :_*))
+    inline def setFeatured_artistsVarargs(value: Any*): Self = StObject.set(x, "featured_artists", js.Array(value*))
     
     inline def setFeatured_video(value: Boolean): Self = StObject.set(x, "featured_video", value.asInstanceOf[js.Any])
     
@@ -171,7 +171,7 @@ object Song {
     
     inline def setLyrics(value: String): Self = StObject.set(x, "lyrics", value.asInstanceOf[js.Any])
     
-    inline def setLyrics_marked_complete_by(value: js.Any): Self = StObject.set(x, "lyrics_marked_complete_by", value.asInstanceOf[js.Any])
+    inline def setLyrics_marked_complete_by(value: Any): Self = StObject.set(x, "lyrics_marked_complete_by", value.asInstanceOf[js.Any])
     
     inline def setLyrics_marked_complete_byUndefined: Self = StObject.set(x, "lyrics_marked_complete_by", js.undefined)
     
@@ -181,7 +181,7 @@ object Song {
     
     inline def setMedia(value: js.Array[Media]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
+    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
@@ -189,13 +189,13 @@ object Song {
     
     inline def setProducer_artists(value: js.Array[ArtistBrief]): Self = StObject.set(x, "producer_artists", value.asInstanceOf[js.Any])
     
-    inline def setProducer_artistsVarargs(value: ArtistBrief*): Self = StObject.set(x, "producer_artists", js.Array(value :_*))
+    inline def setProducer_artistsVarargs(value: ArtistBrief*): Self = StObject.set(x, "producer_artists", js.Array(value*))
     
-    inline def setPyongs_count(value: js.Any): Self = StObject.set(x, "pyongs_count", value.asInstanceOf[js.Any])
+    inline def setPyongs_count(value: Any): Self = StObject.set(x, "pyongs_count", value.asInstanceOf[js.Any])
     
     inline def setPyongs_countUndefined: Self = StObject.set(x, "pyongs_count", js.undefined)
     
-    inline def setRecording_location(value: js.Any): Self = StObject.set(x, "recording_location", value.asInstanceOf[js.Any])
+    inline def setRecording_location(value: Any): Self = StObject.set(x, "recording_location", value.asInstanceOf[js.Any])
     
     inline def setRecording_locationUndefined: Self = StObject.set(x, "recording_location", js.undefined)
     
@@ -207,7 +207,7 @@ object Song {
     
     inline def setSong_relationships(value: js.Array[Songs]): Self = StObject.set(x, "song_relationships", value.asInstanceOf[js.Any])
     
-    inline def setSong_relationshipsVarargs(value: Songs*): Self = StObject.set(x, "song_relationships", js.Array(value :_*))
+    inline def setSong_relationshipsVarargs(value: Songs*): Self = StObject.set(x, "song_relationships", js.Array(value*))
     
     inline def setStats(value: Acceptedannotations): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
@@ -217,20 +217,20 @@ object Song {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setVerified_annotations_by(value: js.Array[js.Any]): Self = StObject.set(x, "verified_annotations_by", value.asInstanceOf[js.Any])
+    inline def setVerified_annotations_by(value: js.Array[Any]): Self = StObject.set(x, "verified_annotations_by", value.asInstanceOf[js.Any])
     
-    inline def setVerified_annotations_byVarargs(value: js.Any*): Self = StObject.set(x, "verified_annotations_by", js.Array(value :_*))
+    inline def setVerified_annotations_byVarargs(value: Any*): Self = StObject.set(x, "verified_annotations_by", js.Array(value*))
     
-    inline def setVerified_contributors(value: js.Array[js.Any]): Self = StObject.set(x, "verified_contributors", value.asInstanceOf[js.Any])
+    inline def setVerified_contributors(value: js.Array[Any]): Self = StObject.set(x, "verified_contributors", value.asInstanceOf[js.Any])
     
-    inline def setVerified_contributorsVarargs(value: js.Any*): Self = StObject.set(x, "verified_contributors", js.Array(value :_*))
+    inline def setVerified_contributorsVarargs(value: Any*): Self = StObject.set(x, "verified_contributors", js.Array(value*))
     
-    inline def setVerified_lyrics_by(value: js.Array[js.Any]): Self = StObject.set(x, "verified_lyrics_by", value.asInstanceOf[js.Any])
+    inline def setVerified_lyrics_by(value: js.Array[Any]): Self = StObject.set(x, "verified_lyrics_by", value.asInstanceOf[js.Any])
     
-    inline def setVerified_lyrics_byVarargs(value: js.Any*): Self = StObject.set(x, "verified_lyrics_by", js.Array(value :_*))
+    inline def setVerified_lyrics_byVarargs(value: Any*): Self = StObject.set(x, "verified_lyrics_by", js.Array(value*))
     
     inline def setWriter_artists(value: js.Array[ArtistBrief]): Self = StObject.set(x, "writer_artists", value.asInstanceOf[js.Any])
     
-    inline def setWriter_artistsVarargs(value: ArtistBrief*): Self = StObject.set(x, "writer_artists", js.Array(value :_*))
+    inline def setWriter_artistsVarargs(value: ArtistBrief*): Self = StObject.set(x, "writer_artists", js.Array(value*))
   }
 }

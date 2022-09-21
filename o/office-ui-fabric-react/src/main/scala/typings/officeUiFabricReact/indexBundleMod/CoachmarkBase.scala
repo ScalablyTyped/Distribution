@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "CoachmarkBase")
 @js.native
-class CoachmarkBase protected ()
+open class CoachmarkBase protected ()
   extends typings.officeUiFabricReact.mod.CoachmarkBase {
   def this(props: ICoachmarkProps) = this()
 }

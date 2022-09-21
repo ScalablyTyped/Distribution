@@ -10,10 +10,10 @@ object castConnectedMod {
   
   @JSImport("material-ui/svg-icons/hardware/cast-connected", JSImport.Default)
   @js.native
-  class default () extends HardwareCastConnected
+  open class default () extends HardwareCastConnected
   
   @JSImport("material-ui/svg-icons/hardware/cast-connected", "HardwareCastConnected")
   @js.native
-  class HardwareCastConnected ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareCastConnected ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.RelatedContentImage")
 @js.native
-class RelatedContentImage () extends StObject {
+open class RelatedContentImage () extends StObject {
   def this(args: FileSize) = this()
   
   var fileSize: js.UndefOr[Double] = js.native

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebExtEvent[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject {
+trait WebExtEvent[TCallback /* <: js.Function1[/* repeated */ Any, Any] */] extends StObject {
   
   def addListener(cb: TCallback): Unit
   
@@ -14,7 +14,7 @@ trait WebExtEvent[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */
 }
 object WebExtEvent {
   
-  inline def apply[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def apply[TCallback /* <: js.Function1[/* repeated */ Any, Any] */](
     addListener: TCallback => Unit,
     hasListener: TCallback => Boolean,
     removeListener: TCallback => Unit
@@ -23,7 +23,7 @@ object WebExtEvent {
     __obj.asInstanceOf[WebExtEvent[TCallback]]
   }
   
-  extension [Self <: WebExtEvent[?], TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & WebExtEvent[TCallback]) {
+  extension [Self <: WebExtEvent[?], TCallback /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & WebExtEvent[TCallback]) {
     
     inline def setAddListener(value: TCallback => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     

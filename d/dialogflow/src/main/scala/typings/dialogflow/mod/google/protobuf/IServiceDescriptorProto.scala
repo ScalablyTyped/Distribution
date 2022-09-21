@@ -31,7 +31,7 @@ object IServiceDescriptorProto {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setMethodVarargs(value: IMethodDescriptorProto*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: IMethodDescriptorProto*): Self = StObject.set(x, "method", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

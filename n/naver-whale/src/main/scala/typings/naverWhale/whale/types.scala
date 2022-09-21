@@ -1,6 +1,10 @@
 package typings.naverWhale.whale
 
 import typings.chrome.chrome.events.Event
+import typings.naverWhale.naverWhaleStrings.controllable_by_this_extension
+import typings.naverWhale.naverWhaleStrings.controlled_by_other_extensions
+import typings.naverWhale.naverWhaleStrings.controlled_by_this_extension
+import typings.naverWhale.naverWhaleStrings.not_controllable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +63,7 @@ object types {
       * • incognito_persistent: setting for the incognito profile that survives browser restarts (overrides regular preferences),
       * • incognito_session_only: setting for the incognito profile that can only be set during an incognito session and is deleted when the incognito session ends (overrides regular and incognito_persistent preferences).
       */
-    var scope: js.UndefOr[String] = js.undefined
+    var scope: js.UndefOr[typings.chrome.chrome.types.settingsScope] = js.undefined
   }
   object ChromeSettingClearDetails {
     
@@ -70,7 +74,7 @@ object types {
     
     extension [Self <: ChromeSettingClearDetails](x: Self) {
       
-      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: typings.chrome.chrome.types.settingsScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
@@ -112,14 +116,17 @@ object types {
       * • controllable_by_this_extension: can be controlled by this extension
       * • controlled_by_this_extension: controlled by this extension
       */
-    var levelOfControl: String
+    var levelOfControl: not_controllable | controlled_by_other_extensions | controllable_by_this_extension | controlled_by_this_extension
     
     /** The value of the setting. */
-    var value: js.Any
+    var value: Any
   }
   object ChromeSettingGetResultDetails {
     
-    inline def apply(levelOfControl: String, value: js.Any): ChromeSettingGetResultDetails = {
+    inline def apply(
+      levelOfControl: not_controllable | controlled_by_other_extensions | controllable_by_this_extension | controlled_by_this_extension,
+      value: Any
+    ): ChromeSettingGetResultDetails = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChromeSettingGetResultDetails]
     }
@@ -130,9 +137,11 @@ object types {
       
       inline def setIncognitoSpecificUndefined: Self = StObject.set(x, "incognitoSpecific", js.undefined)
       
-      inline def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
+      inline def setLevelOfControl(
+        value: not_controllable | controlled_by_other_extensions | controllable_by_this_extension | controlled_by_this_extension
+      ): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,20 +153,31 @@ object types {
       * The value of the setting.
       * Note that every setting has a specific value type, which is described together with the setting. An extension should not set a value of a different type.
       */
-    var value: js.Any
+    var value: Any
   }
   object ChromeSettingSetDetails {
     
-    inline def apply(value: js.Any): ChromeSettingSetDetails = {
+    inline def apply(value: Any): ChromeSettingSetDetails = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChromeSettingSetDetails]
     }
     
     extension [Self <: ChromeSettingSetDetails](x: Self) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   type DetailsCallback = js.Function1[/* details */ typings.chrome.chrome.types.ChromeSettingGetResultDetails, Unit]
+  
+  trait _settingsScope extends StObject
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.naverWhale.naverWhaleStrings.regular
+    - typings.naverWhale.naverWhaleStrings.regular_only
+    - typings.naverWhale.naverWhaleStrings.incognito_persistent
+    - typings.naverWhale.naverWhaleStrings.incognito_session_only
+    - scala.Unit
+  */
+  type settingsScope = js.UndefOr[_settingsScope]
 }

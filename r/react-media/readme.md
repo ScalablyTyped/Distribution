@@ -10,10 +10,10 @@ CSS media queries for React
 | ------------------ | :-------------: |
 | Full name          | react-media |
 | Keywords           | react, media, media query, query, css, responsive |
-| # releases         | 8 |
-| # dependents       | 105 |
-| # downloads        | 6402829 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 491203.3333333333 |
+| # stars            | 2428.0 |
 
 ## Links
 - [Homepage](https://github.com/ReactTraining/react-media#readme)

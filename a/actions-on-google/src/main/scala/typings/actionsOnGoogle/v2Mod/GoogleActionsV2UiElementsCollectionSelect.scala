@@ -43,7 +43,7 @@ object GoogleActionsV2UiElementsCollectionSelect {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: GoogleActionsV2UiElementsCollectionSelectCollectionItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GoogleActionsV2UiElementsCollectionSelectCollectionItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     

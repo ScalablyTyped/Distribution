@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Contains the collection of cross-workbook level ranges.
   *
-  * Contains the collection of cross-worksheets level Ranges.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.RangeAreasCollection")
 @js.native
-class RangeAreasCollection ()
+open class RangeAreasCollection ()
   extends StObject
      with typings.officeJsPreview.Excel.RangeAreasCollection {
   

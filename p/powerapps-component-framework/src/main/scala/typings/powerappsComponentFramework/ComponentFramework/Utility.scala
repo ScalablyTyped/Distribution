@@ -24,9 +24,9 @@ trait Utility extends StObject {
   
   /**
     * Function to return if the user has Privilege for one specific entity
-    * @entityTypeName entity type name
-    * @privilegeType privilege type i.e. Create, Read, Write etc.
-    * @privilegeDepth privilege depth i.e. basic, Global etc.
+    * @param entityTypeName entity type name
+    * @param privilegeType privilege type i.e. Create, Read, Write etc.
+    * @param privilegeDepth privilege depth i.e. basic, Global etc.
     */
   def hasEntityPrivilege(entityTypeName: String, privilegeType: PrivilegeType, privilegeDepth: PrivilegeDepth): Boolean = js.native
   
@@ -34,5 +34,5 @@ trait Utility extends StObject {
     * Opens a lookup dialog allowing the user to select one or more entities.
     * @param lookupOptions Options for opening the lookup dialog.
     */
-  def lookupObjects(lookupOptions: LookupOptions): js.Promise[js.Array[EntityReference]] = js.native
+  def lookupObjects(lookupOptions: LookupOptions): js.Promise[js.Array[LookupValue]] = js.native
 }

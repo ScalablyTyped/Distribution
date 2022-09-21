@@ -10,10 +10,10 @@ object timeToLeaveMod {
   
   @JSImport("material-ui/svg-icons/notification/time-to-leave", JSImport.Default)
   @js.native
-  class default () extends NotificationTimeToLeave
+  open class default () extends NotificationTimeToLeave
   
   @JSImport("material-ui/svg-icons/notification/time-to-leave", "NotificationTimeToLeave")
   @js.native
-  class NotificationTimeToLeave ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationTimeToLeave ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

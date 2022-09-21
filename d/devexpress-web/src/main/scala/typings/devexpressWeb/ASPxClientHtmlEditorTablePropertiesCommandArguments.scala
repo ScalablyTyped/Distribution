@@ -54,7 +54,7 @@ object ASPxClientHtmlEditorTablePropertiesCommandArguments {
     cellPadding: Double,
     cellSpacing: Double,
     headers: String,
-    selectedElement: js.Any,
+    selectedElement: Any,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
     summary: String
   ): ASPxClientHtmlEditorTablePropertiesCommandArguments = {

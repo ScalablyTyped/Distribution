@@ -1,16 +1,19 @@
 package typings.jsonld
 
+import typings.jsonld.jsonldMod.ContextDefinition
+import typings.jsonld.jsonldMod.JsonLdDocument
+import typings.jsonld.jsonldMod.NodeObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonldSpecMod {
   
-  type Context = Document
+  type Context = ContextDefinition
   
   type DOMString = String
   
-  type Document = JsonLd | Url
+  type Document = JsonLdDocument
   
   type Frame = JsonLdObj | Url
   
@@ -20,22 +23,22 @@ object jsonldSpecMod {
   
   type JsonLdArray = js.Array[JsonLdObj]
   
-  type JsonLdObj = js.Object
+  type JsonLdObj = NodeObject
   
   @js.native
   trait JsonLdProcessor extends StObject {
     
-    def compact(input: Document, context: Context): js.Promise[JsonLdObj] = js.native
-    def compact(input: Document, context: Context, options: Options): js.Promise[JsonLdObj] = js.native
+    def compact(input: JsonLdDocument, context: ContextDefinition): js.Promise[JsonLdObj] = js.native
+    def compact(input: JsonLdDocument, context: ContextDefinition, options: Options): js.Promise[JsonLdObj] = js.native
     
-    def expand(input: Document): js.Promise[JsonLdArray] = js.native
-    def expand(input: Document, options: Options): js.Promise[JsonLdArray] = js.native
+    def expand(input: JsonLdDocument): js.Promise[JsonLdArray] = js.native
+    def expand(input: JsonLdDocument, options: Options): js.Promise[JsonLdArray] = js.native
     
-    def flatten(input: Document): js.Promise[JsonLdObj] = js.native
-    def flatten(input: Document, context: Null, options: Options): js.Promise[JsonLdObj] = js.native
-    def flatten(input: Document, context: Unit, options: Options): js.Promise[JsonLdObj] = js.native
-    def flatten(input: Document, context: Context): js.Promise[JsonLdObj] = js.native
-    def flatten(input: Document, context: Context, options: Options): js.Promise[JsonLdObj] = js.native
+    def flatten(input: JsonLdDocument): js.Promise[JsonLdObj] = js.native
+    def flatten(input: JsonLdDocument, context: Null, options: Options): js.Promise[JsonLdObj] = js.native
+    def flatten(input: JsonLdDocument, context: Unit, options: Options): js.Promise[JsonLdObj] = js.native
+    def flatten(input: JsonLdDocument, context: ContextDefinition): js.Promise[JsonLdObj] = js.native
+    def flatten(input: JsonLdDocument, context: ContextDefinition, options: Options): js.Promise[JsonLdObj] = js.native
   }
   
   type LoadDocumentCallback = js.Function1[/* url */ Url, js.Promise[RemoteDocument]]
@@ -48,7 +51,7 @@ object jsonldSpecMod {
     
     var documentLoader: js.UndefOr[LoadDocumentCallback | Null] = js.undefined
     
-    var expandContext: js.UndefOr[Context | Null] = js.undefined
+    var expandContext: js.UndefOr[ContextDefinition | Null] = js.undefined
     
     var processingMode: js.UndefOr[DOMString] = js.undefined
   }
@@ -77,13 +80,11 @@ object jsonldSpecMod {
       
       inline def setDocumentLoaderUndefined: Self = StObject.set(x, "documentLoader", js.undefined)
       
-      inline def setExpandContext(value: Context): Self = StObject.set(x, "expandContext", value.asInstanceOf[js.Any])
+      inline def setExpandContext(value: ContextDefinition): Self = StObject.set(x, "expandContext", value.asInstanceOf[js.Any])
       
       inline def setExpandContextNull: Self = StObject.set(x, "expandContext", null)
       
       inline def setExpandContextUndefined: Self = StObject.set(x, "expandContext", js.undefined)
-      
-      inline def setExpandContextVarargs(value: JsonLdObj*): Self = StObject.set(x, "expandContext", js.Array(value :_*))
       
       inline def setProcessingMode(value: DOMString): Self = StObject.set(x, "processingMode", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,7 @@ object jsonldSpecMod {
       
       inline def setDocumentUrl(value: Url): Self = StObject.set(x, "documentUrl", value.asInstanceOf[js.Any])
       
-      inline def setDocumentVarargs(value: JsonLdObj*): Self = StObject.set(x, "document", js.Array(value :_*))
+      inline def setDocumentVarargs(value: JsonLdObj*): Self = StObject.set(x, "document", js.Array(value*))
     }
   }
   

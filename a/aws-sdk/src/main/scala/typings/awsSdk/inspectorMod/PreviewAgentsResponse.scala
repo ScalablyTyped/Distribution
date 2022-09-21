@@ -27,7 +27,7 @@ object PreviewAgentsResponse {
     
     inline def setAgentPreviews(value: AgentPreviewList): Self = StObject.set(x, "agentPreviews", value.asInstanceOf[js.Any])
     
-    inline def setAgentPreviewsVarargs(value: AgentPreview*): Self = StObject.set(x, "agentPreviews", js.Array(value :_*))
+    inline def setAgentPreviewsVarargs(value: AgentPreview*): Self = StObject.set(x, "agentPreviews", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

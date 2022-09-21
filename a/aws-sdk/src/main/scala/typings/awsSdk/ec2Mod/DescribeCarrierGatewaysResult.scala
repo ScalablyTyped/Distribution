@@ -29,7 +29,7 @@ object DescribeCarrierGatewaysResult {
     
     inline def setCarrierGatewaysUndefined: Self = StObject.set(x, "CarrierGateways", js.undefined)
     
-    inline def setCarrierGatewaysVarargs(value: CarrierGateway*): Self = StObject.set(x, "CarrierGateways", js.Array(value :_*))
+    inline def setCarrierGatewaysVarargs(value: CarrierGateway*): Self = StObject.set(x, "CarrierGateways", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object messageMod {
   
   @JSImport("material-ui/svg-icons/communication/message", JSImport.Default)
   @js.native
-  class default () extends CommunicationMessage
+  open class default () extends CommunicationMessage
   
   @JSImport("material-ui/svg-icons/communication/message", "CommunicationMessage")
   @js.native
-  class CommunicationMessage ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationMessage ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

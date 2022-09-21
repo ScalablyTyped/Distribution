@@ -8,9 +8,9 @@ trait BarData extends StObject {
   
   var height: Double
   
-  var radius: Double | js.Array[js.Any]
+  var radius: Double | js.Array[Any]
   
-  var value: Double | String | js.Array[js.Any]
+  var value: Double | String | js.Array[Any]
   
   var width: Double
   
@@ -22,8 +22,8 @@ object BarData {
   
   inline def apply(
     height: Double,
-    radius: Double | js.Array[js.Any],
-    value: Double | String | js.Array[js.Any],
+    radius: Double | js.Array[Any],
+    value: Double | String | js.Array[Any],
     width: Double,
     x: Double,
     y: Double
@@ -36,13 +36,13 @@ object BarData {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setRadius(value: Double | js.Array[js.Any]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double | js.Array[Any]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setRadiusVarargs(value: js.Any*): Self = StObject.set(x, "radius", js.Array(value :_*))
+    inline def setRadiusVarargs(value: Any*): Self = StObject.set(x, "radius", js.Array(value*))
     
-    inline def setValue(value: Double | String | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | String | js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

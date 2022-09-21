@@ -10,10 +10,10 @@ Promise version of fs.readFile
 | ------------------ | :-------------: |
 | Full name          | fs-readfile-promise |
 | Keywords           | fs, read, file, promise, promises, then, thenable |
-| # releases         | 0 |
-| # dependents       | 68 |
-| # downloads        | 2040039 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 256527.66666666666 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/shinnn/fs-readfile-promise#readme)

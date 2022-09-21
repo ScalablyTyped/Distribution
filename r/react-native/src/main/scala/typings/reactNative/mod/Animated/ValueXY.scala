@@ -1,6 +1,8 @@
 package typings.reactNative.mod.Animated
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.reactNative.anon.TranslateX
+import typings.reactNative.anon.TranslateY
 import typings.reactNative.anon.X
 import typings.reactNative.anon.Y
 import org.scalablytyped.runtime.StObject
@@ -9,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "Animated.ValueXY")
 @js.native
-class ValueXY () extends AnimatedWithChildren {
+open class ValueXY () extends AnimatedWithChildren {
   def this(valueIn: Y) = this()
-  
-  def addListener(callback: ValueXYListenerCallback): String = js.native
+  def this(valueIn: Unit, config: AnimatedConfig) = this()
+  def this(valueIn: Y, config: AnimatedConfig) = this()
   
   def extractOffset(): Unit = js.native
   
@@ -36,9 +38,7 @@ class ValueXY () extends AnimatedWithChildren {
     *  }}
     *```
     */
-  def getTranslateTransform(): js.Array[StringDictionary[AnimatedValue]] = js.native
-  
-  def removeListener(id: String): Unit = js.native
+  def getTranslateTransform(): js.Tuple2[TranslateX, TranslateY] = js.native
   
   def setOffset(offset: X): Unit = js.native
   

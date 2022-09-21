@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IDownloadFileTask extends StObject {
   
-  def abort(args: js.Any*): js.Any
+  def abort(args: Any*): Any
   @JSName("abort")
   var abort_Original: AnyFunction
   

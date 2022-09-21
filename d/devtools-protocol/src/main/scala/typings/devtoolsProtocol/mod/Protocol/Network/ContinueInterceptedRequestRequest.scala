@@ -39,7 +39,7 @@ trait ContinueInterceptedRequestRequest extends StObject {
   
   /**
     * If set the requests completes using with the provided base64 encoded raw response, including
-    * HTTP status line and headers etc... Must not be set in response to an authChallenge.
+    * HTTP status line and headers etc... Must not be set in response to an authChallenge. (Encoded as a base64 string when passed over JSON)
     */
   var rawResponse: js.UndefOr[String] = js.undefined
   

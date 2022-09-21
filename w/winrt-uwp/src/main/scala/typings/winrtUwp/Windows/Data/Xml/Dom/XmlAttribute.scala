@@ -57,13 +57,13 @@ trait XmlAttribute extends StObject {
   var lastChild: IXmlNode
   
   /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
-  var localName: js.Any
+  var localName: Any
   
   /** Returns the attribute name. */
   var name: String
   
   /** Returns the Uniform Resource Identifier (URI) for the namespace. */
-  var namespaceUri: js.Any
+  var namespaceUri: Any
   
   /** This property is not applicable to this class and will always return null. */
   var nextSibling: IXmlNode
@@ -75,7 +75,7 @@ trait XmlAttribute extends StObject {
   var nodeType: NodeType
   
   /** Gets or sets the text associated with the node. */
-  var nodeValue: js.Any
+  var nodeValue: Any
   
   /** This method is not applicable to this class and will throw an exception. */
   def normalize(): Unit
@@ -87,7 +87,7 @@ trait XmlAttribute extends StObject {
   var parentNode: IXmlNode
   
   /** Gets or sets the namespace prefix. */
-  var prefix: js.Any
+  var prefix: Any
   
   /** This property is not applicable to this class and will throw an exception. */
   var previousSibling: IXmlNode
@@ -120,7 +120,7 @@ trait XmlAttribute extends StObject {
     * @param namespaces Contains a string that specifies namespaces for use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
     */
-  def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList
+  def selectNodesNS(xpath: String, namespaces: Any): XmlNodeList
   
   /**
     * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -135,7 +135,7 @@ trait XmlAttribute extends StObject {
     * @param namespaces Contains a string that specifies the namespaces to use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
     */
-  def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode
+  def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode
   
   /** Gets a value that indicates whether the attribute is explicitly specified or derived from a default value in the document type definition (DTD) or schema. */
   var specified: Boolean
@@ -156,24 +156,24 @@ object XmlAttribute {
     innerText: String,
     insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
     lastChild: IXmlNode,
-    localName: js.Any,
+    localName: Any,
     name: String,
-    namespaceUri: js.Any,
+    namespaceUri: Any,
     nextSibling: IXmlNode,
     nodeName: String,
     nodeType: NodeType,
-    nodeValue: js.Any,
+    nodeValue: Any,
     normalize: () => Unit,
     ownerDocument: XmlDocument,
     parentNode: IXmlNode,
-    prefix: js.Any,
+    prefix: Any,
     previousSibling: IXmlNode,
     removeChild: IXmlNode => IXmlNode,
     replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
     selectNodes: String => XmlNodeList,
-    selectNodesNS: (String, js.Any) => XmlNodeList,
+    selectNodesNS: (String, Any) => XmlNodeList,
     selectSingleNode: String => IXmlNode,
-    selectSingleNodeNS: (String, js.Any) => IXmlNode,
+    selectSingleNodeNS: (String, Any) => IXmlNode,
     specified: Boolean,
     value: String
   ): XmlAttribute = {
@@ -203,11 +203,11 @@ object XmlAttribute {
     
     inline def setLastChild(value: IXmlNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
-    inline def setLocalName(value: js.Any): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+    inline def setLocalName(value: Any): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNamespaceUri(value: js.Any): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
+    inline def setNamespaceUri(value: Any): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
     
     inline def setNextSibling(value: IXmlNode): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
@@ -215,7 +215,7 @@ object XmlAttribute {
     
     inline def setNodeType(value: NodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    inline def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
@@ -223,7 +223,7 @@ object XmlAttribute {
     
     inline def setParentNode(value: IXmlNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    inline def setPrefix(value: js.Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     inline def setPreviousSibling(value: IXmlNode): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
@@ -233,11 +233,11 @@ object XmlAttribute {
     
     inline def setSelectNodes(value: String => XmlNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
     
-    inline def setSelectNodesNS(value: (String, js.Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
+    inline def setSelectNodesNS(value: (String, Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
     
     inline def setSelectSingleNode(value: String => IXmlNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
     
-    inline def setSelectSingleNodeNS(value: (String, js.Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
+    inline def setSelectSingleNodeNS(value: (String, Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
     
     inline def setSpecified(value: Boolean): Self = StObject.set(x, "specified", value.asInstanceOf[js.Any])
     

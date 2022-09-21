@@ -1,7 +1,7 @@
 package typings.babylon
 
-import typings.babelTypes.ts36Mod.Expression
-import typings.babelTypes.ts36Mod.File_
+import typings.babelTypes.mod.Expression
+import typings.babelTypes.mod.File_
 import typings.babylon.babylonStrings.module
 import typings.babylon.babylonStrings.script
 import org.scalablytyped.runtime.StObject
@@ -76,7 +76,7 @@ object mod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: PluginName*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: PluginName*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setSourceFilename(value: String): Self = StObject.set(x, "sourceFilename", value.asInstanceOf[js.Any])
       

@@ -45,19 +45,19 @@ object ProviderResourceType {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: AliasType*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: AliasType*): Self = StObject.set(x, "aliases", js.Array(value*))
     
     inline def setApiVersions(value: js.Array[String]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
     
     inline def setApiVersionsUndefined: Self = StObject.set(x, "apiVersions", js.undefined)
     
-    inline def setApiVersionsVarargs(value: String*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
+    inline def setApiVersionsVarargs(value: String*): Self = StObject.set(x, "apiVersions", js.Array(value*))
     
     inline def setLocations(value: js.Array[String]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

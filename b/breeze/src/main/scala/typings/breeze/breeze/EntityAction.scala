@@ -49,7 +49,7 @@ object EntityAction {
     MergeOnSave: EntityActionSymbol,
     PropertyChange: EntityActionSymbol,
     RejectChanges: EntityActionSymbol,
-    contains: js.Any => Boolean,
+    contains: Any => Boolean,
     fromName: String => EnumSymbol,
     getNames: () => js.Array[String],
     getSymbols: () => js.Array[EnumSymbol]

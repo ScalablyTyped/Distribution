@@ -9,10 +9,13 @@ trait BoundingInfo
   extends StObject
      with ICullable {
   
-  /** @hidden */
+  /**
+    * @param collider
+    * @hidden
+    */
   def _checkCollision(collider: Collider): Boolean = js.native
   
-  /* private */ var _isLocked: js.Any = js.native
+  /* private */ var _isLocked: Any = js.native
   
   /**
     * Bounding box for the mesh
@@ -36,6 +39,20 @@ trait BoundingInfo
     * Gets the world distance between the min and max points of the bounding box
     */
   def diagonalLength: Double = js.native
+  
+  /**
+    * Grows the bounding info to include the given point.
+    * @param point The point that will be included in the current bounding info
+    * @returns the current bounding info
+    */
+  def encapsulate(point: Vector3): BoundingInfo = js.native
+  
+  /**
+    * Grows the bounding info to encapsulate the given bounding info.
+    * @param toEncapsulate The bounding info that will be encapsulated in the current bounding info
+    * @returns the current bounding info
+    */
+  def encapsulateBoundingInfo(toEncapsulate: BoundingInfo): BoundingInfo = js.native
   
   /**
     * Checks if another bounding info intersects the bounding box and bounding sphere or the mesh

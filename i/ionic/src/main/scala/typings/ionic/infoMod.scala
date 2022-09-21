@@ -10,7 +10,7 @@ object infoMod {
   
   @JSImport("ionic/commands/info", "InfoCommand")
   @js.native
-  class InfoCommand protected () extends Command {
+  open class InfoCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

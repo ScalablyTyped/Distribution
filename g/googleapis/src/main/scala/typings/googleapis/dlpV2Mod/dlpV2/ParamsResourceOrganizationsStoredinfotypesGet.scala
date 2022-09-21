@@ -1,9 +1,5 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceOrganizationsStoredinfotypesGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Resource name of the organization and storedInfoType to be read, for
-    * example `organizations/433245324/storedInfoTypes/432452342` or
-    * projects/project-id/storedInfoTypes/432452342.
+    * Required. Resource name of the organization and storedInfoType to be read, for example `organizations/433245324/storedInfoTypes/432452342` or projects/project-id/storedInfoTypes/432452342.
     */
   var name: js.UndefOr[String] = js.undefined
 }
@@ -32,10 +21,6 @@ object ParamsResourceOrganizationsStoredinfotypesGet {
   }
   
   extension [Self <: ParamsResourceOrganizationsStoredinfotypesGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -342,7 +342,7 @@ trait Number extends StObject {
   
   def tan(): Double = js.native
   
-  def times[T](indexMapFn: js.Function1[/* i */ Double, js.Any]): T = js.native
+  def times[T](indexMapFn: js.Function1[/* i */ Double, Any]): T = js.native
   
   def toNumber(): Double = js.native
   

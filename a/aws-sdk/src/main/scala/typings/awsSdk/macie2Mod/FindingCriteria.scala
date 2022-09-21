@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FindingCriteria extends StObject {
   
   /**
-    * A condition that specifies the property, operator, and value to use to filter the results.
+    * A condition that specifies the property, operator, and one or more values to use to filter the results.
     */
   var criterion: js.UndefOr[Criterion] = js.undefined
 }

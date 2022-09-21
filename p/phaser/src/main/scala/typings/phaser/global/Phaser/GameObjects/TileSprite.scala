@@ -1,7 +1,6 @@
 package typings.phaser.global.Phaser.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * You shouldn't ever create a TileSprite any larger than your actual canvas size. If you want to create a large repeating background
   * that scrolls across the whole map of your game, then you create a TileSprite that fits the canvas size and then use the `tilePosition`
-  * property to scroll the texture as the player moves. If you create a TileSprite that is thousands of pixels in size then it will 
+  * property to scroll the texture as the player moves. If you create a TileSprite that is thousands of pixels in size then it will
   * consume huge amounts of memory and cause performance issues. Remember: use `tilePosition` to scroll your texture and `tileScale` to
   * adjust the scale of the texture - don't resize the sprite itself or make it larger than it needs.
   * 
@@ -30,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Phaser.GameObjects.TileSprite")
 @js.native
-class TileSprite protected ()
+open class TileSprite protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.TileSprite {
   /**
@@ -43,13 +42,13 @@ class TileSprite protected ()
     * @param textureKey The key of the Texture this Game Object will use to render with, as stored in the Texture Manager.
     * @param frameKey An optional frame from the Texture this Game Object is rendering with.
     */
-  def this(scene: Scene, x: Double, y: Double, width: integer, height: integer, textureKey: String) = this()
+  def this(scene: Scene, x: Double, y: Double, width: Double, height: Double, textureKey: String) = this()
   def this(
     scene: Scene,
     x: Double,
     y: Double,
-    width: integer,
-    height: integer,
+    width: Double,
+    height: Double,
     textureKey: String,
     frameKey: String
   ) = this()
@@ -57,10 +56,10 @@ class TileSprite protected ()
     scene: Scene,
     x: Double,
     y: Double,
-    width: integer,
-    height: integer,
+    width: Double,
+    height: Double,
     textureKey: String,
-    frameKey: integer
+    frameKey: Double
   ) = this()
   
   /**
@@ -146,7 +145,7 @@ class TileSprite protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

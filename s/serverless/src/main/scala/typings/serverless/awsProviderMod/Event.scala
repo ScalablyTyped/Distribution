@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Event extends StObject {
   
+  var activemq: js.UndefOr[ActiveMq] = js.undefined
+  
   var alb: js.UndefOr[AlbEvent] = js.undefined
   
   var alexaSkill: js.UndefOr[AlexaSkill] = js.undefined
@@ -28,6 +30,10 @@ trait Event extends StObject {
   
   var iot: js.UndefOr[Iot] = js.undefined
   
+  var msk: js.UndefOr[Msk] = js.undefined
+  
+  var rabbitmq: js.UndefOr[RabbitMq] = js.undefined
+  
   var s3: js.UndefOr[S3] = js.undefined
   
   var schedule: js.UndefOr[String | Schedule] = js.undefined
@@ -48,6 +54,10 @@ object Event {
   }
   
   extension [Self <: Event](x: Self) {
+    
+    inline def setActivemq(value: ActiveMq): Self = StObject.set(x, "activemq", value.asInstanceOf[js.Any])
+    
+    inline def setActivemqUndefined: Self = StObject.set(x, "activemq", js.undefined)
     
     inline def setAlb(value: AlbEvent): Self = StObject.set(x, "alb", value.asInstanceOf[js.Any])
     
@@ -92,6 +102,14 @@ object Event {
     inline def setIot(value: Iot): Self = StObject.set(x, "iot", value.asInstanceOf[js.Any])
     
     inline def setIotUndefined: Self = StObject.set(x, "iot", js.undefined)
+    
+    inline def setMsk(value: Msk): Self = StObject.set(x, "msk", value.asInstanceOf[js.Any])
+    
+    inline def setMskUndefined: Self = StObject.set(x, "msk", js.undefined)
+    
+    inline def setRabbitmq(value: RabbitMq): Self = StObject.set(x, "rabbitmq", value.asInstanceOf[js.Any])
+    
+    inline def setRabbitmqUndefined: Self = StObject.set(x, "rabbitmq", js.undefined)
     
     inline def setS3(value: S3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     

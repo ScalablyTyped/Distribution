@@ -4,23 +4,23 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.glob.anon.IsDirectory
+import typings.glob.anon.Typeoffs
 import typings.glob.globBooleans.`false`
 import typings.glob.globStrings.DIR
 import typings.glob.globStrings.FILE
 import typings.minimatch.mod.IMinimatch
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(pattern: String, cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]): IGlob = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[IGlob]
+  inline def apply(pattern: String, cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]): IGlob = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[IGlob]
   inline def apply(
     pattern: String,
     options: IOptions,
-    cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]
+    cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]
   ): IGlob = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[IGlob]
   
   @JSImport("glob", JSImport.Namespace)
@@ -30,7 +30,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("glob", "GlobSync")
   @js.native
-  class GlobSync protected ()
+  open class GlobSync protected ()
     extends StObject
        with IGlobBase {
     def this(pattern: String) = this()
@@ -68,14 +68,14 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("glob", "Glob")
   @js.native
-  class Glob_ protected () extends IGlob {
+  open class Glob_ protected () extends IGlob {
     def this(pattern: String) = this()
-    def this(pattern: String, cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]) = this()
+    def this(pattern: String, cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]) = this()
     def this(pattern: String, options: IOptions) = this()
     def this(
       pattern: String,
       options: IOptions,
-      cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]
     ) = this()
     
     /* CompleteClass */
@@ -111,8 +111,8 @@ object mod {
   
   @JSImport("glob", "glob")
   @js.native
-  def glob: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ js.Any = js.native
-  inline def glob_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glob")(x.asInstanceOf[js.Any])
+  def glob: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ Any = js.native
+  inline def glob_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glob")(x.asInstanceOf[js.Any])
   
   inline def hasMagic(pattern: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def hasMagic(pattern: String, options: IOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -174,7 +174,7 @@ object mod {
       
       inline def setFound(value: js.Array[String]): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
       
-      inline def setFoundVarargs(value: String*): Self = StObject.set(x, "found", js.Array(value :_*))
+      inline def setFoundVarargs(value: String*): Self = StObject.set(x, "found", js.Array(value*))
       
       inline def setMinimatch(value: IMinimatch): Self = StObject.set(x, "minimatch", value.asInstanceOf[js.Any])
       
@@ -220,6 +220,8 @@ object mod {
     var cwd: js.UndefOr[String] = js.undefined
     
     var follow: js.UndefOr[Boolean] = js.undefined
+    
+    var fs: js.UndefOr[Typeoffs] = js.undefined
     
     var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -276,11 +278,15 @@ object mod {
       
       inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
       
+      inline def setFs(value: Typeoffs): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      
       inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       

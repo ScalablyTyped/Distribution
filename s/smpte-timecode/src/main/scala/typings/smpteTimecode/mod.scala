@@ -3,7 +3,6 @@ package typings.smpteTimecode
 import typings.smpteTimecode.smpteTimecodeNumbers.`23.976`
 import typings.smpteTimecode.smpteTimecodeNumbers.`29.97`
 import typings.smpteTimecode.smpteTimecodeNumbers.`59.94`
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("smpte-timecode", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with TimecodeInstance {
     def this(timecode: TIMECODE) = this()
@@ -67,7 +66,7 @@ object mod {
     inline def `60`: typings.smpteTimecode.smpteTimecodeNumbers.`60` = 60.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`60`]
   }
   
-  type TIMECODE = Double | String | Date | TimecodeObject
+  type TIMECODE = Double | String | js.Date | TimecodeObject
   
   @js.native
   trait TimecodeInstance extends StObject {
@@ -94,7 +93,7 @@ object mod {
     def subtract(timecode: TIMECODE): TimecodeInstance = js.native
     def subtract(timecode: TIMECODE, rollOverMaxHours: Double): TimecodeInstance = js.native
     
-    def toDate(): Date = js.native
+    def toDate(): js.Date = js.native
     
     def toString(options: String): String = js.native
   }

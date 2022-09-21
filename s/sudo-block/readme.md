@@ -1,7 +1,7 @@
 
 # Scala.js typings for sudo-block
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Block users from running your app with root permissions
@@ -10,10 +10,10 @@ Block users from running your app with root permissions
 | ------------------ | :-------------: |
 | Full name          | sudo-block |
 | Keywords           | sudo, root, user, permissions, uid, block, prevent, stop |
-| # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 4185669 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 807349.3333333334 |
+| # stars            | 91.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/sudo-block#readme)

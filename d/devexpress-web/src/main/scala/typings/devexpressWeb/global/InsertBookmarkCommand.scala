@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertBookmarkCommand")
 @js.native
-class InsertBookmarkCommand ()
+open class InsertBookmarkCommand ()
   extends StObject
      with typings.devexpressWeb.InsertBookmarkCommand {
   

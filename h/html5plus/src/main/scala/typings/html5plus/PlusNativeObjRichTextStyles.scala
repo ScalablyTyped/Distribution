@@ -54,7 +54,7 @@ trait PlusNativeObjRichTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onClick: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
 }
 object PlusNativeObjRichTextStyles {
   
@@ -77,7 +77,7 @@ object PlusNativeObjRichTextStyles {
     
     inline def setFontSrcUndefined: Self = StObject.set(x, "fontSrc", js.undefined)
     
-    inline def setOnClick(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* result */ Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }

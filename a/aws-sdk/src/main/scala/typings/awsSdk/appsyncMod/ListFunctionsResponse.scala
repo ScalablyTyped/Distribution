@@ -12,7 +12,7 @@ trait ListFunctionsResponse extends StObject {
   var functions: js.UndefOr[Functions] = js.undefined
   
   /**
-    * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+    * An identifier that was returned from the previous call to this operation, which you can use to return the next set of items in the list.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListFunctionsResponse {
     
     inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
-    inline def setFunctionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "functions", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

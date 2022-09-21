@@ -6,51 +6,36 @@ import typings.grommet.dropMod.DropProps
 import typings.grommet.grommetStrings.color
 import typings.grommet.utilsMod.Omit
 import typings.react.mod.ButtonHTMLAttributes
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.FC
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
+import typings.std.HTMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropButtonMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/DropButton", "DropButton")
   @js.native
-  class DropButton protected ()
-    extends Component[
-          DropButtonProps & ButtonProps & (Omit[
-            DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-            color
-          ]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: DropButtonProps & ButtonProps & (Omit[
-            DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-            color
-          ])) = this()
-    def this(
-      props: DropButtonProps & ButtonProps & (Omit[
-            DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-            color
-          ]),
-      context: js.Any
-    ) = this()
+  val DropButton: FC[DropButtonExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.ButtonHTMLAttributes<std.HTMLButtonElement>, std.HTMLButtonElement>, 'color'> ]: react.react.DetailedHTMLProps<react.react.ButtonHTMLAttributes<std.HTMLButtonElement>, std.HTMLButtonElement>[P]} */ trait DropButtonExtendedProps
+    extends StObject
+       with DropButtonProps
+       with ButtonProps
+  object DropButtonExtendedProps {
+    
+    inline def apply(dropContent: Element): DropButtonExtendedProps = {
+      val __obj = js.Dynamic.literal(dropContent = dropContent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DropButtonExtendedProps]
+    }
   }
-  @JSImport("grommet/components/DropButton", "DropButton")
-  @js.native
-  val DropButton: ComponentClass[
-    DropButtonProps & ButtonProps & (Omit[
-      DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-      color
-    ]), 
-    ComponentState
-  ] = js.native
   
   trait DropButtonProps extends StObject {
     
@@ -62,9 +47,9 @@ object dropButtonMod {
     
     var dropTarget: js.UndefOr[js.Object] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onClose: js.UndefOr[MouseEventHandler[HTMLDocument | HTMLButtonElement]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onOpen: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
     var open: js.UndefOr[Boolean] = js.undefined
   }
@@ -91,11 +76,11 @@ object dropButtonMod {
       
       inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
       
-      inline def setOnClose(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: MouseEvent[HTMLDocument | HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setOnOpen(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      inline def setOnOpen(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
       
       inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
@@ -104,4 +89,9 @@ object dropButtonMod {
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     }
   }
+  
+  type buttonProps = ButtonProps & (Omit[
+    DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
+    color
+  ])
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "DomEventListenerMap")
 @js.native
-class DomEventListenerMap ()
+open class DomEventListenerMap ()
   extends typings.wonderJs.domEventListenerMapMod.DomEventListenerMap
 /* static members */
 object DomEventListenerMap {

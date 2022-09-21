@@ -9,16 +9,16 @@ object Rx {
   @js.native
   trait Observable[T] extends StObject {
     
-    def toKoObservable(): js.Any = js.native
-    def toKoObservable(initialValue: T): js.Any = js.native
+    def toKoObservable(): Any = js.native
+    def toKoObservable(initialValue: T): Any = js.native
     
-    def toKoSubscribable(): js.Any = js.native
+    def toKoSubscribable(): Any = js.native
   }
   
   @js.native
   trait Subject[T] extends StObject {
     
-    def toKoObservable(): js.Any = js.native
-    def toKoObservable(initialValue: T): js.Any = js.native
+    def toKoObservable(): Any = js.native
+    def toKoObservable(initialValue: T): Any = js.native
   }
 }

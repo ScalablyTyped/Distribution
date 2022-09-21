@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/initializers", "HeUniform")
 @js.native
-class HeUniform () extends VarianceScaling {
+open class HeUniform () extends VarianceScaling {
   def this(args: SeedOnlyInitializerArgs) = this()
 }
 /* static members */

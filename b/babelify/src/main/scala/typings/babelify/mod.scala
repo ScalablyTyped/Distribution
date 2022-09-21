@@ -1,6 +1,6 @@
 package typings.babelify
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("babelify", "BabelifyObject")
   @js.native
-  class BabelifyObject () extends Transform {
+  open class BabelifyObject () extends Transform {
     def this(opts: TransformOptions) = this()
     
     def _flush(callback: js.Function0[Unit]): Unit = js.native
@@ -58,7 +58,7 @@ object mod {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setSourceMapsAbsolute(value: Boolean): Self = StObject.set(x, "sourceMapsAbsolute", value.asInstanceOf[js.Any])
       

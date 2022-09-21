@@ -119,7 +119,7 @@ trait HistoryEvent extends StObject {
   /**
     * The date and time when the event occurred.
     */
-  var eventTimestamp: Timestamp
+  var eventTimestamp: js.Date
   
   /**
     * The type of the history event.
@@ -293,7 +293,7 @@ trait HistoryEvent extends StObject {
 }
 object HistoryEvent {
   
-  inline def apply(eventId: EventId, eventTimestamp: Timestamp, eventType: EventType): HistoryEvent = {
+  inline def apply(eventId: EventId, eventTimestamp: js.Date, eventType: EventType): HistoryEvent = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], eventTimestamp = eventTimestamp.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryEvent]
   }
@@ -386,7 +386,7 @@ object HistoryEvent {
     
     inline def setEventId(value: EventId): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    inline def setEventTimestamp(value: Timestamp): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
+    inline def setEventTimestamp(value: js.Date): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
     
     inline def setEventType(value: EventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

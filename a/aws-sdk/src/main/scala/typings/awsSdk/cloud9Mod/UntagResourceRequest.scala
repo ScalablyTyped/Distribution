@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UntagResourceRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Cloud9 development environment to remove tags from.
+    * The Amazon Resource Name (ARN) of the Cloud9 development environment to remove tags from.
     */
   var ResourceARN: EnvironmentArn
   
   /**
-    * The tag names of the tags to remove from the given AWS Cloud9 development environment.
+    * The tag names of the tags to remove from the given Cloud9 development environment.
     */
   var TagKeys: TagKeyList
 }
@@ -29,6 +29,6 @@ object UntagResourceRequest {
     
     inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

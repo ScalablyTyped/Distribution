@@ -17,7 +17,7 @@ trait CompleteLifecycleActionType extends StObject {
   var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.undefined
   
   /**
-    * The action for the group to take. This parameter can be either CONTINUE or ABANDON.
+    * The action for the group to take. You can specify either CONTINUE or ABANDON.
     */
   var LifecycleActionResult: typings.awsSdk.autoscalingMod.LifecycleActionResult
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConversationRetentionSettings extends StObject {
   
   /**
-    * The number of days for which to retain chat conversation messages.
+    * The number of days for which to retain conversation messages.
     */
   var RetentionDays: js.UndefOr[typings.awsSdk.chimeMod.RetentionDays] = js.undefined
 }

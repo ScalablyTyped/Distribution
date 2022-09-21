@@ -29,6 +29,6 @@ object GooglePrivacyDlpV2ListStoredInfoTypesResponse {
     
     inline def setStoredInfoTypesUndefined: Self = StObject.set(x, "storedInfoTypes", js.undefined)
     
-    inline def setStoredInfoTypesVarargs(value: GooglePrivacyDlpV2StoredInfoType*): Self = StObject.set(x, "storedInfoTypes", js.Array(value :_*))
+    inline def setStoredInfoTypesVarargs(value: GooglePrivacyDlpV2StoredInfoType*): Self = StObject.set(x, "storedInfoTypes", js.Array(value*))
   }
 }

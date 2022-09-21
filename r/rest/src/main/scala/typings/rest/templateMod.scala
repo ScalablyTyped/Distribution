@@ -15,7 +15,7 @@ object templateMod extends Shortcut {
   
   trait Config extends StObject {
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var params: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var template: js.UndefOr[String] = js.undefined
   }
@@ -28,7 +28,7 @@ object templateMod extends Shortcut {
     
     extension [Self <: Config](x: Self) {
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       

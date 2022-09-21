@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsCore.anon
 
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
@@ -30,6 +29,8 @@ trait Bias[T /* <: Tensor3D | Tensor4D */] extends StObject {
   var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.undefined
   
   var filter: Tensor4D | TensorLike
+  
+  var leakyreluAlpha: js.UndefOr[Double] = js.undefined
   
   var pad: valid_ | same_ | Double
   
@@ -61,7 +62,7 @@ object Bias {
     
     inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
-    inline def setBiasVarargs(value: Uint8Array*): Self = StObject.set(x, "bias", js.Array(value :_*))
+    inline def setBiasVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "bias", js.Array(value*))
     
     inline def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     
@@ -77,7 +78,11 @@ object Bias {
     
     inline def setFilter(value: Tensor4D | TensorLike): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setFilterVarargs(value: Uint8Array*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "filter", js.Array(value*))
+    
+    inline def setLeakyreluAlpha(value: Double): Self = StObject.set(x, "leakyreluAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setLeakyreluAlphaUndefined: Self = StObject.set(x, "leakyreluAlpha", js.undefined)
     
     inline def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
@@ -89,6 +94,6 @@ object Bias {
     
     inline def setX(value: T | TensorLike): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setXVarargs(value: Uint8Array*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "x", js.Array(value*))
   }
 }

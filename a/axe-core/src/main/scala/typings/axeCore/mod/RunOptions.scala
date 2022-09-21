@@ -18,6 +18,8 @@ trait RunOptions extends StObject {
   
   var performanceTimer: js.UndefOr[Boolean] = js.undefined
   
+  var pingWaitTime: js.UndefOr[Double] = js.undefined
+  
   var preload: js.UndefOr[Boolean] = js.undefined
   
   var reporter: js.UndefOr[ReporterVersion] = js.undefined
@@ -26,7 +28,7 @@ trait RunOptions extends StObject {
   
   var rules: js.UndefOr[RuleObject] = js.undefined
   
-  var runOnly: js.UndefOr[RunOnly | (js.Array[String | TagValue])] = js.undefined
+  var runOnly: js.UndefOr[RunOnly | (js.Array[String | TagValue]) | String] = js.undefined
   
   var selectors: js.UndefOr[Boolean] = js.undefined
   
@@ -65,6 +67,10 @@ object RunOptions {
     
     inline def setPerformanceTimerUndefined: Self = StObject.set(x, "performanceTimer", js.undefined)
     
+    inline def setPingWaitTime(value: Double): Self = StObject.set(x, "pingWaitTime", value.asInstanceOf[js.Any])
+    
+    inline def setPingWaitTimeUndefined: Self = StObject.set(x, "pingWaitTime", js.undefined)
+    
     inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
@@ -77,17 +83,17 @@ object RunOptions {
     
     inline def setResultTypesUndefined: Self = StObject.set(x, "resultTypes", js.undefined)
     
-    inline def setResultTypesVarargs(value: resultGroups*): Self = StObject.set(x, "resultTypes", js.Array(value :_*))
+    inline def setResultTypesVarargs(value: resultGroups*): Self = StObject.set(x, "resultTypes", js.Array(value*))
     
     inline def setRules(value: RuleObject): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRunOnly(value: RunOnly | (js.Array[String | TagValue])): Self = StObject.set(x, "runOnly", value.asInstanceOf[js.Any])
+    inline def setRunOnly(value: RunOnly | (js.Array[String | TagValue]) | String): Self = StObject.set(x, "runOnly", value.asInstanceOf[js.Any])
     
     inline def setRunOnlyUndefined: Self = StObject.set(x, "runOnly", js.undefined)
     
-    inline def setRunOnlyVarargs(value: (String | TagValue)*): Self = StObject.set(x, "runOnly", js.Array(value :_*))
+    inline def setRunOnlyVarargs(value: (String | TagValue)*): Self = StObject.set(x, "runOnly", js.Array(value*))
     
     inline def setSelectors(value: Boolean): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     

@@ -10,27 +10,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JqueryFileUploadEnhancedPromise[T]
   extends StObject
-     with PromiseBase[T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any] {
+     with PromiseBase[T, Any, Any, T, Any, Any, T, Any, Any, T, Any, Any] {
   
   def complete(
-    alwaysCallback: TypeOrArray[CallbackBase[T | js.Any, T | js.Any, T | js.Any, T | js.Any]],
-    alwaysCallbacks: (TypeOrArray[CallbackBase[T | js.Any, T | js.Any, T | js.Any, T | js.Any]])*
+    alwaysCallback: TypeOrArray[CallbackBase[T | Any, T | Any, T | Any, T | Any]],
+    alwaysCallbacks: (TypeOrArray[CallbackBase[T | Any, T | Any, T | Any, T | Any]])*
   ): this.type = js.native
   @JSName("complete")
   var complete_Original: js.Function2[
-    /* alwaysCallback */ TypeOrArray[CallbackBase[T | js.Any, T | js.Any, T | js.Any, T | js.Any]], 
-    /* repeated */ TypeOrArray[CallbackBase[T | js.Any, T | js.Any, T | js.Any, T | js.Any]], 
+    /* alwaysCallback */ TypeOrArray[CallbackBase[T | Any, T | Any, T | Any, T | Any]], 
+    /* repeated */ TypeOrArray[CallbackBase[T | Any, T | Any, T | Any, T | Any]], 
     this.type
   ] = js.native
   
   def error(
-    failCallback: TypeOrArray[CallbackBase[js.Any, js.Any, js.Any, js.Any]],
-    failCallbacks: (TypeOrArray[CallbackBase[js.Any, js.Any, js.Any, js.Any]])*
+    failCallback: TypeOrArray[CallbackBase[Any, Any, Any, Any]],
+    failCallbacks: (TypeOrArray[CallbackBase[Any, Any, Any, Any]])*
   ): this.type = js.native
   @JSName("error")
   var error_Original: js.Function2[
-    /* failCallback */ TypeOrArray[CallbackBase[js.Any, js.Any, js.Any, js.Any]], 
-    /* repeated */ TypeOrArray[CallbackBase[js.Any, js.Any, js.Any, js.Any]], 
+    /* failCallback */ TypeOrArray[CallbackBase[Any, Any, Any, Any]], 
+    /* repeated */ TypeOrArray[CallbackBase[Any, Any, Any, Any]], 
     this.type
   ] = js.native
   

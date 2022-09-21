@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Dropbox.AuthDriver")
 @js.native
-class AuthDriver ()
+open class AuthDriver ()
   extends StObject
      with typings.dropboxjs.Dropbox.AuthDriver {
   
@@ -45,7 +45,7 @@ object AuthDriver {
   
   @JSGlobal("Dropbox.AuthDriver.BrowserBase")
   @js.native
-  class BrowserBase protected ()
+  open class BrowserBase protected ()
     extends StObject
        with typings.dropboxjs.Dropbox.AuthDriver.BrowserBase {
     def this(options: RememberUser) = this()
@@ -77,7 +77,7 @@ object AuthDriver {
   
   @JSGlobal("Dropbox.AuthDriver.ChromeApp")
   @js.native
-  class ChromeApp ()
+  open class ChromeApp ()
     extends StObject
        with typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver {
     def this(options: Scope) = this()
@@ -85,7 +85,7 @@ object AuthDriver {
   
   @JSGlobal("Dropbox.AuthDriver.ChromeExtension")
   @js.native
-  class ChromeExtension ()
+  open class ChromeExtension ()
     extends StObject
        with typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver {
     def this(options: ReceiverPath) = this()
@@ -102,7 +102,7 @@ object AuthDriver {
   
   @JSGlobal("Dropbox.AuthDriver.Cordova")
   @js.native
-  class Cordova ()
+  open class Cordova ()
     extends StObject
        with typings.dropboxjs.Dropbox.AuthDriver.Cordova {
     def this(options: ReceiverPath) = this()
@@ -120,13 +120,13 @@ object AuthDriver {
   /** Do not use class! TypeScript definition implementation detail : https://github.com/Microsoft/TypeScript/issues/371 */
   @JSGlobal("Dropbox.AuthDriver.IAuthDriver")
   @js.native
-  class IAuthDriver ()
+  open class IAuthDriver ()
     extends StObject
        with typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver
   
   @JSGlobal("Dropbox.AuthDriver.NodeServer")
   @js.native
-  class NodeServer ()
+  open class NodeServer ()
     extends StObject
        with typings.dropboxjs.Dropbox.AuthDriver.NodeServer {
     def this(options: Port) = this()
@@ -134,7 +134,7 @@ object AuthDriver {
   
   @JSGlobal("Dropbox.AuthDriver.Popup")
   @js.native
-  class Popup ()
+  open class Popup ()
     extends StObject
        with typings.dropboxjs.Dropbox.AuthDriver.Popup {
     def this(options: RedirectOptions) = this()
@@ -154,7 +154,7 @@ object AuthDriver {
   
   @JSGlobal("Dropbox.AuthDriver.Redirect")
   @js.native
-  class Redirect ()
+  open class Redirect ()
     extends StObject
        with typings.dropboxjs.Dropbox.AuthDriver.Redirect {
     def this(options: RedirectFile) = this()

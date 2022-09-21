@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSasportal.anon
 
-import typings.maximMazurokGapiClientSasportal.gapi.client.sasportal.SasPortalNode
+import typings.maximMazurokGapiClientSasportal.gapi.client.sasportal.SasPortalDeployment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait UpdateMask extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SasPortalNode
+  var resource: SasPortalDeployment
   
   /** Fields to be updated. */
   var updateMask: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait UpdateMask extends StObject {
 }
 object UpdateMask {
   
-  inline def apply(name: String, resource: SasPortalNode): UpdateMask = {
+  inline def apply(name: String, resource: SasPortalDeployment): UpdateMask = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMask]
   }
@@ -97,7 +97,7 @@ object UpdateMask {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SasPortalNode): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SasPortalDeployment): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RemoveSpacingAfterParagraphCommand")
 @js.native
-class RemoveSpacingAfterParagraphCommand ()
+open class RemoveSpacingAfterParagraphCommand ()
   extends StObject
      with typings.devexpressWeb.RemoveSpacingAfterParagraphCommand {
   

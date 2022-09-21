@@ -29,7 +29,7 @@ object DataTypesDrag {
     
     inline def setDataTypesUndefined: Self = StObject.set(x, "dataTypes", js.undefined)
     
-    inline def setDataTypesVarargs(value: String*): Self = StObject.set(x, "dataTypes", js.Array(value :_*))
+    inline def setDataTypesVarargs(value: String*): Self = StObject.set(x, "dataTypes", js.Array(value*))
     
     inline def setDrag(value: /* param0 */ DragEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     

@@ -5,19 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/slider.html#javascript-reference
-trait Slider extends StObject {
-  
-  def destroy(): Unit
-}
-object Slider {
-  
-  inline def apply(destroy: () => Unit): Slider = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
-    __obj.asInstanceOf[Slider]
-  }
-  
-  extension [Self <: Slider](x: Self) {
-    
-    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-  }
-}
+trait Slider extends StObject

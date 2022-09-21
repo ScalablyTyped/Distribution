@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.ReferUserAgentServer")
 @js.native
-class ReferUserAgentServer protected ()
+open class ReferUserAgentServer protected ()
   extends typings.sipJs.coreMod.ReferUserAgentServer {
   /**
     * REFER UAS constructor.

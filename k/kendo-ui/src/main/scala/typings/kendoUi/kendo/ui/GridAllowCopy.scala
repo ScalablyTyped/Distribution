@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GridAllowCopy extends StObject {
   
-  var delimeter: js.UndefOr[String | js.Any] = js.undefined
+  var delimeter: js.UndefOr[String | Any] = js.undefined
 }
 object GridAllowCopy {
   
@@ -17,7 +17,7 @@ object GridAllowCopy {
   
   extension [Self <: GridAllowCopy](x: Self) {
     
-    inline def setDelimeter(value: String | js.Any): Self = StObject.set(x, "delimeter", value.asInstanceOf[js.Any])
+    inline def setDelimeter(value: String | Any): Self = StObject.set(x, "delimeter", value.asInstanceOf[js.Any])
     
     inline def setDelimeterUndefined: Self = StObject.set(x, "delimeter", js.undefined)
   }

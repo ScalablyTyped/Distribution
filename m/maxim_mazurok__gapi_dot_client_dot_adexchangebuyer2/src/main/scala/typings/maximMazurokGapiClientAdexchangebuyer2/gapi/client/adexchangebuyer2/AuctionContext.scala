@@ -22,6 +22,6 @@ object AuctionContext {
     
     inline def setAuctionTypesUndefined: Self = StObject.set(x, "auctionTypes", js.undefined)
     
-    inline def setAuctionTypesVarargs(value: String*): Self = StObject.set(x, "auctionTypes", js.Array(value :_*))
+    inline def setAuctionTypesVarargs(value: String*): Self = StObject.set(x, "auctionTypes", js.Array(value*))
   }
 }

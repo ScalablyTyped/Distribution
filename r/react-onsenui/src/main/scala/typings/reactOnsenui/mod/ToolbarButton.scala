@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "ToolbarButton")
 @js.native
-class ToolbarButton protected ()
-  extends Component[Disabled, js.Any] {
+open class ToolbarButton protected () extends Component[Disabled, Any] {
   def this(props: HTMLAttributesidclassName & Disabled) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & Disabled, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & Disabled, context: Any) = this()
 }

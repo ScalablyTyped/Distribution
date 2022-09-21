@@ -11,11 +11,11 @@ object promiseMod {
   /**
     * Construct a new promise delegate.
     */
-  class PromiseDelegate[T] () extends StObject {
+  open class PromiseDelegate[T] () extends StObject {
     
-    /* private */ var _reject: js.Any = js.native
+    /* private */ var _reject: Any = js.native
     
-    /* private */ var _resolve: js.Any = js.native
+    /* private */ var _resolve: Any = js.native
     
     /**
       * The promise wrapped by the delegate.
@@ -27,7 +27,7 @@ object promiseMod {
       *
       * @reason - The reason for rejecting the promise.
       */
-    def reject(reason: js.Any): Unit = js.native
+    def reject(reason: Any): Unit = js.native
     
     /**
       * Resolve the wrapped promise with the given value.

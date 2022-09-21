@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "read-chunk" : "3.2.0"
+      "read-chunk" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "read-chunk" : "3.2.0"
+      "read-chunk" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

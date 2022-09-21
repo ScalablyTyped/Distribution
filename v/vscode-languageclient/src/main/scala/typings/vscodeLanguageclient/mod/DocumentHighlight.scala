@@ -13,6 +13,7 @@ object DocumentHighlight {
   /**
     * Create a DocumentHighlight object.
     * @param range The range the highlight applies to.
+    * @param kind The highlight kind
     */
   inline def create(range: typings.vscodeLanguageserverTypes.mod.Range): typings.vscodeLanguageserverTypes.mod.DocumentHighlight = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.DocumentHighlight]
   inline def create(

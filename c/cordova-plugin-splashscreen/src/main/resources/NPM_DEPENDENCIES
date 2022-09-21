@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cordova-plugin-splashscreen" : "6.0.0"
+      "cordova-plugin-splashscreen" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "cordova-plugin-splashscreen" : "6.0.0"
+      "cordova-plugin-splashscreen" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaPostUserInfo extends StObject {
   
   /**
-    * The kind of this entity. Always blogger#postUserInfo
+    * The kind of this entity. Always blogger#postUserInfo.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The Post resource.
@@ -31,6 +31,8 @@ object SchemaPostUserInfo {
   extension [Self <: SchemaPostUserInfo](x: Self) {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

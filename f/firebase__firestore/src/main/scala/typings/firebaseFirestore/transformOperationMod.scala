@@ -1,106 +1,69 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.remoteSerializerMod.JsonProtoSerializer
-import typings.firebaseFirestore.timestampMod.Timestamp
+import typings.firebaseFirestore.firestoreProtoApiMod.Value
+import typings.firebaseFirestore.liteApiTimestampMod.Timestamp
+import typings.firebaseFirestore.numberSerializerMod.Serializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/model/transform_operation", JSImport.Namespace)
-@js.native
-object transformOperationMod extends js.Object {
+object transformOperationMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/model/transform_operation", JSImport.Namespace)
   @js.native
-  class ArrayRemoveTransformOperation protected () extends TransformOperation {
-    def this(elements: js.Array[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ _
-          ]) = this()
-    @JSName("apply")
-    var apply: js.Any = js.native
-    val elements: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ _
-      ] = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/model/transform_operation", "ArrayRemoveTransformOperation")
+  @js.native
+  open class ArrayRemoveTransformOperation protected () extends TransformOperation {
+    def this(elements: js.Array[Value]) = this()
+    
+    val elements: js.Array[Value] = js.native
   }
   
+  @JSImport("@firebase/firestore/dist/firestore/src/model/transform_operation", "ArrayUnionTransformOperation")
   @js.native
-  class ArrayUnionTransformOperation protected () extends TransformOperation {
-    def this(elements: js.Array[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ _
-          ]) = this()
-    @JSName("apply")
-    var apply: js.Any = js.native
-    val elements: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ _
-      ] = js.native
+  open class ArrayUnionTransformOperation protected () extends TransformOperation {
+    def this(elements: js.Array[Value]) = this()
+    
+    val elements: js.Array[Value] = js.native
   }
   
+  @JSImport("@firebase/firestore/dist/firestore/src/model/transform_operation", "NumericIncrementTransformOperation")
   @js.native
-  class NumericIncrementTransformOperation protected () extends TransformOperation {
-    def this(
-      serializer: JsonProtoSerializer,
-      operand: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any
-    ) = this()
-    var asNumber: js.Any = js.native
-    val operand: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any = js.native
-    val serializer: js.Any = js.native
+  open class NumericIncrementTransformOperation protected () extends TransformOperation {
+    def this(serializer: Serializer, operand: Value) = this()
+    
+    val operand: Value = js.native
+    
+    val serializer: Serializer = js.native
   }
   
+  @JSImport("@firebase/firestore/dist/firestore/src/model/transform_operation", "ServerTimestampTransform")
   @js.native
-  class ServerTimestampTransform protected () extends TransformOperation
+  open class ServerTimestampTransform () extends TransformOperation
   
+  @JSImport("@firebase/firestore/dist/firestore/src/model/transform_operation", "TransformOperation")
   @js.native
-  trait TransformOperation extends js.Object {
-    /**
-      * Computes the local transform result against the provided `previousValue`,
-      * optionally using the provided localWriteTime.
-      */
-    def applyToLocalView(
-      previousValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any,
-      localWriteTime: Timestamp
-    ): js.Any = js.native
-    def applyToLocalView(previousValue: Null, localWriteTime: Timestamp): js.Any = js.native
-    def applyToRemoteDocument(): js.Any = js.native
-    def applyToRemoteDocument(
-      previousValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any
-    ): js.Any = js.native
-    /**
-      * Computes a final transform result after the transform has been acknowledged
-      * by the server, potentially using the server-provided transformResult.
-      */
-    def applyToRemoteDocument(
-      previousValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any,
-      transformResult: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any
-    ): js.Any = js.native
-    def applyToRemoteDocument(
-      previousValue: Null,
-      transformResult: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any
-    ): js.Any = js.native
-    def computeBaseValue(): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any) | Null = js.native
-    /**
-      * If this transform operation is not idempotent, returns the base value to
-      * persist for this transform. If a base value is returned, the transform
-      * operation is always applied to this base value, even if document has
-      * already been updated.
-      *
-      * Base values provide consistent behavior for non-idempotent transforms and
-      * allow us to return the same latency-compensated value even if the backend
-      * has already applied the transform operation. The base value is null for
-      * idempotent transforms, as they can be re-played even if the backend has
-      * already applied them.
-      *
-      * @return a base value to store along with the mutation, or null for
-      * idempotent transforms.
-      */
-    def computeBaseValue(
-      previousValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any
-    ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Value */ js.Any) | Null = js.native
-    def isEqual(other: TransformOperation): Boolean = js.native
+  open class TransformOperation () extends StObject {
+    
+    /* private */ @JSName("_")
+    var _underscore: Any = js.native
   }
   
-  /* static members */
-  @js.native
-  object ServerTimestampTransform extends js.Object {
-    var instance: ServerTimestampTransform = js.native
-  }
+  inline def applyNumericIncrementTransformOperationToLocalView(transform: NumericIncrementTransformOperation): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("applyNumericIncrementTransformOperationToLocalView")(transform.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def applyNumericIncrementTransformOperationToLocalView(transform: NumericIncrementTransformOperation, previousValue: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyNumericIncrementTransformOperationToLocalView")(transform.asInstanceOf[js.Any], previousValue.asInstanceOf[js.Any])).asInstanceOf[Value]
   
+  inline def applyTransformOperationToLocalView(transform: TransformOperation, previousValue: Null, localWriteTime: Timestamp): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransformOperationToLocalView")(transform.asInstanceOf[js.Any], previousValue.asInstanceOf[js.Any], localWriteTime.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def applyTransformOperationToLocalView(transform: TransformOperation, previousValue: Value, localWriteTime: Timestamp): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransformOperationToLocalView")(transform.asInstanceOf[js.Any], previousValue.asInstanceOf[js.Any], localWriteTime.asInstanceOf[js.Any])).asInstanceOf[Value]
+  
+  inline def applyTransformOperationToRemoteDocument(transform: TransformOperation): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTransformOperationToRemoteDocument")(transform.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def applyTransformOperationToRemoteDocument(transform: TransformOperation, previousValue: Null, transformResult: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransformOperationToRemoteDocument")(transform.asInstanceOf[js.Any], previousValue.asInstanceOf[js.Any], transformResult.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def applyTransformOperationToRemoteDocument(transform: TransformOperation, previousValue: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransformOperationToRemoteDocument")(transform.asInstanceOf[js.Any], previousValue.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def applyTransformOperationToRemoteDocument(transform: TransformOperation, previousValue: Value, transformResult: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransformOperationToRemoteDocument")(transform.asInstanceOf[js.Any], previousValue.asInstanceOf[js.Any], transformResult.asInstanceOf[js.Any])).asInstanceOf[Value]
+  
+  inline def computeTransformOperationBaseValue(transform: TransformOperation): Value | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTransformOperationBaseValue")(transform.asInstanceOf[js.Any]).asInstanceOf[Value | Null]
+  inline def computeTransformOperationBaseValue(transform: TransformOperation, previousValue: Value): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("computeTransformOperationBaseValue")(transform.asInstanceOf[js.Any], previousValue.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+  
+  inline def transformOperationEquals(left: TransformOperation, right: TransformOperation): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transformOperationEquals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }
-

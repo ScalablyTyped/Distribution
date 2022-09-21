@@ -1,1224 +1,708 @@
 package typings.socketIo
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.engineIo.mod.ServerAttachOptions
-import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.socketIo.anon.Except
-import typings.socketIo.anon.GenerateId
-import typings.socketIo.socketIoStrings.connect
-import typings.socketIo.socketIoStrings.connection
-import typings.std.Array
-import typings.std.RegExp
+import typings.engineIo.serverMod.AttachOptions
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.socketIo.anon.PartialServerOptions
+import typings.socketIo.anon.Typeofparser
+import typings.socketIo.broadcastOperatorMod.SocketDetails
+import typings.socketIo.clientMod.Client
+import typings.socketIo.namespaceMod.ExtendedError
+import typings.socketIo.namespaceMod.ServerReservedEventsMap
+import typings.socketIo.socketIoBooleans.`false`
+import typings.socketIo.socketIoStrings.message
+import typings.socketIo.typedEventsMod.DefaultEventsMap
+import typings.socketIo.typedEventsMod.EventNames
+import typings.socketIo.typedEventsMod.EventParams
+import typings.socketIo.typedEventsMod.EventsMap
+import typings.socketIo.typedEventsMod.StrictEventEmitter
+import typings.socketIoAdapter.mod.Adapter
+import typings.socketIoAdapter.mod.BroadcastFlags
+import typings.socketIoAdapter.mod.Room
+import typings.socketIoAdapter.mod.SocketId
+import typings.socketIoParser.mod.Encoder
+import typings.std.Map
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("socket.io", JSImport.Namespace)
+  @JSImport("socket.io", "BroadcastOperator")
+  @js.native
+  open class BroadcastOperator[EmitEvents /* <: EventsMap */, SocketData] protected ()
+    extends typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] {
+    def this(adapter: Adapter) = this()
+    def this(adapter: Adapter, rooms: Set[Room]) = this()
+    def this(adapter: Adapter, rooms: Unit, exceptRooms: Set[Room]) = this()
+    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Set[Room]) = this()
+    def this(adapter: Adapter, rooms: Unit, exceptRooms: Unit, flags: BroadcastFlags) = this()
+    def this(adapter: Adapter, rooms: Unit, exceptRooms: Set[Room], flags: BroadcastFlags) = this()
+    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Unit, flags: BroadcastFlags) = this()
+    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Set[Room], flags: BroadcastFlags) = this()
+  }
+  
+  @JSImport("socket.io", "Namespace")
+  @js.native
+  open class Namespace[ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */, ServerSideEvents /* <: EventsMap */, SocketData] protected ()
+    extends typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] {
+    /**
+      * Namespace constructor.
+      *
+      * @param server instance
+      * @param name
+      */
+    def this(server: Server[ListenEvents, EmitEvents, ServerSideEvents, SocketData], name: String) = this()
+  }
+  
+  @JSImport("socket.io", "RemoteSocket")
+  @js.native
+  open class RemoteSocket[EmitEvents /* <: EventsMap */, SocketData] protected ()
+    extends typings.socketIo.broadcastOperatorMod.RemoteSocket[EmitEvents, SocketData] {
+    def this(adapter: Adapter, details: SocketDetails[SocketData]) = this()
+  }
+  
+  @JSImport("socket.io", "Server")
   @js.native
   /**
-    * Default Server constructor
+    * Server constructor.
+    *
+    * @param srv http server, port, or options
+    * @param [opts]
+    * @public
     */
-  class ^ ()
-    extends StObject
-       with Server {
-    /**
-      * Creates a new Server
-      * @param A parameters object
-      */
-    def this(opts: ServerOptions) = this()
-    /**
-      * Creates a new Server
-      * @param port A port to bind to, as a number, or a string
-      * @param An optional parameters object
-      */
-    def this(port: String) = this()
-    def this(port: Double) = this()
-    /**
-      * Creates a new Server
-      * @param srv The HTTP server that we're going to bind to
-      * @param opts An optional parameters object
-      */
-    def this(srv: typings.node.httpMod.Server) = this()
-    def this(srv: typings.node.httpsMod.Server) = this()
-    def this(port: String, opts: ServerOptions) = this()
-    def this(port: Double, opts: ServerOptions) = this()
-    def this(srv: typings.node.httpMod.Server, opts: ServerOptions) = this()
-    def this(srv: typings.node.httpsMod.Server, opts: ServerOptions) = this()
-  }
-  @JSImport("socket.io", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SocketIOStatic = js.native
-  
-  /**
-    * Backwards compatibility
-    * @see io().listen()
-    */
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("socket.io", "listen")
-  @js.native
-  /**
-    * Default Server constructor
-    */
-  class listen ()
-    extends StObject
-       with Server {
-    /**
-      * Creates a new Server
-      * @param A parameters object
-      */
-    def this(opts: ServerOptions) = this()
-    /**
-      * Creates a new Server
-      * @param port A port to bind to, as a number, or a string
-      * @param An optional parameters object
-      */
-    def this(port: String) = this()
-    def this(port: Double) = this()
-    /**
-      * Creates a new Server
-      * @param srv The HTTP server that we're going to bind to
-      * @param opts An optional parameters object
-      */
-    def this(srv: typings.node.httpMod.Server) = this()
-    def this(srv: typings.node.httpsMod.Server) = this()
-    def this(port: String, opts: ServerOptions) = this()
-    def this(port: Double, opts: ServerOptions) = this()
-    def this(srv: typings.node.httpMod.Server, opts: ServerOptions) = this()
-    def this(srv: typings.node.httpsMod.Server, opts: ServerOptions) = this()
-  }
-  
-  /**
-    * The interface used when dealing with rooms etc
-    */
-  @js.native
-  trait Adapter
-    extends StObject
-       with EventEmitter {
+  open class Server[ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */, ServerSideEvents /* <: EventsMap */, SocketData] () extends StrictEventEmitter[
+          ServerSideEvents, 
+          EmitEvents, 
+          ServerReservedEventsMap[ListenEvents, EmitEvents, ServerSideEvents, SocketData]
+        ] {
+    def this(opts: PartialServerOptions) = this()
+    def this(srv: Double) = this()
+    def this(srv: typings.node.httpMod.Server[
+            Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              ServerResponse[IncomingMessage]
+            ]
+          ]) = this()
+    def this(srv: typings.node.httpsMod.Server[
+            Instantiable1[
+              /* socket */ typings.node.nodeNetMod.Socket, 
+              typings.node.nodeHttpMod.IncomingMessage
+            ], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            ]
+          ]) = this()
+    def this(srv: Double, opts: PartialServerOptions) = this()
+    def this(srv: Unit, opts: PartialServerOptions) = this()
+    def this(
+      srv: typings.node.httpMod.Server[
+            Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              ServerResponse[IncomingMessage]
+            ]
+          ],
+      opts: PartialServerOptions
+    ) = this()
+    def this(
+      srv: typings.node.httpsMod.Server[
+            Instantiable1[
+              /* socket */ typings.node.nodeNetMod.Socket, 
+              typings.node.nodeHttpMod.IncomingMessage
+            ], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            ]
+          ],
+      opts: PartialServerOptions
+    ) = this()
+    def this(srv: PartialServerOptions, opts: PartialServerOptions) = this()
+    
+    /* private */ var _adapter: Any = js.native
     
     /**
-      * Adds a socket to a room. If the room doesn't exist, it's created
-      * @param id The ID of the socket to add
-      * @param room The name of the room to add the socket to
-      * @param callback An optional callback to call when the socket has been
-      * added. It should take an optional parameter, error, if there was a problem
+      * Executes the middleware for an incoming namespace not already created on the server.
+      *
+      * @param name - name of incoming namespace
+      * @param auth - the auth parameters
+      * @param fn - callback
+      *
+      * @private
       */
-    def add(id: String, room: String): Unit = js.native
-    def add(id: String, room: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    @JSName("_checkNamespace")
+    def _checkNamespace_false(
+      name: String,
+      auth: StringDictionary[Any],
+      fn: js.Function1[
+          /* nsp */ (typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData]) | `false`, 
+          Unit
+        ]
+    ): Unit = js.native
     
     /**
-      * Broadcasts a packet
-      * @param packet The packet to broadcast
-      * @param opts Any options to send along:
-      *     - rooms: An optional list of rooms to broadcast to. If empty, the packet is broadcast to all sockets
-      *     - except: A list of Socket IDs to exclude
-      *     - flags: Any flags that we want to send along ('json', 'volatile', 'broadcast')
+      * @private
       */
-    def broadcast(packet: js.Any, opts: Except): Unit = js.native
+    var _connectTimeout: Double = js.native
     
     /**
-      * Removes a socket from a room. If there are no more sockets in the room,
-      * the room is deleted
-      * @param id The ID of the socket that we're removing
-      * @param room The name of the room to remove the socket from
-      * @param callback An optional callback to call when the socket has been
-      * removed. It should take on optional parameter, error, if there was a problem
+      * @private
       */
-    def del(id: String, room: String): Unit = js.native
-    def del(id: String, room: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    var _nsps: Map[
+        String, 
+        typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData]
+      ] = js.native
+    
+    /** @private */
+    val _parser: Typeofparser = js.native
+    
+    /* private */ var _path: Any = js.native
+    
+    /* private */ var _serveClient: Any = js.native
     
     /**
-      * Removes a socket from all the rooms that it's joined
-      * @param id The ID of the socket that we're removing
+      * Sets the adapter for rooms.
+      *
+      * @param v pathname
+      * @return self when setting or value when getting
+      * @public
       */
-    def delAll(id: String): Unit = js.native
+    def adapter(): js.UndefOr[AdapterConstructor] = js.native
+    def adapter(v: AdapterConstructor): this.type = js.native
     
     /**
-      * The namespace that this adapter is for
+      * Gets a list of socket ids.
+      *
+      * @public
       */
-    var nsp: Namespace = js.native
+    def allSockets(): js.Promise[Set[SocketId]] = js.native
+    
+    def attach(srv: Double): this.type = js.native
+    def attach(srv: Double, opts: PartialServerOptions): this.type = js.native
+    /**
+      * Attaches socket.io to a server or port.
+      *
+      * @param srv - server or port
+      * @param opts - options passed to engine.io
+      * @return self
+      * @public
+      */
+    def attach(
+      srv: typings.node.httpMod.Server[
+          Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): this.type = js.native
+    def attach(
+      srv: typings.node.httpMod.Server[
+          Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ],
+      opts: PartialServerOptions
+    ): this.type = js.native
+    def attach(
+      srv: typings.node.httpsMod.Server[
+          Instantiable1[
+            /* socket */ typings.node.nodeNetMod.Socket, 
+            typings.node.nodeHttpMod.IncomingMessage
+          ], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): this.type = js.native
+    def attach(
+      srv: typings.node.httpsMod.Server[
+          Instantiable1[
+            /* socket */ typings.node.nodeNetMod.Socket, 
+            typings.node.nodeHttpMod.IncomingMessage
+          ], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ],
+      opts: PartialServerOptions
+    ): this.type = js.native
+    
+    def attachApp(app: Any): Unit = js.native
+    def attachApp(app: Any, opts: PartialServerOptions): Unit = js.native
     
     /**
-      * A dictionary of all the rooms that we have in this namespace
+      * Attaches the static file serving.
+      *
+      * @param srv http server
+      * @private
       */
-    var rooms: Rooms = js.native
+    /* private */ var attachServe: Any = js.native
     
     /**
-      * A dictionary of all the socket ids that we're dealing with, and all
-      * the rooms that the socket is currently in
+      * Binds socket.io to an engine.io instance.
+      *
+      * @param {engine.Server} engine engine.io (or compatible) server
+      * @return self
+      * @public
       */
-    var sids: StringDictionary[StringDictionary[Boolean]] = js.native
-  }
-  
-  /**
-    * The client behind each socket (can have multiple sockets)
-    */
-  trait Client extends StObject {
+    def bind(engine: Any): this.type = js.native
+    
+    /* private */ var clientPathRegex: Any = js.native
     
     /**
-      * The underlying Engine.io Socket instance
+      * Closes server connection
+      *
+      * @param [fn] optional, called as `fn([err])` on error OR all conns closed
+      * @public
       */
-    var conn: EngineSocket
-    
-    /**
-      * The ID for this client. Regenerated at every connection
-      */
-    var id: String
-    
-    /**
-      * A dictionary of all the namespaces for this client, with the Socket that
-      * deals with that namespace
-      */
-    var nsps: StringDictionary[Socket]
-    
-    /**
-      * The http.IncomingMessage request sent with the connection. Useful
-      * for recovering headers etc
-      */
-    var request: js.Any
-    
-    /**
-      * The Server that this client belongs to
-      */
-    var server: Server
-    
-    /**
-      * The dictionary of sockets currently connect via this client (i.e. to different
-      * namespaces) where the Socket ID is the key
-      */
-    var sockets: StringDictionary[Socket]
-  }
-  object Client {
-    
-    inline def apply(
-      conn: EngineSocket,
-      id: String,
-      nsps: StringDictionary[Socket],
-      request: js.Any,
-      server: Server,
-      sockets: StringDictionary[Socket]
-    ): Client = {
-      val __obj = js.Dynamic.literal(conn = conn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nsps = nsps.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], sockets = sockets.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Client]
-    }
-    
-    extension [Self <: Client](x: Self) {
-      
-      inline def setConn(value: EngineSocket): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setNsps(value: StringDictionary[Socket]): Self = StObject.set(x, "nsps", value.asInstanceOf[js.Any])
-      
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
-      
-      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
-      
-      inline def setSockets(value: StringDictionary[Socket]): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /**
-    * A reference to the underlying engine.io Socket connection.
-    */
-  @js.native
-  trait EngineSocket
-    extends StObject
-       with EventEmitter {
-    
-    /**
-      * The ID for this socket - matches Client.id
-      */
-    var id: String = js.native
-    
-    /**
-      * The ready state for the client. Either 'opening', 'open', 'closing', or 'closed'
-      */
-    var readyState: String = js.native
-    
-    /**
-      * The remote IP for this connection
-      */
-    var remoteAddress: String = js.native
-    
-    /**
-      * (http.IncomingMessage): request that originated the Socket
-      */
-    var request: js.Any = js.native
-    
-    /**
-      * The Engine.io Server for this socket
-      */
-    var server: js.Any = js.native
-    
-    /**
-      * (Transport): transport reference
-      */
-    var transport: js.Any = js.native
-    
-    /**
-      * whether the transport has been upgraded
-      */
-    var upgraded: Boolean = js.native
-  }
-  
-  trait Handshake extends StObject {
-    
-    /**
-      * The remote address of the connection request
-      */
-    var address: String
-    
-    /**
-      * The headers passed along with the request. e.g. 'host',
-      * 'connection', 'accept', 'referer', 'cookie'
-      */
-    var headers: js.Any
-    
-    /**
-      * The timestamp for when this was issued
-      */
-    var issued: Double
-    
-    /**
-      * Any query string parameters in the request url
-      */
-    var query: js.Any
-    
-    /**
-      * Is this a secure request?
-      */
-    var secure: Boolean
-    
-    /**
-      * The current time, as a string
-      */
-    var time: String
-    
-    /**
-      * The request url
-      */
-    var url: String
-    
-    /**
-      * Is this a cross-domain request?
-      */
-    var xdomain: Boolean
-  }
-  object Handshake {
-    
-    inline def apply(
-      address: String,
-      headers: js.Any,
-      issued: Double,
-      query: js.Any,
-      secure: Boolean,
-      time: String,
-      url: String,
-      xdomain: Boolean
-    ): Handshake = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], issued = issued.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], xdomain = xdomain.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Handshake]
-    }
-    
-    extension [Self <: Handshake](x: Self) {
-      
-      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
-      
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      inline def setIssued(value: Double): Self = StObject.set(x, "issued", value.asInstanceOf[js.Any])
-      
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-      
-      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
-      
-      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
-      
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-      
-      inline def setXdomain(value: Boolean): Self = StObject.set(x, "xdomain", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /**
-    * The Namespace, sandboxed environments for sockets, each connection
-    * to a Namespace requires a new Socket
-    */
-  @js.native
-  trait Namespace
-    extends StObject
-       with EventEmitter {
-    
-    /**
-      * The Adapter that we're using to handle dealing with rooms etc
-      */
-    var adapter: Adapter = js.native
-    
-    /**
-      * Gets a list of clients.
-      * @return This Namespace
-      */
-    def clients(fn: js.Function): Namespace = js.native
+    def close(): Unit = js.native
+    def close(fn: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     /**
       * Sets the compress flag.
-      * @param compress If `true`, compresses the sending data
-      * @return This Namespace
-      */
-    def compress(compress: Boolean): Namespace = js.native
-    
-    /**
-      * A dictionary of all the Sockets connected to this Namespace, where
-      * the Socket ID is the key
-      */
-    var connected: StringDictionary[Socket] = js.native
-    
-    /**
-      * @see to( room )
-      */
-    def in(room: String): Namespace = js.native
-    
-    /**
-      * Sets the 'json' flag when emitting an event
-      */
-    var json: Namespace = js.native
-    
-    /**
-      * The name of the NameSpace
-      */
-    var name: String = js.native
-    
-    /**
-      * Base 'on' method to add a listener for an event
-      * @param event The event that we want to add a listener for
-      * @param listener The callback to call when we get the event. The parameters
-      * for the callback depend on the event
-      * @ This Namespace
-      */
-    def on(event: String, listener: js.Function): this.type = js.native
-    /**
-      * @see on( 'connection', listener )
-      */
-    @JSName("on")
-    def on_connect(event: connect, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    /**
-      * The event fired when we get a new connection
-      * @param event The event being fired: 'connection'
-      * @param listener A listener that should take one parameter of type Socket
-      * @return This Namespace
-      */
-    @JSName("on")
-    def on_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    
-    /**
-      * Sends a 'message' event
-      * @see emit( event, ...args )
-      * @return This Namespace
-      */
-    def send(args: js.Any*): Namespace = js.native
-    
-    /**
-      * The controller Server for this Namespace
-      */
-    var server: Server = js.native
-    
-    /**
-      * A dictionary of all the Sockets connected to this Namespace, where
-      * the Socket ID is the key
-      */
-    var sockets: StringDictionary[Socket] = js.native
-    
-    /**
-      * Targets a room when emitting
-      * @param room The name of the room that we're targeting
-      * @return This Namespace
-      */
-    def to(room: String): Namespace = js.native
-    
-    /**
-      * Registers a middleware function, which is a function that gets executed
-      * for every incoming Socket
-      * @param fn The function to call when we get a new incoming socket. It should
-      * take one parameter of type Socket, and one callback function to call to
-      * execute the next middleware function. The callback can take one optional
-      * parameter, err, if there was an error. Errors passed to middleware callbacks
-      * are sent as special 'error' packets to clients
-      * @return This Namespace
-      */
-    def use(
-      fn: js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
-    ): Namespace = js.native
-    
-    /**
-      * @see send( ...args )
-      */
-    def write(args: js.Any*): Namespace = js.native
-  }
-  
-  @js.native
-  trait Packet
-    extends StObject
-       with Array[js.Any]
-  
-  /**
-    * The interface describing a room
-    */
-  trait Room extends StObject {
-    
-    var length: Double
-    
-    var sockets: StringDictionary[Boolean]
-  }
-  object Room {
-    
-    inline def apply(length: Double, sockets: StringDictionary[Boolean]): Room = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], sockets = sockets.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Room]
-    }
-    
-    extension [Self <: Room](x: Self) {
-      
-      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-      
-      inline def setSockets(value: StringDictionary[Boolean]): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /**
-    * The interface describing a dictionary of rooms
-    * Where room is the name of the room
-    */
-  type Rooms = StringDictionary[Room]
-  
-  @js.native
-  trait Server extends StObject {
-    
-    /**
-      * Gets the adapter that we're going to use for handling rooms
-      * @default typeof Adapter
-      */
-    def adapter(): js.Any = js.native
-    /**
-      * Sets the adapter (class) that we're going to use for handling rooms
-      * @param v The class for the adapter to create
-      * @default typeof Adapter
-      * @return This Server
-      */
-    def adapter(v: js.Any): Server = js.native
-    
-    // Socket inherits the following methods from NodeJS.EventEmitter
-    // https://github.com/socketio/socket.io/blob/2.1.1/lib/socket.js#L81
-    /**
-      * Alias for `on`
-      * @param event The event that we want to add a listener for
-      * @param listener The callback to call when we get the event. The parameters
-      * for the callback depend on the event
-      * @return The default '/' Namespace
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @param compress - if `true`, compresses the sending data
+      * @return self
+      * @public
       */
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Namespace = js.native
+    def compress(compress: Boolean): typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
+    
+    def connectTimeout(): this.type | Double = js.native
+    /**
+      * Set the delay after which a client without namespace is closed
+      * @param v
+      * @public
+      */
+    def connectTimeout(v: Double): this.type = js.native
+    @JSName("connectTimeout")
+    def connectTimeout_Double(): Double = js.native
+    @JSName("connectTimeout")
+    def connectTimeout_Union(v: Double): this.type | Double = js.native
     
     /**
-      * Attaches socket.io to a port
-      * @param port The port that we want to attach to
-      * @param opts An optional parameters object
-      * @return This Server
-      */
-    def attach(port: Double): Server = js.native
-    def attach(port: Double, opts: ServerOptions): Server = js.native
-    /**
-      * Attaches socket.io to a server
-      * @param srv The http.Server that we want to attach to
-      * @param opts An optional parameters object
-      * @return This Server
-      */
-    def attach(srv: typings.node.httpMod.Server): Server = js.native
-    def attach(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
-    def attach(srv: typings.node.httpsMod.Server): Server = js.native
-    def attach(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
-    
-    /**
-      * Binds socket.io to an engine.io instance
-      * @param src The Engine.io (or compatible) server to bind to
-      * @return This Server
-      */
-    def bind(srv: js.Any): Server = js.native
-    
-    /**
-      * Server request verification function, that checks for allowed origins
-      * @param req The http.IncomingMessage request
-      * @param fn The callback to be called. It should take one parameter, err,
-      * which will be null if there was no problem, and one parameter, success,
-      * of type boolean
-      */
-    def checkRequest(req: js.Any, fn: js.Function2[/* err */ js.Any, /* success */ Boolean, Unit]): Unit = js.native
-    
-    /**
-      * Gets a list of clients
-      * @return The default '/' Namespace
-      */
-    def clients(args: js.Any*): Namespace = js.native
-    
-    /**
-      * Closes the server connection
-      */
-    def close(): Unit = js.native
-    def close(fn: js.Function0[Unit]): Unit = js.native
-    
-    /**
-      * Sets the compress flag
-      * @return The default '/' Namespace
-      */
-    def compress(args: js.Any*): Namespace = js.native
-    
-    /**
-      * Emits an event to the default Namespace
-      * @param event The event that we want to emit
-      * @param args Any number of optional arguments to pass with the event. If the
-      * last argument is a function, it will be called as an ack. The ack should
-      * take whatever data was sent with the packet
-      * @return The default '/' Namespace
-      */
-    def emit(event: String, args: js.Any*): Namespace = js.native
-    
-    var engine: GenerateId = js.native
-    
-    /**
-      * Gets an array of events for which listeners have been registered
-      * @param event The event that we want to add a listener for
-      * @return An array listing the events for which the emitter has registered listeners
+      * Makes the matching socket instances disconnect
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @param close - whether to close the underlying connection
+      * @public
       */
-    def eventNames(): js.Array[String] = js.native
+    def disconnectSockets(): Unit = js.native
+    def disconnectSockets(close: Boolean): Unit = js.native
+    
+    /* private */ var eio: Any = js.native
+    
+    /** @private */
+    val encoder: Encoder = js.native
     
     /**
-      * Gets the max amount of event listeners
-      * @return The max amount of allowed event listeners.
+      * A reference to the underlying Engine.IO server.
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
-      */
-    def getMaxListeners(): Double = js.native
-    
-    /**
-      * @see to( room )
-      */
-    def in(room: String): Namespace = js.native
-    
-    /**
-      * Sets the 'json' flag when emitting an event
-      */
-    var json: Server = js.native
-    
-    /**
-      * @see attach( port, opts )
-      */
-    def listen(port: Double): Server = js.native
-    def listen(port: Double, opts: ServerOptions): Server = js.native
-    /**
-      * @see attach( srv, opts )
-      */
-    def listen(srv: typings.node.httpMod.Server): Server = js.native
-    def listen(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
-    def listen(srv: typings.node.httpsMod.Server): Server = js.native
-    def listen(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
-    
-    /**
-      * Gets the number of listeners listening to the event.
-      * @param event The event to retrieve the total listener count for
-      * @return The total number of listeners listening to the event
+      * Example:
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
-      */
-    def listenerCount(`type`: String): Double = js.native
-    
-    /**
-      * Gets a copy of all listeners for an event.
-      * @param event The event to retrieve all listeners for
-      * @return A copy of the array of listeners for the event
+      * <code>
+      *   const clientsCount = io.engine.clientsCount;
+      * </code>
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
       */
-    def listeners(event: String): js.Array[js.Function] = js.native
+    var engine: Any = js.native
     
+    def except(name: js.Array[Room]): typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
     /**
-      * Sets a modifier for a subsequent event emission that the event data will only be broadcast to the current node
-      */
-    var local: Server = js.native
-    
-    /**
-      * A dictionary of all the namespaces currently on this Server
-      */
-    var nsps: StringDictionary[Namespace] = js.native
-    
-    /**
-      * Looks up/creates a Namespace
-      * @param nsp The name of the NameSpace to look up/create. Should start
-      * with a '/'
-      * @return The Namespace
-      */
-    def of(nsp: String): Namespace = js.native
-    def of(nsp: js.Function): Namespace = js.native
-    def of(nsp: RegExp): Namespace = js.native
-    
-    /**
-      * Alias for `removeListener`
-      * @param event The event that we want to add a listener for
-      * @param listener The callback to remove from the event event. Must be
-      * the exact function reference that was added
-      * @return The default '/' Namespace
+      * Excludes a room when emitting.
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @param name
+      * @return self
+      * @public
       */
-    def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Namespace = js.native
+    def except(name: Room): typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
     
     /**
-      * Base 'on' method to add a listener for an event
-      * @param event The event that we want to add a listener for
-      * @param listener The callback to call when we get the event. The parameters
-      * for the callback depend on the event
-      * @return The default '/' Namespace
-      */
-    def on(event: String, listener: js.Function): Namespace = js.native
-    /**
-      * @see on( 'connection', listener )
-      */
-    @JSName("on")
-    def on_connect(event: connect, listener: js.Function1[/* socket */ Socket, Unit]): Namespace = js.native
-    /**
-      * The event fired when we get a new connection
-      * @param event The event being fired: 'connection'
-      * @param listener A listener that should take one parameter of type Socket
-      * @return The default '/' Namespace
-      */
-    @JSName("on")
-    def on_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): Namespace = js.native
-    
-    /**
-      * Adds a one-time listener for an event
-      * @param event The event that we want to add a listener for
-      * @param listener The callback to call when we get the event. The parameters
-      * for the callback depend on the event
-      * @return The default '/' Namespace
+      * Returns the matching socket instances
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @public
       */
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Namespace = js.native
+    def fetchSockets(): js.Promise[
+        js.Array[typings.socketIo.broadcastOperatorMod.RemoteSocket[EmitEvents, SocketData]]
+      ] = js.native
+    
+    /* private */ var httpServer: Any = js.native
+    
+    def in(room: js.Array[Room]): typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
+    /**
+      * Targets a room when emitting.
+      *
+      * @param room
+      * @return self
+      * @public
+      */
+    def in(room: Room): typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
     
     /**
-      * Called with each incoming connection
-      * @param socket The Engine.io Socket
-      * @return This Server
+      * Initialize engine
+      *
+      * @param srv - the server to attach to
+      * @param opts - options passed to engine.io
+      * @private
       */
-    def onconnection(socket: js.Any): Server = js.native
+    /* private */ var initEngine: Any = js.native
+    
+    def listen(srv: Double): this.type = js.native
+    def listen(srv: Double, opts: PartialServerOptions): this.type = js.native
+    /**
+      * Attaches socket.io to a server or port.
+      *
+      * @param srv - server or port
+      * @param opts - options passed to engine.io
+      * @return self
+      * @public
+      */
+    def listen(
+      srv: typings.node.httpMod.Server[
+          Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): this.type = js.native
+    def listen(
+      srv: typings.node.httpMod.Server[
+          Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ],
+      opts: PartialServerOptions
+    ): this.type = js.native
+    def listen(
+      srv: typings.node.httpsMod.Server[
+          Instantiable1[
+            /* socket */ typings.node.nodeNetMod.Socket, 
+            typings.node.nodeHttpMod.IncomingMessage
+          ], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): this.type = js.native
+    def listen(
+      srv: typings.node.httpsMod.Server[
+          Instantiable1[
+            /* socket */ typings.node.nodeNetMod.Socket, 
+            typings.node.nodeHttpMod.IncomingMessage
+          ], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ],
+      opts: PartialServerOptions
+    ): this.type = js.native
     
     /**
-      * Gets the allowed origins for requests
-      * @default "*:*"
+      * Sets a modifier for a subsequent event emission that the event data will only be broadcast to the current node.
+      *
+      * @return self
+      * @public
       */
-    def origins(): String | js.Array[String] = js.native
+    def local: typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
+    
     /**
-      * Provides a function taking two arguments origin:String
-      * and callback(error, success), where success is a boolean
-      * value indicating whether origin is allowed or not. If
-      * success is set to false, error must be provided as a string
-      * value that will be appended to the server response, e.g. “Origin not allowed”.
-      * @param fn The function that will be called to check the origin
-      * return This Server
+      * Looks up a namespace.
+      *
+      * @param {String|RegExp|Function} name nsp name
+      * @param fn optional, nsp `connection` ev handler
+      * @public
       */
-    def origins(
-      fn: js.Function2[
-          /* origin */ String, 
-          /* callback */ js.Function2[/* error */ String | Null, /* success */ Boolean, Unit], 
+    def of(name: String): typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
+    def of(
+      name: String,
+      fn: js.Function1[
+          /* socket */ typings.socketIo.socketMod.Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData], 
           Unit
         ]
-    ): Server = js.native
-    /**
-      * Sets the allowed origins for requests
-      * @param v The allowed origins, in host:port form
-      * @default "*:*"
-      * return This Server
-      */
-    def origins(v: String): Server = js.native
-    def origins(v: js.Array[String]): Server = js.native
+    ): typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
+    def of(name: js.RegExp): typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
+    def of(
+      name: js.RegExp,
+      fn: js.Function1[
+          /* socket */ typings.socketIo.socketMod.Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData], 
+          Unit
+        ]
+    ): typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
+    def of(name: ParentNspNameMatchFn): typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
+    def of(
+      name: ParentNspNameMatchFn,
+      fn: js.Function1[
+          /* socket */ typings.socketIo.socketMod.Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData], 
+          Unit
+        ]
+    ): typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
     
     /**
-      * Gets the client serving path
-      * @default '/socket.io'
+      * Called with each incoming transport connection.
+      *
+      * @param {engine.Socket} conn
+      * @return self
+      * @private
       */
+    /* private */ var onconnection: Any = js.native
+    
+    /* private */ var opts: Any = js.native
+    
+    /* private */ var parentNsps: Any = js.native
+    
     def path(): String = js.native
     /**
-      * Sets the client serving path
-      * @param v The path to serve the client file on
-      * @default '/socket.io'
-      * @return This Server
-      */
-    def path(v: String): Server = js.native
-    
-    /**
-      * Adds the listener function to the _beginning_ of the listeners array for the event
-      * @param event The event that we want to add a listener for
-      * @param listener The callback to call when we get the event. The parameters
-      * for the callback depend on the event
-      * @return The default '/' Namespace
+      * Sets the client serving path.
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @param {String} v pathname
+      * @return {Server|String} self when setting or value when getting
+      * @public
       */
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Namespace = js.native
+    def path(v: String): this.type = js.native
+    @JSName("path")
+    def path_Union(): this.type | String = js.native
+    @JSName("path")
+    def path_Union(v: String): this.type | String = js.native
     
     /**
-      * Adds a one-time listener function to the _beginning_ of the listeners array for the event
-      * @param event The event that we want to add a listener for
-      * @param listener The callback to call when we get the event. The parameters
-      * for the callback depend on the event
-      * @return The default '/' Namespace
+      * Sends a `message` event to all clients.
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @return self
+      * @public
       */
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Namespace = js.native
+    @JSName("send")
+    def send_message(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<EmitEvents, 'message'> is not an array type */ args: EventParams[EmitEvents, message]
+    ): this.type = js.native
     
     /**
-      * Get a copy of all listeners for an event, including one-time events.
-      * @param event The event to retrieve all listeners for
-      * @return A copy of the array of listeners for the event,
-      * including any wrappers (such as those created by .once()).
+      * Handles a request serving of client source and map
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @param req
+      * @param res
+      * @private
       */
-    def rawListeners(event: String): js.Array[js.Function] = js.native
+    /* private */ var serve: Any = js.native
     
+    def serveClient(): this.type | Boolean = js.native
     /**
-      * Removes all listeners, or those of the specified event
-      * @param event The event to remove all listeners for, if omitted
-      * all events will be removed
-      * @return The default '/' Namespace
+      * Sets/gets whether client code is being served.
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @param v - whether to serve client code
+      * @return self when setting or value when getting
+      * @public
       */
-    def removeAllListeners(): Namespace = js.native
-    def removeAllListeners(event: String): Namespace = js.native
+    def serveClient(v: Boolean): this.type = js.native
+    @JSName("serveClient")
+    def serveClient_Boolean(): Boolean = js.native
+    @JSName("serveClient")
+    def serveClient_Union(v: Boolean): this.type | Boolean = js.native
     
     /**
-      * Removes a specific listener for an event
-      * @param event The event that we want to add a listener for
-      * @param listener The callback to remove from the event event. Must be
-      * the exact function reference that was added
-      * @return The default '/' Namespace
+      * Emit a packet to other Socket.IO servers
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @param ev - the event name
+      * @param args - an array of arguments, which may include an acknowledgement callback at the end
+      * @public
       */
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Namespace = js.native
+    def serverSideEmit[Ev /* <: EventNames[ServerSideEvents] */](
+      ev: Ev,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<ServerSideEvents, Ev> is not an array type */ args: EventParams[ServerSideEvents, Ev]
+    ): Boolean = js.native
     
-    /**
-      * Sends a 'message' event
-      * @see emit( event, ...args )
-      * @return The default '/' Namespace
-      */
-    def send(args: js.Any*): Namespace = js.native
+    val sockets: typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
     
+    def socketsJoin(room: js.Array[Room]): Unit = js.native
     /**
-      * Gets whether we're serving the client.js file or not
-      * @default true
-      */
-    def serveClient(): Boolean = js.native
-    /**
-      * Sets whether we're serving the client.js file or not
-      * @param v True if we want to serve the file, false otherwise
-      * @default true
-      * @return This Server
-      */
-    def serveClient(v: Boolean): Server = js.native
-    
-    /**
-      * Sets the max amount of event listeners
-      * @param n The max amount of allowed event listeners.
-      * @return The default '/' Namespace
+      * Makes the matching socket instances join the specified rooms
       *
-      * _Inherited from EventEmitter - https://nodejs.org/api/events.html_
+      * @param room
+      * @public
       */
-    def setMaxListeners(n: Double): Namespace = js.native
+    def socketsJoin(room: Room): Unit = js.native
+    
+    def socketsLeave(room: js.Array[Room]): Unit = js.native
+    /**
+      * Makes the matching socket instances leave the specified rooms
+      *
+      * @param room
+      * @public
+      */
+    def socketsLeave(room: Room): Unit = js.native
     
     /**
-      * The default '/' Namespace
+      * Adds a timeout in milliseconds for the next operation
+      *
+      * <pre><code>
+      *
+      * io.timeout(1000).emit("some-event", (err, responses) => {
+      *   // ...
+      * });
+      *
+      * </pre></code>
+      *
+      * @param timeout
       */
-    var sockets: Namespace = js.native
+    def timeout(timeout: Double): typings.socketIo.broadcastOperatorMod.BroadcastOperator[EventsMap, Any] = js.native
+    
+    def to(room: js.Array[Room]): typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
+    /**
+      * Targets a room when emitting.
+      *
+      * @param room
+      * @return self
+      * @public
+      */
+    def to(room: Room): typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
     
     /**
-      * Targets a room when emitting to the default '/' Namespace
-      * @param room The name of the room that we're targeting
-      * @return The default '/' Namespace
-      */
-    def to(room: String): Namespace = js.native
-    
-    /**
-      * Registers a middleware function, which is a function that gets executed
-      * for every incoming Socket, on the default '/' Namespace
-      * @param fn The function to call when we get a new incoming socket. It should
-      * take one parameter of type Socket, and one callback function to call to
-      * execute the next middleware function. The callback can take one optional
-      * parameter, err, if there was an error. Errors passed to middleware callbacks
-      * are sent as special 'error' packets to clients
-      * @return The default '/' Namespace
+      * Sets up namespace middleware.
+      *
+      * @return self
+      * @public
       */
     def use(
-      fn: js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
-    ): Namespace = js.native
+      fn: js.Function2[
+          /* socket */ typings.socketIo.socketMod.Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData], 
+          /* next */ js.Function1[/* err */ js.UndefOr[ExtendedError], Unit], 
+          Unit
+        ]
+    ): this.type = js.native
     
     /**
-      * Sets a modifier for a subsequent event emission that the event data may be lost if the clients are not ready to receive messages
+      * Sets a modifier for a subsequent event emission that the event data may be lost if the client is not ready to
+      * receive messages (because of network slowness or other issues, or because they’re connected through long polling
+      * and is in the middle of a request-response cycle).
+      *
+      * @return self
+      * @public
       */
-    var volatile: Server = js.native
+    def volatile: typings.socketIo.broadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
     
     /**
-      * @see send( ...args )
+      * Sends a `message` event to all clients.
+      *
+      * @return self
+      * @public
       */
-    def write(args: js.Any*): Namespace = js.native
+    @JSName("write")
+    def write_message(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<EmitEvents, 'message'> is not an array type */ args: EventParams[EmitEvents, message]
+    ): this.type = js.native
+  }
+  /* static members */
+  object Server {
+    
+    @JSImport("socket.io", "Server")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @param filename
+      * @param req
+      * @param res
+      * @private
+      */
+    @JSImport("socket.io", "Server.sendFile")
+    @js.native
+    def sendFile: Any = js.native
+    inline def sendFile_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sendFile")(x.asInstanceOf[js.Any])
   }
   
-  /**
-    * Options to pass to our server when creating it
-    */
+  @JSImport("socket.io", "Socket")
+  @js.native
+  open class Socket[ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */, ServerSideEvents /* <: EventsMap */, SocketData] protected ()
+    extends typings.socketIo.socketMod.Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData] {
+    /**
+      * Interface to a `Client` for a given `Namespace`.
+      *
+      * @param {Namespace} nsp
+      * @param {Client} client
+      * @param {Object} auth
+      * @package
+      */
+    def this(
+      nsp: typings.socketIo.namespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, Any],
+      client: Client[ListenEvents, EmitEvents, ServerSideEvents, Any],
+      auth: js.Object
+    ) = this()
+  }
+  
+  type AdapterConstructor = (Instantiable1[/* nsp */ Any, Adapter]) | (js.Function1[
+    /* nsp */ typings.socketIo.namespaceMod.Namespace[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any], 
+    Adapter
+  ])
+  
+  type ParentNspNameMatchFn = js.Function3[
+    /* name */ String, 
+    /* auth */ StringDictionary[Any], 
+    /* fn */ js.Function2[/* err */ js.Error | Null, /* success */ Boolean, Unit], 
+    Unit
+  ]
+  
   trait ServerOptions
     extends StObject
-       with ServerAttachOptions {
+       with typings.engineIo.serverMod.ServerOptions
+       with AttachOptions {
     
     /**
-      * The adapter to use for handling rooms. NOTE: this should be a class,
-      * not an object
-      * @default typeof Adapter
+      * the adapter to use
+      * @default the in-memory adapter (https://github.com/socketio/socket.io-adapter)
       */
-    var adapter: js.UndefOr[Adapter] = js.undefined
+    var adapter: AdapterConstructor
     
     /**
-      * Accepted origins
-      * @default '*:*'
+      * how many ms before a client without namespace is closed
+      * @default 45000
       */
-    var origins: js.UndefOr[String | js.Array[String]] = js.undefined
+    var connectTimeout: Double
     
     /**
-      * Should we serve the client file?
+      * the parser to use
+      * @default the default parser (https://github.com/socketio/socket.io-parser)
+      */
+    var parser: Any
+    
+    /**
+      * whether to serve the client files
       * @default true
       */
-    var serveClient: js.UndefOr[Boolean] = js.undefined
+    var serveClient: Boolean
   }
   object ServerOptions {
     
-    inline def apply(): ServerOptions = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(adapter: AdapterConstructor, connectTimeout: Double, parser: Any, serveClient: Boolean): ServerOptions = {
+      val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], connectTimeout = connectTimeout.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], serveClient = serveClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerOptions]
     }
     
     extension [Self <: ServerOptions](x: Self) {
       
-      inline def setAdapter(value: Adapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: AdapterConstructor): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterFunction1(
+        value: /* nsp */ typings.socketIo.namespaceMod.Namespace[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any] => Adapter
+      ): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
       
-      inline def setOrigins(value: String | js.Array[String]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
-      inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
-      
-      inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setParser(value: Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
       inline def setServeClient(value: Boolean): Self = StObject.set(x, "serveClient", value.asInstanceOf[js.Any])
-      
-      inline def setServeClientUndefined: Self = StObject.set(x, "serveClient", js.undefined)
     }
   }
-  
-  /**
-    * The socket, which handles our connection for a namespace. NOTE: while
-    * we technically extend NodeJS.EventEmitter, we're not putting it here
-    * as we have a problem with the emit() event (as it's overridden with a
-    * different return)
-    */
-  @js.native
-  trait Socket
-    extends StObject
-       with EventEmitter {
-    
-    /**
-      * The Adapter that we use to handle our rooms
-      */
-    var adapter: Adapter = js.native
-    
-    /**
-      * Sets the 'broadcast' flag when emitting an event. Broadcasting an event
-      * will send it to all the other sockets in the namespace except for yourself
-      */
-    var broadcast: Socket = js.native
-    
-    /**
-      * The Client associated with this Socket
-      */
-    var client: Client = js.native
-    
-    /**
-      * Sets the compress flag
-      * @param compress If `true`, compresses the sending data
-      * @return This Socket
-      */
-    def compress(compress: Boolean): Socket = js.native
-    
-    /**
-      * The underlying Engine.io Socket instance
-      */
-    var conn: EngineSocket = js.native
-    
-    /**
-      * Is the Socket currently connected?
-      */
-    var connected: Boolean = js.native
-    
-    /**
-      * Disconnects this Socket
-      * @param close If true, also closes the underlying connection
-      * @return This Socket
-      */
-    def disconnect(): Socket = js.native
-    def disconnect(close: Boolean): Socket = js.native
-    
-    /**
-      * Is the Socket currently disconnected?
-      */
-    var disconnected: Boolean = js.native
-    
-    /**
-      * Emits the error
-      * @param err Error message=
-      */
-    def error(err: js.Any): Unit = js.native
-    
-    /**
-      * The object used when negociating the handshake
-      */
-    var handshake: Handshake = js.native
-    
-    /**
-      * The unique ID for this Socket. Regenerated at every connection. This is
-      * also the name of the room that the Socket automatically joins on connection
-      */
-    var id: String = js.native
-    
-    /**
-      * @see to( room )
-      */
-    def in(room: String): Socket = js.native
-    
-    /**
-      * Joins a room. You can join multiple rooms, and by default, on connection,
-      * you join a room with the same name as your ID
-      * @param name The name of the room that we want to join
-      * @param fn An optional callback to call when we've joined the room. It should
-      * take an optional parameter, err, of a possible error
-      * @return This Socket
-      */
-    def join(name: String): Socket = js.native
-    def join(name: String, fn: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Socket = js.native
-    def join(name: js.Array[String]): Socket = js.native
-    def join(name: js.Array[String], fn: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Socket = js.native
-    
-    /**
-      * Sets the 'json' flag when emitting an event
-      */
-    var json: Socket = js.native
-    
-    /**
-      * Leaves a room
-      * @param name The name of the room to leave
-      * @param fn An optional callback to call when we've left the room. It should
-      * take on optional parameter, err, of a possible error
-      */
-    def leave(name: String): Socket = js.native
-    def leave(name: String, fn: js.Function): Socket = js.native
-    
-    /**
-      * Leaves all the rooms that we've joined
-      */
-    def leaveAll(): Unit = js.native
-    
-    /**
-      * The namespace that this socket is for
-      */
-    var nsp: Namespace = js.native
-    
-    /**
-      * The http.IncomingMessage request sent with the connection. Useful
-      * for recovering headers etc
-      */
-    var request: js.Any = js.native
-    
-    /**
-      * The list of rooms that this Socket is currently in, where
-      * the ID the the room ID
-      */
-    var rooms: StringDictionary[String] = js.native
-    
-    /**
-      * Sends a 'message' event
-      * @see emit( event, ...args )
-      */
-    def send(args: js.Any*): Socket = js.native
-    
-    /**
-      * The Server that our namespace is in
-      */
-    var server: Server = js.native
-    
-    /**
-      * Targets a room when broadcasting
-      * @param room The name of the room that we're targeting
-      * @return This Socket
-      */
-    def to(room: String): Socket = js.native
-    
-    /**
-      * Registers a middleware, which is a function that gets executed for every incoming Packet and receives as parameter the packet and a function to optionally defer execution to the next registered middleware.
-      *
-      * Errors passed to middleware callbacks are sent as special error packets to clients.
-      */
-    def use(
-      fn: js.Function2[
-          /* packet */ Packet, 
-          /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
-          Unit
-        ]
-    ): Socket = js.native
-    
-    /**
-      * Sets the 'volatile' flag when emitting an event. Volatile messages are
-      * messages that can be dropped because of network issues and the like. Use
-      * for high-volume/real-time messages where you don't need to receive *all*
-      * of them
-      */
-    var volatile: Socket = js.native
-    
-    /**
-      * @see send( ...args )
-      */
-    def write(args: js.Any*): Socket = js.native
-  }
-  
-  @js.native
-  trait SocketIOStatic
-    extends StObject
-       with /**
-    * Creates a new Server
-    * @param A parameters object
-    */
-  /**
-    * Creates a new Server
-    * @param port A port to bind to, as a number, or a string
-    * @param An optional parameters object
-    */
-  /**
-    * Creates a new Server
-    * @param srv The HTTP server that we're going to bind to
-    * @param opts An optional parameters object
-    */
-  Instantiable1[
-          (/* port */ Double) | (/* srv */ typings.node.httpMod.Server) | (/* srv */ typings.node.httpsMod.Server) | (/* opts */ ServerOptions) | (/* port */ String), 
-          Server
-        ]
-       with /**
-    * Default Server constructor
-    */
-  Instantiable0[Server]
-       with Instantiable2[
-          (/* port */ Double) | (/* srv */ typings.node.httpMod.Server) | (/* srv */ typings.node.httpsMod.Server) | (/* port */ String), 
-          /* opts */ ServerOptions, 
-          Server
-        ] {
-    
-    /**
-      * Default Server constructor
-      */
-    def apply(): Server = js.native
-    /**
-      * Creates a new Server
-      * @param A parameters object
-      */
-    def apply(opts: ServerOptions): Server = js.native
-    /**
-      * Creates a new Server
-      * @param port A port to bind to, as a number, or a string
-      * @param An optional parameters object
-      */
-    def apply(port: String): Server = js.native
-    def apply(port: String, opts: ServerOptions): Server = js.native
-    def apply(port: Double): Server = js.native
-    def apply(port: Double, opts: ServerOptions): Server = js.native
-    /**
-      * Creates a new Server
-      * @param srv The HTTP server that we're going to bind to
-      * @param opts An optional parameters object
-      */
-    def apply(srv: typings.node.httpMod.Server): Server = js.native
-    def apply(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
-    def apply(srv: typings.node.httpsMod.Server): Server = js.native
-    def apply(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
-    
-    /**
-      * Default Server constructor
-      */
-    /**
-      * Backwards compatibility
-      * @see io().listen()
-      */
-    def listen(): Server = js.native
-    /**
-      * Creates a new Server
-      * @param A parameters object
-      */
-    /**
-      * Backwards compatibility
-      * @see io().listen()
-      */
-    def listen(opts: ServerOptions): Server = js.native
-    /**
-      * Creates a new Server
-      * @param port A port to bind to, as a number, or a string
-      * @param An optional parameters object
-      */
-    /**
-      * Backwards compatibility
-      * @see io().listen()
-      */
-    def listen(port: String): Server = js.native
-    def listen(port: String, opts: ServerOptions): Server = js.native
-    def listen(port: Double): Server = js.native
-    def listen(port: Double, opts: ServerOptions): Server = js.native
-    /**
-      * Creates a new Server
-      * @param srv The HTTP server that we're going to bind to
-      * @param opts An optional parameters object
-      */
-    /**
-      * Backwards compatibility
-      * @see io().listen()
-      */
-    def listen(srv: typings.node.httpMod.Server): Server = js.native
-    def listen(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
-    def listen(srv: typings.node.httpsMod.Server): Server = js.native
-    def listen(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
-    /**
-      * Backwards compatibility
-      * @see io().listen()
-      */
-    @JSName("listen")
-    var listen_Original: SocketIOStatic = js.native
-  }
-  
-  type _To = js.Object & SocketIOStatic
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & SocketIOStatic = ^
 }

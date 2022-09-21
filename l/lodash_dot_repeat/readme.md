@@ -10,10 +10,10 @@ The lodash method `_.repeat` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.repeat |
 | Keywords           | lodash-modularized, repeat |
-| # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 5098554 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 495650.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

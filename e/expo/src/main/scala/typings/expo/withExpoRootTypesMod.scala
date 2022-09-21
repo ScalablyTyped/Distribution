@@ -10,7 +10,7 @@ object withExpoRootTypesMod {
   
   trait InitialProps
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var exp: Dictkey
     

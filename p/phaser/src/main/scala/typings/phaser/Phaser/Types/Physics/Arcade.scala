@@ -2,12 +2,13 @@ package typings.phaser.Phaser.Types.Physics
 
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Geom.Rectangle
+import typings.phaser.Phaser.Physics.Arcade.Body
 import typings.phaser.Phaser.Physics.Arcade.Group
 import typings.phaser.Phaser.Physics.Arcade.Image
 import typings.phaser.Phaser.Physics.Arcade.Sprite
+import typings.phaser.Phaser.Physics.Arcade.StaticBody
 import typings.phaser.Phaser.Physics.Arcade.StaticGroup
-import typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
-import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
+import typings.phaser.Phaser.Tilemaps.TilemapLayer
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.Math.Vector2Like
 import org.scalablytyped.runtime.StObject
@@ -115,14 +116,11 @@ object Arcade {
     - typings.phaser.Phaser.Physics.Arcade.Image
     - typings.phaser.Phaser.Physics.Arcade.StaticGroup
     - typings.phaser.Phaser.Physics.Arcade.Group
-    - typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
-    - typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
+    - typings.phaser.Phaser.Tilemaps.TilemapLayer
     - js.Array[
-  typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer | typings.phaser.Phaser.GameObjects.GameObject | typings.phaser.Phaser.Physics.Arcade.Group | typings.phaser.Phaser.Physics.Arcade.Image | typings.phaser.Phaser.Physics.Arcade.Sprite | typings.phaser.Phaser.Physics.Arcade.StaticGroup | typings.phaser.Phaser.Tilemaps.StaticTilemapLayer]
+  typings.phaser.Phaser.GameObjects.GameObject | typings.phaser.Phaser.Physics.Arcade.Group | typings.phaser.Phaser.Physics.Arcade.Image | typings.phaser.Phaser.Physics.Arcade.Sprite | typings.phaser.Phaser.Physics.Arcade.StaticGroup | typings.phaser.Phaser.Tilemaps.TilemapLayer]
   */
-  type ArcadeColliderType = _ArcadeColliderType | (js.Array[
-    DynamicTilemapLayer | GameObject | Group | Image | Sprite | StaticGroup | StaticTilemapLayer
-  ])
+  type ArcadeColliderType = _ArcadeColliderType | (js.Array[GameObject | Group | Image | Sprite | StaticGroup | TilemapLayer])
   
   trait ArcadeWorldConfig extends StObject {
     
@@ -130,6 +128,11 @@ object Arcade {
       * Sets {@link Phaser.Physics.Arcade.World#checkCollision}.
       */
     var checkCollision: js.UndefOr[CheckCollisionObject] = js.undefined
+    
+    /**
+      * If enabled, you need to call `World.update` yourself.
+      */
+    var customUpdate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#debug}.
@@ -165,6 +168,11 @@ object Arcade {
       * Sets {@link Phaser.Physics.Arcade.World#defaults velocityDebugColor}.
       */
     var debugVelocityColor: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Sets {@link Phaser.Physics.Arcade.World#fixedStep}.
+      */
+    var fixedStep: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#forceX}.
@@ -244,6 +252,10 @@ object Arcade {
       
       inline def setCheckCollisionUndefined: Self = StObject.set(x, "checkCollision", js.undefined)
       
+      inline def setCustomUpdate(value: Boolean): Self = StObject.set(x, "customUpdate", value.asInstanceOf[js.Any])
+      
+      inline def setCustomUpdateUndefined: Self = StObject.set(x, "customUpdate", js.undefined)
+      
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
       inline def setDebugBodyColor(value: Double): Self = StObject.set(x, "debugBodyColor", value.asInstanceOf[js.Any])
@@ -271,6 +283,10 @@ object Arcade {
       inline def setDebugVelocityColor(value: Double): Self = StObject.set(x, "debugVelocityColor", value.asInstanceOf[js.Any])
       
       inline def setDebugVelocityColorUndefined: Self = StObject.set(x, "debugVelocityColor", js.undefined)
+      
+      inline def setFixedStep(value: Boolean): Self = StObject.set(x, "fixedStep", value.asInstanceOf[js.Any])
+      
+      inline def setFixedStepUndefined: Self = StObject.set(x, "fixedStep", js.undefined)
       
       inline def setForceX(value: Boolean): Self = StObject.set(x, "forceX", value.asInstanceOf[js.Any])
       
@@ -470,15 +486,72 @@ object Arcade {
     }
   }
   
-  type GameObjectWithBody = GameObject
+  @js.native
+  trait GameObjectWithBody
+    extends StObject
+       with GameObject {
+    
+    @JSName("body")
+    var body_GameObjectWithBody: Body | StaticBody = js.native
+  }
   
-  type GameObjectWithDynamicBody = GameObject
+  @js.native
+  trait GameObjectWithDynamicBody
+    extends StObject
+       with GameObject {
+    
+    @JSName("body")
+    var body_GameObjectWithDynamicBody: Body = js.native
+  }
   
-  type GameObjectWithStaticBody = GameObject
+  @js.native
+  trait GameObjectWithStaticBody
+    extends StObject
+       with GameObject {
+    
+    @JSName("body")
+    var body_GameObjectWithStaticBody: StaticBody = js.native
+  }
   
-  type ImageWithDynamicBody = Image
+  @js.native
+  trait ImageWithDynamicBody
+    extends StObject
+       with Image {
+    
+    @JSName("body")
+    var body_ImageWithDynamicBody: Body = js.native
+    
+    /**
+      * **DEPRECATED**: Please use `setBodySize` instead.
+      * 
+      * Sets the size of this physics body. Setting the size does not adjust the dimensions of the parent Game Object.
+      * @param width The new width of the physics body, in pixels.
+      * @param height The new height of the physics body, in pixels.
+      * @param center Should the body be re-positioned so its center aligns with the parent Game Object? Default true.
+      */
+    /* InferMemberOverrides */
+    override def setSize(width: Double, height: Double): this.type = js.native
+  }
   
-  type ImageWithStaticBody = Image
+  @js.native
+  trait ImageWithStaticBody
+    extends StObject
+       with Image {
+    
+    @JSName("body")
+    var body_ImageWithStaticBody: StaticBody = js.native
+    
+    /**
+      * **DEPRECATED**: Please use `setBodySize` instead.
+      * 
+      * Sets the size of this physics body. Setting the size does not adjust the dimensions of the parent Game Object.
+      * @param width The new width of the physics body, in pixels.
+      * @param height The new height of the physics body, in pixels.
+      * @param center Should the body be re-positioned so its center aligns with the parent Game Object? Default true.
+      */
+    /* InferMemberOverrides */
+    override def setSize(width: Double, height: Double): this.type = js.native
+  }
   
   trait PhysicsGroupConfig
     extends StObject
@@ -590,6 +663,16 @@ object Arcade {
     var mass: js.UndefOr[Double] = js.undefined
     
     /**
+      * Sets {@link Phaser.Physics.Arcade.Body#maxVelocity maxVelocity.x}.
+      */
+    var maxVelocityX: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Sets {@link Phaser.Physics.Arcade.Body#maxVelocity maxVelocity.y}.
+      */
+    var maxVelocityY: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Sets {@link Phaser.Physics.Arcade.Body#velocity velocity.x}.
       */
     var velocityX: js.UndefOr[Double] = js.undefined
@@ -691,6 +774,14 @@ object Arcade {
       inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
       
       inline def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
+      
+      inline def setMaxVelocityX(value: Double): Self = StObject.set(x, "maxVelocityX", value.asInstanceOf[js.Any])
+      
+      inline def setMaxVelocityXUndefined: Self = StObject.set(x, "maxVelocityX", js.undefined)
+      
+      inline def setMaxVelocityY(value: Double): Self = StObject.set(x, "maxVelocityY", value.asInstanceOf[js.Any])
+      
+      inline def setMaxVelocityYUndefined: Self = StObject.set(x, "maxVelocityY", js.undefined)
       
       inline def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
       
@@ -900,9 +991,45 @@ object Arcade {
     }
   }
   
-  type SpriteWithDynamicBody = Sprite
+  @js.native
+  trait SpriteWithDynamicBody
+    extends StObject
+       with Sprite {
+    
+    @JSName("body")
+    var body_SpriteWithDynamicBody: Body = js.native
+    
+    /**
+      * **DEPRECATED**: Please use `setBodySize` instead.
+      * 
+      * Sets the size of this physics body. Setting the size does not adjust the dimensions of the parent Game Object.
+      * @param width The new width of the physics body, in pixels.
+      * @param height The new height of the physics body, in pixels.
+      * @param center Should the body be re-positioned so its center aligns with the parent Game Object? Default true.
+      */
+    /* InferMemberOverrides */
+    override def setSize(width: Double, height: Double): this.type = js.native
+  }
   
-  type SpriteWithStaticBody = Sprite
+  @js.native
+  trait SpriteWithStaticBody
+    extends StObject
+       with Sprite {
+    
+    @JSName("body")
+    var body_SpriteWithStaticBody: StaticBody = js.native
+    
+    /**
+      * **DEPRECATED**: Please use `setBodySize` instead.
+      * 
+      * Sets the size of this physics body. Setting the size does not adjust the dimensions of the parent Game Object.
+      * @param width The new width of the physics body, in pixels.
+      * @param height The new height of the physics body, in pixels.
+      * @param center Should the body be re-positioned so its center aligns with the parent Game Object? Default true.
+      */
+    /* InferMemberOverrides */
+    override def setSize(width: Double, height: Double): this.type = js.native
+  }
   
   trait _ArcadeColliderType extends StObject
 }

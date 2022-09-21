@@ -26,10 +26,22 @@ object DeclarativeDataType extends StObject {
   /* "category" */ val category: typings.azdata.mod.DeclarativeDataType.category & String = js.native
   
   @js.native
+  sealed trait component
+    extends StObject
+       with DeclarativeDataType
+  /* "component" */ val component: typings.azdata.mod.DeclarativeDataType.component & String = js.native
+  
+  @js.native
   sealed trait editableCategory
     extends StObject
        with DeclarativeDataType
   /* "editableCategory" */ val editableCategory: typings.azdata.mod.DeclarativeDataType.editableCategory & String = js.native
+  
+  @js.native
+  sealed trait menu
+    extends StObject
+       with DeclarativeDataType
+  /* "menu" */ val menu: typings.azdata.mod.DeclarativeDataType.menu & String = js.native
   
   @js.native
   sealed trait string

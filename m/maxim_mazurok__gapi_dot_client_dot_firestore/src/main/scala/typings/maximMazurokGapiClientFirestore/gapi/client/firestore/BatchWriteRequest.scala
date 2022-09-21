@@ -11,7 +11,7 @@ trait BatchWriteRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -32,7 +32,7 @@ object BatchWriteRequest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -41,6 +41,6 @@ object BatchWriteRequest {
     
     inline def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
     
-    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
+    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value*))
   }
 }

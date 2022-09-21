@@ -24,7 +24,7 @@ object XRedlinesSupplier {
     Redlines: XEnumerationAccess,
     acquire: () => Unit,
     getRedlines: () => XEnumerationAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XRedlinesSupplier = {
     val __obj = js.Dynamic.literal(Redlines = Redlines.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getRedlines = js.Any.fromFunction0(getRedlines), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

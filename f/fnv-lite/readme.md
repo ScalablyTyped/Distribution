@@ -10,10 +10,10 @@ Small 128-bit FNV-1a library for the browser.
 | ------------------ | :-------------: |
 | Full name          | fnv-lite |
 | Keywords           | FNV, FNV-1a, Fowler-Noll-Vo, browser, small, lightweight, hash |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 4550 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1775.6666666666667 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/casetext/fnv-lite)

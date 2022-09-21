@@ -1,10 +1,13 @@
 package typings.materialSwitch
 
 import typings.materialBase.componentMod.MDCComponent
+import typings.materialRipple.adapterMod.MDCRippleAdapter
 import typings.materialRipple.componentMod.MDCRipple
-import typings.materialSwitch.foundationMod.MDCSwitchFoundation
-import typings.std.Element
-import typings.std.HTMLElement
+import typings.materialRipple.foundationMod.MDCRippleFoundation
+import typings.materialSwitch.adapterMod.MDCSwitchRenderAdapter
+import typings.materialSwitch.adapterMod.MDCSwitchState
+import typings.materialSwitch.materialSwitchMod.MDCSwitchRenderFoundation
+import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,21 +15,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object componentMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/switch/component", "MDCSwitch")
+  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: disabled, root. Inlined unbounded */ @JSImport("@material/switch/component", "MDCSwitch")
   @js.native
-  class MDCSwitch protected () extends MDCComponent[MDCSwitchFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCSwitchFoundation, args: js.Any*) = this()
+  open class MDCSwitch protected ()
+    extends MDCComponent[MDCSwitchRenderFoundation]
+       with MDCSwitchState {
+    def this(root: HTMLButtonElement) = this()
+    def this(root: HTMLButtonElement, foundation: MDCSwitchRenderFoundation) = this()
     
-    def checked: Boolean = js.native
-    def checked_=(checked: Boolean): Unit = js.native
+    /* protected */ def createAdapter(): MDCSwitchRenderAdapter = js.native
     
-    def disabled: Boolean = js.native
-    def disabled_=(disabled: Boolean): Unit = js.native
-    @JSName("disabled")
-    var disabled_FMDCSwitch: js.UndefOr[Boolean] = js.native
+    /* protected */ def createRippleAdapter(): MDCRippleAdapter = js.native
     
-    def ripple: MDCRipple = js.native
+    /* protected */ def createRippleFoundation(): MDCRippleFoundation = js.native
+    
+    /**
+      * Indicates whether or not the switch is disabled.
+      */
+    /* CompleteClass */
+    var disabled: Boolean = js.native
+    
+    def initialize(): Unit = js.native
+    
+    /**
+      * Indicates whether or not the switch is processing and showing a loading
+      * indicator. A disabled switch cannot be processing.
+      */
+    /* CompleteClass */
+    var processing: Boolean = js.native
+    
+    var ripple: MDCRipple = js.native
+    
+    /* private */ var rippleElement: Any = js.native
+    
+    @JSName("root")
+    var root_MDCSwitch: HTMLButtonElement = js.native
+    
+    /**
+      * If true, the switch is on. If false, the switch is off.
+      */
+    /* CompleteClass */
+    var selected: Boolean = js.native
     
     var unbounded: js.UndefOr[Boolean] = js.native
   }
@@ -37,6 +66,11 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: HTMLElement): MDCSwitch = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSwitch]
+    /**
+      * Creates a new `MDCSwitch` and attaches it to the given root element.
+      * @param root The root to attach to.
+      * @return the new component instance.
+      */
+    inline def attachTo(root: HTMLButtonElement): MDCSwitch = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSwitch]
   }
 }

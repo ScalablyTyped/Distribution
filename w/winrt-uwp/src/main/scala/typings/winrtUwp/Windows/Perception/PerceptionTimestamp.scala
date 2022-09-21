@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PerceptionTimestamp extends StObject {
   
-  var predictionAmount: js.Any
+  var predictionAmount: Any
   
   /* unmapped type */
-  var targetTime: js.Any
+  var targetTime: Any
 }
 object PerceptionTimestamp {
   
-  inline def apply(predictionAmount: js.Any, targetTime: js.Any): PerceptionTimestamp = {
+  inline def apply(predictionAmount: Any, targetTime: Any): PerceptionTimestamp = {
     val __obj = js.Dynamic.literal(predictionAmount = predictionAmount.asInstanceOf[js.Any], targetTime = targetTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerceptionTimestamp]
   }
   
   extension [Self <: PerceptionTimestamp](x: Self) {
     
-    inline def setPredictionAmount(value: js.Any): Self = StObject.set(x, "predictionAmount", value.asInstanceOf[js.Any])
+    inline def setPredictionAmount(value: Any): Self = StObject.set(x, "predictionAmount", value.asInstanceOf[js.Any])
     
-    inline def setTargetTime(value: js.Any): Self = StObject.set(x, "targetTime", value.asInstanceOf[js.Any])
+    inline def setTargetTime(value: Any): Self = StObject.set(x, "targetTime", value.asInstanceOf[js.Any])
   }
 }

@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaPollItemsResponse extends StObject {
   
   /**
-    * Set of items from the queue available for connector to process. &lt;br
-    * /&gt;These items have the following subset of fields populated: &lt;br
-    * /&gt; &lt;br /&gt;version &lt;br /&gt;metadata.hash &lt;br
-    * /&gt;structured_data.hash &lt;br /&gt;content.hash &lt;br /&gt;payload
-    * &lt;br /&gt;status &lt;br /&gt;queue
+    * Set of items from the queue available for connector to process. These items have the following subset of fields populated: version metadata.hash structured_data.hash content.hash payload status queue
     */
   var items: js.UndefOr[js.Array[SchemaItem]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaPollItemsResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaItem*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

@@ -36,7 +36,7 @@ trait PlusShareAuthorize extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var onerror: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onerror: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.native
   
   /**
     * 分享控件加载完成事件
@@ -44,7 +44,7 @@ trait PlusShareAuthorize extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var onloaded: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onloaded: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.native
   
   /**
     * 设置分享授权控件是否可见

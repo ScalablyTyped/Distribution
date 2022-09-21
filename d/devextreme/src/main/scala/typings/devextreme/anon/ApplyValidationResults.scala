@@ -6,16 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ApplyValidationResults extends StObject {
   
+  /**
+    * A function that the Validator UI component calls after validating a specified value.
+    */
   var applyValidationResults: js.UndefOr[js.Function] = js.undefined
   
+  /**
+    * A function that returns a Boolean value specifying whether or not to bypass validation.
+    */
   var bypass: js.UndefOr[js.Function] = js.undefined
   
+  /**
+    * A function that sets focus to a validated editor when the corresponding ValidationSummary item is focused.
+    */
   var focus: js.UndefOr[js.Function] = js.undefined
   
+  /**
+    * A function that returns the value to be validated.
+    */
   var getValue: js.UndefOr[js.Function] = js.undefined
   
+  /**
+    * A function that resets the validated values.
+    */
   var reset: js.UndefOr[js.Function] = js.undefined
   
+  /**
+    * Callbacks to be executed on the value validation.
+    */
   var validationRequestsCallbacks: js.UndefOr[js.Array[js.Function]] = js.undefined
 }
 object ApplyValidationResults {
@@ -51,6 +69,6 @@ object ApplyValidationResults {
     
     inline def setValidationRequestsCallbacksUndefined: Self = StObject.set(x, "validationRequestsCallbacks", js.undefined)
     
-    inline def setValidationRequestsCallbacksVarargs(value: js.Function*): Self = StObject.set(x, "validationRequestsCallbacks", js.Array(value :_*))
+    inline def setValidationRequestsCallbacksVarargs(value: js.Function*): Self = StObject.set(x, "validationRequestsCallbacks", js.Array(value*))
   }
 }

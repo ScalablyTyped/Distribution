@@ -11,7 +11,7 @@ object lrucacheMod {
   
   @JSImport("ol/structs/LRUCache", JSImport.Default)
   @js.native
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with LRUCache[T] {
     def this(opt_highWaterMark: Double) = this()
@@ -21,15 +21,15 @@ object lrucacheMod {
     
     var key_ : String
     
-    var newer: js.Any
+    var newer: Any
     
-    var older: js.Any
+    var older: Any
     
-    var value_ : js.Any
+    var value_ : Any
   }
   object Entry {
     
-    inline def apply(key_ : String, newer: js.Any, older: js.Any, value_ : js.Any): Entry = {
+    inline def apply(key_ : String, newer: Any, older: Any, value_ : Any): Entry = {
       val __obj = js.Dynamic.literal(key_ = key_.asInstanceOf[js.Any], newer = newer.asInstanceOf[js.Any], older = older.asInstanceOf[js.Any], value_ = value_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entry]
     }
@@ -38,11 +38,11 @@ object lrucacheMod {
       
       inline def setKey_(value: String): Self = StObject.set(x, "key_", value.asInstanceOf[js.Any])
       
-      inline def setNewer(value: js.Any): Self = StObject.set(x, "newer", value.asInstanceOf[js.Any])
+      inline def setNewer(value: Any): Self = StObject.set(x, "newer", value.asInstanceOf[js.Any])
       
-      inline def setOlder(value: js.Any): Self = StObject.set(x, "older", value.asInstanceOf[js.Any])
+      inline def setOlder(value: Any): Self = StObject.set(x, "older", value.asInstanceOf[js.Any])
       
-      inline def setValue_(value: js.Any): Self = StObject.set(x, "value_", value.asInstanceOf[js.Any])
+      inline def setValue_(value: Any): Self = StObject.set(x, "value_", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,10 +58,10 @@ object lrucacheMod {
     
     def containsKey(key: String): Boolean = js.native
     
-    def forEach(f: js.Function3[/* p0 */ T, /* p1 */ String, /* p2 */ LRUCache[T], js.Any]): Unit = js.native
+    def forEach(f: js.Function3[/* p0 */ T, /* p1 */ String, /* p2 */ LRUCache[T], Any]): Unit = js.native
     
     def get(key: String): T = js.native
-    def get(key: String, opt_options: js.Any): T = js.native
+    def get(key: String, opt_options: Any): T = js.native
     
     def getCount(): Double = js.native
     
@@ -69,15 +69,15 @@ object lrucacheMod {
     
     def getValues(): js.Array[T] = js.native
     
-    def on(`type`: String, listener: js.Function1[/* p0 */ js.Any, js.Any]): EventsKey | js.Array[EventsKey] = js.native
-    def on(`type`: js.Array[String], listener: js.Function1[/* p0 */ js.Any, js.Any]): EventsKey | js.Array[EventsKey] = js.native
+    def on(`type`: String, listener: js.Function1[/* p0 */ Any, Any]): EventsKey | js.Array[EventsKey] = js.native
+    def on(`type`: js.Array[String], listener: js.Function1[/* p0 */ Any, Any]): EventsKey | js.Array[EventsKey] = js.native
     @JSName("on")
     def on_change(`type`: change, listener: js.Function1[/* evt */ typings.ol.eventMod.default, Unit]): EventsKey = js.native
     @JSName("on")
     def on_error(`type`: error, listener: js.Function1[/* evt */ typings.ol.eventMod.default, Unit]): EventsKey = js.native
     
-    def once(`type`: String, listener: js.Function1[/* p0 */ js.Any, js.Any]): EventsKey | js.Array[EventsKey] = js.native
-    def once(`type`: js.Array[String], listener: js.Function1[/* p0 */ js.Any, js.Any]): EventsKey | js.Array[EventsKey] = js.native
+    def once(`type`: String, listener: js.Function1[/* p0 */ Any, Any]): EventsKey | js.Array[EventsKey] = js.native
+    def once(`type`: js.Array[String], listener: js.Function1[/* p0 */ Any, Any]): EventsKey | js.Array[EventsKey] = js.native
     @JSName("once")
     def once_change(`type`: change, listener: js.Function1[/* evt */ typings.ol.eventMod.default, Unit]): EventsKey = js.native
     @JSName("once")
@@ -108,8 +108,8 @@ object lrucacheMod {
       */
     def setSize(size: Double): Unit = js.native
     
-    def un(`type`: String, listener: js.Function1[/* p0 */ js.Any, js.Any]): Unit = js.native
-    def un(`type`: js.Array[String], listener: js.Function1[/* p0 */ js.Any, js.Any]): Unit = js.native
+    def un(`type`: String, listener: js.Function1[/* p0 */ Any, Any]): Unit = js.native
+    def un(`type`: js.Array[String], listener: js.Function1[/* p0 */ Any, Any]): Unit = js.native
     @JSName("un")
     def un_change(`type`: change, listener: js.Function1[/* evt */ typings.ol.eventMod.default, Unit]): Unit = js.native
     @JSName("un")

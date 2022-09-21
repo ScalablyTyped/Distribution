@@ -66,7 +66,7 @@ object CreateHITTypeRequest {
     
     inline def setQualificationRequirementsUndefined: Self = StObject.set(x, "QualificationRequirements", js.undefined)
     
-    inline def setQualificationRequirementsVarargs(value: QualificationRequirement*): Self = StObject.set(x, "QualificationRequirements", js.Array(value :_*))
+    inline def setQualificationRequirementsVarargs(value: QualificationRequirement*): Self = StObject.set(x, "QualificationRequirements", js.Array(value*))
     
     inline def setReward(value: CurrencyAmount): Self = StObject.set(x, "Reward", value.asInstanceOf[js.Any])
     

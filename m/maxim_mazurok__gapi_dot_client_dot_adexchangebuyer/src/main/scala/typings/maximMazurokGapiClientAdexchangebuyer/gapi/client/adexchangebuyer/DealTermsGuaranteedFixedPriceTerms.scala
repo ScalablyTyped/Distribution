@@ -38,7 +38,7 @@ object DealTermsGuaranteedFixedPriceTerms {
     
     inline def setFixedPricesUndefined: Self = StObject.set(x, "fixedPrices", js.undefined)
     
-    inline def setFixedPricesVarargs(value: PricePerBuyer*): Self = StObject.set(x, "fixedPrices", js.Array(value :_*))
+    inline def setFixedPricesVarargs(value: PricePerBuyer*): Self = StObject.set(x, "fixedPrices", js.Array(value*))
     
     inline def setGuaranteedImpressions(value: String): Self = StObject.set(x, "guaranteedImpressions", value.asInstanceOf[js.Any])
     

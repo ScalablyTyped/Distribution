@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bezierMod {
   
-  @JSImport("@antv/g-math/lib/bezier", JSImport.Namespace)
+  @JSImport("@antv/g-math/dist/bezier", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

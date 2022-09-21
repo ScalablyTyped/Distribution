@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the custom data validation criteria.
   *
-  * Represents the Custom data validation criteria.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait CustomDataValidation extends StObject {
   
   /**
-    *
     * A custom data validation formula. This creates special input rules, such as preventing duplicates, or limiting the total in a range of cells.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var formula: String

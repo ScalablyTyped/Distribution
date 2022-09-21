@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AuthorizationParameters
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var acr_values: js.UndefOr[String] = js.undefined
   
@@ -137,7 +137,7 @@ object AuthorizationParameters {
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    inline def setResourceVarargs(value: String*): Self = StObject.set(x, "resource", js.Array(value :_*))
+    inline def setResourceVarargs(value: String*): Self = StObject.set(x, "resource", js.Array(value*))
     
     inline def setResponse_mode(value: String): Self = StObject.set(x, "response_mode", value.asInstanceOf[js.Any])
     

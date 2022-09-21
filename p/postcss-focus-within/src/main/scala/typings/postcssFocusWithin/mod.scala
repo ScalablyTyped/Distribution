@@ -1,46 +1,42 @@
 package typings.postcssFocusWithin
 
 import org.scalablytyped.runtime.Shortcut
-import typings.postcss.mod.Plugin_
+import typings.postcss.mod.PluginCreator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
-  @JSImport("postcss-focus-within", JSImport.Namespace)
+  @JSImport("postcss-focus-within", JSImport.Default)
   @js.native
-  val ^ : FocusWithin = js.native
+  val default: PluginCreator[pluginOptions] = js.native
   
-  type FocusWithin = Plugin_[Options]
+  type _To = PluginCreator[pluginOptions]
   
-  /**
-    * @see {@link https://github.com/csstools/postcss-focus-within#options}
-    */
-  trait Options extends StObject {
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: PluginCreator[pluginOptions] = default
+  
+  trait pluginOptions extends StObject {
     
-    /**
-      * The preserve option defines whether the original selector should remain.
-      * By default, the original selector is preserved.
-      * @default true
-      */
+    var disablePolyfillReadyClass: js.UndefOr[Boolean] = js.undefined
+    
     var preserve: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * The replaceWith option defines the selector to replace `:focus-within`.
-      * By default, the replacement selector is `[focus-within]`.
-      * @default `[focus-within]`
-      */
     var replaceWith: js.UndefOr[String] = js.undefined
   }
-  object Options {
+  object pluginOptions {
     
-    inline def apply(): Options = {
+    inline def apply(): pluginOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[pluginOptions]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: pluginOptions](x: Self) {
+      
+      inline def setDisablePolyfillReadyClass(value: Boolean): Self = StObject.set(x, "disablePolyfillReadyClass", value.asInstanceOf[js.Any])
+      
+      inline def setDisablePolyfillReadyClassUndefined: Self = StObject.set(x, "disablePolyfillReadyClass", js.undefined)
       
       inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
       
@@ -51,9 +47,4 @@ object mod extends Shortcut {
       inline def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
     }
   }
-  
-  type _To = FocusWithin
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: FocusWithin = ^
 }

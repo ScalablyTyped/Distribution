@@ -1,5 +1,6 @@
 package typings.rename
 
+import typings.rename.anon.PartialParsedFileObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(filename: String): FileObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filename.asInstanceOf[js.Any]).asInstanceOf[FileObject]
+  inline def parse(filename: String): ParsedFileObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filename.asInstanceOf[js.Any]).asInstanceOf[ParsedFileObject]
+  inline def parse(filename: PartialParsedFileObject): ParsedFileObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filename.asInstanceOf[js.Any]).asInstanceOf[ParsedFileObject]
   
   inline def stringify(obj: FileObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -27,6 +29,9 @@ object mod {
     var extname: js.UndefOr[String] = js.undefined
     
     var hash: js.UndefOr[String] = js.undefined
+    
+    // not populated by package
+    var origin: js.UndefOr[String] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
   }
@@ -55,6 +60,10 @@ object mod {
       
       inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
@@ -62,6 +71,35 @@ object mod {
   }
   
   type FilePath = String | Specification
+  
+  trait ParsedFileObject extends StObject {
+    
+    var basename: String
+    
+    var dirname: String
+    
+    var extname: String
+    
+    var origin: String
+  }
+  object ParsedFileObject {
+    
+    inline def apply(basename: String, dirname: String, extname: String, origin: String): ParsedFileObject = {
+      val __obj = js.Dynamic.literal(basename = basename.asInstanceOf[js.Any], dirname = dirname.asInstanceOf[js.Any], extname = extname.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParsedFileObject]
+    }
+    
+    extension [Self <: ParsedFileObject](x: Self) {
+      
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      
+      inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+      
+      inline def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
+      
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait Specification extends StObject {
     

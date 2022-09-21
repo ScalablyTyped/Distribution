@@ -77,7 +77,7 @@ object BrandResources {
     
     inline def setDataNotSavedNotInMasterUndefined: Self = StObject.set(x, "dataNotSavedNotInMaster", js.undefined)
     
-    inline def setDataNotSavedNotInMasterVarargs(value: String*): Self = StObject.set(x, "dataNotSavedNotInMaster", js.Array(value :_*))
+    inline def setDataNotSavedNotInMasterVarargs(value: String*): Self = StObject.set(x, "dataNotSavedNotInMaster", js.Array(value*))
     
     inline def setModifiedByUserInfo(value: UserInfo): Self = StObject.set(x, "modifiedByUserInfo", value.asInstanceOf[js.Any])
     
@@ -91,7 +91,7 @@ object BrandResources {
     
     inline def setModifiedTemplatesUndefined: Self = StObject.set(x, "modifiedTemplates", js.undefined)
     
-    inline def setModifiedTemplatesVarargs(value: String*): Self = StObject.set(x, "modifiedTemplates", js.Array(value :_*))
+    inline def setModifiedTemplatesVarargs(value: String*): Self = StObject.set(x, "modifiedTemplates", js.Array(value*))
     
     inline def setResourcesContentType(value: String): Self = StObject.set(x, "resourcesContentType", value.asInstanceOf[js.Any])
     

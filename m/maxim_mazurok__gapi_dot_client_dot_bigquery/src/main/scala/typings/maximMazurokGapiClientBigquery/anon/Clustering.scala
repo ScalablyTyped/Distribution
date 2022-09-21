@@ -35,7 +35,7 @@ trait Clustering extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Clustering & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Clustering & TopLevel[Any]
   ] = js.undefined
   
   /** The range partitioning specification for this table, if configured. */
@@ -89,7 +89,7 @@ object Clustering {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Clustering & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Clustering & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

@@ -10,7 +10,7 @@ object fileChunkIteratorMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/iterators/file_chunk_iterator", "FileChunkIterator")
   @js.native
-  class FileChunkIterator protected () extends ByteChunkIterator {
+  open class FileChunkIterator protected () extends ByteChunkIterator {
     def this(file: FileElement) = this()
     def this(file: FileElement, options: FileChunkIteratorOptions) = this()
     

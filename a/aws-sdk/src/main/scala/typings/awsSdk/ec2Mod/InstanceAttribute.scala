@@ -12,6 +12,11 @@ trait InstanceAttribute extends StObject {
   var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingList] = js.undefined
   
   /**
+    * To enable the instance for Amazon Web Services Stop Protection, set this parameter to true; otherwise, set it to false.
+    */
+  var DisableApiStop: js.UndefOr[AttributeBooleanValue] = js.undefined
+  
+  /**
     * If the value is true, you can't terminate the instance through the Amazon EC2 console, CLI, or API; otherwise, you can.
     */
   var DisableApiTermination: js.UndefOr[AttributeBooleanValue] = js.undefined
@@ -27,7 +32,7 @@ trait InstanceAttribute extends StObject {
   var EnaSupport: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
-    * To enable the instance for AWS Nitro Enclaves, set this parameter to true; otherwise, set it to false.
+    * To enable the instance for Amazon Web Services Nitro Enclaves, set this parameter to true; otherwise, set it to false.
     */
   var EnclaveOptions: js.UndefOr[typings.awsSdk.ec2Mod.EnclaveOptions] = js.undefined
   
@@ -72,7 +77,7 @@ trait InstanceAttribute extends StObject {
   var RootDeviceName: js.UndefOr[AttributeValue] = js.undefined
   
   /**
-    * Indicates whether source/destination checking is enabled. A value of true means that checking is enabled, and false means that checking is disabled. This value must be false for a NAT instance to perform NAT.
+    * Enable or disable source/destination checks, which ensure that the instance is either the source or the destination of any traffic that it receives. If the value is true, source/destination checks are enabled; otherwise, they are disabled. The default value is true. You must disable source/destination checks if the instance runs services such as network address translation, routing, or firewalls.
     */
   var SourceDestCheck: js.UndefOr[AttributeBooleanValue] = js.undefined
   
@@ -99,7 +104,11 @@ object InstanceAttribute {
     
     inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    inline def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value*))
+    
+    inline def setDisableApiStop(value: AttributeBooleanValue): Self = StObject.set(x, "DisableApiStop", value.asInstanceOf[js.Any])
+    
+    inline def setDisableApiStopUndefined: Self = StObject.set(x, "DisableApiStop", js.undefined)
     
     inline def setDisableApiTermination(value: AttributeBooleanValue): Self = StObject.set(x, "DisableApiTermination", value.asInstanceOf[js.Any])
     
@@ -121,7 +130,7 @@ object InstanceAttribute {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
@@ -143,7 +152,7 @@ object InstanceAttribute {
     
     inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value*))
     
     inline def setRamdiskId(value: AttributeValue): Self = StObject.set(x, "RamdiskId", value.asInstanceOf[js.Any])
     

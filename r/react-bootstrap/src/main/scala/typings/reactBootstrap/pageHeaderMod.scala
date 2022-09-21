@@ -10,12 +10,10 @@ object pageHeaderMod {
   
   @JSImport("react-bootstrap/lib/PageHeader", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PageHeaderProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PageHeaderProps, js.Object, Any]
   
-  @js.native
-  trait PageHeader
-    extends Component[PageHeaderProps, js.Object, js.Any]
+  type PageHeader = Component[PageHeaderProps, js.Object, Any]
   
   trait PageHeaderProps
     extends StObject

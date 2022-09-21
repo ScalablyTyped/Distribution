@@ -16,7 +16,7 @@ object updateIdentityPoolCommandMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/commands/UpdateIdentityPoolCommand", "UpdateIdentityPoolCommand")
   @js.native
-  class UpdateIdentityPoolCommand protected ()
+  open class UpdateIdentityPoolCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object updateIdentityPoolCommandMod {
     override val middlewareStack: MiddlewareStack[UpdateIdentityPoolInput, UpdateIdentityPoolOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[UpdateIdentityPoolInput, UpdateIdentityPoolOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CognitoIdentityResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UpdateIdentityPoolInput, UpdateIdentityPoolOutput] = js.native
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new credentials object.
   * @param {string} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.
   */
-class WebIdentityCredentials ()
+open class WebIdentityCredentials ()
   extends typings.awsSdk.mod.WebIdentityCredentials {
   /**
     * Creates a new credentials object with optional configuraion.

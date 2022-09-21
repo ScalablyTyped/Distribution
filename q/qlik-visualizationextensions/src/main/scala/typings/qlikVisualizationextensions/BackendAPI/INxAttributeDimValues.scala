@@ -23,6 +23,6 @@ object INxAttributeDimValues {
     
     inline def setQValues(value: js.Array[INxSimpleDimValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    inline def setQValuesVarargs(value: INxSimpleDimValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: INxSimpleDimValue*): Self = StObject.set(x, "qValues", js.Array(value*))
   }
 }

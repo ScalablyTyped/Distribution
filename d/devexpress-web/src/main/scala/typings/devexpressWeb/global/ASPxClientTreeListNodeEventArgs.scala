@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListNodeEventArgs")
 @js.native
-class ASPxClientTreeListNodeEventArgs ()
+open class ASPxClientTreeListNodeEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListNodeEventArgs {
   
@@ -23,7 +23,7 @@ class ASPxClientTreeListNodeEventArgs ()
     * Provides access to the parameters associated with the ASPxClientTreeList.NodeClick and ASPxClientTreeList.NodeDblClick events.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets the processed node's key value.

@@ -76,6 +76,21 @@ object constantsMod {
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("@material/linear-progress/constants", "strings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    inline def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress/constants", "strings.ARIA_VALUEMAX")
+    @js.native
+    def ARIA_VALUEMAX: String = js.native
+    inline def ARIA_VALUEMAX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUEMAX")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress/constants", "strings.ARIA_VALUEMIN")
+    @js.native
+    def ARIA_VALUEMIN: String = js.native
+    inline def ARIA_VALUEMIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUEMIN")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/linear-progress/constants", "strings.ARIA_VALUENOW")
     @js.native
     def ARIA_VALUENOW: String = js.native

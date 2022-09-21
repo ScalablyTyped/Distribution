@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Location of the source in a supported storage service.
-  */
 trait SchemaSource extends StObject {
   
   /**
-    * If provided, get the source from this location in a Cloud Source
-    * Repository.
+    * If provided, get the source from this location in a Cloud Source Repository.
     */
   var repoSource: js.UndefOr[SchemaRepoSource] = js.undefined
   
@@ -19,6 +15,11 @@ trait SchemaSource extends StObject {
     * If provided, get the source from this location in Google Cloud Storage.
     */
   var storageSource: js.UndefOr[SchemaStorageSource] = js.undefined
+  
+  /**
+    * If provided, get the source from this manifest in Google Cloud Storage. This feature is in Preview; see description [here](https://github.com/GoogleCloudPlatform/cloud-builders/tree/master/gcs-fetcher).
+    */
+  var storageSourceManifest: js.UndefOr[SchemaStorageSourceManifest] = js.undefined
 }
 object SchemaSource {
   
@@ -34,6 +35,10 @@ object SchemaSource {
     inline def setRepoSourceUndefined: Self = StObject.set(x, "repoSource", js.undefined)
     
     inline def setStorageSource(value: SchemaStorageSource): Self = StObject.set(x, "storageSource", value.asInstanceOf[js.Any])
+    
+    inline def setStorageSourceManifest(value: SchemaStorageSourceManifest): Self = StObject.set(x, "storageSourceManifest", value.asInstanceOf[js.Any])
+    
+    inline def setStorageSourceManifestUndefined: Self = StObject.set(x, "storageSourceManifest", js.undefined)
     
     inline def setStorageSourceUndefined: Self = StObject.set(x, "storageSource", js.undefined)
   }

@@ -16,13 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Aggregate extends StObject {
   
-  def addFields(fieldObj: StringDictionary[js.Any]): Aggregate
+  def addFields(fieldObj: StringDictionary[Any]): Aggregate
   
   def bucket(bucketObj: Boundaries): Aggregate
   
   def bucketAuto(bucketObj: Buckets): Aggregate
   
-  def count(expr: String): js.Any
+  def count(expr: String): Any
   
   def end(): Unit
   
@@ -30,17 +30,17 @@ trait Aggregate extends StObject {
   
   def group(groupObj: DictfieldName): Aggregate
   
-  def limit(limitRecords: Double): js.Any
+  def limit(limitRecords: Double): Any
   
-  def `match`(matchObj: StringDictionary[js.Any]): Aggregate
+  def `match`(matchObj: StringDictionary[Any]): Aggregate
   
-  def project(projectObj: StringDictionary[js.Any]): Aggregate
+  def project(projectObj: StringDictionary[Any]): Aggregate
   
   def replaceRoot(replaceRootObj: NewRoot): Aggregate
   
   def sample(replaceRootObj: Size): Aggregate
   
-  def skip(skipNum: Double): js.Any
+  def skip(skipNum: Double): Any
   
   def sort(replaceRootObj: StringDictionary[`1` | `-1`]): Aggregate
   
@@ -51,19 +51,19 @@ trait Aggregate extends StObject {
 object Aggregate {
   
   inline def apply(
-    addFields: StringDictionary[js.Any] => Aggregate,
+    addFields: StringDictionary[Any] => Aggregate,
     bucket: Boundaries => Aggregate,
     bucketAuto: Buckets => Aggregate,
-    count: String => js.Any,
+    count: String => Any,
     end: () => Unit,
     geoNear: DistanceField => Aggregate,
     group: DictfieldName => Aggregate,
-    limit: Double => js.Any,
-    `match`: StringDictionary[js.Any] => Aggregate,
-    project: StringDictionary[js.Any] => Aggregate,
+    limit: Double => Any,
+    `match`: StringDictionary[Any] => Aggregate,
+    project: StringDictionary[Any] => Aggregate,
     replaceRoot: NewRoot => Aggregate,
     sample: Size => Aggregate,
-    skip: Double => js.Any,
+    skip: Double => Any,
     sort: StringDictionary[`1` | `-1`] => Aggregate,
     sortByCount: String => Aggregate,
     unwind: IncludeArrayIndex => Aggregate
@@ -75,13 +75,13 @@ object Aggregate {
   
   extension [Self <: Aggregate](x: Self) {
     
-    inline def setAddFields(value: StringDictionary[js.Any] => Aggregate): Self = StObject.set(x, "addFields", js.Any.fromFunction1(value))
+    inline def setAddFields(value: StringDictionary[Any] => Aggregate): Self = StObject.set(x, "addFields", js.Any.fromFunction1(value))
     
     inline def setBucket(value: Boundaries => Aggregate): Self = StObject.set(x, "bucket", js.Any.fromFunction1(value))
     
     inline def setBucketAuto(value: Buckets => Aggregate): Self = StObject.set(x, "bucketAuto", js.Any.fromFunction1(value))
     
-    inline def setCount(value: String => js.Any): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
+    inline def setCount(value: String => Any): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
     
     inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
@@ -89,17 +89,17 @@ object Aggregate {
     
     inline def setGroup(value: DictfieldName => Aggregate): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
     
-    inline def setLimit(value: Double => js.Any): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
+    inline def setLimit(value: Double => Any): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
     
-    inline def setMatch(value: StringDictionary[js.Any] => Aggregate): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+    inline def setMatch(value: StringDictionary[Any] => Aggregate): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
     
-    inline def setProject(value: StringDictionary[js.Any] => Aggregate): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
+    inline def setProject(value: StringDictionary[Any] => Aggregate): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
     
     inline def setReplaceRoot(value: NewRoot => Aggregate): Self = StObject.set(x, "replaceRoot", js.Any.fromFunction1(value))
     
     inline def setSample(value: Size => Aggregate): Self = StObject.set(x, "sample", js.Any.fromFunction1(value))
     
-    inline def setSkip(value: Double => js.Any): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+    inline def setSkip(value: Double => Any): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     
     inline def setSort(value: StringDictionary[`1` | `-1`] => Aggregate): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     

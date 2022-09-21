@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "ContextualSignatureInstantiationTypeArgumentInferenceContext")
 @js.native
-class ContextualSignatureInstantiationTypeArgumentInferenceContext protected ()
+open class ContextualSignatureInstantiationTypeArgumentInferenceContext protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ContextualSignatureInstantiationTypeArgumentInferenceContext {
   def this(
@@ -43,7 +43,7 @@ class ContextualSignatureInstantiationTypeArgumentInferenceContext protected ()
   var context: typings.typescriptServices.TypeScript.PullTypeResolutionContext = js.native
   
   /* private */ /* CompleteClass */
-  var contextualSignature: js.Any = js.native
+  var contextualSignature: Any = js.native
   
   /* CompleteClass */
   override def fixTypeParameter(typeParameter: typings.typescriptServices.TypeScript.PullTypeParameterSymbol): Unit = js.native
@@ -67,7 +67,7 @@ class ContextualSignatureInstantiationTypeArgumentInferenceContext protected ()
   var resolver: typings.typescriptServices.TypeScript.PullTypeResolver = js.native
   
   /* private */ /* CompleteClass */
-  var shouldFixContextualSignatureParameterTypes: js.Any = js.native
+  var shouldFixContextualSignatureParameterTypes: Any = js.native
   
   /* CompleteClass */
   var signatureBeingInferred: typings.typescriptServices.TypeScript.PullSignatureSymbol = js.native

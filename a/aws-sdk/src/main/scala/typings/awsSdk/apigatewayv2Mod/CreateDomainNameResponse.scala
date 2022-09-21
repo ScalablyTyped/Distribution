@@ -50,7 +50,7 @@ object CreateDomainNameResponse {
     
     inline def setDomainNameConfigurationsUndefined: Self = StObject.set(x, "DomainNameConfigurations", js.undefined)
     
-    inline def setDomainNameConfigurationsVarargs(value: DomainNameConfiguration*): Self = StObject.set(x, "DomainNameConfigurations", js.Array(value :_*))
+    inline def setDomainNameConfigurationsVarargs(value: DomainNameConfiguration*): Self = StObject.set(x, "DomainNameConfigurations", js.Array(value*))
     
     inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     

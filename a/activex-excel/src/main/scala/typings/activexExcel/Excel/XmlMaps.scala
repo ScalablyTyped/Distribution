@@ -22,7 +22,7 @@ trait XmlMaps extends StObject {
   def Item(Index: String): XmlMap = js.native
   def Item(Index: Double): XmlMap = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): XmlMap = js.native
+  def _Default(Index: Any): XmlMap = js.native
 }

@@ -8,7 +8,7 @@ object inputStreamMod {
   
   @JSImport("antlr4/InputStream", "InputStream")
   @js.native
-  class InputStream protected () extends StObject {
+  open class InputStream protected () extends StObject {
     def this(data: String) = this()
     def this(data: String, decodeToUnicodeCodePoints: Boolean) = this()
     
@@ -24,7 +24,7 @@ object inputStreamMod {
     
     def mark(): Double = js.native
     
-    def release(marker: js.Any): Double = js.native
+    def release(marker: Any): Double = js.native
     
     def reset(): Unit = js.native
     

@@ -11,7 +11,7 @@ trait LineSeriesProps
      with AbstractSeriesProps[LineSeriesPoint] {
   
   // default: 'solid'
-  var curve: js.UndefOr[String | (js.Function1[/* x */ js.Any, js.Any])] = js.undefined
+  var curve: js.UndefOr[String | (js.Function1[/* x */ Any, Any])] = js.undefined
   
   // default: null
   var getNull: js.UndefOr[RVGetNull[LineSeriesPoint]] = js.undefined
@@ -27,13 +27,13 @@ object LineSeriesProps {
   
   extension [Self <: LineSeriesProps](x: Self) {
     
-    inline def setCurve(value: String | (js.Function1[/* x */ js.Any, js.Any])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: String | (js.Function1[/* x */ Any, Any])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
-    inline def setCurveFunction1(value: /* x */ js.Any => js.Any): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
+    inline def setCurveFunction1(value: /* x */ Any => Any): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
     
     inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
-    inline def setGetNull(value: LineSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
+    inline def setGetNull(value: LineSeriesPoint => Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
     
     inline def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
     

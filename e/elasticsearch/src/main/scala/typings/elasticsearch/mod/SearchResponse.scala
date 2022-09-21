@@ -11,7 +11,7 @@ trait SearchResponse[T] extends StObject {
   
   var _shards: ShardsResponse
   
-  var aggregations: js.UndefOr[js.Any] = js.undefined
+  var aggregations: js.UndefOr[Any] = js.undefined
   
   var hits: Hits[T]
   
@@ -28,7 +28,7 @@ object SearchResponse {
   
   extension [Self <: SearchResponse[?], T](x: Self & SearchResponse[T]) {
     
-    inline def setAggregations(value: js.Any): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
+    inline def setAggregations(value: Any): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     
     inline def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
     

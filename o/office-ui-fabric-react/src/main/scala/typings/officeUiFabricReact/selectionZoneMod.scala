@@ -15,17 +15,16 @@ object selectionZoneMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/selection/SelectionZone", "SelectionZone")
   @js.native
-  class SelectionZone protected ()
-    extends Component[ISelectionZoneProps, ISelectionZoneState, js.Any] {
+  open class SelectionZone protected () extends Component[ISelectionZoneProps, ISelectionZoneState, Any] {
     def this(props: ISelectionZoneProps) = this()
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _clearAndSelectIndex: js.Any = js.native
+    /* private */ var _clearAndSelectIndex: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _findItemRoot: js.Any = js.native
+    /* private */ var _findItemRoot: Any = js.native
     
     /**
       * To avoid high startup cost of traversing the DOM on component mount,
@@ -34,90 +33,92 @@ object selectionZoneMod {
       * The styles will probably already calculated since we're running in a click handler,
       * so this is less likely to cause layout thrashing then doing it in mount.
       */
-    /* private */ var _findScrollParentAndTryClearOnEmptyClick: js.Any = js.native
+    /* private */ var _findScrollParentAndTryClearOnEmptyClick: Any = js.native
     
-    /* private */ var _getItemIndex: js.Any = js.native
+    /* private */ var _getItemIndex: Any = js.native
     
-    /* private */ var _getSelectionMode: js.Any = js.native
+    /* private */ var _getItemSpan: Any = js.native
     
-    /* private */ var _handleNextFocus: js.Any = js.native
+    /* private */ var _getSelectionMode: Any = js.native
     
-    /* private */ var _hasAttribute: js.Any = js.native
+    /* private */ var _handleNextFocus: Any = js.native
     
-    /* private */ var _isCtrlPressed: js.Any = js.native
+    /* private */ var _hasAttribute: Any = js.native
     
-    /* private */ var _isInputElement: js.Any = js.native
+    /* private */ var _isCtrlPressed: Any = js.native
     
-    /* private */ var _isMetaPressed: js.Any = js.native
+    /* private */ var _isInputElement: Any = js.native
     
-    /* private */ var _isNonHandledClick: js.Any = js.native
+    /* private */ var _isMetaPressed: Any = js.native
     
-    /* private */ var _isSelectionDisabled: js.Any = js.native
+    /* private */ var _isNonHandledClick: Any = js.native
     
-    /* private */ var _isShiftPressed: js.Any = js.native
+    /* private */ var _isSelectionDisabled: Any = js.native
     
-    /* private */ var _isTabPressed: js.Any = js.native
+    /* private */ var _isShiftPressed: Any = js.native
     
-    /* private */ var _isTouch: js.Any = js.native
+    /* private */ var _isTabPressed: Any = js.native
     
-    /* private */ var _isTouchTimeoutId: js.Any = js.native
+    /* private */ var _isTouch: Any = js.native
     
-    /* private */ var _onClick: js.Any = js.native
+    /* private */ var _isTouchTimeoutId: Any = js.native
     
-    /* private */ var _onContextMenu: js.Any = js.native
+    /* private */ var _onClick: Any = js.native
+    
+    /* private */ var _onContextMenu: Any = js.native
     
     /**
       * In multi selection, if you double click within an item's root (but not within the invoke element or
       * input elements), we should execute the invoke handler.
       */
-    /* private */ var _onDoubleClick: js.Any = js.native
+    /* private */ var _onDoubleClick: Any = js.native
     
     /**
       * When we focus an item, for single/multi select scenarios, we should try to select it immediately
       * as long as the focus did not originate from a mouse down/touch event. For those cases, we handle them
       * specially.
       */
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
-    /* private */ var _onInvokeClick: js.Any = js.native
+    /* private */ var _onInvokeClick: Any = js.native
     
-    /* private */ var _onInvokeMouseDown: js.Any = js.native
+    /* private */ var _onInvokeMouseDown: Any = js.native
     
-    /* private */ var _onItemSurfaceClick: js.Any = js.native
+    /* private */ var _onItemSurfaceClick: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _onKeyDownCapture: js.Any = js.native
+    /* private */ var _onKeyDownCapture: Any = js.native
     
-    /* private */ var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: Any = js.native
     
-    /* private */ var _onMouseDownCapture: js.Any = js.native
+    /* private */ var _onMouseDownCapture: Any = js.native
     
-    /* private */ var _onSelectionChange: js.Any = js.native
+    /* private */ var _onSelectionChange: Any = js.native
     
-    /* private */ var _onToggleAllClick: js.Any = js.native
+    /* private */ var _onToggleAllClick: Any = js.native
     
-    /* private */ var _onToggleClick: js.Any = js.native
+    /* private */ var _onToggleClick: Any = js.native
     
-    /* private */ var _onTouchStartCapture: js.Any = js.native
+    /* private */ var _onTouchStartCapture: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _setIsTouch: js.Any = js.native
+    /* private */ var _setIsTouch: Any = js.native
     
-    /* private */ var _shouldAutoSelect: js.Any = js.native
+    /* private */ var _shouldAutoSelect: Any = js.native
     
-    /* private */ var _shouldHandleFocus: js.Any = js.native
+    /* private */ var _shouldHandleFocus: Any = js.native
     
-    /* private */ var _shouldHandleFocusTimeoutId: js.Any = js.native
+    /* private */ var _shouldHandleFocusTimeoutId: Any = js.native
     
-    /* private */ var _tryClearOnEmptyClick: js.Any = js.native
+    /* private */ var _tryClearOnEmptyClick: Any = js.native
     
     /**
       * We need to track the modifier key states so that when focus events occur, which do not contain
       * modifier states in the Event object, we know how to behave.
       */
-    /* private */ var _updateModifiers: js.Any = js.native
+    /* private */ var _updateModifiers: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MSelectionZone(): Unit = js.native
@@ -221,7 +222,7 @@ object selectionZoneMod {
       */
     var onItemContextMenu: js.UndefOr[
         js.Function3[
-          /* item */ js.UndefOr[js.Any], 
+          /* item */ js.UndefOr[Any], 
           /* index */ js.UndefOr[Double], 
           /* ev */ js.UndefOr[Event], 
           Unit | Boolean
@@ -247,6 +248,21 @@ object selectionZoneMod {
     var selection: ISelection[IObjectWithKey]
     
     /**
+      * Determines if pressing the Escape clears the selection.
+      *
+      * @defaultvalue true
+      */
+    var selectionClearedOnEscapePress: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines if elements within the selection zone that DO NOT have the 'data-selection-toggle' or
+      * 'data-selection-all-toggle' attribute are clickable and can alter the selection.
+      *
+      * @defaultvalue true
+      */
+    var selectionClearedOnSurfaceClick: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The mode of Selection, where the value is one of
       * 'none', 'single', or 'multiple'.
       *
@@ -258,6 +274,15 @@ object selectionZoneMod {
       * If true, selection is preserved on outer click.
       */
     var selectionPreservedOnEmptyClick: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Allows the default toggle behavior to be overridden.
+      * When set to `true` users do not have press a modifier key (e.g., ctrl or meta)
+      * to toggle values.
+      *
+      * @default false
+      */
+    var toggleWithoutModifierPressed: js.UndefOr[Boolean] = js.undefined
   }
   object ISelectionZoneProps {
     
@@ -297,7 +322,7 @@ object selectionZoneMod {
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
       inline def setOnItemContextMenu(
-        value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit | Boolean
+        value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit | Boolean
       ): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction3(value))
       
       inline def setOnItemContextMenuUndefined: Self = StObject.set(x, "onItemContextMenu", js.undefined)
@@ -310,6 +335,14 @@ object selectionZoneMod {
       
       inline def setSelection(value: ISelection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
+      inline def setSelectionClearedOnEscapePress(value: Boolean): Self = StObject.set(x, "selectionClearedOnEscapePress", value.asInstanceOf[js.Any])
+      
+      inline def setSelectionClearedOnEscapePressUndefined: Self = StObject.set(x, "selectionClearedOnEscapePress", js.undefined)
+      
+      inline def setSelectionClearedOnSurfaceClick(value: Boolean): Self = StObject.set(x, "selectionClearedOnSurfaceClick", value.asInstanceOf[js.Any])
+      
+      inline def setSelectionClearedOnSurfaceClickUndefined: Self = StObject.set(x, "selectionClearedOnSurfaceClick", js.undefined)
+      
       inline def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
       inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
@@ -317,6 +350,10 @@ object selectionZoneMod {
       inline def setSelectionPreservedOnEmptyClick(value: Boolean): Self = StObject.set(x, "selectionPreservedOnEmptyClick", value.asInstanceOf[js.Any])
       
       inline def setSelectionPreservedOnEmptyClickUndefined: Self = StObject.set(x, "selectionPreservedOnEmptyClick", js.undefined)
+      
+      inline def setToggleWithoutModifierPressed(value: Boolean): Self = StObject.set(x, "toggleWithoutModifierPressed", value.asInstanceOf[js.Any])
+      
+      inline def setToggleWithoutModifierPressedUndefined: Self = StObject.set(x, "toggleWithoutModifierPressed", js.undefined)
     }
   }
   

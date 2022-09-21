@@ -38,7 +38,7 @@ object SearchProvisionedProductsOutput {
     
     inline def setProvisionedProductsUndefined: Self = StObject.set(x, "ProvisionedProducts", js.undefined)
     
-    inline def setProvisionedProductsVarargs(value: ProvisionedProductAttribute*): Self = StObject.set(x, "ProvisionedProducts", js.Array(value :_*))
+    inline def setProvisionedProductsVarargs(value: ProvisionedProductAttribute*): Self = StObject.set(x, "ProvisionedProducts", js.Array(value*))
     
     inline def setTotalResultsCount(value: TotalResultsCount): Self = StObject.set(x, "TotalResultsCount", value.asInstanceOf[js.Any])
     

@@ -3,8 +3,7 @@ package typings.ethereumjsBlockchain
 import typings.ethereumjsBlockchain.anon.Genesis
 import typings.ethereumjsBlockchain.anon.Key
 import typings.ethereumjsUtil.mod.BN
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,13 +17,13 @@ object mod {
     *
     * @param opts - An object with the options that this constructor takes. See [[BlockchainOptions]].
     */
-  class default ()
+  open class default ()
     extends StObject
        with Blockchain {
     def this(opts: BlockchainOptions) = this()
   }
   
-  type Block = js.Any
+  type Block = Any
   
   @js.native
   trait Blockchain
@@ -36,87 +35,87 @@ object mod {
       *
       * @hidden
       */
-    def _batchDbOps(dbOps: js.Any, cb: js.Any): Unit = js.native
+    def _batchDbOps(dbOps: Any, cb: Any): Unit = js.native
     
     /**
       * @hidden
       */
     var _common: typings.ethereumjsCommon.mod.default = js.native
     
-    def _delBlock(blockHash: js.Any, cb: js.Any): Unit = js.native
+    def _delBlock(blockHash: Any, cb: Any): Unit = js.native
     /**
       * @hidden
       */
-    def _delBlock(blockHash: Buffer, cb: js.Any): Unit = js.native
+    def _delBlock(blockHash: Buffer, cb: Any): Unit = js.native
     
     /**
       * @hidden
       */
-    def _delChild(hash: Buffer, number: BN, headHash: Buffer, ops: js.Any, cb: js.Any): js.Any = js.native
+    def _delChild(hash: Buffer, number: BN, headHash: Buffer, ops: Any, cb: Any): Any = js.native
     
     /**
       * Delete canonical number assignments for specified number and above
       *
       * @hidden
       */
-    def _deleteStaleAssignments(number: BN, headHash: Buffer, ops: js.Any, cb: js.Any): Unit = js.native
+    def _deleteStaleAssignments(number: BN, headHash: Buffer, ops: Any, cb: Any): Unit = js.native
     
     /**
       * @hidden
       */
-    var _genesis: js.Any = js.native
+    var _genesis: Any = js.native
     
-    def _getBlock(blockTag: Double, cb: js.Any): Unit = js.native
-    def _getBlock(blockTag: BN, cb: js.Any): Unit = js.native
+    def _getBlock(blockTag: Double, cb: Any): Unit = js.native
+    def _getBlock(blockTag: BN, cb: Any): Unit = js.native
     /**
       * @hidden
       */
-    def _getBlock(blockTag: Buffer, cb: js.Any): Unit = js.native
+    def _getBlock(blockTag: Buffer, cb: Any): Unit = js.native
     
     /**
       * Gets a header by number. Header must be in the canonical chain
       *
       * @hidden
       */
-    def _getCanonicalHeader(number: BN, cb: js.Any): Unit = js.native
+    def _getCanonicalHeader(number: BN, cb: Any): Unit = js.native
     
     /**
       * Gets a header by hash and number. Header can exist outside the canonical chain
       *
       * @hidden
       */
-    def _getHeader(hash: Buffer, number: js.Any): Unit = js.native
-    def _getHeader(hash: Buffer, number: js.Any, cb: js.Any): Unit = js.native
+    def _getHeader(hash: Buffer, number: Any): Unit = js.native
+    def _getHeader(hash: Buffer, number: Any, cb: Any): Unit = js.native
     
     /**
       * Gets total difficulty for a block specified by hash and number
       *
       * @hidden
       */
-    def _getTd(hash: js.Any, number: js.Any): Unit = js.native
-    def _getTd(hash: js.Any, number: js.Any, cb: js.Any): Unit = js.native
+    def _getTd(hash: Any, number: Any): Unit = js.native
+    def _getTd(hash: Any, number: Any, cb: Any): Unit = js.native
     
     /**
       * Performs a block hash to block number lookup
       *
       * @hidden
       */
-    def _hashToNumber(hash: Buffer, cb: js.Any): Unit = js.native
+    def _hashToNumber(hash: Buffer, cb: Any): Unit = js.native
     
     /**
       * @hidden
       */
-    var _headBlock: js.Any = js.native
+    var _headBlock: Any = js.native
     
     /**
       * @hidden
       */
-    var _headHeader: js.Any = js.native
+    var _headHeader: Any = js.native
     
     /**
       * @hidden
       */
-    var _heads: js.Any = js.native
+    var _heads: Any = js.native
     
     /**
       * Fetches the meta info about the blockchain from the db. Meta info contains
@@ -125,7 +124,7 @@ object mod {
       *
       * @hidden
       */
-    def _init(cb: js.Any): Unit = js.native
+    def _init(cb: Any): Unit = js.native
     
     /**
       * @hidden
@@ -135,49 +134,49 @@ object mod {
     /**
       * @hidden
       */
-    var _initLock: js.Any = js.native
+    var _initLock: Any = js.native
     
     /**
       * @hidden
       */
-    def _iterator(name: String, func: js.Any, cb: js.Any): js.Any = js.native
+    def _iterator(name: String, func: Any, cb: Any): Any = js.native
     
     /**
       * @hidden
       */
-    def _lockUnlock(fn: js.Any, cb: js.Any): Unit = js.native
+    def _lockUnlock(fn: Any, cb: Any): Unit = js.native
     
     /**
       * Helper function to lookup a block by either hash only or a hash and number
       *
       * @hidden
       */
-    def _lookupByHashNumber(hash: Buffer, number: BN, cb: js.Any, next: js.Any): Unit = js.native
+    def _lookupByHashNumber(hash: Buffer, number: BN, cb: Any, next: Any): Unit = js.native
     
     /**
       * Performs a block number to block hash lookup
       *
       * @hidden
       */
-    def _numberToHash(number: BN, cb: js.Any): Unit = js.native
+    def _numberToHash(number: BN, cb: Any): Unit = js.native
     
     /**
       * @hidden
       */
-    def _putBlockOrHeader(item: js.Any, cb: js.Any): js.Any = js.native
-    def _putBlockOrHeader(item: js.Any, cb: js.Any, isGenesis: Boolean): js.Any = js.native
+    def _putBlockOrHeader(item: Any, cb: Any): Any = js.native
+    def _putBlockOrHeader(item: Any, cb: Any, isGenesis: Boolean): Any = js.native
     
     /**
       * @hidden
       */
-    var _putSemaphore: js.Any = js.native
+    var _putSemaphore: Any = js.native
     
     /**
       * Overwrites stale canonical number assignments.
       *
       * @hidden
       */
-    def _rebuildCanonical(header: js.Any, ops: js.Any, cb: js.Any): js.Any = js.native
+    def _rebuildCanonical(header: Any, ops: Any, cb: Any): Any = js.native
     
     /**
       * @hidden
@@ -187,46 +186,46 @@ object mod {
     /**
       * @hidden
       */
-    def _saveHeads(cb: js.Any): Unit = js.native
+    def _saveHeads(cb: Any): Unit = js.native
     
     /**
       * Sets the default genesis block
       *
       * @hidden
       */
-    def _setCanonicalGenesisBlock(cb: js.Any): Unit = js.native
+    def _setCanonicalGenesisBlock(cb: Any): Unit = js.native
     
     /**
       * @hidden
       */
-    var _staleHeadBlock: js.Any = js.native
+    var _staleHeadBlock: Any = js.native
     
     /**
       * @hidden
       */
-    var _staleHeads: js.Any = js.native
+    var _staleHeads: Any = js.native
     
-    /* private */ val _validateBlocks: js.Any = js.native
+    /* private */ val _validateBlocks: Any = js.native
     
-    /* private */ val _validatePow: js.Any = js.native
+    /* private */ val _validatePow: Any = js.native
     
-    var db: js.Any = js.native
+    var db: Any = js.native
     
     var dbManager: typings.ethereumjsBlockchain.dbManagerMod.default = js.native
     
-    var ethash: js.Any = js.native
+    var ethash: Any = js.native
     
-    def getBlock(blockTag: Double, cb: js.Any): Unit = js.native
-    def getBlock(blockTag: BN, cb: js.Any): Unit = js.native
+    def getBlock(blockTag: Double, cb: Any): Unit = js.native
+    def getBlock(blockTag: BN, cb: Any): Unit = js.native
     /**
       * Gets a block by its hash.
       *
       * @param blockTag - The block's hash or number
       * @param cb - The callback. It is given two parameters `err` and the found `block` (an instance of https://github.com/ethereumjs/ethereumjs-block) if any.
       */
-    def getBlock(blockTag: Buffer, cb: js.Any): Unit = js.native
+    def getBlock(blockTag: Buffer, cb: Any): Unit = js.native
     
-    def getBlocks(blockId: Double, maxBlocks: Double, skip: Double, reverse: Boolean, cb: js.Any): Unit = js.native
+    def getBlocks(blockId: Double, maxBlocks: Double, skip: Double, reverse: Boolean, cb: Any): Unit = js.native
     /**
       * Looks up many blocks relative to blockId
       *
@@ -236,7 +235,7 @@ object mod {
       * @param reverse - Fetch blocks in reverse
       * @param cb - The callback. It is given two parameters `err` and the found `blocks` if any.
       */
-    def getBlocks(blockId: Buffer, maxBlocks: Double, skip: Double, reverse: Boolean, cb: js.Any): Unit = js.native
+    def getBlocks(blockId: Buffer, maxBlocks: Double, skip: Double, reverse: Boolean, cb: Any): Unit = js.native
     
     /**
       * Returns the specified iterator head.
@@ -244,22 +243,22 @@ object mod {
       * @param name - Optional name of the state root head (default: 'vm')
       * @param cb - The callback. It is given two parameters `err` and the returned `block`
       */
-    def getHead(name: js.Any): Unit = js.native
-    def getHead(name: js.Any, cb: js.Any): Unit = js.native
+    def getHead(name: Any): Unit = js.native
+    def getHead(name: Any, cb: Any): Unit = js.native
     
     /**
       * Returns the latest full block in the canonical chain.
       *
       * @param cb - The callback. It is given two parameters `err` and the returned `block`
       */
-    def getLatestBlock(cb: js.Any): Unit = js.native
+    def getLatestBlock(cb: Any): Unit = js.native
     
     /**
       * Returns the latest header in the canonical chain.
       *
       * @param cb - The callback. It is given two parameters `err` and the returned `header`
       */
-    def getLatestHeader(cb: js.Any): Unit = js.native
+    def getLatestHeader(cb: Any): Unit = js.native
     
     /**
       * Returns an object with metadata about the Blockchain. It's defined for backwards compatibility.
@@ -272,8 +271,8 @@ object mod {
       * @param block - The block to be added to the blockchain
       * @param cb - The callback. It is given two parameters `err` and the saved `block`
       */
-    def putBlock(block: js.Object, cb: js.Any): Unit = js.native
-    def putBlock(block: js.Object, cb: js.Any, isGenesis: Boolean): Unit = js.native
+    def putBlock(block: js.Object, cb: Any): Unit = js.native
+    def putBlock(block: js.Object, cb: Any, isGenesis: Boolean): Unit = js.native
     
     /**
       * Adds many blocks to the blockchain.
@@ -281,7 +280,7 @@ object mod {
       * @param blocks - The blocks to be added to the blockchain
       * @param cb - The callback. It is given two parameters `err` and the last of the saved `blocks`
       */
-    def putBlocks(blocks: js.Array[js.Any], cb: js.Any): Unit = js.native
+    def putBlocks(blocks: js.Array[Any], cb: Any): Unit = js.native
     
     /**
       * Puts the genesis block in the database
@@ -289,7 +288,7 @@ object mod {
       * @param genesis - The genesis block to be added
       * @param cb - The callback. It is given two parameters `err` and the saved `block`
       */
-    def putGenesis(genesis: js.Any, cb: js.Any): Unit = js.native
+    def putGenesis(genesis: Any, cb: Any): Unit = js.native
     
     /**
       * Adds a header to the blockchain.
@@ -297,7 +296,7 @@ object mod {
       * @param header - The header to be added to the blockchain
       * @param cb - The callback. It is given two parameters `err` and the saved `header`
       */
-    def putHeader(header: js.Object, cb: js.Any): Unit = js.native
+    def putHeader(header: js.Object, cb: Any): Unit = js.native
     
     /**
       * Adds many headers to the blockchain.
@@ -305,7 +304,7 @@ object mod {
       * @param headers - The headers to be added to the blockchain
       * @param cb - The callback. It is given two parameters `err` and the last of the saved `headers`
       */
-    def putHeaders(headers: js.Array[js.Any], cb: js.Any): Unit = js.native
+    def putHeaders(headers: js.Array[Any], cb: Any): Unit = js.native
     
     /**
       * Given an ordered array, returns to the callback an array of hashes that are not in the blockchain yet.
@@ -313,7 +312,7 @@ object mod {
       * @param hashes - Ordered array of hashes
       * @param cb - The callback. It is given two parameters `err` and hashes found.
       */
-    def selectNeededHashes(hashes: js.Array[js.Any], cb: js.Any): Unit = js.native
+    def selectNeededHashes(hashes: js.Array[Any], cb: Any): Unit = js.native
     
     /**
       * This field is always `true`. It's here only for backwards compatibility.
@@ -333,14 +332,14 @@ object mod {
       * @param blockHash - The hash of the block to be deleted
       * @param cb - A callback.
       */
-    def delBlock(blockHash: Buffer, cb: js.Any): Unit = js.native
+    def delBlock(blockHash: Buffer, cb: Any): Unit = js.native
     
-    def getBlock(blockTag: Double, cb: js.Function2[/* err */ Error | Null, /* block */ js.UndefOr[Block], Unit]): Unit = js.native
-    def getBlock(blockTag: BN, cb: js.Function2[/* err */ Error | Null, /* block */ js.UndefOr[Block], Unit]): Unit = js.native
+    def getBlock(blockTag: Double, cb: js.Function2[/* err */ js.Error | Null, /* block */ js.UndefOr[Block], Unit]): Unit = js.native
+    def getBlock(blockTag: BN, cb: js.Function2[/* err */ js.Error | Null, /* block */ js.UndefOr[Block], Unit]): Unit = js.native
     /**
       * Returns a block by its hash or number.
       */
-    def getBlock(blockTag: Buffer, cb: js.Function2[/* err */ Error | Null, /* block */ js.UndefOr[Block], Unit]): Unit = js.native
+    def getBlock(blockTag: Buffer, cb: js.Function2[/* err */ js.Error | Null, /* block */ js.UndefOr[Block], Unit]): Unit = js.native
     
     /**
       * This method is only here for backwards compatibility. It can be removed once
@@ -349,7 +348,7 @@ object mod {
       *
       * The method should just call `cb` with `null` as first argument.
       */
-    def getDetails(_underscore: String, cb: js.Any): Unit = js.native
+    def getDetails(_underscore: String, cb: Any): Unit = js.native
     
     /**
       * Iterates through blocks starting at the specified iterator head and calls the onBlock function
@@ -359,7 +358,7 @@ object mod {
       * @param onBlock - Function called on each block with params (block, reorg, cb)
       * @param cb - A callback function
       */
-    def iterator(name: String, onBlock: js.Any, cb: js.Any): Unit = js.native
+    def iterator(name: String, onBlock: Any, cb: Any): Unit = js.native
     
     /**
       * Adds a block to the blockchain.
@@ -368,8 +367,8 @@ object mod {
       * @param cb - The callback. It is given two parameters `err` and the saved `block`
       * @param isGenesis - True if block is the genesis block.
       */
-    def putBlock(block: Block, cb: js.Any): Unit = js.native
-    def putBlock(block: Block, cb: js.Any, isGenesis: Boolean): Unit = js.native
+    def putBlock(block: Block, cb: Any): Unit = js.native
+    def putBlock(block: Block, cb: Any, isGenesis: Boolean): Unit = js.native
   }
   
   trait BlockchainOptions extends StObject {
@@ -388,7 +387,7 @@ object mod {
       * Database to store blocks and metadata. Should be a
       * [levelup](https://github.com/rvagg/node-levelup) instance.
       */
-    var db: js.UndefOr[js.Any] = js.undefined
+    var db: js.UndefOr[Any] = js.undefined
     
     /**
       * Hardfork for the blocks. If `undefined` or `null` is passed, it gets computed based on block
@@ -435,7 +434,7 @@ object mod {
       
       inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
       
-      inline def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
       inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
       

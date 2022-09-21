@@ -1,7 +1,7 @@
 package typings.reactTransitionGroup
 
 import typings.react.mod.Component
-import typings.react.mod.ReactType
+import typings.react.mod.ElementType
 import typings.reactTransitionGroup.anon.Dictprop
 import typings.reactTransitionGroup.reactTransitionGroupStrings.div
 import typings.reactTransitionGroup.transitionMod.TransitionActions
@@ -70,10 +70,10 @@ object transitionGroupMod {
     */
   @JSImport("react-transition-group/TransitionGroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TransitionGroupProps[div, js.Any], js.Object, js.Any]
+  open class default ()
+    extends Component[TransitionGroupProps[div, Any], js.Object, Any]
   
-  trait ComponentTransitionGroupProps[T /* <: ReactType[js.Any] */]
+  trait ComponentTransitionGroupProps[T /* <: ElementType[Any] */]
     extends StObject
        with TransitionActions {
     
@@ -81,18 +81,18 @@ object transitionGroupMod {
   }
   object ComponentTransitionGroupProps {
     
-    inline def apply[T /* <: ReactType[js.Any] */](component: T): ComponentTransitionGroupProps[T] = {
+    inline def apply[T /* <: ElementType[Any] */](component: T): ComponentTransitionGroupProps[T] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentTransitionGroupProps[T]]
     }
     
-    extension [Self <: ComponentTransitionGroupProps[?], T /* <: ReactType[js.Any] */](x: Self & ComponentTransitionGroupProps[T]) {
+    extension [Self <: ComponentTransitionGroupProps[?], T /* <: ElementType[Any] */](x: Self & ComponentTransitionGroupProps[T]) {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
   
-  trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */]
+  trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */]
     extends StObject
        with TransitionActions {
     
@@ -100,12 +100,12 @@ object transitionGroupMod {
   }
   object IntrinsicTransitionGroupProps {
     
-    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](): IntrinsicTransitionGroupProps[T] = {
+    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](): IntrinsicTransitionGroupProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntrinsicTransitionGroupProps[T]]
     }
     
-    extension [Self <: IntrinsicTransitionGroupProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](x: Self & IntrinsicTransitionGroupProps[T]) {
+    extension [Self <: IntrinsicTransitionGroupProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](x: Self & IntrinsicTransitionGroupProps[T]) {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -172,7 +172,7 @@ object transitionGroupMod {
     * components. This means you can mix and match animations across different
     * list items.
     */
-  type TransitionGroup = Component[TransitionGroupProps[div, js.Any], js.Object, js.Any]
+  type TransitionGroup = Component[TransitionGroupProps[div, Any], js.Object, Any]
   
-  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, V /* <: ReactType[js.Any] */] = (IntrinsicTransitionGroupProps[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)) | (ComponentTransitionGroupProps[V] & Dictprop)
+  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */, V /* <: ElementType[Any] */] = (IntrinsicTransitionGroupProps[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)) | (ComponentTransitionGroupProps[V] & Dictprop)
 }

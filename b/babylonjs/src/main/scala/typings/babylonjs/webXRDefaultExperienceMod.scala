@@ -2,7 +2,9 @@ package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.webXRControllerPointerSelectionMod.IWebXRControllerPointerSelectionOptions
 import typings.babylonjs.webXRControllerPointerSelectionMod.WebXRControllerPointerSelection
+import typings.babylonjs.webXRControllerTeleportationMod.IWebXRTeleportationOptions
 import typings.babylonjs.webXRControllerTeleportationMod.WebXRMotionControllerTeleportation
 import typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUI
 import typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUIOptions
@@ -10,6 +12,8 @@ import typings.babylonjs.webXRExperienceHelperMod.WebXRExperienceHelper
 import typings.babylonjs.webXRInputMod.IWebXRInputOptions
 import typings.babylonjs.webXRInputMod.WebXRInput
 import typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions
+import typings.babylonjs.webXRNearInteractionMod.IWebXRNearInteractionOptions
+import typings.babylonjs.webXRNearInteractionMod.WebXRNearInteraction
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +23,7 @@ object webXRDefaultExperienceMod {
   
   @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperience")
   @js.native
-  /* private */ class WebXRDefaultExperience () extends StObject {
+  /* private */ open class WebXRDefaultExperience () extends StObject {
     
     /**
       * Base experience
@@ -27,7 +31,7 @@ object webXRDefaultExperienceMod {
     var baseExperience: WebXRExperienceHelper = js.native
     
     /**
-      * DIsposes of the experience helper
+      * Disposes of the experience helper
       */
     def dispose(): Unit = js.native
     
@@ -40,6 +44,11 @@ object webXRDefaultExperienceMod {
       * Input experience extension
       */
     var input: WebXRInput = js.native
+    
+    /**
+      * Enables near interaction for hands/controllers
+      */
+    var nearInteraction: WebXRNearInteraction = js.native
     
     /**
       * Enables laser pointer and selection
@@ -75,7 +84,7 @@ object webXRDefaultExperienceMod {
   
   @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperienceOptions")
   @js.native
-  class WebXRDefaultExperienceOptions () extends StObject {
+  open class WebXRDefaultExperienceOptions () extends StObject {
     
     /**
       * Enable or disable default UI to enter XR
@@ -83,7 +92,19 @@ object webXRDefaultExperienceMod {
     var disableDefaultUI: js.UndefOr[Boolean] = js.native
     
     /**
-      * Should teleportation not initialize. defaults to false.
+      * Should nearInteraction not initialize. Defaults to false.
+      */
+    var disableNearInteraction: js.UndefOr[Boolean] = js.native
+    
+    /**
+      * Should pointer selection not initialize.
+      * Note that disabling pointer selection also disables teleportation.
+      * Defaults to false.
+      */
+    var disablePointerSelection: js.UndefOr[Boolean] = js.native
+    
+    /**
+      * Should teleportation not initialize. Defaults to false.
       */
     var disableTeleportation: js.UndefOr[Boolean] = js.native
     
@@ -105,6 +126,11 @@ object webXRDefaultExperienceMod {
     var inputOptions: js.UndefOr[IWebXRInputOptions] = js.native
     
     /**
+      * optional configuration for near interaction
+      */
+    var nearInteractionOptions: js.UndefOr[IWebXRNearInteractionOptions] = js.native
+    
+    /**
       * A list of optional features to init the session with
       * If set to true, all features we support will be added
       */
@@ -116,9 +142,19 @@ object webXRDefaultExperienceMod {
     var outputCanvasOptions: js.UndefOr[WebXRManagedOutputCanvasOptions] = js.native
     
     /**
+      * optional configuration for pointer selection
+      */
+    var pointerSelectionOptions: js.UndefOr[IWebXRControllerPointerSelectionOptions] = js.native
+    
+    /**
       * An optional rendering group id that will be set globally for teleportation, pointer selection and default controller meshes
       */
     var renderingGroupId: js.UndefOr[Double] = js.native
+    
+    /**
+      * optional configuration for teleportation
+      */
+    var teleportationOptions: js.UndefOr[IWebXRTeleportationOptions] = js.native
     
     /**
       * optional UI options. This can be used among other to change session mode and reference space type

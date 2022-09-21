@@ -24,7 +24,7 @@ trait Shell extends StObject {
   def AddToRecent(varFile: Null, bstrCategory: String): Unit = js.native
   
   /** Get Application object */
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   /** Browse the name space for a Folder */
   def BrowseForFolder(Hwnd: Double, Title: String, Options: Double): Folder3 = js.native
@@ -63,7 +63,7 @@ trait Shell extends StObject {
     * The specified value name must be within the **HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer** subkey.
     * If the value name does not exist then the method returns null.
     */
-  def ExplorerPolicy(bstrPolicyName: String): js.Any = js.native
+  def ExplorerPolicy(bstrPolicyName: String): Any = js.native
   
   /** Bring up the file run dialog box */
   def FileRun(): Unit = js.native
@@ -89,17 +89,6 @@ trait Shell extends StObject {
   def GetSetting(lSetting: SettingKey): Boolean = js.native
   
   /**
-    * `DirectoryServiceAvailable` -- Returns **true** if the directory service is available
-    *
-    * `IsOS_DomainMember` -- Returns **true** if the computer is a member of a domain (_Windows XP and later_)
-    *
-    * `IsOS_Personal` -- Returns **true** if the operating system is Windows XP Home Edition (_Windows XP only_)
-    *
-    * `IsOS_Professional` -- Returns **true** if the operating system is Windows XP Professional Edition (_Windows XP only_)
-    */
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_DirectoryServiceAvailable(Name: DirectoryServiceAvailable): Boolean = js.native
-  /**
     * `DoubleClickTime` -- The double-click time, in milliseconds
     *
     * `PhysicalMemoryInstalled` -- The amount of physical memory installed, in bytes
@@ -111,22 +100,20 @@ trait Shell extends StObject {
     *
     * `ProcessorSpeed` -- The processor speed, in megahertz (MHz)
     */
+  def GetSystemInformation(
+    Name: DoubleClickTime | PhysicalMemoryInstalled | ProcessorArchitecture | ProcessorLevel | ProcessorSpeed
+  ): Double = js.native
+  /**
+    * `DirectoryServiceAvailable` -- Returns **true** if the directory service is available
+    *
+    * `IsOS_DomainMember` -- Returns **true** if the computer is a member of a domain (_Windows XP and later_)
+    *
+    * `IsOS_Personal` -- Returns **true** if the operating system is Windows XP Home Edition (_Windows XP only_)
+    *
+    * `IsOS_Professional` -- Returns **true** if the operating system is Windows XP Professional Edition (_Windows XP only_)
+    */
   @JSName("GetSystemInformation")
-  def GetSystemInformation_DoubleClickTime(Name: DoubleClickTime): Double = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_IsOSDomainMember(Name: IsOS_DomainMember): Boolean = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_IsOSPersonal(Name: IsOS_Personal): Boolean = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_IsOSProfessional(Name: IsOS_Professional): Boolean = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_PhysicalMemoryInstalled(Name: PhysicalMemoryInstalled): Double = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_ProcessorArchitecture(Name: ProcessorArchitecture): Double = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_ProcessorLevel(Name: ProcessorLevel): Double = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_ProcessorSpeed(Name: ProcessorSpeed): Double = js.native
+  def GetSystemInformation_Boolean(Name: DirectoryServiceAvailable | IsOS_DomainMember | IsOS_Personal | IsOS_Professional): Boolean = js.native
   
   /** Display shell help */
   def Help(): Unit = js.native
@@ -135,7 +122,7 @@ trait Shell extends StObject {
   def IsRestricted(Group: String, Restriction: String): Double = js.native
   
   /** Determine if a service is running by name. */
-  def IsServiceRunning(ServiceName: String): js.Any = js.native
+  def IsServiceRunning(ServiceName: String): Any = js.native
   
   /** Minimize all windows */
   def MinimizeAll(): Unit = js.native
@@ -149,7 +136,7 @@ trait Shell extends StObject {
   def Open(vDir: ShellSpecialFolderConstants): Unit = js.native
   
   /** Get Parent object */
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /** Refresh the menu */
   def RefreshMenu(): Unit = js.native
@@ -208,7 +195,7 @@ trait Shell extends StObject {
   def ShellExecute(File: String, vArgs: Unit, vDir: Unit, vOperation: Unit, vShow: ShellExecuteShow): Unit = js.native
   
   /** Show/Hide browser bar. */
-  def ShowBrowserBar(bstrClsid: ExplorerBarCLSID, bShow: Boolean): js.Any = js.native
+  def ShowBrowserBar(bstrClsid: ExplorerBarCLSID, bShow: Boolean): Any = js.native
   
   /** Exit Windows */
   def ShutdownWindows(): Unit = js.native

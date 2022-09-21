@@ -10,23 +10,23 @@ object mod {
   
   @JSImport("react-data-grid", JSImport.Namespace)
   @js.native
-  class ^[T] () extends ReactDataGrid[T]
+  open class ^[T] () extends ReactDataGrid[T]
   
   @JSImport("react-data-grid", "Cell")
   @js.native
-  class Cell ()
-    extends Component[js.Any, js.Object, js.Any]
+  open class Cell ()
+    extends Component[Any, js.Object, Any]
   
   @JSImport("react-data-grid", "Row")
   @js.native
-  class Row ()
-    extends Component[js.Any, js.Object, js.Any]
+  open class Row ()
+    extends Component[Any, js.Object, Any]
   
   object editors {
     
     @JSImport("react-data-grid", "editors.EditorBase")
     @js.native
-    class EditorBase[P, S] ()
+    open class EditorBase[P, S] ()
       extends typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.editors.EditorBase[P, S]
   }
 }

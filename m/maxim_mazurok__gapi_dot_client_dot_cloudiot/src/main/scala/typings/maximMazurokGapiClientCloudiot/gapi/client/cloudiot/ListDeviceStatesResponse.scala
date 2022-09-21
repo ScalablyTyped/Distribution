@@ -22,6 +22,6 @@ object ListDeviceStatesResponse {
     
     inline def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
     
-    inline def setDeviceStatesVarargs(value: DeviceState*): Self = StObject.set(x, "deviceStates", js.Array(value :_*))
+    inline def setDeviceStatesVarargs(value: DeviceState*): Self = StObject.set(x, "deviceStates", js.Array(value*))
   }
 }

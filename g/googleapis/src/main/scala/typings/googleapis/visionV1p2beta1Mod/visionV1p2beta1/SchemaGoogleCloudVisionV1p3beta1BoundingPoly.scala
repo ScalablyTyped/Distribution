@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A bounding polygon for the detected image annotation.
-  */
 trait SchemaGoogleCloudVisionV1p3beta1BoundingPoly extends StObject {
   
   /**
@@ -32,12 +29,12 @@ object SchemaGoogleCloudVisionV1p3beta1BoundingPoly {
     
     inline def setNormalizedVerticesUndefined: Self = StObject.set(x, "normalizedVertices", js.undefined)
     
-    inline def setNormalizedVerticesVarargs(value: SchemaGoogleCloudVisionV1p3beta1NormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value :_*))
+    inline def setNormalizedVerticesVarargs(value: SchemaGoogleCloudVisionV1p3beta1NormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value*))
     
     inline def setVertices(value: js.Array[SchemaGoogleCloudVisionV1p3beta1Vertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    inline def setVerticesVarargs(value: SchemaGoogleCloudVisionV1p3beta1Vertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: SchemaGoogleCloudVisionV1p3beta1Vertex*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

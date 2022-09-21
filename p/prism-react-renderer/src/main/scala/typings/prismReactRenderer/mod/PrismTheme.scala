@@ -24,6 +24,6 @@ object PrismTheme {
     
     inline def setStyles(value: js.Array[Languages]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    inline def setStylesVarargs(value: Languages*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: Languages*): Self = StObject.set(x, "styles", js.Array(value*))
   }
 }

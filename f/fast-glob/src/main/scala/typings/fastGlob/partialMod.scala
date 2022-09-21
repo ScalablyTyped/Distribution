@@ -8,7 +8,7 @@ object partialMod {
   
   @JSImport("fast-glob/out/providers/matchers/partial", JSImport.Default)
   @js.native
-  class default () extends PartialMatcher
+  open class default () extends PartialMatcher
   
   @js.native
   trait PartialMatcher

@@ -16,10 +16,9 @@ object menuHeaderMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/collections/Menu/MenuHeader", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[MenuHeaderProps, ComponentState, js.Any] {
+  open class default protected () extends Component[MenuHeaderProps, ComponentState, Any] {
     def this(props: MenuHeaderProps) = this()
-    def this(props: MenuHeaderProps, context: js.Any) = this()
+    def this(props: MenuHeaderProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/collections/Menu/MenuHeader", JSImport.Default)
   @js.native
@@ -28,7 +27,7 @@ object menuHeaderMod extends Shortcut {
   trait MenuHeaderProps
     extends StObject
        with StrictMenuHeaderProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object MenuHeaderProps {
     
     inline def apply(): MenuHeaderProps = {
@@ -40,7 +39,7 @@ object menuHeaderMod extends Shortcut {
   trait StrictMenuHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -60,7 +59,7 @@ object menuHeaderMod extends Shortcut {
     
     extension [Self <: StrictMenuHeaderProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

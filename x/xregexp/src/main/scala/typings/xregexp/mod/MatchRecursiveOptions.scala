@@ -1,5 +1,8 @@
 package typings.xregexp.mod
 
+import typings.xregexp.xregexpStrings.`skip-lazy`
+import typings.xregexp.xregexpStrings.error
+import typings.xregexp.xregexpStrings.skip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +18,11 @@ trait MatchRecursiveOptions extends StObject {
     * **Must be exactly one character long.**
     */
   var escapeChar: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Handling mode for unbalanced delimiters.
+    */
+  var unbalanced: js.UndefOr[error | skip | `skip-lazy`] = js.undefined
   
   /**
     * The value names to associate with the matches.
@@ -38,6 +46,10 @@ object MatchRecursiveOptions {
     inline def setEscapeCharNull: Self = StObject.set(x, "escapeChar", null)
     
     inline def setEscapeCharUndefined: Self = StObject.set(x, "escapeChar", js.undefined)
+    
+    inline def setUnbalanced(value: error | skip | `skip-lazy`): Self = StObject.set(x, "unbalanced", value.asInstanceOf[js.Any])
+    
+    inline def setUnbalancedUndefined: Self = StObject.set(x, "unbalanced", js.undefined)
     
     inline def setValueNames(value: MatchRecursiveValueNames): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
     

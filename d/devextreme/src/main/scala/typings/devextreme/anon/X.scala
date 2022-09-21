@@ -1,19 +1,21 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.bottom
-import typings.devextreme.devextremeStrings.center
-import typings.devextreme.devextremeStrings.left
-import typings.devextreme.devextremeStrings.right
-import typings.devextreme.devextremeStrings.top
+import typings.devextreme.mod.DevExpress.common.VerticalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait X extends StObject {
   
-  var x: js.UndefOr[center | left | right] = js.undefined
+  /**
+    * Specifies a position in the horizontal direction (for left, right, or center alignment).
+    */
+  var x: js.UndefOr[typings.devextreme.mod.DevExpress.common.HorizontalAlignment] = js.undefined
   
-  var y: js.UndefOr[bottom | center | top] = js.undefined
+  /**
+    * Specifies a position in the vertical direction (for top, bottom, or center alignment).
+    */
+  var y: js.UndefOr[VerticalAlignment] = js.undefined
 }
 object X {
   
@@ -24,11 +26,11 @@ object X {
   
   extension [Self <: X](x: Self) {
     
-    inline def setX(value: center | left | right): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: typings.devextreme.mod.DevExpress.common.HorizontalAlignment): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setY(value: bottom | center | top): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: VerticalAlignment): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }

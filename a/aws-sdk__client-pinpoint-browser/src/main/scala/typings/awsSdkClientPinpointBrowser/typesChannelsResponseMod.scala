@@ -3,7 +3,6 @@ package typings.awsSdkClientPinpointBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientPinpointBrowser.typesChannelResponseMod.ChannelResponse
 import typings.awsSdkClientPinpointBrowser.typesChannelResponseMod.UnmarshalledChannelResponse
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object typesChannelsResponseMod {
       * A map of channels, with the ChannelType as the key and the Channel as the value.
       */
     var Channels: js.UndefOr[
-        StringDictionary[ChannelResponse] | (Iterable[js.Tuple2[String, ChannelResponse]])
+        StringDictionary[ChannelResponse] | (js.Iterable[js.Tuple2[String, ChannelResponse]])
       ] = js.undefined
   }
   object ChannelsResponse {
@@ -28,7 +27,7 @@ object typesChannelsResponseMod {
     
     extension [Self <: ChannelsResponse](x: Self) {
       
-      inline def setChannels(value: StringDictionary[ChannelResponse] | (Iterable[js.Tuple2[String, ChannelResponse]])): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: StringDictionary[ChannelResponse] | (js.Iterable[js.Tuple2[String, ChannelResponse]])): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
       
       inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     }

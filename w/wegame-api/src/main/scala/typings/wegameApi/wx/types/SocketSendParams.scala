@@ -1,6 +1,5 @@
 package typings.wegameApi.wx.types
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait SocketSendParams extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var data: String | ArrayBuffer
+  var data: String | js.typedarray.ArrayBuffer
   
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -17,7 +16,7 @@ trait SocketSendParams extends StObject {
 }
 object SocketSendParams {
   
-  inline def apply(data: String | ArrayBuffer): SocketSendParams = {
+  inline def apply(data: String | js.typedarray.ArrayBuffer): SocketSendParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketSendParams]
   }
@@ -28,7 +27,7 @@ object SocketSendParams {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     

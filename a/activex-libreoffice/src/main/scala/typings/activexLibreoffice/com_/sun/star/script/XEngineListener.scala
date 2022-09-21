@@ -36,7 +36,7 @@ object XEngineListener {
     disposing: EventObject => Unit,
     finished: FinishEngineEvent => Unit,
     interrupt: InterruptEngineEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     running: EventObject => Unit
   ): XEngineListener = {

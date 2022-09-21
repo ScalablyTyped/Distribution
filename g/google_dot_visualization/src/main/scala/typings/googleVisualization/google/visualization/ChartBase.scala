@@ -5,31 +5,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ChartBase extends StObject {
   
-  def getContainer(): Element
+  def getContainer(): Element = js.native
   
-  def getSelection(): js.Array[VisualizationSelectionArray]
+  def getSelection(): js.Array[ChartSelection] = js.native
   
-  def setSelection(selection: js.Array[VisualizationSelectionArray]): Unit
-}
-object ChartBase {
-  
-  inline def apply(
-    getContainer: () => Element,
-    getSelection: () => js.Array[VisualizationSelectionArray],
-    setSelection: js.Array[VisualizationSelectionArray] => Unit
-  ): ChartBase = {
-    val __obj = js.Dynamic.literal(getContainer = js.Any.fromFunction0(getContainer), getSelection = js.Any.fromFunction0(getSelection), setSelection = js.Any.fromFunction1(setSelection))
-    __obj.asInstanceOf[ChartBase]
-  }
-  
-  extension [Self <: ChartBase](x: Self) {
-    
-    inline def setGetContainer(value: () => Element): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
-    
-    inline def setGetSelection(value: () => js.Array[VisualizationSelectionArray]): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
-    
-    inline def setSetSelection(value: js.Array[VisualizationSelectionArray] => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
-  }
+  def setSelection(): Unit = js.native
+  def setSelection(selection: js.Array[ChartSelection]): Unit = js.native
 }

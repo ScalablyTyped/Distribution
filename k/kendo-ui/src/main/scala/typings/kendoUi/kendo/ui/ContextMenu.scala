@@ -12,9 +12,9 @@ trait ContextMenu
   extends StObject
      with Widget {
   
-  def append(item: js.Any): ContextMenu = js.native
-  def append(item: js.Any, referenceItem: String): ContextMenu = js.native
-  def append(item: js.Any, referenceItem: JQuery): ContextMenu = js.native
+  def append(item: Any): ContextMenu = js.native
+  def append(item: Any, referenceItem: String): ContextMenu = js.native
+  def append(item: Any, referenceItem: JQuery): ContextMenu = js.native
   
   def close(element: JQuery): ContextMenu = js.native
   def close(element: Element): ContextMenu = js.native
@@ -27,13 +27,13 @@ trait ContextMenu
   
   def findByUid(uid: String): JQuery = js.native
   
-  def insertAfter(item: js.Any, referenceItem: String): ContextMenu = js.native
-  def insertAfter(item: js.Any, referenceItem: JQuery): ContextMenu = js.native
-  def insertAfter(item: js.Any, referenceItem: Element): ContextMenu = js.native
+  def insertAfter(item: Any, referenceItem: String): ContextMenu = js.native
+  def insertAfter(item: Any, referenceItem: JQuery): ContextMenu = js.native
+  def insertAfter(item: Any, referenceItem: Element): ContextMenu = js.native
   
-  def insertBefore(item: js.Any, referenceItem: String): ContextMenu = js.native
-  def insertBefore(item: js.Any, referenceItem: JQuery): ContextMenu = js.native
-  def insertBefore(item: js.Any, referenceItem: Element): ContextMenu = js.native
+  def insertBefore(item: Any, referenceItem: String): ContextMenu = js.native
+  def insertBefore(item: Any, referenceItem: JQuery): ContextMenu = js.native
+  def insertBefore(item: Any, referenceItem: Element): ContextMenu = js.native
   
   def open(x: Double): ContextMenu = js.native
   def open(x: Double, y: Double): ContextMenu = js.native

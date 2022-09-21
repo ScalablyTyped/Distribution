@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.DeepPartial<{  timeout :number}> */
+/* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/types.DeepPartial<{  timeout :number}> */
 trait DeepPartialtimeoutnumber extends StObject {
   
   var timeout: js.UndefOr[DeepPartial[Double]] = js.undefined

@@ -9,7 +9,7 @@ trait SchemaNetworksRemovePeeringRequest extends StObject {
   /**
     * Name of the peering, which should conform to RFC1035.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaNetworksRemovePeeringRequest {
   
@@ -21,6 +21,8 @@ object SchemaNetworksRemovePeeringRequest {
   extension [Self <: SchemaNetworksRemovePeeringRequest](x: Self) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

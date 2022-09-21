@@ -8,5 +8,5 @@ object updateApplicationSettingsInputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/UpdateApplicationSettingsInput", "UpdateApplicationSettingsInput")
   @js.native
-  val UpdateApplicationSettingsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateApplicationSettingsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

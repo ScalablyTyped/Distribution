@@ -24,6 +24,6 @@ object PortSet {
     
     inline def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
     
-    inline def setDefinitionVarargs(value: VariableDefinition*): Self = StObject.set(x, "Definition", js.Array(value :_*))
+    inline def setDefinitionVarargs(value: VariableDefinition*): Self = StObject.set(x, "Definition", js.Array(value*))
   }
 }

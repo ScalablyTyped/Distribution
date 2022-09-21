@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ShowAllFieldCodesCommand")
 @js.native
-class ShowAllFieldCodesCommand ()
+open class ShowAllFieldCodesCommand ()
   extends StObject
      with typings.devexpressWeb.ShowAllFieldCodesCommand {
   

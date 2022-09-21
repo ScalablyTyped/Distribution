@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ThreatListUpdatesResource extends StObject {
   
-  def fetch(request: Callback, body: FetchThreatListUpdatesRequest): Request[FetchThreatListUpdatesResponse] = js.native
+  def fetch(request: Callback, body: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest): Request[GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse] = js.native
   /** Fetches the most recent threat list updates. A client can request updates for multiple lists at once. */
-  def fetch(request: Key): Request[FetchThreatListUpdatesResponse] = js.native
+  def fetch(request: Key): Request[GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse] = js.native
 }

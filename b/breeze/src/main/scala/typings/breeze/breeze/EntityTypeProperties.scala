@@ -10,7 +10,7 @@ trait EntityTypeProperties extends StObject {
   
   var defaultResourceName: js.UndefOr[String] = js.undefined
   
-  var serializerFn: js.UndefOr[js.Function2[/* dataProperty */ DataProperty, /* value */ js.Any, js.Any]] = js.undefined
+  var serializerFn: js.UndefOr[js.Function2[/* dataProperty */ DataProperty, /* value */ Any, Any]] = js.undefined
 }
 object EntityTypeProperties {
   
@@ -29,7 +29,7 @@ object EntityTypeProperties {
     
     inline def setDefaultResourceNameUndefined: Self = StObject.set(x, "defaultResourceName", js.undefined)
     
-    inline def setSerializerFn(value: (/* dataProperty */ DataProperty, /* value */ js.Any) => js.Any): Self = StObject.set(x, "serializerFn", js.Any.fromFunction2(value))
+    inline def setSerializerFn(value: (/* dataProperty */ DataProperty, /* value */ Any) => Any): Self = StObject.set(x, "serializerFn", js.Any.fromFunction2(value))
     
     inline def setSerializerFnUndefined: Self = StObject.set(x, "serializerFn", js.undefined)
   }

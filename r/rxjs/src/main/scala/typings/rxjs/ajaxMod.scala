@@ -1,103 +1,197 @@
 package typings.rxjs
 
-import typings.rxjs.ajaxObservableMod.AjaxCreationMethod
-import typings.rxjs.ajaxObservableMod.AjaxErrorCtor
-import typings.rxjs.ajaxObservableMod.AjaxRequest
-import typings.rxjs.ajaxObservableMod.AjaxTimeoutErrorCtor
-import typings.std.Event
+import typings.rxjs.ajaxAjaxMod.AjaxCreationMethod
+import typings.rxjs.errorsMod.AjaxErrorCtor
+import typings.rxjs.errorsMod.AjaxTimeoutErrorCtor
+import typings.rxjs.typesMod.AjaxRequest
+import typings.rxjs.typesMod.AjaxResponseType
+import typings.std.EventTarget
+import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
+import typings.std.XMLHttpRequestResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ajaxMod {
   
-  @JSImport("rxjs/ajax", "AjaxError")
+  @JSImport("rxjs/dist/types/ajax", "AjaxError")
   @js.native
   val AjaxError: AjaxErrorCtor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("rxjs/ajax", "AjaxError")
+  @JSImport("rxjs/dist/types/ajax", "AjaxError")
   @js.native
-  class AjaxErrorCls protected ()
+  open class AjaxErrorCls protected ()
     extends StObject
-       with typings.rxjs.ajaxObservableMod.AjaxError {
+       with typings.rxjs.errorsMod.AjaxError {
+    /**
+      * @deprecated Internal implementation detail. Do not construct error instances.
+      * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
+      */
     def this(message: String, xhr: XMLHttpRequest, request: AjaxRequest) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
-    /** @type {AjaxRequest} The AjaxRequest associated with the error */
+    /**
+      * The AjaxRequest associated with the error.
+      */
     /* CompleteClass */
     var request: AjaxRequest = js.native
     
-    /** @type {string|ArrayBuffer|Document|object|any} The response data */
+    /**
+      * The response data.
+      */
     /* CompleteClass */
-    var response: js.Any = js.native
+    var response: Any = js.native
     
-    /** @type {string} The responseType (e.g. 'json', 'arraybuffer', or 'xml') */
+    /**
+      * The responseType (e.g. 'json', 'arraybuffer', or 'xml').
+      */
     /* CompleteClass */
-    var responseType: String = js.native
+    var responseType: XMLHttpRequestResponseType = js.native
     
-    /** @type {number} The HTTP status code */
+    /**
+      * The HTTP status code, if the request has completed. If not,
+      * it is set to `0`.
+      */
     /* CompleteClass */
     var status: Double = js.native
     
-    /** @type {XMLHttpRequest} The XHR instance associated with the error */
+    /**
+      * The XHR instance associated with the error.
+      */
     /* CompleteClass */
     var xhr: XMLHttpRequest = js.native
   }
   
-  @JSImport("rxjs/ajax", "AjaxResponse")
+  @JSImport("rxjs/dist/types/ajax", "AjaxResponse")
   @js.native
-  class AjaxResponse protected ()
-    extends typings.rxjs.ajaxObservableMod.AjaxResponse {
-    def this(originalEvent: Event, xhr: XMLHttpRequest, request: AjaxRequest) = this()
+  open class AjaxResponse[T] protected ()
+    extends typings.rxjs.ajaxResponseMod.AjaxResponse[T] {
+    /**
+      * A normalized response from an AJAX request. To get the data from the response,
+      * you will want to read the `response` property.
+      *
+      * - DO NOT create instances of this class directly.
+      * - DO NOT subclass this class.
+      *
+      * @param originalEvent The original event object from the XHR `onload` event.
+      * @param xhr The `XMLHttpRequest` object used to make the request. This is useful for examining status code, etc.
+      * @param request The request settings used to make the HTTP request.
+      * @param type The type of the event emitted by the {@link ajax} Observable
+      */
+    def this(
+      /**
+      * The original event object from the raw XHR event.
+      */
+    originalEvent: ProgressEvent[EventTarget],
+      /**
+      * The XMLHttpRequest object used to make the request.
+      * NOTE: It is advised not to hold this in memory, as it will retain references to all of it's event handlers
+      * and many other things related to the request.
+      */
+    xhr: XMLHttpRequest,
+      /**
+      * The request parameters used to make the HTTP request.
+      */
+    request: AjaxRequest
+    ) = this()
+    def this(
+      /**
+      * The original event object from the raw XHR event.
+      */
+    originalEvent: ProgressEvent[EventTarget],
+      /**
+      * The XMLHttpRequest object used to make the request.
+      * NOTE: It is advised not to hold this in memory, as it will retain references to all of it's event handlers
+      * and many other things related to the request.
+      */
+    xhr: XMLHttpRequest,
+      /**
+      * The request parameters used to make the HTTP request.
+      */
+    request: AjaxRequest,
+      /**
+      * The event type. This can be used to discern between different events
+      * if you're using progress events with {@link includeDownloadProgress} or
+      * {@link includeUploadProgress} settings in {@link AjaxConfig}.
+      *
+      * The event type consists of two parts: the {@link AjaxDirection} and the
+      * the event type. Merged with `_`, they form the `type` string. The
+      * direction can be an `upload` or a `download` direction, while an event can
+      * be `loadstart`, `progress` or `load`.
+      *
+      * `download_load` is the type of event when download has finished and the
+      * response is available.
+      */
+    `type`: AjaxResponseType
+    ) = this()
   }
   
-  @JSImport("rxjs/ajax", "AjaxTimeoutError")
+  @JSImport("rxjs/dist/types/ajax", "AjaxTimeoutError")
   @js.native
   val AjaxTimeoutError: AjaxTimeoutErrorCtor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("rxjs/ajax", "AjaxTimeoutError")
+  @JSImport("rxjs/dist/types/ajax", "AjaxTimeoutError")
   @js.native
-  class AjaxTimeoutErrorCls protected ()
+  open class AjaxTimeoutErrorCls protected ()
     extends StObject
-       with typings.rxjs.ajaxObservableMod.AjaxError {
+       with typings.rxjs.errorsMod.AjaxError {
+    /**
+      * @deprecated Internal implementation detail. Do not construct error instances.
+      * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
+      */
     def this(xhr: XMLHttpRequest, request: AjaxRequest) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
-    /** @type {AjaxRequest} The AjaxRequest associated with the error */
+    /**
+      * The AjaxRequest associated with the error.
+      */
     /* CompleteClass */
     var request: AjaxRequest = js.native
     
-    /** @type {string|ArrayBuffer|Document|object|any} The response data */
+    /**
+      * The response data.
+      */
     /* CompleteClass */
-    var response: js.Any = js.native
+    var response: Any = js.native
     
-    /** @type {string} The responseType (e.g. 'json', 'arraybuffer', or 'xml') */
+    /**
+      * The responseType (e.g. 'json', 'arraybuffer', or 'xml').
+      */
     /* CompleteClass */
-    var responseType: String = js.native
+    var responseType: XMLHttpRequestResponseType = js.native
     
-    /** @type {number} The HTTP status code */
+    /**
+      * The HTTP status code, if the request has completed. If not,
+      * it is set to `0`.
+      */
     /* CompleteClass */
     var status: Double = js.native
     
-    /** @type {XMLHttpRequest} The XHR instance associated with the error */
+    /**
+      * The XHR instance associated with the error.
+      */
     /* CompleteClass */
     var xhr: XMLHttpRequest = js.native
   }
   
-  @JSImport("rxjs/ajax", "ajax")
+  @JSImport("rxjs/dist/types/ajax", "ajax")
   @js.native
   val ajax: AjaxCreationMethod = js.native
 }

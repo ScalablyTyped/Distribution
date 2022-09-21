@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EmissiveMap extends StObject {
   
-  var emissiveMap: IUniform
+  var emissiveMap: IUniform[Any]
 }
 object EmissiveMap {
   
-  inline def apply(emissiveMap: IUniform): EmissiveMap = {
+  inline def apply(emissiveMap: IUniform[Any]): EmissiveMap = {
     val __obj = js.Dynamic.literal(emissiveMap = emissiveMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmissiveMap]
   }
   
   extension [Self <: EmissiveMap](x: Self) {
     
-    inline def setEmissiveMap(value: IUniform): Self = StObject.set(x, "emissiveMap", value.asInstanceOf[js.Any])
+    inline def setEmissiveMap(value: IUniform[Any]): Self = StObject.set(x, "emissiveMap", value.asInstanceOf[js.Any])
   }
 }

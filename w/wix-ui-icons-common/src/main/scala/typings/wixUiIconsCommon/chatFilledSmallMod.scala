@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object chatFilledSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/ChatFilledSmall", JSImport.Default)
   @js.native
-  val default: SFC[ChatFilledSmallProps] = js.native
+  val default: FC[ChatFilledSmallProps] = js.native
   
   trait ChatFilledSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object ChatFilledSmallProps {
     
@@ -29,14 +29,14 @@ object chatFilledSmallMod extends Shortcut {
     
     extension [Self <: ChatFilledSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[ChatFilledSmallProps]
+  type _To = FC[ChatFilledSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `chatFilledSmallMod.foo` */
-  override def _to: SFC[ChatFilledSmallProps] = default
+  override def _to: FC[ChatFilledSmallProps] = default
 }

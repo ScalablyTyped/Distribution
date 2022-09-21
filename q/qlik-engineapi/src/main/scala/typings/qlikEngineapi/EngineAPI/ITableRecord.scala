@@ -72,7 +72,7 @@ object ITableRecord {
     
     inline def setQFields(value: js.Array[IFieldInTableData]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     
-    inline def setQFieldsVarargs(value: IFieldInTableData*): Self = StObject.set(x, "qFields", js.Array(value :_*))
+    inline def setQFieldsVarargs(value: IFieldInTableData*): Self = StObject.set(x, "qFields", js.Array(value*))
     
     inline def setQIsDirectDiscovery(value: Boolean): Self = StObject.set(x, "qIsDirectDiscovery", value.asInstanceOf[js.Any])
     

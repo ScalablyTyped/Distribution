@@ -12,7 +12,7 @@ object eventHandlersHolderMod {
   
   @JSImport("@devexpress/utils/lib/class/event-handlers-holder", "DomEventHandlersHolder")
   @js.native
-  class DomEventHandlersHolder () extends StObject {
+  open class DomEventHandlersHolder () extends StObject {
     
     def addListener(element: Document, eventName: String, handler: EventListenerOrEventListenerObject): Unit = js.native
     def addListener(
@@ -44,7 +44,7 @@ object eventHandlersHolderMod {
     def addListenerToWindow(eventName: String, handler: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     def addListenerToWindow(eventName: String, handler: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
-    /* private */ var handlers: js.Any = js.native
+    /* private */ var handlers: Any = js.native
     
     def removeAllListeners(): Unit = js.native
   }

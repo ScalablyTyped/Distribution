@@ -19,16 +19,16 @@ trait ASPxClientDashboardItemDrillDownStateChangedEventArgs
   /**
     * Gets values from the current drill-down hierarchy.
     */
-  var Values: js.Array[js.Any]
+  var Values: js.Array[Any]
 }
 object ASPxClientDashboardItemDrillDownStateChangedEventArgs {
   
   inline def apply(
     Action: String,
-    IsNullValue: js.Any => Boolean,
-    IsOthersValue: js.Any => Boolean,
+    IsNullValue: Any => Boolean,
+    IsOthersValue: Any => Boolean,
     ItemName: String,
-    Values: js.Array[js.Any]
+    Values: js.Array[Any]
   ): ASPxClientDashboardItemDrillDownStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], IsNullValue = js.Any.fromFunction1(IsNullValue), IsOthersValue = js.Any.fromFunction1(IsOthersValue), ItemName = ItemName.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemDrillDownStateChangedEventArgs]
@@ -38,8 +38,8 @@ object ASPxClientDashboardItemDrillDownStateChangedEventArgs {
     
     inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

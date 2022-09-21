@@ -15,7 +15,7 @@ trait NightwatchTestSettingGeneric extends StObject {
   /**
     * Same as Selenium settings cli_args. You can override the global cli_args on a per-environment basis.
     */
-  var cli_args: js.UndefOr[js.Any] = js.undefined
+  var cli_args: js.UndefOr[Any] = js.undefined
   
   /**
     * An object which will be passed to the Selenium WebDriver when a new session will be created. You can specify browser name for instance along with other capabilities.
@@ -119,7 +119,7 @@ object NightwatchTestSettingGeneric {
     
     inline def setAccess_keyUndefined: Self = StObject.set(x, "access_key", js.undefined)
     
-    inline def setCli_args(value: js.Any): Self = StObject.set(x, "cli_args", value.asInstanceOf[js.Any])
+    inline def setCli_args(value: Any): Self = StObject.set(x, "cli_args", value.asInstanceOf[js.Any])
     
     inline def setCli_argsUndefined: Self = StObject.set(x, "cli_args", js.undefined)
     
@@ -139,7 +139,7 @@ object NightwatchTestSettingGeneric {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

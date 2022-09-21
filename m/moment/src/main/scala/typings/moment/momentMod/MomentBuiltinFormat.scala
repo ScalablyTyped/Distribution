@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MomentBuiltinFormat extends StObject {
   
-  var __momentBuiltinFormatBrand: js.Any
+  var __momentBuiltinFormatBrand: Any
 }
 object MomentBuiltinFormat {
   
-  inline def apply(__momentBuiltinFormatBrand: js.Any): MomentBuiltinFormat = {
+  inline def apply(__momentBuiltinFormatBrand: Any): MomentBuiltinFormat = {
     val __obj = js.Dynamic.literal(__momentBuiltinFormatBrand = __momentBuiltinFormatBrand.asInstanceOf[js.Any])
     __obj.asInstanceOf[MomentBuiltinFormat]
   }
   
   extension [Self <: MomentBuiltinFormat](x: Self) {
     
-    inline def set__momentBuiltinFormatBrand(value: js.Any): Self = StObject.set(x, "__momentBuiltinFormatBrand", value.asInstanceOf[js.Any])
+    inline def set__momentBuiltinFormatBrand(value: Any): Self = StObject.set(x, "__momentBuiltinFormatBrand", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "ActionButton")
 @js.native
-class ActionButton protected ()
-  extends Component[ActionButtonProps, js.Any, js.Any] {
+open class ActionButton protected () extends Component[ActionButtonProps, Any, Any] {
   def this(props: ActionButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ActionButtonProps, context: js.Any) = this()
+  def this(props: ActionButtonProps, context: Any) = this()
 }

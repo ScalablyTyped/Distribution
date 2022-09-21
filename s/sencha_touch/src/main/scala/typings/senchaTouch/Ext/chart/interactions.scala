@@ -41,7 +41,7 @@ object interactions {
       * @param e Event
       * @returns Object the item object or null if none found.
       */
-    var getItemForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], js.Any]] = js.undefined
+    var getItemForEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Any]] = js.undefined
     
     /** [Method] Find and return all series items corresponding to the given event
       * @param e Event
@@ -62,7 +62,7 @@ object interactions {
       */
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Method] Sets the value of chart
@@ -116,7 +116,7 @@ object interactions {
       
       inline def setGetGestureUndefined: Self = StObject.set(x, "getGesture", js.undefined)
       
-      inline def setGetItemForEvent(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getItemForEvent", js.Any.fromFunction1(value))
+      inline def setGetItemForEvent(value: /* e */ js.UndefOr[Event] => Any): Self = StObject.set(x, "getItemForEvent", js.Any.fromFunction1(value))
       
       inline def setGetItemForEventUndefined: Self = StObject.set(x, "getItemForEvent", js.undefined)
       
@@ -132,7 +132,7 @@ object interactions {
       
       inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
@@ -159,33 +159,33 @@ object interactions {
        with IAbstract {
     
     /** [Config Option] (Object/Array) */
-    var axes: js.UndefOr[js.Any] = js.undefined
+    var axes: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of axes
       * @returns Object/Array
       */
-    var getAxes: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getAxes: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of undoButton
       * @returns Object
       */
-    var getUndoButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getUndoButton: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Placeholder method
       * @param e Object
       */
     @JSName("onGesture")
-    var onGesture_ICrossZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onGesture_ICrossZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of axes
       * @param axes Object/Array The new value.
       */
-    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of undoButton
       * @param undoButton Object The new value.
       */
-    var setUndoButton: js.UndefOr[js.Function1[/* undoButton */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setUndoButton: js.UndefOr[js.Function1[/* undoButton */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ICrossZoom {
     
@@ -196,27 +196,27 @@ object interactions {
     
     extension [Self <: ICrossZoom](x: Self) {
       
-      inline def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
       inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      inline def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+      inline def setGetAxes(value: () => Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
       
       inline def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
       
-      inline def setGetUndoButton(value: () => js.Any): Self = StObject.set(x, "getUndoButton", js.Any.fromFunction0(value))
+      inline def setGetUndoButton(value: () => Any): Self = StObject.set(x, "getUndoButton", js.Any.fromFunction0(value))
       
       inline def setGetUndoButtonUndefined: Self = StObject.set(x, "getUndoButton", js.undefined)
       
-      inline def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
+      inline def setOnGesture(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
       
       inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      inline def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
+      inline def setSetAxes(value: /* axes */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
       
       inline def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
       
-      inline def setSetUndoButton(value: /* undoButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUndoButton", js.Any.fromFunction1(value))
+      inline def setSetUndoButton(value: /* undoButton */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUndoButton", js.Any.fromFunction1(value))
       
       inline def setSetUndoButtonUndefined: Self = StObject.set(x, "setUndoButton", js.undefined)
     }
@@ -227,36 +227,36 @@ object interactions {
        with IAbstract {
     
     /** [Config Option] (Object) */
-    var axes: js.UndefOr[js.Any] = js.undefined
+    var axes: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of axes
       * @returns Object
       */
-    var getAxes: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getAxes: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of lines
       * @returns Object
       */
-    var getLines: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getLines: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Object) */
-    var lines: js.UndefOr[js.Any] = js.undefined
+    var lines: js.UndefOr[Any] = js.undefined
     
     /** [Method] Placeholder method
       * @param e Object
       */
     @JSName("onGesture")
-    var onGesture_ICrosshair: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onGesture_ICrosshair: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of axes
       * @param axes Object The new value.
       */
-    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of lines
       * @param lines Object The new value.
       */
-    var setLines: js.UndefOr[js.Function1[/* lines */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setLines: js.UndefOr[js.Function1[/* lines */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ICrosshair {
     
@@ -267,31 +267,31 @@ object interactions {
     
     extension [Self <: ICrosshair](x: Self) {
       
-      inline def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
       inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      inline def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+      inline def setGetAxes(value: () => Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
       
       inline def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
       
-      inline def setGetLines(value: () => js.Any): Self = StObject.set(x, "getLines", js.Any.fromFunction0(value))
+      inline def setGetLines(value: () => Any): Self = StObject.set(x, "getLines", js.Any.fromFunction0(value))
       
       inline def setGetLinesUndefined: Self = StObject.set(x, "getLines", js.undefined)
       
-      inline def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
       inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
       
-      inline def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
+      inline def setOnGesture(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
       
       inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      inline def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
+      inline def setSetAxes(value: /* axes */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
       
       inline def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
       
-      inline def setSetLines(value: /* lines */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLines", js.Any.fromFunction1(value))
+      inline def setSetLines(value: /* lines */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLines", js.Any.fromFunction1(value))
       
       inline def setSetLinesUndefined: Self = StObject.set(x, "setLines", js.undefined)
     }
@@ -309,9 +309,9 @@ object interactions {
     @JSName("onGesture")
     var onGesture_IItemHighlight: js.UndefOr[
         js.Function3[
-          /* series */ js.UndefOr[js.Any], 
-          /* item */ js.UndefOr[js.Any], 
-          /* e */ js.UndefOr[js.Any], 
+          /* series */ js.UndefOr[Any], 
+          /* item */ js.UndefOr[Any], 
+          /* e */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -325,9 +325,7 @@ object interactions {
     
     extension [Self <: IItemHighlight](x: Self) {
       
-      inline def setOnGesture(
-        value: (/* series */ js.UndefOr[js.Any], /* item */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any]) => Unit
-      ): Self = StObject.set(x, "onGesture", js.Any.fromFunction3(value))
+      inline def setOnGesture(value: (/* series */ js.UndefOr[Any], /* item */ js.UndefOr[Any], /* e */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction3(value))
       
       inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
     }
@@ -340,24 +338,22 @@ object interactions {
     /** [Method] Returns the value of panel
       * @returns Object
       */
-    var getPanel: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getPanel: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Placeholder method
       * @param series Object
       * @param item Object
       */
     @JSName("onGesture")
-    var onGesture_IItemInfo: js.UndefOr[
-        js.Function2[/* series */ js.UndefOr[js.Any], /* item */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var onGesture_IItemInfo: js.UndefOr[js.Function2[/* series */ js.UndefOr[Any], /* item */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var panel: js.UndefOr[js.Any] = js.undefined
+    var panel: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of panel
       * @param panel Object The new value.
       */
-    var setPanel: js.UndefOr[js.Function1[/* panel */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setPanel: js.UndefOr[js.Function1[/* panel */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IItemInfo {
     
@@ -368,19 +364,19 @@ object interactions {
     
     extension [Self <: IItemInfo](x: Self) {
       
-      inline def setGetPanel(value: () => js.Any): Self = StObject.set(x, "getPanel", js.Any.fromFunction0(value))
+      inline def setGetPanel(value: () => Any): Self = StObject.set(x, "getPanel", js.Any.fromFunction0(value))
       
       inline def setGetPanelUndefined: Self = StObject.set(x, "getPanel", js.undefined)
       
-      inline def setOnGesture(value: (/* series */ js.UndefOr[js.Any], /* item */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction2(value))
+      inline def setOnGesture(value: (/* series */ js.UndefOr[Any], /* item */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction2(value))
       
       inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      inline def setPanel(value: js.Any): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: Any): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
       inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
       
-      inline def setSetPanel(value: /* panel */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPanel", js.Any.fromFunction1(value))
+      inline def setSetPanel(value: /* panel */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPanel", js.Any.fromFunction1(value))
       
       inline def setSetPanelUndefined: Self = StObject.set(x, "setPanel", js.undefined)
     }
@@ -391,12 +387,12 @@ object interactions {
        with IAbstract {
     
     /** [Config Option] (Object/Array) */
-    var axes: js.UndefOr[js.Any] = js.undefined
+    var axes: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of axes
       * @returns Object/Array
       */
-    var getAxes: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getAxes: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of hideLabelInGesture
       * @returns Boolean
@@ -406,17 +402,17 @@ object interactions {
     /** [Method] Returns the value of maxZoom
       * @returns Object
       */
-    var getMaxZoom: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getMaxZoom: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of minZoom
       * @returns Object
       */
-    var getMinZoom: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getMinZoom: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of modeToggleButton
       * @returns Object
       */
-    var getModeToggleButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getModeToggleButton: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of panGesture
       * @returns String
@@ -437,15 +433,15 @@ object interactions {
       * @param e Object
       */
     @JSName("onGesture")
-    var onGesture_IPanZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onGesture_IPanZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var overflowArrowOptions: js.UndefOr[js.Any] = js.undefined
+    var overflowArrowOptions: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of axes
       * @param axes Object/Array The new value.
       */
-    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of hideLabelInGesture
       * @param hideLabelInGesture Boolean The new value.
@@ -455,17 +451,17 @@ object interactions {
     /** [Method] Sets the value of maxZoom
       * @param maxZoom Object The new value.
       */
-    var setMaxZoom: js.UndefOr[js.Function1[/* maxZoom */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setMaxZoom: js.UndefOr[js.Function1[/* maxZoom */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of minZoom
       * @param minZoom Object The new value.
       */
-    var setMinZoom: js.UndefOr[js.Function1[/* minZoom */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setMinZoom: js.UndefOr[js.Function1[/* minZoom */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of modeToggleButton
       * @param modeToggleButton Object The new value.
       */
-    var setModeToggleButton: js.UndefOr[js.Function1[/* modeToggleButton */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setModeToggleButton: js.UndefOr[js.Function1[/* modeToggleButton */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of panGesture
       * @param panGesture String The new value.
@@ -494,11 +490,11 @@ object interactions {
     
     extension [Self <: IPanZoom](x: Self) {
       
-      inline def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
       inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      inline def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+      inline def setGetAxes(value: () => Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
       
       inline def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
       
@@ -506,15 +502,15 @@ object interactions {
       
       inline def setGetHideLabelInGestureUndefined: Self = StObject.set(x, "getHideLabelInGesture", js.undefined)
       
-      inline def setGetMaxZoom(value: () => js.Any): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
+      inline def setGetMaxZoom(value: () => Any): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
       
       inline def setGetMaxZoomUndefined: Self = StObject.set(x, "getMaxZoom", js.undefined)
       
-      inline def setGetMinZoom(value: () => js.Any): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+      inline def setGetMinZoom(value: () => Any): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
       
       inline def setGetMinZoomUndefined: Self = StObject.set(x, "getMinZoom", js.undefined)
       
-      inline def setGetModeToggleButton(value: () => js.Any): Self = StObject.set(x, "getModeToggleButton", js.Any.fromFunction0(value))
+      inline def setGetModeToggleButton(value: () => Any): Self = StObject.set(x, "getModeToggleButton", js.Any.fromFunction0(value))
       
       inline def setGetModeToggleButtonUndefined: Self = StObject.set(x, "getModeToggleButton", js.undefined)
       
@@ -530,15 +526,15 @@ object interactions {
       
       inline def setGetZoomOnPanGestureUndefined: Self = StObject.set(x, "getZoomOnPanGesture", js.undefined)
       
-      inline def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
+      inline def setOnGesture(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
       
       inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      inline def setOverflowArrowOptions(value: js.Any): Self = StObject.set(x, "overflowArrowOptions", value.asInstanceOf[js.Any])
+      inline def setOverflowArrowOptions(value: Any): Self = StObject.set(x, "overflowArrowOptions", value.asInstanceOf[js.Any])
       
       inline def setOverflowArrowOptionsUndefined: Self = StObject.set(x, "overflowArrowOptions", js.undefined)
       
-      inline def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
+      inline def setSetAxes(value: /* axes */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
       
       inline def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
       
@@ -546,15 +542,15 @@ object interactions {
       
       inline def setSetHideLabelInGestureUndefined: Self = StObject.set(x, "setHideLabelInGesture", js.undefined)
       
-      inline def setSetMaxZoom(value: /* maxZoom */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxZoom", js.Any.fromFunction1(value))
+      inline def setSetMaxZoom(value: /* maxZoom */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMaxZoom", js.Any.fromFunction1(value))
       
       inline def setSetMaxZoomUndefined: Self = StObject.set(x, "setMaxZoom", js.undefined)
       
-      inline def setSetMinZoom(value: /* minZoom */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinZoom", js.Any.fromFunction1(value))
+      inline def setSetMinZoom(value: /* minZoom */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMinZoom", js.Any.fromFunction1(value))
       
       inline def setSetMinZoomUndefined: Self = StObject.set(x, "setMinZoom", js.undefined)
       
-      inline def setSetModeToggleButton(value: /* modeToggleButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setModeToggleButton", js.Any.fromFunction1(value))
+      inline def setSetModeToggleButton(value: /* modeToggleButton */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setModeToggleButton", js.Any.fromFunction1(value))
       
       inline def setSetModeToggleButtonUndefined: Self = StObject.set(x, "setModeToggleButton", js.undefined)
       
@@ -584,7 +580,7 @@ object interactions {
       * @param e Object
       */
     @JSName("onGesture")
-    var onGesture_IRotate: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onGesture_IRotate: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IRotate {
     
@@ -595,7 +591,7 @@ object interactions {
     
     extension [Self <: IRotate](x: Self) {
       
-      inline def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
+      inline def setOnGesture(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
       
       inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
     }

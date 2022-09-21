@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("stremio-addon-sdk", "addonBuilder")
 @js.native
-class addonBuilder protected () extends StObject {
+open class addonBuilder protected () extends StObject {
   /**
     * Creates an addon builder object with a given manifest.
     */

@@ -17,6 +17,9 @@ trait ResourcePolicy extends StObject {
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
   var id: js.UndefOr[String] = js.undefined
   
+  /** Resource policy for scheduling instance operations. */
+  var instanceSchedulePolicy: js.UndefOr[ResourcePolicyInstanceSchedulePolicy] = js.undefined
+  
   /** [Output Only] Type of the resource. Always compute#resource_policies for resource policies. */
   var kind: js.UndefOr[String] = js.undefined
   
@@ -28,6 +31,9 @@ trait ResourcePolicy extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   var region: js.UndefOr[String] = js.undefined
+  
+  /** [Output Only] The system status of the resource policy. */
+  var resourceStatus: js.UndefOr[ResourcePolicyResourceStatus] = js.undefined
   
   /** [Output Only] Server-defined fully-qualified URL for this resource. */
   var selfLink: js.UndefOr[String] = js.undefined
@@ -63,6 +69,10 @@ object ResourcePolicy {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
+    inline def setInstanceSchedulePolicy(value: ResourcePolicyInstanceSchedulePolicy): Self = StObject.set(x, "instanceSchedulePolicy", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceSchedulePolicyUndefined: Self = StObject.set(x, "instanceSchedulePolicy", js.undefined)
+    
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
@@ -74,6 +84,10 @@ object ResourcePolicy {
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
+    inline def setResourceStatus(value: ResourcePolicyResourceStatus): Self = StObject.set(x, "resourceStatus", value.asInstanceOf[js.Any])
+    
+    inline def setResourceStatusUndefined: Self = StObject.set(x, "resourceStatus", js.undefined)
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

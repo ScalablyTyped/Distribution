@@ -8,7 +8,7 @@ object n1qlFormatterMod {
   
   @JSImport("@sqltools/formatter/lib/languages/N1qlFormatter", JSImport.Default)
   @js.native
-  class default () extends N1qlFormatter
+  open class default () extends N1qlFormatter
   
   @js.native
   trait N1qlFormatter

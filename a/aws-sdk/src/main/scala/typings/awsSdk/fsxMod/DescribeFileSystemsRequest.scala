@@ -17,7 +17,7 @@ trait DescribeFileSystemsRequest extends StObject {
   var MaxResults: js.UndefOr[typings.awsSdk.fsxMod.MaxResults] = js.undefined
   
   /**
-    * Opaque pagination token returned from a previous DescribeFileSystems operation (String). If a token present, the action continues the list from where the returning call left off.
+    * Opaque pagination token returned from a previous DescribeFileSystems operation (String). If a token present, the operation continues the list from where the returning call left off.
     */
   var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.undefined
 }
@@ -34,7 +34,7 @@ object DescribeFileSystemsRequest {
     
     inline def setFileSystemIdsUndefined: Self = StObject.set(x, "FileSystemIds", js.undefined)
     
-    inline def setFileSystemIdsVarargs(value: FileSystemId*): Self = StObject.set(x, "FileSystemIds", js.Array(value :_*))
+    inline def setFileSystemIdsVarargs(value: FileSystemId*): Self = StObject.set(x, "FileSystemIds", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

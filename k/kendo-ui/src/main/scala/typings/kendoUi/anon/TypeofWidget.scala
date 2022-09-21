@@ -11,11 +11,11 @@ trait TypeofWidget extends StObject {
   def extend(prototype: js.Object): Widget
   
   /* static member */
-  var fn: js.Any
+  var fn: Any
 }
 object TypeofWidget {
   
-  inline def apply(extend: js.Object => Widget, fn: js.Any): TypeofWidget = {
+  inline def apply(extend: js.Object => Widget, fn: Any): TypeofWidget = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofWidget]
   }
@@ -24,6 +24,6 @@ object TypeofWidget {
     
     inline def setExtend(value: js.Object => Widget): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    inline def setFn(value: js.Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

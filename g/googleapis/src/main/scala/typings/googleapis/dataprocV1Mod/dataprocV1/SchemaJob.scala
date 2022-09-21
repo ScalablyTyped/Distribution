@@ -5,53 +5,45 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Cloud Dataproc job resource.
-  */
 trait SchemaJob extends StObject {
   
   /**
-    * Output only. If present, the location of miscellaneous control files
-    * which may be used as part of job setup and handling. If not present,
-    * control files may be placed in the same location as driver_output_uri.
+    * Output only. Indicates whether the job is completed. If the value is false, the job is still in progress. If true, the job is completed, and status.state field will indicate if it was successful, failed, or cancelled.
     */
-  var driverControlFilesUri: js.UndefOr[String] = js.undefined
+  var done: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Output only. A URI pointing to the location of the stdout of the
-    * job&#39;s driver program.
+    * Output only. If present, the location of miscellaneous control files which may be used as part of job setup and handling. If not present, control files may be placed in the same location as driver_output_uri.
     */
-  var driverOutputResourceUri: js.UndefOr[String] = js.undefined
+  var driverControlFilesUri: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Job is a Hadoop job.
+    * Output only. A URI pointing to the location of the stdout of the job's driver program.
+    */
+  var driverOutputResourceUri: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Optional. Job is a Hadoop job.
     */
   var hadoopJob: js.UndefOr[SchemaHadoopJob] = js.undefined
   
   /**
-    * Job is a Hive job.
+    * Optional. Job is a Hive job.
     */
   var hiveJob: js.UndefOr[SchemaHiveJob] = js.undefined
   
   /**
-    * Output only. A UUID that uniquely identifies a job within the project
-    * over time. This is in contrast to a user-settable reference.job_id that
-    * may be reused over time.
+    * Output only. A UUID that uniquely identifies a job within the project over time. This is in contrast to a user-settable reference.job_id that may be reused over time.
     */
-  var jobUuid: js.UndefOr[String] = js.undefined
+  var jobUuid: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional. The labels to associate with this job. Label keys must contain
-    * 1 to 63 characters, and must conform to RFC 1035
-    * (https://www.ietf.org/rfc/rfc1035.txt). Label values may be empty, but,
-    * if present, must contain 1 to 63 characters, and must conform to RFC 1035
-    * (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be
-    * associated with a job.
+    * Optional. The labels to associate with this job. Label keys must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt). Label values may be empty, but, if present, must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be associated with a job.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
-    * Job is a Pig job.
+    * Optional. Job is a Pig job.
     */
   var pigJob: js.UndefOr[SchemaPigJob] = js.undefined
   
@@ -61,15 +53,17 @@ trait SchemaJob extends StObject {
   var placement: js.UndefOr[SchemaJobPlacement] = js.undefined
   
   /**
-    * Job is a Pyspark job.
+    * Optional. Job is a Presto job.
+    */
+  var prestoJob: js.UndefOr[SchemaPrestoJob] = js.undefined
+  
+  /**
+    * Optional. Job is a PySpark job.
     */
   var pysparkJob: js.UndefOr[SchemaPySparkJob] = js.undefined
   
   /**
-    * Optional. The fully qualified reference to the job, which can be used to
-    * obtain the equivalent REST path of the job resource. If this property is
-    * not specified when a job is created, the server generates a
-    * &lt;code&gt;job_id&lt;/code&gt;.
+    * Optional. The fully qualified reference to the job, which can be used to obtain the equivalent REST path of the job resource. If this property is not specified when a job is created, the server generates a job_id.
     */
   var reference: js.UndefOr[SchemaJobReference] = js.undefined
   
@@ -79,19 +73,22 @@ trait SchemaJob extends StObject {
   var scheduling: js.UndefOr[SchemaJobScheduling] = js.undefined
   
   /**
-    * Job is a Spark job.
+    * Optional. Job is a Spark job.
     */
   var sparkJob: js.UndefOr[SchemaSparkJob] = js.undefined
   
   /**
-    * Job is a SparkSql job.
+    * Optional. Job is a SparkR job.
+    */
+  var sparkRJob: js.UndefOr[SchemaSparkRJob] = js.undefined
+  
+  /**
+    * Optional. Job is a SparkSql job.
     */
   var sparkSqlJob: js.UndefOr[SchemaSparkSqlJob] = js.undefined
   
   /**
-    * Output only. The job status. Additional application-specific status
-    * information may be contained in the &lt;code&gt;type_job&lt;/code&gt; and
-    * &lt;code&gt;yarn_applications&lt;/code&gt; fields.
+    * Output only. The job status. Additional application-specific status information may be contained in the type_job and yarn_applications fields.
     */
   var status: js.UndefOr[SchemaJobStatus] = js.undefined
   
@@ -101,9 +98,7 @@ trait SchemaJob extends StObject {
   var statusHistory: js.UndefOr[js.Array[SchemaJobStatus]] = js.undefined
   
   /**
-    * Output only. The collection of YARN applications spun up by this job.Beta
-    * Feature: This report is available for testing purposes only. It may be
-    * changed before final release.
+    * Output only. The collection of YARN applications spun up by this job.Beta Feature: This report is available for testing purposes only. It may be changed before final release.
     */
   var yarnApplications: js.UndefOr[js.Array[SchemaYarnApplication]] = js.undefined
 }
@@ -116,11 +111,21 @@ object SchemaJob {
   
   extension [Self <: SchemaJob](x: Self) {
     
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    
+    inline def setDoneNull: Self = StObject.set(x, "done", null)
+    
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    
     inline def setDriverControlFilesUri(value: String): Self = StObject.set(x, "driverControlFilesUri", value.asInstanceOf[js.Any])
+    
+    inline def setDriverControlFilesUriNull: Self = StObject.set(x, "driverControlFilesUri", null)
     
     inline def setDriverControlFilesUriUndefined: Self = StObject.set(x, "driverControlFilesUri", js.undefined)
     
     inline def setDriverOutputResourceUri(value: String): Self = StObject.set(x, "driverOutputResourceUri", value.asInstanceOf[js.Any])
+    
+    inline def setDriverOutputResourceUriNull: Self = StObject.set(x, "driverOutputResourceUri", null)
     
     inline def setDriverOutputResourceUriUndefined: Self = StObject.set(x, "driverOutputResourceUri", js.undefined)
     
@@ -134,9 +139,13 @@ object SchemaJob {
     
     inline def setJobUuid(value: String): Self = StObject.set(x, "jobUuid", value.asInstanceOf[js.Any])
     
+    inline def setJobUuidNull: Self = StObject.set(x, "jobUuid", null)
+    
     inline def setJobUuidUndefined: Self = StObject.set(x, "jobUuid", js.undefined)
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
@@ -147,6 +156,10 @@ object SchemaJob {
     inline def setPlacement(value: SchemaJobPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
+    inline def setPrestoJob(value: SchemaPrestoJob): Self = StObject.set(x, "prestoJob", value.asInstanceOf[js.Any])
+    
+    inline def setPrestoJobUndefined: Self = StObject.set(x, "prestoJob", js.undefined)
     
     inline def setPysparkJob(value: SchemaPySparkJob): Self = StObject.set(x, "pysparkJob", value.asInstanceOf[js.Any])
     
@@ -164,6 +177,10 @@ object SchemaJob {
     
     inline def setSparkJobUndefined: Self = StObject.set(x, "sparkJob", js.undefined)
     
+    inline def setSparkRJob(value: SchemaSparkRJob): Self = StObject.set(x, "sparkRJob", value.asInstanceOf[js.Any])
+    
+    inline def setSparkRJobUndefined: Self = StObject.set(x, "sparkRJob", js.undefined)
+    
     inline def setSparkSqlJob(value: SchemaSparkSqlJob): Self = StObject.set(x, "sparkSqlJob", value.asInstanceOf[js.Any])
     
     inline def setSparkSqlJobUndefined: Self = StObject.set(x, "sparkSqlJob", js.undefined)
@@ -174,7 +191,7 @@ object SchemaJob {
     
     inline def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
     
-    inline def setStatusHistoryVarargs(value: SchemaJobStatus*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
+    inline def setStatusHistoryVarargs(value: SchemaJobStatus*): Self = StObject.set(x, "statusHistory", js.Array(value*))
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
@@ -182,6 +199,6 @@ object SchemaJob {
     
     inline def setYarnApplicationsUndefined: Self = StObject.set(x, "yarnApplications", js.undefined)
     
-    inline def setYarnApplicationsVarargs(value: SchemaYarnApplication*): Self = StObject.set(x, "yarnApplications", js.Array(value :_*))
+    inline def setYarnApplicationsVarargs(value: SchemaYarnApplication*): Self = StObject.set(x, "yarnApplications", js.Array(value*))
   }
 }

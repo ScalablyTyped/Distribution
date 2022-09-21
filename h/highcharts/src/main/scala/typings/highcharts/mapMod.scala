@@ -7,8 +7,12 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable7
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import typings.highcharts.anon.PartialMapViewOptions
+import typings.highcharts.anon.TypeofAST
 import typings.highcharts.anon.TypeofColor
 import typings.highcharts.anon.TypeofHighchartsAddEvent
+import typings.highcharts.anon.TypeofSeries
+import typings.highcharts.mod.ASTNode
 import typings.highcharts.mod.AnimationOptionsObject
 import typings.highcharts.mod.AnnotationControlPointOptionsObject
 import typings.highcharts.mod.AnnotationControllable
@@ -29,9 +33,11 @@ import typings.highcharts.mod.EventOptionsObject
 import typings.highcharts.mod.HTMLAttributes
 import typings.highcharts.mod.HTMLDOMElement
 import typings.highcharts.mod.LegendOptions
+import typings.highcharts.mod.LonLatArray
 import typings.highcharts.mod.ObjectEachCallbackFunction
 import typings.highcharts.mod.OffsetObject
 import typings.highcharts.mod.Options
+import typings.highcharts.mod.PositionObject
 import typings.highcharts.mod.RelativeSize
 import typings.highcharts.mod.SVGAttributes
 import typings.highcharts.mod.SVGDOMElement
@@ -43,6 +49,7 @@ import typings.highcharts.mod.TooltipOptions
 import typings.highcharts.mod.WrapProceedFunction
 import typings.std.Element
 import typings.std.Event
+import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,9 +70,30 @@ object mapMod {
     val ^ : js.Any = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("highcharts/modules/map", "Highcharts.AST")
+    @js.native
+    open class AST protected ()
+      extends typings.highcharts.mod.AST {
+      /**
+        * The AST class represents an abstract syntax tree of HTML or SVG content.
+        * It can take HTML as an argument, parse it, optionally transform it to
+        * SVG, then perform sanitation before inserting it into the DOM.
+        *
+        * @param source
+        *        Either an HTML string or an ASTNode list to populate the tree.
+        */
+      def this(source: String) = this()
+      def this(source: js.Array[ASTNode]) = this()
+    }
+    @JSImport("highcharts/modules/map", "Highcharts.AST")
+    @js.native
+    def AST: TypeofAST = js.native
+    inline def AST_=(x: TypeofAST): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AST")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Annotation")
     @js.native
-    class Annotation protected ()
+    open class Annotation protected ()
       extends typings.highcharts.mod.Annotation {
       /**
         * An annotation class which serves as a container for items like labels or
@@ -73,10 +101,10 @@ object mapMod {
         * to existing points or created mock points
         *
         * @param chart
-        *        a chart instance
+        *        A chart instance
         *
         * @param userOptions
-        *        the options object
+        *        The annotation options
         */
       def this(chart: Chart_, userOptions: AnnotationsOptions) = this()
     }
@@ -91,7 +119,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.AnnotationControlPoint")
     @js.native
-    class AnnotationControlPoint protected ()
+    open class AnnotationControlPoint protected ()
       extends typings.highcharts.mod.AnnotationControlPoint {
       /**
         * A control point class which is a connection between controllable
@@ -147,7 +175,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Axis")
     @js.native
-    class Axis protected ()
+    open class Axis protected ()
       extends typings.highcharts.mod.Axis {
       /**
         * Create a new axis object. Called internally when instanciating a new
@@ -188,7 +216,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Chart")
     @js.native
-    class Chart protected () extends Chart_ {
+    open class Chart protected () extends Chart_ {
       /**
         * The Chart class. The recommended constructor is Highcharts#chart.
         *
@@ -216,7 +244,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Color")
     @js.native
-    class Color protected () extends Color_ {
+    open class Color protected () extends Color_ {
       /**
         * Handle color operations. Some object methods are chainable.
         *
@@ -229,7 +257,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.ColorAxis")
     @js.native
-    class ColorAxis protected ()
+    open class ColorAxis protected ()
       extends typings.highcharts.mod.ColorAxis {
       /**
         * The ColorAxis object for inclusion in gradient legends.
@@ -266,7 +294,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Legend")
     @js.native
-    class Legend protected ()
+    open class Legend protected ()
       extends typings.highcharts.mod.Legend {
       /**
         * The overview of the chart's series. The legend object is instanciated
@@ -289,10 +317,16 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.PlotLineOrBand")
     @js.native
-    class PlotLineOrBand protected ()
+    open class PlotLineOrBand protected ()
       extends typings.highcharts.mod.PlotLineOrBand {
       /**
         * The object wrapper for plot lines and plot bands
+        *
+        * @param axis
+        *        Related axis.
+        *
+        * @param options
+        *        Options to use.
         */
       def this(axis: typings.highcharts.mod.Axis) = this()
       def this(axis: typings.highcharts.mod.Axis, options: AxisPlotBandsOptions) = this()
@@ -316,7 +350,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Point")
     @js.native
-    class Point ()
+    open class Point ()
       extends typings.highcharts.mod.Point
     @JSImport("highcharts/modules/map", "Highcharts.Point")
     @js.native
@@ -326,7 +360,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Pointer")
     @js.native
-    class Pointer protected ()
+    open class Pointer protected ()
       extends typings.highcharts.mod.Pointer {
       /**
         * The mouse and touch tracker object. Each Chart item has one assosiated
@@ -349,7 +383,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.SVGElement")
     @js.native
-    class SVGElement ()
+    open class SVGElement ()
       extends typings.highcharts.mod.SVGElement
     @JSImport("highcharts/modules/map", "Highcharts.SVGElement")
     @js.native
@@ -359,7 +393,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.SVGRenderer")
     @js.native
-    class SVGRenderer protected ()
+    open class SVGRenderer protected ()
       extends typings.highcharts.mod.SVGRenderer {
       /**
         * Allows direct access to the Highcharts rendering layer in order to draw
@@ -532,7 +566,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Series")
     @js.native
-    class Series protected ()
+    open class Series protected ()
       extends typings.highcharts.mod.Series {
       /**
         * This is the base series prototype that all other series types inherit
@@ -590,23 +624,19 @@ object mapMod {
     }
     @JSImport("highcharts/modules/map", "Highcharts.Series")
     @js.native
-    def Series: Instantiable2[
-        /* chart */ Chart_, 
-        /* options */ js.Object | SeriesOptionsType, 
-        typings.highcharts.mod.Series
-      ] = js.native
-    inline def Series_=(
-      x: Instantiable2[
-          /* chart */ Chart_, 
-          /* options */ js.Object | SeriesOptionsType, 
-          typings.highcharts.mod.Series
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Series")(x.asInstanceOf[js.Any])
+    def Series: TypeofSeries = js.native
+    
+    @JSImport("highcharts/modules/map", "Highcharts.SeriesPalettes")
+    @js.native
+    def SeriesPalettes: Any = js.native
+    inline def SeriesPalettes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SeriesPalettes")(x.asInstanceOf[js.Any])
+    
+    inline def Series_=(x: TypeofSeries): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Series")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Tick")
     @js.native
-    class Tick protected ()
+    open class Tick protected ()
       extends typings.highcharts.mod.Tick {
       /**
         * The Tick class.
@@ -677,7 +707,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Time")
     @js.native
-    class Time protected () extends Time_ {
+    open class Time protected () extends Time_ {
       /**
         * The Time class. Time settings are applied in general for each page using
         * `Highcharts.setOptions`, or individually for each Chart item through the
@@ -700,7 +730,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/map", "Highcharts.Tooltip")
     @js.native
-    class Tooltip protected ()
+    open class Tooltip protected ()
       extends typings.highcharts.mod.Tooltip {
       /**
         * Tooltip of a chart.
@@ -740,34 +770,36 @@ object mapMod {
     inline def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def arrayMax(data: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayMax")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def arrayMax(data: js.Array[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayMax")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def arrayMin(data: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayMin")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def arrayMin(data: js.Array[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayMin")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: String, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: Unit, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: Unit, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: String, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: String, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: Unit, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: Unit, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: HTMLAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: HTMLAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: HTMLAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: SVGAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: SVGAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: HTMLDOMElement, keyOrAttribs: SVGAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
     inline def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: String, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: Unit, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: Unit, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-    inline def attr(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: String, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: String, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: Unit, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: Unit, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: HTMLAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: HTMLAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: HTMLAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: SVGAttributes): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: SVGAttributes, value: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attr(elem: SVGDOMElement, keyOrAttribs: SVGAttributes, value: Double): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], keyOrAttribs.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    
+    inline def callout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callout")().asInstanceOf[Unit]
     
     inline def chart(options: Options): Chart_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any]).asInstanceOf[Chart_]
     inline def chart(options: Options, callback: ChartCallbackFunction): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Chart_]
@@ -781,6 +813,7 @@ object mapMod {
     def charts: js.Array[js.UndefOr[Chart_]] = js.native
     inline def charts_=(x: js.Array[js.UndefOr[Chart_]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("charts")(x.asInstanceOf[js.Any])
     
+    inline def clearTimeout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")().asInstanceOf[Unit]
     inline def clearTimeout(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def color(input: ColorType): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(input.asInstanceOf[js.Any]).asInstanceOf[Color_]
@@ -813,25 +846,25 @@ object mapMod {
     
     @JSImport("highcharts/modules/map", "Highcharts.dateFormats")
     @js.native
-    def dateFormats: Dictionary[TimeFormatCallbackFunction] = js.native
-    inline def dateFormats_=(x: Dictionary[TimeFormatCallbackFunction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateFormats")(x.asInstanceOf[js.Any])
+    def dateFormats: Record[String, TimeFormatCallbackFunction] = js.native
+    inline def dateFormats_=(x: Record[String, TimeFormatCallbackFunction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateFormats")(x.asInstanceOf[js.Any])
     
     @JSImport("highcharts/modules/map", "Highcharts.defaultOptions")
     @js.native
     def defaultOptions: Options = js.native
     inline def defaultOptions_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
-    inline def defined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def defined(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def destroyObjectProperties(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def destroyObjectProperties(obj: js.Any, except: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any], except.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def destroyObjectProperties(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def destroyObjectProperties(obj: Any, except: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any], except.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def discardElement(element: HTMLDOMElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("discardElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def each(arr: js.Array[js.Any], fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def each(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def each(arr: js.Array[Any], fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def each(arr: js.Array[Any], fn: js.Function, ctx: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def erase(arr: js.Array[js.Any], item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def erase(arr: js.Array[Any], item: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def error(code: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def error(code: String, stop: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -850,30 +883,25 @@ object mapMod {
     inline def error(code: Double, stop: Unit, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def error(code: Double, stop: Unit, chart: Chart_, params: Dictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def extend[T](a: T, b: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def extend[T](a: Unit, b: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def extend[T](a: T, b: Partial[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def extend[T](a: Unit, b: Partial[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    inline def extendClass[T](parent: Class[T], members: Dictionary[js.Any]): Class[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendClass")(parent.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[Class[T]]
+    inline def extendClass[T](parent: Class[T], members: Dictionary[Any]): Class[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendClass")(parent.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[Class[T]]
     
     inline def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
     inline def fireEvent[T](el: T, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[js.Any], defaultFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def fireEvent[T](
-      el: T,
-      `type`: String,
-      eventArguments: Dictionary[js.Any],
-      defaultFunction: EventCallbackFunction[T]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[Any], defaultFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[Any], defaultFunction: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def fireEvent[T](el: T, `type`: String, eventArguments: Event): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def format(str: String, ctx: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def format(str: String, ctx: Record[String, js.Any], chart: Chart_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(str: String, ctx: Record[String, Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(str: String, ctx: Record[String, Any], chart: Chart_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def getDeferredAnimation(chart: Chart_, animation: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def getDeferredAnimation(chart: Chart_, animation: Boolean, series: typings.highcharts.mod.Series): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], series.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -884,66 +912,69 @@ object mapMod {
     
     inline def getOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[Options]
     
-    inline def getStyle(el: HTMLDOMElement, prop: String): Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Double | String]
-    inline def getStyle(el: HTMLDOMElement, prop: String, toInt: Boolean): Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], toInt.asInstanceOf[js.Any])).asInstanceOf[Double | String]
+    inline def getRendererType(): Class[typings.highcharts.mod.SVGRenderer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRendererType")().asInstanceOf[Class[typings.highcharts.mod.SVGRenderer]]
+    inline def getRendererType(rendererType: String): Class[typings.highcharts.mod.SVGRenderer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRendererType")(rendererType.asInstanceOf[js.Any]).asInstanceOf[Class[typings.highcharts.mod.SVGRenderer]]
     
-    inline def grep(arr: js.Array[js.Any], callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("grep")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def getStyle(el: HTMLDOMElement, prop: String): js.UndefOr[Double | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | String]]
+    inline def getStyle(el: HTMLDOMElement, prop: String, toInt: Boolean): js.UndefOr[Double | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], toInt.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | String]]
     
-    inline def inArray(item: js.Any, arr: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def inArray(item: js.Any, arr: js.Array[js.Any], fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def grep(arr: js.Array[Any], callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("grep")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
-    inline def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def inArray(item: Any, arr: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def inArray(item: Any, arr: js.Array[Any], fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    inline def isArray(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isClass(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClass")().asInstanceOf[Boolean]
     inline def isClass(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClass")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isDOMElement(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMElement")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDOMElement(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMElement")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isNumber(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNumber(n: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    inline def isObject(obj: js.Any, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isObject(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isObject(obj: Any, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def isString(s: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isString(s: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def keys(obj: js.Any): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def keys(obj: Any): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    inline def map(arr: js.Array[js.Any], fn: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def map(arr: js.Array[Any], fn: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
-    inline def merge[T](a: T, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def merge[T](a: Unit, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def merge[T](extend: Boolean, a: Unit, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def merge[T](a: T, n: js.UndefOr[js.Object]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(a.asInstanceOf[js.Any]).`++`(n.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+    inline def merge[T](a: Unit, n: js.UndefOr[js.Object]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(a.asInstanceOf[js.Any]).`++`(n.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+    inline def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((List(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[T]
+    inline def merge[T](extend: Boolean, a: Unit, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((List(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[T]
     
     inline def normalizeTickInterval(interval: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[Double]
-    inline def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Double, allowDecimals: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def normalizeTickInterval(interval: Double, multiples: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def normalizeTickInterval(interval: Double, multiples: js.Array[Any], magnitude: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def normalizeTickInterval(interval: Double, multiples: js.Array[Any], magnitude: Double, allowDecimals: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[js.Any],
+      multiples: js.Array[Any],
       magnitude: Double,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[js.Any],
+      multiples: js.Array[Any],
       magnitude: Double,
       allowDecimals: Unit,
       hasTickAmount: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Unit, allowDecimals: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def normalizeTickInterval(interval: Double, multiples: js.Array[Any], magnitude: Unit, allowDecimals: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[js.Any],
+      multiples: js.Array[Any],
       magnitude: Unit,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[js.Any],
+      multiples: js.Array[Any],
       magnitude: Unit,
       allowDecimals: Unit,
       hasTickAmount: Boolean
@@ -967,8 +998,8 @@ object mapMod {
     inline def numberFormat(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decimalPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def numberFormat(number: Double, decimals: Double, decimalPoint: Unit, thousandsSep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decimalPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def objectEach[T](obj: Any, fn: ObjectEachCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def objectEach[T](obj: Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def offset(el: Element): OffsetObject = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(el.asInstanceOf[js.Any]).asInstanceOf[OffsetObject]
     
@@ -977,9 +1008,15 @@ object mapMod {
     inline def pad(number: Double, length: Double, padder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def pad(number: Double, length: Unit, padder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def pick[T](items: (js.UndefOr[T | Null])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def pick[T](items: (js.UndefOr[T | Null])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
     
-    inline def reduce(arr: js.Array[js.Any], fn: js.Function, initialValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    inline def registerRendererType(
+      rendererType: String,
+      rendererClass: Class[typings.highcharts.mod.SVGRenderer],
+      setAsDefault: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRendererType")(rendererType.asInstanceOf[js.Any], rendererClass.asInstanceOf[js.Any], setAsDefault.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def relativeLength(value: RelativeSize, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeLength")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def relativeLength(value: RelativeSize, base: Double, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeLength")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -993,21 +1030,15 @@ object mapMod {
     inline def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def removeEvent[T](el: Class[T], `type`: Unit, fn: EventCallbackFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def seriesType(`type`: String, parent: String, options: Dictionary[js.Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    inline def seriesType(`type`: String, parent: String, options: Dictionary[Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    inline def seriesType(`type`: String, parent: String, options: Dictionary[Any], props: Unit, pointProps: Dictionary[Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    inline def seriesType(`type`: String, parent: String, options: Dictionary[Any], props: Dictionary[Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
     inline def seriesType(
       `type`: String,
       parent: String,
-      options: Dictionary[js.Any],
-      props: Unit,
-      pointProps: Dictionary[js.Any]
-    ): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-    inline def seriesType(`type`: String, parent: String, options: Dictionary[js.Any], props: Dictionary[js.Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-    inline def seriesType(
-      `type`: String,
-      parent: String,
-      options: Dictionary[js.Any],
-      props: Dictionary[js.Any],
-      pointProps: Dictionary[js.Any]
+      options: Dictionary[Any],
+      props: Dictionary[Any],
+      pointProps: Dictionary[Any]
     ): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
     inline def seriesType(`type`: String, parent: String, options: SeriesOptionsType): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
     inline def seriesType(
@@ -1015,34 +1046,34 @@ object mapMod {
       parent: String,
       options: SeriesOptionsType,
       props: Unit,
-      pointProps: Dictionary[js.Any]
+      pointProps: Dictionary[Any]
     ): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-    inline def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[js.Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
+    inline def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[Any]): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
     inline def seriesType(
       `type`: String,
       parent: String,
       options: SeriesOptionsType,
-      props: Dictionary[js.Any],
-      pointProps: Dictionary[js.Any]
+      props: Dictionary[Any],
+      pointProps: Dictionary[Any]
     ): typings.highcharts.mod.Series = (^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
     
     inline def setAnimation(animation: Boolean, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def setAnimation(animation: Unit, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def setAnimation(animation: PartialAnimationOptionsOb, chart: Chart_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setOptions(options: Options): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Options]
+    inline def setOptions(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def some(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def some(arr: js.Array[Any], fn: js.Function, ctx: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def splat(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def splat(obj: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
-    inline def stableSort(arr: js.Array[js.Any], sortFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stableSort")(arr.asInstanceOf[js.Any], sortFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def stableSort(arr: js.Array[Any], sortFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stableSort")(arr.asInstanceOf[js.Any], sortFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def stop(el: typings.highcharts.mod.SVGElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def stop(el: typings.highcharts.mod.SVGElement, prop: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def syncTimeout(fn: js.Function, delay: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def syncTimeout(fn: js.Function, delay: Double, context: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def syncTimeout(fn: js.Function, delay: Double, context: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSImport("highcharts/modules/map", "Highcharts.theme")
     @js.native
@@ -1059,7 +1090,7 @@ object mapMod {
     inline def useSerialIds(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSerialIds")().asInstanceOf[js.UndefOr[Boolean]]
     inline def useSerialIds(mode: Boolean): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSerialIds")(mode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
     
-    inline def wrap(obj: js.Any, method: String, func: WrapProceedFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(obj.asInstanceOf[js.Any], method.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def wrap(obj: Any, method: String, func: WrapProceedFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(obj.asInstanceOf[js.Any], method.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   inline def factory(highcharts: TypeofHighchartsAddEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1071,20 +1102,17 @@ object mapMod {
     trait Chart extends StObject {
       
       /**
-        * Highmaps only. Get chart coordinates from latitude/longitude. Returns
-        * an object with x and y values corresponding to the `xAxis` and
-        * `yAxis`.
+        * Deprecated. Use `MapView.lonLatToProjectedUnits` instead.
         *
-        * @param latLon
+        * @param lonLat
         *        Coordinates.
         *
-        * @return X and Y coordinates in terms of chart axis values.
+        * @return X and Y coordinates in terms of projected values
         */
-      def fromLatLonToPoint(latLon: MapLatLonObject): MapCoordinateObject = js.native
+      def fromLatLonToPoint(lonLat: MapLonLatObject): ProjectedXY = js.native
       
       /**
-        * Highmaps only. Calculate latitude/longitude values for a point.
-        * Returns an object with the numeric properties `lat` and `lon`.
+        * Deprecated. Use `MapView.projectedUnitsToLonLat` instead.
         *
         * @param point
         *        A `Point` instance or anything containing `x` and `y`
@@ -1092,69 +1120,73 @@ object mapMod {
         *
         * @return An object with `lat` and `lon` properties.
         */
-      def fromPointToLatLon(point: MapCoordinateObject): js.UndefOr[MapLatLonObject] = js.native
-      def fromPointToLatLon(point: Point): js.UndefOr[MapLatLonObject] = js.native
+      def fromPointToLatLon(point: Point): js.UndefOr[MapLonLatObject] = js.native
+      def fromPointToLatLon(point: ProjectedXY): js.UndefOr[MapLonLatObject] = js.native
       
       /**
-        * Highmaps only. Zoom in or out of the map. See also Point#zoomTo. See
-        * Chart#fromLatLonToPoint for how to get the `centerX` and `centerY`
-        * parameters for a geographic location.
+        * Highcharts Maps only. Zoom in or out of the map. See also
+        * Point#zoomTo. See Chart#fromLatLonToPoint for how to get the
+        * `centerX` and `centerY` parameters for a geographic location.
+        *
+        * Deprecated as of v9.3 in favor of MapView.zoomBy.
         *
         * @param howMuch
         *        How much to zoom the map. Values less than 1 zooms in. 0.5
         *        zooms in to half the current view. 2 zooms to twice the
         *        current view. If omitted, the zoom is reset.
         *
-        * @param centerX
-        *        The X axis position to center around if available space.
+        * @param xProjected
+        *        The projected x position to keep stationary when zooming, if
+        *        available space.
         *
-        * @param centerY
-        *        The Y axis position to center around if available space.
+        * @param yProjected
+        *        The projected y position to keep stationary when zooming, if
+        *        available space.
         *
-        * @param mouseX
-        *        Fix the zoom to this position if possible. This is used for
-        *        example in mousewheel events, where the area under the mouse
-        *        should be fixed as we zoom in.
+        * @param chartX
+        *        Keep this chart position stationary if possible. This is used
+        *        for example in mousewheel events, where the area under the
+        *        mouse should be fixed as we zoom in.
         *
-        * @param mouseY
-        *        Fix the zoom to this position if possible.
+        * @param chartY
+        *        Keep this chart position stationary if possible.
         */
       def mapZoom(): Unit = js.native
       def mapZoom(howMuch: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Double, centerY: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Double, centerY: Unit, mouseX: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Double, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Double, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Unit, centerY: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Unit, centerY: Double, mouseX: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Unit, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Unit, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Unit, centerY: Unit, mouseX: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Unit, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Double, centerX: Unit, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Double, centerY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Double, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Double, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Double, centerY: Unit, mouseX: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Double, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Double, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double, mouseX: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Unit, centerY: Unit, mouseX: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Unit, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
-      def mapZoom(howMuch: Unit, centerX: Unit, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Double, yProjected: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Double, yProjected: Double, chartX: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Double, yProjected: Double, chartX: Double, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Double, yProjected: Double, chartX: Unit, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Double, yProjected: Unit, chartX: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Double, yProjected: Unit, chartX: Double, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Double, yProjected: Unit, chartX: Unit, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Double, chartX: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Double, chartX: Double, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Double, chartX: Unit, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Unit, chartX: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Unit, chartX: Double, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Unit, chartX: Unit, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Double, chartX: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Double, chartX: Double, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Double, chartX: Unit, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Unit, chartX: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Unit, chartX: Double, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Unit, chartX: Unit, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Double, chartX: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Double, chartX: Double, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Double, chartX: Unit, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Unit, chartX: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Unit, chartX: Double, chartY: Double): Unit = js.native
+      def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Unit, chartX: Unit, chartY: Double): Unit = js.native
       
       /**
-        * Highmaps only. Get point from latitude and longitude using specified
-        * transform definition.
+        * Highcharts Maps only. Get point from latitude and longitude using
+        * specified transform definition.
         *
         * @param latLon
         *        A latitude/longitude object.
@@ -1165,10 +1197,10 @@ object mapMod {
         *
         * @return An object with `x` and `y` properties.
         */
-      def transformFromLatLon(latLon: MapLatLonObject, transform: js.Any): MapCoordinateObject = js.native
+      def transformFromLatLon(latLon: MapLonLatObject, transform: Any): ProjectedXY = js.native
       
       /**
-        * Highmaps only. Get latLon from point using specified transform
+        * Highcharts Maps only. Get latLon from point using specified transform
         * definition. The method returns an object with the numeric properties
         * `lat` and `lon`.
         *
@@ -1182,46 +1214,40 @@ object mapMod {
         *
         * @return An object with `lat` and `lon` properties.
         */
-      def transformToLatLon(point: MapCoordinateObject, transform: js.Any): js.UndefOr[MapLatLonObject] = js.native
-      def transformToLatLon(point: Point, transform: js.Any): js.UndefOr[MapLatLonObject] = js.native
+      def transformToLatLon(point: Point, transform: Any): js.UndefOr[MapLonLatObject] = js.native
+      def transformToLatLon(point: ProjectedXY, transform: Any): js.UndefOr[MapLonLatObject] = js.native
     }
     
     /**
-      * Result object of a map transformation.
+      * Map-optimized chart. Use Chart for common charts.
       */
-    trait MapCoordinateObject extends StObject {
+    @js.native
+    trait MapChart
+      extends StObject
+         with Chart {
       
       /**
-        * X coordinate on the map.
+        * Initializes the chart. The constructor's arguments are passed on
+        * directly.
+        *
+        * @param userOptions
+        *        Custom options.
+        *
+        * @param callback
+        *        Function to run when the chart has loaded and and all external
+        *        images are loaded.
+        *
+        * @fires Highcharts.MapChart#init
+        * @fires Highcharts.MapChart#afterInit
         */
-      var x: Double
-      
-      /**
-        * Y coordinate on the map.
-        */
-      var y: Double | Null
-    }
-    object MapCoordinateObject {
-      
-      inline def apply(x: Double): MapCoordinateObject = {
-        val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = null)
-        __obj.asInstanceOf[MapCoordinateObject]
-      }
-      
-      extension [Self <: MapCoordinateObject](x: Self) {
-        
-        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-        
-        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-        
-        inline def setYNull: Self = StObject.set(x, "y", null)
-      }
+      def init(userOptions: Options): Unit = js.native
+      def init(userOptions: Options, callback: js.Function): Unit = js.native
     }
     
     /**
       * A latitude/longitude object.
       */
-    trait MapLatLonObject extends StObject {
+    trait MapLonLatObject extends StObject {
       
       /**
         * The latitude.
@@ -1233,14 +1259,14 @@ object mapMod {
         */
       var lon: Double
     }
-    object MapLatLonObject {
+    object MapLonLatObject {
       
-      inline def apply(lat: Double, lon: Double): MapLatLonObject = {
+      inline def apply(lat: Double, lon: Double): MapLonLatObject = {
         val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any])
-        __obj.asInstanceOf[MapLatLonObject]
+        __obj.asInstanceOf[MapLonLatObject]
       }
       
-      extension [Self <: MapLatLonObject](x: Self) {
+      extension [Self <: MapLonLatObject](x: Self) {
         
         inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
         
@@ -1248,15 +1274,236 @@ object mapMod {
       }
     }
     
+    /**
+      * The map view handles zooming and centering on the map, and various
+      * client-side projection capabilities.
+      *
+      * On a chart instance, the map view is available as `chart.mapView`.
+      */
+    @js.native
+    trait MapView extends StObject {
+      
+      /**
+        * The current center of the view in terms of `[longitude, latitude]`.
+        */
+      val center: LonLatArray = js.native
+      
+      /**
+        * Fit the view to given bounds
+        *
+        * @param bounds
+        *        Bounds in terms of projected units given as `{ x1, y1, x2, y2
+        *        }`. If not set, fit to the bounds of the current data set
+        *
+        * @param padding
+        *        Padding inside the bounds. A number signifies pixels, while a
+        *        percentage string (like `5%`) can be used as a fraction of the
+        *        plot area size.
+        *
+        * @param redraw
+        *        Whether to redraw the chart immediately
+        *
+        * @param animation
+        *        What animation to use for redraw
+        */
+      def fitToBounds(bounds: js.Object): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: String): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: String, redraw: Boolean): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: String, redraw: Boolean, animation: Boolean): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: String, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: String, redraw: Unit, animation: Boolean): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: String, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Double): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Double, redraw: Boolean): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Double, redraw: Boolean, animation: Boolean): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Double, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Double, redraw: Unit, animation: Boolean): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Double, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Unit, redraw: Boolean): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Unit, redraw: Boolean, animation: Boolean): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Unit, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Unit, redraw: Unit, animation: Boolean): Unit = js.native
+      def fitToBounds(bounds: js.Object, padding: Unit, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+      
+      /**
+        * Convert map coordinates in longitude/latitude to pixels
+        *
+        * @param lonLat
+        *        The map coordinates
+        *
+        * @return The pixel position
+        */
+      def lonLatToPixels(lonLat: MapLonLatObject): js.UndefOr[PositionObject] = js.native
+      
+      /**
+        * Get projected units from longitude/latitude. Insets are accounted
+        * for. Returns an object with x and y values corresponding to positions
+        * on the projected plane.
+        *
+        * @param lonLat
+        *        Coordinates.
+        *
+        * @return X and Y coordinates in terms of projected values
+        */
+      def lonLatToProjectedUnits(lonLat: MapLonLatObject): ProjectedXY = js.native
+      
+      /**
+        * Convert pixel position to longitude and latitude.
+        *
+        * @param pos
+        *        The position in pixels
+        *
+        * @return The map coordinates
+        */
+      def pixelsToLonLat(pos: PositionObject): js.UndefOr[MapLonLatObject] = js.native
+      
+      /**
+        * Convert pixel position to projected units
+        *
+        * @param pos
+        *        The position in pixels
+        *
+        * @return The position in projected units
+        */
+      def pixelsToProjectedUnits(pos: PositionObject): PositionObject = js.native
+      
+      /**
+        * Calculate longitude/latitude values for a point or position. Returns
+        * an object with the numeric properties `lon` and `lat`.
+        *
+        * @param point
+        *        A `Point` instance or anything containing `x` and `y`
+        *        properties with numeric values.
+        *
+        * @return An object with `lat` and `lon` properties.
+        */
+      def projectedUnitsToLonLat(point: Point): js.UndefOr[MapLonLatObject] = js.native
+      def projectedUnitsToLonLat(point: ProjectedXY): js.UndefOr[MapLonLatObject] = js.native
+      
+      /**
+        * Convert projected units to pixel position
+        *
+        * @param pos
+        *        The position in projected units
+        *
+        * @return The position in pixels
+        */
+      def projectedUnitsToPixels(pos: PositionObject): PositionObject = js.native
+      
+      def setView(center: Unit, zoom: Double): Unit = js.native
+      def setView(center: Unit, zoom: Double, redraw: Boolean): Unit = js.native
+      def setView(center: Unit, zoom: Double, redraw: Boolean, animation: Boolean): Unit = js.native
+      def setView(center: Unit, zoom: Double, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+      def setView(center: Unit, zoom: Double, redraw: Unit, animation: Boolean): Unit = js.native
+      def setView(center: Unit, zoom: Double, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+      /**
+        * Set the view to given center and zoom values.
+        *
+        * @param center
+        *        The center point
+        *
+        * @param zoom
+        *        The zoom level
+        *
+        * @param redraw
+        *        Whether to redraw immediately
+        *
+        * @param animation
+        *        Animation options for the redraw
+        */
+      def setView(center: LonLatArray, zoom: Double): Unit = js.native
+      def setView(center: LonLatArray, zoom: Double, redraw: Boolean): Unit = js.native
+      def setView(center: LonLatArray, zoom: Double, redraw: Boolean, animation: Boolean): Unit = js.native
+      def setView(center: LonLatArray, zoom: Double, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+      def setView(center: LonLatArray, zoom: Double, redraw: Unit, animation: Boolean): Unit = js.native
+      def setView(center: LonLatArray, zoom: Double, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+      
+      /**
+        * Update the view with given options
+        *
+        * @param options
+        *        The new map view options to apply
+        *
+        * @param redraw
+        *        Whether to redraw immediately
+        *
+        * @param animation
+        *        The animation to apply to a the redraw
+        */
+      def update(options: PartialMapViewOptions): Unit = js.native
+      def update(options: PartialMapViewOptions, redraw: Boolean): Unit = js.native
+      def update(options: PartialMapViewOptions, redraw: Boolean, animation: Boolean): Unit = js.native
+      def update(options: PartialMapViewOptions, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+      def update(options: PartialMapViewOptions, redraw: Unit, animation: Boolean): Unit = js.native
+      def update(options: PartialMapViewOptions, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+      
+      /**
+        * The current zoom level of the view.
+        */
+      val zoom: Double = js.native
+      
+      /**
+        * Zoom the map view by a given number
+        *
+        * @param howMuch
+        *        The amount of zoom to apply. 1 zooms in on half the current
+        *        view, -1 zooms out. Pass `undefined` to zoom to the full
+        *        bounds of the map.
+        *
+        * @param coords
+        *        Optional map coordinates to keep fixed
+        *
+        * @param chartCoords
+        *        Optional chart coordinates to keep fixed, in pixels
+        *
+        * @param animation
+        *        The animation to apply to a the redraw
+        */
+      def zoomBy(): Unit = js.native
+      def zoomBy(howMuch: Double): Unit = js.native
+      def zoomBy(howMuch: Double, coords: Unit, chartCoords: js.Array[Double]): Unit = js.native
+      def zoomBy(howMuch: Double, coords: Unit, chartCoords: js.Array[Double], animation: Boolean): Unit = js.native
+      def zoomBy(howMuch: Double, coords: Unit, chartCoords: js.Array[Double], animation: PartialAnimationOptionsOb): Unit = js.native
+      def zoomBy(howMuch: Double, coords: Unit, chartCoords: Unit, animation: Boolean): Unit = js.native
+      def zoomBy(howMuch: Double, coords: Unit, chartCoords: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+      def zoomBy(howMuch: Double, coords: LonLatArray): Unit = js.native
+      def zoomBy(howMuch: Double, coords: LonLatArray, chartCoords: js.Array[Double]): Unit = js.native
+      def zoomBy(howMuch: Double, coords: LonLatArray, chartCoords: js.Array[Double], animation: Boolean): Unit = js.native
+      def zoomBy(
+        howMuch: Double,
+        coords: LonLatArray,
+        chartCoords: js.Array[Double],
+        animation: PartialAnimationOptionsOb
+      ): Unit = js.native
+      def zoomBy(howMuch: Double, coords: LonLatArray, chartCoords: Unit, animation: Boolean): Unit = js.native
+      def zoomBy(howMuch: Double, coords: LonLatArray, chartCoords: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: Unit, chartCoords: js.Array[Double]): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: Unit, chartCoords: js.Array[Double], animation: Boolean): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: Unit, chartCoords: js.Array[Double], animation: PartialAnimationOptionsOb): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: Unit, chartCoords: Unit, animation: Boolean): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: Unit, chartCoords: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: LonLatArray): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: LonLatArray, chartCoords: js.Array[Double]): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: LonLatArray, chartCoords: js.Array[Double], animation: Boolean): Unit = js.native
+      def zoomBy(
+        howMuch: Unit,
+        coords: LonLatArray,
+        chartCoords: js.Array[Double],
+        animation: PartialAnimationOptionsOb
+      ): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: LonLatArray, chartCoords: Unit, animation: Boolean): Unit = js.native
+      def zoomBy(howMuch: Unit, coords: LonLatArray, chartCoords: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+    }
+    
     trait Point extends StObject {
       
       var pointPadding: js.UndefOr[Double] = js.undefined
       
       /**
-        * In Highmaps, when data is loaded from GeoJSON, the GeoJSON item's
-        * properies are copied over here.
+        * In Highcharts Maps, when data is loaded from GeoJSON, the GeoJSON
+        * item's properies are copied over here.
         */
-      var properties: js.Any
+      var properties: Any
       
       var value: js.UndefOr[Double | Null] = js.undefined
       
@@ -1267,7 +1514,7 @@ object mapMod {
     }
     object Point {
       
-      inline def apply(properties: js.Any, zoomTo: () => Unit): Point = {
+      inline def apply(properties: Any, zoomTo: () => Unit): Point = {
         val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], zoomTo = js.Any.fromFunction0(zoomTo))
         __obj.asInstanceOf[Point]
       }
@@ -1278,7 +1525,7 @@ object mapMod {
         
         inline def setPointPaddingUndefined: Self = StObject.set(x, "pointPadding", js.undefined)
         
-        inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+        inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
         inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
@@ -1314,6 +1561,36 @@ object mapMod {
         inline def setValueNull: Self = StObject.set(x, "value", null)
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      }
+    }
+    
+    /**
+      * Result object of a map transformation.
+      */
+    trait ProjectedXY extends StObject {
+      
+      /**
+        * X coordinate in projected units.
+        */
+      var x: Double
+      
+      /**
+        * Y coordinate in projected units
+        */
+      var y: Double
+    }
+    object ProjectedXY {
+      
+      inline def apply(x: Double, y: Double): ProjectedXY = {
+        val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ProjectedXY]
+      }
+      
+      extension [Self <: ProjectedXY](x: Self) {
+        
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
   }

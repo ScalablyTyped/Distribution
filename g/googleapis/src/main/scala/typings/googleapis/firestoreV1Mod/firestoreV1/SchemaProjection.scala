@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The projection of document&#39;s fields to return.
-  */
 trait SchemaProjection extends StObject {
   
   /**
-    * The fields to return.  If empty, all fields are returned. To only return
-    * the name of the document, use `[&#39;__name__&#39;]`.
+    * The fields to return. If empty, all fields are returned. To only return the name of the document, use `['__name__']`.
     */
   var fields: js.UndefOr[js.Array[SchemaFieldReference]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaProjection {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: SchemaFieldReference*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaFieldReference*): Self = StObject.set(x, "fields", js.Array(value*))
   }
 }

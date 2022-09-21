@@ -8,7 +8,7 @@ object stockGraphMod {
   
   @JSImport("amcharts/StockGraph", JSImport.Default)
   @js.native
-  class default () extends StockGraph
+  open class default () extends StockGraph
   
   @js.native
   trait StockGraph

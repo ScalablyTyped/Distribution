@@ -2,7 +2,6 @@ package typings.pug
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pug.anon.Body
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +28,24 @@ object mod {
   inline def compileFileClient(path: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFileClient")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def render(template: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def render(template: String, callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(template: String, callback: js.Function2[/* err */ js.Error | Null, /* html */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def render(template: String, options: Options & LocalsObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def render(
     template: String,
     options: Options & LocalsObject,
-    callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* html */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def renderFile(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def renderFile(path: String, callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderFile(path: String, callback: js.Function2[/* err */ js.Error | Null, /* html */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def renderFile(path: String, options: Options & LocalsObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def renderFile(
     path: String,
     options: Options & LocalsObject,
-    callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* html */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type LocalsObject = StringDictionary[js.Any]
+  type LocalsObject = StringDictionary[Any]
   
   trait Options extends StObject {
     
@@ -69,7 +68,7 @@ object mod {
     var filename: js.UndefOr[String] = js.undefined
     
     /** Hash table of custom filters. Defaults to undefined. */
-    var filters: js.UndefOr[js.Any] = js.undefined
+    var filters: js.UndefOr[Any] = js.undefined
     
     /** Add a list of global names to make accessible in templates. */
     var globals: js.UndefOr[js.Array[String]] = js.undefined
@@ -119,7 +118,7 @@ object mod {
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      inline def setFilters(value: js.Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
@@ -127,7 +126,7 @@ object mod {
       
       inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
-      inline def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value :_*))
+      inline def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value*))
       
       inline def setInlineRuntimeFunctions(value: Boolean): Self = StObject.set(x, "inlineRuntimeFunctions", value.asInstanceOf[js.Any])
       

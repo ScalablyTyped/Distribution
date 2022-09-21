@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteTranscriptionJobRequest extends StObject {
   
   /**
-    * The name of the transcription job to be deleted.
+    * The name of the transcription job you want to delete. Job names are case sensitive.
     */
   var TranscriptionJobName: typings.awsSdk.transcribeserviceMod.TranscriptionJobName
 }

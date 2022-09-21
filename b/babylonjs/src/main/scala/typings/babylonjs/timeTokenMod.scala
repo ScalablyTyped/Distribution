@@ -10,7 +10,7 @@ object timeTokenMod {
   
   @JSImport("babylonjs/Instrumentation/timeToken", "_TimeToken")
   @js.native
-  class TimeToken () extends StObject {
+  open class TimeToken () extends StObject {
     
     var _endTimeQuery: Nullable[WebGLQuery] = js.native
     

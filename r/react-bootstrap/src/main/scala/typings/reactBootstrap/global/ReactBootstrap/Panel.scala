@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Panel")
 @js.native
-class Panel ()
+open class Panel ()
   extends typings.reactBootstrap.mod.Panel
 object Panel {
   
@@ -18,7 +18,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Panel.Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.reactBootstrap.panelBodyMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Panel.Body")
@@ -29,7 +29,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Panel.Collapse")
   @js.native
-  class Collapse ()
+  open class Collapse ()
     extends typings.reactBootstrap.panelCollapseMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Panel.Collapse")
@@ -40,7 +40,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Panel.Footer")
   @js.native
-  class Footer ()
+  open class Footer ()
     extends typings.reactBootstrap.panelFooterMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Panel.Footer")
@@ -51,7 +51,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Panel.Heading")
   @js.native
-  class Heading ()
+  open class Heading ()
     extends typings.reactBootstrap.panelHeadingMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Panel.Heading")
@@ -62,7 +62,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Panel.Title")
   @js.native
-  class Title ()
+  open class Title ()
     extends typings.reactBootstrap.panelTitleMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Panel.Title")
@@ -73,7 +73,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Panel.Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.reactBootstrap.panelToggleMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Panel.Toggle")

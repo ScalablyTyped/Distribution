@@ -19,6 +19,6 @@ object ArtifactsDownloadInput {
     
     inline def setDownloadInputs(value: js.Array[ArtifactDownloadInputBase]): Self = StObject.set(x, "downloadInputs", value.asInstanceOf[js.Any])
     
-    inline def setDownloadInputsVarargs(value: ArtifactDownloadInputBase*): Self = StObject.set(x, "downloadInputs", js.Array(value :_*))
+    inline def setDownloadInputsVarargs(value: ArtifactDownloadInputBase*): Self = StObject.set(x, "downloadInputs", js.Array(value*))
   }
 }

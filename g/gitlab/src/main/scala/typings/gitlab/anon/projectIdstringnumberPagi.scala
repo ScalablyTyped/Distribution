@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  projectId :string | number} & gitlab.gitlab/dist/types/core/infrastructure.PaginatedRequestOptions */
 trait projectIdstringnumberPagi
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var maxPages: js.UndefOr[Double] = js.undefined
   

@@ -15,14 +15,14 @@ trait SelectorQuery extends StObject {
     * 请求结果按请求次序构成数组，在callback的第一个参数中返回。
     */
   def exec(): Unit = js.native
-  def exec(callback: js.Function1[/* result */ js.Array[js.Any], Unit]): Unit = js.native
+  def exec(callback: js.Function1[/* result */ js.Array[Any], Unit]): Unit = js.native
   
   /**
     * 将选择器的选取范围更改为自定义组件component内
     * （初始时，选择器仅选取页面范围的节点，不会选取任何自定义组件中的节点
     * @version 1.6.0
     */
-  def in(component: Component[js.Object, js.Object, js.Array[js.Any]]): SelectorQuery = js.native
+  def in(component: Component[js.Object, js.Object, js.Array[Any]]): SelectorQuery = js.native
   
   /**
     * 在当前页面下选择第一个匹配选择器selector的节点，返回一个NodesRef对象实例，可以用于获取节点信息。

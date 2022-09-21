@@ -22,31 +22,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def bootstrapWizard(): Wizard = js.native
+  def bootstrapWizard(method: currentIndex | navigationLength): Double = js.native
+  def bootstrapWizard(method: enable | disable | display | hide, index: Double): Unit = js.native
   def bootstrapWizard(options: WizardOptions): Wizard = js.native
   @JSName("bootstrapWizard")
-  def bootstrapWizard_back(method: back): Unit = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_currentIndex(method: currentIndex): Double = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_disable(method: disable, index: Double): Unit = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_display(method: display, index: Double): Unit = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_enable(method: enable, index: Double): Unit = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_finish(method: finish): Unit = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_first(method: first): Unit = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_hide(method: hide, index: Double): Unit = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_last(method: last): Unit = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_navigationLength(method: navigationLength): Double = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_next(method: next): Unit = js.native
-  @JSName("bootstrapWizard")
-  def bootstrapWizard_previous(method: previous): Unit = js.native
+  def bootstrapWizard_Unit(method: next | previous | first | last | back | finish): Unit = js.native
   @JSName("bootstrapWizard")
   def bootstrapWizard_remove(method: remove, index: Double): Unit = js.native
   @JSName("bootstrapWizard")

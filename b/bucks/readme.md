@@ -10,10 +10,10 @@ Async utilities for node and the browser. (amd support)
 | ------------------ | :-------------: |
 | Full name          | bucks |
 | Keywords           | browser, node, async |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1380 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 430.0 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/CyberAgent/bucks.js)

@@ -22,6 +22,6 @@ object RegionTargetHttpsProxiesSetSslCertificatesRequest {
     
     inline def setSslCertificatesUndefined: Self = StObject.set(x, "sslCertificates", js.undefined)
     
-    inline def setSslCertificatesVarargs(value: String*): Self = StObject.set(x, "sslCertificates", js.Array(value :_*))
+    inline def setSslCertificatesVarargs(value: String*): Self = StObject.set(x, "sslCertificates", js.Array(value*))
   }
 }

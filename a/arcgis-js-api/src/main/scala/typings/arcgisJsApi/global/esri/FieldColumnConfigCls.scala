@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html)
   */
-class FieldColumnConfigCls ()
+open class FieldColumnConfigCls ()
   extends StObject
      with typings.arcgisJsApi.esri.FieldColumnConfig {
   def this(properties: FieldColumnConfigProperties) = this()

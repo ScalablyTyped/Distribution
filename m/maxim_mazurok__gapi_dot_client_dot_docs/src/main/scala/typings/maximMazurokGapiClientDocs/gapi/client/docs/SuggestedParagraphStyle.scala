@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SuggestedParagraphStyle extends StObject {
   
   /**
-    * A ParagraphStyle that only includes the changes made in this suggestion. This can be used along with the paragraph_suggestion_state to see which fields have changed and their new
-    * values.
+    * A ParagraphStyle that only includes the changes made in this suggestion. This can be used along with the paragraph_style_suggestion_state to see which fields have changed and their
+    * new values.
     */
   var paragraphStyle: js.UndefOr[ParagraphStyle] = js.undefined
   

@@ -151,7 +151,7 @@ object mod {
         * jQuery, Element, Selector or string
         * Default: "parent"
         */
-      var appendTo: js.UndefOr[js.Any] = js.undefined
+      var appendTo: js.UndefOr[Any] = js.undefined
       
       /**
         * "X", "Y" or false
@@ -175,7 +175,7 @@ object mod {
         * Element, Selector, string or false
         * Default: false
         */
-      var containment: js.UndefOr[js.Any] = js.undefined
+      var containment: js.UndefOr[Any] = js.undefined
       
       var cursor: js.UndefOr[String] = js.undefined
       
@@ -206,7 +206,7 @@ object mod {
       /**
         * Selector or Element
         */
-      var handle: js.UndefOr[js.Any] = js.undefined
+      var handle: js.UndefOr[Any] = js.undefined
       
       /**
         * "original", "clone" or Function()
@@ -260,7 +260,7 @@ object mod {
       
       extension [Self <: SortableOptions[?], T](x: Self & SortableOptions[T]) {
         
-        inline def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+        inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
         
         inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
         
@@ -276,7 +276,7 @@ object mod {
         
         inline def setConnectWithUndefined: Self = StObject.set(x, "connectWith", js.undefined)
         
-        inline def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+        inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
         
         inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
         
@@ -316,9 +316,9 @@ object mod {
         
         inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
         
-        inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value :_*))
+        inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value*))
         
-        inline def setHandle(value: js.Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+        inline def setHandle(value: Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
         
         inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
         
@@ -372,13 +372,13 @@ object mod {
       
       var item: IAugmentedJQuery
       
-      var offset: js.Any
+      var offset: Any
       
-      var originalPosition: js.Any
+      var originalPosition: Any
       
       var placeholder: IAugmentedJQuery
       
-      var position: js.Any
+      var position: Any
       
       var sender: IAugmentedJQuery
     }
@@ -387,10 +387,10 @@ object mod {
       inline def apply(
         helper: IAugmentedJQuery,
         item: IAugmentedJQuery,
-        offset: js.Any,
-        originalPosition: js.Any,
+        offset: Any,
+        originalPosition: Any,
         placeholder: IAugmentedJQuery,
-        position: js.Any,
+        position: Any,
         sender: IAugmentedJQuery
       ): SortableUIParams = {
         val __obj = js.Dynamic.literal(helper = helper.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], originalPosition = originalPosition.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
@@ -403,13 +403,13 @@ object mod {
         
         inline def setItem(value: IAugmentedJQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
         
-        inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        inline def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+        inline def setOriginalPosition(value: Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
         
         inline def setPlaceholder(value: IAugmentedJQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         
-        inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setSender(value: IAugmentedJQuery): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       }
@@ -529,7 +529,7 @@ object mod {
         
         inline def setDroptargetModel(value: js.Array[T]): Self = StObject.set(x, "droptargetModel", value.asInstanceOf[js.Any])
         
-        inline def setDroptargetModelVarargs(value: T*): Self = StObject.set(x, "droptargetModel", js.Array(value :_*))
+        inline def setDroptargetModelVarargs(value: T*): Self = StObject.set(x, "droptargetModel", js.Array(value*))
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -549,7 +549,7 @@ object mod {
         
         inline def setSourceModel(value: js.Array[T]): Self = StObject.set(x, "sourceModel", value.asInstanceOf[js.Any])
         
-        inline def setSourceModelVarargs(value: T*): Self = StObject.set(x, "sourceModel", js.Array(value :_*))
+        inline def setSourceModelVarargs(value: T*): Self = StObject.set(x, "sourceModel", js.Array(value*))
       }
     }
     
@@ -560,23 +560,23 @@ object mod {
       @JSName("addClass")
       var addClass_Original: js.Function1[/* className */ String, this.type]
       
-      def after(content1: JQuery, content2: js.Any*): this.type
+      def after(content1: JQuery, content2: Any*): this.type
       @JSName("after")
-      var after_Original: js.Function2[/* content1 */ JQuery, /* repeated */ js.Any, this.type]
+      var after_Original: js.Function2[/* content1 */ JQuery, /* repeated */ Any, this.type]
       
-      def append(content1: JQuery, content2: js.Any*): this.type
+      def append(content1: JQuery, content2: Any*): this.type
       @JSName("append")
-      var append_Original: js.Function2[/* content1 */ JQuery, /* repeated */ js.Any, this.type]
+      var append_Original: js.Function2[/* content1 */ JQuery, /* repeated */ Any, this.type]
       
       def attr(attributeName: String): String
       @JSName("attr")
       var attr_Original: js.Function1[/* attributeName */ String, String]
       
-      def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type
+      def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): this.type
       @JSName("bind")
       var bind_Original: js.Function2[
             /* eventType */ String, 
-            /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any], 
+            /* handler */ js.Function1[/* eventObject */ JQueryEventObject, Any], 
             this.type
           ]
       
@@ -591,17 +591,17 @@ object mod {
       @JSName("contents")
       var contents_Original: js.Function0[this.type]
       
-      def controller(): js.Any
+      def controller(): Any
       @JSName("controller")
-      var controller_Original: js.Function0[js.Any]
+      var controller_Original: js.Function0[Any]
       
       def css(propertyName: String): String
       @JSName("css")
       var css_Original: js.Function1[/* propertyName */ String, String]
       
-      def data(key: String, value: js.Any): this.type
+      def data(key: String, value: Any): this.type
       @JSName("data")
-      var data_Original: js.Function2[/* key */ String, /* value */ js.Any, this.type]
+      var data_Original: js.Function2[/* key */ String, /* value */ Any, this.type]
       
       def detach(): this.type
       @JSName("detach")
@@ -627,9 +627,9 @@ object mod {
       @JSName("html")
       var html_Original: js.Function0[String]
       
-      def inheritedData(key: String, value: js.Any): this.type
+      def inheritedData(key: String, value: Any): this.type
       @JSName("inheritedData")
-      var inheritedData_Original: js.Function2[/* key */ String, /* value */ js.Any, this.type]
+      var inheritedData_Original: js.Function2[/* key */ String, /* value */ Any, this.type]
       
       def injector(): IInjectorService
       @JSName("injector")
@@ -651,20 +651,20 @@ object mod {
       
       def on(
         events: String,
-        handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+        handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
       ): this.type
       @JSName("on")
       var on_Original: js.Function2[
             /* events */ String, 
-            /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any], 
+            /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any], 
             this.type
           ]
       
-      def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): this.type
+      def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): this.type
       @JSName("one")
       var one_Original: js.Function2[
             /* events */ String, 
-            /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any], 
+            /* handler */ js.Function1[/* eventObject */ JQueryEventObject, Any], 
             this.type
           ]
       
@@ -672,18 +672,18 @@ object mod {
       @JSName("parent")
       var parent_Original: js.Function0[this.type]
       
-      def prepend(content1: JQuery, content2: js.Any*): this.type
+      def prepend(content1: JQuery, content2: Any*): this.type
       @JSName("prepend")
-      var prepend_Original: js.Function2[/* content1 */ JQuery, /* repeated */ js.Any, this.type]
+      var prepend_Original: js.Function2[/* content1 */ JQuery, /* repeated */ Any, this.type]
       
-      def prop(propertyName: String): js.Any
+      def prop(propertyName: String): Any
       @JSName("prop")
-      var prop_Original: js.Function1[/* propertyName */ String, js.Any]
+      var prop_Original: js.Function1[/* propertyName */ String, Any]
       
-      def ready(handler: js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any]): this.type
+      def ready(handler: js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], Any]): this.type
       @JSName("ready")
       var ready_Original: js.Function1[
-            /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any], 
+            /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], Any], 
             this.type
           ]
       
@@ -722,17 +722,17 @@ object mod {
       @JSName("toggleClass")
       var toggleClass_Original: js.Function1[/* className */ String, this.type]
       
-      def triggerHandler(eventType: String, extraParameters: js.Any*): js.Object
+      def triggerHandler(eventType: String, extraParameters: Any*): js.Object
       @JSName("triggerHandler")
-      var triggerHandler_Original: js.Function2[/* eventType */ String, /* repeated */ js.Any, js.Object]
+      var triggerHandler_Original: js.Function2[/* eventType */ String, /* repeated */ Any, js.Object]
       
       def unbind(): this.type
       @JSName("unbind")
       var unbind_Original: js.Function0[this.type]
       
-      def `val`(): js.Any
+      def `val`(): Any
       @JSName("val")
-      var val_Original: js.Function0[js.Any]
+      var val_Original: js.Function0[Any]
       
       def wrap(wrappingElement: JQuery): this.type
       @JSName("wrap")
@@ -742,34 +742,34 @@ object mod {
       
       inline def apply[T](
         addClass: /* className */ String => UISortableUIItem[T],
-        after: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T],
-        append: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T],
+        after: (/* content1 */ JQuery, /* repeated */ Any) => UISortableUIItem[T],
+        append: (/* content1 */ JQuery, /* repeated */ Any) => UISortableUIItem[T],
         attr: /* attributeName */ String => String,
-        bind: (/* eventType */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any]) => UISortableUIItem[T],
+        bind: (/* eventType */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, Any]) => UISortableUIItem[T],
         children: () => UISortableUIItem[T],
         clone_ : () => UISortableUIItem[T],
         contents: () => UISortableUIItem[T],
-        controller: () => js.Any,
+        controller: () => Any,
         css: /* propertyName */ String => String,
-        data: (/* key */ String, /* value */ js.Any) => UISortableUIItem[T],
+        data: (/* key */ String, /* value */ Any) => UISortableUIItem[T],
         detach: () => UISortableUIItem[T],
         empty: () => UISortableUIItem[T],
         eq_ : /* index */ Double => UISortableUIItem[T],
         find: /* selector */ String => UISortableUIItem[T],
         hasClass: /* className */ String => Boolean,
         html: () => String,
-        inheritedData: (/* key */ String, /* value */ js.Any) => UISortableUIItem[T],
+        inheritedData: (/* key */ String, /* value */ Any) => UISortableUIItem[T],
         injector: () => IInjectorService,
         isolateScope: () => IScope,
         length: Double,
         next: () => UISortableUIItem[T],
         off: () => UISortableUIItem[T],
-        on: (/* events */ String, /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]) => UISortableUIItem[T],
-        one: (/* events */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any]) => UISortableUIItem[T],
+        on: (/* events */ String, /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]) => UISortableUIItem[T],
+        one: (/* events */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, Any]) => UISortableUIItem[T],
         parent: () => UISortableUIItem[T],
-        prepend: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T],
-        prop: /* propertyName */ String => js.Any,
-        ready: /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any] => UISortableUIItem[T],
+        prepend: (/* content1 */ JQuery, /* repeated */ Any) => UISortableUIItem[T],
+        prop: /* propertyName */ String => Any,
+        ready: /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], Any] => UISortableUIItem[T],
         remove: () => UISortableUIItem[T],
         removeAttr: /* attributeName */ String => UISortableUIItem[T],
         removeClass: () => UISortableUIItem[T],
@@ -779,9 +779,9 @@ object mod {
         sortable: UISortableProperties[T],
         text: () => String,
         toggleClass: /* className */ String => UISortableUIItem[T],
-        triggerHandler: (/* eventType */ String, /* repeated */ js.Any) => js.Object,
+        triggerHandler: (/* eventType */ String, /* repeated */ Any) => js.Object,
         unbind: () => UISortableUIItem[T],
-        `val`: () => js.Any,
+        `val`: () => Any,
         wrap: /* wrappingElement */ JQuery => UISortableUIItem[T]
       ): UISortableUIItem[T] = {
         val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), after = js.Any.fromFunction2(after), append = js.Any.fromFunction2(append), attr = js.Any.fromFunction1(attr), bind = js.Any.fromFunction2(bind), children = js.Any.fromFunction0(children), contents = js.Any.fromFunction0(contents), controller = js.Any.fromFunction0(controller), css = js.Any.fromFunction1(css), data = js.Any.fromFunction2(data), detach = js.Any.fromFunction0(detach), empty = js.Any.fromFunction0(empty), find = js.Any.fromFunction1(find), hasClass = js.Any.fromFunction1(hasClass), html = js.Any.fromFunction0(html), inheritedData = js.Any.fromFunction2(inheritedData), injector = js.Any.fromFunction0(injector), isolateScope = js.Any.fromFunction0(isolateScope), length = length.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), off = js.Any.fromFunction0(off), on = js.Any.fromFunction2(on), one = js.Any.fromFunction2(one), parent = js.Any.fromFunction0(parent), prepend = js.Any.fromFunction2(prepend), prop = js.Any.fromFunction1(prop), ready = js.Any.fromFunction1(ready), remove = js.Any.fromFunction0(remove), removeAttr = js.Any.fromFunction1(removeAttr), removeClass = js.Any.fromFunction0(removeClass), removeData = js.Any.fromFunction1(removeData), replaceWith = js.Any.fromFunction1(replaceWith), scope = js.Any.fromFunction0(scope), sortable = sortable.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), toggleClass = js.Any.fromFunction1(toggleClass), triggerHandler = js.Any.fromFunction2(triggerHandler), unbind = js.Any.fromFunction0(unbind), wrap = js.Any.fromFunction1(wrap))
@@ -795,14 +795,14 @@ object mod {
         
         inline def setAddClass(value: /* className */ String => UISortableUIItem[T]): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
         
-        inline def setAfter(value: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
+        inline def setAfter(value: (/* content1 */ JQuery, /* repeated */ Any) => UISortableUIItem[T]): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
         
-        inline def setAppend(value: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+        inline def setAppend(value: (/* content1 */ JQuery, /* repeated */ Any) => UISortableUIItem[T]): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
         
         inline def setAttr(value: /* attributeName */ String => String): Self = StObject.set(x, "attr", js.Any.fromFunction1(value))
         
         inline def setBind(
-          value: (/* eventType */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any]) => UISortableUIItem[T]
+          value: (/* eventType */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, Any]) => UISortableUIItem[T]
         ): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
         
         inline def setChildren(value: () => UISortableUIItem[T]): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
@@ -811,11 +811,11 @@ object mod {
         
         inline def setContents(value: () => UISortableUIItem[T]): Self = StObject.set(x, "contents", js.Any.fromFunction0(value))
         
-        inline def setController(value: () => js.Any): Self = StObject.set(x, "controller", js.Any.fromFunction0(value))
+        inline def setController(value: () => Any): Self = StObject.set(x, "controller", js.Any.fromFunction0(value))
         
         inline def setCss(value: /* propertyName */ String => String): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
         
-        inline def setData(value: (/* key */ String, /* value */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+        inline def setData(value: (/* key */ String, /* value */ Any) => UISortableUIItem[T]): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
         
         inline def setDetach(value: () => UISortableUIItem[T]): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
         
@@ -829,7 +829,7 @@ object mod {
         
         inline def setHtml(value: () => String): Self = StObject.set(x, "html", js.Any.fromFunction0(value))
         
-        inline def setInheritedData(value: (/* key */ String, /* value */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "inheritedData", js.Any.fromFunction2(value))
+        inline def setInheritedData(value: (/* key */ String, /* value */ Any) => UISortableUIItem[T]): Self = StObject.set(x, "inheritedData", js.Any.fromFunction2(value))
         
         inline def setInjector(value: () => IInjectorService): Self = StObject.set(x, "injector", js.Any.fromFunction0(value))
         
@@ -842,21 +842,21 @@ object mod {
         inline def setOff(value: () => UISortableUIItem[T]): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
         
         inline def setOn(
-          value: (/* events */ String, /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]) => UISortableUIItem[T]
+          value: (/* events */ String, /* handler */ js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]) => UISortableUIItem[T]
         ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
         
         inline def setOne(
-          value: (/* events */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, js.Any]) => UISortableUIItem[T]
+          value: (/* events */ String, /* handler */ js.Function1[/* eventObject */ JQueryEventObject, Any]) => UISortableUIItem[T]
         ): Self = StObject.set(x, "one", js.Any.fromFunction2(value))
         
         inline def setParent(value: () => UISortableUIItem[T]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
         
-        inline def setPrepend(value: (/* content1 */ JQuery, /* repeated */ js.Any) => UISortableUIItem[T]): Self = StObject.set(x, "prepend", js.Any.fromFunction2(value))
+        inline def setPrepend(value: (/* content1 */ JQuery, /* repeated */ Any) => UISortableUIItem[T]): Self = StObject.set(x, "prepend", js.Any.fromFunction2(value))
         
-        inline def setProp(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "prop", js.Any.fromFunction1(value))
+        inline def setProp(value: /* propertyName */ String => Any): Self = StObject.set(x, "prop", js.Any.fromFunction1(value))
         
         inline def setReady(
-          value: /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any] => UISortableUIItem[T]
+          value: /* handler */ js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], Any] => UISortableUIItem[T]
         ): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
         
         inline def setRemove(value: () => UISortableUIItem[T]): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
@@ -877,11 +877,11 @@ object mod {
         
         inline def setToggleClass(value: /* className */ String => UISortableUIItem[T]): Self = StObject.set(x, "toggleClass", js.Any.fromFunction1(value))
         
-        inline def setTriggerHandler(value: (/* eventType */ String, /* repeated */ js.Any) => js.Object): Self = StObject.set(x, "triggerHandler", js.Any.fromFunction2(value))
+        inline def setTriggerHandler(value: (/* eventType */ String, /* repeated */ Any) => js.Object): Self = StObject.set(x, "triggerHandler", js.Any.fromFunction2(value))
         
         inline def setUnbind(value: () => UISortableUIItem[T]): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
         
-        inline def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
+        inline def setVal(value: () => Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
         
         inline def setWrap(value: /* wrappingElement */ JQuery => UISortableUIItem[T]): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
       }
@@ -894,13 +894,13 @@ object mod {
       
       var item: UISortableUIItem[T]
       
-      var offset: js.Any
+      var offset: Any
       
-      var originalPosition: js.Any
+      var originalPosition: Any
       
       var placeholder: IAugmentedJQuery
       
-      var position: js.Any
+      var position: Any
       
       var sender: IAugmentedJQuery
     }
@@ -909,10 +909,10 @@ object mod {
       inline def apply[T](
         helper: IAugmentedJQuery,
         item: UISortableUIItem[T],
-        offset: js.Any,
-        originalPosition: js.Any,
+        offset: Any,
+        originalPosition: Any,
         placeholder: IAugmentedJQuery,
-        position: js.Any,
+        position: Any,
         sender: IAugmentedJQuery
       ): UISortableUIParams[T] = {
         val __obj = js.Dynamic.literal(helper = helper.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], originalPosition = originalPosition.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
@@ -925,13 +925,13 @@ object mod {
         
         inline def setItem(value: UISortableUIItem[T]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
         
-        inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        inline def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+        inline def setOriginalPosition(value: Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
         
         inline def setPlaceholder(value: IAugmentedJQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         
-        inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setSender(value: IAugmentedJQuery): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nodeFromJSONMod {
   
-  @JSImport("@firebase/database/dist/src/core/snap/nodeFromJSON", JSImport.Namespace)
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/nodeFromJSON", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def nodeFromJSON(): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")().asInstanceOf[Node]
-  inline def nodeFromJSON(json: js.Any): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Node]
-  inline def nodeFromJSON(json: js.Any, priority: js.Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Node]
-  inline def nodeFromJSON(json: Null, priority: js.Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def nodeFromJSON(json: Any): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def nodeFromJSON(json: Any, priority: Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def nodeFromJSON(json: Null, priority: Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Node]
 }

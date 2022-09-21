@@ -10,21 +10,21 @@ object interactionMod {
   
   @JSImport("plottable/build/src/interactions/interaction", "Interaction")
   @js.native
-  class Interaction () extends StObject {
+  open class Interaction () extends StObject {
     
     /* protected */ def _anchor(component: Component): Unit = js.native
     
-    /* private */ var _anchorCallback: js.Any = js.native
+    /* private */ var _anchorCallback: Any = js.native
     
     /* protected */ var _componentAttachedTo: Component = js.native
     
-    /* private */ def _connect(): js.Any = js.native
+    /* private */ var _connect: Any = js.native
     
-    /* private */ def _disconnect(): js.Any = js.native
+    /* private */ var _disconnect: Any = js.native
     
-    /* private */ var _enabled: js.Any = js.native
+    /* private */ var _enabled: Any = js.native
     
-    /* private */ var _isAnchored: js.Any = js.native
+    /* private */ var _isAnchored: Any = js.native
     
     /**
       * Checks whether a Component-coordinate-space Point is inside the Component.

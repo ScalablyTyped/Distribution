@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options
 - typings.yandexMaps.mod.IChild because var conflicts: events. Inlined getParent, setParent, setParent */ @JSImport("yandex-maps", "control.ListBox")
 @js.native
-class ListBox ()
+open class ListBox ()
   extends StObject
      with ICollection {
   def this(parameters: IListBoxParameters) = this()

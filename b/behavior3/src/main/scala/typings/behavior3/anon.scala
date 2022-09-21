@@ -24,7 +24,7 @@ object anon {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: BaseNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: BaseNode*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
@@ -55,7 +55,7 @@ object anon {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
   }
@@ -80,7 +80,7 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
@@ -96,7 +96,7 @@ object anon {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
   }
@@ -117,7 +117,7 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
@@ -158,7 +158,7 @@ object anon {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
   }
@@ -175,13 +175,13 @@ object anon {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: BaseNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: BaseNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
@@ -264,7 +264,7 @@ object anon {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
   }
@@ -281,7 +281,7 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       

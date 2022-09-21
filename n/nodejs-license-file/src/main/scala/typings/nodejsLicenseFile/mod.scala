@@ -16,7 +16,7 @@ object mod {
   
   trait GenerateOptions extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var privateKey: js.UndefOr[String] = js.undefined
     
@@ -26,14 +26,14 @@ object mod {
   }
   object GenerateOptions {
     
-    inline def apply(data: js.Any, template: String): GenerateOptions = {
+    inline def apply(data: Any, template: String): GenerateOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptions]
     }
     
     extension [Self <: GenerateOptions](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
@@ -49,7 +49,7 @@ object mod {
   
   trait License extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var serial: String
     
@@ -57,14 +57,14 @@ object mod {
   }
   object License {
     
-    inline def apply(data: js.Any, serial: String, valid: Boolean): License = {
+    inline def apply(data: Any, serial: String, valid: Boolean): License = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[License]
     }
     
     extension [Self <: License](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
       

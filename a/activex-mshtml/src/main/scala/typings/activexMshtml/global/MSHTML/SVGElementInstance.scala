@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGElementInstance")
 @js.native
-/* private */ class SVGElementInstance ()
+/* private */ open class SVGElementInstance ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGElementInstance {
   
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotSVGElementInstance_typekey: typings.activexMshtml.MSHTML.SVGElementInstance = js.native
   
   /* CompleteClass */
-  override def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, listener: Any, useCapture: Boolean): Unit = js.native
   
   /* CompleteClass */
   override val childNodes: typings.activexMshtml.MSHTML.ISVGElementInstanceList = js.native
@@ -45,5 +45,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val previousSibling: typings.activexMshtml.MSHTML.ISVGElementInstance = js.native
   
   /* CompleteClass */
-  override def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  override def removeEventListener(`type`: String, listener: Any, useCapture: Boolean): Unit = js.native
 }

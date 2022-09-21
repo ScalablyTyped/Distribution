@@ -28,18 +28,18 @@ object GroupEncodeEntry {
     
     inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    inline def setClipVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "clip", js.Array(value :_*))
+    inline def setClipVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "clip", js.Array(value*))
     
     inline def setStrokeForeground(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "strokeForeground", value.asInstanceOf[js.Any])
     
     inline def setStrokeForegroundUndefined: Self = StObject.set(x, "strokeForeground", js.undefined)
     
-    inline def setStrokeForegroundVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "strokeForeground", js.Array(value :_*))
+    inline def setStrokeForegroundVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "strokeForeground", js.Array(value*))
     
     inline def setStrokeOffset(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeOffset", value.asInstanceOf[js.Any])
     
     inline def setStrokeOffsetUndefined: Self = StObject.set(x, "strokeOffset", js.undefined)
     
-    inline def setStrokeOffsetVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeOffset", js.Array(value :_*))
+    inline def setStrokeOffsetVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeOffset", js.Array(value*))
   }
 }

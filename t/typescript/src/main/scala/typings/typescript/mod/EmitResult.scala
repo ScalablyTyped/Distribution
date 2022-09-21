@@ -24,7 +24,7 @@ object EmitResult {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setEmitSkipped(value: Boolean): Self = StObject.set(x, "emitSkipped", value.asInstanceOf[js.Any])
     
@@ -32,6 +32,6 @@ object EmitResult {
     
     inline def setEmittedFilesUndefined: Self = StObject.set(x, "emittedFiles", js.undefined)
     
-    inline def setEmittedFilesVarargs(value: java.lang.String*): Self = StObject.set(x, "emittedFiles", js.Array(value :_*))
+    inline def setEmittedFilesVarargs(value: java.lang.String*): Self = StObject.set(x, "emittedFiles", js.Array(value*))
   }
 }

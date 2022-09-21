@@ -9,7 +9,7 @@ object directorTimeControllerMod {
   
   @JSImport("wonder.js/dist/es2015/utils/time/DirectorTimeController", "DirectorTimeController")
   @js.native
-  class DirectorTimeController () extends TimeController {
+  open class DirectorTimeController () extends TimeController {
     
     var deltaTime: Double = js.native
     

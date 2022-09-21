@@ -1,6 +1,7 @@
 package typings.nodegit
 
 import typings.node.eventsMod.EventEmitter
+import typings.nodegit.anon.Code
 import typings.nodegit.bufMod.Buf
 import typings.nodegit.diffMod.Diff
 import typings.nodegit.objectMod.Object
@@ -9,7 +10,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature
 import typings.nodegit.treeEntryMod.TreeEntry
 import typings.nodegit.treeMod.Tree
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object commitMod {
   
   @JSImport("nodegit/commit", "Commit")
   @js.native
-  class Commit () extends StObject {
+  open class Commit () extends StObject {
     
     def amend(
       updateRef: String,
@@ -37,6 +37,25 @@ object commitMod {
       tree: Tree
     ): js.Promise[Oid] = js.native
     
+    def amendWithSignature(
+      updateRef: String,
+      author: Signature,
+      committer: Signature,
+      messageEncoding: String,
+      message: String,
+      tree: Oid,
+      onSignature: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = js.native
+    def amendWithSignature(
+      updateRef: String,
+      author: Signature,
+      committer: Signature,
+      messageEncoding: String,
+      message: String,
+      tree: Tree,
+      onSignature: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = js.native
+    
     def author(): Signature = js.native
     
     /**
@@ -53,7 +72,7 @@ object commitMod {
       *
       *
       */
-    def date(): Date = js.native
+    def date(): js.Date = js.native
     
     def dup(): js.Promise[Commit] = js.native
     
@@ -89,6 +108,9 @@ object commitMod {
       */
     def getParents(limit: Double): js.Promise[js.Array[Commit]] = js.native
     def getParents(limit: Double, callback: js.Function): js.Promise[js.Array[Commit]] = js.native
+    
+    def getSignature(): js.Promise[typings.nodegit.anon.Signature] = js.native
+    def getSignature(field: String): js.Promise[typings.nodegit.anon.Signature] = js.native
     
     /**
       * Get the tree associated with this commit.
@@ -175,7 +197,7 @@ object commitMod {
       message: String,
       tree: Tree,
       parentCount: Double,
-      parents: js.Array[js.Any]
+      parents: js.Array[Any]
     ): Oid = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], updateRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], messageEncoding.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tree.asInstanceOf[js.Any], parentCount.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[Oid]
     
     inline def createV(

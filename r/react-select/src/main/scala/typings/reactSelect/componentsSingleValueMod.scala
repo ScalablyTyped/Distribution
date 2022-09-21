@@ -1,82 +1,42 @@
 package typings.reactSelect
 
-import typings.react.mod.CSSProperties
-import typings.react.mod.ComponentType
+import typings.emotionReact.emotionReactMod.jsx.JSX.Element
+import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
-import typings.reactSelect.typesMod.CommonProps
-import typings.reactSelect.typesMod.OptionTypeBase
+import typings.reactSelect.typesMod.CSSObjectWithLabel
+import typings.reactSelect.typesMod.CommonPropsAndClassName
+import typings.reactSelect.typesMod.GroupBase
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsSingleValueMod {
   
-  @JSImport("react-select/src/components/SingleValue", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/components/SingleValue", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-select/src/components/SingleValue", JSImport.Default)
-  @js.native
-  val default: ComponentType[SingleValueProps[js.Any]] = js.native
+  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: SingleValueProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-select/src/components/SingleValue", "SingleValue")
-  @js.native
-  val SingleValue: ComponentType[SingleValueProps[js.Any]] = js.native
-  
-  inline def css(props: SingleValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def css[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsDisabledHasSpacingColors: SingleValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(hasIsDisabledHasSpacingColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
   @js.native
-  trait SingleValueProps[OptionType /* <: OptionTypeBase */]
+  trait SingleValueProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]
     extends StObject
-       with CommonProps[OptionType]
-       with ValueProps[OptionType]
-       with State
-  
-  trait State extends StObject {
-    
-    /** Whether this is disabled */
-    var isDisabled: Boolean
-  }
-  object State {
-    
-    inline def apply(isDisabled: Boolean): State = {
-      val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any])
-      __obj.asInstanceOf[State]
-    }
-    
-    extension [Self <: State](x: Self) {
-      
-      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ValueProps[OptionType /* <: OptionTypeBase */] extends StObject {
+       with CommonPropsAndClassName[Option, IsMulti, Group] {
     
     /** The children to be rendered. */
-    var children: ReactNode
+    var children: ReactNode = js.native
     
-    /* The data of the selected option rendered in the Single Value componentn */
-    var data: OptionType
+    /** The data of the selected option rendered in the Single Value component. */
+    var data: Option = js.native
     
     /** Props passed to the wrapping element for the group. */
-    var innerProps: js.Any
-  }
-  object ValueProps {
+    var innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
     
-    inline def apply[OptionType /* <: OptionTypeBase */](data: OptionType, innerProps: js.Any): ValueProps[OptionType] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], innerProps = innerProps.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ValueProps[OptionType]]
-    }
-    
-    extension [Self <: ValueProps[?], OptionType /* <: OptionTypeBase */](x: Self & ValueProps[OptionType]) {
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setData(value: OptionType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setInnerProps(value: js.Any): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
-    }
+    /** Whether this is disabled. */
+    var isDisabled: Boolean = js.native
   }
 }

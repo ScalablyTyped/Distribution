@@ -11,7 +11,7 @@ object timeViewMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/time/time.view", JSImport.Default)
   @js.native
-  class default protected () extends TimeView {
+  open class default protected () extends TimeView {
     def this(config: ITimeViewConfig) = this()
   }
   
@@ -20,25 +20,25 @@ object timeViewMod {
     extends typings.playable.viewMod.default[ITimeViewStyles] {
     
     /* private */ @JSName("_$currentTime")
-    var _$currentTime: js.Any = js.native
+    var _$currentTime: Any = js.native
     
     /* private */ @JSName("_$durationTime")
-    var _$durationTime: js.Any = js.native
+    var _$durationTime: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _current: js.Any = js.native
+    /* private */ var _current: Any = js.native
     
-    /* private */ var _duration: js.Any = js.native
+    /* private */ var _duration: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
-    /* private */ var _isBackward: js.Any = js.native
+    /* private */ var _isBackward: Any = js.native
     
-    /* private */ var _updateCurrentTime: js.Any = js.native
+    /* private */ var _updateCurrentTime: Any = js.native
     
-    /* private */ var _updateDurationTime: js.Any = js.native
+    /* private */ var _updateDurationTime: Any = js.native
     
     def destroy(): Unit = js.native
     

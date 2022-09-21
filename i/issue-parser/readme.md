@@ -10,10 +10,10 @@ Parser for Github, GitLab and Bitbucket issues actions, references and mentions
 | ------------------ | :-------------: |
 | Full name          | issue-parser |
 | Keywords           | bitbucket, close, duplicate, fix, github, gitlab, issues, mentions, parser, pr, pull-request, references, resolve |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 13180356 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3084488.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/pvdlg/issue-parser#readme)

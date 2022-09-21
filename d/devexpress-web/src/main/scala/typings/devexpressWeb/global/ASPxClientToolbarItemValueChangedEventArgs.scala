@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientToolbarItemValueChangedEventArgs")
 @js.native
-class ASPxClientToolbarItemValueChangedEventArgs protected ()
+open class ASPxClientToolbarItemValueChangedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientToolbarItemValueChangedEventArgs {
   /**

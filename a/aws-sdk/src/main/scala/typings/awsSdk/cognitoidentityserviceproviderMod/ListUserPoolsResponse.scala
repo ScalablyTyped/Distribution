@@ -33,6 +33,6 @@ object ListUserPoolsResponse {
     
     inline def setUserPoolsUndefined: Self = StObject.set(x, "UserPools", js.undefined)
     
-    inline def setUserPoolsVarargs(value: UserPoolDescriptionType*): Self = StObject.set(x, "UserPools", js.Array(value :_*))
+    inline def setUserPoolsVarargs(value: UserPoolDescriptionType*): Self = StObject.set(x, "UserPools", js.Array(value*))
   }
 }

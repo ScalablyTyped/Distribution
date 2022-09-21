@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChatMessageTransportConfiguration extends StObject {
   
   /** Gets the extended properties of the transport. */
-  var extendedProperties: IMapView[String, js.Any]
+  var extendedProperties: IMapView[String, Any]
   
   /** Gets the maximum attachment limit for a message on the transport. */
   var maxAttachmentCount: Double
@@ -27,7 +27,7 @@ trait ChatMessageTransportConfiguration extends StObject {
 object ChatMessageTransportConfiguration {
   
   inline def apply(
-    extendedProperties: IMapView[String, js.Any],
+    extendedProperties: IMapView[String, Any],
     maxAttachmentCount: Double,
     maxMessageSizeInKilobytes: Double,
     maxRecipientCount: Double,
@@ -39,7 +39,7 @@ object ChatMessageTransportConfiguration {
   
   extension [Self <: ChatMessageTransportConfiguration](x: Self) {
     
-    inline def setExtendedProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
+    inline def setExtendedProperties(value: IMapView[String, Any]): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
     
     inline def setMaxAttachmentCount(value: Double): Self = StObject.set(x, "maxAttachmentCount", value.asInstanceOf[js.Any])
     

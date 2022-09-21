@@ -5,10 +5,23 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
-import org.scalablytyped.runtime.StringDictionary
-import typings.ffiNapi.anon.RTLDDEFAUL
+import org.scalablytyped.runtime.TopLevel
+import typings.ffiNapi.anon.Alignment
+import typings.ffiNapi.anon.Elements
+import typings.ffiNapi.ffiNapiStrings.void
+import typings.refNapi.mod.CoerceType_
+import typings.refNapi.mod.CoerceTypes
+import typings.refNapi.mod.NamedType
+import typings.refNapi.mod.NamedTypeLike
+import typings.refNapi.mod.Pointer
 import typings.refNapi.mod.Type
+import typings.refNapi.mod.TypeLike
+import typings.refNapi.mod.TypesRegistry
+import typings.refNapi.mod.UnderlyingType
+import typings.refNapi.mod.UnderlyingTypes
 import typings.refStructDi.mod.StructType
+import typings.std.Record
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,26 +32,67 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CIF(retType: js.Any, types: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  inline def CIF(retType: js.Any, types: js.Array[js.Any], abi: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def CIF(retType: TypeLike, types: js.Array[TypeLike]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def CIF(retType: TypeLike, types: js.Array[TypeLike], abi: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  inline def CIFVar(retType: js.Any, types: js.Array[js.Any], numFixedArgs: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  inline def CIFVar(retType: js.Any, types: js.Array[js.Any], numFixedArgs: Double, abi: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def CIFVar(retType: TypeLike, types: js.Array[TypeLike], numFixedArgs: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def CIFVar(retType: TypeLike, types: js.Array[TypeLike], numFixedArgs: Double, abi: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @js.native
   trait Callback
     extends StObject
-       with Instantiable3[/* retType */ js.Any, /* argTypes */ js.Array[js.Any], /* fn */ js.Any, Buffer]
-       with Instantiable4[
-          /* retType */ js.Any, 
-          /* argTypes */ js.Array[js.Any], 
+       with // NOTE: This overload is a subtype of the next overload, but provides better completions.
+  Instantiable3[
+          (/* retType */ NamedTypeLike) | (/* retType */ TypeLike), 
+          /* argTypes */ js.Array[NamedTypeLike | TypeLike], 
+          /* fn */ js.Function1[
+            (/* repeated */ Any) | (/* ags */ UnderlyingTypes[js.Array[NamedTypeLike | TypeLike]]), 
+            Any | (UnderlyingType[NamedTypeLike | TypeLike])
+          ], 
+          Buffer | (Pointer[
+            js.Function1[
+              /* args */ UnderlyingTypes[js.Array[NamedTypeLike | TypeLike]], 
+              UnderlyingType[NamedTypeLike | TypeLike]
+            ]
+          ])
+        ]
+       with // NOTE: This overload is a subtype of the next overload, but provides better completions.
+  Instantiable4[
+          (/* retType */ NamedTypeLike) | (/* retType */ TypeLike), 
+          /* argTypes */ js.Array[NamedTypeLike | TypeLike], 
           /* abi */ Double, 
-          /* fn */ js.Any, 
-          Buffer
+          /* fn */ js.Function1[
+            (/* repeated */ Any) | (/* args */ UnderlyingTypes[js.Array[NamedTypeLike | TypeLike]]), 
+            Any | (UnderlyingType[NamedTypeLike | TypeLike])
+          ], 
+          Buffer | (Pointer[
+            js.Function1[
+              /* args */ UnderlyingTypes[js.Array[NamedTypeLike | TypeLike]], 
+              UnderlyingType[NamedTypeLike | TypeLike]
+            ]
+          ])
         ] {
     
-    def apply(retType: js.Any, argTypes: js.Array[js.Any], abi: Double, fn: js.Any): Buffer = js.native
-    def apply(retType: js.Any, argTypes: js.Array[js.Any], fn: js.Any): Buffer = js.native
+    def apply(
+      retType: TypeLike,
+      argTypes: js.Array[TypeLike],
+      abi: Double,
+      fn: js.Function1[/* repeated */ Any, Any]
+    ): Buffer = js.native
+    def apply(retType: TypeLike, argTypes: js.Array[TypeLike], fn: js.Function1[/* repeated */ Any, Any]): Buffer = js.native
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
+    def apply[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] */](
+      retType: TReturnType,
+      argTypes: TArgTypes,
+      abi: Double,
+      fn: js.Function1[/* args */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]
+    ): Pointer[js.Function1[/* args */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]] = js.native
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
+    def apply[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] */](
+      retType: TReturnType,
+      argTypes: TArgTypes,
+      fn: js.Function1[/* ags */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]
+    ): Pointer[js.Function1[/* args */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]] = js.native
   }
   @JSImport("ffi-napi", "Callback")
   @js.native
@@ -47,23 +101,53 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ffi-napi", "Callback")
   @js.native
-  class CallbackCls protected ()
+  open class CallbackCls[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] */] protected ()
     extends StObject
-       with Buffer {
-    def this(retType: js.Any, argTypes: js.Array[js.Any], fn: js.Any) = this()
-    def this(retType: js.Any, argTypes: js.Array[js.Any], abi: Double, fn: js.Any) = this()
+       with Pointer[js.Function1[/* args */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]] {
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
+    def this(
+      retType: TReturnType,
+      argTypes: TArgTypes,
+      fn: js.Function1[/* ags */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]
+    ) = this()
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
+    def this(
+      retType: TReturnType,
+      argTypes: TArgTypes,
+      abi: Double,
+      fn: js.Function1[/* args */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]
+    ) = this()
   }
   
-  trait DynamicLibrary extends StObject {
+  @JSImport("ffi-napi", "DynamicLibrary")
+  @js.native
+  /**
+    * @param mode One of the numeric {@link DynamicLibrary.FLAGS} values.
+    */
+  open class DynamicLibrary () extends StObject {
+    def this(path: String) = this()
+    def this(path: String, mode: Double) = this()
+    def this(path: Unit, mode: Double) = this()
     
-    /** Close library, returns the result of the `dlclose` system function. */
-    def close(): Double
+    /**
+      * Close library, returns the result of the `dlclose` system function.
+      */
+    def close(): Double = js.native
     
-    /** Get the result of the `dlerror` system function. */
-    def error(): String
+    /**
+      * Get the result of the `dlerror` system function.
+      */
+    def error(): String = js.native
     
-    /** Get a symbol from this library. */
-    def get(symbol: String): Buffer
+    /**
+      * Get a symbol from this library.
+      */
+    def get(symbol: String): Buffer = js.native
+    
+    /**
+      * Returns the path originally passed to the constructor.
+      */
+    def path(): String = js.native
   }
   object DynamicLibrary {
     
@@ -76,43 +160,66 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ffi-napi", "DynamicLibrary.FLAGS")
-    @js.native
-    def FLAGS: RTLDDEFAUL = js.native
-    inline def FLAGS_=(x: RTLDDEFAUL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLAGS")(x.asInstanceOf[js.Any])
-    
-    extension [Self <: DynamicLibrary](x: Self) {
+    /**
+      * Exported flags from "dlfcn.h"
+      */
+    object FLAGS {
       
-      inline def setClose(value: () => Double): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_DEFAULT")
+      @js.native
+      val RTLD_DEFAULT: Pointer[Any] = js.native
       
-      inline def setError(value: () => String): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+      // not defined on Windows
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_FIRST")
+      @js.native
+      val RTLD_FIRST: js.UndefOr[Double] = js.native
       
-      inline def setGet(value: String => Buffer): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_GLOBAL")
+      @js.native
+      val RTLD_GLOBAL: Double = js.native
+      
+      // flags for dlopen()
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_LAZY")
+      @js.native
+      val RTLD_LAZY: Double = js.native
+      
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_LOCAL")
+      @js.native
+      val RTLD_LOCAL: Double = js.native
+      
+      // not defined on Windows
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_MAIN_ONLY")
+      @js.native
+      val RTLD_MAIN_ONLY: js.UndefOr[Pointer[Any]] = js.native
+      
+      // not defined on Windows
+      // flags for dlsym()
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_NEXT")
+      @js.native
+      val RTLD_NEXT: Pointer[Any] = js.native
+      
+      // not defined on Windows
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_NODELETE")
+      @js.native
+      val RTLD_NODELETE: js.UndefOr[Double] = js.native
+      
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_NOLOAD")
+      @js.native
+      val RTLD_NOLOAD: js.UndefOr[Double] = js.native
+      
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_NOW")
+      @js.native
+      val RTLD_NOW: Double = js.native
+      
+      @JSImport("ffi-napi", "DynamicLibrary.FLAGS.RTLD_SELF")
+      @js.native
+      val RTLD_SELF: js.UndefOr[Pointer[Any]] = js.native
     }
   }
   
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("ffi-napi", "DynamicLibrary")
+  @JSImport("ffi-napi", "FFI_ARG_SIZE")
   @js.native
-  class DynamicLibraryCls ()
-    extends StObject
-       with DynamicLibrary {
-    def this(path: String) = this()
-    def this(path: String, mode: Double) = this()
-    def this(path: Unit, mode: Double) = this()
-    
-    /** Close library, returns the result of the `dlclose` system function. */
-    /* CompleteClass */
-    override def close(): Double = js.native
-    
-    /** Get the result of the `dlerror` system function. */
-    /* CompleteClass */
-    override def error(): String = js.native
-    
-    /** Get a symbol from this library. */
-    /* CompleteClass */
-    override def get(symbol: String): Buffer = js.native
-  }
+  val FFI_ARG_SIZE: Double = js.native
   
   @JSImport("ffi-napi", "FFI_BAD_ABI")
   @js.native
@@ -122,9 +229,17 @@ object mod {
   @js.native
   val FFI_BAD_TYPEDEF: Double = js.native
   
+  @JSImport("ffi-napi", "FFI_CIF_SIZE")
+  @js.native
+  val FFI_CIF_SIZE: Double = js.native
+  
   @JSImport("ffi-napi", "FFI_DEFAULT_ABI")
   @js.native
   val FFI_DEFAULT_ABI: Double = js.native
+  
+  @JSImport("ffi-napi", "FFI_FASTCALL")
+  @js.native
+  val FFI_FASTCALL: js.UndefOr[Double] = js.native
   
   @JSImport("ffi-napi", "FFI_FIRST_ABI")
   @js.native
@@ -134,109 +249,155 @@ object mod {
   @js.native
   val FFI_LAST_ABI: Double = js.native
   
+  @JSImport("ffi-napi", "FFI_MS_CDECL")
+  @js.native
+  val FFI_MS_CDECL: js.UndefOr[Double] = js.native
+  
   @JSImport("ffi-napi", "FFI_OK")
   @js.native
   val FFI_OK: Double = js.native
   
+  @JSImport("ffi-napi", "FFI_SARG_SIZE")
+  @js.native
+  val FFI_SARG_SIZE: Double = js.native
+  
+  @JSImport("ffi-napi", "FFI_STDCALL")
+  @js.native
+  val FFI_STDCALL: js.UndefOr[Double] = js.native
+  
   @JSImport("ffi-napi", "FFI_SYSV")
   @js.native
-  val FFI_SYSV: Double = js.native
+  val FFI_SYSV: js.UndefOr[Double] = js.native
   
+  @JSImport("ffi-napi", "FFI_THISCALL")
+  @js.native
+  val FFI_THISCALL: js.UndefOr[Double] = js.native
+  
+  /**
+    * Define the `ffi_type` struct (see deps/libffi/include/ffi.h) for use in JS.
+    * This struct type is used internally to define custom struct ret/arg types.
+    */
   @JSImport("ffi-napi", "FFI_TYPE")
   @js.native
-  val FFI_TYPE: StructType = js.native
+  val FFI_TYPE: StructType[Alignment] = js.native
+  
+  @JSImport("ffi-napi", "FFI_TYPES")
+  @js.native
+  val FFI_TYPES: FfiTypesRegistry = js.native
+  
+  @JSImport("ffi-napi", "FFI_TYPE_SIZE")
+  @js.native
+  val FFI_TYPE_SIZE: Double = js.native
   
   @JSImport("ffi-napi", "FFI_UNIX64")
   @js.native
-  val FFI_UNIX64: Double = js.native
+  val FFI_UNIX64: js.UndefOr[Double] = js.native
+  
+  @JSImport("ffi-napi", "FFI_VFP")
+  @js.native
+  val FFI_VFP: js.UndefOr[Double] = js.native
+  
+  @JSImport("ffi-napi", "FFI_WIN64")
+  @js.native
+  val FFI_WIN64: js.UndefOr[Double] = js.native
   
   @js.native
-  trait ForeignFunction extends StObject {
+  trait ForeignFunction[TReturn, TArgs /* <: js.Array[Any] */] extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    ): TReturn = js.native
     
-    def async(args: js.Any*): Unit = js.native
+    def async(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [...TArgs, (err : any, value : TReturn): void] is not an array type */ args: /* import warning: importer.ImportType#apply c repeated non-array type: TArgs */ js.Array[TArgs]
+    ): Unit = js.native
   }
   object ForeignFunction {
     
     @JSImport("ffi-napi", "ForeignFunction")
     @js.native
-    def apply(ptr: Buffer, retType: String, argTypes: js.Array[js.Any]): ForeignFunction = js.native
+    def apply(ptr: Buffer, retType: TypeLike, argTypes: js.Array[TypeLike]): ForeignFunction[Any, js.Array[Any]] = js.native
     @JSImport("ffi-napi", "ForeignFunction")
     @js.native
-    def apply(ptr: Buffer, retType: String, argTypes: js.Array[js.Any], abi: Double): ForeignFunction = js.native
+    def apply(ptr: Buffer, retType: TypeLike, argTypes: js.Array[TypeLike], abi: Double): ForeignFunction[Any, js.Array[Any]] = js.native
     @JSImport("ffi-napi", "ForeignFunction")
     @js.native
-    def apply(ptr: Buffer, retType: Type, argTypes: js.Array[js.Any]): ForeignFunction = js.native
+    def apply[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = js.native
     @JSImport("ffi-napi", "ForeignFunction")
     @js.native
-    def apply(ptr: Buffer, retType: Type, argTypes: js.Array[js.Any], abi: Double): ForeignFunction = js.native
+    def apply[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes, abi: Double): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ffi-napi", "ForeignFunction")
   @js.native
-  class ForeignFunctionCls protected ()
+  open class ForeignFunctionCls[TReturnType /* <: NamedType */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */] protected ()
     extends StObject
-       with ForeignFunction {
-    def this(ptr: Buffer, retType: String, argTypes: js.Array[js.Any]) = this()
-    def this(ptr: Buffer, retType: Type, argTypes: js.Array[js.Any]) = this()
-    def this(ptr: Buffer, retType: String, argTypes: js.Array[js.Any], abi: Double) = this()
-    def this(ptr: Buffer, retType: Type, argTypes: js.Array[js.Any], abi: Double) = this()
+       with ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] {
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
+    def this(ptr: Buffer, retType: TReturnType, argTypes: TArgTypes) = this()
+    def this(ptr: Buffer, retType: TReturnType, argTypes: TArgTypes, abi: Double) = this()
   }
   
+  // NOTE: This overload is a subtype of the next overload, but provides better completions.
+  inline def ForeignFunction_TReturnType_NamedTypeTArgTypes_UnionArrayTypeLikeArgTypesInferenceMarker[TReturnType /* <: NamedType */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ForeignFunction")(ptr.asInstanceOf[js.Any], retType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any])).asInstanceOf[ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]]]
+  inline def ForeignFunction_TReturnType_NamedTypeTArgTypes_UnionArrayTypeLikeArgTypesInferenceMarker[TReturnType /* <: NamedType */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes, abi: Double): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ForeignFunction")(ptr.asInstanceOf[js.Any], retType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]]]
+  
   @js.native
-  trait Function
+  trait Function[TReturnType /* <: Type[Any] */, TArgTypes /* <: js.Array[Type[Any]] */]
     extends StObject
-       with Type {
+       with Type[js.Function1[/* args */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]] {
     
     var abi: Double = js.native
     
     /** The type of arguments. */
-    var argTypes: js.Array[Type] = js.native
+    var argTypes: TArgTypes = js.native
     
     /** Is set for node-ffi functions. */
-    var ffi_type: Buffer = js.native
+    var ffi_type: PFFI_TYPE = js.native
     
     /** The type of return value. */
-    var retType: Type = js.native
+    var retType: TReturnType = js.native
     
     /** Get a `ForeignFunction` of this function type. */
-    def toFunction(buf: Buffer): ForeignFunction = js.native
+    def toFunction(buf: Buffer): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = js.native
     
     /** Get a `Callback` pointer of this function type. */
-    def toPointer(fn: js.Function1[/* repeated */ js.Any, js.Any]): Buffer = js.native
+    def toPointer(fn: js.Function1[/* args */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]): Pointer[js.Function1[/* args */ UnderlyingTypes[TArgTypes], UnderlyingType[TReturnType]]] = js.native
   }
   object Function {
     
     @JSImport("ffi-napi", "Function")
     @js.native
-    def apply(retType: String, argTypes: js.Array[js.Any]): Function = js.native
+    def apply(retType: TypeLike, argTypes: js.Array[TypeLike]): Function[Type[Any], js.Array[Type[Any]]] = js.native
     @JSImport("ffi-napi", "Function")
     @js.native
-    def apply(retType: String, argTypes: js.Array[js.Any], abi: Double): Function = js.native
+    def apply(retType: TypeLike, argTypes: js.Array[TypeLike], abi: Double): Function[Type[Any], js.Array[Type[Any]]] = js.native
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
     @JSImport("ffi-napi", "Function")
     @js.native
-    def apply(retType: Type, argTypes: js.Array[js.Any]): Function = js.native
+    def apply[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */](retType: TReturnType, argTypes: TArgTypes): Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = js.native
     @JSImport("ffi-napi", "Function")
     @js.native
-    def apply(retType: Type, argTypes: js.Array[js.Any], abi: Double): Function = js.native
+    def apply[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */](retType: TReturnType, argTypes: TArgTypes, abi: Double): Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ffi-napi", "Function")
   @js.native
-  class FunctionCls protected ()
+  open class FunctionCls[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */] protected ()
     extends StObject
-       with Function {
-    def this(retType: String, argTypes: js.Array[js.Any]) = this()
-    def this(retType: Type, argTypes: js.Array[js.Any]) = this()
-    def this(retType: String, argTypes: js.Array[js.Any], abi: Double) = this()
-    def this(retType: Type, argTypes: js.Array[js.Any], abi: Double) = this()
+       with Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] {
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
+    def this(retType: TReturnType, argTypes: TArgTypes) = this()
+    def this(retType: TReturnType, argTypes: TArgTypes, abi: Double) = this()
     
     /** To invoke when `ref.get` is invoked on a buffer of this type. */
     /* CompleteClass */
-    override def get(buffer: typings.refNapi.mod.global.Buffer, offset: Double): js.Any = js.native
+    override def get(buffer: typings.refNapi.mod.global.Buffer, offset: Double): js.Function1[
+        /* args */ UnderlyingTypes[CoerceTypes[TArgTypes]], 
+        UnderlyingType[CoerceType_[TReturnType]]
+      ] = js.native
     
     /** The current level of indirection of the buffer. */
     /* CompleteClass */
@@ -244,12 +405,22 @@ object mod {
     
     /** To invoke when `ref.set` is invoked on a buffer of this type. */
     /* CompleteClass */
-    override def set(buffer: typings.refNapi.mod.global.Buffer, offset: Double, value: js.Any): Unit = js.native
+    override def set(
+      buffer: typings.refNapi.mod.global.Buffer,
+      offset: Double,
+      value: js.Function1[
+          /* args */ UnderlyingTypes[CoerceTypes[TArgTypes]], 
+          UnderlyingType[CoerceType_[TReturnType]]
+        ]
+    ): Unit = js.native
     
     /** The size in bytes required to hold this datatype. */
     /* CompleteClass */
     var size: Double = js.native
   }
+  
+  inline def Function_TReturnType_TypeLikeTArgTypes_UnionArrayTypeAnyArgTypesInferenceMarker[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[Type[Any]] | ArgTypesInferenceMarker */](retType: TReturnType, argTypes: TArgTypes): Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Function")(retType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any])).asInstanceOf[Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]]]
+  inline def Function_TReturnType_TypeLikeTArgTypes_UnionArrayTypeAnyArgTypesInferenceMarker[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[Type[Any]] | ArgTypesInferenceMarker */](retType: TReturnType, argTypes: TArgTypes, abi: Double): Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Function")(retType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]]]
   
   @JSImport("ffi-napi", "HAS_OBJC")
   @js.native
@@ -267,33 +438,121 @@ object mod {
     * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
     * @param lib hash that will be extended
     */
-  Instantiable0[js.Any]
-       with Instantiable1[/* libFile */ String, js.Any]
-       with Instantiable2[
+  Instantiable0[Any]
+       with /**
+    * @param libFile name of library
+    * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
+    * @param lib hash that will be extended
+    */
+  Instantiable2[
           (/* libFile */ Null) | (/* libFile */ String), 
-          /* funcs */ StringDictionary[js.Array[js.Any]], 
-          js.Any
+          LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker | (/* funcs */ Record[
+            String, 
+            js.Tuple3[
+              /* retType */ TypeLike, 
+              /* argTypes */ js.Array[TypeLike], 
+              js.UndefOr[LibraryFunctionOptions]
+            ]
+          ]), 
+          Any | (LibraryObject[
+            LibraryObjectDefinitionToLibraryDefinition[LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker]
+          ])
         ]
-       with Instantiable3[
+       with /**
+    * @param libFile name of library
+    * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
+    * @param lib hash that will be extended
+    */
+  Instantiable3[
           (/* libFile */ Null) | (/* libFile */ String), 
-          (/* funcs */ StringDictionary[js.Array[js.Any]]) | (/* funcs */ Unit), 
+          LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker | (/* funcs */ Record[
+            String, 
+            js.Tuple3[
+              /* retType */ TypeLike, 
+              /* argTypes */ js.Array[TypeLike], 
+              js.UndefOr[LibraryFunctionOptions]
+            ]
+          ]) | (/* funcs */ Unit), 
           /* lib */ js.Object, 
-          js.Any
-        ] {
+          (js.Object & (LibraryObject[
+            LibraryObjectDefinitionToLibraryDefinition[LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker]
+          ])) | Any | (LibraryObject[
+            LibraryObjectDefinitionToLibraryDefinition[LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker]
+          ])
+        ]
+       with Instantiable1[/* libFile */ String, Any] {
     
     /**
       * @param libFile name of library
       * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
       * @param lib hash that will be extended
       */
-    def apply(): js.Any = js.native
-    def apply(libFile: String): js.Any = js.native
-    def apply(libFile: String, funcs: StringDictionary[js.Array[js.Any]]): js.Any = js.native
-    def apply(libFile: String, funcs: StringDictionary[js.Array[js.Any]], lib: js.Object): js.Any = js.native
-    def apply(libFile: String, funcs: Unit, lib: js.Object): js.Any = js.native
-    def apply(libFile: Null, funcs: StringDictionary[js.Array[js.Any]]): js.Any = js.native
-    def apply(libFile: Null, funcs: StringDictionary[js.Array[js.Any]], lib: js.Object): js.Any = js.native
-    def apply(libFile: Null, funcs: Unit, lib: js.Object): js.Any = js.native
+    def apply(): Any = js.native
+    def apply(libFile: String): Any = js.native
+    def apply(libFile: String, funcs: Unit, lib: js.Object): Any = js.native
+    def apply(
+      libFile: String,
+      funcs: Record[
+          String, 
+          js.Tuple3[
+            /* retType */ TypeLike, 
+            /* argTypes */ js.Array[TypeLike], 
+            /* opts */ js.UndefOr[LibraryFunctionOptions]
+          ]
+        ]
+    ): Any = js.native
+    def apply(
+      libFile: String,
+      funcs: Record[
+          String, 
+          js.Tuple3[
+            /* retType */ TypeLike, 
+            /* argTypes */ js.Array[TypeLike], 
+            /* opts */ js.UndefOr[LibraryFunctionOptions]
+          ]
+        ],
+      lib: js.Object
+    ): Any = js.native
+    def apply(libFile: Null, funcs: Unit, lib: js.Object): Any = js.native
+    def apply(
+      libFile: Null,
+      funcs: Record[
+          String, 
+          js.Tuple3[
+            /* retType */ TypeLike, 
+            /* argTypes */ js.Array[TypeLike], 
+            /* opts */ js.UndefOr[LibraryFunctionOptions]
+          ]
+        ]
+    ): Any = js.native
+    def apply(
+      libFile: Null,
+      funcs: Record[
+          String, 
+          js.Tuple3[
+            /* retType */ TypeLike, 
+            /* argTypes */ js.Array[TypeLike], 
+            /* opts */ js.UndefOr[LibraryFunctionOptions]
+          ]
+        ],
+      lib: js.Object
+    ): Any = js.native
+    /**
+      * @param libFile name of library
+      * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
+      * @param lib hash that will be extended
+      */
+    def apply[TDefinition /* <: LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker */](libFile: String, funcs: TDefinition): LibraryObject[LibraryObjectDefinitionToLibraryDefinition[TDefinition]] = js.native
+    def apply[TDefinition /* <: LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker */](libFile: String, funcs: TDefinition, lib: js.Object): LibraryObject[LibraryObjectDefinitionToLibraryDefinition[TDefinition]] = js.native
+    def apply[TDefinition /* <: LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker */](libFile: Null, funcs: TDefinition): LibraryObject[LibraryObjectDefinitionToLibraryDefinition[TDefinition]] = js.native
+    def apply[TDefinition /* <: LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker */](libFile: Null, funcs: TDefinition, lib: js.Object): LibraryObject[LibraryObjectDefinitionToLibraryDefinition[TDefinition]] = js.native
+    /**
+      * @param libFile name of library
+      * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
+      * @param lib hash that will be extended
+      */
+    def apply[TDefinition /* <: LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker */, T](libFile: String, funcs: TDefinition, lib: T): T & LibraryObject[LibraryObjectDefinitionToLibraryDefinition[TDefinition]] = js.native
+    def apply[TDefinition /* <: LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker */, T](libFile: Null, funcs: TDefinition, lib: T): T & LibraryObject[LibraryObjectDefinitionToLibraryDefinition[TDefinition]] = js.native
     
     /** The extension to use on libraries. */
     var EXT: String = js.native
@@ -304,12 +563,18 @@ object mod {
   
   @JSImport("ffi-napi", "RTLD_DEFAULT")
   @js.native
-  val RTLD_DEFAULT: Buffer = js.native
+  val RTLD_DEFAULT: Pointer[Any] = js.native
+  
+  // not defined on Windows
+  @JSImport("ffi-napi", "RTLD_FIRST")
+  @js.native
+  val RTLD_FIRST: js.UndefOr[Double] = js.native
   
   @JSImport("ffi-napi", "RTLD_GLOBAL")
   @js.native
   val RTLD_GLOBAL: Double = js.native
   
+  // flags for dlopen()
   @JSImport("ffi-napi", "RTLD_LAZY")
   @js.native
   val RTLD_LAZY: Double = js.native
@@ -318,227 +583,324 @@ object mod {
   @js.native
   val RTLD_LOCAL: Double = js.native
   
+  // not defined on Windows
+  @JSImport("ffi-napi", "RTLD_MAIN_ONLY")
+  @js.native
+  val RTLD_MAIN_ONLY: js.UndefOr[Pointer[Any]] = js.native
+  
+  // not defined on Windows
+  // flags for dlsym()
   @JSImport("ffi-napi", "RTLD_NEXT")
   @js.native
-  val RTLD_NEXT: Buffer = js.native
+  val RTLD_NEXT: Pointer[Any] = js.native
   
+  // not defined on Windows
   @JSImport("ffi-napi", "RTLD_NODELETE")
   @js.native
-  val RTLD_NODELETE: Double = js.native
+  val RTLD_NODELETE: js.UndefOr[Double] = js.native
   
   @JSImport("ffi-napi", "RTLD_NOLOAD")
   @js.native
-  val RTLD_NOLOAD: Double = js.native
+  val RTLD_NOLOAD: js.UndefOr[Double] = js.native
   
   @JSImport("ffi-napi", "RTLD_NOW")
   @js.native
   val RTLD_NOW: Double = js.native
   
+  @JSImport("ffi-napi", "RTLD_SELF")
   @js.native
-  trait VariadicForeignFunction extends StObject {
+  val RTLD_SELF: js.UndefOr[Pointer[Any]] = js.native
+  
+  @js.native
+  trait VariadicForeignFunction[TReturnType /* <: Type[Any] */, TArgTypes /* <: js.Array[Type[Any]] */] extends StObject {
     
     /**
       * What gets returned is another function that needs to be invoked with the rest
       * of the variadic types that are being invoked from the function.
       */
-    def apply(args: js.Any*): ForeignFunction = js.native
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
+    def apply[A /* <: js.Array[NamedTypeLike] */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type A is not an array type */ args: A
+    ): ForeignFunction[
+        UnderlyingType[TReturnType], 
+        /* import warning: importer.ImportType#apply c repeated non-array type: never */ js.Array[scala.Nothing]
+      ] = js.native
     
     /**
       * Return type as a property of the function generator to
       * allow for monkey patching the return value in the very rare case where the
       * return type is variadic as well
       */
-    var returnType: js.Any = js.native
+    var returnType: TReturnType = js.native
   }
   object VariadicForeignFunction {
     
     @JSImport("ffi-napi", "VariadicForeignFunction")
     @js.native
-    def apply(ptr: Buffer, ret: String, fixedArgs: js.Array[js.Any]): VariadicForeignFunction = js.native
+    def apply(ptr: Buffer, ret: TypeLike, fixedArgs: js.Array[TypeLike]): VariadicForeignFunction[Type[Any], js.Array[Type[Any]]] = js.native
     @JSImport("ffi-napi", "VariadicForeignFunction")
     @js.native
-    def apply(ptr: Buffer, ret: String, fixedArgs: js.Array[js.Any], abi: Double): VariadicForeignFunction = js.native
+    def apply(ptr: Buffer, ret: TypeLike, fixedArgs: js.Array[TypeLike], abi: Double): VariadicForeignFunction[Type[Any], js.Array[Type[Any]]] = js.native
     @JSImport("ffi-napi", "VariadicForeignFunction")
     @js.native
-    def apply(ptr: Buffer, ret: Type, fixedArgs: js.Array[js.Any]): VariadicForeignFunction = js.native
+    def apply[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = js.native
     @JSImport("ffi-napi", "VariadicForeignFunction")
     @js.native
-    def apply(ptr: Buffer, ret: Type, fixedArgs: js.Array[js.Any], abi: Double): VariadicForeignFunction = js.native
+    def apply[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes, abi: Double): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ffi-napi", "VariadicForeignFunction")
   @js.native
-  class VariadicForeignFunctionCls protected ()
+  open class VariadicForeignFunctionCls[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */] protected ()
     extends StObject
-       with VariadicForeignFunction {
-    def this(ptr: Buffer, ret: String, fixedArgs: js.Array[js.Any]) = this()
-    def this(ptr: Buffer, ret: Type, fixedArgs: js.Array[js.Any]) = this()
-    def this(ptr: Buffer, ret: String, fixedArgs: js.Array[js.Any], abi: Double) = this()
-    def this(ptr: Buffer, ret: Type, fixedArgs: js.Array[js.Any], abi: Double) = this()
+       with VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] {
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
+    def this(ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes) = this()
+    def this(ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes, abi: Double) = this()
   }
+  
+  // NOTE: This overload is a subtype of the next overload, but provides better completions.
+  inline def VariadicForeignFunction_TReturnType_NamedTypeLikeTArgTypes_UnionArrayNamedTypeLikeArgTypesInferenceMarker[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("VariadicForeignFunction")(ptr.asInstanceOf[js.Any], ret.asInstanceOf[js.Any], fixedArgs.asInstanceOf[js.Any])).asInstanceOf[VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]]]
+  inline def VariadicForeignFunction_TReturnType_NamedTypeLikeTArgTypes_UnionArrayNamedTypeLikeArgTypesInferenceMarker[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes, abi: Double): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("VariadicForeignFunction")(ptr.asInstanceOf[js.Any], ret.asInstanceOf[js.Any], fixedArgs.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]]]
   
   inline def errno(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("errno")().asInstanceOf[Double]
   
   object ffiType {
     
-    inline def apply(`type`: String): Buffer = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-    /** Get a `ffi_type *` Buffer appropriate for the given type. */
-    inline def apply(`type`: Type): Buffer = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def apply(`type`: TypeLike): Pointer[typings.ffiNapi.mod.ffiType.FFI_TYPE] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Pointer[typings.ffiNapi.mod.ffiType.FFI_TYPE]]
     
     @JSImport("ffi-napi", "ffiType")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def FFI_TYPE(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")().asInstanceOf[js.Any]
-    /** Pass it an existing Buffer instance to use that as the backing buffer. */
-    inline def FFI_TYPE(arg: typings.node.Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def FFI_TYPE(arg: typings.node.Buffer, data: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(arg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def FFI_TYPE(data: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    /**
+      * Define the `ffi_type` struct (see deps/libffi/include/ffi.h) for use in JS.
+      * This struct type is used internally to define custom struct ret/arg types.
+      */
     @JSImport("ffi-napi", "ffiType.FFI_TYPE")
     @js.native
-    def FFI_TYPE_FffiType: StructType = js.native
-    
-    inline def FFI_TYPE_FffiType_=(x: StructType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FFI_TYPE")(x.asInstanceOf[js.Any])
+    val FFI_TYPE: StructType[Alignment] = js.native
+    type FFI_TYPE = ReturnType[StructType[Elements]]
   }
   
-  object types {
+  @JSImport("ffi-napi", "types")
+  @js.native
+  def types: TypesRegistry = js.native
+  inline def types_=(x: TypesRegistry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
+  
+  type ArgTypesInferenceMarker = js.Array[void]
+  
+  trait FfiTypesRegistry extends StObject {
     
-    @JSImport("ffi-napi", "types")
-    @js.native
-    val ^ : js.Any = js.native
+    var char: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.CString")
-    @js.native
-    def CString: Type = js.native
-    inline def CString_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CString")(x.asInstanceOf[js.Any])
+    var double: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.Object")
-    @js.native
-    def Object: Type = js.native
-    inline def Object_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
+    var float: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.bool")
-    @js.native
-    def bool: Type = js.native
-    inline def bool_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
+    var int: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.byte")
-    @js.native
-    def byte: Type = js.native
-    inline def byte_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byte")(x.asInstanceOf[js.Any])
+    var int16: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.char")
-    @js.native
-    def char: Type = js.native
-    inline def char_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("char")(x.asInstanceOf[js.Any])
+    var int32: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.double")
-    @js.native
-    def double: Type = js.native
-    inline def double_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("double")(x.asInstanceOf[js.Any])
+    var int64: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.float")
-    @js.native
-    def float: Type = js.native
-    inline def float_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("float")(x.asInstanceOf[js.Any])
+    var int8: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.int")
-    @js.native
-    def int: Type = js.native
+    var long: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.int16")
-    @js.native
-    def int16: Type = js.native
-    inline def int16_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int16")(x.asInstanceOf[js.Any])
+    var longlong: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.int32")
-    @js.native
-    def int32: Type = js.native
-    inline def int32_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int32")(x.asInstanceOf[js.Any])
+    var pointer: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.int64")
-    @js.native
-    def int64: Type = js.native
-    inline def int64_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int64")(x.asInstanceOf[js.Any])
+    var short: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.int8")
-    @js.native
-    def int8: Type = js.native
-    inline def int8_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int8")(x.asInstanceOf[js.Any])
+    var uchar: PFFI_TYPE
     
-    inline def int_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
+    var uint: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.long")
-    @js.native
-    def long: Type = js.native
-    inline def long_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("long")(x.asInstanceOf[js.Any])
+    var uint16: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.longlong")
-    @js.native
-    def longlong: Type = js.native
-    inline def longlong_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longlong")(x.asInstanceOf[js.Any])
+    var uint32: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.short")
-    @js.native
-    def short: Type = js.native
-    inline def short_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("short")(x.asInstanceOf[js.Any])
+    var uint64: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.size_t")
-    @js.native
-    def sizeT: Type = js.native
+    var uint8: PFFI_TYPE
     
-    inline def sizeT_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size_t")(x.asInstanceOf[js.Any])
+    var ulong: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.uchar")
-    @js.native
-    def uchar: Type = js.native
-    inline def uchar_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uchar")(x.asInstanceOf[js.Any])
+    var ulonglong: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.uint")
-    @js.native
-    def uint: Type = js.native
+    var ushort: PFFI_TYPE
     
-    @JSImport("ffi-napi", "types.uint16")
-    @js.native
-    def uint16: Type = js.native
-    inline def uint16_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint16")(x.asInstanceOf[js.Any])
+    var void: PFFI_TYPE
+  }
+  object FfiTypesRegistry {
     
-    @JSImport("ffi-napi", "types.uint32")
-    @js.native
-    def uint32: Type = js.native
-    inline def uint32_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint32")(x.asInstanceOf[js.Any])
+    inline def apply(
+      char: PFFI_TYPE,
+      double: PFFI_TYPE,
+      float: PFFI_TYPE,
+      int: PFFI_TYPE,
+      int16: PFFI_TYPE,
+      int32: PFFI_TYPE,
+      int64: PFFI_TYPE,
+      int8: PFFI_TYPE,
+      long: PFFI_TYPE,
+      longlong: PFFI_TYPE,
+      pointer: PFFI_TYPE,
+      short: PFFI_TYPE,
+      uchar: PFFI_TYPE,
+      uint: PFFI_TYPE,
+      uint16: PFFI_TYPE,
+      uint32: PFFI_TYPE,
+      uint64: PFFI_TYPE,
+      uint8: PFFI_TYPE,
+      ulong: PFFI_TYPE,
+      ulonglong: PFFI_TYPE,
+      ushort: PFFI_TYPE,
+      void: PFFI_TYPE
+    ): FfiTypesRegistry = {
+      val __obj = js.Dynamic.literal(char = char.asInstanceOf[js.Any], double = double.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], int = int.asInstanceOf[js.Any], int16 = int16.asInstanceOf[js.Any], int32 = int32.asInstanceOf[js.Any], int64 = int64.asInstanceOf[js.Any], int8 = int8.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], longlong = longlong.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any], uchar = uchar.asInstanceOf[js.Any], uint = uint.asInstanceOf[js.Any], uint16 = uint16.asInstanceOf[js.Any], uint32 = uint32.asInstanceOf[js.Any], uint64 = uint64.asInstanceOf[js.Any], uint8 = uint8.asInstanceOf[js.Any], ulong = ulong.asInstanceOf[js.Any], ulonglong = ulonglong.asInstanceOf[js.Any], ushort = ushort.asInstanceOf[js.Any], void = void.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FfiTypesRegistry]
+    }
     
-    @JSImport("ffi-napi", "types.uint64")
-    @js.native
-    def uint64: Type = js.native
-    inline def uint64_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint64")(x.asInstanceOf[js.Any])
+    extension [Self <: FfiTypesRegistry](x: Self) {
+      
+      inline def setChar(value: PFFI_TYPE): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      
+      inline def setDouble(value: PFFI_TYPE): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
+      
+      inline def setFloat(value: PFFI_TYPE): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      
+      inline def setInt(value: PFFI_TYPE): Self = StObject.set(x, "int", value.asInstanceOf[js.Any])
+      
+      inline def setInt16(value: PFFI_TYPE): Self = StObject.set(x, "int16", value.asInstanceOf[js.Any])
+      
+      inline def setInt32(value: PFFI_TYPE): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
+      
+      inline def setInt64(value: PFFI_TYPE): Self = StObject.set(x, "int64", value.asInstanceOf[js.Any])
+      
+      inline def setInt8(value: PFFI_TYPE): Self = StObject.set(x, "int8", value.asInstanceOf[js.Any])
+      
+      inline def setLong(value: PFFI_TYPE): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      
+      inline def setLonglong(value: PFFI_TYPE): Self = StObject.set(x, "longlong", value.asInstanceOf[js.Any])
+      
+      inline def setPointer(value: PFFI_TYPE): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+      
+      inline def setShort(value: PFFI_TYPE): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      
+      inline def setUchar(value: PFFI_TYPE): Self = StObject.set(x, "uchar", value.asInstanceOf[js.Any])
+      
+      inline def setUint(value: PFFI_TYPE): Self = StObject.set(x, "uint", value.asInstanceOf[js.Any])
+      
+      inline def setUint16(value: PFFI_TYPE): Self = StObject.set(x, "uint16", value.asInstanceOf[js.Any])
+      
+      inline def setUint32(value: PFFI_TYPE): Self = StObject.set(x, "uint32", value.asInstanceOf[js.Any])
+      
+      inline def setUint64(value: PFFI_TYPE): Self = StObject.set(x, "uint64", value.asInstanceOf[js.Any])
+      
+      inline def setUint8(value: PFFI_TYPE): Self = StObject.set(x, "uint8", value.asInstanceOf[js.Any])
+      
+      inline def setUlong(value: PFFI_TYPE): Self = StObject.set(x, "ulong", value.asInstanceOf[js.Any])
+      
+      inline def setUlonglong(value: PFFI_TYPE): Self = StObject.set(x, "ulonglong", value.asInstanceOf[js.Any])
+      
+      inline def setUshort(value: PFFI_TYPE): Self = StObject.set(x, "ushort", value.asInstanceOf[js.Any])
+      
+      inline def setVoid(value: PFFI_TYPE): Self = StObject.set(x, "void", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type LibraryDefinitionBase = Record[
+    String, 
+    js.Tuple3[
+      /* retType */ Type[Any], 
+      /* argTypes */ js.Array[Type[Any]], 
+      /* opts */ js.UndefOr[LibraryFunctionOptions]
+    ]
+  ]
+  
+  trait LibraryFunctionOptions extends StObject {
     
-    @JSImport("ffi-napi", "types.uint8")
-    @js.native
-    def uint8: Type = js.native
-    inline def uint8_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint8")(x.asInstanceOf[js.Any])
+    var abi: js.UndefOr[Double] = js.undefined
     
-    inline def uint_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint")(x.asInstanceOf[js.Any])
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    @JSImport("ffi-napi", "types.ulong")
-    @js.native
-    def ulong: Type = js.native
-    inline def ulong_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ulong")(x.asInstanceOf[js.Any])
+    var varargs: js.UndefOr[Boolean] = js.undefined
+  }
+  object LibraryFunctionOptions {
     
-    @JSImport("ffi-napi", "types.ulonglong")
-    @js.native
-    def ulonglong: Type = js.native
-    inline def ulonglong_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ulonglong")(x.asInstanceOf[js.Any])
+    inline def apply(): LibraryFunctionOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LibraryFunctionOptions]
+    }
     
-    @JSImport("ffi-napi", "types.ushort")
-    @js.native
-    def ushort: Type = js.native
-    inline def ushort_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ushort")(x.asInstanceOf[js.Any])
+    extension [Self <: LibraryFunctionOptions](x: Self) {
+      
+      inline def setAbi(value: Double): Self = StObject.set(x, "abi", value.asInstanceOf[js.Any])
+      
+      inline def setAbiUndefined: Self = StObject.set(x, "abi", js.undefined)
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      
+      inline def setVarargs(value: Boolean): Self = StObject.set(x, "varargs", value.asInstanceOf[js.Any])
+      
+      inline def setVarargsUndefined: Self = StObject.set(x, "varargs", js.undefined)
+    }
+  }
+  
+  type LibraryObject[T /* <: LibraryDefinitionBase */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  {[ P in keyof T ]: T[P][2] extends undefined? ffi-napi.ffi-napi.ForeignFunction<ref-napi.ref-napi.UnderlyingType<T[P][0]>, ref-napi.ref-napi.UnderlyingTypes<T[P][1]>> : T[P][2] extends {  varargs :true}? ffi-napi.ffi-napi.VariadicForeignFunction<T[P][0], T[P][1]> : T[P][2] extends {  async :true}? (args : [...ref-napi.ref-napi.UnderlyingTypes<T[P][1]>, (err : any, value : ref-napi.ref-napi.UnderlyingType<T[P][0]>): void]): void : ffi-napi.ffi-napi.ForeignFunction<ref-napi.ref-napi.UnderlyingType<T[P][0]>, ref-napi.ref-napi.UnderlyingTypes<T[P][1]>>}
+    */ typings.ffiNapi.ffiNapiStrings.LibraryObject & TopLevel[Any]
+  
+  type LibraryObjectDefinitionBase = Record[
+    String, 
+    js.Tuple3[
+      /* retType */ TypeLike, 
+      /* argTypes */ js.Array[TypeLike], 
+      /* opts */ js.UndefOr[LibraryFunctionOptions]
+    ]
+  ]
+  
+  type LibraryObjectDefinitionInferenceMarker = Record[String, js.Tuple2[void, /* argTypes */ ArgTypesInferenceMarker]]
+  
+  type LibraryObjectDefinitionToLibraryDefinition[T /* <: LibraryObjectDefinitionBase */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  {[ P in keyof T ]: [retType: ref-napi.ref-napi.CoerceType<T[P][0]>, argTypes: ref-napi.ref-napi.CoerceTypes<T[P][1]>, opts: T[P][2]]}
+    */ typings.ffiNapi.ffiNapiStrings.LibraryObjectDefinitionToLibraryDefinition & TopLevel[Any]
+  
+  type PFFI_TYPE = Pointer[typings.ffiNapi.mod.ffiType.FFI_TYPE]
+  
+  /* augmented module */
+  object refNapiAugmentingMod {
     
-    @JSImport("ffi-napi", "types.void")
-    @js.native
-    def void: Type = js.native
-    inline def void_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("void")(x.asInstanceOf[js.Any])
+    trait Type extends StObject {
+      
+      /**
+        * Determines the FFI_TYPE set for a type.
+        */
+      var ffi_type: js.UndefOr[PFFI_TYPE] = js.undefined
+    }
+    object Type {
+      
+      inline def apply(): typings.ffiNapi.mod.refNapiAugmentingMod.Type = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[typings.ffiNapi.mod.refNapiAugmentingMod.Type]
+      }
+      
+      extension [Self <: typings.ffiNapi.mod.refNapiAugmentingMod.Type](x: Self) {
+        
+        inline def setFfi_type(value: PFFI_TYPE): Self = StObject.set(x, "ffi_type", value.asInstanceOf[js.Any])
+        
+        inline def setFfi_typeUndefined: Self = StObject.set(x, "ffi_type", js.undefined)
+      }
+    }
   }
 }

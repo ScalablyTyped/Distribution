@@ -14,12 +14,12 @@ object hoverCardBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/HoverCard/HoverCard.base", "HoverCardBase")
   @js.native
-  class HoverCardBase protected ()
-    extends Component[IHoverCardProps, IHoverCardState, js.Any]
+  open class HoverCardBase protected ()
+    extends Component[IHoverCardProps, IHoverCardState, Any]
        with IHoverCard {
     def this(props: IHoverCardProps) = this()
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
     /**
       * Hide HoverCard
@@ -28,37 +28,37 @@ object hoverCardBaseMod {
       *  true: Event is coming from event listeners set up in componentDidMount.
       *  false: Event is coming from the `onLeave` prop from the HoverCard component.
       */
-    /* private */ var _cardDismiss: js.Any = js.native
+    /* private */ var _cardDismiss: Any = js.native
     
-    /* private */ var _cardOpen: js.Any = js.native
+    /* private */ var _cardOpen: Any = js.native
     
-    /* private */ var _childDismissEvent: js.Any = js.native
+    /* private */ var _childDismissEvent: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _currentMouseTarget: js.Any = js.native
+    /* private */ var _currentMouseTarget: Any = js.native
     
-    /* private */ var _dismissTimerId: js.Any = js.native
+    /* private */ var _dismissTimerId: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _executeCardOpen: js.Any = js.native
+    /* private */ var _executeCardOpen: Any = js.native
     
-    /* private */ var _getTargetElement: js.Any = js.native
+    /* private */ var _getTargetElement: Any = js.native
     
-    /* private */ var _hoverCard: js.Any = js.native
+    /* private */ var _hoverCard: Any = js.native
     
-    /* private */ var _instantOpenAsExpanded: js.Any = js.native
+    /* private */ var _instantOpenAsExpanded: Any = js.native
     
-    /* private */ var _nativeDismissEvent: js.Any = js.native
+    /* private */ var _nativeDismissEvent: Any = js.native
     
-    /* private */ var _openTimerId: js.Any = js.native
+    /* private */ var _openTimerId: Any = js.native
     
-    /* private */ var _setDismissedState: js.Any = js.native
+    /* private */ var _setDismissedState: Any = js.native
     
-    /* private */ var _setEventListeners: js.Any = js.native
+    /* private */ var _setEventListeners: Any = js.native
     
-    /* private */ var _shouldBlockHoverCard: js.Any = js.native
+    /* private */ var _shouldBlockHoverCard: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MHoverCardBase(): Unit = js.native

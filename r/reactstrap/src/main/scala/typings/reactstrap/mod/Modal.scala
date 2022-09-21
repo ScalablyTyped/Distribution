@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "Modal")
+@JSImport("reactstrap", "Modal")
 @js.native
-class Modal () extends default
+open class Modal () extends default

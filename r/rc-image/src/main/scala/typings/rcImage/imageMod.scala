@@ -1,6 +1,9 @@
 package typings.rcImage
 
 import org.scalablytyped.runtime.Shortcut
+import typings.rcDialog.anon.X
+import typings.rcImage.anon.Close
+import typings.rcImage.previewGroupMod.GroupConsumerProps
 import typings.rcImage.rcImageBooleans.`false`
 import typings.rcImage.rcImageStrings._empty
 import typings.rcImage.rcImageStrings.`additions removals`
@@ -64,6 +67,7 @@ import typings.rcUtil.portalWrapperMod.GetContainer
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -77,6 +81,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.FunctionComponent
 import typings.react.mod.HTMLAttributeReferrerPolicy
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -97,10 +102,12 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,15 +116,88 @@ object imageMod extends Shortcut {
   
   @JSImport("rc-image/lib/Image", JSImport.Default)
   @js.native
-  val default: FC[ImageProps] = js.native
+  val default: CompoundedComponent[ImageProps] = js.native
   
+  @js.native
+  trait CompoundedComponent[P]
+    extends StObject
+       with FunctionComponent[P] {
+    
+    var PreviewGroup: FC[GroupConsumerProps] = js.native
+  }
+  
+  /* Inlined parent std.Omit<rc-dialog.rc-dialog/es/IDialogPropTypes.IDialogPropTypes, 'mask' | 'visible' | 'closable' | 'prefixCls' | 'onClose' | 'afterClose' | 'wrapClassName'> */
   trait ImagePreviewType extends StObject {
+    
+    var animation: js.UndefOr[Any] = js.undefined
+    
+    var bodyProps: js.UndefOr[Any] = js.undefined
+    
+    var bodyStyle: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var children: js.UndefOr[Any] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
+    
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
+    
+    var destroyOnClose: js.UndefOr[Boolean] = js.undefined
+    
+    var focusTriggerAfterClose: js.UndefOr[Boolean] = js.undefined
+    
+    var footer: js.UndefOr[ReactNode] = js.undefined
+    
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
     var getContainer: js.UndefOr[GetContainer | `false`] = js.undefined
     
+    var height: js.UndefOr[String | Double] = js.undefined
+    
+    var icons: js.UndefOr[Close] = js.undefined
+    
+    var keyboard: js.UndefOr[Boolean] = js.undefined
+    
+    var mask: js.UndefOr[ReactNode] = js.undefined
+    
+    var maskAnimation: js.UndefOr[Any] = js.undefined
+    
+    var maskClassName: js.UndefOr[String] = js.undefined
+    
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
+    
+    var maskProps: js.UndefOr[Any] = js.undefined
+    
+    var maskStyle: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var maskTransitionName: js.UndefOr[String] = js.undefined
+    
+    var modalRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.undefined
+    
+    var mousePosition: js.UndefOr[X | Null] = js.undefined
+    
     var onVisibleChange: js.UndefOr[js.Function2[/* value */ Boolean, /* prevValue */ Boolean, Unit]] = js.undefined
     
+    var rootClassName: js.UndefOr[String] = js.undefined
+    
+    var scaleStep: js.UndefOr[Double] = js.undefined
+    
+    var src: js.UndefOr[String] = js.undefined
+    
+    var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var title: js.UndefOr[ReactNode] = js.undefined
+    
+    var transitionName: js.UndefOr[String] = js.undefined
+    
     var visible: js.UndefOr[Boolean] = js.undefined
+    
+    var width: js.UndefOr[String | Double] = js.undefined
+    
+    var wrapProps: js.UndefOr[Any] = js.undefined
+    
+    var wrapStyle: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ImagePreviewType {
     
@@ -128,19 +208,149 @@ object imageMod extends Shortcut {
     
     extension [Self <: ImagePreviewType](x: Self) {
       
+      inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      
+      inline def setBodyProps(value: Any): Self = StObject.set(x, "bodyProps", value.asInstanceOf[js.Any])
+      
+      inline def setBodyPropsUndefined: Self = StObject.set(x, "bodyProps", js.undefined)
+      
+      inline def setBodyStyle(value: Record[String, Any]): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
+      
+      inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
+      
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
+      inline def setDestroyOnClose(value: Boolean): Self = StObject.set(x, "destroyOnClose", value.asInstanceOf[js.Any])
+      
+      inline def setDestroyOnCloseUndefined: Self = StObject.set(x, "destroyOnClose", js.undefined)
+      
+      inline def setFocusTriggerAfterClose(value: Boolean): Self = StObject.set(x, "focusTriggerAfterClose", value.asInstanceOf[js.Any])
+      
+      inline def setFocusTriggerAfterCloseUndefined: Self = StObject.set(x, "focusTriggerAfterClose", js.undefined)
+      
+      inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      
+      inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+      
+      inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      
       inline def setGetContainer(value: GetContainer | `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
       
       inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
       inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
+      inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
+      inline def setIcons(value: Close): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      
+      inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+      
+      inline def setMask(value: ReactNode): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      inline def setMaskAnimation(value: Any): Self = StObject.set(x, "maskAnimation", value.asInstanceOf[js.Any])
+      
+      inline def setMaskAnimationUndefined: Self = StObject.set(x, "maskAnimation", js.undefined)
+      
+      inline def setMaskClassName(value: String): Self = StObject.set(x, "maskClassName", value.asInstanceOf[js.Any])
+      
+      inline def setMaskClassNameUndefined: Self = StObject.set(x, "maskClassName", js.undefined)
+      
+      inline def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
+      
+      inline def setMaskClosableUndefined: Self = StObject.set(x, "maskClosable", js.undefined)
+      
+      inline def setMaskProps(value: Any): Self = StObject.set(x, "maskProps", value.asInstanceOf[js.Any])
+      
+      inline def setMaskPropsUndefined: Self = StObject.set(x, "maskProps", js.undefined)
+      
+      inline def setMaskStyle(value: Record[String, Any]): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
+      
+      inline def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
+      
+      inline def setMaskTransitionName(value: String): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
+      
+      inline def setMaskTransitionNameUndefined: Self = StObject.set(x, "maskTransitionName", js.undefined)
+      
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setModalRender(value: /* node */ ReactNode => ReactNode): Self = StObject.set(x, "modalRender", js.Any.fromFunction1(value))
+      
+      inline def setModalRenderUndefined: Self = StObject.set(x, "modalRender", js.undefined)
+      
+      inline def setMousePosition(value: X): Self = StObject.set(x, "mousePosition", value.asInstanceOf[js.Any])
+      
+      inline def setMousePositionNull: Self = StObject.set(x, "mousePosition", null)
+      
+      inline def setMousePositionUndefined: Self = StObject.set(x, "mousePosition", js.undefined)
+      
       inline def setOnVisibleChange(value: (/* value */ Boolean, /* prevValue */ Boolean) => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction2(value))
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
+      inline def setRootClassName(value: String): Self = StObject.set(x, "rootClassName", value.asInstanceOf[js.Any])
+      
+      inline def setRootClassNameUndefined: Self = StObject.set(x, "rootClassName", js.undefined)
+      
+      inline def setScaleStep(value: Double): Self = StObject.set(x, "scaleStep", value.asInstanceOf[js.Any])
+      
+      inline def setScaleStepUndefined: Self = StObject.set(x, "scaleStep", js.undefined)
+      
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+      
+      inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
+      
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setWrapProps(value: Any): Self = StObject.set(x, "wrapProps", value.asInstanceOf[js.Any])
+      
+      inline def setWrapPropsUndefined: Self = StObject.set(x, "wrapProps", js.undefined)
+      
+      inline def setWrapStyle(value: Record[String, Any]): Self = StObject.set(x, "wrapStyle", value.asInstanceOf[js.Any])
+      
+      inline def setWrapStyleUndefined: Self = StObject.set(x, "wrapStyle", js.undefined)
+      
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -155,11 +365,11 @@ object imageMod extends Shortcut {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -177,21 +387,21 @@ object imageMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -205,11 +415,11 @@ object imageMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -221,13 +431,13 @@ object imageMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -237,7 +447,7 @@ object imageMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -291,7 +501,7 @@ object imageMod extends Shortcut {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -371,7 +581,7 @@ object imageMod extends Shortcut {
     
     var onEnded: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onError: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* e */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLImageElement]] = js.undefined
     
@@ -494,7 +704,9 @@ object imageMod extends Shortcut {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
+    
+    var rootClassName: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -529,6 +741,10 @@ object imageMod extends Shortcut {
     var vocab: js.UndefOr[String] = js.undefined
     
     var width: js.UndefOr[Double | String] = js.undefined
+    
+    var wrapperClassName: js.UndefOr[String] = js.undefined
+    
+    var wrapperStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object ImageProps {
     
@@ -555,7 +771,7 @@ object imageMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -563,7 +779,7 @@ object imageMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -599,7 +815,7 @@ object imageMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -611,7 +827,7 @@ object imageMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -619,7 +835,7 @@ object imageMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -627,7 +843,7 @@ object imageMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -655,15 +871,15 @@ object imageMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -687,7 +903,7 @@ object imageMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -697,7 +913,7 @@ object imageMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -717,7 +933,7 @@ object imageMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -801,7 +1017,7 @@ object imageMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -827,7 +1043,7 @@ object imageMod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -891,7 +1107,7 @@ object imageMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLImageElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLImageElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -987,11 +1203,11 @@ object imageMod extends Shortcut {
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnError(value: SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* e */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLImageElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLImageElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1227,9 +1443,13 @@ object imageMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
+      inline def setRootClassName(value: String): Self = StObject.set(x, "rootClassName", value.asInstanceOf[js.Any])
+      
+      inline def setRootClassNameUndefined: Self = StObject.set(x, "rootClassName", js.undefined)
       
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
@@ -1298,11 +1518,19 @@ object imageMod extends Shortcut {
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
+      
+      inline def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
+      
+      inline def setWrapperStyle(value: CSSProperties): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
+      
+      inline def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
     }
   }
   
-  type _To = FC[ImageProps]
+  type _To = CompoundedComponent[ImageProps]
   
   /* This means you don't have to write `default`, but can instead just say `imageMod.foo` */
-  override def _to: FC[ImageProps] = default
+  override def _to: CompoundedComponent[ImageProps] = default
 }

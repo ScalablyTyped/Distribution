@@ -14,17 +14,17 @@ trait Document extends StObject {
   
   def remove(): js.Promise[Stats1]
   
-  def set(options: CommonOption[js.Any]): js.Promise[Id]
+  def set(options: CommonOption[Any]): js.Promise[Id]
   
-  def update(options: CommonOption[js.Any]): js.Promise[Stats]
+  def update(options: CommonOption[Any]): js.Promise[Stats]
 }
 object Document {
   
   inline def apply(
     get: () => js.Promise[DataAny],
     remove: () => js.Promise[Stats1],
-    set: CommonOption[js.Any] => js.Promise[Id],
-    update: CommonOption[js.Any] => js.Promise[Stats]
+    set: CommonOption[Any] => js.Promise[Id],
+    update: CommonOption[Any] => js.Promise[Stats]
   ): Document = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), remove = js.Any.fromFunction0(remove), set = js.Any.fromFunction1(set), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[Document]
@@ -36,8 +36,8 @@ object Document {
     
     inline def setRemove(value: () => js.Promise[Stats1]): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    inline def setSet(value: CommonOption[js.Any] => js.Promise[Id]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: CommonOption[Any] => js.Promise[Id]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    inline def setUpdate(value: CommonOption[js.Any] => js.Promise[Stats]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: CommonOption[Any] => js.Promise[Stats]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

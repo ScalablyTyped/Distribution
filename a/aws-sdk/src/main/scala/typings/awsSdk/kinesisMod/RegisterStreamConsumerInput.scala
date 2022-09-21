@@ -12,7 +12,7 @@ trait RegisterStreamConsumerInput extends StObject {
   var ConsumerName: typings.awsSdk.kinesisMod.ConsumerName
   
   /**
-    * The ARN of the Kinesis data stream that you want to register the consumer with. For more info, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The ARN of the Kinesis data stream that you want to register the consumer with. For more info, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var StreamARN: typings.awsSdk.kinesisMod.StreamARN
 }

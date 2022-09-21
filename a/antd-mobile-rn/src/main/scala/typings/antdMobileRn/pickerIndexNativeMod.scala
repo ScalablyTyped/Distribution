@@ -13,7 +13,7 @@ object pickerIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/picker/index.native", JSImport.Default)
   @js.native
-  class default () extends Picker
+  open class default () extends Picker
   /* static members */
   object default {
     

@@ -17,7 +17,7 @@ object directoryMod {
     /**
       * Custom configuration for the intent. Currently unused, reserved for future use.
       */
-    var customConfig: js.UndefOr[js.Any] = js.undefined
+    var customConfig: js.UndefOr[Any] = js.undefined
     
     /**
       * A short, human-readable description of this intent.
@@ -42,9 +42,9 @@ object directoryMod {
       
       inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value*))
       
-      inline def setCustomConfig(value: js.Any): Self = StObject.set(x, "customConfig", value.asInstanceOf[js.Any])
+      inline def setCustomConfig(value: Any): Self = StObject.set(x, "customConfig", value.asInstanceOf[js.Any])
       
       inline def setCustomConfigUndefined: Self = StObject.set(x, "customConfig", js.undefined)
       
@@ -209,7 +209,7 @@ object directoryMod {
       
       inline def setCustomConfigUndefined: Self = StObject.set(x, "customConfig", js.undefined)
       
-      inline def setCustomConfigVarargs(value: NameValuePair*): Self = StObject.set(x, "customConfig", js.Array(value :_*))
+      inline def setCustomConfigVarargs(value: NameValuePair*): Self = StObject.set(x, "customConfig", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -219,19 +219,19 @@ object directoryMod {
       
       inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      inline def setIconsVarargs(value: Icon*): Self = StObject.set(x, "icons", js.Array(value :_*))
+      inline def setIconsVarargs(value: Icon*): Self = StObject.set(x, "icons", js.Array(value*))
       
       inline def setImages(value: js.Array[AppImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      inline def setImagesVarargs(value: AppImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: AppImage*): Self = StObject.set(x, "images", js.Array(value*))
       
       inline def setIntents(value: js.Array[AppDirIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
       
       inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
       
-      inline def setIntentsVarargs(value: AppDirIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+      inline def setIntentsVarargs(value: AppDirIntent*): Self = StObject.set(x, "intents", js.Array(value*))
       
       inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       

@@ -52,7 +52,7 @@ object DeleteCustomMetadataRequest {
     
     inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    inline def setKeysVarargs(value: CustomMetadataKeyType*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: CustomMetadataKeyType*): Self = StObject.set(x, "Keys", js.Array(value*))
     
     inline def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

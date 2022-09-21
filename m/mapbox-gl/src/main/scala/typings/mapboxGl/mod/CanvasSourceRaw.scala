@@ -10,7 +10,7 @@ trait CanvasSourceRaw
   extends StObject
      with Source
      with CanvasSourceOptions
-     with AnySourceData {
+     with _AnySourceData {
   
   @JSName("type")
   var type_CanvasSourceRaw: canvas

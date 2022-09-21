@@ -19,6 +19,6 @@ object JobPayloadOutput {
     
     inline def setFormats(value: js.Array[JobPayloadItem]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    inline def setFormatsVarargs(value: JobPayloadItem*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: JobPayloadItem*): Self = StObject.set(x, "formats", js.Array(value*))
   }
 }

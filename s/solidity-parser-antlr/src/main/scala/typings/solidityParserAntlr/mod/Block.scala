@@ -27,7 +27,7 @@ object Block {
     
     inline def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value*))
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

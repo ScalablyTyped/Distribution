@@ -8,5 +8,5 @@ object serviceMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_Service", "_Service")
   @js.native
-  val Service: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Service: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

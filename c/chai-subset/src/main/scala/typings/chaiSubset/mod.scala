@@ -24,24 +24,24 @@ object mod extends Shortcut {
       @js.native
       trait Assert extends StObject {
         
-        def containSubset(`val`: js.Any, exp: js.Any): Unit = js.native
-        def containSubset(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native
+        def containSubset(`val`: Any, exp: Any): Unit = js.native
+        def containSubset(`val`: Any, exp: Any, msg: String): Unit = js.native
       }
       
       trait Assertion extends StObject {
         
-        def containSubset(expected: js.Any): Assertion
+        def containSubset(expected: Any): Assertion
       }
       object Assertion {
         
-        inline def apply(containSubset: js.Any => Assertion): Assertion = {
+        inline def apply(containSubset: Any => Assertion): Assertion = {
           val __obj = js.Dynamic.literal(containSubset = js.Any.fromFunction1(containSubset))
           __obj.asInstanceOf[Assertion]
         }
         
         extension [Self <: Assertion](x: Self) {
           
-          inline def setContainSubset(value: js.Any => Assertion): Self = StObject.set(x, "containSubset", js.Any.fromFunction1(value))
+          inline def setContainSubset(value: Any => Assertion): Self = StObject.set(x, "containSubset", js.Any.fromFunction1(value))
         }
       }
     }

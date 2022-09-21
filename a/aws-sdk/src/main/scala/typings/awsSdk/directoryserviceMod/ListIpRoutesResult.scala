@@ -29,7 +29,7 @@ object ListIpRoutesResult {
     
     inline def setIpRoutesInfoUndefined: Self = StObject.set(x, "IpRoutesInfo", js.undefined)
     
-    inline def setIpRoutesInfoVarargs(value: IpRouteInfo*): Self = StObject.set(x, "IpRoutesInfo", js.Array(value :_*))
+    inline def setIpRoutesInfoVarargs(value: IpRouteInfo*): Self = StObject.set(x, "IpRoutesInfo", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

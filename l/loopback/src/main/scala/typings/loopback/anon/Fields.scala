@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Fields extends StObject {
   
-  var fields: js.UndefOr[String | js.Any | js.Array[js.Any]] = js.undefined
+  var fields: js.UndefOr[String | Any | js.Array[Any]] = js.undefined
   
-  var include: js.UndefOr[String | js.Any | js.Array[js.Any]] = js.undefined
+  var include: js.UndefOr[String | Any | js.Array[Any]] = js.undefined
   
   var limit: js.UndefOr[Double] = js.undefined
   
@@ -16,7 +16,7 @@ trait Fields extends StObject {
   
   var skip: js.UndefOr[Double] = js.undefined
   
-  var where: js.UndefOr[js.Any] = js.undefined
+  var where: js.UndefOr[Any] = js.undefined
 }
 object Fields {
   
@@ -27,17 +27,17 @@ object Fields {
   
   extension [Self <: Fields](x: Self) {
     
-    inline def setFields(value: String | js.Any | js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String | Any | js.Array[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Any*): Self = StObject.set(x, "fields", js.Array(value*))
     
-    inline def setInclude(value: String | js.Any | js.Array[js.Any]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: String | Any | js.Array[Any]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: js.Any*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: Any*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
@@ -51,7 +51,7 @@ object Fields {
     
     inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    inline def setWhere(value: js.Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }

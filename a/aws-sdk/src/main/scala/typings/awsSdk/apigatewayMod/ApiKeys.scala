@@ -31,7 +31,7 @@ object ApiKeys {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ApiKey*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ApiKey*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
@@ -41,6 +41,6 @@ object ApiKeys {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

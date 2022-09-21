@@ -10,10 +10,10 @@ object phoneAndroidMod {
   
   @JSImport("material-ui/svg-icons/hardware/phone-android", JSImport.Default)
   @js.native
-  class default () extends HardwarePhoneAndroid
+  open class default () extends HardwarePhoneAndroid
   
   @JSImport("material-ui/svg-icons/hardware/phone-android", "HardwarePhoneAndroid")
   @js.native
-  class HardwarePhoneAndroid ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwarePhoneAndroid ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

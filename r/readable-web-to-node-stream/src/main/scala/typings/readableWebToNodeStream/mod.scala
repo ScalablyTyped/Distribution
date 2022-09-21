@@ -10,12 +10,12 @@ object mod {
   
   @JSImport("readable-web-to-node-stream", "ReadableWebToNodeStream")
   @js.native
-  class ReadableWebToNodeStream protected () extends Readable {
+  open class ReadableWebToNodeStream protected () extends Readable {
     /**
       *
       * @param stream Readable​Stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
       */
-    def this(stream: ReadableStream[js.Any]) = this()
+    def this(stream: ReadableStream[Any]) = this()
     
     /**
       * Implementation of readable._read(size).
@@ -32,17 +32,17 @@ object mod {
       */
     def close(): js.Promise[Unit] = js.native
     
-    /* private */ var pendingRead: js.Any = js.native
+    /* private */ var pendingRead: Any = js.native
     
     /**
       * Default web API stream reader
       * https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader
       */
-    /* private */ var reader: js.Any = js.native
+    /* private */ var reader: Any = js.native
     
     var released: Boolean = js.native
     
-    /* private */ var syncAndRelease: js.Any = js.native
+    /* private */ var syncAndRelease: Any = js.native
     
     /**
       * If there is no unresolved read call to Web-API Readable​Stream immediately returns;

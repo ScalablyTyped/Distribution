@@ -22,14 +22,14 @@ trait EmailMailboxChangeReader extends StObject {
     * Reads a collection of changes.
     * @return A batch of changes.
     */
-  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
 }
 object EmailMailboxChangeReader {
   
   inline def apply(
     acceptChanges: () => Unit,
     acceptChangesThrough: EmailMailboxChange => Unit,
-    readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+    readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]]
   ): EmailMailboxChangeReader = {
     val __obj = js.Dynamic.literal(acceptChanges = js.Any.fromFunction0(acceptChanges), acceptChangesThrough = js.Any.fromFunction1(acceptChangesThrough), readBatchAsync = js.Any.fromFunction0(readBatchAsync))
     __obj.asInstanceOf[EmailMailboxChangeReader]
@@ -41,6 +41,6 @@ object EmailMailboxChangeReader {
     
     inline def setAcceptChangesThrough(value: EmailMailboxChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
     
-    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
+    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

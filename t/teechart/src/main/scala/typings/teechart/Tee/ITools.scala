@@ -27,6 +27,6 @@ object ITools {
     
     inline def setItems(value: js.Array[ITool]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ITool*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ITool*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

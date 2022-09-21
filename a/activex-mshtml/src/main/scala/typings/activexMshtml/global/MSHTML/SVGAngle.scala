@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGAngle")
 @js.native
-/* private */ class SVGAngle ()
+/* private */ open class SVGAngle ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGAngle {
   

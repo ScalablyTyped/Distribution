@@ -54,7 +54,7 @@ object highlightMod {
   
   @JSImport("rbx/elements/other/highlight", "Highlight")
   @js.native
-  val Highlight: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Highlight: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait HighlightProps extends StObject {

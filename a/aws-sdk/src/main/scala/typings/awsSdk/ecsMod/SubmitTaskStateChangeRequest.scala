@@ -17,24 +17,29 @@ trait SubmitTaskStateChangeRequest extends StObject {
   var cluster: js.UndefOr[String] = js.undefined
   
   /**
-    * Any containers associated with the state change request.
+    * Any containers that's associated with the state change request.
     */
   var containers: js.UndefOr[ContainerStateChanges] = js.undefined
   
   /**
-    * The Unix timestamp for when the task execution stopped.
+    * The Unix timestamp for the time when the task execution stopped.
     */
-  var executionStoppedAt: js.UndefOr[Timestamp] = js.undefined
+  var executionStoppedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Unix timestamp for when the container image pull began.
+    * The details for the managed agent that's associated with the task.
     */
-  var pullStartedAt: js.UndefOr[Timestamp] = js.undefined
+  var managedAgents: js.UndefOr[ManagedAgentStateChanges] = js.undefined
   
   /**
-    * The Unix timestamp for when the container image pull completed.
+    * The Unix timestamp for the time when the container image pull started.
     */
-  var pullStoppedAt: js.UndefOr[Timestamp] = js.undefined
+  var pullStartedAt: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The Unix timestamp for the time when the container image pull completed.
+    */
+  var pullStoppedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The reason for the state change request.
@@ -64,7 +69,7 @@ object SubmitTaskStateChangeRequest {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: AttachmentStateChange*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: AttachmentStateChange*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
@@ -74,17 +79,23 @@ object SubmitTaskStateChangeRequest {
     
     inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    inline def setContainersVarargs(value: ContainerStateChange*): Self = StObject.set(x, "containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: ContainerStateChange*): Self = StObject.set(x, "containers", js.Array(value*))
     
-    inline def setExecutionStoppedAt(value: Timestamp): Self = StObject.set(x, "executionStoppedAt", value.asInstanceOf[js.Any])
+    inline def setExecutionStoppedAt(value: js.Date): Self = StObject.set(x, "executionStoppedAt", value.asInstanceOf[js.Any])
     
     inline def setExecutionStoppedAtUndefined: Self = StObject.set(x, "executionStoppedAt", js.undefined)
     
-    inline def setPullStartedAt(value: Timestamp): Self = StObject.set(x, "pullStartedAt", value.asInstanceOf[js.Any])
+    inline def setManagedAgents(value: ManagedAgentStateChanges): Self = StObject.set(x, "managedAgents", value.asInstanceOf[js.Any])
+    
+    inline def setManagedAgentsUndefined: Self = StObject.set(x, "managedAgents", js.undefined)
+    
+    inline def setManagedAgentsVarargs(value: ManagedAgentStateChange*): Self = StObject.set(x, "managedAgents", js.Array(value*))
+    
+    inline def setPullStartedAt(value: js.Date): Self = StObject.set(x, "pullStartedAt", value.asInstanceOf[js.Any])
     
     inline def setPullStartedAtUndefined: Self = StObject.set(x, "pullStartedAt", js.undefined)
     
-    inline def setPullStoppedAt(value: Timestamp): Self = StObject.set(x, "pullStoppedAt", value.asInstanceOf[js.Any])
+    inline def setPullStoppedAt(value: js.Date): Self = StObject.set(x, "pullStoppedAt", value.asInstanceOf[js.Any])
     
     inline def setPullStoppedAtUndefined: Self = StObject.set(x, "pullStoppedAt", js.undefined)
     

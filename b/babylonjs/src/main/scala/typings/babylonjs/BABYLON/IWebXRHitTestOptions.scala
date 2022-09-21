@@ -31,6 +31,11 @@ trait IWebXRHitTestOptions
   var offsetRay: js.UndefOr[Vector3] = js.undefined
   
   /**
+    * Override the default transient hit test profile (generic-touchscreen).
+    */
+  var transientHitTestProfile: js.UndefOr[String] = js.undefined
+  
+  /**
     * Offset ray for the transient hit test
     */
   var transientOffsetRay: js.UndefOr[Vector3] = js.undefined
@@ -61,11 +66,15 @@ object IWebXRHitTestOptions {
     
     inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    inline def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value*))
     
     inline def setOffsetRay(value: Vector3): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
     
     inline def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
+    
+    inline def setTransientHitTestProfile(value: String): Self = StObject.set(x, "transientHitTestProfile", value.asInstanceOf[js.Any])
+    
+    inline def setTransientHitTestProfileUndefined: Self = StObject.set(x, "transientHitTestProfile", js.undefined)
     
     inline def setTransientOffsetRay(value: Vector3): Self = StObject.set(x, "transientOffsetRay", value.asInstanceOf[js.Any])
     

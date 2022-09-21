@@ -53,7 +53,7 @@ object gapi {
           
           inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
           
-          inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+          inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
           
           inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
           
@@ -111,7 +111,7 @@ object gapi {
           
           inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
           
-          inline def setFiltersVarargs(value: ApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+          inline def setFiltersVarargs(value: ApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value*))
           
           inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
           
@@ -177,13 +177,13 @@ object gapi {
           
           inline def setDimensionFilterGroupsUndefined: Self = StObject.set(x, "dimensionFilterGroups", js.undefined)
           
-          inline def setDimensionFilterGroupsVarargs(value: ApiDimensionFilterGroup*): Self = StObject.set(x, "dimensionFilterGroups", js.Array(value :_*))
+          inline def setDimensionFilterGroupsVarargs(value: ApiDimensionFilterGroup*): Self = StObject.set(x, "dimensionFilterGroups", js.Array(value*))
           
           inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
           
           inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
           
-          inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+          inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value*))
           
           inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
           
@@ -232,7 +232,7 @@ object gapi {
           
           inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
           
-          inline def setRowsVarargs(value: ApiDataRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+          inline def setRowsVarargs(value: ApiDataRow*): Self = StObject.set(x, "rows", js.Array(value*))
         }
       }
       
@@ -267,7 +267,7 @@ object gapi {
           
           inline def setSitemapUndefined: Self = StObject.set(x, "sitemap", js.undefined)
           
-          inline def setSitemapVarargs(value: WmxSitemap*): Self = StObject.set(x, "sitemap", js.Array(value :_*))
+          inline def setSitemapVarargs(value: WmxSitemap*): Self = StObject.set(x, "sitemap", js.Array(value*))
         }
       }
       
@@ -309,7 +309,7 @@ object gapi {
           
           inline def setSiteEntryUndefined: Self = StObject.set(x, "siteEntry", js.undefined)
           
-          inline def setSiteEntryVarargs(value: WmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value :_*))
+          inline def setSiteEntryVarargs(value: WmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value*))
         }
       }
       
@@ -402,7 +402,7 @@ object gapi {
           
           inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
           
-          inline def setContentsVarargs(value: WmxSitemapContent*): Self = StObject.set(x, "contents", js.Array(value :_*))
+          inline def setContentsVarargs(value: WmxSitemapContent*): Self = StObject.set(x, "contents", js.Array(value*))
           
           inline def setErrors(value: String): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
           

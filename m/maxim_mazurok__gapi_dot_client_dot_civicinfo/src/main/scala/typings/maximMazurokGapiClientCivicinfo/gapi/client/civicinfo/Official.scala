@@ -15,6 +15,9 @@ trait Official extends StObject {
   /** The direct email addresses for the official. */
   var emails: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** Detailed summary about the official's address's geocoding */
+  var geocodingSummaries: js.UndefOr[js.Array[GeocodingSummary]] = js.undefined
+  
   /** The official's name. */
   var name: js.UndefOr[String] = js.undefined
   
@@ -43,19 +46,25 @@ object Official {
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    inline def setAddressVarargs(value: SimpleAddressType*): Self = StObject.set(x, "address", js.Array(value :_*))
+    inline def setAddressVarargs(value: SimpleAddressType*): Self = StObject.set(x, "address", js.Array(value*))
     
     inline def setChannels(value: js.Array[Channel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value*))
+    
+    inline def setGeocodingSummaries(value: js.Array[GeocodingSummary]): Self = StObject.set(x, "geocodingSummaries", value.asInstanceOf[js.Any])
+    
+    inline def setGeocodingSummariesUndefined: Self = StObject.set(x, "geocodingSummaries", js.undefined)
+    
+    inline def setGeocodingSummariesVarargs(value: GeocodingSummary*): Self = StObject.set(x, "geocodingSummaries", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -69,7 +78,7 @@ object Official {
     
     inline def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
     
-    inline def setPhonesVarargs(value: String*): Self = StObject.set(x, "phones", js.Array(value :_*))
+    inline def setPhonesVarargs(value: String*): Self = StObject.set(x, "phones", js.Array(value*))
     
     inline def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
@@ -79,6 +88,6 @@ object Official {
     
     inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
   }
 }

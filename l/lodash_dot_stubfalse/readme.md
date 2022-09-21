@@ -10,10 +10,10 @@ The lodash method `_.stubFalse` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.stubfalse |
 | Keywords           | lodash-modularized, stubfalse |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 428 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42.333333333333336 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

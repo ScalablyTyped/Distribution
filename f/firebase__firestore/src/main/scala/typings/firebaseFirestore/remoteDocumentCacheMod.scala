@@ -2,72 +2,82 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.anon.TrackRemovals
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
-import typings.firebaseFirestore.collectionsMod.DocumentMap_
-import typings.firebaseFirestore.collectionsMod.NullableMaybeDocumentMap_
+import typings.firebaseFirestore.collectionsMod.MutableDocumentMap_
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
-import typings.firebaseFirestore.documentMod.MaybeDocument
-import typings.firebaseFirestore.persistenceMod.PersistenceTransaction
+import typings.firebaseFirestore.documentMod.MutableDocument
+import typings.firebaseFirestore.fieldIndexMod.IndexOffset
+import typings.firebaseFirestore.indexManagerMod.IndexManager
+import typings.firebaseFirestore.pathMod.ResourcePath
 import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
-import typings.firebaseFirestore.queryMod.Query
+import typings.firebaseFirestore.persistenceTransactionMod.PersistenceTransaction
 import typings.firebaseFirestore.remoteDocumentChangeBufferMod.RemoteDocumentChangeBuffer
-import typings.firebaseFirestore.snapshotVersionMod.SnapshotVersion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/remote_document_cache", JSImport.Namespace)
-@js.native
-object remoteDocumentCacheMod extends js.Object {
+object remoteDocumentCacheMod {
+  
   @js.native
-  trait RemoteDocumentCache extends js.Object {
+  trait RemoteDocumentCache extends StObject {
+    
     /**
-      * Executes a query against the cached Document entries.
+      * Returns the documents from the provided collection.
       *
-      * Implementations may return extra documents if convenient. The results
-      * should be re-filtered by the consumer before presenting them to the user.
-      *
-      * Cached NoDocument entries have no bearing on query results.
-      *
-      * @param query The query to match documents against.
-      * @param sinceReadTime If not set to SnapshotVersion.min(), return only
-      *     documents that have been read since this snapshot version (exclusive).
-      * @return The set of matching documents.
+      * @param collection - The collection to read.
+      * @param offset - The offset to start the scan at (exclusive).
+      * @returns The set of matching documents.
       */
-    def getDocumentsMatchingQuery(transaction: PersistenceTransaction, query: Query, sinceReadTime: SnapshotVersion): PersistencePromise[DocumentMap_] = js.native
+    def getAllFromCollection(transaction: PersistenceTransaction, collection: ResourcePath, offset: IndexOffset): PersistencePromise[MutableDocumentMap_] = js.native
+    
+    /**
+      * Looks up the next `limit` documents for a collection group based on the
+      * provided offset. The ordering is based on the document's read time and key.
+      *
+      * @param collectionGroup - The collection group to scan.
+      * @param offset - The offset to start the scan at (exclusive).
+      * @param limit - The maximum number of results to return.
+      * @returns The set of matching documents.
+      */
+    def getAllFromCollectionGroup(transaction: PersistenceTransaction, collectionGroup: String, offset: IndexOffset, limit: Double): PersistencePromise[MutableDocumentMap_] = js.native
+    
     /**
       * Looks up a set of entries in the cache.
       *
-      * @param documentKeys The keys of the entries to look up.
-      * @return The cached Document or NoDocument entries indexed by key. If an entry is not cached,
-      *     the corresponding key will be mapped to a null value.
+      * @param documentKeys - The keys of the entries to look up.
+      * @returns The cached document entries indexed by key. If an entry is not
+      * cached, the corresponding key will be mapped to an invalid document.
       */
-    def getEntries(transaction: PersistenceTransaction, documentKeys: DocumentKeySet_): PersistencePromise[NullableMaybeDocumentMap_] = js.native
+    def getEntries(transaction: PersistenceTransaction, documentKeys: DocumentKeySet_): PersistencePromise[MutableDocumentMap_] = js.native
+    
     /**
       * Looks up an entry in the cache.
       *
-      * @param documentKey The key of the entry to look up.
-      * @return The cached Document or NoDocument entry, or null if we have nothing
-      * cached.
+      * @param documentKey - The key of the entry to look up.*
+      * @returns The cached document entry. Returns an invalid document if the
+      * document is not cached.
       */
-    def getEntry(transaction: PersistenceTransaction, documentKey: DocumentKey): PersistencePromise[MaybeDocument | Null] = js.native
+    def getEntry(transaction: PersistenceTransaction, documentKey: DocumentKey): PersistencePromise[MutableDocument] = js.native
+    
     /**
       * Get an estimate of the size of the document cache. Note that for eager
       * garbage collection, we don't track sizes so this will return 0.
       */
     def getSize(transaction: PersistenceTransaction): PersistencePromise[Double] = js.native
+    
     /**
       * Provides access to add or update the contents of the cache. The buffer
       * handles proper size accounting for the change.
       *
       * Multi-Tab Note: This should only be called by the primary client.
       *
-      * @param options.trackRemovals Whether to create sentinel entries for
+      * @param options - Specify `trackRemovals` to create sentinel entries for
       * removed documents, which allows removals to be tracked by
       * `getNewDocumentChanges()`.
       */
     def newChangeBuffer(): RemoteDocumentChangeBuffer = js.native
     def newChangeBuffer(options: TrackRemovals): RemoteDocumentChangeBuffer = js.native
+    
+    /** Sets the index manager to use for managing the collectionGroup index. */
+    def setIndexManager(indexManager: IndexManager): Unit = js.native
   }
-  
 }
-

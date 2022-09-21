@@ -19,10 +19,10 @@ trait RegionalBucket extends StObject {
   /**
     * The creation date of the regional bucket
     */
-  var CreationDate: typings.awsSdk.s3controlMod.CreationDate
+  var CreationDate: js.Date
   
   /**
-    * The AWS Outposts ID of the regional bucket.
+    * The Outposts ID of the regional bucket.
     */
   var OutpostId: js.UndefOr[NonEmptyMaxLength64String] = js.undefined
   
@@ -33,7 +33,7 @@ trait RegionalBucket extends StObject {
 }
 object RegionalBucket {
   
-  inline def apply(Bucket: BucketName, CreationDate: CreationDate, PublicAccessBlockEnabled: PublicAccessBlockEnabled): RegionalBucket = {
+  inline def apply(Bucket: BucketName, CreationDate: js.Date, PublicAccessBlockEnabled: PublicAccessBlockEnabled): RegionalBucket = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], PublicAccessBlockEnabled = PublicAccessBlockEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionalBucket]
   }
@@ -46,7 +46,7 @@ object RegionalBucket {
     
     inline def setBucketArnUndefined: Self = StObject.set(x, "BucketArn", js.undefined)
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setOutpostId(value: NonEmptyMaxLength64String): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GEEventEmitter")
 @js.native
-class GEEventEmitter ()
+open class GEEventEmitter ()
   extends StObject
      with typings.googleEarth.google.earth.GEEventEmitter {
   

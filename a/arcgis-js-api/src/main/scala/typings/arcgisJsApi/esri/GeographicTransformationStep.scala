@@ -16,6 +16,8 @@ trait GeographicTransformationStep extends StObject {
   /**
     * Indicates with the geographic transformation is inverted.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html#isInverse)
     */
   var isInverse: Boolean

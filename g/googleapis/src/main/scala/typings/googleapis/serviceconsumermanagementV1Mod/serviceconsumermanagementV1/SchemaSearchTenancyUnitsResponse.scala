@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for the search query.
-  */
 trait SchemaSearchTenancyUnitsResponse extends StObject {
   
   /**
     * Pagination token for large results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Tenancy Units matching the request.
@@ -30,12 +27,14 @@ object SchemaSearchTenancyUnitsResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setTenancyUnits(value: js.Array[SchemaTenancyUnit]): Self = StObject.set(x, "tenancyUnits", value.asInstanceOf[js.Any])
     
     inline def setTenancyUnitsUndefined: Self = StObject.set(x, "tenancyUnits", js.undefined)
     
-    inline def setTenancyUnitsVarargs(value: SchemaTenancyUnit*): Self = StObject.set(x, "tenancyUnits", js.Array(value :_*))
+    inline def setTenancyUnitsVarargs(value: SchemaTenancyUnit*): Self = StObject.set(x, "tenancyUnits", js.Array(value*))
   }
 }

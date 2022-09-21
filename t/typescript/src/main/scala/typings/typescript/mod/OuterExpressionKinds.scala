@@ -26,6 +26,12 @@ object OuterExpressionKinds extends StObject {
   /* 6 */ val Assertions: typings.typescript.mod.OuterExpressionKinds.Assertions & Double = js.native
   
   @js.native
+  sealed trait ExcludeJSDocTypeAssertion
+    extends StObject
+       with OuterExpressionKinds
+  /* 16 */ val ExcludeJSDocTypeAssertion: typings.typescript.mod.OuterExpressionKinds.ExcludeJSDocTypeAssertion & Double = js.native
+  
+  @js.native
   sealed trait NonNullAssertions
     extends StObject
        with OuterExpressionKinds

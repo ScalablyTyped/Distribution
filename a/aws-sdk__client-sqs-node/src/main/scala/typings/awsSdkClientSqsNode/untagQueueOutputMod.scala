@@ -8,5 +8,5 @@ object untagQueueOutputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/UntagQueueOutput", "UntagQueueOutput")
   @js.native
-  val UntagQueueOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UntagQueueOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -18,7 +18,7 @@ object clientPoolMod {
   
   @JSImport("scc-broker-client/client-pool", JSImport.Namespace)
   @js.native
-  class ^ () extends ClientPool {
+  open class ^ () extends ClientPool {
     def this(options: ClientPoolOptions) = this()
   }
   
@@ -53,7 +53,7 @@ object clientPoolMod {
   
   @js.native
   trait ClientPool
-    extends typings.asyncStreamEmitter.mod.^[js.Any] {
+    extends typings.asyncStreamEmitter.mod.^[Any] {
     
     var authKey: js.UndefOr[Secret] = js.native
     
@@ -80,7 +80,7 @@ object clientPoolMod {
     
     var hasher: typings.sccBrokerClient.hasherMod.^ = js.native
     
-    def invokePublish(channelName: String, data: js.Any): js.Promise[Unit] = js.native
+    def invokePublish(channelName: String, data: Any): js.Promise[Unit] = js.native
     
     def isSubscribed(channelName: String): Boolean = js.native
     def isSubscribed(channelName: String, includePending: Boolean): Boolean = js.native
@@ -98,8 +98,8 @@ object clientPoolMod {
     
     def selectClient(key: String): AGClientSocket = js.native
     
-    def subscribe(channelName: String): typings.agChannel.mod.^[js.Any] = js.native
-    def subscribe(channelName: String, options: SubscribeOptions): typings.agChannel.mod.^[js.Any] = js.native
+    def subscribe(channelName: String): typings.agChannel.mod.^[Any] = js.native
+    def subscribe(channelName: String, options: SubscribeOptions): typings.agChannel.mod.^[Any] = js.native
     
     def subscriptions(): js.Array[String] = js.native
     def subscriptions(includePending: Boolean): js.Array[String] = js.native
@@ -142,7 +142,7 @@ object clientPoolMod {
     
     var channel: String
     
-    var data: js.Any
+    var data: Any
     
     var poolIndex: Double
     
@@ -150,7 +150,7 @@ object clientPoolMod {
   }
   object PublishData {
     
-    inline def apply(channel: String, data: js.Any, poolIndex: Double, targetURI: String): PublishData = {
+    inline def apply(channel: String, data: Any, poolIndex: Double, targetURI: String): PublishData = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], poolIndex = poolIndex.asInstanceOf[js.Any], targetURI = targetURI.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishData]
     }
@@ -159,7 +159,7 @@ object clientPoolMod {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setPoolIndex(value: Double): Self = StObject.set(x, "poolIndex", value.asInstanceOf[js.Any])
       
@@ -171,7 +171,7 @@ object clientPoolMod {
     
     var channel: String
     
-    var error: typings.std.Error
+    var error: js.Error
     
     var poolIndex: Double
     
@@ -179,7 +179,7 @@ object clientPoolMod {
   }
   object PublishFailData {
     
-    inline def apply(channel: String, error: typings.std.Error, poolIndex: Double, targetURI: String): PublishFailData = {
+    inline def apply(channel: String, error: js.Error, poolIndex: Double, targetURI: String): PublishFailData = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], poolIndex = poolIndex.asInstanceOf[js.Any], targetURI = targetURI.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishFailData]
     }
@@ -188,7 +188,7 @@ object clientPoolMod {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setPoolIndex(value: Double): Self = StObject.set(x, "poolIndex", value.asInstanceOf[js.Any])
       
@@ -225,18 +225,18 @@ object clientPoolMod {
     extends StObject
        with SubscribeData {
     
-    var error: typings.std.Error
+    var error: js.Error
   }
   object SubscribeFailData {
     
-    inline def apply(channel: String, error: typings.std.Error, poolIndex: Double, targetURI: String): SubscribeFailData = {
+    inline def apply(channel: String, error: js.Error, poolIndex: Double, targetURI: String): SubscribeFailData = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], poolIndex = poolIndex.asInstanceOf[js.Any], targetURI = targetURI.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscribeFailData]
     }
     
     extension [Self <: SubscribeFailData](x: Self) {
       
-      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
 }

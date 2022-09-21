@@ -1,7 +1,7 @@
 
 # Scala.js typings for serve-static
 
-Typings are for version 1.13
+Typings are for version 1.15
 
 ## Library description:
 Serve static files
@@ -11,14 +11,11 @@ Serve static files
 | Full name          | serve-static |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 1967 |
-| # downloads        | 715770521 |
-| # stars            | 99 |
+| # dependents       | 0.0 |
+| # downloads        | 1.08511726E8 |
+| # stars            | 1294.0 |
 
 ## Links
-- [Homepage](https://github.com/expressjs/serve-static#readme)
-- [Bugs](https://github.com/expressjs/serve-static/issues)
-- [Repository](https://github.com/expressjs/serve-static)
 - [Npm](https://www.npmjs.com/package/serve-static)
     
 

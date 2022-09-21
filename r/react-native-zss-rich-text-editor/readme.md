@@ -11,9 +11,9 @@ React Native Wrapper for ZSSRichTextEditor
 | Full name          | react-native-zss-rich-text-editor |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6639 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 192.66666666666666 |
+| # stars            | 809.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/react-native-zss-rich-text-editor#readme)

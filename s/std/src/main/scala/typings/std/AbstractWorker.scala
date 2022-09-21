@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AbstractWorker extends StObject {
   
+  /* standard dom */
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   def addEventListener(
@@ -15,23 +16,26 @@ trait AbstractWorker extends StObject {
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, js.Any]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, js.Any]) | Null = js.native
+  /* standard dom */
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any]) | Null = js.native
   
+  /* standard dom */
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   def removeEventListener(
@@ -39,18 +43,19 @@ trait AbstractWorker extends StObject {
     listener: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
+  /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, js.Any]): Unit = js.native
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
 }

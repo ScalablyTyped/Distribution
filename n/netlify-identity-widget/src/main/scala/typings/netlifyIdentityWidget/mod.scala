@@ -10,7 +10,6 @@ import typings.netlifyIdentityWidget.netlifyIdentityWidgetStrings.login
 import typings.netlifyIdentityWidget.netlifyIdentityWidgetStrings.logout
 import typings.netlifyIdentityWidget.netlifyIdentityWidgetStrings.open
 import typings.netlifyIdentityWidget.netlifyIdentityWidgetStrings.signup
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,11 +29,11 @@ object mod {
   
   inline def logout(): js.UndefOr[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[js.UndefOr[js.Promise[Unit]]]
   
-  inline def off_close(event: close): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def off_close(event: close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off(event: logout | open | close): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def off(event: logout | open | close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def off_error(event: error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def off_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off_error(event: error, cb: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def off_init(event: init): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def off_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -42,29 +41,16 @@ object mod {
   inline def off_login(event: login): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def off_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def off_logout(event: logout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def off_logout(event: logout, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(event: logout | open | close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def off_open(event: open): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def off_open(event: open, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def on_close(event: close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def on_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_error(event: error, cb: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def on_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def on_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def on_logout(event: logout, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def on_open(event: open, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
   inline def open(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Unit]
-  
-  inline def open_login(tabName: login): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(tabName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def open_signup(tabName: signup): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(tabName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def open(tabName: signup | login): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(tabName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def refresh(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[js.Promise[String]]
   inline def refresh(force: Boolean): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")(force.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
@@ -171,7 +157,7 @@ object mod {
     
     var aud: String
     
-    var audience: js.UndefOr[js.Any] = js.undefined
+    var audience: js.UndefOr[Any] = js.undefined
     
     var confirmed_at: String
     
@@ -193,7 +179,7 @@ object mod {
     
     var url: String
     
-    var user_metadata: Avatarurl
+    var user_metadata: Avatarurl | Null
   }
   object User {
     
@@ -209,10 +195,9 @@ object mod {
       recovery_sent_at: String,
       role: String,
       updated_at: String,
-      url: String,
-      user_metadata: Avatarurl
+      url: String
     ): User = {
-      val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], app_metadata = app_metadata.asInstanceOf[js.Any], aud = aud.asInstanceOf[js.Any], confirmed_at = confirmed_at.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invited_at = invited_at.asInstanceOf[js.Any], recovery_sent_at = recovery_sent_at.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user_metadata = user_metadata.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], app_metadata = app_metadata.asInstanceOf[js.Any], aud = aud.asInstanceOf[js.Any], confirmed_at = confirmed_at.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invited_at = invited_at.asInstanceOf[js.Any], recovery_sent_at = recovery_sent_at.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user_metadata = null)
       __obj.asInstanceOf[User]
     }
     
@@ -224,7 +209,7 @@ object mod {
       
       inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
       
-      inline def setAudience(value: js.Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
@@ -251,6 +236,8 @@ object mod {
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUser_metadata(value: Avatarurl): Self = StObject.set(x, "user_metadata", value.asInstanceOf[js.Any])
+      
+      inline def setUser_metadataNull: Self = StObject.set(x, "user_metadata", null)
     }
   }
 }

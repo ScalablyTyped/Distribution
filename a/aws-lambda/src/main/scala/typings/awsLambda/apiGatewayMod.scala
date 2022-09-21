@@ -1,6 +1,7 @@
 package typings.awsLambda
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsLambda.anon.NotAfter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,46 @@ object apiGatewayMod {
   
   type APIGatewayAuthorizerResultContext = StringDictionary[js.UndefOr[String | Double | Boolean | Null]]
   
-  type APIGatewayEventDefaultAuthorizerContext = js.UndefOr[Null | StringDictionary[js.Any]]
+  trait APIGatewayEventClientCertificate extends StObject {
+    
+    var clientCertPem: String
+    
+    var issuerDN: String
+    
+    var serialNumber: String
+    
+    var subjectDN: String
+    
+    var validity: NotAfter
+  }
+  object APIGatewayEventClientCertificate {
+    
+    inline def apply(
+      clientCertPem: String,
+      issuerDN: String,
+      serialNumber: String,
+      subjectDN: String,
+      validity: NotAfter
+    ): APIGatewayEventClientCertificate = {
+      val __obj = js.Dynamic.literal(clientCertPem = clientCertPem.asInstanceOf[js.Any], issuerDN = issuerDN.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any], subjectDN = subjectDN.asInstanceOf[js.Any], validity = validity.asInstanceOf[js.Any])
+      __obj.asInstanceOf[APIGatewayEventClientCertificate]
+    }
+    
+    extension [Self <: APIGatewayEventClientCertificate](x: Self) {
+      
+      inline def setClientCertPem(value: String): Self = StObject.set(x, "clientCertPem", value.asInstanceOf[js.Any])
+      
+      inline def setIssuerDN(value: String): Self = StObject.set(x, "issuerDN", value.asInstanceOf[js.Any])
+      
+      inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+      
+      inline def setSubjectDN(value: String): Self = StObject.set(x, "subjectDN", value.asInstanceOf[js.Any])
+      
+      inline def setValidity(value: NotAfter): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type APIGatewayEventDefaultAuthorizerContext = js.UndefOr[Null | StringDictionary[Any]]
   
   trait APIGatewayEventIdentity extends StObject {
     
@@ -22,6 +62,8 @@ object apiGatewayMod {
     var apiKeyId: String | Null
     
     var caller: String | Null
+    
+    var clientCert: APIGatewayEventClientCertificate | Null
     
     var cognitoAuthenticationProvider: String | Null
     
@@ -44,7 +86,7 @@ object apiGatewayMod {
   object APIGatewayEventIdentity {
     
     inline def apply(sourceIp: String): APIGatewayEventIdentity = {
-      val __obj = js.Dynamic.literal(sourceIp = sourceIp.asInstanceOf[js.Any], accessKey = null, accountId = null, apiKey = null, apiKeyId = null, caller = null, cognitoAuthenticationProvider = null, cognitoAuthenticationType = null, cognitoIdentityId = null, cognitoIdentityPoolId = null, principalOrgId = null, user = null, userAgent = null, userArn = null)
+      val __obj = js.Dynamic.literal(sourceIp = sourceIp.asInstanceOf[js.Any], accessKey = null, accountId = null, apiKey = null, apiKeyId = null, caller = null, clientCert = null, cognitoAuthenticationProvider = null, cognitoAuthenticationType = null, cognitoIdentityId = null, cognitoIdentityPoolId = null, principalOrgId = null, user = null, userAgent = null, userArn = null)
       __obj.asInstanceOf[APIGatewayEventIdentity]
     }
     
@@ -69,6 +111,10 @@ object apiGatewayMod {
       inline def setCaller(value: String): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
       
       inline def setCallerNull: Self = StObject.set(x, "caller", null)
+      
+      inline def setClientCert(value: APIGatewayEventClientCertificate): Self = StObject.set(x, "clientCert", value.asInstanceOf[js.Any])
+      
+      inline def setClientCertNull: Self = StObject.set(x, "clientCert", null)
       
       inline def setCognitoAuthenticationProvider(value: String): Self = StObject.set(x, "cognitoAuthenticationProvider", value.asInstanceOf[js.Any])
       

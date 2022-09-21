@@ -8,7 +8,6 @@ import typings.chromeApps.chrome.bluetoothLowEnergy.IProperties
 import typings.chromeApps.chrome.bluetoothLowEnergy.IResponse
 import typings.chromeApps.chrome.bluetoothLowEnergy.Service
 import typings.chromeApps.chrome.integer
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -284,7 +283,7 @@ object bluetoothLowEnergy {
     * @param serviceId Unique ID of a created service.
     * @param callback Callback with the result of the register operation.
     */
-  inline def registerService(serviceId: String, callback: js.Function1[/* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerService(serviceId: String, callback: js.Function1[/* result */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Remove the specified service, unregistering it if it was registered.
@@ -370,7 +369,7 @@ object bluetoothLowEnergy {
     * @param serviceId Unique ID of a current registered service.
     * @param callback Callback with the result of the register operation.
     */
-  inline def unregisterService(serviceId: String, callback: js.Function1[/* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterService")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unregisterService(serviceId: String, callback: js.Function1[/* result */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterService")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Write the value of a specified characteristic from a remote peripheral.
@@ -378,7 +377,7 @@ object bluetoothLowEnergy {
     * @param value The value that should be sent to the remote characteristic as part of the write request.
     * @param callback Called when the write request has completed.
     */
-  inline def writeCharacteristicValue(characteristicId: String, value: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeCharacteristicValue")(characteristicId.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeCharacteristicValue(characteristicId: String, value: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeCharacteristicValue")(characteristicId.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Write the value of a specified characteristic descriptor from a remote peripheral.
@@ -386,5 +385,5 @@ object bluetoothLowEnergy {
     * @param value The value that should be sent to the remote descriptor as part of the write request.
     * @param callback Called when the write request has completed.
     */
-  inline def writeDescriptorValue(descriptorId: String, value: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeDescriptorValue")(descriptorId.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeDescriptorValue(descriptorId: String, value: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeDescriptorValue")(descriptorId.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

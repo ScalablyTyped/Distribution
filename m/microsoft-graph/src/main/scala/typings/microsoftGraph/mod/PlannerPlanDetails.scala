@@ -8,7 +8,7 @@ trait PlannerPlanDetails
   extends StObject
      with Entity {
   
-  // An object that specifies the descriptions of the six categories that can be associated with tasks in the plan
+  // An object that specifies the descriptions of the 25 categories that can be associated with tasks in the plan.
   var categoryDescriptions: js.UndefOr[NullableOption[PlannerCategoryDescriptions]] = js.undefined
   
   /**

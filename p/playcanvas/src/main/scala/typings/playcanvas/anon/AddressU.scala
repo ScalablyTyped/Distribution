@@ -30,6 +30,8 @@ trait AddressU extends StObject {
   
   var height: js.UndefOr[Double] = js.undefined
   
+  var levels: js.UndefOr[js.Array[js.typedarray.Uint8Array]] = js.undefined
+  
   var magFilter: js.UndefOr[Double] = js.undefined
   
   var minFilter: js.UndefOr[Double] = js.undefined
@@ -39,6 +41,8 @@ trait AddressU extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   var premultiplyAlpha: js.UndefOr[Boolean] = js.undefined
+  
+  var projection: js.UndefOr[String] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -103,6 +107,12 @@ object AddressU {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
+    inline def setLevels(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    
+    inline def setLevelsVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "levels", js.Array(value*))
+    
     inline def setMagFilter(value: Double): Self = StObject.set(x, "magFilter", value.asInstanceOf[js.Any])
     
     inline def setMagFilterUndefined: Self = StObject.set(x, "magFilter", js.undefined)
@@ -122,6 +132,10 @@ object AddressU {
     inline def setPremultiplyAlpha(value: Boolean): Self = StObject.set(x, "premultiplyAlpha", value.asInstanceOf[js.Any])
     
     inline def setPremultiplyAlphaUndefined: Self = StObject.set(x, "premultiplyAlpha", js.undefined)
+    
+    inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ trait PassCubePostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _face: js.Any = js.native
+  /* private */ var _face: Any = js.native
   
   /**
     * Gets or sets the cube face to display.

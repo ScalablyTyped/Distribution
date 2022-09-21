@@ -13,7 +13,7 @@ object parallel {
   
   @JSImport("samchon-framework", "templates.parallel.MediatorClient")
   @js.native
-  class MediatorClient protected ()
+  open class MediatorClient protected ()
     extends typings.samchon.mod.templates.parallel.MediatorClient {
     /**
       * Initializer Constructor.
@@ -39,7 +39,7 @@ object parallel {
   
   @JSImport("samchon-framework", "templates.parallel.MediatorDedicatedWorkerServer")
   @js.native
-  class MediatorDedicatedWorkerServer protected ()
+  open class MediatorDedicatedWorkerServer protected ()
     extends typings.samchon.mod.templates.parallel.MediatorDedicatedWorkerServer {
     /**
       * Initializer Constructor.
@@ -62,7 +62,7 @@ object parallel {
   
   @JSImport("samchon-framework", "templates.parallel.MediatorServer")
   @js.native
-  class MediatorServer protected ()
+  open class MediatorServer protected ()
     extends typings.samchon.mod.templates.parallel.MediatorServer {
     /**
       * Initializer Constructor.
@@ -85,7 +85,7 @@ object parallel {
   
   @JSImport("samchon-framework", "templates.parallel.MediatorSharedWorkerClient")
   @js.native
-  class MediatorSharedWorkerClient protected ()
+  open class MediatorSharedWorkerClient protected ()
     extends typings.samchon.mod.templates.parallel.MediatorSharedWorkerClient {
     /**
       * Initializer Constructor.
@@ -111,7 +111,7 @@ object parallel {
   
   @JSImport("samchon-framework", "templates.parallel.MediatorSharedWorkerServer")
   @js.native
-  class MediatorSharedWorkerServer protected ()
+  open class MediatorSharedWorkerServer protected ()
     extends typings.samchon.mod.templates.parallel.MediatorSharedWorkerServer {
     /**
       * Initializer Constructor.
@@ -152,7 +152,7 @@ object parallel {
   
   @JSImport("samchon-framework", "templates.parallel.MediatorWebClient")
   @js.native
-  class MediatorWebClient protected ()
+  open class MediatorWebClient protected ()
     extends typings.samchon.mod.templates.parallel.MediatorWebClient {
     /**
       * Initializer Constructor.
@@ -178,7 +178,7 @@ object parallel {
   
   @JSImport("samchon-framework", "templates.parallel.MediatorWebServer")
   @js.native
-  class MediatorWebServer protected ()
+  open class MediatorWebServer protected ()
     extends typings.samchon.mod.templates.parallel.MediatorWebServer {
     /**
       * Initializer Constructor.
@@ -204,7 +204,7 @@ object parallel {
   /**
     * Default Constructor.
     */
-  class PRInvokeHistory ()
+  open class PRInvokeHistory ()
     extends typings.samchon.mod.templates.parallel.PRInvokeHistory {
     /**
       * Construct from an {@link Invoke} message.

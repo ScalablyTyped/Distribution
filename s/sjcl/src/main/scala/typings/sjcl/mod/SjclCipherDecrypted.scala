@@ -21,6 +21,6 @@ object SjclCipherDecrypted {
     
     inline def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
+    inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value*))
   }
 }

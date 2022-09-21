@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object constructorMod {
   
-  type IConstructor[T] = Instantiable1[/* args (repeated) */ js.Any, T]
+  type IConstructor[T] = Instantiable1[/* args (repeated) */ Any, T]
 }

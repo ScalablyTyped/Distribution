@@ -35,7 +35,7 @@ object chatmanagerMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pusher/chatkit-client/chatmanager", "ChatManager")
   @js.native
-  class ChatManagerCls protected ()
+  open class ChatManagerCls protected ()
     extends StObject
        with typings.pusherChatkitClient.chatmanagerMod.ChatManager {
     def this(args: ChatManagerConstructorArgs) = this()
@@ -173,31 +173,31 @@ object chatmanagerMod {
   trait Logger extends StObject {
     
     def debug(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): Unit
     @JSName("debug")
     var debug_Original: LoggerFunction
     
     def error(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): Unit
     @JSName("error")
     var error_Original: LoggerFunction
     
     def info(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): Unit
     @JSName("info")
     var info_Original: LoggerFunction
     
     def verbose(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): Unit
     @JSName("verbose")
     var verbose_Original: LoggerFunction
     
     def warn(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): Unit
     @JSName("warn")
     var warn_Original: LoggerFunction
@@ -205,11 +205,11 @@ object chatmanagerMod {
   object Logger {
     
     inline def apply(
-      debug: /* args */ js.Any => Unit,
-      error: /* args */ js.Any => Unit,
-      info: /* args */ js.Any => Unit,
-      verbose: /* args */ js.Any => Unit,
-      warn: /* args */ js.Any => Unit
+      debug: /* args */ Any => Unit,
+      error: /* args */ Any => Unit,
+      info: /* args */ Any => Unit,
+      verbose: /* args */ Any => Unit,
+      warn: /* args */ Any => Unit
     ): Logger = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), verbose = js.Any.fromFunction1(verbose), warn = js.Any.fromFunction1(warn))
       __obj.asInstanceOf[Logger]
@@ -217,19 +217,19 @@ object chatmanagerMod {
     
     extension [Self <: Logger](x: Self) {
       
-      inline def setDebug(value: /* args */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* args */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      inline def setError(value: /* args */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* args */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      inline def setInfo(value: /* args */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* args */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      inline def setVerbose(value: /* args */ js.Any => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction1(value))
+      inline def setVerbose(value: /* args */ Any => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction1(value))
       
-      inline def setWarn(value: /* args */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* args */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
-  type LoggerFunction = js.Function1[/* args */ js.Any, Unit]
+  type LoggerFunction = js.Function1[/* args */ Any, Unit]
   
   @js.native
   trait TokenProviderConstructor
@@ -238,9 +238,9 @@ object chatmanagerMod {
   
   trait TokenProviderConstructorArgs extends StObject {
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
-    var queryParams: js.UndefOr[js.Any] = js.undefined
+    var queryParams: js.UndefOr[Any] = js.undefined
     
     var url: String
     
@@ -255,11 +255,11 @@ object chatmanagerMod {
     
     extension [Self <: TokenProviderConstructorArgs](x: Self) {
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setQueryParams(value: js.Any): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: Any): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
       inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       

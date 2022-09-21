@@ -8,11 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("asana", "resources.Resource")
 @js.native
-class ResourceCls protected ()
+open class ResourceCls protected ()
   extends StObject
      with Resource {
   /**
     * @param dispatcher
     */
   def this(dispatcher: Dispatcher) = this()
+  
+  /* CompleteClass */
+  var gid: String = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /* CompleteClass */
+  var resource_type: String = js.native
 }

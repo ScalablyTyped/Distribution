@@ -75,13 +75,13 @@ object AssetAttributes {
     
     inline def setIpv4AddressesUndefined: Self = StObject.set(x, "ipv4Addresses", js.undefined)
     
-    inline def setIpv4AddressesVarargs(value: Ipv4Address*): Self = StObject.set(x, "ipv4Addresses", js.Array(value :_*))
+    inline def setIpv4AddressesVarargs(value: Ipv4Address*): Self = StObject.set(x, "ipv4Addresses", js.Array(value*))
     
     inline def setNetworkInterfaces(value: NetworkInterfaces): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value*))
     
     inline def setSchemaVersion(value: NumericVersion): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
     
@@ -89,6 +89,6 @@ object AssetAttributes {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

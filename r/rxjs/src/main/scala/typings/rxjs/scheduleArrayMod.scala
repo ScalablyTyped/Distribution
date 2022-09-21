@@ -1,7 +1,7 @@
 package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
-import typings.rxjs.typesMod.SchedulerLike
+import typings.rxjs.internalTypesMod.SchedulerLike
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object scheduleArrayMod {
   
-  @JSImport("rxjs/internal/scheduled/scheduleArray", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/scheduled/scheduleArray", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

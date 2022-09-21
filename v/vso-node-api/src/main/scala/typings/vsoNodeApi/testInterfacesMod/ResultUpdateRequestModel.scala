@@ -33,19 +33,19 @@ object ResultUpdateRequestModel {
     
     inline def setActionResultDeletes(value: js.Array[TestActionResultModel]): Self = StObject.set(x, "actionResultDeletes", value.asInstanceOf[js.Any])
     
-    inline def setActionResultDeletesVarargs(value: TestActionResultModel*): Self = StObject.set(x, "actionResultDeletes", js.Array(value :_*))
+    inline def setActionResultDeletesVarargs(value: TestActionResultModel*): Self = StObject.set(x, "actionResultDeletes", js.Array(value*))
     
     inline def setActionResults(value: js.Array[TestActionResultModel]): Self = StObject.set(x, "actionResults", value.asInstanceOf[js.Any])
     
-    inline def setActionResultsVarargs(value: TestActionResultModel*): Self = StObject.set(x, "actionResults", js.Array(value :_*))
+    inline def setActionResultsVarargs(value: TestActionResultModel*): Self = StObject.set(x, "actionResults", js.Array(value*))
     
     inline def setParameterDeletes(value: js.Array[TestResultParameterModel]): Self = StObject.set(x, "parameterDeletes", value.asInstanceOf[js.Any])
     
-    inline def setParameterDeletesVarargs(value: TestResultParameterModel*): Self = StObject.set(x, "parameterDeletes", js.Array(value :_*))
+    inline def setParameterDeletesVarargs(value: TestResultParameterModel*): Self = StObject.set(x, "parameterDeletes", js.Array(value*))
     
     inline def setParameters(value: js.Array[TestResultParameterModel]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: TestResultParameterModel*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: TestResultParameterModel*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setTestCaseResult(value: TestCaseResultUpdateModel): Self = StObject.set(x, "testCaseResult", value.asInstanceOf[js.Any])
   }

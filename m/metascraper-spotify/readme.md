@@ -10,13 +10,13 @@ Metascraper integration with Spotify
 | ------------------ | :-------------: |
 | Full name          | metascraper-spotify |
 | Keywords           | audio, metascraper, spotify |
-| # releases         | 94 |
-| # dependents       | 2 |
-| # downloads        | 21224 |
-| # stars            | 0 |
+| # releases         | 102 |
+| # dependents       | 0.0 |
+| # downloads        | 1802.3333333333333 |
+| # stars            | 1802.0 |
 
 ## Links
-- [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-spotify)
+- [Homepage](https://github.com/microlinkhq/metascraper#readme)
 - [Bugs](https://github.com/microlinkhq/metascraper/issues)
 - [Repository](https://github.com/microlinkhq/metascraper)
 - [Npm](https://www.npmjs.com/package/metascraper-spotify)

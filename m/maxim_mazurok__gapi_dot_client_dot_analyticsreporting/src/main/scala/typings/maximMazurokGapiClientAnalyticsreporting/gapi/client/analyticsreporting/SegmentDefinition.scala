@@ -22,6 +22,6 @@ object SegmentDefinition {
     
     inline def setSegmentFiltersUndefined: Self = StObject.set(x, "segmentFilters", js.undefined)
     
-    inline def setSegmentFiltersVarargs(value: SegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value :_*))
+    inline def setSegmentFiltersVarargs(value: SegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value*))
   }
 }

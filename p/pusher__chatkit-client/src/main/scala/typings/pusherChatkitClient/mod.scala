@@ -16,7 +16,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pusher/chatkit-client", "ChatManager")
   @js.native
-  class ChatManagerCls protected ()
+  open class ChatManagerCls protected ()
     extends StObject
        with typings.pusherChatkitClient.chatmanagerMod.ChatManager {
     def this(args: ChatManagerConstructorArgs) = this()

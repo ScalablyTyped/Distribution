@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "InvoicePaymentRequest")
 @js.native
-class InvoicePaymentRequest () extends StObject {
+open class InvoicePaymentRequest () extends StObject {
   
   /**
     * If the request method is `CHARGE_CARD_ON_FILE`, this field provides the card to charge.

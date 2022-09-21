@@ -39,13 +39,13 @@ object SubResourceSummary {
     
     inline def setAttackVectorsUndefined: Self = StObject.set(x, "AttackVectors", js.undefined)
     
-    inline def setAttackVectorsVarargs(value: SummarizedAttackVector*): Self = StObject.set(x, "AttackVectors", js.Array(value :_*))
+    inline def setAttackVectorsVarargs(value: SummarizedAttackVector*): Self = StObject.set(x, "AttackVectors", js.Array(value*))
     
     inline def setCounters(value: SummarizedCounterList): Self = StObject.set(x, "Counters", value.asInstanceOf[js.Any])
     
     inline def setCountersUndefined: Self = StObject.set(x, "Counters", js.undefined)
     
-    inline def setCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "Counters", js.Array(value :_*))
+    inline def setCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "Counters", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

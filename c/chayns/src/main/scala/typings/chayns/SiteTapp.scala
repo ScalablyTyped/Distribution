@@ -66,6 +66,6 @@ object SiteTapp {
     
     inline def setUserGroupIds(value: js.Array[Double]): Self = StObject.set(x, "userGroupIds", value.asInstanceOf[js.Any])
     
-    inline def setUserGroupIdsVarargs(value: Double*): Self = StObject.set(x, "userGroupIds", js.Array(value :_*))
+    inline def setUserGroupIdsVarargs(value: Double*): Self = StObject.set(x, "userGroupIds", js.Array(value*))
   }
 }

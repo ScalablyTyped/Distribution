@@ -69,7 +69,7 @@ object RawSignatureAsync {
     inline def setSignHashFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "SignHash", js.Any.fromFunction1(value))
     
     inline def setSignHashFunction2(value: (/* hash */ CPHashedData, /* certificate */ js.UndefOr[String]) => String): Self = StObject.set(x, "SignHash", js.Any.fromFunction2(value))
@@ -88,7 +88,7 @@ object RawSignatureAsync {
     inline def setVerifyHashFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "VerifyHash", js.Any.fromFunction1(value))
     
     inline def setVerifyHashFunction3(value: (/* hash */ CPHashedData, /* certificate */ Certificate, /* signature */ String) => Unit): Self = StObject.set(x, "VerifyHash", js.Any.fromFunction3(value))

@@ -22,7 +22,7 @@ trait TextDocumentSyncOptions extends StObject {
     * If present save notifications are sent to the server. If omitted the notification should not be
     * sent.
     */
-  var save: js.UndefOr[SaveOptions] = js.undefined
+  var save: js.UndefOr[Boolean | SaveOptions] = js.undefined
   
   /**
     * If present will save notifications are sent to the server. If omitted the notification should not be
@@ -53,7 +53,7 @@ object TextDocumentSyncOptions {
     
     inline def setOpenCloseUndefined: Self = StObject.set(x, "openClose", js.undefined)
     
-    inline def setSave(value: SaveOptions): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: Boolean | SaveOptions): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     

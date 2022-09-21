@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object flattenMod {
   
-  @JSImport("@antv/util/lib/flatten", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/flatten", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

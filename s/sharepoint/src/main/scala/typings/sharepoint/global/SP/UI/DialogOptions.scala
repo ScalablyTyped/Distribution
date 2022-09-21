@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.UI.DialogOptions")
 @js.native
-class DialogOptions ()
+open class DialogOptions ()
   extends StObject
      with typings.sharepoint.SP.UI.DialogOptions {
   
@@ -30,7 +30,7 @@ class DialogOptions ()
   /** callback that is called after dialog is closed */
   /* CompleteClass */
   @JSName("dialogReturnValueCallback")
-  override def dialogReturnValueCallback_MDialogOptions(dialogResult: typings.sharepoint.SP.UI.DialogResult, returnValue: js.Any): Unit = js.native
+  override def dialogReturnValueCallback_MDialogOptions(dialogResult: typings.sharepoint.SP.UI.DialogResult, returnValue: Any): Unit = js.native
   /** callback that is called after dialog is closed */
   /* CompleteClass */
   @JSName("dialogReturnValueCallback")

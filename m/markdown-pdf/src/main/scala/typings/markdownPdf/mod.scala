@@ -16,16 +16,16 @@ object mod {
   trait ConcatFromOptionsBuilder extends StObject {
     
     /** Create and concatenate readable streams from paths and pipe to markdown-pdf. */
-    def paths(paths: js.Array[String], opts: js.Any): ToOptionsBuilder
+    def paths(paths: js.Array[String], opts: Any): ToOptionsBuilder
     
     /** Create and concatenate readable streams from strings and pipe to markdown-pdf. */
-    def strings(markdownTexts: js.Array[String], opts: js.Any): ToOptionsBuilder
+    def strings(markdownTexts: js.Array[String], opts: Any): ToOptionsBuilder
   }
   object ConcatFromOptionsBuilder {
     
     inline def apply(
-      paths: (js.Array[String], js.Any) => ToOptionsBuilder,
-      strings: (js.Array[String], js.Any) => ToOptionsBuilder
+      paths: (js.Array[String], Any) => ToOptionsBuilder,
+      strings: (js.Array[String], Any) => ToOptionsBuilder
     ): ConcatFromOptionsBuilder = {
       val __obj = js.Dynamic.literal(paths = js.Any.fromFunction2(paths), strings = js.Any.fromFunction2(strings))
       __obj.asInstanceOf[ConcatFromOptionsBuilder]
@@ -33,9 +33,9 @@ object mod {
     
     extension [Self <: ConcatFromOptionsBuilder](x: Self) {
       
-      inline def setPaths(value: (js.Array[String], js.Any) => ToOptionsBuilder): Self = StObject.set(x, "paths", js.Any.fromFunction2(value))
+      inline def setPaths(value: (js.Array[String], Any) => ToOptionsBuilder): Self = StObject.set(x, "paths", js.Any.fromFunction2(value))
       
-      inline def setStrings(value: (js.Array[String], js.Any) => ToOptionsBuilder): Self = StObject.set(x, "strings", js.Any.fromFunction2(value))
+      inline def setStrings(value: (js.Array[String], Any) => ToOptionsBuilder): Self = StObject.set(x, "strings", js.Any.fromFunction2(value))
     }
   }
   
@@ -63,8 +63,8 @@ object mod {
   trait FromOptionsBuilder extends StObject {
     
     /** Create a readable stream from path and pipe to markdown-pdf. path can be a single path or array of paths. */
-    def path(path: String, opts: js.Any): ToOptionsBuilder = js.native
-    def path(path: js.Array[String], opts: js.Any): ToOptionsBuilder = js.native
+    def path(path: String, opts: Any): ToOptionsBuilder = js.native
+    def path(path: js.Array[String], opts: Any): ToOptionsBuilder = js.native
     
     /** Create a readable stream from string and pipe to markdown-pdf. string can be a single string or array of strings. */
     def string(markdown: String): ToOptionsBuilder = js.native
@@ -97,13 +97,13 @@ object mod {
     var phantomPath: js.UndefOr[String] = js.undefined
     
     /** A function that returns a through2 stream that transforms the HTML before it is converted to PDF. */
-    var preProcessHtml: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var preProcessHtml: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** A function that returns a through2 stream that transforms the markdown before it is converted to HTML. */
-    var preProcessMd: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var preProcessMd: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** A config object that is passed to remarkable, the underlying markdown parser */
-    var remarkable: js.UndefOr[js.Any] = js.undefined
+    var remarkable: js.UndefOr[Any] = js.undefined
     
     /** Delay (in ms) before the PDF is rendered. */
     var renderDelay: js.UndefOr[Double] = js.undefined
@@ -152,15 +152,15 @@ object mod {
       
       inline def setPhantomPathUndefined: Self = StObject.set(x, "phantomPath", js.undefined)
       
-      inline def setPreProcessHtml(value: () => js.Any): Self = StObject.set(x, "preProcessHtml", js.Any.fromFunction0(value))
+      inline def setPreProcessHtml(value: () => Any): Self = StObject.set(x, "preProcessHtml", js.Any.fromFunction0(value))
       
       inline def setPreProcessHtmlUndefined: Self = StObject.set(x, "preProcessHtml", js.undefined)
       
-      inline def setPreProcessMd(value: () => js.Any): Self = StObject.set(x, "preProcessMd", js.Any.fromFunction0(value))
+      inline def setPreProcessMd(value: () => Any): Self = StObject.set(x, "preProcessMd", js.Any.fromFunction0(value))
       
       inline def setPreProcessMdUndefined: Self = StObject.set(x, "preProcessMd", js.undefined)
       
-      inline def setRemarkable(value: js.Any): Self = StObject.set(x, "remarkable", value.asInstanceOf[js.Any])
+      inline def setRemarkable(value: Any): Self = StObject.set(x, "remarkable", value.asInstanceOf[js.Any])
       
       inline def setRemarkableUndefined: Self = StObject.set(x, "remarkable", js.undefined)
       
@@ -243,8 +243,8 @@ object mod {
   trait ToBuilder extends StObject {
     
     /** Create a concat-stream and pipe output from markdown-pdf to it. The callback function cb will be invoked when the buffer has been created. */
-    def buffer(opts: js.Any): Unit = js.native
-    def buffer(opts: js.Any, callback: js.Function0[Unit]): Unit = js.native
+    def buffer(opts: Any): Unit = js.native
+    def buffer(opts: Any, callback: js.Function0[Unit]): Unit = js.native
     
     /**
       * Create a writeable stream to path and pipe output from markdown-pdf to it.
@@ -255,8 +255,8 @@ object mod {
     def path(path: String, callback: js.Function0[Unit]): Unit = js.native
     
     /** Create a concat-stream and pipe output from markdown-pdf to it. The callback function cb will be invoked when the string has been created. */
-    def string(opts: js.Any): Unit = js.native
-    def string(opts: js.Any, callback: js.Function0[Unit]): Unit = js.native
+    def string(opts: Any): Unit = js.native
+    def string(opts: Any, callback: js.Function0[Unit]): Unit = js.native
   }
   
   type ToFunction = /**

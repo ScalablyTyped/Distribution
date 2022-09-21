@@ -53,4 +53,9 @@ trait VectorSplitterBlock
     * Gets the z component (output)
     */
   def z: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the zw component (output)
+    */
+  def zw: NodeMaterialConnectionPoint = js.native
 }

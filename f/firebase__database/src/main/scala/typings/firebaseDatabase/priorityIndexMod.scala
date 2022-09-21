@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object priorityIndexMod {
   
-  @JSImport("@firebase/database/dist/src/core/snap/indexes/PriorityIndex", JSImport.Namespace)
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/indexes/PriorityIndex", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/database/dist/src/core/snap/indexes/PriorityIndex", "PRIORITY_INDEX")
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/indexes/PriorityIndex", "PRIORITY_INDEX")
   @js.native
   val PRIORITY_INDEX: PriorityIndex = js.native
   
-  @JSImport("@firebase/database/dist/src/core/snap/indexes/PriorityIndex", "PriorityIndex")
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/indexes/PriorityIndex", "PriorityIndex")
   @js.native
-  class PriorityIndex () extends Index
+  open class PriorityIndex () extends Index
   
   inline def setMaxNode(`val`: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxNode")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setNodeFromJSON(`val`: js.Function1[/* a */ js.Any, Node]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNodeFromJSON")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setNodeFromJSON(`val`: js.Function1[/* a */ Any, Node]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNodeFromJSON")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

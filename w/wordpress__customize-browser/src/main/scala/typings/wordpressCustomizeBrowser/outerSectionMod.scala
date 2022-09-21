@@ -9,7 +9,7 @@ object outerSectionMod {
   
   @JSImport("@wordpress/customize-browser/OuterSection", "OuterSection")
   @js.native
-  class OuterSection protected () extends Section {
+  open class OuterSection protected () extends Section {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
   }

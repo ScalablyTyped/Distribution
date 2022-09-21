@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ReflectionFormat")
 @js.native
-/* private */ class ReflectionFormat ()
+/* private */ open class ReflectionFormat ()
   extends StObject
      with typings.activexWord.Word.ReflectionFormat {
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Offset: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Size: Double = js.native

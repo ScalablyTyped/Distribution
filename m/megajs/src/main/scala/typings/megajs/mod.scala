@@ -2,11 +2,16 @@ package typings.megajs
 
 import org.scalablytyped.runtime.TopLevel
 import typings.megajs.megajsBooleans.`true`
-import typings.node.Buffer
+import typings.megajs.megajsStrings.add
+import typings.megajs.megajsStrings.delete
+import typings.megajs.megajsStrings.move
+import typings.megajs.megajsStrings.ready
+import typings.megajs.megajsStrings.update
+import typings.node.bufferMod.global.Buffer
+import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
-import typings.std.Error
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,31 +24,31 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(options: StorageOptions): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Storage]
-  inline def default(options: StorageOptions, cb: js.Any): Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Storage]
+  inline def default(options: StorageOptions, cb: Any): Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Storage]
   
   @JSImport("megajs", "File")
   @js.native
-  class File protected () extends StObject {
+  open class File protected () extends EventEmitter {
     def this(options: String) = this()
     def this(options: FileOptions) = this()
     
     var attributes: js.Object = js.native
     
-    var children: js.Array[File] = js.native
+    var children: js.Array[MutableFile] = js.native
     
     var directory: Boolean = js.native
     
     def download(): Readable = js.native
-    def download(options: Unit, cb: js.Any): Readable = js.native
+    def download(options: Unit, cb: Any): Readable = js.native
     def download(options: DownloadOptions): Readable = js.native
-    def download(options: DownloadOptions, cb: js.Any): Readable = js.native
+    def download(options: DownloadOptions, cb: Any): Readable = js.native
     
     var downloadId: String = js.native
     
     var key: Buffer = js.native
     
     def loadAttributes(): Readable = js.native
-    def loadAttributes(cb: js.Any): Readable = js.native
+    def loadAttributes(cb: Any): Readable = js.native
     
     var name: String = js.native
     
@@ -63,96 +68,106 @@ object mod {
     inline def fromURL(options: String): File = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(options.asInstanceOf[js.Any]).asInstanceOf[File]
     inline def fromURL(options: FileOptions): File = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(options.asInstanceOf[js.Any]).asInstanceOf[File]
     
-    inline def unpackAttributes(at: js.Any): JSON = ^.asInstanceOf[js.Dynamic].applyDynamic("unpackAttributes")(at.asInstanceOf[js.Any]).asInstanceOf[JSON]
+    inline def unpackAttributes(at: Any): JSON = ^.asInstanceOf[js.Dynamic].applyDynamic("unpackAttributes")(at.asInstanceOf[js.Any]).asInstanceOf[JSON]
   }
   
   @JSImport("megajs", "MutableFile")
   @js.native
-  class MutableFile protected () extends File {
+  open class MutableFile protected () extends File {
     def this(options: String, storage: Storage) = this()
     def this(options: FileOptions, storage: Storage) = this()
     
-    def delete(permanent: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
+    def delete(permanent: Unit, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Readable = js.native
     @JSName("delete")
-    def delete_true(permanent: `true`, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
+    def delete_true(permanent: `true`, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Readable = js.native
     
-    def importFile(file: String, cb: js.Function2[/* err */ js.UndefOr[Error], /* file */ this.type, Unit]): Readable = js.native
-    def importFile(file: File, cb: js.Function2[/* err */ js.UndefOr[Error], /* file */ this.type, Unit]): Readable = js.native
+    def importFile(file: String, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* file */ this.type, Unit]): Readable = js.native
+    def importFile(file: File, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* file */ this.type, Unit]): Readable = js.native
     
-    def link(options: Unit, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
-    def link(options: LinkOptions, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
+    def link(options: Unit, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* url */ String, Unit]): Readable = js.native
+    def link(options: LinkOptions, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* url */ String, Unit]): Readable = js.native
     
     def mkdir(options: String): Readable = js.native
-    def mkdir(options: String, cb: js.Any): Readable = js.native
+    def mkdir(options: String, cb: Any): Readable = js.native
     def mkdir(options: MakeDirectoryOptions): Readable = js.native
-    def mkdir(options: MakeDirectoryOptions, cb: js.Any): Readable = js.native
+    def mkdir(options: MakeDirectoryOptions, cb: Any): Readable = js.native
     
-    def moveTo(target: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
-    def moveTo(target: MutableFile, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
+    def moveTo(target: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Readable = js.native
+    def moveTo(target: MutableFile, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Readable = js.native
     
-    def rename(newFileName: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
+    def on(event: delete | update, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_move(event: move, listener: js.Function1[/* oldDir */ this.type, Unit]): this.type = js.native
     
-    def setAttributes(attributes: js.Object, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
+    def rename(newFileName: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Readable = js.native
     
-    def setFavorite(isFavorite: Boolean, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
+    def setAttributes(attributes: js.Object, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Readable = js.native
     
-    def setLabel(label: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Readable = js.native
+    def setFavorite(isFavorite: Boolean, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Readable = js.native
     
-    def shareFolder(options: Unit, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
-    def shareFolder(options: LinkOptions, cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]): Readable = js.native
+    def setLabel(label: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Readable = js.native
+    
+    def shareFolder(options: Unit, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* url */ String, Unit]): Readable = js.native
+    def shareFolder(options: LinkOptions, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* url */ String, Unit]): Readable = js.native
     
     def upload(options: String): Writable = js.native
-    def upload(options: String, buffer: Unit, cb: js.Any): Writable = js.native
+    def upload(options: String, buffer: Unit, cb: Any): Writable = js.native
     def upload(options: String, buffer: Buffer): Writable = js.native
-    def upload(options: String, buffer: Buffer, cb: js.Any): Writable = js.native
+    def upload(options: String, buffer: Buffer, cb: Any): Writable = js.native
     def upload(options: UploadOptions): Writable = js.native
-    def upload(options: UploadOptions, buffer: Unit, cb: js.Any): Writable = js.native
+    def upload(options: UploadOptions, buffer: Unit, cb: Any): Writable = js.native
     def upload(options: UploadOptions, buffer: Buffer): Writable = js.native
-    def upload(options: UploadOptions, buffer: Buffer, cb: js.Any): Writable = js.native
+    def upload(options: UploadOptions, buffer: Buffer, cb: Any): Writable = js.native
     
     def uploadAttribute(`type`: String): Readable = js.native
-    def uploadAttribute(`type`: String, opt: Unit, cb: js.Any): Readable = js.native
+    def uploadAttribute(`type`: String, opt: Unit, cb: Any): Readable = js.native
     def uploadAttribute(`type`: String, opt: Buffer): Readable = js.native
-    def uploadAttribute(`type`: String, opt: Buffer, cb: js.Any): Readable = js.native
+    def uploadAttribute(`type`: String, opt: Buffer, cb: Any): Readable = js.native
     def uploadAttribute(`type`: String, opt: Stream): Readable = js.native
-    def uploadAttribute(`type`: String, opt: Stream, cb: js.Any): Readable = js.native
+    def uploadAttribute(`type`: String, opt: Stream, cb: Any): Readable = js.native
     def uploadAttribute(`type`: Double): Readable = js.native
-    def uploadAttribute(`type`: Double, opt: Unit, cb: js.Any): Readable = js.native
+    def uploadAttribute(`type`: Double, opt: Unit, cb: Any): Readable = js.native
     def uploadAttribute(`type`: Double, opt: Buffer): Readable = js.native
-    def uploadAttribute(`type`: Double, opt: Buffer, cb: js.Any): Readable = js.native
+    def uploadAttribute(`type`: Double, opt: Buffer, cb: Any): Readable = js.native
     def uploadAttribute(`type`: Double, opt: Stream): Readable = js.native
-    def uploadAttribute(`type`: Double, opt: Stream, cb: js.Any): Readable = js.native
+    def uploadAttribute(`type`: Double, opt: Stream, cb: Any): Readable = js.native
   }
   
   @JSImport("megajs", "Storage")
   @js.native
-  class Storage protected () extends StObject {
+  open class Storage protected () extends EventEmitter {
     def this(options: StorageOptions) = this()
-    def this(options: StorageOptions, callback: js.Any) = this()
+    def this(options: StorageOptions, callback: Any) = this()
     
     var files: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ id in string ]: megajs.megajs.MutableFile}
-      */ typings.megajs.megajsStrings.Storage & TopLevel[js.Any] = js.native
+      */ typings.megajs.megajsStrings.Storage & TopLevel[Any] = js.native
     
-    def getAccountInfo(cb: js.Any): AccountInfo = js.native
+    def getAccountInfo(cb: Any): AccountInfo = js.native
     
     var inbox: MutableFile = js.native
     
     var key: Buffer = js.native
     
-    def login(cb: js.Any): Readable = js.native
+    def login(cb: Any): Readable = js.native
     
-    def mkdir(options: String, cb: js.Function2[/* err */ js.UndefOr[Error], /* file */ MutableFile, Unit]): Readable = js.native
+    def mkdir(options: String, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* file */ MutableFile, Unit]): Readable = js.native
     def mkdir(
       options: MakeDirectoryOptions,
-      cb: js.Function2[/* err */ js.UndefOr[Error], /* file */ MutableFile, Unit]
+      cb: js.Function2[/* err */ js.UndefOr[js.Error], /* file */ MutableFile, Unit]
     ): Readable = js.native
     
     var mounts: js.Array[File] = js.native
     
     var name: String = js.native
     
-    def reload(cb: js.Any): Readable = js.native
+    def on(event: add | delete | update, listener: js.Function1[/* file */ MutableFile, Unit]): this.type = js.native
+    @JSName("on")
+    def on_move(event: move, listener: js.Function2[/* file */ MutableFile, /* oldDir */ MutableFile, Unit]): this.type = js.native
+    @JSName("on")
+    def on_ready(event: ready, listener: js.Function1[/* storage */ this.type, Unit]): this.type = js.native
+    
+    def reload(cb: Any): Readable = js.native
     
     var root: MutableFile = js.native
     
@@ -163,13 +178,13 @@ object mod {
     var trash: MutableFile = js.native
     
     def upload(options: String): Writable = js.native
-    def upload(options: String, buffer: Unit, cb: js.Any): Writable = js.native
+    def upload(options: String, buffer: Unit, cb: Any): Writable = js.native
     def upload(options: String, buffer: Buffer): Writable = js.native
-    def upload(options: String, buffer: Buffer, cb: js.Any): Writable = js.native
+    def upload(options: String, buffer: Buffer, cb: Any): Writable = js.native
     def upload(options: UploadOptions): Writable = js.native
-    def upload(options: UploadOptions, buffer: Unit, cb: js.Any): Writable = js.native
+    def upload(options: UploadOptions, buffer: Unit, cb: Any): Writable = js.native
     def upload(options: UploadOptions, buffer: Buffer): Writable = js.native
-    def upload(options: UploadOptions, buffer: Buffer, cb: js.Any): Writable = js.native
+    def upload(options: UploadOptions, buffer: Buffer, cb: Any): Writable = js.native
   }
   /* static members */
   object Storage {
@@ -235,7 +250,7 @@ object mod {
     
     var chunkSizeIncrement: js.UndefOr[Double] = js.undefined
     
-    var end: js.UndefOr[js.Any] = js.undefined
+    var end: js.UndefOr[Any] = js.undefined
     
     var initialChunkSize: js.UndefOr[Double] = js.undefined
     
@@ -245,7 +260,7 @@ object mod {
     
     var returnCiphertext: js.UndefOr[Boolean] = js.undefined
     
-    var start: js.UndefOr[js.Any] = js.undefined
+    var start: js.UndefOr[Any] = js.undefined
   }
   object DownloadOptions {
     
@@ -260,7 +275,7 @@ object mod {
       
       inline def setChunkSizeIncrementUndefined: Self = StObject.set(x, "chunkSizeIncrement", js.undefined)
       
-      inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
@@ -280,7 +295,7 @@ object mod {
       
       inline def setReturnCiphertextUndefined: Self = StObject.set(x, "returnCiphertext", js.undefined)
       
-      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
@@ -414,7 +429,7 @@ object mod {
     
     var previewImage: js.UndefOr[Buffer | Readable] = js.undefined
     
-    var size: js.UndefOr[js.Any] = js.undefined
+    var size: js.UndefOr[Any] = js.undefined
     
     var thumbnailImage: js.UndefOr[Buffer | Readable] = js.undefined
   }
@@ -437,7 +452,7 @@ object mod {
       
       inline def setPreviewImageUndefined: Self = StObject.set(x, "previewImage", js.undefined)
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

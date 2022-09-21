@@ -12,6 +12,8 @@ trait Feature
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#defaultPopupTemplateEnabled)
     */
   var defaultPopupTemplateEnabled: Boolean = js.native
@@ -19,12 +21,25 @@ trait Feature
   /**
     * The [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) used to represent the feature.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#graphic)
     */
   var graphic: Graphic = js.native
   
   /**
+    * Indicates the heading level to use for the [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#title) of the feature widget.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
+  
+  /**
     * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#map)
     */
@@ -35,24 +50,26 @@ trait Feature
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#nextMedia)
     */
-  def nextMedia(contentElementIndex: Double): Unit = js.native
+  def nextMedia(contentElementIndex: Double): scala.Unit = js.native
   
   /**
     * Paginates to the previous [media](esri-popup-content-MediaContent.html) info in the specified [media](esri-popup-content-MediaContent.html) content element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#previousMedia)
     */
-  def previousMedia(contentElementIndex: Double): Unit = js.native
+  def previousMedia(contentElementIndex: Double): scala.Unit = js.native
   
   /**
     * Paginates to a specified [media](esri-popup-content-MediaContent.html) info object.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#setActiveMedia)
     */
-  def setActiveMedia(contentElementIndex: Double, mediaInfoIndex: Double): Unit = js.native
+  def setActiveMedia(contentElementIndex: Double, mediaInfoIndex: Double): scala.Unit = js.native
   
   /**
     * The spatial reference used for [Arcade](https://developers.arcgis.com/arcade) operations.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#spatialReference)
     */
@@ -60,6 +77,8 @@ trait Feature
   
   /**
     * The title for the feature.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#title)
     */

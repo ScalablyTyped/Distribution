@@ -10,13 +10,13 @@ Execute a callback when a request closes, finishes, or errors
 | ------------------ | :-------------: |
 | Full name          | on-finished |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 749 |
-| # downloads        | 666324535 |
-| # stars            | 23 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1768322533333333E8 |
+| # stars            | 360.0 |
 
 ## Links
-- [Homepage](https://github.com/jshttp/on-finished)
+- [Homepage](https://github.com/jshttp/on-finished#readme)
 - [Bugs](https://github.com/jshttp/on-finished/issues)
 - [Repository](https://github.com/jshttp/on-finished)
 - [Npm](https://www.npmjs.com/package/on-finished)

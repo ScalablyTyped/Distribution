@@ -12,13 +12,13 @@ object JSSpec {
   @js.native
   trait ArgFunc extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   /**
     * Async Function
     */
-  type AsyncFunc = js.Function0[js.Thenable[js.Any]]
+  type AsyncFunc = js.Function0[js.Thenable[Any]]
   
   @js.native
   trait Context extends StObject {
@@ -139,7 +139,7 @@ object JSSpec {
     def apply(name: String, options: ExampleOptions, fn: AsyncFunc | Func): Unit = js.native
   }
   
-  type LazyEvaluated = js.Function2[/* varName */ String, /* fnOrValue */ js.Any, Unit]
+  type LazyEvaluated = js.Function2[/* varName */ String, /* fnOrValue */ Any, Unit]
   
   @js.native
   trait PendingContext extends StObject {
@@ -190,7 +190,7 @@ object JSSpec {
     def apply(title: String, options: ContextOptions, fn: ArgFunc): Unit = js.native
   }
   
-  type SharedInvocation = js.Function2[/* contextName */ String, /* repeated */ js.Any, Unit]
+  type SharedInvocation = js.Function2[/* contextName */ String, /* repeated */ Any, Unit]
   
   @js.native
   trait Subject extends StObject {
@@ -201,7 +201,7 @@ object JSSpec {
       * If `fnOrValue` is a function, it will be executed to evaluate the initial state of
       * `subject` when it is first accessed in an example (or supporting hook).
       */
-    def apply(fnOrValue: js.Any): Unit = js.native
+    def apply(fnOrValue: Any): Unit = js.native
     /**
       * Set a variable which can be accessed inside of an Example.
       * `subject` will refer to the same variable.
@@ -209,6 +209,6 @@ object JSSpec {
       * If `fnOrValue` is a function, it will be executed to evaluate the initial state of
       * `varName` or `subject` when it is first accessed in an example (or supporting hook).
       */
-    def apply(varName: String, fnOrValue: js.Any): Unit = js.native
+    def apply(varName: String, fnOrValue: Any): Unit = js.native
   }
 }

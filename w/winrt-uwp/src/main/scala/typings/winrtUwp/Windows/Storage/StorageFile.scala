@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.FileProperties.BasicProperties
@@ -55,7 +54,7 @@ trait StorageFile extends StObject {
   def copyAsync(destinationFolder: IStorageFolder, desiredNewName: String, option: NameCollisionOption): IPromiseWithIAsyncOperation[StorageFile] = js.native
   
   /** Gets the date and time when the current file was created. */
-  var dateCreated: Date = js.native
+  var dateCreated: js.Date = js.native
   
   /**
     * Deletes the current file.

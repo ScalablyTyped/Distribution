@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Name extends StObject {
   
-  var name: js.UndefOr[String] = js.undefined
+  val name: js.UndefOr[String] = js.undefined
   
-  var uri: Uri
+  val uri: Uri
 }
 object Name {
   

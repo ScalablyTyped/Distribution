@@ -10,7 +10,6 @@ trait RTCPeerConnectionIceEvent
   extends StObject
      with Event {
   
+  /* standard dom */
   val candidate: RTCIceCandidate | Null = js.native
-  
-  val url: java.lang.String | Null = js.native
 }

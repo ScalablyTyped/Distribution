@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GroundViewConstructor
   extends StObject
-     with Instantiable0[GroundView]
+     with /**
+  * This class represents the view for the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) of a map.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-GroundView.html)
+  */
+Instantiable0[GroundView]
      with Instantiable1[/* properties */ GroundViewProperties, GroundView]

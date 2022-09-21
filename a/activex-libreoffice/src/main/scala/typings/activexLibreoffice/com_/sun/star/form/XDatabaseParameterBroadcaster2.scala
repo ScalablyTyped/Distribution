@@ -38,7 +38,7 @@ object XDatabaseParameterBroadcaster2 {
     acquire: () => Unit,
     addDatabaseParameterListener: XDatabaseParameterListener => Unit,
     addParameterListener: XDatabaseParameterListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeDatabaseParameterListener: XDatabaseParameterListener => Unit,
     removeParameterListener: XDatabaseParameterListener => Unit

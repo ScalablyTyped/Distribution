@@ -28,7 +28,7 @@ object geolocation {
     /** [Method] Attempts to get the current position of this device
       * @param config Object An object which contains the following config options:
       */
-    var getCurrentPosition: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getCurrentPosition: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns the value of frequency
       * @returns Number
@@ -74,7 +74,7 @@ object geolocation {
     /** [Method] Watches for the current position and calls the callback when successful depending on the specified frequency
       * @param config Object An object which contains the following config options:
       */
-    var watchPosition: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var watchPosition: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -101,7 +101,7 @@ object geolocation {
       
       inline def setGetAllowHighAccuracyUndefined: Self = StObject.set(x, "getAllowHighAccuracy", js.undefined)
       
-      inline def setGetCurrentPosition(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getCurrentPosition", js.Any.fromFunction1(value))
+      inline def setGetCurrentPosition(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getCurrentPosition", js.Any.fromFunction1(value))
       
       inline def setGetCurrentPositionUndefined: Self = StObject.set(x, "getCurrentPosition", js.undefined)
       
@@ -141,7 +141,7 @@ object geolocation {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setWatchPosition(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "watchPosition", js.Any.fromFunction1(value))
+      inline def setWatchPosition(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "watchPosition", js.Any.fromFunction1(value))
       
       inline def setWatchPositionUndefined: Self = StObject.set(x, "watchPosition", js.undefined)
     }

@@ -9,7 +9,7 @@ object mergeFileOptionsMod {
   
   trait MergeFileOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var ancestorLabel: js.UndefOr[String] = js.undefined
     

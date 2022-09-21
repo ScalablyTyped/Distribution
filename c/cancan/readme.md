@@ -10,10 +10,10 @@ Authorize easily
 | ------------------ | :-------------: |
 | Full name          | cancan |
 | Keywords           | acl, authorization |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 28687 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3704.3333333333335 |
+| # stars            | 614.0 |
 
 ## Links
 - [Homepage](https://github.com/vadimdemedes/cancan#readme)

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContainer.anon
 
-import typings.maximMazurokGapiClientContainer.gapi.client.container.SetLegacyAbacRequest
+import typings.maximMazurokGapiClientContainer.gapi.client.container.SetAddonsConfigRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait NameOauthtoken extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, cluster id) of the cluster to set legacy abac. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
+  /** The name (project, location, cluster) of the cluster to set addons. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait NameOauthtoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SetLegacyAbacRequest
+  var resource: SetAddonsConfigRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait NameOauthtoken extends StObject {
 }
 object NameOauthtoken {
   
-  inline def apply(name: String, resource: SetLegacyAbacRequest): NameOauthtoken = {
+  inline def apply(name: String, resource: SetAddonsConfigRequest): NameOauthtoken = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameOauthtoken]
   }
@@ -94,7 +94,7 @@ object NameOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SetLegacyAbacRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SetAddonsConfigRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

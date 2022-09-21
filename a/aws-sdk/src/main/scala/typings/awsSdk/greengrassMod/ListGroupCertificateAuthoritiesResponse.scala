@@ -24,6 +24,6 @@ object ListGroupCertificateAuthoritiesResponse {
     
     inline def setGroupCertificateAuthoritiesUndefined: Self = StObject.set(x, "GroupCertificateAuthorities", js.undefined)
     
-    inline def setGroupCertificateAuthoritiesVarargs(value: GroupCertificateAuthorityProperties*): Self = StObject.set(x, "GroupCertificateAuthorities", js.Array(value :_*))
+    inline def setGroupCertificateAuthoritiesVarargs(value: GroupCertificateAuthorityProperties*): Self = StObject.set(x, "GroupCertificateAuthorities", js.Array(value*))
   }
 }

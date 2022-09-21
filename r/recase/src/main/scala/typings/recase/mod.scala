@@ -15,22 +15,22 @@ object mod {
   
   trait Recase extends StObject {
     
-    def camelCopy(orig: js.Any): js.Any
+    def camelCopy(orig: Any): Any
     
-    def snakeCopy(orig: js.Any): js.Any
+    def snakeCopy(orig: Any): Any
   }
   object Recase {
     
-    inline def apply(camelCopy: js.Any => js.Any, snakeCopy: js.Any => js.Any): Recase = {
+    inline def apply(camelCopy: Any => Any, snakeCopy: Any => Any): Recase = {
       val __obj = js.Dynamic.literal(camelCopy = js.Any.fromFunction1(camelCopy), snakeCopy = js.Any.fromFunction1(snakeCopy))
       __obj.asInstanceOf[Recase]
     }
     
     extension [Self <: Recase](x: Self) {
       
-      inline def setCamelCopy(value: js.Any => js.Any): Self = StObject.set(x, "camelCopy", js.Any.fromFunction1(value))
+      inline def setCamelCopy(value: Any => Any): Self = StObject.set(x, "camelCopy", js.Any.fromFunction1(value))
       
-      inline def setSnakeCopy(value: js.Any => js.Any): Self = StObject.set(x, "snakeCopy", js.Any.fromFunction1(value))
+      inline def setSnakeCopy(value: Any => Any): Self = StObject.set(x, "snakeCopy", js.Any.fromFunction1(value))
     }
   }
 }

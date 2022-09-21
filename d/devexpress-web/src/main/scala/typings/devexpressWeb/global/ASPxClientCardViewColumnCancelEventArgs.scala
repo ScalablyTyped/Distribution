@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewColumnCancelEventArgs")
 @js.native
-class ASPxClientCardViewColumnCancelEventArgs protected ()
+open class ASPxClientCardViewColumnCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewColumnCancelEventArgs {
   /**
@@ -19,7 +19,7 @@ class ASPxClientCardViewColumnCancelEventArgs protected ()
   def this(column: typings.devexpressWeb.ASPxClientCardViewColumn) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

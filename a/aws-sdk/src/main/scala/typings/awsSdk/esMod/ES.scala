@@ -222,6 +222,34 @@ trait ES extends Service {
   ): Request[DeletePackageResponse, AWSError] = js.native
   
   /**
+    * Provides scheduled Auto-Tune action details for the Elasticsearch domain, such as Auto-Tune action type, description, severity, and scheduled date.
+    */
+  def describeDomainAutoTunes(): Request[DescribeDomainAutoTunesResponse, AWSError] = js.native
+  def describeDomainAutoTunes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainAutoTunesResponse, Unit]): Request[DescribeDomainAutoTunesResponse, AWSError] = js.native
+  /**
+    * Provides scheduled Auto-Tune action details for the Elasticsearch domain, such as Auto-Tune action type, description, severity, and scheduled date.
+    */
+  def describeDomainAutoTunes(params: DescribeDomainAutoTunesRequest): Request[DescribeDomainAutoTunesResponse, AWSError] = js.native
+  def describeDomainAutoTunes(
+    params: DescribeDomainAutoTunesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainAutoTunesResponse, Unit]
+  ): Request[DescribeDomainAutoTunesResponse, AWSError] = js.native
+  
+  /**
+    * Returns information about the current blue/green deployment happening on a domain, including a change ID, status, and progress stages.
+    */
+  def describeDomainChangeProgress(): Request[DescribeDomainChangeProgressResponse, AWSError] = js.native
+  def describeDomainChangeProgress(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainChangeProgressResponse, Unit]): Request[DescribeDomainChangeProgressResponse, AWSError] = js.native
+  /**
+    * Returns information about the current blue/green deployment happening on a domain, including a change ID, status, and progress stages.
+    */
+  def describeDomainChangeProgress(params: DescribeDomainChangeProgressRequest): Request[DescribeDomainChangeProgressResponse, AWSError] = js.native
+  def describeDomainChangeProgress(
+    params: DescribeDomainChangeProgressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainChangeProgressResponse, Unit]
+  ): Request[DescribeDomainChangeProgressResponse, AWSError] = js.native
+  
+  /**
     * Returns domain configuration information about the specified Elasticsearch domain, including the domain ID, domain endpoint, and domain ARN.
     */
   def describeElasticsearchDomain(): Request[DescribeElasticsearchDomainResponse, AWSError] = js.native
@@ -460,6 +488,14 @@ trait ES extends Service {
     */
   def listDomainNames(): Request[ListDomainNamesResponse, AWSError] = js.native
   def listDomainNames(callback: js.Function2[/* err */ AWSError, /* data */ ListDomainNamesResponse, Unit]): Request[ListDomainNamesResponse, AWSError] = js.native
+  /**
+    * Returns the name of all Elasticsearch domains owned by the current user's account. 
+    */
+  def listDomainNames(params: ListDomainNamesRequest): Request[ListDomainNamesResponse, AWSError] = js.native
+  def listDomainNames(
+    params: ListDomainNamesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDomainNamesResponse, Unit]
+  ): Request[ListDomainNamesResponse, AWSError] = js.native
   
   /**
     * Lists all Amazon ES domains associated with the package.

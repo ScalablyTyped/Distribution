@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "SimpleText")
 @js.native
-class SimpleText protected () extends Drawable {
+open class SimpleText protected () extends Drawable {
   def this(`type`: String, simpleTextOptions: SimpleTextOptions) = this()
   
   def getCurrentOffsetX(): Double = js.native

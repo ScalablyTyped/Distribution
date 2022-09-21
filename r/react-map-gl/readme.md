@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-map-gl
 
-Typings are for version 5.2
+Typings are for version 6.1
 
 ## Library description:
 React components for Mapbox GL JS-compatible libraries
@@ -10,10 +10,10 @@ React components for Mapbox GL JS-compatible libraries
 | ------------------ | :-------------: |
 | Full name          | react-map-gl |
 | Keywords           | mapbox, mapbox-gl, react, react-mapbox-gl, react mapbox |
-| # releases         | 79 |
-| # dependents       | 110 |
-| # downloads        | 4201223 |
-| # stars            | 3 |
+| # releases         | 77 |
+| # dependents       | 0.0 |
+| # downloads        | 835781.0 |
+| # stars            | 6695.0 |
 
 ## Links
 - [Homepage](https://github.com/visgl/react-map-gl#readme)

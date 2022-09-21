@@ -1,7 +1,6 @@
 package typings.msRestAzure.mod
 
 import typings.msRest.mod.WebResource
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * @param {MSIOptions} [options] - Optional parameters.
   */
-class MSITokenCredentials () extends StObject {
+open class MSITokenCredentials () extends StObject {
   def this(options: MSIOptions) = this()
   
   /**
@@ -23,7 +22,7 @@ class MSITokenCredentials () extends StObject {
     *                       {Error} [err]  The error if any
     *                       {object} [tokenResponse] The tokenResponse (tokenType and accessToken are the two important properties). 
     */
-  def getToken(callback: js.Function2[/* error */ Error, /* result */ TokenResponse, Unit]): Unit = js.native
+  def getToken(callback: js.Function2[/* error */ js.Error, /* result */ TokenResponse, Unit]): Unit = js.native
   
   /**
     * @property {string} resource - The resource uri or token audience for which the token is needed.
@@ -38,5 +37,5 @@ class MSITokenCredentials () extends StObject {
     * @param {function(error)}  callback  The callback function.
     * @return {undefined}
     */
-  def signRequest(webResource: WebResource, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def signRequest(webResource: WebResource, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

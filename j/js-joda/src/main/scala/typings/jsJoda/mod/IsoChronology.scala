@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /* private */ abstract class IsoChronology () extends StObject {
   
-  def equals(other: js.Any): Boolean = js.native
-  
-  def resolveDate(fieldValues: js.Any, resolverStyle: js.Any): js.Any = js.native
+  def resolveDate(fieldValues: Any, resolverStyle: Any): Any = js.native
 }
 object IsoChronology {
   

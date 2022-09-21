@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("binary-parse-stream", JSImport.Namespace)
   @js.native
-  class ^ () extends Transform {
+  open class ^ () extends Transform {
     def this(options: TransformOptions) = this()
   }
   @JSImport("binary-parse-stream", JSImport.Namespace)

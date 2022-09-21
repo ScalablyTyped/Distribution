@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cachingClientMod {
   
-  @JSImport("@firebase/remote-config/dist/src/client/caching_client", "CachingClient")
+  @JSImport("@firebase/remote-config/dist/esm/src/client/caching_client", "CachingClient")
   @js.native
-  class CachingClient protected ()
+  open class CachingClient protected ()
     extends StObject
        with RemoteConfigFetchClient {
     def this(client: RemoteConfigFetchClient, storage: Storage, storageCache: StorageCache, logger: Logger) = this()
     
-    /* private */ val client: js.Any = js.native
+    /* private */ val client: Any = js.native
     
     /**
       * @throws if response status is not 200 or 304.
@@ -39,10 +39,10 @@ object cachingClientMod {
     def isCachedDataFresh(cacheMaxAgeMillis: Double): Boolean = js.native
     def isCachedDataFresh(cacheMaxAgeMillis: Double, lastSuccessfulFetchTimestampMillis: Double): Boolean = js.native
     
-    /* private */ val logger: js.Any = js.native
+    /* private */ val logger: Any = js.native
     
-    /* private */ val storage: js.Any = js.native
+    /* private */ val storage: Any = js.native
     
-    /* private */ val storageCache: js.Any = js.native
+    /* private */ val storageCache: Any = js.native
   }
 }

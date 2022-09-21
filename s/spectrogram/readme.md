@@ -11,14 +11,11 @@ Audio spectrogram in canvas.
 | Full name          | spectrogram |
 | Keywords           | audio, spectrogram, canvas |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1259 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 629.6666666666666 |
+| # stars            | 176.0 |
 
 ## Links
-- [Homepage](https://github.com/miguelmota/spectrogram)
-- [Bugs](https://github.com/miguelmota/spectrogram/issues)
-- [Repository](https://github.com/miguelmota/spectrogram)
 - [Npm](https://www.npmjs.com/package/spectrogram)
     
 

@@ -153,11 +153,11 @@ object Memory {
       
       inline def setModules(value: js.Array[Module]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      inline def setModulesVarargs(value: Module*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: Module*): Self = StObject.set(x, "modules", js.Array(value*))
       
       inline def setSamples(value: js.Array[SamplingProfileNode]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
       
-      inline def setSamplesVarargs(value: SamplingProfileNode*): Self = StObject.set(x, "samples", js.Array(value :_*))
+      inline def setSamplesVarargs(value: SamplingProfileNode*): Self = StObject.set(x, "samples", js.Array(value*))
     }
   }
   
@@ -191,7 +191,7 @@ object Memory {
       
       inline def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value*))
       
       inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }

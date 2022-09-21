@@ -12,12 +12,11 @@ trait LayoutAnimationAnim extends StObject {
   
   var initialVelocity: js.UndefOr[Double] = js.undefined
   
-  //LayoutAnimationTypes
-  var property: js.UndefOr[String] = js.undefined
+  var property: js.UndefOr[LayoutAnimationProperty] = js.undefined
   
   var springDamping: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[LayoutAnimationType] = js.undefined
 }
 object LayoutAnimationAnim {
   
@@ -40,7 +39,7 @@ object LayoutAnimationAnim {
     
     inline def setInitialVelocityUndefined: Self = StObject.set(x, "initialVelocity", js.undefined)
     
-    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: LayoutAnimationProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
@@ -48,7 +47,7 @@ object LayoutAnimationAnim {
     
     inline def setSpringDampingUndefined: Self = StObject.set(x, "springDamping", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LayoutAnimationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaseBackgroundPropType extends StObject {
   
+  var rippleRadius: js.UndefOr[Double | Null] = js.undefined
+  
   var `type`: String
 }
 object BaseBackgroundPropType {
@@ -17,6 +19,12 @@ object BaseBackgroundPropType {
   }
   
   extension [Self <: BaseBackgroundPropType](x: Self) {
+    
+    inline def setRippleRadius(value: Double): Self = StObject.set(x, "rippleRadius", value.asInstanceOf[js.Any])
+    
+    inline def setRippleRadiusNull: Self = StObject.set(x, "rippleRadius", null)
+    
+    inline def setRippleRadiusUndefined: Self = StObject.set(x, "rippleRadius", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

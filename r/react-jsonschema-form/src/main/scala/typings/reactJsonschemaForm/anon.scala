@@ -52,9 +52,9 @@ object anon {
     
     var key: String
     
-    def onDropIndexClick(index: Double): js.Function1[/* event */ js.Any, Unit]
+    def onDropIndexClick(index: Double): js.Function1[/* event */ Any, Unit]
     
-    def onReorderClick(index: Double, newIndex: Double): js.Function1[/* event */ js.Any, Unit]
+    def onReorderClick(index: Double, newIndex: Double): js.Function1[/* event */ Any, Unit]
     
     var readonly: Boolean
   }
@@ -70,8 +70,8 @@ object anon {
       hasToolbar: Boolean,
       index: Double,
       key: String,
-      onDropIndexClick: Double => js.Function1[/* event */ js.Any, Unit],
-      onReorderClick: (Double, Double) => js.Function1[/* event */ js.Any, Unit],
+      onDropIndexClick: Double => js.Function1[/* event */ Any, Unit],
+      onReorderClick: (Double, Double) => js.Function1[/* event */ Any, Unit],
       readonly: Boolean
     ): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], hasMoveDown = hasMoveDown.asInstanceOf[js.Any], hasMoveUp = hasMoveUp.asInstanceOf[js.Any], hasRemove = hasRemove.asInstanceOf[js.Any], hasToolbar = hasToolbar.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onDropIndexClick = js.Any.fromFunction1(onDropIndexClick), onReorderClick = js.Any.fromFunction2(onReorderClick), readonly = readonly.asInstanceOf[js.Any])
@@ -98,9 +98,9 @@ object anon {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setOnDropIndexClick(value: Double => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onDropIndexClick", js.Any.fromFunction1(value))
+      inline def setOnDropIndexClick(value: Double => js.Function1[/* event */ Any, Unit]): Self = StObject.set(x, "onDropIndexClick", js.Any.fromFunction1(value))
       
-      inline def setOnReorderClick(value: (Double, Double) => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onReorderClick", js.Any.fromFunction2(value))
+      inline def setOnReorderClick(value: (Double, Double) => js.Function1[/* event */ Any, Unit]): Self = StObject.set(x, "onReorderClick", js.Any.fromFunction2(value))
       
       inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     }
@@ -137,20 +137,20 @@ object anon {
   
   trait Definitions extends StObject {
     
-    var definitions: StringDictionary[js.Any]
+    var definitions: StringDictionary[Any]
     
     var fields: StringDictionary[Field]
     
-    var formContext: js.Any
+    var formContext: Any
     
     var widgets: StringDictionary[Widget]
   }
   object Definitions {
     
     inline def apply(
-      definitions: StringDictionary[js.Any],
+      definitions: StringDictionary[Any],
       fields: StringDictionary[Field],
-      formContext: js.Any,
+      formContext: Any,
       widgets: StringDictionary[Widget]
     ): Definitions = {
       val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], formContext = formContext.asInstanceOf[js.Any], widgets = widgets.asInstanceOf[js.Any])
@@ -159,11 +159,11 @@ object anon {
     
     extension [Self <: Definitions](x: Self) {
       
-      inline def setDefinitions(value: StringDictionary[js.Any]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+      inline def setDefinitions(value: StringDictionary[Any]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
       
       inline def setFields(value: StringDictionary[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+      inline def setFormContext(value: Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
       
       inline def setWidgets(value: StringDictionary[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     }
@@ -209,7 +209,7 @@ object anon {
       
       inline def setErrors(value: js.Array[AjvError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
   

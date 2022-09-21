@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@lumino/widgets", "CommandPalette")
 @js.native
-class CommandPalette protected ()
+open class CommandPalette protected ()
   extends typings.luminoWidgets.commandpaletteMod.CommandPalette {
   /**
     * Construct a new command palette.
@@ -23,7 +23,7 @@ object CommandPalette {
     */
   @JSImport("@lumino/widgets", "CommandPalette.Renderer")
   @js.native
-  class Renderer ()
+  open class Renderer ()
     extends typings.luminoWidgets.commandpaletteMod.CommandPalette.Renderer
   
   /**

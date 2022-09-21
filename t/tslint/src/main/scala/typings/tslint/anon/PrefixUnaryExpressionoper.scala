@@ -1,7 +1,6 @@
 package typings.tslint.anon
 
-import typings.typescript.mod.Decorator
-import typings.typescript.mod.ModifiersArray
+import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFlags
@@ -19,13 +18,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PrefixUnaryExpressionoper extends StObject {
   
-  var _expressionBrand: js.Any = js.native
+  var _expressionBrand: Any = js.native
   
-  var _unaryExpressionBrand: js.Any = js.native
+  var _unaryExpressionBrand: Any = js.native
   
-  var _updateExpressionBrand: js.Any = js.native
+  var _updateExpressionBrand: Any = js.native
   
-  val decorators: js.UndefOr[NodeArray[Decorator]] = js.native
+  /**
+    * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
+    * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
+    * Use `ts.getDecorators()` to get the decorators of a `Node`.
+    *
+    * For example:
+    * ```ts
+    * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
+    * ```
+    */
+  val decorators: Unit = js.native
   
   val end: Double = js.native
   
@@ -79,7 +88,17 @@ trait PrefixUnaryExpressionoper extends StObject {
   
   val kind: PrefixUnaryExpression = js.native
   
-  val modifiers: js.UndefOr[ModifiersArray] = js.native
+  /**
+    * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
+    * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
+    * Use `ts.getModifiers()` to get the modifiers of a `Node`.
+    *
+    * For example:
+    * ```ts
+    * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
+    * ```
+    */
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   val operand: UnaryExpression & NumericLiteral = js.native
   

@@ -10,10 +10,10 @@ Browser SDK for Amazon Simple Storage Service
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-s3-browser |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 10334 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 934.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fclient-s3-browser)

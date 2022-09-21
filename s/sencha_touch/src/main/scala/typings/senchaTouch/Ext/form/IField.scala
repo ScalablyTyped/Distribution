@@ -52,7 +52,7 @@ trait IField
   /** [Method] Returns the value of labelWidth
     * @returns Number/String
     */
-  var getLabelWidth: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getLabelWidth: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of labelWrap
     * @returns Boolean
@@ -82,7 +82,7 @@ trait IField
   /** [Method] Returns the value of value
     * @returns Mixed
     */
-  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (String) */
   var inputCls: js.UndefOr[String] = js.undefined
@@ -111,7 +111,7 @@ trait IField
   var labelEl: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var labelWidth: js.UndefOr[js.Any] = js.undefined
+  var labelWidth: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var labelWrap: js.UndefOr[Boolean] = js.undefined
@@ -120,7 +120,7 @@ trait IField
   var name: js.UndefOr[String] = js.undefined
   
   /** [Property] (Mixed) */
-  var originalValue: js.UndefOr[js.Any] = js.undefined
+  var originalValue: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var required: js.UndefOr[Boolean] = js.undefined
@@ -169,7 +169,7 @@ trait IField
   /** [Method] Sets the value of labelWidth
     * @param labelWidth Number/String The new value.
     */
-  var setLabelWidth: js.UndefOr[js.Function1[/* labelWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLabelWidth: js.UndefOr[js.Function1[/* labelWidth */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of labelWrap
     * @param labelWrap Boolean The new value.
@@ -199,7 +199,7 @@ trait IField
   /** [Method] Sets the value of value
     * @param value Mixed The new value.
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
   var tabIndex: js.UndefOr[Double] = js.undefined
@@ -208,7 +208,7 @@ trait IField
   var useClearIcon: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Mixed) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object IField {
   
@@ -255,7 +255,7 @@ object IField {
     
     inline def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
     
-    inline def setGetLabelWidth(value: () => js.Any): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
+    inline def setGetLabelWidth(value: () => Any): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
     
     inline def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
     
@@ -279,7 +279,7 @@ object IField {
     
     inline def setGetTabIndexUndefined: Self = StObject.set(x, "getTabIndex", js.undefined)
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
@@ -315,7 +315,7 @@ object IField {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setLabelWidth(value: js.Any): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
+    inline def setLabelWidth(value: Any): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
     
     inline def setLabelWidthUndefined: Self = StObject.set(x, "labelWidth", js.undefined)
     
@@ -327,7 +327,7 @@ object IField {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+    inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     
     inline def setOriginalValueUndefined: Self = StObject.set(x, "originalValue", js.undefined)
     
@@ -371,7 +371,7 @@ object IField {
     
     inline def setSetLabelUndefined: Self = StObject.set(x, "setLabel", js.undefined)
     
-    inline def setSetLabelWidth(value: /* labelWidth */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLabelWidth", js.Any.fromFunction1(value))
+    inline def setSetLabelWidth(value: /* labelWidth */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLabelWidth", js.Any.fromFunction1(value))
     
     inline def setSetLabelWidthUndefined: Self = StObject.set(x, "setLabelWidth", js.undefined)
     
@@ -395,7 +395,7 @@ object IField {
     
     inline def setSetTabIndexUndefined: Self = StObject.set(x, "setTabIndex", js.undefined)
     
-    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
@@ -407,7 +407,7 @@ object IField {
     
     inline def setUseClearIconUndefined: Self = StObject.set(x, "useClearIcon", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

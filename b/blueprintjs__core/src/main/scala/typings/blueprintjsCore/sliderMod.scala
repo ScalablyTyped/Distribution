@@ -1,6 +1,7 @@
 package typings.blueprintjsCore
 
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
+import typings.blueprintjsCore.handlePropsMod.HandleHtmlProps
 import typings.blueprintjsCore.multiSliderMod.ISliderBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,10 +11,10 @@ object sliderMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/slider/slider", "Slider")
   @js.native
-  class Slider protected ()
-    extends AbstractPureComponent2[ISliderProps, js.Object, js.Object] {
-    def this(props: ISliderProps) = this()
-    def this(props: ISliderProps, context: js.Any) = this()
+  open class Slider protected ()
+    extends AbstractPureComponent2[SliderProps, js.Object, js.Object] {
+    def this(props: SliderProps) = this()
+    def this(props: SliderProps, context: Any) = this()
   }
   /* static members */
   object Slider {
@@ -24,8 +25,8 @@ object sliderMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/slider", "Slider.defaultProps")
     @js.native
-    def defaultProps: ISliderProps = js.native
-    inline def defaultProps_=(x: ISliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: SliderProps = js.native
+    inline def defaultProps_=(x: SliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/slider", "Slider.displayName")
     @js.native
@@ -37,9 +38,13 @@ object sliderMod {
     extends StObject
        with ISliderBaseProps {
     
+    /** A limited subset of HTML props to apply to the slider Handle */
+    var handleHtmlProps: js.UndefOr[HandleHtmlProps] = js.undefined
+    
     /**
       * Initial value of the slider. This determines the other end of the
       * track fill: from `initialValue` to `value`.
+      *
       * @default 0
       */
     var initialValue: js.UndefOr[Double] = js.undefined
@@ -52,6 +57,7 @@ object sliderMod {
     
     /**
       * Value of slider.
+      *
       * @default 0
       */
     var value: js.UndefOr[Double] = js.undefined
@@ -64,6 +70,10 @@ object sliderMod {
     }
     
     extension [Self <: ISliderProps](x: Self) {
+      
+      inline def setHandleHtmlProps(value: HandleHtmlProps): Self = StObject.set(x, "handleHtmlProps", value.asInstanceOf[js.Any])
+      
+      inline def setHandleHtmlPropsUndefined: Self = StObject.set(x, "handleHtmlProps", js.undefined)
       
       inline def setInitialValue(value: Double): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
@@ -82,4 +92,6 @@ object sliderMod {
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
+  
+  type SliderProps = ISliderProps
 }

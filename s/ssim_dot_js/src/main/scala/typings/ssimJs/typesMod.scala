@@ -6,12 +6,6 @@ import typings.ssimJs.ssimJsStrings.fast
 import typings.ssimJs.ssimJsStrings.integer
 import typings.ssimJs.ssimJsStrings.original
 import typings.ssimJs.ssimJsStrings.weber
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +16,7 @@ object typesMod {
     extends StObject
        with ImageMatrix {
     
-    val data: Uint8ClampedArray
+    val data: js.typedarray.Uint8ClampedArray
     
     val height: Double
     
@@ -30,14 +24,14 @@ object typesMod {
   }
   object ImageData {
     
-    inline def apply(data: Uint8ClampedArray, height: Double, width: Double): ImageData = {
+    inline def apply(data: js.typedarray.Uint8ClampedArray, height: Double, width: Double): ImageData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageData]
     }
     
     extension [Self <: ImageData](x: Self) {
       
-      inline def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -54,7 +48,7 @@ object typesMod {
   object ImageMatrix {
     
     inline def Height(
-      data: Uint8Array | Int8Array | Uint32Array | Int32Array | Uint16Array,
+      data: js.typedarray.Uint8Array | js.typedarray.Int8Array | js.typedarray.Uint32Array | js.typedarray.Int32Array | js.typedarray.Uint16Array,
       height: Double,
       width: Double
     ): typings.ssimJs.anon.Height = {
@@ -62,7 +56,7 @@ object typesMod {
       __obj.asInstanceOf[typings.ssimJs.anon.Height]
     }
     
-    inline def ImageData(data: Uint8ClampedArray, height: Double, width: Double): typings.ssimJs.typesMod.ImageData = {
+    inline def ImageData(data: js.typedarray.Uint8ClampedArray, height: Double, width: Double): typings.ssimJs.typesMod.ImageData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ssimJs.typesMod.ImageData]
     }
@@ -117,7 +111,7 @@ object typesMod {
       
       inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -89,7 +89,7 @@ object XAnimatedImages {
     getImageSet: Double => SafeArray[String],
     getImageSetCount: () => Double,
     insertImageSet: (Double, SeqEquiv[String]) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeContainerListener: XContainerListener => Unit,
     removeImageSet: Double => Unit,

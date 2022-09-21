@@ -13,16 +13,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esInfiniteLoaderMod {
   
-  @JSImport("react-virtualized/dist/es/InfiniteLoader", "InfiniteLoader")
+  @JSImport("react-virtualized/dist/es/InfiniteLoader", JSImport.Default)
   @js.native
-  class InfiniteLoader protected ()
-    extends PureComponent[InfiniteLoaderProps, js.Object, js.Any] {
+  open class default protected () extends InfiniteLoader {
     def this(props: InfiniteLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: InfiniteLoaderProps, context: js.Any) = this()
+    def this(props: InfiniteLoaderProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/es/InfiniteLoader", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/es/InfiniteLoader", "default.defaultProps")
+    @js.native
+    def defaultProps: MinimumBatchSize = js.native
+    inline def defaultProps_=(x: MinimumBatchSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-virtualized/dist/es/InfiniteLoader", "default.propTypes")
+    @js.native
+    def propTypes: IsRowLoaded = js.native
+    inline def propTypes_=(x: IsRowLoaded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-virtualized/dist/es/InfiniteLoader", "InfiniteLoader")
+  @js.native
+  open class InfiniteLoader protected ()
+    extends PureComponent[InfiniteLoaderProps, js.Object, Any] {
+    def this(props: InfiniteLoaderProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: InfiniteLoaderProps, context: Any) = this()
     
     def resetLoadMoreRowsCache(): Unit = js.native
     def resetLoadMoreRowsCache(autoReload: Boolean): Unit = js.native
@@ -49,11 +77,11 @@ object esInfiniteLoaderMod {
     
     def onRowsRendered(params: IndexRange): Unit
     
-    def registerChild(registeredChild: js.Any): Unit
+    def registerChild(registeredChild: Any): Unit
   }
   object InfiniteLoaderChildProps {
     
-    inline def apply(onRowsRendered: IndexRange => Unit, registerChild: js.Any => Unit): InfiniteLoaderChildProps = {
+    inline def apply(onRowsRendered: IndexRange => Unit, registerChild: Any => Unit): InfiniteLoaderChildProps = {
       val __obj = js.Dynamic.literal(onRowsRendered = js.Any.fromFunction1(onRowsRendered), registerChild = js.Any.fromFunction1(registerChild))
       __obj.asInstanceOf[InfiniteLoaderChildProps]
     }
@@ -62,7 +90,7 @@ object esInfiniteLoaderMod {
       
       inline def setOnRowsRendered(value: IndexRange => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction1(value))
       
-      inline def setRegisterChild(value: js.Any => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
+      inline def setRegisterChild(value: Any => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
     }
   }
   
@@ -75,7 +103,7 @@ object esInfiniteLoaderMod {
     * Check the following link if you want to know more
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * Function responsible for rendering a virtualized component.
@@ -100,7 +128,7 @@ object esInfiniteLoaderMod {
       * It will be used to determine when to refresh the list with the newly-loaded data.
       * This callback may be called multiple times in reaction to a single scroll event.
       */
-    def loadMoreRows(params: IndexRange): js.Promise[js.Any]
+    def loadMoreRows(params: IndexRange): js.Promise[Any]
     
     /**
       * Minimum number of rows to be loaded at a time.
@@ -125,7 +153,7 @@ object esInfiniteLoaderMod {
     inline def apply(
       children: InfiniteLoaderChildProps => ReactNode,
       isRowLoaded: Index => Boolean,
-      loadMoreRows: IndexRange => js.Promise[js.Any]
+      loadMoreRows: IndexRange => js.Promise[Any]
     ): InfiniteLoaderProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), isRowLoaded = js.Any.fromFunction1(isRowLoaded), loadMoreRows = js.Any.fromFunction1(loadMoreRows))
       __obj.asInstanceOf[InfiniteLoaderProps]
@@ -137,7 +165,7 @@ object esInfiniteLoaderMod {
       
       inline def setIsRowLoaded(value: Index => Boolean): Self = StObject.set(x, "isRowLoaded", js.Any.fromFunction1(value))
       
-      inline def setLoadMoreRows(value: IndexRange => js.Promise[js.Any]): Self = StObject.set(x, "loadMoreRows", js.Any.fromFunction1(value))
+      inline def setLoadMoreRows(value: IndexRange => js.Promise[Any]): Self = StObject.set(x, "loadMoreRows", js.Any.fromFunction1(value))
       
       inline def setMinimumBatchSize(value: Double): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])
       

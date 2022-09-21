@@ -28,7 +28,7 @@ object XProxyFactory {
   inline def apply(
     acquire: () => Unit,
     createProxy: XInterface => XAggregation,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XProxyFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createProxy = js.Any.fromFunction1(createProxy), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

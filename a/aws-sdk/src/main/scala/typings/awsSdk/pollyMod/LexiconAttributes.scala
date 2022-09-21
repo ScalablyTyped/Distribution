@@ -19,7 +19,7 @@ trait LexiconAttributes extends StObject {
   /**
     * Date lexicon was last modified (a timestamp value).
     */
-  var LastModified: js.UndefOr[typings.awsSdk.pollyMod.LastModified] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Number of lexemes in the lexicon.
@@ -53,7 +53,7 @@ object LexiconAttributes {
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    inline def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     

@@ -31,7 +31,7 @@ object Enterprise {
     
     inline def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
     
-    inline def setAdministratorVarargs(value: Administrator*): Self = StObject.set(x, "administrator", js.Array(value :_*))
+    inline def setAdministratorVarargs(value: Administrator*): Self = StObject.set(x, "administrator", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

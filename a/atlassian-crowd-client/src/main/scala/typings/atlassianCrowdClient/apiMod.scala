@@ -9,7 +9,7 @@ object apiMod {
   
   @JSImport("atlassian-crowd-client/api", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with CrowdApi {
     def this(settings: Settings) = this()
@@ -18,10 +18,10 @@ object apiMod {
   @js.native
   trait CrowdApi extends StObject {
     
-    def log(args: js.Any*): Unit = js.native
+    def log(args: Any*): Unit = js.native
     
-    def request(method: String, path: String): js.Promise[js.Any] = js.native
-    def request(method: String, path: String, data: js.Any): js.Promise[js.Any] = js.native
+    def request(method: String, path: String): js.Promise[Any] = js.native
+    def request(method: String, path: String, data: Any): js.Promise[Any] = js.native
     
     var settings: Settings = js.native
   }

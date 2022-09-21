@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HandleOwnerConstructor
   extends StObject
-     with Instantiable0[HandleOwner]
+     with /**
+  * Provides a single [handles](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html#handles) property to be shared with all subclasses.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html)
+  */
+Instantiable0[HandleOwner]
      with Instantiable1[/* properties */ HandleOwnerProperties, HandleOwner]

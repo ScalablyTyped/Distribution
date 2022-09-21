@@ -22,6 +22,6 @@ object GetOffersResponse {
     
     inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value :_*))
+    inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value*))
   }
 }

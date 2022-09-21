@@ -10,10 +10,10 @@ Analyze IMSI (international mobile subscriber identity) number.
 | ------------------ | :-------------: |
 | Full name          | imsi-grok |
 | Keywords           | IMSI |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3489 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 387.6666666666667 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/atis--/imsi-grok#readme)

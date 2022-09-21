@@ -8,5 +8,5 @@ object overlayMod {
   
   @JSImport("@nulogy/components/src/Overlay", "Overlay")
   @js.native
-  val Overlay: js.Any = js.native
+  val Overlay: Any = js.native
 }

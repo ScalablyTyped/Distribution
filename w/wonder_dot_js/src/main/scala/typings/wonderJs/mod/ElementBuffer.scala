@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "ElementBuffer")
 @js.native
-class ElementBuffer ()
+open class ElementBuffer ()
   extends typings.wonderJs.elementBufferMod.ElementBuffer
 /* static members */
 object ElementBuffer {

@@ -9,15 +9,15 @@ object mod {
   
   @JSImport("@google-cloud/precise-date", "PreciseDate")
   @js.native
-  class PreciseDate ()
+  open class PreciseDate ()
     extends StObject
        with Date {
     def this(preciseTime: String) = this()
     def this(preciseTime: js.BigInt) = this()
     def this(preciseTime: DateTuple) = this()
     def this(preciseTime: ProtobufDate) = this()
+    def this(time: js.Date) = this()
     def this(time: Double) = this()
-    def this(time: Date) = this()
     def this(
       year: Double,
       month: js.UndefOr[Double],
@@ -38,7 +38,7 @@ object mod {
       *
       * @returns {number}
       */
-    /* private */ var _getNanos: js.Any = js.native
+    /* private */ var _getNanos: Any = js.native
     
     /**
       * Returns the total number of seconds in the specified date since Unix epoch.
@@ -48,11 +48,11 @@ object mod {
       *
       * @returns {number}
       */
-    /* private */ var _getSeconds: js.Any = js.native
+    /* private */ var _getSeconds: Any = js.native
     
-    /* private */ var _micros: js.Any = js.native
+    /* private */ var _micros: Any = js.native
     
-    /* private */ var _nanos: js.Any = js.native
+    /* private */ var _nanos: Any = js.native
     
     /**
       * Returns the specified date represented in nanoseconds according to
@@ -228,7 +228,7 @@ object mod {
       * const time = PreciseDate.fullUTC(2019, 1, 8, 10, 34, 29, 481, 145, 231);
       * console.log(time); // expected output: 1549622069481145231n
       */
-    inline def fullUTC(args: Double*): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTC")(args.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
+    inline def fullUTC(args: Double*): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTC")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.BigInt]
     
     /**
       * Accepts the same number parameters as the PreciseDate constructor, but
@@ -244,7 +244,7 @@ object mod {
       * const time = PreciseDate.fullUTCString(2019, 1, 8, 10, 34, 29, 481, 145,
       * 231); console.log(time); // expected output: '1549622069481145231'
       */
-    inline def fullUTCString(args: Double*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTCString")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def fullUTCString(args: Double*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTCString")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     /**
       * Parses a precise time.

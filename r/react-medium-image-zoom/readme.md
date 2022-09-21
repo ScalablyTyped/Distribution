@@ -9,11 +9,11 @@ Accessible medium.com-style image zoom for React
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-medium-image-zoom |
-| Keywords           | react, medium, image, zoom, image zoom, modal, react-component |
-| # releases         | 72 |
-| # dependents       | 59 |
-| # downloads        | 878206 |
-| # stars            | 2 |
+| Keywords           | react, medium, image, zoom, image-zoom, modal, react-component |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 214088.33333333334 |
+| # stars            | 1346.0 |
 
 ## Links
 - [Homepage](https://github.com/rpearce/react-medium-image-zoom)

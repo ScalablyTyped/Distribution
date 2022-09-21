@@ -10,10 +10,10 @@ Create a hashed file name
 | ------------------ | :-------------: |
 | Full name          | hash-file |
 | Keywords           | file, hash, name, crypto |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 118572 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4244.333333333333 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/hash-file#readme)

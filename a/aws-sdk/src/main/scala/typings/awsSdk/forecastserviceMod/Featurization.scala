@@ -31,6 +31,6 @@ object Featurization {
     
     inline def setFeaturizationPipelineUndefined: Self = StObject.set(x, "FeaturizationPipeline", js.undefined)
     
-    inline def setFeaturizationPipelineVarargs(value: FeaturizationMethod*): Self = StObject.set(x, "FeaturizationPipeline", js.Array(value :_*))
+    inline def setFeaturizationPipelineVarargs(value: FeaturizationMethod*): Self = StObject.set(x, "FeaturizationPipeline", js.Array(value*))
   }
 }

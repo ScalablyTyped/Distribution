@@ -9,8 +9,28 @@ trait TabPaneProps
   extends StObject
      with TabProps {
   
+  /**
+    * @language zh-CN
+    * @description Tab 上文字或者自定义的元素
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Text or custom elements on tab
+    * @defaultValue undefined
+    */
   var tab: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 每个 tab 的宽度
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Width of each tab
+    * @defaultValue undefined
+    */
   var tabWidth: js.UndefOr[Double] = js.undefined
 }
 object TabPaneProps {

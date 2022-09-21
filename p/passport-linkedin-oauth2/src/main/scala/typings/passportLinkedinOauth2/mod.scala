@@ -1,9 +1,8 @@
 package typings.passportLinkedinOauth2
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passportLinkedinOauth2.passportLinkedinOauth2Booleans.`true`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +11,22 @@ object mod {
   
   @JSImport("passport-linkedin-oauth2", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends StObject
        with typings.passport.mod.Strategy {
     def this(options: StrategyOptionWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOption, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
   }
   
   trait AuthenticateOptions
@@ -46,20 +54,20 @@ object mod {
     extends StObject
        with typings.passport.mod.Profile {
     
-    var _json: js.Any
+    var _json: Any
     
     var _raw: String
   }
   object Profile {
     
-    inline def apply(_json: js.Any, _raw: String, displayName: String, id: String, provider: String): Profile = {
+    inline def apply(_json: Any, _raw: String, displayName: String, id: String, provider: String): Profile = {
       val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[Profile]
     }
     
     extension [Self <: Profile](x: Self) {
       
-      inline def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+      inline def set_json(value: Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
       
       inline def set_raw(value: String): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
     }
@@ -76,6 +84,8 @@ object mod {
     var enableProof: js.UndefOr[Boolean] = js.undefined
     
     var profileFields: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var scope: js.UndefOr[js.Array[String]] = js.undefined
     
     var scopeSeparator: js.UndefOr[String] = js.undefined
   }
@@ -102,11 +112,17 @@ object mod {
       
       inline def setProfileFieldsUndefined: Self = StObject.set(x, "profileFields", js.undefined)
       
-      inline def setProfileFieldsVarargs(value: String*): Self = StObject.set(x, "profileFields", js.Array(value :_*))
+      inline def setProfileFieldsVarargs(value: String*): Self = StObject.set(x, "profileFields", js.Array(value*))
+      
+      inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeSeparator(value: String): Self = StObject.set(x, "scopeSeparator", value.asInstanceOf[js.Any])
       
       inline def setScopeSeparatorUndefined: Self = StObject.set(x, "scopeSeparator", js.undefined)
+      
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
   
@@ -133,16 +149,22 @@ object mod {
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* profile */ Profile, 
-    /* done */ js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit], 
+    /* done */ js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit], 
     Unit
   ]
   
   type VerifyFunctionWithRequest = js.Function5[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* profile */ Profile, 
-    /* done */ js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit], 
+    /* done */ js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit], 
     Unit
   ]
 }

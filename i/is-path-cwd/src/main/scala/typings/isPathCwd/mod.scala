@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(path: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
   @JSImport("is-path-cwd", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

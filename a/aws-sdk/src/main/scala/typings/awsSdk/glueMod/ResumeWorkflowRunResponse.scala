@@ -29,7 +29,7 @@ object ResumeWorkflowRunResponse {
     
     inline def setNodeIdsUndefined: Self = StObject.set(x, "NodeIds", js.undefined)
     
-    inline def setNodeIdsVarargs(value: NameString*): Self = StObject.set(x, "NodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: NameString*): Self = StObject.set(x, "NodeIds", js.Array(value*))
     
     inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     

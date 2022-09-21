@@ -16,10 +16,10 @@ trait GroupDetail extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the group was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The stable and unique string identifying the group. For more information about IDs, see IAM Identifiers in the IAM User Guide.
+    * The stable and unique string identifying the group. For more information about IDs, see IAM identifiers in the IAM User Guide.
     */
   var GroupId: js.UndefOr[idType] = js.undefined
   
@@ -34,7 +34,7 @@ trait GroupDetail extends StObject {
   var GroupPolicyList: js.UndefOr[policyDetailListType] = js.undefined
   
   /**
-    * The path to the group. For more information about paths, see IAM Identifiers in the IAM User Guide.
+    * The path to the group. For more information about paths, see IAM identifiers in the IAM User Guide.
     */
   var Path: js.UndefOr[pathType] = js.undefined
 }
@@ -55,9 +55,9 @@ object GroupDetail {
     
     inline def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
-    inline def setAttachedManagedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
+    inline def setAttachedManagedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value*))
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -73,7 +73,7 @@ object GroupDetail {
     
     inline def setGroupPolicyListUndefined: Self = StObject.set(x, "GroupPolicyList", js.undefined)
     
-    inline def setGroupPolicyListVarargs(value: PolicyDetail*): Self = StObject.set(x, "GroupPolicyList", js.Array(value :_*))
+    inline def setGroupPolicyListVarargs(value: PolicyDetail*): Self = StObject.set(x, "GroupPolicyList", js.Array(value*))
     
     inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,7 @@ object global {
   
   @JSGlobal("ScratchExtension")
   @js.native
-  class ScratchExtension ()
+  open class ScratchExtension ()
     extends StObject
        with typings.scratchEnv.ScratchExtension {
     

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JQueryStatic extends StObject {
   
-  def plot(placeholder: JQuery[HTMLElement], data: js.Array[js.Any | dataSeries]): typings.flot.jquery.flot.plot
-  def plot(placeholder: JQuery[HTMLElement], data: js.Array[js.Any | dataSeries], options: plotOptions): typings.flot.jquery.flot.plot
+  def plot(placeholder: JQuery[HTMLElement], data: js.Array[Any | dataSeries]): typings.flot.jquery.flot.plot
+  def plot(placeholder: JQuery[HTMLElement], data: js.Array[Any | dataSeries], options: plotOptions): typings.flot.jquery.flot.plot
   @JSName("plot")
   var plot_Original: plotStatic
 }

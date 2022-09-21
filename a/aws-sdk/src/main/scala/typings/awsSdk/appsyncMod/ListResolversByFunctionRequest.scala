@@ -12,12 +12,12 @@ trait ListResolversByFunctionRequest extends StObject {
   var apiId: String
   
   /**
-    * The Function ID.
+    * The function ID.
     */
   var functionId: String
   
   /**
-    * The maximum number of results you want the request to return.
+    * The maximum number of results that you want the request to return.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   

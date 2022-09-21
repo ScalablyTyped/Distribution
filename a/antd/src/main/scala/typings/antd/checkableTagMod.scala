@@ -3,6 +3,7 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
+import typings.react.mod.ReactNode
 import typings.std.HTMLSpanElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
@@ -18,10 +19,13 @@ object checkableTagMod extends Shortcut {
   trait CheckableTagProps extends StObject {
     
     /**
-      * @description       it is an absolute controlled component and has no uncontrolled mode.
-      * @description.zh-CN 该组件为完全受控组件，不支持非受控用法。
+      * It is an absolute controlled component and has no uncontrolled mode.
+      *
+      * .zh-cn 该组件为完全受控组件，不支持非受控用法。
       */
     var checked: Boolean
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -45,6 +49,10 @@ object checkableTagMod extends Shortcut {
     extension [Self <: CheckableTagProps](x: Self) {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/PreparedStatement.html
 @JSImport("pg-promise", "PreparedStatement")
 @js.native
-class PreparedStatement ()
+open class PreparedStatement ()
   extends StObject
      with _QueryParam {
   def this(options: IPreparedStatement) = this()
@@ -31,5 +31,5 @@ class PreparedStatement ()
   
   def toString(level: Double): String = js.native
   
-  var values: js.Array[js.Any] = js.native
+  var values: js.Array[Any] = js.native
 }

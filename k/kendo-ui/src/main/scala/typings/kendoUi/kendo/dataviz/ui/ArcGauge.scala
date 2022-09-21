@@ -13,12 +13,12 @@ trait ArcGauge
   extends StObject
      with Widget {
   
-  def exportImage(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportImage(options: Any): JQueryPromise[Any] = js.native
   
-  def exportPDF(): JQueryPromise[js.Any] = js.native
-  def exportPDF(options: PDFOptions): JQueryPromise[js.Any] = js.native
+  def exportPDF(): JQueryPromise[Any] = js.native
+  def exportPDF(options: PDFOptions): JQueryPromise[Any] = js.native
   
-  def exportSVG(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportSVG(options: Any): JQueryPromise[Any] = js.native
   
   def imageDataURL(): String = js.native
   
@@ -27,7 +27,7 @@ trait ArcGauge
   
   def redraw(): Unit = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def svg(): Unit = js.native
   

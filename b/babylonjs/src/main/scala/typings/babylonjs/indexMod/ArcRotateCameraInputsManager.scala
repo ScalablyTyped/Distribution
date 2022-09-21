@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("babylonjs/index", "ArcRotateCameraInputsManager")
 @js.native
-class ArcRotateCameraInputsManager protected ()
+open class ArcRotateCameraInputsManager protected ()
   extends typings.babylonjs.babylonjsMod.ArcRotateCameraInputsManager {
   /**
     * Instantiates a new ArcRotateCameraInputsManager.

@@ -8,7 +8,7 @@ trait EditorPasteEvent
   extends StObject
      with EditorEvent {
   
-  var html: js.UndefOr[js.Any] = js.undefined
+  var html: js.UndefOr[Any] = js.undefined
 }
 object EditorPasteEvent {
   
@@ -19,7 +19,7 @@ object EditorPasteEvent {
   
   extension [Self <: EditorPasteEvent](x: Self) {
     
-    inline def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
   }

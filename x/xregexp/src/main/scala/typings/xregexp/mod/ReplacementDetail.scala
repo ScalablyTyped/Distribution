@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Replacement details used in and array for replacing multiple items.
+  * Replacement details used in an array for replacing multiple items.
   */
 trait ReplacementDetail extends StObject {
   

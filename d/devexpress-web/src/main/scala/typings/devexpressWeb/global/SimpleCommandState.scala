@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SimpleCommandState")
 @js.native
-class SimpleCommandState ()
+open class SimpleCommandState ()
   extends StObject
      with typings.devexpressWeb.SimpleCommandState {
   

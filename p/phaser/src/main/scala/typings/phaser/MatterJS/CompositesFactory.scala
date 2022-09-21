@@ -35,7 +35,7 @@ trait CompositesFactory extends StObject {
     yOffsetA: Double,
     xOffsetB: Double,
     yOffsetB: Double,
-    options: js.Any
+    options: Any
   ): CompositeType
   
   /**
@@ -48,7 +48,7 @@ trait CompositesFactory extends StObject {
     * @param {object} options
     * @return {composite} The composite containing objects meshed together with constraints
     */
-  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType
+  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: Any): CompositeType
   
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
@@ -109,8 +109,8 @@ trait CompositesFactory extends StObject {
     rowGap: Double,
     crossBrace: Boolean,
     particleRadius: Double,
-    particleOptions: js.Any,
-    constraintOptions: js.Any
+    particleOptions: Any,
+    constraintOptions: Any
   ): CompositeType
   
   /**
@@ -140,11 +140,11 @@ object CompositesFactory {
   
   inline def apply(
     car: (Double, Double, Double, Double, Double) => CompositeType,
-    chain: (CompositeType, Double, Double, Double, Double, js.Any) => CompositeType,
-    mesh: (CompositeType, Double, Double, Boolean, js.Any) => CompositeType,
+    chain: (CompositeType, Double, Double, Double, Double, Any) => CompositeType,
+    mesh: (CompositeType, Double, Double, Boolean, Any) => CompositeType,
     newtonsCradle: (Double, Double, Double, Double, Double) => CompositeType,
     pyramid: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType,
-    softBody: (Double, Double, Double, Double, Double, Double, Boolean, Double, js.Any, js.Any) => CompositeType,
+    softBody: (Double, Double, Double, Double, Double, Double, Boolean, Double, Any, Any) => CompositeType,
     stack: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType
   ): CompositesFactory = {
     val __obj = js.Dynamic.literal(car = js.Any.fromFunction5(car), chain = js.Any.fromFunction6(chain), mesh = js.Any.fromFunction5(mesh), newtonsCradle = js.Any.fromFunction5(newtonsCradle), pyramid = js.Any.fromFunction7(pyramid), softBody = js.Any.fromFunction10(softBody), stack = js.Any.fromFunction7(stack))
@@ -155,16 +155,16 @@ object CompositesFactory {
     
     inline def setCar(value: (Double, Double, Double, Double, Double) => CompositeType): Self = StObject.set(x, "car", js.Any.fromFunction5(value))
     
-    inline def setChain(value: (CompositeType, Double, Double, Double, Double, js.Any) => CompositeType): Self = StObject.set(x, "chain", js.Any.fromFunction6(value))
+    inline def setChain(value: (CompositeType, Double, Double, Double, Double, Any) => CompositeType): Self = StObject.set(x, "chain", js.Any.fromFunction6(value))
     
-    inline def setMesh(value: (CompositeType, Double, Double, Boolean, js.Any) => CompositeType): Self = StObject.set(x, "mesh", js.Any.fromFunction5(value))
+    inline def setMesh(value: (CompositeType, Double, Double, Boolean, Any) => CompositeType): Self = StObject.set(x, "mesh", js.Any.fromFunction5(value))
     
     inline def setNewtonsCradle(value: (Double, Double, Double, Double, Double) => CompositeType): Self = StObject.set(x, "newtonsCradle", js.Any.fromFunction5(value))
     
     inline def setPyramid(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = StObject.set(x, "pyramid", js.Any.fromFunction7(value))
     
     inline def setSoftBody(
-      value: (Double, Double, Double, Double, Double, Double, Boolean, Double, js.Any, js.Any) => CompositeType
+      value: (Double, Double, Double, Double, Double, Double, Boolean, Double, Any, Any) => CompositeType
     ): Self = StObject.set(x, "softBody", js.Any.fromFunction10(value))
     
     inline def setStack(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = StObject.set(x, "stack", js.Any.fromFunction7(value))

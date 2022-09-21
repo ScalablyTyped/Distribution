@@ -10,10 +10,10 @@ A framework for building brilliant applications
 | ------------------ | :-------------: |
 | Full name          | mithril |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 171 |
-| # downloads        | 1118249 |
-| # stars            | 22 |
+| # releases         | 30 |
+| # dependents       | 0.0 |
+| # downloads        | 68502.33333333333 |
+| # stars            | 13361.0 |
 
 ## Links
 - [Homepage](https://github.com/MithrilJS/mithril.js#readme)

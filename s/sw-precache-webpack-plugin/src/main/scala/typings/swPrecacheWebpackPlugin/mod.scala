@@ -1,19 +1,17 @@
 package typings.swPrecacheWebpackPlugin
 
-import typings.std.Plugin
-import typings.std.RegExp
 import typings.swPrecacheWebpackPlugin.anon.ChunkName
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sw-precache-webpack-plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("sw-precache-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
+  open class ^ () extends StObject {
     def this(options: Options) = this()
   }
   
@@ -33,7 +31,7 @@ object mod {
     
     var minify: js.UndefOr[Boolean] = js.undefined
     
-    var staticFileGlobsIgnorePatterns: js.UndefOr[js.Array[RegExp]] = js.undefined
+    var staticFileGlobsIgnorePatterns: js.UndefOr[js.Array[js.RegExp]] = js.undefined
   }
   object Options {
     
@@ -56,7 +54,7 @@ object mod {
       
       inline def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
       
-      inline def setImportScriptsVarargs(value: (String | ChunkName)*): Self = StObject.set(x, "importScripts", js.Array(value :_*))
+      inline def setImportScriptsVarargs(value: (String | ChunkName)*): Self = StObject.set(x, "importScripts", js.Array(value*))
       
       inline def setMergeStaticsConfig(value: Boolean): Self = StObject.set(x, "mergeStaticsConfig", value.asInstanceOf[js.Any])
       
@@ -66,11 +64,11 @@ object mod {
       
       inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      inline def setStaticFileGlobsIgnorePatterns(value: js.Array[RegExp]): Self = StObject.set(x, "staticFileGlobsIgnorePatterns", value.asInstanceOf[js.Any])
+      inline def setStaticFileGlobsIgnorePatterns(value: js.Array[js.RegExp]): Self = StObject.set(x, "staticFileGlobsIgnorePatterns", value.asInstanceOf[js.Any])
       
       inline def setStaticFileGlobsIgnorePatternsUndefined: Self = StObject.set(x, "staticFileGlobsIgnorePatterns", js.undefined)
       
-      inline def setStaticFileGlobsIgnorePatternsVarargs(value: RegExp*): Self = StObject.set(x, "staticFileGlobsIgnorePatterns", js.Array(value :_*))
+      inline def setStaticFileGlobsIgnorePatternsVarargs(value: js.RegExp*): Self = StObject.set(x, "staticFileGlobsIgnorePatterns", js.Array(value*))
     }
   }
   
@@ -82,7 +80,7 @@ object mod {
        with typings.swPrecache.mod.Options {
     
     @JSName("importScripts")
-    var importScripts__Options: js.UndefOr[js.Any] = js.undefined
+    var importScripts__Options: js.UndefOr[Any] = js.undefined
   }
   object _Options {
     
@@ -93,7 +91,7 @@ object mod {
     
     extension [Self <: _Options](x: Self) {
       
-      inline def setImportScripts(value: js.Any): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
+      inline def setImportScripts(value: Any): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
       
       inline def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
     }

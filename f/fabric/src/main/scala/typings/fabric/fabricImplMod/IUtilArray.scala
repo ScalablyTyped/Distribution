@@ -11,26 +11,26 @@ trait IUtilArray extends StObject {
     * @param array Array to iterate over
     * @param method Name of a method to invoke
     */
-  def invoke(array: js.Array[js.Any], method: String): js.Array[js.Any]
+  def invoke(array: js.Array[Any], method: String): js.Array[Any]
   
   /**
     * Finds maximum value in array (not necessarily "first" one)
     * @param array Array to iterate over
     */
-  def max(array: js.Array[js.Any], byProperty: String): js.Any
+  def max(array: js.Array[Any], byProperty: String): Any
   
   /**
     * Finds minimum value in array (not necessarily "first" one)
     * @param array Array to iterate over
     */
-  def min(array: js.Array[js.Any], byProperty: String): js.Any
+  def min(array: js.Array[Any], byProperty: String): Any
 }
 object IUtilArray {
   
   inline def apply(
-    invoke: (js.Array[js.Any], String) => js.Array[js.Any],
-    max: (js.Array[js.Any], String) => js.Any,
-    min: (js.Array[js.Any], String) => js.Any
+    invoke: (js.Array[Any], String) => js.Array[Any],
+    max: (js.Array[Any], String) => Any,
+    min: (js.Array[Any], String) => Any
   ): IUtilArray = {
     val __obj = js.Dynamic.literal(invoke = js.Any.fromFunction2(invoke), max = js.Any.fromFunction2(max), min = js.Any.fromFunction2(min))
     __obj.asInstanceOf[IUtilArray]
@@ -38,10 +38,10 @@ object IUtilArray {
   
   extension [Self <: IUtilArray](x: Self) {
     
-    inline def setInvoke(value: (js.Array[js.Any], String) => js.Array[js.Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+    inline def setInvoke(value: (js.Array[Any], String) => js.Array[Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
     
-    inline def setMax(value: (js.Array[js.Any], String) => js.Any): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+    inline def setMax(value: (js.Array[Any], String) => Any): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
     
-    inline def setMin(value: (js.Array[js.Any], String) => js.Any): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+    inline def setMin(value: (js.Array[Any], String) => Any): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
   }
 }

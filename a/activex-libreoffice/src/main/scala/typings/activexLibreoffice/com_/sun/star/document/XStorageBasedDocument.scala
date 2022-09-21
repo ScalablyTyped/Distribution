@@ -43,7 +43,7 @@ object XStorageBasedDocument {
     addStorageChangeListener: XStorageChangeListener => Unit,
     getDocumentStorage: () => XStorage,
     loadFromStorage: (XStorage, SeqEquiv[PropertyValue]) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeStorageChangeListener: XStorageChangeListener => Unit,
     storeToStorage: (XStorage, SeqEquiv[PropertyValue]) => Unit,

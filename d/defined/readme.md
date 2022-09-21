@@ -10,15 +10,12 @@ return the first argument that is `!== undefined`
 | ------------------ | :-------------: |
 | Full name          | defined |
 | Keywords           | undefined, short-circuit, ||, or, //, defined-or |
-| # releases         | 0 |
-| # dependents       | 300 |
-| # downloads        | 143961830 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3294248666666668E7 |
+| # stars            | 60.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/defined)
-- [Bugs](https://github.com/substack/defined/issues)
-- [Repository](https://github.com/substack/defined)
 - [Npm](https://www.npmjs.com/package/defined)
     
 

@@ -1,7 +1,6 @@
 package typings.writeFileAtomically
 
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import typings.writeFileAtomic.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,5 +15,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Data = String | Buffer | Uint8Array
+  type Data = String | Buffer | js.typedarray.Uint8Array
 }

@@ -21,10 +21,9 @@ object altContainerMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("alt/AltContainer", JSImport.Namespace)
   @js.native
-  class Class protected ()
-    extends Component[ContainerProps, ComponentState, js.Any] {
+  open class Class protected () extends Component[ContainerProps, ComponentState, Any] {
     def this(props: ContainerProps) = this()
-    def this(props: ContainerProps, context: js.Any) = this()
+    def this(props: ContainerProps, context: Any) = this()
   }
   
   type AltContainer = ReactElement
@@ -33,21 +32,21 @@ object altContainerMod extends Shortcut {
     
     var actions: js.UndefOr[StringDictionary[js.Object]] = js.undefined
     
-    var component: js.UndefOr[Component[js.Any, js.Object, js.Any]] = js.undefined
+    var component: js.UndefOr[Component[Any, js.Object, Any]] = js.undefined
     
     var flux: js.UndefOr[Alt] = js.undefined
     
-    var inject: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var inject: js.UndefOr[StringDictionary[Any]] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* repeated */ js.Any, ReactElement]] = js.undefined
+    var render: js.UndefOr[js.Function1[/* repeated */ Any, ReactElement]] = js.undefined
     
-    var shouldComponentUpdate: js.UndefOr[js.Function1[/* props */ js.Any, Boolean]] = js.undefined
+    var shouldComponentUpdate: js.UndefOr[js.Function1[/* props */ Any, Boolean]] = js.undefined
     
-    var store: js.UndefOr[AltStore[js.Any]] = js.undefined
+    var store: js.UndefOr[AltStore[Any]] = js.undefined
     
-    var stores: js.UndefOr[js.Array[AltStore[js.Any]]] = js.undefined
+    var stores: js.UndefOr[js.Array[AltStore[Any]]] = js.undefined
     
-    var transform: js.UndefOr[js.Function2[/* store */ AltStore[js.Any], /* actions */ js.Any, js.Any]] = js.undefined
+    var transform: js.UndefOr[js.Function2[/* store */ AltStore[Any], /* actions */ Any, Any]] = js.undefined
   }
   object ContainerProps {
     
@@ -62,7 +61,7 @@ object altContainerMod extends Shortcut {
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setComponent(value: Component[js.Any, js.Object, js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Component[Any, js.Object, Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -70,29 +69,29 @@ object altContainerMod extends Shortcut {
       
       inline def setFluxUndefined: Self = StObject.set(x, "flux", js.undefined)
       
-      inline def setInject(value: StringDictionary[js.Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: StringDictionary[Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
       inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      inline def setRender(value: /* repeated */ js.Any => ReactElement): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* repeated */ Any => ReactElement): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      inline def setShouldComponentUpdate(value: /* props */ js.Any => Boolean): Self = StObject.set(x, "shouldComponentUpdate", js.Any.fromFunction1(value))
+      inline def setShouldComponentUpdate(value: /* props */ Any => Boolean): Self = StObject.set(x, "shouldComponentUpdate", js.Any.fromFunction1(value))
       
       inline def setShouldComponentUpdateUndefined: Self = StObject.set(x, "shouldComponentUpdate", js.undefined)
       
-      inline def setStore(value: AltStore[js.Any]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: AltStore[Any]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
       inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      inline def setStores(value: js.Array[AltStore[js.Any]]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
+      inline def setStores(value: js.Array[AltStore[Any]]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
       
       inline def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
       
-      inline def setStoresVarargs(value: AltStore[js.Any]*): Self = StObject.set(x, "stores", js.Array(value :_*))
+      inline def setStoresVarargs(value: AltStore[Any]*): Self = StObject.set(x, "stores", js.Array(value*))
       
-      inline def setTransform(value: (/* store */ AltStore[js.Any], /* actions */ js.Any) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransform(value: (/* store */ AltStore[Any], /* actions */ Any) => Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }

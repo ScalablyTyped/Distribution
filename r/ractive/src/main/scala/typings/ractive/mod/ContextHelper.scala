@@ -1,6 +1,7 @@
 package typings.ractive.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -9,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ractive", "ContextHelper")
 @js.native
-class ContextHelper () extends StObject {
+open class ContextHelper () extends StObject {
   
   /** Add to the number at the given keypath
   	 * @param keypath a Context-relative keypath to a number
   	 * @param amount the amount to add to the target number - defaults to 1
   	 */
-  def add(keypath: String): js.Promise[Unit] = js.native
-  def add(keypath: String, amount: Double): js.Promise[Unit] = js.native
+  def add(keypath: String): js.Promise[Double] = js.native
+  def add(keypath: String, amount: Double): js.Promise[Double] = js.native
   
   /**
   	 * Animate the value at the given keypath from its current value to the given value.
@@ -24,11 +25,11 @@ class ContextHelper () extends StObject {
   	 * @param value the target value
   	 * @param opts
   	 */
-  def animate(keypath: String, value: js.Any): AnimatePromise = js.native
-  def animate(keypath: String, value: js.Any, opts: AnimateOpts): AnimatePromise = js.native
+  def animate(keypath: String, value: Any): AnimatePromise = js.native
+  def animate(keypath: String, value: Any, opts: AnimateOpts): AnimatePromise = js.native
   
   /** The source component for a bubbled event Context, if any. */
-  var component: js.UndefOr[Ractive[Ractive[js.Any]]] = js.native
+  var component: js.UndefOr[ComponentItem] = js.native
   
   /** A map of currently attached decorator handles, by name, that are associated with the element, if any, that this Context is associated with. */
   var decorators: Registry[DecoratorHandle] = js.native
@@ -37,30 +38,74 @@ class ContextHelper () extends StObject {
   var event: js.UndefOr[Event] = js.native
   
   /**
+  	 * Find an element in the DOM controlled by this instance.
+  	 * @param selector query used to find the first matching element
+  	 * @param opts
+  	 */
+  def find[U /* <: Element */](selector: String): U = js.native
+  def find[U /* <: Element */](selector: String, opts: FindOpts): U = js.native
+  
+  /**
+  	 * Find all of the elements in the DOM controlled by this instance that match the given selector.
+  	 * @param selector query used to match elements
+  	 * @param opts
+  	 */
+  def findAll[U /* <: Element */](selector: String): js.Array[U] = js.native
+  def findAll[U /* <: Element */](selector: String, opts: FindOpts): js.Array[U] = js.native
+  
+  /**
+  	 * Find all of the components belonging to this instance.
+  	 * @param opts
+  	 */
+  def findAllComponents[U /* <: Ractive[Ractive[Any]] */](): js.Array[U] = js.native
+  /**
+  	 * Find all of the components with the given name belonging to this instance.
+  	 * @param name
+  	 * @param opts
+  	 */
+  def findAllComponents[U /* <: Ractive[Ractive[Any]] */](name: String): js.Array[U] = js.native
+  def findAllComponents[U /* <: Ractive[Ractive[Any]] */](name: String, opts: FindOpts): js.Array[U] = js.native
+  def findAllComponents[U /* <: Ractive[Ractive[Any]] */](opts: FindOpts): js.Array[U] = js.native
+  
+  /**
+  	 * Find the first component belonging to this instance.
+  	 * @param opts
+  	 */
+  def findComponent[U /* <: Ractive[Ractive[Any]] */](): U = js.native
+  /**
+  	 * Find the first component with the given name belonging to this instance.
+  	 * @param name
+  	 * @param opts
+  	 */
+  def findComponent[U /* <: Ractive[Ractive[Any]] */](name: String): U = js.native
+  def findComponent[U /* <: Ractive[Ractive[Any]] */](name: String, opts: FindOpts): U = js.native
+  def findComponent[U /* <: Ractive[Ractive[Any]] */](opts: FindOpts): U = js.native
+  
+  /**
   	 * Retrieve the value associated with the current Context.
   	 * @param opts
   	 */
-  def get(): js.Any = js.native
+  def get[U](): U = js.native
   /**
   	 * Retrieve the value at the given keypath.
   	 * @param keypath a Context-relative keypath to the value
   	 * @param opts
   	 */
-  def get(keypath: String): js.Any = js.native
-  def get(keypath: String, opts: GetOpts): js.Any = js.native
-  def get(opts: GetOpts): js.Any = js.native
+  def get[U](keypath: String): U = js.native
+  def get[U](keypath: String, opts: GetOpts): U = js.native
+  def get[U](opts: GetOpts): U = js.native
   
   /**
   	 * Retrieve the value associated with the twoway binding of the element e.g. .value in <input value="{{.value}}" />.
   	 */
-  def getBinding(): js.Any = js.native
+  def getBinding(): Any = js.native
   
   /**
   	 * Resolve the keypath associated with the twoway binding of the element e.g. '.value' in <input value="{{.value}}" />.
   	 * @param ractive the instance against which to resolve the path
   	 */
   def getBindingPath(): String = js.native
-  def getBindingPath(ractive: Ractive[Ractive[js.Any]]): String = js.native
+  def getBindingPath(ractive: Ractive[Ractive[Any]]): String = js.native
   
   /**
   	 * Retrieve the Context that is the parent of this one e.g. for {{#with foo}} from the <div> in {{#with foo}}{{#with bar}}<div />{{/with}}{{/with}}.
@@ -107,20 +152,16 @@ class ContextHelper () extends StObject {
   	 * @param callback
   	 * @param opts
   	 */
-  def observe(keypath: String, callback: ObserverArrayCallback[Ractive[Ractive[js.Any]]]): ObserverHandle = js.native
-  def observe(
-    keypath: String,
-    callback: ObserverArrayCallback[Ractive[Ractive[js.Any]]],
-    opts: ObserverArrayOpts
-  ): ObserverHandle = js.native
+  def observe(keypath: String, callback: ObserverArrayCallback[Ractive[Ractive[Any]]]): ObserverHandle = js.native
+  def observe(keypath: String, callback: ObserverArrayCallback[Ractive[Ractive[Any]]], opts: ObserverArrayOpts): ObserverHandle = js.native
   /**
   	 * Create an observer at the given keypath that will be called when the value at that Context-relative keypath mutates.
   	 * @param keypath the keypath(s) to observe - multiple keypaths can be separated by a space
   	 * @param callback
   	 * @param opts
   	 */
-  def observe(keypath: String, callback: ObserverCallback[Ractive[Ractive[js.Any]]]): ObserverHandle = js.native
-  def observe(keypath: String, callback: ObserverCallback[Ractive[Ractive[js.Any]]], opts: ObserverOpts): ObserverHandle = js.native
+  def observe(keypath: String, callback: ObserverCallback[Ractive[Ractive[Any]]]): ObserverHandle = js.native
+  def observe(keypath: String, callback: ObserverCallback[Ractive[Ractive[Any]]], opts: ObserverOpts): ObserverHandle = js.native
   /**
   	 * Create a set of observers from the given map.
   	 * @param map Context-relative keypath -> callback pairs to observe
@@ -128,11 +169,11 @@ class ContextHelper () extends StObject {
   	 */
   def observe(
     map: StringDictionary[
-      ObserverArrayCallback[Ractive[Ractive[js.Any]]] | ObserverCallback[Ractive[Ractive[js.Any]]]
+      ObserverArrayCallback[Ractive[Ractive[Any]]] | ObserverCallback[Ractive[Ractive[Any]]]
     ]
   ): ObserverHandle = js.native
-  def observe(map: StringDictionary[ObserverArrayCallback[Ractive[Ractive[js.Any]]]], opts: ObserverArrayOpts): ObserverHandle = js.native
-  def observe(map: StringDictionary[ObserverCallback[Ractive[Ractive[js.Any]]]], opts: ObserverOpts): ObserverHandle = js.native
+  def observe(map: StringDictionary[ObserverArrayCallback[Ractive[Ractive[Any]]]], opts: ObserverArrayOpts): ObserverHandle = js.native
+  def observe(map: StringDictionary[ObserverCallback[Ractive[Ractive[Any]]]], opts: ObserverOpts): ObserverHandle = js.native
   
   /**
   	 * Create an observer at the given keypath that will be called the first time the value at that Context-relative keypath mutates. After that call, the observer will be automatically cancelled.
@@ -140,32 +181,28 @@ class ContextHelper () extends StObject {
   	 * @param callback
   	 * @param opts
   	 */
-  def observeOnce(keypath: String, callback: ObserverArrayCallback[Ractive[Ractive[js.Any]]]): ObserverHandle = js.native
-  def observeOnce(
-    keypath: String,
-    callback: ObserverArrayCallback[Ractive[Ractive[js.Any]]],
-    opts: ObserverArrayOpts
-  ): ObserverHandle = js.native
+  def observeOnce(keypath: String, callback: ObserverArrayCallback[Ractive[Ractive[Any]]]): ObserverHandle = js.native
+  def observeOnce(keypath: String, callback: ObserverArrayCallback[Ractive[Ractive[Any]]], opts: ObserverArrayOpts): ObserverHandle = js.native
   /**
   	 * Create an observer at the given keypath that will be called the first time the value at that Context-relative keypath mutates. After that call, the observer will be automatically cancelled.
   	 * @param keypath the keypath(s) to observer - multiple keypaths can be separated by a space
   	 * @param callback
   	 * @param opts
   	 */
-  def observeOnce(keypath: String, callback: ObserverCallback[Ractive[Ractive[js.Any]]]): ObserverHandle = js.native
-  def observeOnce(keypath: String, callback: ObserverCallback[Ractive[Ractive[js.Any]]], opts: ObserverOpts): ObserverHandle = js.native
+  def observeOnce(keypath: String, callback: ObserverCallback[Ractive[Ractive[Any]]]): ObserverHandle = js.native
+  def observeOnce(keypath: String, callback: ObserverCallback[Ractive[Ractive[Any]]], opts: ObserverOpts): ObserverHandle = js.native
   /**
   	 * Create a set of observers from the given map. After the first observed value from any of the set mutates, all of the observers will be cancelled.
   	 * @param map Context-relative keypath -> callback pairs to observe
-  	 * @returns an observer handle that controls all of the created observersj
+  	 * @returns an observer handle that controls all of the created observers
   	 */
   def observeOnce(
     map: StringDictionary[
-      ObserverArrayCallback[Ractive[Ractive[js.Any]]] | ObserverCallback[Ractive[Ractive[js.Any]]]
+      ObserverArrayCallback[Ractive[Ractive[Any]]] | ObserverCallback[Ractive[Ractive[Any]]]
     ]
   ): ObserverHandle = js.native
-  def observeOnce(map: StringDictionary[ObserverArrayCallback[Ractive[Ractive[js.Any]]]], opts: ObserverArrayOpts): ObserverHandle = js.native
-  def observeOnce(map: StringDictionary[ObserverCallback[Ractive[Ractive[js.Any]]]], opts: ObserverOpts): ObserverHandle = js.native
+  def observeOnce(map: StringDictionary[ObserverArrayCallback[Ractive[Ractive[Any]]]], opts: ObserverArrayOpts): ObserverHandle = js.native
+  def observeOnce(map: StringDictionary[ObserverCallback[Ractive[Ractive[Any]]]], opts: ObserverOpts): ObserverHandle = js.native
   
   /** The event associated with this Context, if any. */
   var original: js.UndefOr[Event] = js.native
@@ -181,20 +218,20 @@ class ContextHelper () extends StObject {
   	 * @param keypath keypath to the target array
   	 * @param values
   	 */
-  def push(keypath: String, values: js.Any*): ArrayPushPromise = js.native
+  def push(keypath: String, values: Any*): ArrayPushPromise = js.native
   
   /** The Ractive instance associated with this Context. */
-  var ractive: Ractive[Ractive[js.Any]] = js.native
+  var ractive: Ractive[Ractive[Any]] = js.native
   
-  def raise(event: String, context: js.Object, args: js.Any*): Unit = js.native
-  def raise(event: String, context: Unit, args: js.Any*): Unit = js.native
+  def raise(event: String, context: js.Object, args: Any*): Unit = js.native
+  def raise(event: String, context: Unit, args: Any*): Unit = js.native
   /**
   	 * Manually call a Ractive event handler on the element associated with this Context e.g. to trigger the 'event' handler <div on-event="..." />, use context.raise('event');
   	 * @param event the name of the event to trigger
   	 * @param context the optional context to supply to the event handler
   	 * @param args any additional args to supply to the event handler
   	 */
-  def raise(event: String, context: ContextHelper, args: js.Any*): Unit = js.native
+  def raise(event: String, context: ContextHelper, args: Any*): Unit = js.native
   
   /**
   	 * Get the source keypath for the given Context-relative keypath if it is a link.
@@ -211,23 +248,23 @@ class ContextHelper () extends StObject {
   	 */
   def resolve(): String = js.native
   def resolve(keypath: String): String = js.native
-  def resolve(keypath: String, ractive: Ractive[Ractive[js.Any]]): String = js.native
-  def resolve(keypath: Unit, ractive: Ractive[Ractive[js.Any]]): String = js.native
+  def resolve(keypath: String, ractive: Ractive[Ractive[Any]]): String = js.native
+  def resolve(keypath: Unit, ractive: Ractive[Ractive[Any]]): String = js.native
   
   /**
   	 * Reverse the array at the given Context-relative keypath.
-  	 * @param keypath keypath to the targret array
+  	 * @param keypath keypath to the target array
   	 */
   def reverse(keypath: String): ArraySplicePromise = js.native
   
   /**
-  	 * Set a value at the given Context-relative keypath. If any intermediate levels do not exist in the data, they will be created as appriate - objects for string keys and arrays for numeric keys.
+  	 * Set a value at the given Context-relative keypath. If any intermediate levels do not exist in the data, they will be created as appropriate - objects for string keys and arrays for numeric keys.
   	 * @param keypath
   	 * @param value the value to set
   	 * @param opts
   	 */
-  def set(keypath: String, value: js.Any): js.Promise[Unit] = js.native
-  def set(keypath: String, value: js.Any, opts: SetOpts): js.Promise[Unit] = js.native
+  def set(keypath: String, value: Any): js.Promise[Unit] = js.native
+  def set(keypath: String, value: Any, opts: SetOpts): js.Promise[Unit] = js.native
   /**
   	 * Set a set of values from the given map. All of the values will be set before any DOM changes are propagated, but the values will still be set in object order in the data, which can cause multiple invalidations on observers, bindings, and template nodes.j
   	 * @param map Context-relative keypath -> value pairs to be set
@@ -239,7 +276,7 @@ class ContextHelper () extends StObject {
   	 * Set the value associated with any twoway binding associated with this Context e.g. .value in <input value="{{.value}}" />.
   	 * @param value the target value
   	 */
-  def setBinding(value: js.Any): js.Promise[Unit] = js.native
+  def setBinding(value: Any): js.Promise[Unit] = js.native
   
   /**
   	 * Shift a value off of the array at the given Context-relative keypath.
@@ -250,8 +287,10 @@ class ContextHelper () extends StObject {
   /**
   	 * Sort the array at the given Context-relative keypath.
   	 * @param keypath
+  	 * @param compareFunction  A function that defines the sort order.
   	 */
-  def sort(keypath: String): ArraySplicePromise = js.native
+  def sort[Item](keypath: String): ArraySplicePromise = js.native
+  def sort[Item](keypath: String, compareFunction: js.Function2[/* a */ Item, /* b */ Item, Double]): ArraySplicePromise = js.native
   
   /**
   	 * Splice the array at the given Context-relative keypath.
@@ -260,15 +299,15 @@ class ContextHelper () extends StObject {
   	 * @param drop number of items to drop starting at the given index
   	 * @param add items to add at the given index
   	 */
-  def splice(keypath: String, index: Double, drop: Double, add: js.Any*): ArraySplicePromise = js.native
+  def splice(keypath: String, index: Double, drop: Double, add: Any*): ArraySplicePromise = js.native
   
   /**
   	 * Subtract an amount from the number at the given Context-relative keypath.
   	 * @param keypath
-  	 * @param amount the amount to subtrat from the value - defaults to 1
+  	 * @param amount the amount to subtract from the value - defaults to 1
   	 */
-  def subtract(keypath: String): js.Promise[Unit] = js.native
-  def subtract(keypath: String, amount: Double): js.Promise[Unit] = js.native
+  def subtract(keypath: String): js.Promise[Double] = js.native
+  def subtract(keypath: String, amount: Double): js.Promise[Double] = js.native
   
   /**
   	 * Toggle the value at the given Context-relative keypath. If it is truthy, set it to false, otherwise, set it to true.
@@ -294,7 +333,7 @@ class ContextHelper () extends StObject {
   	 * @param keypath
   	 * @param value
   	 */
-  def unshift(keypath: String, value: js.Any): ArrayPushPromise = js.native
+  def unshift(keypath: String, value: Any): ArrayPushPromise = js.native
   
   /**
   	 * Invalidate the model associated with the current Context. This will cause Ractive to check for any changes that may have happened directly to the data without going through a set or array method.

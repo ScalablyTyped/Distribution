@@ -10,13 +10,13 @@ trait MappableQuery[T] extends StObject {
 }
 object MappableQuery {
   
-  inline def apply[T](map: js.Function1[/* value */ T, js.Any] => Query[js.Any]): MappableQuery[T] = {
+  inline def apply[T](map: js.Function1[/* value */ T, Any] => Query[Any]): MappableQuery[T] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map))
     __obj.asInstanceOf[MappableQuery[T]]
   }
   
   extension [Self <: MappableQuery[?], T](x: Self & MappableQuery[T]) {
     
-    inline def setMap(value: js.Function1[/* value */ T, js.Any] => Query[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+    inline def setMap(value: js.Function1[/* value */ T, Any] => Query[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
   }
 }

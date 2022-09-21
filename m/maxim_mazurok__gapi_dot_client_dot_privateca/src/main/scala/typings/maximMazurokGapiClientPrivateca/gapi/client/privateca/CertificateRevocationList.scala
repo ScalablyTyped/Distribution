@@ -17,14 +17,17 @@ trait CertificateRevocationList extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList & TopLevel[Any]
   ] = js.undefined
   
-  /** Output only. The resource path for this CertificateRevocationList in the format `projects/∗/locations/∗/certificateAuthorities/∗/ certificateRevocationLists/ *`. */
+  /** Output only. The resource name for this CertificateRevocationList in the format `projects/ *‍/locations/ *‍/caPools/ *certificateAuthorities/ *‍/ certificateRevocationLists/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The PEM-encoded X.509 CRL. */
   var pemCrl: js.UndefOr[String] = js.undefined
+  
+  /** Output only. The revision ID of this CertificateRevocationList. A new revision is committed whenever a new CRL is published. The format is an 8-character hexadecimal string. */
+  var revisionId: js.UndefOr[String] = js.undefined
   
   /** Output only. The revoked serial numbers that appear in pem_crl. */
   var revokedCertificates: js.UndefOr[js.Array[RevokedCertificate]] = js.undefined
@@ -58,7 +61,7 @@ object CertificateRevocationList {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -71,11 +74,15 @@ object CertificateRevocationList {
     
     inline def setPemCrlUndefined: Self = StObject.set(x, "pemCrl", js.undefined)
     
+    inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    
     inline def setRevokedCertificates(value: js.Array[RevokedCertificate]): Self = StObject.set(x, "revokedCertificates", value.asInstanceOf[js.Any])
     
     inline def setRevokedCertificatesUndefined: Self = StObject.set(x, "revokedCertificates", js.undefined)
     
-    inline def setRevokedCertificatesVarargs(value: RevokedCertificate*): Self = StObject.set(x, "revokedCertificates", js.Array(value :_*))
+    inline def setRevokedCertificatesVarargs(value: RevokedCertificate*): Self = StObject.set(x, "revokedCertificates", js.Array(value*))
     
     inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
     

@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Grouping extends StObject {
   
+  /**
+    * Specifies whether filtering should be performed on the server.
+    */
   var filtering: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether grouping should be performed on the server.
+    */
   var grouping: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether sorting should be performed on the server.
+    */
   var sorting: js.UndefOr[Boolean] = js.undefined
 }
 object Grouping {

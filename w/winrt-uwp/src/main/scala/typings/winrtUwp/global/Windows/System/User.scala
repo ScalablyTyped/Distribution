@@ -41,7 +41,7 @@ abstract class User ()
     * @return When this method completes, it returns the requested property. If the property is missing or unavailable, an empty string is returned.
     */
   /* CompleteClass */
-  override def getPropertyAsync(value: String): IPromiseWithIAsyncOperation[js.Any] = js.native
+  override def getPropertyAsync(value: String): IPromiseWithIAsyncOperation[Any] = js.native
   
   /** Gets the user's non-roamable id. */
   /* CompleteClass */
@@ -69,14 +69,14 @@ object User {
     * @return When this method completes successfully, it returns a list (type IVectorView ) of Users .
     */
   /* static member */
-  inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   /**
     * Finds all users of a given type asynchronously.
     * @param type The type of users to find.
     * @return When this method completes successfully, it returns a list (type IVectorView ) of Users .
     */
   /* static member */
-  inline def findAllAsync(`type`: typings.winrtUwp.Windows.System.UserType): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def findAllAsync(`type`: typings.winrtUwp.Windows.System.UserType): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   /**
     * Finds all users of a given type and authentication status asynchronously.
     * @param type The type of users to find.
@@ -87,7 +87,7 @@ object User {
   inline def findAllAsync(
     `type`: typings.winrtUwp.Windows.System.UserType,
     status: typings.winrtUwp.Windows.System.UserAuthenticationStatus
-  ): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  ): IPromiseWithIAsyncOperation[IVectorView[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   
   /**
     * Gets a user with a given Id.

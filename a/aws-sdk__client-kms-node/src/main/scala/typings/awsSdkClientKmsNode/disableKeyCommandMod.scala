@@ -16,7 +16,7 @@ object disableKeyCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/DisableKeyCommand", "DisableKeyCommand")
   @js.native
-  class DisableKeyCommand protected ()
+  open class DisableKeyCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object disableKeyCommandMod {
     override val middlewareStack: MiddlewareStack[DisableKeyInput, DisableKeyOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[DisableKeyInput, DisableKeyOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DisableKeyInput, DisableKeyOutput] = js.native
   }
 }

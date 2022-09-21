@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-beautiful-dnd", "Droppable")
 @js.native
-class Droppable protected ()
-  extends Component[DroppableProps, js.Object, js.Any] {
+open class Droppable protected ()
+  extends Component[DroppableProps, js.Object, Any] {
   def this(props: DroppableProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: DroppableProps, context: js.Any) = this()
+  def this(props: DroppableProps, context: Any) = this()
 }

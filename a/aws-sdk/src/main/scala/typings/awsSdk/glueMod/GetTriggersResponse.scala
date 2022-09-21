@@ -33,6 +33,6 @@ object GetTriggersResponse {
     
     inline def setTriggersUndefined: Self = StObject.set(x, "Triggers", js.undefined)
     
-    inline def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "Triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "Triggers", js.Array(value*))
   }
 }

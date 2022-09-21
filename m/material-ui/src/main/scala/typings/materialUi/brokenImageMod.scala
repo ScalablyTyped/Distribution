@@ -10,10 +10,10 @@ object brokenImageMod {
   
   @JSImport("material-ui/svg-icons/image/broken-image", JSImport.Default)
   @js.native
-  class default () extends ImageBrokenImage
+  open class default () extends ImageBrokenImage
   
   @JSImport("material-ui/svg-icons/image/broken-image", "ImageBrokenImage")
   @js.native
-  class ImageBrokenImage ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageBrokenImage ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

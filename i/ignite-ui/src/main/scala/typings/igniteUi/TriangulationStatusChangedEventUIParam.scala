@@ -9,17 +9,17 @@ trait TriangulationStatusChangedEventUIParam extends StObject {
   /**
     * Used to get current status.
     */
-  var currentStatus: js.UndefOr[js.Any] = js.undefined
+  var currentStatus: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get reference to map object.
     */
-  var map: js.UndefOr[js.Any] = js.undefined
+  var map: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get reference to current series object.
     */
-  var series: js.UndefOr[js.Any] = js.undefined
+  var series: js.UndefOr[Any] = js.undefined
 }
 object TriangulationStatusChangedEventUIParam {
   
@@ -30,15 +30,15 @@ object TriangulationStatusChangedEventUIParam {
   
   extension [Self <: TriangulationStatusChangedEventUIParam](x: Self) {
     
-    inline def setCurrentStatus(value: js.Any): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
+    inline def setCurrentStatus(value: Any): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
     
     inline def setCurrentStatusUndefined: Self = StObject.set(x, "currentStatus", js.undefined)
     
-    inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
   }

@@ -1,15 +1,21 @@
 package typings.rcTabs
 
+import typings.rcMotion.cssmotionMod.CSSMotionProps
 import typings.rcTabs.anon.Direction
 import typings.rcTabs.anon.Event
 import typings.rcTabs.anon.Height
 import typings.rcTabs.rcTabsStrings.add
 import typings.rcTabs.rcTabsStrings.remove
-import typings.rcTabs.tabPaneMod.TabPaneProps
+import typings.rcTabs.tabNavListMod.TabNavListProps
+import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.Key
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.std.Element
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,6 +28,8 @@ object interfaceMod {
     var inkBar: js.UndefOr[Boolean] = js.undefined
     
     var tabPane: js.UndefOr[Boolean] = js.undefined
+    
+    var tabPaneMotion: js.UndefOr[CSSMotionProps] = js.undefined
   }
   object AnimatedConfig {
     
@@ -38,49 +46,194 @@ object interfaceMod {
       
       inline def setTabPane(value: Boolean): Self = StObject.set(x, "tabPane", value.asInstanceOf[js.Any])
       
+      inline def setTabPaneMotion(value: CSSMotionProps): Self = StObject.set(x, "tabPaneMotion", value.asInstanceOf[js.Any])
+      
+      inline def setTabPaneMotionUndefined: Self = StObject.set(x, "tabPaneMotion", js.undefined)
+      
       inline def setTabPaneUndefined: Self = StObject.set(x, "tabPane", js.undefined)
     }
   }
   
-  @js.native
   trait EditableConfig extends StObject {
     
-    var addIcon: js.UndefOr[ReactNode] = js.native
+    var addIcon: js.UndefOr[ReactNode] = js.undefined
     
-    @JSName("onEdit")
-    def onEdit_add(`type`: add, info: Event): Unit = js.native
-    @JSName("onEdit")
-    def onEdit_remove(`type`: remove, info: Event): Unit = js.native
+    def onEdit(`type`: add | remove, info: Event): Unit
     
-    var removeIcon: js.UndefOr[ReactNode] = js.native
+    var removeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var showAdd: js.UndefOr[Boolean] = js.native
+    var showAdd: js.UndefOr[Boolean] = js.undefined
+  }
+  object EditableConfig {
+    
+    inline def apply(onEdit: (add | remove, Event) => Unit): EditableConfig = {
+      val __obj = js.Dynamic.literal(onEdit = js.Any.fromFunction2(onEdit))
+      __obj.asInstanceOf[EditableConfig]
+    }
+    
+    extension [Self <: EditableConfig](x: Self) {
+      
+      inline def setAddIcon(value: ReactNode): Self = StObject.set(x, "addIcon", value.asInstanceOf[js.Any])
+      
+      inline def setAddIconUndefined: Self = StObject.set(x, "addIcon", js.undefined)
+      
+      inline def setOnEdit(value: (add | remove, Event) => Unit): Self = StObject.set(x, "onEdit", js.Any.fromFunction2(value))
+      
+      inline def setRemoveIcon(value: ReactNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
+      
+      inline def setShowAdd(value: Boolean): Self = StObject.set(x, "showAdd", value.asInstanceOf[js.Any])
+      
+      inline def setShowAddUndefined: Self = StObject.set(x, "showAdd", js.undefined)
+    }
   }
   
   type OnTabScroll = js.Function1[/* info */ Direction, Unit]
   
-  type RenderTabBar = js.Function2[/* props */ js.Any, /* DefaultTabBar */ ComponentType[js.Object], ReactElement]
+  type RenderTabBar = js.Function2[
+    /* props */ RenderTabBarProps, 
+    /* DefaultTabBar */ ComponentType[TabNavListProps], 
+    ReactElement
+  ]
   
-  trait Tab
-    extends StObject
-       with TabPaneProps {
+  @js.native
+  trait RenderTabBarProps extends StObject {
+    
+    var activeKey: String = js.native
+    
+    var animated: AnimatedConfig = js.native
+    
+    var editable: EditableConfig = js.native
+    
+    var extra: TabBarExtraContent = js.native
+    
+    var id: String = js.native
+    
+    var locale: TabsLocale = js.native
+    
+    var mobile: Boolean = js.native
+    
+    var moreIcon: ReactNode = js.native
+    
+    var moreTransitionName: String = js.native
+    
+    def onTabClick(key: String, e: KeyboardEvent[Element]): Unit = js.native
+    def onTabClick(key: String, e: MouseEvent[Element, NativeMouseEvent]): Unit = js.native
+    
+    var onTabScroll: OnTabScroll = js.native
+    
+    /** @deprecated It do not pass real TabPane node. Only for compatible usage.  */
+    var panes: ReactNode = js.native
+    
+    var rtl: Boolean = js.native
+    
+    var style: CSSProperties = js.native
+    
+    var tabBarGutter: Double = js.native
+    
+    var tabPosition: TabPosition = js.native
+  }
+  
+  /* Inlined parent std.Omit<rc-tabs.rc-tabs/es/TabPanelList/TabPane.TabPaneProps, 'tab'> */
+  trait Tab extends StObject {
+    
+    var active: js.UndefOr[Boolean] = js.undefined
+    
+    var animated: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
+    
+    var closable: js.UndefOr[Boolean] = js.undefined
+    
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
+    
+    var destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined
+    
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    var forceRender: js.UndefOr[Boolean] = js.undefined
+    
+    var id: js.UndefOr[String] = js.undefined
     
     var key: String
     
-    var node: ReactElement
+    var label: ReactNode
+    
+    var prefixCls: js.UndefOr[String] = js.undefined
+    
+    var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var tabKey: js.UndefOr[String] = js.undefined
   }
   object Tab {
     
-    inline def apply(key: String, node: ReactElement): Tab = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    inline def apply(key: String): Tab = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tab]
     }
     
     extension [Self <: Tab](x: Self) {
       
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      
+      inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+      
+      inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+      
+      inline def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
+      inline def setDestroyInactiveTabPane(value: Boolean): Self = StObject.set(x, "destroyInactiveTabPane", value.asInstanceOf[js.Any])
+      
+      inline def setDestroyInactiveTabPaneUndefined: Self = StObject.set(x, "destroyInactiveTabPane", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+      
+      inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setNode(value: ReactElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setTabKey(value: String): Self = StObject.set(x, "tabKey", value.asInstanceOf[js.Any])
+      
+      inline def setTabKeyUndefined: Self = StObject.set(x, "tabKey", js.undefined)
     }
   }
   

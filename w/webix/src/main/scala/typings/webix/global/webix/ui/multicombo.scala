@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.multicombo because var conflicts: $allowsClear, $compareValue_Original, $cssName, $height, $prepareValue_Original, $render_Original, $scope, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.multicombo")
+- typings.webix.webix.ui.multicombo because var conflicts: $allowsClear, $compareValue_Original, $cssName, $height, $prepareValue_Original, $render_Original, $scope, $setNode, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.multicombo")
 @js.native
-class multicombo ()
+open class multicombo ()
   extends typings.webix.mod.ui.multicombo

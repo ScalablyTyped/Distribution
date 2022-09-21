@@ -26,7 +26,7 @@ trait Category extends StObject {
   /* private */ @JSName("Outlook.Category_typekey")
   var OutlookDotCategory_typekey: Category
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -44,7 +44,7 @@ object Category {
     Color: OlCategoryColor,
     Name: String,
     OutlookDotCategory_typekey: Category,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     ShortcutKey: OlCategoryShortcutKey
   ): Category = {
@@ -73,7 +73,7 @@ object Category {
     
     inline def setOutlookDotCategory_typekey(value: Category): Self = StObject.set(x, "Outlook.Category_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

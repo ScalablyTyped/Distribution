@@ -1,8 +1,7 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.antd.anon.Direction
-import typings.antd.anon.GapDegree
 import typings.antd.antdStrings.active
 import typings.antd.antdStrings.bottom
 import typings.antd.antdStrings.butt
@@ -14,32 +13,18 @@ import typings.antd.antdStrings.round
 import typings.antd.antdStrings.square
 import typings.antd.antdStrings.success
 import typings.antd.antdStrings.top
-import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.CSSProperties
-import typings.react.mod.Component
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object progressProgressMod {
+object progressProgressMod extends Shortcut {
   
   @JSImport("antd/lib/progress/progress", JSImport.Default)
   @js.native
-  class default () extends Progress
-  /* static members */
-  object default {
-    
-    @JSImport("antd/lib/progress/progress", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd/lib/progress/progress", "default.defaultProps")
-    @js.native
-    def defaultProps: GapDegree = js.native
-    inline def defaultProps_=(x: GapDegree): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val default: FC[ProgressProps] = js.native
   
   trait FromToGradients extends StObject {
     
@@ -62,29 +47,27 @@ object progressProgressMod {
     }
   }
   
-  @js.native
-  trait Progress
-    extends Component[ProgressProps, js.Object, js.Any] {
+  /* Rewritten from type alias, can be one of: 
+    - typings.antd.anon.StringGradientsdirections
+    - typings.antd.anon.FromToGradientsdirections
+  */
+  trait ProgressGradient extends StObject
+  object ProgressGradient {
     
-    def getPercentNumber(): Double = js.native
+    inline def FromToGradientsdirections(from: String, to: String): typings.antd.anon.FromToGradientsdirections = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.antd.anon.FromToGradientsdirections]
+    }
     
-    def getProgressStatus(): success | normal | active | exception = js.native
-    
-    @JSName("renderProcessInfo")
-    def renderProcessInfo_active(prefixCls: String, progressStatus: active): Element | Null = js.native
-    @JSName("renderProcessInfo")
-    def renderProcessInfo_exception(prefixCls: String, progressStatus: exception): Element | Null = js.native
-    @JSName("renderProcessInfo")
-    def renderProcessInfo_normal(prefixCls: String, progressStatus: normal): Element | Null = js.native
-    @JSName("renderProcessInfo")
-    def renderProcessInfo_success(prefixCls: String, progressStatus: success): Element | Null = js.native
-    
-    def renderProgress(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
+    inline def StringGradientsdirections(): typings.antd.anon.StringGradientsdirections = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.antd.anon.StringGradientsdirections]
+    }
   }
   
-  type ProgressGradient = Direction & (StringGradients | FromToGradients)
-  
   trait ProgressProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -108,7 +91,7 @@ object progressProgressMod {
     
     var steps: js.UndefOr[Double] = js.undefined
     
-    var strokeColor: js.UndefOr[String | ProgressGradient] = js.undefined
+    var strokeColor: js.UndefOr[String | js.Array[String] | ProgressGradient] = js.undefined
     
     var strokeLinecap: js.UndefOr[butt | square | round] = js.undefined
     
@@ -135,6 +118,10 @@ object progressProgressMod {
     }
     
     extension [Self <: ProgressProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -176,9 +163,11 @@ object progressProgressMod {
       
       inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      inline def setStrokeColor(value: String | ProgressGradient): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String | js.Array[String] | ProgressGradient): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
       inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      
+      inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value*))
       
       inline def setStrokeLinecap(value: butt | square | round): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
@@ -266,4 +255,9 @@ object progressProgressMod {
       inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     }
   }
+  
+  type _To = FC[ProgressProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `progressProgressMod.foo` */
+  override def _to: FC[ProgressProps] = default
 }

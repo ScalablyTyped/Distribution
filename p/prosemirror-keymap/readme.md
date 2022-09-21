@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-keymap
 
-Typings are for version 1.0
+Typings are for version 1.2.0
 
 ## Library description:
 Keymap plugin for ProseMirror
@@ -10,10 +10,10 @@ Keymap plugin for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-keymap |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 117 |
-| # downloads        | 5172587 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1812581.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-keymap#readme)
@@ -24,7 +24,7 @@ Keymap plugin for ProseMirror
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

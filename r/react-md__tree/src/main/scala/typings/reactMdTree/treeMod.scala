@@ -12,5 +12,5 @@ object treeMod {
   
   @JSImport("@react-md/tree/types/Tree", "Tree")
   @js.native
-  val Tree: ForwardRefExoticComponent[TreeProps[js.Any] & RefAttributes[ListElement]] = js.native
+  val Tree: ForwardRefExoticComponent[TreeProps[Any] & RefAttributes[ListElement]] = js.native
 }

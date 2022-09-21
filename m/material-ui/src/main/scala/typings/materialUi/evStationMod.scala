@@ -10,10 +10,10 @@ object evStationMod {
   
   @JSImport("material-ui/svg-icons/maps/ev-station", JSImport.Default)
   @js.native
-  class default () extends MapsEvStation
+  open class default () extends MapsEvStation
   
   @JSImport("material-ui/svg-icons/maps/ev-station", "MapsEvStation")
   @js.native
-  class MapsEvStation ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsEvStation ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

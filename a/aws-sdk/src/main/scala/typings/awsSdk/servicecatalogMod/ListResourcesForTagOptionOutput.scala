@@ -33,6 +33,6 @@ object ListResourcesForTagOptionOutput {
     
     inline def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
     
-    inline def setResourceDetailsVarargs(value: ResourceDetail*): Self = StObject.set(x, "ResourceDetails", js.Array(value :_*))
+    inline def setResourceDetailsVarargs(value: ResourceDetail*): Self = StObject.set(x, "ResourceDetails", js.Array(value*))
   }
 }

@@ -66,61 +66,55 @@ object Spi {
     /** Represents actions common to SPI controller providers. */
     trait ISpiProvider extends StObject {
       
-      var getControllersAsync: js.Any
+      var getControllersAsync: Any
     }
     object ISpiProvider {
       
-      inline def apply(getControllersAsync: js.Any): ISpiProvider = {
+      inline def apply(getControllersAsync: Any): ISpiProvider = {
         val __obj = js.Dynamic.literal(getControllersAsync = getControllersAsync.asInstanceOf[js.Any])
         __obj.asInstanceOf[ISpiProvider]
       }
       
       extension [Self <: ISpiProvider](x: Self) {
         
-        inline def setGetControllersAsync(value: js.Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
+        inline def setGetControllersAsync(value: Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
       }
     }
     
     trait ProviderSpiConnectionSettings extends StObject {
       
-      var chipSelectLine: js.Any
+      var chipSelectLine: Any
       
       /* unmapped type */
-      var clockFrequency: js.Any
+      var clockFrequency: Any
       
       /* unmapped type */
-      var dataBitLength: js.Any
+      var dataBitLength: Any
       
       /* unmapped type */
-      var mode: js.Any
+      var mode: Any
       
       /* unmapped type */
-      var sharingMode: js.Any
+      var sharingMode: Any
     }
     object ProviderSpiConnectionSettings {
       
-      inline def apply(
-        chipSelectLine: js.Any,
-        clockFrequency: js.Any,
-        dataBitLength: js.Any,
-        mode: js.Any,
-        sharingMode: js.Any
-      ): ProviderSpiConnectionSettings = {
+      inline def apply(chipSelectLine: Any, clockFrequency: Any, dataBitLength: Any, mode: Any, sharingMode: Any): ProviderSpiConnectionSettings = {
         val __obj = js.Dynamic.literal(chipSelectLine = chipSelectLine.asInstanceOf[js.Any], clockFrequency = clockFrequency.asInstanceOf[js.Any], dataBitLength = dataBitLength.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], sharingMode = sharingMode.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProviderSpiConnectionSettings]
       }
       
       extension [Self <: ProviderSpiConnectionSettings](x: Self) {
         
-        inline def setChipSelectLine(value: js.Any): Self = StObject.set(x, "chipSelectLine", value.asInstanceOf[js.Any])
+        inline def setChipSelectLine(value: Any): Self = StObject.set(x, "chipSelectLine", value.asInstanceOf[js.Any])
         
-        inline def setClockFrequency(value: js.Any): Self = StObject.set(x, "clockFrequency", value.asInstanceOf[js.Any])
+        inline def setClockFrequency(value: Any): Self = StObject.set(x, "clockFrequency", value.asInstanceOf[js.Any])
         
-        inline def setDataBitLength(value: js.Any): Self = StObject.set(x, "dataBitLength", value.asInstanceOf[js.Any])
+        inline def setDataBitLength(value: Any): Self = StObject.set(x, "dataBitLength", value.asInstanceOf[js.Any])
         
-        inline def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        inline def setSharingMode(value: js.Any): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
+        inline def setSharingMode(value: Any): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
       }
     }
   }

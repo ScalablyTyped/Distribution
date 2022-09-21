@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeltaSyncConfig extends StObject {
   
   /**
-    * The number of minutes an Item is stored in the datasource.
+    * The number of minutes that an Item is stored in the data source.
     */
   var baseTableTTL: js.UndefOr[Long] = js.undefined
   
@@ -17,7 +17,7 @@ trait DeltaSyncConfig extends StObject {
   var deltaSyncTableName: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of minutes a Delta Sync log entry is stored in the Delta Sync table.
+    * The number of minutes that a Delta Sync log entry is stored in the Delta Sync table.
     */
   var deltaSyncTableTTL: js.UndefOr[Long] = js.undefined
 }

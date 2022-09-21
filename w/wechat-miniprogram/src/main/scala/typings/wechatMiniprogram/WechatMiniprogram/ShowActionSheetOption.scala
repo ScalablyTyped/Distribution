@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ShowActionSheetOption extends StObject {
   
+  /** 警示文案
+    *
+    * 最低基础库： `2.14.0` */
+  var alertText: js.UndefOr[String] = js.undefined
+  
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[ShowActionSheetCompleteCallback] = js.undefined
   
@@ -30,6 +35,10 @@ object ShowActionSheetOption {
   
   extension [Self <: ShowActionSheetOption](x: Self) {
     
+    inline def setAlertText(value: String): Self = StObject.set(x, "alertText", value.asInstanceOf[js.Any])
+    
+    inline def setAlertTextUndefined: Self = StObject.set(x, "alertText", js.undefined)
+    
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
@@ -44,7 +53,7 @@ object ShowActionSheetOption {
     
     inline def setItemList(value: js.Array[String]): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
     
-    inline def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value :_*))
+    inline def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value*))
     
     inline def setSuccess(value: /* result */ ShowActionSheetSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

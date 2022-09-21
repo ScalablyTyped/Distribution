@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx-devtools-mst
 
-Typings are for version 0.9
+Typings are for version 0.9.30
 
 ## Library description:
 Allows debugging mobx-state-tree roots. See [mobx-devtools/README.md](https://github.com/mobxjs/mobx-devtools/blob/master/README.md#mobx-state-tree).
@@ -10,10 +10,10 @@ Allows debugging mobx-state-tree roots. See [mobx-devtools/README.md](https://gi
 | ------------------ | :-------------: |
 | Full name          | mobx-devtools-mst |
 | Keywords           | mobx, mobx-state-tree, mst, devtools |
-| # releases         | 10 |
-| # dependents       | 3 |
-| # downloads        | 154987 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 45713.333333333336 |
+| # stars            | 449.0 |
 
 ## Links
 - [Homepage](https://mobxjs.github.io/mobx)
@@ -24,7 +24,7 @@ Allows debugging mobx-state-tree roots. See [mobx-devtools/README.md](https://gi
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

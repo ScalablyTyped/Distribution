@@ -10,10 +10,10 @@ async nexttickmethod as module.
 | ------------------ | :-------------: |
 | Full name          | async.nexttick |
 | Keywords           | async, async-modularized, nexttick |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 104925 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4153.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/caolan/async)

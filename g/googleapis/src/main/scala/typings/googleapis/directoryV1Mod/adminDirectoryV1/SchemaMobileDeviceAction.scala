@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON request template for firing commands on Mobile Device in Directory
-  * Devices API.
-  */
 trait SchemaMobileDeviceAction extends StObject {
   
   /**
-    * Action to be taken on the Mobile Device
+    * The action to be performed on the device.
     */
-  var action: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMobileDeviceAction {
   
@@ -25,6 +21,8 @@ object SchemaMobileDeviceAction {
   extension [Self <: SchemaMobileDeviceAction](x: Self) {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionNull: Self = StObject.set(x, "action", null)
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
   }

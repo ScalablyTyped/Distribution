@@ -16,38 +16,38 @@ object linterMod {
   
   @JSImport("tslint/lib/linter", "Linter")
   @js.native
-  class Linter protected () extends StObject {
+  open class Linter protected () extends StObject {
     def this(options: ILinterOptions) = this()
     def this(options: ILinterOptions, program: Program) = this()
     
-    /* private */ var applyAllFixes: js.Any = js.native
+    /* private */ var applyAllFixes: Any = js.native
     
     /* protected */ def applyFixes(sourceFilePath: String, source: String, fixableFailures: js.Array[RuleFailure]): String = js.native
     
-    /* private */ var applyRule: js.Any = js.native
+    /* private */ var applyRule: Any = js.native
     
-    /* private */ var failures: js.Any = js.native
+    /* private */ var failures: Any = js.native
     
-    /* private */ val fileNames: js.Any = js.native
+    /* private */ val fileNames: Any = js.native
     
-    /* private */ var fixes: js.Any = js.native
+    /* private */ var fixes: Any = js.native
     
-    /* private */ var getAllFailures: js.Any = js.native
+    /* private */ var getAllFailures: Any = js.native
     
-    /* private */ var getEnabledRules: js.Any = js.native
+    /* private */ var getEnabledRules: Any = js.native
     
     def getResult(): LintResult = js.native
     
-    /* private */ var getSourceFile: js.Any = js.native
+    /* private */ var getSourceFile: Any = js.native
     
     def lint(fileName: String, source: String): Unit = js.native
     def lint(fileName: String, source: String, configuration: IConfigurationFile): Unit = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val options: Any = js.native
     
-    /* private */ var program: js.Any = js.native
+    /* private */ var program: Any = js.native
     
-    /* private */ var updateProgram: js.Any = js.native
+    /* private */ var updateProgram: Any = js.native
   }
   /* static members */
   object Linter {

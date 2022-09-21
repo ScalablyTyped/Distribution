@@ -29,8 +29,7 @@ object mod {
   
   @JSImport("reactour", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactourProps, ReactourState, js.Any]
+  open class default () extends Component[ReactourProps, ReactourState, Any]
   
   inline def Arrow(props: ArrowProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Arrow")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
@@ -94,7 +93,7 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped 'span' extends react.react.ComponentClass<infer P, react.react.ComponentState> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'span'>> : react.react.PropsWithRef<react.react.ComponentProps<'span'>> */ trait BadgeProps extends StObject {
+  - Dropped 'span' extends new (props : infer P): react.react.Component<any, any, any> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'span'>> : react.react.PropsWithRef<react.react.ComponentProps<'span'>> */ trait BadgeProps extends StObject {
     
     var accentColor: js.UndefOr[String] = js.undefined
   }
@@ -138,8 +137,45 @@ object mod {
   
   type ControlsProps = ComponentPropsWithRef[div]
   
+  trait CustomHelperProps extends StObject {
+    
+    def close(): Unit
+    
+    var content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode])
+    
+    var current: Double
+    
+    def gotoStep(step: Double): Unit
+    
+    var totalSteps: Double
+  }
+  object CustomHelperProps {
+    
+    inline def apply(close: () => Unit, current: Double, gotoStep: Double => Unit, totalSteps: Double): CustomHelperProps = {
+      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), current = current.asInstanceOf[js.Any], gotoStep = js.Any.fromFunction1(gotoStep), totalSteps = totalSteps.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CustomHelperProps]
+    }
+    
+    extension [Self <: CustomHelperProps](x: Self) {
+      
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      
+      inline def setContent(value: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentFunction1(value: /* args */ ReactourStepContentArgs => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      
+      inline def setGotoStep(value: Double => Unit): Self = StObject.set(x, "gotoStep", js.Any.fromFunction1(value))
+      
+      inline def setTotalSteps(value: Double): Self = StObject.set(x, "totalSteps", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped 'button' extends react.react.ComponentClass<infer P, react.react.ComponentState> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'button'>> : react.react.PropsWithRef<react.react.ComponentProps<'button'>> */ trait DotProps extends StObject {
+  - Dropped 'button' extends new (props : infer P): react.react.Component<any, any, any> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'button'>> : react.react.PropsWithRef<react.react.ComponentProps<'button'>> */ trait DotProps extends StObject {
     
     var accentColor: js.UndefOr[String] = js.undefined
     
@@ -219,6 +255,11 @@ object mod {
   }
   
   trait ReactourProps extends StObject {
+    
+    /**
+      * CustomHelper component
+      */
+    var CustomHelper: js.UndefOr[js.Function1[/* hasProps */ CustomHelperProps, ReactElement]] = js.undefined
     
     /**
       * Change `--reactour-accent` _(defaults to accentColor on IE)_ css custom prop to apply color in _Helper_, number, dots, etc
@@ -453,6 +494,10 @@ object mod {
       
       inline def setCloseWithMaskUndefined: Self = StObject.set(x, "closeWithMask", js.undefined)
       
+      inline def setCustomHelper(value: /* hasProps */ CustomHelperProps => ReactElement): Self = StObject.set(x, "CustomHelper", js.Any.fromFunction1(value))
+      
+      inline def setCustomHelperUndefined: Self = StObject.set(x, "CustomHelper", js.undefined)
+      
       inline def setDisableDotsNavigation(value: Boolean): Self = StObject.set(x, "disableDotsNavigation", value.asInstanceOf[js.Any])
       
       inline def setDisableDotsNavigationUndefined: Self = StObject.set(x, "disableDotsNavigation", js.undefined)
@@ -469,7 +514,7 @@ object mod {
       
       inline def setDisableKeyboardNavigationUndefined: Self = StObject.set(x, "disableKeyboardNavigation", js.undefined)
       
-      inline def setDisableKeyboardNavigationVarargs(value: (esc | right | left)*): Self = StObject.set(x, "disableKeyboardNavigation", js.Array(value :_*))
+      inline def setDisableKeyboardNavigationVarargs(value: (esc | right | left)*): Self = StObject.set(x, "disableKeyboardNavigation", js.Array(value*))
       
       inline def setGetCurrentStep(value: /* currentStep */ Double => Unit): Self = StObject.set(x, "getCurrentStep", js.Any.fromFunction1(value))
       
@@ -565,7 +610,7 @@ object mod {
       
       inline def setSteps(value: js.Array[ReactourStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: ReactourStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: ReactourStep*): Self = StObject.set(x, "steps", js.Array(value*))
       
       inline def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
@@ -680,7 +725,7 @@ object mod {
     /**
       * Action that can be executed on target element of the step
       */
-    var action: js.UndefOr[js.Function1[/* domNode */ js.Any, Unit]] = js.undefined
+    var action: js.UndefOr[js.Function1[/* domNode */ Any, Unit]] = js.undefined
     
     /**
       * Content of the step
@@ -688,14 +733,43 @@ object mod {
     var content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode])
     
     /**
+      * Array of selectors, each selected node will be included (by union)
+      * in the highlighted region of the mask. You don't need to add the
+      * step selector here as the default highlighted region is focused on it
+      */
+    var highlightedSelectors: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Array of selectors, each selected node DOM addition/removal will triggered a rerender
+      * of the mask shape. Useful in combinaison with highlightedSelectors when highlighted
+      * region of mask should be redrawn after a user action
+      */
+    var mutationObservables: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
       * Text read to screen reader software for this step's navigation dot
       */
     var navDotAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
+      * Observe direct children DOM mutations of this node
+      * If a child is added: the highlighted region is redrawn focused on it
+      * If a child is removed: the highlighted region is redrawn focused on the step selector
+      */
+    var observe: js.UndefOr[String] = js.undefined
+    
+    /**
       * Position of step content
       */
     var position: js.UndefOr[ReactourStepPosition | (js.Tuple2[Double, Double])] = js.undefined
+    
+    /**
+      * Array of selectors, each selected node resize will triggered a rerender of the mask shape.
+      * Useful in combinaison with highlightedSelectors when highlighted region of mask should
+      * be redrawn after a user action. You should also add the selector in mutationObservables
+      * if you want to track DOM addition/removal too
+      */
+    var resizeObservables: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * DOM selector to find the target element
@@ -723,7 +797,7 @@ object mod {
     
     extension [Self <: ReactourStep](x: Self) {
       
-      inline def setAction(value: /* domNode */ js.Any => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: /* domNode */ Any => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -733,13 +807,35 @@ object mod {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
+      inline def setHighlightedSelectors(value: js.Array[String]): Self = StObject.set(x, "highlightedSelectors", value.asInstanceOf[js.Any])
+      
+      inline def setHighlightedSelectorsUndefined: Self = StObject.set(x, "highlightedSelectors", js.undefined)
+      
+      inline def setHighlightedSelectorsVarargs(value: String*): Self = StObject.set(x, "highlightedSelectors", js.Array(value*))
+      
+      inline def setMutationObservables(value: js.Array[String]): Self = StObject.set(x, "mutationObservables", value.asInstanceOf[js.Any])
+      
+      inline def setMutationObservablesUndefined: Self = StObject.set(x, "mutationObservables", js.undefined)
+      
+      inline def setMutationObservablesVarargs(value: String*): Self = StObject.set(x, "mutationObservables", js.Array(value*))
+      
       inline def setNavDotAriaLabel(value: String): Self = StObject.set(x, "navDotAriaLabel", value.asInstanceOf[js.Any])
       
       inline def setNavDotAriaLabelUndefined: Self = StObject.set(x, "navDotAriaLabel", js.undefined)
       
+      inline def setObserve(value: String): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
+      
+      inline def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
+      
       inline def setPosition(value: ReactourStepPosition | (js.Tuple2[Double, Double])): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      
+      inline def setResizeObservables(value: js.Array[String]): Self = StObject.set(x, "resizeObservables", value.asInstanceOf[js.Any])
+      
+      inline def setResizeObservablesUndefined: Self = StObject.set(x, "resizeObservables", js.undefined)
+      
+      inline def setResizeObservablesVarargs(value: String*): Self = StObject.set(x, "resizeObservables", js.Array(value*))
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
@@ -805,5 +901,5 @@ object mod {
     inline def top: typings.reactour.reactourStrings.top = "top".asInstanceOf[typings.reactour.reactourStrings.top]
   }
   
-  type Tour = Component[ReactourProps, ReactourState, js.Any]
+  type Tour = Component[ReactourProps, ReactourState, Any]
 }

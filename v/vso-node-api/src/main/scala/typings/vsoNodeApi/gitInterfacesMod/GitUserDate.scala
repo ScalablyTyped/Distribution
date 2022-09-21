@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait GitUserDate extends StObject {
   /**
     * Date of the Git operation.
     */
-  var date: Date
+  var date: js.Date
   
   /**
     * Email address of the user performing the Git operation.
@@ -24,14 +23,14 @@ trait GitUserDate extends StObject {
 }
 object GitUserDate {
   
-  inline def apply(date: Date, email: String, name: String): GitUserDate = {
+  inline def apply(date: js.Date, email: String, name: String): GitUserDate = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitUserDate]
   }
   
   extension [Self <: GitUserDate](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

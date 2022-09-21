@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OLEControl")
 @js.native
-/* private */ class OLEControl ()
+/* private */ open class OLEControl ()
   extends StObject
      with typings.activexWord.Word.OLEControl {
   
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var AltHTML: String = js.native
   
   /* CompleteClass */
-  override val Automation: js.Any = js.native
+  override val Automation: Any = js.native
   
   /* CompleteClass */
   override def Copy(): Unit = js.native

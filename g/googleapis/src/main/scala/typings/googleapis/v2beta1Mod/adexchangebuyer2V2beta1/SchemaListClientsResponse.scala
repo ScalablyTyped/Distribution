@@ -12,11 +12,9 @@ trait SchemaListClientsResponse extends StObject {
   var clients: js.UndefOr[js.Array[SchemaClient]] = js.undefined
   
   /**
-    * A token to retrieve the next page of results. Pass this value in the
-    * ListClientsRequest.pageToken field in the subsequent call to the
-    * accounts.clients.list method to retrieve the next page of results.
+    * A token to retrieve the next page of results. Pass this value in the ListClientsRequest.pageToken field in the subsequent call to the accounts.clients.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListClientsResponse {
   
@@ -31,9 +29,11 @@ object SchemaListClientsResponse {
     
     inline def setClientsUndefined: Self = StObject.set(x, "clients", js.undefined)
     
-    inline def setClientsVarargs(value: SchemaClient*): Self = StObject.set(x, "clients", js.Array(value :_*))
+    inline def setClientsVarargs(value: SchemaClient*): Self = StObject.set(x, "clients", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

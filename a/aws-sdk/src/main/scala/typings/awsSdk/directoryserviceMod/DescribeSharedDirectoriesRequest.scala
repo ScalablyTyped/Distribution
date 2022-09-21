@@ -49,6 +49,6 @@ object DescribeSharedDirectoriesRequest {
     
     inline def setSharedDirectoryIdsUndefined: Self = StObject.set(x, "SharedDirectoryIds", js.undefined)
     
-    inline def setSharedDirectoryIdsVarargs(value: DirectoryId*): Self = StObject.set(x, "SharedDirectoryIds", js.Array(value :_*))
+    inline def setSharedDirectoryIdsVarargs(value: DirectoryId*): Self = StObject.set(x, "SharedDirectoryIds", js.Array(value*))
   }
 }

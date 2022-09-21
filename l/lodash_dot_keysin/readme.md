@@ -10,10 +10,10 @@ The lodash method `_.keysIn` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.keysin |
 | Keywords           | lodash-modularized, keysin |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 14882482 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1016302.3333333334 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

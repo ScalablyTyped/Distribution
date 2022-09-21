@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-calendar
 
-Typings are for version 3.1
+Typings are for version 3.5
 
 ## Library description:
 Ultimate calendar for your React app.
@@ -10,10 +10,10 @@ Ultimate calendar for your React app.
 | ------------------ | :-------------: |
 | Full name          | react-calendar |
 | Keywords           | calendar, date, date-picker, month-picker, react |
-| # releases         | 16 |
-| # dependents       | 92 |
-| # downloads        | 6082828 |
-| # stars            | 3 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1421809.6666666667 |
+| # stars            | 2565.0 |
 
 ## Links
 - [Homepage](https://github.com/wojtekmaj/react-calendar#readme)

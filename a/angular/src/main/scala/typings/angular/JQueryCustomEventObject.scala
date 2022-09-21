@@ -13,5 +13,5 @@ trait JQueryCustomEventObject
     * @see {@link https://api.jquery.com/category/events/event-object/}
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent}
     */
-  var detail: js.UndefOr[js.Any] = js.native
+  var detail: js.UndefOr[Any] = js.native
 }

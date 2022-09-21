@@ -118,7 +118,7 @@ object XChartDocument {
     hasInternalDataProvider: () => Boolean,
     isOpenGLChart: () => Boolean,
     lockControllers: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setChartTypeManager: XChartTypeManager => Unit,

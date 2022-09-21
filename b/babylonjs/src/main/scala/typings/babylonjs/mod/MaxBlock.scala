@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "MaxBlock")
 @js.native
-class MaxBlock protected ()
+open class MaxBlock protected ()
   extends typings.babylonjs.legacyMod.MaxBlock {
   /**
     * Creates a new MaxBlock

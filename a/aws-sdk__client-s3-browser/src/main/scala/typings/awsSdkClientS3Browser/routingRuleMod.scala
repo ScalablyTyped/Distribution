@@ -8,5 +8,5 @@ object routingRuleMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_RoutingRule", "_RoutingRule")
   @js.native
-  val RoutingRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RoutingRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

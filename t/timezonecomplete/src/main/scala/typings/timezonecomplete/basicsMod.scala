@@ -1,6 +1,5 @@
 package typings.timezonecomplete
 
-import typings.std.Date
 import typings.timezonecomplete.javascriptMod.DateFunctions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ object basicsMod {
   
   @JSImport("timezonecomplete/dist/lib/basics", "TimeStruct")
   @js.native
-  class TimeStruct protected () extends StObject {
+  open class TimeStruct protected () extends StObject {
     /**
       * Constructor
       *
@@ -34,12 +33,12 @@ object basicsMod {
     /**
       * The time value in separate year/month/... components
       */
-    /* private */ var _components: js.Any = js.native
+    /* private */ var _components: Any = js.native
     
     /**
       * The time value in unix milliseconds
       */
-    /* private */ var _unixMillis: js.Any = js.native
+    /* private */ var _unixMillis: Any = js.native
     
     def components: TimeComponents = js.native
     
@@ -121,7 +120,7 @@ object basicsMod {
       * @param df Which functions to take (getX() or getUTCX())
       * @throws nothing
       */
-    inline def fromDate(d: Date, df: DateFunctions): TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(d.asInstanceOf[js.Any], df.asInstanceOf[js.Any])).asInstanceOf[TimeStruct]
+    inline def fromDate(d: js.Date, df: DateFunctions): TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(d.asInstanceOf[js.Any], df.asInstanceOf[js.Any])).asInstanceOf[TimeStruct]
     
     /**
       * Returns a TimeStruct from an ISO 8601 string WITHOUT time zone

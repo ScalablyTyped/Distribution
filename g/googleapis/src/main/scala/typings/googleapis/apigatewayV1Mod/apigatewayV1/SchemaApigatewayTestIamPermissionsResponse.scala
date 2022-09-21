@@ -1,0 +1,31 @@
+package typings.googleapis.apigatewayV1Mod.apigatewayV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaApigatewayTestIamPermissionsResponse extends StObject {
+  
+  /**
+    * A subset of `TestPermissionsRequest.permissions` that the caller is allowed.
+    */
+  var permissions: js.UndefOr[js.Array[String] | Null] = js.undefined
+}
+object SchemaApigatewayTestIamPermissionsResponse {
+  
+  inline def apply(): SchemaApigatewayTestIamPermissionsResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaApigatewayTestIamPermissionsResponse]
+  }
+  
+  extension [Self <: SchemaApigatewayTestIamPermissionsResponse](x: Self) {
+    
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionsNull: Self = StObject.set(x, "permissions", null)
+    
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
+  }
+}

@@ -46,7 +46,7 @@ trait ITypedValue extends StObject {
   
   def Serialize(): js.Array[Double]
   
-  def SetValue(DataType: MFDataType, Value: js.Any): Unit
+  def SetValue(DataType: MFDataType, Value: Any): Unit
   
   def SetValueToLookup(Lookup: ILookup): Unit
   
@@ -56,7 +56,7 @@ trait ITypedValue extends StObject {
   
   def Unserialize(Bytes: js.Array[Double], ReadFromOldSerializingFormat: Boolean): Unit
   
-  var Value: js.Any
+  var Value: Any
 }
 object ITypedValue {
   
@@ -77,12 +77,12 @@ object ITypedValue {
     IsNULL: () => Boolean,
     IsUninitialized: () => Boolean,
     Serialize: () => js.Array[Double],
-    SetValue: (MFDataType, js.Any) => Unit,
+    SetValue: (MFDataType, Any) => Unit,
     SetValueToLookup: ILookup => Unit,
     SetValueToMultiSelectLookup: ILookups => Unit,
     SetValueToNULL: MFDataType => Unit,
     Unserialize: (js.Array[Double], Boolean) => Unit,
-    Value: js.Any
+    Value: Any
   ): ITypedValue = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), CompareTo = js.Any.fromFunction1(CompareTo), DataType = DataType.asInstanceOf[js.Any], DisplayValue = DisplayValue.asInstanceOf[js.Any], GetLookupID = js.Any.fromFunction0(GetLookupID), GetValueAsLocalizedText = js.Any.fromFunction0(GetValueAsLocalizedText), GetValueAsLookup = js.Any.fromFunction0(GetValueAsLookup), GetValueAsLookups = js.Any.fromFunction0(GetValueAsLookups), GetValueAsText = js.Any.fromFunction6(GetValueAsText), GetValueAsTextWithExpression = js.Any.fromFunction2(GetValueAsTextWithExpression), GetValueAsTimestamp = js.Any.fromFunction0(GetValueAsTimestamp), GetValueAsUnlocalizedText = js.Any.fromFunction0(GetValueAsUnlocalizedText), IsNULL = js.Any.fromFunction0(IsNULL), IsUninitialized = js.Any.fromFunction0(IsUninitialized), Serialize = js.Any.fromFunction0(Serialize), SetValue = js.Any.fromFunction2(SetValue), SetValueToLookup = js.Any.fromFunction1(SetValueToLookup), SetValueToMultiSelectLookup = js.Any.fromFunction1(SetValueToMultiSelectLookup), SetValueToNULL = js.Any.fromFunction1(SetValueToNULL), Unserialize = js.Any.fromFunction2(Unserialize), Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITypedValue]
@@ -122,7 +122,7 @@ object ITypedValue {
     
     inline def setSerialize(value: () => js.Array[Double]): Self = StObject.set(x, "Serialize", js.Any.fromFunction0(value))
     
-    inline def setSetValue(value: (MFDataType, js.Any) => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (MFDataType, Any) => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction2(value))
     
     inline def setSetValueToLookup(value: ILookup => Unit): Self = StObject.set(x, "SetValueToLookup", js.Any.fromFunction1(value))
     
@@ -132,6 +132,6 @@ object ITypedValue {
     
     inline def setUnserialize(value: (js.Array[Double], Boolean) => Unit): Self = StObject.set(x, "Unserialize", js.Any.fromFunction2(value))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

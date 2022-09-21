@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListBackupsInput extends StObject {
   
   /**
-    * The backups from the table specified by BackupType are listed. Where BackupType can be:    USER - On-demand backup created by you.    SYSTEM - On-demand backup automatically created by DynamoDB.    ALL - All types of on-demand backups (USER and SYSTEM).  
+    * The backups from the table specified by BackupType are listed. Where BackupType can be:    USER - On-demand backup created by you. (The default setting if no other backup types are specified.)    SYSTEM - On-demand backup automatically created by DynamoDB.    ALL - All types of on-demand backups (USER and SYSTEM).  
     */
   var BackupType: js.UndefOr[BackupTypeFilter] = js.undefined
   
@@ -29,12 +29,12 @@ trait ListBackupsInput extends StObject {
   /**
     * Only backups created after this time are listed. TimeRangeLowerBound is inclusive.
     */
-  var TimeRangeLowerBound: js.UndefOr[typings.awsSdk.dynamodbMod.TimeRangeLowerBound] = js.undefined
+  var TimeRangeLowerBound: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Only backups created before this time are listed. TimeRangeUpperBound is exclusive. 
     */
-  var TimeRangeUpperBound: js.UndefOr[typings.awsSdk.dynamodbMod.TimeRangeUpperBound] = js.undefined
+  var TimeRangeUpperBound: js.UndefOr[js.Date] = js.undefined
 }
 object ListBackupsInput {
   
@@ -61,11 +61,11 @@ object ListBackupsInput {
     
     inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
-    inline def setTimeRangeLowerBound(value: TimeRangeLowerBound): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
+    inline def setTimeRangeLowerBound(value: js.Date): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
     
     inline def setTimeRangeLowerBoundUndefined: Self = StObject.set(x, "TimeRangeLowerBound", js.undefined)
     
-    inline def setTimeRangeUpperBound(value: TimeRangeUpperBound): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
+    inline def setTimeRangeUpperBound(value: js.Date): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
     
     inline def setTimeRangeUpperBoundUndefined: Self = StObject.set(x, "TimeRangeUpperBound", js.undefined)
   }

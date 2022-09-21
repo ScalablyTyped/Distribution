@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type JSONEditorAppendNode = typings.jsoneditoronline.JSONEditorNode
+type JSONEditorAppendNode = JSONEditorNode

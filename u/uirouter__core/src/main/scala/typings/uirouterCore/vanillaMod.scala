@@ -29,42 +29,42 @@ object vanillaMod {
   
   @JSImport("@uirouter/core/lib/vanilla", "BrowserLocationConfig")
   @js.native
-  class BrowserLocationConfig ()
+  open class BrowserLocationConfig ()
     extends typings.uirouterCore.indexMod.BrowserLocationConfig {
-    def this(router: js.Any) = this()
-    def this(router: js.Any, _isHtml5: Boolean) = this()
+    def this(router: Any) = this()
+    def this(router: Any, _isHtml5: Boolean) = this()
     def this(router: Unit, _isHtml5: Boolean) = this()
   }
   
   @JSImport("@uirouter/core/lib/vanilla", "HashLocationService")
   @js.native
-  class HashLocationService protected ()
+  open class HashLocationService protected ()
     extends typings.uirouterCore.indexMod.HashLocationService {
     def this(router: UIRouter) = this()
   }
   
   @JSImport("@uirouter/core/lib/vanilla", "MemoryLocationConfig")
   @js.native
-  class MemoryLocationConfig ()
+  open class MemoryLocationConfig ()
     extends typings.uirouterCore.indexMod.MemoryLocationConfig
   
   @JSImport("@uirouter/core/lib/vanilla", "MemoryLocationService")
   @js.native
-  class MemoryLocationService protected ()
+  open class MemoryLocationService protected ()
     extends typings.uirouterCore.indexMod.MemoryLocationService {
     def this(router: UIRouter) = this()
   }
   
   @JSImport("@uirouter/core/lib/vanilla", "PushStateLocationService")
   @js.native
-  class PushStateLocationService protected ()
+  open class PushStateLocationService protected ()
     extends typings.uirouterCore.indexMod.PushStateLocationService {
     def this(router: UIRouter) = this()
   }
   
   inline def buildUrl(loc: LocationServices): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildUrl")(loc.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getParams(queryString: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParams")(queryString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getParams(queryString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParams")(queryString.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def hashLocationPlugin(router: UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("hashLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
   
@@ -72,7 +72,7 @@ object vanillaMod {
   @js.native
   val injector: InjectorLike = js.native
   
-  inline def keyValsToObjectR(accum: js.Any, hasKeyVal: js.Tuple2[js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("keyValsToObjectR")(accum.asInstanceOf[js.Any], hasKeyVal.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def keyValsToObjectR(accum: Any, hasKeyVal: js.Tuple2[Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("keyValsToObjectR")(accum.asInstanceOf[js.Any], hasKeyVal.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def locationPluginFactory(
     name: String,

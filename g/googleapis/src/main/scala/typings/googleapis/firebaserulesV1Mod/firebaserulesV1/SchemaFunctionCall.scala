@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a service-defined function call that was invoked during test
-  * execution.
-  */
 trait SchemaFunctionCall extends StObject {
   
   /**
     * The arguments that were provided to the function.
     */
-  var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var args: js.UndefOr[js.Array[Any] | Null] = js.undefined
   
   /**
     * Name of the function invoked.
     */
-  var function: js.UndefOr[String] = js.undefined
+  var function: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFunctionCall {
   
@@ -29,13 +25,17 @@ object SchemaFunctionCall {
   
   extension [Self <: SchemaFunctionCall](x: Self) {
     
-    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    inline def setArgsNull: Self = StObject.set(x, "args", null)
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionNull: Self = StObject.set(x, "function", null)
     
     inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
   }

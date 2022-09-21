@@ -12,16 +12,16 @@ trait ImageEditor
   extends StObject
      with Widget {
   
-  def drawCanvas(image: js.Any): Unit = js.native
+  def drawCanvas(image: Any): Unit = js.native
   
-  def drawImage(imageUrl: String): JQueryPromise[js.Any] = js.native
+  def drawImage(imageUrl: String): JQueryPromise[Any] = js.native
   
   def executeCommand(command: String): Unit = js.native
-  def executeCommand(command: String, args: js.Any): Unit = js.native
+  def executeCommand(command: String, args: Any): Unit = js.native
   
   def getCanvasElement(): HTMLElement = js.native
   
-  def getCurrent2dContext(): js.Any = js.native
+  def getCurrent2dContext(): Any = js.native
   
   def getCurrentImage(): HTMLElement = js.native
   

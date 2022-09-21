@@ -1,7 +1,7 @@
 
 # Scala.js typings for map-age-cleaner
 
-Typings are for version 0.1.3
+Typings are for version 0.2.0
 
 ## Library description:
 Automatically cleanup expired items in a Map
@@ -10,10 +10,10 @@ Automatically cleanup expired items in a Map
 | ------------------ | :-------------: |
 | Full name          | map-age-cleaner |
 | Keywords           | map, age, cleaner, maxage, expire, expiration, expiring |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 360615499 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6858185333333332E7 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/SamVerschueren/map-age-cleaner#readme)

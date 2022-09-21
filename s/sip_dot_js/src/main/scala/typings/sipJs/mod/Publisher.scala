@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Publisher")
 @js.native
-class Publisher protected ()
+open class Publisher protected ()
   extends typings.sipJs.apiMod.Publisher {
   /**
     * Constructs a new instance of the `Publisher` class.

@@ -33,7 +33,7 @@ trait ClusterOptions extends StObject {
     * this node will be added to the cluster. You have access to all options (including the default)
     * as well as any custom fields you may have added to the node to determine whether or not to include it in the cluster.
     */
-  var joinCondition: js.UndefOr[js.Function1[/* nodeOptions */ js.Any, Boolean]] = js.undefined
+  var joinCondition: js.UndefOr[js.Function1[/* nodeOptions */ Any, Boolean]] = js.undefined
   
   /**
     * Optional.
@@ -44,10 +44,10 @@ trait ClusterOptions extends StObject {
     */
   var processProperties: js.UndefOr[
     js.Function3[
-      /* clusterOptions */ js.Any, 
-      /* childNodesOptions */ js.Array[js.Any], 
-      /* childEdgesOptions */ js.Array[js.Any], 
-      js.Any
+      /* clusterOptions */ Any, 
+      /* childNodesOptions */ js.Array[Any], 
+      /* childEdgesOptions */ js.Array[Any], 
+      Any
     ]
   ] = js.undefined
 }
@@ -68,12 +68,12 @@ object ClusterOptions {
     
     inline def setClusterNodePropertiesUndefined: Self = StObject.set(x, "clusterNodeProperties", js.undefined)
     
-    inline def setJoinCondition(value: /* nodeOptions */ js.Any => Boolean): Self = StObject.set(x, "joinCondition", js.Any.fromFunction1(value))
+    inline def setJoinCondition(value: /* nodeOptions */ Any => Boolean): Self = StObject.set(x, "joinCondition", js.Any.fromFunction1(value))
     
     inline def setJoinConditionUndefined: Self = StObject.set(x, "joinCondition", js.undefined)
     
     inline def setProcessProperties(
-      value: (/* clusterOptions */ js.Any, /* childNodesOptions */ js.Array[js.Any], /* childEdgesOptions */ js.Array[js.Any]) => js.Any
+      value: (/* clusterOptions */ Any, /* childNodesOptions */ js.Array[Any], /* childEdgesOptions */ js.Array[Any]) => Any
     ): Self = StObject.set(x, "processProperties", js.Any.fromFunction3(value))
     
     inline def setProcessPropertiesUndefined: Self = StObject.set(x, "processProperties", js.undefined)

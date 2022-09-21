@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response from ListTransferJobs.
-  */
 trait SchemaListTransferJobsResponse extends StObject {
   
   /**
     * The list next page token.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A list of transfer jobs.
@@ -30,12 +27,14 @@ object SchemaListTransferJobsResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setTransferJobs(value: js.Array[SchemaTransferJob]): Self = StObject.set(x, "transferJobs", value.asInstanceOf[js.Any])
     
     inline def setTransferJobsUndefined: Self = StObject.set(x, "transferJobs", js.undefined)
     
-    inline def setTransferJobsVarargs(value: SchemaTransferJob*): Self = StObject.set(x, "transferJobs", js.Array(value :_*))
+    inline def setTransferJobsVarargs(value: SchemaTransferJob*): Self = StObject.set(x, "transferJobs", js.Array(value*))
   }
 }

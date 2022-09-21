@@ -10,17 +10,26 @@ trait Certificate extends StObject {
   /** Output only. A structured description of the issued X.509 certificate. */
   var certificateDescription: js.UndefOr[CertificateDescription] = js.undefined
   
+  /**
+    * Immutable. The resource name for a CertificateTemplate used to issue this certificate, in the format `projects/ *‍/locations/ *‍/certificateTemplates/ *`. If this is specified, the
+    * caller must have the necessary permission to use this template. If this is omitted, no template will be used. This template must be in the same location as the Certificate.
+    */
+  var certificateTemplate: js.UndefOr[String] = js.undefined
+  
   /** Immutable. A description of the certificate and key that does not require X.509 or ASN.1. */
   var config: js.UndefOr[CertificateConfig] = js.undefined
   
   /** Output only. The time at which this Certificate was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
+  /** Output only. The resource name of the issuing CertificateAuthority in the format `projects/ *‍/locations/ *‍/caPools/ *‍/certificateAuthorities/ *`. */
+  var issuerCertificateAuthority: js.UndefOr[String] = js.undefined
+  
   /** Optional. Labels with user-defined metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.Certificate & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.Certificate & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -29,7 +38,7 @@ trait Certificate extends StObject {
     */
   var lifetime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The resource path for this Certificate in the format `projects/∗/locations/∗/certificateAuthorities/∗/certificates/ *`. */
+  /** Output only. The resource name for this Certificate in the format `projects/ *‍/locations/ *‍/caPools/ *‍/certificates/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The pem-encoded, signed X.509 certificate. */
@@ -43,6 +52,9 @@ trait Certificate extends StObject {
   
   /** Output only. Details regarding the revocation of this Certificate. This Certificate is considered revoked if and only if this field is present. */
   var revocationDetails: js.UndefOr[RevocationDetails] = js.undefined
+  
+  /** Immutable. Specifies how the Certificate's identity fields are to be decided. If this is omitted, the `DEFAULT` subject mode will be used. */
+  var subjectMode: js.UndefOr[String] = js.undefined
   
   /** Output only. The time at which this Certificate was updated. */
   var updateTime: js.UndefOr[String] = js.undefined
@@ -60,6 +72,10 @@ object Certificate {
     
     inline def setCertificateDescriptionUndefined: Self = StObject.set(x, "certificateDescription", js.undefined)
     
+    inline def setCertificateTemplate(value: String): Self = StObject.set(x, "certificateTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateTemplateUndefined: Self = StObject.set(x, "certificateTemplate", js.undefined)
+    
     inline def setConfig(value: CertificateConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
@@ -68,10 +84,14 @@ object Certificate {
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
+    inline def setIssuerCertificateAuthority(value: String): Self = StObject.set(x, "issuerCertificateAuthority", value.asInstanceOf[js.Any])
+    
+    inline def setIssuerCertificateAuthorityUndefined: Self = StObject.set(x, "issuerCertificateAuthority", js.undefined)
+    
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.Certificate & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.Certificate & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -90,7 +110,7 @@ object Certificate {
     
     inline def setPemCertificateChainUndefined: Self = StObject.set(x, "pemCertificateChain", js.undefined)
     
-    inline def setPemCertificateChainVarargs(value: String*): Self = StObject.set(x, "pemCertificateChain", js.Array(value :_*))
+    inline def setPemCertificateChainVarargs(value: String*): Self = StObject.set(x, "pemCertificateChain", js.Array(value*))
     
     inline def setPemCertificateUndefined: Self = StObject.set(x, "pemCertificate", js.undefined)
     
@@ -101,6 +121,10 @@ object Certificate {
     inline def setRevocationDetails(value: RevocationDetails): Self = StObject.set(x, "revocationDetails", value.asInstanceOf[js.Any])
     
     inline def setRevocationDetailsUndefined: Self = StObject.set(x, "revocationDetails", js.undefined)
+    
+    inline def setSubjectMode(value: String): Self = StObject.set(x, "subjectMode", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectModeUndefined: Self = StObject.set(x, "subjectMode", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

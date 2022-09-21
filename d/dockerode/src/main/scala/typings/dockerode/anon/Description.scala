@@ -33,6 +33,6 @@ object Description {
     
     inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "Value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "Value", js.Array(value*))
   }
 }

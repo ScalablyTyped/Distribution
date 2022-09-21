@@ -3,7 +3,7 @@ package typings.reactNativeSnapCarousel
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.Animated.AnimatedValue
 import typings.reactNative.mod.Animated.DecayAnimationConfig
@@ -12,7 +12,6 @@ import typings.reactNative.mod.Animated.TimingAnimationConfig
 import typings.reactNative.mod.Animated.Value
 import typings.reactNative.mod.FlatListProps
 import typings.reactNative.mod.ImageProps
-import typings.reactNative.mod.ImageSourcePropType
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeScrollEvent
 import typings.reactNative.mod.NativeSyntheticEvent
@@ -41,37 +40,37 @@ object mod {
   
   @JSImport("react-native-snap-carousel", JSImport.Default)
   @js.native
-  class default[T] () extends Carousel[T]
+  open class default[T] () extends Carousel[T]
   
   @JSImport("react-native-snap-carousel", "Pagination")
   @js.native
-  class Pagination protected ()
-    extends Component[PaginationProperties, js.Object, js.Any] {
+  open class Pagination protected ()
+    extends Component[PaginationProperties, js.Object, Any] {
     def this(props: PaginationProperties) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PaginationProperties, context: js.Any) = this()
+    def this(props: PaginationProperties, context: Any) = this()
   }
   
   @JSImport("react-native-snap-carousel", "ParallaxImage")
   @js.native
-  class ParallaxImage protected ()
-    extends Component[ParallaxImageProperties, js.Object, js.Any] {
+  open class ParallaxImage protected ()
+    extends Component[ParallaxImageProperties, js.Object, Any] {
     def this(props: ParallaxImageProperties) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ParallaxImageProperties, context: js.Any) = this()
+    def this(props: ParallaxImageProperties, context: Any) = this()
   }
   
-  inline def getInputRangeFromIndexes(range: js.Array[Double], index: Double, carouselProps: CarouselProps[js.Any]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputRangeFromIndexes")(range.asInstanceOf[js.Any], index.asInstanceOf[js.Any], carouselProps.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getInputRangeFromIndexes(range: js.Array[Double], index: Double, carouselProps: CarouselProps[Any]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputRangeFromIndexes")(range.asInstanceOf[js.Any], index.asInstanceOf[js.Any], carouselProps.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   trait AdditionalParallaxProps extends StObject {
     
-    var carouselRef: js.UndefOr[Component[FlatListProps[js.Any], js.Object, js.Any]] = js.undefined
+    var carouselRef: js.UndefOr[Component[FlatListProps[Any], js.Object, Any]] = js.undefined
     
     var itemHeight: js.UndefOr[Double] = js.undefined
     
@@ -94,7 +93,7 @@ object mod {
     
     extension [Self <: AdditionalParallaxProps](x: Self) {
       
-      inline def setCarouselRef(value: Component[FlatListProps[js.Any], js.Object, js.Any]): Self = StObject.set(x, "carouselRef", value.asInstanceOf[js.Any])
+      inline def setCarouselRef(value: Component[FlatListProps[Any], js.Object, Any]): Self = StObject.set(x, "carouselRef", value.asInstanceOf[js.Any])
       
       inline def setCarouselRefUndefined: Self = StObject.set(x, "carouselRef", js.undefined)
       
@@ -126,7 +125,7 @@ object mod {
   
   @js.native
   trait Carousel[T]
-    extends Component[CarouselProperties[T], js.Object, js.Any] {
+    extends Component[CarouselProperties[T], js.Object, Any] {
     
     /**
       * Current active item (int, starts at 0)
@@ -145,7 +144,19 @@ object mod {
     def snapToItem(index: Double): Unit = js.native
     def snapToItem(index: Double, animated: Boolean): Unit = js.native
     def snapToItem(index: Double, animated: Boolean, fireCallback: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Boolean, fireCallback: Boolean, initial: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Boolean, fireCallback: Boolean, initial: Boolean, lockScroll: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Boolean, fireCallback: Boolean, initial: Unit, lockScroll: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Boolean, fireCallback: Unit, initial: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Boolean, fireCallback: Unit, initial: Boolean, lockScroll: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Boolean, fireCallback: Unit, initial: Unit, lockScroll: Boolean): Unit = js.native
     def snapToItem(index: Double, animated: Unit, fireCallback: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Unit, fireCallback: Boolean, initial: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Unit, fireCallback: Boolean, initial: Boolean, lockScroll: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Unit, fireCallback: Boolean, initial: Unit, lockScroll: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Unit, fireCallback: Unit, initial: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Unit, fireCallback: Unit, initial: Boolean, lockScroll: Boolean): Unit = js.native
+    def snapToItem(index: Double, animated: Unit, fireCallback: Unit, initial: Unit, lockScroll: Boolean): Unit = js.native
     
     /**
       * Snap to next item manually
@@ -364,7 +375,7 @@ object mod {
       * Used to define custom interpolations
       */
     var scrollInterpolator: js.UndefOr[
-        js.Function2[/* index */ Double, /* carouselProps */ CarouselProps[js.Any], InputRange]
+        js.Function2[/* index */ Double, /* carouselProps */ CarouselProps[Any], InputRange]
       ] = js.native
     
     /**
@@ -379,7 +390,7 @@ object mod {
         js.Function3[
           /* index */ Double, 
           /* animatedValue */ AnimatedValue, 
-          /* carouselProps */ CarouselProps[js.Any], 
+          /* carouselProps */ CarouselProps[Any], 
           StyleProp[ViewStyle]
         ]
       ] = js.native
@@ -640,7 +651,7 @@ object mod {
       * Used to define custom interpolations
       */
     var scrollInterpolator: js.UndefOr[
-        js.Function2[/* index */ Double, /* carouselProps */ CarouselProps[js.Any], InputRange]
+        js.Function2[/* index */ Double, /* carouselProps */ CarouselProps[Any], InputRange]
       ] = js.native
     
     /**
@@ -655,7 +666,7 @@ object mod {
         js.Function3[
           /* index */ Double, 
           /* animatedValue */ AnimatedValue, 
-          /* carouselProps */ CarouselProps[js.Any], 
+          /* carouselProps */ CarouselProps[Any], 
           StyleProp[ViewStyle]
         ]
       ] = js.native
@@ -697,13 +708,32 @@ object mod {
   
   trait PaginationProperties
     extends StObject
-       with PaginationProps
-       with Props[PaginationStatic]
+       with PaginationProps {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[PaginationStatic]] = js.undefined
+  }
   object PaginationProperties {
     
     inline def apply(activeDotIndex: Double, dotsLength: Double): PaginationProperties = {
       val __obj = js.Dynamic.literal(activeDotIndex = activeDotIndex.asInstanceOf[js.Any], dotsLength = dotsLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProperties]
+    }
+    
+    extension [Self <: PaginationProperties](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setRef(value: LegacyRef[PaginationStatic]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ PaginationStatic | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
@@ -738,7 +768,7 @@ object mod {
       * Reference to the Carousel component to which pagination is linked.
       * Needed only when setting tappableDots to true
       */
-    var carouselRef: js.UndefOr[Component[FlatListProps[js.Any], js.Object, js.Any]] = js.undefined
+    var carouselRef: js.UndefOr[Component[FlatListProps[Any], js.Object, Any]] = js.undefined
     
     /**
       * Style for dots' container that will be merged with the default one
@@ -812,7 +842,7 @@ object mod {
       * This can be especially useful in order to replace dots with numbers
       */
     var renderDots: js.UndefOr[
-        js.Function3[/* activeIndex */ Double, /* total */ Double, /* context */ js.Any, ReactNode]
+        js.Function3[/* activeIndex */ Double, /* total */ Double, /* context */ Any, ReactNode]
       ] = js.undefined
     
     /**
@@ -853,7 +883,7 @@ object mod {
       
       inline def setAnimatedTensionUndefined: Self = StObject.set(x, "animatedTension", js.undefined)
       
-      inline def setCarouselRef(value: Component[FlatListProps[js.Any], js.Object, js.Any]): Self = StObject.set(x, "carouselRef", value.asInstanceOf[js.Any])
+      inline def setCarouselRef(value: Component[FlatListProps[Any], js.Object, Any]): Self = StObject.set(x, "carouselRef", value.asInstanceOf[js.Any])
       
       inline def setCarouselRefUndefined: Self = StObject.set(x, "carouselRef", js.undefined)
       
@@ -911,7 +941,7 @@ object mod {
       
       inline def setInactiveDotStyleUndefined: Self = StObject.set(x, "inactiveDotStyle", js.undefined)
       
-      inline def setRenderDots(value: (/* activeIndex */ Double, /* total */ Double, /* context */ js.Any) => ReactNode): Self = StObject.set(x, "renderDots", js.Any.fromFunction3(value))
+      inline def setRenderDots(value: (/* activeIndex */ Double, /* total */ Double, /* context */ Any) => ReactNode): Self = StObject.set(x, "renderDots", js.Any.fromFunction3(value))
       
       inline def setRenderDotsUndefined: Self = StObject.set(x, "renderDots", js.undefined)
       
@@ -929,13 +959,32 @@ object mod {
   
   trait ParallaxImageProperties
     extends StObject
-       with ParallaxImageProps
-       with Props[ParallaxImageStatic]
+       with ParallaxImageProps {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[ParallaxImageStatic]] = js.undefined
+  }
   object ParallaxImageProperties {
     
-    inline def apply(source: ImageSourcePropType): ParallaxImageProperties = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    inline def apply(): ParallaxImageProperties = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParallaxImageProperties]
+    }
+    
+    extension [Self <: ParallaxImageProperties](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setRef(value: LegacyRef[ParallaxImageStatic]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ ParallaxImageStatic | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
@@ -971,8 +1020,8 @@ object mod {
   }
   object ParallaxImageProps {
     
-    inline def apply(source: ImageSourcePropType): ParallaxImageProps = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    inline def apply(): ParallaxImageProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParallaxImageProps]
     }
     

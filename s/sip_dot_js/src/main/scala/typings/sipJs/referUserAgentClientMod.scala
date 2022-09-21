@@ -12,7 +12,7 @@ object referUserAgentClientMod {
   
   @JSImport("sip.js/lib/core/user-agents/refer-user-agent-client", "ReferUserAgentClient")
   @js.native
-  class ReferUserAgentClient protected () extends UserAgentClient {
+  open class ReferUserAgentClient protected () extends UserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()
     def this(dialog: SessionDialog, delegate: Unit, options: RequestOptions) = this()

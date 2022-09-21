@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a UPDATE query. */
 @JSImport("massive", "Update")
 @js.native
-class Update protected () extends StObject {
+open class Update protected () extends StObject {
   /** Represents an UPDATE query. */
-  def this(source: Readable, changes: AnyObject[js.Any], criteria: AnyObject[js.Any]) = this()
+  def this(source: Readable, changes: AnyObject[Any], criteria: AnyObject[Any]) = this()
   def this(
     source: Readable,
-    changes: AnyObject[js.Any],
-    criteria: AnyObject[js.Any],
+    changes: AnyObject[Any],
+    criteria: AnyObject[Any],
     options: ResultProcessingOptions & PersistenceUpdateDocOptions
   ) = this()
   

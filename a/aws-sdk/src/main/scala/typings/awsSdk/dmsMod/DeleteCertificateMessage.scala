@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteCertificateMessage extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the deleted certificate.
+    * The Amazon Resource Name (ARN) of the certificate.
     */
   var CertificateArn: String
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OutlookBarGroups extends StObject {
   
   def Add(Name: String): OutlookBarGroup = js.native
-  def Add(Name: String, Index: js.Any): OutlookBarGroup = js.native
+  def Add(Name: String, Index: Any): OutlookBarGroup = js.native
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -16,14 +16,14 @@ trait OutlookBarGroups extends StObject {
   
   val Count: Double = js.native
   
-  def Item(Index: js.Any): OutlookBarGroup = js.native
+  def Item(Index: Any): OutlookBarGroup = js.native
   
   /* private */ @JSName("Outlook.OutlookBarGroups_typekey")
   var OutlookDotOutlookBarGroups_typekey: OutlookBarGroups = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: Any): Unit = js.native
   
   val Session: NameSpace = js.native
 }

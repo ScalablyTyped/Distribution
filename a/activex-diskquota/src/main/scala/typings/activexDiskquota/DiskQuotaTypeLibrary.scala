@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DiskQuotaTypeLibrary {
   
-  // tslint:disable-next-line no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexDiskquota.activexDiskquotaNumbers.`2`
     - typings.activexDiskquota.activexDiskquotaNumbers.`3`
@@ -261,7 +261,7 @@ object DiskQuotaTypeLibrary {
     }
   }
   
-  // tslint:disable-next-line no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexDiskquota.activexDiskquotaNumbers.`0`
     - typings.activexDiskquota.activexDiskquotaNumbers.`2`
@@ -277,7 +277,7 @@ object DiskQuotaTypeLibrary {
     inline def dqStateTrack: `1` = 1.asInstanceOf[`1`]
   }
   
-  // tslint:disable-next-line no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexDiskquota.activexDiskquotaNumbers.`2`
     - typings.activexDiskquota.activexDiskquotaNumbers.`0`

@@ -19,11 +19,9 @@ trait Expr extends StObject {
   
   var expr: js.UndefOr[datum | parent | datumDotdatum] = js.undefined
   
-  var field: js.UndefOr[String] = js.undefined
+  var fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
   
-  var fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
-  
-  var format: String | Dict[js.Any]
+  var format: String | Dict[Any]
   
   var formatType: String
   
@@ -33,8 +31,8 @@ object Expr {
   
   inline def apply(
     config: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef],
-    fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
-    format: String | Dict[js.Any],
+    fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
+    format: String | Dict[Any],
     formatType: String
   ): Expr = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], formatType = formatType.asInstanceOf[js.Any])
@@ -49,15 +47,11 @@ object Expr {
     
     inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
     
-    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
-    
     inline def setFieldOrDatumDef(
-      value: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+      value: (typings.vegaLite.channeldefMod.FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
     
-    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
-    
-    inline def setFormat(value: String | Dict[js.Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String | Dict[Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     

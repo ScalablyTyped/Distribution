@@ -2,7 +2,6 @@ package typings.reactRequest
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.std.Error
 import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
@@ -17,24 +16,24 @@ object mod {
   
   @JSImport("react-request", "Fetch")
   @js.native
-  class Fetch[T] protected ()
-    extends Component[FetchProps[T], js.Object, js.Any] {
+  open class Fetch[T] protected ()
+    extends Component[FetchProps[T], js.Object, Any] {
     def this(props: FetchProps[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FetchProps[T], context: js.Any) = this()
+    def this(props: FetchProps[T], context: Any) = this()
   }
   
   inline def clearRequestCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearRequestCache")().asInstanceOf[Unit]
   
   inline def clearResponseCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearResponseCache")().asInstanceOf[Unit]
   
-  inline def fetchDedupe(input: js.Any): js.Promise[ProxyRequest] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProxyRequest]]
-  inline def fetchDedupe(input: js.Any, init: js.Any): js.Promise[ProxyRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyRequest]]
-  inline def fetchDedupe(input: js.Any, init: js.Any, dedupeOptions: js.Any): js.Promise[ProxyRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any], dedupeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyRequest]]
-  inline def fetchDedupe(input: js.Any, init: Unit, dedupeOptions: js.Any): js.Promise[ProxyRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any], dedupeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyRequest]]
+  inline def fetchDedupe(input: Any): js.Promise[ProxyRequest] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProxyRequest]]
+  inline def fetchDedupe(input: Any, init: Any): js.Promise[ProxyRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyRequest]]
+  inline def fetchDedupe(input: Any, init: Any, dedupeOptions: Any): js.Promise[ProxyRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any], dedupeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyRequest]]
+  inline def fetchDedupe(input: Any, init: Unit, dedupeOptions: Any): js.Promise[ProxyRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any], dedupeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyRequest]]
   
   inline def getRequestKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequestKey")().asInstanceOf[String]
   inline def getRequestKey(keyOptions: RequestKeyOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequestKey")(keyOptions.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -74,7 +73,7 @@ object mod {
     
     var responseType: js.UndefOr[ResponseType] = js.undefined
     
-    var transformData: js.UndefOr[js.Function1[/* data */ js.Any, T]] = js.undefined
+    var transformData: js.UndefOr[js.Function1[/* data */ Any, T]] = js.undefined
   }
   object FetchProps {
     
@@ -97,7 +96,7 @@ object mod {
       
       inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      inline def setTransformData(value: /* data */ js.Any => T): Self = StObject.set(x, "transformData", js.Any.fromFunction1(value))
+      inline def setTransformData(value: /* data */ Any => T): Self = StObject.set(x, "transformData", js.Any.fromFunction1(value))
       
       inline def setTransformDataUndefined: Self = StObject.set(x, "transformData", js.undefined)
     }
@@ -134,11 +133,11 @@ object mod {
     
     var didUnmount: Boolean
     
-    var error: Error | Null
+    var error: js.Error | Null
     
     var failed: Boolean
     
-    var init: js.Any
+    var init: Any
     
     var requestKey: String
     
@@ -148,7 +147,7 @@ object mod {
   }
   object FetchResponse {
     
-    inline def apply[T](didUnmount: Boolean, failed: Boolean, init: js.Any, requestKey: String, url: String): FetchResponse[T] = {
+    inline def apply[T](didUnmount: Boolean, failed: Boolean, init: Any, requestKey: String, url: String): FetchResponse[T] = {
       val __obj = js.Dynamic.literal(didUnmount = didUnmount.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], requestKey = requestKey.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], data = null, error = null, response = null)
       __obj.asInstanceOf[FetchResponse[T]]
     }
@@ -161,13 +160,13 @@ object mod {
       
       inline def setDidUnmount(value: Boolean): Self = StObject.set(x, "didUnmount", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorNull: Self = StObject.set(x, "error", null)
       
       inline def setFailed(value: Boolean): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      inline def setInit(value: js.Any): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: Any): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
       inline def setRequestKey(value: String): Self = StObject.set(x, "requestKey", value.asInstanceOf[js.Any])
       
@@ -217,7 +216,7 @@ object mod {
       doFetch: /* options */ js.UndefOr[DoFetchOptions] => js.Promise[FetchResponse[T]],
       failed: Boolean,
       fetching: Boolean,
-      init: js.Any,
+      init: Any,
       requestKey: String,
       requestName: String,
       url: String

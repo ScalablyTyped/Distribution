@@ -10,10 +10,10 @@ Load configs with ease
 | ------------------ | :-------------: |
 | Full name          | configs-overload |
 | Keywords           | config, environment, overload, default |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 130362 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 774.6666666666666 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/floatdrop/configs-overload)

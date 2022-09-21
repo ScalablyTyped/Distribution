@@ -1,7 +1,7 @@
 package typings.postcssNormalize
 
 import org.scalablytyped.runtime.Shortcut
-import typings.postcss.mod.Plugin_
+import typings.postcss.mod.Plugin
 import typings.postcssNormalize.mod.Normalize.NormalizePlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +11,11 @@ object mod extends Shortcut {
   
   @JSImport("postcss-normalize", JSImport.Namespace)
   @js.native
-  val ^ : NormalizePlugin = js.native
+  val ^ : js.Object & NormalizePlugin = js.native
   
   object Normalize {
     
-    type NormalizePlugin = Plugin_[Options]
+    type NormalizePlugin = Plugin
     
     trait Options extends StObject {
       
@@ -58,8 +58,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = NormalizePlugin
+  type _To = js.Object & NormalizePlugin
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: NormalizePlugin = ^
+  override def _to: js.Object & NormalizePlugin = ^
 }

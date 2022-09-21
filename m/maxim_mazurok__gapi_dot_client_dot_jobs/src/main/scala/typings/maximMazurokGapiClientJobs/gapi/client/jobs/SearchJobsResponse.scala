@@ -13,15 +13,12 @@ trait SearchJobsResponse extends StObject {
     */
   var broadenedQueryJobsCount: js.UndefOr[Double] = js.undefined
   
-  /** An estimation of the number of jobs that match the specified query. This number is not guaranteed to be accurate. For accurate results, see SearchJobsResponse.total_size. */
-  var estimatedTotalSize: js.UndefOr[Double] = js.undefined
-  
-  /** The histogram results that match specified SearchJobsRequest.histogram_facets. */
-  var histogramResults: js.UndefOr[HistogramResults] = js.undefined
+  /** The histogram results that match with specified SearchJobsRequest.histogram_queries. */
+  var histogramQueryResults: js.UndefOr[js.Array[HistogramQueryResult]] = js.undefined
   
   /**
-    * The location filters that the service applied to the specified query. If any filters are lat-lng based, the JobLocation.location_type is
-    * JobLocation.LocationType#LOCATION_TYPE_UNSPECIFIED.
+    * The location filters that the service applied to the specified query. If any filters are lat-lng based, the Location.location_type is
+    * Location.LocationType.LOCATION_TYPE_UNSPECIFIED.
     */
   var locationFilters: js.UndefOr[js.Array[Location]] = js.undefined
   
@@ -37,7 +34,7 @@ trait SearchJobsResponse extends StObject {
   /** The spell checking result, and correction. */
   var spellCorrection: js.UndefOr[SpellingCorrection] = js.undefined
   
-  /** The precise result count with limit 100,000. */
+  /** Number of jobs that match the specified query. Note: This size is precise only if the total is less than 100,000. */
   var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SearchJobsResponse {
@@ -53,25 +50,23 @@ object SearchJobsResponse {
     
     inline def setBroadenedQueryJobsCountUndefined: Self = StObject.set(x, "broadenedQueryJobsCount", js.undefined)
     
-    inline def setEstimatedTotalSize(value: Double): Self = StObject.set(x, "estimatedTotalSize", value.asInstanceOf[js.Any])
+    inline def setHistogramQueryResults(value: js.Array[HistogramQueryResult]): Self = StObject.set(x, "histogramQueryResults", value.asInstanceOf[js.Any])
     
-    inline def setEstimatedTotalSizeUndefined: Self = StObject.set(x, "estimatedTotalSize", js.undefined)
+    inline def setHistogramQueryResultsUndefined: Self = StObject.set(x, "histogramQueryResults", js.undefined)
     
-    inline def setHistogramResults(value: HistogramResults): Self = StObject.set(x, "histogramResults", value.asInstanceOf[js.Any])
-    
-    inline def setHistogramResultsUndefined: Self = StObject.set(x, "histogramResults", js.undefined)
+    inline def setHistogramQueryResultsVarargs(value: HistogramQueryResult*): Self = StObject.set(x, "histogramQueryResults", js.Array(value*))
     
     inline def setLocationFilters(value: js.Array[Location]): Self = StObject.set(x, "locationFilters", value.asInstanceOf[js.Any])
     
     inline def setLocationFiltersUndefined: Self = StObject.set(x, "locationFilters", js.undefined)
     
-    inline def setLocationFiltersVarargs(value: Location*): Self = StObject.set(x, "locationFilters", js.Array(value :_*))
+    inline def setLocationFiltersVarargs(value: Location*): Self = StObject.set(x, "locationFilters", js.Array(value*))
     
     inline def setMatchingJobs(value: js.Array[MatchingJob]): Self = StObject.set(x, "matchingJobs", value.asInstanceOf[js.Any])
     
     inline def setMatchingJobsUndefined: Self = StObject.set(x, "matchingJobs", js.undefined)
     
-    inline def setMatchingJobsVarargs(value: MatchingJob*): Self = StObject.set(x, "matchingJobs", js.Array(value :_*))
+    inline def setMatchingJobsVarargs(value: MatchingJob*): Self = StObject.set(x, "matchingJobs", js.Array(value*))
     
     inline def setMetadata(value: ResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

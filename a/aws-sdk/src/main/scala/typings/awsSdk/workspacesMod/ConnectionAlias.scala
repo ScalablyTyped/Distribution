@@ -22,7 +22,7 @@ trait ConnectionAlias extends StObject {
   var ConnectionString: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionString] = js.undefined
   
   /**
-    * The identifier of the AWS account that owns the connection alias.
+    * The identifier of the Amazon Web Services account that owns the connection alias.
     */
   var OwnerAccountId: js.UndefOr[AwsAccount] = js.undefined
   
@@ -48,7 +48,7 @@ object ConnectionAlias {
     
     inline def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
-    inline def setAssociationsVarargs(value: ConnectionAliasAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: ConnectionAliasAssociation*): Self = StObject.set(x, "Associations", js.Array(value*))
     
     inline def setConnectionString(value: ConnectionString): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
     

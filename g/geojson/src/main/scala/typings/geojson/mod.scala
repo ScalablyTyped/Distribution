@@ -75,7 +75,7 @@ object mod {
       
       inline def setFeatures(value: js.Array[Feature[G, P]]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      inline def setFeaturesVarargs(value: (Feature[G, P])*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: (Feature[G, P])*): Self = StObject.set(x, "features", js.Array(value*))
       
       inline def setType(value: typings.geojson.geojsonStrings.FeatureCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -149,7 +149,7 @@ object mod {
     }
   }
   
-  type GeoJsonProperties = StringDictionary[js.Any] | Null
+  type GeoJsonProperties = StringDictionary[Any] | Null
   
   /* Inlined geojson.geojson.GeoJSON['type'] */
   /* Rewritten from type alias, can be one of: 
@@ -192,16 +192,212 @@ object mod {
     - typings.geojson.mod.MultiLineString
     - typings.geojson.mod.Polygon
     - typings.geojson.mod.MultiPolygon
-    - typings.geojson.mod.GeometryCollection
+    - typings.geojson.mod.GeometryCollection[scala.Any]
   */
-  trait Geometry extends StObject
-  object Geometry {
+  type Geometry = _Geometry | GeometryCollection[Any]
+  
+  trait GeometryCollection[G /* <: Geometry */]
+    extends StObject
+       with GeoJsonObject {
     
-    inline def GeometryCollection(geometries: js.Array[Geometry]): typings.geojson.mod.GeometryCollection = {
+    var geometries: js.Array[G]
+    
+    @JSName("type")
+    var type_GeometryCollection: typings.geojson.geojsonStrings.GeometryCollection
+  }
+  object GeometryCollection {
+    
+    inline def apply[G /* <: Geometry */](geometries: js.Array[G]): GeometryCollection[G] = {
       val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("GeometryCollection")
-      __obj.asInstanceOf[typings.geojson.mod.GeometryCollection]
+      __obj.asInstanceOf[GeometryCollection[G]]
     }
+    
+    extension [Self <: GeometryCollection[?], G /* <: Geometry */](x: Self & GeometryCollection[G]) {
+      
+      inline def setGeometries(value: js.Array[G]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+      
+      inline def setGeometriesVarargs(value: G*): Self = StObject.set(x, "geometries", js.Array(value*))
+      
+      inline def setType(value: typings.geojson.geojsonStrings.GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped geojson.geojson.Point | geojson.geojson.MultiPoint | geojson.geojson.LineString | geojson.geojson.MultiLineString | geojson.geojson.Polygon | geojson.geojson.MultiPolygon | geojson.geojson.GeometryCollection<any> */ trait GeometryObject extends StObject
+  
+  trait LineString
+    extends StObject
+       with GeoJsonObject
+       with _Geometry {
+    
+    var coordinates: js.Array[Position]
+    
+    @JSName("type")
+    var type_LineString: typings.geojson.geojsonStrings.LineString
+  }
+  object LineString {
+    
+    inline def apply(coordinates: js.Array[Position]): LineString = {
+      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("LineString")
+      __obj.asInstanceOf[LineString]
+    }
+    
+    extension [Self <: LineString](x: Self) {
+      
+      inline def setCoordinates(value: js.Array[Position]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      
+      inline def setCoordinatesVarargs(value: Position*): Self = StObject.set(x, "coordinates", js.Array(value*))
+      
+      inline def setType(value: typings.geojson.geojsonStrings.LineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait MultiLineString
+    extends StObject
+       with GeoJsonObject
+       with _Geometry {
+    
+    var coordinates: js.Array[js.Array[Position]]
+    
+    @JSName("type")
+    var type_MultiLineString: typings.geojson.geojsonStrings.MultiLineString
+  }
+  object MultiLineString {
+    
+    inline def apply(coordinates: js.Array[js.Array[Position]]): MultiLineString = {
+      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiLineString")
+      __obj.asInstanceOf[MultiLineString]
+    }
+    
+    extension [Self <: MultiLineString](x: Self) {
+      
+      inline def setCoordinates(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      
+      inline def setCoordinatesVarargs(value: js.Array[Position]*): Self = StObject.set(x, "coordinates", js.Array(value*))
+      
+      inline def setType(value: typings.geojson.geojsonStrings.MultiLineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait MultiPoint
+    extends StObject
+       with GeoJsonObject
+       with _Geometry {
+    
+    var coordinates: js.Array[Position]
+    
+    @JSName("type")
+    var type_MultiPoint: typings.geojson.geojsonStrings.MultiPoint
+  }
+  object MultiPoint {
+    
+    inline def apply(coordinates: js.Array[Position]): MultiPoint = {
+      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiPoint")
+      __obj.asInstanceOf[MultiPoint]
+    }
+    
+    extension [Self <: MultiPoint](x: Self) {
+      
+      inline def setCoordinates(value: js.Array[Position]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      
+      inline def setCoordinatesVarargs(value: Position*): Self = StObject.set(x, "coordinates", js.Array(value*))
+      
+      inline def setType(value: typings.geojson.geojsonStrings.MultiPoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait MultiPolygon
+    extends StObject
+       with GeoJsonObject
+       with _Geometry {
+    
+    var coordinates: js.Array[js.Array[js.Array[Position]]]
+    
+    @JSName("type")
+    var type_MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon
+  }
+  object MultiPolygon {
+    
+    inline def apply(coordinates: js.Array[js.Array[js.Array[Position]]]): MultiPolygon = {
+      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiPolygon")
+      __obj.asInstanceOf[MultiPolygon]
+    }
+    
+    extension [Self <: MultiPolygon](x: Self) {
+      
+      inline def setCoordinates(value: js.Array[js.Array[js.Array[Position]]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      
+      inline def setCoordinatesVarargs(value: js.Array[js.Array[Position]]*): Self = StObject.set(x, "coordinates", js.Array(value*))
+      
+      inline def setType(value: typings.geojson.geojsonStrings.MultiPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Point
+    extends StObject
+       with GeoJsonObject
+       with _Geometry {
+    
+    var coordinates: Position
+    
+    @JSName("type")
+    var type_Point: typings.geojson.geojsonStrings.Point
+  }
+  object Point {
+    
+    inline def apply(coordinates: Position): Point = {
+      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Point")
+      __obj.asInstanceOf[Point]
+    }
+    
+    extension [Self <: Point](x: Self) {
+      
+      inline def setCoordinates(value: Position): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      
+      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value*))
+      
+      inline def setType(value: typings.geojson.geojsonStrings.Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Polygon
+    extends StObject
+       with GeoJsonObject
+       with _Geometry {
+    
+    var coordinates: js.Array[js.Array[Position]]
+    
+    @JSName("type")
+    var type_Polygon: typings.geojson.geojsonStrings.Polygon
+  }
+  object Polygon {
+    
+    inline def apply(coordinates: js.Array[js.Array[Position]]): Polygon = {
+      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Polygon")
+      __obj.asInstanceOf[Polygon]
+    }
+    
+    extension [Self <: Polygon](x: Self) {
+      
+      inline def setCoordinates(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      
+      inline def setCoordinatesVarargs(value: js.Array[Position]*): Self = StObject.set(x, "coordinates", js.Array(value*))
+      
+      inline def setType(value: typings.geojson.geojsonStrings.Polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type Position = js.Array[Double]
+  
+  trait _Geometry extends StObject
+  object _Geometry {
     
     inline def LineString(coordinates: js.Array[Position]): typings.geojson.mod.LineString = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
@@ -239,204 +435,4 @@ object mod {
       __obj.asInstanceOf[typings.geojson.mod.Polygon]
     }
   }
-  
-  trait GeometryCollection
-    extends StObject
-       with GeoJsonObject
-       with Geometry {
-    
-    var geometries: js.Array[Geometry]
-    
-    @JSName("type")
-    var type_GeometryCollection: typings.geojson.geojsonStrings.GeometryCollection
-  }
-  object GeometryCollection {
-    
-    inline def apply(geometries: js.Array[Geometry]): GeometryCollection = {
-      val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("GeometryCollection")
-      __obj.asInstanceOf[GeometryCollection]
-    }
-    
-    extension [Self <: GeometryCollection](x: Self) {
-      
-      inline def setGeometries(value: js.Array[Geometry]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
-      
-      inline def setGeometriesVarargs(value: Geometry*): Self = StObject.set(x, "geometries", js.Array(value :_*))
-      
-      inline def setType(value: typings.geojson.geojsonStrings.GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type GeometryObject = Geometry
-  
-  trait LineString
-    extends StObject
-       with GeoJsonObject
-       with Geometry {
-    
-    var coordinates: js.Array[Position]
-    
-    @JSName("type")
-    var type_LineString: typings.geojson.geojsonStrings.LineString
-  }
-  object LineString {
-    
-    inline def apply(coordinates: js.Array[Position]): LineString = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("LineString")
-      __obj.asInstanceOf[LineString]
-    }
-    
-    extension [Self <: LineString](x: Self) {
-      
-      inline def setCoordinates(value: js.Array[Position]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
-      
-      inline def setCoordinatesVarargs(value: Position*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
-      
-      inline def setType(value: typings.geojson.geojsonStrings.LineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait MultiLineString
-    extends StObject
-       with GeoJsonObject
-       with Geometry {
-    
-    var coordinates: js.Array[js.Array[Position]]
-    
-    @JSName("type")
-    var type_MultiLineString: typings.geojson.geojsonStrings.MultiLineString
-  }
-  object MultiLineString {
-    
-    inline def apply(coordinates: js.Array[js.Array[Position]]): MultiLineString = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("MultiLineString")
-      __obj.asInstanceOf[MultiLineString]
-    }
-    
-    extension [Self <: MultiLineString](x: Self) {
-      
-      inline def setCoordinates(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
-      
-      inline def setCoordinatesVarargs(value: js.Array[Position]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
-      
-      inline def setType(value: typings.geojson.geojsonStrings.MultiLineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait MultiPoint
-    extends StObject
-       with GeoJsonObject
-       with Geometry {
-    
-    var coordinates: js.Array[Position]
-    
-    @JSName("type")
-    var type_MultiPoint: typings.geojson.geojsonStrings.MultiPoint
-  }
-  object MultiPoint {
-    
-    inline def apply(coordinates: js.Array[Position]): MultiPoint = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("MultiPoint")
-      __obj.asInstanceOf[MultiPoint]
-    }
-    
-    extension [Self <: MultiPoint](x: Self) {
-      
-      inline def setCoordinates(value: js.Array[Position]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
-      
-      inline def setCoordinatesVarargs(value: Position*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
-      
-      inline def setType(value: typings.geojson.geojsonStrings.MultiPoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait MultiPolygon
-    extends StObject
-       with GeoJsonObject
-       with Geometry {
-    
-    var coordinates: js.Array[js.Array[js.Array[Position]]]
-    
-    @JSName("type")
-    var type_MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon
-  }
-  object MultiPolygon {
-    
-    inline def apply(coordinates: js.Array[js.Array[js.Array[Position]]]): MultiPolygon = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("MultiPolygon")
-      __obj.asInstanceOf[MultiPolygon]
-    }
-    
-    extension [Self <: MultiPolygon](x: Self) {
-      
-      inline def setCoordinates(value: js.Array[js.Array[js.Array[Position]]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
-      
-      inline def setCoordinatesVarargs(value: js.Array[js.Array[Position]]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
-      
-      inline def setType(value: typings.geojson.geojsonStrings.MultiPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Point
-    extends StObject
-       with GeoJsonObject
-       with Geometry {
-    
-    var coordinates: Position
-    
-    @JSName("type")
-    var type_Point: typings.geojson.geojsonStrings.Point
-  }
-  object Point {
-    
-    inline def apply(coordinates: Position): Point = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("Point")
-      __obj.asInstanceOf[Point]
-    }
-    
-    extension [Self <: Point](x: Self) {
-      
-      inline def setCoordinates(value: Position): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
-      
-      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
-      
-      inline def setType(value: typings.geojson.geojsonStrings.Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Polygon
-    extends StObject
-       with GeoJsonObject
-       with Geometry {
-    
-    var coordinates: js.Array[js.Array[Position]]
-    
-    @JSName("type")
-    var type_Polygon: typings.geojson.geojsonStrings.Polygon
-  }
-  object Polygon {
-    
-    inline def apply(coordinates: js.Array[js.Array[Position]]): Polygon = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("Polygon")
-      __obj.asInstanceOf[Polygon]
-    }
-    
-    extension [Self <: Polygon](x: Self) {
-      
-      inline def setCoordinates(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
-      
-      inline def setCoordinatesVarargs(value: js.Array[Position]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
-      
-      inline def setType(value: typings.geojson.geojsonStrings.Polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type Position = js.Array[Double]
 }

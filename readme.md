@@ -10,7 +10,7 @@ Check out [scalablytyped.org](https://www.scalablytyped.org)
 
 ## About
 
-This is one of the biggest Scala repos on the planet with with **9954**  compiling libraries.
+This is one of the biggest Scala repos on the planet with with **12106**  compiling libraries.
 
 :
 ```
@@ -18,13 +18,13 @@ This is one of the biggest Scala repos on the planet with with **9954**  compili
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               338074     25749579      6303252      4986756     14459571
- Markdown             10481       370795       123733            0       247062
- Makefile                 6           97           27            0           70
+ Scala               466863     38794833      9279844      7900024     21614965
+ Markdown             13277       450033       155227            0       294806
+ Makefile                 6          141           43            0           98
  HTML                     1            6            0            0            6
  JSON                     1            1            0            0            1
 --------------------------------------------------------------------------------
- Total               348563     26120478      6427012      4986756     14706710
+ Total               480148     39245014      9435114      7900024     21909876
 --------------------------------------------------------------------------------
 
 ```

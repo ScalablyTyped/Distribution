@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__topo
 
-Typings are for version 5.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Topological sorting with grouping support
@@ -10,10 +10,10 @@ Topological sorting with grouping support
 | ------------------ | :-------------: |
 | Full name          | @hapi/topo |
 | Keywords           | topological, sort, toposort, topsort |
-| # releases         | 10 |
-| # dependents       | 13 |
-| # downloads        | 222224365 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3.7563604333333336E7 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/topo#readme)

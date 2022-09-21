@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.anon
 
-import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.GoogleAnalyticsAdminV1alphaAndroidAppDataStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,17 +28,23 @@ trait Xgafv extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The parent resource where this android app data stream will be created. Format: properties/123 */
-  var parent: String
+  /**
+    * The maximum number of AccountSummary resources to return. The service may return fewer than this value, even if there are additional pages. If unspecified, at most 50 resources
+    * will be returned. The maximum value is 200; (higher values will be coerced to the maximum)
+    */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * A page token, received from a previous `ListAccountSummaries` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
+    * `ListAccountSummaries` must match the call that provided the page token.
+    */
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Request body */
-  var resource: GoogleAnalyticsAdminV1alphaAndroidAppDataStream
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +54,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(parent: String, resource: GoogleAnalyticsAdminV1alphaAndroidAppDataStream): Xgafv = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(): Xgafv = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -84,7 +89,13 @@ object Xgafv {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -93,8 +104,6 @@ object Xgafv {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: GoogleAnalyticsAdminV1alphaAndroidAppDataStream): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -9,14 +9,14 @@ strftime for JavaScript
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | strftime |
-| Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 220 |
-| # downloads        | 14591804 |
-| # stars            | 35 |
+| Keywords           | strftime, format, string, time, date |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1144039.0 |
+| # stars            | 640.0 |
 
 ## Links
-- [Homepage](http://samhuri.net/proj/strftime)
+- [Homepage](https://samhuri.net/projects/strftime)
 - [Bugs](https://github.com/samsonjs/strftime/issues)
 - [Repository](https://github.com/samsonjs/strftime)
 - [Npm](https://www.npmjs.com/package/strftime)

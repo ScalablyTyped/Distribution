@@ -6,7 +6,6 @@ import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ClientStateListResponse.IEntry
 import typings.sawtoothSdk.protobufMod.ClientStateListResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientStateListResponse.
   * @param [properties] Properties to set
   */
-class ClientStateListResponse ()
+open class ClientStateListResponse ()
   extends StObject
      with IClientStateListResponse {
   def this(properties: IClientStateListResponse) = this()
@@ -38,7 +37,7 @@ class ClientStateListResponse ()
     * Converts this ClientStateListResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ClientStateListResponse {
@@ -54,7 +53,7 @@ object ClientStateListResponse {
     * Constructs a new Entry.
     * @param [properties] Properties to set
     */
-  class Entry ()
+  open class Entry ()
     extends StObject
        with IEntry {
     def this(properties: IEntry) = this()
@@ -65,13 +64,13 @@ object ClientStateListResponse {
     
     /** Entry data. */
     @JSName("data")
-    var data_Entry: Uint8Array = js.native
+    var data_Entry: js.typedarray.Uint8Array = js.native
     
     /**
       * Converts this Entry to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object Entry {
     
@@ -88,6 +87,8 @@ object ClientStateListResponse {
     inline def create(): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Entry]
     inline def create(properties: IEntry): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Entry]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entry]
     /**
       * Decodes an Entry message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -99,9 +100,8 @@ object ClientStateListResponse {
     /* static member */
     inline def decode(reader: Reader): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
     inline def decode(reader: Reader, length: Double): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entry]
-    inline def decode(reader: Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
-    inline def decode(reader: Uint8Array, length: Double): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entry]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
     /**
       * Decodes an Entry message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -111,7 +111,6 @@ object ClientStateListResponse {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
-    inline def decodeDelimited(reader: Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
     
     /**
       * Encodes the specified Entry message. Does not implicitly {@link ClientStateListResponse.Entry.verify|verify} messages.
@@ -139,7 +138,7 @@ object ClientStateListResponse {
       * @returns Entry
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Entry]
+    inline def fromObject(`object`: StringDictionary[Any]): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Entry]
     
     /**
       * Creates a plain object from an Entry message. Also converts values to other types if specified.
@@ -148,8 +147,8 @@ object ClientStateListResponse {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Entry): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Entry, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Entry): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Entry, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an Entry message.
@@ -157,7 +156,7 @@ object ClientStateListResponse {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @js.native
@@ -239,6 +238,8 @@ object ClientStateListResponse {
   inline def create(): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientStateListResponse]
   inline def create(properties: IClientStateListResponse): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientStateListResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStateListResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ClientStateListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientStateListResponse]
   /**
     * Decodes a ClientStateListResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -249,9 +250,8 @@ object ClientStateListResponse {
     */
   inline def decode(reader: Reader): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStateListResponse]
   inline def decode(reader: Reader, length: Double): ClientStateListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientStateListResponse]
-  inline def decode(reader: Uint8Array): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStateListResponse]
-  inline def decode(reader: Uint8Array, length: Double): ClientStateListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientStateListResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStateListResponse]
   /**
     * Decodes a ClientStateListResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -260,7 +260,6 @@ object ClientStateListResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStateListResponse]
-  inline def decodeDelimited(reader: Uint8Array): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStateListResponse]
   
   /**
     * Encodes the specified ClientStateListResponse message. Does not implicitly {@link ClientStateListResponse.verify|verify} messages.
@@ -285,7 +284,7 @@ object ClientStateListResponse {
     * @param object Plain object
     * @returns ClientStateListResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientStateListResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ClientStateListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientStateListResponse]
   
   /**
     * Creates a plain object from a ClientStateListResponse message. Also converts values to other types if specified.
@@ -293,15 +292,15 @@ object ClientStateListResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ClientStateListResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ClientStateListResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ClientStateListResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ClientStateListResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ClientStateListResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Entry. */
   trait IEntry extends StObject {
@@ -310,7 +309,7 @@ object ClientStateListResponse {
     var address: js.UndefOr[String | Null] = js.undefined
     
     /** Entry data */
-    var data: js.UndefOr[Uint8Array | Null] = js.undefined
+    var data: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   }
   object IEntry {
     
@@ -327,7 +326,7 @@ object ClientStateListResponse {
       
       inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataNull: Self = StObject.set(x, "data", null)
       

@@ -51,7 +51,7 @@ object XEncryptionProtectedStorage {
     acquire: () => Unit,
     getEncryptionAlgorithms: () => SafeArray[NamedValue],
     hasEncryptionData: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEncryption: () => Unit,
     setEncryptionAlgorithms: SeqEquiv[NamedValue] => Unit,

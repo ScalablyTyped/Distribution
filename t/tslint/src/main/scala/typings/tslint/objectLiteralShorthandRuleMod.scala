@@ -14,10 +14,10 @@ object objectLiteralShorthandRuleMod {
   
   @JSImport("tslint/lib/rules/objectLiteralShorthandRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
     
-    /* private */ var parseOptions: js.Any = js.native
+    /* private */ var parseOptions: Any = js.native
   }
   /* static members */
   object Rule {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Convertor")
 @js.native
-class Convertor ()
+open class Convertor ()
   extends StObject
      with typings.bmapgl.BMapGL.Convertor {
   

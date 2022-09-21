@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object navMod {
   
-  @JSImport("reactstrap/lib/Nav", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Nav", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[NavProps, js.Object, js.Any]
+  open class default ()
+    extends Component[NavProps, js.Object, Any]
   
-  type Nav = Component[NavProps, js.Object, js.Any]
+  type Nav = Component[NavProps, js.Object, Any]
   
   trait NavProps
     extends StObject
        with HTMLAttributes[HTMLUListElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var card: js.UndefOr[Boolean] = js.undefined
     
@@ -40,7 +40,7 @@ object navMod {
     
     var tabs: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
     var vertical: js.UndefOr[Boolean | String] = js.undefined
   }
@@ -85,7 +85,7 @@ object navMod {
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       

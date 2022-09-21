@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PullContainerSymbol")
 @js.native
-class PullContainerSymbol protected ()
+open class PullContainerSymbol protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullContainerSymbol {
   def this(name: String, kind: typings.typescriptServices.TypeScript.PullElementKind) = this()

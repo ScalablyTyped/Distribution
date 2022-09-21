@@ -36,13 +36,13 @@ object Screen {
     
     inline def setChildren(value: js.Array[Layer]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: Layer*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Layer*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value*))
     
     inline def setType(value: SCREEN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

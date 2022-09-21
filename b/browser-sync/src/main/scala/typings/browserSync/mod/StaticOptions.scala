@@ -21,10 +21,10 @@ object StaticOptions {
     
     inline def setDir(value: String | js.Array[String]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    inline def setDirVarargs(value: String*): Self = StObject.set(x, "dir", js.Array(value :_*))
+    inline def setDirVarargs(value: String*): Self = StObject.set(x, "dir", js.Array(value*))
     
     inline def setRoute(value: String | js.Array[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    inline def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value :_*))
+    inline def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value*))
   }
 }

@@ -9,20 +9,20 @@ object anon {
   
   trait BodyLengthChecker extends StObject {
     
-    def bodyLengthChecker(body: js.Any): js.UndefOr[Double]
+    def bodyLengthChecker(body: Any): js.UndefOr[Double]
     @JSName("bodyLengthChecker")
     var bodyLengthChecker_Original: BodyLengthCalculator
   }
   object BodyLengthChecker {
     
-    inline def apply(bodyLengthChecker: /* body */ js.Any => js.UndefOr[Double]): BodyLengthChecker = {
+    inline def apply(bodyLengthChecker: /* body */ Any => js.UndefOr[Double]): BodyLengthChecker = {
       val __obj = js.Dynamic.literal(bodyLengthChecker = js.Any.fromFunction1(bodyLengthChecker))
       __obj.asInstanceOf[BodyLengthChecker]
     }
     
     extension [Self <: BodyLengthChecker](x: Self) {
       
-      inline def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: /* body */ Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
     }
   }
 }

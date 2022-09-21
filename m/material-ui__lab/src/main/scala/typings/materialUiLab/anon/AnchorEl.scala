@@ -99,7 +99,7 @@ object AnchorEl {
     
     inline def setGroupedOptions(value: js.Array[T]): Self = StObject.set(x, "groupedOptions", value.asInstanceOf[js.Any])
     
-    inline def setGroupedOptionsVarargs(value: T*): Self = StObject.set(x, "groupedOptions", js.Array(value :_*))
+    inline def setGroupedOptionsVarargs(value: T*): Self = StObject.set(x, "groupedOptions", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -113,6 +113,6 @@ object AnchorEl {
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    inline def setValueVarargs(value: (T | AutocompleteFreeSoloValueMapping[FreeSolo])*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (T | AutocompleteFreeSoloValueMapping[FreeSolo])*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -3,7 +3,6 @@ package typings.vis.mod
 import typings.moment.mod.Moment
 import typings.moment.mod.MomentFormatSpecification
 import typings.moment.mod.MomentInput
-import typings.std.Date
 import typings.vis.anon.Template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -168,7 +167,7 @@ object TimelineOptions {
     
     inline def setDataAttributesUndefined: Self = StObject.set(x, "dataAttributes", js.undefined)
     
-    inline def setDataAttributesVarargs(value: String*): Self = StObject.set(x, "dataAttributes", js.Array(value :_*))
+    inline def setDataAttributesVarargs(value: String*): Self = StObject.set(x, "dataAttributes", js.Array(value*))
     
     inline def setEditable(value: TimelineOptionsEditableType): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
@@ -188,16 +187,16 @@ object TimelineOptions {
     
     inline def setGroupOrder(value: TimelineOptionsGroupOrderType): Self = StObject.set(x, "groupOrder", value.asInstanceOf[js.Any])
     
-    inline def setGroupOrderFunction2(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "groupOrder", js.Any.fromFunction2(value))
+    inline def setGroupOrderFunction2(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "groupOrder", js.Any.fromFunction2(value))
     
-    inline def setGroupOrderSwap(value: (/* fromGroup */ js.Any, /* toGroup */ js.Any, /* groups */ DataSet[DataGroup]) => Unit): Self = StObject.set(x, "groupOrderSwap", js.Any.fromFunction3(value))
+    inline def setGroupOrderSwap(value: (/* fromGroup */ Any, /* toGroup */ Any, /* groups */ DataSet[DataGroup]) => Unit): Self = StObject.set(x, "groupOrderSwap", js.Any.fromFunction3(value))
     
     inline def setGroupOrderSwapUndefined: Self = StObject.set(x, "groupOrderSwap", js.undefined)
     
     inline def setGroupOrderUndefined: Self = StObject.set(x, "groupOrder", js.undefined)
     
     inline def setGroupTemplate(
-      value: (/* item */ js.UndefOr[js.Any], /* element */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => String
+      value: (/* item */ js.UndefOr[Any], /* element */ js.UndefOr[Any], /* data */ js.UndefOr[Any]) => String
     ): Self = StObject.set(x, "groupTemplate", js.Any.fromFunction3(value))
     
     inline def setGroupTemplateUndefined: Self = StObject.set(x, "groupTemplate", js.undefined)
@@ -210,7 +209,7 @@ object TimelineOptions {
     
     inline def setHiddenDatesUndefined: Self = StObject.set(x, "hiddenDates", js.undefined)
     
-    inline def setHiddenDatesVarargs(value: TimelineHiddenDateOption*): Self = StObject.set(x, "hiddenDates", js.Array(value :_*))
+    inline def setHiddenDatesVarargs(value: TimelineHiddenDateOption*): Self = StObject.set(x, "hiddenDates", js.Array(value*))
     
     inline def setHorizontalScroll(value: Boolean): Self = StObject.set(x, "horizontalScroll", value.asInstanceOf[js.Any])
     
@@ -328,7 +327,7 @@ object TimelineOptions {
     
     inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
     
-    inline def setOrder(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
+    inline def setOrder(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
@@ -364,7 +363,7 @@ object TimelineOptions {
     
     inline def setShowTooltipsUndefined: Self = StObject.set(x, "showTooltips", js.undefined)
     
-    inline def setSnap(value: (/* date */ Date, /* scale */ String, /* step */ Double) => Date | Double): Self = StObject.set(x, "snap", js.Any.fromFunction3(value))
+    inline def setSnap(value: (/* date */ js.Date, /* scale */ String, /* step */ Double) => js.Date | Double): Self = StObject.set(x, "snap", js.Any.fromFunction3(value))
     
     inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
     
@@ -381,7 +380,7 @@ object TimelineOptions {
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     inline def setTemplate(
-      value: (/* item */ js.UndefOr[js.Any], /* element */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => String
+      value: (/* item */ js.UndefOr[Any], /* element */ js.UndefOr[Any], /* data */ js.UndefOr[Any]) => String
     ): Self = StObject.set(x, "template", js.Any.fromFunction3(value))
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
@@ -411,7 +410,7 @@ object TimelineOptions {
     inline def setVerticalScrollUndefined: Self = StObject.set(x, "verticalScroll", js.undefined)
     
     inline def setVisibleFrameTemplate(
-      value: (/* item */ js.UndefOr[js.Any], /* element */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => String
+      value: (/* item */ js.UndefOr[Any], /* element */ js.UndefOr[Any], /* data */ js.UndefOr[Any]) => String
     ): Self = StObject.set(x, "visibleFrameTemplate", js.Any.fromFunction3(value))
     
     inline def setVisibleFrameTemplateUndefined: Self = StObject.set(x, "visibleFrameTemplate", js.undefined)

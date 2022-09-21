@@ -1,6 +1,7 @@
 package typings.gitRevisionWebpackPlugin
 
-import typings.std.Plugin
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.WebpackPluginInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,22 +10,53 @@ object mod {
   
   @JSImport("git-revision-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with GitRevisionPlugin {
     def this(options: Options) = this()
+    
+    /**
+    	 * The run point of the plugin, required method.
+    	 */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
+    
+    /* CompleteClass */
+    override def branch(): String = js.native
+    
+    /* CompleteClass */
+    override def commithash(): String = js.native
+    
+    /* CompleteClass */
+    override def version(): String = js.native
   }
   
-  @js.native
   trait GitRevisionPlugin
     extends StObject
-       with Plugin {
+       with WebpackPluginInstance {
     
-    def branch(): String = js.native
+    def branch(): String
     
-    def commithash(): String = js.native
+    def commithash(): String
     
-    def version(): String = js.native
+    def version(): String
+  }
+  object GitRevisionPlugin {
+    
+    inline def apply(apply: Compiler => Unit, branch: () => String, commithash: () => String, version: () => String): GitRevisionPlugin = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), branch = js.Any.fromFunction0(branch), commithash = js.Any.fromFunction0(commithash), version = js.Any.fromFunction0(version))
+      __obj.asInstanceOf[GitRevisionPlugin]
+    }
+    
+    extension [Self <: GitRevisionPlugin](x: Self) {
+      
+      inline def setBranch(value: () => String): Self = StObject.set(x, "branch", js.Any.fromFunction0(value))
+      
+      inline def setCommithash(value: () => String): Self = StObject.set(x, "commithash", js.Any.fromFunction0(value))
+      
+      inline def setVersion(value: () => String): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
+    }
   }
   
   trait Options extends StObject {

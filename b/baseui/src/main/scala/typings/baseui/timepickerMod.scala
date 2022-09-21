@@ -1,14 +1,8 @@
 package typings.baseui
 
-import typings.baseui.baseuiStrings.`12`
-import typings.baseui.baseuiStrings.`24`
-import typings.baseui.baseuiStrings.compact
-import typings.baseui.baseuiStrings.default_
-import typings.baseui.baseuiStrings.large_
-import typings.baseui.baseuiStrings.mini
-import typings.baseui.selectMod.Option
-import typings.react.mod.Component
-import typings.std.Date
+import typings.baseui.timepickerTimepickerMod.default
+import typings.baseui.timepickerTypesMod.TimePickerDefaultProps
+import typings.baseui.timepickerTypesMod.TimePickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,154 +11,19 @@ object timepickerMod {
   
   @JSImport("baseui/timepicker", "TimePicker")
   @js.native
-  class TimePicker protected ()
-    extends Component[TimePickerProps, TimePickerState, js.Any] {
-    def this(props: TimePickerProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: TimePickerProps, context: js.Any) = this()
-    
-    def buildSelectedOption(value: Date, format: String): js.Object = js.native
-    
-    def buildSteps(): js.Array[Double] = js.native
-    
-    def handleChange(steps: Double): Unit = js.native
+  open class TimePicker[T] protected () extends default[T] {
+    def this(props: TimePickerProps[T]) = this()
   }
-  
-  trait TimePickerOverrides extends StObject {
+  object TimePicker {
     
-    var Select: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-  }
-  object TimePickerOverrides {
+    @JSImport("baseui/timepicker", "TimePicker")
+    @js.native
+    val ^ : js.Any = js.native
     
-    inline def apply(): TimePickerOverrides = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TimePickerOverrides]
-    }
-    
-    extension [Self <: TimePickerOverrides](x: Self) {
-      
-      inline def setSelect(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
-      
-      inline def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
-    }
-  }
-  
-  trait TimePickerProps extends StObject {
-    
-    var creatable: js.UndefOr[Boolean] = js.undefined
-    
-    var disabled: js.UndefOr[Boolean] = js.undefined
-    
-    var error: js.UndefOr[Boolean] = js.undefined
-    
-    var format: js.UndefOr[`12` | `24`] = js.undefined
-    
-    var nullable: js.UndefOr[Boolean] = js.undefined
-    
-    var onChange: js.UndefOr[js.Function1[/* args */ Date, js.Any]] = js.undefined
-    
-    var overrides: js.UndefOr[TimePickerOverrides] = js.undefined
-    
-    var placeholder: js.UndefOr[String] = js.undefined
-    
-    var positive: js.UndefOr[Boolean] = js.undefined
-    
-    var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
-    
-    var step: js.UndefOr[Double] = js.undefined
-    
-    var value: js.UndefOr[Date | Null] = js.undefined
-  }
-  object TimePickerProps {
-    
-    inline def apply(): TimePickerProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TimePickerProps]
-    }
-    
-    extension [Self <: TimePickerProps](x: Self) {
-      
-      inline def setCreatable(value: Boolean): Self = StObject.set(x, "creatable", value.asInstanceOf[js.Any])
-      
-      inline def setCreatableUndefined: Self = StObject.set(x, "creatable", js.undefined)
-      
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
-      
-      inline def setFormat(value: `12` | `24`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
-      
-      inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
-      
-      inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
-      
-      inline def setOnChange(value: /* args */ Date => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
-      
-      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
-      
-      inline def setOverrides(value: TimePickerOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
-      
-      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
-      
-      inline def setPositive(value: Boolean): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
-      
-      inline def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
-      
-      inline def setSize(value: mini | default_ | compact | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
-      
-      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
-      
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
-  }
-  
-  trait TimePickerState extends StObject {
-    
-    var steps: js.Array[Double]
-    
-    var value: js.UndefOr[Option] = js.undefined
-  }
-  object TimePickerState {
-    
-    inline def apply(steps: js.Array[Double]): TimePickerState = {
-      val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TimePickerState]
-    }
-    
-    extension [Self <: TimePickerState](x: Self) {
-      
-      inline def setSteps(value: js.Array[Double]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
-      
-      inline def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value :_*))
-      
-      inline def setValue(value: Option): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
+    /* static member */
+    @JSImport("baseui/timepicker", "TimePicker.defaultProps")
+    @js.native
+    def defaultProps: TimePickerDefaultProps = js.native
+    inline def defaultProps_=(x: TimePickerDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

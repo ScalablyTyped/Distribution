@@ -24,6 +24,6 @@ object RetrieveEnvironmentInfoResultMessage {
     
     inline def setEnvironmentInfoUndefined: Self = StObject.set(x, "EnvironmentInfo", js.undefined)
     
-    inline def setEnvironmentInfoVarargs(value: EnvironmentInfoDescription*): Self = StObject.set(x, "EnvironmentInfo", js.Array(value :_*))
+    inline def setEnvironmentInfoVarargs(value: EnvironmentInfoDescription*): Self = StObject.set(x, "EnvironmentInfo", js.Array(value*))
   }
 }

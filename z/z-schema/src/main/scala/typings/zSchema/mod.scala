@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("z-schema", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Validator {
     def this(options: Options) = this()
@@ -44,7 +44,7 @@ object mod {
     *   Returns `true` if `value` matches the custom format.
     */
   /* static member */
-  inline def registerFormat(formatName: String, validatorFunction: js.Function1[/* value */ js.Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormat")(formatName.asInstanceOf[js.Any], validatorFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerFormat(formatName: String, validatorFunction: js.Function1[/* value */ Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormat")(formatName.asInstanceOf[js.Any], validatorFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("z-schema", "schemaSymbol")
   @js.native
@@ -66,7 +66,7 @@ object mod {
     
     var breakOnFirstError: js.UndefOr[Boolean] = js.undefined
     
-    var customValidator: js.UndefOr[js.Function3[/* report */ Report, /* schema */ js.Any, /* json */ js.Any, Unit]] = js.undefined
+    var customValidator: js.UndefOr[js.Function3[/* report */ Report, /* schema */ Any, /* json */ Any, Unit]] = js.undefined
     
     var forceAdditional: js.UndefOr[Boolean] = js.undefined
     
@@ -123,7 +123,7 @@ object mod {
       
       inline def setBreakOnFirstErrorUndefined: Self = StObject.set(x, "breakOnFirstError", js.undefined)
       
-      inline def setCustomValidator(value: (/* report */ Report, /* schema */ js.Any, /* json */ js.Any) => Unit): Self = StObject.set(x, "customValidator", js.Any.fromFunction3(value))
+      inline def setCustomValidator(value: (/* report */ Report, /* schema */ Any, /* json */ Any) => Unit): Self = StObject.set(x, "customValidator", js.Any.fromFunction3(value))
       
       inline def setCustomValidatorUndefined: Self = StObject.set(x, "customValidator", js.undefined)
       
@@ -217,17 +217,34 @@ object mod {
       subReports: String,
       schemaDescription: String
     ): Unit
+    
+    var errors: js.Array[SchemaErrorDetail]
+    
+    /**
+      * Returns whether the validation did pass
+      */
+    def isValid(): Boolean
   }
   object Report {
     
-    inline def apply(addCustomError: (String, String, js.Array[String], String, String) => Unit): Report = {
-      val __obj = js.Dynamic.literal(addCustomError = js.Any.fromFunction5(addCustomError))
+    inline def apply(
+      addCustomError: (String, String, js.Array[String], String, String) => Unit,
+      errors: js.Array[SchemaErrorDetail],
+      isValid: () => Boolean
+    ): Report = {
+      val __obj = js.Dynamic.literal(addCustomError = js.Any.fromFunction5(addCustomError), errors = errors.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid))
       __obj.asInstanceOf[Report]
     }
     
     extension [Self <: Report](x: Self) {
       
       inline def setAddCustomError(value: (String, String, js.Array[String], String, String) => Unit): Self = StObject.set(x, "addCustomError", js.Any.fromFunction5(value))
+      
+      inline def setErrors(value: js.Array[SchemaErrorDetail]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      
+      inline def setErrorsVarargs(value: SchemaErrorDetail*): Self = StObject.set(x, "errors", js.Array(value*))
+      
+      inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     }
   }
   
@@ -252,7 +269,7 @@ object mod {
       
       inline def setDetails(value: js.Array[SchemaErrorDetail]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      inline def setDetailsVarargs(value: SchemaErrorDetail*): Self = StObject.set(x, "details", js.Array(value :_*))
+      inline def setDetailsVarargs(value: SchemaErrorDetail*): Self = StObject.set(x, "details", js.Array(value*))
     }
   }
   
@@ -316,13 +333,13 @@ object mod {
       
       inline def setInner(value: js.Array[SchemaErrorDetail]): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
       
-      inline def setInnerVarargs(value: SchemaErrorDetail*): Self = StObject.set(x, "inner", js.Array(value :_*))
+      inline def setInnerVarargs(value: SchemaErrorDetail*): Self = StObject.set(x, "inner", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setParams(value: js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -342,22 +359,24 @@ object mod {
       */
     def getLastErrors(): js.Array[SchemaErrorDetail] = js.native
     
+    var lastReport: js.UndefOr[Report] = js.native
+    
     /**
       * @param json - either a JSON string or a parsed JSON object
       * @param schema - the JSON object representing the schema
       * @returns true if json matches schema
       */
-    def validate(json: js.Any, schema: js.Any): Boolean = js.native
+    def validate(json: Any, schema: Any): Boolean = js.native
     /**
       * @param json - either a JSON string or a parsed JSON object
       * @param schema - the JSON object representing the schema
       */
-    def validate(json: js.Any, schema: js.Any, callback: js.Function2[/* err */ js.Any, /* valid */ Boolean, Unit]): Unit = js.native
+    def validate(json: Any, schema: Any, callback: js.Function2[/* err */ Any, /* valid */ Boolean, Unit]): Unit = js.native
     
     /**
       * @param schema - JSON object representing schema
       * @returns {boolean} true if schema is valid.
       */
-    def validateSchema(schema: js.Any): Boolean = js.native
+    def validateSchema(schema: Any): Boolean = js.native
   }
 }

@@ -1,7 +1,6 @@
 package typings.prex
 
 import typings.std.AsyncIterableIterator
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,14 +14,14 @@ object boundedQueueMod {
     *
     * @param iterable An optional iterable of values or promises.
     */
-  class AsyncBoundedQueue[T] () extends StObject {
-    def this(iterable: Iterable[T | js.Thenable[T]]) = this()
+  open class AsyncBoundedQueue[T] () extends StObject {
+    def this(iterable: js.Iterable[T | js.Thenable[T]]) = this()
     
-    /* private */ var _dequeue: js.Any = js.native
+    /* private */ var _dequeue: Any = js.native
     
-    /* private */ var _queue: js.Any = js.native
+    /* private */ var _queue: Any = js.native
     
-    /* private */ var _state: js.Any = js.native
+    /* private */ var _state: Any = js.native
     
     /**
       * Consumes all items in the queue until the queue ends.

@@ -13,7 +13,7 @@ object global {
     /*~ Write your module's methods and properties in this class */
     @JSGlobal("XmlParser")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.xmljs.mod.^ {
       def this(oPar: ParserParameters) = this()
     }

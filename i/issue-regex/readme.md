@@ -1,7 +1,7 @@
 
 # Scala.js typings for issue-regex
 
-Typings are for version 3.1.0
+Typings are for version 4.1.0
 
 ## Library description:
 Regular expression for matching issue references
@@ -9,11 +9,11 @@ Regular expression for matching issue references
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | issue-regex |
-| Keywords           | issue, issues, pr, pull, request, reference, references, ref, regex, regexp, regular, expression, github, gh, link |
+| Keywords           | issue, issues, pr, pull, request, reference, references, regex, regexp, regular, expression, github, gh, link |
 | # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 1883577 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 489477.0 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/issue-regex#readme)

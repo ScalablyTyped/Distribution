@@ -23,6 +23,6 @@ object DocumentHighlights {
     
     inline def setHighlightSpans(value: js.Array[HighlightSpan]): Self = StObject.set(x, "highlightSpans", value.asInstanceOf[js.Any])
     
-    inline def setHighlightSpansVarargs(value: HighlightSpan*): Self = StObject.set(x, "highlightSpans", js.Array(value :_*))
+    inline def setHighlightSpansVarargs(value: HighlightSpan*): Self = StObject.set(x, "highlightSpans", js.Array(value*))
   }
 }

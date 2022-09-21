@@ -3,7 +3,6 @@ package typings.rbx
 import typings.rbx.anon.CloseOnBlur
 import typings.react.mod.ComponentType
 import typings.react.mod.PureComponent
-import typings.react.mod.ReactType
 import typings.react.mod.Ref
 import typings.std.Document
 import typings.std.HTMLElement
@@ -16,16 +15,16 @@ object modalPortalMod {
   
   @JSImport("rbx/components/modal/modal-portal", "ModalPortal")
   @js.native
-  class ModalPortal protected ()
-    extends PureComponent[ModalPortalProps, js.Object, js.Any] {
+  open class ModalPortal protected ()
+    extends PureComponent[ModalPortalProps, js.Object, Any] {
     def this(props: ModalPortalProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ModalPortalProps, context: js.Any) = this()
+    def this(props: ModalPortalProps, context: Any) = this()
     
-    /* private */ val close: js.Any = js.native
+    /* private */ val close: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MModalPortal(): Unit = js.native
@@ -33,7 +32,7 @@ object modalPortalMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MModalPortal(): Unit = js.native
     
-    /* private */ val handleKeydown: js.Any = js.native
+    /* private */ val handleKeydown: Any = js.native
   }
   /* static members */
   object ModalPortal {
@@ -55,7 +54,9 @@ object modalPortalMod {
   
   trait ModalPortalModifierProps extends StObject {
     
-    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var as: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -80,7 +81,9 @@ object modalPortalMod {
     
     extension [Self <: ModalPortalModifierProps](x: Self) {
       
-      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

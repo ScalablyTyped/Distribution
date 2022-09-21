@@ -1,7 +1,7 @@
 
 # Scala.js typings for error-stack-parser
 
-Typings are for version 2.0.6
+Typings are for version 2.1.4
 
 ## Library description:
 Extract meaning from JS Errors
@@ -10,10 +10,10 @@ Extract meaning from JS Errors
 | ------------------ | :-------------: |
 | Full name          | error-stack-parser |
 | Keywords           | stacktrace, error, stack, parser |
-| # releases         | 5 |
-| # dependents       | 234 |
-| # downloads        | 185051995 |
-| # stars            | 4 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1665006666666664E7 |
+| # stars            | 331.0 |
 
 ## Links
 - [Homepage](https://www.stacktracejs.com)

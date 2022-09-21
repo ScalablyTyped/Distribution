@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response containing the current state of the specified test matrix.
-  */
 trait SchemaCancelTestMatrixResponse extends StObject {
   
   /**
-    * The current rolled-up state of the test matrix. If this state is already
-    * final, then the cancelation request will have no effect.
+    * The current rolled-up state of the test matrix. If this state is already final, then the cancelation request will have no effect.
     */
-  var testState: js.UndefOr[String] = js.undefined
+  var testState: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCancelTestMatrixResponse {
   
@@ -25,6 +21,8 @@ object SchemaCancelTestMatrixResponse {
   extension [Self <: SchemaCancelTestMatrixResponse](x: Self) {
     
     inline def setTestState(value: String): Self = StObject.set(x, "testState", value.asInstanceOf[js.Any])
+    
+    inline def setTestStateNull: Self = StObject.set(x, "testState", null)
     
     inline def setTestStateUndefined: Self = StObject.set(x, "testState", js.undefined)
   }

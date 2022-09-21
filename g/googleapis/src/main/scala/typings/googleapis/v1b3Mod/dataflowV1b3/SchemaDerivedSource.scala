@@ -4,18 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specification of one of the bundles produced as a result of splitting a
-  * Source (e.g. when executing a SourceSplitRequest, or when splitting an
-  * active task using WorkItemStatus.dynamic_source_split), relative to the
-  * source being split.
-  */
 trait SchemaDerivedSource extends StObject {
   
   /**
     * What source to base the produced source on (if any).
     */
-  var derivationMode: js.UndefOr[String] = js.undefined
+  var derivationMode: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Specification of the source.
@@ -32,6 +26,8 @@ object SchemaDerivedSource {
   extension [Self <: SchemaDerivedSource](x: Self) {
     
     inline def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
+    
+    inline def setDerivationModeNull: Self = StObject.set(x, "derivationMode", null)
     
     inline def setDerivationModeUndefined: Self = StObject.set(x, "derivationMode", js.undefined)
     

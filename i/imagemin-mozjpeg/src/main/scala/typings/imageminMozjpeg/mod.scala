@@ -188,7 +188,7 @@ object mod {
       
       inline def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
       
-      inline def setSampleVarargs(value: String*): Self = StObject.set(x, "sample", js.Array(value :_*))
+      inline def setSampleVarargs(value: String*): Self = StObject.set(x, "sample", js.Array(value*))
       
       inline def setSmooth(value: Double): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
       

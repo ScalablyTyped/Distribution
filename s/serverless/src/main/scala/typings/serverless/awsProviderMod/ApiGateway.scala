@@ -1,13 +1,19 @@
 package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.serverless.serverlessStrings.AUTHORIZER
+import typings.serverless.serverlessStrings.HEADER
+import typings.serverless.serverlessStrings.authorizer_
+import typings.serverless.serverlessStrings.header_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ApiGateway extends StObject {
   
-  var apiKeySourceType: js.UndefOr[String] = js.undefined
+  var apiKeySourceType: js.UndefOr[HEADER | AUTHORIZER | header_ | authorizer_] = js.undefined
+  
+  var apiKeys: js.UndefOr[js.Array[String]] = js.undefined
   
   var binaryMediaTypes: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -17,6 +23,8 @@ trait ApiGateway extends StObject {
   
   var minimumCompressionSize: js.UndefOr[Double | String] = js.undefined
   
+  var resourcePolicy: js.UndefOr[js.Array[ResourcePolicy]] = js.undefined
+  
   var restApiId: js.UndefOr[String] = js.undefined
   
   var restApiResources: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -25,7 +33,9 @@ trait ApiGateway extends StObject {
   
   var shouldStartNameWithService: js.UndefOr[Boolean] = js.undefined
   
-  var websocketApiId: js.UndefOr[js.Any] = js.undefined
+  var usagePlan: js.UndefOr[UsagePlan] = js.undefined
+  
+  var websocketApiId: js.UndefOr[Any] = js.undefined
 }
 object ApiGateway {
   
@@ -36,15 +46,21 @@ object ApiGateway {
   
   extension [Self <: ApiGateway](x: Self) {
     
-    inline def setApiKeySourceType(value: String): Self = StObject.set(x, "apiKeySourceType", value.asInstanceOf[js.Any])
+    inline def setApiKeySourceType(value: HEADER | AUTHORIZER | header_ | authorizer_): Self = StObject.set(x, "apiKeySourceType", value.asInstanceOf[js.Any])
     
     inline def setApiKeySourceTypeUndefined: Self = StObject.set(x, "apiKeySourceType", js.undefined)
+    
+    inline def setApiKeys(value: js.Array[String]): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
+    
+    inline def setApiKeysUndefined: Self = StObject.set(x, "apiKeys", js.undefined)
+    
+    inline def setApiKeysVarargs(value: String*): Self = StObject.set(x, "apiKeys", js.Array(value*))
     
     inline def setBinaryMediaTypes(value: js.Array[String]): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
     
     inline def setBinaryMediaTypesUndefined: Self = StObject.set(x, "binaryMediaTypes", js.undefined)
     
-    inline def setBinaryMediaTypesVarargs(value: String*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
+    inline def setBinaryMediaTypesVarargs(value: String*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -57,6 +73,12 @@ object ApiGateway {
     inline def setMinimumCompressionSize(value: Double | String): Self = StObject.set(x, "minimumCompressionSize", value.asInstanceOf[js.Any])
     
     inline def setMinimumCompressionSizeUndefined: Self = StObject.set(x, "minimumCompressionSize", js.undefined)
+    
+    inline def setResourcePolicy(value: js.Array[ResourcePolicy]): Self = StObject.set(x, "resourcePolicy", value.asInstanceOf[js.Any])
+    
+    inline def setResourcePolicyUndefined: Self = StObject.set(x, "resourcePolicy", js.undefined)
+    
+    inline def setResourcePolicyVarargs(value: ResourcePolicy*): Self = StObject.set(x, "resourcePolicy", js.Array(value*))
     
     inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
@@ -74,7 +96,11 @@ object ApiGateway {
     
     inline def setShouldStartNameWithServiceUndefined: Self = StObject.set(x, "shouldStartNameWithService", js.undefined)
     
-    inline def setWebsocketApiId(value: js.Any): Self = StObject.set(x, "websocketApiId", value.asInstanceOf[js.Any])
+    inline def setUsagePlan(value: UsagePlan): Self = StObject.set(x, "usagePlan", value.asInstanceOf[js.Any])
+    
+    inline def setUsagePlanUndefined: Self = StObject.set(x, "usagePlan", js.undefined)
+    
+    inline def setWebsocketApiId(value: Any): Self = StObject.set(x, "websocketApiId", value.asInstanceOf[js.Any])
     
     inline def setWebsocketApiIdUndefined: Self = StObject.set(x, "websocketApiId", js.undefined)
   }

@@ -1,47 +1,64 @@
 package typings.reactNativeElements.anon
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import org.scalablytyped.runtime.Instantiable1
+import typings.react.mod.Component
 import typings.react.mod.ReactElement
+import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.RecursivePartial
+import typings.reactNativeElements.reactNativeElementsStrings.ModalComponent
+import typings.reactNativeElements.reactNativeElementsStrings.onLongPress
+import typings.reactNativeElements.reactNativeElementsStrings.onPress
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.TooltipProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/tooltip/Tooltip.TooltipProps>> */
 trait RecursivePartialPartialTo extends StObject {
   
-  var ModalComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
+  var ModalComponent: js.UndefOr[
+    RecursivePartial[
+      js.UndefOr[
+        TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          Component[
+            typings.reactNativeElements.reactNativeElementsStrings.ModalComponent, 
+            js.Object, 
+            js.Object
+          ]
+        ])
+      ]
+    ]
+  ] = js.undefined
   
-  var backgroundColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  var backgroundColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.undefined
   
   var closeOnlyOnBackdropPress: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
+  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double | String]]] = js.undefined
   
-  var highlightColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  var highlightColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.undefined
   
   var onClose: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
   var onOpen: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var overlayColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  var overlayColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.undefined
   
-  var pointerColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  var pointerColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.undefined
   
   var popover: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.undefined
   
   var skipAndroidStatusBar: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var toggleAction: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  var toggleAction: js.UndefOr[RecursivePartial[js.UndefOr[String | onPress | onLongPress]]] = js.undefined
   
   var toggleOnPress: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
+  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double | String]]] = js.undefined
   
   var withOverlay: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
@@ -56,7 +73,7 @@ object RecursivePartialPartialTo {
   
   extension [Self <: RecursivePartialPartialTo](x: Self) {
     
-    inline def setBackgroundColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
@@ -68,15 +85,24 @@ object RecursivePartialPartialTo {
     
     inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    inline def setHeight(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: RecursivePartial[js.UndefOr[Double | String]]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHighlightColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+    inline def setHighlightColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
     inline def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
     
-    inline def setModalComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "ModalComponent", value.asInstanceOf[js.Any])
+    inline def setModalComponent(
+      value: RecursivePartial[
+          js.UndefOr[
+            TypeofComponent & (Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+              Component[ModalComponent, js.Object, js.Object]
+            ])
+          ]
+        ]
+    ): Self = StObject.set(x, "ModalComponent", value.asInstanceOf[js.Any])
     
     inline def setModalComponentUndefined: Self = StObject.set(x, "ModalComponent", js.undefined)
     
@@ -88,11 +114,11 @@ object RecursivePartialPartialTo {
     
     inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
-    inline def setOverlayColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "overlayColor", value.asInstanceOf[js.Any])
+    inline def setOverlayColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "overlayColor", value.asInstanceOf[js.Any])
     
     inline def setOverlayColorUndefined: Self = StObject.set(x, "overlayColor", js.undefined)
     
-    inline def setPointerColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "pointerColor", value.asInstanceOf[js.Any])
+    inline def setPointerColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "pointerColor", value.asInstanceOf[js.Any])
     
     inline def setPointerColorUndefined: Self = StObject.set(x, "pointerColor", js.undefined)
     
@@ -104,7 +130,7 @@ object RecursivePartialPartialTo {
     
     inline def setSkipAndroidStatusBarUndefined: Self = StObject.set(x, "skipAndroidStatusBar", js.undefined)
     
-    inline def setToggleAction(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "toggleAction", value.asInstanceOf[js.Any])
+    inline def setToggleAction(value: RecursivePartial[js.UndefOr[String | onPress | onLongPress]]): Self = StObject.set(x, "toggleAction", value.asInstanceOf[js.Any])
     
     inline def setToggleActionUndefined: Self = StObject.set(x, "toggleAction", js.undefined)
     
@@ -112,7 +138,7 @@ object RecursivePartialPartialTo {
     
     inline def setToggleOnPressUndefined: Self = StObject.set(x, "toggleOnPress", js.undefined)
     
-    inline def setWidth(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: RecursivePartial[js.UndefOr[Double | String]]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     

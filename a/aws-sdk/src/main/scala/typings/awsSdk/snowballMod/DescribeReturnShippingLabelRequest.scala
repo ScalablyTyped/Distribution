@@ -9,19 +9,17 @@ trait DescribeReturnShippingLabelRequest extends StObject {
   /**
     * The automatically generated ID for a job, for example JID123e4567-e89b-12d3-a456-426655440000.
     */
-  var JobId: js.UndefOr[typings.awsSdk.snowballMod.JobId] = js.undefined
+  var JobId: typings.awsSdk.snowballMod.JobId
 }
 object DescribeReturnShippingLabelRequest {
   
-  inline def apply(): DescribeReturnShippingLabelRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(JobId: JobId): DescribeReturnShippingLabelRequest = {
+    val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReturnShippingLabelRequest]
   }
   
   extension [Self <: DescribeReturnShippingLabelRequest](x: Self) {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
-    
-    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

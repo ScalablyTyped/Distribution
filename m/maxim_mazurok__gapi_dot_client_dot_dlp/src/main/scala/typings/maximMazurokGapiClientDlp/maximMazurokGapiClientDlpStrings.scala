@@ -19,6 +19,10 @@ object maximMazurokGapiClientDlpStrings {
   inline def GooglePrivacyDlpV2HybridOptions: GooglePrivacyDlpV2HybridOptions = "GooglePrivacyDlpV2HybridOptions".asInstanceOf[GooglePrivacyDlpV2HybridOptions]
   
   @js.native
+  sealed trait GooglePrivacyDlpV2TableDataProfile extends StObject
+  inline def GooglePrivacyDlpV2TableDataProfile: GooglePrivacyDlpV2TableDataProfile = "GooglePrivacyDlpV2TableDataProfile".asInstanceOf[GooglePrivacyDlpV2TableDataProfile]
+  
+  @js.native
   sealed trait GoogleRpcStatus extends StObject
   inline def GoogleRpcStatus: GoogleRpcStatus = "GoogleRpcStatus".asInstanceOf[GoogleRpcStatus]
   

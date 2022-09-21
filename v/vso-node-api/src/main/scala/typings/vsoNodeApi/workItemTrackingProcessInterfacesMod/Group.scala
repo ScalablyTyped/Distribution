@@ -80,7 +80,7 @@ object Group {
     
     inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value*))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with IObservable {
   
   /** [Config Option] (Boolean/Object) */
-  var autoLoad: js.UndefOr[js.Any] = js.undefined
+  var autoLoad: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var autoSync: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var filterOnLoad: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object[]/Function[]) */
-  var filters: js.UndefOr[js.Any] = js.undefined
+  var filters: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns a comparator function which compares two items and returns 1 0 or 1 depending on the currently defined set  */
   var generateComparator: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -92,18 +92,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param options Object config object. This is passed into the Operation object that is created and then sent to the proxy's Ext.data.proxy.Proxy.read function
     * @returns void this
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var model: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/Ext.data.proxy.Proxy/Object) */
-  var proxy: js.UndefOr[js.Any] = js.undefined
+  var proxy: js.UndefOr[Any] = js.undefined
   
   /** [Method] Reloads the store using the last options passed to the load method
     * @param options Object A config object which contains options which may override the options passed to the previous load call.
     */
-  var reload: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var reload: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var remoteFilter: js.UndefOr[Boolean] = js.undefined
@@ -127,16 +127,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param proxy String/Object/Ext.data.proxy.Proxy The new Proxy, which can be either a type string, a configuration object or an Ext.data.proxy.Proxy instance
     * @returns Ext.data.proxy.Proxy The attached Proxy object
     */
-  var setProxy: js.UndefOr[
-    js.Function1[/* proxy */ js.UndefOr[js.Any], typings.extjs.Ext.data.proxy.IProxy]
-  ] = js.undefined
+  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[Any], typings.extjs.Ext.data.proxy.IProxy]] = js.undefined
   
   /** [Method] Sorts the data in the Store by one or more of its properties
     * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
     * @param direction String The overall direction to sort the data by.
     * @returns Ext.util.Sorter[]
     */
-  var sort: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[String], Array]] = js.undefined
+  var sort: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[String], Array]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var sortOnLoad: js.UndefOr[Boolean] = js.undefined
@@ -145,7 +143,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var sortRoot: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.util.Sorter[]/Object[]) */
-  var sorters: js.UndefOr[js.Any] = js.undefined
+  var sorters: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var statefulFilters: js.UndefOr[Boolean] = js.undefined
@@ -160,7 +158,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param options Object Object containing one or more properties supported by the sync method (these get passed along to the underlying proxy's batch method):
     * @returns Ext.data.Store this
     */
-  var sync: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IStore]] = js.undefined
+  var sync: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], IStore]] = js.undefined
 }
 object IAbstractStore {
   
@@ -171,7 +169,7 @@ object IAbstractStore {
   
   extension [Self <: IAbstractStore](x: Self) {
     
-    inline def setAutoLoad(value: js.Any): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
+    inline def setAutoLoad(value: Any): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
     inline def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
@@ -199,7 +197,7 @@ object IAbstractStore {
     
     inline def setFilterOnLoadUndefined: Self = StObject.set(x, "filterOnLoad", js.undefined)
     
-    inline def setFilters(value: js.Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
@@ -251,7 +249,7 @@ object IAbstractStore {
     
     inline def setIsStoreUndefined: Self = StObject.set(x, "isStore", js.undefined)
     
-    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
@@ -259,11 +257,11 @@ object IAbstractStore {
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    inline def setReload(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction1(value))
+    inline def setReload(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction1(value))
     
     inline def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
     
@@ -291,11 +289,11 @@ object IAbstractStore {
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setSetProxy(value: /* proxy */ js.UndefOr[js.Any] => typings.extjs.Ext.data.proxy.IProxy): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
+    inline def setSetProxy(value: /* proxy */ js.UndefOr[Any] => typings.extjs.Ext.data.proxy.IProxy): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
     
     inline def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
     
-    inline def setSort(value: (js.UndefOr[js.Any], js.UndefOr[String]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    inline def setSort(value: (js.UndefOr[Any], js.UndefOr[String]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
     inline def setSortOnLoad(value: Boolean): Self = StObject.set(x, "sortOnLoad", value.asInstanceOf[js.Any])
     
@@ -307,7 +305,7 @@ object IAbstractStore {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSorters(value: js.Any): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
+    inline def setSorters(value: Any): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
     
     inline def setSortersUndefined: Self = StObject.set(x, "sorters", js.undefined)
     
@@ -323,7 +321,7 @@ object IAbstractStore {
     
     inline def setSuspendAutoSyncUndefined: Self = StObject.set(x, "suspendAutoSync", js.undefined)
     
-    inline def setSync(value: /* options */ js.UndefOr[js.Any] => IStore): Self = StObject.set(x, "sync", js.Any.fromFunction1(value))
+    inline def setSync(value: /* options */ js.UndefOr[Any] => IStore): Self = StObject.set(x, "sync", js.Any.fromFunction1(value))
     
     inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
   }

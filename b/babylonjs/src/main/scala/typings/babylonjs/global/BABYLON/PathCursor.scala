@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PathCursor")
 @js.native
-class PathCursor protected ()
+open class PathCursor protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PathCursor {
   /**
     * Initializes the path cursor
-    * @param path The path to track
+    * @param _path The path to track
     */
-  def this(path: typings.babylonjs.BABYLON.Path2) = this()
+  def this(_path: typings.babylonjs.BABYLON.Path2) = this()
 }

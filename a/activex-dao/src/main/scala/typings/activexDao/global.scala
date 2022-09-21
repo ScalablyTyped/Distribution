@@ -13,7 +13,7 @@ object global {
     
     @JSGlobal("DAO.ComplexType")
     @js.native
-    /* private */ class ComplexType ()
+    /* private */ open class ComplexType ()
       extends StObject
          with typings.activexDao.DAO.ComplexType {
       
@@ -32,13 +32,13 @@ object global {
     
     @JSGlobal("DAO.Connection")
     @js.native
-    /* private */ class Connection ()
+    /* private */ open class Connection ()
       extends StObject
          with typings.activexDao.DAO.Connection
     
     @JSGlobal("DAO.Container")
     @js.native
-    /* private */ class Container ()
+    /* private */ open class Container ()
       extends StObject
          with typings.activexDao.DAO.Container {
       
@@ -83,25 +83,25 @@ object global {
     
     @JSGlobal("DAO.DBEngine")
     @js.native
-    /* private */ class DBEngine ()
+    /* private */ open class DBEngine ()
       extends StObject
          with typings.activexDao.DAO.DBEngine
     
     @JSGlobal("DAO.Database")
     @js.native
-    /* private */ class Database ()
+    /* private */ open class Database ()
       extends StObject
          with typings.activexDao.DAO.Database
     
     @JSGlobal("DAO.Document")
     @js.native
-    /* private */ class Document ()
+    /* private */ open class Document ()
       extends StObject
          with typings.activexDao.DAO.Document
     
     @JSGlobal("DAO.Error")
     @js.native
-    /* private */ class Error ()
+    /* private */ open class Error ()
       extends StObject
          with typings.activexDao.DAO.Error {
       
@@ -127,25 +127,25 @@ object global {
     
     @JSGlobal("DAO.Field")
     @js.native
-    /* private */ class Field ()
+    /* private */ open class Field ()
       extends StObject
          with typings.activexDao.DAO.Field
     
     @JSGlobal("DAO.Group")
     @js.native
-    /* private */ class Group ()
+    /* private */ open class Group ()
       extends StObject
          with typings.activexDao.DAO.Group
     
     @JSGlobal("DAO.Index")
     @js.native
-    /* private */ class Index ()
+    /* private */ open class Index ()
       extends StObject
          with typings.activexDao.DAO.Index
     
     @JSGlobal("DAO.Parameter")
     @js.native
-    /* private */ class Parameter ()
+    /* private */ open class Parameter ()
       extends StObject
          with typings.activexDao.DAO.Parameter {
       
@@ -171,12 +171,12 @@ object global {
       var Type: Double = js.native
       
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
     }
     
     @JSGlobal("DAO.Property")
     @js.native
-    /* private */ class Property ()
+    /* private */ open class Property ()
       extends StObject
          with typings.activexDao.DAO.Property {
       
@@ -202,36 +202,36 @@ object global {
       var Type: Double = js.native
       
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
     }
     
     @JSGlobal("DAO.QueryDef")
     @js.native
-    /* private */ class QueryDef ()
+    /* private */ open class QueryDef ()
       extends StObject
          with typings.activexDao.DAO.QueryDef
     
     @JSGlobal("DAO.Relation")
     @js.native
-    /* private */ class Relation ()
+    /* private */ open class Relation ()
       extends StObject
          with typings.activexDao.DAO.Relation
     
     @JSGlobal("DAO.TableDef")
     @js.native
-    /* private */ class TableDef ()
+    /* private */ open class TableDef ()
       extends StObject
          with typings.activexDao.DAO.TableDef
     
     @JSGlobal("DAO.User")
     @js.native
-    /* private */ class User ()
+    /* private */ open class User ()
       extends StObject
          with typings.activexDao.DAO.User
     
     @JSGlobal("DAO.Workspace")
     @js.native
-    /* private */ class Workspace ()
+    /* private */ open class Workspace ()
       extends StObject
          with typings.activexDao.DAO.Workspace
   }

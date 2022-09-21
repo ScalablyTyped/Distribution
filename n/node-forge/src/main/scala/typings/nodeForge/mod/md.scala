@@ -52,6 +52,27 @@ object md {
     inline def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.nodeForge.nodeForgeStrings.md5
+    - typings.nodeForge.nodeForgeStrings.sha1
+    - typings.nodeForge.nodeForgeStrings.sha256
+    - typings.nodeForge.nodeForgeStrings.sha384
+    - typings.nodeForge.nodeForgeStrings.sha512
+  */
+  trait Algorithm extends StObject
+  object Algorithm {
+    
+    inline def md5: typings.nodeForge.nodeForgeStrings.md5 = "md5".asInstanceOf[typings.nodeForge.nodeForgeStrings.md5]
+    
+    inline def sha1: typings.nodeForge.nodeForgeStrings.sha1 = "sha1".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha1]
+    
+    inline def sha256: typings.nodeForge.nodeForgeStrings.sha256 = "sha256".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha256]
+    
+    inline def sha384: typings.nodeForge.nodeForgeStrings.sha384 = "sha384".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha384]
+    
+    inline def sha512: typings.nodeForge.nodeForgeStrings.sha512 = "sha512".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha512]
+  }
+  
   @js.native
   trait MessageDigest extends StObject {
     

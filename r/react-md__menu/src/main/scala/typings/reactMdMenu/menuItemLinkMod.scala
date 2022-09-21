@@ -5,9 +5,10 @@ import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdList.listItemLinkMod.ListItemLinkProps
-import typings.reactMdList.listItemLinkMod.ListItemLinkWithComponentProps
+import typings.reactMdMenu.anon.ReadonlyHTMLAttributesHTM
 import typings.reactMdMenu.reactMdMenuStrings.menuitem
 import typings.std.HTMLAnchorElement
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,12 +18,20 @@ object menuItemLinkMod {
   @JSImport("@react-md/menu/types/MenuItemLink", "MenuItemLink")
   @js.native
   val MenuItemLink: ForwardRefExoticComponent[
-    (MenuItemLinkProps & RefAttributes[HTMLAnchorElement]) | (MenuItemLinkProps & ListItemLinkWithComponentProps & RefAttributes[HTMLAnchorElement])
+    (MenuItemLinkProps & RefAttributes[HTMLAnchorElement]) | ((Pick[MenuItemLinkWithComponentProps, String | Double]) & RefAttributes[HTMLAnchorElement])
   ] = js.native
   
   trait MenuItemLinkProps
     extends StObject
        with ListItemLinkProps {
+    
+    /**
+      * Any additional props that should be provided to the `<li>` that wraps the
+      * link component. You probably won't ever need to use this.
+      *
+      * @remarks \@since 5.0.0
+      */
+    var liProps: js.UndefOr[ReadonlyHTMLAttributesHTM] = js.undefined
     
     /**
       * The current role for the menu item. This will eventually be updated for
@@ -40,6 +49,10 @@ object menuItemLinkMod {
     
     extension [Self <: MenuItemLinkProps](x: Self) {
       
+      inline def setLiProps(value: ReadonlyHTMLAttributesHTM): Self = StObject.set(x, "liProps", value.asInstanceOf[js.Any])
+      
+      inline def setLiPropsUndefined: Self = StObject.set(x, "liProps", js.undefined)
+      
       inline def setRole(value: menuitem): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -56,21 +69,21 @@ object menuItemLinkMod {
     * `component` prop is provided, all valid props from that component should
     * also be allowed.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     @JSName("component")
-    var component_ListItemLinkWithComponentProps: ElementType[js.Any]
+    var component_ListItemLinkWithComponentProps: ElementType[Any]
   }
   object MenuItemLinkWithComponentProps {
     
-    inline def apply(component: ElementType[js.Any]): MenuItemLinkWithComponentProps = {
+    inline def apply(component: ElementType[Any]): MenuItemLinkWithComponentProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuItemLinkWithComponentProps]
     }
     
     extension [Self <: MenuItemLinkWithComponentProps](x: Self) {
       
-      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
 }

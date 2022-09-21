@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-jss
 
-Typings are for version 10.5.0
+Typings are for version 10.9.2
 
 ## Library description:
 JSS integration with React
@@ -10,10 +10,10 @@ JSS integration with React
 | ------------------ | :-------------: |
 | Full name          | react-jss |
 | Keywords           | react, style, css, stylesheet, jss, hoc, decorator |
-| # releases         | 31 |
-| # dependents       | 484 |
-| # downloads        | 8214414 |
-| # stars            | 3 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 819135.0 |
+| # stars            | 6773.0 |
 
 ## Links
 - [Homepage](https://cssinjs.org/react-jss)

@@ -1,6 +1,5 @@
 package typings.awsSdkClientLambdaNode
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesEventSourceMappingConfigurationMod {
     /**
       * <p>The UTC time string indicating the last time the event mapping was updated.</p>
       */
-    var LastModified: js.UndefOr[Date | String | Double] = js.undefined
+    var LastModified: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The result of the last AWS Lambda invocation of your Lambda function. This value will be null if an SQS queue is the event source.</p>
@@ -70,7 +69,7 @@ object typesEventSourceMappingConfigurationMod {
       
       inline def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
       
-      inline def setLastModified(value: Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       
@@ -100,7 +99,7 @@ object typesEventSourceMappingConfigurationMod {
       * <p>The UTC time string indicating the last time the event mapping was updated.</p>
       */
     @JSName("LastModified")
-    var LastModified_UnmarshalledEventSourceMappingConfiguration: js.UndefOr[Date] = js.undefined
+    var LastModified_UnmarshalledEventSourceMappingConfiguration: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledEventSourceMappingConfiguration {
     
@@ -111,7 +110,7 @@ object typesEventSourceMappingConfigurationMod {
     
     extension [Self <: UnmarshalledEventSourceMappingConfiguration](x: Self) {
       
-      inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     }

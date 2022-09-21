@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "PointsMaterial")
 @js.native
-class PointsMaterial ()
-  extends typings.three.materialsMod.PointsMaterial {
+open class PointsMaterial ()
+  extends typings.three.threeMod.PointsMaterial {
   def this(parameters: PointsMaterialParameters) = this()
 }

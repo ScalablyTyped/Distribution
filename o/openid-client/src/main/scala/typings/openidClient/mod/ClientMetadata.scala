@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClientMetadata
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var authorization_encrypted_response_alg: js.UndefOr[String] = js.undefined
   
@@ -118,13 +118,13 @@ object ClientMetadata {
     
     inline def setPost_logout_redirect_urisUndefined: Self = StObject.set(x, "post_logout_redirect_uris", js.undefined)
     
-    inline def setPost_logout_redirect_urisVarargs(value: String*): Self = StObject.set(x, "post_logout_redirect_uris", js.Array(value :_*))
+    inline def setPost_logout_redirect_urisVarargs(value: String*): Self = StObject.set(x, "post_logout_redirect_uris", js.Array(value*))
     
     inline def setRedirect_uris(value: js.Array[String]): Self = StObject.set(x, "redirect_uris", value.asInstanceOf[js.Any])
     
     inline def setRedirect_urisUndefined: Self = StObject.set(x, "redirect_uris", js.undefined)
     
-    inline def setRedirect_urisVarargs(value: String*): Self = StObject.set(x, "redirect_uris", js.Array(value :_*))
+    inline def setRedirect_urisVarargs(value: String*): Self = StObject.set(x, "redirect_uris", js.Array(value*))
     
     inline def setRequest_object_encryption_alg(value: String): Self = StObject.set(x, "request_object_encryption_alg", value.asInstanceOf[js.Any])
     
@@ -146,7 +146,7 @@ object ClientMetadata {
     
     inline def setResponse_typesUndefined: Self = StObject.set(x, "response_types", js.undefined)
     
-    inline def setResponse_typesVarargs(value: ResponseType*): Self = StObject.set(x, "response_types", js.Array(value :_*))
+    inline def setResponse_typesVarargs(value: ResponseType*): Self = StObject.set(x, "response_types", js.Array(value*))
     
     inline def setRevocation_endpoint_auth_method(value: ClientAuthMethod): Self = StObject.set(x, "revocation_endpoint_auth_method", value.asInstanceOf[js.Any])
     

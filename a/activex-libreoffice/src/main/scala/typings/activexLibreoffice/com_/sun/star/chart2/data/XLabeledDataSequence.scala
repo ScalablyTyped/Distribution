@@ -41,7 +41,7 @@ object XLabeledDataSequence {
     acquire: () => Unit,
     getLabel: () => XDataSequence,
     getValues: () => XDataSequence,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLabel: XDataSequence => Unit,
     setValues: XDataSequence => Unit

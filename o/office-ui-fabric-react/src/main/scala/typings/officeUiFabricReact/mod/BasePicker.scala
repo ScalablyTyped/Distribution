@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "BasePicker")
 @js.native
-class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
+open class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
   extends typings.officeUiFabricReact.libPickersMod.BasePicker[T, P] {
   def this(basePickerProps: P) = this()
 }
@@ -19,5 +19,5 @@ object BasePicker {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getDerivedStateFromProps(newProps: IBasePickerProps[js.Any]): Items | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any]).asInstanceOf[Items | Null]
+  inline def getDerivedStateFromProps(newProps: IBasePickerProps[Any]): Items | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any]).asInstanceOf[Items | Null]
 }

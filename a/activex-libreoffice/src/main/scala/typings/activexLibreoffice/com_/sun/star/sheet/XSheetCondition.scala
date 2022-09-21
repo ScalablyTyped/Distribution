@@ -82,7 +82,7 @@ object XSheetCondition {
     getFormula2: () => String,
     getOperator: () => ConditionOperator,
     getSourcePosition: () => CellAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFormula1: String => Unit,
     setFormula2: String => Unit,

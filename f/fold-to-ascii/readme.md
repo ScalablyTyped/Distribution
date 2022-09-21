@@ -10,10 +10,10 @@ A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphab
 | ------------------ | :-------------: |
 | Full name          | fold-to-ascii |
 | Keywords           | ascii, sanitize, diacritics, unicode, folding, ligatures |
-| # releases         | 5 |
-| # dependents       | 14 |
-| # downloads        | 338964 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 33139.666666666664 |
+| # stars            | 88.0 |
 
 ## Links
 - [Homepage](https://github.com/mplatt/fold-to-ascii)

@@ -42,7 +42,7 @@ trait IProtoElement
     * @returns Ext.util.ProtoElement this
     */
   var setStyle: js.UndefOr[
-    js.Function2[/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], this.type]
+    js.Function2[/* prop */ js.UndefOr[Any], /* value */ js.UndefOr[String], this.type]
   ] = js.undefined
   
   /** [Property] (Boolean) */
@@ -55,7 +55,7 @@ trait IProtoElement
     * @param to Object
     * @returns Object to
     */
-  var writeTo: js.UndefOr[js.Function1[/* to */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var writeTo: js.UndefOr[js.Function1[/* to */ js.UndefOr[Any], Any]] = js.undefined
 }
 object IProtoElement {
   
@@ -90,7 +90,7 @@ object IProtoElement {
     
     inline def setRemovedPropUndefined: Self = StObject.set(x, "removedProp", js.undefined)
     
-    inline def setSetStyle(value: (/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IProtoElement): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
+    inline def setSetStyle(value: (/* prop */ js.UndefOr[Any], /* value */ js.UndefOr[String]) => IProtoElement): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
     
     inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
     
@@ -102,7 +102,7 @@ object IProtoElement {
     
     inline def setStylePropUndefined: Self = StObject.set(x, "styleProp", js.undefined)
     
-    inline def setWriteTo(value: /* to */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "writeTo", js.Any.fromFunction1(value))
+    inline def setWriteTo(value: /* to */ js.UndefOr[Any] => Any): Self = StObject.set(x, "writeTo", js.Any.fromFunction1(value))
     
     inline def setWriteToUndefined: Self = StObject.set(x, "writeTo", js.undefined)
   }

@@ -10,10 +10,10 @@ The lodash method `_.sum` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.sum |
 | Keywords           | lodash-modularized, sum |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 724442 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 274499.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

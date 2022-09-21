@@ -8,5 +8,5 @@ object deleteIdentityPoolInputMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/DeleteIdentityPoolInput", "DeleteIdentityPoolInput")
   @js.native
-  val DeleteIdentityPoolInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteIdentityPoolInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

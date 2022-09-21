@@ -6,25 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Caissuer extends StObject {
   
-  var caissuer: js.Array[String]
-  
-  var ocsp: js.Array[String]
+  var caissuer: String
 }
 object Caissuer {
   
-  inline def apply(caissuer: js.Array[String], ocsp: js.Array[String]): Caissuer = {
-    val __obj = js.Dynamic.literal(caissuer = caissuer.asInstanceOf[js.Any], ocsp = ocsp.asInstanceOf[js.Any])
+  inline def apply(caissuer: String): Caissuer = {
+    val __obj = js.Dynamic.literal(caissuer = caissuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Caissuer]
   }
   
   extension [Self <: Caissuer](x: Self) {
     
-    inline def setCaissuer(value: js.Array[String]): Self = StObject.set(x, "caissuer", value.asInstanceOf[js.Any])
-    
-    inline def setCaissuerVarargs(value: String*): Self = StObject.set(x, "caissuer", js.Array(value :_*))
-    
-    inline def setOcsp(value: js.Array[String]): Self = StObject.set(x, "ocsp", value.asInstanceOf[js.Any])
-    
-    inline def setOcspVarargs(value: String*): Self = StObject.set(x, "ocsp", js.Array(value :_*))
+    inline def setCaissuer(value: String): Self = StObject.set(x, "caissuer", value.asInstanceOf[js.Any])
   }
 }

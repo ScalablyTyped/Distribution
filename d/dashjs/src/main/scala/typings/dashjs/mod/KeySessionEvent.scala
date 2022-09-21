@@ -11,7 +11,7 @@ trait KeySessionEvent
   
   var data: SessionToken | Null
   
-  var error: js.UndefOr[String] = js.undefined
+  var error: js.UndefOr[DashJSError] = js.undefined
   
   @JSName("type")
   var type_KeySessionEvent: public_keySessionCreated
@@ -30,7 +30,7 @@ object KeySessionEvent {
     
     inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: DashJSError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

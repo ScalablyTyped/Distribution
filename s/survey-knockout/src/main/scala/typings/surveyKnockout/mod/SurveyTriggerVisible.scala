@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "SurveyTriggerVisible")
 @js.native
-class SurveyTriggerVisible () extends SurveyTrigger {
+open class SurveyTriggerVisible () extends SurveyTrigger {
   
-  /* protected */ def onItemFailure(item: js.Any): Unit = js.native
+  /* protected */ def onItemFailure(item: Any): Unit = js.native
   
-  /* protected */ def onItemSuccess(item: js.Any): Unit = js.native
+  /* protected */ def onItemSuccess(item: Any): Unit = js.native
   
-  var pages: js.Array[String] = js.native
+  var pages: Any = js.native
   
-  var questions: js.Array[String] = js.native
+  var questions: Any = js.native
 }

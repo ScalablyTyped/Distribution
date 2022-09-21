@@ -1,17 +1,26 @@
 package typings.materialUiLab
 
+import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseTypeMap
+import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiLab.alertAlertMod.AlertProps
 import typings.materialUiLab.alertTitleAlertTitleMod.AlertTitleProps
 import typings.materialUiLab.anon.AnchorEl
 import typings.materialUiLab.autocompleteAutocompleteMod.AutocompleteProps
 import typings.materialUiLab.avatarGroupAvatarGroupMod.AvatarGroupProps
+import typings.materialUiLab.materialUiLabStrings.button
+import typings.materialUiLab.materialUiLabStrings.div
+import typings.materialUiLab.materialUiLabStrings.span
+import typings.materialUiLab.paginationItemPaginationItemMod.PaginationItemTypeMap
 import typings.materialUiLab.paginationPaginationMod.PaginationProps
 import typings.materialUiLab.ratingRatingMod.RatingProps
+import typings.materialUiLab.skeletonSkeletonMod.SkeletonTypeMap
 import typings.materialUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionProps
 import typings.materialUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconProps
 import typings.materialUiLab.speedDialSpeedDialMod.SpeedDialProps
 import typings.materialUiLab.tabContextTabContextMod.TabContextProps
 import typings.materialUiLab.tabContextTabContextMod.TabContextValue
+import typings.materialUiLab.tabListTabListMod.TabListTypeMap
 import typings.materialUiLab.tabPanelTabPanelMod.TabPanelProps
 import typings.materialUiLab.timelineConnectorTimelineConnectorMod.TimelineConnectorProps
 import typings.materialUiLab.timelineContentTimelineContentMod.TimelineContentProps
@@ -21,6 +30,7 @@ import typings.materialUiLab.timelineOppositeContentTimelineOppositeContentMod.T
 import typings.materialUiLab.timelineSeparatorTimelineSeparatorMod.TimelineSeparatorProps
 import typings.materialUiLab.timelineTimelineMod.TimelineProps
 import typings.materialUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps
+import typings.materialUiLab.toggleButtonToggleButtonMod.ToggleButtonTypeMap
 import typings.materialUiLab.treeItemTreeItemMod.TreeItemProps
 import typings.materialUiLab.treeViewTreeViewMod.TreeViewProps
 import typings.materialUiLab.useAutocompleteUseAutocompleteMod.CreateFilterOptionsConfig
@@ -53,15 +63,15 @@ object mod {
     *
     * Demos:
     *
-    * - [Pagination](https://material-ui.com/components/pagination/)
+    * - [Pagination](https://mui.com/components/pagination/)
     *
     * API:
     *
-    * - [PaginationItem API](https://material-ui.com/api/pagination-item/)
+    * - [PaginationItem API](https://mui.com/api/pagination-item/)
     */
   @JSImport("@material-ui/lab", "PaginationItem")
   @js.native
-  val PaginationItem: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverridableComponent<PaginationItemTypeMap> */ js.Any = js.native
+  val PaginationItem: OverridableComponent[PaginationItemTypeMap[js.Object, div]] = js.native
   
   inline def Rating(props: RatingProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Rating")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -69,15 +79,15 @@ object mod {
     *
     * Demos:
     *
-    * - [Skeleton](https://material-ui.com/components/skeleton/)
+    * - [Skeleton](https://mui.com/components/skeleton/)
     *
     * API:
     *
-    * - [Skeleton API](https://material-ui.com/api/skeleton/)
+    * - [Skeleton API](https://mui.com/api/skeleton/)
     */
   @JSImport("@material-ui/lab", "Skeleton")
   @js.native
-  val Skeleton: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverridableComponent<SkeletonTypeMap> */ js.Any = js.native
+  val Skeleton: OverridableComponent[SkeletonTypeMap[js.Object, span]] = js.native
   
   inline def SpeedDial(props: SpeedDialProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SpeedDial")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -91,16 +101,18 @@ object mod {
     *
     * Demos:
     *
-    * - [Tabs](https://material-ui.com/components/tabs/)
+    * - [Tabs](https://mui.com/components/tabs/)
     *
     * API:
     *
-    * - [TabList API](https://material-ui.com/api/tab-list/)
-    * - inherits [Tabs API](https://material-ui.com/api/tabs/)
+    * - [TabList API](https://mui.com/api/tab-list/)
+    * - inherits [Tabs API](https://mui.com/api/tabs/)
     */
   @JSImport("@material-ui/lab", "TabList")
   @js.native
-  val TabList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverridableComponent<TabListTypeMap> */ js.Any = js.native
+  val TabList: OverridableComponent[
+    TabListTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]]]
+  ] = js.native
   
   inline def TabPanel(props: TabPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TabPanel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -122,16 +134,16 @@ object mod {
     *
     * Demos:
     *
-    * - [Toggle Button](https://material-ui.com/components/toggle-button/)
+    * - [Toggle Button](https://mui.com/components/toggle-button/)
     *
     * API:
     *
-    * - [ToggleButton API](https://material-ui.com/api/toggle-button/)
-    * - inherits [ButtonBase API](https://material-ui.com/api/button-base/)
+    * - [ToggleButton API](https://mui.com/api/toggle-button/)
+    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
     */
   @JSImport("@material-ui/lab", "ToggleButton")
   @js.native
-  val ToggleButton: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendButtonBase<ToggleButtonTypeMap> */ js.Any = js.native
+  val ToggleButton: ExtendButtonBase[ToggleButtonTypeMap[js.Object, button]] = js.native
   
   inline def ToggleButtonGroup(props: ToggleButtonGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleButtonGroup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   

@@ -9,10 +9,10 @@ the high-level, caching, CouchDB library
 | ------------------ | :-------------: |
 | Full name          | cradle |
 | Keywords           | couchdb, database, couch |
-| # releases         | 0 |
-| # dependents       | 107 |
-| # downloads        | 76089 |
-| # stars            | 18 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4654.666666666667 |
+| # stars            | 1387.0 |
 
 ## Links
 - [Homepage](https://github.com/flatiron/cradle#readme)

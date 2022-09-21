@@ -11,7 +11,7 @@ object operationMod {
   
   @JSImport("@google-cloud/common/build/src/operation", "Operation")
   @js.native
-  class Operation[T] protected () extends ServiceObject[T] {
+  open class Operation[T] protected () extends ServiceObject[T] {
     /**
       * An Operation object allows you to interact with APIs that take longer to
       * process things.
@@ -53,7 +53,7 @@ object operationMod {
       *
       * @return {Promise}
       */
-    def promise(): js.Promise[js.Any] = js.native
+    def promise(): js.Promise[Any] = js.native
     
     /**
       * Poll `getMetadata` to check the operation's status. This runs a loop to

@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Rule for modifying a CustomInfoType to alter behavior under certain
-  * circumstances, depending on the specific details of the rule. Not supported
-  * for the `surrogate_type` custom info type.
-  */
 trait SchemaGooglePrivacyDlpV2DetectionRule extends StObject {
   
   /**

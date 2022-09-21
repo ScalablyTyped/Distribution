@@ -1,6 +1,5 @@
 package typings.scriptableIos
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ trait RelativeDateTimeFormatter extends StObject {
     * @param referenceDate - The reference date that `date` is relative to.
     * @see https://docs.scriptable.app/relativedatetimeformatter/#-string
     */
-  def string(date: Date, referenceDate: Date): String
+  def string(date: js.Date, referenceDate: js.Date): String
   
   /**
     * _Prefers named dates and times._
@@ -56,7 +55,7 @@ object RelativeDateTimeFormatter {
   
   inline def apply(
     locale: String,
-    string: (Date, Date) => String,
+    string: (js.Date, js.Date) => String,
     useNamedDateTimeStyle: () => Unit,
     useNumericDateTimeStyle: () => Unit
   ): RelativeDateTimeFormatter = {
@@ -68,7 +67,7 @@ object RelativeDateTimeFormatter {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    inline def setString(value: (Date, Date) => String): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
+    inline def setString(value: (js.Date, js.Date) => String): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
     
     inline def setUseNamedDateTimeStyle(value: () => Unit): Self = StObject.set(x, "useNamedDateTimeStyle", js.Any.fromFunction0(value))
     

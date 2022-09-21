@@ -24,6 +24,6 @@ object BatchUpdateDetectorResponse {
     
     inline def setBatchUpdateDetectorErrorEntriesUndefined: Self = StObject.set(x, "batchUpdateDetectorErrorEntries", js.undefined)
     
-    inline def setBatchUpdateDetectorErrorEntriesVarargs(value: BatchUpdateDetectorErrorEntry*): Self = StObject.set(x, "batchUpdateDetectorErrorEntries", js.Array(value :_*))
+    inline def setBatchUpdateDetectorErrorEntriesVarargs(value: BatchUpdateDetectorErrorEntry*): Self = StObject.set(x, "batchUpdateDetectorErrorEntries", js.Array(value*))
   }
 }

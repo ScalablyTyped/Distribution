@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ECR ()
+open class ECR ()
   extends typings.awsSdk.mod.ECR {
   def this(options: ClientConfiguration) = this()
 }

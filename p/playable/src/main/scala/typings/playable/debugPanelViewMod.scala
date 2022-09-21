@@ -11,7 +11,7 @@ object debugPanelViewMod {
   
   @JSImport("playable/dist/src/modules/ui/debug-panel/debug-panel.view", JSImport.Default)
   @js.native
-  class default protected () extends DebugPanelView {
+  open class default protected () extends DebugPanelView {
     def this(config: IDebugPanelViewConfig) = this()
   }
   
@@ -20,21 +20,21 @@ object debugPanelViewMod {
     extends typings.playable.viewMod.default[IDebugPanelViewStyles] {
     
     /* private */ @JSName("_$closeButton")
-    var _$closeButton: js.Any = js.native
+    var _$closeButton: Any = js.native
     
     /* private */ @JSName("_$infoContainer")
-    var _$infoContainer: js.Any = js.native
+    var _$infoContainer: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def destroy(): Unit = js.native
     
@@ -42,7 +42,7 @@ object debugPanelViewMod {
     
     def hide(): Unit = js.native
     
-    def setInfo(info: js.Any): Unit = js.native
+    def setInfo(info: Any): Unit = js.native
     
     def show(): Unit = js.native
   }

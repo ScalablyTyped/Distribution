@@ -9,7 +9,7 @@ object box2Mod {
   
   @JSImport("three/src/math/Box2", "Box2")
   @js.native
-  class Box2 () extends StObject {
+  open class Box2 () extends StObject {
     def this(min: Vector2) = this()
     def this(min: Unit, max: Vector2) = this()
     def this(min: Vector2, max: Vector2) = this()
@@ -25,9 +25,9 @@ object box2Mod {
     def distanceToPoint(point: Vector2): Double = js.native
     
     /**
-    	 * @deprecated Use {@link Box2#isEmpty .isEmpty()} instead.
-    	 */
-    def empty(): js.Any = js.native
+      * @deprecated Use {@link Box2#isEmpty .isEmpty()} instead.
+      */
+    def empty(): Any = js.native
     
     def equals(box: Box2): Boolean = js.native
     
@@ -50,20 +50,20 @@ object box2Mod {
     def isEmpty(): Boolean = js.native
     
     /**
-    	 * @deprecated Use {@link Box2#intersectsBox .intersectsBox()} instead.
-    	 */
-    def isIntersectionBox(b: js.Any): js.Any = js.native
+      * @deprecated Use {@link Box2#intersectsBox .intersectsBox()} instead.
+      */
+    def isIntersectionBox(b: Any): Any = js.native
     
     def makeEmpty(): Box2 = js.native
     
     /**
-    	 * @default new THREE.Vector2( - Infinity, - Infinity )
-    	 */
+      * @default new THREE.Vector2( - Infinity, - Infinity )
+      */
     var max: Vector2 = js.native
     
     /**
-    	 * @default new THREE.Vector2( + Infinity, + Infinity )
-    	 */
+      * @default new THREE.Vector2( + Infinity, + Infinity )
+      */
     var min: Vector2 = js.native
     
     def set(min: Vector2, max: Vector2): Box2 = js.native

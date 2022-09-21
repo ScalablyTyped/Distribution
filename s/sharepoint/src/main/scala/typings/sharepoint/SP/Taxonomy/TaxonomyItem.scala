@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Taxonomy
 
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.Guid
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +13,11 @@ trait TaxonomyItem
   
   def deleteObject(): Unit = js.native
   
-  def get_createdDate(): Date = js.native
+  def get_createdDate(): js.Date = js.native
   
   def get_id(): Guid = js.native
   
-  def get_lastModifiedDate(): Date = js.native
+  def get_lastModifiedDate(): js.Date = js.native
   
   def get_name(): String = js.native
   

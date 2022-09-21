@@ -17,7 +17,7 @@ trait beginDigitizeOptions extends StObject {
   
   var leavePath: js.UndefOr[Boolean] = js.undefined
   
-  var nodeMoveAction: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* actionType */ String, js.Any]] = js.undefined
+  var nodeMoveAction: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* actionType */ String, Any]] = js.undefined
   
   var nodeTapAndHoldAction: js.UndefOr[js.Function2[/* setIdx */ Double, /* idx */ Double, Boolean]] = js.undefined
   
@@ -58,7 +58,7 @@ object beginDigitizeOptions {
     
     inline def setLeavePathUndefined: Self = StObject.set(x, "leavePath", js.undefined)
     
-    inline def setNodeMoveAction(value: (/* x */ Double, /* y */ Double, /* actionType */ String) => js.Any): Self = StObject.set(x, "nodeMoveAction", js.Any.fromFunction3(value))
+    inline def setNodeMoveAction(value: (/* x */ Double, /* y */ Double, /* actionType */ String) => Any): Self = StObject.set(x, "nodeMoveAction", js.Any.fromFunction3(value))
     
     inline def setNodeMoveActionUndefined: Self = StObject.set(x, "nodeMoveAction", js.undefined)
     

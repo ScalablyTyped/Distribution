@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A change about comments on an object.
-  */
 trait SchemaComment extends StObject {
   
   /**
@@ -46,7 +43,7 @@ object SchemaComment {
     
     inline def setMentionedUsersUndefined: Self = StObject.set(x, "mentionedUsers", js.undefined)
     
-    inline def setMentionedUsersVarargs(value: SchemaUser*): Self = StObject.set(x, "mentionedUsers", js.Array(value :_*))
+    inline def setMentionedUsersVarargs(value: SchemaUser*): Self = StObject.set(x, "mentionedUsers", js.Array(value*))
     
     inline def setPost(value: SchemaPost): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     

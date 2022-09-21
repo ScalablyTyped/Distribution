@@ -10,10 +10,10 @@ Node compatible event emitter with extra features
 | ------------------ | :-------------: |
 | Full name          | podium |
 | Keywords           | emitter, event |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 5912688 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 297803.3333333333 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/podium#readme)

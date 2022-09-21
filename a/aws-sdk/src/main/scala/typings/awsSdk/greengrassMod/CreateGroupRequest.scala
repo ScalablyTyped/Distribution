@@ -19,7 +19,7 @@ trait CreateGroupRequest extends StObject {
   /**
     * The name of the group.
     */
-  var Name: js.UndefOr[string] = js.undefined
+  var Name: string
   
   /**
     * Tag(s) to add to the new resource.
@@ -28,8 +28,8 @@ trait CreateGroupRequest extends StObject {
 }
 object CreateGroupRequest {
   
-  inline def apply(): CreateGroupRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(Name: string): CreateGroupRequest = {
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGroupRequest]
   }
   
@@ -44,8 +44,6 @@ object CreateGroupRequest {
     inline def setInitialVersionUndefined: Self = StObject.set(x, "InitialVersion", js.undefined)
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

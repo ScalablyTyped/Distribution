@@ -1,5 +1,8 @@
 package typings.braintree.mod
 
+import typings.braintree.anon.Api
+import typings.braintree.anon.ApplicationIncomplete
+import typings.braintree.anon.AuthorizationExpired
 import typings.braintree.anon.AuthorizationId
 import typings.braintree.anon.BillingPeriodEndDate
 import typings.braintree.anon.CallId
@@ -8,8 +11,10 @@ import typings.braintree.anon.CardholderName
 import typings.braintree.anon.CountryCodeAlpha3
 import typings.braintree.anon.CountryOfIssuance
 import typings.braintree.anon.CustomFields
+import typings.braintree.anon.FullInformation
+import typings.braintree.anon.Held
 import typings.braintree.anon.ImageUrl
-import typings.std.Date
+import typings.braintree.anon.Sale
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("braintree", "Transaction")
 @js.native
-class Transaction () extends StObject {
+open class Transaction () extends StObject {
   
   var addOns: js.UndefOr[js.Array[AddOn]] = js.native
   
@@ -31,7 +36,7 @@ class Transaction () extends StObject {
   
   var authorizationAdjustments: js.UndefOr[js.Array[AuthorizationAdjustment]] = js.native
   
-  var authorizationExpiresAt: js.UndefOr[Date] = js.native
+  var authorizationExpiresAt: js.UndefOr[js.Date] = js.native
   
   var avsErrorResponseCode: String = js.native
   
@@ -43,13 +48,13 @@ class Transaction () extends StObject {
   
   var channel: js.UndefOr[String] = js.native
   
-  var createdAt: Date = js.native
+  var createdAt: String = js.native
   
   var creditCard: js.UndefOr[CardholderName] = js.native
   
   var currencyIsoCode: String = js.native
   
-  var customFields: js.UndefOr[Record[String, js.Any]] = js.native
+  var customFields: js.UndefOr[Record[String, Any]] = js.native
   
   var customer: CustomFields = js.native
   
@@ -142,11 +147,48 @@ class Transaction () extends StObject {
   
   var `type`: String = js.native
   
-  var updatedAt: Date = js.native
+  var updatedAt: String = js.native
   
   var venmoAccount: js.UndefOr[ImageUrl] = js.native
   
   var visaCheckoutCardDetails: js.UndefOr[CallId] = js.native
   
   var voiceReferralNumber: js.UndefOr[String] = js.native
+}
+/* static members */
+object Transaction {
+  
+  @JSImport("braintree", "Transaction")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("braintree", "Transaction.CreatedUsing")
+  @js.native
+  def CreatedUsing: FullInformation = js.native
+  inline def CreatedUsing_=(x: FullInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreatedUsing")(x.asInstanceOf[js.Any])
+  
+  @JSImport("braintree", "Transaction.EscrowStatus")
+  @js.native
+  def EscrowStatus: Held = js.native
+  inline def EscrowStatus_=(x: Held): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EscrowStatus")(x.asInstanceOf[js.Any])
+  
+  @JSImport("braintree", "Transaction.GatewayRejectionReason")
+  @js.native
+  def GatewayRejectionReason: ApplicationIncomplete = js.native
+  inline def GatewayRejectionReason_=(x: ApplicationIncomplete): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GatewayRejectionReason")(x.asInstanceOf[js.Any])
+  
+  @JSImport("braintree", "Transaction.Source")
+  @js.native
+  def Source: Api = js.native
+  inline def Source_=(x: Api): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Source")(x.asInstanceOf[js.Any])
+  
+  @JSImport("braintree", "Transaction.Status")
+  @js.native
+  def Status: AuthorizationExpired = js.native
+  inline def Status_=(x: AuthorizationExpired): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Status")(x.asInstanceOf[js.Any])
+  
+  @JSImport("braintree", "Transaction.Type")
+  @js.native
+  def Type: Sale = js.native
+  inline def Type_=(x: Sale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Type")(x.asInstanceOf[js.Any])
 }

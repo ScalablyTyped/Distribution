@@ -11,9 +11,9 @@ A cross-browser / node.js validator powered by JSON Schema
 | Full name          | revalidator |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 71 |
-| # downloads        | 31284260 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2954797.6666666665 |
+| # stars            | 597.0 |
 
 ## Links
 - [Homepage](https://github.com/flatiron/revalidator)

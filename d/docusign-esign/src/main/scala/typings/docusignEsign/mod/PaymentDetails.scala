@@ -199,7 +199,7 @@ object PaymentDetails {
     
     inline def setAllowedPaymentMethodsUndefined: Self = StObject.set(x, "allowedPaymentMethods", js.undefined)
     
-    inline def setAllowedPaymentMethodsVarargs(value: String*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value :_*))
+    inline def setAllowedPaymentMethodsVarargs(value: String*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value*))
     
     inline def setChargeId(value: String): Self = StObject.set(x, "chargeId", value.asInstanceOf[js.Any])
     
@@ -245,7 +245,7 @@ object PaymentDetails {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: PaymentLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: PaymentLineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setPaymentOption(value: String): Self = StObject.set(x, "paymentOption", value.asInstanceOf[js.Any])
     

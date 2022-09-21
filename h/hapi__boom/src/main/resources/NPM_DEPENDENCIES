@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/boom" : "9.1.0"
+      "@hapi/boom" : "10.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/boom" : "9.1.0"
+      "@hapi/boom" : "10.0.0"
     }
   ],
   "compile-devDependencies" : [

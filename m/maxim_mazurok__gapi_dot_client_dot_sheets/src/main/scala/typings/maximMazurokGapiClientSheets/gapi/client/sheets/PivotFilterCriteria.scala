@@ -45,6 +45,6 @@ object PivotFilterCriteria {
     
     inline def setVisibleValuesUndefined: Self = StObject.set(x, "visibleValues", js.undefined)
     
-    inline def setVisibleValuesVarargs(value: String*): Self = StObject.set(x, "visibleValues", js.Array(value :_*))
+    inline def setVisibleValuesVarargs(value: String*): Self = StObject.set(x, "visibleValues", js.Array(value*))
   }
 }

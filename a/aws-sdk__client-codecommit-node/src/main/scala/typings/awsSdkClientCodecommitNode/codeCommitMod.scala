@@ -88,7 +88,7 @@ object codeCommitMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/CodeCommit", "CodeCommit")
   @js.native
-  class CodeCommit protected () extends CodeCommitClient {
+  open class CodeCommit protected () extends CodeCommitClient {
     def this(configuration: CodeCommitConfiguration) = this()
     
     /**
@@ -108,7 +108,7 @@ object codeCommitMod {
     def batchGetRepositories(args: BatchGetRepositoriesInput): js.Promise[BatchGetRepositoriesOutput] = js.native
     def batchGetRepositories(
       args: BatchGetRepositoriesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[BatchGetRepositoriesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[BatchGetRepositoriesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -134,7 +134,7 @@ object codeCommitMod {
     def createBranch(args: CreateBranchInput): js.Promise[CreateBranchOutput] = js.native
     def createBranch(
       args: CreateBranchInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateBranchOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateBranchOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -171,7 +171,7 @@ object codeCommitMod {
     def createPullRequest(args: CreatePullRequestInput): js.Promise[CreatePullRequestOutput] = js.native
     def createPullRequest(
       args: CreatePullRequestInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreatePullRequestOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreatePullRequestOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -193,7 +193,7 @@ object codeCommitMod {
     def createRepository(args: CreateRepositoryInput): js.Promise[CreateRepositoryOutput] = js.native
     def createRepository(
       args: CreateRepositoryInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateRepositoryOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateRepositoryOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -216,7 +216,7 @@ object codeCommitMod {
     def deleteBranch(args: DeleteBranchInput): js.Promise[DeleteBranchOutput] = js.native
     def deleteBranch(
       args: DeleteBranchInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBranchOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBranchOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -232,7 +232,7 @@ object codeCommitMod {
     def deleteCommentContent(args: DeleteCommentContentInput): js.Promise[DeleteCommentContentOutput] = js.native
     def deleteCommentContent(
       args: DeleteCommentContentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteCommentContentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteCommentContentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -266,7 +266,7 @@ object codeCommitMod {
     def deleteFile(args: DeleteFileInput): js.Promise[DeleteFileOutput] = js.native
     def deleteFile(
       args: DeleteFileInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteFileOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteFileOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -285,7 +285,7 @@ object codeCommitMod {
     def deleteRepository(args: DeleteRepositoryInput): js.Promise[DeleteRepositoryOutput] = js.native
     def deleteRepository(
       args: DeleteRepositoryInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteRepositoryOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteRepositoryOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -310,7 +310,7 @@ object codeCommitMod {
     def describePullRequestEvents(args: DescribePullRequestEventsInput): js.Promise[DescribePullRequestEventsOutput] = js.native
     def describePullRequestEvents(
       args: DescribePullRequestEventsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribePullRequestEventsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribePullRequestEventsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -332,7 +332,7 @@ object codeCommitMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def getBlob(args: GetBlobInput): js.Promise[GetBlobOutput] = js.native
-    def getBlob(args: GetBlobInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBlobOutput], Unit]): Unit = js.native
+    def getBlob(args: GetBlobInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBlobOutput], Unit]): Unit = js.native
     
     /**
       * <p>Returns information about a repository branch, including its name and the last commit ID.</p>
@@ -354,7 +354,7 @@ object codeCommitMod {
     def getBranch(args: GetBranchInput): js.Promise[GetBranchOutput] = js.native
     def getBranch(
       args: GetBranchInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBranchOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBranchOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -370,7 +370,7 @@ object codeCommitMod {
     def getComment(args: GetCommentInput): js.Promise[GetCommentOutput] = js.native
     def getComment(
       args: GetCommentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCommentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCommentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -395,7 +395,7 @@ object codeCommitMod {
     def getCommentsForComparedCommit(args: GetCommentsForComparedCommitInput): js.Promise[GetCommentsForComparedCommitOutput] = js.native
     def getCommentsForComparedCommit(
       args: GetCommentsForComparedCommitInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCommentsForComparedCommitOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCommentsForComparedCommitOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -424,7 +424,7 @@ object codeCommitMod {
     def getCommentsForPullRequest(args: GetCommentsForPullRequestInput): js.Promise[GetCommentsForPullRequestOutput] = js.native
     def getCommentsForPullRequest(
       args: GetCommentsForPullRequestInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCommentsForPullRequestOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCommentsForPullRequestOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -447,7 +447,7 @@ object codeCommitMod {
     def getCommit(args: GetCommitInput): js.Promise[GetCommitOutput] = js.native
     def getCommit(
       args: GetCommitInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCommitOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCommitOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -475,7 +475,7 @@ object codeCommitMod {
     def getDifferences(args: GetDifferencesInput): js.Promise[GetDifferencesOutput] = js.native
     def getDifferences(
       args: GetDifferencesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetDifferencesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetDifferencesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -499,7 +499,7 @@ object codeCommitMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def getFile(args: GetFileInput): js.Promise[GetFileOutput] = js.native
-    def getFile(args: GetFileInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetFileOutput], Unit]): Unit = js.native
+    def getFile(args: GetFileInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetFileOutput], Unit]): Unit = js.native
     
     /**
       * <p>Returns the contents of a specified folder in a repository.</p>
@@ -523,7 +523,7 @@ object codeCommitMod {
     def getFolder(args: GetFolderInput): js.Promise[GetFolderOutput] = js.native
     def getFolder(
       args: GetFolderInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetFolderOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetFolderOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -551,7 +551,7 @@ object codeCommitMod {
     def getMergeConflicts(args: GetMergeConflictsInput): js.Promise[GetMergeConflictsOutput] = js.native
     def getMergeConflicts(
       args: GetMergeConflictsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetMergeConflictsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetMergeConflictsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -571,7 +571,7 @@ object codeCommitMod {
     def getPullRequest(args: GetPullRequestInput): js.Promise[GetPullRequestOutput] = js.native
     def getPullRequest(
       args: GetPullRequestInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetPullRequestOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetPullRequestOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -591,7 +591,7 @@ object codeCommitMod {
     def getRepository(args: GetRepositoryInput): js.Promise[GetRepositoryOutput] = js.native
     def getRepository(
       args: GetRepositoryInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetRepositoryOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetRepositoryOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -611,7 +611,7 @@ object codeCommitMod {
     def getRepositoryTriggers(args: GetRepositoryTriggersInput): js.Promise[GetRepositoryTriggersOutput] = js.native
     def getRepositoryTriggers(
       args: GetRepositoryTriggersInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetRepositoryTriggersOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetRepositoryTriggersOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -632,7 +632,7 @@ object codeCommitMod {
     def listBranches(args: ListBranchesInput): js.Promise[ListBranchesOutput] = js.native
     def listBranches(
       args: ListBranchesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListBranchesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListBranchesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -657,7 +657,7 @@ object codeCommitMod {
     def listPullRequests(args: ListPullRequestsInput): js.Promise[ListPullRequestsOutput] = js.native
     def listPullRequests(
       args: ListPullRequestsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListPullRequestsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListPullRequestsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -672,7 +672,7 @@ object codeCommitMod {
     def listRepositories(args: ListRepositoriesInput): js.Promise[ListRepositoriesOutput] = js.native
     def listRepositories(
       args: ListRepositoriesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListRepositoriesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListRepositoriesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -700,7 +700,7 @@ object codeCommitMod {
     def mergePullRequestByFastForward(args: MergePullRequestByFastForwardInput): js.Promise[MergePullRequestByFastForwardOutput] = js.native
     def mergePullRequestByFastForward(
       args: MergePullRequestByFastForwardInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[MergePullRequestByFastForwardOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[MergePullRequestByFastForwardOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -735,7 +735,7 @@ object codeCommitMod {
     def postCommentForComparedCommit(args: PostCommentForComparedCommitInput): js.Promise[PostCommentForComparedCommitOutput] = js.native
     def postCommentForComparedCommit(
       args: PostCommentForComparedCommitInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PostCommentForComparedCommitOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PostCommentForComparedCommitOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -775,7 +775,7 @@ object codeCommitMod {
     def postCommentForPullRequest(args: PostCommentForPullRequestInput): js.Promise[PostCommentForPullRequestOutput] = js.native
     def postCommentForPullRequest(
       args: PostCommentForPullRequestInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PostCommentForPullRequestOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PostCommentForPullRequestOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -795,7 +795,7 @@ object codeCommitMod {
     def postCommentReply(args: PostCommentReplyInput): js.Promise[PostCommentReplyOutput] = js.native
     def postCommentReply(
       args: PostCommentReplyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PostCommentReplyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PostCommentReplyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -833,7 +833,7 @@ object codeCommitMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def putFile(args: PutFileInput): js.Promise[PutFileOutput] = js.native
-    def putFile(args: PutFileInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutFileOutput], Unit]): Unit = js.native
+    def putFile(args: PutFileInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutFileOutput], Unit]): Unit = js.native
     
     /**
       * <p>Replaces all triggers for a repository. This can be used to create or delete triggers.</p>
@@ -865,7 +865,7 @@ object codeCommitMod {
     def putRepositoryTriggers(args: PutRepositoryTriggersInput): js.Promise[PutRepositoryTriggersOutput] = js.native
     def putRepositoryTriggers(
       args: PutRepositoryTriggersInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutRepositoryTriggersOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutRepositoryTriggersOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -898,7 +898,7 @@ object codeCommitMod {
     def testRepositoryTriggers(args: TestRepositoryTriggersInput): js.Promise[TestRepositoryTriggersOutput] = js.native
     def testRepositoryTriggers(
       args: TestRepositoryTriggersInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[TestRepositoryTriggersOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[TestRepositoryTriggersOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -917,7 +917,7 @@ object codeCommitMod {
     def updateComment(args: UpdateCommentInput): js.Promise[UpdateCommentOutput] = js.native
     def updateComment(
       args: UpdateCommentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateCommentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateCommentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -940,7 +940,7 @@ object codeCommitMod {
     def updateDefaultBranch(args: UpdateDefaultBranchInput): js.Promise[UpdateDefaultBranchOutput] = js.native
     def updateDefaultBranch(
       args: UpdateDefaultBranchInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateDefaultBranchOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateDefaultBranchOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -957,7 +957,7 @@ object codeCommitMod {
     def updatePullRequestDescription(args: UpdatePullRequestDescriptionInput): js.Promise[UpdatePullRequestDescriptionOutput] = js.native
     def updatePullRequestDescription(
       args: UpdatePullRequestDescriptionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdatePullRequestDescriptionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdatePullRequestDescriptionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -980,7 +980,7 @@ object codeCommitMod {
     def updatePullRequestStatus(args: UpdatePullRequestStatusInput): js.Promise[UpdatePullRequestStatusOutput] = js.native
     def updatePullRequestStatus(
       args: UpdatePullRequestStatusInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdatePullRequestStatusOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdatePullRequestStatusOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -998,7 +998,7 @@ object codeCommitMod {
     def updatePullRequestTitle(args: UpdatePullRequestTitleInput): js.Promise[UpdatePullRequestTitleOutput] = js.native
     def updatePullRequestTitle(
       args: UpdatePullRequestTitleInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdatePullRequestTitleOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdatePullRequestTitleOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1019,7 +1019,7 @@ object codeCommitMod {
     def updateRepositoryDescription(args: UpdateRepositoryDescriptionInput): js.Promise[UpdateRepositoryDescriptionOutput] = js.native
     def updateRepositoryDescription(
       args: UpdateRepositoryDescriptionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateRepositoryDescriptionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateRepositoryDescriptionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1035,7 +1035,7 @@ object codeCommitMod {
     def updateRepositoryName(args: UpdateRepositoryNameInput): js.Promise[UpdateRepositoryNameOutput] = js.native
     def updateRepositoryName(
       args: UpdateRepositoryNameInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateRepositoryNameOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateRepositoryNameOutput], Unit]
     ): Unit = js.native
   }
 }

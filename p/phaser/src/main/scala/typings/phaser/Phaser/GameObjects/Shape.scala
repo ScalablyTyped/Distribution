@@ -2,7 +2,6 @@ package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.GameObjects.Components.AlphaSingle
 import typings.phaser.Phaser.GameObjects.Components.BlendMode
-import typings.phaser.Phaser.GameObjects.Components.ComputedSize
 import typings.phaser.Phaser.GameObjects.Components.Depth
 import typings.phaser.Phaser.GameObjects.Components.GetBounds
 import typings.phaser.Phaser.GameObjects.Components.Mask
@@ -11,7 +10,6 @@ import typings.phaser.Phaser.GameObjects.Components.Pipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +24,6 @@ trait Shape
      with GameObject
      with AlphaSingle
      with BlendMode
-     with ComputedSize
      with Depth
      with GetBounds
      with Mask
@@ -43,6 +40,24 @@ trait Shape
   var closePath: Boolean = js.native
   
   /**
+    * The displayed height of this Game Object.
+    * 
+    * This value takes into account the scale factor.
+    * 
+    * Setting this value will adjust the Game Object's scale property.
+    */
+  var displayHeight: Double = js.native
+  
+  /**
+    * The displayed width of this Game Object.
+    * 
+    * This value takes into account the scale factor.
+    * 
+    * Setting this value will adjust the Game Object's scale property.
+    */
+  var displayWidth: Double = js.native
+  
+  /**
     * The fill alpha value used by this Shape.
     */
   var fillAlpha: Double = js.native
@@ -56,7 +71,16 @@ trait Shape
     * The source Shape data. Typically a geometry object.
     * You should not manipulate this directly.
     */
-  val geom: js.Any = js.native
+  val geom: Any = js.native
+  
+  /**
+    * The native (un-scaled) height of this Game Object.
+    * 
+    * Changing this value will not change the size that the Game Object is rendered in-game.
+    * For that you need to either set the scale of the Game Object (`setScale`) or use
+    * the `displayHeight` property.
+    */
+  var height: Double = js.native
   
   /**
     * Controls if this Shape is filled or not.
@@ -83,7 +107,7 @@ trait Shape
   /**
     * Holds the earcut polygon path index data for filled rendering.
     */
-  val pathIndexes: js.Array[integer] = js.native
+  val pathIndexes: js.Array[Double] = js.native
   
   /**
     * Internal destroy handler, called as part of the destroy process.
@@ -98,6 +122,15 @@ trait Shape
     * @param value Set to `true` if the Shape should be closed when stroked, otherwise `false`.
     */
   def setClosePath(value: Boolean): this.type = js.native
+  
+  /**
+    * Sets the display size of this Shape.
+    * 
+    * Calling this will adjust the scale.
+    * @param width The display width of this Shape.
+    * @param height The display height of this Shape.
+    */
+  def setDisplaySize(width: Double, height: Double): this.type = js.native
   
   /**
     * Sets the fill color and alpha for this Shape.
@@ -145,4 +178,13 @@ trait Shape
     * The stroke color used by this Shape.
     */
   var strokeColor: Double = js.native
+  
+  /**
+    * The native (un-scaled) width of this Game Object.
+    * 
+    * Changing this value will not change the size that the Game Object is rendered in-game.
+    * For that you need to either set the scale of the Game Object (`setScale`) or use
+    * the `displayWidth` property.
+    */
+  var width: Double = js.native
 }

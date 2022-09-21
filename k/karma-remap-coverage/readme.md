@@ -10,10 +10,10 @@ Karma reporter that shows coverage for original non transpiled code (TypeScript,
 | ------------------ | :-------------: |
 | Full name          | karma-remap-coverage |
 | Keywords           | karma, coverage, reporter, typescript, babel, es6, es7, istanbul, map, remap, sourcemap, webpack |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 897698 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 58703.333333333336 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/sshev/karma-remap-coverage#readme)

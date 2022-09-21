@@ -82,13 +82,13 @@ object NumberFilter {
     
     inline def setNumberComparatorsUndefined: Self = StObject.set(x, "numberComparators", js.undefined)
     
-    inline def setNumberComparatorsVarargs(value: FilterComparator*): Self = StObject.set(x, "numberComparators", js.Array(value :_*))
+    inline def setNumberComparatorsVarargs(value: FilterComparator*): Self = StObject.set(x, "numberComparators", js.Array(value*))
     
     inline def setOptions(value: js.Array[Double]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

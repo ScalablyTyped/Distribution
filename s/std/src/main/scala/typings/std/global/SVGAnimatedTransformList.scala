@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("SVGAnimatedTransformList")
 @js.native
-class SVGAnimatedTransformList ()
+/* standard dom */
+open class SVGAnimatedTransformList ()
   extends StObject
      with typings.std.SVGAnimatedTransformList {
   
+  /* standard dom */
   /* CompleteClass */
   override val animVal: typings.std.SVGTransformList = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val baseVal: typings.std.SVGTransformList = js.native
 }

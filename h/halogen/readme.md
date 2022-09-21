@@ -10,10 +10,10 @@ A collection of loading spinners with React.js
 | ------------------ | :-------------: |
 | Full name          | halogen |
 | Keywords           | react, react-component, loader, spinner, halogen |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 203218 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4837.666666666667 |
+| # stars            | 1584.0 |
 
 ## Links
 - [Homepage](https://github.com/yuanyan/halogen#readme)

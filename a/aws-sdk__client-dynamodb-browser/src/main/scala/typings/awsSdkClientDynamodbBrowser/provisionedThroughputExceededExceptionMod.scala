@@ -8,5 +8,5 @@ object provisionedThroughputExceededExceptionMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/ProvisionedThroughputExceededException", "ProvisionedThroughputExceededException")
   @js.native
-  val ProvisionedThroughputExceededException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ProvisionedThroughputExceededException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

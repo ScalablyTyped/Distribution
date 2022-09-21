@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.SyncState")
 @js.native
-class SyncState () extends StObject {
+open class SyncState () extends StObject {
   def this(args: CurrentTime) = this()
   
   var currentTime: js.UndefOr[Timestamp] = js.native

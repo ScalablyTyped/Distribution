@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientXYDiagram")
 @js.native
-class ASPxClientXYDiagram ()
+open class ASPxClientXYDiagram ()
   extends StObject
      with typings.devexpressWeb.ASPxClientXYDiagram {
   
@@ -23,8 +23,8 @@ class ASPxClientXYDiagram ()
     */
   /* CompleteClass */
   override def DiagramToPoint(
-    argument: js.Any,
-    value: js.Any,
+    argument: Any,
+    value: Any,
     axisX: typings.devexpressWeb.ASPxClientAxis2D,
     axisY: typings.devexpressWeb.ASPxClientAxis2D,
     pane: typings.devexpressWeb.ASPxClientXYDiagramPane

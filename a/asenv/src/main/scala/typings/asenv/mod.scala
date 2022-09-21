@@ -20,5 +20,5 @@ object mod {
   
   inline def setEnv(env: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def unlessProduction(handle: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unlessProduction")(handle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def unlessProduction(handle: js.Function0[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unlessProduction")(handle.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

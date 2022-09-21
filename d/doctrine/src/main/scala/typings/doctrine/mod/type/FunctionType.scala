@@ -13,7 +13,7 @@ trait FunctionType
   
   var params: js.Array[Type_]
   
-  var result: js.Array[Type_]
+  var result: Type_
   
   var `this`: Type_
   
@@ -21,7 +21,7 @@ trait FunctionType
 }
 object FunctionType {
   
-  inline def apply(`new`: Type_, params: js.Array[Type_], result: js.Array[Type_], `this`: Type_): FunctionType = {
+  inline def apply(`new`: Type_, params: js.Array[Type_], result: Type_, `this`: Type_): FunctionType = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
     __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
@@ -35,11 +35,9 @@ object FunctionType {
     
     inline def setParams(value: js.Array[Type_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: Type_ *): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Type_ *): Self = StObject.set(x, "params", js.Array(value*))
     
-    inline def setResult(value: js.Array[Type_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
-    
-    inline def setResultVarargs(value: Type_ *): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResult(value: Type_): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setThis(value: Type_): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.language='']
   *        A valid two character language code.
   */
-class TrackCls ()
+open class TrackCls ()
   extends StObject
      with Track {
   def this(options: TrackOptions) = this()

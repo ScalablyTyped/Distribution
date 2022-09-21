@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of linked data types.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -20,84 +20,64 @@ trait LinkedDataTypeCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The name of the data provider for the linked data type. This may change when information is retrieved from the service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var dataProvider: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
-    * For EACH ITEM in the collection: Returns the code point for the font icon to be used in the data type options pane.
-    1st-party only.
-    *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  var fontIconCodePoint: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    *
     * For EACH ITEM in the collection: The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
     Returns `undefined` if the linked data type has not been refreshed.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var lastRefreshed: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The name of the linked data type. This may change when information is retrieved from the service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var periodicRefreshInterval: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
-    * For EACH ITEM in the collection: Returns any warnings encountered after an attempt to load refresh data for this linked data type from the workbook.
-    1st-party only.
-    *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  var refreshDataLoadWarnings: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    *
     * For EACH ITEM in the collection: The mechanism by which the data for the linked data type is retrieved.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var refreshMode: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The unique ID of the linked data type.
     *
-    * For EACH ITEM in the collection: The unique id of the linked data type.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var serviceId: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns an array with all the refresh modes supported by the linked data type. The contents of the array may change when information is retrieved from the service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
@@ -120,10 +100,6 @@ object LinkedDataTypeCollectionLoadOptions {
     
     inline def setDataProviderUndefined: Self = StObject.set(x, "dataProvider", js.undefined)
     
-    inline def setFontIconCodePoint(value: Boolean): Self = StObject.set(x, "fontIconCodePoint", value.asInstanceOf[js.Any])
-    
-    inline def setFontIconCodePointUndefined: Self = StObject.set(x, "fontIconCodePoint", js.undefined)
-    
     inline def setLastRefreshed(value: Boolean): Self = StObject.set(x, "lastRefreshed", value.asInstanceOf[js.Any])
     
     inline def setLastRefreshedUndefined: Self = StObject.set(x, "lastRefreshed", js.undefined)
@@ -135,10 +111,6 @@ object LinkedDataTypeCollectionLoadOptions {
     inline def setPeriodicRefreshInterval(value: Boolean): Self = StObject.set(x, "periodicRefreshInterval", value.asInstanceOf[js.Any])
     
     inline def setPeriodicRefreshIntervalUndefined: Self = StObject.set(x, "periodicRefreshInterval", js.undefined)
-    
-    inline def setRefreshDataLoadWarnings(value: Boolean): Self = StObject.set(x, "refreshDataLoadWarnings", value.asInstanceOf[js.Any])
-    
-    inline def setRefreshDataLoadWarningsUndefined: Self = StObject.set(x, "refreshDataLoadWarnings", js.undefined)
     
     inline def setRefreshMode(value: Boolean): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
     

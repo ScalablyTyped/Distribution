@@ -23,6 +23,8 @@ trait BuildingFilterBlockFilterMode
   /**
     * Defines how features are drawn while the filter is active.
     *
+    * @default solid
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
     */
   var `type`: js.UndefOr[solid | `wire-frame` | `x-ray`] = js.undefined

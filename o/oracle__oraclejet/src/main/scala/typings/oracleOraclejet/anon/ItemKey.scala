@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ItemKey
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var item: typings.std.Element
   
-  var key: js.Any
+  var key: Any
 }
 object ItemKey {
   
-  inline def apply(item: typings.std.Element, key: js.Any): ItemKey = {
+  inline def apply(item: typings.std.Element, key: Any): ItemKey = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemKey]
   }
@@ -24,6 +24,6 @@ object ItemKey {
     
     inline def setItem(value: typings.std.Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

@@ -1,9 +1,5 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,43 +9,30 @@ trait ParamsResourceQuerySourcesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Number of sources to return in the response.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * If set, the request will enable debugging features of Cloud Search. Only
-    * turn on this field, if asked by Google to help with debugging.
+    * If you are asked by Google to help with debugging, set this field. Otherwise, ignore this field.
     */
   @JSName("requestOptions.debugOptions.enableDebugging")
   var requestOptionsDotdebugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-    * information, see
-    * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. For
-    * translations.
+    * The BCP-47 language code, such as "en-US" or "sr-Latn". For more information, see http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. For translations. Set this field using the language set in browser or for the page. In the event that the user's language preference is known, set this field to the known user language. When specified, the documents in search results are biased towards the specified language. The suggest API does not use this parameter. Instead, suggest autocompletes only based on characters in the query.
     */
   @JSName("requestOptions.languageCode")
   var requestOptionsDotlanguageCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Id of the application created using SearchApplicationsService.
+    * The ID generated when you create a search application using the [admin console](https://support.google.com/a/answer/9043922).
     */
   @JSName("requestOptions.searchApplicationId")
   var requestOptionsDotsearchApplicationId: js.UndefOr[String] = js.undefined
   
   /**
-    * Current user's time zone id, such as "America/Los_Angeles" or
-    * "Australia/Sydney". These IDs are defined by [Unicode Common Locale Data
-    * Repository (CLDR)](http://cldr.unicode.org/) project, and currently
-    * available in the file
-    * [timezone.xml](http://unicode.org/repos/cldr/trunk/common/bcp47/timezone.xml)
+    * Current user's time zone id, such as "America/Los_Angeles" or "Australia/Sydney". These IDs are defined by [Unicode Common Locale Data Repository (CLDR)](http://cldr.unicode.org/) project, and currently available in the file [timezone.xml](http://unicode.org/repos/cldr/trunk/common/bcp47/timezone.xml). This field is used to correctly interpret date and time queries. If this field is not specified, the default time zone (UTC) is used.
     */
   @JSName("requestOptions.timeZone")
   var requestOptionsDottimeZone: js.UndefOr[String] = js.undefined
@@ -62,10 +45,6 @@ object ParamsResourceQuerySourcesList {
   }
   
   extension [Self <: ParamsResourceQuerySourcesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

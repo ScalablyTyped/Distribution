@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 trait DocumentLoadOptions extends StObject {
@@ -19,33 +19,33 @@ trait DocumentLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     *
-    * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
-    *
-    * [Api set: WordApi]
-    */
-  var allowCloseOnUntitled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    *
-    * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
-    *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var body: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
+    * Gets or sets the ChangeTracking mode.
     *
+    * @remarks
+    * [Api set: WordApiOnline 1.1]
+    */
+  var changeTrackingMode: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Gets the properties of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var properties: js.UndefOr[DocumentPropertiesLoadOptions] = js.undefined
   
   /**
-    *
     * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var saved: js.UndefOr[Boolean] = js.undefined
@@ -63,13 +63,13 @@ object DocumentLoadOptions {
     
     inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    inline def setAllowCloseOnUntitled(value: Boolean): Self = StObject.set(x, "allowCloseOnUntitled", value.asInstanceOf[js.Any])
-    
-    inline def setAllowCloseOnUntitledUndefined: Self = StObject.set(x, "allowCloseOnUntitled", js.undefined)
-    
     inline def setBody(value: BodyLoadOptions): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setChangeTrackingMode(value: Boolean): Self = StObject.set(x, "changeTrackingMode", value.asInstanceOf[js.Any])
+    
+    inline def setChangeTrackingModeUndefined: Self = StObject.set(x, "changeTrackingMode", js.undefined)
     
     inline def setProperties(value: DocumentPropertiesLoadOptions): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

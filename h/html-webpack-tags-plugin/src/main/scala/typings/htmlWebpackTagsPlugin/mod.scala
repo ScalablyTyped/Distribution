@@ -1,6 +1,7 @@
 package typings.htmlWebpackTagsPlugin
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +10,14 @@ object mod {
   
   @JSImport("html-webpack-tags-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with HtmlWebpackTagsPlugin {
     def this(options: Options) = this()
     
     /* CompleteClass */
     @JSName("apply")
-    override def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
   type AddHashFunction = js.Function2[/* assetPath */ String, /* hash */ String, String]
@@ -149,24 +148,18 @@ object mod {
   trait HtmlWebpackTagsPlugin extends StObject {
     
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit
+    def apply(compiler: Compiler): Unit
   }
   object HtmlWebpackTagsPlugin {
     
-    inline def apply(
-      apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-    ): HtmlWebpackTagsPlugin = {
+    inline def apply(apply: Compiler => Unit): HtmlWebpackTagsPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[HtmlWebpackTagsPlugin]
     }
     
     extension [Self <: HtmlWebpackTagsPlugin](x: Self) {
       
-      inline def setApply(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-      ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
   }
   
@@ -268,7 +261,7 @@ object mod {
     
     var cssExtensions: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var files: js.UndefOr[js.Array[String]] = js.undefined
+    var files: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var jsExtensions: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -297,31 +290,31 @@ object mod {
       
       inline def setCssExtensionsUndefined: Self = StObject.set(x, "cssExtensions", js.undefined)
       
-      inline def setCssExtensionsVarargs(value: String*): Self = StObject.set(x, "cssExtensions", js.Array(value :_*))
+      inline def setCssExtensionsVarargs(value: String*): Self = StObject.set(x, "cssExtensions", js.Array(value*))
       
-      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: String | js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setJsExtensions(value: String | js.Array[String]): Self = StObject.set(x, "jsExtensions", value.asInstanceOf[js.Any])
       
       inline def setJsExtensionsUndefined: Self = StObject.set(x, "jsExtensions", js.undefined)
       
-      inline def setJsExtensionsVarargs(value: String*): Self = StObject.set(x, "jsExtensions", js.Array(value :_*))
+      inline def setJsExtensionsVarargs(value: String*): Self = StObject.set(x, "jsExtensions", js.Array(value*))
       
       inline def setLinks(value: String | LinkTagOptions | (js.Array[String | LinkTagOptions])): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setLinksVarargs(value: (String | LinkTagOptions)*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: (String | LinkTagOptions)*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setMetas(value: String | MetaTagOptions | (js.Array[String | MetaTagOptions])): Self = StObject.set(x, "metas", value.asInstanceOf[js.Any])
       
       inline def setMetasUndefined: Self = StObject.set(x, "metas", js.undefined)
       
-      inline def setMetasVarargs(value: (String | MetaTagOptions)*): Self = StObject.set(x, "metas", js.Array(value :_*))
+      inline def setMetasVarargs(value: (String | MetaTagOptions)*): Self = StObject.set(x, "metas", js.Array(value*))
       
       inline def setPrependExternals(value: Boolean): Self = StObject.set(x, "prependExternals", value.asInstanceOf[js.Any])
       
@@ -331,7 +324,7 @@ object mod {
       
       inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
       
-      inline def setScriptsVarargs(value: (String | ScriptTagOptions)*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+      inline def setScriptsVarargs(value: (String | ScriptTagOptions)*): Self = StObject.set(x, "scripts", js.Array(value*))
       
       inline def setTags(
         value: String | MaybeLinkTagOptions | MaybeScriptTagOptions | (js.Array[String | MaybeLinkTagOptions | MaybeScriptTagOptions])
@@ -339,7 +332,7 @@ object mod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: (String | MaybeLinkTagOptions | MaybeScriptTagOptions)*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: (String | MaybeLinkTagOptions | MaybeScriptTagOptions)*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   

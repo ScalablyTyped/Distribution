@@ -33,6 +33,7 @@ trait Utility extends StObject {
   
   /**
     * Closes a progress dialog box.
+    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/closeprogressindicator External Link: closeProgressIndicator (Client API reference)}
     */
   def closeProgressIndicator(): Unit = js.native
   
@@ -48,16 +49,18 @@ trait Utility extends StObject {
   
   /**
     * Returns the valid state transitions for the specified entity type and state code.
-    * TODO: No info on the return type is available
     * @param entityName    The logical name of the entity.
     * @param stateCode     The state code to find out the allowed status transition values.
+    * @returns Returns an object with .then() function. The parameter to the delegate is an array of numbers representing the valid status transitions.
+    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getallowedstatustransitions getAllowedStatusTransitions (Client API reference)}
     */
-  def getAllowedStatusTransitions(entityName: String, stateCode: Double): PromiseLike[js.Any] = js.native
+  def getAllowedStatusTransitions(entityName: String, stateCode: Double): js.Thenable[js.Array[Double]] = js.native
   
   /**
     * Returns the entity metadata for the specified entity.
     * @param entityName The logical name of the entity.
     * @param attributes The attributes to get metadata for.
+    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getentitymetadata External Link: getEntityMetadata}
     */
   def getEntityMetadata(entityName: String): PromiseLike[EntityMetadata] = js.native
   def getEntityMetadata(entityName: String, attributes: js.Array[String]): PromiseLike[EntityMetadata] = js.native
@@ -67,6 +70,21 @@ trait Utility extends StObject {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility/getglobalcontext External Link: getGlobalContext (Client API reference)}
     */
   def getGlobalContext(): GlobalContext = js.native
+  
+  /**
+    * Returns the name of the DOM attribute expected by the Learning Path (guided help) Content Designer for identifying UI controls in the model-driven apps forms.
+    * An attribute by this name must be added to the UI element that needs to be exposed to Learning Path (guided help).
+    * @returns DOM attribute expected by the Learning Path (guided help) Content Designer.
+    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getlearningpathattributename External Link: getLearningPathAttributeName (Client API reference)}
+    */
+  def getLearningPathAttributeName(): String = js.native
+  
+  /**
+    * Gets the page context as an object representing the page.
+    * @returns The method returns an object with the input property. The input property is an object with the following attributes depending on whether you are currently on the entity form or entity list
+    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getpagecontext#entity-form External Link: getPageContext (Client API reference)}
+    */
+  def getPageContext(): PageContext = js.native
   
   /**
     * Returns the localized string for a given key associated with the specified web resource.
@@ -84,7 +102,7 @@ trait Utility extends StObject {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/actions External Link: Actions overview}
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-own-actions External Link: Create your own actions}
     */
-  def invokeProcessAction(name: String, parameters: Dictionary[js.Any]): PromiseLike[js.Any] = js.native
+  def invokeProcessAction(name: String, parameters: Dictionary[Any]): PromiseLike[Any] = js.native
   
   /**
     * Query if 'entityType' is an Activity entity.
@@ -100,6 +118,7 @@ trait Utility extends StObject {
   /**
     * Opens a lookup control to select one or more items.
     * @param lookupOptions Defines the options for opening the lookup dialog
+    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/lookupobjects}
     */
   def lookupObjects(lookupOptions: LookupOptions): PromiseLike[js.Array[LookupValue]] = js.native
   
@@ -166,6 +185,7 @@ trait Utility extends StObject {
   /**
     * Refreshes the parent grid containing the specified record.
     * @param lookupOptions: The lookup value of the parent object to refresh.
+    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/refreshparentgrid}
     */
   def refreshParentGrid(lookupOptions: LookupValue): Unit = js.native
   
@@ -173,6 +193,7 @@ trait Utility extends StObject {
     * Displays a progress dialog with the specified message.
     * Any subsequent call to this method will update the displayed message in the existing progress dialog with the message specified in the latest method call.
     * @param message The message to be displayed in the progress dialog.
+    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/showprogressindicator}
     */
   def showProgressIndicator(message: String): Unit = js.native
 }

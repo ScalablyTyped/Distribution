@@ -304,6 +304,12 @@ object qlikVisualizationextensionsStrings {
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
+  sealed trait listbox
+    extends StObject
+       with VisualizationType
+  inline def listbox: listbox = "listbox".asInstanceOf[listbox]
+  
+  @js.native
   sealed trait measures extends StObject
   inline def measures: measures = "measures".asInstanceOf[measures]
   

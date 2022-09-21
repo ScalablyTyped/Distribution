@@ -13,6 +13,9 @@ trait QuotaUserUploadType extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
+  /** The ID of the advertiser that owns the created channel. */
+  var advertiserId: String
+  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
@@ -28,6 +31,9 @@ trait QuotaUserUploadType extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
+  /** The ID of the partner that owns the created channel. */
+  var partnerId: js.UndefOr[String] = js.undefined
+  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
@@ -42,8 +48,8 @@ trait QuotaUserUploadType extends StObject {
 }
 object QuotaUserUploadType {
   
-  inline def apply(): QuotaUserUploadType = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(advertiserId: String): QuotaUserUploadType = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUserUploadType]
   }
   
@@ -56,6 +62,8 @@ object QuotaUserUploadType {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -76,6 +84,10 @@ object QuotaUserUploadType {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

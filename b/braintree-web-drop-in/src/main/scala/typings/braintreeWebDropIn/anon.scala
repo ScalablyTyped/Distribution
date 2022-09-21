@@ -16,6 +16,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait AdditionalInformation extends StObject {
+    
+    var additionalInformation: js.UndefOr[js.Object] = js.undefined
+    
+    var amount: String
+    
+    var billingAddress: js.UndefOr[js.Object] = js.undefined
+    
+    var challengeRequested: js.UndefOr[Boolean] = js.undefined
+    
+    var email: js.UndefOr[String] = js.undefined
+    
+    var exemptionRequested: js.UndefOr[Boolean] = js.undefined
+    
+    var mobilePhoneNumber: js.UndefOr[String] = js.undefined
+  }
+  object AdditionalInformation {
+    
+    inline def apply(amount: String): AdditionalInformation = {
+      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AdditionalInformation]
+    }
+    
+    extension [Self <: AdditionalInformation](x: Self) {
+      
+      inline def setAdditionalInformation(value: js.Object): Self = StObject.set(x, "additionalInformation", value.asInstanceOf[js.Any])
+      
+      inline def setAdditionalInformationUndefined: Self = StObject.set(x, "additionalInformation", js.undefined)
+      
+      inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      
+      inline def setBillingAddress(value: js.Object): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+      
+      inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+      
+      inline def setChallengeRequested(value: Boolean): Self = StObject.set(x, "challengeRequested", value.asInstanceOf[js.Any])
+      
+      inline def setChallengeRequestedUndefined: Self = StObject.set(x, "challengeRequested", js.undefined)
+      
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      
+      inline def setExemptionRequested(value: Boolean): Self = StObject.set(x, "exemptionRequested", value.asInstanceOf[js.Any])
+      
+      inline def setExemptionRequestedUndefined: Self = StObject.set(x, "exemptionRequested", js.undefined)
+      
+      inline def setMobilePhoneNumber(value: String): Self = StObject.set(x, "mobilePhoneNumber", value.asInstanceOf[js.Any])
+      
+      inline def setMobilePhoneNumberUndefined: Self = StObject.set(x, "mobilePhoneNumber", js.undefined)
+    }
+  }
+  
   trait AllowVaultCardOverride extends StObject {
     
     var allowVaultCardOverride: js.UndefOr[Boolean] = js.undefined

@@ -1,6 +1,5 @@
 package typings.synaptic.mod
 
-import typings.std.Float64Array
 import typings.std.Worker
 import typings.synaptic.anon.Code
 import typings.synaptic.mod.Layer.LayerConnection
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Networks are basically an array of layers. They have an input layer, a number of hidden layers, and an output layer.
   */
-class Network () extends StObject {
+open class Network () extends StObject {
   def this(options: Options) = this()
   
   /**
@@ -63,17 +62,17 @@ class Network () extends StObject {
   def outputs(): Double = js.native
   
   def project(otherNetwork: Layer): LayerConnection = js.native
-  def project(otherNetwork: Layer, connectionType: Unit, weights: js.Any): LayerConnection = js.native
+  def project(otherNetwork: Layer, connectionType: Unit, weights: Any): LayerConnection = js.native
   def project(otherNetwork: Layer, connectionType: connectionType): LayerConnection = js.native
-  def project(otherNetwork: Layer, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
+  def project(otherNetwork: Layer, connectionType: connectionType, weights: Any): LayerConnection = js.native
   /**
     * A network can project a connection to another, or gate a connection between two others networks in the same way Layers do.
     * @param [connectionType=Layer.connectionType.ALL_TO_ALL]
     */
   def project(otherNetwork: Network): LayerConnection = js.native
-  def project(otherNetwork: Network, connectionType: Unit, weights: js.Any): LayerConnection = js.native
+  def project(otherNetwork: Network, connectionType: Unit, weights: Any): LayerConnection = js.native
   def project(otherNetwork: Network, connectionType: connectionType): LayerConnection = js.native
-  def project(otherNetwork: Network, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
+  def project(otherNetwork: Network, connectionType: connectionType, weights: Any): LayerConnection = js.native
   
   /**
     * You can provide a target value and a learning rate to a network and backpropagate the error from the output layer to all the hidden layers in reverse order until reaching the input layer.
@@ -90,14 +89,14 @@ class Network () extends StObject {
   /**
     * Restores all the values from the optimized network the their respective objects in order to manipulate the network.
     */
-  def restore(): js.Any | Unit = js.native
+  def restore(): Any | Unit = js.native
   
   /**
     * The method set(layers) receives an object with layers in the same format as the constructor of Network and sets them as the layers of the Network, this is useful when you are extending the Network class to create your own architectures.
     */
   def set(options: Options): Unit = js.native
   
-  def setOptimize(optimize: js.Any): Unit = js.native
+  def setOptimize(optimize: Any): Unit = js.native
   
   /**
     * The network can be exported to a single javascript Function. This can be useful when your network is already trained and you just need to use it, since the standalone functions is just one javascript function with an array and operations within, with no dependencies on Synaptic or any other library.
@@ -110,25 +109,25 @@ class Network () extends StObject {
     * @param edgeConnection
     */
   def toDot(): Code = js.native
-  def toDot(edgeConnection: js.Any): Code = js.native
+  def toDot(edgeConnection: Any): Code = js.native
   
   /**
     * Networks can be stored as JSON's.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /**
     * The network can be converted into a WebWorker. This feature doesn't work in node.js, and it's not supported on every browser (it must support Blob).
     * @returns Return a HTML5 WebWorker specialized on training the network stored in `memory`. Train based on the given dataSet and options. The worker returns the updated `memory` when done.
     */
   def worker(): Worker = js.native
-  def worker(memory: js.Any): Worker = js.native
-  def worker(memory: js.Any, set: js.Any): Worker = js.native
-  def worker(memory: js.Any, set: js.Any, options: js.Any): Worker = js.native
-  def worker(memory: js.Any, set: Unit, options: js.Any): Worker = js.native
-  def worker(memory: Unit, set: js.Any): Worker = js.native
-  def worker(memory: Unit, set: js.Any, options: js.Any): Worker = js.native
-  def worker(memory: Unit, set: Unit, options: js.Any): Worker = js.native
+  def worker(memory: Any): Worker = js.native
+  def worker(memory: Any, set: Any): Worker = js.native
+  def worker(memory: Any, set: Any, options: Any): Worker = js.native
+  def worker(memory: Any, set: Unit, options: Any): Worker = js.native
+  def worker(memory: Unit, set: Any): Worker = js.native
+  def worker(memory: Unit, set: Any, options: Any): Worker = js.native
+  def worker(memory: Unit, set: Unit, options: Any): Worker = js.native
 }
 /* static members */
 object Network {
@@ -140,7 +139,7 @@ object Network {
   /**
     * Rebuild a network that has been stored in a json using the method toJSON().
     */
-  inline def fromJSON(exported: js.Any): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[Network]
+  inline def fromJSON(exported: Any): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[Network]
   
   /**
     * Creates a static String to store the source code of the functions that are identical for all the workers (train, _trainSet, test).
@@ -150,22 +149,22 @@ object Network {
   
   trait Optimized extends StObject {
     
-    var memory: Float64Array
+    var memory: js.typedarray.Float64Array
     
-    def ownership(memoryBuffer: Float64Array): Unit
+    def ownership(memoryBuffer: js.typedarray.Float64Array): Unit
   }
   object Optimized {
     
-    inline def apply(memory: Float64Array, ownership: Float64Array => Unit): Optimized = {
+    inline def apply(memory: js.typedarray.Float64Array, ownership: js.typedarray.Float64Array => Unit): Optimized = {
       val __obj = js.Dynamic.literal(memory = memory.asInstanceOf[js.Any], ownership = js.Any.fromFunction1(ownership))
       __obj.asInstanceOf[Optimized]
     }
     
     extension [Self <: Optimized](x: Self) {
       
-      inline def setMemory(value: Float64Array): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: js.typedarray.Float64Array): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      inline def setOwnership(value: Float64Array => Unit): Self = StObject.set(x, "ownership", js.Any.fromFunction1(value))
+      inline def setOwnership(value: js.typedarray.Float64Array => Unit): Self = StObject.set(x, "ownership", js.Any.fromFunction1(value))
     }
   }
   
@@ -188,7 +187,7 @@ object Network {
       
       inline def setHidden(value: js.Array[Layer]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      inline def setHiddenVarargs(value: Layer*): Self = StObject.set(x, "hidden", js.Array(value :_*))
+      inline def setHiddenVarargs(value: Layer*): Self = StObject.set(x, "hidden", js.Array(value*))
       
       inline def setInput(value: Layer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

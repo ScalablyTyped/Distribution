@@ -33,13 +33,13 @@ trait QueryOperator extends StObject {
   /** Indicates the operator name that can be used to isolate the property using the less-than operator. */
   var lessThanOperatorName: js.UndefOr[String] = js.undefined
   
-  /** Name of the object corresponding to the operator. This field is only filled for schema-specific operators, and is unset for common operators. */
+  /** The name of the object corresponding to the operator. This field is only filled for schema-specific operators, and is unset for common operators. */
   var objectType: js.UndefOr[String] = js.undefined
   
   /** The name of the operator. */
   var operatorName: js.UndefOr[String] = js.undefined
   
-  /** Type of the operator. */
+  /** The type of the operator. */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object QueryOperator {
@@ -59,7 +59,7 @@ object QueryOperator {
     
     inline def setEnumValuesUndefined: Self = StObject.set(x, "enumValues", js.undefined)
     
-    inline def setEnumValuesVarargs(value: String*): Self = StObject.set(x, "enumValues", js.Array(value :_*))
+    inline def setEnumValuesVarargs(value: String*): Self = StObject.set(x, "enumValues", js.Array(value*))
     
     inline def setGreaterThanOperatorName(value: String): Self = StObject.set(x, "greaterThanOperatorName", value.asInstanceOf[js.Any])
     

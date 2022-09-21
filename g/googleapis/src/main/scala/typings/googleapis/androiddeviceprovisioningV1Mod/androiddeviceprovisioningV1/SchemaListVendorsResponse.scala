@@ -4,25 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message to list vendors of the partner.
-  */
 trait SchemaListVendorsResponse extends StObject {
   
   /**
-    * A token to retrieve the next page of results. Omitted if no further
-    * results are available.
+    * A token to retrieve the next page of results. Omitted if no further results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The total count of items in the list irrespective of pagination.
     */
-  var totalSize: js.UndefOr[Double] = js.undefined
+  var totalSize: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * List of vendors of the reseller partner. Fields `name`, `companyId` and
-    * `companyName` are populated to the Company object.
+    * List of vendors of the reseller partner. Fields `name`, `companyId` and `companyName` are populated to the Company object.
     */
   var vendors: js.UndefOr[js.Array[SchemaCompany]] = js.undefined
 }
@@ -37,9 +32,13 @@ object SchemaListVendorsResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    
+    inline def setTotalSizeNull: Self = StObject.set(x, "totalSize", null)
     
     inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
@@ -47,6 +46,6 @@ object SchemaListVendorsResponse {
     
     inline def setVendorsUndefined: Self = StObject.set(x, "vendors", js.undefined)
     
-    inline def setVendorsVarargs(value: SchemaCompany*): Self = StObject.set(x, "vendors", js.Array(value :_*))
+    inline def setVendorsVarargs(value: SchemaCompany*): Self = StObject.set(x, "vendors", js.Array(value*))
   }
 }

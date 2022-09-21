@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "PostProcessRenderPipeline")
 @js.native
-class PostProcessRenderPipeline protected ()
+open class PostProcessRenderPipeline protected ()
   extends typings.babylonjs.legacyMod.PostProcessRenderPipeline {
   /**
     * Initializes a PostProcessRenderPipeline
-    * @param engine engine to add the pipeline to
+    * @param _engine engine to add the pipeline to
     * @param name name of the pipeline
     */
-  def this(engine: typings.babylonjs.engineMod.Engine, name: String) = this()
+  def this(_engine: typings.babylonjs.engineMod.Engine, name: String) = this()
 }

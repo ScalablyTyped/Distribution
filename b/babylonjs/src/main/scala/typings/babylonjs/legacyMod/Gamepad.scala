@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "Gamepad")
 @js.native
-class Gamepad protected ()
+open class Gamepad protected ()
   extends typings.babylonjs.indexMod.Gamepad {
   /**
     * Initializes the gamepad
@@ -30,7 +30,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any
+  browserGamepad: Any
   ) = this()
   def this(
     /**
@@ -44,7 +44,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Double
   ) = this()
   def this(
@@ -59,7 +59,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Double,
     leftStickY: Double
   ) = this()
@@ -75,7 +75,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Unit,
     leftStickY: Double
   ) = this()
@@ -91,7 +91,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Double,
     leftStickY: Double,
     rightStickX: Double
@@ -108,7 +108,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Double,
     leftStickY: Unit,
     rightStickX: Double
@@ -125,7 +125,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Unit,
     leftStickY: Double,
     rightStickX: Double
@@ -142,7 +142,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Unit,
     leftStickY: Unit,
     rightStickX: Double
@@ -159,7 +159,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Double,
     leftStickY: Double,
     rightStickX: Double,
@@ -177,7 +177,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Double,
     leftStickY: Double,
     rightStickX: Unit,
@@ -195,7 +195,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Double,
     leftStickY: Unit,
     rightStickX: Double,
@@ -213,7 +213,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Double,
     leftStickY: Unit,
     rightStickX: Unit,
@@ -231,7 +231,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Unit,
     leftStickY: Double,
     rightStickX: Double,
@@ -249,7 +249,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Unit,
     leftStickY: Double,
     rightStickX: Unit,
@@ -267,7 +267,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Unit,
     leftStickY: Unit,
     rightStickX: Double,
@@ -285,7 +285,7 @@ class Gamepad protected ()
     /**
     * The browser gamepad
     */
-  browserGamepad: js.Any,
+  browserGamepad: Any,
     leftStickX: Unit,
     leftStickY: Unit,
     rightStickX: Unit,

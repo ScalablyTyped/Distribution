@@ -261,13 +261,13 @@ object anon {
       
       inline def setSourceLinksUndefined: Self = StObject.set(x, "sourceLinks", js.undefined)
       
-      inline def setSourceLinksVarargs(value: SankeyLink*): Self = StObject.set(x, "sourceLinks", js.Array(value :_*))
+      inline def setSourceLinksVarargs(value: SankeyLink*): Self = StObject.set(x, "sourceLinks", js.Array(value*))
       
       inline def setTargetLinks(value: js.Array[SankeyLink]): Self = StObject.set(x, "targetLinks", value.asInstanceOf[js.Any])
       
       inline def setTargetLinksUndefined: Self = StObject.set(x, "targetLinks", js.undefined)
       
-      inline def setTargetLinksVarargs(value: SankeyLink*): Self = StObject.set(x, "targetLinks", js.Array(value :_*))
+      inline def setTargetLinksVarargs(value: SankeyLink*): Self = StObject.set(x, "targetLinks", js.Array(value*))
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -372,13 +372,13 @@ object anon {
       
       inline def setSourceLinksUndefined: Self = StObject.set(x, "sourceLinks", js.undefined)
       
-      inline def setSourceLinksVarargs(value: (typings.d3Sankey.mod.SankeyLink[js.Object, js.Object])*): Self = StObject.set(x, "sourceLinks", js.Array(value :_*))
+      inline def setSourceLinksVarargs(value: (typings.d3Sankey.mod.SankeyLink[js.Object, js.Object])*): Self = StObject.set(x, "sourceLinks", js.Array(value*))
       
       inline def setTargetLinks(value: js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]): Self = StObject.set(x, "targetLinks", value.asInstanceOf[js.Any])
       
       inline def setTargetLinksUndefined: Self = StObject.set(x, "targetLinks", js.undefined)
       
-      inline def setTargetLinksVarargs(value: (typings.d3Sankey.mod.SankeyLink[js.Object, js.Object])*): Self = StObject.set(x, "targetLinks", js.Array(value :_*))
+      inline def setTargetLinksVarargs(value: (typings.d3Sankey.mod.SankeyLink[js.Object, js.Object])*): Self = StObject.set(x, "targetLinks", js.Array(value*))
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

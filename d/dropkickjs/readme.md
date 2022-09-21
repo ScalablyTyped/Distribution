@@ -10,10 +10,10 @@ A JavaScript plugin for creating beautiful, graceful, and painless custom dropdo
 | ------------------ | :-------------: |
 | Full name          | dropkickjs |
 | Keywords           | dropkick, dropkickjs, select replacement, select2, select |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 124041 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3064.0 |
+| # stars            | 1938.0 |
 
 ## Links
 - [Homepage](https://github.com/robdel12/DropKick#readme)

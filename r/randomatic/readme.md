@@ -11,9 +11,9 @@ Generate randomized strings of a specified length using simple character sequenc
 | Full name          | randomatic |
 | Keywords           | alpha, alpha-numeric, alphanumeric, characters, chars, generate, generate-password, numeric, password, rand, random, randomatic, randomize, randomized |
 | # releases         | 0 |
-| # dependents       | 181 |
-| # downloads        | 175595108 |
-| # stars            | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2642703666666666E7 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/randomatic)

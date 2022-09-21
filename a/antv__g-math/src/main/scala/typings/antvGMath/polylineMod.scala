@@ -11,7 +11,7 @@ object polylineMod {
   
   object default {
     
-    @JSImport("@antv/g-math/lib/polyline", JSImport.Default)
+    @JSImport("@antv/g-math/dist/polyline", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

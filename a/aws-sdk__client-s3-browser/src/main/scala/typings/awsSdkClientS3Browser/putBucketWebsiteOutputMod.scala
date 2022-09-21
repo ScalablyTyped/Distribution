@@ -8,5 +8,5 @@ object putBucketWebsiteOutputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/PutBucketWebsiteOutput", "PutBucketWebsiteOutput")
   @js.native
-  val PutBucketWebsiteOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutBucketWebsiteOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

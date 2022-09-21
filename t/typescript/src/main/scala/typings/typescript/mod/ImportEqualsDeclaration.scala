@@ -8,11 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportEqualsDeclaration
   extends StObject
      with DeclarationStatement
-     with JSDocContainer
-     with HasJSDoc {
+     with HasJSDoc
+     with HasModifiers
+     with TypeOnlyCompatibleAliasDeclaration {
+  
+  val isTypeOnly: Boolean = js.native
   
   @JSName("kind")
   val kind_ImportEqualsDeclaration: typings.typescript.mod.SyntaxKind.ImportEqualsDeclaration = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ImportEqualsDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
   
   val moduleReference: ModuleReference = js.native
   

@@ -10,15 +10,12 @@ Run source transform function on Node require
 | ------------------ | :-------------: |
 | Full name          | node-hook |
 | Keywords           | require, node, load, hook, transform |
-| # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 447696 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 153253.0 |
+| # stars            | 66.0 |
 
 ## Links
-- [Homepage](https://github.com/bahmutov/node-hook#readme)
-- [Bugs](https://github.com/bahmutov/node-hook/issues)
-- [Repository](https://github.com/bahmutov/node-hook)
 - [Npm](https://www.npmjs.com/package/node-hook)
     
 

@@ -3,11 +3,11 @@ package typings.streamingJsonStringify
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.node.BufferEncoding
 import typings.node.anon.Chunk
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
-import typings.std.Error
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ object mod extends Shortcut {
     
     var opener: String = js.native
     
-    def replacer(key: String, value: js.Any): js.Any = js.native
+    def replacer(key: String, value: Any): Any = js.native
     @JSName("replacer")
     var replacer_Original: Replacer = js.native
     
@@ -33,8 +33,8 @@ object mod extends Shortcut {
     
     var space: String | Double = js.native
     
-    def stringifier(value: js.Any, replacer: Replacer, space: String): String = js.native
-    def stringifier(value: js.Any, replacer: Replacer, space: Double): String = js.native
+    def stringifier(value: Any, replacer: Replacer, space: String): String = js.native
+    def stringifier(value: Any, replacer: Replacer, space: Double): String = js.native
   }
   
   /* Inlined std.Partial<streaming-json-stringify.streaming-json-stringify.Instance> & node.stream.TransformOptions */
@@ -46,6 +46,14 @@ object mod extends Shortcut {
     
     var closer: js.UndefOr[String] = js.undefined
     
+    var construct: js.UndefOr[
+        js.ThisFunction1[
+          /* this */ Transform, 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+          Unit
+        ]
+      ] = js.undefined
+    
     var decodeStrings: js.UndefOr[Boolean] = js.undefined
     
     var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
@@ -53,8 +61,8 @@ object mod extends Shortcut {
     var destroy: js.UndefOr[
         js.ThisFunction2[
           /* this */ Transform, 
-          /* error */ Error | Null, 
-          /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+          /* error */ js.Error | Null, 
+          /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -66,7 +74,7 @@ object mod extends Shortcut {
     var `final`: js.UndefOr[
         js.ThisFunction1[
           /* this */ Transform, 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -89,16 +97,21 @@ object mod extends Shortcut {
     
     var seperator: js.UndefOr[String] = js.undefined
     
+    /**
+      * When provided the corresponding `AbortController` can be used to cancel an asynchronous action.
+      */
+    var signal: js.UndefOr[AbortSignal] = js.undefined
+    
     var space: js.UndefOr[String | Double] = js.undefined
     
     var stringifier: js.UndefOr[
-        js.Function3[/* value */ js.Any, /* replacer */ Replacer, /* space */ String | Double, String]
+        js.Function3[/* value */ Any, /* replacer */ Replacer, /* space */ String | Double, String]
       ] = js.undefined
     
     var transform: js.UndefOr[
         js.ThisFunction3[
           /* this */ Transform, 
-          /* chunk */ js.Any, 
+          /* chunk */ Any, 
           /* encoding */ BufferEncoding, 
           /* callback */ TransformCallback, 
           Unit
@@ -114,9 +127,9 @@ object mod extends Shortcut {
     var write: js.UndefOr[
         js.ThisFunction3[
           /* this */ Transform, 
-          /* chunk */ js.Any, 
+          /* chunk */ Any, 
           /* encoding */ BufferEncoding, 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -125,7 +138,7 @@ object mod extends Shortcut {
         js.ThisFunction2[
           /* this */ Transform, 
           /* chunks */ js.Array[Chunk], 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -151,6 +164,16 @@ object mod extends Shortcut {
       
       inline def setCloserUndefined: Self = StObject.set(x, "closer", js.undefined)
       
+      inline def setConstruct(
+        value: js.ThisFunction1[
+              /* this */ Transform, 
+              /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+              Unit
+            ]
+      ): Self = StObject.set(x, "construct", value.asInstanceOf[js.Any])
+      
+      inline def setConstructUndefined: Self = StObject.set(x, "construct", js.undefined)
+      
       inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
       
       inline def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
@@ -162,8 +185,8 @@ object mod extends Shortcut {
       inline def setDestroy(
         value: js.ThisFunction2[
               /* this */ Transform, 
-              /* error */ Error | Null, 
-              /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+              /* error */ js.Error | Null, 
+              /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
               Unit
             ]
       ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
@@ -181,7 +204,7 @@ object mod extends Shortcut {
       inline def setFinal(
         value: js.ThisFunction1[
               /* this */ Transform, 
-              /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+              /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
               Unit
             ]
       ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
@@ -216,7 +239,7 @@ object mod extends Shortcut {
       
       inline def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
       
-      inline def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
@@ -224,18 +247,22 @@ object mod extends Shortcut {
       
       inline def setSeperatorUndefined: Self = StObject.set(x, "seperator", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setSpace(value: String | Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
       inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
       
-      inline def setStringifier(value: (/* value */ js.Any, /* replacer */ Replacer, /* space */ String | Double) => String): Self = StObject.set(x, "stringifier", js.Any.fromFunction3(value))
+      inline def setStringifier(value: (/* value */ Any, /* replacer */ Replacer, /* space */ String | Double) => String): Self = StObject.set(x, "stringifier", js.Any.fromFunction3(value))
       
       inline def setStringifierUndefined: Self = StObject.set(x, "stringifier", js.undefined)
       
       inline def setTransform(
         value: js.ThisFunction3[
               /* this */ Transform, 
-              /* chunk */ js.Any, 
+              /* chunk */ Any, 
               /* encoding */ BufferEncoding, 
               /* callback */ TransformCallback, 
               Unit
@@ -259,9 +286,9 @@ object mod extends Shortcut {
       inline def setWrite(
         value: js.ThisFunction3[
               /* this */ Transform, 
-              /* chunk */ js.Any, 
+              /* chunk */ Any, 
               /* encoding */ BufferEncoding, 
-              /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+              /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
               Unit
             ]
       ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
@@ -272,7 +299,7 @@ object mod extends Shortcut {
         value: js.ThisFunction2[
               /* this */ Transform, 
               /* chunks */ js.Array[Chunk], 
-              /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+              /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
               Unit
             ]
       ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
@@ -281,7 +308,7 @@ object mod extends Shortcut {
     }
   }
   
-  type Replacer = js.Function2[/* key */ String, /* value */ js.Any, js.Any]
+  type Replacer = js.Function2[/* key */ String, /* value */ Any, Any]
   
   @js.native
   trait StringifyFactory

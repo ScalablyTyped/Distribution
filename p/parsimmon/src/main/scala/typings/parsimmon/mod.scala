@@ -6,7 +6,6 @@ import typings.parsimmon.parsimmonBooleans.`false`
 import typings.parsimmon.parsimmonBooleans.`true`
 import typings.parsimmon.parsimmonNumbers.`-1`
 import typings.parsimmon.parsimmonStrings._empty
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,13 +75,13 @@ object mod {
     def fallback[U](fallbackValue: U): Parser[T | U] = js.native
     
     def lookahead(arg: String): Parser[T] = js.native
+    def lookahead(arg: js.RegExp): Parser[T] = js.native
     /**
       * Returns a parser that looks for whatever arg wants to parse, but does not
       * consume it. Yields the same result as parser. Equivalent to
       * parser.skip(Parsimmon.lookahead(anotherParser)).
       */
-    def lookahead(arg: Parser[js.Any]): Parser[T] = js.native
-    def lookahead(arg: RegExp): Parser[T] = js.native
+    def lookahead(arg: Parser[Any]): Parser[T] = js.native
     
     /**
       * expects parser zero or more times, and yields an array of the results.
@@ -111,7 +110,7 @@ object mod {
       * parse, and does not consume it. Yields the same result as parser. Equivalent to
       * parser.skip(Parsimmon.notFollowedBy(anotherParser)).
       */
-    def notFollowedBy(anotherParser: Parser[js.Any]): Parser[T] = js.native
+    def notFollowedBy(anotherParser: Parser[Any]): Parser[T] = js.native
     
     /**
       * Equivalent to Parsimmon.of(result).
@@ -148,9 +147,9 @@ object mod {
     /**
       * Equivalent to Parsimmon.sepBy(parser, separator).
       *
-      * Expects one or more matches for parser, separated by the parser separator, yielding an array.
+      * Expects one or more matches for parser, separated by the parser separator, yielding a non-empty array.
       */
-    def sepBy1[U](separator: Parser[U]): Parser[js.Array[T]] = js.native
+    def sepBy1[U](separator: Parser[U]): Parser[Array[T]] = js.native
     
     /**
       * expects otherParser after parser, but preserves the yield value of parser.
@@ -212,7 +211,7 @@ object mod {
     /**
       * Expects the parser before before parser and after after parser.
       */
-    def wrap(before: Parser[js.Any], after: Parser[js.Any]): Parser[T] = js.native
+    def wrap(before: Parser[Any], after: Parser[Any]): Parser[T] = js.native
   }
   object Parser {
     
@@ -231,13 +230,13 @@ object mod {
   @js.native
   val all: Parser[String] = js.native
   
-  inline def alt(parsers: Parser[js.Any]*): Parser[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Any]]
+  inline def alt(parsers: Parser[Any]*): Parser[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(parsers.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[Any]]
   
   /**
     * accepts a variable number of parsers, and yields the value of the first one that succeeds,
     * backtracking in between.
     */
-  inline def alt_U[U](parsers: Parser[U]*): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[U]]
+  inline def alt_U[U](parsers: Parser[U]*): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(parsers.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[U]]
   
   /**
     * consumes and yields the next character of the stream.
@@ -261,11 +260,11 @@ object mod {
   inline def bitSeqObj[Key /* <: String */](namedAlignments: js.Array[(js.Tuple2[Key, Double]) | Double]): Parser[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: number}
-    */ typings.parsimmon.parsimmonStrings.bitSeqObj & TopLevel[js.Any]
+    */ typings.parsimmon.parsimmonStrings.bitSeqObj & TopLevel[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bitSeqObj")(namedAlignments.asInstanceOf[js.Any]).asInstanceOf[Parser[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: number}
-    */ typings.parsimmon.parsimmonStrings.bitSeqObj & TopLevel[js.Any]
+    */ typings.parsimmon.parsimmonStrings.bitSeqObj & TopLevel[Any]
   ]]
   
   /**
@@ -413,7 +412,7 @@ object mod {
   /**
     * Returns true if obj is a Parsimmon parser, otherwise false.
     */
-  inline def isParser(obj: js.Any): /* is parsimmon.parsimmon.Parser<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParser")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is parsimmon.parsimmon.Parser<any> */ Boolean]
+  inline def isParser(obj: Any): /* is parsimmon.parsimmon.Parser<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParser")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is parsimmon.parsimmon.Parser<any> */ Boolean]
   
   inline def `lazy`[U](description: String, f: js.Function0[Parser[U]]): Parser[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(description.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Parser[U]]
   /**
@@ -447,11 +446,11 @@ object mod {
   val lf: Parser[String] = js.native
   
   inline def lookahead(arg: String): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
+  inline def lookahead(arg: js.RegExp): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
   /**
     * Parses using arg, but does not consume what it parses. Yields an empty string.
     */
-  inline def lookahead(arg: Parser[js.Any]): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
-  inline def lookahead(arg: RegExp): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
+  inline def lookahead(arg: Parser[Any]): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
   
   /**
     * To be used inside of Parsimmon(fn). Generates an object describing how
@@ -484,7 +483,7 @@ object mod {
     * Parses using parser, but does not consume what it parses. Yields null if the parser
     * does not match the input. Otherwise it fails.
     */
-  inline def notFollowedBy(parser: Parser[js.Any]): Parser[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFollowedBy")(parser.asInstanceOf[js.Any]).asInstanceOf[Parser[Null]]
+  inline def notFollowedBy(parser: Parser[Any]): Parser[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFollowedBy")(parser.asInstanceOf[js.Any]).asInstanceOf[Parser[Null]]
   
   /**
     * This is an alias for Parsimmon.succeed(result).
@@ -511,8 +510,8 @@ object mod {
   /**
     * This was the original name for Parsimmon.regexp, but now it is just an alias.
     */
-  inline def regex(myregex: RegExp): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")(myregex.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
-  inline def regex(myregex: RegExp, group: Double): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("regex")(myregex.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
+  inline def regex(myregex: js.RegExp): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")(myregex.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def regex(myregex: js.RegExp, group: Double): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("regex")(myregex.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
   
   /**
     * Returns a parser that looks for a match to the regexp and yields the given match group
@@ -520,8 +519,8 @@ object mod {
     * parse location. The regexp may only use the following flags: imu. Any other flag will
     * result in an error being thrown.
     */
-  inline def regexp(myregex: RegExp): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(myregex.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
-  inline def regexp(myregex: RegExp, group: Double): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(myregex.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
+  inline def regexp(myregex: js.RegExp): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(myregex.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def regexp(myregex: js.RegExp, group: Double): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(myregex.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
   
   /**
     * Accepts two parsers, and expects zero or more matches for content, separated by separator, yielding an array.
@@ -531,16 +530,16 @@ object mod {
   /**
     * This is the same as Parsimmon.sepBy, but matches the content parser at least once.
     */
-  inline def sepBy1[T, U](content: Parser[T], separator: Parser[U]): Parser[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sepBy1")(content.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Array[T]]]
+  inline def sepBy1[T, U](content: Parser[T], separator: Parser[U]): Parser[Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sepBy1")(content.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Parser[Array[T]]]
   
   /**
     * accepts a variable number of parsers that it expects to find in order, yielding an array of the results.
     */
   inline def seq[T](p1: Parser[T]): Parser[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Array[T]]]
-  inline def seq[T /* <: js.Array[js.Any] */](
+  inline def seq[T /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param parsers because its type T is not an array type */ parsers: T
   ): Parser[UnParser[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("seq")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[UnParser[T]]]
-  inline def seq[T](parsers: Parser[T]*): Parser[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("seq")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Array[T]]]
+  inline def seq[T](parsers: Parser[T]*): Parser[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("seq")(parsers.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[js.Array[T]]]
   inline def seq[T, U](p1: Parser[T], p2: Parser[U]): Parser[js.Tuple2[T, U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple2[T, U]]]
   inline def seq[T, U, V](p1: Parser[T], p2: Parser[U], p3: Parser[V]): Parser[js.Tuple3[T, U, V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple3[T, U, V]]]
   inline def seq[T, U, V, W](p1: Parser[T], p2: Parser[U], p3: Parser[V], p4: Parser[W]): Parser[js.Tuple4[T, U, V, W]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple4[T, U, V, W]]]
@@ -678,12 +677,12 @@ object mod {
       Parser[
         /* import warning: importer.ImportType#apply Failed type conversion: T[Key] */ js.Any
       ]
-    ]) | Parser[js.Any])*
+    ]) | Parser[Any])*
   ): Parser[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: T[K]}
     */ typings.parsimmon.parsimmonStrings.seqObj & TopLevel[T]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("seqObj")(args.asInstanceOf[js.Any]).asInstanceOf[Parser[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("seqObj")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: T[K]}
     */ typings.parsimmon.parsimmonStrings.seqObj & TopLevel[T]
@@ -692,7 +691,7 @@ object mod {
   /**
     * is a parser that expects to find "my-string", and will yield the same.
     */
-  inline def string(string: String): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(string.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def string[T /* <: String */](string: T): Parser[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(string.asInstanceOf[js.Any]).asInstanceOf[Parser[T]]
   
   /**
     * Returns a parser that doesn't consume any of the string, and yields result.
@@ -718,7 +717,7 @@ object mod {
   
   trait Failure
     extends StObject
-       with Result[js.Any] {
+       with Result[Any] {
     
     var expected: js.Array[String]
     
@@ -737,7 +736,7 @@ object mod {
       
       inline def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      inline def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value :_*))
+      inline def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value*))
       
       inline def setIndex(value: Index_): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -749,7 +748,7 @@ object mod {
   
   trait FailureReply
     extends StObject
-       with Reply[js.Any] {
+       with Reply[Any] {
     
     var expected: js.Array[String]
     
@@ -772,7 +771,7 @@ object mod {
       
       inline def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      inline def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value :_*))
+      inline def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value*))
       
       inline def setFurthest(value: Double): Self = StObject.set(x, "furthest", value.asInstanceOf[js.Any])
       
@@ -812,7 +811,7 @@ object mod {
     }
   }
   
-  type Language = StringDictionary[Parser[js.Any]]
+  type Language = StringDictionary[Parser[Any]]
   
   trait Mark[T] extends StObject {
     
@@ -896,7 +895,7 @@ object mod {
     }
   }
   
-  type Rule = StringDictionary[js.Function1[/* r */ Language, Parser[js.Any]]]
+  type Rule = StringDictionary[js.Function1[/* r */ Language, Parser[Any]]]
   
   type StreamType = String
   
@@ -950,7 +949,7 @@ object mod {
       
       inline def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      inline def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value :_*))
+      inline def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value*))
       
       inline def setFurthest(value: `-1`): Self = StObject.set(x, "furthest", value.asInstanceOf[js.Any])
       
@@ -970,5 +969,5 @@ object mod {
   {[ P in keyof TLanguageSpec ]: (r : parsimmon.parsimmon.TypedLanguage<TLanguageSpec>): parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
     */ typings.parsimmon.parsimmonStrings.TypedRule & TopLevel[TLanguageSpec]
   
-  type UnParser[T] = js.Any
+  type UnParser[T] = Any
 }

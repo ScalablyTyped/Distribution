@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CustomLabels")
 @js.native
-/* private */ class CustomLabels ()
+/* private */ open class CustomLabels ()
   extends StObject
      with typings.activexWord.Word.CustomLabels

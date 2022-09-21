@@ -29,6 +29,6 @@ object ScoresResetMultipleForAllRequest {
     
     inline def setLeaderboard_idsUndefined: Self = StObject.set(x, "leaderboard_ids", js.undefined)
     
-    inline def setLeaderboard_idsVarargs(value: String*): Self = StObject.set(x, "leaderboard_ids", js.Array(value :_*))
+    inline def setLeaderboard_idsVarargs(value: String*): Self = StObject.set(x, "leaderboard_ids", js.Array(value*))
   }
 }

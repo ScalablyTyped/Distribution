@@ -1,7 +1,7 @@
 
 # Scala.js typings for ignore-walk
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Nested/recursive `.gitignore`/`.npmignore` parsing and filtering.
@@ -10,15 +10,15 @@ Nested/recursive `.gitignore`/`.npmignore` parsing and filtering.
 | ------------------ | :-------------: |
 | Full name          | ignore-walk |
 | Keywords           | ignorefile, ignore, file, .gitignore, .npmignore, glob |
-| # releases         | 3 |
-| # dependents       | 74 |
-| # downloads        | 335148416 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1015385E7 |
+| # stars            | 43.0 |
 
 ## Links
-- [Homepage](https://github.com/isaacs/ignore-walk#readme)
-- [Bugs](https://github.com/isaacs/ignore-walk/issues)
-- [Repository](https://github.com/isaacs/ignore-walk)
+- [Homepage](https://github.com/npm/ignore-walk#readme)
+- [Bugs](https://github.com/npm/ignore-walk/issues)
+- [Repository](https://github.com/npm/ignore-walk)
 - [Npm](https://www.npmjs.com/package/ignore-walk)
     
 

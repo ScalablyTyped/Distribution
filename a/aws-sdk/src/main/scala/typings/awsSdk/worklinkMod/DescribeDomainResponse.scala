@@ -14,7 +14,7 @@ trait DescribeDomainResponse extends StObject {
   /**
     * The time that the domain was added.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name to display.
@@ -44,7 +44,7 @@ object DescribeDomainResponse {
     
     inline def setAcmCertificateArnUndefined: Self = StObject.set(x, "AcmCertificateArn", js.undefined)
     
-    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

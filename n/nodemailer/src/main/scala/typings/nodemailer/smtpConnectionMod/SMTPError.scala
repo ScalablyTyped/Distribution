@@ -1,13 +1,14 @@
 package typings.nodemailer.smtpConnectionMod
 
-import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SMTPError
-  extends StObject
-     with ErrnoException {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException * / any */ trait SMTPError extends StObject {
+  
+  /** string code identifying the error, for example ‘EAUTH’ is returned when authentication */
+  var code: js.UndefOr[String] = js.undefined
   
   /** command which provoked an error */
   var command: js.UndefOr[String] = js.undefined
@@ -20,12 +21,16 @@ trait SMTPError
 }
 object SMTPError {
   
-  inline def apply(message: String, name: String): SMTPError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(): SMTPError = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SMTPError]
   }
   
   extension [Self <: SMTPError](x: Self) {
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

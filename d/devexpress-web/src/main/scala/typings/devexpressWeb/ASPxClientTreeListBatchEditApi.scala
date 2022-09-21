@@ -32,22 +32,22 @@ trait ASPxClientTreeListBatchEditApi extends StObject {
     * @param nodeKey An integer value that is the visible index.
     * @param columnFieldNameOrId A string value that is the column's Field Name or ID.
     */
-  def GetCellTextContainer(nodeKey: String, columnFieldNameOrId: String): js.Any = js.native
+  def GetCellTextContainer(nodeKey: String, columnFieldNameOrId: String): Any = js.native
   
   /**
     * Gets the value of the specified cell. An object containing the specified cell's value.
     * @param nodeKey A zero-based integer value that specifies a visible index of a node containing the processed cell.
     * @param columnFieldNameOrId A string value that specifies the field name or unique identifier (the column's WebColumnBase.Name property value) of a column containing the processed cell.
     */
-  def GetCellValue(nodeKey: String, columnFieldNameOrId: String): js.Any = js.native
-  def GetCellValue(nodeKey: String, columnFieldNameOrId: String, initial: Boolean): js.Any = js.native
+  def GetCellValue(nodeKey: String, columnFieldNameOrId: String): Any = js.native
+  def GetCellValue(nodeKey: String, columnFieldNameOrId: String, initial: Boolean): Any = js.native
   
   /**
     * Provides the text displayed within the cell according to the specified display format rule. A string value representing the cell's displayed text.
     * @param columnFieldNameOrId A string value representing the column's unique identifier or field name.
     * @param value An object representing a value.
     */
-  def GetColumnDisplayText(columnFieldNameOrId: String, value: js.Any): String = js.native
+  def GetColumnDisplayText(columnFieldNameOrId: String, value: Any): String = js.native
   
   /**
     * Returns an array of the deleted node keys.
@@ -73,7 +73,7 @@ trait ASPxClientTreeListBatchEditApi extends StObject {
   /**
     * Returns an object that stores unsaved changes.
     */
-  def GetUnsavedChanges(): js.Any = js.native
+  def GetUnsavedChanges(): Any = js.native
   
   /**
     * Returns an array of the updated nodes' keys.
@@ -134,19 +134,19 @@ trait ASPxClientTreeListBatchEditApi extends StObject {
     * @param displayText A string value that specifies the cell display text.
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
-  def SetCellValue(nodeKey: String, columnFieldNameOrId: String, value: js.Any): Unit = js.native
-  def SetCellValue(nodeKey: String, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
+  def SetCellValue(nodeKey: String, columnFieldNameOrId: String, value: Any): Unit = js.native
+  def SetCellValue(nodeKey: String, columnFieldNameOrId: String, value: Any, displayText: String): Unit = js.native
   def SetCellValue(
     nodeKey: String,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: String,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
   def SetCellValue(
     nodeKey: String,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: Unit,
     cancelCellHighlighting: Boolean
   ): Unit = js.native

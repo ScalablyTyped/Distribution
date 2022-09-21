@@ -8,16 +8,16 @@ object queueMod {
   
   @JSImport("@uirouter/core/lib/common/queue", "Queue")
   @js.native
-  class Queue[T] () extends StObject {
+  open class Queue[T] () extends StObject {
     def this(_items: js.Array[T]) = this()
     def this(_items: js.Array[T], _limit: Double) = this()
     def this(_items: Unit, _limit: Double) = this()
     
-    /* private */ var _evictListeners: js.Any = js.native
+    /* private */ var _evictListeners: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _items: Any = js.native
     
-    /* private */ var _limit: js.Any = js.native
+    /* private */ var _limit: Any = js.native
     
     def clear(): js.Array[T] = js.native
     

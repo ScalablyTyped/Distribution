@@ -37,13 +37,13 @@ object knightlab {
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setDateVarargs(value: ITimelineDate*): Self = StObject.set(x, "date", js.Array(value :_*))
+      inline def setDateVarargs(value: ITimelineDate*): Self = StObject.set(x, "date", js.Array(value*))
       
       inline def setEra(value: js.Array[ITimelineEra]): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
       inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
       
-      inline def setEraVarargs(value: ITimelineEra*): Self = StObject.set(x, "era", js.Array(value :_*))
+      inline def setEraVarargs(value: ITimelineEra*): Self = StObject.set(x, "era", js.Array(value*))
       
       inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
       
@@ -173,7 +173,7 @@ object knightlab {
       * Spreadsheets or Storify stories. Failing that, we assume the source is either JSON or JSONP. If string
       * matches on .jsonp, we will treat it as JSONP, otherwise, we will append ?callback=onJSONP_Data.
       */
-    var source: js.Any
+    var source: Any
     
     /*
       * Optional start at latest date
@@ -196,7 +196,7 @@ object knightlab {
   }
   object ITimeLineConfiguration {
     
-    inline def apply(height: String, source: js.Any, width: String): ITimeLineConfiguration = {
+    inline def apply(height: String, source: Any, width: String): ITimeLineConfiguration = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITimeLineConfiguration]
     }
@@ -241,7 +241,7 @@ object knightlab {
       
       inline def setMaptypeUndefined: Self = StObject.set(x, "maptype", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setStart_at_end(value: Boolean): Self = StObject.set(x, "start_at_end", value.asInstanceOf[js.Any])
       

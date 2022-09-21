@@ -10,14 +10,13 @@ import typings.googleProtobuf.wrappersPbMod.UInt64Value
 import typings.libraCore.eventsPbMod.EventsForVersions
 import typings.libraCore.proofPbMod.AccumulatorProof
 import typings.libraCore.transactionInfoPbMod.TransactionInfo
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionListWithProof")
 @js.native
-class TransactionListWithProof () extends Message {
+open class TransactionListWithProof () extends Message {
   
   def addInfos(): TransactionInfo = js.native
   def addInfos(value: Unit, index: Double): TransactionInfo = js.native
@@ -84,7 +83,7 @@ object TransactionListWithProof {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): TransactionListWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionListWithProof]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): TransactionListWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionListWithProof]
   
   inline def deserializeBinaryFromReader(message: TransactionListWithProof, reader: BinaryReader): TransactionListWithProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionListWithProof]
   
@@ -139,7 +138,7 @@ object TransactionListWithProof {
       
       inline def setInfosList(value: js.Array[typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject]): Self = StObject.set(x, "infosList", value.asInstanceOf[js.Any])
       
-      inline def setInfosListVarargs(value: typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject*): Self = StObject.set(x, "infosList", js.Array(value :_*))
+      inline def setInfosListVarargs(value: typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject*): Self = StObject.set(x, "infosList", js.Array(value*))
       
       inline def setProofOfFirstTransaction(value: typings.libraCore.proofPbMod.AccumulatorProof.AsObject): Self = StObject.set(x, "proofOfFirstTransaction", value.asInstanceOf[js.Any])
       
@@ -151,7 +150,7 @@ object TransactionListWithProof {
       
       inline def setTransactionsList(value: js.Array[typings.libraCore.transactionPbMod.SignedTransaction.AsObject]): Self = StObject.set(x, "transactionsList", value.asInstanceOf[js.Any])
       
-      inline def setTransactionsListVarargs(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject*): Self = StObject.set(x, "transactionsList", js.Array(value :_*))
+      inline def setTransactionsListVarargs(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject*): Self = StObject.set(x, "transactionsList", js.Array(value*))
     }
   }
 }

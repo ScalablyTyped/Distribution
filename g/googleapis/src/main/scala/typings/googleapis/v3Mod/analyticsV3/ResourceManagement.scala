@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management")
 @js.native
-class ResourceManagement protected () extends StObject {
+open class ResourceManagement protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var accountSummaries: ResourceManagementAccountsummaries = js.native

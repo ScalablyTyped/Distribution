@@ -10,7 +10,7 @@ object groupIssueBoardsMod {
   
   @JSImport("gitlab/dist/types/core/services/GroupIssueBoards", "GroupIssueBoards")
   @js.native
-  class GroupIssueBoards protected () extends ResourceIssueBoards {
+  open class GroupIssueBoards protected () extends ResourceIssueBoards {
     def this(options: BaseServiceOptions) = this()
   }
 }

@@ -34,18 +34,18 @@ object UploadFilter {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
+    inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value*))
     
     inline def setStatus(value: String | js.Array[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value*))
     
     inline def setUuid(value: Double | js.Array[Double]): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     
-    inline def setUuidVarargs(value: Double*): Self = StObject.set(x, "uuid", js.Array(value :_*))
+    inline def setUuidVarargs(value: Double*): Self = StObject.set(x, "uuid", js.Array(value*))
   }
 }

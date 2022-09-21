@@ -6,11 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaGooglePrivacyDlpV2RequestedOptions extends StObject {
   
+  /**
+    * Inspect config.
+    */
   var jobConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectJobConfig] = js.undefined
   
   /**
-    * If run with an InspectTemplate, a snapshot of its state at the time of
-    * this run.
+    * If run with an InspectTemplate, a snapshot of its state at the time of this run.
     */
   var snapshotInspectTemplate: js.UndefOr[SchemaGooglePrivacyDlpV2InspectTemplate] = js.undefined
 }

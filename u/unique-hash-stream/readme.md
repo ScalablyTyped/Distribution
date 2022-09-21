@@ -11,9 +11,9 @@ Remove duplicates from a stream based on a hashing function
 | Full name          | unique-hash-stream |
 | Keywords           | dedupe, unique, stream, hash |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1461 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 60.666666666666664 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/stream-utils/unique-hash-stream)

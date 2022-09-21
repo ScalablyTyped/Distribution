@@ -4,8 +4,8 @@ import typings.react.mod.ChangeEvent
 import typings.react.mod.ClassAttributes
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.reactColor.alphaMod.default
 import typings.reactColor.anon.PartialClassesany
 import typings.reactColor.colorWrapMod.ExportedColorProps
@@ -23,74 +23,74 @@ object mod {
   
   @JSImport("react-color", "AlphaPicker")
   @js.native
-  class AlphaPicker () extends default
+  open class AlphaPicker () extends default
   
   @JSImport("react-color", "BlockPicker")
   @js.native
-  class BlockPicker ()
+  open class BlockPicker ()
     extends typings.reactColor.blockMod.default
   
   @JSImport("react-color", "Checkboard")
   @js.native
-  class Checkboard ()
+  open class Checkboard ()
     extends typings.reactColor.checkboardMod.default
   
   @JSImport("react-color", "ChromePicker")
   @js.native
-  class ChromePicker ()
+  open class ChromePicker ()
     extends typings.reactColor.chromeMod.default
   
   @JSImport("react-color", "CirclePicker")
   @js.native
-  class CirclePicker ()
+  open class CirclePicker ()
     extends typings.reactColor.circleMod.default
   
   @JSImport("react-color", "CompactPicker")
   @js.native
-  class CompactPicker ()
+  open class CompactPicker ()
     extends typings.reactColor.compactMod.default
   
   inline def CustomPicker[A](component: ComponentClass[A & InjectedColorProps, ComponentState]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomPicker")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
-  inline def CustomPicker[A](component: StatelessComponent[A & InjectedColorProps]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomPicker")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
+  inline def CustomPicker[A](component: FunctionComponent[A & InjectedColorProps]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomPicker")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
   
   @JSImport("react-color", "GithubPicker")
   @js.native
-  class GithubPicker ()
+  open class GithubPicker ()
     extends typings.reactColor.githubMod.default
   
   @JSImport("react-color", "HuePicker")
   @js.native
-  class HuePicker ()
+  open class HuePicker ()
     extends typings.reactColor.hueHueMod.default
   
   @JSImport("react-color", "MaterialPicker")
   @js.native
-  class MaterialPicker ()
+  open class MaterialPicker ()
     extends typings.reactColor.materialMod.default
   
   @JSImport("react-color", "PhotoshopPicker")
   @js.native
-  class PhotoshopPicker ()
+  open class PhotoshopPicker ()
     extends typings.reactColor.photoshopMod.default
   
   @JSImport("react-color", "SketchPicker")
   @js.native
-  class SketchPicker ()
+  open class SketchPicker ()
     extends typings.reactColor.sketchMod.default
   
   @JSImport("react-color", "SliderPicker")
   @js.native
-  class SliderPicker ()
+  open class SliderPicker ()
     extends typings.reactColor.sliderMod.default
   
   @JSImport("react-color", "SwatchesPicker")
   @js.native
-  class SwatchesPicker ()
+  open class SwatchesPicker ()
     extends typings.reactColor.swatchesMod.default
   
   @JSImport("react-color", "TwitterPicker")
   @js.native
-  class TwitterPicker ()
+  open class TwitterPicker ()
     extends typings.reactColor.twitterMod.default
   
   /* Rewritten from type alias, can be one of: 

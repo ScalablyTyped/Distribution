@@ -11,7 +11,7 @@ trait SpatialReferenceProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#imageCoordinateSystem)
     */
-  var imageCoordinateSystem: js.UndefOr[js.Any] = js.undefined
+  var imageCoordinateSystem: js.UndefOr[Any] = js.undefined
   
   /**
     * The well-known ID of a spatial reference.
@@ -36,7 +36,7 @@ object SpatialReferenceProperties {
   
   extension [Self <: SpatialReferenceProperties](x: Self) {
     
-    inline def setImageCoordinateSystem(value: js.Any): Self = StObject.set(x, "imageCoordinateSystem", value.asInstanceOf[js.Any])
+    inline def setImageCoordinateSystem(value: Any): Self = StObject.set(x, "imageCoordinateSystem", value.asInstanceOf[js.Any])
     
     inline def setImageCoordinateSystemUndefined: Self = StObject.set(x, "imageCoordinateSystem", js.undefined)
     

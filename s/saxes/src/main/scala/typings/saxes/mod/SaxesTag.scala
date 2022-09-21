@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SaxesTag
   extends StObject
-     with TagForOptions[js.Any] {
+     with TagForOptions[Any] {
   
   /**
     * A map of attribute name to attributes. If namespaces are tracked, the

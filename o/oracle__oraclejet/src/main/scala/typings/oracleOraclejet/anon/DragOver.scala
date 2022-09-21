@@ -32,7 +32,7 @@ object DragOver {
     
     inline def setDataTypesUndefined: Self = StObject.set(x, "dataTypes", js.undefined)
     
-    inline def setDataTypesVarargs(value: String*): Self = StObject.set(x, "dataTypes", js.Array(value :_*))
+    inline def setDataTypesVarargs(value: String*): Self = StObject.set(x, "dataTypes", js.Array(value*))
     
     inline def setDragEnter(value: (/* param0 */ typings.std.Event, /* param1 */ Item) => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
     

@@ -1,84 +1,92 @@
 package typings.kendoUi.global.kendo.ui
 
+import org.scalablytyped.runtime.Instantiable2
+import typings.kendoUi.JQuery
+import typings.kendoUi.anon.TypeofWidget
+import typings.kendoUi.anon.Typeofui
+import typings.kendoUi.anon.TypeofuiActionSheet
+import typings.kendoUi.anon.TypeofuiArcGauge
+import typings.kendoUi.global.kendo.ui.^
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 inline def plugin(
-  widget: typings.kendoUi.anon.TypeofWidget & (org.scalablytyped.runtime.Instantiable2[
-  /* element */ typings.std.Element, 
+  widget: TypeofWidget & (Instantiable2[
+  /* element */ Element, 
   /* options */ js.UndefOr[js.Object], 
   typings.kendoUi.kendo.ui.Widget
 ])
-): scala.Unit = typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def plugin(
-  widget: typings.kendoUi.anon.TypeofWidget & (org.scalablytyped.runtime.Instantiable2[
-  /* element */ typings.std.Element, 
+  widget: TypeofWidget & (Instantiable2[
+  /* element */ Element, 
   /* options */ js.UndefOr[js.Object], 
   typings.kendoUi.kendo.ui.Widget
 ]),
-  register: scala.Unit,
-  prefix: java.lang.String
-): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  register: Unit,
+  prefix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def plugin(
-  widget: typings.kendoUi.anon.TypeofWidget & (org.scalablytyped.runtime.Instantiable2[
-  /* element */ typings.std.Element, 
+  widget: TypeofWidget & (Instantiable2[
+  /* element */ Element, 
   /* options */ js.UndefOr[js.Object], 
   typings.kendoUi.kendo.ui.Widget
 ]),
-  register: typings.kendoUi.anon.Typeofui
-): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  register: Typeofui
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def plugin(
-  widget: typings.kendoUi.anon.TypeofWidget & (org.scalablytyped.runtime.Instantiable2[
-  /* element */ typings.std.Element, 
+  widget: TypeofWidget & (Instantiable2[
+  /* element */ Element, 
   /* options */ js.UndefOr[js.Object], 
   typings.kendoUi.kendo.ui.Widget
 ]),
-  register: typings.kendoUi.anon.TypeofuiActionSheet
-): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  register: TypeofuiActionSheet
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def plugin(
-  widget: typings.kendoUi.anon.TypeofWidget & (org.scalablytyped.runtime.Instantiable2[
-  /* element */ typings.std.Element, 
+  widget: TypeofWidget & (Instantiable2[
+  /* element */ Element, 
   /* options */ js.UndefOr[js.Object], 
   typings.kendoUi.kendo.ui.Widget
 ]),
-  register: typings.kendoUi.anon.TypeofuiActionSheet,
-  prefix: java.lang.String
-): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  register: TypeofuiActionSheet,
+  prefix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def plugin(
-  widget: typings.kendoUi.anon.TypeofWidget & (org.scalablytyped.runtime.Instantiable2[
-  /* element */ typings.std.Element, 
+  widget: TypeofWidget & (Instantiable2[
+  /* element */ Element, 
   /* options */ js.UndefOr[js.Object], 
   typings.kendoUi.kendo.ui.Widget
 ]),
-  register: typings.kendoUi.anon.TypeofuiArcGauge
-): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  register: TypeofuiArcGauge
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def plugin(
-  widget: typings.kendoUi.anon.TypeofWidget & (org.scalablytyped.runtime.Instantiable2[
-  /* element */ typings.std.Element, 
+  widget: TypeofWidget & (Instantiable2[
+  /* element */ Element, 
   /* options */ js.UndefOr[js.Object], 
   typings.kendoUi.kendo.ui.Widget
 ]),
-  register: typings.kendoUi.anon.TypeofuiArcGauge,
-  prefix: java.lang.String
-): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  register: TypeofuiArcGauge,
+  prefix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def plugin(
-  widget: typings.kendoUi.anon.TypeofWidget & (org.scalablytyped.runtime.Instantiable2[
-  /* element */ typings.std.Element, 
+  widget: TypeofWidget & (Instantiable2[
+  /* element */ Element, 
   /* options */ js.UndefOr[js.Object], 
   typings.kendoUi.kendo.ui.Widget
 ]),
-  register: typings.kendoUi.anon.Typeofui,
-  prefix: java.lang.String
-): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def plugin(widget: js.Any): scala.Unit = typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def plugin(widget: js.Any, register: scala.Unit, prefix: java.lang.String): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def plugin(widget: js.Any, register: typings.kendoUi.anon.Typeofui): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def plugin(widget: js.Any, register: typings.kendoUi.anon.TypeofuiActionSheet): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def plugin(widget: js.Any, register: typings.kendoUi.anon.TypeofuiActionSheet, prefix: java.lang.String): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def plugin(widget: js.Any, register: typings.kendoUi.anon.TypeofuiArcGauge): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def plugin(widget: js.Any, register: typings.kendoUi.anon.TypeofuiArcGauge, prefix: java.lang.String): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def plugin(widget: js.Any, register: typings.kendoUi.anon.Typeofui, prefix: java.lang.String): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  register: Typeofui,
+  prefix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def plugin(widget: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def plugin(widget: Any, register: Unit, prefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def plugin(widget: Any, register: Typeofui): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def plugin(widget: Any, register: TypeofuiActionSheet): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def plugin(widget: Any, register: TypeofuiActionSheet, prefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def plugin(widget: Any, register: TypeofuiArcGauge): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def plugin(widget: Any, register: TypeofuiArcGauge, prefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def plugin(widget: Any, register: Typeofui, prefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any], register.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def progress(container: typings.kendoUi.JQuery, toggle: scala.Boolean): scala.Unit = (typings.kendoUi.global.kendo.ui.^.asInstanceOf[js.Dynamic].applyDynamic("progress")(container.asInstanceOf[js.Any], toggle.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def progress(container: JQuery, toggle: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("progress")(container.asInstanceOf[js.Any], toggle.asInstanceOf[js.Any])).asInstanceOf[Unit]

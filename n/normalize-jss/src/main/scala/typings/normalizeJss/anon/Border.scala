@@ -25,10 +25,10 @@ object Border {
     
     inline def setMargin(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    inline def setMarginVarargs(value: js.Array[Double]*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: js.Array[Double]*): Self = StObject.set(x, "margin", js.Array(value*))
     
     inline def setPadding(value: js.Array[js.Array[String]]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    inline def setPaddingVarargs(value: js.Array[String]*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: js.Array[String]*): Self = StObject.set(x, "padding", js.Array(value*))
   }
 }

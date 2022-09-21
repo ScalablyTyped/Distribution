@@ -13,7 +13,7 @@ object arcRotateCameraInputsManagerMod {
     */
   @JSImport("babylonjs/Cameras/arcRotateCameraInputsManager", "ArcRotateCameraInputsManager")
   @js.native
-  class ArcRotateCameraInputsManager protected () extends CameraInputsManager[ArcRotateCamera] {
+  open class ArcRotateCameraInputsManager protected () extends CameraInputsManager[ArcRotateCamera] {
     /**
       * Instantiates a new ArcRotateCameraInputsManager.
       * @param camera Defines the camera the inputs belong to

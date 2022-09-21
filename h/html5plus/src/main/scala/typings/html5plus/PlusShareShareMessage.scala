@@ -95,7 +95,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var pictures: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var pictures: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 分享消息的缩略图
@@ -106,7 +106,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var thumbs: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var thumbs: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 分享消息的标题
@@ -161,17 +161,17 @@ object PlusShareShareMessage {
     
     inline def setMiniProgramUndefined: Self = StObject.set(x, "miniProgram", js.undefined)
     
-    inline def setPictures(value: js.Array[js.Any]): Self = StObject.set(x, "pictures", value.asInstanceOf[js.Any])
+    inline def setPictures(value: js.Array[Any]): Self = StObject.set(x, "pictures", value.asInstanceOf[js.Any])
     
     inline def setPicturesUndefined: Self = StObject.set(x, "pictures", js.undefined)
     
-    inline def setPicturesVarargs(value: js.Any*): Self = StObject.set(x, "pictures", js.Array(value :_*))
+    inline def setPicturesVarargs(value: Any*): Self = StObject.set(x, "pictures", js.Array(value*))
     
-    inline def setThumbs(value: js.Array[js.Any]): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
+    inline def setThumbs(value: js.Array[Any]): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
     
     inline def setThumbsUndefined: Self = StObject.set(x, "thumbs", js.undefined)
     
-    inline def setThumbsVarargs(value: js.Any*): Self = StObject.set(x, "thumbs", js.Array(value :_*))
+    inline def setThumbsVarargs(value: Any*): Self = StObject.set(x, "thumbs", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

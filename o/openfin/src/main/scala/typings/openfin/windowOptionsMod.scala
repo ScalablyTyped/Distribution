@@ -39,7 +39,7 @@ object windowOptionsMod {
     
     var alwaysOnTop: js.UndefOr[Boolean] = js.undefined
     
-    var api: js.UndefOr[js.Any] = js.undefined
+    var api: js.UndefOr[Any] = js.undefined
     
     var appLogFlushInterval: js.UndefOr[Double] = js.undefined
     
@@ -212,7 +212,7 @@ object windowOptionsMod {
       
       inline def setAlwaysOnTopUndefined: Self = StObject.set(x, "alwaysOnTop", js.undefined)
       
-      inline def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
       inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
       
@@ -270,7 +270,7 @@ object windowOptionsMod {
       
       inline def setCustomRequestHeadersUndefined: Self = StObject.set(x, "customRequestHeaders", js.undefined)
       
-      inline def setCustomRequestHeadersVarargs(value: WebRequestHeaderConfig*): Self = StObject.set(x, "customRequestHeaders", js.Array(value :_*))
+      inline def setCustomRequestHeadersVarargs(value: WebRequestHeaderConfig*): Self = StObject.set(x, "customRequestHeaders", js.Array(value*))
       
       inline def setDefaultCentered(value: Boolean): Self = StObject.set(x, "defaultCentered", value.asInstanceOf[js.Any])
       
@@ -360,7 +360,7 @@ object windowOptionsMod {
       
       inline def setHotkeysUndefined: Self = StObject.set(x, "hotkeys", js.undefined)
       
-      inline def setHotkeysVarargs(value: Hotkey*): Self = StObject.set(x, "hotkeys", js.Array(value :_*))
+      inline def setHotkeysVarargs(value: Hotkey*): Self = StObject.set(x, "hotkeys", js.Array(value*))
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -426,7 +426,7 @@ object windowOptionsMod {
       
       inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
-      inline def setPreloadVarargs(value: PreloadScript*): Self = StObject.set(x, "preload", js.Array(value :_*))
+      inline def setPreloadVarargs(value: PreloadScript*): Self = StObject.set(x, "preload", js.Array(value*))
       
       inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       

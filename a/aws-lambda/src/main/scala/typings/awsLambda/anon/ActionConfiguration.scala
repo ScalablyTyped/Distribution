@@ -47,10 +47,10 @@ object ActionConfiguration {
     
     inline def setInputArtifacts(value: js.Array[typings.awsLambda.codepipelineMod.Artifact]): Self = StObject.set(x, "inputArtifacts", value.asInstanceOf[js.Any])
     
-    inline def setInputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
+    inline def setInputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value*))
     
     inline def setOutputArtifacts(value: js.Array[typings.awsLambda.codepipelineMod.Artifact]): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
     
-    inline def setOutputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
+    inline def setOutputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value*))
   }
 }

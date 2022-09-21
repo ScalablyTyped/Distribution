@@ -25,6 +25,6 @@ object AddNumOp {
     
     inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value*))
   }
 }

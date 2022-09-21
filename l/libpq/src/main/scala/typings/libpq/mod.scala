@@ -1,9 +1,8 @@
 package typings.libpq
 
-import typings.buffer.mod.Buffer
 import typings.libpq.libpqBooleans.`true`
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   
   @JSImport("libpq", JSImport.Namespace)
   @js.native
-  class ^ () extends Libpq
+  open class ^ () extends Libpq
   
   @js.native
   trait Libpq extends EventEmitter {
@@ -44,7 +43,7 @@ object mod {
       */
     def cmdTuples(): String = js.native
     
-    def connect(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def connect(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     /**
       * (async) Connects to a PostgreSQL backend server process.
       *
@@ -60,7 +59,7 @@ object mod {
       * @param callback mandatory. It is called when the connection has successfully been
       *                            established.
       */
-    def connect(connectParams: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def connect(connectParams: String, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     /**
       * (sync) Attempts to connect to a PostgreSQL server. BLOCKS until it either succeedes, or

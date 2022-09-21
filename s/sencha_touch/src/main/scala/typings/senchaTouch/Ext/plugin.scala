@@ -13,12 +13,12 @@ object plugin {
     /** [Method] Returns the value of list
       * @returns Object
       */
-    var getList: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getList: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of list
       * @param list Object The new value.
       */
-    var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IBufferedList {
     
@@ -29,11 +29,11 @@ object plugin {
     
     extension [Self <: IBufferedList](x: Self) {
       
-      inline def setGetList(value: () => js.Any): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
+      inline def setGetList(value: () => Any): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
       
       inline def setGetListUndefined: Self = StObject.set(x, "getList", js.undefined)
       
-      inline def setSetList(value: /* list */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setList", js.Any.fromFunction1(value))
+      inline def setSetList(value: /* list */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setList", js.Any.fromFunction1(value))
       
       inline def setSetListUndefined: Self = StObject.set(x, "setList", js.undefined)
     }
@@ -179,7 +179,7 @@ object plugin {
     /** [Method] Returns the value of pullTpl
       * @returns Ext.XTemplate/String/Array
       */
-    var getPullTpl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getPullTpl: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of releaseText
       * @returns String
@@ -229,7 +229,7 @@ object plugin {
     var pullText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.XTemplate/String/Array) */
-    var pullTpl: js.UndefOr[js.Any] = js.undefined
+    var pullTpl: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var releaseText: js.UndefOr[java.lang.String] = js.undefined
@@ -287,7 +287,7 @@ object plugin {
     /** [Method] Sets the value of pullTpl
       * @param pullTpl Ext.XTemplate/String/Array The new value.
       */
-    var setPullTpl: js.UndefOr[js.Function1[/* pullTpl */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setPullTpl: js.UndefOr[js.Function1[/* pullTpl */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Updates the ReleaseRefreshText
       * @param text String
@@ -367,7 +367,7 @@ object plugin {
       
       inline def setGetPullTextUndefined: Self = StObject.set(x, "getPullText", js.undefined)
       
-      inline def setGetPullTpl(value: () => js.Any): Self = StObject.set(x, "getPullTpl", js.Any.fromFunction0(value))
+      inline def setGetPullTpl(value: () => Any): Self = StObject.set(x, "getPullTpl", js.Any.fromFunction0(value))
       
       inline def setGetPullTplUndefined: Self = StObject.set(x, "getPullTpl", js.undefined)
       
@@ -423,7 +423,7 @@ object plugin {
       
       inline def setPullTextUndefined: Self = StObject.set(x, "pullText", js.undefined)
       
-      inline def setPullTpl(value: js.Any): Self = StObject.set(x, "pullTpl", value.asInstanceOf[js.Any])
+      inline def setPullTpl(value: Any): Self = StObject.set(x, "pullTpl", value.asInstanceOf[js.Any])
       
       inline def setPullTplUndefined: Self = StObject.set(x, "pullTpl", js.undefined)
       
@@ -471,7 +471,7 @@ object plugin {
       
       inline def setSetPullTextUndefined: Self = StObject.set(x, "setPullText", js.undefined)
       
-      inline def setSetPullTpl(value: /* pullTpl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPullTpl", js.Any.fromFunction1(value))
+      inline def setSetPullTpl(value: /* pullTpl */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPullTpl", js.Any.fromFunction1(value))
       
       inline def setSetPullTplUndefined: Self = StObject.set(x, "setPullTpl", js.undefined)
       
@@ -517,7 +517,7 @@ object plugin {
     /** [Method] Returns the value of list
       * @returns Object
       */
-    var getList: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getList: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of handleSelector
       * @param handleSelector String The new value.
@@ -527,7 +527,7 @@ object plugin {
     /** [Method] Sets the value of list
       * @param list Object The new value.
       */
-    var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ISortableList {
     
@@ -542,7 +542,7 @@ object plugin {
       
       inline def setGetHandleSelectorUndefined: Self = StObject.set(x, "getHandleSelector", js.undefined)
       
-      inline def setGetList(value: () => js.Any): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
+      inline def setGetList(value: () => Any): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
       
       inline def setGetListUndefined: Self = StObject.set(x, "getList", js.undefined)
       
@@ -550,7 +550,7 @@ object plugin {
       
       inline def setSetHandleSelectorUndefined: Self = StObject.set(x, "setHandleSelector", js.undefined)
       
-      inline def setSetList(value: /* list */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setList", js.Any.fromFunction1(value))
+      inline def setSetList(value: /* list */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setList", js.Any.fromFunction1(value))
       
       inline def setSetListUndefined: Self = StObject.set(x, "setList", js.undefined)
     }

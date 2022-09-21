@@ -1,13 +1,14 @@
 package typings.popperjsCore
 
 import org.scalablytyped.runtime.Shortcut
+import typings.popperjsCore.anon.AltAxis
 import typings.popperjsCore.anon.Placement
 import typings.popperjsCore.enumsMod.Boundary
 import typings.popperjsCore.enumsMod.RootBoundary
 import typings.popperjsCore.popperjsCoreStrings.preventOverflow
 import typings.popperjsCore.typesMod.Modifier
 import typings.popperjsCore.typesMod.Padding
-import typings.std.HTMLElement
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object preventOverflowMod extends Shortcut {
   
   @JSImport("@popperjs/core/lib/modifiers/preventOverflow", JSImport.Default)
   @js.native
-  val default: Modifier[preventOverflow, Options] = js.native
+  val default: PreventOverflowModifier = js.native
   
   trait Options extends StObject {
     
@@ -64,7 +65,7 @@ object preventOverflowMod extends Shortcut {
       
       inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
-      inline def setBoundaryVarargs(value: HTMLElement*): Self = StObject.set(x, "boundary", js.Array(value :_*))
+      inline def setBoundaryVarargs(value: Element*): Self = StObject.set(x, "boundary", js.Array(value*))
       
       inline def setMainAxis(value: Boolean): Self = StObject.set(x, "mainAxis", value.asInstanceOf[js.Any])
       
@@ -76,16 +77,16 @@ object preventOverflowMod extends Shortcut {
       
       inline def setTetherOffset(value: TetherOffset): Self = StObject.set(x, "tetherOffset", value.asInstanceOf[js.Any])
       
-      inline def setTetherOffsetFunction1(value: /* arg0 */ Placement => Double): Self = StObject.set(x, "tetherOffset", js.Any.fromFunction1(value))
+      inline def setTetherOffsetFunction1(value: /* arg0 */ Placement => Double | AltAxis): Self = StObject.set(x, "tetherOffset", js.Any.fromFunction1(value))
     }
   }
   
   type PreventOverflowModifier = Modifier[preventOverflow, Options]
   
-  type TetherOffset = (js.Function1[/* arg0 */ Placement, Double]) | Double
+  type TetherOffset = (js.Function1[/* arg0 */ Placement, Double | AltAxis]) | Double | AltAxis
   
-  type _To = Modifier[preventOverflow, Options]
+  type _To = PreventOverflowModifier
   
   /* This means you don't have to write `default`, but can instead just say `preventOverflowMod.foo` */
-  override def _to: Modifier[preventOverflow, Options] = default
+  override def _to: PreventOverflowModifier = default
 }

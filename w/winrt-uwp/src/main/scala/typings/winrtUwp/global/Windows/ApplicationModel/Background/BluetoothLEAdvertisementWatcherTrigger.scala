@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.BluetoothLEAdvertisementWatcherTrigger")
 @js.native
 /** Creates a new instance of the BluetoothLEAdvertisementWatcherTrigger class. */
-class BluetoothLEAdvertisementWatcherTrigger ()
+open class BluetoothLEAdvertisementWatcherTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.BluetoothLEAdvertisementWatcherTrigger {
   

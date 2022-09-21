@@ -25,7 +25,7 @@ object StrictBounds {
     
     inline def setBoundedByUndefined: Self = StObject.set(x, "boundedBy", js.undefined)
     
-    inline def setBoundedByVarargs(value: js.Array[Double]*): Self = StObject.set(x, "boundedBy", js.Array(value :_*))
+    inline def setBoundedByVarargs(value: js.Array[Double]*): Self = StObject.set(x, "boundedBy", js.Array(value*))
     
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.rcMotion
 
-import typings.rcMotion.anon.Deadline
 import typings.rcMotion.rcMotionStrings.active
 import typings.rcMotion.rcMotionStrings.appear
 import typings.rcMotion.rcMotionStrings.end
@@ -10,9 +9,7 @@ import typings.rcMotion.rcMotionStrings.none
 import typings.rcMotion.rcMotionStrings.prepare
 import typings.rcMotion.rcMotionStrings.start
 import typings.react.mod.CSSProperties
-import typings.std.AnimationEvent
 import typings.std.HTMLElement
-import typings.std.TransitionEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,11 +54,15 @@ object interfaceMod {
   
   type MotionEndEventHandler = js.Function2[/* element */ HTMLElement, /* event */ MotionEvent, Boolean | Unit]
   
-  type MotionEvent = (TransitionEvent | AnimationEvent) & Deadline
+  /* Rewritten from type alias, can be one of: 
+    - typings.rcMotion.anon.TransitionEventdeadlinebo
+    - typings.rcMotion.anon.AnimationEventdeadlineboo
+  */
+  trait MotionEvent extends StObject
   
   type MotionEventHandler = js.Function2[/* element */ HTMLElement, /* event */ MotionEvent, CSSProperties | Unit]
   
-  type MotionPrepareEventHandler = js.Function1[/* element */ HTMLElement, js.Promise[js.Any] | Unit]
+  type MotionPrepareEventHandler = js.Function1[/* element */ HTMLElement, js.Promise[Any] | Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.rcMotion.rcMotionStrings.none

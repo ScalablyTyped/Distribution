@@ -5,11 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Tells Stremio how to obtain the media content.
-  *
-  * It may be torrent info hash, HTTP URL, etc.
-  */
 trait Stream extends StObject {
   
   var behaviorHints: js.UndefOr[CountryWhitelist] = js.undefined
@@ -97,7 +92,7 @@ object Stream {
     
     inline def setSubtitlesUndefined: Self = StObject.set(x, "subtitles", js.undefined)
     
-    inline def setSubtitlesVarargs(value: Subtitle*): Self = StObject.set(x, "subtitles", js.Array(value :_*))
+    inline def setSubtitlesVarargs(value: Subtitle*): Self = StObject.set(x, "subtitles", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -1,41 +1,18 @@
 package typings.pQueue
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.StringDictionary
 import typings.pQueue.queueMod.Queue
 import typings.pQueue.queueMod.RunFunction
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  trait DefaultAddOptions
+  trait Options[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */]
     extends StObject
-       with QueueAddOptions {
-    
-    /**
-      Priority of operation. Operations with greater priority will be scheduled first.
-      @default 0
-      */
-    val priority: js.UndefOr[Double] = js.undefined
-  }
-  object DefaultAddOptions {
-    
-    inline def apply(): DefaultAddOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DefaultAddOptions]
-    }
-    
-    extension [Self <: DefaultAddOptions](x: Self) {
-      
-      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
-      
-      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
-    }
-  }
-  
-  trait Options[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */] extends StObject {
+       with TimeoutOptions {
     
     /**
       Whether queue tasks within concurrency limit, are auto-executed as soon as they're added.
@@ -74,17 +51,6 @@ object optionsMod {
       Class with a `enqueue` and `dequeue` method, and a `size` getter. See the [Custom QueueClass](https://github.com/sindresorhus/p-queue#custom-queueclass) section.
       */
     val queueClass: js.UndefOr[Instantiable0[QueueType]] = js.undefined
-    
-    /**
-      Whether or not a timeout is considered an exception.
-      @default false
-      */
-    var throwOnTimeout: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      Per-operation timeout in milliseconds. Operations fulfill once `timeout` elapses if they haven't already.
-      */
-    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -118,6 +84,104 @@ object optionsMod {
       inline def setQueueClass(value: Instantiable0[QueueType]): Self = StObject.set(x, "queueClass", value.asInstanceOf[js.Any])
       
       inline def setQueueClassUndefined: Self = StObject.set(x, "queueClass", js.undefined)
+    }
+  }
+  
+  trait QueueAddOptions
+    extends StObject
+       with TaskOptions
+       with TimeoutOptions {
+    
+    /**
+      Priority of operation. Operations with greater priority will be scheduled first.
+      @default 0
+      */
+    val priority: js.UndefOr[Double] = js.undefined
+  }
+  object QueueAddOptions {
+    
+    inline def apply(): QueueAddOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QueueAddOptions]
+    }
+    
+    extension [Self <: QueueAddOptions](x: Self) {
+      
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    }
+  }
+  
+  trait TaskOptions extends StObject {
+    
+    /**
+      [`AbortSignal`](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) for cancellation of the operation. When aborted, it will be removed from the queue and the `queue.add()` call will reject with an `AbortError`. If the operation is already running, the signal will need to be handled by the operation itself.
+      @example
+      ```
+      import PQueue, {AbortError} from 'p-queue';
+      import got, {CancelError} from 'got';
+      const queue = new PQueue();
+      const controller = new AbortController();
+      try {
+      await queue.add(({signal}) => {
+      const request = got('https://sindresorhus.com');
+      signal.addEventListener('abort', () => {
+      request.cancel();
+      });
+      try {
+      return await request;
+      } catch (error) {
+      if (!(error instanceof CancelError)) {
+      throw error;
+      }
+      }
+      }, {signal: controller.signal});
+      } catch (error) {
+      if (!(error instanceof AbortError)) {
+      throw error;
+      }
+      }
+      ```
+      */
+    val signal: js.UndefOr[AbortSignal] = js.undefined
+  }
+  object TaskOptions {
+    
+    inline def apply(): TaskOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TaskOptions]
+    }
+    
+    extension [Self <: TaskOptions](x: Self) {
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    }
+  }
+  
+  trait TimeoutOptions extends StObject {
+    
+    /**
+      Whether or not a timeout is considered an exception.
+      @default false
+      */
+    var throwOnTimeout: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      Per-operation timeout in milliseconds. Operations fulfill once `timeout` elapses if they haven't already.
+      */
+    var timeout: js.UndefOr[Double] = js.undefined
+  }
+  object TimeoutOptions {
+    
+    inline def apply(): TimeoutOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TimeoutOptions]
+    }
+    
+    extension [Self <: TimeoutOptions](x: Self) {
       
       inline def setThrowOnTimeout(value: Boolean): Self = StObject.set(x, "throwOnTimeout", value.asInstanceOf[js.Any])
       
@@ -128,6 +192,4 @@ object optionsMod {
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
-  
-  type QueueAddOptions = StringDictionary[js.Any]
 }

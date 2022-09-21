@@ -12,9 +12,19 @@ trait TransitGatewayPeeringAttachment extends StObject {
   var AccepterTgwInfo: js.UndefOr[PeeringTgwInfo] = js.undefined
   
   /**
+    * The ID of the accepter transit gateway attachment.
+    */
+  var AccepterTransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
+  
+  /**
     * The time the transit gateway peering attachment was created.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Details about the transit gateway peering attachment.
+    */
+  var Options: js.UndefOr[TransitGatewayPeeringAttachmentOptions] = js.undefined
   
   /**
     * Information about the requester transit gateway.
@@ -54,9 +64,17 @@ object TransitGatewayPeeringAttachment {
     
     inline def setAccepterTgwInfoUndefined: Self = StObject.set(x, "AccepterTgwInfo", js.undefined)
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setAccepterTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "AccepterTransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    
+    inline def setAccepterTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "AccepterTransitGatewayAttachmentId", js.undefined)
+    
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    
+    inline def setOptions(value: TransitGatewayPeeringAttachmentOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     inline def setRequesterTgwInfo(value: PeeringTgwInfo): Self = StObject.set(x, "RequesterTgwInfo", value.asInstanceOf[js.Any])
     
@@ -74,7 +92,7 @@ object TransitGatewayPeeringAttachment {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     

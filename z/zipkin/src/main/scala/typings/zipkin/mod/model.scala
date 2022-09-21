@@ -10,7 +10,7 @@ object model {
   
   @JSImport("zipkin", "model.Endpoint")
   @js.native
-  class Endpoint protected () extends StObject {
+  open class Endpoint protected () extends StObject {
     def this(args: Ipv4) = this()
     
     def isEmpty(): Boolean = js.native
@@ -24,7 +24,7 @@ object model {
   
   @JSImport("zipkin", "model.Span")
   @js.native
-  class Span protected () extends StObject {
+  open class Span protected () extends StObject {
     def this(traceId: TraceId) = this()
     
     def addAnnotation(timestamp: Double, value: String): Unit = js.native

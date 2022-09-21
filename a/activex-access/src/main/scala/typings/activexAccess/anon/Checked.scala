@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Checked extends StObject {
   
-  val Checked: js.Any
+  val Checked: Any
   
-  val Command: js.Any
+  val Command: Any
 }
 object Checked {
   
-  inline def apply(Checked: js.Any, Command: js.Any): Checked = {
+  inline def apply(Checked: Any, Command: Any): Checked = {
     val __obj = js.Dynamic.literal(Checked = Checked.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any])
     __obj.asInstanceOf[Checked]
   }
   
   extension [Self <: Checked](x: Self) {
     
-    inline def setChecked(value: js.Any): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Any): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
     
-    inline def setCommand(value: js.Any): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Any): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
   }
 }

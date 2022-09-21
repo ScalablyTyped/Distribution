@@ -1,18 +1,17 @@
 package typings.squareConnect.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CancelPaymentResponse")
 @js.native
-class CancelPaymentResponse () extends StObject {
+open class CancelPaymentResponse () extends StObject {
   
   /**
     * Information about errors encountered during the request.
     */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[js.Error]] = js.native
   
   /**
     * The successfully canceled `Payment` object.

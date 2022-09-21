@@ -24,6 +24,8 @@ trait DOMContainer extends StObject {
   /**
     * The height of the view in pixels read from the view container element.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#height)
     */
   val height: Double
@@ -37,6 +39,8 @@ trait DOMContainer extends StObject {
   
   /**
     * Indicates if the view is being resized.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#resizing)
     */
@@ -52,6 +56,8 @@ trait DOMContainer extends StObject {
   /**
     * Indicates if the view is visible on the page.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#suspended)
     */
   val suspended: Boolean
@@ -65,6 +71,8 @@ trait DOMContainer extends StObject {
   
   /**
     * The width of the view in pixels read from the view container element.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#width)
     */
@@ -101,7 +109,7 @@ object DOMContainer {
     
     inline def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
     
     inline def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     

@@ -11,13 +11,12 @@ object calloutCalloutMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Callout/Callout", "Callout")
   @js.native
-  class Callout protected ()
-    extends Component[ICalloutProps, ICalloutState, js.Any] {
+  open class Callout protected () extends Component[ICalloutProps, ICalloutState, Any] {
     def this(props: ICalloutProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ICalloutProps, context: js.Any) = this()
+    def this(props: ICalloutProps, context: Any) = this()
   }
 }

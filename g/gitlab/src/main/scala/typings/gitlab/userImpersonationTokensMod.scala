@@ -13,7 +13,7 @@ object userImpersonationTokensMod {
   
   @JSImport("gitlab/dist/types/core/services/UserImpersonationTokens", "UserImpersonationTokens")
   @js.native
-  class UserImpersonationTokens () extends BaseService {
+  open class UserImpersonationTokens () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def add(userId: Double, name: String, scopes: ImpersonationTokenScope, expiresAt: String): js.Promise[js.Object] = js.native

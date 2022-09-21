@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.eventsPbMod.Event
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionToCommit")
 @js.native
-class TransactionToCommit () extends Message {
+open class TransactionToCommit () extends Message {
   
   def addAccountStates(): AccountState = js.native
   def addAccountStates(value: Unit, index: Double): AccountState = js.native
@@ -58,7 +57,7 @@ object TransactionToCommit {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): TransactionToCommit = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionToCommit]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): TransactionToCommit = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionToCommit]
   
   inline def deserializeBinaryFromReader(message: TransactionToCommit, reader: BinaryReader): TransactionToCommit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionToCommit]
   
@@ -102,11 +101,11 @@ object TransactionToCommit {
       
       inline def setAccountStatesList(value: js.Array[typings.libraCore.transactionPbMod.AccountState.AsObject]): Self = StObject.set(x, "accountStatesList", value.asInstanceOf[js.Any])
       
-      inline def setAccountStatesListVarargs(value: typings.libraCore.transactionPbMod.AccountState.AsObject*): Self = StObject.set(x, "accountStatesList", js.Array(value :_*))
+      inline def setAccountStatesListVarargs(value: typings.libraCore.transactionPbMod.AccountState.AsObject*): Self = StObject.set(x, "accountStatesList", js.Array(value*))
       
       inline def setEventsList(value: js.Array[typings.libraCore.eventsPbMod.Event.AsObject]): Self = StObject.set(x, "eventsList", value.asInstanceOf[js.Any])
       
-      inline def setEventsListVarargs(value: typings.libraCore.eventsPbMod.Event.AsObject*): Self = StObject.set(x, "eventsList", js.Array(value :_*))
+      inline def setEventsListVarargs(value: typings.libraCore.eventsPbMod.Event.AsObject*): Self = StObject.set(x, "eventsList", js.Array(value*))
       
       inline def setGasUsed(value: String): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       

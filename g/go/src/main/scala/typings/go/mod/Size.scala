@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The default constructor produces the Size(0,0).
   */
-class Size () extends StObject {
+open class Size () extends StObject {
   /**
     * The two-argument constructor produces the Size(w,h).
     * @param {number} w this number must not be negative.

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Brief description of the live stream status.
-  */
 trait SchemaLiveStreamStatus extends StObject {
   
   /**
@@ -14,7 +11,7 @@ trait SchemaLiveStreamStatus extends StObject {
     */
   var healthStatus: js.UndefOr[SchemaLiveStreamHealthStatus] = js.undefined
   
-  var streamStatus: js.UndefOr[String] = js.undefined
+  var streamStatus: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLiveStreamStatus {
   
@@ -30,6 +27,8 @@ object SchemaLiveStreamStatus {
     inline def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
     
     inline def setStreamStatus(value: String): Self = StObject.set(x, "streamStatus", value.asInstanceOf[js.Any])
+    
+    inline def setStreamStatusNull: Self = StObject.set(x, "streamStatus", null)
     
     inline def setStreamStatusUndefined: Self = StObject.set(x, "streamStatus", js.undefined)
   }

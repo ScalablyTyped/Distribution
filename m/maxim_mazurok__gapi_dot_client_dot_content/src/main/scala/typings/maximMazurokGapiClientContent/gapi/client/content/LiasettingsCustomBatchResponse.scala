@@ -9,7 +9,7 @@ trait LiasettingsCustomBatchResponse extends StObject {
   /** The result of the execution of the batch requests. */
   var entries: js.UndefOr[js.Array[LiasettingsCustomBatchResponseEntry]] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#liasettingsCustomBatchResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#liasettingsCustomBatchResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object LiasettingsCustomBatchResponse {
@@ -25,7 +25,7 @@ object LiasettingsCustomBatchResponse {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: LiasettingsCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: LiasettingsCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

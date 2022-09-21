@@ -29,7 +29,7 @@ object XAutoStylesSupplier {
     AutoStyles: XAutoStyles,
     acquire: () => Unit,
     getAutoStyles: () => XAutoStyles,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAutoStylesSupplier = {
     val __obj = js.Dynamic.literal(AutoStyles = AutoStyles.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAutoStyles = js.Any.fromFunction0(getAutoStyles), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

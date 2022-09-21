@@ -1,6 +1,5 @@
 package typings.awsSdkClientDynamodbNode
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +11,12 @@ object typesProvisionedThroughputDescriptionMod {
     /**
       * <p>The date and time of the last provisioned throughput decrease for this table.</p>
       */
-    var LastDecreaseDateTime: js.UndefOr[Date | String | Double] = js.undefined
+    var LastDecreaseDateTime: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The date and time of the last provisioned throughput increase for this table.</p>
       */
-    var LastIncreaseDateTime: js.UndefOr[Date | String | Double] = js.undefined
+    var LastIncreaseDateTime: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The number of provisioned throughput decreases for this table during this UTC calendar day. For current maximums on provisioned throughput decreases, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html">Limits</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
@@ -43,11 +42,11 @@ object typesProvisionedThroughputDescriptionMod {
     
     extension [Self <: ProvisionedThroughputDescription](x: Self) {
       
-      inline def setLastDecreaseDateTime(value: Date | String | Double): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastDecreaseDateTime(value: js.Date | String | Double): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
       
       inline def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
       
-      inline def setLastIncreaseDateTime(value: Date | String | Double): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastIncreaseDateTime(value: js.Date | String | Double): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
       
       inline def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
       
@@ -73,13 +72,13 @@ object typesProvisionedThroughputDescriptionMod {
       * <p>The date and time of the last provisioned throughput decrease for this table.</p>
       */
     @JSName("LastDecreaseDateTime")
-    var LastDecreaseDateTime_UnmarshalledProvisionedThroughputDescription: js.UndefOr[Date] = js.undefined
+    var LastDecreaseDateTime_UnmarshalledProvisionedThroughputDescription: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The date and time of the last provisioned throughput increase for this table.</p>
       */
     @JSName("LastIncreaseDateTime")
-    var LastIncreaseDateTime_UnmarshalledProvisionedThroughputDescription: js.UndefOr[Date] = js.undefined
+    var LastIncreaseDateTime_UnmarshalledProvisionedThroughputDescription: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledProvisionedThroughputDescription {
     
@@ -90,11 +89,11 @@ object typesProvisionedThroughputDescriptionMod {
     
     extension [Self <: UnmarshalledProvisionedThroughputDescription](x: Self) {
       
-      inline def setLastDecreaseDateTime(value: Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastDecreaseDateTime(value: js.Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
       
       inline def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
       
-      inline def setLastIncreaseDateTime(value: Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastIncreaseDateTime(value: js.Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
       
       inline def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
     }

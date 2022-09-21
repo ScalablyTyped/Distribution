@@ -10,10 +10,10 @@ object swapVertMod {
   
   @JSImport("material-ui/svg-icons/action/swap-vert", JSImport.Default)
   @js.native
-  class default () extends ActionSwapVert
+  open class default () extends ActionSwapVert
   
   @JSImport("material-ui/svg-icons/action/swap-vert", "ActionSwapVert")
   @js.native
-  class ActionSwapVert ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSwapVert ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

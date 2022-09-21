@@ -11,7 +11,7 @@ object nameAddrHeaderMod {
   
   @JSImport("sip.js/lib/grammar/name-addr-header", "NameAddrHeader")
   @js.native
-  class NameAddrHeader protected () extends Parameters {
+  open class NameAddrHeader protected () extends Parameters {
     /**
       * Constructor
       * @param uri -
@@ -20,7 +20,7 @@ object nameAddrHeaderMod {
       */
     def this(uri: URI, displayName: String, parameters: StringDictionary[String]) = this()
     
-    /* private */ var _displayName: js.Any = js.native
+    /* private */ var _displayName: Any = js.native
     
     def displayName: String = js.native
     def displayName_=(value: String): Unit = js.native

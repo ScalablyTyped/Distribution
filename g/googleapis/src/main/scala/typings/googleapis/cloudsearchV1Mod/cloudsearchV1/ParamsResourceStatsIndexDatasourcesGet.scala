@@ -1,9 +1,5 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceStatsIndexDatasourcesGet
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Day of month. Must be from 1 to 31 and valid for the year and month.
@@ -36,8 +27,7 @@ trait ParamsResourceStatsIndexDatasourcesGet
   var fromDateDotyear: js.UndefOr[Double] = js.undefined
   
   /**
-    * The resource id of the data source to retrieve statistics for, in the
-    * following format: "datasources/{source_id}"
+    * The resource id of the data source to retrieve statistics for, in the following format: "datasources/{source_id\}"
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -67,10 +57,6 @@ object ParamsResourceStatsIndexDatasourcesGet {
   }
   
   extension [Self <: ParamsResourceStatsIndexDatasourcesGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFromDateDotday(value: Double): Self = StObject.set(x, "fromDate.day", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.materialTabBar
 
+import typings.materialBase.Element
 import typings.materialTabBar.anon.PartialMDCTabBarAdapter
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("@material/tab-bar", "MDCTabBar")
   @js.native
-  class MDCTabBar protected ()
+  open class MDCTabBar protected ()
     extends typings.materialTabBar.componentMod.MDCTabBar {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: typings.materialTabBar.foundationMod.MDCTabBarFoundation, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: typings.materialTabBar.foundationMod.MDCTabBarFoundation, args: Any*) = this()
   }
   /* static members */
   object MDCTabBar {
@@ -22,12 +22,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialTabBar.componentMod.MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabBar.componentMod.MDCTabBar]
+    inline def attachTo(root: typings.std.Element): typings.materialTabBar.componentMod.MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabBar.componentMod.MDCTabBar]
   }
   
   @JSImport("@material/tab-bar", "MDCTabBarFoundation")
   @js.native
-  class MDCTabBarFoundation ()
+  open class MDCTabBarFoundation ()
     extends typings.materialTabBar.foundationMod.MDCTabBarFoundation {
     def this(adapter: PartialMDCTabBarAdapter) = this()
   }
@@ -74,28 +74,6 @@ object mod {
     inline def SPACE_KEYCODE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE_KEYCODE")(x.asInstanceOf[js.Any])
   }
   
-  /**
-    * @license
-    * Copyright 2018 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object strings {
     
     @JSImport("@material/tab-bar", "strings")

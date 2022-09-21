@@ -10,10 +10,10 @@ Prebuilt yoga-layout package
 | ------------------ | :-------------: |
 | Full name          | yoga-layout-prebuilt |
 | Keywords           | yoga, yoga-layout |
-| # releases         | 5 |
-| # dependents       | 30 |
-| # downloads        | 18297048 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3246325.3333333335 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/vadimdemedes/yoga-layout-prebuilt#readme)

@@ -19,9 +19,5 @@ object layoutsizeParseMod {
   
   inline def parseLayerLayoutSize(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLayerLayoutSize")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/compile/layoutsize/parse", "parseRepeatLayoutSize")
-  @js.native
-  val parseRepeatLayoutSize: js.Function1[/* model */ ConcatModel, Unit] = js.native
-  
   inline def parseUnitLayoutSize(model: UnitModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUnitLayoutSize")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

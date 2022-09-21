@@ -26,14 +26,14 @@ object gapi {
     extends StObject
        with CallbackOrConfig {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   trait LoadConfig
     extends StObject
        with CallbackOrConfig {
     
-    def callback(args: js.Any*): Unit
+    def callback(args: Any*): Unit
     @JSName("callback")
     var callback_Original: LoadCallback
     
@@ -78,14 +78,14 @@ object gapi {
         * @param httpRequest The HTTP request to add to this batch.
         * @param opt_params extra parameters for this batch entry.
         */
-      def add(httpRequest: HttpRequest[js.Any]): Unit = js.native
-      def add(httpRequest: HttpRequest[js.Any], opt_params: Callback): Unit = js.native
+      def add(httpRequest: HttpRequest[Any]): Unit = js.native
+      def add(httpRequest: HttpRequest[Any], opt_params: Callback): Unit = js.native
       
       /**
         * Executes all requests in the batch. The supplied callback is executed on success or failure.
         * @param callback The callback to execute when the batch returns.
         */
-      def execute(callback: js.Function2[/* responseMap */ js.Any, /* rawBatchResponse */ String, js.Any]): Unit = js.native
+      def execute(callback: js.Function2[/* responseMap */ Any, /* rawBatchResponse */ String, Any]): Unit = js.native
     }
     
     @js.native
@@ -97,14 +97,14 @@ object gapi {
         * Executes the request and runs the supplied callback on response.
         * @param callback The callback function which executes when the request succeeds or fails.
         */
-      def execute(callback: js.Function2[/* jsonResp */ T, /* rawResp */ Body, js.Any]): Unit = js.native
+      def execute(callback: js.Function2[/* jsonResp */ T, /* rawResp */ Body, Any]): Unit = js.native
     }
     
     trait HttpRequestFulfilled[T] extends StObject {
       
       var body: String
       
-      var headers: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var headers: js.UndefOr[js.Array[Any]] = js.undefined
       
       var result: T
       
@@ -123,11 +123,11 @@ object gapi {
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: js.Array[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
         inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+        inline def setHeadersVarargs(value: Any*): Self = StObject.set(x, "headers", js.Array(value*))
         
         inline def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         
@@ -160,17 +160,17 @@ object gapi {
       def `then`[TResult1, TResult2](
         onfulfilled: js.Function1[/* response */ HttpRequestFulfilled[T], TResult1 | js.Thenable[TResult1]],
         onrejected: js.Function1[/* reason */ HttpRequestRejected, TResult2 | js.Thenable[TResult2]],
-        opt_context: js.Any
+        opt_context: Any
       ): js.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
         onfulfilled: js.Function1[/* response */ HttpRequestFulfilled[T], TResult1 | js.Thenable[TResult1]],
         onrejected: Null,
-        opt_context: js.Any
+        opt_context: Any
       ): js.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
         onfulfilled: js.Function1[/* response */ HttpRequestFulfilled[T], TResult1 | js.Thenable[TResult1]],
         onrejected: Unit,
-        opt_context: js.Any
+        opt_context: Any
       ): js.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
         onfulfilled: Null,
@@ -179,10 +179,10 @@ object gapi {
       def `then`[TResult1, TResult2](
         onfulfilled: Null,
         onrejected: js.Function1[/* reason */ HttpRequestRejected, TResult2 | js.Thenable[TResult2]],
-        opt_context: js.Any
+        opt_context: Any
       ): js.Promise[TResult1 | TResult2] = js.native
-      def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: Null, opt_context: js.Any): js.Promise[TResult1 | TResult2] = js.native
-      def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: Unit, opt_context: js.Any): js.Promise[TResult1 | TResult2] = js.native
+      def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: Null, opt_context: Any): js.Promise[TResult1 | TResult2] = js.native
+      def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: Unit, opt_context: Any): js.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
         onfulfilled: Unit,
         onrejected: js.Function1[/* reason */ HttpRequestRejected, TResult2 | js.Thenable[TResult2]]
@@ -190,19 +190,19 @@ object gapi {
       def `then`[TResult1, TResult2](
         onfulfilled: Unit,
         onrejected: js.Function1[/* reason */ HttpRequestRejected, TResult2 | js.Thenable[TResult2]],
-        opt_context: js.Any
+        opt_context: Any
       ): js.Promise[TResult1 | TResult2] = js.native
-      def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: Null, opt_context: js.Any): js.Promise[TResult1 | TResult2] = js.native
-      def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: Unit, opt_context: js.Any): js.Promise[TResult1 | TResult2] = js.native
+      def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: Null, opt_context: Any): js.Promise[TResult1 | TResult2] = js.native
+      def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: Unit, opt_context: Any): js.Promise[TResult1 | TResult2] = js.native
     }
     
     trait HttpRequestRejected extends StObject {
       
       var body: String
       
-      var headers: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var headers: js.UndefOr[js.Array[Any]] = js.undefined
       
-      var result: js.Any | Boolean
+      var result: Any | Boolean
       
       var status: js.UndefOr[Double] = js.undefined
       
@@ -210,7 +210,7 @@ object gapi {
     }
     object HttpRequestRejected {
       
-      inline def apply(body: String, result: js.Any | Boolean): HttpRequestRejected = {
+      inline def apply(body: String, result: Any | Boolean): HttpRequestRejected = {
         val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
         __obj.asInstanceOf[HttpRequestRejected]
       }
@@ -219,13 +219,13 @@ object gapi {
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: js.Array[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
         inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+        inline def setHeadersVarargs(value: Any*): Self = StObject.set(x, "headers", js.Array(value*))
         
-        inline def setResult(value: js.Any | Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+        inline def setResult(value: Any | Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         
         inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
@@ -242,17 +242,17 @@ object gapi {
       /**
         * The HTTP request body (applies to PUT or POST).
         */
-      var body: js.UndefOr[js.Any] = js.undefined
+      var body: js.UndefOr[Any] = js.undefined
       
       /**
         * If supplied, the request is executed immediately and no gapi.client.HttpRequest object is returned
         */
-      var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var callback: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /**
         * Additional HTTP request headers
         */
-      var headers: js.UndefOr[js.Any] = js.undefined
+      var headers: js.UndefOr[Any] = js.undefined
       
       /**
         * The HTTP request method to use. Default is GET
@@ -262,7 +262,7 @@ object gapi {
       /**
         * URL params in key-value pair form
         */
-      var params: js.UndefOr[js.Any] = js.undefined
+      var params: js.UndefOr[Any] = js.undefined
       
       /**
         * The URL to handle the request
@@ -278,15 +278,15 @@ object gapi {
       
       extension [Self <: RequestOptions](x: Self) {
         
-        inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
         inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         
-        inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+        inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
         
         inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
-        inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
         inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
@@ -294,7 +294,7 @@ object gapi {
         
         inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
         
-        inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
         inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
@@ -308,18 +308,18 @@ object gapi {
         * Executes the request and runs the supplied callback with the response.
         * @param callback The callback function which executes when the request succeeds or fails.
         */
-      def callback(callback: js.Function2[/* jsonResp */ js.Any, /* rawResp */ String, Unit]): Unit
+      def callback(callback: js.Function2[/* jsonResp */ Any, /* rawResp */ String, Unit]): Unit
     }
     object RpcRequest {
       
-      inline def apply(callback: js.Function2[/* jsonResp */ js.Any, /* rawResp */ String, Unit] => Unit): RpcRequest = {
+      inline def apply(callback: js.Function2[/* jsonResp */ Any, /* rawResp */ String, Unit] => Unit): RpcRequest = {
         val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback))
         __obj.asInstanceOf[RpcRequest]
       }
       
       extension [Self <: RpcRequest](x: Self) {
         
-        inline def setCallback(value: js.Function2[/* jsonResp */ js.Any, /* rawResp */ String, Unit] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+        inline def setCallback(value: js.Function2[/* jsonResp */ Any, /* rawResp */ String, Unit] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       }
     }
     

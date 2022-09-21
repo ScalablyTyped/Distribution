@@ -19,12 +19,22 @@ trait LoggingStatus extends StObject {
   /**
     * The last time when logs failed to be delivered.
     */
-  var LastFailureTime: js.UndefOr[TStamp] = js.undefined
+  var LastFailureTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last time that logs were delivered.
     */
-  var LastSuccessfulDeliveryTime: js.UndefOr[TStamp] = js.undefined
+  var LastSuccessfulDeliveryTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The log destination type. An enum with possible values of s3 and cloudwatch.
+    */
+  var LogDestinationType: js.UndefOr[typings.awsSdk.redshiftMod.LogDestinationType] = js.undefined
+  
+  /**
+    * The collection of exported log types. Log types include the connection log, user log and user activity log.
+    */
+  var LogExports: js.UndefOr[LogTypeList] = js.undefined
   
   /**
     *  true if logging is on, false if logging is off.
@@ -53,13 +63,23 @@ object LoggingStatus {
     
     inline def setLastFailureMessageUndefined: Self = StObject.set(x, "LastFailureMessage", js.undefined)
     
-    inline def setLastFailureTime(value: TStamp): Self = StObject.set(x, "LastFailureTime", value.asInstanceOf[js.Any])
+    inline def setLastFailureTime(value: js.Date): Self = StObject.set(x, "LastFailureTime", value.asInstanceOf[js.Any])
     
     inline def setLastFailureTimeUndefined: Self = StObject.set(x, "LastFailureTime", js.undefined)
     
-    inline def setLastSuccessfulDeliveryTime(value: TStamp): Self = StObject.set(x, "LastSuccessfulDeliveryTime", value.asInstanceOf[js.Any])
+    inline def setLastSuccessfulDeliveryTime(value: js.Date): Self = StObject.set(x, "LastSuccessfulDeliveryTime", value.asInstanceOf[js.Any])
     
     inline def setLastSuccessfulDeliveryTimeUndefined: Self = StObject.set(x, "LastSuccessfulDeliveryTime", js.undefined)
+    
+    inline def setLogDestinationType(value: LogDestinationType): Self = StObject.set(x, "LogDestinationType", value.asInstanceOf[js.Any])
+    
+    inline def setLogDestinationTypeUndefined: Self = StObject.set(x, "LogDestinationType", js.undefined)
+    
+    inline def setLogExports(value: LogTypeList): Self = StObject.set(x, "LogExports", value.asInstanceOf[js.Any])
+    
+    inline def setLogExportsUndefined: Self = StObject.set(x, "LogExports", js.undefined)
+    
+    inline def setLogExportsVarargs(value: String*): Self = StObject.set(x, "LogExports", js.Array(value*))
     
     inline def setLoggingEnabled(value: Boolean): Self = StObject.set(x, "LoggingEnabled", value.asInstanceOf[js.Any])
     

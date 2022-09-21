@@ -10,10 +10,10 @@ Communicate with a Web Worker using Promises
 | ------------------ | :-------------: |
 | Full name          | promise-worker |
 | Keywords           | web worker, promise, webworker, worker |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 498776 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 62390.333333333336 |
+| # stars            | 448.0 |
 
 ## Links
 - [Homepage](https://github.com/nolanlawson/promise-worker#readme)

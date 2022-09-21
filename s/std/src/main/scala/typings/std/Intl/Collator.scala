@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Collator extends StObject {
   
+  /* standard es5 */
   def compare(x: String, y: String): Double
   
+  /* standard es5 */
   def resolvedOptions(): ResolvedCollatorOptions
 }
 object Collator {

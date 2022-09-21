@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "Button")
 @js.native
-class Button protected () extends _MDLComponent[StandardButtonProps] {
+open class Button protected () extends _MDLComponent[StandardButtonProps] {
   def this(props: StandardButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: StandardButtonProps, context: js.Any) = this()
+  def this(props: StandardButtonProps, context: Any) = this()
 }

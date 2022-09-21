@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RefinementControl extends StObject {
   
-  var alternateRenderContext: js.Any
+  var alternateRenderContext: Any
   
-  var alternateRenderer: js.Any
+  var alternateRenderer: Any
   
   var containerId: String
   
@@ -29,8 +29,8 @@ trait RefinementControl extends StObject {
 object RefinementControl {
   
   inline def apply(
-    alternateRenderContext: js.Any,
-    alternateRenderer: js.Any,
+    alternateRenderContext: Any,
+    alternateRenderer: Any,
     containerId: String,
     countDisplay: String,
     deepHits: Double,
@@ -46,9 +46,9 @@ object RefinementControl {
   
   extension [Self <: RefinementControl](x: Self) {
     
-    inline def setAlternateRenderContext(value: js.Any): Self = StObject.set(x, "alternateRenderContext", value.asInstanceOf[js.Any])
+    inline def setAlternateRenderContext(value: Any): Self = StObject.set(x, "alternateRenderContext", value.asInstanceOf[js.Any])
     
-    inline def setAlternateRenderer(value: js.Any): Self = StObject.set(x, "alternateRenderer", value.asInstanceOf[js.Any])
+    inline def setAlternateRenderer(value: Any): Self = StObject.set(x, "alternateRenderer", value.asInstanceOf[js.Any])
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

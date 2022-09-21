@@ -1,6 +1,7 @@
 package typings.jasmine.jasmine
 
 import typings.std.Parameters
+import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,6 +34,9 @@ trait Calls[Fn /* <: Func */] extends StObject {
   
   /** Set this spy to do a shallow clone of arguments passed to each invocation. */
   def saveArgumentsByValue(): Unit
+  
+  /** Get the "this" object that was passed to a specific invocation of this spy. */
+  def thisFor(index: Double): ThisType[Fn]
 }
 object Calls {
   
@@ -45,9 +49,10 @@ object Calls {
     first: () => CallInfo[Fn],
     mostRecent: () => CallInfo[Fn],
     reset: () => Unit,
-    saveArgumentsByValue: () => Unit
+    saveArgumentsByValue: () => Unit,
+    thisFor: Double => ThisType[Fn]
   ): Calls[Fn] = {
-    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allArgs = js.Any.fromFunction0(allArgs), any = js.Any.fromFunction0(any), argsFor = js.Any.fromFunction1(argsFor), count = js.Any.fromFunction0(count), first = js.Any.fromFunction0(first), mostRecent = js.Any.fromFunction0(mostRecent), reset = js.Any.fromFunction0(reset), saveArgumentsByValue = js.Any.fromFunction0(saveArgumentsByValue))
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), allArgs = js.Any.fromFunction0(allArgs), any = js.Any.fromFunction0(any), argsFor = js.Any.fromFunction1(argsFor), count = js.Any.fromFunction0(count), first = js.Any.fromFunction0(first), mostRecent = js.Any.fromFunction0(mostRecent), reset = js.Any.fromFunction0(reset), saveArgumentsByValue = js.Any.fromFunction0(saveArgumentsByValue), thisFor = js.Any.fromFunction1(thisFor))
     __obj.asInstanceOf[Calls[Fn]]
   }
   
@@ -70,5 +75,7 @@ object Calls {
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     inline def setSaveArgumentsByValue(value: () => Unit): Self = StObject.set(x, "saveArgumentsByValue", js.Any.fromFunction0(value))
+    
+    inline def setThisFor(value: Double => ThisType[Fn]): Self = StObject.set(x, "thisFor", js.Any.fromFunction1(value))
   }
 }

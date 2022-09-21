@@ -15,13 +15,13 @@ trait RangyRange
   
   def canSurroundContents(): Boolean = js.native
   
-  def collapseAfter(node: Node): js.Any = js.native
+  def collapseAfter(node: Node): Any = js.native
   
-  def collapseBefore(node: Node): js.Any = js.native
+  def collapseBefore(node: Node): Any = js.native
   
-  def collapseToPoint(node: Node, offset: Double): js.Any = js.native
+  def collapseToPoint(node: Node, offset: Double): Any = js.native
   
-  def compareNode(node: Node): js.Any = js.native
+  def compareNode(node: Node): Any = js.native
   
   def containsNode(node: Node, partial: Boolean): Boolean = js.native
   
@@ -39,8 +39,8 @@ trait RangyRange
   def getDocument(): Document = js.native
   
   def getNodes(): js.Array[Node] = js.native
-  def getNodes(nodeTypes: js.Array[js.Any]): js.Array[Node] = js.native
-  def getNodes(nodeTypes: js.Array[js.Any], filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
+  def getNodes(nodeTypes: js.Array[Any]): js.Array[Node] = js.native
+  def getNodes(nodeTypes: js.Array[Any], filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
   def getNodes(nodeTypes: Unit, filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
   
   def inspect(): String = js.native
@@ -53,24 +53,24 @@ trait RangyRange
   
   def isValid(): Boolean = js.native
   
-  def moveToBookmark(bookmark: js.Object): js.Any = js.native
+  def moveToBookmark(bookmark: js.Object): Any = js.native
   
-  def normalizeBoundaries(): js.Any = js.native
+  def normalizeBoundaries(): Any = js.native
   
-  def refresh(): js.Any = js.native
+  def refresh(): Any = js.native
   
-  def select(): js.Any = js.native
+  def select(): Any = js.native
   
-  def setStartAndEnd(startNode: Node, startOffset: Double): js.Any = js.native
-  def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Unit, endOffset: Double): js.Any = js.native
-  def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Node): js.Any = js.native
-  def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Node, endOffset: Double): js.Any = js.native
-  def setStartAndEnd(startNode: Node, startOffset: Double, endOffset: Double): js.Any = js.native
+  def setStartAndEnd(startNode: Node, startOffset: Double): Any = js.native
+  def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Unit, endOffset: Double): Any = js.native
+  def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Node): Any = js.native
+  def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Node, endOffset: Double): Any = js.native
+  def setStartAndEnd(startNode: Node, startOffset: Double, endOffset: Double): Any = js.native
   
-  def splitBoundaries(): js.Any = js.native
+  def splitBoundaries(): Any = js.native
   
   def toCharacterRange(containerNode: Node): End = js.native
-  def toCharacterRange(containerNode: Node, opts: js.Any): End = js.native
+  def toCharacterRange(containerNode: Node, opts: Any): End = js.native
   
   def toHtml(): String = js.native
   

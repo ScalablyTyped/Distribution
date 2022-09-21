@@ -17,5 +17,5 @@ trait LineChartMediaInfoConstructor
 Instantiable0[LineChartMediaInfo]
      with Instantiable1[/* properties */ LineChartMediaInfoProperties, LineChartMediaInfo] {
   
-  def fromJSON(json: js.Any): LineChartMediaInfo = js.native
+  def fromJSON(json: Any): LineChartMediaInfo = js.native
 }

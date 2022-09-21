@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.ProxyAuthenticationRequired")
 @js.native
-class ProxyAuthenticationRequired () extends Abstract
+open class ProxyAuthenticationRequired () extends Abstract

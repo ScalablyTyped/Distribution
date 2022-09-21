@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SsmActionDefinition extends StObject {
   
   /**
-    *  The action subType. 
+    * The action subType. 
     */
   var ActionSubType: typings.awsSdk.budgetsMod.ActionSubType
   
   /**
-    *  The EC2 and RDS instance IDs. 
+    * The EC2 and RDS instance IDs. 
     */
   var InstanceIds: typings.awsSdk.budgetsMod.InstanceIds
   
   /**
-    *  The Region to run the SSM document. 
+    * The Region to run the SSM document. 
     */
   var Region: typings.awsSdk.budgetsMod.Region
 }
@@ -34,7 +34,7 @@ object SsmActionDefinition {
     
     inline def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value*))
     
     inline def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
   }

@@ -1,13 +1,14 @@
 package typings.vscodeLanguageclient
 
+import typings.vscode.mod.Disposable
 import typings.vscode.mod.Position
 import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.SelectionRange
 import typings.vscode.mod.SelectionRangeProvider
 import typings.vscode.mod.TextDocument
 import typings.vscodeJsonrpc.cancellationMod.CancellationToken
-import typings.vscodeLanguageclient.clientMod.BaseLanguageClient
-import typings.vscodeLanguageclient.clientMod.TextDocumentFeature
+import typings.vscodeLanguageclient.featuresMod.FeatureClient
+import typings.vscodeLanguageclient.featuresMod.TextDocumentLanguageFeature
 import typings.vscodeLanguageserverProtocol.protocolSelectionRangeMod.SelectionRangeOptions
 import typings.vscodeLanguageserverProtocol.protocolSelectionRangeMod.SelectionRangeRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -16,14 +17,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object selectionRangeMod {
   
-  @JSImport("vscode-languageclient/lib/selectionRange", "SelectionRangeFeature")
+  @JSImport("vscode-languageclient/lib/common/selectionRange", "SelectionRangeFeature")
   @js.native
-  class SelectionRangeFeature protected () extends TextDocumentFeature[
+  open class SelectionRangeFeature protected ()
+    extends TextDocumentLanguageFeature[
           Boolean | SelectionRangeOptions, 
           SelectionRangeRegistrationOptions, 
-          SelectionRangeProvider
+          SelectionRangeProvider, 
+          SelectionRangeProviderMiddleware, 
+          js.Object
         ] {
-    def this(client: BaseLanguageClient) = this()
+    def this(client: FeatureClient[SelectionRangeProviderMiddleware, js.Object]) = this()
+    
+    /* protected */ def registerLanguageProvider(options: SelectionRangeRegistrationOptions): js.Tuple2[Disposable, SelectionRangeProvider] = js.native
+    
+    /* private */ var registerProvider: Any = js.native
   }
   
   type ProvideSelectionRangeSignature = js.ThisFunction3[

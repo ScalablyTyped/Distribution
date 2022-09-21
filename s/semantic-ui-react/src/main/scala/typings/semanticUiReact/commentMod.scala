@@ -20,10 +20,9 @@ object commentMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/views/Comment", "default.Action")
     @js.native
-    class Action protected ()
-      extends Component[CommentActionProps, ComponentState, js.Any] {
+    open class Action protected () extends Component[CommentActionProps, ComponentState, Any] {
       def this(props: CommentActionProps) = this()
-      def this(props: CommentActionProps, context: js.Any) = this()
+      def this(props: CommentActionProps, context: Any) = this()
     }
     
     type _To = CommentComponent

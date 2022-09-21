@@ -46,7 +46,7 @@ object Algs {
     
     inline def setSi(value: js.Array[SignerInfo]): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
     
-    inline def setSiVarargs(value: SignerInfo*): Self = StObject.set(x, "si", js.Array(value :_*))
+    inline def setSiVarargs(value: SignerInfo*): Self = StObject.set(x, "si", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

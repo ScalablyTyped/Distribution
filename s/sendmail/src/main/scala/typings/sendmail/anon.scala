@@ -8,7 +8,7 @@ object anon {
   
   trait Content extends StObject {
     
-    var content: js.UndefOr[js.Any] = js.undefined
+    var content: js.UndefOr[Any] = js.undefined
     
     var contentType: js.UndefOr[String] = js.undefined
     
@@ -29,7 +29,7 @@ object anon {
     
     extension [Self <: Content](x: Self) {
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       

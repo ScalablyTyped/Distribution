@@ -10,10 +10,10 @@ object unfoldLessMod {
   
   @JSImport("material-ui/svg-icons/navigation/unfold-less", JSImport.Default)
   @js.native
-  class default () extends NavigationUnfoldLess
+  open class default () extends NavigationUnfoldLess
   
   @JSImport("material-ui/svg-icons/navigation/unfold-less", "NavigationUnfoldLess")
   @js.native
-  class NavigationUnfoldLess ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationUnfoldLess ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -22,7 +22,7 @@ object commonjsMod {
     /* augmented module */
     object i18nextAugmentingMod {
       
-      type TFunction = js.Function2[/* key */ String, /* repeated */ js.Any, String]
+      type TFunction = js.Function2[/* key */ String, /* repeated */ Any, String]
     }
   }
 }

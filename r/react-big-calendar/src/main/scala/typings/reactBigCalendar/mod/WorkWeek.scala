@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-big-calendar", "WorkWeek")
 @js.native
-class WorkWeek protected () extends Week {
+open class WorkWeek protected () extends Week {
   def this(props: WeekProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: WeekProps, context: js.Any) = this()
+  def this(props: WeekProps, context: Any) = this()
 }

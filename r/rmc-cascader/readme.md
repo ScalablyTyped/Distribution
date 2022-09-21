@@ -10,10 +10,10 @@ m-cascader ui component for react
 | ------------------ | :-------------: |
 | Full name          | rmc-cascader |
 | Keywords           | react, react-component, react-m-cascader, m-cascader |
-| # releases         | 2 |
-| # dependents       | 63 |
-| # downloads        | 892198 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 123331.33333333333 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/m-cascader)

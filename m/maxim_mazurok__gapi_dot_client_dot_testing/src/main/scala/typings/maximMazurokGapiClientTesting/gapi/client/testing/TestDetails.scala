@@ -32,6 +32,6 @@ object TestDetails {
     
     inline def setProgressMessagesUndefined: Self = StObject.set(x, "progressMessages", js.undefined)
     
-    inline def setProgressMessagesVarargs(value: String*): Self = StObject.set(x, "progressMessages", js.Array(value :_*))
+    inline def setProgressMessagesVarargs(value: String*): Self = StObject.set(x, "progressMessages", js.Array(value*))
   }
 }

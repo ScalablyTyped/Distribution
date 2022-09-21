@@ -36,6 +36,6 @@ object RemarketingListsListResponse {
     
     inline def setRemarketingListsUndefined: Self = StObject.set(x, "remarketingLists", js.undefined)
     
-    inline def setRemarketingListsVarargs(value: RemarketingList*): Self = StObject.set(x, "remarketingLists", js.Array(value :_*))
+    inline def setRemarketingListsVarargs(value: RemarketingList*): Self = StObject.set(x, "remarketingLists", js.Array(value*))
   }
 }

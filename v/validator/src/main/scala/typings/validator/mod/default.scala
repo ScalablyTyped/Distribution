@@ -1,7 +1,11 @@
 package typings.validator.mod
 
-import typings.std.Date
-import typings.std.RegExp
+import typings.validator.anon.strongPasswordOptionsretu
+import typings.validator.anon.strongPasswordOptionsretuMinLength
+import typings.validator.isBooleanMod.Options
+import typings.validator.isEmailMod.IsEmailOptions
+import typings.validator.isFQDNMod.IsFQDNOptions
+import typings.validator.isURLMod.IsURLOptions
 import typings.validator.mod.validator.AlphaLocale
 import typings.validator.mod.validator.AlphanumericLocale
 import typings.validator.mod.validator.FloatLocale
@@ -9,12 +13,14 @@ import typings.validator.mod.validator.HashAlgorithm
 import typings.validator.mod.validator.IPVersion
 import typings.validator.mod.validator.ISBNVersion
 import typings.validator.mod.validator.IdentityCardLocale
+import typings.validator.mod.validator.IsAlphaOptions
+import typings.validator.mod.validator.IsAlphanumericOptions
+import typings.validator.mod.validator.IsBase64Options
 import typings.validator.mod.validator.IsByteLengthOptions
 import typings.validator.mod.validator.IsCurrencyOptions
+import typings.validator.mod.validator.IsDateOptions
 import typings.validator.mod.validator.IsDecimalOptions
-import typings.validator.mod.validator.IsEmailOptions
 import typings.validator.mod.validator.IsEmptyOptions
-import typings.validator.mod.validator.IsFQDNOptions
 import typings.validator.mod.validator.IsFloatOptions
 import typings.validator.mod.validator.IsISO8601Options
 import typings.validator.mod.validator.IsISSNOptions
@@ -23,7 +29,6 @@ import typings.validator.mod.validator.IsLengthOptions
 import typings.validator.mod.validator.IsMACAddressOptions
 import typings.validator.mod.validator.IsMobilePhoneOptions
 import typings.validator.mod.validator.IsNumericOptions
-import typings.validator.mod.validator.IsURLOptions
 import typings.validator.mod.validator.MobilePhoneLocale
 import typings.validator.mod.validator.NormalizeEmailOptions
 import typings.validator.mod.validator.PostalCodeLocale
@@ -58,7 +63,7 @@ object default {
     *
     * @param seed - Seed
     */
-  inline def contains(str: String, seed: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(str.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains(str: String, seed: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(str.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if the string matches the comparison.
@@ -72,6 +77,13 @@ object default {
     */
   inline def escape(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  /* was `typeof _isIBAN.locales` */
+  @JSImport("validator", "default.ibanLocales")
+  @js.native
+  val ibanLocales: js.Array[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78 */ Any
+  ] = js.native
+  
   /**
     * Check if the string is a date that's after the specified date.
     *
@@ -84,9 +96,12 @@ object default {
     * Check if the string contains only letters (a-zA-Z).
     *
     * @param [locale] - AlphaLocale
+    * @param [options] - IsAlphaOptions
     */
   inline def isAlpha(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAlpha(str: String, locale: Unit, options: IsAlphaOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isAlpha(str: String, locale: AlphaLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isAlpha(str: String, locale: AlphaLocale, options: IsAlphaOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("validator", "default.isAlphaLocales")
   @js.native
@@ -96,9 +111,12 @@ object default {
     * Check if the string contains only letters and numbers.
     *
     * @param [locale] - AlphanumericLocale
+    * @param [options] - IsAlphanumericOptions
     */
   inline def isAlphanumeric(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumeric")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAlphanumeric(str: String, locale: Unit, options: IsAlphanumericOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumeric")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isAlphanumeric(str: String, locale: AlphanumericLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumeric")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isAlphanumeric(str: String, locale: AlphanumericLocale, options: IsAlphanumericOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumeric")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("validator", "default.isAlphanumericLocales")
   @js.native
@@ -120,9 +138,17 @@ object default {
   inline def isBase32(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase32")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
+    * check if a string is base58 encoded
+    */
+  inline def isBase58(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase58")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
     * Check if a string is base64 encoded.
+    *
+    * @param [options] - Options
     */
   inline def isBase64(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBase64(str: String, options: IsBase64Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBase64")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if the string is a date that's before the specified date.
@@ -132,10 +158,9 @@ object default {
   inline def isBefore(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBefore")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isBefore(str: String, date: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBefore")(str.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  /**
-    * check if a string is a boolean.
-    */
+  /* was `typeof _isBoolean.default` */
   inline def isBoolean(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBoolean(str: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if the string is a valid BTC address.
@@ -169,6 +194,12 @@ object default {
   inline def isDataURI(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataURI")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
+    * Check if the string is a valid date.
+    */
+  inline def isDate(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDate(str: String, options: IsDateOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  /**
     * Check if the string represents a decimal number,
     * such as `0.1`, `.3`, `1.1`, `1.00003`, `4.0` etc.
     *
@@ -189,11 +220,7 @@ object default {
     */
   inline def isEAN(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEAN")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  /**
-    * Check if the string is an email.
-    *
-    * @param [options] - Options
-    */
+  /* was `typeof _isEmail.default` */
   inline def isEmail(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmail")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isEmail(str: String, options: IsEmailOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEmail")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -210,11 +237,7 @@ object default {
     */
   inline def isEthereumAddress(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEthereumAddress")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  /**
-    * Check if the string is a fully qualified domain name (e.g. `domain.com`).
-    *
-    * @param [options] - Options
-    */
+  /* was `typeof _isFQDN.default` */
   inline def isFQDN(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFQDN")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isFQDN(str: String, options: IsFQDNOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFQDN")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -263,9 +286,7 @@ object default {
     */
   inline def isHexadecimal(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHexadecimal")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  /**
-    * Check if a string is a IBAN (International Bank Account Number).
-    */
+  /* was `typeof _isIBAN.default` */
   inline def isIBAN(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIBAN")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
@@ -277,9 +298,10 @@ object default {
   inline def isIP(str: String, version: IPVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIP")(str.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
-    * Check if the string is an IP Range (version 4 only).
+    * Check if the string is an IP Range (version 4 or 6).
     */
   inline def isIPRange(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPRange")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIPRange(str: String, version: IPVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIPRange")(str.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if the string is an ISBN (version 10 or 13).
@@ -303,6 +325,9 @@ object default {
     * Check if the string is a valid [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) officially assigned country code.
     */
   inline def isISO31661Alpha3(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISO31661Alpha3")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /* was `typeof _isISO4217.default` */
+  inline def isISO4217(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISO4217")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Check if the string is a valid [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date.
@@ -340,7 +365,7 @@ object default {
     *
     * @param values - Allowed values.
     */
-  inline def isIn(str: String, values: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIn")(str.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isIn(str: String, values: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIn")(str.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if the string is an integer.
@@ -466,17 +491,17 @@ object default {
     */
   inline def isPort(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPort")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  /**
+    * Check if the string is a postal code
+    *
+    * @param locale - PostalCodeLocale
+    */
   inline def isPostalCode(str: String, locale: PostalCodeLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPostalCode")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("validator", "default.isPostalCodeLocales")
   @js.native
   val isPostalCodeLocales: js.Array[PostalCodeLocale] = js.native
   
-  /**
-    * Check if the string is a postal code
-    *
-    * @param locale - PostalCodeLocale
-    */
   inline def isPostalCode_any(str: String, locale: any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPostalCode")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
@@ -502,16 +527,22 @@ object default {
     */
   inline def isSlug(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSlug")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def isStrongPassword(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def isStrongPassword(str: String, options: strongPasswordOptionsretu): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isStrongPassword(str: String, options: strongPasswordOptionsretuMinLength): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def isStrongPassword_Boolean(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   /**
     * Check if the string contains any surrogate pairs chars.
     */
   inline def isSurrogatePair(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSurrogatePair")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  /**
-    * Check if the string is an URL.
-    *
-    * @param [options] - Options
-    */
+  /* was `typeof _isTaxID.default` */
+  inline def isTaxID(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTaxID")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTaxID(str: String, locale: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTaxID")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  /* was `typeof _isURL.default` */
   inline def isURL(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isURL(str: String, options: IsURLOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -527,6 +558,11 @@ object default {
     * Check if the string is uppercase.
     */
   inline def isUppercase(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUppercase")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
+    * Checks that the string is a [valid VAT number
+    */
+  inline def isVAT(str: String, countryCode: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isVAT")(str.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if the string contains a mixture of full and half-width chars.
@@ -562,7 +598,7 @@ object default {
     *
     * @param pattern - `/foo/i`
     */
-  inline def matches(str: String, pattern: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(str.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matches(str: String, pattern: js.RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(str.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Canonicalizes an email address. (This doesn't validate that the input is an email, if you want to validate the email use `isEmail` beforehand)
@@ -601,7 +637,7 @@ object default {
   /**
     * Convert the input string to a `Date`, or `null` if the input is not a date.
     */
-  inline def toDate(input: String): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(input.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
+  inline def toDate(input: String): js.Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(input.asInstanceOf[js.Any]).asInstanceOf[js.Date | Null]
   
   /**
     * Convert the input string to a float, or `NaN` if the input is not a float.
@@ -619,7 +655,7 @@ object default {
   /**
     * Converts to string.
     */
-  inline def toString_(input: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(input: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Trim characters from both sides of the input.

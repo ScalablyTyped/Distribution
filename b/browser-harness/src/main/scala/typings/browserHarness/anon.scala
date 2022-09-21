@@ -8,7 +8,7 @@ object anon {
   
   trait Args extends StObject {
     
-    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
     
     var func: js.Function
   }
@@ -21,11 +21,11 @@ object anon {
     
     extension [Self <: Args](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setFunc(value: js.Function): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     }
@@ -62,7 +62,7 @@ object anon {
   
   trait Location extends StObject {
     
-    var args: js.UndefOr[js.Any] = js.undefined
+    var args: js.UndefOr[Any] = js.undefined
     
     var location: js.UndefOr[String] = js.undefined
     
@@ -78,7 +78,7 @@ object anon {
     
     extension [Self <: Location](x: Self) {
       
-      inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       

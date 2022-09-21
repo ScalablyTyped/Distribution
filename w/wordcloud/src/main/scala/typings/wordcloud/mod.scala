@@ -142,7 +142,7 @@ object mod {
       * List of words/text to paint on the canvas in a 2-d array, in the form of [word, size],
       * e.g. [['foo', 12] , ['bar', 6]].
       */
-    var list: js.UndefOr[js.Array[js.Any | ListEntry]] = js.undefined
+    var list: js.UndefOr[js.Array[Any | ListEntry]] = js.undefined
     
     /** color of the mask squares. */
     var maskColor: js.UndefOr[String] = js.undefined
@@ -277,11 +277,11 @@ object mod {
       
       inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
       
-      inline def setList(value: js.Array[js.Any | ListEntry]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[Any | ListEntry]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setListVarargs(value: (js.Any | ListEntry)*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: (Any | ListEntry)*): Self = StObject.set(x, "list", js.Array(value*))
       
       inline def setMaskColor(value: String): Self = StObject.set(x, "maskColor", value.asInstanceOf[js.Any])
       

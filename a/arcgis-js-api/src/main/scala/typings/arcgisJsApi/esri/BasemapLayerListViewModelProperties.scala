@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +34,7 @@ trait BasemapLayerListViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
 object BasemapLayerListViewModelProperties {
   
@@ -43,7 +45,7 @@ object BasemapLayerListViewModelProperties {
   
   extension [Self <: BasemapLayerListViewModelProperties](x: Self) {
     
-    inline def setBaseListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "baseListItemCreatedFunction", js.Any.fromFunction1(value))
+    inline def setBaseListItemCreatedFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "baseListItemCreatedFunction", js.Any.fromFunction1(value))
     
     inline def setBaseListItemCreatedFunctionUndefined: Self = StObject.set(x, "baseListItemCreatedFunction", js.undefined)
     
@@ -51,11 +53,11 @@ object BasemapLayerListViewModelProperties {
     
     inline def setBasemapTitleUndefined: Self = StObject.set(x, "basemapTitle", js.undefined)
     
-    inline def setReferenceListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "referenceListItemCreatedFunction", js.Any.fromFunction1(value))
+    inline def setReferenceListItemCreatedFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "referenceListItemCreatedFunction", js.Any.fromFunction1(value))
     
     inline def setReferenceListItemCreatedFunctionUndefined: Self = StObject.set(x, "referenceListItemCreatedFunction", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }

@@ -10,7 +10,9 @@ trait IDBVersionChangeEvent
   extends StObject
      with Event {
   
+  /* standard dom */
   val newVersion: Double | Null = js.native
   
+  /* standard dom */
   val oldVersion: Double = js.native
 }

@@ -10,49 +10,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object errorsMod {
   
-  @JSImport("@firebase/util/dist/src/errors", "ErrorFactory")
+  @JSImport("@firebase/util/dist/node-esm/src/errors", "ErrorFactory")
   @js.native
-  class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
-    */ typings.firebaseUtil.firebaseUtilStrings.ErrorFactory & TopLevel[js.Any] */] protected () extends StObject {
+  open class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util/dist/node-esm/src/errors.ErrorData}
+    */ typings.firebaseUtil.firebaseUtilStrings.ErrorFactory & TopLevel[Any] */] protected () extends StObject {
     def this(service: String, serviceName: String, errors: ErrorMap[ErrorCode]) = this()
     
     def create[K /* <: ErrorCode */](
       code: K,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type K extends keyof ErrorParams ? [ErrorParams[K]] : [] is not an array type */ data: js.Array[js.Any]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type K extends keyof ErrorParams ? [ErrorParams[K]] : [] is not an array type */ data: js.Array[
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: ErrorParams[K] */ js.Any)
+        ]
     ): FirebaseError = js.native
     
-    /* private */ val errors: js.Any = js.native
+    /* private */ val errors: Any = js.native
     
-    /* private */ val service: js.Any = js.native
+    /* private */ val service: Any = js.native
     
-    /* private */ val serviceName: js.Any = js.native
+    /* private */ val serviceName: Any = js.native
   }
   
-  @JSImport("@firebase/util/dist/src/errors", "FirebaseError")
+  @JSImport("@firebase/util/dist/node-esm/src/errors", "FirebaseError")
   @js.native
-  class FirebaseError protected ()
+  open class FirebaseError protected ()
     extends StObject
        with Error {
-    def this(code: String, message: String) = this()
-    def this(code: String, message: String, customData: Record[String, js.Any]) = this()
+    def this(/** The error code for this error. */
+    code: String, message: String) = this()
+    def this(
+      /** The error code for this error. */
+    code: String,
+      message: String,
+      /** Custom data for this error. */
+    customData: Record[String, Any]
+    ) = this()
     
+    /** The error code for this error. */
     val code: String = js.native
     
-    var customData: js.UndefOr[Record[String, js.Any]] = js.native
+    /** Custom data for this error. */
+    var customData: js.UndefOr[Record[String, Any]] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  type ErrorData = StringDictionary[js.Any]
+  type ErrorData = StringDictionary[Any]
   
   type ErrorMap[ErrorCode /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in ErrorCode ]: string}
-    */ typings.firebaseUtil.firebaseUtilStrings.ErrorMap & TopLevel[js.Any]
+    */ typings.firebaseUtil.firebaseUtilStrings.ErrorMap & TopLevel[Any]
   
   trait StringLike extends StObject
 }

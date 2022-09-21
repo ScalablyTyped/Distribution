@@ -8,11 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.monacoEditor.monacoEditorStrings.vs
   - typings.monacoEditor.monacoEditorStrings.`vs-dark`
   - typings.monacoEditor.monacoEditorStrings.`hc-black`
+  - typings.monacoEditor.monacoEditorStrings.`hc-light`
 */
 trait BuiltinTheme extends StObject
 object BuiltinTheme {
   
   inline def `hc-black`: typings.monacoEditor.monacoEditorStrings.`hc-black` = "hc-black".asInstanceOf[typings.monacoEditor.monacoEditorStrings.`hc-black`]
+  
+  inline def `hc-light`: typings.monacoEditor.monacoEditorStrings.`hc-light` = "hc-light".asInstanceOf[typings.monacoEditor.monacoEditorStrings.`hc-light`]
   
   inline def vs: typings.monacoEditor.monacoEditorStrings.vs = "vs".asInstanceOf[typings.monacoEditor.monacoEditorStrings.vs]
   

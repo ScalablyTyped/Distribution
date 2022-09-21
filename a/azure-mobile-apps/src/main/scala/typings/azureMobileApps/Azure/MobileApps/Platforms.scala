@@ -96,7 +96,7 @@ object Platforms {
       
       def `import`(fileOrFolder: String): Unit = js.native
       
-      def initialize(): Thenable[js.Any] = js.native
+      def initialize(): Thenable[Any] = js.native
     }
   }
 }

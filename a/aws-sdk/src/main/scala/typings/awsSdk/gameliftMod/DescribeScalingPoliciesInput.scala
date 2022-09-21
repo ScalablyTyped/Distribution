@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeScalingPoliciesInput extends StObject {
   
   /**
-    * A unique identifier for a fleet to retrieve scaling policies for. You can use either the fleet ID or ARN value.
+    * A unique identifier for the fleet for which to retrieve scaling policies. You can use either the fleet ID or ARN value.
     */
   var FleetId: FleetIdOrArn
   
@@ -17,7 +17,12 @@ trait DescribeScalingPoliciesInput extends StObject {
   var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    * Token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value.
+    *  The fleet location. If you don't specify this value, the response contains the scaling policies of every location in the fleet. 
+    */
+  var Location: js.UndefOr[LocationStringModel] = js.undefined
+  
+  /**
+    * A token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
@@ -40,6 +45,10 @@ object DescribeScalingPoliciesInput {
     inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    
+    inline def setLocation(value: LocationStringModel): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

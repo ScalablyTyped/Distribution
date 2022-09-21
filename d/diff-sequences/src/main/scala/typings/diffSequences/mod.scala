@@ -49,5 +49,12 @@ object mod {
   
   type FoundSubsequence = js.Function3[/* nCommon */ Double, /* aCommon */ Double, /* bCommon */ Double, Unit]
   
+  /**
+    * Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+    *
+    * This source code is licensed under the MIT license found in the
+    * LICENSE file in the root directory of this source tree.
+    *
+    */
   type IsCommon = js.Function2[/* aIndex */ Double, /* bIndex */ Double, Boolean]
 }

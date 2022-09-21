@@ -41,7 +41,7 @@ object anon {
       
       inline def setRows(value: js.Array[js.Object]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value*))
       
       inline def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       

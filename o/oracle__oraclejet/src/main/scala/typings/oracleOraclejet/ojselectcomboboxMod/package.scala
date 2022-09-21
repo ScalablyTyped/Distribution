@@ -1,10 +1,11 @@
 package typings.oracleOraclejet.ojselectcomboboxMod
 
+import typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ojComboboxSettableProperties[V, SV, RV] = typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties[V, SV, RV]
+type ojComboboxSettableProperties[V, SV, RV] = editableValueSettableProperties[V, SV, RV]
 
-type ojSelectSettableProperties[V, SV] = typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties[V, SV, V]
+type ojSelectSettableProperties[V, SV] = editableValueSettableProperties[V, SV, V]

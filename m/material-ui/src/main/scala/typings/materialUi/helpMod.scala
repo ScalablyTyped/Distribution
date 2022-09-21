@@ -10,10 +10,10 @@ object helpMod {
   
   @JSImport("material-ui/svg-icons/action/help", JSImport.Default)
   @js.native
-  class default () extends ActionHelp
+  open class default () extends ActionHelp
   
   @JSImport("material-ui/svg-icons/action/help", "ActionHelp")
   @js.native
-  class ActionHelp ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionHelp ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

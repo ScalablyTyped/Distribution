@@ -130,7 +130,7 @@ trait XSQLInput
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readObject(): js.Any
+  def readObject(): Any
   
   /**
     * reads a REF(&lt;structured-type&gt;) from the stream.
@@ -178,7 +178,7 @@ object XSQLInput {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readArray: () => XArray,
     readBinaryStream: () => XInputStream,
     readBlob: () => XBlob,
@@ -192,7 +192,7 @@ object XSQLInput {
     readFloat: () => Double,
     readInt: () => Double,
     readLong: () => Double,
-    readObject: () => js.Any,
+    readObject: () => Any,
     readRef: () => XRef,
     readShort: () => Double,
     readString: () => String,
@@ -233,7 +233,7 @@ object XSQLInput {
     
     inline def setReadLong(value: () => Double): Self = StObject.set(x, "readLong", js.Any.fromFunction0(value))
     
-    inline def setReadObject(value: () => js.Any): Self = StObject.set(x, "readObject", js.Any.fromFunction0(value))
+    inline def setReadObject(value: () => Any): Self = StObject.set(x, "readObject", js.Any.fromFunction0(value))
     
     inline def setReadRef(value: () => XRef): Self = StObject.set(x, "readRef", js.Any.fromFunction0(value))
     

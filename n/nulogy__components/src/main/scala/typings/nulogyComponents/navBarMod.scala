@@ -8,5 +8,5 @@ object navBarMod {
   
   @JSImport("@nulogy/components/src/NavBar", "NavBar")
   @js.native
-  val NavBar: js.Any = js.native
+  val NavBar: Any = js.native
 }

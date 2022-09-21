@@ -68,7 +68,7 @@ object XLayerImporter {
     getTargetBackend: () => XBackend,
     importLayer: XLayer => Unit,
     importLayerForEntity: (XLayer, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTargetBackend: XBackend => Unit
   ): XLayerImporter = {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DynamoDbSettings extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) used by the service access IAM role. 
+    *  The Amazon Resource Name (ARN) used by the service to access the IAM role. The role must allow the iam:PassRole action.
     */
   var ServiceAccessRoleArn: String
 }

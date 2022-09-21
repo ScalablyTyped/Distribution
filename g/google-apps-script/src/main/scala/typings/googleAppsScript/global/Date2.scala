@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Date2")
 @js.native
-class Date2 ()
+open class Date2 ()
   extends StObject
      with Date {
   def this(value: String) = this()

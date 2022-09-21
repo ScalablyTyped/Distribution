@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnomalySubscription extends StObject {
   
   /**
-    *  Your unique account identifier. 
+    * Your unique account identifier. 
     */
   var AccountId: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The frequency at which anomaly reports are sent over email. 
+    * The frequency that anomaly reports are sent over email. 
     */
   var Frequency: AnomalySubscriptionFrequency
   
   /**
-    *  A list of cost anomaly monitors. 
+    * A list of cost anomaly monitors. 
     */
-  var MonitorArnList: Values
+  var MonitorArnList: typings.awsSdk.costexplorerMod.MonitorArnList
   
   /**
-    *  A list of subscribers to notify. 
+    * A list of subscribers to notify. 
     */
   var Subscribers: typings.awsSdk.costexplorerMod.Subscribers
   
   /**
-    *  The AnomalySubscription Amazon Resource Name (ARN). 
+    * The AnomalySubscription Amazon Resource Name (ARN). 
     */
   var SubscriptionArn: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The name for the subscription. 
+    * The name for the subscription. 
     */
   var SubscriptionName: GenericString
   
   /**
-    *  The dollar value that triggers a notification if the threshold is exceeded. 
+    * The dollar value that triggers a notification if the threshold is exceeded. 
     */
   var Threshold: NullableNonNegativeDouble
 }
@@ -45,7 +45,7 @@ object AnomalySubscription {
   
   inline def apply(
     Frequency: AnomalySubscriptionFrequency,
-    MonitorArnList: Values,
+    MonitorArnList: MonitorArnList,
     Subscribers: Subscribers,
     SubscriptionName: GenericString,
     Threshold: NullableNonNegativeDouble
@@ -62,13 +62,13 @@ object AnomalySubscription {
     
     inline def setFrequency(value: AnomalySubscriptionFrequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     
-    inline def setMonitorArnList(value: Values): Self = StObject.set(x, "MonitorArnList", value.asInstanceOf[js.Any])
+    inline def setMonitorArnList(value: MonitorArnList): Self = StObject.set(x, "MonitorArnList", value.asInstanceOf[js.Any])
     
-    inline def setMonitorArnListVarargs(value: Value*): Self = StObject.set(x, "MonitorArnList", js.Array(value :_*))
+    inline def setMonitorArnListVarargs(value: Arn*): Self = StObject.set(x, "MonitorArnList", js.Array(value*))
     
     inline def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
-    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value*))
     
     inline def setSubscriptionArn(value: GenericString): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
     

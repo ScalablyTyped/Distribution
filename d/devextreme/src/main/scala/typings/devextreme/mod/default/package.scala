@@ -1,20 +1,29 @@
 package typings.devextreme.mod.default
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.devextreme.anon.Compile
+import typings.devextreme.mod.DevExpress.DOMComponent.Properties
+import typings.devextreme.mod.DevExpress.core.ComponentFactory
+import typings.devextreme.mod.DevExpress.globalConfig
+import typings.devextreme.mod.default.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def config(): typings.devextreme.mod.DevExpress.globalConfig = typings.devextreme.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[typings.devextreme.mod.DevExpress.globalConfig]
-inline def config(config: typings.devextreme.mod.DevExpress.globalConfig): scala.Unit = typings.devextreme.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def config(): globalConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[globalConfig]
+inline def config(config: globalConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def devices: typings.devextreme.mod.DevExpress.DevicesObject = typings.devextreme.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("devices").asInstanceOf[typings.devextreme.mod.DevExpress.DevicesObject]
-inline def devices_=(x: typings.devextreme.mod.DevExpress.DevicesObject): scala.Unit = typings.devextreme.mod.default.^.asInstanceOf[js.Dynamic].updateDynamic("devices")(x.asInstanceOf[js.Any])
+inline def devices: typings.devextreme.mod.DevExpress.DevicesObject = ^.asInstanceOf[js.Dynamic].selectDynamic("devices").asInstanceOf[typings.devextreme.mod.DevExpress.DevicesObject]
 
-inline def hideTopOverlay(): scala.Boolean = typings.devextreme.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hideTopOverlay")().asInstanceOf[scala.Boolean]
+inline def hideTopOverlay(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hideTopOverlay")().asInstanceOf[Boolean]
 
-inline def registerComponent(name: java.lang.String, componentClass: js.Any): scala.Unit = (typings.devextreme.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], componentClass.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def registerComponent(name: java.lang.String, namespace: js.Any, componentClass: js.Any): scala.Unit = (typings.devextreme.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], componentClass.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerComponent[TComponent](name: String, componentClass: ComponentFactory[TComponent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], componentClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerComponent[TComponent](
+  name: String,
+  namespace: StringDictionary[ComponentFactory[typings.devextreme.mod.DevExpress.DOMComponent[Properties]]],
+  componentClass: ComponentFactory[TComponent]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], componentClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def setTemplateEngine(templateEngineName: java.lang.String): scala.Unit = typings.devextreme.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def setTemplateEngine(templateEngineOptions: typings.devextreme.anon.Compile): scala.Unit = typings.devextreme.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineOptions.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setTemplateEngine(templateEngineName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setTemplateEngine(templateEngineOptions: Compile): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]

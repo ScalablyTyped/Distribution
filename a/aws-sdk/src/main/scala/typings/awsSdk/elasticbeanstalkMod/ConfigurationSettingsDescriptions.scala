@@ -24,6 +24,6 @@ object ConfigurationSettingsDescriptions {
     
     inline def setConfigurationSettingsUndefined: Self = StObject.set(x, "ConfigurationSettings", js.undefined)
     
-    inline def setConfigurationSettingsVarargs(value: ConfigurationSettingsDescription*): Self = StObject.set(x, "ConfigurationSettings", js.Array(value :_*))
+    inline def setConfigurationSettingsVarargs(value: ConfigurationSettingsDescription*): Self = StObject.set(x, "ConfigurationSettings", js.Array(value*))
   }
 }

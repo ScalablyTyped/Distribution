@@ -1,12 +1,16 @@
 package typings.twilioVideo
 
-import typings.twilioVideo.mod.AudioCodec
-import typings.twilioVideo.mod.BandwidthProfileMode
-import typings.twilioVideo.mod.LogLevel
-import typings.twilioVideo.mod.Track.Kind
-import typings.twilioVideo.mod.Track.Priority
-import typings.twilioVideo.mod.TrackSwitchOffMode
-import typings.twilioVideo.mod.VideoCodec
+import typings.twilioVideo.loglevelMod.Log.LogLevelDesc
+import typings.twilioVideo.trackMod.Track.Kind
+import typings.twilioVideo.trackMod.Track.Priority
+import typings.twilioVideo.typesMod.AudioCodec
+import typings.twilioVideo.typesMod.BandwidthProfileMode
+import typings.twilioVideo.typesMod.ClientTrackSwitchOffControl
+import typings.twilioVideo.typesMod.LogLevel
+import typings.twilioVideo.typesMod.NoiseCancellationVendor
+import typings.twilioVideo.typesMod.TrackSwitchOffMode
+import typings.twilioVideo.typesMod.VideoCodec
+import typings.twilioVideo.typesMod.VideoContentPreferencesMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,28 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object twilioVideoStrings {
   
   @js.native
-  sealed trait `Access Token expired or expiration date invalid` extends StObject
-  inline def `Access Token expired or expiration date invalid`: `Access Token expired or expiration date invalid` = ("Access Token expired or expiration date invalid").asInstanceOf[`Access Token expired or expiration date invalid`]
+  sealed trait DEBUG
+    extends StObject
+       with LogLevelDesc
+  inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
-  sealed trait `Access Token not yet valid` extends StObject
-  inline def `Access Token not yet valid`: `Access Token not yet valid` = ("Access Token not yet valid").asInstanceOf[`Access Token not yet valid`]
-  
-  @js.native
-  sealed trait `Client is unable to apply a remote media description` extends StObject
-  inline def `Client is unable to apply a remote media description`: `Client is unable to apply a remote media description` = ("Client is unable to apply a remote media description").asInstanceOf[`Client is unable to apply a remote media description`]
-  
-  @js.native
-  sealed trait `Client is unable to create or apply a local media description` extends StObject
-  inline def `Client is unable to create or apply a local media description`: `Client is unable to create or apply a local media description` = ("Client is unable to create or apply a local media description").asInstanceOf[`Client is unable to create or apply a local media description`]
-  
-  @js.native
-  sealed trait `Client received an invalid signaling message` extends StObject
-  inline def `Client received an invalid signaling message`: `Client received an invalid signaling message` = ("Client received an invalid signaling message").asInstanceOf[`Client received an invalid signaling message`]
-  
-  @js.native
-  sealed trait `Client sent an invalid signaling message` extends StObject
-  inline def `Client sent an invalid signaling message`: `Client sent an invalid signaling message` = ("Client sent an invalid signaling message").asInstanceOf[`Client sent an invalid signaling message`]
+  sealed trait ERROR
+    extends StObject
+       with LogLevelDesc
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
   sealed trait H264
@@ -44,36 +36,10 @@ object twilioVideoStrings {
   inline def H264: H264 = "H264".asInstanceOf[H264]
   
   @js.native
-  sealed trait `Invalid Access Token grants` extends StObject
-  inline def `Invalid Access Token grants`: `Invalid Access Token grants` = ("Invalid Access Token grants").asInstanceOf[`Invalid Access Token grants`]
-  
-  @js.native
-  sealed trait `Invalid Access Token header` extends StObject
-  inline def `Invalid Access Token header`: `Invalid Access Token header` = ("Invalid Access Token header").asInstanceOf[`Invalid Access Token header`]
-  
-  @js.native
-  sealed trait `Invalid Access Token issuerSlashsubject` extends StObject
-  inline def `Invalid Access Token issuerSlashsubject`: `Invalid Access Token issuerSlashsubject` = ("Invalid Access Token issuer/subject").asInstanceOf[`Invalid Access Token issuerSlashsubject`]
-  
-  @js.native
-  sealed trait `Invalid Access Token signature` extends StObject
-  inline def `Invalid Access Token signature`: `Invalid Access Token signature` = ("Invalid Access Token signature").asInstanceOf[`Invalid Access Token signature`]
-  
-  @js.native
-  sealed trait `MaxParticipants is out of range` extends StObject
-  inline def `MaxParticipants is out of range`: `MaxParticipants is out of range` = ("MaxParticipants is out of range").asInstanceOf[`MaxParticipants is out of range`]
-  
-  @js.native
-  sealed trait `Media connection failed` extends StObject
-  inline def `Media connection failed`: `Media connection failed` = ("Media connection failed").asInstanceOf[`Media connection failed`]
-  
-  @js.native
-  sealed trait `MediaRegion is invalid` extends StObject
-  inline def `MediaRegion is invalid`: `MediaRegion is invalid` = ("MediaRegion is invalid").asInstanceOf[`MediaRegion is invalid`]
-  
-  @js.native
-  sealed trait `No supported codec` extends StObject
-  inline def `No supported codec`: `No supported codec` = ("No supported codec").asInstanceOf[`No supported codec`]
+  sealed trait INFO
+    extends StObject
+       with LogLevelDesc
+  inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
   sealed trait PCMA
@@ -88,148 +54,16 @@ object twilioVideoStrings {
   inline def PCMU: PCMU = "PCMU".asInstanceOf[PCMU]
   
   @js.native
-  sealed trait `Participant disconnected because of duplicate identity` extends StObject
-  inline def `Participant disconnected because of duplicate identity`: `Participant disconnected because of duplicate identity` = ("Participant disconnected because of duplicate identity").asInstanceOf[`Participant disconnected because of duplicate identity`]
+  sealed trait SILENT
+    extends StObject
+       with LogLevelDesc
+  inline def SILENT: SILENT = "SILENT".asInstanceOf[SILENT]
   
   @js.native
-  sealed trait `Participant has too many Tracks` extends StObject
-  inline def `Participant has too many Tracks`: `Participant has too many Tracks` = ("Participant has too many Tracks").asInstanceOf[`Participant has too many Tracks`]
-  
-  @js.native
-  sealed trait `Participant identity contains invalid characters` extends StObject
-  inline def `Participant identity contains invalid characters`: `Participant identity contains invalid characters` = ("Participant identity contains invalid characters").asInstanceOf[`Participant identity contains invalid characters`]
-  
-  @js.native
-  sealed trait `Participant identity is invalid` extends StObject
-  inline def `Participant identity is invalid`: `Participant identity is invalid` = ("Participant identity is invalid").asInstanceOf[`Participant identity is invalid`]
-  
-  @js.native
-  sealed trait `Participant identity is too long` extends StObject
-  inline def `Participant identity is too long`: `Participant identity is too long` = ("Participant identity is too long").asInstanceOf[`Participant identity is too long`]
-  
-  @js.native
-  sealed trait `Participant not found` extends StObject
-  inline def `Participant not found`: `Participant not found` = ("Participant not found").asInstanceOf[`Participant not found`]
-  
-  @js.native
-  sealed trait `Room completed` extends StObject
-  inline def `Room completed`: `Room completed` = ("Room completed").asInstanceOf[`Room completed`]
-  
-  @js.native
-  sealed trait `Room contains too many Participants` extends StObject
-  inline def `Room contains too many Participants`: `Room contains too many Participants` = ("Room contains too many Participants").asInstanceOf[`Room contains too many Participants`]
-  
-  @js.native
-  sealed trait `Room creation parameterLeftparenthesissRightparenthesis incompatible with the Room type` extends StObject
-  inline def `Room creation parameterLeftparenthesissRightparenthesis incompatible with the Room type`: `Room creation parameterLeftparenthesissRightparenthesis incompatible with the Room type` = ("Room creation parameter(s) incompatible with the Room type").asInstanceOf[`Room creation parameterLeftparenthesissRightparenthesis incompatible with the Room type`]
-  
-  @js.native
-  sealed trait `Room exists` extends StObject
-  inline def `Room exists`: `Room exists` = ("Room exists").asInstanceOf[`Room exists`]
-  
-  @js.native
-  sealed trait `Room name contains invalid characters` extends StObject
-  inline def `Room name contains invalid characters`: `Room name contains invalid characters` = ("Room name contains invalid characters").asInstanceOf[`Room name contains invalid characters`]
-  
-  @js.native
-  sealed trait `Room name is invalid` extends StObject
-  inline def `Room name is invalid`: `Room name is invalid` = ("Room name is invalid").asInstanceOf[`Room name is invalid`]
-  
-  @js.native
-  sealed trait `Room name is too long` extends StObject
-  inline def `Room name is too long`: `Room name is too long` = ("Room name is too long").asInstanceOf[`Room name is too long`]
-  
-  @js.native
-  sealed trait `Room not found` extends StObject
-  inline def `Room not found`: `Room not found` = ("Room not found").asInstanceOf[`Room not found`]
-  
-  @js.native
-  sealed trait `RoomType is not valid` extends StObject
-  inline def `RoomType is not valid`: `RoomType is not valid` = ("RoomType is not valid").asInstanceOf[`RoomType is not valid`]
-  
-  @js.native
-  sealed trait `Server is unable to apply a remote media description` extends StObject
-  inline def `Server is unable to apply a remote media description`: `Server is unable to apply a remote media description` = ("Server is unable to apply a remote media description").asInstanceOf[`Server is unable to apply a remote media description`]
-  
-  @js.native
-  sealed trait `Server is unable to create or apply a local media description` extends StObject
-  inline def `Server is unable to create or apply a local media description`: `Server is unable to create or apply a local media description` = ("Server is unable to create or apply a local media description").asInstanceOf[`Server is unable to create or apply a local media description`]
-  
-  @js.native
-  sealed trait `Signaling connection disconnected` extends StObject
-  inline def `Signaling connection disconnected`: `Signaling connection disconnected` = ("Signaling connection disconnected").asInstanceOf[`Signaling connection disconnected`]
-  
-  @js.native
-  sealed trait `Signaling connection error` extends StObject
-  inline def `Signaling connection error`: `Signaling connection error` = ("Signaling connection error").asInstanceOf[`Signaling connection error`]
-  
-  @js.native
-  sealed trait `Signaling connection timed out` extends StObject
-  inline def `Signaling connection timed out`: `Signaling connection timed out` = ("Signaling connection timed out").asInstanceOf[`Signaling connection timed out`]
-  
-  @js.native
-  sealed trait `Status is invalid` extends StObject
-  inline def `Status is invalid`: `Status is invalid` = ("Status is invalid").asInstanceOf[`Status is invalid`]
-  
-  @js.native
-  sealed trait `StatusCallback is invalid` extends StObject
-  inline def `StatusCallback is invalid`: `StatusCallback is invalid` = ("StatusCallback is invalid").asInstanceOf[`StatusCallback is invalid`]
-  
-  @js.native
-  sealed trait `StatusCallbackMethod is invalid` extends StObject
-  inline def `StatusCallbackMethod is invalid`: `StatusCallbackMethod is invalid` = ("StatusCallbackMethod is invalid").asInstanceOf[`StatusCallbackMethod is invalid`]
-  
-  @js.native
-  sealed trait `The server has reached capacity and cannot fulfill this requestDot` extends StObject
-  inline def `The server has reached capacity and cannot fulfill this requestDot`: `The server has reached capacity and cannot fulfill this requestDot` = ("The server has reached capacity and cannot fulfill this request.").asInstanceOf[`The server has reached capacity and cannot fulfill this requestDot`]
-  
-  @js.native
-  sealed trait `The subscription operation requested is not supported for the Room type` extends StObject
-  inline def `The subscription operation requested is not supported for the Room type`: `The subscription operation requested is not supported for the Room type` = ("The subscription operation requested is not supported for the Room type").asInstanceOf[`The subscription operation requested is not supported for the Room type`]
-  
-  @js.native
-  sealed trait `There are no media servers available in the MediaRegion` extends StObject
-  inline def `There are no media servers available in the MediaRegion`: `There are no media servers available in the MediaRegion` = ("There are no media servers available in the MediaRegion").asInstanceOf[`There are no media servers available in the MediaRegion`]
-  
-  @js.native
-  sealed trait `Timeout is out of range` extends StObject
-  inline def `Timeout is out of range`: `Timeout is out of range` = ("Timeout is out of range").asInstanceOf[`Timeout is out of range`]
-  
-  @js.native
-  sealed trait `Track is invalid` extends StObject
-  inline def `Track is invalid`: `Track is invalid` = ("Track is invalid").asInstanceOf[`Track is invalid`]
-  
-  @js.native
-  sealed trait `Track name contains invalid characters` extends StObject
-  inline def `Track name contains invalid characters`: `Track name contains invalid characters` = ("Track name contains invalid characters").asInstanceOf[`Track name contains invalid characters`]
-  
-  @js.native
-  sealed trait `Track name is duplicated` extends StObject
-  inline def `Track name is duplicated`: `Track name is duplicated` = ("Track name is duplicated").asInstanceOf[`Track name is duplicated`]
-  
-  @js.native
-  sealed trait `Track name is invalid` extends StObject
-  inline def `Track name is invalid`: `Track name is invalid` = ("Track name is invalid").asInstanceOf[`Track name is invalid`]
-  
-  @js.native
-  sealed trait `Track name is too long` extends StObject
-  inline def `Track name is too long`: `Track name is too long` = ("Track name is too long").asInstanceOf[`Track name is too long`]
-  
-  @js.native
-  sealed trait `Unable to acquire TURN credentials` extends StObject
-  inline def `Unable to acquire TURN credentials`: `Unable to acquire TURN credentials` = ("Unable to acquire TURN credentials").asInstanceOf[`Unable to acquire TURN credentials`]
-  
-  @js.native
-  sealed trait `Unable to acquire configuration` extends StObject
-  inline def `Unable to acquire configuration`: `Unable to acquire configuration` = ("Unable to acquire configuration").asInstanceOf[`Unable to acquire configuration`]
-  
-  @js.native
-  sealed trait `Unable to connect to Room` extends StObject
-  inline def `Unable to connect to Room`: `Unable to connect to Room` = ("Unable to connect to Room").asInstanceOf[`Unable to connect to Room`]
-  
-  @js.native
-  sealed trait `Unable to create Room` extends StObject
-  inline def `Unable to create Room`: `Unable to create Room` = ("Unable to create Room").asInstanceOf[`Unable to create Room`]
+  sealed trait TRACE
+    extends StObject
+       with LogLevelDesc
+  inline def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
   sealed trait VP8
@@ -244,8 +78,10 @@ object twilioVideoStrings {
   inline def VP9: VP9 = "VP9".asInstanceOf[VP9]
   
   @js.native
-  sealed trait au1 extends StObject
-  inline def au1: au1 = "au1".asInstanceOf[au1]
+  sealed trait WARN
+    extends StObject
+       with LogLevelDesc
+  inline def WARN: WARN = "WARN".asInstanceOf[WARN]
   
   @js.native
   sealed trait audio
@@ -254,8 +90,11 @@ object twilioVideoStrings {
   inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait br1 extends StObject
-  inline def br1: br1 = "br1".asInstanceOf[br1]
+  sealed trait auto
+    extends StObject
+       with ClientTrackSwitchOffControl
+       with VideoContentPreferencesMode
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait collaboration
@@ -264,20 +103,21 @@ object twilioVideoStrings {
   inline def collaboration: collaboration = "collaboration".asInstanceOf[collaboration]
   
   @js.native
+  sealed trait completed extends StObject
+  inline def completed: completed = "completed".asInstanceOf[completed]
+  
+  @js.native
   sealed trait data
     extends StObject
        with Kind
   inline def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait de1 extends StObject
-  inline def de1: de1 = "de1".asInstanceOf[de1]
-  
-  @js.native
-  sealed trait debug
+  sealed trait debug_
     extends StObject
        with LogLevel
-  inline def debug: debug = "debug".asInstanceOf[debug]
+       with LogLevelDesc
+  inline def debug_ : debug_ = "debug".asInstanceOf[debug_]
   
   @js.native
   sealed trait detected
@@ -286,20 +126,37 @@ object twilioVideoStrings {
   inline def detected: detected = "detected".asInstanceOf[detected]
   
   @js.native
+  sealed trait dimensionsChanged extends StObject
+  inline def dimensionsChanged: dimensionsChanged = "dimensionsChanged".asInstanceOf[dimensionsChanged]
+  
+  @js.native
   sealed trait disabled
     extends StObject
        with TrackSwitchOffMode
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait error
-    extends StObject
-       with LogLevel
-  inline def error: error = "error".asInstanceOf[error]
+  sealed trait disconnected extends StObject
+  inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
-  sealed trait gll extends StObject
-  inline def gll: gll = "gll".asInstanceOf[gll]
+  sealed trait dominantSpeakerChanged extends StObject
+  inline def dominantSpeakerChanged: dominantSpeakerChanged = "dominantSpeakerChanged".asInstanceOf[dominantSpeakerChanged]
+  
+  @js.native
+  sealed trait enabled extends StObject
+  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
+  
+  @js.native
+  sealed trait error_
+    extends StObject
+       with LogLevel
+       with LogLevelDesc
+  inline def error_ : error_ = "error".asInstanceOf[error_]
+  
+  @js.native
+  sealed trait failed extends StObject
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
   sealed trait grid
@@ -314,14 +171,11 @@ object twilioVideoStrings {
   inline def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait ie1 extends StObject
-  inline def ie1: ie1 = "ie1".asInstanceOf[ie1]
-  
-  @js.native
-  sealed trait info
+  sealed trait info_
     extends StObject
        with LogLevel
-  inline def info: info = "info".asInstanceOf[info]
+       with LogLevelDesc
+  inline def info_ : info_ = "info".asInstanceOf[info_]
   
   @js.native
   sealed trait isac
@@ -330,14 +184,31 @@ object twilioVideoStrings {
   inline def isac: isac = "isac".asInstanceOf[isac]
   
   @js.native
-  sealed trait jp1 extends StObject
-  inline def jp1: jp1 = "jp1".asInstanceOf[jp1]
+  sealed trait krisp
+    extends StObject
+       with NoiseCancellationVendor
+  inline def krisp: krisp = "krisp".asInstanceOf[krisp]
   
   @js.native
   sealed trait low
     extends StObject
        with Priority
   inline def low: low = "low".asInstanceOf[low]
+  
+  @js.native
+  sealed trait manual
+    extends StObject
+       with ClientTrackSwitchOffControl
+       with VideoContentPreferencesMode
+  inline def manual: manual = "manual".asInstanceOf[manual]
+  
+  @js.native
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
+  
+  @js.native
+  sealed trait networkQualityLevelChanged extends StObject
+  inline def networkQualityLevelChanged: networkQualityLevelChanged = "networkQualityLevelChanged".asInstanceOf[networkQualityLevelChanged]
   
   @js.native
   sealed trait off
@@ -352,6 +223,22 @@ object twilioVideoStrings {
   inline def opus: opus = "opus".asInstanceOf[opus]
   
   @js.native
+  sealed trait participantConnected extends StObject
+  inline def participantConnected: participantConnected = "participantConnected".asInstanceOf[participantConnected]
+  
+  @js.native
+  sealed trait participantDisconnected extends StObject
+  inline def participantDisconnected: participantDisconnected = "participantDisconnected".asInstanceOf[participantDisconnected]
+  
+  @js.native
+  sealed trait participantReconnected extends StObject
+  inline def participantReconnected: participantReconnected = "participantReconnected".asInstanceOf[participantReconnected]
+  
+  @js.native
+  sealed trait participantReconnecting extends StObject
+  inline def participantReconnecting: participantReconnecting = "participantReconnecting".asInstanceOf[participantReconnecting]
+  
+  @js.native
   sealed trait predicted
     extends StObject
        with TrackSwitchOffMode
@@ -364,8 +251,44 @@ object twilioVideoStrings {
   inline def presentation: presentation = "presentation".asInstanceOf[presentation]
   
   @js.native
-  sealed trait sg1 extends StObject
-  inline def sg1: sg1 = "sg1".asInstanceOf[sg1]
+  sealed trait progress extends StObject
+  inline def progress: progress = "progress".asInstanceOf[progress]
+  
+  @js.native
+  sealed trait publishPriorityChanged extends StObject
+  inline def publishPriorityChanged: publishPriorityChanged = "publishPriorityChanged".asInstanceOf[publishPriorityChanged]
+  
+  @js.native
+  sealed trait reconnected extends StObject
+  inline def reconnected: reconnected = "reconnected".asInstanceOf[reconnected]
+  
+  @js.native
+  sealed trait reconnecting extends StObject
+  inline def reconnecting: reconnecting = "reconnecting".asInstanceOf[reconnecting]
+  
+  @js.native
+  sealed trait `recording-media-lost` extends StObject
+  inline def `recording-media-lost`: `recording-media-lost` = "recording-media-lost".asInstanceOf[`recording-media-lost`]
+  
+  @js.native
+  sealed trait recordingStarted extends StObject
+  inline def recordingStarted: recordingStarted = "recordingStarted".asInstanceOf[recordingStarted]
+  
+  @js.native
+  sealed trait recordingStopped extends StObject
+  inline def recordingStopped: recordingStopped = "recordingStopped".asInstanceOf[recordingStopped]
+  
+  @js.native
+  sealed trait rnnoise
+    extends StObject
+       with NoiseCancellationVendor
+  inline def rnnoise: rnnoise = "rnnoise".asInstanceOf[rnnoise]
+  
+  @js.native
+  sealed trait silent_
+    extends StObject
+       with LogLevelDesc
+  inline def silent_ : silent_ = "silent".asInstanceOf[silent_]
   
   @js.native
   sealed trait standard
@@ -374,12 +297,106 @@ object twilioVideoStrings {
   inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
-  sealed trait us1 extends StObject
-  inline def us1: us1 = "us1".asInstanceOf[us1]
+  sealed trait started extends StObject
+  inline def started: started = "started".asInstanceOf[started]
   
   @js.native
-  sealed trait us2 extends StObject
-  inline def us2: us2 = "us2".asInstanceOf[us2]
+  sealed trait stopped extends StObject
+  inline def stopped: stopped = "stopped".asInstanceOf[stopped]
+  
+  @js.native
+  sealed trait subscribed extends StObject
+  inline def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
+  
+  @js.native
+  sealed trait subscriptionFailed extends StObject
+  inline def subscriptionFailed: subscriptionFailed = "subscriptionFailed".asInstanceOf[subscriptionFailed]
+  
+  @js.native
+  sealed trait switchedOff extends StObject
+  inline def switchedOff: switchedOff = "switchedOff".asInstanceOf[switchedOff]
+  
+  @js.native
+  sealed trait switchedOn extends StObject
+  inline def switchedOn: switchedOn = "switchedOn".asInstanceOf[switchedOn]
+  
+  @js.native
+  sealed trait trace_
+    extends StObject
+       with LogLevelDesc
+  inline def trace_ : trace_ = "trace".asInstanceOf[trace_]
+  
+  @js.native
+  sealed trait trackDimensionsChanged extends StObject
+  inline def trackDimensionsChanged: trackDimensionsChanged = "trackDimensionsChanged".asInstanceOf[trackDimensionsChanged]
+  
+  @js.native
+  sealed trait trackDisabled extends StObject
+  inline def trackDisabled: trackDisabled = "trackDisabled".asInstanceOf[trackDisabled]
+  
+  @js.native
+  sealed trait trackEnabled extends StObject
+  inline def trackEnabled: trackEnabled = "trackEnabled".asInstanceOf[trackEnabled]
+  
+  @js.native
+  sealed trait trackMessage extends StObject
+  inline def trackMessage: trackMessage = "trackMessage".asInstanceOf[trackMessage]
+  
+  @js.native
+  sealed trait trackPublicationFailed extends StObject
+  inline def trackPublicationFailed: trackPublicationFailed = "trackPublicationFailed".asInstanceOf[trackPublicationFailed]
+  
+  @js.native
+  sealed trait trackPublishPriorityChanged extends StObject
+  inline def trackPublishPriorityChanged: trackPublishPriorityChanged = "trackPublishPriorityChanged".asInstanceOf[trackPublishPriorityChanged]
+  
+  @js.native
+  sealed trait trackPublished extends StObject
+  inline def trackPublished: trackPublished = "trackPublished".asInstanceOf[trackPublished]
+  
+  @js.native
+  sealed trait trackStarted extends StObject
+  inline def trackStarted: trackStarted = "trackStarted".asInstanceOf[trackStarted]
+  
+  @js.native
+  sealed trait trackStopped extends StObject
+  inline def trackStopped: trackStopped = "trackStopped".asInstanceOf[trackStopped]
+  
+  @js.native
+  sealed trait trackSubscribed extends StObject
+  inline def trackSubscribed: trackSubscribed = "trackSubscribed".asInstanceOf[trackSubscribed]
+  
+  @js.native
+  sealed trait trackSubscriptionFailed extends StObject
+  inline def trackSubscriptionFailed: trackSubscriptionFailed = "trackSubscriptionFailed".asInstanceOf[trackSubscriptionFailed]
+  
+  @js.native
+  sealed trait trackSwitchedOff extends StObject
+  inline def trackSwitchedOff: trackSwitchedOff = "trackSwitchedOff".asInstanceOf[trackSwitchedOff]
+  
+  @js.native
+  sealed trait trackSwitchedOn extends StObject
+  inline def trackSwitchedOn: trackSwitchedOn = "trackSwitchedOn".asInstanceOf[trackSwitchedOn]
+  
+  @js.native
+  sealed trait trackUnpublished extends StObject
+  inline def trackUnpublished: trackUnpublished = "trackUnpublished".asInstanceOf[trackUnpublished]
+  
+  @js.native
+  sealed trait trackUnsubscribed extends StObject
+  inline def trackUnsubscribed: trackUnsubscribed = "trackUnsubscribed".asInstanceOf[trackUnsubscribed]
+  
+  @js.native
+  sealed trait trackWarning extends StObject
+  inline def trackWarning: trackWarning = "trackWarning".asInstanceOf[trackWarning]
+  
+  @js.native
+  sealed trait trackWarningsCleared extends StObject
+  inline def trackWarningsCleared: trackWarningsCleared = "trackWarningsCleared".asInstanceOf[trackWarningsCleared]
+  
+  @js.native
+  sealed trait unsubscribed extends StObject
+  inline def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
   
   @js.native
   sealed trait video
@@ -388,8 +405,17 @@ object twilioVideoStrings {
   inline def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait warn
+  sealed trait warn_
     extends StObject
        with LogLevel
-  inline def warn: warn = "warn".asInstanceOf[warn]
+       with LogLevelDesc
+  inline def warn_ : warn_ = "warn".asInstanceOf[warn_]
+  
+  @js.native
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait warningsCleared extends StObject
+  inline def warningsCleared: warningsCleared = "warningsCleared".asInstanceOf[warningsCleared]
 }

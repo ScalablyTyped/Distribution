@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.gif
 import typings.arcgisJsApi.arcgisJsApiStrings.jpg
 import typings.arcgisJsApi.arcgisJsApiStrings.lerc
 import typings.arcgisJsApi.arcgisJsApiStrings.mixed
+import typings.arcgisJsApi.arcgisJsApiStrings.pbf
 import typings.arcgisJsApi.arcgisJsApiStrings.pdf
 import typings.arcgisJsApi.arcgisJsApiStrings.png
 import typings.arcgisJsApi.arcgisJsApiStrings.png24
@@ -23,6 +24,8 @@ trait TileInfoProperties extends StObject {
   /**
     * The dots per inch (DPI) of the tiling scheme.
     *
+    * @default 96
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#dpi)
     */
   var dpi: js.UndefOr[Double] = js.undefined
@@ -33,7 +36,7 @@ trait TileInfoProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#format)
     */
   var format: js.UndefOr[
-    png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc
+    png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc | pbf
   ] = js.undefined
   
   /**
@@ -84,7 +87,9 @@ object TileInfoProperties {
     
     inline def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
-    inline def setFormat(value: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(
+      value: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc | pbf
+    ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
@@ -96,7 +101,7 @@ object TileInfoProperties {
     
     inline def setLodsUndefined: Self = StObject.set(x, "lods", js.undefined)
     
-    inline def setLodsVarargs(value: LODProperties*): Self = StObject.set(x, "lods", js.Array(value :_*))
+    inline def setLodsVarargs(value: LODProperties*): Self = StObject.set(x, "lods", js.Array(value*))
     
     inline def setOrigin(value: PointProperties): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
@@ -106,7 +111,7 @@ object TileInfoProperties {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
     
     inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     

@@ -9,5 +9,5 @@ object wineVmMod {
   
   @JSImport("app-builder-lib/out/vm/WineVm", "WineVmManager")
   @js.native
-  class WineVmManager () extends VmManager
+  open class WineVmManager () extends VmManager
 }

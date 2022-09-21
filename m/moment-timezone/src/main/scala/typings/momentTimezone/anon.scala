@@ -25,13 +25,13 @@ object anon {
       
       inline def setLinks(value: js.Array[String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      inline def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
       
-      inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+      inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value*))
     }
   }
 }

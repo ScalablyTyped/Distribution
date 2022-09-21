@@ -1,6 +1,6 @@
 package typings.cookieclicker.Game
 
-import typings.cookieclicker.cookieclickerStrings.achievement
+import typings.cookieclicker.cookieclickerStrings.achievement_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +22,8 @@ trait Achievement extends StObject {
     */
   var clickFunction: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  var ddesc: String
+  
   /**
     * The description of the upgrade with auto-adjusted text
     */
@@ -29,6 +31,10 @@ trait Achievement extends StObject {
   
   /** Unused @deprecated */
   var disabled: PseudoBoolean
+  
+  var dname: String
+  
+  def getType(): typings.cookieclicker.cookieclickerStrings.Achievement
   
   var icon: Icon
   
@@ -48,7 +54,7 @@ trait Achievement extends StObject {
     */
   def toggle(): Unit
   
-  var `type`: achievement
+  var `type`: achievement_
   
   var vanilla: PseudoBoolean
   
@@ -59,8 +65,11 @@ object Achievement {
   inline def apply(
     baseDesc: String,
     click: () => Unit,
+    ddesc: String,
     desc: String,
     disabled: PseudoBoolean,
+    dname: String,
+    getType: () => typings.cookieclicker.cookieclickerStrings.Achievement,
     icon: Icon,
     id: Double,
     name: String,
@@ -70,7 +79,7 @@ object Achievement {
     vanilla: PseudoBoolean,
     won: PseudoBoolean
   ): Achievement = {
-    val __obj = js.Dynamic.literal(baseDesc = baseDesc.asInstanceOf[js.Any], click = js.Any.fromFunction0(click), desc = desc.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], toggle = js.Any.fromFunction0(toggle), vanilla = vanilla.asInstanceOf[js.Any], won = won.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseDesc = baseDesc.asInstanceOf[js.Any], click = js.Any.fromFunction0(click), ddesc = ddesc.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], dname = dname.asInstanceOf[js.Any], getType = js.Any.fromFunction0(getType), icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], toggle = js.Any.fromFunction0(toggle), vanilla = vanilla.asInstanceOf[js.Any], won = won.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("achievement")
     __obj.asInstanceOf[Achievement]
   }
@@ -85,9 +94,15 @@ object Achievement {
     
     inline def setClickFunctionUndefined: Self = StObject.set(x, "clickFunction", js.undefined)
     
+    inline def setDdesc(value: String): Self = StObject.set(x, "ddesc", value.asInstanceOf[js.Any])
+    
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     inline def setDisabled(value: PseudoBoolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDname(value: String): Self = StObject.set(x, "dname", value.asInstanceOf[js.Any])
+    
+    inline def setGetType(value: () => typings.cookieclicker.cookieclickerStrings.Achievement): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
@@ -101,7 +116,7 @@ object Achievement {
     
     inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
-    inline def setType(value: achievement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: achievement_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setVanilla(value: PseudoBoolean): Self = StObject.set(x, "vanilla", value.asInstanceOf[js.Any])
     

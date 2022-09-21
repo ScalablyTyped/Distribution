@@ -55,9 +55,9 @@ object uispinneroptionsMod {
       */
     var exactMatch: js.UndefOr[Boolean] = js.undefined
     
-    var icons: js.UndefOr[js.Any] = js.undefined
+    var icons: js.UndefOr[Any] = js.undefined
     
-    var incremental: js.UndefOr[js.Any] = js.undefined
+    var incremental: js.UndefOr[Any] = js.undefined
     
     /**
       * The maximum value of the control.
@@ -114,7 +114,7 @@ object uispinneroptionsMod {
       
       inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
       
-      inline def setCompareVarargs(value: String*): Self = StObject.set(x, "compare", js.Array(value :_*))
+      inline def setCompareVarargs(value: String*): Self = StObject.set(x, "compare", js.Array(value*))
       
       inline def setCreate(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
@@ -136,11 +136,11 @@ object uispinneroptionsMod {
       
       inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
       
-      inline def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
       inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      inline def setIncremental(value: js.Any): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
+      inline def setIncremental(value: Any): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
       
       inline def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
       

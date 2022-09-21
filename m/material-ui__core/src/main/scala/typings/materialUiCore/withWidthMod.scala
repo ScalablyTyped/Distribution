@@ -1,10 +1,10 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.createBreakpointsMod.Breakpoint
-import typings.materialUiCore.mod.PropInjector
 import typings.materialUiCore.withWidthWithWidthMod.WithWidth
 import typings.materialUiCore.withWidthWithWidthMod.WithWidthOptions
 import typings.materialUiCore.withWidthWithWidthMod.WithWidthProps
+import typings.materialUiTypes.mod.PropInjector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

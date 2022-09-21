@@ -11,33 +11,32 @@ import typings.luminoSignaling.mod.Signal
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object celleditorMod {
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "BooleanCellEditor")
+  @JSImport("@lumino/datagrid/types/celleditor", "BooleanCellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
-  class BooleanCellEditor () extends CellEditor {
+  open class BooleanCellEditor () extends CellEditor {
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _createWidget: js.Any = js.native
+    /* private */ var _createWidget: Any = js.native
     
-    /* private */ var _deserialize: js.Any = js.native
+    /* private */ var _deserialize: Any = js.native
     
-    /* private */ var _input: js.Any = js.native
+    /* private */ var _input: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     /**
       * Handle the DOM events for the editor.
@@ -47,7 +46,7 @@ object celleditorMod {
     def handleEvent(event: Event): Unit = js.native
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "CellEditor")
+  @JSImport("@lumino/datagrid/types/celleditor", "CellEditor")
   @js.native
   /**
     * Construct a new cell editor.
@@ -61,22 +60,27 @@ object celleditorMod {
       * Create container elements needed to prevent editor widget overflow
       * beyond viewport and to position cell editor widget.
       */
-    /* private */ var _addContainer: js.Any = js.native
+    /* private */ var _addContainer: Any = js.native
     
     /**
       * Remove validity notification popup.
       */
-    /* private */ var _closeValidityNotification: js.Any = js.native
+    /* private */ var _closeValidityNotification: Any = js.native
     
     /**
       * Whether the cell editor is disposed.
       */
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
+    
+    /**
+      * Grid wheel event handler.
+      */
+    /* private */ var _gridWheelEventHandler: Any = js.native
     
     /**
       * Whether the value input is valid.
       */
-    /* private */ var _validInput: js.Any = js.native
+    /* private */ var _validInput: Any = js.native
     
     /**
       * Cell configuration data for the cell being edited.
@@ -127,7 +131,7 @@ object celleditorMod {
       * Return the current input entered. This method throws exceptions
       * if input is invalid. Error message in exception is shown as notification.
       */
-    /* protected */ def getInput(): js.Any = js.native
+    /* protected */ def getInput(): Any = js.native
     
     /**
       * A signal emitted when input changes.
@@ -242,26 +246,26 @@ object celleditorMod {
     }
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "DateCellEditor")
+  @JSImport("@lumino/datagrid/types/celleditor", "DateCellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
-  class DateCellEditor () extends CellEditor {
+  open class DateCellEditor () extends CellEditor {
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _createWidget: js.Any = js.native
+    /* private */ var _createWidget: Any = js.native
     
-    /* private */ var _deserialize: js.Any = js.native
+    /* private */ var _deserialize: Any = js.native
     
-    /* private */ var _input: js.Any = js.native
+    /* private */ var _input: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     /**
       * Handle the DOM events for the editor.
@@ -271,26 +275,26 @@ object celleditorMod {
     def handleEvent(event: Event): Unit = js.native
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "DynamicOptionCellEditor")
+  @JSImport("@lumino/datagrid/types/celleditor", "DynamicOptionCellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
-  class DynamicOptionCellEditor () extends CellEditor {
+  open class DynamicOptionCellEditor () extends CellEditor {
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _createWidget: js.Any = js.native
+    /* private */ var _createWidget: Any = js.native
     
-    /* private */ var _deserialize: js.Any = js.native
+    /* private */ var _deserialize: Any = js.native
     
-    /* private */ var _input: js.Any = js.native
+    /* private */ var _input: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     /**
       * Handle the DOM events for the editor.
@@ -300,26 +304,26 @@ object celleditorMod {
     def handleEvent(event: Event): Unit = js.native
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "InputCellEditor")
+  @JSImport("@lumino/datagrid/types/celleditor", "InputCellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
   abstract class InputCellEditor () extends CellEditor {
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onInput: js.Any = js.native
+    /* private */ var _onInput: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     /* protected */ def bindEvents(): Unit = js.native
     
     /* protected */ def createWidget(): Unit = js.native
     
-    /* protected */ def deserialize(value: js.Any): js.Any = js.native
+    /* protected */ def deserialize(value: Any): Any = js.native
     
     /**
       * Handle the DOM events for the editor.
@@ -333,16 +337,16 @@ object celleditorMod {
     /* protected */ var inputType: String = js.native
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "IntegerCellEditor")
+  @JSImport("@lumino/datagrid/types/celleditor", "IntegerCellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
-  class IntegerCellEditor () extends InputCellEditor
+  open class IntegerCellEditor () extends InputCellEditor
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "IntegerInputValidator")
+  @JSImport("@lumino/datagrid/types/celleditor", "IntegerInputValidator")
   @js.native
-  class IntegerInputValidator ()
+  open class IntegerInputValidator ()
     extends StObject
        with ICellInputValidator {
     
@@ -370,7 +374,7 @@ object celleditorMod {
       * @returns An object with validation result.
       */
     /* CompleteClass */
-    override def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
+    override def validate(cell: CellConfig, value: Any): ICellInputValidatorResponse = js.native
     /**
       * Validate cell input.
       *
@@ -383,16 +387,16 @@ object celleditorMod {
     def validate(cell: CellConfig, value: Double): ICellInputValidatorResponse = js.native
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "NumberCellEditor")
+  @JSImport("@lumino/datagrid/types/celleditor", "NumberCellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
-  class NumberCellEditor () extends InputCellEditor
+  open class NumberCellEditor () extends InputCellEditor
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "NumberInputValidator")
+  @JSImport("@lumino/datagrid/types/celleditor", "NumberInputValidator")
   @js.native
-  class NumberInputValidator ()
+  open class NumberInputValidator ()
     extends StObject
        with ICellInputValidator {
     
@@ -420,7 +424,7 @@ object celleditorMod {
       * @returns An object with validation result.
       */
     /* CompleteClass */
-    override def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
+    override def validate(cell: CellConfig, value: Any): ICellInputValidatorResponse = js.native
     /**
       * Validate cell input.
       *
@@ -433,31 +437,31 @@ object celleditorMod {
     def validate(cell: CellConfig, value: Double): ICellInputValidatorResponse = js.native
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "OptionCellEditor")
+  @JSImport("@lumino/datagrid/types/celleditor", "OptionCellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
-  class OptionCellEditor () extends CellEditor {
+  open class OptionCellEditor () extends CellEditor {
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _createWidget: js.Any = js.native
+    /* private */ var _createWidget: Any = js.native
     
-    /* private */ var _deserialize: js.Any = js.native
+    /* private */ var _deserialize: Any = js.native
     
-    /* private */ var _isMultiSelect: js.Any = js.native
+    /* private */ var _isMultiSelect: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _select: js.Any = js.native
+    /* private */ var _select: Any = js.native
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "PassInputValidator")
+  @JSImport("@lumino/datagrid/types/celleditor", "PassInputValidator")
   @js.native
-  class PassInputValidator ()
+  open class PassInputValidator ()
     extends StObject
        with ICellInputValidator {
     
@@ -471,19 +475,19 @@ object celleditorMod {
       * @returns An object with validation result.
       */
     /* CompleteClass */
-    override def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
+    override def validate(cell: CellConfig, value: Any): ICellInputValidatorResponse = js.native
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "TextCellEditor")
+  @JSImport("@lumino/datagrid/types/celleditor", "TextCellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
-  class TextCellEditor () extends InputCellEditor
+  open class TextCellEditor () extends InputCellEditor
   
-  @JSImport("@lumino/datagrid/lib/celleditor", "TextInputValidator")
+  @JSImport("@lumino/datagrid/types/celleditor", "TextInputValidator")
   @js.native
-  class TextInputValidator ()
+  open class TextInputValidator ()
     extends StObject
        with ICellInputValidator {
     
@@ -506,7 +510,7 @@ object celleditorMod {
       *
       * The default is null, meaning no pattern constraint
       */
-    var pattern: RegExp | Null = js.native
+    var pattern: js.RegExp | Null = js.native
     
     /**
       * Validate cell input.
@@ -528,7 +532,7 @@ object celleditorMod {
       * @returns An object with validation result.
       */
     /* CompleteClass */
-    override def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
+    override def validate(cell: CellConfig, value: Any): ICellInputValidatorResponse = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -647,11 +651,11 @@ object celleditorMod {
     /**
       * Value input.
       */
-    var value: js.Any
+    var value: Any
   }
   object ICellEditResponse {
     
-    inline def apply(cell: CellConfig, cursorMovement: CursorMoveDirection, value: js.Any): ICellEditResponse = {
+    inline def apply(cell: CellConfig, cursorMovement: CursorMoveDirection, value: Any): ICellEditResponse = {
       val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], cursorMovement = cursorMovement.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICellEditResponse]
     }
@@ -662,7 +666,7 @@ object celleditorMod {
       
       inline def setCursorMovement(value: CursorMoveDirection): Self = StObject.set(x, "cursorMovement", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -696,18 +700,18 @@ object celleditorMod {
       *
       * @returns An object with validation result.
       */
-    def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse
+    def validate(cell: CellConfig, value: Any): ICellInputValidatorResponse
   }
   object ICellInputValidator {
     
-    inline def apply(validate: (CellConfig, js.Any) => ICellInputValidatorResponse): ICellInputValidator = {
+    inline def apply(validate: (CellConfig, Any) => ICellInputValidatorResponse): ICellInputValidator = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction2(validate))
       __obj.asInstanceOf[ICellInputValidator]
     }
     
     extension [Self <: ICellInputValidator](x: Self) {
       
-      inline def setValidate(value: (CellConfig, js.Any) => ICellInputValidatorResponse): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+      inline def setValidate(value: (CellConfig, Any) => ICellInputValidatorResponse): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }
   }
   
@@ -752,7 +756,7 @@ object celleditorMod {
       
       var column: Double
       
-      var data: js.Any
+      var data: Any
       
       var grid: DataGrid
       
@@ -770,7 +774,7 @@ object celleditorMod {
       
       inline def apply(
         column: Double,
-        data: js.Any,
+        data: Any,
         grid: DataGrid,
         height: Double,
         row: Double,
@@ -786,7 +790,7 @@ object celleditorMod {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setGrid(value: DataGrid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
         

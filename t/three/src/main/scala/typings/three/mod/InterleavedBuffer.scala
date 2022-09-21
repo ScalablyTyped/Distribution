@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "InterleavedBuffer")
 @js.native
-class InterleavedBuffer protected ()
-  extends typings.three.interleavedBufferMod.InterleavedBuffer {
+open class InterleavedBuffer protected ()
+  extends typings.three.threeMod.InterleavedBuffer {
   def this(array: ArrayLike[Double], stride: Double) = this()
 }

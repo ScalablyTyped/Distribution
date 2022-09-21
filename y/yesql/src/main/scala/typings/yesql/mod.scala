@@ -23,7 +23,7 @@ object mod {
   inline def pg[TParams /* <: js.Object */](query: String): js.Function1[/* params */ TParams, Text[TParams]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pg")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* params */ TParams, Text[TParams]]]
   inline def pg[TParams /* <: js.Object */](query: String, options: Options): js.Function1[/* params */ TParams, Text[TParams]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pg")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* params */ TParams, Text[TParams]]]
   
-  type AnyParams = Record[String, js.Any]
+  type AnyParams = Record[String, Any]
   
   trait Options extends StObject {
     

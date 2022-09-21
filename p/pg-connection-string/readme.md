@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-connection-string
 
-Typings are for version 2.4.0
+Typings are for version 2.5.0
 
 ## Library description:
 Functions for dealing with a PostgresSQL connection string
@@ -10,14 +10,14 @@ Functions for dealing with a PostgresSQL connection string
 | ------------------ | :-------------: |
 | Full name          | pg-connection-string |
 | Keywords           | pg, connection, string, parse |
-| # releases         | 7 |
-| # dependents       | 131 |
-| # downloads        | 79031499 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5960144333333334E7 |
+| # stars            | 10493.0 |
 
 ## Links
-- [Homepage](https://github.com/iceddev/pg-connection-string)
-- [Bugs](https://github.com/iceddev/pg-connection-string/issues)
+- [Homepage](https://github.com/brianc/node-postgres/tree/master/packages/pg-connection-string)
+- [Bugs](https://github.com/brianc/node-postgres/issues)
 - [Repository](https://github.com/brianc/node-postgres)
 - [Npm](https://www.npmjs.com/package/pg-connection-string)
     

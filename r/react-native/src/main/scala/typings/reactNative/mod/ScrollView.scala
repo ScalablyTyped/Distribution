@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "ScrollView")
 @js.native
-class ScrollView ()
-  extends Component[ScrollViewProps, js.Object, js.Any] {
+open class ScrollView ()
+  extends Component[ScrollViewProps, js.Object, Any] {
   
   /**
     * Displays the scroll indicators momentarily.
@@ -18,7 +18,7 @@ class ScrollView ()
   def flashScrollIndicators(): Unit = js.native
   
   // Undocumented
-  def getInnerViewNode(): js.Any = js.native
+  def getInnerViewNode(): Any = js.native
   
   /**
     * Returns a reference to the underlying scroll responder, which supports
@@ -28,7 +28,7 @@ class ScrollView ()
     */
   def getScrollResponder(): ScrollResponderMixin = js.native
   
-  def getScrollableNode(): js.Any = js.native
+  def getScrollableNode(): Any = js.native
   
   /**
     * Scrolls to a given x, y offset, either immediately or with a smooth animation.

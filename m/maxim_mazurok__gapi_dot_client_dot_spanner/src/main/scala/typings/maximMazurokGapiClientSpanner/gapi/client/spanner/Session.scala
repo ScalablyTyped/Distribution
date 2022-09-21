@@ -13,6 +13,9 @@ trait Session extends StObject {
   /** Output only. The timestamp when the session is created. */
   var createTime: js.UndefOr[String] = js.undefined
   
+  /** The database role which created this session. */
+  var creatorRole: js.UndefOr[String] = js.undefined
+  
   /**
     * The labels for the session. * Label keys must be between 1 and 63 characters long and must conform to the following regular expression: `[a-z]([-a-z0-9]*[a-z0-9])?`. * Label values
     * must be between 0 and 63 characters long and must conform to the regular expression `([a-z]([-a-z0-9]*[a-z0-9])?)?`. * No more than 64 labels can be associated with a given session.
@@ -21,7 +24,7 @@ trait Session extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The name of the session. This is always system-assigned. */
@@ -44,10 +47,14 @@ object Session {
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
+    inline def setCreatorRole(value: String): Self = StObject.set(x, "creatorRole", value.asInstanceOf[js.Any])
+    
+    inline def setCreatorRoleUndefined: Self = StObject.set(x, "creatorRole", js.undefined)
+    
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

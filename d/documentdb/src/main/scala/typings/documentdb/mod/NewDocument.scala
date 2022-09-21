@@ -9,7 +9,7 @@ trait NewDocument
   extends StObject
      with UniqueId
      with /** Custom properties */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   /** The time to live in seconds of the document. */
   var ttl: js.UndefOr[Double] = js.undefined

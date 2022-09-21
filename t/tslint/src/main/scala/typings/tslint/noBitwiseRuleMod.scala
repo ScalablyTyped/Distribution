@@ -11,7 +11,7 @@ object noBitwiseRuleMod {
   
   @JSImport("tslint/lib/rules/noBitwiseRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */

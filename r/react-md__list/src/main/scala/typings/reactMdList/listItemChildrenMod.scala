@@ -10,91 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listItemChildrenMod {
   
-  object ListItemChildren {
-    
-    inline def apply(
-      hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren: ListItemChildrenProps
-    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.forceAddonWrap")
-      @js.native
-      def forceAddonWrap: js.Any = js.native
-      inline def forceAddonWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAddonWrap")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.leftAddon")
-      @js.native
-      def leftAddon: js.Any = js.native
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.leftAddonPosition")
-      @js.native
-      def leftAddonPosition: js.Any = js.native
-      inline def leftAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonPosition")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.leftAddonType")
-      @js.native
-      def leftAddonType: js.Any = js.native
-      inline def leftAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonType")(x.asInstanceOf[js.Any])
-      
-      inline def leftAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddon")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.primaryText")
-      @js.native
-      def primaryText: js.Any = js.native
-      inline def primaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryText")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.rightAddon")
-      @js.native
-      def rightAddon: js.Any = js.native
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.rightAddonPosition")
-      @js.native
-      def rightAddonPosition: js.Any = js.native
-      inline def rightAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonPosition")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.rightAddonType")
-      @js.native
-      def rightAddonType: js.Any = js.native
-      inline def rightAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonType")(x.asInstanceOf[js.Any])
-      
-      inline def rightAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddon")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.secondaryText")
-      @js.native
-      def secondaryText: js.Any = js.native
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.secondaryTextClassName")
-      @js.native
-      def secondaryTextClassName: js.Any = js.native
-      inline def secondaryTextClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryTextClassName")(x.asInstanceOf[js.Any])
-      
-      inline def secondaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryText")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.textChildren")
-      @js.native
-      def textChildren: js.Any = js.native
-      inline def textChildren_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textChildren")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.textClassName")
-      @js.native
-      def textClassName: js.Any = js.native
-      inline def textClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textClassName")(x.asInstanceOf[js.Any])
-    }
-  }
+  @JSImport("@react-md/list/types/ListItemChildren", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def ListItemChildren(
+    hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren: ListItemChildrenProps
+  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemChildren")(hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait ListItemChildrenProps extends StObject {
     

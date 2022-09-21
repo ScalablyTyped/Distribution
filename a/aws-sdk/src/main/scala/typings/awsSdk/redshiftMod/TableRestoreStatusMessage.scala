@@ -33,6 +33,6 @@ object TableRestoreStatusMessage {
     
     inline def setTableRestoreStatusDetailsUndefined: Self = StObject.set(x, "TableRestoreStatusDetails", js.undefined)
     
-    inline def setTableRestoreStatusDetailsVarargs(value: TableRestoreStatus*): Self = StObject.set(x, "TableRestoreStatusDetails", js.Array(value :_*))
+    inline def setTableRestoreStatusDetailsVarargs(value: TableRestoreStatus*): Self = StObject.set(x, "TableRestoreStatusDetails", js.Array(value*))
   }
 }

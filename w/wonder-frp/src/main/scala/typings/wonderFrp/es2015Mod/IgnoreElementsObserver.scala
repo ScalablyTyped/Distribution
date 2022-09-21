@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "IgnoreElementsObserver")
 @js.native
-class IgnoreElementsObserver protected ()
+open class IgnoreElementsObserver protected ()
   extends typings.wonderFrp.observerIgnoreElementsObserverMod.IgnoreElementsObserver {
   def this(currentObserver: IObserver) = this()
 }

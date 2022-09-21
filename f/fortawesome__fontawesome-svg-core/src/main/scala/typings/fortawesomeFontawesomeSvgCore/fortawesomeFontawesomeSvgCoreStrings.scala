@@ -28,6 +28,18 @@ object fortawesomeFontawesomeSvgCoreStrings {
   inline def `2x`: `2x` = "2x".asInstanceOf[`2x`]
   
   @js.native
+  sealed trait `2xl`
+    extends StObject
+       with SizeProp
+  inline def `2xl`: `2xl` = "2xl".asInstanceOf[`2xl`]
+  
+  @js.native
+  sealed trait `2xs`
+    extends StObject
+       with SizeProp
+  inline def `2xs`: `2xs` = "2xs".asInstanceOf[`2xs`]
+  
+  @js.native
   sealed trait `3x`
     extends StObject
        with SizeProp
@@ -130,6 +142,12 @@ object fortawesomeFontawesomeSvgCoreStrings {
     extends StObject
        with FlipProp
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait xl
+    extends StObject
+       with SizeProp
+  inline def xl: xl = "xl".asInstanceOf[xl]
   
   @js.native
   sealed trait xs

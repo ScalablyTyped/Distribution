@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConnectorSearchResults[TDoc] extends StObject {
   
-  var error: js.Any
+  var error: Any
   
   var isSearchStalled: Boolean
   
@@ -19,7 +19,7 @@ trait ConnectorSearchResults[TDoc] extends StObject {
 object ConnectorSearchResults {
   
   inline def apply[TDoc](
-    error: js.Any,
+    error: Any,
     isSearchStalled: Boolean,
     results: AllSearchResults[TDoc],
     searching: Boolean,
@@ -31,7 +31,7 @@ object ConnectorSearchResults {
   
   extension [Self <: ConnectorSearchResults[?], TDoc](x: Self & ConnectorSearchResults[TDoc]) {
     
-    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setIsSearchStalled(value: Boolean): Self = StObject.set(x, "isSearchStalled", value.asInstanceOf[js.Any])
     

@@ -4,6 +4,7 @@ import typings.twineSugarcube.audioMod.SimpleAudioAPI
 import typings.twineSugarcube.configMod.ConfigAPI
 import typings.twineSugarcube.engineMod.EngineAPI
 import typings.twineSugarcube.macroMod.MacroAPI
+import typings.twineSugarcube.saveMod.SaveAPI
 import typings.twineSugarcube.scriptingMod.ScriptingAPI
 import typings.twineSugarcube.settingsMod.SettingsAPI
 import typings.twineSugarcube.stateMod.StateAPI
@@ -64,6 +65,10 @@ object globalsMod {
     @JSGlobal("Macro")
     @js.native
     val Macro: MacroAPI = js.native
+    
+    @JSGlobal("Save")
+    @js.native
+    val Save: SaveAPI = js.native
     
     @JSGlobal("Scripting")
     @js.native

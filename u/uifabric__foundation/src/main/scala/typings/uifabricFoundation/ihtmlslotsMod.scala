@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ihtmlslotsMod {
   
-  type IHTMLElementSlot[TElement /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = ISlotProp[
+  type IHTMLElementSlot[TElement /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */] = ISlotProp[
     /* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[TElement] */ js.Any, 
     scala.Nothing
   ]
   
-  type IHTMLSlot = ISlotProp[DetailedHTMLProps[HTMLAttributes[js.Any], js.Any], scala.Nothing]
+  type IHTMLSlot = ISlotProp[DetailedHTMLProps[HTMLAttributes[Any], Any], scala.Nothing]
 }

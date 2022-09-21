@@ -37,38 +37,38 @@ object mod {
   
   @JSImport("react-popper", "Manager")
   @js.native
-  class Manager protected ()
-    extends Component[ManagerProps, js.Object, js.Any] {
+  open class Manager protected ()
+    extends Component[ManagerProps, js.Object, Any] {
     def this(props: ManagerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ManagerProps, context: js.Any) = this()
+    def this(props: ManagerProps, context: Any) = this()
   }
   
   @JSImport("react-popper", "Popper")
   @js.native
-  class Popper[Modifiers] protected ()
-    extends Component[PopperProps[Modifiers], js.Object, js.Any] {
+  open class Popper[Modifiers] protected ()
+    extends Component[PopperProps[Modifiers], js.Object, Any] {
     def this(props: PopperProps[Modifiers]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PopperProps[Modifiers], context: js.Any) = this()
+    def this(props: PopperProps[Modifiers], context: Any) = this()
   }
   
   @JSImport("react-popper", "Reference")
   @js.native
-  class Reference protected ()
-    extends Component[ReferenceProps, js.Object, js.Any] {
+  open class Reference protected ()
+    extends Component[ReferenceProps, js.Object, Any] {
     def this(props: ReferenceProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReferenceProps, context: js.Any) = this()
+    def this(props: ReferenceProps, context: Any) = this()
   }
   
   inline def usePopper[Modifiers](): Attributes = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")().asInstanceOf[Attributes]
@@ -162,7 +162,7 @@ object mod {
   
   trait PopperArrowProps extends StObject {
     
-    var ref: Ref[js.Any]
+    var ref: Ref[Any]
     
     var style: CSSProperties
   }
@@ -175,9 +175,9 @@ object mod {
     
     extension [Self <: PopperArrowProps](x: Self) {
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -197,7 +197,7 @@ object mod {
     
     var placement: Placement
     
-    var ref: Ref[js.Any]
+    var ref: Ref[Any]
     
     var style: CSSProperties
     
@@ -232,9 +232,9 @@ object mod {
       
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -248,7 +248,7 @@ object mod {
     
     def children(props: PopperChildrenProps): ReactNode
     
-    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var modifiers: js.UndefOr[js.Array[Modifier[Modifiers, js.Object]]] = js.undefined
     
@@ -271,9 +271,9 @@ object mod {
       
       inline def setChildren(value: PopperChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      inline def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
@@ -283,7 +283,7 @@ object mod {
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      inline def setModifiersVarargs(value: (Modifier[Modifiers, js.Object])*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: (Modifier[Modifiers, js.Object])*): Self = StObject.set(x, "modifiers", js.Array(value*))
       
       inline def setOnFirstUpdate(value: /* state */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
       
@@ -310,7 +310,7 @@ object mod {
     // React refs are supposed to be contravariant (allows a more general type to be passed rather than a more specific one)
     // However, Typescript currently can't infer that fact for refs
     // See https://github.com/microsoft/TypeScript/issues/30748 for more information
-    var ref: Ref[js.Any]
+    var ref: Ref[Any]
   }
   object ReferenceChildrenProps {
     
@@ -321,9 +321,9 @@ object mod {
     
     extension [Self <: ReferenceChildrenProps](x: Self) {
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
     }
@@ -333,7 +333,7 @@ object mod {
     
     def children(props: ReferenceChildrenProps): ReactNode
     
-    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
   }
   object ReferenceProps {
     
@@ -346,9 +346,9 @@ object mod {
       
       inline def setChildren(value: ReferenceChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      inline def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       

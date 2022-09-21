@@ -19,5 +19,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @struct
   */
-class XML ()
+open class XML ()
   extends typings.openlayers.mod.format.XML

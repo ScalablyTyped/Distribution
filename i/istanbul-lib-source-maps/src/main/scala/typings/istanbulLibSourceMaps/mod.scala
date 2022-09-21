@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("istanbul-lib-source-maps", "SourceStore")
   @js.native
-  class SourceStore () extends StObject {
+  open class SourceStore () extends StObject {
     
     def getSource(filepath: String): String | Null = js.native
     
@@ -31,7 +31,7 @@ object mod {
   
   trait MapStore extends StObject {
     
-    def addInputSourceMapsSync(coverageData: js.Any): Unit
+    def addInputSourceMapsSync(coverageData: Any): Unit
     
     var baseDir: String | Null
     
@@ -39,7 +39,7 @@ object mod {
     
     def dispose(): Unit
     
-    def getSourceMapSync(filePath: String): js.Any
+    def getSourceMapSync(filePath: String): Any
     
     def registerMap(filename: String, sourceMap: RawSourceMap): Unit
     
@@ -56,10 +56,10 @@ object mod {
   object MapStore {
     
     inline def apply(
-      addInputSourceMapsSync: js.Any => Unit,
+      addInputSourceMapsSync: Any => Unit,
       data: StringDictionary[Data],
       dispose: () => Unit,
-      getSourceMapSync: String => js.Any,
+      getSourceMapSync: String => Any,
       registerMap: (String, RawSourceMap) => Unit,
       registerURL: (String, String) => Unit,
       sourceFinder: String => String,
@@ -73,7 +73,7 @@ object mod {
     
     extension [Self <: MapStore](x: Self) {
       
-      inline def setAddInputSourceMapsSync(value: js.Any => Unit): Self = StObject.set(x, "addInputSourceMapsSync", js.Any.fromFunction1(value))
+      inline def setAddInputSourceMapsSync(value: Any => Unit): Self = StObject.set(x, "addInputSourceMapsSync", js.Any.fromFunction1(value))
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
@@ -83,7 +83,7 @@ object mod {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      inline def setGetSourceMapSync(value: String => js.Any): Self = StObject.set(x, "getSourceMapSync", js.Any.fromFunction1(value))
+      inline def setGetSourceMapSync(value: String => Any): Self = StObject.set(x, "getSourceMapSync", js.Any.fromFunction1(value))
       
       inline def setRegisterMap(value: (String, RawSourceMap) => Unit): Self = StObject.set(x, "registerMap", js.Any.fromFunction2(value))
       

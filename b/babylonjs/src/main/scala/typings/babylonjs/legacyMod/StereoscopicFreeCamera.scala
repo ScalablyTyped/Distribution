@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "StereoscopicFreeCamera")
 @js.native
-class StereoscopicFreeCamera protected ()
+open class StereoscopicFreeCamera protected ()
   extends typings.babylonjs.indexMod.StereoscopicFreeCamera {
   /**
     * Creates a new StereoscopicFreeCamera
@@ -16,6 +16,12 @@ class StereoscopicFreeCamera protected ()
     * @param isStereoscopicSideBySide defines is stereoscopic is done side by side or over under
     * @param scene defines the hosting scene
     */
+  def this(
+    name: String,
+    position: typings.babylonjs.mathVectorMod.Vector3,
+    interaxialDistance: Double,
+    isStereoscopicSideBySide: Boolean
+  ) = this()
   def this(
     name: String,
     position: typings.babylonjs.mathVectorMod.Vector3,

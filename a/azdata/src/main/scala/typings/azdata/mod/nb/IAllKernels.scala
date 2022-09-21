@@ -23,6 +23,6 @@ object IAllKernels {
     
     inline def setKernels(value: js.Array[IKernelSpec]): Self = StObject.set(x, "kernels", value.asInstanceOf[js.Any])
     
-    inline def setKernelsVarargs(value: IKernelSpec*): Self = StObject.set(x, "kernels", js.Array(value :_*))
+    inline def setKernelsVarargs(value: IKernelSpec*): Self = StObject.set(x, "kernels", js.Array(value*))
   }
 }

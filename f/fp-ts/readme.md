@@ -1,7 +1,7 @@
 
 # Scala.js typings for fp-ts
 
-Typings are for version 2.8.6
+Typings are for version 2.12.3
 
 ## Library description:
 Functional programming in TypeScript
@@ -10,10 +10,10 @@ Functional programming in TypeScript
 | ------------------ | :-------------: |
 | Full name          | fp-ts |
 | Keywords           | typescript, algebraic-data-types, functional-programming |
-| # releases         | 91 |
-| # dependents       | 694 |
-| # downloads        | 16394513 |
-| # stars            | 1 |
+| # releases         | 68 |
+| # dependents       | 0.0 |
+| # downloads        | 4444425.333333333 |
+| # stars            | 8371.0 |
 
 ## Links
 - [Homepage](https://github.com/gcanti/fp-ts)

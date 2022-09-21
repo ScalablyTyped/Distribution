@@ -67,11 +67,11 @@ object types {
     var levelOfControl: LevelOfControl
     
     /** The value of the setting. */
-    var value: js.Any
+    var value: Any
   }
   object GetReturnDetails {
     
-    inline def apply(levelOfControl: LevelOfControl, value: js.Any): GetReturnDetails = {
+    inline def apply(levelOfControl: LevelOfControl, value: Any): GetReturnDetails = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetReturnDetails]
     }
@@ -84,7 +84,7 @@ object types {
       
       inline def setLevelOfControl(value: LevelOfControl): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,11 +126,11 @@ object types {
     var levelOfControl: LevelOfControl
     
     /** The value of the setting after the change. */
-    var value: js.Any
+    var value: Any
   }
   object OnChangeDetails {
     
-    inline def apply(levelOfControl: LevelOfControl, value: js.Any): OnChangeDetails = {
+    inline def apply(levelOfControl: LevelOfControl, value: Any): OnChangeDetails = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnChangeDetails]
     }
@@ -143,7 +143,7 @@ object types {
       
       inline def setLevelOfControl(value: LevelOfControl): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,11 +157,11 @@ object types {
       * The value of the setting.
       * Note that every setting has a specific value type, which is described together with the setting. An extension should _not_ set a value of a different type.
       */
-    var value: js.Any
+    var value: Any
   }
   object SetDetails {
     
-    inline def apply(value: js.Any): SetDetails = {
+    inline def apply(value: Any): SetDetails = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetDetails]
     }
@@ -172,7 +172,7 @@ object types {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

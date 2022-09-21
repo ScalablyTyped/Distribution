@@ -14,7 +14,7 @@ object vectorRenderTileMod {
   
   @JSImport("ol/VectorRenderTile", JSImport.Default)
   @js.native
-  class default protected () extends VectorRenderTile {
+  open class default protected () extends VectorRenderTile {
     def this(
       tileCoord: TileCoord,
       state: TileState,
@@ -27,9 +27,7 @@ object vectorRenderTileMod {
     
     var dirty: Boolean
     
-    def renderedRenderOrder(p0: FeatureLike, p1: FeatureLike): Double
-    @JSName("renderedRenderOrder")
-    var renderedRenderOrder_Original: OrderFunction
+    var renderedRenderOrder: Null | OrderFunction
     
     var renderedResolution: Double
     
@@ -47,7 +45,6 @@ object vectorRenderTileMod {
     
     inline def apply(
       dirty: Boolean,
-      renderedRenderOrder: (/* p0 */ FeatureLike, /* p1 */ FeatureLike) => Double,
       renderedResolution: Double,
       renderedRevision: Double,
       renderedTileResolution: Double,
@@ -55,7 +52,7 @@ object vectorRenderTileMod {
       renderedTileZ: Double,
       renderedZ: Double
     ): ReplayState = {
-      val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], renderedRenderOrder = js.Any.fromFunction2(renderedRenderOrder), renderedResolution = renderedResolution.asInstanceOf[js.Any], renderedRevision = renderedRevision.asInstanceOf[js.Any], renderedTileResolution = renderedTileResolution.asInstanceOf[js.Any], renderedTileRevision = renderedTileRevision.asInstanceOf[js.Any], renderedTileZ = renderedTileZ.asInstanceOf[js.Any], renderedZ = renderedZ.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], renderedResolution = renderedResolution.asInstanceOf[js.Any], renderedRevision = renderedRevision.asInstanceOf[js.Any], renderedTileResolution = renderedTileResolution.asInstanceOf[js.Any], renderedTileRevision = renderedTileRevision.asInstanceOf[js.Any], renderedTileZ = renderedTileZ.asInstanceOf[js.Any], renderedZ = renderedZ.asInstanceOf[js.Any], renderedRenderOrder = null)
       __obj.asInstanceOf[ReplayState]
     }
     
@@ -64,6 +61,8 @@ object vectorRenderTileMod {
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
       inline def setRenderedRenderOrder(value: (/* p0 */ FeatureLike, /* p1 */ FeatureLike) => Double): Self = StObject.set(x, "renderedRenderOrder", js.Any.fromFunction2(value))
+      
+      inline def setRenderedRenderOrderNull: Self = StObject.set(x, "renderedRenderOrder", null)
       
       inline def setRenderedResolution(value: Double): Self = StObject.set(x, "renderedResolution", value.asInstanceOf[js.Any])
       

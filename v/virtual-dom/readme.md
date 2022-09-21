@@ -11,9 +11,9 @@ A batched diff-based DOM rendering strategy
 | Full name          | virtual-dom |
 | Keywords           | virtual, dom, vdom, vtree, diff, patch, browser |
 | # releases         | 0 |
-| # dependents       | 319 |
-| # downloads        | 659703 |
-| # stars            | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 82401.33333333333 |
+| # stars            | 11380.0 |
 
 ## Links
 - [Homepage](https://github.com/Matt-Esch/virtual-dom)

@@ -17,15 +17,17 @@ object errorsMod {
     
     var code: js.UndefOr[String] = js.native
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[js.Error] = js.native
     
     var exitCode: js.UndefOr[Double] = js.native
     
     def inspect(): String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -35,7 +37,7 @@ object errorsMod {
   
   @JSImport("@ionic/cli-framework/errors", "CommandNotFoundError")
   @js.native
-  class CommandNotFoundError protected () extends BaseError {
+  open class CommandNotFoundError protected () extends BaseError {
     def this(message: String, args: js.Array[String]) = this()
     
     var args: js.Array[String] = js.native
@@ -62,13 +64,13 @@ object errorsMod {
   
   @JSImport("@ionic/cli-framework/errors", "IPCError")
   @js.native
-  class IPCError protected () extends BaseError {
+  open class IPCError protected () extends BaseError {
     def this(message: String) = this()
   }
   
   @JSImport("@ionic/cli-framework/errors", "InputValidationError")
   @js.native
-  class InputValidationError protected () extends BaseError {
+  open class InputValidationError protected () extends BaseError {
     def this(message: String, errors: js.Array[ValidationError]) = this()
     
     @JSName("code")

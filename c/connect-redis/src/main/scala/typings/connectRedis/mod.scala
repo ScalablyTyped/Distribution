@@ -1,14 +1,13 @@
 package typings.connectRedis
 
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.mod.SessionData
 import typings.expressSession.mod.SessionOptions
 import typings.expressSession.mod.Store
+import typings.ioredis.mod.Cluster
 import typings.ioredis.mod.Redis
-import typings.redis.mod.RedisClient
 import typings.std.JSON
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,13 +17,21 @@ object mod {
   inline def apply(
     options: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
-      RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+      RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]
     ]
   ): RedisStore = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RedisStore]
   
   @JSImport("connect-redis", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  type Client = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any) | Redis | Cluster
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - scala.Any because Inheritance from two classes. Inlined 
@@ -39,12 +46,12 @@ object mod {
   - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined  */ @js.native
   trait RedisStore extends Store {
     
-    var client: RedisClient | Redis = js.native
+    var client: Client = js.native
   }
   
   trait RedisStoreOptions extends StObject {
     
-    var client: js.UndefOr[RedisClient | Redis] = js.undefined
+    var client: js.UndefOr[Client] = js.undefined
     
     var db: js.UndefOr[Double] = js.undefined
     
@@ -85,7 +92,7 @@ object mod {
     
     extension [Self <: RedisStoreOptions](x: Self) {
       
-      inline def setClient(value: RedisClient | Redis): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       

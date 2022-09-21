@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SafariWebPageProxy extends StObject {
   
   def dispatchMessage(name: String): Unit = js.native
-  def dispatchMessage(name: String, message: js.Any): Unit = js.native
+  def dispatchMessage(name: String, message: Any): Unit = js.native
 }

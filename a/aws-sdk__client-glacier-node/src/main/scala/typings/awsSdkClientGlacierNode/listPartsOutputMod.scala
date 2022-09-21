@@ -8,5 +8,5 @@ object listPartsOutputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/ListPartsOutput", "ListPartsOutput")
   @js.native
-  val ListPartsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListPartsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

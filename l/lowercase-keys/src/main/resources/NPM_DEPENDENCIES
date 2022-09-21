@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "lowercase-keys" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "lowercase-keys" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

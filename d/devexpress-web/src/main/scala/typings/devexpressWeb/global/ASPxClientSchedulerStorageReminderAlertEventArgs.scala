@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSchedulerStorageReminderAlertEventArgs")
 @js.native
-class ASPxClientSchedulerStorageReminderAlertEventArgs protected ()
+open class ASPxClientSchedulerStorageReminderAlertEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSchedulerStorageReminderAlertEventArgs {
   /**

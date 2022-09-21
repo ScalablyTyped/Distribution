@@ -10,11 +10,11 @@ trait Placeholders extends StObject {
   
   val Count: Double
   
-  def FindByName(Index: js.Any): Shape
+  def FindByName(Index: Any): Shape
   
   def Item(Index: Double): Shape
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Placeholders_typekey")
   var PowerPointDotPlaceholders_typekey: Placeholders
@@ -24,9 +24,9 @@ object Placeholders {
   inline def apply(
     Application: Application,
     Count: Double,
-    FindByName: js.Any => Shape,
+    FindByName: Any => Shape,
     Item: Double => Shape,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPlaceholders_typekey: Placeholders
   ): Placeholders = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], FindByName = js.Any.fromFunction1(FindByName), Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -40,11 +40,11 @@ object Placeholders {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setFindByName(value: js.Any => Shape): Self = StObject.set(x, "FindByName", js.Any.fromFunction1(value))
+    inline def setFindByName(value: Any => Shape): Self = StObject.set(x, "FindByName", js.Any.fromFunction1(value))
     
     inline def setItem(value: Double => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPlaceholders_typekey(value: Placeholders): Self = StObject.set(x, "PowerPoint.Placeholders_typekey", value.asInstanceOf[js.Any])
   }

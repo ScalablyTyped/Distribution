@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.Data")
 @js.native
-class Data () extends StObject {
+open class Data () extends StObject {
   def this(args: Body) = this()
   
   var body: js.UndefOr[String] = js.native

@@ -15,6 +15,8 @@ trait SceneViewEnvironmentAtmosphereProperties
   /**
     * Indicates the quality of the atmosphere visualization.
     *
+    * @default low
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var quality: js.UndefOr[low | high] = js.undefined

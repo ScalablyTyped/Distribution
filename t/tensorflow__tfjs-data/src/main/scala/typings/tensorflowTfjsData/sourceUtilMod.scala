@@ -10,5 +10,5 @@ object sourceUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isLocalPath(source: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalPath")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLocalPath(source: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalPath")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

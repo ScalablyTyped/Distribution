@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ECKeyPairKeyObjectOptions extends StObject {
   
   /**
-    * Name of the curve to use.
+    * Name of the curve to use
     */
   var namedCurve: String
 }

@@ -10,10 +10,10 @@ object verifiedUserMod {
   
   @JSImport("material-ui/svg-icons/action/verified-user", JSImport.Default)
   @js.native
-  class default () extends ActionVerifiedUser
+  open class default () extends ActionVerifiedUser
   
   @JSImport("material-ui/svg-icons/action/verified-user", "ActionVerifiedUser")
   @js.native
-  class ActionVerifiedUser ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionVerifiedUser ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

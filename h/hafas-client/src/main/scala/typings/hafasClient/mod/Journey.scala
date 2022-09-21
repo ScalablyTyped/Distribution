@@ -19,7 +19,7 @@ trait Journey extends StObject {
   
   var refreshToken: js.UndefOr[String] = js.undefined
   
-  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.undefined
+  var remarks: js.UndefOr[js.Array[Hint | Status | Warning]] = js.undefined
   
   var scheduledDays: js.UndefOr[ScheduledDays] = js.undefined
   
@@ -41,7 +41,7 @@ object Journey {
     
     inline def setLegs(value: js.Array[Leg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
     
-    inline def setLegsVarargs(value: Leg*): Self = StObject.set(x, "legs", js.Array(value :_*))
+    inline def setLegsVarargs(value: Leg*): Self = StObject.set(x, "legs", js.Array(value*))
     
     inline def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
@@ -51,11 +51,11 @@ object Journey {
     
     inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
     
-    inline def setRemarks(value: js.Array[Hint | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
+    inline def setRemarks(value: js.Array[Hint | Status | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
     inline def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
-    inline def setRemarksVarargs(value: (Hint | Warning)*): Self = StObject.set(x, "remarks", js.Array(value :_*))
+    inline def setRemarksVarargs(value: (Hint | Status | Warning)*): Self = StObject.set(x, "remarks", js.Array(value*))
     
     inline def setScheduledDays(value: ScheduledDays): Self = StObject.set(x, "scheduledDays", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object iconButtonMod {
   
   @JSImport("material-ui/IconButton", JSImport.Default)
   @js.native
-  class default () extends IconButton
+  open class default () extends IconButton
   
   @JSImport("material-ui/IconButton", "IconButton")
   @js.native
-  class IconButton ()
-    extends Component[IconButtonProps, js.Object, js.Any]
+  open class IconButton ()
+    extends Component[IconButtonProps, js.Object, Any]
 }

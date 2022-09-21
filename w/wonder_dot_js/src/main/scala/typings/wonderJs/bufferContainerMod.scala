@@ -16,7 +16,7 @@ object bufferContainerMod {
   abstract class BufferContainer protected () extends StObject {
     def this(entityObject: GameObject) = this()
     
-    /* protected */ var container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<Buffer> */ js.Any = js.native
+    /* protected */ var container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<Buffer> */ Any = js.native
     
     def createBuffersFromGeometryData(): Unit = js.native
     
@@ -84,17 +84,17 @@ object bufferContainerMod {
     
     var geometryData: GeometryData = js.native
     
-    def getChild(`type`: EBufferDataType): js.Any = js.native
-    def getChild(`type`: EBufferDataType, dataName: String): js.Any = js.native
+    def getChild(`type`: EBufferDataType): Any = js.native
+    def getChild(`type`: EBufferDataType, dataName: String): Any = js.native
     
-    /* protected */ def getVertice(`type`: EBufferDataType): js.Any = js.native
+    /* protected */ def getVertice(`type`: EBufferDataType): Any = js.native
     
     /* protected */ def hasData(): Boolean = js.native
     /* protected */ def hasData(data: js.Array[Double]): Boolean = js.native
     
     def init(): Unit = js.native
     
-    def removeCache(name: String): js.Any = js.native
-    def removeCache(`type`: EBufferDataType): js.Any = js.native
+    def removeCache(name: String): Any = js.native
+    def removeCache(`type`: EBufferDataType): Any = js.native
   }
 }

@@ -10,15 +10,15 @@ object datePickerViewDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/date-picker-view/demo/basic", JSImport.Default)
   @js.native
-  class default () extends DatePickerViewExample
+  open class default () extends DatePickerViewExample
   
   @js.native
   trait DatePickerViewExample
-    extends Component[js.Object, js.Object, js.Any] {
+    extends Component[js.Object, js.Object, Any] {
     
-    def onChange(value: js.Any): Unit = js.native
+    def onChange(value: Any): Unit = js.native
     
-    def onValueChange(args: js.Any*): Unit = js.native
+    def onValueChange(args: Any*): Unit = js.native
     
     @JSName("state")
     var state_DatePickerViewExample: Value = js.native

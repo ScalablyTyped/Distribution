@@ -13,13 +13,13 @@ object mod {
   
   @JSImport("react-native-platform-touchable", JSImport.Default)
   @js.native
-  class default protected () extends Touchable {
+  open class default protected () extends Touchable {
     def this(props: PlatformTouchableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PlatformTouchableProps, context: js.Any) = this()
+    def this(props: PlatformTouchableProps, context: Any) = this()
   }
   /* static members */
   object default {
@@ -41,14 +41,14 @@ object mod {
   
   @JSImport("react-native-platform-touchable", "Touchable")
   @js.native
-  class Touchable protected ()
-    extends Component[PlatformTouchableProps, js.Object, js.Any] {
+  open class Touchable protected ()
+    extends Component[PlatformTouchableProps, js.Object, Any] {
     def this(props: PlatformTouchableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PlatformTouchableProps, context: js.Any) = this()
+    def this(props: PlatformTouchableProps, context: Any) = this()
     
     // TouchableOpacity (default iOS)
     def setOpacityTo(value: Double): Unit = js.native

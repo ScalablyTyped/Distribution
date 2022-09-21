@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Autocomplete")
 @js.native
-class Autocomplete ()
+open class Autocomplete ()
   extends StObject
      with typings.bmapgl.BMapGL.Autocomplete {
   def this(opts: AutocompleteOptions) = this()

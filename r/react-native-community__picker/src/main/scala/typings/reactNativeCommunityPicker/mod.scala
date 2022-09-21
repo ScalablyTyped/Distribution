@@ -12,14 +12,14 @@ object mod {
   
   @JSImport("@react-native-community/picker", "Picker")
   @js.native
-  class Picker protected ()
+  open class Picker protected ()
     extends typings.reactNativeCommunityPicker.pickerMod.Picker {
     def this(props: PickerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PickerProps, context: js.Any) = this()
+    def this(props: PickerProps, context: Any) = this()
   }
   object Picker {
     
@@ -54,21 +54,21 @@ object mod {
   
   @JSImport("@react-native-community/picker", "PickerIOS")
   @js.native
-  class PickerIOS protected ()
+  open class PickerIOS protected ()
     extends typings.reactNativeCommunityPicker.pickerIOSMod.PickerIOS {
     def this(props: PickerIOSProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PickerIOSProps, context: js.Any) = this()
+    def this(props: PickerIOSProps, context: Any) = this()
   }
   object PickerIOS {
     
     /* was `typeof PickerIOSItem` */
     @JSImport("@react-native-community/picker", "PickerIOS.Item")
     @js.native
-    class Item ()
+    open class Item ()
       extends typings.reactNativeCommunityPicker.pickerIOSMod.PickerIOS.Item
   }
 }

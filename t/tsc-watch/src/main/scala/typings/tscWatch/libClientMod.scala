@@ -12,7 +12,7 @@ object libClientMod {
   
   @JSImport("tsc-watch/lib/client", JSImport.Namespace)
   @js.native
-  class ^ () extends TscWatchClient
+  open class ^ () extends TscWatchClient
   
   @js.native
   trait TscWatchClient extends EventEmitter {
@@ -23,19 +23,19 @@ object libClientMod {
       * Emitted upon every failing compilation
       */
     @JSName("on")
-    def on_compileerrors(event: compile_errors, cb: js.Function0[js.Any]): this.type = js.native
+    def on_compileerrors(event: compile_errors, cb: js.Function0[Any]): this.type = js.native
     // tslint:disable:unified-signatures
     /**
       * Emitted upon first successful compilation
       */
     @JSName("on")
-    def on_firstsuccess(event: first_success, cb: js.Function0[js.Any]): this.type = js.native
+    def on_firstsuccess(event: first_success, cb: js.Function0[Any]): this.type = js.native
     /**
       * Emitted upon first successful compilation
       */
     @JSName("on")
-    def on_success(event: success, cb: js.Function0[js.Any]): this.type = js.native
+    def on_success(event: success, cb: js.Function0[Any]): this.type = js.native
     
-    def start(args: js.Any*): Unit = js.native
+    def start(args: Any*): Unit = js.native
   }
 }

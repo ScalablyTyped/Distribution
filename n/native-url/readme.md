@@ -10,10 +10,10 @@ Brings the node url api layer to whatwg-url class
 | ------------------ | :-------------: |
 | Full name          | native-url |
 | Keywords           | url, uri, normalization, normalisation, query, querystring, whatwg-url, parse, format, resolve, resolveObject |
-| # releases         | 17 |
-| # dependents       | 23 |
-| # downloads        | 55925577 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3533325E7 |
+| # stars            | 282.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChromeLabs/native-url#readme)

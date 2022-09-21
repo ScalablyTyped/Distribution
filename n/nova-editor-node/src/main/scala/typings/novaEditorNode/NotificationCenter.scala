@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/notification-center/
+/// https://docs.nova.app/api-reference/notification-center/
 trait NotificationCenter extends StObject {
   
   def add(request: NotificationRequest): js.Promise[NotificationResponse]

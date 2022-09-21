@@ -18,7 +18,7 @@ object requirementsMod {
     *     if using ordersv3
     * @public
     */
-  class TransactionRequirements () extends SoloHelper[
+  open class TransactionRequirements () extends SoloHelper[
           actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK, 
           GoogleActionsV2TransactionRequirementsCheckSpec | GoogleActionsTransactionsV3TransactionRequirementsCheckSpec
         ] {

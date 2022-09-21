@@ -2,7 +2,6 @@ package typings.awsSdkClientPinpointBrowser
 
 import typings.awsSdkClientPinpointBrowser.typesCampaignResponseMod.CampaignResponse
 import typings.awsSdkClientPinpointBrowser.typesCampaignResponseMod.UnmarshalledCampaignResponse
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesCampaignsResponseMod {
     /**
       * A list of campaigns.
       */
-    var Item: js.UndefOr[js.Array[CampaignResponse] | Iterable[CampaignResponse]] = js.undefined
+    var Item: js.UndefOr[js.Array[CampaignResponse] | js.Iterable[CampaignResponse]] = js.undefined
     
     /**
       * The string that you use in a subsequent request to get the next page of results in a paginated response.
@@ -30,11 +29,11 @@ object typesCampaignsResponseMod {
     
     extension [Self <: CampaignsResponse](x: Self) {
       
-      inline def setItem(value: js.Array[CampaignResponse] | Iterable[CampaignResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[CampaignResponse] | js.Iterable[CampaignResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: CampaignResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: CampaignResponse*): Self = StObject.set(x, "Item", js.Array(value*))
       
       inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -65,7 +64,7 @@ object typesCampaignsResponseMod {
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: UnmarshalledCampaignResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledCampaignResponse*): Self = StObject.set(x, "Item", js.Array(value*))
     }
   }
 }

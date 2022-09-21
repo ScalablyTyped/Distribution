@@ -11,7 +11,7 @@ object callbackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromCallback[V](f: js.Function, args: js.Any*): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def fromCallback[V](f: js.Function, args: Any*): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(List(f.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[EventStream[V]]
   
-  inline def fromNodeCallback[V](f: js.Function, args: js.Any*): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def fromNodeCallback[V](f: js.Function, args: Any*): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(List(f.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[EventStream[V]]
 }

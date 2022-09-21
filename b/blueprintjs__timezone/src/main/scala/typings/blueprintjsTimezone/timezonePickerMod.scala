@@ -1,19 +1,18 @@
 package typings.blueprintjsTimezone
 
-import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
+import typings.blueprintjsCore.inputGroupMod.InputGroupProps2
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsTimezone.anon.IPopoverPropschildrenReac
-import typings.blueprintjsTimezone.anon.PartialIButtonProps
+import typings.blueprintjsTimezone.anon.PartialButtonPropsHTMLBut
 import typings.blueprintjsTimezone.anon.PartialIPopoverProps
-import typings.blueprintjsTimezone.anon.PartialITimezonePickerPro
+import typings.blueprintjsTimezone.anon.PartialTimezonePickerProp
+import typings.blueprintjsTimezone.anon.TimezonePickerPropschildr
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbreviation
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.composite
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.name
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.offset
 import typings.blueprintjsTimezone.timezoneDisplayFormatMod.TimezoneDisplayFormat
-import typings.std.Date
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,29 +52,29 @@ object timezonePickerMod {
   
   @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker")
   @js.native
-  class TimezonePicker protected ()
-    extends AbstractPureComponent2[ITimezonePickerProps, ITimezonePickerState, js.Object] {
-    def this(props: ITimezonePickerProps) = this()
-    def this(props: ITimezonePickerProps, context: js.Any) = this()
+  open class TimezonePicker protected ()
+    extends AbstractPureComponent2[TimezonePickerProps, ITimezonePickerState, js.Object] {
+    def this(props: TimezonePickerProps) = this()
+    def this(props: TimezonePickerProps, context: Any) = this()
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MTimezonePicker(prevProps: ITimezonePickerProps, prevState: ITimezonePickerState): Unit = js.native
+    def componentDidUpdate_MTimezonePicker(prevProps: TimezonePickerProps, prevState: ITimezonePickerState): Unit = js.native
     
-    /* private */ var filterItems: js.Any = js.native
+    /* private */ var filterItems: Any = js.native
     
-    /* private */ var handleItemSelect: js.Any = js.native
+    /* private */ var handleItemSelect: Any = js.native
     
-    /* private */ var handleQueryChange: js.Any = js.native
+    /* private */ var handleQueryChange: Any = js.native
     
-    /* private */ var initialTimezoneItems: js.Any = js.native
+    /* private */ var initialTimezoneItems: Any = js.native
     
-    /* private */ var renderButton: js.Any = js.native
+    /* private */ var renderButton: Any = js.native
     
-    /* private */ var renderItem: js.Any = js.native
+    /* private */ var renderItem: Any = js.native
     
-    /* private */ var timezoneItems: js.Any = js.native
+    /* private */ var timezoneItems: Any = js.native
     
-    /* protected */ def validateProps(props: IPopoverPropschildrenReac): Unit = js.native
+    /* protected */ def validateProps(props: TimezonePickerPropschildr): Unit = js.native
   }
   /* static members */
   object TimezonePicker {
@@ -86,8 +85,8 @@ object timezonePickerMod {
     
     @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker.defaultProps")
     @js.native
-    def defaultProps: PartialITimezonePickerPro = js.native
-    inline def defaultProps_=(x: PartialITimezonePickerPro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialTimezonePickerProp = js.native
+    inline def defaultProps_=(x: PartialTimezonePickerProp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker.displayName")
     @js.native
@@ -103,18 +102,22 @@ object timezonePickerMod {
       * Props to spread to the target `Button`.
       * This prop will be ignored if `children` is provided.
       */
-    var buttonProps: js.UndefOr[PartialIButtonProps] = js.undefined
+    var buttonProps: js.UndefOr[PartialButtonPropsHTMLBut] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The date to use when formatting timezone offsets.
       * An offset date is necessary to account for DST, but typically the default value of `now` will be sufficient.
+      *
       * @default now
       */
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Whether this component is non-interactive.
       * This prop will be ignored if `children` is provided.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.undefined
@@ -125,7 +128,7 @@ object timezonePickerMod {
       * If you want to control the filter input, you can pass `value` and `onChange` here
       * to override `Select`'s own behavior.
       */
-    var inputProps: js.UndefOr[IInputGroupProps & HTMLInputProps] = js.undefined
+    var inputProps: js.UndefOr[InputGroupProps2] = js.undefined
     
     /**
       * Callback invoked when the user selects a timezone.
@@ -135,6 +138,7 @@ object timezonePickerMod {
     /**
       * Text to show when no timezone has been selected (`value === undefined`).
       * This prop will be ignored if `children` is provided.
+      *
       * @default "Select timezone..."
       */
     var placeholder: js.UndefOr[String] = js.undefined
@@ -144,19 +148,22 @@ object timezonePickerMod {
     
     /**
       * Whether to show the local timezone at the top of the list of initial timezone suggestions.
+      *
       * @default true
       */
     var showLocalTimezone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The currently selected timezone UTC identifier, e.g. "Pacific/Honolulu".
-      * See https://www.iana.org/time-zones for more information.
+      *
+      * @see https://www.iana.org/time-zones
       */
     var value: js.UndefOr[String] = js.undefined
     
     /**
       * Format to use when displaying the selected (or default) timezone within the target element.
       * This prop will be ignored if `children` is provided.
+      *
       * @default TimezoneDisplayFormat.OFFSET
       */
     var valueDisplayFormat: js.UndefOr[TimezoneDisplayFormat] = js.undefined
@@ -170,11 +177,15 @@ object timezonePickerMod {
     
     extension [Self <: ITimezonePickerProps](x: Self) {
       
-      inline def setButtonProps(value: PartialIButtonProps): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+      inline def setButtonProps(value: PartialButtonPropsHTMLBut): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
       inline def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -182,7 +193,7 @@ object timezonePickerMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setInputProps(value: IInputGroupProps & HTMLInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: InputGroupProps2): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
@@ -226,4 +237,6 @@ object timezonePickerMod {
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
+  
+  type TimezonePickerProps = ITimezonePickerProps
 }

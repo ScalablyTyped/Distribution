@@ -1,13 +1,12 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TaskOrchestrationQueuedPlan extends StObject {
   
-  var assignTime: Date
+  var assignTime: js.Date
   
   var definition: TaskOrchestrationOwner
   
@@ -21,21 +20,21 @@ trait TaskOrchestrationQueuedPlan extends StObject {
   
   var queuePosition: Double
   
-  var queueTime: Date
+  var queueTime: js.Date
   
   var scopeIdentifier: String
 }
 object TaskOrchestrationQueuedPlan {
   
   inline def apply(
-    assignTime: Date,
+    assignTime: js.Date,
     definition: TaskOrchestrationOwner,
     owner: TaskOrchestrationOwner,
     planGroup: String,
     planId: String,
     poolId: Double,
     queuePosition: Double,
-    queueTime: Date,
+    queueTime: js.Date,
     scopeIdentifier: String
   ): TaskOrchestrationQueuedPlan = {
     val __obj = js.Dynamic.literal(assignTime = assignTime.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], planGroup = planGroup.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any], poolId = poolId.asInstanceOf[js.Any], queuePosition = queuePosition.asInstanceOf[js.Any], queueTime = queueTime.asInstanceOf[js.Any], scopeIdentifier = scopeIdentifier.asInstanceOf[js.Any])
@@ -44,7 +43,7 @@ object TaskOrchestrationQueuedPlan {
   
   extension [Self <: TaskOrchestrationQueuedPlan](x: Self) {
     
-    inline def setAssignTime(value: Date): Self = StObject.set(x, "assignTime", value.asInstanceOf[js.Any])
+    inline def setAssignTime(value: js.Date): Self = StObject.set(x, "assignTime", value.asInstanceOf[js.Any])
     
     inline def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
@@ -58,7 +57,7 @@ object TaskOrchestrationQueuedPlan {
     
     inline def setQueuePosition(value: Double): Self = StObject.set(x, "queuePosition", value.asInstanceOf[js.Any])
     
-    inline def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
+    inline def setQueueTime(value: js.Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
     inline def setScopeIdentifier(value: String): Self = StObject.set(x, "scopeIdentifier", value.asInstanceOf[js.Any])
   }

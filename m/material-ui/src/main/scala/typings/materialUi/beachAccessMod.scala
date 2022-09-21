@@ -10,10 +10,10 @@ object beachAccessMod {
   
   @JSImport("material-ui/svg-icons/places/beach-access", JSImport.Default)
   @js.native
-  class default () extends PlacesBeachAccess
+  open class default () extends PlacesBeachAccess
   
   @JSImport("material-ui/svg-icons/places/beach-access", "PlacesBeachAccess")
   @js.native
-  class PlacesBeachAccess ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesBeachAccess ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

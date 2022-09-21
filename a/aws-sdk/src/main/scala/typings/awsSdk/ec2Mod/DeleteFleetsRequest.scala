@@ -36,7 +36,7 @@ object DeleteFleetsRequest {
     
     inline def setFleetIds(value: FleetIdSet): Self = StObject.set(x, "FleetIds", value.asInstanceOf[js.Any])
     
-    inline def setFleetIdsVarargs(value: FleetId*): Self = StObject.set(x, "FleetIds", js.Array(value :_*))
+    inline def setFleetIdsVarargs(value: FleetId*): Self = StObject.set(x, "FleetIds", js.Array(value*))
     
     inline def setTerminateInstances(value: Boolean): Self = StObject.set(x, "TerminateInstances", value.asInstanceOf[js.Any])
   }

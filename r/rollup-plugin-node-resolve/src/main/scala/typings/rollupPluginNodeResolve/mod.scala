@@ -2,7 +2,6 @@ package typings.rollupPluginNodeResolve
 
 import typings.resolve.mod.AsyncOpts
 import typings.rollup.mod.Plugin
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,7 +99,7 @@ object mod {
     	 * entry will be marked as external
     	 * @default null
     	 */
-    var only: js.UndefOr[(js.Array[String | RegExp]) | Null] = js.undefined
+    var only: js.UndefOr[(js.Array[String | js.RegExp]) | Null] = js.undefined
     
     /**
     	 * whether to prefer built-in modules (e.g. `fs`, `path`) or
@@ -132,13 +131,13 @@ object mod {
       
       inline def setDedupeUndefined: Self = StObject.set(x, "dedupe", js.undefined)
       
-      inline def setDedupeVarargs(value: String*): Self = StObject.set(x, "dedupe", js.Array(value :_*))
+      inline def setDedupeVarargs(value: String*): Self = StObject.set(x, "dedupe", js.Array(value*))
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setJail(value: String): Self = StObject.set(x, "jail", value.asInstanceOf[js.Any])
       
@@ -154,7 +153,7 @@ object mod {
       
       inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
       
-      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value*))
       
       inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
       
@@ -166,13 +165,13 @@ object mod {
       
       inline def setModulesOnlyUndefined: Self = StObject.set(x, "modulesOnly", js.undefined)
       
-      inline def setOnly(value: js.Array[String | RegExp]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
       inline def setOnlyNull: Self = StObject.set(x, "only", null)
       
       inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
       
-      inline def setOnlyVarargs(value: (String | RegExp)*): Self = StObject.set(x, "only", js.Array(value :_*))
+      inline def setOnlyVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "only", js.Array(value*))
       
       inline def setPreferBuiltins(value: Boolean): Self = StObject.set(x, "preferBuiltins", value.asInstanceOf[js.Any])
       

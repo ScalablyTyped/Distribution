@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object differenceMod {
   
-  @JSImport("@antv/util/lib/difference", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/difference", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

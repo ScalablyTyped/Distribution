@@ -90,7 +90,7 @@ object viewsMaterializedTypesMod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

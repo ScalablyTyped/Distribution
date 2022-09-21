@@ -37,7 +37,7 @@ object ScrollableTextOptions {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setMouse(value: Boolean | js.Function0[Unit]): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     

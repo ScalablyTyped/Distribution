@@ -1,7 +1,6 @@
 package typings.gzipJs
 
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +16,17 @@ object mod {
   val DEFAULT_LEVEL: Double = js.native
   
   inline def unzip(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def unzip(data: js.typedarray.Uint8Array): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   inline def unzip(data: Buffer): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  inline def unzip(data: Uint8Array): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   inline def zip(data: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   inline def zip(data: String, opts: ZipOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def zip(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def zip(data: js.Array[Double], opts: ZipOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def zip(data: js.typedarray.Uint8Array): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def zip(data: js.typedarray.Uint8Array, opts: ZipOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def zip(data: Buffer): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def zip(data: Buffer, opts: ZipOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   trait ZipOptions extends StObject {
     

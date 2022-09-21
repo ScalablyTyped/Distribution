@@ -20,7 +20,7 @@ trait StyleSheet extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Path: String
   
@@ -41,7 +41,7 @@ object StyleSheet {
     Index: Double,
     Move: WdStyleSheetPrecedence => Unit,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Path: String,
     Title: String,
     Type: WdStyleSheetLinkType,
@@ -68,7 +68,7 @@ object StyleSheet {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

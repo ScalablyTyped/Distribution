@@ -1,6 +1,5 @@
 package typings.reactVis.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,21 +16,21 @@ trait RectSeriesPoint
   
   var stroke: js.UndefOr[String | Double] = js.undefined
   
-  var x: String | Double | Date
+  var x: String | Double | js.Date
   
-  var x0: String | Double | Date
+  var x0: String | Double | js.Date
   
-  var y: String | Double | Date
+  var y: String | Double | js.Date
   
-  var y0: String | Double | Date
+  var y0: String | Double | js.Date
 }
 object RectSeriesPoint {
   
   inline def apply(
-    x: String | Double | Date,
-    x0: String | Double | Date,
-    y: String | Double | Date,
-    y0: String | Double | Date
+    x: String | Double | js.Date,
+    x0: String | Double | js.Date,
+    y: String | Double | js.Date,
+    y0: String | Double | js.Date
   ): RectSeriesPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], x0 = x0.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any])
     __obj.asInstanceOf[RectSeriesPoint]
@@ -55,12 +54,12 @@ object RectSeriesPoint {
     
     inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    inline def setX(value: String | Double | Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String | Double | js.Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setX0(value: String | Double | Date): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+    inline def setX0(value: String | Double | js.Date): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
     
-    inline def setY(value: String | Double | Date): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: String | Double | js.Date): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    inline def setY0(value: String | Double | Date): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+    inline def setY0(value: String | Double | js.Date): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
   }
 }

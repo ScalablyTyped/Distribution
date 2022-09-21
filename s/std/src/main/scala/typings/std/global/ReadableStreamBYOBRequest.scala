@@ -1,6 +1,5 @@
 package typings.std.global
 
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,16 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("ReadableStreamBYOBRequest")
 @js.native
-class ReadableStreamBYOBRequest ()
+/* standard dom */
+open class ReadableStreamBYOBRequest ()
   extends StObject
      with typings.std.ReadableStreamBYOBRequest {
   
+  /* standard dom */
   /* CompleteClass */
   override def respond(bytesWritten: Double): Unit = js.native
   
+  /* standard dom */
   /* CompleteClass */
-  override def respondWithNewView(view: ArrayBufferView): Unit = js.native
+  override def respondWithNewView(view: js.typedarray.ArrayBufferView): Unit = js.native
   
+  /* standard dom */
   /* CompleteClass */
-  override val view: ArrayBufferView = js.native
+  override val view: js.typedarray.ArrayBufferView | Null = js.native
 }

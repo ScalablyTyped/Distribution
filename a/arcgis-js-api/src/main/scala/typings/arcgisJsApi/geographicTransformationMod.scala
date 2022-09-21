@@ -22,10 +22,10 @@ object geographicTransformationMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformation.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with GeographicTransformation {
-    def this(properties: js.Any) = this()
+    def this(properties: Any) = this()
     
     /**
       * Returns the inverse of the geographic transformation calling this method or `null` if the transformation is not invertible.

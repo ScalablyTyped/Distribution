@@ -24,20 +24,20 @@ trait OAuth2PermissionGrant
   
   /**
     * The id of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If
-    * consentType is AllPrincipals this value is null. Required when consentType is Principal.
+    * consentType is AllPrincipals this value is null. Required when consentType is Principal. Supports $filter (eq only).
     */
   var principalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The id of the resource service principal to which access is authorized. This identifies the API which the client is
-    * authorized to attempt to call on behalf of a signed-in user.
+    * authorized to attempt to call on behalf of a signed-in user. Supports $filter (eq only).
     */
   var resourceId: js.UndefOr[String] = js.undefined
   
   /**
     * A space-separated list of the claim values for delegated permissions which should be included in access tokens for the
     * resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the
-    * value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of
+    * value field of one of the delegated permissions defined by the API, listed in the oauth2PermissionScopes property of
     * the resource service principal.
     */
   var scope: js.UndefOr[NullableOption[String]] = js.undefined

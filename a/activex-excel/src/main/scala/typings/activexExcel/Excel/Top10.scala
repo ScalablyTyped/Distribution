@@ -37,7 +37,7 @@ trait Top10 extends StObject {
   
   val PTCondition: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Percent: Boolean
   
@@ -72,7 +72,7 @@ object Top10 {
     ModifyAppliesToRange: Range => Unit,
     NumberFormat: String,
     PTCondition: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Percent: Boolean,
     Priority: Double,
     Rank: Double,
@@ -114,7 +114,7 @@ object Top10 {
     
     inline def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPercent(value: Boolean): Self = StObject.set(x, "Percent", value.asInstanceOf[js.Any])
     

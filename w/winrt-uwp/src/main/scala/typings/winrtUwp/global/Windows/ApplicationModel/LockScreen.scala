@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -85,7 +84,7 @@ object LockScreen {
     
     /** Gets the deadline by which the lock screen app must unlock the device. If your unlocking deferral takes too long, your lock screen app will be terminated by the system and potentially removed as the user’s default lock app. */
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /**
       * Gets a LockScreenUnlockingDeferral , which defers the unlocking of the device.

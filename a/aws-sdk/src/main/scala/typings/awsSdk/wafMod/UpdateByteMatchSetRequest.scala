@@ -36,6 +36,6 @@ object UpdateByteMatchSetRequest {
     
     inline def setUpdates(value: ByteMatchSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    inline def setUpdatesVarargs(value: ByteMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: ByteMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value*))
   }
 }

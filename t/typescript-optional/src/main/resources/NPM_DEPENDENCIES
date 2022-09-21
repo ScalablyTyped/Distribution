@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "typescript-optional" : "2.0.1"
+      "typescript-optional" : "3.0.0-alpha.3"
     }
   ],
   "test-dependencies" : [
     {
-      "typescript-optional" : "2.0.1"
+      "typescript-optional" : "3.0.0-alpha.3"
     }
   ],
   "compile-devDependencies" : [

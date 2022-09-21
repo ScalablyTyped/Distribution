@@ -8,7 +8,7 @@ trait OSNotificationPayload extends StObject {
   
   var actionButtons: js.Array[OSActionButton]
   
-  var additionalData: js.UndefOr[js.Any] = js.undefined
+  var additionalData: js.UndefOr[Any] = js.undefined
   
   var backgroundImageLayout: js.UndefOr[OSBackgroundImageLayout] = js.undefined
   
@@ -62,9 +62,9 @@ object OSNotificationPayload {
     
     inline def setActionButtons(value: js.Array[OSActionButton]): Self = StObject.set(x, "actionButtons", value.asInstanceOf[js.Any])
     
-    inline def setActionButtonsVarargs(value: OSActionButton*): Self = StObject.set(x, "actionButtons", js.Array(value :_*))
+    inline def setActionButtonsVarargs(value: OSActionButton*): Self = StObject.set(x, "actionButtons", js.Array(value*))
     
-    inline def setAdditionalData(value: js.Any): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+    inline def setAdditionalData(value: Any): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     
     inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
     

@@ -10,10 +10,10 @@ Zero cost events
 | ------------------ | :-------------: |
 | Full name          | microevent.ts |
 | Keywords           | events, performance |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 180258597 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3555246E7 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/DirtyHairy/microevent#readme)

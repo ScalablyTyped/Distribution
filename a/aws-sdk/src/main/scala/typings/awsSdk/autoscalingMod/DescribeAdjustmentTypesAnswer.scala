@@ -24,6 +24,6 @@ object DescribeAdjustmentTypesAnswer {
     
     inline def setAdjustmentTypesUndefined: Self = StObject.set(x, "AdjustmentTypes", js.undefined)
     
-    inline def setAdjustmentTypesVarargs(value: AdjustmentType*): Self = StObject.set(x, "AdjustmentTypes", js.Array(value :_*))
+    inline def setAdjustmentTypesVarargs(value: AdjustmentType*): Self = StObject.set(x, "AdjustmentTypes", js.Array(value*))
   }
 }

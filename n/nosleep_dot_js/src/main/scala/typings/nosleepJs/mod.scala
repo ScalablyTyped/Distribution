@@ -1,68 +1,52 @@
 package typings.nosleepJs
 
+import org.scalablytyped.runtime.Instantiable0
+import typings.nosleepJs.mod.nosleep.NoSleep
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("nosleep.js", JSImport.Namespace)
+  @JSImport("nosleep.js", JSImport.Default)
   @js.native
-  class ^ ()
+  open class default ()
     extends StObject
-       with NoSleep {
+       with NoSleep
+  
+  object global {
     
-    /**
-      * Disables wake lock at some point in the future.
-      *
-      * @remarks
-      * This does not need to be wrapped in any user input.
-      */
-    /* CompleteClass */
-    override def disable(): Unit = js.native
-    
-    /**
-      * Enables wake lock.
-      *
-      * @remarks
-      * This function call must be wrapped in a user input event handler:
-      * e.g. a mouse or touch handler.
-      */
-    /* CompleteClass */
-    override def enable(): Unit = js.native
+    trait Window extends StObject {
+      
+      var NoSleep: Instantiable0[typings.nosleepJs.mod.nosleep.NoSleep]
+    }
+    object Window {
+      
+      inline def apply(NoSleep: Instantiable0[NoSleep]): Window = {
+        val __obj = js.Dynamic.literal(NoSleep = NoSleep.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Window]
+      }
+      
+      extension [Self <: Window](x: Self) {
+        
+        inline def setNoSleep(value: Instantiable0[NoSleep]): Self = StObject.set(x, "NoSleep", value.asInstanceOf[js.Any])
+      }
+    }
   }
   
-  trait NoSleep extends StObject {
+  object nosleep {
     
-    /**
-      * Disables wake lock at some point in the future.
-      *
-      * @remarks
-      * This does not need to be wrapped in any user input.
-      */
-    def disable(): Unit
-    
-    /**
-      * Enables wake lock.
-      *
-      * @remarks
-      * This function call must be wrapped in a user input event handler:
-      * e.g. a mouse or touch handler.
-      */
-    def enable(): Unit
-  }
-  object NoSleep {
-    
-    inline def apply(disable: () => Unit, enable: () => Unit): NoSleep = {
-      val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
-      __obj.asInstanceOf[NoSleep]
-    }
-    
-    extension [Self <: NoSleep](x: Self) {
+    @js.native
+    trait NoSleep extends StObject {
       
-      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      def _addSourceToVideo(element: HTMLElement, `type`: String, dataURI: String): Unit = js.native
       
-      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      def disable(): Unit = js.native
+      
+      def enable(): js.Promise[Any] = js.native
+      
+      def isEnabled: Boolean = js.native
     }
   }
 }

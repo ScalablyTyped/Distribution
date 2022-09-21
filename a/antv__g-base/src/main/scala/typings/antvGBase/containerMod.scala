@@ -25,24 +25,24 @@ object containerMod {
   trait Container
     extends typings.antvGBase.elementMod.default {
     
-    def _applyChildrenMarix(totalMatrix: js.Any): Unit = js.native
+    def _applyChildrenMarix(totalMatrix: Any): Unit = js.native
     
-    def _applyElementMatrix(element: js.Any): Unit = js.native
+    def _applyElementMatrix(element: Any): Unit = js.native
     
-    def _findShape(children: js.Array[IElement], x: Double, y: Double, ev: Event): js.Any = js.native
+    def _findShape(children: js.Array[IElement], x: Double, y: Double, ev: Event): Any = js.native
     
     /**
       * 添加图形元素，已经在外面构造好的类
       * @param {IElement} element 图形元素（图形或者分组）
       */
-    def add(element: IElement): js.Any = js.native
+    def add(element: IElement): Any = js.native
     
     /**
       * 添加图形分组，增加一个默认的 Group
       * @returns 添加的图形分组
       */
     def addGroup(): IGroup = js.native
-    def addGroup(args: js.Any*): IGroup = js.native
+    def addGroup(args: Any*): IGroup = js.native
     /**
       * 添加图形分组，并设置配置项
       * @param {GroupCfg} cfg 图形分组的配置项
@@ -57,7 +57,7 @@ object containerMod {
       */
     def addGroup(classConstructor: IGroup, cfg: GroupCfg): IGroup = js.native
     
-    def addShape(args: js.Any*): IShape = js.native
+    def addShape(args: Any*): IShape = js.native
     /**
       * 添加图形
       * @param {ShapeCfg} cfg  图形配置项
@@ -78,7 +78,7 @@ object containerMod {
     /**
       * 清理所有的子元素
       */
-    def clear(): js.Any = js.native
+    def clear(): Any = js.native
     @JSName("clear")
     def clear_Unit(): Unit = js.native
     
@@ -197,19 +197,19 @@ object containerMod {
     /**
       * 容器是否是 Canvas 画布
       */
-    def isCanvas(): js.Any = js.native
+    def isCanvas(): Any = js.native
     @JSName("isCanvas")
     def isCanvas_Boolean(): Boolean = js.native
     
-    def onAttrChange(name: js.Any, value: js.Any, originValue: js.Any): Unit = js.native
+    def onAttrChange(name: Any, value: Any, originValue: Any): Unit = js.native
     
     /**
       * 移除对应子元素
       * @param {IElement} element 子元素
       * @param {boolean} destroy 是否销毁子元素，默认为 true
       */
-    def removeChild(element: IElement): js.Any = js.native
-    def removeChild(element: IElement, destroy: Boolean): js.Any = js.native
+    def removeChild(element: IElement): Any = js.native
+    def removeChild(element: IElement, destroy: Boolean): Any = js.native
     /**
       * 移除对应子元素
       * @param {IElement} element 子元素
@@ -223,7 +223,7 @@ object containerMod {
     /**
       * 子元素按照 zIndex 进行排序
       */
-    def sort(): js.Any = js.native
+    def sort(): Any = js.native
     @JSName("sort")
     def sort_Unit(): Unit = js.native
   }

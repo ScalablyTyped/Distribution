@@ -8,28 +8,28 @@ object People {
   
   trait HeadPose extends StObject {
     
-    var forwardDirection: js.Any
+    var forwardDirection: Any
     
     /* unmapped type */
-    var position: js.Any
+    var position: Any
     
     /* unmapped type */
-    var upDirection: js.Any
+    var upDirection: Any
   }
   object HeadPose {
     
-    inline def apply(forwardDirection: js.Any, position: js.Any, upDirection: js.Any): HeadPose = {
+    inline def apply(forwardDirection: Any, position: Any, upDirection: Any): HeadPose = {
       val __obj = js.Dynamic.literal(forwardDirection = forwardDirection.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], upDirection = upDirection.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeadPose]
     }
     
     extension [Self <: HeadPose](x: Self) {
       
-      inline def setForwardDirection(value: js.Any): Self = StObject.set(x, "forwardDirection", value.asInstanceOf[js.Any])
+      inline def setForwardDirection(value: Any): Self = StObject.set(x, "forwardDirection", value.asInstanceOf[js.Any])
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setUpDirection(value: js.Any): Self = StObject.set(x, "upDirection", value.asInstanceOf[js.Any])
+      inline def setUpDirection(value: Any): Self = StObject.set(x, "upDirection", value.asInstanceOf[js.Any])
     }
   }
 }

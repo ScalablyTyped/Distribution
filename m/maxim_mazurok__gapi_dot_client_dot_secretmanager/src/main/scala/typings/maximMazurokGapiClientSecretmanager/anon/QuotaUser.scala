@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSecretmanager.anon
 
-import typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager.Secret
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,9 +37,6 @@ trait QuotaUser extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: Secret
-  
   /**
     * Required. This must be unique within the project. A secret ID is a string with a maximum length of 255 characters and can contain uppercase and lowercase letters, numerals, and
     * the hyphen (`-`) and underscore (`_`) characters.
@@ -55,8 +51,8 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(parent: String, resource: Secret): QuotaUser = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(parent: String): QuotaUser = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
   
@@ -99,8 +95,6 @@ object QuotaUser {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: Secret): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSecretId(value: String): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
     

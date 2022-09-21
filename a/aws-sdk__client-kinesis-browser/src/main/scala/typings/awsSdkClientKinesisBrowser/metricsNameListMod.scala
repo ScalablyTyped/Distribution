@@ -8,5 +8,5 @@ object metricsNameListMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/_MetricsNameList", "_MetricsNameList")
   @js.native
-  val MetricsNameList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val MetricsNameList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

@@ -1,7 +1,5 @@
 package typings.decimalJs
 
-import typings.decimalJs.decimalGlobalMod.DecimalModulo
-import typings.decimalJs.decimalGlobalMod.DecimalRounding
 import typings.decimalJs.mod.Decimal.Modulo
 import typings.decimalJs.mod.Decimal.Rounding
 import org.scalablytyped.runtime.StObject
@@ -13,8 +11,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `0`
     extends StObject
-       with DecimalModulo
-       with DecimalRounding
        with Modulo
        with Rounding
   inline def `0`: `0` = 0.asInstanceOf[`0`]
@@ -22,8 +18,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `1`
     extends StObject
-       with DecimalModulo
-       with DecimalRounding
        with Modulo
        with Rounding
   inline def `1`: `1` = 1.asInstanceOf[`1`]
@@ -31,8 +25,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `2`
     extends StObject
-       with DecimalModulo
-       with DecimalRounding
        with Modulo
        with Rounding
   inline def `2`: `2` = 2.asInstanceOf[`2`]
@@ -40,8 +32,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `3`
     extends StObject
-       with DecimalModulo
-       with DecimalRounding
        with Modulo
        with Rounding
   inline def `3`: `3` = 3.asInstanceOf[`3`]
@@ -49,8 +39,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `4`
     extends StObject
-       with DecimalModulo
-       with DecimalRounding
        with Modulo
        with Rounding
   inline def `4`: `4` = 4.asInstanceOf[`4`]
@@ -58,8 +46,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `5`
     extends StObject
-       with DecimalModulo
-       with DecimalRounding
        with Modulo
        with Rounding
   inline def `5`: `5` = 5.asInstanceOf[`5`]
@@ -67,8 +53,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `6`
     extends StObject
-       with DecimalModulo
-       with DecimalRounding
        with Modulo
        with Rounding
   inline def `6`: `6` = 6.asInstanceOf[`6`]
@@ -76,8 +60,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `7`
     extends StObject
-       with DecimalModulo
-       with DecimalRounding
        with Modulo
        with Rounding
   inline def `7`: `7` = 7.asInstanceOf[`7`]
@@ -85,8 +67,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `8`
     extends StObject
-       with DecimalModulo
-       with DecimalRounding
        with Modulo
        with Rounding
   inline def `8`: `8` = 8.asInstanceOf[`8`]
@@ -94,7 +74,6 @@ object decimalJsNumbers {
   @js.native
   sealed trait `9`
     extends StObject
-       with DecimalModulo
        with Modulo
   inline def `9`: `9` = 9.asInstanceOf[`9`]
 }

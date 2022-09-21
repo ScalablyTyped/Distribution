@@ -33,6 +33,6 @@ object ListRuleNamesByTargetResponse {
     
     inline def setRuleNamesUndefined: Self = StObject.set(x, "RuleNames", js.undefined)
     
-    inline def setRuleNamesVarargs(value: RuleName*): Self = StObject.set(x, "RuleNames", js.Array(value :_*))
+    inline def setRuleNamesVarargs(value: RuleName*): Self = StObject.set(x, "RuleNames", js.Array(value*))
   }
 }

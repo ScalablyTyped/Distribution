@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "EllipseCurve")
 @js.native
-class EllipseCurve protected ()
-  extends typings.three.curvesMod.EllipseCurve {
+open class EllipseCurve protected ()
+  extends typings.three.threeMod.EllipseCurve {
   def this(
     aX: Double,
     aY: Double,

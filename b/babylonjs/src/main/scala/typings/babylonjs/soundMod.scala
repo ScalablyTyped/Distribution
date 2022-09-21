@@ -18,113 +18,137 @@ object soundMod {
   
   @JSImport("babylonjs/Audio/sound", "Sound")
   @js.native
-  class Sound protected () extends StObject {
+  open class Sound protected () extends StObject {
     /**
       * Create a sound and attach it to a scene
       * @param name Name of your sound
-      * @param urlOrArrayBuffer Url to the sound to load async or ArrayBuffer, it also works with MediaStreams
+      * @param urlOrArrayBuffer Url to the sound to load async or ArrayBuffer, it also works with MediaStreams and AudioBuffers
       * @param scene defines the scene the sound belongs to
       * @param readyToPlayCallback Provide a callback function if you'd like to load your code once the sound is ready to be played
       * @param options Objects to provide with the current available options: autoplay, loop, volume, spatialSound, maxDistance, rolloffFactor, refDistance, distanceModel, panningModel, streaming
       */
-    def this(name: String, urlOrArrayBuffer: js.Any, scene: Scene) = this()
+    def this(name: String, urlOrArrayBuffer: Any) = this()
+    def this(name: String, urlOrArrayBuffer: Any, scene: Nullable[Scene]) = this()
     def this(
       name: String,
-      urlOrArrayBuffer: js.Any,
-      scene: Scene,
+      urlOrArrayBuffer: Any,
+      scene: Unit,
       readyToPlayCallback: Nullable[js.Function0[Unit]]
     ) = this()
     def this(
       name: String,
-      urlOrArrayBuffer: js.Any,
-      scene: Scene,
+      urlOrArrayBuffer: Any,
+      scene: Nullable[Scene],
+      readyToPlayCallback: Nullable[js.Function0[Unit]]
+    ) = this()
+    def this(
+      name: String,
+      urlOrArrayBuffer: Any,
+      scene: Unit,
       readyToPlayCallback: Unit,
       options: ISoundOptions
     ) = this()
     def this(
       name: String,
-      urlOrArrayBuffer: js.Any,
-      scene: Scene,
+      urlOrArrayBuffer: Any,
+      scene: Unit,
+      readyToPlayCallback: Nullable[js.Function0[Unit]],
+      options: ISoundOptions
+    ) = this()
+    def this(
+      name: String,
+      urlOrArrayBuffer: Any,
+      scene: Nullable[Scene],
+      readyToPlayCallback: Unit,
+      options: ISoundOptions
+    ) = this()
+    def this(
+      name: String,
+      urlOrArrayBuffer: Any,
+      scene: Nullable[Scene],
       readyToPlayCallback: Nullable[js.Function0[Unit]],
       options: ISoundOptions
     ) = this()
     
-    /* private */ var _audioBuffer: js.Any = js.native
+    /* private */ var _audioBuffer: Any = js.native
     
-    /* private */ var _coneInnerAngle: js.Any = js.native
+    /* private */ var _audioBufferLoaded: Any = js.native
     
-    /* private */ var _coneOuterAngle: js.Any = js.native
+    /* private */ var _coneInnerAngle: Any = js.native
     
-    /* private */ var _coneOuterGain: js.Any = js.native
+    /* private */ var _coneOuterAngle: Any = js.native
     
-    /* private */ var _connectedTransformNode: js.Any = js.native
+    /* private */ var _coneOuterGain: Any = js.native
     
-    /* private */ var _createSpatialParameters: js.Any = js.native
+    /* private */ var _connectedTransformNode: Any = js.native
     
-    /* private */ var _customAttenuationFunction: js.Any = js.native
+    /* private */ var _createSpatialParameters: Any = js.native
     
-    /* private */ var _htmlAudioElement: js.Any = js.native
+    /* private */ var _customAttenuationFunction: Any = js.native
     
-    /* private */ var _inputAudioNode: js.Any = js.native
+    /* private */ var _htmlAudioElement: Any = js.native
     
-    /* private */ var _isDirectional: js.Any = js.native
+    /* private */ var _inputAudioNode: Any = js.native
     
-    /* private */ var _isOutputConnected: js.Any = js.native
+    /* private */ var _isDirectional: Any = js.native
     
-    /* private */ var _isReadyToPlay: js.Any = js.native
+    /* private */ var _isOutputConnected: Any = js.native
     
-    /* private */ var _length: js.Any = js.native
+    /* private */ var _isReadyToPlay: Any = js.native
     
-    /* private */ var _localDirection: js.Any = js.native
+    /* private */ var _length: Any = js.native
     
-    /* private */ var _offset: js.Any = js.native
+    /* private */ var _localDirection: Any = js.native
     
-    /* private */ var _onRegisterAfterWorldMatrixUpdate: js.Any = js.native
+    /* private */ var _loop: Any = js.native
     
-    /* private */ var _onended: js.Any = js.native
+    /* private */ var _offset: Any = js.native
     
-    /* private */ var _outputAudioNode: js.Any = js.native
+    /* private */ var _onRegisterAfterWorldMatrixUpdate: Any = js.native
     
-    /* private */ var _panningModel: js.Any = js.native
+    /* private */ var _onended: Any = js.native
     
-    /* private */ var _playbackRate: js.Any = js.native
+    /* private */ var _outputAudioNode: Any = js.native
     
-    /* private */ var _position: js.Any = js.native
+    /* private */ var _panningModel: Any = js.native
     
-    /** @hidden */
-    var _positionInEmitterSpace: Boolean = js.native
+    /* private */ var _playbackRate: Any = js.native
     
-    /* private */ var _readyToPlayCallback: js.Any = js.native
+    /* private */ var _position: Any = js.native
     
-    /* private */ var _registerFunc: js.Any = js.native
+    /* private */ var _readyToPlayCallback: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _registerFunc: Any = js.native
     
-    /* private */ var _soundGain: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _soundLoaded: js.Any = js.native
+    /* private */ var _soundGain: Any = js.native
     
-    /* private */ var _soundPanner: js.Any = js.native
+    /* private */ var _soundLoaded: Any = js.native
     
-    /* private */ var _soundSource: js.Any = js.native
+    /* private */ var _soundPanner: Any = js.native
     
-    /* private */ var _startOffset: js.Any = js.native
+    /* private */ var _soundSource: Any = js.native
     
-    /* private */ var _startTime: js.Any = js.native
+    /* private */ var _spatialSound: Any = js.native
     
-    /* private */ var _streaming: js.Any = js.native
+    /* private */ var _startOffset: Any = js.native
     
-    /* private */ var _streamingSource: js.Any = js.native
+    /* private */ var _startTime: Any = js.native
     
-    /* private */ var _switchPanningModel: js.Any = js.native
+    /* private */ var _streaming: Any = js.native
     
-    /* private */ var _updateDirection: js.Any = js.native
+    /* private */ var _streamingSource: Any = js.native
     
-    /* private */ var _updateSpatialParameters: js.Any = js.native
+    /* private */ var _switchPanningModel: Any = js.native
     
-    /* private */ var _urlType: js.Any = js.native
+    /* private */ var _updateDirection: Any = js.native
     
-    /* private */ var _volume: js.Any = js.native
+    /* private */ var _updateSpatialParameters: Any = js.native
+    
+    /* private */ var _urlType: Any = js.native
+    
+    /* private */ var _volume: Any = js.native
     
     /**
       * Attach the sound to a dedicated mesh
@@ -191,6 +215,12 @@ object soundMod {
     def getAudioBuffer(): Nullable[AudioBuffer] = js.native
     
     /**
+      * Get the current class name.
+      * @returns current class name
+      */
+    def getClassName(): String = js.native
+    
+    /**
       * Gets the WebAudio GainNode, gives you precise control over the gain of instances of this Sound.
       * @returns the gain node
       */
@@ -227,7 +257,8 @@ object soundMod {
     /**
       * Does the sound loop after it finishes playing once.
       */
-    var loop: Boolean = js.native
+    def loop: Boolean = js.native
+    def loop_=(value: Boolean): Unit = js.native
     
     /**
       * Define the max distance the sound should be heard (intensity just became 0 at this point).
@@ -238,7 +269,7 @@ object soundMod {
     /**
       * Gets or sets an object used to store user defined information for the sound.
       */
-    var metadata: js.Any = js.native
+    var metadata: Any = js.native
     
     /**
       * The name of the sound in the scene.
@@ -254,7 +285,7 @@ object soundMod {
       * @hidden
       * Back Compat
       **/
-    def onended(): js.Any = js.native
+    def onended(): Any = js.native
     
     /**
       * Put the sound in pause
@@ -292,7 +323,7 @@ object soundMod {
       * Serializes the Sound in a JSON representation
       * @returns the JSON representation of the sound
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Sets a new custom attenuation function for the sound.
@@ -338,7 +369,7 @@ object soundMod {
     
     /**
       * Sets the position of the emitter if spatial sound is enabled
-      * @param newPosition Defines the new posisiton
+      * @param newPosition Defines the new position
       */
     def setPosition(newPosition: Vector3): Unit = js.native
     
@@ -359,7 +390,12 @@ object soundMod {
       * Does this sound enables spatial sound.
       * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
       */
-    var spatialSound: Boolean = js.native
+    def spatialSound: Boolean = js.native
+    /**
+      * Does this sound enables spatial sound.
+      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
+      */
+    def spatialSound_=(newValue: Boolean): Unit = js.native
     
     /**
       * Stop the sound
@@ -406,17 +442,20 @@ object soundMod {
     val ^ : js.Any = js.native
     
     /**
-      * Parse a JSON representation of a sound to innstantiate in a given scene
+      * Parse a JSON representation of a sound to instantiate in a given scene
       * @param parsedSound Define the JSON representation of the sound (usually coming from the serialize method)
       * @param scene Define the scene the new parsed sound should be created in
       * @param rootUrl Define the rooturl of the load in case we need to fetch relative dependencies
-      * @param sourceSound Define a cound place holder if do not need to instantiate a new one
+      * @param sourceSound Define a sound place holder if do not need to instantiate a new one
       * @returns the newly parsed sound
       */
-    inline def Parse(parsedSound: js.Any, scene: Scene, rootUrl: String): Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Sound]
-    inline def Parse(parsedSound: js.Any, scene: Scene, rootUrl: String, sourceSound: Sound): Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sourceSound.asInstanceOf[js.Any])).asInstanceOf[Sound]
+    inline def Parse(parsedSound: Any, scene: Scene, rootUrl: String): Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Sound]
+    inline def Parse(parsedSound: Any, scene: Scene, rootUrl: String, sourceSound: Sound): Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sourceSound.asInstanceOf[js.Any])).asInstanceOf[Sound]
     
-    /** @hidden */
+    /**
+      * @param _
+      * @hidden
+      */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

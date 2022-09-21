@@ -4,21 +4,18 @@
 Typings are for version 0.0
 
 ## Library description:
-RSocket WebSocket client for use in browser environments
+This package is published from the rsocket-js monorepo.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rsocket-websocket-client |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 7 |
-| # downloads        | 584954 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 101551.66666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/rsocket/rsocket-js#readme)
-- [Bugs](https://github.com/rsocket/rsocket-js/issues)
-- [Repository](https://github.com/rsocket/rsocket-js)
 - [Npm](https://www.npmjs.com/package/rsocket-websocket-client)
     
 

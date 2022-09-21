@@ -8,14 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TextBoxInput
   extends StObject
+     with Accessor
      with TextInput
+     with JSONSupport
      with inputsInput {
   
   /**
-    * The type of input.
+    * The type of form element input.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextBoxInput.html#type)
     */
-  @JSName("type")
-  var type_TextBoxInput: `text-box` = js.native
+  val `type`: `text-box` = js.native
 }

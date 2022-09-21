@@ -1,16 +1,6 @@
 package typings.createHash
 
-import typings.node.Buffer
-import typings.std.DataView
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(algorithm: algorithm): HashAlgorithm = ^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any]).asInstanceOf[HashAlgorithm]
-  inline def apply(algorithm: algorithm, options: js.Any): HashAlgorithm = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HashAlgorithm]
+  inline def apply(algorithm: algorithm, options: Any): HashAlgorithm = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HashAlgorithm]
   
   @JSImport("create-hash", JSImport.Namespace)
   @js.native
@@ -36,24 +26,24 @@ object mod {
     
     def update(data: String): this.type = js.native
     def update(data: String, encoding: String): this.type = js.native
+    def update(data: js.typedarray.DataView): this.type = js.native
+    def update(data: js.typedarray.DataView, encoding: String): this.type = js.native
     def update(data: TypedArray): this.type = js.native
     def update(data: TypedArray, encoding: String): this.type = js.native
     def update(data: Buffer): this.type = js.native
     def update(data: Buffer, encoding: String): this.type = js.native
-    def update(data: DataView): this.type = js.native
-    def update(data: DataView, encoding: String): this.type = js.native
     
     def write(data: String): this.type = js.native
     def write(data: String, encoding: String): this.type = js.native
+    def write(data: js.typedarray.DataView): this.type = js.native
+    def write(data: js.typedarray.DataView, encoding: String): this.type = js.native
     def write(data: TypedArray): this.type = js.native
     def write(data: TypedArray, encoding: String): this.type = js.native
     def write(data: Buffer): this.type = js.native
     def write(data: Buffer, encoding: String): this.type = js.native
-    def write(data: DataView): this.type = js.native
-    def write(data: DataView, encoding: String): this.type = js.native
   }
   
-  type TypedArray = Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array | Int8Array | Int16Array | Int32Array | Float32Array | Float64Array
+  type TypedArray = js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Uint16Array | js.typedarray.Uint32Array | js.typedarray.Int8Array | js.typedarray.Int16Array | js.typedarray.Int32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
   
   /* Rewritten from type alias, can be one of: 
     - typings.createHash.createHashStrings.md5

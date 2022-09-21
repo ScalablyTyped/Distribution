@@ -11,7 +11,7 @@ object circularProgressbarMod {
   
   @JSImport("react-circular-progressbar/dist/CircularProgressbar", JSImport.Default)
   @js.native
-  class default () extends CircularProgressbar
+  open class default () extends CircularProgressbar
   object default {
     
     @JSImport("react-circular-progressbar/dist/CircularProgressbar", JSImport.Default)
@@ -27,7 +27,7 @@ object circularProgressbarMod {
   
   @js.native
   trait CircularProgressbar
-    extends Component[CircularProgressbarProps, js.Object, js.Any] {
+    extends Component[CircularProgressbarProps, js.Object, Any] {
     
     def getBackgroundPadding(): Double = js.native
     

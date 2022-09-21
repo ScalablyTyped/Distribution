@@ -1,9 +1,7 @@
 package typings.swaggerExpressMiddleware.mod
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.std.Error
+import typings.std.Record
 import typings.swaggerExpressMiddleware.anon.FieldNameSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,9 +15,15 @@ trait MulterOptions extends StObject {
   /** A function to control which files to upload and which to skip. */
   var fileFilter: js.UndefOr[
     js.Function3[
-      /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+      /* req */ Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ], 
       /* file */ File, 
-      /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit], 
+      /* callback */ js.Function2[/* error */ js.Error, /* acceptFile */ Boolean, Unit], 
       Unit
     ]
   ] = js.undefined
@@ -44,7 +48,13 @@ object MulterOptions {
     inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
     
     inline def setFileFilter(
-      value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit]) => Unit
+      value: (/* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], /* file */ File, /* callback */ js.Function2[/* error */ js.Error, /* acceptFile */ Boolean, Unit]) => Unit
     ): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
     
     inline def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-formidable
 
-Typings are for version 1.0
+Typings are for version 1.2
 
 ## Library description:
 An Express middleware of Formidable that just works.
@@ -10,10 +10,10 @@ An Express middleware of Formidable that just works.
 | ------------------ | :-------------: |
 | Full name          | express-formidable |
 | Keywords           | express, middleware, formidable |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 616682 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 100229.0 |
+| # stars            | 124.0 |
 
 ## Links
 - [Homepage](https://github.com/noraesae/express-formidable)

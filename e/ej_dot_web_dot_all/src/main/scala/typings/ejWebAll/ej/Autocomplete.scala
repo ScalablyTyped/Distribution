@@ -34,7 +34,7 @@ trait Autocomplete
   /** Returns objects (data object) of all the selected items in the autocomplete textbox.
     * @returns {any}
     */
-  def getSelectedItems(): js.Any = js.native
+  def getSelectedItems(): Any = js.native
   
   /** Returns the current selected value from the Autocomplete textbox.
     * @returns {string}
@@ -144,7 +144,7 @@ object Autocomplete {
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -163,7 +163,7 @@ object Autocomplete {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -185,19 +185,19 @@ object Autocomplete {
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var result: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the name of the event
       */
@@ -205,7 +205,7 @@ object Autocomplete {
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -224,29 +224,29 @@ object Autocomplete {
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      inline def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -260,15 +260,15 @@ object Autocomplete {
     
     /** Returns the error message
       */
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -287,15 +287,15 @@ object Autocomplete {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -317,19 +317,19 @@ object Autocomplete {
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var result: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the name of the event
       */
@@ -337,7 +337,7 @@ object Autocomplete {
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object ActionSuccessEventArgs {
     
@@ -356,29 +356,29 @@ object Autocomplete {
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      inline def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -548,7 +548,7 @@ object Autocomplete {
     
     /** Defines the HTML attributes such as id, class, styles for the item.
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Defines the specific field name which contains unique key values for the list items.
       */
@@ -571,7 +571,7 @@ object Autocomplete {
       
       inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -744,7 +744,7 @@ object Autocomplete {
     /** The data source contains the list of data for the suggestions list. It can be a string array or JSON array or service URL that returns JSON.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** The time delay (in milliseconds) after which the suggestion popup will be shown.
       * @Default {200}
@@ -920,12 +920,12 @@ object Autocomplete {
     /** The jQuery validation error message to be displayed on form validation.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.undefined
+    var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** The jQuery validation rules for form validation.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** The value to be displayed in the autocomplete textbox.
       * @Default {null}
@@ -1012,11 +1012,11 @@ object Autocomplete {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any | js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setDelaySuggestionTimeout(value: Double): Self = StObject.set(x, "delaySuggestionTimeout", value.asInstanceOf[js.Any])
       
@@ -1158,11 +1158,11 @@ object Autocomplete {
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      inline def setValidationMessage(value: js.Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
       inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
@@ -1197,7 +1197,7 @@ object Autocomplete {
     
     /** This property allows user to search text for any number of fields in the suggestion list without modifying the selected text format.
       */
-    var searchColumnIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var searchColumnIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Allow header text to be displayed in corresponding columns.
       * @Default {true}
@@ -1221,17 +1221,17 @@ object Autocomplete {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: MultiColumnSettingsColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: MultiColumnSettingsColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
       inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      inline def setSearchColumnIndices(value: js.Array[js.Any]): Self = StObject.set(x, "searchColumnIndices", value.asInstanceOf[js.Any])
+      inline def setSearchColumnIndices(value: js.Array[Any]): Self = StObject.set(x, "searchColumnIndices", value.asInstanceOf[js.Any])
       
       inline def setSearchColumnIndicesUndefined: Self = StObject.set(x, "searchColumnIndices", js.undefined)
       
-      inline def setSearchColumnIndicesVarargs(value: js.Any*): Self = StObject.set(x, "searchColumnIndices", js.Array(value :_*))
+      inline def setSearchColumnIndicesVarargs(value: Any*): Self = StObject.set(x, "searchColumnIndices", js.Array(value*))
       
       inline def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
       

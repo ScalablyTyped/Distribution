@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xpath" : "0.0.27"
+      "xpath" : "0.0.32"
     }
   ],
   "test-dependencies" : [
     {
-      "xpath" : "0.0.27"
+      "xpath" : "0.0.32"
     }
   ],
   "compile-devDependencies" : [

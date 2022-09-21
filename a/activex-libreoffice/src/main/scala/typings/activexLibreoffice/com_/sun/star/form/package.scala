@@ -1,5 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.form
 
+import typings.activexLibreoffice.com_.sun.star.container.XChild
+import typings.activexLibreoffice.com_.sun.star.frame.XDispatchProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is not used anymore, and superseded by {@link com.sun.star.form.runtime.FormController} and {@link com.sun.star.form.runtime.FormOperations} .
   * @deprecated Deprecated
   */
-type FormControllerDispatcher = typings.activexLibreoffice.com_.sun.star.frame.XDispatchProvider
+type FormControllerDispatcher = XDispatchProvider
 
 /**
   * specifies the capabilities of a collection of forms.
@@ -18,7 +20,7 @@ type FormControllerDispatcher = typings.activexLibreoffice.com_.sun.star.frame.X
   * com.sun.star.form.component.Form} service.
   * @see com.sun.star.form.component.Form
   */
-type Forms = typings.activexLibreoffice.com_.sun.star.form.XForms
+type Forms = XForms
 
 /**
   * identifies a {@link FormComponent} as being a (sub-) form.
@@ -26,7 +28,7 @@ type Forms = typings.activexLibreoffice.com_.sun.star.form.XForms
   * This interface does not really provide an own functionality, it is only for easier runtime identification of form components.
   * @see XFormComponent
   */
-type XForm = typings.activexLibreoffice.com_.sun.star.form.XFormComponent
+type XForm = XFormComponent
 
 /**
   * describes a component which may be part of a form.
@@ -34,4 +36,4 @@ type XForm = typings.activexLibreoffice.com_.sun.star.form.XFormComponent
   * This interface does not really provide an own functionality, it is only for easier runtime identification of form components.
   * @see XForm
   */
-type XFormComponent = typings.activexLibreoffice.com_.sun.star.container.XChild
+type XFormComponent = XChild

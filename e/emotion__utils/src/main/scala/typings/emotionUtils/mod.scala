@@ -22,9 +22,13 @@ object mod {
   @js.native
   val isBrowser: Boolean = js.native
   
+  inline def registerStyles(cache: EmotionCache, serialized: SerializedStyles, isStringTag: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerStyles")(cache.asInstanceOf[js.Any], serialized.asInstanceOf[js.Any], isStringTag.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait EmotionCache extends StObject {
     
     var compat: js.UndefOr[`true`] = js.undefined
+    
+    def insert(selector: String, serialized: SerializedStyles, sheet: StyleSheet, shouldCache: Boolean): String | Unit
     
     var inserted: StringDictionary[String | `true`]
     
@@ -35,19 +39,17 @@ object mod {
     var registered: RegisteredCache
     
     var sheet: StyleSheet
-    
-    def stylis(key: String, value: String): js.Array[String]
   }
   object EmotionCache {
     
     inline def apply(
+      insert: (String, SerializedStyles, StyleSheet, Boolean) => String | Unit,
       inserted: StringDictionary[String | `true`],
       key: String,
       registered: RegisteredCache,
-      sheet: StyleSheet,
-      stylis: (String, String) => js.Array[String]
+      sheet: StyleSheet
     ): EmotionCache = {
-      val __obj = js.Dynamic.literal(inserted = inserted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], registered = registered.asInstanceOf[js.Any], sheet = sheet.asInstanceOf[js.Any], stylis = js.Any.fromFunction2(stylis))
+      val __obj = js.Dynamic.literal(insert = js.Any.fromFunction4(insert), inserted = inserted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], registered = registered.asInstanceOf[js.Any], sheet = sheet.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmotionCache]
     }
     
@@ -56,6 +58,8 @@ object mod {
       inline def setCompat(value: `true`): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
       
       inline def setCompatUndefined: Self = StObject.set(x, "compat", js.undefined)
+      
+      inline def setInsert(value: (String, SerializedStyles, StyleSheet, Boolean) => String | Unit): Self = StObject.set(x, "insert", js.Any.fromFunction4(value))
       
       inline def setInserted(value: StringDictionary[String | `true`]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
       
@@ -68,8 +72,6 @@ object mod {
       inline def setRegistered(value: RegisteredCache): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
       
       inline def setSheet(value: StyleSheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
-      
-      inline def setStylis(value: (String, String) => js.Array[String]): Self = StObject.set(x, "stylis", js.Any.fromFunction2(value))
     }
   }
   
@@ -151,7 +153,7 @@ object mod {
       
       inline def setTags(value: js.Array[HTMLStyleElement]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
 }

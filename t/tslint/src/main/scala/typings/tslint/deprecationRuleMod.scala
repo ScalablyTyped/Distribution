@@ -11,7 +11,7 @@ object deprecationRuleMod {
   
   @JSImport("tslint/lib/rules/deprecationRule", "Rule")
   @js.native
-  class Rule protected () extends TypedRule {
+  open class Rule protected () extends TypedRule {
     def this(options: IOptions) = this()
   }
   /* static members */

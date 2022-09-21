@@ -14,7 +14,7 @@ trait Domain extends StObject {
   /**
     * The date when the domain recordset was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An array of key-value pairs containing information about the domain entries.
@@ -42,7 +42,7 @@ trait Domain extends StObject {
   var supportCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
+    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Amazon Lightsail Developer Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -59,7 +59,7 @@ object Domain {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -67,7 +67,7 @@ object Domain {
     
     inline def setDomainEntriesUndefined: Self = StObject.set(x, "domainEntries", js.undefined)
     
-    inline def setDomainEntriesVarargs(value: DomainEntry*): Self = StObject.set(x, "domainEntries", js.Array(value :_*))
+    inline def setDomainEntriesVarargs(value: DomainEntry*): Self = StObject.set(x, "domainEntries", js.Array(value*))
     
     inline def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -89,6 +89,6 @@ object Domain {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

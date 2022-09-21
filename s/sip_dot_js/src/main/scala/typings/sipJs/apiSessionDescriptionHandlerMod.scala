@@ -71,7 +71,7 @@ object apiSessionDescriptionHandlerMod {
       * @returns True if DTMF send is successful, false otherwise.
       */
     def sendDtmf(tones: String): Boolean = js.native
-    def sendDtmf(tones: String, options: js.Any): Boolean = js.native
+    def sendDtmf(tones: String, options: Any): Boolean = js.native
     
     /**
       * Sets the remote description to the underlying media implementation.

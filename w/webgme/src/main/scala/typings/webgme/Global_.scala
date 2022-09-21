@@ -73,7 +73,7 @@ object Global_ {
     def setEnabled(action: Boolean): Unit = js.native
     
     def setListener(): Unit = js.native
-    def setListener(listener: js.Any): Unit = js.native
+    def setListener(listener: Any): Unit = js.native
   }
   
   @js.native
@@ -82,11 +82,11 @@ object Global_ {
     def clear(): Unit = js.native
     def clear(options: StateOptions): Unit = js.native
     
-    def getActiveObject(): js.Any = js.native
+    def getActiveObject(): Any = js.native
     
     def off(message: String, handler: StateHandler): Unit = js.native
     
-    def on(message: String, handler: StateHandler, target: js.Any): Unit = js.native
+    def on(message: String, handler: StateHandler, target: Any): Unit = js.native
     
     def registerActiveBranchName(branchName: String): Unit = js.native
     
@@ -104,10 +104,10 @@ object Global_ {
     
     def set(update: State): Unit = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
   
-  type StateHandler = js.Function2[/* model */ js.Any, /* change */ String, Unit]
+  type StateHandler = js.Function2[/* model */ Any, /* change */ String, Unit]
   
   trait StateOptions extends StObject {
     

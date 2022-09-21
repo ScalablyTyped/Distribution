@@ -4,31 +4,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NameParams[RouteName_4 /* <: String */] extends StObject {
+trait NameParams[RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: js.Object */] extends StObject {
   
   var key: js.UndefOr[String] = js.undefined
   
-  var name: RouteName_4
+  var merge: js.UndefOr[Boolean] = js.undefined
   
-  var params: js.UndefOr[js.Object] = js.undefined
+  var name: RouteName
+  
+  var params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
 }
 object NameParams {
   
-  inline def apply[RouteName_4 /* <: String */](name: RouteName_4): NameParams[RouteName_4] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NameParams[RouteName_4]]
+  inline def apply[RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: js.Object */](
+    name: RouteName,
+    params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
+  ): NameParams[RouteName, ParamList] = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NameParams[RouteName, ParamList]]
   }
   
-  extension [Self <: NameParams[?], RouteName_4 /* <: String */](x: Self & NameParams[RouteName_4]) {
+  extension [Self <: NameParams[?, ?], RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: js.Object */](x: Self & (NameParams[RouteName, ParamList])) {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: RouteName_4): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
     
-    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setParams(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
+    ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

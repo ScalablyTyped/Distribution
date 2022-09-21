@@ -11,9 +11,9 @@ Swagger loader and middleware for Hapi
 | Full name          | swagger-hapi |
 | Keywords           | swagger, api, apis, hapi |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3110 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 127.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/apigee-127/swagger-hapi#readme)

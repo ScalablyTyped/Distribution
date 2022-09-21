@@ -9,7 +9,7 @@ trait FormValidateEvent
   extends StObject
      with FormEvent {
   
-  var errors: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var errors: js.UndefOr[js.Array[Any]] = js.undefined
   
   var model: js.UndefOr[Model] = js.undefined
   
@@ -24,11 +24,11 @@ object FormValidateEvent {
   
   extension [Self <: FormValidateEvent](x: Self) {
     
-    inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Any*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

@@ -19,8 +19,8 @@ trait ASPxClientDashboardItemMasterFilterStateChangedEventArgs
 object ASPxClientDashboardItemMasterFilterStateChangedEventArgs {
   
   inline def apply(
-    IsNullValue: js.Any => Boolean,
-    IsOthersValue: js.Any => Boolean,
+    IsNullValue: Any => Boolean,
+    IsOthersValue: Any => Boolean,
     ItemName: String,
     Values: js.Array[js.Array[js.Object]]
   ): ASPxClientDashboardItemMasterFilterStateChangedEventArgs = {
@@ -32,6 +32,6 @@ object ASPxClientDashboardItemMasterFilterStateChangedEventArgs {
     
     inline def setValues(value: js.Array[js.Array[js.Object]]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: js.Array[js.Object]*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[js.Object]*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

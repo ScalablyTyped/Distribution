@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "Bridge")
 @js.native
-class Bridge protected ()
+open class Bridge protected ()
   extends typings.matrixAppserviceBridge.bridgeMod.Bridge {
   /**
     * @param opts Options to pass to the bridge

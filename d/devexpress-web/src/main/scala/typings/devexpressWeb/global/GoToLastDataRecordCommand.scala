@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("GoToLastDataRecordCommand")
 @js.native
-class GoToLastDataRecordCommand ()
+open class GoToLastDataRecordCommand ()
   extends StObject
      with typings.devexpressWeb.GoToLastDataRecordCommand {
   

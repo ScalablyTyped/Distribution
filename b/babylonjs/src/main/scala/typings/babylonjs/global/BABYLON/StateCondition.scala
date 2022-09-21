@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.StateCondition")
 @js.native
-class StateCondition protected ()
+open class StateCondition protected ()
   extends StObject
      with typings.babylonjs.BABYLON.StateCondition {
   /**
@@ -17,7 +17,7 @@ class StateCondition protected ()
     */
   def this(
     actionManager: typings.babylonjs.BABYLON.ActionManager,
-    target: js.Any,
+    target: Any,
     /** Value to compare with target state  */
   value: String
   ) = this()
@@ -45,13 +45,16 @@ class StateCondition protected ()
   
   /**
     * Internal only
+    * @param target
+    * @param propertyPath
     * @hidden
     */
   /* CompleteClass */
-  override def _getEffectiveTarget(target: js.Any, propertyPath: String): js.Any = js.native
+  override def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
   
   /**
     * Internal only
+    * @param propertyPath
     * @hidden
     */
   /* CompleteClass */
@@ -59,17 +62,18 @@ class StateCondition protected ()
   
   /**
     * Internal only
+    * @param serializedCondition
     * @hidden
     */
   /* protected */ /* CompleteClass */
-  override def _serialize(serializedCondition: js.Any): js.Any = js.native
+  override def _serialize(serializedCondition: Any): Any = js.native
   
   /**
     * Internal only
     * @hidden
     */
   /* private */ /* CompleteClass */
-  var _target: js.Any = js.native
+  var _target: Any = js.native
   
   /**
     * Check if the current condition is valid
@@ -83,7 +87,7 @@ class StateCondition protected ()
     * @returns the serialized object
     */
   /* CompleteClass */
-  override def serialize(): js.Any = js.native
+  override def serialize(): Any = js.native
   
   /** Value to compare with target state  */
   /* CompleteClass */

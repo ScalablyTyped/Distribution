@@ -10,7 +10,7 @@ trait IgGridColumnGroupOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Sets whether expansion indicators are visible in the group header.

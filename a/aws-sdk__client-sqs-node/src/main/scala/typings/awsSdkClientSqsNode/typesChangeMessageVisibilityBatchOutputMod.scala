@@ -47,11 +47,11 @@ object typesChangeMessageVisibilityBatchOutputMod {
       
       inline def setFailed(value: js.Array[UnmarshalledBatchResultErrorEntry]): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
       
-      inline def setFailedVarargs(value: UnmarshalledBatchResultErrorEntry*): Self = StObject.set(x, "Failed", js.Array(value :_*))
+      inline def setFailedVarargs(value: UnmarshalledBatchResultErrorEntry*): Self = StObject.set(x, "Failed", js.Array(value*))
       
       inline def setSuccessful(value: js.Array[UnmarshalledChangeMessageVisibilityBatchResultEntry]): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
       
-      inline def setSuccessfulVarargs(value: UnmarshalledChangeMessageVisibilityBatchResultEntry*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+      inline def setSuccessfulVarargs(value: UnmarshalledChangeMessageVisibilityBatchResultEntry*): Self = StObject.set(x, "Successful", js.Array(value*))
     }
   }
 }

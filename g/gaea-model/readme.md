@@ -10,10 +10,10 @@ Typings are for version 1.0.29
 | ------------------ | :-------------: |
 | Full name          | gaea-model |
 | Keywords           | gaea-model |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 991 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 142.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/ascoders/gaea-model#readme)

@@ -16,12 +16,16 @@ trait Track
   /**
     * The HTML5 Geolocation Position options for locating.
     *
+    * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#geolocationOptions)
     */
-  var geolocationOptions: js.Any = js.native
+  var geolocationOptions: Any = js.native
   
   /**
     * Indicates whether the widget will automatically navigate the view to the user's position when a geolocation result is found.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#goToLocationEnabled)
     */
@@ -49,6 +53,8 @@ trait Track
   /**
     * Indicates the scale to set on the view when navigating to the position of the geolocated result once a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#event-track) event.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#scale)
     */
   var scale: Double = js.native
@@ -58,17 +64,19 @@ trait Track
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#start)
     */
-  def start(): Unit = js.native
+  def start(): scala.Unit = js.native
   
   /**
     * Stops tracking the user's location when executed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#stop)
     */
-  def stop(): Unit = js.native
+  def stop(): scala.Unit = js.native
   
   /**
     * Indicates whether the widget is watching for new positions.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#tracking)
     */
@@ -76,6 +84,8 @@ trait Track
   
   /**
     * Indicates whether the widget will automatically [rotate to user's direction](https://www.w3.org/TR/geolocation-API/#coordinates_interface).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#useHeadingEnabled)
     */

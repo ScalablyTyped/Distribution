@@ -1,8 +1,8 @@
 package typings.jupyterlabMainmenu
 
-import typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu
-import typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu
-import typings.luminoWidgets.menuMod.Menu.IOptions
+import typings.jupyterlabUiComponents.menuMod.IRankedMenu
+import typings.jupyterlabUiComponents.menuMod.IRankedMenu.IOptions
+import typings.jupyterlabUiComponents.mod.RankedMenu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +11,12 @@ object tabsMod {
   
   @JSImport("@jupyterlab/mainmenu/lib/tabs", "TabsMenu")
   @js.native
-  class TabsMenu protected () extends JupyterLabMenu {
+  open class TabsMenu protected () extends RankedMenu {
     /**
       * Construct the tabs menu.
       */
     def this(options: IOptions) = this()
   }
   
-  type ITabsMenu = IJupyterLabMenu
+  type ITabsMenu = IRankedMenu
 }

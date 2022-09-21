@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "InsufficientAccessRightsError")
 @js.native
-class InsufficientAccessRightsError () extends StObject {
+open class InsufficientAccessRightsError () extends StObject {
   def this(error: String) = this()
 }

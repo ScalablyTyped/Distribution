@@ -11,10 +11,10 @@ trait IHTMLOptionElement extends StObject {
   
   var defaultSelected: Boolean
   
-  def form(): js.Any
-  def form(name: js.Any): js.Any
-  def form(name: js.Any, index: js.Any): js.Any
-  def form(name: Unit, index: js.Any): js.Any
+  def form(): Any
+  def form(name: Any): Any
+  def form(name: Any, index: Any): Any
+  def form(name: Unit, index: Any): Any
   @JSName("form")
   val form_Original: IHTMLFormElement
   

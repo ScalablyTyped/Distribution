@@ -10,15 +10,12 @@ A jQuery plugin for selecting a country
 | ------------------ | :-------------: |
 | Full name          | country-select-js |
 | Keywords           | country, international, jQuery |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 22555 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1873.6666666666667 |
+| # stars            | 253.0 |
 
 ## Links
-- [Homepage](https://github.com/mrmarkfrench/country-select-js)
-- [Bugs](https://github.com/mrmarkfrench/country-select-js/issues)
-- [Repository](https://github.com/mrmarkfrench/country-select-js)
 - [Npm](https://www.npmjs.com/package/country-select-js)
     
 

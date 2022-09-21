@@ -15,12 +15,8 @@ trait ChatMessageMention extends StObject {
   // String used to represent the mention. For example, a user's display name, a team name.
   var mentionText: js.UndefOr[NullableOption[String]] = js.undefined
   
-  /**
-    * The entity (user, application, team, or channel) that was mentioned. If it was a channel or team that was @mentioned,
-    * the identitySet contains a conversation property giving the ID of the team/channel, and a conversationIdentityType
-    * property that represents either the team or channel.
-    */
-  var mentioned: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
+  // The entity (user, application, team, or channel) that was @mentioned.
+  var mentioned: js.UndefOr[NullableOption[ChatMessageMentionedIdentitySet]] = js.undefined
 }
 object ChatMessageMention {
   
@@ -43,7 +39,7 @@ object ChatMessageMention {
     
     inline def setMentionTextUndefined: Self = StObject.set(x, "mentionText", js.undefined)
     
-    inline def setMentioned(value: NullableOption[IdentitySet]): Self = StObject.set(x, "mentioned", value.asInstanceOf[js.Any])
+    inline def setMentioned(value: NullableOption[ChatMessageMentionedIdentitySet]): Self = StObject.set(x, "mentioned", value.asInstanceOf[js.Any])
     
     inline def setMentionedNull: Self = StObject.set(x, "mentioned", null)
     

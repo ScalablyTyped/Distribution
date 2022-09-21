@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDimensionResponse extends StObject {
   
   /**
-    * The ARN (Amazon resource name) of the created dimension.
+    * The Amazon Resource Name (ARN) of the created dimension.
     */
   var arn: js.UndefOr[DimensionArn] = js.undefined
   

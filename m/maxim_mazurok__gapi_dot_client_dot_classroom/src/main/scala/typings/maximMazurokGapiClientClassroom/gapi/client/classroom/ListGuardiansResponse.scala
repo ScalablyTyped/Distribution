@@ -25,7 +25,7 @@ object ListGuardiansResponse {
     
     inline def setGuardiansUndefined: Self = StObject.set(x, "guardians", js.undefined)
     
-    inline def setGuardiansVarargs(value: Guardian*): Self = StObject.set(x, "guardians", js.Array(value :_*))
+    inline def setGuardiansVarargs(value: Guardian*): Self = StObject.set(x, "guardians", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

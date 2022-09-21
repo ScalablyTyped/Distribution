@@ -66,7 +66,7 @@ trait IDatePicker
     */
   @JSName("setValue")
   var setValue_IDatePicker: js.UndefOr[
-    js.Function2[/* value */ js.UndefOr[js.Any], /* animated */ js.UndefOr[js.Any], IPicker]
+    js.Function2[/* value */ js.UndefOr[Any], /* animated */ js.UndefOr[Any], IPicker]
   ] = js.undefined
   
   /** [Method] Sets the value of yearFrom
@@ -92,7 +92,7 @@ trait IDatePicker
     * @param oldDayText Object
     */
   var updateDayText: js.UndefOr[
-    js.Function2[/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* newDayText */ js.UndefOr[Any], /* oldDayText */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] Updates the monthText configuration
@@ -100,7 +100,7 @@ trait IDatePicker
     * @param oldMonthText Object
     */
   var updateMonthText: js.UndefOr[
-    js.Function2[/* newMonthText */ js.UndefOr[js.Any], /* oldMonthText */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* newMonthText */ js.UndefOr[Any], /* oldMonthText */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] Updates the yearFrom configuration */
@@ -109,7 +109,7 @@ trait IDatePicker
   /** [Method] Updates the yearText configuration
     * @param yearText Object
     */
-  var updateYearText: js.UndefOr[js.Function1[/* yearText */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updateYearText: js.UndefOr[js.Function1[/* yearText */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Updates the yearTo configuration */
   var updateYearTo: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -176,7 +176,7 @@ object IDatePicker {
     
     inline def setSetSlotOrderUndefined: Self = StObject.set(x, "setSlotOrder", js.undefined)
     
-    inline def setSetValue(value: (/* value */ js.UndefOr[js.Any], /* animated */ js.UndefOr[js.Any]) => IPicker): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (/* value */ js.UndefOr[Any], /* animated */ js.UndefOr[Any]) => IPicker): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
@@ -196,11 +196,11 @@ object IDatePicker {
     
     inline def setSlotOrderUndefined: Self = StObject.set(x, "slotOrder", js.undefined)
     
-    inline def setUpdateDayText(value: (/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateDayText", js.Any.fromFunction2(value))
+    inline def setUpdateDayText(value: (/* newDayText */ js.UndefOr[Any], /* oldDayText */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateDayText", js.Any.fromFunction2(value))
     
     inline def setUpdateDayTextUndefined: Self = StObject.set(x, "updateDayText", js.undefined)
     
-    inline def setUpdateMonthText(value: (/* newMonthText */ js.UndefOr[js.Any], /* oldMonthText */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateMonthText", js.Any.fromFunction2(value))
+    inline def setUpdateMonthText(value: (/* newMonthText */ js.UndefOr[Any], /* oldMonthText */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateMonthText", js.Any.fromFunction2(value))
     
     inline def setUpdateMonthTextUndefined: Self = StObject.set(x, "updateMonthText", js.undefined)
     
@@ -208,7 +208,7 @@ object IDatePicker {
     
     inline def setUpdateYearFromUndefined: Self = StObject.set(x, "updateYearFrom", js.undefined)
     
-    inline def setUpdateYearText(value: /* yearText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateYearText", js.Any.fromFunction1(value))
+    inline def setUpdateYearText(value: /* yearText */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updateYearText", js.Any.fromFunction1(value))
     
     inline def setUpdateYearTextUndefined: Self = StObject.set(x, "updateYearText", js.undefined)
     

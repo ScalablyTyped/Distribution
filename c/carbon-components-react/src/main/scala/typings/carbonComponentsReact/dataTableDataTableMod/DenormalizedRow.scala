@@ -8,19 +8,19 @@ trait DenormalizedRow
   extends StObject
      with DataTableRow[String] {
   
-  var cells: js.Array[DataTableCell[js.Any, DataTableHeader[String]]]
+  var cells: js.Array[DataTableCell[Any, DataTableHeader[String]]]
 }
 object DenormalizedRow {
   
-  inline def apply(cells: js.Array[DataTableCell[js.Any, DataTableHeader[String]]], id: String): DenormalizedRow = {
+  inline def apply(cells: js.Array[DataTableCell[Any, DataTableHeader[String]]], id: String): DenormalizedRow = {
     val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DenormalizedRow]
   }
   
   extension [Self <: DenormalizedRow](x: Self) {
     
-    inline def setCells(value: js.Array[DataTableCell[js.Any, DataTableHeader[String]]]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[DataTableCell[Any, DataTableHeader[String]]]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    inline def setCellsVarargs(value: (DataTableCell[js.Any, DataTableHeader[String]])*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: (DataTableCell[Any, DataTableHeader[String]])*): Self = StObject.set(x, "cells", js.Array(value*))
   }
 }

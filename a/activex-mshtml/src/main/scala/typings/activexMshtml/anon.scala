@@ -34,20 +34,20 @@ object anon {
   
   trait EventData extends StObject {
     
-    val eventData: js.Any
+    val eventData: Any
     
     val name: String
   }
   object EventData {
     
-    inline def apply(eventData: js.Any, name: String): EventData = {
+    inline def apply(eventData: Any, name: String): EventData = {
       val __obj = js.Dynamic.literal(eventData = eventData.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventData]
     }
     
     extension [Self <: EventData](x: Self) {
       
-      inline def setEventData(value: js.Any): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
+      inline def setEventData(value: Any): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -58,11 +58,11 @@ object NxPivotDimensioncell {
     
     inline def setQAttrDims(value: js.Array[NxAttributeDimValues]): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     
-    inline def setQAttrDimsVarargs(value: NxAttributeDimValues*): Self = StObject.set(x, "qAttrDims", js.Array(value :_*))
+    inline def setQAttrDimsVarargs(value: NxAttributeDimValues*): Self = StObject.set(x, "qAttrDims", js.Array(value*))
     
     inline def setQAttrExps(value: js.Array[NxAttributeExpressionValues]): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
-    inline def setQAttrExpsVarargs(value: NxAttributeExpressionValues*): Self = StObject.set(x, "qAttrExps", js.Array(value :_*))
+    inline def setQAttrExpsVarargs(value: NxAttributeExpressionValues*): Self = StObject.set(x, "qAttrExps", js.Array(value*))
     
     inline def setQCanCollapse(value: Boolean): Self = StObject.set(x, "qCanCollapse", value.asInstanceOf[js.Any])
     
@@ -74,7 +74,7 @@ object NxPivotDimensioncell {
     
     inline def setQSubNodes(value: js.Array[NxPivotDimensioncell]): Self = StObject.set(x, "qSubNodes", value.asInstanceOf[js.Any])
     
-    inline def setQSubNodesVarargs(value: NxPivotDimensioncell*): Self = StObject.set(x, "qSubNodes", js.Array(value :_*))
+    inline def setQSubNodesVarargs(value: NxPivotDimensioncell*): Self = StObject.set(x, "qSubNodes", js.Array(value*))
     
     inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     

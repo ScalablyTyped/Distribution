@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeoffinalScriptWitness extends StObject {
   
-  def canAdd(currentData: js.Any, newData: js.Any): Boolean
+  def canAdd(currentData: Any, newData: Any): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.FinalScriptWitness */ Boolean
+  def check(data: Any): /* is bip174.bip174/src/lib/interfaces.FinalScriptWitness */ Boolean
   
   def decode(keyVal: KeyValue): FinalScriptWitness
   
@@ -21,8 +21,8 @@ trait TypeoffinalScriptWitness extends StObject {
 object TypeoffinalScriptWitness {
   
   inline def apply(
-    canAdd: (js.Any, js.Any) => Boolean,
-    check: js.Any => /* is bip174.bip174/src/lib/interfaces.FinalScriptWitness */ Boolean,
+    canAdd: (Any, Any) => Boolean,
+    check: Any => /* is bip174.bip174/src/lib/interfaces.FinalScriptWitness */ Boolean,
     decode: KeyValue => FinalScriptWitness,
     encode: FinalScriptWitness => KeyValue,
     expected: /* "Buffer" */ String
@@ -33,9 +33,9 @@ object TypeoffinalScriptWitness {
   
   extension [Self <: TypeoffinalScriptWitness](x: Self) {
     
-    inline def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
+    inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     
-    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.FinalScriptWitness */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: Any => /* is bip174.bip174/src/lib/interfaces.FinalScriptWitness */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
     inline def setDecode(value: KeyValue => FinalScriptWitness): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

@@ -259,7 +259,7 @@ object Sparkline {
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -278,7 +278,7 @@ object Sparkline {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -296,7 +296,7 @@ object Sparkline {
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -315,7 +315,7 @@ object Sparkline {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -333,7 +333,7 @@ object Sparkline {
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -352,7 +352,7 @@ object Sparkline {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -370,7 +370,7 @@ object Sparkline {
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -389,7 +389,7 @@ object Sparkline {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -518,7 +518,7 @@ object Sparkline {
     /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Fires, on double clicking the sparkline.
       */
@@ -695,7 +695,7 @@ object Sparkline {
       
       inline def setClickUndefined: Self = StObject.set(x, "Click", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -849,7 +849,7 @@ object Sparkline {
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Index of the point in series
       */
@@ -884,7 +884,7 @@ object Sparkline {
       
       inline def setLocationYUndefined: Self = StObject.set(x, "locationY", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -918,7 +918,7 @@ object Sparkline {
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Index of the point in series
       */
@@ -953,7 +953,7 @@ object Sparkline {
       
       inline def setLocationYUndefined: Self = StObject.set(x, "locationY", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1028,7 +1028,7 @@ object Sparkline {
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -1047,7 +1047,7 @@ object Sparkline {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1065,23 +1065,23 @@ object Sparkline {
     
     /** Maximum x value of the data point
       */
-    var maxX: js.UndefOr[js.Any] = js.undefined
+    var maxX: js.UndefOr[Any] = js.undefined
     
     /** Maximum y value of the data point
       */
-    var maxY: js.UndefOr[js.Any] = js.undefined
+    var maxY: js.UndefOr[Any] = js.undefined
     
     /** Minimum x value of the data point
       */
-    var minX: js.UndefOr[js.Any] = js.undefined
+    var minX: js.UndefOr[Any] = js.undefined
     
     /** Minimum y value of the data point
       */
-    var minY: js.UndefOr[js.Any] = js.undefined
+    var minY: js.UndefOr[Any] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -1100,23 +1100,23 @@ object Sparkline {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setMaxX(value: js.Any): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+      inline def setMaxX(value: Any): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
       inline def setMaxXUndefined: Self = StObject.set(x, "maxX", js.undefined)
       
-      inline def setMaxY(value: js.Any): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+      inline def setMaxY(value: Any): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
       
       inline def setMaxYUndefined: Self = StObject.set(x, "maxY", js.undefined)
       
-      inline def setMinX(value: js.Any): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+      inline def setMinX(value: Any): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
       
       inline def setMinXUndefined: Self = StObject.set(x, "minX", js.undefined)
       
-      inline def setMinY(value: js.Any): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+      inline def setMinY(value: Any): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
       
       inline def setMinYUndefined: Self = StObject.set(x, "minY", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1165,7 +1165,7 @@ object Sparkline {
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -1184,7 +1184,7 @@ object Sparkline {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1202,7 +1202,7 @@ object Sparkline {
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -1221,7 +1221,7 @@ object Sparkline {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1396,15 +1396,15 @@ object Sparkline {
     
     /** X Location of the trackball tooltip in pixels
       */
-    var locationX: js.UndefOr[js.Any] = js.undefined
+    var locationX: js.UndefOr[Any] = js.undefined
     
     /** Y Location of the trackball tooltip in pixels
       */
-    var locationY: js.UndefOr[js.Any] = js.undefined
+    var locationY: js.UndefOr[Any] = js.undefined
     
     /** Instance of the sparkline model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Index of the point for which trackball tooltip is displayed
       */
@@ -1431,15 +1431,15 @@ object Sparkline {
       
       inline def setCurrentTextUndefined: Self = StObject.set(x, "currentText", js.undefined)
       
-      inline def setLocationX(value: js.Any): Self = StObject.set(x, "locationX", value.asInstanceOf[js.Any])
+      inline def setLocationX(value: Any): Self = StObject.set(x, "locationX", value.asInstanceOf[js.Any])
       
       inline def setLocationXUndefined: Self = StObject.set(x, "locationX", js.undefined)
       
-      inline def setLocationY(value: js.Any): Self = StObject.set(x, "locationY", value.asInstanceOf[js.Any])
+      inline def setLocationY(value: Any): Self = StObject.set(x, "locationY", value.asInstanceOf[js.Any])
       
       inline def setLocationYUndefined: Self = StObject.set(x, "locationY", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

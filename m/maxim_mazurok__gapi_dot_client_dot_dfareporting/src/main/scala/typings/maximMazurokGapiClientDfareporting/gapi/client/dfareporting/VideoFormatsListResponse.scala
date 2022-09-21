@@ -29,6 +29,6 @@ object VideoFormatsListResponse {
     
     inline def setVideoFormatsUndefined: Self = StObject.set(x, "videoFormats", js.undefined)
     
-    inline def setVideoFormatsVarargs(value: VideoFormat*): Self = StObject.set(x, "videoFormats", js.Array(value :_*))
+    inline def setVideoFormatsVarargs(value: VideoFormat*): Self = StObject.set(x, "videoFormats", js.Array(value*))
   }
 }

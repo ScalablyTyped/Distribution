@@ -10,10 +10,10 @@ Run webpack as a stream
 | ------------------ | :-------------: |
 | Full name          | webpack-stream |
 | Keywords           | gulpplugin, webpack, stream |
-| # releases         | 3 |
-| # dependents       | 327 |
-| # downloads        | 6081248 |
-| # stars            | 33 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 558584.6666666666 |
+| # stars            | 1383.0 |
 
 ## Links
 - [Homepage](https://github.com/shama/webpack-stream)

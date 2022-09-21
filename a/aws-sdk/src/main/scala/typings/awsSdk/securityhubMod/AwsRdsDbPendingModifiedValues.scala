@@ -7,77 +7,77 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsRdsDbPendingModifiedValues extends StObject {
   
   /**
-    * 
+    * The new value of the allocated storage for the DB instance.
     */
   var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
-    * 
+    * The new backup retention period for the DB instance.
     */
   var BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined
   
   /**
-    * 
+    * The new CA certificate identifier for the DB instance.
     */
   var CaCertificateIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The new DB instance class for the DB instance.
     */
   var DbInstanceClass: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The new DB instance identifier for the DB instance.
     */
   var DbInstanceIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The name of the new subnet group for the DB instance.
     */
   var DbSubnetGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The new engine version for the DB instance.
     */
   var EngineVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The new provisioned IOPS value for the DB instance.
     */
   var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
-    * 
+    * The new license model value for the DB instance.
     */
   var LicenseModel: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The new master user password for the DB instance.
     */
   var MasterUserPassword: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * Indicates that a single Availability Zone DB instance is changing to a multiple Availability Zone deployment.
     */
   var MultiAZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * 
+    * A list of log types that are being enabled or disabled.
     */
   var PendingCloudWatchLogsExports: js.UndefOr[AwsRdsPendingCloudWatchLogsExports] = js.undefined
   
   /**
-    * 
+    * The new port for the DB instance.
     */
   var Port: js.UndefOr[Integer] = js.undefined
   
   /**
-    * 
+    * Processor features that are being updated.
     */
   var ProcessorFeatures: js.UndefOr[AwsRdsDbProcessorFeatures] = js.undefined
   
   /**
-    * 
+    * The new storage type for the DB instance.
     */
   var StorageType: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -146,7 +146,7 @@ object AwsRdsDbPendingModifiedValues {
     
     inline def setProcessorFeaturesUndefined: Self = StObject.set(x, "ProcessorFeatures", js.undefined)
     
-    inline def setProcessorFeaturesVarargs(value: AwsRdsDbProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value :_*))
+    inline def setProcessorFeaturesVarargs(value: AwsRdsDbProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value*))
     
     inline def setStorageType(value: NonEmptyString): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

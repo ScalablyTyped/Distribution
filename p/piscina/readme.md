@@ -1,7 +1,7 @@
 
 # Scala.js typings for piscina
 
-Typings are for version 1.6.3
+Typings are for version 3.2.0
 
 ## Library description:
 A fast, efficient Node.js Worker Thread Pool implementation
@@ -10,10 +10,10 @@ A fast, efficient Node.js Worker Thread Pool implementation
 | ------------------ | :-------------: |
 | Full name          | piscina |
 | Keywords           | fast, worker threads, thread pool, wade wilson |
-| # releases         | 16 |
-| # dependents       | 9 |
-| # downloads        | 163364 |
-| # stars            | 1 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 4959513.0 |
+| # stars            | 2561.0 |
 
 ## Links
 - [Homepage](https://github.com/piscinajs/piscina#readme)

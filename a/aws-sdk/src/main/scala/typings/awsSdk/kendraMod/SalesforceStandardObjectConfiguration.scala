@@ -12,12 +12,12 @@ trait SalesforceStandardObjectConfiguration extends StObject {
   var DocumentDataFieldName: DataSourceFieldName
   
   /**
-    * The name of the field in the standard object table that contains the document titleB.
+    * The name of the field in the standard object table that contains the document title.
     */
   var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.undefined
   
   /**
-    * One or more objects that map fields in the standard object to Amazon Kendra index fields. The index field must exist before you can map a Salesforce field to it.
+    * Maps attributes or field names of the standard object to Amazon Kendra index field names. To create custom fields, use the UpdateIndex API before you map to Salesforce fields. For more information, see Mapping data source fields. The Salesforce data source field names must exist in your Salesforce custom metadata.
     */
   var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
   
@@ -45,7 +45,7 @@ object SalesforceStandardObjectConfiguration {
     
     inline def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
-    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
+    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value*))
     
     inline def setName(value: SalesforceStandardObjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

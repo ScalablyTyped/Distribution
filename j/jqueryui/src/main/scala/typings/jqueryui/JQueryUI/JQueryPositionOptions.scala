@@ -12,11 +12,11 @@ trait JQueryPositionOptions extends StObject {
   
   var my: js.UndefOr[String] = js.undefined
   
-  var of: js.UndefOr[js.Any] = js.undefined
+  var of: js.UndefOr[Any] = js.undefined
   
   var `using`: js.UndefOr[js.Function] = js.undefined
   
-  var within: js.UndefOr[js.Any] = js.undefined
+  var within: js.UndefOr[Any] = js.undefined
 }
 object JQueryPositionOptions {
   
@@ -39,7 +39,7 @@ object JQueryPositionOptions {
     
     inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
-    inline def setOf(value: js.Any): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+    inline def setOf(value: Any): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     
     inline def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
     
@@ -47,7 +47,7 @@ object JQueryPositionOptions {
     
     inline def setUsingUndefined: Self = StObject.set(x, "using", js.undefined)
     
-    inline def setWithin(value: js.Any): Self = StObject.set(x, "within", value.asInstanceOf[js.Any])
+    inline def setWithin(value: Any): Self = StObject.set(x, "within", value.asInstanceOf[js.Any])
     
     inline def setWithinUndefined: Self = StObject.set(x, "within", js.undefined)
   }

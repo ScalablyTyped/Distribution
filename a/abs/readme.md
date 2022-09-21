@@ -11,9 +11,9 @@ A library to convert a path into an absolute path.
 | Full name          | abs |
 | Keywords           | absolute, path |
 | # releases         | 2 |
-| # dependents       | 51 |
-| # downloads        | 934936 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 201352.33333333334 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/IonicaBizau/abs)

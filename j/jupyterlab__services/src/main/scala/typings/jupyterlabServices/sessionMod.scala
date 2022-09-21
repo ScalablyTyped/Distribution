@@ -41,7 +41,7 @@ object sessionMod {
   
   @JSImport("@jupyterlab/services/lib/session", "SessionManager")
   @js.native
-  class SessionManager protected ()
+  open class SessionManager protected ()
     extends typings.jupyterlabServices.sessionManagerMod.SessionManager {
     /**
       * Construct a new session manager.

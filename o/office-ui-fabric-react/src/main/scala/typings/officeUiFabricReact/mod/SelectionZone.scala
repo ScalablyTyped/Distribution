@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.officeUiFabricReact.libMarqueeSelectionMod.SelectionZone because Inheritance from two classes. Inlined 
 - typings.officeUiFabricReact.libSelectionMod.SelectionZone because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "SelectionZone")
 @js.native
-class SelectionZone protected ()
+open class SelectionZone protected ()
   extends typings.officeUiFabricReact.libDetailsListMod.SelectionZone {
   def this(props: ISelectionZoneProps) = this()
 }

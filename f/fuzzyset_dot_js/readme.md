@@ -10,15 +10,12 @@ A fast fuzzy string set for JavaScript
 | ------------------ | :-------------: |
 | Full name          | fuzzyset.js |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 31 |
-| # downloads        | 484005 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 57390.0 |
+| # stars            | 1309.0 |
 
 ## Links
-- [Homepage](http://Glench.github.com/fuzzyset.js)
-- [Bugs](https://github.com/Glench/fuzzyset.js/issues)
-- [Repository](https://github.com/Glench/fuzzyset.js)
 - [Npm](https://www.npmjs.com/package/fuzzyset.js)
     
 

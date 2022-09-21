@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigateBackMiniProgramArgs
   extends StObject
-     with AsyncCallback[Unit] {
+     with AsyncVoidCallback {
   
   /**
     * The extra data that needs to be returned to the target Mini Program,
     *  and the target Mini Program can get it in `App.onLaunch()` or `App.onShow()`.
     */
-  var extraData: js.Any
+  var extraData: Any
 }
 object NavigateBackMiniProgramArgs {
   
-  inline def apply(extraData: js.Any): NavigateBackMiniProgramArgs = {
+  inline def apply(extraData: Any): NavigateBackMiniProgramArgs = {
     val __obj = js.Dynamic.literal(extraData = extraData.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateBackMiniProgramArgs]
   }
   
   extension [Self <: NavigateBackMiniProgramArgs](x: Self) {
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
   }
 }

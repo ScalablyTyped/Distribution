@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DataPackage extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_destroyed(`type`: destroyed, listener: TypedEventHandler[DataPackage, js.Any]): Unit = js.native
+  def addEventListener_destroyed(`type`: destroyed, listener: TypedEventHandler[DataPackage, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_operationcompleted(`type`: operationcompleted, listener: TypedEventHandler[DataPackage, OperationCompletedEventArgs]): Unit = js.native
   
@@ -31,10 +31,10 @@ trait DataPackage extends StObject {
   def getView(): DataPackageView = js.native
   
   /** Occurs when the DataPackage is destroyed. */
-  def ondestroyed(ev: js.Any & WinRTEvent[DataPackage]): Unit = js.native
+  def ondestroyed(ev: Any & WinRTEvent[DataPackage]): Unit = js.native
   /** Occurs when the DataPackage is destroyed. */
   @JSName("ondestroyed")
-  var ondestroyed_Original: TypedEventHandler[DataPackage, js.Any] = js.native
+  var ondestroyed_Original: TypedEventHandler[DataPackage, Any] = js.native
   
   /** Occurs when a paste operation is completed. */
   def onoperationcompleted(ev: OperationCompletedEventArgs & WinRTEvent[DataPackage]): Unit = js.native
@@ -45,9 +45,9 @@ trait DataPackage extends StObject {
   /** Allows you to get and set properties like the title of the content being shared. */
   var properties: DataPackagePropertySet = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_destroyed(`type`: destroyed, listener: TypedEventHandler[DataPackage, js.Any]): Unit = js.native
+  def removeEventListener_destroyed(`type`: destroyed, listener: TypedEventHandler[DataPackage, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_operationcompleted(`type`: operationcompleted, listener: TypedEventHandler[DataPackage, OperationCompletedEventArgs]): Unit = js.native
   
@@ -74,7 +74,7 @@ trait DataPackage extends StObject {
     * @param formatId Specifies the format of the data. We recommend that you set this value by using the StandardDataFormats class.
     * @param value Specifies the content that the DataPackage contains.
     */
-  def setData(formatId: String, value: js.Any): Unit = js.native
+  def setData(formatId: String, value: Any): Unit = js.native
   
   /**
     * Sets a delegate to handle requests from the target app.

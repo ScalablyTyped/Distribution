@@ -10,15 +10,15 @@ Module for creating an accessible, progressively enhanced floating label
 | ------------------ | :-------------: |
 | Full name          | makeup-floating-label |
 | Keywords           | makeup, ebay, accessibility, a11y |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 2454 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 99.33333333333333 |
+| # stars            | 22.0 |
 
 ## Links
-- [Homepage](https://github.com/makeup/makeup-js#readme)
+- [Homepage](https://github.com/makeup/makeup-js/tree/master#readme)
 - [Bugs](https://github.com/makeup/makeup-js/issues)
-- [Repository](https://github.com/makeup/makeup-js)
+- [Repository](https://github.com/makeup/makeup-js/tree/master)
 - [Npm](https://www.npmjs.com/package/makeup-floating-label)
     
 

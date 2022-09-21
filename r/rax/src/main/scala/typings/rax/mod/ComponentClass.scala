@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentClass[P, S]
   extends StObject
      with StaticLifecycle[P, S]
-     with Instantiable1[/* props */ P, Component[P, S, js.Any]]
-     with Instantiable2[/* props */ P, /* context */ js.Any, Component[P, S, js.Any]] {
+     with Instantiable1[/* props */ P, Component[P, S, Any]]
+     with Instantiable2[/* props */ P, /* context */ Any, Component[P, S, Any]] {
   
-  var childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
-  var contextType: js.UndefOr[Context[js.Any]] = js.native
+  var contextType: js.UndefOr[Context[Any]] = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
   var defaultProps: js.UndefOr[Partial[P]] = js.native
   

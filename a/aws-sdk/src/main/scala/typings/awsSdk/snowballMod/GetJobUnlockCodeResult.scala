@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetJobUnlockCodeResult extends StObject {
   
   /**
-    * The UnlockCode value for the specified job. The UnlockCode value can be accessed for up to 90 days after the job has been created.
+    * The UnlockCode value for the specified job. The UnlockCode value can be accessed for up to 360 days after the job has been created.
     */
   var UnlockCode: js.UndefOr[String] = js.undefined
 }

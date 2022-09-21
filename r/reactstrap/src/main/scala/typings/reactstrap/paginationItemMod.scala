@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object paginationItemMod {
   
-  @JSImport("reactstrap/lib/PaginationItem", JSImport.Default)
+  @JSImport("reactstrap/types/lib/PaginationItem", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PaginationItemProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PaginationItemProps, js.Object, Any]
   
-  type PaginationItem = Component[PaginationItemProps, js.Object, js.Any]
+  type PaginationItem = Component[PaginationItemProps, js.Object, Any]
   
   trait PaginationItemProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
@@ -30,7 +30,7 @@ object paginationItemMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object PaginationItemProps {
     
@@ -53,7 +53,7 @@ object paginationItemMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }

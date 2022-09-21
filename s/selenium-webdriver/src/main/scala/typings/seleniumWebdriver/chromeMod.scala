@@ -3,9 +3,9 @@ package typings.seleniumWebdriver
 import typings.seleniumWebdriver.anon.Height
 import typings.seleniumWebdriver.httpMod.Executor
 import typings.seleniumWebdriver.mod.Capabilities
+import typings.seleniumWebdriver.mod.ChromiumWebDriver
 import typings.seleniumWebdriver.mod.CreateSessionCapabilities
 import typings.seleniumWebdriver.mod.Session
-import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.remoteMod.DriverService
 import typings.seleniumWebdriver.remoteMod.DriverService.Builder
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ object chromeMod {
   
   @JSImport("selenium-webdriver/chrome", "Driver")
   @js.native
-  class Driver protected () extends WebDriver {
+  open class Driver protected () extends ChromiumWebDriver {
     def this(session: js.Promise[Session], executor: Executor) = this()
     // region Constructors
     /**
@@ -65,7 +65,7 @@ object chromeMod {
   /**
     * @constructor
     */
-  class Options () extends Capabilities {
+  open class Options () extends Capabilities {
     
     /**
       * Add additional command line arguments to use when launching the Chrome
@@ -85,7 +85,7 @@ object chromeMod {
       *     extensions to add.
       * @return {!Options} A self reference.
       */
-    def addExtensions(var_args: js.Any*): Options = js.native
+    def addExtensions(var_args: Any*): Options = js.native
     
     /**
       * Sets the name of the activity hosting a Chrome-based Android WebView. This
@@ -143,6 +143,16 @@ object chromeMod {
       * @return {!Options} A self reference.
       */
     def androidUseRunningApp(useRunning: Boolean): Options = js.native
+    
+    /**
+      * Sets the address of a Chromium remote debugging server to connect to.
+      * Address should be of the form "{hostname|IP address}:port"
+      * (e.g. "localhost:9222").
+      *
+      * @param {string} address The address to connect to.
+      * @return {!Options} A self reference.
+      */
+    def debuggerAddress(address: String): Options = js.native
     
     /**
       * Sets whether to leave the started Chrome browser running if the controlling
@@ -209,7 +219,7 @@ object chromeMod {
       * @param {!Object} state Dictionary of local state preferences.
       * @return {!Options} A self reference.
       */
-    def setLocalState(state: js.Any): Options = js.native
+    def setLocalState(state: Any): Options = js.native
     
     /**
       * Configures Chrome to emulate a mobile device. For more information, refer
@@ -247,7 +257,7 @@ object chromeMod {
       *     mobile emulation configuration, or `null` to disable emulation.
       * @return {!Options} A self reference.
       */
-    def setMobileEmulation(config: js.Any): Options = js.native
+    def setMobileEmulation(config: Any): Options = js.native
     
     /**
       * Sets the performance logging preferences. Options include:
@@ -281,7 +291,7 @@ object chromeMod {
       * @param {!Object} prefs Dictionary of user preferences to use.
       * @return {!Options} A self reference.
       */
-    def setUserPreferences(prefs: js.Any): Options = js.native
+    def setUserPreferences(prefs: Any): Options = js.native
     
     /**
       * Sets the initial window size.
@@ -319,7 +329,7 @@ object chromeMod {
     *     cannot be found on the PATH.
     * @constructor
     */
-  class ServiceBuilder () extends Builder {
+  open class ServiceBuilder () extends Builder {
     def this(opt_exe: String) = this()
     
     /**
@@ -357,6 +367,8 @@ object chromeMod {
   
   inline def getDefaultService(): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultService")().asInstanceOf[DriverService]
   
+  inline def locateSynchronously(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("locateSynchronously")().asInstanceOf[String | Null]
+  
   inline def setDefaultService(service: DriverService): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultService")(service.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IOptionsValues extends StObject {
@@ -369,11 +381,11 @@ object chromeMod {
     
     var extensions: js.Array[String]
     
-    var localState: js.UndefOr[js.Any] = js.undefined
+    var localState: js.UndefOr[Any] = js.undefined
     
     var logFile: js.UndefOr[String] = js.undefined
     
-    var prefs: js.UndefOr[js.Any] = js.undefined
+    var prefs: js.UndefOr[Any] = js.undefined
   }
   object IOptionsValues {
     
@@ -386,7 +398,7 @@ object chromeMod {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -396,9 +408,9 @@ object chromeMod {
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
-      inline def setLocalState(value: js.Any): Self = StObject.set(x, "localState", value.asInstanceOf[js.Any])
+      inline def setLocalState(value: Any): Self = StObject.set(x, "localState", value.asInstanceOf[js.Any])
       
       inline def setLocalStateUndefined: Self = StObject.set(x, "localState", js.undefined)
       
@@ -406,7 +418,7 @@ object chromeMod {
       
       inline def setLogFileUndefined: Self = StObject.set(x, "logFile", js.undefined)
       
-      inline def setPrefs(value: js.Any): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+      inline def setPrefs(value: Any): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
       
       inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     }
@@ -414,26 +426,20 @@ object chromeMod {
   
   trait IPerfLoggingPrefs extends StObject {
     
-    var bufferUsageReportingInterval: Double
+    var bufferUsageReportingInterval: js.UndefOr[Double] = js.undefined
     
-    var enableNetwork: Boolean
+    var enableNetwork: js.UndefOr[Boolean] = js.undefined
     
-    var enablePage: Boolean
+    var enablePage: js.UndefOr[Boolean] = js.undefined
     
-    var enableTimeline: Boolean
+    var enableTimeline: js.UndefOr[Boolean] = js.undefined
     
-    var tracingCategories: String
+    var traceCategories: js.UndefOr[String] = js.undefined
   }
   object IPerfLoggingPrefs {
     
-    inline def apply(
-      bufferUsageReportingInterval: Double,
-      enableNetwork: Boolean,
-      enablePage: Boolean,
-      enableTimeline: Boolean,
-      tracingCategories: String
-    ): IPerfLoggingPrefs = {
-      val __obj = js.Dynamic.literal(bufferUsageReportingInterval = bufferUsageReportingInterval.asInstanceOf[js.Any], enableNetwork = enableNetwork.asInstanceOf[js.Any], enablePage = enablePage.asInstanceOf[js.Any], enableTimeline = enableTimeline.asInstanceOf[js.Any], tracingCategories = tracingCategories.asInstanceOf[js.Any])
+    inline def apply(): IPerfLoggingPrefs = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPerfLoggingPrefs]
     }
     
@@ -441,13 +447,23 @@ object chromeMod {
       
       inline def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
       
+      inline def setBufferUsageReportingIntervalUndefined: Self = StObject.set(x, "bufferUsageReportingInterval", js.undefined)
+      
       inline def setEnableNetwork(value: Boolean): Self = StObject.set(x, "enableNetwork", value.asInstanceOf[js.Any])
+      
+      inline def setEnableNetworkUndefined: Self = StObject.set(x, "enableNetwork", js.undefined)
       
       inline def setEnablePage(value: Boolean): Self = StObject.set(x, "enablePage", value.asInstanceOf[js.Any])
       
+      inline def setEnablePageUndefined: Self = StObject.set(x, "enablePage", js.undefined)
+      
       inline def setEnableTimeline(value: Boolean): Self = StObject.set(x, "enableTimeline", value.asInstanceOf[js.Any])
       
-      inline def setTracingCategories(value: String): Self = StObject.set(x, "tracingCategories", value.asInstanceOf[js.Any])
+      inline def setEnableTimelineUndefined: Self = StObject.set(x, "enableTimeline", js.undefined)
+      
+      inline def setTraceCategories(value: String): Self = StObject.set(x, "traceCategories", value.asInstanceOf[js.Any])
+      
+      inline def setTraceCategoriesUndefined: Self = StObject.set(x, "traceCategories", js.undefined)
     }
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.Rectangle")
 @js.native
-class Rectangle protected ()
+open class Rectangle protected ()
   extends StObject
      with typings.paper.paper.Rectangle {
   /** 

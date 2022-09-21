@@ -25,7 +25,7 @@ object ShippingOption {
     
     inline def setPrices(value: js.Array[LabeledPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
-    inline def setPricesVarargs(value: LabeledPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: LabeledPrice*): Self = StObject.set(x, "prices", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

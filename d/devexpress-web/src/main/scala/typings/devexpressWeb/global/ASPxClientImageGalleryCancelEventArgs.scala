@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientImageGalleryCancelEventArgs")
 @js.native
-class ASPxClientImageGalleryCancelEventArgs protected ()
+open class ASPxClientImageGalleryCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientImageGalleryCancelEventArgs {
   /**
@@ -20,7 +20,7 @@ class ASPxClientImageGalleryCancelEventArgs protected ()
   def this(index: Double, name: String) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

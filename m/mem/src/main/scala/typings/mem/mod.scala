@@ -6,44 +6,41 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-[Memoize](https://en.wikipedia.org/wiki/Memoization) functions - An optimization used to speed up consecutive function calls by caching the result of calls with identical input.
-@param fn - Function to be memoized.
-@example
-```
-import mem = require('mem');
-let i = 0;
-const counter = () => ++i;
-const memoized = mem(counter);
-memoized('foo');
-//=> 1
-// Cached as it's the same arguments
-memoized('foo');
-//=> 1
-// Not cached anymore as the arguments changed
-memoized('bar');
-//=> 2
-memoized('bar');
-//=> 2
-```
-*/
 object mod {
-  
-  inline def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize): FunctionToMemoize = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[FunctionToMemoize]
-  inline def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize, hasCacheKeyCacheMaxAge: Options[FunctionToMemoize, CacheKeyType]): FunctionToMemoize = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], hasCacheKeyCacheMaxAge.asInstanceOf[js.Any])).asInstanceOf[FunctionToMemoize]
   
   @JSImport("mem", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    Clear all cached data of a memoized function.
-    
-    @param fn - Memoized function.
-    */
-  inline def clear(fn: AnyFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize): FunctionToMemoize = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[FunctionToMemoize]
+  inline def default[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize, hasCacheKeyCacheMaxAge: Options[FunctionToMemoize, CacheKeyType]): FunctionToMemoize = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], hasCacheKeyCacheMaxAge.asInstanceOf[js.Any])).asInstanceOf[FunctionToMemoize]
   
-  type AnyFunction = js.Function1[/* arguments_ */ js.Any, js.Any]
+  inline def memClear(fn: AnyFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memClear")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def memDecorator[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](): js.Function3[
+    /* target */ Any, 
+    /* propertyKey */ String, 
+    /* descriptor */ js.PropertyDescriptor, 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("memDecorator")().asInstanceOf[js.Function3[
+    /* target */ Any, 
+    /* propertyKey */ String, 
+    /* descriptor */ js.PropertyDescriptor, 
+    Unit
+  ]]
+  inline def memDecorator[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](options: Options[FunctionToMemoize, CacheKeyType]): js.Function3[
+    /* target */ Any, 
+    /* propertyKey */ String, 
+    /* descriptor */ js.PropertyDescriptor, 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("memDecorator")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* target */ Any, 
+    /* propertyKey */ String, 
+    /* descriptor */ js.PropertyDescriptor, 
+    Unit
+  ]]
+  
+  type AnyFunction = js.Function1[/* arguments_ */ Any, Any]
   
   trait CacheStorage[KeyType, ValueType] extends StObject {
     
@@ -120,13 +117,13 @@ object mod {
       A `cacheKey` function can return any type supported by `Map` (or whatever structure you use in the `cache` option).
       You can have it cache **all** the arguments by value with `JSON.stringify`, if they are compatible:
       ```
-      import mem = require('mem');
+      import mem from 'mem';
       mem(function_, {cacheKey: JSON.stringify});
       ```
       Or you can use a more full-featured serializer like [serialize-javascript](https://github.com/yahoo/serialize-javascript) to add support for `RegExp`, `Date` and so on.
       ```
-      import mem = require('mem');
-      import serializeJavascript = require('serialize-javascript');
+      import mem from 'mem';
+      import serializeJavascript from 'serialize-javascript';
       mem(function_, {cacheKey: serializeJavascript});
       ```
       @default arguments_ => arguments_[0]

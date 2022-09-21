@@ -12,7 +12,9 @@ trait FunctionConstructor
   * Creates a new function.
   * @param args A list of arguments the function accepts.
   */
+/* standard es5 */
 Instantiable1[/* args (repeated) */ java.lang.String, js.Function] {
   
+  /* standard es5 */
   def apply(args: java.lang.String*): js.Function = js.native
 }

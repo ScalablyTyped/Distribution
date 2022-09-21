@@ -7,33 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMediaProtectionManager extends StObject {
   
-  var oncomponentloadfailed: js.Any
+  var oncomponentloadfailed: Any
   
-  var onrebootneeded: js.Any
+  var onrebootneeded: Any
   
-  var onservicerequested: js.Any
+  var onservicerequested: Any
   
   var properties: IPropertySet
 }
 object IMediaProtectionManager {
   
-  inline def apply(
-    oncomponentloadfailed: js.Any,
-    onrebootneeded: js.Any,
-    onservicerequested: js.Any,
-    properties: IPropertySet
-  ): IMediaProtectionManager = {
+  inline def apply(oncomponentloadfailed: Any, onrebootneeded: Any, onservicerequested: Any, properties: IPropertySet): IMediaProtectionManager = {
     val __obj = js.Dynamic.literal(oncomponentloadfailed = oncomponentloadfailed.asInstanceOf[js.Any], onrebootneeded = onrebootneeded.asInstanceOf[js.Any], onservicerequested = onservicerequested.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaProtectionManager]
   }
   
   extension [Self <: IMediaProtectionManager](x: Self) {
     
-    inline def setOncomponentloadfailed(value: js.Any): Self = StObject.set(x, "oncomponentloadfailed", value.asInstanceOf[js.Any])
+    inline def setOncomponentloadfailed(value: Any): Self = StObject.set(x, "oncomponentloadfailed", value.asInstanceOf[js.Any])
     
-    inline def setOnrebootneeded(value: js.Any): Self = StObject.set(x, "onrebootneeded", value.asInstanceOf[js.Any])
+    inline def setOnrebootneeded(value: Any): Self = StObject.set(x, "onrebootneeded", value.asInstanceOf[js.Any])
     
-    inline def setOnservicerequested(value: js.Any): Self = StObject.set(x, "onservicerequested", value.asInstanceOf[js.Any])
+    inline def setOnservicerequested(value: Any): Self = StObject.set(x, "onservicerequested", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }

@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait ARIAVALUENOW extends StObject {
+  trait ARIAHIDDEN extends StObject {
+    
+    var ARIA_HIDDEN: String
     
     var ARIA_VALUENOW: String
     
@@ -16,19 +18,22 @@ object anon {
     
     var STROKE_DASHOFFSET: String
   }
-  object ARIAVALUENOW {
+  object ARIAHIDDEN {
     
     inline def apply(
+      ARIA_HIDDEN: String,
       ARIA_VALUENOW: String,
       DETERMINATE_CIRCLE_SELECTOR: String,
       RADIUS: String,
       STROKE_DASHOFFSET: String
-    ): ARIAVALUENOW = {
-      val __obj = js.Dynamic.literal(ARIA_VALUENOW = ARIA_VALUENOW.asInstanceOf[js.Any], DETERMINATE_CIRCLE_SELECTOR = DETERMINATE_CIRCLE_SELECTOR.asInstanceOf[js.Any], RADIUS = RADIUS.asInstanceOf[js.Any], STROKE_DASHOFFSET = STROKE_DASHOFFSET.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ARIAVALUENOW]
+    ): ARIAHIDDEN = {
+      val __obj = js.Dynamic.literal(ARIA_HIDDEN = ARIA_HIDDEN.asInstanceOf[js.Any], ARIA_VALUENOW = ARIA_VALUENOW.asInstanceOf[js.Any], DETERMINATE_CIRCLE_SELECTOR = DETERMINATE_CIRCLE_SELECTOR.asInstanceOf[js.Any], RADIUS = RADIUS.asInstanceOf[js.Any], STROKE_DASHOFFSET = STROKE_DASHOFFSET.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ARIAHIDDEN]
     }
     
-    extension [Self <: ARIAVALUENOW](x: Self) {
+    extension [Self <: ARIAHIDDEN](x: Self) {
+      
+      inline def setARIA_HIDDEN(value: String): Self = StObject.set(x, "ARIA_HIDDEN", value.asInstanceOf[js.Any])
       
       inline def setARIA_VALUENOW(value: String): Self = StObject.set(x, "ARIA_VALUENOW", value.asInstanceOf[js.Any])
       

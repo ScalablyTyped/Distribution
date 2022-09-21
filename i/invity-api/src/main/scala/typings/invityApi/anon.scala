@@ -10,6 +10,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Data extends StObject {
+    
+    var data: String
+    
+    // tx data for approval or swap transaction
+    var from: String
+    
+    var to: String
+    
+    var value: String
+  }
+  object Data {
+    
+    inline def apply(data: String, from: String, to: String, value: String): Data = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Data]
+    }
+    
+    extension [Self <: Data](x: Self) {
+      
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Fields extends StObject {
     
     var fields: StringMap

@@ -10,10 +10,10 @@ Markup, style, and code in one language.
 | ------------------ | :-------------: |
 | Full name          | domo |
 | Keywords           | dom, html, css, template, browser, server |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 756 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 89.33333333333333 |
+| # stars            | 310.0 |
 
 ## Links
 - [Homepage](https://github.com/jed/domo#readme)

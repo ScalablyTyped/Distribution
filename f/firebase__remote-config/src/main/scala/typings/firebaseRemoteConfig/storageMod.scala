@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object storageMod {
   
-  @JSImport("@firebase/remote-config/dist/src/storage/storage", JSImport.Namespace)
+  @JSImport("@firebase/remote-config/dist/esm/src/storage/storage", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/remote-config/dist/src/storage/storage", "APP_NAMESPACE_STORE")
+  @JSImport("@firebase/remote-config/dist/esm/src/storage/storage", "APP_NAMESPACE_STORE")
   @js.native
   val APP_NAMESPACE_STORE: /* "app_namespace_store" */ String = js.native
   
-  @JSImport("@firebase/remote-config/dist/src/storage/storage", "Storage")
+  @JSImport("@firebase/remote-config/dist/esm/src/storage/storage", "Storage")
   @js.native
-  class Storage protected () extends StObject {
+  open class Storage protected () extends StObject {
     /**
       * @param appId enables storage segmentation by app (ID + name).
       * @param appName enables storage segmentation by app (ID + name).
@@ -29,9 +29,9 @@ object storageMod {
     def this(appId: String, appName: String, namespace: String) = this()
     def this(appId: String, appName: String, namespace: String, openDbPromise: js.Promise[IDBDatabase]) = this()
     
-    /* private */ val appId: js.Any = js.native
+    /* private */ val appId: Any = js.native
     
-    /* private */ val appName: js.Any = js.native
+    /* private */ val appName: Any = js.native
     
     def createCompositeKey(key: ProjectNamespaceKeyFieldValue): String = js.native
     
@@ -53,9 +53,9 @@ object storageMod {
     
     def getThrottleMetadata(): js.Promise[js.UndefOr[ThrottleMetadata]] = js.native
     
-    /* private */ val namespace: js.Any = js.native
+    /* private */ val namespace: Any = js.native
     
-    /* private */ val openDbPromise: js.Any = js.native
+    /* private */ val openDbPromise: Any = js.native
     
     def set[T](key: ProjectNamespaceKeyFieldValue, value: T): js.Promise[Unit] = js.native
     

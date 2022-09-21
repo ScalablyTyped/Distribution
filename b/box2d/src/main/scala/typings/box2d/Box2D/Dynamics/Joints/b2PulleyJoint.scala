@@ -51,9 +51,9 @@ object b2PulleyJoint {
     GetReactionForce: Double => b2Vec2,
     GetReactionTorque: Double => Double,
     GetType: () => Double,
-    GetUserData: () => js.Any,
+    GetUserData: () => Any,
     IsActive: () => Boolean,
-    SetUserData: js.Any => Unit
+    SetUserData: Any => Unit
   ): b2PulleyJoint = {
     val __obj = js.Dynamic.literal(GetAnchorA = js.Any.fromFunction0(GetAnchorA), GetAnchorB = js.Any.fromFunction0(GetAnchorB), GetBodyA = js.Any.fromFunction0(GetBodyA), GetBodyB = js.Any.fromFunction0(GetBodyB), GetGroundAnchorA = js.Any.fromFunction0(GetGroundAnchorA), GetGroundAnchorB = js.Any.fromFunction0(GetGroundAnchorB), GetLength1 = js.Any.fromFunction0(GetLength1), GetLength2 = js.Any.fromFunction0(GetLength2), GetNext = js.Any.fromFunction0(GetNext), GetRatio = js.Any.fromFunction0(GetRatio), GetReactionForce = js.Any.fromFunction1(GetReactionForce), GetReactionTorque = js.Any.fromFunction1(GetReactionTorque), GetType = js.Any.fromFunction0(GetType), GetUserData = js.Any.fromFunction0(GetUserData), IsActive = js.Any.fromFunction0(IsActive), SetUserData = js.Any.fromFunction1(SetUserData))
     __obj.asInstanceOf[b2PulleyJoint]

@@ -31,5 +31,5 @@ trait AttributeDecorator
     * {@example core/ts/metadata/metadata.ts region='attributeFactory'}
     *
     */
-  def apply(name: String): js.Any = js.native
+  def apply(name: String): Any = js.native
 }

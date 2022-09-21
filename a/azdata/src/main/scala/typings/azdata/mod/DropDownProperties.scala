@@ -6,13 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DropDownProperties
   extends StObject
-     with ComponentProperties {
+     with LoadingComponentProperties {
   
   var editable: js.UndefOr[Boolean] = js.undefined
   
   var fireOnTextChange: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Adds a short hint that describes the expected value for the editable dropdown
+    */
+  var placeholder: js.UndefOr[String] = js.undefined
+  
   var required: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Define error messages to show when custom validation fails. For empty required dropdowns we use a default error message.
+    */
+  var validationErrorMessages: js.UndefOr[js.Array[String]] = js.undefined
   
   var value: js.UndefOr[String | CategoryValue] = js.undefined
   
@@ -35,9 +45,19 @@ object DropDownProperties {
     
     inline def setFireOnTextChangeUndefined: Self = StObject.set(x, "fireOnTextChange", js.undefined)
     
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setValidationErrorMessages(value: js.Array[String]): Self = StObject.set(x, "validationErrorMessages", value.asInstanceOf[js.Any])
+    
+    inline def setValidationErrorMessagesUndefined: Self = StObject.set(x, "validationErrorMessages", js.undefined)
+    
+    inline def setValidationErrorMessagesVarargs(value: String*): Self = StObject.set(x, "validationErrorMessages", js.Array(value*))
     
     inline def setValue(value: String | CategoryValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
@@ -47,6 +67,6 @@ object DropDownProperties {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: (CategoryValue | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (CategoryValue | String)*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

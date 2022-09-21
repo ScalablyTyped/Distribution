@@ -16,8 +16,8 @@ trait Arm64RegOperand
 }
 object Arm64RegOperand {
   
-  inline def apply(value: Arm64Register): Arm64RegOperand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, value: Arm64Register): Arm64RegOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("reg")
     __obj.asInstanceOf[Arm64RegOperand]
   }

@@ -25,7 +25,7 @@ object ListDeviceRegistriesResponse {
     
     inline def setDeviceRegistriesUndefined: Self = StObject.set(x, "deviceRegistries", js.undefined)
     
-    inline def setDeviceRegistriesVarargs(value: DeviceRegistry*): Self = StObject.set(x, "deviceRegistries", js.Array(value :_*))
+    inline def setDeviceRegistriesVarargs(value: DeviceRegistry*): Self = StObject.set(x, "deviceRegistries", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

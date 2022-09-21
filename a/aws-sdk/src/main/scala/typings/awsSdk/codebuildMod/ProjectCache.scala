@@ -39,7 +39,7 @@ object ProjectCache {
     
     inline def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
     
-    inline def setModesVarargs(value: CacheMode*): Self = StObject.set(x, "modes", js.Array(value :_*))
+    inline def setModesVarargs(value: CacheMode*): Self = StObject.set(x, "modes", js.Array(value*))
     
     inline def setType(value: CacheType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

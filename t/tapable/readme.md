@@ -1,7 +1,7 @@
 
 # Scala.js typings for tapable
 
-Typings are for version v1.0.0
+Typings are for version 2.2.1
 
 ## Library description:
 Just a little module for plugins.
@@ -10,10 +10,10 @@ Just a little module for plugins.
 | ------------------ | :-------------: |
 | Full name          | tapable |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 401 |
-| # downloads        | 544581439 |
-| # stars            | 10 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.06140486E8 |
+| # stars            | 3137.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack/tapable)
@@ -24,7 +24,7 @@ Just a little module for plugins.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

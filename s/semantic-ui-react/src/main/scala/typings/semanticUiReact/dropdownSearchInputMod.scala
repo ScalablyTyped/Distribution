@@ -14,10 +14,9 @@ object dropdownSearchInputMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownSearchInput", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[DropdownSearchInputProps, ComponentState, js.Any] {
+  open class default protected () extends Component[DropdownSearchInputProps, ComponentState, Any] {
     def this(props: DropdownSearchInputProps) = this()
-    def this(props: DropdownSearchInputProps, context: js.Any) = this()
+    def this(props: DropdownSearchInputProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownSearchInput", JSImport.Default)
   @js.native
@@ -26,7 +25,7 @@ object dropdownSearchInputMod extends Shortcut {
   trait DropdownSearchInputProps
     extends StObject
        with StrictDropdownSearchInputProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object DropdownSearchInputProps {
     
     inline def apply(): DropdownSearchInputProps = {
@@ -38,7 +37,7 @@ object dropdownSearchInputMod extends Shortcut {
   trait StrictDropdownSearchInputProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** An input can have the auto complete. */
     var autoComplete: js.UndefOr[String] = js.undefined
@@ -64,7 +63,7 @@ object dropdownSearchInputMod extends Shortcut {
     
     extension [Self <: StrictDropdownSearchInputProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

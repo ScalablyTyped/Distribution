@@ -35,6 +35,6 @@ object DynHeight {
     
     inline def setInheritedAttrsUndefined: Self = StObject.set(x, "inheritedAttrs", js.undefined)
     
-    inline def setInheritedAttrsVarargs(value: String*): Self = StObject.set(x, "inheritedAttrs", js.Array(value :_*))
+    inline def setInheritedAttrsVarargs(value: String*): Self = StObject.set(x, "inheritedAttrs", js.Array(value*))
   }
 }

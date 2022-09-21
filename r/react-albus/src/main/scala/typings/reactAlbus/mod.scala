@@ -1,9 +1,9 @@
 package typings.reactAlbus
 
 import typings.history.mod.History
-import typings.history.mod.LocationState
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,16 +53,20 @@ object mod {
   
   trait StepsProps extends StObject {
     
+    var children: NonNullable[ReactNode]
+    
     var step: js.UndefOr[StepObject] = js.undefined
   }
   object StepsProps {
     
-    inline def apply(): StepsProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(children: NonNullable[ReactNode]): StepsProps = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepsProps]
     }
     
     extension [Self <: StepsProps](x: Self) {
+      
+      inline def setChildren(value: NonNullable[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setStep(value: StepObject): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
@@ -92,7 +96,7 @@ object mod {
     
     def go(n: Double): Unit = js.native
     
-    var history: History[LocationState] = js.native
+    var history: History = js.native
     
     def next(): Unit = js.native
     
@@ -116,8 +120,8 @@ object mod {
   trait WizardContextRenderProps extends StObject
   object WizardContextRenderProps {
     
-    inline def Children(children: WizardContext => ReactNode): typings.reactAlbus.anon.Children = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    inline def Children(): typings.reactAlbus.anon.Children = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.reactAlbus.anon.Children]
     }
     
@@ -131,7 +135,7 @@ object mod {
     
     var basename: js.UndefOr[String] = js.undefined
     
-    var history: js.UndefOr[History[LocationState]] = js.undefined
+    var history: js.UndefOr[History] = js.undefined
     
     var onNext: js.UndefOr[js.Function1[/* wizard */ WizardContext, Unit]] = js.undefined
     
@@ -150,7 +154,7 @@ object mod {
       
       inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       

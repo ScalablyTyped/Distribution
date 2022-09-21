@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait CommentChangeType extends StObject
 /**
-  *
   * Represents how the comments in the event were changed.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.CommentChangeType")
@@ -18,7 +18,8 @@ object CommentChangeType extends StObject {
   
   /**
     * Comments were edited.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait commentEdited
@@ -27,7 +28,8 @@ object CommentChangeType extends StObject {
   
   /**
     * Comments were reopened.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait commentReopened
@@ -36,7 +38,8 @@ object CommentChangeType extends StObject {
   
   /**
     * Comments were resolved.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait commentResolved
@@ -45,7 +48,8 @@ object CommentChangeType extends StObject {
   
   /**
     * Replies were added.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait replyAdded
@@ -54,7 +58,8 @@ object CommentChangeType extends StObject {
   
   /**
     * Replies were deleted.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait replyDeleted
@@ -63,7 +68,8 @@ object CommentChangeType extends StObject {
   
   /**
     * Replies were edited.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait replyEdited

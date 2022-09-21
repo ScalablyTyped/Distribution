@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-paginate
 
-Typings are for version 6.2
+Typings are for version 8.1.3
 
 ## Library description:
 A ReactJS component that creates a pagination.
@@ -10,21 +10,18 @@ A ReactJS component that creates a pagination.
 | ------------------ | :-------------: |
 | Full name          | react-paginate |
 | Keywords           | react-component, paginate, paginator, pagination |
-| # releases         | 6 |
-| # dependents       | 142 |
-| # downloads        | 9776456 |
-| # stars            | 8 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 1225796.0 |
+| # stars            | 2300.0 |
 
 ## Links
-- [Homepage](https://github.com/AdeleD/react-paginate#readme)
-- [Bugs](https://github.com/AdeleD/react-paginate/issues)
-- [Repository](https://github.com/AdeleD/react-paginate)
 - [Npm](https://www.npmjs.com/package/react-paginate)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

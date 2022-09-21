@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRMotionControllerTeleportation")
 @js.native
-class WebXRMotionControllerTeleportation protected ()
+open class WebXRMotionControllerTeleportation protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRMotionControllerTeleportation {
   /**
-    * constructs a new anchor system
+    * constructs a new teleportation system
     * @param _xrSessionManager an instance of WebXRSessionManager
     * @param _options configuration object for this feature
     */
@@ -34,7 +34,7 @@ object WebXRMotionControllerTeleportation {
     */
   @JSGlobal("BABYLON.WebXRMotionControllerTeleportation.Name")
   @js.native
-  val Name: String = js.native
+  val Name: /* "xr-controller-teleportation" */ String = js.native
   
   /**
     * The (Babylon) version of this module.
@@ -43,5 +43,5 @@ object WebXRMotionControllerTeleportation {
     */
   @JSGlobal("BABYLON.WebXRMotionControllerTeleportation.Version")
   @js.native
-  val Version: Double = js.native
+  val Version: /* 1 */ Double = js.native
 }

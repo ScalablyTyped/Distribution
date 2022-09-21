@@ -8,13 +8,13 @@ trait Enumerator extends StObject {
   
   def atEnd(): Boolean
   
-  def item(): js.Any
+  def item(): Any
   
   def moveNext(): Boolean
 }
 object Enumerator {
   
-  inline def apply(atEnd: () => Boolean, item: () => js.Any, moveNext: () => Boolean): Enumerator = {
+  inline def apply(atEnd: () => Boolean, item: () => Any, moveNext: () => Boolean): Enumerator = {
     val __obj = js.Dynamic.literal(atEnd = js.Any.fromFunction0(atEnd), item = js.Any.fromFunction0(item), moveNext = js.Any.fromFunction0(moveNext))
     __obj.asInstanceOf[Enumerator]
   }
@@ -23,7 +23,7 @@ object Enumerator {
     
     inline def setAtEnd(value: () => Boolean): Self = StObject.set(x, "atEnd", js.Any.fromFunction0(value))
     
-    inline def setItem(value: () => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction0(value))
+    inline def setItem(value: () => Any): Self = StObject.set(x, "item", js.Any.fromFunction0(value))
     
     inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
   }

@@ -1,35 +1,26 @@
 package typings.restify.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
+import typings.restify.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def createServer(): typings.restify.mod.Server = typings.restify.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.restify.mod.Server]
-inline def createServer(options: typings.restify.mod.ServerOptions): typings.restify.mod.Server = typings.restify.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.Server]
+inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+inline def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
 
-inline def formatters: typings.restify.mod.Formatters_ = typings.restify.mod.^.asInstanceOf[js.Dynamic].selectDynamic("formatters").asInstanceOf[typings.restify.mod.Formatters_]
+inline def formatters: Formatters_ = ^.asInstanceOf[js.Dynamic].selectDynamic("formatters").asInstanceOf[Formatters_]
 
-type FindRouteCallback = js.Function3[
-/* err */ typings.std.Error, 
-/* route */ js.UndefOr[typings.restify.mod.Route], 
-/* params */ js.UndefOr[js.Any], 
-scala.Unit]
+type FindRouteCallback = js.Function3[/* err */ js.Error, /* route */ js.UndefOr[Route], /* params */ js.UndefOr[Any], Unit]
 
-type Formatter = js.Function3[
-/* req */ typings.restify.mod.Request, 
-/* res */ typings.restify.mod.Response, 
-/* body */ js.Any, 
-java.lang.String | typings.node.Buffer | scala.Null]
+type Formatter = js.Function3[/* req */ Request, /* res */ Response, /* body */ Any, String | Buffer | Null]
 
-type Formatters_ = org.scalablytyped.runtime.StringDictionary[typings.restify.mod.Formatter]
+type Formatters_ = StringDictionary[Formatter]
 
-type Next = js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]
+type Next = js.Function1[/* err */ js.UndefOr[Any], Unit]
 
-type RequestHandler = js.Function3[
-/* req */ typings.restify.mod.Request, 
-/* res */ typings.restify.mod.Response, 
-/* next */ typings.restify.mod.Next, 
-js.Any]
+type RequestHandler = js.Function3[/* req */ Request, /* res */ Response, /* next */ Next, Any]
 
-type RequestHandlerType = typings.restify.mod.RequestHandler | js.Array[typings.restify.mod.RequestHandler]
+type RequestHandlerType = RequestHandler | js.Array[RequestHandler]

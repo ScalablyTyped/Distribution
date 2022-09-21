@@ -2,13 +2,14 @@ package typings.vexflow.mod.Flow
 
 import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
+import typings.vexflow.anon.FillStyle_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.Modifier")
 @js.native
-class Modifier ()
+open class Modifier ()
   extends StObject
      with typings.vexflow.Vex.Flow.Modifier {
   
@@ -37,6 +38,10 @@ class Modifier ()
   /* CompleteClass */
   override def getPosition(): Position = js.native
   
+  // (Modifier extends Element in vexflow, but not in these definitions, probably because of some typing problem)
+  /* CompleteClass */
+  override def getStyle(): FillStyle_ = js.native
+  
   /* CompleteClass */
   override def getWidth(): Double = js.native
   
@@ -54,6 +59,9 @@ class Modifier ()
   
   /* CompleteClass */
   override def setPosition(position: Position): typings.vexflow.Vex.Flow.Modifier = js.native
+  
+  /* CompleteClass */
+  override def setStyle(style: FillStyle_): typings.vexflow.Vex.Flow.Modifier = js.native
   
   /* CompleteClass */
   override def setTextLine(line: Double): typings.vexflow.Vex.Flow.Modifier = js.native

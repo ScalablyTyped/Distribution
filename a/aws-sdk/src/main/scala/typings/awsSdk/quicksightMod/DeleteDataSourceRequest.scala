@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteDataSourceRequest extends StObject {
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * The ID of the data source. This ID is unique per AWS Region for each AWS account.
+    * The ID of the data source. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
   var DataSourceId: ResourceId
 }

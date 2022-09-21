@@ -1,9 +1,8 @@
 package typings.tuyaPanelKit.mod
 
-import typings.react.mod.ReactNode
 import typings.reactNative.mod.TouchableOpacityProps
 import typings.tuyaPanelKit.anon.BoardBg
-import typings.tuyaPanelKit.anon.Content
+import typings.tuyaPanelKit.anon.Container
 import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.iconfont
 import typings.tuyaPanelKit.tuyaPanelKitStrings.image
@@ -16,45 +15,233 @@ trait TYListItemProps
   extends StObject
      with TouchableOpacityProps {
   
-  var Action: js.UndefOr[js.Any] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 右侧 Action 具体值，当类型为 string时，默认使用 TYText
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Specific value of action on the right. When the type is string, TYText is used by default
+    * @defaultValue null
+    */
+  var Action: js.UndefOr[Any] = js.undefined
   
-  var Icon: js.UndefOr[js.Any] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 左侧 Icon 具体值，当类型为 string时，默认使用 IconFont
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Icon specific value on the left. When the type is string, Iconfont is used by default
+    * @defaultValue null
+    */
+  var Icon: js.UndefOr[Any] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否禁用 `Action` 点击事件
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Disable 'action' click events
+    * @defaultValue false
+    */
   var actionDisabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 右侧 Action 类型
+    * @defaultValue 'auto'
+    */
+  /**
+    * @language en-US
+    * @description Right action type
+    * @defaultValue 'auto'
+    */
   var actionType: js.UndefOr[auto | image | iconfont | text] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 列表项右边区域是否显示 arrow 标签
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Is the arrow label displayed in the right area of the list item
+    * @defaultValue false
+    */
   var arrow: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description arrow 图标颜色
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Arrow icon color
+    * @defaultValue null
+    */
   var arrowColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description arrow 是否使用 IconFont 渲染
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Does arrow render with iconfont
+    * @defaultValue false
+    */
   var arrowUseIcon: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 是否禁用列表点击事件，注意: Action点击事件不被此影响
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether to disable list click events. Note: action click events are not affected by this
+    * @defaultValue false
+    */
   @JSName("disabled")
   var disabled_TYListItemProps: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标颜色
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Icon Color
+    * @defaultValue null
+    */
   var iconColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标尺寸
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Icon size
+    * @defaultValue null
+    */
   var iconSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 左侧 Icon 类型
+    * @defaultValue 'auto'
+    */
+  /**
+    * @language en-US
+    * @description Icon type on the left
+    * @defaultValue 'auto'
+    */
   var iconType: js.UndefOr[auto | image | iconfont | text] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图片的 tintColor 是否跟随 iconColor
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Does the tintColor of the image follow iconColor
+    * @defaultValue true
+    */
   var imageFollowIconColor: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否需要重新渲染
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Do I need to render again
+    * @defaultValue true
+    */
   var needUpdate: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 列表项右边区域的触发回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Trigger callback in the area to the right of the list item
+    * @defaultValue () => {}
+    */
   var onActionPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var styles: js.UndefOr[Content] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 列表项的所有样式
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description All styles for list items
+    * @defaultValue {}
+    */
+  var styles: js.UndefOr[Container] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 副标题
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description SubTitle
+    * @defaultValue null
+    */
   var subTitle: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 主题配置
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Theme configuration
+    * @defaultValue {}
+    */
   var theme: js.UndefOr[BoardBg] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 标题
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Title
+    * @defaultValue null
+    */
   var title: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否使用 ART 实现版本
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Is art used to implement the version
+    * @defaultValue false
+    */
   var useART: js.UndefOr[Boolean] = js.undefined
 }
 object TYListItemProps {
@@ -66,7 +253,7 @@ object TYListItemProps {
   
   extension [Self <: TYListItemProps](x: Self) {
     
-    inline def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     inline def setActionDisabled(value: Boolean): Self = StObject.set(x, "actionDisabled", value.asInstanceOf[js.Any])
     
@@ -90,15 +277,11 @@ object TYListItemProps {
     
     inline def setArrowUseIconUndefined: Self = StObject.set(x, "arrowUseIcon", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-    
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setIcon(value: js.Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     inline def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
@@ -126,7 +309,7 @@ object TYListItemProps {
     
     inline def setOnActionPressUndefined: Self = StObject.set(x, "onActionPress", js.undefined)
     
-    inline def setStyles(value: Content): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Container): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     

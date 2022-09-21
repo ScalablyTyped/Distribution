@@ -9,7 +9,7 @@ trait BootstrapPopupMenu
   extends StObject
      with BootstrapMenu {
   
-  def getCurrentPopupElement(): js.Any = js.native
+  def getCurrentPopupElement(): Any = js.native
   
   def getCurrentPopupElementIndex(): Double = js.native
   
@@ -23,7 +23,7 @@ trait BootstrapPopupMenu
   
   def show(): Unit = js.native
   
-  def showAtElement(htmlElement: js.Any): Unit = js.native
+  def showAtElement(htmlElement: Any): Unit = js.native
   
   def showAtElementByID(id: String): Unit = js.native
   

@@ -13,11 +13,11 @@ object anon {
     
     var element: Promise[HTMLElement]
     
-    var renderComplete: Promise[js.Any]
+    var renderComplete: Promise[Any]
   }
   object Element {
     
-    inline def apply(element: Promise[HTMLElement], renderComplete: Promise[js.Any]): typings.winjs.anon.Element = {
+    inline def apply(element: Promise[HTMLElement], renderComplete: Promise[Any]): typings.winjs.anon.Element = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], renderComplete = renderComplete.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.winjs.anon.Element]
     }
@@ -26,7 +26,7 @@ object anon {
       
       inline def setElement(value: Promise[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      inline def setRenderComplete(value: Promise[js.Any]): Self = StObject.set(x, "renderComplete", value.asInstanceOf[js.Any])
+      inline def setRenderComplete(value: Promise[Any]): Self = StObject.set(x, "renderComplete", value.asInstanceOf[js.Any])
     }
   }
   

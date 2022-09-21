@@ -1,6 +1,5 @@
 package typings.reactNativeFirebase.mod.RNFirebase
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PhoneAuthListener extends StObject {
   
-  def `catch`(fn: js.Function1[/* error */ Error, Unit]): js.Promise[js.Any] = js.native
+  def `catch`(fn: js.Function1[/* error */ js.Error, Unit]): js.Promise[Any] = js.native
   
   def on(event: String, observer: js.Function1[/* snapshot */ PhoneAuthSnapshot, Unit]): PhoneAuthListener = js.native
   def on(
@@ -29,5 +28,5 @@ trait PhoneAuthListener extends StObject {
     successCb: js.Function1[/* snapshot */ PhoneAuthSnapshot, Unit]
   ): PhoneAuthListener = js.native
   
-  def `then`(fn: js.Function1[/* snapshot */ PhoneAuthSnapshot, Unit]): js.Promise[js.Any] = js.native
+  def `then`(fn: js.Function1[/* snapshot */ PhoneAuthSnapshot, Unit]): js.Promise[Any] = js.native
 }

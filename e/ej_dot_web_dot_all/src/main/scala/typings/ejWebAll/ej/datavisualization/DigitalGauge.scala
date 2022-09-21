@@ -24,13 +24,13 @@ trait DigitalGauge
     * @param {number} Position value of an item that is displayed on the gauge.
     * @returns {any}
     */
-  def getPosition(itemIndex: Double): js.Any = js.native
+  def getPosition(itemIndex: Double): Any = js.native
   
   /** ClientSideMethod getValue Gets the value of an item that is displayed on the gauge
     * @param {number} Index value of an item that displayed on the gauge
     * @returns {any}
     */
-  def getValue(itemIndex: Double): js.Any = js.native
+  def getValue(itemIndex: Double): Any = js.native
   
   @JSName("model")
   var model_DigitalGauge: Model = js.native
@@ -45,7 +45,7 @@ trait DigitalGauge
     * @param {any} Location value of the digital gauge
     * @returns {void}
     */
-  def setPosition(itemIndex: Double, value: js.Any): Unit = js.native
+  def setPosition(itemIndex: Double, value: Any): Unit = js.native
   
   /** ClientSideMethod SetValue Sets the value of an item to be displayed in the gauge.
     * @param {number} Index value of the digital gauge item
@@ -177,11 +177,11 @@ object DigitalGauge {
     /** location - X and Y co-ordinate of the points with respect to gauge area.id - ID of the target element.    size - Width and height of the gauge.    pageX - x-coordinate of the
       * pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -200,11 +200,11 @@ object DigitalGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -223,11 +223,11 @@ object DigitalGauge {
     /** location - X and Y co-ordinate of the points with respect to digital gauge area.id - ID of the target element.    size - Width and height of the digital gauge.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the digital gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -246,11 +246,11 @@ object DigitalGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -356,19 +356,19 @@ object DigitalGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the all the options of the items.
       */
-    var items: js.UndefOr[js.Any] = js.undefined
+    var items: js.UndefOr[Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -387,19 +387,19 @@ object DigitalGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
@@ -538,19 +538,19 @@ object DigitalGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the all the options of the items.
       */
-    var items: js.UndefOr[js.Any] = js.undefined
+    var items: js.UndefOr[Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -569,19 +569,19 @@ object DigitalGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
@@ -721,7 +721,7 @@ object DigitalGauge {
     /** Set the gradient for the text segments.
       * @Default {null}
       */
-    var gradient: js.UndefOr[js.Any] = js.undefined
+    var gradient: js.UndefOr[Any] = js.undefined
     
     /** Set the length for the text segments.
       * @Default {2}
@@ -756,7 +756,7 @@ object DigitalGauge {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setGradient(value: js.Any): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+      inline def setGradient(value: Any): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
       inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
       
@@ -786,19 +786,19 @@ object DigitalGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the all the options of the items.
       */
-    var items: js.UndefOr[js.Any] = js.undefined
+    var items: js.UndefOr[Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -817,19 +817,19 @@ object DigitalGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
@@ -892,7 +892,7 @@ object DigitalGauge {
     
     /** Specifies the matrixSegmentData for the DigitalGauge.
       */
-    var matrixSegmentData: js.UndefOr[js.Any] = js.undefined
+    var matrixSegmentData: js.UndefOr[Any] = js.undefined
     
     /** Triggers when the gauge render is completed.
       */
@@ -904,7 +904,7 @@ object DigitalGauge {
     
     /** Specifies the segmentData for the DigitalGauge.
       */
-    var segmentData: js.UndefOr[js.Any] = js.undefined
+    var segmentData: js.UndefOr[Any] = js.undefined
     
     /** Specifies the themes for the Digital gauge. See Themes
       * @Default {flatlight}
@@ -970,13 +970,13 @@ object DigitalGauge {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLoad(value: /* e */ LoadEventArgs => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
       inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      inline def setMatrixSegmentData(value: js.Any): Self = StObject.set(x, "matrixSegmentData", value.asInstanceOf[js.Any])
+      inline def setMatrixSegmentData(value: Any): Self = StObject.set(x, "matrixSegmentData", value.asInstanceOf[js.Any])
       
       inline def setMatrixSegmentDataUndefined: Self = StObject.set(x, "matrixSegmentData", js.undefined)
       
@@ -988,7 +988,7 @@ object DigitalGauge {
       
       inline def setRightClickUndefined: Self = StObject.set(x, "rightClick", js.undefined)
       
-      inline def setSegmentData(value: js.Any): Self = StObject.set(x, "segmentData", value.asInstanceOf[js.Any])
+      inline def setSegmentData(value: Any): Self = StObject.set(x, "segmentData", value.asInstanceOf[js.Any])
       
       inline def setSegmentDataUndefined: Self = StObject.set(x, "segmentData", js.undefined)
       
@@ -1014,19 +1014,19 @@ object DigitalGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the all the options of the items.
       */
-    var items: js.UndefOr[js.Any] = js.undefined
+    var items: js.UndefOr[Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -1045,19 +1045,19 @@ object DigitalGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
@@ -1076,11 +1076,11 @@ object DigitalGauge {
     /** location - X and Y co-ordinate of the points with respect to digital gauge area.id - ID of the target element.    size - Width and height of the digital gauge.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the digital gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -1099,11 +1099,11 @@ object DigitalGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

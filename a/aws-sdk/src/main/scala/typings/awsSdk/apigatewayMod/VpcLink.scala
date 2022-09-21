@@ -22,7 +22,7 @@ trait VpcLink extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the VPC link. The valid values are AVAILABLE, PENDING, DELETING, or FAILED. Deploying an API will wait if the status is PENDING and will fail if the status is DELETING.
+    * The status of the VPC link. The valid values are AVAILABLE, PENDING, DELETING, or FAILED. Deploying an API will wait if the status is PENDING and will fail if the status is DELETING. 
     */
   var status: js.UndefOr[VpcLinkStatus] = js.undefined
   
@@ -78,6 +78,6 @@ object VpcLink {
     
     inline def setTargetArnsUndefined: Self = StObject.set(x, "targetArns", js.undefined)
     
-    inline def setTargetArnsVarargs(value: String*): Self = StObject.set(x, "targetArns", js.Array(value :_*))
+    inline def setTargetArnsVarargs(value: String*): Self = StObject.set(x, "targetArns", js.Array(value*))
   }
 }

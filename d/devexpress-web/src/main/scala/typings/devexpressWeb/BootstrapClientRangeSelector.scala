@@ -14,13 +14,13 @@ trait BootstrapClientRangeSelector
   /**
     * Gets the Range Selector's selected value range.
     */
-  def GetValue(): js.Array[js.Any]
+  def GetValue(): js.Array[Any]
   
   /**
     * Gets the Range Selector's selected value range.
     * @param value An array containing the value range.
     */
-  def SetValue(value: js.Array[js.Any]): Unit
+  def SetValue(value: js.Array[Any]): Unit
   
   /**
     * Fires after the selected range has been changed by moving one of the sliders.
@@ -40,13 +40,13 @@ object BootstrapClientRangeSelector {
     Exporting: ASPxClientEvent[BootstrapUIWidgetExportingEventHandler[BootstrapUIWidgetBase]],
     FileSaving: ASPxClientEvent[BootstrapUIWidgetFileSavingEventHandler[BootstrapUIWidgetBase]],
     GetClientVisible: () => Boolean,
-    GetDataSource: () => js.Any,
+    GetDataSource: () => Any,
     GetEnabled: () => Boolean,
     GetHeight: () => Double,
-    GetInstance: () => js.Any,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
-    GetValue: () => js.Array[js.Any],
+    GetInstance: () => Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
+    GetValue: () => js.Array[Any],
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     InCallback: () => Boolean,
@@ -56,11 +56,11 @@ object BootstrapClientRangeSelector {
     Print: () => Unit,
     SendMessageToAssistiveTechnology: String => Unit,
     SetClientVisible: Boolean => Unit,
-    SetDataSource: js.Any => Unit,
+    SetDataSource: Any => Unit,
     SetEnabled: Boolean => Unit,
     SetHeight: Double => Unit,
-    SetOptions: js.Any => Unit,
-    SetValue: js.Array[js.Any] => Unit,
+    SetOptions: Any => Unit,
+    SetValue: js.Array[Any] => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     ValueChanged: ASPxClientEvent[
@@ -74,9 +74,9 @@ object BootstrapClientRangeSelector {
   
   extension [Self <: BootstrapClientRangeSelector](x: Self) {
     
-    inline def setGetValue(value: () => js.Array[js.Any]): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Array[Any]): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
-    inline def setSetValue(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.Array[Any] => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
     inline def setValueChanged(
       value: ASPxClientEvent[

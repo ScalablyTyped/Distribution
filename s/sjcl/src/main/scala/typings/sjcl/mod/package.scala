@@ -1,60 +1,61 @@
 package typings.sjcl.mod
 
+import typings.sjcl.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def arrayBuffer: typings.sjcl.mod.SjclArrayBufferModes = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("arrayBuffer").asInstanceOf[typings.sjcl.mod.SjclArrayBufferModes]
-inline def arrayBuffer_=(x: typings.sjcl.mod.SjclArrayBufferModes): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("arrayBuffer")(x.asInstanceOf[js.Any])
+inline def arrayBuffer: SjclArrayBufferModes = ^.asInstanceOf[js.Dynamic].selectDynamic("arrayBuffer").asInstanceOf[SjclArrayBufferModes]
+inline def arrayBuffer_=(x: SjclArrayBufferModes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayBuffer")(x.asInstanceOf[js.Any])
 
-inline def bitArray: typings.sjcl.mod.BitArrayStatic = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("bitArray").asInstanceOf[typings.sjcl.mod.BitArrayStatic]
-inline def bitArray_=(x: typings.sjcl.mod.BitArrayStatic): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("bitArray")(x.asInstanceOf[js.Any])
+inline def bitArray: BitArrayStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("bitArray").asInstanceOf[BitArrayStatic]
+inline def bitArray_=(x: BitArrayStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitArray")(x.asInstanceOf[js.Any])
 
-inline def bn_=(x: typings.sjcl.mod.BigNumberStatic): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("bn")(x.asInstanceOf[js.Any])
+inline def bn_=(x: BigNumberStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bn")(x.asInstanceOf[js.Any])
 
-inline def codec: typings.sjcl.mod.SjclCodecs = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("codec").asInstanceOf[typings.sjcl.mod.SjclCodecs]
-inline def codec_=(x: typings.sjcl.mod.SjclCodecs): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("codec")(x.asInstanceOf[js.Any])
+inline def codec: SjclCodecs = ^.asInstanceOf[js.Dynamic].selectDynamic("codec").asInstanceOf[SjclCodecs]
+inline def codec_=(x: SjclCodecs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codec")(x.asInstanceOf[js.Any])
 
-inline def decrypt: typings.sjcl.mod.SjclConvenienceDecryptor = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("decrypt").asInstanceOf[typings.sjcl.mod.SjclConvenienceDecryptor]
-inline def decrypt_=(x: typings.sjcl.mod.SjclConvenienceDecryptor): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("decrypt")(x.asInstanceOf[js.Any])
+inline def decrypt: SjclConvenienceDecryptor = ^.asInstanceOf[js.Dynamic].selectDynamic("decrypt").asInstanceOf[SjclConvenienceDecryptor]
+inline def decrypt_=(x: SjclConvenienceDecryptor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decrypt")(x.asInstanceOf[js.Any])
 
-inline def encrypt: typings.sjcl.mod.SjclConvenienceEncryptor = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("encrypt").asInstanceOf[typings.sjcl.mod.SjclConvenienceEncryptor]
-inline def encrypt_=(x: typings.sjcl.mod.SjclConvenienceEncryptor): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("encrypt")(x.asInstanceOf[js.Any])
+inline def encrypt: SjclConvenienceEncryptor = ^.asInstanceOf[js.Dynamic].selectDynamic("encrypt").asInstanceOf[SjclConvenienceEncryptor]
+inline def encrypt_=(x: SjclConvenienceEncryptor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encrypt")(x.asInstanceOf[js.Any])
 
-inline def json: typings.sjcl.mod.SjclJson = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("json").asInstanceOf[typings.sjcl.mod.SjclJson]
-inline def json_=(x: typings.sjcl.mod.SjclJson): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
+inline def json: SjclJson = ^.asInstanceOf[js.Dynamic].selectDynamic("json").asInstanceOf[SjclJson]
+inline def json_=(x: SjclJson): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
 
-inline def keyexchange: typings.sjcl.mod.SjclKeyExchange = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("keyexchange").asInstanceOf[typings.sjcl.mod.SjclKeyExchange]
-inline def keyexchange_=(x: typings.sjcl.mod.SjclKeyExchange): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("keyexchange")(x.asInstanceOf[js.Any])
+inline def keyexchange: SjclKeyExchange = ^.asInstanceOf[js.Dynamic].selectDynamic("keyexchange").asInstanceOf[SjclKeyExchange]
+inline def keyexchange_=(x: SjclKeyExchange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyexchange")(x.asInstanceOf[js.Any])
 
-inline def mode: typings.sjcl.mod.SjclModes = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("mode").asInstanceOf[typings.sjcl.mod.SjclModes]
-inline def mode_=(x: typings.sjcl.mod.SjclModes): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("mode")(x.asInstanceOf[js.Any])
+inline def mode: SjclModes = ^.asInstanceOf[js.Dynamic].selectDynamic("mode").asInstanceOf[SjclModes]
+inline def mode_=(x: SjclModes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode")(x.asInstanceOf[js.Any])
 
-inline def prng_=(x: typings.sjcl.mod.SjclRandomStatic): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("prng")(x.asInstanceOf[js.Any])
+inline def prng_=(x: SjclRandomStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prng")(x.asInstanceOf[js.Any])
 
-inline def random: typings.sjcl.mod.SjclRandom = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("random").asInstanceOf[typings.sjcl.mod.SjclRandom]
-inline def random_=(x: typings.sjcl.mod.SjclRandom): scala.Unit = typings.sjcl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("random")(x.asInstanceOf[js.Any])
+inline def random: SjclRandom = ^.asInstanceOf[js.Dynamic].selectDynamic("random").asInstanceOf[SjclRandom]
+inline def random_=(x: SjclRandom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("random")(x.asInstanceOf[js.Any])
 
 // ________________________________________________________________________
-type BitArray_ = js.Array[scala.Double]
+type BitArray_ = js.Array[Double]
 
 type SjclConvenienceDecryptor = js.Function4[
-/* password */ typings.sjcl.mod.SjclElGamalSecretKey | typings.sjcl.mod.BitArray_ | java.lang.String, 
-/* ciphertext */ typings.sjcl.mod.SjclCipherEncrypted | java.lang.String, 
-/* params */ js.UndefOr[typings.sjcl.mod.SjclCipherDecryptParams], 
-/* rp */ js.UndefOr[typings.sjcl.mod.SjclCipherDecrypted], 
-java.lang.String]
+/* password */ SjclElGamalSecretKey | BitArray_ | String, 
+/* ciphertext */ SjclCipherEncrypted | String, 
+/* params */ js.UndefOr[SjclCipherDecryptParams], 
+/* rp */ js.UndefOr[SjclCipherDecrypted], 
+String]
 
 type SjclConvenienceEncryptor = js.Function4[
-/* password */ typings.sjcl.mod.SjclElGamalPublicKey | typings.sjcl.mod.BitArray_ | java.lang.String, 
-/* plaintext */ java.lang.String, 
-/* params */ js.UndefOr[typings.sjcl.mod.SjclCipherEncryptParams], 
-/* rp */ js.UndefOr[typings.sjcl.mod.SjclCipherEncrypted], 
-typings.sjcl.mod.SjclCipherEncrypted]
+/* password */ SjclElGamalPublicKey | BitArray_ | String, 
+/* plaintext */ String, 
+/* params */ js.UndefOr[SjclCipherEncryptParams], 
+/* rp */ js.UndefOr[SjclCipherEncrypted], 
+SjclCipherEncrypted]
 
-type SjclKeysGenerator[P /* <: typings.sjcl.mod.SjclECCPublicKey */, S /* <: typings.sjcl.mod.SjclECCSecretKey */] = js.Function3[
-/* curve */ typings.sjcl.mod.SjclEllipticalCurve | scala.Double, 
-/* paranoia */ scala.Double, 
-/* sec */ js.UndefOr[typings.sjcl.mod.BigNumber], 
-typings.sjcl.mod.SjclKeyPair[P, S]]
+type SjclKeysGenerator[P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] = js.Function3[
+/* curve */ SjclEllipticalCurve | Double, 
+/* paranoia */ Double, 
+/* sec */ js.UndefOr[BigNumber], 
+SjclKeyPair[P, S]]

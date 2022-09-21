@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@esfx/internal-deprecate" : "1.0.0-pre.13"
+      "@esfx/internal-deprecate" : "1.0.0-pre.24"
     }
   ],
   "test-dependencies" : [
     {
-      "@esfx/internal-deprecate" : "1.0.0-pre.13"
+      "@esfx/internal-deprecate" : "1.0.0-pre.24"
     }
   ],
   "compile-devDependencies" : [

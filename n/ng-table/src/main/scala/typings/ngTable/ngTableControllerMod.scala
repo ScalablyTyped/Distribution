@@ -28,7 +28,7 @@ object ngTableControllerMod {
   
   @JSImport("ng-table/src/browser/ngTableController", "NgTableController")
   @js.native
-  class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected () extends StObject {
+  open class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected () extends StObject {
     def this(
       $scope: ITableScope[TParams],
       $timeout: ITimeoutService,
@@ -42,52 +42,52 @@ object ngTableControllerMod {
     ) = this()
     
     /* private */ @JSName("$attrs")
-    var $attrs: js.Any = js.native
+    var $attrs: Any = js.native
     
     /* private */ @JSName("$compile")
-    var $compile: js.Any = js.native
+    var $compile: Any = js.native
     
     /* private */ @JSName("$document")
-    var $document: js.Any = js.native
+    var $document: Any = js.native
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
     /* private */ @JSName("$parse")
-    var $parse: js.Any = js.native
+    var $parse: Any = js.native
     
     /* private */ @JSName("$scope")
-    var $scope: js.Any = js.native
+    var $scope: Any = js.native
     
     def buildColumns(columns: js.Array[TCol]): js.Array[IColumnDef] = js.native
     
     def compileDirectiveTemplates(): Unit = js.native
     
-    /* private */ var delayFilter: js.Any = js.native
+    /* private */ var delayFilter: Any = js.native
     
-    /* private */ def getVisibleColumns(): js.Any = js.native
+    /* private */ def getVisibleColumns(): Any = js.native
     
-    /* private */ val hasVisibleFilterColumn: js.Any = js.native
+    /* private */ val hasVisibleFilterColumn: Any = js.native
     
     def loadFilterData($columns: js.Array[IColumnDef]): Unit = js.native
     
-    /* private */ var ngTableColumn: js.Any = js.native
+    /* private */ var ngTableColumn: Any = js.native
     
-    /* private */ var ngTableEventsChannel: js.Any = js.native
+    /* private */ var ngTableEventsChannel: Any = js.native
     
-    /* private */ def onDataReloadStatusChange(newStatus: js.Any): js.Any = js.native
+    /* private */ def onDataReloadStatusChange(newStatus: Any): Any = js.native
     
     def parseNgTableDynamicExpr(attr: String): Columns = js.native
     
     def setupBindingsToInternalScope(tableParamsExpr: String): Unit = js.native
     
-    /* private */ def setupFilterRowBindingsToInternalScope(): js.Any = js.native
+    /* private */ def setupFilterRowBindingsToInternalScope(): Any = js.native
     
-    /* private */ def setupGroupRowBindingsToInternalScope(): js.Any = js.native
+    /* private */ def setupGroupRowBindingsToInternalScope(): Any = js.native
     
-    /* private */ def some[T](array: js.Any, predicate: js.Any): js.Any = js.native
+    /* private */ def some[T](array: Any, predicate: Any): Any = js.native
     
-    /* private */ def subscribeToTableEvents(): js.Any = js.native
+    /* private */ def subscribeToTableEvents(): Any = js.native
   }
   /* static members */
   object NgTableController {

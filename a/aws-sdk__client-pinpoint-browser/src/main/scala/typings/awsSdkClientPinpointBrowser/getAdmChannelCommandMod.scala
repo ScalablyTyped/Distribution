@@ -16,7 +16,7 @@ object getAdmChannelCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetAdmChannelCommand", "GetAdmChannelCommand")
   @js.native
-  class GetAdmChannelCommand protected ()
+  open class GetAdmChannelCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getAdmChannelCommandMod {
     override val middlewareStack: MiddlewareStack[GetAdmChannelInput, GetAdmChannelOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[GetAdmChannelInput, GetAdmChannelOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetAdmChannelInput, GetAdmChannelOutput] = js.native
   }
 }

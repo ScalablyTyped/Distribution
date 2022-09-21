@@ -34,7 +34,7 @@ object SearchAddressBooksResponse {
     
     inline def setAddressBooksUndefined: Self = StObject.set(x, "AddressBooks", js.undefined)
     
-    inline def setAddressBooksVarargs(value: AddressBookData*): Self = StObject.set(x, "AddressBooks", js.Array(value :_*))
+    inline def setAddressBooksVarargs(value: AddressBookData*): Self = StObject.set(x, "AddressBooks", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

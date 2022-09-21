@@ -9,7 +9,7 @@ trait SchemaOrdersAcknowledgeRequest extends StObject {
   /**
     * The ID of the operation. Unique across all operations for a given order.
     */
-  var operationId: js.UndefOr[String] = js.undefined
+  var operationId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrdersAcknowledgeRequest {
   
@@ -21,6 +21,8 @@ object SchemaOrdersAcknowledgeRequest {
   extension [Self <: SchemaOrdersAcknowledgeRequest](x: Self) {
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    
+    inline def setOperationIdNull: Self = StObject.set(x, "operationId", null)
     
     inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
   }

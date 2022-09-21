@@ -9,16 +9,13 @@ Friendly and forgiving HTML5/XML5/JSX lexer/parser with lots of tests. Memory-ef
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | xml-zero-lexer |
-| Keywords           | parser, lexer, tokenise, token, html, xml, jsx, react, markup |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 2659 |
-| # stars            | 0 |
+| Keywords           | xml, html, jsx, react, parser, lexer, string, stringto, stringtoreact, tokenise, token, markup, typescript |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 325.0 |
+| # stars            | 7.0 |
 
 ## Links
-- [Homepage](https://github.com/holloway/xml-zero.js#readme)
-- [Bugs](https://github.com/holloway/xml-zero.js/issues)
-- [Repository](https://github.com/holloway/xml-zero.js)
 - [Npm](https://www.npmjs.com/package/xml-zero-lexer)
     
 

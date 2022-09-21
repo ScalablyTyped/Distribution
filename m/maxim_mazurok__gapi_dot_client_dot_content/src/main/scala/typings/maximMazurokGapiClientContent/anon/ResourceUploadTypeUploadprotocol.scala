@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersUpdateLineItemShippingDetailsRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersInStoreRefundLineItemRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +42,7 @@ trait ResourceUploadTypeUploadprotocol extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrdersUpdateLineItemShippingDetailsRequest
+  var resource: OrdersInStoreRefundLineItemRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait ResourceUploadTypeUploadprotocol extends StObject {
 }
 object ResourceUploadTypeUploadprotocol {
   
-  inline def apply(merchantId: String, orderId: String, resource: OrdersUpdateLineItemShippingDetailsRequest): ResourceUploadTypeUploadprotocol = {
+  inline def apply(merchantId: String, orderId: String, resource: OrdersInStoreRefundLineItemRequest): ResourceUploadTypeUploadprotocol = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceUploadTypeUploadprotocol]
   }
@@ -99,7 +99,7 @@ object ResourceUploadTypeUploadprotocol {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrdersUpdateLineItemShippingDetailsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: OrdersInStoreRefundLineItemRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

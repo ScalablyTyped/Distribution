@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openpgp", "HKP")
 @js.native
-class HKP_ protected () extends StObject {
+open class HKP_ protected () extends StObject {
   /**
     * Initialize the HKP client and configure it with the key server url and fetch function.
     * @param keyServerBaseUrl (optional) The HKP key server base url including
@@ -22,12 +22,12 @@ class HKP_ protected () extends StObject {
     *        or email address.
     * @returns The ascii armored public key.
     */
-  def lookup(): js.Promise[String] = js.native
+  def lookup(options: HKPOptions): js.Promise[String] = js.native
   
   /**
     * Upload a public key to the server.
     * @param publicKeyArmored An ascii armored public key to be uploaded.
     * @returns
     */
-  def upload(publicKeyArmored: String): js.Promise[js.Any] = js.native
+  def upload(publicKeyArmored: String): js.Promise[Any] = js.native
 }

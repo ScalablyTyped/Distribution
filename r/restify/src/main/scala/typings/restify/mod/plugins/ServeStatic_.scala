@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServeStatic_ extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var appendRequestPath: js.UndefOr[Boolean] = js.undefined
   
@@ -20,7 +20,7 @@ trait ServeStatic_ extends StObject {
   
   var gzip: js.UndefOr[Boolean] = js.undefined
   
-  var `match`: js.UndefOr[js.Any] = js.undefined
+  var `match`: js.UndefOr[Any] = js.undefined
   
   var maxAge: js.UndefOr[Double] = js.undefined
 }
@@ -41,7 +41,7 @@ object ServeStatic_ {
     
     inline def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
@@ -61,7 +61,7 @@ object ServeStatic_ {
     
     inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
     
-    inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     

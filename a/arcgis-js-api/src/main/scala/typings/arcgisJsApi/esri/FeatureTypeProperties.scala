@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.HashMap
+import typings.arcgisJsApi.anon.CodedValueDomainPropertie
+import typings.arcgisJsApi.anon.RangeDomainPropertiestype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +14,11 @@ trait FeatureTypeProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html#domains)
     */
-  var domains: js.UndefOr[js.Any] = js.undefined
+  var domains: js.UndefOr[
+    HashMap[
+      CodedValueDomainPropertie | RangeDomainPropertiestype | typings.arcgisJsApi.anon.InheritedDomainProperties
+    ]
+  ] = js.undefined
   
   /**
     * The feature type identifier.
@@ -43,7 +50,11 @@ object FeatureTypeProperties {
   
   extension [Self <: FeatureTypeProperties](x: Self) {
     
-    inline def setDomains(value: js.Any): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(
+      value: HashMap[
+          CodedValueDomainPropertie | RangeDomainPropertiestype | typings.arcgisJsApi.anon.InheritedDomainProperties
+        ]
+    ): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
     inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
@@ -59,6 +70,6 @@ object FeatureTypeProperties {
     
     inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    inline def setTemplatesVarargs(value: FeatureTemplateProperties*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: FeatureTemplateProperties*): Self = StObject.set(x, "templates", js.Array(value*))
   }
 }

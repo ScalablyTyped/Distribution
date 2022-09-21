@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskExecutionResultDetail extends StObject {
   
   /**
-    * Errors that AWS DataSync encountered during execution of the task. You can use this error code to help troubleshoot issues.
+    * Errors that DataSync encountered during execution of the task. You can use this error code to help troubleshoot issues.
     */
   var ErrorCode: js.UndefOr[String] = js.undefined
   
@@ -17,7 +17,7 @@ trait TaskExecutionResultDetail extends StObject {
   var ErrorDetail: js.UndefOr[String] = js.undefined
   
   /**
-    * The total time in milliseconds that AWS DataSync spent in the PREPARING phase. 
+    * The total time in milliseconds that DataSync spent in the PREPARING phase. 
     */
   var PrepareDuration: js.UndefOr[Duration] = js.undefined
   
@@ -27,12 +27,12 @@ trait TaskExecutionResultDetail extends StObject {
   var PrepareStatus: js.UndefOr[PhaseStatus] = js.undefined
   
   /**
-    * The total time in milliseconds that AWS DataSync took to transfer the file from the source to the destination location.
+    * The total time in milliseconds that DataSync took to transfer the file from the source to the destination location.
     */
   var TotalDuration: js.UndefOr[Duration] = js.undefined
   
   /**
-    * The total time in milliseconds that AWS DataSync spent in the TRANSFERRING phase.
+    * The total time in milliseconds that DataSync spent in the TRANSFERRING phase.
     */
   var TransferDuration: js.UndefOr[Duration] = js.undefined
   
@@ -42,7 +42,7 @@ trait TaskExecutionResultDetail extends StObject {
   var TransferStatus: js.UndefOr[PhaseStatus] = js.undefined
   
   /**
-    * The total time in milliseconds that AWS DataSync spent in the VERIFYING phase.
+    * The total time in milliseconds that DataSync spent in the VERIFYING phase.
     */
   var VerifyDuration: js.UndefOr[Duration] = js.undefined
   

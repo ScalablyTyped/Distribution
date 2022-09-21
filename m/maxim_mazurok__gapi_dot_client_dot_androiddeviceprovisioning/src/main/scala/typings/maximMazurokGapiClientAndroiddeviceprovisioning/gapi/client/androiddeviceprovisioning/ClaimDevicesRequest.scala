@@ -22,6 +22,6 @@ object ClaimDevicesRequest {
     
     inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
     
-    inline def setClaimsVarargs(value: PartnerClaim*): Self = StObject.set(x, "claims", js.Array(value :_*))
+    inline def setClaimsVarargs(value: PartnerClaim*): Self = StObject.set(x, "claims", js.Array(value*))
   }
 }

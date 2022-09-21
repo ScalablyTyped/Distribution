@@ -8,7 +8,7 @@ object featureFileSearchMod {
   
   @JSImport("yadda/lib/FeatureFileSearch", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.yadda.fileSearchMod.^ {
     def this(directories: String) = this()
   }

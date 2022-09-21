@@ -10,10 +10,10 @@ Brace expansion as known from sh/bash
 | ------------------ | :-------------: |
 | Full name          | brace-expansion |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 247 |
-| # downloads        | 889702989 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.60787921E8 |
+| # stars            | 167.0 |
 
 ## Links
 - [Homepage](https://github.com/juliangruber/brace-expansion)

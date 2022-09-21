@@ -10,7 +10,7 @@ trait OlapXmlaDataSourceOptionsRequestOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax's options object.

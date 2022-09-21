@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.InternalServerError")
 @js.native
-class InternalServerError () extends Abstract
+open class InternalServerError () extends Abstract

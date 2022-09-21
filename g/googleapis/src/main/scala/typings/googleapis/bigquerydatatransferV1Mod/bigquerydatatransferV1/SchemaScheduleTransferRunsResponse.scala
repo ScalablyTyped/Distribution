@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response to schedule transfer runs for a time range.
-  */
 trait SchemaScheduleTransferRunsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaScheduleTransferRunsResponse {
     
     inline def setRunsUndefined: Self = StObject.set(x, "runs", js.undefined)
     
-    inline def setRunsVarargs(value: SchemaTransferRun*): Self = StObject.set(x, "runs", js.Array(value :_*))
+    inline def setRunsVarargs(value: SchemaTransferRun*): Self = StObject.set(x, "runs", js.Array(value*))
   }
 }

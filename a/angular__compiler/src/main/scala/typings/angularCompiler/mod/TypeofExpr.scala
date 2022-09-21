@@ -6,26 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "TypeofExpr")
 @js.native
-class TypeofExpr protected ()
-  extends typings.angularCompiler.compilerMod.TypeofExpr {
-  def this(expr: typings.angularCompiler.outputAstMod.Expression) = this()
-  def this(
-    expr: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    expr: typings.angularCompiler.outputAstMod.Expression,
-    `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    expr: typings.angularCompiler.outputAstMod.Expression,
-    `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    expr: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class TypeofExpr protected () extends Expression {
+  def this(expr: Expression) = this()
+  def this(expr: Expression, `type`: Type) = this()
+  def this(expr: Expression, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(expr: Expression, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(expr: Expression, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
+  var expr: Expression = js.native
 }

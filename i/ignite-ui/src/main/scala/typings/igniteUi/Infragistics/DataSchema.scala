@@ -10,7 +10,7 @@ trait DataSchema extends StObject {
     * A list of field definitions specifying the schema of the data source.
     * Field objects description: {fieldName, [fieldDataType], [fieldXPath]}
     */
-  def fields(): js.Array[js.Any]
+  def fields(): js.Array[Any]
   
   /**
     * Specifies if the object is null, undefined, or an empty string
@@ -36,7 +36,7 @@ trait DataSchema extends StObject {
 object DataSchema {
   
   inline def apply(
-    fields: () => js.Array[js.Any],
+    fields: () => js.Array[Any],
     isEmpty: js.Object => js.Object,
     isObjEmpty: js.Object => js.Object,
     transform: js.Object => js.Object
@@ -47,7 +47,7 @@ object DataSchema {
   
   extension [Self <: DataSchema](x: Self) {
     
-    inline def setFields(value: () => js.Array[js.Any]): Self = StObject.set(x, "fields", js.Any.fromFunction0(value))
+    inline def setFields(value: () => js.Array[Any]): Self = StObject.set(x, "fields", js.Any.fromFunction0(value))
     
     inline def setIsEmpty(value: js.Object => js.Object): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
     

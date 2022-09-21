@@ -171,7 +171,7 @@ trait FacebookInstantGamesPlugin
     * This will return null for older mobile clients, as well as when there is no data associated with the particular entry point.
     * This value is populated automatically during boot.
     */
-  var entryPointData: js.Any = js.native
+  var entryPointData: Any = js.native
   
   /**
     * Immediately flushes any changes to the player data to the designated cloud storage.

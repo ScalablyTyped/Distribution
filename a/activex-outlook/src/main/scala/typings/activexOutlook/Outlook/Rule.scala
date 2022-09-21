@@ -20,21 +20,21 @@ trait Rule extends StObject {
   val Exceptions: RuleConditions = js.native
   
   def Execute(): Unit = js.native
-  def Execute(ShowProgress: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: js.Any, IncludeSubfolders: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: js.Any, IncludeSubfolders: js.Any, RuleExecuteOption: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: js.Any, IncludeSubfolders: Unit, RuleExecuteOption: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: Unit, IncludeSubfolders: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: Unit, IncludeSubfolders: js.Any, RuleExecuteOption: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: Unit, IncludeSubfolders: Unit, RuleExecuteOption: js.Any): Unit = js.native
-  def Execute(ShowProgress: Unit, Folder: js.Any): Unit = js.native
-  def Execute(ShowProgress: Unit, Folder: js.Any, IncludeSubfolders: js.Any): Unit = js.native
-  def Execute(ShowProgress: Unit, Folder: js.Any, IncludeSubfolders: js.Any, RuleExecuteOption: js.Any): Unit = js.native
-  def Execute(ShowProgress: Unit, Folder: js.Any, IncludeSubfolders: Unit, RuleExecuteOption: js.Any): Unit = js.native
-  def Execute(ShowProgress: Unit, Folder: Unit, IncludeSubfolders: js.Any): Unit = js.native
-  def Execute(ShowProgress: Unit, Folder: Unit, IncludeSubfolders: js.Any, RuleExecuteOption: js.Any): Unit = js.native
-  def Execute(ShowProgress: Unit, Folder: Unit, IncludeSubfolders: Unit, RuleExecuteOption: js.Any): Unit = js.native
+  def Execute(ShowProgress: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Any, IncludeSubfolders: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Any, IncludeSubfolders: Any, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Any, IncludeSubfolders: Unit, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Unit, IncludeSubfolders: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Unit, IncludeSubfolders: Any, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Unit, IncludeSubfolders: Unit, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Any, IncludeSubfolders: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Any, IncludeSubfolders: Any, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Any, IncludeSubfolders: Unit, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Unit, IncludeSubfolders: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Unit, IncludeSubfolders: Any, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Unit, IncludeSubfolders: Unit, RuleExecuteOption: Any): Unit = js.native
   
   var ExecutionOrder: Double = js.native
   
@@ -45,7 +45,7 @@ trait Rule extends StObject {
   /* private */ @JSName("Outlook.Rule_typekey")
   var OutlookDotRule_typekey: Rule = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val RuleType: OlRuleType = js.native
   

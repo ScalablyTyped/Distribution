@@ -14,7 +14,7 @@ trait DescribeEventsRequest extends StObject {
   /**
     * The end of the time interval for which to retrieve events, specified in ISO 8601 format.
     */
-  var EndTime: js.UndefOr[TStamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of results to include in the response. If more results exist than the specified MaxResults value, a token is included in the response so that the remaining results can be retrieved. The value for MaxResults must be between 20 and 100.
@@ -39,7 +39,7 @@ trait DescribeEventsRequest extends StObject {
   /**
     * The beginning of the time interval to retrieve events for, specified in ISO 8601 format.
     */
-  var StartTime: js.UndefOr[TStamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeEventsRequest {
   
@@ -54,7 +54,7 @@ object DescribeEventsRequest {
     
     inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -74,7 +74,7 @@ object DescribeEventsRequest {
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

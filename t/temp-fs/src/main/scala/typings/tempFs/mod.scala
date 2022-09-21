@@ -1,6 +1,5 @@
 package typings.tempFs
 
-import typings.std.Error
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,13 +14,13 @@ object mod {
   /**
     * Remove all tracked files and directories asynchronously.
     */
-  inline def clear(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Any]
-  inline def clear(callback: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def clear(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Any]
+  inline def clear(callback: js.Function0[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(callback.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Remove all tracked files and directories synchronously.
     */
-  inline def clearSync(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSync")().asInstanceOf[js.Any]
+  inline def clearSync(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSync")().asInstanceOf[Any]
   
   /**
     * A tempdir.
@@ -47,8 +46,8 @@ object mod {
       *
       * @param callback makes it asynchronous.
       */
-    def unlink(): js.Any = js.native
-    def unlink(callback: js.Function1[/* error */ Error, js.Any]): js.Any = js.native
+    def unlink(): Any = js.native
+    def unlink(callback: js.Function1[/* error */ js.Error, Any]): Any = js.native
   }
   object dir {
     
@@ -74,10 +73,10 @@ object mod {
     *                 <code>null</code>, <code>dir</code> has the properties of
     *                 {@link dir}.
     */
-  inline def mkdir(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")().asInstanceOf[js.Any]
-  inline def mkdir(options: Unit, callback: js.Function2[/* err */ js.Any, /* dir */ dir, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mkdir(options: options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def mkdir(options: options, callback: js.Function2[/* err */ js.Any, /* dir */ dir, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mkdir(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")().asInstanceOf[Any]
+  inline def mkdir(options: Unit, callback: js.Function2[/* err */ Any, /* dir */ dir, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mkdir(options: options): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def mkdir(options: options, callback: js.Function2[/* err */ Any, /* dir */ dir, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * The synchronous version of {@link mkdir}.
@@ -101,11 +100,11 @@ object mod {
     *                 <code>null</code>, <code>file</code> has the properties
     *                 of {@link file}.
     */
-  inline def open(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[js.Any]
-  inline def open(callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def open(options: Unit, callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def open(options: options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def open(options: options, callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def open(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Any]
+  inline def open(callback: js.Function2[/* err */ Any, /* file */ file, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(callback.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def open(options: Unit, callback: js.Function2[/* err */ Any, /* file */ file, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def open(options: options): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def open(options: options, callback: js.Function2[/* err */ Any, /* file */ file, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * The synchronous version of {@link open}.
@@ -155,8 +154,8 @@ object mod {
       *
       * @param callback makes it asynchronous.
       */
-    def unlink(): js.Any = js.native
-    def unlink(callback: js.Function1[/* error */ Error, js.Any]): js.Any = js.native
+    def unlink(): Any = js.native
+    def unlink(callback: js.Function1[/* error */ js.Error, Any]): Any = js.native
   }
   
   /**

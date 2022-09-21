@@ -4,12 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Converts Web Mercator coordinates to geographic coordinates and vice versa.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-webMercatorUtils.html)
+  */
 @js.native
 trait webMercatorUtils extends StObject {
   
-  def canProject(source: js.Any, target: js.Any): Boolean = js.native
-  def canProject(source: js.Any, target: SpatialReference): Boolean = js.native
-  def canProject(source: SpatialReference, target: js.Any): Boolean = js.native
+  def canProject(source: Any, target: Any): Boolean = js.native
+  def canProject(source: Any, target: SpatialReference): Boolean = js.native
+  def canProject(source: SpatialReference, target: Any): Boolean = js.native
   /**
     * Returns `true` if the `source` spatial reference can be projected to the `target` spatial reference with the [project()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-webMercatorUtils.html#project) function, or if the `source` and `target` are the same [SpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html).
     *
@@ -31,7 +36,7 @@ trait webMercatorUtils extends StObject {
     */
   def lngLatToXY(long: Double, lat: Double): js.Array[Double] = js.native
   
-  def project(geometry: Geometry_, spatialReference: js.Any): Geometry_ = js.native
+  def project(geometry: Geometry_, spatialReference: Any): Geometry_ = js.native
   /**
     * Projects the geometry clientside (if possible).
     *
@@ -44,7 +49,7 @@ trait webMercatorUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-webMercatorUtils.html#webMercatorToGeographic)
     */
-  def webMercatorToGeographic(geometry: Geometry_): Geometry_ = js.native
+  def webMercatorToGeographic(geometry: Geometry_, isLinear: Boolean): Geometry_ = js.native
   
   /**
     * Translates the given Web Mercator coordinates to Longitude and Latitude values (decimal degrees).

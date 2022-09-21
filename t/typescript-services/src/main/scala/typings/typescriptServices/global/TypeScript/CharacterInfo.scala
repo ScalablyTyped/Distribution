@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.CharacterInfo")
 @js.native
-class CharacterInfo ()
+open class CharacterInfo ()
   extends StObject
      with typings.typescriptServices.TypeScript.CharacterInfo
 object CharacterInfo {

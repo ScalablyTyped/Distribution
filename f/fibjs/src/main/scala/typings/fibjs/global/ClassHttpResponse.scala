@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassHttpResponse ()
+open class ClassHttpResponse ()
   extends StObject
      with typings.fibjs.ClassHttpResponse

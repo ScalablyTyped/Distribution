@@ -12,6 +12,7 @@ import typings.relayRuntime.relayConcreteNodeMod.RequestParameters
 import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
 import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
 import typings.relayRuntime.relayRuntimeTypesMod.DisposeFn
+import typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import typings.relayRuntime.relayRuntimeTypesMod.VariablesOf
 import typings.relayRuntime.relayStoreTypesMod.Environment
@@ -22,13 +23,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object entryPointTypesMod {
   
-  type EntryPoint[TEntryPointComponent, TEntryPointParams /* <: js.Object */] = InternalEntryPointRepresentation[TEntryPointParams, js.Any, js.Any, js.Any, js.Any]
+  type EntryPoint[TEntryPointComponent, TEntryPointParams /* <: js.Object */] = InternalEntryPointRepresentation[TEntryPointParams, Any, Any, Any, Any]
   
-  type EntryPointComponent[TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TRuntimeProps /* <: js.Object */, TExtraProps /* <: js.Object | Null */] = ComponentType[
+  type EntryPointComponent[TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[Any, Any]]] */, TRuntimeProps /* <: js.Object */, TExtraProps /* <: js.Object | Null */] = ComponentType[
     EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
   ]
   
-  /* Inlined parent std.Readonly<{  entryPoints :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadedEntryPoints<TPreloadedEntryPoints>,   extraProps :TExtraProps,   props :TRuntimeProps,   queries :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadedQueries<TPreloadedQueries>}> */
+  /* Inlined parent std.Readonly<{  entryPoints :react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadedEntryPoints<TPreloadedEntryPoints>,   extraProps :TExtraProps,   props :TRuntimeProps,   queries :react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadedQueries<TPreloadedQueries>}> */
   trait EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] extends StObject {
     
     val entryPoints: PreloadedEntryPoints[TPreloadedEntryPoints]
@@ -63,7 +64,7 @@ object entryPointTypesMod {
     }
   }
   
-  type EnvironmentProviderOptions[T /* <: Record[String, js.Any] */] = T
+  type EnvironmentProviderOptions[T /* <: Record[String, Any] */] = T
   
   @js.native
   trait IEnvironmentProvider[TOptions] extends StObject {
@@ -94,7 +95,7 @@ object entryPointTypesMod {
     * TExtraProps - a bag of extra props that you may define in `entrypoint` file
     * and they will be passed to the EntryPointComponent as `extraProps`
     */
-  /* Inlined parent std.Readonly<{  root :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.JSResourceReference<react-relay.react-relay/lib/relay-experimental/EntryPointTypes.EntryPointComponent<TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps>>, getPreloadProps (entryPointParams : TEntryPointParams): react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadProps<TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps>}> */
+  /* Inlined parent std.Readonly<{  root :react-relay.react-relay/relay-hooks/EntryPointTypes.JSResourceReference<react-relay.react-relay/relay-hooks/EntryPointTypes.EntryPointComponent<TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps>>, getPreloadProps (entryPointParams : TEntryPointParams): react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadProps<TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps>}> */
   trait InternalEntryPointRepresentation[/**
     * object that contains all necessary information to execute the preloaders (routeParams, query variables)
     */
@@ -112,7 +113,7 @@ object entryPointTypesMod {
     * a bag of extra props that you may define in `entrypoint` file and they will be passed to the EntryPointComponent
     * as `extraProps`
     */
-  TExtraProps] extends StObject {
+  TExtraProps /* <: js.Object | Null */] extends StObject {
     
     val getPreloadProps: js.Function1[
         /* entryPointParams */ TEntryPointParams, 
@@ -142,7 +143,7 @@ object entryPointTypesMod {
       * a bag of extra props that you may define in `entrypoint` file and they will be passed to the EntryPointComponent
       * as `extraProps`
       */
-    TExtraProps](
+    TExtraProps /* <: js.Object | Null */](
       getPreloadProps: /* entryPointParams */ TEntryPointParams => PreloadProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps],
       root: JSResourceReference[
           EntryPointComponent[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
@@ -169,7 +170,7 @@ object entryPointTypesMod {
       * a bag of extra props that you may define in `entrypoint` file and they will be passed to the EntryPointComponent
       * as `extraProps`
       */
-    TExtraProps](x: Self & (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) {
+    TExtraProps /* <: js.Object | Null */](x: Self & (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) {
       
       inline def setGetPreloadProps(
         value: /* entryPointParams */ TEntryPointParams => PreloadProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]
@@ -212,10 +213,10 @@ object entryPointTypesMod {
     }
   }
   
-  /* Inlined std.Readonly<{  fetchPolicy :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadFetchPolicy | null | undefined,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined,   onQueryAstLoadTimeout :(): void | null | undefined}> */
+  /* Inlined std.Readonly<{  fetchPolicy :relay-runtime.relay-runtime.FetchPolicy | null | undefined,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined,   onQueryAstLoadTimeout :(): void | null | undefined}> */
   trait LoadQueryOptions extends StObject {
     
-    val fetchPolicy: js.UndefOr[PreloadFetchPolicy | Null] = js.undefined
+    val fetchPolicy: js.UndefOr[FetchPolicy | Null] = js.undefined
     
     val networkCacheConfig: js.UndefOr[CacheConfig | Null] = js.undefined
     
@@ -230,7 +231,7 @@ object entryPointTypesMod {
     
     extension [Self <: LoadQueryOptions](x: Self) {
       
-      inline def setFetchPolicy(value: PreloadFetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+      inline def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
       inline def setFetchPolicyNull: Self = StObject.set(x, "fetchPolicy", null)
       
@@ -265,7 +266,7 @@ object entryPointTypesMod {
     inline def `store-or-network`: typings.reactRelay.reactRelayStrings.`store-or-network` = "store-or-network".asInstanceOf[typings.reactRelay.reactRelayStrings.`store-or-network`]
   }
   
-  /* Inlined std.Readonly<{  fetchKey :string | number | undefined,   fetchPolicy :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadFetchPolicy | null | undefined,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined}> */
+  /* Inlined std.Readonly<{  fetchKey :string | number | undefined,   fetchPolicy :react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadFetchPolicy | null | undefined,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined}> */
   trait PreloadOptions extends StObject {
     
     val fetchKey: js.UndefOr[String | Double] = js.undefined
@@ -301,8 +302,8 @@ object entryPointTypesMod {
     }
   }
   
-  /* Inlined parent std.Readonly<{  entryPoints :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ThinNestedEntryPointParamsObject<TPreloadedEntryPoints> | undefined,   extraProps :TExtraProps | undefined,   queries :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ThinQueryParamsObject<TPreloadedQueries> | undefined}> */
-  trait PreloadProps[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */] extends StObject {
+  /* Inlined parent std.Readonly<{  entryPoints :react-relay.react-relay/relay-hooks/EntryPointTypes.ThinNestedEntryPointParamsObject<TPreloadedEntryPoints> | undefined,   extraProps :TExtraProps | undefined,   queries :react-relay.react-relay/relay-hooks/EntryPointTypes.ThinQueryParamsObject<TPreloadedQueries> | undefined}> */
+  trait PreloadProps[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[Any, Any]]] */, TExtraProps /* <: js.Object | Null */] extends StObject {
     
     val entryPoints: js.UndefOr[ThinNestedEntryPointParamsObject[TPreloadedEntryPoints]] = js.undefined
     
@@ -312,12 +313,12 @@ object entryPointTypesMod {
   }
   object PreloadProps {
     
-    inline def apply[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */](): PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps] = {
+    inline def apply[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[Any, Any]]] */, TExtraProps /* <: js.Object | Null */](): PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]]
     }
     
-    extension [Self <: PreloadProps[?, ?, ?, ?], TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */](x: Self & (PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps])) {
+    extension [Self <: PreloadProps[?, ?, ?, ?], TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[Any, Any]]] */, TExtraProps /* <: js.Object | Null */](x: Self & (PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps])) {
       
       inline def setEntryPoints(value: ThinNestedEntryPointParamsObject[TPreloadedEntryPoints]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
       
@@ -391,14 +392,14 @@ object entryPointTypesMod {
   type PreloadedEntryPoint[TEntryPointComponent] = Dispose[TEntryPointComponent]
   
   type PreloadedEntryPoints[TPreloadedEntryPoints] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ T in keyof TPreloadedEntryPoints ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadedEntryPoint<react-relay.react-relay/lib/relay-experimental/helpers.GetEntryPointComponentFromEntryPoint<TPreloadedEntryPoints[T]>>}
+  {[ T in keyof TPreloadedEntryPoints ]: react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadedEntryPoint<react-relay.react-relay/relay-hooks/helpers.GetEntryPointComponentFromEntryPoint<TPreloadedEntryPoints[T]>>}
     */ typings.reactRelay.reactRelayStrings.PreloadedEntryPoints & TopLevel[TPreloadedEntryPoints]
   
   type PreloadedQueries[TPreloadedQueries] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ T in keyof TPreloadedQueries ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadedQuery<TPreloadedQueries[T], react-relay.react-relay/lib/relay-experimental/EntryPointTypes.EnvironmentProviderOptions<std.Record<string, unknown>>>}
+  {[ T in keyof TPreloadedQueries ]: react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadedQuery<TPreloadedQueries[T], react-relay.react-relay/relay-hooks/EntryPointTypes.EnvironmentProviderOptions<std.Record<string, unknown>>>}
     */ typings.reactRelay.reactRelayStrings.PreloadedQueries & TopLevel[TPreloadedQueries]
   
-  /* Inlined parent std.Readonly<{  kind :'PreloadedQuery',   environment :relay-runtime.relay-runtime.IEnvironment,   environmentProviderOptions :TEnvironmentProviderOptions | null | undefined,   fetchKey :string | number,   fetchPolicy :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadFetchPolicy,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined,   id :string | null | undefined,   name :string,   source :relay-runtime.relay-runtime.Observable<relay-runtime.relay-runtime.GraphQLResponse> | null | undefined,   variables :relay-runtime.relay-runtime.VariablesOf<TQuery>,   dispose :relay-runtime.relay-runtime.DisposeFn,   isDisposed :boolean}> */
+  /* Inlined parent std.Readonly<{  kind :'PreloadedQuery',   environment :relay-runtime.relay-runtime.IEnvironment,   environmentProviderOptions :TEnvironmentProviderOptions | null | undefined,   fetchKey :string | number,   fetchPolicy :react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadFetchPolicy,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined,   id :string | null | undefined,   name :string,   source :relay-runtime.relay-runtime.Observable<relay-runtime.relay-runtime.GraphQLResponse> | null | undefined,   variables :relay-runtime.relay-runtime.VariablesOf<TQuery>,   dispose :relay-runtime.relay-runtime.DisposeFn,   isDisposed :boolean}> */
   trait PreloadedQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions] extends StObject {
     
     val dispose: DisposeFn
@@ -484,7 +485,7 @@ object entryPointTypesMod {
     }
   }
   
-  /* Inlined parent std.Readonly<{  entryPoint :TEntryPoint,   entryPointParams :react-relay.react-relay/lib/relay-experimental/helpers.GetEntryPointParamsFromEntryPoint<TEntryPoint>}> */
+  /* Inlined parent std.Readonly<{  entryPoint :TEntryPoint,   entryPointParams :react-relay.react-relay/relay-hooks/helpers.GetEntryPointParamsFromEntryPoint<TEntryPoint>}> */
   trait ThinNestedEntryPointParams[TEntryPoint] extends StObject {
     
     val entryPoint: TEntryPoint
@@ -506,12 +507,12 @@ object entryPointTypesMod {
     }
   }
   
-  type ThinNestedEntryPointParamsObject[TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof TPreloadedEntryPoints ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ThinNestedEntryPointParams<TPreloadedEntryPoints[K]>}
+  type ThinNestedEntryPointParamsObject[TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[Any, Any]]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof TPreloadedEntryPoints ]: react-relay.react-relay/relay-hooks/EntryPointTypes.ThinNestedEntryPointParams<TPreloadedEntryPoints[K]>}
     */ typings.reactRelay.reactRelayStrings.ThinNestedEntryPointParamsObject & TopLevel[TPreloadedEntryPoints]
   
-  /* Inlined parent std.Readonly<{  parameters :relay-runtime.relay-runtime.ConcreteRequest | react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadableConcreteRequest<TQuery>,   variables :relay-runtime.relay-runtime.VariablesOf<TQuery>,   options :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadOptions | null | undefined,   environmentProviderOptions :TEnvironmentProviderOptions | null | undefined}> */
-  trait ThinQueryParams[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */] extends StObject {
+  /* Inlined parent std.Readonly<{  parameters :relay-runtime.relay-runtime.ConcreteRequest | react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadableConcreteRequest<TQuery>,   variables :relay-runtime.relay-runtime.VariablesOf<TQuery>,   options :react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadOptions | null | undefined,   environmentProviderOptions :TEnvironmentProviderOptions | null | undefined}> */
+  trait ThinQueryParams[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */] extends StObject {
     
     val environmentProviderOptions: js.UndefOr[TEnvironmentProviderOptions | Null] = js.undefined
     
@@ -523,12 +524,12 @@ object entryPointTypesMod {
   }
   object ThinQueryParams {
     
-    inline def apply[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](parameters: ConcreteRequest | PreloadableConcreteRequest[TQuery], variables: VariablesOf[TQuery]): ThinQueryParams[TQuery, TEnvironmentProviderOptions] = {
+    inline def apply[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](parameters: ConcreteRequest | PreloadableConcreteRequest[TQuery], variables: VariablesOf[TQuery]): ThinQueryParams[TQuery, TEnvironmentProviderOptions] = {
       val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThinQueryParams[TQuery, TEnvironmentProviderOptions]]
     }
     
-    extension [Self <: ThinQueryParams[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](x: Self & (ThinQueryParams[TQuery, TEnvironmentProviderOptions])) {
+    extension [Self <: ThinQueryParams[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](x: Self & (ThinQueryParams[TQuery, TEnvironmentProviderOptions])) {
       
       inline def setEnvironmentProviderOptions(value: TEnvironmentProviderOptions): Self = StObject.set(x, "environmentProviderOptions", value.asInstanceOf[js.Any])
       
@@ -549,6 +550,6 @@ object entryPointTypesMod {
   }
   
   type ThinQueryParamsObject[TPreloadedQueries /* <: Record[String, OperationType] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof TPreloadedQueries ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ThinQueryParams<TPreloadedQueries[K], react-relay.react-relay/lib/relay-experimental/EntryPointTypes.EnvironmentProviderOptions<std.Record<string, unknown>>>}
+  {[ K in keyof TPreloadedQueries ]: react-relay.react-relay/relay-hooks/EntryPointTypes.ThinQueryParams<TPreloadedQueries[K], react-relay.react-relay/relay-hooks/EntryPointTypes.EnvironmentProviderOptions<std.Record<string, unknown>>>}
     */ typings.reactRelay.reactRelayStrings.ThinQueryParamsObject & TopLevel[TPreloadedQueries]
 }

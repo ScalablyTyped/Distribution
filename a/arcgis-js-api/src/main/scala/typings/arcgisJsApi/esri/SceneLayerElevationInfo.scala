@@ -21,14 +21,14 @@ trait SceneLayerElevationInfo
      with Object {
   
   /**
-    * Defines how the graphic is placed with respect to the terrain surface.
+    * Defines how the feature is placed with respect to the terrain surface.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
     */
   var mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`
   
   /**
-    * An elevation offset which is added to the vertical position of the graphic.
+    * An elevation offset which is added to the vertical position of the feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
     */
@@ -36,6 +36,8 @@ trait SceneLayerElevationInfo
   
   /**
     * The unit for `offset` values.
+    *
+    * @default meters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
     */

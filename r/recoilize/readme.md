@@ -10,15 +10,12 @@ Recoil Dev Tool
 | ------------------ | :-------------: |
 | Full name          | recoilize |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 0 |
-| # downloads        | 3256 |
-| # stars            | 0 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 3720.3333333333335 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/open-source-labs/Recoilize#readme)
-- [Bugs](https://github.com/open-source-labs/Recoilize/issues)
-- [Repository](https://github.com/open-source-labs/Recoilize)
 - [Npm](https://www.npmjs.com/package/recoilize)
     
 

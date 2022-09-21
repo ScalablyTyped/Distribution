@@ -17,13 +17,13 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddEmptySignature(
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddEmptySignature(
@@ -37,13 +37,13 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddEmptySignature(
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddEmptySignature(
@@ -59,12 +59,12 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
   def AddEmptySignatures(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddEmptySignatures(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddEmptySignatures(
@@ -76,12 +76,12 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
   def AddEmptySignatures(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddEmptySignatures(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddEmptySignatures(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -96,13 +96,13 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DisconnectSignature(
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DisconnectSignature(
@@ -116,13 +116,13 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DisconnectSignature(
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DisconnectSignature(
@@ -145,14 +145,14 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
     SignatureIdentifier: String,
     InvalidateDisconnectedSignatures: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DisconnectSignatureEx(
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     InvalidateDisconnectedSignatures: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DisconnectSignatureEx(
@@ -168,14 +168,14 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
     SignatureIdentifier: String,
     InvalidateDisconnectedSignatures: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DisconnectSignatureEx(
     ObjVer: IObjVer,
     SignatureIdentifier: String,
     InvalidateDisconnectedSignatures: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DisconnectSignatureEx(
@@ -192,12 +192,12 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
   def DisconnectSignatures(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DisconnectSignatures(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DisconnectSignatures(
@@ -209,12 +209,12 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
   def DisconnectSignatures(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DisconnectSignatures(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DisconnectSignatures(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -229,13 +229,13 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
     ObjVer: IObjVer,
     InvalidateDisconnectedSignatures: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DisconnectSignaturesEx(
     ObjVer: IObjVer,
     InvalidateDisconnectedSignatures: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DisconnectSignaturesEx(
@@ -249,13 +249,13 @@ trait IVaultElectronicSignatureOperationsAsync extends StObject {
     ObjVer: IObjVer,
     InvalidateDisconnectedSignatures: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DisconnectSignaturesEx(
     ObjVer: IObjVer,
     InvalidateDisconnectedSignatures: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DisconnectSignaturesEx(

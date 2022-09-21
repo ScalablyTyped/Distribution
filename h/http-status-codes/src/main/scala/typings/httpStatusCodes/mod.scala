@@ -522,6 +522,8 @@ object mod {
     
     /* "Method Not Allowed" */ val METHOD_NOT_ALLOWED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.METHOD_NOT_ALLOWED & String = js.native
     
+    /* "Misdirected Request" */ val MISDIRECTED_REQUEST: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.MISDIRECTED_REQUEST & String = js.native
+    
     /* "Moved Permanently" */ val MOVED_PERMANENTLY: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.MOVED_PERMANENTLY & String = js.native
     
     /* "Moved Temporarily" */ val MOVED_TEMPORARILY: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.MOVED_TEMPORARILY & String = js.native
@@ -651,6 +653,8 @@ object mod {
     /* 420 */ val METHOD_FAILURE: typings.httpStatusCodes.statusCodesMod.StatusCodes.METHOD_FAILURE & Double = js.native
     
     /* 405 */ val METHOD_NOT_ALLOWED: typings.httpStatusCodes.statusCodesMod.StatusCodes.METHOD_NOT_ALLOWED & Double = js.native
+    
+    /* 421 */ val MISDIRECTED_REQUEST: typings.httpStatusCodes.statusCodesMod.StatusCodes.MISDIRECTED_REQUEST & Double = js.native
     
     /* 301 */ val MOVED_PERMANENTLY: typings.httpStatusCodes.statusCodesMod.StatusCodes.MOVED_PERMANENTLY & Double = js.native
     

@@ -15,9 +15,9 @@ object mod {
   inline def get(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[String]
   
   inline def keep(value: JWTObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def keep(value: JWTObject, key: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def keep(value: JWTObject, key: js.Any, storate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], storate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def keep(value: JWTObject, key: Unit, storate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], storate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def keep(value: JWTObject, key: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def keep(value: JWTObject, key: Any, storate: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], storate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def keep(value: JWTObject, key: Unit, storate: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], storate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Read a string value (normally an HTTP header)
@@ -28,9 +28,9 @@ object mod {
   inline def remember(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remember")().asInstanceOf[Unit]
   
   inline def validate(value: JWTObject): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def validate(value: JWTObject, issuer: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def validate(value: JWTObject, issuer: js.Any, audience: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], audience.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def validate(value: JWTObject, issuer: Unit, audience: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], audience.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validate(value: JWTObject, issuer: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validate(value: JWTObject, issuer: Any, audience: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], audience.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validate(value: JWTObject, issuer: Unit, audience: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], audience.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Given a JWT object, stringify it back to
@@ -61,7 +61,7 @@ object mod {
   
   trait JWTObject extends StObject {
     
-    var claim: js.Any
+    var claim: Any
     
     var header: JWTHeader
     
@@ -69,14 +69,14 @@ object mod {
   }
   object JWTObject {
     
-    inline def apply(claim: js.Any, header: JWTHeader, signature: String): JWTObject = {
+    inline def apply(claim: Any, header: JWTHeader, signature: String): JWTObject = {
       val __obj = js.Dynamic.literal(claim = claim.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[JWTObject]
     }
     
     extension [Self <: JWTObject](x: Self) {
       
-      inline def setClaim(value: js.Any): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
+      inline def setClaim(value: Any): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
       
       inline def setHeader(value: JWTHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

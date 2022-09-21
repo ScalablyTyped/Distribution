@@ -14,7 +14,7 @@ object global {
     /** Automation interface for DiskQuotaUser */
     @JSGlobal("DiskQuotaTypeLibrary.DIDiskQuotaUser")
     @js.native
-    /* private */ class DIDiskQuotaUser ()
+    /* private */ open class DIDiskQuotaUser ()
       extends StObject
          with typings.activexDiskquota.DiskQuotaTypeLibrary.DIDiskQuotaUser {
       
@@ -74,7 +74,7 @@ object global {
     /** Microsoft Disk Quota */
     @JSGlobal("DiskQuotaTypeLibrary.DiskQuotaControl")
     @js.native
-    /* private */ class DiskQuotaControl ()
+    /* private */ open class DiskQuotaControl ()
       extends StObject
          with typings.activexDiskquota.DiskQuotaTypeLibrary.DiskQuotaControl {
       

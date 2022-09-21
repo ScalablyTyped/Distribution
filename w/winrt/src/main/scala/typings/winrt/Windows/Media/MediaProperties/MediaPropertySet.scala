@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MediaPropertySet
   extends StObject
-     with IMap[String, js.Any]
+     with IMap[String, Any]
 object MediaPropertySet {
   
   inline def apply(
     clear: () => Unit,
-    first: () => IIterator[IKeyValuePair[String, js.Any]],
-    getView: () => IMapView[String, js.Any],
+    first: () => IIterator[IKeyValuePair[String, Any]],
+    getView: () => IMapView[String, Any],
     hasKey: String => Boolean,
-    insert: (String, js.Any) => Boolean,
-    lookup: String => js.Any,
+    insert: (String, Any) => Boolean,
+    lookup: String => Any,
     remove: String => Unit,
     size: Double
   ): MediaPropertySet = {

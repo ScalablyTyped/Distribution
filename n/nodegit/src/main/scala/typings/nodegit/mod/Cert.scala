@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Cert")
 @js.native
-class Cert ()
+open class Cert ()
   extends typings.nodegit.certMod.Cert

@@ -9,12 +9,12 @@ trait DescribeCodeBindingResponse extends StObject {
   /**
     * The time and date that the code binding was created.
     */
-  var CreationDate: js.UndefOr[timestampIso8601] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time that code bindings were modified.
     */
-  var LastModified: js.UndefOr[timestampIso8601] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The version number of the schema.
@@ -35,11 +35,11 @@ object DescribeCodeBindingResponse {
   
   extension [Self <: DescribeCodeBindingResponse](x: Self) {
     
-    inline def setCreationDate(value: timestampIso8601): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    inline def setLastModified(value: timestampIso8601): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     

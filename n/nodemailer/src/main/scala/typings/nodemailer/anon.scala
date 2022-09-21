@@ -1,13 +1,11 @@
 package typings.nodemailer
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
 import typings.nodemailer.mailerMod.^
 import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.sesTransportMod.SentMessageInfo
-import typings.std.Error
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,10 +32,10 @@ object anon {
   @js.native
   trait Callback extends StObject {
     
+    def callback(err: js.Error, info: SentMessageInfo): Unit = js.native
     def callback(err: Null, info: SentMessageInfo): Unit = js.native
-    def callback(err: Error, info: SentMessageInfo): Unit = js.native
     
-    var mail: ^ = js.native
+    var mail: ^[SentMessageInfo] = js.native
   }
   
   trait Comment extends StObject {
@@ -83,18 +81,18 @@ object anon {
     /**
       * The raw data of the message. This data needs to base64-encoded if you are accessing Amazon SES directly through the HTTPS interface. If you are accessing Amazon SES using an AWS SDK, the SDK takes care of the base 64-encoding for you. In all cases, the client must ensure that the message format complies with Internet email standards regarding email header fields, MIME types, and MIME encoding. The To:, CC:, and BCC: headers in the raw message can contain a group list. If you are using SendRawEmail with sending authorization, you can include X-headers in the raw message to specify the "Source," "From," and "Return-Path" addresses. For more information, see the documentation for SendRawEmail.   Do not include these X-headers in the DKIM signature, because they are removed by Amazon SES before sending the email.  For more information, go to the Amazon SES Developer Guide.
       */
-    var Data: Buffer | Uint8Array | js.Object | String
+    var Data: Buffer | js.typedarray.Uint8Array | js.Object | String
   }
   object Data {
     
-    inline def apply(Data: Buffer | Uint8Array | js.Object | String): Data = {
+    inline def apply(Data: Buffer | js.typedarray.Uint8Array | js.Object | String): Data = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: Buffer | Uint8Array | js.Object | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer | js.typedarray.Uint8Array | js.Object | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     }
   }
   

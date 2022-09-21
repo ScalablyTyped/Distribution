@@ -6,11 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "MatrixDynamicRowModel")
 @js.native
-class MatrixDynamicRowModel protected () extends MatrixDropdownRowModelBase {
-  def this(index: Double, data: IMatrixDropdownData, value: js.Any) = this()
+open class MatrixDynamicRowModel protected ()
+  extends MatrixDropdownRowModelBase
+     with IShortcutText {
+  def this(index: Double, data: IMatrixDropdownData, value: Any) = this()
+  
+  var dragOrClickHelper: DragOrClickHelper = js.native
   
   var index: Double = js.native
   
-  @JSName("rowName")
-  val rowName_MatrixDynamicRowModel: String = js.native
+  /* CompleteClass */
+  var shortcutText: String = js.native
+  @JSName("shortcutText")
+  def shortcutText_MMatrixDynamicRowModel: String = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode-languageserver", "ResponseError")
 @js.native
-class ResponseError[D] protected ()
+open class ResponseError[D] protected ()
   extends typings.vscodeLanguageserverProtocol.mod.ResponseError[D] {
   def this(code: Double, message: String) = this()
   def this(code: Double, message: String, data: D) = this()

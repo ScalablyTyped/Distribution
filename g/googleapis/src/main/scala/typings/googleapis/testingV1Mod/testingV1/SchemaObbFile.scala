@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An opaque binary blob file to install on the device before the test starts.
-  */
 trait SchemaObbFile extends StObject {
   
   /**
@@ -15,13 +12,9 @@ trait SchemaObbFile extends StObject {
   var obb: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
-    * Required. OBB file name which must conform to the format as specified by
-    * Android e.g. [main|patch].0300110.com.example.android.obb which will be
-    * installed into
-    * \&lt;shared-storage\&gt;/Android/obb/\&lt;package-name\&gt;/ on the
-    * device.
+    * Required. OBB file name which must conform to the format as specified by Android e.g. [main|patch].0300110.com.example.android.obb which will be installed into \/Android/obb/\/ on the device.
     */
-  var obbFileName: js.UndefOr[String] = js.undefined
+  var obbFileName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaObbFile {
   
@@ -35,6 +28,8 @@ object SchemaObbFile {
     inline def setObb(value: SchemaFileReference): Self = StObject.set(x, "obb", value.asInstanceOf[js.Any])
     
     inline def setObbFileName(value: String): Self = StObject.set(x, "obbFileName", value.asInstanceOf[js.Any])
+    
+    inline def setObbFileNameNull: Self = StObject.set(x, "obbFileName", null)
     
     inline def setObbFileNameUndefined: Self = StObject.set(x, "obbFileName", js.undefined)
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GroupColumnOptions extends StObject {
   
-  def aggregation(values: js.Array[js.Any]): js.Any
+  def aggregation(values: js.Array[Any]): Any
   
   var column: Double
   
@@ -18,7 +18,7 @@ trait GroupColumnOptions extends StObject {
 }
 object GroupColumnOptions {
   
-  inline def apply(aggregation: js.Array[js.Any] => js.Any, column: Double, `type`: String): GroupColumnOptions = {
+  inline def apply(aggregation: js.Array[Any] => Any, column: Double, `type`: String): GroupColumnOptions = {
     val __obj = js.Dynamic.literal(aggregation = js.Any.fromFunction1(aggregation), column = column.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupColumnOptions]
@@ -26,7 +26,7 @@ object GroupColumnOptions {
   
   extension [Self <: GroupColumnOptions](x: Self) {
     
-    inline def setAggregation(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "aggregation", js.Any.fromFunction1(value))
+    inline def setAggregation(value: js.Array[Any] => Any): Self = StObject.set(x, "aggregation", js.Any.fromFunction1(value))
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

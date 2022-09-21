@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ trait ASPxClientAppointment extends StObject {
   /**
     * Gets the end date and time of the appointment.
     */
-  def GetEnd(): Date
+  def GetEnd(): js.Date
   
   /**
     * Gets the ID of the client appointment.
@@ -75,7 +74,7 @@ trait ASPxClientAppointment extends StObject {
   /**
     * Gets the start date and time of the appointment.
     */
-  def GetStart(): Date
+  def GetStart(): js.Date
   
   /**
     * Gets or sets the integer identifier of the status object associated with the appointment.
@@ -109,13 +108,13 @@ trait ASPxClientAppointment extends StObject {
     * Sets the property value of the client appointment, corresponding to the Appointment.Duration appointment property.
     * @param duration A TimeSpan object representing the appointment duration.
     */
-  def SetDuration(duration: js.Any): Unit
+  def SetDuration(duration: Any): Unit
   
   /**
     * Sets the property value of the client appointment, corresponding to the Appointment.End appointment property.
     * @param end A JavaScript Date object representing the end of the appointment.
     */
-  def SetEnd(end: Date): Unit
+  def SetEnd(end: js.Date): Unit
   
   /**
     * Sets the ID of the client appointment.
@@ -145,7 +144,7 @@ trait ASPxClientAppointment extends StObject {
     * Sets the property value of the client appointment, corresponding to the Appointment.Start appointment property.
     * @param start A JavaScript Date object representing the appointment start.
     */
-  def SetStart(start: Date): Unit
+  def SetStart(start: js.Date): Unit
   
   /**
     * Sets the property value of the client appointment, corresponding to the Appointment.StatusId appointment property.
@@ -197,26 +196,26 @@ object ASPxClientAppointment {
     GetAppointmentType: () => ASPxAppointmentType,
     GetDescription: () => String,
     GetDuration: () => Double,
-    GetEnd: () => Date,
+    GetEnd: () => js.Date,
     GetId: () => String,
     GetLabelId: () => Double,
     GetLocation: () => String,
     GetRecurrenceInfo: () => ASPxClientRecurrenceInfo,
     GetRecurrencePattern: () => ASPxClientAppointment,
     GetResource: Double => String,
-    GetStart: () => Date,
+    GetStart: () => js.Date,
     GetStatusId: () => Double,
     GetSubject: () => String,
     SetAllDay: Boolean => Unit,
     SetAppointmentType: ASPxAppointmentType => Unit,
     SetDescription: String => Unit,
-    SetDuration: js.Any => Unit,
-    SetEnd: Date => Unit,
+    SetDuration: Any => Unit,
+    SetEnd: js.Date => Unit,
     SetId: String => Unit,
     SetLabelId: Double => Unit,
     SetLocation: String => Unit,
     SetRecurrenceInfo: ASPxClientRecurrenceInfo => Unit,
-    SetStart: Date => Unit,
+    SetStart: js.Date => Unit,
     SetStatusId: Double => Unit,
     SetSubject: String => Unit,
     appointmentId: String,
@@ -246,7 +245,7 @@ object ASPxClientAppointment {
     
     inline def setGetDuration(value: () => Double): Self = StObject.set(x, "GetDuration", js.Any.fromFunction0(value))
     
-    inline def setGetEnd(value: () => Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => js.Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
     
     inline def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
     
@@ -260,7 +259,7 @@ object ASPxClientAppointment {
     
     inline def setGetResource(value: Double => String): Self = StObject.set(x, "GetResource", js.Any.fromFunction1(value))
     
-    inline def setGetStart(value: () => Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
+    inline def setGetStart(value: () => js.Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
     
     inline def setGetStatusId(value: () => Double): Self = StObject.set(x, "GetStatusId", js.Any.fromFunction0(value))
     
@@ -272,7 +271,7 @@ object ASPxClientAppointment {
     
     inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setSetAllDay(value: Boolean => Unit): Self = StObject.set(x, "SetAllDay", js.Any.fromFunction1(value))
     
@@ -280,9 +279,9 @@ object ASPxClientAppointment {
     
     inline def setSetDescription(value: String => Unit): Self = StObject.set(x, "SetDescription", js.Any.fromFunction1(value))
     
-    inline def setSetDuration(value: js.Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
+    inline def setSetDuration(value: Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
     
-    inline def setSetEnd(value: Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
+    inline def setSetEnd(value: js.Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
     
     inline def setSetId(value: String => Unit): Self = StObject.set(x, "SetId", js.Any.fromFunction1(value))
     
@@ -292,7 +291,7 @@ object ASPxClientAppointment {
     
     inline def setSetRecurrenceInfo(value: ASPxClientRecurrenceInfo => Unit): Self = StObject.set(x, "SetRecurrenceInfo", js.Any.fromFunction1(value))
     
-    inline def setSetStart(value: Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
+    inline def setSetStart(value: js.Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
     
     inline def setSetStatusId(value: Double => Unit): Self = StObject.set(x, "SetStatusId", js.Any.fromFunction1(value))
     

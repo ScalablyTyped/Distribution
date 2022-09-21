@@ -4,11 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.nodeRal.mod.BalanceContextConstructor
 import typings.nodeRal.mod.LoggerFactory
 import typings.nodeRal.mod.Service
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ object mod {
     
     @JSImport("yog-ral", "Balance.BalanceContextClass")
     @js.native
-    class BalanceContextClass protected ()
+    open class BalanceContextClass protected ()
       extends typings.nodeRal.mod.Balance.BalanceContextClass {
       def this(serviceID: String, service: Service) = this()
     }
@@ -63,24 +62,48 @@ object mod {
   val Logger: LoggerFactory = js.native
   
   inline def Middleware(): js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Middleware")().asInstanceOf[js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     Unit
   ]]
   inline def Middleware(options: Service): js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Middleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     Unit
   ]]
@@ -96,9 +119,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def beforeRequest(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeRequest")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def beforeRequest(context: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeRequest")(context.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def normalizeConfig(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def normalizeConfig(context: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(context.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   object RAL {
@@ -112,12 +135,12 @@ object mod {
     
     @JSImport("yog-ral", "RAL.NormalizerManager")
     @js.native
-    class NormalizerManager ()
+    open class NormalizerManager ()
       extends typings.nodeRal.mod.RAL.NormalizerManager
     
     @JSImport("yog-ral", "RAL.RalRunner")
     @js.native
-    class RalRunner protected ()
+    open class RalRunner protected ()
       extends typings.nodeRal.mod.RAL.RalRunner {
       def this(serviceName: String) = this()
       def this(serviceName: String, options: js.Object) = this()

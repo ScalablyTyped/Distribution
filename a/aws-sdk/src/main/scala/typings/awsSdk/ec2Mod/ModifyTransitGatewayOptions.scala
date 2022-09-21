@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyTransitGatewayOptions extends StObject {
   
   /**
+    * Adds IPv4 or IPv6 CIDR blocks for the transit gateway. Must be a size /24 CIDR block or larger for IPv4, or a size /64 CIDR block or larger for IPv6.
+    */
+  var AddTransitGatewayCidrBlocks: js.UndefOr[TransitGatewayCidrBlockStringList] = js.undefined
+  
+  /**
+    * A private Autonomous System Number (ASN) for the Amazon side of a BGP session. The range is 64512 to 65534 for 16-bit ASNs and 4200000000 to 4294967294 for 32-bit ASNs.
+    */
+  var AmazonSideAsn: js.UndefOr[Long] = js.undefined
+  
+  /**
     * The ID of the default association route table.
     */
   var AssociationDefaultRouteTableId: js.UndefOr[TransitGatewayRouteTableId] = js.undefined
@@ -37,6 +47,11 @@ trait ModifyTransitGatewayOptions extends StObject {
   var PropagationDefaultRouteTableId: js.UndefOr[TransitGatewayRouteTableId] = js.undefined
   
   /**
+    * Removes CIDR blocks for the transit gateway.
+    */
+  var RemoveTransitGatewayCidrBlocks: js.UndefOr[TransitGatewayCidrBlockStringList] = js.undefined
+  
+  /**
     * Enable or disable Equal Cost Multipath Protocol support.
     */
   var VpnEcmpSupport: js.UndefOr[VpnEcmpSupportValue] = js.undefined
@@ -49,6 +64,16 @@ object ModifyTransitGatewayOptions {
   }
   
   extension [Self <: ModifyTransitGatewayOptions](x: Self) {
+    
+    inline def setAddTransitGatewayCidrBlocks(value: TransitGatewayCidrBlockStringList): Self = StObject.set(x, "AddTransitGatewayCidrBlocks", value.asInstanceOf[js.Any])
+    
+    inline def setAddTransitGatewayCidrBlocksUndefined: Self = StObject.set(x, "AddTransitGatewayCidrBlocks", js.undefined)
+    
+    inline def setAddTransitGatewayCidrBlocksVarargs(value: String*): Self = StObject.set(x, "AddTransitGatewayCidrBlocks", js.Array(value*))
+    
+    inline def setAmazonSideAsn(value: Long): Self = StObject.set(x, "AmazonSideAsn", value.asInstanceOf[js.Any])
+    
+    inline def setAmazonSideAsnUndefined: Self = StObject.set(x, "AmazonSideAsn", js.undefined)
     
     inline def setAssociationDefaultRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "AssociationDefaultRouteTableId", value.asInstanceOf[js.Any])
     
@@ -73,6 +98,12 @@ object ModifyTransitGatewayOptions {
     inline def setPropagationDefaultRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "PropagationDefaultRouteTableId", value.asInstanceOf[js.Any])
     
     inline def setPropagationDefaultRouteTableIdUndefined: Self = StObject.set(x, "PropagationDefaultRouteTableId", js.undefined)
+    
+    inline def setRemoveTransitGatewayCidrBlocks(value: TransitGatewayCidrBlockStringList): Self = StObject.set(x, "RemoveTransitGatewayCidrBlocks", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveTransitGatewayCidrBlocksUndefined: Self = StObject.set(x, "RemoveTransitGatewayCidrBlocks", js.undefined)
+    
+    inline def setRemoveTransitGatewayCidrBlocksVarargs(value: String*): Self = StObject.set(x, "RemoveTransitGatewayCidrBlocks", js.Array(value*))
     
     inline def setVpnEcmpSupport(value: VpnEcmpSupportValue): Self = StObject.set(x, "VpnEcmpSupport", value.asInstanceOf[js.Any])
     

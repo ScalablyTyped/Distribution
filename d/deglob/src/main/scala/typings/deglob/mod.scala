@@ -1,6 +1,5 @@
 package typings.deglob
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function2[/* err */ Error | Null, /* files */ js.Array[String], Unit]
+  type Callback = js.Function2[/* err */ js.Error | Null, /* files */ js.Array[String], Unit]
   
   trait Options extends StObject {
     
@@ -55,7 +54,7 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setUseGitIgnore(value: Boolean): Self = StObject.set(x, "useGitIgnore", value.asInstanceOf[js.Any])
       

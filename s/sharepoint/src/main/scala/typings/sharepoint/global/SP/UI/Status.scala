@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.UI.Status")
 @js.native
-class Status ()
+open class Status ()
   extends StObject
      with typings.sharepoint.SP.UI.Status
 object Status {

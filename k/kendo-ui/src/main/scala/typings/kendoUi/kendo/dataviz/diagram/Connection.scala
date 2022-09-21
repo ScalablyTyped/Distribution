@@ -10,22 +10,22 @@ trait Connection
   extends StObject
      with Observable {
   
-  def allPoints(): js.Any = js.native
+  def allPoints(): Any = js.native
   
-  var dataItem: js.Any = js.native
+  var dataItem: Any = js.native
   
   var from: Shape = js.native
   
   var options: ConnectionOptions = js.native
   
-  def points(): js.Any = js.native
+  def points(): Any = js.native
   
   def redraw(): Unit = js.native
-  def redraw(options: js.Any): Unit = js.native
+  def redraw(options: Any): Unit = js.native
   
   def select(value: Boolean): Unit = js.native
   
-  def source(): js.Any = js.native
+  def source(): Any = js.native
   def source(source: Connector): Unit = js.native
   def source(source: Point): Unit = js.native
   def source(source: Shape): Unit = js.native
@@ -34,7 +34,7 @@ trait Connection
   
   def sourcePoint(): Point = js.native
   
-  def target(): js.Any = js.native
+  def target(): Any = js.native
   def target(target: Connector): Unit = js.native
   def target(target: Point): Unit = js.native
   def target(target: Shape): Unit = js.native

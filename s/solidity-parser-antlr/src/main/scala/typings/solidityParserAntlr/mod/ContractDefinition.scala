@@ -37,7 +37,7 @@ object ContractDefinition {
     
     inline def setBaseContracts(value: js.Array[InheritanceSpecifier]): Self = StObject.set(x, "baseContracts", value.asInstanceOf[js.Any])
     
-    inline def setBaseContractsVarargs(value: InheritanceSpecifier*): Self = StObject.set(x, "baseContracts", js.Array(value :_*))
+    inline def setBaseContractsVarargs(value: InheritanceSpecifier*): Self = StObject.set(x, "baseContracts", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object ContractDefinition {
     
     inline def setSubNodes(value: js.Array[ASTNode]): Self = StObject.set(x, "subNodes", value.asInstanceOf[js.Any])
     
-    inline def setSubNodesVarargs(value: ASTNode*): Self = StObject.set(x, "subNodes", js.Array(value :_*))
+    inline def setSubNodesVarargs(value: ASTNode*): Self = StObject.set(x, "subNodes", js.Array(value*))
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

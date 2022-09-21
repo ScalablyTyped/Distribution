@@ -11,7 +11,7 @@ trait ThirdPartyPrincipal extends StObject {
   var thirdPartyClaims: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.ThirdPartyPrincipal & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.ThirdPartyPrincipal & TopLevel[Any]
   ] = js.undefined
 }
 object ThirdPartyPrincipal {
@@ -26,7 +26,7 @@ object ThirdPartyPrincipal {
     inline def setThirdPartyClaims(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.ThirdPartyPrincipal & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.ThirdPartyPrincipal & TopLevel[Any]
     ): Self = StObject.set(x, "thirdPartyClaims", value.asInstanceOf[js.Any])
     
     inline def setThirdPartyClaimsUndefined: Self = StObject.set(x, "thirdPartyClaims", js.undefined)

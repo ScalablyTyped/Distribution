@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Q")
 @js.native
-class Q () extends StObject
+open class Q () extends StObject
 object Q {
   
   @JSGlobal("Sdk.Q")

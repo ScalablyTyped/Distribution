@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Show extends StObject {
   
+  /**
+    * The time span after which the submenu is hidden.
+    */
   var hide: js.UndefOr[Double] = js.undefined
   
+  /**
+    * The time span after which the submenu is shown.
+    */
   var show: js.UndefOr[Double] = js.undefined
 }
 object Show {

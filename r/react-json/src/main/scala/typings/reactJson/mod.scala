@@ -9,33 +9,33 @@ object mod {
   
   @JSImport("react-json", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[JsonProperties, js.Object, js.Any]
+  open class ^ ()
+    extends Component[JsonProperties, js.Object, Any]
   
-  type Json = Component[JsonProperties, js.Object, js.Any]
+  type Json = Component[JsonProperties, js.Object, Any]
   
   trait JsonProperties extends StObject {
     
     var onChange: js.UndefOr[OnChangeHandler] = js.undefined
     
-    var value: js.Any
+    var value: Any
   }
   object JsonProperties {
     
-    inline def apply(value: js.Any): JsonProperties = {
+    inline def apply(value: Any): JsonProperties = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonProperties]
     }
     
     extension [Self <: JsonProperties](x: Self) {
       
-      inline def setOnChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  type OnChangeHandler = js.Function1[/* value */ js.Any, Unit]
+  type OnChangeHandler = js.Function1[/* value */ Any, Unit]
 }

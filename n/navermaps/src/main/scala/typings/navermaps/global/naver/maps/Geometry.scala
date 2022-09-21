@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.Geometry")
 @js.native
-class Geometry protected ()
+open class Geometry protected ()
   extends StObject
      with typings.navermaps.naver.maps.Geometry {
-  def this(rawGeometry: js.Any) = this()
+  def this(rawGeometry: Any) = this()
 }

@@ -19,7 +19,7 @@ object parsedDataMod {
     /**
       * The parsed values of the rows.
       */
-    var parsed: js.Array[js.Any]
+    var parsed: js.Array[Any]
     
     /**
       * The raw values of the rows.
@@ -28,7 +28,7 @@ object parsedDataMod {
   }
   object ParsedData {
     
-    inline def apply($cells: js.Array[JQuery[HTMLElement]], parsed: js.Array[js.Any], raw: js.Array[String]): ParsedData = {
+    inline def apply($cells: js.Array[JQuery[HTMLElement]], parsed: js.Array[Any], raw: js.Array[String]): ParsedData = {
       val __obj = js.Dynamic.literal($cells = $cells.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedData]
     }
@@ -37,15 +37,15 @@ object parsedDataMod {
       
       inline def set$cells(value: js.Array[JQuery[HTMLElement]]): Self = StObject.set(x, "$cells", value.asInstanceOf[js.Any])
       
-      inline def set$cellsVarargs(value: JQuery[HTMLElement]*): Self = StObject.set(x, "$cells", js.Array(value :_*))
+      inline def set$cellsVarargs(value: JQuery[HTMLElement]*): Self = StObject.set(x, "$cells", js.Array(value*))
       
-      inline def setParsed(value: js.Array[js.Any]): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+      inline def setParsed(value: js.Array[Any]): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
-      inline def setParsedVarargs(value: js.Any*): Self = StObject.set(x, "parsed", js.Array(value :_*))
+      inline def setParsedVarargs(value: Any*): Self = StObject.set(x, "parsed", js.Array(value*))
       
       inline def setRaw(value: js.Array[String]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      inline def setRawVarargs(value: String*): Self = StObject.set(x, "raw", js.Array(value :_*))
+      inline def setRawVarargs(value: String*): Self = StObject.set(x, "raw", js.Array(value*))
     }
   }
 }

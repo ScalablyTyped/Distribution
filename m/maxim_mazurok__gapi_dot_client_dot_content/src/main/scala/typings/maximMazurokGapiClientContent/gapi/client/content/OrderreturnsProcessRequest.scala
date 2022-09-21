@@ -43,6 +43,6 @@ object OrderreturnsProcessRequest {
     
     inline def setReturnItemsUndefined: Self = StObject.set(x, "returnItems", js.undefined)
     
-    inline def setReturnItemsVarargs(value: OrderreturnsReturnItem*): Self = StObject.set(x, "returnItems", js.Array(value :_*))
+    inline def setReturnItemsVarargs(value: OrderreturnsReturnItem*): Self = StObject.set(x, "returnItems", js.Array(value*))
   }
 }

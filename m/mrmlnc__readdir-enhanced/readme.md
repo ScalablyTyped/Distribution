@@ -10,10 +10,10 @@ fs.readdir with sync, async, and streaming APIs + filtering, recursion, absolute
 | ------------------ | :-------------: |
 | Full name          | @mrmlnc/readdir-enhanced |
 | Keywords           | fs, readdir, stream, event, recursive, deep, filter, absolute |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 293224003 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7318309666666668E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/bigstickcarpet/readdir-enhanced)

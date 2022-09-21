@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Uri
@@ -72,7 +71,7 @@ trait TileUpdater extends StObject {
     * @param startTime The time at which the URI should first be polled for new tile content.
     * @param requestedInterval The frequency with which the URI is polled for new tile content, following the initial update at startTime.
     */
-  def startPeriodicUpdate(tileContent: Uri, startTime: Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
+  def startPeriodicUpdate(tileContent: Uri, startTime: js.Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
   
   /**
     * Begins a series of timed updates that cycle on the tile that the updater is bound to. Update content is retrieved from an array of specified Uniform Resource Identifiers (URIs), the first update happening immediately and subsequent updates occurring at the periodic interval thereafter.
@@ -86,7 +85,7 @@ trait TileUpdater extends StObject {
     * @param startTime The time at which the initial URI should first be polled for new content.
     * @param requestedInterval The frequency with which the URI is polled for new tile content, following the initial update at startTime.
     */
-  def startPeriodicUpdateBatch(tileContents: IIterable[Uri], startTime: Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
+  def startPeriodicUpdateBatch(tileContents: IIterable[Uri], startTime: js.Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
   
   /** Cancels the current series of timed updates for the tile that the updater is bound to. */
   def stopPeriodicUpdate(): Unit = js.native

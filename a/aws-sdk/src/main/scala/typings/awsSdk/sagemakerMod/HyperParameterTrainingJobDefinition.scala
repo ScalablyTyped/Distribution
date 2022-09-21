@@ -29,11 +29,16 @@ trait HyperParameterTrainingJobDefinition extends StObject {
   var EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Isolates the training container. No inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If network isolation is used for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specified VPC, but the training container does not have network access.
+    * Isolates the training container. No inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If network isolation is used for training jobs that are configured to use a VPC, SageMaker downloads and uploads customer data and model artifacts through the specified VPC, but the training container does not have network access.
     */
   var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
   
   var HyperParameterRanges: js.UndefOr[ParameterRanges] = js.undefined
+  
+  /**
+    * The configuration for the hyperparameter tuning resources, including the compute instances and storage volumes, used for training jobs launched by the tuning job. By default, storage volumes hold model artifacts and incremental states. Choose File for TrainingInputMode in the AlgorithmSpecification parameter to additionally store training data in the storage volume (optional).
+    */
+  var HyperParameterTuningResourceConfig: js.UndefOr[typings.awsSdk.sagemakerMod.HyperParameterTuningResourceConfig] = js.undefined
   
   /**
     * An array of Channel objects that specify the input for the training jobs that the tuning job launches.
@@ -46,9 +51,14 @@ trait HyperParameterTrainingJobDefinition extends StObject {
   var OutputDataConfig: typings.awsSdk.sagemakerMod.OutputDataConfig
   
   /**
-    * The resources, including the compute instances and storage volumes, to use for the training jobs that the tuning job launches. Storage volumes store model artifacts and incremental states. Training algorithms might also use storage volumes for scratch space. If you want Amazon SageMaker to use the storage volume to store the training data, choose File as the TrainingInputMode in the algorithm specification. For distributed training algorithms, specify an instance count greater than 1.
+    * The resources, including the compute instances and storage volumes, to use for the training jobs that the tuning job launches. Storage volumes store model artifacts and incremental states. Training algorithms might also use storage volumes for scratch space. If you want SageMaker to use the storage volume to store the training data, choose File as the TrainingInputMode in the algorithm specification. For distributed training algorithms, specify an instance count greater than 1.  If you want to use hyperparameter optimization with instance type flexibility, use HyperParameterTuningResourceConfig instead. 
     */
-  var ResourceConfig: typings.awsSdk.sagemakerMod.ResourceConfig
+  var ResourceConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ResourceConfig] = js.undefined
+  
+  /**
+    * The number of times to retry the job when the job fails due to an InternalServerError.
+    */
+  var RetryStrategy: js.UndefOr[typings.awsSdk.sagemakerMod.RetryStrategy] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role associated with the training jobs that the tuning job launches.
@@ -61,7 +71,7 @@ trait HyperParameterTrainingJobDefinition extends StObject {
   var StaticHyperParameters: js.UndefOr[HyperParameters] = js.undefined
   
   /**
-    * Specifies a limit to how long a model hyperparameter training job can run. It also specifies how long you are willing to wait for a managed spot training job to complete. When the job reaches the a limit, Amazon SageMaker ends the training job. Use this API to cap model training costs.
+    * Specifies a limit to how long a model hyperparameter training job can run. It also specifies how long a managed spot training job has to complete. When the job reaches the time limit, SageMaker ends the training job. Use this API to cap model training costs.
     */
   var StoppingCondition: typings.awsSdk.sagemakerMod.StoppingCondition
   
@@ -77,11 +87,10 @@ object HyperParameterTrainingJobDefinition {
   inline def apply(
     AlgorithmSpecification: HyperParameterAlgorithmSpecification,
     OutputDataConfig: OutputDataConfig,
-    ResourceConfig: ResourceConfig,
     RoleArn: RoleArn,
     StoppingCondition: StoppingCondition
   ): HyperParameterTrainingJobDefinition = {
-    val __obj = js.Dynamic.literal(AlgorithmSpecification = AlgorithmSpecification.asInstanceOf[js.Any], OutputDataConfig = OutputDataConfig.asInstanceOf[js.Any], ResourceConfig = ResourceConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AlgorithmSpecification = AlgorithmSpecification.asInstanceOf[js.Any], OutputDataConfig = OutputDataConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperParameterTrainingJobDefinition]
   }
   
@@ -113,15 +122,25 @@ object HyperParameterTrainingJobDefinition {
     
     inline def setHyperParameterRangesUndefined: Self = StObject.set(x, "HyperParameterRanges", js.undefined)
     
+    inline def setHyperParameterTuningResourceConfig(value: HyperParameterTuningResourceConfig): Self = StObject.set(x, "HyperParameterTuningResourceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setHyperParameterTuningResourceConfigUndefined: Self = StObject.set(x, "HyperParameterTuningResourceConfig", js.undefined)
+    
     inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
     inline def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
     
-    inline def setInputDataConfigVarargs(value: Channel*): Self = StObject.set(x, "InputDataConfig", js.Array(value :_*))
+    inline def setInputDataConfigVarargs(value: Channel*): Self = StObject.set(x, "InputDataConfig", js.Array(value*))
     
     inline def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
     inline def setResourceConfig(value: ResourceConfig): Self = StObject.set(x, "ResourceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setResourceConfigUndefined: Self = StObject.set(x, "ResourceConfig", js.undefined)
+    
+    inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "RetryStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setRetryStrategyUndefined: Self = StObject.set(x, "RetryStrategy", js.undefined)
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

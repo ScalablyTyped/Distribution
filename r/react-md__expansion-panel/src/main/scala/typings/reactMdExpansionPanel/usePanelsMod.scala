@@ -36,7 +36,7 @@ object usePanelsMod {
     var disabled: Boolean
     
     /**
-      * Boolean if the panel is corrently expanded.
+      * Boolean if the panel is currently expanded.
       */
     var expanded: Boolean
     
@@ -157,7 +157,7 @@ object usePanelsMod {
       
       inline def setDefaultExpandedIndexUndefined: Self = StObject.set(x, "defaultExpandedIndex", js.undefined)
       
-      inline def setDefaultExpandedIndexVarargs(value: Double*): Self = StObject.set(x, "defaultExpandedIndex", js.Array(value :_*))
+      inline def setDefaultExpandedIndexVarargs(value: Double*): Self = StObject.set(x, "defaultExpandedIndex", js.Array(value*))
       
       inline def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
       

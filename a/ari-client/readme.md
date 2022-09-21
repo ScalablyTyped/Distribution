@@ -10,10 +10,10 @@ JavaScript client for Asterisk REST Interface.
 | ------------------ | :-------------: |
 | Full name          | ari-client |
 | Keywords           | Asterisk, ARI |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 41876 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7230.666666666667 |
+| # stars            | 208.0 |
 
 ## Links
 - [Homepage](https://github.com/asterisk/node-ari-client)

@@ -50,6 +50,6 @@ object IErrorResult {
     
     inline def setTracebackUndefined: Self = StObject.set(x, "traceback", js.undefined)
     
-    inline def setTracebackVarargs(value: String*): Self = StObject.set(x, "traceback", js.Array(value :_*))
+    inline def setTracebackVarargs(value: String*): Self = StObject.set(x, "traceback", js.Array(value*))
   }
 }

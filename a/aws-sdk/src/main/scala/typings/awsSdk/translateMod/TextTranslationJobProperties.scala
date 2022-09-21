@@ -14,7 +14,7 @@ trait TextTranslationJobProperties extends StObject {
   /**
     * The time at which the translation job ended.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The input configuration properties that were specified when the job was requested.
@@ -42,7 +42,7 @@ trait TextTranslationJobProperties extends StObject {
   var JobStatus: js.UndefOr[typings.awsSdk.translateMod.JobStatus] = js.undefined
   
   /**
-    * An explanation of any errors that may have occured during the translation job.
+    * An explanation of any errors that may have occurred during the translation job.
     */
   var Message: js.UndefOr[UnboundedLengthString] = js.undefined
   
@@ -52,6 +52,16 @@ trait TextTranslationJobProperties extends StObject {
   var OutputDataConfig: js.UndefOr[typings.awsSdk.translateMod.OutputDataConfig] = js.undefined
   
   /**
+    * A list containing the names of the parallel data resources applied to the translation job.
+    */
+  var ParallelDataNames: js.UndefOr[ResourceNameList] = js.undefined
+  
+  /**
+    * Settings that configure the translation output.
+    */
+  var Settings: js.UndefOr[TranslationSettings] = js.undefined
+  
+  /**
     * The language code of the language of the source text. The language must be a language supported by Amazon Translate.
     */
   var SourceLanguageCode: js.UndefOr[LanguageCodeString] = js.undefined
@@ -59,7 +69,7 @@ trait TextTranslationJobProperties extends StObject {
   /**
     * The time at which the translation job was submitted.
     */
-  var SubmittedTime: js.UndefOr[Timestamp] = js.undefined
+  var SubmittedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The language code of the language of the target text. The language must be a language supported by Amazon Translate.
@@ -84,7 +94,7 @@ object TextTranslationJobProperties {
     
     inline def setDataAccessRoleArnUndefined: Self = StObject.set(x, "DataAccessRoleArn", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -116,11 +126,21 @@ object TextTranslationJobProperties {
     
     inline def setOutputDataConfigUndefined: Self = StObject.set(x, "OutputDataConfig", js.undefined)
     
+    inline def setParallelDataNames(value: ResourceNameList): Self = StObject.set(x, "ParallelDataNames", value.asInstanceOf[js.Any])
+    
+    inline def setParallelDataNamesUndefined: Self = StObject.set(x, "ParallelDataNames", js.undefined)
+    
+    inline def setParallelDataNamesVarargs(value: ResourceName*): Self = StObject.set(x, "ParallelDataNames", js.Array(value*))
+    
+    inline def setSettings(value: TranslationSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
+    
     inline def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
     
     inline def setSourceLanguageCodeUndefined: Self = StObject.set(x, "SourceLanguageCode", js.undefined)
     
-    inline def setSubmittedTime(value: Timestamp): Self = StObject.set(x, "SubmittedTime", value.asInstanceOf[js.Any])
+    inline def setSubmittedTime(value: js.Date): Self = StObject.set(x, "SubmittedTime", value.asInstanceOf[js.Any])
     
     inline def setSubmittedTimeUndefined: Self = StObject.set(x, "SubmittedTime", js.undefined)
     
@@ -128,12 +148,12 @@ object TextTranslationJobProperties {
     
     inline def setTargetLanguageCodesUndefined: Self = StObject.set(x, "TargetLanguageCodes", js.undefined)
     
-    inline def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = StObject.set(x, "TargetLanguageCodes", js.Array(value :_*))
+    inline def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = StObject.set(x, "TargetLanguageCodes", js.Array(value*))
     
     inline def setTerminologyNames(value: ResourceNameList): Self = StObject.set(x, "TerminologyNames", value.asInstanceOf[js.Any])
     
     inline def setTerminologyNamesUndefined: Self = StObject.set(x, "TerminologyNames", js.undefined)
     
-    inline def setTerminologyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "TerminologyNames", js.Array(value :_*))
+    inline def setTerminologyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "TerminologyNames", js.Array(value*))
   }
 }

@@ -10,15 +10,12 @@ A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
 | ------------------ | :-------------: |
 | Full name          | jquery.cookie |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 2404688 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 201044.33333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/carhartl/jquery-cookie)
-- [Bugs](https://github.com/carhartl/jquery-cookie/issues)
-- [Repository](https://github.com/carhartl/jquery-cookie)
 - [Npm](https://www.npmjs.com/package/jquery.cookie)
     
 

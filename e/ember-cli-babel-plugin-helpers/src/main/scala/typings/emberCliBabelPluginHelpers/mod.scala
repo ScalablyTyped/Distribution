@@ -48,19 +48,19 @@ object mod {
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value*))
       
       inline def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value*))
     }
   }
   
   type BabelPlugin = String | Name
   
-  type BabelPluginConfig = BabelPlugin | (js.Tuple3[BabelPlugin, js.UndefOr[js.Any], js.UndefOr[js.Any]])
+  type BabelPluginConfig = BabelPlugin | (js.Tuple3[BabelPlugin, js.UndefOr[Any], js.UndefOr[Any]])
   
   trait ConfigurationTarget extends StObject {
     

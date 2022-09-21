@@ -26,7 +26,7 @@ object batchUpdatableMod {
     /* CompleteClass */
     override def isUpdateLocked(): Boolean = js.native
     
-    /* private */ var occurredEvents: js.Any = js.native
+    /* private */ var occurredEvents: Any = js.native
     
     /* CompleteClass */
     override def onUpdateLocked(): Unit = js.native
@@ -40,12 +40,12 @@ object batchUpdatableMod {
     /* CompleteClass */
     override def suspendUpdate(): Unit = js.native
     
-    /* private */ var suspendUpdateCount: js.Any = js.native
+    /* private */ var suspendUpdateCount: Any = js.native
   }
   
   @JSImport("@devexpress/utils/lib/class/batch-updatable", "EmptyBatchUpdatableObject")
   @js.native
-  class EmptyBatchUpdatableObject ()
+  open class EmptyBatchUpdatableObject ()
     extends StObject
        with IBatchUpdatableObject {
     

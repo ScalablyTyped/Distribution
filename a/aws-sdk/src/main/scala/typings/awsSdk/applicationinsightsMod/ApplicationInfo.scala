@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationInfo extends StObject {
   
   /**
+    *  Indicates whether auto-configuration is turned on for this application. 
+    */
+  var AutoConfigEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.AutoConfigEnabled] = js.undefined
+  
+  /**
     *  Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others. 
     */
   var CWEMonitorEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.CWEMonitorEnabled] = js.undefined
+  
+  /**
+    *  The method used by Application Insights to onboard your resources. 
+    */
+  var DiscoveryType: js.UndefOr[typings.awsSdk.applicationinsightsMod.DiscoveryType] = js.undefined
   
   /**
     * The lifecycle of the application. 
@@ -45,9 +55,17 @@ object ApplicationInfo {
   
   extension [Self <: ApplicationInfo](x: Self) {
     
+    inline def setAutoConfigEnabled(value: AutoConfigEnabled): Self = StObject.set(x, "AutoConfigEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAutoConfigEnabledUndefined: Self = StObject.set(x, "AutoConfigEnabled", js.undefined)
+    
     inline def setCWEMonitorEnabled(value: CWEMonitorEnabled): Self = StObject.set(x, "CWEMonitorEnabled", value.asInstanceOf[js.Any])
     
     inline def setCWEMonitorEnabledUndefined: Self = StObject.set(x, "CWEMonitorEnabled", js.undefined)
+    
+    inline def setDiscoveryType(value: DiscoveryType): Self = StObject.set(x, "DiscoveryType", value.asInstanceOf[js.Any])
+    
+    inline def setDiscoveryTypeUndefined: Self = StObject.set(x, "DiscoveryType", js.undefined)
     
     inline def setLifeCycle(value: LifeCycle): Self = StObject.set(x, "LifeCycle", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,7 @@ object ILightGroup {
     
     inline def setLightsUndefined: Self = StObject.set(x, "lights", js.undefined)
     
-    inline def setLightsVarargs(value: String*): Self = StObject.set(x, "lights", js.Array(value :_*))
+    inline def setLightsVarargs(value: String*): Self = StObject.set(x, "lights", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -9,10 +9,10 @@ JavaScript implementation of Double-Array trie
 | ------------------ | :-------------: |
 | Full name          | doublearray |
 | Keywords           | trie |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 440597 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 118016.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/takuyaa/doublearray)

@@ -26,7 +26,7 @@ trait XPropertyState
     * @throws UnknownPropertyException if the property does not exist.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getPropertyDefault(aPropertyName: String): js.Any
+  def getPropertyDefault(aPropertyName: String): Any
   
   /**
     * @param PropertyName specifies the name of the property.
@@ -56,10 +56,10 @@ object XPropertyState {
   
   inline def apply(
     acquire: () => Unit,
-    getPropertyDefault: String => js.Any,
+    getPropertyDefault: String => Any,
     getPropertyState: String => PropertyState,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPropertyToDefault: String => Unit
   ): XPropertyState = {
@@ -69,7 +69,7 @@ object XPropertyState {
   
   extension [Self <: XPropertyState](x: Self) {
     
-    inline def setGetPropertyDefault(value: String => js.Any): Self = StObject.set(x, "getPropertyDefault", js.Any.fromFunction1(value))
+    inline def setGetPropertyDefault(value: String => Any): Self = StObject.set(x, "getPropertyDefault", js.Any.fromFunction1(value))
     
     inline def setGetPropertyState(value: String => PropertyState): Self = StObject.set(x, "getPropertyState", js.Any.fromFunction1(value))
     

@@ -14,7 +14,7 @@ object dialogflowMod {
   @JSImport("actions-on-google/dist/service/dialogflow", "ContextValues")
   @js.native
   /** @hidden */
-  class ContextValues[TContexts /* <: Contexts */] ()
+  open class ContextValues[TContexts /* <: Contexts */] ()
     extends typings.actionsOnGoogle.contextMod.ContextValues[TContexts] {
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context]) = this()
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context], _session: String) = this()
@@ -24,7 +24,7 @@ object dialogflowMod {
   @JSImport("actions-on-google/dist/service/dialogflow", "DialogflowConversation")
   @js.native
   /** @public */
-  class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts */] ()
+  open class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts */] ()
     extends typings.actionsOnGoogle.dialogflowConvMod.DialogflowConversation[TConvData, TUserStorage, TContexts] {
     def this(options: DialogflowConversationOptions[TConvData, TUserStorage]) = this()
   }

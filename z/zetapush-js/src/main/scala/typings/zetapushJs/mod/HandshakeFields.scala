@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HandshakeFields extends StObject {
   
-  var ext: js.Any
+  var ext: Any
 }
 object HandshakeFields {
   
-  inline def apply(ext: js.Any): HandshakeFields = {
+  inline def apply(ext: Any): HandshakeFields = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandshakeFields]
   }
   
   extension [Self <: HandshakeFields](x: Self) {
     
-    inline def setExt(value: js.Any): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: Any): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
   }
 }

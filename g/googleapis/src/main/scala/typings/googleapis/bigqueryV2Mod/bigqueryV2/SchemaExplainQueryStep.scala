@@ -9,12 +9,12 @@ trait SchemaExplainQueryStep extends StObject {
   /**
     * Machine-readable operation type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Human-readable stage descriptions.
     */
-  var substeps: js.UndefOr[js.Array[String]] = js.undefined
+  var substeps: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaExplainQueryStep {
   
@@ -27,12 +27,16 @@ object SchemaExplainQueryStep {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setSubsteps(value: js.Array[String]): Self = StObject.set(x, "substeps", value.asInstanceOf[js.Any])
     
+    inline def setSubstepsNull: Self = StObject.set(x, "substeps", null)
+    
     inline def setSubstepsUndefined: Self = StObject.set(x, "substeps", js.undefined)
     
-    inline def setSubstepsVarargs(value: String*): Self = StObject.set(x, "substeps", js.Array(value :_*))
+    inline def setSubstepsVarargs(value: String*): Self = StObject.set(x, "substeps", js.Array(value*))
   }
 }

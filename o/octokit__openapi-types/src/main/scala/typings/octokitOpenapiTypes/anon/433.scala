@@ -1,0 +1,26 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait `433` extends StObject {
+  
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[Pushprotectionbypassedat]
+}
+object `433` {
+  
+  inline def apply(applicationSlashjson: js.Array[Pushprotectionbypassedat]): `433` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`433`]
+  }
+  
+  extension [Self <: `433`](x: Self) {
+    
+    inline def setApplicationSlashjson(value: js.Array[Pushprotectionbypassedat]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationSlashjsonVarargs(value: Pushprotectionbypassedat*): Self = StObject.set(x, "application/json", js.Array(value*))
+  }
+}

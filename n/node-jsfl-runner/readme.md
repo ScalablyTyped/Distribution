@@ -10,10 +10,10 @@ JSFL task runner for node.js
 | ------------------ | :-------------: |
 | Full name          | node-jsfl-runner |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 888 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 82.33333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/node-jsfl-runner)

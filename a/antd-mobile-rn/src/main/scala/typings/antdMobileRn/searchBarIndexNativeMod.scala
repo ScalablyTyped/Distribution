@@ -18,7 +18,7 @@ object searchBarIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/search-bar/index.native", JSImport.Default)
   @js.native
-  class default protected () extends SearchBar {
+  open class default protected () extends SearchBar {
     def this(props: SearchBarNativeProps) = this()
   }
   /* static members */
@@ -40,8 +40,7 @@ object searchBarIndexNativeMod {
   }
   
   @js.native
-  trait SearchBar
-    extends Component[SearchBarNativeProps, SearchBarState, js.Any] {
+  trait SearchBar extends Component[SearchBarNativeProps, SearchBarState, Any] {
     
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MSearchBar(nextProps: SearchBarNativeProps): Unit = js.native

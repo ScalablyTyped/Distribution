@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object circleMod {
   
-  @JSImport("konva/types/shapes/Circle", "Circle")
+  @JSImport("konva/lib/shapes/Circle", "Circle")
   @js.native
-  class Circle () extends Shape[CircleConfig] {
+  open class Circle () extends Shape[CircleConfig] {
     def this(config: CircleConfig) = this()
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def getHeight(): Double = js.native
     
@@ -25,27 +25,29 @@ object circleMod {
     @JSName("radius")
     var radius_Original: GetSet[Double, this.type] = js.native
     
-    def setHeight(height: js.Any): Unit = js.native
+    def setHeight(height: Any): Unit = js.native
     
-    def setWidth(width: js.Any): Unit = js.native
+    def setWidth(width: Any): Unit = js.native
   }
   
   trait CircleConfig
     extends StObject
        with ShapeConfig {
     
-    var radius: Double
+    var radius: js.UndefOr[Double] = js.undefined
   }
   object CircleConfig {
     
-    inline def apply(radius: Double): CircleConfig = {
-      val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any])
+    inline def apply(): CircleConfig = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CircleConfig]
     }
     
     extension [Self <: CircleConfig](x: Self) {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     }
   }
 }

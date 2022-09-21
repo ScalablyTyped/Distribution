@@ -10,15 +10,12 @@ Phone number validation rule for Joi
 | ------------------ | :-------------: |
 | Full name          | joi-phone-number |
 | Keywords           | joi, extention, phone number, rule |
-| # releases         | 12 |
-| # dependents       | 6 |
-| # downloads        | 423896 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 97333.66666666667 |
+| # stars            | 69.0 |
 
 ## Links
-- [Homepage](https://github.com/Salesflare/joi-phone-number)
-- [Bugs](https://github.com/Salesflare/joi-phone-number/issues)
-- [Repository](https://github.com/Salesflare/joi-phone-number)
 - [Npm](https://www.npmjs.com/package/joi-phone-number)
     
 

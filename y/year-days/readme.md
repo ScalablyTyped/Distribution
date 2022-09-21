@@ -1,7 +1,7 @@
 
 # Scala.js typings for year-days
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Get the number of days in a year
@@ -10,10 +10,10 @@ Get the number of days in a year
 | ------------------ | :-------------: |
 | Full name          | year-days |
 | Keywords           | year, days, date, number, count |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 510 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/year-days#readme)

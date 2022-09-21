@@ -6,12 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "FlowPanelModel")
 @js.native
-class FlowPanelModel () extends PanelModel {
+open class FlowPanelModel () extends PanelModel {
   def this(name: String) = this()
   
-  var content: String = js.native
+  def content: String = js.native
   
-  def contentChangedCallback(): Unit = js.native
+  var contentChangedCallback: Any = js.native
+  
+  def content_=(`val`: String): Unit = js.native
   
   def getElementContentText(element: IElement): String = js.native
   
@@ -21,13 +23,14 @@ class FlowPanelModel () extends PanelModel {
   
   /* protected */ def getQuestionHtmlId(question: Question): String = js.native
   
-  var html: String = js.native
+  def html: String = js.native
+  def html_=(`val`: String): Unit = js.native
   
-  val locContent: LocalizableString = js.native
+  def locContent: LocalizableString = js.native
   
-  /* protected */ def onContentChanged(): js.Any = js.native
+  /* protected */ def onContentChanged(): Any = js.native
   
-  def onCustomHtmlProducing(): String = js.native
+  var onCustomHtmlProducing: Any = js.native
   
   def onGetHtmlForQuestion(question: Question): String = js.native
   

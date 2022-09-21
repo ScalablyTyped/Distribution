@@ -10,7 +10,7 @@ object fillMod {
   
   @JSImport("@ant-design/icons-react-native/lib/fill", JSImport.Default)
   @js.native
-  class default () extends IconFill
+  open class default () extends IconFill
   
   object fillGlyphMap {
     
@@ -1445,7 +1445,7 @@ object fillMod {
   
   @js.native
   trait IconFill
-    extends PureComponent[IconFillProps, js.Object, js.Any]
+    extends PureComponent[IconFillProps, js.Object, Any]
   
   trait IconFillProps
     extends StObject

@@ -19,10 +19,10 @@ trait GetAssetPropertyAggregatesRequest extends StObject {
   /**
     * The inclusive end of the range from which to query historical data, expressed in seconds in Unix epoch time.
     */
-  var endDate: Timestamp
+  var endDate: js.Date
   
   /**
-    * The maximum number of results to be returned per paginated request. Default: 100
+    * The maximum number of results to return for each paginated request. Default: 100
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   
@@ -32,7 +32,7 @@ trait GetAssetPropertyAggregatesRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The property alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the AWS IoT SiteWise User Guide.
+    * The alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the IoT SiteWise User Guide.
     */
   var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.undefined
   
@@ -54,7 +54,7 @@ trait GetAssetPropertyAggregatesRequest extends StObject {
   /**
     * The exclusive start of the range from which to query historical data, expressed in seconds in Unix epoch time.
     */
-  var startDate: Timestamp
+  var startDate: js.Date
   
   /**
     * The chronological sorting order of the requested information. Default: ASCENDING 
@@ -63,7 +63,7 @@ trait GetAssetPropertyAggregatesRequest extends StObject {
 }
 object GetAssetPropertyAggregatesRequest {
   
-  inline def apply(aggregateTypes: AggregateTypes, endDate: Timestamp, resolution: Resolution, startDate: Timestamp): GetAssetPropertyAggregatesRequest = {
+  inline def apply(aggregateTypes: AggregateTypes, endDate: js.Date, resolution: Resolution, startDate: js.Date): GetAssetPropertyAggregatesRequest = {
     val __obj = js.Dynamic.literal(aggregateTypes = aggregateTypes.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssetPropertyAggregatesRequest]
   }
@@ -72,13 +72,13 @@ object GetAssetPropertyAggregatesRequest {
     
     inline def setAggregateTypes(value: AggregateTypes): Self = StObject.set(x, "aggregateTypes", value.asInstanceOf[js.Any])
     
-    inline def setAggregateTypesVarargs(value: AggregateType*): Self = StObject.set(x, "aggregateTypes", js.Array(value :_*))
+    inline def setAggregateTypesVarargs(value: AggregateType*): Self = StObject.set(x, "aggregateTypes", js.Array(value*))
     
     inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     inline def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
-    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -100,11 +100,11 @@ object GetAssetPropertyAggregatesRequest {
     
     inline def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
     
-    inline def setQualitiesVarargs(value: Quality*): Self = StObject.set(x, "qualities", js.Array(value :_*))
+    inline def setQualitiesVarargs(value: Quality*): Self = StObject.set(x, "qualities", js.Array(value*))
     
     inline def setResolution(value: Resolution): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     inline def setTimeOrdering(value: TimeOrdering): Self = StObject.set(x, "timeOrdering", value.asInstanceOf[js.Any])
     

@@ -8,21 +8,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cellMeasurerMod {
   
-  @JSImport("react-virtualized/dist/commonjs/CellMeasurer", "CellMeasurer")
+  @JSImport("react-virtualized/dist/commonjs/CellMeasurer", JSImport.Default)
   @js.native
-  class CellMeasurer protected ()
+  open class default protected ()
     extends typings.reactVirtualized.esCellMeasurerMod.CellMeasurer {
     def this(props: CellMeasurerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CellMeasurerProps, context: js.Any) = this()
+    def this(props: CellMeasurerProps, context: Any) = this()
+  }
+  
+  @JSImport("react-virtualized/dist/commonjs/CellMeasurer", "CellMeasurer")
+  @js.native
+  open class CellMeasurer protected ()
+    extends typings.reactVirtualized.esCellMeasurerMod.CellMeasurer {
+    def this(props: CellMeasurerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CellMeasurerProps, context: Any) = this()
   }
   
   @JSImport("react-virtualized/dist/commonjs/CellMeasurer", "CellMeasurerCache")
   @js.native
-  class CellMeasurerCache ()
+  open class CellMeasurerCache ()
     extends typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCache {
     def this(params: CellMeasurerCacheParams) = this()
   }

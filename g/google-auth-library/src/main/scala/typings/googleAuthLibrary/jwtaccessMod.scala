@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleAuthLibrary.credentialsMod.JWTInput
 import typings.googleAuthLibrary.oauth2clientMod.Headers
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object jwtaccessMod {
   
   @JSImport("google-auth-library/build/src/auth/jwtaccess", "JWTAccess")
   @js.native
-  class JWTAccess protected () extends StObject {
+  open class JWTAccess protected () extends StObject {
     /**
       * JWTAccess service account credentials.
       *
@@ -31,7 +30,7 @@ object jwtaccessMod {
       eagerRefreshThresholdMillis: js.UndefOr[Double]
     ) = this()
     
-    /* private */ var cache: js.Any = js.native
+    /* private */ var cache: Any = js.native
     
     var eagerRefreshThresholdMillis: Double = js.native
     
@@ -49,9 +48,23 @@ object jwtaccessMod {
       * @param callback Optional callback.
       */
     def fromStream(inputStream: Readable): js.Promise[Unit] = js.native
-    def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    /* private */ var fromStreamAsync: js.Any = js.native
+    /* private */ var fromStreamAsync: Any = js.native
+    
+    /**
+      * Ensures that we're caching a key appropriately, giving precedence to scopes vs. url
+      *
+      * @param url The URI being authorized.
+      * @param scopes The scope or scopes being authorized
+      * @returns A string that returns the cached key.
+      */
+    def getCachedKey(): String = js.native
+    def getCachedKey(url: String): String = js.native
+    def getCachedKey(url: String, scopes: String): String = js.native
+    def getCachedKey(url: String, scopes: js.Array[String]): String = js.native
+    def getCachedKey(url: Unit, scopes: String): String = js.native
+    def getCachedKey(url: Unit, scopes: js.Array[String]): String = js.native
     
     /**
       * Get a non-expired access token, after refreshing if necessary.
@@ -61,8 +74,18 @@ object jwtaccessMod {
       * include in the payload.
       * @returns An object that includes the authorization header.
       */
+    def getRequestHeaders(): Headers = js.native
     def getRequestHeaders(url: String): Headers = js.native
+    def getRequestHeaders(url: String, additionalClaims: Unit, scopes: String): Headers = js.native
+    def getRequestHeaders(url: String, additionalClaims: Unit, scopes: js.Array[String]): Headers = js.native
     def getRequestHeaders(url: String, additionalClaims: Claims): Headers = js.native
+    def getRequestHeaders(url: String, additionalClaims: Claims, scopes: String): Headers = js.native
+    def getRequestHeaders(url: String, additionalClaims: Claims, scopes: js.Array[String]): Headers = js.native
+    def getRequestHeaders(url: Unit, additionalClaims: Unit, scopes: String): Headers = js.native
+    def getRequestHeaders(url: Unit, additionalClaims: Unit, scopes: js.Array[String]): Headers = js.native
+    def getRequestHeaders(url: Unit, additionalClaims: Claims): Headers = js.native
+    def getRequestHeaders(url: Unit, additionalClaims: Claims, scopes: String): Headers = js.native
+    def getRequestHeaders(url: Unit, additionalClaims: Claims, scopes: js.Array[String]): Headers = js.native
     
     var key: js.UndefOr[String | Null] = js.native
     
@@ -85,8 +108,8 @@ object jwtaccessMod {
       */
     @JSImport("google-auth-library/build/src/auth/jwtaccess", "JWTAccess.getExpirationTime")
     @js.native
-    def getExpirationTime: js.Any = js.native
-    inline def getExpirationTime_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
+    def getExpirationTime: Any = js.native
+    inline def getExpirationTime_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
   }
   
   type Claims = StringDictionary[String]

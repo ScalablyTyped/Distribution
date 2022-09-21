@@ -27,7 +27,7 @@ object XRemoteContentProviderDoneListener {
   inline def apply(
     acquire: () => Unit,
     doneWithRemoteContentProviders: XRemoteContentProviderAcceptor => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XRemoteContentProviderDoneListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), doneWithRemoteContentProviders = js.Any.fromFunction1(doneWithRemoteContentProviders), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

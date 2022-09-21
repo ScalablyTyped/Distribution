@@ -9,7 +9,7 @@ object polygonBuilderMod {
   
   @JSImport("ol/render/canvas/PolygonBuilder", JSImport.Default)
   @js.native
-  class default protected () extends CanvasPolygonBuilder {
+  open class default protected () extends CanvasPolygonBuilder {
     def this(tolerance: Double, maxExtent: Extent, resolution: Double, pixelRatio: Double) = this()
   }
   

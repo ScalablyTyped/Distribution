@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("@ionic/discover", "CommServer")
   @js.native
-  class CommServer protected ()
+  open class CommServer protected ()
     extends typings.ionicDiscover.commMod.CommServer {
     def this(
       namespace: String,
@@ -29,7 +29,7 @@ object mod {
   
   @JSImport("@ionic/discover", "Publisher")
   @js.native
-  class Publisher protected ()
+  open class Publisher protected ()
     extends typings.ionicDiscover.publisherMod.Publisher {
     def this(namespace: String, name: String, port: Double) = this()
     def this(namespace: String, name: String, port: Double, commPort: Double) = this()

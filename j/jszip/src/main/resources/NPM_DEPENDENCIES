@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jszip" : "3.5.0"
+      "jszip" : "3.10.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jszip" : "3.5.0"
+      "jszip" : "3.10.1"
     }
   ],
   "compile-devDependencies" : [

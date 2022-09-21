@@ -11,7 +11,7 @@ trait TextContent extends StObject {
   var lists: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.List}
-    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.TextContent & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.TextContent & TopLevel[Any]
   ] = js.undefined
   
   /** The text contents broken down into its component parts, including styling information. This property is read-only. */
@@ -29,7 +29,7 @@ object TextContent {
     inline def setLists(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.List}
-      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.TextContent & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.TextContent & TopLevel[Any]
     ): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
@@ -38,6 +38,6 @@ object TextContent {
     
     inline def setTextElementsUndefined: Self = StObject.set(x, "textElements", js.undefined)
     
-    inline def setTextElementsVarargs(value: TextElement*): Self = StObject.set(x, "textElements", js.Array(value :_*))
+    inline def setTextElementsVarargs(value: TextElement*): Self = StObject.set(x, "textElements", js.Array(value*))
   }
 }

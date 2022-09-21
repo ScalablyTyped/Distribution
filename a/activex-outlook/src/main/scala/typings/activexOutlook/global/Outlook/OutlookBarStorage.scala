@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OutlookBarStorage")
 @js.native
-/* private */ class OutlookBarStorage ()
+/* private */ open class OutlookBarStorage ()
   extends StObject
      with typings.activexOutlook.Outlook.OutlookBarStorage {
   
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotOutlookBarStorage_typekey: typings.activexOutlook.Outlook.OutlookBarStorage = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

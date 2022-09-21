@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.WorkflowTemplate")
 @js.native
-/* private */ class WorkflowTemplate ()
+/* private */ open class WorkflowTemplate ()
   extends StObject
      with typings.activexOffice.Office.WorkflowTemplate {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native

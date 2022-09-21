@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Gilbrat")
 @js.native
-class Gilbrat ()
+open class Gilbrat ()
   extends typings.ranjs.mod.dist.Gilbrat

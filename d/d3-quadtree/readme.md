@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-quadtree
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Two-dimensional recursive spatial subdivision.
@@ -11,9 +11,9 @@ Two-dimensional recursive spatial subdivision.
 | Full name          | d3-quadtree |
 | Keywords           | d3, d3-module, quadtree |
 | # releases         | 5 |
-| # dependents       | 32 |
-| # downloads        | 48544356 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8280816.333333333 |
+| # stars            | 192.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-quadtree/)

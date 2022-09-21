@@ -27,12 +27,12 @@ object Groups {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: DataGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: DataGroup*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setItems(value: DataItemCollectionType): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: DataItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DataItem*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

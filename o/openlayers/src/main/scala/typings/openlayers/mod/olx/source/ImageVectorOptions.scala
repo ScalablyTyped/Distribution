@@ -43,7 +43,7 @@ object ImageVectorOptions {
     
     inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
     
     inline def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object ImageVectorOptions {
     
     inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
     
-    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
     
     inline def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
@@ -77,6 +77,6 @@ object ImageVectorOptions {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
   }
 }

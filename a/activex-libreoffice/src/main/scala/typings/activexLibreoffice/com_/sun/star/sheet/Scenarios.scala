@@ -26,14 +26,14 @@ object Scenarios {
     acquire: () => Unit,
     addNewByName: (String, SeqEquiv[CellRangeAddress], String) => Unit,
     createEnumeration: () => XEnumeration,
-    getByIndex: Double => js.Any,
-    getByName: String => js.Any,
+    getByIndex: Double => Any,
+    getByName: String => Any,
     getCount: () => Double,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByName: String => Unit
   ): Scenarios = {

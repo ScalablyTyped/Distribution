@@ -70,7 +70,7 @@ object XLibraryContainerPassword {
     changeLibraryPassword: (String, String, String) => Unit,
     isLibraryPasswordProtected: String => Boolean,
     isLibraryPasswordVerified: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     verifyLibraryPassword: (String, String) => Boolean
   ): XLibraryContainerPassword = {

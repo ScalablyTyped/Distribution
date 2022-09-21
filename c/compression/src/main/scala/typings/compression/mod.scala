@@ -4,8 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,8 +20,32 @@ object mod {
     *
     * @see {@link https://github.com/expressjs/compression#compressionoptions|`compression([options]) documentation`}
     */
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(options: CompressionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(options: CompressionOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("compression", JSImport.Namespace)
   @js.native
@@ -51,14 +74,29 @@ object mod {
     *
     * @see {@link https://github.com/expressjs/compression#filter-1|`.filter` documentation}
     */
-  inline def filter(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def filter(
+    req: Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
+    res: Response_[Any, Record[String, Any]]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * A function to decide if the response should be considered for compression.
     */
   type CompressionFilter = js.Function2[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
     Boolean
   ]
   
@@ -71,11 +109,11 @@ object mod {
        with /**
     * In addition , `zlib` options may be passed in to the options object.
     */
-  /* property */ StringDictionary[js.Any] {
+  /* property */ StringDictionary[Any] {
     
     /**
       * @default zlib.constants.Z_DEFAULT_CHUNK or 16384
-      * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning| Node.js documentation}
+      * @see {@link https://nodejs.org/api/zlib.html#zlib_memory_usage_tuning| Node.js documentation}
       * @see {@link https://github.com/expressjs/compression#chunksize|chunkSize documentation}
       */
     var chunkSize: js.UndefOr[Double] = js.undefined
@@ -125,7 +163,7 @@ object mod {
       * the range of `1` (minimum level) and `9` (maximum level).
       *
       * @default zlib.constants.DEFAULT_MEMLEVEL or 8
-      * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning|Node.js documentation}
+      * @see {@link https://nodejs.org/api/zlib.html#zlib_memory_usage_tuning|Node.js documentation}
       * @see {@link https://github.com/expressjs/compression#memlevel|`memLevel` documentation}
       */
     var memLevel: js.UndefOr[Double] = js.undefined
@@ -163,7 +201,7 @@ object mod {
     
     /**
       * @default zlib.constants.Z_DEFAULT_WINDOWBITS or 15.
-      * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning|Node.js documentation}
+      * @see {@link https://nodejs.org/api/zlib.html#zlib_memory_usage_tuning|Node.js documentation}
       */
     var windowBits: js.UndefOr[Double] = js.undefined
   }
@@ -181,7 +219,13 @@ object mod {
       inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
       inline def setFilter(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => Boolean
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)

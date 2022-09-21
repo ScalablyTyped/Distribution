@@ -12,7 +12,7 @@ object vueMod {
   
   @JSImport("ionic/lib/project/vue", "VueProject")
   @js.native
-  class VueProject protected () extends Project {
+  open class VueProject protected () extends Project {
     def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
     
     @JSName("type")

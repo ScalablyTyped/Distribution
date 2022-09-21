@@ -12,12 +12,12 @@ trait DeletePermissionRequest extends StObject {
   var CertificateAuthorityArn: Arn
   
   /**
-    * The AWS service or identity that will have its CA permissions revoked. At this time, the only valid service principal is acm.amazonaws.com 
+    * The Amazon Web Services service or identity that will have its CA permissions revoked. At this time, the only valid service principal is acm.amazonaws.com 
     */
   var Principal: typings.awsSdk.acmpcaMod.Principal
   
   /**
-    * The AWS account that calls this action.
+    * The Amazon Web Services account that calls this action.
     */
   var SourceAccount: js.UndefOr[AccountId] = js.undefined
 }

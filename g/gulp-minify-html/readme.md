@@ -10,10 +10,10 @@ Minify html with minimize.
 | ------------------ | :-------------: |
 | Full name          | gulp-minify-html |
 | Keywords           | gulpplugin, minify, optimize, optimise, compress, html, minimize |
-| # releases         | 0 |
-| # dependents       | 121 |
-| # downloads        | 1044776 |
-| # stars            | 96 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 76892.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/gulp-minify-html)

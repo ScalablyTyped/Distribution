@@ -15,7 +15,7 @@ trait Gradient
   
   def removeStop(stop: GradientStop): Unit
   
-  var stops: js.Any
+  var stops: Any
 }
 object Gradient {
   
@@ -23,7 +23,7 @@ object Gradient {
     addStop: (Double, String, Double) => GradientStop,
     options: GradientOptions,
     removeStop: GradientStop => Unit,
-    stops: js.Any
+    stops: Any
   ): Gradient = {
     val __obj = js.Dynamic.literal(addStop = js.Any.fromFunction3(addStop), options = options.asInstanceOf[js.Any], removeStop = js.Any.fromFunction1(removeStop), stops = stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gradient]
@@ -37,6 +37,6 @@ object Gradient {
     
     inline def setRemoveStop(value: GradientStop => Unit): Self = StObject.set(x, "removeStop", js.Any.fromFunction1(value))
     
-    inline def setStops(value: js.Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
   }
 }

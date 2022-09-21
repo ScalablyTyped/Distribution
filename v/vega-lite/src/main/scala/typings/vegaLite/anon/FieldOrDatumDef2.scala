@@ -4,6 +4,7 @@ import typings.vegaLite.binMod.BinParams
 import typings.vegaLite.channeldefMod.SecondaryFieldDef
 import typings.vegaLite.channeldefMod.TypedFieldDef
 import typings.vegaLite.vegaLiteStrings.binned
+import typings.vegaLite.vegaSchemaMod.VgValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FieldOrDatumDef2 extends StObject {
   
-  var band: Double
+  var bandPosition: Double | SignalRef
   
-  var fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
+  var fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
   
   var fieldOrDatumDef2: js.UndefOr[SecondaryFieldDef[String]] = js.undefined
   
-  var offset: Double | SignalRef
+  var offset: Double | SignalRef | VgValueRef
   
   var scaleName: String
   
@@ -26,26 +27,26 @@ trait FieldOrDatumDef2 extends StObject {
 object FieldOrDatumDef2 {
   
   inline def apply(
-    band: Double,
-    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
-    offset: Double | SignalRef,
+    bandPosition: Double | SignalRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null],
+    offset: Double | SignalRef | VgValueRef,
     scaleName: String
   ): FieldOrDatumDef2 = {
-    val __obj = js.Dynamic.literal(band = band.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], scaleName = scaleName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bandPosition = bandPosition.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], scaleName = scaleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldOrDatumDef2]
   }
   
   extension [Self <: FieldOrDatumDef2](x: Self) {
     
-    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBandPosition(value: Double | SignalRef): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     
-    inline def setFieldOrDatumDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
+    inline def setFieldOrDatumDef(value: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
     
     inline def setFieldOrDatumDef2(value: SecondaryFieldDef[String]): Self = StObject.set(x, "fieldOrDatumDef2", value.asInstanceOf[js.Any])
     
     inline def setFieldOrDatumDef2Undefined: Self = StObject.set(x, "fieldOrDatumDef2", js.undefined)
     
-    inline def setOffset(value: Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | SignalRef | VgValueRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setScaleName(value: String): Self = StObject.set(x, "scaleName", value.asInstanceOf[js.Any])
     

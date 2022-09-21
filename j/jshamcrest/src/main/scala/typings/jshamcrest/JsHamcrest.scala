@@ -8,18 +8,18 @@ object JsHamcrest {
   
   trait BetweenBuilder extends StObject {
     
-    def and(end: js.Any): SimpleMatcher
+    def and(end: Any): SimpleMatcher
   }
   object BetweenBuilder {
     
-    inline def apply(and: js.Any => SimpleMatcher): BetweenBuilder = {
+    inline def apply(and: Any => SimpleMatcher): BetweenBuilder = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and))
       __obj.asInstanceOf[BetweenBuilder]
     }
     
     extension [Self <: BetweenBuilder](x: Self) {
       
-      inline def setAnd(value: js.Any => SimpleMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Any => SimpleMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     }
   }
   
@@ -33,7 +33,7 @@ object JsHamcrest {
       * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
       * @return {CombinableMatcher} Instance of JsHamcrest.CombinableMatcher
       */
-    def and(matcherOrValue: js.Any): CombinableMatcher
+    def and(matcherOrValue: Any): CombinableMatcher
     
     /**
       * Wraps this matcher and the given matcher using JsHamcrest.Matchers.anyOf().
@@ -41,16 +41,16 @@ object JsHamcrest {
       * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
       * @return {CombinableMatcher} Instance of JsHamcrest.CombinableMatcher
       */
-    def or(matcherOrValue: js.Any): CombinableMatcher
+    def or(matcherOrValue: Any): CombinableMatcher
   }
   object CombinableMatcher {
     
     inline def apply(
-      and: js.Any => CombinableMatcher,
+      and: Any => CombinableMatcher,
       describeTo: /* description */ Description => Unit,
-      describeValueTo: (/* value */ js.Any, /* description */ Description) => Unit,
-      matches: /* value */ js.Any => Boolean,
-      or: js.Any => CombinableMatcher
+      describeValueTo: (/* value */ Any, /* description */ Description) => Unit,
+      matches: /* value */ Any => Boolean,
+      or: Any => CombinableMatcher
     ): CombinableMatcher = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), describeTo = js.Any.fromFunction1(describeTo), describeValueTo = js.Any.fromFunction2(describeValueTo), matches = js.Any.fromFunction1(matches), or = js.Any.fromFunction1(or))
       __obj.asInstanceOf[CombinableMatcher]
@@ -58,9 +58,9 @@ object JsHamcrest {
     
     extension [Self <: CombinableMatcher](x: Self) {
       
-      inline def setAnd(value: js.Any => CombinableMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Any => CombinableMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
-      inline def setOr(value: js.Any => CombinableMatcher): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+      inline def setOr(value: Any => CombinableMatcher): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
     }
   }
   
@@ -75,7 +75,7 @@ object JsHamcrest {
   /**
     * Defines the method for describing a value to a description.
     */
-  type DescribeValueTo = js.Function2[/* value */ js.Any, /* description */ Description, Unit]
+  type DescribeValueTo = js.Function2[/* value */ Any, /* description */ Description, Unit]
   
   trait Description extends StObject {
     
@@ -85,7 +85,7 @@ object JsHamcrest {
       * @param text Text to append to this description
       * @return {Description} Itself for method chaining
       */
-    def append(text: js.Any): Description
+    def append(text: Any): Description
     
     /**
       * Appends the description of a self describing object to this description.
@@ -104,7 +104,7 @@ object JsHamcrest {
       * @param list Array of self describing objects. These objects must have a describeTo() function that accepts a JsHamcrest.Description object as argument
       * @return {Description} Itself for method chaining
       */
-    def appendList(start: String, separator: String, end: String, list: js.Array[js.Any]): Description
+    def appendList(start: String, separator: String, end: String, list: js.Array[Any]): Description
     
     /**
       * Appends a JavaScript language’s literal to this description.
@@ -112,7 +112,7 @@ object JsHamcrest {
       * @param literal Literal to append to this description
       * @return {Description} Itself for method chaining
       */
-    def appendLiteral(literal: js.Any): Description
+    def appendLiteral(literal: Any): Description
     
     /**
       * Appends an array of values to this description.
@@ -135,10 +135,10 @@ object JsHamcrest {
   object Description {
     
     inline def apply(
-      append: js.Any => Description,
+      append: Any => Description,
       appendDescriptionOf: SelfDescribing => Description,
-      appendList: (String, String, String, js.Array[js.Any]) => Description,
-      appendLiteral: js.Any => Description,
+      appendList: (String, String, String, js.Array[Any]) => Description,
+      appendLiteral: Any => Description,
       appendValueList: (String, String, String, js.Array[SelfDescribing]) => Description,
       get: () => String
     ): Description = {
@@ -148,13 +148,13 @@ object JsHamcrest {
     
     extension [Self <: Description](x: Self) {
       
-      inline def setAppend(value: js.Any => Description): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+      inline def setAppend(value: Any => Description): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       
       inline def setAppendDescriptionOf(value: SelfDescribing => Description): Self = StObject.set(x, "appendDescriptionOf", js.Any.fromFunction1(value))
       
-      inline def setAppendList(value: (String, String, String, js.Array[js.Any]) => Description): Self = StObject.set(x, "appendList", js.Any.fromFunction4(value))
+      inline def setAppendList(value: (String, String, String, js.Array[Any]) => Description): Self = StObject.set(x, "appendList", js.Any.fromFunction4(value))
       
-      inline def setAppendLiteral(value: js.Any => Description): Self = StObject.set(x, "appendLiteral", js.Any.fromFunction1(value))
+      inline def setAppendLiteral(value: Any => Description): Self = StObject.set(x, "appendLiteral", js.Any.fromFunction1(value))
       
       inline def setAppendValueList(value: (String, String, String, js.Array[SelfDescribing]) => Description): Self = StObject.set(x, "appendValueList", js.Any.fromFunction4(value))
       
@@ -166,11 +166,11 @@ object JsHamcrest {
     extends StObject
        with SelfDescribing {
     
-    def describeValueTo(value: js.Any, description: Description): Unit
+    def describeValueTo(value: Any, description: Description): Unit
     @JSName("describeValueTo")
     var describeValueTo_Original: DescribeValueTo
     
-    def matches(value: js.Any): Boolean
+    def matches(value: Any): Boolean
     @JSName("matches")
     var matches_Original: Matches
   }
@@ -178,8 +178,8 @@ object JsHamcrest {
     
     inline def apply(
       describeTo: /* description */ Description => Unit,
-      describeValueTo: (/* value */ js.Any, /* description */ Description) => Unit,
-      matches: /* value */ js.Any => Boolean
+      describeValueTo: (/* value */ Any, /* description */ Description) => Unit,
+      matches: /* value */ Any => Boolean
     ): Matcher = {
       val __obj = js.Dynamic.literal(describeTo = js.Any.fromFunction1(describeTo), describeValueTo = js.Any.fromFunction2(describeValueTo), matches = js.Any.fromFunction1(matches))
       __obj.asInstanceOf[Matcher]
@@ -187,9 +187,9 @@ object JsHamcrest {
     
     extension [Self <: Matcher](x: Self) {
       
-      inline def setDescribeValueTo(value: (/* value */ js.Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
+      inline def setDescribeValueTo(value: (/* value */ Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
       
-      inline def setMatches(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+      inline def setMatches(value: /* value */ Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     }
   }
   
@@ -204,13 +204,13 @@ object JsHamcrest {
     
     var describeValueTo: js.UndefOr[DescribeValueTo] = js.undefined
     
-    def matches(value: js.Any): Boolean
+    def matches(value: Any): Boolean
     @JSName("matches")
     var matches_Original: Matches
   }
   object MatcherConfig {
     
-    inline def apply(describeTo: /* description */ Description => Unit, matches: /* value */ js.Any => Boolean): MatcherConfig = {
+    inline def apply(describeTo: /* description */ Description => Unit, matches: /* value */ Any => Boolean): MatcherConfig = {
       val __obj = js.Dynamic.literal(describeTo = js.Any.fromFunction1(describeTo), matches = js.Any.fromFunction1(matches))
       __obj.asInstanceOf[MatcherConfig]
     }
@@ -219,11 +219,11 @@ object JsHamcrest {
       
       inline def setDescribeTo(value: /* description */ Description => Unit): Self = StObject.set(x, "describeTo", js.Any.fromFunction1(value))
       
-      inline def setDescribeValueTo(value: (/* value */ js.Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
+      inline def setDescribeValueTo(value: (/* value */ Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
       
       inline def setDescribeValueToUndefined: Self = StObject.set(x, "describeValueTo", js.undefined)
       
-      inline def setMatches(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+      inline def setMatches(value: /* value */ Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     }
   }
   
@@ -233,7 +233,7 @@ object JsHamcrest {
   /**
     * Defines the method for testing the matcher against an actual value.
     */
-  type Matches = js.Function1[/* value */ js.Any, Boolean]
+  type Matches = js.Function1[/* value */ Any, Boolean]
   
   /**
     * Provides the assertion, filtering, and currying methods.
@@ -247,7 +247,7 @@ object JsHamcrest {
       
       var fail: js.UndefOr[js.Function1[/* description */ String, Unit]] = js.undefined
       
-      var message: js.UndefOr[js.Any] = js.undefined
+      var message: js.UndefOr[Any] = js.undefined
       
       var pass: js.UndefOr[js.Function1[/* description */ String, Unit]] = js.undefined
     }
@@ -264,7 +264,7 @@ object JsHamcrest {
         
         inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
         
-        inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
         inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         
@@ -301,8 +301,8 @@ object JsHamcrest {
     
     inline def apply(
       describeTo: /* description */ Description => Unit,
-      describeValueTo: (/* value */ js.Any, /* description */ Description) => Unit,
-      matches: /* value */ js.Any => Boolean
+      describeValueTo: (/* value */ Any, /* description */ Description) => Unit,
+      matches: /* value */ Any => Boolean
     ): SimpleMatcher = {
       val __obj = js.Dynamic.literal(describeTo = js.Any.fromFunction1(describeTo), describeValueTo = js.Any.fromFunction2(describeValueTo), matches = js.Any.fromFunction1(matches))
       __obj.asInstanceOf[SimpleMatcher]

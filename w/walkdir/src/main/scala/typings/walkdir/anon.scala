@@ -35,7 +35,7 @@ object anon {
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
@@ -92,7 +92,7 @@ object anon {
       
       inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
@@ -149,7 +149,7 @@ object anon {
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
@@ -206,7 +206,7 @@ object anon {
       
       inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
@@ -261,7 +261,7 @@ object anon {
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
@@ -318,7 +318,7 @@ object anon {
       
       inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
@@ -373,7 +373,7 @@ object anon {
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
@@ -430,7 +430,7 @@ object anon {
       
       inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
@@ -485,7 +485,7 @@ object anon {
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
@@ -542,7 +542,7 @@ object anon {
       
       inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
@@ -595,7 +595,7 @@ object anon {
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
@@ -652,7 +652,7 @@ object anon {
       
       inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       

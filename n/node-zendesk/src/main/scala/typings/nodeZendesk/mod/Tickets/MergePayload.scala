@@ -24,7 +24,7 @@ object MergePayload {
     
     inline def setIds(value: js.Array[ZendeskID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    inline def setIdsVarargs(value: ZendeskID*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: ZendeskID*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setSource_comment(value: String): Self = StObject.set(x, "source_comment", value.asInstanceOf[js.Any])
     

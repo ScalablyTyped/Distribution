@@ -29,7 +29,7 @@ object ListGeoMatchSetsResponse {
     
     inline def setGeoMatchSetsUndefined: Self = StObject.set(x, "GeoMatchSets", js.undefined)
     
-    inline def setGeoMatchSetsVarargs(value: GeoMatchSetSummary*): Self = StObject.set(x, "GeoMatchSets", js.Array(value :_*))
+    inline def setGeoMatchSetsVarargs(value: GeoMatchSetSummary*): Self = StObject.set(x, "GeoMatchSets", js.Array(value*))
     
     inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

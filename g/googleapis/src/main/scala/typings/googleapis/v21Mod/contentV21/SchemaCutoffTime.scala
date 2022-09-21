@@ -7,23 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaCutoffTime extends StObject {
   
   /**
-    * Hour of the cutoff time until which an order has to be placed to be
-    * processed in the same day. Required.
+    * Hour of the cutoff time until which an order has to be placed to be processed in the same day. Required.
     */
-  var hour: js.UndefOr[Double] = js.undefined
+  var hour: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Minute of the cutoff time until which an order has to be placed to be
-    * processed in the same day. Required.
+    * Minute of the cutoff time until which an order has to be placed to be processed in the same day. Required.
     */
-  var minute: js.UndefOr[Double] = js.undefined
+  var minute: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Timezone identifier for the cutoff time. A list of identifiers can be
-    * found in  the AdWords API documentation. E.g. &quot;Europe/Zurich&quot;.
-    * Required.
+    * Timezone identifier for the cutoff time (for example, "Europe/Zurich"). List of identifiers. Required.
     */
-  var timezone: js.UndefOr[String] = js.undefined
+  var timezone: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCutoffTime {
   
@@ -36,13 +32,19 @@ object SchemaCutoffTime {
     
     inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
+    inline def setHourNull: Self = StObject.set(x, "hour", null)
+    
     inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
     inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
+    inline def setMinuteNull: Self = StObject.set(x, "minute", null)
+    
     inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
     inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneNull: Self = StObject.set(x, "timezone", null)
     
     inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }

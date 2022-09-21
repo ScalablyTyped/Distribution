@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DateTimeFormatPart extends StObject {
   
+  /* standard es2017.intl */
   var `type`: DateTimeFormatPartTypes
   
+  /* standard es2017.intl */
   var value: String
 }
 object DateTimeFormatPart {

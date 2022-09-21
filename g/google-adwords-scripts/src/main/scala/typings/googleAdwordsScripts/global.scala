@@ -71,13 +71,13 @@ object global {
     inline def report(query: String): AdWordsReport = ^.asInstanceOf[js.Dynamic].applyDynamic("report")(query.asInstanceOf[js.Any]).asInstanceOf[AdWordsReport]
     inline def report(query: String, options: ReportOptionArguments): AdWordsReport = (^.asInstanceOf[js.Dynamic].applyDynamic("report")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AdWordsReport]
     
-    inline def shoppingAdGroupTargeting(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shoppingAdGroupTargeting")().asInstanceOf[js.Any]
+    inline def shoppingAdGroupTargeting(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shoppingAdGroupTargeting")().asInstanceOf[Any]
     
     // TODO: AccountShoppingAdGroupTargeting
     inline def shoppingAdGroups(): AdWordsSelector[AdWordsEntity] = ^.asInstanceOf[js.Dynamic].applyDynamic("shoppingAdGroups")().asInstanceOf[AdWordsSelector[AdWordsEntity]]
     
     // TODO: ShoppingAdGroup
-    inline def shoppingCampaignTargeting(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shoppingCampaignTargeting")().asInstanceOf[js.Any]
+    inline def shoppingCampaignTargeting(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shoppingCampaignTargeting")().asInstanceOf[Any]
     
     // TODO: AccountShoppingCampaignTargeting
     inline def shoppingCampaigns(): AdWordsSelector[AdWordsEntity] = ^.asInstanceOf[js.Dynamic].applyDynamic("shoppingCampaigns")().asInstanceOf[AdWordsSelector[AdWordsEntity]]
@@ -96,7 +96,7 @@ object global {
     inline def videoCampaigns(): AdWordsSelector[AdWordsEntity] = ^.asInstanceOf[js.Dynamic].applyDynamic("videoCampaigns")().asInstanceOf[AdWordsSelector[AdWordsEntity]]
     
     // TODO: VideoCampaign
-    inline def videoTargeting(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("videoTargeting")().asInstanceOf[js.Any]
+    inline def videoTargeting(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("videoTargeting")().asInstanceOf[Any]
   }
   
   object MccApp {

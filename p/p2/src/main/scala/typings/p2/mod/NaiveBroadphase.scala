@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "NaiveBroadphase")
 @js.native
-class NaiveBroadphase protected () extends Broadphase {
-  def this(`type`: Double) = this()
+open class NaiveBroadphase protected () extends Broadphase {
+  def this(`type`: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Broadphase.NAIVE */ Any) = this()
 }

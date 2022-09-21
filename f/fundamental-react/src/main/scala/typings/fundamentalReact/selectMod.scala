@@ -7,9 +7,9 @@ import typings.fundamentalReact.fundamentalReactStrings.Select
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
+import typings.std.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLLIElement
@@ -24,8 +24,8 @@ object selectMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Select/Select.SelectProps> & {  displayName :'Select'} */
   object default {
     
-    inline def apply(props: PropsWithChildren[SelectProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[SelectProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: SelectProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: SelectProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/Select/Select", JSImport.Default)
     @js.native
@@ -33,8 +33,8 @@ object selectMod {
     
     @JSImport("fundamental-react/lib/Select/Select", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Select/Select", "default.defaultProps")
     @js.native
@@ -85,7 +85,7 @@ object selectMod {
     
     var emptyAriaLabel: js.UndefOr[String] = js.undefined
     
-    var formMessageProps: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var formMessageProps: js.UndefOr[Record[String, Any]] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -99,7 +99,7 @@ object selectMod {
     
     var listItemTextClassName: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
+    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLDivElement, Element], Unit]] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
@@ -131,7 +131,7 @@ object selectMod {
     
     var validationState: js.UndefOr[State] = js.undefined
     
-    var wrapperProps: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var wrapperProps: js.UndefOr[Record[String, Any]] = js.undefined
   }
   object SelectProps {
     
@@ -162,7 +162,7 @@ object selectMod {
       
       inline def setEmptyAriaLabelUndefined: Self = StObject.set(x, "emptyAriaLabel", js.undefined)
       
-      inline def setFormMessageProps(value: Record[String, js.Any]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
+      inline def setFormMessageProps(value: Record[String, Any]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
       
       inline def setFormMessagePropsUndefined: Self = StObject.set(x, "formMessageProps", js.undefined)
       
@@ -190,7 +190,7 @@ object selectMod {
       
       inline def setListItemTextClassNameUndefined: Self = StObject.set(x, "listItemTextClassName", js.undefined)
       
-      inline def setOnBlur(value: /* event */ FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* event */ FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -208,7 +208,7 @@ object selectMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -242,7 +242,7 @@ object selectMod {
       
       inline def setValidationStateUndefined: Self = StObject.set(x, "validationState", js.undefined)
       
-      inline def setWrapperProps(value: Record[String, js.Any]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
+      inline def setWrapperProps(value: Record[String, Any]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
       
       inline def setWrapperPropsUndefined: Self = StObject.set(x, "wrapperProps", js.undefined)
     }

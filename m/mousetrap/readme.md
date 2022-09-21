@@ -1,7 +1,7 @@
 
 # Scala.js typings for mousetrap
 
-Typings are for version 1.6.x
+Typings are for version 1.6
 
 ## Library description:
 Simple library for handling keyboard shortcuts
@@ -10,10 +10,10 @@ Simple library for handling keyboard shortcuts
 | ------------------ | :-------------: |
 | Full name          | mousetrap |
 | Keywords           | keyboard, shortcuts, events |
-| # releases         | 4 |
-| # dependents       | 350 |
-| # downloads        | 12365112 |
-| # stars            | 36 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1949012.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/ccampbell/mousetrap#readme)

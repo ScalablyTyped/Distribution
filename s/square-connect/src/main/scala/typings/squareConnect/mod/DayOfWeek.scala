@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "DayOfWeek")
 @js.native
-class DayOfWeek () extends StObject
+open class DayOfWeek () extends StObject

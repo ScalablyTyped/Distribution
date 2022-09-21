@@ -10,10 +10,8 @@ import typings.natUpnp.anon.Service
 import typings.natUpnp.anon._empty
 import typings.natUpnp.anon.`0`
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import typings.std.Partial
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +58,7 @@ object mod {
     inline def getNamespace(data: _empty, uri: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamespace")(data.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  type CB[T] = js.Function2[/* err */ Error | Null, /* res */ js.UndefOr[T], Unit]
+  type CB[T] = js.Function2[/* err */ js.Error | Null, /* res */ js.UndefOr[T], Unit]
   
   @js.native
   trait Client extends StObject {
@@ -117,7 +115,7 @@ object mod {
     
     /**
       * Get the available services on the network device
-      * @param types List of service types to lookf or
+      * @param types List of service types to look for
       * @param callback
       */
     def getService(types: js.Array[String], callback: CB[ControlURL]): Unit
@@ -133,17 +131,17 @@ object mod {
     /**
       * Perform a SSDP/UPNP request
       * @param action the action to perform
-      * @param args arguments of said action
+      * @param args key-value pair arguments of said action
       * @param callback Callback to be run when completed, or on error
       */
-    def run(action: String, args: js.Array[String], callback: CB[RawResponse]): Unit
+    def run(action: String, args: js.Array[js.Tuple2[String, String | Double]], callback: CB[RawResponse]): Unit
   }
   object Device_ {
     
     inline def apply(
       getService: (js.Array[String], CB[ControlURL]) => Unit,
       parseDescription: `0` => Devices,
-      run: (String, js.Array[String], CB[RawResponse]) => Unit
+      run: (String, js.Array[js.Tuple2[String, String | Double]], CB[RawResponse]) => Unit
     ): Device_ = {
       val __obj = js.Dynamic.literal(getService = js.Any.fromFunction2(getService), parseDescription = js.Any.fromFunction1(parseDescription), run = js.Any.fromFunction3(run))
       __obj.asInstanceOf[Device_]
@@ -155,13 +153,13 @@ object mod {
       
       inline def setParseDescription(value: `0` => Devices): Self = StObject.set(x, "parseDescription", js.Any.fromFunction1(value))
       
-      inline def setRun(value: (String, js.Array[String], CB[RawResponse]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+      inline def setRun(value: (String, js.Array[js.Tuple2[String, String | Double]], CB[RawResponse]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     }
   }
   
   trait GetMappingOpts extends StObject {
     
-    var description: js.UndefOr[RegExp | String] = js.undefined
+    var description: js.UndefOr[js.RegExp | String] = js.undefined
     
     var local: js.UndefOr[Boolean] = js.undefined
   }
@@ -174,7 +172,7 @@ object mod {
     
     extension [Self <: GetMappingOpts](x: Self) {
       
-      inline def setDescription(value: RegExp | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: js.RegExp | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       

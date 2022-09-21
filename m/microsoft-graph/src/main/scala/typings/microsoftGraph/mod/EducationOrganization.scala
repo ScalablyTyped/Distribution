@@ -14,8 +14,11 @@ trait EducationOrganization
   // Organization display name.
   var displayName: js.UndefOr[String] = js.undefined
   
-  // Source where this organization was created from. The possible values are: sis, manual, unknownFutureValue.
+  // Source where this organization was created from. Possible values are: sis, manual.
   var externalSource: js.UndefOr[NullableOption[EducationExternalSource]] = js.undefined
+  
+  // The name of the external source this resources was generated from.
+  var externalSourceDetail: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object EducationOrganization {
   
@@ -37,6 +40,12 @@ object EducationOrganization {
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setExternalSource(value: NullableOption[EducationExternalSource]): Self = StObject.set(x, "externalSource", value.asInstanceOf[js.Any])
+    
+    inline def setExternalSourceDetail(value: NullableOption[String]): Self = StObject.set(x, "externalSourceDetail", value.asInstanceOf[js.Any])
+    
+    inline def setExternalSourceDetailNull: Self = StObject.set(x, "externalSourceDetail", null)
+    
+    inline def setExternalSourceDetailUndefined: Self = StObject.set(x, "externalSourceDetail", js.undefined)
     
     inline def setExternalSourceNull: Self = StObject.set(x, "externalSource", null)
     

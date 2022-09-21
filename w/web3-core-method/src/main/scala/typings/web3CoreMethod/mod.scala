@@ -8,7 +8,7 @@ object mod {
   
   trait Method extends StObject {
     
-    var abiCoder: js.UndefOr[js.Any] = js.undefined
+    var abiCoder: js.UndefOr[Any] = js.undefined
     
     var call: String
     
@@ -16,7 +16,7 @@ object mod {
     
     var defaultBlock: js.UndefOr[String] = js.undefined
     
-    var extraFormatters: js.UndefOr[js.Any] = js.undefined
+    var extraFormatters: js.UndefOr[Any] = js.undefined
     
     var handleRevert: js.UndefOr[Boolean] = js.undefined
     
@@ -39,7 +39,7 @@ object mod {
     
     extension [Self <: Method](x: Self) {
       
-      inline def setAbiCoder(value: js.Any): Self = StObject.set(x, "abiCoder", value.asInstanceOf[js.Any])
+      inline def setAbiCoder(value: Any): Self = StObject.set(x, "abiCoder", value.asInstanceOf[js.Any])
       
       inline def setAbiCoderUndefined: Self = StObject.set(x, "abiCoder", js.undefined)
       
@@ -55,7 +55,7 @@ object mod {
       
       inline def setDefaultBlockUndefined: Self = StObject.set(x, "defaultBlock", js.undefined)
       
-      inline def setExtraFormatters(value: js.Any): Self = StObject.set(x, "extraFormatters", value.asInstanceOf[js.Any])
+      inline def setExtraFormatters(value: Any): Self = StObject.set(x, "extraFormatters", value.asInstanceOf[js.Any])
       
       inline def setExtraFormattersUndefined: Self = StObject.set(x, "extraFormatters", js.undefined)
       
@@ -67,7 +67,7 @@ object mod {
       
       inline def setInputFormatterUndefined: Self = StObject.set(x, "inputFormatter", js.undefined)
       
-      inline def setInputFormatterVarargs(value: (js.Function0[Unit] | Null)*): Self = StObject.set(x, "inputFormatter", js.Array(value :_*))
+      inline def setInputFormatterVarargs(value: (js.Function0[Unit] | Null)*): Self = StObject.set(x, "inputFormatter", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

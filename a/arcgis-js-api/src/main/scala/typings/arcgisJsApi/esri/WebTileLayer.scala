@@ -41,6 +41,8 @@ trait WebTileLayer
   /**
     * The spatial reference of the layer.
     *
+    * @default Web Mercator Auxiliary Sphere (wkid: 3857)
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html#spatialReference)
     */
   val spatialReference: SpatialReference = js.native

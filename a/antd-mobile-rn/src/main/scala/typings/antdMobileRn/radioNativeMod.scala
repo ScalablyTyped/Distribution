@@ -14,8 +14,8 @@ object radioNativeMod {
   
   @JSImport("antd-mobile-rn/lib/radio/Radio.native", JSImport.Default)
   @js.native
-  class default protected () extends Radio {
-    def this(props: RadioNativeProps, context: js.Any) = this()
+  open class default protected () extends Radio {
+    def this(props: RadioNativeProps, context: Any) = this()
   }
   /* static members */
   object default {
@@ -26,8 +26,8 @@ object radioNativeMod {
     
     @JSImport("antd-mobile-rn/lib/radio/Radio.native", "default.RadioItem")
     @js.native
-    def RadioItem: js.Any = js.native
-    inline def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
+    def RadioItem: Any = js.native
+    inline def RadioItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/radio/Radio.native", "default.defaultProps")
     @js.native
@@ -36,8 +36,7 @@ object radioNativeMod {
   }
   
   @js.native
-  trait Radio
-    extends Component[RadioNativeProps, js.Any, js.Any] {
+  trait Radio extends Component[RadioNativeProps, Any, Any] {
     
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MRadio(nextProps: RadioNativeProps): Unit = js.native

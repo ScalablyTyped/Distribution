@@ -27,7 +27,7 @@ trait Source extends StObject {
   var fileHashes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.FileHashes}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source & TopLevel[Any]
   ] = js.undefined
 }
 object Source {
@@ -43,7 +43,7 @@ object Source {
     
     inline def setAdditionalContextsUndefined: Self = StObject.set(x, "additionalContexts", js.undefined)
     
-    inline def setAdditionalContextsVarargs(value: SourceContext*): Self = StObject.set(x, "additionalContexts", js.Array(value :_*))
+    inline def setAdditionalContextsVarargs(value: SourceContext*): Self = StObject.set(x, "additionalContexts", js.Array(value*))
     
     inline def setArtifactStorageSourceUri(value: String): Self = StObject.set(x, "artifactStorageSourceUri", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object Source {
     inline def setFileHashes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.FileHashes}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source & TopLevel[Any]
     ): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
     inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)

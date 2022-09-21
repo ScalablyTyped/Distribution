@@ -25,7 +25,7 @@ object Classes {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

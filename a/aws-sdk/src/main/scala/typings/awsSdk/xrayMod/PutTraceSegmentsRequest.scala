@@ -22,6 +22,6 @@ object PutTraceSegmentsRequest {
     
     inline def setTraceSegmentDocuments(value: TraceSegmentDocumentList): Self = StObject.set(x, "TraceSegmentDocuments", value.asInstanceOf[js.Any])
     
-    inline def setTraceSegmentDocumentsVarargs(value: TraceSegmentDocument*): Self = StObject.set(x, "TraceSegmentDocuments", js.Array(value :_*))
+    inline def setTraceSegmentDocumentsVarargs(value: TraceSegmentDocument*): Self = StObject.set(x, "TraceSegmentDocuments", js.Array(value*))
   }
 }

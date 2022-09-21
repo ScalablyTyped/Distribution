@@ -10,10 +10,10 @@ object transformMod {
   
   @JSImport("material-ui/svg-icons/image/transform", JSImport.Default)
   @js.native
-  class default () extends ImageTransform
+  open class default () extends ImageTransform
   
   @JSImport("material-ui/svg-icons/image/transform", "ImageTransform")
   @js.native
-  class ImageTransform ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageTransform ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,13 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ChartValueAxisItem extends StObject {
   
-  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.undefined
+  var axisCrossingValue: js.UndefOr[Any | js.Date] = js.undefined
   
   var background: js.UndefOr[String] = js.undefined
   
@@ -62,7 +61,7 @@ object ChartValueAxisItem {
   
   extension [Self <: ChartValueAxisItem](x: Self) {
     
-    inline def setAxisCrossingValue(value: js.Any | Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
+    inline def setAxisCrossingValue(value: Any | js.Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
     
     inline def setAxisCrossingValueUndefined: Self = StObject.set(x, "axisCrossingValue", js.undefined)
     
@@ -138,7 +137,7 @@ object ChartValueAxisItem {
     
     inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
     
-    inline def setPlotBandsVarargs(value: ChartValueAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value :_*))
+    inline def setPlotBandsVarargs(value: ChartValueAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value*))
     
     inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     

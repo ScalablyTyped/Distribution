@@ -13,7 +13,7 @@ object notifyUserAgentServerMod {
   
   @JSImport("sip.js/lib/core/user-agents/notify-user-agent-server", "NotifyUserAgentServer")
   @js.native
-  class NotifyUserAgentServer protected () extends UserAgentServer {
+  open class NotifyUserAgentServer protected () extends UserAgentServer {
     /**
       * NOTIFY UAS constructor.
       * @param dialogOrCore - Dialog for in dialog NOTIFY, UserAgentCore for out of dialog NOTIFY (deprecated).

@@ -10,7 +10,7 @@ object gitLabCIYMLTemplatesMod {
   
   @JSImport("gitlab/dist/types/core/services/GitLabCIYMLTemplates", "GitLabCIYMLTemplates")
   @js.native
-  class GitLabCIYMLTemplates protected () extends ResourceTemplates {
+  open class GitLabCIYMLTemplates protected () extends ResourceTemplates {
     def this(options: BaseServiceOptions) = this()
   }
 }

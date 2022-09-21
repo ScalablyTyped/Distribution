@@ -263,7 +263,7 @@ object mod {
         
         inline def setBlackholesUndefined: Self = StObject.set(x, "blackholes", js.undefined)
         
-        inline def setBlackholesVarargs(value: String*): Self = StObject.set(x, "blackholes", js.Array(value :_*))
+        inline def setBlackholesVarargs(value: String*): Self = StObject.set(x, "blackholes", js.Array(value*))
         
         inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         

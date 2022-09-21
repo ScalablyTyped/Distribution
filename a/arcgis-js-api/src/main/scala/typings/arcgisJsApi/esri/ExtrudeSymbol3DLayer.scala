@@ -15,6 +15,8 @@ trait ExtrudeSymbol3DLayer
   /**
     * Indicates whether the symbol layer geometry casts shadows in the scene.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#castShadows)
     */
   var castShadows: Boolean = js.native
@@ -35,6 +37,8 @@ trait ExtrudeSymbol3DLayer
   
   /**
     * The height of the extrusion in meters.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#size)
     */

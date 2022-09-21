@@ -9,7 +9,7 @@ trait GetInsightImpactGraphRequest extends StObject {
   /**
     * The estimated end time of the insight, in Unix time seconds. The EndTime is exclusive of the value provided. The time range between the start time and end time can't be more than six hours. 
     */
-  var EndTime: Timestamp
+  var EndTime: js.Date
   
   /**
     * The insight's unique identifier. Use the GetInsightSummaries action to retrieve an InsightId.
@@ -24,18 +24,18 @@ trait GetInsightImpactGraphRequest extends StObject {
   /**
     * The estimated start time of the insight, in Unix time seconds. The StartTime is inclusive of the value provided and can't be more than 30 days old.
     */
-  var StartTime: Timestamp
+  var StartTime: js.Date
 }
 object GetInsightImpactGraphRequest {
   
-  inline def apply(EndTime: Timestamp, InsightId: InsightId, StartTime: Timestamp): GetInsightImpactGraphRequest = {
+  inline def apply(EndTime: js.Date, InsightId: InsightId, StartTime: js.Date): GetInsightImpactGraphRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], InsightId = InsightId.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightImpactGraphRequest]
   }
   
   extension [Self <: GetInsightImpactGraphRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setInsightId(value: InsightId): Self = StObject.set(x, "InsightId", value.asInstanceOf[js.Any])
     
@@ -43,6 +43,6 @@ object GetInsightImpactGraphRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

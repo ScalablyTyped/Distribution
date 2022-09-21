@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "Actions")
 @js.native
-class Actions protected ()
+open class Actions protected ()
   extends typings.seleniumWebdriver.inputMod.Actions {
   // region Constructors
   def this(executor: Executor) = this()

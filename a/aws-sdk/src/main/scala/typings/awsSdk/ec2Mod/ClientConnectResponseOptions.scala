@@ -12,7 +12,7 @@ trait ClientConnectResponseOptions extends StObject {
   var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Lambda function used for connection authorization.
+    * The Amazon Resource Name (ARN) of the Lambda function used for connection authorization.
     */
   var LambdaFunctionArn: js.UndefOr[String] = js.undefined
   

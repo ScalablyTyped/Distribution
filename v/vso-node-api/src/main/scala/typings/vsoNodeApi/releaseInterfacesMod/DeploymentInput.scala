@@ -11,7 +11,7 @@ trait DeploymentInput
   
   var artifactsDownloadInput: ArtifactsDownloadInput
   
-  var demands: js.Array[js.Any]
+  var demands: js.Array[Any]
   
   var enableAccessToken: Boolean
   
@@ -24,7 +24,7 @@ object DeploymentInput {
   inline def apply(
     artifactsDownloadInput: ArtifactsDownloadInput,
     condition: String,
-    demands: js.Array[js.Any],
+    demands: js.Array[Any],
     enableAccessToken: Boolean,
     jobCancelTimeoutInMinutes: Double,
     overrideInputs: StringDictionary[String],
@@ -40,9 +40,9 @@ object DeploymentInput {
     
     inline def setArtifactsDownloadInput(value: ArtifactsDownloadInput): Self = StObject.set(x, "artifactsDownloadInput", value.asInstanceOf[js.Any])
     
-    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: Any*): Self = StObject.set(x, "demands", js.Array(value*))
     
     inline def setEnableAccessToken(value: Boolean): Self = StObject.set(x, "enableAccessToken", value.asInstanceOf[js.Any])
     

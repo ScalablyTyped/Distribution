@@ -7,7 +7,6 @@ import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.OutgoingMessage
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -143,7 +142,7 @@ object mod {
     def is(types: String*): String | `false` = js.native
     def is(types: js.Array[String]): String | `false` = js.native
     
-    var response: OutgoingMessage = js.native
+    var response: OutgoingMessage[IncomingMessage] = js.native
     
     def toJSON(): ResponseJSON = js.native
   }
@@ -156,13 +155,13 @@ object mod {
     
     def attachment(filename: String): Unit = js.native
     
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     var etag: String = js.native
     
     var headerSent: Boolean = js.native
     
-    var lastModified: String | Date = js.native
+    var lastModified: String | js.Date = js.native
     
     var length: Double = js.native
     

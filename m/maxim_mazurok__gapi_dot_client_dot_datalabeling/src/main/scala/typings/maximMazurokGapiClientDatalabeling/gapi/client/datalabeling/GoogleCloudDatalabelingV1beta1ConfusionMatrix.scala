@@ -21,6 +21,6 @@ object GoogleCloudDatalabelingV1beta1ConfusionMatrix {
     
     inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    inline def setRowVarargs(value: GoogleCloudDatalabelingV1beta1Row*): Self = StObject.set(x, "row", js.Array(value :_*))
+    inline def setRowVarargs(value: GoogleCloudDatalabelingV1beta1Row*): Self = StObject.set(x, "row", js.Array(value*))
   }
 }

@@ -22,6 +22,6 @@ object GoogleCloudVisionV1p1beta1AsyncBatchAnnotateFilesResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: GoogleCloudVisionV1p1beta1AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: GoogleCloudVisionV1p1beta1AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value*))
   }
 }

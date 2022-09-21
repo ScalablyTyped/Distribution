@@ -8,5 +8,5 @@ object serviceStatisticsMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_ServiceStatistics", "_ServiceStatistics")
   @js.native
-  val ServiceStatistics: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ServiceStatistics: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

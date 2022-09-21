@@ -5,14 +5,13 @@ import typings.nodeHueApi.anon.Checkforupdate
 import typings.nodeHueApi.anon.Communication
 import typings.nodeHueApi.anon.Createdate
 import typings.nodeHueApi.anon.Errorcode
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IBridgeConfig extends StObject {
   
-  var UTC: Date
+  var UTC: js.Date
   
   var apiversion: String
   
@@ -30,7 +29,7 @@ trait IBridgeConfig extends StObject {
   
   var linkbutton: Boolean
   
-  var localtime: Date
+  var localtime: js.Date
   
   var mac: String
   
@@ -65,7 +64,7 @@ trait IBridgeConfig extends StObject {
 object IBridgeConfig {
   
   inline def apply(
-    UTC: Date,
+    UTC: js.Date,
     apiversion: String,
     backup: Errorcode,
     bridgeid: String,
@@ -74,7 +73,7 @@ object IBridgeConfig {
     gateway: String,
     ipaddress: String,
     linkbutton: Boolean,
-    localtime: Date,
+    localtime: js.Date,
     mac: String,
     modelid: String,
     name: String,
@@ -112,7 +111,7 @@ object IBridgeConfig {
     
     inline def setLinkbutton(value: Boolean): Self = StObject.set(x, "linkbutton", value.asInstanceOf[js.Any])
     
-    inline def setLocaltime(value: Date): Self = StObject.set(x, "localtime", value.asInstanceOf[js.Any])
+    inline def setLocaltime(value: js.Date): Self = StObject.set(x, "localtime", value.asInstanceOf[js.Any])
     
     inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
@@ -142,7 +141,7 @@ object IBridgeConfig {
     
     inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    inline def setUTC(value: Date): Self = StObject.set(x, "UTC", value.asInstanceOf[js.Any])
+    inline def setUTC(value: js.Date): Self = StObject.set(x, "UTC", value.asInstanceOf[js.Any])
     
     inline def setWhitelist(value: StringDictionary[Createdate]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     

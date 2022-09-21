@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FilterableOptions extends StObject {
   
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[Any] = js.undefined
   
   var defaults: js.UndefOr[Boolean] = js.undefined
   
@@ -22,18 +22,18 @@ trait FilterableOptions extends StObject {
   
   var filterTheme: js.UndefOr[String] = js.undefined
   
-  var input: js.Any
+  var input: Any
 }
 object FilterableOptions {
   
-  inline def apply(input: js.Any): FilterableOptions = {
+  inline def apply(input: Any): FilterableOptions = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterableOptions]
   }
   
   extension [Self <: FilterableOptions](x: Self) {
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -65,6 +65,6 @@ object FilterableOptions {
     
     inline def setFilterThemeUndefined: Self = StObject.set(x, "filterTheme", js.undefined)
     
-    inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }
 }

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The default constructor produces the Spot(0, 0, 0, 0), at the top-left corner.
   */
-class Spot ()
+open class Spot ()
   extends typings.go.mod.Spot {
   /**
     * The two-argument constructor produces the Spot(x, y), where X and Y are fractional distances, between zero and one.

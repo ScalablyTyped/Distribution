@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextRangeUpdateData extends StObject {
   
   /**
+    * Returns a `ShapeFont` object that represents the font attributes for the text range.
     *
-    * Returns a ShapeFont object that represents the font attributes for the text range.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var font: js.UndefOr[ShapeFontUpdateData] = js.undefined
   
   /**
-    *
     * Represents the plain text content of the text range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var text: js.UndefOr[String] = js.undefined

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object normalizeColorMod {
   
-  @JSImport("@react-spring/shared/cjs/normalizeColor", JSImport.Namespace)
+  @JSImport("@react-spring/shared/dist/declarations/src/normalizeColor", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

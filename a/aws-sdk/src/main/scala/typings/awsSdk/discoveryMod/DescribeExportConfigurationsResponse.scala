@@ -29,7 +29,7 @@ object DescribeExportConfigurationsResponse {
     
     inline def setExportsInfoUndefined: Self = StObject.set(x, "exportsInfo", js.undefined)
     
-    inline def setExportsInfoVarargs(value: ExportInfo*): Self = StObject.set(x, "exportsInfo", js.Array(value :_*))
+    inline def setExportsInfoVarargs(value: ExportInfo*): Self = StObject.set(x, "exportsInfo", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

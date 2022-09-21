@@ -10,7 +10,7 @@ trait BackgroundStyle extends StObject {
   
   var foregroundStyle: CursorFill
   
-  var handlerStyle: Width
+  var handlerStyle: HeightWidth
   
   var textStyle: OpacityTextBaseline
 }
@@ -19,7 +19,7 @@ object BackgroundStyle {
   inline def apply(
     backgroundStyle: FillStringOpacityNumber,
     foregroundStyle: CursorFill,
-    handlerStyle: Width,
+    handlerStyle: HeightWidth,
     textStyle: OpacityTextBaseline
   ): BackgroundStyle = {
     val __obj = js.Dynamic.literal(backgroundStyle = backgroundStyle.asInstanceOf[js.Any], foregroundStyle = foregroundStyle.asInstanceOf[js.Any], handlerStyle = handlerStyle.asInstanceOf[js.Any], textStyle = textStyle.asInstanceOf[js.Any])
@@ -32,7 +32,7 @@ object BackgroundStyle {
     
     inline def setForegroundStyle(value: CursorFill): Self = StObject.set(x, "foregroundStyle", value.asInstanceOf[js.Any])
     
-    inline def setHandlerStyle(value: Width): Self = StObject.set(x, "handlerStyle", value.asInstanceOf[js.Any])
+    inline def setHandlerStyle(value: HeightWidth): Self = StObject.set(x, "handlerStyle", value.asInstanceOf[js.Any])
     
     inline def setTextStyle(value: OpacityTextBaseline): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
   }

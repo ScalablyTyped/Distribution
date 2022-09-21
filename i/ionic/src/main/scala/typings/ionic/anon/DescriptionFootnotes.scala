@@ -27,7 +27,7 @@ object DescriptionFootnotes {
     
     inline def setFootnotes(value: js.Array[Url]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
     
-    inline def setFootnotesVarargs(value: Url*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
+    inline def setFootnotesVarargs(value: Url*): Self = StObject.set(x, "footnotes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

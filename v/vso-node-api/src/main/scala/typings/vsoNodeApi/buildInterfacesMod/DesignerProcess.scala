@@ -22,6 +22,6 @@ object DesignerProcess {
     
     inline def setPhases(value: js.Array[Phase]): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
     
-    inline def setPhasesVarargs(value: Phase*): Self = StObject.set(x, "phases", js.Array(value :_*))
+    inline def setPhasesVarargs(value: Phase*): Self = StObject.set(x, "phases", js.Array(value*))
   }
 }

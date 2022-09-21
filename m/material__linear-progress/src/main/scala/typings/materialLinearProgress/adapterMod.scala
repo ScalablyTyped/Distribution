@@ -1,5 +1,7 @@
 package typings.materialLinearProgress
 
+import typings.materialLinearProgress.typesMod.MDCResizeObserver
+import typings.materialLinearProgress.typesMod.MDCResizeObserverCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +23,7 @@ object adapterMod {
       *    root element with the given callback. `null` if `ResizeObserver` is not
       *    implemented or polyfilled.
       */
-    def attachResizeObserver(
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserverCallback */ js.Any
-    ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserver */ js.Any) | Null
+    def attachResizeObserver(callback: MDCResizeObserverCallback): MDCResizeObserver | Null
     
     def forceLayout(): Unit
     
@@ -55,7 +55,7 @@ object adapterMod {
     
     inline def apply(
       addClass: String => Unit,
-      attachResizeObserver: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserverCallback */ js.Any => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserver */ js.Any) | Null,
+      attachResizeObserver: MDCResizeObserverCallback => MDCResizeObserver | Null,
       forceLayout: () => Unit,
       getWidth: () => Double,
       hasClass: String => Boolean,
@@ -74,9 +74,7 @@ object adapterMod {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      inline def setAttachResizeObserver(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserverCallback */ js.Any => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeObserver */ js.Any) | Null
-      ): Self = StObject.set(x, "attachResizeObserver", js.Any.fromFunction1(value))
+      inline def setAttachResizeObserver(value: MDCResizeObserverCallback => MDCResizeObserver | Null): Self = StObject.set(x, "attachResizeObserver", js.Any.fromFunction1(value))
       
       inline def setForceLayout(value: () => Unit): Self = StObject.set(x, "forceLayout", js.Any.fromFunction0(value))
       

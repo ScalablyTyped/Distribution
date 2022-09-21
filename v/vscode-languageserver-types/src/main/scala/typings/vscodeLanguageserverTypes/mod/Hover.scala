@@ -12,7 +12,8 @@ trait Hover extends StObject {
   var contents: MarkupContent | MarkedString | js.Array[MarkedString]
   
   /**
-    * An optional range
+    * An optional range inside the text document that is used to
+    * visualize the hover, e.g. by changing the background color.
     */
   var range: js.UndefOr[Range] = js.undefined
 }
@@ -30,13 +31,13 @@ object Hover {
   /**
     * Checks whether the given value conforms to the [Hover](#Hover) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Hover */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Hover */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Hover */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Hover */ Boolean]
   
   extension [Self <: Hover](x: Self) {
     
     inline def setContents(value: MarkupContent | MarkedString | js.Array[MarkedString]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    inline def setContentsVarargs(value: MarkedString*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: MarkedString*): Self = StObject.set(x, "contents", js.Array(value*))
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

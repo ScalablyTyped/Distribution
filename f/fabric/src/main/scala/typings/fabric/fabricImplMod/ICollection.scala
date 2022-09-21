@@ -42,7 +42,7 @@ trait ICollection[T] extends StObject {
   ): T = js.native
   def forEachObject(
     callback: js.Function3[/* element */ Object, /* index */ Double, /* array */ js.Array[Object], Unit],
-    context: js.Any
+    context: Any
   ): T = js.native
   
   /**

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Composites")
 @js.native
-class Composites ()
+open class Composites ()
   extends StObject
      with typings.phaser.MatterJS.Composites
 object Composites {
@@ -55,7 +55,7 @@ object Composites {
     yOffsetA: Double,
     xOffsetB: Double,
     yOffsetB: Double,
-    options: js.Any
+    options: Any
   ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(composite.asInstanceOf[js.Any], xOffsetA.asInstanceOf[js.Any], yOffsetA.asInstanceOf[js.Any], xOffsetB.asInstanceOf[js.Any], yOffsetB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
@@ -69,7 +69,7 @@ object Composites {
     * @return {composite} The composite containing objects meshed together with constraints
     */
   /* static member */
-  inline def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("mesh")(composite.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  inline def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: Any): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("mesh")(composite.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
@@ -133,8 +133,8 @@ object Composites {
     rowGap: Double,
     crossBrace: Boolean,
     particleRadius: Double,
-    particleOptions: js.Any,
-    constraintOptions: js.Any
+    particleOptions: Any,
+    constraintOptions: Any
   ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("softBody")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], particleRadius.asInstanceOf[js.Any], particleOptions.asInstanceOf[js.Any], constraintOptions.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**

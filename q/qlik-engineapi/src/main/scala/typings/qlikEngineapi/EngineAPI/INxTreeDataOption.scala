@@ -36,6 +36,6 @@ object INxTreeDataOption {
     
     inline def setTreeNodes(value: js.Array[INxPageTreeNode]): Self = StObject.set(x, "TreeNodes", value.asInstanceOf[js.Any])
     
-    inline def setTreeNodesVarargs(value: INxPageTreeNode*): Self = StObject.set(x, "TreeNodes", js.Array(value :_*))
+    inline def setTreeNodesVarargs(value: INxPageTreeNode*): Self = StObject.set(x, "TreeNodes", js.Array(value*))
   }
 }

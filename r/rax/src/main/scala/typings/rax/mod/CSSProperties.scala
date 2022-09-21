@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CSSProperties
   extends StObject
-     with Properties[String | Double]
+     with Properties[String | Double, String]
      with /**
   * The index signature was removed to enable closed typing for style
   * using CSSType. You're able to use type assertion or module augmentation
@@ -17,7 +17,7 @@ trait CSSProperties
   * For examples and more information, visit:
   * https://github.com/frenic/csstype#what-should-i-do-when-i-get-type-errors
   */
-/* key */ StringDictionary[js.Any]
+/* key */ StringDictionary[Any]
 object CSSProperties {
   
   inline def apply(): CSSProperties = {

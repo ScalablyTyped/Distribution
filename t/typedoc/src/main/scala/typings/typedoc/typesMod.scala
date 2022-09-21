@@ -1,169 +1,63 @@
 package typings.typedoc
 
-import typings.typedoc.converterConverterMod.Converter
+import typings.typedoc.contextMod.Context
+import typings.typedoc.modelsTypesMod.SomeType
+import typings.typescript.mod.Type
+import typings.typescript.mod.TypeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @JSImport("typedoc/dist/lib/converter/types", "AliasConverter")
+  @JSImport("typedoc/dist/lib/converter/types", JSImport.Namespace)
   @js.native
-  class AliasConverter protected ()
-    extends typings.typedoc.typesAliasMod.AliasConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
+  val ^ : js.Any = js.native
   
-  @JSImport("typedoc/dist/lib/converter/types", "ArrayConverter")
-  @js.native
-  class ArrayConverter protected ()
-    extends typings.typedoc.arrayMod.ArrayConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
+  inline def convertType(context: Context): SomeType = ^.asInstanceOf[js.Dynamic].applyDynamic("convertType")(context.asInstanceOf[js.Any]).asInstanceOf[SomeType]
+  inline def convertType(context: Context, typeOrNode: Type): SomeType = (^.asInstanceOf[js.Dynamic].applyDynamic("convertType")(context.asInstanceOf[js.Any], typeOrNode.asInstanceOf[js.Any])).asInstanceOf[SomeType]
+  inline def convertType(context: Context, typeOrNode: TypeNode): SomeType = (^.asInstanceOf[js.Dynamic].applyDynamic("convertType")(context.asInstanceOf[js.Any], typeOrNode.asInstanceOf[js.Any])).asInstanceOf[SomeType]
   
-  @JSImport("typedoc/dist/lib/converter/types", "BindingArrayConverter")
-  @js.native
-  class BindingArrayConverter protected ()
-    extends typings.typedoc.bindingArrayMod.BindingArrayConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
+  inline def loadConverters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConverters")().asInstanceOf[Unit]
   
-  @JSImport("typedoc/dist/lib/converter/types", "BindingObjectConverter")
-  @js.native
-  class BindingObjectConverter protected ()
-    extends typings.typedoc.bindingObjectMod.BindingObjectConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
+  trait TypeConverter[TNode /* <: TypeNode */, TType /* <: Type */] extends StObject {
+    
+    def convert(context: Context, node: TNode): SomeType
+    
+    def convertType(context: Context, `type`: TType, node: TNode): SomeType
+    
+    var kind: js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: TNode['kind'] */ js.Any
+      ]
   }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "ConditionalConverter")
-  @js.native
-  class ConditionalConverter protected ()
-    extends typings.typedoc.conditionalMod.ConditionalConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "EnumConverter")
-  @js.native
-  class EnumConverter protected ()
-    extends typings.typedoc.typesEnumMod.EnumConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "IndexedAccessConverter")
-  @js.native
-  class IndexedAccessConverter protected ()
-    extends typings.typedoc.indexedAccessMod.IndexedAccessConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "InferredConverter")
-  @js.native
-  class InferredConverter protected ()
-    extends typings.typedoc.inferredMod.InferredConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "IntrinsicConverter")
-  @js.native
-  class IntrinsicConverter protected ()
-    extends typings.typedoc.intrinsicMod.IntrinsicConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "ParensConverter")
-  @js.native
-  class ParensConverter protected ()
-    extends typings.typedoc.parensMod.ParensConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "PredicateConverter")
-  @js.native
-  class PredicateConverter protected ()
-    extends typings.typedoc.predicateMod.PredicateConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "QueryConverter")
-  @js.native
-  class QueryConverter protected ()
-    extends typings.typedoc.queryMod.QueryConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "ReferenceConverter")
-  @js.native
-  class ReferenceConverter protected ()
-    extends typings.typedoc.typesReferenceMod.ReferenceConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "StringLiteralConverter")
-  @js.native
-  class StringLiteralConverter protected ()
-    extends typings.typedoc.stringLiteralMod.StringLiteralConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "ThisConverter")
-  @js.native
-  class ThisConverter protected ()
-    extends typings.typedoc.thisMod.ThisConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "TupleConverter")
-  @js.native
-  class TupleConverter protected ()
-    extends typings.typedoc.tupleMod.TupleConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "TypeOperatorConverter")
-  @js.native
-  class TypeOperatorConverter protected ()
-    extends typings.typedoc.typeOperatorMod.TypeOperatorConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "TypeParameterConverter")
-  @js.native
-  class TypeParameterConverter protected ()
-    extends typings.typedoc.typesTypeParameterMod.TypeParameterConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "UnionOrIntersectionConverter")
-  @js.native
-  class UnionOrIntersectionConverter protected ()
-    extends typings.typedoc.unionOrIntersectionMod.UnionOrIntersectionConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
-  }
-  
-  @JSImport("typedoc/dist/lib/converter/types", "UnknownConverter")
-  @js.native
-  class UnknownConverter protected ()
-    extends typings.typedoc.unknownMod.UnknownConverter {
-    def this(owner: js.Symbol) = this()
-    def this(owner: Converter) = this()
+  object TypeConverter {
+    
+    inline def apply[TNode /* <: TypeNode */, TType /* <: Type */](
+      convert: (Context, TNode) => SomeType,
+      convertType: (Context, TType, TNode) => SomeType,
+      kind: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: TNode['kind'] */ js.Any
+        ]
+    ): TypeConverter[TNode, TType] = {
+      val __obj = js.Dynamic.literal(convert = js.Any.fromFunction2(convert), convertType = js.Any.fromFunction3(convertType), kind = kind.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TypeConverter[TNode, TType]]
+    }
+    
+    extension [Self <: TypeConverter[?, ?], TNode /* <: TypeNode */, TType /* <: Type */](x: Self & (TypeConverter[TNode, TType])) {
+      
+      inline def setConvert(value: (Context, TNode) => SomeType): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
+      
+      inline def setConvertType(value: (Context, TType, TNode) => SomeType): Self = StObject.set(x, "convertType", js.Any.fromFunction3(value))
+      
+      inline def setKind(
+        value: js.Array[
+              /* import warning: importer.ImportType#apply Failed type conversion: TNode['kind'] */ js.Any
+            ]
+      ): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      
+      inline def setKindVarargs(
+        value: (/* import warning: importer.ImportType#apply Failed type conversion: TNode['kind'] */ js.Any)*
+      ): Self = StObject.set(x, "kind", js.Array(value*))
+    }
   }
 }

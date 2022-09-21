@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__client-cognito-identity
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 AWS SDK for JavaScript Cognito Identity Client for Node.js, Browser and React Native
@@ -10,10 +10,10 @@ AWS SDK for JavaScript Cognito Identity Client for Node.js, Browser and React Na
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-cognito-identity |
 | Keywords           | - |
-| # releases         | 64 |
-| # dependents       | 8 |
-| # downloads        | 5843246 |
-| # stars            | 0 |
+| # releases         | 126 |
+| # dependents       | 0.0 |
+| # downloads        | 2372599.3333333335 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-cognito-identity)

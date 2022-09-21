@@ -48,7 +48,7 @@ trait Flyout extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(eventName: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(eventName: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this object. Call this method when the object is no longer needed. After calling this method, the object becomes unusable.

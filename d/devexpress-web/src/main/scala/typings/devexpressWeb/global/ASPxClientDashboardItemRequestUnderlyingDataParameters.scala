@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemRequestUnderlyingDataParameters")
 @js.native
-class ASPxClientDashboardItemRequestUnderlyingDataParameters ()
+open class ASPxClientDashboardItemRequestUnderlyingDataParameters ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemRequestUnderlyingDataParameters {
   
@@ -29,11 +29,11 @@ class ASPxClientDashboardItemRequestUnderlyingDataParameters ()
     * Gets or sets the unique dimension value used to obtain the underlying data.
     */
   /* CompleteClass */
-  var UniqueValuesByAxisName: js.Any = js.native
+  var UniqueValuesByAxisName: Any = js.native
   
   /**
     * Gets or sets the dimension value used to obtain the underlying data.
     */
   /* CompleteClass */
-  var ValuesByAxisName: js.Any = js.native
+  var ValuesByAxisName: Any = js.native
 }

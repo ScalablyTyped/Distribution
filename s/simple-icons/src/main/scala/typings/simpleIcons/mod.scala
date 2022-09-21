@@ -1,20 +1,29 @@
 package typings.simpleIcons
 
+import org.scalablytyped.runtime.Shortcut
+import typings.simpleIcons.anon.Get
+import typings.simpleIcons.anon.Type
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
-  @JSImport("simple-icons", JSImport.Namespace)
+  /**
+    * @deprecated The `simple-icons` entrypoint will be removed in the next major. Please switch to using `import * as icons from "simple-icons/icons"` if you need an object with all the icons.
+    */
+  @JSImport("simple-icons", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def get(name: String): SimpleIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[SimpleIcon]
+  val default: (Record[String, SimpleIcon]) & Get = js.native
   
   trait SimpleIcon extends StObject {
     
+    var guidelines: js.UndefOr[String] = js.undefined
+    
     var hex: String
+    
+    var license: js.UndefOr[Type] = js.undefined
     
     var path: String
     
@@ -35,7 +44,15 @@ object mod {
     
     extension [Self <: SimpleIcon](x: Self) {
       
+      inline def setGuidelines(value: String): Self = StObject.set(x, "guidelines", value.asInstanceOf[js.Any])
+      
+      inline def setGuidelinesUndefined: Self = StObject.set(x, "guidelines", js.undefined)
+      
       inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      
+      inline def setLicense(value: Type): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+      
+      inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -48,4 +65,9 @@ object mod {
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
+  
+  type _To = (Record[String, SimpleIcon]) & Get
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: (Record[String, SimpleIcon]) & Get = default
 }

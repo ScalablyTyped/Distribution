@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xmlcreate" : "2.0.3"
+      "xmlcreate" : "2.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "xmlcreate" : "2.0.3"
+      "xmlcreate" : "2.0.4"
     }
   ],
   "compile-devDependencies" : [

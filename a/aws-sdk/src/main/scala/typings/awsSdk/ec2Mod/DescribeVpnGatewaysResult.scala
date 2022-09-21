@@ -24,6 +24,6 @@ object DescribeVpnGatewaysResult {
     
     inline def setVpnGatewaysUndefined: Self = StObject.set(x, "VpnGateways", js.undefined)
     
-    inline def setVpnGatewaysVarargs(value: VpnGateway*): Self = StObject.set(x, "VpnGateways", js.Array(value :_*))
+    inline def setVpnGatewaysVarargs(value: VpnGateway*): Self = StObject.set(x, "VpnGateways", js.Array(value*))
   }
 }

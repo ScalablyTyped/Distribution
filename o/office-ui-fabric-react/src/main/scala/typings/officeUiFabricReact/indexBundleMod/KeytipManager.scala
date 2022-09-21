@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "KeytipManager")
 @js.native
-class KeytipManager ()
+open class KeytipManager ()
   extends typings.officeUiFabricReact.mod.KeytipManager
 /* static members */
 object KeytipManager {
@@ -17,8 +17,8 @@ object KeytipManager {
   
   @JSImport("office-ui-fabric-react/lib/index.bundle", "KeytipManager._instance")
   @js.native
-  def _instance: js.Any = js.native
-  inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+  def _instance: Any = js.native
+  inline def _instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
   
   /**
     * Static function to get singleton KeytipManager instance

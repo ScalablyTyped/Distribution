@@ -1,6 +1,5 @@
 package typings.dateFns
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object esmFromUnixTimeIndexMod {
   
   object default {
     
-    inline def apply(unixTime: Double): Date = ^.asInstanceOf[js.Dynamic].apply(unixTime.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def apply(unixTime: Double): js.Date = ^.asInstanceOf[js.Dynamic].apply(unixTime.asInstanceOf[js.Any]).asInstanceOf[js.Date]
     
     @JSImport("date-fns/esm/fromUnixTime/index", JSImport.Default)
     @js.native

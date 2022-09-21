@@ -1,7 +1,7 @@
 
 # Scala.js typings for folder-hash
 
-Typings are for version 3.3
+Typings are for version 4.0
 
 ## Library description:
 Create a hash checksum over a folder and its content - its children and their content
@@ -10,10 +10,10 @@ Create a hash checksum over a folder and its content - its children and their co
 | ------------------ | :-------------: |
 | Full name          | folder-hash |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 63 |
-| # downloads        | 3730396 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 571155.0 |
+| # stars            | 88.0 |
 
 ## Links
 - [Homepage](https://github.com/marc136/node-folder-hash#readme)

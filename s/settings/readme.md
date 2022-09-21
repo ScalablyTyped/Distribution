@@ -11,9 +11,9 @@ Simple environment-based application settings
 | Full name          | settings |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 229152 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11141.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/mgutz/node-settings#readme)

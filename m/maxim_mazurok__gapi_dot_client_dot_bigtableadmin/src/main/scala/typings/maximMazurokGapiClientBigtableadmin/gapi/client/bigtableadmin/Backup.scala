@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Backup extends StObject {
   
+  /** Output only. The encryption information for the backup. */
+  var encryptionInfo: js.UndefOr[EncryptionInfo] = js.undefined
+  
   /** Output only. `end_time` is the time that the backup was finished. The row data in the backup will be no newer than this timestamp. */
   var endTime: js.UndefOr[String] = js.undefined
   
@@ -48,6 +51,10 @@ object Backup {
   }
   
   extension [Self <: Backup](x: Self) {
+    
+    inline def setEncryptionInfo(value: EncryptionInfo): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionInfoUndefined: Self = StObject.set(x, "encryptionInfo", js.undefined)
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

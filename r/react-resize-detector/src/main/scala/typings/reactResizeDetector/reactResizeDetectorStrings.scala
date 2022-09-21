@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactResizeDetectorStrings {
   
   @js.native
+  sealed trait OptionalKey extends StObject
+  inline def OptionalKey: OptionalKey = "OptionalKey".asInstanceOf[OptionalKey]
+  
+  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
@@ -17,6 +21,18 @@ object reactResizeDetectorStrings {
   @js.native
   sealed trait address extends StObject
   inline def address: address = "address".asInstanceOf[address]
+  
+  @js.native
+  sealed trait animate extends StObject
+  inline def animate: animate = "animate".asInstanceOf[animate]
+  
+  @js.native
+  sealed trait animateMotion extends StObject
+  inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
+  
+  @js.native
+  sealed trait animateTransform extends StObject
+  inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
   sealed trait area extends StObject
@@ -79,8 +95,16 @@ object reactResizeDetectorStrings {
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
+  sealed trait circle extends StObject
+  inline def circle: circle = "circle".asInstanceOf[circle]
+  
+  @js.native
   sealed trait cite extends StObject
   inline def cite: cite = "cite".asInstanceOf[cite]
+  
+  @js.native
+  sealed trait clipPath extends StObject
+  inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
   @js.native
   sealed trait code extends StObject
@@ -111,8 +135,16 @@ object reactResizeDetectorStrings {
   inline def debounce: debounce = "debounce".asInstanceOf[debounce]
   
   @js.native
+  sealed trait defs extends StObject
+  inline def defs: defs = "defs".asInstanceOf[defs]
+  
+  @js.native
   sealed trait del extends StObject
   inline def del: del = "del".asInstanceOf[del]
+  
+  @js.native
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait details extends StObject
@@ -139,12 +171,116 @@ object reactResizeDetectorStrings {
   inline def dt: dt = "dt".asInstanceOf[dt]
   
   @js.native
+  sealed trait ellipse extends StObject
+  inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
+  
+  @js.native
   sealed trait em extends StObject
   inline def em: em = "em".asInstanceOf[em]
   
   @js.native
   sealed trait embed extends StObject
   inline def embed: embed = "embed".asInstanceOf[embed]
+  
+  @js.native
+  sealed trait feBlend extends StObject
+  inline def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
+  
+  @js.native
+  sealed trait feColorMatrix extends StObject
+  inline def feColorMatrix: feColorMatrix = "feColorMatrix".asInstanceOf[feColorMatrix]
+  
+  @js.native
+  sealed trait feComponentTransfer extends StObject
+  inline def feComponentTransfer: feComponentTransfer = "feComponentTransfer".asInstanceOf[feComponentTransfer]
+  
+  @js.native
+  sealed trait feComposite extends StObject
+  inline def feComposite: feComposite = "feComposite".asInstanceOf[feComposite]
+  
+  @js.native
+  sealed trait feConvolveMatrix extends StObject
+  inline def feConvolveMatrix: feConvolveMatrix = "feConvolveMatrix".asInstanceOf[feConvolveMatrix]
+  
+  @js.native
+  sealed trait feDiffuseLighting extends StObject
+  inline def feDiffuseLighting: feDiffuseLighting = "feDiffuseLighting".asInstanceOf[feDiffuseLighting]
+  
+  @js.native
+  sealed trait feDisplacementMap extends StObject
+  inline def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
+  
+  @js.native
+  sealed trait feDistantLight extends StObject
+  inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
+  
+  @js.native
+  sealed trait feDropShadow extends StObject
+  inline def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
+  
+  @js.native
+  sealed trait feFlood extends StObject
+  inline def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
+  
+  @js.native
+  sealed trait feFuncA extends StObject
+  inline def feFuncA: feFuncA = "feFuncA".asInstanceOf[feFuncA]
+  
+  @js.native
+  sealed trait feFuncB extends StObject
+  inline def feFuncB: feFuncB = "feFuncB".asInstanceOf[feFuncB]
+  
+  @js.native
+  sealed trait feFuncG extends StObject
+  inline def feFuncG: feFuncG = "feFuncG".asInstanceOf[feFuncG]
+  
+  @js.native
+  sealed trait feFuncR extends StObject
+  inline def feFuncR: feFuncR = "feFuncR".asInstanceOf[feFuncR]
+  
+  @js.native
+  sealed trait feGaussianBlur extends StObject
+  inline def feGaussianBlur: feGaussianBlur = "feGaussianBlur".asInstanceOf[feGaussianBlur]
+  
+  @js.native
+  sealed trait feImage extends StObject
+  inline def feImage: feImage = "feImage".asInstanceOf[feImage]
+  
+  @js.native
+  sealed trait feMerge extends StObject
+  inline def feMerge: feMerge = "feMerge".asInstanceOf[feMerge]
+  
+  @js.native
+  sealed trait feMergeNode extends StObject
+  inline def feMergeNode: feMergeNode = "feMergeNode".asInstanceOf[feMergeNode]
+  
+  @js.native
+  sealed trait feMorphology extends StObject
+  inline def feMorphology: feMorphology = "feMorphology".asInstanceOf[feMorphology]
+  
+  @js.native
+  sealed trait feOffset extends StObject
+  inline def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
+  
+  @js.native
+  sealed trait fePointLight extends StObject
+  inline def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
+  
+  @js.native
+  sealed trait feSpecularLighting extends StObject
+  inline def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
+  
+  @js.native
+  sealed trait feSpotLight extends StObject
+  inline def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
+  
+  @js.native
+  sealed trait feTile extends StObject
+  inline def feTile: feTile = "feTile".asInstanceOf[feTile]
+  
+  @js.native
+  sealed trait feTurbulence extends StObject
+  inline def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
   
   @js.native
   sealed trait fieldset extends StObject
@@ -159,12 +295,24 @@ object reactResizeDetectorStrings {
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
+  sealed trait filter extends StObject
+  inline def filter: filter = "filter".asInstanceOf[filter]
+  
+  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
+  sealed trait foreignObject extends StObject
+  inline def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
+  
+  @js.native
   sealed trait form extends StObject
   inline def form: form = "form".asInstanceOf[form]
+  
+  @js.native
+  sealed trait g extends StObject
+  inline def g: g = "g".asInstanceOf[g]
   
   @js.native
   sealed trait h1 extends StObject
@@ -223,6 +371,10 @@ object reactResizeDetectorStrings {
   inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
+  sealed trait image extends StObject
+  inline def image: image = "image".asInstanceOf[image]
+  
+  @js.native
   sealed trait img extends StObject
   inline def img: img = "img".asInstanceOf[img]
   
@@ -255,6 +407,14 @@ object reactResizeDetectorStrings {
   inline def li: li = "li".asInstanceOf[li]
   
   @js.native
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
+  
+  @js.native
+  sealed trait linearGradient extends StObject
+  inline def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
+  
+  @js.native
   sealed trait link extends StObject
   inline def link: link = "link".asInstanceOf[link]
   
@@ -271,6 +431,14 @@ object reactResizeDetectorStrings {
   inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
+  sealed trait marker extends StObject
+  inline def marker: marker = "marker".asInstanceOf[marker]
+  
+  @js.native
+  sealed trait mask extends StObject
+  inline def mask: mask = "mask".asInstanceOf[mask]
+  
+  @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
   
@@ -283,12 +451,24 @@ object reactResizeDetectorStrings {
   inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
+  sealed trait metadata extends StObject
+  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
+  
+  @js.native
   sealed trait meter extends StObject
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
+  sealed trait mpath extends StObject
+  inline def mpath: mpath = "mpath".asInstanceOf[mpath]
+  
+  @js.native
   sealed trait nav extends StObject
   inline def nav: nav = "nav".asInstanceOf[nav]
+  
+  @js.native
+  sealed trait noindex extends StObject
+  inline def noindex: noindex = "noindex".asInstanceOf[noindex]
   
   @js.native
   sealed trait noscript extends StObject
@@ -323,8 +503,24 @@ object reactResizeDetectorStrings {
   inline def param: param = "param".asInstanceOf[param]
   
   @js.native
+  sealed trait path extends StObject
+  inline def path: path = "path".asInstanceOf[path]
+  
+  @js.native
+  sealed trait pattern extends StObject
+  inline def pattern: pattern = "pattern".asInstanceOf[pattern]
+  
+  @js.native
   sealed trait picture extends StObject
   inline def picture: picture = "picture".asInstanceOf[picture]
+  
+  @js.native
+  sealed trait polygon extends StObject
+  inline def polygon: polygon = "polygon".asInstanceOf[polygon]
+  
+  @js.native
+  sealed trait polyline extends StObject
+  inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
   sealed trait pre extends StObject
@@ -337,6 +533,14 @@ object reactResizeDetectorStrings {
   @js.native
   sealed trait q extends StObject
   inline def q: q = "q".asInstanceOf[q]
+  
+  @js.native
+  sealed trait radialGradient extends StObject
+  inline def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
+  
+  @js.native
+  sealed trait rect extends StObject
+  inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
   sealed trait rp extends StObject
@@ -387,6 +591,10 @@ object reactResizeDetectorStrings {
   inline def span: span = "span".asInstanceOf[span]
   
   @js.native
+  sealed trait stop extends StObject
+  inline def stop: stop = "stop".asInstanceOf[stop]
+  
+  @js.native
   sealed trait strong extends StObject
   inline def strong: strong = "strong".asInstanceOf[strong]
   
@@ -407,8 +615,24 @@ object reactResizeDetectorStrings {
   inline def sup: sup = "sup".asInstanceOf[sup]
   
   @js.native
+  sealed trait svg extends StObject
+  inline def svg: svg = "svg".asInstanceOf[svg]
+  
+  @js.native
+  sealed trait switch extends StObject
+  inline def switch: switch = "switch".asInstanceOf[switch]
+  
+  @js.native
+  sealed trait symbol extends StObject
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
   sealed trait table extends StObject
   inline def table: table = "table".asInstanceOf[table]
+  
+  @js.native
+  sealed trait targetRef extends StObject
+  inline def targetRef: targetRef = "targetRef".asInstanceOf[targetRef]
   
   @js.native
   sealed trait tbody extends StObject
@@ -421,6 +645,14 @@ object reactResizeDetectorStrings {
   @js.native
   sealed trait template extends StObject
   inline def template: template = "template".asInstanceOf[template]
+  
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait textPath extends StObject
+  inline def textPath: textPath = "textPath".asInstanceOf[textPath]
   
   @js.native
   sealed trait textarea extends StObject
@@ -459,6 +691,10 @@ object reactResizeDetectorStrings {
   inline def track: track = "track".asInstanceOf[track]
   
   @js.native
+  sealed trait tspan extends StObject
+  inline def tspan: tspan = "tspan".asInstanceOf[tspan]
+  
+  @js.native
   sealed trait u extends StObject
   inline def u: u = "u".asInstanceOf[u]
   
@@ -467,12 +703,20 @@ object reactResizeDetectorStrings {
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
+  sealed trait use extends StObject
+  inline def use: use = "use".asInstanceOf[use]
+  
+  @js.native
   sealed trait `var` extends StObject
   inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
   sealed trait video extends StObject
   inline def video: video = "video".asInstanceOf[video]
+  
+  @js.native
+  sealed trait view extends StObject
+  inline def view: view = "view".asInstanceOf[view]
   
   @js.native
   sealed trait wbr extends StObject

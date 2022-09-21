@@ -65,7 +65,7 @@ trait PlotOptions extends StObject {
   /**
     * (Highstock) Absolute Price Oscillator. This series requires the
     * `linkedTo` option to be set and should be loaded after the
-    * `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
+    * `stock/indicators/indicators.js`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -80,6 +80,28 @@ trait PlotOptions extends StObject {
     * (see online documentation for example)
     */
   var apo: js.UndefOr[PlotApoOptions] = js.undefined
+  
+  /**
+    * (Highcharts) Arc diagram series is a chart drawing style in which the
+    * vertices of the chart are positioned along a line on the Euclidean plane
+    * and the edges are drawn as a semicircle in one of the two half-planes
+    * delimited by the line, or as smooth curves formed by sequences of
+    * semicircles.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `arcdiagram` series are defined in
+    * plotOptions.arcdiagram.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var arcdiagram: js.UndefOr[PlotArcdiagramOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The area series type.
@@ -371,7 +393,7 @@ trait PlotOptions extends StObject {
   /**
     * (Highstock) Chaikin Oscillator. This series requires the `linkedTo`
     * option to be set and should be loaded after the
-    * `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
+    * `stock/indicators/indicators.js`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -403,6 +425,25 @@ trait PlotOptions extends StObject {
     * (see online documentation for example)
     */
   var cmf: js.UndefOr[PlotCmfOptions] = js.undefined
+  
+  /**
+    * (Highstock) Chande Momentum Oscilator (CMO) technical indicator. This
+    * series requires the `linkedTo` option to be set and should be loaded
+    * after the `stock/indicators/indicators.js` file.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `cmo` series are defined in plotOptions.cmo.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var cmo: js.UndefOr[PlotCmoOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) Column series display one column per value along
@@ -483,7 +524,7 @@ trait PlotOptions extends StObject {
   /**
     * (Highstock) Double exponential moving average (DEMA) indicator. This
     * series requires `linkedTo` option to be set and should be loaded after
-    * the `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
+    * the `stock/indicators/indicators.js`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -520,6 +561,45 @@ trait PlotOptions extends StObject {
   var dependencywheel: js.UndefOr[PlotDependencywheelOptions] = js.undefined
   
   /**
+    * (Highstock) Disparity Index. This series requires the `linkedTo` option
+    * to be set and should be loaded after the `stock/indicators/indicators.js`
+    * file.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `disparityindex` series are defined in
+    * plotOptions.disparityindex.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var disparityindex: js.UndefOr[PlotDisparityindexOptions] = js.undefined
+  
+  /**
+    * (Highstock) Directional Movement Index (DMI). This series requires the
+    * `linkedTo` option to be set and should be loaded after the
+    * `stock/indicators/indicators.js` file.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `dmi` series are defined in plotOptions.dmi.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var dmi: js.UndefOr[PlotDmiOptions] = js.undefined
+  
+  /**
     * (Highstock) Detrended Price Oscillator. This series requires the
     * `linkedTo` option to be set and should be loaded after the
     * `stock/indicators/indicators.js`.
@@ -541,8 +621,9 @@ trait PlotOptions extends StObject {
   /**
     * (Highcharts, Highstock) The dumbbell series is a cartesian series with
     * higher and lower values for each point along an X axis, connected with a
-    * line between the values. Requires `highcharts-more.js` and
-    * `modules/dumbbell.js`.
+    * line between the values.
+    *
+    * Requires `highcharts-more.js` and `modules/dumbbell.js`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -710,6 +791,26 @@ trait PlotOptions extends StObject {
   var heatmap: js.UndefOr[PlotHeatmapOptions] = js.undefined
   
   /**
+    * (Highstock) An HeikinAshi series is a style of financial chart used to
+    * describe price movements over time. It displays open, high, low and close
+    * values per data point.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `heikinashi` series are defined in
+    * plotOptions.heikinashi.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var heikinashi: js.UndefOr[PlotHeikinashiOptions] = js.undefined
+  
+  /**
     * (Highcharts) A histogram is a column series which represents the
     * distribution of the data set in the base series. Histogram splits data
     * into bins and shows their frequencies.
@@ -728,6 +829,44 @@ trait PlotOptions extends StObject {
     * (see online documentation for example)
     */
   var histogram: js.UndefOr[PlotHistogramOptions] = js.undefined
+  
+  /**
+    * (Highstock) An HLC chart is a style of financial chart used to describe
+    * price movements over time. It displays high, low and close values per
+    * data point.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `hlc` series are defined in plotOptions.hlc.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var hlc: js.UndefOr[PlotHlcOptions] = js.undefined
+  
+  /**
+    * (Highstock) A hollow candlestick chart is a style of financial chart used
+    * to describe price movements over time.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `hollowcandlestick` series are defined in
+    * plotOptions.hollowcandlestick.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var hollowcandlestick: js.UndefOr[PlotHollowcandlestickOptions] = js.undefined
   
   /**
     * (Highstock) Ichimoku Kinko Hyo (IKH). This series requires `linkedTo`
@@ -791,6 +930,25 @@ trait PlotOptions extends StObject {
     * (see online documentation for example)
     */
   var keltnerchannels: js.UndefOr[PlotKeltnerchannelsOptions] = js.undefined
+  
+  /**
+    * (Highstock) Klinger oscillator. This series requires the `linkedTo`
+    * option to be set and should be loaded after the
+    * `stock/indicators/indicators.js` file.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `klinger` series are defined in plotOptions.klinger.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var klinger: js.UndefOr[PlotKlingerOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) A line series displays information as a series of
@@ -909,7 +1067,7 @@ trait PlotOptions extends StObject {
   /**
     * (Highstock) Moving Average Convergence Divergence (MACD). This series
     * requires `linkedTo` option to be set and should be loaded after the
-    * `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
+    * `stock/indicators/indicators.js`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -997,7 +1155,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var mappoint: js.UndefOr[PlotMappointOptions] = js.undefined
+  var mappoint: js.UndefOr[Double | PlotMappointOptions] = js.undefined
   
   /**
     * (Highstock) Money Flow Index. This series requires `linkedTo` option to
@@ -1073,6 +1231,26 @@ trait PlotOptions extends StObject {
     * (see online documentation for example)
     */
   var networkgraph: js.UndefOr[PlotNetworkgraphOptions] = js.undefined
+  
+  /**
+    * (Highstock) On-Balance Volume (OBV) technical indicator. This series
+    * requires the `linkedTo` option to be set and should be loaded after the
+    * `stock/indicators/indicators.js` file. Through the `volumeSeriesID` there
+    * also should be linked the volume series.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `obv` series are defined in plotOptions.obv.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var obv: js.UndefOr[PlotObvOptions] = js.undefined
   
   /**
     * (Highstock) An OHLC chart is a style of financial chart used to describe
@@ -1173,8 +1351,8 @@ trait PlotOptions extends StObject {
   var pc: js.UndefOr[PlotPcOptions] = js.undefined
   
   /**
-    * (Highcharts) A pie chart is a circular graphic which is divided into
-    * slices to illustrate numerical proportion.
+    * (Highcharts, Highmaps) A pie chart is a circular graphic which is divided
+    * into slices to illustrate numerical proportion.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1233,7 +1411,7 @@ trait PlotOptions extends StObject {
   /**
     * (Highstock) Percentage Price Oscillator. This series requires the
     * `linkedTo` option to be set and should be loaded after the
-    * `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
+    * `stock/indicators/indicators.js`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1604,7 +1782,7 @@ trait PlotOptions extends StObject {
   /**
     * (Highstock) Triple exponential moving average (TEMA) indicator. This
     * series requires `linkedTo` option to be set and should be loaded after
-    * the `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
+    * the `stock/indicators/indicators.js`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1698,9 +1876,6 @@ trait PlotOptions extends StObject {
   /**
     * (Highstock) Triple exponential average (TRIX) oscillator. This series
     * requires `linkedTo` option to be set.
-    *
-    * Requires https://code.highcharts.com/stock/indicators/ema.js and
-    * https://code.highcharts.com/stock/indicators/tema.js.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1989,6 +2164,10 @@ object PlotOptions {
     
     inline def setApoUndefined: Self = StObject.set(x, "apo", js.undefined)
     
+    inline def setArcdiagram(value: PlotArcdiagramOptions): Self = StObject.set(x, "arcdiagram", value.asInstanceOf[js.Any])
+    
+    inline def setArcdiagramUndefined: Self = StObject.set(x, "arcdiagram", js.undefined)
+    
     inline def setArea(value: PlotAreaOptions): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
@@ -2057,6 +2236,10 @@ object PlotOptions {
     
     inline def setCmfUndefined: Self = StObject.set(x, "cmf", js.undefined)
     
+    inline def setCmo(value: PlotCmoOptions): Self = StObject.set(x, "cmo", value.asInstanceOf[js.Any])
+    
+    inline def setCmoUndefined: Self = StObject.set(x, "cmo", js.undefined)
+    
     inline def setColumn(value: PlotColumnOptions): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
@@ -2080,6 +2263,14 @@ object PlotOptions {
     inline def setDependencywheel(value: PlotDependencywheelOptions): Self = StObject.set(x, "dependencywheel", value.asInstanceOf[js.Any])
     
     inline def setDependencywheelUndefined: Self = StObject.set(x, "dependencywheel", js.undefined)
+    
+    inline def setDisparityindex(value: PlotDisparityindexOptions): Self = StObject.set(x, "disparityindex", value.asInstanceOf[js.Any])
+    
+    inline def setDisparityindexUndefined: Self = StObject.set(x, "disparityindex", js.undefined)
+    
+    inline def setDmi(value: PlotDmiOptions): Self = StObject.set(x, "dmi", value.asInstanceOf[js.Any])
+    
+    inline def setDmiUndefined: Self = StObject.set(x, "dmi", js.undefined)
     
     inline def setDpo(value: PlotDpoOptions): Self = StObject.set(x, "dpo", value.asInstanceOf[js.Any])
     
@@ -2121,9 +2312,21 @@ object PlotOptions {
     
     inline def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
     
+    inline def setHeikinashi(value: PlotHeikinashiOptions): Self = StObject.set(x, "heikinashi", value.asInstanceOf[js.Any])
+    
+    inline def setHeikinashiUndefined: Self = StObject.set(x, "heikinashi", js.undefined)
+    
     inline def setHistogram(value: PlotHistogramOptions): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
     
     inline def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
+    
+    inline def setHlc(value: PlotHlcOptions): Self = StObject.set(x, "hlc", value.asInstanceOf[js.Any])
+    
+    inline def setHlcUndefined: Self = StObject.set(x, "hlc", js.undefined)
+    
+    inline def setHollowcandlestick(value: PlotHollowcandlestickOptions): Self = StObject.set(x, "hollowcandlestick", value.asInstanceOf[js.Any])
+    
+    inline def setHollowcandlestickUndefined: Self = StObject.set(x, "hollowcandlestick", js.undefined)
     
     inline def setIkh(value: PlotIkhOptions): Self = StObject.set(x, "ikh", value.asInstanceOf[js.Any])
     
@@ -2136,6 +2339,10 @@ object PlotOptions {
     inline def setKeltnerchannels(value: PlotKeltnerchannelsOptions): Self = StObject.set(x, "keltnerchannels", value.asInstanceOf[js.Any])
     
     inline def setKeltnerchannelsUndefined: Self = StObject.set(x, "keltnerchannels", js.undefined)
+    
+    inline def setKlinger(value: PlotKlingerOptions): Self = StObject.set(x, "klinger", value.asInstanceOf[js.Any])
+    
+    inline def setKlingerUndefined: Self = StObject.set(x, "klinger", js.undefined)
     
     inline def setLine(value: PlotLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
@@ -2177,7 +2384,7 @@ object PlotOptions {
     
     inline def setMaplineUndefined: Self = StObject.set(x, "mapline", js.undefined)
     
-    inline def setMappoint(value: PlotMappointOptions): Self = StObject.set(x, "mappoint", value.asInstanceOf[js.Any])
+    inline def setMappoint(value: Double | PlotMappointOptions): Self = StObject.set(x, "mappoint", value.asInstanceOf[js.Any])
     
     inline def setMappointUndefined: Self = StObject.set(x, "mappoint", js.undefined)
     
@@ -2196,6 +2403,10 @@ object PlotOptions {
     inline def setNetworkgraph(value: PlotNetworkgraphOptions): Self = StObject.set(x, "networkgraph", value.asInstanceOf[js.Any])
     
     inline def setNetworkgraphUndefined: Self = StObject.set(x, "networkgraph", js.undefined)
+    
+    inline def setObv(value: PlotObvOptions): Self = StObject.set(x, "obv", value.asInstanceOf[js.Any])
+    
+    inline def setObvUndefined: Self = StObject.set(x, "obv", js.undefined)
     
     inline def setOhlc(value: PlotOhlcOptions): Self = StObject.set(x, "ohlc", value.asInstanceOf[js.Any])
     

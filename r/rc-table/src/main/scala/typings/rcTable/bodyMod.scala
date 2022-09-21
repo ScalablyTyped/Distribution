@@ -8,7 +8,7 @@ import typings.rcTable.interfaceMod.Key
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.ReactNode
-import typings.std.HTMLElement
+import typings.react.mod.TdHTMLAttributes
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,7 +46,7 @@ object bodyMod extends Shortcut {
       expandedKeys: Set[Key],
       getRowKey: (RecordType, /* index */ js.UndefOr[Double]) => Key,
       measureColumnWidth: Boolean,
-      onRow: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement],
+      onRow: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any],
       rowExpandable: RecordType => Boolean
     ): BodyProps[RecordType] = {
       val __obj = js.Dynamic.literal(childrenColumnName = childrenColumnName.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], getRowKey = js.Any.fromFunction2(getRowKey), measureColumnWidth = measureColumnWidth.asInstanceOf[js.Any], onRow = js.Any.fromFunction2(onRow), rowExpandable = js.Any.fromFunction1(rowExpandable))
@@ -59,7 +59,7 @@ object bodyMod extends Shortcut {
       
       inline def setData(value: js.Array[RecordType]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setEmptyNode(value: ReactNode): Self = StObject.set(x, "emptyNode", value.asInstanceOf[js.Any])
       
@@ -71,7 +71,7 @@ object bodyMod extends Shortcut {
       
       inline def setMeasureColumnWidth(value: Boolean): Self = StObject.set(x, "measureColumnWidth", value.asInstanceOf[js.Any])
       
-      inline def setOnRow(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
+      inline def setOnRow(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
       
       inline def setRowExpandable(value: RecordType => Boolean): Self = StObject.set(x, "rowExpandable", js.Any.fromFunction1(value))
     }

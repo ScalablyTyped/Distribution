@@ -15,7 +15,7 @@ object global {
       * @constructor
       * @param {string} str
       */
-    class Uri ()
+    open class Uri ()
       extends StObject
          with typings.jsuri.jsuri.Uri {
       def this(str: String) = this()

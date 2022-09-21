@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PromptOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** message对齐方式，可用枚举left/center/right，iOS ‘center’, android ‘left’ */
   var align: js.UndefOr[left | center | right | String] = js.undefined

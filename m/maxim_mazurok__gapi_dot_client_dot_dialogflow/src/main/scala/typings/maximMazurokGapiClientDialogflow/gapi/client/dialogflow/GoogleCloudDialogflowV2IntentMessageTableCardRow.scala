@@ -25,7 +25,7 @@ object GoogleCloudDialogflowV2IntentMessageTableCardRow {
     
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    inline def setCellsVarargs(value: GoogleCloudDialogflowV2IntentMessageTableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: GoogleCloudDialogflowV2IntentMessageTableCardCell*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
     

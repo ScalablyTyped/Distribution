@@ -27,7 +27,7 @@ object RuleDefinition {
     
     inline def setActions(value: StatelessActions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: CollectionMemberString*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: CollectionMemberString*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setMatchAttributes(value: MatchAttributes): Self = StObject.set(x, "MatchAttributes", value.asInstanceOf[js.Any])
   }

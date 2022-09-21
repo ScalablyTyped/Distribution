@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Glossary extends StObject {
   
+  /** Optional. The display name of the glossary. */
+  var displayName: js.UndefOr[String] = js.undefined
+  
   /** Output only. When the glossary creation was finished. */
   var endTime: js.UndefOr[String] = js.undefined
   
@@ -35,6 +38,10 @@ object Glossary {
   }
   
   extension [Self <: Glossary](x: Self) {
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

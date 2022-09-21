@@ -51,15 +51,15 @@ object RetentionPolicy {
     
     inline def setArtifactTypesToDelete(value: js.Array[String]): Self = StObject.set(x, "artifactTypesToDelete", value.asInstanceOf[js.Any])
     
-    inline def setArtifactTypesToDeleteVarargs(value: String*): Self = StObject.set(x, "artifactTypesToDelete", js.Array(value :_*))
+    inline def setArtifactTypesToDeleteVarargs(value: String*): Self = StObject.set(x, "artifactTypesToDelete", js.Array(value*))
     
     inline def setArtifacts(value: js.Array[String]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    inline def setArtifactsVarargs(value: String*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: String*): Self = StObject.set(x, "artifacts", js.Array(value*))
     
     inline def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
-    inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value*))
     
     inline def setDaysToKeep(value: Double): Self = StObject.set(x, "daysToKeep", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.date
 import typings.arcgisJsApi.arcgisJsApiStrings.double
 import typings.arcgisJsApi.arcgisJsApiStrings.field
 import typings.arcgisJsApi.arcgisJsApiStrings.long
-import typings.arcgisJsApi.arcgisJsApiStrings.string
+import typings.arcgisJsApi.arcgisJsApiStrings.string_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +26,16 @@ trait ParameterValue
   /**
     * Specifies the parameter's data type.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ParameterValue.html#dataType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#dataType)
     */
-  var dataType: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string | `multi-value` = js.native
+  var dataType: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string_ | `multi-value` = js.native
   
   /**
     * The value of the parameter.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ParameterValue.html#value)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#value)
     */
-  var value: js.Any = js.native
+  var value: Boolean | DataFile | js.Date | Double | FeatureSet | Field | LinearUnit | RasterData | String | (js.Array[
+    Boolean | DataFile | js.Date | Double | FeatureSet | Field | LinearUnit | RasterData | String
+  ]) = js.native
 }

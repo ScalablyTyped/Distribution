@@ -15,14 +15,8 @@ trait ITrace extends StObject {
   /** Trace cachePolicy */
   var cachePolicy: js.UndefOr[ICachePolicy | Null] = js.undefined
   
-  /** Trace clientAddress */
-  var clientAddress: js.UndefOr[String | Null] = js.undefined
-  
   /** Trace clientName */
   var clientName: js.UndefOr[String | Null] = js.undefined
-  
-  /** Trace clientReferenceId */
-  var clientReferenceId: js.UndefOr[String | Null] = js.undefined
   
   /** Trace clientVersion */
   var clientVersion: js.UndefOr[String | Null] = js.undefined
@@ -36,6 +30,9 @@ trait ITrace extends StObject {
   /** Trace endTime */
   var endTime: js.UndefOr[ITimestamp | Null] = js.undefined
   
+  /** Trace fieldExecutionWeight */
+  var fieldExecutionWeight: js.UndefOr[Double | Null] = js.undefined
+  
   /** Trace forbiddenOperation */
   var forbiddenOperation: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -44,9 +41,6 @@ trait ITrace extends StObject {
   
   /** Trace http */
   var http: js.UndefOr[IHTTP | Null] = js.undefined
-  
-  /** Trace legacySignatureNeedsResigning */
-  var legacySignatureNeedsResigning: js.UndefOr[String | Null] = js.undefined
   
   /** Trace persistedQueryHit */
   var persistedQueryHit: js.UndefOr[Boolean | Null] = js.undefined
@@ -90,23 +84,11 @@ object ITrace {
     
     inline def setCachePolicyUndefined: Self = StObject.set(x, "cachePolicy", js.undefined)
     
-    inline def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
-    
-    inline def setClientAddressNull: Self = StObject.set(x, "clientAddress", null)
-    
-    inline def setClientAddressUndefined: Self = StObject.set(x, "clientAddress", js.undefined)
-    
     inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     
     inline def setClientNameNull: Self = StObject.set(x, "clientName", null)
     
     inline def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
-    
-    inline def setClientReferenceId(value: String): Self = StObject.set(x, "clientReferenceId", value.asInstanceOf[js.Any])
-    
-    inline def setClientReferenceIdNull: Self = StObject.set(x, "clientReferenceId", null)
-    
-    inline def setClientReferenceIdUndefined: Self = StObject.set(x, "clientReferenceId", js.undefined)
     
     inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     
@@ -132,6 +114,12 @@ object ITrace {
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
+    inline def setFieldExecutionWeight(value: Double): Self = StObject.set(x, "fieldExecutionWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFieldExecutionWeightNull: Self = StObject.set(x, "fieldExecutionWeight", null)
+    
+    inline def setFieldExecutionWeightUndefined: Self = StObject.set(x, "fieldExecutionWeight", js.undefined)
+    
     inline def setForbiddenOperation(value: Boolean): Self = StObject.set(x, "forbiddenOperation", value.asInstanceOf[js.Any])
     
     inline def setForbiddenOperationNull: Self = StObject.set(x, "forbiddenOperation", null)
@@ -149,12 +137,6 @@ object ITrace {
     inline def setHttpNull: Self = StObject.set(x, "http", null)
     
     inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
-    
-    inline def setLegacySignatureNeedsResigning(value: String): Self = StObject.set(x, "legacySignatureNeedsResigning", value.asInstanceOf[js.Any])
-    
-    inline def setLegacySignatureNeedsResigningNull: Self = StObject.set(x, "legacySignatureNeedsResigning", null)
-    
-    inline def setLegacySignatureNeedsResigningUndefined: Self = StObject.set(x, "legacySignatureNeedsResigning", js.undefined)
     
     inline def setPersistedQueryHit(value: Boolean): Self = StObject.set(x, "persistedQueryHit", value.asInstanceOf[js.Any])
     

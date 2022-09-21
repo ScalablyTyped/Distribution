@@ -10,15 +10,12 @@ A per-spec XML serializer implementation
 | ------------------ | :-------------: |
 | Full name          | w3c-xmlserializer |
 | Keywords           | dom, w3c, xml, xmlserializer |
-| # releases         | 5 |
-| # dependents       | 55 |
-| # downloads        | 296901232 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.778655433333333E7 |
+| # stars            | 13.0 |
 
 ## Links
-- [Homepage](https://github.com/jsdom/w3c-xmlserializer#readme)
-- [Bugs](https://github.com/jsdom/w3c-xmlserializer/issues)
-- [Repository](https://github.com/jsdom/w3c-xmlserializer)
 - [Npm](https://www.npmjs.com/package/w3c-xmlserializer)
     
 

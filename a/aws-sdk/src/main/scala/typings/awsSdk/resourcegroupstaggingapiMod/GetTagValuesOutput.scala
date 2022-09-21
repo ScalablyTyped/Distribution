@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetTagValuesOutput extends StObject {
   
   /**
-    * A string that indicates that the response contains more data than can be returned in a single response. To receive additional data, specify this string for the PaginationToken value in a subsequent request.
+    * A string that indicates that there is more data available than this response contains. To receive the next part of the response, specify this response value as the PaginationToken value in the request for the next page.
     */
   var PaginationToken: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.PaginationToken] = js.undefined
   
   /**
-    * A list of all tag values for the specified key in the AWS account.
+    * A list of all tag values for the specified key currently used in the specified Amazon Web Services Region for the calling account.
     */
   var TagValues: js.UndefOr[TagValuesOutputList] = js.undefined
 }
@@ -33,6 +33,6 @@ object GetTagValuesOutput {
     
     inline def setTagValuesUndefined: Self = StObject.set(x, "TagValues", js.undefined)
     
-    inline def setTagValuesVarargs(value: TagValue*): Self = StObject.set(x, "TagValues", js.Array(value :_*))
+    inline def setTagValuesVarargs(value: TagValue*): Self = StObject.set(x, "TagValues", js.Array(value*))
   }
 }

@@ -152,8 +152,8 @@ trait Workbooks extends StObject {
     Space: Unit,
     Other: Unit,
     OtherChar: Unit,
-    FieldInfo: js.UndefOr[SafeArray[js.Any]],
-    TextVisualLayout: js.UndefOr[js.Any],
+    FieldInfo: js.UndefOr[SafeArray[Any]],
+    TextVisualLayout: js.UndefOr[Any],
     DecimalSeparator: js.UndefOr[String],
     ThousandsSeparator: js.UndefOr[String],
     TrailingMinusNumbers: js.UndefOr[Boolean],
@@ -173,8 +173,8 @@ trait Workbooks extends StObject {
     Space: js.UndefOr[Boolean],
     Other: js.UndefOr[`true`],
     OtherChar: js.UndefOr[String],
-    FieldInfo: js.UndefOr[SafeArray[js.Any]],
-    TextVisualLayout: js.UndefOr[js.Any],
+    FieldInfo: js.UndefOr[SafeArray[Any]],
+    TextVisualLayout: js.UndefOr[Any],
     DecimalSeparator: js.UndefOr[String],
     ThousandsSeparator: js.UndefOr[String],
     TrailingMinusNumbers: js.UndefOr[Boolean],
@@ -195,8 +195,8 @@ trait Workbooks extends StObject {
     Space: js.UndefOr[Boolean],
     Other: js.UndefOr[Boolean],
     OtherChar: Unit,
-    FieldInfo: js.UndefOr[SafeArray[js.Any]],
-    TextVisualLayout: js.UndefOr[js.Any],
+    FieldInfo: js.UndefOr[SafeArray[Any]],
+    TextVisualLayout: js.UndefOr[Any],
     DecimalSeparator: js.UndefOr[String],
     ThousandsSeparator: js.UndefOr[String],
     TrailingMinusNumbers: js.UndefOr[Boolean],
@@ -210,64 +210,64 @@ trait Workbooks extends StObject {
   def OpenXML(Filename: String, Stylesheets: SafeArray[String]): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: SafeArray[String], LoadOption: XlXmlLoadOption): Workbook = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Workbook = js.native
+  def _Default(Index: Any): Workbook = js.native
   
   def _Open(
     Filename: String,
-    UpdateLinks: js.UndefOr[js.Any],
-    ReadOnly: js.UndefOr[js.Any],
-    Format: js.UndefOr[js.Any],
-    Password: js.UndefOr[js.Any],
-    WriteResPassword: js.UndefOr[js.Any],
-    IgnoreReadOnlyRecommended: js.UndefOr[js.Any],
-    Origin: js.UndefOr[js.Any],
-    Delimiter: js.UndefOr[js.Any],
-    Editable: js.UndefOr[js.Any],
-    Notify: js.UndefOr[js.Any],
-    Converter: js.UndefOr[js.Any],
-    AddToMru: js.UndefOr[js.Any]
+    UpdateLinks: js.UndefOr[Any],
+    ReadOnly: js.UndefOr[Any],
+    Format: js.UndefOr[Any],
+    Password: js.UndefOr[Any],
+    WriteResPassword: js.UndefOr[Any],
+    IgnoreReadOnlyRecommended: js.UndefOr[Any],
+    Origin: js.UndefOr[Any],
+    Delimiter: js.UndefOr[Any],
+    Editable: js.UndefOr[Any],
+    Notify: js.UndefOr[Any],
+    Converter: js.UndefOr[Any],
+    AddToMru: js.UndefOr[Any]
   ): Workbook = js.native
   
   /** @param TextQualifier [TextQualifier=1] */
   def _OpenText(
     Filename: String,
-    Origin: js.Any,
-    StartRow: js.Any,
-    DataType: js.Any,
+    Origin: Any,
+    StartRow: Any,
+    DataType: Any,
     TextQualifier: js.UndefOr[XlTextQualifier],
-    ConsecutiveDelimiter: js.UndefOr[js.Any],
-    Tab: js.UndefOr[js.Any],
-    Semicolon: js.UndefOr[js.Any],
-    Comma: js.UndefOr[js.Any],
-    Space: js.UndefOr[js.Any],
-    Other: js.UndefOr[js.Any],
-    OtherChar: js.UndefOr[js.Any],
-    FieldInfo: js.UndefOr[js.Any],
-    TextVisualLayout: js.UndefOr[js.Any],
-    DecimalSeparator: js.UndefOr[js.Any],
-    ThousandsSeparator: js.UndefOr[js.Any]
+    ConsecutiveDelimiter: js.UndefOr[Any],
+    Tab: js.UndefOr[Any],
+    Semicolon: js.UndefOr[Any],
+    Comma: js.UndefOr[Any],
+    Space: js.UndefOr[Any],
+    Other: js.UndefOr[Any],
+    OtherChar: js.UndefOr[Any],
+    FieldInfo: js.UndefOr[Any],
+    TextVisualLayout: js.UndefOr[Any],
+    DecimalSeparator: js.UndefOr[Any],
+    ThousandsSeparator: js.UndefOr[Any]
   ): Unit = js.native
   
   def _OpenXML(Filename: String): Workbook = js.native
-  def _OpenXML(Filename: String, Stylesheets: js.Any): Workbook = js.native
+  def _OpenXML(Filename: String, Stylesheets: Any): Workbook = js.native
   
   /** @param TextQualifier [TextQualifier=1] */
   def __OpenText(
     Filename: String,
-    Origin: js.Any,
-    StartRow: js.Any,
-    DataType: js.Any,
+    Origin: Any,
+    StartRow: Any,
+    DataType: Any,
     TextQualifier: js.UndefOr[XlTextQualifier],
-    ConsecutiveDelimiter: js.UndefOr[js.Any],
-    Tab: js.UndefOr[js.Any],
-    Semicolon: js.UndefOr[js.Any],
-    Comma: js.UndefOr[js.Any],
-    Space: js.UndefOr[js.Any],
-    Other: js.UndefOr[js.Any],
-    OtherChar: js.UndefOr[js.Any],
-    FieldInfo: js.UndefOr[js.Any],
-    TextVisualLayout: js.UndefOr[js.Any]
+    ConsecutiveDelimiter: js.UndefOr[Any],
+    Tab: js.UndefOr[Any],
+    Semicolon: js.UndefOr[Any],
+    Comma: js.UndefOr[Any],
+    Space: js.UndefOr[Any],
+    Other: js.UndefOr[Any],
+    OtherChar: js.UndefOr[Any],
+    FieldInfo: js.UndefOr[Any],
+    TextVisualLayout: js.UndefOr[Any]
   ): Unit = js.native
 }

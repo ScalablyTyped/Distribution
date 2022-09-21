@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRichEditKeyUpEventArgs")
 @js.native
-class ASPxClientRichEditKeyUpEventArgs protected ()
+open class ASPxClientRichEditKeyUpEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRichEditKeyUpEventArgs {
   /**
     * Initializes a new instance of the ASPxClientRichEditKeyUpEventArgs object. For internal use only.
     * @param htmlEvent A DHTML event object that relates to the processed event.
     */
-  def this(htmlEvent: js.Any) = this()
+  def this(htmlEvent: Any) = this()
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
 }

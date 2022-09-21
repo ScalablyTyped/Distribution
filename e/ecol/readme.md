@@ -10,10 +10,10 @@ Event Collections
 | ------------------ | :-------------: |
 | Full name          | ecol |
 | Keywords           | STL, TSTL, standard template library, event, collection, iterator, VectorCollection, ListCollection, DequeCollection, TreeSetCollection, TreeMultiSetCollection, HashSetCollection, HashMultiSetCollection, TreeMapCollection, TreeMultiMapCollection, HashMapCollection, HashMultiMapCollection |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 57557 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2704.0 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/samchon/ecol)

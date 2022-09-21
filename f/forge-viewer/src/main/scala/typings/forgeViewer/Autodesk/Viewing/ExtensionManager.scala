@@ -18,7 +18,7 @@ trait ExtensionManager extends StObject {
   
   def getRegisteredExtensions(): js.Array[Id]
   
-  def popuplateOptions(options: js.Any): Unit
+  def popuplateOptions(options: Any): Unit
   
   def registerExtension(extensionId: String, `extension`: js.Object): Boolean
   
@@ -36,7 +36,7 @@ object ExtensionManager {
     getExtension: String => Extension | Null,
     getExternalPath: String => String | Null,
     getRegisteredExtensions: () => js.Array[Id],
-    popuplateOptions: js.Any => Unit,
+    popuplateOptions: Any => Unit,
     registerExtension: (String, js.Object) => Boolean,
     registerExternalExtension: (String, String) => Boolean,
     unregisterExtension: String => Boolean,
@@ -58,7 +58,7 @@ object ExtensionManager {
     
     inline def setGetRegisteredExtensions(value: () => js.Array[Id]): Self = StObject.set(x, "getRegisteredExtensions", js.Any.fromFunction0(value))
     
-    inline def setPopuplateOptions(value: js.Any => Unit): Self = StObject.set(x, "popuplateOptions", js.Any.fromFunction1(value))
+    inline def setPopuplateOptions(value: Any => Unit): Self = StObject.set(x, "popuplateOptions", js.Any.fromFunction1(value))
     
     inline def setRegisterExtension(value: (String, js.Object) => Boolean): Self = StObject.set(x, "registerExtension", js.Any.fromFunction2(value))
     

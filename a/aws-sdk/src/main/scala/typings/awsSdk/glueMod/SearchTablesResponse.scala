@@ -33,6 +33,6 @@ object SearchTablesResponse {
     
     inline def setTableListUndefined: Self = StObject.set(x, "TableList", js.undefined)
     
-    inline def setTableListVarargs(value: Table*): Self = StObject.set(x, "TableList", js.Array(value :_*))
+    inline def setTableListVarargs(value: Table*): Self = StObject.set(x, "TableList", js.Array(value*))
   }
 }

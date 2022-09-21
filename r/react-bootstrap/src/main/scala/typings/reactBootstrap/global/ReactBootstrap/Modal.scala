@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Modal")
 @js.native
-class Modal ()
+open class Modal ()
   extends typings.reactBootstrap.mod.Modal
 object Modal {
   
@@ -18,7 +18,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Modal.Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.reactBootstrap.modalBodyMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Modal.Body")
@@ -29,7 +29,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Modal.Dialog")
   @js.native
-  class Dialog ()
+  open class Dialog ()
     extends typings.reactBootstrap.modalDialogMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Modal.Dialog")
@@ -40,7 +40,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Modal.Footer")
   @js.native
-  class Footer ()
+  open class Footer ()
     extends typings.reactBootstrap.modalFooterMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Modal.Footer")
@@ -51,7 +51,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Modal.Header")
   @js.native
-  class Header ()
+  open class Header ()
     extends typings.reactBootstrap.modalHeaderMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Modal.Header")
@@ -62,7 +62,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Modal.Title")
   @js.native
-  class Title ()
+  open class Title ()
     extends typings.reactBootstrap.modalTitleMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Modal.Title")

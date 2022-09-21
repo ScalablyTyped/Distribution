@@ -1,7 +1,7 @@
 
 # Scala.js typings for toml
 
-Typings are for version 2.3.6
+Typings are for version 3.0.0
 
 ## Library description:
 TOML parser for Node.js (parses TOML spec v0.4.0)
@@ -10,10 +10,10 @@ TOML parser for Node.js (parses TOML spec v0.4.0)
 | ------------------ | :-------------: |
 | Full name          | toml |
 | Keywords           | toml, parser |
-| # releases         | 3 |
-| # dependents       | 458 |
-| # downloads        | 28887368 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2664079.0 |
+| # stars            | 269.0 |
 
 ## Links
 - [Homepage](https://github.com/BinaryMuse/toml-node#readme)

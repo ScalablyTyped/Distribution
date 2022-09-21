@@ -3,7 +3,7 @@ package typings.reactVirtualized.esGridMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
-import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCache
+import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCacheInterface
 import typings.reactVirtualized.mod.Alignment
 import typings.reactVirtualized.mod.Index
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,7 @@ trait GridCoreProps
   * Check the following link if you want to know more
   * https://github.com/bvaughn/react-virtualized#pass-thru-props
   */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   var `aria-label`: js.UndefOr[String] = js.undefined
   
@@ -79,7 +79,7 @@ trait GridCoreProps
     * If CellMeasurer is used to measure this Grid's children, this should be a pointer to its CellMeasurerCache.
     * A shared CellMeasurerCache reference enables Grid and CellMeasurer to share measurement data.
     */
-  var deferredMeasurementCache: js.UndefOr[CellMeasurerCache] = js.undefined
+  var deferredMeasurementCache: js.UndefOr[CellMeasurerCacheInterface] = js.undefined
   
   /**
     * Used to estimate the total width of a Grid before all of its columns have actually been measured.
@@ -124,19 +124,19 @@ trait GridCoreProps
     * This callback can be used to sync scrolling between lists, tables, or grids.
     * ({ clientHeight, clientWidth, scrollHeight, scrollLeft, scrollTop, scrollWidth }): void
     */
-  var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, js.Any]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, Any]] = js.undefined
   
   /**
     * Called whenever a horizontal or vertical scrollbar is added or removed.
     * ({ horizontal: boolean, size: number, vertical: boolean }): void
     */
-  var onScrollbarPresenceChange: js.UndefOr[js.Function1[/* params */ ScrollbarPresenceParams, js.Any]] = js.undefined
+  var onScrollbarPresenceChange: js.UndefOr[js.Function1[/* params */ ScrollbarPresenceParams, Any]] = js.undefined
   
   /**
     * Callback invoked with information about the section of the Grid that was just rendered.
     * ({ columnStartIndex, columnStopIndex, rowStartIndex, rowStopIndex }): void
     */
-  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, js.Any]] = js.undefined
+  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, Any]] = js.undefined
   
   /**
     * Number of columns to render before/after the visible section of the grid.
@@ -270,7 +270,7 @@ object GridCoreProps {
     
     inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    inline def setDeferredMeasurementCache(value: CellMeasurerCache): Self = StObject.set(x, "deferredMeasurementCache", value.asInstanceOf[js.Any])
+    inline def setDeferredMeasurementCache(value: CellMeasurerCacheInterface): Self = StObject.set(x, "deferredMeasurementCache", value.asInstanceOf[js.Any])
     
     inline def setDeferredMeasurementCacheUndefined: Self = StObject.set(x, "deferredMeasurementCache", js.undefined)
     
@@ -300,15 +300,15 @@ object GridCoreProps {
     
     inline def setNoContentRendererUndefined: Self = StObject.set(x, "noContentRenderer", js.undefined)
     
-    inline def setOnScroll(value: /* params */ ScrollParams => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: /* params */ ScrollParams => Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => js.Any): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction1(value))
+    inline def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => Any): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction1(value))
     
     inline def setOnScrollbarPresenceChangeUndefined: Self = StObject.set(x, "onScrollbarPresenceChange", js.undefined)
     
-    inline def setOnSectionRendered(value: /* params */ SectionRenderedParams => js.Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
+    inline def setOnSectionRendered(value: /* params */ SectionRenderedParams => Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
     
     inline def setOnSectionRenderedUndefined: Self = StObject.set(x, "onSectionRendered", js.undefined)
     

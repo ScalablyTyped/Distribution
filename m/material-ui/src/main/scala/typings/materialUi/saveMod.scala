@@ -10,10 +10,10 @@ object saveMod {
   
   @JSImport("material-ui/svg-icons/content/save", JSImport.Default)
   @js.native
-  class default () extends ContentSave
+  open class default () extends ContentSave
   
   @JSImport("material-ui/svg-icons/content/save", "ContentSave")
   @js.native
-  class ContentSave ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentSave ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -10,15 +10,13 @@ Simple, unobtrusive authentication for Node.js.
 | ------------------ | :-------------: |
 | Full name          | passport |
 | Keywords           | express, connect, auth, authn, authentication |
-| # releases         | 1 |
-| # dependents       | 2547 |
-| # downloads        | 44966171 |
-| # stars            | 527 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 6422729.0 |
+| # stars            | 20352.0 |
 
 ## Links
-- [Homepage](http://passportjs.org/)
-- [Bugs](http://github.com/jaredhanson/passport/issues)
-- [Repository](https://github.com/jaredhanson/passport)
+- [Homepage](https://www.passportjs.org/)
 - [Npm](https://www.npmjs.com/package/passport)
     
 

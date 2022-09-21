@@ -20,6 +20,6 @@ object IROOM_FIND_RESULT {
     
     inline def setRooms(value: js.Array[SFSRoom]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     
-    inline def setRoomsVarargs(value: SFSRoom*): Self = StObject.set(x, "rooms", js.Array(value :_*))
+    inline def setRoomsVarargs(value: SFSRoom*): Self = StObject.set(x, "rooms", js.Array(value*))
   }
 }

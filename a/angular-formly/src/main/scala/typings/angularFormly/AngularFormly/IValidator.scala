@@ -24,11 +24,11 @@ object IValidator {
     
     inline def setExpression(value: String | IExpressionFunction): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "expression", js.Any.fromFunction3(value))
+    inline def setExpressionFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "expression", js.Any.fromFunction3(value))
     
     inline def setMessage(value: String | IExpressionFunction): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setMessageFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
+    inline def setMessageFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }

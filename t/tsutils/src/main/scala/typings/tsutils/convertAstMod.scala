@@ -17,8 +17,10 @@ object convertAstMod {
   
   trait ConvertedAst extends StObject {
     
+    /** depth-first array of all nodes excluding SourceFile */
     var flat: js.Array[Node]
     
+    /** nodes wrapped in a data structure with useful links */
     var wrapped: WrappedAst
   }
   object ConvertedAst {
@@ -32,7 +34,7 @@ object convertAstMod {
       
       inline def setFlat(value: js.Array[Node]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
-      inline def setFlatVarargs(value: Node*): Self = StObject.set(x, "flat", js.Array(value :_*))
+      inline def setFlatVarargs(value: Node*): Self = StObject.set(x, "flat", js.Array(value*))
       
       inline def setWrapped(value: WrappedAst): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
     }
@@ -40,16 +42,22 @@ object convertAstMod {
   
   trait NodeWrap extends StObject {
     
+    /** All immediate children of `node` that would be visited by `ts.forEachChild(node, cb)`. */
     var children: js.Array[NodeWrap]
     
+    /** The SyntaxKind of `node`. */
     var kind: SyntaxKind
     
+    /** Link to the next NodeWrap, depth-first. */
     var next: js.UndefOr[NodeWrap] = js.undefined
     
+    /** The real AST node. */
     var node: Node
     
+    /** Link to the parent NodeWrap */
     var parent: js.UndefOr[NodeWrap] = js.undefined
     
+    /** Link to the next NodeWrap skipping all children of the current node. */
     var skip: js.UndefOr[NodeWrap] = js.undefined
   }
   object NodeWrap {
@@ -63,7 +71,7 @@ object convertAstMod {
       
       inline def setChildren(value: js.Array[NodeWrap]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: NodeWrap*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: NodeWrap*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setKind(value: SyntaxKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

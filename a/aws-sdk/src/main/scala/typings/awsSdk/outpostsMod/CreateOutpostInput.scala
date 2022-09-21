@@ -14,7 +14,20 @@ trait CreateOutpostInput extends StObject {
   
   var Name: OutpostName
   
+  /**
+    *  The ID or the Amazon Resource Name (ARN) of the site.   In requests, Amazon Web Services Outposts accepts the Amazon Resource Name (ARN) or an ID for Outposts and sites throughout the Outposts Query API. To address backwards compatibility, the parameter names OutpostID or SiteID remain in use. Despite the parameter name, you can make the request with an ARN. 
+    */
   var SiteId: typings.awsSdk.outpostsMod.SiteId
+  
+  /**
+    *  The type of hardware for this Outpost. 
+    */
+  var SupportedHardwareType: js.UndefOr[typings.awsSdk.outpostsMod.SupportedHardwareType] = js.undefined
+  
+  /**
+    * The tags to apply to the Outpost.
+    */
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateOutpostInput {
   
@@ -40,5 +53,13 @@ object CreateOutpostInput {
     inline def setName(value: OutpostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedHardwareType(value: SupportedHardwareType): Self = StObject.set(x, "SupportedHardwareType", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedHardwareTypeUndefined: Self = StObject.set(x, "SupportedHardwareType", js.undefined)
+    
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

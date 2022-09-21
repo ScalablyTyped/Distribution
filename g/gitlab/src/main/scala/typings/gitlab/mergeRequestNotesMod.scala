@@ -10,7 +10,7 @@ object mergeRequestNotesMod {
   
   @JSImport("gitlab/dist/types/core/services/MergeRequestNotes", "MergeRequestNotes")
   @js.native
-  class MergeRequestNotes protected () extends ResourceNotes {
+  open class MergeRequestNotes protected () extends ResourceNotes {
     def this(options: BaseServiceOptions) = this()
   }
 }

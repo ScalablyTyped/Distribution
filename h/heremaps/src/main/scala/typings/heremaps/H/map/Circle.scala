@@ -71,7 +71,7 @@ object Circle {
     */
   trait Options extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var max: js.UndefOr[Double] = js.undefined
     
@@ -96,7 +96,7 @@ object Circle {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

@@ -40,7 +40,7 @@ object armProviderMod {
       
       inline def setResourceTypes(value: js.Array[ResourceType]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
       
-      inline def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
+      inline def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value*))
     }
   }
   
@@ -72,11 +72,11 @@ object armProviderMod {
       
       inline def setApiVersions(value: js.Array[String]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
       
-      inline def setApiVersionsVarargs(value: String*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
+      inline def setApiVersionsVarargs(value: String*): Self = StObject.set(x, "apiVersions", js.Array(value*))
       
       inline def setLocations(value: js.Array[String]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value*))
       
       inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     }

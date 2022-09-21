@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.AppBar")
 @js.native
-class AppBar protected ()
+open class AppBar protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.AppBar {
   def this(element: Element) = this()

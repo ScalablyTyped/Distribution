@@ -11,14 +11,12 @@ Single component release of dimmer
 | Full name          | semantic-ui-dimmer |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 23972 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 15959.666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)
-- [Bugs](https://github.com/Semantic-Org/Semantic-UI/issues)
-- [Repository](https://github.com/Semantic-Org/UI-Dimmer)
 - [Npm](https://www.npmjs.com/package/semantic-ui-dimmer)
     
 

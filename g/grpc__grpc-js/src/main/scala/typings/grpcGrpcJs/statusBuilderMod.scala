@@ -11,18 +11,18 @@ object statusBuilderMod {
   
   @JSImport("@grpc/grpc-js/build/src/status-builder", "StatusBuilder")
   @js.native
-  class StatusBuilder () extends StObject {
+  open class StatusBuilder () extends StObject {
     
     /**
       * Builds the status object.
       */
     def build(): PartialStatusObject = js.native
     
-    /* private */ var code: js.Any = js.native
+    /* private */ var code: Any = js.native
     
-    /* private */ var details: js.Any = js.native
+    /* private */ var details: Any = js.native
     
-    /* private */ var metadata: js.Any = js.native
+    /* private */ var metadata: Any = js.native
     
     /**
       * Adds a status code to the builder.

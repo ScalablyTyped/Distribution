@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Naver Layers
 @JSGlobal("naver.maps.LabelLayer")
 @js.native
-class LabelLayer protected ()
+open class LabelLayer protected ()
   extends StObject
      with typings.navermaps.naver.maps.Layer {
-  def this(name: String, registry: typings.navermaps.naver.maps.ImageMapType, option: js.Any) = this()
+  def this(name: String, registry: typings.navermaps.naver.maps.ImageMapType, option: Any) = this()
 }

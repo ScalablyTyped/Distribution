@@ -12,7 +12,7 @@ object webXRHTCViveMotionControllerMod {
   
   @JSImport("babylonjs/XR/motionController/webXRHTCViveMotionController", "WebXRHTCViveMotionController")
   @js.native
-  class WebXRHTCViveMotionController protected () extends WebXRAbstractMotionController {
+  open class WebXRHTCViveMotionController protected () extends WebXRAbstractMotionController {
     /**
       * Create a new Vive motion controller object
       * @param scene the scene to use to create this controller
@@ -25,7 +25,7 @@ object webXRHTCViveMotionControllerMod {
       handedness: MotionControllerHandedness
     ) = this()
     
-    /* private */ var _modelRootNode: js.Any = js.native
+    /* private */ var _modelRootNode: Any = js.native
     
     /* protected */ def _updateModel(): Unit = js.native
   }

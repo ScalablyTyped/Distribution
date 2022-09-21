@@ -9,12 +9,12 @@ trait HyperParameterTuningJobSummary extends StObject {
   /**
     * The date and time that the tuning job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The date and time that the tuning job ended.
     */
-  var HyperParameterTuningEndTime: js.UndefOr[Timestamp] = js.undefined
+  var HyperParameterTuningEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the tuning job.
@@ -34,7 +34,7 @@ trait HyperParameterTuningJobSummary extends StObject {
   /**
     * The date and time that the tuning job was modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ObjectiveStatusCounters object that specifies the numbers of training jobs, categorized by objective metric status, that this tuning job launched.
@@ -47,7 +47,7 @@ trait HyperParameterTuningJobSummary extends StObject {
   var ResourceLimits: js.UndefOr[typings.awsSdk.sagemakerMod.ResourceLimits] = js.undefined
   
   /**
-    * Specifies the search strategy hyperparameter tuning uses to choose which hyperparameters to use for each iteration. Currently, the only valid value is Bayesian.
+    * Specifies the search strategy hyperparameter tuning uses to choose which hyperparameters to evaluate at each iteration.
     */
   var Strategy: HyperParameterTuningJobStrategyType
   
@@ -59,7 +59,7 @@ trait HyperParameterTuningJobSummary extends StObject {
 object HyperParameterTuningJobSummary {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     HyperParameterTuningJobArn: HyperParameterTuningJobArn,
     HyperParameterTuningJobName: HyperParameterTuningJobName,
     HyperParameterTuningJobStatus: HyperParameterTuningJobStatus,
@@ -73,9 +73,9 @@ object HyperParameterTuningJobSummary {
   
   extension [Self <: HyperParameterTuningJobSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    inline def setHyperParameterTuningEndTime(value: Timestamp): Self = StObject.set(x, "HyperParameterTuningEndTime", value.asInstanceOf[js.Any])
+    inline def setHyperParameterTuningEndTime(value: js.Date): Self = StObject.set(x, "HyperParameterTuningEndTime", value.asInstanceOf[js.Any])
     
     inline def setHyperParameterTuningEndTimeUndefined: Self = StObject.set(x, "HyperParameterTuningEndTime", js.undefined)
     
@@ -85,7 +85,7 @@ object HyperParameterTuningJobSummary {
     
     inline def setHyperParameterTuningJobStatus(value: HyperParameterTuningJobStatus): Self = StObject.set(x, "HyperParameterTuningJobStatus", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

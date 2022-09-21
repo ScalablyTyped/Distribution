@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsBackendWebgl.anon
 
 import typings.tensorflowTfjsBackendWebgl.backendWebglMod.MathBackendWebGL
-import typings.tensorflowTfjsCore.kernelNamesMod.FFTInputs
+import typings.tensorflowTfjsCore.kernelNamesMod.BroadcastArgsInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +10,11 @@ trait BackendMathBackendWebGL extends StObject {
   
   var backend: MathBackendWebGL
   
-  var inputs: FFTInputs
+  var inputs: BroadcastArgsInputs
 }
 object BackendMathBackendWebGL {
   
-  inline def apply(backend: MathBackendWebGL, inputs: FFTInputs): BackendMathBackendWebGL = {
+  inline def apply(backend: MathBackendWebGL, inputs: BroadcastArgsInputs): BackendMathBackendWebGL = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendMathBackendWebGL]
   }
@@ -23,6 +23,6 @@ object BackendMathBackendWebGL {
     
     inline def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    inline def setInputs(value: FFTInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: BroadcastArgsInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

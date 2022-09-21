@@ -21,10 +21,10 @@ object QuickplayCompetitiveStats {
     
     inline def setCompetitive(value: js.Array[Stat]): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
     
-    inline def setCompetitiveVarargs(value: Stat*): Self = StObject.set(x, "competitive", js.Array(value :_*))
+    inline def setCompetitiveVarargs(value: Stat*): Self = StObject.set(x, "competitive", js.Array(value*))
     
     inline def setQuickplay(value: js.Array[Stat]): Self = StObject.set(x, "quickplay", value.asInstanceOf[js.Any])
     
-    inline def setQuickplayVarargs(value: Stat*): Self = StObject.set(x, "quickplay", js.Array(value :_*))
+    inline def setQuickplayVarargs(value: Stat*): Self = StObject.set(x, "quickplay", js.Array(value*))
   }
 }

@@ -21,6 +21,6 @@ object Features {
     
     inline def setFeatures(value: js.Array[webgl]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    inline def setFeaturesVarargs(value: webgl*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: webgl*): Self = StObject.set(x, "features", js.Array(value*))
   }
 }

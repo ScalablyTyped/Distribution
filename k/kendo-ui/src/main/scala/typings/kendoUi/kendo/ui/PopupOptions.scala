@@ -9,7 +9,7 @@ trait PopupOptions extends StObject {
   
   var activate: js.UndefOr[js.Function1[/* e */ PopupActivateEvent, Unit]] = js.undefined
   
-  var adjustSize: js.UndefOr[js.Any] = js.undefined
+  var adjustSize: js.UndefOr[Any] = js.undefined
   
   var anchor: js.UndefOr[String | JQuery] = js.undefined
   
@@ -44,7 +44,7 @@ object PopupOptions {
     
     inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    inline def setAdjustSize(value: js.Any): Self = StObject.set(x, "adjustSize", value.asInstanceOf[js.Any])
+    inline def setAdjustSize(value: Any): Self = StObject.set(x, "adjustSize", value.asInstanceOf[js.Any])
     
     inline def setAdjustSizeUndefined: Self = StObject.set(x, "adjustSize", js.undefined)
     

@@ -10,10 +10,10 @@ UglifyJS plugin for webpack
 | ------------------ | :-------------: |
 | Full name          | uglifyjs-webpack-plugin |
 | Keywords           | uglify, uglify-js, uglify-es, webpack, webpack-plugin |
-| # releases         | 4 |
-| # dependents       | 1696 |
-| # downloads        | 96882309 |
-| # stars            | 17 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4765445.333333333 |
+| # stars            | 1368.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)

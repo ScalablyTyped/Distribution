@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiServerCodeEntry")
 @js.native
-class KiiServerCodeEntry ()
+open class KiiServerCodeEntry ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry

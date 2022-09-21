@@ -101,7 +101,7 @@ object mod {
       
       inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
-      inline def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value :_*))
+      inline def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value*))
       
       inline def setInlineRuntimeFunctions(value: Boolean): Self = StObject.set(x, "inlineRuntimeFunctions", value.asInstanceOf[js.Any])
       
@@ -121,5 +121,5 @@ object mod {
     }
   }
   
-  type TemplateLocals = StringDictionary[js.Any]
+  type TemplateLocals = StringDictionary[Any]
 }

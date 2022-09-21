@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Button")
 @js.native
-class Button protected () extends StObject {
+open class Button protected () extends StObject {
   def this(pin: String) = this()
   def this(pin: Double) = this()
   def this(pin: ButtonOption) = this()

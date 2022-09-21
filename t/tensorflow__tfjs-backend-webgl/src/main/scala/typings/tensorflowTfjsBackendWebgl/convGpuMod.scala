@@ -11,7 +11,7 @@ object convGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_gpu", "Conv2DProgram")
   @js.native
-  class Conv2DProgram protected ()
+  open class Conv2DProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -22,6 +22,62 @@ object convGpuMod {
     def this(convInfo: Conv2DInfo, addBias: Boolean, activation: Unit, hasPreluActivationWeights: Boolean) = this()
     def this(convInfo: Conv2DInfo, addBias: Unit, activation: String, hasPreluActivationWeights: Boolean) = this()
     def this(convInfo: Conv2DInfo, addBias: Unit, activation: Unit, hasPreluActivationWeights: Boolean) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Boolean,
+      activation: String,
+      hasPreluActivationWeights: Boolean,
+      hasLeakyreluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Boolean,
+      activation: String,
+      hasPreluActivationWeights: Unit,
+      hasLeakyreluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Boolean,
+      activation: Unit,
+      hasPreluActivationWeights: Boolean,
+      hasLeakyreluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Boolean,
+      activation: Unit,
+      hasPreluActivationWeights: Unit,
+      hasLeakyreluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Unit,
+      activation: String,
+      hasPreluActivationWeights: Boolean,
+      hasLeakyreluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Unit,
+      activation: String,
+      hasPreluActivationWeights: Unit,
+      hasLeakyreluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Unit,
+      activation: Unit,
+      hasPreluActivationWeights: Boolean,
+      hasLeakyreluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Unit,
+      activation: Unit,
+      hasPreluActivationWeights: Unit,
+      hasLeakyreluAlpha: Boolean
+    ) = this()
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native
@@ -35,7 +91,7 @@ object convGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_gpu", "Conv3DProgram")
   @js.native
-  class Conv3DProgram protected ()
+  open class Conv3DProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv3DInfo) = this()

@@ -23,7 +23,7 @@ object anon {
       
       inline def setBreakPoints(value: js.Array[js.Array[String | Double]]): Self = StObject.set(x, "breakPoints", value.asInstanceOf[js.Any])
       
-      inline def setBreakPointsVarargs(value: (js.Array[String | Double])*): Self = StObject.set(x, "breakPoints", js.Array(value :_*))
+      inline def setBreakPointsVarargs(value: (js.Array[String | Double])*): Self = StObject.set(x, "breakPoints", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }

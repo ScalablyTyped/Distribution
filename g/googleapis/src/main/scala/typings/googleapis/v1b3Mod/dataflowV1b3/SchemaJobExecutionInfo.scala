@@ -5,16 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Additional information about how a Cloud Dataflow job will be executed that
-  * isn&#39;t contained in the submitted job.
-  */
 trait SchemaJobExecutionInfo extends StObject {
   
   /**
     * A mapping from each stage to the information about that stage.
     */
-  var stages: js.UndefOr[StringDictionary[SchemaJobExecutionStageInfo]] = js.undefined
+  var stages: js.UndefOr[StringDictionary[SchemaJobExecutionStageInfo] | Null] = js.undefined
 }
 object SchemaJobExecutionInfo {
   
@@ -26,6 +22,8 @@ object SchemaJobExecutionInfo {
   extension [Self <: SchemaJobExecutionInfo](x: Self) {
     
     inline def setStages(value: StringDictionary[SchemaJobExecutionStageInfo]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
+    
+    inline def setStagesNull: Self = StObject.set(x, "stages", null)
     
     inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
   }

@@ -9,9 +9,9 @@ trait FollowCameraPointersInput
   extends StObject
      with BaseCameraPointersInput {
   
-  /* private */ var _warning: js.Any = js.native
+  /* private */ var _warning: Any = js.native
   
-  /* private */ var _warningCounter: js.Any = js.native
+  /* private */ var _warningCounter: Any = js.native
   
   /**
     * Defines the pointer angular sensibility along the X axis or how fast is

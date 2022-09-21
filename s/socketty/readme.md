@@ -11,14 +11,11 @@ Server side socketty, based on ws
 | Full name          | socketty |
 | Keywords           | websockets |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 689 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 63.0 |
+| # stars            | 2.0 |
 
 ## Links
-- [Homepage](https://github.com/Nax/socketty-node#readme)
-- [Bugs](https://github.com/Nax/socketty-node/issues)
-- [Repository](https://github.com/Nax/socketty-node)
 - [Npm](https://www.npmjs.com/package/socketty)
     
 

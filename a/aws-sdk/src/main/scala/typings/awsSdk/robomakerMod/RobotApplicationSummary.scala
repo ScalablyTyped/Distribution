@@ -14,7 +14,7 @@ trait RobotApplicationSummary extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the robot application was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the robot application.
@@ -44,7 +44,7 @@ object RobotApplicationSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     

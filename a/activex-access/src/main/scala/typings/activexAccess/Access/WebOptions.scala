@@ -25,7 +25,7 @@ trait WebOptions extends StObject {
   
   var OrganizeInFolder: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var TargetBrowser: MsoTargetBrowser
   
@@ -44,7 +44,7 @@ object WebOptions {
     IsMemberSafe: Double => Boolean,
     LocationOfComponents: String,
     OrganizeInFolder: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     TargetBrowser: MsoTargetBrowser,
     UseDefaultFolderSuffix: () => Unit,
     UseLongFileNames: Boolean
@@ -72,7 +72,7 @@ object WebOptions {
     
     inline def setOrganizeInFolder(value: Boolean): Self = StObject.set(x, "OrganizeInFolder", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setTargetBrowser(value: MsoTargetBrowser): Self = StObject.set(x, "TargetBrowser", value.asInstanceOf[js.Any])
     

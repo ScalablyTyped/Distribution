@@ -8,5 +8,5 @@ object updateDefaultBranchInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/UpdateDefaultBranchInput", "UpdateDefaultBranchInput")
   @js.native
-  val UpdateDefaultBranchInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateDefaultBranchInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

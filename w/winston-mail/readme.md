@@ -10,10 +10,10 @@ A mail transport for winston
 | ------------------ | :-------------: |
 | Full name          | winston-mail |
 | Keywords           | logging, sysadmin, tools, winston, email |
-| # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 172303 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 12156.0 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/wavded/winston-mail#readme)

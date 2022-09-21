@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.EasingFunction")
 @js.native
-class EasingFunction ()
+open class EasingFunction ()
   extends StObject
      with typings.babylonjs.BABYLON.EasingFunction {
   
   /* private */ /* CompleteClass */
-  var _easingMode: js.Any = js.native
+  var _easingMode: Any = js.native
   
   /**
-    * Given an input gradient between 0 and 1, this returns the corrseponding value
+    * Given an input gradient between 0 and 1, this returns the corresponding value
     * of the easing function.
     * The link below provides some of the most common examples of easing functions.
     * @see https://easings.net/
@@ -25,6 +25,7 @@ class EasingFunction ()
   override def ease(gradient: Double): Double = js.native
   
   /**
+    * @param gradient
     * @hidden
     */
   /* CompleteClass */
@@ -52,19 +53,19 @@ object EasingFunction {
     */
   @JSGlobal("BABYLON.EasingFunction.EASINGMODE_EASEIN")
   @js.native
-  val EASINGMODE_EASEIN: Double = js.native
+  val EASINGMODE_EASEIN: /* 0 */ Double = js.native
   
   /**
     * Interpolation uses EaseIn for the first half of the animation and EaseOut for the second half.
     */
   @JSGlobal("BABYLON.EasingFunction.EASINGMODE_EASEINOUT")
   @js.native
-  val EASINGMODE_EASEINOUT: Double = js.native
+  val EASINGMODE_EASEINOUT: /* 2 */ Double = js.native
   
   /**
     * Interpolation follows 100% interpolation minus the output of the formula associated with the easing function.
     */
   @JSGlobal("BABYLON.EasingFunction.EASINGMODE_EASEOUT")
   @js.native
-  val EASINGMODE_EASEOUT: Double = js.native
+  val EASINGMODE_EASEOUT: /* 1 */ Double = js.native
 }

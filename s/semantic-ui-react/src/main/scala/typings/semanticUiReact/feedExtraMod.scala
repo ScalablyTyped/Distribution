@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.HtmlImageProps
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
@@ -15,12 +15,12 @@ object feedExtraMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Feed/FeedExtra", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FeedExtraProps] = js.native
+  val default: FC[FeedExtraProps] = js.native
   
   trait FeedExtraProps
     extends StObject
        with StrictFeedExtraProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FeedExtraProps {
     
     inline def apply(): FeedExtraProps = {
@@ -32,7 +32,7 @@ object feedExtraMod extends Shortcut {
   trait StrictFeedExtraProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -58,7 +58,7 @@ object feedExtraMod extends Shortcut {
     
     extension [Self <: StrictFeedExtraProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -78,7 +78,7 @@ object feedExtraMod extends Shortcut {
       
       inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      inline def setImagesVarargs(value: SemanticShorthandCollection[HtmlImageProps]*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: SemanticShorthandCollection[HtmlImageProps]*): Self = StObject.set(x, "images", js.Array(value*))
       
       inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -86,8 +86,8 @@ object feedExtraMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[FeedExtraProps]
+  type _To = FC[FeedExtraProps]
   
   /* This means you don't have to write `default`, but can instead just say `feedExtraMod.foo` */
-  override def _to: StatelessComponent[FeedExtraProps] = default
+  override def _to: FC[FeedExtraProps] = default
 }

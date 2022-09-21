@@ -22,7 +22,7 @@ object anon {
       
       inline def setPlugins(value: js.Array[PluginObject | String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      inline def setPluginsVarargs(value: (PluginObject | String)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (PluginObject | String)*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

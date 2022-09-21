@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.DataBinPolygon")
 @js.native
-class DataBinPolygon ()
+open class DataBinPolygon ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.DataBinPolygon {
   

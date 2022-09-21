@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FileVersion")
 @js.native
-class FileVersion ()
+open class FileVersion ()
   extends StObject
      with typings.sharepoint.SP.FileVersion

@@ -63,6 +63,6 @@ object ListResourceRecordSetsResponse {
     
     inline def setResourceRecordSets(value: ResourceRecordSets): Self = StObject.set(x, "ResourceRecordSets", value.asInstanceOf[js.Any])
     
-    inline def setResourceRecordSetsVarargs(value: ResourceRecordSet*): Self = StObject.set(x, "ResourceRecordSets", js.Array(value :_*))
+    inline def setResourceRecordSetsVarargs(value: ResourceRecordSet*): Self = StObject.set(x, "ResourceRecordSets", js.Array(value*))
   }
 }

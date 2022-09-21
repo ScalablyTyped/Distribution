@@ -18,7 +18,7 @@ trait PlusStreamStreamRestoreOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var extras: js.UndefOr[js.Any] = js.undefined
+  var extras: js.UndefOr[Any] = js.undefined
   
   /**
     * 应用启动界面样式
@@ -55,7 +55,7 @@ object PlusStreamStreamRestoreOptions {
   
   extension [Self <: PlusStreamStreamRestoreOptions](x: Self) {
     
-    inline def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
     inline def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
     

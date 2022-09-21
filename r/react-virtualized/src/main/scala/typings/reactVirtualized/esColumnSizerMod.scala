@@ -10,16 +10,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esColumnSizerMod {
   
-  @JSImport("react-virtualized/dist/es/ColumnSizer", "ColumnSizer")
+  @JSImport("react-virtualized/dist/es/ColumnSizer", JSImport.Default)
   @js.native
-  class ColumnSizer protected ()
-    extends PureComponent[ColumnSizerProps, js.Object, js.Any] {
+  open class default protected () extends ColumnSizer {
     def this(props: ColumnSizerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColumnSizerProps, context: js.Any) = this()
+    def this(props: ColumnSizerProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/es/ColumnSizer", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/es/ColumnSizer", "default.propTypes")
+    @js.native
+    def propTypes: Children = js.native
+    inline def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-virtualized/dist/es/ColumnSizer", "ColumnSizer")
+  @js.native
+  open class ColumnSizer protected ()
+    extends PureComponent[ColumnSizerProps, js.Object, Any] {
+    def this(props: ColumnSizerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ColumnSizerProps, context: Any) = this()
   }
   /* static members */
   object ColumnSizer {
@@ -43,7 +66,7 @@ object esColumnSizerMod {
     * Check the following link if you want to know more
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * Function responsible for rendering a virtualized Grid.
@@ -103,11 +126,11 @@ object esColumnSizerMod {
     
     def getColumnWidth(): Double
     
-    var registerChild: js.Any
+    var registerChild: Any
   }
   object SizedColumnProps {
     
-    inline def apply(adjustedWidth: Double, columnWidth: Double, getColumnWidth: () => Double, registerChild: js.Any): SizedColumnProps = {
+    inline def apply(adjustedWidth: Double, columnWidth: Double, getColumnWidth: () => Double, registerChild: Any): SizedColumnProps = {
       val __obj = js.Dynamic.literal(adjustedWidth = adjustedWidth.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any], getColumnWidth = js.Any.fromFunction0(getColumnWidth), registerChild = registerChild.asInstanceOf[js.Any])
       __obj.asInstanceOf[SizedColumnProps]
     }
@@ -120,7 +143,7 @@ object esColumnSizerMod {
       
       inline def setGetColumnWidth(value: () => Double): Self = StObject.set(x, "getColumnWidth", js.Any.fromFunction0(value))
       
-      inline def setRegisterChild(value: js.Any): Self = StObject.set(x, "registerChild", value.asInstanceOf[js.Any])
+      inline def setRegisterChild(value: Any): Self = StObject.set(x, "registerChild", value.asInstanceOf[js.Any])
     }
   }
 }

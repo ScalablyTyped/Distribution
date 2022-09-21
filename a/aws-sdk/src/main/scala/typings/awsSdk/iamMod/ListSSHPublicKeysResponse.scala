@@ -42,6 +42,6 @@ object ListSSHPublicKeysResponse {
     
     inline def setSSHPublicKeysUndefined: Self = StObject.set(x, "SSHPublicKeys", js.undefined)
     
-    inline def setSSHPublicKeysVarargs(value: SSHPublicKeyMetadata*): Self = StObject.set(x, "SSHPublicKeys", js.Array(value :_*))
+    inline def setSSHPublicKeysVarargs(value: SSHPublicKeyMetadata*): Self = StObject.set(x, "SSHPublicKeys", js.Array(value*))
   }
 }

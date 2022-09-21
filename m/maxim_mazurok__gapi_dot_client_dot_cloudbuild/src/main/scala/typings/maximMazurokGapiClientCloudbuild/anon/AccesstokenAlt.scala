@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudbuild.anon
 
-import typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild.RepoSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,26 +22,29 @@ trait AccesstokenAlt extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. The ID to use for the GithubEnterpriseConfig, which will become the final component of the GithubEnterpriseConfig's resource name. ghe_config_id must meet the
+    * following requirements: + They must contain only alphanumeric characters and dashes. + They can be 1-64 characters long. + They must begin and end with an alphanumeric character
+    */
+  var gheConfigId: js.UndefOr[String] = js.undefined
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
+  /** Name of the parent project. For example: projects/{$project_number} or projects/{$project_id} */
+  var parent: String
+  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Required. ID of the project. */
-  var projectId: String
+  /** ID of the project. */
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Request body */
-  var resource: RepoSource
-  
-  /** Required. ID of the trigger. */
-  var triggerId: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +54,8 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(projectId: String, resource: RepoSource, triggerId: String): AccesstokenAlt = {
-    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], triggerId = triggerId.asInstanceOf[js.Any])
+  inline def apply(parent: String): AccesstokenAlt = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
   
@@ -79,6 +81,10 @@ object AccesstokenAlt {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setGheConfigId(value: String): Self = StObject.set(x, "gheConfigId", value.asInstanceOf[js.Any])
+    
+    inline def setGheConfigIdUndefined: Self = StObject.set(x, "gheConfigId", js.undefined)
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -87,19 +93,19 @@ object AccesstokenAlt {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: RepoSource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

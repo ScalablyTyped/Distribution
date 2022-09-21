@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.UI
 
-import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.UI.Notifications.BadgeTemplateType
@@ -16,7 +15,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.BadgeNotification")
   @js.native
-  class BadgeNotification protected ()
+  open class BadgeNotification protected ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.BadgeNotification {
     def this(content: XmlDocument) = this()
@@ -25,7 +24,7 @@ object Notifications {
     var content: XmlDocument = js.native
     
     /* CompleteClass */
-    var expirationTime: Date = js.native
+    var expirationTime: js.Date = js.native
   }
   
   @JSGlobal("Windows.UI.Notifications.BadgeTemplateType")
@@ -42,7 +41,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.BadgeUpdateManager")
   @js.native
-  class BadgeUpdateManager ()
+  open class BadgeUpdateManager ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.BadgeUpdateManager
   /* static members */
@@ -62,7 +61,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.BadgeUpdater")
   @js.native
-  class BadgeUpdater ()
+  open class BadgeUpdater ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.BadgeUpdater
   
@@ -104,19 +103,19 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.ScheduledTileNotification")
   @js.native
-  class ScheduledTileNotification protected ()
+  open class ScheduledTileNotification protected ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.ScheduledTileNotification {
-    def this(content: XmlDocument, deliveryTime: Date) = this()
+    def this(content: XmlDocument, deliveryTime: js.Date) = this()
     
     /* CompleteClass */
     var content: XmlDocument = js.native
     
     /* CompleteClass */
-    var deliveryTime: Date = js.native
+    var deliveryTime: js.Date = js.native
     
     /* CompleteClass */
-    var expirationTime: Date = js.native
+    var expirationTime: js.Date = js.native
     
     /* CompleteClass */
     var id: String = js.native
@@ -127,17 +126,17 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.ScheduledToastNotification")
   @js.native
-  class ScheduledToastNotification protected ()
+  open class ScheduledToastNotification protected ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.ScheduledToastNotification {
-    def this(content: XmlDocument, deliveryTime: Date) = this()
-    def this(content: XmlDocument, deliveryTime: Date, snoozeInterval: Double, maximumSnoozeCount: Double) = this()
+    def this(content: XmlDocument, deliveryTime: js.Date) = this()
+    def this(content: XmlDocument, deliveryTime: js.Date, snoozeInterval: Double, maximumSnoozeCount: Double) = this()
     
     /* CompleteClass */
     var content: XmlDocument = js.native
     
     /* CompleteClass */
-    var deliveryTime: Date = js.native
+    var deliveryTime: js.Date = js.native
     
     /* CompleteClass */
     var id: String = js.native
@@ -151,7 +150,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.TileNotification")
   @js.native
-  class TileNotification protected ()
+  open class TileNotification protected ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.TileNotification {
     def this(content: XmlDocument) = this()
@@ -160,7 +159,7 @@ object Notifications {
     var content: XmlDocument = js.native
     
     /* CompleteClass */
-    var expirationTime: Date = js.native
+    var expirationTime: js.Date = js.native
     
     /* CompleteClass */
     var tag: String = js.native
@@ -268,7 +267,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.TileUpdateManager")
   @js.native
-  class TileUpdateManager ()
+  open class TileUpdateManager ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.TileUpdateManager
   /* static members */
@@ -288,7 +287,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.TileUpdater")
   @js.native
-  class TileUpdater ()
+  open class TileUpdater ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.TileUpdater
   
@@ -308,7 +307,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.ToastDismissedEventArgs")
   @js.native
-  class ToastDismissedEventArgs ()
+  open class ToastDismissedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.ToastDismissedEventArgs {
     
@@ -318,7 +317,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.ToastFailedEventArgs")
   @js.native
-  class ToastFailedEventArgs ()
+  open class ToastFailedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.ToastFailedEventArgs {
     
@@ -328,7 +327,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.ToastNotification")
   @js.native
-  class ToastNotification protected ()
+  open class ToastNotification protected ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.ToastNotification {
     def this(content: XmlDocument) = this()
@@ -337,21 +336,21 @@ object Notifications {
     var content: XmlDocument = js.native
     
     /* CompleteClass */
-    var expirationTime: Date = js.native
+    var expirationTime: js.Date = js.native
     
     /* CompleteClass */
-    var onactivated: js.Any = js.native
+    var onactivated: Any = js.native
     
     /* CompleteClass */
-    var ondismissed: js.Any = js.native
+    var ondismissed: Any = js.native
     
     /* CompleteClass */
-    var onfailed: js.Any = js.native
+    var onfailed: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Notifications.ToastNotificationManager")
   @js.native
-  class ToastNotificationManager ()
+  open class ToastNotificationManager ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.ToastNotificationManager
   /* static members */
@@ -369,7 +368,7 @@ object Notifications {
   
   @JSGlobal("Windows.UI.Notifications.ToastNotifier")
   @js.native
-  class ToastNotifier ()
+  open class ToastNotifier ()
     extends StObject
        with typings.winrt.Windows.UI.Notifications.ToastNotifier {
     

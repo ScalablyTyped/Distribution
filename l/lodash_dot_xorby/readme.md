@@ -10,15 +10,13 @@ The lodash method `_.xorBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.xorby |
 | Keywords           | lodash-modularized, xorby |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 26011507 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3195299.6666666665 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
-- [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.xorby)
     
 

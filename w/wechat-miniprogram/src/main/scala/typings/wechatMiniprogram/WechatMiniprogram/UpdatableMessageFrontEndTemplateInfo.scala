@@ -23,6 +23,6 @@ object UpdatableMessageFrontEndTemplateInfo {
     
     inline def setParameterList(value: js.Array[UpdatableMessageFrontEndParameter]): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
     
-    inline def setParameterListVarargs(value: UpdatableMessageFrontEndParameter*): Self = StObject.set(x, "parameterList", js.Array(value :_*))
+    inline def setParameterListVarargs(value: UpdatableMessageFrontEndParameter*): Self = StObject.set(x, "parameterList", js.Array(value*))
   }
 }

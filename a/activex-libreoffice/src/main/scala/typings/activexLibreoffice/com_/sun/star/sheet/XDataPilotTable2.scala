@@ -26,11 +26,11 @@ trait XDataPilotTable2
     * @returns drill-down output as 2-dimensional sequence, including the header row.
     * @see XDataPilotTable2.insertDrillDownSheet()
     */
-  def getDrillDownData(aAddr: CellAddress): SafeArray[SafeArray[js.Any]]
+  def getDrillDownData(aAddr: CellAddress): SafeArray[SafeArray[Any]]
   
   /**
     * This method returns a different output range of a DataPilot table per specified output range type.
-    * @returns {@link com.sun.star.table.CellRangeAddress} depicting the range specified. See {@link DataPilotOutputRangeType} for a set of possible output rang
+    * @returns depicting the range specified. See {@link DataPilotOutputRangeType} for a set of possible output rang
     * @see com.sun.star.sheet.DataPilotOutputRangeType
     */
   def getOutputRangeByType(nType: Double): CellRangeAddress
@@ -39,7 +39,7 @@ trait XDataPilotTable2
     * Given a cell address, it returns the information about that cell. The type of information returned depends upon whether the cell is within the result
     * area or column/row header area.
     * @param aAddr address of the cell whose information is to be returned.
-    * @returns {@link DataPilotTablePositionData} which contains the position type and the information for that cell position.
+    * @returns which contains the position type and the information for that cell position.
     * @see com.sun.star.sheet.DataPilotTablePositionData
     * @see com.sun.star.sheet.DataPilotTableHeaderData
     * @see com.sun.star.sheet.DataPilotTableResultData
@@ -62,12 +62,12 @@ object XDataPilotTable2 {
   inline def apply(
     OutputRange: CellRangeAddress,
     acquire: () => Unit,
-    getDrillDownData: CellAddress => SafeArray[SafeArray[js.Any]],
+    getDrillDownData: CellAddress => SafeArray[SafeArray[Any]],
     getOutputRange: () => CellRangeAddress,
     getOutputRangeByType: Double => CellRangeAddress,
     getPositionData: CellAddress => DataPilotTablePositionData,
     insertDrillDownSheet: CellAddress => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit
   ): XDataPilotTable2 = {
@@ -77,7 +77,7 @@ object XDataPilotTable2 {
   
   extension [Self <: XDataPilotTable2](x: Self) {
     
-    inline def setGetDrillDownData(value: CellAddress => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
+    inline def setGetDrillDownData(value: CellAddress => SafeArray[SafeArray[Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
     
     inline def setGetOutputRangeByType(value: Double => CellRangeAddress): Self = StObject.set(x, "getOutputRangeByType", js.Any.fromFunction1(value))
     

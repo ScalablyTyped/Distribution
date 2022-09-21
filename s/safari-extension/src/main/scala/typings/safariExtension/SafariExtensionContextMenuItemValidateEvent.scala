@@ -21,14 +21,14 @@ trait SafariExtensionContextMenuItemValidateEvent extends StObject {
   /**
     * Information about the current context menu event.
     */
-  var userInfo: js.Any
+  var userInfo: Any
 }
 object SafariExtensionContextMenuItemValidateEvent {
   
   inline def apply(
     currentTarget: SafariExtensionContextMenuItem,
     target: SafariExtensionContextMenuItem,
-    userInfo: js.Any
+    userInfo: Any
   ): SafariExtensionContextMenuItemValidateEvent = {
     val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafariExtensionContextMenuItemValidateEvent]
@@ -40,6 +40,6 @@ object SafariExtensionContextMenuItemValidateEvent {
     
     inline def setTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

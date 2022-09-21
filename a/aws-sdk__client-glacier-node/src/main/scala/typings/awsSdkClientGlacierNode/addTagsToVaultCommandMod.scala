@@ -16,7 +16,7 @@ object addTagsToVaultCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/AddTagsToVaultCommand", "AddTagsToVaultCommand")
   @js.native
-  class AddTagsToVaultCommand protected ()
+  open class AddTagsToVaultCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object addTagsToVaultCommandMod {
     override val middlewareStack: MiddlewareStack[AddTagsToVaultInput, AddTagsToVaultOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: GlacierResolvedConfiguration
     ): Handler[AddTagsToVaultInput, AddTagsToVaultOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: GlacierResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[AddTagsToVaultInput, AddTagsToVaultOutput] = js.native
   }
 }

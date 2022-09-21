@@ -39,7 +39,7 @@ object UsableSubnetwork {
     
     inline def setSecondaryIpRangesUndefined: Self = StObject.set(x, "secondaryIpRanges", js.undefined)
     
-    inline def setSecondaryIpRangesVarargs(value: UsableSubnetworkSecondaryRange*): Self = StObject.set(x, "secondaryIpRanges", js.Array(value :_*))
+    inline def setSecondaryIpRangesVarargs(value: UsableSubnetworkSecondaryRange*): Self = StObject.set(x, "secondaryIpRanges", js.Array(value*))
     
     inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     

@@ -29,20 +29,20 @@ object anon {
   
   trait Emit extends StObject {
     
-    def emit(`type`: String, args: js.Any*): Unit
+    def emit(`type`: String, args: Any*): Unit
     
     def on(eventName: String, handler: js.Function): Unit
   }
   object Emit {
     
-    inline def apply(emit: (String, /* repeated */ js.Any) => Unit, on: (String, js.Function) => Unit): Emit = {
+    inline def apply(emit: (String, /* repeated */ Any) => Unit, on: (String, js.Function) => Unit): Emit = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), on = js.Any.fromFunction2(on))
       __obj.asInstanceOf[Emit]
     }
     
     extension [Self <: Emit](x: Self) {
       
-      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
@@ -73,18 +73,18 @@ object anon {
   
   trait Having[T] extends StObject {
     
-    def having(nodes: js.Any*): T
+    def having(nodes: Any*): T
   }
   object Having {
     
-    inline def apply[T](having: /* repeated */ js.Any => T): Having[T] = {
+    inline def apply[T](having: /* repeated */ Any => T): Having[T] = {
       val __obj = js.Dynamic.literal(having = js.Any.fromFunction1(having))
       __obj.asInstanceOf[Having[T]]
     }
     
     extension [Self <: Having[?], T](x: Self & Having[T]) {
       
-      inline def setHaving(value: /* repeated */ js.Any => T): Self = StObject.set(x, "having", js.Any.fromFunction1(value))
+      inline def setHaving(value: /* repeated */ Any => T): Self = StObject.set(x, "having", js.Any.fromFunction1(value))
     }
   }
   
@@ -148,7 +148,7 @@ object anon {
       
       inline def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
 }

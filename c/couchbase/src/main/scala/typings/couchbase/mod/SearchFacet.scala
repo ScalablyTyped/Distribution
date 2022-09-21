@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("couchbase", "SearchFacet")
 @js.native
-class SearchFacet () extends StObject
+open class SearchFacet () extends StObject
 object SearchFacet {
   
   @JSImport("couchbase", "SearchFacet")
@@ -15,21 +15,21 @@ object SearchFacet {
   
   @JSImport("couchbase", "SearchFacet.DateFacet")
   @js.native
-  class DateFacet () extends SearchFacet {
+  open class DateFacet () extends SearchFacet {
     
     def addRange(name: String, start: String, end: String): this.type = js.native
   }
   
   @JSImport("couchbase", "SearchFacet.NumericFacet")
   @js.native
-  class NumericFacet () extends SearchFacet {
+  open class NumericFacet () extends SearchFacet {
     
     def addRange(name: String, min: Double, max: Double): this.type = js.native
   }
   
   @JSImport("couchbase", "SearchFacet.TermFacet")
   @js.native
-  class TermFacet () extends SearchFacet
+  open class TermFacet () extends SearchFacet
   
   inline def date(field: String, size: Double): DateFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[DateFacet]
   

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait UnderlineType extends StObject
 /**
-  *
   * The supported styles for underline format.
   *
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.UnderlineType")
 @js.native
@@ -18,23 +18,36 @@ object UnderlineType extends StObject {
   
   /**
     * A single dash underline.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait dashLine
     extends StObject
        with UnderlineType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait dashLineHeavy
     extends StObject
        with UnderlineType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait dashLineLong
     extends StObject
        with UnderlineType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait dashLineLongHeavy
     extends StObject
@@ -42,20 +55,29 @@ object UnderlineType extends StObject {
   
   /**
     * An alternating dot-dash underline.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait dotDashLine
     extends StObject
        with UnderlineType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait dotDashLineHeavy
     extends StObject
        with UnderlineType
   
   /**
-    * @deprecated DotLine is no longer supported.
+    * **Warning**: `dotLine` has been deprecated.
+    *
+    * @deprecated `dotLine` is no longer supported.
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait dotLine
@@ -64,13 +86,18 @@ object UnderlineType extends StObject {
   
   /**
     * A dotted underline.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait dotted
     extends StObject
        with UnderlineType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait dottedHeavy
     extends StObject
@@ -78,7 +105,8 @@ object UnderlineType extends StObject {
   
   /**
     * A double underline.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait double
@@ -86,13 +114,21 @@ object UnderlineType extends StObject {
        with UnderlineType
   
   /**
-    * @deprecated Hidden is no longer supported.
+    * **Warning**: `hidden` has been deprecated.
+    *
+    * @deprecated `hidden` is no longer supported.
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait hidden
     extends StObject
        with UnderlineType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait mixed
     extends StObject
@@ -100,7 +136,8 @@ object UnderlineType extends StObject {
   
   /**
     * No underline.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait none
@@ -109,7 +146,8 @@ object UnderlineType extends StObject {
   
   /**
     * A single underline. This is the default value.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait single
@@ -118,7 +156,8 @@ object UnderlineType extends StObject {
   
   /**
     * A single thick underline.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait thick
@@ -127,13 +166,18 @@ object UnderlineType extends StObject {
   
   /**
     * An alternating dot-dot-dash underline.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait twoDotDashLine
     extends StObject
        with UnderlineType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait twoDotDashLineHeavy
     extends StObject
@@ -141,18 +185,27 @@ object UnderlineType extends StObject {
   
   /**
     * A single wavy underline.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait wave
     extends StObject
        with UnderlineType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait waveDouble
     extends StObject
        with UnderlineType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait waveHeavy
     extends StObject
@@ -160,7 +213,8 @@ object UnderlineType extends StObject {
   
   /**
     * Only underline individual words.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait word

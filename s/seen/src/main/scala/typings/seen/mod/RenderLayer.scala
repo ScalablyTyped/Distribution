@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "RenderLayer")
 @js.native
-class RenderLayer () extends StObject {
+open class RenderLayer () extends StObject {
   
   def render(context: RenderLayerContext): Unit = js.native
 }

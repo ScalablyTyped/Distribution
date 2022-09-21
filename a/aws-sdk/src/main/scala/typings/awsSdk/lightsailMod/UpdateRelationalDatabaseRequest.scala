@@ -27,7 +27,7 @@ trait UpdateRelationalDatabaseRequest extends StObject {
   var enableBackupRetention: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The password for the master user of your database. The password can include any printable ASCII character except "/", """, or "@". Constraints: Must contain 8 to 41 characters.
+    * The password for the master user. The password can include any printable ASCII character except "/", """, or "@". MySQL  Constraints: Must contain from 8 to 41 characters.  PostgreSQL  Constraints: Must contain from 8 to 128 characters.
     */
   var masterUserPassword: js.UndefOr[SensitiveString] = js.undefined
   
@@ -47,7 +47,7 @@ trait UpdateRelationalDatabaseRequest extends StObject {
   var publiclyAccessible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The name of your database to update.
+    * The name of your Lightsail database resource to update.
     */
   var relationalDatabaseName: ResourceName
   

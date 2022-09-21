@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fbsdk", "ShareButton")
 @js.native
-class ShareButton protected ()
-  extends Component[ShareButtonProps, js.Any, js.Any] {
+open class ShareButton protected () extends Component[ShareButtonProps, Any, Any] {
   def this(props: ShareButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ShareButtonProps, context: js.Any) = this()
+  def this(props: ShareButtonProps, context: Any) = this()
 }

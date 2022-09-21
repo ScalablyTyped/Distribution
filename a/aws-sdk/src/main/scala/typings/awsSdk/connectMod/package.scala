@@ -1,5 +1,9 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.KMS
+import typings.awsSdk.awsSdkStrings.LT
+import typings.awsSdk.awsSdkStrings.STANDARD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,13 +11,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type ARN = java.lang.String
 
-type AfterContactWorkTimeLimit = scala.Double
+type AfterContactWorkTimeLimit = Double
+
+type AgentContactReferenceList = js.Array[AgentContactReference]
 
 type AgentFirstName = java.lang.String
 
 type AgentLastName = java.lang.String
 
+type AgentResourceId = java.lang.String
+
+type AgentStatusDescription = java.lang.String
+
+type AgentStatusId = java.lang.String
+
+type AgentStatusName = java.lang.String
+
+type AgentStatusOrderNumber = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type AgentStatusState = _AgentStatusState | java.lang.String
+
+type AgentStatusSummaryList = js.Array[AgentStatusSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ROUTABLE
+  - typings.awsSdk.awsSdkStrings.CUSTOM
+  - typings.awsSdk.awsSdkStrings.OFFLINE
+  - java.lang.String
+*/
+type AgentStatusType = _AgentStatusType | java.lang.String
+
+type AgentStatusTypes = js.Array[AgentStatusType]
+
 type AgentUsername = java.lang.String
+
+type AliasArn = java.lang.String
+
+type ApproximateTotalCount = Double
 
 type AssociationId = java.lang.String
 
@@ -21,34 +60,49 @@ type AttributeName = java.lang.String
 
 type AttributeValue = java.lang.String
 
-type Attributes = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.connectMod.AttributeValue]
+type Attributes = StringDictionary[AttributeValue]
 
-type AttributesList = js.Array[typings.awsSdk.connectMod.Attribute]
+type AttributesList = js.Array[Attribute]
 
 type AutoAccept = scala.Boolean
+
+type AvailableNumbersList = js.Array[AvailableNumberSummary]
+
+type Boolean = scala.Boolean
 
 type BotName = java.lang.String
 
 type BucketName = java.lang.String
 
+type CampaignId = java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VOICE
   - typings.awsSdk.awsSdkStrings.CHAT
+  - typings.awsSdk.awsSdkStrings.TASK
   - java.lang.String
 */
-type Channel = typings.awsSdk.connectMod._Channel | java.lang.String
+type Channel = _Channel | java.lang.String
 
-type Channels = js.Array[typings.awsSdk.connectMod.Channel]
+type ChannelToCountMap = StringDictionary[IntegerCount]
+
+type Channels = js.Array[Channel]
 
 type ChatContent = java.lang.String
 
 type ChatContentType = java.lang.String
 
+type ChatDurationInMinutes = Double
+
+type ChatStreamingEndpointARN = java.lang.String
+
 type ClientToken = java.lang.String
 
-type Comparison = typings.awsSdk.awsSdkStrings.LT | java.lang.String
+type CommonNameLength127 = java.lang.String
 
-type Concurrency = scala.Double
+type Comparison = LT | java.lang.String
+
+type Concurrency = Double
 
 type ContactFlowContent = java.lang.String
 
@@ -56,9 +110,40 @@ type ContactFlowDescription = java.lang.String
 
 type ContactFlowId = java.lang.String
 
+type ContactFlowModuleContent = java.lang.String
+
+type ContactFlowModuleDescription = java.lang.String
+
+type ContactFlowModuleId = java.lang.String
+
+type ContactFlowModuleName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.ARCHIVED
+  - java.lang.String
+*/
+type ContactFlowModuleState = _ContactFlowModuleState | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PUBLISHED
+  - typings.awsSdk.awsSdkStrings.SAVED
+  - java.lang.String
+*/
+type ContactFlowModuleStatus = _ContactFlowModuleStatus | java.lang.String
+
+type ContactFlowModulesSummaryList = js.Array[ContactFlowModuleSummary]
+
 type ContactFlowName = java.lang.String
 
-type ContactFlowSummaryList = js.Array[typings.awsSdk.connectMod.ContactFlowSummary]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.ARCHIVED
+  - java.lang.String
+*/
+type ContactFlowState = _ContactFlowState | java.lang.String
+
+type ContactFlowSummaryList = js.Array[ContactFlowSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONTACT_FLOW
@@ -72,13 +157,42 @@ type ContactFlowSummaryList = js.Array[typings.awsSdk.connectMod.ContactFlowSumm
   - typings.awsSdk.awsSdkStrings.QUEUE_TRANSFER
   - java.lang.String
 */
-type ContactFlowType = typings.awsSdk.connectMod._ContactFlowType | java.lang.String
+type ContactFlowType = _ContactFlowType | java.lang.String
 
-type ContactFlowTypes = js.Array[typings.awsSdk.connectMod.ContactFlowType]
+type ContactFlowTypes = js.Array[ContactFlowType]
 
 type ContactId = java.lang.String
 
-type CurrentMetricDataCollections = js.Array[typings.awsSdk.connectMod.CurrentMetricData]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INBOUND
+  - typings.awsSdk.awsSdkStrings.OUTBOUND
+  - typings.awsSdk.awsSdkStrings.TRANSFER
+  - typings.awsSdk.awsSdkStrings.QUEUE_TRANSFER
+  - typings.awsSdk.awsSdkStrings.CALLBACK
+  - typings.awsSdk.awsSdkStrings.API
+  - java.lang.String
+*/
+type ContactInitiationMethod = _ContactInitiationMethod | java.lang.String
+
+type ContactReferences = StringDictionary[Reference]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INCOMING
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.CONNECTING
+  - typings.awsSdk.awsSdkStrings.CONNECTED
+  - typings.awsSdk.awsSdkStrings.CONNECTED_ONHOLD
+  - typings.awsSdk.awsSdkStrings.MISSED
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - typings.awsSdk.awsSdkStrings.ENDED
+  - typings.awsSdk.awsSdkStrings.REJECTED
+  - java.lang.String
+*/
+type ContactState = _ContactState | java.lang.String
+
+type ContactStates = js.Array[ContactState]
+
+type CurrentMetricDataCollections = js.Array[CurrentMetricData]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AGENTS_ONLINE
@@ -96,13 +210,17 @@ type CurrentMetricDataCollections = js.Array[typings.awsSdk.connectMod.CurrentMe
   - typings.awsSdk.awsSdkStrings.SLOTS_AVAILABLE
   - java.lang.String
 */
-type CurrentMetricName = typings.awsSdk.connectMod._CurrentMetricName | java.lang.String
+type CurrentMetricName = _CurrentMetricName | java.lang.String
 
-type CurrentMetricResults = js.Array[typings.awsSdk.connectMod.CurrentMetricResult]
+type CurrentMetricResults = js.Array[CurrentMetricResult]
 
-type CurrentMetrics = js.Array[typings.awsSdk.connectMod.CurrentMetric]
+type CurrentMetrics = js.Array[CurrentMetric]
 
-type Delay = scala.Double
+type DefaultVocabularyList = js.Array[DefaultVocabulary]
+
+type Delay = Double
+
+type Description = java.lang.String
 
 type DirectoryAlias = java.lang.String
 
@@ -114,7 +232,7 @@ type DirectoryId = java.lang.String
   - typings.awsSdk.awsSdkStrings.EXISTING_DIRECTORY
   - java.lang.String
 */
-type DirectoryType = typings.awsSdk.connectMod._DirectoryType | java.lang.String
+type DirectoryType = _DirectoryType | java.lang.String
 
 type DirectoryUserId = java.lang.String
 
@@ -122,32 +240,39 @@ type DisplayName = java.lang.String
 
 type Email = java.lang.String
 
-type EncryptionType = typings.awsSdk.awsSdkStrings.KMS | java.lang.String
+type EncryptionType = KMS | java.lang.String
 
 type FunctionArn = java.lang.String
 
-type FunctionArnsList = js.Array[typings.awsSdk.connectMod.FunctionArn]
+type FunctionArnsList = js.Array[FunctionArn]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUEUE
   - typings.awsSdk.awsSdkStrings.CHANNEL
   - java.lang.String
 */
-type Grouping = typings.awsSdk.connectMod._Grouping | java.lang.String
+type Grouping = _Grouping | java.lang.String
 
-type Groupings = js.Array[typings.awsSdk.connectMod.Grouping]
+type Groupings = js.Array[Grouping]
 
 type HierarchyGroupId = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EXACT
+  - typings.awsSdk.awsSdkStrings.WITH_CHILD_GROUPS
+  - java.lang.String
+*/
+type HierarchyGroupMatchType = _HierarchyGroupMatchType | java.lang.String
+
 type HierarchyGroupName = java.lang.String
 
-type HierarchyGroupSummaryList = js.Array[typings.awsSdk.connectMod.HierarchyGroupSummary]
+type HierarchyGroupSummaryList = js.Array[HierarchyGroupSummary]
 
 type HierarchyLevelId = java.lang.String
 
 type HierarchyLevelName = java.lang.String
 
-type HistoricalMetricDataCollections = js.Array[typings.awsSdk.connectMod.HistoricalMetricData]
+type HistoricalMetricDataCollections = js.Array[HistoricalMetricData]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONTACTS_QUEUED
@@ -177,19 +302,37 @@ type HistoricalMetricDataCollections = js.Array[typings.awsSdk.connectMod.Histor
   - typings.awsSdk.awsSdkStrings.SERVICE_LEVEL
   - java.lang.String
 */
-type HistoricalMetricName = typings.awsSdk.connectMod._HistoricalMetricName | java.lang.String
+type HistoricalMetricName = _HistoricalMetricName | java.lang.String
 
-type HistoricalMetricResults = js.Array[typings.awsSdk.connectMod.HistoricalMetricResult]
+type HistoricalMetricResults = js.Array[HistoricalMetricResult]
 
-type HistoricalMetrics = js.Array[typings.awsSdk.connectMod.HistoricalMetric]
+type HistoricalMetrics = js.Array[HistoricalMetric]
 
-type Hours = scala.Double
+type Hours = Double
+
+type Hours24Format = Double
+
+type HoursOfOperationConfigList = js.Array[HoursOfOperationConfig]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUNDAY
+  - typings.awsSdk.awsSdkStrings.MONDAY
+  - typings.awsSdk.awsSdkStrings.TUESDAY
+  - typings.awsSdk.awsSdkStrings.WEDNESDAY
+  - typings.awsSdk.awsSdkStrings.THURSDAY
+  - typings.awsSdk.awsSdkStrings.FRIDAY
+  - typings.awsSdk.awsSdkStrings.SATURDAY
+  - java.lang.String
+*/
+type HoursOfOperationDays = _HoursOfOperationDays | java.lang.String
+
+type HoursOfOperationDescription = java.lang.String
 
 type HoursOfOperationId = java.lang.String
 
 type HoursOfOperationName = java.lang.String
 
-type HoursOfOperationSummaryList = js.Array[typings.awsSdk.connectMod.HoursOfOperationSummary]
+type HoursOfOperationSummaryList = js.Array[HoursOfOperationSummary]
 
 type InboundCallsEnabled = scala.Boolean
 
@@ -201,9 +344,11 @@ type InboundCallsEnabled = scala.Boolean
   - typings.awsSdk.awsSdkStrings.AUTO_RESOLVE_BEST_VOICES
   - typings.awsSdk.awsSdkStrings.USE_CUSTOM_TTS_VOICES
   - typings.awsSdk.awsSdkStrings.EARLY_MEDIA
+  - typings.awsSdk.awsSdkStrings.MULTI_PARTY_CONFERENCE
+  - typings.awsSdk.awsSdkStrings.HIGH_VOLUME_OUTBOUND
   - java.lang.String
 */
-type InstanceAttributeType = typings.awsSdk.connectMod._InstanceAttributeType | java.lang.String
+type InstanceAttributeType = _InstanceAttributeType | java.lang.String
 
 type InstanceAttributeValue = java.lang.String
 
@@ -215,9 +360,9 @@ type InstanceId = java.lang.String
   - typings.awsSdk.awsSdkStrings.CREATION_FAILED
   - java.lang.String
 */
-type InstanceStatus = typings.awsSdk.connectMod._InstanceStatus | java.lang.String
+type InstanceStatus = _InstanceStatus | java.lang.String
 
-type InstanceStorageConfigs = js.Array[typings.awsSdk.connectMod.InstanceStorageConfig]
+type InstanceStorageConfigs = js.Array[InstanceStorageConfig]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CHAT_TRANSCRIPTS
@@ -226,37 +371,79 @@ type InstanceStorageConfigs = js.Array[typings.awsSdk.connectMod.InstanceStorage
   - typings.awsSdk.awsSdkStrings.MEDIA_STREAMS
   - typings.awsSdk.awsSdkStrings.CONTACT_TRACE_RECORDS
   - typings.awsSdk.awsSdkStrings.AGENT_EVENTS
+  - typings.awsSdk.awsSdkStrings.REAL_TIME_CONTACT_ANALYSIS_SEGMENTS
   - java.lang.String
 */
-type InstanceStorageResourceType = typings.awsSdk.connectMod._InstanceStorageResourceType | java.lang.String
+type InstanceStorageResourceType = _InstanceStorageResourceType | java.lang.String
 
-type InstanceSummaryList = js.Array[typings.awsSdk.connectMod.InstanceSummary]
+type InstanceSummaryList = js.Array[InstanceSummary]
+
+type IntegerCount = Double
+
+type IntegrationAssociationId = java.lang.String
+
+type IntegrationAssociationSummaryList = js.Array[IntegrationAssociationSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EVENT
+  - typings.awsSdk.awsSdkStrings.VOICE_ID
+  - typings.awsSdk.awsSdkStrings.PINPOINT_APP
+  - typings.awsSdk.awsSdkStrings.WISDOM_ASSISTANT
+  - typings.awsSdk.awsSdkStrings.WISDOM_KNOWLEDGE_BASE
+  - java.lang.String
+*/
+type IntegrationType = _IntegrationType | java.lang.String
+
+type InvisibleTaskTemplateFields = js.Array[InvisibleFieldInfo]
 
 type KeyId = java.lang.String
 
-type LexBotsList = js.Array[typings.awsSdk.connectMod.LexBot]
+type LargeNextToken = java.lang.String
+
+type LexBotConfigList = js.Array[LexBotConfig]
+
+type LexBotsList = js.Array[LexBot]
 
 type LexRegion = java.lang.String
 
-type MaxResult10 = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.V1
+  - typings.awsSdk.awsSdkStrings.V2
+  - java.lang.String
+*/
+type LexVersion = _LexVersion | java.lang.String
 
-type MaxResult100 = scala.Double
+type ListPhoneNumbersSummaryList = js.Array[ListPhoneNumbersSummary]
 
-type MaxResult1000 = scala.Double
+type Long = Double
 
-type MaxResult2 = scala.Double
+type MaxResult10 = Double
 
-type MaxResult25 = scala.Double
+type MaxResult100 = Double
 
-type MaxResult7 = scala.Double
+type MaxResult1000 = Double
 
-type MediaConcurrencies = js.Array[typings.awsSdk.connectMod.MediaConcurrency]
+type MaxResult2 = Double
+
+type MaxResult25 = Double
+
+type MaxResult7 = Double
+
+type MediaConcurrencies = js.Array[MediaConcurrency]
+
+type MinutesLimit60 = Double
+
+type Name = java.lang.String
 
 type NextToken = java.lang.String
 
+type NextToken2500 = java.lang.String
+
 type Origin = java.lang.String
 
-type OriginsList = js.Array[typings.awsSdk.connectMod.Origin]
+type OriginsList = js.Array[Origin]
+
+type OutboundCallerIdName = java.lang.String
 
 type OutboundCallsEnabled = scala.Boolean
 
@@ -267,6 +454,8 @@ type ParticipantId = java.lang.String
 type ParticipantToken = java.lang.String
 
 type Password = java.lang.String
+
+type PermissionsList = js.Array[SecurityProfilePermission]
 
 type PhoneNumber = java.lang.String
 
@@ -510,82 +699,188 @@ type PhoneNumber = java.lang.String
   - typings.awsSdk.awsSdkStrings.ZW
   - java.lang.String
 */
-type PhoneNumberCountryCode = typings.awsSdk.connectMod._PhoneNumberCountryCode | java.lang.String
+type PhoneNumberCountryCode = _PhoneNumberCountryCode | java.lang.String
 
-type PhoneNumberCountryCodes = js.Array[typings.awsSdk.connectMod.PhoneNumberCountryCode]
+type PhoneNumberCountryCodes = js.Array[PhoneNumberCountryCode]
+
+type PhoneNumberDescription = java.lang.String
 
 type PhoneNumberId = java.lang.String
 
-type PhoneNumberSummaryList = js.Array[typings.awsSdk.connectMod.PhoneNumberSummary]
+type PhoneNumberPrefix = java.lang.String
+
+type PhoneNumberSummaryList = js.Array[PhoneNumberSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TOLL_FREE
   - typings.awsSdk.awsSdkStrings.DID
   - java.lang.String
 */
-type PhoneNumberType = typings.awsSdk.connectMod._PhoneNumberType | java.lang.String
+type PhoneNumberType = _PhoneNumberType | java.lang.String
 
-type PhoneNumberTypes = js.Array[typings.awsSdk.connectMod.PhoneNumberType]
+type PhoneNumberTypes = js.Array[PhoneNumberType]
+
+type PhoneNumberWorkflowMessage = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CLAIMED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type PhoneNumberWorkflowStatus = _PhoneNumberWorkflowStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SOFT_PHONE
   - typings.awsSdk.awsSdkStrings.DESK_PHONE
   - java.lang.String
 */
-type PhoneType = typings.awsSdk.connectMod._PhoneType | java.lang.String
+type PhoneType = _PhoneType | java.lang.String
 
 type Prefix = java.lang.String
 
-type Priority = scala.Double
+type Priority = Double
 
 type PromptId = java.lang.String
 
 type PromptName = java.lang.String
 
-type PromptSummaryList = js.Array[typings.awsSdk.connectMod.PromptSummary]
+type PromptSummaryList = js.Array[PromptSummary]
+
+type QueueDescription = java.lang.String
 
 type QueueId = java.lang.String
 
+type QueueMaxContacts = Double
+
 type QueueName = java.lang.String
 
-type QueueSummaryList = js.Array[typings.awsSdk.connectMod.QueueSummary]
+type QueueSearchConditionList = js.Array[QueueSearchCriteria]
+
+type QueueSearchSummaryList = js.Array[Queue]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type QueueStatus = _QueueStatus | java.lang.String
+
+type QueueSummaryList = js.Array[QueueSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
   - typings.awsSdk.awsSdkStrings.AGENT
   - java.lang.String
 */
-type QueueType = typings.awsSdk.connectMod._QueueType | java.lang.String
+type QueueType = _QueueType | java.lang.String
 
-type QueueTypes = js.Array[typings.awsSdk.connectMod.QueueType]
+type QueueTypes = js.Array[QueueType]
 
-type Queues = js.Array[typings.awsSdk.connectMod.QueueId]
+type Queues = js.Array[QueueId]
+
+type QuickConnectDescription = java.lang.String
+
+type QuickConnectId = java.lang.String
+
+type QuickConnectName = java.lang.String
+
+type QuickConnectSummaryList = js.Array[QuickConnectSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.USER
+  - typings.awsSdk.awsSdkStrings.QUEUE
+  - typings.awsSdk.awsSdkStrings.PHONE_NUMBER
+  - java.lang.String
+*/
+type QuickConnectType = _QuickConnectType | java.lang.String
+
+type QuickConnectTypes = js.Array[QuickConnectType]
+
+type QuickConnectsList = js.Array[QuickConnectId]
+
+type ReadOnlyTaskTemplateFields = js.Array[ReadOnlyFieldInfo]
+
+type ReferenceKey = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.APPROVED
+  - typings.awsSdk.awsSdkStrings.REJECTED
+  - java.lang.String
+*/
+type ReferenceStatus = _ReferenceStatus | java.lang.String
+
+type ReferenceSummaryList = js.Array[ReferenceSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.URL
+  - typings.awsSdk.awsSdkStrings.ATTACHMENT
+  - typings.awsSdk.awsSdkStrings.NUMBER
+  - typings.awsSdk.awsSdkStrings.STRING
+  - typings.awsSdk.awsSdkStrings.DATE
+  - typings.awsSdk.awsSdkStrings.EMAIL
+  - java.lang.String
+*/
+type ReferenceType = _ReferenceType | java.lang.String
+
+type ReferenceTypes = js.Array[ReferenceType]
+
+type ReferenceValue = java.lang.String
+
+type RequiredTaskTemplateFields = js.Array[RequiredFieldInfo]
 
 type RoutingProfileDescription = java.lang.String
 
 type RoutingProfileId = java.lang.String
 
+type RoutingProfileList = js.Array[RoutingProfile]
+
 type RoutingProfileName = java.lang.String
 
-type RoutingProfileQueueConfigList = js.Array[typings.awsSdk.connectMod.RoutingProfileQueueConfig]
+type RoutingProfileQueueConfigList = js.Array[RoutingProfileQueueConfig]
 
-type RoutingProfileQueueConfigSummaryList = js.Array[typings.awsSdk.connectMod.RoutingProfileQueueConfigSummary]
+type RoutingProfileQueueConfigSummaryList = js.Array[RoutingProfileQueueConfigSummary]
 
-type RoutingProfileQueueReferenceList = js.Array[typings.awsSdk.connectMod.RoutingProfileQueueReference]
+type RoutingProfileQueueReferenceList = js.Array[RoutingProfileQueueReference]
 
-type RoutingProfileSummaryList = js.Array[typings.awsSdk.connectMod.RoutingProfileSummary]
+type RoutingProfileSearchConditionList = js.Array[RoutingProfileSearchCriteria]
 
-type SecurityKeysList = js.Array[typings.awsSdk.connectMod.SecurityKey]
+type RoutingProfileSummaryList = js.Array[RoutingProfileSummary]
+
+type SearchableQueueType = STANDARD | java.lang.String
+
+type SecurityKeysList = js.Array[SecurityKey]
+
+type SecurityProfileDescription = java.lang.String
 
 type SecurityProfileId = java.lang.String
 
-type SecurityProfileIds = js.Array[typings.awsSdk.connectMod.SecurityProfileId]
+type SecurityProfileIds = js.Array[SecurityProfileId]
 
 type SecurityProfileName = java.lang.String
 
-type SecurityProfileSummaryList = js.Array[typings.awsSdk.connectMod.SecurityProfileSummary]
+type SecurityProfilePermission = java.lang.String
+
+type SecurityProfileSearchConditionList = js.Array[SecurityProfileSearchCriteria]
+
+type SecurityProfileSummaryList = js.Array[SecurityProfileSummary]
+
+type SecurityProfilesSearchSummaryList = js.Array[SecurityProfileSearchSummary]
 
 type SecurityToken = java.lang.String
+
+type SingleSelectOptions = js.Array[TaskTemplateSingleSelectOption]
+
+type SnapshotVersion = java.lang.String
+
+type SourceApplicationName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SALESFORCE
+  - typings.awsSdk.awsSdkStrings.ZENDESK
+  - java.lang.String
+*/
+type SourceType = _SourceType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUM
@@ -593,7 +888,7 @@ type SecurityToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.AVG
   - java.lang.String
 */
-type Statistic = typings.awsSdk.connectMod._Statistic | java.lang.String
+type Statistic = _Statistic | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.S3
@@ -602,21 +897,96 @@ type Statistic = typings.awsSdk.connectMod._Statistic | java.lang.String
   - typings.awsSdk.awsSdkStrings.KINESIS_FIREHOSE
   - java.lang.String
 */
-type StorageType = typings.awsSdk.connectMod._StorageType | java.lang.String
+type StorageType = _StorageType | java.lang.String
+
+type StreamingId = java.lang.String
 
 type String = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STARTS_WITH
+  - typings.awsSdk.awsSdkStrings.CONTAINS
+  - typings.awsSdk.awsSdkStrings.EXACT
+  - java.lang.String
+*/
+type StringComparisonType = _StringComparisonType | java.lang.String
+
+type SupportedMessagingContentType = java.lang.String
+
+type SupportedMessagingContentTypes = js.Array[SupportedMessagingContentType]
+
+type TagAndConditionList = js.Array[TagCondition]
+
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.connectMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.connectMod.TagValue]
+type TagMap = StringDictionary[TagValue]
+
+type TagOrConditionList = js.Array[TagAndConditionList]
 
 type TagValue = java.lang.String
 
-type ThresholdValue = scala.Double
+type TaskTemplateArn = java.lang.String
 
-type Timestamp_ = typings.std.Date
+type TaskTemplateDefaultFieldValueList = js.Array[TaskTemplateDefaultFieldValue]
+
+type TaskTemplateDescription = java.lang.String
+
+type TaskTemplateFieldDescription = java.lang.String
+
+type TaskTemplateFieldName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NAME
+  - typings.awsSdk.awsSdkStrings.DESCRIPTION
+  - typings.awsSdk.awsSdkStrings.SCHEDULED_TIME
+  - typings.awsSdk.awsSdkStrings.QUICK_CONNECT
+  - typings.awsSdk.awsSdkStrings.URL
+  - typings.awsSdk.awsSdkStrings.NUMBER
+  - typings.awsSdk.awsSdkStrings.TEXT
+  - typings.awsSdk.awsSdkStrings.TEXT_AREA
+  - typings.awsSdk.awsSdkStrings.DATE_TIME
+  - typings.awsSdk.awsSdkStrings.BOOLEAN
+  - typings.awsSdk.awsSdkStrings.SINGLE_SELECT
+  - typings.awsSdk.awsSdkStrings.EMAIL
+  - java.lang.String
+*/
+type TaskTemplateFieldType = _TaskTemplateFieldType | java.lang.String
+
+type TaskTemplateFieldValue = java.lang.String
+
+type TaskTemplateFields = js.Array[TaskTemplateField]
+
+type TaskTemplateId = java.lang.String
+
+type TaskTemplateList = js.Array[TaskTemplateMetadata]
+
+type TaskTemplateName = java.lang.String
+
+type TaskTemplateSingleSelectOption = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.INACTIVE
+  - java.lang.String
+*/
+type TaskTemplateStatus = _TaskTemplateStatus | java.lang.String
+
+type ThresholdValue = Double
+
+type TimeZone = java.lang.String
+
+type Timestamp_ = js.Date
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GENERAL
+  - typings.awsSdk.awsSdkStrings.CAMPAIGN
+  - java.lang.String
+*/
+type TrafficType = _TrafficType | java.lang.String
+
+type URI = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SECONDS
@@ -624,13 +994,85 @@ type Timestamp_ = typings.std.Date
   - typings.awsSdk.awsSdkStrings.PERCENT
   - java.lang.String
 */
-type Unit = typings.awsSdk.connectMod._Unit | java.lang.String
+type Unit = _Unit | java.lang.String
+
+type UpdateAgentStatusDescription = java.lang.String
+
+type UpdateHoursOfOperationDescription = java.lang.String
+
+type UpdateQuickConnectDescription = java.lang.String
+
+type UseCaseId = java.lang.String
+
+type UseCaseSummaryList = js.Array[UseCase]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RULES_EVALUATION
+  - typings.awsSdk.awsSdkStrings.CONNECT_CAMPAIGNS
+  - java.lang.String
+*/
+type UseCaseType = _UseCaseType | java.lang.String
+
+type UserDataList = js.Array[UserData]
 
 type UserId = java.lang.String
 
-type UserSummaryList = js.Array[typings.awsSdk.connectMod.UserSummary]
+type UserSearchConditionList = js.Array[UserSearchCriteria]
 
-type Value = scala.Double
+type UserSearchSummaryList = js.Array[UserSearchSummary]
+
+type UserSummaryList = js.Array[UserSummary]
+
+type Value = Double
+
+type VocabularyContent = java.lang.String
+
+type VocabularyFailureReason = java.lang.String
+
+type VocabularyId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`ar-AE`
+  - typings.awsSdk.awsSdkStrings.`de-CH`
+  - typings.awsSdk.awsSdkStrings.`de-DE`
+  - typings.awsSdk.awsSdkStrings.`en-AB`
+  - typings.awsSdk.awsSdkStrings.`en-AU`
+  - typings.awsSdk.awsSdkStrings.`en-GB`
+  - typings.awsSdk.awsSdkStrings.`en-IE`
+  - typings.awsSdk.awsSdkStrings.`en-IN`
+  - typings.awsSdk.awsSdkStrings.`en-US`
+  - typings.awsSdk.awsSdkStrings.`en-WL`
+  - typings.awsSdk.awsSdkStrings.`es-ES`
+  - typings.awsSdk.awsSdkStrings.`es-US`
+  - typings.awsSdk.awsSdkStrings.`fr-CA`
+  - typings.awsSdk.awsSdkStrings.`fr-FR`
+  - typings.awsSdk.awsSdkStrings.`hi-IN`
+  - typings.awsSdk.awsSdkStrings.`it-IT`
+  - typings.awsSdk.awsSdkStrings.`ja-JP`
+  - typings.awsSdk.awsSdkStrings.`ko-KR`
+  - typings.awsSdk.awsSdkStrings.`pt-BR`
+  - typings.awsSdk.awsSdkStrings.`pt-PT`
+  - typings.awsSdk.awsSdkStrings.`zh-CN`
+  - java.lang.String
+*/
+type VocabularyLanguageCode = _VocabularyLanguageCode | java.lang.String
+
+type VocabularyLastModifiedTime = js.Date
+
+type VocabularyName = java.lang.String
+
+type VocabularyNextToken = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATION_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.CREATION_FAILED
+  - typings.awsSdk.awsSdkStrings.DELETE_IN_PROGRESS
+  - java.lang.String
+*/
+type VocabularyState = _VocabularyState | java.lang.String
+
+type VocabularySummaryList = js.Array[VocabularySummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FROM_AGENT
@@ -638,13 +1080,13 @@ type Value = scala.Double
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type VoiceRecordingTrack = typings.awsSdk.connectMod._VoiceRecordingTrack | java.lang.String
+type VoiceRecordingTrack = _VoiceRecordingTrack | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-08-08`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.connectMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String
 
-type timestamp = typings.std.Date
+type timestamp = js.Date

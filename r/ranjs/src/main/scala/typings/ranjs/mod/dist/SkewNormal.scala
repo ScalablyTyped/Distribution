@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.SkewNormal")
 @js.native
-class SkewNormal ()
+open class SkewNormal ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.SkewNormal] {
   def this(xi: Double) = this()

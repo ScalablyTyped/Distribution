@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript", "OperationCanceledException")
 @js.native
-class OperationCanceledException () extends StObject
+open class OperationCanceledException () extends StObject

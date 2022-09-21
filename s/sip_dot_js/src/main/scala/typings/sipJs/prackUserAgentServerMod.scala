@@ -12,10 +12,10 @@ object prackUserAgentServerMod {
   
   @JSImport("sip.js/lib/core/user-agents/prack-user-agent-server", "PrackUserAgentServer")
   @js.native
-  class PrackUserAgentServer protected () extends UserAgentServer {
+  open class PrackUserAgentServer protected () extends UserAgentServer {
     def this(dialog: SessionDialog, message: IncomingRequestMessage) = this()
     def this(dialog: SessionDialog, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
     
-    /* private */ var dialog: js.Any = js.native
+    /* private */ var dialog: Any = js.native
   }
 }

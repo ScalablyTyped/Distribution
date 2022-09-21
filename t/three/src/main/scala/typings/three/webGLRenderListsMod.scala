@@ -1,7 +1,7 @@
 package typings.three
 
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.cameraMod.Camera
+import typings.three.eventDispatcherMod.Event
 import typings.three.groupMod.Group
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
@@ -16,7 +16,7 @@ object webGLRenderListsMod {
   
   @JSImport("three/src/renderers/webgl/WebGLRenderLists", "WebGLRenderList")
   @js.native
-  class WebGLRenderList protected () extends StObject {
+  open class WebGLRenderList protected () extends StObject {
     def this(properties: WebGLProperties) = this()
     
     def finish(): Unit = js.native
@@ -24,22 +24,28 @@ object webGLRenderListsMod {
     def init(): Unit = js.native
     
     /**
-    	 * @default []
-    	 */
+      * @default []
+      */
     var opaque: js.Array[RenderItem] = js.native
     
-    def push(`object`: Object3D, geometry: Null, material: Material, groupOrder: Double, z: Double): Unit = js.native
+    def push(`object`: Object3D[Event], geometry: Null, material: Material, groupOrder: Double, z: Double): Unit = js.native
     def push(
-      `object`: Object3D,
+      `object`: Object3D[Event],
       geometry: Null,
       material: Material,
       groupOrder: Double,
       z: Double,
       group: Group
     ): Unit = js.native
-    def push(`object`: Object3D, geometry: BufferGeometry, material: Material, groupOrder: Double, z: Double): Unit = js.native
     def push(
-      `object`: Object3D,
+      `object`: Object3D[Event],
+      geometry: BufferGeometry,
+      material: Material,
+      groupOrder: Double,
+      z: Double
+    ): Unit = js.native
+    def push(
+      `object`: Object3D[Event],
       geometry: BufferGeometry,
       material: Material,
       groupOrder: Double,
@@ -47,25 +53,39 @@ object webGLRenderListsMod {
       group: Group
     ): Unit = js.native
     
-    def sort(opaqueSort: js.Function, transparentSort: js.Function): Unit = js.native
+    def sort(
+      opaqueSort: js.Function2[/* a */ Any, /* b */ Any, Double],
+      transparentSort: js.Function2[/* a */ Any, /* b */ Any, Double]
+    ): Unit = js.native
     
     /**
-    	 * @default []
-    	 */
+      * @default []
+      */
+    var transmissive: js.Array[RenderItem] = js.native
+    
+    /**
+      * @default []
+      */
     var transparent: js.Array[RenderItem] = js.native
     
-    def unshift(`object`: Object3D, geometry: Null, material: Material, groupOrder: Double, z: Double): Unit = js.native
+    def unshift(`object`: Object3D[Event], geometry: Null, material: Material, groupOrder: Double, z: Double): Unit = js.native
     def unshift(
-      `object`: Object3D,
+      `object`: Object3D[Event],
       geometry: Null,
       material: Material,
       groupOrder: Double,
       z: Double,
       group: Group
     ): Unit = js.native
-    def unshift(`object`: Object3D, geometry: BufferGeometry, material: Material, groupOrder: Double, z: Double): Unit = js.native
     def unshift(
-      `object`: Object3D,
+      `object`: Object3D[Event],
+      geometry: BufferGeometry,
+      material: Material,
+      groupOrder: Double,
+      z: Double
+    ): Unit = js.native
+    def unshift(
+      `object`: Object3D[Event],
       geometry: BufferGeometry,
       material: Material,
       groupOrder: Double,
@@ -76,12 +96,12 @@ object webGLRenderListsMod {
   
   @JSImport("three/src/renderers/webgl/WebGLRenderLists", "WebGLRenderLists")
   @js.native
-  class WebGLRenderLists protected () extends StObject {
+  open class WebGLRenderLists protected () extends StObject {
     def this(properties: WebGLProperties) = this()
     
     def dispose(): Unit = js.native
     
-    def get(scene: Scene, camera: Camera): WebGLRenderList = js.native
+    def get(scene: Scene, renderCallDepth: Double): WebGLRenderList = js.native
   }
   
   trait RenderItem extends StObject {
@@ -96,7 +116,7 @@ object webGLRenderListsMod {
     
     var material: Material
     
-    var `object`: Object3D
+    var `object`: Object3D[Event]
     
     var program: WebGLProgram
     
@@ -110,7 +130,7 @@ object webGLRenderListsMod {
       groupOrder: Double,
       id: Double,
       material: Material,
-      `object`: Object3D,
+      `object`: Object3D[Event],
       program: WebGLProgram,
       renderOrder: Double,
       z: Double
@@ -136,7 +156,7 @@ object webGLRenderListsMod {
       
       inline def setMaterial(value: Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
       
-      inline def setObject(value: Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Object3D[Event]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setProgram(value: WebGLProgram): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
@@ -145,6 +165,4 @@ object webGLRenderListsMod {
       inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait RenderTarget extends StObject
 }

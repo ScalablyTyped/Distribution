@@ -6,6 +6,7 @@ import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
@@ -16,6 +17,7 @@ import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
+import typings.react.mod.FC
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -29,7 +31,6 @@ import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
-import typings.react.mod.StatelessComponent
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -43,6 +44,7 @@ import typings.react.reactStrings.decimal
 import typings.react.reactStrings.done
 import typings.react.reactStrings.email
 import typings.react.reactStrings.enter
+import typings.react.reactStrings.environment
 import typings.react.reactStrings.go
 import typings.react.reactStrings.inherit
 import typings.react.reactStrings.next
@@ -57,11 +59,13 @@ import typings.react.reactStrings.send
 import typings.react.reactStrings.tel
 import typings.react.reactStrings.text
 import typings.react.reactStrings.url
+import typings.react.reactStrings.user
 import typings.react.reactStrings.yes
 import typings.semanticUiReact.checkboxCheckboxMod.CheckboxProps
 import typings.semanticUiReact.formFieldMod.StrictFormFieldProps
 import typings.semanticUiReact.semanticUiReactStrings.checkbox
 import typings.semanticUiReact.semanticUiReactStrings.radio
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -72,12 +76,12 @@ object formRadioMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormRadio", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FormRadioProps] = js.native
+  val default: FC[FormRadioProps] = js.native
   
   trait FormRadioProps
     extends StObject
        with StrictFormRadioProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FormRadioProps {
     
     inline def apply(): FormRadioProps = {
@@ -121,7 +125,7 @@ object formRadioMod extends Shortcut {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     /** Whether or not checkbox is checked. */
     var checked: js.UndefOr[Boolean] = js.undefined
@@ -174,7 +178,7 @@ object formRadioMod extends Shortcut {
     /** Whether or not checkbox is indeterminate. */
     var indeterminate: js.UndefOr[Boolean] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -316,6 +320,7 @@ object formRadioMod extends Shortcut {
     // Keyboard Events
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
+    /** @deprecated */
     var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
@@ -458,7 +463,7 @@ object formRadioMod extends Shortcut {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -549,7 +554,7 @@ object formRadioMod extends Shortcut {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -593,7 +598,7 @@ object formRadioMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -647,7 +652,7 @@ object formRadioMod extends Shortcut {
       
       inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -735,7 +740,7 @@ object formRadioMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -843,7 +848,7 @@ object formRadioMod extends Shortcut {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1075,7 +1080,7 @@ object formRadioMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1157,8 +1162,8 @@ object formRadioMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[FormRadioProps]
+  type _To = FC[FormRadioProps]
   
   /* This means you don't have to write `default`, but can instead just say `formRadioMod.foo` */
-  override def _to: StatelessComponent[FormRadioProps] = default
+  override def _to: FC[FormRadioProps] = default
 }

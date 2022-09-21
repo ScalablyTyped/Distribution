@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRInput")
 @js.native
-class WebXRInput protected ()
+open class WebXRInput protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRInput {
   /**
     * Initializes the WebXRInput
     * @param xrSessionManager the xr session manager for this session
     * @param xrCamera the WebXR camera for this session. Mainly used for teleportation
-    * @param options = initialization options for this xr input
+    * @param _options = initialization options for this xr input
     */
   def this(
     /**
@@ -35,23 +35,26 @@ class WebXRInput protected ()
     * the WebXR camera for this session. Mainly used for teleportation
     */
   xrCamera: typings.babylonjs.BABYLON.WebXRCamera,
-    options: IWebXRInputOptions
+    _options: IWebXRInputOptions
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _addAndRemoveControllers: js.Any = js.native
+  var _addAndRemoveControllers: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _frameObserver: js.Any = js.native
+  var _frameObserver: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _onInputSourcesChange: js.Any = js.native
+  var _onInputSourcesChange: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _sessionEndedObserver: js.Any = js.native
+  override val _options: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _sessionInitObserver: js.Any = js.native
+  var _sessionEndedObserver: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _sessionInitObserver: Any = js.native
   
   /**
     * XR controllers being tracked
@@ -76,9 +79,6 @@ class WebXRInput protected ()
     */
   /* CompleteClass */
   var onControllerRemovedObservable: typings.babylonjs.BABYLON.Observable[typings.babylonjs.BABYLON.WebXRInputSource] = js.native
-  
-  /* private */ /* CompleteClass */
-  override val options: js.Any = js.native
   
   /**
     * the WebXR camera for this session. Mainly used for teleportation

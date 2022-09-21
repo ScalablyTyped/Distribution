@@ -11,28 +11,28 @@ object selectedItemsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList", "BasePeopleSelectedItemsList")
   @js.native
-  class BasePeopleSelectedItemsList protected ()
+  open class BasePeopleSelectedItemsList protected ()
     extends typings.officeUiFabricReact.selectedPeopleListMod.BasePeopleSelectedItemsList {
     def this(basePickerProps: ISelectedPeopleProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList", "BaseSelectedItemsList")
   @js.native
-  class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protected ()
+  open class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protected ()
     extends typings.officeUiFabricReact.baseSelectedItemsListMod.BaseSelectedItemsList[T, P] {
     def this(basePickerProps: P) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList", "ExtendedSelectedItem")
   @js.native
-  class ExtendedSelectedItem protected ()
+  open class ExtendedSelectedItem protected ()
     extends typings.officeUiFabricReact.extendedSelectedItemMod.ExtendedSelectedItem {
     def this(props: ISelectedPeopleItemProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList", "SelectedPeopleList")
   @js.native
-  class SelectedPeopleList protected ()
+  open class SelectedPeopleList protected ()
     extends typings.officeUiFabricReact.selectedPeopleListMod.SelectedPeopleList {
     def this(basePickerProps: ISelectedPeopleProps) = this()
   }
@@ -45,7 +45,7 @@ object selectedItemsListMod {
     
     @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList", "SelectedPeopleList.defaultProps")
     @js.native
-    def defaultProps: js.Any = js.native
-    inline def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Any = js.native
+    inline def defaultProps_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

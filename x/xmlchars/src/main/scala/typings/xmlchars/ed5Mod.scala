@@ -1,6 +1,5 @@
 package typings.xmlchars
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object ed5Mod {
   
   @JSImport("xmlchars/xml/1.0/ed5", "CHAR_RE")
   @js.native
-  val CHAR_RE: RegExp = js.native
+  val CHAR_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed5", "NAME_CHAR")
   @js.native
@@ -25,11 +24,11 @@ object ed5Mod {
   
   @JSImport("xmlchars/xml/1.0/ed5", "NAME_CHAR_RE")
   @js.native
-  val NAME_CHAR_RE: RegExp = js.native
+  val NAME_CHAR_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed5", "NAME_RE")
   @js.native
-  val NAME_RE: RegExp = js.native
+  val NAME_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed5", "NAME_START_CHAR")
   @js.native
@@ -37,11 +36,11 @@ object ed5Mod {
   
   @JSImport("xmlchars/xml/1.0/ed5", "NAME_START_CHAR_RE")
   @js.native
-  val NAME_START_CHAR_RE: RegExp = js.native
+  val NAME_START_CHAR_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed5", "NMTOKEN_RE")
   @js.native
-  val NMTOKEN_RE: RegExp = js.native
+  val NMTOKEN_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed5", "S")
   @js.native
@@ -53,7 +52,7 @@ object ed5Mod {
   
   @JSImport("xmlchars/xml/1.0/ed5", "S_RE")
   @js.native
-  val S_RE: RegExp = js.native
+  val S_RE: js.RegExp = js.native
   
   inline def isChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

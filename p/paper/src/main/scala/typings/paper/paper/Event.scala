@@ -15,7 +15,7 @@ trait Event extends StObject {
     * 
     * @see Key.modifiers
     */
-  val modifiers: js.Any
+  val modifiers: Any
   
   /** 
     * Cancels the event if it is cancelable, without stopping further
@@ -46,7 +46,7 @@ trait Event extends StObject {
 object Event {
   
   inline def apply(
-    modifiers: js.Any,
+    modifiers: Any,
     preventDefault: () => Unit,
     stop: () => Unit,
     stopPropagation: () => Unit,
@@ -58,7 +58,7 @@ object Event {
   
   extension [Self <: Event](x: Self) {
     
-    inline def setModifiers(value: js.Any): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: Any): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     

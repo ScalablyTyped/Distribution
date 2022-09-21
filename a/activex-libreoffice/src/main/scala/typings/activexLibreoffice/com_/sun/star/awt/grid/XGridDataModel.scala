@@ -30,7 +30,7 @@ trait XGridDataModel
     * retrieves the data for a given cell
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the column or row index do not denote a valid cell position.
     */
-  def getCellData(Column: Double, RowIndex: Double): js.Any
+  def getCellData(Column: Double, RowIndex: Double): Any
   
   /**
     * retrieves the tool tip to be displayed when the mouse hovers over a given cell
@@ -40,7 +40,7 @@ trait XGridDataModel
     * If `VOID` is returned here, the cell's content will be displayed as tip, but only if it does not fit into the cell.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the column or row index do not denote a valid cell position.
     */
-  def getCellToolTip(Column: Double, RowIndex: Double): js.Any
+  def getCellToolTip(Column: Double, RowIndex: Double): Any
   
   /**
     * retrieves the data for a complete row
@@ -49,7 +49,7 @@ trait XGridDataModel
     * @param RowIndex the index of the row whose data should is to be retrieved.
     * @throws com::sun::star::lang::IndexOutOfBoundsException of the given row index does not denote a valid row.
     */
-  def getRowData(RowIndex: Double): SafeArray[js.Any]
+  def getRowData(RowIndex: Double): SafeArray[Any]
   
   /**
     * retrieves the heading of a given row
@@ -59,7 +59,7 @@ trait XGridDataModel
     * At the moment, only strings are supported as row headings.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given index does not denote a valid row.
     */
-  def getRowHeading(RowIndex: Double): js.Any
+  def getRowHeading(RowIndex: Double): Any
 }
 object XGridDataModel {
   
@@ -70,11 +70,11 @@ object XGridDataModel {
     addEventListener: XEventListener => Unit,
     createClone: () => XCloneable,
     dispose: () => Unit,
-    getCellData: (Double, Double) => js.Any,
-    getCellToolTip: (Double, Double) => js.Any,
-    getRowData: Double => SafeArray[js.Any],
-    getRowHeading: Double => js.Any,
-    queryInterface: `type` => js.Any,
+    getCellData: (Double, Double) => Any,
+    getCellToolTip: (Double, Double) => Any,
+    getRowData: Double => SafeArray[Any],
+    getRowHeading: Double => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XGridDataModel = {
@@ -86,13 +86,13 @@ object XGridDataModel {
     
     inline def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     
-    inline def setGetCellData(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellData", js.Any.fromFunction2(value))
+    inline def setGetCellData(value: (Double, Double) => Any): Self = StObject.set(x, "getCellData", js.Any.fromFunction2(value))
     
-    inline def setGetCellToolTip(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellToolTip", js.Any.fromFunction2(value))
+    inline def setGetCellToolTip(value: (Double, Double) => Any): Self = StObject.set(x, "getCellToolTip", js.Any.fromFunction2(value))
     
-    inline def setGetRowData(value: Double => SafeArray[js.Any]): Self = StObject.set(x, "getRowData", js.Any.fromFunction1(value))
+    inline def setGetRowData(value: Double => SafeArray[Any]): Self = StObject.set(x, "getRowData", js.Any.fromFunction1(value))
     
-    inline def setGetRowHeading(value: Double => js.Any): Self = StObject.set(x, "getRowHeading", js.Any.fromFunction1(value))
+    inline def setGetRowHeading(value: Double => Any): Self = StObject.set(x, "getRowHeading", js.Any.fromFunction1(value))
     
     inline def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
   }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "XYPlot")
 @js.native
-class XYPlot[T] protected ()
-  extends Component[XYPlotProps & T, js.Object, js.Any] {
+open class XYPlot[T] protected ()
+  extends Component[XYPlotProps & T, js.Object, Any] {
   def this(props: XYPlotProps & T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: XYPlotProps & T, context: js.Any) = this()
+  def this(props: XYPlotProps & T, context: Any) = this()
 }

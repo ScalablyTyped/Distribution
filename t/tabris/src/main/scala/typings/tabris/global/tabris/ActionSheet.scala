@@ -8,7 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.ActionSheet")
 @js.native
-class ActionSheet ()
+/**
+  * A pop up dialog that offers a selection. Is automatically disposed when closed.
+  * 
+  * This constructor can be called as a factory, without "new". Doing so allows passing an attributes
+  * object which may include (in addition to the properties) children, event listeners and layout
+  * shorthands.
+  */
+open class ActionSheet ()
   extends typings.tabris.mod.ActionSheet {
   def this(properties: Properties[typings.tabris.mod.ActionSheet, OmitActionSheetsetActions]) = this()
 }

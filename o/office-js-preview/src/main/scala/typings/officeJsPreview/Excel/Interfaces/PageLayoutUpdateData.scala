@@ -67,97 +67,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PageLayoutUpdateData extends StObject {
   
   /**
-    *
     * The worksheet's black and white print option.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var blackAndWhite: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The worksheet's bottom page margin to use for printing in points.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bottomMargin: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var centerHorizontally: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var centerVertically: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The worksheet's draft mode option. If `true`, the sheet will be printed without graphics.
     *
-    * The worksheet's draft mode option. If true the sheet will be printed without graphics.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var draftMode: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The worksheet's first page number to print. A `null` value represents "auto" page numbering.
     *
-    * The worksheet's first page number to print. Null value represents "auto" page numbering.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var firstPageNumber: js.UndefOr[Double | _empty] = js.undefined
   
   /**
-    *
     * The worksheet's footer margin, in points, for use when printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var footerMargin: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The worksheet's header margin, in points, for use when printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var headerMargin: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Header and footer configuration for the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var headersFooters: js.UndefOr[HeaderFooterGroupUpdateData] = js.undefined
   
   /**
-    *
     * The worksheet's left margin, in points, for use when printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var leftMargin: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The worksheet's orientation of the page.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var orientation: js.UndefOr[PageOrientation | Portrait | Landscape] = js.undefined
   
   /**
-    *
     * The worksheet's paper size of the page.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var paperSize: js.UndefOr[
@@ -165,66 +165,66 @@ trait PageLayoutUpdateData extends StObject {
   ] = js.undefined
   
   /**
-    *
     * Specifies if the worksheet's comments should be displayed when printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var printComments: js.UndefOr[PrintComments | NoComments | EndSheet | InPlace] = js.undefined
   
   /**
-    *
     * The worksheet's print errors option.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var printErrors: js.UndefOr[PrintErrorType | AsDisplayed | Blank | Dash | NotAvailable] = js.undefined
   
   /**
-    *
     * Specifies if the worksheet's gridlines will be printed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var printGridlines: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the worksheet's headings will be printed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var printHeadings: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The worksheet's page print order option. This specifies the order to use for processing the page number printed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var printOrder: js.UndefOr[PrintOrder | DownThenOver | OverThenDown] = js.undefined
   
   /**
-    *
     * The worksheet's right margin, in points, for use when printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rightMargin: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The worksheet's top margin, in points, for use when printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var topMargin: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The worksheet's print zoom options.
     The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var zoom: js.UndefOr[PageLayoutZoomOptions] = js.undefined

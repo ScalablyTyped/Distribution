@@ -1,6 +1,6 @@
 package typings.sawtoothSdk
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +57,7 @@ object coreMod {
   
   @JSImport("sawtooth-sdk/signing/core", "NoSuchAlgorithmError")
   @js.native
-  class NoSuchAlgorithmError () extends StObject {
+  open class NoSuchAlgorithmError () extends StObject {
     def this(message: String) = this()
     
     /**
@@ -68,7 +68,7 @@ object coreMod {
   
   @JSImport("sawtooth-sdk/signing/core", "ParseError")
   @js.native
-  class ParseError () extends StObject {
+  open class ParseError () extends StObject {
     def this(message: String) = this()
     
     /**
@@ -119,7 +119,7 @@ object coreMod {
   
   @JSImport("sawtooth-sdk/signing/core", "SigningError")
   @js.native
-  class SigningError () extends StObject {
+  open class SigningError () extends StObject {
     def this(message: String) = this()
     
     /**

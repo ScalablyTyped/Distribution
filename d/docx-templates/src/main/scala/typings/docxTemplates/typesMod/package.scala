@@ -1,65 +1,50 @@
 package typings.docxTemplates.typesMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.docxTemplates.anon.Ctx
+import typings.docxTemplates.anon.ModifiedSandbox
+import typings.docxTemplates.docxTemplatesStrings.ALIAS
+import typings.docxTemplates.docxTemplatesStrings.CMD_NODE
+import typings.docxTemplates.docxTemplatesStrings.Dotgif
+import typings.docxTemplates.docxTemplatesStrings.Dotjpeg
+import typings.docxTemplates.docxTemplatesStrings.Dotjpg
+import typings.docxTemplates.docxTemplatesStrings.Dotpng
+import typings.docxTemplates.docxTemplatesStrings.Dotsvg
+import typings.docxTemplates.docxTemplatesStrings.EXEC
+import typings.docxTemplates.docxTemplatesStrings.FOR
+import typings.docxTemplates.docxTemplatesStrings.HTML
+import typings.docxTemplates.docxTemplatesStrings.IF
+import typings.docxTemplates.docxTemplatesStrings.IMAGE
+import typings.docxTemplates.docxTemplatesStrings.INS
+import typings.docxTemplates.docxTemplatesStrings.LINK
+import typings.docxTemplates.docxTemplatesStrings.QUERY
+import typings.docxTemplates.docxTemplatesStrings.`END-FOR`
+import typings.docxTemplates.docxTemplatesStrings.`END-IF`
+import typings.docxTemplates.typesMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def BUILT_IN_COMMANDS: js.Tuple12[
-typings.docxTemplates.docxTemplatesStrings.QUERY, 
-typings.docxTemplates.docxTemplatesStrings.CMD_NODE, 
-typings.docxTemplates.docxTemplatesStrings.ALIAS, 
-typings.docxTemplates.docxTemplatesStrings.FOR, 
-typings.docxTemplates.docxTemplatesStrings.`END-FOR`, 
-typings.docxTemplates.docxTemplatesStrings.IF, 
-typings.docxTemplates.docxTemplatesStrings.`END-IF`, 
-typings.docxTemplates.docxTemplatesStrings.INS, 
-typings.docxTemplates.docxTemplatesStrings.EXEC, 
-typings.docxTemplates.docxTemplatesStrings.IMAGE, 
-typings.docxTemplates.docxTemplatesStrings.LINK, 
-typings.docxTemplates.docxTemplatesStrings.HTML] = typings.docxTemplates.typesMod.^.asInstanceOf[js.Dynamic].selectDynamic("BUILT_IN_COMMANDS").asInstanceOf[js.Tuple12[
-typings.docxTemplates.docxTemplatesStrings.QUERY, 
-typings.docxTemplates.docxTemplatesStrings.CMD_NODE, 
-typings.docxTemplates.docxTemplatesStrings.ALIAS, 
-typings.docxTemplates.docxTemplatesStrings.FOR, 
-typings.docxTemplates.docxTemplatesStrings.`END-FOR`, 
-typings.docxTemplates.docxTemplatesStrings.IF, 
-typings.docxTemplates.docxTemplatesStrings.`END-IF`, 
-typings.docxTemplates.docxTemplatesStrings.INS, 
-typings.docxTemplates.docxTemplatesStrings.EXEC, 
-typings.docxTemplates.docxTemplatesStrings.IMAGE, 
-typings.docxTemplates.docxTemplatesStrings.LINK, 
-typings.docxTemplates.docxTemplatesStrings.HTML]]
+inline def BUILT_IN_COMMANDS: js.Tuple12[QUERY, CMD_NODE, ALIAS, FOR, `END-FOR`, IF, `END-IF`, INS, EXEC, IMAGE, LINK, HTML] = ^.asInstanceOf[js.Dynamic].selectDynamic("BUILT_IN_COMMANDS").asInstanceOf[js.Tuple12[QUERY, CMD_NODE, ALIAS, FOR, `END-FOR`, IF, `END-IF`, INS, EXEC, IMAGE, LINK, HTML]]
 
-inline def ImageExtensions: js.Tuple5[
-typings.docxTemplates.docxTemplatesStrings.Dotpng, 
-typings.docxTemplates.docxTemplatesStrings.Dotgif, 
-typings.docxTemplates.docxTemplatesStrings.Dotjpg, 
-typings.docxTemplates.docxTemplatesStrings.Dotjpeg, 
-typings.docxTemplates.docxTemplatesStrings.Dotsvg] = typings.docxTemplates.typesMod.^.asInstanceOf[js.Dynamic].selectDynamic("ImageExtensions").asInstanceOf[js.Tuple5[
-typings.docxTemplates.docxTemplatesStrings.Dotpng, 
-typings.docxTemplates.docxTemplatesStrings.Dotgif, 
-typings.docxTemplates.docxTemplatesStrings.Dotjpg, 
-typings.docxTemplates.docxTemplatesStrings.Dotjpeg, 
-typings.docxTemplates.docxTemplatesStrings.Dotsvg]]
+inline def ImageExtensions: js.Tuple5[Dotpng, Dotgif, Dotjpg, Dotjpeg, Dotsvg] = ^.asInstanceOf[js.Dynamic].selectDynamic("ImageExtensions").asInstanceOf[js.Tuple5[Dotpng, Dotgif, Dotjpg, Dotjpeg, Dotsvg]]
 
-type ErrorHandler = js.Function2[/* e */ typings.std.Error, /* raw_code */ js.UndefOr[java.lang.String], js.Any]
+type ErrorHandler = js.Function2[/* e */ js.Error, /* raw_code */ js.UndefOr[String], Any]
 
-type Htmls = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Htmls = StringDictionary[String]
 
-type Images = org.scalablytyped.runtime.StringDictionary[typings.docxTemplates.typesMod.Image]
+type Images = StringDictionary[Image]
 
-type Links = org.scalablytyped.runtime.StringDictionary[typings.docxTemplates.typesMod.Link]
-
-type Query = java.lang.String
+type Links = StringDictionary[Link]
 
 type QueryResolver = js.Function2[
-/* query */ js.UndefOr[typings.docxTemplates.typesMod.Query], 
-/* queryVars */ js.Any, 
-typings.docxTemplates.typesMod.ReportData | js.Promise[typings.docxTemplates.typesMod.ReportData]]
+/* query */ js.UndefOr[String], 
+/* queryVars */ Any, 
+ReportData | js.Promise[ReportData]]
 
-type ReportData = js.Any
+type ReportData = Any
 
-type RunJSFunc = js.Function1[/* o */ typings.docxTemplates.anon.Ctx, typings.docxTemplates.anon.ModifiedSandbox]
+type RunJSFunc = js.Function1[/* o */ Ctx, ModifiedSandbox]
 
-type VarValue = js.Any
+type VarValue = Any

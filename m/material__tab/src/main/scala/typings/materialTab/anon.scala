@@ -1,6 +1,6 @@
 package typings.materialTab
 
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +71,7 @@ object anon {
   /* Inlined std.Partial<@material/tab.@material/tab/adapter.MDCTabAdapter> */
   trait PartialMDCTabAdapter extends StObject {
     
-    var activateIndicator: js.UndefOr[js.Function1[/* previousIndicatorClientRect */ js.UndefOr[ClientRect], Unit]] = js.undefined
+    var activateIndicator: js.UndefOr[js.Function1[/* previousIndicatorClientRect */ js.UndefOr[DOMRect], Unit]] = js.undefined
     
     var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
@@ -104,7 +104,7 @@ object anon {
     
     extension [Self <: PartialMDCTabAdapter](x: Self) {
       
-      inline def setActivateIndicator(value: /* previousIndicatorClientRect */ js.UndefOr[ClientRect] => Unit): Self = StObject.set(x, "activateIndicator", js.Any.fromFunction1(value))
+      inline def setActivateIndicator(value: /* previousIndicatorClientRect */ js.UndefOr[DOMRect] => Unit): Self = StObject.set(x, "activateIndicator", js.Any.fromFunction1(value))
       
       inline def setActivateIndicatorUndefined: Self = StObject.set(x, "activateIndicator", js.undefined)
       

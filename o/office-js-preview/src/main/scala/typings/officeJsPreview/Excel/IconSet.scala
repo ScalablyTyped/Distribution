@@ -7,112 +7,197 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait IconSet extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.IconSet")
 @js.native
 object IconSet extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fiveArrows
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fiveArrowsGray
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fiveBoxes
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fiveQuarters
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fiveRating
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fourArrows
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fourArrowsGray
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fourRating
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fourRedToBlack
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait fourTrafficLights
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait invalid
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeArrows
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeArrowsGray
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeFlags
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeSigns
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeStars
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeSymbols
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeSymbols2
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeTrafficLights1
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeTrafficLights2
     extends StObject
        with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
   sealed trait threeTriangles
     extends StObject

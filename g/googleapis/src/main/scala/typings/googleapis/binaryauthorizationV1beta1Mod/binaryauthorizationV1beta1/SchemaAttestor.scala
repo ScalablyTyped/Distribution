@@ -4,28 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An attestor that attests to container image artifacts. An existing attestor
-  * cannot be modified except where indicated.
-  */
 trait SchemaAttestor extends StObject {
   
   /**
-    * Optional. A descriptive comment.  This field may be updated. The field
-    * may be displayed in chooser dialogs.
+    * Optional. A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required. The resource name, in the format: `projects/x/attestors/x. This
-    * field may not be updated.
+    * Optional. A checksum, returned by the server, that can be sent on update requests to ensure the attestor has an up-to-date value before attempting to update it. See https://google.aip.dev/154.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. The resource name, in the format: `projects/x/attestors/x`. This field may not be updated.
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. Time when the attestor was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A Drydock ATTESTATION_AUTHORITY Note, created by the user.
@@ -43,13 +42,25 @@ object SchemaAttestor {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     

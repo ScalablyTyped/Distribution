@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SelectRowProps[T] extends StObject {
   
-  var bgColor: js.UndefOr[js.Function2[/* row */ T, /* rowIndex */ Double, String]] = js.undefined
+  var bgColor: js.UndefOr[(js.Function2[/* row */ T, /* rowIndex */ Double, String]) | String] = js.undefined
   
   var classes: js.UndefOr[(js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[String]]) | String] = js.undefined
   
@@ -88,7 +88,9 @@ object SelectRowProps {
   
   extension [Self <: SelectRowProps[?], T](x: Self & SelectRowProps[T]) {
     
-    inline def setBgColor(value: (/* row */ T, /* rowIndex */ Double) => String): Self = StObject.set(x, "bgColor", js.Any.fromFunction2(value))
+    inline def setBgColor(value: (js.Function2[/* row */ T, /* rowIndex */ Double, String]) | String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+    
+    inline def setBgColorFunction2(value: (/* row */ T, /* rowIndex */ Double) => String): Self = StObject.set(x, "bgColor", js.Any.fromFunction2(value))
     
     inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
@@ -144,7 +146,7 @@ object SelectRowProps {
     
     inline def setNonSelectableUndefined: Self = StObject.set(x, "nonSelectable", js.undefined)
     
-    inline def setNonSelectableVarargs(value: Double*): Self = StObject.set(x, "nonSelectable", js.Array(value :_*))
+    inline def setNonSelectableVarargs(value: Double*): Self = StObject.set(x, "nonSelectable", js.Array(value*))
     
     inline def setOnSelect(
       value: (/* row */ T, /* isSelected */ Boolean, /* rowIndex */ Double, /* e */ SyntheticEvent[Element, Event]) => Unit | Boolean
@@ -172,7 +174,7 @@ object SelectRowProps {
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setSelectedVarargs(value: (Double | String)*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: (Double | String)*): Self = StObject.set(x, "selected", js.Array(value*))
     
     inline def setSelectionHeaderRenderer(value: /* options */ Indeterminate => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "selectionHeaderRenderer", js.Any.fromFunction1(value))
     

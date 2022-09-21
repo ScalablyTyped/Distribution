@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.AssignToCategoryRuleAction")
 @js.native
-/* private */ class AssignToCategoryRuleAction ()
+/* private */ open class AssignToCategoryRuleAction ()
   extends StObject
      with typings.activexOutlook.Outlook.AssignToCategoryRuleAction {
   
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexOutlook.Outlook.Application = js.native
   
   /* CompleteClass */
-  var Categories: js.Any = js.native
+  var Categories: Any = js.native
   
   /* CompleteClass */
   override val Class: OlObjectClass = js.native
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotAssignToCategoryRuleAction_typekey: typings.activexOutlook.Outlook.AssignToCategoryRuleAction = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

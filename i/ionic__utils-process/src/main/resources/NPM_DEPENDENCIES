@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/utils-process" : "1.0.9"
+      "@ionic/utils-process" : "2.1.10"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/utils-process" : "1.0.9"
+      "@ionic/utils-process" : "2.1.10"
     }
   ],
   "compile-devDependencies" : [

@@ -30,12 +30,17 @@ trait AccessibilityScreenReaderSectionOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for the screen reader
-    * information region before the chart. Supported HTML tags are `<h1-7>`,
+    * information region before the chart. Supported HTML tags are `<h1-6>`,
     * `<p>`, `<div>`, `<a>`, `<ul>`, `<ol>`, `<li>`, and `<button>`. Attributes
     * are not supported, except for id on `<div>`, `<a>`, and `<button>`. Id is
     * required on `<a>` and `<button>` in the format `<tag id="abcd">`.
     * Numbers, lower- and uppercase letters, "-" and "#" are valid characters
     * in IDs.
+    *
+    * The headingTagName is an auto-detected heading (h1-h6) that corresponds
+    * to the heading level below the previous heading in the DOM.
+    *
+    * Set to empty string to remove the region altogether.
     */
   var beforeChartFormat: js.UndefOr[String] = js.undefined
   

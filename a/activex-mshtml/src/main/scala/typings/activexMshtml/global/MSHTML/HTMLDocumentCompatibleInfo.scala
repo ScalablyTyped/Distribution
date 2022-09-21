@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLDocumentCompatibleInfo")
 @js.native
-/* private */ class HTMLDocumentCompatibleInfo ()
+/* private */ open class HTMLDocumentCompatibleInfo ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLDocumentCompatibleInfo {
   
@@ -15,5 +15,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotHTMLDocumentCompatibleInfo_typekey: typings.activexMshtml.MSHTML.HTMLDocumentCompatibleInfo = js.native
   
   /* CompleteClass */
-  override val constructor: js.Any = js.native
+  override val constructor: Any = js.native
 }

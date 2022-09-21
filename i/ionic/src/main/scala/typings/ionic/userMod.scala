@@ -17,7 +17,7 @@ object userMod {
   
   @JSImport("ionic/lib/user", "UserClient")
   @js.native
-  class UserClient protected ()
+  open class UserClient protected ()
     extends ResourceClient
        with ResourceClientLoad[User] {
     def this(token: String, e: UserClientDeps) = this()

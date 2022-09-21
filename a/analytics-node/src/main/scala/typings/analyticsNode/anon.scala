@@ -1,129 +1,41 @@
 package typings.analyticsNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.analyticsNode.mod.AnalyticsNode.Identity
-import typings.std.Date
+import typings.analyticsNode.mod.AnalyticsNode.Integrations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait AnonymousId
-    extends StObject
-       with Identity {
+  trait Batch extends StObject {
     
-    var anonymousId: String | Double
+    var batch: Any
     
-    var userId: js.UndefOr[String | Double] = js.undefined
+    var sentAt: String
+    
+    var timestamp: String
   }
-  object AnonymousId {
+  object Batch {
     
-    inline def apply(anonymousId: String | Double): AnonymousId = {
-      val __obj = js.Dynamic.literal(anonymousId = anonymousId.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AnonymousId]
+    inline def apply(batch: Any, sentAt: String, timestamp: String): Batch = {
+      val __obj = js.Dynamic.literal(batch = batch.asInstanceOf[js.Any], sentAt = sentAt.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Batch]
     }
     
-    extension [Self <: AnonymousId](x: Self) {
+    extension [Self <: Batch](x: Self) {
       
-      inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
+      inline def setBatch(value: Any): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       
-      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setSentAt(value: String): Self = StObject.set(x, "sentAt", value.asInstanceOf[js.Any])
       
-      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
-    }
-  }
-  
-  trait Category extends StObject {
-    
-    var category: js.UndefOr[String] = js.undefined
-    
-    var context: js.UndefOr[js.Any] = js.undefined
-    
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
-    
-    var name: js.UndefOr[String] = js.undefined
-    
-    var properties: js.UndefOr[js.Any] = js.undefined
-    
-    var timestamp: js.UndefOr[Date] = js.undefined
-  }
-  object Category {
-    
-    inline def apply(): Category = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Category]
-    }
-    
-    extension [Self <: Category](x: Self) {
-      
-      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
-      
-      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
-      
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
-      
-      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
-      
-      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
-      
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
-      
-      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
-    }
-  }
-  
-  trait Context extends StObject {
-    
-    var _metadata: NodeVersion
-    
-    var context: Dictkey
-    
-    var messageId: js.UndefOr[String] = js.undefined
-    
-    var timestamp: js.UndefOr[Date] = js.undefined
-    
-    var `type`: String
-  }
-  object Context {
-    
-    inline def apply(_metadata: NodeVersion, context: Dictkey, `type`: String): Context = {
-      val __obj = js.Dynamic.literal(_metadata = _metadata.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Context]
-    }
-    
-    extension [Self <: Context](x: Self) {
-      
-      inline def setContext(value: Dictkey): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
-      
-      inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
-      
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
-      
-      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def set_metadata(value: NodeVersion): Self = StObject.set(x, "_metadata", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var library: Name
   }
@@ -147,6 +59,8 @@ object anon {
     var flushAt: js.UndefOr[Double] = js.undefined
     
     var flushInterval: js.UndefOr[Double] = js.undefined
+    
+    var flushed: js.UndefOr[Boolean] = js.undefined
     
     var host: js.UndefOr[String] = js.undefined
     
@@ -173,6 +87,10 @@ object anon {
       
       inline def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
       
+      inline def setFlushed(value: Boolean): Self = StObject.set(x, "flushed", value.asInstanceOf[js.Any])
+      
+      inline def setFlushedUndefined: Self = StObject.set(x, "flushed", js.undefined)
+      
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
       inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
@@ -183,122 +101,321 @@ object anon {
     }
   }
   
-  trait Event extends StObject {
+  /* Inlined analytics-node.analytics-node.AnalyticsNode.Identity & {  category :string | undefined,   name :string | undefined,   properties :any | undefined,   timestamp :std.Date | undefined,   context :any | undefined,   integrations :analytics-node.analytics-node.AnalyticsNode.Integrations | undefined,   messageId :string | undefined} */
+  trait Identitycategorystringund extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var anonymousId: js.UndefOr[String | Double] = js.undefined
+    
+    var category: js.UndefOr[String] = js.undefined
+    
+    var context: js.UndefOr[Any] = js.undefined
+    
+    var integrations: js.UndefOr[Integrations] = js.undefined
+    
+    var messageId: js.UndefOr[String] = js.undefined
+    
+    var name: js.UndefOr[String] = js.undefined
+    
+    var properties: js.UndefOr[Any] = js.undefined
+    
+    var timestamp: js.UndefOr[js.Date] = js.undefined
+    
+    var userId: js.UndefOr[String | Double] = js.undefined
+  }
+  object Identitycategorystringund {
+    
+    inline def apply(): Identitycategorystringund = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Identitycategorystringund]
+    }
+    
+    extension [Self <: Identitycategorystringund](x: Self) {
+      
+      inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
+      
+      inline def setAnonymousIdUndefined: Self = StObject.set(x, "anonymousId", js.undefined)
+      
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      
+      inline def setIntegrations(value: Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      
+      inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      
+      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    }
+  }
+  
+  /* Inlined analytics-node.analytics-node.AnalyticsNode.Identity & {  event :string,   properties :any | undefined,   timestamp :std.Date | undefined,   context :any | undefined,   integrations :analytics-node.analytics-node.AnalyticsNode.Integrations | undefined} */
+  trait Identityeventstringproper extends StObject {
+    
+    var anonymousId: js.UndefOr[String | Double] = js.undefined
+    
+    var context: js.UndefOr[Any] = js.undefined
     
     var event: String
     
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
+    var integrations: js.UndefOr[Integrations] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.undefined
+    var timestamp: js.UndefOr[js.Date] = js.undefined
+    
+    var userId: js.UndefOr[String | Double] = js.undefined
   }
-  object Event {
+  object Identityeventstringproper {
     
-    inline def apply(event: String): Event = {
+    inline def apply(event: String): Identityeventstringproper = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Event]
+      __obj.asInstanceOf[Identityeventstringproper]
     }
     
-    extension [Self <: Event](x: Self) {
+    extension [Self <: Identityeventstringproper](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
+      
+      inline def setAnonymousIdUndefined: Self = StObject.set(x, "anonymousId", js.undefined)
+      
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
       inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      
+      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
   
-  trait GroupId extends StObject {
+  /* Inlined analytics-node.analytics-node.AnalyticsNode.Identity & {  groupId :string | number,   traits :any | undefined,   context :any | undefined,   timestamp :std.Date | undefined,   integrations :analytics-node.analytics-node.AnalyticsNode.Integrations | undefined} */
+  trait IdentitygroupIdstringnumb extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var anonymousId: js.UndefOr[String | Double] = js.undefined
+    
+    var context: js.UndefOr[Any] = js.undefined
     
     var groupId: String | Double
     
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
+    var integrations: js.UndefOr[Integrations] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.undefined
+    var timestamp: js.UndefOr[js.Date] = js.undefined
     
-    var traits: js.UndefOr[js.Any] = js.undefined
+    var traits: js.UndefOr[Any] = js.undefined
+    
+    var userId: js.UndefOr[String | Double] = js.undefined
   }
-  object GroupId {
+  object IdentitygroupIdstringnumb {
     
-    inline def apply(groupId: String | Double): GroupId = {
+    inline def apply(groupId: String | Double): IdentitygroupIdstringnumb = {
       val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any])
-      __obj.asInstanceOf[GroupId]
+      __obj.asInstanceOf[IdentitygroupIdstringnumb]
     }
     
-    extension [Self <: GroupId](x: Self) {
+    extension [Self <: IdentitygroupIdstringnumb](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
+      
+      inline def setAnonymousIdUndefined: Self = StObject.set(x, "anonymousId", js.undefined)
+      
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
       inline def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
-      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
       inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      inline def setTraits(value: js.Any): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
+      inline def setTraits(value: Any): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
       
       inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
+      
+      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
   
-  trait Integrations extends StObject {
+  /* Inlined analytics-node.analytics-node.AnalyticsNode.Identity & {  name :string | undefined,   properties :any | undefined,   timestamp :std.Date | undefined,   context :any | undefined,   integrations :analytics-node.analytics-node.AnalyticsNode.Integrations | undefined} */
+  trait Identitynamestringundefin extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var anonymousId: js.UndefOr[String | Double] = js.undefined
     
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.undefined
+    var integrations: js.UndefOr[Integrations] = js.undefined
     
-    var traits: js.UndefOr[js.Any] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
+    
+    var properties: js.UndefOr[Any] = js.undefined
+    
+    var timestamp: js.UndefOr[js.Date] = js.undefined
+    
+    var userId: js.UndefOr[String | Double] = js.undefined
   }
-  object Integrations {
+  object Identitynamestringundefin {
     
-    inline def apply(): Integrations = {
+    inline def apply(): Identitynamestringundefin = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Integrations]
+      __obj.asInstanceOf[Identitynamestringundefin]
     }
     
-    extension [Self <: Integrations](x: Self) {
+    extension [Self <: Identitynamestringundefin](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
+      
+      inline def setAnonymousIdUndefined: Self = StObject.set(x, "anonymousId", js.undefined)
+      
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
       inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      inline def setTraits(value: js.Any): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    }
+  }
+  
+  /* Inlined analytics-node.analytics-node.AnalyticsNode.Identity & {  previousId :string | number,   integrations :analytics-node.analytics-node.AnalyticsNode.Integrations | undefined} */
+  trait IdentitypreviousIdstringn extends StObject {
+    
+    var anonymousId: js.UndefOr[String | Double] = js.undefined
+    
+    var integrations: js.UndefOr[Integrations] = js.undefined
+    
+    var previousId: String | Double
+    
+    var userId: js.UndefOr[String | Double] = js.undefined
+  }
+  object IdentitypreviousIdstringn {
+    
+    inline def apply(previousId: String | Double): IdentitypreviousIdstringn = {
+      val __obj = js.Dynamic.literal(previousId = previousId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IdentitypreviousIdstringn]
+    }
+    
+    extension [Self <: IdentitypreviousIdstringn](x: Self) {
+      
+      inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
+      
+      inline def setAnonymousIdUndefined: Self = StObject.set(x, "anonymousId", js.undefined)
+      
+      inline def setIntegrations(value: Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      
+      inline def setPreviousId(value: String | Double): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
+      
+      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    }
+  }
+  
+  /* Inlined analytics-node.analytics-node.AnalyticsNode.Identity & {  traits :any | undefined,   timestamp :std.Date | undefined,   context :any | undefined,   integrations :analytics-node.analytics-node.AnalyticsNode.Integrations | undefined} */
+  trait Identitytraitsanyundefine extends StObject {
+    
+    var anonymousId: js.UndefOr[String | Double] = js.undefined
+    
+    var context: js.UndefOr[Any] = js.undefined
+    
+    var integrations: js.UndefOr[Integrations] = js.undefined
+    
+    var timestamp: js.UndefOr[js.Date] = js.undefined
+    
+    var traits: js.UndefOr[Any] = js.undefined
+    
+    var userId: js.UndefOr[String | Double] = js.undefined
+  }
+  object Identitytraitsanyundefine {
+    
+    inline def apply(): Identitytraitsanyundefine = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Identitytraitsanyundefine]
+    }
+    
+    extension [Self <: Identitytraitsanyundefine](x: Self) {
+      
+      inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
+      
+      inline def setAnonymousIdUndefined: Self = StObject.set(x, "anonymousId", js.undefined)
+      
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      
+      inline def setIntegrations(value: Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      
+      inline def setTraits(value: Any): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
       
       inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
+      
+      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
   
@@ -325,7 +442,7 @@ object anon {
   
   trait NodeVersion
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var nodeVersion: String
   }
@@ -339,48 +456,6 @@ object anon {
     extension [Self <: NodeVersion](x: Self) {
       
       inline def setNodeVersion(value: String): Self = StObject.set(x, "nodeVersion", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait PreviousId extends StObject {
-    
-    var integrations: js.UndefOr[typings.analyticsNode.mod.AnalyticsNode.Integrations] = js.undefined
-    
-    var previousId: String | Double
-  }
-  object PreviousId {
-    
-    inline def apply(previousId: String | Double): PreviousId = {
-      val __obj = js.Dynamic.literal(previousId = previousId.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PreviousId]
-    }
-    
-    extension [Self <: PreviousId](x: Self) {
-      
-      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
-      
-      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
-      
-      inline def setPreviousId(value: String | Double): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait UserId
-    extends StObject
-       with Identity {
-    
-    var userId: String | Double
-  }
-  object UserId {
-    
-    inline def apply(userId: String | Double): UserId = {
-      val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
-      __obj.asInstanceOf[UserId]
-    }
-    
-    extension [Self <: UserId](x: Self) {
-      
-      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
 }

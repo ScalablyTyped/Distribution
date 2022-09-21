@@ -10,10 +10,10 @@ Convert efficiently index to/from line-column in a string
 | ------------------ | :-------------: |
 | Full name          | line-column |
 | Keywords           | string, index, line, column, linecol, position |
-| # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 17140365 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1666095.3333333333 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/io-monad/line-column)

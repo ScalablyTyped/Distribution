@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceBuildOptions[ResourceType] extends StObject
 object ResourceBuildOptions {
   
-  inline def Type[ResourceType](validator: js.Any => /* is ResourceType */ Boolean): typings.tabris.anon.Type[ResourceType] = {
+  inline def Type[ResourceType](validator: Any => /* is ResourceType */ Boolean): typings.tabris.anon.Type[ResourceType] = {
     val __obj = js.Dynamic.literal(validator = js.Any.fromFunction1(validator))
     __obj.asInstanceOf[typings.tabris.anon.Type[ResourceType]]
   }

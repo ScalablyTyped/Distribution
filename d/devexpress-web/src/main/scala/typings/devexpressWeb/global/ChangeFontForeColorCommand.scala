@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFontForeColorCommand")
 @js.native
-class ChangeFontForeColorCommand ()
+open class ChangeFontForeColorCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFontForeColorCommand {
   

@@ -21,7 +21,7 @@ object mod {
     */
   @JSImport("nuclear-js-react-addons-chefsplate", "Provider")
   @js.native
-  val Provider: js.Any = js.native
+  val Provider: Any = js.native
   
   /**
     * Connects a React component to a Nuclear.js store.
@@ -68,7 +68,7 @@ object mod {
     */
   @JSImport("nuclear-js-react-addons-chefsplate", "nuclearComponent")
   @js.native
-  val nuclearComponent: js.Any = js.native
+  val nuclearComponent: Any = js.native
   
   /**
     * Mixin expecting a context.reactor on the component
@@ -78,7 +78,7 @@ object mod {
     */
   @JSImport("nuclear-js-react-addons-chefsplate", "nuclearMixin")
   @js.native
-  val nuclearMixin: js.Any = js.native
+  val nuclearMixin: Any = js.native
   
   /**
     * Provides reactor prop to all children as React context
@@ -104,22 +104,22 @@ object mod {
     */
   @JSImport("nuclear-js-react-addons-chefsplate", "provideReactor")
   @js.native
-  val provideReactor: js.Any = js.native
+  val provideReactor: Any = js.native
   
   // Injects props and removes them from the prop requirements.
   // Will not pass through the injected props if they are passed in during
   // render. Also adds new prop requirements from TNeedsProps.
   type ComponentConnector[TInjectedPropNames /* <: String | Double | js.Symbol */] = js.Function1[
-    /* component */ ComponentType[js.Any], 
-    ComponentClass[StrictOmit[js.Any, TInjectedPropNames], ComponentState]
+    /* component */ ComponentType[Any], 
+    ComponentClass[StrictOmit[Any, TInjectedPropNames], ComponentState]
   ]
   
   // Function that returns getters, which are turned into injected props.
   type MapStateToProps[TInjectedPropNames /* <: String | Double | js.Symbol */] = js.Function1[
-    /* props */ js.UndefOr[js.Any], 
+    /* props */ js.UndefOr[Any], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ propName in TInjectedPropNames ]: any}
-    */ typings.nuclearJsReactAddonsChefsplate.nuclearJsReactAddonsChefsplateStrings.MapStateToProps & TopLevel[js.Any]
+    */ typings.nuclearJsReactAddonsChefsplate.nuclearJsReactAddonsChefsplateStrings.MapStateToProps & TopLevel[Any]
   ]
   
   /**

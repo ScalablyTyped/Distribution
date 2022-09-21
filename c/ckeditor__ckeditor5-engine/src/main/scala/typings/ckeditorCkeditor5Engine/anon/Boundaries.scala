@@ -1,18 +1,16 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.backward
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.forward
-import typings.ckeditorCkeditor5Engine.mod.model.Position
-import typings.ckeditorCkeditor5Engine.mod.model.Range
+import typings.ckeditorCkeditor5Engine.rangeMod.default
+import typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Boundaries extends StObject {
   
-  var boundaries: js.UndefOr[Range] = js.undefined
+  var boundaries: js.UndefOr[default] = js.undefined
   
-  var direction: js.UndefOr[forward | backward] = js.undefined
+  var direction: js.UndefOr[TreeWalkerDirection] = js.undefined
   
   var ignoreElementEnd: js.UndefOr[Boolean] = js.undefined
   
@@ -20,22 +18,22 @@ trait Boundaries extends StObject {
   
   var singleCharacters: js.UndefOr[Boolean] = js.undefined
   
-  var startPosition: Position
+  var startPosition: typings.ckeditorCkeditor5Engine.positionMod.Position
 }
 object Boundaries {
   
-  inline def apply(startPosition: Position): Boundaries = {
+  inline def apply(startPosition: typings.ckeditorCkeditor5Engine.positionMod.Position): Boundaries = {
     val __obj = js.Dynamic.literal(startPosition = startPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Boundaries]
   }
   
   extension [Self <: Boundaries](x: Self) {
     
-    inline def setBoundaries(value: Range): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
+    inline def setBoundaries(value: default): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     
     inline def setBoundariesUndefined: Self = StObject.set(x, "boundaries", js.undefined)
     
-    inline def setDirection(value: forward | backward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: TreeWalkerDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
@@ -51,6 +49,6 @@ object Boundaries {
     
     inline def setSingleCharactersUndefined: Self = StObject.set(x, "singleCharacters", js.undefined)
     
-    inline def setStartPosition(value: Position): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: typings.ckeditorCkeditor5Engine.positionMod.Position): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
   }
 }

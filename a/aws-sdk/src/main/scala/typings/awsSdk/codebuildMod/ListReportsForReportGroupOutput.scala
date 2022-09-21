@@ -33,6 +33,6 @@ object ListReportsForReportGroupOutput {
     
     inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    inline def setReportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reports", js.Array(value*))
   }
 }

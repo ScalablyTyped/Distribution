@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CSSProperties
   extends StObject
-     with Properties[String | Double] {
+     with Properties[String | Double, String] {
   
   /* fake member to keep old syntax */
-  val hack: js.UndefOr[js.Any] = js.undefined
+  val hack: js.UndefOr[Any] = js.undefined
 }
 object CSSProperties {
   
@@ -21,7 +21,7 @@ object CSSProperties {
   
   extension [Self <: CSSProperties](x: Self) {
     
-    inline def setHack(value: js.Any): Self = StObject.set(x, "hack", value.asInstanceOf[js.Any])
+    inline def setHack(value: Any): Self = StObject.set(x, "hack", value.asInstanceOf[js.Any])
     
     inline def setHackUndefined: Self = StObject.set(x, "hack", js.undefined)
   }

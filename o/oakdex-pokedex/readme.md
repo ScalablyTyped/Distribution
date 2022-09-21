@@ -10,10 +10,10 @@ Comprehensive Pokedex for Gen 1-7
 | ------------------ | :-------------: |
 | Full name          | oakdex-pokedex |
 | Keywords           | json, pokedex, pokemon, json-schema, json-api |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 6037 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1621.6666666666667 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/jalyna/oakdex-pokedex#readme)

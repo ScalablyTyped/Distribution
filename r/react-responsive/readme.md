@@ -11,9 +11,9 @@ Media queries in react for responsive design
 | Full name          | react-responsive |
 | Keywords           | css, react-component, viewport, react, mobile, media queries, respond, media query, matchMedia, responsive, component |
 | # releases         | 14 |
-| # dependents       | 258 |
-| # downloads        | 11753984 |
-| # stars            | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 2280504.3333333335 |
+| # stars            | 6356.0 |
 
 ## Links
 - [Homepage](http://github.com/contra/react-responsive)

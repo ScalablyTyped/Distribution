@@ -10,7 +10,7 @@ object selectionSelectionMod {
   
   @JSImport("@uifabric/utilities/lib/selection/Selection", "Selection")
   @js.native
-  class Selection[TItem] protected ()
+  open class Selection[TItem] protected ()
     extends StObject
        with ISelection[TItem] {
     /**
@@ -18,51 +18,61 @@ object selectionSelectionMod {
       * object with a `getKey` implementation. Providing options is optional otherwise.
       * (At most one `options` object is accepted.)
       */
-    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[js.Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
+    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
     
-    /* private */ var _anchoredIndex: js.Any = js.native
+    /* private */ var _anchoredIndex: Any = js.native
     
-    /* private */ var _canSelectItem: js.Any = js.native
+    /* private */ var _canSelectItem: Any = js.native
     
-    /* private */ var _change: js.Any = js.native
+    /* private */ var _change: Any = js.native
     
-    /* private */ var _changeEventSuppressionCount: js.Any = js.native
+    /* private */ var _changeEventSuppressionCount: Any = js.native
     
-    /* private */ var _exemptedCount: js.Any = js.native
+    /* private */ var _exemptedCount: Any = js.native
     
-    /* private */ var _exemptedIndices: js.Any = js.native
+    /* private */ var _exemptedIndices: Any = js.native
     
-    /* private */ var _getKey: js.Any = js.native
+    /* private */ var _getKey: Any = js.native
     
-    /* private */ var _hasChanged: js.Any = js.native
+    /* private */ var _hasChanged: Any = js.native
     
-    /* private */ var _isAllSelected: js.Any = js.native
+    /* private */ var _isAllSelected: Any = js.native
     
-    /* private */ var _isModal: js.Any = js.native
+    /* private */ var _isModal: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _items: Any = js.native
     
-    /* private */ var _keyToIndexMap: js.Any = js.native
+    /* private */ var _keyToIndexMap: Any = js.native
     
-    /* private */ var _onSelectionChanged: js.Any = js.native
+    /* private */ var _onItemsChanged: Any = js.native
     
-    /* private */ var _selectedIndices: js.Any = js.native
+    /* private */ var _onSelectionChanged: Any = js.native
     
-    /* private */ var _selectedItems: js.Any = js.native
+    /* private */ var _selectedIndices: Any = js.native
     
-    /* private */ var _setAllSelected: js.Any = js.native
+    /* private */ var _selectedItems: Any = js.native
     
-    /* private */ var _unselectableCount: js.Any = js.native
+    /* private */ var _setAllSelected: Any = js.native
     
-    /* private */ var _unselectableIndices: js.Any = js.native
+    /* private */ var _unselectableCount: Any = js.native
     
-    /* private */ var _updateCount: js.Any = js.native
+    /* private */ var _unselectableIndices: Any = js.native
+    
+    /* private */ var _updateCount: Any = js.native
+    
+    @JSName("getItemIndex")
+    def getItemIndex_MSelection(key: String): Double = js.native
     
     def getKey(item: TItem): String = js.native
     def getKey(item: TItem, index: Double): String = js.native
     
     @JSName("isModal")
     def isModal_MSelection(): Boolean = js.native
+    
+    @JSName("selectToRange")
+    def selectToRange_MSelection(fromIndex: Double, count: Double): Unit = js.native
+    @JSName("selectToRange")
+    def selectToRange_MSelection(fromIndex: Double, count: Double, clearSelection: Boolean): Unit = js.native
     
     /**
       * Selection needs the items, call this method to set them. If the set
@@ -74,6 +84,9 @@ object selectionSelectionMod {
     
     @JSName("setModal")
     def setModal_MSelection(isModal: Boolean): Unit = js.native
+    
+    @JSName("setRangeSelected")
+    def setRangeSelected_MSelection(fromIndex: Double, count: Double, isSelected: Boolean, shouldAnchor: Boolean): Unit = js.native
   }
   
   trait ISelectionOptions[TItem] extends StObject {
@@ -84,6 +97,8 @@ object selectionSelectionMod {
     var getKey: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]] = js.undefined
     
     var items: js.UndefOr[js.Array[TItem]] = js.undefined
+    
+    var onItemsChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onSelectionChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -110,7 +125,11 @@ object selectionSelectionMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value*))
+      
+      inline def setOnItemsChanged(value: () => Unit): Self = StObject.set(x, "onItemsChanged", js.Any.fromFunction0(value))
+      
+      inline def setOnItemsChangedUndefined: Self = StObject.set(x, "onItemsChanged", js.undefined)
       
       inline def setOnSelectionChanged(value: () => Unit): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction0(value))
       
@@ -131,6 +150,8 @@ object selectionSelectionMod {
     var getKey: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) & (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
     
     var items: js.UndefOr[js.Array[TItem]] = js.undefined
+    
+    var onItemsChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onSelectionChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -159,7 +180,11 @@ object selectionSelectionMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value*))
+      
+      inline def setOnItemsChanged(value: () => Unit): Self = StObject.set(x, "onItemsChanged", js.Any.fromFunction0(value))
+      
+      inline def setOnItemsChangedUndefined: Self = StObject.set(x, "onItemsChanged", js.undefined)
       
       inline def setOnSelectionChanged(value: () => Unit): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction0(value))
       

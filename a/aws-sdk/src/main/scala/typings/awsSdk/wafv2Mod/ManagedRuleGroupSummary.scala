@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedRuleGroupSummary extends StObject {
   
   /**
-    * The description of the managed rule group, provided by AWS Managed Rules or the AWS Marketplace seller who manages it.
+    * The description of the managed rule group, provided by Amazon Web Services Managed Rules or the Amazon Web Services Marketplace seller who manages it.
     */
   var Description: js.UndefOr[EntityDescription] = js.undefined
   
@@ -20,6 +20,11 @@ trait ManagedRuleGroupSummary extends StObject {
     * The name of the managed rule group vendor. You use this, along with the rule group name, to identify the rule group.
     */
   var VendorName: js.UndefOr[typings.awsSdk.wafv2Mod.VendorName] = js.undefined
+  
+  /**
+    * Indicates whether the managed rule group is versioned. If it is, you can retrieve the versions list by calling ListAvailableManagedRuleGroupVersions. 
+    */
+  var VersioningSupported: js.UndefOr[Boolean] = js.undefined
 }
 object ManagedRuleGroupSummary {
   
@@ -41,5 +46,9 @@ object ManagedRuleGroupSummary {
     inline def setVendorName(value: VendorName): Self = StObject.set(x, "VendorName", value.asInstanceOf[js.Any])
     
     inline def setVendorNameUndefined: Self = StObject.set(x, "VendorName", js.undefined)
+    
+    inline def setVersioningSupported(value: Boolean): Self = StObject.set(x, "VersioningSupported", value.asInstanceOf[js.Any])
+    
+    inline def setVersioningSupportedUndefined: Self = StObject.set(x, "VersioningSupported", js.undefined)
   }
 }

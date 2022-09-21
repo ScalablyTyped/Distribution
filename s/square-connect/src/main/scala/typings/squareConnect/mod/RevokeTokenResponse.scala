@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RevokeTokenResponse")
 @js.native
-class RevokeTokenResponse () extends StObject {
+open class RevokeTokenResponse () extends StObject {
   
   /**
     * If the request is successful, this is true.

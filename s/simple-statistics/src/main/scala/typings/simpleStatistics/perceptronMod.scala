@@ -8,7 +8,7 @@ object perceptronMod {
   
   @JSImport("simple-statistics/src/perceptron", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with PerceptronModel {
     
@@ -57,7 +57,7 @@ object perceptronMod {
       
       inline def setWeights(value: js.Array[Double]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
       
-      inline def setWeightsVarargs(value: Double*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Double*): Self = StObject.set(x, "weights", js.Array(value*))
     }
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.IconSequence")
 @js.native
-class IconSequence protected ()
+open class IconSequence protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.IconSequence {
   def this(symbol: js.Symbol) = this()

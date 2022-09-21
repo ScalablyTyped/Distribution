@@ -11,42 +11,42 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def implement[P /* <: js.Thenable[js.Any] */](implementation: PromiseImplementation[P]): Run_[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(implementation.asInstanceOf[js.Any]).asInstanceOf[Run_[P]]
+  inline def implement[P /* <: js.Thenable[Any] */](implementation: PromiseImplementation[P]): Run_[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(implementation.asInstanceOf[js.Any]).asInstanceOf[Run_[P]]
   
   @JSImport("promise-dag", "run")
   @js.native
-  val run: Run_[js.Promise[js.Any]] = js.native
+  val run: Run_[js.Promise[Any]] = js.native
   
-  trait PromiseImplementation[P /* <: js.Thenable[js.Any] */] extends StObject {
+  trait PromiseImplementation[P /* <: js.Thenable[Any] */] extends StObject {
     
-    def all(values: js.Array[js.Any]): P
+    def all(values: js.Array[Any]): P
     
-    def reject(value: js.Any): P
+    def reject(value: Any): P
     
-    def resolve(value: js.Any): P
+    def resolve(value: Any): P
   }
   object PromiseImplementation {
     
-    inline def apply[P /* <: js.Thenable[js.Any] */](all: js.Array[js.Any] => P, reject: js.Any => P, resolve: js.Any => P): PromiseImplementation[P] = {
+    inline def apply[P /* <: js.Thenable[Any] */](all: js.Array[Any] => P, reject: Any => P, resolve: Any => P): PromiseImplementation[P] = {
       val __obj = js.Dynamic.literal(all = js.Any.fromFunction1(all), reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[PromiseImplementation[P]]
     }
     
-    extension [Self <: PromiseImplementation[?], P /* <: js.Thenable[js.Any] */](x: Self & PromiseImplementation[P]) {
+    extension [Self <: PromiseImplementation[?], P /* <: js.Thenable[Any] */](x: Self & PromiseImplementation[P]) {
       
-      inline def setAll(value: js.Array[js.Any] => P): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
+      inline def setAll(value: js.Array[Any] => P): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
       
-      inline def setReject(value: js.Any => P): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: Any => P): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      inline def setResolve(value: js.Any => P): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: Any => P): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
   
-  type Run_[P /* <: js.Thenable[js.Any] */] = js.Function2[
+  type Run_[P /* <: js.Thenable[Any] */] = js.Function2[
     /* steps */ StringDictionary[js.Array[Step]], 
     /* required */ js.UndefOr[js.Array[String]], 
     StringDictionary[P]
   ]
   
-  type Step = String | (js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]])
+  type Step = String | (js.Function1[/* repeated */ Any, js.Thenable[Any]])
 }

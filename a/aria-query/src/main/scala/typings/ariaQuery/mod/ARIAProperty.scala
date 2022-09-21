@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ariaQuery.ariaQueryStrings.`aria-colspan`
   - typings.ariaQuery.ariaQueryStrings.`aria-controls`
   - typings.ariaQuery.ariaQueryStrings.`aria-current`
-  - typings.ariaQuery.ariaQueryStrings.`aria-describedat`
   - typings.ariaQuery.ariaQueryStrings.`aria-describedby`
   - typings.ariaQuery.ariaQueryStrings.`aria-details`
   - typings.ariaQuery.ariaQueryStrings.`aria-dropeffect`
@@ -77,8 +76,6 @@ object ARIAProperty {
   inline def `aria-controls`: typings.ariaQuery.ariaQueryStrings.`aria-controls` = "aria-controls".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-controls`]
   
   inline def `aria-current`: typings.ariaQuery.ariaQueryStrings.`aria-current` = "aria-current".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-current`]
-  
-  inline def `aria-describedat`: typings.ariaQuery.ariaQueryStrings.`aria-describedat` = "aria-describedat".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-describedat`]
   
   inline def `aria-describedby`: typings.ariaQuery.ariaQueryStrings.`aria-describedby` = "aria-describedby".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-describedby`]
   

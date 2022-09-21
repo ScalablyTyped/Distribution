@@ -3,6 +3,7 @@ package typings.rax.mod
 import typings.rax.raxStrings.down
 import typings.rax.raxStrings.up
 import typings.std.Event
+import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

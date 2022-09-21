@@ -1,7 +1,7 @@
 package typings.qrImage
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def image(text: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  inline def image(text: String, level: ecLevel): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
-  inline def image(text: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def image(text: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def image(text: String, level: ecLevel): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def image(text: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
   
   inline def imageSync(text: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
   inline def imageSync(text: String, level: ecLevel): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Buffer]
@@ -22,12 +22,12 @@ object mod {
   
   inline def imageSync_Buffer(text: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  inline def matrix(text: String): js.Array[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.Any]]]
-  inline def matrix(text: String, level: ecLevel): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
+  inline def matrix(text: String): js.Array[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Any]]]
+  inline def matrix(text: String, level: ecLevel): js.Array[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Any]]]
   
-  inline def svgObject(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def svgObject(text: String, level: ecLevel): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def svgObject(text: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def svgObject(text: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def svgObject(text: String, level: ecLevel): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def svgObject(text: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait Bitmap extends StObject {
     
@@ -72,24 +72,24 @@ object mod {
   
   trait Options extends StObject {
     
-    // (experimental, default false) try to optimize QR-code for URLs.
     /**
       * (only png) — function to customize qr bitmap before encoding to PNG
       */
     var customize: js.UndefOr[js.Function1[/* bitmap */ Bitmap, Unit]] = js.undefined
     
+    // error correction level. One of L, M, Q, H. Default M.
     var ec_level: js.UndefOr[ecLevel] = js.undefined
     
-    // (png and svg only) for png and undefined for svg.-(png and svg only) — size of one module in pixels.
+    // (only png)for png and 1 for others.-white space around QR image in modules.
     var margin: js.UndefOr[Double] = js.undefined
     
-    // (only png)for png and 1 for others.-white space around QR image in modules.
+    // (experimental, default false) try to optimize QR-code for URLs.
     var parse_url: js.UndefOr[Boolean] = js.undefined
     
-    // image type. Possible values png(default), svg, pdf and eps.
+    // (png and svg only) for png and undefined for svg.-(png and svg only) — size of one module in pixels.
     var size: js.UndefOr[Double] = js.undefined
     
-    // error correction level. One of L, M, Q, H. Default M.
+    // image type. Possible values png(default), svg, pdf and eps.
     var `type`: js.UndefOr[imageType] = js.undefined
   }
   object Options {

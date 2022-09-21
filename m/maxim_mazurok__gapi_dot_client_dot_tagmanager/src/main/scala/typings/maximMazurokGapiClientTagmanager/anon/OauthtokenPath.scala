@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientTagmanager.anon
 
-import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Zone
+import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ trait OauthtokenPath extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** When provided, this fingerprint must match the fingerprint of the zone in storage. */
+  /** When provided, this fingerprint must match the fingerprint of the variable in storage. */
   var fingerprint: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -32,7 +32,7 @@ trait OauthtokenPath extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** GTM Zone's API relative path. Example: accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}/zones/{zone_id} */
+  /** GTM Variable's API relative path. Example: accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}/variables/{variable_id} */
   var path: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,7 +42,7 @@ trait OauthtokenPath extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Zone
+  var resource: Variable
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait OauthtokenPath extends StObject {
 }
 object OauthtokenPath {
   
-  inline def apply(path: String, resource: Zone): OauthtokenPath = {
+  inline def apply(path: String, resource: Variable): OauthtokenPath = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenPath]
   }
@@ -101,7 +101,7 @@ object OauthtokenPath {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Zone): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Variable): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

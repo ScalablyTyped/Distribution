@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("KeyframeEffect")
 @js.native
-class KeyframeEffect ()
+/* standard dom */
+open class KeyframeEffect ()
   extends StObject
      with typings.std.KeyframeEffect {
+  /* standard dom */
   def this(source: typings.std.KeyframeEffect) = this()
   def this(target: typings.std.Element) = this()
   def this(target: Null, keyframes: js.Array[Keyframe]) = this()

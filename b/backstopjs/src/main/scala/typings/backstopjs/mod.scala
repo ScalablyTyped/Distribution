@@ -27,17 +27,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default_approve(command: approve): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def default_approve(command: approve, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
-  inline def default_init(command: init): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def default_init(command: init, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
-  inline def default_reference(command: reference): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def default_reference(command: reference, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
-  inline def default_test(command: test): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def default_test(command: test, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(command: approve | init | reference | test): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(command: approve | init | reference | test, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait Config extends StObject {
     
@@ -138,7 +129,7 @@ object mod {
       
       inline def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
       
-      inline def setReportVarargs(value: (browser | CI | json)*): Self = StObject.set(x, "report", js.Array(value :_*))
+      inline def setReportVarargs(value: (browser | CI | json)*): Self = StObject.set(x, "report", js.Array(value*))
       
       inline def setResembleOutputOptions(value: ErrorColor): Self = StObject.set(x, "resembleOutputOptions", value.asInstanceOf[js.Any])
       
@@ -146,11 +137,11 @@ object mod {
       
       inline def setScenarios(value: js.Array[Scenario]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
       
-      inline def setScenariosVarargs(value: Scenario*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+      inline def setScenariosVarargs(value: Scenario*): Self = StObject.set(x, "scenarios", js.Array(value*))
       
       inline def setViewports(value: js.Array[Viewport]): Self = StObject.set(x, "viewports", value.asInstanceOf[js.Any])
       
-      inline def setViewportsVarargs(value: Viewport*): Self = StObject.set(x, "viewports", js.Array(value :_*))
+      inline def setViewportsVarargs(value: Viewport*): Self = StObject.set(x, "viewports", js.Array(value*))
     }
   }
   
@@ -177,7 +168,7 @@ object mod {
   
   trait Scenario
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     // Allow for custom properties.
     var clickSelector: js.UndefOr[String] = js.undefined
@@ -271,7 +262,7 @@ object mod {
       
       inline def setClickSelectorsUndefined: Self = StObject.set(x, "clickSelectors", js.undefined)
       
-      inline def setClickSelectorsVarargs(value: String*): Self = StObject.set(x, "clickSelectors", js.Array(value :_*))
+      inline def setClickSelectorsVarargs(value: String*): Self = StObject.set(x, "clickSelectors", js.Array(value*))
       
       inline def setCookiePath(value: String): Self = StObject.set(x, "cookiePath", value.asInstanceOf[js.Any])
       
@@ -289,7 +280,7 @@ object mod {
       
       inline def setHideSelectorsUndefined: Self = StObject.set(x, "hideSelectors", js.undefined)
       
-      inline def setHideSelectorsVarargs(value: String*): Self = StObject.set(x, "hideSelectors", js.Array(value :_*))
+      inline def setHideSelectorsVarargs(value: String*): Self = StObject.set(x, "hideSelectors", js.Array(value*))
       
       inline def setHoverSelector(value: String): Self = StObject.set(x, "hoverSelector", value.asInstanceOf[js.Any])
       
@@ -299,7 +290,7 @@ object mod {
       
       inline def setHoverSelectorsUndefined: Self = StObject.set(x, "hoverSelectors", js.undefined)
       
-      inline def setHoverSelectorsVarargs(value: String*): Self = StObject.set(x, "hoverSelectors", js.Array(value :_*))
+      inline def setHoverSelectorsVarargs(value: String*): Self = StObject.set(x, "hoverSelectors", js.Array(value*))
       
       inline def setKeyPressSelector(value: KeypressSelector): Self = StObject.set(x, "keyPressSelector", value.asInstanceOf[js.Any])
       
@@ -309,7 +300,7 @@ object mod {
       
       inline def setKeyPressSelectorsUndefined: Self = StObject.set(x, "keyPressSelectors", js.undefined)
       
-      inline def setKeyPressSelectorsVarargs(value: KeypressSelector*): Self = StObject.set(x, "keyPressSelectors", js.Array(value :_*))
+      inline def setKeyPressSelectorsVarargs(value: KeypressSelector*): Self = StObject.set(x, "keyPressSelectors", js.Array(value*))
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -345,7 +336,7 @@ object mod {
       
       inline def setRemoveSelectorsUndefined: Self = StObject.set(x, "removeSelectors", js.undefined)
       
-      inline def setRemoveSelectorsVarargs(value: String*): Self = StObject.set(x, "removeSelectors", js.Array(value :_*))
+      inline def setRemoveSelectorsVarargs(value: String*): Self = StObject.set(x, "removeSelectors", js.Array(value*))
       
       inline def setRequireSameDimensions(value: Boolean): Self = StObject.set(x, "requireSameDimensions", value.asInstanceOf[js.Any])
       
@@ -363,7 +354,7 @@ object mod {
       
       inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
       
-      inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+      inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -371,7 +362,7 @@ object mod {
       
       inline def setViewportsUndefined: Self = StObject.set(x, "viewports", js.undefined)
       
-      inline def setViewportsVarargs(value: Viewport*): Self = StObject.set(x, "viewports", js.Array(value :_*))
+      inline def setViewportsVarargs(value: Viewport*): Self = StObject.set(x, "viewports", js.Array(value*))
     }
   }
   

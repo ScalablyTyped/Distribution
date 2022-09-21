@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait ASPxClientRecurrenceInfo extends StObject {
   /**
     * Gets the recurrence end date.
     */
-  def GetEnd(): Date
+  def GetEnd(): js.Date
   
   /**
     * Gets the month (as a number) on which the corresponding appointment recurs.
@@ -53,7 +52,7 @@ trait ASPxClientRecurrenceInfo extends StObject {
   /**
     * Gets the recurrence start date.
     */
-  def GetStart(): Date
+  def GetStart(): js.Date
   
   /**
     * Gets the day/days in a week on which the corresponding appointment occurs.
@@ -75,13 +74,13 @@ trait ASPxClientRecurrenceInfo extends StObject {
     * Sets the duration of the recurrence.
     * @param duration A TimeSpan object representing the duration.
     */
-  def SetDuration(duration: js.Any): Unit
+  def SetDuration(duration: Any): Unit
   
   /**
     * Sets the recurrence end date.
     * @param end A JavaScript Date object that specifies the end date for the recurrence.
     */
-  def SetEnd(end: Date): Unit
+  def SetEnd(end: js.Date): Unit
   
   /**
     * Sets the month (as a number) on which the corresponding appointment occurs.
@@ -117,7 +116,7 @@ trait ASPxClientRecurrenceInfo extends StObject {
     * Sets the recurrence start date.
     * @param start A JavaScript date object value that specifies the start date for the recurrence.
     */
-  def SetStart(start: Date): Unit
+  def SetStart(start: js.Date): Unit
   
   /**
     * Sets the day/days in a week that the corresponding appointment recurs on.
@@ -136,24 +135,24 @@ object ASPxClientRecurrenceInfo {
   inline def apply(
     GetDayNumber: () => Double,
     GetDuration: () => Double,
-    GetEnd: () => Date,
+    GetEnd: () => js.Date,
     GetMonth: () => Double,
     GetOccurrenceCount: () => Double,
     GetPeriodicity: () => Double,
     GetRange: () => ASPxClientRecurrenceRange,
     GetRecurrenceType: () => ASPxClientRecurrenceType,
-    GetStart: () => Date,
+    GetStart: () => js.Date,
     GetWeekDays: () => ASPxClientWeekDays,
     GetWeekOfMonth: () => ASPxClientWeekOfMonth,
     SetDayNumber: Double => Unit,
-    SetDuration: js.Any => Unit,
-    SetEnd: Date => Unit,
+    SetDuration: Any => Unit,
+    SetEnd: js.Date => Unit,
     SetMonth: Double => Unit,
     SetOccurrenceCount: Double => Unit,
     SetPeriodicity: Double => Unit,
     SetRange: ASPxClientRecurrenceRange => Unit,
     SetRecurrenceType: ASPxClientRecurrenceType => Unit,
-    SetStart: Date => Unit,
+    SetStart: js.Date => Unit,
     SetWeekDays: ASPxClientWeekDays => Unit,
     SetWeekOfMonth: ASPxClientWeekOfMonth => Unit
   ): ASPxClientRecurrenceInfo = {
@@ -167,7 +166,7 @@ object ASPxClientRecurrenceInfo {
     
     inline def setGetDuration(value: () => Double): Self = StObject.set(x, "GetDuration", js.Any.fromFunction0(value))
     
-    inline def setGetEnd(value: () => Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => js.Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
     
     inline def setGetMonth(value: () => Double): Self = StObject.set(x, "GetMonth", js.Any.fromFunction0(value))
     
@@ -179,7 +178,7 @@ object ASPxClientRecurrenceInfo {
     
     inline def setGetRecurrenceType(value: () => ASPxClientRecurrenceType): Self = StObject.set(x, "GetRecurrenceType", js.Any.fromFunction0(value))
     
-    inline def setGetStart(value: () => Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
+    inline def setGetStart(value: () => js.Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
     
     inline def setGetWeekDays(value: () => ASPxClientWeekDays): Self = StObject.set(x, "GetWeekDays", js.Any.fromFunction0(value))
     
@@ -187,9 +186,9 @@ object ASPxClientRecurrenceInfo {
     
     inline def setSetDayNumber(value: Double => Unit): Self = StObject.set(x, "SetDayNumber", js.Any.fromFunction1(value))
     
-    inline def setSetDuration(value: js.Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
+    inline def setSetDuration(value: Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
     
-    inline def setSetEnd(value: Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
+    inline def setSetEnd(value: js.Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
     
     inline def setSetMonth(value: Double => Unit): Self = StObject.set(x, "SetMonth", js.Any.fromFunction1(value))
     
@@ -201,7 +200,7 @@ object ASPxClientRecurrenceInfo {
     
     inline def setSetRecurrenceType(value: ASPxClientRecurrenceType => Unit): Self = StObject.set(x, "SetRecurrenceType", js.Any.fromFunction1(value))
     
-    inline def setSetStart(value: Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
+    inline def setSetStart(value: js.Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
     
     inline def setSetWeekDays(value: ASPxClientWeekDays => Unit): Self = StObject.set(x, "SetWeekDays", js.Any.fromFunction1(value))
     

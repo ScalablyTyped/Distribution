@@ -10,10 +10,10 @@ create a fully functional bunyan logger that doesn't output anything anywhere
 | ------------------ | :-------------: |
 | Full name          | bunyan-blackhole |
 | Keywords           | bunyan, empty, logger, noop, blackhole, /dev/null |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 262116 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30981.333333333332 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/Floby/node-bunyan-blackhole)

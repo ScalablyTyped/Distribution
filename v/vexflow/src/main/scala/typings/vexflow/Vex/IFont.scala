@@ -74,7 +74,7 @@ object IFont {
     
     inline def setGlyphs(value: js.Array[Ha]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
     
-    inline def setGlyphsVarargs(value: Ha*): Self = StObject.set(x, "glyphs", js.Array(value :_*))
+    inline def setGlyphsVarargs(value: Ha*): Self = StObject.set(x, "glyphs", js.Array(value*))
     
     inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     

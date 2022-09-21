@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "PointsGroup")
 @js.native
-class PointsGroup protected ()
+open class PointsGroup protected ()
   extends typings.babylonjs.indexMod.PointsGroup {
   /**
     * Creates a points group object. This is an internal reference to produce particles for the PCS.
     * PCS internal tool, don't use it manually.
+    * @param id
+    * @param posFunction
     * @hidden
     */
   def this(

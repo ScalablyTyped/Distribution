@@ -10,10 +10,10 @@ object explicitMod {
   
   @JSImport("material-ui/svg-icons/av/explicit", JSImport.Default)
   @js.native
-  class default () extends AvExplicit
+  open class default () extends AvExplicit
   
   @JSImport("material-ui/svg-icons/av/explicit", "AvExplicit")
   @js.native
-  class AvExplicit ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvExplicit ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

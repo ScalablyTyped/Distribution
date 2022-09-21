@@ -10,13 +10,13 @@ db.js is a wrapper for IndexedDB to make it easier to work against, making it lo
 | ------------------ | :-------------: |
 | Full name          | db.js |
 | Keywords           | indexeddb |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 9447 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 872.6666666666666 |
+| # stars            | 784.0 |
 
 ## Links
-- [Homepage](http://aaronpowell.github.com/db.js/)
+- [Homepage](https://github.com/aaronpowell/db.js#readme)
 - [Bugs](https://github.com/aaronpowell/db.js/issues)
 - [Repository](https://github.com/aaronpowell/db.js)
 - [Npm](https://www.npmjs.com/package/db.js)

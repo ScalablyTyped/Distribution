@@ -12,10 +12,10 @@ trait ColorRampConstructor
      with /**
   * A ColorRamp object is used to specify a range of colors that are applied to a group of symbols or pixels.
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ColorRamp.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ColorRamp.html)
   */
 Instantiable0[ColorRamp]
      with Instantiable1[/* properties */ ColorRampProperties, ColorRamp] {
   
-  def fromJSON(json: js.Any): ColorRamp = js.native
+  def fromJSON(json: Any): ColorRamp = js.native
 }

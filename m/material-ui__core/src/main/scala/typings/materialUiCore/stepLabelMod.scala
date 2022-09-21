@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.stepLabelStepLabelMod.StepLabelProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object stepLabelMod extends Shortcut {
+object stepLabelMod {
   
-  @JSImport("@material-ui/core/StepLabel", JSImport.Default)
+  @JSImport("@material-ui/core/StepLabel", JSImport.Namespace)
   @js.native
-  val default: ComponentType[StepLabelProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[StepLabelProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `stepLabelMod.foo` */
-  override def _to: ComponentType[StepLabelProps] = default
+  inline def default(props: StepLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

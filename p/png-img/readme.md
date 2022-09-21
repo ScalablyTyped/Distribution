@@ -1,7 +1,7 @@
 
 # Scala.js typings for png-img
 
-Typings are for version 3.0
+Typings are for version 5.0.0
 
 ## Library description:
 PNG Image
@@ -10,10 +10,10 @@ PNG Image
 | ------------------ | :-------------: |
 | Full name          | png-img |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 461425 |
-| # stars            | 1 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 11098.0 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/gemini-testing/png-img)
@@ -24,7 +24,7 @@ PNG Image
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

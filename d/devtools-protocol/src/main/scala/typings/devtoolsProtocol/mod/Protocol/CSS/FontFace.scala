@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontFace extends StObject {
   
   /**
+    * The font-display.
+    */
+  var fontDisplay: String
+  
+  /**
     * The font-family.
     */
   var fontFamily: String
@@ -54,6 +59,7 @@ trait FontFace extends StObject {
 object FontFace {
   
   inline def apply(
+    fontDisplay: String,
     fontFamily: String,
     fontStretch: String,
     fontStyle: String,
@@ -63,11 +69,13 @@ object FontFace {
     src: String,
     unicodeRange: String
   ): FontFace = {
-    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontStretch = fontStretch.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], fontVariant = fontVariant.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], platformFontFamily = platformFontFamily.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], unicodeRange = unicodeRange.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fontDisplay = fontDisplay.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontStretch = fontStretch.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], fontVariant = fontVariant.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], platformFontFamily = platformFontFamily.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], unicodeRange = unicodeRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFace]
   }
   
   extension [Self <: FontFace](x: Self) {
+    
+    inline def setFontDisplay(value: String): Self = StObject.set(x, "fontDisplay", value.asInstanceOf[js.Any])
     
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
@@ -81,7 +89,7 @@ object FontFace {
     
     inline def setFontVariationAxesUndefined: Self = StObject.set(x, "fontVariationAxes", js.undefined)
     
-    inline def setFontVariationAxesVarargs(value: FontVariationAxis*): Self = StObject.set(x, "fontVariationAxes", js.Array(value :_*))
+    inline def setFontVariationAxesVarargs(value: FontVariationAxis*): Self = StObject.set(x, "fontVariationAxes", js.Array(value*))
     
     inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,7 @@ object ObjectStore {
     
     inline def setIndexes(value: js.Array[ObjectStoreIndex]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
-    inline def setIndexesVarargs(value: ObjectStoreIndex*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: ObjectStoreIndex*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setKeyPath(value: KeyPath): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     

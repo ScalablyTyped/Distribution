@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DataSourceTransportOptions extends StObject {
   
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   def error(): Unit = js.native
-  def error(error: js.Any): Unit = js.native
+  def error(error: Any): Unit = js.native
   
   def success(): Unit = js.native
-  def success(data: js.Any): Unit = js.native
+  def success(data: Any): Unit = js.native
 }

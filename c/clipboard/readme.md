@@ -1,7 +1,7 @@
 
 # Scala.js typings for clipboard
 
-Typings are for version 2.0
+Typings are for version 2.0.11
 
 ## Library description:
 Modern copy to clipboard. No Flash. Just 2kb
@@ -10,13 +10,13 @@ Modern copy to clipboard. No Flash. Just 2kb
 | ------------------ | :-------------: |
 | Full name          | clipboard |
 | Keywords           | clipboard, copy, cut |
-| # releases         | 3 |
-| # dependents       | 1007 |
-| # downloads        | 142440728 |
-| # stars            | 61 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 9645271.0 |
+| # stars            | 32286.0 |
 
 ## Links
-- [Homepage](https://github.com/zenorocha/clipboard.js#readme)
+- [Homepage](https://clipboardjs.com)
 - [Bugs](https://github.com/zenorocha/clipboard.js/issues)
 - [Repository](https://github.com/zenorocha/clipboard.js)
 - [Npm](https://www.npmjs.com/package/clipboard)
@@ -24,7 +24,7 @@ Modern copy to clipboard. No Flash. Just 2kb
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

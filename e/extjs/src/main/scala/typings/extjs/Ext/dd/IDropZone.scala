@@ -13,7 +13,7 @@ trait IDropZone
     * @param e Event The event
     * @returns Object data The custom data
     */
-  var getTargetFromEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], js.Any]] = js.undefined
+  var getTargetFromEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Any]] = js.undefined
   
   /** [Method] Called when the DropZone determines that a Ext dd DragSource has been dropped on it but not on any of its registered
     * @param source Ext.dd.DragSource The drag source that was dragged over this drop zone
@@ -25,7 +25,7 @@ trait IDropZone
     js.Function3[
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       Boolean
     ]
   ] = js.undefined
@@ -40,7 +40,7 @@ trait IDropZone
     js.Function3[
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       String
     ]
   ] = js.undefined
@@ -54,10 +54,10 @@ trait IDropZone
     */
   var onNodeDrop: js.UndefOr[
     js.Function4[
-      /* nodeData */ js.UndefOr[js.Any], 
+      /* nodeData */ js.UndefOr[Any], 
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       Boolean
     ]
   ] = js.undefined
@@ -70,10 +70,10 @@ trait IDropZone
     */
   var onNodeEnter: js.UndefOr[
     js.Function4[
-      /* nodeData */ js.UndefOr[js.Any], 
+      /* nodeData */ js.UndefOr[Any], 
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -86,10 +86,10 @@ trait IDropZone
     */
   var onNodeOut: js.UndefOr[
     js.Function4[
-      /* nodeData */ js.UndefOr[js.Any], 
+      /* nodeData */ js.UndefOr[Any], 
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -103,10 +103,10 @@ trait IDropZone
     */
   var onNodeOver: js.UndefOr[
     js.Function4[
-      /* nodeData */ js.UndefOr[js.Any], 
+      /* nodeData */ js.UndefOr[Any], 
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       String
     ]
   ] = js.undefined
@@ -120,42 +120,42 @@ object IDropZone {
   
   extension [Self <: IDropZone](x: Self) {
     
-    inline def setGetTargetFromEvent(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getTargetFromEvent", js.Any.fromFunction1(value))
+    inline def setGetTargetFromEvent(value: /* e */ js.UndefOr[Event] => Any): Self = StObject.set(x, "getTargetFromEvent", js.Any.fromFunction1(value))
     
     inline def setGetTargetFromEventUndefined: Self = StObject.set(x, "getTargetFromEvent", js.undefined)
     
     inline def setOnContainerDrop(
-      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean
+      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => Boolean
     ): Self = StObject.set(x, "onContainerDrop", js.Any.fromFunction3(value))
     
     inline def setOnContainerDropUndefined: Self = StObject.set(x, "onContainerDrop", js.undefined)
     
     inline def setOnContainerOver(
-      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
+      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => String
     ): Self = StObject.set(x, "onContainerOver", js.Any.fromFunction3(value))
     
     inline def setOnContainerOverUndefined: Self = StObject.set(x, "onContainerOver", js.undefined)
     
     inline def setOnNodeDrop(
-      value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean
+      value: (/* nodeData */ js.UndefOr[Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => Boolean
     ): Self = StObject.set(x, "onNodeDrop", js.Any.fromFunction4(value))
     
     inline def setOnNodeDropUndefined: Self = StObject.set(x, "onNodeDrop", js.undefined)
     
     inline def setOnNodeEnter(
-      value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit
+      value: (/* nodeData */ js.UndefOr[Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "onNodeEnter", js.Any.fromFunction4(value))
     
     inline def setOnNodeEnterUndefined: Self = StObject.set(x, "onNodeEnter", js.undefined)
     
     inline def setOnNodeOut(
-      value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit
+      value: (/* nodeData */ js.UndefOr[Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "onNodeOut", js.Any.fromFunction4(value))
     
     inline def setOnNodeOutUndefined: Self = StObject.set(x, "onNodeOut", js.undefined)
     
     inline def setOnNodeOver(
-      value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
+      value: (/* nodeData */ js.UndefOr[Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => String
     ): Self = StObject.set(x, "onNodeOver", js.Any.fromFunction4(value))
     
     inline def setOnNodeOverUndefined: Self = StObject.set(x, "onNodeOver", js.undefined)

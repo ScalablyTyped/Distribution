@@ -9,11 +9,11 @@ object webGLObjectsMod {
   
   @JSImport("three/src/renderers/webgl/WebGLObjects", "WebGLObjects")
   @js.native
-  class WebGLObjects protected () extends StObject {
-    def this(gl: WebGLRenderingContext, geometries: js.Any, attributes: js.Any, info: js.Any) = this()
+  open class WebGLObjects protected () extends StObject {
+    def this(gl: WebGLRenderingContext, geometries: Any, attributes: Any, info: Any) = this()
     
     def dispose(): Unit = js.native
     
-    def update(`object`: js.Any): js.Any = js.native
+    def update(`object`: Any): Any = js.native
   }
 }

@@ -24,6 +24,6 @@ object SchemaListPerfSampleSeriesResponse {
     
     inline def setPerfSampleSeriesUndefined: Self = StObject.set(x, "perfSampleSeries", js.undefined)
     
-    inline def setPerfSampleSeriesVarargs(value: SchemaPerfSampleSeries*): Self = StObject.set(x, "perfSampleSeries", js.Array(value :_*))
+    inline def setPerfSampleSeriesVarargs(value: SchemaPerfSampleSeries*): Self = StObject.set(x, "perfSampleSeries", js.Array(value*))
   }
 }

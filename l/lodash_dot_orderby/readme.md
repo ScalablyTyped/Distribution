@@ -10,10 +10,10 @@ The lodash method `_.orderBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.orderby |
 | Keywords           | lodash-modularized, orderby |
-| # releases         | 0 |
-| # dependents       | 136 |
-| # downloads        | 5804664 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1288005.6666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

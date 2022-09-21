@@ -4,7 +4,7 @@ import typings.koa.mod.Context
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koaJwt.anon.Custom
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +18,28 @@ object mod {
   val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> * / any */ @js.native
-  trait Middleware extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, ContextT, ResponseBodyT>> * / any */ trait Middleware extends StObject {
     
-    def unless(): typings.koa.mod.Middleware[DefaultState, DefaultContext] = js.native
-    def unless(params: Custom): typings.koa.mod.Middleware[DefaultState, DefaultContext] = js.native
+    def unless(): typings.koa.mod.Middleware[DefaultState, DefaultContext, Any]
+    def unless(params: Custom): typings.koa.mod.Middleware[DefaultState, DefaultContext, Any]
+    @JSName("unless")
+    var unless_Original: UnlessOptions
+  }
+  object Middleware {
+    
+    inline def apply(
+      unless: /* params */ js.UndefOr[Custom] => typings.koa.mod.Middleware[DefaultState, DefaultContext, Any]
+    ): Middleware = {
+      val __obj = js.Dynamic.literal(unless = js.Any.fromFunction1(unless))
+      __obj.asInstanceOf[Middleware]
+    }
+    
+    extension [Self <: Middleware](x: Self) {
+      
+      inline def setUnless(
+        value: /* params */ js.UndefOr[Custom] => typings.koa.mod.Middleware[DefaultState, DefaultContext, Any]
+      ): Self = StObject.set(x, "unless", js.Any.fromFunction1(value))
+    }
   }
   
   trait Options extends StObject {
@@ -35,7 +52,7 @@ object mod {
     
     var debug: js.UndefOr[Boolean] = js.undefined
     
-    var getToken: js.UndefOr[js.Function2[/* ctx */ Context, /* opts */ this.type, String]] = js.undefined
+    var getToken: js.UndefOr[js.Function2[/* ctx */ Context, /* opts */ this.type, String | Null]] = js.undefined
     
     var isRevoked: js.UndefOr[
         js.Function3[
@@ -52,13 +69,13 @@ object mod {
     
     var passthrough: js.UndefOr[Boolean] = js.undefined
     
-    var secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader
+    var secret: Secret | SecretLoader
     
     var tokenKey: js.UndefOr[String] = js.undefined
   }
   object Options {
     
-    inline def apply(secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader): Options = {
+    inline def apply(secret: Secret | SecretLoader): Options = {
       val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -69,13 +86,13 @@ object mod {
       
       inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value*))
       
       inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value*))
       
       inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -85,7 +102,7 @@ object mod {
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      inline def setGetToken(value: (/* ctx */ Context, Options) => String): Self = StObject.set(x, "getToken", js.Any.fromFunction2(value))
+      inline def setGetToken(value: (/* ctx */ Context, Options) => String | Null): Self = StObject.set(x, "getToken", js.Any.fromFunction2(value))
       
       inline def setGetTokenUndefined: Self = StObject.set(x, "getToken", js.undefined)
       
@@ -99,7 +116,7 @@ object mod {
       
       inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
+      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -109,13 +126,11 @@ object mod {
       
       inline def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
       
-      inline def setSecret(value: String | (js.Array[Buffer | String]) | Buffer | SecretLoader): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: Secret | SecretLoader): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      inline def setSecretFunction2(
-        value: (/* header */ js.Any, /* payload */ js.Any) => js.Promise[String | (js.Array[Buffer | String]) | Buffer]
-      ): Self = StObject.set(x, "secret", js.Any.fromFunction2(value))
+      inline def setSecretFunction2(value: (/* header */ Any, /* payload */ Any) => js.Promise[Secret]): Self = StObject.set(x, "secret", js.Any.fromFunction2(value))
       
-      inline def setSecretVarargs(value: (Buffer | String)*): Self = StObject.set(x, "secret", js.Array(value :_*))
+      inline def setSecretVarargs(value: (Buffer | String)*): Self = StObject.set(x, "secret", js.Array(value*))
       
       inline def setTokenKey(value: String): Self = StObject.set(x, "tokenKey", value.asInstanceOf[js.Any])
       
@@ -123,9 +138,12 @@ object mod {
     }
   }
   
-  type SecretLoader = js.Function2[
-    /* header */ js.Any, 
-    /* payload */ js.Any, 
-    js.Promise[String | (js.Array[Buffer | String]) | Buffer]
+  type Secret = String | (js.Array[Buffer | String]) | Buffer
+  
+  type SecretLoader = js.Function2[/* header */ Any, /* payload */ Any, js.Promise[Secret]]
+  
+  type UnlessOptions = js.Function1[
+    /* params */ js.UndefOr[Custom], 
+    typings.koa.mod.Middleware[DefaultState, DefaultContext, Any]
   ]
 }

@@ -9,7 +9,7 @@ trait TransitGateway extends StObject {
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the transit gateway.
@@ -22,7 +22,7 @@ trait TransitGateway extends StObject {
   var Options: js.UndefOr[TransitGatewayOptions] = js.undefined
   
   /**
-    * The ID of the AWS account ID that owns the transit gateway.
+    * The ID of the Amazon Web Services account that owns the transit gateway.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -55,7 +55,7 @@ object TransitGateway {
   
   extension [Self <: TransitGateway](x: Self) {
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -79,7 +79,7 @@ object TransitGateway {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTransitGatewayArn(value: String): Self = StObject.set(x, "TransitGatewayArn", value.asInstanceOf[js.Any])
     

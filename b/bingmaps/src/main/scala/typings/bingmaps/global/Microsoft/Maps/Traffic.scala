@@ -13,7 +13,7 @@ object Traffic {
   
   @JSGlobal("Microsoft.Maps.Traffic.TrafficManager")
   @js.native
-  class TrafficManager protected ()
+  open class TrafficManager protected ()
     extends StObject
        with typings.bingmaps.Microsoft.Maps.Traffic.TrafficManager {
     /**

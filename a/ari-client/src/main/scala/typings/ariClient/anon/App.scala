@@ -21,7 +21,7 @@ object App {
     
     inline def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
+    inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value*))
     
     inline def setSubscribeAll(value: Boolean): Self = StObject.set(x, "subscribeAll", value.asInstanceOf[js.Any])
     

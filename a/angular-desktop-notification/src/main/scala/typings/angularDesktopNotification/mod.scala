@@ -54,6 +54,20 @@ object mod extends Shortcut {
         var onError: js.UndefOr[EventListener] = js.undefined
         
         /**
+          * The timestamp read-only property of the Notification interface returns a DOMTimeStamp, as specified in the timestamp option of the
+          * Notification() constructor.
+          *
+          * The notification's timestamp can represent the time, in milliseconds since 00:00:00 UTC on 1 January 1970, of the event for which
+          * the notification was created, or it can be an arbitrary timestamp that you want associated with the notification. For example, a
+          * timestamp for an upcoming meeting could be set in the future, whereas a timestamp for a missed message could be set in the past.
+          *
+          * Note: This feature is available in Web Workers
+          * Ref: https://developer.mozilla.org/en-US/docs/Web/API/Notification/timestamp
+          */
+        @JSName("timestamp")
+        var timestamp_AugmentedNotificationOptions: js.UndefOr[Double] = js.undefined
+        
+        /**
           * The title read-only property of the Notification interface indicates the title of the notification, as specified in the title parameter
           * of the Notification() constructor.
           *
@@ -70,7 +84,7 @@ object mod extends Shortcut {
           * Ref: https://developer.mozilla.org/en-US/docs/Web/API/Notification/vibrate
           */
         @JSName("vibrate")
-        var vibrate_AugmentedNotificationOptions: js.UndefOr[js.Any] = js.undefined
+        var vibrate_AugmentedNotificationOptions: js.UndefOr[Any] = js.undefined
       }
       object AugmentedNotificationOptions {
         
@@ -89,11 +103,15 @@ object mod extends Shortcut {
           
           inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
           
+          inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+          
+          inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+          
           inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
           inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
           
-          inline def setVibrate(value: js.Any): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
+          inline def setVibrate(value: Any): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
           
           inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
         }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.DoubleResult")
 @js.native
-class DoubleResult ()
+open class DoubleResult ()
   extends StObject
      with typings.sharepoint.SP.DoubleResult {
   

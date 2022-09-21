@@ -57,6 +57,6 @@ object SignedExchangeHeader {
     
     inline def setSignatures(value: js.Array[SignedExchangeSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    inline def setSignaturesVarargs(value: SignedExchangeSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: SignedExchangeSignature*): Self = StObject.set(x, "signatures", js.Array(value*))
   }
 }

@@ -33,18 +33,18 @@ object Leg {
     
     inline def setLeg(value: js.Array[Maneuver]): Self = StObject.set(x, "leg", value.asInstanceOf[js.Any])
     
-    inline def setLegVarargs(value: Maneuver*): Self = StObject.set(x, "leg", js.Array(value :_*))
+    inline def setLegVarargs(value: Maneuver*): Self = StObject.set(x, "leg", js.Array(value*))
     
     inline def setMode(value: Feature): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setShape(value: js.Array[String]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeVarargs(value: String*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: String*): Self = StObject.set(x, "shape", js.Array(value*))
     
     inline def setSummary(value: BaseTime): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     inline def setWaypoint(value: js.Array[Label]): Self = StObject.set(x, "waypoint", value.asInstanceOf[js.Any])
     
-    inline def setWaypointVarargs(value: Label*): Self = StObject.set(x, "waypoint", js.Array(value :_*))
+    inline def setWaypointVarargs(value: Label*): Self = StObject.set(x, "waypoint", js.Array(value*))
   }
 }

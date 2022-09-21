@@ -10,10 +10,10 @@ object folderSharedMod {
   
   @JSImport("material-ui/svg-icons/file/folder-shared", JSImport.Default)
   @js.native
-  class default () extends FileFolderShared
+  open class default () extends FileFolderShared
   
   @JSImport("material-ui/svg-icons/file/folder-shared", "FileFolderShared")
   @js.native
-  class FileFolderShared ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class FileFolderShared ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -10,10 +10,10 @@ Activity indicator collection
 | ------------------ | :-------------: |
 | Full name          | react-native-indicators |
 | Keywords           | react, react-component, react-native, ios, android, activity, indicator, spinner, pacman, material |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 637152 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 89413.66666666667 |
+| # stars            | 790.0 |
 
 ## Links
 - [Homepage](https://github.com/n4kz/react-native-indicators#readme)

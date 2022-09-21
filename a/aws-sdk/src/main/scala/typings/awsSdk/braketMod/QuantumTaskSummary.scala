@@ -9,7 +9,7 @@ trait QuantumTaskSummary extends StObject {
   /**
     * The time at which the task was created.
     */
-  var createdAt: SyntheticTimestampDateTime
+  var createdAt: js.Date
   
   /**
     * The ARN of the device the task ran on.
@@ -19,7 +19,7 @@ trait QuantumTaskSummary extends StObject {
   /**
     * The time at which the task finished.
     */
-  var endedAt: js.UndefOr[SyntheticTimestampDateTime] = js.undefined
+  var endedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The S3 bucket where the task result file is stored..
@@ -54,7 +54,7 @@ trait QuantumTaskSummary extends StObject {
 object QuantumTaskSummary {
   
   inline def apply(
-    createdAt: SyntheticTimestampDateTime,
+    createdAt: js.Date,
     deviceArn: DeviceArn,
     outputS3Bucket: String,
     outputS3Directory: String,
@@ -68,11 +68,11 @@ object QuantumTaskSummary {
   
   extension [Self <: QuantumTaskSummary](x: Self) {
     
-    inline def setCreatedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
-    inline def setEndedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "endedAt", value.asInstanceOf[js.Any])
+    inline def setEndedAt(value: js.Date): Self = StObject.set(x, "endedAt", value.asInstanceOf[js.Any])
     
     inline def setEndedAtUndefined: Self = StObject.set(x, "endedAt", js.undefined)
     

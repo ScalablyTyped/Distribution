@@ -6,32 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoBorder")
 @js.native
-/* private */ class IMsoBorder ()
+/* private */ open class IMsoBorder ()
   extends StObject
      with typings.activexOffice.Office.IMsoBorder {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
-  var Color: js.Any = js.native
+  var Color: Any = js.native
   
   /* CompleteClass */
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  var LineStyle: js.Any = js.native
+  var LineStyle: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Office.IMsoBorder_typekey")
   var OfficeDotIMsoBorder_typekey: typings.activexOffice.Office.IMsoBorder = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  var Weight: js.Any = js.native
+  var Weight: Any = js.native
 }

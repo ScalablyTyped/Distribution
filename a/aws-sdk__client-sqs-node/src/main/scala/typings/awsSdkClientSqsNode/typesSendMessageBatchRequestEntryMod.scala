@@ -3,7 +3,6 @@ package typings.awsSdkClientSqsNode
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientSqsNode.typesMessageAttributeValueMod.MessageAttributeValue
 import typings.awsSdkClientSqsNode.typesMessageAttributeValueMod.UnmarshalledMessageAttributeValue
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesSendMessageBatchRequestEntryMod {
       * <p>Each message attribute consists of a <code>Name</code>, <code>Type</code>, and <code>Value</code>. For more information, see <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-attributes.html">Amazon SQS Message Attributes</a> in the <i>Amazon Simple Queue Service Developer Guide</i>.</p>
       */
     var MessageAttributes: js.UndefOr[
-        StringDictionary[MessageAttributeValue] | (Iterable[js.Tuple2[String, MessageAttributeValue]])
+        StringDictionary[MessageAttributeValue] | (js.Iterable[js.Tuple2[String, MessageAttributeValue]])
       ] = js.undefined
     
     /**
@@ -60,7 +59,7 @@ object typesSendMessageBatchRequestEntryMod {
       inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
       inline def setMessageAttributes(
-        value: StringDictionary[MessageAttributeValue] | (Iterable[js.Tuple2[String, MessageAttributeValue]])
+        value: StringDictionary[MessageAttributeValue] | (js.Iterable[js.Tuple2[String, MessageAttributeValue]])
       ): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
       
       inline def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)

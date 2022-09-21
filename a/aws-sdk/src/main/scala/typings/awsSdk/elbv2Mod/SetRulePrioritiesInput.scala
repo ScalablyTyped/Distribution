@@ -22,6 +22,6 @@ object SetRulePrioritiesInput {
     
     inline def setRulePriorities(value: RulePriorityList): Self = StObject.set(x, "RulePriorities", value.asInstanceOf[js.Any])
     
-    inline def setRulePrioritiesVarargs(value: RulePriorityPair*): Self = StObject.set(x, "RulePriorities", js.Array(value :_*))
+    inline def setRulePrioritiesVarargs(value: RulePriorityPair*): Self = StObject.set(x, "RulePriorities", js.Array(value*))
   }
 }

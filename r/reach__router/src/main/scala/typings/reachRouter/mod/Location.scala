@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@reach/router", "Location")
 @js.native
-class Location protected ()
-  extends Component[LocationProps, js.Object, js.Any] {
+open class Location protected ()
+  extends Component[LocationProps, js.Object, Any] {
   def this(props: LocationProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LocationProps, context: js.Any) = this()
+  def this(props: LocationProps, context: Any) = this()
 }

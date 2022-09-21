@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "CardText")
+@JSImport("reactstrap", "CardText")
 @js.native
-class CardText () extends default
+open class CardText () extends default

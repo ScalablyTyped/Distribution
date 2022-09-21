@@ -5,9 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An instruction that does a partial group-by-key. One input and one output.
-  */
 trait SchemaPartialGroupByKeyInstruction extends StObject {
   
   /**
@@ -18,19 +15,17 @@ trait SchemaPartialGroupByKeyInstruction extends StObject {
   /**
     * The codec to use for interpreting an element in the input PTable.
     */
-  var inputElementCodec: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var inputElementCodec: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
   /**
-    * If this instruction includes a combining function this is the name of the
-    * intermediate store between the GBK and the CombineValues.
+    * If this instruction includes a combining function this is the name of the intermediate store between the GBK and the CombineValues.
     */
-  var originalCombineValuesInputStoreName: js.UndefOr[String] = js.undefined
+  var originalCombineValuesInputStoreName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * If this instruction includes a combining function, this is the name of
-    * the CombineValues instruction lifted into this instruction.
+    * If this instruction includes a combining function, this is the name of the CombineValues instruction lifted into this instruction.
     */
-  var originalCombineValuesStepName: js.UndefOr[String] = js.undefined
+  var originalCombineValuesStepName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Zero or more side inputs.
@@ -40,7 +35,7 @@ trait SchemaPartialGroupByKeyInstruction extends StObject {
   /**
     * The value combining function to invoke.
     */
-  var valueCombiningFn: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var valueCombiningFn: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
 }
 object SchemaPartialGroupByKeyInstruction {
   
@@ -53,7 +48,9 @@ object SchemaPartialGroupByKeyInstruction {
     
     inline def setInput(value: SchemaInstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setInputElementCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputElementCodec", value.asInstanceOf[js.Any])
+    inline def setInputElementCodec(value: StringDictionary[Any]): Self = StObject.set(x, "inputElementCodec", value.asInstanceOf[js.Any])
+    
+    inline def setInputElementCodecNull: Self = StObject.set(x, "inputElementCodec", null)
     
     inline def setInputElementCodecUndefined: Self = StObject.set(x, "inputElementCodec", js.undefined)
     
@@ -61,9 +58,13 @@ object SchemaPartialGroupByKeyInstruction {
     
     inline def setOriginalCombineValuesInputStoreName(value: String): Self = StObject.set(x, "originalCombineValuesInputStoreName", value.asInstanceOf[js.Any])
     
+    inline def setOriginalCombineValuesInputStoreNameNull: Self = StObject.set(x, "originalCombineValuesInputStoreName", null)
+    
     inline def setOriginalCombineValuesInputStoreNameUndefined: Self = StObject.set(x, "originalCombineValuesInputStoreName", js.undefined)
     
     inline def setOriginalCombineValuesStepName(value: String): Self = StObject.set(x, "originalCombineValuesStepName", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalCombineValuesStepNameNull: Self = StObject.set(x, "originalCombineValuesStepName", null)
     
     inline def setOriginalCombineValuesStepNameUndefined: Self = StObject.set(x, "originalCombineValuesStepName", js.undefined)
     
@@ -71,9 +72,11 @@ object SchemaPartialGroupByKeyInstruction {
     
     inline def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
     
-    inline def setSideInputsVarargs(value: SchemaSideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
+    inline def setSideInputsVarargs(value: SchemaSideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value*))
     
-    inline def setValueCombiningFn(value: StringDictionary[js.Any]): Self = StObject.set(x, "valueCombiningFn", value.asInstanceOf[js.Any])
+    inline def setValueCombiningFn(value: StringDictionary[Any]): Self = StObject.set(x, "valueCombiningFn", value.asInstanceOf[js.Any])
+    
+    inline def setValueCombiningFnNull: Self = StObject.set(x, "valueCombiningFn", null)
     
     inline def setValueCombiningFnUndefined: Self = StObject.set(x, "valueCombiningFn", js.undefined)
   }

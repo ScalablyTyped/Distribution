@@ -39,6 +39,7 @@ object mod {
   inline def getTarget(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")().asInstanceOf[String]
   inline def getTarget(abi: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(abi.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getTarget(abi: String, runtime: Runtime): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(abi.asInstanceOf[js.Any], runtime.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getTarget(abi: Null, runtime: Runtime): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(abi.asInstanceOf[js.Any], runtime.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def getTarget(abi: Unit, runtime: Runtime): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(abi.asInstanceOf[js.Any], runtime.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("node-abi", "supportedTargets")

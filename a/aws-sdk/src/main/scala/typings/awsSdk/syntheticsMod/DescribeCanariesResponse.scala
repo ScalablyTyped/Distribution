@@ -29,7 +29,7 @@ object DescribeCanariesResponse {
     
     inline def setCanariesUndefined: Self = StObject.set(x, "Canaries", js.undefined)
     
-    inline def setCanariesVarargs(value: Canary*): Self = StObject.set(x, "Canaries", js.Array(value :_*))
+    inline def setCanariesVarargs(value: Canary*): Self = StObject.set(x, "Canaries", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

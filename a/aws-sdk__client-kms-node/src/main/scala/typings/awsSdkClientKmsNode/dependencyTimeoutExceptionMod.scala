@@ -8,5 +8,5 @@ object dependencyTimeoutExceptionMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/DependencyTimeoutException", "DependencyTimeoutException")
   @js.native
-  val DependencyTimeoutException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DependencyTimeoutException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

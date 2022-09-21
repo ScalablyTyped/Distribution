@@ -70,7 +70,7 @@ object iconIconMod {
   
   @JSImport("rbx/elements/icon/icon", "Icon")
   @js.native
-  val Icon: ForwardRefAsExoticComponent[IconProps, ElementType[js.Any]] = js.native
+  val Icon: ForwardRefAsExoticComponent[IconProps, ElementType[Any]] = js.native
   
   trait IconModifierProps extends StObject {
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hirestime
 
-Typings are for version 6.1.0
+Typings are for version 7.0.1
 
 ## Library description:
 thin wrapper around process.hrtime
@@ -10,10 +10,10 @@ thin wrapper around process.hrtime
 | ------------------ | :-------------: |
 | Full name          | hirestime |
 | Keywords           | hrtime, hirestimer, milliseconds, seconds, nanoseconds, high resolution timer, profiling, profiler, timing, measurement |
-| # releases         | 13 |
-| # dependents       | 19 |
-| # downloads        | 656806 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60101.666666666664 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/seriousManual/hirestime#readme)

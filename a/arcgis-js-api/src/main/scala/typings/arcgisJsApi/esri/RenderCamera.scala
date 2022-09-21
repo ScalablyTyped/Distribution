@@ -93,7 +93,7 @@ trait RenderCamera
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
-  var viewport: js.Any
+  var viewport: Any
 }
 object RenderCamera {
   
@@ -112,7 +112,7 @@ object RenderCamera {
     up: ArrayLike[Double],
     viewInverseTransposeMatrix: ArrayLike[Double],
     viewMatrix: ArrayLike[Double],
-    viewport: js.Any
+    viewport: Any
   ): RenderCamera = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], fovX = fovX.asInstanceOf[js.Any], fovY = fovY.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), near = near.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], projectionMatrix = projectionMatrix.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), up = up.asInstanceOf[js.Any], viewInverseTransposeMatrix = viewInverseTransposeMatrix.asInstanceOf[js.Any], viewMatrix = viewMatrix.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderCamera]
@@ -142,6 +142,6 @@ object RenderCamera {
     
     inline def setViewMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "viewMatrix", value.asInstanceOf[js.Any])
     
-    inline def setViewport(value: js.Any): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: Any): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

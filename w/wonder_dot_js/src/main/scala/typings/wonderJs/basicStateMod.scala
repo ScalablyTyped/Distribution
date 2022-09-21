@@ -9,7 +9,7 @@ object basicStateMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/state/BasicState", "BasicState")
   @js.native
-  class BasicState () extends WebGLState
+  open class BasicState () extends WebGLState
   /* static members */
   object BasicState {
     

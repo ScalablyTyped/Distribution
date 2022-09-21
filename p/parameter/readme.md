@@ -10,10 +10,10 @@ A parameter verify tools.
 | ------------------ | :-------------: |
 | Full name          | parameter |
 | Keywords           | parameter, verify, univ |
-| # releases         | 2 |
-| # dependents       | 38 |
-| # downloads        | 215453 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 72599.66666666667 |
+| # stars            | 698.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/parameter#readme)

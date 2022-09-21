@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpreadsheetCellEndEditEventArgs")
 @js.native
-class ASPxClientSpreadsheetCellEndEditEventArgs protected ()
+open class ASPxClientSpreadsheetCellEndEditEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpreadsheetCellEndEditEventArgs {
   /**
@@ -33,7 +33,7 @@ class ASPxClientSpreadsheetCellEndEditEventArgs protected ()
   ) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

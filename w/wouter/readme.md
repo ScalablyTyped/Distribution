@@ -1,7 +1,7 @@
 
 # Scala.js typings for wouter
 
-Typings are for version 2.5.3
+Typings are for version 2.8.0-alpha.2
 
 ## Library description:
 A minimalistic routing for React and Preact. Nothing extra, just HOOKS.
@@ -10,10 +10,10 @@ A minimalistic routing for React and Preact. Nothing extra, just HOOKS.
 | ------------------ | :-------------: |
 | Full name          | wouter |
 | Keywords           | react, preact, router, tiny, routing, hooks, useLocation |
-| # releases         | 31 |
-| # dependents       | 6 |
-| # downloads        | 82735 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 165407.0 |
+| # stars            | 4231.0 |
 
 ## Links
 - [Homepage](https://github.com/molefrog/wouter#readme)

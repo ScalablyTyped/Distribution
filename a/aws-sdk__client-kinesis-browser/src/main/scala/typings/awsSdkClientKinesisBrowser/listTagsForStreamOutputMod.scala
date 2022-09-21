@@ -8,5 +8,5 @@ object listTagsForStreamOutputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/ListTagsForStreamOutput", "ListTagsForStreamOutput")
   @js.native
-  val ListTagsForStreamOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListTagsForStreamOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

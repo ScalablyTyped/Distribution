@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-charts-wrapper", "RadarChart")
 @js.native
-class RadarChart protected ()
-  extends Component[RadarChartProps, js.Object, js.Any] {
+open class RadarChart protected ()
+  extends Component[RadarChartProps, js.Object, Any] {
   def this(props: RadarChartProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RadarChartProps, context: js.Any) = this()
+  def this(props: RadarChartProps, context: Any) = this()
 }

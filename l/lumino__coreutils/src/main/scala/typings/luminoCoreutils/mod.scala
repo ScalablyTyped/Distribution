@@ -7,7 +7,6 @@ import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
 import typings.luminoCoreutils.jsonMod.ReadonlyJSONValue
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,16 +88,16 @@ object mod {
   
   @JSImport("@lumino/coreutils", "MimeData")
   @js.native
-  class MimeData ()
-    extends typings.luminoCoreutils.mimeMod.MimeData
+  open class MimeData ()
+    extends typings.luminoCoreutils.indexCommonMod.MimeData
   
   @JSImport("@lumino/coreutils", "PromiseDelegate")
   @js.native
   /**
     * Construct a new promise delegate.
     */
-  class PromiseDelegate[T] ()
-    extends typings.luminoCoreutils.promiseMod.PromiseDelegate[T]
+  open class PromiseDelegate[T] ()
+    extends typings.luminoCoreutils.indexCommonMod.PromiseDelegate[T]
   
   object Random {
     
@@ -106,30 +105,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * A function which generates random bytes.
-      *
-      * @param buffer - The `Uint8Array` to fill with random bytes.
-      *
-      * #### Notes
-      * A cryptographically strong random number generator will be used if
-      * available. Otherwise, `Math.random` will be used as a fallback for
-      * randomness.
-      *
-      * The following RNGs are supported, listed in order of precedence:
-      *   - `window.crypto.getRandomValues`
-      *   - `window.msCrypto.getRandomValues`
-      *   - `require('crypto').randomFillSync
-      *   - `require('crypto').randomBytes
-      *   - `Math.random`
-      */
-    inline def getRandomValues(buffer: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    /* was `typeof fallbackRandomValues` */
+    inline def getRandomValues(buffer: js.typedarray.Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@lumino/coreutils", "Token")
   @js.native
-  class Token[T] protected ()
-    extends typings.luminoCoreutils.tokenMod.Token[T] {
+  open class Token[T] protected ()
+    extends typings.luminoCoreutils.indexCommonMod.Token[T] {
     /**
       * Construct a new token.
       *

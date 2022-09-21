@@ -11,10 +11,10 @@ trait EventWatcher
   extends StObject
      with Destroyable {
   
-  def emitter(): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def emitter(newEmitter: Model[js.Any, ModelSetOptions, js.Object]): js.Any = js.native
+  def emitter(): Model[Any, ModelSetOptions, Any] = js.native
+  def emitter(newEmitter: Model[Any, ModelSetOptions, Any]): Any = js.native
   
-  def registerCallbacks(obj: js.Any, callback_info: js.Any): js.Any = js.native
+  def registerCallbacks(obj: Any, callback_info: Any): Any = js.native
   
-  def releaseCallbacks(obj: js.Any): js.Any = js.native
+  def releaseCallbacks(obj: Any): Any = js.native
 }

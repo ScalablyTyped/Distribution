@@ -4,21 +4,18 @@
 Typings are for version 0.8.3
 
 ## Library description:
-A minimal API wrapper for localStorage
+![Lockr logo](http://i.imgur.com/m5kPjkB.png)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lockr |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 473266 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 124891.33333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/tsironis/lockr#readme)
-- [Bugs](https://github.com/tsironis/lockr/issues)
-- [Repository](https://github.com/tsironis/lockr)
 - [Npm](https://www.npmjs.com/package/lockr)
     
 

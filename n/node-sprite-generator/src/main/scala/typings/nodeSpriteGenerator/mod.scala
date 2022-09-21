@@ -1,10 +1,8 @@
 package typings.nodeSpriteGenerator
 
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.nodeSpriteGenerator.anon.xnumberynumberImage
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +10,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(option: Option): Unit = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def apply(option: Option, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(option: Option, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("node-sprite-generator", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def middleware(option: Option): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(option.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def middleware(option: Option): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(option.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.canvas
@@ -84,21 +94,21 @@ object mod {
     
     def readImages(
       files: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* images */ js.Array[Image], Unit]
+      callback: js.Function2[/* error */ js.Error, /* images */ js.Array[Image], Unit]
     ): Unit
     
     def render(
       layout: Layout,
       spritePath: String,
       options: CompositorOption,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit
   }
   object Compositor {
     
     inline def apply(
-      readImages: (js.Array[String], js.Function2[/* error */ Error, /* images */ js.Array[Image], Unit]) => Unit,
-      render: (Layout, String, CompositorOption, js.Function1[/* error */ Error, Unit]) => Unit
+      readImages: (js.Array[String], js.Function2[/* error */ js.Error, /* images */ js.Array[Image], Unit]) => Unit,
+      render: (Layout, String, CompositorOption, js.Function1[/* error */ js.Error, Unit]) => Unit
     ): Compositor = {
       val __obj = js.Dynamic.literal(readImages = js.Any.fromFunction2(readImages), render = js.Any.fromFunction4(render))
       __obj.asInstanceOf[Compositor]
@@ -107,10 +117,10 @@ object mod {
     extension [Self <: Compositor](x: Self) {
       
       inline def setReadImages(
-        value: (js.Array[String], js.Function2[/* error */ Error, /* images */ js.Array[Image], Unit]) => Unit
+        value: (js.Array[String], js.Function2[/* error */ js.Error, /* images */ js.Array[Image], Unit]) => Unit
       ): Self = StObject.set(x, "readImages", js.Any.fromFunction2(value))
       
-      inline def setRender(value: (Layout, String, CompositorOption, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction4(value))
+      inline def setRender(value: (Layout, String, CompositorOption, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction4(value))
     }
   }
   
@@ -165,7 +175,7 @@ object mod {
   
   trait Image extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var height: Double
     
@@ -173,14 +183,14 @@ object mod {
   }
   object Image {
     
-    inline def apply(data: js.Any, height: Double, width: Double): Image = {
+    inline def apply(data: Any, height: Double, width: Double): Image = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Image]
     }
     
     extension [Self <: Image](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -209,7 +219,7 @@ object mod {
       
       inline def setImages(value: js.Array[xnumberynumberImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      inline def setImagesVarargs(value: xnumberynumberImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: xnumberynumberImage*): Self = StObject.set(x, "images", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
@@ -218,7 +228,7 @@ object mod {
   type LayoutFunc = js.Function3[
     /* images */ js.Array[Image], 
     /* options */ LayoutOption, 
-    /* callback */ js.Function2[/* error */ Error, /* layout */ Layout, Unit], 
+    /* callback */ js.Function2[/* error */ js.Error, /* layout */ Layout, Unit], 
     Unit
   ]
   
@@ -287,7 +297,7 @@ object mod {
       inline def setLayout(value: BuiltinLayouts | LayoutFunc): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setLayoutFunction3(
-        value: (/* images */ js.Array[Image], /* options */ LayoutOption, /* callback */ js.Function2[/* error */ Error, /* layout */ Layout, Unit]) => Unit
+        value: (/* images */ js.Array[Image], /* options */ LayoutOption, /* callback */ js.Function2[/* error */ js.Error, /* layout */ Layout, Unit]) => Unit
       ): Self = StObject.set(x, "layout", js.Any.fromFunction3(value))
       
       inline def setLayoutOptions(value: LayoutOption): Self = StObject.set(x, "layoutOptions", value.asInstanceOf[js.Any])
@@ -304,12 +314,12 @@ object mod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value*))
       
       inline def setStylesheet(value: BuiltinStylesheetFormats | StylesheetFunc | String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
       
       inline def setStylesheetFunction5(
-        value: (/* layout */ Layout, /* stylesheetPath */ String, /* spritePath */ String, /* options */ StylesheetOption, /* callback */ js.Function1[/* error */ Error, Unit]) => Unit
+        value: (/* layout */ Layout, /* stylesheetPath */ String, /* spritePath */ String, /* options */ StylesheetOption, /* callback */ js.Function1[/* error */ js.Error, Unit]) => Unit
       ): Self = StObject.set(x, "stylesheet", js.Any.fromFunction5(value))
       
       inline def setStylesheetOptions(value: StylesheetOption): Self = StObject.set(x, "stylesheetOptions", value.asInstanceOf[js.Any])
@@ -329,7 +339,7 @@ object mod {
     /* stylesheetPath */ String, 
     /* spritePath */ String, 
     /* options */ StylesheetOption, 
-    /* callback */ js.Function1[/* error */ Error, Unit], 
+    /* callback */ js.Function1[/* error */ js.Error, Unit], 
     Unit
   ]
   

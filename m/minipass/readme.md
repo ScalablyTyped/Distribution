@@ -1,7 +1,7 @@
 
 # Scala.js typings for minipass
 
-Typings are for version 2.2
+Typings are for version 3.3.4
 
 ## Library description:
 minimal implementation of a PassThrough stream
@@ -10,10 +10,10 @@ minimal implementation of a PassThrough stream
 | ------------------ | :-------------: |
 | Full name          | minipass |
 | Keywords           | passthrough, stream |
-| # releases         | 25 |
-| # dependents       | 78 |
-| # downloads        | 702511543 |
-| # stars            | 2 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 9.359701E7 |
+| # stars            | 205.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/minipass#readme)
@@ -24,7 +24,7 @@ minimal implementation of a PassThrough stream
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

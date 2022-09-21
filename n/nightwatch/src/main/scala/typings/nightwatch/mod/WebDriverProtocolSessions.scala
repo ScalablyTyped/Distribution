@@ -1,5 +1,6 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.nightwatch.anon.Build
 import typings.nightwatch.nightwatchStrings.browser
 import typings.nightwatch.nightwatchStrings.client
@@ -39,7 +40,7 @@ trait WebDriverProtocolSessions extends StObject {
     sessionId: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, js.Any]], 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
       Unit
     ]
   ): this.type = js.native
@@ -48,7 +49,7 @@ trait WebDriverProtocolSessions extends StObject {
     sessionId: Unit,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, js.Any]], 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
       Unit
     ]
   ): this.type = js.native
@@ -58,7 +59,7 @@ trait WebDriverProtocolSessions extends StObject {
     sessionId: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, js.Any]], 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
       Unit
     ]
   ): this.type = js.native
@@ -67,7 +68,7 @@ trait WebDriverProtocolSessions extends StObject {
     sessionId: Unit,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, js.Any]], 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
       Unit
     ]
   ): this.type = js.native
@@ -123,9 +124,28 @@ trait WebDriverProtocolSessions extends StObject {
   def sessions(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[Record[String, js.Any]]], 
+      /* result */ NightwatchCallbackResult[js.Array[Record[String, Any]]], 
       Unit
     ]
+  ): this.type = js.native
+  
+  /**
+    * Command to set Chrome network emulation settings.
+    *
+    * @example
+    *  this.demoTest = function() {
+    *    browser.setNetworkConditions({
+    *      offline: false,
+    *      latency: 50000,
+    *      download_throughput: 450 * 1024,
+    *      upload_throughput: 150 * 1024
+    *    });
+    *  };
+    */
+  def setNetworkConditions(spec: StringDictionary[Any]): this.type = js.native
+  def setNetworkConditions(
+    spec: StringDictionary[Any],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
   ): this.type = js.native
   
   /**
@@ -136,6 +156,10 @@ trait WebDriverProtocolSessions extends StObject {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Build], Unit]
   ): this.type = js.native
   
+  def timeouts(): this.type = js.native
+  def timeouts(
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
   /**
     * Configure the amount of time that a particular type of operation can execute for before they are aborted and a |Timeout| error is returned to the client.
     *

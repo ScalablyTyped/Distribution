@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.NoiseProceduralTexture")
 @js.native
-class NoiseProceduralTexture protected ()
+open class NoiseProceduralTexture protected ()
   extends StObject
      with typings.babylonjs.BABYLON.NoiseProceduralTexture {
   /**
@@ -98,8 +98,7 @@ object NoiseProceduralTexture {
     * Creates a NoiseProceduralTexture from parsed noise procedural texture data
     * @param parsedTexture defines parsed texture data
     * @param scene defines the current scene
-    * @param rootUrl defines the root URL containing noise procedural texture information
     * @returns a parsed NoiseProceduralTexture
     */
-  inline def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.NoiseProceduralTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.NoiseProceduralTexture]
+  inline def Parse(parsedTexture: Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.NoiseProceduralTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.NoiseProceduralTexture]
 }

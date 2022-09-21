@@ -8,17 +8,17 @@ trait SettingsResponse
   extends StObject
      with Settings {
   
-  var meta: js.Any
+  var meta: Any
 }
 object SettingsResponse {
   
-  inline def apply(meta: js.Any): SettingsResponse = {
+  inline def apply(meta: Any): SettingsResponse = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsResponse]
   }
   
   extension [Self <: SettingsResponse](x: Self) {
     
-    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

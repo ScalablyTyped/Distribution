@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.Music")
 @js.native
-class Music ()
+open class Music ()
   extends StObject
      with typings.vexflow.Vex.Flow.Music
 object Music {

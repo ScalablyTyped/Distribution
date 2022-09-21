@@ -1,7 +1,7 @@
 
 # Scala.js typings for list_dot_js
 
-Typings are for version 1.5
+Typings are for version 2.3
 
 ## Library description:
 The perfect library for lists. Supports search, sort, filters and flexibility. Built to be invisible and work on existing HTML
@@ -11,9 +11,9 @@ The perfect library for lists. Supports search, sort, filters and flexibility. B
 | Full name          | list.js |
 | Keywords           | list, search, sort, table, dom, html, ui |
 | # releases         | 6 |
-| # dependents       | 13 |
-| # downloads        | 838479 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 129928.0 |
+| # stars            | 10763.0 |
 
 ## Links
 - [Homepage](https://listjs.com)

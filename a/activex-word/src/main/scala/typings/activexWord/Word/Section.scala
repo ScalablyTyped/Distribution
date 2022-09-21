@@ -20,7 +20,7 @@ trait Section extends StObject {
   
   var PageSetup: typings.activexWord.Word.PageSetup
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ProtectedForForms: Boolean
   
@@ -39,7 +39,7 @@ object Section {
     Headers: HeadersFooters,
     Index: Double,
     PageSetup: PageSetup,
-    Parent: js.Any,
+    Parent: Any,
     ProtectedForForms: Boolean,
     Range: Range,
     WordDotSection_typekey: Section
@@ -65,7 +65,7 @@ object Section {
     
     inline def setPageSetup(value: PageSetup): Self = StObject.set(x, "PageSetup", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProtectedForForms(value: Boolean): Self = StObject.set(x, "ProtectedForForms", value.asInstanceOf[js.Any])
     

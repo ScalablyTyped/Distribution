@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[T /* <: js.Function0[js.Any] */](fn: T): T = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[T]
-  
   @JSImport("lazy-value", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default[T /* <: js.Function0[Any] */](function_ : T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(function_.asInstanceOf[js.Any]).asInstanceOf[T]
 }

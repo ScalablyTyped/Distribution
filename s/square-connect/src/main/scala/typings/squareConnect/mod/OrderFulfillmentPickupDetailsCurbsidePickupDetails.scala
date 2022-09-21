@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderFulfillmentPickupDetailsCurbsidePickupDetails")
 @js.native
-class OrderFulfillmentPickupDetailsCurbsidePickupDetails () extends StObject {
+open class OrderFulfillmentPickupDetailsCurbsidePickupDetails () extends StObject {
   
   /**
     * The [timestamp](#workingwithdates) in RFC 3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\",

@@ -21,7 +21,7 @@ object SqlFragmentType {
     
     inline def setParameters(value: js.Array[PrimitiveValueExpressionType]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: PrimitiveValueExpressionType*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: PrimitiveValueExpressionType*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
   }

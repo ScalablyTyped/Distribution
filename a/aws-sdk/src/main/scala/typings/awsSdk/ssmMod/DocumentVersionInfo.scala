@@ -9,7 +9,12 @@ trait DocumentVersionInfo extends StObject {
   /**
     * The date the document was created.
     */
-  var CreatedDate: js.UndefOr[DateTime] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The friendly name of the SSM document. This value can differ for each version of the document. If you want to update this value, see UpdateDocument.
+    */
+  var DisplayName: js.UndefOr[DocumentDisplayName] = js.undefined
   
   /**
     * The document format, either JSON or YAML.
@@ -32,17 +37,22 @@ trait DocumentVersionInfo extends StObject {
   var Name: js.UndefOr[DocumentName] = js.undefined
   
   /**
-    * The status of the Systems Manager document, such as Creating, Active, Failed, and Deleting.
+    * The current status of the approval review for the latest version of the document.
+    */
+  var ReviewStatus: js.UndefOr[typings.awsSdk.ssmMod.ReviewStatus] = js.undefined
+  
+  /**
+    * The status of the SSM document, such as Creating, Active, Failed, and Deleting.
     */
   var Status: js.UndefOr[DocumentStatus] = js.undefined
   
   /**
-    * A message returned by AWS Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket does not exist. Verify that the URL of the S3 bucket is correct."
+    * A message returned by Amazon Web Services Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket doesn't exist. Verify that the URL of the S3 bucket is correct."
     */
   var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.undefined
   
   /**
-    * The version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+    * The version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and can't be changed.
     */
   var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
 }
@@ -55,9 +65,13 @@ object DocumentVersionInfo {
   
   extension [Self <: DocumentVersionInfo](x: Self) {
     
-    inline def setCreatedDate(value: DateTime): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    
+    inline def setDisplayName(value: DocumentDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     inline def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "DocumentFormat", value.asInstanceOf[js.Any])
     
@@ -74,6 +88,10 @@ object DocumentVersionInfo {
     inline def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setReviewStatus(value: ReviewStatus): Self = StObject.set(x, "ReviewStatus", value.asInstanceOf[js.Any])
+    
+    inline def setReviewStatusUndefined: Self = StObject.set(x, "ReviewStatus", js.undefined)
     
     inline def setStatus(value: DocumentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

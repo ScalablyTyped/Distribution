@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeViewNodeCancelEventArgs")
 @js.native
-class ASPxClientTreeViewNodeCancelEventArgs protected ()
+open class ASPxClientTreeViewNodeCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeViewNodeCancelEventArgs {
   /**

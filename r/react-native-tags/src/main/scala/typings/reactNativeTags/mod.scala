@@ -11,8 +11,8 @@ object mod {
   
   @JSImport("react-native-tags", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TagsProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TagsProps, js.Object, Any]
   
   trait RenderTag extends StObject {
     
@@ -76,7 +76,7 @@ object mod {
     }
   }
   
-  type Tags = Component[TagsProps, js.Object, js.Any]
+  type Tags = Component[TagsProps, js.Object, Any]
   
   trait TagsProps extends StObject {
     
@@ -128,13 +128,7 @@ object mod {
       * Fires when tags are pressed
       */
     var onTagPress: js.UndefOr[
-        js.Function4[
-          /* index */ Double, 
-          /* tagLabel */ String, 
-          /* event */ js.Any, 
-          /* deleted */ Boolean, 
-          Unit
-        ]
+        js.Function4[/* index */ Double, /* tagLabel */ String, /* event */ Any, /* deleted */ Boolean, Unit]
       ] = js.undefined
     
     /**
@@ -194,7 +188,7 @@ object mod {
       
       inline def setCreateTagOnStringUndefined: Self = StObject.set(x, "createTagOnString", js.undefined)
       
-      inline def setCreateTagOnStringVarargs(value: String*): Self = StObject.set(x, "createTagOnString", js.Array(value :_*))
+      inline def setCreateTagOnStringVarargs(value: String*): Self = StObject.set(x, "createTagOnString", js.Array(value*))
       
       inline def setDeleteTagOnPress(value: Boolean): Self = StObject.set(x, "deleteTagOnPress", value.asInstanceOf[js.Any])
       
@@ -204,7 +198,7 @@ object mod {
       
       inline def setInitialTagsUndefined: Self = StObject.set(x, "initialTags", js.undefined)
       
-      inline def setInitialTagsVarargs(value: String*): Self = StObject.set(x, "initialTags", js.Array(value :_*))
+      inline def setInitialTagsVarargs(value: String*): Self = StObject.set(x, "initialTags", js.Array(value*))
       
       inline def setInitialText(value: String): Self = StObject.set(x, "initialText", value.asInstanceOf[js.Any])
       
@@ -226,9 +220,7 @@ object mod {
       
       inline def setOnChangeTagsUndefined: Self = StObject.set(x, "onChangeTags", js.undefined)
       
-      inline def setOnTagPress(
-        value: (/* index */ Double, /* tagLabel */ String, /* event */ js.Any, /* deleted */ Boolean) => Unit
-      ): Self = StObject.set(x, "onTagPress", js.Any.fromFunction4(value))
+      inline def setOnTagPress(value: (/* index */ Double, /* tagLabel */ String, /* event */ Any, /* deleted */ Boolean) => Unit): Self = StObject.set(x, "onTagPress", js.Any.fromFunction4(value))
       
       inline def setOnTagPressUndefined: Self = StObject.set(x, "onTagPress", js.undefined)
       

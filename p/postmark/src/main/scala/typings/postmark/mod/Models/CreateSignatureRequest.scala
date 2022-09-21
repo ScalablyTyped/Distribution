@@ -6,10 +6,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Models.CreateSignatureRequest")
 @js.native
-class CreateSignatureRequest protected ()
+open class CreateSignatureRequest protected ()
   extends typings.postmark.modelsMod.CreateSignatureRequest {
-  def this(name: String, fromEmail: String) = this()
-  def this(name: String, fromEmail: String, replyToEmail: String) = this()
-  def this(name: String, fromEmail: String, replyToEmail: String, returnPathDomain: String) = this()
-  def this(name: String, fromEmail: String, replyToEmail: Unit, returnPathDomain: String) = this()
+  def this(Name: String, FromEmail: String) = this()
+  def this(Name: String, FromEmail: String, ReplyToEmail: String) = this()
+  def this(Name: String, FromEmail: String, ReplyToEmail: String, ReturnPathDomain: String) = this()
+  def this(Name: String, FromEmail: String, ReplyToEmail: Unit, ReturnPathDomain: String) = this()
+  def this(
+    Name: String,
+    FromEmail: String,
+    ReplyToEmail: String,
+    ReturnPathDomain: String,
+    ConfirmationPersonalNote: String
+  ) = this()
+  def this(
+    Name: String,
+    FromEmail: String,
+    ReplyToEmail: String,
+    ReturnPathDomain: Unit,
+    ConfirmationPersonalNote: String
+  ) = this()
+  def this(
+    Name: String,
+    FromEmail: String,
+    ReplyToEmail: Unit,
+    ReturnPathDomain: String,
+    ConfirmationPersonalNote: String
+  ) = this()
+  def this(
+    Name: String,
+    FromEmail: String,
+    ReplyToEmail: Unit,
+    ReturnPathDomain: Unit,
+    ConfirmationPersonalNote: String
+  ) = this()
 }

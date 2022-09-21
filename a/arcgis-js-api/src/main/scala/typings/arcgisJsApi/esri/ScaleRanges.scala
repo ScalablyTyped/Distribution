@@ -42,12 +42,12 @@ trait ScaleRanges
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRanges.html#isMaxScaleEdge)
     */
-  def isMaxScaleEdge(scale: Unit): Boolean = js.native
+  def isMaxScaleEdge(scale: scala.Unit): Boolean = js.native
   
   /**
     * Determines if the input scale value can be considered to be at the largest scale range edge.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRanges.html#isMinScaleEdge)
     */
-  def isMinScaleEdge(scale: Unit): Boolean = js.native
+  def isMinScaleEdge(scale: scala.Unit): Boolean = js.native
 }

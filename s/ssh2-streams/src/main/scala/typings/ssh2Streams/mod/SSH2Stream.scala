@@ -1,6 +1,6 @@
 package typings.ssh2Streams.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.ssh2Streams.ssh2StreamsStrings.CHANNEL_CLOSEColon0
 import typings.ssh2Streams.ssh2StreamsStrings.CHANNEL_DATAColon0
@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates and returns a new SSH2Stream instance.
   */
-class SSH2Stream () extends Transform {
+open class SSH2Stream () extends Transform {
   def this(config: SSH2StreamConfig) = this()
   
   /**
@@ -512,7 +512,7 @@ class SSH2Stream () extends Transform {
     * Emitted when an error occurred.
     */
   @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+  def on_error(event: error, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
   /**
     * (Client-only)
     * This event allows you to verify a host's key. If `callback` is called with `true`, the
@@ -617,7 +617,7 @@ class SSH2Stream () extends Transform {
     height: Double,
     width: Double,
     terminalType: String,
-    terminalModes: js.Any
+    terminalModes: Any
   ): Boolean = js.native
   def pty(
     channel: Double,
@@ -626,7 +626,7 @@ class SSH2Stream () extends Transform {
     height: Double,
     width: Double,
     terminalType: String,
-    terminalModes: js.Any,
+    terminalModes: Any,
     wantReply: Boolean
   ): Boolean = js.native
   def pty(
@@ -646,7 +646,7 @@ class SSH2Stream () extends Transform {
     height: Double,
     width: Double,
     terminalType: Unit,
-    terminalModes: js.Any
+    terminalModes: Any
   ): Boolean = js.native
   def pty(
     channel: Double,
@@ -655,7 +655,7 @@ class SSH2Stream () extends Transform {
     height: Double,
     width: Double,
     terminalType: Unit,
-    terminalModes: js.Any,
+    terminalModes: Any,
     wantReply: Boolean
   ): Boolean = js.native
   def pty(

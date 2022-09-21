@@ -14,9 +14,7 @@ trait IEditor
     * @param position Object
     */
   @JSName("afterRender")
-  var afterRender_IEditor: js.UndefOr[
-    js.Function2[/* ct */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var afterRender_IEditor: js.UndefOr[js.Function2[/* ct */ js.UndefOr[Any], /* position */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var alignment: js.UndefOr[java.lang.String] = js.undefined
@@ -25,7 +23,7 @@ trait IEditor
   var allowBlur: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var autoSize: js.UndefOr[js.Any] = js.undefined
+  var autoSize: js.UndefOr[Any] = js.undefined
   
   /** [Method] Cancels the editing process and hides the editor without persisting any changes
     * @param remainVisible Boolean Override the default behavior and keep the editor visible after cancel
@@ -49,7 +47,7 @@ trait IEditor
   /** [Method] Gets the data value of the editor
     * @returns Object The data value
     */
-  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var hideEl: js.UndefOr[Boolean] = js.undefined
@@ -69,7 +67,7 @@ trait IEditor
   var onShow_IEditor: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var parentEl: js.UndefOr[js.Any] = js.undefined
+  var parentEl: js.UndefOr[Any] = js.undefined
   
   /** [Method] Realigns the editor to the bound field based on the current alignment config value
     * @param autoSize Boolean True to size the field to the dimensions of the bound element.
@@ -82,14 +80,14 @@ trait IEditor
   /** [Method] Sets the data value of the editor
     * @param value Object Any valid value supported by the underlying field
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Starts the editing process and shows the editor
     * @param el String/HTMLElement/Ext.Element The element to edit
     * @param value String A value to initialize the editor with. If a value is not provided, it defaults to the innerHTML of el.
     */
   var startEdit: js.UndefOr[
-    js.Function2[/* el */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* el */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String], Unit]
   ] = js.undefined
   
   /** [Config Option] (Boolean) */
@@ -99,7 +97,7 @@ trait IEditor
   var updateEl: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object IEditor {
   
@@ -110,7 +108,7 @@ object IEditor {
   
   extension [Self <: IEditor](x: Self) {
     
-    inline def setAfterRender(value: (/* ct */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
+    inline def setAfterRender(value: (/* ct */ js.UndefOr[Any], /* position */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
     
     inline def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
     
@@ -122,7 +120,7 @@ object IEditor {
     
     inline def setAllowBlurUndefined: Self = StObject.set(x, "allowBlur", js.undefined)
     
-    inline def setAutoSize(value: js.Any): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
+    inline def setAutoSize(value: Any): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
     
     inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
     
@@ -146,7 +144,7 @@ object IEditor {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
@@ -170,7 +168,7 @@ object IEditor {
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    inline def setParentEl(value: js.Any): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
+    inline def setParentEl(value: Any): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
     
     inline def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
     
@@ -182,11 +180,11 @@ object IEditor {
     
     inline def setRevertInvalidUndefined: Self = StObject.set(x, "revertInvalid", js.undefined)
     
-    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    inline def setStartEdit(value: (/* el */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
+    inline def setStartEdit(value: (/* el */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
     
     inline def setStartEditUndefined: Self = StObject.set(x, "startEdit", js.undefined)
     
@@ -198,7 +196,7 @@ object IEditor {
     
     inline def setUpdateElUndefined: Self = StObject.set(x, "updateEl", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

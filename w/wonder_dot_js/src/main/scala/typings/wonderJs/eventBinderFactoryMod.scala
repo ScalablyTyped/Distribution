@@ -9,7 +9,7 @@ object eventBinderFactoryMod {
   
   @JSImport("wonder.js/dist/es2015/event/factory/EventBinderFactory", "EventBinderFactory")
   @js.native
-  class EventBinderFactory () extends StObject
+  open class EventBinderFactory () extends StObject
   /* static members */
   object EventBinderFactory {
     
@@ -17,6 +17,6 @@ object eventBinderFactoryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createEventBinder(eventName: EEventName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventBinder")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def createEventBinder(eventName: EEventName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventBinder")(eventName.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

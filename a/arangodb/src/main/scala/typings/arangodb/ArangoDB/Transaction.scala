@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Transaction extends StObject {
+trait Transaction[ReturnType] extends StObject {
   
-  def action(params: js.Object): Unit | String
+  def action(params: js.Object): ReturnType
   
   var collections: TransactionCollections | js.Array[String]
   
@@ -25,18 +25,18 @@ trait Transaction extends StObject {
 }
 object Transaction {
   
-  inline def apply(action: js.Object => Unit | String, collections: TransactionCollections | js.Array[String]): Transaction = {
+  inline def apply[ReturnType](action: js.Object => ReturnType, collections: TransactionCollections | js.Array[String]): Transaction[ReturnType] = {
     val __obj = js.Dynamic.literal(action = js.Any.fromFunction1(action), collections = collections.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Transaction]
+    __obj.asInstanceOf[Transaction[ReturnType]]
   }
   
-  extension [Self <: Transaction](x: Self) {
+  extension [Self <: Transaction[?], ReturnType](x: Self & Transaction[ReturnType]) {
     
-    inline def setAction(value: js.Object => Unit | String): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+    inline def setAction(value: js.Object => ReturnType): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     inline def setCollections(value: TransactionCollections | js.Array[String]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    inline def setCollectionsVarargs(value: String*): Self = StObject.set(x, "collections", js.Array(value :_*))
+    inline def setCollectionsVarargs(value: String*): Self = StObject.set(x, "collections", js.Array(value*))
     
     inline def setIntermediateCommitCount(value: Double): Self = StObject.set(x, "intermediateCommitCount", value.asInstanceOf[js.Any])
     

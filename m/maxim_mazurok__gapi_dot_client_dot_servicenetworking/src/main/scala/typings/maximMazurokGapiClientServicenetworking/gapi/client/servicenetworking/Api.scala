@@ -47,13 +47,13 @@ object Api {
     
     inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
-    inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value :_*))
+    inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value*))
     
     inline def setMixins(value: js.Array[Mixin]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
     inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
     
-    inline def setMixinsVarargs(value: Mixin*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+    inline def setMixinsVarargs(value: Mixin*): Self = StObject.set(x, "mixins", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object Api {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setSourceContext(value: SourceContext): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
     

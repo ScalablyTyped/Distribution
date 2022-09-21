@@ -6,38 +6,34 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A pc.Sprite is contains references to one or more frames of a {@link pc.TextureAtlas}.
-  * It can be used by the {@link pc.SpriteComponent} or the {@link pc.ElementComponent} to render a
-  * single frame or a sprite animation.
-  * @property pixelsPerUnit - The number of pixels that map to one PlayCanvas unit.
-  * @property atlas - The texture atlas.
-  * @property renderMode - The rendering mode of the sprite. Can be:
+  * A Sprite contains references to one or more frames of a {@link TextureAtlas}. It can be used by
+  * the {@link SpriteComponent} or the {@link ElementComponent} to render a single frame or a sprite
+  * animation.
   *
-  * * {@link pc.SPRITE_RENDERMODE_SIMPLE}
-  * * {@link pc.SPRITE_RENDERMODE_SLICED}
-  * * {@link pc.SPRITE_RENDERMODE_TILED}
-  * @property frameKeys - The keys of the frames in the sprite atlas that this sprite is using.
-  * @property meshes - An array that contains a mesh for each frame.
-  * @param device - The graphics device of the application.
-  * @param [options] - Options for creating the pc.Sprite.
-  * @param [options.pixelsPerUnit] - The number of pixels that map to one PlayCanvas unit.
-  * Defaults to 1.
-  * @param [options.renderMode] - The rendering mode of the sprite. Can be:
-  *
-  * * {@link pc.SPRITE_RENDERMODE_SIMPLE}
-  * * {@link pc.SPRITE_RENDERMODE_SLICED}
-  * * {@link pc.SPRITE_RENDERMODE_TILED}
-  *
-  * Defaults to pc.SPRITE_RENDERMODE_SIMPLE.
-  * @param [options.atlas] - The texture atlas. Defaults to null.
-  * @param [options.frameKeys] - The keys of the frames in the sprite atlas that this sprite is
-  * using. Defaults to null.
+  * @augments EventHandler
   */
 @JSGlobal("pc.Sprite")
 @js.native
-class Sprite protected ()
-  extends StObject
-     with typings.playcanvas.pc.Sprite {
-  def this(device: typings.playcanvas.pc.GraphicsDevice) = this()
-  def this(device: typings.playcanvas.pc.GraphicsDevice, options: Atlas) = this()
+open class Sprite protected ()
+  extends typings.playcanvas.mod.Sprite {
+  /**
+    * Create a new Sprite instance.
+    *
+    * @param {GraphicsDevice} device - The graphics device of the application.
+    * @param {object} [options] - Options for creating the Sprite.
+    * @param {number} [options.pixelsPerUnit] - The number of pixels that map to one PlayCanvas
+    * unit. Defaults to 1.
+    * @param {number} [options.renderMode] - The rendering mode of the sprite. Can be:
+    *
+    * - {@link SPRITE_RENDERMODE_SIMPLE}
+    * - {@link SPRITE_RENDERMODE_SLICED}
+    * - {@link SPRITE_RENDERMODE_TILED}
+    *
+    * Defaults to {@link SPRITE_RENDERMODE_SIMPLE}.
+    * @param {TextureAtlas} [options.atlas] - The texture atlas. Defaults to null.
+    * @param {string[]} [options.frameKeys] - The keys of the frames in the sprite atlas that this
+    * sprite is using. Defaults to null.
+    */
+  def this(device: typings.playcanvas.mod.GraphicsDevice) = this()
+  def this(device: typings.playcanvas.mod.GraphicsDevice, options: Atlas) = this()
 }

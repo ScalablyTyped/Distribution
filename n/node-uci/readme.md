@@ -10,10 +10,10 @@ Universal Chess Interface protocol implementation for node.js
 | ------------------ | :-------------: |
 | Full name          | node-uci |
 | Keywords           | universal chess interface, uci, chess, engine |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 6251 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 211.66666666666666 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/ebemunk/node-uci#readme)

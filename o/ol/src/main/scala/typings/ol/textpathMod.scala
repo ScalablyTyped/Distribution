@@ -24,5 +24,5 @@ object textpathMod {
     font: String,
     cache: StringDictionary[Double],
     rotation: Double
-  ): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTextOnPath")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], text.asInstanceOf[js.Any], startM.asInstanceOf[js.Any], maxAngle.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], measureAndCacheTextWidth.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
+  ): js.Array[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTextOnPath")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], text.asInstanceOf[js.Any], startM.asInstanceOf[js.Any], maxAngle.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], measureAndCacheTextWidth.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Any]]]
 }

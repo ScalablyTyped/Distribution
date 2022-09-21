@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("@hapi/topo", "Sorter")
   @js.native
-  class Sorter[T] () extends StObject {
+  open class Sorter[T] () extends StObject {
     
     /**
       * Adds a node or list of nodes to be added and topologically sorted
@@ -37,6 +37,11 @@ object mod {
       * An array of the topologically sorted nodes. This list is renewed upon each call to topo.add().
       */
     var nodes: js.Array[T] = js.native
+    
+    /**
+      * Sorts the nodes array (only required if the manual option is used when adding items)
+      */
+    def sort(): js.Array[T] = js.native
   }
   
   trait Options extends StObject {
@@ -57,6 +62,11 @@ object mod {
     val group: js.UndefOr[String] = js.undefined
     
     /**
+      * If true, the array is not sorted automatically until sort() is called
+      */
+    val manual: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * A number used to sort items with equal before/after requirements
       */
     val sort: js.UndefOr[Double] = js.undefined
@@ -74,17 +84,21 @@ object mod {
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value*))
       
       inline def setBefore(value: String | js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value*))
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      
+      inline def setManual(value: Boolean): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
+      
+      inline def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
       
       inline def setSort(value: Double): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       

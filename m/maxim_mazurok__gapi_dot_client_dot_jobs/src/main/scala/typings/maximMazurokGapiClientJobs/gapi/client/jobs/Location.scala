@@ -10,8 +10,8 @@ trait Location extends StObject {
   var latLng: js.UndefOr[LatLng] = js.undefined
   
   /**
-    * The type of a location, which corresponds to the address lines field of PostalAddress. For example, "Downtown, Atlanta, GA, USA" has a type of LocationType#NEIGHBORHOOD, and "Kansas
-    * City, KS, USA" has a type of LocationType#LOCALITY.
+    * The type of a location, which corresponds to the address lines field of google.type.PostalAddress. For example, "Downtown, Atlanta, GA, USA" has a type of LocationType.NEIGHBORHOOD,
+    * and "Kansas City, KS, USA" has a type of LocationType.LOCALITY.
     */
   var locationType: js.UndefOr[String] = js.undefined
   
@@ -22,10 +22,10 @@ trait Location extends StObject {
   var postalAddress: js.UndefOr[PostalAddress] = js.undefined
   
   /**
-    * Radius in miles of the job location. This value is derived from the location bounding box in which a circle with the specified radius centered from LatLng covers the area associated
-    * with the job location. For example, currently, "Mountain View, CA, USA" has a radius of 6.17 miles.
+    * Radius in miles of the job location. This value is derived from the location bounding box in which a circle with the specified radius centered from google.type.LatLng covers the
+    * area associated with the job location. For example, currently, "Mountain View, CA, USA" has a radius of 6.17 miles.
     */
-  var radiusInMiles: js.UndefOr[Double] = js.undefined
+  var radiusMiles: js.UndefOr[Double] = js.undefined
 }
 object Location {
   
@@ -48,8 +48,8 @@ object Location {
     
     inline def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
     
-    inline def setRadiusInMiles(value: Double): Self = StObject.set(x, "radiusInMiles", value.asInstanceOf[js.Any])
+    inline def setRadiusMiles(value: Double): Self = StObject.set(x, "radiusMiles", value.asInstanceOf[js.Any])
     
-    inline def setRadiusInMilesUndefined: Self = StObject.set(x, "radiusInMiles", js.undefined)
+    inline def setRadiusMilesUndefined: Self = StObject.set(x, "radiusMiles", js.undefined)
   }
 }

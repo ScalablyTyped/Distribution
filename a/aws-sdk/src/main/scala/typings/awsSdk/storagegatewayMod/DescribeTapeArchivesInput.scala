@@ -42,6 +42,6 @@ object DescribeTapeArchivesInput {
     
     inline def setTapeARNsUndefined: Self = StObject.set(x, "TapeARNs", js.undefined)
     
-    inline def setTapeARNsVarargs(value: TapeARN*): Self = StObject.set(x, "TapeARNs", js.Array(value :_*))
+    inline def setTapeARNsVarargs(value: TapeARN*): Self = StObject.set(x, "TapeARNs", js.Array(value*))
   }
 }

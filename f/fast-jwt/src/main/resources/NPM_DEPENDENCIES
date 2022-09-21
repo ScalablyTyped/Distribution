@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fast-jwt" : "1.5.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fast-jwt" : "1.5.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

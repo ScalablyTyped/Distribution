@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "App")
 @js.native
-/* private */ class App () extends StObject {
+/* private */ open class App () extends StObject {
   
   // admob(): RNFirebase.admob.AdMob;
   def analytics(): Analytics = js.native

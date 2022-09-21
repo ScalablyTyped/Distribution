@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-forever" : "2.1.0"
+      "p-forever" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "p-forever" : "2.1.0"
+      "p-forever" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

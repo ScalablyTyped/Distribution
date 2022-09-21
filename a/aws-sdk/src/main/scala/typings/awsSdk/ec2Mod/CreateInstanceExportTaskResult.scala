@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateInstanceExportTaskResult extends StObject {
   
   /**
-    * Information about the instance export task.
+    * Information about the export instance task.
     */
   var ExportTask: js.UndefOr[typings.awsSdk.ec2Mod.ExportTask] = js.undefined
 }

@@ -11,8 +11,19 @@ trait ConversationMember
   // The display name of the user.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The roles for that user.
+  /**
+    * The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member
+    * has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the
+    * roles property contains guest as one of the values. A basic member should not have any values specified in the roles
+    * property.
+    */
   var roles: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
+  /**
+    * The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is
+    * settable only for members of a chat.
+    */
+  var visibleHistoryStartDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ConversationMember {
   
@@ -35,6 +46,12 @@ object ConversationMember {
     
     inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
+    
+    inline def setVisibleHistoryStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "visibleHistoryStartDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleHistoryStartDateTimeNull: Self = StObject.set(x, "visibleHistoryStartDateTime", null)
+    
+    inline def setVisibleHistoryStartDateTimeUndefined: Self = StObject.set(x, "visibleHistoryStartDateTime", js.undefined)
   }
 }

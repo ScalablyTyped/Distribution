@@ -4,11 +4,8 @@ import typings.highland.Highland.MappingHint
 import typings.highland.Highland.Nil
 import typings.highland.Highland.OnFinished
 import typings.highland.Highland.Stream
-import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.Error
-import typings.std.Iterable
-import typings.std.Iterator
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,18 +120,18 @@ trait HighlandStatic extends StObject {
   def apply[R](source: js.Array[R]): Stream[R] = js.native
   def apply[R](
     source: js.Function2[
-      /* push */ js.Function2[/* err */ Error | Null, /* x */ js.UndefOr[R | Nil], Unit], 
+      /* push */ js.Function2[/* err */ js.Error | Null, /* x */ js.UndefOr[R | Nil], Unit], 
       /* next */ js.Function0[Unit], 
       Unit
     ]
   ): Stream[R] = js.native
+  def apply[R](source: js.Iterable[R]): Stream[R] = js.native
+  def apply[R](source: js.Iterator[R]): Stream[R] = js.native
   // moar (promise for everything?)
   def apply[R](source: js.Thenable[R | Stream[R]]): Stream[R] = js.native
   def apply[R](source: Stream[R]): Stream[R] = js.native
-  def apply[R](source: ReadableStream): Stream[R] = js.native
-  def apply[R](source: ReadableStream, onFinished: OnFinished): Stream[R] = js.native
-  def apply[R](source: Iterable[R]): Stream[R] = js.native
-  def apply[R](source: Iterator[R, js.Any, Unit]): Stream[R] = js.native
+  def apply[R](source: ReadableStream[Any]): Stream[R] = js.native
+  def apply[R](source: ReadableStream[Any], onFinished: OnFinished): Stream[R] = js.native
   
   def add(a: Double): js.Function1[/* b */ Double, Double] = js.native
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -181,7 +178,7 @@ trait HighlandStatic extends StObject {
     * @returns Function
     * @api public
     */
-  def curry(fn: js.Function, args: js.Any*): js.Function = js.native
+  def curry(fn: js.Function, args: Any*): js.Function = js.native
   
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // OBJECTS
@@ -214,7 +211,7 @@ trait HighlandStatic extends StObject {
     * @param y - parameter to apply to the left hand side of f
     * @api public
     */
-  def flip(fn: js.Function, args: js.Any*): js.Function = js.native
+  def flip(fn: js.Function, args: Any*): js.Function = js.native
   
   def get(prop: String): js.Function1[/* obj */ js.Object, js.Object] = js.native
   /**
@@ -253,11 +250,11 @@ trait HighlandStatic extends StObject {
     * @param x - the object to test
     * @api public
     */
-  def isStream(x: js.Any): /* is highland.Highland.Stream<any> */ Boolean = js.native
+  def isStream(x: Any): /* is highland.Highland.Stream<any> */ Boolean = js.native
   
-  def isStreamError(x: js.Any): /* is highland.Highland.Stream<any> */ Boolean = js.native
+  def isStreamError(x: Any): /* is highland.Highland.Stream<any> */ Boolean = js.native
   
-  def isStreamRedirect(x: js.Any): /* is highland.Highland.Stream<any> */ Boolean = js.native
+  def isStreamRedirect(x: Any): /* is highland.Highland.Stream<any> */ Boolean = js.native
   
   /**
     * Returns keys from an Object as a Stream.
@@ -280,7 +277,7 @@ trait HighlandStatic extends StObject {
     * @name _.log(args..)
     * @api public
     */
-  def log(x: js.Any, args: js.Any*): Unit = js.native
+  def log(x: Any, args: Any*): Unit = js.native
   
   /**
     * Same as `curry` but with a specific number of arguments. This can be
@@ -297,7 +294,7 @@ trait HighlandStatic extends StObject {
     * @returns Function
     * @api public
     */
-  def ncurry(n: Double, fn: js.Function, args: js.Any*): js.Function = js.native
+  def ncurry(n: Double, fn: js.Function, args: Any*): js.Function = js.native
   
   /**
     * The end of stream marker. This is sent along the data channel of a Stream
@@ -324,9 +321,9 @@ trait HighlandStatic extends StObject {
     * _.not(true)   // => false
     * _.not(false)  // => true
     */
-  def not[R](x: js.Any): Boolean = js.native
+  def not[R](x: Any): Boolean = js.native
   
-  def pairs(obj: js.Array[js.Any]): Stream[js.Array[js.Any]] = js.native
+  def pairs(obj: js.Array[Any]): Stream[js.Array[Any]] = js.native
   /**
     * Returns key/value pairs for an Object as a Stream. Reads properties
     * lazily, so if you don't read from all keys on an object, not
@@ -339,7 +336,7 @@ trait HighlandStatic extends StObject {
     * @param {Object} obj - the object to return key/value pairs from
     * @api public
     */
-  def pairs(obj: js.Object): Stream[js.Array[js.Any]] = js.native
+  def pairs(obj: js.Object): Stream[js.Array[Any]] = js.native
   
   /**
     * Partially applies the function (regardless of whether it has had curry
@@ -353,7 +350,7 @@ trait HighlandStatic extends StObject {
     * @param args... - the arguments to apply to the function
     * @api public
     */
-  def partial(fn: js.Function, args: js.Any*): js.Function = js.native
+  def partial(fn: js.Function, args: Any*): js.Function = js.native
   
   /**
     * The reversed version of compose. Where arguments are in the order of
@@ -366,7 +363,7 @@ trait HighlandStatic extends StObject {
     */
   def seq(functions: js.Function*): js.Function = js.native
   
-  def set(prop: String, `val`: js.Any): js.Function1[/* obj */ js.Object, js.Object] = js.native
+  def set(prop: String, `val`: Any): js.Function1[/* obj */ js.Object, js.Object] = js.native
   /**
     * Updates a property on an object, returning the updated object.
     *
@@ -378,7 +375,7 @@ trait HighlandStatic extends StObject {
     * @param {Object} obj - the object to set properties on
     * @api public
     */
-  def set(prop: String, `val`: js.Any, obj: js.Object): js.Object = js.native
+  def set(prop: String, `val`: Any, obj: js.Object): js.Object = js.native
   
   /**
     * Returns values from an Object as a Stream. Reads properties
@@ -392,7 +389,7 @@ trait HighlandStatic extends StObject {
     * @param {Object} obj - the object to return values from
     * @api public
     */
-  def values(obj: js.Object): Stream[js.Any] = js.native
+  def values(obj: js.Object): Stream[Any] = js.native
   
   /**
     * Wraps a node-style async function which accepts a callback, transforming
@@ -418,6 +415,6 @@ trait HighlandStatic extends StObject {
     * @param {Array | Function | Number} [mappingHint] - how to pass the arguments to the callback
     * @api public
     */
-  def wrapCallback(f: js.Function): js.Function1[/* repeated */ js.Any, Stream[js.Any]] = js.native
-  def wrapCallback(f: js.Function, mappingHint: MappingHint): js.Function1[/* repeated */ js.Any, Stream[js.Any]] = js.native
+  def wrapCallback(f: js.Function): js.Function1[/* repeated */ Any, Stream[Any]] = js.native
+  def wrapCallback(f: js.Function, mappingHint: MappingHint): js.Function1[/* repeated */ Any, Stream[Any]] = js.native
 }

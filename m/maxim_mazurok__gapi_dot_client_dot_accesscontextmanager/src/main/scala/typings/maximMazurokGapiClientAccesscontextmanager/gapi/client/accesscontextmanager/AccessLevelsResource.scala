@@ -9,6 +9,7 @@ import typings.maximMazurokGapiClientAccesscontextmanager.anon.Fields
 import typings.maximMazurokGapiClientAccesscontextmanager.anon.Key
 import typings.maximMazurokGapiClientAccesscontextmanager.anon.Name
 import typings.maximMazurokGapiClientAccesscontextmanager.anon.Oauthtoken
+import typings.maximMazurokGapiClientAccesscontextmanager.anon.PrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,37 +18,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessLevelsResource extends StObject {
   
   /**
-    * Create an Access Level. The longrunning operation from this RPC will have a successful status once the Access Level has propagated to long-lasting storage. Access Levels containing
-    * errors will result in an error response for the first error encountered.
+    * Creates an access level. The long-running operation from this RPC has a successful status after the access level propagates to long-lasting storage. If access levels contain errors,
+    * an error response is returned for the first error encountered.
     */
   def create(request: Accesstoken): Request[Operation] = js.native
   def create(request: Alt, body: AccessLevel): Request[Operation] = js.native
   
-  /** Delete an Access Level by resource name. The longrunning operation from this RPC will have a successful status once the Access Level has been removed from long-lasting storage. */
+  /**
+    * Deletes an access level based on the resource name. The long-running operation from this RPC has a successful status after the access level has been removed from long-lasting
+    * storage.
+    */
   def delete(): Request[Operation] = js.native
   def delete(request: Callback): Request[Operation] = js.native
   
-  /** Get an Access Level by resource name. */
+  /** Gets an access level based on the resource name. */
   def get(): Request[AccessLevel] = js.native
   def get(request: AccessLevelFormat): Request[AccessLevel] = js.native
   
-  /** List all Access Levels for an access policy. */
+  /** Lists all access levels for an access policy. */
   def list(): Request[ListAccessLevelsResponse] = js.native
   def list(request: Fields): Request[ListAccessLevelsResponse] = js.native
   
   /**
-    * Update an Access Level. The longrunning operation from this RPC will have a successful status once the changes to the Access Level have propagated to long-lasting storage. Access
-    * Levels containing errors will result in an error response for the first error encountered.
+    * Updates an access level. The long-running operation from this RPC has a successful status after the changes to the access level propagate to long-lasting storage. If access levels
+    * contain errors, an error response is returned for the first error encountered.
     */
   def patch(request: Key): Request[Operation] = js.native
   def patch(request: Name, body: AccessLevel): Request[Operation] = js.native
   
   def replaceAll(request: Alt, body: ReplaceAccessLevelsRequest): Request[Operation] = js.native
   /**
-    * Replace all existing Access Levels in an Access Policy with the Access Levels provided. This is done atomically. The longrunning operation from this RPC will have a successful
-    * status once all replacements have propagated to long-lasting storage. Replacements containing errors will result in an error response for the first error encountered. Replacement
-    * will be cancelled on error, existing Access Levels will not be affected. Operation.response field will contain ReplaceAccessLevelsResponse. Removing Access Levels contained in
-    * existing Service Perimeters will result in error.
+    * Replaces all existing access levels in an access policy with the access levels provided. This is done atomically. The long-running operation from this RPC has a successful status
+    * after all replacements propagate to long-lasting storage. If the replacement contains errors, an error response is returned for the first error encountered. Upon error, the
+    * replacement is cancelled, and existing access levels are not affected. The Operation.response field contains ReplaceAccessLevelsResponse. Removing access levels contained in
+    * existing service perimeters result in an error.
     */
   def replaceAll(request: Oauthtoken): Request[Operation] = js.native
+  
+  /**
+    * Returns the IAM permissions that the caller has on the specified Access Context Manager resource. The resource can be an AccessPolicy, AccessLevel, or ServicePerimeter. This method
+    * does not support other resources.
+    */
+  def testIamPermissions(request: PrettyPrint, body: TestIamPermissionsRequest): Request[TestIamPermissionsResponse] = js.native
 }

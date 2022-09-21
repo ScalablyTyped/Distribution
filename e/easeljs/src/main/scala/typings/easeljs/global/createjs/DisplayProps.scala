@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.DisplayProps")
 @js.native
-class DisplayProps ()
+open class DisplayProps ()
   extends StObject
      with typings.easeljs.createjs.DisplayProps {
   def this(visible: Double) = this()

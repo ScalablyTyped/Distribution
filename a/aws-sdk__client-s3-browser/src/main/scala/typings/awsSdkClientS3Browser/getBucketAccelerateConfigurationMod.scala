@@ -8,5 +8,5 @@ object getBucketAccelerateConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetBucketAccelerateConfiguration", "GetBucketAccelerateConfiguration")
   @js.native
-  val GetBucketAccelerateConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetBucketAccelerateConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

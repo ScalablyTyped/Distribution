@@ -24,9 +24,10 @@ trait CoursesResource extends StObject {
   var courseWorkMaterials: CourseWorkMaterialsResource = js.native
   
   /**
-    * Creates a course. The user specified in `ownerId` is the owner of the created course and added as a teacher. This method returns the following error codes: * `PERMISSION_DENIED` if
-    * the requesting user is not permitted to create courses or for access errors. * `NOT_FOUND` if the primary teacher is not a valid user. * `FAILED_PRECONDITION` if the course owner's
-    * account is disabled or for the following request errors: * UserGroupsMembershipLimitReached * `ALREADY_EXISTS` if an alias was specified in the `id` and already exists.
+    * Creates a course. The user specified in `ownerId` is the owner of the created course and added as a teacher. A non-admin requesting user can only create a course with themselves as
+    * the owner. Domain admins can create courses owned by any user within their domain. This method returns the following error codes: * `PERMISSION_DENIED` if the requesting user is not
+    * permitted to create courses or for access errors. * `NOT_FOUND` if the primary teacher is not a valid user. * `FAILED_PRECONDITION` if the course owner's account is disabled or for
+    * the following request errors: * UserGroupsMembershipLimitReached * `ALREADY_EXISTS` if an alias was specified in the `id` and already exists.
     */
   def create(request: CallbackFields): Request[Course] = js.native
   def create(request: OauthtokenPrettyPrint, body: Course): Request[Course] = js.native
@@ -56,7 +57,7 @@ trait CoursesResource extends StObject {
   /**
     * Updates one or more fields in a course. This method returns the following error codes: * `PERMISSION_DENIED` if the requesting user is not permitted to modify the requested course
     * or for access errors. * `NOT_FOUND` if no course exists with the requested ID. * `INVALID_ARGUMENT` if invalid fields are specified in the update mask or if no update mask is
-    * supplied. * `FAILED_PRECONDITION` for the following request errors: * CourseNotModifiable
+    * supplied. * `FAILED_PRECONDITION` for the following request errors: * CourseNotModifiable * InactiveCourseOwner
     */
   def patch(request: PrettyPrintQuotaUser): Request[Course] = js.native
   def patch(request: QuotaUserUpdateMask, body: Course): Request[Course] = js.native

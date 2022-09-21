@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkspaceAccessProperties extends StObject {
   
   /**
-    * Indicates whether users can use Android devices to access their WorkSpaces.
+    * Indicates whether users can use Android and Android-compatible Chrome OS devices to access their WorkSpaces.
     */
   var DeviceTypeAndroid: js.UndefOr[AccessPropertyValue] = js.undefined
   
@@ -22,7 +22,12 @@ trait WorkspaceAccessProperties extends StObject {
   var DeviceTypeIos: js.UndefOr[AccessPropertyValue] = js.undefined
   
   /**
-    * Indicates whether users can use macOS clients to access their WorkSpaces. To restrict WorkSpaces access to trusted devices (also known as managed devices) with valid certificates, specify a value of TRUST. For more information, see Restrict WorkSpaces Access to Trusted Devices. 
+    * Indicates whether users can use Linux clients to access their WorkSpaces.
+    */
+  var DeviceTypeLinux: js.UndefOr[AccessPropertyValue] = js.undefined
+  
+  /**
+    * Indicates whether users can use macOS clients to access their WorkSpaces.
     */
   var DeviceTypeOsx: js.UndefOr[AccessPropertyValue] = js.undefined
   
@@ -32,7 +37,7 @@ trait WorkspaceAccessProperties extends StObject {
   var DeviceTypeWeb: js.UndefOr[AccessPropertyValue] = js.undefined
   
   /**
-    * Indicates whether users can use Windows clients to access their WorkSpaces. To restrict WorkSpaces access to trusted devices (also known as managed devices) with valid certificates, specify a value of TRUST. For more information, see Restrict WorkSpaces Access to Trusted Devices. 
+    * Indicates whether users can use Windows clients to access their WorkSpaces.
     */
   var DeviceTypeWindows: js.UndefOr[AccessPropertyValue] = js.undefined
   
@@ -61,6 +66,10 @@ object WorkspaceAccessProperties {
     inline def setDeviceTypeIos(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeIos", value.asInstanceOf[js.Any])
     
     inline def setDeviceTypeIosUndefined: Self = StObject.set(x, "DeviceTypeIos", js.undefined)
+    
+    inline def setDeviceTypeLinux(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeLinux", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceTypeLinuxUndefined: Self = StObject.set(x, "DeviceTypeLinux", js.undefined)
     
     inline def setDeviceTypeOsx(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeOsx", value.asInstanceOf[js.Any])
     

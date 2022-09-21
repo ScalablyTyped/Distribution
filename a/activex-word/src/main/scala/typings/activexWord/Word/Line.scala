@@ -16,7 +16,7 @@ trait Line extends StObject {
   
   val LineType: WdLineType
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -37,7 +37,7 @@ object Line {
     Height: Double,
     Left: Double,
     LineType: WdLineType,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     Rectangles: Rectangles,
     Top: Double,
@@ -61,7 +61,7 @@ object Line {
     
     inline def setLineType(value: WdLineType): Self = StObject.set(x, "LineType", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

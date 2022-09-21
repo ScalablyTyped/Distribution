@@ -27,8 +27,20 @@ object tampermonkeyStrings {
   inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
+  sealed trait browser extends StObject
+  inline def browser: browser = "browser".asInstanceOf[browser]
+  
+  @js.native
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @js.native
   sealed trait json extends StObject
   inline def json: json = "json".asInstanceOf[json]
+  
+  @js.native
+  sealed trait native extends StObject
+  inline def native: native = "native".asInstanceOf[native]
   
   @js.native
   sealed trait not_enabled extends StObject

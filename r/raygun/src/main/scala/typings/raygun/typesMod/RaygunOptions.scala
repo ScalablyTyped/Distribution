@@ -1,6 +1,5 @@
 package typings.raygun.typesMod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,6 +32,8 @@ trait RaygunOptions extends StObject {
   
   var reportColumnNumbers: js.UndefOr[Boolean] = js.undefined
   
+  var reportUncaughtExceptions: js.UndefOr[Boolean] = js.undefined
+  
   var tags: js.UndefOr[js.Array[Tag]] = js.undefined
   
   var useHumanStringForObject: js.UndefOr[Boolean] = js.undefined
@@ -62,10 +63,10 @@ object RaygunOptions {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setGroupingKey(
-      value: (/* message */ Message, /* exception */ Error | String, /* customData */ CustomData, /* request */ js.UndefOr[RequestParams], /* tags */ js.UndefOr[js.Array[Tag]]) => String
+      value: (/* message */ Message, /* exception */ js.Error | String, /* customData */ CustomData, /* request */ js.UndefOr[RequestParams], /* tags */ js.UndefOr[js.Array[Tag]]) => String
     ): Self = StObject.set(x, "groupingKey", js.Any.fromFunction5(value))
     
     inline def setGroupingKeyUndefined: Self = StObject.set(x, "groupingKey", js.undefined)
@@ -91,7 +92,7 @@ object RaygunOptions {
     inline def setOfflineStorageUndefined: Self = StObject.set(x, "offlineStorage", js.undefined)
     
     inline def setOnBeforeSend(
-      value: (/* message */ Message, /* exception */ Error | String, /* customData */ CustomData, /* request */ js.UndefOr[RequestParams], /* tags */ js.UndefOr[js.Array[Tag]]) => Message
+      value: (/* message */ Message, /* exception */ js.Error | String, /* customData */ CustomData, /* request */ js.UndefOr[RequestParams], /* tags */ js.UndefOr[js.Array[Tag]]) => Message
     ): Self = StObject.set(x, "onBeforeSend", js.Any.fromFunction5(value))
     
     inline def setOnBeforeSendUndefined: Self = StObject.set(x, "onBeforeSend", js.undefined)
@@ -104,11 +105,15 @@ object RaygunOptions {
     
     inline def setReportColumnNumbersUndefined: Self = StObject.set(x, "reportColumnNumbers", js.undefined)
     
+    inline def setReportUncaughtExceptions(value: Boolean): Self = StObject.set(x, "reportUncaughtExceptions", value.asInstanceOf[js.Any])
+    
+    inline def setReportUncaughtExceptionsUndefined: Self = StObject.set(x, "reportUncaughtExceptions", js.undefined)
+    
     inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUseHumanStringForObject(value: Boolean): Self = StObject.set(x, "useHumanStringForObject", value.asInstanceOf[js.Any])
     

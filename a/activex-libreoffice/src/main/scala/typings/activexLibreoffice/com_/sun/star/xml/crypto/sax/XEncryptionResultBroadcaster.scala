@@ -36,7 +36,7 @@ object XEncryptionResultBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addEncryptionResultListener: XEncryptionResultListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEncryptionResultListener: XEncryptionResultListener => Unit
   ): XEncryptionResultBroadcaster = {

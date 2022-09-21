@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.WebGLProperties")
 @js.native
-class WebGLProperties ()
+open class WebGLProperties ()
   extends typings.three.mod.WebGLProperties

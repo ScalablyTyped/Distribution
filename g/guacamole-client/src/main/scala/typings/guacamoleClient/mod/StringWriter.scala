@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "StringWriter")
 @js.native
-class StringWriter protected ()
+open class StringWriter protected ()
   extends typings.guacamoleClient.stringWriterMod.StringWriter {
   /**
     * @param stream The stream that data will be written to.

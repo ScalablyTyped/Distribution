@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TimeUnitTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
@@ -65,6 +65,6 @@ object TimeUnitTransform {
     
     inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    inline def setUnitsVarargs(value: (TimeUnit | SignalRef)*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: (TimeUnit | SignalRef)*): Self = StObject.set(x, "units", js.Array(value*))
   }
 }

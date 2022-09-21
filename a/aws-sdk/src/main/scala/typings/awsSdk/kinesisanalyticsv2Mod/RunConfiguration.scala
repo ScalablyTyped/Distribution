@@ -42,6 +42,6 @@ object RunConfiguration {
     
     inline def setSqlRunConfigurationsUndefined: Self = StObject.set(x, "SqlRunConfigurations", js.undefined)
     
-    inline def setSqlRunConfigurationsVarargs(value: SqlRunConfiguration*): Self = StObject.set(x, "SqlRunConfigurations", js.Array(value :_*))
+    inline def setSqlRunConfigurationsVarargs(value: SqlRunConfiguration*): Self = StObject.set(x, "SqlRunConfigurations", js.Array(value*))
   }
 }

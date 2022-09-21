@@ -11,9 +11,9 @@ Event handler written in Typescript.
 | Full name          | typescript-event-handler |
 | Keywords           | Typescript, Events |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 160 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 19.333333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/typescript-event-handler)

@@ -5,14 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transformer
-  extends TransformCallback
-     with _AcceptedPlugin {
+trait Transformer extends TransformCallback {
   
-  /* InferMemberOverrides */
-  override def apply(arg1: /* root */ Root_, arg2: /* result */ Result): js.Promise[js.Any] | js.Any = js.native
+  var postcssPlugin: String = js.native
   
-  var postcssPlugin: js.UndefOr[String] = js.native
-  
-  var postcssVersion: js.UndefOr[String] = js.native
+  var postcssVersion: String = js.native
 }

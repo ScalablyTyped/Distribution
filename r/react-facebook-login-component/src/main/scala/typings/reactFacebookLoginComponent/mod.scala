@@ -11,14 +11,14 @@ object mod {
   
   @JSImport("react-facebook-login-component", "FacebookLogin")
   @js.native
-  class FacebookLogin protected ()
-    extends Component[FacebookLoginProps, js.Object, js.Any] {
+  open class FacebookLogin protected ()
+    extends Component[FacebookLoginProps, js.Object, Any] {
     def this(props: FacebookLoginProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FacebookLoginProps, context: js.Any) = this()
+    def this(props: FacebookLoginProps, context: Any) = this()
   }
   
   trait FacebookLoginInfo extends StObject {

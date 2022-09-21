@@ -9,7 +9,7 @@ object tabBarIndexNativeMod {
   /* was `typeof TabBarIOS` */
   @JSImport("antd-mobile-rn/lib/tab-bar/index.native", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antdMobileRn.tabbarIosMod.default
   /* was `typeof TabBarIOS` */
   object default {
@@ -21,8 +21,8 @@ object tabBarIndexNativeMod {
     /* static member */
     @JSImport("antd-mobile-rn/lib/tab-bar/index.native", "default.Item")
     @js.native
-    def Item: js.Any = js.native
-    inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: Any = js.native
+    inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {

@@ -12,7 +12,7 @@ trait Email extends StObject {
   
   val CurrentEmailAuthor: EmailAuthor
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Email_typekey")
   var WordDotEmail_typekey: Email
@@ -23,7 +23,7 @@ object Email {
     Application: Application,
     Creator: Double,
     CurrentEmailAuthor: EmailAuthor,
-    Parent: js.Any,
+    Parent: Any,
     WordDotEmail_typekey: Email
   ): Email = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], CurrentEmailAuthor = CurrentEmailAuthor.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object Email {
     
     inline def setCurrentEmailAuthor(value: EmailAuthor): Self = StObject.set(x, "CurrentEmailAuthor", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotEmail_typekey(value: Email): Self = StObject.set(x, "Word.Email_typekey", value.asInstanceOf[js.Any])
   }

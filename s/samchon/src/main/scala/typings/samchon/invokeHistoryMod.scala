@@ -2,7 +2,6 @@ package typings.samchon
 
 import typings.samchon.entityMod.Entity
 import typings.samchon.invokeMod.Invoke
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object invokeHistoryMod {
   /**
     * Default Constructor.
     */
-  class InvokeHistory () extends Entity {
+  open class InvokeHistory () extends Entity {
     /**
       * Construct from an {@link Invoke} message.
       *
@@ -39,12 +38,12 @@ object invokeHistoryMod {
     /**
       * @hidden
       */
-    /* private */ var end_time_ : js.Any = js.native
+    /* private */ var end_time_ : Any = js.native
     
     /**
       * Get end time.
       */
-    def getEndTime(): Date = js.native
+    def getEndTime(): js.Date = js.native
     
     /**
       * Get {@link Invoke.getListener listener} of the {@link Invoke} message.
@@ -54,7 +53,7 @@ object invokeHistoryMod {
     /**
       * Get start time.
       */
-    def getStartTime(): Date = js.native
+    def getStartTime(): js.Date = js.native
     
     /**
       * Get unique ID.
@@ -64,12 +63,12 @@ object invokeHistoryMod {
     /**
       * @hidden
       */
-    /* private */ var listener: js.Any = js.native
+    /* private */ var listener: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var start_time_ : js.Any = js.native
+    /* private */ var start_time_ : Any = js.native
     
     /**
       * Convert to an {@link Invoke} message.
@@ -81,6 +80,6 @@ object invokeHistoryMod {
     /**
       * @hidden
       */
-    /* private */ var uid: js.Any = js.native
+    /* private */ var uid: Any = js.native
   }
 }

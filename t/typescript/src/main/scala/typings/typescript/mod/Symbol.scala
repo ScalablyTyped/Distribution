@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Symbol extends StObject {
   
-  var declarations: js.Array[Declaration] = js.native
+  var declarations: js.UndefOr[js.Array[Declaration]] = js.native
   
   var escapedName: String = js.native
   
@@ -25,6 +25,7 @@ trait Symbol extends StObject {
   def getFlags(): SymbolFlags = js.native
   
   def getJsDocTags(): js.Array[JSDocTagInfo] = js.native
+  def getJsDocTags(checker: TypeChecker): js.Array[JSDocTagInfo] = js.native
   
   def getName(): java.lang.String = js.native
   
@@ -34,5 +35,5 @@ trait Symbol extends StObject {
   
   val name: java.lang.String = js.native
   
-  var valueDeclaration: Declaration = js.native
+  var valueDeclaration: js.UndefOr[Declaration] = js.native
 }

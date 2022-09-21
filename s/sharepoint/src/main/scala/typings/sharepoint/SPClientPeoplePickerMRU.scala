@@ -16,7 +16,7 @@ trait SPClientPeoplePickerMRU extends StObject {
 }
 object SPClientPeoplePickerMRU {
   
-  inline def apply(GetItems: String => Dictname, ResetCache: () => Unit, SetItem: (String, js.Any) => Unit): SPClientPeoplePickerMRU = {
+  inline def apply(GetItems: String => Dictname, ResetCache: () => Unit, SetItem: (String, Any) => Unit): SPClientPeoplePickerMRU = {
     val __obj = js.Dynamic.literal(GetItems = js.Any.fromFunction1(GetItems), ResetCache = js.Any.fromFunction0(ResetCache), SetItem = js.Any.fromFunction2(SetItem))
     __obj.asInstanceOf[SPClientPeoplePickerMRU]
   }
@@ -27,6 +27,6 @@ object SPClientPeoplePickerMRU {
     
     inline def setResetCache(value: () => Unit): Self = StObject.set(x, "ResetCache", js.Any.fromFunction0(value))
     
-    inline def setSetItem(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetItem", js.Any.fromFunction2(value))
+    inline def setSetItem(value: (String, Any) => Unit): Self = StObject.set(x, "SetItem", js.Any.fromFunction2(value))
   }
 }

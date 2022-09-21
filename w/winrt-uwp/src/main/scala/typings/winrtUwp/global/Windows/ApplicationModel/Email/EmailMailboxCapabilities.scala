@@ -24,15 +24,15 @@ abstract class EmailMailboxCapabilities ()
   var canEmptyFolder: Boolean = js.native
   
   /* CompleteClass */
-  var canForwardMeetings: js.Any = js.native
+  var canForwardMeetings: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var canGetAndSetExternalAutoReplies: js.Any = js.native
+  var canGetAndSetExternalAutoReplies: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var canGetAndSetInternalAutoReplies: js.Any = js.native
+  var canGetAndSetInternalAutoReplies: Any = js.native
   
   /* unmapped type */
   /** Gets a Boolean value indicating if folders in the mailbox can be moved. */
@@ -40,7 +40,7 @@ abstract class EmailMailboxCapabilities ()
   var canMoveFolder: Boolean = js.native
   
   /* CompleteClass */
-  var canProposeNewTimeForMeetings: js.Any = js.native
+  var canProposeNewTimeForMeetings: Any = js.native
   
   /* unmapped type */
   /** Gets a Boolean value that indicates whether the email mailbox is capable of resolving recipients. */
@@ -48,19 +48,19 @@ abstract class EmailMailboxCapabilities ()
   var canResolveRecipients: Boolean = js.native
   
   /* CompleteClass */
-  var canServerSearchFolders: js.Any = js.native
+  var canServerSearchFolders: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var canServerSearchMailbox: js.Any = js.native
+  var canServerSearchMailbox: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var canSmartSend: js.Any = js.native
+  var canSmartSend: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var canUpdateMeetingResponses: js.Any = js.native
+  var canUpdateMeetingResponses: Any = js.native
   
   /* unmapped type */
   /** Gets a Boolean value that indicates whether the email mailbox is capable of validating certificates. */

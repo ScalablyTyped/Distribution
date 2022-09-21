@@ -8,10 +8,13 @@ trait RTCOfferOptions
   extends StObject
      with RTCOfferAnswerOptions {
   
+  /* standard dom */
   var iceRestart: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var offerToReceiveAudio: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var offerToReceiveVideo: js.UndefOr[scala.Boolean] = js.undefined
 }
 object RTCOfferOptions {

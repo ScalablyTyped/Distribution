@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler extends StObject {
   
-  def apply[T](windowTimeSpan: Double): js.Any = js.native
+  def apply[T](windowTimeSpan: Double): Any = js.native
   def apply[T](
     windowTimeSpan: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  def apply[T](windowTimeSpan: Double, windowCreationInterval: Double): js.Any = js.native
-  def apply[T](windowTimeSpan: Double, windowCreationInterval: Double, maxWindowSize: Double): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
+  def apply[T](windowTimeSpan: Double, windowCreationInterval: Double): Any = js.native
+  def apply[T](windowTimeSpan: Double, windowCreationInterval: Double, maxWindowSize: Double): Any = js.native
   def apply[T](
     windowTimeSpan: Double,
     windowCreationInterval: Double,
     maxWindowSize: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
   def apply[T](
     windowTimeSpan: Double,
     windowCreationInterval: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
 }

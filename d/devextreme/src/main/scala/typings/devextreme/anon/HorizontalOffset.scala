@@ -1,8 +1,5 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.ellipsis
-import typings.devextreme.devextremeStrings.hide
-import typings.devextreme.devextremeStrings.none
 import typings.devextreme.mod.DevExpress.viz.dxSankeyNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,22 +7,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HorizontalOffset extends StObject {
   
+  /**
+    * Configures the labels&apos; borders.
+    */
   var border: js.UndefOr[ColorVisible] = js.undefined
   
+  /**
+    * Customizes the labels&apos; texts.
+    */
   var customizeText: js.UndefOr[js.Function1[/* itemInfo */ dxSankeyNode, String]] = js.undefined
   
+  /**
+    * Specifies the labels&apos; font properties.
+    */
   var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
+  /**
+    * Moves the labels horizontally from their initial positions.
+    */
   var horizontalOffset: js.UndefOr[Double] = js.undefined
   
-  var overlappingBehavior: js.UndefOr[ellipsis | hide | none] = js.undefined
+  /**
+    * Specifies how to arrange labels when there is insufficient space to display them all.
+    */
+  var overlappingBehavior: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.TextOverflow] = js.undefined
   
+  /**
+    * Configures the labels&apos; shadows.
+    */
   var shadow: js.UndefOr[Blur] = js.undefined
   
+  /**
+    * Specifies whether to color labels in the nodes&apos; colors.
+    */
   var useNodeColors: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Moves the labels vertically from their initial positions.
+    */
   var verticalOffset: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies whether the labels are visible.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object HorizontalOffset {
@@ -53,7 +77,7 @@ object HorizontalOffset {
     
     inline def setHorizontalOffsetUndefined: Self = StObject.set(x, "horizontalOffset", js.undefined)
     
-    inline def setOverlappingBehavior(value: ellipsis | hide | none): Self = StObject.set(x, "overlappingBehavior", value.asInstanceOf[js.Any])
+    inline def setOverlappingBehavior(value: typings.devextreme.mod.DevExpress.common.charts.TextOverflow): Self = StObject.set(x, "overlappingBehavior", value.asInstanceOf[js.Any])
     
     inline def setOverlappingBehaviorUndefined: Self = StObject.set(x, "overlappingBehavior", js.undefined)
     

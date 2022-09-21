@@ -8,7 +8,7 @@ import typings.blueprintjsDatetime.timeUnitMod.TimeUnit
 import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
-import typings.std.Date
+import typings.std.Element
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,49 +18,52 @@ object timePickerMod {
   
   @JSImport("@blueprintjs/datetime/lib/esm/timePicker", "TimePicker")
   @js.native
-  class TimePicker ()
-    extends Component[ITimePickerProps, ITimePickerState, js.Any] {
-    def this(props: ITimePickerProps) = this()
-    def this(props: Unit, context: js.Any) = this()
-    def this(props: ITimePickerProps, context: js.Any) = this()
+  open class TimePicker () extends Component[TimePickerProps, ITimePickerState, Any] {
+    def this(props: TimePickerProps) = this()
+    def this(props: Unit, context: Any) = this()
+    def this(props: TimePickerProps, context: Any) = this()
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MTimePicker(prevProps: ITimePickerProps): Unit = js.native
+    def componentDidUpdate_MTimePicker(prevProps: TimePickerProps): Unit = js.native
     
-    /* private */ var decrementTime: js.Any = js.native
+    /* private */ var decrementTime: Any = js.native
     
     /**
       * Generates a full ITimePickerState object with all text fields set to formatted strings based on value
       */
-    /* private */ var getFullStateFromValue: js.Any = js.native
+    /* private */ var getFullStateFromValue: Any = js.native
     
-    /* private */ var getInputBlurHandler: js.Any = js.native
+    /* private */ var getInitialValue: Any = js.native
     
-    /* private */ var getInputChangeHandler: js.Any = js.native
+    /* private */ var getInputBlurHandler: Any = js.native
     
-    /* private */ var getInputFocusHandler: js.Any = js.native
+    /* private */ var getInputChangeHandler: Any = js.native
     
-    /* private */ var getInputKeyDownHandler: js.Any = js.native
+    /* private */ var getInputFocusHandler: Any = js.native
     
-    /* private */ var getInputKeyUpHandler: js.Any = js.native
+    /* private */ var getInputKeyDownHandler: Any = js.native
     
-    /* private */ var handleAmPmChange: js.Any = js.native
+    /* private */ var getInputKeyUpHandler: Any = js.native
     
-    /* private */ var incrementTime: js.Any = js.native
+    /* private */ var handleAmPmChange: Any = js.native
     
-    /* private */ var maybeRenderAmPm: js.Any = js.native
+    /* private */ var incrementTime: Any = js.native
     
-    /* private */ var maybeRenderArrowButton: js.Any = js.native
+    /* private */ var maybeRenderAmPm: Any = js.native
     
-    /* private */ var renderDivider: js.Any = js.native
+    /* private */ var maybeRenderArrowButton: Any = js.native
     
-    /* private */ var renderInput: js.Any = js.native
+    /* private */ var renderDivider: Any = js.native
     
-    /* private */ var shiftTime: js.Any = js.native
+    /* private */ var renderInput: Any = js.native
     
-    /* private */ var updateState: js.Any = js.native
+    /* private */ var shiftTime: Any = js.native
     
-    /* private */ var updateTime: js.Any = js.native
+    /* private */ var timeInputIds: Any = js.native
+    
+    /* private */ var updateState: Any = js.native
+    
+    /* private */ var updateTime: Any = js.native
   }
   /* static members */
   object TimePicker {
@@ -71,8 +74,8 @@ object timePickerMod {
     
     @JSImport("@blueprintjs/datetime/lib/esm/timePicker", "TimePicker.defaultProps")
     @js.native
-    def defaultProps: ITimePickerProps = js.native
-    inline def defaultProps_=(x: ITimePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: TimePickerProps = js.native
+    inline def defaultProps_=(x: TimePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/timePicker", "TimePicker.displayName")
     @js.native
@@ -115,6 +118,7 @@ object timePickerMod {
     
     /**
       * Whether to focus the first input when it opens initially.
+      *
       * @default false
       */
     var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -123,10 +127,11 @@ object timePickerMod {
       * Initial time the `TimePicker` will display.
       * This should not be set if `value` is set.
       */
-    var defaultValue: js.UndefOr[Date] = js.undefined
+    var defaultValue: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Whether the time picker is non-interactive.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.undefined
@@ -138,7 +143,7 @@ object timePickerMod {
       * This is useful, for example, to express a time range that extends before and after midnight.
       * If the `maxTime` and `minTime` are equal, then the valid time range is constrained to only that one value.
       */
-    var maxTime: js.UndefOr[Date] = js.undefined
+    var maxTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The earliest time the user can select. The year, month, and day parts of the `Date` object are ignored.
@@ -147,25 +152,25 @@ object timePickerMod {
       * This is useful, for example, to express a time range that extends before and after midnight.
       * If the `maxTime` and `minTime` are equal, then the valid time range is constrained to only that one value.
       */
-    var minTime: js.UndefOr[Date] = js.undefined
+    var minTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Callback invoked on blur event emitted by specific time unit input
       */
     var onBlur: js.UndefOr[
-        js.Function2[/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit, Unit]
+        js.Function2[/* event */ FocusEvent[HTMLInputElement, Element], /* unit */ TimeUnit, Unit]
       ] = js.undefined
     
     /**
       * Callback invoked when the user changes the time.
       */
-    var onChange: js.UndefOr[js.Function1[/* newTime */ Date, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* newTime */ js.Date, Unit]] = js.undefined
     
     /**
       * Callback invoked on focus event emitted by specific time unit input
       */
     var onFocus: js.UndefOr[
-        js.Function2[/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit, Unit]
+        js.Function2[/* event */ FocusEvent[HTMLInputElement, Element], /* unit */ TimeUnit, Unit]
       ] = js.undefined
     
     /**
@@ -184,24 +189,28 @@ object timePickerMod {
     
     /**
       * The precision of time the user can set.
+      *
       * @default TimePrecision.MINUTE
       */
     var precision: js.UndefOr[TimePrecision] = js.undefined
     
     /**
       * Whether all the text in each input should be selected on focus.
+      *
       * @default false
       */
     var selectAllOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show arrows buttons for changing the time.
+      *
       * @default false
       */
     var showArrowButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to use a 12 hour format with an AM/PM dropdown.
+      *
       * @default false
       */
     var useAmPm: js.UndefOr[Boolean] = js.undefined
@@ -210,7 +219,7 @@ object timePickerMod {
       * The currently set time.
       * If this prop is provided, the component acts in a controlled manner.
       */
-    var value: js.UndefOr[Date | Null] = js.undefined
+    var value: js.UndefOr[js.Date | Null] = js.undefined
   }
   object ITimePickerProps {
     
@@ -225,7 +234,7 @@ object timePickerMod {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -233,23 +242,23 @@ object timePickerMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setMaxTime(value: Date): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
+      inline def setMaxTime(value: js.Date): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
       
       inline def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
       
-      inline def setMinTime(value: Date): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
+      inline def setMinTime(value: js.Date): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
       
       inline def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
       
-      inline def setOnBlur(value: (/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
+      inline def setOnBlur(value: (/* event */ FocusEvent[HTMLInputElement, Element], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: /* newTime */ Date => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* newTime */ js.Date => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnFocus(value: (/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (/* event */ FocusEvent[HTMLInputElement, Element], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -277,7 +286,7 @@ object timePickerMod {
       
       inline def setUseAmPmUndefined: Self = StObject.set(x, "useAmPm", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
@@ -297,7 +306,7 @@ object timePickerMod {
     
     var secondText: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Date] = js.undefined
+    var value: js.UndefOr[js.Date] = js.undefined
   }
   object ITimePickerState {
     
@@ -328,9 +337,11 @@ object timePickerMod {
       
       inline def setSecondTextUndefined: Self = StObject.set(x, "secondText", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
+  
+  type TimePickerProps = ITimePickerProps
 }

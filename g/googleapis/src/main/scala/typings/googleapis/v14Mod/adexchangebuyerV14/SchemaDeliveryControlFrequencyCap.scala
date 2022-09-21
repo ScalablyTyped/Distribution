@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaDeliveryControlFrequencyCap extends StObject {
   
-  var maxImpressions: js.UndefOr[Double] = js.undefined
+  var maxImpressions: js.UndefOr[Double | Null] = js.undefined
   
-  var numTimeUnits: js.UndefOr[Double] = js.undefined
+  var numTimeUnits: js.UndefOr[Double | Null] = js.undefined
   
-  var timeUnitType: js.UndefOr[String] = js.undefined
+  var timeUnitType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDeliveryControlFrequencyCap {
   
@@ -23,13 +23,19 @@ object SchemaDeliveryControlFrequencyCap {
     
     inline def setMaxImpressions(value: Double): Self = StObject.set(x, "maxImpressions", value.asInstanceOf[js.Any])
     
+    inline def setMaxImpressionsNull: Self = StObject.set(x, "maxImpressions", null)
+    
     inline def setMaxImpressionsUndefined: Self = StObject.set(x, "maxImpressions", js.undefined)
     
     inline def setNumTimeUnits(value: Double): Self = StObject.set(x, "numTimeUnits", value.asInstanceOf[js.Any])
     
+    inline def setNumTimeUnitsNull: Self = StObject.set(x, "numTimeUnits", null)
+    
     inline def setNumTimeUnitsUndefined: Self = StObject.set(x, "numTimeUnits", js.undefined)
     
     inline def setTimeUnitType(value: String): Self = StObject.set(x, "timeUnitType", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUnitTypeNull: Self = StObject.set(x, "timeUnitType", null)
     
     inline def setTimeUnitTypeUndefined: Self = StObject.set(x, "timeUnitType", js.undefined)
   }

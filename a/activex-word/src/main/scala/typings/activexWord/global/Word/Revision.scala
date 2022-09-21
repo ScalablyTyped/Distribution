@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Revision")
 @js.native
-/* private */ class Revision ()
+/* private */ open class Revision ()
   extends StObject
      with typings.activexWord.Word.Revision {
   
@@ -40,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val MovedRange: typings.activexWord.Word.Range = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Range: typings.activexWord.Word.Range = js.native

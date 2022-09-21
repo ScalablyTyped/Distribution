@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelfManagedActiveDirectoryAttributes extends StObject {
   
   /**
-    * A list of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory.
+    * A list of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.
     */
   var DnsIps: js.UndefOr[typings.awsSdk.fsxMod.DnsIps] = js.undefined
   
@@ -22,7 +22,7 @@ trait SelfManagedActiveDirectoryAttributes extends StObject {
   var FileSystemAdministratorsGroup: js.UndefOr[FileSystemAdministratorsGroupName] = js.undefined
   
   /**
-    * The fully qualified distinguished name of the organizational unit within the self-managed AD directory to which the Windows File Server instance is joined.
+    * The fully qualified distinguished name of the organizational unit within the self-managed AD directory to which the Windows File Server or ONTAP storage virtual machine (SVM) instance is joined.
     */
   var OrganizationalUnitDistinguishedName: js.UndefOr[typings.awsSdk.fsxMod.OrganizationalUnitDistinguishedName] = js.undefined
   
@@ -44,7 +44,7 @@ object SelfManagedActiveDirectoryAttributes {
     
     inline def setDnsIpsUndefined: Self = StObject.set(x, "DnsIps", js.undefined)
     
-    inline def setDnsIpsVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIps", js.Array(value :_*))
+    inline def setDnsIpsVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIps", js.Array(value*))
     
     inline def setDomainName(value: ActiveDirectoryFullyQualifiedName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

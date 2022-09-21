@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 覆盖物集合
   * @param overlays 覆盖物
   */
-class OverlayGroup[O /* <: typings.amapJsApi.AMap.Overlay[js.Any] */, ExtraData] ()
+open class OverlayGroup[O /* <: typings.amapJsApi.AMap.Overlay[Any] */, ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.OverlayGroup[O, ExtraData] {
   def this(overlays: O) = this()

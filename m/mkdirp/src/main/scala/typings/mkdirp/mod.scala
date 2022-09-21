@@ -1,16 +1,20 @@
 package typings.mkdirp
 
 import typings.mkdirp.anon.FnCall
-import typings.mkdirp.anon.FnCallPathOptions
 import typings.mkdirp.anon.Typeofmkdir
 import typings.mkdirp.anon.Typeofstat
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
-import typings.node.fsMod.BigIntOptions
+import typings.node.anon.StatSyncOptionsbigintbool
+import typings.node.anon.StatSyncOptionsbigintfals
+import typings.node.anon.StatSyncOptionsbigintfalsBigint
+import typings.node.anon.StatSyncOptionsbiginttrue
+import typings.node.anon.StatSyncOptionsbiginttrueBigint
 import typings.node.fsMod.BigIntStats
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.PathLike
-import typings.node.fsMod.StatOptions
+import typings.node.fsMod.StatSyncFn
+import typings.node.fsMod.StatSyncOptions
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -122,7 +126,7 @@ object mod {
   trait FsImplementationSync extends StObject {
     
     def mkdirSync(path: PathLike): js.UndefOr[String]
-    def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): String
+    def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): js.UndefOr[String]
     def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit
     def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String]
     def mkdirSync(path: PathLike, options: typings.node.fsMod.Mode): js.UndefOr[String]
@@ -133,15 +137,22 @@ object mod {
     @JSName("mkdirSync")
     def mkdirSync_Unit(path: PathLike, options: typings.node.fsMod.Mode): Unit
     
-    def statSync(path: PathLike): Stats
-    def statSync(path: PathLike, options: BigIntOptions): BigIntStats
-    def statSync(path: PathLike, options: StatOptions): Stats | BigIntStats
+    def statSync(path: PathLike): js.UndefOr[Stats]
+    def statSync(path: PathLike, options: Unit): Stats
+    def statSync(path: PathLike, options: StatSyncOptionsbigintbool): Stats | BigIntStats
+    def statSync(path: PathLike, options: StatSyncOptionsbigintfals): js.UndefOr[Stats]
+    def statSync(path: PathLike, options: StatSyncOptionsbigintfalsBigint): Stats
+    def statSync(path: PathLike, options: StatSyncOptionsbiginttrue): js.UndefOr[BigIntStats]
+    def statSync(path: PathLike, options: StatSyncOptionsbiginttrueBigint): BigIntStats
+    def statSync(path: PathLike, options: StatSyncOptions): js.UndefOr[Stats | BigIntStats]
     @JSName("statSync")
-    var statSync_Original: FnCallPathOptions
+    var statSync_Original: StatSyncFn
+    @JSName("statSync")
+    def statSync_Stats(path: PathLike): Stats
   }
   object FsImplementationSync {
     
-    inline def apply(mkdirSync: FnCall, statSync: FnCallPathOptions): FsImplementationSync = {
+    inline def apply(mkdirSync: FnCall, statSync: StatSyncFn): FsImplementationSync = {
       val __obj = js.Dynamic.literal(mkdirSync = mkdirSync.asInstanceOf[js.Any], statSync = statSync.asInstanceOf[js.Any])
       __obj.asInstanceOf[FsImplementationSync]
     }
@@ -150,7 +161,7 @@ object mod {
       
       inline def setMkdirSync(value: FnCall): Self = StObject.set(x, "mkdirSync", value.asInstanceOf[js.Any])
       
-      inline def setStatSync(value: FnCallPathOptions): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
+      inline def setStatSync(value: StatSyncFn): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
     }
   }
   

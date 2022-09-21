@@ -10,8 +10,7 @@ import typings.ftpd.ftpdNumbers.`1`
 import typings.ftpd.ftpdNumbers.`2`
 import typings.ftpd.ftpdNumbers.`3`
 import typings.ftpd.ftpdNumbers.`4`
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import typings.node.fsMod.ReadStream
@@ -20,7 +19,6 @@ import typings.node.fsMod.WriteStream
 import typings.node.netMod.Server
 import typings.node.netMod.Socket
 import typings.node.tlsMod.TlsOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +27,7 @@ object mod {
   
   @JSImport("ftpd", "FtpConnection")
   @js.native
-  class FtpConnection () extends EventEmitter {
+  open class FtpConnection () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     var cwd: String = js.native
@@ -59,7 +57,7 @@ object mod {
   
   @JSImport("ftpd", "FtpServer")
   @js.native
-  class FtpServer protected () extends EventEmitter {
+  open class FtpServer protected () extends EventEmitter {
     /**
       * @param host host is a string representation of the IP address clients use to connect to the FTP server.
       *             It's imperative that this actually reflects the remote IP the clients use to access the server,
@@ -97,7 +95,15 @@ object mod {
   trait FtpFileSystem extends StObject {
     
     def close(fd: Double): Unit = js.native
-    def close(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+    def close(
+      fd: Double,
+      callback: js.Function1[
+          /* err */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+          ], 
+          Unit
+        ]
+    ): Unit = js.native
     
     /**
       * if useReadFile option is not set or is false
@@ -113,12 +119,26 @@ object mod {
     
     var mkdir: (js.Function2[
         /* path */ String, 
-        /* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]], 
+        /* callback */ js.UndefOr[
+          js.Function1[
+            /* err */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+            ], 
+            Unit
+          ]
+        ], 
         Unit
       ]) | (js.Function3[
         /* path */ String, 
         (/* mode */ Double) | (/* mode */ String), 
-        js.UndefOr[js.Function1[js.UndefOr[ErrnoException], Unit]], 
+        js.UndefOr[
+          js.Function1[
+            js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+            ], 
+            Unit
+          ]
+        ], 
         Unit
       ]) = js.native
     
@@ -126,14 +146,28 @@ object mod {
         /* path */ String, 
         /* flags */ String, 
         /* callback */ js.UndefOr[
-          js.Function2[/* err */ js.UndefOr[ErrnoException], /* fd */ js.UndefOr[Double], js.Any]
+          js.Function2[
+            /* err */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+            ], 
+            /* fd */ js.UndefOr[Double], 
+            Any
+          ]
         ], 
         Unit
       ]) | (js.Function4[
         /* path */ String, 
         /* flags */ String, 
         (/* mode */ Double) | (/* mode */ String), 
-        js.UndefOr[js.Function2[js.UndefOr[ErrnoException], js.UndefOr[Double], js.Any]], 
+        js.UndefOr[
+          js.Function2[
+            js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+            ], 
+            js.UndefOr[Double], 
+            Any
+          ]
+        ], 
         Unit
       ]) = js.native
     
@@ -144,11 +178,19 @@ object mod {
         (js.Function3[
           /* filename */ String, 
           (/* options */ `0`) | (/* options */ Flag) | (/* encoding */ String), 
-          /* callback */ js.Function2[/* err */ ErrnoException, (/* data */ Buffer) | (/* data */ String), Unit], 
+          /* callback */ js.Function2[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+            (/* data */ Buffer) | (/* data */ String), 
+            Unit
+          ], 
           Unit
         ]) | (js.Function2[
           /* filename */ String, 
-          /* callback */ js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit], 
+          /* callback */ js.Function2[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+            /* data */ Buffer, 
+            Unit
+          ], 
           Unit
         ])
       ] = js.native
@@ -156,18 +198,37 @@ object mod {
     def readdir(path: String): Unit = js.native
     def readdir(
       path: String,
-      callback: js.Function2[/* err */ js.UndefOr[ErrnoException], /* files */ js.UndefOr[js.Array[String]], Unit]
+      callback: js.Function2[
+          /* err */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+          ], 
+          /* files */ js.UndefOr[js.Array[String]], 
+          Unit
+        ]
     ): Unit = js.native
     
     def rename(oldPath: String, newPath: String): Unit = js.native
     def rename(
       oldPath: String,
       newPath: String,
-      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
+      callback: js.Function1[
+          /* err */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+          ], 
+          Unit
+        ]
     ): Unit = js.native
     
     def rmdir(path: String): Unit = js.native
-    def rmdir(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+    def rmdir(
+      path: String,
+      callback: js.Function1[
+          /* err */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+          ], 
+          Unit
+        ]
+    ): Unit = js.native
     
     /**
       * specific object properties: { mode, isDirectory(), size, mtime }
@@ -175,11 +236,25 @@ object mod {
     def stat(path: String): Unit = js.native
     def stat(
       path: String,
-      callback: js.Function2[/* err */ js.UndefOr[ErrnoException], /* stats */ js.UndefOr[Stats], js.Any]
+      callback: js.Function2[
+          /* err */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+          ], 
+          /* stats */ js.UndefOr[Stats], 
+          Any
+        ]
     ): Unit = js.native
     
     def unlink(path: String): Unit = js.native
-    def unlink(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+    def unlink(
+      path: String,
+      callback: js.Function1[
+          /* err */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+          ], 
+          Unit
+        ]
+    ): Unit = js.native
     
     /**
       * if useWriteFile option is set to 'true'
@@ -187,14 +262,24 @@ object mod {
     var writeFile: js.UndefOr[
         (js.Function3[
           /* filename */ String, 
-          /* data */ js.Any, 
-          /* callback */ js.UndefOr[js.Function1[/* err */ ErrnoException, Unit]], 
+          /* data */ Any, 
+          /* callback */ js.UndefOr[
+            js.Function1[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+              Unit
+            ]
+          ], 
           Unit
         ]) | (js.Function4[
           /* filename */ String, 
-          /* data */ js.Any, 
+          /* data */ Any, 
           (/* options */ EncodingFlag) | (/* options */ Mode), 
-          js.UndefOr[js.Function1[/* err */ ErrnoException, Unit]], 
+          js.UndefOr[
+            js.Function1[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+              Unit
+            ]
+          ], 
           Unit
         ])
       ] = js.native
@@ -230,14 +315,14 @@ object mod {
       * Typical cases where you would want/need the callback involve retrieving configurations from external datasources and suchlike.
       */
     def getInitialCwd(connection: FtpConnection): Unit | String = js.native
-    def getInitialCwd(connection: FtpConnection, callback: js.Function2[/* error */ Error, /* path */ String, Unit]): Unit | String = js.native
+    def getInitialCwd(connection: FtpConnection, callback: js.Function2[/* error */ js.Error, /* path */ String, Unit]): Unit | String = js.native
     
     /**
       * Gets the root directory for the user relative to the CWD. Called after getInitialCwd. The user is not able to escape this directory.
       * Typical cases where you would want/need the callback involve retrieving configurations from external datasources and suchlike.
       */
     def getRoot(connection: FtpConnection): Unit | String = js.native
-    def getRoot(connection: FtpConnection, callback: js.Function2[/* error */ Error, /* path */ String, Unit]): Unit | String = js.native
+    def getRoot(connection: FtpConnection, callback: js.Function2[/* error */ js.Error, /* path */ String, Unit]): Unit | String = js.native
     
     /**
       * Integer from 0-4 representing the Log Level to show.

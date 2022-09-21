@@ -19,6 +19,6 @@ object ScatterData {
     
     inline def setDataSets(value: js.Array[ScatterDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
-    inline def setDataSetsVarargs(value: ScatterDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: ScatterDataset*): Self = StObject.set(x, "dataSets", js.Array(value*))
   }
 }

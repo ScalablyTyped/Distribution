@@ -13,18 +13,9 @@ trait JQuery extends StObject {
   def multiSelect(): JQuery = js.native
   def multiSelect(methodOrOptions: Method): JQuery = js.native
   def multiSelect(methodOrOptions: Options): JQuery = js.native
+  def multiSelect(method: select | deselect): JQuery = js.native
+  def multiSelect(method: select | deselect, options: String): JQuery = js.native
+  def multiSelect(method: select | deselect, options: js.Array[Any]): JQuery = js.native
   @JSName("multiSelect")
   def multiSelect_addOption(method: addOption, addOption: AddOption): JQuery = js.native
-  @JSName("multiSelect")
-  def multiSelect_deselect(method: deselect): JQuery = js.native
-  @JSName("multiSelect")
-  def multiSelect_deselect(method: deselect, options: String): JQuery = js.native
-  @JSName("multiSelect")
-  def multiSelect_deselect(method: deselect, options: js.Array[js.Any]): JQuery = js.native
-  @JSName("multiSelect")
-  def multiSelect_select(method: select): JQuery = js.native
-  @JSName("multiSelect")
-  def multiSelect_select(method: select, options: String): JQuery = js.native
-  @JSName("multiSelect")
-  def multiSelect_select(method: select, options: js.Array[js.Any]): JQuery = js.native
 }

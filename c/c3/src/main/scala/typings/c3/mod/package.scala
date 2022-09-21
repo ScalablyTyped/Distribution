@@ -1,37 +1,37 @@
 package typings.c3.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.c3.anon.ValueOf
+import typings.c3.anon.`0`
+import typings.c3.c3Strings.x
+import typings.c3.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def generate(config: typings.c3.mod.ChartConfiguration): typings.c3.mod.ChartAPI = typings.c3.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generate")(config.asInstanceOf[js.Any]).asInstanceOf[typings.c3.mod.ChartAPI]
+inline def generate(config: ChartConfiguration): ChartAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(config.asInstanceOf[js.Any]).asInstanceOf[ChartAPI]
 
-inline def version: java.lang.String = typings.c3.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-type ArrayOrSingle[T /* <: js.Any */] = T | js.Array[T]
+type ArrayOrSingle[T /* <: Any */] = T | js.Array[T]
 
-type ArrayOrString = typings.c3.mod.ArrayOrSingle[java.lang.String]
+type ArrayOrString = ArrayOrSingle[String]
 
-type AxisName = typings.c3.mod.XAxisName | typings.c3.mod.YAxisName
+type AxisName = XAxisName | YAxisName
 
-type Domain = js.Tuple2[scala.Double, scala.Double]
+type Domain = js.Tuple2[Double, Double]
 
-type ExpandOptions = scala.Boolean | typings.c3.anon.`0`
+type ExpandOptions = Boolean | `0`
 
-type FormatFunction = js.Function4[
-/* v */ scala.Double | typings.c3.anon.ValueOf, 
-/* id */ java.lang.String, 
-/* i */ scala.Double, 
-/* j */ scala.Double, 
-java.lang.String]
+type FormatFunction = js.Function4[/* v */ Double | ValueOf, /* id */ String, /* i */ Double, /* j */ Double, String]
 
-type Primitive = java.lang.String | scala.Boolean | scala.Double | typings.std.Date | scala.Null
+type Primitive = String | Boolean | Double | js.Date | Null
 
-type PrimitiveArray = js.Array[typings.c3.mod.Primitive]
+type PrimitiveArray = js.Array[Primitive]
 
-type RedrawOptions = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+type RedrawOptions = StringDictionary[Boolean]
 
-type UpdateAndRedrawOptions = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+type UpdateAndRedrawOptions = StringDictionary[Boolean]
 
-type XAxisName = typings.c3.c3Strings.x
+type XAxisName = x

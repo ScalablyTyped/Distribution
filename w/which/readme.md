@@ -1,7 +1,7 @@
 
 # Scala.js typings for which
 
-Typings are for version 1.3.0
+Typings are for version 2.0
 
 ## Library description:
 Like which(1) unix command. Find the first instance of an executable in the PATH.
@@ -10,10 +10,10 @@ Like which(1) unix command. Find the first instance of an executable in the PATH
 | ------------------ | :-------------: |
 | Full name          | which |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1737 |
-| # downloads        | 1330020319 |
-| # stars            | 16 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2006015133333334E8 |
+| # stars            | 268.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/node-which#readme)

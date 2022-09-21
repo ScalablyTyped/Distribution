@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ringMod {
   
-  @JSImport("konva/types/shapes/Ring", "Ring")
+  @JSImport("konva/lib/shapes/Ring", "Ring")
   @js.native
-  class Ring () extends Shape[RingConfig] {
+  open class Ring () extends Shape[RingConfig] {
     def this(config: RingConfig) = this()
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def getHeight(): Double = js.native
     
@@ -30,9 +30,9 @@ object ringMod {
     @JSName("outerRadius")
     var outerRadius_Original: GetSet[Double, this.type] = js.native
     
-    def setHeight(height: js.Any): Unit = js.native
+    def setHeight(height: Any): Unit = js.native
     
-    def setWidth(width: js.Any): Unit = js.native
+    def setWidth(width: Any): Unit = js.native
   }
   
   trait RingConfig

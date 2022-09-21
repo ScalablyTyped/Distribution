@@ -1,8 +1,7 @@
 package typings.iltorb
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -156,5 +155,5 @@ object mod {
     inline def `2`: typings.iltorb.iltorbNumbers.`2` = 2.asInstanceOf[typings.iltorb.iltorbNumbers.`2`]
   }
   
-  type IltorbCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* output */ Buffer, Unit]
+  type IltorbCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* output */ Buffer, Unit]
 }

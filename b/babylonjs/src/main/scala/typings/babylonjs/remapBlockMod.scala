@@ -11,7 +11,7 @@ object remapBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/remapBlock", "RemapBlock")
   @js.native
-  class RemapBlock protected () extends NodeMaterialBlock {
+  open class RemapBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new RemapBlock
       * @param name defines the block name

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLCSSImportRule")
 @js.native
-/* private */ class HTMLCSSImportRule ()
+/* private */ open class HTMLCSSImportRule ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLCSSImportRule {
   
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val href: String = js.native
   
   /* CompleteClass */
-  var media: js.Any = js.native
+  var media: Any = js.native
   
   /* CompleteClass */
   override val parentRule: typings.activexMshtml.MSHTML.IHTMLCSSRule = js.native

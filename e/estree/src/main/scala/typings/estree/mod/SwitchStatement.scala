@@ -28,7 +28,7 @@ object SwitchStatement {
     
     inline def setCases(value: js.Array[SwitchCase]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
-    inline def setCasesVarargs(value: SwitchCase*): Self = StObject.set(x, "cases", js.Array(value :_*))
+    inline def setCasesVarargs(value: SwitchCase*): Self = StObject.set(x, "cases", js.Array(value*))
     
     inline def setDiscriminant(value: Expression): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
     

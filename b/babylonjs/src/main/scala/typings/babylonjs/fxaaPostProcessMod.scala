@@ -14,7 +14,7 @@ object fxaaPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/fxaaPostProcess", "FxaaPostProcess")
   @js.native
-  class FxaaPostProcess protected () extends PostProcess {
+  open class FxaaPostProcess protected () extends PostProcess {
     def this(
       name: String,
       options: Double | PostProcessOptions,
@@ -25,7 +25,7 @@ object fxaaPostProcessMod {
       textureType: js.UndefOr[Double]
     ) = this()
     
-    /* private */ var _getDefines: js.Any = js.native
+    /* private */ var _getDefines: Any = js.native
   }
   /* static members */
   object FxaaPostProcess {
@@ -34,7 +34,13 @@ object fxaaPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): FxaaPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[FxaaPostProcess]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): FxaaPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[FxaaPostProcess]
   }
 }

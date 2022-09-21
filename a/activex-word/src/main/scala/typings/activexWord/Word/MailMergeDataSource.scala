@@ -22,7 +22,7 @@ trait MailMergeDataSource extends StObject {
   val FieldNames: MailMergeFieldNames = js.native
   
   def FindRecord(FindText: String): Boolean = js.native
-  def FindRecord(FindText: String, Field: js.Any): Boolean = js.native
+  def FindRecord(FindText: String, Field: Any): Boolean = js.native
   
   def FindRecord2000(FindText: String, Field: String): Boolean = js.native
   
@@ -44,7 +44,7 @@ trait MailMergeDataSource extends StObject {
   
   val Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var QueryString: String = js.native
   

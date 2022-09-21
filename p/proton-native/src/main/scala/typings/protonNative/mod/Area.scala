@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("proton-native", "Area")
 @js.native
-class Area protected ()
-  extends Component[AreaProps, js.Object, js.Any] {
+open class Area protected ()
+  extends Component[AreaProps, js.Object, Any] {
   def this(props: AreaProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: AreaProps, context: js.Any) = this()
+  def this(props: AreaProps, context: Any) = this()
 }
 /* static members */
 object Area {

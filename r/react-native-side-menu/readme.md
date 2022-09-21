@@ -11,9 +11,9 @@ Simple customizable component to create side menu
 | Full name          | react-native-side-menu |
 | Keywords           | react-native, react-component, ios, sidebar |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 343445 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 15186.666666666666 |
+| # stars            | 2217.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/react-native-side-menu)

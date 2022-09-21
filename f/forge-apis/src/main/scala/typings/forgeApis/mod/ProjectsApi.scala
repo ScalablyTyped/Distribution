@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "ProjectsApi")
 @js.native
-class ProjectsApi () extends StObject {
+open class ProjectsApi () extends StObject {
+  def this(apiClient: Any) = this()
   
   /**
     * Returns a collection of projects for a given `hub_id`. A project represents an A360 project or a BIM 360 project which

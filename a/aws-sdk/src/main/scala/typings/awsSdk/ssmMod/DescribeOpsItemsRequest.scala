@@ -17,7 +17,7 @@ trait DescribeOpsItemsRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * One or more filters to limit the response.   Key: CreatedTime Operations: GreaterThan, LessThan   Key: LastModifiedBy Operations: Contains, Equals   Key: LastModifiedTime Operations: GreaterThan, LessThan   Key: Priority Operations: Equals   Key: Source Operations: Contains, Equals   Key: Status Operations: Equals   Key: Title Operations: Contains   Key: OperationalData* Operations: Equals   Key: OperationalDataKey Operations: Equals   Key: OperationalDataValue Operations: Equals, Contains   Key: OpsItemId Operations: Equals   Key: ResourceId Operations: Contains   Key: AutomationId Operations: Equals   *If you filter the response by using the OperationalData operator, specify a key-value pair by using the following JSON format: {"key":"key_name","value":"a_value"}
+    * One or more filters to limit the response.   Key: CreatedTime Operations: GreaterThan, LessThan   Key: LastModifiedBy Operations: Contains, Equals   Key: LastModifiedTime Operations: GreaterThan, LessThan   Key: Priority Operations: Equals   Key: Source Operations: Contains, Equals   Key: Status Operations: Equals   Key: Title* Operations: Equals,Contains   Key: OperationalData** Operations: Equals   Key: OperationalDataKey Operations: Equals   Key: OperationalDataValue Operations: Equals, Contains   Key: OpsItemId Operations: Equals   Key: ResourceId Operations: Contains   Key: AutomationId Operations: Equals   *The Equals operator for Title matches the first 100 characters. If you specify more than 100 characters, they system returns an error that the filter value exceeds the length limit. **If you filter the response by using the OperationalData operator, specify a key-value pair by using the following JSON format: {"key":"key_name","value":"a_value"}
     */
   var OpsItemFilters: js.UndefOr[typings.awsSdk.ssmMod.OpsItemFilters] = js.undefined
 }
@@ -42,6 +42,6 @@ object DescribeOpsItemsRequest {
     
     inline def setOpsItemFiltersUndefined: Self = StObject.set(x, "OpsItemFilters", js.undefined)
     
-    inline def setOpsItemFiltersVarargs(value: OpsItemFilter*): Self = StObject.set(x, "OpsItemFilters", js.Array(value :_*))
+    inline def setOpsItemFiltersVarargs(value: OpsItemFilter*): Self = StObject.set(x, "OpsItemFilters", js.Array(value*))
   }
 }

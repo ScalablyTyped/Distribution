@@ -15,6 +15,8 @@ trait Index extends StObject {
   
   var node: DataNode
   
+  var nodes: js.Array[DataNode]
+  
   var parentPos: String | Double
   
   var pos: String
@@ -26,10 +28,11 @@ object Index {
     key: typings.rcTree.interfaceMod.Key,
     level: Double,
     node: DataNode,
+    nodes: js.Array[DataNode],
     parentPos: String | Double,
     pos: String
   ): Index = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parentPos = parentPos.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], parentPos = parentPos.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
   
@@ -42,6 +45,10 @@ object Index {
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setNode(value: DataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setNodes(value: js.Array[DataNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    
+    inline def setNodesVarargs(value: DataNode*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setParentPos(value: String | Double): Self = StObject.set(x, "parentPos", value.asInstanceOf[js.Any])
     

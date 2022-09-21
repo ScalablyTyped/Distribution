@@ -11,9 +11,9 @@ Dead simple utility that attaches Underscore.js array and collection functions (
 | Full name          | underscore-ko |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2342 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 38.333333333333336 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/kamranayub/UnderscoreKO)

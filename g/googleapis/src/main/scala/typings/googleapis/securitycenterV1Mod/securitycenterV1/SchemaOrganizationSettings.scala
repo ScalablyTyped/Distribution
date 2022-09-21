@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * User specified settings that are attached to the Cloud Security Command
-  * Center (Cloud SCC) organization.
-  */
 trait SchemaOrganizationSettings extends StObject {
   
   /**
@@ -16,19 +12,14 @@ trait SchemaOrganizationSettings extends StObject {
   var assetDiscoveryConfig: js.UndefOr[SchemaAssetDiscoveryConfig] = js.undefined
   
   /**
-    * A flag that indicates if Asset Discovery should be enabled. If the flag
-    * is set to `true`, then discovery of assets will occur. If it is set to
-    * `false, all historical assets will remain, but discovery of future assets
-    * will not occur.
+    * A flag that indicates if Asset Discovery should be enabled. If the flag is set to `true`, then discovery of assets will occur. If it is set to `false, all historical assets will remain, but discovery of future assets will not occur.
     */
-  var enableAssetDiscovery: js.UndefOr[Boolean] = js.undefined
+  var enableAssetDiscovery: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The relative resource name of the settings. See:
-    * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-    * Example: &quot;organizations/123/organizationSettings&quot;.
+    * The relative resource name of the settings. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example: "organizations/{organization_id\}/organizationSettings".
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrganizationSettings {
   
@@ -45,9 +36,13 @@ object SchemaOrganizationSettings {
     
     inline def setEnableAssetDiscovery(value: Boolean): Self = StObject.set(x, "enableAssetDiscovery", value.asInstanceOf[js.Any])
     
+    inline def setEnableAssetDiscoveryNull: Self = StObject.set(x, "enableAssetDiscovery", null)
+    
     inline def setEnableAssetDiscoveryUndefined: Self = StObject.set(x, "enableAssetDiscovery", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

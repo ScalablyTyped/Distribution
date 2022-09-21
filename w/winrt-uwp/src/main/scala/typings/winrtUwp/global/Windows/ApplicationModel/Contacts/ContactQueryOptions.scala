@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactQueryOptions")
 @js.native
 /** Initializes a new instance of the ContactQueryOptions class. */
-class ContactQueryOptions ()
+open class ContactQueryOptions ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactQueryOptions {
   /**

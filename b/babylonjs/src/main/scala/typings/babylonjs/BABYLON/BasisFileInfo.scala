@@ -33,6 +33,6 @@ object BasisFileInfo {
     
     inline def setImages(value: js.Array[Levels]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: Levels*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Levels*): Self = StObject.set(x, "images", js.Array(value*))
   }
 }

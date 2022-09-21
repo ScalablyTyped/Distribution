@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-navigation-material-bottom-tabs" : "2.3.0"
+      "react-navigation-material-bottom-tabs" : "2.3.5"
     }
   ],
   "test-dependencies" : [
     {
-      "react-navigation-material-bottom-tabs" : "2.3.0"
+      "react-navigation-material-bottom-tabs" : "2.3.5"
     }
   ],
   "compile-devDependencies" : [

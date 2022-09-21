@@ -24,7 +24,7 @@ object GoogleCloudMlV1Location {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    inline def setCapabilitiesVarargs(value: GoogleCloudMlV1Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: GoogleCloudMlV1Capability*): Self = StObject.set(x, "capabilities", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

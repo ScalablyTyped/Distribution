@@ -44,7 +44,7 @@ object ExtensionMetadata {
     
     inline def setBlocks(value: js.Array[ExtensionBlockMetadata | String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    inline def setBlocksVarargs(value: (ExtensionBlockMetadata | String)*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: (ExtensionBlockMetadata | String)*): Self = StObject.set(x, "blocks", js.Array(value*))
     
     inline def setDocsURI(value: String): Self = StObject.set(x, "docsURI", value.asInstanceOf[js.Any])
     

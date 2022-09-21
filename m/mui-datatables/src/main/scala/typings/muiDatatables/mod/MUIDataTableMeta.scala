@@ -12,7 +12,7 @@ trait MUIDataTableMeta extends StObject {
   
   var currentTableData: js.Array[MUIDataTableCurrentData]
   
-  var rowData: js.Array[js.Any]
+  var rowData: js.Array[Any]
   
   var rowIndex: Double
   
@@ -26,7 +26,7 @@ object MUIDataTableMeta {
     columnData: MUIDataTableColumnState,
     columnIndex: Double,
     currentTableData: js.Array[MUIDataTableCurrentData],
-    rowData: js.Array[js.Any],
+    rowData: js.Array[Any],
     rowIndex: Double,
     tableData: js.Array[MUIDataTableData],
     tableState: MUIDataTableState
@@ -43,17 +43,17 @@ object MUIDataTableMeta {
     
     inline def setCurrentTableData(value: js.Array[MUIDataTableCurrentData]): Self = StObject.set(x, "currentTableData", value.asInstanceOf[js.Any])
     
-    inline def setCurrentTableDataVarargs(value: MUIDataTableCurrentData*): Self = StObject.set(x, "currentTableData", js.Array(value :_*))
+    inline def setCurrentTableDataVarargs(value: MUIDataTableCurrentData*): Self = StObject.set(x, "currentTableData", js.Array(value*))
     
-    inline def setRowData(value: js.Array[js.Any]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    inline def setRowData(value: js.Array[Any]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
-    inline def setRowDataVarargs(value: js.Any*): Self = StObject.set(x, "rowData", js.Array(value :_*))
+    inline def setRowDataVarargs(value: Any*): Self = StObject.set(x, "rowData", js.Array(value*))
     
     inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     inline def setTableData(value: js.Array[MUIDataTableData]): Self = StObject.set(x, "tableData", value.asInstanceOf[js.Any])
     
-    inline def setTableDataVarargs(value: MUIDataTableData*): Self = StObject.set(x, "tableData", js.Array(value :_*))
+    inline def setTableDataVarargs(value: MUIDataTableData*): Self = StObject.set(x, "tableData", js.Array(value*))
     
     inline def setTableState(value: MUIDataTableState): Self = StObject.set(x, "tableState", value.asInstanceOf[js.Any])
   }

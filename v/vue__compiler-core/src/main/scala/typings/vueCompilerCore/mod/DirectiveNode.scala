@@ -45,7 +45,7 @@ object DirectiveNode {
     
     inline def setModifiers(value: js.Array[String]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    inline def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

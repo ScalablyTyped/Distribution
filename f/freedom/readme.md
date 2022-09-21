@@ -10,10 +10,10 @@ Embracing a distributed web
 | ------------------ | :-------------: |
 | Full name          | freedom |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 2657 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 399.0 |
+| # stars            | 489.0 |
 
 ## Links
 - [Homepage](http://freedomjs.org)

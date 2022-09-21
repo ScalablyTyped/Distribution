@@ -17,7 +17,7 @@ object anon {
     
     var search: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
   }
   object Hash {
     
@@ -42,7 +42,7 @@ object anon {
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
@@ -73,7 +73,7 @@ object anon {
     }
   }
   
-  trait Params[T /* <: Record[String, js.Any] */] extends StObject {
+  trait Params[T /* <: Record[String, Any] */] extends StObject {
     
     var params: T
     
@@ -81,12 +81,12 @@ object anon {
   }
   object Params {
     
-    inline def apply[T /* <: Record[String, js.Any] */](params: T, path: String): Params[T] = {
+    inline def apply[T /* <: Record[String, Any] */](params: T, path: String): Params[T] = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params[T]]
     }
     
-    extension [Self <: Params[?], T /* <: Record[String, js.Any] */](x: Self & Params[T]) {
+    extension [Self <: Params[?], T /* <: Record[String, Any] */](x: Self & Params[T]) {
       
       inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

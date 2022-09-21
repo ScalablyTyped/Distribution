@@ -51,7 +51,7 @@ object INxLibraryMeasureDef {
     
     inline def setQExpressions(value: js.Array[String]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
     
-    inline def setQExpressionsVarargs(value: String*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
+    inline def setQExpressionsVarargs(value: String*): Self = StObject.set(x, "qExpressions", js.Array(value*))
     
     inline def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ApiGatewayV2 ()
+open class ApiGatewayV2 ()
   extends typings.awsSdk.allMod.ApiGatewayV2 {
   def this(options: ClientConfiguration) = this()
 }

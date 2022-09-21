@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_gmailpostmastertools
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220811
 
 ## Library description:
 TypeScript typings for Gmail Postmaster Tools API v1
@@ -10,10 +10,10 @@ TypeScript typings for Gmail Postmaster Tools API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.gmailpostmastertools |
 | Keywords           | - |
-| # releases         | 50 |
-| # dependents       | 1 |
-| # downloads        | 3306 |
-| # stars            | 0 |
+| # releases         | 380 |
+| # dependents       | 0.0 |
+| # downloads        | 3179.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

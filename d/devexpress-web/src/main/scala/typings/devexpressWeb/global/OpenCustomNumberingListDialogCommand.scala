@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenCustomNumberingListDialogCommand")
 @js.native
-class OpenCustomNumberingListDialogCommand ()
+open class OpenCustomNumberingListDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenCustomNumberingListDialogCommand {
   

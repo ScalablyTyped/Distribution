@@ -11,19 +11,37 @@ object helperTextFoundationMod {
   
   @JSImport("@material/select/helper-text/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCSelectHelperTextFoundation {
+  open class default () extends MDCSelectHelperTextFoundation {
     def this(adapter: PartialMDCSelectHelperTex) = this()
   }
   
   @JSImport("@material/select/helper-text/foundation", "MDCSelectHelperTextFoundation")
   @js.native
-  class MDCSelectHelperTextFoundation () extends MDCFoundation[MDCSelectHelperTextAdapter] {
+  open class MDCSelectHelperTextFoundation () extends MDCFoundation[MDCSelectHelperTextAdapter] {
     def this(adapter: PartialMDCSelectHelperTex) = this()
     
     /**
       * @return The ID of the helper text, or null if none is set.
       */
     def getId(): String | Null = js.native
+    
+    /**
+      * @return Whether the helper text acts as a validation message.
+      * By default, validation messages are hidden when the select is valid and
+      * visible when the select is invalid.
+      */
+    def getIsValidation(): Boolean = js.native
+    
+    /**
+      * @return Whether the validation helper text persists even if the input is
+      * valid. If it is, it will be displayed in the normal (grey) color.
+      */
+    def getIsValidationMsgPersistent(): Boolean = js.native
+    
+    /**
+      * Hides the help text from screen readers.
+      */
+    /* private */ var hide: Any = js.native
     
     /**
       * @return Whether the helper text is currently visible.
@@ -57,5 +75,10 @@ object helperTextFoundationMod {
       * triggers alerts as necessary based on the select's validity.
       */
     def setValidity(selectIsValid: Boolean): Unit = js.native
+    
+    /**
+      * Makes the helper text visible to screen readers.
+      */
+    /* private */ var showToScreenReader: Any = js.native
   }
 }

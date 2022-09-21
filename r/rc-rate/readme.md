@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-rate
 
-Typings are for version 2.9.1
+Typings are for version 2.9.2
 
 ## Library description:
 React Star Rate Component
@@ -10,10 +10,10 @@ React Star Rate Component
 | ------------------ | :-------------: |
 | Full name          | rc-rate |
 | Keywords           | react, react-component, react-rate, rate |
-| # releases         | 8 |
-| # dependents       | 206 |
-| # downloads        | 17999996 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3163109.6666666665 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/rate)

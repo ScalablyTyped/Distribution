@@ -1,6 +1,5 @@
 package typings.wegameApi.wx.types
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait UDPSendParams extends StObject {
   /**
     * 要发送的数据
     */
-  var message: String | ArrayBuffer
+  var message: String | js.typedarray.ArrayBuffer
   
   /**
     * 发送数据的偏移量，仅当 message 为 ArrayBuffer 类型时有效，默认值0
@@ -34,7 +33,7 @@ trait UDPSendParams extends StObject {
 }
 object UDPSendParams {
   
-  inline def apply(address: String, message: String | ArrayBuffer, port: Double): UDPSendParams = {
+  inline def apply(address: String, message: String | js.typedarray.ArrayBuffer, port: Double): UDPSendParams = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[UDPSendParams]
   }
@@ -47,7 +46,7 @@ object UDPSendParams {
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    inline def setMessage(value: String | ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "ToggleStar")
 @js.native
-class ToggleStar ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class ToggleStar ()
+  extends Component[SvgIconProps, js.Object, Any]

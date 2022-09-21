@@ -11,82 +11,236 @@ object asyncHooksMod {
   val ^ : js.Any = js.native
   
   /**
-    * When having multiple instances of `AsyncLocalStorage`, they are independent
-    * from each other. It is safe to instantiate this class multiple times.
+    * This class creates stores that stay coherent through asynchronous operations.
+    *
+    * While you can create your own implementation on top of the `async_hooks` module,`AsyncLocalStorage` should be preferred as it is a performant and memory safe
+    * implementation that involves significant optimizations that are non-obvious to
+    * implement.
+    *
+    * The following example uses `AsyncLocalStorage` to build a simple logger
+    * that assigns IDs to incoming HTTP requests and includes them in messages
+    * logged within each request.
+    *
+    * ```js
+    * import http from 'http';
+    * import { AsyncLocalStorage } from 'async_hooks';
+    *
+    * const asyncLocalStorage = new AsyncLocalStorage();
+    *
+    * function logWithId(msg) {
+    *   const id = asyncLocalStorage.getStore();
+    *   console.log(`${id !== undefined ? id : '-'}:`, msg);
+    * }
+    *
+    * let idSeq = 0;
+    * http.createServer((req, res) => {
+    *   asyncLocalStorage.run(idSeq++, () => {
+    *     logWithId('start');
+    *     // Imagine any chain of async operations here
+    *     setImmediate(() => {
+    *       logWithId('finish');
+    *       res.end();
+    *     });
+    *   });
+    * }).listen(8080);
+    *
+    * http.get('http://localhost:8080');
+    * http.get('http://localhost:8080');
+    * // Prints:
+    * //   0: start
+    * //   1: start
+    * //   0: finish
+    * //   1: finish
+    * ```
+    *
+    * Each instance of `AsyncLocalStorage` maintains an independent storage context.
+    * Multiple instances can safely exist simultaneously without risk of interfering
+    * with each other's data.
+    * @since v13.10.0, v12.17.0
     */
   @JSImport("async_hooks", "AsyncLocalStorage")
   @js.native
-  class AsyncLocalStorage[T] () extends StObject {
+  open class AsyncLocalStorage[T] () extends StObject {
     
     /**
-      * This method disables the instance of `AsyncLocalStorage`. All subsequent calls
-      * to `asyncLocalStorage.getStore()` will return `undefined` until
-      * `asyncLocalStorage.run()` is called again.
+      * Disables the instance of `AsyncLocalStorage`. All subsequent calls
+      * to `asyncLocalStorage.getStore()` will return `undefined` until`asyncLocalStorage.run()` or `asyncLocalStorage.enterWith()` is called again.
       *
       * When calling `asyncLocalStorage.disable()`, all current contexts linked to the
       * instance will be exited.
       *
-      * Calling `asyncLocalStorage.disable()` is required before the
-      * `asyncLocalStorage` can be garbage collected. This does not apply to stores
+      * Calling `asyncLocalStorage.disable()` is required before the`asyncLocalStorage` can be garbage collected. This does not apply to stores
       * provided by the `asyncLocalStorage`, as those objects are garbage collected
       * along with the corresponding async resources.
       *
-      * This method is to be used when the `asyncLocalStorage` is not in use anymore
+      * Use this method when the `asyncLocalStorage` is not in use anymore
       * in the current process.
+      * @since v13.10.0, v12.17.0
+      * @experimental
       */
     def disable(): Unit = js.native
     
     /**
-      * Calling `asyncLocalStorage.enterWith(store)` will transition into the context
-      * for the remainder of the current synchronous execution and will persist
-      * through any following asynchronous calls.
+      * Transitions into the context for the remainder of the current
+      * synchronous execution and then persists the store through any following
+      * asynchronous calls.
+      *
+      * Example:
+      *
+      * ```js
+      * const store = { id: 1 };
+      * // Replaces previous store with the given store object
+      * asyncLocalStorage.enterWith(store);
+      * asyncLocalStorage.getStore(); // Returns the store object
+      * someAsyncOperation(() => {
+      *   asyncLocalStorage.getStore(); // Returns the same object
+      * });
+      * ```
+      *
+      * This transition will continue for the _entire_ synchronous execution.
+      * This means that if, for example, the context is entered within an event
+      * handler subsequent event handlers will also run within that context unless
+      * specifically bound to another context with an `AsyncResource`. That is why`run()` should be preferred over `enterWith()` unless there are strong reasons
+      * to use the latter method.
+      *
+      * ```js
+      * const store = { id: 1 };
+      *
+      * emitter.on('my-event', () => {
+      *   asyncLocalStorage.enterWith(store);
+      * });
+      * emitter.on('my-event', () => {
+      *   asyncLocalStorage.getStore(); // Returns the same object
+      * });
+      *
+      * asyncLocalStorage.getStore(); // Returns undefined
+      * emitter.emit('my-event');
+      * asyncLocalStorage.getStore(); // Returns the same object
+      * ```
+      * @since v13.11.0, v12.17.0
+      * @experimental
       */
     def enterWith(store: T): Unit = js.native
     
     /**
-      * This methods runs a function synchronously outside of a context and return its
-      * return value. The store is not accessible within the callback function or the
-      * asynchronous operations created within the callback.
+      * Runs a function synchronously outside of a context and returns its
+      * return value. The store is not accessible within the callback function or
+      * the asynchronous operations created within the callback. Any `getStore()`call done within the callback function will always return `undefined`.
       *
-      * Optionally, arguments can be passed to the function. They will be passed to the
-      * callback function.
+      * The optional `args` are passed to the callback function.
       *
-      * If the callback function throws an error, it will be thrown by `exit` too. The
-      * stacktrace will not be impacted by this call and the context will be
-      * re-entered.
+      * If the callback function throws an error, the error is thrown by `exit()` too.
+      * The stacktrace is not impacted by this call and the context is re-entered.
+      *
+      * Example:
+      *
+      * ```js
+      * // Within a call to run
+      * try {
+      *   asyncLocalStorage.getStore(); // Returns the store object or value
+      *   asyncLocalStorage.exit(() => {
+      *     asyncLocalStorage.getStore(); // Returns undefined
+      *     throw new Error();
+      *   });
+      * } catch (e) {
+      *   asyncLocalStorage.getStore(); // Returns the same object or value
+      *   // The error will be caught here
+      * }
+      * ```
+      * @since v13.10.0, v12.17.0
+      * @experimental
       */
-    // TODO: Apply generic vararg once available
-    def exit[R](callback: js.Function1[/* repeated */ js.Any, R], args: js.Any*): R = js.native
+    def exit[R, TArgs /* <: js.Array[Any] */](
+      callback: js.Function1[/* args */ TArgs, R],
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    ): R = js.native
     
     /**
-      * This method returns the current store. If this method is called outside of an
-      * asynchronous context initialized by calling `asyncLocalStorage.run`, it will
-      * return `undefined`.
+      * Returns the current store.
+      * If called outside of an asynchronous context initialized by
+      * calling `asyncLocalStorage.run()` or `asyncLocalStorage.enterWith()`, it
+      * returns `undefined`.
+      * @since v13.10.0, v12.17.0
       */
     def getStore(): js.UndefOr[T] = js.native
     
     /**
-      * This methods runs a function synchronously within a context and return its
-      * return value. The store is not accessible outside of the callback function or
-      * the asynchronous operations created within the callback.
+      * Runs a function synchronously within a context and returns its
+      * return value. The store is not accessible outside of the callback function.
+      * The store is accessible to any asynchronous operations created within the
+      * callback.
       *
-      * Optionally, arguments can be passed to the function. They will be passed to the
-      * callback function.
+      * The optional `args` are passed to the callback function.
       *
-      * I the callback function throws an error, it will be thrown by `run` too. The
-      * stacktrace will not be impacted by this call and the context will be exited.
+      * If the callback function throws an error, the error is thrown by `run()` too.
+      * The stacktrace is not impacted by this call and the context is exited.
+      *
+      * Example:
+      *
+      * ```js
+      * const store = { id: 2 };
+      * try {
+      *   asyncLocalStorage.run(store, () => {
+      *     asyncLocalStorage.getStore(); // Returns the store object
+      *     setTimeout(() => {
+      *       asyncLocalStorage.getStore(); // Returns the store object
+      *     }, 200);
+      *     throw new Error();
+      *   });
+      * } catch (e) {
+      *   asyncLocalStorage.getStore(); // Returns undefined
+      *   // The error will be caught here
+      * }
+      * ```
+      * @since v13.10.0, v12.17.0
       */
-    // TODO: Apply generic vararg once available
-    def run[R](store: T, callback: js.Function1[/* repeated */ js.Any, R], args: js.Any*): R = js.native
+    def run[R, TArgs /* <: js.Array[Any] */](
+      store: T,
+      callback: js.Function1[/* args */ TArgs, R],
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    ): R = js.native
   }
   
   /**
-    * The class AsyncResource was designed to be extended by the embedder's async resources.
-    * Using this users can easily trigger the lifetime events of their own resources.
+    * The class `AsyncResource` is designed to be extended by the embedder's async
+    * resources. Using this, users can easily trigger the lifetime events of their
+    * own resources.
+    *
+    * The `init` hook will trigger when an `AsyncResource` is instantiated.
+    *
+    * The following is an overview of the `AsyncResource` API.
+    *
+    * ```js
+    * import { AsyncResource, executionAsyncId } from 'async_hooks';
+    *
+    * // AsyncResource() is meant to be extended. Instantiating a
+    * // new AsyncResource() also triggers init. If triggerAsyncId is omitted then
+    * // async_hook.executionAsyncId() is used.
+    * const asyncResource = new AsyncResource(
+    *   type, { triggerAsyncId: executionAsyncId(), requireManualDestroy: false }
+    * );
+    *
+    * // Run a function in the execution context of the resource. This will
+    * // * establish the context of the resource
+    * // * trigger the AsyncHooks before callbacks
+    * // * call the provided function `fn` with the supplied arguments
+    * // * trigger the AsyncHooks after callbacks
+    * // * restore the original execution context
+    * asyncResource.runInAsyncScope(fn, thisArg, ...args);
+    *
+    * // Call AsyncHooks destroy callbacks.
+    * asyncResource.emitDestroy();
+    *
+    * // Return the unique ID assigned to the AsyncResource instance.
+    * asyncResource.asyncId();
+    *
+    * // Return the trigger ID for the AsyncResource instance.
+    * asyncResource.triggerAsyncId();
+    * ```
     */
   @JSImport("async_hooks", "AsyncResource")
   @js.native
-  class AsyncResource protected () extends StObject {
+  open class AsyncResource protected () extends StObject {
     /**
       * AsyncResource() is meant to be extended. Instantiating a
       * new AsyncResource() also triggers init. If triggerAsyncId is omitted then
@@ -94,44 +248,52 @@ object asyncHooksMod {
       * @param type The type of async event.
       * @param triggerAsyncId The ID of the execution context that created
       *   this async event (default: `executionAsyncId()`), or an
-      *   AsyncResourceOptions object (since 9.3)
+      *   AsyncResourceOptions object (since v9.3.0)
       */
-    def this(`type`: java.lang.String) = this()
-    def this(`type`: java.lang.String, triggerAsyncId: Double) = this()
-    def this(`type`: java.lang.String, triggerAsyncId: AsyncResourceOptions) = this()
+    def this(`type`: String) = this()
+    def this(`type`: String, triggerAsyncId: Double) = this()
+    def this(`type`: String, triggerAsyncId: AsyncResourceOptions) = this()
     
     /**
-      * @return the unique ID assigned to this AsyncResource instance.
+      * @return The unique `asyncId` assigned to the resource.
       */
     def asyncId(): Double = js.native
     
     /**
       * Binds the given function to execute to this `AsyncResource`'s scope.
+      *
+      * The returned function will have an `asyncResource` property referencing
+      * the `AsyncResource` to which the function is bound.
+      * @since v14.8.0, v12.19.0
       * @param fn The function to bind to the current `AsyncResource`.
       */
-    def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func): Func & typings.node.anon.AsyncResource = js.native
+    def bind[Func /* <: js.Function1[/* repeated */ Any, Any] */](fn: Func): Func & typings.node.anon.AsyncResource = js.native
     
     /**
-      * Call AsyncHooks destroy callbacks.
+      * Call all `destroy` hooks. This should only ever be called once. An error will
+      * be thrown if it is called more than once. This **must** be manually called. If
+      * the resource is left to be collected by the GC then the `destroy` hooks will
+      * never be called.
+      * @return A reference to `asyncResource`.
       */
-    def emitDestroy(): Unit = js.native
+    def emitDestroy(): this.type = js.native
     
     /**
-      * Call the provided function with the provided arguments in the
-      * execution context of the async resource. This will establish the
-      * context, trigger the AsyncHooks before callbacks, call the function,
-      * trigger the AsyncHooks after callbacks, and then restore the original
-      * execution context.
-      * @param fn The function to call in the execution context of this
-      *   async resource.
+      * Call the provided function with the provided arguments in the execution context
+      * of the async resource. This will establish the context, trigger the AsyncHooks
+      * before callbacks, call the function, trigger the AsyncHooks after callbacks, and
+      * then restore the original execution context.
+      * @since v9.6.0
+      * @param fn The function to call in the execution context of this async resource.
       * @param thisArg The receiver to be used for the function call.
       * @param args Optional arguments to pass to the function.
       */
-    def runInAsyncScope[This, Result](fn: js.ThisFunction1[/* this */ This, /* repeated */ js.Any, Result], thisArg: This, args: js.Any*): Result = js.native
-    def runInAsyncScope[This, Result](fn: js.ThisFunction1[/* this */ This, /* repeated */ js.Any, Result], thisArg: Unit, args: js.Any*): Result = js.native
+    def runInAsyncScope[This, Result](fn: js.ThisFunction1[/* this */ This, /* repeated */ Any, Result], thisArg: This, args: Any*): Result = js.native
+    def runInAsyncScope[This, Result](fn: js.ThisFunction1[/* this */ This, /* repeated */ Any, Result], thisArg: Unit, args: Any*): Result = js.native
     
     /**
-      * @return the trigger ID for this AsyncResource instance.
+      *
+      * @return The same `triggerAsyncId` that is passed to the `AsyncResource` constructor.
       */
     def triggerAsyncId(): Double = js.native
   }
@@ -143,30 +305,98 @@ object asyncHooksMod {
     
     /**
       * Binds the given function to the current execution context.
+      *
+      * The returned function will have an `asyncResource` property referencing
+      * the `AsyncResource` to which the function is bound.
+      * @since v14.8.0, v12.19.0
       * @param fn The function to bind to the current execution context.
       * @param type An optional name to associate with the underlying `AsyncResource`.
       */
     /* static member */
-    inline def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func): Func & typings.node.anon.AsyncResource = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any]).asInstanceOf[Func & typings.node.anon.AsyncResource]
-    inline def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func, `type`: java.lang.String): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
+    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func): Func & typings.node.anon.AsyncResource = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any]).asInstanceOf[Func & typings.node.anon.AsyncResource]
+    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func, `type`: String): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
+    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func, `type`: String, thisArg: ThisArg): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
+    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func, `type`: Unit, thisArg: ThisArg): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
   }
   
   /**
-    * Registers functions to be called for different lifetime events of each async operation.
-    * @param options the callbacks to register
-    * @return an AsyncHooks instance used for disabling and enabling hooks
+    * Registers functions to be called for different lifetime events of each async
+    * operation.
+    *
+    * The callbacks `init()`/`before()`/`after()`/`destroy()` are called for the
+    * respective asynchronous event during a resource's lifetime.
+    *
+    * All callbacks are optional. For example, if only resource cleanup needs to
+    * be tracked, then only the `destroy` callback needs to be passed. The
+    * specifics of all functions that can be passed to `callbacks` is in the `Hook Callbacks` section.
+    *
+    * ```js
+    * import { createHook } from 'async_hooks';
+    *
+    * const asyncHook = createHook({
+    *   init(asyncId, type, triggerAsyncId, resource) { },
+    *   destroy(asyncId) { }
+    * });
+    * ```
+    *
+    * The callbacks will be inherited via the prototype chain:
+    *
+    * ```js
+    * class MyAsyncCallbacks {
+    *   init(asyncId, type, triggerAsyncId, resource) { }
+    *   destroy(asyncId) {}
+    * }
+    *
+    * class MyAddedCallbacks extends MyAsyncCallbacks {
+    *   before(asyncId) { }
+    *   after(asyncId) { }
+    * }
+    *
+    * const asyncHook = async_hooks.createHook(new MyAddedCallbacks());
+    * ```
+    *
+    * Because promises are asynchronous resources whose lifecycle is tracked
+    * via the async hooks mechanism, the `init()`, `before()`, `after()`, and`destroy()` callbacks _must not_ be async functions that return promises.
+    * @since v8.1.0
+    * @param callbacks The `Hook Callbacks` to register
+    * @return Instance used for disabling and enabling hooks
     */
-  inline def createHook(options: HookCallbacks): AsyncHook = ^.asInstanceOf[js.Dynamic].applyDynamic("createHook")(options.asInstanceOf[js.Any]).asInstanceOf[AsyncHook]
+  inline def createHook(callbacks: HookCallbacks): AsyncHook = ^.asInstanceOf[js.Dynamic].applyDynamic("createHook")(callbacks.asInstanceOf[js.Any]).asInstanceOf[AsyncHook]
   
   /**
-    * Returns the asyncId of the current execution context.
+    * ```js
+    * import { executionAsyncId } from 'async_hooks';
+    *
+    * console.log(executionAsyncId());  // 1 - bootstrap
+    * fs.open(path, 'r', (err, fd) => {
+    *   console.log(executionAsyncId());  // 6 - open()
+    * });
+    * ```
+    *
+    * The ID returned from `executionAsyncId()` is related to execution timing, not
+    * causality (which is covered by `triggerAsyncId()`):
+    *
+    * ```js
+    * const server = net.createServer((conn) => {
+    *   // Returns the ID of the server, not of the new connection, because the
+    *   // callback runs in the execution scope of the server's MakeCallback().
+    *   async_hooks.executionAsyncId();
+    *
+    * }).listen(port, () => {
+    *   // Returns the ID of a TickObject (process.nextTick()) because all
+    *   // callbacks passed to .listen() are wrapped in a nextTick().
+    *   async_hooks.executionAsyncId();
+    * });
+    * ```
+    *
+    * Promise contexts may not get precise `executionAsyncIds` by default.
+    * See the section on `promise execution tracking`.
+    * @since v8.1.0
+    * @return The `asyncId` of the current execution context. Useful to track when something calls.
     */
   inline def executionAsyncId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("executionAsyncId")().asInstanceOf[Double]
   
   /**
-    * The resource representing the current execution.
-    *  Useful to store data within the resource.
-    *
     * Resource objects returned by `executionAsyncResource()` are most often internal
     * Node.js handle objects with undocumented APIs. Using any functions or properties
     * on the object is likely to crash your application and should be avoided.
@@ -174,11 +404,69 @@ object asyncHooksMod {
     * Using `executionAsyncResource()` in the top-level execution context will
     * return an empty object as there is no handle or request object to use,
     * but having an object representing the top-level can be helpful.
+    *
+    * ```js
+    * import { open } from 'fs';
+    * import { executionAsyncId, executionAsyncResource } from 'async_hooks';
+    *
+    * console.log(executionAsyncId(), executionAsyncResource());  // 1 {}
+    * open(new URL(import.meta.url), 'r', (err, fd) => {
+    *   console.log(executionAsyncId(), executionAsyncResource());  // 7 FSReqWrap
+    * });
+    * ```
+    *
+    * This can be used to implement continuation local storage without the
+    * use of a tracking `Map` to store the metadata:
+    *
+    * ```js
+    * import { createServer } from 'http';
+    * import {
+    *   executionAsyncId,
+    *   executionAsyncResource,
+    *   createHook
+    * } from 'async_hooks';
+    * const sym = Symbol('state'); // Private symbol to avoid pollution
+    *
+    * createHook({
+    *   init(asyncId, type, triggerAsyncId, resource) {
+    *     const cr = executionAsyncResource();
+    *     if (cr) {
+    *       resource[sym] = cr[sym];
+    *     }
+    *   }
+    * }).enable();
+    *
+    * const server = createServer((req, res) => {
+    *   executionAsyncResource()[sym] = { state: req.url };
+    *   setTimeout(function() {
+    *     res.end(JSON.stringify(executionAsyncResource()[sym]));
+    *   }, 100);
+    * }).listen(3000);
+    * ```
+    * @since v13.9.0, v12.17.0
+    * @return The resource representing the current execution. Useful to store data within the resource.
     */
   inline def executionAsyncResource(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("executionAsyncResource")().asInstanceOf[js.Object]
   
   /**
-    * Returns the ID of the resource responsible for calling the callback that is currently being executed.
+    * ```js
+    * const server = net.createServer((conn) => {
+    *   // The resource that caused (or triggered) this callback to be called
+    *   // was that of the new connection. Thus the return value of triggerAsyncId()
+    *   // is the asyncId of "conn".
+    *   async_hooks.triggerAsyncId();
+    *
+    * }).listen(port, () => {
+    *   // Even though all callbacks passed to .listen() are wrapped in a nextTick()
+    *   // the callback itself exists because the call to the server's .listen()
+    *   // was made. So the return value would be the ID of the server.
+    *   async_hooks.triggerAsyncId();
+    * });
+    * ```
+    *
+    * Promise contexts may not get valid `triggerAsyncId`s by default. See
+    * the section on `promise execution tracking`.
+    * @return The ID of the resource responsible for calling the callback that is currently being executed.
     */
   inline def triggerAsyncId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerAsyncId")().asInstanceOf[Double]
   
@@ -216,13 +504,13 @@ object asyncHooksMod {
       * This usually does not need to be set (even if `emitDestroy` is called
       * manually), unless the resource's `asyncId` is retrieved and the
       * sensitive API's `emitDestroy` is called with it.
-      * Default: `false`
+      * @default false
       */
     var requireManualDestroy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The ID of the execution context that created this async event.
-      * Default: `executionAsyncId()`
+      * @default executionAsyncId()
       */
     var triggerAsyncId: js.UndefOr[Double] = js.undefined
   }
@@ -276,7 +564,7 @@ object asyncHooksMod {
     var init: js.UndefOr[
         js.Function4[
           /* asyncId */ Double, 
-          /* type */ java.lang.String, 
+          /* type */ String, 
           /* triggerAsyncId */ Double, 
           /* resource */ js.Object, 
           Unit
@@ -312,7 +600,7 @@ object asyncHooksMod {
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
       inline def setInit(
-        value: (/* asyncId */ Double, /* type */ java.lang.String, /* triggerAsyncId */ Double, /* resource */ js.Object) => Unit
+        value: (/* asyncId */ Double, /* type */ String, /* triggerAsyncId */ Double, /* resource */ js.Object) => Unit
       ): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)

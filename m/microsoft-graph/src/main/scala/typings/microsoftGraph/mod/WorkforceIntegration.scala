@@ -23,7 +23,8 @@ trait WorkforceIntegration
   /**
     * The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on
     * client changes on those entities added here. By default, no entities are supported for change notifications. Possible
-    * values are: none, shift, swapRequest, openshift, openShiftRequest, userShiftPreferences
+    * values are: none, shift, swapRequest, userShiftPreferences, openshift, openShiftRequest, offerShiftRequest,
+    * unknownFutureValue.
     */
   var supportedEntities: js.UndefOr[NullableOption[WorkforceIntegrationSupportedEntities]] = js.undefined
   

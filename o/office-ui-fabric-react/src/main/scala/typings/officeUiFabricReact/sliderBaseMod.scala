@@ -15,44 +15,58 @@ object sliderBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Slider/Slider.base", "SliderBase")
   @js.native
-  class SliderBase protected ()
-    extends Component[ISliderProps, ISliderState, js.Any]
+  open class SliderBase protected ()
+    extends Component[ISliderProps, ISliderState, Any]
        with ISlider {
     def this(props: ISliderProps) = this()
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _clearOnKeyDownTimer: js.Any = js.native
+    /* private */ var _calculateCurrentSteps: Any = js.native
     
-    /* private */ var _disposables: js.Any = js.native
+    /* private */ var _clearOnKeyDownTimer: Any = js.native
     
-    /* private */ var _disposeListeners: js.Any = js.native
+    /* private */ var _disposables: Any = js.native
     
-    /* private */ var _getAriaValueText: js.Any = js.native
+    /* private */ var _disposeListeners: Any = js.native
     
-    /* private */ var _getPosition: js.Any = js.native
+    /* private */ var _getAriaValueText: Any = js.native
     
-    /* private */ var _getStyleUsingOffsetPercent: js.Any = js.native
+    /* private */ var _getPercent: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _getPosition: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _getStyleUsingOffsetPercent: Any = js.native
     
-    /* private */ var _onKeyDownTimer: js.Any = js.native
+    /* private */ var _getValueLabel: Any = js.native
     
-    /* private */ var _onMouseDownOrTouchStart: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _onMouseMoveOrTouchMove: js.Any = js.native
+    /* private */ var _isAdjustingLowerValue: Any = js.native
     
-    /* private */ var _onMouseUpOrTouchEnd: js.Any = js.native
+    /* private */ var _lowerValueThumb: Any = js.native
     
-    /* private */ var _setOnKeyDownTimer: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _sliderLine: js.Any = js.native
+    /* private */ var _onKeyDownTimer: Any = js.native
     
-    /* private */ var _thumb: js.Any = js.native
+    /* private */ var _onMouseDownOrTouchStart: Any = js.native
     
-    /* private */ var _updateValue: js.Any = js.native
+    /* private */ var _onMouseMoveOrTouchMove: Any = js.native
+    
+    /* private */ var _onMouseUpOrTouchEnd: Any = js.native
+    
+    /* private */ var _onThumbFocus: Any = js.native
+    
+    /* private */ var _setOnKeyDownTimer: Any = js.native
+    
+    /* private */ var _setValueState: Any = js.native
+    
+    /* private */ var _sliderLine: Any = js.native
+    
+    /* private */ var _thumb: Any = js.native
+    
+    /* private */ var _updateValue: Any = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MSliderBase(): Unit = js.native
@@ -60,7 +74,11 @@ object sliderBaseMod {
     /* CompleteClass */
     override def focus(): Unit = js.native
     
-    /* private */ val renderedValue: js.Any = js.native
+    val lowerValue: js.UndefOr[Double] = js.native
+    
+    /* private */ val renderedLowerValue: Any = js.native
+    
+    /* private */ val renderedValue: Any = js.native
   }
   /* static members */
   object SliderBase {
@@ -77,6 +95,10 @@ object sliderBaseMod {
   
   trait ISliderState extends StObject {
     
+    var lowerValue: js.UndefOr[Double] = js.undefined
+    
+    var renderedLowerValue: js.UndefOr[Double] = js.undefined
+    
     var renderedValue: js.UndefOr[Double] = js.undefined
     
     var value: js.UndefOr[Double] = js.undefined
@@ -89,6 +111,14 @@ object sliderBaseMod {
     }
     
     extension [Self <: ISliderState](x: Self) {
+      
+      inline def setLowerValue(value: Double): Self = StObject.set(x, "lowerValue", value.asInstanceOf[js.Any])
+      
+      inline def setLowerValueUndefined: Self = StObject.set(x, "lowerValue", js.undefined)
+      
+      inline def setRenderedLowerValue(value: Double): Self = StObject.set(x, "renderedLowerValue", value.asInstanceOf[js.Any])
+      
+      inline def setRenderedLowerValueUndefined: Self = StObject.set(x, "renderedLowerValue", js.undefined)
       
       inline def setRenderedValue(value: Double): Self = StObject.set(x, "renderedValue", value.asInstanceOf[js.Any])
       

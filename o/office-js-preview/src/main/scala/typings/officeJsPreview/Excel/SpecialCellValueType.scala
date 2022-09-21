@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait SpecialCellValueType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SpecialCellValueType")
@@ -14,8 +15,9 @@ sealed trait SpecialCellValueType extends StObject
 object SpecialCellValueType extends StObject {
   
   /**
-    * Cells that have errors, true/false, numeric, or a string value.
-    *
+    * Cells that have errors, boolean, numeric, or string values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait all
@@ -24,7 +26,8 @@ object SpecialCellValueType extends StObject {
   
   /**
     * Cells that have errors.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait errors
@@ -32,8 +35,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have errors, or a true/false value.
-    *
+    * Cells that have errors or boolean values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait errorsLogical
@@ -41,8 +45,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have errors, true/false, or a numeric value.
-    *
+    * Cells that have errors, boolean, or numeric values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait errorsLogicalNumber
@@ -50,8 +55,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have errors, true/false, or a string value.
-    *
+    * Cells that have errors, boolean, or string values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait errorsLogicalText
@@ -59,8 +65,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have errors, numeric, or a string value.
-    *
+    * Cells that have errors, numeric, or string values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait errorsNumberText
@@ -68,8 +75,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have errors, or a numeric value.
-    *
+    * Cells that have errors or numeric values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait errorsNumbers
@@ -77,8 +85,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have errors, or a string value.
-    *
+    * Cells that have errors or string values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait errorsText
@@ -86,8 +95,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have a true/false value.
-    *
+    * Cells that have a boolean value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait logical
@@ -95,8 +105,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have a true/false, or a numeric value.
-    *
+    * Cells that have a boolean or numeric value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait logicalNumbers
@@ -104,8 +115,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have a true/false, numeric, or a string value.
-    *
+    * Cells that have a boolean, numeric, or string value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait logicalNumbersText
@@ -113,8 +125,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have a true/false, or a string value.
-    *
+    * Cells that have a boolean or string value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait logicalText
@@ -123,7 +136,8 @@ object SpecialCellValueType extends StObject {
   
   /**
     * Cells that have a numeric value.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait numbers
@@ -131,8 +145,9 @@ object SpecialCellValueType extends StObject {
        with SpecialCellValueType
   
   /**
-    * Cells that have a numeric, or a string value.
-    *
+    * Cells that have a numeric or string value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait numbersText
@@ -141,7 +156,8 @@ object SpecialCellValueType extends StObject {
   
   /**
     * Cells that have a string value.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait text

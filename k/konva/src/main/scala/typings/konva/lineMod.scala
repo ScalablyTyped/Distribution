@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object lineMod {
   
-  @JSImport("konva/types/shapes/Line", "Line")
+  @JSImport("konva/lib/shapes/Line", "Line")
   @js.native
-  class Line[Config /* <: LineConfig */] () extends Shape[Config] {
+  open class Line[Config /* <: LineConfig */] () extends Shape[Config] {
     def this(config: Config) = this()
     
-    def _getTensionPoints(): js.Array[js.Any] = js.native
+    def _getTensionPoints(): js.Array[Any] = js.native
     
-    def _getTensionPointsClosed(): js.Array[js.Any] = js.native
+    def _getTensionPointsClosed(): js.Array[Any] = js.native
     
     def _sceneFunc(context: Context): Unit = js.native
     
@@ -33,7 +33,7 @@ object lineMod {
     
     def getHeight(): Double = js.native
     
-    def getTensionPoints(): js.Any = js.native
+    def getTensionPoints(): Any = js.native
     
     def getWidth(): Double = js.native
     
@@ -56,14 +56,16 @@ object lineMod {
     
     var closed: js.UndefOr[Boolean] = js.undefined
     
-    var points: js.Array[Double]
+    var points: js.UndefOr[
+        js.Array[Double] | js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
+      ] = js.undefined
     
     var tension: js.UndefOr[Double] = js.undefined
   }
   object LineConfig {
     
-    inline def apply(points: js.Array[Double]): LineConfig = {
-      val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
+    inline def apply(): LineConfig = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineConfig]
     }
     
@@ -77,9 +79,13 @@ object lineMod {
       
       inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
       
-      inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(
+        value: js.Array[Double] | js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
+      ): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+      
+      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
       

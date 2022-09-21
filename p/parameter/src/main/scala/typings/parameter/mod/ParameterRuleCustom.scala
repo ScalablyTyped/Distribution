@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterRuleCustom
   extends StObject
      with ParameterRuleBase
-     with /* x */ StringDictionary[js.Any]
+     with /* x */ StringDictionary[Any]
      with _ParameterRuleItem
 object ParameterRuleCustom {
   

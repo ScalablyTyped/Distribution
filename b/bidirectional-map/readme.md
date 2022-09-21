@@ -10,10 +10,10 @@ Create 'key/value' collections of one-to-one correspondence.
 | ------------------ | :-------------: |
 | Full name          | bidirectional-map |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 70706 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9649.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/educastellano/bidirectional-map#readme)

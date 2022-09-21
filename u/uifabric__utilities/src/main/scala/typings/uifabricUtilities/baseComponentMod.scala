@@ -20,25 +20,24 @@ object baseComponentMod {
   
   @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent")
   @js.native
-  class BaseComponent[TProps /* <: IBaseProps[js.Any] */, TState] protected ()
-    extends Component[TProps, TState, js.Any] {
+  open class BaseComponent[TProps /* <: IBaseProps[Any] */, TState] protected () extends Component[TProps, TState, Any] {
     /**
       * BaseComponent constructor
       * @param props - The props for the component.
       * @param context - The context for the component.
       */
     def this(props: TProps) = this()
-    def this(props: TProps, context: js.Any) = this()
+    def this(props: TProps, context: Any) = this()
     
-    /* private */ var __async: js.Any = js.native
+    /* private */ var __async: Any = js.native
     
-    /* private */ var __className: js.Any = js.native
+    /* private */ var __className: Any = js.native
     
-    /* private */ var __disposables: js.Any = js.native
+    /* private */ var __disposables: Any = js.native
     
-    /* private */ var __events: js.Any = js.native
+    /* private */ var __events: Any = js.native
     
-    /* private */ var __resolves: js.Any = js.native
+    /* private */ var __resolves: Any = js.native
     
     /**
       * Gets the async instance associated with the component, created on demand. The async instance gives
@@ -69,7 +68,7 @@ object baseComponentMod {
       */
     /* protected */ def _resolveRef(refName: String): js.Function1[/* ref */ ReactNode, ReactNode] = js.native
     
-    /* private */ var _setComponentRef: js.Any = js.native
+    /* private */ var _setComponentRef: Any = js.native
     
     /**
       * Controls whether the componentRef prop will be resolved by this component instance. If you are
@@ -81,8 +80,8 @@ object baseComponentMod {
     /**
       * Updates the componentRef (by calling it with "this" when necessary.)
       */
-    /* protected */ def _updateComponentRef(currentProps: IBaseProps[js.Any]): Unit = js.native
-    /* protected */ def _updateComponentRef(currentProps: IBaseProps[js.Any], newProps: IBaseProps[js.Any]): Unit = js.native
+    /* protected */ def _updateComponentRef(currentProps: IBaseProps[Any]): Unit = js.native
+    /* protected */ def _updateComponentRef(currentProps: IBaseProps[Any], newProps: IBaseProps[Any]): Unit = js.native
     
     /**
       * Warns when props are required if a condition is met.
@@ -143,8 +142,8 @@ object baseComponentMod {
       */
     inline def onError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")().asInstanceOf[Unit]
     inline def onError(errorMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def onError(errorMessage: String, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def onError(errorMessage: Unit, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def onError(errorMessage: String, ex: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def onError(errorMessage: Unit, ex: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   inline def nullRender(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullRender")().asInstanceOf[Element | Null]

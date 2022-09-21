@@ -23,7 +23,7 @@ trait ContainerStartedEvent extends StObject {
   var portMappings: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.ContainerStartedEvent & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.ContainerStartedEvent & TopLevel[Any]
   ] = js.undefined
 }
 object ContainerStartedEvent {
@@ -46,7 +46,7 @@ object ContainerStartedEvent {
     inline def setPortMappings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.ContainerStartedEvent & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.ContainerStartedEvent & TopLevel[Any]
     ): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
     inline def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)

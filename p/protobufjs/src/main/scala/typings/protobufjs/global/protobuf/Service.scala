@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("protobuf.Service")
 @js.native
-class Service protected ()
+open class Service protected ()
   extends typings.protobufjs.mod.Service {
   /**
     * Constructs a new service instance.
@@ -17,7 +17,7 @@ class Service protected ()
     * @throws {TypeError} If arguments are invalid
     */
   def this(name: String) = this()
-  def this(name: String, options: StringDictionary[js.Any]) = this()
+  def this(name: String, options: StringDictionary[Any]) = this()
 }
 /* static members */
 object Service {

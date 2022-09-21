@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,21 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Matrix extends StObject {
   
-  /* private */ var _isIdentity: js.Any = js.native
+  /* private */ var _isIdentity: Any = js.native
   
-  /* private */ var _isIdentity3x2: js.Any = js.native
+  /* private */ var _isIdentity3x2: Any = js.native
   
-  /* private */ var _isIdentity3x2Dirty: js.Any = js.native
+  /* private */ var _isIdentity3x2Dirty: Any = js.native
   
-  /* private */ var _isIdentityDirty: js.Any = js.native
+  /* private */ var _isIdentityDirty: Any = js.native
   
-  /* private */ val _m: js.Any = js.native
+  /* private */ val _m: Any = js.native
   
-  /** @hidden */
-  def _markAsUpdated(): Unit = js.native
-  
-  /** @hidden */
-  /* private */ var _updateIdentityStatus: js.Any = js.native
+  /* private */ var _updateIdentityStatus: Any = js.native
   
   /**
     * Adds the current matrix with a second one
@@ -67,7 +62,7 @@ trait Matrix extends StObject {
     * Returns the matrix as a Float32Array or Array<number>
     * @returns the matrix underlying array.
     */
-  def asArray(): DeepImmutable[Float32Array | js.Array[Double]] = js.native
+  def asArray(): DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
   
   /**
     * Copy the current matrix from the given one
@@ -84,24 +79,40 @@ trait Matrix extends StObject {
     * @param offset defines the offset in the target array where to start storing values
     * @returns the current matrix
     */
-  def copyToArray(array: Float32Array): Matrix = js.native
-  def copyToArray(array: Float32Array, offset: Double): Matrix = js.native
+  def copyToArray(array: js.typedarray.Float32Array): Matrix = js.native
+  def copyToArray(array: js.typedarray.Float32Array, offset: Double): Matrix = js.native
   
   /**
     * Decomposes the current Matrix into a translation, rotation and scaling components
     * @param scale defines the scale vector3 given as a reference to update
     * @param rotation defines the rotation quaternion given as a reference to update
     * @param translation defines the translation vector3 given as a reference to update
+    * @param preserveScalingNode Use scaling sign coming from this node. Otherwise scaling sign might change.
     * @returns true if operation was successful
     */
   def decompose(): Boolean = js.native
+  def decompose(scale: Unit, rotation: Unit, translation: Unit, preserveScalingNode: TransformNode): Boolean = js.native
   def decompose(scale: Unit, rotation: Unit, translation: Vector3): Boolean = js.native
+  def decompose(scale: Unit, rotation: Unit, translation: Vector3, preserveScalingNode: TransformNode): Boolean = js.native
   def decompose(scale: Unit, rotation: Quaternion): Boolean = js.native
+  def decompose(scale: Unit, rotation: Quaternion, translation: Unit, preserveScalingNode: TransformNode): Boolean = js.native
   def decompose(scale: Unit, rotation: Quaternion, translation: Vector3): Boolean = js.native
+  def decompose(scale: Unit, rotation: Quaternion, translation: Vector3, preserveScalingNode: TransformNode): Boolean = js.native
   def decompose(scale: Vector3): Boolean = js.native
+  def decompose(scale: Vector3, rotation: Unit, translation: Unit, preserveScalingNode: TransformNode): Boolean = js.native
   def decompose(scale: Vector3, rotation: Unit, translation: Vector3): Boolean = js.native
+  def decompose(scale: Vector3, rotation: Unit, translation: Vector3, preserveScalingNode: TransformNode): Boolean = js.native
   def decompose(scale: Vector3, rotation: Quaternion): Boolean = js.native
+  def decompose(scale: Vector3, rotation: Quaternion, translation: Unit, preserveScalingNode: TransformNode): Boolean = js.native
   def decompose(scale: Vector3, rotation: Quaternion, translation: Vector3): Boolean = js.native
+  def decompose(scale: Vector3, rotation: Quaternion, translation: Vector3, preserveScalingNode: TransformNode): Boolean = js.native
+  
+  /**
+    * Decomposes the current Matrix into a translation, rotation and scaling components of the provided node
+    * @param node the node to decompose the matrix to
+    * @returns true if operation was successful
+    */
+  def decomposeToTransformNode(node: TransformNode): Boolean = js.native
   
   /**
     * Gets the determinant of the matrix
@@ -149,6 +160,14 @@ trait Matrix extends StObject {
   def getRow(index: Double): Nullable[Vector4] = js.native
   
   /**
+    * Gets specific row of the matrix to ref
+    * @param index defines the number of the row to get
+    * @param rowVector vector to store the index-th row of the current matrix
+    * @returns the current matrix
+    */
+  def getRowToRef(index: Double, rowVector: Vector4): Matrix = js.native
+  
+  /**
     * Gets the translation value of the current matrix
     * @returns a new Vector3 as the extracted translation from the matrix
     */
@@ -189,7 +208,12 @@ trait Matrix extends StObject {
   /**
     * Gets the internal data of the matrix
     */
-  def m: DeepImmutable[Float32Array | js.Array[Double]] = js.native
+  def m: DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
+  
+  /**
+    * Update the updateFlag to indicate that the matrix has been updated
+    */
+  def markAsUpdated(): Unit = js.native
   
   /**
     * Multiply two matrices
@@ -214,7 +238,7 @@ trait Matrix extends StObject {
     * @param offset defines the offset in the target array where to start storing values
     * @returns the current matrix
     */
-  def multiplyToArray(other: DeepImmutable[Matrix], result: Float32Array, offset: Double): Matrix = js.native
+  def multiplyToArray(other: DeepImmutable[Matrix], result: js.typedarray.Float32Array, offset: Double): Matrix = js.native
   
   /**
     * Sets the given matrix "result" with the multiplication result of the current Matrix and the given one
@@ -298,7 +322,7 @@ trait Matrix extends StObject {
     * Returns the matrix as a Float32Array or Array<number>
     * @returns the matrix underlying array
     */
-  def toArray(): DeepImmutable[Float32Array | js.Array[Double]] = js.native
+  def toArray(): DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
   
   /**
     * Writes to the given matrix a normal matrix, computed from this one (using values from identity matrix for fourth row and column).

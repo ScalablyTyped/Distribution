@@ -16,7 +16,7 @@ object sendMessageCommandMod {
   
   @JSImport("@aws-sdk/client-sqs-node/commands/SendMessageCommand", "SendMessageCommand")
   @js.native
-  class SendMessageCommand protected ()
+  open class SendMessageCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object sendMessageCommandMod {
     override val middlewareStack: MiddlewareStack[SendMessageInput, SendMessageOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: SQSResolvedConfiguration
     ): Handler[SendMessageInput, SendMessageOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: SQSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[SendMessageInput, SendMessageOutput] = js.native
   }
 }

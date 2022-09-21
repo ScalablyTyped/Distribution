@@ -114,7 +114,7 @@ object gapi {
           
           inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
           
-          inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+          inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
         }
       }
       
@@ -142,13 +142,13 @@ object gapi {
           
           inline def setAmpUrlsUndefined: Self = StObject.set(x, "ampUrls", js.undefined)
           
-          inline def setAmpUrlsVarargs(value: AmpUrl*): Self = StObject.set(x, "ampUrls", js.Array(value :_*))
+          inline def setAmpUrlsVarargs(value: AmpUrl*): Self = StObject.set(x, "ampUrls", js.Array(value*))
           
           inline def setUrlErrors(value: js.Array[AmpUrlError]): Self = StObject.set(x, "urlErrors", value.asInstanceOf[js.Any])
           
           inline def setUrlErrorsUndefined: Self = StObject.set(x, "urlErrors", js.undefined)
           
-          inline def setUrlErrorsVarargs(value: AmpUrlError*): Self = StObject.set(x, "urlErrors", js.Array(value :_*))
+          inline def setUrlErrorsVarargs(value: AmpUrlError*): Self = StObject.set(x, "urlErrors", js.Array(value*))
         }
       }
     }

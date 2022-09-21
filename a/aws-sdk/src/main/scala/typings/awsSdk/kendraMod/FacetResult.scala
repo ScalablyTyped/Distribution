@@ -38,7 +38,7 @@ object FacetResult {
     
     inline def setDocumentAttributeValueCountPairsUndefined: Self = StObject.set(x, "DocumentAttributeValueCountPairs", js.undefined)
     
-    inline def setDocumentAttributeValueCountPairsVarargs(value: DocumentAttributeValueCountPair*): Self = StObject.set(x, "DocumentAttributeValueCountPairs", js.Array(value :_*))
+    inline def setDocumentAttributeValueCountPairsVarargs(value: DocumentAttributeValueCountPair*): Self = StObject.set(x, "DocumentAttributeValueCountPairs", js.Array(value*))
     
     inline def setDocumentAttributeValueType(value: DocumentAttributeValueType): Self = StObject.set(x, "DocumentAttributeValueType", value.asInstanceOf[js.Any])
     

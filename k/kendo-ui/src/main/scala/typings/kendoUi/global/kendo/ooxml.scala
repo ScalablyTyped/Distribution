@@ -9,7 +9,7 @@ object ooxml {
   
   @JSGlobal("kendo.ooxml.Workbook")
   @js.native
-  class Workbook ()
+  open class Workbook ()
     extends StObject
        with typings.kendoUi.kendo.ooxml.Workbook {
     def this(options: WorkbookOptions) = this()

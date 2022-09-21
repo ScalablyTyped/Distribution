@@ -1,7 +1,7 @@
 package typings.vegaLite
 
+import typings.vegaLite.channeldefMod.FormatMixins
 import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.srcGuideMod.FormatMixins
 import typings.vegaLite.srcGuideMod.TitleMixins
 import typings.vegaLite.srcGuideMod.VlOnlyGuideConfig
 import typings.vegaLite.vegaLiteStrings.align
@@ -79,12 +79,14 @@ object headerMod {
   
   @JSImport("vega-lite/build/src/header", "HEADER_CONFIGS")
   @js.native
-  val HEADER_CONFIGS: js.Array[header | headerRow | headerColumn | headerFacet] = js.native
+  val HEADER_CONFIGS: js.Array[
+    /* keyof vega-lite.vega-lite/build/src/header.HeaderConfigMixins<any> */ header | headerRow | headerColumn | headerFacet
+  ] = js.native
   
   @JSImport("vega-lite/build/src/header", "HEADER_LABEL_PROPERTIES")
   @js.native
   val HEADER_LABEL_PROPERTIES: js.Array[
-    orient | titleAlign | titleAnchor | titleBaseline | titleColor | titleFont | titleFontSize | titleFontStyle | titleFontWeight | titleLimit | titleLineHeight | titleOrient | titlePadding | labelAlign | labelBaseline | labelColor | labelFont | labelFontSize | labelFontStyle | labelFontWeight | labelLimit | labelPadding | format | formatType | titleAngle | labels | labelLineHeight | labelAngle | labelExpr | labelAnchor | labelOrient
+    /* keyof vega-lite.vega-lite/build/src/header.CoreHeader<any> */ titleAnchor | titleAlign | titleAngle | titleBaseline | titleColor | titleFont | titleFontSize | titleFontStyle | titleFontWeight | titleLimit | titleLineHeight | titleOrient | titlePadding | labels | labelAlign | labelBaseline | labelAnchor | labelExpr | labelAngle | labelColor | labelFont | labelFontSize | labelFontStyle | labelFontWeight | labelLimit | labelLineHeight | labelOrient | labelPadding | orient | format | formatType
   ] = js.native
   
   /* Inlined std.Partial<std.Record<keyof vega-lite.vega-lite/build/src/header.CoreHeader<any>, keyof vega.vega.TitleConfig>> */
@@ -442,7 +444,7 @@ object headerMod {
   @JSImport("vega-lite/build/src/header", "HEADER_TITLE_PROPERTIES")
   @js.native
   val HEADER_TITLE_PROPERTIES: js.Array[
-    orient | titleAlign | titleAnchor | titleBaseline | titleColor | titleFont | titleFontSize | titleFontStyle | titleFontWeight | titleLimit | titleLineHeight | titleOrient | titlePadding | labelAlign | labelBaseline | labelColor | labelFont | labelFontSize | labelFontStyle | labelFontWeight | labelLimit | labelPadding | format | formatType | titleAngle | labels | labelLineHeight | labelAngle | labelExpr | labelAnchor | labelOrient
+    /* keyof vega-lite.vega-lite/build/src/header.CoreHeader<any> */ titleAnchor | titleAlign | titleAngle | titleBaseline | titleColor | titleFont | titleFontSize | titleFontStyle | titleFontWeight | titleLimit | titleLineHeight | titleOrient | titlePadding | labels | labelAlign | labelBaseline | labelAnchor | labelExpr | labelAngle | labelColor | labelFont | labelFontSize | labelFontStyle | labelFontWeight | labelLimit | labelLineHeight | labelOrient | labelPadding | orient | format | formatType
   ] = js.native
   
   /* Inlined std.Partial<std.Record<keyof vega-lite.vega-lite/build/src/header.CoreHeader<any>, keyof vega.vega.TitleConfig>> */
@@ -834,6 +836,13 @@ object headerMod {
     var labelColor: js.UndefOr[Color | ES] = js.undefined
     
     /**
+      * [Vega expression](https://vega.github.io/vega/docs/expressions/) for customizing labels.
+      *
+      * __Note:__ The label text and value can be assessed via the `label` and `value` properties of the header's backing `datum` object.
+      */
+    var labelExpr: js.UndefOr[String] = js.undefined
+    
+    /**
       * The font of the header label.
       */
     var labelFont: js.UndefOr[String | ES] = js.undefined
@@ -1002,6 +1011,10 @@ object headerMod {
       
       inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
       
+      inline def setLabelExpr(value: String): Self = StObject.set(x, "labelExpr", value.asInstanceOf[js.Any])
+      
+      inline def setLabelExprUndefined: Self = StObject.set(x, "labelExpr", js.undefined)
+      
       inline def setLabelFont(value: String | ES): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
       
       inline def setLabelFontSize(value: Double | ES): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
@@ -1099,8 +1112,8 @@ object headerMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.vegaLite.srcGuideMod.FormatMixins because Already inherited
-  - typings.vegaLite.srcGuideMod.Guide because var conflicts: format, formatType, labelExpr. Inlined  */ trait Header[ES /* <: ExprRef | SignalRef */]
+  - typings.vegaLite.channeldefMod.FormatMixins because Already inherited
+  - typings.vegaLite.srcGuideMod.Guide because var conflicts: format, formatType. Inlined  */ trait Header[ES /* <: ExprRef | SignalRef */]
     extends StObject
        with CoreHeader[ES]
        with TitleMixins

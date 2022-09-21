@@ -58,7 +58,7 @@ trait Collection[T]
   /**
     * @see _.differenceBy
     */
-  def differenceBy(values: (List[js.Any] | ValueIteratee[T])*): Collection[T] = js.native
+  def differenceBy(values: (List[Any] | ValueIteratee[T])*): Collection[T] = js.native
   /**
     * @see _.differenceBy
     */
@@ -72,7 +72,7 @@ trait Collection[T]
   /**
     * @see _.differenceWith
     */
-  def differenceWith[T2, T3, T4](values: (List[js.Any] | (Comparator2[T, scala.Nothing]))*): Collection[T] = js.native
+  def differenceWith[T2, T3, T4](values: (List[Any] | (Comparator2[T, scala.Nothing]))*): Collection[T] = js.native
   
   /**
     * @see _.drop
@@ -102,24 +102,24 @@ trait Collection[T]
     * @see _.each
     */
   def each(): Collection[T] = js.native
-  def each(iteratee: ListIterator[T, js.Any]): Collection[T] = js.native
+  def each(iteratee: ListIterator[T, Any]): Collection[T] = js.native
   
   /**
     * @see _.eachRight
     */
   def eachRight(): Collection[T] = js.native
-  def eachRight(iteratee: ListIterator[T, js.Any]): Collection[T] = js.native
+  def eachRight(iteratee: ListIterator[T, Any]): Collection[T] = js.native
   /**
     * @see _.eachRight
     */
   @JSName("eachRight")
-  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[ListIterator[T, js.Any]], Collection[T]] = js.native
+  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[ListIterator[T, Any]], Collection[T]] = js.native
   
   /**
     * @see _.each
     */
   @JSName("each")
-  var each_Original: js.Function1[/* iteratee */ js.UndefOr[ListIterator[T, js.Any]], Collection[T]] = js.native
+  var each_Original: js.Function1[/* iteratee */ js.UndefOr[ListIterator[T, Any]], Collection[T]] = js.native
   
   /**
     * @see _.every
@@ -195,12 +195,12 @@ trait Collection[T]
   /**
     * @see _.flatMap
     */
-  def flatMap(): Collection[js.Any | T] = js.native
+  def flatMap(): Collection[Any | T] = js.native
   def flatMap(iteratee: js.Object): Collection[Boolean] = js.native
   /**
     * @see _.flatMap
     */
-  def flatMap(iteratee: js.Tuple2[PropertyName, js.Any]): Collection[Boolean] = js.native
+  def flatMap(iteratee: js.Tuple2[PropertyName, Any]): Collection[Boolean] = js.native
   /**
     * @see _.flatMap
     */
@@ -215,7 +215,7 @@ trait Collection[T]
   /**
     * @see _.flatMapDeep
     */
-  def flatMapDeep(iteratee: js.Tuple2[PropertyName, js.Any]): Collection[Boolean] = js.native
+  def flatMapDeep(iteratee: js.Tuple2[PropertyName, Any]): Collection[Boolean] = js.native
   /**
     * @see _.flatMapDeep
     */
@@ -232,8 +232,8 @@ trait Collection[T]
   /**
     * @see _.flatMapDepth
     */
-  def flatMapDepth(iteratee: js.Tuple2[PropertyName, js.Any]): Collection[Boolean] = js.native
-  def flatMapDepth(iteratee: js.Tuple2[PropertyName, js.Any], depth: Double): Collection[Boolean] = js.native
+  def flatMapDepth(iteratee: js.Tuple2[PropertyName, Any]): Collection[Boolean] = js.native
+  def flatMapDepth(iteratee: js.Tuple2[PropertyName, Any], depth: Double): Collection[Boolean] = js.native
   /**
     * @see _.flatMapDepth
     */
@@ -245,12 +245,12 @@ trait Collection[T]
   /**
     * @see _.flatten
     */
-  def flatten(): Collection[js.Any | T] = js.native
+  def flatten(): Collection[Any | T] = js.native
   
   /**
     * @see _.flattenDeep
     */
-  def flattenDeep(): Collection[Flat[js.Any] | T] = js.native
+  def flattenDeep(): Collection[Flat[Any] | T] = js.native
   
   /**
     * @see _.flattenDepth
@@ -262,18 +262,18 @@ trait Collection[T]
     * @see _.forEach
     */
   def forEach(): Collection[T] = js.native
-  def forEach(iteratee: ListIterator[T, js.Any]): Collection[T] = js.native
+  def forEach(iteratee: ListIterator[T, Any]): Collection[T] = js.native
   
   /**
     * @see _.forEachRight
     */
   def forEachRight(): Collection[T] = js.native
-  def forEachRight(iteratee: ListIterator[T, js.Any]): Collection[T] = js.native
+  def forEachRight(iteratee: ListIterator[T, Any]): Collection[T] = js.native
   
   /**
     * @see _.fromPairs
     */
-  def fromPairs(): Object[Dictionary[js.Any]] = js.native
+  def fromPairs(): Object[Dictionary[Any]] = js.native
   
   /**
     * @see _.get
@@ -320,7 +320,7 @@ trait Collection[T]
   /**
     * @see _.intersectionBy
     */
-  def intersectionBy(values: (List[js.Any] | ValueIteratee[T])*): Collection[T] = js.native
+  def intersectionBy(values: (List[Any] | ValueIteratee[T])*): Collection[T] = js.native
   /**
     * @see _.intersectionBy
     */
@@ -329,7 +329,7 @@ trait Collection[T]
   /**
     * @see _.intersectionWith
     */
-  def intersectionWith(values: (List[js.Any] | (Comparator2[T, scala.Nothing]))*): Collection[T] = js.native
+  def intersectionWith(values: (List[Any] | (Comparator2[T, scala.Nothing]))*): Collection[T] = js.native
   /**
     * @see _.intersectionWith
     */
@@ -379,11 +379,11 @@ trait Collection[T]
   /**
     * @see _.map
     */
-  def map(iteratee: js.Tuple2[PropertyName, js.Any]): Collection[Boolean] = js.native
+  def map(iteratee: js.Tuple2[PropertyName, Any]): Collection[Boolean] = js.native
   /**
     * @see _.map
     */
-  def map(iteratee: PropertyName): Collection[js.Any] = js.native
+  def map(iteratee: PropertyName): Collection[Any] = js.native
   /**
     * @see _.map
     */
@@ -402,7 +402,7 @@ trait Collection[T]
   /**
     * @see _.mapValues
     */
-  def mapValues(iteratee: java.lang.String): Object[Dictionary[js.Any]] = js.native
+  def mapValues(iteratee: java.lang.String): Object[Dictionary[Any]] = js.native
   /**
     * @see _.mapValues
     */
@@ -487,7 +487,7 @@ trait Collection[T]
   /**
     * @see _.over
     */
-  def over[TResult](iteratees: (Many[js.Function1[/* repeated */ js.Any, TResult]])*): Function[js.Function1[/* repeated */ js.Any, js.Array[TResult]]] = js.native
+  def over[TResult](iteratees: (Many[js.Function1[/* repeated */ Any, TResult]])*): Function[js.Function1[/* repeated */ Any, js.Array[TResult]]] = js.native
   
   /**
     * @see _.overEvery
@@ -712,7 +712,7 @@ trait Collection[T]
   /**
     * @see _.transform
     */
-  def transform(): Collection[js.Any] = js.native
+  def transform(): Collection[Any] = js.native
   /**
     * @see _.transform
     */
@@ -771,16 +771,16 @@ trait Collection[T]
   /**
     * @see _.unzip
     */
-  def unzip(): js.Any | Collection[js.Array[js.Any]] = js.native
+  def unzip(): Any | Collection[js.Array[Any]] = js.native
   
   /**
     * @see _.unzipWith
     */
-  def unzipWith(): js.Any | Collection[js.Array[js.Any]] = js.native
+  def unzipWith(): Any | Collection[js.Array[Any]] = js.native
   /**
     * @see _.unzipWith
     */
-  def unzipWith[TResult](iteratee: js.Function1[/* repeated */ js.Any, TResult]): Collection[TResult] = js.native
+  def unzipWith[TResult](iteratee: js.Function1[/* repeated */ Any, TResult]): Collection[TResult] = js.native
   
   /**
     * @see _.without
@@ -840,7 +840,7 @@ trait Collection[T]
     * @see _.zipObjectDeep
     */
   def zipObjectDeep(): Object[js.Object] = js.native
-  def zipObjectDeep(values: List[js.Any]): Object[js.Object] = js.native
+  def zipObjectDeep(values: List[Any]): Object[js.Object] = js.native
   
   /**
     * @see _.zipWith

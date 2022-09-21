@@ -38,7 +38,7 @@ object CalendarList_ {
     
     inline def setItems(value: js.Array[CalendarListEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: CalendarListEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: CalendarListEntry*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: calendarNumbersigncalendarList): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.GridColumnGap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GridColumnGapProps[TLength] extends StObject {
   
-  val gridColumnGap: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val gridColumnGap: js.UndefOr[ResponsiveValue[GridColumnGap[TLength]]] = js.undefined
 }
 object GridColumnGapProps {
   
@@ -21,16 +18,10 @@ object GridColumnGapProps {
   
   extension [Self <: GridColumnGapProps[?], TLength](x: Self & GridColumnGapProps[TLength]) {
     
-    inline def setGridColumnGap(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
+    inline def setGridColumnGap(value: ResponsiveValue[GridColumnGap[TLength]]): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
     
     inline def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
     
-    inline def setGridColumnGapVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "gridColumnGap", js.Array(value :_*))
+    inline def setGridColumnGapVarargs(value: GridColumnGap[TLength]*): Self = StObject.set(x, "gridColumnGap", js.Array(value*))
   }
 }

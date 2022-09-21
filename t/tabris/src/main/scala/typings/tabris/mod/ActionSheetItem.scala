@@ -10,7 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "ActionSheetItem")
 @js.native
-class ActionSheetItem () extends StObject {
+/**
+  * Describes an entry in an [`ActionSheet`](./ActionSheet.md).
+  */
+open class ActionSheetItem () extends StObject {
   def this(properties: typings.tabris.anon.Image) = this()
   
   /**

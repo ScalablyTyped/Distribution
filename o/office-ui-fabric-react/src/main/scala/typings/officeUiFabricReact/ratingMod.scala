@@ -14,7 +14,7 @@ object ratingMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Rating", "RatingBase")
   @js.native
-  class RatingBase protected ()
+  open class RatingBase protected ()
     extends typings.officeUiFabricReact.ratingBaseMod.RatingBase {
     def this(props: IRatingProps) = this()
   }

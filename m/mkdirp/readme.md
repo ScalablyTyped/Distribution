@@ -10,10 +10,10 @@ Recursively mkdir, like `mkdir -p`
 | ------------------ | :-------------: |
 | Full name          | mkdirp |
 | Keywords           | mkdir, directory, make dir, make, dir, recursive, native |
-| # releases         | 10 |
-| # dependents       | 16700 |
-| # downloads        | 1098653498 |
-| # stars            | 345 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5169797766666666E8 |
+| # stars            | 116.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/node-mkdirp#readme)

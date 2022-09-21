@@ -227,7 +227,7 @@ object ChartDataSeriesOptions {
     
     inline def setDataPoints(value: js.Array[ChartDataPoint]): Self = StObject.set(x, "dataPoints", value.asInstanceOf[js.Any])
     
-    inline def setDataPointsVarargs(value: ChartDataPoint*): Self = StObject.set(x, "dataPoints", js.Array(value :_*))
+    inline def setDataPointsVarargs(value: ChartDataPoint*): Self = StObject.set(x, "dataPoints", js.Array(value*))
     
     inline def setExplodeOnClick(value: Boolean): Self = StObject.set(x, "explodeOnClick", value.asInstanceOf[js.Any])
     

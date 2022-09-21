@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PurchaseReservedInstancesOfferingResult extends StObject {
   
   /**
-    * The IDs of the purchased Reserved Instances.
+    * The IDs of the purchased Reserved Instances. If your purchase crosses into a discounted pricing tier, the final Reserved Instances IDs might change. For more information, see Crossing pricing tiers in the Amazon Elastic Compute Cloud User Guide.
     */
   var ReservedInstancesId: js.UndefOr[String] = js.undefined
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Size")
 @js.native
-class Size protected ()
+open class Size protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Size {
   /**
@@ -17,7 +17,7 @@ class Size protected ()
   def this(width: Double, height: Double) = this()
   
   /**
-    * Heighht
+    * Height
     */
   /* CompleteClass */
   var height: Double = js.native

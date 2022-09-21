@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "ActionCodeInfo")
 @js.native
-/* private */ class ActionCodeInfo () extends StObject {
+/* private */ open class ActionCodeInfo () extends StObject {
   
   var data: Email = js.native
   

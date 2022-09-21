@@ -12,12 +12,12 @@ trait Panes extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): js.Any
+  def Item(Index: Any): Any
   
   /* private */ @JSName("Outlook.Panes_typekey")
   var OutlookDotPanes_typekey: Panes
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -27,9 +27,9 @@ object Panes {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => js.Any,
+    Item: Any => Any,
     OutlookDotPanes_typekey: Panes,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): Panes = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -45,11 +45,11 @@ object Panes {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => js.Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotPanes_typekey(value: Panes): Self = StObject.set(x, "Outlook.Panes_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("passport-bnet", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with OAuth2Strategy {
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
@@ -34,7 +34,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("passport-bnet", "Strategy")
   @js.native
-  class StrategyCls protected ()
+  open class StrategyCls protected ()
     extends StObject
        with OAuth2Strategy {
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
@@ -58,7 +58,7 @@ object mod {
     
     var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.undefined
+    var proxy: js.UndefOr[Any] = js.undefined
     
     var region: js.UndefOr[String] = js.undefined
     
@@ -68,9 +68,9 @@ object mod {
     
     var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
+    var skipUserProfile: js.UndefOr[Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var store: js.UndefOr[StateStore] = js.undefined
     
@@ -105,7 +105,7 @@ object mod {
       
       inline def setPkceUndefined: Self = StObject.set(x, "pkce", js.undefined)
       
-      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
@@ -121,17 +121,17 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setSkipUserProfile(value: js.Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
+      inline def setSkipUserProfile(value: Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
       
       inline def setSkipUserProfileUndefined: Self = StObject.set(x, "skipUserProfile", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       

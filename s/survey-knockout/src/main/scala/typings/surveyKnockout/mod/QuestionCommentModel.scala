@@ -6,45 +6,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionCommentModel")
 @js.native
-class QuestionCommentModel protected () extends Question {
+open class QuestionCommentModel protected () extends QuestionTextBase {
   def this(name: String) = this()
   
-  /**
+  /*
+    * Accepts pressing the Enter key by end-users and accepts carriage return symbols - \n - in the question value assigned.
+    */
+  def acceptCarriageReturn: Boolean = js.native
+  def acceptCarriageReturn_=(`val`: Boolean): Unit = js.native
+  
+  /*
+    * Specifies whether the question's text area automatically expands its height to avoid the vertical scrollbar and to display the entire multi-line contents entered by respondents.
+    * Default value is false.
+    */
+  def autoGrow: Boolean = js.native
+  def autoGrow_=(`val`: Boolean): Unit = js.native
+  
+  def className: String = js.native
+  
+  /*
     * The html cols attribute.
     */
-  var cols: Double = js.native
+  def cols: Double = js.native
+  def cols_=(`val`: Double): Unit = js.native
   
-  def getMaxLength(): js.Any = js.native
+  var element: Any = js.native
   
-  val locPlaceHolder: LocalizableString = js.native
+  def onInput(event: Any): Unit = js.native
   
-  /**
-    * The maximum text length. If it is -1, defaul value, then the survey maxTextLength property will be used.
-    * If it is 0, then the value is unlimited
-    * @see SurveyModel.maxTextLength
-    */
-  var maxLength: Double = js.native
+  def onKeyDown(event: Any): Unit = js.native
   
-  /**
-    * Use this property to set the input place holder.
-    */
-  var placeHolder: String = js.native
-  
-  /**
+  /*
     * The html rows attribute.
     */
-  var rows: Double = js.native
+  def rows: Double = js.native
+  def rows_=(`val`: Double): Unit = js.native
   
-  /**
-    * Gets or sets a value that specifies how the question updates it's value.
-    *
-    * The following options are available:
-    * - `default` - get the value from survey.textUpdateMode
-    * - `onBlur` - the value is updated after an input loses the focus.
-    * - `onTyping` - update the value of text questions, "text" and "comment", on every key press.
-    *
-    * Note, that setting to "onTyping" may lead to a performance degradation, in case you have many expressions in the survey.
-    * @see survey.textUpdateMode
-    */
-  var textUpdateMode: String = js.native
+  /* protected */ def setNewValue(newValue: String): Any = js.native
+  
+  def updateElement(): Unit = js.native
 }

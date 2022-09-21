@@ -48,9 +48,9 @@ trait PlusAccelerometer extends StObject {
   def getCurrentAcceleration(successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit]): Unit = js.native
   def getCurrentAcceleration(
     successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def getCurrentAcceleration(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getCurrentAcceleration(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 监听设备加速度变化信息
@@ -64,11 +64,11 @@ trait PlusAccelerometer extends StObject {
   def watchAcceleration(successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit]): Double = js.native
   def watchAcceleration(
     successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Double = js.native
   def watchAcceleration(
     successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     options: PlusAccelerometerAccelerometerOption
   ): Double = js.native
   def watchAcceleration(
@@ -76,10 +76,10 @@ trait PlusAccelerometer extends StObject {
     errorCB: Unit,
     options: PlusAccelerometerAccelerometerOption
   ): Double = js.native
-  def watchAcceleration(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
+  def watchAcceleration(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Double = js.native
   def watchAcceleration(
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     options: PlusAccelerometerAccelerometerOption
   ): Double = js.native
   def watchAcceleration(successCB: Unit, errorCB: Unit, options: PlusAccelerometerAccelerometerOption): Double = js.native

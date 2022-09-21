@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLayersRequest extends StObject {
   
   /**
+    * The compatible instruction set architecture.
+    */
+  var CompatibleArchitecture: js.UndefOr[Architecture] = js.undefined
+  
+  /**
     * A runtime identifier. For example, go1.x.
     */
   var CompatibleRuntime: js.UndefOr[Runtime] = js.undefined
@@ -29,6 +34,10 @@ object ListLayersRequest {
   }
   
   extension [Self <: ListLayersRequest](x: Self) {
+    
+    inline def setCompatibleArchitecture(value: Architecture): Self = StObject.set(x, "CompatibleArchitecture", value.asInstanceOf[js.Any])
+    
+    inline def setCompatibleArchitectureUndefined: Self = StObject.set(x, "CompatibleArchitecture", js.undefined)
     
     inline def setCompatibleRuntime(value: Runtime): Self = StObject.set(x, "CompatibleRuntime", value.asInstanceOf[js.Any])
     

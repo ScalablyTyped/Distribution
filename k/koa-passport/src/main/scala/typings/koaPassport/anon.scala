@@ -1,6 +1,8 @@
 package typings.koaPassport
 
+import typings.koaPassport.koaPassportBooleans.`false`
 import typings.node.httpMod.IncomingMessage
+import typings.passport.mod.global.Express.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,18 +12,18 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply[TUser, TID](
+    def apply[TID](
       fn: js.Function2[
-          /* user */ TUser, 
-          /* done */ js.Function2[/* err */ js.Any, /* id */ js.UndefOr[TID], Unit], 
+          /* user */ User, 
+          /* done */ js.Function2[/* err */ Any, /* id */ js.UndefOr[TID], Unit], 
           Unit
         ]
     ): Unit = js.native
-    def apply[TUser, TID, TR /* <: IncomingMessage */](
+    def apply[TID, TR /* <: IncomingMessage */](
       fn: js.Function3[
           /* req */ TR, 
-          /* user */ TUser, 
-          /* done */ js.Function2[/* err */ js.Any, /* id */ js.UndefOr[TID], Unit], 
+          /* user */ User, 
+          /* done */ js.Function2[/* err */ Any, /* id */ js.UndefOr[TID], Unit], 
           Unit
         ]
     ): Unit = js.native
@@ -30,18 +32,18 @@ object anon {
   @js.native
   trait FnCallFn extends StObject {
     
-    def apply[TUser, TID](
+    def apply[TID](
       fn: js.Function2[
           /* id */ TID, 
-          /* done */ js.Function2[/* err */ js.Any, /* user */ js.UndefOr[TUser], Unit], 
+          /* done */ js.Function2[/* err */ Any, /* user */ js.UndefOr[User | `false` | Null], Unit], 
           Unit
         ]
     ): Unit = js.native
-    def apply[TUser, TID, TR /* <: IncomingMessage */](
+    def apply[TID, TR /* <: IncomingMessage */](
       fn: js.Function3[
           /* req */ TR, 
           /* id */ TID, 
-          /* done */ js.Function2[/* err */ js.Any, /* user */ js.UndefOr[TUser], Unit], 
+          /* done */ js.Function2[/* err */ Any, /* user */ js.UndefOr[User | `false` | Null], Unit], 
           Unit
         ]
     ): Unit = js.native

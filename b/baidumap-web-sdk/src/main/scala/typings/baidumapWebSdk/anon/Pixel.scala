@@ -10,7 +10,7 @@ trait Pixel extends StObject {
   
   var point: typings.baidumapWebSdk.BMap.Point
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
 }
@@ -19,7 +19,7 @@ object Pixel {
   inline def apply(
     pixel: typings.baidumapWebSdk.BMap.Pixel,
     point: typings.baidumapWebSdk.BMap.Point,
-    target: js.Any,
+    target: Any,
     `type`: String
   ): Pixel = {
     val __obj = js.Dynamic.literal(pixel = pixel.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
@@ -33,7 +33,7 @@ object Pixel {
     
     inline def setPoint(value: typings.baidumapWebSdk.BMap.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,7 @@ object ListConfigurationsResponse {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "configurations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

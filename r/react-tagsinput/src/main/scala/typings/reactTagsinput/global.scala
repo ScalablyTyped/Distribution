@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("ReactTagsInput")
     @js.native
-    class ^[Tag] ()
+    open class ^[Tag] ()
       extends typings.reactTagsinput.mod.^[Tag]
   }
 }

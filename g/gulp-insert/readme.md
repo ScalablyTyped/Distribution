@@ -10,10 +10,10 @@ Append or Prepend a string with gulp
 | ------------------ | :-------------: |
 | Full name          | gulp-insert |
 | Keywords           | gulp, gulpplugin, append, insert, prepend |
-| # releases         | 0 |
-| # dependents       | 138 |
-| # downloads        | 1725835 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 163102.33333333334 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/rschmukler/gulp-insert/)

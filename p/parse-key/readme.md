@@ -10,10 +10,10 @@ Parses strings into key objects of the same format as the ones emitted by nodejs
 | ------------------ | :-------------: |
 | Full name          | parse-key |
 | Keywords           | readline, string, print, convert |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 2511450 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 158216.66666666666 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/thlorenz/parse-key#readme)

@@ -20,6 +20,18 @@ object BROWSERS extends StObject {
   /* 4 */ val CHROME: typings.openseadragon.mod.BROWSERS.CHROME & Double = js.native
   
   @js.native
+  sealed trait CHROMEEDGE
+    extends StObject
+       with BROWSERS
+  /* 7 */ val CHROMEEDGE: typings.openseadragon.mod.BROWSERS.CHROMEEDGE & Double = js.native
+  
+  @js.native
+  sealed trait EDGE
+    extends StObject
+       with BROWSERS
+  /* 6 */ val EDGE: typings.openseadragon.mod.BROWSERS.EDGE & Double = js.native
+  
+  @js.native
   sealed trait FIREFOX
     extends StObject
        with BROWSERS

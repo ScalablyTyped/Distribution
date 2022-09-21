@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object moneyFormatMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(format: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(format: js.Any, number: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(format: Unit, number: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(format: Any): Any = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(format: Any, number: Any): Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(format: Unit, number: Any): Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/money_format", JSImport.Namespace)
   @js.native

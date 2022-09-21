@@ -4,6 +4,7 @@ import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
+import typings.react.mod.ClassAttributes
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
 import typings.react.mod.TableHTMLAttributes
@@ -16,9 +17,20 @@ object tableMod {
   
   @JSImport("grommet/components/Table", "Table")
   @js.native
-  val Table: FC[
-    TableProps & (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])
-  ] = js.native
+  val Table: FC[TableExtendedProps] = js.native
+  
+  trait TableExtendedProps
+    extends StObject
+       with TableProps
+       with ClassAttributes[HTMLTableElement]
+       with TableHTMLAttributes[HTMLTableElement]
+  object TableExtendedProps {
+    
+    inline def apply(): TableExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TableExtendedProps]
+    }
+  }
   
   trait TableProps extends StObject {
     
@@ -62,4 +74,6 @@ object tableMod {
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     }
   }
+  
+  type htmlTableProps = DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]
 }

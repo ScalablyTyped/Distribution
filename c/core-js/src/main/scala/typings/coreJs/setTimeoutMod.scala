@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object setTimeoutMod {
   
   /* was `typeof core.setTimeout` */
-  inline def apply(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def apply(handler: js.Any, timeout: Unit, args: js.Any*): Double = (^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(handler: Any, timeout: Any, args: Any*): Double = (^.asInstanceOf[js.Dynamic].apply((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def apply(handler: Any, timeout: Unit, args: Any*): Double = (^.asInstanceOf[js.Dynamic].apply((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
   @JSImport("core-js/fn/set-timeout", JSImport.Namespace)
   @js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-chartjs-2" : "2.11.1"
+      "react-chartjs-2" : "4.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-chartjs-2" : "2.11.1"
+      "react-chartjs-2" : "4.3.1"
     }
   ],
   "compile-devDependencies" : [

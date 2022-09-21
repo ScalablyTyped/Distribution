@@ -115,7 +115,7 @@ object mod {
       
       inline def setCycle(value: String | js.Array[String]): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
       
-      inline def setCycleVarargs(value: String*): Self = StObject.set(x, "cycle", js.Array(value :_*))
+      inline def setCycleVarargs(value: String*): Self = StObject.set(x, "cycle", js.Array(value*))
       
       inline def setKeepLast(value: Boolean): Self = StObject.set(x, "keepLast", value.asInstanceOf[js.Any])
       

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLStyleSheetsCollection extends StObject {
   
-  def apply(pvarIndex: js.Any): js.Any = js.native
+  def apply(pvarIndex: Any): Any = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
-  def ie9_item(index: Double): js.Any = js.native
+  def ie9_item(index: Double): Any = js.native
   
-  def item(pvarIndex: js.Any): js.Any = js.native
+  def item(pvarIndex: Any): Any = js.native
   
   val length: Double = js.native
 }

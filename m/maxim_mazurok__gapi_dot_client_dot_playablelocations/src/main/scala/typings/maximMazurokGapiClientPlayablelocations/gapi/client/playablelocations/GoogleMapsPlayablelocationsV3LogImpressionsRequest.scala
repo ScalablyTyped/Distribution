@@ -35,7 +35,7 @@ object GoogleMapsPlayablelocationsV3LogImpressionsRequest {
     
     inline def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
     
-    inline def setImpressionsVarargs(value: GoogleMapsPlayablelocationsV3Impression*): Self = StObject.set(x, "impressions", js.Array(value :_*))
+    inline def setImpressionsVarargs(value: GoogleMapsPlayablelocationsV3Impression*): Self = StObject.set(x, "impressions", js.Array(value*))
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

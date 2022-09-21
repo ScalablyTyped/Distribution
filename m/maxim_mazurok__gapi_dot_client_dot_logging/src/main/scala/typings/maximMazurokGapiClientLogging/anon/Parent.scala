@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientLogging.anon
 
-import typings.maximMazurokGapiClientLogging.gapi.client.logging.LogExclusion
+import typings.maximMazurokGapiClientLogging.gapi.client.logging.LogView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,8 +30,8 @@ trait Parent extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The parent resource in which to create the exclusion: "projects/[PROJECT_ID]" "organizations/[ORGANIZATION_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]"
-    * "folders/[FOLDER_ID]" Examples: "projects/my-logging-project", "organizations/123456789".
+    * Required. The bucket in which to create the view `"projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"` For
+    * example:"projects/my-project/locations/global/buckets/my-bucket"
     */
   var parent: String
   
@@ -42,17 +42,20 @@ trait Parent extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: LogExclusion
+  var resource: LogView
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
+  
+  /** Required. The id to use for this view. */
+  var viewId: js.UndefOr[String] = js.undefined
 }
 object Parent {
   
-  inline def apply(parent: String, resource: LogExclusion): Parent = {
+  inline def apply(parent: String, resource: LogView): Parent = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }
@@ -97,7 +100,7 @@ object Parent {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: LogExclusion): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: LogView): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
@@ -106,5 +109,9 @@ object Parent {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    
+    inline def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+    
+    inline def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
   }
 }

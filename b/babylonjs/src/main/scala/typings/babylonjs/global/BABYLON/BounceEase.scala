@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param bounces Defines the number of bounces
   * @param bounciness Defines the amplitude of the bounce
   */
-class BounceEase ()
+open class BounceEase ()
   extends StObject
      with typings.babylonjs.BABYLON.BounceEase {
   def this(/** Defines the number of bounces */
@@ -31,7 +31,7 @@ class BounceEase ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _easingMode: js.Any = js.native
+  var _easingMode: Any = js.native
   
   /** Defines the number of bounces */
   /* CompleteClass */
@@ -42,7 +42,7 @@ class BounceEase ()
   var bounciness: Double = js.native
   
   /**
-    * Given an input gradient between 0 and 1, this returns the corrseponding value
+    * Given an input gradient between 0 and 1, this returns the corresponding value
     * of the easing function.
     * The link below provides some of the most common examples of easing functions.
     * @see https://easings.net/
@@ -53,6 +53,7 @@ class BounceEase ()
   override def ease(gradient: Double): Double = js.native
   
   /**
+    * @param gradient
     * @hidden
     */
   /* CompleteClass */

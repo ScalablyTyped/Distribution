@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(o: js.Any, proto: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(o: Any): Any = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(o: Any, proto: js.Object): Any = (^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("setprototypeof", JSImport.Namespace)
   @js.native

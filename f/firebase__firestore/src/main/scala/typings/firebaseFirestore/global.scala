@@ -1,13 +1,16 @@
 package typings.firebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
-  val browserTests: js.Any = js.native
-  val testsContext: js.Any = js.native
+object global {
+  
+  @JSGlobal("browserTests")
+  @js.native
+  val browserTests: Any = js.native
+  
+  @JSGlobal("testsContext")
+  @js.native
+  val testsContext: Any = js.native
 }
-

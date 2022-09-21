@@ -10,7 +10,7 @@ trait Permission extends StObject {
   var allowDiscovery: js.UndefOr[Boolean] = js.undefined
   
   /** If set, this permission applies to anyone, even logged out users. */
-  var anyone: js.UndefOr[js.Any] = js.undefined
+  var anyone: js.UndefOr[Any] = js.undefined
   
   /** The domain to whom this permission applies. */
   var domain: js.UndefOr[Domain] = js.undefined
@@ -18,7 +18,10 @@ trait Permission extends StObject {
   /** The group to whom this permission applies. */
   var group: js.UndefOr[Group] = js.undefined
   
-  /** Indicates the Google Drive permissions role. The role determines a user's ability to read, write, and comment on items. */
+  /**
+    * Indicates the [Google Drive permissions role](https://developers.google.com/drive/web/manage-sharing#roles). The role determines a user's ability to read, write, and comment on
+    * items.
+    */
   var role: js.UndefOr[String] = js.undefined
   
   /** The user to whom this permission applies. */
@@ -37,7 +40,7 @@ object Permission {
     
     inline def setAllowDiscoveryUndefined: Self = StObject.set(x, "allowDiscovery", js.undefined)
     
-    inline def setAnyone(value: js.Any): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
+    inline def setAnyone(value: Any): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
     
     inline def setAnyoneUndefined: Self = StObject.set(x, "anyone", js.undefined)
     

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +14,17 @@ trait AgentChangeEvent extends StObject {
   
   var poolId: Double
   
-  var timeStamp: Date
+  var timeStamp: js.Date
 }
 object AgentChangeEvent {
   
-  inline def apply(agent: TaskAgent, eventType: String, pool: TaskAgentPoolReference, poolId: Double, timeStamp: Date): AgentChangeEvent = {
+  inline def apply(
+    agent: TaskAgent,
+    eventType: String,
+    pool: TaskAgentPoolReference,
+    poolId: Double,
+    timeStamp: js.Date
+  ): AgentChangeEvent = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], poolId = poolId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentChangeEvent]
   }
@@ -34,6 +39,6 @@ object AgentChangeEvent {
     
     inline def setPoolId(value: Double): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
     
-    inline def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: js.Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

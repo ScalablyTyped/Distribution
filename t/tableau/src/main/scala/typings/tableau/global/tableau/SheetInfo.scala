@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Sheet Classes
 @JSGlobal("tableau.SheetInfo")
 @js.native
-class SheetInfo ()
+open class SheetInfo ()
   extends StObject
      with typings.tableau.tableau.SheetInfo {
   

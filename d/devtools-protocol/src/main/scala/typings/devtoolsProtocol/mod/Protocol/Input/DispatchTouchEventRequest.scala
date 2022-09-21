@@ -55,7 +55,7 @@ object DispatchTouchEventRequest {
     
     inline def setTouchPoints(value: js.Array[TouchPoint]): Self = StObject.set(x, "touchPoints", value.asInstanceOf[js.Any])
     
-    inline def setTouchPointsVarargs(value: TouchPoint*): Self = StObject.set(x, "touchPoints", js.Array(value :_*))
+    inline def setTouchPointsVarargs(value: TouchPoint*): Self = StObject.set(x, "touchPoints", js.Array(value*))
     
     inline def setType(value: touchStart | touchEnd | touchMove | touchCancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

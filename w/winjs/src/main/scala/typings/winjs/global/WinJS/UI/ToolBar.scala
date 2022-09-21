@@ -15,12 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element The DOM element that will host the control.
   * @param options The set of properties and values to apply to the new ToolBar.
   **/
-class ToolBar ()
+open class ToolBar ()
   extends StObject
      with typings.winjs.WinJS.UI.ToolBar {
   def this(element: HTMLElement) = this()
-  def this(element: Unit, options: js.Any) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: Unit, options: Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
 }
 object ToolBar {
   

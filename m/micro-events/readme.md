@@ -10,10 +10,10 @@ A very, very simple event emitter implementation.
 | ------------------ | :-------------: |
 | Full name          | micro-events |
 | Keywords           | util, events, server, client, browser |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 1207 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 70.66666666666667 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/alexanderGugel/micro-events)

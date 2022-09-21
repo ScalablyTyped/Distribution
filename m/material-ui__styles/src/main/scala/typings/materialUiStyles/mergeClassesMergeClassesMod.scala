@@ -19,7 +19,7 @@ object mergeClassesMergeClassesMod {
   
   trait MergeClassesOption extends StObject {
     
-    var Component: ElementType[js.Any]
+    var Component: ElementType[Any]
     
     var baseClasses: Classes
     
@@ -27,7 +27,7 @@ object mergeClassesMergeClassesMod {
   }
   object MergeClassesOption {
     
-    inline def apply(Component: ElementType[js.Any], baseClasses: Classes, newClasses: Classes): MergeClassesOption = {
+    inline def apply(Component: ElementType[Any], baseClasses: Classes, newClasses: Classes): MergeClassesOption = {
       val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], baseClasses = baseClasses.asInstanceOf[js.Any], newClasses = newClasses.asInstanceOf[js.Any])
       __obj.asInstanceOf[MergeClassesOption]
     }
@@ -36,7 +36,7 @@ object mergeClassesMergeClassesMod {
       
       inline def setBaseClasses(value: Classes): Self = StObject.set(x, "baseClasses", value.asInstanceOf[js.Any])
       
-      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
       inline def setNewClasses(value: Classes): Self = StObject.set(x, "newClasses", value.asInstanceOf[js.Any])
     }

@@ -1,31 +1,19 @@
 package typings.antDesignIconsVue
 
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
+import org.scalablytyped.runtime.Shortcut
+import typings.antDesignIconsVue.html5TwoToneMod.Html5TwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object antDesignIconsVueHtml5TwoToneMod {
+object antDesignIconsVueHtml5TwoToneMod extends Shortcut {
   
-  object default {
-    
-    inline def apply(
-      props: AntdIconProps,
-      context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("@ant-design/icons-vue/Html5TwoTone", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/icons-vue/Html5TwoTone", "default.displayName")
-    @js.native
-    def displayName: String = js.native
-    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-vue/Html5TwoTone", "default.inheritAttrs")
-    @js.native
-    def inheritAttrs: Boolean = js.native
-    inline def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("@ant-design/icons-vue/Html5TwoTone", JSImport.Default)
+  @js.native
+  val default: Html5TwoToneIconType = js.native
+  
+  type _To = Html5TwoToneIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `antDesignIconsVueHtml5TwoToneMod.foo` */
+  override def _to: Html5TwoToneIconType = default
 }

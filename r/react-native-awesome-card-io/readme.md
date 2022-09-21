@@ -10,15 +10,12 @@ A complete and cross-platform React Native component for card.io
 | ------------------ | :-------------: |
 | Full name          | react-native-awesome-card-io |
 | Keywords           | react-native, react-component, card.io, credit card, scan, android, ios |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 246767 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 24793.333333333332 |
+| # stars            | 453.0 |
 
 ## Links
-- [Homepage](https://github.com/Kerumen/react-native-awesome-card-io)
-- [Bugs](https://github.com/Kerumen/react-native-awesome-card-io/issues)
-- [Repository](https://github.com/Kerumen/react-native-awesome-card-io)
 - [Npm](https://www.npmjs.com/package/react-native-awesome-card-io)
     
 

@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Used for attributes of type boolean which can be animated. */
 trait SVGAnimatedBoolean extends StObject {
   
+  /* standard dom */
   val animVal: scala.Boolean
   
+  /* standard dom */
   var baseVal: scala.Boolean
 }
 object SVGAnimatedBoolean {

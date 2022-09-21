@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("react-native-percentage-circle", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PercentageCircleProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PercentageCircleProps, js.Object, Any]
   
-  type PercentageCircle = Component[PercentageCircleProps, js.Object, js.Any]
+  type PercentageCircle = Component[PercentageCircleProps, js.Object, Any]
   
   trait PercentageCircleProps extends StObject {
     
@@ -74,7 +74,7 @@ object mod {
       
       inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      inline def setTextStyleVarargs(value: TextStyle*): Self = StObject.set(x, "textStyle", js.Array(value :_*))
+      inline def setTextStyleVarargs(value: TextStyle*): Self = StObject.set(x, "textStyle", js.Array(value*))
     }
   }
 }

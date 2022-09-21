@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "WebGLPipelineContext")
 @js.native
-class WebGLPipelineContext ()
+open class WebGLPipelineContext ()
   extends typings.babylonjs.indexMod.WebGLPipelineContext

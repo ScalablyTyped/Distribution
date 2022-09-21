@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpsertRet extends StObject {
   
-  def insert(insertExpr: js.Any): UpsertRetInsertRet
+  def insert(insertExpr: Any): UpsertRetInsertRet
 }
 object UpsertRet {
   
-  inline def apply(insert: js.Any => UpsertRetInsertRet): UpsertRet = {
+  inline def apply(insert: Any => UpsertRetInsertRet): UpsertRet = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
     __obj.asInstanceOf[UpsertRet]
   }
   
   extension [Self <: UpsertRet](x: Self) {
     
-    inline def setInsert(value: js.Any => UpsertRetInsertRet): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: Any => UpsertRetInsertRet): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
   }
 }

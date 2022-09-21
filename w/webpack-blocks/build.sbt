@@ -1,22 +1,31 @@
 organization := "org.scalablytyped"
 name := "webpack-blocks"
-version := "2.0-dt-20200925Z-b34d73"
-scalaVersion := "3.0.1"
+version := "2.0-dt-20211202Z-1a1a78"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-081b8e",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "uglify-js" % "3.11-dt-20201027Z-874dd1",
-  "org.scalablytyped" %%% "webpack-blocks__assets" % "2.0-dt-20200925Z-1a55ce",
-  "org.scalablytyped" %%% "webpack-blocks__babel" % "2.0-dt-20200925Z-f0a649",
-  "org.scalablytyped" %%% "webpack-blocks__core" % "2.0-dt-20200925Z-859c64",
-  "org.scalablytyped" %%% "webpack-blocks__dev-server" % "2.0-dt-20200925Z-8c8b2d",
-  "org.scalablytyped" %%% "webpack-blocks__postcss" % "2.0-dt-20200925Z-d4513d",
-  "org.scalablytyped" %%% "webpack-blocks__sass" % "2.0-dt-20200925Z-147dd3",
-  "org.scalablytyped" %%% "webpack-blocks__typescript" % "2.0-dt-20200925Z-db7e01",
-  "org.scalablytyped" %%% "webpack-blocks__uglify" % "2.0-dt-20200925Z-fbdeae",
-  "org.scalablytyped" %%% "webpack-blocks__webpack" % "2.0-dt-20200925Z-ee7e75")
+  "org.scalablytyped" %%% "ajv" % "8.11.0-025d79",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-bee5c7",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-aaec85",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "re2" % "1.17.7-22ea4f",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-ca6ee9",
+  "org.scalablytyped" %%% "source-map" % "0.7.4-e0c113",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "tapable" % "2.2.1-b2feca",
+  "org.scalablytyped" %%% "uglify-js" % "3.17-dt-20220913Z-de8502",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-33748e",
+  "org.scalablytyped" %%% "webpack" % "5.74.0-8b6e44",
+  "org.scalablytyped" %%% "webpack-blocks__assets" % "2.0-dt-20211202Z-5b9dd8",
+  "org.scalablytyped" %%% "webpack-blocks__babel" % "2.0-dt-20211202Z-5ca6d8",
+  "org.scalablytyped" %%% "webpack-blocks__core" % "2.0-dt-20211202Z-4eff1f",
+  "org.scalablytyped" %%% "webpack-blocks__dev-server" % "2.0-dt-20211202Z-3edc28",
+  "org.scalablytyped" %%% "webpack-blocks__postcss" % "2.0-dt-20211202Z-afbff1",
+  "org.scalablytyped" %%% "webpack-blocks__sass" % "2.0-dt-20211202Z-149f9b",
+  "org.scalablytyped" %%% "webpack-blocks__typescript" % "2.0-dt-20211202Z-c626e8",
+  "org.scalablytyped" %%% "webpack-blocks__uglify" % "2.0-dt-20211202Z-57a6e8",
+  "org.scalablytyped" %%% "webpack-blocks__webpack" % "2.0-dt-20211202Z-8950bb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

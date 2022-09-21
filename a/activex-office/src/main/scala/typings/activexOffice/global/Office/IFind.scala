@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** For Macintosh only */
 @JSGlobal("Office.IFind")
 @js.native
-/* private */ class IFind ()
+/* private */ open class IFind ()
   extends StObject
      with typings.activexOffice.Office.IFind {
   
@@ -20,16 +20,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Author: String = js.native
   
   /* CompleteClass */
-  var DateCreatedFrom: js.Any = js.native
+  var DateCreatedFrom: Any = js.native
   
   /* CompleteClass */
-  var DateCreatedTo: js.Any = js.native
+  var DateCreatedTo: Any = js.native
   
   /* CompleteClass */
-  var DateSavedFrom: js.Any = js.native
+  var DateSavedFrom: Any = js.native
   
   /* CompleteClass */
-  var DateSavedTo: js.Any = js.native
+  var DateSavedTo: Any = js.native
   
   /* CompleteClass */
   override def Delete(bstrQueryName: String): Unit = js.native

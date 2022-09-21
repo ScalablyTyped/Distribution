@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAssetRequest extends StObject {
   
   /**
+    * A description for the asset.
+    */
+  var assetDescription: js.UndefOr[Description] = js.undefined
+  
+  /**
     * The ID of the asset model from which to create the asset.
     */
   var assetModelId: ID
   
   /**
-    * A unique, friendly name for the asset.
+    * A friendly name for the asset.
     */
   var assetName: Name
   
@@ -22,7 +27,7 @@ trait CreateAssetRequest extends StObject {
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * A list of key-value pairs that contain metadata for the asset. For more information, see Tagging your AWS IoT SiteWise resources in the AWS IoT SiteWise User Guide.
+    * A list of key-value pairs that contain metadata for the asset. For more information, see Tagging your IoT SiteWise resources in the IoT SiteWise User Guide.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }
@@ -34,6 +39,10 @@ object CreateAssetRequest {
   }
   
   extension [Self <: CreateAssetRequest](x: Self) {
+    
+    inline def setAssetDescription(value: Description): Self = StObject.set(x, "assetDescription", value.asInstanceOf[js.Any])
+    
+    inline def setAssetDescriptionUndefined: Self = StObject.set(x, "assetDescription", js.undefined)
     
     inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     

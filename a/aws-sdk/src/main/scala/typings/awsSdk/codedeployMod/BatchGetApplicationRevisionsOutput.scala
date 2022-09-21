@@ -42,6 +42,6 @@ object BatchGetApplicationRevisionsOutput {
     
     inline def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
-    inline def setRevisionsVarargs(value: RevisionInfo*): Self = StObject.set(x, "revisions", js.Array(value :_*))
+    inline def setRevisionsVarargs(value: RevisionInfo*): Self = StObject.set(x, "revisions", js.Array(value*))
   }
 }

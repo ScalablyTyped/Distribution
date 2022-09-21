@@ -18,7 +18,7 @@ trait RegressionMetrics extends StObject {
   /** Median absolute error. */
   var medianAbsoluteError: js.UndefOr[Double] = js.undefined
   
-  /** R^2 score. */
+  /** R^2 score. This corresponds to r2_score in ML.EVALUATE. */
   var rSquared: js.UndefOr[Double] = js.undefined
 }
 object RegressionMetrics {

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ShiftWorkdayMatcher")
 @js.native
-class ShiftWorkdayMatcher () extends StObject
+open class ShiftWorkdayMatcher () extends StObject

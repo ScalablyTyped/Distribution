@@ -14,19 +14,17 @@ trait SchemaAnnotations extends StObject {
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Token to pass in for pagination for the next page. This will not be
-    * present if this request does not have more results.
+    * Token to pass in for pagination for the next page. This will not be present if this request does not have more results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Total number of annotations found. This may be greater than the number of
-    * notes returned in this response if results have been paginated.
+    * Total number of annotations found. This may be greater than the number of notes returned in this response if results have been paginated.
     */
-  var totalItems: js.UndefOr[Double] = js.undefined
+  var totalItems: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaAnnotations {
   
@@ -41,17 +39,23 @@ object SchemaAnnotations {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaAnnotation*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaAnnotation*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    
+    inline def setTotalItemsNull: Self = StObject.set(x, "totalItems", null)
     
     inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }

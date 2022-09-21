@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-native-community/cli-debugger-ui" : "9.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-native-community/cli-debugger-ui" : "9.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

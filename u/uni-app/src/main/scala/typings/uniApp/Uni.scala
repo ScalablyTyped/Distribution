@@ -1,6 +1,5 @@
 package typings.uniApp
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,9 @@ trait Uni extends StObject {
   @JSName("$emit")
   def $emit(eventName: String): Unit = js.native
   @JSName("$emit")
-  def $emit(eventName: String, param: js.Any): Unit = js.native
+  def $emit(eventName: String, param: Any): Unit = js.native
   @JSName("$emit")
-  def $emit(eventName: Unit, param: js.Any): Unit = js.native
+  def $emit(eventName: Unit, param: Any): Unit = js.native
   
   /**
     * 移除自定义事件监听器。如果没有指定事件名，则移除所有事件监听器。如果提供事件名，则移除该事件的所有监听器。如果提供了事件名和回调，则只移除这个回调的监听器。
@@ -34,9 +33,9 @@ trait Uni extends StObject {
   @JSName("$off")
   def $off(eventName: String, callback: js.Function0[Unit]): Unit = js.native
   @JSName("$off")
-  def $off(eventName: js.Array[js.Any]): Unit = js.native
+  def $off(eventName: js.Array[Any]): Unit = js.native
   @JSName("$off")
-  def $off(eventName: js.Array[js.Any], callback: js.Function0[Unit]): Unit = js.native
+  def $off(eventName: js.Array[Any], callback: js.Function0[Unit]): Unit = js.native
   @JSName("$off")
   def $off(eventName: Unit, callback: js.Function0[Unit]): Unit = js.native
   
@@ -82,7 +81,7 @@ trait Uni extends StObject {
     * 参考: [http://uniapp.dcloud.io/api/arrayBufferToBase64?id=arraybuffertobase64](http://uniapp.dcloud.io/api/arrayBufferToBase64?id=arraybuffertobase64)
     */
   def arrayBufferToBase64(): String = js.native
-  def arrayBufferToBase64(arrayBuffer: ArrayBuffer): String = js.native
+  def arrayBufferToBase64(arrayBuffer: js.typedarray.ArrayBuffer): String = js.native
   
   /**
     * 提前向用户发起授权请求
@@ -97,8 +96,8 @@ trait Uni extends StObject {
     *
     * 参考: [http://uniapp.dcloud.io/api/base64ToArrayBuffer?id=base64toarraybuffer](http://uniapp.dcloud.io/api/base64ToArrayBuffer?id=base64toarraybuffer)
     */
-  def base64ToArrayBuffer(): ArrayBuffer = js.native
-  def base64ToArrayBuffer(base64: String): ArrayBuffer = js.native
+  def base64ToArrayBuffer(): js.typedarray.ArrayBuffer = js.native
+  def base64ToArrayBuffer(base64: String): js.typedarray.ArrayBuffer = js.native
   
   /**
     * 判断uni-app的API，回调，参数，组件等是否在当前版本可用
@@ -264,8 +263,8 @@ trait Uni extends StObject {
     */
   def createCanvasContext(): CanvasContext = js.native
   def createCanvasContext(canvasId: String): CanvasContext = js.native
-  def createCanvasContext(canvasId: String, componentInstance: js.Any): CanvasContext = js.native
-  def createCanvasContext(canvasId: Unit, componentInstance: js.Any): CanvasContext = js.native
+  def createCanvasContext(canvasId: String, componentInstance: Any): CanvasContext = js.native
+  def createCanvasContext(canvasId: Unit, componentInstance: Any): CanvasContext = js.native
   
   /**
     * 创建并返回 audio 上下文 audioContext 对象
@@ -289,8 +288,8 @@ trait Uni extends StObject {
     */
   def createMapContext(): MapContext = js.native
   def createMapContext(mapId: String): MapContext = js.native
-  def createMapContext(mapId: String, currentComponent: js.Any): MapContext = js.native
-  def createMapContext(mapId: Unit, currentComponent: js.Any): MapContext = js.native
+  def createMapContext(mapId: String, currentComponent: Any): MapContext = js.native
+  def createMapContext(mapId: Unit, currentComponent: Any): MapContext = js.native
   
   /**
     * 返回一个SelectorQuery对象实例
@@ -306,8 +305,8 @@ trait Uni extends StObject {
     */
   def createVideoContext(): VideoContext = js.native
   def createVideoContext(videoId: String): VideoContext = js.native
-  def createVideoContext(videoId: String, currentComponent: js.Any): VideoContext = js.native
-  def createVideoContext(videoId: Unit, currentComponent: js.Any): VideoContext = js.native
+  def createVideoContext(videoId: String, currentComponent: Any): VideoContext = js.native
+  def createVideoContext(videoId: Unit, currentComponent: Any): VideoContext = js.native
   
   /**
     * 下载文件
@@ -514,8 +513,8 @@ trait Uni extends StObject {
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=getstoragesync](http://uniapp.dcloud.io/api/storage/storage?id=getstoragesync)
     */
-  def getStorageSync(): js.Any = js.native
-  def getStorageSync(key: String): js.Any = js.native
+  def getStorageSync(): Any = js.native
+  def getStorageSync(key: String): Any = js.native
   
   /**
     * 通过id 获取 subNVues 原生子窗体的实例
@@ -1062,8 +1061,8 @@ trait Uni extends StObject {
     */
   def setStorageSync(): Unit = js.native
   def setStorageSync(key: String): Unit = js.native
-  def setStorageSync(key: String, value: js.Any): Unit = js.native
-  def setStorageSync(key: Unit, value: js.Any): Unit = js.native
+  def setStorageSync(key: String, value: Any): Unit = js.native
+  def setStorageSync(key: Unit, value: Any): Unit = js.native
   
   /**
     * 为 tabBar 某一项的右上角添加文本

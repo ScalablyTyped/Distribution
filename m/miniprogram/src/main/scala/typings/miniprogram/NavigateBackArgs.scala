@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigateBackArgs
-  extends StObject
-     with AsyncCallback[Unit] {
+trait NavigateBackArgs extends StObject {
   
   /**
     * Number of pages to return. If delta is greater than the number

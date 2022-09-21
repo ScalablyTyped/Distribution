@@ -1,15 +1,9 @@
 package typings.reactPdf
 
-import typings.pdfjsDist.mod.PDFAnnotations
-import typings.pdfjsDist.mod.PDFPageViewport
-import typings.pdfjsDist.mod.PDFPromise
-import typings.pdfjsDist.mod.PDFRef
-import typings.pdfjsDist.mod.PDFRenderParams
-import typings.pdfjsDist.mod.PDFRenderTask
-import typings.pdfjsDist.mod.TextContent
-import typings.pdfjsDist.mod.ViewportParameters
 import typings.react.mod.Component
 import typings.react.mod.LegacyRef
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import typings.reactPdf.reactPdfNumbers.`0`
@@ -19,7 +13,7 @@ import typings.reactPdf.reactPdfNumbers.`90`
 import typings.reactPdf.reactPdfStrings.canvas
 import typings.reactPdf.reactPdfStrings.none
 import typings.reactPdf.reactPdfStrings.svg
-import typings.std.Error
+import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,29 +23,8 @@ object pageMod {
   
   @JSImport("react-pdf/dist/Page", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
-  
-  trait LoadingProcessData extends StObject {
-    
-    var loaded: Double
-    
-    var total: Double
-  }
-  object LoadingProcessData {
-    
-    inline def apply(loaded: Double, total: Double): LoadingProcessData = {
-      val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LoadingProcessData]
-    }
-    
-    extension [Self <: LoadingProcessData](x: Self) {
-      
-      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
-      
-      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
-    }
-  }
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
   trait PDFPageItem extends StObject {
     
@@ -59,23 +32,23 @@ object pageMod {
     
     var commonObjs: js.Object
     
-    def getAnnotations(args: js.Any*): js.Any
+    def getAnnotations(args: Any*): Any
     
-    def getTextContent(args: js.Any*): js.Any
+    def getTextContent(args: Any*): Any
     
-    def getViewport(args: js.Any*): js.Any
+    def getViewport(args: Any*): Any
     
-    def render(args: js.Any*): js.Any
+    def render(args: Any*): Any
   }
   object PDFPageItem {
     
     inline def apply(
       _transport: js.Object,
       commonObjs: js.Object,
-      getAnnotations: /* repeated */ js.Any => js.Any,
-      getTextContent: /* repeated */ js.Any => js.Any,
-      getViewport: /* repeated */ js.Any => js.Any,
-      render: /* repeated */ js.Any => js.Any
+      getAnnotations: /* repeated */ Any => Any,
+      getTextContent: /* repeated */ Any => Any,
+      getViewport: /* repeated */ Any => Any,
+      render: /* repeated */ Any => Any
     ): PDFPageItem = {
       val __obj = js.Dynamic.literal(_transport = _transport.asInstanceOf[js.Any], commonObjs = commonObjs.asInstanceOf[js.Any], getAnnotations = js.Any.fromFunction1(getAnnotations), getTextContent = js.Any.fromFunction1(getTextContent), getViewport = js.Any.fromFunction1(getViewport), render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[PDFPageItem]
@@ -85,67 +58,40 @@ object pageMod {
       
       inline def setCommonObjs(value: js.Object): Self = StObject.set(x, "commonObjs", value.asInstanceOf[js.Any])
       
-      inline def setGetAnnotations(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getAnnotations", js.Any.fromFunction1(value))
+      inline def setGetAnnotations(value: /* repeated */ Any => Any): Self = StObject.set(x, "getAnnotations", js.Any.fromFunction1(value))
       
-      inline def setGetTextContent(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getTextContent", js.Any.fromFunction1(value))
+      inline def setGetTextContent(value: /* repeated */ Any => Any): Self = StObject.set(x, "getTextContent", js.Any.fromFunction1(value))
       
-      inline def setGetViewport(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getViewport", js.Any.fromFunction1(value))
+      inline def setGetViewport(value: /* repeated */ Any => Any): Self = StObject.set(x, "getViewport", js.Any.fromFunction1(value))
       
-      inline def setRender(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* repeated */ Any => Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def set_transport(value: js.Object): Self = StObject.set(x, "_transport", value.asInstanceOf[js.Any])
     }
   }
   
+  @js.native
   trait PDFPageProxy
-    extends StObject
-       with typings.pdfjsDist.mod.PDFPageProxy {
+    extends typings.pdfjsDist.apiMod.PDFPageProxy {
     
-    var height: Double
+    var height: Double = js.native
     
-    var originalHeight: Double
+    var originalHeight: Double = js.native
     
-    var originalWidth: Double
+    var originalWidth: Double = js.native
     
-    var width: Double
-  }
-  object PDFPageProxy {
-    
-    inline def apply(
-      destroy: () => Unit,
-      getAnnotations: () => PDFPromise[PDFAnnotations],
-      getTextContent: () => PDFPromise[TextContent],
-      getViewport: ViewportParameters => PDFPageViewport,
-      height: Double,
-      originalHeight: Double,
-      originalWidth: Double,
-      pageIndex: Double,
-      pageNumber: Double,
-      ref: PDFRef,
-      render: PDFRenderParams => PDFRenderTask,
-      rotate: Double,
-      view: js.Array[Double],
-      width: Double
-    ): PDFPageProxy = {
-      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getAnnotations = js.Any.fromFunction0(getAnnotations), getTextContent = js.Any.fromFunction0(getTextContent), getViewport = js.Any.fromFunction1(getViewport), height = height.asInstanceOf[js.Any], originalHeight = originalHeight.asInstanceOf[js.Any], originalWidth = originalWidth.asInstanceOf[js.Any], pageIndex = pageIndex.asInstanceOf[js.Any], pageNumber = pageNumber.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], render = js.Any.fromFunction1(render), rotate = rotate.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PDFPageProxy]
-    }
-    
-    extension [Self <: PDFPageProxy](x: Self) {
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
-      
-      inline def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    }
+    var width: Double = js.native
   }
   
-  type Page = Component[Props, js.Object, js.Any]
+  type Page = Component[Props, js.Object, Any]
   
   trait Props extends StObject {
+    
+    /**
+      * A function that behaves like ref,
+      * but it's passed to main `<canvas>` rendered by `<Page>` component.
+      */
+    var canvasRef: js.UndefOr[LegacyRef[HTMLCanvasElement]] = js.undefined
     
     /**
       * Defines custom class name(s), that will be added to rendered element.
@@ -192,19 +138,30 @@ object pageMod {
     var noData: js.UndefOr[String | ReactElement | RenderFunction] = js.undefined
     
     /**
+      * Function called when page has been clicked.
+      */
+    var onClick: js.UndefOr[
+        js.Function2[
+          /* event */ MouseEvent[typings.std.Element, NativeMouseEvent], 
+          /* page */ PDFPageProxy, 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
       * Function called in case of an error while loading annotations.
       */
-    var onGetAnnotationsError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var onGetAnnotationsError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     /**
       * Function called when annotations are successfully loaded.
       */
-    var onGetAnnotationsSuccess: js.UndefOr[js.Function1[/* annotations */ js.Any, Unit]] = js.undefined
+    var onGetAnnotationsSuccess: js.UndefOr[js.Function1[/* annotations */ Any, Unit]] = js.undefined
     
     /**
       * Function called in case of an error while loading text layer items.
       */
-    var onGetTextError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var onGetTextError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     /**
       * Function called when text layer items are successfully loaded.
@@ -214,12 +171,7 @@ object pageMod {
     /**
       * Function called in case of an error while loading the page.
       */
-    var onLoadError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
-    
-    /**
-      * Function called, potentially multiple times, as the loading progresses.
-      */
-    var onLoadProgress: js.UndefOr[js.Function1[/* data */ LoadingProcessData, Unit]] = js.undefined
+    var onLoadError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     /**
       * Function called when the page is successfully loaded.
@@ -229,12 +181,12 @@ object pageMod {
     /**
       * Function called in case of an error while rendering the page.
       */
-    var onRenderError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var onRenderError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     /**
       * Function called when the page is successfully rendered on the screen.
       */
-    var onRenderSuccess: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onRenderSuccess: js.UndefOr[js.Function1[/* page */ PDFPageProxy, Unit]] = js.undefined
     
     /**
       * Defines which page from PDF file should be displayed.
@@ -304,11 +256,19 @@ object pageMod {
     
     extension [Self <: Props](x: Self) {
       
+      inline def setCanvasRef(value: LegacyRef[HTMLCanvasElement]): Self = StObject.set(x, "canvasRef", value.asInstanceOf[js.Any])
+      
+      inline def setCanvasRefFunction1(value: /* instance */ HTMLCanvasElement | Null => Unit): Self = StObject.set(x, "canvasRef", js.Any.fromFunction1(value))
+      
+      inline def setCanvasRefNull: Self = StObject.set(x, "canvasRef", null)
+      
+      inline def setCanvasRefUndefined: Self = StObject.set(x, "canvasRef", js.undefined)
+      
       inline def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
+      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value*))
       
       inline def setCustomTextRenderer(value: /* layer */ TextLayerItemInternal => Element): Self = StObject.set(x, "customTextRenderer", js.Any.fromFunction1(value))
       
@@ -344,15 +304,21 @@ object pageMod {
       
       inline def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
       
-      inline def setOnGetAnnotationsError(value: /* error */ Error => Unit): Self = StObject.set(x, "onGetAnnotationsError", js.Any.fromFunction1(value))
+      inline def setOnClick(
+        value: (/* event */ MouseEvent[typings.std.Element, NativeMouseEvent], /* page */ PDFPageProxy) => Unit
+      ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
+      inline def setOnGetAnnotationsError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onGetAnnotationsError", js.Any.fromFunction1(value))
       
       inline def setOnGetAnnotationsErrorUndefined: Self = StObject.set(x, "onGetAnnotationsError", js.undefined)
       
-      inline def setOnGetAnnotationsSuccess(value: /* annotations */ js.Any => Unit): Self = StObject.set(x, "onGetAnnotationsSuccess", js.Any.fromFunction1(value))
+      inline def setOnGetAnnotationsSuccess(value: /* annotations */ Any => Unit): Self = StObject.set(x, "onGetAnnotationsSuccess", js.Any.fromFunction1(value))
       
       inline def setOnGetAnnotationsSuccessUndefined: Self = StObject.set(x, "onGetAnnotationsSuccess", js.undefined)
       
-      inline def setOnGetTextError(value: /* error */ Error => Unit): Self = StObject.set(x, "onGetTextError", js.Any.fromFunction1(value))
+      inline def setOnGetTextError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onGetTextError", js.Any.fromFunction1(value))
       
       inline def setOnGetTextErrorUndefined: Self = StObject.set(x, "onGetTextError", js.undefined)
       
@@ -360,23 +326,19 @@ object pageMod {
       
       inline def setOnGetTextSuccessUndefined: Self = StObject.set(x, "onGetTextSuccess", js.undefined)
       
-      inline def setOnLoadError(value: /* error */ Error => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
+      inline def setOnLoadError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
       
       inline def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
-      
-      inline def setOnLoadProgress(value: /* data */ LoadingProcessData => Unit): Self = StObject.set(x, "onLoadProgress", js.Any.fromFunction1(value))
-      
-      inline def setOnLoadProgressUndefined: Self = StObject.set(x, "onLoadProgress", js.undefined)
       
       inline def setOnLoadSuccess(value: /* page */ PDFPageProxy => Unit): Self = StObject.set(x, "onLoadSuccess", js.Any.fromFunction1(value))
       
       inline def setOnLoadSuccessUndefined: Self = StObject.set(x, "onLoadSuccess", js.undefined)
       
-      inline def setOnRenderError(value: /* error */ Error => Unit): Self = StObject.set(x, "onRenderError", js.Any.fromFunction1(value))
+      inline def setOnRenderError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onRenderError", js.Any.fromFunction1(value))
       
       inline def setOnRenderErrorUndefined: Self = StObject.set(x, "onRenderError", js.undefined)
       
-      inline def setOnRenderSuccess(value: () => Unit): Self = StObject.set(x, "onRenderSuccess", js.Any.fromFunction0(value))
+      inline def setOnRenderSuccess(value: /* page */ PDFPageProxy => Unit): Self = StObject.set(x, "onRenderSuccess", js.Any.fromFunction1(value))
       
       inline def setOnRenderSuccessUndefined: Self = StObject.set(x, "onRenderSuccess", js.undefined)
       
@@ -426,6 +388,8 @@ object pageMod {
     
     var fontName: String
     
+    var hasEOL: Boolean
+    
     var height: Double
     
     var str: String
@@ -439,12 +403,13 @@ object pageMod {
     inline def apply(
       dir: String,
       fontName: String,
+      hasEOL: Boolean,
       height: Double,
       str: String,
       transform: js.Array[Double],
       width: Double
     ): TextItem = {
-      val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], fontName = fontName.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], fontName = fontName.asInstanceOf[js.Any], hasEOL = hasEOL.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextItem]
     }
     
@@ -454,13 +419,15 @@ object pageMod {
       
       inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
       
+      inline def setHasEOL(value: Boolean): Self = StObject.set(x, "hasEOL", value.asInstanceOf[js.Any])
+      
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
       
       inline def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
@@ -469,6 +436,8 @@ object pageMod {
   trait TextLayerItemInternal extends StObject {
     
     var fontName: String
+    
+    var height: Double
     
     var itemIndex: Double
     
@@ -488,19 +457,22 @@ object pageMod {
     
     inline def apply(
       fontName: String,
+      height: Double,
       itemIndex: Double,
       page: PDFPageItem,
       str: String,
       transform: js.Array[Double],
       width: Double
     ): TextLayerItemInternal = {
-      val __obj = js.Dynamic.literal(fontName = fontName.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fontName = fontName.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextLayerItemInternal]
     }
     
     extension [Self <: TextLayerItemInternal](x: Self) {
       
       inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
@@ -518,7 +490,7 @@ object pageMod {
       
       inline def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }

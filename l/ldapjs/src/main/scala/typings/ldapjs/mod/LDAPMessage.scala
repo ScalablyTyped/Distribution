@@ -1,6 +1,6 @@
 package typings.ldapjs.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ abstract class LDAPMessage () extends StObject {
   /** A plain object with main properties */
   val json: LDAPMessageJsonObject = js.native
   
-  var log: js.Any = js.native
+  var log: Any = js.native
   
   var messageID: Double = js.native
   

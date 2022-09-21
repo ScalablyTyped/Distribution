@@ -1,6 +1,7 @@
 package typings.cytoscape.mod
 
 import typings.cytoscape.anon.H
+import typings.cytoscape.anon.Pan
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,26 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoreViewportManipulation extends StObject {
   
   /**
-    * Get whether nodes are automatically locked
-    * (i.e. if true, nodes are locked despite their individual state).
-    * http://js.cytoscape.org/#cy.autolock
-    */
-  def autolock(): Boolean = js.native
-  /**
     * Set whether nodes are automatically locked
     * (i.e. if true, nodes are locked despite their individual state).
     * http://js.cytoscape.org/#cy.autolock
     *
     * @param bool A truthy value enables autolocking; a falsey value disables it.
     */
+  def autolock(): this.type = js.native
   def autolock(bool: Boolean): this.type = js.native
-  
   /**
-    * Get whether nodes are automatically ungrabified
-    * (i.e. if true, nodes are ungrabbale despite their individual state).
-    * http://js.cytoscape.org/#cy.autoungrabify
+    * Get whether nodes are automatically locked
+    * (i.e. if true, nodes are locked despite their individual state).
+    * http://js.cytoscape.org/#cy.autolock
     */
-  def autoungrabify(): Boolean = js.native
+  @JSName("autolock")
+  def autolock_Boolean(): Boolean = js.native
+  
   /**
     * Set whether nodes are automatically ungrabified
     * (i.e. if true, nodes are ungrabbale despite their individual state).
@@ -40,14 +37,16 @@ trait CoreViewportManipulation extends StObject {
     *
     * @param bool A truthy value enables autolocking; a falsey value disables it.
     */
+  def autoungrabify(): this.type = js.native
   def autoungrabify(bool: Boolean): this.type = js.native
-  
   /**
-    * Get whether nodes are automatically unselectified
-    * (i.e. if true, nodes are unselectable despite their individual state).
-    * http://js.cytoscape.org/#cy.autounselectify
+    * Get whether nodes are automatically ungrabified
+    * (i.e. if true, nodes are ungrabbale despite their individual state).
+    * http://js.cytoscape.org/#cy.autoungrabify
     */
-  def autounselectify(): Boolean = js.native
+  @JSName("autoungrabify")
+  def autoungrabify_Boolean(): Boolean = js.native
+  
   /**
     * Set whether nodes are automatically unselectified
     * (i.e. if true, nodes are unselectable despite their individual state).
@@ -55,14 +54,16 @@ trait CoreViewportManipulation extends StObject {
     *
     * @param bool A truthy value enables autolocking; a falsey value disables it.
     */
+  def autounselectify(): this.type = js.native
   def autounselectify(bool: Boolean): this.type = js.native
-  
   /**
-    * Get whether box selection is enabled.
-    * If enabled, the user must hold left-click to initiate panning.
-    * http://js.cytoscape.org/#cy.boxSelectionEnabled
+    * Get whether nodes are automatically unselectified
+    * (i.e. if true, nodes are unselectable despite their individual state).
+    * http://js.cytoscape.org/#cy.autounselectify
     */
-  def boxSelectionEnabled(): Boolean = js.native
+  @JSName("autounselectify")
+  def autounselectify_Boolean(): Boolean = js.native
+  
   /**
     * Set whether box selection is enabled.
     * If enabled, the user must hold left-click to initiate panning.
@@ -70,7 +71,15 @@ trait CoreViewportManipulation extends StObject {
     *
     * @param bool A truthy value enables box selection; a falsey value disables it.
     */
+  def boxSelectionEnabled(): this.type = js.native
   def boxSelectionEnabled(bool: Boolean): this.type = js.native
+  /**
+    * Get whether box selection is enabled.
+    * If enabled, the user must hold left-click to initiate panning.
+    * http://js.cytoscape.org/#cy.boxSelectionEnabled
+    */
+  @JSName("boxSelectionEnabled")
+  def boxSelectionEnabled_Boolean(): Boolean = js.native
   
   /**
     * Pan the graph to the centre of a collection.
@@ -183,19 +192,21 @@ trait CoreViewportManipulation extends StObject {
   def pan_This(): this.type = js.native
   
   /**
-    * Get whether panning is enabled.
-    * If cy.boxSelectionEnabled() === true, then the user
-    * must taphold to initiate panning.
-    * http://js.cytoscape.org/#cy.panningEnabled
-    */
-  def panningEnabled(): Boolean = js.native
-  /**
     * Set whether panning is enabled. If cy.boxSelectionEnabled() === true, then the user must taphold to initiate panning.
     * http://js.cytoscape.org/#cy.panningEnabled
     *
     * @param bool A truthy value enables panning; a falsey value disables it.
     */
+  def panningEnabled(): this.type = js.native
   def panningEnabled(bool: Boolean): this.type = js.native
+  /**
+    * Get whether panning is enabled.
+    * If cy.boxSelectionEnabled() === true, then the user
+    * must taphold to initiate panning.
+    * http://js.cytoscape.org/#cy.panningEnabled
+    */
+  @JSName("panningEnabled")
+  def panningEnabled_Boolean(): Boolean = js.native
   
   /**
     * Reset the graph to the default zoom level and panning position.
@@ -219,17 +230,32 @@ trait CoreViewportManipulation extends StObject {
   def resize(): this.type = js.native
   
   /**
-    * Get whether panning by user events (e.g. dragging the graph background) is enabled. If cy.boxSelectionEnabled() === true, then the user must taphold to initiate panning.
-    * http://js.cytoscape.org/#cy.userPanningEnabled
+    * Get the selection type.
+    * http://js.cytoscape.org/#cy.selectionType
     */
-  def userPanningEnabled(): Boolean = js.native
+  def selectionType(): SelectionType = js.native
+  /**
+    * Set the selection type.
+    * http://js.cytoscape.org/#cy.selectionType
+    *
+    * @param type The selection type string; one of 'single' (default) or 'additive'.
+    */
+  def selectionType(`type`: SelectionType): this.type = js.native
+  
   /**
     * Set whether panning by user events (e.g. dragging the graph background) is enabled. If cy.boxSelectionEnabled() === true, then the user must taphold to initiate panning.
     * http://js.cytoscape.org/#cy.userPanningEnabled
     *
     * @param bool A truthy value enables user panning; a falsey value disables it.
     */
+  def userPanningEnabled(): this.type = js.native
   def userPanningEnabled(bool: Boolean): this.type = js.native
+  /**
+    * Get whether panning by user events (e.g. dragging the graph background) is enabled. If cy.boxSelectionEnabled() === true, then the user must taphold to initiate panning.
+    * http://js.cytoscape.org/#cy.userPanningEnabled
+    */
+  @JSName("userPanningEnabled")
+  def userPanningEnabled_Boolean(): Boolean = js.native
   
   /**
     * Get or set whether zooming by user events get if no parameter provided
@@ -252,10 +278,11 @@ trait CoreViewportManipulation extends StObject {
     * Set the viewport state (pan & zoom) in one call.
     * http://js.cytoscape.org/#cy.viewport
     *
-    * @param zoom The zoom level to set.
-    * @param pan The pan to set (a rendered position).
+    * @param options The viewport options.
+    * @param options.zoom The zoom level to set.
+    * @param options.pan The pan to set (a rendered position).
     */
-  def viewport(zoom: Double, pan: Position): this.type = js.native
+  def viewport(options: Pan): this.type = js.native
   
   /**
     * Get the on-screen width of the viewport in pixels.

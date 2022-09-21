@@ -29,13 +29,13 @@ trait ContactPicker extends StObject {
     * Launches the Contact Picker for selecting multiple contacts.
     * @return The operation that launches the contact picker.
     */
-  def pickContactsAsync(): IPromiseWithIAsyncOperation[IVector[js.Any]]
+  def pickContactsAsync(): IPromiseWithIAsyncOperation[IVector[Any]]
   
   /**
     * Launches the Contact Picker for selecting multiple contacts.
     * @return The operation that launches the contact picker.
     */
-  def pickMultipleContactsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+  def pickMultipleContactsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
   
   /**
     * Launches the Contact Picker for selecting a single contact.
@@ -53,8 +53,8 @@ object ContactPicker {
     desiredFields: IVector[String],
     desiredFieldsWithContactFieldType: IVector[ContactFieldType],
     pickContactAsync: () => IPromiseWithIAsyncOperation[Contact],
-    pickContactsAsync: () => IPromiseWithIAsyncOperation[IVector[js.Any]],
-    pickMultipleContactsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
+    pickContactsAsync: () => IPromiseWithIAsyncOperation[IVector[Any]],
+    pickMultipleContactsAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]],
     pickSingleContactAsync: () => IPromiseWithIAsyncOperation[ContactInformation],
     selectionMode: ContactSelectionMode
   ): ContactPicker = {
@@ -72,9 +72,9 @@ object ContactPicker {
     
     inline def setPickContactAsync(value: () => IPromiseWithIAsyncOperation[Contact]): Self = StObject.set(x, "pickContactAsync", js.Any.fromFunction0(value))
     
-    inline def setPickContactsAsync(value: () => IPromiseWithIAsyncOperation[IVector[js.Any]]): Self = StObject.set(x, "pickContactsAsync", js.Any.fromFunction0(value))
+    inline def setPickContactsAsync(value: () => IPromiseWithIAsyncOperation[IVector[Any]]): Self = StObject.set(x, "pickContactsAsync", js.Any.fromFunction0(value))
     
-    inline def setPickMultipleContactsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "pickMultipleContactsAsync", js.Any.fromFunction0(value))
+    inline def setPickMultipleContactsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "pickMultipleContactsAsync", js.Any.fromFunction0(value))
     
     inline def setPickSingleContactAsync(value: () => IPromiseWithIAsyncOperation[ContactInformation]): Self = StObject.set(x, "pickSingleContactAsync", js.Any.fromFunction0(value))
     

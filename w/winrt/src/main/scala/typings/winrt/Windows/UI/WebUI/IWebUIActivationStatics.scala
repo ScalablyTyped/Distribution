@@ -6,29 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IWebUIActivationStatics extends StObject {
   
-  var onactivated: js.Any
+  var onactivated: Any
   
-  var onnavigated: js.Any
+  var onnavigated: Any
   
-  var onresuming: js.Any
+  var onresuming: Any
   
-  var onsuspending: js.Any
+  var onsuspending: Any
 }
 object IWebUIActivationStatics {
   
-  inline def apply(onactivated: js.Any, onnavigated: js.Any, onresuming: js.Any, onsuspending: js.Any): IWebUIActivationStatics = {
+  inline def apply(onactivated: Any, onnavigated: Any, onresuming: Any, onsuspending: Any): IWebUIActivationStatics = {
     val __obj = js.Dynamic.literal(onactivated = onactivated.asInstanceOf[js.Any], onnavigated = onnavigated.asInstanceOf[js.Any], onresuming = onresuming.asInstanceOf[js.Any], onsuspending = onsuspending.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebUIActivationStatics]
   }
   
   extension [Self <: IWebUIActivationStatics](x: Self) {
     
-    inline def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
+    inline def setOnactivated(value: Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     
-    inline def setOnnavigated(value: js.Any): Self = StObject.set(x, "onnavigated", value.asInstanceOf[js.Any])
+    inline def setOnnavigated(value: Any): Self = StObject.set(x, "onnavigated", value.asInstanceOf[js.Any])
     
-    inline def setOnresuming(value: js.Any): Self = StObject.set(x, "onresuming", value.asInstanceOf[js.Any])
+    inline def setOnresuming(value: Any): Self = StObject.set(x, "onresuming", value.asInstanceOf[js.Any])
     
-    inline def setOnsuspending(value: js.Any): Self = StObject.set(x, "onsuspending", value.asInstanceOf[js.Any])
+    inline def setOnsuspending(value: Any): Self = StObject.set(x, "onsuspending", value.asInstanceOf[js.Any])
   }
 }

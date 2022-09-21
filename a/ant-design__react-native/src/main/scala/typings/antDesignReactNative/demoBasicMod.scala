@@ -9,8 +9,8 @@ object demoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/action-sheet/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends Test {
-    def this(props: js.Any) = this()
+  open class default protected () extends Test {
+    def this(props: Any) = this()
   }
   
   @JSImport("@ant-design/react-native/lib/action-sheet/demo/basic", "description")
@@ -22,8 +22,7 @@ object demoBasicMod {
   val title: /* "ActionSheet" */ String = js.native
   
   @js.native
-  trait Test
-    extends Component[js.Any, js.Any, js.Any] {
+  trait Test extends Component[Any, Any, Any] {
     
     def showActionSheet(): Unit = js.native
     

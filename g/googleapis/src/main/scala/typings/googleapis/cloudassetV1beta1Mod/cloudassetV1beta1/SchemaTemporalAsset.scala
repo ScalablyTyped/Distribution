@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Temporal asset. In addition to the asset, the temporal asset includes the
-  * status of the asset and valid from and to time of it.
-  */
 trait SchemaTemporalAsset extends StObject {
   
   /**
-    * Asset.
+    * An asset in Google Cloud.
     */
   var asset: js.UndefOr[SchemaAsset] = js.undefined
   
   /**
-    * If the asset is deleted or not.
+    * Whether the asset has been deleted or not.
     */
-  var deleted: js.UndefOr[Boolean] = js.undefined
+  var deleted: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The time window when the asset data and state was observed.
@@ -39,6 +35,8 @@ object SchemaTemporalAsset {
     inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    
+    inline def setDeletedNull: Self = StObject.set(x, "deleted", null)
     
     inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     

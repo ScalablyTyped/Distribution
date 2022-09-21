@@ -12,11 +12,11 @@ object colorGradingTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/colorGradingTexture", "ColorGradingTexture")
   @js.native
-  class ColorGradingTexture protected () extends BaseTexture {
+  open class ColorGradingTexture protected () extends BaseTexture {
     /**
       * Instantiates a ColorGradingTexture from the following parameters.
       *
-      * @param url The location of the color gradind data (currently only supporting 3dl)
+      * @param url The location of the color grading data (currently only supporting 3dl)
       * @param sceneOrEngine The scene or engine the texture will be used in
       * @param onLoad defines a callback triggered when the texture has been loaded
       */
@@ -25,24 +25,24 @@ object colorGradingTextureMod {
     def this(url: String, sceneOrEngine: Scene, onLoad: Nullable[js.Function0[Unit]]) = this()
     def this(url: String, sceneOrEngine: ThinEngine, onLoad: Nullable[js.Function0[Unit]]) = this()
     
-    /* private */ var _onLoad: js.Any = js.native
-    
-    /* private */ var _textureMatrix: js.Any = js.native
-    
-    /**
-      * Fires the onload event from the constructor if requested.
-      */
-    /* private */ var _triggerOnLoad: js.Any = js.native
-    
     /**
       * Occurs when the file being loaded is a .3dl LUT file.
       */
-    /* private */ var load3dlTexture: js.Any = js.native
+    /* private */ var _load3dlTexture: Any = js.native
     
     /**
       * Starts the loading process of the texture.
       */
-    /* private */ var loadTexture: js.Any = js.native
+    /* private */ var _loadTexture: Any = js.native
+    
+    /* private */ var _onLoad: Any = js.native
+    
+    /* private */ var _textureMatrix: Any = js.native
+    
+    /**
+      * Fires the onload event from the constructor if requested.
+      */
+    /* private */ var _triggerOnLoad: Any = js.native
     
     /**
       * The texture URL.
@@ -60,17 +60,16 @@ object colorGradingTextureMod {
       * Parses a color grading texture serialized by Babylon.
       * @param parsedTexture The texture information being parsedTexture
       * @param scene The scene to load the texture in
-      * @param rootUrl The root url of the data assets to load
-      * @return A color gradind texture
+      * @returns A color grading texture
       */
-    inline def Parse(parsedTexture: js.Any, scene: Scene): Nullable[ColorGradingTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[ColorGradingTexture]]
+    inline def Parse(parsedTexture: Any, scene: Scene): Nullable[ColorGradingTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[ColorGradingTexture]]
     
     /**
       * Empty line regex stored for GC.
       */
-    @JSImport("babylonjs/Materials/Textures/colorGradingTexture", "ColorGradingTexture._noneEmptyLineRegex")
+    @JSImport("babylonjs/Materials/Textures/colorGradingTexture", "ColorGradingTexture._NoneEmptyLineRegex")
     @js.native
-    def _noneEmptyLineRegex: js.Any = js.native
-    inline def _noneEmptyLineRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noneEmptyLineRegex")(x.asInstanceOf[js.Any])
+    def _NoneEmptyLineRegex: Any = js.native
+    inline def _NoneEmptyLineRegex_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_NoneEmptyLineRegex")(x.asInstanceOf[js.Any])
   }
 }

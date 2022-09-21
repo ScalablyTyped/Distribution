@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "ReferenceDot")
 @js.native
-class ReferenceDot protected ()
-  extends Component[ReferenceDotProps, js.Object, js.Any] {
+open class ReferenceDot protected ()
+  extends Component[ReferenceDotProps, js.Object, Any] {
   def this(props: ReferenceDotProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ReferenceDotProps, context: js.Any) = this()
+  def this(props: ReferenceDotProps, context: Any) = this()
 }

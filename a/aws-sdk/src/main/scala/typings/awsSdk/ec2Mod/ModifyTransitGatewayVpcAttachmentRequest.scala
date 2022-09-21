@@ -17,7 +17,7 @@ trait ModifyTransitGatewayVpcAttachmentRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The new VPC attachment options.  You cannot modify the IPv6 options. 
+    * The new VPC attachment options.
     */
   var Options: js.UndefOr[ModifyTransitGatewayVpcAttachmentRequestOptions] = js.undefined
   
@@ -44,7 +44,7 @@ object ModifyTransitGatewayVpcAttachmentRequest {
     
     inline def setAddSubnetIdsUndefined: Self = StObject.set(x, "AddSubnetIds", js.undefined)
     
-    inline def setAddSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "AddSubnetIds", js.Array(value :_*))
+    inline def setAddSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "AddSubnetIds", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object ModifyTransitGatewayVpcAttachmentRequest {
     
     inline def setRemoveSubnetIdsUndefined: Self = StObject.set(x, "RemoveSubnetIds", js.undefined)
     
-    inline def setRemoveSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "RemoveSubnetIds", js.Array(value :_*))
+    inline def setRemoveSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "RemoveSubnetIds", js.Array(value*))
     
     inline def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
   }

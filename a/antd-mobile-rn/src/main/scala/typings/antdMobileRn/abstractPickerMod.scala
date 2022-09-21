@@ -22,26 +22,25 @@ object abstractPickerMod {
   inline def getDefaultProps(): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Format]
   
   @js.native
-  trait AbstractPicker
-    extends Component[AbstractPickerProps, js.Any, js.Any] {
+  trait AbstractPicker extends Component[AbstractPickerProps, Any, Any] {
     
-    def fixOnOk(cascader: js.Any): Unit = js.native
+    def fixOnOk(cascader: Any): Unit = js.native
     
     def getPickerCol(): js.Array[Element] = js.native
     
     def getSel(): js.UndefOr[String] = js.native
     
-    def onOk(v: js.Any): Unit = js.native
+    def onOk(v: Any): Unit = js.native
     
-    def onPickerChange(v: js.Any): Unit = js.native
+    def onPickerChange(v: Any): Unit = js.native
     
     def onVisibleChange(visible: Boolean): Unit = js.native
     
-    /* private */ var scrollValue: js.Any = js.native
+    /* private */ var scrollValue: Any = js.native
     
-    def setCasecadeScrollValue(v: js.Any): Unit = js.native
+    def setCasecadeScrollValue(v: Any): Unit = js.native
     
-    def setScrollValue(v: js.Any): Unit = js.native
+    def setScrollValue(v: Any): Unit = js.native
   }
   
   trait AbstractPickerProps

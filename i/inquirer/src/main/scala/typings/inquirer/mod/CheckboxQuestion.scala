@@ -5,15 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question for the `CheckboxPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait CheckboxQuestion[T /* <: Answers */]
   extends StObject
-     with ListQuestionOptionsBase[T, CheckboxChoiceMap[T]] {
+     with LoopableListQuestionOptionsBase[T, CheckboxChoiceMap[T]] {
   
   /**
     * @inheritdoc

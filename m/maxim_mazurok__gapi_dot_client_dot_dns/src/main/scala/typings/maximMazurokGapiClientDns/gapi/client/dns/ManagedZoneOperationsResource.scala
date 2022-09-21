@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ManagedZoneOperationsResource extends StObject {
   
-  /** Fetch the representation of an existing Operation. */
+  /** Fetches the representation of an existing Operation. */
   def get(): Request[Operation] = js.native
   def get(request: Key): Request[Operation] = js.native
   
-  /** Enumerate Operations for the given ManagedZone. */
+  /** Enumerates Operations for the given ManagedZone. */
   def list(): Request[ManagedZoneOperationsListResponse] = js.native
   def list(request: typings.maximMazurokGapiClientDns.anon.ManagedZone): Request[ManagedZoneOperationsListResponse] = js.native
 }

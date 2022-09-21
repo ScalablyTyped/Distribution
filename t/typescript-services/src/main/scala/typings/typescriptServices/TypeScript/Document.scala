@@ -6,39 +6,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Document extends StObject {
   
-  /* private */ var _amdDependencies: js.Any
+  /* private */ var _amdDependencies: Any
   
-  /* private */ var _astDeclMap: js.Any
+  /* private */ var _astDeclMap: Any
   
-  /* private */ var _bloomFilter: js.Any
+  /* private */ var _bloomFilter: Any
   
-  /* private */ var _compiler: js.Any
+  /* private */ var _compiler: Any
   
-  /* private */ var _declASTMap: js.Any
+  /* private */ var _declASTMap: Any
   
-  /* private */ var _diagnostics: js.Any
+  /* private */ var _diagnostics: Any
   
-  /* private */ var _externalModuleIndicatorSpan: js.Any
+  /* private */ var _externalModuleIndicatorSpan: Any
   
   def _getASTForDecl(decl: PullDecl): AST
   
   def _getDeclForAST(ast: AST): PullDecl
   
-  /* private */ var _lineMap: js.Any
+  /* private */ var _lineMap: Any
   
-  /* private */ var _scriptSnapshot: js.Any
+  /* private */ var _scriptSnapshot: Any
   
-  /* private */ var _semanticInfoChain: js.Any
+  /* private */ var _semanticInfoChain: Any
   
   def _setASTForDecl(decl: PullDecl, ast: AST): Unit
   
   def _setDeclForAST(ast: AST, decl: PullDecl): Unit
   
-  /* private */ var _sourceUnit: js.Any
+  /* private */ var _sourceUnit: Any
   
-  /* private */ var _syntaxTree: js.Any
+  /* private */ var _syntaxTree: Any
   
-  /* private */ var _topLevelDecl: js.Any
+  /* private */ var _topLevelDecl: Any
   
   def amdDependencies(): js.Array[String]
   
@@ -46,7 +46,7 @@ trait Document extends StObject {
   
   var byteOrderMark: ByteOrderMark
   
-  /* private */ def cacheSyntaxTreeInfo(syntaxTree: js.Any): js.Any
+  /* private */ def cacheSyntaxTreeInfo(syntaxTree: Any): Any
   
   def diagnostics(): js.Array[Diagnostic]
   
@@ -56,15 +56,15 @@ trait Document extends StObject {
   
   var fileName: String
   
-  /* private */ def getAmdDependency(comment: js.Any): js.Any
+  /* private */ def getAmdDependency(comment: Any): Any
   
   def getEnclosingDecl(ast: AST): PullDecl
   
-  /* private */ def getImplicitImportSpan(sourceUnitLeadingTrivia: js.Any): js.Any
+  /* private */ def getImplicitImportSpan(sourceUnitLeadingTrivia: Any): Any
   
-  /* private */ def getImplicitImportSpanWorker(trivia: js.Any, position: js.Any): js.Any
+  /* private */ def getImplicitImportSpanWorker(trivia: Any, position: Any): Any
   
-  /* private */ def getTopLevelImportOrExportSpan(node: js.Any): js.Any
+  /* private */ def getTopLevelImportOrExportSpan(node: Any): Any
   
   def invalidate(): Unit
   
@@ -96,36 +96,36 @@ trait Document extends StObject {
 object Document {
   
   inline def apply(
-    _amdDependencies: js.Any,
-    _astDeclMap: js.Any,
-    _bloomFilter: js.Any,
-    _compiler: js.Any,
-    _declASTMap: js.Any,
-    _diagnostics: js.Any,
-    _externalModuleIndicatorSpan: js.Any,
+    _amdDependencies: Any,
+    _astDeclMap: Any,
+    _bloomFilter: Any,
+    _compiler: Any,
+    _declASTMap: Any,
+    _diagnostics: Any,
+    _externalModuleIndicatorSpan: Any,
     _getASTForDecl: PullDecl => AST,
     _getDeclForAST: AST => PullDecl,
-    _lineMap: js.Any,
-    _scriptSnapshot: js.Any,
-    _semanticInfoChain: js.Any,
+    _lineMap: Any,
+    _scriptSnapshot: Any,
+    _semanticInfoChain: Any,
     _setASTForDecl: (PullDecl, AST) => Unit,
     _setDeclForAST: (AST, PullDecl) => Unit,
-    _sourceUnit: js.Any,
-    _syntaxTree: js.Any,
-    _topLevelDecl: js.Any,
+    _sourceUnit: Any,
+    _syntaxTree: Any,
+    _topLevelDecl: Any,
     amdDependencies: () => js.Array[String],
     bloomFilter: () => BloomFilter,
     byteOrderMark: ByteOrderMark,
-    cacheSyntaxTreeInfo: js.Any => js.Any,
+    cacheSyntaxTreeInfo: Any => Any,
     diagnostics: () => js.Array[Diagnostic],
     emitToOwnOutputFile: () => Boolean,
     externalModuleIndicatorSpan: () => TextSpan,
     fileName: String,
-    getAmdDependency: js.Any => js.Any,
+    getAmdDependency: Any => Any,
     getEnclosingDecl: AST => PullDecl,
-    getImplicitImportSpan: js.Any => js.Any,
-    getImplicitImportSpanWorker: (js.Any, js.Any) => js.Any,
-    getTopLevelImportOrExportSpan: js.Any => js.Any,
+    getImplicitImportSpan: Any => Any,
+    getImplicitImportSpanWorker: (Any, Any) => Any,
+    getTopLevelImportOrExportSpan: Any => Any,
     invalidate: () => Unit,
     isDeclareFile: () => Boolean,
     isExternalModule: () => Boolean,
@@ -150,7 +150,7 @@ object Document {
     
     inline def setByteOrderMark(value: ByteOrderMark): Self = StObject.set(x, "byteOrderMark", value.asInstanceOf[js.Any])
     
-    inline def setCacheSyntaxTreeInfo(value: js.Any => js.Any): Self = StObject.set(x, "cacheSyntaxTreeInfo", js.Any.fromFunction1(value))
+    inline def setCacheSyntaxTreeInfo(value: Any => Any): Self = StObject.set(x, "cacheSyntaxTreeInfo", js.Any.fromFunction1(value))
     
     inline def setDiagnostics(value: () => js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", js.Any.fromFunction0(value))
     
@@ -160,15 +160,15 @@ object Document {
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    inline def setGetAmdDependency(value: js.Any => js.Any): Self = StObject.set(x, "getAmdDependency", js.Any.fromFunction1(value))
+    inline def setGetAmdDependency(value: Any => Any): Self = StObject.set(x, "getAmdDependency", js.Any.fromFunction1(value))
     
     inline def setGetEnclosingDecl(value: AST => PullDecl): Self = StObject.set(x, "getEnclosingDecl", js.Any.fromFunction1(value))
     
-    inline def setGetImplicitImportSpan(value: js.Any => js.Any): Self = StObject.set(x, "getImplicitImportSpan", js.Any.fromFunction1(value))
+    inline def setGetImplicitImportSpan(value: Any => Any): Self = StObject.set(x, "getImplicitImportSpan", js.Any.fromFunction1(value))
     
-    inline def setGetImplicitImportSpanWorker(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getImplicitImportSpanWorker", js.Any.fromFunction2(value))
+    inline def setGetImplicitImportSpanWorker(value: (Any, Any) => Any): Self = StObject.set(x, "getImplicitImportSpanWorker", js.Any.fromFunction2(value))
     
-    inline def setGetTopLevelImportOrExportSpan(value: js.Any => js.Any): Self = StObject.set(x, "getTopLevelImportOrExportSpan", js.Any.fromFunction1(value))
+    inline def setGetTopLevelImportOrExportSpan(value: Any => Any): Self = StObject.set(x, "getTopLevelImportOrExportSpan", js.Any.fromFunction1(value))
     
     inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     
@@ -182,7 +182,7 @@ object Document {
     
     inline def setReferencedFiles(value: js.Array[String]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
     
-    inline def setReferencedFilesVarargs(value: String*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
+    inline def setReferencedFilesVarargs(value: String*): Self = StObject.set(x, "referencedFiles", js.Array(value*))
     
     inline def setSourceUnit(value: () => SourceUnit): Self = StObject.set(x, "sourceUnit", js.Any.fromFunction0(value))
     
@@ -194,38 +194,38 @@ object Document {
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    inline def set_amdDependencies(value: js.Any): Self = StObject.set(x, "_amdDependencies", value.asInstanceOf[js.Any])
+    inline def set_amdDependencies(value: Any): Self = StObject.set(x, "_amdDependencies", value.asInstanceOf[js.Any])
     
-    inline def set_astDeclMap(value: js.Any): Self = StObject.set(x, "_astDeclMap", value.asInstanceOf[js.Any])
+    inline def set_astDeclMap(value: Any): Self = StObject.set(x, "_astDeclMap", value.asInstanceOf[js.Any])
     
-    inline def set_bloomFilter(value: js.Any): Self = StObject.set(x, "_bloomFilter", value.asInstanceOf[js.Any])
+    inline def set_bloomFilter(value: Any): Self = StObject.set(x, "_bloomFilter", value.asInstanceOf[js.Any])
     
-    inline def set_compiler(value: js.Any): Self = StObject.set(x, "_compiler", value.asInstanceOf[js.Any])
+    inline def set_compiler(value: Any): Self = StObject.set(x, "_compiler", value.asInstanceOf[js.Any])
     
-    inline def set_declASTMap(value: js.Any): Self = StObject.set(x, "_declASTMap", value.asInstanceOf[js.Any])
+    inline def set_declASTMap(value: Any): Self = StObject.set(x, "_declASTMap", value.asInstanceOf[js.Any])
     
-    inline def set_diagnostics(value: js.Any): Self = StObject.set(x, "_diagnostics", value.asInstanceOf[js.Any])
+    inline def set_diagnostics(value: Any): Self = StObject.set(x, "_diagnostics", value.asInstanceOf[js.Any])
     
-    inline def set_externalModuleIndicatorSpan(value: js.Any): Self = StObject.set(x, "_externalModuleIndicatorSpan", value.asInstanceOf[js.Any])
+    inline def set_externalModuleIndicatorSpan(value: Any): Self = StObject.set(x, "_externalModuleIndicatorSpan", value.asInstanceOf[js.Any])
     
     inline def set_getASTForDecl(value: PullDecl => AST): Self = StObject.set(x, "_getASTForDecl", js.Any.fromFunction1(value))
     
     inline def set_getDeclForAST(value: AST => PullDecl): Self = StObject.set(x, "_getDeclForAST", js.Any.fromFunction1(value))
     
-    inline def set_lineMap(value: js.Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
+    inline def set_lineMap(value: Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
     
-    inline def set_scriptSnapshot(value: js.Any): Self = StObject.set(x, "_scriptSnapshot", value.asInstanceOf[js.Any])
+    inline def set_scriptSnapshot(value: Any): Self = StObject.set(x, "_scriptSnapshot", value.asInstanceOf[js.Any])
     
-    inline def set_semanticInfoChain(value: js.Any): Self = StObject.set(x, "_semanticInfoChain", value.asInstanceOf[js.Any])
+    inline def set_semanticInfoChain(value: Any): Self = StObject.set(x, "_semanticInfoChain", value.asInstanceOf[js.Any])
     
     inline def set_setASTForDecl(value: (PullDecl, AST) => Unit): Self = StObject.set(x, "_setASTForDecl", js.Any.fromFunction2(value))
     
     inline def set_setDeclForAST(value: (AST, PullDecl) => Unit): Self = StObject.set(x, "_setDeclForAST", js.Any.fromFunction2(value))
     
-    inline def set_sourceUnit(value: js.Any): Self = StObject.set(x, "_sourceUnit", value.asInstanceOf[js.Any])
+    inline def set_sourceUnit(value: Any): Self = StObject.set(x, "_sourceUnit", value.asInstanceOf[js.Any])
     
-    inline def set_syntaxTree(value: js.Any): Self = StObject.set(x, "_syntaxTree", value.asInstanceOf[js.Any])
+    inline def set_syntaxTree(value: Any): Self = StObject.set(x, "_syntaxTree", value.asInstanceOf[js.Any])
     
-    inline def set_topLevelDecl(value: js.Any): Self = StObject.set(x, "_topLevelDecl", value.asInstanceOf[js.Any])
+    inline def set_topLevelDecl(value: Any): Self = StObject.set(x, "_topLevelDecl", value.asInstanceOf[js.Any])
   }
 }

@@ -29,20 +29,20 @@ trait ImportTask extends StObject {
   /**
     * The time that the import task request finished, presented in the Unix time stamp format.
     */
-  var importCompletionTime: js.UndefOr[TimeStamp] = js.undefined
+  var importCompletionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time that the import task request was deleted, presented in the Unix time stamp format.
     */
-  var importDeletedTime: js.UndefOr[TimeStamp] = js.undefined
+  var importDeletedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time that the import task request was made, presented in the Unix time stamp format.
     */
-  var importRequestTime: js.UndefOr[TimeStamp] = js.undefined
+  var importRequestTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The unique ID for a specific import task. These IDs aren't globally unique, but they are unique within an AWS account.
+    * The unique ID for a specific import task. These IDs aren't globally unique, but they are unique within an Amazon Web Services account.
     */
   var importTaskId: js.UndefOr[ImportTaskIdentifier] = js.undefined
   
@@ -96,15 +96,15 @@ object ImportTask {
     
     inline def setErrorsAndFailedEntriesZipUndefined: Self = StObject.set(x, "errorsAndFailedEntriesZip", js.undefined)
     
-    inline def setImportCompletionTime(value: TimeStamp): Self = StObject.set(x, "importCompletionTime", value.asInstanceOf[js.Any])
+    inline def setImportCompletionTime(value: js.Date): Self = StObject.set(x, "importCompletionTime", value.asInstanceOf[js.Any])
     
     inline def setImportCompletionTimeUndefined: Self = StObject.set(x, "importCompletionTime", js.undefined)
     
-    inline def setImportDeletedTime(value: TimeStamp): Self = StObject.set(x, "importDeletedTime", value.asInstanceOf[js.Any])
+    inline def setImportDeletedTime(value: js.Date): Self = StObject.set(x, "importDeletedTime", value.asInstanceOf[js.Any])
     
     inline def setImportDeletedTimeUndefined: Self = StObject.set(x, "importDeletedTime", js.undefined)
     
-    inline def setImportRequestTime(value: TimeStamp): Self = StObject.set(x, "importRequestTime", value.asInstanceOf[js.Any])
+    inline def setImportRequestTime(value: js.Date): Self = StObject.set(x, "importRequestTime", value.asInstanceOf[js.Any])
     
     inline def setImportRequestTimeUndefined: Self = StObject.set(x, "importRequestTime", js.undefined)
     

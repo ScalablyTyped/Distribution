@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object dragAndDropLockedLargeMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/DragAndDropLockedLarge", JSImport.Default)
   @js.native
-  val default: SFC[DragAndDropLockedLargeProps] = js.native
+  val default: FC[DragAndDropLockedLargeProps] = js.native
   
   trait DragAndDropLockedLargeProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object DragAndDropLockedLargeProps {
     
@@ -29,14 +29,14 @@ object dragAndDropLockedLargeMod extends Shortcut {
     
     extension [Self <: DragAndDropLockedLargeProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[DragAndDropLockedLargeProps]
+  type _To = FC[DragAndDropLockedLargeProps]
   
   /* This means you don't have to write `default`, but can instead just say `dragAndDropLockedLargeMod.foo` */
-  override def _to: SFC[DragAndDropLockedLargeProps] = default
+  override def _to: FC[DragAndDropLockedLargeProps] = default
 }

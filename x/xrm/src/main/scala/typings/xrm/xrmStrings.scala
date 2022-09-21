@@ -18,6 +18,7 @@ import typings.xrm.XrmEnum.EntitySaveMode
 import typings.xrm.XrmEnum.FormNotificationLevel
 import typings.xrm.XrmEnum.IntegerAttributeFormat
 import typings.xrm.XrmEnum.NavBarDisplay
+import typings.xrm.XrmEnum.OpenSearchResultMode
 import typings.xrm.XrmEnum.OptionSetAttributeFormat
 import typings.xrm.XrmEnum.ProcessStatus
 import typings.xrm.XrmEnum.ReportAction
@@ -54,6 +55,12 @@ object xrmStrings {
        with FormNotificationLevel
        with typings.xrm.Xrm.FormNotificationLevel
   inline def INFO: INFO = "INFO".asInstanceOf[INFO]
+  
+  @js.native
+  sealed trait Inline
+    extends StObject
+       with OpenSearchResultMode
+  inline def Inline: Inline = "Inline".asInstanceOf[Inline]
   
   @js.native
   sealed trait MaxChildIncidentNumber
@@ -119,6 +126,12 @@ object xrmStrings {
   @js.native
   sealed trait Percentsign extends StObject
   inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  
+  @js.native
+  sealed trait Popup
+    extends StObject
+       with OpenSearchResultMode
+  inline def Popup: Popup = "Popup".asInstanceOf[Popup]
   
   @js.native
   sealed trait Previous
@@ -197,6 +210,14 @@ object xrmStrings {
        with DisplayState
        with typings.xrm.Xrm.DisplayState
   inline def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
+  
+  @js.native
+  sealed trait custom extends StObject
+  inline def custom: custom = "custom".asInstanceOf[custom]
+  
+  @js.native
+  sealed trait dashboard extends StObject
+  inline def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
   
   @js.native
   sealed trait date
@@ -363,14 +384,9 @@ object xrmStrings {
   inline def money: money = "money".asInstanceOf[money]
   
   @js.native
-  sealed trait multioptionset
-    extends StObject
-       with AttributeType
-  inline def multioptionset: multioptionset = "multioptionset".asInstanceOf[multioptionset]
-  
-  @js.native
   sealed trait multiselectoptionset
     extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
        with StandardControlType
   inline def multiselectoptionset: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]

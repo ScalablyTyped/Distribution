@@ -9,7 +9,8 @@ trait IntegratedMeshLayerProperties
      with LayerProperties
      with SceneServiceProperties
      with PortalLayerProperties
-     with ScaleRangeLayerProperties {
+     with ScaleRangeLayerProperties
+     with APIKeyMixinProperties {
   
   /**
     * Specifies how the mesh is placed on the vertical axis (z).

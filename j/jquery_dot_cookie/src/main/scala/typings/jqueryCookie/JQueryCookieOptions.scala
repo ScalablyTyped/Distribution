@@ -14,7 +14,7 @@ trait JQueryCookieOptions extends StObject {
   /**
     * Define lifetime of the cookie. Value can be a Number which will be interpreted as days from time of creation or a Date object. If omitted, the cookie becomes a session cookie.
     */
-  var expires: js.UndefOr[js.Any] = js.undefined
+  var expires: js.UndefOr[Any] = js.undefined
   
   /**
     * Define the path where the cookie is valid. By default the path of the cookie is the path of the page where the cookie was created (standard browser behavior). If you want to make it available for instance across the entire domain use path: '/'. Default: path of page where the cookie was created.
@@ -39,7 +39,7 @@ object JQueryCookieOptions {
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    inline def setExpires(value: js.Any): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Any): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     

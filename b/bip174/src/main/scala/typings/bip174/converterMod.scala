@@ -2,6 +2,7 @@ package typings.bip174
 
 import typings.bip174.anon.CanAdd
 import typings.bip174.anon.CanAddToArray
+import typings.bip174.anon.Check
 import typings.bip174.anon.TypeoffinalScriptSig
 import typings.bip174.anon.TypeoffinalScriptWitness
 import typings.bip174.anon.TypeofglobalXpub
@@ -9,10 +10,15 @@ import typings.bip174.anon.TypeofnonWitnessUtxo
 import typings.bip174.anon.TypeofpartialSig
 import typings.bip174.anon.TypeofporCommitment
 import typings.bip174.anon.TypeofsighashType
+import typings.bip174.anon.TypeoftapKeySig
+import typings.bip174.anon.TypeoftapLeafScript
+import typings.bip174.anon.TypeoftapMerkleRoot
+import typings.bip174.anon.TypeoftapScriptSig
+import typings.bip174.anon.TypeoftapTree
 import typings.bip174.anon.TypeofunsignedTx
 import typings.bip174.anon.TypeofwitnessUtxo
 import typings.bip174.interfacesMod.KeyValue
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,6 +92,36 @@ object converterMod {
     def sighashType: TypeofsighashType = js.native
     inline def sighashType_=(x: TypeofsighashType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sighashType")(x.asInstanceOf[js.Any])
     
+    @JSImport("bip174/src/lib/converter", "inputs.tapBip32Derivation")
+    @js.native
+    def tapBip32Derivation: Check = js.native
+    inline def tapBip32Derivation_=(x: Check): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tapBip32Derivation")(x.asInstanceOf[js.Any])
+    
+    @JSImport("bip174/src/lib/converter", "inputs.tapInternalKey")
+    @js.native
+    def tapInternalKey: CanAdd = js.native
+    inline def tapInternalKey_=(x: CanAdd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tapInternalKey")(x.asInstanceOf[js.Any])
+    
+    @JSImport("bip174/src/lib/converter", "inputs.tapKeySig")
+    @js.native
+    def tapKeySig: TypeoftapKeySig = js.native
+    inline def tapKeySig_=(x: TypeoftapKeySig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tapKeySig")(x.asInstanceOf[js.Any])
+    
+    @JSImport("bip174/src/lib/converter", "inputs.tapLeafScript")
+    @js.native
+    def tapLeafScript: TypeoftapLeafScript = js.native
+    inline def tapLeafScript_=(x: TypeoftapLeafScript): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tapLeafScript")(x.asInstanceOf[js.Any])
+    
+    @JSImport("bip174/src/lib/converter", "inputs.tapMerkleRoot")
+    @js.native
+    def tapMerkleRoot: TypeoftapMerkleRoot = js.native
+    inline def tapMerkleRoot_=(x: TypeoftapMerkleRoot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tapMerkleRoot")(x.asInstanceOf[js.Any])
+    
+    @JSImport("bip174/src/lib/converter", "inputs.tapScriptSig")
+    @js.native
+    def tapScriptSig: TypeoftapScriptSig = js.native
+    inline def tapScriptSig_=(x: TypeoftapScriptSig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tapScriptSig")(x.asInstanceOf[js.Any])
+    
     @JSImport("bip174/src/lib/converter", "inputs.witnessScript")
     @js.native
     def witnessScript: CanAdd = js.native
@@ -114,6 +150,21 @@ object converterMod {
     @js.native
     def redeemScript: CanAdd = js.native
     inline def redeemScript_=(x: CanAdd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("redeemScript")(x.asInstanceOf[js.Any])
+    
+    @JSImport("bip174/src/lib/converter", "outputs.tapBip32Derivation")
+    @js.native
+    def tapBip32Derivation: Check = js.native
+    inline def tapBip32Derivation_=(x: Check): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tapBip32Derivation")(x.asInstanceOf[js.Any])
+    
+    @JSImport("bip174/src/lib/converter", "outputs.tapInternalKey")
+    @js.native
+    def tapInternalKey: CanAdd = js.native
+    inline def tapInternalKey_=(x: CanAdd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tapInternalKey")(x.asInstanceOf[js.Any])
+    
+    @JSImport("bip174/src/lib/converter", "outputs.tapTree")
+    @js.native
+    def tapTree: TypeoftapTree = js.native
+    inline def tapTree_=(x: TypeoftapTree): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tapTree")(x.asInstanceOf[js.Any])
     
     @JSImport("bip174/src/lib/converter", "outputs.witnessScript")
     @js.native

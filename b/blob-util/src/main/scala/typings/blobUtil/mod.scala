@@ -1,6 +1,5 @@
 package typings.blobUtil
 
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.BlobPropertyBag
 import typings.std.HTMLCanvasElement
@@ -14,20 +13,20 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def arrayBufferToBinaryString(buffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBinaryString")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def arrayBufferToBinaryString(buffer: js.typedarray.ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBinaryString")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def arrayBufferToBlob(buffer: ArrayBuffer): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBlob")(buffer.asInstanceOf[js.Any]).asInstanceOf[Blob]
-  inline def arrayBufferToBlob(buffer: ArrayBuffer, `type`: String): Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBlob")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Blob]
+  inline def arrayBufferToBlob(buffer: js.typedarray.ArrayBuffer): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBlob")(buffer.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  inline def arrayBufferToBlob(buffer: js.typedarray.ArrayBuffer, `type`: String): Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBlob")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Blob]
   
   inline def base64StringToBlob(base64: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("base64StringToBlob")(base64.asInstanceOf[js.Any]).asInstanceOf[Blob]
   inline def base64StringToBlob(base64: String, `type`: String): Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("base64StringToBlob")(base64.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Blob]
   
-  inline def binaryStringToArrayBuffer(binary: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryStringToArrayBuffer")(binary.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def binaryStringToArrayBuffer(binary: String): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryStringToArrayBuffer")(binary.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
   
   inline def binaryStringToBlob(binary: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryStringToBlob")(binary.asInstanceOf[js.Any]).asInstanceOf[Blob]
   inline def binaryStringToBlob(binary: String, `type`: String): Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryStringToBlob")(binary.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Blob]
   
-  inline def blobToArrayBuffer(blob: Blob): js.Promise[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("blobToArrayBuffer")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def blobToArrayBuffer(blob: Blob): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("blobToArrayBuffer")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   
   inline def blobToBase64String(blob: Blob): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("blobToBase64String")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
@@ -40,9 +39,9 @@ object mod {
   inline def canvasToBlob(canvas: HTMLCanvasElement, `type`: String, quality: Double): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("canvasToBlob")(canvas.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
   inline def canvasToBlob(canvas: HTMLCanvasElement, `type`: Unit, quality: Double): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("canvasToBlob")(canvas.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
   
-  inline def createBlob(parts: js.Array[js.Any]): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlob")(parts.asInstanceOf[js.Any]).asInstanceOf[Blob]
-  inline def createBlob(parts: js.Array[js.Any], properties: String): Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlob")(parts.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Blob]
-  inline def createBlob(parts: js.Array[js.Any], properties: BlobPropertyBag): Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlob")(parts.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Blob]
+  inline def createBlob(parts: js.Array[Any]): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlob")(parts.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  inline def createBlob(parts: js.Array[Any], properties: String): Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlob")(parts.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Blob]
+  inline def createBlob(parts: js.Array[Any], properties: BlobPropertyBag): Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlob")(parts.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Blob]
   
   inline def createObjectURL(blob: Blob): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(blob.asInstanceOf[js.Any]).asInstanceOf[String]
   

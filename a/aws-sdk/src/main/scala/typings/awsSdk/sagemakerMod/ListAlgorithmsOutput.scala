@@ -12,7 +12,7 @@ trait ListAlgorithmsOutput extends StObject {
   var AlgorithmSummaryList: typings.awsSdk.sagemakerMod.AlgorithmSummaryList
   
   /**
-    * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of algorithms, use it in the subsequent request.
+    * If the response is truncated, SageMaker returns this token. To retrieve the next set of algorithms, use it in the subsequent request.
     */
   var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
@@ -27,7 +27,7 @@ object ListAlgorithmsOutput {
     
     inline def setAlgorithmSummaryList(value: AlgorithmSummaryList): Self = StObject.set(x, "AlgorithmSummaryList", value.asInstanceOf[js.Any])
     
-    inline def setAlgorithmSummaryListVarargs(value: AlgorithmSummary*): Self = StObject.set(x, "AlgorithmSummaryList", js.Array(value :_*))
+    inline def setAlgorithmSummaryListVarargs(value: AlgorithmSummary*): Self = StObject.set(x, "AlgorithmSummaryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

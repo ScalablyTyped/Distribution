@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "GSSolver")
 @js.native
-class GSSolver () extends Solver {
+open class GSSolver () extends Solver {
   def this(options: GSSolverOptions) = this()
   
   var frictionIterations: Double = js.native

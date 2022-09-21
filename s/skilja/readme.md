@@ -11,9 +11,9 @@ Array chunker for JavaScript.
 | Full name          | skilja |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 278 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 15.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/stscoundrel/skilja#readme)

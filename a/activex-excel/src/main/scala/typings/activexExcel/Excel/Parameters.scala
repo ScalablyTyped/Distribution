@@ -24,7 +24,7 @@ trait Parameters extends StObject {
   def Item(Index: String): Parameter = js.native
   def Item(Index: Double): Parameter = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Parameter = js.native
+  def _Default(Index: Any): Parameter = js.native
 }

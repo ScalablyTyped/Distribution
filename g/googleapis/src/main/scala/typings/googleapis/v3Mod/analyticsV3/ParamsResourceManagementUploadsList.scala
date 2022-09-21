@@ -1,9 +1,5 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +14,6 @@ trait ParamsResourceManagementUploadsList
   var accountId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Custom data source Id for uploads to retrieve.
     */
   var customDataSourceId: js.UndefOr[String] = js.undefined
@@ -33,8 +24,7 @@ trait ParamsResourceManagementUploadsList
   var `max-results`: js.UndefOr[Double] = js.undefined
   
   /**
-    * A 1-based index of the first upload to retrieve. Use this parameter as a
-    * pagination mechanism along with the max-results parameter.
+    * A 1-based index of the first upload to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter.
     */
   var `start-index`: js.UndefOr[Double] = js.undefined
   
@@ -55,10 +45,6 @@ object ParamsResourceManagementUploadsList {
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCustomDataSourceId(value: String): Self = StObject.set(x, "customDataSourceId", value.asInstanceOf[js.Any])
     

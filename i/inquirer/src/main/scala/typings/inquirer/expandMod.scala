@@ -2,8 +2,8 @@ package typings.inquirer
 
 import typings.inquirer.mod.Answers
 import typings.inquirer.mod.ExpandQuestionOptions
-import typings.inquirer.mod.prompts.FailedPromptStateData
-import typings.inquirer.mod.prompts.SuccessfulPromptStateData
+import typings.inquirer.mod.inquirer.prompts.FailedPromptStateData
+import typings.inquirer.mod.inquirer.prompts.SuccessfulPromptStateData
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object expandMod {
     * @template TQuestion
     * The options for the question.
     */
-  @JSImport("inquirer/lib/prompts/expand", JSImport.Namespace)
+  @JSImport("inquirer/lib/prompts/expand", JSImport.Default)
   @js.native
-  class ^[TQuestion /* <: Question */] protected () extends ExpandPrompt[TQuestion] {
+  open class default[TQuestion /* <: Question */] protected () extends ExpandPrompt[TQuestion] {
     /**
-      * Initializes a new instance of the `ExpandPrompt<T>` class.
+      * Initializes a new instance of the {@link ExpandPrompt `ExpandPrompt<TQuestion>`} class.
       *
       * @param question
       * The question to prompt the user to answer.
@@ -43,7 +43,7 @@ object expandMod {
     */
   @js.native
   trait ExpandPrompt[TQuestion /* <: Question */]
-    extends typings.inquirer.baseMod.^[TQuestion] {
+    extends typings.inquirer.baseMod.default[TQuestion] {
     
     /**
       * Gets or sets the answer of the prompt.
@@ -53,7 +53,7 @@ object expandMod {
     /**
       * Resolves the value of the prompt.
       */
-    /* protected */ def done(value: js.Any): Unit = js.native
+    /* protected */ def done(value: Any): Unit = js.native
     
     /**
       * Generates the string-representation of the choices.
@@ -69,8 +69,8 @@ object expandMod {
       */
     /* protected */ @JSName("generateChoicesString")
     def generateChoicesString_choices(
-      choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
-      defaultChoice: js.Any
+      choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
+      defaultChoice: Any
     ): String = js.native
     
     /**
@@ -92,7 +92,7 @@ object expandMod {
       * @returns
       * The current value of the prompt.
       */
-    /* protected */ def getCurrentValue(input: String): js.Any = js.native
+    /* protected */ def getCurrentValue(input: String): Any = js.native
     
     /**
       * Gets the promise of the keypress-eventhandler.
@@ -118,12 +118,12 @@ object expandMod {
       * @param eventArgs
       * An object which contains event-data.
       */
-    /* protected */ def onSubmit(eventArgs: SuccessfulPromptStateData[js.Any]): Unit = js.native
+    /* protected */ def onSubmit(eventArgs: SuccessfulPromptStateData[Any]): Unit = js.native
     
     /**
       * Gets or sets an object for paginating the content.
       */
-    /* protected */ var paginator: typings.inquirer.paginatorMod.^ = js.native
+    /* protected */ var paginator: typings.inquirer.paginatorMod.default = js.native
     
     /**
       * Gets or sets the default key.
@@ -155,7 +155,7 @@ object expandMod {
       */
     /* protected */ @JSName("renderChoices")
     def renderChoices_choices(
-      choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
+      choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
       pointer: String
     ): String = js.native
     
@@ -172,12 +172,12 @@ object expandMod {
       */
     /* protected */ @JSName("validateChoices")
     def validateChoices_choices(
-      choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any
+      choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any
     ): Unit = js.native
   }
   
   /**
-    * The question-options for the `ExpandPrompt<T>`.
+    * The question-options for the {@link ExpandPrompt `ExpandPrompt<TQuestion>`}.
     */
   type Question = ExpandQuestionOptions[Answers]
 }

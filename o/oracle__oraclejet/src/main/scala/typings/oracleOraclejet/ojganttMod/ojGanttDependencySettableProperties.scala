@@ -13,11 +13,11 @@ trait ojGanttDependencySettableProperties
   extends StObject
      with JetSettableProperties {
   
-  var predecessorTaskId: js.Any
+  var predecessorTaskId: Any
   
   var shortDesc: String | Null
   
-  var successorTaskId: js.Any
+  var successorTaskId: Any
   
   var svgClassName: String
   
@@ -28,8 +28,8 @@ trait ojGanttDependencySettableProperties
 object ojGanttDependencySettableProperties {
   
   inline def apply(
-    predecessorTaskId: js.Any,
-    successorTaskId: js.Any,
+    predecessorTaskId: Any,
+    successorTaskId: Any,
     svgClassName: String,
     svgStyle: js.Object,
     `type`: finishStart | finishFinish | startStart | startFinish
@@ -41,13 +41,13 @@ object ojGanttDependencySettableProperties {
   
   extension [Self <: ojGanttDependencySettableProperties](x: Self) {
     
-    inline def setPredecessorTaskId(value: js.Any): Self = StObject.set(x, "predecessorTaskId", value.asInstanceOf[js.Any])
+    inline def setPredecessorTaskId(value: Any): Self = StObject.set(x, "predecessorTaskId", value.asInstanceOf[js.Any])
     
     inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
     inline def setShortDescNull: Self = StObject.set(x, "shortDesc", null)
     
-    inline def setSuccessorTaskId(value: js.Any): Self = StObject.set(x, "successorTaskId", value.asInstanceOf[js.Any])
+    inline def setSuccessorTaskId(value: Any): Self = StObject.set(x, "successorTaskId", value.asInstanceOf[js.Any])
     
     inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     

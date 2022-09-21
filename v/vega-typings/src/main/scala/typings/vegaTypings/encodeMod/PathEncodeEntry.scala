@@ -30,24 +30,24 @@ object PathEncodeEntry {
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    inline def setAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "angle", js.Array(value :_*))
+    inline def setAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "angle", js.Array(value*))
     
     inline def setPath(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setPathVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setScaleX(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
-    inline def setScaleXVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "scaleX", js.Array(value :_*))
+    inline def setScaleXVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "scaleX", js.Array(value*))
     
     inline def setScaleY(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
     inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
-    inline def setScaleYVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "scaleY", js.Array(value :_*))
+    inline def setScaleYVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "scaleY", js.Array(value*))
   }
 }

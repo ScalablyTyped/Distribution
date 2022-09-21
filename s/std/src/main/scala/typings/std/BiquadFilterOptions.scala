@@ -8,14 +8,19 @@ trait BiquadFilterOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var Q: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var detune: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var frequency: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var gain: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var `type`: js.UndefOr[BiquadFilterType] = js.undefined
 }
 object BiquadFilterOptions {

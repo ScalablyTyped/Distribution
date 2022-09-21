@@ -1,6 +1,5 @@
 package typings.frappeGantt
 
-import typings.std.Date
 import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("frappe-gantt", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Gantt {
     def this(wrapper: String, tasks: js.Array[Task]) = this()
@@ -32,18 +31,18 @@ object mod {
     extends StObject
        with Task {
     
-    var _end: Date
+    var _end: js.Date
     
     var _index: Double
     
-    var _start: Date
+    var _start: js.Date
   }
   object EnrichedTask {
     
     inline def apply(
-      _end: Date,
+      _end: js.Date,
       _index: Double,
-      _start: Date,
+      _start: js.Date,
       dependencies: String,
       end: String,
       id: String,
@@ -57,11 +56,11 @@ object mod {
     
     extension [Self <: EnrichedTask](x: Self) {
       
-      inline def set_end(value: Date): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
+      inline def set_end(value: js.Date): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
       
       inline def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
       
-      inline def set_start(value: Date): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+      inline def set_start(value: js.Date): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,7 +105,9 @@ object mod {
     
     var on_click: js.UndefOr[js.Function1[/* task */ EnrichedTask, Unit]] = js.undefined
     
-    var on_date_change: js.UndefOr[js.Function3[/* task */ EnrichedTask, /* start */ Date, /* end */ Date, Unit]] = js.undefined
+    var on_date_change: js.UndefOr[
+        js.Function3[/* task */ EnrichedTask, /* start */ js.Date, /* end */ js.Date, Unit]
+      ] = js.undefined
     
     var on_progress_change: js.UndefOr[js.Function2[/* task */ EnrichedTask, /* progress */ Double, Unit]] = js.undefined
     
@@ -167,7 +168,7 @@ object mod {
       
       inline def setOn_clickUndefined: Self = StObject.set(x, "on_click", js.undefined)
       
-      inline def setOn_date_change(value: (/* task */ EnrichedTask, /* start */ Date, /* end */ Date) => Unit): Self = StObject.set(x, "on_date_change", js.Any.fromFunction3(value))
+      inline def setOn_date_change(value: (/* task */ EnrichedTask, /* start */ js.Date, /* end */ js.Date) => Unit): Self = StObject.set(x, "on_date_change", js.Any.fromFunction3(value))
       
       inline def setOn_date_changeUndefined: Self = StObject.set(x, "on_date_change", js.undefined)
       
@@ -195,7 +196,7 @@ object mod {
       
       inline def setView_modesUndefined: Self = StObject.set(x, "view_modes", js.undefined)
       
-      inline def setView_modesVarargs(value: viewMode*): Self = StObject.set(x, "view_modes", js.Array(value :_*))
+      inline def setView_modesVarargs(value: viewMode*): Self = StObject.set(x, "view_modes", js.Array(value*))
     }
   }
   

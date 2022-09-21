@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "DefaultLoadingScreen")
 @js.native
-class DefaultLoadingScreen protected ()
+open class DefaultLoadingScreen protected ()
   extends typings.babylonjs.loadingIndexMod.DefaultLoadingScreen {
   /**
     * Creates a new default loading screen

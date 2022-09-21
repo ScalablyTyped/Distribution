@@ -10,15 +10,12 @@ Binds a function to a specified context and arguments
 | ------------------ | :-------------: |
 | Full name          | bind-ponyfill |
 | Keywords           | bind, ponyfill, polyfill |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 800 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 31.0 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/zkochan/bind-ponyfill#readme)
-- [Bugs](https://github.com/zkochan/bind-ponyfill/issues)
-- [Repository](https://github.com/zkochan/bind-ponyfill)
 - [Npm](https://www.npmjs.com/package/bind-ponyfill)
     
 

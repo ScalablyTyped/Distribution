@@ -1,8 +1,9 @@
 package typings.rsocketCore
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.rsocketCore.wellKnownMimeTypeMod.default
-import typings.std.Iterator
+import typings.std.Iterable
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,16 +16,15 @@ object compositeMetadataMod {
   
   @JSImport("rsocket-core/CompositeMetadata", "CompositeMetadata")
   @js.native
-  class CompositeMetadata protected () extends StObject {
+  open class CompositeMetadata protected ()
+    extends StObject
+       with Iterable[Entry] {
     def this(buffer: Buffer) = this()
-    
-    @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[Entry, js.Any, Unit]] = js.native
   }
   
   @JSImport("rsocket-core/CompositeMetadata", "ExplicitMimeTimeEntry")
   @js.native
-  class ExplicitMimeTimeEntry protected ()
+  open class ExplicitMimeTimeEntry protected ()
     extends StObject
        with Entry {
     def this(content: Buffer, `type`: String) = this()
@@ -43,7 +43,7 @@ object compositeMetadataMod {
   
   @JSImport("rsocket-core/CompositeMetadata", "ReservedMimeTypeEntry")
   @js.native
-  class ReservedMimeTypeEntry protected ()
+  open class ReservedMimeTypeEntry protected ()
     extends StObject
        with Entry {
     def this(content: Buffer, `type`: Double) = this()
@@ -74,7 +74,7 @@ object compositeMetadataMod {
   
   @JSImport("rsocket-core/CompositeMetadata", "WellKnownMimeTypeEntry")
   @js.native
-  class WellKnownMimeTypeEntry protected ()
+  open class WellKnownMimeTypeEntry protected ()
     extends StObject
        with Entry {
     def this(content: Buffer, `type`: default) = this()
@@ -98,6 +98,8 @@ object compositeMetadataMod {
     val `type`: default = js.native
   }
   
+  inline def decodeCompositeMetadata(buffer: Buffer): js.Iterator[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeCompositeMetadata")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Iterator[Entry]]
+  
   inline def decodeMimeAndContentBuffersSlices(compositeMetadata: Buffer, entryIndex: Double): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeMimeAndContentBuffersSlices")(compositeMetadata.asInstanceOf[js.Any], entryIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   
   inline def decodeMimeTypeFromMimeBuffer(flyweightMimeBuffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeMimeTypeFromMimeBuffer")(flyweightMimeBuffer.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -106,6 +108,9 @@ object compositeMetadataMod {
   
   inline def encodeAndAddWellKnownMetadata(compositeMetaData: Buffer, knownMimeType: Double, metadata: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAndAddWellKnownMetadata")(compositeMetaData.asInstanceOf[js.Any], knownMimeType.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def encodeAndAddWellKnownMetadata(compositeMetaData: Buffer, knownMimeType: default, metadata: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAndAddWellKnownMetadata")(compositeMetaData.asInstanceOf[js.Any], knownMimeType.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  inline def encodeCompositeMetadata(metadata: js.Array[js.Tuple2[String | default | Double, Buffer | js.Function0[Buffer]]]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeCompositeMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def encodeCompositeMetadata(metadata: Map[String | default | Double, Buffer | js.Function0[Buffer]]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeCompositeMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   inline def encodeCustomMetadataHeader(customMime: String, metadataLength: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeCustomMetadataHeader")(customMime.asInstanceOf[js.Any], metadataLength.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   

@@ -10,10 +10,10 @@ object tocMod {
   
   @JSImport("material-ui/svg-icons/action/toc", JSImport.Default)
   @js.native
-  class default () extends ActionToc
+  open class default () extends ActionToc
   
   @JSImport("material-ui/svg-icons/action/toc", "ActionToc")
   @js.native
-  class ActionToc ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionToc ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

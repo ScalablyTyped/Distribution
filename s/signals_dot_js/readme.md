@@ -11,14 +11,11 @@ TypeScript port of AS3 Signals.
 | Full name          | signals.js |
 | Keywords           | Signals, TypeScript |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 2417 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 152.33333333333334 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/GoodgameStudios/SignalsJS#readme)
-- [Bugs](https://github.com/GoodgameStudios/SignalsJS/issues)
-- [Repository](https://github.com/GoodgameStudios/SignalsJS)
 - [Npm](https://www.npmjs.com/package/signals.js)
     
 

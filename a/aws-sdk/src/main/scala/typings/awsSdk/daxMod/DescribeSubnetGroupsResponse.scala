@@ -33,6 +33,6 @@ object DescribeSubnetGroupsResponse {
     
     inline def setSubnetGroupsUndefined: Self = StObject.set(x, "SubnetGroups", js.undefined)
     
-    inline def setSubnetGroupsVarargs(value: SubnetGroup*): Self = StObject.set(x, "SubnetGroups", js.Array(value :_*))
+    inline def setSubnetGroupsVarargs(value: SubnetGroup*): Self = StObject.set(x, "SubnetGroups", js.Array(value*))
   }
 }

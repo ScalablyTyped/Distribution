@@ -49,7 +49,7 @@ object groupedListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedListBase")
   @js.native
-  class GroupedListBase protected ()
+  open class GroupedListBase protected ()
     extends typings.officeUiFabricReact.groupedListBaseMod.GroupedListBase {
     def this(props: IGroupedListProps) = this()
   }
@@ -70,7 +70,7 @@ object groupedListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedListSection")
   @js.native
-  class GroupedListSection protected ()
+  open class GroupedListSection protected ()
     extends typings.officeUiFabricReact.groupedListSectionMod.GroupedListSection {
     def this(props: IGroupedListSectionProps) = this()
   }

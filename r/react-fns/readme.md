@@ -10,15 +10,12 @@ Modern React components, hoc's, and utilities functions.
 | ------------------ | :-------------: |
 | Full name          | react-fns |
 | Keywords           | react, react-fns, render-props, hoc |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 112138 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6676.333333333333 |
+| # stars            | 3742.0 |
 
 ## Links
-- [Homepage](https://github.com/jaredpalmer/react-fns#readme)
-- [Bugs](https://github.com/jaredpalmer/react-fns/issues)
-- [Repository](https://github.com/jaredpalmer/react-fns)
 - [Npm](https://www.npmjs.com/package/react-fns)
     
 

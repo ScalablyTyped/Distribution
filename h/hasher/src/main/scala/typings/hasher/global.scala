@@ -28,9 +28,9 @@ object global {
       * <br />- inspired by Robert Penner's AS3 Signals.
       * @author Miller Medeiros
       */
-    class changed ()
+    open class changed ()
       extends StObject
-         with Signal[js.Any]
+         with Signal[Any]
     
     // <static> {signals.Signal} hasher.initialized
     // Signal dispatched when hasher is initialized. - pass current hash as first parameter to listeners.
@@ -42,9 +42,9 @@ object global {
       * <br />- inspired by Robert Penner's AS3 Signals.
       * @author Miller Medeiros
       */
-    class initialized ()
+    open class initialized ()
       extends StObject
-         with Signal[js.Any]
+         with Signal[Any]
     
     // default value: '/';
     // <static> {signals.Signal} hasher.stopped
@@ -57,9 +57,9 @@ object global {
       * <br />- inspired by Robert Penner's AS3 Signals.
       * @author Miller Medeiros
       */
-    class stopped ()
+    open class stopped ()
       extends StObject
-         with Signal[js.Any]
+         with Signal[Any]
     
     type _To = HasherStatic
     

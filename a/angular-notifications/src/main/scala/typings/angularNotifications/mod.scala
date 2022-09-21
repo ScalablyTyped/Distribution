@@ -86,7 +86,7 @@ object mod {
       extends StObject
          with IModule {
       
-      def awesomeNotify(`type`: String, icon: String, title: String, content: String, userData: js.Any): INotification = js.native
+      def awesomeNotify(`type`: String, icon: String, title: String, content: String, userData: Any): INotification = js.native
       
       def clear(): Unit = js.native
       
@@ -101,7 +101,7 @@ object mod {
       
       def error(title: String): INotification = js.native
       def error(title: String, content: String): INotification = js.native
-      def error(title: String, content: String, userData: js.Any): INotification = js.native
+      def error(title: String, content: String, userData: Any): INotification = js.native
       
       /* ============ QUERYING RELATED METHODS ============*/
       def getAll(): js.Array[INotification] = js.native
@@ -113,11 +113,11 @@ object mod {
       /* ============== NOTIFICATION METHODS ==============*/
       def info(title: String): INotification = js.native
       def info(title: String, content: String): INotification = js.native
-      def info(title: String, content: String, userData: js.Any): INotification = js.native
+      def info(title: String, content: String, userData: Any): INotification = js.native
       
-      def makeNotification(`type`: String, image: String, icon: String, title: String, content: String, userData: js.Any): INotification = js.native
+      def makeNotification(`type`: String, image: String, icon: String, title: String, content: String, userData: Any): INotification = js.native
       
-      def notify(image: String, title: String, content: String, userData: js.Any): INotification = js.native
+      def notify(image: String, title: String, content: String, userData: Any): INotification = js.native
       
       def requestHtml5ModePermissions(): Boolean = js.native
       
@@ -128,7 +128,7 @@ object mod {
       
       def success(title: String): INotification = js.native
       def success(title: String, content: String): INotification = js.native
-      def success(title: String, content: String, userData: js.Any): INotification = js.native
+      def success(title: String, content: String, userData: Any): INotification = js.native
       
       def toggleHtml5Mode(): Unit = js.native
       
@@ -136,7 +136,7 @@ object mod {
       
       def warning(title: String): INotification = js.native
       def warning(title: String, content: String): INotification = js.native
-      def warning(title: String, content: String, userData: js.Any): INotification = js.native
+      def warning(title: String, content: String, userData: Any): INotification = js.native
     }
     
     trait ISettings extends StObject {

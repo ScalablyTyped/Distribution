@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait googleMapConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var center: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var center: js.UndefOr[js.Array[Any]] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
   
@@ -31,7 +31,7 @@ trait googleMapConfig extends StObject {
   
   var gravity: js.UndefOr[Double] = js.undefined
   
-  var heatmapConfig: js.UndefOr[js.Any] = js.undefined
+  var heatmapConfig: js.UndefOr[Any] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -59,11 +59,11 @@ trait googleMapConfig extends StObject {
   
   var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var save: js.UndefOr[js.Any] = js.undefined
+  var save: js.UndefOr[Any] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.undefined
+  var scheme: js.UndefOr[Any] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.undefined
+  var url: js.UndefOr[Any] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -80,7 +80,7 @@ object googleMapConfig {
   
   extension [Self <: googleMapConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -88,21 +88,21 @@ object googleMapConfig {
     
     inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    inline def setCenter(value: js.Array[js.Any]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: js.Array[Any]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    inline def setCenterVarargs(value: js.Any*): Self = StObject.set(x, "center", js.Array(value :_*))
+    inline def setCenterVarargs(value: Any*): Self = StObject.set(x, "center", js.Array(value*))
     
     inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataFeed(value: String | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
     
@@ -110,7 +110,7 @@ object googleMapConfig {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDatathrottle(value: Double): Self = StObject.set(x, "datathrottle", value.asInstanceOf[js.Any])
     
@@ -128,7 +128,7 @@ object googleMapConfig {
     
     inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
-    inline def setHeatmapConfig(value: js.Any): Self = StObject.set(x, "heatmapConfig", value.asInstanceOf[js.Any])
+    inline def setHeatmapConfig(value: Any): Self = StObject.set(x, "heatmapConfig", value.asInstanceOf[js.Any])
     
     inline def setHeatmapConfigUndefined: Self = StObject.set(x, "heatmapConfig", js.undefined)
     
@@ -184,15 +184,15 @@ object googleMapConfig {
     
     inline def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
     
-    inline def setSave(value: js.Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
-    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

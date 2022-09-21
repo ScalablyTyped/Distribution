@@ -12,7 +12,7 @@ object onScreenKeyboardMod {
   
   @JSImport("guacamole-client/lib/OnScreenKeyboard", "OnScreenKeyboard")
   @js.native
-  class OnScreenKeyboard protected () extends StObject {
+  open class OnScreenKeyboard protected () extends StObject {
     def this(layout: Layout) = this()
     
     /**
@@ -137,7 +137,7 @@ object onScreenKeyboardMod {
       
       inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
-      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

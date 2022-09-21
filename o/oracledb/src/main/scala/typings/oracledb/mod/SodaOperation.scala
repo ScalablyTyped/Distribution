@@ -33,9 +33,9 @@ trait SodaOperation extends StObject {
     * This property sets the size of an internal buffer used for fetching documents from a collection
     * with the terminal SodaOperation methods getCursor() and getDocuments(). Changing size may affect
     * performance but does not affect how many documents are returned.
-    * 
+    *
     * If fetchArraySize() is not used, the size defaults to the current value of oracledb.fetchArraySize.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaqbesearches
     * @since 5.0
     */
@@ -51,7 +51,7 @@ trait SodaOperation extends StObject {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaqbesearches
     * @since 3.0
     */
-  def filter(filterSpec: Record[String, js.Any]): SodaOperation = js.native
+  def filter(filterSpec: Record[String, Any]): SodaOperation = js.native
   
   /**
     * Returns a SodaDocumentCursor for documents that match the SodaOperation query criteria.
@@ -96,6 +96,14 @@ trait SodaOperation extends StObject {
     */
   def getOne(): js.Promise[js.UndefOr[SodaDocument]] = js.native
   def getOne(callback: js.Function2[/* error */ DBError, /* document */ js.UndefOr[SodaDocument], Unit]): Unit = js.native
+  
+  /**
+    * The hint() value can be used to pass an Oracle hint to terminal SodaOperation Methods. 
+    * It is string in the same format as a SQL hint but without any comment characters, for example hint("MONITOR"). 
+    * Pass only the hint "MONITOR" (turn on monitoring) or "NO_MONITOR" (turn off monitoring).
+    * See the Oracle Database SQL Tuning Guide documentation MONITOR and NO_MONITOR Hints and Monitoring Database Operations for more information.
+    */
+  def hint(value: String): SodaOperation = js.native
   
   /**
     * Sets the key value to be used to match a document for the operation. Any previous calls made to this
@@ -172,9 +180,9 @@ trait SodaOperation extends StObject {
     *
     * @since 3.0
     */
-  def replaceOne(newDocumentContent: Record[String, js.Any]): js.Promise[SodaReplaceOneResult] = js.native
+  def replaceOne(newDocumentContent: Record[String, Any]): js.Promise[SodaReplaceOneResult] = js.native
   def replaceOne(
-    newDocumentContent: Record[String, js.Any],
+    newDocumentContent: Record[String, Any],
     callback: js.Function2[/* error */ DBError, /* result */ SodaReplaceOneResult, Unit]
   ): Unit = js.native
   /**
@@ -218,9 +226,9 @@ trait SodaOperation extends StObject {
     *
     * @since 3.0
     */
-  def replaceOneAndGet(newDocumentContent: Record[String, js.Any]): js.Promise[SodaDocument] = js.native
+  def replaceOneAndGet(newDocumentContent: Record[String, Any]): js.Promise[SodaDocument] = js.native
   def replaceOneAndGet(
-    newDocumentContent: Record[String, js.Any],
+    newDocumentContent: Record[String, Any],
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
   ): Unit = js.native
   /**

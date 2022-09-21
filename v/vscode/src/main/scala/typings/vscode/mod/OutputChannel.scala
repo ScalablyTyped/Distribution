@@ -43,6 +43,13 @@ trait OutputChannel extends StObject {
   val name: String = js.native
   
   /**
+    * Replaces all output from the channel with the given value.
+    *
+    * @param value A string, falsy values will not be printed.
+    */
+  def replace(value: String): Unit = js.native
+  
+  /**
     * Reveal this channel in the UI.
     *
     * @param preserveFocus When `true` the channel will not take focus.

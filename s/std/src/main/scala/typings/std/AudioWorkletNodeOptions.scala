@@ -8,15 +8,20 @@ trait AudioWorkletNodeOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var numberOfInputs: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var numberOfOutputs: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var outputChannelCount: js.UndefOr[js.Array[Double]] = js.undefined
   
+  /* standard dom */
   var parameterData: js.UndefOr[Record[java.lang.String, Double]] = js.undefined
   
-  var processorOptions: js.UndefOr[js.Any] = js.undefined
+  /* standard dom */
+  var processorOptions: js.UndefOr[Any] = js.undefined
 }
 object AudioWorkletNodeOptions {
   
@@ -39,13 +44,13 @@ object AudioWorkletNodeOptions {
     
     inline def setOutputChannelCountUndefined: Self = StObject.set(x, "outputChannelCount", js.undefined)
     
-    inline def setOutputChannelCountVarargs(value: Double*): Self = StObject.set(x, "outputChannelCount", js.Array(value :_*))
+    inline def setOutputChannelCountVarargs(value: Double*): Self = StObject.set(x, "outputChannelCount", js.Array(value*))
     
     inline def setParameterData(value: Record[java.lang.String, Double]): Self = StObject.set(x, "parameterData", value.asInstanceOf[js.Any])
     
     inline def setParameterDataUndefined: Self = StObject.set(x, "parameterData", js.undefined)
     
-    inline def setProcessorOptions(value: js.Any): Self = StObject.set(x, "processorOptions", value.asInstanceOf[js.Any])
+    inline def setProcessorOptions(value: Any): Self = StObject.set(x, "processorOptions", value.asInstanceOf[js.Any])
     
     inline def setProcessorOptionsUndefined: Self = StObject.set(x, "processorOptions", js.undefined)
   }

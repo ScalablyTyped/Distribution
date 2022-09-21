@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The ChangedEvent class constructor produces an empty ChangedEvent object.
   */
-class ChangedEvent ()
+open class ChangedEvent ()
   extends typings.go.mod.ChangedEvent
 object ChangedEvent {
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-cookie
 
-Typings are for version 2.2
+Typings are for version 3.0
 
 ## Library description:
 A simple, lightweight JavaScript API for handling cookies
@@ -10,15 +10,12 @@ A simple, lightweight JavaScript API for handling cookies
 | ------------------ | :-------------: |
 | Full name          | js-cookie |
 | Keywords           | cookie, cookies, browser, amd, commonjs, client, js-cookie, browserify |
-| # releases         | 9 |
-| # dependents       | 2660 |
-| # downloads        | 100029577 |
-| # stars            | 79 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9836637E7 |
+| # stars            | 19630.0 |
 
 ## Links
-- [Homepage](https://github.com/js-cookie/js-cookie#readme)
-- [Bugs](https://github.com/js-cookie/js-cookie/issues)
-- [Repository](https://github.com/js-cookie/js-cookie)
 - [Npm](https://www.npmjs.com/package/js-cookie)
     
 

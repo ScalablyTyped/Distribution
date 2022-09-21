@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.JsonAdaptor")
 @js.native
-class JsonAdaptor ()
+open class JsonAdaptor ()
   extends StObject
      with typings.ejWebAll.ej.JsonAdaptor

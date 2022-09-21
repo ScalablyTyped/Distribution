@@ -7,7 +7,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.block
 import typings.devtoolsProtocol.devtoolsProtocolStrings.closure
 import typings.devtoolsProtocol.devtoolsProtocolStrings.eval
 import typings.devtoolsProtocol.devtoolsProtocolStrings.global
-import typings.devtoolsProtocol.devtoolsProtocolStrings.local
+import typings.devtoolsProtocol.devtoolsProtocolStrings.local_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.module
 import typings.devtoolsProtocol.devtoolsProtocolStrings.script_
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObject
@@ -39,13 +39,13 @@ trait Scope extends StObject {
   /**
     * Scope type. (ScopeType enum)
     */
-  var `type`: global | local | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack`
+  var `type`: global | local_ | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack`
 }
 object Scope {
   
   inline def apply(
     `object`: RemoteObject,
-    `type`: global | local | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack`
+    `type`: global | local_ | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack`
   ): Scope = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
@@ -70,7 +70,7 @@ object Scope {
     inline def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
     
     inline def setType(
-      value: global | local | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack`
+      value: global | local_ | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack`
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -9,5 +9,5 @@ object segmentDrawerMod {
   
   @JSImport("plottable/build/src/drawers/segmentDrawer", "SegmentSVGDrawer")
   @js.native
-  class SegmentSVGDrawer () extends SVGDrawer
+  open class SegmentSVGDrawer () extends SVGDrawer
 }

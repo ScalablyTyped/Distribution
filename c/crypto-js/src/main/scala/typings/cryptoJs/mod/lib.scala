@@ -26,7 +26,7 @@ object lib {
       *
       *     var instance = MyType.create();
       */
-    inline def create(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
     
     /**
       * Creates a new object that inherits from this object.
@@ -44,7 +44,7 @@ object lib {
       *         }
       *     });
       */
-    inline def extend(overrides: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(overrides.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def extend(overrides: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(overrides.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * Copies properties into this object.
@@ -57,7 +57,7 @@ object lib {
       *         field: 'value'
       *     });
       */
-    inline def mixIn(properties: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixIn")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def mixIn(properties: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixIn")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   /**
@@ -65,11 +65,11 @@ object lib {
     */
   @JSImport("crypto-js", "lib.BlockCipherMode")
   @js.native
-  val BlockCipherMode: js.Any = js.native
+  val BlockCipherMode: Any = js.native
   
   @JSImport("crypto-js", "lib.BufferedBlockAlgorithm")
   @js.native
-  val BufferedBlockAlgorithm: js.Any = js.native
+  val BufferedBlockAlgorithm: Any = js.native
   
   object Cipher {
     

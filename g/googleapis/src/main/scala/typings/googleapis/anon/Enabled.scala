@@ -8,7 +8,7 @@ trait Enabled extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var lockedTime: js.UndefOr[String] = js.undefined
+  var toggleTime: js.UndefOr[String] = js.undefined
 }
 object Enabled {
   
@@ -23,8 +23,8 @@ object Enabled {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setLockedTime(value: String): Self = StObject.set(x, "lockedTime", value.asInstanceOf[js.Any])
+    inline def setToggleTime(value: String): Self = StObject.set(x, "toggleTime", value.asInstanceOf[js.Any])
     
-    inline def setLockedTimeUndefined: Self = StObject.set(x, "lockedTime", js.undefined)
+    inline def setToggleTimeUndefined: Self = StObject.set(x, "toggleTime", js.undefined)
   }
 }

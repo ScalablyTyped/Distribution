@@ -10,10 +10,10 @@ Find files based on partial paths
 | ------------------ | :-------------: |
 | Full name          | filing-cabinet |
 | Keywords           | lookup, es6, amd, commonjs, sass, less, stylus, partial, resolution, paths |
-| # releases         | 9 |
-| # dependents       | 11 |
-| # downloads        | 11381741 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1442788.0 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/mrjoelkemp/node-filing-cabinet)

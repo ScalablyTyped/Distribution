@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Refund")
 @js.native
-class Refund () extends StObject {
+open class Refund () extends StObject {
   
   /**
     * Additional recipients (other than the merchant) receiving a portion of this refund.

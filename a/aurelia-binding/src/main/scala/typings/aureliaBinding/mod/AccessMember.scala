@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "AccessMember")
 @js.native
-class AccessMember protected () extends Expression {
+open class AccessMember protected () extends Expression {
   def this(`object`: Expression, name: String) = this()
   
   /**

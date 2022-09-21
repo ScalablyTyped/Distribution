@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebRequest")
 @js.native
-class WebRequest ()
+open class WebRequest ()
   extends typings.babylonjs.miscIndexMod.WebRequest
 /* static members */
 object WebRequest {
@@ -32,4 +32,9 @@ object WebRequest {
   @js.native
   def CustomRequestModifiers: js.Array[js.Function2[/* request */ XMLHttpRequest, /* url */ String, Unit]] = js.native
   inline def CustomRequestModifiers_=(x: js.Array[js.Function2[/* request */ XMLHttpRequest, /* url */ String, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomRequestModifiers")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs/index", "WebRequest.SkipRequestModificationForBabylonCDN")
+  @js.native
+  def SkipRequestModificationForBabylonCDN: Boolean = js.native
+  inline def SkipRequestModificationForBabylonCDN_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SkipRequestModificationForBabylonCDN")(x.asInstanceOf[js.Any])
 }

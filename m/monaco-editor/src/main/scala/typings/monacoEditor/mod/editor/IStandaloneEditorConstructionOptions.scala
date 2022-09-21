@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.editor
 
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +19,14 @@ trait IStandaloneEditorConstructionOptions
   var accessibilityHelpUrl: js.UndefOr[String] = js.undefined
   
   /**
+    * Container element to use for ARIA messages.
+    * Defaults to document.body.
+    */
+  var ariaContainerElement: js.UndefOr[HTMLElement] = js.undefined
+  
+  /**
     * The initial language of the auto created model in the editor.
-    * To not create automatically a model, use `model: null`.
+    * To not automatically create a model, use `model: null`.
     */
   var language: js.UndefOr[String] = js.undefined
   
@@ -30,7 +37,7 @@ trait IStandaloneEditorConstructionOptions
   
   /**
     * The initial value of the auto created model in the editor.
-    * To not create automatically a model, use `model: null`.
+    * To not automatically create a model, use `model: null`.
     */
   var value: js.UndefOr[String] = js.undefined
 }
@@ -46,6 +53,10 @@ object IStandaloneEditorConstructionOptions {
     inline def setAccessibilityHelpUrl(value: String): Self = StObject.set(x, "accessibilityHelpUrl", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityHelpUrlUndefined: Self = StObject.set(x, "accessibilityHelpUrl", js.undefined)
+    
+    inline def setAriaContainerElement(value: HTMLElement): Self = StObject.set(x, "ariaContainerElement", value.asInstanceOf[js.Any])
+    
+    inline def setAriaContainerElementUndefined: Self = StObject.set(x, "ariaContainerElement", js.undefined)
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

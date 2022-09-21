@@ -36,7 +36,7 @@ object SocksClientChainOptions {
     
     inline def setProxies(value: js.Array[SocksProxy]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
     
-    inline def setProxiesVarargs(value: SocksProxy*): Self = StObject.set(x, "proxies", js.Array(value :_*))
+    inline def setProxiesVarargs(value: SocksProxy*): Self = StObject.set(x, "proxies", js.Array(value*))
     
     inline def setRandomizeChain(value: `false`): Self = StObject.set(x, "randomizeChain", value.asInstanceOf[js.Any])
     

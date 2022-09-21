@@ -47,7 +47,7 @@ object IGenericDimensionLayout {
     
     inline def setQDimInfos(value: js.Array[IGenericDimensionInfo]): Self = StObject.set(x, "qDimInfos", value.asInstanceOf[js.Any])
     
-    inline def setQDimInfosVarargs(value: IGenericDimensionInfo*): Self = StObject.set(x, "qDimInfos", js.Array(value :_*))
+    inline def setQDimInfosVarargs(value: IGenericDimensionInfo*): Self = StObject.set(x, "qDimInfos", js.Array(value*))
     
     inline def setQMeta(value: INxMetaTitleDescriptionTag): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
   }

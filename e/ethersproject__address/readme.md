@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__address
 
-Typings are for version 5.0.7
+Typings are for version 5.7.0
 
 ## Library description:
 Utilities for handling Ethereum Addresses for ethers.
@@ -10,10 +10,10 @@ Utilities for handling Ethereum Addresses for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/address |
 | Keywords           | Ethereum, ethers |
-| # releases         | 30 |
-| # dependents       | 53 |
-| # downloads        | 2993005 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 3594557.6666666665 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

@@ -3,7 +3,6 @@ package typings.phaser.Phaser.Types
 import org.scalablytyped.runtime.StringDictionary
 import typings.phaser.Phaser.Tweens.Timeline
 import typings.phaser.Phaser.Tweens.Tween
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,31 +15,31 @@ object Tweens {
   type Event = String
   
   type GetActiveCallback = js.Function6[
-    /* target */ js.Any, 
+    /* target */ Any, 
     /* key */ String, 
     /* value */ Double, 
-    /* targetIndex */ integer, 
-    /* totalTargets */ integer, 
+    /* targetIndex */ Double, 
+    /* totalTargets */ Double, 
     /* tween */ Tween, 
     Unit
   ]
   
   type GetEndCallback = js.Function6[
-    /* target */ js.Any, 
+    /* target */ Any, 
     /* key */ String, 
     /* value */ Double, 
-    /* targetIndex */ integer, 
-    /* totalTargets */ integer, 
+    /* targetIndex */ Double, 
+    /* totalTargets */ Double, 
     /* tween */ Tween, 
     Unit
   ]
   
   type GetStartCallback = js.Function6[
-    /* target */ js.Any, 
+    /* target */ Any, 
     /* key */ String, 
     /* value */ Double, 
-    /* targetIndex */ integer, 
-    /* totalTargets */ integer, 
+    /* targetIndex */ Double, 
+    /* totalTargets */ Double, 
     /* tween */ Tween, 
     Unit
   ]
@@ -50,12 +49,12 @@ object Tweens {
     /**
       * Scope (this) for the callbacks. The default scope is the tween.
       */
-    var callbackScope: js.UndefOr[js.Any] = js.undefined
+    var callbackScope: js.UndefOr[Any] = js.undefined
     
     /**
       * The time the tween will wait before the onComplete event is dispatched once it has completed, in ms.
       */
-    var completeDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var completeDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * The number of milliseconds to delay before the tween will start.
@@ -75,7 +74,7 @@ object Tweens {
     /**
       * Optional easing parameters.
       */
-    var easeParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var easeParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The start number.
@@ -90,17 +89,17 @@ object Tweens {
     /**
       * The number of times the tween will repeat. (A value of 1 means the tween will play twice, as it repeated once.) The first loop starts after every property tween has completed once.
       */
-    var loop: js.UndefOr[String | Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var loop: js.UndefOr[String | Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * The time the tween will pause before starting either a yoyo or returning to the start for a repeat.
       */
-    var loopDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var loopDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * Used when the Tween is part of a Timeline.
       */
-    var offset: js.UndefOr[String | Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var offset: js.UndefOr[String | Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * A function to call when the tween completes.
@@ -110,12 +109,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onComplete`.
       */
-    var onCompleteParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onCompleteParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onComplete`.
       */
-    var onCompleteScope: js.UndefOr[js.Any] = js.undefined
+    var onCompleteScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call each time the tween loops.
@@ -125,12 +124,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onLoop`.
       */
-    var onLoopParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onLoopParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onLoop`.
       */
-    var onLoopScope: js.UndefOr[js.Any] = js.undefined
+    var onLoopScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call each time the tween repeats. Called once per property per target.
@@ -140,12 +139,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onRepeat`.
       */
-    var onRepeatParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onRepeatParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onRepeat`.
       */
-    var onRepeatScope: js.UndefOr[js.Any] = js.undefined
+    var onRepeatScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call when the tween starts.
@@ -155,12 +154,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onStart`.
       */
-    var onStartParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onStartParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onStart`.
       */
-    var onStartScope: js.UndefOr[js.Any] = js.undefined
+    var onStartScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call when the tween is stopped.
@@ -170,12 +169,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onStop`.
       */
-    var onStopParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onStopParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onStop`.
       */
-    var onStopScope: js.UndefOr[js.Any] = js.undefined
+    var onStopScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call each time the tween steps. Called once per property per target.
@@ -185,12 +184,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onUpdate`.
       */
-    var onUpdateParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onUpdateParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onUpdate`.
       */
-    var onUpdateScope: js.UndefOr[js.Any] = js.undefined
+    var onUpdateScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call each time the tween yoyos. Called once per property per target.
@@ -200,12 +199,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onYoyo`.
       */
-    var onYoyoParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onYoyoParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onYoyo`.
       */
-    var onYoyoScope: js.UndefOr[js.Any] = js.undefined
+    var onYoyoScope: js.UndefOr[Any] = js.undefined
     
     /**
       * Does the tween start in a paused state (true) or playing (false)?
@@ -246,15 +245,15 @@ object Tweens {
     
     extension [Self <: NumberTweenBuilderConfig](x: Self) {
       
-      inline def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
+      inline def setCallbackScope(value: Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
       inline def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
       
-      inline def setCompleteDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
+      inline def setCompleteDelay(value: String | Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
       
       inline def setCompleteDelayUndefined: Self = StObject.set(x, "completeDelay", js.undefined)
       
-      inline def setCompleteDelayVarargs(value: js.Any*): Self = StObject.set(x, "completeDelay", js.Array(value :_*))
+      inline def setCompleteDelayVarargs(value: Any*): Self = StObject.set(x, "completeDelay", js.Array(value*))
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -266,11 +265,11 @@ object Tweens {
       
       inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      inline def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
+      inline def setEaseParams(value: js.Array[Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
       
       inline def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
       
-      inline def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
+      inline def setEaseParamsVarargs(value: Any*): Self = StObject.set(x, "easeParams", js.Array(value*))
       
       inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
@@ -282,33 +281,33 @@ object Tweens {
       
       inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      inline def setLoop(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: String | Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      inline def setLoopDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
+      inline def setLoopDelay(value: String | Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
       
       inline def setLoopDelayUndefined: Self = StObject.set(x, "loopDelay", js.undefined)
       
-      inline def setLoopDelayVarargs(value: js.Any*): Self = StObject.set(x, "loopDelay", js.Array(value :_*))
+      inline def setLoopDelayVarargs(value: Any*): Self = StObject.set(x, "loopDelay", js.Array(value*))
       
       inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      inline def setLoopVarargs(value: js.Any*): Self = StObject.set(x, "loop", js.Array(value :_*))
+      inline def setLoopVarargs(value: Any*): Self = StObject.set(x, "loop", js.Array(value*))
       
-      inline def setOffset(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: String | Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: js.Any*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Any*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOnComplete(value: TweenOnCompleteCallback): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
-      inline def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
+      inline def setOnCompleteParams(value: js.Array[Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
       
-      inline def setOnCompleteParamsVarargs(value: js.Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value :_*))
+      inline def setOnCompleteParamsVarargs(value: Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value*))
       
-      inline def setOnCompleteScope(value: js.Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
+      inline def setOnCompleteScope(value: Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteScopeUndefined: Self = StObject.set(x, "onCompleteScope", js.undefined)
       
@@ -316,13 +315,13 @@ object Tweens {
       
       inline def setOnLoop(value: TweenOnLoopCallback): Self = StObject.set(x, "onLoop", value.asInstanceOf[js.Any])
       
-      inline def setOnLoopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
+      inline def setOnLoopParams(value: js.Array[Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
       
       inline def setOnLoopParamsUndefined: Self = StObject.set(x, "onLoopParams", js.undefined)
       
-      inline def setOnLoopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onLoopParams", js.Array(value :_*))
+      inline def setOnLoopParamsVarargs(value: Any*): Self = StObject.set(x, "onLoopParams", js.Array(value*))
       
-      inline def setOnLoopScope(value: js.Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
+      inline def setOnLoopScope(value: Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
       
       inline def setOnLoopScopeUndefined: Self = StObject.set(x, "onLoopScope", js.undefined)
       
@@ -330,13 +329,13 @@ object Tweens {
       
       inline def setOnRepeat(value: TweenOnRepeatCallback): Self = StObject.set(x, "onRepeat", value.asInstanceOf[js.Any])
       
-      inline def setOnRepeatParams(value: js.Array[js.Any]): Self = StObject.set(x, "onRepeatParams", value.asInstanceOf[js.Any])
+      inline def setOnRepeatParams(value: js.Array[Any]): Self = StObject.set(x, "onRepeatParams", value.asInstanceOf[js.Any])
       
       inline def setOnRepeatParamsUndefined: Self = StObject.set(x, "onRepeatParams", js.undefined)
       
-      inline def setOnRepeatParamsVarargs(value: js.Any*): Self = StObject.set(x, "onRepeatParams", js.Array(value :_*))
+      inline def setOnRepeatParamsVarargs(value: Any*): Self = StObject.set(x, "onRepeatParams", js.Array(value*))
       
-      inline def setOnRepeatScope(value: js.Any): Self = StObject.set(x, "onRepeatScope", value.asInstanceOf[js.Any])
+      inline def setOnRepeatScope(value: Any): Self = StObject.set(x, "onRepeatScope", value.asInstanceOf[js.Any])
       
       inline def setOnRepeatScopeUndefined: Self = StObject.set(x, "onRepeatScope", js.undefined)
       
@@ -344,13 +343,13 @@ object Tweens {
       
       inline def setOnStart(value: TweenOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      inline def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
+      inline def setOnStartParams(value: js.Array[Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
       
       inline def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
       
-      inline def setOnStartParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStartParams", js.Array(value :_*))
+      inline def setOnStartParamsVarargs(value: Any*): Self = StObject.set(x, "onStartParams", js.Array(value*))
       
-      inline def setOnStartScope(value: js.Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
+      inline def setOnStartScope(value: Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
       
       inline def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
       
@@ -358,13 +357,13 @@ object Tweens {
       
       inline def setOnStop(value: TweenOnStopCallback): Self = StObject.set(x, "onStop", value.asInstanceOf[js.Any])
       
-      inline def setOnStopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStopParams", value.asInstanceOf[js.Any])
+      inline def setOnStopParams(value: js.Array[Any]): Self = StObject.set(x, "onStopParams", value.asInstanceOf[js.Any])
       
       inline def setOnStopParamsUndefined: Self = StObject.set(x, "onStopParams", js.undefined)
       
-      inline def setOnStopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStopParams", js.Array(value :_*))
+      inline def setOnStopParamsVarargs(value: Any*): Self = StObject.set(x, "onStopParams", js.Array(value*))
       
-      inline def setOnStopScope(value: js.Any): Self = StObject.set(x, "onStopScope", value.asInstanceOf[js.Any])
+      inline def setOnStopScope(value: Any): Self = StObject.set(x, "onStopScope", value.asInstanceOf[js.Any])
       
       inline def setOnStopScopeUndefined: Self = StObject.set(x, "onStopScope", js.undefined)
       
@@ -372,13 +371,13 @@ object Tweens {
       
       inline def setOnUpdate(value: TweenOnUpdateCallback): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      inline def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
+      inline def setOnUpdateParams(value: js.Array[Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
       
       inline def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)
       
-      inline def setOnUpdateParamsVarargs(value: js.Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value :_*))
+      inline def setOnUpdateParamsVarargs(value: Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value*))
       
-      inline def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
+      inline def setOnUpdateScope(value: Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
       
       inline def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
       
@@ -386,13 +385,13 @@ object Tweens {
       
       inline def setOnYoyo(value: TweenOnYoyoCallback): Self = StObject.set(x, "onYoyo", value.asInstanceOf[js.Any])
       
-      inline def setOnYoyoParams(value: js.Array[js.Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
+      inline def setOnYoyoParams(value: js.Array[Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
       
       inline def setOnYoyoParamsUndefined: Self = StObject.set(x, "onYoyoParams", js.undefined)
       
-      inline def setOnYoyoParamsVarargs(value: js.Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value :_*))
+      inline def setOnYoyoParamsVarargs(value: Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value*))
       
-      inline def setOnYoyoScope(value: js.Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
+      inline def setOnYoyoScope(value: Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
       
       inline def setOnYoyoScopeUndefined: Self = StObject.set(x, "onYoyoScope", js.undefined)
       
@@ -434,12 +433,12 @@ object Tweens {
     /**
       * The index to start the stagger from. Can be the strings `first`, `last` or `center`, or an integer representing the stagger position.
       */
-    var from: js.UndefOr[String | integer] = js.undefined
+    var from: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Set the stagger to run across a grid by providing an array where element 0 is the width of the grid and element 1 is the height. Combine with the 'from' property to control direction.
       */
-    var grid: js.UndefOr[js.Array[integer]] = js.undefined
+    var grid: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * The value to start the stagger from. Can be used as a way to offset the stagger while still using a range for the value.
@@ -459,15 +458,15 @@ object Tweens {
       
       inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      inline def setFrom(value: String | integer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String | Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      inline def setGrid(value: js.Array[integer]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Array[Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      inline def setGridVarargs(value: integer*): Self = StObject.set(x, "grid", js.Array(value :_*))
+      inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value*))
       
       inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
@@ -480,12 +479,12 @@ object Tweens {
     /**
       * The default scope (`this` value) to use for each callback registered by the Timeline Builder. If not specified, the Timeline itself will be used.
       */
-    var callbackScope: js.UndefOr[js.Any] = js.undefined
+    var callbackScope: js.UndefOr[Any] = js.undefined
     
     /**
       * If specified, the time to wait, usually in milliseconds, before the Timeline completes.
       */
-    var completeDelay: js.UndefOr[Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var completeDelay: js.UndefOr[Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * The number of milliseconds to delay before the tween will start. Each individual Tween configuration can override this value.
@@ -505,7 +504,7 @@ object Tweens {
     /**
       * Optional easing parameters. Each individual Tween configuration can override this value.
       */
-    var easeParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var easeParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Horizontally flip the target of the Tween when it completes (before it yoyos, if set to do so). Only works for targets that support the `flipX` property. Each individual Tween configuration can override this value.
@@ -525,12 +524,12 @@ object Tweens {
     /**
       * How many times the Timeline should loop, or -1 to loop indefinitely.
       */
-    var loop: js.UndefOr[Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var loop: js.UndefOr[Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * The time, usually in milliseconds, between each loop.
       */
-    var loopDelay: js.UndefOr[Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var loopDelay: js.UndefOr[Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * If specified, the `onComplete` callback for the Timeline, called after it completes.
@@ -540,12 +539,12 @@ object Tweens {
     /**
       * Additional arguments to pass to the `onComplete` callback. The Timeline will always be the first argument.
       */
-    var onCompleteParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onCompleteParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The scope (`this` value) to use for the `onComplete` callback. If not specified, the `callbackScope` will be used.
       */
-    var onCompleteScope: js.UndefOr[js.Any] = js.undefined
+    var onCompleteScope: js.UndefOr[Any] = js.undefined
     
     /**
       * If specified, the `onLoop` callback for the Timeline, called every time it loops.
@@ -555,12 +554,12 @@ object Tweens {
     /**
       * Additional arguments to pass to the `onLoop` callback. The Timeline will always be the first argument.
       */
-    var onLoopParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onLoopParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The scope (`this` value) to use for the `onLoop` callback. If not specified, the `callbackScope` will be used.
       */
-    var onLoopScope: js.UndefOr[js.Any] = js.undefined
+    var onLoopScope: js.UndefOr[Any] = js.undefined
     
     /**
       * If specified, the `onStart` callback for the Timeline, called every time it starts playing.
@@ -570,12 +569,12 @@ object Tweens {
     /**
       * Additional arguments to pass to the `onStart` callback. The Timeline will always be the first argument.
       */
-    var onStartParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onStartParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The scope (`this` value) to use for the `onStart` callback. If not specified, the `callbackScope` will be used.
       */
-    var onStartScope: js.UndefOr[js.Any] = js.undefined
+    var onStartScope: js.UndefOr[Any] = js.undefined
     
     /**
       * If specified, the `onUpdate` callback for the Timeline, called every frame it's active, regardless of its Tweens.
@@ -585,12 +584,12 @@ object Tweens {
     /**
       * Additional arguments to pass to the `onUpdate` callback. The Timeline will always be the first argument.
       */
-    var onUpdateParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onUpdateParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The scope (`this` value) to use for the `onUpdate` callback. If not specified, the `callbackScope` will be used.
       */
-    var onUpdateScope: js.UndefOr[js.Any] = js.undefined
+    var onUpdateScope: js.UndefOr[Any] = js.undefined
     
     /**
       * If specified, the `onYoyo` callback for the Timeline, called every time it yoyos.
@@ -600,12 +599,12 @@ object Tweens {
     /**
       * Additional arguments to pass to the `onYoyo` callback. The first argument will always be `null`, while the Timeline will always be the second argument.
       */
-    var onYoyoParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onYoyoParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The scope (`this` value) to use for the `onYoyo` callback. If not specified, the `callbackScope` will be used.
       */
-    var onYoyoScope: js.UndefOr[js.Any] = js.undefined
+    var onYoyoScope: js.UndefOr[Any] = js.undefined
     
     /**
       * If `true`, the Timeline will start paused.
@@ -615,7 +614,7 @@ object Tweens {
     /**
       * The number of times to repeat each tween. Each individual Tween configuration can override this value.
       */
-    var repeat: js.UndefOr[integer] = js.undefined
+    var repeat: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of milliseconds to pause before each tween will repeat. Each individual Tween configuration can override this value.
@@ -625,7 +624,7 @@ object Tweens {
     /**
       * An array (or function which returns one) of default targets to which to apply the Timeline. Each individual Tween configuration can override this value.
       */
-    var targets: js.UndefOr[js.Any] = js.undefined
+    var targets: js.UndefOr[Any] = js.undefined
     
     /**
       * If specified, each Tween in the Timeline will get an equal portion of this duration, usually in milliseconds, by default. Each individual Tween configuration can override the Tween's duration.
@@ -656,15 +655,15 @@ object Tweens {
     
     extension [Self <: TimelineBuilderConfig](x: Self) {
       
-      inline def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
+      inline def setCallbackScope(value: Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
       inline def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
       
-      inline def setCompleteDelay(value: Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
+      inline def setCompleteDelay(value: Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
       
       inline def setCompleteDelayUndefined: Self = StObject.set(x, "completeDelay", js.undefined)
       
-      inline def setCompleteDelayVarargs(value: js.Any*): Self = StObject.set(x, "completeDelay", js.Array(value :_*))
+      inline def setCompleteDelayVarargs(value: Any*): Self = StObject.set(x, "completeDelay", js.Array(value*))
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -676,11 +675,11 @@ object Tweens {
       
       inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      inline def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
+      inline def setEaseParams(value: js.Array[Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
       
       inline def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
       
-      inline def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
+      inline def setEaseParamsVarargs(value: Any*): Self = StObject.set(x, "easeParams", js.Array(value*))
       
       inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
@@ -696,27 +695,27 @@ object Tweens {
       
       inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      inline def setLoop(value: Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      inline def setLoopDelay(value: Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
+      inline def setLoopDelay(value: Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
       
       inline def setLoopDelayUndefined: Self = StObject.set(x, "loopDelay", js.undefined)
       
-      inline def setLoopDelayVarargs(value: js.Any*): Self = StObject.set(x, "loopDelay", js.Array(value :_*))
+      inline def setLoopDelayVarargs(value: Any*): Self = StObject.set(x, "loopDelay", js.Array(value*))
       
       inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      inline def setLoopVarargs(value: js.Any*): Self = StObject.set(x, "loop", js.Array(value :_*))
+      inline def setLoopVarargs(value: Any*): Self = StObject.set(x, "loop", js.Array(value*))
       
       inline def setOnComplete(value: TimelineOnCompleteCallback): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
-      inline def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
+      inline def setOnCompleteParams(value: js.Array[Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
       
-      inline def setOnCompleteParamsVarargs(value: js.Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value :_*))
+      inline def setOnCompleteParamsVarargs(value: Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value*))
       
-      inline def setOnCompleteScope(value: js.Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
+      inline def setOnCompleteScope(value: Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteScopeUndefined: Self = StObject.set(x, "onCompleteScope", js.undefined)
       
@@ -724,13 +723,13 @@ object Tweens {
       
       inline def setOnLoop(value: TimelineOnLoopCallback): Self = StObject.set(x, "onLoop", value.asInstanceOf[js.Any])
       
-      inline def setOnLoopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
+      inline def setOnLoopParams(value: js.Array[Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
       
       inline def setOnLoopParamsUndefined: Self = StObject.set(x, "onLoopParams", js.undefined)
       
-      inline def setOnLoopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onLoopParams", js.Array(value :_*))
+      inline def setOnLoopParamsVarargs(value: Any*): Self = StObject.set(x, "onLoopParams", js.Array(value*))
       
-      inline def setOnLoopScope(value: js.Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
+      inline def setOnLoopScope(value: Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
       
       inline def setOnLoopScopeUndefined: Self = StObject.set(x, "onLoopScope", js.undefined)
       
@@ -738,13 +737,13 @@ object Tweens {
       
       inline def setOnStart(value: TimelineOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      inline def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
+      inline def setOnStartParams(value: js.Array[Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
       
       inline def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
       
-      inline def setOnStartParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStartParams", js.Array(value :_*))
+      inline def setOnStartParamsVarargs(value: Any*): Self = StObject.set(x, "onStartParams", js.Array(value*))
       
-      inline def setOnStartScope(value: js.Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
+      inline def setOnStartScope(value: Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
       
       inline def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
       
@@ -752,13 +751,13 @@ object Tweens {
       
       inline def setOnUpdate(value: TimelineOnUpdateCallback): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      inline def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
+      inline def setOnUpdateParams(value: js.Array[Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
       
       inline def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)
       
-      inline def setOnUpdateParamsVarargs(value: js.Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value :_*))
+      inline def setOnUpdateParamsVarargs(value: Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value*))
       
-      inline def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
+      inline def setOnUpdateScope(value: Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
       
       inline def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
       
@@ -766,13 +765,13 @@ object Tweens {
       
       inline def setOnYoyo(value: TimelineOnYoyoCallback): Self = StObject.set(x, "onYoyo", value.asInstanceOf[js.Any])
       
-      inline def setOnYoyoParams(value: js.Array[js.Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
+      inline def setOnYoyoParams(value: js.Array[Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
       
       inline def setOnYoyoParamsUndefined: Self = StObject.set(x, "onYoyoParams", js.undefined)
       
-      inline def setOnYoyoParamsVarargs(value: js.Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value :_*))
+      inline def setOnYoyoParamsVarargs(value: Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value*))
       
-      inline def setOnYoyoScope(value: js.Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
+      inline def setOnYoyoScope(value: Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
       
       inline def setOnYoyoScopeUndefined: Self = StObject.set(x, "onYoyoScope", js.undefined)
       
@@ -782,7 +781,7 @@ object Tweens {
       
       inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      inline def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
       inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
@@ -790,7 +789,7 @@ object Tweens {
       
       inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      inline def setTargets(value: js.Any): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: Any): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
       inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
@@ -802,7 +801,7 @@ object Tweens {
       
       inline def setTweensUndefined: Self = StObject.set(x, "tweens", js.undefined)
       
-      inline def setTweensVarargs(value: (js.Object | TweenBuilderConfig)*): Self = StObject.set(x, "tweens", js.Array(value :_*))
+      inline def setTweensVarargs(value: (js.Object | TweenBuilderConfig)*): Self = StObject.set(x, "tweens", js.Array(value*))
       
       inline def setUseFrames(value: Boolean): Self = StObject.set(x, "useFrames", value.asInstanceOf[js.Any])
       
@@ -817,31 +816,31 @@ object Tweens {
   @js.native
   trait TimelineOnCompleteCallback extends StObject {
     
-    def apply(timeline: Timeline, param: js.Any*): Unit = js.native
+    def apply(timeline: Timeline, param: Any*): Unit = js.native
   }
   
   @js.native
   trait TimelineOnLoopCallback extends StObject {
     
-    def apply(timeline: Timeline, param: js.Any*): Unit = js.native
+    def apply(timeline: Timeline, param: Any*): Unit = js.native
   }
   
   @js.native
   trait TimelineOnStartCallback extends StObject {
     
-    def apply(timeline: Timeline, param: js.Any*): Unit = js.native
+    def apply(timeline: Timeline, param: Any*): Unit = js.native
   }
   
   @js.native
   trait TimelineOnUpdateCallback extends StObject {
     
-    def apply(timeline: Timeline, param: js.Any*): Unit = js.native
+    def apply(timeline: Timeline, param: Any*): Unit = js.native
   }
   
   @js.native
   trait TimelineOnYoyoCallback extends StObject {
     
-    def apply(timeline: Timeline, param: js.Any*): Unit = js.native
+    def apply(timeline: Timeline, param: Any*): Unit = js.native
   }
   
   trait TweenBuilderConfig extends StObject {
@@ -849,12 +848,12 @@ object Tweens {
     /**
       * Scope (this) for the callbacks. The default scope is the tween.
       */
-    var callbackScope: js.UndefOr[js.Any] = js.undefined
+    var callbackScope: js.UndefOr[Any] = js.undefined
     
     /**
       * The time the tween will wait before the onComplete event is dispatched once it has completed, in ms.
       */
-    var completeDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var completeDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * The number of milliseconds to delay before the tween will start.
@@ -874,7 +873,7 @@ object Tweens {
     /**
       * Optional easing parameters.
       */
-    var easeParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var easeParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Horizontally flip the target of the Tween when it completes (before it yoyos, if set to do so). Only works for targets that support the `flipX` property.
@@ -894,17 +893,17 @@ object Tweens {
     /**
       * The number of times the tween will repeat. (A value of 1 means the tween will play twice, as it repeated once.) The first loop starts after every property tween has completed once.
       */
-    var loop: js.UndefOr[String | Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var loop: js.UndefOr[String | Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * The time the tween will pause before starting either a yoyo or returning to the start for a repeat.
       */
-    var loopDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var loopDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * Used when the Tween is part of a Timeline.
       */
-    var offset: js.UndefOr[String | Double | js.Function | js.Object | js.Array[js.Any]] = js.undefined
+    var offset: js.UndefOr[String | Double | js.Function | js.Object | js.Array[Any]] = js.undefined
     
     /**
       * A function to call when the tween becomes active within the Tween Manager.
@@ -914,12 +913,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onActive`.
       */
-    var onActiveParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onActiveParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onActive`.
       */
-    var onActiveScope: js.UndefOr[js.Any] = js.undefined
+    var onActiveScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call when the tween completes.
@@ -929,12 +928,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onComplete`.
       */
-    var onCompleteParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onCompleteParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onComplete`.
       */
-    var onCompleteScope: js.UndefOr[js.Any] = js.undefined
+    var onCompleteScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call each time the tween loops.
@@ -944,12 +943,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onLoop`.
       */
-    var onLoopParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onLoopParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onLoop`.
       */
-    var onLoopScope: js.UndefOr[js.Any] = js.undefined
+    var onLoopScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call each time the tween repeats. Called once per property per target.
@@ -959,12 +958,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onRepeat`.
       */
-    var onRepeatParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onRepeatParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onRepeat`.
       */
-    var onRepeatScope: js.UndefOr[js.Any] = js.undefined
+    var onRepeatScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call when the tween starts playback, after any delays have expired.
@@ -974,12 +973,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onStart`.
       */
-    var onStartParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onStartParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onStart`.
       */
-    var onStartScope: js.UndefOr[js.Any] = js.undefined
+    var onStartScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call when the tween is stopped.
@@ -989,12 +988,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onStop`.
       */
-    var onStopParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onStopParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onStop`.
       */
-    var onStopScope: js.UndefOr[js.Any] = js.undefined
+    var onStopScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call each time the tween steps. Called once per property per target.
@@ -1004,12 +1003,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onUpdate`.
       */
-    var onUpdateParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onUpdateParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onUpdate`.
       */
-    var onUpdateScope: js.UndefOr[js.Any] = js.undefined
+    var onUpdateScope: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to call each time the tween yoyos. Called once per property per target.
@@ -1019,12 +1018,12 @@ object Tweens {
     /**
       * Additional parameters to pass to `onYoyo`.
       */
-    var onYoyoParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var onYoyoParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Scope (this) for `onYoyo`.
       */
-    var onYoyoScope: js.UndefOr[js.Any] = js.undefined
+    var onYoyoScope: js.UndefOr[Any] = js.undefined
     
     /**
       * Does the tween start in a paused state (true) or playing (false)?
@@ -1049,7 +1048,7 @@ object Tweens {
     /**
       * The object, or an array of objects, to run the tween on.
       */
-    var targets: js.Any
+    var targets: Any
     
     /**
       * Use frames or milliseconds?
@@ -1063,22 +1062,22 @@ object Tweens {
   }
   object TweenBuilderConfig {
     
-    inline def apply(targets: js.Any): TweenBuilderConfig = {
+    inline def apply(targets: Any): TweenBuilderConfig = {
       val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
       __obj.asInstanceOf[TweenBuilderConfig]
     }
     
     extension [Self <: TweenBuilderConfig](x: Self) {
       
-      inline def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
+      inline def setCallbackScope(value: Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
       inline def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
       
-      inline def setCompleteDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
+      inline def setCompleteDelay(value: String | Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
       
       inline def setCompleteDelayUndefined: Self = StObject.set(x, "completeDelay", js.undefined)
       
-      inline def setCompleteDelayVarargs(value: js.Any*): Self = StObject.set(x, "completeDelay", js.Array(value :_*))
+      inline def setCompleteDelayVarargs(value: Any*): Self = StObject.set(x, "completeDelay", js.Array(value*))
       
       inline def setDelay(value: Double | js.Function): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -1090,11 +1089,11 @@ object Tweens {
       
       inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      inline def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
+      inline def setEaseParams(value: js.Array[Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
       
       inline def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
       
-      inline def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
+      inline def setEaseParamsVarargs(value: Any*): Self = StObject.set(x, "easeParams", js.Array(value*))
       
       inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
@@ -1110,33 +1109,33 @@ object Tweens {
       
       inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      inline def setLoop(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: String | Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      inline def setLoopDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
+      inline def setLoopDelay(value: String | Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
       
       inline def setLoopDelayUndefined: Self = StObject.set(x, "loopDelay", js.undefined)
       
-      inline def setLoopDelayVarargs(value: js.Any*): Self = StObject.set(x, "loopDelay", js.Array(value :_*))
+      inline def setLoopDelayVarargs(value: Any*): Self = StObject.set(x, "loopDelay", js.Array(value*))
       
       inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      inline def setLoopVarargs(value: js.Any*): Self = StObject.set(x, "loop", js.Array(value :_*))
+      inline def setLoopVarargs(value: Any*): Self = StObject.set(x, "loop", js.Array(value*))
       
-      inline def setOffset(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: String | Double | js.Function | js.Object | js.Array[Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: js.Any*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Any*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOnActive(value: TweenOnActiveCallback): Self = StObject.set(x, "onActive", value.asInstanceOf[js.Any])
       
-      inline def setOnActiveParams(value: js.Array[js.Any]): Self = StObject.set(x, "onActiveParams", value.asInstanceOf[js.Any])
+      inline def setOnActiveParams(value: js.Array[Any]): Self = StObject.set(x, "onActiveParams", value.asInstanceOf[js.Any])
       
       inline def setOnActiveParamsUndefined: Self = StObject.set(x, "onActiveParams", js.undefined)
       
-      inline def setOnActiveParamsVarargs(value: js.Any*): Self = StObject.set(x, "onActiveParams", js.Array(value :_*))
+      inline def setOnActiveParamsVarargs(value: Any*): Self = StObject.set(x, "onActiveParams", js.Array(value*))
       
-      inline def setOnActiveScope(value: js.Any): Self = StObject.set(x, "onActiveScope", value.asInstanceOf[js.Any])
+      inline def setOnActiveScope(value: Any): Self = StObject.set(x, "onActiveScope", value.asInstanceOf[js.Any])
       
       inline def setOnActiveScopeUndefined: Self = StObject.set(x, "onActiveScope", js.undefined)
       
@@ -1144,13 +1143,13 @@ object Tweens {
       
       inline def setOnComplete(value: TweenOnCompleteCallback): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
-      inline def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
+      inline def setOnCompleteParams(value: js.Array[Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
       
-      inline def setOnCompleteParamsVarargs(value: js.Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value :_*))
+      inline def setOnCompleteParamsVarargs(value: Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value*))
       
-      inline def setOnCompleteScope(value: js.Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
+      inline def setOnCompleteScope(value: Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteScopeUndefined: Self = StObject.set(x, "onCompleteScope", js.undefined)
       
@@ -1158,13 +1157,13 @@ object Tweens {
       
       inline def setOnLoop(value: TweenOnLoopCallback): Self = StObject.set(x, "onLoop", value.asInstanceOf[js.Any])
       
-      inline def setOnLoopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
+      inline def setOnLoopParams(value: js.Array[Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
       
       inline def setOnLoopParamsUndefined: Self = StObject.set(x, "onLoopParams", js.undefined)
       
-      inline def setOnLoopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onLoopParams", js.Array(value :_*))
+      inline def setOnLoopParamsVarargs(value: Any*): Self = StObject.set(x, "onLoopParams", js.Array(value*))
       
-      inline def setOnLoopScope(value: js.Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
+      inline def setOnLoopScope(value: Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
       
       inline def setOnLoopScopeUndefined: Self = StObject.set(x, "onLoopScope", js.undefined)
       
@@ -1172,13 +1171,13 @@ object Tweens {
       
       inline def setOnRepeat(value: TweenOnRepeatCallback): Self = StObject.set(x, "onRepeat", value.asInstanceOf[js.Any])
       
-      inline def setOnRepeatParams(value: js.Array[js.Any]): Self = StObject.set(x, "onRepeatParams", value.asInstanceOf[js.Any])
+      inline def setOnRepeatParams(value: js.Array[Any]): Self = StObject.set(x, "onRepeatParams", value.asInstanceOf[js.Any])
       
       inline def setOnRepeatParamsUndefined: Self = StObject.set(x, "onRepeatParams", js.undefined)
       
-      inline def setOnRepeatParamsVarargs(value: js.Any*): Self = StObject.set(x, "onRepeatParams", js.Array(value :_*))
+      inline def setOnRepeatParamsVarargs(value: Any*): Self = StObject.set(x, "onRepeatParams", js.Array(value*))
       
-      inline def setOnRepeatScope(value: js.Any): Self = StObject.set(x, "onRepeatScope", value.asInstanceOf[js.Any])
+      inline def setOnRepeatScope(value: Any): Self = StObject.set(x, "onRepeatScope", value.asInstanceOf[js.Any])
       
       inline def setOnRepeatScopeUndefined: Self = StObject.set(x, "onRepeatScope", js.undefined)
       
@@ -1186,13 +1185,13 @@ object Tweens {
       
       inline def setOnStart(value: TweenOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      inline def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
+      inline def setOnStartParams(value: js.Array[Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
       
       inline def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
       
-      inline def setOnStartParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStartParams", js.Array(value :_*))
+      inline def setOnStartParamsVarargs(value: Any*): Self = StObject.set(x, "onStartParams", js.Array(value*))
       
-      inline def setOnStartScope(value: js.Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
+      inline def setOnStartScope(value: Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
       
       inline def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
       
@@ -1200,13 +1199,13 @@ object Tweens {
       
       inline def setOnStop(value: TweenOnStopCallback): Self = StObject.set(x, "onStop", value.asInstanceOf[js.Any])
       
-      inline def setOnStopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStopParams", value.asInstanceOf[js.Any])
+      inline def setOnStopParams(value: js.Array[Any]): Self = StObject.set(x, "onStopParams", value.asInstanceOf[js.Any])
       
       inline def setOnStopParamsUndefined: Self = StObject.set(x, "onStopParams", js.undefined)
       
-      inline def setOnStopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStopParams", js.Array(value :_*))
+      inline def setOnStopParamsVarargs(value: Any*): Self = StObject.set(x, "onStopParams", js.Array(value*))
       
-      inline def setOnStopScope(value: js.Any): Self = StObject.set(x, "onStopScope", value.asInstanceOf[js.Any])
+      inline def setOnStopScope(value: Any): Self = StObject.set(x, "onStopScope", value.asInstanceOf[js.Any])
       
       inline def setOnStopScopeUndefined: Self = StObject.set(x, "onStopScope", js.undefined)
       
@@ -1214,13 +1213,13 @@ object Tweens {
       
       inline def setOnUpdate(value: TweenOnUpdateCallback): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      inline def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
+      inline def setOnUpdateParams(value: js.Array[Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
       
       inline def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)
       
-      inline def setOnUpdateParamsVarargs(value: js.Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value :_*))
+      inline def setOnUpdateParamsVarargs(value: Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value*))
       
-      inline def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
+      inline def setOnUpdateScope(value: Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
       
       inline def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
       
@@ -1228,13 +1227,13 @@ object Tweens {
       
       inline def setOnYoyo(value: TweenOnYoyoCallback): Self = StObject.set(x, "onYoyo", value.asInstanceOf[js.Any])
       
-      inline def setOnYoyoParams(value: js.Array[js.Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
+      inline def setOnYoyoParams(value: js.Array[Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
       
       inline def setOnYoyoParamsUndefined: Self = StObject.set(x, "onYoyoParams", js.undefined)
       
-      inline def setOnYoyoParamsVarargs(value: js.Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value :_*))
+      inline def setOnYoyoParamsVarargs(value: Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value*))
       
-      inline def setOnYoyoScope(value: js.Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
+      inline def setOnYoyoScope(value: Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
       
       inline def setOnYoyoScopeUndefined: Self = StObject.set(x, "onYoyoScope", js.undefined)
       
@@ -1256,7 +1255,7 @@ object Tweens {
       
       inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      inline def setTargets(value: js.Any): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: Any): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
       inline def setUseFrames(value: Boolean): Self = StObject.set(x, "useFrames", value.asInstanceOf[js.Any])
       
@@ -1288,7 +1287,7 @@ object Tweens {
     /**
       * Optional easing parameters.
       */
-    var easeParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var easeParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Horizontally flip the target of the Tween when it completes (before it yoyos, if set to do so). Only works for targets that support the `flipX` property.
@@ -1344,11 +1343,11 @@ object Tweens {
       
       inline def setEase(value: String): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      inline def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
+      inline def setEaseParams(value: js.Array[Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
       
       inline def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
       
-      inline def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
+      inline def setEaseParamsVarargs(value: Any*): Self = StObject.set(x, "easeParams", js.Array(value*))
       
       inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
@@ -1374,7 +1373,7 @@ object Tweens {
       
       inline def setTargets(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      inline def setTargetsVarargs(value: js.Object*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: js.Object*): Self = StObject.set(x, "targets", js.Array(value*))
       
       inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
       
@@ -1432,14 +1431,7 @@ object Tweens {
     /**
       * If not null, is invoked _immediately_ as soon as the TweenData is running, and is set on the target property.
       */
-    def getActiveValue(
-      target: js.Any,
-      key: String,
-      value: Double,
-      targetIndex: integer,
-      totalTargets: integer,
-      tween: Tween
-    ): Unit
+    def getActiveValue(target: Any, key: String, value: Double, targetIndex: Double, totalTargets: Double, tween: Tween): Unit
     /**
       * If not null, is invoked _immediately_ as soon as the TweenData is running, and is set on the target property.
       */
@@ -1449,14 +1441,7 @@ object Tweens {
     /**
       * The returned value sets what the property will be at the END of the Tween.
       */
-    def getEndValue(
-      target: js.Any,
-      key: String,
-      value: Double,
-      targetIndex: integer,
-      totalTargets: integer,
-      tween: Tween
-    ): Unit
+    def getEndValue(target: Any, key: String, value: Double, targetIndex: Double, totalTargets: Double, tween: Tween): Unit
     /**
       * The returned value sets what the property will be at the END of the Tween.
       */
@@ -1466,14 +1451,7 @@ object Tweens {
     /**
       * The returned value sets what the property will be at the START of the Tween.
       */
-    def getStartValue(
-      target: js.Any,
-      key: String,
-      value: Double,
-      targetIndex: integer,
-      totalTargets: integer,
-      tween: Tween
-    ): Unit
+    def getStartValue(target: Any, key: String, value: Double, targetIndex: Double, totalTargets: Double, tween: Tween): Unit
     /**
       * The returned value sets what the property will be at the START of the Tween.
       */
@@ -1488,7 +1466,7 @@ object Tweens {
     /**
       * The target index within the Tween targets array.
       */
-    var index: integer
+    var index: Double
     
     /**
       * The property of the target being tweened.
@@ -1508,12 +1486,12 @@ object Tweens {
     /**
       * Number of times to repeat the tween. The tween will always run once regardless, so a repeat value of '1' will play the tween twice.
       */
-    var repeat: js.UndefOr[integer] = js.undefined
+    var repeat: js.UndefOr[Double] = js.undefined
     
     /**
       * How many repeats are left to run?
       */
-    var repeatCounter: js.UndefOr[integer] = js.undefined
+    var repeatCounter: js.UndefOr[Double] = js.undefined
     
     /**
       * Time in ms/frames before the repeat will start.
@@ -1528,7 +1506,7 @@ object Tweens {
     /**
       * TWEEN_CONST.CREATED
       */
-    var state: js.UndefOr[integer] = js.undefined
+    var state: js.UndefOr[Double] = js.undefined
     
     /**
       * Time duration 1.
@@ -1543,7 +1521,7 @@ object Tweens {
     /**
       * The target to tween.
       */
-    var target: js.Any
+    var target: Any
     
     /**
       * The total calculated duration of this TweenData (based on duration, repeat, delay and yoyo)
@@ -1559,12 +1537,12 @@ object Tweens {
     
     inline def apply(
       ease: js.Function,
-      getActiveValue: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit,
-      getEndValue: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit,
-      getStartValue: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit,
-      index: integer,
+      getActiveValue: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit,
+      getEndValue: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit,
+      getStartValue: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit,
+      index: Double,
       key: String,
-      target: js.Any
+      target: Any
     ): TweenDataConfig = {
       val __obj = js.Dynamic.literal(ease = ease.asInstanceOf[js.Any], getActiveValue = js.Any.fromFunction6(getActiveValue), getEndValue = js.Any.fromFunction6(getEndValue), getStartValue = js.Any.fromFunction6(getStartValue), index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[TweenDataConfig]
@@ -1607,22 +1585,22 @@ object Tweens {
       inline def setGenUndefined: Self = StObject.set(x, "gen", js.undefined)
       
       inline def setGetActiveValue(
-        value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
+        value: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getActiveValue", js.Any.fromFunction6(value))
       
       inline def setGetEndValue(
-        value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
+        value: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getEndValue", js.Any.fromFunction6(value))
       
       inline def setGetStartValue(
-        value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
+        value: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getStartValue", js.Any.fromFunction6(value))
       
       inline def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
       
       inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      inline def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1634,9 +1612,9 @@ object Tweens {
       
       inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      inline def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      inline def setRepeatCounter(value: integer): Self = StObject.set(x, "repeatCounter", value.asInstanceOf[js.Any])
+      inline def setRepeatCounter(value: Double): Self = StObject.set(x, "repeatCounter", value.asInstanceOf[js.Any])
       
       inline def setRepeatCounterUndefined: Self = StObject.set(x, "repeatCounter", js.undefined)
       
@@ -1650,7 +1628,7 @@ object Tweens {
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      inline def setState(value: integer): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
@@ -1662,7 +1640,7 @@ object Tweens {
       
       inline def setT2Undefined: Self = StObject.set(x, "t2", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
       
@@ -1731,49 +1709,49 @@ object Tweens {
   @js.native
   trait TweenOnActiveCallback extends StObject {
     
-    def apply(tween: Tween, target: js.Any, param: js.Any*): Unit = js.native
+    def apply(tween: Tween, target: Any, param: Any*): Unit = js.native
   }
   
   @js.native
   trait TweenOnCompleteCallback extends StObject {
     
-    def apply(tween: Tween, targets: js.Array[js.Any], param: js.Any*): Unit = js.native
+    def apply(tween: Tween, targets: js.Array[Any], param: Any*): Unit = js.native
   }
   
   @js.native
   trait TweenOnLoopCallback extends StObject {
     
-    def apply(tween: Tween, targets: js.Array[js.Any], param: js.Any*): Unit = js.native
+    def apply(tween: Tween, targets: js.Array[Any], param: Any*): Unit = js.native
   }
   
   @js.native
   trait TweenOnRepeatCallback extends StObject {
     
-    def apply(tween: Tween, target: js.Any, param: js.Any*): Unit = js.native
+    def apply(tween: Tween, target: Any, param: Any*): Unit = js.native
   }
   
   @js.native
   trait TweenOnStartCallback extends StObject {
     
-    def apply(tween: Tween, targets: js.Array[js.Any], param: js.Any*): Unit = js.native
+    def apply(tween: Tween, targets: js.Array[Any], param: Any*): Unit = js.native
   }
   
   @js.native
   trait TweenOnStopCallback extends StObject {
     
-    def apply(tween: Tween, targets: js.Array[js.Any], param: js.Any*): Unit = js.native
+    def apply(tween: Tween, targets: js.Array[Any], param: Any*): Unit = js.native
   }
   
   @js.native
   trait TweenOnUpdateCallback extends StObject {
     
-    def apply(tween: Tween, target: js.Any, param: js.Any*): Unit = js.native
+    def apply(tween: Tween, target: Any, param: Any*): Unit = js.native
   }
   
   @js.native
   trait TweenOnYoyoCallback extends StObject {
     
-    def apply(tween: Tween, target: js.Any, param: js.Any*): Unit = js.native
+    def apply(tween: Tween, target: Any, param: Any*): Unit = js.native
   }
   
   trait TweenPropConfig extends StObject {
@@ -1873,19 +1851,19 @@ object Tweens {
       inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
       
       inline def setGetActive(
-        value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
+        value: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getActive", js.Any.fromFunction6(value))
       
       inline def setGetActiveUndefined: Self = StObject.set(x, "getActive", js.undefined)
       
       inline def setGetEnd(
-        value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
+        value: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getEnd", js.Any.fromFunction6(value))
       
       inline def setGetEndUndefined: Self = StObject.set(x, "getEnd", js.undefined)
       
       inline def setGetStart(
-        value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
+        value: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getStart", js.Any.fromFunction6(value))
       
       inline def setGetStartUndefined: Self = StObject.set(x, "getStart", js.undefined)
@@ -1905,7 +1883,7 @@ object Tweens {
       inline def setValue(value: Double | String | GetEndCallback | TweenPropConfig): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueFunction6(
-        value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
+        value: (/* target */ Any, /* key */ String, /* value */ Double, /* targetIndex */ Double, /* totalTargets */ Double, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "value", js.Any.fromFunction6(value))
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

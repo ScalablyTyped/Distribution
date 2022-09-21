@@ -1,7 +1,7 @@
 
 # Scala.js typings for forest-express-sequelize
 
-Typings are for version 6.3
+Typings are for version 7.5
 
 ## Library description:
 Official Express/Sequelize Liana for Forest
@@ -10,10 +10,10 @@ Official Express/Sequelize Liana for Forest
 | ------------------ | :-------------: |
 | Full name          | forest-express-sequelize |
 | Keywords           | forest, admin, panel, interface, sequelize |
-| # releases         | 104 |
-| # dependents       | 2 |
-| # downloads        | 264638 |
-| # stars            | 1 |
+| # releases         | 157 |
+| # dependents       | 0.0 |
+| # downloads        | 19197.666666666668 |
+| # stars            | 174.0 |
 
 ## Links
 - [Homepage](http://www.forestadmin.com)

@@ -13,7 +13,7 @@ object blockExclusionMod {
   
   @JSImport("tslint/lib/rules/completed-docs/blockExclusion", "BlockExclusion")
   @js.native
-  class BlockExclusion () extends Exclusion[IBlockExclusionDescriptor] {
+  open class BlockExclusion () extends Exclusion[IBlockExclusionDescriptor] {
     def this(descriptor: Partial[IBlockExclusionDescriptor]) = this()
     
     val visibilities: Set[Visibility] = js.native
@@ -38,7 +38,7 @@ object blockExclusionMod {
       
       inline def setVisibilitiesUndefined: Self = StObject.set(x, "visibilities", js.undefined)
       
-      inline def setVisibilitiesVarargs(value: Visibility*): Self = StObject.set(x, "visibilities", js.Array(value :_*))
+      inline def setVisibilitiesVarargs(value: Visibility*): Self = StObject.set(x, "visibilities", js.Array(value*))
     }
   }
 }

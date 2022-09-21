@@ -10,10 +10,10 @@ Deprecate all the things
 | ------------------ | :-------------: |
 | Full name          | depd |
 | Keywords           | deprecate, deprecated |
-| # releases         | 0 |
-| # dependents       | 548 |
-| # downloads        | 912754610 |
-| # stars            | 24 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5874217933333334E8 |
+| # stars            | 313.0 |
 
 ## Links
 - [Homepage](https://github.com/dougwilson/nodejs-depd#readme)

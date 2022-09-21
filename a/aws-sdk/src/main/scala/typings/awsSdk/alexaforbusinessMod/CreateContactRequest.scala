@@ -40,6 +40,11 @@ trait CreateContactRequest extends StObject {
     * The list of SIP addresses for the contact.
     */
   var SipAddresses: js.UndefOr[SipAddressList] = js.undefined
+  
+  /**
+    * The tags to be added to the specified resource. Do not provide system tags.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateContactRequest {
   
@@ -72,12 +77,18 @@ object CreateContactRequest {
     
     inline def setPhoneNumbersUndefined: Self = StObject.set(x, "PhoneNumbers", js.undefined)
     
-    inline def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "PhoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "PhoneNumbers", js.Array(value*))
     
     inline def setSipAddresses(value: SipAddressList): Self = StObject.set(x, "SipAddresses", value.asInstanceOf[js.Any])
     
     inline def setSipAddressesUndefined: Self = StObject.set(x, "SipAddresses", js.undefined)
     
-    inline def setSipAddressesVarargs(value: SipAddress*): Self = StObject.set(x, "SipAddresses", js.Array(value :_*))
+    inline def setSipAddressesVarargs(value: SipAddress*): Self = StObject.set(x, "SipAddresses", js.Array(value*))
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

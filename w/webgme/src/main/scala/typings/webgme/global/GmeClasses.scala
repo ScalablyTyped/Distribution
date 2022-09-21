@@ -8,7 +8,7 @@ object GmeClasses {
   
   @JSGlobal("GmeClasses.Project")
   @js.native
-  class Project ()
+  open class Project ()
     extends StObject
        with typings.webgme.GmeClasses.Project
   

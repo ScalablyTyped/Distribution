@@ -8,6 +8,6 @@ object toggleMod {
   
   @JSImport("carbon-components-react/lib/components/Toggle", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.toggleToggleMod.default
 }

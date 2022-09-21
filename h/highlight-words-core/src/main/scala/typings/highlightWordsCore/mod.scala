@@ -93,7 +93,7 @@ object mod {
       
       inline def setSearchWords(value: js.Array[String]): Self = StObject.set(x, "searchWords", value.asInstanceOf[js.Any])
       
-      inline def setSearchWordsVarargs(value: String*): Self = StObject.set(x, "searchWords", js.Array(value :_*))
+      inline def setSearchWordsVarargs(value: String*): Self = StObject.set(x, "searchWords", js.Array(value*))
       
       inline def setTextToHighlight(value: String): Self = StObject.set(x, "textToHighlight", value.asInstanceOf[js.Any])
     }

@@ -23,23 +23,23 @@ object fileBrowserHandler {
   trait FileHandlerExecuteEventDetails extends StObject {
     
     /** Array of Entry instances representing files that are targets of this action (selected in ChromeOS file browser). */
-    var entries: js.Array[js.Any]
+    var entries: js.Array[Any]
     
     /** Optional. The ID of the tab that raised this event. Tab IDs are unique within a browser session.  */
     var tab_id: js.UndefOr[Double] = js.undefined
   }
   object FileHandlerExecuteEventDetails {
     
-    inline def apply(entries: js.Array[js.Any]): FileHandlerExecuteEventDetails = {
+    inline def apply(entries: js.Array[Any]): FileHandlerExecuteEventDetails = {
       val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileHandlerExecuteEventDetails]
     }
     
     extension [Self <: FileHandlerExecuteEventDetails](x: Self) {
       
-      inline def setEntries(value: js.Array[js.Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: js.Any*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: Any*): Self = StObject.set(x, "entries", js.Array(value*))
       
       inline def setTab_id(value: Double): Self = StObject.set(x, "tab_id", value.asInstanceOf[js.Any])
       
@@ -72,7 +72,7 @@ object fileBrowserHandler {
       
       inline def setAllowedFileExtensionsUndefined: Self = StObject.set(x, "allowedFileExtensions", js.undefined)
       
-      inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
+      inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value*))
       
       inline def setSuggestedName(value: String): Self = StObject.set(x, "suggestedName", value.asInstanceOf[js.Any])
     }

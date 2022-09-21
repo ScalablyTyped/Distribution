@@ -37,7 +37,7 @@ object ExportAssetsToS3RequestDetails {
     
     inline def setAssetDestinations(value: ListOfAssetDestinationEntry): Self = StObject.set(x, "AssetDestinations", value.asInstanceOf[js.Any])
     
-    inline def setAssetDestinationsVarargs(value: AssetDestinationEntry*): Self = StObject.set(x, "AssetDestinations", js.Array(value :_*))
+    inline def setAssetDestinationsVarargs(value: AssetDestinationEntry*): Self = StObject.set(x, "AssetDestinations", js.Array(value*))
     
     inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     

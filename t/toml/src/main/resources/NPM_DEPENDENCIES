@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "toml" : "2.3.6"
+      "toml" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "toml" : "2.3.6"
+      "toml" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

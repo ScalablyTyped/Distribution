@@ -44,7 +44,7 @@ trait QuotaUser extends StObject {
   /** Request body */
   var resource: DomainMapping
   
-  /** Standard field mask for the set of fields to be updated. */
+  /** Required. Standard field mask for the set of fields to be updated. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "LeadingComment")
 @js.native
-class LeadingComment_ protected ()
-  extends typings.angularCompiler.compilerMod.LeadingComment_ {
+open class LeadingComment_ protected () extends StObject {
   def this(text: String, multiline: Boolean, trailingNewline: Boolean) = this()
+  
+  var multiline: Boolean = js.native
+  
+  var text: String = js.native
+  
+  var trailingNewline: Boolean = js.native
 }

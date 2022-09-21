@@ -11,12 +11,12 @@ object mod {
   
   @JSImport("react-headroom", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ReactHeadroomProps, js.Object, js.Any] {
+  open class default protected ()
+    extends Component[ReactHeadroomProps, js.Object, Any] {
     def this(props: ReactHeadroomProps) = this()
   }
   
-  type Headroom = Component[ReactHeadroomProps, js.Object, js.Any]
+  type Headroom = Component[ReactHeadroomProps, js.Object, Any]
   
   trait ReactHeadroomProps extends StObject {
     
@@ -38,7 +38,7 @@ object mod {
     
     var onUnpin: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var parent: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var parent: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var pinStart: js.UndefOr[Double] = js.undefined
     
@@ -93,7 +93,7 @@ object mod {
       
       inline def setOnUnpinUndefined: Self = StObject.set(x, "onUnpin", js.undefined)
       
-      inline def setParent(value: () => js.Any): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
+      inline def setParent(value: () => Any): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
       
       inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       

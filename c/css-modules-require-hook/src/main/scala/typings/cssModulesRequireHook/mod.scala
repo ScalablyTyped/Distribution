@@ -1,7 +1,6 @@
 package typings.cssModulesRequireHook
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod extends Shortcut {
   trait Options extends StObject {
     
     /** Appends custom plugins to the end of the PostCSS pipeline. */
-    var append: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var append: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Camelizes exported class names. */
     var camelCase: js.UndefOr[Boolean] = js.undefined
@@ -36,13 +35,13 @@ object mod extends Shortcut {
     var hashPrefix: js.UndefOr[String] = js.undefined
     
     /** Provides possibility to exclude particular files from processing. */
-    var ignore: js.UndefOr[String | RegExp | (js.Function1[/* filepath */ String, Boolean])] = js.undefined
+    var ignore: js.UndefOr[String | js.RegExp | (js.Function1[/* filepath */ String, Boolean])] = js.undefined
     
     /** Short alias for the postcss-modules-local-by-default plugin's option. */
     var mode: js.UndefOr[String] = js.undefined
     
     /** Prepends custom plugins to the beginning of the PostCSS pipeline. */
-    var prepend: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var prepend: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** In rare cases you may want to precompile styles, before they will be passed to the PostCSS pipeline. */
     var preprocessCss: js.UndefOr[js.Function] = js.undefined
@@ -57,7 +56,7 @@ object mod extends Shortcut {
     var rootDir: js.UndefOr[String] = js.undefined
     
     /** Provides the full list of PostCSS plugins to the pipeline. */
-    var use: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var use: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object Options {
     
@@ -68,11 +67,11 @@ object mod extends Shortcut {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAppend(value: js.Array[js.Any]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: js.Array[Any]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
       inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      inline def setAppendVarargs(value: js.Any*): Self = StObject.set(x, "append", js.Array(value :_*))
+      inline def setAppendVarargs(value: Any*): Self = StObject.set(x, "append", js.Array(value*))
       
       inline def setCamelCase(value: Boolean): Self = StObject.set(x, "camelCase", value.asInstanceOf[js.Any])
       
@@ -90,7 +89,7 @@ object mod extends Shortcut {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setGenerateScopedName(value: String | js.Function): Self = StObject.set(x, "generateScopedName", value.asInstanceOf[js.Any])
       
@@ -100,7 +99,7 @@ object mod extends Shortcut {
       
       inline def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
       
-      inline def setIgnore(value: String | RegExp | (js.Function1[/* filepath */ String, Boolean])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.RegExp | (js.Function1[/* filepath */ String, Boolean])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreFunction1(value: /* filepath */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
@@ -110,11 +109,11 @@ object mod extends Shortcut {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setPrepend(value: js.Array[js.Any]): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+      inline def setPrepend(value: js.Array[Any]): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
       
       inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
       
-      inline def setPrependVarargs(value: js.Any*): Self = StObject.set(x, "prepend", js.Array(value :_*))
+      inline def setPrependVarargs(value: Any*): Self = StObject.set(x, "prepend", js.Array(value*))
       
       inline def setPreprocessCss(value: js.Function): Self = StObject.set(x, "preprocessCss", value.asInstanceOf[js.Any])
       
@@ -132,11 +131,11 @@ object mod extends Shortcut {
       
       inline def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
       
-      inline def setUse(value: js.Array[js.Any]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: js.Array[Any]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
       inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
       
-      inline def setUseVarargs(value: js.Any*): Self = StObject.set(x, "use", js.Array(value :_*))
+      inline def setUseVarargs(value: Any*): Self = StObject.set(x, "use", js.Array(value*))
     }
   }
   

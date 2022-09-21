@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param distribution
   * @param seed
   */
-class GlorotNormal () extends VarianceScaling {
+open class GlorotNormal () extends VarianceScaling {
   def this(args: SeedOnlyInitializerArgs) = this()
 }
 /* static members */

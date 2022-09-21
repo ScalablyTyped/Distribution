@@ -1,33 +1,41 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Utils.mod.PriorityString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ConverterPriority extends StObject {
   
-  var converterPriority: js.UndefOr[PriorityString] = js.undefined
+  var converterPriority: js.UndefOr[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any) | Double
+  ] = js.undefined
   
-  var model: String | Value
+  var model: String | Values
   
-  var view: String | Key
+  var view: String | Value | (js.Function1[/* modelAttributeValue */ Any, KeyValue])
 }
 object ConverterPriority {
   
-  inline def apply(model: String | Value, view: String | Key): ConverterPriority = {
+  inline def apply(
+    model: String | Values,
+    view: String | Value | (js.Function1[/* modelAttributeValue */ Any, KeyValue])
+  ): ConverterPriority = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConverterPriority]
   }
   
   extension [Self <: ConverterPriority](x: Self) {
     
-    inline def setConverterPriority(value: PriorityString): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
+    inline def setConverterPriority(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any) | Double
+    ): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
     
     inline def setConverterPriorityUndefined: Self = StObject.set(x, "converterPriority", js.undefined)
     
-    inline def setModel(value: String | Value): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | Values): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    inline def setView(value: String | Key): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String | Value | (js.Function1[/* modelAttributeValue */ Any, KeyValue])): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewFunction1(value: /* modelAttributeValue */ Any => KeyValue): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
   }
 }

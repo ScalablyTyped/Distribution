@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("elgamal", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ElGamal {
     def this(
@@ -34,7 +34,7 @@ object mod {
   
   @JSImport("elgamal", "BigInt")
   @js.native
-  class BigInt protected () extends BigInteger {
+  open class BigInt protected () extends BigInteger {
     def this(a: String) = this()
     def this(a: js.Array[Double]) = this()
     def this(a: BigInteger) = this()
@@ -63,7 +63,7 @@ object mod {
   
   @JSImport("elgamal", "DecryptedValue")
   @js.native
-  class DecryptedValue protected () extends StObject {
+  open class DecryptedValue protected () extends StObject {
     def this(m: String) = this()
     def this(m: Double) = this()
     def this(m: BigInteger) = this()
@@ -73,7 +73,7 @@ object mod {
   
   @JSImport("elgamal", "EncryptedValue")
   @js.native
-  class EncryptedValue protected () extends StObject {
+  open class EncryptedValue protected () extends StObject {
     def this(a: BigInteger, b: BigInteger) = this()
     
     var a: BigInteger = js.native
@@ -85,13 +85,15 @@ object mod {
   
   @JSImport("elgamal", "MissingPrivateKeyError")
   @js.native
-  class MissingPrivateKeyError ()
+  open class MissingPrivateKeyError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClientQueryOptions extends StObject {
   
+  /* standard dom */
   var includeUncontrolled: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var `type`: js.UndefOr[ClientTypes] = js.undefined
 }
 object ClientQueryOptions {

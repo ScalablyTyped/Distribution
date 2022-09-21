@@ -62,9 +62,9 @@ object WebControls {
   object ControlMessage {
     
     inline def apply(
-      customFromJson: js.Any => Boolean,
+      customFromJson: Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-      fromJson: js.Any => Unit,
+      fromJson: Any => Unit,
       get_code: () => Double,
       get_correlationID: () => String,
       get_encodeDetails: () => Boolean,

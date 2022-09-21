@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__utils
 
-Typings are for version 0.11.3
+Typings are for version 1.2.0
 
 ## Library description:
 internal utils for emotion
@@ -10,15 +10,15 @@ internal utils for emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/utils |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 28 |
-| # downloads        | 181813295 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3.8630169E7 |
+| # stars            | 15226.0 |
 
 ## Links
-- [Homepage](https://github.com/emotion-js/emotion#readme)
+- [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)
 - [Bugs](https://github.com/emotion-js/emotion/issues)
-- [Repository](https://github.com/emotion-js/emotion)
+- [Repository](https://github.com/emotion-js/emotion/tree/main)
 - [Npm](https://www.npmjs.com/package/%40emotion%2Futils)
     
 

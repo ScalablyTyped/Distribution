@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateMemberResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the account that was associated with the master account.
+    * The Amazon Resource Name (ARN) of the account that was associated with the administrator account.
     */
   var arn: js.UndefOr[string] = js.undefined
 }

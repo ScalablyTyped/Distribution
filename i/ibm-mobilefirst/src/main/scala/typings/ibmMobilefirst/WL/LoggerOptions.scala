@@ -55,7 +55,7 @@ object LoggerOptions {
     
     inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
-    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
     
     inline def setCallback(value: (/* message */ String | js.Array[String], /* level */ String, /* package */ String) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
     
@@ -73,7 +73,7 @@ object LoggerOptions {
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    inline def setLevelVarargs(value: String*): Self = StObject.set(x, "level", js.Array(value :_*))
+    inline def setLevelVarargs(value: String*): Self = StObject.set(x, "level", js.Array(value*))
     
     inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
@@ -103,6 +103,6 @@ object LoggerOptions {
     
     inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
-    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
   }
 }

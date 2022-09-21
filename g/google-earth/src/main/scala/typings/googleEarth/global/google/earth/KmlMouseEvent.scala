@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlMouseEvent")
 @js.native
-class KmlMouseEvent ()
+open class KmlMouseEvent ()
   extends StObject
      with typings.googleEarth.google.earth.KmlMouseEvent {
   

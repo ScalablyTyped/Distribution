@@ -11,14 +11,11 @@ Record audio in your browser
 | Full name          | recorder-js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 91503 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9362.0 |
+| # stars            | 29.0 |
 
 ## Links
-- [Homepage](https://github.com/ijsnow/studiojs#readme)
-- [Bugs](https://github.com/ijsnow/studiojs/issues)
-- [Repository](https://github.com/ijsnow/studiojs)
 - [Npm](https://www.npmjs.com/package/recorder-js)
     
 

@@ -7,12 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListFunctionsResponse extends StObject {
   
   /** The functions that match the request. */
-  var functions: js.UndefOr[js.Array[CloudFunction]] = js.undefined
+  // tslint:disable-next-line:ban-types
+  var functions: js.UndefOr[js.Array[Function]] = js.undefined
   
-  /**
-    * If not empty, indicates that there may be more functions that match the request; this value should be passed in a new google.cloud.functions.v1.ListFunctionsRequest to get more
-    * functions.
-    */
+  /** A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
   var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Locations that could not be reached. The response does not include any functions from these locations. */
@@ -27,11 +25,11 @@ object ListFunctionsResponse {
   
   extension [Self <: ListFunctionsResponse](x: Self) {
     
-    inline def setFunctions(value: js.Array[CloudFunction]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: js.Array[Function]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
     inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
-    inline def setFunctionsVarargs(value: CloudFunction*): Self = StObject.set(x, "functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: Function*): Self = StObject.set(x, "functions", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
@@ -41,6 +39,6 @@ object ListFunctionsResponse {
     
     inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

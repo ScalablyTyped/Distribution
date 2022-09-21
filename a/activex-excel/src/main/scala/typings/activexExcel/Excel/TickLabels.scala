@@ -10,11 +10,11 @@ trait TickLabels extends StObject {
   
   val Application: typings.activexExcel.Excel.Application
   
-  var AutoScaleFont: js.Any
+  var AutoScaleFont: Any
   
   val Creator: XlCreator
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   val Depth: Double
   
@@ -39,20 +39,20 @@ trait TickLabels extends StObject {
   
   var Orientation: XlTickLabelOrientation
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ReadingOrder: Double
   
-  def Select(): js.Any
+  def Select(): Any
 }
 object TickLabels {
   
   inline def apply(
     Alignment: Double,
     Application: Application,
-    AutoScaleFont: js.Any,
+    AutoScaleFont: Any,
     Creator: XlCreator,
-    Delete: () => js.Any,
+    Delete: () => Any,
     Depth: Double,
     ExcelDotTickLabels_typekey: TickLabels,
     Font: Font,
@@ -64,9 +64,9 @@ object TickLabels {
     NumberFormatLocal: String,
     Offset: Double,
     Orientation: XlTickLabelOrientation,
-    Parent: js.Any,
+    Parent: Any,
     ReadingOrder: Double,
-    Select: () => js.Any
+    Select: () => Any
   ): TickLabels = {
     val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], AutoScaleFont = AutoScaleFont.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Depth = Depth.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], MultiLevel = MultiLevel.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NumberFormat = NumberFormat.asInstanceOf[js.Any], NumberFormatLinked = NumberFormatLinked.asInstanceOf[js.Any], NumberFormatLocal = NumberFormatLocal.asInstanceOf[js.Any], Offset = Offset.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ReadingOrder = ReadingOrder.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select))
     __obj.updateDynamic("Excel.TickLabels_typekey")(ExcelDotTickLabels_typekey.asInstanceOf[js.Any])
@@ -79,11 +79,11 @@ object TickLabels {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setDepth(value: Double): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
@@ -107,10 +107,10 @@ object TickLabels {
     
     inline def setOrientation(value: XlTickLabelOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReadingOrder(value: Double): Self = StObject.set(x, "ReadingOrder", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

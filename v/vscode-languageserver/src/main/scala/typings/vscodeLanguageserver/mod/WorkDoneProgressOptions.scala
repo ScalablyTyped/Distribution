@@ -10,7 +10,7 @@ object WorkDoneProgressOptions {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def hasWorkDoneProgress(value: js.Any): /* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasWorkDoneProgress")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean]
+  inline def hasWorkDoneProgress(value: Any): /* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasWorkDoneProgress")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean]
   
-  inline def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.WorkDoneProgressOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.WorkDoneProgressOptions */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.WorkDoneProgressOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.WorkDoneProgressOptions */ Boolean]
 }

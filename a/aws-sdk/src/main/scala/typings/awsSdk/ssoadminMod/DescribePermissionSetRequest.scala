@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribePermissionSetRequest extends StObject {
   
   /**
-    * The ARN of the SSO instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
+    * The ARN of the IAM Identity Center instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
   var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn
   
   /**
-    * The ARN of the permission set.
+    * The ARN of the permission set. 
     */
   var PermissionSetArn: typings.awsSdk.ssoadminMod.PermissionSetArn
 }

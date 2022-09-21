@@ -10,15 +10,12 @@ Express middleware to parse user-agent header
 | ------------------ | :-------------: |
 | Full name          | express-ua-middleware |
 | Keywords           | express, middleware, user-agent |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 612 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 57.666666666666664 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/davidsdevel/express-ua-middleware#readme)
-- [Bugs](https://github.com/davidsdevel/express-ua-middleware/issues)
-- [Repository](https://github.com/davidsdevel/express-ua-middleware)
 - [Npm](https://www.npmjs.com/package/express-ua-middleware)
     
 

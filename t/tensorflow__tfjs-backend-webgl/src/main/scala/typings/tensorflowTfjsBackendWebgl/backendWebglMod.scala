@@ -1,23 +1,21 @@
 package typings.tensorflowTfjsBackendWebgl
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.WebGLProgram
+import typings.offscreencanvas.OffscreenCanvas
+import typings.std.HTMLCanvasElement
+import typings.std.WeakMap
 import typings.std.WebGLTexture
 import typings.tensorflowTfjsBackendWebgl.gpgpuContextMod.GPGPUContext
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUBinary
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
-import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.NCHW
-import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.NHWC
-import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.bilinear
-import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.nearest
 import typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureData
 import typings.tensorflowTfjsBackendWebgl.textureManagerMod.TextureManager
 import typings.tensorflowTfjsCore.anon.Error
-import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
+import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
-import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
+import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.engineMod.MemoryInfo
 import typings.tensorflowTfjsCore.engineMod.TimingInfo
@@ -25,6 +23,7 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.DataId
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.mod.DataStorage
 import typings.tensorflowTfjsCore.mod.KernelBackend
+import typings.tensorflowTfjsCore.mod.TensorBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,128 +42,100 @@ object backendWebglMod {
   @js.native
   val EPSILON_FLOAT32: /* 1e-7 */ Double = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/backend_webgl", "MATMUL_SHARED_DIM_THRESHOLD")
-  @js.native
-  val MATMUL_SHARED_DIM_THRESHOLD: /* 1000 */ Double = js.native
-  
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/backend_webgl", "MathBackendWebGL")
   @js.native
-  class MathBackendWebGL () extends KernelBackend {
-    def this(gpgpu: GPGPUContext) = this()
+  open class MathBackendWebGL () extends KernelBackend {
+    def this(gpuResource: OffscreenCanvas) = this()
+    def this(gpuResource: HTMLCanvasElement) = this()
+    def this(gpuResource: GPGPUContext) = this()
     
-    /* private */ var acquireTexture: js.Any = js.native
+    def abs[T /* <: Tensor[Rank] */](x: T): T = js.native
     
-    /* private */ var activeTimers: js.Any = js.native
+    /* private */ var acquireTexture: Any = js.native
     
-    /* private */ var argMinMaxReduce: js.Any = js.native
+    /* private */ var activeTimers: Any = js.native
     
-    /* private */ var argReduce: js.Any = js.native
+    /* private */ var binaryCache: Any = js.native
     
-    /* private */ var argReducePacked: js.Any = js.native
+    def bufferSync[R /* <: Rank */, D /* <: DataType */](t: TensorInfo): TensorBuffer[R, D] = js.native
     
-    /* private */ var binaryCache: js.Any = js.native
+    /* private */ var canvas: Any = js.native
     
-    /* private */ var canvas: js.Any = js.native
+    def checkCompileCompletion(): Unit = js.native
     
-    /* private */ var checkNumericalProblems: js.Any = js.native
+    def checkCompileCompletionAsync(): js.Promise[js.Array[Boolean]] = js.native
     
-    def compileAndRun[K /* <: TensorInfo */](program: GPGPUProgram, inputs: js.Array[TensorInfo]): K = js.native
-    def compileAndRun[K /* <: TensorInfo */](
+    /* private */ var checkCompletionAsync_ : Any = js.native
+    
+    /* private */ var checkCompletion_ : Any = js.native
+    
+    /* private */ var checkNumericalProblems: Any = js.native
+    
+    def compileAndRun(program: GPGPUProgram, inputs: js.Array[TensorInfo]): TensorInfo = js.native
+    def compileAndRun(
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: Unit,
-      customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit]
-    ): K = js.native
-    def compileAndRun[K /* <: TensorInfo */](
+      customUniformValues: js.Array[js.Array[Double]]
+    ): TensorInfo = js.native
+    def compileAndRun(
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: Unit,
-      customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
+      customUniformValues: js.Array[js.Array[Double]],
       preventEagerUnpackingOfOutput: Boolean
-    ): K = js.native
-    def compileAndRun[K /* <: TensorInfo */](
+    ): TensorInfo = js.native
+    def compileAndRun(
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: Unit,
-      customSetup: Unit,
+      customUniformValues: Unit,
       preventEagerUnpackingOfOutput: Boolean
-    ): K = js.native
-    def compileAndRun[K /* <: TensorInfo */](program: GPGPUProgram, inputs: js.Array[TensorInfo], outputDtype: DataType): K = js.native
-    def compileAndRun[K /* <: TensorInfo */](
+    ): TensorInfo = js.native
+    def compileAndRun(program: GPGPUProgram, inputs: js.Array[TensorInfo], outputDtype: DataType): TensorInfo = js.native
+    def compileAndRun(
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
-      customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit]
-    ): K = js.native
-    def compileAndRun[K /* <: TensorInfo */](
+      customUniformValues: js.Array[js.Array[Double]]
+    ): TensorInfo = js.native
+    def compileAndRun(
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
-      customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
+      customUniformValues: js.Array[js.Array[Double]],
       preventEagerUnpackingOfOutput: Boolean
-    ): K = js.native
-    def compileAndRun[K /* <: TensorInfo */](
+    ): TensorInfo = js.native
+    def compileAndRun(
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
-      customSetup: Unit,
+      customUniformValues: Unit,
       preventEagerUnpackingOfOutput: Boolean
-    ): K = js.native
+    ): TensorInfo = js.native
     
-    /* private */ var computeBytes: js.Any = js.native
+    /* private */ var computeBytes: Any = js.native
     
-    /* private */ var conv2dByMatMul: js.Any = js.native
+    /* private */ var convertAndCacheOnCPU: Any = js.native
     
-    /* private */ var conv2dWithIm2Row: js.Any = js.native
-    
-    /* private */ var convertAndCacheOnCPU: js.Any = js.native
-    
-    /* private */ var cpuBackend: js.Any = js.native
-    
-    @JSName("cropAndResize")
-    def cropAndResize_bilinear(
-      image: Tensor4D,
-      boxes: Tensor2D,
-      boxIndex: Tensor1D,
-      cropSize: js.Tuple2[Double, Double],
-      method: bilinear,
-      extrapolationValue: Double
-    ): Tensor4D = js.native
-    @JSName("cropAndResize")
-    def cropAndResize_nearest(
-      image: Tensor4D,
-      boxes: Tensor2D,
-      boxIndex: Tensor1D,
-      cropSize: js.Tuple2[Double, Double],
-      method: nearest,
-      extrapolationValue: Double
-    ): Tensor4D = js.native
-    
-    /* private */ var dataRefCount: js.Any = js.native
+    var dataRefCount: WeakMap[js.Object, Double] = js.native
     
     /** Decrease refCount of a `TextureData`. */
     def decRef(dataId: DataId): Unit = js.native
     
-    /* private */ var decode: js.Any = js.native
-    
-    @JSName("depthToSpace")
-    def depthToSpace_NCHW(x: Tensor4D, blockSize: Double, dataFormat: NCHW): Tensor4D = js.native
-    @JSName("depthToSpace")
-    def depthToSpace_NHWC(x: Tensor4D, blockSize: Double, dataFormat: NHWC): Tensor4D = js.native
+    /* private */ var decode: Any = js.native
     
     def disposeIntermediateTensorInfo(tensorInfo: TensorInfo): Unit = js.native
     
-    /* private */ var disposed: js.Any = js.native
+    /* private */ var disposed: Any = js.native
     
-    /* private */ var downloadWaitMs: js.Any = js.native
+    /* private */ var downloadWaitMs: Any = js.native
     
-    /* private */ var endTimer: js.Any = js.native
+    /* private */ var endTimer: Any = js.native
     
-    /* private */ var floatPrecisionValue: js.Any = js.native
+    /* private */ var floatPrecisionValue: Any = js.native
     
-    /* private */ var getAndSaveBinary: js.Any = js.native
-    
-    /* private */ var getCPUBackend: js.Any = js.native
+    /* private */ var getAndSaveBinary: Any = js.native
     
     /**
       * Returns internal information for the specific data bucket. Used in unit
@@ -174,98 +145,134 @@ object backendWebglMod {
     
     def getGPGPUContext(): GPGPUContext = js.native
     
-    /* private */ var getQueryTime: js.Any = js.native
+    /* private */ var getQueryTime: Any = js.native
     
     def getTexture(dataId: DataId): WebGLTexture = js.native
     
     def getTextureManager(): TextureManager = js.native
     
-    /* private */ var getValuesFromTexture: js.Any = js.native
+    def getUniformLocations(): Unit = js.native
+    
+    /* private */ var getValuesFromTexture: Any = js.native
     
     var gpgpu: GPGPUContext = js.native
     
-    /* private */ var gpgpuCreatedLocally: js.Any = js.native
+    /* private */ var gpgpuCreatedLocally: Any = js.native
     
-    /** Increase refCount of a `TextureData`. */
-    def incRef(dataId: DataId): Unit = js.native
+    /* private */ var lastGlFlushTime: Any = js.native
     
-    /* private */ var makeComplexComponentTensorInfo: js.Any = js.native
-    
-    /* private */ var makeOutput: js.Any = js.native
+    /* private */ var makeOutput: Any = js.native
     
     def makeTensorInfo(shape: js.Array[Double], dtype: DataType): TensorInfo = js.native
+    def makeTensorInfo(shape: js.Array[Double], dtype: DataType, values: js.Array[String]): TensorInfo = js.native
     def makeTensorInfo(shape: js.Array[Double], dtype: DataType, values: BackendValues): TensorInfo = js.native
     
-    /* private */ var numBytesInGPU: js.Any = js.native
+    /* private */ var nextDataId: Any = js.native
     
-    /* private */ var numMBBeforeWarning: js.Any = js.native
+    /* private */ var numBytesInGPU: Any = js.native
     
-    /* private */ var packTensor: js.Any = js.native
+    /* private */ var numMBBeforeWarning: Any = js.native
     
-    /* private */ var packedBinaryOp: js.Any = js.native
+    def packTensor(input: TensorInfo): TensorInfo = js.native
     
-    /* private */ var packedReshape: js.Any = js.native
+    /* private */ var packedReshape: Any = js.native
     
-    /* private */ var packedUnaryOp: js.Any = js.native
+    /* private */ var packedUnaryOp: Any = js.native
     
-    /* private */ var pendingDeletes: js.Any = js.native
+    /* private */ var pendingDeletes: Any = js.native
     
-    /* private */ var pendingDisposal: js.Any = js.native
+    /* private */ var pendingDisposal: Any = js.native
     
-    /* private */ var pendingRead: js.Any = js.native
+    /* private */ var pendingRead: Any = js.native
     
-    /* private */ var programTimersStack: js.Any = js.native
+    /* private */ var programTimersStack: Any = js.native
     
-    /* private */ var reduce: js.Any = js.native
-    
-    /* private */ var releaseGPUData: js.Any = js.native
+    /* private */ var releaseGPUData: Any = js.native
     
     def runWebGLProgram(program: GPGPUProgram, inputs: js.Array[TensorInfo], outputDtype: DataType): TensorInfo = js.native
     def runWebGLProgram(
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
-      customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit]
+      customUniformValues: js.Array[js.Array[Double]]
     ): TensorInfo = js.native
     def runWebGLProgram(
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
-      customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
+      customUniformValues: js.Array[js.Array[Double]],
       preventEagerUnpackingOfOutput: Boolean
     ): TensorInfo = js.native
     def runWebGLProgram(
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
-      customSetup: Unit,
+      customUniformValues: js.Array[js.Array[Double]],
+      preventEagerUnpackingOfOutput: Boolean,
+      customTexShape: js.Tuple2[Double, Double]
+    ): TensorInfo = js.native
+    def runWebGLProgram(
+      program: GPGPUProgram,
+      inputs: js.Array[TensorInfo],
+      outputDtype: DataType,
+      customUniformValues: js.Array[js.Array[Double]],
+      preventEagerUnpackingOfOutput: Unit,
+      customTexShape: js.Tuple2[Double, Double]
+    ): TensorInfo = js.native
+    def runWebGLProgram(
+      program: GPGPUProgram,
+      inputs: js.Array[TensorInfo],
+      outputDtype: DataType,
+      customUniformValues: Unit,
       preventEagerUnpackingOfOutput: Boolean
     ): TensorInfo = js.native
-    
-    /* private */ var segOpCompute: js.Any = js.native
-    
-    /* private */ var shallowSlice: js.Any = js.native
+    def runWebGLProgram(
+      program: GPGPUProgram,
+      inputs: js.Array[TensorInfo],
+      outputDtype: DataType,
+      customUniformValues: Unit,
+      preventEagerUnpackingOfOutput: Boolean,
+      customTexShape: js.Tuple2[Double, Double]
+    ): TensorInfo = js.native
+    def runWebGLProgram(
+      program: GPGPUProgram,
+      inputs: js.Array[TensorInfo],
+      outputDtype: DataType,
+      customUniformValues: Unit,
+      preventEagerUnpackingOfOutput: Unit,
+      customTexShape: js.Tuple2[Double, Double]
+    ): TensorInfo = js.native
     
     def shouldExecuteOnCPU(inputs: js.Array[TensorInfo]): Boolean = js.native
     def shouldExecuteOnCPU(inputs: js.Array[TensorInfo], sizeThreshold: Double): Boolean = js.native
     
-    /* private */ var startTimer: js.Any = js.native
+    /* private */ var startTimer: Any = js.native
     
     var texData: DataStorage[TextureData] = js.native
     
-    /* private */ var textureManager: js.Any = js.native
+    /* private */ var textureManager: Any = js.native
     
-    /* private */ var tryRunOnCpuOrThrow: js.Any = js.native
+    def unpackTensor(input: TensorInfo): TensorInfo = js.native
     
-    /* private */ var unpackTensor: js.Any = js.native
+    def uploadToGPU(dataId: DataId): Unit = js.native
     
-    /* private */ var uploadToGPU: js.Any = js.native
+    /* private */ var uploadWaitMs: Any = js.native
     
-    /* private */ var uploadWaitMs: js.Any = js.native
+    /* private */ var warnedAboutMemory: Any = js.native
     
-    /* private */ var warnedAboutCPUBackend: js.Any = js.native
+    def where(condition: Tensor[Rank]): Tensor2D = js.native
+  }
+  /* static members */
+  object MathBackendWebGL {
     
-    /* private */ var warnedAboutMemory: js.Any = js.native
+    @JSImport("@tensorflow/tfjs-backend-webgl/dist/backend_webgl", "MathBackendWebGL")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@tensorflow/tfjs-backend-webgl/dist/backend_webgl", "MathBackendWebGL.nextDataId")
+    @js.native
+    def nextDataId: Any = js.native
+    inline def nextDataId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextDataId")(x.asInstanceOf[js.Any])
   }
   
   inline def getBinaryCache(webGLVersion: Double): StringDictionary[GPGPUBinary] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBinaryCache")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[GPGPUBinary]]

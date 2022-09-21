@@ -1,6 +1,5 @@
 package typings.chunkedDc.jasmine
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,11 +25,11 @@ trait Env extends StObject {
   
   var clearTimeout: Unit
   
-  def compareObjects_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean
+  def compareObjects_(a: scala.Any, b: scala.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean
   
-  def compareRegExps_(a: RegExp, b: RegExp, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean
+  def compareRegExps_(a: js.RegExp, b: js.RegExp, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean
   
-  def contains_(haystack: js.Any, needle: js.Any): Boolean
+  def contains_(haystack: scala.Any, needle: scala.Any): Boolean
   
   def currentRunner(): Runner
   
@@ -38,7 +37,7 @@ trait Env extends StObject {
   
   def describe(description: String, specDefinitions: js.Function0[Unit]): Suite
   
-  def equals_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean
+  def equals_(a: scala.Any, b: scala.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean
   
   def execute(): Unit
   
@@ -48,15 +47,15 @@ trait Env extends StObject {
   
   def nextSpecId(): Double
   
-  var setInterval: js.Any
+  var setInterval: scala.Any
   
-  var setTimeout: js.Any
+  var setTimeout: scala.Any
   
   def specFilter(spec: Spec): Boolean
   
   var updateInterval: Double
   
-  def version(): js.Any
+  def version(): scala.Any
   
   def versionString(): String
   
@@ -77,22 +76,22 @@ object Env {
     beforeEach: js.Function0[Unit] => Unit,
     clearInterval: Unit,
     clearTimeout: Unit,
-    compareObjects_ : (js.Any, js.Any, js.Array[String], js.Array[String]) => Boolean,
-    compareRegExps_ : (RegExp, RegExp, js.Array[String], js.Array[String]) => Boolean,
-    contains_ : (js.Any, js.Any) => Boolean,
+    compareObjects_ : (scala.Any, scala.Any, js.Array[String], js.Array[String]) => Boolean,
+    compareRegExps_ : (js.RegExp, js.RegExp, js.Array[String], js.Array[String]) => Boolean,
+    contains_ : (scala.Any, scala.Any) => Boolean,
     currentRunner: () => Runner,
     currentSpec: Spec,
     describe: (String, js.Function0[Unit]) => Suite,
-    equals_ : (js.Any, js.Any, js.Array[String], js.Array[String]) => Boolean,
+    equals_ : (scala.Any, scala.Any, js.Array[String], js.Array[String]) => Boolean,
     execute: () => Unit,
     it: (String, js.Function0[Unit]) => Spec,
     matchersClass: Matchers,
     nextSpecId: () => Double,
-    setInterval: js.Any,
-    setTimeout: js.Any,
+    setInterval: scala.Any,
+    setTimeout: scala.Any,
     specFilter: Spec => Boolean,
     updateInterval: Double,
-    version: () => js.Any,
+    version: () => scala.Any,
     versionString: () => String,
     xdescribe: (String, js.Function0[Unit]) => XSuite,
     xit: (String, js.Function0[Unit]) => XSpec
@@ -121,11 +120,11 @@ object Env {
     
     inline def setClearTimeout(value: Unit): Self = StObject.set(x, "clearTimeout", value.asInstanceOf[js.Any])
     
-    inline def setCompareObjects_(value: (js.Any, js.Any, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "compareObjects_", js.Any.fromFunction4(value))
+    inline def setCompareObjects_(value: (scala.Any, scala.Any, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "compareObjects_", js.Any.fromFunction4(value))
     
-    inline def setCompareRegExps_(value: (RegExp, RegExp, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "compareRegExps_", js.Any.fromFunction4(value))
+    inline def setCompareRegExps_(value: (js.RegExp, js.RegExp, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "compareRegExps_", js.Any.fromFunction4(value))
     
-    inline def setContains_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "contains_", js.Any.fromFunction2(value))
+    inline def setContains_(value: (scala.Any, scala.Any) => Boolean): Self = StObject.set(x, "contains_", js.Any.fromFunction2(value))
     
     inline def setCurrentRunner(value: () => Runner): Self = StObject.set(x, "currentRunner", js.Any.fromFunction0(value))
     
@@ -133,7 +132,7 @@ object Env {
     
     inline def setDescribe(value: (String, js.Function0[Unit]) => Suite): Self = StObject.set(x, "describe", js.Any.fromFunction2(value))
     
-    inline def setEquals_(value: (js.Any, js.Any, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "equals_", js.Any.fromFunction4(value))
+    inline def setEquals_(value: (scala.Any, scala.Any, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "equals_", js.Any.fromFunction4(value))
     
     inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
@@ -143,15 +142,15 @@ object Env {
     
     inline def setNextSpecId(value: () => Double): Self = StObject.set(x, "nextSpecId", js.Any.fromFunction0(value))
     
-    inline def setSetInterval(value: js.Any): Self = StObject.set(x, "setInterval", value.asInstanceOf[js.Any])
+    inline def setSetInterval(value: scala.Any): Self = StObject.set(x, "setInterval", value.asInstanceOf[js.Any])
     
-    inline def setSetTimeout(value: js.Any): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
+    inline def setSetTimeout(value: scala.Any): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
     
     inline def setSpecFilter(value: Spec => Boolean): Self = StObject.set(x, "specFilter", js.Any.fromFunction1(value))
     
     inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
     
-    inline def setVersion(value: () => js.Any): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
+    inline def setVersion(value: () => scala.Any): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
     
     inline def setVersionString(value: () => String): Self = StObject.set(x, "versionString", js.Any.fromFunction0(value))
     

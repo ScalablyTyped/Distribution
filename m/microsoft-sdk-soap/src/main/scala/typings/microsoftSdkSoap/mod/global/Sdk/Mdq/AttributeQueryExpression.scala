@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Mdq.AttributeQueryExpression")
 @js.native
-class AttributeQueryExpression protected () extends StObject {
+open class AttributeQueryExpression protected () extends StObject {
   def this(criteria: MetadataFilterExpression, properties: MetadataPropertiesExpression) = this()
 }

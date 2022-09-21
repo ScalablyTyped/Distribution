@@ -1,8 +1,6 @@
 package typings.xstate
 
-import typings.xstate.anon.ContextAny
-import typings.xstate.mod.StateNode
-import typings.xstate.typesMod.EventObject
+import typings.xstate.typesMod.AnyStateMachine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +11,7 @@ object scxmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def toMachine(xml: String, options: ScxmlToMachineOptions): StateNode[js.Any, js.Any, EventObject, ContextAny] = (^.asInstanceOf[js.Dynamic].applyDynamic("toMachine")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StateNode[js.Any, js.Any, EventObject, ContextAny]]
+  inline def toMachine(xml: String, options: ScxmlToMachineOptions): AnyStateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("toMachine")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnyStateMachine]
   
   trait ScxmlToMachineOptions extends StObject {
     

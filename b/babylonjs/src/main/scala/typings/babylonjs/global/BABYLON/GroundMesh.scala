@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.GroundMesh")
 @js.native
-class GroundMesh protected ()
+open class GroundMesh protected ()
   extends StObject
      with typings.babylonjs.BABYLON.GroundMesh {
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /**
@@ -37,7 +38,7 @@ class GroundMesh protected ()
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
+    * Unlike isInFrustum this checks the full bounding box
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */
@@ -73,5 +74,5 @@ object GroundMesh {
     * @param scene the scene to create the ground mesh in
     * @returns the created ground mesh
     */
-  inline def Parse(parsedMesh: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.GroundMesh]
+  inline def Parse(parsedMesh: Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.GroundMesh]
 }

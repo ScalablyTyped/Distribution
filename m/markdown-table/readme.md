@@ -1,19 +1,19 @@
 
 # Scala.js typings for markdown-table
 
-Typings are for version 2.0
+Typings are for version 3.0.2
 
 ## Library description:
-Markdown tables
+Generate a markdown (GFM) table
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | markdown-table |
 | Keywords           | text, markdown, table, align, rows, tabular |
-| # releases         | 3 |
-| # dependents       | 138 |
-| # downloads        | 93392982 |
-| # stars            | 6 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 9430948.666666666 |
+| # stars            | 214.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/markdown-table#readme)
@@ -24,7 +24,7 @@ Markdown tables
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

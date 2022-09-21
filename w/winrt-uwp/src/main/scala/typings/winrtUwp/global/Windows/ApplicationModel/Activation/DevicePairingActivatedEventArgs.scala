@@ -11,17 +11,17 @@ abstract class DevicePairingActivatedEventArgs ()
      with typings.winrtUwp.Windows.ApplicationModel.Activation.DevicePairingActivatedEventArgs {
   
   /* CompleteClass */
-  var deviceInformation: js.Any = js.native
+  var deviceInformation: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var kind: js.Any = js.native
+  var kind: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var previousExecutionState: js.Any = js.native
+  var previousExecutionState: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var splashScreen: js.Any = js.native
+  var splashScreen: Any = js.native
 }

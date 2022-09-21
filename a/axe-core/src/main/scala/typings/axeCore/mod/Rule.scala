@@ -24,6 +24,8 @@ trait Rule extends StObject {
   
   var pageLevel: js.UndefOr[Boolean] = js.undefined
   
+  var reviewOnFail: js.UndefOr[Boolean] = js.undefined
+  
   var selector: js.UndefOr[String] = js.undefined
   
   var tags: js.UndefOr[js.Array[String]] = js.undefined
@@ -41,13 +43,13 @@ object Rule {
     
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    inline def setAllVarargs(value: String*): Self = StObject.set(x, "all", js.Array(value :_*))
+    inline def setAllVarargs(value: String*): Self = StObject.set(x, "all", js.Array(value*))
     
     inline def setAny(value: js.Array[String]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
     inline def setAnyUndefined: Self = StObject.set(x, "any", js.undefined)
     
-    inline def setAnyVarargs(value: String*): Self = StObject.set(x, "any", js.Array(value :_*))
+    inline def setAnyVarargs(value: String*): Self = StObject.set(x, "any", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
@@ -73,11 +75,15 @@ object Rule {
     
     inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
     
-    inline def setNoneVarargs(value: String*): Self = StObject.set(x, "none", js.Array(value :_*))
+    inline def setNoneVarargs(value: String*): Self = StObject.set(x, "none", js.Array(value*))
     
     inline def setPageLevel(value: Boolean): Self = StObject.set(x, "pageLevel", value.asInstanceOf[js.Any])
     
     inline def setPageLevelUndefined: Self = StObject.set(x, "pageLevel", js.undefined)
+    
+    inline def setReviewOnFail(value: Boolean): Self = StObject.set(x, "reviewOnFail", value.asInstanceOf[js.Any])
+    
+    inline def setReviewOnFailUndefined: Self = StObject.set(x, "reviewOnFail", js.undefined)
     
     inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
@@ -87,6 +93,6 @@ object Rule {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

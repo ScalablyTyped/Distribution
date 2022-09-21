@@ -3,9 +3,14 @@ package typings.jupyterlabSettingregistry
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.jupyterlabSettingregistry.anon.Composite
+import typings.jupyterlabSettingregistry.anon.Context
 import typings.jupyterlabSettingregistry.anon.User
 import typings.jupyterlabSettingregistry.anon.phaseinPhaseTransform
 import typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`object`
+import typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.command
+import typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.separator
+import typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.spacer
+import typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.submenu
 import typings.jupyterlabSettingregistry.settingregistryMod.ISchemaValidator
 import typings.jupyterlabSettingregistry.settingregistryMod.ISchemaValidator.IError
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
@@ -163,6 +168,249 @@ object tokensMod {
     val ^ : Token[ISettingRegistry] = js.native
     
     /**
+      * The menu ids defined by default.
+      */
+    /* Rewritten from type alias, can be one of: 
+      - typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-file`
+      - typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-file-new`
+      - typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-edit`
+      - typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-help`
+      - typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-kernel`
+      - typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-run`
+      - typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-settings`
+      - typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-view`
+      - typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-tabs`
+    */
+    trait DefaultMenuId extends StObject
+    object DefaultMenuId {
+      
+      inline def `jp-menu-edit`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-edit` = "jp-menu-edit".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-edit`]
+      
+      inline def `jp-menu-file`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-file` = "jp-menu-file".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-file`]
+      
+      inline def `jp-menu-file-new`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-file-new` = "jp-menu-file-new".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-file-new`]
+      
+      inline def `jp-menu-help`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-help` = "jp-menu-help".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-help`]
+      
+      inline def `jp-menu-kernel`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-kernel` = "jp-menu-kernel".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-kernel`]
+      
+      inline def `jp-menu-run`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-run` = "jp-menu-run".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-run`]
+      
+      inline def `jp-menu-settings`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-settings` = "jp-menu-settings".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-settings`]
+      
+      inline def `jp-menu-tabs`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-tabs` = "jp-menu-tabs".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-tabs`]
+      
+      inline def `jp-menu-view`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-view` = "jp-menu-view".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`jp-menu-view`]
+    }
+    
+    trait IContextMenuItem
+      extends StObject
+         with IMenuItem {
+      
+      /**
+        * The CSS selector for the context menu item.
+        *
+        * The context menu item will only be displayed in the context menu
+        * when the selector matches a node on the propagation path of the
+        * contextmenu event. This allows the menu item to be restricted to
+        * user-defined contexts.
+        *
+        * The selector must not contain commas.
+        */
+      var selector: String
+    }
+    object IContextMenuItem {
+      
+      inline def apply(selector: String): IContextMenuItem = {
+        val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+        __obj.asInstanceOf[IContextMenuItem]
+      }
+      
+      extension [Self <: IContextMenuItem](x: Self) {
+        
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    /**
+      * An interface defining a menu.
+      */
+    trait IMenu
+      extends StObject
+         with PartialJSONObject {
+      
+      /**
+        * Whether a menu is disabled. `False` by default.
+        *
+        * #### Notes
+        * This allows an user to suppress a menu.
+        */
+      var disabled: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Menu icon id
+        *
+        * #### Note
+        * The icon id will looked for in registered LabIcon.
+        */
+      var icon: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Unique menu identifier
+        */
+      var id: DefaultMenuId | String
+      
+      /**
+        * Menu items
+        */
+      var items: js.UndefOr[js.Array[IMenuItem]] = js.undefined
+      
+      /**
+        * Menu title
+        *
+        * #### Notes
+        * Default will be the capitalized id.
+        */
+      var label: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Get the mnemonic index for the title.
+        *
+        * #### Notes
+        * The default value is `-1`.
+        */
+      var mnemonic: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * The rank order of the menu among its siblings.
+        */
+      var rank: js.UndefOr[Double] = js.undefined
+    }
+    object IMenu {
+      
+      inline def apply(id: DefaultMenuId | String): IMenu = {
+        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+        __obj.asInstanceOf[IMenu]
+      }
+      
+      extension [Self <: IMenu](x: Self) {
+        
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        
+        inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        
+        inline def setId(value: DefaultMenuId | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        
+        inline def setItems(value: js.Array[IMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        
+        inline def setItemsVarargs(value: IMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
+        
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        
+        inline def setMnemonic(value: Double): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
+        
+        inline def setMnemonicUndefined: Self = StObject.set(x, "mnemonic", js.undefined)
+        
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+      }
+    }
+    
+    /**
+      * An interface describing a menu item.
+      */
+    trait IMenuItem
+      extends StObject
+         with PartialJSONObject {
+      
+      /**
+        * The arguments for the command.
+        *
+        * The default value is an empty object.
+        */
+      var args: js.UndefOr[PartialJSONObject] = js.undefined
+      
+      /**
+        * The command to execute when the item is triggered.
+        *
+        * The default value is an empty string.
+        */
+      var command: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Whether a menu item is disabled. `false` by default.
+        *
+        * #### Notes
+        * This allows an user to suppress menu items.
+        */
+      var disabled: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * The rank order of the menu item among its siblings.
+        */
+      var rank: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * The submenu for a `'submenu'` type item.
+        *
+        * The default value is `null`.
+        */
+      var submenu: js.UndefOr[IMenu | Null] = js.undefined
+      
+      /**
+        * The type of the menu item.
+        *
+        * The default value is `'command'`.
+        */
+      var `type`: js.UndefOr[command | submenu | separator] = js.undefined
+    }
+    object IMenuItem {
+      
+      inline def apply(): IMenuItem = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[IMenuItem]
+      }
+      
+      extension [Self <: IMenuItem](x: Self) {
+        
+        inline def setArgs(value: PartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        
+        inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+        
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+        
+        inline def setSubmenu(value: IMenu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
+        
+        inline def setSubmenuNull: Self = StObject.set(x, "submenu", null)
+        
+        inline def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
+        
+        inline def setType(value: command | submenu | separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      }
+    }
+    
+    /**
       * The settings for a specific plugin.
       */
     trait IPlugin
@@ -302,7 +550,7 @@ object tokensMod {
         
         inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        inline def setTypeVarargs(value: Primitive*): Self = StObject.set(x, "type", js.Array(value :_*))
+        inline def setTypeVarargs(value: Primitive*): Self = StObject.set(x, "type", js.Array(value*))
       }
     }
     
@@ -313,6 +561,12 @@ object tokensMod {
     trait ISchema
       extends StObject
          with IProperty {
+      
+      /**
+        * The JupyterLab menus that are created by a plugin's schema.
+        */
+      @JSName("jupyter.lab.menus")
+      var jupyterDotlabDotmenus: js.UndefOr[Context] = js.undefined
       
       /**
         * Whether the schema is deprecated.
@@ -350,6 +604,16 @@ object tokensMod {
       var jupyterDotlabDotshortcuts: js.UndefOr[js.Array[IShortcut]] = js.undefined
       
       /**
+        * The JupyterLab toolbars created by a plugin's schema.
+        *
+        * #### Notes
+        * The toolbar items are grouped by document or widget factory name
+        * that will contain a toolbar.
+        */
+      @JSName("jupyter.lab.toolbars")
+      var jupyterDotlabDottoolbars: js.UndefOr[StringDictionary[js.Array[IToolbarItem]]] = js.undefined
+      
+      /**
         * A flag that indicates plugin should be transformed before being used by
         * the setting registry.
         *
@@ -380,6 +644,10 @@ object tokensMod {
       
       extension [Self <: ISchema](x: Self) {
         
+        inline def setJupyterDotlabDotmenus(value: Context): Self = StObject.set(x, "jupyter.lab.menus", value.asInstanceOf[js.Any])
+        
+        inline def setJupyterDotlabDotmenusUndefined: Self = StObject.set(x, "jupyter.lab.menus", js.undefined)
+        
         inline def `setJupyterDotlabDotsetting-deprecated`(value: Boolean): Self = StObject.set(x, "jupyter.lab.setting-deprecated", value.asInstanceOf[js.Any])
         
         inline def `setJupyterDotlabDotsetting-deprecatedUndefined`: Self = StObject.set(x, "jupyter.lab.setting-deprecated", js.undefined)
@@ -400,7 +668,11 @@ object tokensMod {
         
         inline def setJupyterDotlabDotshortcutsUndefined: Self = StObject.set(x, "jupyter.lab.shortcuts", js.undefined)
         
-        inline def setJupyterDotlabDotshortcutsVarargs(value: IShortcut*): Self = StObject.set(x, "jupyter.lab.shortcuts", js.Array(value :_*))
+        inline def setJupyterDotlabDotshortcutsVarargs(value: IShortcut*): Self = StObject.set(x, "jupyter.lab.shortcuts", js.Array(value*))
+        
+        inline def setJupyterDotlabDottoolbars(value: StringDictionary[js.Array[IToolbarItem]]): Self = StObject.set(x, "jupyter.lab.toolbars", value.asInstanceOf[js.Any])
+        
+        inline def setJupyterDotlabDottoolbarsUndefined: Self = StObject.set(x, "jupyter.lab.toolbars", js.undefined)
         
         inline def setJupyterDotlabDottransform(value: Boolean): Self = StObject.set(x, "jupyter.lab.transform", value.asInstanceOf[js.Any])
         
@@ -661,7 +933,12 @@ object tokensMod {
       var disabled: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * The key combination of the shortcut.
+        * The key sequence of the shortcut.
+        *
+        * ### Notes
+        *
+        * If this is a list like `['Ctrl A', 'B']`, the user needs to press
+        * `Ctrl A` followed by `B` to trigger the shortcuts.
         */
       var keys: js.Array[String]
       
@@ -691,9 +968,111 @@ object tokensMod {
         
         inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
         
-        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
         
         inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    /**
+      * An interface describing a toolbar item.
+      */
+    trait IToolbarItem
+      extends StObject
+         with PartialJSONObject {
+      
+      /**
+        * The arguments for the command.
+        *
+        * The default value is an empty object.
+        */
+      var args: js.UndefOr[PartialJSONObject] = js.undefined
+      
+      /**
+        * The command to execute when the item is triggered.
+        *
+        * The default value is an empty string.
+        */
+      var command: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Whether the toolbar item is ignored (i.e. not created). `false` by default.
+        *
+        * #### Notes
+        * This allows an user to suppress toolbar items.
+        */
+      var disabled: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Item icon id
+        *
+        * #### Note
+        * The id will be looked for in the LabIcon registry.
+        * The command icon will be overridden by this label if defined.
+        */
+      var icon: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Item label
+        *
+        * #### Note
+        * The command label will be overridden by this label if defined.
+        */
+      var label: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Unique toolbar item name
+        */
+      var name: String
+      
+      /**
+        * The rank order of the toolbar item among its siblings.
+        */
+      var rank: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * The type of the toolbar item.
+        */
+      var `type`: js.UndefOr[command | spacer] = js.undefined
+    }
+    object IToolbarItem {
+      
+      inline def apply(name: String): IToolbarItem = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[IToolbarItem]
+      }
+      
+      extension [Self <: IToolbarItem](x: Self) {
+        
+        inline def setArgs(value: PartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        
+        inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+        
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        
+        inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+        
+        inline def setType(value: command | spacer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     

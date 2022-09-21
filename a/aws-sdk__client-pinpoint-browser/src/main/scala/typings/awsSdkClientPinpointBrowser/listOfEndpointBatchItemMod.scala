@@ -8,5 +8,5 @@ object listOfEndpointBatchItemMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_ListOfEndpointBatchItem", "_ListOfEndpointBatchItem")
   @js.native
-  val ListOfEndpointBatchItem: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ListOfEndpointBatchItem: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

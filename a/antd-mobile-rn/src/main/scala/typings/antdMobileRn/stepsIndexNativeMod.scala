@@ -16,7 +16,7 @@ object stepsIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/steps/index.native", JSImport.Default)
   @js.native
-  class default protected () extends Steps {
+  open class default protected () extends Steps {
     def this(props: StepsNativeProps) = this()
   }
   /* static members */
@@ -28,8 +28,8 @@ object stepsIndexNativeMod {
     
     @JSImport("antd-mobile-rn/lib/steps/index.native", "default.Step")
     @js.native
-    def Step: js.Any = js.native
-    inline def Step_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+    def Step: Any = js.native
+    inline def Step_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/index.native", "default.defaultProps")
     @js.native
@@ -38,8 +38,7 @@ object stepsIndexNativeMod {
   }
   
   @js.native
-  trait Steps
-    extends Component[StepsNativeProps, js.Any, js.Any] {
+  trait Steps extends Component[StepsNativeProps, Any, Any] {
     
     def onLayout(e: LayoutChangeEvent): Unit = js.native
   }
@@ -77,7 +76,7 @@ object stepsIndexNativeMod {
     
     var finishIcon: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
   }
   object StepsProps {
     
@@ -90,7 +89,7 @@ object stepsIndexNativeMod {
       
       inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDirection(value: vertical | horizontal): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -100,7 +99,7 @@ object stepsIndexNativeMod {
       
       inline def setFinishIconUndefined: Self = StObject.set(x, "finishIcon", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }

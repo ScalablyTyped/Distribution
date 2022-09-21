@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OpacityWidth extends StObject {
   
+  /**
+    * Specifies the color of the slider handles.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the opacity of the slider handles.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the width of the slider handles.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object OpacityWidth {

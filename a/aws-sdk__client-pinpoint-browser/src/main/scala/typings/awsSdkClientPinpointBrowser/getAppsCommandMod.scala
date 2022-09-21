@@ -16,7 +16,7 @@ object getAppsCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetAppsCommand", "GetAppsCommand")
   @js.native
-  class GetAppsCommand protected ()
+  open class GetAppsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getAppsCommandMod {
     override val middlewareStack: MiddlewareStack[GetAppsInput, GetAppsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[GetAppsInput, GetAppsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetAppsInput, GetAppsOutput] = js.native
   }
 }

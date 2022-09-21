@@ -11,9 +11,9 @@ Use system notification to inform developer about compilation error
 | Full name          | webpack-error-notification |
 | Keywords           | webpack, build |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 54722 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2103.0 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/vsolovyov/webpack-error-notification#readme)

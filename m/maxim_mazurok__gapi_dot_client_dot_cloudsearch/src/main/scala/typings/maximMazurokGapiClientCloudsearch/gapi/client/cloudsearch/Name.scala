@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Name extends StObject {
   
-  /** The read-only display name formatted according to the locale specified by the viewer's account or the Accept-Language HTTP header. */
+  /** The read-only display name formatted according to the locale specified by the viewer's account or the `Accept-Language` HTTP header. */
   var displayName: js.UndefOr[String] = js.undefined
 }
 object Name {

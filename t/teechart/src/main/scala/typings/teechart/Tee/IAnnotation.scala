@@ -40,8 +40,8 @@ object IAnnotation {
     format: IFormat,
     items: js.Array[IAnnotation],
     margins: IMargins,
-    mousedown: js.Any => Boolean,
-    mousemove: js.Any => Boolean,
+    mousedown: Any => Boolean,
+    mousemove: Any => Boolean,
     position: IPoint,
     resize: () => Unit,
     text: String,
@@ -62,7 +62,7 @@ object IAnnotation {
     
     inline def setItems(value: js.Array[IAnnotation]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: IAnnotation*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IAnnotation*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setMargins(value: IMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     

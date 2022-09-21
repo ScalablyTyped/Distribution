@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientReportDesignerSaveCommandExecuteEventArgs class with the default settings.
   */
-class ASPxClientReportDesignerSaveCommandExecuteEventArgs ()
+open class ASPxClientReportDesignerSaveCommandExecuteEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientReportDesignerSaveCommandExecuteEventArgs {
   

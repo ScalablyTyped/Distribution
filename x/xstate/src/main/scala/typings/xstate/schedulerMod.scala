@@ -9,25 +9,25 @@ object schedulerMod {
   
   @JSImport("xstate/lib/scheduler", "Scheduler")
   @js.native
-  class Scheduler () extends StObject {
+  open class Scheduler () extends StObject {
     def this(options: PartialSchedulerOptions) = this()
     
     def clear(): Unit = js.native
     
-    /* private */ var flushEvents: js.Any = js.native
+    /* private */ var flushEvents: Any = js.native
     
     def initialize(): Unit = js.native
     def initialize(callback: js.Function0[Unit]): Unit = js.native
     
-    /* private */ var initialized: js.Any = js.native
+    /* private */ var initialized: Any = js.native
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
     
-    /* private */ var process: js.Any = js.native
+    /* private */ var process: Any = js.native
     
-    /* private */ var processingEvent: js.Any = js.native
+    /* private */ var processingEvent: Any = js.native
     
-    /* private */ var queue: js.Any = js.native
+    /* private */ var queue: Any = js.native
     
     def schedule(task: js.Function0[Unit]): Unit = js.native
   }

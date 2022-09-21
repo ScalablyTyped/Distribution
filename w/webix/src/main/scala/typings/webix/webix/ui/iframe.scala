@@ -12,14 +12,14 @@ trait iframe
      with baseview {
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   def attachEvent(`type`: iframeEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: iframeEventName, functor: WebixCallback, id: String): String | Double = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_iframe: iframeConfig = js.native
@@ -34,7 +34,7 @@ trait iframe
   
   def load(value: String): Unit = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

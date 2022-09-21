@@ -10,10 +10,10 @@ The modern build of lodash’s `_.first` as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.first |
 | Keywords           | lodash, lodash-modularized, stdlib, util |
-| # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 707833 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 62125.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

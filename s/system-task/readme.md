@@ -10,10 +10,10 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | system-task |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 392 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 43.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/leocwlam/system-task#readme)

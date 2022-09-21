@@ -16,7 +16,7 @@ object iconMod {
   
   @JSImport("@ant-design/react-native/lib/icon", JSImport.Default)
   @js.native
-  class default () extends Icon
+  open class default () extends Icon
   /* static members */
   object default {
     
@@ -36,10 +36,9 @@ object iconMod {
   }
   
   @js.native
-  trait Icon
-    extends Component[IconProps, js.Any, js.Any]
+  trait Icon extends Component[IconProps, Any, Any]
   
-  type IconNames = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OutlineGlyphMapType */ js.Any
+  type IconNames = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OutlineGlyphMapType */ Any
   
   trait IconProps
     extends StObject

@@ -1,9 +1,5 @@
 package typings.googleapis.fileV1beta1Mod.fileV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +9,12 @@ trait ParamsResourceProjectsLocationsInstancesCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The name of the instance to create. The name must be unique for the
-    * specified project and location.
+    * Required. The ID of the instance to create. The ID must be unique within the specified project and location. This value must start with a lowercase letter followed by up to 62 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
     */
   var instanceId: js.UndefOr[String] = js.undefined
   
   /**
-    * The instance's project and location, in the format
-    * projects/{project_id}/locations/{location}. In Cloud Filestore, locations
-    * map to GCP zones, for example **us-west1-b**.
+    * Required. The instance's project and location, in the format `projects/{project_id\}/locations/{location\}`. In Filestore, locations map to GCP zones, for example **us-west1-b**.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -43,10 +31,6 @@ object ParamsResourceProjectsLocationsInstancesCreate {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsInstancesCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     

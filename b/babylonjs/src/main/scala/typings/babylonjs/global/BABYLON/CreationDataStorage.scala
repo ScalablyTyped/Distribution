@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON._CreationDataStorage")
 @js.native
-class CreationDataStorage ()
+open class CreationDataStorage ()
   extends StObject
      with typings.babylonjs.BABYLON.CreationDataStorage {
   

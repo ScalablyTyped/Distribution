@@ -34,19 +34,19 @@ object ClustersConfigDump {
     
     inline def setDynamicActiveClustersUndefined: Self = StObject.set(x, "dynamicActiveClusters", js.undefined)
     
-    inline def setDynamicActiveClustersVarargs(value: DynamicCluster*): Self = StObject.set(x, "dynamicActiveClusters", js.Array(value :_*))
+    inline def setDynamicActiveClustersVarargs(value: DynamicCluster*): Self = StObject.set(x, "dynamicActiveClusters", js.Array(value*))
     
     inline def setDynamicWarmingClusters(value: js.Array[DynamicCluster]): Self = StObject.set(x, "dynamicWarmingClusters", value.asInstanceOf[js.Any])
     
     inline def setDynamicWarmingClustersUndefined: Self = StObject.set(x, "dynamicWarmingClusters", js.undefined)
     
-    inline def setDynamicWarmingClustersVarargs(value: DynamicCluster*): Self = StObject.set(x, "dynamicWarmingClusters", js.Array(value :_*))
+    inline def setDynamicWarmingClustersVarargs(value: DynamicCluster*): Self = StObject.set(x, "dynamicWarmingClusters", js.Array(value*))
     
     inline def setStaticClusters(value: js.Array[StaticCluster]): Self = StObject.set(x, "staticClusters", value.asInstanceOf[js.Any])
     
     inline def setStaticClustersUndefined: Self = StObject.set(x, "staticClusters", js.undefined)
     
-    inline def setStaticClustersVarargs(value: StaticCluster*): Self = StObject.set(x, "staticClusters", js.Array(value :_*))
+    inline def setStaticClustersVarargs(value: StaticCluster*): Self = StObject.set(x, "staticClusters", js.Array(value*))
     
     inline def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     

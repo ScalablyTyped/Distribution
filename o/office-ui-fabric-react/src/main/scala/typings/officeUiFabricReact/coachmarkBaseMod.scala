@@ -21,63 +21,63 @@ object coachmarkBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.base", "CoachmarkBase")
   @js.native
-  class CoachmarkBase protected ()
-    extends Component[ICoachmarkProps, ICoachmarkState, js.Any]
+  open class CoachmarkBase protected ()
+    extends Component[ICoachmarkProps, ICoachmarkState, Any]
        with ICoachmark {
     def this(props: ICoachmarkProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MCoachmarkBase(newProps: ICoachmarkProps): Unit = js.native
     
-    /* private */ var _addListeners: js.Any = js.native
+    /* private */ var _addListeners: Any = js.native
     
-    /* private */ var _addProximityHandler: js.Any = js.native
+    /* private */ var _addProximityHandler: Any = js.native
     
-    /* private */ var _ariaAlertContainer: js.Any = js.native
+    /* private */ var _ariaAlertContainer: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ val _beakDirection: js.Any = js.native
+    /* private */ val _beakDirection: Any = js.native
     
-    /* private */ var _childrenContainer: js.Any = js.native
+    /* private */ var _childrenContainer: Any = js.native
     
-    /* private */ var _dismissOnLostFocus: js.Any = js.native
+    /* private */ var _dismissOnLostFocus: Any = js.native
     
     /**
       * The cached HTMLElement reference to the Entity Inner Host
       * element.
       */
-    /* private */ var _entityHost: js.Any = js.native
+    /* private */ var _entityHost: Any = js.native
     
-    /* private */ var _entityInnerHostElement: js.Any = js.native
+    /* private */ var _entityInnerHostElement: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _getBounds: js.Any = js.native
+    /* private */ var _getBounds: Any = js.native
     
-    /* private */ var _isInsideElement: js.Any = js.native
+    /* private */ var _isInsideElement: Any = js.native
     
-    /* private */ var _onFocusHandler: js.Any = js.native
+    /* private */ var _onFocusHandler: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _onPositioned: js.Any = js.native
+    /* private */ var _onPositioned: Any = js.native
     
-    /* private */ var _openCoachmark: js.Any = js.native
+    /* private */ var _openCoachmark: Any = js.native
     
-    /* private */ var _positioningContainer: js.Any = js.native
+    /* private */ var _positioningContainer: Any = js.native
     
-    /* private */ var _setBeakPosition: js.Any = js.native
+    /* private */ var _setBeakPosition: Any = js.native
     
-    /* private */ var _setTargetElementRect: js.Any = js.native
+    /* private */ var _setTargetElementRect: Any = js.native
     
     /**
       * The target element the mouse would be in
       * proximity to
       */
-    /* private */ var _targetElementRect: js.Any = js.native
+    /* private */ var _targetElementRect: Any = js.native
     
-    /* private */ var _translateAnimationContainer: js.Any = js.native
+    /* private */ var _translateAnimationContainer: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MCoachmarkBase(): Unit = js.native

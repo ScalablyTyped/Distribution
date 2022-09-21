@@ -1,8 +1,10 @@
 package typings.gestalt.mod
 
 import typings.gestalt.anon.Checked
+import typings.gestalt.gestaltStrings.hidden
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
+import typings.gestalt.gestaltStrings.visible
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
@@ -28,6 +30,8 @@ trait CheckboxProps extends StObject {
   var indeterminate: js.UndefOr[Boolean] = js.undefined
   
   var label: js.UndefOr[String] = js.undefined
+  
+  var labelDisplay: js.UndefOr[visible | hidden] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -78,6 +82,10 @@ object CheckboxProps {
     inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDisplay(value: visible | hidden): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDisplayUndefined: Self = StObject.set(x, "labelDisplay", js.undefined)
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

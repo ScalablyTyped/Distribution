@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeWorkspacesConnectionStatusResult extends StObject {
   
   /**
-    * The token to use to retrieve the next set of results, or null if no more results are available.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
@@ -33,6 +33,6 @@ object DescribeWorkspacesConnectionStatusResult {
     
     inline def setWorkspacesConnectionStatusUndefined: Self = StObject.set(x, "WorkspacesConnectionStatus", js.undefined)
     
-    inline def setWorkspacesConnectionStatusVarargs(value: WorkspaceConnectionStatus*): Self = StObject.set(x, "WorkspacesConnectionStatus", js.Array(value :_*))
+    inline def setWorkspacesConnectionStatusVarargs(value: WorkspaceConnectionStatus*): Self = StObject.set(x, "WorkspacesConnectionStatus", js.Array(value*))
   }
 }

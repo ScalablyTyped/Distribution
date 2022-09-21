@@ -111,35 +111,35 @@ object PathConstraint {
     
     inline def setBones(value: js.Array[Bone]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    inline def setBonesVarargs(value: Bone*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: Bone*): Self = StObject.set(x, "bones", js.Array(value*))
     
     inline def setComputeWorldPositions(value: (PathAttachment, Double, Boolean, Boolean, Boolean) => js.Array[Double]): Self = StObject.set(x, "computeWorldPositions", js.Any.fromFunction5(value))
     
     inline def setCurves(value: js.Array[Double]): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
     
-    inline def setCurvesVarargs(value: Double*): Self = StObject.set(x, "curves", js.Array(value :_*))
+    inline def setCurvesVarargs(value: Double*): Self = StObject.set(x, "curves", js.Array(value*))
     
     inline def setData(value: PathConstraintData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setLengths(value: js.Array[Double]): Self = StObject.set(x, "lengths", value.asInstanceOf[js.Any])
     
-    inline def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value :_*))
+    inline def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value*))
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value*))
     
     inline def setRotateMix(value: Double): Self = StObject.set(x, "rotateMix", value.asInstanceOf[js.Any])
     
     inline def setSegments(value: js.Array[Double]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    inline def setSegmentsVarargs(value: Double*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Double*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setSpaces(value: js.Array[Double]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    inline def setSpacesVarargs(value: Double*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+    inline def setSpacesVarargs(value: Double*): Self = StObject.set(x, "spaces", js.Array(value*))
     
     inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
@@ -149,6 +149,6 @@ object PathConstraint {
     
     inline def setWorld(value: js.Array[Double]): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
     
-    inline def setWorldVarargs(value: Double*): Self = StObject.set(x, "world", js.Array(value :_*))
+    inline def setWorldVarargs(value: Double*): Self = StObject.set(x, "world", js.Array(value*))
   }
 }

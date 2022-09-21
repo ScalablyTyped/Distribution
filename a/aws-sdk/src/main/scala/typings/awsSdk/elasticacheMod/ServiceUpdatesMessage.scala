@@ -33,6 +33,6 @@ object ServiceUpdatesMessage {
     
     inline def setServiceUpdatesUndefined: Self = StObject.set(x, "ServiceUpdates", js.undefined)
     
-    inline def setServiceUpdatesVarargs(value: ServiceUpdate*): Self = StObject.set(x, "ServiceUpdates", js.Array(value :_*))
+    inline def setServiceUpdatesVarargs(value: ServiceUpdate*): Self = StObject.set(x, "ServiceUpdates", js.Array(value*))
   }
 }

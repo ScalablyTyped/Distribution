@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Purchases")
 @js.native
-class ResourcePurchases protected () extends StObject {
+open class ResourcePurchases protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
@@ -15,6 +15,8 @@ class ResourcePurchases protected () extends StObject {
   var products: ResourcePurchasesProducts = js.native
   
   var subscriptions: ResourcePurchasesSubscriptions = js.native
+  
+  var subscriptionsv2: ResourcePurchasesSubscriptionsv2 = js.native
   
   var voidedpurchases: ResourcePurchasesVoidedpurchases = js.native
 }

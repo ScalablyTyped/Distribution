@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object tshirtsmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/TShirtSmall", JSImport.Default)
   @js.native
-  val default: SFC[TShirtSmallProps] = js.native
+  val default: FC[TShirtSmallProps] = js.native
   
   trait TShirtSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object TShirtSmallProps {
     
@@ -29,14 +29,14 @@ object tshirtsmallMod extends Shortcut {
     
     extension [Self <: TShirtSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[TShirtSmallProps]
+  type _To = FC[TShirtSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `tshirtsmallMod.foo` */
-  override def _to: SFC[TShirtSmallProps] = default
+  override def _to: FC[TShirtSmallProps] = default
 }

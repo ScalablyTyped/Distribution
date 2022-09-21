@@ -12,7 +12,7 @@ trait IActionConfig
   var action: js.UndefOr[IActionCall] = js.native
   
   /* InferMemberOverrides */
-  override def apply(arg1: /* next */ js.Function1[/* repeated */ js.Any, Unit], arg2: /* repeated */ js.Any): Unit = js.native
+  override def apply(arg1: /* next */ js.Function1[/* repeated */ Any, Unit], arg2: /* repeated */ Any): Unit = js.native
   
   var timeout: js.UndefOr[Double] = js.native
 }

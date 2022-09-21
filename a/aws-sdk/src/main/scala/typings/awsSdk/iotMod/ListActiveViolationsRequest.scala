@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListActiveViolationsRequest extends StObject {
   
   /**
+    *  The criteria for a behavior. 
+    */
+  var behaviorCriteriaType: js.UndefOr[BehaviorCriteriaType] = js.undefined
+  
+  /**
+    *  A list of all suppressed alerts. 
+    */
+  var listSuppressedAlerts: js.UndefOr[ListSuppressedAlerts] = js.undefined
+  
+  /**
     * The maximum number of results to return at one time.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
@@ -25,6 +35,11 @@ trait ListActiveViolationsRequest extends StObject {
     * The name of the thing whose active violations are listed.
     */
   var thingName: js.UndefOr[DeviceDefenderThingName] = js.undefined
+  
+  /**
+    * The verification state of the violation (detect alarm).
+    */
+  var verificationState: js.UndefOr[VerificationState] = js.undefined
 }
 object ListActiveViolationsRequest {
   
@@ -34,6 +49,14 @@ object ListActiveViolationsRequest {
   }
   
   extension [Self <: ListActiveViolationsRequest](x: Self) {
+    
+    inline def setBehaviorCriteriaType(value: BehaviorCriteriaType): Self = StObject.set(x, "behaviorCriteriaType", value.asInstanceOf[js.Any])
+    
+    inline def setBehaviorCriteriaTypeUndefined: Self = StObject.set(x, "behaviorCriteriaType", js.undefined)
+    
+    inline def setListSuppressedAlerts(value: ListSuppressedAlerts): Self = StObject.set(x, "listSuppressedAlerts", value.asInstanceOf[js.Any])
+    
+    inline def setListSuppressedAlertsUndefined: Self = StObject.set(x, "listSuppressedAlerts", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -50,5 +73,9 @@ object ListActiveViolationsRequest {
     inline def setThingName(value: DeviceDefenderThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
     inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    
+    inline def setVerificationState(value: VerificationState): Self = StObject.set(x, "verificationState", value.asInstanceOf[js.Any])
+    
+    inline def setVerificationStateUndefined: Self = StObject.set(x, "verificationState", js.undefined)
   }
 }

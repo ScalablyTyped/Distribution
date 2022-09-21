@@ -33,6 +33,6 @@ object ListSubscriptionDefinitionVersionsResponse {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    inline def setVersionsVarargs(value: VersionInformation*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: VersionInformation*): Self = StObject.set(x, "Versions", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ trait VBProject extends StObject {
   
   var BuildFileName: String
   
-  def Collection(index: js.Any): VBProject
+  def Collection(index: Any): VBProject
   @JSName("Collection")
   val Collection_Original: VBProjects
   
@@ -32,7 +32,7 @@ trait VBProject extends StObject {
   
   val Protection: vbextProjectProtection
   
-  def References(index: js.Any): Reference
+  def References(index: Any): Reference
   @JSName("References")
   val References_Original: References
   
@@ -42,7 +42,7 @@ trait VBProject extends StObject {
   
   val Type: vbextProjectType
   
-  def VBComponents(index: js.Any): VBComponent
+  def VBComponents(index: Any): VBComponent
   @JSName("VBComponents")
   val VBComponents_Original: VBComponents
   

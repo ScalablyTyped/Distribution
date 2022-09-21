@@ -31,6 +31,6 @@ object PoiList {
     
     inline def setPois(value: js.Array[Poi]): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
     
-    inline def setPoisVarargs(value: Poi*): Self = StObject.set(x, "pois", js.Array(value :_*))
+    inline def setPoisVarargs(value: Poi*): Self = StObject.set(x, "pois", js.Array(value*))
   }
 }

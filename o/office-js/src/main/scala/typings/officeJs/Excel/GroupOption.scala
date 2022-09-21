@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait GroupOption extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.GroupOption")
@@ -15,7 +16,8 @@ object GroupOption extends StObject {
   
   /**
     * Group by columns.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
   sealed trait byColumns
@@ -24,7 +26,8 @@ object GroupOption extends StObject {
   
   /**
     * Group by rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
   sealed trait byRows

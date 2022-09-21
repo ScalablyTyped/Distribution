@@ -201,27 +201,27 @@ object anon {
       
       inline def setEliminations_per_life(value: js.Array[HeroElimsPerLife]): Self = StObject.set(x, "eliminations_per_life", value.asInstanceOf[js.Any])
       
-      inline def setEliminations_per_lifeVarargs(value: HeroElimsPerLife*): Self = StObject.set(x, "eliminations_per_life", js.Array(value :_*))
+      inline def setEliminations_per_lifeVarargs(value: HeroElimsPerLife*): Self = StObject.set(x, "eliminations_per_life", js.Array(value*))
       
       inline def setGames_won(value: js.Array[HeroWins]): Self = StObject.set(x, "games_won", value.asInstanceOf[js.Any])
       
-      inline def setGames_wonVarargs(value: HeroWins*): Self = StObject.set(x, "games_won", js.Array(value :_*))
+      inline def setGames_wonVarargs(value: HeroWins*): Self = StObject.set(x, "games_won", js.Array(value*))
       
       inline def setMultikill_best(value: js.Array[HeroMultiKillBest]): Self = StObject.set(x, "multikill_best", value.asInstanceOf[js.Any])
       
-      inline def setMultikill_bestVarargs(value: HeroMultiKillBest*): Self = StObject.set(x, "multikill_best", js.Array(value :_*))
+      inline def setMultikill_bestVarargs(value: HeroMultiKillBest*): Self = StObject.set(x, "multikill_best", js.Array(value*))
       
       inline def setObjective_kills_average(value: js.Array[HeroObjectiveKillsAverage]): Self = StObject.set(x, "objective_kills_average", value.asInstanceOf[js.Any])
       
-      inline def setObjective_kills_averageVarargs(value: HeroObjectiveKillsAverage*): Self = StObject.set(x, "objective_kills_average", js.Array(value :_*))
+      inline def setObjective_kills_averageVarargs(value: HeroObjectiveKillsAverage*): Self = StObject.set(x, "objective_kills_average", js.Array(value*))
       
       inline def setPlayed(value: js.Array[HeroPlaytime]): Self = StObject.set(x, "played", value.asInstanceOf[js.Any])
       
-      inline def setPlayedVarargs(value: HeroPlaytime*): Self = StObject.set(x, "played", js.Array(value :_*))
+      inline def setPlayedVarargs(value: HeroPlaytime*): Self = StObject.set(x, "played", js.Array(value*))
       
       inline def setWeapon_accuracy(value: js.Array[HeroAccuracy]): Self = StObject.set(x, "weapon_accuracy", value.asInstanceOf[js.Any])
       
-      inline def setWeapon_accuracyVarargs(value: HeroAccuracy*): Self = StObject.set(x, "weapon_accuracy", js.Array(value :_*))
+      inline def setWeapon_accuracyVarargs(value: HeroAccuracy*): Self = StObject.set(x, "weapon_accuracy", js.Array(value*))
     }
   }
   
@@ -304,31 +304,31 @@ object anon {
       
       inline def setEliminations_per_life(value: js.Array[HeroElimsPerLife]): Self = StObject.set(x, "eliminations_per_life", value.asInstanceOf[js.Any])
       
-      inline def setEliminations_per_lifeVarargs(value: HeroElimsPerLife*): Self = StObject.set(x, "eliminations_per_life", js.Array(value :_*))
+      inline def setEliminations_per_lifeVarargs(value: HeroElimsPerLife*): Self = StObject.set(x, "eliminations_per_life", js.Array(value*))
       
       inline def setGames_won(value: js.Array[HeroWins]): Self = StObject.set(x, "games_won", value.asInstanceOf[js.Any])
       
-      inline def setGames_wonVarargs(value: HeroWins*): Self = StObject.set(x, "games_won", js.Array(value :_*))
+      inline def setGames_wonVarargs(value: HeroWins*): Self = StObject.set(x, "games_won", js.Array(value*))
       
       inline def setMultikill_best(value: js.Array[HeroMultiKillBest]): Self = StObject.set(x, "multikill_best", value.asInstanceOf[js.Any])
       
-      inline def setMultikill_bestVarargs(value: HeroMultiKillBest*): Self = StObject.set(x, "multikill_best", js.Array(value :_*))
+      inline def setMultikill_bestVarargs(value: HeroMultiKillBest*): Self = StObject.set(x, "multikill_best", js.Array(value*))
       
       inline def setObjective_kills_average(value: js.Array[HeroObjectiveKillsAverage]): Self = StObject.set(x, "objective_kills_average", value.asInstanceOf[js.Any])
       
-      inline def setObjective_kills_averageVarargs(value: HeroObjectiveKillsAverage*): Self = StObject.set(x, "objective_kills_average", js.Array(value :_*))
+      inline def setObjective_kills_averageVarargs(value: HeroObjectiveKillsAverage*): Self = StObject.set(x, "objective_kills_average", js.Array(value*))
       
       inline def setPlayed(value: js.Array[HeroPlaytime]): Self = StObject.set(x, "played", value.asInstanceOf[js.Any])
       
-      inline def setPlayedVarargs(value: HeroPlaytime*): Self = StObject.set(x, "played", js.Array(value :_*))
+      inline def setPlayedVarargs(value: HeroPlaytime*): Self = StObject.set(x, "played", js.Array(value*))
       
       inline def setWeapon_accuracy(value: js.Array[HeroAccuracy]): Self = StObject.set(x, "weapon_accuracy", value.asInstanceOf[js.Any])
       
-      inline def setWeapon_accuracyVarargs(value: HeroAccuracy*): Self = StObject.set(x, "weapon_accuracy", js.Array(value :_*))
+      inline def setWeapon_accuracyVarargs(value: HeroAccuracy*): Self = StObject.set(x, "weapon_accuracy", js.Array(value*))
       
       inline def setWin_rate(value: js.Array[HeroWinRate]): Self = StObject.set(x, "win_rate", value.asInstanceOf[js.Any])
       
-      inline def setWin_rateVarargs(value: HeroWinRate*): Self = StObject.set(x, "win_rate", js.Array(value :_*))
+      inline def setWin_rateVarargs(value: HeroWinRate*): Self = StObject.set(x, "win_rate", js.Array(value*))
     }
   }
   

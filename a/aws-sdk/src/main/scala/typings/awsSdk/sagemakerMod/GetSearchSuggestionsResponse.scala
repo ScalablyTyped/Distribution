@@ -24,6 +24,6 @@ object GetSearchSuggestionsResponse {
     
     inline def setPropertyNameSuggestionsUndefined: Self = StObject.set(x, "PropertyNameSuggestions", js.undefined)
     
-    inline def setPropertyNameSuggestionsVarargs(value: PropertyNameSuggestion*): Self = StObject.set(x, "PropertyNameSuggestions", js.Array(value :_*))
+    inline def setPropertyNameSuggestionsVarargs(value: PropertyNameSuggestion*): Self = StObject.set(x, "PropertyNameSuggestions", js.Array(value*))
   }
 }

@@ -32,15 +32,15 @@ trait BootstrapPopupControl
   
   def getContentHtml(): String = js.native
   
-  def getContentIFrame(): js.Any = js.native
+  def getContentIFrame(): Any = js.native
   
-  def getContentIFrameWindow(): js.Any = js.native
+  def getContentIFrameWindow(): Any = js.native
   
   def getContentUrl(): String = js.native
   
   def getContentWidth(): Double = js.native
   
-  def getCurrentPopupElement(): js.Any = js.native
+  def getCurrentPopupElement(): Any = js.native
   
   def getCurrentPopupElementIndex(): Double = js.native
   
@@ -60,7 +60,7 @@ trait BootstrapPopupControl
   
   def getPinned(): Boolean = js.native
   
-  def getPopUpReasonMouseEvent(): js.Any = js.native
+  def getPopUpReasonMouseEvent(): Any = js.native
   
   def getWindow(index: Double): BootstrapPopupWindow | Null = js.native
   
@@ -72,7 +72,7 @@ trait BootstrapPopupControl
   
   def getWindowContentHtml(window: BootstrapPopupWindow): String = js.native
   
-  def getWindowContentIFrame(window: BootstrapPopupWindow): js.Any = js.native
+  def getWindowContentIFrame(window: BootstrapPopupWindow): Any = js.native
   
   def getWindowContentUrl(window: BootstrapPopupWindow): String = js.native
   
@@ -80,7 +80,7 @@ trait BootstrapPopupControl
   
   def getWindowCount(): Double = js.native
   
-  def getWindowCurrentPopupElement(window: BootstrapPopupWindow): js.Any = js.native
+  def getWindowCurrentPopupElement(window: BootstrapPopupWindow): Any = js.native
   
   def getWindowCurrentPopupElementIndex(window: BootstrapPopupWindow): Double = js.native
   
@@ -90,7 +90,7 @@ trait BootstrapPopupControl
   
   def getWindowPinned(window: BootstrapPopupWindow): Boolean = js.native
   
-  def getWindowPopUpReasonMouseEvent(window: BootstrapPopupWindow): js.Any = js.native
+  def getWindowPopUpReasonMouseEvent(window: BootstrapPopupWindow): Any = js.native
   
   def getWindowWidth(window: BootstrapPopupWindow): Double = js.native
   
@@ -302,8 +302,8 @@ trait BootstrapPopupControl
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[PopupWindowEventArgs], Unit]
   ): this.type = js.native
   
-  def performCallback(data: js.Any): js.Promise[Unit] = js.native
-  def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  def performCallback(data: Any): js.Promise[Unit] = js.native
+  def performCallback(data: Any, onSuccess: js.Function0[Unit]): Unit = js.native
   
   def refreshContentUrl(): Unit = js.native
   
@@ -387,7 +387,7 @@ trait BootstrapPopupControl
   
   def show(): Unit = js.native
   
-  def showAtElement(htmlElement: js.Any): Unit = js.native
+  def showAtElement(htmlElement: Any): Unit = js.native
   
   def showAtElementByID(id: String): Unit = js.native
   
@@ -397,7 +397,7 @@ trait BootstrapPopupControl
   def showWindow(window: BootstrapPopupWindow, popupElementIndex: Double): Unit = js.native
   
   // tslint:disable-line:unified-signatures
-  def showWindowAtElement(window: BootstrapPopupWindow, htmlElement: js.Any): Unit = js.native
+  def showWindowAtElement(window: BootstrapPopupWindow, htmlElement: Any): Unit = js.native
   
   def showWindowAtElementByID(window: BootstrapPopupWindow, id: String): Unit = js.native
   
@@ -407,11 +407,11 @@ trait BootstrapPopupControl
   
   def updatePosition(): Unit = js.native
   
-  def updatePositionAtElement(htmlElement: js.Any): Unit = js.native
+  def updatePositionAtElement(htmlElement: Any): Unit = js.native
   
   def updateWindowPosition(window: BootstrapPopupWindow): Unit = js.native
   
-  def updateWindowPositionAtElement(window: BootstrapPopupWindow, htmlElement: js.Any): Unit = js.native
+  def updateWindowPositionAtElement(window: BootstrapPopupWindow, htmlElement: Any): Unit = js.native
   
   def windowStretchVertically(window: BootstrapPopupWindow): Unit = js.native
 }

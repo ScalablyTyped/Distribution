@@ -25,7 +25,7 @@ object ListExportsResponse {
     
     inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
-    inline def setExportsVarargs(value: Export*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    inline def setExportsVarargs(value: Export*): Self = StObject.set(x, "exports", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

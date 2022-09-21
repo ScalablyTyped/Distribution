@@ -6,7 +6,6 @@ import typings.nodePushnotifications.anon.Address
 import typings.nodePushnotifications.anon.Clientid
 import typings.nodePushnotifications.anon.Id
 import typings.nodePushnotifications.anon.Options
-import typings.std.Error
 import typings.webPush.mod.PushSubscription
 import typings.webPush.mod.RequestOptions
 import org.scalablytyped.runtime.StObject
@@ -17,13 +16,13 @@ object mod {
   
   @JSImport("node-pushnotifications", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PushNotifications {
     def this(settings: Settings) = this()
   }
   
-  type Callback = js.Function2[/* err */ js.Any, /* result */ js.Any, Unit]
+  type Callback = js.Function2[/* err */ Any, /* result */ Any, Unit]
   
   trait Data extends StObject {
     
@@ -216,7 +215,7 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -292,7 +291,7 @@ object mod {
   
   trait Message extends StObject {
     
-    var error: js.UndefOr[Error | Null] = js.undefined
+    var error: js.UndefOr[js.Error | Null] = js.undefined
     
     var errorMsg: js.UndefOr[String] = js.undefined
     
@@ -311,7 +310,7 @@ object mod {
     
     extension [Self <: Message](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
       
@@ -373,7 +372,7 @@ object mod {
       
       inline def setMessage(value: js.Array[Message]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setMessageVarargs(value: Message*): Self = StObject.set(x, "message", js.Array(value :_*))
+      inline def setMessageVarargs(value: Message*): Self = StObject.set(x, "message", js.Array(value*))
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

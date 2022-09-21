@@ -1,8 +1,8 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.GamePads
-import typings.playcanvas.pc.Keyboard
-import typings.playcanvas.pc.Mouse
+import typings.playcanvas.mod.GamePads
+import typings.playcanvas.mod.Keyboard
+import typings.playcanvas.mod.Mouse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

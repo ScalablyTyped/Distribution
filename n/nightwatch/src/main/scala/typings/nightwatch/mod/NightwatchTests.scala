@@ -16,8 +16,16 @@ object NightwatchTests {
     __obj.asInstanceOf[typings.nightwatch.mod.NightwatchTestFunctions]
   }
   
-  inline def NightwatchTestHooks(): typings.nightwatch.mod.NightwatchTestHooks = {
-    val __obj = js.Dynamic.literal()
+  inline def NightwatchTestHooks(
+    afterTestCase: Any => js.Promise[Unit],
+    afterTestSuite: Any => js.Promise[Unit],
+    beforeTestCase: Any => js.Promise[Unit],
+    beforeTestSuite: Any => js.Promise[Unit],
+    onBrowserNavigate: Any => js.Promise[Unit],
+    onBrowserQuit: Any => js.Promise[Unit],
+    reporter: (Any, Any) => Unit
+  ): typings.nightwatch.mod.NightwatchTestHooks = {
+    val __obj = js.Dynamic.literal(afterTestCase = js.Any.fromFunction1(afterTestCase), afterTestSuite = js.Any.fromFunction1(afterTestSuite), beforeTestCase = js.Any.fromFunction1(beforeTestCase), beforeTestSuite = js.Any.fromFunction1(beforeTestSuite), onBrowserNavigate = js.Any.fromFunction1(onBrowserNavigate), onBrowserQuit = js.Any.fromFunction1(onBrowserQuit), reporter = js.Any.fromFunction2(reporter))
     __obj.asInstanceOf[typings.nightwatch.mod.NightwatchTestHooks]
   }
 }

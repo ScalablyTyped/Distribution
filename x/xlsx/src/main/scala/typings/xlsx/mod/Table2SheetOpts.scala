@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Table2SheetOpts
   extends StObject
      with CommonOptions
-     with DateNFOption {
+     with DateNFOption
+     with OriginOption
+     with SheetOption {
   
   /** If true, hidden rows and cells will not be parsed */
   var display: js.UndefOr[Boolean] = js.undefined

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class SecretsManager ()
+open class SecretsManager ()
   extends typings.awsSdk.mod.SecretsManager {
   def this(options: ClientConfiguration) = this()
 }

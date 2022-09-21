@@ -12,7 +12,7 @@ object fetchMod {
   
   @JSImport("nodegit/fetch", "Fetch")
   @js.native
-  class Fetch () extends StObject
+  open class Fetch () extends StObject
   /* static members */
   object Fetch {
     

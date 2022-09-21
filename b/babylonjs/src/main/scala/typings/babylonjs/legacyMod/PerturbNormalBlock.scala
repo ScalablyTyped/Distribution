@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "PerturbNormalBlock")
 @js.native
-class PerturbNormalBlock protected ()
+open class PerturbNormalBlock protected ()
   extends typings.babylonjs.indexMod.PerturbNormalBlock {
   /**
     * Create a new PerturbNormalBlock

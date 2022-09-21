@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Logger extends StObject {
   
-  def debug(params: js.Any*): Unit
+  def debug(params: Any*): Unit
   
-  def error(params: js.Any*): Unit
+  def error(params: Any*): Unit
   
-  def fatal(params: js.Any*): Unit
+  def fatal(params: Any*): Unit
   
-  def info(params: js.Any*): Unit
+  def info(params: Any*): Unit
   
-  def warn(params: js.Any*): Unit
+  def warn(params: Any*): Unit
 }
 object Logger {
   
   inline def apply(
-    debug: /* repeated */ js.Any => Unit,
-    error: /* repeated */ js.Any => Unit,
-    fatal: /* repeated */ js.Any => Unit,
-    info: /* repeated */ js.Any => Unit,
-    warn: /* repeated */ js.Any => Unit
+    debug: /* repeated */ Any => Unit,
+    error: /* repeated */ Any => Unit,
+    fatal: /* repeated */ Any => Unit,
+    info: /* repeated */ Any => Unit,
+    warn: /* repeated */ Any => Unit
   ): Logger = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), fatal = js.Any.fromFunction1(fatal), info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
     __obj.asInstanceOf[Logger]
@@ -31,14 +31,14 @@ object Logger {
   
   extension [Self <: Logger](x: Self) {
     
-    inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    inline def setFatal(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
+    inline def setFatal(value: /* repeated */ Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
     
-    inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: /* repeated */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

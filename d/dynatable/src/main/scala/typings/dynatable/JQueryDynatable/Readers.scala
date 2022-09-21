@@ -21,7 +21,7 @@ trait Readers extends StObject {
     *    return $(cell).html();
     * };
     */
-  var _attributeReader: js.UndefOr[js.Function2[/* cell */ Element, /* record */ js.Any, js.Any]] = js.undefined
+  var _attributeReader: js.UndefOr[js.Function2[/* cell */ Element, /* record */ Any, Any]] = js.undefined
   
   /**
     * Function that interprets the row into data
@@ -38,9 +38,7 @@ trait Readers extends StObject {
     *     //...
     * };
     */
-  var _rowReader: js.UndefOr[
-    js.Function3[/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any, js.Any]
-  ] = js.undefined
+  var _rowReader: js.UndefOr[js.Function3[/* index */ Double, /* thisRef */ Any, /* record */ Any, Any]] = js.undefined
 }
 object Readers {
   
@@ -51,11 +49,11 @@ object Readers {
   
   extension [Self <: Readers](x: Self) {
     
-    inline def set_attributeReader(value: (/* cell */ Element, /* record */ js.Any) => js.Any): Self = StObject.set(x, "_attributeReader", js.Any.fromFunction2(value))
+    inline def set_attributeReader(value: (/* cell */ Element, /* record */ Any) => Any): Self = StObject.set(x, "_attributeReader", js.Any.fromFunction2(value))
     
     inline def set_attributeReaderUndefined: Self = StObject.set(x, "_attributeReader", js.undefined)
     
-    inline def set_rowReader(value: (/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any) => js.Any): Self = StObject.set(x, "_rowReader", js.Any.fromFunction3(value))
+    inline def set_rowReader(value: (/* index */ Double, /* thisRef */ Any, /* record */ Any) => Any): Self = StObject.set(x, "_rowReader", js.Any.fromFunction3(value))
     
     inline def set_rowReaderUndefined: Self = StObject.set(x, "_rowReader", js.undefined)
   }

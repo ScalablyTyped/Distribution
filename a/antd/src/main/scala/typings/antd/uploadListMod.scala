@@ -12,10 +12,10 @@ object uploadListMod extends Shortcut {
   
   @JSImport("antd/lib/upload/UploadList", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[UploadListProps[js.Any] & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[UploadListProps[Any] & RefAttributes[Any]] = js.native
   
-  type _To = ForwardRefExoticComponent[UploadListProps[js.Any] & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[UploadListProps[Any] & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `uploadListMod.foo` */
-  override def _to: ForwardRefExoticComponent[UploadListProps[js.Any] & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[UploadListProps[Any] & RefAttributes[Any]] = default
 }

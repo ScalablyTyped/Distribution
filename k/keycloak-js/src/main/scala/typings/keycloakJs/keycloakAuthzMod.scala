@@ -1,53 +1,63 @@
 package typings.keycloakJs
 
 import typings.keycloakJs.anon.Rptendpoint
-import typings.keycloakJs.mod.KeycloakInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keycloakAuthzMod {
   
-  /**
-    * Creates a new Keycloak client instance.
-    * @param config Path to a JSON config file or a plain config object.
-    */
-  inline def apply(keycloak: KeycloakInstance): KeycloakAuthorizationInstance = ^.asInstanceOf[js.Dynamic].apply(keycloak.asInstanceOf[js.Any]).asInstanceOf[KeycloakAuthorizationInstance]
-  
-  @JSImport("keycloak-js/dist/keycloak-authz", JSImport.Namespace)
+  @JSImport("keycloak-js/dist/keycloak-authz", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
+  open class default protected ()
+    extends StObject
+       with KeycloakAuthorization {
+    /**
+    	 * Creates a new Keycloak client instance.
+    	 * @param config Path to a JSON config file or a plain config object.
+    	 */
+    def this(keycloak: typings.keycloakJs.mod.default) = this()
+  }
+  object default {
+    
+    /**
+      * @deprecated Construct a KeycloakAuthorization instance using the `new` keyword instead.
+      */
+    @JSImport("keycloak-js/dist/keycloak-authz", JSImport.Default)
+    @js.native
+    def apply(keycloak: typings.keycloakJs.mod.default): KeycloakAuthorization = js.native
+  }
   
   trait AuthorizationRequest extends StObject {
     
     /**
-      * Defines whether or not this authorization request should include the current RPT. If set to true, the RPT will
-      * be sent and permissions in the current RPT will be included in the new RPT. Otherwise, only the permissions referenced in this
-      * authorization request will be granted in the new RPT.
-      */
+    	 * Defines whether or not this authorization request should include the current RPT. If set to true, the RPT will
+    	 * be sent and permissions in the current RPT will be included in the new RPT. Otherwise, only the permissions referenced in this
+    	 * authorization request will be granted in the new RPT.
+    	 */
     var incrementalAuthorization: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Defines additional information about this authorization request in order to specify how it should be processed
-      * by the server.
-      */
+    	 * Defines additional information about this authorization request in order to specify how it should be processed
+    	 * by the server.
+    	 */
     var metadata: js.UndefOr[AuthorizationRequestMetadata] = js.undefined
     
     /**
-      * An array of objects representing the resource and scopes.
-      */
+    	 * An array of objects representing the resource and scopes.
+    	 */
     var permissions: js.UndefOr[js.Array[ResourcePermission]] = js.undefined
     
     /**
-      * A boolean value indicating whether the server should create permission requests to the resources
-      * and scopes referenced by a permission ticket. This parameter will only take effect when used together
-      * with the ticket parameter as part of a UMA authorization process.
-      */
+    	 * A boolean value indicating whether the server should create permission requests to the resources
+    	 * and scopes referenced by a permission ticket. This parameter will only take effect when used together
+    	 * with the ticket parameter as part of a UMA authorization process.
+    	 */
     var submitRequest: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * A permission ticket obtained from a resource server when using UMA authorization protocol.
-      */
+    	 * A permission ticket obtained from a resource server when using UMA authorization protocol.
+    	 */
     var ticket: js.UndefOr[String] = js.undefined
   }
   object AuthorizationRequest {
@@ -71,7 +81,7 @@ object keycloakAuthzMod {
       
       inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       
-      inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "permissions", js.Array(value*))
       
       inline def setSubmitRequest(value: Boolean): Self = StObject.set(x, "submitRequest", value.asInstanceOf[js.Any])
       
@@ -86,15 +96,15 @@ object keycloakAuthzMod {
   trait AuthorizationRequestMetadata extends StObject {
     
     /**
-      * A boolean value indicating to the server if resource names should be included in the RPT’s permissions.
-      * If false, only the resource identifier is included.
-      */
-    var responseIncludeResourceName: js.UndefOr[js.Any] = js.undefined
+    	 * A boolean value indicating to the server if resource names should be included in the RPT’s permissions.
+    	 * If false, only the resource identifier is included.
+    	 */
+    var responseIncludeResourceName: js.UndefOr[Any] = js.undefined
     
     /**
-      * An integer N that defines a limit for the amount of permissions an RPT can have. When used together with
-      * rpt parameter, only the last N requested permissions will be kept in the RPT.
-      */
+    	 * An integer N that defines a limit for the amount of permissions an RPT can have. When used together with
+    	 * rpt parameter, only the last N requested permissions will be kept in the RPT.
+    	 */
     var response_permissions_limit: js.UndefOr[Double] = js.undefined
   }
   object AuthorizationRequestMetadata {
@@ -106,7 +116,7 @@ object keycloakAuthzMod {
     
     extension [Self <: AuthorizationRequestMetadata](x: Self) {
       
-      inline def setResponseIncludeResourceName(value: js.Any): Self = StObject.set(x, "responseIncludeResourceName", value.asInstanceOf[js.Any])
+      inline def setResponseIncludeResourceName(value: Any): Self = StObject.set(x, "responseIncludeResourceName", value.asInstanceOf[js.Any])
       
       inline def setResponseIncludeResourceNameUndefined: Self = StObject.set(x, "responseIncludeResourceName", js.undefined)
       
@@ -117,35 +127,37 @@ object keycloakAuthzMod {
   }
   
   @js.native
-  trait KeycloakAuthorizationInstance extends StObject {
+  trait KeycloakAuthorization extends StObject {
     
     /**
-      * This method enables client applications to better integrate with resource servers protected by a Keycloak
-      * policy enforcer using UMA protocol.
-      *
-      * The authorization request must be provided with a ticket.
-      *
-      * @param authorizationRequest An AuthorizationRequest instance with a valid permission ticket set.
-      * @returns A promise to set functions to be invoked on grant, deny or error.
-      */
+    	 * This method enables client applications to better integrate with resource servers protected by a Keycloak
+    	 * policy enforcer using UMA protocol.
+    	 *
+    	 * The authorization request must be provided with a ticket.
+    	 *
+    	 * @param authorizationRequest An AuthorizationRequest instance with a valid permission ticket set.
+    	 * @returns A promise to set functions to be invoked on grant, deny or error.
+    	 */
     def authorize(authorizationRequest: AuthorizationRequest): KeycloakAuthorizationPromise = js.native
     
     var config: Rptendpoint = js.native
     
     /**
-    		 * Obtains all entitlements from a Keycloak server based on a given resourceServerId.
-      *
-      * @param resourceServerId The id (client id) of the resource server to obtain permissions from.
-      * @param authorizationRequest An AuthorizationRequest instance.
-      * @returns A promise to set functions to be invoked on grant, deny or error.
-    		 */
+    	 * Obtains all entitlements from a Keycloak server based on a given resourceServerId.
+    	 *
+    	 * @param resourceServerId The id (client id) of the resource server to obtain permissions from.
+    	 * @param authorizationRequest An AuthorizationRequest instance.
+    	 * @returns A promise to set functions to be invoked on grant, deny or error.
+    	 */
     def entitlement(resourceServerId: String): KeycloakAuthorizationPromise = js.native
     def entitlement(resourceServerId: String, authorizationRequest: AuthorizationRequest): KeycloakAuthorizationPromise = js.native
     
     def init(): Unit = js.native
     
-    var rpt: js.Any = js.native
+    var rpt: Any = js.native
   }
+  
+  type KeycloakAuthorizationInstance = KeycloakAuthorization
   
   trait KeycloakAuthorizationPromise extends StObject {
     
@@ -172,13 +184,13 @@ object keycloakAuthzMod {
   trait ResourcePermission extends StObject {
     
     /**
-      * The id or name of a resource.
-      */
+    	 * The id or name of a resource.
+    	 */
     var id: String
     
     /**
-      * An array of strings where each value is the name of a scope associated with the resource.
-      */
+    	 * An array of strings where each value is the name of a scope associated with the resource.
+    	 */
     var scopes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ResourcePermission {
@@ -196,7 +208,7 @@ object keycloakAuthzMod {
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     }
   }
 }

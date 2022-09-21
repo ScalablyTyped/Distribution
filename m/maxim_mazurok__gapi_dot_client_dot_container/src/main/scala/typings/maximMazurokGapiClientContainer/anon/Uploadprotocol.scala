@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientContainer.anon
 
+import typings.maximMazurokGapiClientContainer.gapi.client.container.CreateNodePoolRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ trait Uploadprotocol extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field. */
+  /** Deprecated. The name of the cluster. This field has been deprecated and replaced by the parent field. */
   var clusterId: String
   
   /** Selector specifying which fields to include in a partial response. */
@@ -35,13 +36,16 @@ trait Uploadprotocol extends StObject {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the
-    * name field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been
+    * deprecated and replaced by the parent field.
     */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: CreateNodePoolRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,14 +55,14 @@ trait Uploadprotocol extends StObject {
   
   /**
     * Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and
-    * replaced by the name field.
+    * replaced by the parent field.
     */
   var zone: String
 }
 object Uploadprotocol {
   
-  inline def apply(clusterId: String, projectId: String, zone: String): Uploadprotocol = {
-    val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
+  inline def apply(clusterId: String, projectId: String, resource: CreateNodePoolRequest, zone: String): Uploadprotocol = {
+    val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uploadprotocol]
   }
   
@@ -103,6 +107,8 @@ object Uploadprotocol {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: CreateNodePoolRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

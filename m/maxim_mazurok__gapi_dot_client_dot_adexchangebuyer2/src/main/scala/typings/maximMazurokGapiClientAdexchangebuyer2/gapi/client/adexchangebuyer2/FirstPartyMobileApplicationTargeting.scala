@@ -25,12 +25,12 @@ object FirstPartyMobileApplicationTargeting {
     
     inline def setExcludedAppIdsUndefined: Self = StObject.set(x, "excludedAppIds", js.undefined)
     
-    inline def setExcludedAppIdsVarargs(value: String*): Self = StObject.set(x, "excludedAppIds", js.Array(value :_*))
+    inline def setExcludedAppIdsVarargs(value: String*): Self = StObject.set(x, "excludedAppIds", js.Array(value*))
     
     inline def setTargetedAppIds(value: js.Array[String]): Self = StObject.set(x, "targetedAppIds", value.asInstanceOf[js.Any])
     
     inline def setTargetedAppIdsUndefined: Self = StObject.set(x, "targetedAppIds", js.undefined)
     
-    inline def setTargetedAppIdsVarargs(value: String*): Self = StObject.set(x, "targetedAppIds", js.Array(value :_*))
+    inline def setTargetedAppIdsVarargs(value: String*): Self = StObject.set(x, "targetedAppIds", js.Array(value*))
   }
 }

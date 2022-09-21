@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Queue
   extends StObject
-     with Instantiable1[/* env */ js.Any, js.Any] {
+     with Instantiable1[/* env */ scala.Any, scala.Any] {
   
   var abort: Boolean = js.native
   
-  def add(block: js.Any): Unit = js.native
-  def add(block: js.Any, ensure: Boolean): Unit = js.native
+  def add(block: scala.Any): Unit = js.native
+  def add(block: scala.Any, ensure: Boolean): Unit = js.native
   
   def addBefore(block: Block): Unit = js.native
   def addBefore(block: Block, ensure: Boolean): Unit = js.native
@@ -26,8 +26,8 @@ trait Queue
   
   var index: Double = js.native
   
-  def insertNext(block: js.Any): Unit = js.native
-  def insertNext(block: js.Any, ensure: Boolean): Unit = js.native
+  def insertNext(block: scala.Any): Unit = js.native
+  def insertNext(block: scala.Any, ensure: Boolean): Unit = js.native
   
   def isRunning(): Boolean = js.native
   

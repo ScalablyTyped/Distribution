@@ -25,9 +25,9 @@ object mod {
     /* "TOJSON_ONLY" */ val TOJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.TOJSON_ONLY & String = js.native
   }
   
-  inline def JsonProperty(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[js.Any]
-  inline def JsonProperty(options: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def JsonProperty(options: JsonPropertyOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def JsonProperty(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[Any]
+  inline def JsonProperty(options: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def JsonProperty(options: JsonPropertyOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@hyperloris/tyson", "TypeAdapter")
   @js.native
@@ -42,14 +42,14 @@ object mod {
     * @param {TysonBuilder} [builder]
     * @memberof Tyson
     */
-  class Tyson () extends StObject {
+  open class Tyson () extends StObject {
     def this(builder: typings.hyperlorisTyson.tysonBuilderMod.TysonBuilder) = this()
     
-    /* private */ var _factories: js.Any = js.native
+    /* private */ var _factories: Any = js.native
     
-    /* private */ var _serializeNulls: js.Any = js.native
+    /* private */ var _serializeNulls: Any = js.native
     
-    /* private */ var _typeTokenCache: js.Any = js.native
+    /* private */ var _typeTokenCache: Any = js.native
     
     /**
       * This method deserializes the specified JSON into an object|array of the specified type.
@@ -60,8 +60,8 @@ object mod {
       * @returns an object|array of type T. Returns undefined if json or type are undefined.
       * @memberof Tyson
       */
-    def fromJson[T](json: js.Array[js.Any], `type`: js.Array[js.Any]): js.Array[js.Any] = js.native
-    def fromJson[T](json: js.Array[js.Any], `type`: ClassType[T]): js.Array[T] = js.native
+    def fromJson[T](json: js.Array[Any], `type`: js.Array[Any]): js.Array[Any] = js.native
+    def fromJson[T](json: js.Array[Any], `type`: ClassType[T]): js.Array[T] = js.native
     def fromJson[T](json: js.Object, `type`: ClassType[T]): T = js.native
     
     /**
@@ -79,7 +79,7 @@ object mod {
     
     val serializeNulls: Boolean = js.native
     
-    def toJson(src: js.Array[js.Any], `type`: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def toJson(src: js.Array[Any], `type`: js.Array[Any]): js.Array[Any] = js.native
     /**
       * This method serializes the specified object, into its equivalent JSON representation.
       *
@@ -88,13 +88,13 @@ object mod {
       * @returns JSON representation of src
       * @memberof Tyson
       */
-    def toJson(src: js.Array[js.Any], `type`: ClassType[js.Any]): js.Array[js.Any] = js.native
-    def toJson(src: js.Object): js.Any = js.native
-    def toJson(src: js.Object, `type`: ClassType[js.Any]): js.Any = js.native
+    def toJson(src: js.Array[Any], `type`: ClassType[Any]): js.Array[Any] = js.native
+    def toJson(src: js.Object): Any = js.native
+    def toJson(src: js.Object, `type`: ClassType[Any]): Any = js.native
   }
   
   @JSImport("@hyperloris/tyson", "TysonBuilder")
   @js.native
-  class TysonBuilder ()
+  open class TysonBuilder ()
     extends typings.hyperlorisTyson.tysonBuilderMod.TysonBuilder
 }

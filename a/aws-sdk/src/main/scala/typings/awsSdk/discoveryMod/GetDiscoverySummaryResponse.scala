@@ -11,6 +11,8 @@ trait GetDiscoverySummaryResponse extends StObject {
     */
   var agentSummary: js.UndefOr[CustomerAgentInfo] = js.undefined
   
+  var agentlessCollectorSummary: js.UndefOr[CustomerAgentlessCollectorInfo] = js.undefined
+  
   /**
     * The number of applications discovered.
     */
@@ -20,6 +22,11 @@ trait GetDiscoverySummaryResponse extends StObject {
     * Details about discovered connectors, including connector status and health.
     */
   var connectorSummary: js.UndefOr[CustomerConnectorInfo] = js.undefined
+  
+  /**
+    *  Details about Migration Evaluator collectors, including collector status and health. 
+    */
+  var meCollectorSummary: js.UndefOr[CustomerMeCollectorInfo] = js.undefined
   
   /**
     * The number of servers discovered.
@@ -49,6 +56,10 @@ object GetDiscoverySummaryResponse {
     
     inline def setAgentSummaryUndefined: Self = StObject.set(x, "agentSummary", js.undefined)
     
+    inline def setAgentlessCollectorSummary(value: CustomerAgentlessCollectorInfo): Self = StObject.set(x, "agentlessCollectorSummary", value.asInstanceOf[js.Any])
+    
+    inline def setAgentlessCollectorSummaryUndefined: Self = StObject.set(x, "agentlessCollectorSummary", js.undefined)
+    
     inline def setApplications(value: Long): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
     inline def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
@@ -56,6 +67,10 @@ object GetDiscoverySummaryResponse {
     inline def setConnectorSummary(value: CustomerConnectorInfo): Self = StObject.set(x, "connectorSummary", value.asInstanceOf[js.Any])
     
     inline def setConnectorSummaryUndefined: Self = StObject.set(x, "connectorSummary", js.undefined)
+    
+    inline def setMeCollectorSummary(value: CustomerMeCollectorInfo): Self = StObject.set(x, "meCollectorSummary", value.asInstanceOf[js.Any])
+    
+    inline def setMeCollectorSummaryUndefined: Self = StObject.set(x, "meCollectorSummary", js.undefined)
     
     inline def setServers(value: Long): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     

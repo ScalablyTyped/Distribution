@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "CustomEventRegister")
 @js.native
-class CustomEventRegister ()
+open class CustomEventRegister ()
   extends typings.wonderJs.customEventRegisterMod.CustomEventRegister
 /* static members */
 object CustomEventRegister {
@@ -15,5 +15,5 @@ object CustomEventRegister {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+  inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
 }

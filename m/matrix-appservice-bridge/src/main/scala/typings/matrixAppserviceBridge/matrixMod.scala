@@ -9,7 +9,7 @@ object matrixMod {
   
   @JSImport("matrix-appservice-bridge/lib/models/rooms/matrix", "MatrixRoom")
   @js.native
-  class MatrixRoom protected () extends StObject {
+  open class MatrixRoom protected () extends StObject {
     /**
       * Create a matrix room.
       * @param roomId The room ID
@@ -18,7 +18,7 @@ object matrixMod {
     def this(roomId: String) = this()
     def this(roomId: String, data: MatrixRoomData) = this()
     
-    /* private */ var _extras: js.Any = js.native
+    /* private */ var _extras: Any = js.native
     
     /**
       * Set data about this room from a serialized data object.
@@ -26,7 +26,7 @@ object matrixMod {
       */
     def deserialize(data: MatrixRoomData): Unit = js.native
     
-    def extras: Record[String, js.Any] = js.native
+    def extras: Record[String, Any] = js.native
     
     /**
       * Get the data value for the given key.
@@ -58,14 +58,14 @@ object matrixMod {
       * @param val The data value. This value should be serializable via
       * <code>JSON.stringify(data)</code>.
       */
-    def set(key: String, `val`: js.Any): Unit = js.native
+    def set(key: String, `val`: Any): Unit = js.native
     
     var topic: js.UndefOr[String] = js.native
   }
   
   trait MatrixRoomData extends StObject {
     
-    var extras: Record[String, js.Any]
+    var extras: Record[String, Any]
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -73,14 +73,14 @@ object matrixMod {
   }
   object MatrixRoomData {
     
-    inline def apply(extras: Record[String, js.Any]): MatrixRoomData = {
+    inline def apply(extras: Record[String, Any]): MatrixRoomData = {
       val __obj = js.Dynamic.literal(extras = extras.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatrixRoomData]
     }
     
     extension [Self <: MatrixRoomData](x: Self) {
       
-      inline def setExtras(value: Record[String, js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      inline def setExtras(value: Record[String, Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

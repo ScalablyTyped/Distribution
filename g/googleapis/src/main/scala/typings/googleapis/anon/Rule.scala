@@ -21,6 +21,6 @@ object Rule {
     
     inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    inline def setRuleVarargs(value: Action*): Self = StObject.set(x, "rule", js.Array(value :_*))
+    inline def setRuleVarargs(value: Action*): Self = StObject.set(x, "rule", js.Array(value*))
   }
 }

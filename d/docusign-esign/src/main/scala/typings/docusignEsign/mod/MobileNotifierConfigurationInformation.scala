@@ -21,6 +21,6 @@ object MobileNotifierConfigurationInformation {
     
     inline def setMobileNotifierConfigurationsUndefined: Self = StObject.set(x, "mobileNotifierConfigurations", js.undefined)
     
-    inline def setMobileNotifierConfigurationsVarargs(value: MobileNotifierConfiguration*): Self = StObject.set(x, "mobileNotifierConfigurations", js.Array(value :_*))
+    inline def setMobileNotifierConfigurationsVarargs(value: MobileNotifierConfiguration*): Self = StObject.set(x, "mobileNotifierConfigurations", js.Array(value*))
   }
 }

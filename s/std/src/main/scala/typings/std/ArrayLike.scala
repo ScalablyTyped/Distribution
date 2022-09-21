@@ -5,10 +5,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// non-object or non-thenable
 trait ArrayLike[T]
   extends StObject
-     with /* n */ NumberDictionary[T] {
+     with /* standard es5 */
+/* n */ NumberDictionary[T] {
   
+  /* standard es5 */
   val length: Double
 }
 object ArrayLike {

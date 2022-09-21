@@ -16,7 +16,7 @@ object invitationMod {
   
   @JSImport("sip.js/lib/api/invitation", "Invitation")
   @js.native
-  class Invitation protected () extends Session {
+  open class Invitation protected () extends Session {
     /** @internal */
     def this(userAgent: UserAgent, incomingInviteRequest: IncomingInviteRequest) = this()
     
@@ -47,26 +47,10 @@ object invitationMod {
     /**
       * If true, a first provisional response after the 100 Trying
       * will be sent automatically. This is false it the UAC required
-      * reliable provisional responses (100rel in Require header),
-      * otherwise it is true. The provisional is sent by calling
-      * `progress()` without any options.
-      *
-      * FIXME: TODO: It seems reasonable that the ISC user should
-      * be able to optionally disable this behavior. As the provisional
-      * is sent prior to the "invite" event being emitted, it's a known
-      * issue that the ISC user cannot register listeners or do any other
-      * setup prior to the call to `progress()`. As an example why this is
-      * an issue, setting `ua.configuration.rel100` to REQUIRED will result
-      * in an attempt by `progress()` to send a 183 with SDP produced by
-      * calling `getDescription()` on a session description handler, but
-      * the ISC user cannot perform any potentially required session description
-      * handler initialization (thus preventing the utilization of setting
-      * `ua.configuration.rel100` to REQUIRED). That begs the question of
-      * why this behavior is disabled when the UAC requires 100rel but not
-      * when the UAS requires 100rel? But ignoring that, it's just one example
-      * of a class of cases where the ISC user needs to do something prior
-      * to the first call to `progress()` and is unable to do so.
-      * @internal
+      * reliable provisional responses (100rel in Require header) or
+      * the user agent configuration has specified to not send an
+      * initial response, otherwise it is true. The provisional is sent by
+      * calling `progress()` without any options.
       */
     def autoSendAnInitialProvisionalResponse: Boolean = js.native
     
@@ -76,15 +60,15 @@ object invitationMod {
     def body: js.UndefOr[String] = js.native
     
     /** True if dispose() has been called. */
-    /* private */ var disposed: js.Any = js.native
+    /* private */ var disposed: Any = js.native
     
     /** INVITE will be rejected if not accepted within a certain period time. */
-    /* private */ var expiresTimer: js.Any = js.native
+    /* private */ var expiresTimer: Any = js.native
     
     /**
       * Helper function to handle offer/answer in a PRACK.
       */
-    /* private */ var handlePrackOfferAnswer: js.Any = js.native
+    /* private */ var handlePrackOfferAnswer: Any = js.native
     
     /**
       * A handler for errors which occur while attempting to send 1xx and 2xx responses.
@@ -93,12 +77,12 @@ object invitationMod {
       * for all errors, there are a handful of common exceptions we pay some extra attention to.
       * @param error - The error which occurred.
       */
-    /* private */ var handleResponseError: js.Any = js.native
+    /* private */ var handleResponseError: Any = js.native
     
-    /* private */ var incomingInviteRequest: js.Any = js.native
+    /* private */ var incomingInviteRequest: Any = js.native
     
     /** True if this Session has been Terminated due to a CANCEL request. */
-    /* private */ var isCanceled: js.Any = js.native
+    /* private */ var isCanceled: Any = js.native
     
     /**
       * The identity of the local user.
@@ -110,19 +94,19 @@ object invitationMod {
       * Callback for when ACK for a 2xx response is never received.
       * @param session - Session the ACK never arrived for.
       */
-    /* private */ var onAckTimeout: js.Any = js.native
+    /* private */ var onAckTimeout: Any = js.native
     
     /**
       * Here we are resolving the promise which in turn will cause
       * the accept to proceed (it may still fail for other reasons, but...).
       */
-    /* private */ var prackArrived: js.Any = js.native
+    /* private */ var prackArrived: Any = js.native
     
     /**
       * Here we are rejecting the promise which in turn will cause
       * the accept to fail and the session to transition to "terminated".
       */
-    /* private */ var prackNeverArrived: js.Any = js.native
+    /* private */ var prackNeverArrived: Any = js.native
     
     /**
       * Indicate progress processing the invitation.
@@ -154,7 +138,7 @@ object invitationMod {
     def reject(options: InvitationRejectOptions): js.Promise[Unit] = js.native
     
     /** Are reliable provisional responses required or supported. */
-    /* private */ var rel100: js.Any = js.native
+    /* private */ var rel100: Any = js.native
     
     /**
       * The identity of the remote user.
@@ -168,45 +152,45 @@ object invitationMod {
     def request: IncomingRequestMessage = js.native
     
     /** The current RSeq header value. */
-    /* private */ var rseq: js.Any = js.native
+    /* private */ var rseq: Any = js.native
     
     /**
       * A version of `accept` which resolves a session when the 200 Ok response is sent.
       * @param options - Options bucket.
       */
-    /* private */ var sendAccept: js.Any = js.native
+    /* private */ var sendAccept: Any = js.native
     
     /**
       * A version of `progress` which resolves when the provisional response is sent.
       * @param options - Options bucket.
       */
-    /* private */ var sendProgress: js.Any = js.native
+    /* private */ var sendProgress: Any = js.native
     
     /**
       * A version of `progress` which resolves when the reliable provisional response is sent.
       * @param options - Options bucket.
       */
-    /* private */ var sendProgressReliable: js.Any = js.native
+    /* private */ var sendProgressReliable: Any = js.native
     
     /**
       * A version of `progress` which resolves when the reliable provisional response is acknowledged.
       * @param options - Options bucket.
       */
-    /* private */ var sendProgressReliableWaitForPrack: js.Any = js.native
+    /* private */ var sendProgressReliableWaitForPrack: Any = js.native
     
     /**
       * A version of `progress` which resolves when a 100 Trying provisional response is sent.
       */
-    /* private */ var sendProgressTrying: js.Any = js.native
+    /* private */ var sendProgressTrying: Any = js.native
     
     /**
       * A version of `progress` which resolves when the provisional response with sdp is sent.
       * @param options - Options bucket.
       */
-    /* private */ var sendProgressWithSDP: js.Any = js.native
+    /* private */ var sendProgressWithSDP: Any = js.native
     
     /** INVITE will be rejected if final response not sent in a certain period time. */
-    /* private */ var userNoAnswerTimer: js.Any = js.native
+    /* private */ var userNoAnswerTimer: Any = js.native
     
     /**
       * When attempting to accept the INVITE, an invitation waits
@@ -214,18 +198,18 @@ object invitationMod {
       * It will be waiting on this Promise to resolve which lets it know
       * the PRACK has arrived and it may proceed to send the 200 Ok.
       */
-    /* private */ var waitForArrivalOfPrack: js.Any = js.native
+    /* private */ var waitForArrivalOfPrack: Any = js.native
     
     /** True if waiting for a PRACK before sending a 200 Ok. */
-    /* private */ var waitingForPrack: js.Any = js.native
+    /* private */ var waitingForPrack: Any = js.native
     
     /** A Promise providing a defer when waiting for a PRACK. */
-    /* private */ var waitingForPrackPromise: js.Any = js.native
+    /* private */ var waitingForPrackPromise: Any = js.native
     
     /** Function to reject when PRACK never arrives. */
-    /* private */ var waitingForPrackReject: js.Any = js.native
+    /* private */ var waitingForPrackReject: Any = js.native
     
     /** Function to resolve when PRACK arrives. */
-    /* private */ var waitingForPrackResolve: js.Any = js.native
+    /* private */ var waitingForPrackResolve: Any = js.native
   }
 }

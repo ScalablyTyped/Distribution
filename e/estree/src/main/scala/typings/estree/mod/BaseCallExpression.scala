@@ -24,7 +24,7 @@ object BaseCallExpression {
     
     inline def setArguments(value: js.Array[Expression | SpreadElement]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: (Expression | SpreadElement)*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: (Expression | SpreadElement)*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setCallee(value: Expression | Super): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
   }

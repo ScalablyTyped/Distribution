@@ -11,17 +11,19 @@ trait ConnectedContext extends StObject {
     * Note that the connection is not guaranteed to be in a connected
     * state on click.
     */
-  var connectionProfile: IConnectionProfile
+  var connectionProfile: js.UndefOr[IConnectionProfile] = js.undefined
 }
 object ConnectedContext {
   
-  inline def apply(connectionProfile: IConnectionProfile): ConnectedContext = {
-    val __obj = js.Dynamic.literal(connectionProfile = connectionProfile.asInstanceOf[js.Any])
+  inline def apply(): ConnectedContext = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectedContext]
   }
   
   extension [Self <: ConnectedContext](x: Self) {
     
     inline def setConnectionProfile(value: IConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionProfileUndefined: Self = StObject.set(x, "connectionProfile", js.undefined)
   }
 }

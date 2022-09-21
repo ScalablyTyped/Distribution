@@ -8,5 +8,5 @@ object deleteMessageInputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/DeleteMessageInput", "DeleteMessageInput")
   @js.native
-  val DeleteMessageInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteMessageInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

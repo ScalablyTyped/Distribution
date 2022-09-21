@@ -1,5 +1,6 @@
 package typings.reactToastNotifications
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.reactToastNotifications.anon.Appearance
@@ -32,7 +33,7 @@ object mod {
   
   inline def useToasts(): typings.reactToastNotifications.anon.AddToast = ^.asInstanceOf[js.Dynamic].applyDynamic("useToasts")().asInstanceOf[typings.reactToastNotifications.anon.AddToast]
   
-  inline def withToastManager(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withToastManager")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def withToastManager(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withToastManager")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   type AddToast = js.Function3[
     /* content */ ReactNode, 
@@ -59,18 +60,22 @@ object mod {
     inline def warning: typings.reactToastNotifications.reactToastNotificationsStrings.warning = "warning".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.warning]
   }
   
-  trait Options extends StObject {
+  trait Options
+    extends StObject
+       with /* key */ StringDictionary[Any] {
     
-    var appearance: AppearanceTypes
+    var appearance: js.UndefOr[AppearanceTypes] = js.undefined
     
     var autoDismiss: js.UndefOr[Boolean] = js.undefined
+    
+    var id: js.UndefOr[String] = js.undefined
     
     var onDismiss: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.undefined
   }
   object Options {
     
-    inline def apply(appearance: AppearanceTypes): Options = {
-      val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any])
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
@@ -78,9 +83,15 @@ object mod {
       
       inline def setAppearance(value: AppearanceTypes): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
+      inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+      
       inline def setAutoDismiss(value: Boolean): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
       
       inline def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setOnDismiss(value: /* id */ String => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
@@ -114,7 +125,11 @@ object mod {
   
   type RemoveAllToasts = js.Function0[Unit]
   
-  type RemoveToast = js.Function2[/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]], Unit]
+  type RemoveToast = js.Function2[
+    /* id */ String, 
+    /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]], 
+    Unit
+  ]
   
   trait ToastConsumerContext extends StObject {
     
@@ -128,7 +143,7 @@ object mod {
     
     inline def apply(
       add: (/* content */ ReactNode, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit,
-      remove: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit,
+      remove: (/* id */ String, /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit,
       toasts: js.Array[Appearance]
     ): ToastConsumerContext = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), remove = js.Any.fromFunction2(remove), toasts = toasts.asInstanceOf[js.Any])
@@ -141,11 +156,11 @@ object mod {
         value: (/* content */ ReactNode, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
       ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
       
-      inline def setRemove(value: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (/* id */ String, /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
       inline def setToasts(value: js.Array[Appearance]): Self = StObject.set(x, "toasts", value.asInstanceOf[js.Any])
       
-      inline def setToastsVarargs(value: Appearance*): Self = StObject.set(x, "toasts", js.Array(value :_*))
+      inline def setToastsVarargs(value: Appearance*): Self = StObject.set(x, "toasts", js.Array(value*))
     }
   }
   
@@ -170,6 +185,8 @@ object mod {
     
     var children: ReactNode
     
+    var className: js.UndefOr[String] = js.undefined
+    
     var hasToasts: Boolean
     
     var placement: Placement
@@ -186,6 +203,10 @@ object mod {
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setHasToasts(value: Boolean): Self = StObject.set(x, "hasToasts", value.asInstanceOf[js.Any])
       
@@ -233,7 +254,11 @@ object mod {
     
     var components: js.UndefOr[Toast] = js.undefined
     
+    var newestOnTop: js.UndefOr[Boolean] = js.undefined
+    
     var placement: js.UndefOr[Placement] = js.undefined
+    
+    var portalTargetSelector: js.UndefOr[String] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
   }
@@ -262,9 +287,17 @@ object mod {
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
+      inline def setNewestOnTop(value: Boolean): Self = StObject.set(x, "newestOnTop", value.asInstanceOf[js.Any])
+      
+      inline def setNewestOnTopUndefined: Self = StObject.set(x, "newestOnTop", js.undefined)
+      
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setPortalTargetSelector(value: String): Self = StObject.set(x, "portalTargetSelector", value.asInstanceOf[js.Any])
+      
+      inline def setPortalTargetSelectorUndefined: Self = StObject.set(x, "portalTargetSelector", js.undefined)
       
       inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
@@ -294,18 +327,18 @@ object mod {
     extends StObject
        with Options {
     
-    var content: js.UndefOr[String] = js.undefined
+    var content: js.UndefOr[ReactNode] = js.undefined
   }
   object UpdateOptions {
     
-    inline def apply(appearance: AppearanceTypes): UpdateOptions = {
-      val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any])
+    inline def apply(): UpdateOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateOptions]
     }
     
     extension [Self <: UpdateOptions](x: Self) {
       
-      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     }
@@ -313,7 +346,7 @@ object mod {
   
   type UpdateToast = js.Function3[
     /* id */ String, 
-    /* options */ js.UndefOr[Options], 
+    /* options */ js.UndefOr[UpdateOptions], 
     /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]], 
     Unit
   ]

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "number-allocator" : "1.0.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "number-allocator" : "1.0.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

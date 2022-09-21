@@ -10,10 +10,10 @@ object bluetoothSearchingMod {
   
   @JSImport("material-ui/svg-icons/device/bluetooth-searching", JSImport.Default)
   @js.native
-  class default () extends DeviceBluetoothSearching
+  open class default () extends DeviceBluetoothSearching
   
   @JSImport("material-ui/svg-icons/device/bluetooth-searching", "DeviceBluetoothSearching")
   @js.native
-  class DeviceBluetoothSearching ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceBluetoothSearching ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

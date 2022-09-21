@@ -32,7 +32,7 @@ trait Debuggee extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Debuggee & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Debuggee & TopLevel[Any]
   ] = js.undefined
   
   /** Project the debuggee is associated with. Use project number or id when registering a Google Cloud Platform project. */
@@ -76,7 +76,7 @@ object Debuggee {
     
     inline def setExtSourceContextsUndefined: Self = StObject.set(x, "extSourceContexts", js.undefined)
     
-    inline def setExtSourceContextsVarargs(value: ExtendedSourceContext*): Self = StObject.set(x, "extSourceContexts", js.Array(value :_*))
+    inline def setExtSourceContextsVarargs(value: ExtendedSourceContext*): Self = StObject.set(x, "extSourceContexts", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -93,7 +93,7 @@ object Debuggee {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Debuggee & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Debuggee & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -106,7 +106,7 @@ object Debuggee {
     
     inline def setSourceContextsUndefined: Self = StObject.set(x, "sourceContexts", js.undefined)
     
-    inline def setSourceContextsVarargs(value: SourceContext*): Self = StObject.set(x, "sourceContexts", js.Array(value :_*))
+    inline def setSourceContextsVarargs(value: SourceContext*): Self = StObject.set(x, "sourceContexts", js.Array(value*))
     
     inline def setStatus(value: StatusMessage): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

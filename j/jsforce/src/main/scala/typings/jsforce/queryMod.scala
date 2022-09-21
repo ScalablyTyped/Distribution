@@ -3,11 +3,8 @@ package typings.jsforce
 import typings.jsforce.jsforceStrings.ASC
 import typings.jsforce.jsforceStrings.DESC
 import typings.jsforce.recordResultMod.RecordResult
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
-import typings.std.Error
 import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,48 +14,54 @@ object queryMod {
   
   @JSImport("jsforce/query", "ExplainInfo")
   @js.native
-  class ExplainInfo () extends StObject
+  open class ExplainInfo () extends StObject
   
   @JSImport("jsforce/query", "Query")
   @js.native
-  class Query[T] ()
+  open class Query[T] ()
     extends Readable
        with Promise[T] {
     def this(opts: ReadableOptions) = this()
     
-    def del(): js.Any = js.native
-    def del(callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
-    def del(`type`: String): js.Any = js.native
-    def del(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
-    def del(`type`: Unit, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
+    def del(): Any = js.native
+    def del(callback: js.Function2[/* err */ js.Error, /* ret */ RecordResult, Unit]): Any = js.native
+    def del(`type`: String): Any = js.native
+    def del(`type`: String, callback: js.Function2[/* err */ js.Error, /* ret */ RecordResult, Unit]): Any = js.native
+    def del(`type`: Unit, callback: js.Function2[/* err */ js.Error, /* ret */ RecordResult, Unit]): Any = js.native
     
-    def delete(): js.Any = js.native
-    def delete(callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
-    def delete(`type`: String): js.Any = js.native
-    def delete(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
-    def delete(`type`: Unit, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
+    def delete(): Any = js.native
+    def delete(callback: js.Function2[/* err */ js.Error, /* ret */ RecordResult, Unit]): Any = js.native
+    def delete(`type`: String): Any = js.native
+    def delete(`type`: String, callback: js.Function2[/* err */ js.Error, /* ret */ RecordResult, Unit]): Any = js.native
+    def delete(`type`: Unit, callback: js.Function2[/* err */ js.Error, /* ret */ RecordResult, Unit]): Any = js.native
     
-    def destroy(callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
+    def destroy(callback: js.Function2[/* err */ js.Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
     def destroy(`type`: String): js.Promise[js.Array[RecordResult]] = js.native
-    def destroy(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
-    def destroy(`type`: Unit, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
+    def destroy(`type`: String, callback: js.Function2[/* err */ js.Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
+    def destroy(`type`: Unit, callback: js.Function2[/* err */ js.Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
     @JSName("destroy")
     def destroy_Promise(): js.Promise[js.Array[RecordResult]] = js.native
     
     def end(): Query[T] = js.native
     
     def exec(): Query[T] = js.native
-    def exec(options: Unit, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
+    def exec(options: Unit, callback: js.Function2[/* err */ js.Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
     def exec(options: ExecuteOptions): Query[T] = js.native
-    def exec(options: ExecuteOptions, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
+    def exec(
+      options: ExecuteOptions,
+      callback: js.Function2[/* err */ js.Error, /* records */ js.Array[T], Unit]
+    ): Query[T] = js.native
     
     def execute(): Query[T] = js.native
-    def execute(options: Unit, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
+    def execute(options: Unit, callback: js.Function2[/* err */ js.Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
     def execute(options: ExecuteOptions): Query[T] = js.native
-    def execute(options: ExecuteOptions, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
+    def execute(
+      options: ExecuteOptions,
+      callback: js.Function2[/* err */ js.Error, /* records */ js.Array[T], Unit]
+    ): Query[T] = js.native
     
     def explain(): js.Promise[ExplainInfo] = js.native
-    def explain(callback: js.Function2[/* err */ Error, /* info */ ExplainInfo, Unit]): js.Promise[ExplainInfo] = js.native
+    def explain(callback: js.Function2[/* err */ js.Error, /* info */ ExplainInfo, Unit]): js.Promise[ExplainInfo] = js.native
     
     def filter(filter: js.Object): Query[T] = js.native
     
@@ -68,21 +71,19 @@ object queryMod {
     
     def limit(value: Double): Query[T] = js.native
     
-    def map(callback: js.Function1[/* currentValue */ js.Object, Unit]): js.Promise[js.Any] = js.native
+    def map(callback: js.Function1[/* currentValue */ js.Object, Unit]): js.Promise[Any] = js.native
     
     def maxFetch(value: Double): Query[T] = js.native
     
     def offset(value: Double): Query[T] = js.native
     
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-    
     def run(): Query[T] = js.native
-    def run(options: Unit, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
+    def run(options: Unit, callback: js.Function2[/* err */ js.Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
     def run(options: ExecuteOptions): Query[T] = js.native
-    def run(options: ExecuteOptions, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
+    def run(
+      options: ExecuteOptions,
+      callback: js.Function2[/* err */ js.Error, /* records */ js.Array[T], Unit]
+    ): Query[T] = js.native
     
     def scanAll(value: Boolean): Query[T] = js.native
     
@@ -93,40 +94,33 @@ object queryMod {
     def skip(value: Double): Query[T] = js.native
     
     def sort(keyOrList: String): Query[T] = js.native
+    def sort(keyOrList: String, direction: ASC | DESC): Query[T] = js.native
     def sort(keyOrList: String, direction: Double): Query[T] = js.native
     def sort(keyOrList: js.Array[js.Object]): Query[T] = js.native
+    def sort(keyOrList: js.Array[js.Object], direction: ASC | DESC): Query[T] = js.native
     def sort(keyOrList: js.Array[js.Object], direction: Double): Query[T] = js.native
     def sort(keyOrList: js.Object): Query[T] = js.native
+    def sort(keyOrList: js.Object, direction: ASC | DESC): Query[T] = js.native
     def sort(keyOrList: js.Object, direction: Double): Query[T] = js.native
-    @JSName("sort")
-    def sort_ASC(keyOrList: String, direction: ASC): Query[T] = js.native
-    @JSName("sort")
-    def sort_ASC(keyOrList: js.Array[js.Object], direction: ASC): Query[T] = js.native
-    @JSName("sort")
-    def sort_ASC(keyOrList: js.Object, direction: ASC): Query[T] = js.native
-    @JSName("sort")
-    def sort_DESC(keyOrList: String, direction: DESC): Query[T] = js.native
-    @JSName("sort")
-    def sort_DESC(keyOrList: js.Array[js.Object], direction: DESC): Query[T] = js.native
-    @JSName("sort")
-    def sort_DESC(keyOrList: js.Object, direction: DESC): Query[T] = js.native
     
     def thenCall(): Query[T] = js.native
-    def thenCall(callback: js.Function2[/* err */ Error, /* records */ T, Unit]): Query[T] = js.native
+    def thenCall(callback: js.Function2[/* err */ js.Error, /* records */ T, Unit]): Query[T] = js.native
     
-    def toSOQL(callback: js.Function2[/* err */ Error, /* soql */ String, Unit]): js.Promise[String] = js.native
+    def toSOQL(callback: js.Function2[/* err */ js.Error, /* soql */ String, Unit]): js.Promise[String] = js.native
     
     @JSName(js.Symbol.toStringTag)
     var toStringTag_Query: typings.jsforce.jsforceStrings.Promise = js.native
     
+    def update(mapping: Any): js.Promise[js.Array[RecordResult]] = js.native
     def update(
-      mapping: js.Any,
-      callback: js.Function2[/* err */ Error, /* records */ js.Array[RecordResult], Unit]
+      mapping: Any,
+      callback: js.Function2[/* err */ js.Error, /* records */ js.Array[RecordResult], Unit]
     ): js.Promise[js.Array[RecordResult]] = js.native
+    def update(mapping: Any, `type`: String): js.Promise[js.Array[RecordResult]] = js.native
     def update(
-      mapping: js.Any,
+      mapping: Any,
       `type`: String,
-      callback: js.Function2[/* err */ Error, /* records */ js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* records */ js.Array[RecordResult], Unit]
     ): js.Promise[js.Array[RecordResult]] = js.native
     
     def where(conditions: String): Query[T] = js.native
@@ -197,7 +191,7 @@ object queryMod {
       
       inline def setRecords(value: js.Array[T]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: T*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: T*): Self = StObject.set(x, "records", js.Array(value*))
       
       inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,7 @@ trait ShowingEventUIParam extends StObject {
   /**
     * Gets a reference to the %%WidgetName%% widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the popover element showing.
@@ -43,7 +43,7 @@ object ShowingEventUIParam {
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

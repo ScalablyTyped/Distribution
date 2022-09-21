@@ -12,8 +12,6 @@ import typings.ffmpeg.ffmpegStrings.NW
 import typings.ffmpeg.ffmpegStrings.SC
 import typings.ffmpeg.ffmpegStrings.SE
 import typings.ffmpeg.ffmpegStrings.SW
-import typings.std.Date
-import typings.std.Error
 import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,11 +22,11 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("ffmpeg", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Promise[Video] {
     def this(filePath: String) = this()
-    def this(filePath: String, cb: js.Function2[/* err */ Error, /* video */ Video, Unit]) = this()
+    def this(filePath: String, cb: js.Function2[/* err */ js.Error, /* video */ Video, Unit]) = this()
   }
   @JSImport("ffmpeg", JSImport.Namespace)
   @js.native
@@ -47,7 +45,7 @@ object mod extends Shortcut {
     
     var ICOP: js.UndefOr[String] = js.undefined
     
-    var ICRD: js.UndefOr[String | Date] = js.undefined
+    var ICRD: js.UndefOr[String | js.Date] = js.undefined
     
     var ICRP: js.UndefOr[String] = js.undefined
     
@@ -114,7 +112,7 @@ object mod extends Shortcut {
       
       inline def setICOPUndefined: Self = StObject.set(x, "ICOP", js.undefined)
       
-      inline def setICRD(value: String | Date): Self = StObject.set(x, "ICRD", value.asInstanceOf[js.Any])
+      inline def setICRD(value: String | js.Date): Self = StObject.set(x, "ICRD", value.asInstanceOf[js.Any])
       
       inline def setICRDUndefined: Self = StObject.set(x, "ICRD", js.undefined)
       
@@ -192,7 +190,28 @@ object mod extends Shortcut {
     }
   }
   
-  /* Inlined std.Partial<{  duration :number,   filesize :string,   encoder :string,   width :number,   height :number,   videodatarate :number,   videocodecid :string,   audiodatarate :number,   audiosamplerate :number,   stereo :boolean,   audiocodecid :string}> */
+  trait Duration extends StObject {
+    
+    var raw: String
+    
+    var seconds: Double
+  }
+  object Duration {
+    
+    inline def apply(raw: String, seconds: Double): Duration = {
+      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Duration]
+    }
+    
+    extension [Self <: Duration](x: Self) {
+      
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<{  duration :ffmpeg.ffmpeg.Duration,   filesize :string,   encoder :string,   width :number,   height :number,   videodatarate :number,   videocodecid :string,   audiodatarate :number,   audiosamplerate :number,   stereo :boolean,   audiocodecid :string}> */
   trait FLVMetadata extends StObject {
     
     var audiocodecid: js.UndefOr[String] = js.undefined
@@ -201,7 +220,7 @@ object mod extends Shortcut {
     
     var audiosamplerate: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.undefined
+    var duration: js.UndefOr[Duration] = js.undefined
     
     var encoder: js.UndefOr[String] = js.undefined
     
@@ -238,7 +257,7 @@ object mod extends Shortcut {
       
       inline def setAudiosamplerateUndefined: Self = StObject.set(x, "audiosamplerate", js.undefined)
       
-      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
@@ -272,7 +291,7 @@ object mod extends Shortcut {
     }
   }
   
-  /* Inlined std.Partial<{  start_time :string | number,   duration_time :string | number,   frame_rate :number,   size :string,   number :number,   every_n_frames :number,   every_n_seconds :number,   every_n_percentage :number,   keep_pixel_aspect_ratio :boolean,   keep_aspect_ration :boolean,   padding_color :string,   file_name :string}> */
+  /* Inlined std.Partial<{  start_time :string | number,   duration_time :string | number,   frame_rate :number,   size :string,   number :number,   every_n_frames :number,   every_n_seconds :number,   every_n_percentage :number,   keep_pixel_aspect_ratio :boolean,   keep_aspect_ratio :boolean,   padding_color :string,   file_name :string}> */
   trait FrameToJPGSettings extends StObject {
     
     var duration_time: js.UndefOr[String | Double] = js.undefined
@@ -287,7 +306,7 @@ object mod extends Shortcut {
     
     var frame_rate: js.UndefOr[Double] = js.undefined
     
-    var keep_aspect_ration: js.UndefOr[Boolean] = js.undefined
+    var keep_aspect_ratio: js.UndefOr[Boolean] = js.undefined
     
     var keep_pixel_aspect_ratio: js.UndefOr[Boolean] = js.undefined
     
@@ -332,9 +351,9 @@ object mod extends Shortcut {
       
       inline def setFrame_rateUndefined: Self = StObject.set(x, "frame_rate", js.undefined)
       
-      inline def setKeep_aspect_ration(value: Boolean): Self = StObject.set(x, "keep_aspect_ration", value.asInstanceOf[js.Any])
+      inline def setKeep_aspect_ratio(value: Boolean): Self = StObject.set(x, "keep_aspect_ratio", value.asInstanceOf[js.Any])
       
-      inline def setKeep_aspect_rationUndefined: Self = StObject.set(x, "keep_aspect_ration", js.undefined)
+      inline def setKeep_aspect_ratioUndefined: Self = StObject.set(x, "keep_aspect_ratio", js.undefined)
       
       inline def setKeep_pixel_aspect_ratio(value: Boolean): Self = StObject.set(x, "keep_pixel_aspect_ratio", value.asInstanceOf[js.Any])
       
@@ -364,7 +383,7 @@ object mod extends Shortcut {
        with Instantiable1[/* filePath */ String, js.Promise[Video]]
        with Instantiable2[
           /* filePath */ String, 
-          /* cb */ js.Function2[/* err */ Error, /* video */ Video, Unit], 
+          /* cb */ js.Function2[/* err */ js.Error, /* video */ Video, Unit], 
           js.Promise[Video]
         ]
   
@@ -510,27 +529,27 @@ object mod extends Shortcut {
       watermarkPath: String,
       newPilePath: String,
       settings: Unit,
-      cb: js.Function2[/* err */ Error, /* file */ String, Unit]
+      cb: js.Function2[/* err */ js.Error, /* file */ String, Unit]
     ): Unit = js.native
     def fnAddWatermark(watermarkPath: String, newPilePath: String, settings: WatermarkSettings): Unit = js.native
     def fnAddWatermark(
       watermarkPath: String,
       newPilePath: String,
       settings: WatermarkSettings,
-      cb: js.Function2[/* err */ Error, /* file */ String, Unit]
+      cb: js.Function2[/* err */ js.Error, /* file */ String, Unit]
     ): Unit = js.native
     def fnAddWatermark(
       watermarkPath: String,
       newPilePath: Unit,
       settings: Unit,
-      cb: js.Function2[/* err */ Error, /* file */ String, Unit]
+      cb: js.Function2[/* err */ js.Error, /* file */ String, Unit]
     ): Unit = js.native
     def fnAddWatermark(watermarkPath: String, newPilePath: Unit, settings: WatermarkSettings): Unit = js.native
     def fnAddWatermark(
       watermarkPath: String,
       newPilePath: Unit,
       settings: WatermarkSettings,
-      cb: js.Function2[/* err */ Error, /* file */ String, Unit]
+      cb: js.Function2[/* err */ js.Error, /* file */ String, Unit]
     ): Unit = js.native
     /**
       * This function takes care of adding a watermark to the video that is being developed.
@@ -554,13 +573,13 @@ object mod extends Shortcut {
     def fnExtractFrameToJPG(
       destinationFolder: String,
       settings: Unit,
-      cb: js.Function2[/* err */ Error, /* files */ js.Array[String], Unit]
+      cb: js.Function2[/* err */ js.Error, /* files */ js.Array[String], Unit]
     ): Unit = js.native
     def fnExtractFrameToJPG(destinationFolder: String, settings: FrameToJPGSettings): Unit = js.native
     def fnExtractFrameToJPG(
       destinationFolder: String,
       settings: FrameToJPGSettings,
-      cb: js.Function2[/* err */ Error, /* files */ js.Array[String], Unit]
+      cb: js.Function2[/* err */ js.Error, /* files */ js.Array[String], Unit]
     ): Unit = js.native
     /**
       * This function takes care of extracting one or more frames from the video that is being developed.
@@ -581,7 +600,7 @@ object mod extends Shortcut {
       * @returns The path to the newly created file, or void if the callback was defined
       */
     def fnExtractSoundToMP3(destinationFileName: String): js.Promise[String] = js.native
-    def fnExtractSoundToMP3(destinationFileName: String, cb: js.Function2[/* err */ Error, /* file */ String, Unit]): Unit = js.native
+    def fnExtractSoundToMP3(destinationFileName: String, cb: js.Function2[/* err */ js.Error, /* file */ String, Unit]): Unit = js.native
     
     var metadata: StandardVideoMetadata & AVIMetadata & FLVMetadata = js.native
     
@@ -593,7 +612,7 @@ object mod extends Shortcut {
       * @returns The path to the newly created file, or void if the callback was defined
       */
     def save(destinationFileName: String): js.Promise[String] = js.native
-    def save(destinationFileName: String, cb: js.Function2[/* err */ Error, /* file */ String, Unit]): Unit = js.native
+    def save(destinationFileName: String, cb: js.Function2[/* err */ js.Error, /* file */ String, Unit]): Unit = js.native
     
     /**
       * Sets the audio bitrate in kb.

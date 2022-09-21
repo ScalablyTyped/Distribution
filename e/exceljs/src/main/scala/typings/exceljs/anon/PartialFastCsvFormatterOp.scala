@@ -60,7 +60,7 @@ object PartialFastCsvFormatterOp {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setIncludeEndRowDelimiter(value: Boolean): Self = StObject.set(x, "includeEndRowDelimiter", value.asInstanceOf[js.Any])
     
@@ -76,13 +76,13 @@ object PartialFastCsvFormatterOp {
     
     inline def setQuoteColumnsUndefined: Self = StObject.set(x, "quoteColumns", js.undefined)
     
-    inline def setQuoteColumnsVarargs(value: Boolean*): Self = StObject.set(x, "quoteColumns", js.Array(value :_*))
+    inline def setQuoteColumnsVarargs(value: Boolean*): Self = StObject.set(x, "quoteColumns", js.Array(value*))
     
     inline def setQuoteHeaders(value: QuoteColumns): Self = StObject.set(x, "quoteHeaders", value.asInstanceOf[js.Any])
     
     inline def setQuoteHeadersUndefined: Self = StObject.set(x, "quoteHeaders", js.undefined)
     
-    inline def setQuoteHeadersVarargs(value: Boolean*): Self = StObject.set(x, "quoteHeaders", js.Array(value :_*))
+    inline def setQuoteHeadersVarargs(value: Boolean*): Self = StObject.set(x, "quoteHeaders", js.Array(value*))
     
     inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     

@@ -10,10 +10,10 @@ This plugin aims to solve common keyboard problems encountered with Cordova / Ph
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-native-keyboard |
 | Keywords           | Keyboard, Native Keyboard, Messenger, Messenger Keyboard, ecosystem:cordova, cordova-ios, cordova-android |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 7904 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 491.0 |
+| # stars            | 272.0 |
 
 ## Links
 - [Homepage](https://github.com/EddyVerbruggen/cordova-plugin-native-keyboard#readme)

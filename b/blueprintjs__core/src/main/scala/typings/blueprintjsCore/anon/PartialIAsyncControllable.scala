@@ -37,12 +37,12 @@ object PartialIAsyncControllable {
     
     inline def setNextValueUndefined: Self = StObject.set(x, "nextValue", js.undefined)
     
-    inline def setNextValueVarargs(value: String*): Self = StObject.set(x, "nextValue", js.Array(value :_*))
+    inline def setNextValueVarargs(value: String*): Self = StObject.set(x, "nextValue", js.Array(value*))
     
     inline def setValue(value: InputValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -26,7 +26,7 @@ object XImportable {
     acquire: () => Unit,
     createImportDescriptor: Boolean => SafeArray[PropertyValue],
     doImport: SeqEquiv[PropertyValue] => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XImportable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createImportDescriptor = js.Any.fromFunction1(createImportDescriptor), doImport = js.Any.fromFunction1(doImport), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

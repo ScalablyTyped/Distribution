@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHyperLink")
 @js.native
-class ASPxClientHyperLink ()
+open class ASPxClientHyperLink ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHyperLink {
   
@@ -56,7 +56,7 @@ class ASPxClientHyperLink ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets an URL which defines the navigation location for the editor's hyperlink.
@@ -68,7 +68,7 @@ class ASPxClientHyperLink ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Gets the text caption displayed for the hyperlink in the hyperlink editor.
@@ -80,7 +80,7 @@ class ASPxClientHyperLink ()
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -160,7 +160,7 @@ class ASPxClientHyperLink ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.
@@ -193,5 +193,5 @@ object ASPxClientHyperLink {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientHyperLink = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientHyperLink]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientHyperLink = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientHyperLink]
 }

@@ -10,10 +10,10 @@ object zoomInMod {
   
   @JSImport("material-ui/svg-icons/action/zoom-in", JSImport.Default)
   @js.native
-  class default () extends ActionZoomIn
+  open class default () extends ActionZoomIn
   
   @JSImport("material-ui/svg-icons/action/zoom-in", "ActionZoomIn")
   @js.native
-  class ActionZoomIn ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionZoomIn ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

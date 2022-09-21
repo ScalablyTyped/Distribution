@@ -1,5 +1,6 @@
 package typings.browserSync.mod
 
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.serveStatic.mod.ServeStaticOptions
 import org.scalablytyped.runtime.StObject
@@ -26,7 +27,7 @@ trait ServerOptions extends StObject {
     */
   var routes: js.UndefOr[Hash[String]] = js.undefined
   
-  var serveStaticOptions: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.undefined
+  var serveStaticOptions: js.UndefOr[ServeStaticOptions[ServerResponse[IncomingMessage]]] = js.undefined
 }
 object ServerOptions {
   
@@ -41,7 +42,7 @@ object ServerOptions {
     
     inline def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
     
-    inline def setBaseDirVarargs(value: String*): Self = StObject.set(x, "baseDir", js.Array(value :_*))
+    inline def setBaseDirVarargs(value: String*): Self = StObject.set(x, "baseDir", js.Array(value*))
     
     inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
@@ -55,13 +56,13 @@ object ServerOptions {
     
     inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
     
-    inline def setMiddlewareVarargs(value: (MiddlewareHandler | PerRouteMiddleware)*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+    inline def setMiddlewareVarargs(value: (MiddlewareHandler | PerRouteMiddleware)*): Self = StObject.set(x, "middleware", js.Array(value*))
     
     inline def setRoutes(value: Hash[String]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
-    inline def setServeStaticOptions(value: ServeStaticOptions[ServerResponse]): Self = StObject.set(x, "serveStaticOptions", value.asInstanceOf[js.Any])
+    inline def setServeStaticOptions(value: ServeStaticOptions[ServerResponse[IncomingMessage]]): Self = StObject.set(x, "serveStaticOptions", value.asInstanceOf[js.Any])
     
     inline def setServeStaticOptionsUndefined: Self = StObject.set(x, "serveStaticOptions", js.undefined)
   }

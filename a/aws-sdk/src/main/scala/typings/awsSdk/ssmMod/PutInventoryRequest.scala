@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutInventoryRequest extends StObject {
   
   /**
-    * An instance ID where you want to add or update inventory items.
+    * An managed node ID where you want to add or update inventory items.
     */
   var InstanceId: typings.awsSdk.ssmMod.InstanceId
   
   /**
-    * The inventory items that you want to add or update on instances.
+    * The inventory items that you want to add or update on managed nodes.
     */
   var Items: InventoryItemList
 }
@@ -29,6 +29,6 @@ object PutInventoryRequest {
     
     inline def setItems(value: InventoryItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: InventoryItem*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: InventoryItem*): Self = StObject.set(x, "Items", js.Array(value*))
   }
 }

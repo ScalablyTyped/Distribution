@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  inline def dump(msg: js.Any*): Unit = js.Dynamic.global.applyDynamic("dump")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def dump(msg: Any*): Unit = js.Dynamic.global.applyDynamic("dump")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   inline def exit(): Unit = js.Dynamic.global.applyDynamic("exit")().asInstanceOf[Unit]
   
@@ -33,7 +33,7 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def abortAsyncCommand(t: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("abort_async_command")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def abortAsyncCommand(t: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("abort_async_command")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def addForcedKeyBinding(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def addForcedKeyBinding(key: String, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -57,16 +57,16 @@ object global {
     
     inline def command(command: String): js.UndefOr[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("command")(command.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`true`]]
     
-    inline def commandNative(table: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("command_native")(table.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def commandNative(table: js.Any, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("command_native")(table.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def commandNative(table: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("command_native")(table.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def commandNative(table: Any, `def`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("command_native")(table.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def commandNativeAsync(table: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("command_native_async")(table.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def commandNativeAsync(table: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("command_native_async")(table.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def commandNativeAsync(
-      table: js.Any,
-      fn: js.Function3[/* success */ Boolean, /* result */ js.Any, /* error */ js.UndefOr[String], Unit]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("command_native_async")(table.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      table: Any,
+      fn: js.Function3[/* success */ Boolean, /* result */ Any, /* error */ js.UndefOr[String], Unit]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("command_native_async")(table.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def commandv(args: String*): js.UndefOr[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandv")(args.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`true`]]
+    inline def commandv(args: String*): js.UndefOr[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandv")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.UndefOr[`true`]]
     
     inline def createOsdOverlay_assevents(format: `ass-events`): OSDOverlay = ^.asInstanceOf[js.Dynamic].applyDynamic("create_osd_overlay")(format.asInstanceOf[js.Any]).asInstanceOf[OSDOverlay]
     
@@ -84,8 +84,8 @@ object global {
     
     inline def getPropertyBool_Boolean(name: String, `def`: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_bool")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def getPropertyNative(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property_native")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def getPropertyNative(name: String, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_native")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getPropertyNative(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property_native")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def getPropertyNative(name: String, `def`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_native")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def getPropertyNumber(name: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property_number")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
     inline def getPropertyNumber(name: String, `def`: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_number")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
@@ -119,21 +119,21 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def debug(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def debug(msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
       
-      inline def error(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def error(msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
       
-      inline def fatal(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def fatal(msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
       
-      inline def info(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def info(msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
       
-      inline def log(level: LogLevel, msg: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def log(level: LogLevel, msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(level.asInstanceOf[js.Any]).`++`(msg.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
       
-      inline def trace(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def trace(msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
       
-      inline def verbose(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def verbose(msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
       
-      inline def warn(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def warn(msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     }
     
     inline def observeProperty(name: String, `type`: Unit, fn: js.Function1[/* name */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -144,7 +144,7 @@ object global {
       fn: js.Function2[/* name */ String, /* value */ js.UndefOr[Boolean], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def observeProperty_native(name: String, `type`: native, fn: js.Function2[/* name */ String, /* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def observeProperty_native(name: String, `type`: native, fn: js.Function2[/* name */ String, /* value */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def observeProperty_none(name: String, `type`: none, fn: js.Function1[/* name */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -183,11 +183,11 @@ object global {
     inline def osdMessage(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("osd_message")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def osdMessage(text: String, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("osd_message")(text.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def registerEvent(name: String, fn: js.Function1[/* event */ Record[String, js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_event")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerEvent(name: String, fn: js.Function1[/* event */ Record[String, Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_event")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def registerIdle(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_idle")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def registerScriptMessage(name: String, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_script_message")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerScriptMessage(name: String, fn: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_script_message")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def removeKeyBinding(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove_key_binding")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -195,13 +195,13 @@ object global {
     
     inline def setPropertyBool(name: String, value: Boolean): js.UndefOr[`true`] = (^.asInstanceOf[js.Dynamic].applyDynamic("set_property_bool")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`true`]]
     
-    inline def setPropertyNative(name: String, value: js.Any): js.UndefOr[`true`] = (^.asInstanceOf[js.Dynamic].applyDynamic("set_property_native")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`true`]]
+    inline def setPropertyNative(name: String, value: Any): js.UndefOr[`true`] = (^.asInstanceOf[js.Dynamic].applyDynamic("set_property_native")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`true`]]
     
     inline def setPropertyNumber(name: String, value: Double): js.UndefOr[`true`] = (^.asInstanceOf[js.Dynamic].applyDynamic("set_property_number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`true`]]
     
-    inline def unobserveProperty(fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unobserve_property")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unobserveProperty(fn: js.Function1[/* repeated */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unobserve_property")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def unregisterEvent(fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister_event")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unregisterEvent(fn: js.Function1[/* repeated */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister_event")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def unregisterIdle(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister_idle")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -213,7 +213,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def compileJs(fname: String, content_str: String): js.Function1[/* repeated */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile_js")(fname.asInstanceOf[js.Any], content_str.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+      inline def compileJs(fname: String, content_str: String): js.Function1[/* repeated */ Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile_js")(fname.asInstanceOf[js.Any], content_str.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
       
       inline def fileInfo(path: String): js.UndefOr[FileInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("file_info")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[FileInfo]]
       
@@ -231,14 +231,7 @@ object global {
       inline def readFile(fname: String, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("read_file")(fname.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
       
       inline def readdir(path: String): js.UndefOr[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[String]]]
-      
-      inline def readdir_all(path: String, filter: all): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
-      
-      inline def readdir_dirs(path: String, filter: dirs): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
-      
-      inline def readdir_files(path: String, filter: files): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
-      
-      inline def readdir_normal(path: String, filter: normal): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
+      inline def readdir(path: String, filter: files | dirs | normal | all): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
       
       inline def splitPath(path: String): js.Tuple2[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split_path")(path.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String, String]]
       
@@ -246,5 +239,5 @@ object global {
     }
   }
   
-  inline def print(msg: js.Any*): Unit = js.Dynamic.global.applyDynamic("print")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def print(msg: Any*): Unit = js.Dynamic.global.applyDynamic("print")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
 }

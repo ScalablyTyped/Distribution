@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlkComboBox extends StObject {
   
   def AddItem(ItemText: String): Unit = js.native
-  def AddItem(ItemText: String, Index: js.Any): Unit = js.native
+  def AddItem(ItemText: String, Index: Any): Unit = js.native
   
   var AutoSize: Boolean = js.native
   
@@ -82,5 +82,5 @@ trait OlkComboBox extends StObject {
   
   var TopIndex: Double = js.native
   
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

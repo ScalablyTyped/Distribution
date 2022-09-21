@@ -24,7 +24,7 @@ object mod extends Shortcut {
     def each[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E]): Unit = js.native
     def each[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): Unit = js.native
     
-    var eachSeries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof steed.each */ js.Any = js.native
+    var eachSeries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof steed.each */ Any = js.native
     
     def map[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E]): Unit = js.native
     def map[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E], callback: SteedResultArrayCallback[R, E]): Unit = js.native
@@ -35,7 +35,7 @@ object mod extends Shortcut {
       callback: SteedResultArrayCallback[R, E]
     ): Unit = js.native
     
-    var mapSeries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof steed.map */ js.Any = js.native
+    var mapSeries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof steed.map */ Any = js.native
     
     def parallel[T, E](tasks: js.Array[SteedFunction[T, E]]): Unit = js.native
     def parallel[T, E](tasks: js.Array[SteedFunction[T, E]], callback: SteedResultArrayCallback[T, E]): Unit = js.native
@@ -70,9 +70,9 @@ object mod extends Shortcut {
     
     var concurrency: Double = js.native
     
-    def drain(): js.Any = js.native
+    def drain(): Any = js.native
     
-    def empty(): js.Any = js.native
+    def empty(): Any = js.native
     
     def idle(): Boolean = js.native
     
@@ -89,7 +89,7 @@ object mod extends Shortcut {
     
     def resume(): Unit = js.native
     
-    def saturated(): js.Any = js.native
+    def saturated(): Any = js.native
     
     def unshift[E](task: T): Unit = js.native
     def unshift[E](task: T, callback: ErrorCallback[E]): Unit = js.native

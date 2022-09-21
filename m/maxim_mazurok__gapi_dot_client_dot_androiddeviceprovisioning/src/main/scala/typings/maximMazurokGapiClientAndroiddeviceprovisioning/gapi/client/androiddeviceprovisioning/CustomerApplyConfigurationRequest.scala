@@ -9,7 +9,7 @@ trait CustomerApplyConfigurationRequest extends StObject {
   /** Required. The configuration applied to the device in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. */
   var configuration: js.UndefOr[String] = js.undefined
   
-  /** Required. The device the configuration is applied to. */
+  /** Required. The device the configuration is applied to. There are custom validations in ApplyConfigurationRequestValidator */
   var device: js.UndefOr[DeviceReference] = js.undefined
 }
 object CustomerApplyConfigurationRequest {

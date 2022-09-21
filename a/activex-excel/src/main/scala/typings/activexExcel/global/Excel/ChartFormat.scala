@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ChartFormat")
 @js.native
-/* private */ class ChartFormat ()
+/* private */ open class ChartFormat ()
   extends StObject
      with typings.activexExcel.Excel.ChartFormat {
   
@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Line: typings.activexExcel.Excel.LineFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PictureFormat: typings.activexExcel.Excel.PictureFormat = js.native

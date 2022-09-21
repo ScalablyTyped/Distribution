@@ -14,7 +14,7 @@ object tabBarItemNativeMod {
   
   @JSImport("antd-mobile-rn/lib/tab-bar/TabBarItem.native", JSImport.Default)
   @js.native
-  class default () extends TabBarItem
+  open class default () extends TabBarItem
   /* static members */
   object default {
     
@@ -29,8 +29,7 @@ object tabBarItemNativeMod {
   }
   
   @js.native
-  trait TabBarItem
-    extends Component[TabBarItemProps, js.Any, js.Any]
+  trait TabBarItem extends Component[TabBarItemProps, Any, Any]
   
   trait TabBarItemProps extends StObject {
     
@@ -48,7 +47,7 @@ object tabBarItemNativeMod {
     
     var selectedIcon: js.UndefOr[ImageURISource | js.Array[ImageURISource] | ImageRequireSource] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     var tintColor: js.UndefOr[String] = js.undefined
     
@@ -79,7 +78,7 @@ object tabBarItemNativeMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setIconVarargs(value: ImageURISource*): Self = StObject.set(x, "icon", js.Array(value :_*))
+      inline def setIconVarargs(value: ImageURISource*): Self = StObject.set(x, "icon", js.Array(value*))
       
       inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
@@ -95,11 +94,11 @@ object tabBarItemNativeMod {
       
       inline def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
       
-      inline def setSelectedIconVarargs(value: ImageURISource*): Self = StObject.set(x, "selectedIcon", js.Array(value :_*))
+      inline def setSelectedIconVarargs(value: ImageURISource*): Self = StObject.set(x, "selectedIcon", js.Array(value*))
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

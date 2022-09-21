@@ -9,7 +9,7 @@ trait SchemaSuccessDetail extends StObject {
   /**
     * If a native process other than the app crashed.
     */
-  var otherNativeCrash: js.UndefOr[Boolean] = js.undefined
+  var otherNativeCrash: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaSuccessDetail {
   
@@ -21,6 +21,8 @@ object SchemaSuccessDetail {
   extension [Self <: SchemaSuccessDetail](x: Self) {
     
     inline def setOtherNativeCrash(value: Boolean): Self = StObject.set(x, "otherNativeCrash", value.asInstanceOf[js.Any])
+    
+    inline def setOtherNativeCrashNull: Self = StObject.set(x, "otherNativeCrash", null)
     
     inline def setOtherNativeCrashUndefined: Self = StObject.set(x, "otherNativeCrash", js.undefined)
   }

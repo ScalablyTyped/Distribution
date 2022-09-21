@@ -62,13 +62,13 @@ object anon {
       
       inline def setFilePaths(value: js.Array[String]): Self = StObject.set(x, "filePaths", value.asInstanceOf[js.Any])
       
-      inline def setFilePathsVarargs(value: String*): Self = StObject.set(x, "filePaths", js.Array(value :_*))
+      inline def setFilePathsVarargs(value: String*): Self = StObject.set(x, "filePaths", js.Array(value*))
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
     }
   }
   
@@ -103,7 +103,7 @@ object anon {
       
       inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
       
-      inline def setStatusesVarargs(value: Double*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+      inline def setStatusesVarargs(value: Double*): Self = StObject.set(x, "statuses", js.Array(value*))
     }
   }
   

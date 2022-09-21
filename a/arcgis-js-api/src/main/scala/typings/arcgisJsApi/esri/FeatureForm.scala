@@ -15,25 +15,11 @@ trait FeatureForm
      with Widget_ {
   
   /**
-    * The description of the form.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#description)
-    */
-  var description: String = js.native
-  
-  /**
     * The associated feature containing the editable attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#feature)
     */
   var feature: Graphic = js.native
-  
-  /**
-    * Array of individual or grouped field configuration objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#fieldConfig)
-    */
-  var fieldConfig: js.Array[FieldConfig | FieldGroupConfig] = js.native
   
   /**
     * The associated [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used for the form.
@@ -47,14 +33,25 @@ trait FeatureForm
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#getValues)
     */
-  def getValues(): js.Any = js.native
+  def getValues(): Any = js.native
   
   /**
     * Defines how groups will be displayed to the user.
     *
+    * @default all
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#groupDisplay)
     */
   var groupDisplay: all | sequential = js.native
+  
+  /**
+    * Indicates the heading level to use for the [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#title) of the form.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
   
   /**
     * Layer containing the editable feature attributes.
@@ -73,14 +70,7 @@ trait FeatureForm
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#submit)
     */
-  def submit(): Unit = js.native
-  
-  /**
-    * The title of the form.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#title)
-    */
-  var title: String = js.native
+  def submit(): scala.Unit = js.native
   
   /**
     * The view model for this widget.

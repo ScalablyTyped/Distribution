@@ -14,8 +14,10 @@ import typings.phaser.Phaser.Display.Masks.GeometryMask
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.GameObjects.Components.Alpha
 import typings.phaser.Phaser.GameObjects.Components.Flip
+import typings.phaser.Phaser.GameObjects.Components.Pipeline
 import typings.phaser.Phaser.GameObjects.Components.Tint
 import typings.phaser.Phaser.GameObjects.Components.Visible
+import typings.phaser.Phaser.GameObjects.DisplayList
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Group
 import typings.phaser.Phaser.Geom.Rectangle
@@ -23,8 +25,7 @@ import typings.phaser.Phaser.Input.Keyboard.Key
 import typings.phaser.Phaser.Input.Pointer
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
-import typings.phaser.Phaser.Renderer.WebGL.Pipelines.TextureTintPipeline
-import typings.phaser.Phaser.Renderer.WebGL.WebGLPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.MultiPipeline
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Scale.ScaleManager
 import typings.phaser.Phaser.Scenes.SceneManager
@@ -38,11 +39,7 @@ import typings.phaser.Phaser.Types.Cameras.Scene2D.CameraShakeCallback
 import typings.phaser.Phaser.Types.Cameras.Scene2D.CameraZoomCallback
 import typings.phaser.Phaser.Types.Cameras.Scene2D.JSONCamera
 import typings.phaser.Phaser.Types.Display.InputColorObject
-import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
-import typings.std.HTMLCanvasElement
-import typings.std.WebGLFramebuffer
-import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,6 +92,16 @@ object Cameras {
         * The Key to be pressed that will move the Camera left.
         */
       var left: Key
+      
+      /**
+        * The largest zoom value the camera will reach when zoomed in.
+        */
+      var maxZoom: Double
+      
+      /**
+        * The smallest zoom value the camera will reach when zoomed out.
+        */
+      var minZoom: Double
       
       /**
         * The Key to be pressed that will move the Camera right.
@@ -163,6 +170,8 @@ object Cameras {
         destroy: () => Unit,
         down: Key,
         left: Key,
+        maxZoom: Double,
+        minZoom: Double,
         right: Key,
         setCamera: Camera => FixedKeyControl,
         speedX: Double,
@@ -175,7 +184,7 @@ object Cameras {
         zoomOut: Key,
         zoomSpeed: Double
       ): FixedKeyControl = {
-        val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), down = down.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], setCamera = js.Any.fromFunction1(setCamera), speedX = speedX.asInstanceOf[js.Any], speedY = speedY.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), up = up.asInstanceOf[js.Any], update = js.Any.fromFunction1(update), zoomIn = zoomIn.asInstanceOf[js.Any], zoomOut = zoomOut.asInstanceOf[js.Any], zoomSpeed = zoomSpeed.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), down = down.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], setCamera = js.Any.fromFunction1(setCamera), speedX = speedX.asInstanceOf[js.Any], speedY = speedY.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), up = up.asInstanceOf[js.Any], update = js.Any.fromFunction1(update), zoomIn = zoomIn.asInstanceOf[js.Any], zoomOut = zoomOut.asInstanceOf[js.Any], zoomSpeed = zoomSpeed.asInstanceOf[js.Any])
         __obj.asInstanceOf[FixedKeyControl]
       }
       
@@ -190,6 +199,10 @@ object Cameras {
         inline def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
         inline def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        
+        inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+        
+        inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
         
         inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
@@ -297,6 +310,16 @@ object Cameras {
       var maxSpeedY: Double
       
       /**
+        * The largest zoom value the camera will reach when zoomed in.
+        */
+      var maxZoom: Double
+      
+      /**
+        * The smallest zoom value the camera will reach when zoomed out.
+        */
+      var minZoom: Double
+      
+      /**
         * The Key to be pressed that will move the Camera right.
         */
       var right: Key
@@ -359,6 +382,8 @@ object Cameras {
         left: Key,
         maxSpeedX: Double,
         maxSpeedY: Double,
+        maxZoom: Double,
+        minZoom: Double,
         right: Key,
         setCamera: Camera => SmoothedKeyControl,
         start: () => SmoothedKeyControl,
@@ -369,7 +394,7 @@ object Cameras {
         zoomOut: Key,
         zoomSpeed: Double
       ): SmoothedKeyControl = {
-        val __obj = js.Dynamic.literal(accelX = accelX.asInstanceOf[js.Any], accelY = accelY.asInstanceOf[js.Any], active = active.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), down = down.asInstanceOf[js.Any], dragX = dragX.asInstanceOf[js.Any], dragY = dragY.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], maxSpeedX = maxSpeedX.asInstanceOf[js.Any], maxSpeedY = maxSpeedY.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], setCamera = js.Any.fromFunction1(setCamera), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), up = up.asInstanceOf[js.Any], update = js.Any.fromFunction1(update), zoomIn = zoomIn.asInstanceOf[js.Any], zoomOut = zoomOut.asInstanceOf[js.Any], zoomSpeed = zoomSpeed.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(accelX = accelX.asInstanceOf[js.Any], accelY = accelY.asInstanceOf[js.Any], active = active.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), down = down.asInstanceOf[js.Any], dragX = dragX.asInstanceOf[js.Any], dragY = dragY.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], maxSpeedX = maxSpeedX.asInstanceOf[js.Any], maxSpeedY = maxSpeedY.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], setCamera = js.Any.fromFunction1(setCamera), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), up = up.asInstanceOf[js.Any], update = js.Any.fromFunction1(update), zoomIn = zoomIn.asInstanceOf[js.Any], zoomOut = zoomOut.asInstanceOf[js.Any], zoomSpeed = zoomSpeed.asInstanceOf[js.Any])
         __obj.asInstanceOf[SmoothedKeyControl]
       }
       
@@ -396,6 +421,10 @@ object Cameras {
         inline def setMaxSpeedX(value: Double): Self = StObject.set(x, "maxSpeedX", value.asInstanceOf[js.Any])
         
         inline def setMaxSpeedY(value: Double): Self = StObject.set(x, "maxSpeedY", value.asInstanceOf[js.Any])
+        
+        inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+        
+        inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
         
         inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
@@ -453,6 +482,15 @@ object Cameras {
          with EventEmitter
          with Alpha
          with Visible {
+      
+      /**
+        * Adds the given Game Object to this cameras render list.
+        * 
+        * This is invoked during the rendering stage. Only objects that are actually rendered
+        * will appear in the render list.
+        * @param child The Game Object to add to the render list.
+        */
+      def addToRenderList(child: GameObject): Unit = js.native
       
       /**
         * The background color of this Camera. Only used if `transparent` is `false`.
@@ -614,7 +652,7 @@ object Cameras {
         * The Camera ID. Assigned by the Camera Manager and used to handle camera exclusion.
         * This value is a bitmask.
         */
-      val id: integer = js.native
+      val id: Double = js.native
       
       def ignore(entries: js.Array[GameObject]): this.type = js.native
       /**
@@ -672,9 +710,8 @@ object Cameras {
       
       /**
         * Internal preRender step.
-        * @param resolution The game resolution, as set in the Scale Manager.
         */
-      /* protected */ def preRender(resolution: Double): Unit = js.native
+      /* protected */ def preRender(): Unit = js.native
       
       /**
         * If this Camera has previously had movement bounds set on it, this will remove them.
@@ -682,11 +719,16 @@ object Cameras {
       def removeBounds(): this.type = js.native
       
       /**
-        * This property is un-used in v3.16.
+        * This array is populated with all of the Game Objects that this Camera has rendered
+        * in the previous (or current, depending on when you inspect it) frame.
         * 
-        * The resolution of the Game, used in most Camera calculations.
+        * It is cleared at the start of `Camera.preUpdate`, or if the Camera is destroyed.
+        * 
+        * You should not modify this array as it is used internally by the input system,
+        * however you can read it as required. Note that Game Objects may appear in this
+        * list multiple times if they belong to multiple non-exclusive Containers.
         */
-      val resolution: Double = js.native
+      var renderList: js.Array[GameObject] = js.native
       
       /**
         * Should this camera round its pixel values to integers?
@@ -779,8 +821,8 @@ object Cameras {
         * @param height The height of the bounds, in pixels.
         * @param centerOn If `true` the Camera will automatically be centered on the new bounds. Default false.
         */
-      def setBounds(x: integer, y: integer, width: integer, height: integer): this.type = js.native
-      def setBounds(x: integer, y: integer, width: integer, height: integer, centerOn: Boolean): this.type = js.native
+      def setBounds(x: Double, y: Double, width: Double, height: Double): this.type = js.native
+      def setBounds(x: Double, y: Double, width: Double, height: Double, centerOn: Boolean): this.type = js.native
       
       /**
         * Sets the mask to be applied to this Camera during rendering.
@@ -793,8 +835,6 @@ object Cameras {
         * 
         * Masks have no impact on physics or input detection. They are purely a rendering component
         * that allows you to limit what is visible during the render pass.
-        * 
-        * Note: You cannot mask a Camera that has `renderToTexture` set.
         * @param mask The mask this Camera will use when rendering.
         * @param fixedPosition Should the mask translate along with the Camera, or be fixed in place and not impacted by the Cameras transform? Default true.
         */
@@ -857,8 +897,6 @@ object Cameras {
       
       /**
         * Sets the Scene the Camera is bound to.
-        * 
-        * Also populates the `resolution` property and updates the internal size values.
         * @param scene The Scene the camera is bound to.
         */
       def setScene(scene: Scene): this.type = js.native
@@ -884,8 +922,8 @@ object Cameras {
         * @param width The width of the Camera viewport.
         * @param height The height of the Camera viewport. Default width.
         */
-      def setSize(width: integer): this.type = js.native
-      def setSize(width: integer, height: integer): this.type = js.native
+      def setSize(width: Double): this.type = js.native
+      def setSize(width: Double, height: Double): this.type = js.native
       
       /**
         * This method sets the position and size of the Camera viewport in a single call.
@@ -902,8 +940,8 @@ object Cameras {
         * @param width The width of the Camera viewport.
         * @param height The height of the Camera viewport. Default width.
         */
-      def setViewport(x: Double, y: Double, width: integer): this.type = js.native
-      def setViewport(x: Double, y: Double, width: integer, height: integer): this.type = js.native
+      def setViewport(x: Double, y: Double, width: Double): this.type = js.native
+      def setViewport(x: Double, y: Double, width: Double, height: Double): this.type = js.native
       
       /**
         * Set the zoom value of the Camera.
@@ -914,10 +952,15 @@ object Cameras {
         * A value of 1 means 'no zoom' and is the default.
         * 
         * Changing the zoom does not impact the Camera viewport in any way, it is only applied during rendering.
-        * @param value The zoom value of the Camera. The minimum it can be is 0.001. Default 1.
+        * 
+        * As of Phaser 3.50 you can now set the horizontal and vertical zoom values independently.
+        * @param x The horizontal zoom value of the Camera. The minimum it can be is 0.001. Default 1.
+        * @param y The vertical zoom value of the Camera. The minimum it can be is 0.001. Default x.
         */
       def setZoom(): this.type = js.native
-      def setZoom(value: Double): this.type = js.native
+      def setZoom(x: Double): this.type = js.native
+      def setZoom(x: Double, y: Double): this.type = js.native
+      def setZoom(x: Unit, y: Double): this.type = js.native
       
       /**
         * Returns an Object suitable for JSON storage containing all of the Camera viewport and rendering properties.
@@ -934,7 +977,7 @@ object Cameras {
         * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
         * @param delta The delta time, in ms, elapsed since the last frame.
         */
-      /* protected */ def update(time: integer, delta: Double): Unit = js.native
+      /* protected */ def update(time: Double, delta: Double): Unit = js.native
       
       /**
         * Is this Camera using a bounds to restrict scrolling movement?
@@ -985,6 +1028,32 @@ object Cameras {
         * Be careful to never set this value to zero.
         */
       var zoom: Double = js.native
+      
+      /**
+        * The Camera horizontal zoom value. Change this value to zoom in, or out of, a Scene.
+        * 
+        * A value of 0.5 would zoom the Camera out, so you can now see twice as much
+        * of the Scene as before. A value of 2 would zoom the Camera in, so every pixel
+        * now takes up 2 pixels when rendered.
+        * 
+        * Set to 1 to return to the default zoom level.
+        * 
+        * Be careful to never set this value to zero.
+        */
+      var zoomX: Double = js.native
+      
+      /**
+        * The Camera vertical zoom value. Change this value to zoom in, or out of, a Scene.
+        * 
+        * A value of 0.5 would zoom the Camera out, so you can now see twice as much
+        * of the Scene as before. A value of 2 would zoom the Camera in, so every pixel
+        * now takes up 2 pixels when rendered.
+        * 
+        * Set to 1 to return to the default zoom level.
+        * 
+        * Be careful to never set this value to zero.
+        */
+      var zoomY: Double = js.native
     }
     
     /**
@@ -1014,36 +1083,8 @@ object Cameras {
       extends StObject
          with BaseCamera
          with Flip
-         with Tint {
-      
-      /**
-        * If this Camera has been set to render to a texture then this holds a reference
-        * to the HTML Canvas Element that the Camera is drawing to.
-        * 
-        * Enable texture rendering using the method `setRenderToTexture`.
-        * 
-        * This is only populated if Phaser is running with the Canvas Renderer.
-        */
-      var canvas: HTMLCanvasElement = js.native
-      
-      /**
-        * If this Camera was set to render to a texture, this will clear the resources it was using and
-        * redirect it to render back to the primary Canvas again.
-        * 
-        * If you only wish to temporarily disable rendering to a texture then you can toggle the
-        * property `renderToTexture` instead.
-        */
-      def clearRenderToTexture(): this.type = js.native
-      
-      /**
-        * If this Camera has been set to render to a texture then this holds a reference
-        * to the Rendering Context belonging to the Canvas element the Camera is drawing to.
-        * 
-        * Enable texture rendering using the method `setRenderToTexture`.
-        * 
-        * This is only populated if Phaser is running with the Canvas Renderer.
-        */
-      var context: CanvasRenderingContext2D = js.native
+         with Tint
+         with Pipeline {
       
       /**
         * The Camera dead zone.
@@ -1078,13 +1119,13 @@ object Cameras {
         * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
         */
       def fade(
-        duration: js.UndefOr[integer],
-        red: js.UndefOr[integer],
-        green: js.UndefOr[integer],
-        blue: js.UndefOr[integer],
+        duration: js.UndefOr[Double],
+        red: js.UndefOr[Double],
+        green: js.UndefOr[Double],
+        blue: js.UndefOr[Double],
         force: js.UndefOr[Boolean],
         callback: js.UndefOr[js.Function],
-        context: js.UndefOr[js.Any]
+        context: js.UndefOr[Any]
       ): this.type = js.native
       
       /**
@@ -1105,13 +1146,13 @@ object Cameras {
         * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
         */
       def fadeFrom(
-        duration: js.UndefOr[integer],
-        red: js.UndefOr[integer],
-        green: js.UndefOr[integer],
-        blue: js.UndefOr[integer],
+        duration: js.UndefOr[Double],
+        red: js.UndefOr[Double],
+        green: js.UndefOr[Double],
+        blue: js.UndefOr[Double],
         force: js.UndefOr[Boolean],
         callback: js.UndefOr[js.Function],
-        context: js.UndefOr[js.Any]
+        context: js.UndefOr[Any]
       ): this.type = js.native
       
       /**
@@ -1125,12 +1166,12 @@ object Cameras {
         * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
         */
       def fadeIn(
-        duration: js.UndefOr[integer],
-        red: js.UndefOr[integer],
-        green: js.UndefOr[integer],
-        blue: js.UndefOr[integer],
+        duration: js.UndefOr[Double],
+        red: js.UndefOr[Double],
+        green: js.UndefOr[Double],
+        blue: js.UndefOr[Double],
         callback: js.UndefOr[js.Function],
-        context: js.UndefOr[js.Any]
+        context: js.UndefOr[Any]
       ): this.type = js.native
       
       /**
@@ -1145,12 +1186,12 @@ object Cameras {
         * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
         */
       def fadeOut(
-        duration: js.UndefOr[integer],
-        red: js.UndefOr[integer],
-        green: js.UndefOr[integer],
-        blue: js.UndefOr[integer],
+        duration: js.UndefOr[Double],
+        red: js.UndefOr[Double],
+        green: js.UndefOr[Double],
+        blue: js.UndefOr[Double],
         callback: js.UndefOr[js.Function],
-        context: js.UndefOr[js.Any]
+        context: js.UndefOr[Any]
       ): this.type = js.native
       
       /**
@@ -1165,13 +1206,13 @@ object Cameras {
         * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
         */
       def flash(
-        duration: js.UndefOr[integer],
-        red: js.UndefOr[integer],
-        green: js.UndefOr[integer],
-        blue: js.UndefOr[integer],
+        duration: js.UndefOr[Double],
+        red: js.UndefOr[Double],
+        green: js.UndefOr[Double],
+        blue: js.UndefOr[Double],
         force: js.UndefOr[Boolean],
         callback: js.UndefOr[js.Function],
-        context: js.UndefOr[js.Any]
+        context: js.UndefOr[Any]
       ): this.type = js.native
       
       /**
@@ -1186,26 +1227,6 @@ object Cameras {
         * Can also be set via `setFollowOffset` or as part of the `startFollow` call.
         */
       var followOffset: Vector2 = js.native
-      
-      /**
-        * If this Camera has been set to render to a texture then this holds a reference
-        * to the GL Frame Buffer belonging the Camera is drawing to.
-        * 
-        * Enable texture rendering using the method `setRenderToTexture`.
-        * 
-        * This is only set if Phaser is running with the WebGL Renderer.
-        */
-      var framebuffer: WebGLFramebuffer = js.native
-      
-      /**
-        * If this Camera has been set to render to a texture then this holds a reference
-        * to the GL Texture belonging the Camera is drawing to.
-        * 
-        * Enable texture rendering using the method `setRenderToTexture`.
-        * 
-        * This is only set if Phaser is running with the WebGL Renderer.
-        */
-      var glTexture: WebGLTexture = js.native
       
       /**
         * Does this Camera allow the Game Objects it renders to receive input events?
@@ -1240,17 +1261,111 @@ object Cameras {
         * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
         */
       def pan(x: Double, y: Double): this.type = js.native
-      def pan(x: Double, y: Double, duration: Unit, ease: String): this.type = js.native
-      def pan(x: Double, y: Double, duration: Unit, ease: String, force: Boolean): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: String): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: String, force: Boolean): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: String, force: Boolean, callback: Unit, context: Any): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: String, force: Boolean, callback: CameraPanCallback): this.type = js.native
       def pan(
         x: Double,
         y: Double,
-        duration: Unit,
+        duration: Double,
         ease: String,
         force: Boolean,
-        callback: Unit,
-        context: js.Any
+        callback: CameraPanCallback,
+        context: Any
       ): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: String, force: Unit, callback: Unit, context: Any): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: String, force: Unit, callback: CameraPanCallback): this.type = js.native
+      def pan(
+        x: Double,
+        y: Double,
+        duration: Double,
+        ease: String,
+        force: Unit,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: js.Function): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: js.Function, force: Boolean): this.type = js.native
+      def pan(
+        x: Double,
+        y: Double,
+        duration: Double,
+        ease: js.Function,
+        force: Boolean,
+        callback: Unit,
+        context: Any
+      ): this.type = js.native
+      def pan(
+        x: Double,
+        y: Double,
+        duration: Double,
+        ease: js.Function,
+        force: Boolean,
+        callback: CameraPanCallback
+      ): this.type = js.native
+      def pan(
+        x: Double,
+        y: Double,
+        duration: Double,
+        ease: js.Function,
+        force: Boolean,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def pan(
+        x: Double,
+        y: Double,
+        duration: Double,
+        ease: js.Function,
+        force: Unit,
+        callback: Unit,
+        context: Any
+      ): this.type = js.native
+      def pan(
+        x: Double,
+        y: Double,
+        duration: Double,
+        ease: js.Function,
+        force: Unit,
+        callback: CameraPanCallback
+      ): this.type = js.native
+      def pan(
+        x: Double,
+        y: Double,
+        duration: Double,
+        ease: js.Function,
+        force: Unit,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: Unit, force: Boolean): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: Unit, force: Boolean, callback: Unit, context: Any): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: Unit, force: Boolean, callback: CameraPanCallback): this.type = js.native
+      def pan(
+        x: Double,
+        y: Double,
+        duration: Double,
+        ease: Unit,
+        force: Boolean,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: Unit, force: Unit, callback: Unit, context: Any): this.type = js.native
+      def pan(x: Double, y: Double, duration: Double, ease: Unit, force: Unit, callback: CameraPanCallback): this.type = js.native
+      def pan(
+        x: Double,
+        y: Double,
+        duration: Double,
+        ease: Unit,
+        force: Unit,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def pan(x: Double, y: Double, duration: Unit, ease: String): this.type = js.native
+      def pan(x: Double, y: Double, duration: Unit, ease: String, force: Boolean): this.type = js.native
+      def pan(x: Double, y: Double, duration: Unit, ease: String, force: Boolean, callback: Unit, context: Any): this.type = js.native
       def pan(x: Double, y: Double, duration: Unit, ease: String, force: Boolean, callback: CameraPanCallback): this.type = js.native
       def pan(
         x: Double,
@@ -1259,9 +1374,9 @@ object Cameras {
         ease: String,
         force: Boolean,
         callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
-      def pan(x: Double, y: Double, duration: Unit, ease: String, force: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def pan(x: Double, y: Double, duration: Unit, ease: String, force: Unit, callback: Unit, context: Any): this.type = js.native
       def pan(x: Double, y: Double, duration: Unit, ease: String, force: Unit, callback: CameraPanCallback): this.type = js.native
       def pan(
         x: Double,
@@ -1270,7 +1385,7 @@ object Cameras {
         ease: String,
         force: Unit,
         callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
       def pan(x: Double, y: Double, duration: Unit, ease: js.Function): this.type = js.native
       def pan(x: Double, y: Double, duration: Unit, ease: js.Function, force: Boolean): this.type = js.native
@@ -1281,7 +1396,7 @@ object Cameras {
         ease: js.Function,
         force: Boolean,
         callback: Unit,
-        context: js.Any
+        context: Any
       ): this.type = js.native
       def pan(
         x: Double,
@@ -1298,17 +1413,9 @@ object Cameras {
         ease: js.Function,
         force: Boolean,
         callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: Unit,
-        ease: js.Function,
-        force: Unit,
-        callback: Unit,
-        context: js.Any
-      ): this.type = js.native
+      def pan(x: Double, y: Double, duration: Unit, ease: js.Function, force: Unit, callback: Unit, context: Any): this.type = js.native
       def pan(x: Double, y: Double, duration: Unit, ease: js.Function, force: Unit, callback: CameraPanCallback): this.type = js.native
       def pan(
         x: Double,
@@ -1317,10 +1424,10 @@ object Cameras {
         ease: js.Function,
         force: Unit,
         callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
       def pan(x: Double, y: Double, duration: Unit, ease: Unit, force: Boolean): this.type = js.native
-      def pan(x: Double, y: Double, duration: Unit, ease: Unit, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
+      def pan(x: Double, y: Double, duration: Unit, ease: Unit, force: Boolean, callback: Unit, context: Any): this.type = js.native
       def pan(x: Double, y: Double, duration: Unit, ease: Unit, force: Boolean, callback: CameraPanCallback): this.type = js.native
       def pan(
         x: Double,
@@ -1329,9 +1436,9 @@ object Cameras {
         ease: Unit,
         force: Boolean,
         callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
-      def pan(x: Double, y: Double, duration: Unit, ease: Unit, force: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def pan(x: Double, y: Double, duration: Unit, ease: Unit, force: Unit, callback: Unit, context: Any): this.type = js.native
       def pan(x: Double, y: Double, duration: Unit, ease: Unit, force: Unit, callback: CameraPanCallback): this.type = js.native
       def pan(
         x: Double,
@@ -1340,133 +1447,7 @@ object Cameras {
         ease: Unit,
         force: Unit,
         callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: String): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: String, force: Boolean): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: String,
-        force: Boolean,
-        callback: Unit,
-        context: js.Any
-      ): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: String, force: Boolean, callback: CameraPanCallback): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: String,
-        force: Boolean,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: String,
-        force: Unit,
-        callback: Unit,
-        context: js.Any
-      ): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: String, force: Unit, callback: CameraPanCallback): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: String,
-        force: Unit,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: js.Function): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: js.Function, force: Boolean): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: js.Function,
-        force: Boolean,
-        callback: Unit,
-        context: js.Any
-      ): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: js.Function,
-        force: Boolean,
-        callback: CameraPanCallback
-      ): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: js.Function,
-        force: Boolean,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: js.Function,
-        force: Unit,
-        callback: Unit,
-        context: js.Any
-      ): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: js.Function,
-        force: Unit,
-        callback: CameraPanCallback
-      ): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: js.Function,
-        force: Unit,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: Unit, force: Boolean): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: Unit,
-        force: Boolean,
-        callback: Unit,
-        context: js.Any
-      ): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: Unit, force: Boolean, callback: CameraPanCallback): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: Unit,
-        force: Boolean,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: Unit, force: Unit, callback: Unit, context: js.Any): this.type = js.native
-      def pan(x: Double, y: Double, duration: integer, ease: Unit, force: Unit, callback: CameraPanCallback): this.type = js.native
-      def pan(
-        x: Double,
-        y: Double,
-        duration: integer,
-        ease: Unit,
-        force: Unit,
-        callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
       
       /**
@@ -1474,40 +1455,6 @@ object Cameras {
         * To pan this camera see the `Camera.pan` method.
         */
       var panEffect: Pan = js.native
-      
-      /**
-        * If this Camera has been set to render to a texture and to use a custom pipeline,
-        * then this holds a reference to the pipeline the Camera is drawing with.
-        * 
-        * Enable texture rendering using the method `setRenderToTexture`.
-        * 
-        * This is only set if Phaser is running with the WebGL Renderer.
-        */
-      var pipeline: js.Any = js.native
-      
-      /**
-        * If this Camera is rendering to a texture (via `setRenderToTexture`) then you
-        * have the option to control if it should also render to the Game canvas as well.
-        * 
-        * By default, a Camera will render both to its texture and to the Game canvas.
-        * 
-        * However, if you set ths property to `false` it will only render to the texture
-        * and skip rendering to the Game canvas.
-        * 
-        * Setting this property if the Camera isn't rendering to a texture has no effect.
-        */
-      var renderToGame: Boolean = js.native
-      
-      /**
-        * Is this Camera rendering directly to the canvas or to a texture?
-        * 
-        * Enable rendering to texture with the method `setRenderToTexture` (just enabling this boolean won't be enough)
-        * 
-        * Once enabled you can toggle it by switching this property.
-        * 
-        * To properly remove a render texture you should call the `clearRenderToTexture()` method.
-        */
-      var renderToTexture: Boolean = js.native
       
       /**
         * Resets any active FX, such as a fade, flash or shake. Useful to call after a fade in order to
@@ -1531,11 +1478,11 @@ object Cameras {
       def rotateTo(
         radians: Double,
         shortestPath: js.UndefOr[Boolean],
-        duration: js.UndefOr[integer],
+        duration: js.UndefOr[Double],
         ease: js.UndefOr[String | js.Function],
         force: js.UndefOr[Boolean],
         callback: js.UndefOr[CameraRotateCallback],
-        context: js.UndefOr[js.Any]
+        context: js.UndefOr[Any]
       ): Camera = js.native
       
       /**
@@ -1596,61 +1543,6 @@ object Cameras {
       def setLerp(x: Unit, y: Double): this.type = js.native
       
       /**
-        * Sets the WebGL pipeline this Camera is using when rendering to a texture.
-        * 
-        * You can pass either the string-based name of the pipeline, or a reference to the pipeline itself.
-        * 
-        * Call this method with no arguments to clear any previously set pipeline.
-        * @param pipeline The WebGL Pipeline to render with, can be either a string which is the name of the pipeline, or a pipeline reference. Or if left empty it will clear the pipeline.
-        */
-      def setPipeline(): this.type = js.native
-      def setPipeline(pipeline: String): this.type = js.native
-      def setPipeline(pipeline: WebGLPipeline): this.type = js.native
-      
-      /**
-        * Sets the Camera to render to a texture instead of to the main canvas.
-        * 
-        * The Camera will redirect all Game Objects it's asked to render to this texture.
-        * 
-        * During the render sequence, the texture itself will then be rendered to the main canvas.
-        * 
-        * Doing this gives you the ability to modify the texture before this happens,
-        * allowing for special effects such as Camera specific shaders, or post-processing
-        * on the texture.
-        * 
-        * If running under Canvas the Camera will render to its `canvas` property.
-        * 
-        * If running under WebGL the Camera will create a frame buffer, which is stored in its `framebuffer` and `glTexture` properties.
-        * 
-        * If you set a camera to render to a texture then it will emit 2 events during the render loop:
-        * 
-        * First, it will emit the event `prerender`. This happens right before any Game Object's are drawn to the Camera texture.
-        * 
-        * Then, it will emit the event `postrender`. This happens after all Game Object's have been drawn, but right before the
-        * Camera texture is rendered to the main game canvas. It's the final point at which you can manipulate the texture before
-        * it appears in-game.
-        * 
-        * You should not enable this unless you plan on actually using the texture it creates
-        * somehow, otherwise you're just doubling the work required to render your game.
-        * 
-        * If you only require the Camera to render to a texture, and not also to the Game,
-        * them set the `renderToGame` parameter to `false`.
-        * 
-        * To temporarily disable rendering to a texture, toggle the `renderToTexture` boolean.
-        * 
-        * If you no longer require the Camera to render to a texture, call the `clearRenderToTexture` method,
-        * which will delete the respective textures and free-up resources.
-        * @param pipeline An optional WebGL Pipeline to render with, can be either a string which is the name of the pipeline, or a pipeline reference.
-        * @param renderToGame If you do not need the Camera to still render to the Game, set this parameter to `false`. Default true.
-        */
-      def setRenderToTexture(): this.type = js.native
-      def setRenderToTexture(pipeline: String): this.type = js.native
-      def setRenderToTexture(pipeline: String, renderToGame: Boolean): this.type = js.native
-      def setRenderToTexture(pipeline: Unit, renderToGame: Boolean): this.type = js.native
-      def setRenderToTexture(pipeline: WebGLPipeline): this.type = js.native
-      def setRenderToTexture(pipeline: WebGLPipeline, renderToGame: Boolean): this.type = js.native
-      
-      /**
         * Shakes the Camera by the given intensity over the duration specified.
         * @param duration The duration of the effect in milliseconds. Default 100.
         * @param intensity The intensity of the shake. Default 0.05.
@@ -1660,53 +1552,53 @@ object Cameras {
         * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
         */
       def shake(): this.type = js.native
+      def shake(duration: Double): this.type = js.native
+      def shake(duration: Double, intensity: Double): this.type = js.native
+      def shake(duration: Double, intensity: Double, force: Boolean): this.type = js.native
+      def shake(duration: Double, intensity: Double, force: Boolean, callback: js.Function): this.type = js.native
+      def shake(duration: Double, intensity: Double, force: Boolean, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Double, force: Boolean, callback: Unit, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Double, force: Unit, callback: js.Function): this.type = js.native
+      def shake(duration: Double, intensity: Double, force: Unit, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Double, force: Unit, callback: Unit, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Unit, force: Boolean): this.type = js.native
+      def shake(duration: Double, intensity: Unit, force: Boolean, callback: js.Function): this.type = js.native
+      def shake(duration: Double, intensity: Unit, force: Boolean, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Unit, force: Boolean, callback: Unit, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Unit, force: Unit, callback: js.Function): this.type = js.native
+      def shake(duration: Double, intensity: Unit, force: Unit, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Unit, force: Unit, callback: Unit, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Vector2): this.type = js.native
+      def shake(duration: Double, intensity: Vector2, force: Boolean): this.type = js.native
+      def shake(duration: Double, intensity: Vector2, force: Boolean, callback: js.Function): this.type = js.native
+      def shake(duration: Double, intensity: Vector2, force: Boolean, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Vector2, force: Boolean, callback: Unit, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Vector2, force: Unit, callback: js.Function): this.type = js.native
+      def shake(duration: Double, intensity: Vector2, force: Unit, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Double, intensity: Vector2, force: Unit, callback: Unit, context: Any): this.type = js.native
       def shake(duration: Unit, intensity: Double): this.type = js.native
       def shake(duration: Unit, intensity: Double, force: Boolean): this.type = js.native
       def shake(duration: Unit, intensity: Double, force: Boolean, callback: js.Function): this.type = js.native
-      def shake(duration: Unit, intensity: Double, force: Boolean, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: Unit, intensity: Double, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
+      def shake(duration: Unit, intensity: Double, force: Boolean, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Unit, intensity: Double, force: Boolean, callback: Unit, context: Any): this.type = js.native
       def shake(duration: Unit, intensity: Double, force: Unit, callback: js.Function): this.type = js.native
-      def shake(duration: Unit, intensity: Double, force: Unit, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: Unit, intensity: Double, force: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def shake(duration: Unit, intensity: Double, force: Unit, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Unit, intensity: Double, force: Unit, callback: Unit, context: Any): this.type = js.native
       def shake(duration: Unit, intensity: Unit, force: Boolean): this.type = js.native
       def shake(duration: Unit, intensity: Unit, force: Boolean, callback: js.Function): this.type = js.native
-      def shake(duration: Unit, intensity: Unit, force: Boolean, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: Unit, intensity: Unit, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
+      def shake(duration: Unit, intensity: Unit, force: Boolean, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Unit, intensity: Unit, force: Boolean, callback: Unit, context: Any): this.type = js.native
       def shake(duration: Unit, intensity: Unit, force: Unit, callback: js.Function): this.type = js.native
-      def shake(duration: Unit, intensity: Unit, force: Unit, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: Unit, intensity: Unit, force: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def shake(duration: Unit, intensity: Unit, force: Unit, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Unit, intensity: Unit, force: Unit, callback: Unit, context: Any): this.type = js.native
       def shake(duration: Unit, intensity: Vector2): this.type = js.native
       def shake(duration: Unit, intensity: Vector2, force: Boolean): this.type = js.native
       def shake(duration: Unit, intensity: Vector2, force: Boolean, callback: js.Function): this.type = js.native
-      def shake(duration: Unit, intensity: Vector2, force: Boolean, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: Unit, intensity: Vector2, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
+      def shake(duration: Unit, intensity: Vector2, force: Boolean, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Unit, intensity: Vector2, force: Boolean, callback: Unit, context: Any): this.type = js.native
       def shake(duration: Unit, intensity: Vector2, force: Unit, callback: js.Function): this.type = js.native
-      def shake(duration: Unit, intensity: Vector2, force: Unit, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: Unit, intensity: Vector2, force: Unit, callback: Unit, context: js.Any): this.type = js.native
-      def shake(duration: integer): this.type = js.native
-      def shake(duration: integer, intensity: Double): this.type = js.native
-      def shake(duration: integer, intensity: Double, force: Boolean): this.type = js.native
-      def shake(duration: integer, intensity: Double, force: Boolean, callback: js.Function): this.type = js.native
-      def shake(duration: integer, intensity: Double, force: Boolean, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Double, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Double, force: Unit, callback: js.Function): this.type = js.native
-      def shake(duration: integer, intensity: Double, force: Unit, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Double, force: Unit, callback: Unit, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Unit, force: Boolean): this.type = js.native
-      def shake(duration: integer, intensity: Unit, force: Boolean, callback: js.Function): this.type = js.native
-      def shake(duration: integer, intensity: Unit, force: Boolean, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Unit, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Unit, force: Unit, callback: js.Function): this.type = js.native
-      def shake(duration: integer, intensity: Unit, force: Unit, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Unit, force: Unit, callback: Unit, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Vector2): this.type = js.native
-      def shake(duration: integer, intensity: Vector2, force: Boolean): this.type = js.native
-      def shake(duration: integer, intensity: Vector2, force: Boolean, callback: js.Function): this.type = js.native
-      def shake(duration: integer, intensity: Vector2, force: Boolean, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Vector2, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Vector2, force: Unit, callback: js.Function): this.type = js.native
-      def shake(duration: integer, intensity: Vector2, force: Unit, callback: js.Function, context: js.Any): this.type = js.native
-      def shake(duration: integer, intensity: Vector2, force: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def shake(duration: Unit, intensity: Vector2, force: Unit, callback: js.Function, context: Any): this.type = js.native
+      def shake(duration: Unit, intensity: Vector2, force: Unit, callback: Unit, context: Any): this.type = js.native
       
       /**
         * The Camera Shake effect handler.
@@ -1766,9 +1658,68 @@ object Cameras {
         * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
         */
       def zoomTo(zoom: Double): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: String): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: String, force: Boolean): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: String, force: Boolean, callback: Unit, context: Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: String, force: Boolean, callback: CameraPanCallback): this.type = js.native
+      def zoomTo(
+        zoom: Double,
+        duration: Double,
+        ease: String,
+        force: Boolean,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: String, force: Unit, callback: Unit, context: Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: String, force: Unit, callback: CameraPanCallback): this.type = js.native
+      def zoomTo(
+        zoom: Double,
+        duration: Double,
+        ease: String,
+        force: Unit,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: js.Function): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: js.Function, force: Boolean): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: js.Function, force: Boolean, callback: Unit, context: Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: js.Function, force: Boolean, callback: CameraPanCallback): this.type = js.native
+      def zoomTo(
+        zoom: Double,
+        duration: Double,
+        ease: js.Function,
+        force: Boolean,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: js.Function, force: Unit, callback: Unit, context: Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: js.Function, force: Unit, callback: CameraPanCallback): this.type = js.native
+      def zoomTo(
+        zoom: Double,
+        duration: Double,
+        ease: js.Function,
+        force: Unit,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: Unit, force: Boolean): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: Unit, force: Boolean, callback: Unit, context: Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: Unit, force: Boolean, callback: CameraPanCallback): this.type = js.native
+      def zoomTo(
+        zoom: Double,
+        duration: Double,
+        ease: Unit,
+        force: Boolean,
+        callback: CameraPanCallback,
+        context: Any
+      ): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: Unit, force: Unit, callback: Unit, context: Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: Unit, force: Unit, callback: CameraPanCallback): this.type = js.native
+      def zoomTo(zoom: Double, duration: Double, ease: Unit, force: Unit, callback: CameraPanCallback, context: Any): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: String): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: String, force: Boolean): this.type = js.native
-      def zoomTo(zoom: Double, duration: Unit, ease: String, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Unit, ease: String, force: Boolean, callback: Unit, context: Any): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: String, force: Boolean, callback: CameraPanCallback): this.type = js.native
       def zoomTo(
         zoom: Double,
@@ -1776,21 +1727,14 @@ object Cameras {
         ease: String,
         force: Boolean,
         callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
-      def zoomTo(zoom: Double, duration: Unit, ease: String, force: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Unit, ease: String, force: Unit, callback: Unit, context: Any): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: String, force: Unit, callback: CameraPanCallback): this.type = js.native
-      def zoomTo(
-        zoom: Double,
-        duration: Unit,
-        ease: String,
-        force: Unit,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
+      def zoomTo(zoom: Double, duration: Unit, ease: String, force: Unit, callback: CameraPanCallback, context: Any): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: js.Function): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: js.Function, force: Boolean): this.type = js.native
-      def zoomTo(zoom: Double, duration: Unit, ease: js.Function, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Unit, ease: js.Function, force: Boolean, callback: Unit, context: Any): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: js.Function, force: Boolean, callback: CameraPanCallback): this.type = js.native
       def zoomTo(
         zoom: Double,
@@ -1798,9 +1742,9 @@ object Cameras {
         ease: js.Function,
         force: Boolean,
         callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
-      def zoomTo(zoom: Double, duration: Unit, ease: js.Function, force: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Unit, ease: js.Function, force: Unit, callback: Unit, context: Any): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: js.Function, force: Unit, callback: CameraPanCallback): this.type = js.native
       def zoomTo(
         zoom: Double,
@@ -1808,10 +1752,10 @@ object Cameras {
         ease: js.Function,
         force: Unit,
         callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: Unit, force: Boolean): this.type = js.native
-      def zoomTo(zoom: Double, duration: Unit, ease: Unit, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Unit, ease: Unit, force: Boolean, callback: Unit, context: Any): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: Unit, force: Boolean, callback: CameraPanCallback): this.type = js.native
       def zoomTo(
         zoom: Double,
@@ -1819,91 +1763,11 @@ object Cameras {
         ease: Unit,
         force: Boolean,
         callback: CameraPanCallback,
-        context: js.Any
+        context: Any
       ): this.type = js.native
-      def zoomTo(zoom: Double, duration: Unit, ease: Unit, force: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def zoomTo(zoom: Double, duration: Unit, ease: Unit, force: Unit, callback: Unit, context: Any): this.type = js.native
       def zoomTo(zoom: Double, duration: Unit, ease: Unit, force: Unit, callback: CameraPanCallback): this.type = js.native
-      def zoomTo(
-        zoom: Double,
-        duration: Unit,
-        ease: Unit,
-        force: Unit,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: String): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: String, force: Boolean): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: String, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: String, force: Boolean, callback: CameraPanCallback): this.type = js.native
-      def zoomTo(
-        zoom: Double,
-        duration: integer,
-        ease: String,
-        force: Boolean,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: String, force: Unit, callback: Unit, context: js.Any): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: String, force: Unit, callback: CameraPanCallback): this.type = js.native
-      def zoomTo(
-        zoom: Double,
-        duration: integer,
-        ease: String,
-        force: Unit,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: js.Function): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: js.Function, force: Boolean): this.type = js.native
-      def zoomTo(
-        zoom: Double,
-        duration: integer,
-        ease: js.Function,
-        force: Boolean,
-        callback: Unit,
-        context: js.Any
-      ): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: js.Function, force: Boolean, callback: CameraPanCallback): this.type = js.native
-      def zoomTo(
-        zoom: Double,
-        duration: integer,
-        ease: js.Function,
-        force: Boolean,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: js.Function, force: Unit, callback: Unit, context: js.Any): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: js.Function, force: Unit, callback: CameraPanCallback): this.type = js.native
-      def zoomTo(
-        zoom: Double,
-        duration: integer,
-        ease: js.Function,
-        force: Unit,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: Unit, force: Boolean): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: Unit, force: Boolean, callback: Unit, context: js.Any): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: Unit, force: Boolean, callback: CameraPanCallback): this.type = js.native
-      def zoomTo(
-        zoom: Double,
-        duration: integer,
-        ease: Unit,
-        force: Boolean,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: Unit, force: Unit, callback: Unit, context: js.Any): this.type = js.native
-      def zoomTo(zoom: Double, duration: integer, ease: Unit, force: Unit, callback: CameraPanCallback): this.type = js.native
-      def zoomTo(
-        zoom: Double,
-        duration: integer,
-        ease: Unit,
-        force: Unit,
-        callback: CameraPanCallback,
-        context: js.Any
-      ): this.type = js.native
+      def zoomTo(zoom: Double, duration: Unit, ease: Unit, force: Unit, callback: CameraPanCallback, context: Any): this.type = js.native
     }
     
     /**
@@ -1929,7 +1793,7 @@ object Cameras {
       * viewport, and changing the viewport has no impact on the scrolling.
       * 
       * By default a Camera will render all Game Objects it can see. You can change this using the `ignore` method,
-      * allowing you to filter Game Objects out on a per-Camera basis. The Camera Manager can manage up to 31 unique 
+      * allowing you to filter Game Objects out on a per-Camera basis. The Camera Manager can manage up to 31 unique
       * 'Game Object ignore capable' Cameras. Any Cameras beyond 31 that you create will all be given a Camera ID of
       * zero, meaning that they cannot be used for Game Object exclusion. This means if you need your Camera to ignore
       * Game Objects, make sure it's one of the first 31 created.
@@ -1971,10 +1835,10 @@ object Cameras {
         * @param name The name of the Camera. Default ''.
         */
       def add(
-        x: js.UndefOr[integer],
-        y: js.UndefOr[integer],
-        width: js.UndefOr[integer],
-        height: js.UndefOr[integer],
+        x: js.UndefOr[Double],
+        y: js.UndefOr[Double],
+        width: js.UndefOr[Double],
+        height: js.UndefOr[Double],
         makeMain: js.UndefOr[Boolean],
         name: js.UndefOr[String]
       ): Camera = js.native
@@ -2037,8 +1901,17 @@ object Cameras {
         * If the optional `isVisible` argument is set it will only count Cameras that are currently visible.
         * @param isVisible Set the `true` to only include visible Cameras in the total. Default false.
         */
-      def getTotal(): integer = js.native
-      def getTotal(isVisible: Boolean): integer = js.native
+      def getTotal(): Double = js.native
+      def getTotal(isVisible: Boolean): Double = js.native
+      
+      /**
+        * Takes an array of Game Objects and a Camera and returns a new array
+        * containing only those Game Objects that pass the `willRender` test
+        * against the given Camera.
+        * @param children An array of Game Objects to be checked against the camera.
+        * @param camera The camera to filte the Game Objects against.
+        */
+      def getVisibleChildren(children: js.Array[GameObject], camera: Camera): js.Array[GameObject] = js.native
       
       /**
         * A handy reference to the 'main' camera. By default this is the first Camera the
@@ -2056,12 +1929,12 @@ object Cameras {
       /**
         * The event handler that manages the `resize` event dispatched by the Scale Manager.
         * @param gameSize The default Game Size object. This is the un-modified game dimensions.
-        * @param baseSize The base Size object. The game dimensions multiplied by the resolution. The canvas width / height values match this.
+        * @param baseSize The base Size object. The game dimensions. The canvas width / height values match this.
         */
       def onResize(gameSize: Size, baseSize: Size): Unit = js.native
       
-      def remove(camera: js.Array[Camera]): integer = js.native
-      def remove(camera: js.Array[Camera], runDestroy: Boolean): integer = js.native
+      def remove(camera: js.Array[Camera]): Double = js.native
+      def remove(camera: js.Array[Camera], runDestroy: Boolean): Double = js.native
       /**
         * Removes the given Camera, or an array of Cameras, from this Camera Manager.
         * 
@@ -2074,8 +1947,8 @@ object Cameras {
         * @param camera The Camera, or an array of Cameras, to be removed from this Camera Manager.
         * @param runDestroy Automatically call `Camera.destroy` on each Camera removed from this Camera Manager. Default true.
         */
-      def remove(camera: Camera): integer = js.native
-      def remove(camera: Camera, runDestroy: Boolean): integer = js.native
+      def remove(camera: Camera): Double = js.native
+      def remove(camera: Camera, runDestroy: Boolean): Double = js.native
       
       /**
         * The internal render method. This is called automatically by the Scene and should not be invoked directly.
@@ -2083,11 +1956,10 @@ object Cameras {
         * It will iterate through all local cameras and render them in turn, as long as they're visible and have
         * an alpha level > 0.
         * @param renderer The Renderer that will render the children to this camera.
-        * @param children An array of renderable Game Objects.
-        * @param interpolation Interpolation value. Reserved for future use.
+        * @param displayList The Display List for the Scene.
         */
-      /* protected */ def render(renderer: CanvasRenderer, children: js.Array[GameObject], interpolation: Double): Unit = js.native
-      /* protected */ def render(renderer: WebGLRenderer, children: js.Array[GameObject], interpolation: Double): Unit = js.native
+      /* protected */ def render(renderer: CanvasRenderer, displayList: DisplayList): Unit = js.native
+      /* protected */ def render(renderer: WebGLRenderer, displayList: DisplayList): Unit = js.native
       
       /**
         * Resets this Camera Manager.
@@ -2127,7 +1999,7 @@ object Cameras {
         * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
         * @param delta The delta time, in ms, elapsed since the last frame.
         */
-      /* protected */ def update(time: integer, delta: Double): Unit = js.native
+      /* protected */ def update(time: Double, delta: Double): Unit = js.native
     }
     
     object Effects {
@@ -2164,7 +2036,7 @@ object Cameras {
         /**
           * The duration of the effect, in milliseconds.
           */
-        val duration: integer
+        val duration: Double
         
         /**
           * Called internally when the effect completes.
@@ -2192,10 +2064,10 @@ object Cameras {
         
         /**
           * Called internally by the WebGL Renderer.
-          * @param pipeline The WebGL Pipeline to render to.
+          * @param pipeline The WebGL Pipeline to render to. Must provide the `drawFillRect` method.
           * @param getTintFunction A function that will return the gl safe tint colors.
           */
-        def postRenderWebGL(pipeline: TextureTintPipeline, getTintFunction: js.Function): Boolean
+        def postRenderWebGL(pipeline: MultiPipeline, getTintFunction: js.Function): Boolean
         
         /**
           * If this effect is running this holds the current percentage of the progress, a value between 0 and 1.
@@ -2222,13 +2094,13 @@ object Cameras {
           */
         def start(
           direction: js.UndefOr[Boolean],
-          duration: js.UndefOr[integer],
-          red: js.UndefOr[integer],
-          green: js.UndefOr[integer],
-          blue: js.UndefOr[integer],
+          duration: js.UndefOr[Double],
+          red: js.UndefOr[Double],
+          green: js.UndefOr[Double],
+          blue: js.UndefOr[Double],
           force: js.UndefOr[Boolean],
           callback: js.UndefOr[CameraFadeCallback],
-          context: js.UndefOr[js.Any]
+          context: js.UndefOr[Any]
         ): Camera
         
         /**
@@ -2236,7 +2108,7 @@ object Cameras {
           * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
           * @param delta The delta time, in ms, elapsed since the last frame.
           */
-        def update(time: integer, delta: Double): Unit
+        def update(time: Double, delta: Double): Unit
       }
       object Fade {
         
@@ -2244,16 +2116,16 @@ object Cameras {
           camera: Camera,
           destroy: () => Unit,
           direction: Boolean,
-          duration: integer,
+          duration: Double,
           effectComplete: () => Unit,
           isComplete: Boolean,
           isRunning: Boolean,
           postRenderCanvas: CanvasRenderingContext2D => Boolean,
-          postRenderWebGL: (TextureTintPipeline, js.Function) => Boolean,
+          postRenderWebGL: (MultiPipeline, js.Function) => Boolean,
           progress: Double,
           reset: () => Unit,
-          start: (js.UndefOr[Boolean], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[Boolean], js.UndefOr[CameraFadeCallback], js.UndefOr[js.Any]) => Camera,
-          update: (integer, Double) => Unit
+          start: (js.UndefOr[Boolean], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Boolean], js.UndefOr[CameraFadeCallback], js.UndefOr[Any]) => Camera,
+          update: (Double, Double) => Unit
         ): Fade = {
           val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), direction = direction.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], effectComplete = js.Any.fromFunction0(effectComplete), isComplete = isComplete.asInstanceOf[js.Any], isRunning = isRunning.asInstanceOf[js.Any], postRenderCanvas = js.Any.fromFunction1(postRenderCanvas), postRenderWebGL = js.Any.fromFunction2(postRenderWebGL), progress = progress.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), start = js.Any.fromFunction8(start), update = js.Any.fromFunction2(update))
           __obj.asInstanceOf[Fade]
@@ -2267,7 +2139,7 @@ object Cameras {
           
           inline def setDirection(value: Boolean): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
           
-          inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+          inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
           
           inline def setEffectComplete(value: () => Unit): Self = StObject.set(x, "effectComplete", js.Any.fromFunction0(value))
           
@@ -2277,17 +2149,17 @@ object Cameras {
           
           inline def setPostRenderCanvas(value: CanvasRenderingContext2D => Boolean): Self = StObject.set(x, "postRenderCanvas", js.Any.fromFunction1(value))
           
-          inline def setPostRenderWebGL(value: (TextureTintPipeline, js.Function) => Boolean): Self = StObject.set(x, "postRenderWebGL", js.Any.fromFunction2(value))
+          inline def setPostRenderWebGL(value: (MultiPipeline, js.Function) => Boolean): Self = StObject.set(x, "postRenderWebGL", js.Any.fromFunction2(value))
           
           inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
           
           inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
           
           inline def setStart(
-            value: (js.UndefOr[Boolean], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[Boolean], js.UndefOr[CameraFadeCallback], js.UndefOr[js.Any]) => Camera
+            value: (js.UndefOr[Boolean], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Boolean], js.UndefOr[CameraFadeCallback], js.UndefOr[Any]) => Camera
           ): Self = StObject.set(x, "start", js.Any.fromFunction8(value))
           
-          inline def setUpdate(value: (integer, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+          inline def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
         }
       }
       
@@ -2317,7 +2189,7 @@ object Cameras {
         /**
           * The duration of the effect, in milliseconds.
           */
-        val duration: integer
+        val duration: Double
         
         /**
           * Called internally when the effect completes.
@@ -2337,10 +2209,10 @@ object Cameras {
         
         /**
           * Called internally by the WebGL Renderer.
-          * @param pipeline The WebGL Pipeline to render to.
+          * @param pipeline The WebGL Pipeline to render to. Must provide the `drawFillRect` method.
           * @param getTintFunction A function that will return the gl safe tint colors.
           */
-        def postRenderWebGL(pipeline: TextureTintPipeline, getTintFunction: js.Function): Boolean
+        def postRenderWebGL(pipeline: MultiPipeline, getTintFunction: js.Function): Boolean
         
         /**
           * If this effect is running this holds the current percentage of the progress, a value between 0 and 1.
@@ -2356,22 +2228,22 @@ object Cameras {
         /**
           * Flashes the Camera to or from the given color over the duration specified.
           * @param duration The duration of the effect in milliseconds. Default 250.
-          * @param red The amount to fade the red channel towards. A value between 0 and 255. Default 255.
-          * @param green The amount to fade the green channel towards. A value between 0 and 255. Default 255.
-          * @param blue The amount to fade the blue channel towards. A value between 0 and 255. Default 255.
+          * @param red The amount to flash the red channel towards. A value between 0 and 255. Default 255.
+          * @param green The amount to flash the green channel towards. A value between 0 and 255. Default 255.
+          * @param blue The amount to flash the blue channel towards. A value between 0 and 255. Default 255.
           * @param force Force the effect to start immediately, even if already running. Default false.
           * @param callback This callback will be invoked every frame for the duration of the effect.
           * It is sent two arguments: A reference to the camera and a progress amount between 0 and 1 indicating how complete the effect is.
           * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
           */
         def start(
-          duration: js.UndefOr[integer],
-          red: js.UndefOr[integer],
-          green: js.UndefOr[integer],
-          blue: js.UndefOr[integer],
+          duration: js.UndefOr[Double],
+          red: js.UndefOr[Double],
+          green: js.UndefOr[Double],
+          blue: js.UndefOr[Double],
           force: js.UndefOr[Boolean],
           callback: js.UndefOr[CameraFlashCallback],
-          context: js.UndefOr[js.Any]
+          context: js.UndefOr[Any]
         ): Camera
         
         /**
@@ -2379,22 +2251,22 @@ object Cameras {
           * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
           * @param delta The delta time, in ms, elapsed since the last frame.
           */
-        def update(time: integer, delta: Double): Unit
+        def update(time: Double, delta: Double): Unit
       }
       object Flash {
         
         inline def apply(
           camera: Camera,
           destroy: () => Unit,
-          duration: integer,
+          duration: Double,
           effectComplete: () => Unit,
           isRunning: Boolean,
           postRenderCanvas: CanvasRenderingContext2D => Boolean,
-          postRenderWebGL: (TextureTintPipeline, js.Function) => Boolean,
+          postRenderWebGL: (MultiPipeline, js.Function) => Boolean,
           progress: Double,
           reset: () => Unit,
-          start: (js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[Boolean], js.UndefOr[CameraFlashCallback], js.UndefOr[js.Any]) => Camera,
-          update: (integer, Double) => Unit
+          start: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Boolean], js.UndefOr[CameraFlashCallback], js.UndefOr[Any]) => Camera,
+          update: (Double, Double) => Unit
         ): Flash = {
           val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), duration = duration.asInstanceOf[js.Any], effectComplete = js.Any.fromFunction0(effectComplete), isRunning = isRunning.asInstanceOf[js.Any], postRenderCanvas = js.Any.fromFunction1(postRenderCanvas), postRenderWebGL = js.Any.fromFunction2(postRenderWebGL), progress = progress.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), start = js.Any.fromFunction7(start), update = js.Any.fromFunction2(update))
           __obj.asInstanceOf[Flash]
@@ -2406,7 +2278,7 @@ object Cameras {
           
           inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
           
-          inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+          inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
           
           inline def setEffectComplete(value: () => Unit): Self = StObject.set(x, "effectComplete", js.Any.fromFunction0(value))
           
@@ -2414,17 +2286,17 @@ object Cameras {
           
           inline def setPostRenderCanvas(value: CanvasRenderingContext2D => Boolean): Self = StObject.set(x, "postRenderCanvas", js.Any.fromFunction1(value))
           
-          inline def setPostRenderWebGL(value: (TextureTintPipeline, js.Function) => Boolean): Self = StObject.set(x, "postRenderWebGL", js.Any.fromFunction2(value))
+          inline def setPostRenderWebGL(value: (MultiPipeline, js.Function) => Boolean): Self = StObject.set(x, "postRenderWebGL", js.Any.fromFunction2(value))
           
           inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
           
           inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
           
           inline def setStart(
-            value: (js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[integer], js.UndefOr[Boolean], js.UndefOr[CameraFlashCallback], js.UndefOr[js.Any]) => Camera
+            value: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Boolean], js.UndefOr[CameraFlashCallback], js.UndefOr[Any]) => Camera
           ): Self = StObject.set(x, "start", js.Any.fromFunction7(value))
           
-          inline def setUpdate(value: (integer, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+          inline def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
         }
       }
       
@@ -2466,7 +2338,7 @@ object Cameras {
         /**
           * The duration of the effect, in milliseconds.
           */
-        val duration: integer = js.native
+        val duration: Double = js.native
         
         /**
           * The ease function to use during the pan.
@@ -2513,17 +2385,111 @@ object Cameras {
           * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
           */
         def start(x: Double, y: Double): Camera = js.native
-        def start(x: Double, y: Double, duration: Unit, ease: String): Camera = js.native
-        def start(x: Double, y: Double, duration: Unit, ease: String, force: Boolean): Camera = js.native
+        def start(x: Double, y: Double, duration: Double): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: String): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: String, force: Boolean): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: String, force: Boolean, callback: Unit, context: Any): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: String, force: Boolean, callback: CameraPanCallback): Camera = js.native
         def start(
           x: Double,
           y: Double,
-          duration: Unit,
+          duration: Double,
           ease: String,
           force: Boolean,
-          callback: Unit,
-          context: js.Any
+          callback: CameraPanCallback,
+          context: Any
         ): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: String, force: Unit, callback: Unit, context: Any): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: String, force: Unit, callback: CameraPanCallback): Camera = js.native
+        def start(
+          x: Double,
+          y: Double,
+          duration: Double,
+          ease: String,
+          force: Unit,
+          callback: CameraPanCallback,
+          context: Any
+        ): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: js.Function): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: js.Function, force: Boolean): Camera = js.native
+        def start(
+          x: Double,
+          y: Double,
+          duration: Double,
+          ease: js.Function,
+          force: Boolean,
+          callback: Unit,
+          context: Any
+        ): Camera = js.native
+        def start(
+          x: Double,
+          y: Double,
+          duration: Double,
+          ease: js.Function,
+          force: Boolean,
+          callback: CameraPanCallback
+        ): Camera = js.native
+        def start(
+          x: Double,
+          y: Double,
+          duration: Double,
+          ease: js.Function,
+          force: Boolean,
+          callback: CameraPanCallback,
+          context: Any
+        ): Camera = js.native
+        def start(
+          x: Double,
+          y: Double,
+          duration: Double,
+          ease: js.Function,
+          force: Unit,
+          callback: Unit,
+          context: Any
+        ): Camera = js.native
+        def start(
+          x: Double,
+          y: Double,
+          duration: Double,
+          ease: js.Function,
+          force: Unit,
+          callback: CameraPanCallback
+        ): Camera = js.native
+        def start(
+          x: Double,
+          y: Double,
+          duration: Double,
+          ease: js.Function,
+          force: Unit,
+          callback: CameraPanCallback,
+          context: Any
+        ): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: Unit, force: Boolean): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: Unit, force: Boolean, callback: Unit, context: Any): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: Unit, force: Boolean, callback: CameraPanCallback): Camera = js.native
+        def start(
+          x: Double,
+          y: Double,
+          duration: Double,
+          ease: Unit,
+          force: Boolean,
+          callback: CameraPanCallback,
+          context: Any
+        ): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: Unit, force: Unit, callback: Unit, context: Any): Camera = js.native
+        def start(x: Double, y: Double, duration: Double, ease: Unit, force: Unit, callback: CameraPanCallback): Camera = js.native
+        def start(
+          x: Double,
+          y: Double,
+          duration: Double,
+          ease: Unit,
+          force: Unit,
+          callback: CameraPanCallback,
+          context: Any
+        ): Camera = js.native
+        def start(x: Double, y: Double, duration: Unit, ease: String): Camera = js.native
+        def start(x: Double, y: Double, duration: Unit, ease: String, force: Boolean): Camera = js.native
+        def start(x: Double, y: Double, duration: Unit, ease: String, force: Boolean, callback: Unit, context: Any): Camera = js.native
         def start(x: Double, y: Double, duration: Unit, ease: String, force: Boolean, callback: CameraPanCallback): Camera = js.native
         def start(
           x: Double,
@@ -2532,9 +2498,9 @@ object Cameras {
           ease: String,
           force: Boolean,
           callback: CameraPanCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
-        def start(x: Double, y: Double, duration: Unit, ease: String, force: Unit, callback: Unit, context: js.Any): Camera = js.native
+        def start(x: Double, y: Double, duration: Unit, ease: String, force: Unit, callback: Unit, context: Any): Camera = js.native
         def start(x: Double, y: Double, duration: Unit, ease: String, force: Unit, callback: CameraPanCallback): Camera = js.native
         def start(
           x: Double,
@@ -2543,7 +2509,7 @@ object Cameras {
           ease: String,
           force: Unit,
           callback: CameraPanCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
         def start(x: Double, y: Double, duration: Unit, ease: js.Function): Camera = js.native
         def start(x: Double, y: Double, duration: Unit, ease: js.Function, force: Boolean): Camera = js.native
@@ -2554,7 +2520,7 @@ object Cameras {
           ease: js.Function,
           force: Boolean,
           callback: Unit,
-          context: js.Any
+          context: Any
         ): Camera = js.native
         def start(
           x: Double,
@@ -2571,17 +2537,9 @@ object Cameras {
           ease: js.Function,
           force: Boolean,
           callback: CameraPanCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: Unit,
-          ease: js.Function,
-          force: Unit,
-          callback: Unit,
-          context: js.Any
-        ): Camera = js.native
+        def start(x: Double, y: Double, duration: Unit, ease: js.Function, force: Unit, callback: Unit, context: Any): Camera = js.native
         def start(x: Double, y: Double, duration: Unit, ease: js.Function, force: Unit, callback: CameraPanCallback): Camera = js.native
         def start(
           x: Double,
@@ -2590,10 +2548,10 @@ object Cameras {
           ease: js.Function,
           force: Unit,
           callback: CameraPanCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
         def start(x: Double, y: Double, duration: Unit, ease: Unit, force: Boolean): Camera = js.native
-        def start(x: Double, y: Double, duration: Unit, ease: Unit, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
+        def start(x: Double, y: Double, duration: Unit, ease: Unit, force: Boolean, callback: Unit, context: Any): Camera = js.native
         def start(x: Double, y: Double, duration: Unit, ease: Unit, force: Boolean, callback: CameraPanCallback): Camera = js.native
         def start(
           x: Double,
@@ -2602,9 +2560,9 @@ object Cameras {
           ease: Unit,
           force: Boolean,
           callback: CameraPanCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
-        def start(x: Double, y: Double, duration: Unit, ease: Unit, force: Unit, callback: Unit, context: js.Any): Camera = js.native
+        def start(x: Double, y: Double, duration: Unit, ease: Unit, force: Unit, callback: Unit, context: Any): Camera = js.native
         def start(x: Double, y: Double, duration: Unit, ease: Unit, force: Unit, callback: CameraPanCallback): Camera = js.native
         def start(
           x: Double,
@@ -2613,133 +2571,7 @@ object Cameras {
           ease: Unit,
           force: Unit,
           callback: CameraPanCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(x: Double, y: Double, duration: integer): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: String): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: String, force: Boolean): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: String,
-          force: Boolean,
-          callback: Unit,
-          context: js.Any
-        ): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: String, force: Boolean, callback: CameraPanCallback): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: String,
-          force: Boolean,
-          callback: CameraPanCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: String,
-          force: Unit,
-          callback: Unit,
-          context: js.Any
-        ): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: String, force: Unit, callback: CameraPanCallback): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: String,
-          force: Unit,
-          callback: CameraPanCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: js.Function): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: js.Function, force: Boolean): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: js.Function,
-          force: Boolean,
-          callback: Unit,
-          context: js.Any
-        ): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: js.Function,
-          force: Boolean,
-          callback: CameraPanCallback
-        ): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: js.Function,
-          force: Boolean,
-          callback: CameraPanCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: js.Function,
-          force: Unit,
-          callback: Unit,
-          context: js.Any
-        ): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: js.Function,
-          force: Unit,
-          callback: CameraPanCallback
-        ): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: js.Function,
-          force: Unit,
-          callback: CameraPanCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: Unit, force: Boolean): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: Unit,
-          force: Boolean,
-          callback: Unit,
-          context: js.Any
-        ): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: Unit, force: Boolean, callback: CameraPanCallback): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: Unit,
-          force: Boolean,
-          callback: CameraPanCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: Unit, force: Unit, callback: Unit, context: js.Any): Camera = js.native
-        def start(x: Double, y: Double, duration: integer, ease: Unit, force: Unit, callback: CameraPanCallback): Camera = js.native
-        def start(
-          x: Double,
-          y: Double,
-          duration: integer,
-          ease: Unit,
-          force: Unit,
-          callback: CameraPanCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
         
         /**
@@ -2747,7 +2579,7 @@ object Cameras {
           * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
           * @param delta The delta time, in ms, elapsed since the last frame.
           */
-        def update(time: integer, delta: Double): Unit = js.native
+        def update(time: Double, delta: Double): Unit = js.native
       }
       
       /**
@@ -2798,7 +2630,7 @@ object Cameras {
         /**
           * The duration of the effect, in milliseconds.
           */
-        val duration: integer
+        val duration: Double
         
         /**
           * The ease function to use during the Rotate.
@@ -2852,11 +2684,11 @@ object Cameras {
         def start(
           radians: Double,
           shortestPath: js.UndefOr[Boolean],
-          duration: js.UndefOr[integer],
+          duration: js.UndefOr[Double],
           ease: js.UndefOr[String | js.Function],
           force: js.UndefOr[Boolean],
           callback: js.UndefOr[CameraRotateCallback],
-          context: js.UndefOr[js.Any]
+          context: js.UndefOr[Any]
         ): Camera
         
         /**
@@ -2864,7 +2696,7 @@ object Cameras {
           * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
           * @param delta The delta time, in ms, elapsed since the last frame.
           */
-        def update(time: integer, delta: Double): Unit
+        def update(time: Double, delta: Double): Unit
       }
       object RotateTo {
         
@@ -2874,7 +2706,7 @@ object Cameras {
           current: Double,
           destination: Double,
           destroy: () => Unit,
-          duration: integer,
+          duration: Double,
           ease: js.Function,
           effectComplete: () => Unit,
           isRunning: Boolean,
@@ -2882,8 +2714,8 @@ object Cameras {
           reset: () => Unit,
           shortestPath: Boolean,
           source: Double,
-          start: (Double, js.UndefOr[Boolean], js.UndefOr[integer], js.UndefOr[String | js.Function], js.UndefOr[Boolean], js.UndefOr[CameraRotateCallback], js.UndefOr[js.Any]) => Camera,
-          update: (integer, Double) => Unit
+          start: (Double, js.UndefOr[Boolean], js.UndefOr[Double], js.UndefOr[String | js.Function], js.UndefOr[Boolean], js.UndefOr[CameraRotateCallback], js.UndefOr[Any]) => Camera,
+          update: (Double, Double) => Unit
         ): RotateTo = {
           val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], clockwise = clockwise.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), duration = duration.asInstanceOf[js.Any], ease = ease.asInstanceOf[js.Any], effectComplete = js.Any.fromFunction0(effectComplete), isRunning = isRunning.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), shortestPath = shortestPath.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = js.Any.fromFunction7(start), update = js.Any.fromFunction2(update))
           __obj.asInstanceOf[RotateTo]
@@ -2901,7 +2733,7 @@ object Cameras {
           
           inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
           
-          inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+          inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
           
           inline def setEase(value: js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
           
@@ -2918,10 +2750,10 @@ object Cameras {
           inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
           
           inline def setStart(
-            value: (Double, js.UndefOr[Boolean], js.UndefOr[integer], js.UndefOr[String | js.Function], js.UndefOr[Boolean], js.UndefOr[CameraRotateCallback], js.UndefOr[js.Any]) => Camera
+            value: (Double, js.UndefOr[Boolean], js.UndefOr[Double], js.UndefOr[String | js.Function], js.UndefOr[Boolean], js.UndefOr[CameraRotateCallback], js.UndefOr[Any]) => Camera
           ): Self = StObject.set(x, "start", js.Any.fromFunction7(value))
           
-          inline def setUpdate(value: (integer, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+          inline def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
         }
       }
       
@@ -2952,7 +2784,7 @@ object Cameras {
         /**
           * The duration of the effect, in milliseconds.
           */
-        val duration: integer = js.native
+        val duration: Double = js.native
         
         /**
           * Called internally when the effect completes.
@@ -2997,72 +2829,60 @@ object Cameras {
           * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
           */
         def start(): Camera = js.native
+        def start(duration: Double): Camera = js.native
+        def start(duration: Double, intensity: Double): Camera = js.native
+        def start(duration: Double, intensity: Double, force: Boolean): Camera = js.native
+        def start(duration: Double, intensity: Double, force: Boolean, callback: Unit, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Double, force: Boolean, callback: CameraShakeCallback): Camera = js.native
+        def start(duration: Double, intensity: Double, force: Boolean, callback: CameraShakeCallback, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Double, force: Unit, callback: Unit, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Double, force: Unit, callback: CameraShakeCallback): Camera = js.native
+        def start(duration: Double, intensity: Double, force: Unit, callback: CameraShakeCallback, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Unit, force: Boolean): Camera = js.native
+        def start(duration: Double, intensity: Unit, force: Boolean, callback: Unit, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Unit, force: Boolean, callback: CameraShakeCallback): Camera = js.native
+        def start(duration: Double, intensity: Unit, force: Boolean, callback: CameraShakeCallback, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Unit, force: Unit, callback: Unit, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Unit, force: Unit, callback: CameraShakeCallback): Camera = js.native
+        def start(duration: Double, intensity: Unit, force: Unit, callback: CameraShakeCallback, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Vector2): Camera = js.native
+        def start(duration: Double, intensity: Vector2, force: Boolean): Camera = js.native
+        def start(duration: Double, intensity: Vector2, force: Boolean, callback: Unit, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Vector2, force: Boolean, callback: CameraShakeCallback): Camera = js.native
+        def start(duration: Double, intensity: Vector2, force: Boolean, callback: CameraShakeCallback, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Vector2, force: Unit, callback: Unit, context: Any): Camera = js.native
+        def start(duration: Double, intensity: Vector2, force: Unit, callback: CameraShakeCallback): Camera = js.native
+        def start(duration: Double, intensity: Vector2, force: Unit, callback: CameraShakeCallback, context: Any): Camera = js.native
         def start(duration: Unit, intensity: Double): Camera = js.native
         def start(duration: Unit, intensity: Double, force: Boolean): Camera = js.native
-        def start(duration: Unit, intensity: Double, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
+        def start(duration: Unit, intensity: Double, force: Boolean, callback: Unit, context: Any): Camera = js.native
         def start(duration: Unit, intensity: Double, force: Boolean, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: Unit, intensity: Double, force: Boolean, callback: CameraShakeCallback, context: js.Any): Camera = js.native
-        def start(duration: Unit, intensity: Double, force: Unit, callback: Unit, context: js.Any): Camera = js.native
+        def start(duration: Unit, intensity: Double, force: Boolean, callback: CameraShakeCallback, context: Any): Camera = js.native
+        def start(duration: Unit, intensity: Double, force: Unit, callback: Unit, context: Any): Camera = js.native
         def start(duration: Unit, intensity: Double, force: Unit, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: Unit, intensity: Double, force: Unit, callback: CameraShakeCallback, context: js.Any): Camera = js.native
+        def start(duration: Unit, intensity: Double, force: Unit, callback: CameraShakeCallback, context: Any): Camera = js.native
         def start(duration: Unit, intensity: Unit, force: Boolean): Camera = js.native
-        def start(duration: Unit, intensity: Unit, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
+        def start(duration: Unit, intensity: Unit, force: Boolean, callback: Unit, context: Any): Camera = js.native
         def start(duration: Unit, intensity: Unit, force: Boolean, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: Unit, intensity: Unit, force: Boolean, callback: CameraShakeCallback, context: js.Any): Camera = js.native
-        def start(duration: Unit, intensity: Unit, force: Unit, callback: Unit, context: js.Any): Camera = js.native
+        def start(duration: Unit, intensity: Unit, force: Boolean, callback: CameraShakeCallback, context: Any): Camera = js.native
+        def start(duration: Unit, intensity: Unit, force: Unit, callback: Unit, context: Any): Camera = js.native
         def start(duration: Unit, intensity: Unit, force: Unit, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: Unit, intensity: Unit, force: Unit, callback: CameraShakeCallback, context: js.Any): Camera = js.native
+        def start(duration: Unit, intensity: Unit, force: Unit, callback: CameraShakeCallback, context: Any): Camera = js.native
         def start(duration: Unit, intensity: Vector2): Camera = js.native
         def start(duration: Unit, intensity: Vector2, force: Boolean): Camera = js.native
-        def start(duration: Unit, intensity: Vector2, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
+        def start(duration: Unit, intensity: Vector2, force: Boolean, callback: Unit, context: Any): Camera = js.native
         def start(duration: Unit, intensity: Vector2, force: Boolean, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: Unit, intensity: Vector2, force: Boolean, callback: CameraShakeCallback, context: js.Any): Camera = js.native
-        def start(duration: Unit, intensity: Vector2, force: Unit, callback: Unit, context: js.Any): Camera = js.native
+        def start(duration: Unit, intensity: Vector2, force: Boolean, callback: CameraShakeCallback, context: Any): Camera = js.native
+        def start(duration: Unit, intensity: Vector2, force: Unit, callback: Unit, context: Any): Camera = js.native
         def start(duration: Unit, intensity: Vector2, force: Unit, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: Unit, intensity: Vector2, force: Unit, callback: CameraShakeCallback, context: js.Any): Camera = js.native
-        def start(duration: integer): Camera = js.native
-        def start(duration: integer, intensity: Double): Camera = js.native
-        def start(duration: integer, intensity: Double, force: Boolean): Camera = js.native
-        def start(duration: integer, intensity: Double, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
-        def start(duration: integer, intensity: Double, force: Boolean, callback: CameraShakeCallback): Camera = js.native
-        def start(
-          duration: integer,
-          intensity: Double,
-          force: Boolean,
-          callback: CameraShakeCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(duration: integer, intensity: Double, force: Unit, callback: Unit, context: js.Any): Camera = js.native
-        def start(duration: integer, intensity: Double, force: Unit, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: integer, intensity: Double, force: Unit, callback: CameraShakeCallback, context: js.Any): Camera = js.native
-        def start(duration: integer, intensity: Unit, force: Boolean): Camera = js.native
-        def start(duration: integer, intensity: Unit, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
-        def start(duration: integer, intensity: Unit, force: Boolean, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: integer, intensity: Unit, force: Boolean, callback: CameraShakeCallback, context: js.Any): Camera = js.native
-        def start(duration: integer, intensity: Unit, force: Unit, callback: Unit, context: js.Any): Camera = js.native
-        def start(duration: integer, intensity: Unit, force: Unit, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: integer, intensity: Unit, force: Unit, callback: CameraShakeCallback, context: js.Any): Camera = js.native
-        def start(duration: integer, intensity: Vector2): Camera = js.native
-        def start(duration: integer, intensity: Vector2, force: Boolean): Camera = js.native
-        def start(duration: integer, intensity: Vector2, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
-        def start(duration: integer, intensity: Vector2, force: Boolean, callback: CameraShakeCallback): Camera = js.native
-        def start(
-          duration: integer,
-          intensity: Vector2,
-          force: Boolean,
-          callback: CameraShakeCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(duration: integer, intensity: Vector2, force: Unit, callback: Unit, context: js.Any): Camera = js.native
-        def start(duration: integer, intensity: Vector2, force: Unit, callback: CameraShakeCallback): Camera = js.native
-        def start(duration: integer, intensity: Vector2, force: Unit, callback: CameraShakeCallback, context: js.Any): Camera = js.native
+        def start(duration: Unit, intensity: Vector2, force: Unit, callback: CameraShakeCallback, context: Any): Camera = js.native
         
         /**
           * The main update loop for this effect. Called automatically by the Camera.
           * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
           * @param delta The delta time, in ms, elapsed since the last frame.
           */
-        def update(time: integer, delta: Double): Unit = js.native
+        def update(time: Double, delta: Double): Unit = js.native
       }
       
       /**
@@ -3094,7 +2914,7 @@ object Cameras {
         /**
           * The duration of the effect, in milliseconds.
           */
-        val duration: integer = js.native
+        val duration: Double = js.native
         
         /**
           * The ease function to use during the zoom.
@@ -3139,9 +2959,75 @@ object Cameras {
           * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
           */
         def start(zoom: Double): Camera = js.native
+        def start(zoom: Double, duration: Double): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: String): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: String, force: Boolean): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: String, force: Boolean, callback: Unit, context: Any): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: String, force: Boolean, callback: CameraZoomCallback): Camera = js.native
+        def start(
+          zoom: Double,
+          duration: Double,
+          ease: String,
+          force: Boolean,
+          callback: CameraZoomCallback,
+          context: Any
+        ): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: String, force: Unit, callback: Unit, context: Any): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: String, force: Unit, callback: CameraZoomCallback): Camera = js.native
+        def start(
+          zoom: Double,
+          duration: Double,
+          ease: String,
+          force: Unit,
+          callback: CameraZoomCallback,
+          context: Any
+        ): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: js.Function): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: js.Function, force: Boolean): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: js.Function, force: Boolean, callback: Unit, context: Any): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: js.Function, force: Boolean, callback: CameraZoomCallback): Camera = js.native
+        def start(
+          zoom: Double,
+          duration: Double,
+          ease: js.Function,
+          force: Boolean,
+          callback: CameraZoomCallback,
+          context: Any
+        ): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: js.Function, force: Unit, callback: Unit, context: Any): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: js.Function, force: Unit, callback: CameraZoomCallback): Camera = js.native
+        def start(
+          zoom: Double,
+          duration: Double,
+          ease: js.Function,
+          force: Unit,
+          callback: CameraZoomCallback,
+          context: Any
+        ): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: Unit, force: Boolean): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: Unit, force: Boolean, callback: Unit, context: Any): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: Unit, force: Boolean, callback: CameraZoomCallback): Camera = js.native
+        def start(
+          zoom: Double,
+          duration: Double,
+          ease: Unit,
+          force: Boolean,
+          callback: CameraZoomCallback,
+          context: Any
+        ): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: Unit, force: Unit, callback: Unit, context: Any): Camera = js.native
+        def start(zoom: Double, duration: Double, ease: Unit, force: Unit, callback: CameraZoomCallback): Camera = js.native
+        def start(
+          zoom: Double,
+          duration: Double,
+          ease: Unit,
+          force: Unit,
+          callback: CameraZoomCallback,
+          context: Any
+        ): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: String): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: String, force: Boolean): Camera = js.native
-        def start(zoom: Double, duration: Unit, ease: String, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
+        def start(zoom: Double, duration: Unit, ease: String, force: Boolean, callback: Unit, context: Any): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: String, force: Boolean, callback: CameraZoomCallback): Camera = js.native
         def start(
           zoom: Double,
@@ -3149,9 +3035,9 @@ object Cameras {
           ease: String,
           force: Boolean,
           callback: CameraZoomCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
-        def start(zoom: Double, duration: Unit, ease: String, force: Unit, callback: Unit, context: js.Any): Camera = js.native
+        def start(zoom: Double, duration: Unit, ease: String, force: Unit, callback: Unit, context: Any): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: String, force: Unit, callback: CameraZoomCallback): Camera = js.native
         def start(
           zoom: Double,
@@ -3159,11 +3045,11 @@ object Cameras {
           ease: String,
           force: Unit,
           callback: CameraZoomCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: js.Function): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: js.Function, force: Boolean): Camera = js.native
-        def start(zoom: Double, duration: Unit, ease: js.Function, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
+        def start(zoom: Double, duration: Unit, ease: js.Function, force: Boolean, callback: Unit, context: Any): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: js.Function, force: Boolean, callback: CameraZoomCallback): Camera = js.native
         def start(
           zoom: Double,
@@ -3171,9 +3057,9 @@ object Cameras {
           ease: js.Function,
           force: Boolean,
           callback: CameraZoomCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
-        def start(zoom: Double, duration: Unit, ease: js.Function, force: Unit, callback: Unit, context: js.Any): Camera = js.native
+        def start(zoom: Double, duration: Unit, ease: js.Function, force: Unit, callback: Unit, context: Any): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: js.Function, force: Unit, callback: CameraZoomCallback): Camera = js.native
         def start(
           zoom: Double,
@@ -3181,10 +3067,10 @@ object Cameras {
           ease: js.Function,
           force: Unit,
           callback: CameraZoomCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: Unit, force: Boolean): Camera = js.native
-        def start(zoom: Double, duration: Unit, ease: Unit, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
+        def start(zoom: Double, duration: Unit, ease: Unit, force: Boolean, callback: Unit, context: Any): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: Unit, force: Boolean, callback: CameraZoomCallback): Camera = js.native
         def start(
           zoom: Double,
@@ -3192,98 +3078,18 @@ object Cameras {
           ease: Unit,
           force: Boolean,
           callback: CameraZoomCallback,
-          context: js.Any
+          context: Any
         ): Camera = js.native
-        def start(zoom: Double, duration: Unit, ease: Unit, force: Unit, callback: Unit, context: js.Any): Camera = js.native
+        def start(zoom: Double, duration: Unit, ease: Unit, force: Unit, callback: Unit, context: Any): Camera = js.native
         def start(zoom: Double, duration: Unit, ease: Unit, force: Unit, callback: CameraZoomCallback): Camera = js.native
-        def start(
-          zoom: Double,
-          duration: Unit,
-          ease: Unit,
-          force: Unit,
-          callback: CameraZoomCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(zoom: Double, duration: integer): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: String): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: String, force: Boolean): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: String, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: String, force: Boolean, callback: CameraZoomCallback): Camera = js.native
-        def start(
-          zoom: Double,
-          duration: integer,
-          ease: String,
-          force: Boolean,
-          callback: CameraZoomCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: String, force: Unit, callback: Unit, context: js.Any): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: String, force: Unit, callback: CameraZoomCallback): Camera = js.native
-        def start(
-          zoom: Double,
-          duration: integer,
-          ease: String,
-          force: Unit,
-          callback: CameraZoomCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: js.Function): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: js.Function, force: Boolean): Camera = js.native
-        def start(
-          zoom: Double,
-          duration: integer,
-          ease: js.Function,
-          force: Boolean,
-          callback: Unit,
-          context: js.Any
-        ): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: js.Function, force: Boolean, callback: CameraZoomCallback): Camera = js.native
-        def start(
-          zoom: Double,
-          duration: integer,
-          ease: js.Function,
-          force: Boolean,
-          callback: CameraZoomCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: js.Function, force: Unit, callback: Unit, context: js.Any): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: js.Function, force: Unit, callback: CameraZoomCallback): Camera = js.native
-        def start(
-          zoom: Double,
-          duration: integer,
-          ease: js.Function,
-          force: Unit,
-          callback: CameraZoomCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: Unit, force: Boolean): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: Unit, force: Boolean, callback: Unit, context: js.Any): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: Unit, force: Boolean, callback: CameraZoomCallback): Camera = js.native
-        def start(
-          zoom: Double,
-          duration: integer,
-          ease: Unit,
-          force: Boolean,
-          callback: CameraZoomCallback,
-          context: js.Any
-        ): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: Unit, force: Unit, callback: Unit, context: js.Any): Camera = js.native
-        def start(zoom: Double, duration: integer, ease: Unit, force: Unit, callback: CameraZoomCallback): Camera = js.native
-        def start(
-          zoom: Double,
-          duration: integer,
-          ease: Unit,
-          force: Unit,
-          callback: CameraZoomCallback,
-          context: js.Any
-        ): Camera = js.native
+        def start(zoom: Double, duration: Unit, ease: Unit, force: Unit, callback: CameraZoomCallback, context: Any): Camera = js.native
         
         /**
           * The main update loop for this effect. Called automatically by the Camera.
           * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
           * @param delta The delta time, in ms, elapsed since the last frame.
           */
-        def update(time: integer, delta: Double): Unit = js.native
+        def update(time: Double, delta: Double): Unit = js.native
       }
     }
   }

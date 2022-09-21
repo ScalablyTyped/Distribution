@@ -16,7 +16,7 @@ object distGrammarMod {
   
   @JSImport("sip.js/lib/grammar/pegjs/dist/grammar", "SyntaxError")
   @js.native
-  class SyntaxError protected ()
+  open class SyntaxError protected ()
     extends StObject
        with Error {
     def this(message: String, expected: js.Array[Expectation], found: String, location: IFileRange) = this()
@@ -28,9 +28,11 @@ object distGrammarMod {
     
     var location: IFileRange = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -267,13 +269,13 @@ object distGrammarMod {
   
   trait IParseOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var filename: js.UndefOr[String] = js.undefined
     
     var startRule: js.UndefOr[String] = js.undefined
     
-    var tracer: js.UndefOr[js.Any] = js.undefined
+    var tracer: js.UndefOr[Any] = js.undefined
   }
   object IParseOptions {
     
@@ -292,11 +294,11 @@ object distGrammarMod {
       
       inline def setStartRuleUndefined: Self = StObject.set(x, "startRule", js.undefined)
       
-      inline def setTracer(value: js.Any): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
+      inline def setTracer(value: Any): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
       
       inline def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
     }
   }
   
-  type ParseFunction = js.Function2[/* input */ String, /* options */ js.UndefOr[IParseOptions], js.Any]
+  type ParseFunction = js.Function2[/* input */ String, /* options */ js.UndefOr[IParseOptions], Any]
 }

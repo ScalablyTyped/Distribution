@@ -255,9 +255,9 @@ object HTML {
   @js.native
   trait HtmlService extends StObject {
     
-    var SandboxMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SandboxMode */ js.Any = js.native
+    var SandboxMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SandboxMode */ Any = js.native
     
-    var XFrameOptionsMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof XFrameOptionsMode */ js.Any = js.native
+    var XFrameOptionsMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof XFrameOptionsMode */ Any = js.native
     
     def createHtmlOutput(): HtmlOutput = js.native
     def createHtmlOutput(blob: BlobSource): HtmlOutput = js.native
@@ -278,7 +278,7 @@ object HTML {
     */
   trait HtmlTemplate
     extends StObject
-       with /* propName */ StringDictionary[js.Any] {
+       with /* propName */ StringDictionary[Any] {
     
     def evaluate(): HtmlOutput
     

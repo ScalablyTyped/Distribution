@@ -46,19 +46,19 @@ object RouterStatusNatStatus {
     
     inline def setAutoAllocatedNatIpsUndefined: Self = StObject.set(x, "autoAllocatedNatIps", js.undefined)
     
-    inline def setAutoAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "autoAllocatedNatIps", js.Array(value :_*))
+    inline def setAutoAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "autoAllocatedNatIps", js.Array(value*))
     
     inline def setDrainAutoAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "drainAutoAllocatedNatIps", value.asInstanceOf[js.Any])
     
     inline def setDrainAutoAllocatedNatIpsUndefined: Self = StObject.set(x, "drainAutoAllocatedNatIps", js.undefined)
     
-    inline def setDrainAutoAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "drainAutoAllocatedNatIps", js.Array(value :_*))
+    inline def setDrainAutoAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "drainAutoAllocatedNatIps", js.Array(value*))
     
     inline def setDrainUserAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "drainUserAllocatedNatIps", value.asInstanceOf[js.Any])
     
     inline def setDrainUserAllocatedNatIpsUndefined: Self = StObject.set(x, "drainUserAllocatedNatIps", js.undefined)
     
-    inline def setDrainUserAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "drainUserAllocatedNatIps", js.Array(value :_*))
+    inline def setDrainUserAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "drainUserAllocatedNatIps", js.Array(value*))
     
     inline def setMinExtraNatIpsNeeded(value: Double): Self = StObject.set(x, "minExtraNatIpsNeeded", value.asInstanceOf[js.Any])
     
@@ -76,12 +76,12 @@ object RouterStatusNatStatus {
     
     inline def setUserAllocatedNatIpResourcesUndefined: Self = StObject.set(x, "userAllocatedNatIpResources", js.undefined)
     
-    inline def setUserAllocatedNatIpResourcesVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIpResources", js.Array(value :_*))
+    inline def setUserAllocatedNatIpResourcesVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIpResources", js.Array(value*))
     
     inline def setUserAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "userAllocatedNatIps", value.asInstanceOf[js.Any])
     
     inline def setUserAllocatedNatIpsUndefined: Self = StObject.set(x, "userAllocatedNatIps", js.undefined)
     
-    inline def setUserAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIps", js.Array(value :_*))
+    inline def setUserAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIps", js.Array(value*))
   }
 }

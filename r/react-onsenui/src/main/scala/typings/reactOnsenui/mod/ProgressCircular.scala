@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "ProgressCircular")
 @js.native
-class ProgressCircular protected ()
-  extends Component[SecondaryValue, js.Any] {
+open class ProgressCircular protected () extends Component[SecondaryValue, Any] {
   def this(props: HTMLAttributesidclassName & SecondaryValue) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & SecondaryValue, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & SecondaryValue, context: Any) = this()
 }

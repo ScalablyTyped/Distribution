@@ -1,11 +1,12 @@
 package typings.formatjsEcma402Abstract.numberMod
 
+import typings.formatjsEcma402Abstract.coreMod.LocaleData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type NumberFormatOptionsNotation = typings.formatjsEcma402Abstract.numberMod.NumberFormatNotation
+type NumberFormatOptionsNotation = NumberFormatNotation
 
 /* Rewritten from type alias, can be one of: 
   - typings.std.Intl.NumberFormatPartTypes
@@ -16,8 +17,8 @@ type NumberFormatOptionsNotation = typings.formatjsEcma402Abstract.numberMod.Num
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.unit
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.literal
 */
-type NumberFormatPartTypes = typings.formatjsEcma402Abstract.numberMod._NumberFormatPartTypes | typings.std.Intl.NumberFormatPartTypes
+type NumberFormatPartTypes = _NumberFormatPartTypes | typings.std.Intl.NumberFormatPartTypes
 
-type NumberingSystem = java.lang.String
+type NumberingSystem = String
 
-type RawNumberLocaleData = typings.formatjsEcma402Abstract.coreMod.LocaleData[typings.formatjsEcma402Abstract.numberMod.NumberFormatLocaleInternalData]
+type RawNumberLocaleData = LocaleData[NumberFormatLocaleInternalData]

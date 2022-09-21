@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait MetaProperty_
   extends StObject
      with BaseNode
-     with Expression {
+     with Expression
+     with Standardized {
   
   var meta: Identifier_
   

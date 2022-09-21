@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param z defines the third component (0 by default)
   * @param w defines the fourth component (1.0 by default)
   */
-class Quaternion ()
+open class Quaternion ()
   extends typings.babylonjs.mathsIndexMod.Quaternion {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
@@ -121,6 +121,56 @@ object Quaternion {
   ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromEulerVectorToRef")(vec.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
   
   /**
+    * Creates a new rotation value to orient an object to look towards the given forward direction, the up direction being oriented like "up".
+    * This function works in left handed mode
+    * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+    * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+    * @returns A new quaternion oriented toward the specified forward and up.
+    */
+  inline def FromLookDirectionLH(
+    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
+  ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromLookDirectionLH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
+  
+  /**
+    * Creates a new rotation value to orient an object to look towards the given forward direction with the up direction being oriented like "up", and stores it in the target quaternion.
+    * This function works in left handed mode
+    * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+    * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+    * @param ref defines the target quaternion.
+    */
+  inline def FromLookDirectionLHToRef(
+    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    ref: typings.babylonjs.mathVectorMod.Quaternion
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromLookDirectionLHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Creates a new rotation value to orient an object to look towards the given forward direction, the up direction being oriented like "up".
+    * This function works in right handed mode
+    * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+    * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+    * @returns A new quaternion oriented toward the specified forward and up.
+    */
+  inline def FromLookDirectionRH(
+    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
+  ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromLookDirectionRH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
+  
+  /**
+    * Creates a new rotation value to orient an object to look towards the given forward direction with the up direction being oriented like "up", and stores it in the target quaternion.
+    * This function works in right handed mode
+    * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+    * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+    * @param ref defines the target quaternion.
+    */
+  inline def FromLookDirectionRHToRef(
+    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    ref: typings.babylonjs.mathVectorMod.Quaternion
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromLookDirectionRHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
     * Creates a new quaternion from a rotation matrix
     * @param matrix defines the source matrix
     * @returns a new quaternion created from the given rotation matrix values
@@ -138,6 +188,19 @@ object Quaternion {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromRotationMatrixToRef")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
+    * Updates a quaternion so that it rotates vector vecFrom to vector vecTo
+    * @param vecFrom defines the direction vector from which to rotate
+    * @param vecTo defines the direction vector to which to rotate
+    * @param result the quaternion to store the result
+    * @returns the updated quaternion
+    */
+  inline def FromUnitVectorsToRef(
+    vecFrom: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    vecTo: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    result: typings.babylonjs.mathVectorMod.Quaternion
+  ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromUnitVectorsToRef")(vecFrom.asInstanceOf[js.Any], vecTo.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
+  
+  /**
     * Interpolate between two quaternions using Hermite interpolation
     * @param value1 defines first quaternion
     * @param tangent1 defines the incoming tangent
@@ -153,6 +216,41 @@ object Quaternion {
     tangent2: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     amount: Double
   ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
+  
+  /**
+    * Returns a new Quaternion which is the 1st derivative of the Hermite spline defined by the quaternions "value1", "value2", "tangent1", "tangent2".
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param time define where the derivative must be done
+    * @returns 1st derivative
+    */
+  inline def Hermite1stDerivative(
+    value1: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
+    tangent1: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
+    value2: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
+    tangent2: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
+    time: Double
+  ): typings.babylonjs.mathVectorMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Quaternion]
+  
+  /**
+    * Update a Quaternion with the 1st derivative of the Hermite spline defined by the quaternions "value1", "value2", "tangent1", "tangent2".
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param time define where the derivative must be done
+    * @param result define where to store the derivative
+    */
+  inline def Hermite1stDerivativeToRef(
+    value1: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
+    tangent1: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
+    value2: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
+    tangent2: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
+    time: Double,
+    result: typings.babylonjs.mathVectorMod.Quaternion
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates an identity quaternion
@@ -292,6 +390,23 @@ object Quaternion {
     amount: Double,
     result: typings.babylonjs.mathVectorMod.Quaternion
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SlerpToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Smooth interpolation between two quaternions using Slerp
+    *
+    * @param source source quaternion
+    * @param goal goal quaternion
+    * @param deltaTime current interpolation frame
+    * @param lerpTime total interpolation time
+    * @param result the smoothed quaternion
+    */
+  inline def SmoothToRef(
+    source: typings.babylonjs.mathVectorMod.Quaternion,
+    goal: typings.babylonjs.mathVectorMod.Quaternion,
+    deltaTime: Double,
+    lerpTime: Double,
+    result: typings.babylonjs.mathVectorMod.Quaternion
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothToRef")(source.asInstanceOf[js.Any], goal.asInstanceOf[js.Any], deltaTime.asInstanceOf[js.Any], lerpTime.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates an empty quaternion

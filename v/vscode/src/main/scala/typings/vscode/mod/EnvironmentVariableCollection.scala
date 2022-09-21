@@ -1,11 +1,14 @@
 package typings.vscode.mod
 
+import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentVariableCollection extends StObject {
+trait EnvironmentVariableCollection
+  extends StObject
+     with Iterable[js.Tuple2[/* variable */ String, /* mutator */ EnvironmentVariableMutator]] {
   
   /**
     * Append a value to an environment variable.
@@ -41,7 +44,7 @@ trait EnvironmentVariableCollection extends StObject {
       /* variable */ String, 
       /* mutator */ EnvironmentVariableMutator, 
       /* collection */ this.type, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def forEach(
@@ -49,9 +52,9 @@ trait EnvironmentVariableCollection extends StObject {
       /* variable */ String, 
       /* mutator */ EnvironmentVariableMutator, 
       /* collection */ this.type, 
-      js.Any
+      Any
     ],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   /**

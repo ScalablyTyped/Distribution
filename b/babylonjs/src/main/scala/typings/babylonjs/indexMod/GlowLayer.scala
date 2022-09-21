@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "GlowLayer")
 @js.native
-class GlowLayer protected ()
+open class GlowLayer protected ()
   extends typings.babylonjs.layersIndexMod.GlowLayer {
   /**
     * Instantiates a new glow Layer and references it to the scene.
@@ -15,7 +15,9 @@ class GlowLayer protected ()
     * @param scene The scene to use the layer in
     * @param options Sets of none mandatory options to use with the layer (see IGlowLayerOptions for more information)
     */
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
+  def this(name: String, scene: Unit, options: PartialIGlowLayerOptions) = this()
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene, options: PartialIGlowLayerOptions) = this()
 }
 /* static members */
@@ -55,5 +57,5 @@ object GlowLayer {
     * @param rootUrl defines the root URL containing the glow layer information
     * @returns a parsed Glow Layer
     */
-  inline def Parse(parsedGlowLayer: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.glowLayerMod.GlowLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedGlowLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.glowLayerMod.GlowLayer]
+  inline def Parse(parsedGlowLayer: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.glowLayerMod.GlowLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedGlowLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.glowLayerMod.GlowLayer]
 }

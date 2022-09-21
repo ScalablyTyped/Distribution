@@ -11,7 +11,7 @@ trait PartialOptionsElement extends StObject {
   
   var element: js.UndefOr[HTMLElement | String | Null] = js.undefined
   
-  var padding: js.UndefOr[Padding] = js.undefined
+  var padding: js.UndefOr[Padding | (js.Function1[/* arg0 */ Placement, Padding])] = js.undefined
 }
 object PartialOptionsElement {
   
@@ -28,7 +28,9 @@ object PartialOptionsElement {
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Padding | (js.Function1[/* arg0 */ Placement, Padding])): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingFunction1(value: /* arg0 */ Placement => Padding): Self = StObject.set(x, "padding", js.Any.fromFunction1(value))
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }

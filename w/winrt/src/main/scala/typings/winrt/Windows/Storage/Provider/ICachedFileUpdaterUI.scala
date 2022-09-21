@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ICachedFileUpdaterUI extends StObject {
   
-  var onfileupdaterequested: js.Any
+  var onfileupdaterequested: Any
   
-  var onuirequested: js.Any
+  var onuirequested: Any
   
   var title: String
   
@@ -19,8 +19,8 @@ trait ICachedFileUpdaterUI extends StObject {
 object ICachedFileUpdaterUI {
   
   inline def apply(
-    onfileupdaterequested: js.Any,
-    onuirequested: js.Any,
+    onfileupdaterequested: Any,
+    onuirequested: Any,
     title: String,
     uIStatus: UIStatus,
     updateTarget: CachedFileTarget
@@ -31,9 +31,9 @@ object ICachedFileUpdaterUI {
   
   extension [Self <: ICachedFileUpdaterUI](x: Self) {
     
-    inline def setOnfileupdaterequested(value: js.Any): Self = StObject.set(x, "onfileupdaterequested", value.asInstanceOf[js.Any])
+    inline def setOnfileupdaterequested(value: Any): Self = StObject.set(x, "onfileupdaterequested", value.asInstanceOf[js.Any])
     
-    inline def setOnuirequested(value: js.Any): Self = StObject.set(x, "onuirequested", value.asInstanceOf[js.Any])
+    inline def setOnuirequested(value: Any): Self = StObject.set(x, "onuirequested", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

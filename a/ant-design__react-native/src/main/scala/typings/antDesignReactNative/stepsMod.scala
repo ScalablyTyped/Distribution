@@ -17,7 +17,7 @@ object stepsMod {
   
   @JSImport("@ant-design/react-native/lib/steps", JSImport.Default)
   @js.native
-  class default protected () extends Steps {
+  open class default protected () extends Steps {
     def this(props: StepsProps) = this()
   }
   /* static members */
@@ -39,8 +39,7 @@ object stepsMod {
   }
   
   @js.native
-  trait Steps
-    extends Component[StepsProps, js.Any, js.Any] {
+  trait Steps extends Component[StepsProps, Any, Any] {
     
     def onLayout(e: LayoutChangeEvent): Unit = js.native
   }
@@ -70,7 +69,7 @@ object stepsMod {
       
       inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

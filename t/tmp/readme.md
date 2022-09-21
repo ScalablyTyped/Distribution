@@ -10,10 +10,10 @@ Temporary file and directory creator
 | ------------------ | :-------------: |
 | Full name          | tmp |
 | Keywords           | temporary, tmp, temp, tempdir, tempfile, tmpdir, tmpfile |
-| # releases         | 4 |
-| # dependents       | 2597 |
-| # downloads        | 798411576 |
-| # stars            | 48 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1869708666666667E8 |
+| # stars            | 677.0 |
 
 ## Links
 - [Homepage](http://github.com/raszi/node-tmp)

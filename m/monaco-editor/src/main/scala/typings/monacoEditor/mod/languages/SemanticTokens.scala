@@ -1,26 +1,25 @@
 package typings.monacoEditor.mod.languages
 
-import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SemanticTokens extends StObject {
   
-  val data: Uint32Array
+  val data: js.typedarray.Uint32Array
   
   val resultId: js.UndefOr[String] = js.undefined
 }
 object SemanticTokens {
   
-  inline def apply(data: Uint32Array): SemanticTokens = {
+  inline def apply(data: js.typedarray.Uint32Array): SemanticTokens = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokens]
   }
   
   extension [Self <: SemanticTokens](x: Self) {
     
-    inline def setData(value: Uint32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.Uint32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setResultId(value: String): Self = StObject.set(x, "resultId", value.asInstanceOf[js.Any])
     

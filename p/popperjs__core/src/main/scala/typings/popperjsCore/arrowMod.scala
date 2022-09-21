@@ -1,6 +1,7 @@
 package typings.popperjsCore
 
 import org.scalablytyped.runtime.Shortcut
+import typings.popperjsCore.anon.Placement
 import typings.popperjsCore.popperjsCoreStrings.arrow
 import typings.popperjsCore.typesMod.Modifier
 import typings.popperjsCore.typesMod.Padding
@@ -13,7 +14,7 @@ object arrowMod extends Shortcut {
   
   @JSImport("@popperjs/core/lib/modifiers/arrow", JSImport.Default)
   @js.native
-  val default: Modifier[arrow, Options] = js.native
+  val default: ArrowModifier = js.native
   
   type ArrowModifier = Modifier[arrow, Options]
   
@@ -21,11 +22,11 @@ object arrowMod extends Shortcut {
     
     var element: HTMLElement | String | Null
     
-    var padding: Padding
+    var padding: Padding | (js.Function1[/* arg0 */ Placement, Padding])
   }
   object Options {
     
-    inline def apply(padding: Padding): Options = {
+    inline def apply(padding: Padding | (js.Function1[/* arg0 */ Placement, Padding])): Options = {
       val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], element = null)
       __obj.asInstanceOf[Options]
     }
@@ -36,12 +37,14 @@ object arrowMod extends Shortcut {
       
       inline def setElementNull: Self = StObject.set(x, "element", null)
       
-      inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Padding | (js.Function1[/* arg0 */ Placement, Padding])): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingFunction1(value: /* arg0 */ Placement => Padding): Self = StObject.set(x, "padding", js.Any.fromFunction1(value))
     }
   }
   
-  type _To = Modifier[arrow, Options]
+  type _To = ArrowModifier
   
   /* This means you don't have to write `default`, but can instead just say `arrowMod.foo` */
-  override def _to: Modifier[arrow, Options] = default
+  override def _to: ArrowModifier = default
 }

@@ -16,7 +16,7 @@ object kinesisvideosignalingchannelsMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with KinesisVideoSignalingChannels {
     def this(options: ClientConfiguration) = this()
@@ -122,7 +122,7 @@ object kinesisvideosignalingchannelsMod {
       
       inline def setIceServerListUndefined: Self = StObject.set(x, "IceServerList", js.undefined)
       
-      inline def setIceServerListVarargs(value: IceServer*): Self = StObject.set(x, "IceServerList", js.Array(value :_*))
+      inline def setIceServerListVarargs(value: IceServer*): Self = StObject.set(x, "IceServerList", js.Array(value*))
     }
   }
   
@@ -169,7 +169,7 @@ object kinesisvideosignalingchannelsMod {
       
       inline def setUrisUndefined: Self = StObject.set(x, "Uris", js.undefined)
       
-      inline def setUrisVarargs(value: Uri*): Self = StObject.set(x, "Uris", js.Array(value :_*))
+      inline def setUrisVarargs(value: Uri*): Self = StObject.set(x, "Uris", js.Array(value*))
       
       inline def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
       

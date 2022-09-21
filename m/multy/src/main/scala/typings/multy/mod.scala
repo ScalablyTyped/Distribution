@@ -1,6 +1,6 @@
 package typings.multy
 
-import typings.busboy.busboy.BusboyConfig
+import typings.busboy.mod.BusboyConfig
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
@@ -10,32 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def apply(opts: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def apply(opts: BusboyConfig): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("multy", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  type Options = BusboyConfig
   
   /* augmented module */
   object koaAugmentingMod {
     
     trait Request extends StObject {
       
-      var body: js.Any
+      var body: Any
     }
     object Request {
       
-      inline def apply(body: js.Any): Request = {
+      inline def apply(body: Any): Request = {
         val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
       extension [Self <: Request](x: Self) {
         
-        inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       }
     }
   }

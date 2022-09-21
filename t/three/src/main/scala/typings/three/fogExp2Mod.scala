@@ -1,7 +1,7 @@
 package typings.three
 
 import typings.three.colorMod.Color
-import typings.three.fogMod.IFog
+import typings.three.fogMod.FogBase
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,9 +11,9 @@ object fogExp2Mod {
   
   @JSImport("three/src/scenes/FogExp2", "FogExp2")
   @js.native
-  class FogExp2 protected ()
+  open class FogExp2 protected ()
     extends StObject
-       with IFog {
+       with FogBase {
     def this(hex: String) = this()
     def this(hex: Double) = this()
     def this(hex: String, density: Double) = this()
@@ -23,9 +23,9 @@ object fogExp2Mod {
     var color: Color = js.native
     
     /**
-    	 * Defines how fast the fog will grow dense.
-    	 * @default 0.00025
-    	 */
+      * Defines how fast the fog will grow dense.
+      * @default 0.00025
+      */
     var density: Double = js.native
     
     val isFogExp2: `true` = js.native
@@ -34,6 +34,6 @@ object fogExp2Mod {
     var name: String = js.native
     
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
 }

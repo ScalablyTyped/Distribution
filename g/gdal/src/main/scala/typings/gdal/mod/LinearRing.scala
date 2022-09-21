@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "LinearRing")
 @js.native
-class LinearRing () extends LineString {
+open class LinearRing () extends LineString {
   
   def getArea(): Double = js.native
 }

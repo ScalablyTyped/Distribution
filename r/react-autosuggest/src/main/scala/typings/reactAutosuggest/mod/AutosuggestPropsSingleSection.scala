@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutosuggestPropsSingleSection[TSuggestion]
   extends StObject
      with AutosuggestPropsBase[TSuggestion]
-     with AutosuggestProps[TSuggestion, js.Any] {
+     with AutosuggestProps[TSuggestion, Any] {
   
   /**
     * Set it to true if you'd like to display suggestions in multiple sections (with optional titles).
@@ -42,6 +42,6 @@ object AutosuggestPropsSingleSection {
     
     inline def setSuggestions(value: js.Array[TSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    inline def setSuggestionsVarargs(value: TSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: TSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value*))
   }
 }

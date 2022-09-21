@@ -9,7 +9,7 @@ trait Board
   extends StObject
      with BoardReference {
   
-  var _links: js.Any
+  var _links: Any
   
   var allowedMappings: StringDictionary[StringDictionary[js.Array[String]]]
   
@@ -28,7 +28,7 @@ trait Board
 object Board {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     allowedMappings: StringDictionary[StringDictionary[js.Array[String]]],
     canEdit: Boolean,
     columns: js.Array[BoardColumn],
@@ -52,7 +52,7 @@ object Board {
     
     inline def setColumns(value: js.Array[BoardColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: BoardColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: BoardColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setFields(value: BoardFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -62,8 +62,8 @@ object Board {
     
     inline def setRows(value: js.Array[BoardRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: BoardRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: BoardRow*): Self = StObject.set(x, "rows", js.Array(value*))
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

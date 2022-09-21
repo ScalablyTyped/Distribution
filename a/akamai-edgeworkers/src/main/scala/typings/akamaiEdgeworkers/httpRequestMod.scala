@@ -1,5 +1,6 @@
 package typings.akamaiEdgeworkers
 
+import typings.akamaiEdgeworkers.EW.ReadAllHeader
 import typings.akamaiEdgeworkers.EW.ReadsHeaders
 import typings.akamaiEdgeworkers.anon.Headers
 import typings.akamaiEdgeworkers.streamsMod.ReadableStream
@@ -34,15 +35,16 @@ object httpRequestMod {
     */
   trait HttpResponse
     extends StObject
-       with ReadsHeaders {
+       with ReadsHeaders
+       with ReadAllHeader {
     
-    var body: ReadableStream[js.Any]
+    var body: ReadableStream[Any]
     
     /**
       * Parses the body of the response as JSON. The response is buffered
       * and `JSON.parse()` is run on the text.
       */
-    def json(): js.Promise[js.Any]
+    def json(): js.Promise[Any]
     
     /**
       * A boolean which is true for 2XX responses
@@ -63,22 +65,23 @@ object httpRequestMod {
   object HttpResponse {
     
     inline def apply(
-      body: ReadableStream[js.Any],
+      body: ReadableStream[Any],
       getHeader: String => js.Array[String] | Null,
-      json: () => js.Promise[js.Any],
+      getHeaders: () => typings.akamaiEdgeworkers.EW.Headers,
+      json: () => js.Promise[Any],
       ok: Boolean,
       status: Double,
       text: () => js.Promise[String]
     ): HttpResponse = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = js.Any.fromFunction0(text))
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), getHeaders = js.Any.fromFunction0(getHeaders), json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = js.Any.fromFunction0(text))
       __obj.asInstanceOf[HttpResponse]
     }
     
     extension [Self <: HttpResponse](x: Self) {
       
-      inline def setBody(value: ReadableStream[js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
       inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
@@ -87,4 +90,9 @@ object httpRequestMod {
       inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
+  
+  /**
+    * A request body, either in the form of a static string or a readable stream.
+    */
+  type RequestBody = String | ReadableStream[Any]
 }

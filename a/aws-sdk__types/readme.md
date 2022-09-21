@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__types
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 Types for the AWS SDK
@@ -10,10 +10,10 @@ Types for the AWS SDK
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/types |
 | Keywords           | - |
-| # releases         | 35 |
-| # dependents       | 338 |
-| # downloads        | 15448650 |
-| # stars            | 0 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 3.3923045333333336E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/types)

@@ -58,7 +58,7 @@ object StepManeuver {
     
     inline def setLocation(value: Coordinate): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setModifier(value: Indication): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access._OptionButtonInOption")
 @js.native
-/* private */ class OptionButtonInOption ()
+/* private */ open class OptionButtonInOption ()
   extends StObject
      with typings.activexAccess.Access.OptionButtonInOption

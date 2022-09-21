@@ -10,10 +10,10 @@ object kitchenMod {
   
   @JSImport("material-ui/svg-icons/places/kitchen", JSImport.Default)
   @js.native
-  class default () extends PlacesKitchen
+  open class default () extends PlacesKitchen
   
   @JSImport("material-ui/svg-icons/places/kitchen", "PlacesKitchen")
   @js.native
-  class PlacesKitchen ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesKitchen ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

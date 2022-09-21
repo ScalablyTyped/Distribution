@@ -10,15 +10,12 @@ Cordova plugin to add in your application support for Universal Links (iOS 9) an
 | ------------------ | :-------------: |
 | Full name          | cordova-universal-links-plugin |
 | Keywords           | cordova, links, universal, deep links, universal links, ecosystem:cordova, cordova-ios, cordova-android, ios, android |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 14343 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2406.0 |
+| # stars            | 350.0 |
 
 ## Links
-- [Homepage](https://github.com/nordnet/cordova-universal-links-plugin#readme)
-- [Bugs](https://github.com/nordnet/cordova-universal-links-plugin/issues)
-- [Repository](https://github.com/nordnet/cordova-universal-links-plugin)
 - [Npm](https://www.npmjs.com/package/cordova-universal-links-plugin)
     
 

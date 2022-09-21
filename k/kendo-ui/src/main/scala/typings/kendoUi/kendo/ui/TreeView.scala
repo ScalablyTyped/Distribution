@@ -14,10 +14,10 @@ trait TreeView
   extends StObject
      with Widget {
   
-  def append(nodeData: js.Any): JQuery = js.native
-  def append(nodeData: js.Any, parentNode: Unit, success: js.Function): JQuery = js.native
-  def append(nodeData: js.Any, parentNode: JQuery): JQuery = js.native
-  def append(nodeData: js.Any, parentNode: JQuery, success: js.Function): JQuery = js.native
+  def append(nodeData: Any): JQuery = js.native
+  def append(nodeData: Any, parentNode: Unit, success: js.Function): JQuery = js.native
+  def append(nodeData: Any, parentNode: JQuery): JQuery = js.native
+  def append(nodeData: Any, parentNode: JQuery, success: js.Function): JQuery = js.native
   def append(nodeData: JQuery): JQuery = js.native
   def append(nodeData: JQuery, parentNode: Unit, success: js.Function): JQuery = js.native
   def append(nodeData: JQuery, parentNode: JQuery): JQuery = js.native
@@ -50,9 +50,9 @@ trait TreeView
   def expand(nodes: JQuery): Unit = js.native
   def expand(nodes: Element): Unit = js.native
   
-  def expandPath(path: js.Any, complete: js.Function): Unit = js.native
+  def expandPath(path: Any, complete: js.Function): Unit = js.native
   
-  def expandTo(targetNode: js.Any): Unit = js.native
+  def expandTo(targetNode: Any): Unit = js.native
   def expandTo(targetNode: Node): Unit = js.native
   
   def findByText(text: String): JQuery = js.native
@@ -61,11 +61,11 @@ trait TreeView
   
   def focus(): Unit = js.native
   
-  def insertAfter(nodeData: js.Any, referenceNode: JQuery): JQuery = js.native
+  def insertAfter(nodeData: Any, referenceNode: JQuery): JQuery = js.native
   
-  def insertBefore(nodeData: js.Any, referenceNode: JQuery): JQuery = js.native
+  def insertBefore(nodeData: Any, referenceNode: JQuery): JQuery = js.native
   
-  def items(): js.Any = js.native
+  def items(): Any = js.native
   
   @JSName("options")
   var options_TreeView: TreeViewOptions = js.native

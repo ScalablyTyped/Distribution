@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CreateDateFieldCommand")
 @js.native
-class CreateDateFieldCommand ()
+open class CreateDateFieldCommand ()
   extends StObject
      with typings.devexpressWeb.CreateDateFieldCommand {
   

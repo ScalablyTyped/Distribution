@@ -15,13 +15,15 @@ trait MethodDeclaration
   extends StObject
      with FunctionLikeDeclarationBase
      with FunctionLikeDeclaration
+     with HasDecorators
      with HasJSDoc
+     with HasModifiers
      with ObjectLiteralElementLike
      with SignatureDeclaration {
   
-  var _classElementBrand: js.Any = js.native
+  var _classElementBrand: Any = js.native
   
-  var _objectLiteralBrand: js.Any = js.native
+  var _objectLiteralBrand: Any = js.native
   
   @JSName("body")
   val body_MethodDeclaration: js.UndefOr[FunctionBody] = js.native

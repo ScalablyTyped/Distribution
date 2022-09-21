@@ -18,7 +18,7 @@ object Cache {
     */
   @JSImport("phaser", "Cache.BaseCache")
   @js.native
-  class BaseCache ()
+  open class BaseCache ()
     extends StObject
        with typings.phaser.Phaser.Cache.BaseCache {
     
@@ -29,7 +29,7 @@ object Cache {
       * @param data The data to be stored in the cache.
       */
     /* CompleteClass */
-    override def add(key: String, data: js.Any): this.type = js.native
+    override def add(key: String, data: Any): this.type = js.native
     
     /**
       * Destroys this cache and all items within it.
@@ -43,7 +43,7 @@ object Cache {
       * You can query the Map directly or use the BaseCache methods.
       */
     /* CompleteClass */
-    var entries: Map[String, js.Any] = js.native
+    var entries: Map[String, Any] = js.native
     
     /**
       * An instance of EventEmitter used by the cache to emit related events.
@@ -64,7 +64,7 @@ object Cache {
       * @param key The unique key of the item to be retrieved from this cache.
       */
     /* CompleteClass */
-    override def get(key: String): js.Any = js.native
+    override def get(key: String): Any = js.native
     
     /**
       * Returns all keys in use in this cache.
@@ -101,7 +101,7 @@ object Cache {
     */
   @JSImport("phaser", "Cache.CacheManager")
   @js.native
-  class CacheManager protected ()
+  open class CacheManager protected ()
     extends StObject
        with typings.phaser.Phaser.Cache.CacheManager {
     /**
@@ -222,7 +222,7 @@ object Cache {
       */
     @JSImport("phaser", "Cache.Events.ADD")
     @js.native
-    val ADD: js.Any = js.native
+    val ADD: Any = js.native
     
     /**
       * The Cache Remove Event.
@@ -231,6 +231,6 @@ object Cache {
       */
     @JSImport("phaser", "Cache.Events.REMOVE")
     @js.native
-    val REMOVE: js.Any = js.native
+    val REMOVE: Any = js.native
   }
 }

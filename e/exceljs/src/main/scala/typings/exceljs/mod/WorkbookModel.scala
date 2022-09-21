@@ -1,6 +1,5 @@
 package typings.exceljs.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait WorkbookModel extends StObject {
   
   var contentStatus: String
   
-  var created: Date
+  var created: js.Date
   
   var creator: String
   
@@ -27,17 +26,17 @@ trait WorkbookModel extends StObject {
   
   var lastModifiedBy: String
   
-  var lastPrinted: Date
+  var lastPrinted: js.Date
   
   var manager: String
   
   var media: js.Array[Media]
   
-  var modified: Date
+  var modified: js.Date
   
   var properties: WorkbookProperties
   
-  var revision: Date
+  var revision: js.Date
   
   var sheets: js.Array[WorksheetModel]
   
@@ -57,19 +56,19 @@ object WorkbookModel {
     category: String,
     company: String,
     contentStatus: String,
-    created: Date,
+    created: js.Date,
     creator: String,
     definedNames: DefinedNamesModel,
     description: String,
     keywords: String,
     language: String,
     lastModifiedBy: String,
-    lastPrinted: Date,
+    lastPrinted: js.Date,
     manager: String,
     media: js.Array[Media],
-    modified: Date,
+    modified: js.Date,
     properties: WorkbookProperties,
-    revision: Date,
+    revision: js.Date,
     sheets: js.Array[WorksheetModel],
     subject: String,
     themes: js.Array[String],
@@ -89,13 +88,13 @@ object WorkbookModel {
     
     inline def setContentStatus(value: String): Self = StObject.set(x, "contentStatus", value.asInstanceOf[js.Any])
     
-    inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
     inline def setDefinedNames(value: DefinedNamesModel): Self = StObject.set(x, "definedNames", value.asInstanceOf[js.Any])
     
-    inline def setDefinedNamesVarargs(value: DefinedNamesRanges*): Self = StObject.set(x, "definedNames", js.Array(value :_*))
+    inline def setDefinedNamesVarargs(value: DefinedNamesRanges*): Self = StObject.set(x, "definedNames", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -105,38 +104,38 @@ object WorkbookModel {
     
     inline def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastPrinted(value: Date): Self = StObject.set(x, "lastPrinted", value.asInstanceOf[js.Any])
+    inline def setLastPrinted(value: js.Date): Self = StObject.set(x, "lastPrinted", value.asInstanceOf[js.Any])
     
     inline def setManager(value: String): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
     
     inline def setMedia(value: js.Array[Media]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
+    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value*))
     
-    inline def setModified(value: Date): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: js.Date): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: WorkbookProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setRevision(value: Date): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: js.Date): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     inline def setSheets(value: js.Array[WorksheetModel]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
     
-    inline def setSheetsVarargs(value: WorksheetModel*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: WorksheetModel*): Self = StObject.set(x, "sheets", js.Array(value*))
     
     inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     inline def setThemes(value: js.Array[String]): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
     
-    inline def setThemesVarargs(value: String*): Self = StObject.set(x, "themes", js.Array(value :_*))
+    inline def setThemesVarargs(value: String*): Self = StObject.set(x, "themes", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setViews(value: js.Array[WorkbookView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    inline def setViewsVarargs(value: WorkbookView*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: WorkbookView*): Self = StObject.set(x, "views", js.Array(value*))
     
     inline def setWorksheets(value: js.Array[Worksheet]): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
     
-    inline def setWorksheetsVarargs(value: Worksheet*): Self = StObject.set(x, "worksheets", js.Array(value :_*))
+    inline def setWorksheetsVarargs(value: Worksheet*): Self = StObject.set(x, "worksheets", js.Array(value*))
   }
 }

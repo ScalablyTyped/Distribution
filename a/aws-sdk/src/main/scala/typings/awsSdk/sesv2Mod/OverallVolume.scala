@@ -34,7 +34,7 @@ object OverallVolume {
     
     inline def setDomainIspPlacementsUndefined: Self = StObject.set(x, "DomainIspPlacements", js.undefined)
     
-    inline def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = StObject.set(x, "DomainIspPlacements", js.Array(value :_*))
+    inline def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = StObject.set(x, "DomainIspPlacements", js.Array(value*))
     
     inline def setReadRatePercent(value: Percentage): Self = StObject.set(x, "ReadRatePercent", value.asInstanceOf[js.Any])
     

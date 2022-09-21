@@ -7,26 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The nodes of a document subtree and a position within them. */
 trait TreeWalker extends StObject {
   
+  /* standard dom */
   var currentNode: Node
   
+  /* standard dom */
   val filter: NodeFilter | Null
   
+  /* standard dom */
   def firstChild(): Node | Null
   
+  /* standard dom */
   def lastChild(): Node | Null
   
+  /* standard dom */
   def nextNode(): Node | Null
   
+  /* standard dom */
   def nextSibling(): Node | Null
   
+  /* standard dom */
   def parentNode(): Node | Null
   
+  /* standard dom */
   def previousNode(): Node | Null
   
+  /* standard dom */
   def previousSibling(): Node | Null
   
+  /* standard dom */
   val root: Node
   
+  /* standard dom */
   val whatToShow: Double
 }
 object TreeWalker {
@@ -52,6 +63,8 @@ object TreeWalker {
     inline def setCurrentNode(value: Node): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
     
     inline def setFilter(value: NodeFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterFunction1(value: /* node */ Node => Double): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterNull: Self = StObject.set(x, "filter", null)
     

@@ -1,38 +1,39 @@
 package typings.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountURL = java.lang.String
+type AccountURL = String
 
-type AgentName = java.lang.String
+type AgentName = String
 
-type AgentURL = java.lang.String
+type AgentURL = String
 
-type ConnectionQueryParams = org.scalablytyped.runtime.StringDictionary[js.Any]
+type ConnectionQueryParams = StringDictionary[Any]
 
-type CredentialDefinitionID = java.lang.String
+type CredentialDefinitionID = String
 
-type CredentialDefinitionQueryParams = org.scalablytyped.runtime.StringDictionary[js.Any]
+type CredentialDefinitionQueryParams = StringDictionary[Any]
 
-type CredentialQueryParams = org.scalablytyped.runtime.StringDictionary[js.Any]
+type CredentialQueryParams = StringDictionary[Any]
 
-type CredentialSchemaID = java.lang.String
+type CredentialSchemaID = String
 
-type CredentialSchemaQueryParams = org.scalablytyped.runtime.StringDictionary[js.Any]
+type CredentialSchemaQueryParams = StringDictionary[Any]
 
-type DID = java.lang.String
+type DID = String
 
-type ImageData = java.lang.String
+type ImageData = String
 
-type ProofSchemaQueryParams = org.scalablytyped.runtime.StringDictionary[js.Any]
+type ProofSchemaQueryParams = StringDictionary[Any]
 
-type Properties = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Properties = StringDictionary[String]
 
-type QueryRoute = org.scalablytyped.runtime.StringDictionary[js.Any]
+type QueryRoute = StringDictionary[Any]
 
-type VerificationQueryParams = org.scalablytyped.runtime.StringDictionary[js.Any]
+type VerificationQueryParams = StringDictionary[Any]
 
-type Verkey = java.lang.String
+type Verkey = String

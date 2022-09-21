@@ -22,7 +22,7 @@ object dynamicMod {
   inline def default[P](dynamicOptions: Loader[P]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dynamicOptions.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
   inline def default[P](dynamicOptions: Loader[P], options: DynamicOptions[P]): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dynamicOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
   
-  inline def noSSR[P](LoadableInitializer: LoadableFn[P], loadableOptions: LoadableOptions[P]): (ComponentClass[P, js.Any]) | FunctionComponent[P] | js.Function0[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("noSSR")(LoadableInitializer.asInstanceOf[js.Any], loadableOptions.asInstanceOf[js.Any])).asInstanceOf[(ComponentClass[P, js.Any]) | FunctionComponent[P] | js.Function0[Element]]
+  inline def noSSR[P](LoadableInitializer: LoadableFn[P], loadableOptions: LoadableOptions[P]): (ComponentClass[P, Any]) | FunctionComponent[P] | js.Function0[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("noSSR")(LoadableInitializer.asInstanceOf[js.Any], loadableOptions.asInstanceOf[js.Any])).asInstanceOf[(ComponentClass[P, Any]) | FunctionComponent[P] | js.Function0[Element]]
   
   trait DynamicOptions[P]
     extends StObject
@@ -31,7 +31,7 @@ object dynamicMod {
     /**
       * @deprecated the modules option has been planned for removal
       */
-    var render: js.UndefOr[js.Function2[/* props */ P, /* loaded */ js.Any, Element]] = js.undefined
+    var render: js.UndefOr[js.Function2[/* props */ P, /* loaded */ Any, Element]] = js.undefined
   }
   object DynamicOptions {
     
@@ -42,7 +42,7 @@ object dynamicMod {
     
     extension [Self <: DynamicOptions[?], P](x: Self & DynamicOptions[P]) {
       
-      inline def setRender(value: (/* props */ P, /* loaded */ js.Any) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* props */ P, /* loaded */ Any) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
@@ -97,7 +97,7 @@ object dynamicMod {
     
     var modules: js.UndefOr[js.Function0[LoaderMap]] = js.undefined
     
-    var webpack: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var webpack: js.UndefOr[js.Function0[Any]] = js.undefined
   }
   object LoadableGeneratedOptions {
     
@@ -112,7 +112,7 @@ object dynamicMod {
       
       inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      inline def setWebpack(value: () => js.Any): Self = StObject.set(x, "webpack", js.Any.fromFunction0(value))
+      inline def setWebpack(value: () => Any): Self = StObject.set(x, "webpack", js.Any.fromFunction0(value))
       
       inline def setWebpackUndefined: Self = StObject.set(x, "webpack", js.undefined)
     }
@@ -122,7 +122,7 @@ object dynamicMod {
     extends StObject
        with LoadableBaseOptions[P] {
     
-    var render: js.UndefOr[js.Function2[/* loader */ js.Any, /* props */ js.Any, Element]] = js.undefined
+    var render: js.UndefOr[js.Function2[/* loader */ Any, /* props */ Any, Element]] = js.undefined
   }
   object LoadableOptions {
     
@@ -133,7 +133,7 @@ object dynamicMod {
     
     extension [Self <: LoadableOptions[?], P](x: Self & LoadableOptions[P]) {
       
-      inline def setRender(value: (/* loader */ js.Any, /* props */ js.Any) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* loader */ Any, /* props */ Any) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
@@ -143,5 +143,5 @@ object dynamicMod {
   
   type LoaderComponent[P] = js.Promise[ComponentType[P] | Default[P]]
   
-  type LoaderMap = StringDictionary[js.Function0[Loader[js.Any]]]
+  type LoaderMap = StringDictionary[js.Function0[Loader[Any]]]
 }

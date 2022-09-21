@@ -26,30 +26,30 @@ object anon {
       
       inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value*))
     }
   }
   
   trait Error extends StObject {
     
-    var error: typings.std.Error
+    var error: js.Error
     
     var path: js.Array[String | Double]
   }
   object Error {
     
-    inline def apply(error: typings.std.Error, path: js.Array[String | Double]): Error = {
+    inline def apply(error: js.Error, path: js.Array[String | Double]): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
     extension [Self <: Error](x: Self) {
       
-      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
@@ -72,7 +72,7 @@ object anon {
       
       inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value*))
     }
   }
   

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "CertHostkey")
 @js.native
-class CertHostkey ()
+open class CertHostkey ()
   extends typings.nodegit.certHostKeyMod.CertHostkey

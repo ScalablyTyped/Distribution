@@ -10,10 +10,10 @@ The lodash method `_.escape` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.escape |
 | Keywords           | lodash-modularized, escape |
-| # releases         | 0 |
-| # dependents       | 88 |
-| # downloads        | 160145498 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3675063333333334E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -13,6 +13,18 @@ trait ServicePerimeterConfig extends StObject {
     */
   var accessLevels: js.UndefOr[js.Array[String]] = js.undefined
   
+  /**
+    * List of EgressPolicies to apply to the perimeter. A perimeter may have multiple EgressPolicies, each of which is evaluated separately. Access is granted if any EgressPolicy grants
+    * it. Must be empty for a perimeter bridge.
+    */
+  var egressPolicies: js.UndefOr[js.Array[EgressPolicy]] = js.undefined
+  
+  /**
+    * List of IngressPolicies to apply to the perimeter. A perimeter may have multiple IngressPolicies, each of which is evaluated separately. Access is granted if any Ingress Policy
+    * grants it. Must be empty for a perimeter bridge.
+    */
+  var ingressPolicies: js.UndefOr[js.Array[IngressPolicy]] = js.undefined
+  
   /** A list of Google Cloud resources that are inside of the service perimeter. Currently only projects are allowed. Format: `projects/{project_number}` */
   var resources: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -38,19 +50,31 @@ object ServicePerimeterConfig {
     
     inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value*))
+    
+    inline def setEgressPolicies(value: js.Array[EgressPolicy]): Self = StObject.set(x, "egressPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setEgressPoliciesUndefined: Self = StObject.set(x, "egressPolicies", js.undefined)
+    
+    inline def setEgressPoliciesVarargs(value: EgressPolicy*): Self = StObject.set(x, "egressPolicies", js.Array(value*))
+    
+    inline def setIngressPolicies(value: js.Array[IngressPolicy]): Self = StObject.set(x, "ingressPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setIngressPoliciesUndefined: Self = StObject.set(x, "ingressPolicies", js.undefined)
+    
+    inline def setIngressPoliciesVarargs(value: IngressPolicy*): Self = StObject.set(x, "ingressPolicies", js.Array(value*))
     
     inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setRestrictedServices(value: js.Array[String]): Self = StObject.set(x, "restrictedServices", value.asInstanceOf[js.Any])
     
     inline def setRestrictedServicesUndefined: Self = StObject.set(x, "restrictedServices", js.undefined)
     
-    inline def setRestrictedServicesVarargs(value: String*): Self = StObject.set(x, "restrictedServices", js.Array(value :_*))
+    inline def setRestrictedServicesVarargs(value: String*): Self = StObject.set(x, "restrictedServices", js.Array(value*))
     
     inline def setVpcAccessibleServices(value: VpcAccessibleServices): Self = StObject.set(x, "vpcAccessibleServices", value.asInstanceOf[js.Any])
     

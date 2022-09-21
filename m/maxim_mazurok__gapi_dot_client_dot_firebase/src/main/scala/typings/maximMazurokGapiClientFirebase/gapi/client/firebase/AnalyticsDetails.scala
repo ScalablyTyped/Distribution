@@ -32,6 +32,6 @@ object AnalyticsDetails {
     
     inline def setStreamMappingsUndefined: Self = StObject.set(x, "streamMappings", js.undefined)
     
-    inline def setStreamMappingsVarargs(value: StreamMapping*): Self = StObject.set(x, "streamMappings", js.Array(value :_*))
+    inline def setStreamMappingsVarargs(value: StreamMapping*): Self = StObject.set(x, "streamMappings", js.Array(value*))
   }
 }

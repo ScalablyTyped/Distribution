@@ -37,6 +37,11 @@ trait GetSavingsPlansCoverageRequest extends StObject {
   var NextToken: js.UndefOr[NextPageToken] = js.undefined
   
   /**
+    * The value that you want to sort the data by. The following values are supported for Key:    SpendCoveredBySavingsPlan     OnDemandCost     CoveragePercentage     TotalCost     InstanceFamily     Region     Service    The supported values for SortOrder are ASCENDING and DESCENDING.
+    */
+  var SortBy: js.UndefOr[SortDefinition] = js.undefined
+  
+  /**
     * The time period that you want the usage and costs for. The Start date must be within 13 months. The End date must be after the Start date, and before the current date. Future dates can't be used as an End date.
     */
   var TimePeriod: DateInterval
@@ -62,7 +67,7 @@ object GetSavingsPlansCoverageRequest {
     
     inline def setGroupByUndefined: Self = StObject.set(x, "GroupBy", js.undefined)
     
-    inline def setGroupByVarargs(value: GroupDefinition*): Self = StObject.set(x, "GroupBy", js.Array(value :_*))
+    inline def setGroupByVarargs(value: GroupDefinition*): Self = StObject.set(x, "GroupBy", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -72,11 +77,15 @@ object GetSavingsPlansCoverageRequest {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: MetricName*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricName*): Self = StObject.set(x, "Metrics", js.Array(value*))
     
     inline def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setSortBy(value: SortDefinition): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
     inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }

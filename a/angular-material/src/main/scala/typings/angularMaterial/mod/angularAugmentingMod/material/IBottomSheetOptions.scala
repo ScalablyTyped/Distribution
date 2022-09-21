@@ -30,7 +30,7 @@ trait IBottomSheetOptions extends StObject {
   
   var escapeToClose: js.UndefOr[Boolean] = js.undefined
   
-  var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var locals: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var parent: js.UndefOr[
     (js.Function2[/* scope */ IScope, /* element */ JQuery, Element | JQuery]) | String | Element | JQuery
@@ -70,11 +70,11 @@ object IBottomSheetOptions {
     
     inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
-    inline def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+    inline def setControllerFunction1(value: /* repeated */ Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value*))
     
     inline def setDisableBackdrop(value: Boolean): Self = StObject.set(x, "disableBackdrop", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object IBottomSheetOptions {
     
     inline def setEscapeToCloseUndefined: Self = StObject.set(x, "escapeToClose", js.undefined)
     
-    inline def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+    inline def setLocals(value: StringDictionary[Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
     inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     

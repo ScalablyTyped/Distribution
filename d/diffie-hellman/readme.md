@@ -10,10 +10,10 @@ pure js diffie-hellman
 | ------------------ | :-------------: |
 | Full name          | diffie-hellman |
 | Keywords           | diffie, hellman, diffiehellman, dh |
-| # releases         | 0 |
-| # dependents       | 70 |
-| # downloads        | 472152187 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.9158635E7 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-browserify/diffie-hellman)

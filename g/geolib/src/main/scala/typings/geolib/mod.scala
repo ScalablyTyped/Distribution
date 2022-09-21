@@ -30,7 +30,6 @@ import typings.geolib.typesMod.GeolibInputCoordinates
 import typings.geolib.typesMod.GeolibInputCoordinatesWithTime
 import typings.geolib.typesMod.LatitudeKeys
 import typings.geolib.typesMod.LongitudeKeys
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,7 +90,7 @@ object mod {
   
   inline def getAreaOfPolygon(points: js.Array[GeolibInputCoordinates]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAreaOfPolygon")(points.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def getBounds(points: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBounds")(points.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getBounds(points: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBounds")(points.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def getBoundsOfDistance(point: GeolibInputCoordinates, distance: Double): js.Array[Latitude] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsOfDistance")(point.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[js.Array[Latitude]]
   
@@ -111,17 +110,23 @@ object mod {
   inline def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates, accuracy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getDistanceFromLine(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceFromLine")(point.asInstanceOf[js.Any], lineStart.asInstanceOf[js.Any], lineEnd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDistanceFromLine(
+    point: GeolibInputCoordinates,
+    lineStart: GeolibInputCoordinates,
+    lineEnd: GeolibInputCoordinates,
+    accuracy: Double
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceFromLine")(point.asInstanceOf[js.Any], lineStart.asInstanceOf[js.Any], lineEnd.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Gets great circle bearing of two points. See description of getRhumbLineBearing for more information
     */
   inline def getGreatCircleBearing(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getGreatCircleBearing")(origin.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def getLatitude(point: GeolibInputCoordinates): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatitude")(point.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def getLatitude(point: GeolibInputCoordinates, raw: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLatitude")(point.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getLatitude(point: GeolibInputCoordinates): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatitude")(point.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getLatitude(point: GeolibInputCoordinates, raw: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLatitude")(point.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getLongitude(point: GeolibInputCoordinates): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLongitude")(point.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def getLongitude(point: GeolibInputCoordinates, raw: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLongitude")(point.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getLongitude(point: GeolibInputCoordinates): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLongitude")(point.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getLongitude(point: GeolibInputCoordinates, raw: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLongitude")(point.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def getPathLength(points: js.Array[GeolibInputCoordinates]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathLength")(points.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def getPathLength(points: js.Array[GeolibInputCoordinates], distanceFn: DistanceFn): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathLength")(points.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -149,7 +154,7 @@ object mod {
     distanceFn: GeolibDistanceFn
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpeed")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def isDecimal(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDecimal(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isPointInLine(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointInLine")(point.asInstanceOf[js.Any], lineStart.asInstanceOf[js.Any], lineEnd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -164,13 +169,13 @@ object mod {
   
   inline def isPointWithinRadius(point: GeolibInputCoordinates, center: GeolibInputCoordinates, radius: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointWithinRadius")(point.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isSexagesimal(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSexagesimal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSexagesimal(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSexagesimal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isValidCoordinate(point: GeolibInputCoordinates): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCoordinate")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isValidLatitude(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLatitude")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidLatitude(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLatitude")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isValidLongitude(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLongitude")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidLongitude(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLongitude")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("geolib", "latitudeKeys")
   @js.native
@@ -189,15 +194,15 @@ object mod {
   
   @JSImport("geolib", "sexagesimalPattern")
   @js.native
-  val sexagesimalPattern: RegExp = js.native
+  val sexagesimalPattern: js.RegExp = js.native
   
-  inline def sexagesimalToDecimal(sexagesimal: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sexagesimalToDecimal")(sexagesimal.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def sexagesimalToDecimal(sexagesimal: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sexagesimalToDecimal")(sexagesimal.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("geolib", "timeConversion")
   @js.native
   val timeConversion: unitObject = js.native
   
-  inline def toDecimal(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toDecimal(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def toDeg(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDeg")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   

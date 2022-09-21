@@ -274,7 +274,7 @@ object Provider {
     var status: PerceptionFrameSourcePropertyChangeStatus
     
     /** Gets the requested new value of the property. */
-    var value: js.Any
+    var value: Any
   }
   object PerceptionPropertyChangeRequest {
     
@@ -282,7 +282,7 @@ object Provider {
       getDeferral: () => Deferral,
       name: String,
       status: PerceptionFrameSourcePropertyChangeStatus,
-      value: js.Any
+      value: Any
     ): PerceptionPropertyChangeRequest = {
       val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PerceptionPropertyChangeRequest]
@@ -296,7 +296,7 @@ object Provider {
       
       inline def setStatus(value: PerceptionFrameSourcePropertyChangeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

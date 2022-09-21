@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SwipeViewModelConstructor
   extends StObject
-     with Instantiable0[SwipeViewModel]
+     with /**
+  * Provides the logic for the [Swipe](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe-SwipeViewModel.html)
+  */
+Instantiable0[SwipeViewModel]
      with Instantiable1[/* properties */ SwipeViewModelProperties, SwipeViewModel]

@@ -9,32 +9,32 @@ trait EnvironmentMember extends StObject {
   /**
     * The ID of the environment for the environment member.
     */
-  var environmentId: js.UndefOr[EnvironmentId] = js.undefined
+  var environmentId: EnvironmentId
   
   /**
     * The time, expressed in epoch time format, when the environment member last opened the environment.
     */
-  var lastAccess: js.UndefOr[Timestamp] = js.undefined
+  var lastAccess: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of environment member permissions associated with this environment member. Available values include:    owner: Owns the environment.    read-only: Has read-only access to the environment.    read-write: Has read-write access to the environment.  
     */
-  var permissions: js.UndefOr[Permissions] = js.undefined
+  var permissions: Permissions
   
   /**
     * The Amazon Resource Name (ARN) of the environment member.
     */
-  var userArn: js.UndefOr[UserArn] = js.undefined
+  var userArn: UserArn
   
   /**
-    * The user ID in AWS Identity and Access Management (AWS IAM) of the environment member.
+    * The user ID in Identity and Access Management (IAM) of the environment member.
     */
-  var userId: js.UndefOr[String] = js.undefined
+  var userId: String
 }
 object EnvironmentMember {
   
-  inline def apply(): EnvironmentMember = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(environmentId: EnvironmentId, permissions: Permissions, userArn: UserArn, userId: String): EnvironmentMember = {
+    val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentMember]
   }
   
@@ -42,22 +42,14 @@ object EnvironmentMember {
     
     inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
-    
-    inline def setLastAccess(value: Timestamp): Self = StObject.set(x, "lastAccess", value.asInstanceOf[js.Any])
+    inline def setLastAccess(value: js.Date): Self = StObject.set(x, "lastAccess", value.asInstanceOf[js.Any])
     
     inline def setLastAccessUndefined: Self = StObject.set(x, "lastAccess", js.undefined)
     
     inline def setPermissions(value: Permissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
-    
     inline def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     
-    inline def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
-    
     inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
-    
-    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

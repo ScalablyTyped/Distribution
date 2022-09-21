@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Bucket extends StObject {
   
   /**
+    * Specifies whether the bucket policy for the bucket requires server-side encryption of objects when objects are uploaded to the bucket. Possible values are: FALSE - The bucket policy requires server-side encryption of new objects. PutObject requests must include the x-amz-server-side-encryption header and the value for that header must be AES256 or aws:kms. TRUE - The bucket doesn't have a bucket policy or it has a bucket policy that doesn't require server-side encryption of new objects. If a bucket policy exists, it doesn't require PutObject requests to include the x-amz-server-side-encryption header and it doesn't require the value for that header to be AES256 or aws:kms. UNKNOWN - Amazon Macie can't determine whether the bucket policy requires server-side encryption of objects.
+    */
+  var allowsUnencryptedObjectUploads: js.UndefOr[AllowsUnencryptedObjectUploads] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the bucket.
     */
   var arn: js.UndefOr[string] = js.undefined
@@ -14,7 +19,7 @@ trait S3Bucket extends StObject {
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the bucket was created.
     */
-  var createdAt: js.UndefOr[timestampIso8601] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of server-side encryption that's used by default to encrypt objects in the bucket.
@@ -27,7 +32,7 @@ trait S3Bucket extends StObject {
   var name: js.UndefOr[string] = js.undefined
   
   /**
-    * The display name and account identifier for the user who owns the bucket.
+    * The display name and canonical user ID for the Amazon Web Services account that owns the bucket.
     */
   var owner: js.UndefOr[S3BucketOwner] = js.undefined
   
@@ -50,11 +55,15 @@ object S3Bucket {
   
   extension [Self <: S3Bucket](x: Self) {
     
+    inline def setAllowsUnencryptedObjectUploads(value: AllowsUnencryptedObjectUploads): Self = StObject.set(x, "allowsUnencryptedObjectUploads", value.asInstanceOf[js.Any])
+    
+    inline def setAllowsUnencryptedObjectUploadsUndefined: Self = StObject.set(x, "allowsUnencryptedObjectUploads", js.undefined)
+    
     inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -78,6 +87,6 @@ object S3Bucket {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: KeyValuePair*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: KeyValuePair*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

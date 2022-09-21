@@ -25,12 +25,8 @@ trait InstanceGroup extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Assigns a name to a port number. For example: {name: "http", port: 80}
-    *
-    * This allows the system to reference ports by the assigned name instead of a port number. Named ports can also contain multiple ports. For example: [{name: "http", port: 80},{name:
-    * "http", port: 8080}]
-    *
-    * Named ports apply to all instances in this instance group.
+    * Assigns a name to a port number. For example: {name: "http", port: 80} This allows the system to reference ports by the assigned name instead of a port number. Named ports can also
+    * contain multiple ports. For example: [{name: "http", port: 80},{name: "http", port: 8080}] Named ports apply to all instances in this instance group.
     */
   var namedPorts: js.UndefOr[js.Array[NamedPort]] = js.undefined
   
@@ -95,7 +91,7 @@ object InstanceGroup {
     
     inline def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
     
-    inline def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
+    inline def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value*))
     
     inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     

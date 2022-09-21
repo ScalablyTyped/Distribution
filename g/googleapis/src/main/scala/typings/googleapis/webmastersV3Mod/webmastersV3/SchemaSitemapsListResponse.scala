@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List of sitemaps.
-  */
 trait SchemaSitemapsListResponse extends StObject {
   
   /**
-    * Contains detailed information about a specific URL submitted as a
-    * sitemap.
+    * Contains detailed information about a specific URL submitted as a sitemap.
     */
   var sitemap: js.UndefOr[js.Array[SchemaWmxSitemap]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaSitemapsListResponse {
     
     inline def setSitemapUndefined: Self = StObject.set(x, "sitemap", js.undefined)
     
-    inline def setSitemapVarargs(value: SchemaWmxSitemap*): Self = StObject.set(x, "sitemap", js.Array(value :_*))
+    inline def setSitemapVarargs(value: SchemaWmxSitemap*): Self = StObject.set(x, "sitemap", js.Array(value*))
   }
 }

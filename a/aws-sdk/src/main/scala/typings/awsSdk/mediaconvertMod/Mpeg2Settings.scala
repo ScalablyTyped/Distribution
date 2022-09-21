@@ -52,17 +52,17 @@ trait Mpeg2Settings extends StObject {
   var FramerateNumerator: js.UndefOr[integerMin24Max60000] = js.undefined
   
   /**
-    * Frequency of closed GOPs. In streaming applications, it is recommended that this be set to 1 so a decoder joining mid-stream will receive an IDR frame as quickly as possible. Setting this value to 0 will break output segmenting.
+    * Specify the relative frequency of open to closed GOPs in this output. For example, if you want to allow four open GOPs and then require a closed GOP, set this value to 5. When you create a streaming output, we recommend that you keep the default value, 1, so that players starting mid-stream receive an IDR frame as quickly as possible. Don't set this value to 0; that would break output segmenting.
     */
   var GopClosedCadence: js.UndefOr[integerMin0Max2147483647] = js.undefined
   
   /**
-    * GOP Length (keyframe interval) in frames or seconds. Must be greater than zero.
+    * Specify the interval between keyframes, in seconds or frames, for this output. Default: 12 Related settings: When you specify the GOP size in seconds, set GOP mode control (GopSizeUnits) to Specified, seconds (SECONDS). The default value for GOP mode control (GopSizeUnits) is Frames (FRAMES).
     */
   var GopSize: js.UndefOr[doubleMin0] = js.undefined
   
   /**
-    * Indicates if the GOP Size in MPEG2 is specified in frames or seconds. If seconds the system will convert the GOP Size into a frame count at run time.
+    * Specify the units for GOP size (GopSize). If you don't specify a value here, by default the encoder measures GOP size in frames.
     */
   var GopSizeUnits: js.UndefOr[Mpeg2GopSizeUnits] = js.undefined
   
@@ -92,12 +92,12 @@ trait Mpeg2Settings extends StObject {
   var MaxBitrate: js.UndefOr[integerMin1000Max300000000] = js.undefined
   
   /**
-    * Enforces separation between repeated (cadence) I-frames and I-frames inserted by Scene Change Detection. If a scene change I-frame is within I-interval frames of a cadence I-frame, the GOP is shrunk and/or stretched to the scene change I-frame. GOP stretch requires enabling lookahead as well as setting I-interval. The normal cadence resumes for the next GOP. This setting is only used when Scene Change Detect is enabled. Note: Maximum GOP stretch = GOP size + Min-I-interval - 1
+    * Use this setting only when you also enable Scene change detection (SceneChangeDetect). This setting determines how the encoder manages the spacing between I-frames that it inserts as part of the I-frame cadence and the I-frames that it inserts for Scene change detection. When you specify a value for this setting, the encoder determines whether to skip a cadence-driven I-frame by the value you set. For example, if you set Min I interval (minIInterval) to 5 and a cadence-driven I-frame would fall within 5 frames of a scene-change I-frame, then the encoder skips the cadence-driven I-frame. In this way, one GOP is shrunk slightly and one GOP is stretched slightly. When the cadence-driven I-frames are farther from the scene-change I-frame than the value you set, then the encoder leaves all I-frames in place and the GOPs surrounding the scene change are smaller than the usual cadence GOPs.
     */
   var MinIInterval: js.UndefOr[integerMin0Max30] = js.undefined
   
   /**
-    * Number of B-frames between reference frames.
+    * Specify the number of B-frames that MediaConvert puts between reference frames in this output. Valid values are whole numbers from 0 through 7. When you don't specify a value, MediaConvert defaults to 2.
     */
   var NumberBFramesBetweenReferenceFrames: js.UndefOr[integerMin0Max7] = js.undefined
   
@@ -122,9 +122,14 @@ trait Mpeg2Settings extends StObject {
   var QualityTuningLevel: js.UndefOr[Mpeg2QualityTuningLevel] = js.undefined
   
   /**
-    * Use Rate control mode (Mpeg2RateControlMode) to specifiy whether the bitrate is variable (vbr) or constant (cbr).
+    * Use Rate control mode (Mpeg2RateControlMode) to specify whether the bitrate is variable (vbr) or constant (cbr).
     */
   var RateControlMode: js.UndefOr[Mpeg2RateControlMode] = js.undefined
+  
+  /**
+    * Use this setting for interlaced outputs, when your output frame rate is half of your input frame rate. In this situation, choose Optimized interlacing (INTERLACED_OPTIMIZE) to create a better quality interlaced output. In this case, each progressive frame from the input corresponds to an interlaced field in the output. Keep the default value, Basic interlacing (INTERLACED), for all other output frame rates. With basic interlacing, MediaConvert performs any frame rate conversion first and then interlaces the frames. When you choose Optimized interlacing and you set your output frame rate to a value that isn't suitable for optimized interlacing, MediaConvert automatically falls back to basic interlacing. Required settings: To use optimized interlacing, you must set Telecine (telecine) to None (NONE) or Soft (SOFT). You can't use optimized interlacing for hard telecine outputs. You must also set Interlace mode (interlaceMode) to a value other than Progressive (PROGRESSIVE).
+    */
+  var ScanTypeConversionMode: js.UndefOr[Mpeg2ScanTypeConversionMode] = js.undefined
   
   /**
     * Enable this setting to insert I-frames at scene changes that the service automatically detects. This improves video quality and is enabled by default.
@@ -265,6 +270,10 @@ object Mpeg2Settings {
     inline def setRateControlMode(value: Mpeg2RateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
     
     inline def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
+    
+    inline def setScanTypeConversionMode(value: Mpeg2ScanTypeConversionMode): Self = StObject.set(x, "ScanTypeConversionMode", value.asInstanceOf[js.Any])
+    
+    inline def setScanTypeConversionModeUndefined: Self = StObject.set(x, "ScanTypeConversionMode", js.undefined)
     
     inline def setSceneChangeDetect(value: Mpeg2SceneChangeDetect): Self = StObject.set(x, "SceneChangeDetect", value.asInstanceOf[js.Any])
     

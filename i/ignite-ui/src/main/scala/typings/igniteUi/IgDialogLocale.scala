@@ -10,7 +10,7 @@ trait IgDialogLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets the title/tooltip for the close button in the dialog.

@@ -1,6 +1,7 @@
 package typings.graphqlPlaygroundHtml
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphqlPlaygroundHtml.anon.PartialISettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -255,18 +256,18 @@ object renderPlaygroundPageMod {
   
   trait IntrospectionResult extends StObject {
     
-    var __schema: js.Any
+    var __schema: Any
   }
   object IntrospectionResult {
     
-    inline def apply(__schema: js.Any): IntrospectionResult = {
+    inline def apply(__schema: Any): IntrospectionResult = {
       val __obj = js.Dynamic.literal(__schema = __schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntrospectionResult]
     }
     
     extension [Self <: IntrospectionResult](x: Self) {
       
-      inline def set__schema(value: js.Any): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
+      inline def set__schema(value: Any): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,15 +275,15 @@ object renderPlaygroundPageMod {
     
     var codeTheme: js.UndefOr[EditorColours] = js.undefined
     
-    var config: js.UndefOr[js.Any] = js.undefined
+    var config: js.UndefOr[Any] = js.undefined
     
     var endpoint: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[js.Any] = js.undefined
+    var env: js.UndefOr[Any] = js.undefined
     
     var schema: js.UndefOr[IntrospectionResult] = js.undefined
     
-    var settings: js.UndefOr[ISettings] = js.undefined
+    var settings: js.UndefOr[PartialISettings] = js.undefined
     
     var subscriptionEndpoint: js.UndefOr[String] = js.undefined
     
@@ -303,7 +304,7 @@ object renderPlaygroundPageMod {
       
       inline def setCodeThemeUndefined: Self = StObject.set(x, "codeTheme", js.undefined)
       
-      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
@@ -311,7 +312,7 @@ object renderPlaygroundPageMod {
       
       inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
@@ -319,7 +320,7 @@ object renderPlaygroundPageMod {
       
       inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      inline def setSettings(value: ISettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: PartialISettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
       inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
@@ -331,7 +332,7 @@ object renderPlaygroundPageMod {
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setWorkspaceName(value: String): Self = StObject.set(x, "workspaceName", value.asInstanceOf[js.Any])
       
@@ -419,7 +420,7 @@ object renderPlaygroundPageMod {
       
       inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
       
-      inline def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value :_*))
+      inline def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value*))
       
       inline def setVariables(value: String): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       

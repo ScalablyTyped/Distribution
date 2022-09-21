@@ -25,7 +25,7 @@ object BarValue {
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    inline def setMarkerVarargs(value: String*): Self = StObject.set(x, "marker", js.Array(value :_*))
+    inline def setMarkerVarargs(value: String*): Self = StObject.set(x, "marker", js.Array(value*))
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object BarValue {
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value*))
   }
 }

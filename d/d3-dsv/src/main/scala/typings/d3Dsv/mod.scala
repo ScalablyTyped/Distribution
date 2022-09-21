@@ -223,9 +223,9 @@ object mod {
   
   type DSVRaw[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]: string | undefined}
-    */ typings.d3Dsv.d3DsvStrings.DSVRaw & TopLevel[js.Any]
+    */ typings.d3Dsv.d3DsvStrings.DSVRaw & TopLevel[Any]
   
-  type DSVRowAny = StringDictionary[js.Any]
+  type DSVRowAny = StringDictionary[Any]
   
   @js.native
   trait DSVRowArray[Columns /* <: String */]
@@ -240,5 +240,5 @@ object mod {
   
   type DSVRowString[Columns /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Columns ]: string | undefined}
-    */ typings.d3Dsv.d3DsvStrings.DSVRowString & TopLevel[js.Any]
+    */ typings.d3Dsv.d3DsvStrings.DSVRowString & TopLevel[Any]
 }

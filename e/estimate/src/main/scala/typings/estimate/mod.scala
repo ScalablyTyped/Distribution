@@ -1,7 +1,6 @@
 package typings.estimate
 
 import typings.std.HTMLElement
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +52,7 @@ object mod {
   
   trait Options extends StObject {
     
-    var spaces: js.UndefOr[RegExp] = js.undefined
+    var spaces: js.UndefOr[js.RegExp] = js.undefined
     
     var speed: js.UndefOr[Double] = js.undefined
   }
@@ -66,7 +65,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setSpaces(value: RegExp): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      inline def setSpaces(value: js.RegExp): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
       
       inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
       

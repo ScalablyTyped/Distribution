@@ -31,7 +31,7 @@ object TViewType {
   
   /**
     * `TView` associated with a template. Such as `*ngIf`, `<ng-template>` etc... A `Component`
-    * can have zero or more `Embedede` `TView`s.
+    * can have zero or more `Embedded` `TView`s.
     */
   inline def Embedded: `2` = 2.asInstanceOf[`2`]
   

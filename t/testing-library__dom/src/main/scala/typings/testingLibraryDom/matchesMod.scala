@@ -1,6 +1,7 @@
 package typings.testingLibraryDom
 
 import typings.ariaQuery.mod.ARIARole
+import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,9 +51,9 @@ object matchesMod {
     Boolean
   ]
   
-  type Matcher = MatcherFunction | js.Object
+  type Matcher = MatcherFunction | js.RegExp | Double | String
   
-  type MatcherFunction = js.Function2[/* content */ String, /* element */ HTMLElement, Boolean]
+  type MatcherFunction = js.Function2[/* content */ String, /* element */ Element | Null, Boolean]
   
   trait MatcherOptions extends StObject {
     
@@ -101,4 +102,25 @@ object matchesMod {
   }
   
   type NormalizerFn = js.Function1[/* text */ String, String]
+  
+  trait NormalizerOptions
+    extends StObject
+       with DefaultNormalizerOptions {
+    
+    var normalizer: js.UndefOr[NormalizerFn] = js.undefined
+  }
+  object NormalizerOptions {
+    
+    inline def apply(): NormalizerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NormalizerOptions]
+    }
+    
+    extension [Self <: NormalizerOptions](x: Self) {
+      
+      inline def setNormalizer(value: /* text */ String => String): Self = StObject.set(x, "normalizer", js.Any.fromFunction1(value))
+      
+      inline def setNormalizerUndefined: Self = StObject.set(x, "normalizer", js.undefined)
+    }
+  }
 }

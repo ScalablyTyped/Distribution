@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisNextErrorComplete extends StObject {
   
-  def apply[T](next: js.Function1[/* x */ T, Unit]): js.Any = js.native
-  def apply[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ js.Any, Unit]): js.Any = js.native
+  def apply[T](next: js.Function1[/* x */ T, Unit]): Any = js.native
+  def apply[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ Any, Unit]): Any = js.native
   def apply[T](
     next: js.Function1[/* x */ T, Unit],
-    error: js.Function1[/* e */ js.Any, Unit],
+    error: js.Function1[/* e */ Any, Unit],
     complete: js.Function0[Unit]
-  ): js.Any = js.native
-  def apply[T](next: js.Function1[/* x */ T, Unit], error: Unit, complete: js.Function0[Unit]): js.Any = js.native
+  ): Any = js.native
+  def apply[T](next: js.Function1[/* x */ T, Unit], error: Unit, complete: js.Function0[Unit]): Any = js.native
   def apply[T](
-    observer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObserver<T> */ js.Any
-  ): js.Any = js.native
+    observer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObserver<T> */ Any
+  ): Any = js.native
 }

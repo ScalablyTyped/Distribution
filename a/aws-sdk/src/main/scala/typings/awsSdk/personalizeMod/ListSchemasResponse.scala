@@ -33,6 +33,6 @@ object ListSchemasResponse {
     
     inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
     
-    inline def setSchemasVarargs(value: DatasetSchemaSummary*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: DatasetSchemaSummary*): Self = StObject.set(x, "schemas", js.Array(value*))
   }
 }

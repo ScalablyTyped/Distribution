@@ -1,7 +1,6 @@
 package typings.bootstrapDatepicker
 
 import typings.bootstrapDatepicker.bootstrapDatepickerStrings.linked
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,23 +21,23 @@ trait DatepickerOptions extends StObject {
   var autoclose: js.UndefOr[Boolean] = js.undefined
   
   var beforeShowCentury: js.UndefOr[
-    js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
+    js.Function1[/* date */ js.Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
   ] = js.undefined
   
   var beforeShowDay: js.UndefOr[
-    js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowDayResponse]]
+    js.Function1[/* date */ js.Date, js.UndefOr[String | Boolean | DatepickerBeforeShowDayResponse]]
   ] = js.undefined
   
   var beforeShowDecade: js.UndefOr[
-    js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
+    js.Function1[/* date */ js.Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
   ] = js.undefined
   
   var beforeShowMonth: js.UndefOr[
-    js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
+    js.Function1[/* date */ js.Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
   ] = js.undefined
   
   var beforeShowYear: js.UndefOr[
-    js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
+    js.Function1[/* date */ js.Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
   ] = js.undefined
   
   var calendarWeeks: js.UndefOr[Boolean] = js.undefined
@@ -53,11 +52,11 @@ trait DatepickerOptions extends StObject {
   
   var daysOfWeekHighlighted: js.UndefOr[String | js.Array[Double]] = js.undefined
   
-  var defaultViewDate: js.UndefOr[Date | String | DatepickerViewDate] = js.undefined
+  var defaultViewDate: js.UndefOr[js.Date | String | DatepickerViewDate] = js.undefined
   
   var enableOnReadonly: js.UndefOr[Boolean] = js.undefined
   
-  var endDate: js.UndefOr[Date | String] = js.undefined
+  var endDate: js.UndefOr[js.Date | String] = js.undefined
   
   var forceParse: js.UndefOr[Boolean] = js.undefined
   
@@ -65,7 +64,7 @@ trait DatepickerOptions extends StObject {
   
   var immediateUpdates: js.UndefOr[Boolean] = js.undefined
   
-  var inputs: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var inputs: js.UndefOr[js.Array[Any]] = js.undefined
   
   var keepEmptyValues: js.UndefOr[Boolean] = js.undefined
   
@@ -87,11 +86,11 @@ trait DatepickerOptions extends StObject {
   
   var showWeekDays: js.UndefOr[Boolean] = js.undefined
   
-  var startDate: js.UndefOr[Date | String] = js.undefined
+  var startDate: js.UndefOr[js.Date | String] = js.undefined
   
   var startView: js.UndefOr[DatepickerViewModes] = js.undefined
   
-  var templates: js.UndefOr[js.Any] = js.undefined
+  var templates: js.UndefOr[Any] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -122,23 +121,23 @@ object DatepickerOptions {
     
     inline def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
     
-    inline def setBeforeShowCentury(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = StObject.set(x, "beforeShowCentury", js.Any.fromFunction1(value))
+    inline def setBeforeShowCentury(value: /* date */ js.Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = StObject.set(x, "beforeShowCentury", js.Any.fromFunction1(value))
     
     inline def setBeforeShowCenturyUndefined: Self = StObject.set(x, "beforeShowCentury", js.undefined)
     
-    inline def setBeforeShowDay(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowDayResponse]): Self = StObject.set(x, "beforeShowDay", js.Any.fromFunction1(value))
+    inline def setBeforeShowDay(value: /* date */ js.Date => js.UndefOr[String | Boolean | DatepickerBeforeShowDayResponse]): Self = StObject.set(x, "beforeShowDay", js.Any.fromFunction1(value))
     
     inline def setBeforeShowDayUndefined: Self = StObject.set(x, "beforeShowDay", js.undefined)
     
-    inline def setBeforeShowDecade(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = StObject.set(x, "beforeShowDecade", js.Any.fromFunction1(value))
+    inline def setBeforeShowDecade(value: /* date */ js.Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = StObject.set(x, "beforeShowDecade", js.Any.fromFunction1(value))
     
     inline def setBeforeShowDecadeUndefined: Self = StObject.set(x, "beforeShowDecade", js.undefined)
     
-    inline def setBeforeShowMonth(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = StObject.set(x, "beforeShowMonth", js.Any.fromFunction1(value))
+    inline def setBeforeShowMonth(value: /* date */ js.Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = StObject.set(x, "beforeShowMonth", js.Any.fromFunction1(value))
     
     inline def setBeforeShowMonthUndefined: Self = StObject.set(x, "beforeShowMonth", js.undefined)
     
-    inline def setBeforeShowYear(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = StObject.set(x, "beforeShowYear", js.Any.fromFunction1(value))
+    inline def setBeforeShowYear(value: /* date */ js.Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = StObject.set(x, "beforeShowYear", js.Any.fromFunction1(value))
     
     inline def setBeforeShowYearUndefined: Self = StObject.set(x, "beforeShowYear", js.undefined)
     
@@ -158,21 +157,21 @@ object DatepickerOptions {
     
     inline def setDatesDisabledUndefined: Self = StObject.set(x, "datesDisabled", js.undefined)
     
-    inline def setDatesDisabledVarargs(value: String*): Self = StObject.set(x, "datesDisabled", js.Array(value :_*))
+    inline def setDatesDisabledVarargs(value: String*): Self = StObject.set(x, "datesDisabled", js.Array(value*))
     
     inline def setDaysOfWeekDisabled(value: String | js.Array[Double]): Self = StObject.set(x, "daysOfWeekDisabled", value.asInstanceOf[js.Any])
     
     inline def setDaysOfWeekDisabledUndefined: Self = StObject.set(x, "daysOfWeekDisabled", js.undefined)
     
-    inline def setDaysOfWeekDisabledVarargs(value: Double*): Self = StObject.set(x, "daysOfWeekDisabled", js.Array(value :_*))
+    inline def setDaysOfWeekDisabledVarargs(value: Double*): Self = StObject.set(x, "daysOfWeekDisabled", js.Array(value*))
     
     inline def setDaysOfWeekHighlighted(value: String | js.Array[Double]): Self = StObject.set(x, "daysOfWeekHighlighted", value.asInstanceOf[js.Any])
     
     inline def setDaysOfWeekHighlightedUndefined: Self = StObject.set(x, "daysOfWeekHighlighted", js.undefined)
     
-    inline def setDaysOfWeekHighlightedVarargs(value: Double*): Self = StObject.set(x, "daysOfWeekHighlighted", js.Array(value :_*))
+    inline def setDaysOfWeekHighlightedVarargs(value: Double*): Self = StObject.set(x, "daysOfWeekHighlighted", js.Array(value*))
     
-    inline def setDefaultViewDate(value: Date | String | DatepickerViewDate): Self = StObject.set(x, "defaultViewDate", value.asInstanceOf[js.Any])
+    inline def setDefaultViewDate(value: js.Date | String | DatepickerViewDate): Self = StObject.set(x, "defaultViewDate", value.asInstanceOf[js.Any])
     
     inline def setDefaultViewDateUndefined: Self = StObject.set(x, "defaultViewDate", js.undefined)
     
@@ -180,7 +179,7 @@ object DatepickerOptions {
     
     inline def setEnableOnReadonlyUndefined: Self = StObject.set(x, "enableOnReadonly", js.undefined)
     
-    inline def setEndDate(value: Date | String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date | String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
@@ -196,11 +195,11 @@ object DatepickerOptions {
     
     inline def setImmediateUpdatesUndefined: Self = StObject.set(x, "immediateUpdates", js.undefined)
     
-    inline def setInputs(value: js.Array[js.Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: js.Any*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: Any*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setKeepEmptyValues(value: Boolean): Self = StObject.set(x, "keepEmptyValues", value.asInstanceOf[js.Any])
     
@@ -242,7 +241,7 @@ object DatepickerOptions {
     
     inline def setShowWeekDaysUndefined: Self = StObject.set(x, "showWeekDays", js.undefined)
     
-    inline def setStartDate(value: Date | String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date | String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
@@ -250,7 +249,7 @@ object DatepickerOptions {
     
     inline def setStartViewUndefined: Self = StObject.set(x, "startView", js.undefined)
     
-    inline def setTemplates(value: js.Any): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: Any): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
     inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     

@@ -1,8 +1,8 @@
 package typings.antd
 
+import typings.antd.anon.PartialRecordBreakpointbo
 import typings.antd.gridColMod.ColProps
 import typings.antd.gridRowMod.RowProps
-import typings.antd.responsiveObserveMod.ScreenMap
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
@@ -20,8 +20,8 @@ object libGridMod {
     
     @JSImport("antd/lib/grid", "default.useBreakpoint")
     @js.native
-    def useBreakpoint: js.Function0[ScreenMap] = js.native
-    inline def useBreakpoint_=(x: js.Function0[ScreenMap]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useBreakpoint")(x.asInstanceOf[js.Any])
+    def useBreakpoint: js.Function0[PartialRecordBreakpointbo] = js.native
+    inline def useBreakpoint_=(x: js.Function0[PartialRecordBreakpointbo]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useBreakpoint")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("antd/lib/grid", "Col")

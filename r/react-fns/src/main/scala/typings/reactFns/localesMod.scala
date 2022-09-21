@@ -15,14 +15,14 @@ object localesMod {
   
   @JSImport("react-fns/dist/Locales", "Locales")
   @js.native
-  class Locales protected ()
+  open class Locales protected ()
     extends typings.reactFns.localesLocalesMod.Locales {
     def this(props: SharedRenderProps[LocalesProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[LocalesProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[LocalesProps], context: Any) = this()
   }
   
   inline def withLocales[Props](Component: ComponentType[Props & LocalesProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLocales")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]

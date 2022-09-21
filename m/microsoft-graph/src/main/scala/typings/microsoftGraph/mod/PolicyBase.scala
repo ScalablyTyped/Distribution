@@ -8,10 +8,10 @@ trait PolicyBase
   extends StObject
      with DirectoryObject {
   
-  // Description for this policy.
+  // Description for this policy. Required.
   var description: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Display name for this policy.
+  // Display name for this policy. Required.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PolicyBase {

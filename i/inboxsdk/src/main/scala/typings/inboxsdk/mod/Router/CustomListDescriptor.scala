@@ -27,7 +27,7 @@ object CustomListDescriptor {
     
     inline def setThreads(value: js.Array[ThreadDescriptor | String]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
-    inline def setThreadsVarargs(value: (ThreadDescriptor | String)*): Self = StObject.set(x, "threads", js.Array(value :_*))
+    inline def setThreadsVarargs(value: (ThreadDescriptor | String)*): Self = StObject.set(x, "threads", js.Array(value*))
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

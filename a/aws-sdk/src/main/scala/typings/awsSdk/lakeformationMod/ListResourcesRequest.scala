@@ -34,7 +34,7 @@ object ListResourcesRequest {
     
     inline def setFilterConditionListUndefined: Self = StObject.set(x, "FilterConditionList", js.undefined)
     
-    inline def setFilterConditionListVarargs(value: FilterCondition*): Self = StObject.set(x, "FilterConditionList", js.Array(value :_*))
+    inline def setFilterConditionListVarargs(value: FilterCondition*): Self = StObject.set(x, "FilterConditionList", js.Array(value*))
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -24,11 +24,11 @@ object anon {
       
       inline def setIds(value: js.Array[V]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      inline def setIdsVarargs(value: V*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: V*): Self = StObject.set(x, "ids", js.Array(value*))
       
       inline def setValues(value: js.Array[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: T*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: T*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -49,11 +49,11 @@ object anon {
       
       inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
       
       inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -74,11 +74,11 @@ object anon {
       
       inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
       
       inline def setValues(value: js.Array[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: T*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: T*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

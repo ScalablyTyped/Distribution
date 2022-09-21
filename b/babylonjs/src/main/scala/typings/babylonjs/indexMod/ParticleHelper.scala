@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "ParticleHelper")
 @js.native
-class ParticleHelper ()
+open class ParticleHelper ()
   extends typings.babylonjs.particlesIndexMod.ParticleHelper
 /* static members */
 object ParticleHelper {
@@ -30,10 +30,13 @@ object ParticleHelper {
     * @param type This string represents the type to the particle system to create
     * @param scene The scene where the particle system should live
     * @param gpu If the system will use gpu
+    * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
     * @returns the ParticleSystemSet created
     */
   inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene]): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
   inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene], gpu: Boolean): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
+  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene], gpu: Boolean, capacity: Double): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
+  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene], gpu: Unit, capacity: Double): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
   
   /**
     * Create a default particle system that you can tweak
@@ -103,16 +106,20 @@ object ParticleHelper {
   
   /**
     * Creates a particle system from a snippet saved by the particle system editor
+    * @deprecated Please use ParseFromSnippetAsync instead
     * @param snippetId defines the snippet to load (can be set to _BLANK to create a default one)
     * @param scene defines the hosting scene
     * @param gpu If the system will use gpu
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
+    * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
     * @returns a promise that will resolve to the new particle system
     */
-  inline def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
-  inline def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene, gpu: Boolean): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
-  inline def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene, gpu: Boolean, rootUrl: String): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
-  inline def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene, gpu: Unit, rootUrl: String): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  @JSImport("babylonjs/index", "ParticleHelper.CreateFromSnippetAsync")
+  @js.native
+  def CreateFromSnippetAsync: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParticleHelper.ParseFromSnippetAsync */ Any = js.native
+  inline def CreateFromSnippetAsync_=(
+    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParticleHelper.ParseFromSnippetAsync */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateFromSnippetAsync")(x.asInstanceOf[js.Any])
   
   /**
     * Static function used to export a particle system to a ParticleSystemSet variable.
@@ -129,6 +136,7 @@ object ParticleHelper {
     * @param scene defines the hosting scene
     * @param gpu If the system will use gpu
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
+    * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
     * @returns a promise that will resolve to the new particle system
     */
   inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: typings.babylonjs.sceneMod.Scene): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
@@ -144,9 +152,83 @@ object ParticleHelper {
     name: Nullable[String],
     url: String,
     scene: typings.babylonjs.sceneMod.Scene,
+    gpu: Boolean,
+    rootUrl: String,
+    capacity: Double
+  ): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromFileAsync(
+    name: Nullable[String],
+    url: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    gpu: Boolean,
+    rootUrl: Unit,
+    capacity: Double
+  ): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromFileAsync(
+    name: Nullable[String],
+    url: String,
+    scene: typings.babylonjs.sceneMod.Scene,
     gpu: Unit,
     rootUrl: String
   ): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromFileAsync(
+    name: Nullable[String],
+    url: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    gpu: Unit,
+    rootUrl: String,
+    capacity: Double
+  ): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromFileAsync(
+    name: Nullable[String],
+    url: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    gpu: Unit,
+    rootUrl: Unit,
+    capacity: Double
+  ): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  
+  /**
+    * Creates a particle system from a snippet saved by the particle system editor
+    * @param snippetId defines the snippet to load (can be set to _BLANK to create a default one)
+    * @param scene defines the hosting scene
+    * @param gpu If the system will use gpu
+    * @param rootUrl defines the root URL to use to load textures and relative dependencies
+    * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
+    * @returns a promise that will resolve to the new particle system
+    */
+  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene, gpu: Boolean): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene, gpu: Boolean, rootUrl: String): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromSnippetAsync(
+    snippetId: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    gpu: Boolean,
+    rootUrl: String,
+    capacity: Double
+  ): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromSnippetAsync(
+    snippetId: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    gpu: Boolean,
+    rootUrl: Unit,
+    capacity: Double
+  ): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene, gpu: Unit, rootUrl: String): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromSnippetAsync(
+    snippetId: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    gpu: Unit,
+    rootUrl: String,
+    capacity: Double
+  ): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
+  inline def ParseFromSnippetAsync(
+    snippetId: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    gpu: Unit,
+    rootUrl: Unit,
+    capacity: Double
+  ): js.Promise[IParticleSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IParticleSystem]]
   
   /** Define the Url to load snippets */
   @JSImport("babylonjs/index", "ParticleHelper.SnippetUrl")

@@ -1,6 +1,7 @@
 package typings.rcFieldForm
 
 import typings.rcFieldForm.interfaceMod.InternalNamePath
+import typings.rcFieldForm.interfaceMod.RuleError
 import typings.rcFieldForm.interfaceMod.RuleObject
 import typings.rcFieldForm.interfaceMod.StoreValue
 import typings.rcFieldForm.interfaceMod.ValidateOptions
@@ -22,7 +23,7 @@ object validateUtilMod {
     rules: js.Array[RuleObject],
     options: ValidateOptions,
     validateFirst: Boolean
-  ): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  ): js.Promise[js.Array[RuleError]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RuleError]]]
   inline def validateRules(
     namePath: InternalNamePath,
     value: StoreValue,
@@ -30,7 +31,7 @@ object validateUtilMod {
     options: ValidateOptions,
     validateFirst: Boolean,
     messageVariables: Record[String, String]
-  ): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any], messageVariables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  ): js.Promise[js.Array[RuleError]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any], messageVariables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RuleError]]]
   
   inline def validateRules_parallel(
     namePath: InternalNamePath,
@@ -38,7 +39,7 @@ object validateUtilMod {
     rules: js.Array[RuleObject],
     options: ValidateOptions,
     validateFirst: parallel
-  ): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  ): js.Promise[js.Array[RuleError]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RuleError]]]
   inline def validateRules_parallel(
     namePath: InternalNamePath,
     value: StoreValue,
@@ -46,5 +47,5 @@ object validateUtilMod {
     options: ValidateOptions,
     validateFirst: parallel,
     messageVariables: Record[String, String]
-  ): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any], messageVariables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  ): js.Promise[js.Array[RuleError]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any], messageVariables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RuleError]]]
 }

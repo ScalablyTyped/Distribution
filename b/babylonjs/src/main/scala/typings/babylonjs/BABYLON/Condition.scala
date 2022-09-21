@@ -26,21 +26,25 @@ trait Condition extends StObject {
   
   /**
     * Internal only
+    * @param target
+    * @param propertyPath
     * @hidden
     */
-  def _getEffectiveTarget(target: js.Any, propertyPath: String): js.Any
+  def _getEffectiveTarget(target: Any, propertyPath: String): Any
   
   /**
     * Internal only
+    * @param propertyPath
     * @hidden
     */
   def _getProperty(propertyPath: String): String
   
   /**
     * Internal only
+    * @param serializedCondition
     * @hidden
     */
-  /* protected */ def _serialize(serializedCondition: js.Any): js.Any
+  /* protected */ def _serialize(serializedCondition: Any): Any
   
   /**
     * Check if the current condition is valid
@@ -52,7 +56,7 @@ trait Condition extends StObject {
     * Serialize placeholder for child classes
     * @returns the serialized object
     */
-  def serialize(): js.Any
+  def serialize(): Any
 }
 object Condition {
   
@@ -60,11 +64,11 @@ object Condition {
     _actionManager: ActionManager,
     _currentResult: Boolean,
     _evaluationId: Double,
-    _getEffectiveTarget: (js.Any, String) => js.Any,
+    _getEffectiveTarget: (Any, String) => Any,
     _getProperty: String => String,
-    _serialize: js.Any => js.Any,
+    _serialize: Any => Any,
     isValid: () => Boolean,
-    serialize: () => js.Any
+    serialize: () => Any
   ): Condition = {
     val __obj = js.Dynamic.literal(_actionManager = _actionManager.asInstanceOf[js.Any], _currentResult = _currentResult.asInstanceOf[js.Any], _evaluationId = _evaluationId.asInstanceOf[js.Any], _getEffectiveTarget = js.Any.fromFunction2(_getEffectiveTarget), _getProperty = js.Any.fromFunction1(_getProperty), _serialize = js.Any.fromFunction1(_serialize), isValid = js.Any.fromFunction0(isValid), serialize = js.Any.fromFunction0(serialize))
     __obj.asInstanceOf[Condition]
@@ -74,7 +78,7 @@ object Condition {
     
     inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    inline def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+    inline def setSerialize(value: () => Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
     inline def set_actionManager(value: ActionManager): Self = StObject.set(x, "_actionManager", value.asInstanceOf[js.Any])
     
@@ -82,10 +86,10 @@ object Condition {
     
     inline def set_evaluationId(value: Double): Self = StObject.set(x, "_evaluationId", value.asInstanceOf[js.Any])
     
-    inline def set_getEffectiveTarget(value: (js.Any, String) => js.Any): Self = StObject.set(x, "_getEffectiveTarget", js.Any.fromFunction2(value))
+    inline def set_getEffectiveTarget(value: (Any, String) => Any): Self = StObject.set(x, "_getEffectiveTarget", js.Any.fromFunction2(value))
     
     inline def set_getProperty(value: String => String): Self = StObject.set(x, "_getProperty", js.Any.fromFunction1(value))
     
-    inline def set_serialize(value: js.Any => js.Any): Self = StObject.set(x, "_serialize", js.Any.fromFunction1(value))
+    inline def set_serialize(value: Any => Any): Self = StObject.set(x, "_serialize", js.Any.fromFunction1(value))
   }
 }

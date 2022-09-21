@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-big-calendar", "Day")
 @js.native
-class Day protected ()
-  extends Component[DayProps, js.Object, js.Any] {
+open class Day protected ()
+  extends Component[DayProps, js.Object, Any] {
   def this(props: DayProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: DayProps, context: js.Any) = this()
+  def this(props: DayProps, context: Any) = this()
 }

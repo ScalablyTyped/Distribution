@@ -8,13 +8,13 @@ trait TimeKeeper extends StObject {
   
   var delta: Double
   
-  /* private */ var frameCount: js.Any
+  /* private */ var frameCount: Any
   
-  /* private */ var frameTime: js.Any
+  /* private */ var frameTime: Any
   
   var framesPerSecond: Double
   
-  /* private */ var lastTime: js.Any
+  /* private */ var lastTime: Any
   
   var maxDelta: Double
   
@@ -26,10 +26,10 @@ object TimeKeeper {
   
   inline def apply(
     delta: Double,
-    frameCount: js.Any,
-    frameTime: js.Any,
+    frameCount: Any,
+    frameTime: Any,
     framesPerSecond: Double,
-    lastTime: js.Any,
+    lastTime: Any,
     maxDelta: Double,
     totalTime: Double,
     update: () => Unit
@@ -42,13 +42,13 @@ object TimeKeeper {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    inline def setFrameCount(value: js.Any): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
+    inline def setFrameCount(value: Any): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     
-    inline def setFrameTime(value: js.Any): Self = StObject.set(x, "frameTime", value.asInstanceOf[js.Any])
+    inline def setFrameTime(value: Any): Self = StObject.set(x, "frameTime", value.asInstanceOf[js.Any])
     
     inline def setFramesPerSecond(value: Double): Self = StObject.set(x, "framesPerSecond", value.asInstanceOf[js.Any])
     
-    inline def setLastTime(value: js.Any): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
+    inline def setLastTime(value: Any): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
     
     inline def setMaxDelta(value: Double): Self = StObject.set(x, "maxDelta", value.asInstanceOf[js.Any])
     

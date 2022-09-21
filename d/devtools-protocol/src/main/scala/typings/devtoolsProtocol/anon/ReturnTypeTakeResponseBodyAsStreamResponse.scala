@@ -26,7 +26,7 @@ object ReturnTypeTakeResponseBodyAsStreamResponse {
     
     inline def setParamsType(value: js.Array[TakeResponseBodyAsStreamRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: TakeResponseBodyAsStreamRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: TakeResponseBodyAsStreamRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: TakeResponseBodyAsStreamResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

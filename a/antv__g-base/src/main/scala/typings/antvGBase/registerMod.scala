@@ -1,20 +1,18 @@
 package typings.antvGBase
 
-import typings.antvGBase.interfacesMod.IShape
-import typings.antvGBase.typesMod.SimpleBBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registerMod {
   
-  @JSImport("@antv/g-base/lib/bbox/register", JSImport.Namespace)
+  @JSImport("@antv/g-base/lib/animate/register", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getMethod(`type`: String): BoxMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("getMethod")(`type`.asInstanceOf[js.Any]).asInstanceOf[BoxMethod]
+  inline def getEasing(`type`: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEasing")(`type`.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def register(`type`: String, method: BoxMethod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(`type`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerEasing(`type`: String, easeFn: EaseFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerEasing")(`type`.asInstanceOf[js.Any], easeFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type BoxMethod = js.Function1[/* shape */ IShape, SimpleBBox]
+  type EaseFn = js.Function1[/* t */ Double, Double]
 }

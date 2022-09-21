@@ -13,7 +13,10 @@ import typings.luminoWidgets.luminoWidgetsStrings.horizontal
 import typings.luminoWidgets.luminoWidgetsStrings.vertical
 import typings.luminoWidgets.tabbarMod.TabBar
 import typings.luminoWidgets.widgetMod.Widget
+import typings.luminoWidgets.widgetMod.Widget.HiddenMode
+import typings.std.Document
 import typings.std.HTMLDivElement
+import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +25,7 @@ object docklayoutMod {
   
   @JSImport("@lumino/widgets/types/docklayout", "DockLayout")
   @js.native
-  class DockLayout protected () extends Layout {
+  open class DockLayout protected () extends Layout {
     /**
       * Construct a new dock layout.
       *
@@ -30,7 +33,7 @@ object docklayoutMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _box: js.Any = js.native
+    /* private */ var _box: Any = js.native
     
     /**
       * Create a new handle for the dock layout.
@@ -38,7 +41,7 @@ object docklayoutMod {
       * #### Notes
       * The handle will be attached to the parent if it exists.
       */
-    /* private */ var _createHandle: js.Any = js.native
+    /* private */ var _createHandle: Any = js.native
     
     /**
       * Create a new tab bar for use by the dock layout.
@@ -46,14 +49,18 @@ object docklayoutMod {
       * #### Notes
       * The tab bar will be attached to the parent if it exists.
       */
-    /* private */ var _createTabBar: js.Any = js.native
+    /* private */ var _createTabBar: Any = js.native
     
-    /* private */ var _dirty: js.Any = js.native
+    /* private */ var _dirty: Any = js.native
+    
+    /* private */ var _document: Any = js.native
     
     /**
       * Fit the layout to the total size required by the widgets.
       */
-    /* private */ var _fit: js.Any = js.native
+    /* private */ var _fit: Any = js.native
+    
+    /* private */ var _hiddenMode: Any = js.native
     
     /**
       * Insert a widget as a new split area.
@@ -61,7 +68,7 @@ object docklayoutMod {
       * #### Notes
       * This does not attach the widget to the parent widget.
       */
-    /* private */ var _insertSplit: js.Any = js.native
+    /* private */ var _insertSplit: Any = js.native
     
     /**
       * Insert a widget next to an existing tab.
@@ -69,9 +76,9 @@ object docklayoutMod {
       * #### Notes
       * This does not attach the widget to the parent widget.
       */
-    /* private */ var _insertTab: js.Any = js.native
+    /* private */ var _insertTab: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _items: Any = js.native
     
     /**
       * Remove the specified widget from the layout structure.
@@ -81,23 +88,23 @@ object docklayoutMod {
       *
       * This does not detach the widget from the parent node.
       */
-    /* private */ var _removeWidget: js.Any = js.native
+    /* private */ var _removeWidget: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _spacing: js.Any = js.native
+    /* private */ var _spacing: Any = js.native
     
     /**
       * Ensure the root is a split node with the given orientation.
       */
-    /* private */ var _splitRoot: js.Any = js.native
+    /* private */ var _splitRoot: Any = js.native
     
     /**
       * Update the layout position and size of the widgets.
       *
       * The parent offset dimensions should be `-1` if unknown.
       */
-    /* private */ var _update: js.Any = js.native
+    /* private */ var _update: Any = js.native
     
     /**
       * Add a widget to the dock layout.
@@ -140,6 +147,15 @@ object docklayoutMod {
       * @returns A new iterator over the handles in the layout.
       */
     def handles(): IIterator[HTMLDivElement] = js.native
+    
+    /**
+      * The method for hiding child widgets.
+      *
+      * #### Notes
+      * If there is only one child widget, `Display` hiding mode will be used
+      * regardless of this setting.
+      */
+    var hiddenMode: HiddenMode = js.native
     
     /**
       * Find the tab area which contains the given client position.
@@ -342,6 +358,20 @@ object docklayoutMod {
     trait IOptions extends StObject {
       
       /**
+        * The document to use with the dock panel.
+        *
+        * The default is the global `document` instance.
+        */
+      var document: js.UndefOr[Document | ShadowRoot] = js.undefined
+      
+      /**
+        * The method for hiding widgets.
+        *
+        * The default is `Widget.HiddenMode.Display`.
+        */
+      var hiddenMode: js.UndefOr[HiddenMode] = js.undefined
+      
+      /**
         * The renderer to use for the dock layout.
         */
       var renderer: IRenderer
@@ -362,6 +392,14 @@ object docklayoutMod {
       
       extension [Self <: IOptions](x: Self) {
         
+        inline def setDocument(value: Document | ShadowRoot): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+        
+        inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+        
+        inline def setHiddenMode(value: HiddenMode): Self = StObject.set(x, "hiddenMode", value.asInstanceOf[js.Any])
+        
+        inline def setHiddenModeUndefined: Self = StObject.set(x, "hiddenMode", js.undefined)
+        
         inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
         inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
@@ -373,6 +411,7 @@ object docklayoutMod {
     /**
       * A renderer for use with a dock layout.
       */
+    @js.native
     trait IRenderer extends StObject {
       
       /**
@@ -380,28 +419,16 @@ object docklayoutMod {
         *
         * @returns A new handle node for a dock layout.
         */
-      def createHandle(): HTMLDivElement
+      def createHandle(): HTMLDivElement = js.native
       
       /**
         * Create a new tab bar for use with a dock layout.
         *
         * @returns A new tab bar for a dock layout.
         */
-      def createTabBar(): TabBar[Widget]
-    }
-    object IRenderer {
-      
-      inline def apply(createHandle: () => HTMLDivElement, createTabBar: () => TabBar[Widget]): IRenderer = {
-        val __obj = js.Dynamic.literal(createHandle = js.Any.fromFunction0(createHandle), createTabBar = js.Any.fromFunction0(createTabBar))
-        __obj.asInstanceOf[IRenderer]
-      }
-      
-      extension [Self <: IRenderer](x: Self) {
-        
-        inline def setCreateHandle(value: () => HTMLDivElement): Self = StObject.set(x, "createHandle", js.Any.fromFunction0(value))
-        
-        inline def setCreateTabBar(value: () => TabBar[Widget]): Self = StObject.set(x, "createTabBar", js.Any.fromFunction0(value))
-      }
+      def createTabBar(): TabBar[Widget] = js.native
+      def createTabBar(document: Document): TabBar[Widget] = js.native
+      def createTabBar(document: ShadowRoot): TabBar[Widget] = js.native
     }
     
     /**
@@ -443,13 +470,13 @@ object docklayoutMod {
         
         inline def setChildren(value: js.Array[AreaConfig]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        inline def setChildrenVarargs(value: AreaConfig*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: AreaConfig*): Self = StObject.set(x, "children", js.Array(value*))
         
         inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         
         inline def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
         
-        inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+        inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value*))
         
         inline def setType(value: `split-area`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
@@ -493,7 +520,7 @@ object docklayoutMod {
         
         inline def setWidgets(value: js.Array[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
         
-        inline def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+        inline def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value*))
       }
     }
     

@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Either a &lt;code&gt;PubsubMessage&lt;/code&gt; or a truncation event. One
-  * of these two must be populated.
-  */
 trait SchemaPullResponse extends StObject {
   
   /**
     * This ID must be used to acknowledge the received event or message.
     */
-  var ackId: js.UndefOr[String] = js.undefined
+  var ackId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A pubsub message or truncation event.
@@ -30,6 +26,8 @@ object SchemaPullResponse {
   extension [Self <: SchemaPullResponse](x: Self) {
     
     inline def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
+    
+    inline def setAckIdNull: Self = StObject.set(x, "ackId", null)
     
     inline def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
     

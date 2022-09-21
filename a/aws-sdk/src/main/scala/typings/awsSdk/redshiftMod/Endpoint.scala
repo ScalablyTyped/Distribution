@@ -15,6 +15,11 @@ trait Endpoint extends StObject {
     * The port that the database engine is listening on.
     */
   var Port: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * Describes a connection endpoint.
+    */
+  var VpcEndpoints: js.UndefOr[VpcEndpointsList] = js.undefined
 }
 object Endpoint {
   
@@ -32,5 +37,11 @@ object Endpoint {
     inline def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    
+    inline def setVpcEndpoints(value: VpcEndpointsList): Self = StObject.set(x, "VpcEndpoints", value.asInstanceOf[js.Any])
+    
+    inline def setVpcEndpointsUndefined: Self = StObject.set(x, "VpcEndpoints", js.undefined)
+    
+    inline def setVpcEndpointsVarargs(value: VpcEndpoint*): Self = StObject.set(x, "VpcEndpoints", js.Array(value*))
   }
 }

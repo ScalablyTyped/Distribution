@@ -1,12 +1,24 @@
 package typings.baseui
 
-import typings.baseui.anon.ActiveKey
-import typings.react.mod.FC
+import typings.baseui.anon.Animate
+import typings.baseui.anon.Fill
+import typings.baseui.anon.FocusVisible
+import typings.baseui.anon.HasEndEnhancer
+import typings.baseui.anon.Pad
+import typings.baseui.anon.`261`
+import typings.baseui.baseuiStrings.button
+import typings.baseui.baseuiStrings.change_
+import typings.baseui.baseuiStrings.div
+import typings.baseui.tabsMotionTypesMod.Orientation
+import typings.baseui.tabsMotionTypesMod.StatefulTabsAction
+import typings.baseui.tabsMotionTypesMod.StatefulTabsProps
+import typings.baseui.tabsMotionTypesMod.StatefulTabsReducer
+import typings.baseui.tabsMotionTypesMod.StatefulTabsState
+import typings.baseui.tabsMotionTypesMod.TabProps
+import typings.baseui.tabsMotionTypesMod.TabsProps
 import typings.react.mod.Key
-import typings.react.mod.MutableRefObject
-import typings.react.mod.ReactNode
-import typings.std.HTMLButtonElement
-import typings.styletronReact.mod.StyletronComponent
+import typings.react.mod.global.JSX.Element
+import typings.styletronReact.typesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,413 +29,96 @@ object tabsMotionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @js.native
-  sealed trait FILL extends StObject
-  @JSImport("baseui/tabs-motion", "FILL")
-  @js.native
-  object FILL extends StObject {
+  object FILL {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[FILL & String] = js.native
-    
+    @JSImport("baseui/tabs-motion", "FILL.fixed")
     @js.native
-    sealed trait fixed
-      extends StObject
-         with FILL
-    /* "fixed" */ val fixed: typings.baseui.tabsMotionMod.FILL.fixed & String = js.native
+    val fixed: typings.baseui.baseuiStrings.fixed = js.native
     
+    @JSImport("baseui/tabs-motion", "FILL.intrinsic")
     @js.native
-    sealed trait intrinsic
-      extends StObject
-         with FILL
-    /* "intrinsic" */ val intrinsic: typings.baseui.tabsMotionMod.FILL.intrinsic & String = js.native
+    val intrinsic: typings.baseui.baseuiStrings.intrinsic = js.native
   }
   
-  @js.native
-  sealed trait ORIENTATION extends StObject
-  @JSImport("baseui/tabs-motion", "ORIENTATION")
-  @js.native
-  object ORIENTATION extends StObject {
+  object ORIENTATION {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[ORIENTATION & String] = js.native
-    
+    @JSImport("baseui/tabs-motion", "ORIENTATION.horizontal")
     @js.native
-    sealed trait horizontal
-      extends StObject
-         with ORIENTATION
-    /* "horizontal" */ val horizontal: typings.baseui.tabsMotionMod.ORIENTATION.horizontal & String = js.native
+    val horizontal: typings.baseui.baseuiStrings.horizontal = js.native
     
+    @JSImport("baseui/tabs-motion", "ORIENTATION.vertical")
     @js.native
-    sealed trait vertical
-      extends StObject
-         with ORIENTATION
-    /* "vertical" */ val vertical: typings.baseui.tabsMotionMod.ORIENTATION.vertical & String = js.native
+    val vertical: typings.baseui.baseuiStrings.vertical = js.native
   }
   
-  @js.native
-  sealed trait STATE_CHANGE_TYPE extends StObject
-  @JSImport("baseui/tabs-motion", "STATE_CHANGE_TYPE")
-  @js.native
-  object STATE_CHANGE_TYPE extends StObject {
+  object STATE_CHANGE_TYPE {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[STATE_CHANGE_TYPE & String] = js.native
-    
+    @JSImport("baseui/tabs-motion", "STATE_CHANGE_TYPE.change")
     @js.native
-    sealed trait change
-      extends StObject
-         with STATE_CHANGE_TYPE
-    /* "change" */ val change: typings.baseui.tabsMotionMod.STATE_CHANGE_TYPE.change & String = js.native
+    val change: change_ = js.native
   }
   
-  @JSImport("baseui/tabs-motion", "StatefulTabs")
-  @js.native
-  val StatefulTabs: FC[StatefulTabsProps] = js.native
+  inline def StatefulTabs(props: StatefulTabsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StatefulTabs")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/tabs-motion", "StyledArtworkContainer")
   @js.native
-  val StyledArtworkContainer: StyletronComponent[js.Any] = js.native
+  val StyledArtworkContainer: StyletronComponent[div, `261`] = js.native
+  
+  @JSImport("baseui/tabs-motion", "StyledEndEnhancerContainer")
+  @js.native
+  val StyledEndEnhancerContainer: StyletronComponent[div, js.Object] = js.native
   
   @JSImport("baseui/tabs-motion", "StyledRoot")
   @js.native
-  val StyledRoot: StyletronComponent[js.Any] = js.native
+  val StyledRoot: StyletronComponent[div, `261`] = js.native
   
   @JSImport("baseui/tabs-motion", "StyledTab")
   @js.native
-  val StyledTab: StyletronComponent[js.Any] = js.native
+  val StyledTab: StyletronComponent[button, FocusVisible] = js.native
+  
+  @JSImport("baseui/tabs-motion", "StyledTabBar")
+  @js.native
+  val StyledTabBar: StyletronComponent[div, HasEndEnhancer] = js.native
   
   @JSImport("baseui/tabs-motion", "StyledTabBorder")
   @js.native
-  val StyledTabBorder: StyletronComponent[js.Any] = js.native
+  val StyledTabBorder: StyletronComponent[div, `261`] = js.native
   
   @JSImport("baseui/tabs-motion", "StyledTabHighlight")
   @js.native
-  val StyledTabHighlight: StyletronComponent[js.Any] = js.native
+  val StyledTabHighlight: StyletronComponent[div, Animate] = js.native
   
   @JSImport("baseui/tabs-motion", "StyledTabList")
   @js.native
-  val StyledTabList: StyletronComponent[js.Any] = js.native
+  val StyledTabList: StyletronComponent[div, Fill] = js.native
   
   @JSImport("baseui/tabs-motion", "StyledTabPanel")
   @js.native
-  val StyledTabPanel: StyletronComponent[js.Any] = js.native
+  val StyledTabPanel: StyletronComponent[div, Pad] = js.native
   
-  @JSImport("baseui/tabs-motion", "Tab")
-  @js.native
-  val Tab: FC[TabProps] = js.native
+  inline def Tab(props: TabProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Tab")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  @JSImport("baseui/tabs-motion", "Tabs")
-  @js.native
-  val Tabs: FC[TabsProps] = js.native
+  inline def Tabs(
+    hasActiveKeyDisabledChildrenFillActivateOnFocusOnChangeOrientationOverridesRenderAllCustomUidEndEnhancer: TabsProps
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tabs")(hasActiveKeyDisabledChildrenFillActivateOnFocusOnChangeOrientationOverridesRenderAllCustomUidEndEnhancer.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def getTabId(uid: String, key: Key): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTabId")(uid.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getTabPanelId(uid: String, key: Key): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTabPanelId")(uid.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def isFixed(fill: FILL): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixed")(fill.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFixed(fill: typings.baseui.tabsMotionTypesMod.Fill): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixed")(fill.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isHorizontal(orientation: ORIENTATION): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHorizontal")(orientation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHorizontal(orientation: Orientation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHorizontal")(orientation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isIntrinsic(fill: FILL): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntrinsic")(fill.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIntrinsic(fill: typings.baseui.tabsMotionTypesMod.Fill): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntrinsic")(fill.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isRTL(direction: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRTL")(direction.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isVertical(orientation: ORIENTATION): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVertical")(orientation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVertical(orientation: Orientation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVertical")(orientation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  trait Action extends StObject {
-    
-    var payload: Key
-    
-    var `type`: /* import warning: importer.ImportType#apply Failed type conversion: baseui.baseui/tabs-motion.STATE_CHANGE_TYPE[keyof baseui.baseui/tabs-motion.STATE_CHANGE_TYPE] */ js.Any
-  }
-  object Action {
-    
-    inline def apply(
-      payload: Key,
-      `type`: /* import warning: importer.ImportType#apply Failed type conversion: baseui.baseui/tabs-motion.STATE_CHANGE_TYPE[keyof baseui.baseui/tabs-motion.STATE_CHANGE_TYPE] */ js.Any
-    ): Action = {
-      val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Action]
-    }
-    
-    extension [Self <: Action](x: Self) {
-      
-      inline def setPayload(value: Key): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
-      
-      inline def setType(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: baseui.baseui/tabs-motion.STATE_CHANGE_TYPE[keyof baseui.baseui/tabs-motion.STATE_CHANGE_TYPE] */ js.Any
-      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
+  type Action = StatefulTabsAction
   
-  // stateful-tabs
-  trait State extends StObject {
-    
-    var activeKey: Key
-  }
-  object State {
-    
-    inline def apply(activeKey: Key): State = {
-      val __obj = js.Dynamic.literal(activeKey = activeKey.asInstanceOf[js.Any])
-      __obj.asInstanceOf[State]
-    }
-    
-    extension [Self <: State](x: Self) {
-      
-      inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
-    }
-  }
+  type State = StatefulTabsState
   
-  type StateReducer = js.Function2[/* state */ State, /* action */ Action, State]
-  
-  trait StatefulTabsProps
-    extends StObject
-       with TabsProps {
-    
-    var initialState: js.UndefOr[State] = js.undefined
-    
-    var stateReducer: js.UndefOr[StateReducer] = js.undefined
-  }
-  object StatefulTabsProps {
-    
-    inline def apply(): StatefulTabsProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StatefulTabsProps]
-    }
-    
-    extension [Self <: StatefulTabsProps](x: Self) {
-      
-      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
-      
-      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
-      
-      inline def setStateReducer(value: (/* state */ State, /* action */ Action) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction2(value))
-      
-      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
-    }
-  }
-  
-  // tab
-  trait TabOverrides extends StObject {
-    
-    var ArtworkContainer: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $orientation :ORIENTATION | undefined}> */ js.Any
-      ] = js.undefined
-    
-    var Tab: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $fill :FILL | undefined,   $orientation :ORIENTATION | undefined,   $focusVisible :boolean | undefined}> */ js.Any
-      ] = js.undefined
-    
-    var TabPanel: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $pad :boolean | undefined}> */ js.Any
-      ] = js.undefined
-  }
-  object TabOverrides {
-    
-    inline def apply(): TabOverrides = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TabOverrides]
-    }
-    
-    extension [Self <: TabOverrides](x: Self) {
-      
-      inline def setArtworkContainer(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $orientation :ORIENTATION | undefined}> */ js.Any
-      ): Self = StObject.set(x, "ArtworkContainer", value.asInstanceOf[js.Any])
-      
-      inline def setArtworkContainerUndefined: Self = StObject.set(x, "ArtworkContainer", js.undefined)
-      
-      inline def setTab(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $fill :FILL | undefined,   $orientation :ORIENTATION | undefined,   $focusVisible :boolean | undefined}> */ js.Any
-      ): Self = StObject.set(x, "Tab", value.asInstanceOf[js.Any])
-      
-      inline def setTabPanel(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $pad :boolean | undefined}> */ js.Any
-      ): Self = StObject.set(x, "TabPanel", value.asInstanceOf[js.Any])
-      
-      inline def setTabPanelUndefined: Self = StObject.set(x, "TabPanel", js.undefined)
-      
-      inline def setTabUndefined: Self = StObject.set(x, "Tab", js.undefined)
-    }
-  }
-  
-  trait TabProps extends StObject {
-    
-    var artwork: js.UndefOr[ReactNode] = js.undefined
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var key: js.UndefOr[Key] = js.undefined
-    
-    var overrides: js.UndefOr[TabOverrides] = js.undefined
-    
-    var tabRef: js.UndefOr[MutableRefObject[js.UndefOr[HTMLButtonElement]]] = js.undefined
-    
-    var title: js.UndefOr[ReactNode] = js.undefined
-  }
-  object TabProps {
-    
-    inline def apply(): TabProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TabProps]
-    }
-    
-    extension [Self <: TabProps](x: Self) {
-      
-      inline def setArtwork(value: ReactNode): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
-      
-      inline def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-      
-      inline def setOverrides(value: TabOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      inline def setTabRef(value: MutableRefObject[js.UndefOr[HTMLButtonElement]]): Self = StObject.set(x, "tabRef", value.asInstanceOf[js.Any])
-      
-      inline def setTabRefUndefined: Self = StObject.set(x, "tabRef", js.undefined)
-      
-      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-      
-      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-    }
-  }
-  
-  // tabs
-  trait TabsOverrides extends StObject {
-    
-    var Root: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $orientation :ORIENTATION | undefined}> */ js.Any
-      ] = js.undefined
-    
-    var TabBorder: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $orientation :ORIENTATION | undefined}> */ js.Any
-      ] = js.undefined
-    
-    var TabHighlight: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $orientation :ORIENTATION | undefined,   $length :number | undefined,   $distance :number | undefined,   $animate :boolean | undefined}> */ js.Any
-      ] = js.undefined
-    
-    var TabList: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $fill :FILL | undefined,   $orientation :ORIENTATION | undefined}> */ js.Any
-      ] = js.undefined
-  }
-  object TabsOverrides {
-    
-    inline def apply(): TabsOverrides = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TabsOverrides]
-    }
-    
-    extension [Self <: TabsOverrides](x: Self) {
-      
-      inline def setRoot(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $orientation :ORIENTATION | undefined}> */ js.Any
-      ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
-      
-      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
-      
-      inline def setTabBorder(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $orientation :ORIENTATION | undefined}> */ js.Any
-      ): Self = StObject.set(x, "TabBorder", value.asInstanceOf[js.Any])
-      
-      inline def setTabBorderUndefined: Self = StObject.set(x, "TabBorder", js.undefined)
-      
-      inline def setTabHighlight(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $orientation :ORIENTATION | undefined,   $length :number | undefined,   $distance :number | undefined,   $animate :boolean | undefined}> */ js.Any
-      ): Self = StObject.set(x, "TabHighlight", value.asInstanceOf[js.Any])
-      
-      inline def setTabHighlightUndefined: Self = StObject.set(x, "TabHighlight", js.undefined)
-      
-      inline def setTabList(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $fill :FILL | undefined,   $orientation :ORIENTATION | undefined}> */ js.Any
-      ): Self = StObject.set(x, "TabList", value.asInstanceOf[js.Any])
-      
-      inline def setTabListUndefined: Self = StObject.set(x, "TabList", js.undefined)
-    }
-  }
-  
-  trait TabsProps extends StObject {
-    
-    var activateOnFocus: js.UndefOr[Boolean] = js.undefined
-    
-    var activeKey: js.UndefOr[Key] = js.undefined
-    
-    var children: ReactNode
-    
-    var disabled: js.UndefOr[Boolean] = js.undefined
-    
-    var fill: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: baseui.baseui/tabs-motion.FILL[keyof baseui.baseui/tabs-motion.FILL] */ js.Any
-      ] = js.undefined
-    
-    var onChange: js.UndefOr[js.Function1[/* params */ ActiveKey, Unit]] = js.undefined
-    
-    var orientation: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: baseui.baseui/tabs-motion.ORIENTATION[keyof baseui.baseui/tabs-motion.ORIENTATION] */ js.Any
-      ] = js.undefined
-    
-    var overrides: js.UndefOr[TabsOverrides] = js.undefined
-    
-    var renderAll: js.UndefOr[Boolean] = js.undefined
-  }
-  object TabsProps {
-    
-    inline def apply(): TabsProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TabsProps]
-    }
-    
-    extension [Self <: TabsProps](x: Self) {
-      
-      inline def setActivateOnFocus(value: Boolean): Self = StObject.set(x, "activateOnFocus", value.asInstanceOf[js.Any])
-      
-      inline def setActivateOnFocusUndefined: Self = StObject.set(x, "activateOnFocus", js.undefined)
-      
-      inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
-      
-      inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      inline def setFill(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: baseui.baseui/tabs-motion.FILL[keyof baseui.baseui/tabs-motion.FILL] */ js.Any
-      ): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
-      
-      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
-      
-      inline def setOnChange(value: /* params */ ActiveKey => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
-      
-      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
-      
-      inline def setOrientation(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: baseui.baseui/tabs-motion.ORIENTATION[keyof baseui.baseui/tabs-motion.ORIENTATION] */ js.Any
-      ): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
-      
-      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
-      
-      inline def setOverrides(value: TabsOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      inline def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
-      
-      inline def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
-    }
-  }
+  type StateReducer = StatefulTabsReducer
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("UnixOutputStream")
 @js.native
-class UnixOutputStream protected ()
+open class UnixOutputStream protected ()
   extends StObject
      with typings.fridaGum.OutputStream {
   /**

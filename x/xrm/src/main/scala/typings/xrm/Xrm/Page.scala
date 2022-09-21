@@ -39,7 +39,7 @@ object Page {
     * Interface for an Entity attribute.
     * @deprecated Use {@link Xrm.Attributes.Attribute} instead.
     */
-  type Attribute = typings.xrm.Xrm.Attributes.Attribute
+  type Attribute = typings.xrm.Xrm.Attributes.Attribute[Any]
   
   /**
     * Attribute formats for Xrm.Page.Attribute.getFormat().
@@ -151,7 +151,7 @@ object Page {
     * @see {@link Attribute}
     * @deprecated Use {@link Xrm.Attributes.EnumAttribute} instead.
     */
-  type EnumAttribute = typings.xrm.Xrm.Attributes.EnumAttribute
+  type EnumAttribute = typings.xrm.Xrm.Attributes.EnumAttribute[Double | Boolean]
   
   /**
     * Interface for the event context.
@@ -260,7 +260,7 @@ object Page {
     * @see {@link EnumAttribute}
     * @deprecated Use {@link Xrm.Attributes.OptionSetAttribute} instead.
     */
-  type OptionSetAttribute = typings.xrm.Xrm.Attributes.OptionSetAttribute
+  type OptionSetAttribute = typings.xrm.Xrm.Attributes.OptionSetAttribute[Double]
   
   /**
     * OptionSet attribute formats for Xrm.Page.Attribute.getFormat(), used by OptionSetAttribute.

@@ -29,12 +29,12 @@ object OnInputLifecycle {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setTransitionEvents(value: TransitionEvents): Self = StObject.set(x, "transitionEvents", value.asInstanceOf[js.Any])
     
     inline def setTransitionEventsUndefined: Self = StObject.set(x, "transitionEvents", js.undefined)
     
-    inline def setTransitionEventsVarargs(value: TransitionEvent*): Self = StObject.set(x, "transitionEvents", js.Array(value :_*))
+    inline def setTransitionEventsVarargs(value: TransitionEvent*): Self = StObject.set(x, "transitionEvents", js.Array(value*))
   }
 }

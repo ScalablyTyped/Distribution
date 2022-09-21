@@ -26,18 +26,13 @@ object anon {
     
     def once(property: String, callback: js.Function0[Unit]): Unit = js.native
     
+    def setOrientationLock(lock: free | landscape | portrait): Unit = js.native
     def setOrientationLock(lock: String): Unit = js.native
-    @JSName("setOrientationLock")
-    def setOrientationLock_free(lock: free): Unit = js.native
-    @JSName("setOrientationLock")
-    def setOrientationLock_landscape(lock: landscape): Unit = js.native
-    @JSName("setOrientationLock")
-    def setOrientationLock_portrait(lock: portrait): Unit = js.native
     
     def statusBar(show: Boolean): Unit = js.native
     
     def trigger(property: String): Unit = js.native
-    def trigger(property: String, data: js.Any): Unit = js.native
+    def trigger(property: String, data: Any): Unit = js.native
     
     def unbindBack(callback: js.Function0[Boolean | Unit]): Unit = js.native
   }
@@ -70,9 +65,9 @@ object anon {
   @js.native
   trait Call extends StObject {
     
-    def apply(url: String, data: js.Any, callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+    def apply(url: String, data: Any, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
     
-    def reply(data: js.Any): Unit = js.native
+    def reply(data: Any): Unit = js.native
   }
   
   @js.native

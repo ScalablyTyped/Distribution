@@ -1,31 +1,29 @@
 package typings.antDesignIconsVue
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIconsVue.antdIconMod.AntdIconProps
+import typings.vueRuntimeCore.mod.FunctionalComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object skinFilledMod {
+object skinFilledMod extends Shortcut {
   
-  object default {
+  @JSImport("@ant-design/icons-vue/lib/icons/SkinFilled", JSImport.Default)
+  @js.native
+  val default: SkinFilledIconType = js.native
+  
+  @js.native
+  trait SkinFilledIconType
+    extends StObject
+       with FunctionalComponent[AntdIconProps, js.Object] {
     
-    inline def apply(
-      props: AntdIconProps,
-      context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/SkinFilled", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/SkinFilled", "default.displayName")
-    @js.native
-    def displayName: String = js.native
-    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/SkinFilled", "default.inheritAttrs")
-    @js.native
-    def inheritAttrs: Boolean = js.native
-    inline def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
+    @JSName("displayName")
+    var displayName_SkinFilledIconType: String = js.native
   }
+  
+  type _To = SkinFilledIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `skinFilledMod.foo` */
+  override def _to: SkinFilledIconType = default
 }

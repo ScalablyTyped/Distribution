@@ -9,7 +9,7 @@ trait SchemaRbacPolicy extends StObject {
   /**
     * Name of the RbacPolicy.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of permissions.
@@ -32,18 +32,20 @@ object SchemaRbacPolicy {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setPrincipals(value: js.Array[SchemaPrincipal]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
     inline def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
-    inline def setPrincipalsVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "principals", js.Array(value*))
   }
 }

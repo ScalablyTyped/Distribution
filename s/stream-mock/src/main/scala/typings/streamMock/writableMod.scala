@@ -10,20 +10,20 @@ object writableMod {
   
   @JSImport("stream-mock/lib/writable", "BufferWritableMock")
   @js.native
-  class BufferWritableMock () extends default {
+  open class BufferWritableMock () extends default {
     def this(options: WritableOptions) = this()
   }
   
   @JSImport("stream-mock/lib/writable", "ObjectWritableMock")
   @js.native
-  class ObjectWritableMock ()
+  open class ObjectWritableMock ()
     extends typings.streamMock.objectWritableMockMod.default {
     def this(options: WritableOptions) = this()
   }
   
   @JSImport("stream-mock/lib/writable", "WritableMock")
   @js.native
-  class WritableMock ()
+  open class WritableMock ()
     extends typings.streamMock.writableMockMod.default {
     def this(options: WritableOptions) = this()
   }

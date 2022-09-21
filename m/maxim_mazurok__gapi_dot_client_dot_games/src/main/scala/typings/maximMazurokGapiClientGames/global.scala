@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientGames.gapi.client.games.MetagameResource
 import typings.maximMazurokGapiClientGames.gapi.client.games.PlayersResource
 import typings.maximMazurokGapiClientGames.gapi.client.games.RevisionsResource
 import typings.maximMazurokGapiClientGames.gapi.client.games.ScoresResource
-import typings.maximMazurokGapiClientGames.gapi.client.games.SnapshotsExtendedResource
 import typings.maximMazurokGapiClientGames.gapi.client.games.SnapshotsResource
 import typings.maximMazurokGapiClientGames.gapi.client.games.StatsResource
 import typings.maximMazurokGapiClientGames.maximMazurokGapiClientGamesStrings.games
@@ -70,10 +69,6 @@ object global {
         @js.native
         val snapshots: SnapshotsResource = js.native
         
-        @JSGlobal("gapi.client.games.snapshotsExtended")
-        @js.native
-        val snapshotsExtended: SnapshotsExtendedResource = js.native
-        
         @JSGlobal("gapi.client.games.stats")
         @js.native
         val stats: StatsResource = js.native
@@ -81,7 +76,7 @@ object global {
       
       /** Load Google Play Game Services v1 */
       inline def load(name: games, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: games, version: v1, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: games, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

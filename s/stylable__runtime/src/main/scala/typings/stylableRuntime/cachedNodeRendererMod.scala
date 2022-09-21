@@ -2,12 +2,10 @@ package typings.stylableRuntime
 
 import typings.std.ElementCreationOptions
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -60,10 +58,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -72,12 +69,14 @@ import typings.std.HTMLTimeElement
 import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
+import typings.std.HTMLUnknownElement
 import typings.std.HTMLVideoElement
 import typings.stylableRuntime.anon.FnCall
 import typings.stylableRuntime.stylableRuntimeStrings.`object`
 import typings.stylableRuntime.stylableRuntimeStrings.`var`
 import typings.stylableRuntime.stylableRuntimeStrings.a
 import typings.stylableRuntime.stylableRuntimeStrings.abbr
+import typings.stylableRuntime.stylableRuntimeStrings.acronym
 import typings.stylableRuntime.stylableRuntimeStrings.address
 import typings.stylableRuntime.stylableRuntimeStrings.applet
 import typings.stylableRuntime.stylableRuntimeStrings.area
@@ -89,12 +88,16 @@ import typings.stylableRuntime.stylableRuntimeStrings.base
 import typings.stylableRuntime.stylableRuntimeStrings.basefont
 import typings.stylableRuntime.stylableRuntimeStrings.bdi
 import typings.stylableRuntime.stylableRuntimeStrings.bdo
+import typings.stylableRuntime.stylableRuntimeStrings.bgsound
+import typings.stylableRuntime.stylableRuntimeStrings.big
+import typings.stylableRuntime.stylableRuntimeStrings.blink
 import typings.stylableRuntime.stylableRuntimeStrings.blockquote
 import typings.stylableRuntime.stylableRuntimeStrings.body
 import typings.stylableRuntime.stylableRuntimeStrings.br
 import typings.stylableRuntime.stylableRuntimeStrings.button
 import typings.stylableRuntime.stylableRuntimeStrings.canvas
 import typings.stylableRuntime.stylableRuntimeStrings.caption
+import typings.stylableRuntime.stylableRuntimeStrings.center
 import typings.stylableRuntime.stylableRuntimeStrings.cite
 import typings.stylableRuntime.stylableRuntimeStrings.code
 import typings.stylableRuntime.stylableRuntimeStrings.col
@@ -136,7 +139,9 @@ import typings.stylableRuntime.stylableRuntimeStrings.iframe
 import typings.stylableRuntime.stylableRuntimeStrings.img
 import typings.stylableRuntime.stylableRuntimeStrings.input
 import typings.stylableRuntime.stylableRuntimeStrings.ins
+import typings.stylableRuntime.stylableRuntimeStrings.isindex
 import typings.stylableRuntime.stylableRuntimeStrings.kbd
+import typings.stylableRuntime.stylableRuntimeStrings.keygen
 import typings.stylableRuntime.stylableRuntimeStrings.label
 import typings.stylableRuntime.stylableRuntimeStrings.legend
 import typings.stylableRuntime.stylableRuntimeStrings.li
@@ -147,9 +152,15 @@ import typings.stylableRuntime.stylableRuntimeStrings.map
 import typings.stylableRuntime.stylableRuntimeStrings.mark
 import typings.stylableRuntime.stylableRuntimeStrings.marquee
 import typings.stylableRuntime.stylableRuntimeStrings.menu
+import typings.stylableRuntime.stylableRuntimeStrings.menuitem
 import typings.stylableRuntime.stylableRuntimeStrings.meta
 import typings.stylableRuntime.stylableRuntimeStrings.meter
+import typings.stylableRuntime.stylableRuntimeStrings.multicol
 import typings.stylableRuntime.stylableRuntimeStrings.nav
+import typings.stylableRuntime.stylableRuntimeStrings.nextid
+import typings.stylableRuntime.stylableRuntimeStrings.nobr
+import typings.stylableRuntime.stylableRuntimeStrings.noembed
+import typings.stylableRuntime.stylableRuntimeStrings.noframes
 import typings.stylableRuntime.stylableRuntimeStrings.noscript
 import typings.stylableRuntime.stylableRuntimeStrings.ol
 import typings.stylableRuntime.stylableRuntimeStrings.optgroup
@@ -158,11 +169,14 @@ import typings.stylableRuntime.stylableRuntimeStrings.output
 import typings.stylableRuntime.stylableRuntimeStrings.p
 import typings.stylableRuntime.stylableRuntimeStrings.param
 import typings.stylableRuntime.stylableRuntimeStrings.picture
+import typings.stylableRuntime.stylableRuntimeStrings.plaintext
 import typings.stylableRuntime.stylableRuntimeStrings.pre
 import typings.stylableRuntime.stylableRuntimeStrings.progress
 import typings.stylableRuntime.stylableRuntimeStrings.q
+import typings.stylableRuntime.stylableRuntimeStrings.rb
 import typings.stylableRuntime.stylableRuntimeStrings.rp
 import typings.stylableRuntime.stylableRuntimeStrings.rt
+import typings.stylableRuntime.stylableRuntimeStrings.rtc
 import typings.stylableRuntime.stylableRuntimeStrings.ruby
 import typings.stylableRuntime.stylableRuntimeStrings.s
 import typings.stylableRuntime.stylableRuntimeStrings.samp
@@ -172,7 +186,9 @@ import typings.stylableRuntime.stylableRuntimeStrings.select
 import typings.stylableRuntime.stylableRuntimeStrings.slot
 import typings.stylableRuntime.stylableRuntimeStrings.small
 import typings.stylableRuntime.stylableRuntimeStrings.source
+import typings.stylableRuntime.stylableRuntimeStrings.spacer
 import typings.stylableRuntime.stylableRuntimeStrings.span
+import typings.stylableRuntime.stylableRuntimeStrings.strike
 import typings.stylableRuntime.stylableRuntimeStrings.strong
 import typings.stylableRuntime.stylableRuntimeStrings.style
 import typings.stylableRuntime.stylableRuntimeStrings.sub
@@ -190,6 +206,7 @@ import typings.stylableRuntime.stylableRuntimeStrings.time
 import typings.stylableRuntime.stylableRuntimeStrings.title
 import typings.stylableRuntime.stylableRuntimeStrings.tr
 import typings.stylableRuntime.stylableRuntimeStrings.track
+import typings.stylableRuntime.stylableRuntimeStrings.tt
 import typings.stylableRuntime.stylableRuntimeStrings.u
 import typings.stylableRuntime.stylableRuntimeStrings.ul
 import typings.stylableRuntime.stylableRuntimeStrings.video
@@ -203,14 +220,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cachedNodeRendererMod {
   
-  @JSImport("@stylable/runtime/cjs/cached-node-renderer", "CacheStyleNodeRenderer")
+  @JSImport("@stylable/runtime/dist/cached-node-renderer", "CacheStyleNodeRenderer")
   @js.native
-  class CacheStyleNodeRenderer protected ()
+  open class CacheStyleNodeRenderer protected ()
     extends StObject
        with NodeRenderer[RenderableStylesheet, HTMLStyleElement] {
     def this(options: CachedNodeRendererOptions) = this()
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
   }
   
   trait CachedNodeRendererOptions extends StObject {
@@ -230,13 +247,17 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_abbr(tagName: abbr, options: ElementCreationOptions): HTMLElement
     @JSName("createElement")
+    def createElement_acronym(tagName: acronym): HTMLElement
+    @JSName("createElement")
+    def createElement_acronym(tagName: acronym, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
     def createElement_address(tagName: address): HTMLElement
     @JSName("createElement")
     def createElement_address(tagName: address, options: ElementCreationOptions): HTMLElement
     @JSName("createElement")
-    def createElement_applet(tagName: applet): HTMLAppletElement
+    def createElement_applet(tagName: applet): HTMLUnknownElement
     @JSName("createElement")
-    def createElement_applet(tagName: applet, options: ElementCreationOptions): HTMLAppletElement
+    def createElement_applet(tagName: applet, options: ElementCreationOptions): HTMLUnknownElement
     @JSName("createElement")
     def createElement_area(tagName: area): HTMLAreaElement
     @JSName("createElement")
@@ -262,9 +283,9 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_base(tagName: base, options: ElementCreationOptions): HTMLBaseElement
     @JSName("createElement")
-    def createElement_basefont(tagName: basefont): HTMLBaseFontElement
+    def createElement_basefont(tagName: basefont): HTMLElement
     @JSName("createElement")
-    def createElement_basefont(tagName: basefont, options: ElementCreationOptions): HTMLBaseFontElement
+    def createElement_basefont(tagName: basefont, options: ElementCreationOptions): HTMLElement
     @JSName("createElement")
     def createElement_bdi(tagName: bdi): HTMLElement
     @JSName("createElement")
@@ -273,6 +294,18 @@ object cachedNodeRendererMod {
     def createElement_bdo(tagName: bdo): HTMLElement
     @JSName("createElement")
     def createElement_bdo(tagName: bdo, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
+    def createElement_bgsound(tagName: bgsound): HTMLUnknownElement
+    @JSName("createElement")
+    def createElement_bgsound(tagName: bgsound, options: ElementCreationOptions): HTMLUnknownElement
+    @JSName("createElement")
+    def createElement_big(tagName: big): HTMLElement
+    @JSName("createElement")
+    def createElement_big(tagName: big, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
+    def createElement_blink(tagName: blink): HTMLUnknownElement
+    @JSName("createElement")
+    def createElement_blink(tagName: blink, options: ElementCreationOptions): HTMLUnknownElement
     @JSName("createElement")
     def createElement_blockquote(tagName: blockquote): HTMLQuoteElement
     @JSName("createElement")
@@ -297,6 +330,10 @@ object cachedNodeRendererMod {
     def createElement_caption(tagName: caption): HTMLTableCaptionElement
     @JSName("createElement")
     def createElement_caption(tagName: caption, options: ElementCreationOptions): HTMLTableCaptionElement
+    @JSName("createElement")
+    def createElement_center(tagName: center): HTMLElement
+    @JSName("createElement")
+    def createElement_center(tagName: center, options: ElementCreationOptions): HTMLElement
     @JSName("createElement")
     def createElement_cite(tagName: cite): HTMLElement
     @JSName("createElement")
@@ -462,9 +499,17 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_ins(tagName: ins, options: ElementCreationOptions): HTMLModElement
     @JSName("createElement")
+    def createElement_isindex(tagName: isindex): HTMLUnknownElement
+    @JSName("createElement")
+    def createElement_isindex(tagName: isindex, options: ElementCreationOptions): HTMLUnknownElement
+    @JSName("createElement")
     def createElement_kbd(tagName: kbd): HTMLElement
     @JSName("createElement")
     def createElement_kbd(tagName: kbd, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
+    def createElement_keygen(tagName: keygen): HTMLUnknownElement
+    @JSName("createElement")
+    def createElement_keygen(tagName: keygen, options: ElementCreationOptions): HTMLUnknownElement
     @JSName("createElement")
     def createElement_label(tagName: label): HTMLLabelElement
     @JSName("createElement")
@@ -506,6 +551,10 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_menu(tagName: menu, options: ElementCreationOptions): HTMLMenuElement
     @JSName("createElement")
+    def createElement_menuitem(tagName: menuitem): HTMLElement
+    @JSName("createElement")
+    def createElement_menuitem(tagName: menuitem, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
     def createElement_meta(tagName: meta): HTMLMetaElement
     @JSName("createElement")
     def createElement_meta(tagName: meta, options: ElementCreationOptions): HTMLMetaElement
@@ -514,9 +563,29 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_meter(tagName: meter, options: ElementCreationOptions): HTMLMeterElement
     @JSName("createElement")
+    def createElement_multicol(tagName: multicol): HTMLUnknownElement
+    @JSName("createElement")
+    def createElement_multicol(tagName: multicol, options: ElementCreationOptions): HTMLUnknownElement
+    @JSName("createElement")
     def createElement_nav(tagName: nav): HTMLElement
     @JSName("createElement")
     def createElement_nav(tagName: nav, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
+    def createElement_nextid(tagName: nextid): HTMLUnknownElement
+    @JSName("createElement")
+    def createElement_nextid(tagName: nextid, options: ElementCreationOptions): HTMLUnknownElement
+    @JSName("createElement")
+    def createElement_nobr(tagName: nobr): HTMLElement
+    @JSName("createElement")
+    def createElement_nobr(tagName: nobr, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
+    def createElement_noembed(tagName: noembed): HTMLElement
+    @JSName("createElement")
+    def createElement_noembed(tagName: noembed, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
+    def createElement_noframes(tagName: noframes): HTMLElement
+    @JSName("createElement")
+    def createElement_noframes(tagName: noframes, options: ElementCreationOptions): HTMLElement
     @JSName("createElement")
     def createElement_noscript(tagName: noscript): HTMLElement
     @JSName("createElement")
@@ -554,6 +623,10 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_picture(tagName: picture, options: ElementCreationOptions): HTMLPictureElement
     @JSName("createElement")
+    def createElement_plaintext(tagName: plaintext): HTMLElement
+    @JSName("createElement")
+    def createElement_plaintext(tagName: plaintext, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
     def createElement_pre(tagName: pre): HTMLPreElement
     @JSName("createElement")
     def createElement_pre(tagName: pre, options: ElementCreationOptions): HTMLPreElement
@@ -566,6 +639,10 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_q(tagName: q, options: ElementCreationOptions): HTMLQuoteElement
     @JSName("createElement")
+    def createElement_rb(tagName: rb): HTMLElement
+    @JSName("createElement")
+    def createElement_rb(tagName: rb, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
     def createElement_rp(tagName: rp): HTMLElement
     @JSName("createElement")
     def createElement_rp(tagName: rp, options: ElementCreationOptions): HTMLElement
@@ -573,6 +650,10 @@ object cachedNodeRendererMod {
     def createElement_rt(tagName: rt): HTMLElement
     @JSName("createElement")
     def createElement_rt(tagName: rt, options: ElementCreationOptions): HTMLElement
+    @JSName("createElement")
+    def createElement_rtc(tagName: rtc): HTMLElement
+    @JSName("createElement")
+    def createElement_rtc(tagName: rtc, options: ElementCreationOptions): HTMLElement
     @JSName("createElement")
     def createElement_ruby(tagName: ruby): HTMLElement
     @JSName("createElement")
@@ -610,9 +691,17 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_source(tagName: source, options: ElementCreationOptions): HTMLSourceElement
     @JSName("createElement")
+    def createElement_spacer(tagName: spacer): HTMLUnknownElement
+    @JSName("createElement")
+    def createElement_spacer(tagName: spacer, options: ElementCreationOptions): HTMLUnknownElement
+    @JSName("createElement")
     def createElement_span(tagName: span): HTMLSpanElement
     @JSName("createElement")
     def createElement_span(tagName: span, options: ElementCreationOptions): HTMLSpanElement
+    @JSName("createElement")
+    def createElement_strike(tagName: strike): HTMLElement
+    @JSName("createElement")
+    def createElement_strike(tagName: strike, options: ElementCreationOptions): HTMLElement
     @JSName("createElement")
     def createElement_strong(tagName: strong): HTMLElement
     @JSName("createElement")
@@ -642,9 +731,9 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_tbody(tagName: tbody, options: ElementCreationOptions): HTMLTableSectionElement
     @JSName("createElement")
-    def createElement_td(tagName: td): HTMLTableDataCellElement
+    def createElement_td(tagName: td): HTMLTableCellElement
     @JSName("createElement")
-    def createElement_td(tagName: td, options: ElementCreationOptions): HTMLTableDataCellElement
+    def createElement_td(tagName: td, options: ElementCreationOptions): HTMLTableCellElement
     @JSName("createElement")
     def createElement_template(tagName: template): HTMLTemplateElement
     @JSName("createElement")
@@ -658,9 +747,9 @@ object cachedNodeRendererMod {
     @JSName("createElement")
     def createElement_tfoot(tagName: tfoot, options: ElementCreationOptions): HTMLTableSectionElement
     @JSName("createElement")
-    def createElement_th(tagName: th): HTMLTableHeaderCellElement
+    def createElement_th(tagName: th): HTMLTableCellElement
     @JSName("createElement")
-    def createElement_th(tagName: th, options: ElementCreationOptions): HTMLTableHeaderCellElement
+    def createElement_th(tagName: th, options: ElementCreationOptions): HTMLTableCellElement
     @JSName("createElement")
     def createElement_thead(tagName: thead): HTMLTableSectionElement
     @JSName("createElement")
@@ -681,6 +770,10 @@ object cachedNodeRendererMod {
     def createElement_track(tagName: track): HTMLTrackElement
     @JSName("createElement")
     def createElement_track(tagName: track, options: ElementCreationOptions): HTMLTrackElement
+    @JSName("createElement")
+    def createElement_tt(tagName: tt): HTMLElement
+    @JSName("createElement")
+    def createElement_tt(tagName: tt, options: ElementCreationOptions): HTMLElement
     @JSName("createElement")
     def createElement_u(tagName: u): HTMLElement
     @JSName("createElement")

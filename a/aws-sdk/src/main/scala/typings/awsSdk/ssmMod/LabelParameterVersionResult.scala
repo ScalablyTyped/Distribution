@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LabelParameterVersionResult extends StObject {
   
   /**
-    * The label does not meet the requirements. For information about parameter label requirements, see Labeling parameters in the AWS Systems Manager User Guide.
+    * The label doesn't meet the requirements. For information about parameter label requirements, see Labeling parameters in the Amazon Web Services Systems Manager User Guide.
     */
   var InvalidLabels: js.UndefOr[ParameterLabelList] = js.undefined
   
@@ -29,7 +29,7 @@ object LabelParameterVersionResult {
     
     inline def setInvalidLabelsUndefined: Self = StObject.set(x, "InvalidLabels", js.undefined)
     
-    inline def setInvalidLabelsVarargs(value: ParameterLabel*): Self = StObject.set(x, "InvalidLabels", js.Array(value :_*))
+    inline def setInvalidLabelsVarargs(value: ParameterLabel*): Self = StObject.set(x, "InvalidLabels", js.Array(value*))
     
     inline def setParameterVersion(value: PSParameterVersion): Self = StObject.set(x, "ParameterVersion", value.asInstanceOf[js.Any])
     

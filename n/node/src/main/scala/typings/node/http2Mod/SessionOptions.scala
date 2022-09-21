@@ -1,14 +1,14 @@
 package typings.node.http2Mod
 
-import typings.node.streamMod.Duplex
-import typings.node.urlMod.URL_
+import typings.node.nodeStreamMod.Duplex
+import typings.node.nodeUrlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SessionOptions extends StObject {
   
-  var createConnection: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ this.type, Duplex]] = js.undefined
+  var createConnection: js.UndefOr[js.Function2[/* authority */ URL, /* option */ this.type, Duplex]] = js.undefined
   
   var maxDeflateDynamicTableSize: js.UndefOr[Double] = js.undefined
   
@@ -27,6 +27,14 @@ trait SessionOptions extends StObject {
   var selectPadding: js.UndefOr[js.Function2[/* frameLen */ Double, /* maxFrameLen */ Double, Double]] = js.undefined
   
   var settings: js.UndefOr[Settings] = js.undefined
+  
+  /**
+    * Specifies a timeout in milliseconds that
+    * a server should wait when an [`'unknownProtocol'`][] is emitted. If the
+    * socket has not been destroyed by that time the server will destroy it.
+    * @default 100000
+    */
+  var unknownProtocolTimeout: js.UndefOr[Double] = js.undefined
 }
 object SessionOptions {
   
@@ -37,7 +45,7 @@ object SessionOptions {
   
   extension [Self <: SessionOptions](x: Self) {
     
-    inline def setCreateConnection(value: (/* authority */ URL_, SessionOptions) => Duplex): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
+    inline def setCreateConnection(value: (/* authority */ URL, SessionOptions) => Duplex): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
     
     inline def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
     
@@ -76,5 +84,9 @@ object SessionOptions {
     inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    
+    inline def setUnknownProtocolTimeout(value: Double): Self = StObject.set(x, "unknownProtocolTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setUnknownProtocolTimeoutUndefined: Self = StObject.set(x, "unknownProtocolTimeout", js.undefined)
   }
 }

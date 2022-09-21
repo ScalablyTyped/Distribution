@@ -14,12 +14,12 @@ trait AgendaRangeChangedEventUIParam extends StObject {
   /**
     * Gets a reference to the newly AgendaView start date.
     */
-  var newAgendaRangeStartDate: js.UndefOr[js.Any] = js.undefined
+  var newAgendaRangeStartDate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object AgendaRangeChangedEventUIParam {
   
@@ -34,11 +34,11 @@ object AgendaRangeChangedEventUIParam {
     
     inline def setDateRangeIntervalUndefined: Self = StObject.set(x, "dateRangeInterval", js.undefined)
     
-    inline def setNewAgendaRangeStartDate(value: js.Any): Self = StObject.set(x, "newAgendaRangeStartDate", value.asInstanceOf[js.Any])
+    inline def setNewAgendaRangeStartDate(value: Any): Self = StObject.set(x, "newAgendaRangeStartDate", value.asInstanceOf[js.Any])
     
     inline def setNewAgendaRangeStartDateUndefined: Self = StObject.set(x, "newAgendaRangeStartDate", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

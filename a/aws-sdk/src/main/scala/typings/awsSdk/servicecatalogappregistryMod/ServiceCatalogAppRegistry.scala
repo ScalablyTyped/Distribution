@@ -141,6 +141,20 @@ trait ServiceCatalogAppRegistry extends Service {
   ): Request[GetApplicationResponse, AWSError] = js.native
   
   /**
+    * Gets the resource associated with the application.
+    */
+  def getAssociatedResource(): Request[GetAssociatedResourceResponse, AWSError] = js.native
+  def getAssociatedResource(callback: js.Function2[/* err */ AWSError, /* data */ GetAssociatedResourceResponse, Unit]): Request[GetAssociatedResourceResponse, AWSError] = js.native
+  /**
+    * Gets the resource associated with the application.
+    */
+  def getAssociatedResource(params: GetAssociatedResourceRequest): Request[GetAssociatedResourceResponse, AWSError] = js.native
+  def getAssociatedResource(
+    params: GetAssociatedResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAssociatedResourceResponse, Unit]
+  ): Request[GetAssociatedResourceResponse, AWSError] = js.native
+  
+  /**
     * Retrieves an attribute group, either by its name or its ID. The attribute group can be specified either by its unique ID or by its name.
     */
   def getAttributeGroup(): Request[GetAttributeGroupResponse, AWSError] = js.native
@@ -209,6 +223,78 @@ trait ServiceCatalogAppRegistry extends Service {
     params: ListAttributeGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAttributeGroupsResponse, Unit]
   ): Request[ListAttributeGroupsResponse, AWSError] = js.native
+  
+  /**
+    * Lists the details of all attribute groups associated with a specific application. The results display in pages.
+    */
+  def listAttributeGroupsForApplication(): Request[ListAttributeGroupsForApplicationResponse, AWSError] = js.native
+  def listAttributeGroupsForApplication(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAttributeGroupsForApplicationResponse, Unit]
+  ): Request[ListAttributeGroupsForApplicationResponse, AWSError] = js.native
+  /**
+    * Lists the details of all attribute groups associated with a specific application. The results display in pages.
+    */
+  def listAttributeGroupsForApplication(params: ListAttributeGroupsForApplicationRequest): Request[ListAttributeGroupsForApplicationResponse, AWSError] = js.native
+  def listAttributeGroupsForApplication(
+    params: ListAttributeGroupsForApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAttributeGroupsForApplicationResponse, Unit]
+  ): Request[ListAttributeGroupsForApplicationResponse, AWSError] = js.native
+  
+  /**
+    * Lists all of the tags on the resource.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Lists all of the tags on the resource.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
+    * Syncs the resource with current AppRegistry records. Specifically, the resource’s AppRegistry system tags sync with its associated application. We remove the resource's AppRegistry system tags if it does not associate with the application. The caller must have permissions to read and update the resource.
+    */
+  def syncResource(): Request[SyncResourceResponse, AWSError] = js.native
+  def syncResource(callback: js.Function2[/* err */ AWSError, /* data */ SyncResourceResponse, Unit]): Request[SyncResourceResponse, AWSError] = js.native
+  /**
+    * Syncs the resource with current AppRegistry records. Specifically, the resource’s AppRegistry system tags sync with its associated application. We remove the resource's AppRegistry system tags if it does not associate with the application. The caller must have permissions to read and update the resource.
+    */
+  def syncResource(params: SyncResourceRequest): Request[SyncResourceResponse, AWSError] = js.native
+  def syncResource(
+    params: SyncResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SyncResourceResponse, Unit]
+  ): Request[SyncResourceResponse, AWSError] = js.native
+  
+  /**
+    * Assigns one or more tags (key-value pairs) to the specified resource. Each tag consists of a key and an optional value. If a tag with the same key is already associated with the resource, this action updates its value. This operation returns an empty response if the call was successful.
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Assigns one or more tags (key-value pairs) to the specified resource. Each tag consists of a key and an optional value. If a tag with the same key is already associated with the resource, this action updates its value. This operation returns an empty response if the call was successful.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Removes tags from a resource. This operation returns an empty response if the call was successful.
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Removes tags from a resource. This operation returns an empty response if the call was successful.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
     * Updates an existing application with new attributes.

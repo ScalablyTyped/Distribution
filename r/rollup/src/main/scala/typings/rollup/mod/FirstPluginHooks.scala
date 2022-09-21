@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rollup.rollupStrings.resolveFileUrl
   - typings.rollup.rollupStrings.resolveId
   - typings.rollup.rollupStrings.resolveImportMeta
+  - typings.rollup.rollupStrings.shouldTransformCachedModule
 */
 trait FirstPluginHooks extends StObject
 object FirstPluginHooks {
@@ -29,4 +30,6 @@ object FirstPluginHooks {
   inline def resolveId: typings.rollup.rollupStrings.resolveId = "resolveId".asInstanceOf[typings.rollup.rollupStrings.resolveId]
   
   inline def resolveImportMeta: typings.rollup.rollupStrings.resolveImportMeta = "resolveImportMeta".asInstanceOf[typings.rollup.rollupStrings.resolveImportMeta]
+  
+  inline def shouldTransformCachedModule: typings.rollup.rollupStrings.shouldTransformCachedModule = "shouldTransformCachedModule".asInstanceOf[typings.rollup.rollupStrings.shouldTransformCachedModule]
 }

@@ -1,51 +1,31 @@
 package typings.datatablesNetButtons.DataTables
 
+import typings.datatablesNet.JQuery
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ButtonSelectorTypes = java.lang.String | scala.Double | typings.datatablesNet.JQuery
+type ButtonSelectorTypes = String | Double | JQuery
 
 /**
   * A function that will be executed upon creation of the buttons.
   */
-type FunctionButtom = js.Function1[
-/* dt */ typings.datatablesNetButtons.DataTables.Api, 
-typings.datatablesNetButtons.DataTables.ButtomSettingsCommon]
+type FunctionButtom = js.Function1[/* dt */ Api, ButtomSettingsCommon]
 
-type FunctionButtonAction = js.Function4[
-/* e */ js.Any, 
-/* dt */ typings.datatablesNetButtons.DataTables.Api, 
-/* node */ typings.datatablesNet.JQuery, 
-/* config */ typings.datatablesNetButtons.DataTables.ButtonSettings, 
-scala.Unit]
+type FunctionButtonAction = js.Function4[/* e */ Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings, Unit]
 
-type FunctionButtonAvailable = js.Function2[
-/* dt */ typings.datatablesNetButtons.DataTables.Api, 
-/* config */ js.Any, 
-scala.Boolean]
+type FunctionButtonAvailable = js.Function2[/* dt */ Api, /* config */ Any, Boolean]
 
-type FunctionButtonColvisColumnText = js.Function3[
-/* dt */ typings.datatablesNetButtons.DataTables.Api, 
-/* i */ scala.Double, 
-/* title */ java.lang.String, 
-java.lang.String]
+type FunctionButtonColvisColumnText = js.Function3[/* dt */ Api, /* i */ Double, /* title */ String, String]
 
-type FunctionButtonCustomize = js.Function1[/* win */ typings.std.Window | java.lang.String, scala.Unit]
+type FunctionButtonCustomize = js.Function1[/* win */ Window | String, Unit]
 
-type FunctionButtonCustomizeData = js.Function1[/* content */ js.Any, scala.Unit]
+type FunctionButtonCustomizeData = js.Function1[/* content */ Any, Unit]
 
-type FunctionButtonInit = js.Function3[
-/* dt */ typings.datatablesNetButtons.DataTables.Api, 
-/* node */ typings.datatablesNet.JQuery, 
-/* config */ js.Any, 
-scala.Unit]
+type FunctionButtonInit = js.Function3[/* dt */ Api, /* node */ JQuery, /* config */ Any, Unit]
 
-type FunctionButtonText = js.Function3[
-/* dt */ typings.datatablesNetButtons.DataTables.Api, 
-/* node */ typings.datatablesNet.JQuery, 
-/* config */ js.Any, 
-java.lang.String]
+type FunctionButtonText = js.Function3[/* dt */ Api, /* node */ JQuery, /* config */ Any, String]
 
-type FunctionExtButtonsCollectionText = js.Function1[/* a */ js.Any, java.lang.String]
+type FunctionExtButtonsCollectionText = js.Function1[/* a */ Any, String]

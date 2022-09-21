@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListChildComponentProps extends StObject {
+trait ListChildComponentProps[T] extends StObject {
   
-  var data: js.Any
+  var data: T
   
   var index: Double
   
@@ -17,14 +17,14 @@ trait ListChildComponentProps extends StObject {
 }
 object ListChildComponentProps {
   
-  inline def apply(data: js.Any, index: Double, style: CSSProperties): ListChildComponentProps = {
+  inline def apply[T](data: T, index: Double, style: CSSProperties): ListChildComponentProps[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ListChildComponentProps]
+    __obj.asInstanceOf[ListChildComponentProps[T]]
   }
   
-  extension [Self <: ListChildComponentProps](x: Self) {
+  extension [Self <: ListChildComponentProps[?], T](x: Self & ListChildComponentProps[T]) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

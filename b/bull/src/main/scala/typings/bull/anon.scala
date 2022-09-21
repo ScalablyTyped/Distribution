@@ -1,6 +1,9 @@
 package typings.bull
 
+import typings.bull.mod.BackoffOptions
+import typings.bull.mod.JobId
 import typings.bull.mod.JobOptions
+import typings.bull.mod.KeepJobsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +18,11 @@ object anon {
     
     var delay: Double
     
-    var failedReason: js.Any
+    var failedReason: Any
     
     var finishedOn: Double | Null
     
-    var id: typings.bull.mod.JobId
+    var id: JobId
     
     var name: String
     
@@ -29,7 +32,7 @@ object anon {
     
     var progress: Double
     
-    var returnvalue: js.Any
+    var returnvalue: Any
     
     var stacktrace: js.Array[String] | Null
     
@@ -41,12 +44,12 @@ object anon {
       attemptsMade: Double,
       data: T,
       delay: Double,
-      failedReason: js.Any,
-      id: typings.bull.mod.JobId,
+      failedReason: Any,
+      id: JobId,
       name: String,
       opts: JobOptions,
       progress: Double,
-      returnvalue: js.Any,
+      returnvalue: Any,
       timestamp: Double
     ): AttemptsMade[T] = {
       val __obj = js.Dynamic.literal(attemptsMade = attemptsMade.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], failedReason = failedReason.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], returnvalue = returnvalue.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], finishedOn = null, processedOn = null, stacktrace = null)
@@ -61,13 +64,13 @@ object anon {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      inline def setFailedReason(value: js.Any): Self = StObject.set(x, "failedReason", value.asInstanceOf[js.Any])
+      inline def setFailedReason(value: Any): Self = StObject.set(x, "failedReason", value.asInstanceOf[js.Any])
       
       inline def setFinishedOn(value: Double): Self = StObject.set(x, "finishedOn", value.asInstanceOf[js.Any])
       
       inline def setFinishedOnNull: Self = StObject.set(x, "finishedOn", null)
       
-      inline def setId(value: typings.bull.mod.JobId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: JobId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -79,13 +82,13 @@ object anon {
       
       inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      inline def setReturnvalue(value: js.Any): Self = StObject.set(x, "returnvalue", value.asInstanceOf[js.Any])
+      inline def setReturnvalue(value: Any): Self = StObject.set(x, "returnvalue", value.asInstanceOf[js.Any])
       
       inline def setStacktrace(value: js.Array[String]): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
       
       inline def setStacktraceNull: Self = StObject.set(x, "stacktrace", null)
       
-      inline def setStacktraceVarargs(value: String*): Self = StObject.set(x, "stacktrace", js.Array(value :_*))
+      inline def setStacktraceVarargs(value: String*): Self = StObject.set(x, "stacktrace", js.Array(value*))
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
@@ -110,7 +113,70 @@ object anon {
       
       inline def setLogs(value: js.Array[String]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      inline def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value :_*))
+      inline def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value*))
+    }
+  }
+  
+  /* Inlined bull.bull.CronRepeatOptions & {  jobId :bull.bull.JobId | undefined} */
+  trait CronRepeatOptionsjobIdJob extends StObject {
+    
+    /**
+      * Cron pattern specifying when the job should execute
+      */
+    var cron: String
+    
+    /**
+      * End date when the repeat job should stop repeating
+      */
+    var endDate: js.UndefOr[js.Date | String | Double] = js.undefined
+    
+    var jobId: js.UndefOr[JobId] = js.undefined
+    
+    /**
+      * Number of times the job should repeat at max.
+      */
+    var limit: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Start date when the repeat job should start repeating (only with cron).
+      */
+    var startDate: js.UndefOr[js.Date | String | Double] = js.undefined
+    
+    /**
+      * Timezone
+      */
+    var tz: js.UndefOr[String] = js.undefined
+  }
+  object CronRepeatOptionsjobIdJob {
+    
+    inline def apply(cron: String): CronRepeatOptionsjobIdJob = {
+      val __obj = js.Dynamic.literal(cron = cron.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CronRepeatOptionsjobIdJob]
+    }
+    
+    extension [Self <: CronRepeatOptionsjobIdJob](x: Self) {
+      
+      inline def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
+      
+      inline def setEndDate(value: js.Date | String | Double): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+      
+      inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+      
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      
+      inline def setStartDate(value: js.Date | String | Double): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+      
+      inline def setTz(value: String): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
+      
+      inline def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
     }
   }
   
@@ -120,7 +186,7 @@ object anon {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var opts: js.UndefOr[JobOptions] = js.undefined
+    var opts: js.UndefOr[OmitJobOptionsrepeat] = js.undefined
   }
   object Data {
     
@@ -137,28 +203,80 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOpts(value: JobOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: OmitJobOptionsrepeat): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
       inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
     }
   }
   
-  trait JobId extends StObject {
+  /* Inlined bull.bull.EveryRepeatOptions & {  jobId :bull.bull.JobId | undefined} */
+  trait EveryRepeatOptionsjobIdJo extends StObject {
     
-    var jobId: js.UndefOr[typings.bull.mod.JobId] = js.undefined
+    /**
+      * End date when the repeat job should stop repeating
+      */
+    var endDate: js.UndefOr[js.Date | String | Double] = js.undefined
+    
+    /**
+      * Repeat every millis (cron setting cannot be used together with this setting.)
+      */
+    var every: Double
+    
+    var jobId: js.UndefOr[JobId] = js.undefined
+    
+    /**
+      * Number of times the job should repeat at max.
+      */
+    var limit: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Timezone
+      */
+    var tz: js.UndefOr[String] = js.undefined
   }
-  object JobId {
+  object EveryRepeatOptionsjobIdJo {
     
-    inline def apply(): JobId = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[JobId]
+    inline def apply(every: Double): EveryRepeatOptionsjobIdJo = {
+      val __obj = js.Dynamic.literal(every = every.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EveryRepeatOptionsjobIdJo]
     }
     
-    extension [Self <: JobId](x: Self) {
+    extension [Self <: EveryRepeatOptionsjobIdJo](x: Self) {
       
-      inline def setJobId(value: typings.bull.mod.JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: js.Date | String | Double): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setEvery(value: Double): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
+      
+      inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
       
       inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+      
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      
+      inline def setTz(value: String): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
+      
+      inline def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
+    }
+  }
+  
+  trait Force extends StObject {
+    
+    var force: Boolean
+  }
+  object Force {
+    
+    inline def apply(force: Boolean): Force = {
+      val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Force]
+    }
+    
+    extension [Self <: Force](x: Self) {
+      
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,6 +294,86 @@ object anon {
     extension [Self <: Message](x: Self) {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Omit<bull.bull.JobOptions, 'repeat'> */
+  trait OmitJobOptionsrepeat extends StObject {
+    
+    var attempts: js.UndefOr[Double] = js.undefined
+    
+    var backoff: js.UndefOr[Double | BackoffOptions] = js.undefined
+    
+    var delay: js.UndefOr[Double] = js.undefined
+    
+    var jobId: js.UndefOr[JobId] = js.undefined
+    
+    var lifo: js.UndefOr[Boolean] = js.undefined
+    
+    var preventParsingData: js.UndefOr[Boolean] = js.undefined
+    
+    var priority: js.UndefOr[Double] = js.undefined
+    
+    var removeOnComplete: js.UndefOr[Boolean | Double | KeepJobsOptions] = js.undefined
+    
+    var removeOnFail: js.UndefOr[Boolean | Double | KeepJobsOptions] = js.undefined
+    
+    var stackTraceLimit: js.UndefOr[Double] = js.undefined
+    
+    var timeout: js.UndefOr[Double] = js.undefined
+  }
+  object OmitJobOptionsrepeat {
+    
+    inline def apply(): OmitJobOptionsrepeat = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OmitJobOptionsrepeat]
+    }
+    
+    extension [Self <: OmitJobOptionsrepeat](x: Self) {
+      
+      inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      
+      inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
+      
+      inline def setBackoff(value: Double | BackoffOptions): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
+      
+      inline def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
+      
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      
+      inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+      
+      inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+      
+      inline def setLifo(value: Boolean): Self = StObject.set(x, "lifo", value.asInstanceOf[js.Any])
+      
+      inline def setLifoUndefined: Self = StObject.set(x, "lifo", js.undefined)
+      
+      inline def setPreventParsingData(value: Boolean): Self = StObject.set(x, "preventParsingData", value.asInstanceOf[js.Any])
+      
+      inline def setPreventParsingDataUndefined: Self = StObject.set(x, "preventParsingData", js.undefined)
+      
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      
+      inline def setRemoveOnComplete(value: Boolean | Double | KeepJobsOptions): Self = StObject.set(x, "removeOnComplete", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveOnCompleteUndefined: Self = StObject.set(x, "removeOnComplete", js.undefined)
+      
+      inline def setRemoveOnFail(value: Boolean | Double | KeepJobsOptions): Self = StObject.set(x, "removeOnFail", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveOnFailUndefined: Self = StObject.set(x, "removeOnFail", js.undefined)
+      
+      inline def setStackTraceLimit(value: Double): Self = StObject.set(x, "stackTraceLimit", value.asInstanceOf[js.Any])
+      
+      inline def setStackTraceLimitUndefined: Self = StObject.set(x, "stackTraceLimit", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

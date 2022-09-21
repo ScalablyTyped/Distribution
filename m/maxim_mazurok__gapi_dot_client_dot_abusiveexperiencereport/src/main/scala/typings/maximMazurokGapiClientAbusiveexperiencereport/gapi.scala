@@ -112,7 +112,7 @@ object gapi {
           
           inline def setViolatingSitesUndefined: Self = StObject.set(x, "violatingSites", js.undefined)
           
-          inline def setViolatingSitesVarargs(value: SiteSummaryResponse*): Self = StObject.set(x, "violatingSites", js.Array(value :_*))
+          inline def setViolatingSitesVarargs(value: SiteSummaryResponse*): Self = StObject.set(x, "violatingSites", js.Array(value*))
         }
       }
     }

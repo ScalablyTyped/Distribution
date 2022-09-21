@@ -31,7 +31,7 @@ object anon {
       
       inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      inline def setMonthVarargs(value: String*): Self = StObject.set(x, "month", js.Array(value :_*))
+      inline def setMonthVarargs(value: String*): Self = StObject.set(x, "month", js.Array(value*))
       
       inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       

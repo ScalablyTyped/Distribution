@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A bundle of managed properties.
-  */
 trait SchemaManagedPropertyBundle extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaManagedPropertyBundle {
     
     inline def setManagedPropertyUndefined: Self = StObject.set(x, "managedProperty", js.undefined)
     
-    inline def setManagedPropertyVarargs(value: SchemaManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value :_*))
+    inline def setManagedPropertyVarargs(value: SchemaManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value*))
   }
 }

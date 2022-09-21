@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object httpContentMod {
   
-  @JSImport("inversify-express-utils/dts/content/httpContent", "HttpContent")
+  @JSImport("inversify-express-utils/lib/content/httpContent", "HttpContent")
   @js.native
   abstract class HttpContent () extends StObject {
     
-    /* private */ var _headers: js.Any = js.native
+    /* private */ var _headers: Any = js.native
     
-    val headers: OutgoingHttpHeaders = js.native
+    def headers: OutgoingHttpHeaders = js.native
     
     def readAsStringAsync(): js.Promise[String] = js.native
   }

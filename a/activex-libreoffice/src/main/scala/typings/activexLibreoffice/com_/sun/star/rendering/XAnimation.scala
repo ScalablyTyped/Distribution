@@ -57,7 +57,7 @@ object XAnimation {
     AnimationAttributes: AnimationAttributes,
     acquire: () => Unit,
     getAnimationAttributes: () => AnimationAttributes,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     render: (XCanvas, ViewState, Double) => Unit
   ): XAnimation = {

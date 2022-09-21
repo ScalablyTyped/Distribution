@@ -29,7 +29,7 @@ object DescribeEffectivePatchesForPatchBaselineResult {
     
     inline def setEffectivePatchesUndefined: Self = StObject.set(x, "EffectivePatches", js.undefined)
     
-    inline def setEffectivePatchesVarargs(value: EffectivePatch*): Self = StObject.set(x, "EffectivePatches", js.Array(value :_*))
+    inline def setEffectivePatchesVarargs(value: EffectivePatch*): Self = StObject.set(x, "EffectivePatches", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

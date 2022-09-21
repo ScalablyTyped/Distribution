@@ -11,14 +11,11 @@ Returns true if the given number is odd, and is an integer that does not exceed 
 | Full name          | is-odd |
 | Keywords           | array, count, even, filter, integer, is, math, numeric, odd, string |
 | # releases         | 1 |
-| # dependents       | 33 |
-| # downloads        | 26300618 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1795836.3333333333 |
+| # stars            | 223.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/is-odd)
-- [Bugs](https://github.com/jonschlinkert/is-odd/issues)
-- [Repository](https://github.com/jonschlinkert/is-odd)
 - [Npm](https://www.npmjs.com/package/is-odd)
     
 

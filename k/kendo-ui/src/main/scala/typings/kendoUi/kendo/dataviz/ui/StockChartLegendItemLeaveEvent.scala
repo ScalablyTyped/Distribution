@@ -8,11 +8,11 @@ trait StockChartLegendItemLeaveEvent
   extends StObject
      with StockChartEvent {
   
-  var element: js.UndefOr[js.Any] = js.undefined
+  var element: js.UndefOr[Any] = js.undefined
   
   var pointIndex: js.UndefOr[Double] = js.undefined
   
-  var series: js.UndefOr[js.Any] = js.undefined
+  var series: js.UndefOr[Any] = js.undefined
   
   var seriesIndex: js.UndefOr[Double] = js.undefined
   
@@ -27,7 +27,7 @@ object StockChartLegendItemLeaveEvent {
   
   extension [Self <: StockChartLegendItemLeaveEvent](x: Self) {
     
-    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
@@ -35,7 +35,7 @@ object StockChartLegendItemLeaveEvent {
     
     inline def setPointIndexUndefined: Self = StObject.set(x, "pointIndex", js.undefined)
     
-    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     inline def setSeriesIndex(value: Double): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
     

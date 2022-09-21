@@ -13,7 +13,7 @@ object certMod {
   
   @JSImport("nodegit/cert", "Cert")
   @js.native
-  class Cert () extends StObject {
+  open class Cert () extends StObject {
     
     var certType: TYPE = js.native
   }

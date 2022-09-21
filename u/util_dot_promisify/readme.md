@@ -10,15 +10,12 @@ Polyfill/shim for util.promisify in node versions < v8
 | ------------------ | :-------------: |
 | Full name          | util.promisify |
 | Keywords           | promisify, promise, util, polyfill, shim, util.promisify |
-| # releases         | 4 |
-| # dependents       | 316 |
-| # downloads        | 619333153 |
-| # stars            | 4 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7.384936666666667E7 |
+| # stars            | 118.0 |
 
 ## Links
-- [Homepage](https://github.com/ljharb/util.promisify#readme)
-- [Bugs](https://github.com/ljharb/util.promisify/issues)
-- [Repository](https://github.com/ljharb/util.promisify)
 - [Npm](https://www.npmjs.com/package/util.promisify)
     
 

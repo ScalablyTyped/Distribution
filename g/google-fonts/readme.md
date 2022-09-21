@@ -10,10 +10,10 @@ A small helper library for embedding Google Fonts on your page.
 | ------------------ | :-------------: |
 | Full name          | google-fonts |
 | Keywords           | google, fonts, webfonts, inline, embed, append |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 17249 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2197.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/google-fonts#readme)

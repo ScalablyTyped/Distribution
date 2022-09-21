@@ -8,6 +8,6 @@ object searchMod {
   
   @JSImport("carbon-components-react/lib/components/Search", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.searchSearchMod.default
 }

@@ -13,7 +13,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.CellEditBegin")
   @js.native
-  class CellEditBegin protected ()
+  open class CellEditBegin protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.CellEditBegin {
     def this(recordKey: Double, fieldKey: String) = this()
@@ -27,7 +27,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.CellEditCompleted")
   @js.native
-  class CellEditCompleted protected ()
+  open class CellEditCompleted protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.CellEditCompleted {
     def this(recordKey: Double, fieldKey: String, changeKey: IChangeKey, bCancelled: Boolean) = this()
@@ -47,7 +47,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.CellFocusChanged")
   @js.native
-  class CellFocusChanged protected ()
+  open class CellFocusChanged protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.CellFocusChanged {
     def this(newRecordKey: Double, newFieldKey: String, oldRecordKey: Double, oldFieldKey: String) = this()
@@ -67,7 +67,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.Click")
   @js.native
-  class Click protected ()
+  open class Click protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.Click {
     def this(
@@ -92,7 +92,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.GridErrorStateChanged")
   @js.native
-  class GridErrorStateChanged protected ()
+  open class GridErrorStateChanged protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.GridErrorStateChanged {
     def this(bAnyErrors: Boolean) = this()
@@ -103,7 +103,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.OnBeginRedoDataUpdateChange")
   @js.native
-  class OnBeginRedoDataUpdateChange protected ()
+  open class OnBeginRedoDataUpdateChange protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.OnBeginRedoDataUpdateChange {
     def this(changeKey: IChangeKey) = this()
@@ -114,7 +114,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.OnBeginUndoDataUpdateChange")
   @js.native
-  class OnBeginUndoDataUpdateChange protected ()
+  open class OnBeginUndoDataUpdateChange protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.OnBeginUndoDataUpdateChange {
     def this(changeKey: IChangeKey) = this()
@@ -125,7 +125,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.OnCellErrorStateChanged")
   @js.native
-  class OnCellErrorStateChanged protected ()
+  open class OnCellErrorStateChanged protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.OnCellErrorStateChanged {
     def this(
@@ -158,7 +158,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.OnEndRenameColumn")
   @js.native
-  class OnEndRenameColumn protected ()
+  open class OnEndRenameColumn protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.OnEndRenameColumn {
     def this(columnKey: String, originalColumnTitle: String, newColumnTitle: String) = this()
@@ -175,7 +175,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.OnEntryRecordAdded")
   @js.native
-  class OnEntryRecordAdded protected ()
+  open class OnEntryRecordAdded protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.OnEntryRecordAdded {
     def this(recordKey: Double) = this()
@@ -186,7 +186,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.OnEntryRecordCommitted")
   @js.native
-  class OnEntryRecordCommitted protected ()
+  open class OnEntryRecordCommitted protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.OnEntryRecordCommitted {
     def this(origRecKey: String, recordKey: Double, changeKey: IChangeKey) = this()
@@ -203,7 +203,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.OnRecordsReordered")
   @js.native
-  class OnRecordsReordered protected ()
+  open class OnRecordsReordered protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.OnRecordsReordered {
     def this(recordKeys: js.Array[String], changeKey: IChangeKey) = this()
@@ -217,7 +217,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.OnRowErrorStateChanged")
   @js.native
-  class OnRowErrorStateChanged protected ()
+  open class OnRowErrorStateChanged protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.OnRowErrorStateChanged {
     def this(
@@ -250,7 +250,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.OnRowEscape")
   @js.native
-  class OnRowEscape protected ()
+  open class OnRowEscape protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.OnRowEscape {
     def this(recordKey: Double) = this()
@@ -261,7 +261,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.PendingChangeKeyInitiallyComplete")
   @js.native
-  class PendingChangeKeyInitiallyComplete protected ()
+  open class PendingChangeKeyInitiallyComplete protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.PendingChangeKeyInitiallyComplete {
     def this(changeKey: IChangeKey) = this()
@@ -272,7 +272,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.PropertyChanged")
   @js.native
-  class PropertyChanged protected ()
+  open class PropertyChanged protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.PropertyChanged {
     def this(
@@ -309,7 +309,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.RecordChecked")
   @js.native
-  class RecordChecked protected ()
+  open class RecordChecked protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.RecordChecked {
     def this(recordKeySet: Set, bChecked: Boolean) = this()
@@ -323,7 +323,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.RecordDeleted")
   @js.native
-  class RecordDeleted protected ()
+  open class RecordDeleted protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.RecordDeleted {
     def this(recordKey: Double, recordIdx: Double, changeKey: IChangeKey) = this()
@@ -340,7 +340,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.RecordInserted")
   @js.native
-  class RecordInserted protected ()
+  open class RecordInserted protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.RecordInserted {
     def this(recordKey: Double, recordIdx: Double, afterRecordKey: Double, changeKey: IChangeKey) = this()
@@ -360,7 +360,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.RowFocusChanged")
   @js.native
-  class RowFocusChanged protected ()
+  open class RowFocusChanged protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.RowFocusChanged {
     def this(newRecordKey: Double, oldRecordKey: Double) = this()
@@ -374,7 +374,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.SingleCellClick")
   @js.native
-  class SingleCellClick protected ()
+  open class SingleCellClick protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.SingleCellClick {
     def this(eventInfo: DomEvent, recordKey: Double, fieldKey: String) = this()
@@ -391,7 +391,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.SingleCellKeyDown")
   @js.native
-  class SingleCellKeyDown protected ()
+  open class SingleCellKeyDown protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.SingleCellKeyDown {
     def this(eventInfo: DomEvent, recordKey: Double, fieldKey: String) = this()
@@ -408,7 +408,7 @@ object EventArgs {
   
   @JSGlobal("SP.JsGrid.EventArgs.VacateChange")
   @js.native
-  class VacateChange protected ()
+  open class VacateChange protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.EventArgs.VacateChange {
     def this(changeKey: IChangeKey) = this()

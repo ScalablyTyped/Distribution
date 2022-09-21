@@ -8,5 +8,5 @@ object generateDataKeyOutputMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/GenerateDataKeyOutput", "GenerateDataKeyOutput")
   @js.native
-  val GenerateDataKeyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GenerateDataKeyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

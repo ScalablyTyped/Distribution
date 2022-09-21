@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Collapse")
 @js.native
-class Collapse ()
+open class Collapse ()
   extends typings.reactBootstrap.mod.Collapse

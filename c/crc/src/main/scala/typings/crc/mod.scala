@@ -1,63 +1,117 @@
 package typings.crc
 
-import typings.node.Buffer
+import typings.crc.typesMod.CRCModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("crc", JSImport.Namespace)
+  object default {
+    
+    @JSImport("crc", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("crc", "default.crc1")
+    @js.native
+    def crc1: CRCModule = js.native
+    
+    @JSImport("crc", "default.crc16")
+    @js.native
+    def crc16: CRCModule = js.native
+    inline def crc16_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc16")(x.asInstanceOf[js.Any])
+    
+    @JSImport("crc", "default.crc16ccitt")
+    @js.native
+    def crc16ccitt: CRCModule = js.native
+    inline def crc16ccitt_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc16ccitt")(x.asInstanceOf[js.Any])
+    
+    @JSImport("crc", "default.crc16kermit")
+    @js.native
+    def crc16kermit: CRCModule = js.native
+    inline def crc16kermit_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc16kermit")(x.asInstanceOf[js.Any])
+    
+    @JSImport("crc", "default.crc16modbus")
+    @js.native
+    def crc16modbus: CRCModule = js.native
+    inline def crc16modbus_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc16modbus")(x.asInstanceOf[js.Any])
+    
+    @JSImport("crc", "default.crc16xmodem")
+    @js.native
+    def crc16xmodem: CRCModule = js.native
+    inline def crc16xmodem_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc16xmodem")(x.asInstanceOf[js.Any])
+    
+    inline def crc1_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc1")(x.asInstanceOf[js.Any])
+    
+    @JSImport("crc", "default.crc24")
+    @js.native
+    def crc24: CRCModule = js.native
+    inline def crc24_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc24")(x.asInstanceOf[js.Any])
+    
+    @JSImport("crc", "default.crc32")
+    @js.native
+    def crc32: CRCModule = js.native
+    inline def crc32_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc32")(x.asInstanceOf[js.Any])
+    
+    @JSImport("crc", "default.crc8")
+    @js.native
+    def crc8: CRCModule = js.native
+    
+    @JSImport("crc", "default.crc81wire")
+    @js.native
+    def crc81wire: CRCModule = js.native
+    inline def crc81wire_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc81wire")(x.asInstanceOf[js.Any])
+    
+    inline def crc8_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc8")(x.asInstanceOf[js.Any])
+    
+    @JSImport("crc", "default.crcjam")
+    @js.native
+    def crcjam: CRCModule = js.native
+    inline def crcjam_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crcjam")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("crc", "crc1")
   @js.native
-  val ^ : js.Any = js.native
+  val crc1: CRCModule = js.native
   
-  inline def crc1(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc1")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc1(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc1")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc1(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc1")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc1(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc1")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crc16")
+  @js.native
+  val crc16: CRCModule = js.native
   
-  inline def crc16(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc16(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crc16ccitt")
+  @js.native
+  val crc16ccitt: CRCModule = js.native
   
-  inline def crc16ccitt(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16ccitt")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16ccitt(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16ccitt")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc16ccitt(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16ccitt")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16ccitt(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16ccitt")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crc16kermit")
+  @js.native
+  val crc16kermit: CRCModule = js.native
   
-  inline def crc16kermit(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16kermit")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16kermit(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16kermit")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc16kermit(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16kermit")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16kermit(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16kermit")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crc16modbus")
+  @js.native
+  val crc16modbus: CRCModule = js.native
   
-  inline def crc16modbus(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16modbus")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16modbus(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16modbus")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc16modbus(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16modbus")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16modbus(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16modbus")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crc16xmodem")
+  @js.native
+  val crc16xmodem: CRCModule = js.native
   
-  inline def crc16xmodem(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16xmodem")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16xmodem(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16xmodem")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc16xmodem(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc16xmodem")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc16xmodem(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc16xmodem")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crc24")
+  @js.native
+  val crc24: CRCModule = js.native
   
-  inline def crc24(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc24")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc24(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc24")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc24(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc24")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc24(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc24")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crc32")
+  @js.native
+  val crc32: CRCModule = js.native
   
-  inline def crc32(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc32(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc32(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc32(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crc8")
+  @js.native
+  val crc8: CRCModule = js.native
   
-  inline def crc8(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc8")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc8(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc8")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc8(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc8")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc8(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc8")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crc81wire")
+  @js.native
+  val crc81wire: CRCModule = js.native
   
-  inline def crc81wire(buf: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc81wire")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc81wire(buf: String, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc81wire")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def crc81wire(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc81wire")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def crc81wire(buf: Buffer, previous: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("crc81wire")(buf.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @JSImport("crc", "crcjam")
+  @js.native
+  val crcjam: CRCModule = js.native
 }

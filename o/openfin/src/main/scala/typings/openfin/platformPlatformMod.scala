@@ -23,20 +23,20 @@ object platformPlatformMod {
   
   @JSImport("openfin/_v2/api/platform/platform", JSImport.Default)
   @js.native
-  class default protected () extends PlatformModule {
+  open class default protected () extends PlatformModule {
     def this(wire: typings.openfin.transportMod.default, channel: Channel) = this()
   }
   
   @JSImport("openfin/_v2/api/platform/platform", "Platform")
   @js.native
-  class Platform protected () extends EmitterBase[PlatformEvents] {
+  open class Platform protected () extends EmitterBase[PlatformEvents] {
     def this(identity: Identity, channel: Channel) = this()
     
     var Application: typings.openfin.applicationMod.Application = js.native
     
     var Layout: typings.openfin.layoutMod.default = js.native
     
-    /* private */ var _channel: js.Any = js.native
+    /* private */ var _channel: Any = js.native
     
     def applySnapshot(requestedSnapshot: String): js.Promise[Platform] = js.native
     def applySnapshot(requestedSnapshot: String, options: ApplySnapshotOptions): js.Promise[Platform] = js.native
@@ -102,8 +102,8 @@ object platformPlatformMod {
       * @tutorial Platform.getWindowContext
       * @experimental
       */
-    def getWindowContext(): js.Promise[js.Any] = js.native
-    def getWindowContext(target: Identity): js.Promise[js.Any] = js.native
+    def getWindowContext(): js.Promise[Any] = js.native
+    def getWindowContext(target: Identity): js.Promise[Any] = js.native
     
     /**
       * Retrieves a manifest by url and launches a legacy application manifest or snapshot into the platform.  Returns a promise that
@@ -146,8 +146,8 @@ object platformPlatformMod {
       * @experimental
       */
     def setWindowContext(): js.Promise[Unit] = js.native
-    def setWindowContext(context: js.Any): js.Promise[Unit] = js.native
-    def setWindowContext(context: js.Any, target: Identity): js.Promise[Unit] = js.native
+    def setWindowContext(context: Any): js.Promise[Unit] = js.native
+    def setWindowContext(context: Any, target: Identity): js.Promise[Unit] = js.native
     def setWindowContext(context: Unit, target: Identity): js.Promise[Unit] = js.native
   }
   
@@ -156,9 +156,9 @@ object platformPlatformMod {
     
     var Layout: typings.openfin.layoutMod.default = js.native
     
-    /* private */ var _channel: js.Any = js.native
+    /* private */ var _channel: Any = js.native
     
-    /* private */ var _initializer: js.Any = js.native
+    /* private */ var _initializer: Any = js.native
     
     /**
       * Asynchronously returns a Platform object that represents the current platform.
@@ -185,8 +185,8 @@ object platformPlatformMod {
       * @experimental
       * @static
       */
-    def init(): js.Promise[js.Any] = js.native
-    def init(options: InitPlatformOptions): js.Promise[js.Any] = js.native
+    def init(): js.Promise[Any] = js.native
+    def init(options: InitPlatformOptions): js.Promise[Any] = js.native
     
     /**
       * Creates and starts a Platform and returns a wrapped and running Platform instance. The wrapped Platform methods can

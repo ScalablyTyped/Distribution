@@ -18,20 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tagResourceCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/TagResourceCommand", "TagResourceCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/TagResourceCommand", "TagResourceCommand")
   @js.native
-  class TagResourceCommand protected ()
-    extends Command[
+  open class TagResourceCommand protected () extends Command[
           TagResourceCommandInput, 
           TagResourceCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: TagResourceCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -42,7 +44,7 @@ object tagResourceCommandMod {
       options: HttpHandlerOptions
     ): Handler[TagResourceCommandInput, TagResourceCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type TagResourceCommandInput = TagResourceInput

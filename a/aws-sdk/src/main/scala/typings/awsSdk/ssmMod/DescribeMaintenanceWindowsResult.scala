@@ -33,6 +33,6 @@ object DescribeMaintenanceWindowsResult {
     
     inline def setWindowIdentitiesUndefined: Self = StObject.set(x, "WindowIdentities", js.undefined)
     
-    inline def setWindowIdentitiesVarargs(value: MaintenanceWindowIdentity*): Self = StObject.set(x, "WindowIdentities", js.Array(value :_*))
+    inline def setWindowIdentitiesVarargs(value: MaintenanceWindowIdentity*): Self = StObject.set(x, "WindowIdentities", js.Array(value*))
   }
 }

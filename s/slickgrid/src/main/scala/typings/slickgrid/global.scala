@@ -33,7 +33,7 @@ object global {
     
     @JSGlobal("Slick.AutoTooltips")
     @js.native
-    class AutoTooltips ()
+    open class AutoTooltips ()
       extends StObject
          with typings.slickgrid.Slick.Plugin[SlickData] {
       def this(option: SlickGridAutoTooltipsOption) = this()
@@ -47,7 +47,7 @@ object global {
     
     @JSGlobal("Slick.CheckboxSelectColumn")
     @js.native
-    class CheckboxSelectColumn[T /* <: SlickData */] ()
+    open class CheckboxSelectColumn[T /* <: SlickData */] ()
       extends StObject
          with typings.slickgrid.Slick.CheckboxSelectColumn[T] {
       def this(options: SlickGridCheckBoxSelectColumnOptions) = this()
@@ -66,7 +66,7 @@ object global {
       
       @JSGlobal("Slick.Controls.ColumnPicker")
       @js.native
-      class ColumnPicker[T /* <: SlickData */] protected ()
+      open class ColumnPicker[T /* <: SlickData */] protected ()
         extends StObject
            with typings.slickgrid.Slick.Controls.ColumnPicker[T] {
         def this(
@@ -89,7 +89,7 @@ object global {
         
         @JSGlobal("Slick.Data.Aggregators.Aggregator")
         @js.native
-        class Aggregator[T /* <: SlickData */] ()
+        open class Aggregator[T /* <: SlickData */] ()
           extends StObject
              with typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
           
@@ -108,7 +108,7 @@ object global {
         
         @JSGlobal("Slick.Data.Aggregators.Avg")
         @js.native
-        class Avg[T] ()
+        open class Avg[T /* <: SlickData */] ()
           extends StObject
              with typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
           
@@ -127,7 +127,7 @@ object global {
         
         @JSGlobal("Slick.Data.Aggregators.Max")
         @js.native
-        class Max[T] ()
+        open class Max[T /* <: SlickData */] ()
           extends StObject
              with typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
           
@@ -146,7 +146,7 @@ object global {
         
         @JSGlobal("Slick.Data.Aggregators.Min")
         @js.native
-        class Min[T] ()
+        open class Min[T /* <: SlickData */] ()
           extends StObject
              with typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
           
@@ -165,7 +165,7 @@ object global {
         
         @JSGlobal("Slick.Data.Aggregators.Sum")
         @js.native
-        class Sum[T] ()
+        open class Sum[T /* <: SlickData */] ()
           extends StObject
              with typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
           
@@ -185,7 +185,7 @@ object global {
       
       @JSGlobal("Slick.Data.DataView")
       @js.native
-      class DataView[T /* <: SlickData */] ()
+      open class DataView[T /* <: SlickData */] ()
         extends StObject
            with typings.slickgrid.Slick.Data.DataView[T] {
         def this(options: DataViewOptions[T]) = this()
@@ -206,14 +206,14 @@ object global {
       
       @JSGlobal("Slick.Data.GroupItemMetadataProvider")
       @js.native
-      class GroupItemMetadataProvider[T /* <: SlickData */] ()
+      open class GroupItemMetadataProvider[T /* <: SlickData */] ()
         extends StObject
            with typings.slickgrid.Slick.Data.GroupItemMetadataProvider[T]
     }
     
     @JSGlobal("Slick.EditorLock")
     @js.native
-    class EditorLock[T /* <: SlickData */] ()
+    open class EditorLock[T /* <: SlickData */] ()
       extends StObject
          with typings.slickgrid.Slick.EditorLock[T] {
       
@@ -271,7 +271,7 @@ object global {
       
       @JSGlobal("Slick.Editors.Checkbox")
       @js.native
-      class Checkbox[T /* <: SlickData */] protected ()
+      open class Checkbox[T /* <: SlickData */] protected ()
         extends StObject
            with typings.slickgrid.Slick.Editors.Checkbox[T] {
         def this(args: EditorOptions[T]) = this()
@@ -295,7 +295,7 @@ object global {
         override def loadValue(item: T): Unit = js.native
         
         /* CompleteClass */
-        override def serializeValue(): js.Any = js.native
+        override def serializeValue(): Any = js.native
         
         /* CompleteClass */
         override def validate(): ValidateResults = js.native
@@ -303,7 +303,7 @@ object global {
       
       @JSGlobal("Slick.Editors.Date")
       @js.native
-      class Date[T /* <: SlickData */] protected ()
+      open class Date[T /* <: SlickData */] protected ()
         extends StObject
            with typings.slickgrid.Slick.Editors.Date[T] {
         def this(args: EditorOptions[T]) = this()
@@ -333,7 +333,7 @@ object global {
         override def position(position: Position): Unit = js.native
         
         /* CompleteClass */
-        override def serializeValue(): js.Any = js.native
+        override def serializeValue(): Any = js.native
         
         /* CompleteClass */
         override def show(): Unit = js.native
@@ -344,7 +344,7 @@ object global {
       
       @JSGlobal("Slick.Editors.Editor")
       @js.native
-      class Editor[T /* <: SlickData */] protected ()
+      open class Editor[T /* <: SlickData */] protected ()
         extends StObject
            with typings.slickgrid.Slick.Editors.Editor[T] {
         def this(args: EditorOptions[T]) = this()
@@ -368,7 +368,7 @@ object global {
         override def loadValue(item: T): Unit = js.native
         
         /* CompleteClass */
-        override def serializeValue(): js.Any = js.native
+        override def serializeValue(): Any = js.native
         
         /* CompleteClass */
         override def validate(): ValidateResults = js.native
@@ -376,7 +376,7 @@ object global {
       
       @JSGlobal("Slick.Editors.Integer")
       @js.native
-      class Integer[T /* <: SlickData */] protected ()
+      open class Integer[T /* <: SlickData */] protected ()
         extends StObject
            with typings.slickgrid.Slick.Editors.Integer[T] {
         def this(args: EditorOptions[T]) = this()
@@ -400,7 +400,7 @@ object global {
         override def loadValue(item: T): Unit = js.native
         
         /* CompleteClass */
-        override def serializeValue(): js.Any = js.native
+        override def serializeValue(): Any = js.native
         
         /* CompleteClass */
         override def validate(): ValidateResults = js.native
@@ -408,7 +408,7 @@ object global {
       
       @JSGlobal("Slick.Editors.LongText")
       @js.native
-      class LongText[T /* <: SlickData */] protected ()
+      open class LongText[T /* <: SlickData */] protected ()
         extends StObject
            with typings.slickgrid.Slick.Editors.LongText[T] {
         def this(args: EditorOptions[T]) = this()
@@ -447,7 +447,7 @@ object global {
         override def save(): Unit = js.native
         
         /* CompleteClass */
-        override def serializeValue(): js.Any = js.native
+        override def serializeValue(): Any = js.native
         
         /* CompleteClass */
         override def show(): Unit = js.native
@@ -458,7 +458,7 @@ object global {
       
       @JSGlobal("Slick.Editors.PercentComplete")
       @js.native
-      class PercentComplete[T /* <: SlickData */] protected ()
+      open class PercentComplete[T /* <: SlickData */] protected ()
         extends StObject
            with typings.slickgrid.Slick.Editors.PercentComplete[T] {
         def this(args: EditorOptions[T]) = this()
@@ -482,7 +482,7 @@ object global {
         override def loadValue(item: T): Unit = js.native
         
         /* CompleteClass */
-        override def serializeValue(): js.Any = js.native
+        override def serializeValue(): Any = js.native
         
         /* CompleteClass */
         override def validate(): ValidateResults = js.native
@@ -490,7 +490,7 @@ object global {
       
       @JSGlobal("Slick.Editors.Text")
       @js.native
-      class Text[T /* <: SlickData */] protected ()
+      open class Text[T /* <: SlickData */] protected ()
         extends StObject
            with typings.slickgrid.Slick.Editors.Text[T] {
         def this(args: EditorOptions[T]) = this()
@@ -517,7 +517,7 @@ object global {
         override def loadValue(item: T): Unit = js.native
         
         /* CompleteClass */
-        override def serializeValue(): js.Any = js.native
+        override def serializeValue(): Any = js.native
         
         /* CompleteClass */
         override def setValue(`val`: String): Unit = js.native
@@ -528,7 +528,7 @@ object global {
       
       @JSGlobal("Slick.Editors.YesNoSelect")
       @js.native
-      class YesNoSelect[T /* <: SlickData */] protected ()
+      open class YesNoSelect[T /* <: SlickData */] protected ()
         extends StObject
            with typings.slickgrid.Slick.Editors.YesNoSelect[T] {
         def this(args: EditorOptions[T]) = this()
@@ -552,7 +552,7 @@ object global {
         override def loadValue(item: T): Unit = js.native
         
         /* CompleteClass */
-        override def serializeValue(): js.Any = js.native
+        override def serializeValue(): Any = js.native
         
         /* CompleteClass */
         override def validate(): ValidateResults = js.native
@@ -561,13 +561,13 @@ object global {
     
     @JSGlobal("Slick.Event")
     @js.native
-    class Event[T] ()
+    open class Event[T] ()
       extends StObject
          with typings.slickgrid.Slick.Event[T]
     
     @JSGlobal("Slick.EventData")
     @js.native
-    class EventData ()
+    open class EventData ()
       extends StObject
          with typings.slickgrid.Slick.EventData {
       
@@ -604,7 +604,7 @@ object global {
     
     @JSGlobal("Slick.EventHandler")
     @js.native
-    class EventHandler[T] ()
+    open class EventHandler[T] ()
       extends StObject
          with typings.slickgrid.Slick.EventHandler[T] {
       
@@ -612,16 +612,16 @@ object global {
       override def subscribe(
         event: typings.slickgrid.Slick.Event[T],
         handler: js.Function2[/* e */ typings.slickgrid.Slick.EventData, T, Unit]
-      ): typings.slickgrid.Slick.EventHandler[js.Any] = js.native
+      ): typings.slickgrid.Slick.EventHandler[Any] = js.native
       
       /* CompleteClass */
       override def unsubscribe(
         event: typings.slickgrid.Slick.Event[T],
         handler: js.Function2[/* e */ typings.slickgrid.Slick.EventData, T, Unit]
-      ): typings.slickgrid.Slick.EventHandler[js.Any] = js.native
+      ): typings.slickgrid.Slick.EventHandler[Any] = js.native
       
       /* CompleteClass */
-      override def unsubscribeAll(): typings.slickgrid.Slick.EventHandler[js.Any] = js.native
+      override def unsubscribeAll(): typings.slickgrid.Slick.EventHandler[Any] = js.native
     }
     
     object Formatters {
@@ -659,7 +659,7 @@ object global {
     
     @JSGlobal("Slick.Grid")
     @js.native
-    class Grid[T /* <: SlickData */] protected ()
+    open class Grid[T /* <: SlickData */] protected ()
       extends StObject
          with typings.slickgrid.Slick.Grid[T] {
       /**
@@ -694,7 +694,7 @@ object global {
     
     @JSGlobal("Slick.Group")
     @js.native
-    class Group[T /* <: SlickData */] ()
+    open class Group[T /* <: SlickData */] ()
       extends StObject
          with typings.slickgrid.Slick.Group[T] {
       
@@ -731,7 +731,7 @@ object global {
         * @type {Object}
         */
       /* CompleteClass */
-      var groupingKey: js.Any = js.native
+      var groupingKey: Any = js.native
       
       /**
         * Sub-groups that are part of the group.
@@ -779,12 +779,12 @@ object global {
         * @type {Object}
         */
       /* CompleteClass */
-      var value: js.Any = js.native
+      var value: Any = js.native
     }
     
     @JSGlobal("Slick.GroupTotals")
     @js.native
-    class GroupTotals[T] ()
+    open class GroupTotals[T /* <: SlickData */] ()
       extends StObject
          with typings.slickgrid.Slick.GroupTotals[T] {
       
@@ -799,13 +799,13 @@ object global {
     
     @JSGlobal("Slick.NonDataRow")
     @js.native
-    class NonDataRow ()
+    open class NonDataRow ()
       extends StObject
          with typings.slickgrid.Slick.NonDataRow
     
     @JSGlobal("Slick.Plugin")
     @js.native
-    class Plugin[T /* <: SlickData */] ()
+    open class Plugin[T /* <: SlickData */] ()
       extends StObject
          with typings.slickgrid.Slick.Plugin[T] {
       def this(options: PluginOptions) = this()
@@ -821,7 +821,7 @@ object global {
       
       @JSGlobal("Slick.Plugins.HeaderButtons")
       @js.native
-      class HeaderButtons[T /* <: SlickData */] ()
+      open class HeaderButtons[T /* <: SlickData */] ()
         extends StObject
            with typings.slickgrid.Slick.Plugins.HeaderButtons[T] {
         
@@ -838,7 +838,7 @@ object global {
     
     @JSGlobal("Slick.Range")
     @js.native
-    class Range protected ()
+    open class Range protected ()
       extends StObject
          with typings.slickgrid.Slick.Range {
       /**
@@ -911,7 +911,7 @@ object global {
     
     @JSGlobal("Slick.RowSelectionModel")
     @js.native
-    class RowSelectionModel[T /* <: SlickData */, E] ()
+    open class RowSelectionModel[T /* <: SlickData */, E] ()
       extends StObject
          with typings.slickgrid.Slick.RowSelectionModel[T, E] {
       def this(options: SelectActiveRow) = this()
@@ -946,7 +946,7 @@ object global {
     
     @JSGlobal("Slick.SelectionModel")
     @js.native
-    class SelectionModel[T /* <: SlickData */, E] ()
+    open class SelectionModel[T /* <: SlickData */, E] ()
       extends StObject
          with typings.slickgrid.Slick.SelectionModel[T, E] {
       

@@ -10,10 +10,10 @@ A wrapper for the fantastic whois module that parses whois data into consistent 
 | ------------------ | :-------------: |
 | Full name          | whois-parsed |
 | Keywords           | whois |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 2648 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 244.66666666666666 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/moneals/whois-parsed#readme)

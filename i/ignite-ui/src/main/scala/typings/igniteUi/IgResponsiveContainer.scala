@@ -10,7 +10,7 @@ trait IgResponsiveContainer
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * The time between two resize checks in milliseconds.

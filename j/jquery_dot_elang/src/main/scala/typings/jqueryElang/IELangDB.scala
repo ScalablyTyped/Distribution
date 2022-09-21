@@ -19,7 +19,7 @@ trait IELangDB extends StObject {
   def _onSelect(id: String): Unit = js.native
   def _onSelect(id: String, callback: js.Function): Unit = js.native
   
-  var cache: js.UndefOr[js.Any] = js.native
+  var cache: js.UndefOr[Any] = js.native
   
   var delegates: js.UndefOr[IELangDBDelegates] = js.native
   

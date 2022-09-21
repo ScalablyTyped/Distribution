@@ -27,7 +27,7 @@ object Generation {
     
     inline def setGames(value: js.Array[Translations]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
-    inline def setGamesVarargs(value: Translations*): Self = StObject.set(x, "games", js.Array(value :_*))
+    inline def setGamesVarargs(value: Translations*): Self = StObject.set(x, "games", js.Array(value*))
     
     inline def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     

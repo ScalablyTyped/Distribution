@@ -8,5 +8,5 @@ object putBucketPolicyOutputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/PutBucketPolicyOutput", "PutBucketPolicyOutput")
   @js.native
-  val PutBucketPolicyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutBucketPolicyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

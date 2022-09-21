@@ -10,10 +10,10 @@ Supertest wrapper for x-headers
 | ------------------ | :-------------: |
 | Full name          | easy-xapi-supertest |
 | Keywords           | x-headers, supertest, test |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 84 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/DeadAlready/easy-xapi-supertest)

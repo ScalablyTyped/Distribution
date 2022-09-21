@@ -65,7 +65,7 @@ object PartialRangeSelectorActivecolor {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: PartialRangeSelectorButto*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: PartialRangeSelectorButto*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ trait GlyphNote
   
   def draw(): Unit = js.native
   
-  var options: js.Any = js.native
+  var options: Any = js.native
   
-  def setGlyph(glyph: js.Any): GlyphNote = js.native
+  def setGlyph(glyph: Any): GlyphNote = js.native
 }

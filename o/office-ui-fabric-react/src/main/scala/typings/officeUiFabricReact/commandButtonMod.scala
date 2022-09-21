@@ -11,7 +11,7 @@ object commandButtonMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("office-ui-fabric-react/lib/components/Button/CommandButton/CommandButton", "CommandButton")
   @js.native
-  class CommandButton () extends ActionButton
+  open class CommandButton () extends ActionButton
   @JSImport("office-ui-fabric-react/lib/components/Button/CommandButton/CommandButton", "CommandButton")
   @js.native
   val CommandButton: Instantiable0[ActionButton] = js.native

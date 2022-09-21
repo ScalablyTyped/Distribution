@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteServiceQuotaIncreaseRequestFromTemplateRequest extends StObject {
   
   /**
-    * Specifies the AWS Region for the quota that you want to delete.
+    * The AWS Region.
     */
   var AwsRegion: typings.awsSdk.servicequotasMod.AwsRegion
   
   /**
-    * Specifies the code for the quota that you want to delete.
+    * The quota identifier.
     */
   var QuotaCode: typings.awsSdk.servicequotasMod.QuotaCode
   
   /**
-    * Specifies the code for the service that you want to delete.
+    * The service identifier.
     */
   var ServiceCode: typings.awsSdk.servicequotasMod.ServiceCode
 }

@@ -10,28 +10,28 @@ object styleSheetMod {
   
   @JSImport("playable/dist/src/modules/ui/core/theme/style-sheet", "StyleSheet")
   @js.native
-  class StyleSheet () extends StObject {
+  open class StyleSheet () extends StObject {
     
-    /* private */ var _classNamesByModule: js.Any = js.native
+    /* private */ var _classNamesByModule: Any = js.native
     
-    /* private */ var _data: js.Any = js.native
+    /* private */ var _data: Any = js.native
     
-    /* private */ var _getModuleCSS: js.Any = js.native
+    /* private */ var _getModuleCSS: Any = js.native
     
-    /* private */ var _getRuleCSS: js.Any = js.native
+    /* private */ var _getRuleCSS: Any = js.native
     
-    /* private */ var _getRuleStyles: js.Any = js.native
+    /* private */ var _getRuleStyles: Any = js.native
     
-    /* private */ var _rulesByModule: js.Any = js.native
+    /* private */ var _rulesByModule: Any = js.native
     
-    /* private */ var _styleNode: js.Any = js.native
+    /* private */ var _styleNode: Any = js.native
     
     def attach(): Unit = js.native
     
-    def getModuleClassNames(module: js.Any): IStyles = js.native
+    def getModuleClassNames(module: Any): IStyles = js.native
     
     def registerModuleTheme(module: js.Object, rules: ICSSRules): Unit = js.native
     
-    def update(data: js.Any): Unit = js.native
+    def update(data: Any): Unit = js.native
   }
 }

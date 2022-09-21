@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "StateBuilder")
 @js.native
-class StateBuilder protected ()
+open class StateBuilder protected ()
   extends typings.uirouterCore.mod.StateBuilder {
   def this(
     matcher: typings.uirouterCore.stateMatcherMod.StateMatcher,

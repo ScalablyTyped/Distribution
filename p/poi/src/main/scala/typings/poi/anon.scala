@@ -14,6 +14,7 @@ import typings.poi.poiStrings.body
 import typings.poi.poiStrings.defer
 import typings.poi.poiStrings.head
 import typings.poi.poiStrings.manual
+import typings.poi.poiStrings.module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +59,7 @@ object anon {
     
     var favicon: js.UndefOr[`false` | String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.undefined
+    var filename: js.UndefOr[String | (js.Function1[/* entryName */ String, String])] = js.undefined
     
     var hash: js.UndefOr[Boolean] = js.undefined
     
@@ -72,24 +73,24 @@ object anon {
     
     var publicPath: js.UndefOr[String | auto] = js.undefined
     
-    var scriptLoading: js.UndefOr[blocking | defer] = js.undefined
+    var scriptLoading: js.UndefOr[blocking | defer | module] = js.undefined
     
     var showErrors: js.UndefOr[Boolean] = js.undefined
     
     var template: js.UndefOr[String] = js.undefined
     
     var templateContent: js.UndefOr[
-        `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
+        `false` | String | (js.Function1[/* templateParameters */ StringDictionary[Any], String | js.Promise[String]]) | js.Promise[String]
       ] = js.undefined
     
     var templateParameters: js.UndefOr[
         `false` | (js.Function4[
-          /* compilation */ js.Any, 
+          /* compilation */ Any, 
           /* assets */ Css, 
           /* assetTags */ BodyTags, 
           /* options */ ProcessedOptions, 
-          StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
-        ]) | StringDictionary[js.Any]
+          StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+        ]) | StringDictionary[Any]
       ] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
@@ -123,13 +124,15 @@ object anon {
       
       inline def setExcludeChunksUndefined: Self = StObject.set(x, "excludeChunks", js.undefined)
       
-      inline def setExcludeChunksVarargs(value: String*): Self = StObject.set(x, "excludeChunks", js.Array(value :_*))
+      inline def setExcludeChunksVarargs(value: String*): Self = StObject.set(x, "excludeChunks", js.Array(value*))
       
       inline def setFavicon(value: `false` | String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
       inline def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
       
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String | (js.Function1[/* entryName */ String, String])): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameFunction1(value: /* entryName */ String => String): Self = StObject.set(x, "filename", js.Any.fromFunction1(value))
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
@@ -153,7 +156,7 @@ object anon {
       
       inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      inline def setScriptLoading(value: blocking | defer): Self = StObject.set(x, "scriptLoading", value.asInstanceOf[js.Any])
+      inline def setScriptLoading(value: blocking | defer | module): Self = StObject.set(x, "scriptLoading", value.asInstanceOf[js.Any])
       
       inline def setScriptLoadingUndefined: Self = StObject.set(x, "scriptLoading", js.undefined)
       
@@ -164,25 +167,25 @@ object anon {
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
       inline def setTemplateContent(
-        value: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
+        value: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[Any], String | js.Promise[String]]) | js.Promise[String]
       ): Self = StObject.set(x, "templateContent", value.asInstanceOf[js.Any])
       
-      inline def setTemplateContentFunction1(value: /* templateParameters */ StringDictionary[js.Any] => String | js.Promise[String]): Self = StObject.set(x, "templateContent", js.Any.fromFunction1(value))
+      inline def setTemplateContentFunction1(value: /* templateParameters */ StringDictionary[Any] => String | js.Promise[String]): Self = StObject.set(x, "templateContent", js.Any.fromFunction1(value))
       
       inline def setTemplateContentUndefined: Self = StObject.set(x, "templateContent", js.undefined)
       
       inline def setTemplateParameters(
         value: `false` | (js.Function4[
-              /* compilation */ js.Any, 
+              /* compilation */ Any, 
               /* assets */ Css, 
               /* assetTags */ BodyTags, 
               /* options */ ProcessedOptions, 
-              StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
-            ]) | StringDictionary[js.Any]
+              StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+            ]) | StringDictionary[Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       inline def setTemplateParametersFunction4(
-        value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
+        value: (/* compilation */ Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       inline def setTemplateParametersUndefined: Self = StObject.set(x, "templateParameters", js.undefined)

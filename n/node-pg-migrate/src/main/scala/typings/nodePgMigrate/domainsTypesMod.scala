@@ -65,9 +65,7 @@ object domainsTypesMod {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setDefaultVarargs(
-        value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
-      ): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: Any*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
       

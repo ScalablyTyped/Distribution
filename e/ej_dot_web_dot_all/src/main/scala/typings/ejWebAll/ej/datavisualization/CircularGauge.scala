@@ -25,268 +25,268 @@ trait CircularGauge
     * @param {number} pointerIndex value for the Gauge
     * @returns {any}
     */
-  def getBackNeedleLength(scaleIndex: Double, pointerIndex: Double): js.Any = js.native
+  def getBackNeedleLength(scaleIndex: Double, pointerIndex: Double): Any = js.native
   
   /** To get CustomLabelAngle
     * @param {number} scaleIndex value for the Gauge
     * @param {number} customLabelIndex value for the Gauge
     * @returns {any}
     */
-  def getCustomLabelAngle(scaleIndex: Double, customLabelIndex: Double): js.Any = js.native
+  def getCustomLabelAngle(scaleIndex: Double, customLabelIndex: Double): Any = js.native
   
   /** To get CustomLabelValue
     * @param {number} scaleIndex value for the Gauge
     * @param {number} customLabelIndex value for the Gauge
     * @returns {any}
     */
-  def getCustomLabelValue(scaleIndex: Double, customLabelIndex: Double): js.Any = js.native
+  def getCustomLabelValue(scaleIndex: Double, customLabelIndex: Double): Any = js.native
   
   /** To get LabelAngle
     * @param {number} scaleIndex value for the Gauge
     * @param {number} labelIndex value for the Gauge
     * @returns {any}
     */
-  def getLabelAngle(scaleIndex: Double, labelIndex: Double): js.Any = js.native
+  def getLabelAngle(scaleIndex: Double, labelIndex: Double): Any = js.native
   
   /** To get LabelDistanceFromScale
     * @param {number} scaleIndex value for the Gauge
     * @param {number} labelIndex value for the Gauge
     * @returns {any}
     */
-  def getLabelDistanceFromScale(scaleIndex: Double, labelIndex: Double): js.Any = js.native
+  def getLabelDistanceFromScale(scaleIndex: Double, labelIndex: Double): Any = js.native
   
   /** To get LabelPlacement
     * @param {number} scaleIndex value for the Gauge
     * @param {number} labelIndex value for the Gauge
     * @returns {any}
     */
-  def getLabelPlacement(scaleIndex: Double, labelIndex: Double): js.Any = js.native
+  def getLabelPlacement(scaleIndex: Double, labelIndex: Double): Any = js.native
   
   /** To get LabelStyle
     * @param {number} scaleIndex value for the Gauge
     * @param {number} labelIndex value for the Gauge
     * @returns {any}
     */
-  def getLabelStyle(scaleIndex: Double, labelIndex: Double): js.Any = js.native
+  def getLabelStyle(scaleIndex: Double, labelIndex: Double): Any = js.native
   
   /** To get MajorIntervalValue
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getMajorIntervalValue(scaleIndex: Double): js.Any = js.native
+  def getMajorIntervalValue(scaleIndex: Double): Any = js.native
   
   /** To get MarkerDistanceFromScale
     * @param {number} scaleIndex value for the Gauge
     * @param {number} pointerIndex value for the Gauge
     * @returns {any}
     */
-  def getMarkerDistanceFromScale(scaleIndex: Double, pointerIndex: Double): js.Any = js.native
+  def getMarkerDistanceFromScale(scaleIndex: Double, pointerIndex: Double): Any = js.native
   
   /** To get MarkerStyle
     * @param {number} scaleIndex value for the Gauge
     * @param {number} pointerIndex value for the Gauge
     * @returns {any}
     */
-  def getMarkerStyle(scaleIndex: Double, pointerIndex: Double): js.Any = js.native
+  def getMarkerStyle(scaleIndex: Double, pointerIndex: Double): Any = js.native
   
   /** To get MaximumValue
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getMaximumValue(scaleIndex: Double): js.Any = js.native
+  def getMaximumValue(scaleIndex: Double): Any = js.native
   
   /** To get MinimumValue
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getMinimumValue(scaleIndex: Double): js.Any = js.native
+  def getMinimumValue(scaleIndex: Double): Any = js.native
   
   /** To get MinorIntervalValue
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getMinorIntervalValue(scaleIndex: Double): js.Any = js.native
+  def getMinorIntervalValue(scaleIndex: Double): Any = js.native
   
   /** To get NeedleStyle
     * @param {number} scaleIndex value for the Gauge
     * @param {number} pointerIndex value for the Gauge
     * @returns {any}
     */
-  def getNeedleStyle(scaleIndex: Double, pointerIndex: Double): js.Any = js.native
+  def getNeedleStyle(scaleIndex: Double, pointerIndex: Double): Any = js.native
   
   /** To get PointerCapBorderWidth
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getPointerCapBorderWidth(scaleIndex: Double): js.Any = js.native
+  def getPointerCapBorderWidth(scaleIndex: Double): Any = js.native
   
   /** To get PointerCapRadius
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getPointerCapRadius(scaleIndex: Double): js.Any = js.native
+  def getPointerCapRadius(scaleIndex: Double): Any = js.native
   
   /** To get PointerLength
     * @param {number} scaleIndex value for the Gauge
     * @param {number} pointerIndex value for the Gauge
     * @returns {any}
     */
-  def getPointerLength(scaleIndex: Double, pointerIndex: Double): js.Any = js.native
+  def getPointerLength(scaleIndex: Double, pointerIndex: Double): Any = js.native
   
   /** To get PointerNeedleType
     * @param {number} scaleIndex value for the Gauge
     * @param {number} pointerIndex value for the Gauge
     * @returns {any}
     */
-  def getPointerNeedleType(scaleIndex: Double, pointerIndex: Double): js.Any = js.native
+  def getPointerNeedleType(scaleIndex: Double, pointerIndex: Double): Any = js.native
   
   /** To get PointerPlacement
     * @param {number} scaleIndex value for the Gauge
     * @param {number} pointerIndex value for the Gauge
     * @returns {any}
     */
-  def getPointerPlacement(scaleIndex: Double, pointerIndex: Double): js.Any = js.native
+  def getPointerPlacement(scaleIndex: Double, pointerIndex: Double): Any = js.native
   
   /** To get PointerValue
     * @param {number} scaleIndex value for the Gauge
     * @param {number} pointerIndex value for the Gauge
     * @returns {any}
     */
-  def getPointerValue(scaleIndex: Double, pointerIndex: Double): js.Any = js.native
+  def getPointerValue(scaleIndex: Double, pointerIndex: Double): Any = js.native
   
   /** To get PointerWidth
     * @param {number} scaleIndex value for the Gauge
     * @param {number} pointerIndex value for the Gauge
     * @returns {any}
     */
-  def getPointerWidth(scaleIndex: Double, pointerIndex: Double): js.Any = js.native
+  def getPointerWidth(scaleIndex: Double, pointerIndex: Double): Any = js.native
   
   /** To get RangeBorderWidth
     * @param {number} scaleIndex value for the Gauge
     * @param {number} rangeIndex value for the Gauge
     * @returns {any}
     */
-  def getRangeBorderWidth(scaleIndex: Double, rangeIndex: Double): js.Any = js.native
+  def getRangeBorderWidth(scaleIndex: Double, rangeIndex: Double): Any = js.native
   
   /** To get RangeDistanceFromScale
     * @param {number} scaleIndex value for the Gauge
     * @param {number} rangeIndex value for the Gauge
     * @returns {any}
     */
-  def getRangeDistanceFromScale(scaleIndex: Double, rangeIndex: Double): js.Any = js.native
+  def getRangeDistanceFromScale(scaleIndex: Double, rangeIndex: Double): Any = js.native
   
   /** To get RangeEndValue
     * @param {number} scaleIndex value for the Gauge
     * @param {number} rangeIndex value for the Gauge
     * @returns {any}
     */
-  def getRangeEndValue(scaleIndex: Double, rangeIndex: Double): js.Any = js.native
+  def getRangeEndValue(scaleIndex: Double, rangeIndex: Double): Any = js.native
   
   /** To get RangePosition
     * @param {number} scaleIndex value for the Gauge
     * @param {number} rangeIndex value for the Gauge
     * @returns {any}
     */
-  def getRangePosition(scaleIndex: Double, rangeIndex: Double): js.Any = js.native
+  def getRangePosition(scaleIndex: Double, rangeIndex: Double): Any = js.native
   
   /** To get RangeSize
     * @param {number} scaleIndex value for the Gauge
     * @param {number} rangeIndex value for the Gauge
     * @returns {any}
     */
-  def getRangeSize(scaleIndex: Double, rangeIndex: Double): js.Any = js.native
+  def getRangeSize(scaleIndex: Double, rangeIndex: Double): Any = js.native
   
   /** To get RangeStartValue
     * @param {number} scaleIndex value for the Gauge
     * @param {number} rangeIndex value for the Gauge
     * @returns {any}
     */
-  def getRangeStartValue(scaleIndex: Double, rangeIndex: Double): js.Any = js.native
+  def getRangeStartValue(scaleIndex: Double, rangeIndex: Double): Any = js.native
   
   /** To get ScaleBarSize
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getScaleBarSize(scaleIndex: Double): js.Any = js.native
+  def getScaleBarSize(scaleIndex: Double): Any = js.native
   
   /** To get ScaleBorderWidth
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getScaleBorderWidth(scaleIndex: Double): js.Any = js.native
+  def getScaleBorderWidth(scaleIndex: Double): Any = js.native
   
   /** To get ScaleDirection
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getScaleDirection(scaleIndex: Double): js.Any = js.native
+  def getScaleDirection(scaleIndex: Double): Any = js.native
   
   /** To get ScaleRadius
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getScaleRadius(scaleIndex: Double): js.Any = js.native
+  def getScaleRadius(scaleIndex: Double): Any = js.native
   
   /** To get StartAngle
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getStartAngle(scaleIndex: Double): js.Any = js.native
+  def getStartAngle(scaleIndex: Double): Any = js.native
   
   /** To get SubGaugeLocation
     * @param {number} scaleIndex value for the Gauge
     * @param {number} GaugeIndex value for the Gauge
     * @returns {any}
     */
-  def getSubGaugeLocation(scaleIndex: Double, GaugeIndex: Double): js.Any = js.native
+  def getSubGaugeLocation(scaleIndex: Double, GaugeIndex: Double): Any = js.native
   
   /** To get SweepAngle
     * @param {number} scaleIndex value for the Gauge
     * @returns {any}
     */
-  def getSweepAngle(scaleIndex: Double): js.Any = js.native
+  def getSweepAngle(scaleIndex: Double): Any = js.native
   
   /** To get TickAngle
     * @param {number} scaleIndex value for the Gauge
     * @param {number} tickIndex value for the Gauge
     * @returns {any}
     */
-  def getTickAngle(scaleIndex: Double, tickIndex: Double): js.Any = js.native
+  def getTickAngle(scaleIndex: Double, tickIndex: Double): Any = js.native
   
   /** To get TickDistanceFromScale
     * @param {number} scaleIndex value for the Gauge
     * @param {number} tickIndex value for the Gauge
     * @returns {any}
     */
-  def getTickDistanceFromScale(scaleIndex: Double, tickIndex: Double): js.Any = js.native
+  def getTickDistanceFromScale(scaleIndex: Double, tickIndex: Double): Any = js.native
   
   /** To get TickHeight
     * @param {number} scaleIndex value for the Gauge
     * @param {number} labelIndex value for the Gauge
     * @returns {any}
     */
-  def getTickHeight(scaleIndex: Double, labelIndex: Double): js.Any = js.native
+  def getTickHeight(scaleIndex: Double, labelIndex: Double): Any = js.native
   
   /** To get TickPlacement
     * @param {number} scaleIndex value for the Gauge
     * @param {number} tickIndex value for the Gauge
     * @returns {any}
     */
-  def getTickPlacement(scaleIndex: Double, tickIndex: Double): js.Any = js.native
+  def getTickPlacement(scaleIndex: Double, tickIndex: Double): Any = js.native
   
   /** To get TickStyle
     * @param {number} scaleIndex value for the Gauge
     * @param {number} tickIndex value for the Gauge
     * @returns {any}
     */
-  def getTickStyle(scaleIndex: Double, tickIndex: Double): js.Any = js.native
+  def getTickStyle(scaleIndex: Double, tickIndex: Double): Any = js.native
   
   /** To get TickWidth
     * @param {number} scaleIndex value for the Gauge
     * @param {number} tickIndex value for the Gauge
     * @returns {any}
     */
-  def getTickWidth(scaleIndex: Double, tickIndex: Double): js.Any = js.native
+  def getTickWidth(scaleIndex: Double, tickIndex: Double): Any = js.native
   
   /** To set includeFirstValue
     * @param {number} scaleIndex value for the gauge
@@ -1260,11 +1260,11 @@ object CircularGauge {
     /** location - X and Y co-ordinate of the points with respect to circular gauge area.id - ID of the target element.    size - Width and height of the circular gauge.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the circular gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -1283,11 +1283,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1305,11 +1305,11 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the current custom label element.
       */
-    var customLabelElement: js.UndefOr[js.Any] = js.undefined
+    var customLabelElement: js.UndefOr[Any] = js.undefined
     
     /** returns the index of the custom label.
       */
@@ -1317,19 +1317,19 @@ object CircularGauge {
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the startX and startY of the custom label
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the scaleIndex to which the custom label belongs.
       */
@@ -1356,11 +1356,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setCustomLabelElement(value: js.Any): Self = StObject.set(x, "customLabelElement", value.asInstanceOf[js.Any])
+      inline def setCustomLabelElement(value: Any): Self = StObject.set(x, "customLabelElement", value.asInstanceOf[js.Any])
       
       inline def setCustomLabelElementUndefined: Self = StObject.set(x, "customLabelElement", js.undefined)
       
@@ -1368,19 +1368,19 @@ object CircularGauge {
       
       inline def setCustomLabelIndexUndefined: Self = StObject.set(x, "customLabelIndex", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -1406,11 +1406,11 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the current indicator element.
       */
-    var indicatorElement: js.UndefOr[js.Any] = js.undefined
+    var indicatorElement: js.UndefOr[Any] = js.undefined
     
     /** returns the index of the indicator.
       */
@@ -1418,19 +1418,19 @@ object CircularGauge {
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the startX and startY of the indicator
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the scaleIndex to which the indicator belongs.
       */
@@ -1457,11 +1457,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setIndicatorElement(value: js.Any): Self = StObject.set(x, "indicatorElement", value.asInstanceOf[js.Any])
+      inline def setIndicatorElement(value: Any): Self = StObject.set(x, "indicatorElement", value.asInstanceOf[js.Any])
       
       inline def setIndicatorElementUndefined: Self = StObject.set(x, "indicatorElement", js.undefined)
       
@@ -1469,19 +1469,19 @@ object CircularGauge {
       
       inline def setIndicatorIndexUndefined: Self = StObject.set(x, "indicatorIndex", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -1511,11 +1511,11 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the current label element.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the index of the label.
       */
@@ -1523,11 +1523,11 @@ object CircularGauge {
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the value of the label.
       */
@@ -1535,11 +1535,11 @@ object CircularGauge {
     
     /** returns the startX and startY of the labels
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the scaleIndex to which the label belongs.
       */
@@ -1570,11 +1570,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -1582,11 +1582,11 @@ object CircularGauge {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
@@ -1594,11 +1594,11 @@ object CircularGauge {
       
       inline def setPointerValueUndefined: Self = StObject.set(x, "pointerValue", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -1624,23 +1624,23 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the startX and startY of the pointer cap.
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the pointer cap style
       */
@@ -1663,23 +1663,23 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -1705,11 +1705,11 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the current pointer element.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the index of the pointer.
       */
@@ -1717,19 +1717,19 @@ object CircularGauge {
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the startX and startY of the pointer
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
@@ -1764,11 +1764,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -1776,19 +1776,19 @@ object CircularGauge {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -1818,23 +1818,23 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the startX and startY of the range
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the current range element.
       */
-    var rangeElement: js.UndefOr[js.Any] = js.undefined
+    var rangeElement: js.UndefOr[Any] = js.undefined
     
     /** returns the index of the range.
       */
@@ -1842,7 +1842,7 @@ object CircularGauge {
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the scaleIndex to which the range belongs.
       */
@@ -1869,23 +1869,23 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setRangeElement(value: js.Any): Self = StObject.set(x, "rangeElement", value.asInstanceOf[js.Any])
+      inline def setRangeElement(value: Any): Self = StObject.set(x, "rangeElement", value.asInstanceOf[js.Any])
       
       inline def setRangeElementUndefined: Self = StObject.set(x, "rangeElement", js.undefined)
       
@@ -1893,7 +1893,7 @@ object CircularGauge {
       
       inline def setRangeIndexUndefined: Self = StObject.set(x, "rangeIndex", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -1923,11 +1923,11 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the current tick element.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the index of the tick.
       */
@@ -1935,11 +1935,11 @@ object CircularGauge {
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the label value of the tick.
       */
@@ -1947,11 +1947,11 @@ object CircularGauge {
     
     /** returns the startX and startY of the ticks
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the scaleIndex to which the tick belongs.
       */
@@ -1982,11 +1982,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -1994,11 +1994,11 @@ object CircularGauge {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
@@ -2006,11 +2006,11 @@ object CircularGauge {
       
       inline def setPointerValueUndefined: Self = StObject.set(x, "pointerValue", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -2339,11 +2339,11 @@ object CircularGauge {
     
     /** Instance of the legend item object that is about to be rendered
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the circulargauge model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -2362,11 +2362,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2384,11 +2384,11 @@ object CircularGauge {
     
     /** Instance of the legend item object that is about to be rendered
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the circulargauge model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -2407,11 +2407,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2526,7 +2526,7 @@ object CircularGauge {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.undefined
+    var Model: js.UndefOr[Any] = js.undefined
     
     /** returns the cancel option value
       */
@@ -2534,15 +2534,15 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the entire scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2561,19 +2561,19 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -2669,7 +2669,7 @@ object CircularGauge {
     /** Specifies the interiorGradient of circular gauge.
       * @Default {null}
       */
-    var interiorGradient: js.UndefOr[js.Any] = js.undefined
+    var interiorGradient: js.UndefOr[Any] = js.undefined
     
     /** Specify isRadialGradient value of circular gauge
       * @Default {false}
@@ -2863,7 +2863,7 @@ object CircularGauge {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setInteriorGradient(value: js.Any): Self = StObject.set(x, "interiorGradient", value.asInstanceOf[js.Any])
+      inline def setInteriorGradient(value: Any): Self = StObject.set(x, "interiorGradient", value.asInstanceOf[js.Any])
       
       inline def setInteriorGradientUndefined: Self = StObject.set(x, "interiorGradient", js.undefined)
       
@@ -2947,7 +2947,7 @@ object CircularGauge {
       
       inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
       
-      inline def setScalesVarargs(value: Scale*): Self = StObject.set(x, "scales", js.Array(value :_*))
+      inline def setScalesVarargs(value: Scale*): Self = StObject.set(x, "scales", js.Array(value*))
       
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -2979,11 +2979,11 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the pointer element.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the pointer Index
       */
@@ -2991,19 +2991,19 @@ object CircularGauge {
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the startX and startY of the pointer.
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
@@ -3015,7 +3015,7 @@ object CircularGauge {
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[Any] = js.undefined
     
     /** returns the value of the pointer.
       */
@@ -3038,11 +3038,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -3050,19 +3050,19 @@ object CircularGauge {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -3074,7 +3074,7 @@ object CircularGauge {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -3096,11 +3096,11 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the pointer element.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the pointer Index
       */
@@ -3108,19 +3108,19 @@ object CircularGauge {
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the startX and startY of the pointer.
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
@@ -3132,7 +3132,7 @@ object CircularGauge {
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[Any] = js.undefined
     
     /** returns the value of the pointer.
       */
@@ -3155,11 +3155,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -3167,19 +3167,19 @@ object CircularGauge {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -3191,7 +3191,7 @@ object CircularGauge {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -3213,11 +3213,11 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the pointer element.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the pointer Index
       */
@@ -3225,19 +3225,19 @@ object CircularGauge {
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the startX and startY of the pointer.
       */
-    var position: js.UndefOr[js.Any] = js.undefined
+    var position: js.UndefOr[Any] = js.undefined
     
     /** returns the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
@@ -3249,7 +3249,7 @@ object CircularGauge {
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[Any] = js.undefined
     
     /** returns the value of the pointer.
       */
@@ -3272,11 +3272,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -3284,19 +3284,19 @@ object CircularGauge {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -3308,7 +3308,7 @@ object CircularGauge {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -3326,11 +3326,11 @@ object CircularGauge {
     
     /** Region of ranges
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the circulargauge model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -3349,11 +3349,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3371,19 +3371,19 @@ object CircularGauge {
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** returns the entire scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.undefined
+    var scaleElement: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -3402,19 +3402,19 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setScaleElement(value: js.Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
+      inline def setScaleElement(value: Any): Self = StObject.set(x, "scaleElement", value.asInstanceOf[js.Any])
       
       inline def setScaleElementUndefined: Self = StObject.set(x, "scaleElement", js.undefined)
       
@@ -3433,11 +3433,11 @@ object CircularGauge {
     /** location - X and Y co-ordinate of the points with respect to circular gauge area.id - ID of the target element.    size - Width and height of the circular gauge.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the circular gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -3456,11 +3456,11 @@ object CircularGauge {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3628,7 +3628,7 @@ object CircularGauge {
       
       inline def setCustomLabelsUndefined: Self = StObject.set(x, "customLabels", js.undefined)
       
-      inline def setCustomLabelsVarargs(value: ScalesCustomLabel*): Self = StObject.set(x, "customLabels", js.Array(value :_*))
+      inline def setCustomLabelsVarargs(value: ScalesCustomLabel*): Self = StObject.set(x, "customLabels", js.Array(value*))
       
       inline def setDirection(value: typings.ejWebAll.ej.Direction | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -3638,13 +3638,13 @@ object CircularGauge {
       
       inline def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
       
-      inline def setIndicatorsVarargs(value: ScalesIndicator*): Self = StObject.set(x, "indicators", js.Array(value :_*))
+      inline def setIndicatorsVarargs(value: ScalesIndicator*): Self = StObject.set(x, "indicators", js.Array(value*))
       
       inline def setLabels(value: js.Array[ScalesLabel]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
       inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      inline def setLabelsVarargs(value: ScalesLabel*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: ScalesLabel*): Self = StObject.set(x, "labels", js.Array(value*))
       
       inline def setMajorIntervalValue(value: Double): Self = StObject.set(x, "majorIntervalValue", value.asInstanceOf[js.Any])
       
@@ -3674,7 +3674,7 @@ object CircularGauge {
       
       inline def setPointersUndefined: Self = StObject.set(x, "pointers", js.undefined)
       
-      inline def setPointersVarargs(value: ScalesPointer*): Self = StObject.set(x, "pointers", js.Array(value :_*))
+      inline def setPointersVarargs(value: ScalesPointer*): Self = StObject.set(x, "pointers", js.Array(value*))
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -3684,7 +3684,7 @@ object CircularGauge {
       
       inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
       
-      inline def setRangesVarargs(value: ScalesRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+      inline def setRangesVarargs(value: ScalesRange*): Self = StObject.set(x, "ranges", js.Array(value*))
       
       inline def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
       
@@ -3726,7 +3726,7 @@ object CircularGauge {
       
       inline def setSubGaugesUndefined: Self = StObject.set(x, "subGauges", js.undefined)
       
-      inline def setSubGaugesVarargs(value: ScalesSubGauge*): Self = StObject.set(x, "subGauges", js.Array(value :_*))
+      inline def setSubGaugesVarargs(value: ScalesSubGauge*): Self = StObject.set(x, "subGauges", js.Array(value*))
       
       inline def setSweepAngle(value: Double): Self = StObject.set(x, "sweepAngle", value.asInstanceOf[js.Any])
       
@@ -3736,7 +3736,7 @@ object CircularGauge {
       
       inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
       
-      inline def setTicksVarargs(value: ScalesTick*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+      inline def setTicksVarargs(value: ScalesTick*): Self = StObject.set(x, "ticks", js.Array(value*))
     }
   }
   
@@ -3964,7 +3964,7 @@ object CircularGauge {
       
       inline def setStateRangesUndefined: Self = StObject.set(x, "stateRanges", js.undefined)
       
-      inline def setStateRangesVarargs(value: ScalesIndicatorsStateRange*): Self = StObject.set(x, "stateRanges", js.Array(value :_*))
+      inline def setStateRangesVarargs(value: ScalesIndicatorsStateRange*): Self = StObject.set(x, "stateRanges", js.Array(value*))
       
       inline def setType(value: IndicatorTypes | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -4027,7 +4027,7 @@ object CircularGauge {
     /** Specify value of the font as the indicator when the indicator style is set with the value &quot;text&quot; of circular gauge
       * @Default {null}
       */
-    var font: js.UndefOr[js.Any] = js.undefined
+    var font: js.UndefOr[Any] = js.undefined
     
     /** Specify start value for each specified state of circular gauge
       * @Default {0}
@@ -4064,7 +4064,7 @@ object CircularGauge {
       
       inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
       
-      inline def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
@@ -4258,7 +4258,7 @@ object CircularGauge {
     /** Specify pointer gradients of circular gauge
       * @Default {null}
       */
-    var gradients: js.UndefOr[js.Any] = js.undefined
+    var gradients: js.UndefOr[Any] = js.undefined
     
     /** Specify pointer image of circular gauge.It is applicable for both marker as well as needle type pointers.
       * @Default {NULL}
@@ -4345,7 +4345,7 @@ object CircularGauge {
       
       inline def setDistanceFromScaleUndefined: Self = StObject.set(x, "distanceFromScale", js.undefined)
       
-      inline def setGradients(value: js.Any): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
+      inline def setGradients(value: Any): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
       
       inline def setGradientsUndefined: Self = StObject.set(x, "gradients", js.undefined)
       
@@ -4419,7 +4419,7 @@ object CircularGauge {
     /** Specify cap interiorGradient value of circular gauge
       * @Default {null}
       */
-    var interiorGradient: js.UndefOr[js.Any] = js.undefined
+    var interiorGradient: js.UndefOr[Any] = js.undefined
     
     /** Specify pointerCap Radius value of circular gauge
       * @Default {7}
@@ -4447,7 +4447,7 @@ object CircularGauge {
       
       inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
       
-      inline def setInteriorGradient(value: js.Any): Self = StObject.set(x, "interiorGradient", value.asInstanceOf[js.Any])
+      inline def setInteriorGradient(value: Any): Self = StObject.set(x, "interiorGradient", value.asInstanceOf[js.Any])
       
       inline def setInteriorGradientUndefined: Self = StObject.set(x, "interiorGradient", js.undefined)
       
@@ -4634,7 +4634,7 @@ object CircularGauge {
     /** Specify range gradients of circular gauge
       * @Default {null}
       */
-    var gradients: js.UndefOr[js.Any] = js.undefined
+    var gradients: js.UndefOr[Any] = js.undefined
     
     /** Specify text for the ranges of circular gauge
       * @Default {null}
@@ -4695,7 +4695,7 @@ object CircularGauge {
       
       inline def setEndWidthUndefined: Self = StObject.set(x, "endWidth", js.undefined)
       
-      inline def setGradients(value: js.Any): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
+      inline def setGradients(value: Any): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
       
       inline def setGradientsUndefined: Self = StObject.set(x, "gradients", js.undefined)
       

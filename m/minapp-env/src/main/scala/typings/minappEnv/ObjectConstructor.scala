@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectConstructor
   extends StObject
      with Instantiable0[Object]
-     with Instantiable1[/* value */ js.Any, Object] {
+     with Instantiable1[/* value */ Any, Object] {
   
-  def apply(): js.Any = js.native
-  def apply(value: js.Any): js.Any = js.native
+  def apply(): Any = js.native
+  def apply(value: Any): Any = js.native
   
   /**
     * Copy the values of all of the enumerable own properties from one or more source objects to a
@@ -22,7 +22,7 @@ trait ObjectConstructor
     * @param target The target object to copy to.
     * @param sources One or more source objects from which to copy properties
     */
-  def assign(target: js.Object, sources: js.Any*): js.Any = js.native
+  def assign(target: js.Object, sources: Any*): Any = js.native
   /**
     * Copy the values of all of the enumerable own properties from one or more source objects to a
     * target object. Returns the target object.
@@ -52,22 +52,22 @@ trait ObjectConstructor
     * Creates an object that has the specified prototype or that has null prototype.
     * @param o Object to use as a prototype. May be null.
     */
-  def create(): js.Any = js.native
-  def create(o: js.Object): js.Any = js.native
+  def create(): Any = js.native
+  def create(o: js.Object): Any = js.native
   /**
     * Creates an object that has the specified prototype, and that optionally contains specified properties.
     * @param o Object to use as a prototype. May be null
     * @param properties JavaScript object that contains one or more property descriptors.
     */
-  def create(o: js.Object, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
-  def create(o: Null, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
+  def create(o: js.Object, properties: PropertyDescriptorMap & ThisType[Any]): Any = js.native
+  def create(o: Null, properties: PropertyDescriptorMap & ThisType[Any]): Any = js.native
   
   /**
     * Adds one or more properties to an object, and/or modifies attributes of existing properties.
     * @param o Object on which to add or modify the properties. This can be a native JavaScript object or a DOM object.
     * @param properties JavaScript object that contains one or more descriptor objects. Each descriptor object describes a data property or an accessor property.
     */
-  def defineProperties(o: js.Any, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
+  def defineProperties(o: Any, properties: PropertyDescriptorMap & ThisType[Any]): Any = js.native
   
   /**
     * Adds a property to an object, or modifies attributes of an existing property.
@@ -75,7 +75,7 @@ trait ObjectConstructor
     * @param p The property name.
     * @param attributes Descriptor for the property. It can be for a data property or an accessor property.
     */
-  def defineProperty(o: js.Any, p: java.lang.String, attributes: PropertyDescriptor & ThisType[js.Any]): js.Any = js.native
+  def defineProperty(o: Any, p: java.lang.String, attributes: PropertyDescriptor & ThisType[Any]): Any = js.native
   /**
     * Adds a property to an object, or modifies attributes of an existing property.
     * @param o Object on which to add or modify the property. This can be a native JavaScript
@@ -84,7 +84,7 @@ trait ObjectConstructor
     * @param attributes Descriptor for the property. It can be for a data property or an accessor
     *  property.
     */
-  def defineProperty(o: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): js.Any = js.native
+  def defineProperty(o: Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): Any = js.native
   
   /**
     * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
@@ -109,7 +109,7 @@ trait ObjectConstructor
     * @param o Object that contains the property.
     * @param p Name of the property.
     */
-  def getOwnPropertyDescriptor(o: js.Any, p: java.lang.String): js.UndefOr[PropertyDescriptor] = js.native
+  def getOwnPropertyDescriptor(o: Any, p: java.lang.String): js.UndefOr[PropertyDescriptor] = js.native
   /**
     * Gets the own property descriptor of the specified object.
     * An own property descriptor is one that is defined directly on the object and is not
@@ -117,51 +117,51 @@ trait ObjectConstructor
     * @param o Object that contains the property.
     * @param p Name of the property.
     */
-  def getOwnPropertyDescriptor(o: js.Any, propertyKey: PropertyKey): js.UndefOr[PropertyDescriptor] = js.native
+  def getOwnPropertyDescriptor(o: Any, propertyKey: PropertyKey): js.UndefOr[PropertyDescriptor] = js.native
   
   /**
     * Returns the names of the own properties of an object. The own properties of an object are those that are defined directly
     * on that object, and are not inherited from the object's prototype. The properties of an object include both fields (objects) and functions.
     * @param o Object that contains the own properties.
     */
-  def getOwnPropertyNames(o: js.Any): Array[java.lang.String] = js.native
+  def getOwnPropertyNames(o: Any): Array[java.lang.String] = js.native
   
   /**
     * Returns an array of all symbol properties found directly on object o.
     * @param o Object to retrieve the symbols from.
     */
-  def getOwnPropertySymbols(o: js.Any): Array[js.Symbol] = js.native
+  def getOwnPropertySymbols(o: Any): Array[js.Symbol] = js.native
   
   /**
     * Returns the prototype of an object.
     * @param o The object that references the prototype.
     */
-  def getPrototypeOf(o: js.Any): js.Any = js.native
+  def getPrototypeOf(o: Any): Any = js.native
   
   /**
     * Returns true if the values are the same value, false otherwise.
     * @param value1 The first value.
     * @param value2 The second value.
     */
-  def is(value1: js.Any, value2: js.Any): scala.Boolean = js.native
+  def is(value1: Any, value2: Any): scala.Boolean = js.native
   
   /**
     * Returns a value that indicates whether new properties can be added to an object.
     * @param o Object to test.
     */
-  def isExtensible(o: js.Any): scala.Boolean = js.native
+  def isExtensible(o: Any): scala.Boolean = js.native
   
   /**
     * Returns true if existing property attributes and values cannot be modified in an object, and new properties cannot be added to the object.
     * @param o Object to test.
     */
-  def isFrozen(o: js.Any): scala.Boolean = js.native
+  def isFrozen(o: Any): scala.Boolean = js.native
   
   /**
     * Returns true if existing property attributes cannot be modified in an object and new properties cannot be added to the object.
     * @param o Object to test.
     */
-  def isSealed(o: js.Any): scala.Boolean = js.native
+  def isSealed(o: Any): scala.Boolean = js.native
   
   /**
     * Returns the names of the enumerable properties and methods of an object.
@@ -186,6 +186,6 @@ trait ObjectConstructor
     * @param o The object to change its prototype.
     * @param proto The value of the new prototype or null.
     */
-  def setPrototypeOf(o: js.Any): js.Any = js.native
-  def setPrototypeOf(o: js.Any, proto: js.Object): js.Any = js.native
+  def setPrototypeOf(o: Any): Any = js.native
+  def setPrototypeOf(o: Any, proto: js.Object): Any = js.native
 }

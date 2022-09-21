@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.document
   - typings.std.stdStrings.embed
   - typings.std.stdStrings.font
+  - typings.std.stdStrings.frame
+  - typings.std.stdStrings.iframe
   - typings.std.stdStrings.image
   - typings.std.stdStrings.manifest
   - typings.std.stdStrings.`object`
@@ -38,6 +40,10 @@ object RequestDestination {
   inline def embed: typings.std.stdStrings.embed = "embed".asInstanceOf[typings.std.stdStrings.embed]
   
   inline def font: typings.std.stdStrings.font = "font".asInstanceOf[typings.std.stdStrings.font]
+  
+  inline def frame: typings.std.stdStrings.frame = "frame".asInstanceOf[typings.std.stdStrings.frame]
+  
+  inline def iframe: typings.std.stdStrings.iframe = "iframe".asInstanceOf[typings.std.stdStrings.iframe]
   
   inline def image: typings.std.stdStrings.image = "image".asInstanceOf[typings.std.stdStrings.image]
   

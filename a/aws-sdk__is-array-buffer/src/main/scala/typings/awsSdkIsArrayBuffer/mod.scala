@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isArrayBuffer(arg: js.Any): /* is std.ArrayBuffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayBuffer")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.ArrayBuffer */ Boolean]
+  inline def isArrayBuffer(arg: Any): /* is std.ArrayBuffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayBuffer")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.ArrayBuffer */ Boolean]
 }

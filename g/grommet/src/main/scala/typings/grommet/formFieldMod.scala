@@ -1,16 +1,16 @@
 package typings.grommet
 
+import typings.grommet.anon.Indicator
 import typings.grommet.anon.Message
 import typings.grommet.boxMod.BoxProps
 import typings.grommet.grommetStrings.placeholder
+import typings.grommet.grommetStrings.required
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.Omit
 import typings.grommet.utilsMod.PlaceHolderType
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.InputHTMLAttributes
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -19,43 +19,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formFieldMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("grommet/components/FormField", "FormField")
+  @JSImport("grommet/components/FormField", JSImport.Namespace)
   @js.native
-  class FormField protected ()
-    extends Component[
-          FormFieldProps & (Omit[
-            DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-            placeholder
-          ]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: FormFieldProps & (Omit[
-            DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-            placeholder
-          ])) = this()
-    def this(
-      props: FormFieldProps & (Omit[
-            DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-            placeholder
-          ]),
-      context: js.Any
-    ) = this()
+  val ^ : js.Any = js.native
+  
+  inline def FormField[T](p: FormFieldExtendedProps & T): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("FormField")(p.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'placeholder' | 'required'> ]: react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>[P]} */ trait FormFieldExtendedProps
+    extends StObject
+       with FormFieldProps
+  object FormFieldExtendedProps {
+    
+    inline def apply(): FormFieldExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FormFieldExtendedProps]
+    }
   }
-  @JSImport("grommet/components/FormField", "FormField")
-  @js.native
-  val FormField: ComponentClass[
-    FormFieldProps & (Omit[
-      DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-      placeholder
-    ]), 
-    ComponentState
-  ] = js.native
   
   trait FormFieldProps extends StObject {
     
-    var component: js.UndefOr[js.Any] = js.undefined
+    var component: js.UndefOr[Any] = js.undefined
     
     var contentProps: js.UndefOr[BoxProps] = js.undefined
     
@@ -82,10 +66,10 @@ object formFieldMod {
     // Although Placeholder is not a prop within FormField we Omit the HTML placeholder attribute and replaced with following.
     var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.undefined
+    var required: js.UndefOr[Boolean | Indicator] = js.undefined
     
     var validate: js.UndefOr[
-        Message | (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[Message | (js.Function1[/* repeated */ js.Any, js.Any])])
+        Message | (js.Function1[/* repeated */ Any, Any]) | (js.Array[Message | (js.Function1[/* repeated */ Any, Any])])
       ] = js.undefined
   }
   object FormFieldProps {
@@ -97,7 +81,7 @@ object formFieldMod {
     
     extension [Self <: FormFieldProps](x: Self) {
       
-      inline def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -141,7 +125,7 @@ object formFieldMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPad(value: Boolean): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
       
@@ -151,19 +135,24 @@ object formFieldMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean | Indicator): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
       inline def setValidate(
-        value: Message | (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[Message | (js.Function1[/* repeated */ js.Any, js.Any])])
+        value: Message | (js.Function1[/* repeated */ Any, Any]) | (js.Array[Message | (js.Function1[/* repeated */ Any, Any])])
       ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      inline def setValidateFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidateFunction1(value: /* repeated */ Any => Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      inline def setValidateVarargs(value: (Message | (js.Function1[/* repeated */ js.Any, js.Any]))*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      inline def setValidateVarargs(value: (Message | (js.Function1[/* repeated */ Any, Any]))*): Self = StObject.set(x, "validate", js.Array(value*))
     }
   }
+  
+  type inputProps = Omit[
+    DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
+    placeholder | required
+  ]
 }

@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class WMSGetFeatureInfo ()
+open class WMSGetFeatureInfo ()
   extends typings.openlayers.mod.format.WMSGetFeatureInfo {
   def this(opt_options: WMSGetFeatureInfoOptions) = this()
 }

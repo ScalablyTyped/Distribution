@@ -18,7 +18,7 @@ object mod {
   inline def create(db: AnydbSql, tasks: String): Check = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(db.asInstanceOf[js.Any], tasks.asInstanceOf[js.Any])).asInstanceOf[Check]
   inline def create(db: AnydbSql, tasks: js.Array[MigrationTask]): Check = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(db.asInstanceOf[js.Any], tasks.asInstanceOf[js.Any])).asInstanceOf[Check]
   
-  type MigFn = js.Function1[/* tx */ Transaction, typings.bluebird.mod.^[js.Any]]
+  type MigFn = js.Function1[/* tx */ Transaction, typings.bluebird.mod.^[Any]]
   
   trait Migration extends StObject {
     
@@ -76,22 +76,22 @@ object mod {
   
   trait MigrationTask extends StObject {
     
-    def down(tx: Transaction): typings.bluebird.mod.^[js.Any]
+    def down(tx: Transaction): typings.bluebird.mod.^[Any]
     @JSName("down")
     var down_Original: MigFn
     
     var name: String
     
-    def up(tx: Transaction): typings.bluebird.mod.^[js.Any]
+    def up(tx: Transaction): typings.bluebird.mod.^[Any]
     @JSName("up")
     var up_Original: MigFn
   }
   object MigrationTask {
     
     inline def apply(
-      down: /* tx */ Transaction => typings.bluebird.mod.^[js.Any],
+      down: /* tx */ Transaction => typings.bluebird.mod.^[Any],
       name: String,
-      up: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]
+      up: /* tx */ Transaction => typings.bluebird.mod.^[Any]
     ): MigrationTask = {
       val __obj = js.Dynamic.literal(down = js.Any.fromFunction1(down), name = name.asInstanceOf[js.Any], up = js.Any.fromFunction1(up))
       __obj.asInstanceOf[MigrationTask]
@@ -99,11 +99,11 @@ object mod {
     
     extension [Self <: MigrationTask](x: Self) {
       
-      inline def setDown(value: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: /* tx */ Transaction => typings.bluebird.mod.^[Any]): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setUp(value: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+      inline def setUp(value: /* tx */ Transaction => typings.bluebird.mod.^[Any]): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
     }
   }
   

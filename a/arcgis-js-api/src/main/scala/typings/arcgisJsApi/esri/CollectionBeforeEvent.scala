@@ -8,11 +8,11 @@ trait CollectionBeforeEvent[T] extends StObject {
   
   var item: T
   
-  def preventDefault(): Unit
+  def preventDefault(): scala.Unit
 }
 object CollectionBeforeEvent {
   
-  inline def apply[T](item: T, preventDefault: () => Unit): CollectionBeforeEvent[T] = {
+  inline def apply[T](item: T, preventDefault: () => scala.Unit): CollectionBeforeEvent[T] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault))
     __obj.asInstanceOf[CollectionBeforeEvent[T]]
   }
@@ -21,6 +21,6 @@ object CollectionBeforeEvent {
     
     inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => scala.Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
   }
 }

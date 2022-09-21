@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param messageOrUri Message or uri.
   */
-class FileSystemError ()
+open class FileSystemError ()
   extends StObject
      with Error {
   def this(messageOrUri: String) = this()
@@ -21,14 +21,16 @@ class FileSystemError ()
   /**
     * A code that identifies this error.
     *
-    * Possible values are names of errors, like [`FileNotFound`](#FileSystemError.FileNotFound),
+    * Possible values are names of errors, like {@linkcode FileSystemError.FileNotFound FileNotFound},
     * or `Unknown` for unspecified errors.
     */
   val code: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
 }

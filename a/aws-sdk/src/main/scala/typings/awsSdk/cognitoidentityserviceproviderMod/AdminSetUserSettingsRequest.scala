@@ -12,12 +12,12 @@ trait AdminSetUserSettingsRequest extends StObject {
   var MFAOptions: MFAOptionListType
   
   /**
-    * The ID of the user pool that contains the user that you are setting options for.
+    * The ID of the user pool that contains the user whose options you're setting.
     */
   var UserPoolId: UserPoolIdType
   
   /**
-    * The user name of the user that you are setting options for.
+    * The user name of the user whose options you're setting.
     */
   var Username: UsernameType
 }
@@ -32,7 +32,7 @@ object AdminSetUserSettingsRequest {
     
     inline def setMFAOptions(value: MFAOptionListType): Self = StObject.set(x, "MFAOptions", value.asInstanceOf[js.Any])
     
-    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
+    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value*))
     
     inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     

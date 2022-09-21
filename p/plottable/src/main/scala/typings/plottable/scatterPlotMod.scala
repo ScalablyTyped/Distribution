@@ -1,6 +1,6 @@
 package typings.plottable
 
-import typings.plottable.anon.HeightWidth
+import typings.plottable.anon.PickDOMRectxywidthheight
 import typings.plottable.commonsMod.IAccessorScaleBinding
 import typings.plottable.commonsMod.ILightweightPlotEntity
 import typings.plottable.commonsMod.ITransformableAccessorScaleBinding
@@ -9,6 +9,7 @@ import typings.plottable.drawerMod.IDrawer
 import typings.plottable.interfacesMod.Bounds
 import typings.plottable.interfacesMod.IAccessor
 import typings.plottable.interfacesMod.Point
+import typings.plottable.labelMod.LabelFontSizePx
 import typings.plottable.plotMod.Plot
 import typings.plottable.scaleMod.Scale
 import typings.plottable.symbolFactoriesMod.SymbolFactory
@@ -26,27 +27,38 @@ object scatterPlotMod {
     *
     * @constructor
     */
-  class Scatter[X, Y] () extends XYPlot[X, Y] {
+  open class Scatter[X, Y] () extends XYPlot[X, Y] {
     
-    /* private */ def _calculateLabelProperties(pointCoordinates: js.Any, diameter: js.Any, measurement: js.Any): js.Any = js.native
+    /* private */ var _calculateLabelProperties: Any = js.native
     
-    /* protected */ def _constructSymbolGenerator(): js.Function3[/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, js.Any] = js.native
+    /* protected */ def _constructSymbolGenerator(): js.Function3[/* datum */ Any, /* index */ Double, /* dataset */ Dataset, Any] = js.native
     
-    /* private */ def _createLabelContainer(labelArea: js.Any, labelContainerOrigin: js.Any, labelOrigin: js.Any, measurement: js.Any): js.Any = js.native
+    /* private */ var _createLabelContainer: Any = js.native
     
-    /* private */ def _drawLabel(datum: js.Any, index: js.Any, dataset: js.Any, attrToProjector: js.Any): js.Any = js.native
+    /* private */ var _drawLabel: Any = js.native
     
     /* protected */ def _drawLabels(): Unit = js.native
     
-    /* protected */ def _entityBounds(entity: ILightweightScatterPlotEntity): HeightWidth = js.native
+    /* protected */ def _entityBounds(entity: ILightweightScatterPlotEntity): PickDOMRectxywidthheight = js.native
     
     /* protected */ def _entityVisibleOnPlot(entity: ILightweightScatterPlotEntity, bounds: Bounds): Boolean = js.native
     
-    /* private */ var _labelConfig: js.Any = js.native
+    /* private */ var _labelConfig: Any = js.native
     
-    /* private */ var _labelFormatter: js.Any = js.native
+    /* private */ var _labelFontSize: Any = js.native
     
-    /* private */ var _labelsEnabled: js.Any = js.native
+    /* private */ var _labelFormatter: Any = js.native
+    
+    /* private */ var _labelsEnabled: Any = js.native
+    
+    /**
+      * Get the label font size in px.
+      */
+    def labelFontSize(): LabelFontSizePx = js.native
+    /**
+      * Set the label font size.
+      */
+    def labelFontSize(fontSize: LabelFontSizePx): this.type = js.native
     
     /**
       * Get whether bar labels are enabled.
@@ -90,7 +102,7 @@ object scatterPlotMod {
       * Gets the AccessorScaleBinding for the symbol property of the plot.
       * The symbol property corresponds to how the symbol will be drawn.
       */
-    def symbol(): IAccessorScaleBinding[js.Any, js.Any] = js.native
+    def symbol(): IAccessorScaleBinding[Any, Any] = js.native
     /**
       * Sets the symbol property to an Accessor<SymbolFactory>.
       *
@@ -118,13 +130,13 @@ object scatterPlotMod {
     
     @JSImport("plottable/build/src/plots/scatterPlot", "Scatter._SIZE_KEY")
     @js.native
-    def _SIZE_KEY: js.Any = js.native
-    inline def _SIZE_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SIZE_KEY")(x.asInstanceOf[js.Any])
+    def _SIZE_KEY: Any = js.native
+    inline def _SIZE_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SIZE_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/scatterPlot", "Scatter._SYMBOL_KEY")
     @js.native
-    def _SYMBOL_KEY: js.Any = js.native
-    inline def _SYMBOL_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SYMBOL_KEY")(x.asInstanceOf[js.Any])
+    def _SYMBOL_KEY: Any = js.native
+    inline def _SYMBOL_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SYMBOL_KEY")(x.asInstanceOf[js.Any])
   }
   
   trait ILightweightScatterPlotEntity
@@ -139,7 +151,7 @@ object scatterPlotMod {
       component: Plot,
       dataset: Dataset,
       datasetIndex: Double,
-      datum: js.Any,
+      datum: Any,
       diameter: Double,
       drawer: IDrawer,
       index: Double,

@@ -40,7 +40,7 @@ object mappedTypesMod {
   {[ P in keyof T ]: -? utility-types.utility-types/dist/mapped-types.DeepNonNullable<std.NonNullable<T[P]>>}
     */ _DeepNonNullableObject & TopLevel[T]
   
-  type DeepPartial[T] = js.UndefOr[T | DeepPartialObject[T] | DeepPartialArray[js.Any]]
+  type DeepPartial[T] = js.UndefOr[T | DeepPartialObject[T] | DeepPartialArray[Any]]
   
   @js.native
   trait DeepPartialArray[T]
@@ -51,7 +51,7 @@ object mappedTypesMod {
   {[ P in keyof T ]:? utility-types.utility-types/dist/mapped-types.DeepPartial<T[P]>}
     */ _DeepPartialObject & TopLevel[T]
   
-  type DeepReadonly[T] = T | DeepReadonlyObject[js.Any] | DeepReadonlyArray[js.Any]
+  type DeepReadonly[T] = T | DeepReadonlyObject[Any] | DeepReadonlyArray[Any]
   
   @js.native
   trait DeepReadonlyArray[T]
@@ -123,7 +123,7 @@ object mappedTypesMod {
     /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof T ]: -? [ValueType] extends [T[Key]]? [T[Key]] extends [ValueType]? Key : never : never}[keyof T] */ js.Any
   ]
   
-  type PromiseType[T /* <: js.Promise[js.Any] */] = js.Any
+  type PromiseType[T /* <: js.Promise[Any] */] = Any
   
   type ReadonlyKeys[T /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: -? utility-types.utility-types/dist/mapped-types.IfEquals<{[ Q in P ]: T[P]}, {-readonly [ Q in P ]: T[P]}, never, P>}[keyof T] */ js.Any
   
@@ -139,11 +139,11 @@ object mappedTypesMod {
   
   type SymmetricDifference[A, B] = SetDifference[A | B, A & B]
   
-  type UnionToIntersection[U] = js.Any
+  type UnionToIntersection[U] = Any
   
   type Unionize[T /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: {[ Q in P ]: T[P]}}[keyof T] */ js.Any
   
-  type ValuesType[T /* <: js.Array[js.Any] | ArrayLike[js.Any] | (Record[js.Any, js.Any]) */] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  type ValuesType[T /* <: js.Array[Any] | ArrayLike[Any] | (Record[Any, Any]) */] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   
   type Writable[T] = Mutable[T]
   

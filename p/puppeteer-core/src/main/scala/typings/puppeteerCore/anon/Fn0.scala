@@ -1,7 +1,7 @@
 package typings.puppeteerCore.anon
 
-import typings.puppeteerCore.commonEventEmitterMod.CommonEventEmitter
-import typings.std.Error
+import typings.puppeteerCore.utilDeferredPromiseMod.DeferredPromise
+import typings.puppeteerCore.utilDeferredPromiseMod.DeferredPromiseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,18 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn0 extends StObject {
   
-  def apply[T /* <: js.Any */](
-    emitter: CommonEventEmitter,
-    eventName: String,
-    predicate: js.Function1[/* event */ T, Boolean],
-    timeout: Double,
-    abortPromise: js.Promise[Error]
-  ): js.Promise[T] = js.native
-  def apply[T /* <: js.Any */](
-    emitter: CommonEventEmitter,
-    eventName: js.Symbol,
-    predicate: js.Function1[/* event */ T, Boolean],
-    timeout: Double,
-    abortPromise: js.Promise[Error]
-  ): js.Promise[T] = js.native
+  def apply[T](): DeferredPromise[T] = js.native
+  def apply[T](opts: DeferredPromiseOptions): DeferredPromise[T] = js.native
 }

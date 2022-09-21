@@ -23,7 +23,7 @@ object ReturnTypeRequestEntriesResponse {
     
     inline def setParamsType(value: js.Array[RequestEntriesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: RequestEntriesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: RequestEntriesRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: RequestEntriesResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

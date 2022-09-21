@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLBlockElement")
 @js.native
-/* private */ class HTMLBlockElement ()
+/* private */ open class HTMLBlockElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLBlockElement

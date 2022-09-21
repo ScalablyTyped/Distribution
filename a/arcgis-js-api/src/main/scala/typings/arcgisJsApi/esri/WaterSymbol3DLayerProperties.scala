@@ -18,12 +18,16 @@ trait WaterSymbol3DLayerProperties
   /**
     * The dominant color used to shade the water.
     *
+    * @default #0077BE
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#color)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * Indicates the size of the waterbody which is represented by the symbol layer.
+    *
+    * @default medium
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waterbodySize)
     */
@@ -32,12 +36,16 @@ trait WaterSymbol3DLayerProperties
   /**
     * Indicates the direction in which the waves travel.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveDirection)
     */
   var waveDirection: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the shape and intensity of the waves.
+    *
+    * @default moderate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveStrength)
     */
@@ -56,7 +64,7 @@ object WaterSymbol3DLayerProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setWaterbodySize(value: small | medium | large): Self = StObject.set(x, "waterbodySize", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,7 @@ object AnnotateImageResponse {
     
     inline def setFaceAnnotationsUndefined: Self = StObject.set(x, "faceAnnotations", js.undefined)
     
-    inline def setFaceAnnotationsVarargs(value: FaceAnnotation*): Self = StObject.set(x, "faceAnnotations", js.Array(value :_*))
+    inline def setFaceAnnotationsVarargs(value: FaceAnnotation*): Self = StObject.set(x, "faceAnnotations", js.Array(value*))
     
     inline def setFullTextAnnotation(value: TextAnnotation): Self = StObject.set(x, "fullTextAnnotation", value.asInstanceOf[js.Any])
     
@@ -87,25 +87,25 @@ object AnnotateImageResponse {
     
     inline def setLabelAnnotationsUndefined: Self = StObject.set(x, "labelAnnotations", js.undefined)
     
-    inline def setLabelAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "labelAnnotations", js.Array(value :_*))
+    inline def setLabelAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "labelAnnotations", js.Array(value*))
     
     inline def setLandmarkAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "landmarkAnnotations", value.asInstanceOf[js.Any])
     
     inline def setLandmarkAnnotationsUndefined: Self = StObject.set(x, "landmarkAnnotations", js.undefined)
     
-    inline def setLandmarkAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "landmarkAnnotations", js.Array(value :_*))
+    inline def setLandmarkAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "landmarkAnnotations", js.Array(value*))
     
     inline def setLocalizedObjectAnnotations(value: js.Array[LocalizedObjectAnnotation]): Self = StObject.set(x, "localizedObjectAnnotations", value.asInstanceOf[js.Any])
     
     inline def setLocalizedObjectAnnotationsUndefined: Self = StObject.set(x, "localizedObjectAnnotations", js.undefined)
     
-    inline def setLocalizedObjectAnnotationsVarargs(value: LocalizedObjectAnnotation*): Self = StObject.set(x, "localizedObjectAnnotations", js.Array(value :_*))
+    inline def setLocalizedObjectAnnotationsVarargs(value: LocalizedObjectAnnotation*): Self = StObject.set(x, "localizedObjectAnnotations", js.Array(value*))
     
     inline def setLogoAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "logoAnnotations", value.asInstanceOf[js.Any])
     
     inline def setLogoAnnotationsUndefined: Self = StObject.set(x, "logoAnnotations", js.undefined)
     
-    inline def setLogoAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "logoAnnotations", js.Array(value :_*))
+    inline def setLogoAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "logoAnnotations", js.Array(value*))
     
     inline def setProductSearchResults(value: ProductSearchResults): Self = StObject.set(x, "productSearchResults", value.asInstanceOf[js.Any])
     
@@ -119,7 +119,7 @@ object AnnotateImageResponse {
     
     inline def setTextAnnotationsUndefined: Self = StObject.set(x, "textAnnotations", js.undefined)
     
-    inline def setTextAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value :_*))
+    inline def setTextAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value*))
     
     inline def setWebDetection(value: WebDetection): Self = StObject.set(x, "webDetection", value.asInstanceOf[js.Any])
     

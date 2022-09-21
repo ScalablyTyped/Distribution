@@ -4,38 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Definition of the saved query.
-  */
 trait SchemaSavedQuery extends StObject {
   
   /**
-    * Output only. The server generated timestamp at which saved query was
-    * created.
+    * Output only. The server-generated timestamp when the saved query was created.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Name of the saved query.
+    * The name of the saved query.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Output only. The matter id of the associated matter. The server does not
-    * look at this field during create and always uses matter id in the URL.
+    * Output only. The matter ID of the matter the saved query is saved in. The server does not use this field during create and always uses matter ID in the URL.
     */
-  var matterId: js.UndefOr[String] = js.undefined
+  var matterId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The underlying Query object which contains all the information of the
-    * saved query.
+    * The search parameters of the saved query.
     */
   var query: js.UndefOr[SchemaQuery] = js.undefined
   
   /**
     * A unique identifier for the saved query.
     */
-  var savedQueryId: js.UndefOr[String] = js.undefined
+  var savedQueryId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSavedQuery {
   
@@ -48,13 +42,19 @@ object SchemaSavedQuery {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
+    
+    inline def setMatterIdNull: Self = StObject.set(x, "matterId", null)
     
     inline def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
@@ -63,6 +63,8 @@ object SchemaSavedQuery {
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     inline def setSavedQueryId(value: String): Self = StObject.set(x, "savedQueryId", value.asInstanceOf[js.Any])
+    
+    inline def setSavedQueryIdNull: Self = StObject.set(x, "savedQueryId", null)
     
     inline def setSavedQueryIdUndefined: Self = StObject.set(x, "savedQueryId", js.undefined)
   }

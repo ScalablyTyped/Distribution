@@ -6,30 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "WriteVarExpr")
 @js.native
-class WriteVarExpr protected ()
-  extends typings.angularCompiler.compilerMod.WriteVarExpr {
-  def this(name: String, value: typings.angularCompiler.outputAstMod.Expression) = this()
-  def this(
-    name: String,
-    value: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    name: String,
-    value: typings.angularCompiler.outputAstMod.Expression,
-    `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    name: String,
-    value: typings.angularCompiler.outputAstMod.Expression,
-    `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    name: String,
-    value: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class WriteVarExpr protected () extends Expression {
+  def this(name: String, value: Expression) = this()
+  def this(name: String, value: Expression, `type`: Type) = this()
+  def this(name: String, value: Expression, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(name: String, value: Expression, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(name: String, value: Expression, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
+  var name: String = js.native
+  
+  def toConstDecl(): DeclareVarStmt = js.native
+  
+  def toDeclStmt(): DeclareVarStmt = js.native
+  def toDeclStmt(`type`: Null, modifiers: StmtModifier): DeclareVarStmt = js.native
+  def toDeclStmt(`type`: Unit, modifiers: StmtModifier): DeclareVarStmt = js.native
+  def toDeclStmt(`type`: Type): DeclareVarStmt = js.native
+  def toDeclStmt(`type`: Type, modifiers: StmtModifier): DeclareVarStmt = js.native
+  
+  var value: Expression = js.native
 }

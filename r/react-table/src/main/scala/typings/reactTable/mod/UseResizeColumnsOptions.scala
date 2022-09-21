@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UseResizeColumnsOptions[D /* <: js.Object */] extends StObject {
   
+  var autoResetResize: js.UndefOr[Boolean] = js.undefined
+  
   var disableResizing: js.UndefOr[Boolean] = js.undefined
 }
 object UseResizeColumnsOptions {
@@ -16,6 +18,10 @@ object UseResizeColumnsOptions {
   }
   
   extension [Self <: UseResizeColumnsOptions[?], D /* <: js.Object */](x: Self & UseResizeColumnsOptions[D]) {
+    
+    inline def setAutoResetResize(value: Boolean): Self = StObject.set(x, "autoResetResize", value.asInstanceOf[js.Any])
+    
+    inline def setAutoResetResizeUndefined: Self = StObject.set(x, "autoResetResize", js.undefined)
     
     inline def setDisableResizing(value: Boolean): Self = StObject.set(x, "disableResizing", value.asInstanceOf[js.Any])
     

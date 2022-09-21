@@ -17,7 +17,7 @@ trait AssociateTargetsWithJobRequest extends StObject {
   var jobId: JobId
   
   /**
-    * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, AWS IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
+    * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, Amazon Web Services IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
     */
   var namespaceId: js.UndefOr[NamespaceId] = js.undefined
   
@@ -47,6 +47,6 @@ object AssociateTargetsWithJobRequest {
     
     inline def setTargets(value: JobTargets): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: TargetArn*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: TargetArn*): Self = StObject.set(x, "targets", js.Array(value*))
   }
 }

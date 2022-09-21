@@ -14,10 +14,9 @@ object transitionablePortalMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/addons/TransitionablePortal", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[TransitionablePortalProps, ComponentState, js.Any] {
+  open class default protected () extends Component[TransitionablePortalProps, ComponentState, Any] {
     def this(props: TransitionablePortalProps) = this()
-    def this(props: TransitionablePortalProps, context: js.Any) = this()
+    def this(props: TransitionablePortalProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/addons/TransitionablePortal", JSImport.Default)
   @js.native

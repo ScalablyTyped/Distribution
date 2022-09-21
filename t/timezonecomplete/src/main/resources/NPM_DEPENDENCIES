@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "timezonecomplete" : "5.11.2"
+      "timezonecomplete" : "5.12.4"
     }
   ],
   "test-dependencies" : [
     {
-      "timezonecomplete" : "5.11.2"
+      "timezonecomplete" : "5.12.4"
     }
   ],
   "compile-devDependencies" : [

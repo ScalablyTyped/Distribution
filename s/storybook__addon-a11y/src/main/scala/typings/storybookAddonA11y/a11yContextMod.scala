@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object a11yContextMod {
   
-  @JSImport("@storybook/addon-a11y/dist/components/A11yContext", JSImport.Namespace)
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/A11yContext", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-a11y/dist/components/A11yContext", "A11yContext")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/A11yContext", "A11yContext")
   @js.native
   val A11yContext: Context[A11yContextStore] = js.native
   
-  @JSImport("@storybook/addon-a11y/dist/components/A11yContext", "A11yContextProvider")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/A11yContext", "A11yContextProvider")
   @js.native
   val A11yContextProvider: FC[A11yContextProviderProps] = js.native
   
@@ -77,7 +77,7 @@ object a11yContextMod {
       
       inline def setHighlighted(value: js.Array[String]): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
       
-      inline def setHighlightedVarargs(value: String*): Self = StObject.set(x, "highlighted", js.Array(value :_*))
+      inline def setHighlightedVarargs(value: String*): Self = StObject.set(x, "highlighted", js.Array(value*))
       
       inline def setResults(value: Results): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
@@ -110,15 +110,15 @@ object a11yContextMod {
       
       inline def setIncomplete(value: js.Array[Result]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
       
-      inline def setIncompleteVarargs(value: Result*): Self = StObject.set(x, "incomplete", js.Array(value :_*))
+      inline def setIncompleteVarargs(value: Result*): Self = StObject.set(x, "incomplete", js.Array(value*))
       
       inline def setPasses(value: js.Array[Result]): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
       
-      inline def setPassesVarargs(value: Result*): Self = StObject.set(x, "passes", js.Array(value :_*))
+      inline def setPassesVarargs(value: Result*): Self = StObject.set(x, "passes", js.Array(value*))
       
       inline def setViolations(value: js.Array[Result]): Self = StObject.set(x, "violations", value.asInstanceOf[js.Any])
       
-      inline def setViolationsVarargs(value: Result*): Self = StObject.set(x, "violations", js.Array(value :_*))
+      inline def setViolationsVarargs(value: Result*): Self = StObject.set(x, "violations", js.Array(value*))
     }
   }
 }

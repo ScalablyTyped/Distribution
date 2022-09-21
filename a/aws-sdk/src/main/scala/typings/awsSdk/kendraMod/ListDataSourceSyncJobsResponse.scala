@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDataSourceSyncJobsResponse extends StObject {
   
   /**
-    * A history of synchronization jobs for the data source.
+    * A history of synchronization jobs for the data source connector.
     */
   var History: js.UndefOr[DataSourceSyncJobHistoryList] = js.undefined
   
   /**
-    * The GetDataSourceSyncJobHistory operation returns a page of vocabularies at a time. The maximum size of the page is set by the MaxResults parameter. If there are more jobs in the list than the page size, Amazon Kendra returns the NextPage token. Include the token in the next request to the GetDataSourceSyncJobHistory operation to return in the next page of jobs.
+    * If the response is truncated, Amazon Kendra returns this token that you can use in the subsequent request to retrieve the next set of jobs.
     */
   var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListDataSourceSyncJobsResponse {
     
     inline def setHistoryUndefined: Self = StObject.set(x, "History", js.undefined)
     
-    inline def setHistoryVarargs(value: DataSourceSyncJob*): Self = StObject.set(x, "History", js.Array(value :_*))
+    inline def setHistoryVarargs(value: DataSourceSyncJob*): Self = StObject.set(x, "History", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

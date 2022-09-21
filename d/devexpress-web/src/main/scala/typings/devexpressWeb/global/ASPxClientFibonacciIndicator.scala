@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFibonacciIndicator")
 @js.native
-class ASPxClientFibonacciIndicator ()
+open class ASPxClientFibonacciIndicator ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFinancialIndicator {
   

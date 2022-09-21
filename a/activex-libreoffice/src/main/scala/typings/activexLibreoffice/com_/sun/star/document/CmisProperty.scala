@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CmisProperty extends StObject {
   
   /** specifies the possible choices of the values. */
-  var Choices: js.Any
+  var Choices: Any
   
   /** unique ID of the Cmis property */
   var Id: String
@@ -32,12 +32,12 @@ trait CmisProperty extends StObject {
   var Updatable: Boolean
   
   /** specifies value of the property */
-  var Value: js.Any
+  var Value: Any
 }
 object CmisProperty {
   
   inline def apply(
-    Choices: js.Any,
+    Choices: Any,
     Id: String,
     MultiValued: Boolean,
     Name: String,
@@ -45,7 +45,7 @@ object CmisProperty {
     Required: Boolean,
     Type: String,
     Updatable: Boolean,
-    Value: js.Any
+    Value: Any
   ): CmisProperty = {
     val __obj = js.Dynamic.literal(Choices = Choices.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], MultiValued = MultiValued.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OpenChoice = OpenChoice.asInstanceOf[js.Any], Required = Required.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Updatable = Updatable.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmisProperty]
@@ -53,7 +53,7 @@ object CmisProperty {
   
   extension [Self <: CmisProperty](x: Self) {
     
-    inline def setChoices(value: js.Any): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
+    inline def setChoices(value: Any): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
@@ -69,6 +69,6 @@ object CmisProperty {
     
     inline def setUpdatable(value: Boolean): Self = StObject.set(x, "Updatable", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

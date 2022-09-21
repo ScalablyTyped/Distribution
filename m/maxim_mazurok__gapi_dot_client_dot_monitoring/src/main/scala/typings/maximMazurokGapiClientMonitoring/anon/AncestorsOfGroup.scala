@@ -43,7 +43,7 @@ trait AncestorsOfGroup extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The project whose groups are to be listed. The format is: projects/[PROJECT_ID_OR_NUMBER] */
+  /** Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) whose groups are to be listed. The format is: projects/[PROJECT_ID_OR_NUMBER] */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

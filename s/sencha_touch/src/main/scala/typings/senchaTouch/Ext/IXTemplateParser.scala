@@ -13,7 +13,7 @@ trait IXTemplateParser
     * @param actions Object Other actions keyed by the attribute name (such as 'exec').
     */
   var doCase: js.UndefOr[
-    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] This method is called to process lt tpl default gt */
@@ -27,7 +27,7 @@ trait IXTemplateParser
     * @param actions Object Other actions keyed by the attribute name (such as 'exec').
     */
   var doElseIf: js.UndefOr[
-    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] This method is called to process lt tpl gt
@@ -35,7 +35,7 @@ trait IXTemplateParser
     * @param actions Object The other actions keyed by the attribute name (such as 'exec').
     */
   var doEnd: js.UndefOr[
-    js.Function2[/* type */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* type */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] This method is called to process text
@@ -48,7 +48,7 @@ trait IXTemplateParser
     * @param actions Object Other actions keyed by the attribute name.
     */
   var doExec: js.UndefOr[
-    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] This method is called to process expressions like  expr
@@ -61,7 +61,7 @@ trait IXTemplateParser
     * @param actions Object Other actions keyed by the attribute name (such as 'exec').
     */
   var doFor: js.UndefOr[
-    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] This method is called to process lt tpl if action gt
@@ -69,7 +69,7 @@ trait IXTemplateParser
     * @param actions Object Other actions keyed by the attribute name (such as 'exec').
     */
   var doIf: js.UndefOr[
-    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] This method is called to process lt tpl switch action gt
@@ -77,7 +77,7 @@ trait IXTemplateParser
     * @param actions Object Other actions keyed by the attribute name (such as 'exec').
     */
   var doSwitch: js.UndefOr[
-    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] This method is called to process simple tags like tag
@@ -105,7 +105,7 @@ object IXTemplateParser {
   
   extension [Self <: IXTemplateParser](x: Self) {
     
-    inline def setDoCase(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doCase", js.Any.fromFunction2(value))
+    inline def setDoCase(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "doCase", js.Any.fromFunction2(value))
     
     inline def setDoCaseUndefined: Self = StObject.set(x, "doCase", js.undefined)
     
@@ -115,13 +115,13 @@ object IXTemplateParser {
     
     inline def setDoElse(value: () => Unit): Self = StObject.set(x, "doElse", js.Any.fromFunction0(value))
     
-    inline def setDoElseIf(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doElseIf", js.Any.fromFunction2(value))
+    inline def setDoElseIf(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "doElseIf", js.Any.fromFunction2(value))
     
     inline def setDoElseIfUndefined: Self = StObject.set(x, "doElseIf", js.undefined)
     
     inline def setDoElseUndefined: Self = StObject.set(x, "doElse", js.undefined)
     
-    inline def setDoEnd(value: (/* type */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doEnd", js.Any.fromFunction2(value))
+    inline def setDoEnd(value: (/* type */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "doEnd", js.Any.fromFunction2(value))
     
     inline def setDoEndUndefined: Self = StObject.set(x, "doEnd", js.undefined)
     
@@ -129,7 +129,7 @@ object IXTemplateParser {
     
     inline def setDoEvalUndefined: Self = StObject.set(x, "doEval", js.undefined)
     
-    inline def setDoExec(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doExec", js.Any.fromFunction2(value))
+    inline def setDoExec(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "doExec", js.Any.fromFunction2(value))
     
     inline def setDoExecUndefined: Self = StObject.set(x, "doExec", js.undefined)
     
@@ -137,15 +137,15 @@ object IXTemplateParser {
     
     inline def setDoExprUndefined: Self = StObject.set(x, "doExpr", js.undefined)
     
-    inline def setDoFor(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doFor", js.Any.fromFunction2(value))
+    inline def setDoFor(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "doFor", js.Any.fromFunction2(value))
     
     inline def setDoForUndefined: Self = StObject.set(x, "doFor", js.undefined)
     
-    inline def setDoIf(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doIf", js.Any.fromFunction2(value))
+    inline def setDoIf(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "doIf", js.Any.fromFunction2(value))
     
     inline def setDoIfUndefined: Self = StObject.set(x, "doIf", js.undefined)
     
-    inline def setDoSwitch(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doSwitch", js.Any.fromFunction2(value))
+    inline def setDoSwitch(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "doSwitch", js.Any.fromFunction2(value))
     
     inline def setDoSwitchUndefined: Self = StObject.set(x, "doSwitch", js.undefined)
     

@@ -19,8 +19,7 @@ object defaultTabBarMod {
   
   @JSImport("rmc-tabs/lib/DefaultTabBar", "DefaultTabBar")
   @js.native
-  class DefaultTabBar protected ()
-    extends PureComponent[PropsType, StateType, js.Any] {
+  open class DefaultTabBar protected () extends PureComponent[PropsType, StateType, Any] {
     def this(props: PropsType) = this()
     
     @JSName("componentWillReceiveProps")
@@ -31,14 +30,7 @@ object defaultTabBarMod {
     def getTransformByIndex(props: PropsType): ShowNext = js.native
     
     def isTabBarVertical(): Boolean = js.native
-    @JSName("isTabBarVertical")
-    def isTabBarVertical_bottom(position: bottom): Boolean = js.native
-    @JSName("isTabBarVertical")
-    def isTabBarVertical_left(position: left): Boolean = js.native
-    @JSName("isTabBarVertical")
-    def isTabBarVertical_right(position: right): Boolean = js.native
-    @JSName("isTabBarVertical")
-    def isTabBarVertical_top(position: top): Boolean = js.native
+    def isTabBarVertical(position: left | right | top | bottom): Boolean = js.native
     
     var layout: HTMLDivElement = js.native
     
@@ -65,7 +57,7 @@ object defaultTabBarMod {
   
   @JSImport("rmc-tabs/lib/DefaultTabBar", "StateType")
   @js.native
-  class StateType () extends StObject {
+  open class StateType () extends StObject {
     
     var isMoving: js.UndefOr[Boolean] = js.native
     

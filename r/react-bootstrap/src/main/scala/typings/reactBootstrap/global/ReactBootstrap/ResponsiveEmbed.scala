@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.ResponsiveEmbed")
 @js.native
-class ResponsiveEmbed ()
+open class ResponsiveEmbed ()
   extends typings.reactBootstrap.mod.ResponsiveEmbed

@@ -15,7 +15,7 @@ trait ScrollBar extends StObject {
     * Emitted when the scroll bar, well, scrolls.
     * @param e Contains one property, `"data"`, which indicates the current scroll top position
     **/
-  def onScroll(e: js.Any): Unit
+  def onScroll(e: Any): Unit
   
   /**
     * Sets the height of the scroll bar, in pixels.
@@ -39,7 +39,7 @@ object ScrollBar {
   
   inline def apply(
     getWidth: () => Double,
-    onScroll: js.Any => Unit,
+    onScroll: Any => Unit,
     setHeight: Double => Unit,
     setInnerHeight: Double => Unit,
     setScrollTop: Double => Unit
@@ -52,7 +52,7 @@ object ScrollBar {
     
     inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    inline def setOnScroll(value: js.Any => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: Any => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     

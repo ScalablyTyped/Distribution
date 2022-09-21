@@ -8,7 +8,7 @@ object geoObject {
   
   @JSImport("yandex-maps", "geoObject.Balloon")
   @js.native
-  class Balloon protected ()
+  open class Balloon protected ()
     extends StObject
        with IBalloonManager[GeoObject_[IGeometry, js.Object]] {
     def this(geoObject: GeoObject_[IGeometry, js.Object]) = this()
@@ -19,7 +19,7 @@ object geoObject {
   
   @JSImport("yandex-maps", "geoObject.Hint")
   @js.native
-  class Hint protected ()
+  open class Hint protected ()
     extends StObject
        with IPopupManager[GeoObject_[IGeometry, js.Object]] {
     def this(geoObject: GeoObject_[IGeometry, js.Object]) = this()
@@ -34,7 +34,7 @@ object geoObject {
   - typings.yandexMaps.mod.ICustomizable because Already inherited
   - typings.yandexMaps.mod.IGeoObjectSequence because var conflicts: events, options. Inlined each, each, get, getBounds, getIterator, getLength, getPixelBounds, indexOf */ @JSImport("yandex-maps", "geoObject.Sequence")
   @js.native
-  class Sequence protected ()
+  open class Sequence protected ()
     extends StObject
        with IGeoObject[IGeometry] {
     def this(geoObject: GeoObject_[IGeometry, js.Object]) = this()

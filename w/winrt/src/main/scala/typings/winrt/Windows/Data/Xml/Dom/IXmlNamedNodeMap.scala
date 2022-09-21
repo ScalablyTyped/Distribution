@@ -12,13 +12,13 @@ trait IXmlNamedNodeMap
   
   def getNamedItem(name: String): IXmlNode = js.native
   
-  def getNamedItemNS(namespaceUri: js.Any, name: String): IXmlNode = js.native
+  def getNamedItemNS(namespaceUri: Any, name: String): IXmlNode = js.native
   
   def item(index: Double): IXmlNode = js.native
   
   def removeNamedItem(name: String): IXmlNode = js.native
   
-  def removeNamedItemNS(namespaceUri: js.Any, name: String): IXmlNode = js.native
+  def removeNamedItemNS(namespaceUri: Any, name: String): IXmlNode = js.native
   
   def setNamedItem(node: IXmlNode): IXmlNode = js.native
   

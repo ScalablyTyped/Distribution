@@ -1,7 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`standard-time`
+import typings.arcgisJsApi.arcgisJsApiStrings.`vector-direction`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-magdir`
+import typings.arcgisJsApi.arcgisJsApiStrings.`vector-magnitude`
+import typings.arcgisJsApi.arcgisJsApiStrings.`vector-u`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-uv`
+import typings.arcgisJsApi.arcgisJsApiStrings.`vector-v`
 import typings.arcgisJsApi.arcgisJsApiStrings.elevation
 import typings.arcgisJsApi.arcgisJsApiStrings.f32
 import typings.arcgisJsApi.arcgisJsApiStrings.f64
@@ -52,7 +57,7 @@ trait RasterInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#dataType)
     */
-  var dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir` = js.native
+  var dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-u` | `vector-v` | `vector-magdir` | `vector-magnitude` | `vector-direction` | `standard-time` = js.native
   
   /**
     * The minimum and maximum X and Y coordinates of a bounding box containing all the raster data.
@@ -60,6 +65,13 @@ trait RasterInfo
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#extent)
     */
   var extent: Extent = js.native
+  
+  /**
+    * Indicates whether the source multidimensional data has been transposed
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#hasMultidimensionalTranspose)
+    */
+  var hasMultidimensionalTranspose: Boolean = js.native
   
   /**
     * Raster height (row count) in pixels.
@@ -73,21 +85,21 @@ trait RasterInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
     */
-  var histograms: js.Array[js.Any] = js.native
+  var histograms: js.Array[Any] = js.native
   
   /**
     * Raster key properties.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#keyProperties)
     */
-  var keyProperties: js.Any = js.native
+  var keyProperties: Any = js.native
   
   /**
-    * The multidimensional information associated with the raster.
+    * Returns the multidimensional information associated with the raster service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#multidimensionalInfo)
     */
-  var multidimensionalInfo: js.Any = js.native
+  var multidimensionalInfo: RasterMultidimensionalInfo = js.native
   
   /**
     * The pixel value representing no available information.

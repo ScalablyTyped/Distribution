@@ -1,6 +1,5 @@
 package typings.uriJs
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -171,48 +170,48 @@ object mod {
   
   trait URIRegExps extends StObject {
     
-    var ESCAPE: RegExp
+    var ESCAPE: js.RegExp
     
-    var IPV4ADDRESS: RegExp
+    var IPV4ADDRESS: js.RegExp
     
-    var IPV6ADDRESS: RegExp
+    var IPV6ADDRESS: js.RegExp
     
-    var NOT_FRAGMENT: RegExp
+    var NOT_FRAGMENT: js.RegExp
     
-    var NOT_HOST: RegExp
+    var NOT_HOST: js.RegExp
     
-    var NOT_PATH: RegExp
+    var NOT_PATH: js.RegExp
     
-    var NOT_PATH_NOSCHEME: RegExp
+    var NOT_PATH_NOSCHEME: js.RegExp
     
-    var NOT_QUERY: RegExp
+    var NOT_QUERY: js.RegExp
     
-    var NOT_SCHEME: RegExp
+    var NOT_SCHEME: js.RegExp
     
-    var NOT_USERINFO: RegExp
+    var NOT_USERINFO: js.RegExp
     
-    var OTHER_CHARS: RegExp
+    var OTHER_CHARS: js.RegExp
     
-    var PCT_ENCODED: RegExp
+    var PCT_ENCODED: js.RegExp
     
-    var UNRESERVED: RegExp
+    var UNRESERVED: js.RegExp
   }
   object URIRegExps {
     
     inline def apply(
-      ESCAPE: RegExp,
-      IPV4ADDRESS: RegExp,
-      IPV6ADDRESS: RegExp,
-      NOT_FRAGMENT: RegExp,
-      NOT_HOST: RegExp,
-      NOT_PATH: RegExp,
-      NOT_PATH_NOSCHEME: RegExp,
-      NOT_QUERY: RegExp,
-      NOT_SCHEME: RegExp,
-      NOT_USERINFO: RegExp,
-      OTHER_CHARS: RegExp,
-      PCT_ENCODED: RegExp,
-      UNRESERVED: RegExp
+      ESCAPE: js.RegExp,
+      IPV4ADDRESS: js.RegExp,
+      IPV6ADDRESS: js.RegExp,
+      NOT_FRAGMENT: js.RegExp,
+      NOT_HOST: js.RegExp,
+      NOT_PATH: js.RegExp,
+      NOT_PATH_NOSCHEME: js.RegExp,
+      NOT_QUERY: js.RegExp,
+      NOT_SCHEME: js.RegExp,
+      NOT_USERINFO: js.RegExp,
+      OTHER_CHARS: js.RegExp,
+      PCT_ENCODED: js.RegExp,
+      UNRESERVED: js.RegExp
     ): URIRegExps = {
       val __obj = js.Dynamic.literal(ESCAPE = ESCAPE.asInstanceOf[js.Any], IPV4ADDRESS = IPV4ADDRESS.asInstanceOf[js.Any], IPV6ADDRESS = IPV6ADDRESS.asInstanceOf[js.Any], NOT_FRAGMENT = NOT_FRAGMENT.asInstanceOf[js.Any], NOT_HOST = NOT_HOST.asInstanceOf[js.Any], NOT_PATH = NOT_PATH.asInstanceOf[js.Any], NOT_PATH_NOSCHEME = NOT_PATH_NOSCHEME.asInstanceOf[js.Any], NOT_QUERY = NOT_QUERY.asInstanceOf[js.Any], NOT_SCHEME = NOT_SCHEME.asInstanceOf[js.Any], NOT_USERINFO = NOT_USERINFO.asInstanceOf[js.Any], OTHER_CHARS = OTHER_CHARS.asInstanceOf[js.Any], PCT_ENCODED = PCT_ENCODED.asInstanceOf[js.Any], UNRESERVED = UNRESERVED.asInstanceOf[js.Any])
       __obj.asInstanceOf[URIRegExps]
@@ -220,31 +219,31 @@ object mod {
     
     extension [Self <: URIRegExps](x: Self) {
       
-      inline def setESCAPE(value: RegExp): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
+      inline def setESCAPE(value: js.RegExp): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
       
-      inline def setIPV4ADDRESS(value: RegExp): Self = StObject.set(x, "IPV4ADDRESS", value.asInstanceOf[js.Any])
+      inline def setIPV4ADDRESS(value: js.RegExp): Self = StObject.set(x, "IPV4ADDRESS", value.asInstanceOf[js.Any])
       
-      inline def setIPV6ADDRESS(value: RegExp): Self = StObject.set(x, "IPV6ADDRESS", value.asInstanceOf[js.Any])
+      inline def setIPV6ADDRESS(value: js.RegExp): Self = StObject.set(x, "IPV6ADDRESS", value.asInstanceOf[js.Any])
       
-      inline def setNOT_FRAGMENT(value: RegExp): Self = StObject.set(x, "NOT_FRAGMENT", value.asInstanceOf[js.Any])
+      inline def setNOT_FRAGMENT(value: js.RegExp): Self = StObject.set(x, "NOT_FRAGMENT", value.asInstanceOf[js.Any])
       
-      inline def setNOT_HOST(value: RegExp): Self = StObject.set(x, "NOT_HOST", value.asInstanceOf[js.Any])
+      inline def setNOT_HOST(value: js.RegExp): Self = StObject.set(x, "NOT_HOST", value.asInstanceOf[js.Any])
       
-      inline def setNOT_PATH(value: RegExp): Self = StObject.set(x, "NOT_PATH", value.asInstanceOf[js.Any])
+      inline def setNOT_PATH(value: js.RegExp): Self = StObject.set(x, "NOT_PATH", value.asInstanceOf[js.Any])
       
-      inline def setNOT_PATH_NOSCHEME(value: RegExp): Self = StObject.set(x, "NOT_PATH_NOSCHEME", value.asInstanceOf[js.Any])
+      inline def setNOT_PATH_NOSCHEME(value: js.RegExp): Self = StObject.set(x, "NOT_PATH_NOSCHEME", value.asInstanceOf[js.Any])
       
-      inline def setNOT_QUERY(value: RegExp): Self = StObject.set(x, "NOT_QUERY", value.asInstanceOf[js.Any])
+      inline def setNOT_QUERY(value: js.RegExp): Self = StObject.set(x, "NOT_QUERY", value.asInstanceOf[js.Any])
       
-      inline def setNOT_SCHEME(value: RegExp): Self = StObject.set(x, "NOT_SCHEME", value.asInstanceOf[js.Any])
+      inline def setNOT_SCHEME(value: js.RegExp): Self = StObject.set(x, "NOT_SCHEME", value.asInstanceOf[js.Any])
       
-      inline def setNOT_USERINFO(value: RegExp): Self = StObject.set(x, "NOT_USERINFO", value.asInstanceOf[js.Any])
+      inline def setNOT_USERINFO(value: js.RegExp): Self = StObject.set(x, "NOT_USERINFO", value.asInstanceOf[js.Any])
       
-      inline def setOTHER_CHARS(value: RegExp): Self = StObject.set(x, "OTHER_CHARS", value.asInstanceOf[js.Any])
+      inline def setOTHER_CHARS(value: js.RegExp): Self = StObject.set(x, "OTHER_CHARS", value.asInstanceOf[js.Any])
       
-      inline def setPCT_ENCODED(value: RegExp): Self = StObject.set(x, "PCT_ENCODED", value.asInstanceOf[js.Any])
+      inline def setPCT_ENCODED(value: js.RegExp): Self = StObject.set(x, "PCT_ENCODED", value.asInstanceOf[js.Any])
       
-      inline def setUNRESERVED(value: RegExp): Self = StObject.set(x, "UNRESERVED", value.asInstanceOf[js.Any])
+      inline def setUNRESERVED(value: js.RegExp): Self = StObject.set(x, "UNRESERVED", value.asInstanceOf[js.Any])
     }
   }
   

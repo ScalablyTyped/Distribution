@@ -33,6 +33,6 @@ object ListProvisioningArtifactsForServiceActionOutput {
     
     inline def setProvisioningArtifactViewsUndefined: Self = StObject.set(x, "ProvisioningArtifactViews", js.undefined)
     
-    inline def setProvisioningArtifactViewsVarargs(value: ProvisioningArtifactView*): Self = StObject.set(x, "ProvisioningArtifactViews", js.Array(value :_*))
+    inline def setProvisioningArtifactViewsVarargs(value: ProvisioningArtifactView*): Self = StObject.set(x, "ProvisioningArtifactViews", js.Array(value*))
   }
 }

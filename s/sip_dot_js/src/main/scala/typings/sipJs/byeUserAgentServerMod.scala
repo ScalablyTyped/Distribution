@@ -12,7 +12,7 @@ object byeUserAgentServerMod {
   
   @JSImport("sip.js/lib/core/user-agents/bye-user-agent-server", "ByeUserAgentServer")
   @js.native
-  class ByeUserAgentServer protected () extends UserAgentServer {
+  open class ByeUserAgentServer protected () extends UserAgentServer {
     def this(dialog: SessionDialog, message: IncomingRequestMessage) = this()
     def this(dialog: SessionDialog, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
   }

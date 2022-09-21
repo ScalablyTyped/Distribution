@@ -1,6 +1,7 @@
 package typings.ioTs
 
 import org.scalablytyped.runtime.TopLevel
+import typings.fpTs.functionMod.Refinement
 import typings.ioTs.schemableMod.Literal
 import typings.ioTs.schemableMod.Schemable1
 import typings.ioTs.schemableMod.WithRefine1
@@ -29,11 +30,11 @@ object guardMod {
   
   @JSImport("io-ts/lib/Guard", "UnknownArray")
   @js.native
-  val UnknownArray: Guard[js.Any, js.Array[js.Any]] = js.native
+  val UnknownArray: Guard[Any, js.Array[Any]] = js.native
   
   @JSImport("io-ts/lib/Guard", "UnknownRecord")
   @js.native
-  val UnknownRecord: Guard[js.Any, Record[String, js.Any]] = js.native
+  val UnknownRecord: Guard[Any, Record[String, Any]] = js.native
   
   @JSImport("io-ts/lib/Guard", "WithRefine")
   @js.native
@@ -49,27 +50,27 @@ object guardMod {
   
   inline def alt[I, A /* <: I */](that: js.Function0[Guard[I, A]]): js.Function1[/* me */ Guard[I, A], Guard[I, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* me */ Guard[I, A], Guard[I, A]]]
   
-  inline def array[A](item: Guard[js.Any, A]): Guard[js.Any, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(item.asInstanceOf[js.Any]).asInstanceOf[Guard[js.Any, js.Array[A]]]
+  inline def array[A](item: Guard[Any, A]): Guard[Any, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(item.asInstanceOf[js.Any]).asInstanceOf[Guard[Any, js.Array[A]]]
   
   @JSImport("io-ts/lib/Guard", "boolean")
   @js.native
-  val boolean: Guard[js.Any, Boolean] = js.native
+  val boolean: Guard[Any, Boolean] = js.native
   
   inline def compose[I, A /* <: I */, B /* <: A */](to: Guard[A, B]): js.Function1[/* from */ Guard[I, A], Guard[I, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(to.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* from */ Guard[I, A], Guard[I, B]]]
   
   inline def id[A](): Guard[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[Guard[A, A]]
   
-  inline def intersect[B](right: Guard[js.Any, B]): js.Function1[/* left */ Guard[js.Any, js.Any], Guard[js.Any, js.Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ Guard[js.Any, js.Any], Guard[js.Any, js.Any & B]]]
+  inline def intersect[B](right: Guard[Any, B]): js.Function1[/* left */ Guard[Any, Any], Guard[Any, Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ Guard[Any, Any], Guard[Any, Any & B]]]
   
-  inline def `lazy`[A](f: js.Function0[Guard[js.Any, A]]): Guard[js.Any, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(f.asInstanceOf[js.Any]).asInstanceOf[Guard[js.Any, A]]
+  inline def `lazy`[A](f: js.Function0[Guard[Any, A]]): Guard[Any, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(f.asInstanceOf[js.Any]).asInstanceOf[Guard[Any, A]]
   
-  inline def literal[A /* <: Array[Literal] */](
+  inline def literal[A /* <: Array[L] */, L /* <: Literal */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param values because its type A is not an array type */ values: A
   ): Guard[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(values.asInstanceOf[js.Any]).asInstanceOf[Guard[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any
   ]]
   
@@ -77,21 +78,21 @@ object guardMod {
   
   @JSImport("io-ts/lib/Guard", "number")
   @js.native
-  val number: Guard[js.Any, Double] = js.native
+  val number: Guard[Any, Double] = js.native
   
   inline def partial[A](
     properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: io-ts.io-ts/lib/Guard.Guard<unknown, A[K]>}
     */ typings.ioTs.ioTsStrings.partial & TopLevel[A]
   ): Guard[
-    js.Any, 
+    Any, 
     Partial[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K_1 in keyof A ]: A[K_1]}
     */ typings.ioTs.ioTsStrings.partial & TopLevel[A]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(properties.asInstanceOf[js.Any]).asInstanceOf[Guard[
-    js.Any, 
+    Any, 
     Partial[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K_1 in keyof A ]: A[K_1]}
@@ -99,63 +100,81 @@ object guardMod {
     ]
   ]]
   
-  inline def record[A](codomain: Guard[js.Any, A]): Guard[js.Any, Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("record")(codomain.asInstanceOf[js.Any]).asInstanceOf[Guard[js.Any, Record[String, A]]]
+  inline def readonly[I, A /* <: I */](guard: Guard[I, A]): Guard[I, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(guard.asInstanceOf[js.Any]).asInstanceOf[Guard[I, A]]
   
-  inline def refine[I, A /* <: I */, B /* <: A */](refinement: js.Function1[/* a */ A, /* is B */ Boolean]): js.Function1[/* from */ Guard[I, A], Guard[I, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("refine")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* from */ Guard[I, A], Guard[I, B]]]
+  inline def record[A](codomain: Guard[Any, A]): Guard[Any, Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("record")(codomain.asInstanceOf[js.Any]).asInstanceOf[Guard[Any, Record[String, A]]]
+  
+  inline def refine[I, A /* <: I */, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* from */ Guard[I, A], Guard[I, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("refine")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* from */ Guard[I, A], Guard[I, B]]]
   
   @JSImport("io-ts/lib/Guard", "string")
   @js.native
-  val string: Guard[js.Any, String] = js.native
+  val string: Guard[Any, String] = js.native
+  
+  inline def struct[A](
+    properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof A ]: io-ts.io-ts/lib/Guard.Guard<unknown, A[K]>}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[A]
+  ): Guard[
+    Any, 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K_1 in keyof A ]: A[K_1]}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[A]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("struct")(properties.asInstanceOf[js.Any]).asInstanceOf[Guard[
+    Any, 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K_1 in keyof A ]: A[K_1]}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[A]
+  ]]
   
   inline def sum[T /* <: String */](tag: T): js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: io-ts.io-ts/lib/Guard.Guard<unknown, any[K] & std.Record<T, K>>}
-    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[js.Any], 
+    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[Any], 
     Guard[
-      js.Any, 
+      Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: io-ts.io-ts/lib/Guard.Guard<unknown, any[K] & std.Record<T, K>>}
-    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[js.Any], 
+    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[Any], 
     Guard[
-      js.Any, 
+      Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
     ]
   ]]
   
-  inline def tuple[A /* <: js.Array[js.Any] */](
+  inline def tuple[A /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param components because its type {[ K in keyof A ]: Guard<unknown, A[K]>} is not an array type */ components: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: io-ts.io-ts/lib/Guard.Guard<unknown, A[K]>}
     */ typings.ioTs.ioTsStrings.tuple & TopLevel[A]
-  ): Guard[js.Any, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(components.asInstanceOf[js.Any]).asInstanceOf[Guard[js.Any, A]]
+  ): Guard[Any, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(components.asInstanceOf[js.Any]).asInstanceOf[Guard[Any, A]]
   
   inline def `type`[A](
     properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: io-ts.io-ts/lib/Guard.Guard<unknown, A[K]>}
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]
   ): Guard[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K_1 in keyof A ]: A[K_1]}
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(properties.asInstanceOf[js.Any]).asInstanceOf[Guard[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K_1 in keyof A ]: A[K_1]}
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]
   ]]
   
-  inline def union[A /* <: Array[js.Any] */](
+  inline def union[A /* <: Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param members because its type {[ K in keyof A ]: Guard<unknown, A[K]>} is not an array type */ members: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: io-ts.io-ts/lib/Guard.Guard<unknown, A[K]>}
     */ typings.ioTs.ioTsStrings.union & TopLevel[A]
   ): Guard[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(members.asInstanceOf[js.Any]).asInstanceOf[Guard[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any
   ]]
   
@@ -178,9 +197,9 @@ object guardMod {
     }
   }
   
-  type InputOf[G] = js.Any
+  type InputOf[G] = Any
   
-  type TypeOf[G] = js.Any
+  type TypeOf[G] = Any
   
   object fpTsLibHKTAugmentingMod {
     

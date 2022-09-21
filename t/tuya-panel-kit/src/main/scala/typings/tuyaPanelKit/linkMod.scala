@@ -27,7 +27,8 @@ object linkMod {
     
     var action: js.UndefOr[NavigationAction] = js.undefined
     
-    var children: ReactNode
+    @JSName("children")
+    var children_Props: ReactNode
     
     @JSName("onPress")
     var onPress_Props: js.UndefOr[

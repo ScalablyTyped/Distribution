@@ -3,7 +3,6 @@ package typings.awsSdkClientKinesisBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientKinesisBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesAddTagsToStreamInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -44,11 +43,11 @@ object typesAddTagsToStreamInputMod {
     /**
       * <p>A set of up to 10 key-value pairs to use to create the tags.</p>
       */
-    var Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])
+    var Tags: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])
   }
   object AddTagsToStreamInput {
     
-    inline def apply(StreamName: String, Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): AddTagsToStreamInput = {
+    inline def apply(StreamName: String, Tags: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): AddTagsToStreamInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddTagsToStreamInput]
     }
@@ -60,7 +59,7 @@ object typesAddTagsToStreamInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -71,7 +70,7 @@ object typesAddTagsToStreamInputMod {
       
       inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
-      inline def setTags(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaBackendServiceReference extends StObject {
   
-  var backendService: js.UndefOr[String] = js.undefined
+  var backendService: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBackendServiceReference {
   
@@ -18,6 +18,8 @@ object SchemaBackendServiceReference {
   extension [Self <: SchemaBackendServiceReference](x: Self) {
     
     inline def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
+    
+    inline def setBackendServiceNull: Self = StObject.set(x, "backendService", null)
     
     inline def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
   }

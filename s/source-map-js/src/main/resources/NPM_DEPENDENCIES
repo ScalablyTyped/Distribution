@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "source-map-js" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "source-map-js" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

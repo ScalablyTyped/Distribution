@@ -9,5 +9,5 @@ object monoVmMod {
   
   @JSImport("app-builder-lib/out/vm/MonoVm", "MonoVmManager")
   @js.native
-  class MonoVmManager () extends VmManager
+  open class MonoVmManager () extends VmManager
 }

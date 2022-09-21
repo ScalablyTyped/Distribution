@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CustomAsyncMatcher extends StObject {
   
-  def compare(actual: js.Any, expected: js.Any*): js.Thenable[CustomMatcherResult] = js.native
-  def compare[T](actual: T, expected: T, args: js.Any*): js.Thenable[CustomMatcherResult] = js.native
+  def compare(actual: scala.Any, expected: scala.Any*): js.Thenable[CustomMatcherResult] = js.native
+  def compare[T](actual: T, expected: T, args: scala.Any*): js.Thenable[CustomMatcherResult] = js.native
   
   var negativeCompare: (js.UndefOr[
     js.Function3[
-      /* actual */ js.Any, 
-      /* expected */ js.Any, 
-      /* repeated */ js.Any, 
+      /* actual */ scala.Any, 
+      /* expected */ scala.Any, 
+      /* repeated */ scala.Any, 
       js.Thenable[CustomMatcherResult]
     ]
   ]) & (js.UndefOr[
-    js.Function2[/* actual */ js.Any, /* repeated */ js.Any, js.Thenable[CustomMatcherResult]]
+    js.Function2[/* actual */ scala.Any, /* repeated */ scala.Any, js.Thenable[CustomMatcherResult]]
   ]) = js.native
 }

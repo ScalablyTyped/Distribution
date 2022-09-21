@@ -1,9 +1,5 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,25 +9,22 @@ trait ParamsResourceProjectsKnowledgebasesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * The filter expression used to filter knowledge bases returned by the list method. The expression has the following syntax: [AND ] ... The following fields and operators are supported: * display_name with has(:) operator * language_code with equals(=) operator Examples: * 'language_code=en-us' matches knowledge bases with en-us language code. * 'display_name:articles' matches knowledge bases whose display name contains "articles". * 'display_name:"Best Articles"' matches knowledge bases whose display name contains "Best Articles". * 'language_code=en-gb AND display_name=articles' matches all knowledge bases whose display name contains "articles" and whose language code is "en-gb". Note: An empty filter string (i.e. "") is a no-op and will result in no filtering. For more information about filtering, see [API Filtering](https://aip.dev/160).
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. The maximum number of items to return in a single page. By
-    * default 10 and at most 100.
+    * The maximum number of items to return in a single page. By default 10 and at most 100.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional. The next_page_token value returned from a previous list
-    * request.
+    * The next_page_token value returned from a previous list request.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The project to list of knowledge bases for. Format:
-    * `projects/<Project ID>`.
+    * Required. The project to list of knowledge bases for. Format: `projects//locations/`.
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -44,9 +37,9 @@ object ParamsResourceProjectsKnowledgebasesList {
   
   extension [Self <: ParamsResourceProjectsKnowledgebasesList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

@@ -147,7 +147,7 @@ object association {
     var name: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Object) */
-    var storeConfig: js.UndefOr[js.Any] = js.undefined
+    var storeConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var `type`: js.UndefOr[String] = js.undefined
@@ -177,7 +177,7 @@ object association {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setStoreConfig(value: js.Any): Self = StObject.set(x, "storeConfig", value.asInstanceOf[js.Any])
+      inline def setStoreConfig(value: Any): Self = StObject.set(x, "storeConfig", value.asInstanceOf[js.Any])
       
       inline def setStoreConfigUndefined: Self = StObject.set(x, "storeConfig", js.undefined)
       

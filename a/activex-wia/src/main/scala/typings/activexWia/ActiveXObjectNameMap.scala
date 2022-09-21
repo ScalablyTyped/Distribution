@@ -29,9 +29,9 @@ trait ActiveXObjectNameMap extends StObject {
   
   /** Returns the specified item in the vector by position */
   @JSName("WIA.Vector")
-  def WIADotVector(Index: Double): js.Any
+  def WIADotVector(Index: Double): Any
   @JSName("WIA.Vector")
-  var WIADotVector_Original: Vector[js.Any]
+  var WIADotVector_Original: Vector[Any]
 }
 object ActiveXObjectNameMap {
   
@@ -41,7 +41,7 @@ object ActiveXObjectNameMap {
     WIADotImageFile: ImageFile,
     WIADotImageProcess: ImageProcess,
     WIADotRational: Rational,
-    WIADotVector: Vector[js.Any]
+    WIADotVector: Vector[Any]
   ): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("WIA.CommonDialog")(WIADotCommonDialog.asInstanceOf[js.Any])
@@ -65,6 +65,6 @@ object ActiveXObjectNameMap {
     
     inline def setWIADotRational(value: Rational): Self = StObject.set(x, "WIA.Rational", value.asInstanceOf[js.Any])
     
-    inline def setWIADotVector(value: Vector[js.Any]): Self = StObject.set(x, "WIA.Vector", value.asInstanceOf[js.Any])
+    inline def setWIADotVector(value: Vector[Any]): Self = StObject.set(x, "WIA.Vector", value.asInstanceOf[js.Any])
   }
 }

@@ -41,12 +41,12 @@ object GoogleActionsV2ExpectedInput {
     
     inline def setPossibleIntentsUndefined: Self = StObject.set(x, "possibleIntents", js.undefined)
     
-    inline def setPossibleIntentsVarargs(value: GoogleActionsV2ExpectedIntent*): Self = StObject.set(x, "possibleIntents", js.Array(value :_*))
+    inline def setPossibleIntentsVarargs(value: GoogleActionsV2ExpectedIntent*): Self = StObject.set(x, "possibleIntents", js.Array(value*))
     
     inline def setSpeechBiasingHints(value: js.Array[String]): Self = StObject.set(x, "speechBiasingHints", value.asInstanceOf[js.Any])
     
     inline def setSpeechBiasingHintsUndefined: Self = StObject.set(x, "speechBiasingHints", js.undefined)
     
-    inline def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value :_*))
+    inline def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value*))
   }
 }

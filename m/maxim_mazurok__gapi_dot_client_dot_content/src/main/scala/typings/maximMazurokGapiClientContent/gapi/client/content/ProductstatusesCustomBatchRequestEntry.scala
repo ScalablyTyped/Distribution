@@ -12,6 +12,7 @@ trait ProductstatusesCustomBatchRequestEntry extends StObject {
   /** If set, only issues for the specified destinations are returned, otherwise only issues for the Shopping destination. */
   var destinations: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** Deprecated: Setting this field has no effect and attributes are never included. */
   var includeAttributes: js.UndefOr[Boolean] = js.undefined
   
   /** The ID of the managing account. */
@@ -40,7 +41,7 @@ object ProductstatusesCustomBatchRequestEntry {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setIncludeAttributes(value: Boolean): Self = StObject.set(x, "includeAttributes", value.asInstanceOf[js.Any])
     

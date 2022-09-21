@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.ResponsiveMode")
 @js.native
-class ResponsiveMode protected ()
+open class ResponsiveMode protected ()
   extends StObject
      with typings.igniteUi.Infragistics.ResponsiveMode {
   def this(settings: ResponsiveModeSettings) = this()

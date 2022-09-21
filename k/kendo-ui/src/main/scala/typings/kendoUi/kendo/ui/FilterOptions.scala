@@ -13,7 +13,7 @@ trait FilterOptions extends StObject {
   
   var dataSource: js.UndefOr[DataSource] = js.undefined
   
-  var expression: js.UndefOr[js.Any] = js.undefined
+  var expression: js.UndefOr[Any] = js.undefined
   
   var expressionPreview: js.UndefOr[Boolean] = js.undefined
   
@@ -48,7 +48,7 @@ object FilterOptions {
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setExpression(value: js.Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     inline def setExpressionPreview(value: Boolean): Self = StObject.set(x, "expressionPreview", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object FilterOptions {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: FilterField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FilterField*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setMainLogic(value: String): Self = StObject.set(x, "mainLogic", value.asInstanceOf[js.Any])
     

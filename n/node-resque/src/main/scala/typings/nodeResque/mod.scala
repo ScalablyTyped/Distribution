@@ -19,7 +19,6 @@ import typings.nodeResque.nodeResqueStrings.start
 import typings.nodeResque.nodeResqueStrings.success
 import typings.nodeResque.nodeResqueStrings.transferredJob
 import typings.nodeResque.nodeResqueStrings.workingTimestamp
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object mod {
   
   @JSImport("node-resque", "Connection")
   @js.native
-  class Connection protected () extends EventEmitter {
+  open class Connection protected () extends EventEmitter {
     def this(options: ConnectionOptions) = this()
     
     def connect(): js.Promise[Unit] = js.native
@@ -38,7 +37,7 @@ object mod {
   
   @JSImport("node-resque", "Queue")
   @js.native
-  class Queue protected () extends EventEmitter {
+  open class Queue protected () extends EventEmitter {
     def this(options: QueueOptions) = this()
     def this(options: QueueOptions, jobs: JobsHash) = this()
     
@@ -51,13 +50,13 @@ object mod {
     def connect(): js.Promise[Unit] = js.native
     
     def del(queue: String, jobName: String): js.Promise[Double] = js.native
-    def del(queue: String, jobName: String, args: js.Array[js.Any]): js.Promise[Double] = js.native
-    def del(queue: String, jobName: String, args: js.Array[js.Any], count: Double): js.Promise[Double] = js.native
+    def del(queue: String, jobName: String, args: js.Array[Any]): js.Promise[Double] = js.native
+    def del(queue: String, jobName: String, args: js.Array[Any], count: Double): js.Promise[Double] = js.native
     def del(queue: String, jobName: String, args: Unit, count: Double): js.Promise[Double] = js.native
     
     def delDelayed(queue: String, jobName: String): js.Promise[js.Array[Double]] = js.native
-    def delDelayed(queue: String, jobName: String, args: js.Array[js.Any]): js.Promise[js.Array[Double]] = js.native
-    def delDelayed(queue: String, jobName: String, args: js.Array[js.Any], count: Double): js.Promise[js.Array[Double]] = js.native
+    def delDelayed(queue: String, jobName: String, args: js.Array[Any]): js.Promise[js.Array[Double]] = js.native
+    def delDelayed(queue: String, jobName: String, args: js.Array[Any], count: Double): js.Promise[js.Array[Double]] = js.native
     def delDelayed(queue: String, jobName: String, args: Unit, count: Double): js.Promise[js.Array[Double]] = js.native
     
     def delLock(lockName: String): js.Promise[Double] = js.native
@@ -67,18 +66,18 @@ object mod {
     def delayedAt(timestamp: Double): js.Promise[RTimestamp] = js.native
     
     def encode(queue: String, jobName: String): String = js.native
-    def encode(queue: String, jobName: String, args: js.Array[js.Any]): String = js.native
+    def encode(queue: String, jobName: String, args: js.Array[Any]): String = js.native
     
     def end(): js.Promise[Unit] = js.native
     
     def enqueue(queue: String, jobName: String): js.Promise[Unit] = js.native
-    def enqueue(queue: String, jobName: String, args: js.Array[js.Any]): js.Promise[Unit] = js.native
+    def enqueue(queue: String, jobName: String, args: js.Array[Any]): js.Promise[Unit] = js.native
     
     def enqueueAt(timestamp: Double, queue: String, jobName: String): js.Promise[Unit] = js.native
-    def enqueueAt(timestamp: Double, queue: String, jobName: String, args: js.Array[js.Any]): js.Promise[Unit] = js.native
+    def enqueueAt(timestamp: Double, queue: String, jobName: String, args: js.Array[Any]): js.Promise[Unit] = js.native
     
     def enqueueIn(milliseconds: Double, queue: String, jobName: String): js.Promise[Unit] = js.native
-    def enqueueIn(milliseconds: Double, queue: String, jobName: String, args: js.Array[js.Any]): js.Promise[Unit] = js.native
+    def enqueueIn(milliseconds: Double, queue: String, jobName: String, args: js.Array[Any]): js.Promise[Unit] = js.native
     
     def failed(start: Double, stop: Double): js.Promise[js.Array[ErrorPayload]] = js.native
     
@@ -91,12 +90,12 @@ object mod {
     def locks(): js.Promise[StringDictionary[String]] = js.native
     
     @JSName("on")
-    def on_error(event: error, cb: js.Function2[/* error */ Error, /* queue */ String, Unit]): this.type = js.native
+    def on_error(event: error, cb: js.Function2[/* error */ js.Error, /* queue */ String, Unit]): this.type = js.native
     
     @JSName("once")
-    def once_error(event: error, cb: js.Function2[/* error */ Error, /* queue */ String, Unit]): this.type = js.native
+    def once_error(event: error, cb: js.Function2[/* error */ js.Error, /* queue */ String, Unit]): this.type = js.native
     
-    def queued(queue: String, start: Double, stop: Double): js.Promise[js.Array[Job[js.Any]]] = js.native
+    def queued(queue: String, start: Double, stop: Double): js.Promise[js.Array[Job[Any]]] = js.native
     
     def queues(): js.Promise[js.Array[String]] = js.native
     
@@ -105,9 +104,9 @@ object mod {
     def retryAndRemoveFailed(failedJob: ErrorPayload): js.Promise[Unit] = js.native
     
     def scheduledAt(queue: String, jobName: String): js.Promise[js.Array[Double]] = js.native
-    def scheduledAt(queue: String, jobName: String, args: js.Array[js.Any]): js.Promise[js.Array[Double]] = js.native
+    def scheduledAt(queue: String, jobName: String, args: js.Array[Any]): js.Promise[js.Array[Double]] = js.native
     
-    def stats(): js.Promise[js.Any] = js.native
+    def stats(): js.Promise[Any] = js.native
     
     def timestamps(): js.Promise[js.Array[Double]] = js.native
     
@@ -118,7 +117,7 @@ object mod {
   
   @JSImport("node-resque", "Scheduler")
   @js.native
-  class Scheduler protected () extends EventEmitter {
+  open class Scheduler protected () extends EventEmitter {
     def this(options: SchedulerOptions) = this()
     def this(options: SchedulerOptions, jobs: JobsHash) = this()
     
@@ -126,43 +125,29 @@ object mod {
     
     def end(): js.Promise[Unit] = js.native
     
+    def on(event: start | end | poll | master, cb: js.Function0[Unit]): this.type = js.native
     @JSName("on")
     def on_cleanStuckWorker(
       event: cleanStuckWorker,
       cb: js.Function3[/* workerName */ String, /* errorPayload */ ErrorPayload, /* delta */ Double, Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_end(event: end, cb: js.Function0[Unit]): this.type = js.native
+    def on_error(event: error, cb: js.Function2[/* error */ js.Error, /* queue */ String, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, cb: js.Function2[/* error */ Error, /* queue */ String, Unit]): this.type = js.native
-    @JSName("on")
-    def on_master(event: master, cb: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_poll(event: poll, cb: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_start(event: start, cb: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_transferredJob(event: transferredJob, cb: js.Function2[/* timestamp */ Double, /* job */ Job[js.Any], Unit]): this.type = js.native
+    def on_transferredJob(event: transferredJob, cb: js.Function2[/* timestamp */ Double, /* job */ Job[Any], Unit]): this.type = js.native
     @JSName("on")
     def on_workingTimestamp(event: workingTimestamp, cb: js.Function1[/* timestamp */ Double, Unit]): this.type = js.native
     
+    def once(event: start | end | poll | master, cb: js.Function0[Unit]): this.type = js.native
     @JSName("once")
     def once_cleanStuckWorker(
       event: cleanStuckWorker,
       cb: js.Function3[/* workerName */ String, /* errorPayload */ ErrorPayload, /* delta */ Double, Unit]
     ): this.type = js.native
     @JSName("once")
-    def once_end(event: end, cb: js.Function0[Unit]): this.type = js.native
+    def once_error(event: error, cb: js.Function2[/* error */ js.Error, /* queue */ String, Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, cb: js.Function2[/* error */ Error, /* queue */ String, Unit]): this.type = js.native
-    @JSName("once")
-    def once_master(event: master, cb: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_poll(event: poll, cb: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_start(event: start, cb: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_transferredJob(event: transferredJob, cb: js.Function2[/* timestamp */ Double, /* job */ Job[js.Any], Unit]): this.type = js.native
+    def once_transferredJob(event: transferredJob, cb: js.Function2[/* timestamp */ Double, /* job */ Job[Any], Unit]): this.type = js.native
     @JSName("once")
     def once_workingTimestamp(event: workingTimestamp, cb: js.Function1[/* timestamp */ Double, Unit]): this.type = js.native
     
@@ -173,7 +158,7 @@ object mod {
   
   @JSImport("node-resque", "Worker")
   @js.native
-  class Worker protected () extends EventEmitter {
+  open class Worker protected () extends EventEmitter {
     def this(options: WorkerOptions) = this()
     def this(options: WorkerOptions, jobs: JobsHash) = this()
     
@@ -181,21 +166,15 @@ object mod {
     
     def end(): js.Promise[Unit] = js.native
     
+    def on(event: start | end | pause, cb: js.Function0[Unit]): this.type = js.native
     @JSName("on")
     def on_cleaningworker(event: cleaning_worker, cb: js.Function2[/* worker */ String, /* pid */ String, Unit]): this.type = js.native
     @JSName("on")
-    def on_end(event: end, cb: js.Function0[Unit]): this.type = js.native
+    def on_error(event: error, cb: js.Function3[/* error */ js.Error, /* queue */ String, /* job */ Job[Any], Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, cb: js.Function3[/* error */ Error, /* queue */ String, /* job */ Job[js.Any], Unit]): this.type = js.native
+    def on_failure(event: failure, cb: js.Function3[/* queue */ String, /* job */ Job[Any], /* failure */ Any, Unit]): this.type = js.native
     @JSName("on")
-    def on_failure(
-      event: failure,
-      cb: js.Function3[/* queue */ String, /* job */ Job[js.Any], /* failure */ js.Any, Unit]
-    ): this.type = js.native
-    @JSName("on")
-    def on_job(event: job, cb: js.Function2[/* queue */ String, /* job */ Job[js.Any], Unit]): this.type = js.native
-    @JSName("on")
-    def on_pause(event: pause, cb: js.Function0[Unit]): this.type = js.native
+    def on_job(event: job, cb: js.Function2[/* queue */ String, /* job */ Job[Any], Unit]): this.type = js.native
     @JSName("on")
     def on_ping(event: ping, cb: js.Function1[/* time */ Double, Unit]): this.type = js.native
     @JSName("on")
@@ -203,31 +182,20 @@ object mod {
     @JSName("on")
     def on_reEnqueue(
       event: reEnqueue,
-      cb: js.Function3[/* queue */ String, /* job */ Job[js.Any], /* plugin */ String, Unit]
+      cb: js.Function3[/* queue */ String, /* job */ Job[Any], /* plugin */ String, Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_start(event: start, cb: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_success(
-      event: success,
-      cb: js.Function3[/* queue */ String, /* job */ Job[js.Any], /* result */ js.Any, Unit]
-    ): this.type = js.native
+    def on_success(event: success, cb: js.Function3[/* queue */ String, /* job */ Job[Any], /* result */ Any, Unit]): this.type = js.native
     
+    def once(event: start | end | pause, cb: js.Function0[Unit]): this.type = js.native
     @JSName("once")
     def once_cleaningworker(event: cleaning_worker, cb: js.Function2[/* worker */ String, /* pid */ String, Unit]): this.type = js.native
     @JSName("once")
-    def once_end(event: end, cb: js.Function0[Unit]): this.type = js.native
+    def once_error(event: error, cb: js.Function3[/* error */ js.Error, /* queue */ String, /* job */ Job[Any], Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, cb: js.Function3[/* error */ Error, /* queue */ String, /* job */ Job[js.Any], Unit]): this.type = js.native
+    def once_failure(event: failure, cb: js.Function3[/* queue */ String, /* job */ Job[Any], /* failure */ Any, Unit]): this.type = js.native
     @JSName("once")
-    def once_failure(
-      event: failure,
-      cb: js.Function3[/* queue */ String, /* job */ Job[js.Any], /* failure */ js.Any, Unit]
-    ): this.type = js.native
-    @JSName("once")
-    def once_job(event: job, cb: js.Function2[/* queue */ String, /* job */ Job[js.Any], Unit]): this.type = js.native
-    @JSName("once")
-    def once_pause(event: pause, cb: js.Function0[Unit]): this.type = js.native
+    def once_job(event: job, cb: js.Function2[/* queue */ String, /* job */ Job[Any], Unit]): this.type = js.native
     @JSName("once")
     def once_ping(event: ping, cb: js.Function1[/* time */ Double, Unit]): this.type = js.native
     @JSName("once")
@@ -235,15 +203,10 @@ object mod {
     @JSName("once")
     def once_reEnqueue(
       event: reEnqueue,
-      cb: js.Function3[/* queue */ String, /* job */ Job[js.Any], /* plugin */ String, Unit]
+      cb: js.Function3[/* queue */ String, /* job */ Job[Any], /* plugin */ String, Unit]
     ): this.type = js.native
     @JSName("once")
-    def once_start(event: start, cb: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_success(
-      event: success,
-      cb: js.Function3[/* queue */ String, /* job */ Job[js.Any], /* result */ js.Any, Unit]
-    ): this.type = js.native
+    def once_success(event: success, cb: js.Function3[/* queue */ String, /* job */ Job[Any], /* result */ Any, Unit]): this.type = js.native
     
     def removeAllListeners(event: WorkerEvent): this.type = js.native
     
@@ -260,13 +223,13 @@ object mod {
     
     var namespace: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     var pkg: js.UndefOr[String] = js.undefined
     
     var port: js.UndefOr[Double] = js.undefined
     
-    var redis: js.UndefOr[js.Any] = js.undefined
+    var redis: js.UndefOr[Any] = js.undefined
   }
   object ConnectionOptions {
     
@@ -293,7 +256,7 @@ object mod {
       
       inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -305,7 +268,7 @@ object mod {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      inline def setRedis(value: js.Any): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+      inline def setRedis(value: Any): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
       
       inline def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
     }
@@ -321,7 +284,7 @@ object mod {
     
     var failed_at: String
     
-    var payload: js.Any
+    var payload: Any
     
     var queue: String
     
@@ -329,14 +292,7 @@ object mod {
   }
   object ErrorPayload {
     
-    inline def apply(
-      error: String,
-      exception: String,
-      failed_at: String,
-      payload: js.Any,
-      queue: String,
-      worker: String
-    ): ErrorPayload = {
+    inline def apply(error: String, exception: String, failed_at: String, payload: Any, queue: String, worker: String): ErrorPayload = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], exception = exception.asInstanceOf[js.Any], failed_at = failed_at.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any], backtrace = null)
       __obj.asInstanceOf[ErrorPayload]
     }
@@ -347,7 +303,7 @@ object mod {
       
       inline def setBacktraceNull: Self = StObject.set(x, "backtrace", null)
       
-      inline def setBacktraceVarargs(value: String*): Self = StObject.set(x, "backtrace", js.Array(value :_*))
+      inline def setBacktraceVarargs(value: String*): Self = StObject.set(x, "backtrace", js.Array(value*))
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -355,7 +311,7 @@ object mod {
       
       inline def setFailed_at(value: String): Self = StObject.set(x, "failed_at", value.asInstanceOf[js.Any])
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
@@ -365,24 +321,24 @@ object mod {
   
   trait Job[TResult] extends StObject {
     
-    def perform(args: js.Any*): js.Promise[TResult]
+    def perform(args: Any*): js.Promise[TResult]
     
-    var pluginOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var pluginOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var plugins: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Job {
     
-    inline def apply[TResult](perform: /* repeated */ js.Any => js.Promise[TResult]): Job[TResult] = {
+    inline def apply[TResult](perform: /* repeated */ Any => js.Promise[TResult]): Job[TResult] = {
       val __obj = js.Dynamic.literal(perform = js.Any.fromFunction1(perform))
       __obj.asInstanceOf[Job[TResult]]
     }
     
     extension [Self <: Job[?], TResult](x: Self & Job[TResult]) {
       
-      inline def setPerform(value: /* repeated */ js.Any => js.Promise[TResult]): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
+      inline def setPerform(value: /* repeated */ Any => js.Promise[TResult]): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
       
-      inline def setPluginOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "pluginOptions", value.asInstanceOf[js.Any])
+      inline def setPluginOptions(value: StringDictionary[Any]): Self = StObject.set(x, "pluginOptions", value.asInstanceOf[js.Any])
       
       inline def setPluginOptionsUndefined: Self = StObject.set(x, "pluginOptions", js.undefined)
       
@@ -390,11 +346,11 @@ object mod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
   
-  type JobsHash = StringDictionary[Job[js.Any]]
+  type JobsHash = StringDictionary[Job[Any]]
   
   trait QueueOptions extends StObject {
     
@@ -562,7 +518,7 @@ object mod {
       
       inline def setQueues(value: js.Array[String]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
       
-      inline def setQueuesVarargs(value: String*): Self = StObject.set(x, "queues", js.Array(value :_*))
+      inline def setQueuesVarargs(value: String*): Self = StObject.set(x, "queues", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

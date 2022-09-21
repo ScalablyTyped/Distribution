@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[O /* <: ArrayLike[js.Any] */, THIS_ARG](
+  inline def apply[O /* <: ArrayLike[Any] */, THIS_ARG](
     array: O,
-    callbackfn: js.ThisFunction3[/* this */ THIS_ARG, /* value */ js.Any, /* index */ Double, /* array */ O, Unit]
+    callbackfn: js.ThisFunction3[/* this */ THIS_ARG, /* value */ Any, /* index */ Double, /* array */ O, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply[O /* <: ArrayLike[js.Any] */, THIS_ARG](
+  inline def apply[O /* <: ArrayLike[Any] */, THIS_ARG](
     array: O,
-    callbackfn: js.ThisFunction3[/* this */ THIS_ARG, /* value */ js.Any, /* index */ Double, /* array */ O, Unit],
+    callbackfn: js.ThisFunction3[/* this */ THIS_ARG, /* value */ Any, /* index */ Double, /* array */ O, Unit],
     thisArg: THIS_ARG
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

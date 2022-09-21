@@ -40,7 +40,7 @@ object XImageProducer {
   inline def apply(
     acquire: () => Unit,
     addConsumer: XImageConsumer => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeConsumer: XImageConsumer => Unit,
     startProduction: () => Unit

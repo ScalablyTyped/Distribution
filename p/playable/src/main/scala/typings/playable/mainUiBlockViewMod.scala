@@ -11,7 +11,7 @@ object mainUiBlockViewMod {
   
   @JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block.view", JSImport.Default)
   @js.native
-  class default protected () extends MainUIBlockView {
+  open class default protected () extends MainUIBlockView {
     def this(config: IMainUIBlockViewConfig) = this()
   }
   
@@ -20,9 +20,9 @@ object mainUiBlockViewMod {
     extends typings.playable.viewMod.default[IMainUIBlockViewStyles] {
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
     def destroy(): Unit = js.native
     

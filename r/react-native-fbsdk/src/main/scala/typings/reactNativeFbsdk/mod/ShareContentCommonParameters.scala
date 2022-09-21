@@ -44,7 +44,7 @@ object ShareContentCommonParameters {
     
     inline def setPeopleIdsUndefined: Self = StObject.set(x, "peopleIds", js.undefined)
     
-    inline def setPeopleIdsVarargs(value: String*): Self = StObject.set(x, "peopleIds", js.Array(value :_*))
+    inline def setPeopleIdsVarargs(value: String*): Self = StObject.set(x, "peopleIds", js.Array(value*))
     
     inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     

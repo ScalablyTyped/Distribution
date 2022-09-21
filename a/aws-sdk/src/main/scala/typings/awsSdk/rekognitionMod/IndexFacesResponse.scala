@@ -43,7 +43,7 @@ object IndexFacesResponse {
     
     inline def setFaceRecordsUndefined: Self = StObject.set(x, "FaceRecords", js.undefined)
     
-    inline def setFaceRecordsVarargs(value: FaceRecord*): Self = StObject.set(x, "FaceRecords", js.Array(value :_*))
+    inline def setFaceRecordsVarargs(value: FaceRecord*): Self = StObject.set(x, "FaceRecords", js.Array(value*))
     
     inline def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object IndexFacesResponse {
     
     inline def setUnindexedFacesUndefined: Self = StObject.set(x, "UnindexedFaces", js.undefined)
     
-    inline def setUnindexedFacesVarargs(value: UnindexedFace*): Self = StObject.set(x, "UnindexedFaces", js.Array(value :_*))
+    inline def setUnindexedFacesVarargs(value: UnindexedFace*): Self = StObject.set(x, "UnindexedFaces", js.Array(value*))
   }
 }

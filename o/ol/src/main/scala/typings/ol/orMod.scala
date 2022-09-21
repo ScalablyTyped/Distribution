@@ -8,7 +8,7 @@ object orMod {
   
   @JSImport("ol/format/filter/Or", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.ol.logicalNaryMod.default {
     def this(conditions: typings.ol.filterFilterMod.default*) = this()
   }

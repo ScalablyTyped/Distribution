@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.BroadPhase")
 @js.native
-class BroadPhase ()
+open class BroadPhase ()
   extends StObject
      with typings.cannon.CANNON.BroadPhase {
   

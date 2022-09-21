@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "core.StateService")
 @js.native
-class StateService protected ()
+open class StateService protected ()
   extends typings.uirouterCore.mod.StateService {
   /** @internal */
   def this(/** @internal */ router: typings.uirouterCore.routerMod.UIRouter) = this()

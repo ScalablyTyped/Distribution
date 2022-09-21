@@ -1,7 +1,8 @@
 package typings.puppeteerCore
 
 import typings.puppeteerCore.connectionTransportMod.ConnectionTransport
-import typings.ws.mod.^
+import typings.ws.mod.Data
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,19 +11,21 @@ object nodeWebSocketTransportMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/node/NodeWebSocketTransport", "NodeWebSocketTransport")
   @js.native
-  class NodeWebSocketTransport protected ()
+  open class NodeWebSocketTransport protected ()
     extends StObject
        with ConnectionTransport {
-    def this(ws: ^) = this()
-    
-    /* private */ var _ws: js.Any = js.native
+    def this(ws: WebSocket) = this()
     
     /* CompleteClass */
-    override def close(): js.Any = js.native
+    override def close(): Unit = js.native
     
-    def send(message: String): Unit = js.native
+    @JSName("onmessage")
+    var onmessage_NodeWebSocketTransport: js.UndefOr[js.Function1[/* message */ Data, Unit]] = js.native
+    
+    /* private */ var `private`: Any = js.native
+    
     /* CompleteClass */
-    override def send(string: js.Any): js.Any = js.native
+    override def send(message: String): Unit = js.native
   }
   /* static members */
   object NodeWebSocketTransport {

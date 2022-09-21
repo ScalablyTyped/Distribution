@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Animation")
 @js.native
-class Animation protected ()
+open class Animation protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Animation {
   /**
@@ -83,77 +83,77 @@ object Animation {
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT")
   @js.native
-  val ANIMATIONLOOPMODE_CONSTANT: Double = js.native
+  val ANIMATIONLOOPMODE_CONSTANT: /* 2 */ Double = js.native
   
   /**
     * Cycle Loop Mode
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE")
   @js.native
-  val ANIMATIONLOOPMODE_CYCLE: Double = js.native
+  val ANIMATIONLOOPMODE_CYCLE: /* 1 */ Double = js.native
   
   /**
     * Relative Loop Mode
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE")
   @js.native
-  val ANIMATIONLOOPMODE_RELATIVE: Double = js.native
+  val ANIMATIONLOOPMODE_RELATIVE: /* 0 */ Double = js.native
   
   /**
     * Color3 animation type
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONTYPE_COLOR3")
   @js.native
-  val ANIMATIONTYPE_COLOR3: Double = js.native
+  val ANIMATIONTYPE_COLOR3: /* 4 */ Double = js.native
   
   /**
     * Color3 animation type
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONTYPE_COLOR4")
   @js.native
-  val ANIMATIONTYPE_COLOR4: Double = js.native
+  val ANIMATIONTYPE_COLOR4: /* 7 */ Double = js.native
   
   /**
     * Float animation type
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONTYPE_FLOAT")
   @js.native
-  val ANIMATIONTYPE_FLOAT: Double = js.native
+  val ANIMATIONTYPE_FLOAT: /* 0 */ Double = js.native
   
   /**
     * Matrix animation type
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONTYPE_MATRIX")
   @js.native
-  val ANIMATIONTYPE_MATRIX: Double = js.native
+  val ANIMATIONTYPE_MATRIX: /* 3 */ Double = js.native
   
   /**
     * Quaternion animation type
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONTYPE_QUATERNION")
   @js.native
-  val ANIMATIONTYPE_QUATERNION: Double = js.native
+  val ANIMATIONTYPE_QUATERNION: /* 2 */ Double = js.native
   
   /**
     * Size animation type
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONTYPE_SIZE")
   @js.native
-  val ANIMATIONTYPE_SIZE: Double = js.native
+  val ANIMATIONTYPE_SIZE: /* 6 */ Double = js.native
   
   /**
     * Vector2 animation type
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONTYPE_VECTOR2")
   @js.native
-  val ANIMATIONTYPE_VECTOR2: Double = js.native
+  val ANIMATIONTYPE_VECTOR2: /* 5 */ Double = js.native
   
   /**
     * Vector3 animation type
     */
   @JSGlobal("BABYLON.Animation.ANIMATIONTYPE_VECTOR3")
   @js.native
-  val ANIMATIONTYPE_VECTOR3: Double = js.native
+  val ANIMATIONTYPE_VECTOR3: /* 1 */ Double = js.native
   
   /**
     * Use matrix interpolation instead of using direct key value when animating matrices
@@ -176,12 +176,12 @@ object Animation {
     * @param source Source containing the animations
     * @param destination Target to store the animations
     */
-  inline def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendSerializedAnimations")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def AppendSerializedAnimations(source: IAnimatable, destination: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendSerializedAnimations")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create and start an animation on a node
     * @param name defines the name of the global animation that will be run on all nodes
-    * @param node defines the root node where the animation will take place
+    * @param target defines the target where the animation will take place
     * @param targetProperty defines property to animate
     * @param framePerSecond defines the number of frame per second yo use
     * @param totalFrame defines the number of frames in total
@@ -190,97 +190,202 @@ object Animation {
     * @param loopMode defines which loop mode you want to use (off by default)
     * @param easingFunction defines the easing function to use (linear by default)
     * @param onAnimationEnd defines the callback to call when animation end
+    * @param scene defines the hosting scene
     * @returns the animatable created for this animation
     */
   inline def CreateAndStartAnimation(
     name: String,
-    node: typings.babylonjs.BABYLON.Node,
+    target: Any,
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any
-  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+    from: Any,
+    to: Any
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def CreateAndStartAnimation(
     name: String,
-    node: typings.babylonjs.BABYLON.Node,
+    target: Any,
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double
-  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def CreateAndStartAnimation(
     name: String,
-    node: typings.babylonjs.BABYLON.Node,
+    target: Any,
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: Unit,
     onAnimationEnd: js.Function0[Unit]
-  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def CreateAndStartAnimation(
     name: String,
-    node: typings.babylonjs.BABYLON.Node,
+    target: Any,
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
+    loopMode: Double,
+    easingFunction: Unit,
+    onAnimationEnd: js.Function0[Unit],
+    scene: typings.babylonjs.BABYLON.Scene
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  inline def CreateAndStartAnimation(
+    name: String,
+    target: Any,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: Any,
+    to: Any,
+    loopMode: Double,
+    easingFunction: Unit,
+    onAnimationEnd: Unit,
+    scene: typings.babylonjs.BABYLON.Scene
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  inline def CreateAndStartAnimation(
+    name: String,
+    target: Any,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction
-  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def CreateAndStartAnimation(
     name: String,
-    node: typings.babylonjs.BABYLON.Node,
+    target: Any,
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction,
     onAnimationEnd: js.Function0[Unit]
-  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def CreateAndStartAnimation(
     name: String,
-    node: typings.babylonjs.BABYLON.Node,
+    target: Any,
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
+    loopMode: Double,
+    easingFunction: typings.babylonjs.BABYLON.EasingFunction,
+    onAnimationEnd: js.Function0[Unit],
+    scene: typings.babylonjs.BABYLON.Scene
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  inline def CreateAndStartAnimation(
+    name: String,
+    target: Any,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: Any,
+    to: Any,
+    loopMode: Double,
+    easingFunction: typings.babylonjs.BABYLON.EasingFunction,
+    onAnimationEnd: Unit,
+    scene: typings.babylonjs.BABYLON.Scene
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  inline def CreateAndStartAnimation(
+    name: String,
+    target: Any,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: Unit,
     onAnimationEnd: js.Function0[Unit]
-  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def CreateAndStartAnimation(
     name: String,
-    node: typings.babylonjs.BABYLON.Node,
+    target: Any,
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
+    loopMode: Unit,
+    easingFunction: Unit,
+    onAnimationEnd: js.Function0[Unit],
+    scene: typings.babylonjs.BABYLON.Scene
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  inline def CreateAndStartAnimation(
+    name: String,
+    target: Any,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: Any,
+    to: Any,
+    loopMode: Unit,
+    easingFunction: Unit,
+    onAnimationEnd: Unit,
+    scene: typings.babylonjs.BABYLON.Scene
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  inline def CreateAndStartAnimation(
+    name: String,
+    target: Any,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction
-  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def CreateAndStartAnimation(
     name: String,
-    node: typings.babylonjs.BABYLON.Node,
+    target: Any,
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction,
     onAnimationEnd: js.Function0[Unit]
-  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  inline def CreateAndStartAnimation(
+    name: String,
+    target: Any,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: Any,
+    to: Any,
+    loopMode: Unit,
+    easingFunction: typings.babylonjs.BABYLON.EasingFunction,
+    onAnimationEnd: js.Function0[Unit],
+    scene: typings.babylonjs.BABYLON.Scene
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
+  inline def CreateAndStartAnimation(
+    name: String,
+    target: Any,
+    targetProperty: String,
+    framePerSecond: Double,
+    totalFrame: Double,
+    from: Any,
+    to: Any,
+    loopMode: Unit,
+    easingFunction: typings.babylonjs.BABYLON.EasingFunction,
+    onAnimationEnd: Unit,
+    scene: typings.babylonjs.BABYLON.Scene
+  ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartAnimation")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   
   /**
     * Create and start an animation on a node and its descendants
@@ -305,8 +410,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any
+    from: Any,
+    to: Any
   ): Nullable[js.Array[typings.babylonjs.BABYLON.Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[typings.babylonjs.BABYLON.Animatable]]]
   inline def CreateAndStartHierarchyAnimation(
     name: String,
@@ -315,8 +420,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double
   ): Nullable[js.Array[typings.babylonjs.BABYLON.Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[typings.babylonjs.BABYLON.Animatable]]]
   inline def CreateAndStartHierarchyAnimation(
@@ -326,8 +431,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: Unit,
     onAnimationEnd: js.Function0[Unit]
@@ -339,8 +444,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction
   ): Nullable[js.Array[typings.babylonjs.BABYLON.Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[typings.babylonjs.BABYLON.Animatable]]]
@@ -351,8 +456,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction,
     onAnimationEnd: js.Function0[Unit]
@@ -364,8 +469,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: Unit,
     onAnimationEnd: js.Function0[Unit]
@@ -377,8 +482,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction
   ): Nullable[js.Array[typings.babylonjs.BABYLON.Animatable]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndStartHierarchyAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], directDescendantsOnly.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[typings.babylonjs.BABYLON.Animatable]]]
@@ -389,8 +494,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction,
     onAnimationEnd: js.Function0[Unit]
@@ -413,14 +518,16 @@ object Animation {
   
   /**
     * Creates an animation or an array of animations from a snippet saved by the Inspector
+    * @deprecated Please use ParseFromSnippetAsync instead
     * @param snippetId defines the snippet to load
     * @returns a promise that will resolve to the new animation or a new array of animations
     */
-  inline def CreateFromSnippetAsync(snippetId: String): js.Promise[
-    typings.babylonjs.BABYLON.Animation | js.Array[typings.babylonjs.BABYLON.Animation]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
-    typings.babylonjs.BABYLON.Animation | js.Array[typings.babylonjs.BABYLON.Animation]
-  ]]
+  @JSGlobal("BABYLON.Animation.CreateFromSnippetAsync")
+  @js.native
+  def CreateFromSnippetAsync: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Animation.ParseFromSnippetAsync */ Any = js.native
+  inline def CreateFromSnippetAsync_=(
+    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Animation.ParseFromSnippetAsync */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateFromSnippetAsync")(x.asInstanceOf[js.Any])
   
   /**
     * Creates a new animation, merges it with the existing animations and starts it
@@ -442,8 +549,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any
+    from: Any,
+    to: Any
   ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def CreateMergeAndStartAnimation(
     name: String,
@@ -451,8 +558,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double
   ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def CreateMergeAndStartAnimation(
@@ -461,8 +568,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: Unit,
     onAnimationEnd: js.Function0[Unit]
@@ -473,8 +580,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction
   ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
@@ -484,8 +591,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction,
     onAnimationEnd: js.Function0[Unit]
@@ -496,8 +603,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: Unit,
     onAnimationEnd: js.Function0[Unit]
@@ -508,8 +615,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction
   ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateMergeAndStartAnimation")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
@@ -519,8 +626,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction,
     onAnimationEnd: js.Function0[Unit]
@@ -625,7 +732,7 @@ object Animation {
     * @param parsedAnimation Parsed animation object
     * @returns Animation object
     */
-  inline def Parse(parsedAnimation: js.Any): typings.babylonjs.BABYLON.Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimation.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Animation]
+  inline def Parse(parsedAnimation: Any): typings.babylonjs.BABYLON.Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimation.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Animation]
   
   /**
     * Creates a new animation or an array of animations from a snippet saved in a remote file
@@ -636,6 +743,17 @@ object Animation {
   inline def ParseFromFileAsync(name: Nullable[String], url: String): js.Promise[
     typings.babylonjs.BABYLON.Animation | js.Array[typings.babylonjs.BABYLON.Animation]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    typings.babylonjs.BABYLON.Animation | js.Array[typings.babylonjs.BABYLON.Animation]
+  ]]
+  
+  /**
+    * Creates an animation or an array of animations from a snippet saved by the Inspector
+    * @param snippetId defines the snippet to load
+    * @returns a promise that will resolve to the new animation or a new array of animations
+    */
+  inline def ParseFromSnippetAsync(snippetId: String): js.Promise[
+    typings.babylonjs.BABYLON.Animation | js.Array[typings.babylonjs.BABYLON.Animation]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
     typings.babylonjs.BABYLON.Animation | js.Array[typings.babylonjs.BABYLON.Animation]
   ]]
   
@@ -659,8 +777,8 @@ object Animation {
     */
   inline def TransitionTo(
     property: String,
-    targetValue: js.Any,
-    host: js.Any,
+    targetValue: Any,
+    host: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     frameRate: Double,
     transition: typings.babylonjs.BABYLON.Animation,
@@ -668,8 +786,8 @@ object Animation {
   ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("TransitionTo")(property.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any], host.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], transition.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   inline def TransitionTo(
     property: String,
-    targetValue: js.Any,
-    host: js.Any,
+    targetValue: Any,
+    host: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     frameRate: Double,
     transition: typings.babylonjs.BABYLON.Animation,
@@ -678,6 +796,14 @@ object Animation {
   ): Nullable[typings.babylonjs.BABYLON.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("TransitionTo")(property.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any], host.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], transition.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animatable]]
   
   /**
+    * @param name
+    * @param targetProperty
+    * @param framePerSecond
+    * @param totalFrame
+    * @param from
+    * @param to
+    * @param loopMode
+    * @param easingFunction
     * @hidden Internal use
     */
   inline def _PrepareAnimation(
@@ -685,16 +811,16 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any
+    from: Any,
+    to: Any
   ): Nullable[typings.babylonjs.BABYLON.Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animation]]
   inline def _PrepareAnimation(
     name: String,
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double
   ): Nullable[typings.babylonjs.BABYLON.Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animation]]
   inline def _PrepareAnimation(
@@ -702,8 +828,8 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Double,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction
   ): Nullable[typings.babylonjs.BABYLON.Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animation]]
@@ -712,12 +838,22 @@ object Animation {
     targetProperty: String,
     framePerSecond: Double,
     totalFrame: Double,
-    from: js.Any,
-    to: js.Any,
+    from: Any,
+    to: Any,
     loopMode: Unit,
     easingFunction: typings.babylonjs.BABYLON.EasingFunction
   ): Nullable[typings.babylonjs.BABYLON.Animation] = (^.asInstanceOf[js.Dynamic].applyDynamic("_PrepareAnimation")(name.asInstanceOf[js.Any], targetProperty.asInstanceOf[js.Any], framePerSecond.asInstanceOf[js.Any], totalFrame.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], loopMode.asInstanceOf[js.Any], easingFunction.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Animation]]
   
-  /** @hidden */
-  inline def _UniversalLerp(left: js.Any, right: js.Any, amount: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_UniversalLerp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @JSGlobal("BABYLON.Animation._UniqueIdGenerator")
+  @js.native
+  def _UniqueIdGenerator: Any = js.native
+  inline def _UniqueIdGenerator_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdGenerator")(x.asInstanceOf[js.Any])
+  
+  /**
+    * @param left
+    * @param right
+    * @param amount
+    * @hidden
+    */
+  inline def _UniversalLerp(left: Any, right: Any, amount: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_UniversalLerp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

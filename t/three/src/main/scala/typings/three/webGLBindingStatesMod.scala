@@ -3,6 +3,7 @@ package typings.three
 import typings.std.WebGLRenderingContext
 import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.bufferGeometryMod.BufferGeometry
+import typings.three.eventDispatcherMod.Event
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import typings.three.webGLAttributesMod.WebGLAttributes
@@ -17,7 +18,7 @@ object webGLBindingStatesMod {
   
   @JSImport("three/src/renderers/webgl/WebGLBindingStates", "WebGLBindingStates")
   @js.native
-  class WebGLBindingStates protected () extends StObject {
+  open class WebGLBindingStates protected () extends StObject {
     def this(
       gl: WebGLRenderingContext,
       extensions: WebGLExtensions,
@@ -42,7 +43,7 @@ object webGLBindingStatesMod {
     def resetDefaultState(): Unit = js.native
     
     def setup(
-      `object`: Object3D,
+      `object`: Object3D[Event],
       material: Material,
       program: WebGLProgram,
       geometry: BufferGeometry,

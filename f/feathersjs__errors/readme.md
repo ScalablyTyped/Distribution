@@ -10,10 +10,10 @@ Common error types for Feathers apps
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/errors |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 34 |
-| # dependents       | 211 |
-| # downloads        | 2686987 |
-| # stars            | 0 |
+| # releases         | 31 |
+| # dependents       | 0.0 |
+| # downloads        | 293907.0 |
+| # stars            | 14141.0 |
 
 ## Links
 - [Homepage](https://feathersjs.com)

@@ -9,7 +9,7 @@ object mvtMod {
   
   @JSImport("ol/format/MVT", JSImport.Default)
   @js.native
-  class default () extends MVT {
+  open class default () extends MVT {
     def this(opt_options: Options) = this()
   }
   
@@ -64,7 +64,7 @@ object mvtMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value*))
     }
   }
 }

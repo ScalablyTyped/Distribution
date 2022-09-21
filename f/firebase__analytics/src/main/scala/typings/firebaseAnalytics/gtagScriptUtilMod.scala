@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object gtagScriptUtilMod {
   
-  @JSImport("@firebase/analytics/dist/testing/gtag-script-util", JSImport.Namespace)
+  @JSImport("@firebase/analytics/dist/esm/testing/gtag-script-util", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

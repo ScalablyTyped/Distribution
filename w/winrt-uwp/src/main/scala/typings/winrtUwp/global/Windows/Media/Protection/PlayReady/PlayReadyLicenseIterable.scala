@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseIterable")
 @js.native
 /** Initializes a new instance of the PlayReadyLicenseIterable class. */
-class PlayReadyLicenseIterable ()
+open class PlayReadyLicenseIterable ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyLicenseIterable {
   /**

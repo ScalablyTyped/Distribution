@@ -34,7 +34,7 @@ trait NotifyMigrationTaskStateRequest extends StObject {
   /**
     * The timestamp when the task was gathered.
     */
-  var UpdateDateTime: typings.awsSdk.migrationhubMod.UpdateDateTime
+  var UpdateDateTime: js.Date
 }
 object NotifyMigrationTaskStateRequest {
   
@@ -43,7 +43,7 @@ object NotifyMigrationTaskStateRequest {
     NextUpdateSeconds: NextUpdateSeconds,
     ProgressUpdateStream: ProgressUpdateStream,
     Task: Task,
-    UpdateDateTime: UpdateDateTime
+    UpdateDateTime: js.Date
   ): NotifyMigrationTaskStateRequest = {
     val __obj = js.Dynamic.literal(MigrationTaskName = MigrationTaskName.asInstanceOf[js.Any], NextUpdateSeconds = NextUpdateSeconds.asInstanceOf[js.Any], ProgressUpdateStream = ProgressUpdateStream.asInstanceOf[js.Any], Task = Task.asInstanceOf[js.Any], UpdateDateTime = UpdateDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyMigrationTaskStateRequest]
@@ -63,6 +63,6 @@ object NotifyMigrationTaskStateRequest {
     
     inline def setTask(value: Task): Self = StObject.set(x, "Task", value.asInstanceOf[js.Any])
     
-    inline def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateDateTime(value: js.Date): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
   }
 }

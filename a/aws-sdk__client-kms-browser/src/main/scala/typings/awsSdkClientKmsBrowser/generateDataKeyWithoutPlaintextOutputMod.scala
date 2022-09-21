@@ -8,5 +8,5 @@ object generateDataKeyWithoutPlaintextOutputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/GenerateDataKeyWithoutPlaintextOutput", "GenerateDataKeyWithoutPlaintextOutput")
   @js.native
-  val GenerateDataKeyWithoutPlaintextOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GenerateDataKeyWithoutPlaintextOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

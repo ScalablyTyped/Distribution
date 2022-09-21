@@ -13,16 +13,14 @@ object gradient {
        with IIdentifiable {
     
     /** [Config Option] (Array/Object) */
-    var Defines: js.UndefOr[js.Any] = js.undefined
+    var Defines: js.UndefOr[Any] = js.undefined
     
     /** [Method] Generates the gradient for the given context
       * @param ctx Ext.draw.engine.SvgContext The context.
       * @param bbox Object
       * @returns Object
       */
-    var generateGradient: js.UndefOr[
-        js.Function2[/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any], js.Any]
-      ] = js.undefined
+    var generateGradient: js.UndefOr[js.Function2[/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method] Retrieves the id of this component
       * @returns String id
@@ -39,11 +37,11 @@ object gradient {
     
     extension [Self <: IGradient](x: Self) {
       
-      inline def setDefines(value: js.Any): Self = StObject.set(x, "Defines", value.asInstanceOf[js.Any])
+      inline def setDefines(value: Any): Self = StObject.set(x, "Defines", value.asInstanceOf[js.Any])
       
       inline def setDefinesUndefined: Self = StObject.set(x, "Defines", js.undefined)
       
-      inline def setGenerateGradient(value: (/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "generateGradient", js.Any.fromFunction2(value))
+      inline def setGenerateGradient(value: (/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "generateGradient", js.Any.fromFunction2(value))
       
       inline def setGenerateGradientUndefined: Self = StObject.set(x, "generateGradient", js.undefined)
       
@@ -80,30 +78,30 @@ object gradient {
        with IGradient {
     
     /** [Config Option] (Object) */
-    var end: js.UndefOr[js.Any] = js.undefined
+    var end: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of end
       * @returns Object
       */
-    var getEnd: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getEnd: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of start
       * @returns Object
       */
-    var getStart: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getStart: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of end
       * @param end Object The new value.
       */
-    var setEnd: js.UndefOr[js.Function1[/* end */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setEnd: js.UndefOr[js.Function1[/* end */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of start
       * @param start Object The new value.
       */
-    var setStart: js.UndefOr[js.Function1[/* start */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setStart: js.UndefOr[js.Function1[/* start */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var start: js.UndefOr[js.Any] = js.undefined
+    var start: js.UndefOr[Any] = js.undefined
   }
   object IRadial {
     
@@ -114,27 +112,27 @@ object gradient {
     
     extension [Self <: IRadial](x: Self) {
       
-      inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      inline def setGetEnd(value: () => js.Any): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
+      inline def setGetEnd(value: () => Any): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
       
       inline def setGetEndUndefined: Self = StObject.set(x, "getEnd", js.undefined)
       
-      inline def setGetStart(value: () => js.Any): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
+      inline def setGetStart(value: () => Any): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
       
       inline def setGetStartUndefined: Self = StObject.set(x, "getStart", js.undefined)
       
-      inline def setSetEnd(value: /* end */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
+      inline def setSetEnd(value: /* end */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
       
       inline def setSetEndUndefined: Self = StObject.set(x, "setEnd", js.undefined)
       
-      inline def setSetStart(value: /* start */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
+      inline def setSetStart(value: /* start */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
       
       inline def setSetStartUndefined: Self = StObject.set(x, "setStart", js.undefined)
       
-      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }

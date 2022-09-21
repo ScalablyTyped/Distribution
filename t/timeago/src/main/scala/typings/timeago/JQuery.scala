@@ -1,6 +1,5 @@
 package typings.timeago
 
-import typings.std.Date
 import typings.timeago.timeagoStrings.dispose
 import typings.timeago.timeagoStrings.init
 import typings.timeago.timeagoStrings.update
@@ -13,14 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def timeago(): this.type = js.native
-  @JSName("timeago")
-  def timeago_dispose(action: dispose): this.type = js.native
-  @JSName("timeago")
-  def timeago_init(action: init): this.type = js.native
+  def timeago(action: init | updateFromDOM | dispose): this.type = js.native
   @JSName("timeago")
   def timeago_update(action: update, timestamp: String): this.type = js.native
   @JSName("timeago")
-  def timeago_update(action: update, timestamp: Date): this.type = js.native
-  @JSName("timeago")
-  def timeago_updateFromDOM(action: updateFromDOM): this.type = js.native
+  def timeago_update(action: update, timestamp: js.Date): this.type = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Get available genre seeds
-  * 
+  *
   * GET /v1/recommendations/available-genre-seeds
   * https://developer.spotify.com/web-api/get-recommendations/#available-genre-seeds
   */
@@ -25,6 +25,6 @@ object AvailableGenreSeedsResponse {
     
     inline def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value*))
   }
 }

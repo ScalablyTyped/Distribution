@@ -71,7 +71,7 @@ object AuthorizedCertificate {
     
     inline def setDomainNamesUndefined: Self = StObject.set(x, "domainNames", js.undefined)
     
-    inline def setDomainNamesVarargs(value: String*): Self = StObject.set(x, "domainNames", js.Array(value :_*))
+    inline def setDomainNamesVarargs(value: String*): Self = StObject.set(x, "domainNames", js.Array(value*))
     
     inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
@@ -93,6 +93,6 @@ object AuthorizedCertificate {
     
     inline def setVisibleDomainMappingsUndefined: Self = StObject.set(x, "visibleDomainMappings", js.undefined)
     
-    inline def setVisibleDomainMappingsVarargs(value: String*): Self = StObject.set(x, "visibleDomainMappings", js.Array(value :_*))
+    inline def setVisibleDomainMappingsVarargs(value: String*): Self = StObject.set(x, "visibleDomainMappings", js.Array(value*))
   }
 }

@@ -23,7 +23,7 @@ trait ISearchGroupOptions extends StObject {
     * - DatasetType: type of the search group item is a dataset association.
     *   Groups have this type when you are calling SearchResults.
     */
-  var qGroupType: js.Any
+  var qGroupType: Any
   
   /**
     * Position starting from 0.
@@ -33,7 +33,7 @@ trait ISearchGroupOptions extends StObject {
 }
 object ISearchGroupOptions {
   
-  inline def apply(qCount: Double, qGroupType: js.Any, qOffset: Double): ISearchGroupOptions = {
+  inline def apply(qCount: Double, qGroupType: Any, qOffset: Double): ISearchGroupOptions = {
     val __obj = js.Dynamic.literal(qCount = qCount.asInstanceOf[js.Any], qGroupType = qGroupType.asInstanceOf[js.Any], qOffset = qOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchGroupOptions]
   }
@@ -42,7 +42,7 @@ object ISearchGroupOptions {
     
     inline def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
     
-    inline def setQGroupType(value: js.Any): Self = StObject.set(x, "qGroupType", value.asInstanceOf[js.Any])
+    inline def setQGroupType(value: Any): Self = StObject.set(x, "qGroupType", value.asInstanceOf[js.Any])
     
     inline def setQOffset(value: Double): Self = StObject.set(x, "qOffset", value.asInstanceOf[js.Any])
   }

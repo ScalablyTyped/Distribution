@@ -17,28 +17,20 @@ trait Mailgun extends StObject {
   
   var Attachment: Instantiable1[/* params */ AttachmentParams, typings.mailgunJs.mod.Attachment] = js.native
   
-  def delete(resource: String): js.Promise[js.Any] = js.native
-  def delete(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
-  def delete(resource: String, data: js.Any): js.Promise[js.Any] = js.native
-  def delete(
-    resource: String,
-    data: js.Any,
-    callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]
-  ): Unit = js.native
+  def delete(resource: String): js.Promise[Any] = js.native
+  def delete(resource: String, callback: js.Function2[/* error */ Error, /* response */ Any, Unit]): Unit = js.native
+  def delete(resource: String, data: Any): js.Promise[Any] = js.native
+  def delete(resource: String, data: Any, callback: js.Function2[/* error */ Error, /* response */ Any, Unit]): Unit = js.native
   @JSName("delete")
   var delete_Original: MailgunRequest = js.native
   
   // Generic requests
-  def get(resource: String): js.Promise[js.Any] = js.native
+  def get(resource: String): js.Promise[Any] = js.native
   // Generic requests
-  def get(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
-  def get(resource: String, data: js.Any): js.Promise[js.Any] = js.native
+  def get(resource: String, callback: js.Function2[/* error */ Error, /* response */ Any, Unit]): Unit = js.native
+  def get(resource: String, data: Any): js.Promise[Any] = js.native
   // Generic requests
-  def get(
-    resource: String,
-    data: js.Any,
-    callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]
-  ): Unit = js.native
+  def get(resource: String, data: Any, callback: js.Function2[/* error */ Error, /* response */ Any, Unit]): Unit = js.native
   // Generic requests
   @JSName("get")
   var get_Original: MailgunRequest = js.native
@@ -50,25 +42,17 @@ trait Mailgun extends StObject {
   def parse(addressList: js.Array[String]): js.Promise[ParseResponse] = js.native
   def parse(addressList: js.Array[String], callback: ValidationCallback): js.Promise[ParseResponse] = js.native
   
-  def post(resource: String): js.Promise[js.Any] = js.native
-  def post(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
-  def post(resource: String, data: js.Any): js.Promise[js.Any] = js.native
-  def post(
-    resource: String,
-    data: js.Any,
-    callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]
-  ): Unit = js.native
+  def post(resource: String): js.Promise[Any] = js.native
+  def post(resource: String, callback: js.Function2[/* error */ Error, /* response */ Any, Unit]): Unit = js.native
+  def post(resource: String, data: Any): js.Promise[Any] = js.native
+  def post(resource: String, data: Any, callback: js.Function2[/* error */ Error, /* response */ Any, Unit]): Unit = js.native
   @JSName("post")
   var post_Original: MailgunRequest = js.native
   
-  def put(resource: String): js.Promise[js.Any] = js.native
-  def put(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
-  def put(resource: String, data: js.Any): js.Promise[js.Any] = js.native
-  def put(
-    resource: String,
-    data: js.Any,
-    callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]
-  ): Unit = js.native
+  def put(resource: String): js.Promise[Any] = js.native
+  def put(resource: String, callback: js.Function2[/* error */ Error, /* response */ Any, Unit]): Unit = js.native
+  def put(resource: String, data: Any): js.Promise[Any] = js.native
+  def put(resource: String, data: Any, callback: js.Function2[/* error */ Error, /* response */ Any, Unit]): Unit = js.native
   @JSName("put")
   var put_Original: MailgunRequest = js.native
   

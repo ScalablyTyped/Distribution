@@ -1,6 +1,5 @@
 package typings.googleMaps.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait DistanceMatrixRequest extends StObject {
     * You can specify either `departure_time` or `arrival_time`, but not both.
     * Note that `arrival_time` must be specified as an integer.
     */
-  var arrival_time: js.UndefOr[Date | Double] = js.undefined
+  var arrival_time: js.UndefOr[js.Date | Double] = js.undefined
   
   /**
     * Introduces restrictions to the route. Valid values are specified in the Restrictions section of this document.
@@ -38,7 +37,7 @@ trait DistanceMatrixRequest extends StObject {
     *    **Note:** Distance Matrix requests specifying `departure_time` when `mode=driving` are limited
     *    to a maximum of 100 elements per request. The number of origins times the number of destinations defines the number of elements.
     */
-  var departure_time: js.UndefOr[Date | Double] = js.undefined
+  var departure_time: js.UndefOr[js.Date | Double] = js.undefined
   
   /**
     * One or more locations to use as the finishing point for calculating travel distance and time.
@@ -143,7 +142,7 @@ object DistanceMatrixRequest {
   
   extension [Self <: DistanceMatrixRequest](x: Self) {
     
-    inline def setArrival_time(value: Date | Double): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
+    inline def setArrival_time(value: js.Date | Double): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
     
     inline def setArrival_timeUndefined: Self = StObject.set(x, "arrival_time", js.undefined)
     
@@ -151,15 +150,15 @@ object DistanceMatrixRequest {
     
     inline def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
     
-    inline def setAvoidVarargs(value: TravelRestriction*): Self = StObject.set(x, "avoid", js.Array(value :_*))
+    inline def setAvoidVarargs(value: TravelRestriction*): Self = StObject.set(x, "avoid", js.Array(value*))
     
-    inline def setDeparture_time(value: Date | Double): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
+    inline def setDeparture_time(value: js.Date | Double): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
     
     inline def setDeparture_timeUndefined: Self = StObject.set(x, "departure_time", js.undefined)
     
     inline def setDestinations(value: js.Array[LatLng]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    inline def setDestinationsVarargs(value: LatLng*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: LatLng*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
@@ -171,7 +170,7 @@ object DistanceMatrixRequest {
     
     inline def setOrigins(value: js.Array[LatLng]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
     
-    inline def setOriginsVarargs(value: LatLng*): Self = StObject.set(x, "origins", js.Array(value :_*))
+    inline def setOriginsVarargs(value: LatLng*): Self = StObject.set(x, "origins", js.Array(value*))
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
@@ -185,7 +184,7 @@ object DistanceMatrixRequest {
     
     inline def setTransit_modeUndefined: Self = StObject.set(x, "transit_mode", js.undefined)
     
-    inline def setTransit_modeVarargs(value: TransitMode*): Self = StObject.set(x, "transit_mode", js.Array(value :_*))
+    inline def setTransit_modeVarargs(value: TransitMode*): Self = StObject.set(x, "transit_mode", js.Array(value*))
     
     inline def setTransit_routing_preference(value: TransitRoutingPreference): Self = StObject.set(x, "transit_routing_preference", value.asInstanceOf[js.Any])
     

@@ -30,12 +30,12 @@ object TransactionCollections {
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    inline def setReadVarargs(value: String*): Self = StObject.set(x, "read", js.Array(value :_*))
+    inline def setReadVarargs(value: String*): Self = StObject.set(x, "read", js.Array(value*))
     
     inline def setWrite(value: String | js.Array[String]): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
     inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     
-    inline def setWriteVarargs(value: String*): Self = StObject.set(x, "write", js.Array(value :_*))
+    inline def setWriteVarargs(value: String*): Self = StObject.set(x, "write", js.Array(value*))
   }
 }

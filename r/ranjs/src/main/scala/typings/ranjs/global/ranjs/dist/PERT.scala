@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.PERT")
 @js.native
-class PERT ()
+open class PERT ()
   extends typings.ranjs.mod.dist.PERT {
   def this(a: Double) = this()
   def this(a: Double, b: Double) = this()

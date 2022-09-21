@@ -15,7 +15,7 @@ trait PartitionQueryRequest extends StObject {
   var paramTypes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -26,7 +26,7 @@ trait PartitionQueryRequest extends StObject {
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[Any]
   ] = js.undefined
   
   /** Additional options that affect how many partitions are created. */
@@ -55,7 +55,7 @@ object PartitionQueryRequest {
     inline def setParamTypes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[Any]
     ): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
     inline def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
@@ -63,7 +63,7 @@ object PartitionQueryRequest {
     inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

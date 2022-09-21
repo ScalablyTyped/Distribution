@@ -1,16 +1,21 @@
 package typings.imageQ
 
-import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.arrayMod.ErrorDiffusionArrayKernel
+import typings.imageQ.distanceCalculatorMod.AbstractDistanceCalculator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMod {
   
-  @JSImport("image-q/dist/image", "ErrorDiffusionArray")
+  @JSImport("image-q/dist/types/src/image", "AbstractImageQuantizer")
   @js.native
-  class ErrorDiffusionArray protected ()
+  abstract class AbstractImageQuantizer ()
+    extends typings.imageQ.imageQuantizerMod.AbstractImageQuantizer
+  
+  @JSImport("image-q/dist/types/src/image", "ErrorDiffusionArray")
+  @js.native
+  open class ErrorDiffusionArray protected ()
     extends typings.imageQ.arrayMod.ErrorDiffusionArray {
     def this(colorDistanceCalculator: AbstractDistanceCalculator, kernel: ErrorDiffusionArrayKernel) = this()
     def this(
@@ -60,7 +65,7 @@ object imageMod {
     ) = this()
   }
   
-  @JSImport("image-q/dist/image", "ErrorDiffusionArrayKernel")
+  @JSImport("image-q/dist/types/src/image", "ErrorDiffusionArrayKernel")
   @js.native
   object ErrorDiffusionArrayKernel extends StObject {
     
@@ -86,9 +91,9 @@ object imageMod {
     /* 7 */ val TwoSierra: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.TwoSierra & Double = js.native
   }
   
-  @JSImport("image-q/dist/image", "ErrorDiffusionRiemersma")
+  @JSImport("image-q/dist/types/src/image", "ErrorDiffusionRiemersma")
   @js.native
-  class ErrorDiffusionRiemersma protected ()
+  open class ErrorDiffusionRiemersma protected ()
     extends typings.imageQ.riemersmaMod.ErrorDiffusionRiemersma {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, errorQueueSize: Double) = this()
@@ -103,10 +108,22 @@ object imageMod {
       errorPropagation: Double
     ) = this()
   }
+  /* static members */
+  object ErrorDiffusionRiemersma {
+    
+    @JSImport("image-q/dist/types/src/image", "ErrorDiffusionRiemersma")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("image-q/dist/types/src/image", "ErrorDiffusionRiemersma._createWeights")
+    @js.native
+    def _createWeights: Any = js.native
+    inline def _createWeights_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_createWeights")(x.asInstanceOf[js.Any])
+  }
   
-  @JSImport("image-q/dist/image", "NearestColor")
+  @JSImport("image-q/dist/types/src/image", "NearestColor")
   @js.native
-  class NearestColor protected ()
+  open class NearestColor protected ()
     extends typings.imageQ.nearestColorMod.NearestColor {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
   }

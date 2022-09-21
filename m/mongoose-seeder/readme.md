@@ -10,10 +10,10 @@ Seed your MongoDB database easily
 | ------------------ | :-------------: |
 | Full name          | mongoose-seeder |
 | Keywords           | MongoDB, Mongoose, seeder |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 8559 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 675.6666666666666 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/SamVerschueren/mongoose-seeder)

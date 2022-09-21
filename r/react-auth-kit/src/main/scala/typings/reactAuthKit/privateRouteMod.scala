@@ -2,47 +2,40 @@ package typings.reactAuthKit
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FunctionComponent
-import typings.reactRouter.mod.RouteProps
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object privateRouteMod extends Shortcut {
   
-  /**
-    * Private Route for Components
-    *
-    * @remarks
-    * This Component is based on {@link https://reactrouter.com/web/api/Route | reactrouter.Route}.
-    * So you need to install react-route-dom before use it
-    *
-    * @param props
-    */
-  @JSImport("react-auth-kit/PrivateRoute", JSImport.Default)
+  @JSImport("react-auth-kit/dist/PrivateRoute", JSImport.Default)
   @js.native
-  val default: FunctionComponent[PrivateRouteProps] = js.native
+  val default: FunctionComponent[RequireAuthProps] = js.native
   
-  trait PrivateRouteProps
-    extends StObject
-       with RouteProps {
+  trait RequireAuthProps extends StObject {
+    
+    var children: Element
     
     var loginPath: String
   }
-  object PrivateRouteProps {
+  object RequireAuthProps {
     
-    inline def apply(loginPath: String): PrivateRouteProps = {
-      val __obj = js.Dynamic.literal(loginPath = loginPath.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PrivateRouteProps]
+    inline def apply(children: Element, loginPath: String): RequireAuthProps = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loginPath = loginPath.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RequireAuthProps]
     }
     
-    extension [Self <: PrivateRouteProps](x: Self) {
+    extension [Self <: RequireAuthProps](x: Self) {
+      
+      inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setLoginPath(value: String): Self = StObject.set(x, "loginPath", value.asInstanceOf[js.Any])
     }
   }
   
-  type _To = FunctionComponent[PrivateRouteProps]
+  type _To = FunctionComponent[RequireAuthProps]
   
   /* This means you don't have to write `default`, but can instead just say `privateRouteMod.foo` */
-  override def _to: FunctionComponent[PrivateRouteProps] = default
+  override def _to: FunctionComponent[RequireAuthProps] = default
 }

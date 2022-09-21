@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "SlopeSouth")
 @js.native
-class SlopeSouth () extends AbstractPrimitive {
+open class SlopeSouth () extends AbstractPrimitive {
   def this(dimension: SlopeDimension) = this()
   def this(dimension: Unit, color: SlopeColor) = this()
   def this(dimension: SlopeDimension, color: SlopeColor) = this()

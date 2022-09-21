@@ -12,12 +12,10 @@ object sliderMod {
   
   @JSImport("react-color/lib/components/slider/Slider", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SliderPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SliderPickerProps, js.Object, Any]
   
-  @js.native
-  trait SliderPicker
-    extends Component[SliderPickerProps, js.Object, js.Any]
+  type SliderPicker = Component[SliderPickerProps, js.Object, Any]
   
   trait SliderPickerProps
     extends StObject

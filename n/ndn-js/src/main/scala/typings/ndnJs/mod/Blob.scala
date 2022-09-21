@@ -1,13 +1,13 @@
 package typings.ndnJs.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ndn-js", "Blob")
 @js.native
-class Blob ()
+open class Blob ()
   extends typings.ndnJs.blobMod.Blob {
   def this(value: String) = this()
   def this(value: js.Array[Double]) = this()

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "StateLookup")
 @js.native
-class StateLookup protected ()
+open class StateLookup protected ()
   extends typings.matrixAppserviceBridge.stateLookupMod.StateLookup {
   /**
     * Construct a new state lookup entity.

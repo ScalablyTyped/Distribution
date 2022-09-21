@@ -29,7 +29,7 @@ trait Value extends StObject {
   var protoValue: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value & TopLevel[Any]
   ] = js.undefined
   
   /** Represents a string value. */
@@ -74,7 +74,7 @@ object Value {
     inline def setProtoValue(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value & TopLevel[Any]
     ): Self = StObject.set(x, "protoValue", value.asInstanceOf[js.Any])
     
     inline def setProtoValueUndefined: Self = StObject.set(x, "protoValue", js.undefined)

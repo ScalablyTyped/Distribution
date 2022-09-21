@@ -10,15 +10,12 @@ XHR adapter for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter-xhr |
 | Keywords           | polly, pollyjs, record, replay, xhr, adapter |
-| # releases         | 22 |
-| # dependents       | 4 |
-| # downloads        | 359811 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 139847.66666666666 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fadapter-xhr)
     
 

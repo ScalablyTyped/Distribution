@@ -38,21 +38,21 @@ object updatebarrierMod {
     @JSImport("baconjs/types/internal/updatebarrier", "default.inTransaction")
     @js.native
     def inTransaction: js.Function4[
-        /* event */ js.UndefOr[Event[js.Any]], 
-        /* context */ js.Any, 
+        /* event */ js.UndefOr[Event[Any]], 
+        /* context */ Any, 
         /* f */ js.Function, 
-        /* args */ js.Array[js.Any], 
-        js.Any
+        /* args */ js.Array[Any], 
+        Any
       ] = js.native
-    inline def inTransaction(event: Unit, context: js.Any, f: js.Function, args: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("inTransaction")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def inTransaction(event: Event[js.Any], context: js.Any, f: js.Function, args: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("inTransaction")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def inTransaction(event: Unit, context: Any, f: js.Function, args: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("inTransaction")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def inTransaction(event: Event[Any], context: Any, f: js.Function, args: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("inTransaction")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def inTransaction_=(
       x: js.Function4[
-          /* event */ js.UndefOr[Event[js.Any]], 
-          /* context */ js.Any, 
+          /* event */ js.UndefOr[Event[Any]], 
+          /* context */ Any, 
           /* f */ js.Function, 
-          /* args */ js.Array[js.Any], 
-          js.Any
+          /* args */ js.Array[Any], 
+          Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inTransaction")(x.asInstanceOf[js.Any])
     
@@ -79,9 +79,9 @@ object updatebarrierMod {
     
     @JSImport("baconjs/types/internal/updatebarrier", "default.whenDoneWith")
     @js.native
-    def whenDoneWith: js.Function2[/* obs */ Observable, /* f */ Call, js.Any] = js.native
-    inline def whenDoneWith(obs: Observable, f: Call): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("whenDoneWith")(obs.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def whenDoneWith_=(x: js.Function2[/* obs */ Observable, /* f */ Call, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("whenDoneWith")(x.asInstanceOf[js.Any])
+    def whenDoneWith: js.Function2[/* obs */ Observable, /* f */ Call, Any] = js.native
+    inline def whenDoneWith(obs: Observable, f: Call): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("whenDoneWith")(obs.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def whenDoneWith_=(x: js.Function2[/* obs */ Observable, /* f */ Call, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("whenDoneWith")(x.asInstanceOf[js.Any])
     
     @JSImport("baconjs/types/internal/updatebarrier", "default.wrappedSubscribe")
     @js.native
@@ -90,7 +90,7 @@ object updatebarrierMod {
     inline def wrappedSubscribe_=(x: FnCallObsSubscribeSink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrappedSubscribe")(x.asInstanceOf[js.Any])
   }
   
-  type Call = js.Function0[js.Any]
+  type Call = js.Function0[Any]
   
   type EventSink[V] = Sink[Event[V]]
   
@@ -115,5 +115,5 @@ object updatebarrierMod {
     }
   }
   
-  type Sink[V] = js.Function1[/* value */ V, js.Any]
+  type Sink[V] = js.Function1[/* value */ V, Any]
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jsonpointer" : "4.1.0"
+      "jsonpointer" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jsonpointer" : "4.1.0"
+      "jsonpointer" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

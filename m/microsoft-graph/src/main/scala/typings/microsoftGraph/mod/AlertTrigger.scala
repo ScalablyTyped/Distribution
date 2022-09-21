@@ -9,7 +9,7 @@ trait AlertTrigger extends StObject {
   // Name of the property serving as a detection trigger.
   var name: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.
+  // Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
   var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Value of the property serving as a detection trigger.

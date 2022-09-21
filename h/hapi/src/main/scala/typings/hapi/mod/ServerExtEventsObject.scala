@@ -39,7 +39,7 @@ object ServerExtEventsObject {
     
     inline def setMethodFunction1(value: /* server */ Server => Unit): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
     
-    inline def setMethodVarargs(value: ServerExtPointFunction*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: ServerExtPointFunction*): Self = StObject.set(x, "method", js.Array(value*))
     
     inline def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

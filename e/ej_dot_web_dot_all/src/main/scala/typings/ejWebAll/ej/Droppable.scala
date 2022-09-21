@@ -28,7 +28,7 @@ object Droppable {
     
     /** returns the element which accepts the droppable element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -51,7 +51,7 @@ object Droppable {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -66,7 +66,7 @@ object Droppable {
     /** Used to accept the specified draggable items.
       * @Default {null}
       */
-    var accept: js.UndefOr[js.Any] = js.undefined
+    var accept: js.UndefOr[Any] = js.undefined
     
     /** This event is triggered when the mouse up is moved during the dragging.
       */
@@ -94,7 +94,7 @@ object Droppable {
     
     extension [Self <: typings.ejWebAll.ej.Droppable.Model](x: Self) {
       
-      inline def setAccept(value: js.Any): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: Any): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
       inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
@@ -128,7 +128,7 @@ object Droppable {
     
     /** returns the mouse out over the element
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -151,7 +151,7 @@ object Droppable {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -173,7 +173,7 @@ object Droppable {
     
     /** returns the mouse over the element
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -196,7 +196,7 @@ object Droppable {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       

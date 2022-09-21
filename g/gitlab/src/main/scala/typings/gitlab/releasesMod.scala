@@ -14,7 +14,7 @@ object releasesMod {
   
   @JSImport("gitlab/dist/types/core/services/Releases", "Releases")
   @js.native
-  class Releases () extends BaseService {
+  open class Releases () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native

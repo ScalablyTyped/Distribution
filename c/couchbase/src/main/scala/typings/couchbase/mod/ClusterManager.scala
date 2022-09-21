@@ -22,7 +22,7 @@ trait ClusterManager extends StObject {
     * @param opts
     * @param callback
     */
-  def createBucket(name: String, opts: js.Any, callback: js.Function): Unit = js.native
+  def createBucket(name: String, opts: Any, callback: js.Function): Unit = js.native
   
   /**
     *

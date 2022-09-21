@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientToolTipController")
 @js.native
-class ASPxClientToolTipController ()
+open class ASPxClientToolTipController ()
   extends StObject
      with typings.devexpressWeb.ASPxClientToolTipController {
   

@@ -12,7 +12,7 @@ trait CreatePermissionSetRequest extends StObject {
   var Description: js.UndefOr[PermissionSetDescription] = js.undefined
   
   /**
-    * The ARN of the SSO instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
+    * The ARN of the IAM Identity Center instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
   var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn
   
@@ -65,6 +65,6 @@ object CreatePermissionSetRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

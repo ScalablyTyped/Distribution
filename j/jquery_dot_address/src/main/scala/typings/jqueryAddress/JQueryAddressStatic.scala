@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JQueryAddressStatic extends StObject {
   
-  def apply(): js.Any = js.native
+  def apply(): Any = js.native
   
   /**
     * Provides the state of the auto update mode. Enabled by default.
@@ -26,7 +26,7 @@ trait JQueryAddressStatic extends StObject {
   /**
     * Binds any supported event type to a function with support for an optional map of data.
     */
-  def bind(`type`: js.Any, data: js.Any, callback: js.Function): JQueryAddressStatic = js.native
+  def bind(`type`: Any, data: Any, callback: js.Function): JQueryAddressStatic = js.native
   
   /**
     * Binds a function to be executed whenever the address is changed. 
@@ -150,7 +150,7 @@ trait JQueryAddressStatic extends StObject {
   /**
     * Provides the currently set page view tracking function.
     */
-  def tracker(): js.Any = js.native
+  def tracker(): Any = js.native
   /**
     * Sets a function for page view tracking. Google Analytics tracking is automatically invoked if it exists in the page.
     */

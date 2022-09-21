@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "WebMercatorViewport")
 @js.native
-class WebMercatorViewport ()
+open class WebMercatorViewport ()
   extends typings.viewportMercatorProject.mod.WebMercatorViewport {
   def this(opts: WebMercatorViewportOptions) = this()
 }

@@ -25,7 +25,7 @@ object UnionPattern {
     
     inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value*))
     
     inline def setType(value: union): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for SubmitConfigSource method.
-  */
 trait SchemaSubmitConfigSourceRequest extends StObject {
   
   /**
-    * The source configuration for the service.
+    * Required. The source configuration for the service.
     */
   var configSource: js.UndefOr[SchemaConfigSource] = js.undefined
   
   /**
-    * Optional. If set, this will result in the generation of a
-    * `google.api.Service` configuration based on the `ConfigSource` provided,
-    * but the generated config and the sources will NOT be persisted.
+    * Optional. If set, this will result in the generation of a `google.api.Service` configuration based on the `ConfigSource` provided, but the generated config and the sources will NOT be persisted.
     */
-  var validateOnly: js.UndefOr[Boolean] = js.undefined
+  var validateOnly: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaSubmitConfigSourceRequest {
   
@@ -35,6 +30,8 @@ object SchemaSubmitConfigSourceRequest {
     inline def setConfigSourceUndefined: Self = StObject.set(x, "configSource", js.undefined)
     
     inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    
+    inline def setValidateOnlyNull: Self = StObject.set(x, "validateOnly", null)
     
     inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }

@@ -6,30 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ReadPropExpr")
 @js.native
-class ReadPropExpr protected ()
-  extends typings.angularCompiler.compilerMod.ReadPropExpr {
-  def this(receiver: typings.angularCompiler.outputAstMod.Expression, name: String) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    name: String,
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    name: String,
-    `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    name: String,
-    `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    name: String,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class ReadPropExpr protected () extends Expression {
+  def this(receiver: Expression, name: String) = this()
+  def this(receiver: Expression, name: String, `type`: Type) = this()
+  def this(receiver: Expression, name: String, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(receiver: Expression, name: String, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(receiver: Expression, name: String, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
+  var name: String = js.native
+  
+  var receiver: Expression = js.native
+  
+  def set(value: Expression): WritePropExpr = js.native
 }

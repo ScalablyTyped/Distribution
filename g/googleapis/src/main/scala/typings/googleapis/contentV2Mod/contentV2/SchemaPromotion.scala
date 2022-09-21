@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaPromotion extends StObject {
   
   /**
-    * [required] Amount of the promotion. The values here are the promotion
-    * applied to the unit price pretax and to the total of the tax amounts.
+    * [required] Amount of the promotion. The values here are the promotion applied to the unit price pretax and to the total of the tax amounts.
     */
   var promotionAmount: js.UndefOr[SchemaAmount] = js.undefined
   
   /**
     * [required] ID of the promotion.
     */
-  var promotionId: js.UndefOr[String] = js.undefined
+  var promotionId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPromotion {
   
@@ -31,6 +30,8 @@ object SchemaPromotion {
     inline def setPromotionAmountUndefined: Self = StObject.set(x, "promotionAmount", js.undefined)
     
     inline def setPromotionId(value: String): Self = StObject.set(x, "promotionId", value.asInstanceOf[js.Any])
+    
+    inline def setPromotionIdNull: Self = StObject.set(x, "promotionId", null)
     
     inline def setPromotionIdUndefined: Self = StObject.set(x, "promotionId", js.undefined)
   }

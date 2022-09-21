@@ -11,7 +11,7 @@ object spacesPublisherMod {
   
   @JSImport("app-builder-lib/out/publish/s3/spacesPublisher", JSImport.Default)
   @js.native
-  class default protected () extends SpacesPublisher {
+  open class default protected () extends SpacesPublisher {
     def this(context: PublishContext, info: SpacesOptions) = this()
   }
   /* static members */
@@ -28,9 +28,9 @@ object spacesPublisherMod {
   @js.native
   trait SpacesPublisher extends BaseS3Publisher {
     
-    /* private */ val info: js.Any = js.native
+    /* private */ val info: Any = js.native
     
     @JSName("providerName")
-    val providerName_FSpacesPublisher: /* "Spaces" */ String = js.native
+    val providerName_FSpacesPublisher: /* "spaces" */ String = js.native
   }
 }

@@ -9,7 +9,7 @@ trait IndexConfigurationSummary extends StObject {
   /**
     * The Unix timestamp when the index was created.
     */
-  var CreatedAt: Timestamp
+  var CreatedAt: js.Date
   
   /**
     * Indicates whether the index is a enterprise edition index or a developer edition index. 
@@ -17,12 +17,12 @@ trait IndexConfigurationSummary extends StObject {
   var Edition: js.UndefOr[IndexEdition] = js.undefined
   
   /**
-    * A unique identifier for the index. Use this to identify the index when you are using operations such as Query, DescribeIndex, UpdateIndex, and DeleteIndex.
+    * A unique identifier for the index. Use this to identify the index when you are using APIs such as Query, DescribeIndex, UpdateIndex, and DeleteIndex.
     */
   var Id: js.UndefOr[IndexId] = js.undefined
   
   /**
-    * The name of the index.
+    * The identifier of the index.
     */
   var Name: js.UndefOr[IndexName] = js.undefined
   
@@ -32,20 +32,20 @@ trait IndexConfigurationSummary extends StObject {
   var Status: IndexStatus
   
   /**
-    * The Unix timestamp when the index was last updated by the UpdateIndex operation.
+    * The Unix timestamp when the index was last updated by the UpdateIndex API.
     */
-  var UpdatedAt: Timestamp
+  var UpdatedAt: js.Date
 }
 object IndexConfigurationSummary {
   
-  inline def apply(CreatedAt: Timestamp, Status: IndexStatus, UpdatedAt: Timestamp): IndexConfigurationSummary = {
+  inline def apply(CreatedAt: js.Date, Status: IndexStatus, UpdatedAt: js.Date): IndexConfigurationSummary = {
     val __obj = js.Dynamic.literal(CreatedAt = CreatedAt.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexConfigurationSummary]
   }
   
   extension [Self <: IndexConfigurationSummary](x: Self) {
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setEdition(value: IndexEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
@@ -61,6 +61,6 @@ object IndexConfigurationSummary {
     
     inline def setStatus(value: IndexStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

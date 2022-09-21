@@ -1,100 +1,93 @@
 package typings.anser
 
 import typings.anser.anserBooleans.`true`
-import typings.anser.anserStrings.blink
-import typings.anser.anserStrings.bold
-import typings.anser.anserStrings.dim
-import typings.anser.anserStrings.hidden
-import typings.anser.anserStrings.italic
-import typings.anser.anserStrings.reverse
-import typings.anser.anserStrings.strikethrough
-import typings.anser.anserStrings.underline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("anser", JSImport.Default)
+  @JSImport("anser", JSImport.Namespace)
   @js.native
-  class default ()
+  open class ^ ()
     extends StObject
        with Anser
-  /* static members */
-  object default {
-    
-    @JSImport("anser", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * This replaces ANSI terminal escape codes with SPAN tags that wrap the
-      * content.
-      *
-      * This function only interprets ANSI SGR (Select Graphic Rendition) codes
-      * that can be represented in HTML.
-      * For example, cursor movement codes are ignored and hidden from output.
-      * The default style uses colors that are very close to the prescribed
-      * standard. The standard assumes that the text will have a black
-      * background. These colors are set as inline styles on the SPAN tags.
-      *
-      * Another option is to set `use_classes: true` in the options argument.
-      * This will instead set classes on the spans so the colors can be set via
-      * CSS. The class names used are of the format `ansi-*-fg/bg` and
-      * `ansi-bright-*-fg/bg` where `*` is the color name,
-      * i.e black/red/green/yellow/blue/magenta/cyan/white.
-      *
-      * @param txt The input text.
-      * @param options The options.
-      * @returns The HTML output.
-      */
-    inline def ansiToHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def ansiToHtml(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    /**
-      * Converts ANSI input into JSON output.
-      *
-      * @param txt The input text.
-      * @param options The options.
-      * @returns The HTML output.
-      */
-    inline def ansiToJson(txt: String): js.Array[AnserJsonEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any]).asInstanceOf[js.Array[AnserJsonEntry]]
-    inline def ansiToJson(txt: String, options: AnserOptions): js.Array[AnserJsonEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[AnserJsonEntry]]
-    
-    /**
-      * Converts ANSI input into text output.
-      *
-      * @param txt The input text.
-      * @returns The text output.
-      */
-    inline def ansiToText(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def ansiToText(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    /**
-      * Escape the input HTML.
-      *
-      * This does the minimum escaping of text to make it compliant with HTML.
-      * In particular, the '&','<', and '>' characters are escaped. This should
-      * be run prior to `ansiToHtml`.
-      *
-      * @param txt The input text (containing the ANSI snippets).
-      * @returns The escaped html.
-      */
-    inline def escapeForHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    /**
-      * Adds the links in the HTML.
-      *
-      * This replaces any links in the text with anchor tags that display the
-      * link. The links should have at least one whitespace character
-      * surrounding it. Also, you should apply this after you have run
-      * `ansiToHtml` on the text.
-      *
-      * @param txt The input text.
-      * @returns The HTML containing the <a> tags (unescaped).
-      */
-    inline def linkify(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
-  }
+  @JSImport("anser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * This replaces ANSI terminal escape codes with SPAN tags that wrap the
+    * content.
+    *
+    * This function only interprets ANSI SGR (Select Graphic Rendition) codes
+    * that can be represented in HTML.
+    * For example, cursor movement codes are ignored and hidden from output.
+    * The default style uses colors that are very close to the prescribed
+    * standard. The standard assumes that the text will have a black
+    * background. These colors are set as inline styles on the SPAN tags.
+    *
+    * Another option is to set `use_classes: true` in the options argument.
+    * This will instead set classes on the spans so the colors can be set via
+    * CSS. The class names used are of the format `ansi-*-fg/bg` and
+    * `ansi-bright-*-fg/bg` where `*` is the color name,
+    * i.e black/red/green/yellow/blue/magenta/cyan/white.
+    *
+    * @param txt The input text.
+    * @param options The options.
+    * @returns The HTML output.
+    */
+  /* static member */
+  inline def ansiToHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ansiToHtml(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * Converts ANSI input into JSON output.
+    *
+    * @param txt The input text.
+    * @param options The options.
+    * @returns The HTML output.
+    */
+  /* static member */
+  inline def ansiToJson(txt: String): js.Array[AnserJsonEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any]).asInstanceOf[js.Array[AnserJsonEntry]]
+  inline def ansiToJson(txt: String, options: AnserOptions): js.Array[AnserJsonEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[AnserJsonEntry]]
+  
+  /**
+    * Converts ANSI input into text output.
+    *
+    * @param txt The input text.
+    * @returns The text output.
+    */
+  /* static member */
+  inline def ansiToText(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ansiToText(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * Escape the input HTML.
+    *
+    * This does the minimum escaping of text to make it compliant with HTML.
+    * In particular, the '&','<', and '>' characters are escaped. This should
+    * be run prior to `ansiToHtml`.
+    *
+    * @param txt The input text (containing the ANSI snippets).
+    * @returns The escaped html.
+    */
+  /* static member */
+  inline def escapeForHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * Adds the links in the HTML.
+    *
+    * This replaces any links in the text with anchor tags that display the
+    * link. The links should have at least one whitespace character
+    * surrounding it. Also, you should apply this after you have run
+    * `ansiToHtml` on the text.
+    *
+    * @param txt The input text.
+    * @returns The HTML containing the <a> tags (unescaped).
+    */
+  /* static member */
+  inline def linkify(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait Anser extends StObject {
@@ -206,7 +199,11 @@ object mod {
     /** The text. */
     var content: String
     
-    var decoration: Null | bold | dim | italic | underline | blink | reverse | hidden | strikethrough
+    /** The decoration last declared before the text. */
+    var decoration: Null | DecorationName
+    
+    /** All decorations that apply to the text. */
+    var decorations: js.Array[DecorationName]
     
     /** The foreground color. */
     var fg: String
@@ -227,12 +224,13 @@ object mod {
       bg_truecolor: String,
       clearLine: Boolean,
       content: String,
+      decorations: js.Array[DecorationName],
       fg: String,
       fg_truecolor: String,
       isEmpty: () => Boolean,
       was_processed: Boolean
     ): AnserJsonEntry = {
-      val __obj = js.Dynamic.literal(bg = bg.asInstanceOf[js.Any], bg_truecolor = bg_truecolor.asInstanceOf[js.Any], clearLine = clearLine.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], fg = fg.asInstanceOf[js.Any], fg_truecolor = fg_truecolor.asInstanceOf[js.Any], isEmpty = js.Any.fromFunction0(isEmpty), was_processed = was_processed.asInstanceOf[js.Any], decoration = null)
+      val __obj = js.Dynamic.literal(bg = bg.asInstanceOf[js.Any], bg_truecolor = bg_truecolor.asInstanceOf[js.Any], clearLine = clearLine.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], decorations = decorations.asInstanceOf[js.Any], fg = fg.asInstanceOf[js.Any], fg_truecolor = fg_truecolor.asInstanceOf[js.Any], isEmpty = js.Any.fromFunction0(isEmpty), was_processed = was_processed.asInstanceOf[js.Any], decoration = null)
       __obj.asInstanceOf[AnserJsonEntry]
     }
     
@@ -246,9 +244,13 @@ object mod {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setDecoration(value: bold | dim | italic | underline | blink | reverse | hidden | strikethrough): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
+      inline def setDecoration(value: DecorationName): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
       
       inline def setDecorationNull: Self = StObject.set(x, "decoration", null)
+      
+      inline def setDecorations(value: js.Array[DecorationName]): Self = StObject.set(x, "decorations", value.asInstanceOf[js.Any])
+      
+      inline def setDecorationsVarargs(value: DecorationName*): Self = StObject.set(x, "decorations", js.Array(value*))
       
       inline def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
       
@@ -291,6 +293,36 @@ object mod {
       
       inline def setUse_classesUndefined: Self = StObject.set(x, "use_classes", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.anser.anserStrings.bold
+    - typings.anser.anserStrings.dim
+    - typings.anser.anserStrings.italic
+    - typings.anser.anserStrings.underline
+    - typings.anser.anserStrings.blink
+    - typings.anser.anserStrings.reverse
+    - typings.anser.anserStrings.hidden
+    - typings.anser.anserStrings.strikethrough
+  */
+  trait DecorationName extends StObject
+  object DecorationName {
+    
+    inline def blink: typings.anser.anserStrings.blink = "blink".asInstanceOf[typings.anser.anserStrings.blink]
+    
+    inline def bold: typings.anser.anserStrings.bold = "bold".asInstanceOf[typings.anser.anserStrings.bold]
+    
+    inline def dim: typings.anser.anserStrings.dim = "dim".asInstanceOf[typings.anser.anserStrings.dim]
+    
+    inline def hidden: typings.anser.anserStrings.hidden = "hidden".asInstanceOf[typings.anser.anserStrings.hidden]
+    
+    inline def italic: typings.anser.anserStrings.italic = "italic".asInstanceOf[typings.anser.anserStrings.italic]
+    
+    inline def reverse: typings.anser.anserStrings.reverse = "reverse".asInstanceOf[typings.anser.anserStrings.reverse]
+    
+    inline def strikethrough: typings.anser.anserStrings.strikethrough = "strikethrough".asInstanceOf[typings.anser.anserStrings.strikethrough]
+    
+    inline def underline: typings.anser.anserStrings.underline = "underline".asInstanceOf[typings.anser.anserStrings.underline]
   }
   
   trait OptionsWithJson

@@ -25,7 +25,7 @@ object ListDatabasesResponse {
     
     inline def setDatabasesUndefined: Self = StObject.set(x, "databases", js.undefined)
     
-    inline def setDatabasesVarargs(value: Database*): Self = StObject.set(x, "databases", js.Array(value :_*))
+    inline def setDatabasesVarargs(value: Database*): Self = StObject.set(x, "databases", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

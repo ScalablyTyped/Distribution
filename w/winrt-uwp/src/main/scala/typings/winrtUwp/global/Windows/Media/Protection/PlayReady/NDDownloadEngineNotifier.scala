@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Protection.PlayReady.NDDownloadEngineNotifier")
 @js.native
 /** Creates a new instance of the NDDownloadEngineNotifier class. */
-class NDDownloadEngineNotifier ()
+open class NDDownloadEngineNotifier ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.NDDownloadEngineNotifier {
   

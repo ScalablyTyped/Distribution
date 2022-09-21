@@ -10,10 +10,10 @@ object priorityHighMod {
   
   @JSImport("material-ui/svg-icons/notification/priority-high", JSImport.Default)
   @js.native
-  class default () extends NotificationPriorityHigh
+  open class default () extends NotificationPriorityHigh
   
   @JSImport("material-ui/svg-icons/notification/priority-high", "NotificationPriorityHigh")
   @js.native
-  class NotificationPriorityHigh ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationPriorityHigh ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

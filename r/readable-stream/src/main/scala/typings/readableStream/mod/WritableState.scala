@@ -1,7 +1,6 @@
 package typings.readableStream.mod
 
-import typings.node.BufferEncoding
-import typings.std.Error
+import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,8 +49,8 @@ trait WritableState extends StObject {
   
   var objectMode: Boolean = js.native
   
-  def onwrite(): js.Any = js.native
-  def onwrite(er: Error): js.Any = js.native
+  def onwrite(): Any = js.native
+  def onwrite(er: js.Error): Any = js.native
   
   var pendingcb: Double = js.native
   
@@ -59,7 +58,7 @@ trait WritableState extends StObject {
   
   var sync: Boolean = js.native
   
-  var writecb: (js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) | Null = js.native
+  var writecb: (js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) | Null = js.native
   
   var writelen: Double = js.native
   

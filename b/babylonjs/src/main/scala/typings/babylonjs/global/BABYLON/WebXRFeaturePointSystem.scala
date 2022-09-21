@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRFeaturePointSystem")
 @js.native
-class WebXRFeaturePointSystem protected ()
+open class WebXRFeaturePointSystem protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRFeaturePointSystem {
   /**
@@ -29,7 +29,7 @@ object WebXRFeaturePointSystem {
     */
   @JSGlobal("BABYLON.WebXRFeaturePointSystem.Name")
   @js.native
-  val Name: String = js.native
+  val Name: /* "xr-feature-points" */ String = js.native
   
   /**
     * The (Babylon) version of this module.
@@ -38,5 +38,5 @@ object WebXRFeaturePointSystem {
     */
   @JSGlobal("BABYLON.WebXRFeaturePointSystem.Version")
   @js.native
-  val Version: Double = js.native
+  val Version: /* 1 */ Double = js.native
 }

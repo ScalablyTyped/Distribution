@@ -95,7 +95,9 @@ object componentsIconMod extends Shortcut {
     
     var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]] = js.undefined
+    var component: js.UndefOr[
+        (ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]) | ForwardRefExoticComponent[CustomIconComponentProps]
+      ] = js.undefined
     
     var viewBox: js.UndefOr[String] = js.undefined
   }
@@ -112,7 +114,9 @@ object componentsIconMod extends Shortcut {
       
       inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      inline def setComponent(value: ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(
+        value: (ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]) | ForwardRefExoticComponent[CustomIconComponentProps]
+      ): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       

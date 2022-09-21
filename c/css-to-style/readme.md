@@ -10,10 +10,10 @@ Transform a string of css rules into a style object
 | ------------------ | :-------------: |
 | Full name          | css-to-style |
 | Keywords           | css, object, parse, react, string, style |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 112378 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 39385.666666666664 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/jacobbuck/css-to-style)

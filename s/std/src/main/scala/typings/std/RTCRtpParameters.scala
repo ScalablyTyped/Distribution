@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCRtpParameters extends StObject {
   
+  /* standard dom */
   var codecs: js.Array[RTCRtpCodecParameters]
   
+  /* standard dom */
   var headerExtensions: js.Array[RTCRtpHeaderExtensionParameters]
   
+  /* standard dom */
   var rtcp: RTCRtcpParameters
 }
 object RTCRtpParameters {
@@ -27,11 +30,11 @@ object RTCRtpParameters {
     
     inline def setCodecs(value: js.Array[RTCRtpCodecParameters]): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
     
-    inline def setCodecsVarargs(value: RTCRtpCodecParameters*): Self = StObject.set(x, "codecs", js.Array(value :_*))
+    inline def setCodecsVarargs(value: RTCRtpCodecParameters*): Self = StObject.set(x, "codecs", js.Array(value*))
     
     inline def setHeaderExtensions(value: js.Array[RTCRtpHeaderExtensionParameters]): Self = StObject.set(x, "headerExtensions", value.asInstanceOf[js.Any])
     
-    inline def setHeaderExtensionsVarargs(value: RTCRtpHeaderExtensionParameters*): Self = StObject.set(x, "headerExtensions", js.Array(value :_*))
+    inline def setHeaderExtensionsVarargs(value: RTCRtpHeaderExtensionParameters*): Self = StObject.set(x, "headerExtensions", js.Array(value*))
     
     inline def setRtcp(value: RTCRtcpParameters): Self = StObject.set(x, "rtcp", value.asInstanceOf[js.Any])
   }

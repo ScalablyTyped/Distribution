@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("MobileDetect")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.mobileDetect.mod.^ {
       def this(userAgent: String) = this()
       def this(userAgent: String, maxPhoneWidth: Double) = this()

@@ -9,7 +9,7 @@ trait Crawl extends StObject {
   /**
     * The date and time on which the crawl completed.
     */
-  var CompletedOn: js.UndefOr[TimestampValue] = js.undefined
+  var CompletedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The error message associated with the crawl.
@@ -29,7 +29,7 @@ trait Crawl extends StObject {
   /**
     * The date and time on which the crawl started.
     */
-  var StartedOn: js.UndefOr[TimestampValue] = js.undefined
+  var StartedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the crawler.
@@ -45,7 +45,7 @@ object Crawl {
   
   extension [Self <: Crawl](x: Self) {
     
-    inline def setCompletedOn(value: TimestampValue): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
+    inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
     inline def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
     
@@ -61,7 +61,7 @@ object Crawl {
     
     inline def setLogStreamUndefined: Self = StObject.set(x, "LogStream", js.undefined)
     
-    inline def setStartedOn(value: TimestampValue): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
+    inline def setStartedOn(value: js.Date): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
     inline def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
     

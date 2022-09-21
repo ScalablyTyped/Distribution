@@ -56,6 +56,31 @@ object typesMod {
     }
   }
   
+  trait RowClickEventData extends StObject {
+    
+    var row: HTMLElement
+    
+    var rowId: String | Null
+  }
+  object RowClickEventData {
+    
+    inline def apply(row: HTMLElement): RowClickEventData = {
+      val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any], rowId = null)
+      __obj.asInstanceOf[RowClickEventData]
+    }
+    
+    extension [Self <: RowClickEventData](x: Self) {
+      
+      inline def setRow(value: HTMLElement): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      
+      inline def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+      
+      inline def setRowIdNull: Self = StObject.set(x, "rowId", null)
+    }
+  }
+  
+  type RowClickEventDetail = RowClickEventData
+  
   trait SortActionEventData extends StObject {
     
     var columnId: String | Null

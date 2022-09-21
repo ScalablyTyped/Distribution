@@ -8,7 +8,7 @@ object wmsgetfeatureinfoMod {
   
   @JSImport("ol/format/WMSGetFeatureInfo", JSImport.Default)
   @js.native
-  class default () extends WMSGetFeatureInfo {
+  open class default () extends WMSGetFeatureInfo {
     def this(opt_options: Options) = this()
   }
   
@@ -29,7 +29,7 @@ object wmsgetfeatureinfoMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value*))
     }
   }
   

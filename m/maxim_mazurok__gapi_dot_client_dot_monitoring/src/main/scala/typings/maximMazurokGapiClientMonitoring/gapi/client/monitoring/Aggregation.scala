@@ -62,7 +62,7 @@ object Aggregation {
     
     inline def setGroupByFieldsUndefined: Self = StObject.set(x, "groupByFields", js.undefined)
     
-    inline def setGroupByFieldsVarargs(value: String*): Self = StObject.set(x, "groupByFields", js.Array(value :_*))
+    inline def setGroupByFieldsVarargs(value: String*): Self = StObject.set(x, "groupByFields", js.Array(value*))
     
     inline def setPerSeriesAligner(value: String): Self = StObject.set(x, "perSeriesAligner", value.asInstanceOf[js.Any])
     

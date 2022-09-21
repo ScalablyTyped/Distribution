@@ -9,6 +9,6 @@ trait IQuery[T] extends StObject {
   
   var _table: Table[T] = js.native
   
-  def execute(rawCriteria: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def execute(rawCriteria: js.Any, callback: js.Function1[/* _results */ js.Any, js.Any]): typings.bluebird.mod.^[js.Any] = js.native
+  def execute(rawCriteria: Any): typings.bluebird.mod.^[Any] = js.native
+  def execute(rawCriteria: Any, callback: js.Function1[/* _results */ Any, Any]): typings.bluebird.mod.^[Any] = js.native
 }

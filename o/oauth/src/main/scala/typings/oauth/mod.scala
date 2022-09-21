@@ -1,7 +1,7 @@
 package typings.oauth
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("oauth", "OAuth")
   @js.native
-  class OAuth protected () extends StObject {
+  open class OAuth protected () extends StObject {
     def this(
       requestUrl: String,
       accessUrl: String,
@@ -156,22 +156,22 @@ object mod {
     /* protected */ var _oauthParameterSeperator: String = js.native
     
     /* protected */ def _performSecureRequest(oauth_token: String, oauth_token_secret: String, method: String, url: String): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(oauth_token: String, oauth_token_secret: String, method: String, url: String, extra_params: js.Any): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(oauth_token: String, oauth_token_secret: String, method: String, url: String, extra_params: Any): ClientRequest = js.native
     /* protected */ def _performSecureRequest(
       oauth_token: String,
       oauth_token_secret: String,
       method: String,
       url: String,
-      extra_params: js.Any,
-      post_body: js.Any
+      extra_params: Any,
+      post_body: Any
     ): ClientRequest = js.native
     /* protected */ def _performSecureRequest(
       oauth_token: String,
       oauth_token_secret: String,
       method: String,
       url: String,
-      extra_params: js.Any,
-      post_body: js.Any,
+      extra_params: Any,
+      post_body: Any,
       post_content_type: String
     ): ClientRequest = js.native
     /* protected */ def _performSecureRequest(
@@ -179,8 +179,8 @@ object mod {
       oauth_token_secret: String,
       method: String,
       url: String,
-      extra_params: js.Any,
-      post_body: js.Any,
+      extra_params: Any,
+      post_body: Any,
       post_content_type: String,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -189,8 +189,8 @@ object mod {
       oauth_token_secret: String,
       method: String,
       url: String,
-      extra_params: js.Any,
-      post_body: js.Any,
+      extra_params: Any,
+      post_body: Any,
       post_content_type: Unit,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -199,7 +199,7 @@ object mod {
       oauth_token_secret: String,
       method: String,
       url: String,
-      extra_params: js.Any,
+      extra_params: Any,
       post_body: Unit,
       post_content_type: String
     ): ClientRequest = js.native
@@ -208,7 +208,7 @@ object mod {
       oauth_token_secret: String,
       method: String,
       url: String,
-      extra_params: js.Any,
+      extra_params: Any,
       post_body: Unit,
       post_content_type: String,
       callback: dataCallback
@@ -218,7 +218,7 @@ object mod {
       oauth_token_secret: String,
       method: String,
       url: String,
-      extra_params: js.Any,
+      extra_params: Any,
       post_body: Unit,
       post_content_type: Unit,
       callback: dataCallback
@@ -229,7 +229,7 @@ object mod {
       method: String,
       url: String,
       extra_params: Unit,
-      post_body: js.Any
+      post_body: Any
     ): ClientRequest = js.native
     /* protected */ def _performSecureRequest(
       oauth_token: String,
@@ -237,7 +237,7 @@ object mod {
       method: String,
       url: String,
       extra_params: Unit,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: String
     ): ClientRequest = js.native
     /* protected */ def _performSecureRequest(
@@ -246,7 +246,7 @@ object mod {
       method: String,
       url: String,
       extra_params: Unit,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: String,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -256,7 +256,7 @@ object mod {
       method: String,
       url: String,
       extra_params: Unit,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: Unit,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -291,20 +291,20 @@ object mod {
     ): ClientRequest = js.native
     
     /* protected */ def _prepareParameters(oauth_token_secret: String, method: String, url: String): js.Array[js.Array[String]] = js.native
-    /* protected */ def _prepareParameters(oauth_token_secret: String, method: String, url: String, extra_params: js.Any): js.Array[js.Array[String]] = js.native
+    /* protected */ def _prepareParameters(oauth_token_secret: String, method: String, url: String, extra_params: Any): js.Array[js.Array[String]] = js.native
     /* protected */ def _prepareParameters(oauth_token: String, oauth_token_secret: String, method: String, url: String): js.Array[js.Array[String]] = js.native
-    /* protected */ def _prepareParameters(oauth_token: String, oauth_token_secret: String, method: String, url: String, extra_params: js.Any): js.Array[js.Array[String]] = js.native
+    /* protected */ def _prepareParameters(oauth_token: String, oauth_token_secret: String, method: String, url: String, extra_params: Any): js.Array[js.Array[String]] = js.native
     
     /* protected */ var _protectedKey: String = js.native
     
     /* protected */ def _putOrPost(method: String, url: String, oauth_token: String, oauth_token_secret: String): ClientRequest = js.native
-    /* protected */ def _putOrPost(method: String, url: String, oauth_token: String, oauth_token_secret: String, post_body: js.Any): ClientRequest = js.native
+    /* protected */ def _putOrPost(method: String, url: String, oauth_token: String, oauth_token_secret: String, post_body: Any): ClientRequest = js.native
     /* protected */ def _putOrPost(
       method: String,
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: String
     ): ClientRequest = js.native
     /* protected */ def _putOrPost(
@@ -312,7 +312,7 @@ object mod {
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: String,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -321,7 +321,7 @@ object mod {
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: Unit,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -380,7 +380,7 @@ object mod {
     ): Unit = js.native
     
     def getOAuthRequestToken(callback: oauth1tokenCallback): Unit = js.native
-    def getOAuthRequestToken(extraparams: js.Any, callback: oauth1tokenCallback): Unit = js.native
+    def getOAuthRequestToken(extraparams: Any, callback: oauth1tokenCallback): Unit = js.native
     
     def getProtectedResource(
       url: String,
@@ -391,19 +391,19 @@ object mod {
     ): Unit = js.native
     
     def post(url: String, oauth_token: String, oauth_token_secret: String): ClientRequest = js.native
-    def post(url: String, oauth_token: String, oauth_token_secret: String, post_body: js.Any): ClientRequest = js.native
+    def post(url: String, oauth_token: String, oauth_token_secret: String, post_body: Any): ClientRequest = js.native
     def post(
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: String
     ): ClientRequest = js.native
     def post(
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: String,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -411,7 +411,7 @@ object mod {
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: Unit,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -440,19 +440,19 @@ object mod {
     ): ClientRequest = js.native
     
     def put(url: String, oauth_token: String, oauth_token_secret: String): ClientRequest = js.native
-    def put(url: String, oauth_token: String, oauth_token_secret: String, post_body: js.Any): ClientRequest = js.native
+    def put(url: String, oauth_token: String, oauth_token_secret: String, post_body: Any): ClientRequest = js.native
     def put(
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: String
     ): ClientRequest = js.native
     def put(
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: String,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -460,7 +460,7 @@ object mod {
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
-      post_body: js.Any,
+      post_body: Any,
       post_content_type: Unit,
       callback: dataCallback
     ): ClientRequest = js.native
@@ -496,7 +496,7 @@ object mod {
   
   @JSImport("oauth", "OAuth2")
   @js.native
-  class OAuth2 protected () extends StObject {
+  open class OAuth2 protected () extends StObject {
     def this(clientId: String, clientSecret: String, baseSite: String) = this()
     def this(clientId: String, clientSecret: String, baseSite: String, authorizePath: String) = this()
     def this(
@@ -567,7 +567,7 @@ object mod {
     /* protected */ var _customHeaders: OutgoingHttpHeaders = js.native
     
     /* protected */ def _executeRequest(http_library: String, options: RequestOptions, callback: dataCallback): Unit = js.native
-    /* protected */ def _executeRequest(http_library: String, options: RequestOptions, post_body: js.Any, callback: dataCallback): Unit = js.native
+    /* protected */ def _executeRequest(http_library: String, options: RequestOptions, post_body: Any, callback: dataCallback): Unit = js.native
     
     /* protected */ def _getAccessTokenUrl(): String = js.native
     
@@ -575,7 +575,7 @@ object mod {
       method: String,
       url: String,
       headers: Null,
-      post_body: js.Any,
+      post_body: Any,
       access_token: String,
       callback: dataCallback
     ): Unit = js.native
@@ -583,7 +583,7 @@ object mod {
       method: String,
       url: String,
       headers: Null,
-      post_body: js.Any,
+      post_body: Any,
       access_token: Null,
       callback: dataCallback
     ): Unit = js.native
@@ -591,7 +591,7 @@ object mod {
       method: String,
       url: String,
       headers: OutgoingHttpHeaders,
-      post_body: js.Any,
+      post_body: Any,
       access_token: String,
       callback: dataCallback
     ): Unit = js.native
@@ -599,7 +599,7 @@ object mod {
       method: String,
       url: String,
       headers: OutgoingHttpHeaders,
-      post_body: js.Any,
+      post_body: Any,
       access_token: Null,
       callback: dataCallback
     ): Unit = js.native
@@ -611,10 +611,10 @@ object mod {
     def get(url: String, access_token: String, callback: dataCallback): Unit = js.native
     
     def getAuthorizeUrl(): String = js.native
-    def getAuthorizeUrl(params: js.Any): String = js.native
+    def getAuthorizeUrl(params: Any): String = js.native
     
     def getOAuthAccessToken(code: String, callback: oauth2tokenCallback): Unit = js.native
-    def getOAuthAccessToken(code: String, params: js.Any, callback: oauth2tokenCallback): Unit = js.native
+    def getOAuthAccessToken(code: String, params: Any, callback: oauth2tokenCallback): Unit = js.native
     
     def getProtectedResource(url: String, access_token: String, callback: dataCallback): Unit = js.native
     
@@ -630,7 +630,7 @@ object mod {
   
   @JSImport("oauth", "OAuthEcho")
   @js.native
-  class OAuthEcho protected () extends OAuth {
+  open class OAuthEcho protected () extends OAuth {
     def this(
       realm: String,
       verify_credentials: String,
@@ -674,22 +674,22 @@ object mod {
     /* err */ Data, 
     /* result */ js.UndefOr[String | Buffer], 
     /* response */ js.UndefOr[IncomingMessage], 
-    js.Any
+    Any
   ]
   
   type oauth1tokenCallback = js.Function4[
     /* err */ Data, 
     /* token */ String, 
     /* token_secret */ String, 
-    /* parsedQueryString */ js.Any, 
-    js.Any
+    /* parsedQueryString */ Any, 
+    Any
   ]
   
   type oauth2tokenCallback = js.Function4[
     /* err */ Data, 
     /* access_token */ String, 
     /* refresh_token */ String, 
-    /* result */ js.Any, 
-    js.Any
+    /* result */ Any, 
+    Any
   ]
 }

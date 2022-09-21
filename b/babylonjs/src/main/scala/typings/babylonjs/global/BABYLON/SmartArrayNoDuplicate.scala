@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SmartArrayNoDuplicate")
 @js.native
-class SmartArrayNoDuplicate[T] ()
+open class SmartArrayNoDuplicate[T] ()
   extends StObject
      with typings.babylonjs.BABYLON.SmartArrayNoDuplicate[T] {
   
   /* private */ /* CompleteClass */
-  var _duplicateId: js.Any = js.native
+  var _duplicateId: Any = js.native
   
   /* protected */ /* CompleteClass */
   var _id: Double = js.native
@@ -21,15 +21,15 @@ class SmartArrayNoDuplicate[T] ()
     * @param array defines the data to concatenate with.
     */
   /* CompleteClass */
-  override def concat(array: js.Any): Unit = js.native
+  override def concat(array: Any): Unit = js.native
   
   /**
     * Concats the active data with a given array.
-    * This ensures no dupplicate will be present in the result.
+    * This ensures no duplicate will be present in the result.
     * @param array defines the data to concatenate with.
     */
   /* CompleteClass */
-  override def concatWithNoDuplicate(array: js.Any): Unit = js.native
+  override def concatWithNoDuplicate(array: Any): Unit = js.native
   
   /**
     * Returns whether an element is part of the active data.

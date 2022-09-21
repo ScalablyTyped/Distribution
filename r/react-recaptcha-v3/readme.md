@@ -10,10 +10,10 @@ This library helps to integrate google recaptcha into your react project easily.
 | ------------------ | :-------------: |
 | Full name          | react-recaptcha-v3 |
 | Keywords           | react, react.js, react-component, ReCaptcha, g-recaptcha, invisible-recaptcha, visible-recaptcha, recaptcha-token |
-| # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 412198 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46941.0 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/codeep/react-recaptcha-v3#readme)

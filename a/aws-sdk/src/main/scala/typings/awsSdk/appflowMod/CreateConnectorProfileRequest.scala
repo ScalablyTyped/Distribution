@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateConnectorProfileRequest extends StObject {
   
   /**
-    *  Indicates the connection mode and specifies whether it is public or private. Private flows use AWS PrivateLink to route data over AWS infrastructure without exposing it to the public internet. 
+    *  Indicates the connection mode and specifies whether it is public or private. Private flows use Amazon Web Services PrivateLink to route data over Amazon Web Services infrastructure without exposing it to the public internet. 
     */
   var connectionMode: ConnectionMode
+  
+  /**
+    * The label of the connector. The label is unique for each ConnectorRegistration in your Amazon Web Services account. Only needed if calling for CUSTOMCONNECTOR connector type/.
+    */
+  var connectorLabel: js.UndefOr[ConnectorLabel] = js.undefined
   
   /**
     *  Defines the connector-specific configuration and credentials. 
@@ -17,7 +22,7 @@ trait CreateConnectorProfileRequest extends StObject {
   var connectorProfileConfig: ConnectorProfileConfig
   
   /**
-    *  The name of the connector profile. The name is unique for each ConnectorProfile in your AWS account. 
+    *  The name of the connector profile. The name is unique for each ConnectorProfile in your Amazon Web Services account. 
     */
   var connectorProfileName: ConnectorProfileName
   
@@ -46,6 +51,10 @@ object CreateConnectorProfileRequest {
   extension [Self <: CreateConnectorProfileRequest](x: Self) {
     
     inline def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorLabel(value: ConnectorLabel): Self = StObject.set(x, "connectorLabel", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorLabelUndefined: Self = StObject.set(x, "connectorLabel", js.undefined)
     
     inline def setConnectorProfileConfig(value: ConnectorProfileConfig): Self = StObject.set(x, "connectorProfileConfig", value.asInstanceOf[js.Any])
     

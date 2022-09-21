@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAccesscontextmanager.anon
 
-import typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscontextmanager.AccessPolicy
+import typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscontextmanager.ReplaceServicePerimetersRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +29,9 @@ trait UploadType extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
+  /** Required. Resource name for the access policy which owns these Service Perimeters. Format: `accessPolicies/{policy_id}` */
+  var parent: String
+  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
@@ -36,7 +39,7 @@ trait UploadType extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: AccessPolicy
+  var resource: ReplaceServicePerimetersRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -46,8 +49,8 @@ trait UploadType extends StObject {
 }
 object UploadType {
   
-  inline def apply(resource: AccessPolicy): UploadType = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+  inline def apply(parent: String, resource: ReplaceServicePerimetersRequest): UploadType = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadType]
   }
   
@@ -81,6 +84,8 @@ object UploadType {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -89,7 +94,7 @@ object UploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: AccessPolicy): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ReplaceServicePerimetersRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

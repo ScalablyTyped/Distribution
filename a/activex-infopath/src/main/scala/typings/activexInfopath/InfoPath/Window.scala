@@ -15,7 +15,7 @@ trait Window extends StObject {
   def Close(): Unit = js.native
   def Close(fForce: Boolean): Unit = js.native
   
-  val CommandBars: js.Any = js.native
+  val CommandBars: Any = js.native
   
   /* private */ @JSName("InfoPath.Window_typekey")
   var InfoPathDotWindow_typekey: Window = js.native

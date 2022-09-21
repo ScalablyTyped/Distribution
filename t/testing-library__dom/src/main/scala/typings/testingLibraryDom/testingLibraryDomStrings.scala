@@ -524,6 +524,12 @@ object testingLibraryDomStrings {
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
+  sealed trait resize
+    extends StObject
+       with EventType
+  inline def resize: resize = "resize".asInstanceOf[resize]
+  
+  @js.native
   sealed trait role_
     extends StObject
        with Method
@@ -620,10 +626,28 @@ object testingLibraryDomStrings {
   inline def touchStart: touchStart = "touchStart".asInstanceOf[touchStart]
   
   @js.native
+  sealed trait transitionCancel
+    extends StObject
+       with EventType
+  inline def transitionCancel: transitionCancel = "transitionCancel".asInstanceOf[transitionCancel]
+  
+  @js.native
   sealed trait transitionEnd
     extends StObject
        with EventType
   inline def transitionEnd: transitionEnd = "transitionEnd".asInstanceOf[transitionEnd]
+  
+  @js.native
+  sealed trait transitionRun
+    extends StObject
+       with EventType
+  inline def transitionRun: transitionRun = "transitionRun".asInstanceOf[transitionRun]
+  
+  @js.native
+  sealed trait transitionStart
+    extends StObject
+       with EventType
+  inline def transitionStart: transitionStart = "transitionStart".asInstanceOf[transitionStart]
   
   @js.native
   sealed trait volumeChange

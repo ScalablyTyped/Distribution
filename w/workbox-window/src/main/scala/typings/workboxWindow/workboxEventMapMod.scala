@@ -93,11 +93,11 @@ object workboxEventMapMod {
     extends StObject
        with WorkboxEvent {
     
-    val data: js.Any
+    val data: Any
   }
   object WorkboxMessageEvent {
     
-    inline def apply(data: js.Any, originalEvent: Event, target: Workbox, `type`: String): WorkboxMessageEvent = {
+    inline def apply(data: Any, originalEvent: Event, target: Workbox, `type`: String): WorkboxMessageEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkboxMessageEvent]
@@ -105,7 +105,7 @@ object workboxEventMapMod {
     
     extension [Self <: WorkboxMessageEvent](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   

@@ -8,15 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Any
   extends StObject
-     with AsymmetricMatcher[js.Any]
-     with // jasmine.Any can also be a function
-Instantiable1[/* expectedClass */ js.Any, js.Any]
-     with _Expected[js.Any] {
-  
-  def apply(params: js.Any*): js.Any = js.native
-  
-  def jasmineMatches(other: js.Any): Boolean = js.native
+     with AsymmetricMatcher[scala.Any]
+     with Instantiable1[/* expectedClass */ scala.Any, scala.Any]
+     with _Expected[scala.Any] {
   
   @JSName("jasmineToString")
-  def jasmineToString_MAny(): String = js.native
+  def jasmineToString_MAny(prettyPrint: js.Function1[/* value */ scala.Any, String]): String = js.native
 }

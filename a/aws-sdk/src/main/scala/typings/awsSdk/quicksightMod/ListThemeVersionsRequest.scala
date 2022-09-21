@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListThemeVersionsRequest extends StObject {
   
   /**
-    * The ID of the AWS account that contains the themes that you're listing.
+    * The ID of the Amazon Web Services account that contains the themes that you're listing.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

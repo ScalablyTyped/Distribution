@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "querystring" : "0.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "querystring" : "0.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

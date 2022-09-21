@@ -22,7 +22,7 @@ trait ICircle
     * @param attr Object
     */
   @JSName("updatePath")
-  var updatePath_ICircle: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updatePath_ICircle: js.UndefOr[js.Function2[/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object ICircle {
   
@@ -45,7 +45,7 @@ object ICircle {
     
     inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    inline def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
+    inline def setUpdatePath(value: (/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
     
     inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
   }

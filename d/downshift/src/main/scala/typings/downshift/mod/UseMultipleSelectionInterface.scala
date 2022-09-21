@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UseMultipleSelectionInterface extends StObject {
   
+  def apply[Item](): UseMultipleSelectionReturnValue[Item] = js.native
   def apply[Item](props: UseMultipleSelectionProps[Item]): UseMultipleSelectionReturnValue[Item] = js.native
   
   var stateChangeTypes: DropdownClick = js.native

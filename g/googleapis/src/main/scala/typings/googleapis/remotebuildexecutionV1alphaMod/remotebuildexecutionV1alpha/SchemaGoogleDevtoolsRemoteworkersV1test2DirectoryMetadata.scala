@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The metadata for a directory. Similar to the equivalent message in the
-  * Remote Execution API.
-  */
 trait SchemaGoogleDevtoolsRemoteworkersV1test2DirectoryMetadata extends StObject {
   
   /**
-    * A pointer to the contents of the directory, in the form of a marshalled
-    * Directory message.
+    * A pointer to the contents of the directory, in the form of a marshalled Directory message.
     */
   var digest: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = js.undefined
   
   /**
     * The path of the directory, as in FileMetadata.path.
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2DirectoryMetadata {
   
@@ -35,6 +30,8 @@ object SchemaGoogleDevtoolsRemoteworkersV1test2DirectoryMetadata {
     inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathNull: Self = StObject.set(x, "path", null)
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }

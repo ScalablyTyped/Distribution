@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ShapeNodes")
 @js.native
-/* private */ class ShapeNodes ()
+/* private */ open class ShapeNodes ()
   extends StObject
      with typings.activexWord.Word.ShapeNodes

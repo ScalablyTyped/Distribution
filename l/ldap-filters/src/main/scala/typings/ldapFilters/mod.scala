@@ -123,7 +123,7 @@ object mod {
       
       inline def setEscapeChars(value: js.Array[String]): Self = StObject.set(x, "escapeChars", value.asInstanceOf[js.Any])
       
-      inline def setEscapeCharsVarargs(value: String*): Self = StObject.set(x, "escapeChars", js.Array(value :_*))
+      inline def setEscapeCharsVarargs(value: String*): Self = StObject.set(x, "escapeChars", js.Array(value*))
       
       inline def setGte(value: String => Filter): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
       

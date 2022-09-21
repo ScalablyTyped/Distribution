@@ -34,7 +34,7 @@ trait Win32LobAppPowerShellScriptRule
   
   /**
     * The execution context of the script. Do not specify this value if the rule is used for detection. Script detection
-    * rules will run in the same context as the associated app install context.
+    * rules will run in the same context as the associated app install context. Possible values are: system, user.
     */
   var runAsAccount: js.UndefOr[NullableOption[RunAsAccountType]] = js.undefined
   

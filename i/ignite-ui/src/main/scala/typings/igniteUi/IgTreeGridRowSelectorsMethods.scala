@@ -38,14 +38,14 @@ trait IgTreeGridRowSelectorsMethods extends StObject {
   /**
     * Gets an array of all the checked rows. Every object from the array has the following format { element: , id: , index: }
     */
-  def checkedRows(): js.Array[js.Any]
+  def checkedRows(): js.Array[Any]
   
   def destroy(): Unit
   
   /**
     * Gets an array of all the partially checked rows. Every object from the array has the following format { element: , id: , index: }
     */
-  def partiallyCheckedRows(): js.Array[js.Any]
+  def partiallyCheckedRows(): js.Array[Any]
   
   def rsRenderColgroup(): Unit
   
@@ -66,7 +66,7 @@ trait IgTreeGridRowSelectorsMethods extends StObject {
   /**
     * Gets an array of all the unchecked rows. Every object from the array has the following format { element: , id: , index: }
     */
-  def uncheckedRows(): js.Array[js.Any]
+  def uncheckedRows(): js.Array[Any]
 }
 object IgTreeGridRowSelectorsMethods {
   
@@ -75,13 +75,13 @@ object IgTreeGridRowSelectorsMethods {
     changeCheckStateById: (js.Object, Boolean) => Unit,
     changeLocale: () => Unit,
     checkStateById: js.Object => String,
-    checkedRows: () => js.Array[js.Any],
+    checkedRows: () => js.Array[Any],
     destroy: () => Unit,
-    partiallyCheckedRows: () => js.Array[js.Any],
+    partiallyCheckedRows: () => js.Array[Any],
     rsRenderColgroup: () => Unit,
     toggleCheckState: Double => Unit,
     toggleCheckStateById: js.Object => Unit,
-    uncheckedRows: () => js.Array[js.Any]
+    uncheckedRows: () => js.Array[Any]
   ): IgTreeGridRowSelectorsMethods = {
     val __obj = js.Dynamic.literal(changeCheckState = js.Any.fromFunction2(changeCheckState), changeCheckStateById = js.Any.fromFunction2(changeCheckStateById), changeLocale = js.Any.fromFunction0(changeLocale), checkStateById = js.Any.fromFunction1(checkStateById), checkedRows = js.Any.fromFunction0(checkedRows), destroy = js.Any.fromFunction0(destroy), partiallyCheckedRows = js.Any.fromFunction0(partiallyCheckedRows), rsRenderColgroup = js.Any.fromFunction0(rsRenderColgroup), toggleCheckState = js.Any.fromFunction1(toggleCheckState), toggleCheckStateById = js.Any.fromFunction1(toggleCheckStateById), uncheckedRows = js.Any.fromFunction0(uncheckedRows))
     __obj.asInstanceOf[IgTreeGridRowSelectorsMethods]
@@ -97,11 +97,11 @@ object IgTreeGridRowSelectorsMethods {
     
     inline def setCheckStateById(value: js.Object => String): Self = StObject.set(x, "checkStateById", js.Any.fromFunction1(value))
     
-    inline def setCheckedRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "checkedRows", js.Any.fromFunction0(value))
+    inline def setCheckedRows(value: () => js.Array[Any]): Self = StObject.set(x, "checkedRows", js.Any.fromFunction0(value))
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    inline def setPartiallyCheckedRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "partiallyCheckedRows", js.Any.fromFunction0(value))
+    inline def setPartiallyCheckedRows(value: () => js.Array[Any]): Self = StObject.set(x, "partiallyCheckedRows", js.Any.fromFunction0(value))
     
     inline def setRsRenderColgroup(value: () => Unit): Self = StObject.set(x, "rsRenderColgroup", js.Any.fromFunction0(value))
     
@@ -109,6 +109,6 @@ object IgTreeGridRowSelectorsMethods {
     
     inline def setToggleCheckStateById(value: js.Object => Unit): Self = StObject.set(x, "toggleCheckStateById", js.Any.fromFunction1(value))
     
-    inline def setUncheckedRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "uncheckedRows", js.Any.fromFunction0(value))
+    inline def setUncheckedRows(value: () => js.Array[Any]): Self = StObject.set(x, "uncheckedRows", js.Any.fromFunction0(value))
   }
 }

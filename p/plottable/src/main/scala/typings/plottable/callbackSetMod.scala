@@ -9,8 +9,8 @@ object callbackSetMod {
   
   @JSImport("plottable/build/src/utils/callbackSet", "CallbackSet")
   @js.native
-  class CallbackSet[CB /* <: js.Function */] () extends Set[CB] {
+  open class CallbackSet[CB /* <: js.Function */] () extends Set[CB] {
     
-    def callCallbacks(args: js.Any*): this.type = js.native
+    def callCallbacks(args: Any*): this.type = js.native
   }
 }

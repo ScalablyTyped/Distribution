@@ -22,6 +22,6 @@ object NamedStyles {
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: NamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: NamedStyle*): Self = StObject.set(x, "styles", js.Array(value*))
   }
 }

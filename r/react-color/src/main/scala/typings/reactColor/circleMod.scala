@@ -14,12 +14,10 @@ object circleMod {
   
   @JSImport("react-color/lib/components/circle/Circle", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CirclePickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CirclePickerProps, js.Object, Any]
   
-  @js.native
-  trait CirclePicker
-    extends Component[CirclePickerProps, js.Object, js.Any]
+  type CirclePicker = Component[CirclePickerProps, js.Object, Any]
   
   trait CirclePickerProps
     extends StObject
@@ -59,7 +57,7 @@ object circleMod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setOnSwatchHover(value: (/* color */ ColorResult, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onSwatchHover", js.Any.fromFunction2(value))
       

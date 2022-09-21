@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a conditional format for the negative side of the data bar.
   *
-  * Represents a conditional format DataBar Format for the negative side of the data bar.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalDataBarNegativeFormatLoadOptions extends StObject {
@@ -19,34 +19,34 @@ trait ConditionalDataBarNegativeFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    Value is "" (an empty string) if no border is present or set.
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    "Empty String" if no border is present or set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var borderColor: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * HTML color code representing the fill color, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var fillColor: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the negative data bar has the same border color as the positive data bar.
     *
-    * Specifies if the negative DataBar has the same border color as the positive DataBar.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var matchPositiveBorderColor: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the negative data bar has the same fill color as the positive data bar.
     *
-    * Specifies if the negative DataBar has the same fill color as the positive DataBar.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var matchPositiveFillColor: js.UndefOr[Boolean] = js.undefined

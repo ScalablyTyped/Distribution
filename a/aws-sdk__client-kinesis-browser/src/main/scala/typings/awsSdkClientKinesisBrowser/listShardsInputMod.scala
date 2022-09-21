@@ -8,5 +8,5 @@ object listShardsInputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/ListShardsInput", "ListShardsInput")
   @js.native
-  val ListShardsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListShardsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

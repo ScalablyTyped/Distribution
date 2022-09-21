@@ -13,7 +13,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : Usage = js.native
   
-  type Usage = js.Function2[/* gulp */ Gulp, /* options */ js.UndefOr[UsageOptions], js.Promise[js.Any]]
+  type Usage = js.Function2[/* gulp */ Gulp, /* options */ js.UndefOr[UsageOptions], js.Promise[Any]]
   
   trait UsageOptions extends StObject {
     

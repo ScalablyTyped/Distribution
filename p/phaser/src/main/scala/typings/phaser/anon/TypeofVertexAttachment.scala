@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofVertexAttachment extends StObject {
   
   /* static member */
-  var nextID: js.Any
+  var nextID: Any
 }
 object TypeofVertexAttachment {
   
-  inline def apply(nextID: js.Any): TypeofVertexAttachment = {
+  inline def apply(nextID: Any): TypeofVertexAttachment = {
     val __obj = js.Dynamic.literal(nextID = nextID.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofVertexAttachment]
   }
   
   extension [Self <: TypeofVertexAttachment](x: Self) {
     
-    inline def setNextID(value: js.Any): Self = StObject.set(x, "nextID", value.asInstanceOf[js.Any])
+    inline def setNextID(value: Any): Self = StObject.set(x, "nextID", value.asInstanceOf[js.Any])
   }
 }

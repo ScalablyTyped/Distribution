@@ -9,7 +9,7 @@ trait GetMaintenanceWindowExecutionTaskResult extends StObject {
   /**
     * The time the task execution completed.
     */
-  var EndTime: js.UndefOr[DateTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The defined maximum number of task executions that could be run in parallel.
@@ -34,7 +34,7 @@ trait GetMaintenanceWindowExecutionTaskResult extends StObject {
   /**
     * The time the task execution started.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the task.
@@ -42,12 +42,12 @@ trait GetMaintenanceWindowExecutionTaskResult extends StObject {
   var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.undefined
   
   /**
-    * The details explaining the Status. Only available for certain status values.
+    * The details explaining the status. Not available for all status values.
     */
   var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
   
   /**
-    * The ARN of the task that ran.
+    * The Amazon Resource Name (ARN) of the task that ran.
     */
   var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
   
@@ -57,7 +57,7 @@ trait GetMaintenanceWindowExecutionTaskResult extends StObject {
   var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
   
   /**
-    * The parameters passed to the task when it was run.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters.  The map has the following format: Key: string, between 1 and 255 characters Value: an array of strings, each string is between 1 and 255 characters
+    * The parameters passed to the task when it was run.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters.  The map has the following format:    Key: string, between 1 and 255 characters    Value: an array of strings, each between 1 and 255 characters  
     */
   var TaskParameters: js.UndefOr[MaintenanceWindowTaskParametersList] = js.undefined
   
@@ -80,7 +80,7 @@ object GetMaintenanceWindowExecutionTaskResult {
   
   extension [Self <: GetMaintenanceWindowExecutionTaskResult](x: Self) {
     
-    inline def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -100,7 +100,7 @@ object GetMaintenanceWindowExecutionTaskResult {
     
     inline def setServiceRoleUndefined: Self = StObject.set(x, "ServiceRole", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -124,7 +124,7 @@ object GetMaintenanceWindowExecutionTaskResult {
     
     inline def setTaskParametersUndefined: Self = StObject.set(x, "TaskParameters", js.undefined)
     
-    inline def setTaskParametersVarargs(value: MaintenanceWindowTaskParameters*): Self = StObject.set(x, "TaskParameters", js.Array(value :_*))
+    inline def setTaskParametersVarargs(value: MaintenanceWindowTaskParameters*): Self = StObject.set(x, "TaskParameters", js.Array(value*))
     
     inline def setType(value: MaintenanceWindowTaskType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

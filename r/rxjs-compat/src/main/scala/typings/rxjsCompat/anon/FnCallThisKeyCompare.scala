@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisKeyCompare extends StObject {
   
-  def apply[T](key: /* keyof T */ String): js.Any = js.native
+  def apply[T](key: /* keyof T */ String): Any = js.native
   def apply[T, K /* <: /* keyof T */ String */](
     key: K,
     compare: js.Function2[
@@ -15,5 +15,5 @@ trait FnCallThisKeyCompare extends StObject {
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* y */ js.Any, 
       Boolean
     ]
-  ): js.Any = js.native
+  ): Any = js.native
 }

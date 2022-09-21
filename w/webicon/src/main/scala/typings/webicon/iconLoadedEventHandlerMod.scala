@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iconLoadedEventHandlerMod {
   
-  type IconLoadedEventHandler = js.Function1[/* preloader */ IconPreloader, js.Any]
+  type IconLoadedEventHandler = js.Function1[/* preloader */ IconPreloader, Any]
 }

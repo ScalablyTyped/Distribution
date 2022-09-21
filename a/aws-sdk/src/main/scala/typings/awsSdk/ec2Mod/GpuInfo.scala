@@ -29,7 +29,7 @@ object GpuInfo {
     
     inline def setGpusUndefined: Self = StObject.set(x, "Gpus", js.undefined)
     
-    inline def setGpusVarargs(value: GpuDeviceInfo*): Self = StObject.set(x, "Gpus", js.Array(value :_*))
+    inline def setGpusVarargs(value: GpuDeviceInfo*): Self = StObject.set(x, "Gpus", js.Array(value*))
     
     inline def setTotalGpuMemoryInMiB(value: totalGpuMemory): Self = StObject.set(x, "TotalGpuMemoryInMiB", value.asInstanceOf[js.Any])
     

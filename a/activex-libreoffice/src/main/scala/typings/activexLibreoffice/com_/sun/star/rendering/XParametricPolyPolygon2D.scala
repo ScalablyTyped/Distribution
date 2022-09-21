@@ -59,7 +59,7 @@ object XParametricPolyPolygon2D {
     getColorSpace: () => XColorSpace,
     getOutline: Double => XPolyPolygon2D,
     getPointColor: RealPoint2D => SafeArray[ColorComponent],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XParametricPolyPolygon2D = {
     val __obj = js.Dynamic.literal(ColorSpace = ColorSpace.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getColor = js.Any.fromFunction1(getColor), getColorSpace = js.Any.fromFunction0(getColorSpace), getOutline = js.Any.fromFunction1(getOutline), getPointColor = js.Any.fromFunction1(getPointColor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

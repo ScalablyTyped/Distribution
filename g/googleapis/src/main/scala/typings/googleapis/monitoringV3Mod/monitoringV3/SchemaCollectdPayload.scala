@@ -5,50 +5,45 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A collection of data points sent from a collectd-based plugin. See the
-  * collectd documentation for more information.
-  */
 trait SchemaCollectdPayload extends StObject {
   
   /**
     * The end time of the interval.
     */
-  var endTime: js.UndefOr[String] = js.undefined
+  var endTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The measurement metadata. Example: &quot;process_id&quot; -&gt; 12345
+    * The measurement metadata. Example: "process_id" -\> 12345
     */
-  var metadata: js.UndefOr[StringDictionary[SchemaTypedValue]] = js.undefined
+  var metadata: js.UndefOr[StringDictionary[SchemaTypedValue] | Null] = js.undefined
   
   /**
-    * The name of the plugin. Example: &quot;disk&quot;.
+    * The name of the plugin. Example: "disk".
     */
-  var plugin: js.UndefOr[String] = js.undefined
+  var plugin: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The instance name of the plugin Example: &quot;hdcl&quot;.
+    * The instance name of the plugin Example: "hdcl".
     */
-  var pluginInstance: js.UndefOr[String] = js.undefined
+  var pluginInstance: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The start time of the interval.
     */
-  var startTime: js.UndefOr[String] = js.undefined
+  var startTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The measurement type. Example: &quot;memory&quot;.
+    * The measurement type. Example: "memory".
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The measurement type instance. Example: &quot;used&quot;.
+    * The measurement type instance. Example: "used".
     */
-  var typeInstance: js.UndefOr[String] = js.undefined
+  var typeInstance: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The measured values during this time interval. Each value must have a
-    * different dataSourceName.
+    * The measured values during this time interval. Each value must have a different data_source_name.
     */
   var values: js.UndefOr[js.Array[SchemaCollectdValue]] = js.undefined
 }
@@ -63,9 +58,13 @@ object SchemaCollectdPayload {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
+    inline def setEndTimeNull: Self = StObject.set(x, "endTime", null)
+    
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     inline def setMetadata(value: StringDictionary[SchemaTypedValue]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
@@ -73,11 +72,17 @@ object SchemaCollectdPayload {
     
     inline def setPluginInstance(value: String): Self = StObject.set(x, "pluginInstance", value.asInstanceOf[js.Any])
     
+    inline def setPluginInstanceNull: Self = StObject.set(x, "pluginInstance", null)
+    
     inline def setPluginInstanceUndefined: Self = StObject.set(x, "pluginInstance", js.undefined)
+    
+    inline def setPluginNull: Self = StObject.set(x, "plugin", null)
     
     inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeNull: Self = StObject.set(x, "startTime", null)
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
@@ -85,7 +90,11 @@ object SchemaCollectdPayload {
     
     inline def setTypeInstance(value: String): Self = StObject.set(x, "typeInstance", value.asInstanceOf[js.Any])
     
+    inline def setTypeInstanceNull: Self = StObject.set(x, "typeInstance", null)
+    
     inline def setTypeInstanceUndefined: Self = StObject.set(x, "typeInstance", js.undefined)
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
@@ -93,6 +102,6 @@ object SchemaCollectdPayload {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: SchemaCollectdValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaCollectdValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

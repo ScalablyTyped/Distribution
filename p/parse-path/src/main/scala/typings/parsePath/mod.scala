@@ -1,5 +1,6 @@
 package typings.parsePath
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,14 +18,30 @@ object mod {
     /** The url hash. */
     var hash: String
     
+    /** The url domain (including subdomain and port). */
+    var host: String
+    
     /** The input url. */
     var href: String
+    
+    /**
+      * Whether the parsing failed or not.
+      */
+    var parse_failed: Boolean
+    
+    /**
+      * @default ''
+      */
+    var password: String
     
     /** The url pathname. */
     var pathname: String
     
-    /** The domain port. */
-    var port: Null | Double
+    /**
+      * The domain port.
+      * @default ''
+      */
+    var port: String
     
     /** The first protocol, `"ssh"` (if the url is a ssh url) or `"file"`. */
     var protocol: Protocol
@@ -33,7 +50,7 @@ object mod {
     var protocols: js.Array[Protocol]
     
     /** The url querystring, parsed as object. */
-    var query: js.Any
+    var query: Record[String, String]
     
     /** The url domain (including subdomains). */
     var resource: String
@@ -48,16 +65,20 @@ object mod {
     
     inline def apply(
       hash: String,
+      host: String,
       href: String,
+      parse_failed: Boolean,
+      password: String,
       pathname: String,
+      port: String,
       protocol: Protocol,
       protocols: js.Array[Protocol],
-      query: js.Any,
+      query: Record[String, String],
       resource: String,
       search: String,
       user: String
     ): ParsedPath = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], port = null)
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], parse_failed = parse_failed.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedPath]
     }
     
@@ -65,21 +86,25 @@ object mod {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      
+      inline def setParse_failed(value: Boolean): Self = StObject.set(x, "parse_failed", value.asInstanceOf[js.Any])
+      
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
       inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
-      
-      inline def setPortNull: Self = StObject.set(x, "port", null)
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
       inline def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value*))
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Record[String, String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       

@@ -15,11 +15,11 @@ trait InstantiableIInvertFilter
   * @param [options] Options object
   */
 Instantiable0[IInvertFilter]
-     with Instantiable1[/* options */ js.Any, IInvertFilter] {
+     with Instantiable1[/* options */ Any, IInvertFilter] {
   
   /**
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IInvertFilter = js.native
+  def fromObject(`object`: Any): IInvertFilter = js.native
 }

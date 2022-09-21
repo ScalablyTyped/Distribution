@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDataflow.anon
 
+import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.Job
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ trait View extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains this job. */
-  var location: js.UndefOr[String] = js.undefined
+  var location: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -43,6 +44,9 @@ trait View extends StObject {
   /** Deprecated. This field is now in the Job message. */
   var replaceJobId: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: Job
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -54,8 +58,8 @@ trait View extends StObject {
 }
 object View {
   
-  inline def apply(projectId: String): View = {
-    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
+  inline def apply(location: String, projectId: String, resource: Job): View = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[View]
   }
   
@@ -87,8 +91,6 @@ object View {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -106,6 +108,8 @@ object View {
     inline def setReplaceJobId(value: String): Self = StObject.set(x, "replaceJobId", value.asInstanceOf[js.Any])
     
     inline def setReplaceJobIdUndefined: Self = StObject.set(x, "replaceJobId", js.undefined)
+    
+    inline def setResource(value: Job): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

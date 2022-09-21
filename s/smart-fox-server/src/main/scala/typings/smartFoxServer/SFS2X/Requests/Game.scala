@@ -93,7 +93,7 @@ object Game {
       
       inline def setInvitiedPlayers(value: js.Array[SFSUser]): Self = StObject.set(x, "invitiedPlayers", value.asInstanceOf[js.Any])
       
-      inline def setInvitiedPlayersVarargs(value: SFSUser*): Self = StObject.set(x, "invitiedPlayers", js.Array(value :_*))
+      inline def setInvitiedPlayersVarargs(value: SFSUser*): Self = StObject.set(x, "invitiedPlayers", js.Array(value*))
       
       inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
       
@@ -107,7 +107,7 @@ object Game {
       
       inline def setSerachableRooms(value: js.Array[String]): Self = StObject.set(x, "serachableRooms", value.asInstanceOf[js.Any])
       
-      inline def setSerachableRoomsVarargs(value: String*): Self = StObject.set(x, "serachableRooms", js.Array(value :_*))
+      inline def setSerachableRoomsVarargs(value: String*): Self = StObject.set(x, "serachableRooms", js.Array(value*))
       
       inline def setSpectatorMatchExpression(value: MatchExpression): Self = StObject.set(x, "spectatorMatchExpression", value.asInstanceOf[js.Any])
     }

@@ -29,12 +29,12 @@ object JobMessages {
     
     inline def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
     
-    inline def setInfoVarargs(value: string*): Self = StObject.set(x, "Info", js.Array(value :_*))
+    inline def setInfoVarargs(value: string*): Self = StObject.set(x, "Info", js.Array(value*))
     
     inline def setWarning(value: listOfString): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
     inline def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
     
-    inline def setWarningVarargs(value: string*): Self = StObject.set(x, "Warning", js.Array(value :_*))
+    inline def setWarningVarargs(value: string*): Self = StObject.set(x, "Warning", js.Array(value*))
   }
 }

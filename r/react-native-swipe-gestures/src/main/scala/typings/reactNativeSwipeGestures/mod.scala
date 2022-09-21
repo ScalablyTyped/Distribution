@@ -11,10 +11,10 @@ object mod {
   
   @JSImport("react-native-swipe-gestures", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[GestureRecognizerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[GestureRecognizerProps, js.Object, Any]
   
-  type GestureRecognizer = Component[GestureRecognizerProps, js.Object, js.Any]
+  type GestureRecognizer = Component[GestureRecognizerProps, js.Object, Any]
   
   trait GestureRecognizerConfig extends StObject {
     

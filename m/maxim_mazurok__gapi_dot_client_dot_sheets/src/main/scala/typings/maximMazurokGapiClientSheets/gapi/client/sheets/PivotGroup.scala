@@ -25,7 +25,7 @@ trait PivotGroup extends StObject {
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * True if the headings in this pivot group should be repeated. This is only valid for row groupings and is ignored by columns. By default, we minimize repitition of headings by not
+    * True if the headings in this pivot group should be repeated. This is only valid for row groupings and is ignored by columns. By default, we minimize repetition of headings by not
     * showing higher level headings where they are the same. For example, even though the third row below corresponds to "Q1 Mar", "Q1" is not shown because it is redundant with previous
     * rows. Setting repeat_headings to true would cause "Q1" to be repeated for "Feb" and "Mar". +--------------+ | Q1 | Jan | | | Feb | | | Mar | +--------+-----+ | Q1 Total |
     * +--------------+
@@ -99,6 +99,6 @@ object PivotGroup {
     
     inline def setValueMetadataUndefined: Self = StObject.set(x, "valueMetadata", js.undefined)
     
-    inline def setValueMetadataVarargs(value: PivotGroupValueMetadata*): Self = StObject.set(x, "valueMetadata", js.Array(value :_*))
+    inline def setValueMetadataVarargs(value: PivotGroupValueMetadata*): Self = StObject.set(x, "valueMetadata", js.Array(value*))
   }
 }

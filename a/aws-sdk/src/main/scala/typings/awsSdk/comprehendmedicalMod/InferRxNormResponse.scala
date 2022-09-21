@@ -32,7 +32,7 @@ object InferRxNormResponse {
     
     inline def setEntities(value: RxNormEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     
-    inline def setEntitiesVarargs(value: RxNormEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: RxNormEntity*): Self = StObject.set(x, "Entities", js.Array(value*))
     
     inline def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
     

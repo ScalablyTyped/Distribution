@@ -11,9 +11,9 @@ Define props of React components by ES7 decorators
 | Full name          | react-props-decorators |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 2963 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 222.33333333333334 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/popkirby/react-props-decorators)

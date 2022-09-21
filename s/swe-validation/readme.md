@@ -11,9 +11,9 @@ Validation for Swedish Social Security number and Corporation identity number
 | Full name          | swe-validation |
 | Keywords           | validate, swedish, personnummer, organisationnummer, ssn, social, security, number, social security number, corporate identity |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 14431 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 779.3333333333334 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/keype/swe-validation)

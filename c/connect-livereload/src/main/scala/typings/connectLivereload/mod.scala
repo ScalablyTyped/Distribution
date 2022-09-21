@@ -1,7 +1,6 @@
 package typings.connectLivereload
 
 import typings.connect.mod.HandleFunction
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type FileMatcher = String | RegExp
+  type FileMatcher = String | js.RegExp
   
   trait Options extends StObject {
     
@@ -30,6 +29,8 @@ object mod {
     var ignore: js.UndefOr[js.Array[FileMatcher]] = js.undefined
     
     var include: js.UndefOr[js.Array[FileMatcher]] = js.undefined
+    
+    var plugins: js.UndefOr[js.Array[String]] = js.undefined
     
     var port: js.UndefOr[Double] = js.undefined
     
@@ -54,7 +55,7 @@ object mod {
       
       inline def setExcludeListUndefined: Self = StObject.set(x, "excludeList", js.undefined)
       
-      inline def setExcludeListVarargs(value: FileMatcher*): Self = StObject.set(x, "excludeList", js.Array(value :_*))
+      inline def setExcludeListVarargs(value: FileMatcher*): Self = StObject.set(x, "excludeList", js.Array(value*))
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -68,13 +69,19 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: FileMatcher*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: FileMatcher*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setInclude(value: js.Array[FileMatcher]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: FileMatcher*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: FileMatcher*): Self = StObject.set(x, "include", js.Array(value*))
+      
+      inline def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -84,7 +91,7 @@ object mod {
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
@@ -96,11 +103,11 @@ object mod {
     
     def fn(w: String, s: String): String
     
-    var `match`: RegExp
+    var `match`: js.RegExp
   }
   object Rule {
     
-    inline def apply(fn: (String, String) => String, `match`: RegExp): Rule = {
+    inline def apply(fn: (String, String) => String, `match`: js.RegExp): Rule = {
       val __obj = js.Dynamic.literal(fn = js.Any.fromFunction2(fn))
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rule]
@@ -110,7 +117,7 @@ object mod {
       
       inline def setFn(value: (String, String) => String): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     }
   }
 }

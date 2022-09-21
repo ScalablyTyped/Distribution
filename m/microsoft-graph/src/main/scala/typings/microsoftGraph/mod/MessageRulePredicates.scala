@@ -166,7 +166,7 @@ object MessageRulePredicates {
     
     inline def setBodyContainsUndefined: Self = StObject.set(x, "bodyContains", js.undefined)
     
-    inline def setBodyContainsVarargs(value: String*): Self = StObject.set(x, "bodyContains", js.Array(value :_*))
+    inline def setBodyContainsVarargs(value: String*): Self = StObject.set(x, "bodyContains", js.Array(value*))
     
     inline def setBodyOrSubjectContains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "bodyOrSubjectContains", value.asInstanceOf[js.Any])
     
@@ -174,7 +174,7 @@ object MessageRulePredicates {
     
     inline def setBodyOrSubjectContainsUndefined: Self = StObject.set(x, "bodyOrSubjectContains", js.undefined)
     
-    inline def setBodyOrSubjectContainsVarargs(value: String*): Self = StObject.set(x, "bodyOrSubjectContains", js.Array(value :_*))
+    inline def setBodyOrSubjectContainsVarargs(value: String*): Self = StObject.set(x, "bodyOrSubjectContains", js.Array(value*))
     
     inline def setCategories(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
@@ -182,7 +182,7 @@ object MessageRulePredicates {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setFromAddresses(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "fromAddresses", value.asInstanceOf[js.Any])
     
@@ -190,7 +190,7 @@ object MessageRulePredicates {
     
     inline def setFromAddressesUndefined: Self = StObject.set(x, "fromAddresses", js.undefined)
     
-    inline def setFromAddressesVarargs(value: Recipient*): Self = StObject.set(x, "fromAddresses", js.Array(value :_*))
+    inline def setFromAddressesVarargs(value: Recipient*): Self = StObject.set(x, "fromAddresses", js.Array(value*))
     
     inline def setHasAttachments(value: NullableOption[Boolean]): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     
@@ -204,7 +204,7 @@ object MessageRulePredicates {
     
     inline def setHeaderContainsUndefined: Self = StObject.set(x, "headerContains", js.undefined)
     
-    inline def setHeaderContainsVarargs(value: String*): Self = StObject.set(x, "headerContains", js.Array(value :_*))
+    inline def setHeaderContainsVarargs(value: String*): Self = StObject.set(x, "headerContains", js.Array(value*))
     
     inline def setImportance(value: NullableOption[Importance]): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
@@ -296,7 +296,7 @@ object MessageRulePredicates {
     
     inline def setRecipientContainsUndefined: Self = StObject.set(x, "recipientContains", js.undefined)
     
-    inline def setRecipientContainsVarargs(value: String*): Self = StObject.set(x, "recipientContains", js.Array(value :_*))
+    inline def setRecipientContainsVarargs(value: String*): Self = StObject.set(x, "recipientContains", js.Array(value*))
     
     inline def setSenderContains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "senderContains", value.asInstanceOf[js.Any])
     
@@ -304,7 +304,7 @@ object MessageRulePredicates {
     
     inline def setSenderContainsUndefined: Self = StObject.set(x, "senderContains", js.undefined)
     
-    inline def setSenderContainsVarargs(value: String*): Self = StObject.set(x, "senderContains", js.Array(value :_*))
+    inline def setSenderContainsVarargs(value: String*): Self = StObject.set(x, "senderContains", js.Array(value*))
     
     inline def setSensitivity(value: NullableOption[Sensitivity]): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
@@ -330,7 +330,7 @@ object MessageRulePredicates {
     
     inline def setSentToAddressesUndefined: Self = StObject.set(x, "sentToAddresses", js.undefined)
     
-    inline def setSentToAddressesVarargs(value: Recipient*): Self = StObject.set(x, "sentToAddresses", js.Array(value :_*))
+    inline def setSentToAddressesVarargs(value: Recipient*): Self = StObject.set(x, "sentToAddresses", js.Array(value*))
     
     inline def setSentToMe(value: NullableOption[Boolean]): Self = StObject.set(x, "sentToMe", value.asInstanceOf[js.Any])
     
@@ -350,7 +350,7 @@ object MessageRulePredicates {
     
     inline def setSubjectContainsUndefined: Self = StObject.set(x, "subjectContains", js.undefined)
     
-    inline def setSubjectContainsVarargs(value: String*): Self = StObject.set(x, "subjectContains", js.Array(value :_*))
+    inline def setSubjectContainsVarargs(value: String*): Self = StObject.set(x, "subjectContains", js.Array(value*))
     
     inline def setWithinSizeRange(value: NullableOption[SizeRange]): Self = StObject.set(x, "withinSizeRange", value.asInstanceOf[js.Any])
     

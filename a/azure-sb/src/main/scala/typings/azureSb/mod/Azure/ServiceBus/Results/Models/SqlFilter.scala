@@ -12,7 +12,7 @@ trait SqlFilter extends StObject {
   
   val CompatibilityLevel: String
   
-  var Parameters: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var Parameters: js.UndefOr[Dictionary[Any]] = js.undefined
   
   var RequiresPreprocessing: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ object SqlFilter {
     
     inline def setCompatibilityLevel(value: String): Self = StObject.set(x, "CompatibilityLevel", value.asInstanceOf[js.Any])
     
-    inline def setParameters(value: Dictionary[js.Any]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Dictionary[Any]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     

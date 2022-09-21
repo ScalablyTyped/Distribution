@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "map-obj" : "4.1.0"
+      "map-obj" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "map-obj" : "4.1.0"
+      "map-obj" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -21,10 +21,10 @@ object BuildPaths {
     
     inline def setBuildPaths(value: js.Array[String]): Self = StObject.set(x, "buildPaths", value.asInstanceOf[js.Any])
     
-    inline def setBuildPathsVarargs(value: String*): Self = StObject.set(x, "buildPaths", js.Array(value :_*))
+    inline def setBuildPathsVarargs(value: String*): Self = StObject.set(x, "buildPaths", js.Array(value*))
     
     inline def setTestPaths(value: js.Array[String]): Self = StObject.set(x, "testPaths", value.asInstanceOf[js.Any])
     
-    inline def setTestPathsVarargs(value: String*): Self = StObject.set(x, "testPaths", js.Array(value :_*))
+    inline def setTestPathsVarargs(value: String*): Self = StObject.set(x, "testPaths", js.Array(value*))
   }
 }

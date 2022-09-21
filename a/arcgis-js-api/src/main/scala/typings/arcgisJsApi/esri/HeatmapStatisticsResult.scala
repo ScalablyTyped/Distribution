@@ -11,39 +11,18 @@ trait HeatmapStatisticsResult
      with Object {
   
   /**
-    * The average of all pixel intensity values for the given view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
-    */
-  var avg: Double
-  
-  /**
-    * The number of features evaluated in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
-    */
-  var count: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * The maximum pixel intensity value of all pixels in the given view.
+    * The maximum density value of all pixels in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
     */
   var max: Double
   
   /**
-    * The minimum pixel intensity value of all pixels in the given view.
+    * The minimum density value of all pixels in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
     */
   var min: Double
-  
-  /**
-    * The standard deviation of the pixel intensity values of all pixels in the given view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
-    */
-  var stddev: Double
   
   /**
     * The summary statistics for all values returned from the field, if provided.
@@ -55,31 +34,21 @@ trait HeatmapStatisticsResult
 object HeatmapStatisticsResult {
   
   inline def apply(
-    avg: Double,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     max: Double,
     min: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    stddev: Double
+    propertyIsEnumerable: PropertyKey => Boolean
   ): HeatmapStatisticsResult = {
-    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stddev = stddev.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[HeatmapStatisticsResult]
   }
   
   extension [Self <: HeatmapStatisticsResult](x: Self) {
     
-    inline def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
-    
-    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
-    
-    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
-    
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-    
-    inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
     inline def setSummaryStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "summaryStatistics", value.asInstanceOf[js.Any])
     

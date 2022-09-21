@@ -17,9 +17,14 @@ trait JobSettings extends StObject {
   var AvailBlanking: js.UndefOr[typings.awsSdk.mediaconvertMod.AvailBlanking] = js.undefined
   
   /**
-    * Settings for Event Signaling And Messaging (ESAM).
+    * Settings for Event Signaling And Messaging (ESAM). If you don't do ad insertion, you can ignore these settings.
     */
   var Esam: js.UndefOr[EsamSettings] = js.undefined
+  
+  /**
+    * If your source content has EIA-608 Line 21 Data Services, enable this feature to specify what MediaConvert does with the Extended Data Services (XDS) packets. You can choose to pass through XDS packets, or remove them from the output. For more information about XDS, see EIA-608 Line Data Services, section 9.5.1.5 05h Content Advisory.
+    */
+  var ExtendedDataServices: js.UndefOr[typings.awsSdk.mediaconvertMod.ExtendedDataServices] = js.undefined
   
   /**
     * Use Inputs (inputs) to define source file used in the transcode job. There can be multiple inputs add in a job. These inputs will be concantenated together to create the output.
@@ -27,7 +32,12 @@ trait JobSettings extends StObject {
   var Inputs: js.UndefOr[listOfInput] = js.undefined
   
   /**
-    * Overlay motion graphics on top of your video. The motion graphics that you specify here appear on all outputs in all output groups.
+    * Use these settings only when you use Kantar watermarking. Specify the values that MediaConvert uses to generate and place Kantar watermarks in your output audio. These settings apply to every output in your job. In addition to specifying these values, you also need to store your Kantar credentials in AWS Secrets Manager. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/kantar-watermarking.html.
+    */
+  var KantarWatermark: js.UndefOr[KantarWatermarkSettings] = js.undefined
+  
+  /**
+    * Overlay motion graphics on top of your video. The motion graphics that you specify here appear on all outputs in all output groups. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/motion-graphic-overlay.html.
     */
   var MotionImageInserter: js.UndefOr[typings.awsSdk.mediaconvertMod.MotionImageInserter] = js.undefined
   
@@ -47,12 +57,12 @@ trait JobSettings extends StObject {
   var OutputGroups: js.UndefOr[listOfOutputGroup] = js.undefined
   
   /**
-    * Contains settings used to acquire and adjust timecode information from inputs.
+    * These settings control how the service handles timecodes throughout the job. These settings don't affect input clipping.
     */
   var TimecodeConfig: js.UndefOr[typings.awsSdk.mediaconvertMod.TimecodeConfig] = js.undefined
   
   /**
-    * Enable Timed metadata insertion (TimedMetadataInsertion) to include ID3 tags in any HLS outputs. To include timed metadata, you must enable it here, enable it in each output container, and specify tags and timecodes in ID3 insertion (Id3Insertion) objects.
+    * Insert user-defined custom ID3 metadata (id3) at timecodes (timecode) that you specify. In each output that you want to include this metadata, you must set ID3 metadata (timedMetadata) to Passthrough (PASSTHROUGH).
     */
   var TimedMetadataInsertion: js.UndefOr[typings.awsSdk.mediaconvertMod.TimedMetadataInsertion] = js.undefined
 }
@@ -77,11 +87,19 @@ object JobSettings {
     
     inline def setEsamUndefined: Self = StObject.set(x, "Esam", js.undefined)
     
+    inline def setExtendedDataServices(value: ExtendedDataServices): Self = StObject.set(x, "ExtendedDataServices", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedDataServicesUndefined: Self = StObject.set(x, "ExtendedDataServices", js.undefined)
+    
     inline def setInputs(value: listOfInput): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
-    inline def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value*))
+    
+    inline def setKantarWatermark(value: KantarWatermarkSettings): Self = StObject.set(x, "KantarWatermark", value.asInstanceOf[js.Any])
+    
+    inline def setKantarWatermarkUndefined: Self = StObject.set(x, "KantarWatermark", js.undefined)
     
     inline def setMotionImageInserter(value: MotionImageInserter): Self = StObject.set(x, "MotionImageInserter", value.asInstanceOf[js.Any])
     
@@ -99,7 +117,7 @@ object JobSettings {
     
     inline def setOutputGroupsUndefined: Self = StObject.set(x, "OutputGroups", js.undefined)
     
-    inline def setOutputGroupsVarargs(value: OutputGroup*): Self = StObject.set(x, "OutputGroups", js.Array(value :_*))
+    inline def setOutputGroupsVarargs(value: OutputGroup*): Self = StObject.set(x, "OutputGroups", js.Array(value*))
     
     inline def setTimecodeConfig(value: TimecodeConfig): Self = StObject.set(x, "TimecodeConfig", value.asInstanceOf[js.Any])
     

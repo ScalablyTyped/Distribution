@@ -1,6 +1,6 @@
 package typings.pgProtocol
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +9,10 @@ object bufferReaderMod {
   
   @JSImport("pg-protocol/dist/buffer-reader", "BufferReader")
   @js.native
-  class BufferReader () extends StObject {
+  open class BufferReader () extends StObject {
     def this(offset: Double) = this()
     
-    /* private */ var buffer: js.Any = js.native
+    /* private */ var buffer: Any = js.native
     
     def byte(): Double = js.native
     
@@ -20,13 +20,13 @@ object bufferReaderMod {
     
     def cstring(): String = js.native
     
-    /* private */ var encoding: js.Any = js.native
+    /* private */ var encoding: Any = js.native
     
     def int16(): Double = js.native
     
     def int32(): Double = js.native
     
-    /* private */ var offset: js.Any = js.native
+    /* private */ var offset: Any = js.native
     
     def setBuffer(offset: Double, buffer: Buffer): Unit = js.native
     

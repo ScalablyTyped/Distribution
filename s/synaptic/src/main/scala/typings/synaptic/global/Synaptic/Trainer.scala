@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Synaptic.Trainer")
 @js.native
-class Trainer protected ()
+open class Trainer protected ()
   extends typings.synaptic.mod.Trainer {
   /**
     * The Trainer makes it easier to train any set to any network, no matter its architecture. The trainer also contains built-in tasks to test the performance of your network.

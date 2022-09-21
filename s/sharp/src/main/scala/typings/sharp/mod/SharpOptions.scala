@@ -16,10 +16,17 @@ trait SharpOptions extends StObject {
   var density: js.UndefOr[Double] = js.undefined
   
   /**
+    *  Level of sensitivity to invalid images, one of (in order of sensitivity):
+    *  'none' (least), 'truncated', 'error' or 'warning' (most), highers level imply lower levels. (optional, default 'warning')
+    */
+  var failOn: js.UndefOr[FailOnOptions] = js.undefined
+  
+  /**
     * By default halt processing and raise an error when loading invalid images.
     * Set this flag to false if you'd rather apply a "best effort" to decode images,
     * even if the data is corrupt or invalid. (optional, default true)
-    * (optional, default true)
+    *
+    * @deprecated Use `failOn` instead
     */
   var failOnError: js.UndefOr[Boolean] = js.undefined
   
@@ -44,6 +51,15 @@ trait SharpOptions extends StObject {
   
   /** Set this to true to use sequential rather than random access where possible. This can reduce memory usage and might improve performance on some systems. (optional, default false) */
   var sequentialRead: js.UndefOr[Boolean] = js.undefined
+  
+  /** subIFD (Sub Image File Directory) to extract for OME-TIFF, defaults to main image. (optional, default -1) */
+  var subifd: js.UndefOr[Double] = js.undefined
+  
+  /** Describes a new text image to be created. */
+  var text: js.UndefOr[CreateText] = js.undefined
+  
+  /** Set this to true to remove safety features that help prevent memory exhaustion (SVG, PNG). (optional, default false) */
+  var unlimited: js.UndefOr[Boolean] = js.undefined
 }
 object SharpOptions {
   
@@ -66,9 +82,13 @@ object SharpOptions {
     
     inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
+    inline def setFailOn(value: FailOnOptions): Self = StObject.set(x, "failOn", value.asInstanceOf[js.Any])
+    
     inline def setFailOnError(value: Boolean): Self = StObject.set(x, "failOnError", value.asInstanceOf[js.Any])
     
     inline def setFailOnErrorUndefined: Self = StObject.set(x, "failOnError", js.undefined)
+    
+    inline def setFailOnUndefined: Self = StObject.set(x, "failOn", js.undefined)
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
@@ -93,5 +113,17 @@ object SharpOptions {
     inline def setSequentialRead(value: Boolean): Self = StObject.set(x, "sequentialRead", value.asInstanceOf[js.Any])
     
     inline def setSequentialReadUndefined: Self = StObject.set(x, "sequentialRead", js.undefined)
+    
+    inline def setSubifd(value: Double): Self = StObject.set(x, "subifd", value.asInstanceOf[js.Any])
+    
+    inline def setSubifdUndefined: Self = StObject.set(x, "subifd", js.undefined)
+    
+    inline def setText(value: CreateText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setUnlimited(value: Boolean): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
+    
+    inline def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
   }
 }

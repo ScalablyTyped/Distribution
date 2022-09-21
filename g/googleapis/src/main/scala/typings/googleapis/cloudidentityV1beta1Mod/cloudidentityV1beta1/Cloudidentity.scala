@@ -7,28 +7,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Cloud Identity API
-  *
-  * API for provisioning and managing identity resources.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const cloudidentity = google.cloudidentity('v1beta1');
-  *
-  * @namespace cloudidentity
-  * @type {Function}
-  * @version v1beta1
-  * @variation v1beta1
-  * @param {object=} options Options for Cloudidentity
-  */
 @JSImport("googleapis/build/src/apis/cloudidentity/v1beta1", "cloudidentity_v1beta1.Cloudidentity")
 @js.native
-class Cloudidentity protected () extends StObject {
+open class Cloudidentity protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   
   var context: APIRequestContext = js.native
   
+  var customers: ResourceCustomers = js.native
+  
+  var devices: ResourceDevices = js.native
+  
   var groups: ResourceGroups = js.native
+  
+  var orgUnits: ResourceOrgunits = js.native
 }

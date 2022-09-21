@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "picocolors" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "picocolors" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

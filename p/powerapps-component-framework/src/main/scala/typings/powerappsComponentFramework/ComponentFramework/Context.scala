@@ -73,7 +73,7 @@ object Context {
     
     inline def setUpdatedProperties(value: js.Array[String]): Self = StObject.set(x, "updatedProperties", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedPropertiesVarargs(value: String*): Self = StObject.set(x, "updatedProperties", js.Array(value :_*))
+    inline def setUpdatedPropertiesVarargs(value: String*): Self = StObject.set(x, "updatedProperties", js.Array(value*))
     
     inline def setUserSettings(value: UserSettings): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
     

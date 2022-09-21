@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.RoleDefinitionBindingCollection")
 @js.native
-class RoleDefinitionBindingCollection protected ()
+open class RoleDefinitionBindingCollection protected ()
   extends StObject
      with typings.sharepoint.SP.RoleDefinitionBindingCollection {
   def this(context: typings.sharepoint.SP.ClientRuntimeContext) = this()

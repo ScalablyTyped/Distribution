@@ -1,6 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
-import typings.devtoolsProtocol.devtoolsProtocolStrings.canceled
+import typings.devtoolsProtocol.devtoolsProtocolStrings.canceled_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.completed
 import typings.devtoolsProtocol.devtoolsProtocolStrings.inProgress
 import org.scalablytyped.runtime.StObject
@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.inProgress
   - typings.devtoolsProtocol.devtoolsProtocolStrings.completed
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.canceled
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.canceled_
 */
 trait DownloadProgressEventState extends StObject
 object DownloadProgressEventState {
   
-  inline def Canceled: canceled = "canceled".asInstanceOf[canceled]
+  inline def Canceled: canceled_ = "canceled".asInstanceOf[canceled_]
   
   inline def Completed: completed = "completed".asInstanceOf[completed]
   

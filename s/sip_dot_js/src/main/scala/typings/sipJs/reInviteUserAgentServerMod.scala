@@ -14,10 +14,10 @@ object reInviteUserAgentServerMod {
   - typings.sipJs.incomingRequestMod.IncomingRequest because Already inherited
   - typings.sipJs.inviteMod.IncomingInviteRequest because var conflicts: delegate, message. Inlined  */ @JSImport("sip.js/lib/core/user-agents/re-invite-user-agent-server", "ReInviteUserAgentServer")
   @js.native
-  class ReInviteUserAgentServer protected () extends UserAgentServer {
+  open class ReInviteUserAgentServer protected () extends UserAgentServer {
     def this(dialog: SessionDialog, message: IncomingRequestMessage) = this()
     def this(dialog: SessionDialog, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
     
-    /* private */ var dialog: js.Any = js.native
+    /* private */ var dialog: Any = js.native
   }
 }

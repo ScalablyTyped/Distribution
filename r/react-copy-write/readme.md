@@ -10,10 +10,10 @@ Typings are for version 0.7
 | ------------------ | :-------------: |
 | Full name          | react-copy-write |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 44461 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4399.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/react-copy-write)

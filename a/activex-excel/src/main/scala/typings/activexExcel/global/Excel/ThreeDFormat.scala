@@ -16,12 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ThreeDFormat")
 @js.native
-/* private */ class ThreeDFormat ()
+/* private */ open class ThreeDFormat ()
   extends StObject
      with typings.activexExcel.Excel.ThreeDFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var BevelBottomDepth: Double = js.native
@@ -85,7 +85,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var LightAngle: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Perspective: MsoTriState = js.native

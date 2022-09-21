@@ -22,7 +22,7 @@ object RunningCoder {
     
     trait AJaxSettings
       extends StObject
-         with AjaxSettings[js.Any] {
+         with AjaxSettings[Any] {
       
       var always: js.UndefOr[
             js.Function3[
@@ -46,7 +46,7 @@ object RunningCoder {
             js.Function3[
               /* jqXHR */ js.UndefOr[JQueryXHR], 
               /* textStatus */ js.UndefOr[String], 
-              /* errorThrown */ js.UndefOr[js.Any], 
+              /* errorThrown */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -79,7 +79,7 @@ object RunningCoder {
         inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
         
         inline def setFail(
-          value: (/* jqXHR */ js.UndefOr[JQueryXHR], /* textStatus */ js.UndefOr[String], /* errorThrown */ js.UndefOr[js.Any]) => Unit
+          value: (/* jqXHR */ js.UndefOr[JQueryXHR], /* textStatus */ js.UndefOr[String], /* errorThrown */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "fail", js.Any.fromFunction3(value))
         
         inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
@@ -100,9 +100,9 @@ object RunningCoder {
       var onCacheSave: js.UndefOr[
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
-              /* data */ js.UndefOr[js.Any], 
-              /* group */ js.UndefOr[js.Any], 
-              /* path */ js.UndefOr[js.Any], 
+              /* data */ js.UndefOr[Any], 
+              /* group */ js.UndefOr[Any], 
+              /* path */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -123,7 +123,7 @@ object RunningCoder {
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
               /* a */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -137,7 +137,7 @@ object RunningCoder {
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
               /* a */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -151,7 +151,7 @@ object RunningCoder {
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
               /* a */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -162,7 +162,7 @@ object RunningCoder {
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
               /* a */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -172,8 +172,8 @@ object RunningCoder {
       var onEnter: js.UndefOr[
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
-              /* result */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
+              /* result */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -192,7 +192,7 @@ object RunningCoder {
             js.Function3[
               /* node */ js.UndefOr[JQuery], 
               /* query */ js.UndefOr[String], 
-              /* result */ js.UndefOr[js.Any], 
+              /* result */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -206,7 +206,7 @@ object RunningCoder {
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
               /* query */ js.UndefOr[String], 
-              /* result */ js.UndefOr[js.Any], 
+              /* result */ js.UndefOr[Any], 
               /* resultHtmlList */ js.UndefOr[JQuery], 
               JQuery
             ]
@@ -216,8 +216,8 @@ object RunningCoder {
       var onLeave: js.UndefOr[
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
-              /* result */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
+              /* result */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -228,7 +228,7 @@ object RunningCoder {
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
               /* a */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -239,7 +239,7 @@ object RunningCoder {
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
               /* a */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -251,7 +251,7 @@ object RunningCoder {
               /* node */ js.UndefOr[JQuery], 
               /* lis */ js.UndefOr[JQuery], 
               /* a */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
               /* query */ js.UndefOr[String], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
@@ -280,10 +280,10 @@ object RunningCoder {
       var onPopulateSource: js.UndefOr[
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
-              /* data */ js.UndefOr[js.Array[js.Any]], 
-              /* group */ js.UndefOr[js.Any], 
-              /* path */ js.UndefOr[js.Any], 
-              js.Array[js.Any]
+              /* data */ js.UndefOr[js.Array[Any]], 
+              /* group */ js.UndefOr[Any], 
+              /* path */ js.UndefOr[Any], 
+              js.Array[Any]
             ]
           ] = js.undefined
       
@@ -300,7 +300,7 @@ object RunningCoder {
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
               /* query */ js.UndefOr[String], 
-              /* result */ js.UndefOr[js.Any], 
+              /* result */ js.UndefOr[Any], 
               /* resultCount */ js.UndefOr[Double], 
               Unit
             ]
@@ -329,8 +329,8 @@ object RunningCoder {
       var onSubmit: js.UndefOr[
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
-              /* form */ js.UndefOr[js.Any], 
-              /* item */ js.UndefOr[js.Any], 
+              /* form */ js.UndefOr[Any], 
+              /* item */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -346,7 +346,7 @@ object RunningCoder {
       extension [Self <: Callback](x: Self) {
         
         inline def setOnCacheSave(
-          value: (/* node */ js.UndefOr[JQuery], /* data */ js.UndefOr[js.Any], /* group */ js.UndefOr[js.Any], /* path */ js.UndefOr[js.Any]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* data */ js.UndefOr[Any], /* group */ js.UndefOr[Any], /* path */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "onCacheSave", js.Any.fromFunction4(value))
         
         inline def setOnCacheSaveUndefined: Self = StObject.set(x, "onCacheSave", js.undefined)
@@ -356,17 +356,17 @@ object RunningCoder {
         inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
         
         inline def setOnClick(
-          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onClick", js.Any.fromFunction4(value))
         
         inline def setOnClickAfter(
-          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onClickAfter", js.Any.fromFunction4(value))
         
         inline def setOnClickAfterUndefined: Self = StObject.set(x, "onClickAfter", js.undefined)
         
         inline def setOnClickBefore(
-          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onClickBefore", js.Any.fromFunction4(value))
         
         inline def setOnClickBeforeUndefined: Self = StObject.set(x, "onClickBefore", js.undefined)
@@ -374,13 +374,13 @@ object RunningCoder {
         inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
         
         inline def setOnDropdownFilter(
-          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onDropdownFilter", js.Any.fromFunction4(value))
         
         inline def setOnDropdownFilterUndefined: Self = StObject.set(x, "onDropdownFilter", js.undefined)
         
         inline def setOnEnter(
-          value: (/* node */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* result */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* result */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onEnter", js.Any.fromFunction4(value))
         
         inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
@@ -394,37 +394,37 @@ object RunningCoder {
         inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
         
         inline def setOnLayoutBuiltAfter(
-          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[js.Any]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "onLayoutBuiltAfter", js.Any.fromFunction3(value))
         
         inline def setOnLayoutBuiltAfterUndefined: Self = StObject.set(x, "onLayoutBuiltAfter", js.undefined)
         
         inline def setOnLayoutBuiltBefore(
-          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[js.Any], /* resultHtmlList */ js.UndefOr[JQuery]) => JQuery
+          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[Any], /* resultHtmlList */ js.UndefOr[JQuery]) => JQuery
         ): Self = StObject.set(x, "onLayoutBuiltBefore", js.Any.fromFunction4(value))
         
         inline def setOnLayoutBuiltBeforeUndefined: Self = StObject.set(x, "onLayoutBuiltBefore", js.undefined)
         
         inline def setOnLeave(
-          value: (/* node */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* result */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* result */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onLeave", js.Any.fromFunction4(value))
         
         inline def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
         
         inline def setOnMouseEnter(
-          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction4(value))
         
         inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
         
         inline def setOnMouseLeave(
-          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction4(value))
         
         inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
         
         inline def setOnNavigateAfter(
-          value: (/* node */ js.UndefOr[JQuery], /* lis */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* query */ js.UndefOr[String], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* lis */ js.UndefOr[JQuery], /* a */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* query */ js.UndefOr[String], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onNavigateAfter", js.Any.fromFunction6(value))
         
         inline def setOnNavigateAfterUndefined: Self = StObject.set(x, "onNavigateAfter", js.undefined)
@@ -436,7 +436,7 @@ object RunningCoder {
         inline def setOnNavigateBeforeUndefined: Self = StObject.set(x, "onNavigateBefore", js.undefined)
         
         inline def setOnPopulateSource(
-          value: (/* node */ js.UndefOr[JQuery], /* data */ js.UndefOr[js.Array[js.Any]], /* group */ js.UndefOr[js.Any], /* path */ js.UndefOr[js.Any]) => js.Array[js.Any]
+          value: (/* node */ js.UndefOr[JQuery], /* data */ js.UndefOr[js.Array[Any]], /* group */ js.UndefOr[Any], /* path */ js.UndefOr[Any]) => js.Array[Any]
         ): Self = StObject.set(x, "onPopulateSource", js.Any.fromFunction4(value))
         
         inline def setOnPopulateSourceUndefined: Self = StObject.set(x, "onPopulateSource", js.undefined)
@@ -450,7 +450,7 @@ object RunningCoder {
         inline def setOnReceiveRequestUndefined: Self = StObject.set(x, "onReceiveRequest", js.undefined)
         
         inline def setOnResult(
-          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[js.Any], /* resultCount */ js.UndefOr[Double]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[Any], /* resultCount */ js.UndefOr[Double]) => Unit
         ): Self = StObject.set(x, "onResult", js.Any.fromFunction4(value))
         
         inline def setOnResultUndefined: Self = StObject.set(x, "onResult", js.undefined)
@@ -468,7 +468,7 @@ object RunningCoder {
         inline def setOnShowLayoutUndefined: Self = StObject.set(x, "onShowLayout", js.undefined)
         
         inline def setOnSubmit(
-          value: (/* node */ js.UndefOr[JQuery], /* form */ js.UndefOr[js.Any], /* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* form */ js.UndefOr[Any], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction4(value))
         
         inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
@@ -483,18 +483,13 @@ object RunningCoder {
       
       var key: String
       
-      var template: String | (js.Function1[/* item */ js.Any, String])
+      var template: String | (js.Function1[/* item */ Any, String])
       
       var value: String
     }
     object DropdownFilterItem {
       
-      inline def apply(
-        all: String,
-        key: String,
-        template: String | (js.Function1[/* item */ js.Any, String]),
-        value: String
-      ): DropdownFilterItem = {
+      inline def apply(all: String, key: String, template: String | (js.Function1[/* item */ Any, String]), value: String): DropdownFilterItem = {
         val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[DropdownFilterItem]
       }
@@ -505,9 +500,9 @@ object RunningCoder {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        inline def setTemplate(value: String | (js.Function1[/* item */ js.Any, String])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: String | (js.Function1[/* item */ Any, String])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        inline def setTemplateFunction1(value: /* item */ js.Any => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+        inline def setTemplateFunction1(value: /* item */ Any => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
         
         inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
@@ -559,11 +554,11 @@ object RunningCoder {
       
       var key: String
       
-      var template: String | (js.Function1[/* item */ js.Any, String])
+      var template: String | (js.Function1[/* item */ Any, String])
     }
     object GroupSetting {
       
-      inline def apply(key: String, template: String | (js.Function1[/* item */ js.Any, String])): GroupSetting = {
+      inline def apply(key: String, template: String | (js.Function1[/* item */ Any, String])): GroupSetting = {
         val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
         __obj.asInstanceOf[GroupSetting]
       }
@@ -572,9 +567,9 @@ object RunningCoder {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        inline def setTemplate(value: String | (js.Function1[/* item */ js.Any, String])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: String | (js.Function1[/* item */ Any, String])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        inline def setTemplateFunction1(value: /* item */ js.Any => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+        inline def setTemplateFunction1(value: /* item */ Any => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
       }
     }
     
@@ -586,10 +581,10 @@ object RunningCoder {
       var cancelOnBackspace: js.UndefOr[Boolean] = js.undefined
       
       /** Default items when Typeahead is loade */
-      var data: js.UndefOr[js.Array[js.Any] | js.Function0[js.Any]] = js.undefined
+      var data: js.UndefOr[js.Array[Any] | js.Function0[Any]] = js.undefined
       
       /** Href link on the multiselect item */
-      var href: js.UndefOr[String | (js.Function1[/* item */ js.UndefOr[js.Any], String])] = js.undefined
+      var href: js.UndefOr[String | (js.Function1[/* item */ js.UndefOr[Any], String])] = js.undefined
       
       /** Optional limit of maximum items to select */
       var limit: js.UndefOr[Double] = js.undefined
@@ -598,7 +593,7 @@ object RunningCoder {
       var limitTemplate: js.UndefOr[String | (js.Function1[/* query */ js.UndefOr[String], String])] = js.undefined
       
       /** Unique item identifier to remove an item from the result list when selected (use any of the item key), by default a JSON of the item will be used */
-      var matchOn: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+      var matchOn: js.UndefOr[String | js.Array[Any]] = js.undefined
     }
     object MultiSelectSettings {
       
@@ -617,17 +612,17 @@ object RunningCoder {
         
         inline def setCancelOnBackspaceUndefined: Self = StObject.set(x, "cancelOnBackspace", js.undefined)
         
-        inline def setData(value: js.Array[js.Any] | js.Function0[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Array[Any] | js.Function0[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        inline def setDataFunction0(value: () => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+        inline def setDataFunction0(value: () => Any): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
         
-        inline def setHref(value: String | (js.Function1[/* item */ js.UndefOr[js.Any], String])): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+        inline def setHref(value: String | (js.Function1[/* item */ js.UndefOr[Any], String])): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
-        inline def setHrefFunction1(value: /* item */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "href", js.Any.fromFunction1(value))
+        inline def setHrefFunction1(value: /* item */ js.UndefOr[Any] => String): Self = StObject.set(x, "href", js.Any.fromFunction1(value))
         
         inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
         
@@ -641,11 +636,11 @@ object RunningCoder {
         
         inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         
-        inline def setMatchOn(value: String | js.Array[js.Any]): Self = StObject.set(x, "matchOn", value.asInstanceOf[js.Any])
+        inline def setMatchOn(value: String | js.Array[Any]): Self = StObject.set(x, "matchOn", value.asInstanceOf[js.Any])
         
         inline def setMatchOnUndefined: Self = StObject.set(x, "matchOn", js.undefined)
         
-        inline def setMatchOnVarargs(value: js.Any*): Self = StObject.set(x, "matchOn", js.Array(value :_*))
+        inline def setMatchOnVarargs(value: Any*): Self = StObject.set(x, "matchOn", js.Array(value*))
       }
     }
     
@@ -655,7 +650,7 @@ object RunningCoder {
       var onCancel: js.UndefOr[
             js.Function3[
               /* node */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -665,7 +660,7 @@ object RunningCoder {
       var onClick: js.UndefOr[
             js.Function3[
               /* node */ js.UndefOr[JQuery], 
-              /* item */ js.UndefOr[js.Any], 
+              /* item */ js.UndefOr[Any], 
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
@@ -681,13 +676,13 @@ object RunningCoder {
       extension [Self <: MultiSelectSettingsCallback](x: Self) {
         
         inline def setOnCancel(
-          value: (/* node */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onCancel", js.Any.fromFunction3(value))
         
         inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
         
         inline def setOnClick(
-          value: (/* node */ js.UndefOr[JQuery], /* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
+          value: (/* node */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
         ): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
         
         inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -758,7 +753,7 @@ object RunningCoder {
         * It is also possible to set an Array of display keys instead of the complete template. Try it on
         * [Hockey_v1](http://www.runningcoder.org/jquerytypeahead/demo/#form-hockey_v1)
         */
-      var correlativeTemplate: js.UndefOr[Boolean | js.Array[js.Any]] = js.undefined
+      var correlativeTemplate: js.UndefOr[Boolean | js.Array[Any]] = js.undefined
       
       /** Display debug information (RECOMMENDED for dev environment) */
       var debug: js.UndefOr[Boolean] = js.undefined
@@ -819,7 +814,7 @@ object RunningCoder {
         * If set to function, every element will be filtered using this custom rule AFTER the regular Typeahead filters have been applied.
         */
       var filter: js.UndefOr[
-            Boolean | (js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean])
+            Boolean | (js.Function2[/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String], Boolean])
           ] = js.undefined
       
       /**
@@ -850,10 +845,10 @@ object RunningCoder {
             asc | desc | js.Array[String] | (js.Function5[
               /* node */ js.UndefOr[JQuery], 
               /* query */ js.UndefOr[String], 
-              /* result */ js.UndefOr[js.Any], 
+              /* result */ js.UndefOr[Any], 
               /* resultCount */ js.UndefOr[Double], 
               /* resultCountPerGroup */ js.UndefOr[Double], 
-              js.Array[js.Any]
+              js.Array[Any]
             ])
           ] = js.undefined
       
@@ -883,7 +878,7 @@ object RunningCoder {
         * If a string is defined, every result item will receive the string as href attribute replacing any `{{itemKey}}` by the `item's value`.
         * It is possible to apply an extra operation of `"slugify"` on the value `{{url|slugify}}`. - [Demo](http://www.runningcoder.org/jquerytypeahead/demo/#form-beer_v1)
         */
-      var href: js.UndefOr[String | (js.Function1[/* item */ js.UndefOr[js.Any], String])] = js.undefined
+      var href: js.UndefOr[String | (js.Function1[/* item */ js.UndefOr[Any], String])] = js.undefined
       
       /**
         * The jQuery input selector is only required if the Typeahead was initialized without a jQuery object.
@@ -896,7 +891,7 @@ object RunningCoder {
       
       /** If set to function, every element will be filtered using this custom rule AFTER the regular Typeahead filters have been applied. */
       var matcher: js.UndefOr[
-            js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean]
+            js.Function2[/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String], Boolean]
           ] = js.undefined
       
       /**
@@ -982,7 +977,7 @@ object RunningCoder {
         * That optional modifier will make sure to get the unmodified value.
         */
       var template: js.UndefOr[
-            String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], String])
+            String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[Any], String])
           ] = js.undefined
       
       /**
@@ -1035,11 +1030,11 @@ object RunningCoder {
         
         inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
         
-        inline def setCorrelativeTemplate(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "correlativeTemplate", value.asInstanceOf[js.Any])
+        inline def setCorrelativeTemplate(value: Boolean | js.Array[Any]): Self = StObject.set(x, "correlativeTemplate", value.asInstanceOf[js.Any])
         
         inline def setCorrelativeTemplateUndefined: Self = StObject.set(x, "correlativeTemplate", js.undefined)
         
-        inline def setCorrelativeTemplateVarargs(value: js.Any*): Self = StObject.set(x, "correlativeTemplate", js.Array(value :_*))
+        inline def setCorrelativeTemplateVarargs(value: Any*): Self = StObject.set(x, "correlativeTemplate", js.Array(value*))
         
         inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
@@ -1053,13 +1048,13 @@ object RunningCoder {
         
         inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
         
-        inline def setDisplayVarargs(value: String*): Self = StObject.set(x, "display", js.Array(value :_*))
+        inline def setDisplayVarargs(value: String*): Self = StObject.set(x, "display", js.Array(value*))
         
         inline def setDropdownFilter(value: Boolean | string | js.Array[DropdownFilterItem]): Self = StObject.set(x, "dropdownFilter", value.asInstanceOf[js.Any])
         
         inline def setDropdownFilterUndefined: Self = StObject.set(x, "dropdownFilter", js.undefined)
         
-        inline def setDropdownFilterVarargs(value: DropdownFilterItem*): Self = StObject.set(x, "dropdownFilter", js.Array(value :_*))
+        inline def setDropdownFilterVarargs(value: DropdownFilterItem*): Self = StObject.set(x, "dropdownFilter", js.Array(value*))
         
         inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
         
@@ -1067,7 +1062,7 @@ object RunningCoder {
         
         inline def setDynamicFilterUndefined: Self = StObject.set(x, "dynamicFilter", js.undefined)
         
-        inline def setDynamicFilterVarargs(value: DynamicFilterItem*): Self = StObject.set(x, "dynamicFilter", js.Array(value :_*))
+        inline def setDynamicFilterVarargs(value: DynamicFilterItem*): Self = StObject.set(x, "dynamicFilter", js.Array(value*))
         
         inline def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
         
@@ -1078,10 +1073,10 @@ object RunningCoder {
         inline def setEmptyTemplateUndefined: Self = StObject.set(x, "emptyTemplate", js.undefined)
         
         inline def setFilter(
-          value: Boolean | (js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean])
+          value: Boolean | (js.Function2[/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String], Boolean])
         ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        inline def setFilterFunction2(value: (/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+        inline def setFilterFunction2(value: (/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
         
         inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         
@@ -1095,20 +1090,20 @@ object RunningCoder {
           value: asc | desc | js.Array[String] | (js.Function5[
                   /* node */ js.UndefOr[JQuery], 
                   /* query */ js.UndefOr[String], 
-                  /* result */ js.UndefOr[js.Any], 
+                  /* result */ js.UndefOr[Any], 
                   /* resultCount */ js.UndefOr[Double], 
                   /* resultCountPerGroup */ js.UndefOr[Double], 
-                  js.Array[js.Any]
+                  js.Array[Any]
                 ])
         ): Self = StObject.set(x, "groupOrder", value.asInstanceOf[js.Any])
         
         inline def setGroupOrderFunction5(
-          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[js.Any], /* resultCount */ js.UndefOr[Double], /* resultCountPerGroup */ js.UndefOr[Double]) => js.Array[js.Any]
+          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[Any], /* resultCount */ js.UndefOr[Double], /* resultCountPerGroup */ js.UndefOr[Double]) => js.Array[Any]
         ): Self = StObject.set(x, "groupOrder", js.Any.fromFunction5(value))
         
         inline def setGroupOrderUndefined: Self = StObject.set(x, "groupOrder", js.undefined)
         
-        inline def setGroupOrderVarargs(value: String*): Self = StObject.set(x, "groupOrder", js.Array(value :_*))
+        inline def setGroupOrderVarargs(value: String*): Self = StObject.set(x, "groupOrder", js.Array(value*))
         
         inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
         
@@ -1120,9 +1115,9 @@ object RunningCoder {
         
         inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
         
-        inline def setHref(value: String | (js.Function1[/* item */ js.UndefOr[js.Any], String])): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+        inline def setHref(value: String | (js.Function1[/* item */ js.UndefOr[Any], String])): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
-        inline def setHrefFunction1(value: /* item */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "href", js.Any.fromFunction1(value))
+        inline def setHrefFunction1(value: /* item */ js.UndefOr[Any] => String): Self = StObject.set(x, "href", js.Any.fromFunction1(value))
         
         inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
         
@@ -1134,7 +1129,7 @@ object RunningCoder {
         
         inline def setLoadingAnimationUndefined: Self = StObject.set(x, "loadingAnimation", js.undefined)
         
-        inline def setMatcher(value: (/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
+        inline def setMatcher(value: (/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
         
         inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
         
@@ -1186,13 +1181,11 @@ object RunningCoder {
         
         inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
         
-        inline def setSourceVarargs(value: Source*): Self = StObject.set(x, "source", js.Array(value :_*))
+        inline def setSourceVarargs(value: Source*): Self = StObject.set(x, "source", js.Array(value*))
         
-        inline def setTemplate(
-          value: String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], String])
-        ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[Any], String])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        inline def setTemplateFunction2(value: (/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+        inline def setTemplateFunction2(value: (/* query */ js.UndefOr[String], /* item */ js.UndefOr[Any]) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
         
         inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
         
@@ -1339,7 +1332,7 @@ object RunningCoder {
       var compression: js.UndefOr[Boolean] = js.undefined
       
       /**  Array or function that returns an Array. The items in your array can either be strings or objects */
-      var data: js.UndefOr[js.Array[js.Any] | js.Function0[js.Array[js.Any]]] = js.undefined
+      var data: js.UndefOr[js.Array[Any] | js.Function0[js.Array[Any]]] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
       var display: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -1349,12 +1342,12 @@ object RunningCoder {
       
       /** Overrides the default configuration for the specified group. */
       var filter: js.UndefOr[
-            Boolean | (js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean])
+            Boolean | (js.Function2[/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String], Boolean])
           ] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
       var matcher: js.UndefOr[
-            js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean]
+            js.Function2[/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String], Boolean]
           ] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
@@ -1365,7 +1358,7 @@ object RunningCoder {
       
       /** Overrides the default configuration for the specified group. */
       var template: js.UndefOr[
-            String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], String])
+            String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[Any], String])
           ] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
@@ -1394,33 +1387,33 @@ object RunningCoder {
         
         inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
         
-        inline def setData(value: js.Array[js.Any] | js.Function0[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Array[Any] | js.Function0[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        inline def setDataFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+        inline def setDataFunction0(value: () => js.Array[Any]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
         
         inline def setDisplay(value: String | js.Array[String]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
         inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
         
-        inline def setDisplayVarargs(value: String*): Self = StObject.set(x, "display", js.Array(value :_*))
+        inline def setDisplayVarargs(value: String*): Self = StObject.set(x, "display", js.Array(value*))
         
         inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
         
         inline def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
         
         inline def setFilter(
-          value: Boolean | (js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean])
+          value: Boolean | (js.Function2[/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String], Boolean])
         ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        inline def setFilterFunction2(value: (/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+        inline def setFilterFunction2(value: (/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
         
         inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         
-        inline def setMatcher(value: (/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
+        inline def setMatcher(value: (/* item */ js.UndefOr[Any], /* displayKey */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
         
         inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
         
@@ -1432,11 +1425,9 @@ object RunningCoder {
         
         inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
         
-        inline def setTemplate(
-          value: String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], String])
-        ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[Any], String])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        inline def setTemplateFunction2(value: (/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+        inline def setTemplateFunction2(value: (/* query */ js.UndefOr[String], /* item */ js.UndefOr[Any]) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
         
         inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
         

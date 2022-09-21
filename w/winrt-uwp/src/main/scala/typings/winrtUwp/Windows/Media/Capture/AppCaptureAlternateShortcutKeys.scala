@@ -27,10 +27,10 @@ trait AppCaptureAlternateShortcutKeys extends StObject {
   /** Gets or sets the toggle game bar shortcut key modifiers. */
   var toggleGameBarKeyModifiers: VirtualKeyModifiers
   
-  var toggleMicrophoneCaptureKey: js.Any
+  var toggleMicrophoneCaptureKey: Any
   
   /* unmapped type */
-  var toggleMicrophoneCaptureKeyModifiers: js.Any
+  var toggleMicrophoneCaptureKeyModifiers: Any
   
   /* unmapped type */
   /** Gets or sets the toggle recording indicator shortcut key. */
@@ -54,8 +54,8 @@ object AppCaptureAlternateShortcutKeys {
     takeScreenshotKeyModifiers: VirtualKeyModifiers,
     toggleGameBarKey: VirtualKey,
     toggleGameBarKeyModifiers: VirtualKeyModifiers,
-    toggleMicrophoneCaptureKey: js.Any,
-    toggleMicrophoneCaptureKeyModifiers: js.Any,
+    toggleMicrophoneCaptureKey: Any,
+    toggleMicrophoneCaptureKeyModifiers: Any,
     toggleRecordingIndicatorKey: VirtualKey,
     toggleRecordingIndicatorKeyModifiers: VirtualKeyModifiers,
     toggleRecordingKey: VirtualKey,
@@ -79,9 +79,9 @@ object AppCaptureAlternateShortcutKeys {
     
     inline def setToggleGameBarKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "toggleGameBarKeyModifiers", value.asInstanceOf[js.Any])
     
-    inline def setToggleMicrophoneCaptureKey(value: js.Any): Self = StObject.set(x, "toggleMicrophoneCaptureKey", value.asInstanceOf[js.Any])
+    inline def setToggleMicrophoneCaptureKey(value: Any): Self = StObject.set(x, "toggleMicrophoneCaptureKey", value.asInstanceOf[js.Any])
     
-    inline def setToggleMicrophoneCaptureKeyModifiers(value: js.Any): Self = StObject.set(x, "toggleMicrophoneCaptureKeyModifiers", value.asInstanceOf[js.Any])
+    inline def setToggleMicrophoneCaptureKeyModifiers(value: Any): Self = StObject.set(x, "toggleMicrophoneCaptureKeyModifiers", value.asInstanceOf[js.Any])
     
     inline def setToggleRecordingIndicatorKey(value: VirtualKey): Self = StObject.set(x, "toggleRecordingIndicatorKey", value.asInstanceOf[js.Any])
     

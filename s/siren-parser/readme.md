@@ -1,7 +1,7 @@
 
 # Scala.js typings for siren-parser
 
-Typings are for version 8.2
+Typings are for version 8.4
 
 ## Library description:
 [![Build Status](https://travis-ci.org/Brightspace/node-siren-parser.svg?branch=master)](https://travis-ci.org/Brightspace/node-siren-parser) [![Coverage Status](https://coveralls.io/repos/Brightspace/node-siren-parser/badge.svg?branch=master&service=gith
@@ -10,10 +10,10 @@ Typings are for version 8.2
 | ------------------ | :-------------: |
 | Full name          | siren-parser |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 66096 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 8937.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/Brightspace/node-siren-parser)

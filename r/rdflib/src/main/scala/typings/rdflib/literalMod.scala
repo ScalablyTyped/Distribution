@@ -9,49 +9,15 @@ import typings.rdflib.typesMod.FromValueReturns
 import typings.rdflib.typesMod.ValueType
 import typings.rdflib.typesMod._FromValueReturns
 import typings.rdflib.typesMod._ObjectType
-import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rdflib/lib/literal", JSImport.Namespace)
-@js.native
-object literalMod extends js.Object {
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.rdflib.typesMod._ValueType because Already inherited
-  - typings.rdflib.tfTypesMod.Term because var conflicts: termType, value. Inlined 
-  - typings.rdflib.tfTypesMod.Literal because var conflicts: termType, value. Inlined language, datatype */ @js.native
-  trait Literal
-    extends typings.rdflib.nodeInternalMod.default
-       with QuadObject
-       with _Comparable
-       with _TFIDFactoryTypes
-       with _FromValueReturns[js.Any] {
-    /**
-      * The literal's datatype as a named node
-      */
-    var datatype: NamedNode | typings.rdflib.namedNodeMod.default = js.native
-    var isVar: Double = js.native
-    /**
-      * The language for the literal
-      */
-    var language: String = js.native
-    @JSName("termType")
-    var termType_Literal: typings.rdflib.rdflibStrings.Literal = js.native
-    /**
-      * Gets a copy of this literal
-      */
-    def copy(): Literal = js.native
-    /**
-      * The language for the literal
-      * @deprecated use {language} instead
-      */
-    def lang: String = js.native
-    def lang_=(language: String): Unit = js.native
-  }
+object literalMod {
   
+  @JSImport("rdflib/lib/literal", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends Literal
        with _DefaultFactoryTypes
        with _ObjectType {
@@ -63,37 +29,81 @@ object literalMod extends js.Object {
       */
     def this(value: String) = this()
     def this(value: String, language: String) = this()
-    def this(value: String, language: js.UndefOr[scala.Nothing], datatype: js.Any) = this()
-    def this(value: String, language: String, datatype: js.Any) = this()
-    def this(value: String, language: Null, datatype: js.Any) = this()
+    def this(value: String, language: String, datatype: Any) = this()
+    def this(value: String, language: Null, datatype: Any) = this()
+    def this(value: String, language: Unit, datatype: Any) = this()
   }
-  
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
+    
+    @JSImport("rdflib/lib/literal", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Builds a literal node from a boolean value
       * @param value - The value
       */
-    def fromBoolean(value: Boolean): Literal = js.native
+    inline def fromBoolean(value: Boolean): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+    
     /**
       * Builds a literal node from a date value
       * @param value The value
       */
-    def fromDate(value: Date): Literal = js.native
+    inline def fromDate(value: js.Date): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+    
     /**
       * Builds a literal node from a number value
       * @param value - The value
       */
-    def fromNumber(value: Double): Literal = js.native
+    inline def fromNumber(value: Double): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+    
     /**
       * Builds a literal node from an input value
       * @param value - The input value
       */
-    def fromValue[T /* <: FromValueReturns[_] */](value: ValueType): T = js.native
+    inline def fromValue[T /* <: FromValueReturns[Any] */](value: ValueType): T = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+    
     /** Serializes a literal to an N-Triples string */
-    def toNT(literal: Literal): String = js.native
+    inline def toNT(literal: Literal): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toNT")(literal.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.rdflib.typesMod._ValueType because Already inherited
+  - typings.rdflib.tfTypesMod.Term because var conflicts: termType, value. Inlined 
+  - typings.rdflib.tfTypesMod.Literal because var conflicts: termType, value. Inlined language, datatype */ @js.native
+  trait Literal
+    extends typings.rdflib.nodeInternalMod.default
+       with QuadObject
+       with _Comparable
+       with _TFIDFactoryTypes
+       with _FromValueReturns[Any] {
+    
+    /**
+      * Gets a copy of this literal
+      */
+    def copy(): Literal = js.native
+    
+    /**
+      * The literal's datatype as a named node
+      */
+    var datatype: NamedNode | typings.rdflib.namedNodeMod.default = js.native
+    
+    var isVar: Double = js.native
+    
+    /**
+      * The language for the literal
+      * @deprecated use {language} instead
+      */
+    def lang: String = js.native
+    def lang_=(language: String): Unit = js.native
+    
+    /**
+      * The language for the literal
+      */
+    var language: String = js.native
+    
+    @JSName("termType")
+    var termType_Literal: typings.rdflib.rdflibStrings.Literal = js.native
+  }
 }
-

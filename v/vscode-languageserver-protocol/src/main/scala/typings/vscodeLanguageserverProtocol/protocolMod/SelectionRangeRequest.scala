@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeJsonrpc.mod.ProgressType
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolSelectionRangeMod.SelectionRangeParams
 import typings.vscodeLanguageserverProtocol.protocolSelectionRangeMod.SelectionRangeRegistrationOptions
@@ -12,22 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SelectionRangeRequest {
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "SelectionRangeRequest.method")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "SelectionRangeRequest.messageDirection")
+  @js.native
+  val messageDirection: MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "SelectionRangeRequest.method")
   @js.native
   val method: textDocumentSlashselectionRange = js.native
   
-  /** @deprecated  Use SelectionRangeRequest.type */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "SelectionRangeRequest.resultType")
-  @js.native
-  val resultType: ProgressType[js.Array[SelectionRange]] = js.native
-  
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "SelectionRangeRequest.type")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "SelectionRangeRequest.type")
   @js.native
   val `type`: ProtocolRequestType[
     SelectionRangeParams, 
     js.Array[SelectionRange] | Null, 
     js.Array[SelectionRange], 
-    js.Any, 
+    Unit, 
     SelectionRangeRegistrationOptions
   ] = js.native
 }

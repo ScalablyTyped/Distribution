@@ -9,8 +9,8 @@ object WSHControllerLibrary {
   @js.native
   trait WSHController extends StObject {
     
-    def CreateScript(Command: String): js.Any = js.native
-    def CreateScript(Command: String, Server: js.Any): js.Any = js.native
+    def CreateScript(Command: String): Any = js.native
+    def CreateScript(Command: String, Server: Any): Any = js.native
     
     /* private */ @JSName("WSHControllerLibrary.WSHController_typekey")
     var WSHControllerLibraryDotWSHController_typekey: WSHController = js.native

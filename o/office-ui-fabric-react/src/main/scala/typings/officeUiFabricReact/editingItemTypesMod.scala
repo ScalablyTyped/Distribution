@@ -20,13 +20,13 @@ object editingItemTypesMod {
     
     var getEditingItemText: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, String]] = js.undefined
     
-    def onEditingComplete(oldItem: js.Any, newItem: js.Any): Unit
+    def onEditingComplete(oldItem: Any, newItem: Any): Unit
     
     var onRenderFloatingPicker: js.UndefOr[ComponentType[IBaseFloatingPickerProps[IPersonaProps]]] = js.undefined
   }
   object IEditingSelectedPeopleItemProps {
     
-    inline def apply(onEditingComplete: (js.Any, js.Any) => Unit): IEditingSelectedPeopleItemProps = {
+    inline def apply(onEditingComplete: (Any, Any) => Unit): IEditingSelectedPeopleItemProps = {
       val __obj = js.Dynamic.literal(onEditingComplete = js.Any.fromFunction2(onEditingComplete))
       __obj.asInstanceOf[IEditingSelectedPeopleItemProps]
     }
@@ -41,7 +41,7 @@ object editingItemTypesMod {
       
       inline def setGetEditingItemTextUndefined: Self = StObject.set(x, "getEditingItemText", js.undefined)
       
-      inline def setOnEditingComplete(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "onEditingComplete", js.Any.fromFunction2(value))
+      inline def setOnEditingComplete(value: (Any, Any) => Unit): Self = StObject.set(x, "onEditingComplete", js.Any.fromFunction2(value))
       
       inline def setOnRenderFloatingPicker(value: ComponentType[IBaseFloatingPickerProps[IPersonaProps]]): Self = StObject.set(x, "onRenderFloatingPicker", value.asInstanceOf[js.Any])
       

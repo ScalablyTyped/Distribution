@@ -11,9 +11,9 @@ Timestamp for 64-bit time_t, nanosecond precision and strftime
 | Full name          | timestamp-nano |
 | Keywords           | date, datetime, microsecond, nanosecond, strftime, time_t, timestamp |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 268519 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 61886.666666666664 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/kawanet/timestamp-nano#readme)

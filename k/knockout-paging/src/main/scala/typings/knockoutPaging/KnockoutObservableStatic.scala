@@ -10,5 +10,5 @@ trait KnockoutObservableStatic extends StObject {
   def apply[T](): KnockoutObservable[T] = js.native
   def apply[T](value: T): KnockoutObservable[T] = js.native
   
-  var fn: KnockoutObservableFunctions[js.Any] = js.native
+  var fn: KnockoutObservableFunctions[Any] = js.native
 }

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ListCreationInformation")
 @js.native
-class ListCreationInformation ()
+open class ListCreationInformation ()
   extends StObject
      with typings.sharepoint.SP.ListCreationInformation {
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -20,13 +20,13 @@ class ListCreationInformation ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_customSchemaXml(): String = js.native
   
   /* CompleteClass */
-  override def get_dataSourceProperties(): js.Any = js.native
+  override def get_dataSourceProperties(): Any = js.native
   
   /* CompleteClass */
   override def get_description(): String = js.native
@@ -56,7 +56,7 @@ class ListCreationInformation ()
   override def set_customSchemaXml(value: String): Unit = js.native
   
   /* CompleteClass */
-  override def set_dataSourceProperties(value: js.Any): Unit = js.native
+  override def set_dataSourceProperties(value: Any): Unit = js.native
   
   /* CompleteClass */
   override def set_description(value: String): Unit = js.native

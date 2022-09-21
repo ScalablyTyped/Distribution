@@ -2,7 +2,6 @@ package typings.samchon
 
 import typings.samchon.entityArrayMod.EntityArray
 import typings.samchon.invokeParameterMod.InvokeParameter
-import typings.std.Uint8Array
 import typings.sxml.mod.XML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +14,7 @@ object invokeMod {
   /**
     * Default Constructor.
     */
-  class Invoke () extends EntityArray[InvokeParameter] {
+  open class Invoke () extends EntityArray[InvokeParameter] {
     /**
       * Copy Constructor.
       *
@@ -29,7 +28,7 @@ object invokeMod {
       * @param listener
       * @param parameters
       */
-    def this(listener: String, parameters: (Boolean | Double | String | XML | Uint8Array)*) = this()
+    def this(listener: String, parameters: (Boolean | Double | String | XML | js.typedarray.Uint8Array)*) = this()
     
     /**
       * Apply to a matched function.
@@ -53,7 +52,7 @@ object invokeMod {
       *
       * @return An array containing values of the contained parameters.
       */
-    def getArguments(): js.Array[js.Any] = js.native
+    def getArguments(): js.Array[Any] = js.native
     
     /**
       * Get listener.
@@ -63,6 +62,6 @@ object invokeMod {
     /**
       * Listener, represent function's name.
       */
-    /* private */ var listener: js.Any = js.native
+    /* private */ var listener: Any = js.native
   }
 }

@@ -17,7 +17,7 @@ trait GitConfig extends StObject {
   var RepositoryUrl: GitConfigUrl
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the credentials used to access the git repository. The secret must have a staging label of AWSCURRENT and must be in the following format:  {"username": UserName, "password": Password} 
+    * The Amazon Resource Name (ARN) of the Amazon Web Services Secrets Manager secret that contains the credentials used to access the git repository. The secret must have a staging label of AWSCURRENT and must be in the following format:  {"username": UserName, "password": Password} 
     */
   var SecretArn: js.UndefOr[typings.awsSdk.sagemakerMod.SecretArn] = js.undefined
 }

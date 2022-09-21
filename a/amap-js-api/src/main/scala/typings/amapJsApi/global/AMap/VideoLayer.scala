@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.VideoLayer")
 @js.native
-class VideoLayer ()
+open class VideoLayer ()
   extends StObject
      with typings.amapJsApi.AMap.VideoLayer

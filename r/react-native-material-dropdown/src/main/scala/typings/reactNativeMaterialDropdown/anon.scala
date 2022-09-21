@@ -1,17 +1,16 @@
 package typings.reactNativeMaterialDropdown
 
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeMaterialDropdown.mod.DropDownData
@@ -23,12 +22,9 @@ import typings.reactNativeMaterialDropdown.mod.RenderBaseProps
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.`no-hide-descendants`
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.assertive
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.auto
-import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.button
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.no
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.none
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.polite
-import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.radiobutton_checked
-import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.radiobutton_unchecked
 import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.yes
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -44,8 +40,6 @@ object anon {
     
     var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
     
-    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
-    
     var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
     
     var accessibilityHint: js.UndefOr[String] = js.undefined
@@ -54,13 +48,15 @@ object anon {
     
     var accessibilityLabel: js.UndefOr[String] = js.undefined
     
+    var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var accessibilityLanguage: js.UndefOr[String] = js.undefined
+    
     var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
     
     var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
     
     var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-    
-    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
     
     var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
     
@@ -71,6 +67,8 @@ object anon {
     var animationDuration: js.UndefOr[Double] = js.undefined
     
     var baseColor: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
@@ -93,8 +91,6 @@ object anon {
     var dropdownPosition: js.UndefOr[Double] = js.undefined
     
     var fontSize: js.UndefOr[Double] = js.undefined
-    
-    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
     
     var hitSlop: js.UndefOr[DropDownInsets] = js.undefined
     
@@ -182,8 +178,6 @@ object anon {
     
     var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
     
-    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
-    
     var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
     var value: js.UndefOr[String | Double] = js.undefined
@@ -207,11 +201,7 @@ object anon {
       
       inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
       
-      inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-      
-      inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-      
-      inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+      inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
       
       inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
       
@@ -229,6 +219,16 @@ object anon {
       
       inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
       
+      inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+      
+      inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+      
+      inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+      
       inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -240,12 +240,6 @@ object anon {
       inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-      
-      inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-      
-      inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-      
-      inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
       
       inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
       
@@ -267,6 +261,10 @@ object anon {
       
       inline def setBaseColorUndefined: Self = StObject.set(x, "baseColor", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
       inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
@@ -277,7 +275,7 @@ object anon {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: DropDownData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: DropDownData*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
       
@@ -314,10 +312,6 @@ object anon {
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
-      
-      inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
-      
-      inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
       
       inline def setHitSlop(value: DropDownInsets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
       
@@ -487,7 +481,7 @@ object anon {
       
       inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
       
-      inline def setSupportedOrientationsVarargs(value: String*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+      inline def setSupportedOrientationsVarargs(value: String*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
       
       inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
       
@@ -502,10 +496,6 @@ object anon {
       inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
       
       inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
-      
-      inline def setTvParallaxProperties(value: TVParallaxProperties): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
-      
-      inline def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
       
       inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       
@@ -528,8 +518,6 @@ object anon {
     
     var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
     
-    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
-    
     var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
     
     var accessibilityHint: js.UndefOr[String] = js.undefined
@@ -538,13 +526,15 @@ object anon {
     
     var accessibilityLabel: js.UndefOr[String] = js.undefined
     
+    var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var accessibilityLanguage: js.UndefOr[String] = js.undefined
+    
     var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
     
     var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
     
     var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-    
-    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
     
     var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
     
@@ -555,6 +545,8 @@ object anon {
     var animationDuration: js.UndefOr[Double] = js.undefined
     
     var baseColor: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
@@ -577,8 +569,6 @@ object anon {
     var dropdownPosition: js.UndefOr[Double] = js.undefined
     
     var fontSize: js.UndefOr[Double] = js.undefined
-    
-    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
     
     var hitSlop: js.UndefOr[DropDownInsets] = js.undefined
     
@@ -666,8 +656,6 @@ object anon {
     
     var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
     
-    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
-    
     var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
     var value: js.UndefOr[String | Double] = js.undefined
@@ -691,11 +679,7 @@ object anon {
       
       inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
       
-      inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-      
-      inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-      
-      inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+      inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
       
       inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
       
@@ -713,6 +697,16 @@ object anon {
       
       inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
       
+      inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+      
+      inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+      
+      inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+      
       inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -724,12 +718,6 @@ object anon {
       inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-      
-      inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-      
-      inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-      
-      inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
       
       inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
       
@@ -751,6 +739,10 @@ object anon {
       
       inline def setBaseColorUndefined: Self = StObject.set(x, "baseColor", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
       inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
@@ -761,7 +753,7 @@ object anon {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: DropDownData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: DropDownData*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
       
@@ -798,10 +790,6 @@ object anon {
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
-      
-      inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
-      
-      inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
       
       inline def setHitSlop(value: DropDownInsets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
       
@@ -973,7 +961,7 @@ object anon {
       
       inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
       
-      inline def setSupportedOrientationsVarargs(value: String*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+      inline def setSupportedOrientationsVarargs(value: String*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
       
       inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
       
@@ -988,10 +976,6 @@ object anon {
       inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
       
       inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
-      
-      inline def setTvParallaxProperties(value: TVParallaxProperties): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
-      
-      inline def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
       
       inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       

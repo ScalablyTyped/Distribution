@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FilterOperator[D] extends StObject {
   
-  def filter(data: js.Array[js.Any]): js.Array[js.Any]
+  def filter(data: js.Array[Any]): js.Array[Any]
   
   var op: AttributeOperator | CompoundOperator
 }
 object FilterOperator {
   
-  inline def apply[D](filter: js.Array[js.Any] => js.Array[js.Any], op: AttributeOperator | CompoundOperator): FilterOperator[D] = {
+  inline def apply[D](filter: js.Array[Any] => js.Array[Any], op: AttributeOperator | CompoundOperator): FilterOperator[D] = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), op = op.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOperator[D]]
   }
   
   extension [Self <: FilterOperator[?], D](x: Self & FilterOperator[D]) {
     
-    inline def setFilter(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setOp(value: AttributeOperator | CompoundOperator): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
   }

@@ -2,8 +2,6 @@ package typings.chai.Chai
 
 import typings.chai.chaiNumbers.`-1`
 import typings.chai.chaiNumbers.`1`
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +15,7 @@ trait ChaiUtils extends StObject {
     // method name
   name: String,
     // method itself; any arguments
-  method: js.Function1[/* repeated */ js.Any, Unit]
+  method: js.Function1[/* repeated */ Any, Unit]
   ): Unit = js.native
   def addChainableMethod(
     // object to define the method on, e.g. chai.Assertion.prototype
@@ -25,7 +23,7 @@ trait ChaiUtils extends StObject {
     // method name
   name: String,
     // method itself; any arguments
-  method: js.Function1[/* repeated */ js.Any, Unit],
+  method: js.Function1[/* repeated */ Any, Unit],
     // called when property is accessed
   chainingBehavior: js.Function0[Unit]
   ): Unit = js.native
@@ -34,25 +32,25 @@ trait ChaiUtils extends StObject {
   
   def addMethod(ctx: js.Object, name: String, method: js.Function): Unit = js.native
   
-  def addProperty(ctx: js.Object, name: String, getter: js.Function0[js.Any]): Unit = js.native
+  def addProperty(ctx: js.Object, name: String, getter: js.Function0[Any]): Unit = js.native
   
   def compareByInspect(a: js.Object, b: js.Object): `-1` | `1` = js.native
   
-  def compatibleConstructor(thrown: Error, errorLike: ErrorConstructor): Boolean = js.native
-  def compatibleConstructor(thrown: Error, errorLike: Error): Boolean = js.native
+  def compatibleConstructor(thrown: js.Error, errorLike: js.Error): Boolean = js.native
+  def compatibleConstructor(thrown: js.Error, errorLike: ErrorConstructor): Boolean = js.native
   
-  def compatibleInstance(thrown: Error, errorLike: ErrorConstructor): Boolean = js.native
-  def compatibleInstance(thrown: Error, errorLike: Error): Boolean = js.native
+  def compatibleInstance(thrown: js.Error, errorLike: js.Error): Boolean = js.native
+  def compatibleInstance(thrown: js.Error, errorLike: ErrorConstructor): Boolean = js.native
   
-  def compatibleMessage(thrown: Error, errMatcher: String): Boolean = js.native
-  def compatibleMessage(thrown: Error, errMatcher: RegExp): Boolean = js.native
+  def compatibleMessage(thrown: js.Error, errMatcher: String): Boolean = js.native
+  def compatibleMessage(thrown: js.Error, errMatcher: js.RegExp): Boolean = js.native
   
   def expectTypes(obj: js.Object, types: js.Array[String]): Unit = js.native
   
-  def flag(obj: js.Object, key: String): js.Any = js.native
-  def flag(obj: js.Object, key: String, value: js.Any): js.Any = js.native
+  def flag(obj: js.Object, key: String): Any = js.native
+  def flag(obj: js.Object, key: String, value: Any): Any = js.native
   
-  def getActual(obj: js.Object, args: AssertionArgs): js.Any = js.native
+  def getActual(obj: js.Object, args: AssertionArgs): Any = js.native
   
   def getConstructorName(constructorFn: js.Function): String = js.native
   
@@ -61,8 +59,8 @@ trait ChaiUtils extends StObject {
   def getFuncName(constructorFn: js.Function): String | Null = js.native
   
   def getMessage(errorLike: String): String = js.native
-  def getMessage(errorLike: Error): String = js.native
-  def getMessage(obj: js.Any, args: AssertionArgs): String = js.native
+  def getMessage(errorLike: js.Error): String = js.native
+  def getMessage(obj: Any, args: AssertionArgs): String = js.native
   
   def getOwnEnumerableProperties(obj: js.Object): js.Array[String | js.Symbol] = js.native
   
@@ -79,30 +77,30 @@ trait ChaiUtils extends StObject {
   def hasProperty(obj: Null, name: ObjectProperty): Boolean = js.native
   def hasProperty(obj: Unit, name: ObjectProperty): Boolean = js.native
   
-  def inspect(obj: js.Any): String = js.native
-  def inspect(obj: js.Any, showHidden: Boolean): String = js.native
-  def inspect(obj: js.Any, showHidden: Boolean, depth: Double): String = js.native
-  def inspect(obj: js.Any, showHidden: Boolean, depth: Double, colors: Boolean): String = js.native
-  def inspect(obj: js.Any, showHidden: Boolean, depth: Unit, colors: Boolean): String = js.native
-  def inspect(obj: js.Any, showHidden: Unit, depth: Double): String = js.native
-  def inspect(obj: js.Any, showHidden: Unit, depth: Double, colors: Boolean): String = js.native
-  def inspect(obj: js.Any, showHidden: Unit, depth: Unit, colors: Boolean): String = js.native
+  def inspect(obj: Any): String = js.native
+  def inspect(obj: Any, showHidden: Boolean): String = js.native
+  def inspect(obj: Any, showHidden: Boolean, depth: Double): String = js.native
+  def inspect(obj: Any, showHidden: Boolean, depth: Double, colors: Boolean): String = js.native
+  def inspect(obj: Any, showHidden: Boolean, depth: Unit, colors: Boolean): String = js.native
+  def inspect(obj: Any, showHidden: Unit, depth: Double): String = js.native
+  def inspect(obj: Any, showHidden: Unit, depth: Double, colors: Boolean): String = js.native
+  def inspect(obj: Any, showHidden: Unit, depth: Unit, colors: Boolean): String = js.native
   
   def isProxyEnabled(): Boolean = js.native
   
   def objDisplay(obj: js.Object): Unit = js.native
   
-  def overwriteChainableMethod(ctx: js.Object, name: String, method: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def overwriteChainableMethod(ctx: js.Object, name: String, method: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   def overwriteChainableMethod(
     ctx: js.Object,
     name: String,
-    method: js.Function1[/* repeated */ js.Any, Unit],
+    method: js.Function1[/* repeated */ Any, Unit],
     chainingBehavior: js.Function0[Unit]
   ): Unit = js.native
   
   def overwriteMethod(ctx: js.Object, name: String, method: js.Function): Unit = js.native
   
-  def overwriteProperty(ctx: js.Object, name: String, getter: js.Function0[js.Any]): Unit = js.native
+  def overwriteProperty(ctx: js.Object, name: String, getter: js.Function0[Any]): Unit = js.native
   
   def proxify(obj: js.Object, nonChainableMethodName: String): js.Object = js.native
   

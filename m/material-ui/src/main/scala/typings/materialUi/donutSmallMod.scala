@@ -10,10 +10,10 @@ object donutSmallMod {
   
   @JSImport("material-ui/svg-icons/action/donut-small", JSImport.Default)
   @js.native
-  class default () extends ActionDonutSmall
+  open class default () extends ActionDonutSmall
   
   @JSImport("material-ui/svg-icons/action/donut-small", "ActionDonutSmall")
   @js.native
-  class ActionDonutSmall ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionDonutSmall ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -83,13 +83,13 @@ object CIMSymbolReference {
     
     inline def setPrimitiveOverridesUndefined: Self = StObject.set(x, "primitiveOverrides", js.undefined)
     
-    inline def setPrimitiveOverridesVarargs(value: CIMPrimitiveOverride*): Self = StObject.set(x, "primitiveOverrides", js.Array(value :_*))
+    inline def setPrimitiveOverridesVarargs(value: CIMPrimitiveOverride*): Self = StObject.set(x, "primitiveOverrides", js.Array(value*))
     
     inline def setScaleDependentSizeVariation(value: js.Array[CIMScaleDependentSizeVariation]): Self = StObject.set(x, "scaleDependentSizeVariation", value.asInstanceOf[js.Any])
     
     inline def setScaleDependentSizeVariationUndefined: Self = StObject.set(x, "scaleDependentSizeVariation", js.undefined)
     
-    inline def setScaleDependentSizeVariationVarargs(value: CIMScaleDependentSizeVariation*): Self = StObject.set(x, "scaleDependentSizeVariation", js.Array(value :_*))
+    inline def setScaleDependentSizeVariationVarargs(value: CIMScaleDependentSizeVariation*): Self = StObject.set(x, "scaleDependentSizeVariation", js.Array(value*))
     
     inline def setStylePath(value: String): Self = StObject.set(x, "stylePath", value.asInstanceOf[js.Any])
     

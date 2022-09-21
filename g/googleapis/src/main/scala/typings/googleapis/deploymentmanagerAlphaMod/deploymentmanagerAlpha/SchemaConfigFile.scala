@@ -9,7 +9,7 @@ trait SchemaConfigFile extends StObject {
   /**
     * The contents of the file.
     */
-  var content: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaConfigFile {
   
@@ -21,6 +21,8 @@ object SchemaConfigFile {
   extension [Self <: SchemaConfigFile](x: Self) {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }

@@ -1,7 +1,6 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait IgScheduler
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Fired after agenda view range is changed when using previous and next buttons (fired only in Agenda View)
@@ -90,7 +89,7 @@ trait IgScheduler
     * Gets/Sets dataSource of type $.ig.scheduler.ScheduleListDataSource.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after day is changed when using previous and next buttons (fired only in Day View)
@@ -138,7 +137,7 @@ trait IgScheduler
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after month is changed when using previous and next buttons (fired only in Month View)
@@ -186,13 +185,13 @@ trait IgScheduler
     * // Get
     * var resources = $(".selector").%%WidgetName%%("option", "resources");
     */
-  var resources: js.UndefOr[js.Any] = js.undefined
+  var resources: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets selected date in the Scheduler.
     *
     */
-  var selectedDate: js.UndefOr[Date] = js.undefined
+  var selectedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Fired after the view is changed, when using the menu buttons.
@@ -218,7 +217,7 @@ trait IgScheduler
     * Lists of all the views, rendered in the Scheduler.
     *
     */
-  var views: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var views: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Fired after week is changed when using previous and next buttons (fired only in Week View)
@@ -310,7 +309,7 @@ object IgScheduler {
     
     inline def setAppointmentEditingUndefined: Self = StObject.set(x, "appointmentEditing", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -342,7 +341,7 @@ object IgScheduler {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -370,11 +369,11 @@ object IgScheduler {
     
     inline def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
     
-    inline def setResources(value: js.Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+    inline def setSelectedDate(value: js.Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
     
     inline def setSelectedDateUndefined: Self = StObject.set(x, "selectedDate", js.undefined)
     
@@ -390,11 +389,11 @@ object IgScheduler {
     
     inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
     
-    inline def setViews(value: js.Array[js.Any]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: js.Array[Any]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
-    inline def setViewsVarargs(value: js.Any*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: Any*): Self = StObject.set(x, "views", js.Array(value*))
     
     inline def setWeekChanged(value: (/* event */ Event, /* ui */ WeekChangedEventUIParam) => Unit): Self = StObject.set(x, "weekChanged", js.Any.fromFunction2(value))
     

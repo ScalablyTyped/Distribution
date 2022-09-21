@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Cell")
 @js.native
-/* private */ class Cell ()
+/* private */ open class Cell ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Cell {
   
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Merge(MergeTo: typings.activexPowerpoint.PowerPoint.Cell): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.Cell_typekey")

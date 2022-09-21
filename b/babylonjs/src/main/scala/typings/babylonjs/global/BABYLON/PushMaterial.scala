@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PushMaterial")
 @js.native
-class PushMaterial protected ()
+open class PushMaterial protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PushMaterial {
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(name: String, scene: Unit, storeEffectOnSubMeshes: Boolean) = this()
+  def this(name: String, scene: typings.babylonjs.BABYLON.Scene, storeEffectOnSubMeshes: Boolean) = this()
   
   /**
     * Array of animations

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cote", "Subscriber")
 @js.native
-class Subscriber protected () extends Component {
+open class Subscriber protected () extends Component {
   def this(/**
     * Configuration which controls the data being advertised for auto-discovery.
     */

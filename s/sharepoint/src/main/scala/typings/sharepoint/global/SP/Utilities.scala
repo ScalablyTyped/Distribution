@@ -8,7 +8,6 @@ import typings.sharepoint.SP.UserCollection
 import typings.sharepoint.SP.Utilities.DateTimeFormat
 import typings.sharepoint.SP.Utilities.PrincipalSource
 import typings.sharepoint.SP.Utilities.PrincipalType
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +40,7 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.DateUtility")
   @js.native
-  class DateUtility ()
+  open class DateUtility ()
     extends StObject
        with typings.sharepoint.SP.Utilities.DateUtility
   object DateUtility {
@@ -65,12 +64,12 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.EmailProperties")
   @js.native
-  class EmailProperties ()
+  open class EmailProperties ()
     extends StObject
        with typings.sharepoint.SP.Utilities.EmailProperties {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -79,10 +78,10 @@ object Utilities {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
-    override def get_additionalHeaders(): js.Any = js.native
+    override def get_additionalHeaders(): Any = js.native
     
     /* CompleteClass */
     override def get_bCC(): js.Array[String] = js.native
@@ -106,7 +105,7 @@ object Utilities {
     override def get_typeId(): String = js.native
     
     /* CompleteClass */
-    override def set_additionalHeaders(value: js.Any): Unit = js.native
+    override def set_additionalHeaders(value: Any): Unit = js.native
     
     /* CompleteClass */
     override def set_bCC(value: js.Array[String]): Unit = js.native
@@ -135,7 +134,7 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.HttpUtility")
   @js.native
-  class HttpUtility ()
+  open class HttpUtility ()
     extends StObject
        with typings.sharepoint.SP.Utilities.HttpUtility
   object HttpUtility {
@@ -188,7 +187,7 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.LocUtility")
   @js.native
-  class LocUtility ()
+  open class LocUtility ()
     extends StObject
        with typings.sharepoint.SP.Utilities.LocUtility
   object LocUtility {
@@ -217,12 +216,12 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.PrincipalInfo")
   @js.native
-  class PrincipalInfo ()
+  open class PrincipalInfo ()
     extends StObject
        with typings.sharepoint.SP.Utilities.PrincipalInfo {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -231,7 +230,7 @@ object Utilities {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_department(): String = js.native
@@ -328,7 +327,7 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.Set")
   @js.native
-  class Set ()
+  open class Set ()
     extends StObject
        with typings.sharepoint.SP.Utilities.Set {
     def this(items: NumberDictionary[Double]) = this()
@@ -336,11 +335,11 @@ object Utilities {
     
     /** Adds an item to the set */
     /* CompleteClass */
-    override def Add(item: js.Any): js.Any = js.native
+    override def Add(item: Any): Any = js.native
     
     /** Adds all items from array to the set, and returns the set */
     /* CompleteClass */
-    override def AddArray(array: js.Array[js.Any]): typings.sharepoint.SP.Utilities.Set = js.native
+    override def AddArray(array: js.Array[Any]): typings.sharepoint.SP.Utilities.Set = js.native
     
     /** Clears all the items from set */
     /* CompleteClass */
@@ -352,7 +351,7 @@ object Utilities {
     
     /** Returns true if item exists in this set */
     /* CompleteClass */
-    override def Contains(item: js.Any): Boolean = js.native
+    override def Contains(item: Any): Boolean = js.native
     
     /** Returns a set that contains all the items that are in this set but not in the otherSet */
     /* CompleteClass */
@@ -360,13 +359,13 @@ object Utilities {
     
     /** Returns first item in the set */
     /* CompleteClass */
-    override def First(): js.Any = js.native
+    override def First(): Any = js.native
     
     /** Returns the underlying collection of items as dictionary.
       Items are the keys, and values are always 1.
       So the return value may be either { [item: string]: number } or { [item: number]: number } */
     /* CompleteClass */
-    override def GetCollection(): js.Any = js.native
+    override def GetCollection(): Any = js.native
     
     /** Returns a new set, that contains only items that exist both in this set and the otherSet */
     /* CompleteClass */
@@ -378,7 +377,7 @@ object Utilities {
     
     /** Removes the specified item from the set and returns the removed item */
     /* CompleteClass */
-    override def Remove(item: js.Any): js.Any = js.native
+    override def Remove(item: Any): Any = js.native
     
     /** Returns a set that contains all the items that exist only in one of the sets (this and other), but not in both */
     /* CompleteClass */
@@ -386,7 +385,7 @@ object Utilities {
     
     /** Returns all items from the set as an array */
     /* CompleteClass */
-    override def ToArray(): js.Array[js.Any] = js.native
+    override def ToArray(): js.Array[Any] = js.native
     
     /** Returns a new set, that contains items from this set and otherSet */
     /* CompleteClass */
@@ -399,7 +398,7 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.UrlBuilder")
   @js.native
-  class UrlBuilder protected ()
+  open class UrlBuilder protected ()
     extends StObject
        with typings.sharepoint.SP.Utilities.UrlBuilder {
     def this(path: String) = this()
@@ -432,7 +431,7 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.Utility")
   @js.native
-  class Utility ()
+  open class Utility ()
     extends StObject
        with typings.sharepoint.SP.Utilities.Utility {
     
@@ -454,7 +453,7 @@ object Utilities {
     /* static member */
     inline def createNewDiscussion[T](
       context: typings.sharepoint.SP.ClientRuntimeContext,
-      list: typings.sharepoint.SP.List[js.Any],
+      list: typings.sharepoint.SP.List[Any],
       title: String
     ): typings.sharepoint.SP.ListItem[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNewDiscussion")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ListItem[T]]
     
@@ -471,7 +470,7 @@ object Utilities {
     inline def formatDateTime(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       web: typings.sharepoint.SP.Web,
-      datetime: Date,
+      datetime: js.Date,
       format: DateTimeFormat
     ): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDateTime")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any], datetime.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
     
@@ -530,7 +529,7 @@ object Utilities {
     inline def isUserLicensedForEntityInContext(context: typings.sharepoint.SP.ClientRuntimeContext, licensableEntity: String): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("isUserLicensedForEntityInContext")(context.asInstanceOf[js.Any], licensableEntity.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
     
     /* static member */
-    inline def localizeWebPartGallery(context: typings.sharepoint.SP.ClientRuntimeContext, items: ListItemCollection[js.Any]): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.ListItem[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("localizeWebPartGallery")(context.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.ListItem[js.Any]]]
+    inline def localizeWebPartGallery(context: typings.sharepoint.SP.ClientRuntimeContext, items: ListItemCollection[Any]): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.ListItem[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("localizeWebPartGallery")(context.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.ListItem[Any]]]
     
     /* static member */
     inline def logCustomAppError(context: typings.sharepoint.SP.ClientRuntimeContext, error: String): typings.sharepoint.SP.IntResult = (^.asInstanceOf[js.Dynamic].applyDynamic("logCustomAppError")(context.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.IntResult]
@@ -573,7 +572,7 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.VersionUtility")
   @js.native
-  class VersionUtility ()
+  open class VersionUtility ()
     extends StObject
        with typings.sharepoint.SP.Utilities.VersionUtility
   object VersionUtility {
@@ -597,12 +596,12 @@ object Utilities {
   
   @JSGlobal("SP.Utilities.WikiPageCreationInformation")
   @js.native
-  class WikiPageCreationInformation ()
+  open class WikiPageCreationInformation ()
     extends StObject
        with typings.sharepoint.SP.Utilities.WikiPageCreationInformation {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -611,7 +610,7 @@ object Utilities {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_serverRelativeUrl(): String = js.native

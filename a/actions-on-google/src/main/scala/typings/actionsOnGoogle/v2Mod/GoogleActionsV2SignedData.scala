@@ -19,7 +19,7 @@ trait GoogleActionsV2SignedData extends StObject {
     * See details in table 6 of
     * https://developer.android.com/google/play/billing/billing_reference.html.
     */
-  var inAppPurchaseData: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var inAppPurchaseData: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
 }
 object GoogleActionsV2SignedData {
   
@@ -34,7 +34,7 @@ object GoogleActionsV2SignedData {
     
     inline def setInAppDataSignatureUndefined: Self = StObject.set(x, "inAppDataSignature", js.undefined)
     
-    inline def setInAppPurchaseData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "inAppPurchaseData", value.asInstanceOf[js.Any])
+    inline def setInAppPurchaseData(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "inAppPurchaseData", value.asInstanceOf[js.Any])
     
     inline def setInAppPurchaseDataUndefined: Self = StObject.set(x, "inAppPurchaseData", js.undefined)
   }

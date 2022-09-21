@@ -4,30 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Android app information.
-  */
 trait SchemaAndroidAppInfo extends StObject {
   
   /**
     * The name of the app. Optional
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The package name of the app. Required.
     */
-  var packageName: js.UndefOr[String] = js.undefined
+  var packageName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The internal version code of the app. Optional.
     */
-  var versionCode: js.UndefOr[String] = js.undefined
+  var versionCode: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The version name of the app. Optional.
     */
-  var versionName: js.UndefOr[String] = js.undefined
+  var versionName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAndroidAppInfo {
   
@@ -40,17 +37,25 @@ object SchemaAndroidAppInfo {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    
+    inline def setPackageNameNull: Self = StObject.set(x, "packageName", null)
     
     inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     inline def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
+    inline def setVersionCodeNull: Self = StObject.set(x, "versionCode", null)
+    
     inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
     inline def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNameNull: Self = StObject.set(x, "versionName", null)
     
     inline def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
   }

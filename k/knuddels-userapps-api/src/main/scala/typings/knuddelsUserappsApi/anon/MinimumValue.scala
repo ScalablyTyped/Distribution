@@ -34,6 +34,6 @@ object MinimumValue {
     
     inline def setTargetUsersUndefined: Self = StObject.set(x, "targetUsers", js.undefined)
     
-    inline def setTargetUsersVarargs(value: User*): Self = StObject.set(x, "targetUsers", js.Array(value :_*))
+    inline def setTargetUsersVarargs(value: User*): Self = StObject.set(x, "targetUsers", js.Array(value*))
   }
 }

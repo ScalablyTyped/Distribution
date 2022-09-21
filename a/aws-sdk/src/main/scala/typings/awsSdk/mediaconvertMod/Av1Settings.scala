@@ -12,6 +12,11 @@ trait Av1Settings extends StObject {
   var AdaptiveQuantization: js.UndefOr[Av1AdaptiveQuantization] = js.undefined
   
   /**
+    * Specify the Bit depth (Av1BitDepth). You can choose 8-bit (BIT_8) or 10-bit (BIT_10).
+    */
+  var BitDepth: js.UndefOr[Av1BitDepth] = js.undefined
+  
+  /**
     * If you are using the console, use the Framerate setting to specify the frame rate for this output. If you want to keep the same frame rate as the input video, choose Follow source. If you want to do frame rate conversion, choose a frame rate from the dropdown list or choose Custom. The framerates shown in the dropdown list are decimal approximations of fractions. If you choose Custom, specify your frame rate as a fraction. If you are creating your transcoding job specification as a JSON file without the console, use FramerateControl to specify which value the service uses for the frame rate for this output. Choose INITIALIZE_FROM_SOURCE if you want the service to use the frame rate from the input. Choose SPECIFIED if you want the service to use the frame rate you specify in the settings FramerateNumerator and FramerateDenominator.
     */
   var FramerateControl: js.UndefOr[Av1FramerateControl] = js.undefined
@@ -42,12 +47,12 @@ trait Av1Settings extends StObject {
   var MaxBitrate: js.UndefOr[integerMin1000Max1152000000] = js.undefined
   
   /**
-    * Specify the number of B-frames. With AV1, MediaConvert supports only 7 or 15.
+    * Specify from the number of B-frames, in the range of 0-15. For AV1 encoding, we recommend using 7 or 15. Choose a larger number for a lower bitrate and smaller file size; choose a smaller number for better video quality.
     */
-  var NumberBFramesBetweenReferenceFrames: js.UndefOr[integerMin7Max15] = js.undefined
+  var NumberBFramesBetweenReferenceFrames: js.UndefOr[integerMin0Max15] = js.undefined
   
   /**
-    * Settings for quality-defined variable bitrate encoding with the AV1 codec. Required when you set Rate control mode to QVBR. Not valid when you set Rate control mode to a value other than QVBR, or when you don't define Rate control mode.
+    * Settings for quality-defined variable bitrate encoding with the H.265 codec. Use these settings only when you set QVBR for Rate control mode (RateControlMode).
     */
   var QvbrSettings: js.UndefOr[Av1QvbrSettings] = js.undefined
   
@@ -79,6 +84,10 @@ object Av1Settings {
     
     inline def setAdaptiveQuantizationUndefined: Self = StObject.set(x, "AdaptiveQuantization", js.undefined)
     
+    inline def setBitDepth(value: Av1BitDepth): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
+    
+    inline def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
+    
     inline def setFramerateControl(value: Av1FramerateControl): Self = StObject.set(x, "FramerateControl", value.asInstanceOf[js.Any])
     
     inline def setFramerateControlUndefined: Self = StObject.set(x, "FramerateControl", js.undefined)
@@ -103,7 +112,7 @@ object Av1Settings {
     
     inline def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
     
-    inline def setNumberBFramesBetweenReferenceFrames(value: integerMin7Max15): Self = StObject.set(x, "NumberBFramesBetweenReferenceFrames", value.asInstanceOf[js.Any])
+    inline def setNumberBFramesBetweenReferenceFrames(value: integerMin0Max15): Self = StObject.set(x, "NumberBFramesBetweenReferenceFrames", value.asInstanceOf[js.Any])
     
     inline def setNumberBFramesBetweenReferenceFramesUndefined: Self = StObject.set(x, "NumberBFramesBetweenReferenceFrames", js.undefined)
     

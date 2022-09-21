@@ -53,7 +53,7 @@ object typesListResourceTagsOutputMod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      inline def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value*))
       
       inline def setTruncated(value: Boolean): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
       

@@ -142,7 +142,7 @@ object focusContainerMod {
       * prop is that it must either be a element string (`"div"`, `"span"`, etc) or
       * a custom component that has forwarded the ref to the DOM node.
       */
-    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var component: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object FocusContainerProps {
     
@@ -153,7 +153,7 @@ object focusContainerMod {
     
     extension [Self <: FocusContainerProps](x: Self) {
       
-      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     }

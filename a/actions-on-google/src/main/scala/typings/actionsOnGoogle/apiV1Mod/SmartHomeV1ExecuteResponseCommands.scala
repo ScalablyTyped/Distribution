@@ -16,7 +16,7 @@ trait SmartHomeV1ExecuteResponseCommands extends StObject {
   
   var ids: js.Array[String]
   
-  var states: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var states: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   var status: SmartHomeV1ExecuteStatus
 }
@@ -43,9 +43,9 @@ object SmartHomeV1ExecuteResponseCommands {
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
-    inline def setStates(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     

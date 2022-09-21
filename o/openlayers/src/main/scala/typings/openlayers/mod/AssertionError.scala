@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "AssertionError")
 @js.native
-class AssertionError protected ()
+open class AssertionError protected ()
   extends StObject
      with Error {
   /**
@@ -27,9 +27,11 @@ class AssertionError protected ()
     */
   var code: Double = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
 }

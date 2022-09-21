@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "prosemirror-view" : "1.28.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "prosemirror-view" : "1.28.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

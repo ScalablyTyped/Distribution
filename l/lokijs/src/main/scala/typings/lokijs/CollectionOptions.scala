@@ -26,6 +26,8 @@ trait CollectionOptions[E] extends StObject {
   
   var disableDeltaChangesApi: Boolean
   
+  var disableFreeze: Boolean
+  
   var disableMeta: Boolean
   
   var exact: js.Array[/* keyof E */ String]
@@ -52,6 +54,7 @@ object CollectionOptions {
     clone_ : Boolean,
     disableChangesApi: Boolean,
     disableDeltaChangesApi: Boolean,
+    disableFreeze: Boolean,
     disableMeta: Boolean,
     exact: js.Array[/* keyof E */ String],
     indices: (/* keyof E */ String) | (js.Array[/* keyof E */ String]),
@@ -61,7 +64,7 @@ object CollectionOptions {
     ttlInterval: Double,
     unique: js.Array[/* keyof E */ String]
   ): CollectionOptions[E] = {
-    val __obj = js.Dynamic.literal(adaptiveBinaryIndices = adaptiveBinaryIndices.asInstanceOf[js.Any], asyncListeners = asyncListeners.asInstanceOf[js.Any], autoupdate = autoupdate.asInstanceOf[js.Any], cloneMethod = cloneMethod.asInstanceOf[js.Any], disableChangesApi = disableChangesApi.asInstanceOf[js.Any], disableDeltaChangesApi = disableDeltaChangesApi.asInstanceOf[js.Any], disableMeta = disableMeta.asInstanceOf[js.Any], exact = exact.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], serializableIndices = serializableIndices.asInstanceOf[js.Any], transactional = transactional.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any], ttlInterval = ttlInterval.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adaptiveBinaryIndices = adaptiveBinaryIndices.asInstanceOf[js.Any], asyncListeners = asyncListeners.asInstanceOf[js.Any], autoupdate = autoupdate.asInstanceOf[js.Any], cloneMethod = cloneMethod.asInstanceOf[js.Any], disableChangesApi = disableChangesApi.asInstanceOf[js.Any], disableDeltaChangesApi = disableDeltaChangesApi.asInstanceOf[js.Any], disableFreeze = disableFreeze.asInstanceOf[js.Any], disableMeta = disableMeta.asInstanceOf[js.Any], exact = exact.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], serializableIndices = serializableIndices.asInstanceOf[js.Any], transactional = transactional.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any], ttlInterval = ttlInterval.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
     __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionOptions[E]]
   }
@@ -84,15 +87,17 @@ object CollectionOptions {
     
     inline def setDisableDeltaChangesApi(value: Boolean): Self = StObject.set(x, "disableDeltaChangesApi", value.asInstanceOf[js.Any])
     
+    inline def setDisableFreeze(value: Boolean): Self = StObject.set(x, "disableFreeze", value.asInstanceOf[js.Any])
+    
     inline def setDisableMeta(value: Boolean): Self = StObject.set(x, "disableMeta", value.asInstanceOf[js.Any])
     
     inline def setExact(value: js.Array[/* keyof E */ String]): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    inline def setExactVarargs(value: (/* keyof E */ String)*): Self = StObject.set(x, "exact", js.Array(value :_*))
+    inline def setExactVarargs(value: (/* keyof E */ String)*): Self = StObject.set(x, "exact", js.Array(value*))
     
     inline def setIndices(value: (/* keyof E */ String) | (js.Array[/* keyof E */ String])): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    inline def setIndicesVarargs(value: (/* keyof E */ String)*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: (/* keyof E */ String)*): Self = StObject.set(x, "indices", js.Array(value*))
     
     inline def setSerializableIndices(value: Boolean): Self = StObject.set(x, "serializableIndices", value.asInstanceOf[js.Any])
     
@@ -104,6 +109,6 @@ object CollectionOptions {
     
     inline def setUnique(value: js.Array[/* keyof E */ String]): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    inline def setUniqueVarargs(value: (/* keyof E */ String)*): Self = StObject.set(x, "unique", js.Array(value :_*))
+    inline def setUniqueVarargs(value: (/* keyof E */ String)*): Self = StObject.set(x, "unique", js.Array(value*))
   }
 }

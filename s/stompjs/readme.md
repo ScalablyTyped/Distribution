@@ -11,9 +11,9 @@ STOMP for JavaScript apps (Web browser & node.js)
 | Full name          | stompjs |
 | Keywords           | STOMP, Web sockets, messaging, queue |
 | # releases         | 0 |
-| # dependents       | 121 |
-| # downloads        | 1146896 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 142066.0 |
+| # stars            | 1341.0 |
 
 ## Links
 - [Homepage](https://github.com/jmesnil/stomp-websocket)

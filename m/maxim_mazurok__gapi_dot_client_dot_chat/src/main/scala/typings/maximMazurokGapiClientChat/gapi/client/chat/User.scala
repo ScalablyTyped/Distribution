@@ -6,16 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait User extends StObject {
   
-  /** The user's display name. */
+  /** Output only. The user's display name. */
   var displayName: js.UndefOr[String] = js.undefined
   
-  /** Obfuscated domain information. */
+  /** Unique identifier of the user's Google Workspace domain. */
   var domainId: js.UndefOr[String] = js.undefined
   
-  /** True when the user is deleted or the user's proifle is not visible. */
+  /** Output only. When `true`, the user is deleted or their profile is not visible. */
   var isAnonymous: js.UndefOr[Boolean] = js.undefined
   
-  /** Resource name, in the format "users/ *". */
+  /**
+    * Resource name for a Google Chat user. Represents a [person](https://developers.google.com/people/api/rest/v1/people#Person) in the People API or a
+    * [user](https://developers.google.com/admin-sdk/directory/reference/rest/v1/users) in the Admin SDK Directory API. Formatted as: `users/{user}`
+    */
   var name: js.UndefOr[String] = js.undefined
   
   /** User type. */

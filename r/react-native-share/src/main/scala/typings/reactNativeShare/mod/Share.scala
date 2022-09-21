@@ -23,6 +23,11 @@ object Share {
          with InstagramStories
     
     @js.native
+    sealed trait SHARE_BACKGROUND_VIDEO
+      extends StObject
+         with InstagramStories
+    
+    @js.native
     sealed trait SHARE_STICKER_IMAGE
       extends StObject
          with InstagramStories
@@ -71,6 +76,11 @@ object Share {
     
     @js.native
     sealed trait PINTEREST
+      extends StObject
+         with Social
+    
+    @js.native
+    sealed trait SMS
       extends StObject
          with Social
     

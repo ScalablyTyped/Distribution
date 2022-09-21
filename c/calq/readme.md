@@ -9,15 +9,12 @@ The simplest crypto calculator out there. Convert between currencies with ease! 
 | ------------------ | :-------------: |
 | Full name          | calq |
 | Keywords           | crypto, cryptocurrency, calculator, cal, converter, conversion, cli, commandline, node, nodejs, ethereum, financial, ETH, BTC |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 758 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47.333333333333336 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/adasomg/calq#readme)
-- [Bugs](https://github.com/adasomg/calq/issues)
-- [Repository](https://github.com/adasomg/calq)
 - [Npm](https://www.npmjs.com/package/calq)
     
 

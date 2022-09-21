@@ -12,9 +12,9 @@ trait SchemaInvoiceSummaryAdditionalChargeSummary extends StObject {
   var totalAmount: js.UndefOr[SchemaAmount] = js.undefined
   
   /**
-    * [required] Type of the additional charge.
+    * [required] Type of the additional charge. Acceptable values are: - "`shipping`"
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInvoiceSummaryAdditionalChargeSummary {
   
@@ -30,6 +30,8 @@ object SchemaInvoiceSummaryAdditionalChargeSummary {
     inline def setTotalAmountUndefined: Self = StObject.set(x, "totalAmount", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

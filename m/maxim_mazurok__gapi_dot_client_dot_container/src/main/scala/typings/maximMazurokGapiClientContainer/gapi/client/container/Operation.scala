@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Operation extends StObject {
   
-  /** Which conditions caused the current cluster state. */
+  /** Which conditions caused the current cluster state. Deprecated. Use field error instead. */
   var clusterConditions: js.UndefOr[js.Array[StatusCondition]] = js.undefined
   
   /** Detailed operation progress, if available. */
@@ -14,6 +14,9 @@ trait Operation extends StObject {
   
   /** [Output only] The time the operation completed, in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. */
   var endTime: js.UndefOr[String] = js.undefined
+  
+  /** The error result of the operation in case of failure. */
+  var error: js.UndefOr[Status] = js.undefined
   
   /**
     * [Output only] The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/regions-zones/regions-zones#available) or
@@ -24,7 +27,7 @@ trait Operation extends StObject {
   /** The server-assigned ID for the operation. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Which conditions caused the current node pool state. */
+  /** Which conditions caused the current node pool state. Deprecated. Use field error instead. */
   var nodepoolConditions: js.UndefOr[js.Array[StatusCondition]] = js.undefined
   
   /** The operation type. */
@@ -42,7 +45,7 @@ trait Operation extends StObject {
   /** The current status of the operation. */
   var status: js.UndefOr[String] = js.undefined
   
-  /** Output only. If an error has occurred, a textual description of the error. */
+  /** Output only. If an error has occurred, a textual description of the error. Deprecated. Use the field error instead. */
   var statusMessage: js.UndefOr[String] = js.undefined
   
   /** Server-defined URL for the target of the operation. */
@@ -67,7 +70,7 @@ object Operation {
     
     inline def setClusterConditionsUndefined: Self = StObject.set(x, "clusterConditions", js.undefined)
     
-    inline def setClusterConditionsVarargs(value: StatusCondition*): Self = StObject.set(x, "clusterConditions", js.Array(value :_*))
+    inline def setClusterConditionsVarargs(value: StatusCondition*): Self = StObject.set(x, "clusterConditions", js.Array(value*))
     
     inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
@@ -76,6 +79,10 @@ object Operation {
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -89,7 +96,7 @@ object Operation {
     
     inline def setNodepoolConditionsUndefined: Self = StObject.set(x, "nodepoolConditions", js.undefined)
     
-    inline def setNodepoolConditionsVarargs(value: StatusCondition*): Self = StObject.set(x, "nodepoolConditions", js.Array(value :_*))
+    inline def setNodepoolConditionsVarargs(value: StatusCondition*): Self = StObject.set(x, "nodepoolConditions", js.Array(value*))
     
     inline def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     

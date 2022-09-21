@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PhysicsImpostor")
 @js.native
-class PhysicsImpostor protected ()
+open class PhysicsImpostor protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsImpostor {
   /**
     * Initializes the physics imposter
     * @param object The physics-enabled object used as the physics imposter
-    * @param type The type of the physics imposter
+    * @param type The type of the physics imposter. Types are available as static members of this class.
     * @param _options The options for the physics imposter
     * @param _scene The Babylon scene
     */
@@ -144,7 +144,7 @@ object PhysicsImpostor {
   inline def IDENTITY_QUATERNION_=(x: typings.babylonjs.BABYLON.Quaternion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY_QUATERNION")(x.asInstanceOf[js.Any])
   
   /**
-    * Mesh-imposter type
+    * Mesh-imposter type (Only available to objects with vertices data)
     */
   @JSGlobal("BABYLON.PhysicsImpostor.MeshImpostor")
   @js.native
@@ -199,13 +199,13 @@ object PhysicsImpostor {
   def SphereImpostor: Double = js.native
   inline def SphereImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SphereImpostor")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("BABYLON.PhysicsImpostor._tmpQuat")
+  @JSGlobal("BABYLON.PhysicsImpostor._TmpQuat")
   @js.native
-  def _tmpQuat: js.Any = js.native
-  inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+  def _TmpQuat: Any = js.native
+  inline def _TmpQuat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpQuat")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("BABYLON.PhysicsImpostor._tmpVecs")
+  @JSGlobal("BABYLON.PhysicsImpostor._TmpVecs")
   @js.native
-  def _tmpVecs: js.Any = js.native
-  inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+  def _TmpVecs: Any = js.native
+  inline def _TmpVecs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpVecs")(x.asInstanceOf[js.Any])
 }

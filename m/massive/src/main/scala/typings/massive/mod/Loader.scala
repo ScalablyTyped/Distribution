@@ -33,31 +33,31 @@ object Loader {
     
     inline def setAllowedSchemasUndefined: Self = StObject.set(x, "allowedSchemas", js.undefined)
     
-    inline def setAllowedSchemasVarargs(value: String*): Self = StObject.set(x, "allowedSchemas", js.Array(value :_*))
+    inline def setAllowedSchemasVarargs(value: String*): Self = StObject.set(x, "allowedSchemas", js.Array(value*))
     
     inline def setBlacklist(value: String | js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     
     inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
-    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
     
     inline def setExceptions(value: String | js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
     inline def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     
-    inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
+    inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value*))
     
     inline def setFunctionBlacklist(value: String | js.Array[String]): Self = StObject.set(x, "functionBlacklist", value.asInstanceOf[js.Any])
     
     inline def setFunctionBlacklistUndefined: Self = StObject.set(x, "functionBlacklist", js.undefined)
     
-    inline def setFunctionBlacklistVarargs(value: String*): Self = StObject.set(x, "functionBlacklist", js.Array(value :_*))
+    inline def setFunctionBlacklistVarargs(value: String*): Self = StObject.set(x, "functionBlacklist", js.Array(value*))
     
     inline def setFunctionWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "functionWhitelist", value.asInstanceOf[js.Any])
     
     inline def setFunctionWhitelistUndefined: Self = StObject.set(x, "functionWhitelist", js.undefined)
     
-    inline def setFunctionWhitelistVarargs(value: String*): Self = StObject.set(x, "functionWhitelist", js.Array(value :_*))
+    inline def setFunctionWhitelistVarargs(value: String*): Self = StObject.set(x, "functionWhitelist", js.Array(value*))
     
     inline def setScripts(value: String): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
@@ -67,6 +67,6 @@ object Loader {
     
     inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
-    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
   }
 }

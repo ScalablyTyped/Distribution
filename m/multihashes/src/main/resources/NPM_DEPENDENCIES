@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "multihashes" : "4.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "multihashes" : "4.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

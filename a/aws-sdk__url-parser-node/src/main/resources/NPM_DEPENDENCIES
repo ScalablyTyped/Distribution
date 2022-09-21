@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/url-parser-node" : "1.0.0-rc.7"
+      "@aws-sdk/url-parser-node" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/url-parser-node" : "1.0.0-rc.7"
+      "@aws-sdk/url-parser-node" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -73,20 +73,20 @@ object anon {
   
   trait Crop extends StObject {
     
-    var crop: Point
+    var crop: X
     
     var zoom: Double
   }
   object Crop {
     
-    inline def apply(crop: Point, zoom: Double): Crop = {
+    inline def apply(crop: X, zoom: Double): Crop = {
       val __obj = js.Dynamic.literal(crop = crop.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
       __obj.asInstanceOf[Crop]
     }
     
     extension [Self <: Crop](x: Self) {
       
-      inline def setCrop(value: Point): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: X): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
       inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
@@ -113,6 +113,25 @@ object anon {
     }
   }
   
+  trait ShouldUpdatePosition extends StObject {
+    
+    var shouldUpdatePosition: js.UndefOr[Boolean] = js.undefined
+  }
+  object ShouldUpdatePosition {
+    
+    inline def apply(): ShouldUpdatePosition = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShouldUpdatePosition]
+    }
+    
+    extension [Self <: ShouldUpdatePosition](x: Self) {
+      
+      inline def setShouldUpdatePosition(value: Boolean): Self = StObject.set(x, "shouldUpdatePosition", value.asInstanceOf[js.Any])
+      
+      inline def setShouldUpdatePositionUndefined: Self = StObject.set(x, "shouldUpdatePosition", js.undefined)
+    }
+  }
+  
   trait X extends StObject {
     
     var x: Double
@@ -131,6 +150,27 @@ object anon {
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Zoom extends StObject {
+    
+    var crop: Point
+    
+    var zoom: Double
+  }
+  object Zoom {
+    
+    inline def apply(crop: Point, zoom: Double): Zoom = {
+      val __obj = js.Dynamic.literal(crop = crop.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Zoom]
+    }
+    
+    extension [Self <: Zoom](x: Self) {
+      
+      inline def setCrop(value: Point): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
   }
 }

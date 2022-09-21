@@ -21,7 +21,7 @@ trait UpdateFlowRequest extends StObject {
     */
   var flowName: FlowName
   
-  var sourceFlowConfig: js.UndefOr[SourceFlowConfig] = js.undefined
+  var sourceFlowConfig: SourceFlowConfig
   
   /**
     *  A list of tasks that Amazon AppFlow performs while transferring the data in the flow run. 
@@ -38,10 +38,11 @@ object UpdateFlowRequest {
   inline def apply(
     destinationFlowConfigList: DestinationFlowConfigList,
     flowName: FlowName,
+    sourceFlowConfig: SourceFlowConfig,
     tasks: Tasks,
     triggerConfig: TriggerConfig
   ): UpdateFlowRequest = {
-    val __obj = js.Dynamic.literal(destinationFlowConfigList = destinationFlowConfigList.asInstanceOf[js.Any], flowName = flowName.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], triggerConfig = triggerConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destinationFlowConfigList = destinationFlowConfigList.asInstanceOf[js.Any], flowName = flowName.asInstanceOf[js.Any], sourceFlowConfig = sourceFlowConfig.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], triggerConfig = triggerConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFlowRequest]
   }
   
@@ -53,17 +54,15 @@ object UpdateFlowRequest {
     
     inline def setDestinationFlowConfigList(value: DestinationFlowConfigList): Self = StObject.set(x, "destinationFlowConfigList", value.asInstanceOf[js.Any])
     
-    inline def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = StObject.set(x, "destinationFlowConfigList", js.Array(value :_*))
+    inline def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = StObject.set(x, "destinationFlowConfigList", js.Array(value*))
     
     inline def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
     
     inline def setSourceFlowConfig(value: SourceFlowConfig): Self = StObject.set(x, "sourceFlowConfig", value.asInstanceOf[js.Any])
     
-    inline def setSourceFlowConfigUndefined: Self = StObject.set(x, "sourceFlowConfig", js.undefined)
-    
     inline def setTasks(value: Tasks): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value*))
     
     inline def setTriggerConfig(value: TriggerConfig): Self = StObject.set(x, "triggerConfig", value.asInstanceOf[js.Any])
   }

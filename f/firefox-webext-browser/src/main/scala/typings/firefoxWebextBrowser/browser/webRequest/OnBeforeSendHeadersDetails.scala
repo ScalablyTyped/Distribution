@@ -100,7 +100,7 @@ object OnBeforeSendHeadersDetails {
     
     inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
-    inline def setRequestHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+    inline def setRequestHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

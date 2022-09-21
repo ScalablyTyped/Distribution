@@ -1,5 +1,6 @@
 package typings.roslib
 
+import typings.eventemitter2.mod.EventEmitter2
 import typings.roslib.anon.ActionName
 import typings.roslib.anon.AngularThres
 import typings.roslib.anon.Compression
@@ -16,6 +17,15 @@ import typings.roslib.roslibNumbers.`0`
 import typings.roslib.roslibNumbers.`1`
 import typings.roslib.roslibNumbers.`2`
 import typings.roslib.roslibNumbers.`3`
+import typings.roslib.roslibStrings.close
+import typings.roslib.roslibStrings.connection
+import typings.roslib.roslibStrings.error
+import typings.roslib.roslibStrings.socketDotio
+import typings.roslib.roslibStrings.websocket
+import typings.roslib.roslibStrings.workersocket
+import typings.std.Event
+import typings.std.RTCDataChannelInit
+import typings.std.RTCPeerConnection
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +35,7 @@ object mod {
   
   @JSImport("roslib", "ActionClient")
   @js.native
-  class ActionClient protected () extends StObject {
+  open class ActionClient protected () extends StObject {
     /**
       * An actionlib action client.
       *
@@ -41,6 +51,9 @@ object mod {
       *   * serverName - the action server name, like /fibonacci
       *   * actionName - the action message name, like 'actionlib_tutorials/FibonacciAction'
       *   * timeout - the timeout length when connecting to the action server
+      *   * omitFeedback - the boolean flag to indicate whether to omit the feedback channel or not
+      *   * omitStatus - the boolean flag to indicate whether to omit the status channel or not
+      *   * omitResult - the boolean flag to indicate whether to omit the result channel or not
       */
     def this(options: ActionName) = this()
     
@@ -48,11 +61,16 @@ object mod {
       * Cancel all goals associated with this ActionClient.
       */
     def cancel(): Unit = js.native
+    
+    /**
+      * Unsubscribe and unadvertise all topics associated with this ActionClient.
+      */
+    def dispose(): Unit = js.native
   }
   
   @JSImport("roslib", "Goal")
   @js.native
-  class Goal protected () extends StObject {
+  open class Goal protected () extends StObject {
     /**
       * An actionlib goal goal is associated with an action server.
       *
@@ -77,7 +95,7 @@ object mod {
       * @param eventName Name of event ('timeout', 'status', 'feedback', 'result')
       * @param callback Callback function executed on connected event
       */
-    def on(eventName: String, callback: js.Function1[/* event */ js.Any, Unit]): Unit = js.native
+    def on(eventName: String, callback: js.Function1[/* event */ Any, Unit]): Unit = js.native
     
     /**
       * Send the goal to the action server.
@@ -90,19 +108,19 @@ object mod {
   
   @JSImport("roslib", "Message")
   @js.native
-  class Message protected () extends StObject {
+  open class Message protected () extends StObject {
     /**
       * Message objects are used for publishing and subscribing to and from topics.
       *
       * @constructor
       * @param values - object matching the fields defined in the .msg definition file
       */
-    def this(values: js.Any) = this()
+    def this(values: Any) = this()
   }
   
   @JSImport("roslib", "Param")
   @js.native
-  class Param protected () extends StObject {
+  open class Param protected () extends StObject {
     /**
       * A ROS parameter.
       *
@@ -116,7 +134,7 @@ object mod {
     /**
       * Delete this parameter on the ROS server.
       */
-    def delete(callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+    def delete(callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
     
     /**
       * Fetches the value of the param.
@@ -124,7 +142,7 @@ object mod {
       * @param callback - function with the following params:
       *  * value - the value of the param from ROS.
       */
-    def get(callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+    def get(callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
     
     /**
       * Sets the value of the param in ROS.
@@ -133,8 +151,8 @@ object mod {
       * @param callback - function with params:
       *   * response - the response from the service request
       */
-    def set(value: js.Any): Unit = js.native
-    def set(value: js.Any, callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+    def set(value: Any): Unit = js.native
+    def set(value: Any, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
   }
   
   @JSImport("roslib", "Pose")
@@ -147,7 +165,7 @@ object mod {
     *   * position - the Vector3 describing the position
     *   * orientation - the ROSLIB.Quaternion describing the orientation
     */
-  class Pose () extends StObject {
+  open class Pose () extends StObject {
     def this(options: Orientation) = this()
     
     /**
@@ -174,7 +192,7 @@ object mod {
     *   * z - the z value
     *   * w - the w value
     */
-  class Quaternion ()
+  open class Quaternion ()
     extends StObject
        with QuaternionLike {
     def this(options: W) = this()
@@ -221,7 +239,7 @@ object mod {
   
   @JSImport("roslib", "Ros")
   @js.native
-  class Ros protected () extends StObject {
+  open class Ros protected () extends EventEmitter2 {
     /**
       * Manages connection to the server and all interactions with ROS.
       *
@@ -236,7 +254,7 @@ object mod {
       * @param options - possible keys include:
       *   * url (optional) - (can be specified later with `connect`) the WebSocket URL for rosbridge or the node server url to connect using socket.io (if socket.io exists in the page) <br>
       *   * groovyCompatibility - don't use interfaces that changed after the last groovy release or rosbridge_suite and related tools (defaults to true)
-      *   * transportLibrary (optional) - one of 'websocket' (default), 'socket.io' or RTCPeerConnection instance controlling how the connection is created in `connect`.
+      *   * transportLibrary (optional) - one of 'websocket', 'workersocket' (default), 'socket.io' or RTCPeerConnection instance controlling how the connection is created in `connect`.
       *   * transportOptions (optional) - the options to use use when creating a connection. Currently only used if `transportLibrary` is RTCPeerConnection.
       */
     def this(options: GroovyCompatibility) = this()
@@ -258,7 +276,7 @@ object mod {
       * Sends the message over the WebSocket, but queues the message up if not yet
       * connected.
       */
-    def callOnConnection(message: js.Any): Unit = js.native
+    def callOnConnection(message: Any): Unit = js.native
     
     /**
       * Disconnect from the WebSocket server.
@@ -277,7 +295,7 @@ object mod {
       *
       * @param defs - array of type_def dictionary
       */
-    def decodeTypeDefs(defs: js.Any): Unit = js.native
+    def decodeTypeDefs(defs: Any): Unit = js.native
     
     /**
       * Retrieves list of actionlib servers in ROS as an array.
@@ -290,7 +308,7 @@ object mod {
     def getActionServers(callback: js.Function1[/* action_servers */ js.Array[String], Unit]): Unit = js.native
     def getActionServers(
       callback: js.Function1[/* action_servers */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -302,11 +320,11 @@ object mod {
       * @param failedCallback - the callback function when the ros call failed (optional). Params:
       *   * error - the error message reported by ROS
       */
-    def getMessageDetails(message: Message, callback: js.Function1[/* detail */ js.Any, Unit]): Unit = js.native
+    def getMessageDetails(message: Message, callback: js.Function1[/* detail */ Any, Unit]): Unit = js.native
     def getMessageDetails(
       message: Message,
-      callback: js.Function1[/* detail */ js.Any, Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      callback: js.Function1[/* detail */ Any, Unit],
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -320,7 +338,7 @@ object mod {
     def getNodes(callback: js.Function1[/* nodes */ js.Array[String], Unit]): Unit = js.native
     def getNodes(
       callback: js.Function1[/* nodes */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -334,7 +352,7 @@ object mod {
     def getParams(callback: js.Function1[/* params */ js.Array[String], Unit]): Unit = js.native
     def getParams(
       callback: js.Function1[/* params */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -350,7 +368,7 @@ object mod {
     def getServiceRequestDetails(
       service: String,
       callback: js.Function1[/* type */ String, Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -366,7 +384,7 @@ object mod {
     def getServiceType(
       service: String,
       callback: js.Function1[/* type */ String, Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -380,7 +398,7 @@ object mod {
     def getServices(callback: js.Function1[/* services */ js.Array[String], Unit]): Unit = js.native
     def getServices(
       callback: js.Function1[/* services */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -396,7 +414,7 @@ object mod {
     def getServicesForType(
       serviceType: String,
       callback: js.Function1[/* services */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -412,7 +430,7 @@ object mod {
     def getTopicType(
       topic: String,
       callback: js.Function1[/* type */ String, Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -427,7 +445,7 @@ object mod {
     def getTopics(callback: js.Function1[/* topics */ Topics, Unit]): Unit = js.native
     def getTopics(
       callback: js.Function1[/* topics */ Topics, Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -443,15 +461,22 @@ object mod {
     def getTopicsForType(
       topicType: String,
       callback: js.Function1[/* topics */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
-    def on(eventName: String, callback: js.Function1[/* event */ js.Any, Unit]): Unit = js.native
+    val isConnected: Boolean = js.native
+    
+    def on(eventName: connection | close | error, callback: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(eventName: String, callback: js.Function1[/* event */ Any, Unit]): this.type = js.native
+    
+    val transportLibrary: websocket | workersocket | socketDotio | RTCPeerConnection = js.native
+    
+    val transportOptions: RTCDataChannelInit | js.Object = js.native
   }
   
   @JSImport("roslib", "Service")
   @js.native
-  class Service protected () extends StObject {
+  open class Service[TServiceRequest, TServiceResponse] protected () extends StObject {
     /**
       * A ROS service client.
       *
@@ -470,7 +495,7 @@ object mod {
       *   * request - the service request data
       *   * response - the data which should be sent back to the caller
       */
-    def advertise(callback: js.Function2[/* request */ js.Any, /* response */ js.Any, Unit]): Unit = js.native
+    def advertise(callback: js.Function2[/* request */ TServiceRequest, /* response */ TServiceResponse, Unit]): Unit = js.native
     
     /**
       * Calls the service. Returns the service response in the callback.
@@ -481,11 +506,11 @@ object mod {
       * @param failedCallback - the callback function when the service call failed (optional). Params:
       *   * error - the error message reported by ROS
       */
-    def callService(request: ServiceRequest, callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+    def callService(request: TServiceRequest, callback: js.Function1[/* response */ TServiceResponse, Unit]): Unit = js.native
     def callService(
-      request: ServiceRequest,
-      callback: js.Function1[/* response */ js.Any, Unit],
-      failedCallback: js.Function1[/* error */ js.Any, Unit]
+      request: TServiceRequest,
+      callback: js.Function1[/* response */ TServiceResponse, Unit],
+      failedCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     // getter
@@ -508,8 +533,8 @@ object mod {
     * @constructor
     * @param values - object matching the fields defined in the .srv definition file
     */
-  class ServiceRequest () extends StObject {
-    def this(values: js.Any) = this()
+  open class ServiceRequest () extends StObject {
+    def this(values: Any) = this()
   }
   
   @JSImport("roslib", "ServiceResponse")
@@ -520,13 +545,13 @@ object mod {
     * @constructor
     * @param values - object matching the fields defined in the .srv definition file
     */
-  class ServiceResponse () extends StObject {
-    def this(values: js.Any) = this()
+  open class ServiceResponse () extends StObject {
+    def this(values: Any) = this()
   }
   
   @JSImport("roslib", "TFClient")
   @js.native
-  class TFClient protected () extends StObject {
+  open class TFClient protected () extends StObject {
     /**
       * A TF Client that listens to TFs from tf2_web_republisher.
       *
@@ -554,13 +579,13 @@ object mod {
       *
       * @param response - the service response containing the topic name
       */
-    def processResponse(response: js.Any): Unit = js.native
+    def processResponse(response: Any): Unit = js.native
     
     /**
       * Process the incoming TF message and send them out using the callback functions
       * @param tf - the TF message from the server
       */
-    def processTfArray(tf: js.Any): Unit = js.native
+    def processTfArray(tf: Any): Unit = js.native
     
     /**
       * Subscribe to the given TF frame.
@@ -587,7 +612,7 @@ object mod {
   
   @JSImport("roslib", "Topic")
   @js.native
-  class Topic protected () extends StObject {
+  open class Topic[TMessage] protected () extends EventEmitter2 {
     /**
       * Publish and/or subscribe to a topic in ROS.
       *
@@ -624,7 +649,7 @@ object mod {
       *
       * @param message - A ROSLIB.Message object.
       */
-    def publish(message: Message): Unit = js.native
+    def publish(message: TMessage): Unit = js.native
     
     /**
       * Every time a message is published for the given topic, the callback
@@ -633,7 +658,7 @@ object mod {
       * @param callback - function with the following params:
       *   * message - the published message
       */
-    def subscribe(callback: js.Function1[/* message */ Message, Unit]): Unit = js.native
+    def subscribe(callback: js.Function1[/* message */ TMessage, Unit]): Unit = js.native
     
     /**
       * Unregisters as a publisher for the topic.
@@ -650,7 +675,7 @@ object mod {
       *     * unsubscribe, just stop emitting to the passed listener
       */
     def unsubscribe(): Unit = js.native
-    def unsubscribe(callback: js.Function1[/* callback */ js.Function1[/* message */ Message, Unit], Unit]): Unit = js.native
+    def unsubscribe(callback: js.Function1[/* message */ TMessage, Unit]): Unit = js.native
   }
   
   @JSImport("roslib", "Transform")
@@ -663,7 +688,7 @@ object mod {
     *   * translation - the Vector3 describing the translation
     *   * rotation - the ROSLIB.Quaternion describing the rotation
     */
-  class Transform () extends StObject {
+  open class Transform () extends StObject {
     def this(options: Rotation) = this()
     
     var rotation: Quaternion = js.native
@@ -690,7 +715,7 @@ object mod {
   
   @JSImport("roslib", "UrdfBox")
   @js.native
-  class UrdfBox protected ()
+  open class UrdfBox protected ()
     extends StObject
        with UrdfGeometry {
     /**
@@ -709,7 +734,7 @@ object mod {
   
   @JSImport("roslib", "UrdfColor")
   @js.native
-  class UrdfColor protected () extends StObject {
+  open class UrdfColor protected () extends StObject {
     /**
       * A Color element in a URDF.
       *
@@ -730,7 +755,7 @@ object mod {
   
   @JSImport("roslib", "UrdfCylinder")
   @js.native
-  class UrdfCylinder protected ()
+  open class UrdfCylinder protected ()
     extends StObject
        with UrdfGeometry {
     /**
@@ -751,7 +776,7 @@ object mod {
   
   @JSImport("roslib", "UrdfJoint")
   @js.native
-  class UrdfJoint protected () extends StObject {
+  open class UrdfJoint protected () extends StObject {
     /**
       * A Joint element in a URDF.
       *
@@ -776,7 +801,7 @@ object mod {
   
   @JSImport("roslib", "UrdfLink")
   @js.native
-  class UrdfLink protected () extends StObject {
+  open class UrdfLink protected () extends StObject {
     /**
       * A Link element in a URDF.
       *
@@ -793,7 +818,7 @@ object mod {
   
   @JSImport("roslib", "UrdfMaterial")
   @js.native
-  class UrdfMaterial protected () extends StObject {
+  open class UrdfMaterial protected () extends StObject {
     /**
       * A Material element in a URDF.
       *
@@ -814,7 +839,7 @@ object mod {
   
   @JSImport("roslib", "UrdfMesh")
   @js.native
-  class UrdfMesh protected ()
+  open class UrdfMesh protected ()
     extends StObject
        with UrdfGeometry {
     /**
@@ -835,7 +860,7 @@ object mod {
   
   @JSImport("roslib", "UrdfModel")
   @js.native
-  class UrdfModel protected () extends StObject {
+  open class UrdfModel protected () extends StObject {
     /**
       * A URDF Model can be used to parse a given URDF into the appropriate elements.
       *
@@ -856,7 +881,7 @@ object mod {
   
   @JSImport("roslib", "UrdfSphere")
   @js.native
-  class UrdfSphere protected ()
+  open class UrdfSphere protected ()
     extends StObject
        with UrdfGeometry {
     /**
@@ -875,7 +900,7 @@ object mod {
   
   @JSImport("roslib", "UrdfVisual")
   @js.native
-  class UrdfVisual protected () extends StObject {
+  open class UrdfVisual protected () extends StObject {
     /**
       * A Visual element in a URDF.
       *
@@ -903,7 +928,7 @@ object mod {
     *   * y - the y value
     *   * z - the z value
     */
-  class Vector3 ()
+  open class Vector3 ()
     extends StObject
        with Vector3Like {
     def this(options: X) = this()

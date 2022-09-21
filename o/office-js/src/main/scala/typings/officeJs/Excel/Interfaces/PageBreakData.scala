@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PageBreakData extends StObject {
   
   /**
+    * Specifies the column index for the page break.
     *
-    * Specifies the column index for the page break
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies the row index for the page break.
     *
-    * Specifies the row index for the page break
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rowIndex: js.UndefOr[Double] = js.undefined

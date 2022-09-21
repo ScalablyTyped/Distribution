@@ -1,5 +1,6 @@
 package typings.roads
 
+import typings.roads.roadMod.Context
 import typings.roads.roadMod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,5 +12,5 @@ object applyToContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(key: String, `val`: js.Any): Middleware = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Middleware]
+  inline def build(key: String, `val`: Any): Middleware[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Middleware[Context]]
 }

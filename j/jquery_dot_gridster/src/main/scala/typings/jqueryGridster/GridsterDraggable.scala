@@ -14,7 +14,7 @@ trait GridsterDraggable extends StObject {
   
   var handle: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[Any] = js.undefined
   
   var limit: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +45,7 @@ object GridsterDraggable {
     
     inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     

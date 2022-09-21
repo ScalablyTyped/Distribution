@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPrincipalsRequest extends StObject {
   
   /**
-    * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+    * Specifies the total number of results that you want included on each page of the response. If you do not include this parameter, it defaults to a value that is specific to the operation. If additional items exist beyond the number you specify, the NextToken response element is returned with a value (not null). Include the specified value as the NextToken request parameter in the next call to the operation to get the next part of the results. Note that the service might return fewer results than the maximum even when there are more results available. You should check NextToken after every operation to ensure that you receive all of the results.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
-    * The token for the next page of results.
+    * Specifies that you want to receive the next page of results. Valid only if you received a NextToken response in the previous request. If you did, it indicates that more output is available. Set this parameter to the value provided by the previous call's NextToken response to request the next page of results.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The principals.
+    * Specifies that you want to list information for only the listed principals. You can include the following values:   An Amazon Web Services account ID, for example: 123456789012    An Amazon Resoure Name (ARN) of an organization in Organizations, for example: organizations::123456789012:organization/o-exampleorgid    An ARN of an organizational unit (OU) in Organizations, for example: organizations::123456789012:ou/o-exampleorgid/ou-examplerootid-exampleouid123    An ARN of an IAM role, for example: iam::123456789012:role/rolename    An ARN of an IAM user, for example: iam::123456789012user/username     Not all resource types can be shared with IAM roles and users. For more information, see Sharing with IAM roles and users in the Resource Access Manager User Guide. 
     */
   var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the resource.
+    * Specifies that you want to list principal information for the resource share with the specified Amazon Resoure Name (ARN).
     */
   var resourceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of owner.
+    * Specifies that you want to list information for only resource shares that match the following:     SELF  – principals that your account is sharing resources with     OTHER-ACCOUNTS  – principals that are sharing resources with your account  
     */
   var resourceOwner: ResourceOwner
   
   /**
-    * The Amazon Resource Names (ARN) of the resource shares.
+    * Specifies that you want to list information for only principals associated with the resource shares specified by a list the Amazon Resource Names (ARNs).
     */
   var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
   
   /**
-    * The resource type. Valid values: codebuild:Project | codebuild:ReportGroup | ec2:CapacityReservation | ec2:DedicatedHost | ec2:Subnet | ec2:TrafficMirrorTarget | ec2:TransitGateway | imagebuilder:Component | imagebuilder:Image | imagebuilder:ImageRecipe | license-manager:LicenseConfiguration I resource-groups:Group | rds:Cluster | route53resolver:ResolverRule 
+    * Specifies that you want to list information for only principals associated with resource shares that include the specified resource type. For a list of valid values, query the ListResourceTypes operation.
     */
   var resourceType: js.UndefOr[String] = js.undefined
 }
@@ -62,7 +62,7 @@ object ListPrincipalsRequest {
     
     inline def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
-    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value*))
     
     inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
@@ -74,7 +74,7 @@ object ListPrincipalsRequest {
     
     inline def setResourceShareArnsUndefined: Self = StObject.set(x, "resourceShareArns", js.undefined)
     
-    inline def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value :_*))
+    inline def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value*))
     
     inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

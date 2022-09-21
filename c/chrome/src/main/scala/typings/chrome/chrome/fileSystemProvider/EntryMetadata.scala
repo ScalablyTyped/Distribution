@@ -1,6 +1,5 @@
 package typings.chrome.chrome.fileSystemProvider
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait EntryMetadata extends StObject {
   var mimeType: js.UndefOr[String] = js.undefined
   
   /** The last modified time of this entry. */
-  var modificationTime: Date
+  var modificationTime: js.Date
   
   /** Name of this entry (not full path name). Must not contain '/'. For root it must be empty. */
   var name: String
@@ -27,7 +26,7 @@ trait EntryMetadata extends StObject {
 }
 object EntryMetadata {
   
-  inline def apply(isDirectory: Boolean, modificationTime: Date, name: String, size: Double): EntryMetadata = {
+  inline def apply(isDirectory: Boolean, modificationTime: js.Date, name: String, size: Double): EntryMetadata = {
     val __obj = js.Dynamic.literal(isDirectory = isDirectory.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryMetadata]
   }
@@ -40,7 +39,7 @@ object EntryMetadata {
     
     inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    inline def setModificationTime(value: Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+    inline def setModificationTime(value: js.Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

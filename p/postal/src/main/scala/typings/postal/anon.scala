@@ -39,9 +39,9 @@ object anon {
   
   trait Callback extends StObject {
     
-    def callback(data: js.Any, envelope: IEnvelope[js.Any]): Unit
+    def callback(data: Any, envelope: IEnvelope[Any]): Unit
     @JSName("callback")
-    var callback_Original: ICallback[js.Any]
+    var callback_Original: ICallback[Any]
     
     var channel: js.UndefOr[String] = js.undefined
     
@@ -49,14 +49,14 @@ object anon {
   }
   object Callback {
     
-    inline def apply(callback: (js.Any, /* envelope */ IEnvelope[js.Any]) => Unit, topic: String): Callback = {
+    inline def apply(callback: (Any, /* envelope */ IEnvelope[Any]) => Unit, topic: String): Callback = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback]
     }
     
     extension [Self <: Callback](x: Self) {
       
-      inline def setCallback(value: (js.Any, /* envelope */ IEnvelope[js.Any]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (Any, /* envelope */ IEnvelope[Any]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -70,7 +70,7 @@ object anon {
     
     var channel: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var topic: js.UndefOr[String] = js.undefined
   }
@@ -87,7 +87,7 @@ object anon {
       
       inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       

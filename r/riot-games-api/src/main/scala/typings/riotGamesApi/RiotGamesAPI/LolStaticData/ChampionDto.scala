@@ -69,13 +69,13 @@ object ChampionDto {
     
     inline def setAllytips(value: js.Array[String]): Self = StObject.set(x, "allytips", value.asInstanceOf[js.Any])
     
-    inline def setAllytipsVarargs(value: String*): Self = StObject.set(x, "allytips", js.Array(value :_*))
+    inline def setAllytipsVarargs(value: String*): Self = StObject.set(x, "allytips", js.Array(value*))
     
     inline def setBlurb(value: String): Self = StObject.set(x, "blurb", value.asInstanceOf[js.Any])
     
     inline def setEnemytips(value: js.Array[String]): Self = StObject.set(x, "enemytips", value.asInstanceOf[js.Any])
     
-    inline def setEnemytipsVarargs(value: String*): Self = StObject.set(x, "enemytips", js.Array(value :_*))
+    inline def setEnemytipsVarargs(value: String*): Self = StObject.set(x, "enemytips", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -95,21 +95,21 @@ object ChampionDto {
     
     inline def setRecommended(value: js.Array[RecommendedDto]): Self = StObject.set(x, "recommended", value.asInstanceOf[js.Any])
     
-    inline def setRecommendedVarargs(value: RecommendedDto*): Self = StObject.set(x, "recommended", js.Array(value :_*))
+    inline def setRecommendedVarargs(value: RecommendedDto*): Self = StObject.set(x, "recommended", js.Array(value*))
     
     inline def setSkins(value: js.Array[SkinDto]): Self = StObject.set(x, "skins", value.asInstanceOf[js.Any])
     
-    inline def setSkinsVarargs(value: SkinDto*): Self = StObject.set(x, "skins", js.Array(value :_*))
+    inline def setSkinsVarargs(value: SkinDto*): Self = StObject.set(x, "skins", js.Array(value*))
     
     inline def setSpells(value: js.Array[ChampionSpellDto]): Self = StObject.set(x, "spells", value.asInstanceOf[js.Any])
     
-    inline def setSpellsVarargs(value: ChampionSpellDto*): Self = StObject.set(x, "spells", js.Array(value :_*))
+    inline def setSpellsVarargs(value: ChampionSpellDto*): Self = StObject.set(x, "spells", js.Array(value*))
     
     inline def setStats(value: StatsDto): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

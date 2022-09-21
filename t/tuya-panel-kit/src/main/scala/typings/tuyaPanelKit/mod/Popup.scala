@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "Popup")
 @js.native
-class Popup protected ()
-  extends Component[PopupProps, js.Object, js.Any] {
+open class Popup protected ()
+  extends Component[PopupProps, js.Object, Any] {
   def this(props: PopupProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: PopupProps, context: js.Any) = this()
+  def this(props: PopupProps, context: Any) = this()
 }
 /* static members */
 object Popup {

@@ -8,7 +8,7 @@ object urlMod {
   
   @JSImport("@devexpress/utils/lib/utils/url", "Url")
   @js.native
-  class Url () extends StObject
+  open class Url () extends StObject
   /* static members */
   object Url {
     
@@ -20,26 +20,26 @@ object urlMod {
     
     @JSImport("@devexpress/utils/lib/utils/url", "Url.getFrame")
     @js.native
-    def getFrame: js.Any = js.native
-    inline def getFrame_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getFrame")(x.asInstanceOf[js.Any])
+    def getFrame: Any = js.native
+    inline def getFrame_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getFrame")(x.asInstanceOf[js.Any])
     
     inline def navigate(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def navigate(url: String, target: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@devexpress/utils/lib/utils/url", "Url.navigateTo")
     @js.native
-    def navigateTo: js.Any = js.native
-    inline def navigateTo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigateTo")(x.asInstanceOf[js.Any])
+    def navigateTo: Any = js.native
+    inline def navigateTo_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigateTo")(x.asInstanceOf[js.Any])
     
     @JSImport("@devexpress/utils/lib/utils/url", "Url.openInNewWindow")
     @js.native
-    def openInNewWindow: js.Any = js.native
+    def openInNewWindow: Any = js.native
     
     @JSImport("@devexpress/utils/lib/utils/url", "Url.openInNewWindowViaIframe")
     @js.native
-    def openInNewWindowViaIframe: js.Any = js.native
-    inline def openInNewWindowViaIframe_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openInNewWindowViaIframe")(x.asInstanceOf[js.Any])
+    def openInNewWindowViaIframe: Any = js.native
+    inline def openInNewWindowViaIframe_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openInNewWindowViaIframe")(x.asInstanceOf[js.Any])
     
-    inline def openInNewWindow_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openInNewWindow")(x.asInstanceOf[js.Any])
+    inline def openInNewWindow_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openInNewWindow")(x.asInstanceOf[js.Any])
   }
 }

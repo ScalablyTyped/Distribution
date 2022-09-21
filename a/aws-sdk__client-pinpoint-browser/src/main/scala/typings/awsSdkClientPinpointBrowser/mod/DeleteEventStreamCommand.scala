@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "DeleteEventStreamCommand")
 @js.native
-class DeleteEventStreamCommand protected ()
+open class DeleteEventStreamCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.deleteEventStreamCommandMod.DeleteEventStreamCommand {
   def this(input: DeleteEventStreamInput) = this()
 }

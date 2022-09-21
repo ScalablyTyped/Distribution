@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a PivotTable style, which defines style elements by PivotTable region.
   *
-  * Represents a PivotTable Style, which defines style elements by PivotTable region.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait PivotTableStyleLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait PivotTableStyleLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the name of the PivotTable style.
     *
-    * Gets the name of the PivotTableStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if this `PivotTableStyle` object is read-only.
     *
-    * Specifies if this PivotTableStyle object is read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined

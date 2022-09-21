@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("packery", "Packery")
   @js.native
-  class Packery protected () extends StObject {
+  open class Packery protected () extends StObject {
     def this(element: Element) = this()
     def this(element: Element, options: js.Object) = this()
     
@@ -50,7 +50,7 @@ object mod {
       * [bindDraggabillyEvents Bind Draggabilly events, so that the Packery instance will layout around the dragged element]
       * @param {any} draggie [description]
       */
-    def bindDraggabillyEvents(draggie: js.Any): Unit = js.native
+    def bindDraggabillyEvents(draggie: Any): Unit = js.native
     
     /**
       * [bindResize Binds event listener to window resize, so layout is triggered when the browser window is resized]
@@ -61,7 +61,7 @@ object mod {
       * [bindUIDraggableEvents Bind jQuery UI Draggable events, so that the Packery instance will layout around the dragged element]
       * @param {any} elements [jQuery UI]
       */
-    def bindUIDraggableEvents($element: js.Any): Unit = js.native
+    def bindUIDraggableEvents($element: Any): Unit = js.native
     
     /**
       * [data Get the Packery instance from an element. Note this method is of Packery, rather than of a Packery instance]
@@ -91,7 +91,7 @@ object mod {
       * @param  {Element} element [description]
       * @return {any}             [Packery.item]
       */
-    def getItem(element: Element): js.Any = js.native
+    def getItem(element: Element): Any = js.native
     
     /**
       * [getItemElements Get an array of elements used as the Packery instance's items.]
@@ -108,7 +108,7 @@ object mod {
       * [layoutItems Lay out specified items]
       * @param {Array<Packery.items>} items [description]
       */
-    def layoutItems(items: js.Array[js.Any]): Unit = js.native
+    def layoutItems(items: js.Array[Any]): Unit = js.native
     
     /**
       * [off Remove an event listener]

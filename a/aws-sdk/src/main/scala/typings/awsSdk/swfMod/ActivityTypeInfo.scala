@@ -14,12 +14,12 @@ trait ActivityTypeInfo extends StObject {
   /**
     * The date and time this activity type was created through RegisterActivityType.
     */
-  var creationDate: Timestamp
+  var creationDate: js.Date
   
   /**
     * If DEPRECATED, the date and time DeprecateActivityType was called.
     */
-  var deprecationDate: js.UndefOr[Timestamp] = js.undefined
+  var deprecationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the activity type provided in RegisterActivityType.
@@ -33,7 +33,7 @@ trait ActivityTypeInfo extends StObject {
 }
 object ActivityTypeInfo {
   
-  inline def apply(activityType: ActivityType, creationDate: Timestamp, status: RegistrationStatus): ActivityTypeInfo = {
+  inline def apply(activityType: ActivityType, creationDate: js.Date, status: RegistrationStatus): ActivityTypeInfo = {
     val __obj = js.Dynamic.literal(activityType = activityType.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTypeInfo]
   }
@@ -42,9 +42,9 @@ object ActivityTypeInfo {
     
     inline def setActivityType(value: ActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    inline def setDeprecationDate(value: Timestamp): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
+    inline def setDeprecationDate(value: js.Date): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
     
     inline def setDeprecationDateUndefined: Self = StObject.set(x, "deprecationDate", js.undefined)
     

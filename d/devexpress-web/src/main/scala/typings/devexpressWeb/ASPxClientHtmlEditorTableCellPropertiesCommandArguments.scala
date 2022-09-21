@@ -25,7 +25,7 @@ object ASPxClientHtmlEditorTableCellPropertiesCommandArguments {
   
   inline def apply(
     applyForAll: Boolean,
-    selectedElement: js.Any,
+    selectedElement: Any,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorTableCellPropertiesCommandArguments = {
     val __obj = js.Dynamic.literal(applyForAll = applyForAll.asInstanceOf[js.Any], selectedElement = selectedElement.asInstanceOf[js.Any], styleSettings = styleSettings.asInstanceOf[js.Any])

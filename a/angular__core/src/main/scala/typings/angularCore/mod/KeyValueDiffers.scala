@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "KeyValueDiffers")
 @js.native
-class KeyValueDiffers protected () extends StObject {
+open class KeyValueDiffers protected () extends StObject {
   def this(factories: js.Array[KeyValueDifferFactory]) = this()
   
   /**
@@ -14,7 +14,7 @@ class KeyValueDiffers protected () extends StObject {
     */
   var factories: js.Array[KeyValueDifferFactory] = js.native
   
-  def find(kv: js.Any): KeyValueDifferFactory = js.native
+  def find(kv: Any): KeyValueDifferFactory = js.native
 }
 /* static members */
 object KeyValueDiffers {
@@ -47,4 +47,10 @@ object KeyValueDiffers {
     * ```
     */
   inline def extend[S](factories: js.Array[KeyValueDifferFactory]): StaticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(factories.asInstanceOf[js.Any]).asInstanceOf[StaticProvider]
+  
+  /** @nocollapse */
+  @JSImport("@angular/core", "KeyValueDiffers.\u0275prov")
+  @js.native
+  def ɵprov: Any = js.native
+  inline def ɵprov_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

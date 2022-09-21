@@ -1,7 +1,6 @@
 package typings.gulpFilter
 
 import typings.minimatch.mod.IOptions
-import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,12 +22,26 @@ object mod {
   type FileFunction = js.Function1[/* file */ File, Boolean]
   
   // A transform stream with a .restore object
-  @js.native
-  trait Filter
-    extends StObject
-       with ReadWriteStream {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ trait Filter extends StObject {
     
-    var restore: ReadWriteStream = js.native
+    var restore: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  }
+  object Filter {
+    
+    inline def apply(
+      restore: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+    ): Filter = {
+      val __obj = js.Dynamic.literal(restore = restore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Filter]
+    }
+    
+    extension [Self <: Filter](x: Self) {
+      
+      inline def setRestore(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+      ): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
+    }
   }
   
   trait Options

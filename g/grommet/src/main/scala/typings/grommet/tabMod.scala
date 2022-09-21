@@ -1,56 +1,34 @@
 package typings.grommet
 
-import typings.grommet.grommetStrings.title
-import typings.grommet.utilsMod.Omit
-import typings.react.mod.ButtonHTMLAttributes
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.DetailedHTMLProps
+import typings.grommet.utilsMod.A11yTitleType
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/Tab", "Tab")
   @js.native
-  class Tab protected ()
-    extends Component[
-          TabProps & (Omit[
-            DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-            title
-          ]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: TabProps & (Omit[
-            DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-            title
-          ])) = this()
-    def this(
-      props: TabProps & (Omit[
-            DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-            title
-          ]),
-      context: js.Any
-    ) = this()
+  val Tab: FC[TabExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.ButtonHTMLAttributes<std.HTMLButtonElement>, std.HTMLButtonElement>, 'title'> ]: react.react.DetailedHTMLProps<react.react.ButtonHTMLAttributes<std.HTMLButtonElement>, std.HTMLButtonElement>[P]} */ trait TabExtendedProps
+    extends StObject
+       with TabProps
+  object TabExtendedProps {
+    
+    inline def apply(): TabExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabExtendedProps]
+    }
   }
-  @JSImport("grommet/components/Tab", "Tab")
-  @js.native
-  val Tab: ComponentClass[
-    TabProps & (Omit[
-      DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-      title
-    ]), 
-    ComponentState
-  ] = js.native
   
   trait TabProps extends StObject {
+    
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -70,6 +48,10 @@ object tabMod {
     }
     
     extension [Self <: TabProps](x: Self) {
+      
+      inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
+      
+      inline def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

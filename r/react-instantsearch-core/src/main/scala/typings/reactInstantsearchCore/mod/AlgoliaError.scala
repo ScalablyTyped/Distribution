@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AlgoliaError extends StObject {
   
-  var debugData: js.Array[js.Any]
+  var debugData: js.Array[Any]
   
   var message: String
   
@@ -18,16 +18,16 @@ trait AlgoliaError extends StObject {
 }
 object AlgoliaError {
   
-  inline def apply(debugData: js.Array[js.Any], message: String, name: String, stack: String, statusCode: Double): AlgoliaError = {
+  inline def apply(debugData: js.Array[Any], message: String, name: String, stack: String, statusCode: Double): AlgoliaError = {
     val __obj = js.Dynamic.literal(debugData = debugData.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgoliaError]
   }
   
   extension [Self <: AlgoliaError](x: Self) {
     
-    inline def setDebugData(value: js.Array[js.Any]): Self = StObject.set(x, "debugData", value.asInstanceOf[js.Any])
+    inline def setDebugData(value: js.Array[Any]): Self = StObject.set(x, "debugData", value.asInstanceOf[js.Any])
     
-    inline def setDebugDataVarargs(value: js.Any*): Self = StObject.set(x, "debugData", js.Array(value :_*))
+    inline def setDebugDataVarargs(value: Any*): Self = StObject.set(x, "debugData", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

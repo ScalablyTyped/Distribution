@@ -42,13 +42,13 @@ trait DataPackagePropertySet extends StObject {
     * Returns an iterator to enumerate the items in the property set.
     * @return The first item in the DataPackage object.
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
+  def first(): IIterator[IKeyValuePair[Any, Any]]
   
   /**
     * Gets an immutable view of the property set.
     * @return The immutable view.
     */
-  def getView(): IMapView[String, js.Any]
+  def getView(): IMapView[String, Any]
   
   /**
     * Indicates whether the DataPackagePropertySet object contains a specific property.
@@ -63,7 +63,7 @@ trait DataPackagePropertySet extends StObject {
     * @param value The value to insert.
     * @return True if the method replaced a value that already existed for the key; false if this is a new key.
     */
-  def insert(key: String, value: js.Any): Boolean
+  def insert(key: String, value: Any): Boolean
   
   /** Gets or sets a background color for the sharing app's Square30x30Logo . */
   var logoBackgroundColor: Color
@@ -73,7 +73,7 @@ trait DataPackagePropertySet extends StObject {
     * @param key The key.
     * @return The value, if an item with the specified key exists. Otherwise, an error code.
     */
-  def lookup(key: String): js.Any
+  def lookup(key: String): Any
   
   /** Gets or sets the package family name of the source app. */
   var packageFamilyName: String
@@ -107,12 +107,12 @@ object DataPackagePropertySet {
     description: String,
     enterpriseId: String,
     fileTypes: IVector[String],
-    first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
-    getView: () => IMapView[String, js.Any],
+    first: () => IIterator[IKeyValuePair[Any, Any]],
+    getView: () => IMapView[String, Any],
     hasKey: String => Boolean,
-    insert: (String, js.Any) => Boolean,
+    insert: (String, Any) => Boolean,
     logoBackgroundColor: Color,
-    lookup: String => js.Any,
+    lookup: String => Any,
     packageFamilyName: String,
     remove: String => Unit,
     size: Double,
@@ -142,17 +142,17 @@ object DataPackagePropertySet {
     
     inline def setFileTypes(value: IVector[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
-    inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
-    inline def setGetView(value: () => IMapView[String, js.Any]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+    inline def setGetView(value: () => IMapView[String, Any]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
     inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
     
-    inline def setInsert(value: (String, js.Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (String, Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     inline def setLogoBackgroundColor(value: Color): Self = StObject.set(x, "logoBackgroundColor", value.asInstanceOf[js.Any])
     
-    inline def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+    inline def setLookup(value: String => Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     
     inline def setPackageFamilyName(value: String): Self = StObject.set(x, "packageFamilyName", value.asInstanceOf[js.Any])
     

@@ -33,17 +33,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableBorderUpdateData extends StObject {
   
   /**
-    *
     * Gets or sets the table border color.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the type of the table border.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var `type`: js.UndefOr[
@@ -51,9 +51,9 @@ trait TableBorderUpdateData extends StObject {
   ] = js.undefined
   
   /**
-    *
     * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var width: js.UndefOr[scala.Double] = js.undefined

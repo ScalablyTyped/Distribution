@@ -7,18 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaBigQueryModelTraining extends StObject {
   
   /**
-    * [Output-only, Beta] Index of current ML training iteration. Updated
-    * during create model query job to show job progress.
+    * [Output-only, Beta] Index of current ML training iteration. Updated during create model query job to show job progress.
     */
-  var currentIteration: js.UndefOr[Double] = js.undefined
+  var currentIteration: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * [Output-only, Beta] Expected number of iterations for the create model
-    * query job specified as num_iterations in the input query. The actual
-    * total number of iterations may be less than this number due to early
-    * stop.
+    * [Output-only, Beta] Expected number of iterations for the create model query job specified as num_iterations in the input query. The actual total number of iterations may be less than this number due to early stop.
     */
-  var expectedTotalIterations: js.UndefOr[String] = js.undefined
+  var expectedTotalIterations: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBigQueryModelTraining {
   
@@ -31,9 +27,13 @@ object SchemaBigQueryModelTraining {
     
     inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
     
+    inline def setCurrentIterationNull: Self = StObject.set(x, "currentIteration", null)
+    
     inline def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
     
     inline def setExpectedTotalIterations(value: String): Self = StObject.set(x, "expectedTotalIterations", value.asInstanceOf[js.Any])
+    
+    inline def setExpectedTotalIterationsNull: Self = StObject.set(x, "expectedTotalIterations", null)
     
     inline def setExpectedTotalIterationsUndefined: Self = StObject.set(x, "expectedTotalIterations", js.undefined)
   }

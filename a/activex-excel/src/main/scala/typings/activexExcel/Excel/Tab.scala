@@ -17,7 +17,7 @@ trait Tab extends StObject {
   /* private */ @JSName("Excel.Tab_typekey")
   var ExcelDotTab_typekey: Tab
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ThemeColor: XlThemeColor
   
@@ -31,7 +31,7 @@ object Tab {
     ColorIndex: XlColorIndex,
     Creator: XlCreator,
     ExcelDotTab_typekey: Tab,
-    Parent: js.Any,
+    Parent: Any,
     ThemeColor: XlThemeColor,
     TintAndShade: Double
   ): Tab = {
@@ -52,7 +52,7 @@ object Tab {
     
     inline def setExcelDotTab_typekey(value: Tab): Self = StObject.set(x, "Excel.Tab_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setThemeColor(value: XlThemeColor): Self = StObject.set(x, "ThemeColor", value.asInstanceOf[js.Any])
     

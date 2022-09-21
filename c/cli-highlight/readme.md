@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-highlight
 
-Typings are for version 2.1.8
+Typings are for version 2.1.11
 
 ## Library description:
 Syntax highlighting in your terminal
@@ -10,10 +10,10 @@ Syntax highlighting in your terminal
 | ------------------ | :-------------: |
 | Full name          | cli-highlight |
 | Keywords           | terminal, syntax, highlight, color, cli, ansi |
-| # releases         | 12 |
-| # dependents       | 294 |
-| # downloads        | 45228032 |
-| # stars            | 5 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 8023379.333333333 |
+| # stars            | 248.0 |
 
 ## Links
 - [Homepage](https://github.com/felixfbecker/cli-highlight#readme)

@@ -1,9 +1,5 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,25 +9,17 @@ trait ParamsResourceProjectsAgentSearch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional. The maximum number of items to return in a single page. By
-    * default 100 and at most 1000.
+    * Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional. The next_page_token value returned from a previous list
-    * request.
+    * The next_page_token value returned from a previous list request.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The project to list agents from. Format: `projects/<Project ID
-    * or '-'>`.
+    * Required. The project to list agents from. Format: `projects/`.
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -43,10 +31,6 @@ object ParamsResourceProjectsAgentSearch {
   }
   
   extension [Self <: ParamsResourceProjectsAgentSearch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

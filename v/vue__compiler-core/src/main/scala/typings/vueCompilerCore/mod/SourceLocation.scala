@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SourceLocation extends StObject {
   
-  var end: Position2
+  var end: Position
   
   var source: String
   
-  var start: Position2
+  var start: Position
 }
 object SourceLocation {
   
-  inline def apply(end: Position2, source: String, start: Position2): SourceLocation = {
+  inline def apply(end: Position, source: String, start: Position): SourceLocation = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceLocation]
   }
   
   extension [Self <: SourceLocation](x: Self) {
     
-    inline def setEnd(value: Position2): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setStart(value: Position2): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

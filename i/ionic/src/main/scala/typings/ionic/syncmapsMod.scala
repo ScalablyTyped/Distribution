@@ -11,7 +11,7 @@ object syncmapsMod {
   
   @JSImport("ionic/commands/monitoring/syncmaps", "MonitoringSyncSourcemapsCommand")
   @js.native
-  class MonitoringSyncSourcemapsCommand protected () extends Command {
+  open class MonitoringSyncSourcemapsCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def syncSourcemap(

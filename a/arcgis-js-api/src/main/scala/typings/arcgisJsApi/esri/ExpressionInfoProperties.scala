@@ -1,8 +1,9 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.boolean
+import typings.arcgisJsApi.arcgisJsApiStrings.date
 import typings.arcgisJsApi.arcgisJsApiStrings.number
-import typings.arcgisJsApi.arcgisJsApiStrings.string
+import typings.arcgisJsApi.arcgisJsApiStrings.string_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExpressionInfoProperties extends StObject {
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to either a string, number, dictionary, or array.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint Profile](https://developers.arcgis.com/javascript/latest/arcade/#forms).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#expression)
     */
@@ -28,7 +29,7 @@ trait ExpressionInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#returnType)
     */
-  var returnType: js.UndefOr[boolean | number | string] = js.undefined
+  var returnType: js.UndefOr[boolean | date | number | string_] = js.undefined
   
   /**
     * The title used to describe the value returned by the expression.
@@ -54,7 +55,7 @@ object ExpressionInfoProperties {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setReturnType(value: boolean | number | string): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: boolean | date | number | string_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     inline def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     

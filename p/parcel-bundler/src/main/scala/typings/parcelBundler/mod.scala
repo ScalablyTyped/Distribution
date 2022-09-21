@@ -1,10 +1,13 @@
 package typings.parcelBundler
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.parcelBundler.parcelBundlerBooleans.`false`
 import typings.parcelBundler.parcelBundlerBooleans.`true`
 import typings.parcelBundler.parcelBundlerNumbers.`0`
@@ -18,8 +21,6 @@ import typings.parcelBundler.parcelBundlerStrings.buildStart
 import typings.parcelBundler.parcelBundlerStrings.bundled
 import typings.parcelBundler.parcelBundlerStrings.electron
 import typings.parcelBundler.parcelBundlerStrings.node
-import typings.qs.mod.ParsedQs
-import typings.std.Error
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -30,7 +31,7 @@ object mod {
   
   @JSImport("parcel-bundler", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ParcelBundler {
     def this(entryFiles: String) = this()
@@ -75,24 +76,24 @@ object mod {
     }
   }
   
-  type ParcelAsset = js.Any
+  type ParcelAsset = Any
   
   trait ParcelBundle extends StObject {
     
     /**
       * A Set of all assets inside the bundle
       */
-    var assets: Set[js.Any]
+    var assets: Set[Any]
     
     /**
       * A Set of all child bundles
       */
-    var childBundles: Set[js.Any]
+    var childBundles: Set[Any]
     
     /**
       * The entryPoint of the bundle, used for generating the name and gathering assets.
       */
-    var entryAsset: js.Any
+    var entryAsset: Any
     
     /**
       * The name of the bundle (generated using Asset.generateBundleName() of entryAsset)
@@ -107,12 +108,12 @@ object mod {
     /**
       * The parent bundle, is null in case of the entry bundleany
       */
-    var parentBundle: js.UndefOr[js.Any] = js.undefined
+    var parentBundle: js.UndefOr[Any] = js.undefined
     
     /**
       * A Set of all sibling bundles
       */
-    var siblingBundles: Set[js.Any]
+    var siblingBundles: Set[Any]
     
     /**
       * A Map<String(Type: js, css, map, ...), Bundle> of all sibling bundles
@@ -127,12 +128,12 @@ object mod {
   object ParcelBundle {
     
     inline def apply(
-      assets: Set[js.Any],
-      childBundles: Set[js.Any],
-      entryAsset: js.Any,
+      assets: Set[Any],
+      childBundles: Set[Any],
+      entryAsset: Any,
       name: String,
       offsets: Map[ParcelAsset, Double],
-      siblingBundles: Set[js.Any],
+      siblingBundles: Set[Any],
       siblingBundlesMap: Map[String, ParcelBundle],
       `type`: String
     ): ParcelBundle = {
@@ -143,21 +144,21 @@ object mod {
     
     extension [Self <: ParcelBundle](x: Self) {
       
-      inline def setAssets(value: Set[js.Any]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      inline def setAssets(value: Set[Any]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      inline def setChildBundles(value: Set[js.Any]): Self = StObject.set(x, "childBundles", value.asInstanceOf[js.Any])
+      inline def setChildBundles(value: Set[Any]): Self = StObject.set(x, "childBundles", value.asInstanceOf[js.Any])
       
-      inline def setEntryAsset(value: js.Any): Self = StObject.set(x, "entryAsset", value.asInstanceOf[js.Any])
+      inline def setEntryAsset(value: Any): Self = StObject.set(x, "entryAsset", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOffsets(value: Map[ParcelAsset, Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
       
-      inline def setParentBundle(value: js.Any): Self = StObject.set(x, "parentBundle", value.asInstanceOf[js.Any])
+      inline def setParentBundle(value: Any): Self = StObject.set(x, "parentBundle", value.asInstanceOf[js.Any])
       
       inline def setParentBundleUndefined: Self = StObject.set(x, "parentBundle", js.undefined)
       
-      inline def setSiblingBundles(value: Set[js.Any]): Self = StObject.set(x, "siblingBundles", value.asInstanceOf[js.Any])
+      inline def setSiblingBundles(value: Set[Any]): Self = StObject.set(x, "siblingBundles", value.asInstanceOf[js.Any])
       
       inline def setSiblingBundlesMap(value: Map[String, ParcelBundle]): Self = StObject.set(x, "siblingBundlesMap", value.asInstanceOf[js.Any])
       
@@ -174,58 +175,209 @@ object mod {
     
     def bundle(): js.Promise[ParcelBundle] = js.native
     
-    def middleware(): js.Function3[
-        /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], 
-        /* res */ Response[js.Any, Double], 
-        /* next */ NextFunction, 
-        js.Any
-      ] = js.native
+    def middleware(): js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Any] = js.native
     
-    @JSName("off")
-    def off_buildEnd(name: buildEnd, cb: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    @JSName("off")
-    def off_buildError(name: buildError, cb: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    @JSName("off")
-    def off_buildStart(name: buildStart, cb: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    @JSName("off")
-    def off_bundled(name: bundled, cb: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def off(name: buildEnd | bundled | buildStart | buildError, cb: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     @JSName("on")
     def on_buildEnd(name: buildEnd, cb: js.Function0[Unit]): Unit = js.native
     @JSName("on")
-    def on_buildError(name: buildError, cb: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def on_buildError(name: buildError, cb: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     @JSName("on")
     def on_buildStart(name: buildStart, cb: js.Function1[/* entryPoints */ js.Array[String], Unit]): Unit = js.native
     @JSName("on")
     def on_bundled(name: bundled, cb: js.Function1[/* bundle */ ParcelBundle, Unit]): Unit = js.native
     
-    def serve(): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: Double): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: Double, https: Unit, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: Double, https: HttpsOptions): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: Double, https: HttpsOptions, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: Unit, https: Unit, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: Unit, https: HttpsOptions): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: Unit, https: HttpsOptions, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_false(port: Double, https: `false`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_false(port: Double, https: `false`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_false(port: Unit, https: `false`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_false(port: Unit, https: `false`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_true(port: Double, https: `true`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_true(port: Double, https: `true`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_true(port: Unit, https: `true`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_true(port: Unit, https: `true`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+    def serve(): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Double): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Double, https: `true` | `false`): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Double, https: `true` | `false`, host: String): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Double, https: Unit, host: String): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Double, https: HttpsOptions): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Double, https: HttpsOptions, host: String): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Unit, https: `true` | `false`): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Unit, https: `true` | `false`, host: String): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Unit, https: Unit, host: String): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Unit, https: HttpsOptions): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
+    def serve(port: Unit, https: HttpsOptions, host: String): js.Promise[
+        (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.native
   }
   
   trait ParcelOptions extends StObject {
+    
+    /**
+      * Enable or disable auto install of missing dependencies found during bundling
+      *
+      * @default true
+      */
+    var autoInstall: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, package.json dependencies are not included when using 'node' or 'electron' with the 'target' option.
@@ -372,6 +524,10 @@ object mod {
     }
     
     extension [Self <: ParcelOptions](x: Self) {
+      
+      inline def setAutoInstall(value: Boolean): Self = StObject.set(x, "autoInstall", value.asInstanceOf[js.Any])
+      
+      inline def setAutoInstallUndefined: Self = StObject.set(x, "autoInstall", js.undefined)
       
       inline def setBundleNodeModules(value: `true` | `false`): Self = StObject.set(x, "bundleNodeModules", value.asInstanceOf[js.Any])
       

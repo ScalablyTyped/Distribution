@@ -18,7 +18,7 @@ object withStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[StylesType /* <: Styles[js.Any, js.Any, String] */, Options /* <: WithStylesOptions[ThemeOfStyles[StylesType]] */](style: StylesType): PropInjector[
+  inline def default[StylesType /* <: Styles[Any, Any, String] */, Options /* <: WithStylesOptions[ThemeOfStyles[StylesType]] */](style: StylesType): PropInjector[
     WithStyles[
       StylesType, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
@@ -31,7 +31,7 @@ object withStylesMod {
     ], 
     StyledComponentProps[ClassKeyOfStyles[StylesType]] & PropsOfStyles[StylesType]
   ]]
-  inline def default[StylesType /* <: Styles[js.Any, js.Any, String] */, Options /* <: WithStylesOptions[ThemeOfStyles[StylesType]] */](style: StylesType, options: Options): PropInjector[
+  inline def default[StylesType /* <: Styles[Any, Any, String] */, Options /* <: WithStylesOptions[ThemeOfStyles[StylesType]] */](style: StylesType, options: Options): PropInjector[
     WithStyles[
       StylesType, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any

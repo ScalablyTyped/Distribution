@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.KeyManager")
 @js.native
-class KeyManager protected ()
+open class KeyManager protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.KeyManager {
   def this(key: String) = this()

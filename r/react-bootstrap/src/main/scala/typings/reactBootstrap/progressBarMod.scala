@@ -11,12 +11,10 @@ object progressBarMod {
   
   @JSImport("react-bootstrap/lib/ProgressBar", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ProgressBarProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ProgressBarProps, js.Object, Any]
   
-  @js.native
-  trait ProgressBar
-    extends Component[ProgressBarProps, js.Object, js.Any]
+  type ProgressBar = Component[ProgressBarProps, js.Object, Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/ProgressBar.ProgressBar> ]: P} & {[ P in 'label' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/ProgressBar.ProgressBar>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/ProgressBar.ProgressBar>[P]} */ trait ProgressBarProps extends StObject {
@@ -30,7 +28,7 @@ object progressBarMod {
     
     var bsStyle: js.UndefOr[String] = js.undefined
     
-    var interpolatedClass: js.UndefOr[js.Any] = js.undefined
+    var interpolatedClass: js.UndefOr[Any] = js.undefined
     
     var label: js.UndefOr[ReactNode] = js.undefined
     
@@ -70,7 +68,7 @@ object progressBarMod {
       
       inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      inline def setInterpolatedClass(value: js.Any): Self = StObject.set(x, "interpolatedClass", value.asInstanceOf[js.Any])
+      inline def setInterpolatedClass(value: Any): Self = StObject.set(x, "interpolatedClass", value.asInstanceOf[js.Any])
       
       inline def setInterpolatedClassUndefined: Self = StObject.set(x, "interpolatedClass", js.undefined)
       

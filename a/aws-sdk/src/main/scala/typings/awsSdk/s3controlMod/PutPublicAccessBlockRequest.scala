@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutPublicAccessBlockRequest extends StObject {
   
   /**
-    * The account ID for the AWS account whose PublicAccessBlock configuration you want to set.
+    * The account ID for the Amazon Web Services account whose PublicAccessBlock configuration you want to set.
     */
   var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
-    * The PublicAccessBlock configuration that you want to apply to the specified AWS account.
+    * The PublicAccessBlock configuration that you want to apply to the specified Amazon Web Services account.
     */
   var PublicAccessBlockConfiguration: typings.awsSdk.s3controlMod.PublicAccessBlockConfiguration
 }

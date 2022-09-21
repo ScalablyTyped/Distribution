@@ -22,7 +22,7 @@ object CompoundFilterOperator {
     
     inline def setCriteria(value: js.Array[FilterOperator[D]]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    inline def setCriteriaVarargs(value: FilterOperator[D]*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: FilterOperator[D]*): Self = StObject.set(x, "criteria", js.Array(value*))
     
     inline def setOp(value: CompoundOperator): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
   }

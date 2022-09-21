@@ -1,6 +1,5 @@
 package typings.sqsConsumer
 
-import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ object errorsMod {
   
   @JSImport("sqs-consumer/dist/errors", "SQSError")
   @js.native
-  class SQSError protected ()
+  open class SQSError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
@@ -19,9 +18,11 @@ object errorsMod {
     
     var hostname: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -31,19 +32,21 @@ object errorsMod {
     
     var statusCode: Double = js.native
     
-    var time: Date = js.native
+    var time: js.Date = js.native
   }
   
   @JSImport("sqs-consumer/dist/errors", "TimeoutError")
   @js.native
-  class TimeoutError ()
+  open class TimeoutError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

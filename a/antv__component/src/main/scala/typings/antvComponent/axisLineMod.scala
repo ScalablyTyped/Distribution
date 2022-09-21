@@ -10,21 +10,21 @@ object axisLineMod {
   
   @JSImport("@antv/component/lib/axis/line", JSImport.Default)
   @js.native
-  class default () extends Line
+  open class default () extends Line
   
   @js.native
   trait Line
     extends typings.antvComponent.baseMod.default[LineAxisCfg] {
     
-    /* private */ var autoProcessOverlap: js.Any = js.native
-    
-    /* protected */ def getAxisVector(): js.Tuple2[Double, Double] = js.native
+    /* private */ var autoProcessOverlap: Any = js.native
     
     /**
-      * 获取 labelGroup 的选择长度
-      * @param {IGroup}
+      * 是否可以执行某一 overlap
+      * @param name
       */
-    /* private */ var getRotateLength: js.Any = js.native
+    /* private */ var canProcessOverlap: Any = js.native
+    
+    /* protected */ def getAxisVector(): js.Tuple2[Double, Double] = js.native
     
     /* protected */ def getSideVector(offset: Double): vec2 = js.native
     

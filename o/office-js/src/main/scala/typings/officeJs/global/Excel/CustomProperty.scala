@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a custom property.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.CustomProperty")
 @js.native
-class CustomProperty ()
+open class CustomProperty ()
   extends StObject
      with typings.officeJs.Excel.CustomProperty {
   

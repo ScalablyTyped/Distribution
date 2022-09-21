@@ -31,6 +31,6 @@ object ListVirtualServicesOutput {
     
     inline def setVirtualServices(value: VirtualServiceList): Self = StObject.set(x, "virtualServices", value.asInstanceOf[js.Any])
     
-    inline def setVirtualServicesVarargs(value: VirtualServiceRef*): Self = StObject.set(x, "virtualServices", js.Array(value :_*))
+    inline def setVirtualServicesVarargs(value: VirtualServiceRef*): Self = StObject.set(x, "virtualServices", js.Array(value*))
   }
 }

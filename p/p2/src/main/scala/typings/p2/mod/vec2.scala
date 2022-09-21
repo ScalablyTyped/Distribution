@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "vec2")
 @js.native
-class vec2 () extends StObject
+open class vec2 () extends StObject
 /* static members */
 object vec2 {
   

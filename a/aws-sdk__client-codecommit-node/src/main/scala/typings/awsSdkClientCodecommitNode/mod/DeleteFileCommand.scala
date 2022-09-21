@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "DeleteFileCommand")
 @js.native
-class DeleteFileCommand protected ()
+open class DeleteFileCommand protected ()
   extends typings.awsSdkClientCodecommitNode.deleteFileCommandMod.DeleteFileCommand {
   def this(input: DeleteFileInput) = this()
 }

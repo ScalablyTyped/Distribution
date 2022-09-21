@@ -8,9 +8,9 @@ trait DataSourceTransportSignalr extends StObject {
   
   var client: js.UndefOr[DataSourceTransportSignalrClient] = js.undefined
   
-  var hub: js.UndefOr[js.Any] = js.undefined
+  var hub: js.UndefOr[Any] = js.undefined
   
-  var promise: js.UndefOr[js.Any] = js.undefined
+  var promise: js.UndefOr[Any] = js.undefined
   
   var server: js.UndefOr[DataSourceTransportSignalrServer] = js.undefined
 }
@@ -27,11 +27,11 @@ object DataSourceTransportSignalr {
     
     inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    inline def setHub(value: js.Any): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
+    inline def setHub(value: Any): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
     
     inline def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
     
-    inline def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     

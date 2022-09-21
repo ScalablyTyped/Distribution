@@ -1,0 +1,53 @@
+package typings.googleapis.v1alphaMod.analyticsadminV1alpha
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGoogleAnalyticsAdminV1alphaUserLink extends StObject {
+  
+  /**
+    * Roles directly assigned to this user for this account or property. Valid values: predefinedRoles/viewer predefinedRoles/analyst predefinedRoles/editor predefinedRoles/admin predefinedRoles/no-cost-data predefinedRoles/no-revenue-data Excludes roles that are inherited from a higher-level entity, group, or organization admin role. A UserLink that is updated to have an empty list of direct_roles will be deleted.
+    */
+  var directRoles: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Immutable. Email address of the user to link
+    */
+  var emailAddress: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Output only. Example format: properties/1234/userLinks/5678
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaGoogleAnalyticsAdminV1alphaUserLink {
+  
+  inline def apply(): SchemaGoogleAnalyticsAdminV1alphaUserLink = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGoogleAnalyticsAdminV1alphaUserLink]
+  }
+  
+  extension [Self <: SchemaGoogleAnalyticsAdminV1alphaUserLink](x: Self) {
+    
+    inline def setDirectRoles(value: js.Array[String]): Self = StObject.set(x, "directRoles", value.asInstanceOf[js.Any])
+    
+    inline def setDirectRolesNull: Self = StObject.set(x, "directRoles", null)
+    
+    inline def setDirectRolesUndefined: Self = StObject.set(x, "directRoles", js.undefined)
+    
+    inline def setDirectRolesVarargs(value: String*): Self = StObject.set(x, "directRoles", js.Array(value*))
+    
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    
+    inline def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
+    
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
+}

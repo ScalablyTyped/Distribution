@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
@@ -34,13 +33,13 @@ object Gaming {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      inline def addEventListener_gamepadadded(`type`: gamepadadded, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def addEventListener_gamepadadded(`type`: gamepadadded, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      inline def addEventListener_gamepadremoved(`type`: gamepadremoved, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def addEventListener_gamepadremoved(`type`: gamepadremoved, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /** The list of all connected gamepads. */
       /* static member */
@@ -53,24 +52,24 @@ object Gaming {
       /* static member */
       @JSGlobal("Windows.Gaming.Input.Gamepad.ongamepadadded")
       @js.native
-      def ongamepadadded: EventHandler[js.Any] = js.native
-      inline def ongamepadadded_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongamepadadded")(x.asInstanceOf[js.Any])
+      def ongamepadadded: EventHandler[Any] = js.native
+      inline def ongamepadadded_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongamepadadded")(x.asInstanceOf[js.Any])
       
       /** Signals when a gamepad is disconnected. */
       /* static member */
       @JSGlobal("Windows.Gaming.Input.Gamepad.ongamepadremoved")
       @js.native
-      def ongamepadremoved: EventHandler[js.Any] = js.native
-      inline def ongamepadremoved_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongamepadremoved")(x.asInstanceOf[js.Any])
+      def ongamepadremoved: EventHandler[Any] = js.native
+      inline def ongamepadremoved_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongamepadremoved")(x.asInstanceOf[js.Any])
       
       /* static member */
-      inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      inline def removeEventListener_gamepadadded(`type`: gamepadadded, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener_gamepadadded(`type`: gamepadadded, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      inline def removeEventListener_gamepadremoved(`type`: gamepadremoved, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener_gamepadremoved(`type`: gamepadremoved, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /** Specifies the button type. */
@@ -147,43 +146,43 @@ object Gaming {
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.addEventListener")
         @js.native
-        def addEventListener: js.Any = js.native
-        inline def addEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
+        def addEventListener: Any = js.native
+        inline def addEventListener_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.findAllAsync")
         @js.native
-        def findAllAsync: js.Any = js.native
-        inline def findAllAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllAsync")(x.asInstanceOf[js.Any])
+        def findAllAsync: Any = js.native
+        inline def findAllAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllAsync")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.ongameadded")
         @js.native
-        def ongameadded: js.Any = js.native
-        inline def ongameadded_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameadded")(x.asInstanceOf[js.Any])
+        def ongameadded: Any = js.native
+        inline def ongameadded_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameadded")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.ongameremoved")
         @js.native
-        def ongameremoved: js.Any = js.native
-        inline def ongameremoved_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameremoved")(x.asInstanceOf[js.Any])
+        def ongameremoved: Any = js.native
+        inline def ongameremoved_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameremoved")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.ongameupdated")
         @js.native
-        def ongameupdated: js.Any = js.native
-        inline def ongameupdated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameupdated")(x.asInstanceOf[js.Any])
+        def ongameupdated: Any = js.native
+        inline def ongameupdated_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameupdated")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.removeEventListener")
         @js.native
-        def removeEventListener: js.Any = js.native
-        inline def removeEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
+        def removeEventListener: Any = js.native
+        inline def removeEventListener_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
       }
       
       object GameListCategory {
@@ -194,20 +193,20 @@ object Gaming {
         
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListCategory.candidate")
         @js.native
-        def candidate: js.Any = js.native
-        inline def candidate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("candidate")(x.asInstanceOf[js.Any])
+        def candidate: Any = js.native
+        inline def candidate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("candidate")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListCategory.confirmedBySystem")
         @js.native
-        def confirmedBySystem: js.Any = js.native
-        inline def confirmedBySystem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmedBySystem")(x.asInstanceOf[js.Any])
+        def confirmedBySystem: Any = js.native
+        inline def confirmedBySystem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmedBySystem")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListCategory.confirmedByUser")
         @js.native
-        def confirmedByUser: js.Any = js.native
-        inline def confirmedByUser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmedByUser")(x.asInstanceOf[js.Any])
+        def confirmedByUser: Any = js.native
+        inline def confirmedByUser_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmedByUser")(x.asInstanceOf[js.Any])
       }
       
       @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListEntry")
@@ -217,23 +216,23 @@ object Gaming {
            with typings.winrtUwp.Windows.Gaming.Preview.GamesEnumeration.GameListEntry {
         
         /* CompleteClass */
-        var category: js.Any = js.native
+        var category: Any = js.native
         
         /* unmapped type */
         /* CompleteClass */
-        var displayInfo: js.Any = js.native
+        var displayInfo: Any = js.native
         
         /* unmapped type */
         /* CompleteClass */
-        var launchAsync: js.Any = js.native
+        var launchAsync: Any = js.native
         
         /* unmapped type */
         /* CompleteClass */
-        var properties: js.Any = js.native
+        var properties: Any = js.native
         
         /* unmapped type */
         /* CompleteClass */
-        var setCategoryAsync: js.Any = js.native
+        var setCategoryAsync: Any = js.native
       }
     }
   }
@@ -254,43 +253,43 @@ object Gaming {
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.addEventListener")
       @js.native
-      def addEventListener: js.Any = js.native
-      inline def addEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
+      def addEventListener: Any = js.native
+      inline def addEventListener_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.isInputRedirected")
       @js.native
-      def isInputRedirected: js.Any = js.native
-      inline def isInputRedirected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInputRedirected")(x.asInstanceOf[js.Any])
+      def isInputRedirected: Any = js.native
+      inline def isInputRedirected_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInputRedirected")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.onisinputredirectedchanged")
       @js.native
-      def onisinputredirectedchanged: js.Any = js.native
-      inline def onisinputredirectedchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onisinputredirectedchanged")(x.asInstanceOf[js.Any])
+      def onisinputredirectedchanged: Any = js.native
+      inline def onisinputredirectedchanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onisinputredirectedchanged")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.onvisibilitychanged")
       @js.native
-      def onvisibilitychanged: js.Any = js.native
-      inline def onvisibilitychanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onvisibilitychanged")(x.asInstanceOf[js.Any])
+      def onvisibilitychanged: Any = js.native
+      inline def onvisibilitychanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onvisibilitychanged")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.removeEventListener")
       @js.native
-      def removeEventListener: js.Any = js.native
-      inline def removeEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
+      def removeEventListener: Any = js.native
+      inline def removeEventListener_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.visible")
       @js.native
-      def visible: js.Any = js.native
-      inline def visible_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
+      def visible: Any = js.native
+      inline def visible_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -427,7 +426,7 @@ object Gaming {
         
         /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
         /* CompleteClass */
-        var lastModifiedTime: Date = js.native
+        var lastModifiedTime: js.Date = js.native
         
         /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
         /* CompleteClass */

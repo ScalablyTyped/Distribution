@@ -1,17 +1,17 @@
 package typings.firebaseInstallations
 
-import typings.firebaseInstallations.appConfigMod.AppConfig
 import typings.firebaseInstallations.installationEntryMod.InProgressInstallationEntry
 import typings.firebaseInstallations.installationEntryMod.InstallationEntry
 import typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry
 import typings.firebaseInstallations.installationEntryMod.UnregisteredInstallationEntry
+import typings.firebaseInstallations.installationImplMod.AppConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idbManagerMod {
   
-  @JSImport("@firebase/installations/dist/src/helpers/idb-manager", JSImport.Namespace)
+  @JSImport("@firebase/installations/dist/esm/src/helpers/idb-manager", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

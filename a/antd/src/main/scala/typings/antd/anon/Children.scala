@@ -1,38 +1,33 @@
 package typings.antd.anon
 
-import typings.antd.useFormMod.FormInstance
+import typings.rcSelect.baseSelectMod.BaseSelectRef
 import typings.react.mod.ReactNode
-import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Children[Values] extends StObject {
+trait Children extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
-  var ref: js.UndefOr[
-    (js.Function1[/* instance */ FormInstance[Values] | Null, Unit]) | RefObject[FormInstance[Values]] | Null
-  ] = js.undefined
+  var ref: js.UndefOr[typings.react.mod.Ref[BaseSelectRef]] = js.undefined
 }
 object Children {
   
-  inline def apply[Values](): Children[Values] = {
+  inline def apply(): Children = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Children[Values]]
+    __obj.asInstanceOf[Children]
   }
   
-  extension [Self <: Children[?], Values](x: Self & Children[Values]) {
+  extension [Self <: Children](x: Self) {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setRef(
-      value: (js.Function1[/* instance */ FormInstance[Values] | Null, Unit]) | RefObject[FormInstance[Values]]
-    ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: typings.react.mod.Ref[BaseSelectRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRefFunction1(value: /* instance */ FormInstance[Values] | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ BaseSelectRef | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     

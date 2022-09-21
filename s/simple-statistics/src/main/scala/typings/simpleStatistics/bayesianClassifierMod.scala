@@ -11,7 +11,7 @@ object bayesianClassifierMod {
     */
   @JSImport("simple-statistics/src/bayesian_classifier", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with BayesianClassifier {
     

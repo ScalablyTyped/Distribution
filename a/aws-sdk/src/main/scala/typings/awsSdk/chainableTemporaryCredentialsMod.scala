@@ -6,7 +6,6 @@ import typings.awsSdk.stsMod.AssumeRoleRequest
 import typings.awsSdk.stsMod.ClientConfiguration
 import typings.awsSdk.stsMod.GetSessionTokenRequest
 import typings.awsSdk.stsMod.^
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object chainableTemporaryCredentialsMod {
   /**
     * Creates a new temporary credentials object.
     */
-  class ChainableTemporaryCredentials () extends Credentials {
+  open class ChainableTemporaryCredentials () extends Credentials {
     def this(options: ChainableTemporaryCredentialsOptions) = this()
     
     /**
@@ -40,7 +39,7 @@ object chainableTemporaryCredentialsMod {
       var tokenCodeFn: js.UndefOr[
             js.Function2[
               /* serialNumber */ String, 
-              /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit], 
+              /* callback */ js.Function2[/* err */ js.UndefOr[js.Error], /* token */ js.UndefOr[String], Unit], 
               Unit
             ]
           ] = js.undefined
@@ -67,7 +66,7 @@ object chainableTemporaryCredentialsMod {
         inline def setStsConfigUndefined: Self = StObject.set(x, "stsConfig", js.undefined)
         
         inline def setTokenCodeFn(
-          value: (/* serialNumber */ String, /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit]) => Unit
+          value: (/* serialNumber */ String, /* callback */ js.Function2[/* err */ js.UndefOr[js.Error], /* token */ js.UndefOr[String], Unit]) => Unit
         ): Self = StObject.set(x, "tokenCodeFn", js.Any.fromFunction2(value))
         
         inline def setTokenCodeFnUndefined: Self = StObject.set(x, "tokenCodeFn", js.undefined)

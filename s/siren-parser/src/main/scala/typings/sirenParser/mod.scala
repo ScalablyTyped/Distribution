@@ -2,7 +2,6 @@ package typings.sirenParser
 
 import typings.sirenParser.actionMod.Action
 import typings.sirenParser.linkMod.Link
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,150 +90,150 @@ object mod {
     var entities: js.UndefOr[js.Array[Entity]] = js.native
     
     def getAction(actionName: String): js.UndefOr[Action] = js.native
-    def getAction(actionName: RegExp): js.UndefOr[Action] = js.native
+    def getAction(actionName: js.RegExp): js.UndefOr[Action] = js.native
     
     def getActionByClass(actionClass: String): js.UndefOr[Action] = js.native
-    def getActionByClass(actionClass: RegExp): js.UndefOr[Action] = js.native
+    def getActionByClass(actionClass: js.RegExp): js.UndefOr[Action] = js.native
     
-    def getActionByClasses(actionClasses: js.Array[String | RegExp]): js.UndefOr[Action] = js.native
+    def getActionByClasses(actionClasses: js.Array[String | js.RegExp]): js.UndefOr[Action] = js.native
     
     def getActionByMethod(actionMethod: String): js.UndefOr[Action] = js.native
-    def getActionByMethod(actionMethod: RegExp): js.UndefOr[Action] = js.native
+    def getActionByMethod(actionMethod: js.RegExp): js.UndefOr[Action] = js.native
     
     def getActionByName(actionName: String): js.UndefOr[Action] = js.native
-    def getActionByName(actionName: RegExp): js.UndefOr[Action] = js.native
+    def getActionByName(actionName: js.RegExp): js.UndefOr[Action] = js.native
     
     def getActionByType(actionType: String): js.UndefOr[Action] = js.native
-    def getActionByType(actionType: RegExp): js.UndefOr[Action] = js.native
+    def getActionByType(actionType: js.RegExp): js.UndefOr[Action] = js.native
     
     def getActionsByClass(actionClass: String): js.Array[Action] = js.native
-    def getActionsByClass(actionClass: RegExp): js.Array[Action] = js.native
+    def getActionsByClass(actionClass: js.RegExp): js.Array[Action] = js.native
     
-    def getActionsByClasses(actionClasses: js.Array[String | RegExp]): js.Array[Action] = js.native
+    def getActionsByClasses(actionClasses: js.Array[String | js.RegExp]): js.Array[Action] = js.native
     
     def getActionsByMethod(actionMethod: String): js.Array[Action] = js.native
-    def getActionsByMethod(actionMethod: RegExp): js.Array[Action] = js.native
+    def getActionsByMethod(actionMethod: js.RegExp): js.Array[Action] = js.native
     
     def getActionsByType(actionType: String): js.Array[Action] = js.native
-    def getActionsByType(actionType: RegExp): js.Array[Action] = js.native
+    def getActionsByType(actionType: js.RegExp): js.Array[Action] = js.native
     
     def getLink(linkRel: String): js.UndefOr[Link] = js.native
-    def getLink(linkRel: RegExp): js.UndefOr[Link] = js.native
+    def getLink(linkRel: js.RegExp): js.UndefOr[Link] = js.native
     
     def getLinkByClass(linkClass: String): js.UndefOr[Link] = js.native
-    def getLinkByClass(linkClass: RegExp): js.UndefOr[Link] = js.native
+    def getLinkByClass(linkClass: js.RegExp): js.UndefOr[Link] = js.native
     
-    def getLinkByClasses(linkClasses: js.Array[String | RegExp]): js.UndefOr[Link] = js.native
+    def getLinkByClasses(linkClasses: js.Array[String | js.RegExp]): js.UndefOr[Link] = js.native
     
     def getLinkByRel(linkRel: String): js.UndefOr[Link] = js.native
-    def getLinkByRel(linkRel: RegExp): js.UndefOr[Link] = js.native
+    def getLinkByRel(linkRel: js.RegExp): js.UndefOr[Link] = js.native
     
-    def getLinkByRels(linkRels: js.Array[String | RegExp]): js.UndefOr[Link] = js.native
+    def getLinkByRels(linkRels: js.Array[String | js.RegExp]): js.UndefOr[Link] = js.native
     
     def getLinkByType(linkType: String): js.UndefOr[Link] = js.native
-    def getLinkByType(linkType: RegExp): js.UndefOr[Link] = js.native
+    def getLinkByType(linkType: js.RegExp): js.UndefOr[Link] = js.native
     
     def getLinks(linkRel: String): js.Array[Link] = js.native
-    def getLinks(linkRel: RegExp): js.Array[Link] = js.native
+    def getLinks(linkRel: js.RegExp): js.Array[Link] = js.native
     
     def getLinksByClass(linkClass: String): js.Array[Link] = js.native
-    def getLinksByClass(linkClass: RegExp): js.Array[Link] = js.native
+    def getLinksByClass(linkClass: js.RegExp): js.Array[Link] = js.native
     
-    def getLinksByClasses(linkClasses: js.Array[String | RegExp]): js.Array[Link] = js.native
+    def getLinksByClasses(linkClasses: js.Array[String | js.RegExp]): js.Array[Link] = js.native
     
     def getLinksByRel(linkRel: String): js.Array[Link] = js.native
-    def getLinksByRel(linkRel: RegExp): js.Array[Link] = js.native
+    def getLinksByRel(linkRel: js.RegExp): js.Array[Link] = js.native
     
-    def getLinksByRels(linkRels: js.Array[String | RegExp]): js.Array[Link] = js.native
+    def getLinksByRels(linkRels: js.Array[String | js.RegExp]): js.Array[Link] = js.native
     
     def getLinksByType(linkType: String): js.Array[Link] = js.native
-    def getLinksByType(linkType: RegExp): js.Array[Link] = js.native
+    def getLinksByType(linkType: js.RegExp): js.Array[Link] = js.native
     
     def getSubEntities(entityRel: String): js.Array[Entity] = js.native
-    def getSubEntities(entityRel: RegExp): js.Array[Entity] = js.native
+    def getSubEntities(entityRel: js.RegExp): js.Array[Entity] = js.native
     
     def getSubEntitiesByClass(entityClass: String): js.Array[Entity] = js.native
-    def getSubEntitiesByClass(entityClass: RegExp): js.Array[Entity] = js.native
+    def getSubEntitiesByClass(entityClass: js.RegExp): js.Array[Entity] = js.native
     
-    def getSubEntitiesByClasses(entityClasses: js.Array[String | RegExp]): js.Array[Entity] = js.native
+    def getSubEntitiesByClasses(entityClasses: js.Array[String | js.RegExp]): js.Array[Entity] = js.native
     
     def getSubEntitiesByRel(entityRel: String): js.Array[Entity] = js.native
-    def getSubEntitiesByRel(entityRel: RegExp): js.Array[Entity] = js.native
+    def getSubEntitiesByRel(entityRel: js.RegExp): js.Array[Entity] = js.native
     
-    def getSubEntitiesByRels(entityRels: js.Array[String | RegExp]): js.Array[Entity] = js.native
+    def getSubEntitiesByRels(entityRels: js.Array[String | js.RegExp]): js.Array[Entity] = js.native
     
     def getSubEntitiesByType(entityType: String): js.Array[Entity] = js.native
-    def getSubEntitiesByType(entityType: RegExp): js.Array[Entity] = js.native
+    def getSubEntitiesByType(entityType: js.RegExp): js.Array[Entity] = js.native
     
     def getSubEntity(entityRel: String): js.UndefOr[Entity] = js.native
-    def getSubEntity(entityRel: RegExp): js.UndefOr[Entity] = js.native
+    def getSubEntity(entityRel: js.RegExp): js.UndefOr[Entity] = js.native
     
     def getSubEntityByClass(entityClass: String): js.UndefOr[Entity] = js.native
-    def getSubEntityByClass(entityClass: RegExp): js.UndefOr[Entity] = js.native
+    def getSubEntityByClass(entityClass: js.RegExp): js.UndefOr[Entity] = js.native
     
-    def getSubEntityByClasses(entityClasses: js.Array[String | RegExp]): js.UndefOr[Entity] = js.native
+    def getSubEntityByClasses(entityClasses: js.Array[String | js.RegExp]): js.UndefOr[Entity] = js.native
     
     def getSubEntityByRel(entityRel: String): js.UndefOr[Entity] = js.native
-    def getSubEntityByRel(entityRel: RegExp): js.UndefOr[Entity] = js.native
+    def getSubEntityByRel(entityRel: js.RegExp): js.UndefOr[Entity] = js.native
     
-    def getSubEntityByRels(entityRels: js.Array[String | RegExp]): js.UndefOr[Entity] = js.native
+    def getSubEntityByRels(entityRels: js.Array[String | js.RegExp]): js.UndefOr[Entity] = js.native
     
     def getSubEntityByType(entityType: String): js.UndefOr[Entity] = js.native
-    def getSubEntityByType(entityType: RegExp): js.UndefOr[Entity] = js.native
+    def getSubEntityByType(entityType: js.RegExp): js.UndefOr[Entity] = js.native
     
     def hasAction(actionName: String): Boolean = js.native
-    def hasAction(actionName: RegExp): Boolean = js.native
+    def hasAction(actionName: js.RegExp): Boolean = js.native
     
     def hasActionByClass(actionClass: String): Boolean = js.native
-    def hasActionByClass(actionClass: RegExp): Boolean = js.native
+    def hasActionByClass(actionClass: js.RegExp): Boolean = js.native
     
     def hasActionByMethod(actionMethod: String): Boolean = js.native
-    def hasActionByMethod(actionMethod: RegExp): Boolean = js.native
+    def hasActionByMethod(actionMethod: js.RegExp): Boolean = js.native
     
     def hasActionByName(actionName: String): Boolean = js.native
-    def hasActionByName(actionName: RegExp): Boolean = js.native
+    def hasActionByName(actionName: js.RegExp): Boolean = js.native
     
     def hasActionByType(actionType: String): Boolean = js.native
-    def hasActionByType(actionType: RegExp): Boolean = js.native
+    def hasActionByType(actionType: js.RegExp): Boolean = js.native
     
     def hasClass(cls: String): Boolean = js.native
-    def hasClass(cls: RegExp): Boolean = js.native
+    def hasClass(cls: js.RegExp): Boolean = js.native
     
     def hasEntity(entityRel: String): Boolean = js.native
-    def hasEntity(entityRel: RegExp): Boolean = js.native
+    def hasEntity(entityRel: js.RegExp): Boolean = js.native
     
     def hasEntityByClass(entityClass: String): Boolean = js.native
-    def hasEntityByClass(entityClass: RegExp): Boolean = js.native
+    def hasEntityByClass(entityClass: js.RegExp): Boolean = js.native
     
     def hasEntityByRel(entityRel: String): Boolean = js.native
-    def hasEntityByRel(entityRel: RegExp): Boolean = js.native
+    def hasEntityByRel(entityRel: js.RegExp): Boolean = js.native
     
     def hasEntityByType(entityType: String): Boolean = js.native
-    def hasEntityByType(entityType: RegExp): Boolean = js.native
+    def hasEntityByType(entityType: js.RegExp): Boolean = js.native
     
     def hasLink(linkRel: String): Boolean = js.native
-    def hasLink(linkRel: RegExp): Boolean = js.native
+    def hasLink(linkRel: js.RegExp): Boolean = js.native
     
     def hasLinkByClass(linkClass: String): Boolean = js.native
-    def hasLinkByClass(linkClass: RegExp): Boolean = js.native
+    def hasLinkByClass(linkClass: js.RegExp): Boolean = js.native
     
     def hasLinkByRel(linkRel: String): Boolean = js.native
-    def hasLinkByRel(linkRel: RegExp): Boolean = js.native
+    def hasLinkByRel(linkRel: js.RegExp): Boolean = js.native
     
     def hasLinkByType(linkType: String): Boolean = js.native
-    def hasLinkByType(linkType: RegExp): Boolean = js.native
+    def hasLinkByType(linkType: js.RegExp): Boolean = js.native
     
     def hasProperty(property: String): Boolean = js.native
-    def hasProperty(property: RegExp): Boolean = js.native
+    def hasProperty(property: js.RegExp): Boolean = js.native
     
     def hasSubEntityByClass(entityClass: String): Boolean = js.native
-    def hasSubEntityByClass(entityClass: RegExp): Boolean = js.native
+    def hasSubEntityByClass(entityClass: js.RegExp): Boolean = js.native
     
     def hasSubEntityByRel(entityRel: String): Boolean = js.native
-    def hasSubEntityByRel(entityRel: RegExp): Boolean = js.native
+    def hasSubEntityByRel(entityRel: js.RegExp): Boolean = js.native
     
     def hasSubEntityByType(entityType: String): Boolean = js.native
-    def hasSubEntityByType(entityType: RegExp): Boolean = js.native
+    def hasSubEntityByType(entityType: js.RegExp): Boolean = js.native
     
     var href: js.UndefOr[String] = js.native
     

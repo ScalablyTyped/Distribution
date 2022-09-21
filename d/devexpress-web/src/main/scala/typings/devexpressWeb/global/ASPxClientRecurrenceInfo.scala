@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientRecurrenceInfo class with default settings.
   */
-class ASPxClientRecurrenceInfo ()
+open class ASPxClientRecurrenceInfo ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRecurrenceInfo {
   
@@ -33,7 +32,7 @@ class ASPxClientRecurrenceInfo ()
     * Gets the recurrence end date.
     */
   /* CompleteClass */
-  override def GetEnd(): Date = js.native
+  override def GetEnd(): js.Date = js.native
   
   /**
     * Gets the month (as a number) on which the corresponding appointment recurs.
@@ -69,7 +68,7 @@ class ASPxClientRecurrenceInfo ()
     * Gets the recurrence start date.
     */
   /* CompleteClass */
-  override def GetStart(): Date = js.native
+  override def GetStart(): js.Date = js.native
   
   /**
     * Gets the day/days in a week on which the corresponding appointment occurs.
@@ -95,14 +94,14 @@ class ASPxClientRecurrenceInfo ()
     * @param duration A TimeSpan object representing the duration.
     */
   /* CompleteClass */
-  override def SetDuration(duration: js.Any): Unit = js.native
+  override def SetDuration(duration: Any): Unit = js.native
   
   /**
     * Sets the recurrence end date.
     * @param end A JavaScript Date object that specifies the end date for the recurrence.
     */
   /* CompleteClass */
-  override def SetEnd(end: Date): Unit = js.native
+  override def SetEnd(end: js.Date): Unit = js.native
   
   /**
     * Sets the month (as a number) on which the corresponding appointment occurs.
@@ -144,7 +143,7 @@ class ASPxClientRecurrenceInfo ()
     * @param start A JavaScript date object value that specifies the start date for the recurrence.
     */
   /* CompleteClass */
-  override def SetStart(start: Date): Unit = js.native
+  override def SetStart(start: js.Date): Unit = js.native
   
   /**
     * Sets the day/days in a week that the corresponding appointment recurs on.

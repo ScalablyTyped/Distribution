@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteRemediationExceptionsRequest extends StObject {
   
   /**
-    * The name of the AWS Config rule for which you want to delete remediation exception configuration.
+    * The name of the Config rule for which you want to delete remediation exception configuration.
     */
   var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
-    * An exception list of resource exception keys to be processed with the current request. AWS Config adds exception for each resource key. For example, AWS Config adds 3 exceptions for 3 resource keys. 
+    * An exception list of resource exception keys to be processed with the current request. Config adds exception for each resource key. For example, Config adds 3 exceptions for 3 resource keys. 
     */
   var ResourceKeys: RemediationExceptionResourceKeys
 }
@@ -29,6 +29,6 @@ object DeleteRemediationExceptionsRequest {
     
     inline def setResourceKeys(value: RemediationExceptionResourceKeys): Self = StObject.set(x, "ResourceKeys", value.asInstanceOf[js.Any])
     
-    inline def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value :_*))
+    inline def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value*))
   }
 }

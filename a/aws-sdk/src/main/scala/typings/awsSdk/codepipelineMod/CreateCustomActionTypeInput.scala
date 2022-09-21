@@ -67,7 +67,7 @@ object CreateCustomActionTypeInput {
     
     inline def setConfigurationPropertiesUndefined: Self = StObject.set(x, "configurationProperties", js.undefined)
     
-    inline def setConfigurationPropertiesVarargs(value: ActionConfigurationProperty*): Self = StObject.set(x, "configurationProperties", js.Array(value :_*))
+    inline def setConfigurationPropertiesVarargs(value: ActionConfigurationProperty*): Self = StObject.set(x, "configurationProperties", js.Array(value*))
     
     inline def setInputArtifactDetails(value: ArtifactDetails): Self = StObject.set(x, "inputArtifactDetails", value.asInstanceOf[js.Any])
     
@@ -83,7 +83,7 @@ object CreateCustomActionTypeInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

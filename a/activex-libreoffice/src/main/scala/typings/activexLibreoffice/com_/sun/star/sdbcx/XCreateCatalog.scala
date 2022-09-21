@@ -25,7 +25,7 @@ object XCreateCatalog {
   inline def apply(
     acquire: () => Unit,
     createCatalog: SeqEquiv[PropertyValue] => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCreateCatalog = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createCatalog = js.Any.fromFunction1(createCatalog), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CertPath extends StObject {
   
-  /** Path to the Certificate (.cer) in Cloud Storage, in the form *gs://bucketName/fileName*. The instance must have write permissions to the bucket and read access to the file. */
+  /** Path to the Certificate (.cer) in Cloud Storage, in the form `gs://bucketName/fileName`. The instance must have write permissions to the bucket and read access to the file. */
   var certPath: js.UndefOr[String] = js.undefined
   
   /** Password that encrypts the private key */
   var pvkPassword: js.UndefOr[String] = js.undefined
   
   /**
-    * Path to the Certificate Private Key (.pvk) in Cloud Storage, in the form *gs://bucketName/fileName*. The instance must have write permissions to the bucket and read access
+    * Path to the Certificate Private Key (.pvk) in Cloud Storage, in the form `gs://bucketName/fileName`. The instance must have write permissions to the bucket and read access
     * to the file.
     */
   var pvkPath: js.UndefOr[String] = js.undefined

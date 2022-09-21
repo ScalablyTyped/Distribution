@@ -15,26 +15,26 @@ object mod {
   
   @JSImport("fetch.io", JSImport.Default)
   @js.native
-  class default () extends Request {
+  open class default () extends Request {
     def this(options: Options) = this()
   }
   
   @JSImport("fetch.io", "Request")
   @js.native
-  class Request protected () extends StObject {
+  open class Request protected () extends StObject {
     def this(method: TMethod, url: TUrl, options: Options) = this()
     
     /**
       * append formData
       */
-    def append(key: String, value: js.Any): this.type = js.native
-    def append(`object`: StringDictionary[js.Any]): this.type = js.native
+    def append(key: String, value: Any): this.type = js.native
+    def append(`object`: StringDictionary[Any]): this.type = js.native
     
     /**
       * Set Options
       */
-    def config(key: String, value: js.Any): this.type = js.native
-    def config(opts: StringDictionary[js.Any]): this.type = js.native
+    def config(key: String, value: Any): this.type = js.native
+    def config(opts: StringDictionary[Any]): this.type = js.native
     
     /**
       * HTTP delete method
@@ -54,8 +54,8 @@ object mod {
     /**
       * Make Response to JSON
       */
-    def json(): js.Promise[js.Any] = js.native
-    def json(strict: Boolean): js.Promise[js.Any] = js.native
+    def json(): js.Promise[Any] = js.native
+    def json(strict: Boolean): js.Promise[Any] = js.native
     
     /**
       * HTTP options method
@@ -80,18 +80,18 @@ object mod {
     /**
       * Add query string
       */
-    def query(`object`: StringDictionary[js.Any]): this.type = js.native
+    def query(`object`: StringDictionary[Any]): this.type = js.native
     
     /**
       * Send data
       */
-    def send(data: StringDictionary[js.Any]): this.type = js.native
+    def send(data: StringDictionary[Any]): this.type = js.native
     
     /**
       * Set Header
       */
-    def set(key: String, value: js.Any): this.type = js.native
-    def set(opts: StringDictionary[js.Any]): this.type = js.native
+    def set(key: String, value: Any): this.type = js.native
+    def set(opts: StringDictionary[Any]): this.type = js.native
     
     /**
       * Make Response to string
@@ -101,21 +101,16 @@ object mod {
     /**
       * Get Response directly
       */
-    def `then`(resolve: js.Function1[/* value */ js.UndefOr[Response], Unit]): js.Promise[js.Any] = js.native
+    def `then`(resolve: js.Function1[/* value */ js.UndefOr[Response], Unit]): js.Promise[Any] = js.native
     def `then`(
       resolve: js.Function1[/* value */ js.UndefOr[Response], Unit],
-      reject: js.Function1[/* reason */ js.UndefOr[js.Any], Unit]
-    ): js.Promise[js.Any] = js.native
+      reject: js.Function1[/* reason */ js.UndefOr[Any], Unit]
+    ): js.Promise[Any] = js.native
     
-    @JSName("type")
-    def type_form(`type`: form): this.type = js.native
     /**
       * Set Content-Type
       */
-    @JSName("type")
-    def type_json(`type`: json): this.type = js.native
-    @JSName("type")
-    def type_urlencoded(`type`: urlencoded): this.type = js.native
+    def `type`(`type`: json | form | urlencoded): this.type = js.native
   }
   
   type Fetch = Request
@@ -126,7 +121,7 @@ object mod {
     extends StObject
        with RequestInit {
     
-    var afterJSON: js.UndefOr[js.Function1[/* body */ js.Any, Unit]] = js.undefined
+    var afterJSON: js.UndefOr[js.Function1[/* body */ Any, Unit]] = js.undefined
     
     var afterResponse: js.UndefOr[js.Function1[/* res */ Response, Unit]] = js.undefined
     
@@ -147,7 +142,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAfterJSON(value: /* body */ js.Any => Unit): Self = StObject.set(x, "afterJSON", js.Any.fromFunction1(value))
+      inline def setAfterJSON(value: /* body */ Any => Unit): Self = StObject.set(x, "afterJSON", js.Any.fromFunction1(value))
       
       inline def setAfterJSONUndefined: Self = StObject.set(x, "afterJSON", js.undefined)
       

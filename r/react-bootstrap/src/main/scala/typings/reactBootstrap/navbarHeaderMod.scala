@@ -10,12 +10,19 @@ object navbarHeaderMod {
   
   @JSImport("react-bootstrap/lib/NavbarHeader", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[NavbarHeaderProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[NavbarHeaderProps, js.Object, Any]
   
-  @js.native
-  trait NavbarHeader
-    extends Component[NavbarHeaderProps, js.Object, js.Any]
+  type NavbarHeader = Component[NavbarHeaderProps, js.Object, Any]
   
-  type NavbarHeaderProps = HTMLProps[NavbarHeader]
+  trait NavbarHeaderProps
+    extends StObject
+       with HTMLProps[NavbarHeader]
+  object NavbarHeaderProps {
+    
+    inline def apply(): NavbarHeaderProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NavbarHeaderProps]
+    }
+  }
 }

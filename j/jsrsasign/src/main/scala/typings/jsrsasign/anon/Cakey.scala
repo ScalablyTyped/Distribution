@@ -52,7 +52,7 @@ object Cakey {
     
     inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
-    inline def setExtVarargs(value: Extension*): Self = StObject.set(x, "ext", js.Array(value :_*))
+    inline def setExtVarargs(value: Extension*): Self = StObject.set(x, "ext", js.Array(value*))
     
     inline def setIssue(value: StringParam): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     

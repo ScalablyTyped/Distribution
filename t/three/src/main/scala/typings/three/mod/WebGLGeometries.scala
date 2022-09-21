@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "WebGLGeometries")
 @js.native
-class WebGLGeometries protected ()
-  extends typings.three.webGLGeometriesMod.WebGLGeometries {
+open class WebGLGeometries protected ()
+  extends typings.three.threeMod.WebGLGeometries {
   def this(gl: WebGLRenderingContext, attributes: WebGLAttributes, info: typings.three.webGLInfoMod.WebGLInfo) = this()
 }

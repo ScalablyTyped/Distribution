@@ -14,10 +14,10 @@ trait GetMaintenanceWindowResult extends StObject {
   /**
     * The date the maintenance window was created.
     */
-  var CreatedDate: js.UndefOr[DateTime] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The number of hours before the end of the maintenance window that Systems Manager stops scheduling new tasks for execution.
+    * The number of hours before the end of the maintenance window that Amazon Web Services Systems Manager stops scheduling new tasks for execution.
     */
   var Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.undefined
   
@@ -37,14 +37,14 @@ trait GetMaintenanceWindowResult extends StObject {
   var Enabled: js.UndefOr[MaintenanceWindowEnabled] = js.undefined
   
   /**
-    * The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become inactive. The maintenance window will not run after this specified time.
+    * The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become inactive. The maintenance window won't run after this specified time.
     */
   var EndDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   
   /**
     * The date the maintenance window was last modified.
     */
-  var ModifiedDate: js.UndefOr[DateTime] = js.undefined
+  var ModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the maintenance window.
@@ -62,17 +62,17 @@ trait GetMaintenanceWindowResult extends StObject {
   var Schedule: js.UndefOr[MaintenanceWindowSchedule] = js.undefined
   
   /**
-    * The number of days to wait to run a maintenance window after the scheduled CRON expression date and time.
+    * The number of days to wait to run a maintenance window after the scheduled cron expression date and time.
     */
   var ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.undefined
   
   /**
-    * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
+    * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
     */
   var ScheduleTimezone: js.UndefOr[MaintenanceWindowTimezone] = js.undefined
   
   /**
-    * The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become active. The maintenance window will not run before this specified time.
+    * The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become active. The maintenance window won't run before this specified time.
     */
   var StartDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   
@@ -94,7 +94,7 @@ object GetMaintenanceWindowResult {
     
     inline def setAllowUnassociatedTargetsUndefined: Self = StObject.set(x, "AllowUnassociatedTargets", js.undefined)
     
-    inline def setCreatedDate(value: DateTime): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
@@ -118,7 +118,7 @@ object GetMaintenanceWindowResult {
     
     inline def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
-    inline def setModifiedDate(value: DateTime): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: js.Date): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setModifiedDateUndefined: Self = StObject.set(x, "ModifiedDate", js.undefined)
     

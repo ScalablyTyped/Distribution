@@ -8,7 +8,7 @@ object equalToMod {
   
   @JSImport("ol/format/filter/EqualTo", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.ol.comparisonBinaryMod.default {
     def this(propertyName: String, expression: String) = this()
     def this(propertyName: String, expression: Double) = this()

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RangyStatic extends StObject {
   
-  def addInitListener(listener: js.Function1[/* rangy */ this.type, Unit]): js.Any = js.native
+  def addInitListener(listener: js.Function1[/* rangy */ this.type, Unit]): Any = js.native
   
   def createClassApplier(theClass: String): RangyClassApplier = js.native
   def createClassApplier(theClass: String, options: Unit, tagNames: String): RangyClassApplier = js.native
@@ -21,7 +21,7 @@ trait RangyStatic extends StObject {
   def createClassApplier(theClass: String, options: RangyClassApplierOptions, tagNames: String): RangyClassApplier = js.native
   def createClassApplier(theClass: String, options: RangyClassApplierOptions, tagNames: js.Array[String]): RangyClassApplier = js.native
   
-  def createMissingNativeApi(): js.Any = js.native
+  def createMissingNativeApi(): Any = js.native
   
   def createNativeRange(): Range = js.native
   def createNativeRange(doc: Document): Range = js.native
@@ -48,7 +48,7 @@ trait RangyStatic extends StObject {
   
   var initialized: Boolean = js.native
   
-  def shim(): js.Any = js.native
+  def shim(): Any = js.native
   
   var supported: Boolean = js.native
 }

@@ -23,6 +23,6 @@ object SDPMediaSourceGroup {
     
     inline def setSsrcs(value: js.Array[Double]): Self = StObject.set(x, "ssrcs", value.asInstanceOf[js.Any])
     
-    inline def setSsrcsVarargs(value: Double*): Self = StObject.set(x, "ssrcs", js.Array(value :_*))
+    inline def setSsrcsVarargs(value: Double*): Self = StObject.set(x, "ssrcs", js.Array(value*))
   }
 }

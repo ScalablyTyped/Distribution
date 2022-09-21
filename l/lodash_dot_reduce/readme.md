@@ -10,10 +10,10 @@ The lodash method `_.reduce` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.reduce |
 | Keywords           | lodash-modularized, reduce |
-| # releases         | 0 |
-| # dependents       | 258 |
-| # downloads        | 62551376 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6774914.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -17,9 +17,9 @@ trait SchemaUpdateSchemaRequest extends StObject {
   var schema: js.UndefOr[SchemaSchema] = js.undefined
   
   /**
-    * If true, the request will be validated without side effects.
+    * If true, the schema will be checked for validity, but will not be registered with the data source, even if valid.
     */
-  var validateOnly: js.UndefOr[Boolean] = js.undefined
+  var validateOnly: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaUpdateSchemaRequest {
   
@@ -39,6 +39,8 @@ object SchemaUpdateSchemaRequest {
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    
+    inline def setValidateOnlyNull: Self = StObject.set(x, "validateOnly", null)
     
     inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }

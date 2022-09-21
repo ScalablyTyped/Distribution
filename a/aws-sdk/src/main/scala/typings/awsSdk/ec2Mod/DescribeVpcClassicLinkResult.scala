@@ -24,6 +24,6 @@ object DescribeVpcClassicLinkResult {
     
     inline def setVpcsUndefined: Self = StObject.set(x, "Vpcs", js.undefined)
     
-    inline def setVpcsVarargs(value: VpcClassicLink*): Self = StObject.set(x, "Vpcs", js.Array(value :_*))
+    inline def setVpcsVarargs(value: VpcClassicLink*): Self = StObject.set(x, "Vpcs", js.Array(value*))
   }
 }

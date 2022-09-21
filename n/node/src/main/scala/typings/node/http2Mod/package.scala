@@ -1,127 +1,86 @@
 package typings.node.http2Mod
 
+import typings.node.bufferMod.global.Buffer
+import typings.node.http2Mod.^
+import typings.node.nodeNetMod.Socket
+import typings.node.nodeTlsMod.TLSSocket
+import typings.node.nodeUrlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def connect(authority: java.lang.String): typings.node.http2Mod.ClientHttp2Session = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any]).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
+inline def connect(authority: String): ClientHttp2Session = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any]).asInstanceOf[ClientHttp2Session]
 inline def connect(
-  authority: java.lang.String,
-  listener: js.Function2[
-  /* session */ typings.node.http2Mod.ClientHttp2Session, 
-  /* socket */ typings.node.netMod.Socket | typings.node.tlsMod.TLSSocket, 
-  scala.Unit
-]
-): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
+  authority: String,
+  listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
 inline def connect(
-  authority: java.lang.String,
-  options: scala.Unit,
-  listener: js.Function2[
-  /* session */ typings.node.http2Mod.ClientHttp2Session, 
-  /* socket */ typings.node.netMod.Socket | typings.node.tlsMod.TLSSocket, 
-  scala.Unit
-]
-): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
-inline def connect(authority: java.lang.String, options: typings.node.http2Mod.ClientSessionOptions): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
+  authority: String,
+  options: Unit,
+  listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
+inline def connect(authority: String, options: ClientSessionOptions): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
 inline def connect(
-  authority: java.lang.String,
-  options: typings.node.http2Mod.ClientSessionOptions,
-  listener: js.Function2[
-  /* session */ typings.node.http2Mod.ClientHttp2Session, 
-  /* socket */ typings.node.netMod.Socket | typings.node.tlsMod.TLSSocket, 
-  scala.Unit
-]
-): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
-inline def connect(authority: java.lang.String, options: typings.node.http2Mod.SecureClientSessionOptions): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
+  authority: String,
+  options: ClientSessionOptions,
+  listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
+inline def connect(authority: String, options: SecureClientSessionOptions): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
 inline def connect(
-  authority: java.lang.String,
-  options: typings.node.http2Mod.SecureClientSessionOptions,
-  listener: js.Function2[
-  /* session */ typings.node.http2Mod.ClientHttp2Session, 
-  /* socket */ typings.node.netMod.Socket | typings.node.tlsMod.TLSSocket, 
-  scala.Unit
-]
-): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
-inline def connect(authority: typings.node.urlMod.URL_): typings.node.http2Mod.ClientHttp2Session = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any]).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
+  authority: String,
+  options: SecureClientSessionOptions,
+  listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
+inline def connect(authority: URL): ClientHttp2Session = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any]).asInstanceOf[ClientHttp2Session]
 inline def connect(
-  authority: typings.node.urlMod.URL_,
-  listener: js.Function2[
-  /* session */ typings.node.http2Mod.ClientHttp2Session, 
-  /* socket */ typings.node.netMod.Socket | typings.node.tlsMod.TLSSocket, 
-  scala.Unit
-]
-): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
+  authority: URL,
+  listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
 inline def connect(
-  authority: typings.node.urlMod.URL_,
-  options: scala.Unit,
-  listener: js.Function2[
-  /* session */ typings.node.http2Mod.ClientHttp2Session, 
-  /* socket */ typings.node.netMod.Socket | typings.node.tlsMod.TLSSocket, 
-  scala.Unit
-]
-): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
-inline def connect(authority: typings.node.urlMod.URL_, options: typings.node.http2Mod.ClientSessionOptions): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
+  authority: URL,
+  options: Unit,
+  listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
+inline def connect(authority: URL, options: ClientSessionOptions): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
 inline def connect(
-  authority: typings.node.urlMod.URL_,
-  options: typings.node.http2Mod.ClientSessionOptions,
-  listener: js.Function2[
-  /* session */ typings.node.http2Mod.ClientHttp2Session, 
-  /* socket */ typings.node.netMod.Socket | typings.node.tlsMod.TLSSocket, 
-  scala.Unit
-]
-): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
-inline def connect(authority: typings.node.urlMod.URL_, options: typings.node.http2Mod.SecureClientSessionOptions): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
+  authority: URL,
+  options: ClientSessionOptions,
+  listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
+inline def connect(authority: URL, options: SecureClientSessionOptions): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
 inline def connect(
-  authority: typings.node.urlMod.URL_,
-  options: typings.node.http2Mod.SecureClientSessionOptions,
-  listener: js.Function2[
-  /* session */ typings.node.http2Mod.ClientHttp2Session, 
-  /* socket */ typings.node.netMod.Socket | typings.node.tlsMod.TLSSocket, 
-  scala.Unit
-]
-): typings.node.http2Mod.ClientHttp2Session = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.ClientHttp2Session]
+  authority: URL,
+  options: SecureClientSessionOptions,
+  listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
 
-inline def createSecureServer(): typings.node.http2Mod.Http2SecureServer = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")().asInstanceOf[typings.node.http2Mod.Http2SecureServer]
+inline def createSecureServer(): Http2SecureServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")().asInstanceOf[Http2SecureServer]
 inline def createSecureServer(
-  onRequestHandler: js.Function2[
-  /* request */ typings.node.http2Mod.Http2ServerRequest, 
-  /* response */ typings.node.http2Mod.Http2ServerResponse, 
-  scala.Unit
-]
-): typings.node.http2Mod.Http2SecureServer = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(onRequestHandler.asInstanceOf[js.Any]).asInstanceOf[typings.node.http2Mod.Http2SecureServer]
-inline def createSecureServer(options: typings.node.http2Mod.SecureServerOptions): typings.node.http2Mod.Http2SecureServer = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.node.http2Mod.Http2SecureServer]
+  onRequestHandler: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
+): Http2SecureServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(onRequestHandler.asInstanceOf[js.Any]).asInstanceOf[Http2SecureServer]
+inline def createSecureServer(options: SecureServerOptions): Http2SecureServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(options.asInstanceOf[js.Any]).asInstanceOf[Http2SecureServer]
 inline def createSecureServer(
-  options: typings.node.http2Mod.SecureServerOptions,
-  onRequestHandler: js.Function2[
-  /* request */ typings.node.http2Mod.Http2ServerRequest, 
-  /* response */ typings.node.http2Mod.Http2ServerResponse, 
-  scala.Unit
-]
-): typings.node.http2Mod.Http2SecureServer = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(options.asInstanceOf[js.Any], onRequestHandler.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.Http2SecureServer]
+  options: SecureServerOptions,
+  onRequestHandler: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
+): Http2SecureServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecureServer")(options.asInstanceOf[js.Any], onRequestHandler.asInstanceOf[js.Any])).asInstanceOf[Http2SecureServer]
 
-inline def createServer(): typings.node.http2Mod.Http2Server = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.node.http2Mod.Http2Server]
+inline def createServer(): Http2Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Http2Server]
 inline def createServer(
-  onRequestHandler: js.Function2[
-  /* request */ typings.node.http2Mod.Http2ServerRequest, 
-  /* response */ typings.node.http2Mod.Http2ServerResponse, 
-  scala.Unit
-]
-): typings.node.http2Mod.Http2Server = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(onRequestHandler.asInstanceOf[js.Any]).asInstanceOf[typings.node.http2Mod.Http2Server]
-inline def createServer(options: typings.node.http2Mod.ServerOptions): typings.node.http2Mod.Http2Server = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.node.http2Mod.Http2Server]
+  onRequestHandler: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
+): Http2Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(onRequestHandler.asInstanceOf[js.Any]).asInstanceOf[Http2Server]
+inline def createServer(options: ServerOptions): Http2Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Http2Server]
 inline def createServer(
-  options: typings.node.http2Mod.ServerOptions,
-  onRequestHandler: js.Function2[
-  /* request */ typings.node.http2Mod.Http2ServerRequest, 
-  /* response */ typings.node.http2Mod.Http2ServerResponse, 
-  scala.Unit
-]
-): typings.node.http2Mod.Http2Server = (typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], onRequestHandler.asInstanceOf[js.Any])).asInstanceOf[typings.node.http2Mod.Http2Server]
+  options: ServerOptions,
+  onRequestHandler: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
+): Http2Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], onRequestHandler.asInstanceOf[js.Any])).asInstanceOf[Http2Server]
 
-inline def getDefaultSettings(): typings.node.http2Mod.Settings = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultSettings")().asInstanceOf[typings.node.http2Mod.Settings]
+inline def getDefaultSettings(): Settings = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultSettings")().asInstanceOf[Settings]
 
-inline def getPackedSettings(settings: typings.node.http2Mod.Settings): typings.node.Buffer = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("getPackedSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
+inline def getPackedSettings(settings: Settings): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackedSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 
-inline def getUnpackedSettings(buf: typings.std.Uint8Array): typings.node.http2Mod.Settings = typings.node.http2Mod.^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedSettings")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.node.http2Mod.Settings]
+inline def getUnpackedSettings(buf: js.typedarray.Uint8Array): Settings = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedSettings")(buf.asInstanceOf[js.Any]).asInstanceOf[Settings]
 
-type ServerOptions = typings.node.http2Mod.ServerSessionOptions
+inline def sensitiveHeaders: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("sensitiveHeaders").asInstanceOf[js.Symbol]
+
+type ServerOptions = ServerSessionOptions

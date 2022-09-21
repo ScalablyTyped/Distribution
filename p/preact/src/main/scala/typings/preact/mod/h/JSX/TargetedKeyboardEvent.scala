@@ -1,5 +1,6 @@
 package typings.preact.mod.h.JSX
 
+import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
@@ -33,8 +34,6 @@ trait TargetedKeyboardEvent[Target /* <: EventTarget */] extends StObject {
   
   var cancelable: Boolean
   
-  var char: String
-  
   var charCode: Double
   
   var code: String
@@ -62,6 +61,37 @@ trait TargetedKeyboardEvent[Target /* <: EventTarget */] extends StObject {
   def initEvent(`type`: String): Unit
   @JSName("initEvent")
   var initEvent_Original: js.Function1[/* type */ String, Unit]
+  
+  def initKeyboardEvent(
+    typeArg: String,
+    bubblesArg: js.UndefOr[Boolean],
+    cancelableArg: js.UndefOr[Boolean],
+    viewArg: js.UndefOr[Window | Null],
+    keyArg: js.UndefOr[String],
+    locationArg: js.UndefOr[Double],
+    ctrlKey: js.UndefOr[Boolean],
+    altKey: js.UndefOr[Boolean],
+    shiftKey: js.UndefOr[Boolean],
+    metaKey: js.UndefOr[Boolean]
+  ): Unit
+  @JSName("initKeyboardEvent")
+  var initKeyboardEvent_Original: js.Function10[
+    /* typeArg */ String, 
+    /* bubblesArg */ js.UndefOr[Boolean], 
+    /* cancelableArg */ js.UndefOr[Boolean], 
+    /* viewArg */ js.UndefOr[Window | Null], 
+    /* keyArg */ js.UndefOr[String], 
+    /* locationArg */ js.UndefOr[Double], 
+    /* ctrlKey */ js.UndefOr[Boolean], 
+    /* altKey */ js.UndefOr[Boolean], 
+    /* shiftKey */ js.UndefOr[Boolean], 
+    /* metaKey */ js.UndefOr[Boolean], 
+    Unit
+  ]
+  
+  def initUIEvent(typeArg: String): Unit
+  @JSName("initUIEvent")
+  var initUIEvent_Original: js.Function1[/* typeArg */ String, Unit]
   
   var isComposing: Boolean
   
@@ -97,7 +127,7 @@ trait TargetedKeyboardEvent[Target /* <: EventTarget */] extends StObject {
   
   var target: js.UndefOr[EventTarget | Null] = js.undefined
   
-  var timeStamp: Double
+  var timeStamp: DOMHighResTimeStamp
   
   var `type`: String
   
@@ -120,7 +150,6 @@ object TargetedKeyboardEvent {
     bubbles: Boolean,
     cancelBubble: Boolean,
     cancelable: Boolean,
-    char: String,
     charCode: Double,
     code: String,
     composed: Boolean,
@@ -132,6 +161,8 @@ object TargetedKeyboardEvent {
     eventPhase: Double,
     getModifierState: /* keyArg */ String => Boolean,
     initEvent: /* type */ String => Unit,
+    initKeyboardEvent: (/* typeArg */ String, /* bubblesArg */ js.UndefOr[Boolean], /* cancelableArg */ js.UndefOr[Boolean], /* viewArg */ js.UndefOr[Window | Null], /* keyArg */ js.UndefOr[String], /* locationArg */ js.UndefOr[Double], /* ctrlKey */ js.UndefOr[Boolean], /* altKey */ js.UndefOr[Boolean], /* shiftKey */ js.UndefOr[Boolean], /* metaKey */ js.UndefOr[Boolean]) => Unit,
+    initUIEvent: /* typeArg */ String => Unit,
     isComposing: Boolean,
     isTrusted: Boolean,
     key: String,
@@ -144,11 +175,11 @@ object TargetedKeyboardEvent {
     shiftKey: Boolean,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
-    timeStamp: Double,
+    timeStamp: DOMHighResTimeStamp,
     `type`: String,
     which: Double
   ): TargetedKeyboardEvent[Target] = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], DOM_KEY_LOCATION_LEFT = DOM_KEY_LOCATION_LEFT.asInstanceOf[js.Any], DOM_KEY_LOCATION_NUMPAD = DOM_KEY_LOCATION_NUMPAD.asInstanceOf[js.Any], DOM_KEY_LOCATION_RIGHT = DOM_KEY_LOCATION_RIGHT.asInstanceOf[js.Any], DOM_KEY_LOCATION_STANDARD = DOM_KEY_LOCATION_STANDARD.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], composed = composed.asInstanceOf[js.Any], composedPath = js.Any.fromFunction0(composedPath), ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction1(initEvent), isComposing = isComposing.asInstanceOf[js.Any], isTrusted = isTrusted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), timeStamp = timeStamp.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], DOM_KEY_LOCATION_LEFT = DOM_KEY_LOCATION_LEFT.asInstanceOf[js.Any], DOM_KEY_LOCATION_NUMPAD = DOM_KEY_LOCATION_NUMPAD.asInstanceOf[js.Any], DOM_KEY_LOCATION_RIGHT = DOM_KEY_LOCATION_RIGHT.asInstanceOf[js.Any], DOM_KEY_LOCATION_STANDARD = DOM_KEY_LOCATION_STANDARD.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], composed = composed.asInstanceOf[js.Any], composedPath = js.Any.fromFunction0(composedPath), ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction1(initEvent), initKeyboardEvent = js.Any.fromFunction10(initKeyboardEvent), initUIEvent = js.Any.fromFunction1(initUIEvent), isComposing = isComposing.asInstanceOf[js.Any], isTrusted = isTrusted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), timeStamp = timeStamp.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetedKeyboardEvent[Target]]
   }
@@ -168,8 +199,6 @@ object TargetedKeyboardEvent {
     inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
     
     inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
-    
-    inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
     
     inline def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
     
@@ -200,6 +229,12 @@ object TargetedKeyboardEvent {
     inline def setGetModifierState(value: /* keyArg */ String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
     
     inline def setInitEvent(value: /* type */ String => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction1(value))
+    
+    inline def setInitKeyboardEvent(
+      value: (/* typeArg */ String, /* bubblesArg */ js.UndefOr[Boolean], /* cancelableArg */ js.UndefOr[Boolean], /* viewArg */ js.UndefOr[Window | Null], /* keyArg */ js.UndefOr[String], /* locationArg */ js.UndefOr[Double], /* ctrlKey */ js.UndefOr[Boolean], /* altKey */ js.UndefOr[Boolean], /* shiftKey */ js.UndefOr[Boolean], /* metaKey */ js.UndefOr[Boolean]) => Unit
+    ): Self = StObject.set(x, "initKeyboardEvent", js.Any.fromFunction10(value))
+    
+    inline def setInitUIEvent(value: /* typeArg */ String => Unit): Self = StObject.set(x, "initUIEvent", js.Any.fromFunction1(value))
     
     inline def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
     
@@ -239,7 +274,7 @@ object TargetedKeyboardEvent {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
+import typings.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashcodeLens
 import typings.vscodeLanguageserverProtocol.protocolMod.CodeLensParams
 import typings.vscodeLanguageserverProtocol.protocolMod.CodeLensRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -9,14 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CodeLensRequest {
   
-  /** @deprecated Use CodeLensRequest.type */
-  @JSImport("vscode-languageserver", "CodeLensRequest.resultType")
+  @JSImport("vscode-languageserver", "CodeLensRequest.messageDirection")
   @js.native
-  val resultType: typings.vscodeJsonrpc.mod.ProgressType[js.Array[typings.vscodeLanguageserverTypes.mod.CodeLens]] = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver", "CodeLensRequest.method")
+  @js.native
+  val method: textDocumentSlashcodeLens = js.native
   
   @JSImport("vscode-languageserver", "CodeLensRequest.type")
   @js.native
-  val `type`: ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
     CodeLensParams, 
     js.Array[typings.vscodeLanguageserverTypes.mod.CodeLens] | Null, 
     js.Array[typings.vscodeLanguageserverTypes.mod.CodeLens], 

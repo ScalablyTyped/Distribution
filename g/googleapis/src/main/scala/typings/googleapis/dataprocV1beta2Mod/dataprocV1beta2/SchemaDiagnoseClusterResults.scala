@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The location of diagnostic output.
-  */
 trait SchemaDiagnoseClusterResults extends StObject {
   
   /**
-    * Output only. The Cloud Storage URI of the diagnostic output. The output
-    * report is a plain text file with a summary of collected diagnostics.
+    * Output only. The Cloud Storage URI of the diagnostic output. The output report is a plain text file with a summary of collected diagnostics.
     */
-  var outputUri: js.UndefOr[String] = js.undefined
+  var outputUri: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDiagnoseClusterResults {
   
@@ -25,6 +21,8 @@ object SchemaDiagnoseClusterResults {
   extension [Self <: SchemaDiagnoseClusterResults](x: Self) {
     
     inline def setOutputUri(value: String): Self = StObject.set(x, "outputUri", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUriNull: Self = StObject.set(x, "outputUri", null)
     
     inline def setOutputUriUndefined: Self = StObject.set(x, "outputUri", js.undefined)
   }

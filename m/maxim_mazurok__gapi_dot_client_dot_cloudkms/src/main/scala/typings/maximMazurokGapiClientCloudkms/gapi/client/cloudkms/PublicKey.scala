@@ -25,6 +25,9 @@ trait PublicKey extends StObject {
     * integer, which will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support this type. NOTE: This field is in Beta.
     */
   var pemCrc32c: js.UndefOr[String] = js.undefined
+  
+  /** The ProtectionLevel of the CryptoKeyVersion public key. */
+  var protectionLevel: js.UndefOr[String] = js.undefined
 }
 object PublicKey {
   
@@ -50,5 +53,9 @@ object PublicKey {
     inline def setPemCrc32cUndefined: Self = StObject.set(x, "pemCrc32c", js.undefined)
     
     inline def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
+    
+    inline def setProtectionLevel(value: String): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
+    
+    inline def setProtectionLevelUndefined: Self = StObject.set(x, "protectionLevel", js.undefined)
   }
 }

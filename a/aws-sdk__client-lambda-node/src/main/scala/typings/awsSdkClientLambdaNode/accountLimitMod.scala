@@ -8,5 +8,5 @@ object accountLimitMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/_AccountLimit", "_AccountLimit")
   @js.native
-  val AccountLimit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AccountLimit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

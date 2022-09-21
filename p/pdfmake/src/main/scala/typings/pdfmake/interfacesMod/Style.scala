@@ -7,65 +7,204 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Style extends StObject {
   
-  /** the alignment of the text */
+  /**
+    * Text alignment.
+    *
+    * Defaults to `left`.
+    */
   var alignment: js.UndefOr[Alignment] = js.undefined
   
-  /** the background color of the text */
-  var background: js.UndefOr[String] = js.undefined
+  /**
+    * Background color of the text.
+    *
+    * Supports well-known color names like `blue` or hexadecimal color strings like `#ccffcc`,
+    * as well as a reference to a pattern.
+    *
+    * To set the background of table cells, use {@link fillColor} instead.
+    */
+  var background: js.UndefOr[String | PatternFill] = js.undefined
   
-  /** whether to use bold text (default: false) */
+  /**
+    * Controls whether the text is bold.
+    *
+    * Defaults to `false`.
+    */
   var bold: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Spacing between characters in `pt`.
+    *
+    * Defaults to `0`.
+    */
   var characterSpacing: js.UndefOr[Double] = js.undefined
   
-  /** the color of the text (color name e.g., ‘blue’ or hexadecimal color e.g., ‘#ff5500’) */
+  /**
+    * Text color.
+    *
+    * Supports well-known color names like `blue` or hexadecimal color strings like `#ccffcc`.
+    *
+    * Defaults to `black`.
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  /** optional space between columns */
-  var columnGap: js.UndefOr[Size] = js.undefined
+  /**
+    * Space between columns in `pt`.
+    *
+    * Only applies to {@link ContentColumns} elements.
+    *
+    * Defaults to `0`.
+    */
+  var columnGap: js.UndefOr[Double] = js.undefined
   
-  /** the text decoration to applu (‘underline’ or ‘lineThrough’ or ‘overline’) */
+  /**
+    * Text decoration to apply.
+    */
   var decoration: js.UndefOr[Decoration] = js.undefined
   
-  /** the color of the text decoration, see color */
+  /**
+    * Color to apply to the given {@link decoration}.
+    *
+    * Supports well-known color names like `blue` or hexadecimal color strings like `#ccffcc`.
+    *
+    * Defaults to the text's {@link color}.
+    */
   var decorationColor: js.UndefOr[String] = js.undefined
   
-  /** (‘dashed’ or ‘dotted’ or ‘double’ or ‘wavy’) */
+  /**
+    * Style to apply to the given {@link decoration}.
+    *
+    * Defaults to `solid`.
+    */
   var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
   
-  /** the background color of a table cell */
-  var fillColor: js.UndefOr[String] = js.undefined
+  /**
+    * Background fill color for table cells.
+    *
+    * Supports well-known color names like `blue` or hexadecimal color strings like `#ccffcc`,
+    * as well as a reference to a pattern.
+    *
+    * Only applies to {@link TableCell} elements.
+    * For the background color of text, use {@link background} instead.
+    */
+  var fillColor: js.UndefOr[String | PatternFill] = js.undefined
   
-  /** the background opacity of a table cell */
+  /**
+    * Opacity of the given {@link fillColor}.
+    * Must be between 0 (fully transparent) and 1 (fully opaque).
+    *
+    * Only applies to {@link TableCell} elements.
+    *
+    * Defaults to `1`.
+    */
   var fillOpacity: js.UndefOr[Double] = js.undefined
   
-  /** name of the font */
+  /**
+    * Name of the font.
+    *
+    * Only built-in and globally declared fonts are available, regardless of the fonts
+    * installed on the system.
+    *
+    * Defaults to `Roboto`.
+    */
   var font: js.UndefOr[String] = js.undefined
   
+  /**
+    * OpenType font features to apply.
+    */
   var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
   
-  /** size of the font in pt */
+  /**
+    * Font size in `pt`.
+    *
+    * Defaults to `12`.
+    */
   var fontSize: js.UndefOr[Double] = js.undefined
   
-  /** whether to use italic text (default: false) */
+  /**
+    * Controls whether the text is italic.
+    *
+    * Defaults to `false`.
+    */
   var italics: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Indent at the beginning of a paragraph in `pt`.
+    *
+    * Defaults to `0`.
+    */
   var leadingIndent: js.UndefOr[Double] = js.undefined
   
-  /** the line height (default: 1) */
+  /**
+    * Line height as a factor of the {@link fontSize}.
+    *
+    * Defaults to `1`.
+    */
   var lineHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Margins to apply.
+    *
+    * Ignored for content within an inline text array
+    * (`{ text: [{ ... }] }`).
+    */
   var margin: js.UndefOr[Margins] = js.undefined
   
-  /** the color of the bullets in a buletted list */
+  /**
+    * Color of list markers (i.e. bullet points or numbers).
+    *
+    * Supports well-known color names like `blue` or hexadecimal color strings like `#ccffcc`.
+    *
+    * Defaults to the text's {@link color}.
+    */
   var markerColor: js.UndefOr[String] = js.undefined
   
-  // Table-cell properties:
+  /**
+    * Controls whether text paragraphs inside table cells should be rendered as
+    * a single line.
+    * If the column has a fixed width, long text lines will overflow the column;
+    * otherwise, the column will grow in width.
+    *
+    * Only applies to {@link TableCell} elements.
+    *
+    * defaults to `false`.
+    */
   var noWrap: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Opacity of the content.
+    * Must be between 0 (fully transparent) and 1 (fully opaque).
+    *
+    * Defaults to `1`.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Controls whether to preserve spaces at the beginning of a paragraph.
+    *
+    * Defaults to `false`.
+    */
   var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether to preserve spaces at the end of a paragraph.
+    *
+    * Defaults to `false`.
+    */
+  var preserveTrailingSpaces: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether the text is rendered as subscript.
+    *
+    * Defaults to `false`.
+    */
+  var sub: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether the text is rendered as superscript.
+    *
+    * Defaults to `false`.
+    */
+  var sup: js.UndefOr[Boolean] = js.undefined
 }
 object Style {
   
@@ -80,7 +219,7 @@ object Style {
     
     inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String | PatternFill): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
@@ -96,7 +235,7 @@ object Style {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColumnGap(value: Size): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+    inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
     inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
     
@@ -112,7 +251,7 @@ object Style {
     
     inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
     
-    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: String | PatternFill): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
@@ -126,7 +265,7 @@ object Style {
     
     inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
     
-    inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+    inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
     
     inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
@@ -165,5 +304,17 @@ object Style {
     inline def setPreserveLeadingSpaces(value: Boolean): Self = StObject.set(x, "preserveLeadingSpaces", value.asInstanceOf[js.Any])
     
     inline def setPreserveLeadingSpacesUndefined: Self = StObject.set(x, "preserveLeadingSpaces", js.undefined)
+    
+    inline def setPreserveTrailingSpaces(value: Boolean): Self = StObject.set(x, "preserveTrailingSpaces", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveTrailingSpacesUndefined: Self = StObject.set(x, "preserveTrailingSpaces", js.undefined)
+    
+    inline def setSub(value: Boolean): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+    
+    inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+    
+    inline def setSup(value: Boolean): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+    
+    inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
   }
 }

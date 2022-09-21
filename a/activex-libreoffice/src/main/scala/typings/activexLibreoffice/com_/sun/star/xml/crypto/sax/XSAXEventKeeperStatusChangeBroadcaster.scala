@@ -36,7 +36,7 @@ object XSAXEventKeeperStatusChangeBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addSAXEventKeeperStatusChangeListener: XSAXEventKeeperStatusChangeListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSAXEventKeeperStatusChangeListener: XSAXEventKeeperStatusChangeListener => Unit
   ): XSAXEventKeeperStatusChangeBroadcaster = {

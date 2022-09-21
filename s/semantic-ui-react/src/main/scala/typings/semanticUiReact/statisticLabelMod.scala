@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object statisticLabelMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Statistic/StatisticLabel", JSImport.Default)
   @js.native
-  val default: StatelessComponent[StatisticLabelProps] = js.native
+  val default: FC[StatisticLabelProps] = js.native
   
   trait StatisticLabelProps
     extends StObject
        with StrictStatisticLabelProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object StatisticLabelProps {
     
     inline def apply(): StatisticLabelProps = {
@@ -30,7 +30,7 @@ object statisticLabelMod extends Shortcut {
   trait StrictStatisticLabelProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object statisticLabelMod extends Shortcut {
     
     extension [Self <: StrictStatisticLabelProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object statisticLabelMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[StatisticLabelProps]
+  type _To = FC[StatisticLabelProps]
   
   /* This means you don't have to write `default`, but can instead just say `statisticLabelMod.foo` */
-  override def _to: StatelessComponent[StatisticLabelProps] = default
+  override def _to: FC[StatisticLabelProps] = default
 }

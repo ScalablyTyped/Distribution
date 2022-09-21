@@ -1,40 +1,47 @@
 package typings.wxServerSdk.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.wxServerSdk.anon.APPID
+import typings.wxServerSdk.anon.CloudPath
+import typings.wxServerSdk.anon.Data
+import typings.wxServerSdk.anon.FileID
+import typings.wxServerSdk.anon.FileList
+import typings.wxServerSdk.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 // 云函数
-inline def callFunction(options: typings.wxServerSdk.anon.Data): js.Promise[typings.wxServerSdk.mod.CallFunctionSuccess] = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("callFunction")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.wxServerSdk.mod.CallFunctionSuccess]]
+inline def callFunction(options: Data): js.Promise[CallFunctionSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("callFunction")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CallFunctionSuccess]]
 
 // 数据库 API
-inline def database(): typings.wxServerSdk.mod.Database_ = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("database")().asInstanceOf[typings.wxServerSdk.mod.Database_]
-inline def database(options: typings.wxServerSdk.mod.DatabaseOptions): typings.wxServerSdk.mod.Database_ = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("database")(options.asInstanceOf[js.Any]).asInstanceOf[typings.wxServerSdk.mod.Database_]
+inline def database(): Database_ = ^.asInstanceOf[js.Dynamic].applyDynamic("database")().asInstanceOf[Database_]
+inline def database(options: DatabaseOptions): Database_ = ^.asInstanceOf[js.Dynamic].applyDynamic("database")(options.asInstanceOf[js.Any]).asInstanceOf[Database_]
 
-inline def deleteFile(options: typings.wxServerSdk.anon.FileList): js.Promise[typings.wxServerSdk.mod.DeleteFileSuccess] = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.wxServerSdk.mod.DeleteFileSuccess]]
+inline def deleteFile(options: FileList): js.Promise[DeleteFileSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteFileSuccess]]
 
-inline def downloadFile(options: typings.wxServerSdk.anon.FileID): js.Promise[typings.wxServerSdk.mod.DownloadFileSuccess] = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.wxServerSdk.mod.DownloadFileSuccess]]
+inline def downloadFile(options: FileID): js.Promise[DownloadFileSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DownloadFileSuccess]]
 
-inline def getTempFileURL(options: typings.wxServerSdk.anon.FileList): js.Promise[typings.wxServerSdk.mod.TetTempFileURLSuccess] = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getTempFileURL")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.wxServerSdk.mod.TetTempFileURLSuccess]]
+inline def getTempFileURL(options: FileList): js.Promise[TetTempFileURLSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTempFileURL")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TetTempFileURLSuccess]]
 
 // 云函数
-inline def getVoIPSign(options: typings.wxServerSdk.mod.GetVoIPSignOptions): js.Promise[typings.wxServerSdk.mod.GetVoIPSignSuccess] = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getVoIPSign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.wxServerSdk.mod.GetVoIPSignSuccess]]
+inline def getVoIPSign(options: GetVoIPSignOptions): js.Promise[GetVoIPSignSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVoIPSign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVoIPSignSuccess]]
 
-inline def getWXContext(): typings.wxServerSdk.anon.APPID = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getWXContext")().asInstanceOf[typings.wxServerSdk.anon.APPID]
+inline def getWXContext(): APPID = ^.asInstanceOf[js.Dynamic].applyDynamic("getWXContext")().asInstanceOf[APPID]
 
-inline def init(): scala.Unit = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[scala.Unit]
-inline def init(options: typings.wxServerSdk.mod.InitOptions): scala.Unit = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+inline def init(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def updateConfig(options: typings.wxServerSdk.mod.InitOptions): scala.Unit = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateConfig")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def updateConfig(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 // 存储 API
-inline def uploadFile(options: typings.wxServerSdk.anon.CloudPath): js.Promise[typings.wxServerSdk.mod.UploadFileSuccess] = typings.wxServerSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("uploadFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.wxServerSdk.mod.UploadFileSuccess]]
+inline def uploadFile(options: CloudPath): js.Promise[UploadFileSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UploadFileSuccess]]
 
-type CrosFieldCommand = org.scalablytyped.runtime.StringDictionary[typings.wxServerSdk.mod.Command | scala.Boolean]
+type CrosFieldCommand = StringDictionary[Command | Boolean]
 
-type DBRegExp = typings.std.RegExp
+type DBRegExp = js.RegExp
 
-type PointCoordinates = js.Tuple2[scala.Double, scala.Double]
+type PointCoordinates = js.Tuple2[Double, Double]
 
-type ServerDate = typings.std.Date
+type ServerDate = js.Date

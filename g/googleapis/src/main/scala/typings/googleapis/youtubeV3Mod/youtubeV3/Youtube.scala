@@ -7,27 +7,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * YouTube Data API
-  *
-  * Supports core YouTube features, such as uploading videos, creating and
-  * managing playlists, searching for content, and much more.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const youtube = google.youtube('v3');
-  *
-  * @namespace youtube
-  * @type {Function}
-  * @version v3
-  * @variation v3
-  * @param {object=} options Options for Youtube
-  */
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Youtube")
 @js.native
-class Youtube protected () extends StObject {
+open class Youtube protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+  
+  var abuseReports: ResourceAbusereports = js.native
   
   var activities: ResourceActivities = js.native
   
@@ -45,8 +31,6 @@ class Youtube protected () extends StObject {
   
   var context: APIRequestContext = js.native
   
-  var guideCategories: ResourceGuidecategories = js.native
-  
   var i18nLanguages: ResourceI18nlanguages = js.native
   
   var i18nRegions: ResourceI18nregions = js.native
@@ -61,17 +45,23 @@ class Youtube protected () extends StObject {
   
   var liveStreams: ResourceLivestreams = js.native
   
+  var members: ResourceMembers = js.native
+  
+  var membershipsLevels: ResourceMembershipslevels = js.native
+  
   var playlistItems: ResourcePlaylistitems = js.native
   
   var playlists: ResourcePlaylists = js.native
   
   var search: ResourceSearch = js.native
   
-  var sponsors: ResourceSponsors = js.native
-  
   var subscriptions: ResourceSubscriptions = js.native
   
   var superChatEvents: ResourceSuperchatevents = js.native
+  
+  var tests: ResourceTests = js.native
+  
+  var thirdPartyLinks: ResourceThirdpartylinks = js.native
   
   var thumbnails: ResourceThumbnails = js.native
   
@@ -82,4 +72,6 @@ class Youtube protected () extends StObject {
   var videos: ResourceVideos = js.native
   
   var watermarks: ResourceWatermarks = js.native
+  
+  var youtube: ResourceYoutube = js.native
 }

@@ -8,5 +8,5 @@ object getBucketNotificationInputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetBucketNotificationInput", "GetBucketNotificationInput")
   @js.native
-  val GetBucketNotificationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBucketNotificationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

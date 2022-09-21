@@ -2,7 +2,7 @@ package typings.canvasRenderer
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.canvasRenderer.canvasContextMod.CanvasContext
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,8 +57,8 @@ object canvasMod {
       */
     def toDataURL(): String = js.native
     def toDataURL(`type`: String): String = js.native
-    def toDataURL(`type`: String, encoderOptions: js.Any): String = js.native
-    def toDataURL(`type`: Unit, encoderOptions: js.Any): String = js.native
+    def toDataURL(`type`: String, encoderOptions: Any): String = js.native
+    def toDataURL(`type`: Unit, encoderOptions: Any): String = js.native
     
     /**
       * Renders the canvas as a PNG data stream.

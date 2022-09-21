@@ -1,11 +1,27 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.DETAILED_STATUS
+import typings.awsSdk.awsSdkStrings.PRE_PROVISION
+import typings.awsSdk.awsSdkStrings.RESOURCE
+import typings.awsSdk.awsSdkStrings.Resource_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Account = java.lang.String
+type AcceptTermsAndConditions = Boolean
+
+type Account = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.INTERSECTION
+  - typings.awsSdk.awsSdkStrings.DIFFERENCE
+  - typings.awsSdk.awsSdkStrings.UNION
+  - java.lang.String
+*/
+type AccountFilterType = _AccountFilterType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCEEDED
@@ -13,29 +29,42 @@ type Account = java.lang.String
   - typings.awsSdk.awsSdkStrings.SKIPPED
   - java.lang.String
 */
-type AccountGateStatus = typings.awsSdk.cloudformationMod._AccountGateStatus | java.lang.String
+type AccountGateStatus = _AccountGateStatus | String
 
-type AccountGateStatusReason = java.lang.String
+type AccountGateStatusReason = String
 
-type AccountLimitList = js.Array[typings.awsSdk.cloudformationMod.AccountLimit]
+type AccountLimitList = js.Array[AccountLimit]
 
-type AccountList = js.Array[typings.awsSdk.cloudformationMod.Account]
+type AccountList = js.Array[Account]
 
-type AllowedValue = java.lang.String
+type AccountsUrl = String
 
-type AllowedValues = js.Array[typings.awsSdk.cloudformationMod.AllowedValue]
+type AllowedValue = String
 
-type Arn = java.lang.String
+type AllowedValues = js.Array[AllowedValue]
 
-type AutoDeploymentNullable = scala.Boolean
+type Arn = String
 
-type BoxedInteger = scala.Double
+type AutoDeploymentNullable = Boolean
 
-type BoxedMaxResults = scala.Double
+type AutoUpdate = Boolean
 
-type Capabilities = js.Array[typings.awsSdk.cloudformationMod.Capability]
+type BatchDescribeTypeConfigurationsErrors = js.Array[BatchDescribeTypeConfigurationsError]
 
-type CapabilitiesReason = java.lang.String
+type BoxedInteger = Double
+
+type BoxedMaxResults = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SELF
+  - typings.awsSdk.awsSdkStrings.DELEGATED_ADMIN
+  - java.lang.String
+*/
+type CallAs = _CallAs | String
+
+type Capabilities = js.Array[Capability]
+
+type CapabilitiesReason = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CAPABILITY_IAM
@@ -43,9 +72,18 @@ type CapabilitiesReason = java.lang.String
   - typings.awsSdk.awsSdkStrings.CAPABILITY_AUTO_EXPAND
   - java.lang.String
 */
-type Capability = typings.awsSdk.cloudformationMod._Capability | java.lang.String
+type Capability = _Capability | String
 
-type CausingEntity = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.REGISTERED
+  - typings.awsSdk.awsSdkStrings.ACTIVATED
+  - typings.awsSdk.awsSdkStrings.THIRD_PARTY
+  - typings.awsSdk.awsSdkStrings.AWS_TYPES
+  - java.lang.String
+*/
+type Category = _Category | String
+
+type CausingEntity = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Add_
@@ -55,13 +93,23 @@ type CausingEntity = java.lang.String
   - typings.awsSdk.awsSdkStrings.Dynamic_
   - java.lang.String
 */
-type ChangeAction = typings.awsSdk.cloudformationMod._ChangeAction | java.lang.String
+type ChangeAction = _ChangeAction | String
 
-type ChangeSetId = java.lang.String
+type ChangeSetHooks = js.Array[ChangeSetHook]
 
-type ChangeSetName = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PLANNING
+  - typings.awsSdk.awsSdkStrings.PLANNED
+  - typings.awsSdk.awsSdkStrings.UNAVAILABLE
+  - java.lang.String
+*/
+type ChangeSetHooksStatus = _ChangeSetHooksStatus | String
 
-type ChangeSetNameOrId = java.lang.String
+type ChangeSetId = String
+
+type ChangeSetName = String
+
+type ChangeSetNameOrId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_PENDING
@@ -74,11 +122,11 @@ type ChangeSetNameOrId = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ChangeSetStatus = typings.awsSdk.cloudformationMod._ChangeSetStatus | java.lang.String
+type ChangeSetStatus = _ChangeSetStatus | String
 
-type ChangeSetStatusReason = java.lang.String
+type ChangeSetStatusReason = String
 
-type ChangeSetSummaries = js.Array[typings.awsSdk.cloudformationMod.ChangeSetSummary]
+type ChangeSetSummaries = js.Array[ChangeSetSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE
@@ -86,7 +134,7 @@ type ChangeSetSummaries = js.Array[typings.awsSdk.cloudformationMod.ChangeSetSum
   - typings.awsSdk.awsSdkStrings.IMPORT
   - java.lang.String
 */
-type ChangeSetType = typings.awsSdk.cloudformationMod._ChangeSetType | java.lang.String
+type ChangeSetType = _ChangeSetType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ResourceReference
@@ -96,28 +144,32 @@ type ChangeSetType = typings.awsSdk.cloudformationMod._ChangeSetType | java.lang
   - typings.awsSdk.awsSdkStrings.Automatic_
   - java.lang.String
 */
-type ChangeSource = typings.awsSdk.cloudformationMod._ChangeSource | java.lang.String
+type ChangeSource = _ChangeSource | String
 
-type ChangeType = typings.awsSdk.awsSdkStrings.Resource_ | java.lang.String
+type ChangeType = Resource_ | String
 
-type Changes = js.Array[typings.awsSdk.cloudformationMod.Change]
+type Changes = js.Array[Change]
 
-type ClientRequestToken = java.lang.String
+type ClientRequestToken = String
 
-type ClientToken = java.lang.String
+type ClientToken = String
 
-type CreationTime = typings.std.Date
+type ConfigurationSchema = String
 
-type DeletionTime = typings.std.Date
+type ConnectionArn = String
+
+type CreationTime = js.Date
+
+type DeletionTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LIVE
   - typings.awsSdk.awsSdkStrings.DEPRECATED
   - java.lang.String
 */
-type DeprecatedStatus = typings.awsSdk.cloudformationMod._DeprecatedStatus | java.lang.String
+type DeprecatedStatus = _DeprecatedStatus | String
 
-type Description = java.lang.String
+type Description = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ADD
@@ -125,24 +177,28 @@ type Description = java.lang.String
   - typings.awsSdk.awsSdkStrings.NOT_EQUAL
   - java.lang.String
 */
-type DifferenceType = typings.awsSdk.cloudformationMod._DifferenceType | java.lang.String
+type DifferenceType = _DifferenceType | String
 
-type DisableRollback = scala.Boolean
+type DisableRollback = Boolean
 
-type DriftedStackInstancesCount = scala.Double
+type DriftedStackInstancesCount = Double
 
-type EnableTerminationProtection = scala.Boolean
+type EnableTerminationProtection = Boolean
+
+type ErrorCode = String
+
+type ErrorMessage = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Static_
   - typings.awsSdk.awsSdkStrings.Dynamic_
   - java.lang.String
 */
-type EvaluationType = typings.awsSdk.cloudformationMod._EvaluationType | java.lang.String
+type EvaluationType = _EvaluationType | String
 
-type EventId = java.lang.String
+type EventId = String
 
-type ExecutionRoleName = java.lang.String
+type ExecutionRoleName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNAVAILABLE
@@ -153,19 +209,19 @@ type ExecutionRoleName = java.lang.String
   - typings.awsSdk.awsSdkStrings.OBSOLETE
   - java.lang.String
 */
-type ExecutionStatus = typings.awsSdk.cloudformationMod._ExecutionStatus | java.lang.String
+type ExecutionStatus = _ExecutionStatus | String
 
-type ExportName = java.lang.String
+type ExportName = String
 
-type ExportValue = java.lang.String
+type ExportValue = String
 
-type Exports = js.Array[typings.awsSdk.cloudformationMod.Export]
+type Exports = js.Array[Export]
 
-type FailedStackInstancesCount = scala.Double
+type FailedStackInstancesCount = Double
 
-type FailureToleranceCount = scala.Double
+type FailureToleranceCount = Double
 
-type FailureTolerancePercentage = scala.Double
+type FailureTolerancePercentage = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NotUpdatable
@@ -182,51 +238,107 @@ type FailureTolerancePercentage = scala.Double
   - typings.awsSdk.awsSdkStrings.ServiceInternalError
   - typings.awsSdk.awsSdkStrings.NetworkFailure
   - typings.awsSdk.awsSdkStrings.InternalFailure
+  - typings.awsSdk.awsSdkStrings.InvalidTypeConfiguration
+  - typings.awsSdk.awsSdkStrings.HandlerInternalFailure
+  - typings.awsSdk.awsSdkStrings.NonCompliant
+  - typings.awsSdk.awsSdkStrings.Unknown_
   - java.lang.String
 */
-type HandlerErrorCode = typings.awsSdk.cloudformationMod._HandlerErrorCode | java.lang.String
+type HandlerErrorCode = _HandlerErrorCode | String
 
-type Imports = js.Array[typings.awsSdk.cloudformationMod.StackName]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FAIL
+  - typings.awsSdk.awsSdkStrings.WARN
+  - java.lang.String
+*/
+type HookFailureMode = _HookFailureMode | String
 
-type InProgressStackInstancesCount = scala.Double
+type HookInvocationCount = Double
 
-type InSyncStackInstancesCount = scala.Double
+type HookInvocationPoint = PRE_PROVISION | String
 
-type IncludeNestedStacks = scala.Boolean
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HOOK_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.HOOK_COMPLETE_SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.HOOK_COMPLETE_FAILED
+  - typings.awsSdk.awsSdkStrings.HOOK_FAILED
+  - java.lang.String
+*/
+type HookStatus = _HookStatus | String
 
-type IsDefaultVersion = scala.Boolean
+type HookStatusReason = String
 
-type Key = java.lang.String
+type HookTargetType = RESOURCE | String
 
-type LastUpdatedTime = typings.std.Date
+type HookTargetTypeName = String
 
-type LimitName = java.lang.String
+type HookType = String
 
-type LimitValue = scala.Double
+type HookTypeConfigurationVersionId = String
 
-type LogGroupName = java.lang.String
+type HookTypeName = String
 
-type LogicalResourceId = java.lang.String
+type HookTypeVersionId = String
 
-type LogicalResourceIds = js.Array[typings.awsSdk.cloudformationMod.LogicalResourceId]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWS_Marketplace
+  - typings.awsSdk.awsSdkStrings.GitHub_
+  - typings.awsSdk.awsSdkStrings.Bitbucket_
+  - java.lang.String
+*/
+type IdentityProvider = _IdentityProvider | String
 
-type MaxConcurrentCount = scala.Double
+type Imports = js.Array[StackName]
 
-type MaxConcurrentPercentage = scala.Double
+type InProgressStackInstancesCount = Double
 
-type MaxResults = scala.Double
+type InSyncStackInstancesCount = Double
 
-type Metadata = java.lang.String
+type IncludeNestedStacks = Boolean
 
-type MonitoringTimeInMinutes = scala.Double
+type IsActivated = Boolean
 
-type NextToken = java.lang.String
+type IsDefaultConfiguration = Boolean
 
-type NoEcho = scala.Boolean
+type IsDefaultVersion = Boolean
 
-type NotificationARN = java.lang.String
+type Key = String
 
-type NotificationARNs = js.Array[typings.awsSdk.cloudformationMod.NotificationARN]
+type LastUpdatedTime = js.Date
+
+type LimitName = String
+
+type LimitValue = Double
+
+type LogGroupName = String
+
+type LogicalIdHierarchy = String
+
+type LogicalResourceId = String
+
+type LogicalResourceIds = js.Array[LogicalResourceId]
+
+type MajorVersion = Double
+
+type ManagedExecutionNullable = Boolean
+
+type MaxConcurrentCount = Double
+
+type MaxConcurrentPercentage = Double
+
+type MaxResults = Double
+
+type Metadata = String
+
+type MonitoringTimeInMinutes = Double
+
+type NextToken = String
+
+type NoEcho = Boolean
+
+type NotificationARN = String
+
+type NotificationARNs = js.Array[NotificationARN]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DO_NOTHING
@@ -234,7 +346,7 @@ type NotificationARNs = js.Array[typings.awsSdk.cloudformationMod.NotificationAR
   - typings.awsSdk.awsSdkStrings.DELETE
   - java.lang.String
 */
-type OnFailure = typings.awsSdk.cloudformationMod._OnFailure | java.lang.String
+type OnFailure = _OnFailure | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -243,52 +355,52 @@ type OnFailure = typings.awsSdk.cloudformationMod._OnFailure | java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type OperationStatus = typings.awsSdk.cloudformationMod._OperationStatus | java.lang.String
+type OperationStatus = _OperationStatus | String
 
-type OptionalSecureUrl = java.lang.String
+type OptionalSecureUrl = String
 
-type OrganizationalUnitId = java.lang.String
+type OrganizationalUnitId = String
 
-type OrganizationalUnitIdList = js.Array[typings.awsSdk.cloudformationMod.OrganizationalUnitId]
+type OrganizationalUnitIdList = js.Array[OrganizationalUnitId]
 
-type OutputKey = java.lang.String
+type OutputKey = String
 
-type OutputValue = java.lang.String
+type OutputValue = String
 
-type Outputs = js.Array[typings.awsSdk.cloudformationMod.Output]
+type Outputs = js.Array[Output]
 
-type ParameterDeclarations = js.Array[typings.awsSdk.cloudformationMod.ParameterDeclaration]
+type ParameterDeclarations = js.Array[ParameterDeclaration]
 
-type ParameterKey = java.lang.String
+type ParameterKey = String
 
-type ParameterType = java.lang.String
+type ParameterType = String
 
-type ParameterValue = java.lang.String
+type ParameterValue = String
 
-type Parameters = js.Array[typings.awsSdk.cloudformationMod.Parameter]
+type Parameters = js.Array[Parameter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SERVICE_MANAGED
   - typings.awsSdk.awsSdkStrings.SELF_MANAGED
   - java.lang.String
 */
-type PermissionModels = typings.awsSdk.cloudformationMod._PermissionModels | java.lang.String
+type PermissionModels = _PermissionModels | String
 
-type PhysicalResourceId = java.lang.String
+type PhysicalResourceId = String
 
-type PhysicalResourceIdContext = js.Array[typings.awsSdk.cloudformationMod.PhysicalResourceIdContextKeyValuePair]
+type PhysicalResourceIdContext = js.Array[PhysicalResourceIdContextKeyValuePair]
 
-type PrivateTypeArn = java.lang.String
+type PrivateTypeArn = String
 
-type Properties = java.lang.String
+type Properties = String
 
-type PropertyDifferences = js.Array[typings.awsSdk.cloudformationMod.PropertyDifference]
+type PropertyDifferences = js.Array[PropertyDifference]
 
-type PropertyName = java.lang.String
+type PropertyName = String
 
-type PropertyPath = java.lang.String
+type PropertyPath = String
 
-type PropertyValue = java.lang.String
+type PropertyValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NON_PROVISIONABLE
@@ -296,13 +408,35 @@ type PropertyValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.FULLY_MUTABLE
   - java.lang.String
 */
-type ProvisioningType = typings.awsSdk.cloudformationMod._ProvisioningType | java.lang.String
+type ProvisioningType = _ProvisioningType | String
 
-type Reason = java.lang.String
+type PublicVersionNumber = String
 
-type Region = java.lang.String
+type PublisherId = String
 
-type RegionList = js.Array[typings.awsSdk.cloudformationMod.Region]
+type PublisherName = String
+
+type PublisherProfile = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VERIFIED
+  - typings.awsSdk.awsSdkStrings.UNVERIFIED
+  - java.lang.String
+*/
+type PublisherStatus = _PublisherStatus | String
+
+type Reason = String
+
+type Region = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SEQUENTIAL
+  - typings.awsSdk.awsSdkStrings.PARALLEL
+  - java.lang.String
+*/
+type RegionConcurrencyType = _RegionConcurrencyType | String
+
+type RegionList = js.Array[Region]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLETE
@@ -310,13 +444,19 @@ type RegionList = js.Array[typings.awsSdk.cloudformationMod.Region]
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type RegistrationStatus = typings.awsSdk.cloudformationMod._RegistrationStatus | java.lang.String
+type RegistrationStatus = _RegistrationStatus | String
 
-type RegistrationToken = java.lang.String
+type RegistrationToken = String
 
-type RegistrationTokenList = js.Array[typings.awsSdk.cloudformationMod.RegistrationToken]
+type RegistrationTokenList = js.Array[RegistrationToken]
 
-type RegistryType = typings.awsSdk.awsSdkStrings.RESOURCE | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RESOURCE
+  - typings.awsSdk.awsSdkStrings.MODULE
+  - typings.awsSdk.awsSdkStrings.HOOK
+  - java.lang.String
+*/
+type RegistryType = _RegistryType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.True_
@@ -324,9 +464,11 @@ type RegistryType = typings.awsSdk.awsSdkStrings.RESOURCE | java.lang.String
   - typings.awsSdk.awsSdkStrings.Conditional_
   - java.lang.String
 */
-type Replacement = typings.awsSdk.cloudformationMod._Replacement | java.lang.String
+type Replacement = _Replacement | String
 
-type RequestToken = java.lang.String
+type RequestToken = String
+
+type RequiredActivatedTypes = js.Array[RequiredActivatedType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Never_
@@ -334,7 +476,7 @@ type RequestToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.Always_
   - java.lang.String
 */
-type RequiresRecreation = typings.awsSdk.cloudformationMod._RequiresRecreation | java.lang.String
+type RequiresRecreation = _RequiresRecreation | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Properties_
@@ -345,32 +487,32 @@ type RequiresRecreation = typings.awsSdk.cloudformationMod._RequiresRecreation |
   - typings.awsSdk.awsSdkStrings.Tags_
   - java.lang.String
 */
-type ResourceAttribute = typings.awsSdk.cloudformationMod._ResourceAttribute | java.lang.String
+type ResourceAttribute = _ResourceAttribute | String
 
-type ResourceChangeDetails = js.Array[typings.awsSdk.cloudformationMod.ResourceChangeDetail]
+type ResourceChangeDetails = js.Array[ResourceChangeDetail]
 
-type ResourceIdentifierProperties = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cloudformationMod.ResourceIdentifierPropertyValue]
+type ResourceIdentifierProperties = StringDictionary[ResourceIdentifierPropertyValue]
 
-type ResourceIdentifierPropertyKey = java.lang.String
+type ResourceIdentifierPropertyKey = String
 
-type ResourceIdentifierPropertyValue = java.lang.String
+type ResourceIdentifierPropertyValue = String
 
-type ResourceIdentifierSummaries = js.Array[typings.awsSdk.cloudformationMod.ResourceIdentifierSummary]
+type ResourceIdentifierSummaries = js.Array[ResourceIdentifierSummary]
 
-type ResourceIdentifiers = js.Array[typings.awsSdk.cloudformationMod.ResourceIdentifierPropertyKey]
+type ResourceIdentifiers = js.Array[ResourceIdentifierPropertyKey]
 
-type ResourceModel = java.lang.String
+type ResourceModel = String
 
-type ResourceProperties = java.lang.String
+type ResourceProperties = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCESS
   - typings.awsSdk.awsSdkStrings.FAILURE
   - java.lang.String
 */
-type ResourceSignalStatus = typings.awsSdk.cloudformationMod._ResourceSignalStatus | java.lang.String
+type ResourceSignalStatus = _ResourceSignalStatus | String
 
-type ResourceSignalUniqueId = java.lang.String
+type ResourceSignalUniqueId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_IN_PROGRESS
@@ -389,41 +531,49 @@ type ResourceSignalUniqueId = java.lang.String
   - typings.awsSdk.awsSdkStrings.IMPORT_ROLLBACK_IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.IMPORT_ROLLBACK_FAILED
   - typings.awsSdk.awsSdkStrings.IMPORT_ROLLBACK_COMPLETE
+  - typings.awsSdk.awsSdkStrings.UPDATE_ROLLBACK_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.UPDATE_ROLLBACK_COMPLETE
+  - typings.awsSdk.awsSdkStrings.UPDATE_ROLLBACK_FAILED
+  - typings.awsSdk.awsSdkStrings.ROLLBACK_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.ROLLBACK_COMPLETE
+  - typings.awsSdk.awsSdkStrings.ROLLBACK_FAILED
   - java.lang.String
 */
-type ResourceStatus = typings.awsSdk.cloudformationMod._ResourceStatus | java.lang.String
+type ResourceStatus = _ResourceStatus | String
 
-type ResourceStatusReason = java.lang.String
+type ResourceStatusReason = String
 
-type ResourceToSkip = java.lang.String
+type ResourceToSkip = String
 
-type ResourceType = java.lang.String
+type ResourceType = String
 
-type ResourceTypes = js.Array[typings.awsSdk.cloudformationMod.ResourceType]
+type ResourceTypes = js.Array[ResourceType]
 
-type ResourcesToImport = js.Array[typings.awsSdk.cloudformationMod.ResourceToImport]
+type ResourcesToImport = js.Array[ResourceToImport]
 
-type ResourcesToSkip = js.Array[typings.awsSdk.cloudformationMod.ResourceToSkip]
+type ResourcesToSkip = js.Array[ResourceToSkip]
 
-type RetainResources = js.Array[typings.awsSdk.cloudformationMod.LogicalResourceId]
+type RetainResources = js.Array[LogicalResourceId]
 
-type RetainStacks = scala.Boolean
+type RetainStacks = Boolean
 
-type RetainStacksNullable = scala.Boolean
+type RetainStacksNullable = Boolean
 
-type RetainStacksOnAccountRemovalNullable = scala.Boolean
+type RetainStacksOnAccountRemovalNullable = Boolean
 
-type RoleARN_ = java.lang.String
+type RoleARN_ = String
 
-type RoleArn = java.lang.String
+type RoleArn = String
 
-type RollbackTriggers = js.Array[typings.awsSdk.cloudformationMod.RollbackTrigger]
+type RollbackTriggers = js.Array[RollbackTrigger]
 
-type S3Url = java.lang.String
+type S3Bucket = String
 
-type Scope = js.Array[typings.awsSdk.cloudformationMod.ResourceAttribute]
+type S3Url = String
 
-type StackDriftDetectionId = java.lang.String
+type Scope = js.Array[ResourceAttribute]
+
+type StackDriftDetectionId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DETECTION_IN_PROGRESS
@@ -431,9 +581,9 @@ type StackDriftDetectionId = java.lang.String
   - typings.awsSdk.awsSdkStrings.DETECTION_COMPLETE
   - java.lang.String
 */
-type StackDriftDetectionStatus = typings.awsSdk.cloudformationMod._StackDriftDetectionStatus | java.lang.String
+type StackDriftDetectionStatus = _StackDriftDetectionStatus | String
 
-type StackDriftDetectionStatusReason = java.lang.String
+type StackDriftDetectionStatusReason = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DRIFTED
@@ -442,11 +592,15 @@ type StackDriftDetectionStatusReason = java.lang.String
   - typings.awsSdk.awsSdkStrings.NOT_CHECKED
   - java.lang.String
 */
-type StackDriftStatus = typings.awsSdk.cloudformationMod._StackDriftStatus | java.lang.String
+type StackDriftStatus = _StackDriftStatus | String
 
-type StackEvents = js.Array[typings.awsSdk.cloudformationMod.StackEvent]
+type StackEvents = js.Array[StackEvent]
 
-type StackId = java.lang.String
+type StackId = String
+
+type StackIdList = js.Array[StackId]
+
+type StackIdsUrl = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -457,13 +611,13 @@ type StackId = java.lang.String
   - typings.awsSdk.awsSdkStrings.INOPERABLE
   - java.lang.String
 */
-type StackInstanceDetailedStatus = typings.awsSdk.cloudformationMod._StackInstanceDetailedStatus | java.lang.String
+type StackInstanceDetailedStatus = _StackInstanceDetailedStatus | String
 
-type StackInstanceFilterName = typings.awsSdk.awsSdkStrings.DETAILED_STATUS | java.lang.String
+type StackInstanceFilterName = DETAILED_STATUS | String
 
-type StackInstanceFilterValues = java.lang.String
+type StackInstanceFilterValues = String
 
-type StackInstanceFilters = js.Array[typings.awsSdk.cloudformationMod.StackInstanceFilter]
+type StackInstanceFilters = js.Array[StackInstanceFilter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CURRENT
@@ -471,21 +625,21 @@ type StackInstanceFilters = js.Array[typings.awsSdk.cloudformationMod.StackInsta
   - typings.awsSdk.awsSdkStrings.INOPERABLE
   - java.lang.String
 */
-type StackInstanceStatus = typings.awsSdk.cloudformationMod._StackInstanceStatus | java.lang.String
+type StackInstanceStatus = _StackInstanceStatus | String
 
-type StackInstanceSummaries = js.Array[typings.awsSdk.cloudformationMod.StackInstanceSummary]
+type StackInstanceSummaries = js.Array[StackInstanceSummary]
 
-type StackName = java.lang.String
+type StackName = String
 
-type StackNameOrId = java.lang.String
+type StackNameOrId = String
 
-type StackPolicyBody = java.lang.String
+type StackPolicyBody = String
 
-type StackPolicyDuringUpdateBody = java.lang.String
+type StackPolicyDuringUpdateBody = String
 
-type StackPolicyDuringUpdateURL = java.lang.String
+type StackPolicyDuringUpdateURL = String
 
-type StackPolicyURL = java.lang.String
+type StackPolicyURL = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_SYNC
@@ -494,17 +648,17 @@ type StackPolicyURL = java.lang.String
   - typings.awsSdk.awsSdkStrings.NOT_CHECKED
   - java.lang.String
 */
-type StackResourceDriftStatus = typings.awsSdk.cloudformationMod._StackResourceDriftStatus | java.lang.String
+type StackResourceDriftStatus = _StackResourceDriftStatus | String
 
-type StackResourceDriftStatusFilters = js.Array[typings.awsSdk.cloudformationMod.StackResourceDriftStatus]
+type StackResourceDriftStatusFilters = js.Array[StackResourceDriftStatus]
 
-type StackResourceDrifts = js.Array[typings.awsSdk.cloudformationMod.StackResourceDrift]
+type StackResourceDrifts = js.Array[StackResourceDrift]
 
-type StackResourceSummaries = js.Array[typings.awsSdk.cloudformationMod.StackResourceSummary]
+type StackResourceSummaries = js.Array[StackResourceSummary]
 
-type StackResources = js.Array[typings.awsSdk.cloudformationMod.StackResource]
+type StackResources = js.Array[StackResource]
 
-type StackSetARN = java.lang.String
+type StackSetARN = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLETED
@@ -514,7 +668,7 @@ type StackSetARN = java.lang.String
   - typings.awsSdk.awsSdkStrings.STOPPED
   - java.lang.String
 */
-type StackSetDriftDetectionStatus = typings.awsSdk.cloudformationMod._StackSetDriftDetectionStatus | java.lang.String
+type StackSetDriftDetectionStatus = _StackSetDriftDetectionStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DRIFTED
@@ -522,13 +676,13 @@ type StackSetDriftDetectionStatus = typings.awsSdk.cloudformationMod._StackSetDr
   - typings.awsSdk.awsSdkStrings.NOT_CHECKED
   - java.lang.String
 */
-type StackSetDriftStatus = typings.awsSdk.cloudformationMod._StackSetDriftStatus | java.lang.String
+type StackSetDriftStatus = _StackSetDriftStatus | String
 
-type StackSetId = java.lang.String
+type StackSetId = String
 
-type StackSetName = java.lang.String
+type StackSetName = String
 
-type StackSetNameOrId = java.lang.String
+type StackSetNameOrId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE
@@ -537,7 +691,7 @@ type StackSetNameOrId = java.lang.String
   - typings.awsSdk.awsSdkStrings.DETECT_DRIFT
   - java.lang.String
 */
-type StackSetOperationAction = typings.awsSdk.cloudformationMod._StackSetOperationAction | java.lang.String
+type StackSetOperationAction = _StackSetOperationAction | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -547,9 +701,9 @@ type StackSetOperationAction = typings.awsSdk.cloudformationMod._StackSetOperati
   - typings.awsSdk.awsSdkStrings.CANCELLED
   - java.lang.String
 */
-type StackSetOperationResultStatus = typings.awsSdk.cloudformationMod._StackSetOperationResultStatus | java.lang.String
+type StackSetOperationResultStatus = _StackSetOperationResultStatus | String
 
-type StackSetOperationResultSummaries = js.Array[typings.awsSdk.cloudformationMod.StackSetOperationResultSummary]
+type StackSetOperationResultSummaries = js.Array[StackSetOperationResultSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RUNNING
@@ -560,18 +714,20 @@ type StackSetOperationResultSummaries = js.Array[typings.awsSdk.cloudformationMo
   - typings.awsSdk.awsSdkStrings.QUEUED
   - java.lang.String
 */
-type StackSetOperationStatus = typings.awsSdk.cloudformationMod._StackSetOperationStatus | java.lang.String
+type StackSetOperationStatus = _StackSetOperationStatus | String
 
-type StackSetOperationSummaries = js.Array[typings.awsSdk.cloudformationMod.StackSetOperationSummary]
+type StackSetOperationStatusReason = String
+
+type StackSetOperationSummaries = js.Array[StackSetOperationSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type StackSetStatus = typings.awsSdk.cloudformationMod._StackSetStatus | java.lang.String
+type StackSetStatus = _StackSetStatus | String
 
-type StackSetSummaries = js.Array[typings.awsSdk.cloudformationMod.StackSetSummary]
+type StackSetSummaries = js.Array[StackSetSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_IN_PROGRESS
@@ -586,6 +742,7 @@ type StackSetSummaries = js.Array[typings.awsSdk.cloudformationMod.StackSetSumma
   - typings.awsSdk.awsSdkStrings.UPDATE_IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.UPDATE_COMPLETE_CLEANUP_IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.UPDATE_COMPLETE
+  - typings.awsSdk.awsSdkStrings.UPDATE_FAILED
   - typings.awsSdk.awsSdkStrings.UPDATE_ROLLBACK_IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.UPDATE_ROLLBACK_FAILED
   - typings.awsSdk.awsSdkStrings.UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS
@@ -598,85 +755,133 @@ type StackSetSummaries = js.Array[typings.awsSdk.cloudformationMod.StackSetSumma
   - typings.awsSdk.awsSdkStrings.IMPORT_ROLLBACK_COMPLETE
   - java.lang.String
 */
-type StackStatus = typings.awsSdk.cloudformationMod._StackStatus | java.lang.String
+type StackStatus = _StackStatus | String
 
-type StackStatusFilter = js.Array[typings.awsSdk.cloudformationMod.StackStatus]
+type StackStatusFilter = js.Array[StackStatus]
 
-type StackStatusReason = java.lang.String
+type StackStatusReason = String
 
-type StackSummaries = js.Array[typings.awsSdk.cloudformationMod.StackSummary]
+type StackSummaries = js.Array[StackSummary]
 
-type Stacks = js.Array[typings.awsSdk.cloudformationMod.Stack]
+type Stacks = js.Array[Stack]
 
-type StageList = js.Array[typings.awsSdk.cloudformationMod.TemplateStage]
+type StageList = js.Array[TemplateStage]
 
-type StatusMessage = java.lang.String
+type StatusMessage = String
 
-type TagKey = java.lang.String
+type SupportedMajorVersion = Double
 
-type TagValue = java.lang.String
+type SupportedMajorVersions = js.Array[SupportedMajorVersion]
 
-type Tags = js.Array[typings.awsSdk.cloudformationMod.Tag]
+type TagKey = String
 
-type TemplateBody = java.lang.String
+type TagValue = String
 
-type TemplateDescription = java.lang.String
+type Tags = js.Array[Tag]
 
-type TemplateParameters = js.Array[typings.awsSdk.cloudformationMod.TemplateParameter]
+type TemplateBody = String
+
+type TemplateDescription = String
+
+type TemplateParameters = js.Array[TemplateParameter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Original_
   - typings.awsSdk.awsSdkStrings.Processed
   - java.lang.String
 */
-type TemplateStage = typings.awsSdk.cloudformationMod._TemplateStage | java.lang.String
+type TemplateStage = _TemplateStage | String
 
-type TemplateURL = java.lang.String
+type TemplateURL = String
 
-type TimeoutMinutes = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RESOURCE
+  - typings.awsSdk.awsSdkStrings.MODULE
+  - typings.awsSdk.awsSdkStrings.HOOK
+  - java.lang.String
+*/
+type ThirdPartyType = _ThirdPartyType | String
 
-type Timestamp = typings.std.Date
+type ThirdPartyTypeArn = String
 
-type TotalStackInstancesCount = scala.Double
+type TimeoutMinutes = Double
 
-type TransformName = java.lang.String
+type Timestamp = js.Date
 
-type TransformsList = js.Array[typings.awsSdk.cloudformationMod.TransformName]
+type TotalStackInstancesCount = Double
 
-type Type = java.lang.String
+type TransformName = String
 
-type TypeArn = java.lang.String
+type TransformsList = js.Array[TransformName]
 
-type TypeName = java.lang.String
+type Type = String
 
-type TypeSchema = java.lang.String
+type TypeArn = String
 
-type TypeSummaries = js.Array[typings.awsSdk.cloudformationMod.TypeSummary]
+type TypeConfiguration = String
 
-type TypeVersionId = java.lang.String
+type TypeConfigurationAlias = String
 
-type TypeVersionSummaries = js.Array[typings.awsSdk.cloudformationMod.TypeVersionSummary]
+type TypeConfigurationArn = String
 
-type Url = java.lang.String
+type TypeConfigurationDetailsList = js.Array[TypeConfigurationDetails]
 
-type UsePreviousTemplate = scala.Boolean
+type TypeConfigurationIdentifiers = js.Array[TypeConfigurationIdentifier]
 
-type UsePreviousValue = scala.Boolean
+type TypeHierarchy = String
 
-type Value = java.lang.String
+type TypeName = String
 
-type Version = java.lang.String
+type TypeNamePrefix = String
+
+type TypeSchema = String
+
+type TypeSummaries = js.Array[TypeSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PASSED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.NOT_TESTED
+  - java.lang.String
+*/
+type TypeTestsStatus = _TypeTestsStatus | String
+
+type TypeTestsStatusDescription = String
+
+type TypeVersionId = String
+
+type TypeVersionSummaries = js.Array[TypeVersionSummary]
+
+type UnprocessedTypeConfigurations = js.Array[TypeConfigurationIdentifier]
+
+type Url = String
+
+type UsePreviousTemplate = Boolean
+
+type UsePreviousValue = Boolean
+
+type Value = String
+
+type Version = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MAJOR
+  - typings.awsSdk.awsSdkStrings.MINOR
+  - java.lang.String
+*/
+type VersionBump = _VersionBump | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLIC
   - typings.awsSdk.awsSdkStrings.PRIVATE
   - java.lang.String
 */
-type Visibility = typings.awsSdk.cloudformationMod._Visibility | java.lang.String
+type Visibility = _Visibility | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2010-05-15`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.cloudformationMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

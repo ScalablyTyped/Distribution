@@ -117,7 +117,7 @@ trait DefineOptions[TInstance] extends StObject {
   /**
     * Throws an error when no records found
     */
-  var rejectOnError: js.UndefOr[Boolean | typings.std.Error] = js.undefined
+  var rejectOnError: js.UndefOr[Boolean | js.Error] = js.undefined
   
   /**
     * Specify the ROW_FORMAT for use with the MySQL InnoDB engine.
@@ -251,7 +251,7 @@ object DefineOptions {
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: DefineIndexesOptions*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: DefineIndexesOptions*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setInitialAutoIncrement(value: String): Self = StObject.set(x, "initialAutoIncrement", value.asInstanceOf[js.Any])
     
@@ -273,7 +273,7 @@ object DefineOptions {
     
     inline def setParanoidUndefined: Self = StObject.set(x, "paranoid", js.undefined)
     
-    inline def setRejectOnError(value: Boolean | typings.std.Error): Self = StObject.set(x, "rejectOnError", value.asInstanceOf[js.Any])
+    inline def setRejectOnError(value: Boolean | js.Error): Self = StObject.set(x, "rejectOnError", value.asInstanceOf[js.Any])
     
     inline def setRejectOnErrorUndefined: Self = StObject.set(x, "rejectOnError", js.undefined)
     

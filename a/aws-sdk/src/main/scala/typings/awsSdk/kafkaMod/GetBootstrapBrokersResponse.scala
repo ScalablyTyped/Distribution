@@ -15,6 +15,34 @@ trait GetBootstrapBrokersResponse extends StObject {
   
   /**
     * 
+    A string that contains one or more DNS names (or IP addresses) and SASL IAM port pairs.
+    
+    */
+  var BootstrapBrokerStringPublicSaslIam: js.UndefOr[string] = js.undefined
+  
+  /**
+    * 
+    A string containing one or more DNS names (or IP) and Sasl Scram port pairs.
+    
+    */
+  var BootstrapBrokerStringPublicSaslScram: js.UndefOr[string] = js.undefined
+  
+  /**
+    * 
+    A string containing one or more DNS names (or IP) and TLS port pairs.
+    
+    */
+  var BootstrapBrokerStringPublicTls: js.UndefOr[string] = js.undefined
+  
+  /**
+    * 
+    A string that contains one or more DNS names (or IP addresses) and SASL IAM port pairs.
+    
+    */
+  var BootstrapBrokerStringSaslIam: js.UndefOr[string] = js.undefined
+  
+  /**
+    * 
     A string containing one or more DNS names (or IP) and Sasl Scram port pairs.
     
     */
@@ -37,6 +65,22 @@ object GetBootstrapBrokersResponse {
   extension [Self <: GetBootstrapBrokersResponse](x: Self) {
     
     inline def setBootstrapBrokerString(value: string): Self = StObject.set(x, "BootstrapBrokerString", value.asInstanceOf[js.Any])
+    
+    inline def setBootstrapBrokerStringPublicSaslIam(value: string): Self = StObject.set(x, "BootstrapBrokerStringPublicSaslIam", value.asInstanceOf[js.Any])
+    
+    inline def setBootstrapBrokerStringPublicSaslIamUndefined: Self = StObject.set(x, "BootstrapBrokerStringPublicSaslIam", js.undefined)
+    
+    inline def setBootstrapBrokerStringPublicSaslScram(value: string): Self = StObject.set(x, "BootstrapBrokerStringPublicSaslScram", value.asInstanceOf[js.Any])
+    
+    inline def setBootstrapBrokerStringPublicSaslScramUndefined: Self = StObject.set(x, "BootstrapBrokerStringPublicSaslScram", js.undefined)
+    
+    inline def setBootstrapBrokerStringPublicTls(value: string): Self = StObject.set(x, "BootstrapBrokerStringPublicTls", value.asInstanceOf[js.Any])
+    
+    inline def setBootstrapBrokerStringPublicTlsUndefined: Self = StObject.set(x, "BootstrapBrokerStringPublicTls", js.undefined)
+    
+    inline def setBootstrapBrokerStringSaslIam(value: string): Self = StObject.set(x, "BootstrapBrokerStringSaslIam", value.asInstanceOf[js.Any])
+    
+    inline def setBootstrapBrokerStringSaslIamUndefined: Self = StObject.set(x, "BootstrapBrokerStringSaslIam", js.undefined)
     
     inline def setBootstrapBrokerStringSaslScram(value: string): Self = StObject.set(x, "BootstrapBrokerStringSaslScram", value.asInstanceOf[js.Any])
     

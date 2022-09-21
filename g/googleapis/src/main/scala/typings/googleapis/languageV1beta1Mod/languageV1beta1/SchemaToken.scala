@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the smallest syntactic building block of the text.
-  */
 trait SchemaToken extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaToken extends StObject {
   var dependencyEdge: js.UndefOr[SchemaDependencyEdge] = js.undefined
   
   /**
-    * [Lemma](https://en.wikipedia.org/wiki/Lemma_%28morphology%29) of the
-    * token.
+    * [Lemma](https://en.wikipedia.org/wiki/Lemma_%28morphology%29) of the token.
     */
-  var lemma: js.UndefOr[String] = js.undefined
+  var lemma: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Parts of speech tag for this token.
@@ -44,6 +40,8 @@ object SchemaToken {
     inline def setDependencyEdgeUndefined: Self = StObject.set(x, "dependencyEdge", js.undefined)
     
     inline def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
+    
+    inline def setLemmaNull: Self = StObject.set(x, "lemma", null)
     
     inline def setLemmaUndefined: Self = StObject.set(x, "lemma", js.undefined)
     

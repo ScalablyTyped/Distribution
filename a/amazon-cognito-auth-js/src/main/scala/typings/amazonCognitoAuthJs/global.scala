@@ -2,6 +2,7 @@ package typings.amazonCognitoAuthJs
 
 import typings.amazonCognitoAuthJs.mod.CognitoAuthOptions
 import typings.amazonCognitoAuthJs.mod.CognitoSessionData
+import typings.amazonCognitoAuthJs.mod.CookieStorageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ object global {
     
     @JSGlobal("AmazonCognitoIdentity.CognitoAccessToken")
     @js.native
-    class CognitoAccessToken protected ()
+    open class CognitoAccessToken protected ()
       extends typings.amazonCognitoAuthJs.mod.CognitoAccessToken {
       /**
         * Constructs a new CognitoAccessToken object
@@ -23,7 +24,7 @@ object global {
     
     @JSGlobal("AmazonCognitoIdentity.CognitoAuth")
     @js.native
-    class CognitoAuth protected ()
+    open class CognitoAuth protected ()
       extends typings.amazonCognitoAuthJs.mod.CognitoAuth {
       /**
         * Constructs a new CognitoAuth object
@@ -34,7 +35,7 @@ object global {
     
     @JSGlobal("AmazonCognitoIdentity.CognitoAuthSession")
     @js.native
-    class CognitoAuthSession protected ()
+    open class CognitoAuthSession protected ()
       extends typings.amazonCognitoAuthJs.mod.CognitoAuthSession {
       /**
         * Constructs a new CognitoUserSession object
@@ -45,7 +46,7 @@ object global {
     
     @JSGlobal("AmazonCognitoIdentity.CognitoIdToken")
     @js.native
-    class CognitoIdToken protected ()
+    open class CognitoIdToken protected ()
       extends typings.amazonCognitoAuthJs.mod.CognitoIdToken {
       /**
         * Constructs a new CognitoIdToken object
@@ -56,7 +57,7 @@ object global {
     
     @JSGlobal("AmazonCognitoIdentity.CognitoRefreshToken")
     @js.native
-    class CognitoRefreshToken protected ()
+    open class CognitoRefreshToken protected ()
       extends typings.amazonCognitoAuthJs.mod.CognitoRefreshToken {
       /**
         * Constructs a new CognitoRefreshToken object
@@ -67,7 +68,7 @@ object global {
     
     @JSGlobal("AmazonCognitoIdentity.CognitoTokenScopes")
     @js.native
-    class CognitoTokenScopes protected ()
+    open class CognitoTokenScopes protected ()
       extends typings.amazonCognitoAuthJs.mod.CognitoTokenScopes {
       /**
         * Constructs a new CognitoTokenScopes object
@@ -76,9 +77,20 @@ object global {
       def this(TokenScopesArray: js.Array[String]) = this()
     }
     
+    @JSGlobal("AmazonCognitoIdentity.CookieStorage")
+    @js.native
+    open class CookieStorage protected ()
+      extends typings.amazonCognitoAuthJs.mod.CookieStorage {
+      /**
+        * Constructs a new CookieStorage object
+        * @param data Creation options.
+        */
+      def this(data: CookieStorageOptions) = this()
+    }
+    
     @JSGlobal("AmazonCognitoIdentity.DateHelper")
     @js.native
-    class DateHelper ()
+    open class DateHelper ()
       extends typings.amazonCognitoAuthJs.mod.DateHelper
     
     @JSGlobal("AmazonCognitoIdentity.StorageHelper")
@@ -87,7 +99,7 @@ object global {
       * This is used to get a storage object
       * @returns the storage
       */
-    class StorageHelper ()
+    open class StorageHelper ()
       extends typings.amazonCognitoAuthJs.mod.StorageHelper
   }
 }

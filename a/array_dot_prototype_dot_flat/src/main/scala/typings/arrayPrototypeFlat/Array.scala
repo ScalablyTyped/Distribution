@@ -21,8 +21,8 @@ trait Array[T] extends StObject {
     *
     * @param depth The maximum recursion depth
     */
-  def flat(): Array[js.Any] = js.native
-  def flat(depth: Double): Array[js.Any] = js.native
+  def flat(): Array[Any] = js.native
+  def flat(depth: Double): Array[Any] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.

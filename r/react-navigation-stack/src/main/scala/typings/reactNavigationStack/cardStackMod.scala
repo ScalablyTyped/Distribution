@@ -22,7 +22,7 @@ object cardStackMod {
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/CardStack", JSImport.Default)
   @js.native
-  class default protected () extends CardStack {
+  open class default protected () extends CardStack {
     def this(props: Props) = this()
   }
   /* static members */
@@ -36,16 +36,15 @@ object cardStackMod {
   }
   
   @js.native
-  trait CardStack
-    extends Component[Props, State, js.Any] {
+  trait CardStack extends Component[Props, State, Any] {
     
-    /* private */ var getFocusedRoute: js.Any = js.native
+    /* private */ var getFocusedRoute: Any = js.native
     
-    /* private */ var getPreviousScene: js.Any = js.native
+    /* private */ var getPreviousScene: Any = js.native
     
-    /* private */ var handleHeaderLayout: js.Any = js.native
+    /* private */ var handleHeaderLayout: Any = js.native
     
-    /* private */ var handleLayout: js.Any = js.native
+    /* private */ var handleLayout: Any = js.native
   }
   
   type GestureValues = StringDictionary[Value]
@@ -129,7 +128,7 @@ object cardStackMod {
       
       inline def setClosingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
       
-      inline def setClosingRouteKeysVarargs(value: String*): Self = StObject.set(x, "closingRouteKeys", js.Array(value :_*))
+      inline def setClosingRouteKeysVarargs(value: String*): Self = StObject.set(x, "closingRouteKeys", js.Array(value*))
       
       inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
@@ -183,7 +182,7 @@ object cardStackMod {
       
       inline def setOpeningRouteKeys(value: js.Array[String]): Self = StObject.set(x, "openingRouteKeys", value.asInstanceOf[js.Any])
       
-      inline def setOpeningRouteKeysVarargs(value: String*): Self = StObject.set(x, "openingRouteKeys", js.Array(value :_*))
+      inline def setOpeningRouteKeysVarargs(value: String*): Self = StObject.set(x, "openingRouteKeys", js.Array(value*))
       
       inline def setRenderHeader(value: typings.reactNavigationStack.headerContainerMod.Props => ReactNode): Self = StObject.set(x, "renderHeader", js.Any.fromFunction1(value))
       
@@ -191,7 +190,7 @@ object cardStackMod {
       
       inline def setRoutes(value: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: typings.reactNavigationStack.vendorTypesMod.Route[String]*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: typings.reactNavigationStack.vendorTypesMod.Route[String]*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setState(value: NavigationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -237,11 +236,11 @@ object cardStackMod {
       
       inline def setRoutes(value: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: typings.reactNavigationStack.vendorTypesMod.Route[String]*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: typings.reactNavigationStack.vendorTypesMod.Route[String]*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setScenes(value: js.Array[Scene[typings.reactNavigationStack.vendorTypesMod.Route[String]]]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
       
-      inline def setScenesVarargs(value: Scene[typings.reactNavigationStack.vendorTypesMod.Route[String]]*): Self = StObject.set(x, "scenes", js.Array(value :_*))
+      inline def setScenesVarargs(value: Scene[typings.reactNavigationStack.vendorTypesMod.Route[String]]*): Self = StObject.set(x, "scenes", js.Array(value*))
     }
   }
 }

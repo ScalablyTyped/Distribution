@@ -30,61 +30,7 @@ object mod {
   
   inline def DEFAULT_GET_RESULT_VALUE(datum: AutoCompleteData, valueKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_GET_RESULT_VALUE")(datum.asInstanceOf[js.Any], valueKey.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  object HighlightedResult {
-    
-    inline def apply(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex: HighlightedResultProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/autocomplete", "HighlightedResult")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/autocomplete", "HighlightedResult.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/autocomplete", "HighlightedResult.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete", "HighlightedResult.propTypes.className")
-      @js.native
-      def className: js.Any = js.native
-      inline def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete", "HighlightedResult.propTypes.enabled")
-      @js.native
-      def enabled: js.Any = js.native
-      inline def enabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete", "HighlightedResult.propTypes.id")
-      @js.native
-      def id: js.Any = js.native
-      inline def id_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete", "HighlightedResult.propTypes.index")
-      @js.native
-      def index: js.Any = js.native
-      inline def index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("index")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete", "HighlightedResult.propTypes.repeatable")
-      @js.native
-      def repeatable: js.Any = js.native
-      inline def repeatable_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("repeatable")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete", "HighlightedResult.propTypes.style")
-      @js.native
-      def style: js.Any = js.native
-      inline def style_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete", "HighlightedResult.propTypes.value")
-      @js.native
-      def value: js.Any = js.native
-      inline def value_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
-    }
-  }
+  inline def HighlightedResult(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex: HighlightedResultProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HighlightedResult")(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def isResultOf[T /* <: js.Object */](datum: AutoCompleteData): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResultOf")(datum.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
   

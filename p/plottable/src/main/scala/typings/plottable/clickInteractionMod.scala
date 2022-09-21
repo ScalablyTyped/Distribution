@@ -12,43 +12,43 @@ object clickInteractionMod {
   
   @JSImport("plottable/build/src/interactions/clickInteraction", "Click")
   @js.native
-  class Click () extends Interaction {
+  open class Click () extends Interaction {
     
-    /* private */ var _clickedDown: js.Any = js.native
+    /* private */ var _clickedDown: Any = js.native
     
-    /* private */ var _clickedPoint: js.Any = js.native
+    /* private */ var _clickedPoint: Any = js.native
     
-    /* private */ var _dblClickCallback: js.Any = js.native
+    /* private */ var _dblClickCallback: Any = js.native
     
-    /* private */ var _doubleClicking: js.Any = js.native
+    /* private */ var _doubleClicking: Any = js.native
     
-    /* private */ def _handleClickDown(p: js.Any, event: js.Any): js.Any = js.native
+    /* private */ var _handleClickDown: Any = js.native
     
-    /* private */ def _handleClickUp(p: js.Any, event: js.Any): js.Any = js.native
+    /* private */ var _handleClickUp: Any = js.native
     
-    /* private */ def _handleDblClick(p: js.Any, event: js.Any): js.Any = js.native
+    /* private */ var _handleDblClick: Any = js.native
     
-    /* private */ var _mouseDispatcher: js.Any = js.native
+    /* private */ var _mouseDispatcher: Any = js.native
     
     /**
       * Note: we bind to mousedown, mouseup, touchstart and touchend because browsers
       * have a 300ms delay between touchstart and click to allow for scrolling cancelling etc.
       */
-    /* private */ var _mouseDownCallback: js.Any = js.native
+    /* private */ var _mouseDownCallback: Any = js.native
     
-    /* private */ var _mouseUpCallback: js.Any = js.native
+    /* private */ var _mouseUpCallback: Any = js.native
     
-    /* private */ var _onClickCallbacks: js.Any = js.native
+    /* private */ var _onClickCallbacks: Any = js.native
     
-    /* private */ var _onDoubleClickCallbacks: js.Any = js.native
+    /* private */ var _onDoubleClickCallbacks: Any = js.native
     
-    /* private */ var _touchCancelCallback: js.Any = js.native
+    /* private */ var _touchCancelCallback: Any = js.native
     
-    /* private */ var _touchDispatcher: js.Any = js.native
+    /* private */ var _touchDispatcher: Any = js.native
     
-    /* private */ var _touchEndCallback: js.Any = js.native
+    /* private */ var _touchEndCallback: Any = js.native
     
-    /* private */ var _touchStartCallback: js.Any = js.native
+    /* private */ var _touchStartCallback: Any = js.native
     
     /**
       * Removes a callback that would be called when the Component is clicked.
@@ -89,7 +89,10 @@ object clickInteractionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointsEqual")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/interactions/clickInteraction", "Click._pointsEqual")
+    @js.native
+    def _pointsEqual: Any = js.native
+    inline def _pointsEqual_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_pointsEqual")(x.asInstanceOf[js.Any])
   }
   
   type ClickCallback = js.Function2[/* point */ Point, /* event */ MouseEvent | TouchEvent, Unit]

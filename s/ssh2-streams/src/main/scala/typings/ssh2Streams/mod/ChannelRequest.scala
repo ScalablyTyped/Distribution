@@ -49,7 +49,7 @@ object ChannelRequest {
   inline def PseudoTtyChannelRequest(
     cols: Double,
     height: Double,
-    modes: js.Any,
+    modes: Any,
     recipient: Double,
     rows: Double,
     term: String,

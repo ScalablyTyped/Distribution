@@ -30,7 +30,7 @@ object XExtendedInputSequenceChecker {
     acquire: () => Unit,
     checkInputSequence: (String, Double, String, Double) => Boolean,
     correctInputSequence: (js.Array[String], Double, String, Double) => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XExtendedInputSequenceChecker = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), checkInputSequence = js.Any.fromFunction4(checkInputSequence), correctInputSequence = js.Any.fromFunction4(correctInputSequence), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

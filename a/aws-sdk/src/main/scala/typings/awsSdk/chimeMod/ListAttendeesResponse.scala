@@ -29,7 +29,7 @@ object ListAttendeesResponse {
     
     inline def setAttendeesUndefined: Self = StObject.set(x, "Attendees", js.undefined)
     
-    inline def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "Attendees", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,6 @@ import typings.d3Collection.anon.Key
 import typings.d3Collection.anon.KeyValue
 import typings.d3Collection.anon.Value
 import typings.d3Collection.anon.Values
-import typings.std.Array
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ object mod {
   
   inline def keys(obj: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def map(obj: js.Object): Map_[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[js.Any]]
+  inline def map(obj: js.Object): Map_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[Any]]
   inline def map[T](): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[Map_[T]]
   inline def map[T](array: js.Array[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
   inline def map[T](
@@ -45,7 +44,7 @@ object mod {
     key: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], String]
   ): Set_ = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Set_]
   
-  inline def values(obj: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def values(obj: js.Object): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   inline def values[T](obj: StringDictionary[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def values[T](obj: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
@@ -246,7 +245,7 @@ object mod {
       *
       * @param array An array to create a nested data structure from.
       */
-    def map(array: js.Array[Datum]): Map_[js.Any]
+    def map(array: js.Array[Datum]): Map_[Any]
     
     /**
       * Applies the nest operator to the specified array, returning a nested object.
@@ -279,7 +278,7 @@ object mod {
       *
       * @param array An array to create a nested data structure from.
       */
-    def `object`(array: js.Array[Datum]): StringDictionary[js.Any]
+    def `object`(array: js.Array[Datum]): StringDictionary[Any]
     
     /**
       * Specifies a rollup function to be applied on each group of leaf elements and returns this nest operator.
@@ -323,8 +322,8 @@ object mod {
     inline def apply[Datum, RollupType](
       entries: js.Array[Datum] => js.Array[KeyValue[RollupType]],
       key: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType],
-      map: js.Array[Datum] => Map_[js.Any],
-      `object`: js.Array[Datum] => StringDictionary[js.Any],
+      map: js.Array[Datum] => Map_[Any],
+      `object`: js.Array[Datum] => StringDictionary[Any],
       rollup: js.Function1[/* values */ js.Array[Datum], RollupType] => Nest_[Datum, RollupType],
       sortKeys: js.Function2[/* a */ String, /* b */ String, Double] => Nest_[Datum, RollupType],
       sortValues: js.Function2[/* a */ Datum, /* b */ Datum, Double] => Nest_[Datum, RollupType]
@@ -340,9 +339,9 @@ object mod {
       
       inline def setKey(value: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
-      inline def setMap(value: js.Array[Datum] => Map_[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Array[Datum] => Map_[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      inline def setObject(value: js.Array[Datum] => StringDictionary[js.Any]): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
+      inline def setObject(value: js.Array[Datum] => StringDictionary[Any]): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
       
       inline def setRollup(value: js.Function1[/* values */ js.Array[Datum], RollupType] => Nest_[Datum, RollupType]): Self = StObject.set(x, "rollup", js.Any.fromFunction1(value))
       
@@ -352,10 +351,7 @@ object mod {
     }
   }
   
-  @js.native
-  trait NestedArray[Datum, RollupType]
-    extends StObject
-       with Array[Values[Datum, RollupType]]
+  type NestedArray[Datum, RollupType] = js.Array[Values[Datum, RollupType]]
   
   trait NestedMap[Datum, RollupType]
     extends StObject

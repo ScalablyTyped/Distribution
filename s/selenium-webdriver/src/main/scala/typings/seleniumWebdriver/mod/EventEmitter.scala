@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @constructor
   */
-class EventEmitter () extends StObject {
+open class EventEmitter () extends StObject {
   
   /**
     * Registers a listener.
@@ -24,8 +24,8 @@ class EventEmitter () extends StObject {
     * @private
     */
   def addListener(`type`: String, fn: js.Function): EventEmitter = js.native
-  def addListener(`type`: String, fn: js.Function, opt_scope: js.Any): EventEmitter = js.native
-  def addListener(`type`: String, fn: js.Function, opt_scope: js.Any, opt_oneshot: Boolean): EventEmitter = js.native
+  def addListener(`type`: String, fn: js.Function, opt_scope: Any): EventEmitter = js.native
+  def addListener(`type`: String, fn: js.Function, opt_scope: Any, opt_oneshot: Boolean): EventEmitter = js.native
   def addListener(`type`: String, fn: js.Function, opt_scope: Unit, opt_oneshot: Boolean): EventEmitter = js.native
   
   // endregion
@@ -35,7 +35,7 @@ class EventEmitter () extends StObject {
     * @param {string} type The type of event to emit.
     * @param {...*} var_args Any arguments to pass to each listener.
     */
-  def emit(`type`: String, var_args: js.Any*): Unit = js.native
+  def emit(`type`: String, var_args: Any*): Unit = js.native
   
   /**
     * Returns a mutable list of listeners for a specific type of event.
@@ -43,7 +43,7 @@ class EventEmitter () extends StObject {
     * @return {!Set<!Listener>} The registered listeners for the given event
     *     type.
     */
-  def listeners(`type`: String): js.Any = js.native
+  def listeners(`type`: String): Any = js.native
   
   /**
     * An alias for {@code #addListener()}.
@@ -54,7 +54,7 @@ class EventEmitter () extends StObject {
     * @return {!EventEmitter} A self reference.
     */
   def on(`type`: String, fn: js.Function): EventEmitter = js.native
-  def on(`type`: String, fn: js.Function, opt_scope: js.Any): EventEmitter = js.native
+  def on(`type`: String, fn: js.Function, opt_scope: Any): EventEmitter = js.native
   
   /**
     * Registers a one-time listener which will be called only the first time an
@@ -65,8 +65,8 @@ class EventEmitter () extends StObject {
     *     listener.
     * @return {!EventEmitter} A self reference.
     */
-  def once(`type`: String, fn: js.Any): EventEmitter = js.native
-  def once(`type`: String, fn: js.Any, opt_scope: js.Any): EventEmitter = js.native
+  def once(`type`: String, fn: Any): EventEmitter = js.native
+  def once(`type`: String, fn: Any, opt_scope: Any): EventEmitter = js.native
   
   /**
     * Removes all listeners for a specific type of event. If no event is

@@ -11,7 +11,7 @@ trait Group
   
   def append(element: typings.kendoUi.kendo.drawing.Element): Unit = js.native
   
-  var children: js.Any = js.native
+  var children: Any = js.native
   
   def clear(): Unit = js.native
   

@@ -20,6 +20,6 @@ object HitsProvided {
     
     inline def setHits(value: js.Array[Hit[THit]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    inline def setHitsVarargs(value: Hit[THit]*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: Hit[THit]*): Self = StObject.set(x, "hits", js.Array(value*))
   }
 }

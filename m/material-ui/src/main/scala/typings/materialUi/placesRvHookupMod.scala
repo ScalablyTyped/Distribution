@@ -10,10 +10,10 @@ object placesRvHookupMod {
   
   @JSImport("material-ui/svg-icons/places/rv-hookup", JSImport.Default)
   @js.native
-  class default () extends PlacesRvHookup
+  open class default () extends PlacesRvHookup
   
   @JSImport("material-ui/svg-icons/places/rv-hookup", "PlacesRvHookup")
   @js.native
-  class PlacesRvHookup ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesRvHookup ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

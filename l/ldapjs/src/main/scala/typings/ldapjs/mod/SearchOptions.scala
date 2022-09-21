@@ -44,7 +44,7 @@ object SearchOptions {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setDerefAliases(value: Double): Self = StObject.set(x, "derefAliases", value.asInstanceOf[js.Any])
     

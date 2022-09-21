@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Locations where the results of running the test are stored.
-  */
 trait SchemaResultStorage extends StObject {
   
   /**
@@ -15,14 +12,17 @@ trait SchemaResultStorage extends StObject {
   var googleCloudStorage: js.UndefOr[SchemaGoogleCloudStorage] = js.undefined
   
   /**
+    * Output only. URL to the results in the Firebase Web Console.
+    */
+  var resultsUrl: js.UndefOr[String | Null] = js.undefined
+  
+  /**
     * Output only. The tool results execution that results are written to.
     */
   var toolResultsExecution: js.UndefOr[SchemaToolResultsExecution] = js.undefined
   
   /**
-    * The tool results history that contains the tool results execution that
-    * results are written to.  If not provided, the service will choose an
-    * appropriate value.
+    * The tool results history that contains the tool results execution that results are written to. If not provided, the service will choose an appropriate value.
     */
   var toolResultsHistory: js.UndefOr[SchemaToolResultsHistory] = js.undefined
 }
@@ -38,6 +38,12 @@ object SchemaResultStorage {
     inline def setGoogleCloudStorage(value: SchemaGoogleCloudStorage): Self = StObject.set(x, "googleCloudStorage", value.asInstanceOf[js.Any])
     
     inline def setGoogleCloudStorageUndefined: Self = StObject.set(x, "googleCloudStorage", js.undefined)
+    
+    inline def setResultsUrl(value: String): Self = StObject.set(x, "resultsUrl", value.asInstanceOf[js.Any])
+    
+    inline def setResultsUrlNull: Self = StObject.set(x, "resultsUrl", null)
+    
+    inline def setResultsUrlUndefined: Self = StObject.set(x, "resultsUrl", js.undefined)
     
     inline def setToolResultsExecution(value: SchemaToolResultsExecution): Self = StObject.set(x, "toolResultsExecution", value.asInstanceOf[js.Any])
     

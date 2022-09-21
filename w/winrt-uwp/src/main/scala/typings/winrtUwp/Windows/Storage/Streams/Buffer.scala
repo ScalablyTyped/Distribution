@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides a default implementation of the IBuffer interface and its related interfaces. */
 trait Buffer extends StObject {
   
-  var byteLength: js.Any
+  var byteLength: Any
   
   /* unmapped type */
   /** Gets the maximum number of bytes that the buffer can hold. */
@@ -18,14 +18,14 @@ trait Buffer extends StObject {
 }
 object Buffer {
   
-  inline def apply(byteLength: js.Any, capacity: Double, length: Double): Buffer = {
+  inline def apply(byteLength: Any, capacity: Double, length: Double): Buffer = {
     val __obj = js.Dynamic.literal(byteLength = byteLength.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buffer]
   }
   
   extension [Self <: Buffer](x: Self) {
     
-    inline def setByteLength(value: js.Any): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
+    inline def setByteLength(value: Any): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     
     inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

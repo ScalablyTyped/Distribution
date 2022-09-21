@@ -13,7 +13,7 @@ object sliderPropsTypeMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handle: js.UndefOr[js.Any] = js.undefined
+    var handle: js.UndefOr[Any] = js.undefined
     
     var max: js.UndefOr[Double] = js.undefined
     
@@ -46,7 +46,7 @@ object sliderPropsTypeMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setHandle(value: js.Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
       inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
       

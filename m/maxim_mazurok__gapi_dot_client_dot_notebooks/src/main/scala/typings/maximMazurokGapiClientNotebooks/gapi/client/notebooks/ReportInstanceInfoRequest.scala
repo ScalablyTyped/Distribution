@@ -11,7 +11,7 @@ trait ReportInstanceInfoRequest extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.ReportInstanceInfoRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.ReportInstanceInfoRequest & TopLevel[Any]
   ] = js.undefined
   
   /** Required. The VM hardware token for authenticating the VM. https://cloud.google.com/compute/docs/instances/verifying-instance-identity */
@@ -29,7 +29,7 @@ object ReportInstanceInfoRequest {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.ReportInstanceInfoRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.ReportInstanceInfoRequest & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

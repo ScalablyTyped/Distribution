@@ -8,7 +8,7 @@ object serviceMetadataMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/ServiceMetadata", "ServiceMetadata")
   @js.native
-  val ServiceMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ServiceMetadata_ */ js.Any = js.native
+  val ServiceMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ServiceMetadata_ */ Any = js.native
   
   @JSImport("@aws-sdk/client-xray-node/model/ServiceMetadata", "clientVersion")
   @js.native

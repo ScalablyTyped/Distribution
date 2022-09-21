@@ -58,13 +58,13 @@ object WebThemeOptions {
     
     inline def setNavUndefined: Self = StObject.set(x, "nav", js.undefined)
     
-    inline def setNavVarargs(value: String*): Self = StObject.set(x, "nav", js.Array(value :_*))
+    inline def setNavVarargs(value: String*): Self = StObject.set(x, "nav", js.Array(value*))
     
     inline def setPanels(value: js.Array[String]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     
     inline def setPanelsUndefined: Self = StObject.set(x, "panels", js.undefined)
     
-    inline def setPanelsVarargs(value: String*): Self = StObject.set(x, "panels", js.Array(value :_*))
+    inline def setPanelsVarargs(value: String*): Self = StObject.set(x, "panels", js.Array(value*))
     
     inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object WebThemeOptions {
     
     inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
-    inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+    inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value*))
     
     inline def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object WebThemeOptions {
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

@@ -10,16 +10,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esScrollSyncMod {
   
-  @JSImport("react-virtualized/dist/es/ScrollSync", "ScrollSync")
+  @JSImport("react-virtualized/dist/es/ScrollSync", JSImport.Default)
   @js.native
-  class ScrollSync protected ()
-    extends PureComponent[ScrollSyncProps, ScrollSyncState, js.Any] {
+  open class default protected () extends ScrollSync {
     def this(props: ScrollSyncProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollSyncProps, context: js.Any) = this()
+    def this(props: ScrollSyncProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/es/ScrollSync", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/es/ScrollSync", "default.propTypes")
+    @js.native
+    def propTypes: ChildrenValidator = js.native
+    inline def propTypes_=(x: ChildrenValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-virtualized/dist/es/ScrollSync", "ScrollSync")
+  @js.native
+  open class ScrollSync protected () extends PureComponent[ScrollSyncProps, ScrollSyncState, Any] {
+    def this(props: ScrollSyncProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ScrollSyncProps, context: Any) = this()
   }
   /* static members */
   object ScrollSync {
@@ -136,7 +158,7 @@ object esScrollSyncMod {
     * Check the following link if you want to know more
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * Function responsible for rendering 2 or more virtualized components.

@@ -12,8 +12,9 @@ import typings.awsSdk.credentialProviderChainMod.CredentialProviderChain
 import typings.awsSdk.credentialsMod.Credentials
 import typings.awsSdk.credentialsMod.CredentialsOptions
 import typings.awsSdk.errorMod.AWSError
+import typings.awsSdk.tokenMod.Token
+import typings.awsSdk.tokenProviderChainMod.TokenProviderChain
 import typings.node.httpMod.Agent
-import typings.std.Error
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +24,7 @@ object configBaseMod {
   
   @JSImport("aws-sdk/lib/config-base", "ConfigBase")
   @js.native
-  class ConfigBase () extends ConfigurationOptions {
+  open class ConfigBase () extends ConfigurationOptions {
     def this(options: ConfigurationOptions) = this()
     
     /**
@@ -43,6 +44,11 @@ object configBaseMod {
     def getPromisesDependency(): PromiseConstructor | Unit = js.native
     
     /**
+      * Loads token from the token object.
+      */
+    def getToken(callback: js.Function2[/* err */ AWSError | Null, /* token */ Token | Null, Unit]): Unit = js.native
+    
+    /**
       * Loads configuration data from a JSON file into this config object.
       * Loading configuration will reset all existing configuration on the object.
       * This feature is not supported in the browser environment of the SDK.
@@ -55,7 +61,7 @@ object configBaseMod {
       * Sets the promise dependency the SDK will use wherever Promises are returned.
       * @param {function} dep - a reference to a Promise constructor
       */
-    def setPromisesDependency(dep: js.Any): Unit = js.native
+    def setPromisesDependency(dep: Any): Unit = js.native
     
     /**
       * Updates the current configuration object with new options.
@@ -253,9 +259,29 @@ object configBaseMod {
     var systemClockOffset: js.UndefOr[Double] = js.native
     
     /**
+      * The Token to authenticate requests with.
+      */
+    var token: js.UndefOr[Token | Null] = js.native
+    
+    /**
+      * The provider chain used to resolve token if no static token property is set.
+      */
+    var tokenProvider: js.UndefOr[TokenProviderChain] = js.native
+    
+    /**
       * Whether to use the Accelerate endpoint with the S3 service.
       */
     var useAccelerateEndpoint: js.UndefOr[Boolean] = js.native
+    
+    /**
+      * Enables IPv6 dualstack endpoint.
+      */
+    var useDualstackEndpoint: js.UndefOr[Boolean] = js.native
+    
+    /**
+      * Enables FIPS compatible endpoints.
+      */
+    var useFipsEndpoint: js.UndefOr[Boolean] = js.native
   }
   
   trait HTTPOptions extends StObject {
@@ -338,11 +364,13 @@ object configBaseMod {
   
   trait Logger extends StObject {
     
-    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var log: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
+    
+    var warn: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var write: js.UndefOr[
         js.Function3[
-          /* chunk */ js.Any, 
+          /* chunk */ Any, 
           /* encoding */ js.UndefOr[String], 
           /* callback */ js.UndefOr[js.Function0[Unit]], 
           Unit
@@ -358,12 +386,16 @@ object configBaseMod {
     
     extension [Self <: Logger](x: Self) {
       
-      inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
+      inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      
       inline def setWrite(
-        value: (/* chunk */ js.Any, /* encoding */ js.UndefOr[String], /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit
+        value: (/* chunk */ Any, /* encoding */ js.UndefOr[String], /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit
       ): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
       
       inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
@@ -432,7 +464,7 @@ object configBaseMod {
       * A custom function that accepts a retry count and error and returns the amount of time to delay in milliseconds. If the result is a non-zero negative value, no further retry attempts will be made.
       * The base option will be ignored if this option is supplied.
       */
-    var customBackoff: js.UndefOr[js.Function2[/* retryCount */ Double, /* err */ js.UndefOr[Error], Double]] = js.undefined
+    var customBackoff: js.UndefOr[js.Function2[/* retryCount */ Double, /* err */ js.UndefOr[js.Error], Double]] = js.undefined
   }
   object RetryDelayOptions {
     
@@ -447,7 +479,7 @@ object configBaseMod {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setCustomBackoff(value: (/* retryCount */ Double, /* err */ js.UndefOr[Error]) => Double): Self = StObject.set(x, "customBackoff", js.Any.fromFunction2(value))
+      inline def setCustomBackoff(value: (/* retryCount */ Double, /* err */ js.UndefOr[js.Error]) => Double): Self = StObject.set(x, "customBackoff", js.Any.fromFunction2(value))
       
       inline def setCustomBackoffUndefined: Self = StObject.set(x, "customBackoff", js.undefined)
     }

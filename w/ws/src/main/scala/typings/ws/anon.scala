@@ -1,8 +1,7 @@
 package typings.ws
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingMessage
-import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +49,7 @@ object anon {
     
     var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var dictionary: js.UndefOr[Buffer | js.Array[Buffer] | DataView] = js.undefined
+    var dictionary: js.UndefOr[Buffer | js.Array[Buffer] | js.typedarray.DataView] = js.undefined
     
     var finishFlush: js.UndefOr[Double] = js.undefined
     
@@ -79,11 +78,11 @@ object anon {
       
       inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      inline def setDictionary(value: Buffer | js.Array[Buffer] | DataView): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+      inline def setDictionary(value: Buffer | js.Array[Buffer] | js.typedarray.DataView): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       
       inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
       
-      inline def setDictionaryVarargs(value: Buffer*): Self = StObject.set(x, "dictionary", js.Array(value :_*))
+      inline def setDictionaryVarargs(value: Buffer*): Self = StObject.set(x, "dictionary", js.Array(value*))
       
       inline def setFinishFlush(value: Double): Self = StObject.set(x, "finishFlush", value.asInstanceOf[js.Any])
       
@@ -115,91 +114,6 @@ object anon {
     }
   }
   
-  trait Code extends StObject {
-    
-    var code: Double
-    
-    var reason: String
-    
-    var target: this.type
-    
-    var wasClean: Boolean
-  }
-  object Code {
-    
-    inline def apply(code: Double, reason: String, target: Code, wasClean: Boolean): Code = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], wasClean = wasClean.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Code]
-    }
-    
-    extension [Self <: Code](x: Self) {
-      
-      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
-      
-      inline def setTarget(value: Code): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setWasClean(value: Boolean): Self = StObject.set(x, "wasClean", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Data extends StObject {
-    
-    var data: js.Any
-    
-    var target: this.type
-    
-    var `type`: String
-  }
-  object Data {
-    
-    inline def apply(data: js.Any, target: Data, `type`: String): Data = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Data]
-    }
-    
-    extension [Self <: Data](x: Self) {
-      
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setTarget(value: Data): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Error extends StObject {
-    
-    var error: js.Any
-    
-    var message: js.Any
-    
-    var target: this.type
-    
-    var `type`: String
-  }
-  object Error {
-    
-    inline def apply(error: js.Any, message: js.Any, target: Error, `type`: String): Error = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Error]
-    }
-    
-    extension [Self <: Error](x: Self) {
-      
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      inline def setTarget(value: Error): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Origin extends StObject {
     
     var origin: String
@@ -225,20 +139,36 @@ object anon {
     }
   }
   
-  trait Target extends StObject {
+  trait TypeofWebSocket extends StObject {
     
-    var target: this.type
+    /* standard dom */
+    val CLOSED: Double
+    
+    /* standard dom */
+    val CLOSING: Double
+    
+    /* standard dom */
+    val CONNECTING: Double
+    
+    /* standard dom */
+    val OPEN: Double
   }
-  object Target {
+  object TypeofWebSocket {
     
-    inline def apply(target: Target): Target = {
-      val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Target]
+    inline def apply(CLOSED: Double, CLOSING: Double, CONNECTING: Double, OPEN: Double): TypeofWebSocket = {
+      val __obj = js.Dynamic.literal(CLOSED = CLOSED.asInstanceOf[js.Any], CLOSING = CLOSING.asInstanceOf[js.Any], CONNECTING = CONNECTING.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TypeofWebSocket]
     }
     
-    extension [Self <: Target](x: Self) {
+    extension [Self <: TypeofWebSocket](x: Self) {
       
-      inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setCLOSED(value: Double): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
+      
+      inline def setCLOSING(value: Double): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
+      
+      inline def setCONNECTING(value: Double): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
+      
+      inline def setOPEN(value: Double): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
     }
   }
 }

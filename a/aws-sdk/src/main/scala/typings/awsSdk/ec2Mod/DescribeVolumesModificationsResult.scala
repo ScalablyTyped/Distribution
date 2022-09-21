@@ -33,6 +33,6 @@ object DescribeVolumesModificationsResult {
     
     inline def setVolumesModificationsUndefined: Self = StObject.set(x, "VolumesModifications", js.undefined)
     
-    inline def setVolumesModificationsVarargs(value: VolumeModification*): Self = StObject.set(x, "VolumesModifications", js.Array(value :_*))
+    inline def setVolumesModificationsVarargs(value: VolumeModification*): Self = StObject.set(x, "VolumesModifications", js.Array(value*))
   }
 }

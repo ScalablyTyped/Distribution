@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Event triggered by extensions to signal to VS Code that an edit has occurred on an [`CustomDocument`](#CustomDocument).
+  * Event triggered by extensions to signal to the editor that an edit has occurred on an {@linkcode CustomDocument}.
   *
-  * @see [`CustomDocumentProvider.onDidChangeCustomDocument`](#CustomDocumentProvider.onDidChangeCustomDocument).
+  * @see {@linkcode CustomEditorProvider.onDidChangeCustomDocument}.
   */
 trait CustomDocumentEditEvent[T /* <: CustomDocument */] extends StObject {
   
@@ -27,18 +27,18 @@ trait CustomDocumentEditEvent[T /* <: CustomDocument */] extends StObject {
   /**
     * Redo the edit operation.
     *
-    * This is invoked by VS Code when the user redoes this edit. To implement `redo`, your
+    * This is invoked by the editor when the user redoes this edit. To implement `redo`, your
     * extension should restore the document and editor to the state they were in just after this
-    * edit was added to VS Code's internal edit stack by `onDidChangeCustomDocument`.
+    * edit was added to the editor's internal edit stack by `onDidChangeCustomDocument`.
     */
   def redo(): Thenable[Unit] | Unit
   
   /**
     * Undo the edit operation.
     *
-    * This is invoked by VS Code when the user undoes this edit. To implement `undo`, your
+    * This is invoked by the editor when the user undoes this edit. To implement `undo`, your
     * extension should restore the document and editor to the state they were in just before this
-    * edit was added to VS Code's internal edit stack by `onDidChangeCustomDocument`.
+    * edit was added to the editor's internal edit stack by `onDidChangeCustomDocument`.
     */
   def undo(): Thenable[Unit] | Unit
 }

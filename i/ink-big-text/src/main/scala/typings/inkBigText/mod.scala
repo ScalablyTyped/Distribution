@@ -104,7 +104,7 @@ object mod extends Shortcut {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setFont(
         value: block | slick | tiny | grid | pallet | shade | simple | simpleBlock | `3d` | simple3d | chrome | huge

@@ -1,7 +1,7 @@
 
 # Scala.js typings for qrcode
 
-Typings are for version 1.3
+Typings are for version 1.5
 
 ## Library description:
 QRCode / 2d Barcode api with both server side and client side support using canvas
@@ -10,10 +10,10 @@ QRCode / 2d Barcode api with both server side and client side support using canv
 | ------------------ | :-------------: |
 | Full name          | qrcode |
 | Keywords           | qr, code, canvas, qrcode |
-| # releases         | 7 |
-| # dependents       | 648 |
-| # downloads        | 13932489 |
-| # stars            | 50 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4295282.333333333 |
+| # stars            | 5813.0 |
 
 ## Links
 - [Homepage](http://github.com/soldair/node-qrcode)

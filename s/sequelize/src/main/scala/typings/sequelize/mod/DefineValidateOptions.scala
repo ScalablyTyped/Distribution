@@ -13,7 +13,6 @@ import typings.sequelize.sequelizeNumbers.`3`
 import typings.sequelize.sequelizeNumbers.`4`
 import typings.sequelize.sequelizeNumbers.`5`
 import typings.sequelize.sequelizeStrings.all
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,7 @@ trait DefineValidateOptions
   *
   * @see https://github.com/Microsoft/TypeScript/issues/1889
   */
-/* name */ StringDictionary[js.Any] {
+/* name */ StringDictionary[Any] {
   
   /**
     * force specific substrings
@@ -61,7 +60,7 @@ trait DefineValidateOptions
     * is: ["^[a-z]+$",'i'] // will only allow letters
     * is: /^[a-z]+$/i      // same as the previous example using real RegExp
     */
-  var is: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.undefined
+  var is: js.UndefOr[String | (js.Array[String | js.RegExp]) | js.RegExp | Args] = js.undefined
   
   /**
     * only allow date strings after a specific date
@@ -188,7 +187,7 @@ trait DefineValidateOptions
   /**
     * not: ["[a-z]",'i']  // will not allow letters
     */
-  var not: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.undefined
+  var not: js.UndefOr[String | (js.Array[String | js.RegExp]) | js.RegExp | Args] = js.undefined
   
   /**
     * don't allow specific substrings
@@ -227,7 +226,7 @@ object DefineValidateOptions {
     
     inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
-    inline def setIs(value: String | (js.Array[String | RegExp]) | RegExp | Args): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    inline def setIs(value: String | (js.Array[String | js.RegExp]) | js.RegExp | Args): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
     inline def setIsAfter(value: String | ArgsString): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
     
@@ -285,7 +284,7 @@ object DefineValidateOptions {
     
     inline def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
     
-    inline def setIsInVarargs(value: js.Array[String]*): Self = StObject.set(x, "isIn", js.Array(value :_*))
+    inline def setIsInVarargs(value: js.Array[String]*): Self = StObject.set(x, "isIn", js.Array(value*))
     
     inline def setIsInt(value: Boolean | MsgString): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
     
@@ -319,7 +318,7 @@ object DefineValidateOptions {
     
     inline def setIsUrlUndefined: Self = StObject.set(x, "isUrl", js.undefined)
     
-    inline def setIsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "is", js.Array(value :_*))
+    inline def setIsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "is", js.Array(value*))
     
     inline def setLen(value: (js.Tuple2[Double, Double]) | `1`): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     
@@ -333,13 +332,13 @@ object DefineValidateOptions {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setNot(value: String | (js.Array[String | RegExp]) | RegExp | Args): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: String | (js.Array[String | js.RegExp]) | js.RegExp | Args): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
     inline def setNotContains(value: js.Array[String] | String | ArgsMsgString): Self = StObject.set(x, "notContains", value.asInstanceOf[js.Any])
     
     inline def setNotContainsUndefined: Self = StObject.set(x, "notContains", js.undefined)
     
-    inline def setNotContainsVarargs(value: String*): Self = StObject.set(x, "notContains", js.Array(value :_*))
+    inline def setNotContainsVarargs(value: String*): Self = StObject.set(x, "notContains", js.Array(value*))
     
     inline def setNotEmpty(value: Boolean | MsgString): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
     
@@ -349,7 +348,7 @@ object DefineValidateOptions {
     
     inline def setNotInUndefined: Self = StObject.set(x, "notIn", js.undefined)
     
-    inline def setNotInVarargs(value: js.Array[String]*): Self = StObject.set(x, "notIn", js.Array(value :_*))
+    inline def setNotInVarargs(value: js.Array[String]*): Self = StObject.set(x, "notIn", js.Array(value*))
     
     inline def setNotNull(value: Boolean | MsgString): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
     
@@ -357,6 +356,6 @@ object DefineValidateOptions {
     
     inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
-    inline def setNotVarargs(value: (String | RegExp)*): Self = StObject.set(x, "not", js.Array(value :_*))
+    inline def setNotVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "not", js.Array(value*))
   }
 }

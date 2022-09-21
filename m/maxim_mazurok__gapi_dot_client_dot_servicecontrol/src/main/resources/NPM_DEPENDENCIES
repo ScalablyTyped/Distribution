@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.servicecontrol" : "2.0.20201117"
+      "@maxim_mazurok/gapi.client.servicecontrol" : "2.0.20220805"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.servicecontrol" : "2.0.20201117"
+      "@maxim_mazurok/gapi.client.servicecontrol" : "2.0.20220805"
     }
   ],
   "compile-devDependencies" : [

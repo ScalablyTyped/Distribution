@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisBufferSizeStartBufferEvery extends StObject {
   
-  def apply[T](bufferSize: Double): js.Any = js.native
-  def apply[T](bufferSize: Double, startBufferEvery: Double): js.Any = js.native
+  def apply[T](bufferSize: Double): Any = js.native
+  def apply[T](bufferSize: Double, startBufferEvery: Double): Any = js.native
 }

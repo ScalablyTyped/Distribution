@@ -1,7 +1,6 @@
 package typings.tabris
 
-import typings.std.ArrayBuffer
-import typings.tabris.mod._ImageValue
+import typings.tabris.mod._ImageSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Blob
   extends StObject
-     with _ImageValue {
+     with _ImageSource {
   
   /**
     * Reads the blob data into an ArrayBuffer and returns it in a promise. Each call creates a new
     * in-memory copy of the data.
     */
-  def arrayBuffer(): js.Promise[ArrayBuffer]
+  def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer]
   
   /**
     * Size of the blob data in bytes
@@ -40,7 +39,7 @@ trait Blob
 object Blob {
   
   inline def apply(
-    arrayBuffer: () => js.Promise[ArrayBuffer],
+    arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
     size: Double,
     text: () => js.Promise[String],
     `type`: String
@@ -52,7 +51,7 @@ object Blob {
   
   extension [Self <: Blob](x: Self) {
     
-    inline def setArrayBuffer(value: () => js.Promise[ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+    inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

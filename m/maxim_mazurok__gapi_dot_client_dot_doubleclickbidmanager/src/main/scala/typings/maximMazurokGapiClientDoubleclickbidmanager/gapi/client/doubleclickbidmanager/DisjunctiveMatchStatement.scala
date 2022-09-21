@@ -22,6 +22,6 @@ object DisjunctiveMatchStatement {
     
     inline def setEventFiltersUndefined: Self = StObject.set(x, "eventFilters", js.undefined)
     
-    inline def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value :_*))
+    inline def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value*))
   }
 }

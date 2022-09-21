@@ -11,7 +11,7 @@ object relayQueryResponseCacheMod {
   
   @JSImport("relay-runtime/lib/network/RelayQueryResponseCache", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with RelayQueryResponseCache {
     def this(config: Size) = this()

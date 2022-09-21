@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientMenuBase")
 @js.native
-class ASPxClientMenuBase ()
+open class ASPxClientMenuBase ()
   extends StObject
      with typings.devexpressWeb.ASPxClientMenuBase {
   
@@ -66,13 +66,13 @@ class ASPxClientMenuBase ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a root menu item.

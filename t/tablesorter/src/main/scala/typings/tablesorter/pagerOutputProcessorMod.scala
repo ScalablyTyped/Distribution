@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pagerOutputProcessorMod {
   
-  type PagerOutputProcessor[TElement] = js.Function2[/* table */ TElement, /* pager */ js.Any, String]
+  type PagerOutputProcessor[TElement] = js.Function2[/* table */ TElement, /* pager */ Any, String]
 }

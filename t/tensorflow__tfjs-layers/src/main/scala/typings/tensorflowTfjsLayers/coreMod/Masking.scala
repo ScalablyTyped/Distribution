@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Masking")
 @js.native
-class Masking () extends Layer {
+open class Masking () extends Layer {
   def this(args: MaskingArgs) = this()
   
   var maskValue: Double = js.native

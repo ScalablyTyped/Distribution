@@ -45,6 +45,6 @@ object DeviceSpecificParameterObject {
     
     inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
-    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
+    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value*))
   }
 }

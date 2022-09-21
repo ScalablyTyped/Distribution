@@ -18,44 +18,256 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BrickButtonProps extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 按钮按下时的按钮透明度
+    * @defaultValue 1
+    */
+  /**
+    * @language en-US
+    * @description Button transparency when the button is pressed
+    * @defaultValue 1
+    */
   var activeOpacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 渐变背景
+    * @types string | <a target="_blank" href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L6">LinearGradientBackground</a> | <a target="_blank" href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L14">RadialGradientBackground</a>
+    * @defaultValue { x1: '0%', y1: '0%', x2: '0%', y2: '100%', stops: { '0%': 'red', '30%': 'blue', '100%': 'yellow' }}
+    */
+  /**
+    * @language en-US
+    * @description Gradient background
+    * @types string | <a target="_blank" href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L6">LinearGradientBackground</a> | <a target="_blank" href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L14">RadialGradientBackground</a>
+    * @defaultValue { x1: '0%', y1: '0%', x2: '0%', y2: '100%', stops: { '0%': 'red', '30%': 'blue', '100%': 'yellow' }}
+    */
   var background: js.UndefOr[BackgroundProps] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮按下时的背景色
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The background color when the button is pressed
+    * @defaultValue null
+    */
   var backgroundColorTouched: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否禁用点击
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Disable click?
+    * @defaultValue false
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 加载状态
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Loading status
+    * @defaultValue false
+    */
   var loading: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 加载组件的背景主颜色
+    * @defaultValue 'rgba(0,0,0,.1)'
+    */
+  /**
+    * @language en-US
+    * @description The main background color of the loading component
+    * @defaultValue 'rgba(0,0,0,.1)'
+    */
   var loadingBackground: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 加载组件主颜色
+    * @defaultValue '#fff'
+    */
+  /**
+    * @language en-US
+    * @description Loading main component colors
+    * @defaultValue '#fff'
+    */
   var loadingColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 加载组件的大小
+    * @defaultValue 'small'
+    */
+  /**
+    * @language en-US
+    * @description The size of the loading component
+    * @defaultValue 'small'
+    */
   var loadingSize: js.UndefOr[small | large | Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 加载组件的外边框粗细
+    * @defaultValue cx(2)
+    */
+  /**
+    * @language en-US
+    * @description The outer border thickness of the loading component
+    * @defaultValue cx(2)
+    */
   var loadingStrokeWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 加载组件的样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description The style of the loading component
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function2[/* eventName */ String, /* args */ js.Any, Unit]] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 事件监听
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Event listeners
+    * @defaultValue () => {}
+    */
+  var onChange: js.UndefOr[js.Function2[/* eventName */ String, /* args */ Any, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 点击事件
+    * @types (event: <a target='_blank' href='https://reactnative.dev/docs/pressevent'>GestureResponderEvent</a>) => void
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Click event
+    * @types (event: <a target='_blank' href='https://reactnative.dev/docs/pressevent'>GestureResponderEvent</a>) => void
+    * @defaultValue () => {}
+    */
   var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否显示按钮点击时的颜色
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether to display the color button when clicking
+    * @defaultValue false
+    */
   var showUnderlay: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 容器样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮文字
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description Button text
+    * @defaultValue ''
+    */
   var text: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮文字样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description The text style of the button
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue {}
+    */
   var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 主题配置
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Theme configuration
+    * @defaultValue {}
+    */
   var theme: js.UndefOr[BgBorder] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮类型
+    * @defaultValue 'primary'
+    */
+  /**
+    * @language en-US
+    * @description Type of button
+    * @defaultValue 'primary'
+    */
   var `type`: js.UndefOr[primary | primaryGradient | primaryBorder | normal | small] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮按下时的按钮颜色
+    * @defaultValue 'transparent'
+    */
+  /**
+    * @language en-US
+    * @description The color of the button when it is pressed
+    * @defaultValue 'transparent'
+    */
   var underlayColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮内部包裹内容样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description The content style of the package inside the button
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object BrickButtonProps {
@@ -109,7 +321,7 @@ object BrickButtonProps {
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    inline def setOnChange(value: (/* eventName */ String, /* args */ js.Any) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+    inline def setOnChange(value: (/* eventName */ String, /* args */ Any) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

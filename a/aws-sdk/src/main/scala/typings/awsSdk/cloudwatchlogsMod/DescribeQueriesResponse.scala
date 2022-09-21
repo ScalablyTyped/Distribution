@@ -30,6 +30,6 @@ object DescribeQueriesResponse {
     
     inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    inline def setQueriesVarargs(value: QueryInfo*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: QueryInfo*): Self = StObject.set(x, "queries", js.Array(value*))
   }
 }

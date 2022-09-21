@@ -33,6 +33,6 @@ object ListTestGridSessionsResult {
     
     inline def setTestGridSessionsUndefined: Self = StObject.set(x, "testGridSessions", js.undefined)
     
-    inline def setTestGridSessionsVarargs(value: TestGridSession*): Self = StObject.set(x, "testGridSessions", js.Array(value :_*))
+    inline def setTestGridSessionsVarargs(value: TestGridSession*): Self = StObject.set(x, "testGridSessions", js.Array(value*))
   }
 }

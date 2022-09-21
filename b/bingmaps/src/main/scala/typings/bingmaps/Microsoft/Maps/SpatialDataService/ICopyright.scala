@@ -25,6 +25,6 @@ object ICopyright {
     
     inline def setSources(value: js.Array[ICopyrightSource]): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesVarargs(value: ICopyrightSource*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: ICopyrightSource*): Self = StObject.set(x, "Sources", js.Array(value*))
   }
 }

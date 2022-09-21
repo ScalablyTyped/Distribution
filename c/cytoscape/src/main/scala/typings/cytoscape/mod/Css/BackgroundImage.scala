@@ -1,13 +1,21 @@
 package typings.cytoscape.mod.Css
 
+import typings.cytoscape.cytoscapeStrings.`include-padding`
 import typings.cytoscape.cytoscapeStrings.`no-repeat`
 import typings.cytoscape.cytoscapeStrings.`repeat-x`
 import typings.cytoscape.cytoscapeStrings.`repeat-y`
+import typings.cytoscape.cytoscapeStrings.`use-credentials`
+import typings.cytoscape.cytoscapeStrings.anonymous
 import typings.cytoscape.cytoscapeStrings.clipped
 import typings.cytoscape.cytoscapeStrings.contain
 import typings.cytoscape.cytoscapeStrings.cover
+import typings.cytoscape.cytoscapeStrings.inner
+import typings.cytoscape.cytoscapeStrings.inside
+import typings.cytoscape.cytoscapeStrings.no
 import typings.cytoscape.cytoscapeStrings.none
+import typings.cytoscape.cytoscapeStrings.over
 import typings.cytoscape.cytoscapeStrings.repeat
+import typings.cytoscape.cytoscapeStrings.yes
 import typings.cytoscape.mod.NodeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,6 +55,14 @@ trait BackgroundImage extends StObject {
   var `background-height`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
+    * Changes whether the height is calculated relative to the height of the node or
+    * the height in addition to the padding; may be `inner` or `include-padding`.
+    *
+    * If not specified, `include-padding` is used by default.
+    */
+  var `background-height-relative-to`: js.UndefOr[PropertyValueNode[inner | `include-padding`]] = js.undefined
+  
+  /**
     * The URL that points to the image that should be used as the node’s background.
     * PNG, JPG, and SVG are supported formats.
     * You may use a data URI to use embedded images,
@@ -55,19 +71,54 @@ trait BackgroundImage extends StObject {
   var `background-image`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
   /**
+    * Determines whether background image is within (`inside`)
+    * or over top of the node (`over`).
+    *
+    * The default is set to `inside`.
+    */
+  var `background-image-containment`: js.UndefOr[PropertyValueNode[inside | over]] = js.undefined
+  
+  /**
+    * All images are loaded with a crossorigin attribute which may be `anonymous` or
+    * `use-credentials`.
+    *
+    * The default is set to `anonymous`.
+    */
+  var `background-image-crossorigin`: js.UndefOr[PropertyValueNode[anonymous | `use-credentials`]] = js.undefined
+  
+  /**
     * The opacity of the background image. [0 1]
     */
   var `background-image-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
   /**
+    * Determines whether background image is smoothed (`yes`, default) or not (`no`).
+    * This is only a hint, and the browser may or may not respect the
+    * value set for this property.
+    */
+  var `background-image-smoothing`: js.UndefOr[PropertyValueNode[yes | no]] = js.undefined
+  
+  /**
+    * The x offset of the background image,
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
+    */
+  var `background-offset-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  /**
+    * The y offset of the background image,
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
+    */
+  var `background-offset-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  /**
     * The x position of the background image,
-    * measured in percent(e.g. 50%) or pixels (e.g. 10px).
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
     */
   var `background-position-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
     * The y position of the background image,
-    * measured in percent(e.g. 50%) or pixels (e.g. 10px).
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
     */
   var `background-position-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
@@ -87,6 +138,29 @@ trait BackgroundImage extends StObject {
     * The auto value is used by default, which uses the width of the image.
     */
   var `background-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  /**
+    * Changes whether the width is calculated relative to the width of the node or
+    * the width in addition to the padding; may be inner or include-padding.
+    *
+    * If not specified, include-padding is used by default.
+    */
+  var `background-width-relative-to`: js.UndefOr[PropertyValueNode[inner | `include-padding`]] = js.undefined
+  
+  /**
+    * Specifies a padding size (e.g. 20) that expands the bounding box of the node in
+    * all directions. This allows for images to be drawn outside of the normal bounding
+    * box of the node when `background-clip` is none. This is useful for small decorations
+    * just outside of the node.
+    *
+    * `bounds-expansions` accepts 1 value (for all directions),
+    * 2 values, ([topAndBottom, leftAndRight]) or 4 values ([top, right, bottom, left]).
+    */
+  var `bounds-expansion`: js.UndefOr[
+    PropertyValueNode[
+      Double | String | (js.Tuple2[Double | String, Double | String]) | (js.Tuple4[Double | String, Double | String, Double | String, Double | String])
+    ]
+  ] = js.undefined
 }
 object BackgroundImage {
   
@@ -111,11 +185,29 @@ object BackgroundImage {
     
     inline def `setBackground-height`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-height", value.asInstanceOf[js.Any])
     
+    inline def `setBackground-height-relative-to`(value: PropertyValueNode[inner | `include-padding`]): Self = StObject.set(x, "background-height-relative-to", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-height-relative-toFunction1`(value: NodeSingular => inner | `include-padding`): Self = StObject.set(x, "background-height-relative-to", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-height-relative-toUndefined`: Self = StObject.set(x, "background-height-relative-to", js.undefined)
+    
     inline def `setBackground-heightFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-height", js.Any.fromFunction1(value))
     
     inline def `setBackground-heightUndefined`: Self = StObject.set(x, "background-height", js.undefined)
     
     inline def `setBackground-image`(value: PropertyValueNode[String]): Self = StObject.set(x, "background-image", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-containment`(value: PropertyValueNode[inside | over]): Self = StObject.set(x, "background-image-containment", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-containmentFunction1`(value: NodeSingular => inside | over): Self = StObject.set(x, "background-image-containment", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-containmentUndefined`: Self = StObject.set(x, "background-image-containment", js.undefined)
+    
+    inline def `setBackground-image-crossorigin`(value: PropertyValueNode[anonymous | `use-credentials`]): Self = StObject.set(x, "background-image-crossorigin", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-crossoriginFunction1`(value: NodeSingular => anonymous | `use-credentials`): Self = StObject.set(x, "background-image-crossorigin", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-crossoriginUndefined`: Self = StObject.set(x, "background-image-crossorigin", js.undefined)
     
     inline def `setBackground-image-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-image-opacity", value.asInstanceOf[js.Any])
     
@@ -123,9 +215,27 @@ object BackgroundImage {
     
     inline def `setBackground-image-opacityUndefined`: Self = StObject.set(x, "background-image-opacity", js.undefined)
     
+    inline def `setBackground-image-smoothing`(value: PropertyValueNode[yes | no]): Self = StObject.set(x, "background-image-smoothing", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-smoothingFunction1`(value: NodeSingular => yes | no): Self = StObject.set(x, "background-image-smoothing", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-smoothingUndefined`: Self = StObject.set(x, "background-image-smoothing", js.undefined)
+    
     inline def `setBackground-imageFunction1`(value: NodeSingular => String): Self = StObject.set(x, "background-image", js.Any.fromFunction1(value))
     
     inline def `setBackground-imageUndefined`: Self = StObject.set(x, "background-image", js.undefined)
+    
+    inline def `setBackground-offset-x`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-offset-x", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-offset-xFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-offset-x", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-offset-xUndefined`: Self = StObject.set(x, "background-offset-x", js.undefined)
+    
+    inline def `setBackground-offset-y`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-offset-y", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-offset-yFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-offset-y", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-offset-yUndefined`: Self = StObject.set(x, "background-offset-y", js.undefined)
     
     inline def `setBackground-position-x`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-position-x", value.asInstanceOf[js.Any])
     
@@ -147,8 +257,26 @@ object BackgroundImage {
     
     inline def `setBackground-width`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-width", value.asInstanceOf[js.Any])
     
+    inline def `setBackground-width-relative-to`(value: PropertyValueNode[inner | `include-padding`]): Self = StObject.set(x, "background-width-relative-to", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-width-relative-toFunction1`(value: NodeSingular => inner | `include-padding`): Self = StObject.set(x, "background-width-relative-to", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-width-relative-toUndefined`: Self = StObject.set(x, "background-width-relative-to", js.undefined)
+    
     inline def `setBackground-widthFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-width", js.Any.fromFunction1(value))
     
     inline def `setBackground-widthUndefined`: Self = StObject.set(x, "background-width", js.undefined)
+    
+    inline def `setBounds-expansion`(
+      value: PropertyValueNode[
+          Double | String | (js.Tuple2[Double | String, Double | String]) | (js.Tuple4[Double | String, Double | String, Double | String, Double | String])
+        ]
+    ): Self = StObject.set(x, "bounds-expansion", value.asInstanceOf[js.Any])
+    
+    inline def `setBounds-expansionFunction1`(
+      value: NodeSingular => Double | String | (js.Tuple2[Double | String, Double | String]) | (js.Tuple4[Double | String, Double | String, Double | String, Double | String])
+    ): Self = StObject.set(x, "bounds-expansion", js.Any.fromFunction1(value))
+    
+    inline def `setBounds-expansionUndefined`: Self = StObject.set(x, "bounds-expansion", js.undefined)
   }
 }

@@ -10,10 +10,10 @@ Join paths and globs.
 | ------------------ | :-------------: |
 | Full name          | globjoin |
 | Keywords           | array, glob, glob join, globbing, multiple, negative glob, path, path join, patterns, wildcard |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 78200346 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2935024E7 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/amobiz/globjoin)

@@ -31,10 +31,10 @@ object BatchGetReportsOutput {
     
     inline def setReportsNotFoundUndefined: Self = StObject.set(x, "reportsNotFound", js.undefined)
     
-    inline def setReportsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportsNotFound", js.Array(value :_*))
+    inline def setReportsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportsNotFound", js.Array(value*))
     
     inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    inline def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value*))
   }
 }

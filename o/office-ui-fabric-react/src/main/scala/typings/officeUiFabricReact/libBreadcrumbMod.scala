@@ -14,7 +14,7 @@ object libBreadcrumbMod {
   
   @JSImport("office-ui-fabric-react/lib/Breadcrumb", "BreadcrumbBase")
   @js.native
-  class BreadcrumbBase protected ()
+  open class BreadcrumbBase protected ()
     extends typings.officeUiFabricReact.breadcrumbMod.BreadcrumbBase {
     def this(props: IBreadcrumbProps) = this()
   }

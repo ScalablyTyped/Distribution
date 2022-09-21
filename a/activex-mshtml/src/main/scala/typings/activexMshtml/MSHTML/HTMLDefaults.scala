@@ -11,7 +11,7 @@ trait HTMLDefaults extends StObject {
   
   var canHaveHTML: Boolean
   
-  val constructor: js.Any
+  val constructor: Any
   
   var contentEditable: String
   
@@ -38,7 +38,7 @@ object HTMLDefaults {
   inline def apply(
     MSHTMLDotHTMLDefaults_typekey: HTMLDefaults,
     canHaveHTML: Boolean,
-    constructor: js.Any,
+    constructor: Any,
     contentEditable: String,
     frozen: Boolean,
     isMultiLine: Boolean,
@@ -59,7 +59,7 @@ object HTMLDefaults {
     
     inline def setCanHaveHTML(value: Boolean): Self = StObject.set(x, "canHaveHTML", value.asInstanceOf[js.Any])
     
-    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     inline def setContentEditable(value: String): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     

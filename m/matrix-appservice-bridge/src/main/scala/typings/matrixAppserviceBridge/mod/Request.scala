@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "Request")
 @js.native
-class Request[T] protected ()
+open class Request[T] protected ()
   extends typings.matrixAppserviceBridge.requestMod.Request[T] {
   /**
     * Construct a new Request.

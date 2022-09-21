@@ -2,7 +2,6 @@ package typings.awsSdkClientXrayNode
 
 import typings.awsSdkClientXrayNode.typesServiceIdMod.ServiceId
 import typings.awsSdkClientXrayNode.typesServiceIdMod.UnmarshalledServiceId
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesTraceUserMod {
     /**
       * <p>Services that the user's request hit.</p>
       */
-    var ServiceIds: js.UndefOr[js.Array[ServiceId] | Iterable[ServiceId]] = js.undefined
+    var ServiceIds: js.UndefOr[js.Array[ServiceId] | js.Iterable[ServiceId]] = js.undefined
     
     /**
       * <p>The user's name.</p>
@@ -30,11 +29,11 @@ object typesTraceUserMod {
     
     extension [Self <: TraceUser](x: Self) {
       
-      inline def setServiceIds(value: js.Array[ServiceId] | Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
+      inline def setServiceIds(value: js.Array[ServiceId] | js.Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
       
       inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
       
       inline def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
       
@@ -65,7 +64,7 @@ object typesTraceUserMod {
       
       inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      inline def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
     }
   }
 }

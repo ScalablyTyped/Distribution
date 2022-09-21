@@ -37,7 +37,28 @@ trait ShapeView
     *
     * [Api set:  1.1]
     *
-    * @param OverlayType An Overlay Type. Can be 'Text' or 'Image'.
+    * @param OverlayType An Overlay Type. Can be 'Text', 'Image' or 'Html'.
+    * @param Content Content of Overlay.
+    * @param OverlayHorizontalAlignment Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
+    * @param OverlayVerticalAlignment Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
+    * @param Width Overlay Width.
+    * @param Height Overlay Height.
+    */
+  def addOverlay(
+    OverlayType: Text | Image | Html,
+    Content: String,
+    OverlayHorizontalAlignment: Left | Center | Right,
+    OverlayVerticalAlignment: Top | Middle | Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  /**
+    *
+    * Adds an overlay on top of the shape.
+    *
+    * [Api set:  1.1]
+    *
+    * @param OverlayType An Overlay Type. Can be 'Text', 'Image' or 'Html'.
     * @param Content Content of Overlay.
     * @param OverlayHorizontalAlignment Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
     * @param OverlayVerticalAlignment Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
@@ -49,235 +70,6 @@ trait ShapeView
     Content: String,
     OverlayHorizontalAlignment: OverlayHorizontalAlignment,
     OverlayVerticalAlignment: OverlayVerticalAlignment,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Html,
-    Content: String,
-    OverlayHorizontalAlignment: Center,
-    OverlayVerticalAlignment: Bottom,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Html,
-    Content: String,
-    OverlayHorizontalAlignment: Center,
-    OverlayVerticalAlignment: Middle,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Html,
-    Content: String,
-    OverlayHorizontalAlignment: Center,
-    OverlayVerticalAlignment: Top,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Html,
-    Content: String,
-    OverlayHorizontalAlignment: Left,
-    OverlayVerticalAlignment: Bottom,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Html,
-    Content: String,
-    OverlayHorizontalAlignment: Left,
-    OverlayVerticalAlignment: Middle,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Html,
-    Content: String,
-    OverlayHorizontalAlignment: Left,
-    OverlayVerticalAlignment: Top,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Html,
-    Content: String,
-    OverlayHorizontalAlignment: Right,
-    OverlayVerticalAlignment: Bottom,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Html,
-    Content: String,
-    OverlayHorizontalAlignment: Right,
-    OverlayVerticalAlignment: Middle,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Html,
-    Content: String,
-    OverlayHorizontalAlignment: Right,
-    OverlayVerticalAlignment: Top,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Image,
-    Content: String,
-    OverlayHorizontalAlignment: Center,
-    OverlayVerticalAlignment: Bottom,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Image,
-    Content: String,
-    OverlayHorizontalAlignment: Center,
-    OverlayVerticalAlignment: Middle,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Image,
-    Content: String,
-    OverlayHorizontalAlignment: Center,
-    OverlayVerticalAlignment: Top,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Image,
-    Content: String,
-    OverlayHorizontalAlignment: Left,
-    OverlayVerticalAlignment: Bottom,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Image,
-    Content: String,
-    OverlayHorizontalAlignment: Left,
-    OverlayVerticalAlignment: Middle,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Image,
-    Content: String,
-    OverlayHorizontalAlignment: Left,
-    OverlayVerticalAlignment: Top,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Image,
-    Content: String,
-    OverlayHorizontalAlignment: Right,
-    OverlayVerticalAlignment: Bottom,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Image,
-    Content: String,
-    OverlayHorizontalAlignment: Right,
-    OverlayVerticalAlignment: Middle,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Image,
-    Content: String,
-    OverlayHorizontalAlignment: Right,
-    OverlayVerticalAlignment: Top,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Text,
-    Content: String,
-    OverlayHorizontalAlignment: Center,
-    OverlayVerticalAlignment: Bottom,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Text,
-    Content: String,
-    OverlayHorizontalAlignment: Center,
-    OverlayVerticalAlignment: Middle,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Text,
-    Content: String,
-    OverlayHorizontalAlignment: Center,
-    OverlayVerticalAlignment: Top,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Text,
-    Content: String,
-    OverlayHorizontalAlignment: Left,
-    OverlayVerticalAlignment: Bottom,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Text,
-    Content: String,
-    OverlayHorizontalAlignment: Left,
-    OverlayVerticalAlignment: Middle,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  /**
-    *
-    * Adds an overlay on top of the shape.
-    *
-    * [Api set:  1.1]
-    *
-    * @param OverlayType An Overlay Type. Can be 'Text' or 'Image'.
-    * @param Content Content of Overlay.
-    * @param OverlayHorizontalAlignment Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
-    * @param OverlayVerticalAlignment Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
-    * @param Width Overlay Width.
-    * @param Height Overlay Height.
-    */
-  def addOverlay(
-    OverlayType: Text,
-    Content: String,
-    OverlayHorizontalAlignment: Left,
-    OverlayVerticalAlignment: Top,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Text,
-    Content: String,
-    OverlayHorizontalAlignment: Right,
-    OverlayVerticalAlignment: Bottom,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Text,
-    Content: String,
-    OverlayHorizontalAlignment: Right,
-    OverlayVerticalAlignment: Middle,
-    Width: Double,
-    Height: Double
-  ): ClientResult[Double] = js.native
-  def addOverlay(
-    OverlayType: Text,
-    Content: String,
-    OverlayHorizontalAlignment: Right,
-    OverlayVerticalAlignment: Top,
     Width: Double,
     Height: Double
   ): ClientResult[Double] = js.native
@@ -295,25 +87,15 @@ trait ShapeView
   var highlight: Highlight = js.native
   
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Visio.ShapeView` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ShapeView = js.native
-  def load(option: String): ShapeView = js.native
-  def load(option: js.Array[String]): ShapeView = js.native
-  def load(option: ShapeViewLoadOptions): ShapeView = js.native
-  def load(option: Expand): ShapeView = js.native
+  def load(options: ShapeViewLoadOptions): ShapeView = js.native
+  def load(propertyNamesAndPaths: Expand): ShapeView = js.native
+  def load(propertyNames: String): ShapeView = js.native
+  def load(propertyNames: js.Array[String]): ShapeView = js.native
   
   /**
     *
@@ -340,6 +122,22 @@ trait ShapeView
   def set(properties: ShapeViewUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ShapeView): Unit = js.native
+  
+  /**
+    * Set mock data
+    */
+  def setMockData(data: ShapeViewData): Unit = js.native
+  
+  /**
+    *
+    * Shows particular overlay on the Shape.
+    *
+    * [Api set:  1.1]
+    *
+    * @param overlayId overlay id in context
+    * @param show to show or hide
+    */
+  def showOverlay(overlayId: Double, show: Boolean): Unit = js.native
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

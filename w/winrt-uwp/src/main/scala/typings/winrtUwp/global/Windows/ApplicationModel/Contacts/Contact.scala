@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Contacts
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Contacts.IContactField
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Contacts.Contact")
 @js.native
 /** Creates a new instance of the Contact class. */
-class Contact ()
+open class Contact ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact {
   
@@ -49,7 +48,7 @@ class Contact ()
   
   /** Gets or sets the last time the user updated their display picture. */
   /* CompleteClass */
-  var displayPictureUserUpdateTime: Date = js.native
+  var displayPictureUserUpdateTime: js.Date = js.native
   
   /** Gets the email addresses for a contact. */
   /* CompleteClass */
@@ -160,7 +159,7 @@ class Contact ()
   var textToneToken: String = js.native
   
   /* CompleteClass */
-  var thumbnail: js.Any = js.native
+  var thumbnail: Any = js.native
   
   /* unmapped type */
   /** Gets the Web sites for a contact. */

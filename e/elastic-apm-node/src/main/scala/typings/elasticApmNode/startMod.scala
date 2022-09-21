@@ -10,10 +10,10 @@ object startMod extends Shortcut {
   
   @JSImport("elastic-apm-node/start", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & Agent = js.native
+  val ^ : Agent = js.native
   
-  type _To = js.Object & Agent
+  type _To = Agent
   
   /* This means you don't have to write `^`, but can instead just say `startMod.foo` */
-  override def _to: js.Object & Agent = ^
+  override def _to: Agent = ^
 }

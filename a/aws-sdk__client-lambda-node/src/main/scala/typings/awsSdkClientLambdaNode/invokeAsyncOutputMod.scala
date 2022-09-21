@@ -8,5 +8,5 @@ object invokeAsyncOutputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/InvokeAsyncOutput", "InvokeAsyncOutput")
   @js.native
-  val InvokeAsyncOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvokeAsyncOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -13,9 +13,9 @@ trait PoliciesListResponse extends StObject {
   
   /**
     * The presence of this field indicates that there exist more results following your last page of results in pagination order. To fetch them, make another list request using this value
-    * as your page token. In this way you can retrieve the complete contents of even very large collections one page at a time. However, if the contents of the collection change between
-    * the first and last paginated list request, the set of all elements returned will be an inconsistent view of the collection. There is no way to retrieve a consistent snapshot of a
-    * collection larger than the maximum page size.
+    * as your page token. This lets you the complete contents of even very large collections one page at a time. However, if the contents of the collection change between the first and
+    * last paginated list request, the set of all elements returned are an inconsistent view of the collection. You cannot retrieve a consistent snapshot of a collection larger than the
+    * maximum page size.
     */
   var nextPageToken: js.UndefOr[String] = js.undefined
   
@@ -47,6 +47,6 @@ object PoliciesListResponse {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: Policy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: Policy*): Self = StObject.set(x, "policies", js.Array(value*))
   }
 }

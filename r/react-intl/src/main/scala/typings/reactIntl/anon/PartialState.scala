@@ -1,7 +1,7 @@
 package typings.reactIntl.anon
 
 import typings.formatjsIntl.srcTypesMod.IntlCache
-import typings.reactIntl.componentsProviderMod.OptionalIntlConfig
+import typings.reactIntl.srcTypesMod.IntlConfig
 import typings.reactIntl.srcTypesMod.IntlShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait PartialState extends StObject {
   
   var intl: js.UndefOr[IntlShape] = js.undefined
   
-  var prevConfig: js.UndefOr[OptionalIntlConfig] = js.undefined
+  var prevConfig: js.UndefOr[IntlConfig] = js.undefined
 }
 object PartialState {
   
@@ -33,7 +33,7 @@ object PartialState {
     
     inline def setIntlUndefined: Self = StObject.set(x, "intl", js.undefined)
     
-    inline def setPrevConfig(value: OptionalIntlConfig): Self = StObject.set(x, "prevConfig", value.asInstanceOf[js.Any])
+    inline def setPrevConfig(value: IntlConfig): Self = StObject.set(x, "prevConfig", value.asInstanceOf[js.Any])
     
     inline def setPrevConfigUndefined: Self = StObject.set(x, "prevConfig", js.undefined)
   }

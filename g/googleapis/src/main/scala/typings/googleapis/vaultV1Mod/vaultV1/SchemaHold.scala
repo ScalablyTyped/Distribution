@@ -4,52 +4,42 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a hold within Vault. A hold restricts purging of artifacts based
-  * on the combination of the query and accounts restrictions. A hold can be
-  * configured to either apply to an explicitly configured set of accounts, or
-  * can be applied to all members of an organizational unit.
-  */
 trait SchemaHold extends StObject {
   
   /**
-    * If set, the hold applies to the enumerated accounts and org_unit must be
-    * empty.
+    * If set, the hold applies to the specified accounts and **orgUnit** must be empty.
     */
   var accounts: js.UndefOr[js.Array[SchemaHeldAccount]] = js.undefined
   
   /**
-    * The corpus to be searched.
+    * The service to be searched.
     */
-  var corpus: js.UndefOr[String] = js.undefined
+  var corpus: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The unique immutable ID of the hold. Assigned during creation.
     */
-  var holdId: js.UndefOr[String] = js.undefined
+  var holdId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The name of the hold.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * If set, the hold applies to all members of the organizational unit and
-    * accounts must be empty. This property is mutable. For groups holds, set
-    * the accounts field.
+    * If set, the hold applies to all members of the organizational unit and **accounts** must be empty. This property is mutable. For Groups holds, set **accounts**.
     */
   var orgUnit: js.UndefOr[SchemaHeldOrgUnit] = js.undefined
   
   /**
-    * The corpus-specific query. If set, the corpusQuery must match corpus
-    * type.
+    * Service-specific options. If set, **CorpusQuery** must match **CorpusType**.
     */
   var query: js.UndefOr[SchemaCorpusQuery] = js.undefined
   
   /**
     * The last time this hold was modified.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaHold {
   
@@ -64,17 +54,23 @@ object SchemaHold {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: SchemaHeldAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: SchemaHeldAccount*): Self = StObject.set(x, "accounts", js.Array(value*))
     
     inline def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
+    
+    inline def setCorpusNull: Self = StObject.set(x, "corpus", null)
     
     inline def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
     
     inline def setHoldId(value: String): Self = StObject.set(x, "holdId", value.asInstanceOf[js.Any])
     
+    inline def setHoldIdNull: Self = StObject.set(x, "holdId", null)
+    
     inline def setHoldIdUndefined: Self = StObject.set(x, "holdId", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -87,6 +83,8 @@ object SchemaHold {
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }

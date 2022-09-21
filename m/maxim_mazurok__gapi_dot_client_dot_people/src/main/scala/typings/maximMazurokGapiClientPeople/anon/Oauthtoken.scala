@@ -22,6 +22,12 @@ trait Oauthtoken extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. A field mask to restrict which fields on the group are returned. Defaults to `metadata`, `groupType`, `memberCount`, and `name` if not set or set to empty. Valid
+    * fields are: * clientData * groupType * memberCount * metadata * name
+    */
+  var groupFields: js.UndefOr[String] = js.undefined
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
@@ -77,6 +83,10 @@ object Oauthtoken {
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setGroupFields(value: String): Self = StObject.set(x, "groupFields", value.asInstanceOf[js.Any])
+    
+    inline def setGroupFieldsUndefined: Self = StObject.set(x, "groupFields", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

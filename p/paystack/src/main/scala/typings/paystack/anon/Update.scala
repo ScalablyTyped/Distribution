@@ -14,8 +14,8 @@ trait Update extends StObject {
   def get(id_or_slug: Double): js.Promise[Response] = js.native
   
   def list(): js.Promise[Response] = js.native
-  def list(param: js.Any): js.Promise[Response] = js.native
+  def list(param: Any): js.Promise[Response] = js.native
   
-  def update(id_or_slug: String, params: js.Any): js.Promise[Response] = js.native
-  def update(id_or_slug: Double, params: js.Any): js.Promise[Response] = js.native
+  def update(id_or_slug: String, params: Any): js.Promise[Response] = js.native
+  def update(id_or_slug: Double, params: Any): js.Promise[Response] = js.native
 }

@@ -33,7 +33,7 @@ object XProtectable {
     acquire: () => Unit,
     isProtected: () => Boolean,
     protect: String => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     unprotect: String => Unit
   ): XProtectable = {

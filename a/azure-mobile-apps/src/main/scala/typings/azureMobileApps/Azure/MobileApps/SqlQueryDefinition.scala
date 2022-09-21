@@ -23,7 +23,7 @@ object SqlQueryDefinition {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: SqlParameterDefinition*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SqlParameterDefinition*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
   }

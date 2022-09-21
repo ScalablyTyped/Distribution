@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isDropdownValueTypeMod {
   
-  @JSImport("@ant-design/pro-utils/lib/isDropdownValueType", JSImport.Namespace)
+  @JSImport("@ant-design/pro-utils/es/isDropdownValueType", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(valueType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDropdownValueType(valueType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDropdownValueType")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.TextureAtlas")
 @js.native
-class TextureAtlas protected ()
+open class TextureAtlas protected ()
   extends StObject
      with typings.phaser.spine.TextureAtlas {
-  def this(atlasText: String, textureLoader: js.Function1[/* path */ String, js.Any]) = this()
+  def this(atlasText: String, textureLoader: js.Function1[/* path */ String, Any]) = this()
   
   /* CompleteClass */
   override def dispose(): Unit = js.native
@@ -18,7 +18,7 @@ class TextureAtlas protected ()
   override def findRegion(name: String): typings.phaser.spine.TextureAtlasRegion = js.native
   
   /* private */ /* CompleteClass */
-  var load: js.Any = js.native
+  var load: Any = js.native
   
   /* CompleteClass */
   var pages: js.Array[typings.phaser.spine.TextureAtlasPage] = js.native

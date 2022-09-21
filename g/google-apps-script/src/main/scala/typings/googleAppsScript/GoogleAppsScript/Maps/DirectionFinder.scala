@@ -68,7 +68,7 @@ trait DirectionFinder extends StObject {
   
   def clearWaypoints(): DirectionFinder = js.native
   
-  def getDirections(): js.Any = js.native
+  def getDirections(): Any = js.native
   
   def setAlternatives(useAlternatives: Boolean): DirectionFinder = js.native
   

@@ -8,7 +8,7 @@ object utilsMod {
   
   @JSImport("typesettable/build/src/utils", "Cache")
   @js.native
-  class Cache[T] protected ()
+  open class Cache[T] protected ()
     extends typings.typesettable.cacheMod.Cache[T] {
     /**
       * @constructor
@@ -20,7 +20,7 @@ object utilsMod {
   
   @JSImport("typesettable/build/src/utils", "Methods")
   @js.native
-  class Methods ()
+  open class Methods ()
     extends typings.typesettable.methodsMod.Methods
   /* static members */
   object Methods {
@@ -37,7 +37,7 @@ object utilsMod {
     /**
       * Shim for _.defaults
       */
-    inline def defaults(target: js.Any, objects: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def defaults(target: Any, objects: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(List(target.asInstanceOf[js.Any]).`++`(objects.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
     /**
       * @param {any} a Object to check against b for equality.
@@ -47,14 +47,14 @@ object utilsMod {
       *          values associated with those keys. Values will be compared
       *          with ===.
       */
-    inline def objEq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("objEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def objEq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("objEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def strictEq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def strictEq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSImport("typesettable/build/src/utils", "StringMethods")
   @js.native
-  class StringMethods ()
+  open class StringMethods ()
     extends typings.typesettable.stringMethodsMod.StringMethods
   /* static members */
   object StringMethods {
@@ -79,6 +79,6 @@ object utilsMod {
   
   @JSImport("typesettable/build/src/utils", "Tokenizer")
   @js.native
-  class Tokenizer ()
+  open class Tokenizer ()
     extends typings.typesettable.tokenizerMod.Tokenizer
 }

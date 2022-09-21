@@ -75,7 +75,7 @@ object NotificationHubInstallation {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTemplates(value: StringDictionary[Body]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     

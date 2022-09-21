@@ -11,7 +11,7 @@ trait ITypes
   extends StObject
      with ITypeOverrides {
   
-  def arrayParser(source: String, transform: js.Function1[/* entry */ js.Any, js.Any]): js.Array[js.Any] = js.native
+  def arrayParser(source: String, transform: js.Function1[/* entry */ Any, Any]): js.Array[Any] = js.native
   
-  var builtins: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TypeId */ js.Any = js.native
+  var builtins: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TypeId */ Any = js.native
 }

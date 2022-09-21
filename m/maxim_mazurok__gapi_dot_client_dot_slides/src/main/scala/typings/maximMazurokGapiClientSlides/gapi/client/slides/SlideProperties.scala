@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SlideProperties extends StObject {
   
+  /** Whether the slide is skipped in the presentation mode. Defaults to false. */
+  var isSkipped: js.UndefOr[Boolean] = js.undefined
+  
   /** The object ID of the layout that this slide is based on. This property is read-only. */
   var layoutObjectId: js.UndefOr[String] = js.undefined
   
@@ -27,6 +30,10 @@ object SlideProperties {
   }
   
   extension [Self <: SlideProperties](x: Self) {
+    
+    inline def setIsSkipped(value: Boolean): Self = StObject.set(x, "isSkipped", value.asInstanceOf[js.Any])
+    
+    inline def setIsSkippedUndefined: Self = StObject.set(x, "isSkipped", js.undefined)
     
     inline def setLayoutObjectId(value: String): Self = StObject.set(x, "layoutObjectId", value.asInstanceOf[js.Any])
     

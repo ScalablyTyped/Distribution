@@ -16,7 +16,7 @@ object xmlElementMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlElement", JSImport.Default)
   @js.native
-  class default[Parent] protected ()
+  open class default[Parent] protected ()
     extends StObject
        with XmlElement[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlElementOptions) = this()
@@ -75,25 +75,25 @@ object xmlElementMod {
   @js.native
   trait XmlElement[Parent] extends StObject {
     
-    /* private */ val _attributeNames: js.Any = js.native
+    /* private */ val _attributeNames: Any = js.native
     
-    /* private */ val _children: js.Any = js.native
+    /* private */ val _children: Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
-    /* private */ val _parent: js.Any = js.native
+    /* private */ val _parent: Any = js.native
     
-    /* private */ val _replaceInvalidCharsInName: js.Any = js.native
+    /* private */ val _replaceInvalidCharsInName: Any = js.native
     
-    /* private */ val _useSelfClosingTagIfEmpty: js.Any = js.native
+    /* private */ val _useSelfClosingTagIfEmpty: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
     /**
       * Returns true if the specified nodes are all character references,
       * entity references, or character data.
       */
-    /* private */ var allSameLineNodes: js.Any = js.native
+    /* private */ var allSameLineNodes: Any = js.native
     
     /**
       * Adds an attribute to this element and returns the new attribute.
@@ -145,7 +145,7 @@ object xmlElementMod {
       * Returns true if the specified nodes are all character references,
       * entity references, or character data.
       */
-    /* private */ var onSameLine: js.Any = js.native
+    /* private */ var onSameLine: Any = js.native
     
     /**
       * Adds a processing instruction to this element and returns the new
@@ -159,7 +159,7 @@ object xmlElementMod {
       * Returns an XML string representation of this element using the specified
       * options and initial indent.
       */
-    /* private */ var toStringWithIndent: js.Any = js.native
+    /* private */ var toStringWithIndent: Any = js.native
     
     /**
       * Returns the parent of this element.

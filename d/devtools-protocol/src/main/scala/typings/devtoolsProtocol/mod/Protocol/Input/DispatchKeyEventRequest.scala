@@ -24,7 +24,7 @@ trait DispatchKeyEventRequest extends StObject {
   /**
     * Editing commands to send with the key event (e.g., 'selectAll') (default: []).
     * These are related to but not equal the command names used in `document.execCommand` and NSStandardKeyBindingResponding.
-    * See https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/editing/commands/editor_command_names.h for valid command names.
+    * See https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/editing/commands/editor_command_names.h for valid command names.
     */
   var commands: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -115,7 +115,7 @@ object DispatchKeyEventRequest {
     
     inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value*))
     
     inline def setIsKeypad(value: Boolean): Self = StObject.set(x, "isKeypad", value.asInstanceOf[js.Any])
     

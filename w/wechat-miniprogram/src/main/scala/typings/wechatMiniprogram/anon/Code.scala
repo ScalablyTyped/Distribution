@@ -42,6 +42,6 @@ object Code {
     
     inline def setValue(value: String | js.Array[Double] | (js.Tuple3[String, String, String])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

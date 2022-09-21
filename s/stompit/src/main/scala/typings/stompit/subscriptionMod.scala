@@ -1,7 +1,6 @@
 package typings.stompit
 
 import typings.node.streamMod.Writable
-import typings.std.Error
 import typings.stompit.clientMod.Ack
 import typings.stompit.clientMod.MessageCallback
 import org.scalablytyped.runtime.StObject
@@ -12,7 +11,7 @@ object subscriptionMod {
   
   @JSImport("stompit/lib/client/Subscription", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Subscription {
     def this(id: Double, ack: Ack, onMessageCallback: MessageCallback, client: typings.stompit.clientMod.^) = this()
@@ -23,10 +22,10 @@ object subscriptionMod {
     
     def getId(): Double = js.native
     
+    def processMessageFrame(error: js.Error, frame: Writable): Unit = js.native
     def processMessageFrame(error: Null, frame: Writable): Unit = js.native
-    def processMessageFrame(error: Error, frame: Writable): Unit = js.native
     
     def unsubscribe(): Unit = js.native
-    def unsubscribe(headers: js.Any): Unit = js.native
+    def unsubscribe(headers: Any): Unit = js.native
   }
 }

@@ -9,7 +9,7 @@ trait OnSocketOpenCallbackResult extends StObject {
   /**
     * 连接成功的 HTTP 响应 Header
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
 }
 object OnSocketOpenCallbackResult {
   
@@ -20,7 +20,7 @@ object OnSocketOpenCallbackResult {
   
   extension [Self <: OnSocketOpenCallbackResult](x: Self) {
     
-    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }

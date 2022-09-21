@@ -14,7 +14,7 @@ trait VpcPeeringConnection extends StObject {
   /**
     * The time that an unaccepted VPC peering connection will expire.
     */
-  var ExpirationTime: js.UndefOr[DateTime] = js.undefined
+  var ExpirationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Information about the requester VPC. CIDR block information is only returned when describing an active VPC peering connection.
@@ -49,7 +49,7 @@ object VpcPeeringConnection {
     
     inline def setAccepterVpcInfoUndefined: Self = StObject.set(x, "AccepterVpcInfo", js.undefined)
     
-    inline def setExpirationTime(value: DateTime): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: js.Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     inline def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
@@ -65,7 +65,7 @@ object VpcPeeringConnection {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcPeeringConnectionId(value: String): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
     

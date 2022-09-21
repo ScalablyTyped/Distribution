@@ -1,7 +1,5 @@
 package typings.aesJs
 
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +8,7 @@ object mod {
   
   @JSImport("aes-js", "AES")
   @js.native
-  class AES protected () extends StObject {
+  open class AES protected () extends StObject {
     /**
       * Create a new AES block cipher.
       * @param key The cipher key.
@@ -22,7 +20,7 @@ object mod {
   
   @JSImport("aes-js", "Counter")
   @js.native
-  class Counter protected () extends StObject {
+  open class Counter protected () extends StObject {
     def this(initialValue: Double) = this()
     def this(initialValue: ByteSource) = this()
     
@@ -37,7 +35,7 @@ object mod {
     
     @JSImport("aes-js", "ModeOfOperation.ModeOfOperationCBC")
     @js.native
-    class ModeOfOperationCBC protected () extends StObject {
+    open class ModeOfOperationCBC protected () extends StObject {
       /**
         * Create a new CBC stream cipher.
         * @param key The cipher key.
@@ -45,14 +43,14 @@ object mod {
         */
       def this(key: ByteSource, iv: ByteSource) = this()
       
-      def decrypt(v: ByteSource): Uint8Array = js.native
+      def decrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
       
-      def encrypt(v: ByteSource): Uint8Array = js.native
+      def encrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
     }
     
     @JSImport("aes-js", "ModeOfOperation.ModeOfOperationCFB")
     @js.native
-    class ModeOfOperationCFB protected () extends StObject {
+    open class ModeOfOperationCFB protected () extends StObject {
       /**
         * Create a new CFB stream cipher.
         * @param key The cipher key.
@@ -61,14 +59,14 @@ object mod {
         */
       def this(key: ByteSource, iv: ByteSource, segmentSize: Double) = this()
       
-      def decrypt(v: ByteSource): Uint8Array = js.native
+      def decrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
       
-      def encrypt(v: ByteSource): Uint8Array = js.native
+      def encrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
     }
     
     @JSImport("aes-js", "ModeOfOperation.ModeOfOperationCTR")
     @js.native
-    class ModeOfOperationCTR protected () extends StObject {
+    open class ModeOfOperationCTR protected () extends StObject {
       /**
         * Create a new CTR stream cipher.
         * @param key The cipher key.
@@ -77,28 +75,28 @@ object mod {
       def this(key: ByteSource) = this()
       def this(key: ByteSource, counter: Counter) = this()
       
-      def decrypt(v: ByteSource): Uint8Array = js.native
+      def decrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
       
-      def encrypt(v: ByteSource): Uint8Array = js.native
+      def encrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
     }
     
     @JSImport("aes-js", "ModeOfOperation.ModeOfOperationECB")
     @js.native
-    class ModeOfOperationECB protected () extends StObject {
+    open class ModeOfOperationECB protected () extends StObject {
       /**
         * Create a new ECB stream cipher.
         * @param key The cipher key.
         */
       def this(key: ByteSource) = this()
       
-      def decrypt(v: ByteSource): Uint8Array = js.native
+      def decrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
       
-      def encrypt(v: ByteSource): Uint8Array = js.native
+      def encrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
     }
     
     @JSImport("aes-js", "ModeOfOperation.ModeOfOperationOFB")
     @js.native
-    class ModeOfOperationOFB protected () extends StObject {
+    open class ModeOfOperationOFB protected () extends StObject {
       /**
         * Create a new OFB stream cipher.
         * @param key The cipher key.
@@ -106,15 +104,15 @@ object mod {
         */
       def this(key: ByteSource, iv: ByteSource) = this()
       
-      def decrypt(v: ByteSource): Uint8Array = js.native
+      def decrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
       
-      def encrypt(v: ByteSource): Uint8Array = js.native
+      def encrypt(v: ByteSource): js.typedarray.Uint8Array = js.native
     }
     
     /* was `typeof ModeOfOperationCBC` */
     @JSImport("aes-js", "ModeOfOperation.cbc")
     @js.native
-    class cbc protected () extends ModeOfOperationCBC {
+    open class cbc protected () extends ModeOfOperationCBC {
       /**
         * Create a new CBC stream cipher.
         * @param key The cipher key.
@@ -126,7 +124,7 @@ object mod {
     /* was `typeof ModeOfOperationCFB` */
     @JSImport("aes-js", "ModeOfOperation.cfb")
     @js.native
-    class cfb protected () extends ModeOfOperationCFB {
+    open class cfb protected () extends ModeOfOperationCFB {
       /**
         * Create a new CFB stream cipher.
         * @param key The cipher key.
@@ -139,7 +137,7 @@ object mod {
     /* was `typeof ModeOfOperationCTR` */
     @JSImport("aes-js", "ModeOfOperation.ctr")
     @js.native
-    class ctr protected () extends ModeOfOperationCTR {
+    open class ctr protected () extends ModeOfOperationCTR {
       /**
         * Create a new CTR stream cipher.
         * @param key The cipher key.
@@ -152,7 +150,7 @@ object mod {
     /* was `typeof ModeOfOperationECB` */
     @JSImport("aes-js", "ModeOfOperation.ecb")
     @js.native
-    class ecb protected () extends ModeOfOperationECB {
+    open class ecb protected () extends ModeOfOperationECB {
       /**
         * Create a new ECB stream cipher.
         * @param key The cipher key.
@@ -163,7 +161,7 @@ object mod {
     /* was `typeof ModeOfOperationOFB` */
     @JSImport("aes-js", "ModeOfOperation.ofb")
     @js.native
-    class ofb protected () extends ModeOfOperationOFB {
+    open class ofb protected () extends ModeOfOperationOFB {
       /**
         * Create a new OFB stream cipher.
         * @param key The cipher key.
@@ -185,13 +183,13 @@ object mod {
         * Add standard PKCS7 padding to an array.
         * @param data The input data.
         */
-      inline def pad(data: ByteSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+      inline def pad(data: ByteSource): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
       /**
         * Remove standard PKCS7 padding from an array.
         * @param data The input data.
         */
-      inline def strip(data: ByteSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+      inline def strip(data: ByteSource): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     }
   }
   
@@ -213,7 +211,7 @@ object mod {
         * Convert a hexadecimal string to a Uint8Array.
         * @param data The input string.
         */
-      inline def toBytes(data: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+      inline def toBytes(data: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     }
     
     object utf8 {
@@ -232,9 +230,9 @@ object mod {
         * Convert a UTF8 encoded string to a Uint8Array.
         * @param data The input string.
         */
-      inline def toBytes(data: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+      inline def toBytes(data: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     }
   }
   
-  type ByteSource = ArrayBuffer | Uint8Array | js.Array[Double]
+  type ByteSource = js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | js.Array[Double]
 }

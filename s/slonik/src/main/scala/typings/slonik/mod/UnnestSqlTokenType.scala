@@ -26,11 +26,11 @@ object UnnestSqlTokenType {
     
     inline def setColumnTypes(value: js.Array[String]): Self = StObject.set(x, "columnTypes", value.asInstanceOf[js.Any])
     
-    inline def setColumnTypesVarargs(value: String*): Self = StObject.set(x, "columnTypes", js.Array(value :_*))
+    inline def setColumnTypesVarargs(value: String*): Self = StObject.set(x, "columnTypes", js.Array(value*))
     
     inline def setTuples(value: js.Array[js.Array[ValueExpressionType]]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
     
-    inline def setTuplesVarargs(value: js.Array[ValueExpressionType]*): Self = StObject.set(x, "tuples", js.Array(value :_*))
+    inline def setTuplesVarargs(value: js.Array[ValueExpressionType]*): Self = StObject.set(x, "tuples", js.Array(value*))
     
     inline def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

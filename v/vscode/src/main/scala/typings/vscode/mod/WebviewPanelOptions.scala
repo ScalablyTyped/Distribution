@@ -9,7 +9,7 @@ trait WebviewPanelOptions extends StObject {
   /**
     * Controls if the find widget is enabled in the panel.
     *
-    * Defaults to false.
+    * Defaults to `false`.
     */
   val enableFindWidget: js.UndefOr[Boolean] = js.undefined
   
@@ -19,7 +19,7 @@ trait WebviewPanelOptions extends StObject {
     *
     * Normally the webview panel's html context is created when the panel becomes visible
     * and destroyed when it is hidden. Extensions that have complex state
-    * or UI can set the `retainContextWhenHidden` to make VS Code keep the webview
+    * or UI can set the `retainContextWhenHidden` to make the editor keep the webview
     * context around, even when the webview moves to a background tab. When a webview using
     * `retainContextWhenHidden` becomes hidden, its scripts and other dynamic content are suspended.
     * When the panel becomes visible again, the context is automatically restored

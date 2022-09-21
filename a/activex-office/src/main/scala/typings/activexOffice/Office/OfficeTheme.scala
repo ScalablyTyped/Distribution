@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OfficeTheme extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
   /* private */ @JSName("Office.OfficeTheme_typekey")
   var OfficeDotOfficeTheme_typekey: OfficeTheme
   
-  val Parent: js.Any
+  val Parent: Any
   
   def ThemeColorScheme(Index: MsoThemeColorSchemeIndex): ThemeColor
   @JSName("ThemeColorScheme")
@@ -26,10 +26,10 @@ trait OfficeTheme extends StObject {
 object OfficeTheme {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     OfficeDotOfficeTheme_typekey: OfficeTheme,
-    Parent: js.Any,
+    Parent: Any,
     ThemeColorScheme: ThemeColorScheme,
     ThemeEffectScheme: ThemeEffectScheme,
     ThemeFontScheme: ThemeFontScheme
@@ -41,13 +41,13 @@ object OfficeTheme {
   
   extension [Self <: OfficeTheme](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     inline def setOfficeDotOfficeTheme_typekey(value: OfficeTheme): Self = StObject.set(x, "Office.OfficeTheme_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setThemeColorScheme(value: ThemeColorScheme): Self = StObject.set(x, "ThemeColorScheme", value.asInstanceOf[js.Any])
     

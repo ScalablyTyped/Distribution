@@ -6,34 +6,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MediaTrackSettings extends StObject {
   
+  /* standard dom */
   var aspectRatio: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var autoGainControl: js.UndefOr[scala.Boolean] = js.undefined
   
-  var channelCount: js.UndefOr[Double] = js.undefined
-  
+  /* standard dom */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var echoCancellation: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var facingMode: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var frameRate: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var groupId: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var height: js.UndefOr[Double] = js.undefined
   
-  var latency: js.UndefOr[Double] = js.undefined
-  
+  /* standard dom */
   var noiseSuppression: js.UndefOr[scala.Boolean] = js.undefined
   
-  var resizeMode: js.UndefOr[java.lang.String] = js.undefined
+  /* standard dom */
+  var restrictOwnAudio: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var sampleRate: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var sampleSize: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var width: js.UndefOr[Double] = js.undefined
 }
 object MediaTrackSettings {
@@ -52,10 +61,6 @@ object MediaTrackSettings {
     inline def setAutoGainControl(value: scala.Boolean): Self = StObject.set(x, "autoGainControl", value.asInstanceOf[js.Any])
     
     inline def setAutoGainControlUndefined: Self = StObject.set(x, "autoGainControl", js.undefined)
-    
-    inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
-    
-    inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
     
     inline def setDeviceId(value: java.lang.String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
@@ -81,17 +86,13 @@ object MediaTrackSettings {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
-    
-    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
-    
     inline def setNoiseSuppression(value: scala.Boolean): Self = StObject.set(x, "noiseSuppression", value.asInstanceOf[js.Any])
     
     inline def setNoiseSuppressionUndefined: Self = StObject.set(x, "noiseSuppression", js.undefined)
     
-    inline def setResizeMode(value: java.lang.String): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+    inline def setRestrictOwnAudio(value: scala.Boolean): Self = StObject.set(x, "restrictOwnAudio", value.asInstanceOf[js.Any])
     
-    inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
+    inline def setRestrictOwnAudioUndefined: Self = StObject.set(x, "restrictOwnAudio", js.undefined)
     
     inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     

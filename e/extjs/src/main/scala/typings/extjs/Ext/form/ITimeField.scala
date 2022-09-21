@@ -21,13 +21,13 @@ trait ITimeField
   var maxText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Date/String) */
-  var maxValue: js.UndefOr[js.Any] = js.undefined
+  var maxValue: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var minText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Date/String) */
-  var minValue: js.UndefOr[js.Any] = js.undefined
+  var minValue: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var pickerMaxHeight: js.UndefOr[Double] = js.undefined
@@ -35,18 +35,18 @@ trait ITimeField
   /** [Method] Replaces any existing maxValue with the new time and refreshes the picker s range
     * @param value Date/String The maximum time that can be selected
     */
-  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Replaces any existing minValue with the new time and refreshes the picker s range
     * @param value Date/String The minimum time that can be selected
     */
-  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the specified value s into the field
     * @returns any this
     */
   @JSName("setValue")
-  var setValue_ITimeField: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var setValue_ITimeField: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var snapToIncrement: js.UndefOr[Boolean] = js.undefined
@@ -79,7 +79,7 @@ object ITimeField {
     
     inline def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
     
-    inline def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
@@ -87,7 +87,7 @@ object ITimeField {
     
     inline def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
     
-    inline def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
@@ -95,15 +95,15 @@ object ITimeField {
     
     inline def setPickerMaxHeightUndefined: Self = StObject.set(x, "pickerMaxHeight", js.undefined)
     
-    inline def setSetMaxValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
+    inline def setSetMaxValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
     inline def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
-    inline def setSetMinValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
+    inline def setSetMinValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
     inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
-    inline def setSetValue(value: () => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
+    inline def setSetValue(value: () => Any): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     

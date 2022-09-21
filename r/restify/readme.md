@@ -1,7 +1,7 @@
 
 # Scala.js typings for restify
 
-Typings are for version 8.4
+Typings are for version 8.5
 
 ## Library description:
 REST framework
@@ -10,10 +10,10 @@ REST framework
 | ------------------ | :-------------: |
 | Full name          | restify |
 | Keywords           | REST, framework, express, DTrace |
-| # releases         | 13 |
-| # dependents       | 790 |
-| # downloads        | 5828521 |
-| # stars            | 230 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2346551.0 |
+| # stars            | 10449.0 |
 
 ## Links
 - [Homepage](http://restify.com)

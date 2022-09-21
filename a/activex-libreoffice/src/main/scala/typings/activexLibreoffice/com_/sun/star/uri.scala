@@ -344,7 +344,7 @@ object uri {
       hasRelativePath: () => Boolean,
       isAbsolute: () => Boolean,
       isHierarchical: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setFragment: String => Unit
     ): XUriReference = {
@@ -462,7 +462,7 @@ object uri {
       makeAbsolute: (XUriReference, XUriReference, Boolean, RelativeUriExcessParentSegments) => XUriReference,
       makeRelative: (XUriReference, XUriReference, Boolean, Boolean, Boolean) => XUriReference,
       parse: String => XUriReference,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XUriReferenceFactory = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), makeAbsolute = js.Any.fromFunction4(makeAbsolute), makeRelative = js.Any.fromFunction5(makeRelative), parse = js.Any.fromFunction1(parse), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -507,7 +507,7 @@ object uri {
     inline def apply(
       acquire: () => Unit,
       parse: (String, String) => XUriReference,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XUriSchemeParser = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), parse = js.Any.fromFunction2(parse), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -589,7 +589,7 @@ object uri {
       hasRelativePath: () => Boolean,
       isAbsolute: () => Boolean,
       isHierarchical: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setFragment: String => Unit
     ): XVndSunStarExpandUrlReference = {
@@ -695,7 +695,7 @@ object uri {
       getName: () => String,
       getParameter: String => String,
       hasParameter: String => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setName: String => Unit,
       setParameter: (String, String) => Unit
@@ -757,7 +757,7 @@ object uri {
       hasRelativePath: () => Boolean,
       isAbsolute: () => Boolean,
       isHierarchical: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setFragment: String => Unit,
       setName: String => Unit,

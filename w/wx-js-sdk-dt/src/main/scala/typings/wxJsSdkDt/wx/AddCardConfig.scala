@@ -22,7 +22,7 @@ object AddCardConfig {
     
     inline def setCardList(value: js.Array[Card]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
-    inline def setCardListVarargs(value: Card*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: Card*): Self = StObject.set(x, "cardList", js.Array(value*))
     
     inline def setSuccess(value: /* res */ CardList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

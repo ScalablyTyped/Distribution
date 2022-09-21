@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object worker {
   
-  trait IMirrorModel extends StObject {
+  trait IMirrorModel
+    extends StObject
+       with IMirrorTextModel {
     
     def getValue(): String
     
     val uri: Uri
-    
-    val version: Double
   }
   object IMirrorModel {
     
@@ -26,6 +26,21 @@ object worker {
       inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
       inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait IMirrorTextModel extends StObject {
+    
+    val version: Double
+  }
+  object IMirrorTextModel {
+    
+    inline def apply(version: Double): IMirrorTextModel = {
+      val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IMirrorTextModel]
+    }
+    
+    extension [Self <: IMirrorTextModel](x: Self) {
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

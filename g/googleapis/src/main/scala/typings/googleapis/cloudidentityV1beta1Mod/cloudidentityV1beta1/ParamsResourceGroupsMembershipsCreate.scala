@@ -1,9 +1,5 @@
 package typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceGroupsMembershipsCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * [Resource name](https://cloud.google.com/apis/design/resource_names) of
-    * the Group to create Membership within. Format: `groups/{group_id}`, where
-    * `group_id` is the unique id assigned to the Group.
+    * Required. The parent `Group` resource under which to create the `Membership`. Must be of the form `groups/{group_id\}`.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -37,10 +26,6 @@ object ParamsResourceGroupsMembershipsCreate {
   }
   
   extension [Self <: ParamsResourceGroupsMembershipsCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

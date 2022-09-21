@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.TextSpan")
 @js.native
-class TextSpan protected ()
+open class TextSpan protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.TextSpan {
   def this(start: Double, length: Double) = this()
   
   /* private */ /* CompleteClass */
-  var _length: js.Any = js.native
+  var _length: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _start: js.Any = js.native
+  var _start: Any = js.native
   
   /* CompleteClass */
   override def containsPosition(position: Double): Boolean = js.native

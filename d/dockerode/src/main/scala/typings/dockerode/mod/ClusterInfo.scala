@@ -43,7 +43,7 @@ object ClusterInfo {
     
     inline def setDefaultAddrPool(value: js.Array[String]): Self = StObject.set(x, "DefaultAddrPool", value.asInstanceOf[js.Any])
     
-    inline def setDefaultAddrPoolVarargs(value: String*): Self = StObject.set(x, "DefaultAddrPool", js.Array(value :_*))
+    inline def setDefaultAddrPoolVarargs(value: String*): Self = StObject.set(x, "DefaultAddrPool", js.Array(value*))
     
     inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     

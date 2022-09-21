@@ -19,7 +19,7 @@ trait MaplikeDeclarationMemberType
 object MaplikeDeclarationMemberType {
   
   inline def apply(
-    arguments: js.Array[js.Any],
+    arguments: js.Array[Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
     parent: InterfaceMixinType | InterfaceType,

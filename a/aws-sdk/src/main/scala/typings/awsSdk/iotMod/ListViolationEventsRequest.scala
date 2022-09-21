@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListViolationEventsRequest extends StObject {
   
   /**
+    *  The criteria for a behavior. 
+    */
+  var behaviorCriteriaType: js.UndefOr[BehaviorCriteriaType] = js.undefined
+  
+  /**
     * The end time for the alerts to be listed.
     */
-  var endTime: Timestamp
+  var endTime: js.Date
+  
+  /**
+    *  A list of all suppressed alerts. 
+    */
+  var listSuppressedAlerts: js.UndefOr[ListSuppressedAlerts] = js.undefined
   
   /**
     * The maximum number of results to return at one time.
@@ -29,23 +39,36 @@ trait ListViolationEventsRequest extends StObject {
   /**
     * The start time for the alerts to be listed.
     */
-  var startTime: Timestamp
+  var startTime: js.Date
   
   /**
     * A filter to limit results to those alerts caused by the specified thing.
     */
   var thingName: js.UndefOr[DeviceDefenderThingName] = js.undefined
+  
+  /**
+    * The verification state of the violation (detect alarm).
+    */
+  var verificationState: js.UndefOr[VerificationState] = js.undefined
 }
 object ListViolationEventsRequest {
   
-  inline def apply(endTime: Timestamp, startTime: Timestamp): ListViolationEventsRequest = {
+  inline def apply(endTime: js.Date, startTime: js.Date): ListViolationEventsRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViolationEventsRequest]
   }
   
   extension [Self <: ListViolationEventsRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setBehaviorCriteriaType(value: BehaviorCriteriaType): Self = StObject.set(x, "behaviorCriteriaType", value.asInstanceOf[js.Any])
+    
+    inline def setBehaviorCriteriaTypeUndefined: Self = StObject.set(x, "behaviorCriteriaType", js.undefined)
+    
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setListSuppressedAlerts(value: ListSuppressedAlerts): Self = StObject.set(x, "listSuppressedAlerts", value.asInstanceOf[js.Any])
+    
+    inline def setListSuppressedAlertsUndefined: Self = StObject.set(x, "listSuppressedAlerts", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -59,10 +82,14 @@ object ListViolationEventsRequest {
     
     inline def setSecurityProfileNameUndefined: Self = StObject.set(x, "securityProfileName", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setThingName(value: DeviceDefenderThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
     inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    
+    inline def setVerificationState(value: VerificationState): Self = StObject.set(x, "verificationState", value.asInstanceOf[js.Any])
+    
+    inline def setVerificationStateUndefined: Self = StObject.set(x, "verificationState", js.undefined)
   }
 }

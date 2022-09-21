@@ -1,50 +1,50 @@
 package typings.polished.anon
 
 import typings.polished.polishedNumbers.`0`
-import typings.polished.polishedNumbers.`2`
-import typings.polished.polishedStrings.`-_`
-import typings.polished.polishedStrings.infix
+import typings.polished.polishedNumbers.`1`
+import typings.polished.polishedStrings.Leftparenthesis
+import typings.polished.polishedStrings.prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FNotation extends StObject {
   
-  var argCount: `2`
+  var argCount: `1`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify subtraction */ js.Any
+  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ Any
   
-  var notation: infix
+  var notation: prefix
   
-  var precedence: `2`
+  var precedence: `0`
   
   var rightToLeft: `0`
   
-  var symbol: `-_`
+  var symbol: Leftparenthesis
 }
 object FNotation {
   
   inline def apply(
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify subtraction */ js.Any
+    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ Any
   ): FNotation = {
-    val __obj = js.Dynamic.literal(argCount = 2, f = f.asInstanceOf[js.Any], notation = "infix", precedence = 2, rightToLeft = 0, symbol = "-")
+    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "prefix", precedence = 0, rightToLeft = 0, symbol = "(")
     __obj.asInstanceOf[FNotation]
   }
   
   extension [Self <: FNotation](x: Self) {
     
-    inline def setArgCount(value: `2`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
+    inline def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     
     inline def setF(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify subtraction */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ Any
     ): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    inline def setNotation(value: infix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    inline def setNotation(value: prefix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
-    inline def setPrecedence(value: `2`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+    inline def setPrecedence(value: `0`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     
     inline def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: `-_`): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Leftparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

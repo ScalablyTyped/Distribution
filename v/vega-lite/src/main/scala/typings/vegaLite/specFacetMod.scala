@@ -18,6 +18,8 @@ import typings.vegaLite.specLayerMod.GenericLayerSpec
 import typings.vegaLite.specLayerMod.NormalizedLayerSpec
 import typings.vegaLite.specUnitMod.GenericUnitSpec
 import typings.vegaLite.specUnitMod.NormalizedUnitSpec
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.srcTypeMod.StandardType
 import typings.vegaTypings.layoutMod.LayoutAlign
 import typings.vegaTypings.signalMod.SignalRef
@@ -73,7 +75,7 @@ object specFacetMod {
     /**
       * An object defining properties of a facet's header.
       */
-    var header: js.UndefOr[Header[ES]] = js.undefined
+    var header: js.UndefOr[Header[ES] | Null] = js.undefined
     
     /**
       * Sort order for the encoded field.
@@ -103,6 +105,8 @@ object specFacetMod {
       
       inline def setHeader(value: Header[ES]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
+      inline def setHeaderNull: Self = StObject.set(x, "header", null)
+      
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
       inline def setSort(value: SortArray | SortOrder | EncodingSortField[F]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
@@ -111,7 +115,7 @@ object specFacetMod {
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      inline def setSortVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "sort", js.Array(value :_*))
+      inline def setSortVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "sort", js.Array(value*))
     }
   }
   
@@ -146,7 +150,7 @@ object specFacetMod {
     }
   }
   
-  trait GenericFacetSpec[U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */]
+  trait GenericFacetSpec[U /* <: GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]] */, L /* <: GenericLayerSpec[Any] */, F /* <: Field */]
     extends StObject
        with BaseSpec
        with GenericCompositionLayoutWithColumns
@@ -166,7 +170,7 @@ object specFacetMod {
   }
   object GenericFacetSpec {
     
-    inline def apply[U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */](
+    inline def apply[U /* <: GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]] */, L /* <: GenericLayerSpec[Any] */, F /* <: Field */](
       facet: (FacetFieldDef[F, ExprRef | SignalRef]) | (FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]]),
       spec: L | U
     ): GenericFacetSpec[U, L, F] = {
@@ -174,7 +178,7 @@ object specFacetMod {
       __obj.asInstanceOf[GenericFacetSpec[U, L, F]]
     }
     
-    extension [Self <: GenericFacetSpec[?, ?, ?], U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */](x: Self & (GenericFacetSpec[U, L, F])) {
+    extension [Self <: GenericFacetSpec[?, ?, ?], U /* <: GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]] */, L /* <: GenericLayerSpec[Any] */, F /* <: Field */](x: Self & (GenericFacetSpec[U, L, F])) {
       
       inline def setFacet(
         value: (FacetFieldDef[F, ExprRef | SignalRef]) | (FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]])

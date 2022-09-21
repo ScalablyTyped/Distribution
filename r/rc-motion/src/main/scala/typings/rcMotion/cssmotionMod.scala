@@ -35,7 +35,7 @@ object cssmotionMod {
   trait CSSMotionProps extends StObject {
     
     var children: js.UndefOr[
-        js.Function2[/* props */ Dictkey, /* ref */ js.Function1[/* node */ js.Any, Unit], ReactElement]
+        js.Function2[/* props */ Dictkey, /* ref */ js.Function1[/* node */ Any, Unit], ReactElement]
       ] = js.undefined
     
     /** @private Used by CSSMotionList. Do not use in your production. */
@@ -47,7 +47,7 @@ object cssmotionMod {
       */
     var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var internalRef: js.UndefOr[Ref[js.Any]] = js.undefined
+    var internalRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var leavedClassName: js.UndefOr[String] = js.undefined
     
@@ -106,7 +106,7 @@ object cssmotionMod {
     
     extension [Self <: CSSMotionProps](x: Self) {
       
-      inline def setChildren(value: (/* props */ Dictkey, /* ref */ js.Function1[/* node */ js.Any, Unit]) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (/* props */ Dictkey, /* ref */ js.Function1[/* node */ Any, Unit]) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -118,9 +118,9 @@ object cssmotionMod {
       
       inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      inline def setInternalRef(value: Ref[js.Any]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
+      inline def setInternalRef(value: Ref[Any]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
       
-      inline def setInternalRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
+      inline def setInternalRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
       
       inline def setInternalRefNull: Self = StObject.set(x, "internalRef", null)
       
@@ -162,7 +162,7 @@ object cssmotionMod {
       
       inline def setOnAppearEndUndefined: Self = StObject.set(x, "onAppearEnd", js.undefined)
       
-      inline def setOnAppearPrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onAppearPrepare", js.Any.fromFunction1(value))
+      inline def setOnAppearPrepare(value: /* element */ HTMLElement => js.Promise[Any] | Unit): Self = StObject.set(x, "onAppearPrepare", js.Any.fromFunction1(value))
       
       inline def setOnAppearPrepareUndefined: Self = StObject.set(x, "onAppearPrepare", js.undefined)
       
@@ -178,7 +178,7 @@ object cssmotionMod {
       
       inline def setOnEnterEndUndefined: Self = StObject.set(x, "onEnterEnd", js.undefined)
       
-      inline def setOnEnterPrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onEnterPrepare", js.Any.fromFunction1(value))
+      inline def setOnEnterPrepare(value: /* element */ HTMLElement => js.Promise[Any] | Unit): Self = StObject.set(x, "onEnterPrepare", js.Any.fromFunction1(value))
       
       inline def setOnEnterPrepareUndefined: Self = StObject.set(x, "onEnterPrepare", js.undefined)
       
@@ -194,7 +194,7 @@ object cssmotionMod {
       
       inline def setOnLeaveEndUndefined: Self = StObject.set(x, "onLeaveEnd", js.undefined)
       
-      inline def setOnLeavePrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onLeavePrepare", js.Any.fromFunction1(value))
+      inline def setOnLeavePrepare(value: /* element */ HTMLElement => js.Promise[Any] | Unit): Self = StObject.set(x, "onLeavePrepare", js.Any.fromFunction1(value))
       
       inline def setOnLeavePrepareUndefined: Self = StObject.set(x, "onLeavePrepare", js.undefined)
       

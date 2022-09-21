@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-actions
 
-Typings are for version 6.1.2
+Typings are for version 6.5.12
 
 ## Library description:
 Get UI feedback when an action is performed on an interactive element
@@ -9,14 +9,14 @@ Get UI feedback when an action is performed on an interactive element
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-actions |
-| Keywords           | storybook |
-| # releases         | 551 |
-| # dependents       | 285 |
-| # downloads        | 77792615 |
-| # stars            | 1 |
+| Keywords           | storybook, essentials, data-state |
+| # releases         | 476 |
+| # dependents       | 0.0 |
+| # downloads        | 1.505707E7 |
+| # stars            | 73947.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/actions)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/actions)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-actions)

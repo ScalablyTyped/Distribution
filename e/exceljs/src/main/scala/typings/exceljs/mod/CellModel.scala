@@ -16,7 +16,7 @@ trait CellModel extends StObject {
   
   var master: String
   
-  var result: js.UndefOr[String | Double | js.Any] = js.undefined
+  var result: js.UndefOr[String | Double | Any] = js.undefined
   
   var sharedFormula: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ object CellModel {
     
     inline def setMaster(value: String): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
-    inline def setResult(value: String | Double | js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String | Double | Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     

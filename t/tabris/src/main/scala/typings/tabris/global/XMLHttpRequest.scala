@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("XMLHttpRequest")
 @js.native
-class XMLHttpRequest ()
+open class XMLHttpRequest ()
   extends StObject
      with typings.tabris.XMLHttpRequest {
   

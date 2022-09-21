@@ -13,7 +13,7 @@ object registerMod {
   
   @JSImport("ionic/commands/enterprise/register", "RegisterCommand")
   @js.native
-  class RegisterCommand protected () extends Command {
+  open class RegisterCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def run(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native

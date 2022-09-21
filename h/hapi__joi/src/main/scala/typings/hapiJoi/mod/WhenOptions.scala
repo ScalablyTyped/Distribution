@@ -72,7 +72,7 @@ object WhenOptions {
     
     inline def setSwitchUndefined: Self = StObject.set(x, "switch", js.undefined)
     
-    inline def setSwitchVarargs(value: (SwitchCases | SwitchDefault)*): Self = StObject.set(x, "switch", js.Array(value :_*))
+    inline def setSwitchVarargs(value: (SwitchCases | SwitchDefault)*): Self = StObject.set(x, "switch", js.Array(value*))
     
     inline def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     

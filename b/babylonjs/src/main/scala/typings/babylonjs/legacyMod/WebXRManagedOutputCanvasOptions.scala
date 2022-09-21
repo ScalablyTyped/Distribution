@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "WebXRManagedOutputCanvasOptions")
 @js.native
-class WebXRManagedOutputCanvasOptions ()
+open class WebXRManagedOutputCanvasOptions ()
   extends typings.babylonjs.indexMod.WebXRManagedOutputCanvasOptions
 /* static members */
 object WebXRManagedOutputCanvasOptions {

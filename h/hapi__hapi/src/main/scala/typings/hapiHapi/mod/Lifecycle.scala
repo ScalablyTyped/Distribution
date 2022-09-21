@@ -1,9 +1,8 @@
 package typings.hapiHapi.mod
 
 import typings.hapiBoom.mod.Boom
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Stream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ object Lifecycle {
   type Method = js.Function3[
     /* request */ Request, 
     /* h */ ResponseToolkit, 
-    /* err */ js.UndefOr[Error], 
+    /* err */ js.UndefOr[js.Error], 
     ReturnValue
   ]
   
@@ -62,7 +61,24 @@ object Lifecycle {
     */
   type ReturnValue = ReturnValueTypes | js.Promise[ReturnValueTypes]
   
-  type ReturnValueTypes = Null | String | Double | Boolean | Buffer | Error | Boom[js.Any] | Stream | js.Object | js.Array[js.Object] | js.Symbol | ResponseToolkit
+  /* Rewritten from type alias, can be one of: 
+    - scala.Null
+    - java.lang.String
+    - scala.Double
+    - scala.Boolean
+    - typings.node.bufferMod.global.Buffer
+    - js.Error
+    - typings.hapiBoom.mod.Boom[scala.Any]
+    - typings.node.streamMod.Stream
+    - js.Object
+    - js.Array[js.Object]
+    - js.Symbol
+    - typings.hapiHapi.mod.Auth
+    - typings.hapiHapi.mod.ResponseObject
+  */
+  type ReturnValueTypes = _ReturnValueTypes | Boom[Any] | js.Array[js.Object] | Null | String | Double | Boolean | Buffer | js.Error | Stream | js.Object | js.Symbol
   
   trait _FailAction extends StObject
+  
+  trait _ReturnValueTypes extends StObject
 }

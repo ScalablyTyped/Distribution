@@ -33,7 +33,7 @@ object ImportDeclaration {
     
     inline def setSpecifiers(value: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
     
-    inline def setSpecifiersVarargs(value: (ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier)*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
+    inline def setSpecifiersVarargs(value: (ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier)*): Self = StObject.set(x, "specifiers", js.Array(value*))
     
     inline def setType(value: typings.estree.estreeStrings.ImportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

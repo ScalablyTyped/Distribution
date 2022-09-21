@@ -27,7 +27,7 @@ object AuctionType {
     
     inline def setAuctionTypeUndefined: Self = StObject.set(x, "auctionType", js.undefined)
     
-    inline def setAuctionTypeVarargs(value: String*): Self = StObject.set(x, "auctionType", js.Array(value :_*))
+    inline def setAuctionTypeVarargs(value: String*): Self = StObject.set(x, "auctionType", js.Array(value*))
     
     inline def setContextType(value: String): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
     
@@ -37,12 +37,12 @@ object AuctionType {
     
     inline def setGeoCriteriaIdUndefined: Self = StObject.set(x, "geoCriteriaId", js.undefined)
     
-    inline def setGeoCriteriaIdVarargs(value: Double*): Self = StObject.set(x, "geoCriteriaId", js.Array(value :_*))
+    inline def setGeoCriteriaIdVarargs(value: Double*): Self = StObject.set(x, "geoCriteriaId", js.Array(value*))
     
     inline def setPlatform(value: js.Array[String]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    inline def setPlatformVarargs(value: String*): Self = StObject.set(x, "platform", js.Array(value :_*))
+    inline def setPlatformVarargs(value: String*): Self = StObject.set(x, "platform", js.Array(value*))
   }
 }

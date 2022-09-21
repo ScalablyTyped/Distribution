@@ -22,7 +22,7 @@ object fdc3 {
   
   @JSImport("openfin", "fdc3.AppChannel")
   @js.native
-  class AppChannel protected ()
+  open class AppChannel protected ()
     extends typings.openfin.mainMod.AppChannel {
     /**
       * @hidden
@@ -83,12 +83,12 @@ object fdc3 {
     *
     * Channel objects should not be created directly by an application, channel objects should be obtained by calling the relevant APIs.
     */
-  class DefaultChannel_ ()
+  open class DefaultChannel_ ()
     extends typings.openfin.mainMod.DefaultChannel_
   
   @JSImport("openfin", "fdc3.FDC3Error")
   @js.native
-  class FDC3Error protected ()
+  open class FDC3Error protected ()
     extends typings.openfin.mainMod.FDC3Error {
     def this(code: String, message: String) = this()
   }
@@ -154,7 +154,7 @@ object fdc3 {
   
   @JSImport("openfin", "fdc3.SystemChannel")
   @js.native
-  class SystemChannel protected ()
+  open class SystemChannel protected ()
     extends typings.openfin.mainMod.SystemChannel {
     /**
       * @hidden
@@ -171,7 +171,7 @@ object fdc3 {
     handler: js.Function1[/* event */ typings.openfin.contextChannelsMod.ChannelChangedEvent, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def addIntentListener(intent: String, handler: js.Function1[/* context */ typings.openfin.contextMod.Context, js.Any]): typings.openfin.mainMod.IntentListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addIntentListener")(intent.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.openfin.mainMod.IntentListener]
+  inline def addIntentListener(intent: String, handler: js.Function1[/* context */ typings.openfin.contextMod.Context, Any]): typings.openfin.mainMod.IntentListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addIntentListener")(intent.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.openfin.mainMod.IntentListener]
   
   inline def broadcast(context: typings.openfin.contextMod.Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   

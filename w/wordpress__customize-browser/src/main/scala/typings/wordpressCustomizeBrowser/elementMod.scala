@@ -11,7 +11,7 @@ object elementMod {
   
   @JSImport("@wordpress/customize-browser/Element", "Element")
   @js.native
-  class Element protected () extends Value[String] {
+  open class Element protected () extends Value[String] {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
@@ -19,7 +19,7 @@ object elementMod {
     
     var events: String = js.native
     
-    def find(selector: js.Any): JQuery[HTMLElement] = js.native
+    def find(selector: Any): JQuery[HTMLElement] = js.native
     
     def initialize(element: JQuery[HTMLElement]): Unit = js.native
     def initialize(element: JQuery[HTMLElement], options: js.Object): Unit = js.native

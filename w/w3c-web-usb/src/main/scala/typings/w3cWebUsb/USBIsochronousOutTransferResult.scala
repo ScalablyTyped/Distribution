@@ -19,6 +19,6 @@ object USBIsochronousOutTransferResult {
     
     inline def setPackets(value: js.Array[USBIsochronousOutTransferPacket]): Self = StObject.set(x, "packets", value.asInstanceOf[js.Any])
     
-    inline def setPacketsVarargs(value: USBIsochronousOutTransferPacket*): Self = StObject.set(x, "packets", js.Array(value :_*))
+    inline def setPacketsVarargs(value: USBIsochronousOutTransferPacket*): Self = StObject.set(x, "packets", js.Array(value*))
   }
 }

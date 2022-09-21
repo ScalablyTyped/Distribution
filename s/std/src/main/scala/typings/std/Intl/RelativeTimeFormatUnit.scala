@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Unit to use in the relative time internationalized message.
   *
   * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/format#Parameters).
-  *
-  * [Specification](https://tc39.es/ecma402/#sec-singularrelativetimeunit).
   */
 /* Rewritten from type alias, can be one of: 
   - typings.std.stdStrings.year

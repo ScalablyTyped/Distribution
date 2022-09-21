@@ -10,10 +10,10 @@ Collection of Error objects shared across restify components.
 | ------------------ | :-------------: |
 | Full name          | restify-errors |
 | Keywords           | restify-errors, restify, errors, custom errors, inherit errors, http errors, http status code, rest errors |
-| # releases         | 5 |
-| # dependents       | 150 |
-| # downloads        | 5617891 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2320769.0 |
+| # stars            | 141.0 |
 
 ## Links
 - [Homepage](http://www.restify.com)

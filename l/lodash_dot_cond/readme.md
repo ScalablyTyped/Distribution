@@ -10,10 +10,10 @@ The lodash method `_.cond` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.cond |
 | Keywords           | lodash-modularized, cond |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 15006528 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 867846.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

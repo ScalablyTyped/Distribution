@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object wheatMod extends Shortcut {
   
-  @JSImport("@carbon/pictograms-react/lib/wheat", JSImport.Default)
+  @JSImport("@carbon/pictograms-react/lib/wheat", JSImport.Namespace)
   @js.native
-  val default: CarbonPictogramType = js.native
+  val ^ : CarbonPictogramType = js.native
   
   type _To = CarbonPictogramType
   
-  /* This means you don't have to write `default`, but can instead just say `wheatMod.foo` */
-  override def _to: CarbonPictogramType = default
+  /* This means you don't have to write `^`, but can instead just say `wheatMod.foo` */
+  override def _to: CarbonPictogramType = ^
 }

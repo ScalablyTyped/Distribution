@@ -16,7 +16,7 @@ object subscriberMod {
   
   @JSImport("sip.js/lib/api/subscriber", "Subscriber")
   @js.native
-  class Subscriber protected () extends Subscription {
+  open class Subscriber protected () extends Subscription {
     /**
       * Constructor.
       * @param userAgent - User agent. See {@link UserAgent} for details.
@@ -34,19 +34,19 @@ object subscriberMod {
       */
     def _refresh(): js.Promise[Unit] = js.native
     
-    /* private */ var body: js.Any = js.native
+    /* private */ var body: Any = js.native
     
-    /* private */ var event: js.Any = js.native
+    /* private */ var event: Any = js.native
     
-    /* private */ var expires: js.Any = js.native
+    /* private */ var expires: Any = js.native
     
-    /* private */ var extraHeaders: js.Any = js.native
+    /* private */ var extraHeaders: Any = js.native
     
-    /* private */ var id: js.Any = js.native
+    /* private */ var id: Any = js.native
     
-    /* private */ var initSubscriberRequest: js.Any = js.native
+    /* private */ var initSubscriberRequest: Any = js.native
     
-    /* private */ var logger: js.Any = js.native
+    /* private */ var logger: Any = js.native
     
     /** @internal */
     /* protected */ def onAccepted(response: IncomingResponse): Unit = js.native
@@ -57,14 +57,14 @@ object subscriberMod {
     /** @internal */
     /* protected */ def onRefresh(request: OutgoingSubscribeRequest): Unit = js.native
     
-    /* private */ var outgoingRequestMessage: js.Any = js.native
+    /* private */ var outgoingRequestMessage: Any = js.native
     
-    /* private */ var retryAfterTimer: js.Any = js.native
+    /* private */ var retryAfterTimer: Any = js.native
     
     def subscribe(options: SubscriberSubscribeOptions): js.Promise[Unit] = js.native
     
-    /* private */ var subscriberRequest: js.Any = js.native
+    /* private */ var subscriberRequest: Any = js.native
     
-    /* private */ var targetURI: js.Any = js.native
+    /* private */ var targetURI: Any = js.native
   }
 }

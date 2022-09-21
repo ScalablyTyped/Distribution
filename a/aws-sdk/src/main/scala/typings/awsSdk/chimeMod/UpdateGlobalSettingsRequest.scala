@@ -9,17 +9,17 @@ trait UpdateGlobalSettingsRequest extends StObject {
   /**
     * The Amazon Chime Business Calling settings.
     */
-  var BusinessCalling: BusinessCallingSettings
+  var BusinessCalling: js.UndefOr[BusinessCallingSettings] = js.undefined
   
   /**
     * The Amazon Chime Voice Connector settings.
     */
-  var VoiceConnector: VoiceConnectorSettings
+  var VoiceConnector: js.UndefOr[VoiceConnectorSettings] = js.undefined
 }
 object UpdateGlobalSettingsRequest {
   
-  inline def apply(BusinessCalling: BusinessCallingSettings, VoiceConnector: VoiceConnectorSettings): UpdateGlobalSettingsRequest = {
-    val __obj = js.Dynamic.literal(BusinessCalling = BusinessCalling.asInstanceOf[js.Any], VoiceConnector = VoiceConnector.asInstanceOf[js.Any])
+  inline def apply(): UpdateGlobalSettingsRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateGlobalSettingsRequest]
   }
   
@@ -27,6 +27,10 @@ object UpdateGlobalSettingsRequest {
     
     inline def setBusinessCalling(value: BusinessCallingSettings): Self = StObject.set(x, "BusinessCalling", value.asInstanceOf[js.Any])
     
+    inline def setBusinessCallingUndefined: Self = StObject.set(x, "BusinessCalling", js.undefined)
+    
     inline def setVoiceConnector(value: VoiceConnectorSettings): Self = StObject.set(x, "VoiceConnector", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceConnectorUndefined: Self = StObject.set(x, "VoiceConnector", js.undefined)
   }
 }

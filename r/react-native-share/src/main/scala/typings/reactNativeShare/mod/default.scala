@@ -22,6 +22,8 @@ object default {
     
     /* "shareBackgroundImage" */ val SHARE_BACKGROUND_IMAGE: typings.reactNativeShare.mod.Share.InstagramStories.SHARE_BACKGROUND_IMAGE & String = js.native
     
+    /* "shareBackgroundVideo" */ val SHARE_BACKGROUND_VIDEO: typings.reactNativeShare.mod.Share.InstagramStories.SHARE_BACKGROUND_VIDEO & String = js.native
+    
     /* "shareStickerImage" */ val SHARE_STICKER_IMAGE: typings.reactNativeShare.mod.Share.InstagramStories.SHARE_STICKER_IMAGE & String = js.native
   }
   
@@ -47,6 +49,8 @@ object default {
     /* "pagesmanager" */ val PAGESMANAGER: typings.reactNativeShare.mod.Share.Social.PAGESMANAGER & String = js.native
     
     /* "pinterest" */ val PINTEREST: typings.reactNativeShare.mod.Share.Social.PINTEREST & String = js.native
+    
+    /* "SMS" */ val SMS: typings.reactNativeShare.mod.Share.Social.SMS & String = js.native
     
     /* "twitter" */ val TWITTER: typings.reactNativeShare.mod.Share.Social.TWITTER & String = js.native
     

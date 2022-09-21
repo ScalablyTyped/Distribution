@@ -29,7 +29,7 @@ object XMSAAService {
     dispose: () => Unit,
     getAccObjectPtr: (Double, Double, Double) => Double,
     handleWindowOpened: Double => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XMSAAService = {

@@ -22,7 +22,7 @@ object mainMod {
   
   @JSImport("openfin/_v2/fdc3/main", "AppChannel")
   @js.native
-  class AppChannel protected ()
+  open class AppChannel protected ()
     extends typings.openfin.contextChannelsMod.AppChannel {
     /**
       * @hidden
@@ -80,12 +80,12 @@ object mainMod {
     *
     * Channel objects should not be created directly by an application, channel objects should be obtained by calling the relevant APIs.
     */
-  class DefaultChannel_ ()
+  open class DefaultChannel_ ()
     extends typings.openfin.contextChannelsMod.DefaultChannel_
   
   @JSImport("openfin/_v2/fdc3/main", "FDC3Error")
   @js.native
-  class FDC3Error protected ()
+  open class FDC3Error protected ()
     extends typings.openfin.errorsMod.FDC3Error {
     def this(code: String, message: String) = this()
   }
@@ -148,7 +148,7 @@ object mainMod {
   
   @JSImport("openfin/_v2/fdc3/main", "SystemChannel")
   @js.native
-  class SystemChannel protected ()
+  open class SystemChannel protected ()
     extends typings.openfin.contextChannelsMod.SystemChannel {
     /**
       * @hidden
@@ -162,7 +162,7 @@ object mainMod {
   
   inline def addEventListener_channelchanged(eventType: `channel-changed`, handler: js.Function1[/* event */ ChannelChangedEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def addIntentListener(intent: String, handler: js.Function1[/* context */ Context, js.Any]): IntentListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addIntentListener")(intent.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IntentListener]
+  inline def addIntentListener(intent: String, handler: js.Function1[/* context */ Context, Any]): IntentListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addIntentListener")(intent.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IntentListener]
   
   inline def broadcast(context: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
@@ -215,7 +215,7 @@ object mainMod {
       
       inline def setApps(value: js.Array[Application]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
       
-      inline def setAppsVarargs(value: Application*): Self = StObject.set(x, "apps", js.Array(value :_*))
+      inline def setAppsVarargs(value: Application*): Self = StObject.set(x, "apps", js.Array(value*))
       
       inline def setIntent(value: IntentMetadata): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     }
@@ -260,7 +260,7 @@ object mainMod {
     /**
       * The handler for when this listener receives an intent.
       */
-    def handler(context: Context): js.Any | js.Promise[js.Any]
+    def handler(context: Context): Any | js.Promise[Any]
     
     /**
       * The intent name that we are listening to. Is whatever is passed into [[addIntentListener]].
@@ -277,14 +277,14 @@ object mainMod {
   }
   object IntentListener {
     
-    inline def apply(handler: Context => js.Any | js.Promise[js.Any], intent: String, unsubscribe: () => Unit): IntentListener = {
+    inline def apply(handler: Context => Any | js.Promise[Any], intent: String, unsubscribe: () => Unit): IntentListener = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), intent = intent.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[IntentListener]
     }
     
     extension [Self <: IntentListener](x: Self) {
       
-      inline def setHandler(value: Context => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: Context => Any | js.Promise[Any]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
       inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
       
@@ -327,7 +327,7 @@ object mainMod {
       * If the target application registered multiple listeners, this will be the first non-`undefined` value returned
       * by a listener.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * The machine-readable name of the app that resolved this intent.
@@ -348,7 +348,7 @@ object mainMod {
     
     extension [Self <: IntentResolution](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -376,7 +376,7 @@ object mainMod {
       __obj.asInstanceOf[typings.openfin.mainMod.ContextListener]
     }
     
-    inline def IntentListener(handler: Context => js.Any | js.Promise[js.Any], intent: String, unsubscribe: () => Unit): typings.openfin.mainMod.IntentListener = {
+    inline def IntentListener(handler: Context => Any | js.Promise[Any], intent: String, unsubscribe: () => Unit): typings.openfin.mainMod.IntentListener = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), intent = intent.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[typings.openfin.mainMod.IntentListener]
     }

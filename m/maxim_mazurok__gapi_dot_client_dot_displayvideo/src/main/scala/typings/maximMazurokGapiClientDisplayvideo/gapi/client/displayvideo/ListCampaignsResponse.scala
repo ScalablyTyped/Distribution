@@ -25,7 +25,7 @@ object ListCampaignsResponse {
     
     inline def setCampaignsUndefined: Self = StObject.set(x, "campaigns", js.undefined)
     
-    inline def setCampaignsVarargs(value: Campaign*): Self = StObject.set(x, "campaigns", js.Array(value :_*))
+    inline def setCampaignsVarargs(value: Campaign*): Self = StObject.set(x, "campaigns", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

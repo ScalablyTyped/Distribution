@@ -12,7 +12,7 @@ trait TransferDomainToAnotherAwsAccountResponse extends StObject {
   var OperationId: js.UndefOr[typings.awsSdk.route53domainsMod.OperationId] = js.undefined
   
   /**
-    * To finish transferring a domain to another AWS account, the account that the domain is being transferred to must submit an AcceptDomainTransferFromAnotherAwsAccount request. The request must include the value of the Password element that was returned in the TransferDomainToAnotherAwsAccount response.
+    * To finish transferring a domain to another Amazon Web Services account, the account that the domain is being transferred to must submit an AcceptDomainTransferFromAnotherAwsAccount request. The request must include the value of the Password element that was returned in the TransferDomainToAnotherAwsAccount response.
     */
   var Password: js.UndefOr[String] = js.undefined
 }

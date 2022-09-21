@@ -8,6 +8,7 @@ import typings.typescript.mod.BindingElement
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.FunctionDeclaration
 import typings.typescript.mod.FunctionExpression
+import typings.typescript.mod.ImportSpecifier
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.Program
 import typings.typescript.mod.PropertyAssignment
@@ -15,6 +16,7 @@ import typings.typescript.mod.Signature
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.Statement
 import typings.typescript.mod.Symbol
+import typings.typescript.mod.SymbolDisplayPart
 import typings.typescript.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,10 +30,10 @@ object parserMod {
   
   @JSImport("react-docgen-typescript/lib/parser", "Parser")
   @js.native
-  class Parser protected () extends StObject {
+  open class Parser protected () extends StObject {
     def this(program: Program, opts: ParserOptions) = this()
     
-    /* private */ var checker: js.Any = js.native
+    /* private */ val checker: Any = js.native
     
     def extractDefaultPropsFromComponent(symbol: Symbol, source: SourceFile): js.Object = js.native
     
@@ -45,10 +47,22 @@ object parserMod {
     
     def getCallSignature(symbol: Symbol): Signature = js.native
     
-    /* private */ var getComponentFromExpression: js.Any = js.native
+    /* private */ var getComponentFromExpression: Any = js.native
     
     def getComponentInfo(exp: Symbol, source: SourceFile): ComponentDoc | Null = js.native
+    def getComponentInfo(
+      exp: Symbol,
+      source: SourceFile,
+      componentNameResolver: Unit,
+      customComponentTypes: js.UndefOr[js.Array[String]]
+    ): ComponentDoc | Null = js.native
     def getComponentInfo(exp: Symbol, source: SourceFile, componentNameResolver: ComponentNameResolver): ComponentDoc | Null = js.native
+    def getComponentInfo(
+      exp: Symbol,
+      source: SourceFile,
+      componentNameResolver: ComponentNameResolver,
+      customComponentTypes: js.UndefOr[js.Array[String]]
+    ): ComponentDoc | Null = js.native
     
     def getDocgenType(propType: Type, isRequired: Boolean): PropItemType = js.native
     
@@ -60,6 +74,10 @@ object parserMod {
     def getFullJsDocComment(symbol: Symbol): JSDoc = js.native
     
     def getFunctionStatement(statement: Statement): js.UndefOr[ArrowFunction | FunctionExpression | FunctionDeclaration] = js.native
+    
+    /* private */ var getInfoFromUnionType: Any = js.native
+    
+    def getLiteralValueFromImportSpecifier(property: ImportSpecifier): js.UndefOr[String | Boolean | Double | Null] = js.native
     
     def getLiteralValueFromPropertyAssignment(property: BindingElement): js.UndefOr[String | Boolean | Double | Null] = js.native
     def getLiteralValueFromPropertyAssignment(property: PropertyAssignment): js.UndefOr[String | Boolean | Double | Null] = js.native
@@ -75,21 +93,25 @@ object parserMod {
     def getPropsInfo(propsObj: Symbol): Props = js.native
     def getPropsInfo(propsObj: Symbol, defaultProps: StringIndexedObject[String]): Props = js.native
     
-    def getReturnDescription(symbol: Symbol): String | Null = js.native
+    def getReturnDescription(symbol: Symbol): js.UndefOr[js.Array[SymbolDisplayPart]] = js.native
     
-    /* private */ var getValuesFromUnionType: js.Any = js.native
+    /* private */ var getValuesFromUnionType: Any = js.native
     
     def isTaggedPublic(symbol: Symbol): Boolean = js.native
     
-    /* private */ var propFilter: js.Any = js.native
+    /* private */ val propFilter: Any = js.native
     
-    /* private */ var savePropValueAsString: js.Any = js.native
+    /* private */ val savePropValueAsString: Any = js.native
     
-    /* private */ var shouldExtractLiteralValuesFromEnum: js.Any = js.native
+    /* private */ val shouldExtractLiteralValuesFromEnum: Any = js.native
     
-    /* private */ var shouldExtractValuesFromUnion: js.Any = js.native
+    /* private */ val shouldExtractValuesFromUnion: Any = js.native
     
-    /* private */ var shouldRemoveUndefinedFromOptional: js.Any = js.native
+    /* private */ val shouldIncludeExpression: Any = js.native
+    
+    /* private */ val shouldIncludePropTagMap: Any = js.native
+    
+    /* private */ val shouldRemoveUndefinedFromOptional: Any = js.native
   }
   
   @JSImport("react-docgen-typescript/lib/parser", "defaultOptions")
@@ -138,14 +160,26 @@ object parserMod {
     
     var displayName: String
     
+    var expression: js.UndefOr[Symbol] = js.undefined
+    
+    var filePath: String
+    
     var methods: js.Array[Method]
     
     var props: Props
+    
+    var tags: js.UndefOr[StringIndexedObject[String]] = js.undefined
   }
   object ComponentDoc {
     
-    inline def apply(description: String, displayName: String, methods: js.Array[Method], props: Props): ComponentDoc = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    inline def apply(
+      description: String,
+      displayName: String,
+      filePath: String,
+      methods: js.Array[Method],
+      props: Props
+    ): ComponentDoc = {
+      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentDoc]
     }
     
@@ -155,11 +189,21 @@ object parserMod {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
+      inline def setExpression(value: Symbol): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      
+      inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+      
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      
       inline def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setProps(value: Props): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setTags(value: StringIndexedObject[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -237,13 +281,13 @@ object parserMod {
       
       inline def setModifiers(value: js.Array[String]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      inline def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setParams(value: js.Array[MethodParameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setParamsVarargs(value: MethodParameter*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: MethodParameter*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setReturns(value: Description): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
       
@@ -325,6 +369,8 @@ object parserMod {
     
     var componentNameResolver: js.UndefOr[ComponentNameResolver] = js.undefined
     
+    var customComponentTypes: js.UndefOr[js.Array[String]] = js.undefined
+    
     var propFilter: js.UndefOr[StaticPropFilter | PropFilter] = js.undefined
     
     var savePropValueAsString: js.UndefOr[Boolean] = js.undefined
@@ -333,7 +379,13 @@ object parserMod {
     
     var shouldExtractValuesFromUnion: js.UndefOr[Boolean] = js.undefined
     
+    var shouldIncludeExpression: js.UndefOr[Boolean] = js.undefined
+    
+    var shouldIncludePropTagMap: js.UndefOr[Boolean] = js.undefined
+    
     var shouldRemoveUndefinedFromOptional: js.UndefOr[Boolean] = js.undefined
+    
+    var skipChildrenPropWithoutDoc: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptions {
     
@@ -347,6 +399,12 @@ object parserMod {
       inline def setComponentNameResolver(value: (/* exp */ Symbol, /* source */ SourceFile) => js.UndefOr[String | Null | `false`]): Self = StObject.set(x, "componentNameResolver", js.Any.fromFunction2(value))
       
       inline def setComponentNameResolverUndefined: Self = StObject.set(x, "componentNameResolver", js.undefined)
+      
+      inline def setCustomComponentTypes(value: js.Array[String]): Self = StObject.set(x, "customComponentTypes", value.asInstanceOf[js.Any])
+      
+      inline def setCustomComponentTypesUndefined: Self = StObject.set(x, "customComponentTypes", js.undefined)
+      
+      inline def setCustomComponentTypesVarargs(value: String*): Self = StObject.set(x, "customComponentTypes", js.Array(value*))
       
       inline def setPropFilter(value: StaticPropFilter | PropFilter): Self = StObject.set(x, "propFilter", value.asInstanceOf[js.Any])
       
@@ -366,9 +424,21 @@ object parserMod {
       
       inline def setShouldExtractValuesFromUnionUndefined: Self = StObject.set(x, "shouldExtractValuesFromUnion", js.undefined)
       
+      inline def setShouldIncludeExpression(value: Boolean): Self = StObject.set(x, "shouldIncludeExpression", value.asInstanceOf[js.Any])
+      
+      inline def setShouldIncludeExpressionUndefined: Self = StObject.set(x, "shouldIncludeExpression", js.undefined)
+      
+      inline def setShouldIncludePropTagMap(value: Boolean): Self = StObject.set(x, "shouldIncludePropTagMap", value.asInstanceOf[js.Any])
+      
+      inline def setShouldIncludePropTagMapUndefined: Self = StObject.set(x, "shouldIncludePropTagMap", js.undefined)
+      
       inline def setShouldRemoveUndefinedFromOptional(value: Boolean): Self = StObject.set(x, "shouldRemoveUndefinedFromOptional", value.asInstanceOf[js.Any])
       
       inline def setShouldRemoveUndefinedFromOptionalUndefined: Self = StObject.set(x, "shouldRemoveUndefinedFromOptional", js.undefined)
+      
+      inline def setSkipChildrenPropWithoutDoc(value: Boolean): Self = StObject.set(x, "skipChildrenPropWithoutDoc", value.asInstanceOf[js.Any])
+      
+      inline def setSkipChildrenPropWithoutDocUndefined: Self = StObject.set(x, "skipChildrenPropWithoutDoc", js.undefined)
     }
   }
   
@@ -376,7 +446,9 @@ object parserMod {
   
   trait PropItem extends StObject {
     
-    var defaultValue: js.Any
+    var declarations: js.UndefOr[js.Array[ParentType]] = js.undefined
+    
+    var defaultValue: Any
     
     var description: String
     
@@ -386,11 +458,13 @@ object parserMod {
     
     var required: Boolean
     
+    var tags: js.UndefOr[js.Object] = js.undefined
+    
     var `type`: PropItemType
   }
   object PropItem {
     
-    inline def apply(defaultValue: js.Any, description: String, name: String, required: Boolean, `type`: PropItemType): PropItem = {
+    inline def apply(defaultValue: Any, description: String, name: String, required: Boolean, `type`: PropItemType): PropItem = {
       val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropItem]
@@ -398,7 +472,13 @@ object parserMod {
     
     extension [Self <: PropItem](x: Self) {
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDeclarations(value: js.Array[ParentType]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+      
+      inline def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
+      
+      inline def setDeclarationsVarargs(value: ParentType*): Self = StObject.set(x, "declarations", js.Array(value*))
+      
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -410,6 +490,10 @@ object parserMod {
       
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
+      inline def setTags(value: js.Object): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      
       inline def setType(value: PropItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
@@ -420,7 +504,7 @@ object parserMod {
     
     var raw: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object PropItemType {
     
@@ -437,7 +521,7 @@ object parserMod {
       
       inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -464,7 +548,7 @@ object parserMod {
       
       inline def setSkipPropsWithNameUndefined: Self = StObject.set(x, "skipPropsWithName", js.undefined)
       
-      inline def setSkipPropsWithNameVarargs(value: String*): Self = StObject.set(x, "skipPropsWithName", js.Array(value :_*))
+      inline def setSkipPropsWithNameVarargs(value: String*): Self = StObject.set(x, "skipPropsWithName", js.Array(value*))
       
       inline def setSkipPropsWithoutDoc(value: Boolean): Self = StObject.set(x, "skipPropsWithoutDoc", value.asInstanceOf[js.Any])
       

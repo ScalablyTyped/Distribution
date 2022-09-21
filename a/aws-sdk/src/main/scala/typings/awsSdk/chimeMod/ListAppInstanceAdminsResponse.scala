@@ -12,7 +12,7 @@ trait ListAppInstanceAdminsResponse extends StObject {
   var AppInstanceAdmins: js.UndefOr[AppInstanceAdminList] = js.undefined
   
   /**
-    * The ARN of the app instance.
+    * The ARN of the AppInstance.
     */
   var AppInstanceArn: js.UndefOr[ChimeArn] = js.undefined
   
@@ -34,7 +34,7 @@ object ListAppInstanceAdminsResponse {
     
     inline def setAppInstanceAdminsUndefined: Self = StObject.set(x, "AppInstanceAdmins", js.undefined)
     
-    inline def setAppInstanceAdminsVarargs(value: AppInstanceAdminSummary*): Self = StObject.set(x, "AppInstanceAdmins", js.Array(value :_*))
+    inline def setAppInstanceAdminsVarargs(value: AppInstanceAdminSummary*): Self = StObject.set(x, "AppInstanceAdmins", js.Array(value*))
     
     inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Validate html using validator.w3.org/nu og html-validate
 | ------------------ | :-------------: |
 | Full name          | html-validator |
 | Keywords           | html-validator, html-validate, validation, validator.w3.org |
-| # releases         | 32 |
-| # dependents       | 21 |
-| # downloads        | 493841 |
-| # stars            | 3 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 95596.0 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/zrrrzzt/html-validator#readme)

@@ -1,19 +1,30 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.easeOutCubic
-import typings.devextreme.devextremeStrings.linear
+import typings.devextreme.mod.DevExpress.common.charts.AnimationEaseMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Duration extends StObject {
   
+  /**
+    * Specifies how long the animation runs in milliseconds.
+    */
   var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[easeOutCubic | linear] = js.undefined
+  /**
+    * Specifies the easing function of the animation.
+    */
+  var easing: js.UndefOr[AnimationEaseMode] = js.undefined
   
+  /**
+    * Enables the animation in the UI component.
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies how many series points the UI component should have before the animation will be disabled.
+    */
   var maxPointCountSupported: js.UndefOr[Double] = js.undefined
 }
 object Duration {
@@ -29,7 +40,7 @@ object Duration {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setEasing(value: easeOutCubic | linear): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: AnimationEaseMode): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     

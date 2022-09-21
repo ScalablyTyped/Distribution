@@ -1,7 +1,7 @@
 
 # Scala.js typings for known
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Allow only access to known object properties using ES2015 Proxy
@@ -9,11 +9,11 @@ Allow only access to known object properties using ES2015 Proxy
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | known |
-| Keywords           | object, property, properties, prop, get, getter, access, proxy, proxies, es2015 |
+| Keywords           | object, property, properties, get, getter, access, proxy, proxies, es2015 |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 900 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 171.66666666666666 |
+| # stars            | 85.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/known#readme)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientReportParameterInfo")
 @js.native
-class ASPxClientReportParameterInfo ()
+open class ASPxClientReportParameterInfo ()
   extends StObject
      with typings.devexpressWeb.ASPxClientReportParameterInfo {
   
@@ -23,5 +23,5 @@ class ASPxClientReportParameterInfo ()
     * Provides access to a parameter value on the client.
     */
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

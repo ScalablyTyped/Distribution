@@ -2,7 +2,6 @@ package typings.awsSdkClientGlacierNode
 
 import typings.awsSdkClientGlacierNode.typesDataRetrievalRuleMod.DataRetrievalRule
 import typings.awsSdkClientGlacierNode.typesDataRetrievalRuleMod.UnmarshalledDataRetrievalRule
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesDataRetrievalPolicyMod {
     /**
       * <p>The policy rule. Although this is a list type, currently there must be only one rule, which contains a Strategy field and optionally a BytesPerHour field.</p>
       */
-    var Rules: js.UndefOr[js.Array[DataRetrievalRule] | Iterable[DataRetrievalRule]] = js.undefined
+    var Rules: js.UndefOr[js.Array[DataRetrievalRule] | js.Iterable[DataRetrievalRule]] = js.undefined
   }
   object DataRetrievalPolicy {
     
@@ -25,11 +24,11 @@ object typesDataRetrievalPolicyMod {
     
     extension [Self <: DataRetrievalPolicy](x: Self) {
       
-      inline def setRules(value: js.Array[DataRetrievalRule] | Iterable[DataRetrievalRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[DataRetrievalRule] | js.Iterable[DataRetrievalRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
       inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
       
-      inline def setRulesVarargs(value: DataRetrievalRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: DataRetrievalRule*): Self = StObject.set(x, "Rules", js.Array(value*))
     }
   }
   
@@ -56,7 +55,7 @@ object typesDataRetrievalPolicyMod {
       
       inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
       
-      inline def setRulesVarargs(value: UnmarshalledDataRetrievalRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: UnmarshalledDataRetrievalRule*): Self = StObject.set(x, "Rules", js.Array(value*))
     }
   }
 }

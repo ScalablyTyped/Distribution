@@ -11,9 +11,9 @@ Fast line to line SourceMap generator.
 | Full name          | source-list-map |
 | Keywords           | source-map |
 | # releases         | 0 |
-| # dependents       | 91 |
-| # downloads        | 515004429 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5.6335448666666664E7 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack/source-list-map)

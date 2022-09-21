@@ -33,7 +33,7 @@ object FileTreeNode {
     
     inline def setChildren(value: js.Array[FileTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: FileTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: FileTreeNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
     

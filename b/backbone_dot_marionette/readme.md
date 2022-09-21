@@ -10,10 +10,10 @@ The Backbone Framework
 | ------------------ | :-------------: |
 | Full name          | backbone.marionette |
 | Keywords           | backbone, plugin, marionette, composite, architecture, single, page, app, client, browser |
-| # releases         | 4 |
-| # dependents       | 94 |
-| # downloads        | 1849686 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 151256.0 |
+| # stars            | 7106.0 |
 
 ## Links
 - [Homepage](https://marionettejs.com/)

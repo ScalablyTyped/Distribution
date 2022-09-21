@@ -11,14 +11,11 @@ Simple isomorphic router
 | Full name          | riot-route |
 | Keywords           | riot, router |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 185198 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9071.666666666666 |
+| # stars            | 206.0 |
 
 ## Links
-- [Homepage](https://github.com/riot/route#readme)
-- [Bugs](https://github.com/riot/route/issues)
-- [Repository](https://github.com/riot/route)
 - [Npm](https://www.npmjs.com/package/riot-route)
     
 

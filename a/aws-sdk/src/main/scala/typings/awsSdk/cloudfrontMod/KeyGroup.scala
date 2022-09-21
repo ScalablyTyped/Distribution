@@ -19,11 +19,11 @@ trait KeyGroup extends StObject {
   /**
     * The date and time when the key group was last modified.
     */
-  var LastModifiedTime: timestamp
+  var LastModifiedTime: js.Date
 }
 object KeyGroup {
   
-  inline def apply(Id: String, KeyGroupConfig: KeyGroupConfig, LastModifiedTime: timestamp): KeyGroup = {
+  inline def apply(Id: String, KeyGroupConfig: KeyGroupConfig, LastModifiedTime: js.Date): KeyGroup = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], KeyGroupConfig = KeyGroupConfig.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyGroup]
   }
@@ -34,6 +34,6 @@ object KeyGroup {
     
     inline def setKeyGroupConfig(value: KeyGroupConfig): Self = StObject.set(x, "KeyGroupConfig", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

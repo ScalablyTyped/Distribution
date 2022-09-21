@@ -34,7 +34,7 @@ object ProductStatusDestinationStatus {
     
     inline def setApprovedCountriesUndefined: Self = StObject.set(x, "approvedCountries", js.undefined)
     
-    inline def setApprovedCountriesVarargs(value: String*): Self = StObject.set(x, "approvedCountries", js.Array(value :_*))
+    inline def setApprovedCountriesVarargs(value: String*): Self = StObject.set(x, "approvedCountries", js.Array(value*))
     
     inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
@@ -44,13 +44,13 @@ object ProductStatusDestinationStatus {
     
     inline def setDisapprovedCountriesUndefined: Self = StObject.set(x, "disapprovedCountries", js.undefined)
     
-    inline def setDisapprovedCountriesVarargs(value: String*): Self = StObject.set(x, "disapprovedCountries", js.Array(value :_*))
+    inline def setDisapprovedCountriesVarargs(value: String*): Self = StObject.set(x, "disapprovedCountries", js.Array(value*))
     
     inline def setPendingCountries(value: js.Array[String]): Self = StObject.set(x, "pendingCountries", value.asInstanceOf[js.Any])
     
     inline def setPendingCountriesUndefined: Self = StObject.set(x, "pendingCountries", js.undefined)
     
-    inline def setPendingCountriesVarargs(value: String*): Self = StObject.set(x, "pendingCountries", js.Array(value :_*))
+    inline def setPendingCountriesVarargs(value: String*): Self = StObject.set(x, "pendingCountries", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

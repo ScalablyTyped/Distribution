@@ -1,7 +1,7 @@
 
 # Scala.js typings for skin-tone
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Change the skin tone of an emoji 👌👌🏻👌🏼👌🏽👌🏾👌🏿
@@ -10,10 +10,10 @@ Change the skin tone of an emoji 👌👌🏻👌🏼👌🏽👌🏾👌🏿
 | ------------------ | :-------------: |
 | Full name          | skin-tone |
 | Keywords           | emoji, emojis, skin, tone, type, unicode, emoticon, fitzpatrick, scale, modify, change, strip, remove |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 23489 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2342.3333333333335 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/skin-tone#readme)

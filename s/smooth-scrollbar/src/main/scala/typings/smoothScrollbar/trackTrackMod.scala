@@ -11,13 +11,13 @@ object trackTrackMod {
   
   @JSImport("smooth-scrollbar/track/track", "ScrollbarTrack")
   @js.native
-  class ScrollbarTrack protected ()
+  open class ScrollbarTrack protected ()
     extends StObject
        with typings.smoothScrollbar.trackMod.ScrollbarTrack {
     def this(direction: TrackDirection) = this()
     def this(direction: TrackDirection, thumbMinSize: Double) = this()
     
-    /* private */ var _isShown: js.Any = js.native
+    /* private */ var _isShown: Any = js.native
     
     /* CompleteClass */
     override def attachTo(container: HTMLElement): Unit = js.native

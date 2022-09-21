@@ -23,17 +23,17 @@ trait PlusAudioAudioRecorder extends StObject {
   def record(
     option: Unit,
     successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def record(option: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def record(option: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def record(option: PlusAudioRecordOptions): Unit = js.native
   def record(option: PlusAudioRecordOptions, successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
   def record(
     option: PlusAudioRecordOptions,
     successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def record(option: PlusAudioRecordOptions, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def record(option: PlusAudioRecordOptions, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 结束录音操作

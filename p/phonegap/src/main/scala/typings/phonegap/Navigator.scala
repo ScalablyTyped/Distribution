@@ -14,7 +14,7 @@ trait Navigator extends StObject {
   
   var compass: Compass
   
-  var connection: Connection
+  val connection: Connection
   
   var contacts: Contacts
   

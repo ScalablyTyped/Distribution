@@ -1,7 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.WebGLProgram
-import typings.babylonjs.WebGLRenderingContext
+import typings.std.WebGLRenderingContext
 import typings.std.WebGLShader
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject
@@ -12,6 +12,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebGLPipelineContext
   extends StObject
      with IPipelineContext {
+  
+  /**
+    * @param uniformName
+    * @param x
+    * @param y
+    * @hidden
+    */
+  def _cacheFloat2(uniformName: String, x: Double, y: Double): Boolean = js.native
+  
+  /**
+    * @param uniformName
+    * @param x
+    * @param y
+    * @param z
+    * @hidden
+    */
+  def _cacheFloat3(uniformName: String, x: Double, y: Double, z: Double): Boolean = js.native
+  
+  /**
+    * @param uniformName
+    * @param x
+    * @param y
+    * @param z
+    * @param w
+    * @hidden
+    */
+  def _cacheFloat4(uniformName: String, x: Double, y: Double, z: Double, w: Double): Boolean = js.native
+  
+  /**
+    * @param _uniformName
+    * @param _x
+    * @param _y
+    * @param _z
+    * @param _w
+    * @hidden
+    */
+  def _cacheFloatN(_uniformName: String, _x: Double): Boolean = js.native
+  def _cacheFloatN(_uniformName: String, _x: Double, _y: Double): Boolean = js.native
+  def _cacheFloatN(_uniformName: String, _x: Double, _y: Double, _z: Double): Boolean = js.native
+  def _cacheFloatN(_uniformName: String, _x: Double, _y: Double, _z: Double, _w: Double): Boolean = js.native
+  def _cacheFloatN(_uniformName: String, _x: Double, _y: Double, _z: Unit, _w: Double): Boolean = js.native
+  def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Double): Boolean = js.native
+  def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Double, _w: Double): Boolean = js.native
+  def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Unit, _w: Double): Boolean = js.native
+  
+  /**
+    * @param uniformName
+    * @param matrix
+    * @hidden
+    */
+  def _cacheMatrix(uniformName: String, matrix: IMatrixLike): Boolean = js.native
+  
+  /* private */ var _uniforms: Any = js.native
+  
+  /* private */ var _valueCache: Any = js.native
   
   var context: js.UndefOr[WebGLRenderingContext] = js.native
   

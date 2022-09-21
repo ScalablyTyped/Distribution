@@ -10,14 +10,14 @@ object tabContentMod {
   
   @JSImport("react-tabs-redux/TabContent", "TabContent")
   @js.native
-  class TabContent protected ()
-    extends Component[TabContentProps, js.Object, js.Any] {
+  open class TabContent protected ()
+    extends Component[TabContentProps, js.Object, Any] {
     def this(props: TabContentProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabContentProps, context: js.Any) = this()
+    def this(props: TabContentProps, context: Any) = this()
   }
   
   trait TabContentProps extends StObject {

@@ -25,6 +25,6 @@ object AnimationKeyframesSequenceMetadata {
     
     inline def setSteps(value: js.Array[AnimationStyleMetadata]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: AnimationStyleMetadata*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: AnimationStyleMetadata*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

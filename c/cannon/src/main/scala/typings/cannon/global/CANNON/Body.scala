@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.Body")
 @js.native
-class Body ()
+open class Body ()
   extends StObject
      with typings.cannon.CANNON.Body {
   def this(options: IBodyOptions) = this()

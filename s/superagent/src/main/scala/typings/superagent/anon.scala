@@ -1,6 +1,6 @@
 package typings.superagent
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.superagent.superagentStrings.auto
 import typings.superagent.superagentStrings.basic
 import typings.superagent.superagentStrings.bearer

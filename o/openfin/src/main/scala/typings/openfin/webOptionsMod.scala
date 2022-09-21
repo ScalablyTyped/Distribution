@@ -9,11 +9,11 @@ object webOptionsMod {
   
   trait WebOptions extends StObject {
     
-    var contentRedirect: js.UndefOr[js.Any] = js.undefined
+    var contentRedirect: js.UndefOr[Any] = js.undefined
     
-    var customContext: js.UndefOr[js.Any] = js.undefined
+    var customContext: js.UndefOr[Any] = js.undefined
     
-    var experimental: js.UndefOr[js.Any] = js.undefined
+    var experimental: js.UndefOr[Any] = js.undefined
     
     var name: String
     
@@ -30,15 +30,15 @@ object webOptionsMod {
     
     extension [Self <: WebOptions](x: Self) {
       
-      inline def setContentRedirect(value: js.Any): Self = StObject.set(x, "contentRedirect", value.asInstanceOf[js.Any])
+      inline def setContentRedirect(value: Any): Self = StObject.set(x, "contentRedirect", value.asInstanceOf[js.Any])
       
       inline def setContentRedirectUndefined: Self = StObject.set(x, "contentRedirect", js.undefined)
       
-      inline def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
+      inline def setCustomContext(value: Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
       
       inline def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
       
-      inline def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      inline def setExperimental(value: Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
       
       inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
       
@@ -48,7 +48,7 @@ object webOptionsMod {
       
       inline def setPreloadScriptsUndefined: Self = StObject.set(x, "preloadScripts", js.undefined)
       
-      inline def setPreloadScriptsVarargs(value: PreloadScript*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
+      inline def setPreloadScriptsVarargs(value: PreloadScript*): Self = StObject.set(x, "preloadScripts", js.Array(value*))
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }

@@ -1,0 +1,40 @@
+package typings.googleapis.dialogflowV3Mod.dialogflowV3
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGoogleCloudDialogflowCxV3TransitionCoverage extends StObject {
+  
+  /**
+    * The percent of transitions in the agent that are covered.
+    */
+  var coverageScore: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * The list of Transitions present in the agent.
+    */
+  var transitions: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowCxV3TransitionCoverageTransition]] = js.undefined
+}
+object SchemaGoogleCloudDialogflowCxV3TransitionCoverage {
+  
+  inline def apply(): SchemaGoogleCloudDialogflowCxV3TransitionCoverage = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGoogleCloudDialogflowCxV3TransitionCoverage]
+  }
+  
+  extension [Self <: SchemaGoogleCloudDialogflowCxV3TransitionCoverage](x: Self) {
+    
+    inline def setCoverageScore(value: Double): Self = StObject.set(x, "coverageScore", value.asInstanceOf[js.Any])
+    
+    inline def setCoverageScoreNull: Self = StObject.set(x, "coverageScore", null)
+    
+    inline def setCoverageScoreUndefined: Self = StObject.set(x, "coverageScore", js.undefined)
+    
+    inline def setTransitions(value: js.Array[SchemaGoogleCloudDialogflowCxV3TransitionCoverageTransition]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
+    
+    inline def setTransitionsVarargs(value: SchemaGoogleCloudDialogflowCxV3TransitionCoverageTransition*): Self = StObject.set(x, "transitions", js.Array(value*))
+  }
+}

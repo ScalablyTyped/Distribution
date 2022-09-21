@@ -10,21 +10,21 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectStatic extends StObject {
+trait ObjectStatic[T /* <: Object[Attributes] */] extends StObject {
   
-  def createWithoutData[T /* <: Object[Attributes] */](id: String): T = js.native
+  def createWithoutData(id: String): T = js.native
   
   def destroyAll[T /* <: Object[Attributes] */](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
   def destroyAll[T /* <: Object[Attributes] */](list: js.Array[T], options: DestroyAllOptions): js.Promise[js.Array[T]] = js.native
   
-  def extend(className: String): js.Any = js.native
-  def extend(className: String, protoProps: js.Any): js.Any = js.native
-  def extend(className: String, protoProps: js.Any, classProps: js.Any): js.Any = js.native
-  def extend(className: String, protoProps: Unit, classProps: js.Any): js.Any = js.native
-  def extend(className: ClassName): js.Any = js.native
-  def extend(className: ClassName, protoProps: js.Any): js.Any = js.native
-  def extend(className: ClassName, protoProps: js.Any, classProps: js.Any): js.Any = js.native
-  def extend(className: ClassName, protoProps: Unit, classProps: js.Any): js.Any = js.native
+  def extend(className: String): Any = js.native
+  def extend(className: String, protoProps: Any): Any = js.native
+  def extend(className: String, protoProps: Any, classProps: Any): Any = js.native
+  def extend(className: String, protoProps: Unit, classProps: Any): Any = js.native
+  def extend(className: ClassName): Any = js.native
+  def extend(className: ClassName, protoProps: Any): Any = js.native
+  def extend(className: ClassName, protoProps: Any, classProps: Any): Any = js.native
+  def extend(className: ClassName, protoProps: Unit, classProps: Any): Any = js.native
   
   def fetchAll[T /* <: Object[Attributes] */](list: js.Array[T], options: FetchAllOptions): js.Promise[js.Array[T]] = js.native
   
@@ -85,14 +85,14 @@ trait ObjectStatic extends StObject {
     options: RequestOptions
   ): js.Promise[js.Array[T]] = js.native
   
-  def fromJSON[T /* <: Object[Attributes] */](json: js.Any): T = js.native
-  def fromJSON[T /* <: Object[Attributes] */](json: js.Any, `override`: Boolean): T = js.native
+  def fromJSON(json: Any): T = js.native
+  def fromJSON(json: Any, `override`: Boolean): T = js.native
   
   def pinAll(objects: js.Array[Object[Attributes]]): js.Promise[Unit] = js.native
   
   def pinAllWithName(name: String, objects: js.Array[Object[Attributes]]): js.Promise[Unit] = js.native
   
-  def registerSubclass[T /* <: Object[Attributes] */](className: String, clazz: Instantiable1[/* options */ js.UndefOr[js.Any], T]): Unit = js.native
+  def registerSubclass(className: String, clazz: Instantiable1[/* options */ js.UndefOr[Any], T]): Unit = js.native
   
   def saveAll[T /* <: js.Array[Object[Attributes]] */](list: T): js.Promise[T] = js.native
   def saveAll[T /* <: js.Array[Object[Attributes]] */](list: T, options: SaveAllOptions): js.Promise[T] = js.native

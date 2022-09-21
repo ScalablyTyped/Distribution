@@ -1,7 +1,6 @@
 package typings.webgme
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.webgme.Core.Node
 import typings.webgme.GmeStorage.CommitHash
 import typings.webgme.GmeStorage.CommitObject
@@ -23,10 +22,10 @@ object GmeCommon {
   
   type Aspect = String
   
-  type AttrMeta = js.Any
+  type AttrMeta = Any
   
   type Buffer = js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GLbyte */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GLbyte */ Any
   ]
   
   type CatchCallback = ErrorOnlyCallback
@@ -107,7 +106,7 @@ object GmeCommon {
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: Double*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: Double*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -147,7 +146,7 @@ object GmeCommon {
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: Double*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: Double*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -226,7 +225,7 @@ object GmeCommon {
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
@@ -238,7 +237,7 @@ object GmeCommon {
   
   type Dictionary[T] = StringDictionary[T]
   
-  type ErrorOnlyCallback = js.Function1[/* err */ Error | Null, Unit]
+  type ErrorOnlyCallback = js.Function1[/* err */ js.Error | Null, Unit]
   
   type ErrorStr = String
   
@@ -293,15 +292,15 @@ object GmeCommon {
       
       inline def setItems(value: js.Array[Path]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: Path*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Path*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMaxItems(value: js.Array[Double]): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
-      inline def setMaxItemsVarargs(value: Double*): Self = StObject.set(x, "maxItems", js.Array(value :_*))
+      inline def setMaxItemsVarargs(value: Double*): Self = StObject.set(x, "maxItems", js.Array(value*))
       
       inline def setMinItems(value: js.Array[Double]): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
       
-      inline def setMinItemsVarargs(value: Double*): Self = StObject.set(x, "minItems", js.Array(value :_*))
+      inline def setMinItemsVarargs(value: Double*): Self = StObject.set(x, "minItems", js.Array(value*))
     }
   }
   
@@ -373,7 +372,7 @@ object GmeCommon {
     }
   }
   
-  type Metadata = StringDictionary[js.Any]
+  type Metadata = StringDictionary[Any]
   
   type MetadataHash = String
   
@@ -458,11 +457,11 @@ object GmeCommon {
     }
   }
   
-  type Registry = js.Any
+  type Registry = Any
   
   type RelId = String
   
-  type ResultCallback[T] = js.Function2[/* err */ Error | Null, /* result */ T, Unit]
+  type ResultCallback[T] = js.Function2[/* err */ js.Error | Null, /* result */ T, Unit]
   
   type SetId = String
   

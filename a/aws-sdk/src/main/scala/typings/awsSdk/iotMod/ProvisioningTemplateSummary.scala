@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProvisioningTemplateSummary extends StObject {
   
   /**
-    * The date when the fleet provisioning template summary was created.
+    * The date when the provisioning template summary was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The description of the fleet provisioning template.
+    * The description of the provisioning template.
     */
   var description: js.UndefOr[TemplateDescription] = js.undefined
   
@@ -22,19 +22,24 @@ trait ProvisioningTemplateSummary extends StObject {
   var enabled: js.UndefOr[Enabled] = js.undefined
   
   /**
-    * The date when the fleet provisioning template summary was last modified.
+    * The date when the provisioning template summary was last modified.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ARN of the fleet provisioning template.
+    * The ARN of the provisioning template.
     */
   var templateArn: js.UndefOr[TemplateArn] = js.undefined
   
   /**
-    * The name of the fleet provisioning template.
+    * The name of the provisioning template.
     */
   var templateName: js.UndefOr[TemplateName] = js.undefined
+  
+  /**
+    * The type you define in a provisioning template. You can create a template with only one type. You can't change the template type after its creation. The default value is FLEET_PROVISIONING. For more information about provisioning template, see: Provisioning template. 
+    */
+  var `type`: js.UndefOr[TemplateType] = js.undefined
 }
 object ProvisioningTemplateSummary {
   
@@ -45,7 +50,7 @@ object ProvisioningTemplateSummary {
   
   extension [Self <: ProvisioningTemplateSummary](x: Self) {
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -57,7 +62,7 @@ object ProvisioningTemplateSummary {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
@@ -68,5 +73,9 @@ object ProvisioningTemplateSummary {
     inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
     
     inline def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
+    
+    inline def setType(value: TemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

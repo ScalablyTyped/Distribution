@@ -10,10 +10,10 @@ Tool for generation samples based on OpenAPI payload/response schema
 | ------------------ | :-------------: |
 | Full name          | openapi-sampler |
 | Keywords           | OpenAPI, Swagger, instantiator, sampler, faker |
-| # releases         | 3 |
-| # dependents       | 41 |
-| # downloads        | 4650728 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1186249.6666666667 |
+| # stars            | 113.0 |
 
 ## Links
 - [Homepage](https://github.com/APIs-guru/openapi-sampler/)

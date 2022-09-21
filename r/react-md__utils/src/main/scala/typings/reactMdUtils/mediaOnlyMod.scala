@@ -1,6 +1,5 @@
 package typings.reactMdUtils
 
-import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,21 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mediaOnlyMod {
   
-  @JSImport("@react-md/utils/types/sizing/MediaOnly", "DesktopOnly")
+  @JSImport("@react-md/utils/types/sizing/MediaOnly", JSImport.Namespace)
   @js.native
-  val DesktopOnly: FC[MediaOnlyProps] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/utils/types/sizing/MediaOnly", "MobileOnly")
-  @js.native
-  val MobileOnly: FC[MediaOnlyProps] = js.native
+  inline def DesktopOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("DesktopOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  @JSImport("@react-md/utils/types/sizing/MediaOnly", "PhoneOnly")
-  @js.native
-  val PhoneOnly: FC[MediaOnlyProps] = js.native
+  inline def MobileOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MobileOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  @JSImport("@react-md/utils/types/sizing/MediaOnly", "TabletOnly")
-  @js.native
-  val TabletOnly: FC[MediaOnlyProps] = js.native
+  inline def PhoneOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PhoneOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  
+  inline def TabletOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("TabletOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait MediaOnlyProps extends StObject {
     

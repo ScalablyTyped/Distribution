@@ -14,11 +14,11 @@ trait OnsSpeedDialElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   /**
     * @description Whether the element is disabled or not.
@@ -40,7 +40,12 @@ trait OnsSpeedDialElement
     */
   var `inline`: Boolean = js.native
   
-  def isOpen(): js.Any = js.native
+  def isOpen(): Any = js.native
+  
+  /**
+    * @description Whether the speed items are visible or not.
+    */
+  var open: Boolean = js.native
   
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -48,6 +53,11 @@ trait OnsSpeedDialElement
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+  
+  /**
+    * @description If this property is defined, the button will have a ripple effect when tapped.
+    */
+  var ripple: Boolean = js.native
   
   /**
     * @description Show the speed dial.

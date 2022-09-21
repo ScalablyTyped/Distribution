@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Activation
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ abstract class AppointmentsProviderShowTimeFrameActivatedEventArgs ()
   
   /** Gets the starting date and time of the time frame to be shown. */
   /* CompleteClass */
-  var timeToShow: Date = js.native
+  var timeToShow: js.Date = js.native
   
   /** Gets the action to be performed by the appointments provider. */
   /* CompleteClass */

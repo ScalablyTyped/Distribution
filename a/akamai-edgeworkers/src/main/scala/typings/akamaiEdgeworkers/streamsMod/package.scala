@@ -5,27 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type QueuingStrategySizeCallback[T] = js.Function1[/* chunk */ T, scala.Double]
+type QueuingStrategySizeCallback[T] = js.Function1[/* chunk */ T, Double]
 
-type ReadableByteStreamControllerCallback = js.Function1[
-/* controller */ typings.akamaiEdgeworkers.streamsMod.ReadableByteStreamController, 
-scala.Unit | js.Thenable[scala.Unit]]
+type ReadableByteStreamControllerCallback = js.Function1[/* controller */ ReadableByteStreamController, Unit | js.Thenable[Unit]]
 
-type ReadableStreamDefaultControllerCallback[R] = js.Function1[
-/* controller */ typings.akamaiEdgeworkers.streamsMod.ReadableStreamDefaultController[R], 
-scala.Unit | js.Thenable[scala.Unit]]
+type ReadableStreamDefaultControllerCallback[R] = js.Function1[/* controller */ ReadableStreamDefaultController[R], Unit | js.Thenable[Unit]]
 
-type ReadableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
+type ReadableStreamErrorCallback = js.Function1[/* reason */ Any, Unit | js.Thenable[Unit]]
 
-type WritableStreamDefaultControllerCloseCallback = js.Function0[scala.Unit | js.Thenable[scala.Unit]]
+type TransformerFlushCallback[O] = js.Function1[/* controller */ TransformStreamDefaultController[O], Unit | js.Promise[Unit]]
 
-type WritableStreamDefaultControllerStartCallback = js.Function1[
-/* controller */ typings.akamaiEdgeworkers.streamsMod.WritableStreamDefaultController, 
-scala.Unit | js.Thenable[scala.Unit]]
+type TransformerStartCallback[O] = js.Function1[/* controller */ TransformStreamDefaultController[O], Unit | js.Promise[Unit]]
+
+type TransformerTransformCallback[I, O] = js.Function2[
+/* chunk */ I, 
+/* controller */ TransformStreamDefaultController[O], 
+Unit | js.Promise[Unit]]
+
+type WritableStreamDefaultControllerCloseCallback = js.Function0[Unit | js.Thenable[Unit]]
+
+type WritableStreamDefaultControllerStartCallback = js.Function1[/* controller */ WritableStreamDefaultController, Unit | js.Thenable[Unit]]
 
 type WritableStreamDefaultControllerWriteCallback[W] = js.Function2[
 /* chunk */ W, 
-/* controller */ typings.akamaiEdgeworkers.streamsMod.WritableStreamDefaultController, 
-scala.Unit | js.Thenable[scala.Unit]]
+/* controller */ WritableStreamDefaultController, 
+Unit | js.Thenable[Unit]]
 
-type WritableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
+type WritableStreamErrorCallback = js.Function1[/* reason */ Any, Unit | js.Thenable[Unit]]

@@ -1,57 +1,29 @@
 package typings.hashids
 
+import typings.hashids.hashidsMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("hashids", JSImport.Default)
+  @JSImport("hashids/cjs", JSImport.Namespace)
   @js.native
-  class default protected ()
-    extends StObject
-       with Hashids {
+  open class ^ () extends default {
     def this(salt: String) = this()
-    def this(salt: String, minHashLength: Double) = this()
-    def this(salt: String, minHashLength: Double, alphabet: String) = this()
-    def this(salt: String, minHashLength: Unit, alphabet: String) = this()
-  }
-  
-  @js.native
-  trait Hashids extends StObject {
-    
-    /* private */ var alphabet: js.Array[String] = js.native
-    
-    def decode(hash: String): js.Array[Double] = js.native
-    
-    def decodeHex(hash: String): String = js.native
-    
-    def encode(arg: js.Array[Double]): String = js.native
-    def encode(args: Double*): String = js.native
-    def encode(arg: Double): String = js.native
-    
-    def encodeHex(str: String): String = js.native
-    
-    /* private */ var errorAlphabetLength: String = js.native
-    
-    /* private */ var errorAlphabetSpace: String = js.native
-    
-    /* private */ var guardDiv: Double = js.native
-    
-    def hash(input: Double, alphabet: String): String = js.native
-    
-    /* private */ var minAlphabetLength: Double = js.native
-    
-    /* private */ var minHashLength: Double = js.native
-    
-    /* private */ var salt: String = js.native
-    
-    /* private */ var sepDiv: Double = js.native
-    
-    /* private */ var seps: String = js.native
-    
-    def unhash(input: js.Array[String], alphabet: String): Double = js.native
-    
-    /* private */ var version: String = js.native
+    def this(salt: String, minLength: Double) = this()
+    def this(salt: Unit, minLength: Double) = this()
+    def this(salt: String, minLength: Double, alphabet: String) = this()
+    def this(salt: String, minLength: Unit, alphabet: String) = this()
+    def this(salt: Unit, minLength: Double, alphabet: String) = this()
+    def this(salt: Unit, minLength: Unit, alphabet: String) = this()
+    def this(salt: String, minLength: Double, alphabet: String, seps: String) = this()
+    def this(salt: String, minLength: Double, alphabet: Unit, seps: String) = this()
+    def this(salt: String, minLength: Unit, alphabet: String, seps: String) = this()
+    def this(salt: String, minLength: Unit, alphabet: Unit, seps: String) = this()
+    def this(salt: Unit, minLength: Double, alphabet: String, seps: String) = this()
+    def this(salt: Unit, minLength: Double, alphabet: Unit, seps: String) = this()
+    def this(salt: Unit, minLength: Unit, alphabet: String, seps: String) = this()
+    def this(salt: Unit, minLength: Unit, alphabet: Unit, seps: String) = this()
   }
 }

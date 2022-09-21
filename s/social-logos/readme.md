@@ -1,19 +1,19 @@
 
 # Scala.js typings for social-logos
 
-Typings are for version 2.1
+Typings are for version 2.3
 
 ## Library description:
-A repository of all the social logos we use on WordPress.com.
+A repository of all the social logos used on WordPress.com.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | social-logos |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 82247 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 9216.666666666666 |
+| # stars            | 113.0 |
 
 ## Links
 - [Homepage](https://github.com/Automattic/social-logos#readme)

@@ -2,7 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.`stay-above`
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait GroundNavigationConstraint
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#navigationConstraint)
     */
-  var `type`: `stay-above` | none
+  var `type`: `stay-above` | none_
 }
 object GroundNavigationConstraint {
   
@@ -26,9 +26,9 @@ object GroundNavigationConstraint {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, GroundNavigationConstraint]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], GroundNavigationConstraint]]),
-    `type`: `stay-above` | none
+      js.Function2[/* propertyName */ String, /* value */ Any, GroundNavigationConstraint]
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], GroundNavigationConstraint]]),
+    `type`: `stay-above` | none_
   ): GroundNavigationConstraint = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -37,6 +37,6 @@ object GroundNavigationConstraint {
   
   extension [Self <: GroundNavigationConstraint](x: Self) {
     
-    inline def setType(value: `stay-above` | none): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `stay-above` | none_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -5,4 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type TaxIDLocale = typings.expressValidator.expressValidatorStrings.`en-US`
+/* Rewritten from type alias, can be one of: 
+  - typings.expressValidator.expressValidatorStrings.http
+  - typings.expressValidator.expressValidatorStrings.https
+  - typings.expressValidator.expressValidatorStrings.ftp
+  - java.lang.String
+*/
+type URLProtocol = _URLProtocol | String

@@ -1,28 +1,30 @@
 package typings.nodal.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.nodal.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def API: typings.nodal.mod.APIConstructor = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("API").asInstanceOf[typings.nodal.mod.APIConstructor]
+inline def API: APIConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("API").asInstanceOf[APIConstructor]
 
-inline def APIResource: js.Any = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("APIResource").asInstanceOf[js.Any]
+inline def APIResource: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("APIResource").asInstanceOf[Any]
 
-inline def CLI: js.Any = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CLI").asInstanceOf[js.Any]
+inline def CLI: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("CLI").asInstanceOf[Any]
 
-inline def mime: js.Any = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("mime").asInstanceOf[js.Any]
+inline def mime: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("mime").asInstanceOf[Any]
 
-inline def require: typings.node.NodeRequire = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("require").asInstanceOf[typings.node.NodeRequire]
+inline def require: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("require").asInstanceOf[/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any]
 
-type IAnyObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type IAnyObject = StringDictionary[Any]
 
-type IArrInterface = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+type IArrInterface = StringDictionary[js.Array[String]]
 
-type ICalculations = org.scalablytyped.runtime.StringDictionary[typings.nodal.mod.ICalculation]
+type ICalculations = StringDictionary[ICalculation]
 
-type IModelData = org.scalablytyped.runtime.StringDictionary[js.Array[js.Any]]
+type IModelData = StringDictionary[js.Array[Any]]
 
-type InterfaceType = typings.nodal.mod.IArrInterface | java.lang.String
+type InterfaceType = IArrInterface | String
 
-type Query = js.Any
+type Query = Any

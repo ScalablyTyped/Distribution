@@ -10,5 +10,5 @@ object getBoundsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(points: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(points.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(points: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(points.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

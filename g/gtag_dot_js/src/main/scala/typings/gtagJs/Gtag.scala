@@ -2,15 +2,106 @@ package typings.gtagJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.gtagJs.gtagJsStrings.config
+import typings.gtagJs.gtagJsStrings.consent
+import typings.gtagJs.gtagJsStrings.denied
 import typings.gtagJs.gtagJsStrings.event
+import typings.gtagJs.gtagJsStrings.get
+import typings.gtagJs.gtagJsStrings.granted
 import typings.gtagJs.gtagJsStrings.js_
 import typings.gtagJs.gtagJsStrings.set
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Gtag {
+  
+  trait ConfigParams extends StObject {
+    
+    var page_location: js.UndefOr[String] = js.undefined
+    
+    var page_path: js.UndefOr[String] = js.undefined
+    
+    var page_title: js.UndefOr[String] = js.undefined
+    
+    var send_page_view: js.UndefOr[Boolean] = js.undefined
+  }
+  object ConfigParams {
+    
+    inline def apply(): ConfigParams = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ConfigParams]
+    }
+    
+    extension [Self <: ConfigParams](x: Self) {
+      
+      inline def setPage_location(value: String): Self = StObject.set(x, "page_location", value.asInstanceOf[js.Any])
+      
+      inline def setPage_locationUndefined: Self = StObject.set(x, "page_location", js.undefined)
+      
+      inline def setPage_path(value: String): Self = StObject.set(x, "page_path", value.asInstanceOf[js.Any])
+      
+      inline def setPage_pathUndefined: Self = StObject.set(x, "page_path", js.undefined)
+      
+      inline def setPage_title(value: String): Self = StObject.set(x, "page_title", value.asInstanceOf[js.Any])
+      
+      inline def setPage_titleUndefined: Self = StObject.set(x, "page_title", js.undefined)
+      
+      inline def setSend_page_view(value: Boolean): Self = StObject.set(x, "send_page_view", value.asInstanceOf[js.Any])
+      
+      inline def setSend_page_viewUndefined: Self = StObject.set(x, "send_page_view", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.gtagJs.gtagJsStrings.default
+    - typings.gtagJs.gtagJsStrings.update
+  */
+  trait ConsentArg extends StObject
+  object ConsentArg {
+    
+    inline def default: typings.gtagJs.gtagJsStrings.default = "default".asInstanceOf[typings.gtagJs.gtagJsStrings.default]
+    
+    inline def update: typings.gtagJs.gtagJsStrings.update = "update".asInstanceOf[typings.gtagJs.gtagJsStrings.update]
+  }
+  
+  trait ConsentParams extends StObject {
+    
+    var ad_storage: js.UndefOr[granted | denied] = js.undefined
+    
+    var analytics_storage: js.UndefOr[granted | denied] = js.undefined
+    
+    var region: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var wait_for_update: js.UndefOr[Double] = js.undefined
+  }
+  object ConsentParams {
+    
+    inline def apply(): ConsentParams = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ConsentParams]
+    }
+    
+    extension [Self <: ConsentParams](x: Self) {
+      
+      inline def setAd_storage(value: granted | denied): Self = StObject.set(x, "ad_storage", value.asInstanceOf[js.Any])
+      
+      inline def setAd_storageUndefined: Self = StObject.set(x, "ad_storage", js.undefined)
+      
+      inline def setAnalytics_storage(value: granted | denied): Self = StObject.set(x, "analytics_storage", value.asInstanceOf[js.Any])
+      
+      inline def setAnalytics_storageUndefined: Self = StObject.set(x, "analytics_storage", js.undefined)
+      
+      inline def setRegion(value: js.Array[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      
+      inline def setRegionVarargs(value: String*): Self = StObject.set(x, "region", js.Array(value*))
+      
+      inline def setWait_for_update(value: Double): Self = StObject.set(x, "wait_for_update", value.asInstanceOf[js.Any])
+      
+      inline def setWait_for_updateUndefined: Self = StObject.set(x, "wait_for_update", js.undefined)
+    }
+  }
   
   trait ControlParams extends StObject {
     
@@ -43,40 +134,54 @@ object Gtag {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setSend_to(value: String | js.Array[String]): Self = StObject.set(x, "send_to", value.asInstanceOf[js.Any])
       
       inline def setSend_toUndefined: Self = StObject.set(x, "send_to", js.undefined)
       
-      inline def setSend_toVarargs(value: String*): Self = StObject.set(x, "send_to", js.Array(value :_*))
+      inline def setSend_toVarargs(value: String*): Self = StObject.set(x, "send_to", js.Array(value*))
     }
   }
   
   type Currency = String | Double
   
-  type CustomParams = StringDictionary[js.Any]
+  type CustomParams = StringDictionary[Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.gtagJs.gtagJsStrings.add_payment_info
+    - typings.gtagJs.gtagJsStrings.add_shipping_info
     - typings.gtagJs.gtagJsStrings.add_to_cart
     - typings.gtagJs.gtagJsStrings.add_to_wishlist
     - typings.gtagJs.gtagJsStrings.begin_checkout
     - typings.gtagJs.gtagJsStrings.checkout_progress
+    - typings.gtagJs.gtagJsStrings.earn_virtual_currency
     - typings.gtagJs.gtagJsStrings.exception
     - typings.gtagJs.gtagJsStrings.generate_lead
+    - typings.gtagJs.gtagJsStrings.join_group
+    - typings.gtagJs.gtagJsStrings.level_end
+    - typings.gtagJs.gtagJsStrings.level_start
+    - typings.gtagJs.gtagJsStrings.level_up
     - typings.gtagJs.gtagJsStrings.login
     - typings.gtagJs.gtagJsStrings.page_view
+    - typings.gtagJs.gtagJsStrings.post_score
     - typings.gtagJs.gtagJsStrings.purchase
     - typings.gtagJs.gtagJsStrings.refund
     - typings.gtagJs.gtagJsStrings.remove_from_cart
     - typings.gtagJs.gtagJsStrings.screen_view
     - typings.gtagJs.gtagJsStrings.search
     - typings.gtagJs.gtagJsStrings.select_content
+    - typings.gtagJs.gtagJsStrings.select_item
+    - typings.gtagJs.gtagJsStrings.select_promotion
     - typings.gtagJs.gtagJsStrings.set_checkout_option
     - typings.gtagJs.gtagJsStrings.share
     - typings.gtagJs.gtagJsStrings.sign_up
+    - typings.gtagJs.gtagJsStrings.spend_virtual_currency
+    - typings.gtagJs.gtagJsStrings.tutorial_begin
+    - typings.gtagJs.gtagJsStrings.tutorial_complete
+    - typings.gtagJs.gtagJsStrings.unlock_achievement
     - typings.gtagJs.gtagJsStrings.timing_complete
+    - typings.gtagJs.gtagJsStrings.view_cart
     - typings.gtagJs.gtagJsStrings.view_item
     - typings.gtagJs.gtagJsStrings.view_item_list
     - typings.gtagJs.gtagJsStrings.view_promotion
@@ -87,6 +192,8 @@ object Gtag {
     
     inline def add_payment_info: typings.gtagJs.gtagJsStrings.add_payment_info = "add_payment_info".asInstanceOf[typings.gtagJs.gtagJsStrings.add_payment_info]
     
+    inline def add_shipping_info: typings.gtagJs.gtagJsStrings.add_shipping_info = "add_shipping_info".asInstanceOf[typings.gtagJs.gtagJsStrings.add_shipping_info]
+    
     inline def add_to_cart: typings.gtagJs.gtagJsStrings.add_to_cart = "add_to_cart".asInstanceOf[typings.gtagJs.gtagJsStrings.add_to_cart]
     
     inline def add_to_wishlist: typings.gtagJs.gtagJsStrings.add_to_wishlist = "add_to_wishlist".asInstanceOf[typings.gtagJs.gtagJsStrings.add_to_wishlist]
@@ -95,13 +202,25 @@ object Gtag {
     
     inline def checkout_progress: typings.gtagJs.gtagJsStrings.checkout_progress = "checkout_progress".asInstanceOf[typings.gtagJs.gtagJsStrings.checkout_progress]
     
+    inline def earn_virtual_currency: typings.gtagJs.gtagJsStrings.earn_virtual_currency = "earn_virtual_currency".asInstanceOf[typings.gtagJs.gtagJsStrings.earn_virtual_currency]
+    
     inline def exception: typings.gtagJs.gtagJsStrings.exception = "exception".asInstanceOf[typings.gtagJs.gtagJsStrings.exception]
     
     inline def generate_lead: typings.gtagJs.gtagJsStrings.generate_lead = "generate_lead".asInstanceOf[typings.gtagJs.gtagJsStrings.generate_lead]
     
+    inline def join_group: typings.gtagJs.gtagJsStrings.join_group = "join_group".asInstanceOf[typings.gtagJs.gtagJsStrings.join_group]
+    
+    inline def level_end: typings.gtagJs.gtagJsStrings.level_end = "level_end".asInstanceOf[typings.gtagJs.gtagJsStrings.level_end]
+    
+    inline def level_start: typings.gtagJs.gtagJsStrings.level_start = "level_start".asInstanceOf[typings.gtagJs.gtagJsStrings.level_start]
+    
+    inline def level_up: typings.gtagJs.gtagJsStrings.level_up = "level_up".asInstanceOf[typings.gtagJs.gtagJsStrings.level_up]
+    
     inline def login: typings.gtagJs.gtagJsStrings.login = "login".asInstanceOf[typings.gtagJs.gtagJsStrings.login]
     
     inline def page_view: typings.gtagJs.gtagJsStrings.page_view = "page_view".asInstanceOf[typings.gtagJs.gtagJsStrings.page_view]
+    
+    inline def post_score: typings.gtagJs.gtagJsStrings.post_score = "post_score".asInstanceOf[typings.gtagJs.gtagJsStrings.post_score]
     
     inline def purchase: typings.gtagJs.gtagJsStrings.purchase = "purchase".asInstanceOf[typings.gtagJs.gtagJsStrings.purchase]
     
@@ -115,13 +234,27 @@ object Gtag {
     
     inline def select_content: typings.gtagJs.gtagJsStrings.select_content = "select_content".asInstanceOf[typings.gtagJs.gtagJsStrings.select_content]
     
+    inline def select_item: typings.gtagJs.gtagJsStrings.select_item = "select_item".asInstanceOf[typings.gtagJs.gtagJsStrings.select_item]
+    
+    inline def select_promotion: typings.gtagJs.gtagJsStrings.select_promotion = "select_promotion".asInstanceOf[typings.gtagJs.gtagJsStrings.select_promotion]
+    
     inline def set_checkout_option: typings.gtagJs.gtagJsStrings.set_checkout_option = "set_checkout_option".asInstanceOf[typings.gtagJs.gtagJsStrings.set_checkout_option]
     
     inline def share: typings.gtagJs.gtagJsStrings.share = "share".asInstanceOf[typings.gtagJs.gtagJsStrings.share]
     
     inline def sign_up: typings.gtagJs.gtagJsStrings.sign_up = "sign_up".asInstanceOf[typings.gtagJs.gtagJsStrings.sign_up]
     
+    inline def spend_virtual_currency: typings.gtagJs.gtagJsStrings.spend_virtual_currency = "spend_virtual_currency".asInstanceOf[typings.gtagJs.gtagJsStrings.spend_virtual_currency]
+    
     inline def timing_complete: typings.gtagJs.gtagJsStrings.timing_complete = "timing_complete".asInstanceOf[typings.gtagJs.gtagJsStrings.timing_complete]
+    
+    inline def tutorial_begin: typings.gtagJs.gtagJsStrings.tutorial_begin = "tutorial_begin".asInstanceOf[typings.gtagJs.gtagJsStrings.tutorial_begin]
+    
+    inline def tutorial_complete: typings.gtagJs.gtagJsStrings.tutorial_complete = "tutorial_complete".asInstanceOf[typings.gtagJs.gtagJsStrings.tutorial_complete]
+    
+    inline def unlock_achievement: typings.gtagJs.gtagJsStrings.unlock_achievement = "unlock_achievement".asInstanceOf[typings.gtagJs.gtagJsStrings.unlock_achievement]
+    
+    inline def view_cart: typings.gtagJs.gtagJsStrings.view_cart = "view_cart".asInstanceOf[typings.gtagJs.gtagJsStrings.view_cart]
     
     inline def view_item: typings.gtagJs.gtagJsStrings.view_item = "view_item".asInstanceOf[typings.gtagJs.gtagJsStrings.view_item]
     
@@ -227,7 +360,7 @@ object Gtag {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -241,7 +374,7 @@ object Gtag {
       
       inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
       
-      inline def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+      inline def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value*))
       
       inline def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
       
@@ -269,13 +402,31 @@ object Gtag {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.gtagJs.gtagJsStrings.client_id
+    - typings.gtagJs.gtagJsStrings.session_id
+    - typings.gtagJs.gtagJsStrings.gclid
+  */
+  trait FieldNames extends StObject
+  object FieldNames {
+    
+    inline def client_id: typings.gtagJs.gtagJsStrings.client_id = "client_id".asInstanceOf[typings.gtagJs.gtagJsStrings.client_id]
+    
+    inline def gclid: typings.gtagJs.gtagJsStrings.gclid = "gclid".asInstanceOf[typings.gtagJs.gtagJsStrings.gclid]
+    
+    inline def session_id: typings.gtagJs.gtagJsStrings.session_id = "session_id".asInstanceOf[typings.gtagJs.gtagJsStrings.session_id]
+  }
+  
   @js.native
   trait Gtag extends StObject {
     
     def apply(command: config, targetId: String): Unit = js.native
+    def apply(command: config, targetId: String, config: ConfigParams): Unit = js.native
     def apply(command: config, targetId: String, config: ControlParams): Unit = js.native
     def apply(command: config, targetId: String, config: CustomParams): Unit = js.native
     def apply(command: config, targetId: String, config: EventParams): Unit = js.native
+    def apply(command: consent, consentArg: String, consentParams: ConsentParams): Unit = js.native
+    def apply(command: consent, consentArg: ConsentArg, consentParams: ConsentParams): Unit = js.native
     def apply(command: event, eventName: String): Unit = js.native
     def apply(command: event, eventName: String, eventParams: ControlParams): Unit = js.native
     def apply(command: event, eventName: String, eventParams: CustomParams): Unit = js.native
@@ -284,8 +435,25 @@ object Gtag {
     def apply(command: event, eventName: EventNames, eventParams: ControlParams): Unit = js.native
     def apply(command: event, eventName: EventNames, eventParams: CustomParams): Unit = js.native
     def apply(command: event, eventName: EventNames, eventParams: EventParams): Unit = js.native
-    def apply(command: js_, config: Date): Unit = js.native
+    def apply(command: get, targetId: String, fieldName: String): Unit = js.native
+    def apply(
+      command: get,
+      targetId: String,
+      fieldName: String,
+      callback: js.Function1[/* field */ js.UndefOr[String | CustomParams], Any]
+    ): Unit = js.native
+    def apply(command: get, targetId: String, fieldName: FieldNames): Unit = js.native
+    def apply(
+      command: get,
+      targetId: String,
+      fieldName: FieldNames,
+      callback: js.Function1[/* field */ js.UndefOr[String | CustomParams], Any]
+    ): Unit = js.native
+    def apply(command: js_, config: js.Date): Unit = js.native
     def apply(command: set, config: CustomParams): Unit = js.native
+    def apply(command: set, targetId: String, config: String): Unit = js.native
+    def apply(command: set, targetId: String, config: Boolean): Unit = js.native
+    def apply(command: set, targetId: String, config: CustomParams): Unit = js.native
   }
   
   trait Item extends StObject {

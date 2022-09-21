@@ -9,20 +9,20 @@ object mod {
   /* augmented module */
   object koaAugmentingMod {
     
-    trait Context extends StObject {
+    trait DefaultState extends StObject {
       
-      var csrf: String
+      var _csrf: String
     }
-    object Context {
+    object DefaultState {
       
-      inline def apply(csrf: String): Context = {
-        val __obj = js.Dynamic.literal(csrf = csrf.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Context]
+      inline def apply(_csrf: String): DefaultState = {
+        val __obj = js.Dynamic.literal(_csrf = _csrf.asInstanceOf[js.Any])
+        __obj.asInstanceOf[DefaultState]
       }
       
-      extension [Self <: Context](x: Self) {
+      extension [Self <: DefaultState](x: Self) {
         
-        inline def setCsrf(value: String): Self = StObject.set(x, "csrf", value.asInstanceOf[js.Any])
+        inline def set_csrf(value: String): Self = StObject.set(x, "_csrf", value.asInstanceOf[js.Any])
       }
     }
   }

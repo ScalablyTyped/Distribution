@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new credentials object.
   */
-class CognitoIdentityCredentials ()
+open class CognitoIdentityCredentials ()
   extends typings.awsSdk.coreMod.CognitoIdentityCredentials {
   /**
     * Creates a new credentials object with optional configuration.

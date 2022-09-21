@@ -1,23 +1,21 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import typings.geojson.mod.LineString
+import typings.geojson.mod.MultiLineString
+import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.geojson
+import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.polyline
+import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.polyline6
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait DirectionsService extends StObject {
   
-  def getDirections(request: DirectionsRequest): MapiRequest
-}
-object DirectionsService {
-  
-  inline def apply(getDirections: DirectionsRequest => MapiRequest): DirectionsService = {
-    val __obj = js.Dynamic.literal(getDirections = js.Any.fromFunction1(getDirections))
-    __obj.asInstanceOf[DirectionsService]
-  }
-  
-  extension [Self <: DirectionsService](x: Self) {
-    
-    inline def setGetDirections(value: DirectionsRequest => MapiRequest): Self = StObject.set(x, "getDirections", js.Any.fromFunction1(value))
-  }
+  def getDirections(request: DirectionsRequest[polyline | polyline6]): MapiRequest[DirectionsResponse[Polyline]] = js.native
+  @JSName("getDirections")
+  def getDirections_geojson(request: DirectionsRequest[geojson]): MapiRequest[DirectionsResponse[MultiLineString | LineString]] = js.native
+  @JSName("getDirections")
+  def getDirections_polyline(request: DirectionsRequest[polyline]): MapiRequest[DirectionsResponse[Polyline]] = js.native
 }

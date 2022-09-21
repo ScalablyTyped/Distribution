@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait NumberFormatCategory extends StObject
 /**
-  *
   * Represents a category of number formats.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.NumberFormatCategory")
@@ -18,7 +18,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * Accounting formats line up the currency symbols and decimal points in a column.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait accounting
@@ -27,7 +28,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * Currency formats are used for general monetary values. Use Accounting formats to align decimal points in a column.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait currency
@@ -36,7 +38,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * A custom format that is not a part of any category.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait custom
@@ -44,8 +47,9 @@ object NumberFormatCategory extends StObject {
        with NumberFormatCategory
   
   /**
-    * Date formats display date and time serial numbers as date values.  Date formats that begin with an asterisk (*) respond to changes in regional date and time settings that are specified for the operating system. Formats without an asterisk are not affected by operating system settings.
-    *
+    * Date formats display date and time serial numbers as date values. Date formats that begin with an asterisk (*) respond to changes in regional date and time settings that are specified for the operating system. Formats without an asterisk are not affected by operating system settings.
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait date
@@ -54,7 +58,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * Fraction formats display the cell value as a whole number with the remainder rounded to the nearest fraction value.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait fraction
@@ -63,7 +68,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * General format cells have no specific number format.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait general
@@ -72,7 +78,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * Number is used for general display of numbers. Currency and Accounting offer specialized formatting for monetary value.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait number
@@ -81,7 +88,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * Percentage formats multiply the cell value by 100 and displays the result with a percent symbol.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait percentage
@@ -90,7 +98,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * Scientific formats display the cell value as a number between 1 and 10 multiplied by a power of 10.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait scientific
@@ -99,7 +108,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * Special formats are useful for tracking list and database values.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait special
@@ -108,7 +118,8 @@ object NumberFormatCategory extends StObject {
   
   /**
     * Text format cells are treated as text even when a number is in the cell. The cell is displayed exactly as entered.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait text
@@ -116,8 +127,9 @@ object NumberFormatCategory extends StObject {
        with NumberFormatCategory
   
   /**
-    * Time formats display date and time serial numbers as date values.  Time formats that begin with an asterisk (*) respond to changes in regional date and time settings that are specified for the operating system. Formats without an asterisk are not affected by operating system settings.
-    *
+    * Time formats display date and time serial numbers as date values. Time formats that begin with an asterisk (*) respond to changes in regional date and time settings that are specified for the operating system. Formats without an asterisk are not affected by operating system settings.
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait time

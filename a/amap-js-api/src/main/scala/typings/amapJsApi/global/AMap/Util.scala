@@ -73,13 +73,13 @@ object Util {
     * 判断是否数组
     * @param data 判断对象
     */
-  inline def isArray(data: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(data.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+  inline def isArray(data: Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(data.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
   
   /**
     * 判断参数是否为DOM元素
     * @param data 判断对象
     */
-  inline def isDOM(data: js.Any): /* is std.HTMLElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOM")(data.asInstanceOf[js.Any]).asInstanceOf[/* is std.HTMLElement */ Boolean]
+  inline def isDOM(data: Any): /* is std.HTMLElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOM")(data.asInstanceOf[js.Any]).asInstanceOf[/* is std.HTMLElement */ Boolean]
   
   /**
     * 判断一个对象是都为空
@@ -87,11 +87,11 @@ object Util {
     */
   inline def isEmpty(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, js.Any], context: C): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimFrame")(callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ Any, Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ Any, Any], context: C): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimFrame")(callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, js.Any], options: Timeout): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def requestIdleCallback(callback: js.Function1[/* repeated */ Any, Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def requestIdleCallback(callback: js.Function1[/* repeated */ Any, Any], options: Timeout): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * 将16进制RGB转为rgba(R,G,B,A)

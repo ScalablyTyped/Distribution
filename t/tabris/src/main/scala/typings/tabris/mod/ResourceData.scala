@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<keyof Resources, tabris.tabris.Selectable<RawType>> */
-trait ResourceData[Resources /* <: ResourceBaseData[js.Any] */, RawType] extends StObject {
+trait ResourceData[Resources /* <: ResourceBaseData[Any] */, RawType] extends StObject {
   
   var build: Selectable[RawType]
   
@@ -13,12 +13,12 @@ trait ResourceData[Resources /* <: ResourceBaseData[js.Any] */, RawType] extends
 }
 object ResourceData {
   
-  inline def apply[Resources /* <: ResourceBaseData[js.Any] */, RawType](): ResourceData[Resources, RawType] = {
+  inline def apply[Resources /* <: ResourceBaseData[Any] */, RawType](): ResourceData[Resources, RawType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceData[Resources, RawType]]
   }
   
-  extension [Self <: ResourceData[?, ?], Resources /* <: ResourceBaseData[js.Any] */, RawType](x: Self & (ResourceData[Resources, RawType])) {
+  extension [Self <: ResourceData[?, ?], Resources /* <: ResourceBaseData[Any] */, RawType](x: Self & (ResourceData[Resources, RawType])) {
     
     inline def setBuild(value: Selectable[RawType]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

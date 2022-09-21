@@ -33,6 +33,6 @@ object ListWebhooksOutput {
     
     inline def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
     
-    inline def setWebhooksVarargs(value: ListWebhookItem*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
+    inline def setWebhooksVarargs(value: ListWebhookItem*): Self = StObject.set(x, "webhooks", js.Array(value*))
   }
 }

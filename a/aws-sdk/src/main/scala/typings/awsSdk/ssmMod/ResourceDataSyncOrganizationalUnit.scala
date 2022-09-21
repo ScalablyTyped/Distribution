@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceDataSyncOrganizationalUnit extends StObject {
   
   /**
-    * The AWS Organization unit ID data source for the sync.
+    * The Organizations unit ID data source for the sync.
     */
   var OrganizationalUnitId: js.UndefOr[ResourceDataSyncOrganizationalUnitId] = js.undefined
 }

@@ -65,7 +65,7 @@ object Core {
     }
   }
   
-  type DataObject = js.Any
+  type DataObject = Any
   
   type GUID = String
   
@@ -134,13 +134,13 @@ object Core {
       
       inline def setCollisionNodesUndefined: Self = StObject.set(x, "collisionNodes", js.undefined)
       
-      inline def setCollisionNodesVarargs(value: Node*): Self = StObject.set(x, "collisionNodes", js.Array(value :_*))
+      inline def setCollisionNodesVarargs(value: Node*): Self = StObject.set(x, "collisionNodes", js.Array(value*))
       
       inline def setCollisionPaths(value: js.Array[String]): Self = StObject.set(x, "collisionPaths", value.asInstanceOf[js.Any])
       
       inline def setCollisionPathsUndefined: Self = StObject.set(x, "collisionPaths", js.undefined)
       
-      inline def setCollisionPathsVarargs(value: String*): Self = StObject.set(x, "collisionPaths", js.Array(value :_*))
+      inline def setCollisionPathsVarargs(value: String*): Self = StObject.set(x, "collisionPaths", js.Array(value*))
       
       inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
@@ -242,7 +242,7 @@ object Core {
     
     def getNamespace(): Name
     
-    def getNode(id: NodeId, logger: GmeLogger, state: js.Any, storeNode: ResultCallback[Storage]): Node
+    def getNode(id: NodeId, logger: GmeLogger, state: Any, storeNode: ResultCallback[Storage]): Node
     
     def getOwnAttribute(name: Name): OutAttr
     
@@ -293,11 +293,11 @@ object Core {
     /** META */
     def getValidChildrenTypes(): js.Array[NodeId]
     
-    def getValidChildrenTypesDetailed(aspect: Aspect, noFilter: Boolean): Dictionary[js.Any]
+    def getValidChildrenTypesDetailed(aspect: Aspect, noFilter: Boolean): Dictionary[Any]
     
     def getValidPointerNames(): js.Array[Name]
     
-    def getValidSetMemberTypesDetailed(setName: Name): StringDictionary[js.Any]
+    def getValidSetMemberTypesDetailed(setName: Name): StringDictionary[Any]
     
     def getValidSetNames(): js.Array[Name]
     
@@ -317,7 +317,7 @@ object Core {
     
     def isTypeOf(typePath: Path): Boolean
     
-    def isValidAttributeValueOf(name: Name, value: js.Any): Boolean
+    def isValidAttributeValueOf(name: Name, value: Any): Boolean
     
     def isValidChildOf(parentPath: Path): Boolean
     
@@ -362,7 +362,7 @@ object Core {
       getMetaTypeId: () => Node | Null,
       getMixinPaths: () => js.Array[Path],
       getNamespace: () => Name,
-      getNode: (NodeId, GmeLogger, js.Any, ResultCallback[Storage]) => Node,
+      getNode: (NodeId, GmeLogger, Any, ResultCallback[Storage]) => Node,
       getOwnAttribute: Name => OutAttr,
       getOwnAttributeNames: () => js.Array[Name],
       getOwnConstraintNames: () => js.Array[Name],
@@ -387,9 +387,9 @@ object Core {
       getValidAttributeNames: () => js.Array[Name],
       getValidChildrenIds: () => js.Array[NodeId],
       getValidChildrenTypes: () => js.Array[NodeId],
-      getValidChildrenTypesDetailed: (Aspect, Boolean) => Dictionary[js.Any],
+      getValidChildrenTypesDetailed: (Aspect, Boolean) => Dictionary[Any],
       getValidPointerNames: () => js.Array[Name],
-      getValidSetMemberTypesDetailed: Name => StringDictionary[js.Any],
+      getValidSetMemberTypesDetailed: Name => StringDictionary[Any],
       getValidSetNames: () => js.Array[Name],
       getValildAttributeNames: () => js.Array[Name],
       isAbstract: () => Boolean,
@@ -399,7 +399,7 @@ object Core {
       isMetaNode: () => Boolean,
       isReadOnly: () => Boolean,
       isTypeOf: Path => Boolean,
-      isValidAttributeValueOf: (Name, js.Any) => Boolean,
+      isValidAttributeValueOf: (Name, Any) => Boolean,
       isValidChildOf: Path => Boolean,
       isValidNewBase: Path => Boolean,
       isValidNewParent: Path => Boolean,
@@ -473,7 +473,7 @@ object Core {
       
       inline def setGetNamespace(value: () => Name): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
       
-      inline def setGetNode(value: (NodeId, GmeLogger, js.Any, ResultCallback[Storage]) => Node): Self = StObject.set(x, "getNode", js.Any.fromFunction4(value))
+      inline def setGetNode(value: (NodeId, GmeLogger, Any, ResultCallback[Storage]) => Node): Self = StObject.set(x, "getNode", js.Any.fromFunction4(value))
       
       inline def setGetOwnAttribute(value: Name => OutAttr): Self = StObject.set(x, "getOwnAttribute", js.Any.fromFunction1(value))
       
@@ -523,11 +523,11 @@ object Core {
       
       inline def setGetValidChildrenTypes(value: () => js.Array[NodeId]): Self = StObject.set(x, "getValidChildrenTypes", js.Any.fromFunction0(value))
       
-      inline def setGetValidChildrenTypesDetailed(value: (Aspect, Boolean) => Dictionary[js.Any]): Self = StObject.set(x, "getValidChildrenTypesDetailed", js.Any.fromFunction2(value))
+      inline def setGetValidChildrenTypesDetailed(value: (Aspect, Boolean) => Dictionary[Any]): Self = StObject.set(x, "getValidChildrenTypesDetailed", js.Any.fromFunction2(value))
       
       inline def setGetValidPointerNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidPointerNames", js.Any.fromFunction0(value))
       
-      inline def setGetValidSetMemberTypesDetailed(value: Name => StringDictionary[js.Any]): Self = StObject.set(x, "getValidSetMemberTypesDetailed", js.Any.fromFunction1(value))
+      inline def setGetValidSetMemberTypesDetailed(value: Name => StringDictionary[Any]): Self = StObject.set(x, "getValidSetMemberTypesDetailed", js.Any.fromFunction1(value))
       
       inline def setGetValidSetNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidSetNames", js.Any.fromFunction0(value))
       
@@ -547,7 +547,7 @@ object Core {
       
       inline def setIsTypeOf(value: Path => Boolean): Self = StObject.set(x, "isTypeOf", js.Any.fromFunction1(value))
       
-      inline def setIsValidAttributeValueOf(value: (Name, js.Any) => Boolean): Self = StObject.set(x, "isValidAttributeValueOf", js.Any.fromFunction2(value))
+      inline def setIsValidAttributeValueOf(value: (Name, Any) => Boolean): Self = StObject.set(x, "isValidAttributeValueOf", js.Any.fromFunction2(value))
       
       inline def setIsValidChildOf(value: Path => Boolean): Self = StObject.set(x, "isValidChildOf", js.Any.fromFunction1(value))
       

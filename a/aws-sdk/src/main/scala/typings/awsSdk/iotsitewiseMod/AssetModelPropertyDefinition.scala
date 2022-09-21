@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssetModelPropertyDefinition extends StObject {
   
   /**
-    * The data type of the property definition.
+    * The data type of the property definition. If you specify STRUCT, you must also specify dataTypeSpec to identify the type of the structure for this property.
     */
   var dataType: PropertyDataType
+  
+  /**
+    * The data type of the structure for this property. This parameter is required on properties that have the STRUCT data type. The options for this parameter depend on the type of the composite model in which you define this property. Use AWS/ALARM_STATE for alarm state in alarm composite models.
+    */
+  var dataTypeSpec: js.UndefOr[Name] = js.undefined
   
   /**
     * The name of the property definition.
@@ -37,6 +42,10 @@ object AssetModelPropertyDefinition {
   extension [Self <: AssetModelPropertyDefinition](x: Self) {
     
     inline def setDataType(value: PropertyDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeSpec(value: Name): Self = StObject.set(x, "dataTypeSpec", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeSpecUndefined: Self = StObject.set(x, "dataTypeSpec", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

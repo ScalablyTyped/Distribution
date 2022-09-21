@@ -17,6 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.unknown_
   - typings.microsoftGraph.microsoftGraphStrings.jamf
   - typings.microsoftGraph.microsoftGraphStrings.googleCloudDevicePolicyController
+  - typings.microsoftGraph.microsoftGraphStrings.microsoft365ManagedMdm
+  - typings.microsoftGraph.microsoftGraphStrings.msSense
 */
 trait ManagementAgentType extends StObject
 object ManagementAgentType {
@@ -40,6 +42,10 @@ object ManagementAgentType {
   inline def jamf: typings.microsoftGraph.microsoftGraphStrings.jamf = "jamf".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.jamf]
   
   inline def mdm: typings.microsoftGraph.microsoftGraphStrings.mdm = "mdm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mdm]
+  
+  inline def microsoft365ManagedMdm: typings.microsoftGraph.microsoftGraphStrings.microsoft365ManagedMdm = "microsoft365ManagedMdm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.microsoft365ManagedMdm]
+  
+  inline def msSense: typings.microsoftGraph.microsoftGraphStrings.msSense = "msSense".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.msSense]
   
   inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }

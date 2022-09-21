@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.TargetedAnimation")
 @js.native
-class TargetedAnimation ()
+open class TargetedAnimation ()
   extends StObject
      with typings.babylonjs.BABYLON.TargetedAnimation {
   
@@ -28,11 +28,11 @@ class TargetedAnimation ()
     * @returns the JSON object representing the current entity
     */
   /* CompleteClass */
-  override def serialize(): js.Any = js.native
+  override def serialize(): Any = js.native
   
   /**
     * Target to animate
     */
   /* CompleteClass */
-  var target: js.Any = js.native
+  var target: Any = js.native
 }

@@ -80,7 +80,7 @@ object mod {
       
       var ttl: js.UndefOr[Double] = js.undefined
       
-      var variables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+      var variables: js.UndefOr[StringDictionary[Any]] = js.undefined
     }
     object IGrowlMessageConfig {
       
@@ -131,7 +131,7 @@ object mod {
         
         inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
         
-        inline def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+        inline def setVariables(value: StringDictionary[Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
         
         inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
       }

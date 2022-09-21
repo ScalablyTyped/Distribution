@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.SyncChunkFilter")
 @js.native
-class SyncChunkFilter () extends StObject {
+open class SyncChunkFilter () extends StObject {
   def this(args: IncludeExpunged) = this()
   
   var includeExpunged: js.UndefOr[Boolean] = js.native

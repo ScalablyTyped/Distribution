@@ -11,6 +11,11 @@ trait daterange
   extends StObject
      with baseview {
   
+  @JSName("$prepareValue")
+  def $prepareValue(args: Any*): Any = js.native
+  @JSName("$prepareValue")
+  var $prepareValue_Original: WebixCallback = js.native
+  
   def addToRange(dates: String): Unit = js.native
   def addToRange(dates: Date): Unit = js.native
   
@@ -19,22 +24,22 @@ trait daterange
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_daterange: daterangeConfig = js.native
   
   def detachEvent(id: String): Unit = js.native
   
-  def getValue(): js.Any = js.native
+  def getValue(): Any = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def refresh(): Unit = js.native
   
-  def setValue(range: js.Any): Unit = js.native
+  def setValue(range: Any): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

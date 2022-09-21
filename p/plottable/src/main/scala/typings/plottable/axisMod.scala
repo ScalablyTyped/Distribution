@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.plottable.componentMod.Component
 import typings.plottable.formattersMod.Formatter
 import typings.plottable.interfacesMod.SimpleSelection
+import typings.plottable.labelMod.LabelFontSizePx
 import typings.plottable.plottableStrings.bottom
 import typings.plottable.plottableStrings.left
 import typings.plottable.plottableStrings.right
@@ -18,7 +19,7 @@ object axisMod {
   
   @JSImport("plottable/build/src/axes/axis", "Axis")
   @js.native
-  class Axis[D] protected () extends Component {
+  open class Axis[D] protected () extends Component {
     /**
       * Constructs an Axis.
       * An Axis is a visual representation of a Scale.
@@ -29,31 +30,33 @@ object axisMod {
       */
     def this(scale: Scale[D, Double], orientation: AxisOrientation) = this()
     
-    /* private */ var _annotatedTicks: js.Any = js.native
+    /* private */ var _annotatedTicks: Any = js.native
     
-    /* private */ def _annotatedTicksToRender(): js.Any = js.native
+    /* private */ var _annotatedTicksToRender: Any = js.native
     
-    /* private */ var _annotationContainer: js.Any = js.native
+    /* private */ var _annotationContainer: Any = js.native
     
-    /* private */ var _annotationFormatter: js.Any = js.native
+    /* private */ var _annotationFormatter: Any = js.native
     
-    /* private */ var _annotationMeasurer: js.Any = js.native
+    /* private */ var _annotationMeasurer: Any = js.native
     
-    /* private */ var _annotationTierCount: js.Any = js.native
+    /* private */ var _annotationTierCount: Any = js.native
     
     /* protected */ def _annotationTierHeight(): Double = js.native
     
-    /* private */ def _annotationToTier(measurements: js.Any): js.Any = js.native
+    /* private */ var _annotationToTier: Any = js.native
     
-    /* private */ var _annotationWriter: js.Any = js.native
+    /* private */ var _annotationWriter: Any = js.native
     
-    /* private */ var _annotationsEnabled: js.Any = js.native
+    /* private */ var _annotationsEnabled: Any = js.native
     
     /* protected */ var _baseline: SimpleSelection[Unit] = js.native
     
     /* protected */ def _computeHeight(): Double = js.native
     
     /* protected */ def _computeWidth(): Double = js.native
+    
+    /* private */ var _configureTickLabelContainer: Any = js.native
     
     /**
       * Retrieves the size of the core pieces.
@@ -64,14 +67,14 @@ object axisMod {
     
     /* protected */ def _drawAnnotations(): Unit = js.native
     
-    /* private */ var _endTickLength: js.Any = js.native
+    /* private */ var _endTickLength: Any = js.native
     
-    /* private */ var _formatter: js.Any = js.native
+    /* private */ var _formatter: Any = js.native
     
     /* protected */ def _generateBaselineAttrHash(): StringDictionary[Double] = js.native
     
-    /* protected */ def _generateTickMarkAttrHash(): StringDictionary[Double | (js.Function1[/* d */ js.Any, Double])] = js.native
-    /* protected */ def _generateTickMarkAttrHash(isEndTickMark: Boolean): StringDictionary[Double | (js.Function1[/* d */ js.Any, Double])] = js.native
+    /* protected */ def _generateTickMarkAttrHash(): StringDictionary[Double | (js.Function1[/* d */ Any, Double])] = js.native
+    /* protected */ def _generateTickMarkAttrHash(isEndTickMark: Boolean): StringDictionary[Double | (js.Function1[/* d */ Any, Double])] = js.native
     
     /* protected */ def _getTickValues(): js.Array[D] = js.native
     
@@ -86,9 +89,9 @@ object axisMod {
       */
     /* protected */ def _hideTickMarksWithoutLabel(): Unit = js.native
     
-    /* private */ var _innerTickLength: js.Any = js.native
+    /* private */ var _innerTickLength: Any = js.native
     
-    /* private */ var _margin: js.Any = js.native
+    /* private */ var _margin: Any = js.native
     
     /**
       * Gets the maximum pixel length over all ticks on this axis.
@@ -96,13 +99,13 @@ object axisMod {
       */
     /* protected */ def _maxLabelTickLength(): Double = js.native
     
-    /* private */ var _orientation: js.Any = js.native
+    /* private */ var _orientation: Any = js.native
     
     /* protected */ def _removeAnnotations(): Unit = js.native
     
     /* protected */ def _rescale(): Unit = js.native
     
-    /* private */ var _rescaleCallback: js.Any = js.native
+    /* private */ var _rescaleCallback: Any = js.native
     
     /* protected */ var _scale: Scale[D, Double] = js.native
     
@@ -112,11 +115,17 @@ object axisMod {
     
     /* protected */ def _showAllTickMarks(): Unit = js.native
     
-    /* private */ var _showEndTickLabels: js.Any = js.native
+    /* private */ var _showEndTickLabels: Any = js.native
     
     /* protected */ var _tickLabelContainer: SimpleSelection[Unit] = js.native
     
-    /* private */ var _tickLabelPadding: js.Any = js.native
+    /**
+      * `protected` instead of `private` to accommodate time axes which draw their own label containers
+      * and need access to this value.
+      */
+    /* protected */ var _tickLabelFontSize: LabelFontSizePx = js.native
+    
+    /* private */ var _tickLabelPadding: Any = js.native
     
     /* protected */ var _tickMarkContainer: SimpleSelection[Unit] = js.native
     
@@ -261,7 +270,16 @@ object axisMod {
       *
       * @param {Element} element
       */
-    def tickLabelDataOnElement(element: Element): js.Object = js.native
+    def tickLabelDataOnElement(element: Element): Any = js.native
+    
+    /**
+      * Get the label font size in px.
+      */
+    def tickLabelFontSize(): LabelFontSizePx = js.native
+    /**
+      * Set the label font size.
+      */
+    def tickLabelFontSize(fontSize: LabelFontSizePx): this.type = js.native
     
     /**
       * Gets the padding between each tick mark and its associated label in pixels.
@@ -340,15 +358,15 @@ object axisMod {
     
     @JSImport("plottable/build/src/axes/axis", "Axis._ANNOTATION_LABEL_PADDING")
     @js.native
-    def _ANNOTATION_LABEL_PADDING: js.Any = js.native
-    inline def _ANNOTATION_LABEL_PADDING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANNOTATION_LABEL_PADDING")(x.asInstanceOf[js.Any])
+    def _ANNOTATION_LABEL_PADDING: Any = js.native
+    inline def _ANNOTATION_LABEL_PADDING_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANNOTATION_LABEL_PADDING")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.Bottom */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.left
-    - typings.plottable.plottableStrings.right
     - typings.plottable.plottableStrings.top
     - typings.plottable.plottableStrings.bottom
+    - typings.plottable.plottableStrings.right
   */
   trait AxisOrientation extends StObject
   object AxisOrientation {

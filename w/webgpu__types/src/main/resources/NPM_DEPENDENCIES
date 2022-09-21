@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@webgpu/types" : "0.1.21"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@webgpu/types" : "0.1.21"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

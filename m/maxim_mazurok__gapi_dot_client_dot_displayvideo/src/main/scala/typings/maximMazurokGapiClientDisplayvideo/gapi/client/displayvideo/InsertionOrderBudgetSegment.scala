@@ -12,7 +12,7 @@ trait InsertionOrderBudgetSegment extends StObject {
     */
   var budgetAmountMicros: js.UndefOr[String] = js.undefined
   
-  /** The ID of the campaign budget linked to this insertion order budget segment. */
+  /** The budget_id of the campaign budget that this insertion order budget segment is a part of. */
   var campaignBudgetId: js.UndefOr[String] = js.undefined
   
   /**

@@ -4,16 +4,7 @@ import typings.emscripten.Emscripten.EnvironmentType
 import typings.emscripten.Emscripten.WebAssemblyExports
 import typings.emscripten.Emscripten.WebAssemblyImports
 import typings.emscripten.WebAssembly.Module
-import typings.std.ArrayBuffer
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
 import typings.std.MessageEvent
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,29 +14,29 @@ trait EmscriptenModule extends StObject {
   
   var FAST_MEMORY: Double
   
-  var FHEAP: Float64Array
+  var FHEAP: js.typedarray.Float64Array
   
   // USE_TYPED_ARRAYS == 1
-  var HEAP: Int32Array
+  var HEAP: js.typedarray.Int32Array
   
-  var HEAP16: Int16Array
+  var HEAP16: js.typedarray.Int16Array
   
-  var HEAP32: Int32Array
+  var HEAP32: js.typedarray.Int32Array
   
   // USE_TYPED_ARRAYS == 2
-  var HEAP8: Int8Array
+  var HEAP8: js.typedarray.Int8Array
   
-  var HEAPF32: Float32Array
+  var HEAPF32: js.typedarray.Float32Array
   
-  var HEAPF64: Float64Array
+  var HEAPF64: js.typedarray.Float64Array
   
-  var HEAPU16: Uint16Array
+  var HEAPU16: js.typedarray.Uint16Array
   
-  var HEAPU32: Uint32Array
+  var HEAPU32: js.typedarray.Uint32Array
   
-  var HEAPU8: Uint8Array
+  var HEAPU8: js.typedarray.Uint8Array
   
-  var IHEAP: Int32Array
+  var IHEAP: js.typedarray.Int32Array
   
   var TOTAL_MEMORY: Double
   
@@ -55,15 +46,15 @@ trait EmscriptenModule extends StObject {
   
   def _malloc(size: Double): Double
   
-  def addOnExit(cb: js.Function0[js.Any]): Unit
+  def addOnExit(cb: js.Function0[Any]): Unit
   
-  def addOnInit(cb: js.Function0[js.Any]): Unit
+  def addOnInit(cb: js.Function0[Any]): Unit
   
-  def addOnPostRun(cb: js.Function0[js.Any]): Unit
+  def addOnPostRun(cb: js.Function0[Any]): Unit
   
-  def addOnPreMain(cb: js.Function0[js.Any]): Unit
+  def addOnPreMain(cb: js.Function0[Any]): Unit
   
-  def addOnPreRun(cb: js.Function0[js.Any]): Unit
+  def addOnPreRun(cb: js.Function0[Any]): Unit
   
   var arguments: js.Array[String]
   
@@ -73,7 +64,7 @@ trait EmscriptenModule extends StObject {
   
   var filePackagePrefixURL: String
   
-  def getPreloadedPackage(remotePackageName: String, remotePackageSize: Double): ArrayBuffer
+  def getPreloadedPackage(remotePackageName: String, remotePackageSize: Double): js.typedarray.ArrayBuffer
   
   def instantiateWasm(imports: WebAssemblyImports, successCallback: js.Function1[/* module */ Module, Unit]): WebAssemblyExports
   
@@ -85,9 +76,9 @@ trait EmscriptenModule extends StObject {
   
   var noInitialRun: Boolean
   
-  def onAbort(what: js.Any): Unit
+  def onAbort(what: Any): Unit
   
-  def onCustomMessage(event: MessageEvent[js.Any]): Unit
+  def onCustomMessage(event: MessageEvent[Any]): Unit
   
   def onRuntimeInitialized(): Unit
   
@@ -99,62 +90,62 @@ trait EmscriptenModule extends StObject {
   
   var preinitializedWebGLContext: WebGLRenderingContext
   
-  var preloadedAudios: js.Any
+  var preloadedAudios: Any
   
-  var preloadedImages: js.Any
+  var preloadedImages: Any
   
   def print(str: String): Unit
   
   def printErr(str: String): Unit
   
-  var wasmBinary: ArrayBuffer
+  var wasmBinary: js.typedarray.ArrayBuffer
 }
 object EmscriptenModule {
   
   inline def apply(
     FAST_MEMORY: Double,
-    FHEAP: Float64Array,
-    HEAP: Int32Array,
-    HEAP16: Int16Array,
-    HEAP32: Int32Array,
-    HEAP8: Int8Array,
-    HEAPF32: Float32Array,
-    HEAPF64: Float64Array,
-    HEAPU16: Uint16Array,
-    HEAPU32: Uint32Array,
-    HEAPU8: Uint8Array,
-    IHEAP: Int32Array,
+    FHEAP: js.typedarray.Float64Array,
+    HEAP: js.typedarray.Int32Array,
+    HEAP16: js.typedarray.Int16Array,
+    HEAP32: js.typedarray.Int32Array,
+    HEAP8: js.typedarray.Int8Array,
+    HEAPF32: js.typedarray.Float32Array,
+    HEAPF64: js.typedarray.Float64Array,
+    HEAPU16: js.typedarray.Uint16Array,
+    HEAPU32: js.typedarray.Uint32Array,
+    HEAPU8: js.typedarray.Uint8Array,
+    IHEAP: js.typedarray.Int32Array,
     TOTAL_MEMORY: Double,
     TOTAL_STACK: Double,
     _free: Double => Unit,
     _malloc: Double => Double,
-    addOnExit: js.Function0[js.Any] => Unit,
-    addOnInit: js.Function0[js.Any] => Unit,
-    addOnPostRun: js.Function0[js.Any] => Unit,
-    addOnPreMain: js.Function0[js.Any] => Unit,
-    addOnPreRun: js.Function0[js.Any] => Unit,
+    addOnExit: js.Function0[Any] => Unit,
+    addOnInit: js.Function0[Any] => Unit,
+    addOnPostRun: js.Function0[Any] => Unit,
+    addOnPreMain: js.Function0[Any] => Unit,
+    addOnPreRun: js.Function0[Any] => Unit,
     arguments: js.Array[String],
     destroy: js.Object => Unit,
     environment: EnvironmentType,
     filePackagePrefixURL: String,
-    getPreloadedPackage: (String, Double) => ArrayBuffer,
+    getPreloadedPackage: (String, Double) => js.typedarray.ArrayBuffer,
     instantiateWasm: (WebAssemblyImports, js.Function1[/* module */ Module, Unit]) => WebAssemblyExports,
     locateFile: (String, String) => String,
     logReadFiles: Boolean,
     noExitRuntime: Boolean,
     noInitialRun: Boolean,
-    onAbort: js.Any => Unit,
-    onCustomMessage: MessageEvent[js.Any] => Unit,
+    onAbort: Any => Unit,
+    onCustomMessage: MessageEvent[Any] => Unit,
     onRuntimeInitialized: () => Unit,
     postRun: js.Array[js.Function0[Unit]],
     preInit: js.Array[js.Function0[Unit]],
     preRun: js.Array[js.Function0[Unit]],
     preinitializedWebGLContext: WebGLRenderingContext,
-    preloadedAudios: js.Any,
-    preloadedImages: js.Any,
+    preloadedAudios: Any,
+    preloadedImages: Any,
     print: String => Unit,
     printErr: String => Unit,
-    wasmBinary: ArrayBuffer
+    wasmBinary: js.typedarray.ArrayBuffer
   ): EmscriptenModule = {
     val __obj = js.Dynamic.literal(FAST_MEMORY = FAST_MEMORY.asInstanceOf[js.Any], FHEAP = FHEAP.asInstanceOf[js.Any], HEAP = HEAP.asInstanceOf[js.Any], HEAP16 = HEAP16.asInstanceOf[js.Any], HEAP32 = HEAP32.asInstanceOf[js.Any], HEAP8 = HEAP8.asInstanceOf[js.Any], HEAPF32 = HEAPF32.asInstanceOf[js.Any], HEAPF64 = HEAPF64.asInstanceOf[js.Any], HEAPU16 = HEAPU16.asInstanceOf[js.Any], HEAPU32 = HEAPU32.asInstanceOf[js.Any], HEAPU8 = HEAPU8.asInstanceOf[js.Any], IHEAP = IHEAP.asInstanceOf[js.Any], TOTAL_MEMORY = TOTAL_MEMORY.asInstanceOf[js.Any], TOTAL_STACK = TOTAL_STACK.asInstanceOf[js.Any], _free = js.Any.fromFunction1(_free), _malloc = js.Any.fromFunction1(_malloc), addOnExit = js.Any.fromFunction1(addOnExit), addOnInit = js.Any.fromFunction1(addOnInit), addOnPostRun = js.Any.fromFunction1(addOnPostRun), addOnPreMain = js.Any.fromFunction1(addOnPreMain), addOnPreRun = js.Any.fromFunction1(addOnPreRun), arguments = arguments.asInstanceOf[js.Any], destroy = js.Any.fromFunction1(destroy), environment = environment.asInstanceOf[js.Any], filePackagePrefixURL = filePackagePrefixURL.asInstanceOf[js.Any], getPreloadedPackage = js.Any.fromFunction2(getPreloadedPackage), instantiateWasm = js.Any.fromFunction2(instantiateWasm), locateFile = js.Any.fromFunction2(locateFile), logReadFiles = logReadFiles.asInstanceOf[js.Any], noExitRuntime = noExitRuntime.asInstanceOf[js.Any], noInitialRun = noInitialRun.asInstanceOf[js.Any], onAbort = js.Any.fromFunction1(onAbort), onCustomMessage = js.Any.fromFunction1(onCustomMessage), onRuntimeInitialized = js.Any.fromFunction0(onRuntimeInitialized), postRun = postRun.asInstanceOf[js.Any], preInit = preInit.asInstanceOf[js.Any], preRun = preRun.asInstanceOf[js.Any], preinitializedWebGLContext = preinitializedWebGLContext.asInstanceOf[js.Any], preloadedAudios = preloadedAudios.asInstanceOf[js.Any], preloadedImages = preloadedImages.asInstanceOf[js.Any], print = js.Any.fromFunction1(print), printErr = js.Any.fromFunction1(printErr), wasmBinary = wasmBinary.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmscriptenModule]
@@ -162,19 +153,19 @@ object EmscriptenModule {
   
   extension [Self <: EmscriptenModule](x: Self) {
     
-    inline def setAddOnExit(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnExit", js.Any.fromFunction1(value))
+    inline def setAddOnExit(value: js.Function0[Any] => Unit): Self = StObject.set(x, "addOnExit", js.Any.fromFunction1(value))
     
-    inline def setAddOnInit(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnInit", js.Any.fromFunction1(value))
+    inline def setAddOnInit(value: js.Function0[Any] => Unit): Self = StObject.set(x, "addOnInit", js.Any.fromFunction1(value))
     
-    inline def setAddOnPostRun(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnPostRun", js.Any.fromFunction1(value))
+    inline def setAddOnPostRun(value: js.Function0[Any] => Unit): Self = StObject.set(x, "addOnPostRun", js.Any.fromFunction1(value))
     
-    inline def setAddOnPreMain(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnPreMain", js.Any.fromFunction1(value))
+    inline def setAddOnPreMain(value: js.Function0[Any] => Unit): Self = StObject.set(x, "addOnPreMain", js.Any.fromFunction1(value))
     
-    inline def setAddOnPreRun(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnPreRun", js.Any.fromFunction1(value))
+    inline def setAddOnPreRun(value: js.Function0[Any] => Unit): Self = StObject.set(x, "addOnPreRun", js.Any.fromFunction1(value))
     
     inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setDestroy(value: js.Object => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
@@ -182,31 +173,31 @@ object EmscriptenModule {
     
     inline def setFAST_MEMORY(value: Double): Self = StObject.set(x, "FAST_MEMORY", value.asInstanceOf[js.Any])
     
-    inline def setFHEAP(value: Float64Array): Self = StObject.set(x, "FHEAP", value.asInstanceOf[js.Any])
+    inline def setFHEAP(value: js.typedarray.Float64Array): Self = StObject.set(x, "FHEAP", value.asInstanceOf[js.Any])
     
     inline def setFilePackagePrefixURL(value: String): Self = StObject.set(x, "filePackagePrefixURL", value.asInstanceOf[js.Any])
     
-    inline def setGetPreloadedPackage(value: (String, Double) => ArrayBuffer): Self = StObject.set(x, "getPreloadedPackage", js.Any.fromFunction2(value))
+    inline def setGetPreloadedPackage(value: (String, Double) => js.typedarray.ArrayBuffer): Self = StObject.set(x, "getPreloadedPackage", js.Any.fromFunction2(value))
     
-    inline def setHEAP(value: Int32Array): Self = StObject.set(x, "HEAP", value.asInstanceOf[js.Any])
+    inline def setHEAP(value: js.typedarray.Int32Array): Self = StObject.set(x, "HEAP", value.asInstanceOf[js.Any])
     
-    inline def setHEAP16(value: Int16Array): Self = StObject.set(x, "HEAP16", value.asInstanceOf[js.Any])
+    inline def setHEAP16(value: js.typedarray.Int16Array): Self = StObject.set(x, "HEAP16", value.asInstanceOf[js.Any])
     
-    inline def setHEAP32(value: Int32Array): Self = StObject.set(x, "HEAP32", value.asInstanceOf[js.Any])
+    inline def setHEAP32(value: js.typedarray.Int32Array): Self = StObject.set(x, "HEAP32", value.asInstanceOf[js.Any])
     
-    inline def setHEAP8(value: Int8Array): Self = StObject.set(x, "HEAP8", value.asInstanceOf[js.Any])
+    inline def setHEAP8(value: js.typedarray.Int8Array): Self = StObject.set(x, "HEAP8", value.asInstanceOf[js.Any])
     
-    inline def setHEAPF32(value: Float32Array): Self = StObject.set(x, "HEAPF32", value.asInstanceOf[js.Any])
+    inline def setHEAPF32(value: js.typedarray.Float32Array): Self = StObject.set(x, "HEAPF32", value.asInstanceOf[js.Any])
     
-    inline def setHEAPF64(value: Float64Array): Self = StObject.set(x, "HEAPF64", value.asInstanceOf[js.Any])
+    inline def setHEAPF64(value: js.typedarray.Float64Array): Self = StObject.set(x, "HEAPF64", value.asInstanceOf[js.Any])
     
-    inline def setHEAPU16(value: Uint16Array): Self = StObject.set(x, "HEAPU16", value.asInstanceOf[js.Any])
+    inline def setHEAPU16(value: js.typedarray.Uint16Array): Self = StObject.set(x, "HEAPU16", value.asInstanceOf[js.Any])
     
-    inline def setHEAPU32(value: Uint32Array): Self = StObject.set(x, "HEAPU32", value.asInstanceOf[js.Any])
+    inline def setHEAPU32(value: js.typedarray.Uint32Array): Self = StObject.set(x, "HEAPU32", value.asInstanceOf[js.Any])
     
-    inline def setHEAPU8(value: Uint8Array): Self = StObject.set(x, "HEAPU8", value.asInstanceOf[js.Any])
+    inline def setHEAPU8(value: js.typedarray.Uint8Array): Self = StObject.set(x, "HEAPU8", value.asInstanceOf[js.Any])
     
-    inline def setIHEAP(value: Int32Array): Self = StObject.set(x, "IHEAP", value.asInstanceOf[js.Any])
+    inline def setIHEAP(value: js.typedarray.Int32Array): Self = StObject.set(x, "IHEAP", value.asInstanceOf[js.Any])
     
     inline def setInstantiateWasm(value: (WebAssemblyImports, js.Function1[/* module */ Module, Unit]) => WebAssemblyExports): Self = StObject.set(x, "instantiateWasm", js.Any.fromFunction2(value))
     
@@ -218,29 +209,29 @@ object EmscriptenModule {
     
     inline def setNoInitialRun(value: Boolean): Self = StObject.set(x, "noInitialRun", value.asInstanceOf[js.Any])
     
-    inline def setOnAbort(value: js.Any => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+    inline def setOnAbort(value: Any => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
-    inline def setOnCustomMessage(value: MessageEvent[js.Any] => Unit): Self = StObject.set(x, "onCustomMessage", js.Any.fromFunction1(value))
+    inline def setOnCustomMessage(value: MessageEvent[Any] => Unit): Self = StObject.set(x, "onCustomMessage", js.Any.fromFunction1(value))
     
     inline def setOnRuntimeInitialized(value: () => Unit): Self = StObject.set(x, "onRuntimeInitialized", js.Any.fromFunction0(value))
     
     inline def setPostRun(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "postRun", value.asInstanceOf[js.Any])
     
-    inline def setPostRunVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "postRun", js.Array(value :_*))
+    inline def setPostRunVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "postRun", js.Array(value*))
     
     inline def setPreInit(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "preInit", value.asInstanceOf[js.Any])
     
-    inline def setPreInitVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "preInit", js.Array(value :_*))
+    inline def setPreInitVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "preInit", js.Array(value*))
     
     inline def setPreRun(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "preRun", value.asInstanceOf[js.Any])
     
-    inline def setPreRunVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "preRun", js.Array(value :_*))
+    inline def setPreRunVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "preRun", js.Array(value*))
     
     inline def setPreinitializedWebGLContext(value: WebGLRenderingContext): Self = StObject.set(x, "preinitializedWebGLContext", value.asInstanceOf[js.Any])
     
-    inline def setPreloadedAudios(value: js.Any): Self = StObject.set(x, "preloadedAudios", value.asInstanceOf[js.Any])
+    inline def setPreloadedAudios(value: Any): Self = StObject.set(x, "preloadedAudios", value.asInstanceOf[js.Any])
     
-    inline def setPreloadedImages(value: js.Any): Self = StObject.set(x, "preloadedImages", value.asInstanceOf[js.Any])
+    inline def setPreloadedImages(value: Any): Self = StObject.set(x, "preloadedImages", value.asInstanceOf[js.Any])
     
     inline def setPrint(value: String => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
     
@@ -250,7 +241,7 @@ object EmscriptenModule {
     
     inline def setTOTAL_STACK(value: Double): Self = StObject.set(x, "TOTAL_STACK", value.asInstanceOf[js.Any])
     
-    inline def setWasmBinary(value: ArrayBuffer): Self = StObject.set(x, "wasmBinary", value.asInstanceOf[js.Any])
+    inline def setWasmBinary(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "wasmBinary", value.asInstanceOf[js.Any])
     
     inline def set_free(value: Double => Unit): Self = StObject.set(x, "_free", js.Any.fromFunction1(value))
     

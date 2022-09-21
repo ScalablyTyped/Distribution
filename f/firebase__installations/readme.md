@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__installations
 
-Typings are for version 0.4.19
+Typings are for version 0.5.12
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 0.4.19
 | ------------------ | :-------------: |
 | Full name          | @firebase/installations |
 | Keywords           | - |
-| # releases         | 1257 |
-| # dependents       | 12 |
-| # downloads        | 32302781 |
-| # stars            | 0 |
+| # releases         | 1249 |
+| # dependents       | 0.0 |
+| # downloads        | 5283921.666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

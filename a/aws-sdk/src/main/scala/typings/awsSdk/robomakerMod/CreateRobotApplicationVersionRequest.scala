@@ -15,6 +15,16 @@ trait CreateRobotApplicationVersionRequest extends StObject {
     * The current revision id for the robot application. If you provide a value and it matches the latest revision ID, a new version will be created.
     */
   var currentRevisionId: js.UndefOr[RevisionId] = js.undefined
+  
+  /**
+    * A SHA256 identifier for the Docker image that you use for your robot application.
+    */
+  var imageDigest: js.UndefOr[ImageDigest] = js.undefined
+  
+  /**
+    * The Amazon S3 identifier for the zip file bundle that you use for your robot application.
+    */
+  var s3Etags: js.UndefOr[S3Etags] = js.undefined
 }
 object CreateRobotApplicationVersionRequest {
   
@@ -30,5 +40,15 @@ object CreateRobotApplicationVersionRequest {
     inline def setCurrentRevisionId(value: RevisionId): Self = StObject.set(x, "currentRevisionId", value.asInstanceOf[js.Any])
     
     inline def setCurrentRevisionIdUndefined: Self = StObject.set(x, "currentRevisionId", js.undefined)
+    
+    inline def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
+    
+    inline def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
+    
+    inline def setS3Etags(value: S3Etags): Self = StObject.set(x, "s3Etags", value.asInstanceOf[js.Any])
+    
+    inline def setS3EtagsUndefined: Self = StObject.set(x, "s3Etags", js.undefined)
+    
+    inline def setS3EtagsVarargs(value: S3Etag*): Self = StObject.set(x, "s3Etags", js.Array(value*))
   }
 }

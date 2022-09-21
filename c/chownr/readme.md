@@ -10,10 +10,10 @@ like `chown -R`
 | ------------------ | :-------------: |
 | Full name          | chownr |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 122 |
-| # downloads        | 846913487 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3280134633333333E8 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/chownr#readme)

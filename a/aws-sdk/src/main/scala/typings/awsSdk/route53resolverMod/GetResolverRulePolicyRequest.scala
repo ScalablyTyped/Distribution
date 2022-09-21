@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResolverRulePolicyRequest extends StObject {
   
   /**
-    * The ID of the Resolver rule policy that you want to get information about.
+    * The ID of the Resolver rule that you want to get the Resolver rule policy for.
     */
   var Arn: typings.awsSdk.route53resolverMod.Arn
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for markdown-to-jsx
 
-Typings are for version 6.11
+Typings are for version 7.1.7
 
 ## Library description:
 Convert markdown to JSX with ease for React and React-like projects. Super lightweight and highly configurable.
@@ -10,10 +10,10 @@ Convert markdown to JSX with ease for React and React-like projects. Super light
 | ------------------ | :-------------: |
 | Full name          | markdown-to-jsx |
 | Keywords           | markdown, markdown converter, react, preact, jsx, html |
-| # releases         | 19 |
-| # dependents       | 112 |
-| # downloads        | 94404442 |
-| # stars            | 4 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9323211666666668E7 |
+| # stars            | 1408.0 |
 
 ## Links
 - [Homepage](https://probablyup.github.io/markdown-to-jsx)
@@ -24,7 +24,7 @@ Convert markdown to JSX with ease for React and React-like projects. Super light
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -10,7 +10,7 @@ trait IgGridUpdatingRowEditDialogOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the animation duration for the opening and closing operations.

@@ -5,14 +5,15 @@ import typings.std.stdStrings.`var`
 import typings.std.stdStrings.a
 import typings.std.stdStrings.abbr
 import typings.std.stdStrings.address
-import typings.std.stdStrings.applet
+import typings.std.stdStrings.animate
+import typings.std.stdStrings.animateMotion
+import typings.std.stdStrings.animateTransform
 import typings.std.stdStrings.area
 import typings.std.stdStrings.article
 import typings.std.stdStrings.aside
 import typings.std.stdStrings.audio
 import typings.std.stdStrings.b
 import typings.std.stdStrings.base
-import typings.std.stdStrings.basefont
 import typings.std.stdStrings.bdi
 import typings.std.stdStrings.bdo
 import typings.std.stdStrings.blockquote
@@ -36,7 +37,6 @@ import typings.std.stdStrings.desc
 import typings.std.stdStrings.details
 import typings.std.stdStrings.dfn
 import typings.std.stdStrings.dialog
-import typings.std.stdStrings.dir
 import typings.std.stdStrings.div
 import typings.std.stdStrings.dl
 import typings.std.stdStrings.dt
@@ -51,6 +51,7 @@ import typings.std.stdStrings.feConvolveMatrix
 import typings.std.stdStrings.feDiffuseLighting
 import typings.std.stdStrings.feDisplacementMap
 import typings.std.stdStrings.feDistantLight
+import typings.std.stdStrings.feDropShadow
 import typings.std.stdStrings.feFlood
 import typings.std.stdStrings.feFuncA
 import typings.std.stdStrings.feFuncB
@@ -71,12 +72,9 @@ import typings.std.stdStrings.fieldset
 import typings.std.stdStrings.figcaption
 import typings.std.stdStrings.figure
 import typings.std.stdStrings.filter
-import typings.std.stdStrings.font
 import typings.std.stdStrings.footer
 import typings.std.stdStrings.foreignObject
 import typings.std.stdStrings.form
-import typings.std.stdStrings.frame
-import typings.std.stdStrings.frameset
 import typings.std.stdStrings.fullscreenchange
 import typings.std.stdStrings.fullscreenerror
 import typings.std.stdStrings.g
@@ -110,12 +108,12 @@ import typings.std.stdStrings.main
 import typings.std.stdStrings.map
 import typings.std.stdStrings.mark
 import typings.std.stdStrings.marker
-import typings.std.stdStrings.marquee
 import typings.std.stdStrings.mask
 import typings.std.stdStrings.menu
 import typings.std.stdStrings.meta
 import typings.std.stdStrings.metadata
 import typings.std.stdStrings.meter
+import typings.std.stdStrings.mpath
 import typings.std.stdStrings.nav
 import typings.std.stdStrings.noscript
 import typings.std.stdStrings.ol
@@ -123,7 +121,6 @@ import typings.std.stdStrings.optgroup
 import typings.std.stdStrings.option
 import typings.std.stdStrings.output
 import typings.std.stdStrings.p
-import typings.std.stdStrings.param
 import typings.std.stdStrings.path
 import typings.std.stdStrings.pattern
 import typings.std.stdStrings.picture
@@ -142,6 +139,7 @@ import typings.std.stdStrings.samp
 import typings.std.stdStrings.script
 import typings.std.stdStrings.section
 import typings.std.stdStrings.select
+import typings.std.stdStrings.set
 import typings.std.stdStrings.slot
 import typings.std.stdStrings.small
 import typings.std.stdStrings.source
@@ -181,74 +179,95 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element. */
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.std.EventTarget because Already inherited
+- typings.std.Node because Already inherited
+- typings.std.ParentNode because var conflicts: nodeValue, textContent. Inlined childElementCount, children, firstElementChild, lastElementChild, append, prepend, querySelector_a, querySelector_abbr, querySelector_address, querySelector_area, querySelector_article, querySelector_aside, querySelector_audio, querySelector_b, querySelector_base, querySelector_bdi, querySelector_bdo, querySelector_blockquote, querySelector_body, querySelector_br, querySelector_button, querySelector_canvas, querySelector_caption, querySelector_cite, querySelector_code, querySelector_col, querySelector_colgroup, querySelector_data, querySelector_datalist, querySelector_dd, querySelector_del, querySelector_details, querySelector_dfn, querySelector_dialog, querySelector_div, querySelector_dl, querySelector_dt, querySelector_em, querySelector_embed, querySelector_fieldset, querySelector_figcaption, querySelector_figure, querySelector_footer, querySelector_form, querySelector_h1, querySelector_h2, querySelector_h3, querySelector_h4, querySelector_h5, querySelector_h6, querySelector_head, querySelector_header, querySelector_hgroup, querySelector_hr, querySelector_html, querySelector_i, querySelector_iframe, querySelector_img, querySelector_input, querySelector_ins, querySelector_kbd, querySelector_label, querySelector_legend, querySelector_li, querySelector_link, querySelector_main, querySelector_map, querySelector_mark, querySelector_menu, querySelector_meta, querySelector_meter, querySelector_nav, querySelector_noscript, querySelector_object, querySelector_ol, querySelector_optgroup, querySelector_option, querySelector_output, querySelector_p, querySelector_picture, querySelector_pre, querySelector_progress, querySelector_q, querySelector_rp, querySelector_rt, querySelector_ruby, querySelector_s, querySelector_samp, querySelector_script, querySelector_section, querySelector_select, querySelector_slot, querySelector_small, querySelector_source, querySelector_span, querySelector_strong, querySelector_style, querySelector_sub, querySelector_summary, querySelector_sup, querySelector_table, querySelector_tbody, querySelector_td, querySelector_template, querySelector_textarea, querySelector_tfoot, querySelector_th, querySelector_thead, querySelector_time, querySelector_title, querySelector_tr, querySelector_track, querySelector_u, querySelector_ul, querySelector_var, querySelector_video, querySelector_wbr, querySelector_a, querySelector_animate, querySelector_animateMotion, querySelector_animateTransform, querySelector_circle, querySelector_clipPath, querySelector_defs, querySelector_desc, querySelector_ellipse, querySelector_feBlend, querySelector_feColorMatrix, querySelector_feComponentTransfer, querySelector_feComposite, querySelector_feConvolveMatrix, querySelector_feDiffuseLighting, querySelector_feDisplacementMap, querySelector_feDistantLight, querySelector_feDropShadow, querySelector_feFlood, querySelector_feFuncA, querySelector_feFuncB, querySelector_feFuncG, querySelector_feFuncR, querySelector_feGaussianBlur, querySelector_feImage, querySelector_feMerge, querySelector_feMergeNode, querySelector_feMorphology, querySelector_feOffset, querySelector_fePointLight, querySelector_feSpecularLighting, querySelector_feSpotLight, querySelector_feTile, querySelector_feTurbulence, querySelector_filter, querySelector_foreignObject, querySelector_g, querySelector_image, querySelector_line, querySelector_linearGradient, querySelector_marker, querySelector_mask, querySelector_metadata, querySelector_mpath, querySelector_path, querySelector_pattern, querySelector_polygon, querySelector_polyline, querySelector_radialGradient, querySelector_rect, querySelector_script, querySelector_set, querySelector_stop, querySelector_style, querySelector_svg, querySelector_switch, querySelector_symbol, querySelector_text, querySelector_textPath, querySelector_title, querySelector_tspan, querySelector_use, querySelector_view, querySelector, querySelectorAll_a, querySelectorAll_abbr, querySelectorAll_address, querySelectorAll_area, querySelectorAll_article, querySelectorAll_aside, querySelectorAll_audio, querySelectorAll_b, querySelectorAll_base, querySelectorAll_bdi, querySelectorAll_bdo, querySelectorAll_blockquote, querySelectorAll_body, querySelectorAll_br, querySelectorAll_button, querySelectorAll_canvas, querySelectorAll_caption, querySelectorAll_cite, querySelectorAll_code, querySelectorAll_col, querySelectorAll_colgroup, querySelectorAll_data, querySelectorAll_datalist, querySelectorAll_dd, querySelectorAll_del, querySelectorAll_details, querySelectorAll_dfn, querySelectorAll_dialog, querySelectorAll_div, querySelectorAll_dl, querySelectorAll_dt, querySelectorAll_em, querySelectorAll_embed, querySelectorAll_fieldset, querySelectorAll_figcaption, querySelectorAll_figure, querySelectorAll_footer, querySelectorAll_form, querySelectorAll_h1, querySelectorAll_h2, querySelectorAll_h3, querySelectorAll_h4, querySelectorAll_h5, querySelectorAll_h6, querySelectorAll_head, querySelectorAll_header, querySelectorAll_hgroup, querySelectorAll_hr, querySelectorAll_html, querySelectorAll_i, querySelectorAll_iframe, querySelectorAll_img, querySelectorAll_input, querySelectorAll_ins, querySelectorAll_kbd, querySelectorAll_label, querySelectorAll_legend, querySelectorAll_li, querySelectorAll_link, querySelectorAll_main, querySelectorAll_map, querySelectorAll_mark, querySelectorAll_menu, querySelectorAll_meta, querySelectorAll_meter, querySelectorAll_nav, querySelectorAll_noscript, querySelectorAll_object, querySelectorAll_ol, querySelectorAll_optgroup, querySelectorAll_option, querySelectorAll_output, querySelectorAll_p, querySelectorAll_picture, querySelectorAll_pre, querySelectorAll_progress, querySelectorAll_q, querySelectorAll_rp, querySelectorAll_rt, querySelectorAll_ruby, querySelectorAll_s, querySelectorAll_samp, querySelectorAll_script, querySelectorAll_section, querySelectorAll_select, querySelectorAll_slot, querySelectorAll_small, querySelectorAll_source, querySelectorAll_span, querySelectorAll_strong, querySelectorAll_style, querySelectorAll_sub, querySelectorAll_summary, querySelectorAll_sup, querySelectorAll_table, querySelectorAll_tbody, querySelectorAll_td, querySelectorAll_template, querySelectorAll_textarea, querySelectorAll_tfoot, querySelectorAll_th, querySelectorAll_thead, querySelectorAll_time, querySelectorAll_title, querySelectorAll_tr, querySelectorAll_track, querySelectorAll_u, querySelectorAll_ul, querySelectorAll_var, querySelectorAll_video, querySelectorAll_wbr, querySelectorAll_a, querySelectorAll_animate, querySelectorAll_animateMotion, querySelectorAll_animateTransform, querySelectorAll_circle, querySelectorAll_clipPath, querySelectorAll_defs, querySelectorAll_desc, querySelectorAll_ellipse, querySelectorAll_feBlend, querySelectorAll_feColorMatrix, querySelectorAll_feComponentTransfer, querySelectorAll_feComposite, querySelectorAll_feConvolveMatrix, querySelectorAll_feDiffuseLighting, querySelectorAll_feDisplacementMap, querySelectorAll_feDistantLight, querySelectorAll_feDropShadow, querySelectorAll_feFlood, querySelectorAll_feFuncA, querySelectorAll_feFuncB, querySelectorAll_feFuncG, querySelectorAll_feFuncR, querySelectorAll_feGaussianBlur, querySelectorAll_feImage, querySelectorAll_feMerge, querySelectorAll_feMergeNode, querySelectorAll_feMorphology, querySelectorAll_feOffset, querySelectorAll_fePointLight, querySelectorAll_feSpecularLighting, querySelectorAll_feSpotLight, querySelectorAll_feTile, querySelectorAll_feTurbulence, querySelectorAll_filter, querySelectorAll_foreignObject, querySelectorAll_g, querySelectorAll_image, querySelectorAll_line, querySelectorAll_linearGradient, querySelectorAll_marker, querySelectorAll_mask, querySelectorAll_metadata, querySelectorAll_mpath, querySelectorAll_path, querySelectorAll_pattern, querySelectorAll_polygon, querySelectorAll_polyline, querySelectorAll_radialGradient, querySelectorAll_rect, querySelectorAll_script, querySelectorAll_set, querySelectorAll_stop, querySelectorAll_style, querySelectorAll_svg, querySelectorAll_switch, querySelectorAll_symbol, querySelectorAll_text, querySelectorAll_textPath, querySelectorAll_title, querySelectorAll_tspan, querySelectorAll_use, querySelectorAll_view, querySelectorAll, replaceChildren */ @js.native
 trait Element
   extends StObject
+     with ARIAMixin
      with Animatable
      with ChildNode
      with InnerHTML
      with NonDocumentTypeChildNode
-     with ParentNode
      with Slottable {
   
+  /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
   /**
-    * Creates a shadow root for element and returns it.
+    * Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
+    *
+    * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
+  /* standard dom */
+  def append(nodes: (Node | java.lang.String)*): Unit = js.native
+  
+  /** Creates a shadow root for element and returns it. */
+  /* standard dom */
   def attachShadow(init: ShadowRootInit): ShadowRoot = js.native
   
+  /* standard dom */
   val attributes: NamedNodeMap = js.native
   
-  /**
-    * Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
-    */
+  /* standard dom */
+  val childElementCount: Double = js.native
+  
+  /** Returns the child elements. */
+  /* standard dom */
+  val children: HTMLCollection = js.native
+  
+  /** Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object. */
+  /* standard dom */
   val classList: DOMTokenList = js.native
   
-  /**
-    * Returns the value of element's class content attribute. Can be set to change it.
-    */
+  /** Returns the value of element's class content attribute. Can be set to change it. */
+  /* standard dom */
   var className: java.lang.String = js.native
   
+  /* standard dom */
   val clientHeight: Double = js.native
   
+  /* standard dom */
   val clientLeft: Double = js.native
   
+  /* standard dom */
   val clientTop: Double = js.native
   
+  /* standard dom */
   val clientWidth: Double = js.native
   
-  def closest[E /* <: Element */](selector: java.lang.String): E | Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
+  /* standard dom */
+  def closest[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
+  /** Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise. */
+  /* standard dom */
   @JSName("closest")
   def closest_a(selector: a): HTMLAnchorElement | Null = js.native
   @JSName("closest")
@@ -256,7 +275,11 @@ trait Element
   @JSName("closest")
   def closest_address(selector: address): HTMLElement | Null = js.native
   @JSName("closest")
-  def closest_applet(selector: applet): HTMLAppletElement | Null = js.native
+  def closest_animate(selector: animate): SVGAnimateElement | Null = js.native
+  @JSName("closest")
+  def closest_animateMotion(selector: animateMotion): SVGAnimateMotionElement | Null = js.native
+  @JSName("closest")
+  def closest_animateTransform(selector: animateTransform): SVGAnimateTransformElement | Null = js.native
   @JSName("closest")
   def closest_area(selector: area): HTMLAreaElement | Null = js.native
   @JSName("closest")
@@ -269,8 +292,6 @@ trait Element
   def closest_b(selector: b): HTMLElement | Null = js.native
   @JSName("closest")
   def closest_base(selector: base): HTMLBaseElement | Null = js.native
-  @JSName("closest")
-  def closest_basefont(selector: basefont): HTMLBaseFontElement | Null = js.native
   @JSName("closest")
   def closest_bdi(selector: bdi): HTMLElement | Null = js.native
   @JSName("closest")
@@ -318,8 +339,6 @@ trait Element
   @JSName("closest")
   def closest_dialog(selector: dialog): HTMLDialogElement | Null = js.native
   @JSName("closest")
-  def closest_dir(selector: dir): HTMLDirectoryElement | Null = js.native
-  @JSName("closest")
   def closest_div(selector: div): HTMLDivElement | Null = js.native
   @JSName("closest")
   def closest_dl(selector: dl): HTMLDListElement | Null = js.native
@@ -347,6 +366,8 @@ trait Element
   def closest_feDisplacementMap(selector: feDisplacementMap): SVGFEDisplacementMapElement | Null = js.native
   @JSName("closest")
   def closest_feDistantLight(selector: feDistantLight): SVGFEDistantLightElement | Null = js.native
+  @JSName("closest")
+  def closest_feDropShadow(selector: feDropShadow): SVGFEDropShadowElement | Null = js.native
   @JSName("closest")
   def closest_feFlood(selector: feFlood): SVGFEFloodElement | Null = js.native
   @JSName("closest")
@@ -388,17 +409,11 @@ trait Element
   @JSName("closest")
   def closest_filter(selector: filter): SVGFilterElement | Null = js.native
   @JSName("closest")
-  def closest_font(selector: font): HTMLFontElement | Null = js.native
-  @JSName("closest")
   def closest_footer(selector: footer): HTMLElement | Null = js.native
   @JSName("closest")
   def closest_foreignObject(selector: foreignObject): SVGForeignObjectElement | Null = js.native
   @JSName("closest")
   def closest_form(selector: form): HTMLFormElement | Null = js.native
-  @JSName("closest")
-  def closest_frame(selector: frame): HTMLFrameElement | Null = js.native
-  @JSName("closest")
-  def closest_frameset(selector: frameset): HTMLFrameSetElement | Null = js.native
   @JSName("closest")
   def closest_g(selector: g): SVGGElement | Null = js.native
   @JSName("closest")
@@ -458,8 +473,6 @@ trait Element
   @JSName("closest")
   def closest_marker(selector: marker): SVGMarkerElement | Null = js.native
   @JSName("closest")
-  def closest_marquee(selector: marquee): HTMLMarqueeElement | Null = js.native
-  @JSName("closest")
   def closest_mask(selector: mask): SVGMaskElement | Null = js.native
   @JSName("closest")
   def closest_menu(selector: menu): HTMLMenuElement | Null = js.native
@@ -469,6 +482,8 @@ trait Element
   def closest_metadata(selector: metadata): SVGMetadataElement | Null = js.native
   @JSName("closest")
   def closest_meter(selector: meter): HTMLMeterElement | Null = js.native
+  @JSName("closest")
+  def closest_mpath(selector: mpath): SVGMPathElement | Null = js.native
   @JSName("closest")
   def closest_nav(selector: nav): HTMLElement | Null = js.native
   @JSName("closest")
@@ -485,8 +500,6 @@ trait Element
   def closest_output(selector: output): HTMLOutputElement | Null = js.native
   @JSName("closest")
   def closest_p(selector: p): HTMLParagraphElement | Null = js.native
-  @JSName("closest")
-  def closest_param(selector: param): HTMLParamElement | Null = js.native
   @JSName("closest")
   def closest_path(selector: path): SVGPathElement | Null = js.native
   @JSName("closest")
@@ -524,6 +537,8 @@ trait Element
   @JSName("closest")
   def closest_select(selector: select): HTMLSelectElement | Null = js.native
   @JSName("closest")
+  def closest_set(selector: set): SVGSetElement | Null = js.native
+  @JSName("closest")
   def closest_slot(selector: slot): HTMLSlotElement | Null = js.native
   @JSName("closest")
   def closest_small(selector: small): HTMLElement | Null = js.native
@@ -554,7 +569,7 @@ trait Element
   @JSName("closest")
   def closest_tbody(selector: tbody): HTMLTableSectionElement | Null = js.native
   @JSName("closest")
-  def closest_td(selector: td): HTMLTableDataCellElement | Null = js.native
+  def closest_td(selector: td): HTMLTableCellElement | Null = js.native
   @JSName("closest")
   def closest_template(selector: template): HTMLTemplateElement | Null = js.native
   @JSName("closest")
@@ -566,7 +581,7 @@ trait Element
   @JSName("closest")
   def closest_tfoot(selector: tfoot): HTMLTableSectionElement | Null = js.native
   @JSName("closest")
-  def closest_th(selector: th): HTMLTableHeaderCellElement | Null = js.native
+  def closest_th(selector: th): HTMLTableCellElement | Null = js.native
   @JSName("closest")
   def closest_thead(selector: thead): HTMLTableSectionElement | Null = js.native
   @JSName("closest")
@@ -594,44 +609,54 @@ trait Element
   @JSName("closest")
   def closest_wbr(selector: wbr): HTMLElement | Null = js.native
   
-  /**
-    * Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
-    */
+  /** Returns the first child that is an element, and null otherwise. */
+  /* standard dom */
+  val firstElementChild: Element | Null = js.native
+  
+  /** Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise. */
+  /* standard dom */
   def getAttribute(qualifiedName: java.lang.String): java.lang.String | Null = js.native
   
-  /**
-    * Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
-    */
+  /** Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise. */
+  /* standard dom */
   def getAttributeNS(namespace: java.lang.String, localName: java.lang.String): java.lang.String | Null = js.native
   def getAttributeNS(namespace: Null, localName: java.lang.String): java.lang.String | Null = js.native
   
-  /**
-    * Returns the qualified names of all element's attributes. Can contain duplicates.
-    */
+  /** Returns the qualified names of all element's attributes. Can contain duplicates. */
+  /* standard dom */
   def getAttributeNames(): js.Array[java.lang.String] = js.native
   
+  /* standard dom */
   def getAttributeNode(qualifiedName: java.lang.String): Attr | Null = js.native
   
+  /* standard dom */
   def getAttributeNodeNS(namespace: java.lang.String, localName: java.lang.String): Attr | Null = js.native
   def getAttributeNodeNS(namespace: Null, localName: java.lang.String): Attr | Null = js.native
   
+  /* standard dom */
   def getBoundingClientRect(): DOMRect = js.native
   
+  /* standard dom */
   def getClientRects(): DOMRectList = js.native
   
-  /**
-    * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
-    */
+  /** Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes. */
+  /* standard dom */
   def getElementsByClassName(classNames: java.lang.String): HTMLCollectionOf[Element] = js.native
   
+  /* standard dom */
   def getElementsByTagName(qualifiedName: java.lang.String): HTMLCollectionOf[Element] = js.native
   
-  def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
+  /* standard dom */
+  def getElementsByTagNameNS(namespace: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
+  def getElementsByTagNameNS(namespace: Null, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
+  /* standard dom */
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
+  /* standard dom */
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   
+  /* standard dom */
   @JSName("getElementsByTagName")
   def getElementsByTagName_a(qualifiedName: a): HTMLCollectionOf[HTMLAnchorElement] = js.native
   @JSName("getElementsByTagName")
@@ -639,7 +664,11 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_address(qualifiedName: address): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_applet(qualifiedName: applet): HTMLCollectionOf[HTMLAppletElement] = js.native
+  def getElementsByTagName_animate(qualifiedName: animate): HTMLCollectionOf[SVGAnimateElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_animateMotion(qualifiedName: animateMotion): HTMLCollectionOf[SVGAnimateMotionElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_animateTransform(qualifiedName: animateTransform): HTMLCollectionOf[SVGAnimateTransformElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_area(qualifiedName: area): HTMLCollectionOf[HTMLAreaElement] = js.native
   @JSName("getElementsByTagName")
@@ -652,8 +681,6 @@ trait Element
   def getElementsByTagName_b(qualifiedName: b): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_base(qualifiedName: base): HTMLCollectionOf[HTMLBaseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_basefont(qualifiedName: basefont): HTMLCollectionOf[HTMLBaseFontElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_bdi(qualifiedName: bdi): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -701,8 +728,6 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_dialog(qualifiedName: dialog): HTMLCollectionOf[HTMLDialogElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_dir(qualifiedName: dir): HTMLCollectionOf[HTMLDirectoryElement] = js.native
-  @JSName("getElementsByTagName")
   def getElementsByTagName_div(qualifiedName: div): HTMLCollectionOf[HTMLDivElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_dl(qualifiedName: dl): HTMLCollectionOf[HTMLDListElement] = js.native
@@ -730,6 +755,8 @@ trait Element
   def getElementsByTagName_feDisplacementMap(qualifiedName: feDisplacementMap): HTMLCollectionOf[SVGFEDisplacementMapElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_feDistantLight(qualifiedName: feDistantLight): HTMLCollectionOf[SVGFEDistantLightElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_feDropShadow(qualifiedName: feDropShadow): HTMLCollectionOf[SVGFEDropShadowElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_feFlood(qualifiedName: feFlood): HTMLCollectionOf[SVGFEFloodElement] = js.native
   @JSName("getElementsByTagName")
@@ -771,17 +798,11 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_filter(qualifiedName: filter): HTMLCollectionOf[SVGFilterElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_font(qualifiedName: font): HTMLCollectionOf[HTMLFontElement] = js.native
-  @JSName("getElementsByTagName")
   def getElementsByTagName_footer(qualifiedName: footer): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_foreignObject(qualifiedName: foreignObject): HTMLCollectionOf[SVGForeignObjectElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_form(qualifiedName: form): HTMLCollectionOf[HTMLFormElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_frame(qualifiedName: frame): HTMLCollectionOf[HTMLFrameElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_frameset(qualifiedName: frameset): HTMLCollectionOf[HTMLFrameSetElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_g(qualifiedName: g): HTMLCollectionOf[SVGGElement] = js.native
   @JSName("getElementsByTagName")
@@ -841,8 +862,6 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_marker(qualifiedName: marker): HTMLCollectionOf[SVGMarkerElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_marquee(qualifiedName: marquee): HTMLCollectionOf[HTMLMarqueeElement] = js.native
-  @JSName("getElementsByTagName")
   def getElementsByTagName_mask(qualifiedName: mask): HTMLCollectionOf[SVGMaskElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_menu(qualifiedName: menu): HTMLCollectionOf[HTMLMenuElement] = js.native
@@ -852,6 +871,8 @@ trait Element
   def getElementsByTagName_metadata(qualifiedName: metadata): HTMLCollectionOf[SVGMetadataElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_meter(qualifiedName: meter): HTMLCollectionOf[HTMLMeterElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mpath(qualifiedName: mpath): HTMLCollectionOf[SVGMPathElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_nav(qualifiedName: nav): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -868,8 +889,6 @@ trait Element
   def getElementsByTagName_output(qualifiedName: output): HTMLCollectionOf[HTMLOutputElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_p(qualifiedName: p): HTMLCollectionOf[HTMLParagraphElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_param(qualifiedName: param): HTMLCollectionOf[HTMLParamElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_path(qualifiedName: path): HTMLCollectionOf[SVGPathElement] = js.native
   @JSName("getElementsByTagName")
@@ -907,6 +926,8 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(qualifiedName: select): HTMLCollectionOf[HTMLSelectElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_set(qualifiedName: set): HTMLCollectionOf[SVGSetElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_slot(qualifiedName: slot): HTMLCollectionOf[HTMLSlotElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_small(qualifiedName: small): HTMLCollectionOf[HTMLElement] = js.native
@@ -937,7 +958,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_tbody(qualifiedName: tbody): HTMLCollectionOf[HTMLTableSectionElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_td(qualifiedName: td): HTMLCollectionOf[HTMLTableDataCellElement] = js.native
+  def getElementsByTagName_td(qualifiedName: td): HTMLCollectionOf[HTMLTableCellElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_template(qualifiedName: template): HTMLCollectionOf[HTMLTemplateElement] = js.native
   @JSName("getElementsByTagName")
@@ -949,7 +970,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_tfoot(qualifiedName: tfoot): HTMLCollectionOf[HTMLTableSectionElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_th(qualifiedName: th): HTMLCollectionOf[HTMLTableHeaderCellElement] = js.native
+  def getElementsByTagName_th(qualifiedName: th): HTMLCollectionOf[HTMLTableCellElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_thead(qualifiedName: thead): HTMLCollectionOf[HTMLTableSectionElement] = js.native
   @JSName("getElementsByTagName")
@@ -977,178 +998,910 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(qualifiedName: wbr): HTMLCollectionOf[HTMLElement] = js.native
   
-  /**
-    * Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise.
-    */
+  /** Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise. */
+  /* standard dom */
   def hasAttribute(qualifiedName: java.lang.String): scala.Boolean = js.native
   
-  /**
-    * Returns true if element has an attribute whose namespace is namespace and local name is localName.
-    */
+  /** Returns true if element has an attribute whose namespace is namespace and local name is localName. */
+  /* standard dom */
   def hasAttributeNS(namespace: java.lang.String, localName: java.lang.String): scala.Boolean = js.native
   def hasAttributeNS(namespace: Null, localName: java.lang.String): scala.Boolean = js.native
   
-  /**
-    * Returns true if element has attributes, and false otherwise.
-    */
+  /** Returns true if element has attributes, and false otherwise. */
+  /* standard dom */
   def hasAttributes(): scala.Boolean = js.native
   
+  /* standard dom */
   def hasPointerCapture(pointerId: Double): scala.Boolean = js.native
   
-  /**
-    * Returns the value of element's id content attribute. Can be set to change it.
-    */
+  /** Returns the value of element's id content attribute. Can be set to change it. */
+  /* standard dom */
   var id: java.lang.String = js.native
   
-  def insertAdjacentElement(position: InsertPosition, insertedElement: Element): Element | Null = js.native
+  /* standard dom */
+  def insertAdjacentElement(where: InsertPosition, element: Element): Element | Null = js.native
   
-  def insertAdjacentHTML(where: InsertPosition, html: java.lang.String): Unit = js.native
+  /* standard dom */
+  def insertAdjacentHTML(position: InsertPosition, text: java.lang.String): Unit = js.native
   
-  def insertAdjacentText(where: InsertPosition, text: java.lang.String): Unit = js.native
+  /* standard dom */
+  def insertAdjacentText(where: InsertPosition, data: java.lang.String): Unit = js.native
   
-  /**
-    * Returns the local name.
-    */
+  /** Returns the last child that is an element, and null otherwise. */
+  /* standard dom */
+  val lastElementChild: Element | Null = js.native
+  
+  /** Returns the local name. */
+  /* standard dom */
   val localName: java.lang.String = js.native
   
-  /**
-    * Returns true if matching selectors against element's root yields element, and false otherwise.
-    */
+  /** Returns true if matching selectors against element's root yields element, and false otherwise. */
+  /* standard dom */
   def matches(selectors: java.lang.String): scala.Boolean = js.native
   
-  def msGetRegionContent(): js.Any = js.native
+  /** Returns the namespace. */
+  /* standard dom */
+  val namespaceURI: java.lang.String | Null = js.native
   
-  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /* standard dom */
   var outerHTML: java.lang.String = js.native
   
+  /* standard dom */
   @JSName("ownerDocument")
   val ownerDocument_Element: Document = js.native
   
-  /**
-    * Returns the namespace prefix.
-    */
+  /* standard dom */
+  val part: DOMTokenList = js.native
+  
+  /** Returns the namespace prefix. */
+  /* standard dom */
   val prefix: java.lang.String | Null = js.native
   
+  /**
+    * Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
+    *
+    * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    */
+  /* standard dom */
+  def prepend(nodes: (Node | java.lang.String)*): Unit = js.native
+  
+  /* standard dom */
+  def querySelector[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
+  
+  /* standard dom */
+  def querySelectorAll[E /* <: Element */](selectors: java.lang.String): NodeListOf[E] = js.native
+  /** Returns all element descendants of node that match selectors. */
+  /* standard dom */
+  @JSName("querySelectorAll")
+  def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_abbr(selectors: abbr): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_address(selectors: address): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_animate(selectors: animate): NodeListOf[SVGAnimateElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_animateMotion(selectors: animateMotion): NodeListOf[SVGAnimateMotionElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_animateTransform(selectors: animateTransform): NodeListOf[SVGAnimateTransformElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_area(selectors: area): NodeListOf[HTMLAreaElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_article(selectors: article): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_aside(selectors: aside): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_audio(selectors: audio): NodeListOf[HTMLAudioElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_b(selectors: b): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_base(selectors: base): NodeListOf[HTMLBaseElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_bdi(selectors: bdi): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_bdo(selectors: bdo): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_blockquote(selectors: blockquote): NodeListOf[HTMLQuoteElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_body(selectors: body): NodeListOf[HTMLBodyElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_br(selectors: br): NodeListOf[HTMLBRElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_button(selectors: button): NodeListOf[HTMLButtonElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_canvas(selectors: canvas): NodeListOf[HTMLCanvasElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_caption(selectors: caption): NodeListOf[HTMLTableCaptionElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_circle(selectors: circle): NodeListOf[SVGCircleElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_cite(selectors: cite): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_clipPath(selectors: clipPath): NodeListOf[SVGClipPathElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_code(selectors: code): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_col(selectors: col): NodeListOf[HTMLTableColElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_colgroup(selectors: colgroup): NodeListOf[HTMLTableColElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_data(selectors: data): NodeListOf[HTMLDataElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_datalist(selectors: datalist): NodeListOf[HTMLDataListElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_dd(selectors: dd): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_defs(selectors: defs): NodeListOf[SVGDefsElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_del(selectors: del): NodeListOf[HTMLModElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_desc(selectors: desc): NodeListOf[SVGDescElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_details(selectors: details): NodeListOf[HTMLDetailsElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_dfn(selectors: dfn): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_dialog(selectors: dialog): NodeListOf[HTMLDialogElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_div(selectors: div): NodeListOf[HTMLDivElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_dl(selectors: dl): NodeListOf[HTMLDListElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_dt(selectors: dt): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_ellipse(selectors: ellipse): NodeListOf[SVGEllipseElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_em(selectors: em): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_embed(selectors: embed): NodeListOf[HTMLEmbedElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feBlend(selectors: feBlend): NodeListOf[SVGFEBlendElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feColorMatrix(selectors: feColorMatrix): NodeListOf[SVGFEColorMatrixElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feComponentTransfer(selectors: feComponentTransfer): NodeListOf[SVGFEComponentTransferElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feComposite(selectors: feComposite): NodeListOf[SVGFECompositeElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feConvolveMatrix(selectors: feConvolveMatrix): NodeListOf[SVGFEConvolveMatrixElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feDiffuseLighting(selectors: feDiffuseLighting): NodeListOf[SVGFEDiffuseLightingElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feDisplacementMap(selectors: feDisplacementMap): NodeListOf[SVGFEDisplacementMapElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feDistantLight(selectors: feDistantLight): NodeListOf[SVGFEDistantLightElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feDropShadow(selectors: feDropShadow): NodeListOf[SVGFEDropShadowElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feFlood(selectors: feFlood): NodeListOf[SVGFEFloodElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feFuncA(selectors: feFuncA): NodeListOf[SVGFEFuncAElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feFuncB(selectors: feFuncB): NodeListOf[SVGFEFuncBElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feFuncG(selectors: feFuncG): NodeListOf[SVGFEFuncGElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feFuncR(selectors: feFuncR): NodeListOf[SVGFEFuncRElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feGaussianBlur(selectors: feGaussianBlur): NodeListOf[SVGFEGaussianBlurElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feImage(selectors: feImage): NodeListOf[SVGFEImageElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feMerge(selectors: feMerge): NodeListOf[SVGFEMergeElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feMergeNode(selectors: feMergeNode): NodeListOf[SVGFEMergeNodeElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feMorphology(selectors: feMorphology): NodeListOf[SVGFEMorphologyElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feOffset(selectors: feOffset): NodeListOf[SVGFEOffsetElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_fePointLight(selectors: fePointLight): NodeListOf[SVGFEPointLightElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feSpecularLighting(selectors: feSpecularLighting): NodeListOf[SVGFESpecularLightingElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feSpotLight(selectors: feSpotLight): NodeListOf[SVGFESpotLightElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feTile(selectors: feTile): NodeListOf[SVGFETileElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feTurbulence(selectors: feTurbulence): NodeListOf[SVGFETurbulenceElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_fieldset(selectors: fieldset): NodeListOf[HTMLFieldSetElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_figcaption(selectors: figcaption): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_figure(selectors: figure): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_filter(selectors: filter): NodeListOf[SVGFilterElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_footer(selectors: footer): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_foreignObject(selectors: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_form(selectors: form): NodeListOf[HTMLFormElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_g(selectors: g): NodeListOf[SVGGElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_h1(selectors: h1): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_h2(selectors: h2): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_h3(selectors: h3): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_h4(selectors: h4): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_h5(selectors: h5): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_h6(selectors: h6): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_head(selectors: head): NodeListOf[HTMLHeadElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_header(selectors: header): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_hgroup(selectors: hgroup): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_hr(selectors: hr): NodeListOf[HTMLHRElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_html(selectors: html): NodeListOf[HTMLHtmlElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_i(selectors: i): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_iframe(selectors: iframe): NodeListOf[HTMLIFrameElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_image(selectors: image): NodeListOf[SVGImageElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_img(selectors: img): NodeListOf[HTMLImageElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_input(selectors: input): NodeListOf[HTMLInputElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_ins(selectors: ins): NodeListOf[HTMLModElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_kbd(selectors: kbd): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_label(selectors: label): NodeListOf[HTMLLabelElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_legend(selectors: legend): NodeListOf[HTMLLegendElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_li(selectors: li): NodeListOf[HTMLLIElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_line(selectors: line): NodeListOf[SVGLineElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_linearGradient(selectors: linearGradient): NodeListOf[SVGLinearGradientElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_main(selectors: main): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_map(selectors: map): NodeListOf[HTMLMapElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mark(selectors: mark): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_marker(selectors: marker): NodeListOf[SVGMarkerElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mask(selectors: mask): NodeListOf[SVGMaskElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_menu(selectors: menu): NodeListOf[HTMLMenuElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_meta(selectors: meta): NodeListOf[HTMLMetaElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_metadata(selectors: metadata): NodeListOf[SVGMetadataElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_meter(selectors: meter): NodeListOf[HTMLMeterElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mpath(selectors: mpath): NodeListOf[SVGMPathElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_nav(selectors: nav): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_noscript(selectors: noscript): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_object(selectors: `object`): NodeListOf[HTMLObjectElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_ol(selectors: ol): NodeListOf[HTMLOListElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_optgroup(selectors: optgroup): NodeListOf[HTMLOptGroupElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_option(selectors: option): NodeListOf[HTMLOptionElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_output(selectors: output): NodeListOf[HTMLOutputElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_p(selectors: p): NodeListOf[HTMLParagraphElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_path(selectors: path): NodeListOf[SVGPathElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_pattern(selectors: pattern): NodeListOf[SVGPatternElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_picture(selectors: picture): NodeListOf[HTMLPictureElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_polygon(selectors: polygon): NodeListOf[SVGPolygonElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_polyline(selectors: polyline): NodeListOf[SVGPolylineElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_pre(selectors: pre): NodeListOf[HTMLPreElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_progress(selectors: progress): NodeListOf[HTMLProgressElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_q(selectors: q): NodeListOf[HTMLQuoteElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_radialGradient(selectors: radialGradient): NodeListOf[SVGRadialGradientElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_rect(selectors: rect): NodeListOf[SVGRectElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_rp(selectors: rp): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_rt(selectors: rt): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_ruby(selectors: ruby): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_s(selectors: s): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_samp(selectors: samp): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_script(selectors: script): NodeListOf[HTMLScriptElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_section(selectors: section): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_set(selectors: set): NodeListOf[SVGSetElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_slot(selectors: slot): NodeListOf[HTMLSlotElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_small(selectors: small): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_source(selectors: source): NodeListOf[HTMLSourceElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_span(selectors: span): NodeListOf[HTMLSpanElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_stop(selectors: stop): NodeListOf[SVGStopElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_strong(selectors: strong): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_style(selectors: style): NodeListOf[HTMLStyleElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_sub(selectors: sub): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_summary(selectors: summary): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_sup(selectors: sup): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_svg(selectors: svg): NodeListOf[SVGSVGElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_switch(selectors: switch): NodeListOf[SVGSwitchElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_symbol(selectors: symbol): NodeListOf[SVGSymbolElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_table(selectors: table): NodeListOf[HTMLTableElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_tbody(selectors: tbody): NodeListOf[HTMLTableSectionElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_td(selectors: td): NodeListOf[HTMLTableCellElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_template(selectors: template): NodeListOf[HTMLTemplateElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_text(selectors: text): NodeListOf[SVGTextElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_textPath(selectors: textPath): NodeListOf[SVGTextPathElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_textarea(selectors: textarea): NodeListOf[HTMLTextAreaElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_tfoot(selectors: tfoot): NodeListOf[HTMLTableSectionElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_th(selectors: th): NodeListOf[HTMLTableCellElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_thead(selectors: thead): NodeListOf[HTMLTableSectionElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_time(selectors: time): NodeListOf[HTMLTimeElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_title(selectors: title): NodeListOf[HTMLTitleElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_tr(selectors: tr): NodeListOf[HTMLTableRowElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_track(selectors: track): NodeListOf[HTMLTrackElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_tspan(selectors: tspan): NodeListOf[SVGTSpanElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_u(selectors: u): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_ul(selectors: ul): NodeListOf[HTMLUListElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_use(selectors: use): NodeListOf[SVGUseElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_var(selectors: `var`): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_video(selectors: video): NodeListOf[HTMLVideoElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
+  
+  /** Returns the first element that is a descendant of node that matches selectors. */
+  /* standard dom */
+  @JSName("querySelector")
+  def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_abbr(selectors: abbr): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_address(selectors: address): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_animate(selectors: animate): SVGAnimateElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_animateMotion(selectors: animateMotion): SVGAnimateMotionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_animateTransform(selectors: animateTransform): SVGAnimateTransformElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_area(selectors: area): HTMLAreaElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_article(selectors: article): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_aside(selectors: aside): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_audio(selectors: audio): HTMLAudioElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_b(selectors: b): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_base(selectors: base): HTMLBaseElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_bdi(selectors: bdi): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_bdo(selectors: bdo): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_blockquote(selectors: blockquote): HTMLQuoteElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_body(selectors: body): HTMLBodyElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_br(selectors: br): HTMLBRElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_button(selectors: button): HTMLButtonElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_canvas(selectors: canvas): HTMLCanvasElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_caption(selectors: caption): HTMLTableCaptionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_circle(selectors: circle): SVGCircleElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_cite(selectors: cite): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_clipPath(selectors: clipPath): SVGClipPathElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_code(selectors: code): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_col(selectors: col): HTMLTableColElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_colgroup(selectors: colgroup): HTMLTableColElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_data(selectors: data): HTMLDataElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_datalist(selectors: datalist): HTMLDataListElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_dd(selectors: dd): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_defs(selectors: defs): SVGDefsElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_del(selectors: del): HTMLModElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_desc(selectors: desc): SVGDescElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_details(selectors: details): HTMLDetailsElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_dfn(selectors: dfn): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_dialog(selectors: dialog): HTMLDialogElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_div(selectors: div): HTMLDivElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_dl(selectors: dl): HTMLDListElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_dt(selectors: dt): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_ellipse(selectors: ellipse): SVGEllipseElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_em(selectors: em): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_embed(selectors: embed): HTMLEmbedElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feBlend(selectors: feBlend): SVGFEBlendElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feColorMatrix(selectors: feColorMatrix): SVGFEColorMatrixElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feComponentTransfer(selectors: feComponentTransfer): SVGFEComponentTransferElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feComposite(selectors: feComposite): SVGFECompositeElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feConvolveMatrix(selectors: feConvolveMatrix): SVGFEConvolveMatrixElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feDiffuseLighting(selectors: feDiffuseLighting): SVGFEDiffuseLightingElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feDisplacementMap(selectors: feDisplacementMap): SVGFEDisplacementMapElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feDistantLight(selectors: feDistantLight): SVGFEDistantLightElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feDropShadow(selectors: feDropShadow): SVGFEDropShadowElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feFlood(selectors: feFlood): SVGFEFloodElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feFuncA(selectors: feFuncA): SVGFEFuncAElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feFuncB(selectors: feFuncB): SVGFEFuncBElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feFuncG(selectors: feFuncG): SVGFEFuncGElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feFuncR(selectors: feFuncR): SVGFEFuncRElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feGaussianBlur(selectors: feGaussianBlur): SVGFEGaussianBlurElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feImage(selectors: feImage): SVGFEImageElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feMerge(selectors: feMerge): SVGFEMergeElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feMergeNode(selectors: feMergeNode): SVGFEMergeNodeElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feMorphology(selectors: feMorphology): SVGFEMorphologyElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feOffset(selectors: feOffset): SVGFEOffsetElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_fePointLight(selectors: fePointLight): SVGFEPointLightElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feSpecularLighting(selectors: feSpecularLighting): SVGFESpecularLightingElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feSpotLight(selectors: feSpotLight): SVGFESpotLightElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feTile(selectors: feTile): SVGFETileElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feTurbulence(selectors: feTurbulence): SVGFETurbulenceElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_fieldset(selectors: fieldset): HTMLFieldSetElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_figcaption(selectors: figcaption): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_figure(selectors: figure): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_filter(selectors: filter): SVGFilterElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_footer(selectors: footer): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_foreignObject(selectors: foreignObject): SVGForeignObjectElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_form(selectors: form): HTMLFormElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_g(selectors: g): SVGGElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_h1(selectors: h1): HTMLHeadingElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_h2(selectors: h2): HTMLHeadingElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_h3(selectors: h3): HTMLHeadingElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_h4(selectors: h4): HTMLHeadingElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_h5(selectors: h5): HTMLHeadingElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_h6(selectors: h6): HTMLHeadingElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_head(selectors: head): HTMLHeadElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_header(selectors: header): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_hgroup(selectors: hgroup): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_hr(selectors: hr): HTMLHRElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_html(selectors: html): HTMLHtmlElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_i(selectors: i): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_iframe(selectors: iframe): HTMLIFrameElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_image(selectors: image): SVGImageElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_img(selectors: img): HTMLImageElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_input(selectors: input): HTMLInputElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_ins(selectors: ins): HTMLModElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_kbd(selectors: kbd): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_label(selectors: label): HTMLLabelElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_legend(selectors: legend): HTMLLegendElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_li(selectors: li): HTMLLIElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_line(selectors: line): SVGLineElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_linearGradient(selectors: linearGradient): SVGLinearGradientElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_link(selectors: link): HTMLLinkElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_main(selectors: main): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_map(selectors: map): HTMLMapElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mark(selectors: mark): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_marker(selectors: marker): SVGMarkerElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mask(selectors: mask): SVGMaskElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_menu(selectors: menu): HTMLMenuElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_meta(selectors: meta): HTMLMetaElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_metadata(selectors: metadata): SVGMetadataElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_meter(selectors: meter): HTMLMeterElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mpath(selectors: mpath): SVGMPathElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_nav(selectors: nav): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_noscript(selectors: noscript): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_object(selectors: `object`): HTMLObjectElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_ol(selectors: ol): HTMLOListElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_optgroup(selectors: optgroup): HTMLOptGroupElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_option(selectors: option): HTMLOptionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_output(selectors: output): HTMLOutputElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_p(selectors: p): HTMLParagraphElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_path(selectors: path): SVGPathElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_pattern(selectors: pattern): SVGPatternElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_picture(selectors: picture): HTMLPictureElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_polygon(selectors: polygon): SVGPolygonElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_polyline(selectors: polyline): SVGPolylineElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_pre(selectors: pre): HTMLPreElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_progress(selectors: progress): HTMLProgressElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_q(selectors: q): HTMLQuoteElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_radialGradient(selectors: radialGradient): SVGRadialGradientElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_rect(selectors: rect): SVGRectElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_rp(selectors: rp): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_rt(selectors: rt): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_ruby(selectors: ruby): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_s(selectors: s): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_samp(selectors: samp): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_script(selectors: script): HTMLScriptElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_section(selectors: section): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_set(selectors: set): SVGSetElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_slot(selectors: slot): HTMLSlotElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_small(selectors: small): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_source(selectors: source): HTMLSourceElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_span(selectors: span): HTMLSpanElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_stop(selectors: stop): SVGStopElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_strong(selectors: strong): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_style(selectors: style): HTMLStyleElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_sub(selectors: sub): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_summary(selectors: summary): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_sup(selectors: sup): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_svg(selectors: svg): SVGSVGElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_switch(selectors: switch): SVGSwitchElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_symbol(selectors: symbol): SVGSymbolElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_table(selectors: table): HTMLTableElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_tbody(selectors: tbody): HTMLTableSectionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_td(selectors: td): HTMLTableCellElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_template(selectors: template): HTMLTemplateElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_text(selectors: text): SVGTextElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_textPath(selectors: textPath): SVGTextPathElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_textarea(selectors: textarea): HTMLTextAreaElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_tfoot(selectors: tfoot): HTMLTableSectionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_th(selectors: th): HTMLTableCellElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_thead(selectors: thead): HTMLTableSectionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_time(selectors: time): HTMLTimeElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_title(selectors: title): HTMLTitleElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_tr(selectors: tr): HTMLTableRowElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_track(selectors: track): HTMLTrackElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_tspan(selectors: tspan): SVGTSpanElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_u(selectors: u): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_ul(selectors: ul): HTMLUListElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_use(selectors: use): SVGUseElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_var(selectors: `var`): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_video(selectors: video): HTMLVideoElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_view(selectors: view): SVGViewElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
+  
+  /* standard dom */
   def releasePointerCapture(pointerId: Double): Unit = js.native
   
-  /**
-    * Removes element's first attribute whose qualified name is qualifiedName.
-    */
+  /** Removes element's first attribute whose qualified name is qualifiedName. */
+  /* standard dom */
   def removeAttribute(qualifiedName: java.lang.String): Unit = js.native
   
-  /**
-    * Removes element's attribute whose namespace is namespace and local name is localName.
-    */
+  /** Removes element's attribute whose namespace is namespace and local name is localName. */
+  /* standard dom */
   def removeAttributeNS(namespace: java.lang.String, localName: java.lang.String): Unit = js.native
   def removeAttributeNS(namespace: Null, localName: java.lang.String): Unit = js.native
   
+  /* standard dom */
   def removeAttributeNode(attr: Attr): Attr = js.native
   
+  /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   
   /**
+    * Replace all children of node with nodes, while replacing strings in nodes with equivalent Text nodes.
+    *
+    * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    */
+  /* standard dom */
+  def replaceChildren(nodes: (Node | java.lang.String)*): Unit = js.native
+  
+  /**
     * Displays element fullscreen and resolves promise when done.
-    * 
+    *
     * When supplied, options's navigationUI member indicates whether showing navigation UI while in fullscreen is preferred or not. If set to "show", navigation simplicity is preferred over screen space, and if set to "hide", more screen space is preferred. User agents are always free to honor user preference over the application's. The default value "auto" indicates no application preference.
     */
+  /* standard dom */
   def requestFullscreen(): js.Promise[Unit] = js.native
   def requestFullscreen(options: FullscreenOptions): js.Promise[Unit] = js.native
   
+  /* standard dom */
   def requestPointerLock(): Unit = js.native
   
+  /* standard dom */
   def scroll(): Unit = js.native
   def scroll(options: ScrollToOptions): Unit = js.native
+  /* standard dom */
   def scroll(x: Double, y: Double): Unit = js.native
   
+  /* standard dom */
   def scrollBy(): Unit = js.native
   def scrollBy(options: ScrollToOptions): Unit = js.native
+  /* standard dom */
   def scrollBy(x: Double, y: Double): Unit = js.native
   
+  /* standard dom */
   val scrollHeight: Double = js.native
   
+  /* standard dom */
   def scrollIntoView(): Unit = js.native
   def scrollIntoView(arg: scala.Boolean): Unit = js.native
   def scrollIntoView(arg: ScrollIntoViewOptions): Unit = js.native
   
+  /* standard dom */
   var scrollLeft: Double = js.native
   
+  /* standard dom */
   def scrollTo(): Unit = js.native
   def scrollTo(options: ScrollToOptions): Unit = js.native
+  /* standard dom */
   def scrollTo(x: Double, y: Double): Unit = js.native
   
+  /* standard dom */
   var scrollTop: Double = js.native
   
+  /* standard dom */
   val scrollWidth: Double = js.native
   
-  /**
-    * Sets the value of element's first attribute whose qualified name is qualifiedName to value.
-    */
+  /** Sets the value of element's first attribute whose qualified name is qualifiedName to value. */
+  /* standard dom */
   def setAttribute(qualifiedName: java.lang.String, value: java.lang.String): Unit = js.native
   
-  /**
-    * Sets the value of element's attribute whose namespace is namespace and local name is localName to value.
-    */
+  /** Sets the value of element's attribute whose namespace is namespace and local name is localName to value. */
+  /* standard dom */
   def setAttributeNS(namespace: java.lang.String, qualifiedName: java.lang.String, value: java.lang.String): Unit = js.native
   def setAttributeNS(namespace: Null, qualifiedName: java.lang.String, value: java.lang.String): Unit = js.native
   
+  /* standard dom */
   def setAttributeNode(attr: Attr): Attr | Null = js.native
   
+  /* standard dom */
   def setAttributeNodeNS(attr: Attr): Attr | Null = js.native
   
+  /* standard dom */
   def setPointerCapture(pointerId: Double): Unit = js.native
   
-  /**
-    * Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
-    */
+  /** Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise. */
+  /* standard dom */
   val shadowRoot: ShadowRoot | Null = js.native
   
-  /**
-    * Returns the value of element's slot content attribute. Can be set to change it.
-    */
+  /** Returns the value of element's slot content attribute. Can be set to change it. */
+  /* standard dom */
   var slot: java.lang.String = js.native
   
-  /**
-    * Returns the HTML-uppercased qualified name.
-    */
+  /** Returns the HTML-uppercased qualified name. */
+  /* standard dom */
   val tagName: java.lang.String = js.native
   
   /**
     * If force is not given, "toggles" qualifiedName, removing it if it is present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
-    * 
+    *
     * Returns true if qualifiedName is now present, and false otherwise.
     */
+  /* standard dom */
   def toggleAttribute(qualifiedName: java.lang.String): scala.Boolean = js.native
   def toggleAttribute(qualifiedName: java.lang.String, force: scala.Boolean): scala.Boolean = js.native
   
+  /** @deprecated This is a legacy alias of `matches`. */
+  /* standard dom */
   def webkitMatchesSelector(selectors: java.lang.String): scala.Boolean = js.native
 }

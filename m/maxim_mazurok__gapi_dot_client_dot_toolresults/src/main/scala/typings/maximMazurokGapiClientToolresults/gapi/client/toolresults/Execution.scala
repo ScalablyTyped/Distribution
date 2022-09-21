@@ -20,7 +20,7 @@ trait Execution extends StObject {
     * update request. Returns INVALID_ARGUMENT if the same name occurs in more than one dimension_definition. Returns INVALID_ARGUMENT if the size of the list is over 100. - In response:
     * present if set by create - In create request: optional - In update request: never set
     */
-  var dimensionDefinitions: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var dimensionDefinitions: js.UndefOr[js.Array[scala.Any]] = js.undefined
   
   /**
     * A unique identifier within a History for this Execution. Returns INVALID_ARGUMENT if this field is set or overwritten by the caller. - In response always set - In create/update
@@ -62,11 +62,11 @@ object Execution {
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    inline def setDimensionDefinitions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensionDefinitions", value.asInstanceOf[js.Any])
+    inline def setDimensionDefinitions(value: js.Array[scala.Any]): Self = StObject.set(x, "dimensionDefinitions", value.asInstanceOf[js.Any])
     
     inline def setDimensionDefinitionsUndefined: Self = StObject.set(x, "dimensionDefinitions", js.undefined)
     
-    inline def setDimensionDefinitionsVarargs(value: js.Any*): Self = StObject.set(x, "dimensionDefinitions", js.Array(value :_*))
+    inline def setDimensionDefinitionsVarargs(value: scala.Any*): Self = StObject.set(x, "dimensionDefinitions", js.Array(value*))
     
     inline def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     

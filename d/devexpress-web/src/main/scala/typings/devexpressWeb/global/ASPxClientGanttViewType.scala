@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGanttViewType")
 @js.native
-class ASPxClientGanttViewType ()
+open class ASPxClientGanttViewType ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGanttViewType {
   

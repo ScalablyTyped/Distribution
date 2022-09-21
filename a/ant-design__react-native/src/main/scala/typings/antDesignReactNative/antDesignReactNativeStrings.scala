@@ -1,5 +1,6 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.swipeActionMod.SwipeableExcludes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +26,24 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait `account-book` extends StObject
   inline def `account-book`: `account-book` = "account-book".asInstanceOf[`account-book`]
+  
+  @js.native
+  sealed trait activateAfterLongPress
+    extends StObject
+       with SwipeableExcludes
+  inline def activateAfterLongPress: activateAfterLongPress = "activateAfterLongPress".asInstanceOf[activateAfterLongPress]
+  
+  @js.native
+  sealed trait activeOffsetX
+    extends StObject
+       with SwipeableExcludes
+  inline def activeOffsetX: activeOffsetX = "activeOffsetX".asInstanceOf[activeOffsetX]
+  
+  @js.native
+  sealed trait activeOffsetY
+    extends StObject
+       with SwipeableExcludes
+  inline def activeOffsetY: activeOffsetY = "activeOffsetY".asInstanceOf[activeOffsetY]
   
   @js.native
   sealed trait addressCity extends StObject
@@ -167,6 +186,12 @@ object antDesignReactNativeStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
+  sealed trait avgTouches
+    extends StObject
+       with SwipeableExcludes
+  inline def avgTouches: avgTouches = "avgTouches".asInstanceOf[avgTouches]
+  
+  @js.native
   sealed trait backward extends StObject
   inline def backward: backward = "backward".asInstanceOf[backward]
   
@@ -217,6 +242,22 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait `bg-colors` extends StObject
   inline def `bg-colors`: `bg-colors` = "bg-colors".asInstanceOf[`bg-colors`]
+  
+  @js.native
+  sealed trait `birthdate-day` extends StObject
+  inline def `birthdate-day`: `birthdate-day` = "birthdate-day".asInstanceOf[`birthdate-day`]
+  
+  @js.native
+  sealed trait `birthdate-full` extends StObject
+  inline def `birthdate-full`: `birthdate-full` = "birthdate-full".asInstanceOf[`birthdate-full`]
+  
+  @js.native
+  sealed trait `birthdate-month` extends StObject
+  inline def `birthdate-month`: `birthdate-month` = "birthdate-month".asInstanceOf[`birthdate-month`]
+  
+  @js.native
+  sealed trait `birthdate-year` extends StObject
+  inline def `birthdate-year`: `birthdate-year` = "birthdate-year".asInstanceOf[`birthdate-year`]
   
   @js.native
   sealed trait block extends StObject
@@ -319,6 +360,12 @@ object antDesignReactNativeStrings {
   inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
+  sealed trait cancelsTouchesInView
+    extends StObject
+       with SwipeableExcludes
+  inline def cancelsTouchesInView: cancelsTouchesInView = "cancelsTouchesInView".asInstanceOf[cancelsTouchesInView]
+  
+  @js.native
   sealed trait car extends StObject
   inline def car: car = "car".asInstanceOf[car]
   
@@ -351,6 +398,10 @@ object antDesignReactNativeStrings {
   inline def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
   
   @js.native
+  sealed trait `cc-exp-day` extends StObject
+  inline def `cc-exp-day`: `cc-exp-day` = "cc-exp-day".asInstanceOf[`cc-exp-day`]
+  
+  @js.native
   sealed trait `cc-exp-month` extends StObject
   inline def `cc-exp-month`: `cc-exp-month` = "cc-exp-month".asInstanceOf[`cc-exp-month`]
   
@@ -381,6 +432,12 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait `check-square` extends StObject
   inline def `check-square`: `check-square` = "check-square".asInstanceOf[`check-square`]
+  
+  @js.native
+  sealed trait children
+    extends StObject
+       with SwipeableExcludes
+  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
   sealed trait chrome extends StObject
@@ -691,6 +748,18 @@ object antDesignReactNativeStrings {
   inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
+  sealed trait enableTrackpadTwoFingerGesture
+    extends StObject
+       with SwipeableExcludes
+  inline def enableTrackpadTwoFingerGesture: enableTrackpadTwoFingerGesture = "enableTrackpadTwoFingerGesture".asInstanceOf[enableTrackpadTwoFingerGesture]
+  
+  @js.native
+  sealed trait enabled
+    extends StObject
+       with SwipeableExcludes
+  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
+  
+  @js.native
   sealed trait end extends StObject
   inline def end: end = "end".asInstanceOf[end]
   
@@ -753,6 +822,18 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait fade extends StObject
   inline def fade: fade = "fade".asInstanceOf[fade]
+  
+  @js.native
+  sealed trait failOffsetX
+    extends StObject
+       with SwipeableExcludes
+  inline def failOffsetX: failOffsetX = "failOffsetX".asInstanceOf[failOffsetX]
+  
+  @js.native
+  sealed trait failOffsetY
+    extends StObject
+       with SwipeableExcludes
+  inline def failOffsetY: failOffsetY = "failOffsetY".asInstanceOf[failOffsetY]
   
   @js.native
   sealed trait fall extends StObject
@@ -955,6 +1036,10 @@ object antDesignReactNativeStrings {
   inline def gateway: gateway = "gateway".asInstanceOf[gateway]
   
   @js.native
+  sealed trait gender extends StObject
+  inline def gender: gender = "gender".asInstanceOf[gender]
+  
+  @js.native
   sealed trait ghost extends StObject
   inline def ghost: ghost = "ghost".asInstanceOf[ghost]
   
@@ -1023,6 +1108,12 @@ object antDesignReactNativeStrings {
   inline def history: history = "history".asInstanceOf[history]
   
   @js.native
+  sealed trait hitSlop
+    extends StObject
+       with SwipeableExcludes
+  inline def hitSlop: hitSlop = "hitSlop".asInstanceOf[hitSlop]
+  
+  @js.native
   sealed trait home extends StObject
   inline def home: home = "home".asInstanceOf[home]
   
@@ -1037,6 +1128,12 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait html5 extends StObject
   inline def html5: html5 = "html5".asInstanceOf[html5]
+  
+  @js.native
+  sealed trait id
+    extends StObject
+       with SwipeableExcludes
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait idcard extends StObject
@@ -1211,6 +1308,12 @@ object antDesignReactNativeStrings {
   inline def man: man = "man".asInstanceOf[man]
   
   @js.native
+  sealed trait maxPointers
+    extends StObject
+       with SwipeableExcludes
+  inline def maxPointers: maxPointers = "maxPointers".asInstanceOf[maxPointers]
+  
+  @js.native
   sealed trait md extends StObject
   inline def md: md = "md".asInstanceOf[md]
   
@@ -1259,6 +1362,36 @@ object antDesignReactNativeStrings {
   inline def middleName: middleName = "middleName".asInstanceOf[middleName]
   
   @js.native
+  sealed trait minDist
+    extends StObject
+       with SwipeableExcludes
+  inline def minDist: minDist = "minDist".asInstanceOf[minDist]
+  
+  @js.native
+  sealed trait minPointers
+    extends StObject
+       with SwipeableExcludes
+  inline def minPointers: minPointers = "minPointers".asInstanceOf[minPointers]
+  
+  @js.native
+  sealed trait minVelocity
+    extends StObject
+       with SwipeableExcludes
+  inline def minVelocity: minVelocity = "minVelocity".asInstanceOf[minVelocity]
+  
+  @js.native
+  sealed trait minVelocityX
+    extends StObject
+       with SwipeableExcludes
+  inline def minVelocityX: minVelocityX = "minVelocityX".asInstanceOf[minVelocityX]
+  
+  @js.native
+  sealed trait minVelocityY
+    extends StObject
+       with SwipeableExcludes
+  inline def minVelocityY: minVelocityY = "minVelocityY".asInstanceOf[minVelocityY]
+  
+  @js.native
   sealed trait minus extends StObject
   inline def minus: minus = "minus".asInstanceOf[minus]
   
@@ -1297,6 +1430,30 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait name extends StObject
   inline def name: name = "name".asInstanceOf[name]
+  
+  @js.native
+  sealed trait `name-family` extends StObject
+  inline def `name-family`: `name-family` = "name-family".asInstanceOf[`name-family`]
+  
+  @js.native
+  sealed trait `name-given` extends StObject
+  inline def `name-given`: `name-given` = "name-given".asInstanceOf[`name-given`]
+  
+  @js.native
+  sealed trait `name-middle` extends StObject
+  inline def `name-middle`: `name-middle` = "name-middle".asInstanceOf[`name-middle`]
+  
+  @js.native
+  sealed trait `name-middle-initial` extends StObject
+  inline def `name-middle-initial`: `name-middle-initial` = "name-middle-initial".asInstanceOf[`name-middle-initial`]
+  
+  @js.native
+  sealed trait `name-prefix` extends StObject
+  inline def `name-prefix`: `name-prefix` = "name-prefix".asInstanceOf[`name-prefix`]
+  
+  @js.native
+  sealed trait `name-suffix` extends StObject
+  inline def `name-suffix`: `name-suffix` = "name-suffix".asInstanceOf[`name-suffix`]
   
   @js.native
   sealed trait namePrefix extends StObject
@@ -1367,6 +1524,36 @@ object antDesignReactNativeStrings {
   inline def off: off = "off".asInstanceOf[off]
   
   @js.native
+  sealed trait onActivated
+    extends StObject
+       with SwipeableExcludes
+  inline def onActivated: onActivated = "onActivated".asInstanceOf[onActivated]
+  
+  @js.native
+  sealed trait onBegan
+    extends StObject
+       with SwipeableExcludes
+  inline def onBegan: onBegan = "onBegan".asInstanceOf[onBegan]
+  
+  @js.native
+  sealed trait onCancelled
+    extends StObject
+       with SwipeableExcludes
+  inline def onCancelled: onCancelled = "onCancelled".asInstanceOf[onCancelled]
+  
+  @js.native
+  sealed trait onEnded
+    extends StObject
+       with SwipeableExcludes
+  inline def onEnded: onEnded = "onEnded".asInstanceOf[onEnded]
+  
+  @js.native
+  sealed trait onFailed
+    extends StObject
+       with SwipeableExcludes
+  inline def onFailed: onFailed = "onFailed".asInstanceOf[onFailed]
+  
+  @js.native
   sealed trait `one-to-one` extends StObject
   inline def `one-to-one`: `one-to-one` = "one-to-one".asInstanceOf[`one-to-one`]
   
@@ -1393,6 +1580,10 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait password extends StObject
   inline def password: password = "password".asInstanceOf[password]
+  
+  @js.native
+  sealed trait `password-new` extends StObject
+  inline def `password-new`: `password-new` = "password-new".asInstanceOf[`password-new`]
   
   @js.native
   sealed trait pause extends StObject
@@ -1463,6 +1654,30 @@ object antDesignReactNativeStrings {
   inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
+  sealed trait `postal-address` extends StObject
+  inline def `postal-address`: `postal-address` = "postal-address".asInstanceOf[`postal-address`]
+  
+  @js.native
+  sealed trait `postal-address-country` extends StObject
+  inline def `postal-address-country`: `postal-address-country` = "postal-address-country".asInstanceOf[`postal-address-country`]
+  
+  @js.native
+  sealed trait `postal-address-extended` extends StObject
+  inline def `postal-address-extended`: `postal-address-extended` = "postal-address-extended".asInstanceOf[`postal-address-extended`]
+  
+  @js.native
+  sealed trait `postal-address-extended-postal-code` extends StObject
+  inline def `postal-address-extended-postal-code`: `postal-address-extended-postal-code` = "postal-address-extended-postal-code".asInstanceOf[`postal-address-extended-postal-code`]
+  
+  @js.native
+  sealed trait `postal-address-locality` extends StObject
+  inline def `postal-address-locality`: `postal-address-locality` = "postal-address-locality".asInstanceOf[`postal-address-locality`]
+  
+  @js.native
+  sealed trait `postal-address-region` extends StObject
+  inline def `postal-address-region`: `postal-address-region` = "postal-address-region".asInstanceOf[`postal-address-region`]
+  
+  @js.native
   sealed trait `postal-code` extends StObject
   inline def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
   
@@ -1529,14 +1744,6 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait `radar-chart` extends StObject
   inline def `radar-chart`: `radar-chart` = "radar-chart".asInstanceOf[`radar-chart`]
-  
-  @js.native
-  sealed trait radiobutton_checked extends StObject
-  inline def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  
-  @js.native
-  sealed trait radiobutton_unchecked extends StObject
-  inline def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
   sealed trait `radius-bottomleft` extends StObject
@@ -1707,12 +1914,24 @@ object antDesignReactNativeStrings {
   inline def `shopping-cart`: `shopping-cart` = "shopping-cart".asInstanceOf[`shopping-cart`]
   
   @js.native
+  sealed trait shouldCancelWhenOutside
+    extends StObject
+       with SwipeableExcludes
+  inline def shouldCancelWhenOutside: shouldCancelWhenOutside = "shouldCancelWhenOutside".asInstanceOf[shouldCancelWhenOutside]
+  
+  @js.native
   sealed trait shrink extends StObject
   inline def shrink: shrink = "shrink".asInstanceOf[shrink]
   
   @js.native
   sealed trait simple extends StObject
   inline def simple: simple = "simple".asInstanceOf[simple]
+  
+  @js.native
+  sealed trait simultaneousHandlers
+    extends StObject
+       with SwipeableExcludes
+  inline def simultaneousHandlers: simultaneousHandlers = "simultaneousHandlers".asInstanceOf[simultaneousHandlers]
   
   @js.native
   sealed trait sisternode extends StObject
@@ -1765,6 +1984,10 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait smile extends StObject
   inline def smile: smile = "smile".asInstanceOf[smile]
+  
+  @js.native
+  sealed trait `sms-otp` extends StObject
+  inline def `sms-otp`: `sms-otp` = "sms-otp".asInstanceOf[`sms-otp`]
   
   @js.native
   sealed trait snippets extends StObject
@@ -1895,8 +2118,26 @@ object antDesignReactNativeStrings {
   inline def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
+  sealed trait `tel-country-code` extends StObject
+  inline def `tel-country-code`: `tel-country-code` = "tel-country-code".asInstanceOf[`tel-country-code`]
+  
+  @js.native
+  sealed trait `tel-device` extends StObject
+  inline def `tel-device`: `tel-device` = "tel-device".asInstanceOf[`tel-device`]
+  
+  @js.native
+  sealed trait `tel-national` extends StObject
+  inline def `tel-national`: `tel-national` = "tel-national".asInstanceOf[`tel-national`]
+  
+  @js.native
   sealed trait telephoneNumber extends StObject
   inline def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
+  
+  @js.native
+  sealed trait testID
+    extends StObject
+       with SwipeableExcludes
+  inline def testID: testID = "testID".asInstanceOf[testID]
   
   @js.native
   sealed trait text extends StObject
@@ -2031,6 +2272,10 @@ object antDesignReactNativeStrings {
   inline def username: username = "username".asInstanceOf[username]
   
   @js.native
+  sealed trait `username-new` extends StObject
+  inline def `username-new`: `username-new` = "username-new".asInstanceOf[`username-new`]
+  
+  @js.native
   sealed trait verified extends StObject
   inline def verified: verified = "verified".asInstanceOf[verified]
   
@@ -2065,6 +2310,12 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait `video-camera-add` extends StObject
   inline def `video-camera-add`: `video-camera-add` = "video-camera-add".asInstanceOf[`video-camera-add`]
+  
+  @js.native
+  sealed trait waitFor
+    extends StObject
+       with SwipeableExcludes
+  inline def waitFor: waitFor = "waitFor".asInstanceOf[waitFor]
   
   @js.native
   sealed trait wallet extends StObject

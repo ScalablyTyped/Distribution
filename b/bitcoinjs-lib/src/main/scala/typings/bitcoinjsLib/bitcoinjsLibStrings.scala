@@ -1,11 +1,66 @@
 package typings.bitcoinjsLib
 
+import typings.bitcoinjsLib.cryptoMod.TaggedHashPrefix
 import typings.bitcoinjsLib.psbtMod.AllScriptType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bitcoinjsLibStrings {
+  
+  @js.native
+  sealed trait BIP0340Slashaux
+    extends StObject
+       with TaggedHashPrefix
+  inline def BIP0340Slashaux: BIP0340Slashaux = "BIP0340/aux".asInstanceOf[BIP0340Slashaux]
+  
+  @js.native
+  sealed trait BIP0340Slashchallenge
+    extends StObject
+       with TaggedHashPrefix
+  inline def BIP0340Slashchallenge: BIP0340Slashchallenge = "BIP0340/challenge".asInstanceOf[BIP0340Slashchallenge]
+  
+  @js.native
+  sealed trait BIP0340Slashnonce
+    extends StObject
+       with TaggedHashPrefix
+  inline def BIP0340Slashnonce: BIP0340Slashnonce = "BIP0340/nonce".asInstanceOf[BIP0340Slashnonce]
+  
+  @js.native
+  sealed trait `KeyAgg coefficient`
+    extends StObject
+       with TaggedHashPrefix
+  inline def `KeyAgg coefficient`: `KeyAgg coefficient` = ("KeyAgg coefficient").asInstanceOf[`KeyAgg coefficient`]
+  
+  @js.native
+  sealed trait `KeyAgg list`
+    extends StObject
+       with TaggedHashPrefix
+  inline def `KeyAgg list`: `KeyAgg list` = ("KeyAgg list").asInstanceOf[`KeyAgg list`]
+  
+  @js.native
+  sealed trait TapBranch
+    extends StObject
+       with TaggedHashPrefix
+  inline def TapBranch: TapBranch = "TapBranch".asInstanceOf[TapBranch]
+  
+  @js.native
+  sealed trait TapLeaf
+    extends StObject
+       with TaggedHashPrefix
+  inline def TapLeaf: TapLeaf = "TapLeaf".asInstanceOf[TapLeaf]
+  
+  @js.native
+  sealed trait TapSighash
+    extends StObject
+       with TaggedHashPrefix
+  inline def TapSighash: TapSighash = "TapSighash".asInstanceOf[TapSighash]
+  
+  @js.native
+  sealed trait TapTweak
+    extends StObject
+       with TaggedHashPrefix
+  inline def TapTweak: TapTweak = "TapTweak".asInstanceOf[TapTweak]
   
   @js.native
   sealed trait multisig

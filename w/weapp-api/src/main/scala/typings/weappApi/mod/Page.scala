@@ -14,7 +14,7 @@ trait Page extends StObject {
     *    1. 直接修改 this.data 无效，无法改变页面的状态，还会造成数据不一致。
     *    2. 单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据。
     */
-  def setData(data: js.Any): Unit
+  def setData(data: Any): Unit
 }
 object Page {
   
@@ -24,6 +24,6 @@ object Page {
   
   extension [Self <: Page](x: Self) {
     
-    inline def setSetData(value: js.Any => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: Any => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

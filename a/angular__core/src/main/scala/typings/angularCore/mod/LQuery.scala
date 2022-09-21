@@ -41,7 +41,7 @@ object LQuery {
     
     inline def setMatchesNull: Self = StObject.set(x, "matches", null)
     
-    inline def setMatchesVarargs(value: (T | Null)*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: (T | Null)*): Self = StObject.set(x, "matches", js.Array(value*))
     
     inline def setQueryList(value: QueryList[T]): Self = StObject.set(x, "queryList", value.asInstanceOf[js.Any])
     

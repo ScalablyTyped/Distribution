@@ -18,8 +18,8 @@ trait Mesh
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#addComponent)
     */
-  def addComponent(component: MeshComponent): Unit = js.native
-  def addComponent(component: MeshComponentProperties): Unit = js.native
+  def addComponent(component: MeshComponent): scala.Unit = js.native
+  def addComponent(component: MeshComponentProperties): scala.Unit = js.native
   
   /**
     * Centers the mesh at the specified location without changing its scale.
@@ -49,7 +49,7 @@ trait Mesh
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#removeComponent)
     */
-  def removeComponent(component: MeshComponent): Unit = js.native
+  def removeComponent(component: MeshComponent): scala.Unit = js.native
   
   /**
     * Rotates the mesh geometry around its x, y and z axis (in that order).
@@ -87,5 +87,5 @@ trait Mesh
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributesChanged)
     */
-  def vertexAttributesChanged(): Unit = js.native
+  def vertexAttributesChanged(): scala.Unit = js.native
 }

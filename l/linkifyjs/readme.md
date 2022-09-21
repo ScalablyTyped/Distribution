@@ -4,21 +4,21 @@
 Typings are for version 2.1
 
 ## Library description:
-Intelligent link recognition, made easy
+Find URLs, email addresses, #hashtags and @mentions in plain-text strings, then convert them into HTML <a> links.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | linkifyjs |
-| Keywords           | jquery, link, autolink, text, url, email, hashtag, hashtags, mention, mentions |
-| # releases         | 2 |
-| # dependents       | 86 |
-| # downloads        | 6167601 |
-| # stars            | 4 |
+| Keywords           | autolink, email, hashtag, html, jquery, link, mention, react, twitter, url |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 1907553.6666666667 |
+| # stars            | 1250.0 |
 
 ## Links
-- [Homepage](https://github.com/SoapBox/linkifyjs#readme)
-- [Bugs](https://github.com/SoapBox/linkifyjs/issues)
-- [Repository](https://github.com/SoapBox/linkifyjs)
+- [Homepage](https://linkify.js.org)
+- [Bugs](https://github.com/Hypercontext/linkifyjs/issues)
+- [Repository](https://github.com/Hypercontext/linkifyjs)
 - [Npm](https://www.npmjs.com/package/linkifyjs)
     
 

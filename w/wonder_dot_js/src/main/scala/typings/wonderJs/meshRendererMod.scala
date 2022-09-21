@@ -13,7 +13,7 @@ object meshRendererMod {
   
   @JSImport("wonder.js/dist/es2015/component/renderer/MeshRenderer", "MeshRenderer")
   @js.native
-  class MeshRenderer () extends RendererComponent {
+  open class MeshRenderer () extends RendererComponent {
     
     /* protected */ def createDrawCommand(target: GameObject, geometry: Geometry, camera: GameObject): QuadCommand = js.native
     

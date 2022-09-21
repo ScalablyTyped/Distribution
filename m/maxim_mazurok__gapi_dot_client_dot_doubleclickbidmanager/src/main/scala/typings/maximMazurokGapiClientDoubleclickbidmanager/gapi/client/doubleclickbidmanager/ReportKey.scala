@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReportKey extends StObject {
   
-  /** Query ID. */
+  /** Output only. Query ID. */
   var queryId: js.UndefOr[String] = js.undefined
   
-  /** Report ID. */
+  /** Output only. Report ID. */
   var reportId: js.UndefOr[String] = js.undefined
 }
 object ReportKey {

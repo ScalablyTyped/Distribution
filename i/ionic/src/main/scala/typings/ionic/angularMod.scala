@@ -12,7 +12,7 @@ object angularMod {
   
   @JSImport("ionic/lib/project/angular", "AngularProject")
   @js.native
-  class AngularProject protected () extends Project {
+  open class AngularProject protected () extends Project {
     def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
     
     @JSName("type")

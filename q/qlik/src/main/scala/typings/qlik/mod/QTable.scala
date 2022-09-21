@@ -50,16 +50,16 @@ object QTable {
     
     inline def setHeaders(value: js.Array[QHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: QHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: QHeader*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     inline def setRows(value: js.Array[QRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: QRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: QRow*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setTotals(value: js.Array[QMeasureCell]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
-    inline def setTotalsVarargs(value: QMeasureCell*): Self = StObject.set(x, "totals", js.Array(value :_*))
+    inline def setTotalsVarargs(value: QMeasureCell*): Self = StObject.set(x, "totals", js.Array(value*))
   }
 }

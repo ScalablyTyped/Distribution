@@ -1,20 +1,27 @@
 package typings.typescript.mod.server
 
+import typings.typescript.typescriptStrings.actionColonColoninvalidate
+import typings.typescript.typescriptStrings.actionColonColonpackageInstalled
+import typings.typescript.typescriptStrings.actionColonColonset
+import typings.typescript.typescriptStrings.eventColonColonbeginInstallTypes
+import typings.typescript.typescriptStrings.eventColonColonendInstallTypes
+import typings.typescript.typescriptStrings.eventColonColoninitializationFailed
+import typings.typescript.typescriptStrings.eventColonColontypesRegistry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActionInvalidate = typings.typescript.typescriptStrings.actionColonColoninvalidate
+type ActionInvalidate = actionColonColoninvalidate
 
-type ActionPackageInstalled = typings.typescript.typescriptStrings.actionColonColonpackageInstalled
+type ActionPackageInstalled = actionColonColonpackageInstalled
 
-type ActionSet = typings.typescript.typescriptStrings.actionColonColonset
+type ActionSet = actionColonColonset
 
-type EventBeginInstallTypes = typings.typescript.typescriptStrings.eventColonColonbeginInstallTypes
+type EventBeginInstallTypes = eventColonColonbeginInstallTypes
 
-type EventEndInstallTypes = typings.typescript.typescriptStrings.eventColonColonendInstallTypes
+type EventEndInstallTypes = eventColonColonendInstallTypes
 
-type EventInitializationFailed = typings.typescript.typescriptStrings.eventColonColoninitializationFailed
+type EventInitializationFailed = eventColonColoninitializationFailed
 
-type EventTypesRegistry = typings.typescript.typescriptStrings.eventColonColontypesRegistry
+type EventTypesRegistry = eventColonColontypesRegistry

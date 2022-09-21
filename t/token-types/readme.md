@@ -1,7 +1,7 @@
 
 # Scala.js typings for token-types
 
-Typings are for version 2.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Common token types for decoding and encoding numeric and string values
@@ -10,10 +10,10 @@ Common token types for decoding and encoding numeric and string values
 | ------------------ | :-------------: |
 | Full name          | token-types |
 | Keywords           | token, integer, unsigned, numeric, float, IEEE, 754, strtok3 |
-| # releases         | 14 |
-| # dependents       | 5 |
-| # downloads        | 6605481 |
-| # stars            | 0 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 7237638.333333333 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/Borewit/token-types#readme)

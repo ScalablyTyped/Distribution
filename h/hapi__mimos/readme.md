@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__mimos
 
-Typings are for version 4.1
+Typings are for version 7.0.0
 
 ## Library description:
 Mime database interface
@@ -10,10 +10,10 @@ Mime database interface
 | ------------------ | :-------------: |
 | Full name          | @hapi/mimos |
 | Keywords           | mime, database, content-type |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 13387645 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2338121.6666666665 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/mimos#readme)
@@ -24,7 +24,7 @@ Mime database interface
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

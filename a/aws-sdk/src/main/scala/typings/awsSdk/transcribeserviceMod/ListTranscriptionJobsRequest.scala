@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTranscriptionJobsRequest extends StObject {
   
   /**
-    * When specified, the jobs returned in the list are limited to jobs whose name contains the specified string.
+    * Returns only the transcription jobs that contain the specified string. The search is not case sensitive.
     */
   var JobNameContains: js.UndefOr[TranscriptionJobName] = js.undefined
   
   /**
-    * The maximum number of jobs to return in the response. If there are fewer results in the list, this response contains only the actual results.
+    * The maximum number of transcription jobs to return in each page of results. If there are fewer results than the value you specify, only the actual results are returned. If you don't specify a value, a default of 5 is used.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.undefined
   
   /**
-    * If the result of the previous request to ListTranscriptionJobs was truncated, include the NextToken to fetch the next set of jobs.
+    * If your ListTranscriptionJobs request returns more results than can be displayed, NextToken is displayed in the response with an associated string. To get the next page of results, copy this string and repeat your request, including NextToken with the value of the copied string. Repeat as needed to view all your results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
-    * When specified, returns only transcription jobs with the specified status. Jobs are ordered by creation date, with the newest jobs returned first. If you don’t specify a status, Amazon Transcribe returns all transcription jobs ordered by creation date. 
+    * Returns only transcription jobs with the specified status. Jobs are ordered by creation date, with the newest job first. If you don't include Status, all transcription jobs are returned.
     */
   var Status: js.UndefOr[TranscriptionJobStatus] = js.undefined
 }

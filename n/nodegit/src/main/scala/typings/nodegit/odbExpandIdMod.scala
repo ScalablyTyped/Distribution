@@ -10,7 +10,7 @@ object odbExpandIdMod {
   
   @JSImport("nodegit/odb-expand-id", "OdbExpandId")
   @js.native
-  class OdbExpandId () extends StObject {
+  open class OdbExpandId () extends StObject {
     
     var id: Oid = js.native
     

@@ -1,16 +1,21 @@
 package typings.googleCloudStorage.fileMod
 
-import typings.googleCloudCommon.mod.ServiceObject
-import typings.googleCloudCommon.utilMod.Duplexify
 import typings.googleCloudStorage.aclMod.Acl
+import typings.googleCloudStorage.bucketMod.AvailableServiceObjectMethods
 import typings.googleCloudStorage.bucketMod.Bucket
+import typings.googleCloudStorage.crc32cMod.CRC32CValidator
+import typings.googleCloudStorage.crc32cMod.CRC32CValidatorGenerator
+import typings.googleCloudStorage.nodejsCommonMod.ServiceObject
 import typings.googleCloudStorage.signerMod.GetSignedUrlCallback
 import typings.googleCloudStorage.signerMod.GetSignedUrlResponse
 import typings.googleCloudStorage.signerMod.URLSigner
+import typings.googleCloudStorage.storageMod.PreconditionOptions
 import typings.googleCloudStorage.storageMod.Storage
-import typings.node.Buffer
+import typings.googleCloudStorage.utilMod.Duplexify
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
+import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,34 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("@google-cloud/storage/build/src/file", "File")
 @js.native
-class File protected () extends ServiceObject[File] {
-  /**
-    * @typedef {object} FileOptions Options passed to the File constructor.
-    * @property {string} [encryptionKey] A custom encryption key.
-    * @property {number} [generation] Generation to scope the file to.
-    * @property {string} [kmsKeyName] Cloud KMS Key used to encrypt this
-    *     object, if the object is encrypted by such a key. Limited availability;
-    *     usable only by enabled projects.
-    * @property {string} [userProject] The ID of the project which will be
-    *     billed for all requests made from File object.
-    */
-  /**
-    * Constructs a file object.
-    *
-    * @param {Bucket} bucket The Bucket instance this file is
-    *     attached to.
-    * @param {string} name The name of the remote file.
-    * @param {FileOptions} [options] Configuration options.
-    * @example
-    * const {Storage} = require('@google-cloud/storage');
-    * const storage = new Storage();
-    * const myBucket = storage.bucket('my-bucket');
-    *
-    * const file = myBucket.file('my-file');
-    */
-  def this(bucket: Bucket, name: String) = this()
-  def this(bucket: Bucket, name: String, options: FileOptions) = this()
-  
+open class File protected () extends ServiceObject[File] {
   /**
     * Cloud Storage uses access control lists (ACLs) to manage object and
     * bucket access. ACLs are the mechanism you use to share objects with other
@@ -65,12 +43,13 @@ class File protected () extends ServiceObject[File] {
     * The `acl` object on a File instance provides methods to get you a list of
     * the ACLs defined on your bucket, as well as set, update, and delete them.
     *
-    * @see [About Access Control lists]{@link http://goo.gl/6qBBPO}
+    * See {@link http://goo.gl/6qBBPO| About Access Control lists}
     *
     * @name File#acl
     * @mixes Acl
     *
     * @example
+    * ```
     * const {Storage} = require('@google-cloud/storage');
     * const storage = new Storage();
     * const myBucket = storage.bucket('my-bucket');
@@ -93,10 +72,133 @@ class File protected () extends ServiceObject[File] {
     *   const aclObject = data[0];
     *   const apiResponse = data[1];
     * });
+    * ```
     */
+  /**
+    * The API-formatted resource description of the file.
+    *
+    * Note: This is not guaranteed to be up-to-date when accessed. To get the
+    * latest record, call the `getMetadata()` method.
+    *
+    * @name File#metadata
+    * @type {object}
+    */
+  /**
+    * The file's name.
+    * @name File#name
+    * @type {string}
+    */
+  /**
+    * @callback Crc32cGeneratorToStringCallback
+    * A method returning the CRC32C as a base64-encoded string.
+    *
+    * @returns {string}
+    *
+    * @example
+    * Hashing the string 'data' should return 'rth90Q=='
+    *
+    * ```js
+    * const buffer = Buffer.from('data');
+    * crc32c.update(buffer);
+    * crc32c.toString(); // 'rth90Q=='
+    * ```
+    **/
+  /**
+    * @callback Crc32cGeneratorValidateCallback
+    * A method validating a base64-encoded CRC32C string.
+    *
+    * @param {string} [value] base64-encoded CRC32C string to validate
+    * @returns {boolean}
+    *
+    * @example
+    * Should return `true` if the value matches, `false` otherwise
+    *
+    * ```js
+    * const buffer = Buffer.from('data');
+    * crc32c.update(buffer);
+    * crc32c.validate('DkjKuA=='); // false
+    * crc32c.validate('rth90Q=='); // true
+    * ```
+    **/
+  /**
+    * @callback Crc32cGeneratorUpdateCallback
+    * A method for passing `Buffer`s for CRC32C generation.
+    *
+    * @param {Buffer} [data] data to update CRC32C value with
+    * @returns {undefined}
+    *
+    * @example
+    * Hashing buffers from 'some ' and 'text\n'
+    *
+    * ```js
+    * const buffer1 = Buffer.from('some ');
+    * crc32c.update(buffer1);
+    *
+    * const buffer2 = Buffer.from('text\n');
+    * crc32c.update(buffer2);
+    *
+    * crc32c.toString(); // 'DkjKuA=='
+    * ```
+    **/
+  /**
+    * @typedef {object} CRC32CValidator
+    * @property {Crc32cGeneratorToStringCallback}
+    * @property {Crc32cGeneratorValidateCallback}
+    * @property {Crc32cGeneratorUpdateCallback}
+    */
+  /**
+    * @callback Crc32cGeneratorCallback
+    * @returns {CRC32CValidator}
+    */
+  /**
+    * @typedef {object} FileOptions Options passed to the File constructor.
+    * @property {string} [encryptionKey] A custom encryption key.
+    * @property {number} [generation] Generation to scope the file to.
+    * @property {string} [kmsKeyName] Cloud KMS Key used to encrypt this
+    *     object, if the object is encrypted by such a key. Limited availability;
+    *     usable only by enabled projects.
+    * @property {string} [userProject] The ID of the project which will be
+    *     billed for all requests made from File object.
+    * @property {Crc32cGeneratorCallback} [callback] A function that generates a CRC32C Validator. Defaults to {@link CRC32C}
+    */
+  /**
+    * Constructs a file object.
+    *
+    * @param {Bucket} bucket The Bucket instance this file is
+    *     attached to.
+    * @param {string} name The name of the remote file.
+    * @param {FileOptions} [options] Configuration options.
+    * @example
+    * ```
+    * const {Storage} = require('@google-cloud/storage');
+    * const storage = new Storage();
+    * const myBucket = storage.bucket('my-bucket');
+    *
+    * const file = myBucket.file('my-file');
+    * ```
+    */
+  def this(bucket: Bucket, name: String) = this()
+  def this(bucket: Bucket, name: String, options: FileOptions) = this()
+  
   var acl: Acl = js.native
   
   var bucket: Bucket = js.native
+  
+  /**
+    * The object's Cloud Storage URI (`gs://`)
+    *
+    * @example
+    * ```ts
+    * const {Storage} = require('@google-cloud/storage');
+    * const storage = new Storage();
+    * const bucket = storage.bucket('my-bucket');
+    * const file = bucket.file('image.png');
+    *
+    * // `gs://my-bucket/image.png`
+    * const href = file.cloudStorageURI.href;
+    * ```
+    */
+  def cloudStorageURI: URL_ = js.native
   
   def copy(destination: String): js.Promise[CopyResponse] = js.native
   def copy(destination: String, callback: CopyCallback): Unit = js.native
@@ -110,6 +212,10 @@ class File protected () extends ServiceObject[File] {
   def copy(destination: File, callback: CopyCallback): Unit = js.native
   def copy(destination: File, options: CopyOptions): js.Promise[CopyResponse] = js.native
   def copy(destination: File, options: CopyOptions, callback: CopyCallback): Unit = js.native
+  
+  def crc32cGenerator(): CRC32CValidator = js.native
+  @JSName("crc32cGenerator")
+  var crc32cGenerator_Original: CRC32CValidatorGenerator = js.native
   
   /**
     * @typedef {object} CreateReadStreamOptions Configuration options for File#createReadStream.
@@ -145,11 +251,6 @@ class File protected () extends ServiceObject[File] {
     * code "CONTENT_DOWNLOAD_MISMATCH". If you receive this error, the best
     * recourse is to try downloading the file again.
     *
-    * For faster crc32c computation, you must manually install
-    * [`fast-crc32c`](https://www.npmjs.com/package/fast-crc32c):
-    *
-    *     $ npm install --save fast-crc32c
-    *
     * NOTE: Readable streams will emit the `end` event when the file is fully
     * downloaded.
     *
@@ -157,6 +258,7 @@ class File protected () extends ServiceObject[File] {
     * @returns {ReadableStream}
     *
     * @example
+    * ```
     * //-
     * // <h4>Downloading a File</h4>
     * //
@@ -204,6 +306,7 @@ class File protected () extends ServiceObject[File] {
     *   })
     *   .on('error', function(err) {})
     *   .pipe(fs.createWriteStream('/Users/stephen/logfile.txt'));
+    * ```
     */
   def createReadStream(): Readable = js.native
   def createReadStream(options: CreateReadStreamOptions): Readable = js.native
@@ -215,10 +318,6 @@ class File protected () extends ServiceObject[File] {
   
   /**
     * @typedef {object} CreateWriteStreamOptions Configuration options for File#createWriteStream().
-    * @property {string} [configPath] **This only applies to resumable
-    *     uploads.** A full JSON file path to use with `gcs-resumable-upload`.
-    *     This maps to the [configstore option by the same
-    * name](https://github.com/yeoman/configstore/tree/0df1ec950d952b1f0dfb39ce22af8e505dffc71a#configpath).
     * @property {string} [contentType] Alias for
     *     `options.metadata.contentType`. If set to `auto`, the file name is used
     *     to determine the contentType.
@@ -227,31 +326,30 @@ class File protected () extends ServiceObject[File] {
     * should be gzipped. This will set `options.metadata.contentEncoding` to
     * `gzip` if necessary.
     * @property {object} [metadata] See the examples below or
-    *     [Objects: insert request
-    * body](https://cloud.google.com/storage/docs/json_api/v1/objects/insert#request_properties_JSON)
+    *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert#request_properties_JSON| Objects: insert request body}
     *     for more details.
     * @property {number} [offset] The starting byte of the upload stream, for
     *     resuming an interrupted upload. Defaults to 0.
     * @property {string} [predefinedAcl] Apply a predefined set of access
-    *     controls to this object.
+    * controls to this object.
     *
-    *     Acceptable values are:
-    *     - **`authenticatedRead`** - Object owner gets `OWNER` access, and
-    *       `allAuthenticatedUsers` get `READER` access.
+    * Acceptable values are:
+    * - **`authenticatedRead`** - Object owner gets `OWNER` access, and
+    *   `allAuthenticatedUsers` get `READER` access.
     *
-    *     - **`bucketOwnerFullControl`** - Object owner gets `OWNER` access, and
-    *       project team owners get `OWNER` access.
+    * - **`bucketOwnerFullControl`** - Object owner gets `OWNER` access, and
+    *   project team owners get `OWNER` access.
     *
-    *     - **`bucketOwnerRead`** - Object owner gets `OWNER` access, and project
-    *       team owners get `READER` access.
+    * - **`bucketOwnerRead`** - Object owner gets `OWNER` access, and project
+    *   team owners get `READER` access.
     *
-    *     - **`private`** - Object owner gets `OWNER` access.
+    * - **`private`** - Object owner gets `OWNER` access.
     *
-    *     - **`projectPrivate`** - Object owner gets `OWNER` access, and project
-    *       team members get access according to their roles.
+    * - **`projectPrivate`** - Object owner gets `OWNER` access, and project
+    *   team members get access according to their roles.
     *
-    *     - **`publicRead`** - Object owner gets `OWNER` access, and `allUsers`
-    * get `READER` access.
+    * - **`publicRead`** - Object owner gets `OWNER` access, and `allUsers`
+    *   get `READER` access.
     * @property {boolean} [private] Make the uploaded file private. (Alias for
     *     `options.predefinedAcl = 'private'`)
     * @property {boolean} [public] Make the uploaded file public. (Alias for
@@ -260,7 +358,7 @@ class File protected () extends ServiceObject[File] {
     *     working with streams, the file format and size is unknown until it's
     *     completely consumed. Because of this, it's best for you to be explicit
     *     for what makes sense given your input.
-    * @param {number} [timeout=60000] Set the HTTP request timeout in
+    * @property {number} [timeout=60000] Set the HTTP request timeout in
     *     milliseconds. This option is not available for resumable uploads.
     *     Default: `60000`
     * @property {string} [uri] The URI for an already-created resumable
@@ -272,7 +370,9 @@ class File protected () extends ServiceObject[File] {
     *     CRC32c checksum. You may use MD5 if preferred, but that hash is not
     *     supported for composite objects. An error will be raised if MD5 is
     *     specified but is not available. You may also choose to skip validation
-    *     completely, however this is **not recommended**.
+    *     completely, however this is **not recommended**. In addition to specifying
+    *     validation type, providing `metadata.crc32c` or `metadata.md5Hash` will
+    *     cause the server to perform validation in addition to client validation.
     *     NOTE: Validation is automatically skipped for objects that were
     *     uploaded using the `gzip` option and have already compressed content.
     */
@@ -285,12 +385,6 @@ class File protected () extends ServiceObject[File] {
     * Resumable uploads are automatically enabled and must be shut off explicitly
     * by setting `options.resumable` to `false`.
     *
-    * Resumable uploads require write access to the $HOME directory. Through
-    * [`config-store`](https://www.npmjs.com/package/configstore), some metadata
-    * is stored. By default, if the directory is not writable, we will fall back
-    * to a simple upload. However, if you explicitly request a resumable upload,
-    * and we cannot write to the config directory, we will return a
-    * `ResumableUploadError`.
     *
     * <p class="notice">
     *   There is some overhead when using a resumable upload that can cause
@@ -299,21 +393,17 @@ class File protected () extends ServiceObject[File] {
     *   resumable feature is disabled.
     * </p>
     *
-    * For faster crc32c computation, you must manually install
-    * [`fast-crc32c`](https://www.npmjs.com/package/fast-crc32c):
-    *
-    *     $ npm install --save fast-crc32c
-    *
     * NOTE: Writable streams will emit the `finish` event when the file is fully
     * uploaded.
     *
-    * @see [Upload Options (Simple or Resumable)]{@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/upload}
-    * @see [Objects: insert API Documentation]{@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert}
+    * See {@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/upload| Upload Options (Simple or Resumable)}
+    * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert| Objects: insert API Documentation}
     *
     * @param {CreateWriteStreamOptions} [options] Configuration options.
     * @returns {WritableStream}
     *
     * @example
+    * ```
     * const fs = require('fs');
     * const {Storage} = require('@google-cloud/storage');
     * const storage = new Storage();
@@ -371,56 +461,30 @@ class File protected () extends ServiceObject[File] {
     *   .on('finish', function() {
     *     // The file upload is complete.
     *   });
+    * ```
     */
   def createWriteStream(): Writable = js.native
   def createWriteStream(options: CreateWriteStreamOptions): Writable = js.native
   
-  /**
-    * Delete failed resumable upload file cache.
-    *
-    * Resumable file upload cache the config file to restart upload in case of
-    * failure. In certain scenarios, the resumable upload will not works and
-    * upload file cache needs to be deleted to upload the same file.
-    *
-    * Following are some of the scenarios.
-    *
-    * Resumable file upload failed even though the file is successfully saved
-    * on the google storage and need to clean up a resumable file cache to
-    * update the same file.
-    *
-    * Resumable file upload failed due to pre-condition
-    * (i.e generation number is not matched) and want to upload a same
-    * file with the new generation number.
-    *
-    * @example
-    * const {Storage} = require('@google-cloud/storage');
-    * const storage = new Storage();
-    * const myBucket = storage.bucket('my-bucket');
-    *
-    * const file = myBucket.file('my-file', { generation: 0 });
-    * const contents = 'This is the contents of the file.';
-    *
-    * file.save(contents, function(err) {
-    *   if (err) {
-    *     file.deleteResumableCache();
-    *   }
-    * });
-    *
-    */
-  def deleteResumableCache(): Unit = js.native
+  def disableAutoRetryConditionallyIdempotent_(coreOpts: Any, methodType: AvailableServiceObjectMethods): Unit = js.native
+  def disableAutoRetryConditionallyIdempotent_(
+    coreOpts: Any,
+    methodType: AvailableServiceObjectMethods,
+    localPreconditionOptions: PreconditionOptions
+  ): Unit = js.native
   
   def download(): js.Promise[DownloadResponse] = js.native
   def download(callback: DownloadCallback): Unit = js.native
   def download(options: DownloadOptions): js.Promise[DownloadResponse] = js.native
   def download(options: DownloadOptions, callback: DownloadCallback): Unit = js.native
   
-  /* private */ var encryptionKey: js.Any = js.native
+  /* private */ var encryptionKey: Any = js.native
   
-  /* private */ var encryptionKeyBase64: js.Any = js.native
+  /* private */ var encryptionKeyBase64: Any = js.native
   
-  /* private */ var encryptionKeyHash: js.Any = js.native
+  /* private */ var encryptionKeyHash: Any = js.native
   
-  /* private */ var encryptionKeyInterceptor: js.Any = js.native
+  /* private */ var encryptionKeyInterceptor: Any = js.native
   
   def generateSignedPostPolicyV2(callback: GenerateSignedPostPolicyV2Callback): Unit = js.native
   def generateSignedPostPolicyV2(options: GenerateSignedPostPolicyV2Options): js.Promise[GenerateSignedPostPolicyV2Response] = js.native
@@ -432,15 +496,17 @@ class File protected () extends ServiceObject[File] {
   
   var generation: js.UndefOr[Double] = js.native
   
+  /* private */ var getBufferFromReadable: Any = js.native
+  
   def getExpirationDate(): js.Promise[GetExpirationDateResponse] = js.native
   def getExpirationDate(callback: GetExpirationDateCallback): Unit = js.native
   
-  def getSignedPolicy(callback: GetSignedPolicyCallback): Unit = js.native
-  def getSignedPolicy(options: GetSignedPolicyOptions): js.Promise[GetSignedPolicyResponse] = js.native
-  def getSignedPolicy(options: GetSignedPolicyOptions, callback: GetSignedPolicyCallback): Unit = js.native
-  
   def getSignedUrl(cfg: GetSignedUrlConfig): js.Promise[GetSignedUrlResponse] = js.native
   def getSignedUrl(cfg: GetSignedUrlConfig, callback: GetSignedUrlCallback): Unit = js.native
+  
+  var instancePreconditionOpts: js.UndefOr[PreconditionOptions] = js.native
+  
+  /* private */ var instanceRetryValue: Any = js.native
   
   def isPublic(): js.Promise[IsPublicResponse] = js.native
   def isPublic(callback: IsPublicCallback): Unit = js.native
@@ -473,6 +539,8 @@ class File protected () extends ServiceObject[File] {
   @JSName("parent")
   var parent_File: Bucket = js.native
   
+  /* private */ var `private`: Any = js.native
+  
   /**
     * The public URL of this File
     * Use {@link File#makePublic} to enable anonymous access via the returned URL.
@@ -480,6 +548,7 @@ class File protected () extends ServiceObject[File] {
     * @returns {string}
     *
     * @example
+    * ```
     * const {Storage} = require('@google-cloud/storage');
     * const storage = new Storage();
     * const bucket = storage.bucket('albums');
@@ -487,6 +556,7 @@ class File protected () extends ServiceObject[File] {
     *
     * // publicUrl will be "https://storage.googleapis.com/albums/my-file"
     * const publicUrl = file.publicUrl();
+    * ```
     */
   def publicUrl(): String = js.native
   
@@ -504,20 +574,25 @@ class File protected () extends ServiceObject[File] {
   def rotateEncryptionKey(options: RotateEncryptionKeyOptions): js.Promise[RotateEncryptionKeyResponse] = js.native
   def rotateEncryptionKey(options: RotateEncryptionKeyOptions, callback: RotateEncryptionKeyCallback): Unit = js.native
   
-  def save(data: js.Any): js.Promise[Unit] = js.native
-  def save(data: js.Any, callback: SaveCallback): Unit = js.native
-  def save(data: js.Any, options: SaveOptions): js.Promise[Unit] = js.native
-  def save(data: js.Any, options: SaveOptions, callback: SaveCallback): Unit = js.native
+  def save(data: String): js.Promise[Unit] = js.native
+  def save(data: String, callback: SaveCallback): Unit = js.native
+  def save(data: String, options: SaveOptions): js.Promise[Unit] = js.native
+  def save(data: String, options: SaveOptions, callback: SaveCallback): Unit = js.native
+  def save(data: Buffer): js.Promise[Unit] = js.native
+  def save(data: Buffer, callback: SaveCallback): Unit = js.native
+  def save(data: Buffer, options: SaveOptions): js.Promise[Unit] = js.native
+  def save(data: Buffer, options: SaveOptions, callback: SaveCallback): Unit = js.native
   
   /**
     * The Storage API allows you to use a custom key for server-side encryption.
     *
-    * @see [Customer-supplied Encryption Keys]{@link https://cloud.google.com/storage/docs/encryption#customer-supplied}
+    * See {@link https://cloud.google.com/storage/docs/encryption#customer-supplied| Customer-supplied Encryption Keys}
     *
     * @param {string|buffer} encryptionKey An AES-256 encryption key.
     * @returns {File}
     *
     * @example
+    * ```
     * const crypto = require('crypto');
     * const {Storage} = require('@google-cloud/storage');
     * const storage = new Storage();
@@ -544,6 +619,7 @@ class File protected () extends ServiceObject[File] {
     *   });
     * });
     *
+    * ```
     * @example <caption>include:samples/encryption.js</caption>
     * region_tag:storage_upload_encrypted_file
     * Example of uploading an encrypted file:
@@ -569,21 +645,33 @@ class File protected () extends ServiceObject[File] {
     * @param {string} userProject The user project.
     *
     * @example
+    * ```
     * const {Storage} = require('@google-cloud/storage');
     * const storage = new Storage();
     * const bucket = storage.bucket('albums');
     * const file = bucket.file('my-file');
     *
     * file.setUserProject('grape-spaceship-123');
+    * ```
     */
   def setUserProject(userProject: String): Unit = js.native
+  
+  /**
+    * A helper method for determining if a request should be retried based on preconditions.
+    * This should only be used for methods where the idempotency is determined by
+    * `ifGenerationMatch`
+    * @private
+    *
+    * A request should not be retried under the following conditions:
+    * - if precondition option `ifGenerationMatch` is not set OR
+    * - if `idempotencyStrategy` is set to `RetryNever`
+    */
+  /* private */ var shouldRetryBasedOnPreconditionAndIdempotencyStrat: Any = js.native
   
   var signer: js.UndefOr[URLSigner] = js.native
   
   /**
-    * This creates a gcs-resumable-upload upload stream.
-    *
-    * @see [gcs-resumable-upload]{@link https://github.com/stephenplusplus/gcs-resumable-upload}
+    * This creates a resumable-upload upload stream.
     *
     * @param {Duplexify} stream - Duplexify stream of data to pipe to the file.
     * @param {object=} options - Configuration object.

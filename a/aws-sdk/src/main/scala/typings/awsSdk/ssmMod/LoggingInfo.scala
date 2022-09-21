@@ -17,7 +17,7 @@ trait LoggingInfo extends StObject {
   var S3KeyPrefix: js.UndefOr[typings.awsSdk.ssmMod.S3KeyPrefix] = js.undefined
   
   /**
-    * The Region where the S3 bucket is located.
+    * The Amazon Web Services Region where the S3 bucket is located.
     */
   var S3Region: typings.awsSdk.ssmMod.S3Region
 }

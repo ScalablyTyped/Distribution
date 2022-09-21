@@ -10,13 +10,13 @@ object nonQuotedColumnParserMod {
   
   @JSImport("@fast-csv/parse/build/src/parser/column/NonQuotedColumnParser", "NonQuotedColumnParser")
   @js.native
-  class NonQuotedColumnParser protected () extends StObject {
+  open class NonQuotedColumnParser protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
-    /* private */ val columnFormatter: js.Any = js.native
+    /* private */ val columnFormatter: Any = js.native
     
     def parse(scanner: Scanner): String | Null = js.native
     
-    /* private */ val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: Any = js.native
   }
 }

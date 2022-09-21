@@ -7,31 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaUserComment extends StObject {
   
   /**
-    * Integer Android SDK version of the user&#39;s device at the time the
-    * review was written, e.g. 23 is Marshmallow. May be absent.
+    * Integer Android SDK version of the user's device at the time the review was written, e.g. 23 is Marshmallow. May be absent.
     */
-  var androidOsVersion: js.UndefOr[Double] = js.undefined
+  var androidOsVersion: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Integer version code of the app as installed at the time the review was
-    * written. May be absent.
+    * Integer version code of the app as installed at the time the review was written. May be absent.
     */
-  var appVersionCode: js.UndefOr[Double] = js.undefined
+  var appVersionCode: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * String version name of the app as installed at the time the review was
-    * written. May be absent.
+    * String version name of the app as installed at the time the review was written. May be absent.
     */
-  var appVersionName: js.UndefOr[String] = js.undefined
+  var appVersionName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Codename for the reviewer&#39;s device, e.g. klte, flounder. May be
-    * absent.
+    * Codename for the reviewer's device, e.g. klte, flounder. May be absent.
     */
-  var device: js.UndefOr[String] = js.undefined
+  var device: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Some information about the characteristics of the user&#39;s device
+    * Information about the characteristics of the user's device.
     */
   var deviceMetadata: js.UndefOr[SchemaDeviceMetadata] = js.undefined
   
@@ -41,39 +37,34 @@ trait SchemaUserComment extends StObject {
   var lastModified: js.UndefOr[SchemaTimestamp] = js.undefined
   
   /**
-    * Untranslated text of the review, in the case where the review has been
-    * translated. If the review has not been translated this is left blank.
+    * Untranslated text of the review, where the review was translated. If the review was not translated this is left blank.
     */
-  var originalText: js.UndefOr[String] = js.undefined
+  var originalText: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Language code for the reviewer. This is taken from the device settings so
-    * is not guaranteed to match the language the review is written in. May be
-    * absent.
+    * Language code for the reviewer. This is taken from the device settings so is not guaranteed to match the language the review is written in. May be absent.
     */
-  var reviewerLanguage: js.UndefOr[String] = js.undefined
+  var reviewerLanguage: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The star rating associated with the review, from 1 to 5.
     */
-  var starRating: js.UndefOr[Double] = js.undefined
+  var starRating: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The content of the comment, i.e. review body. In some cases users have
-    * been able to write a review with separate title and body; in those cases
-    * the title and body are concatenated and separated by a tab character.
+    * The content of the comment, i.e. review body. In some cases users have been able to write a review with separate title and body; in those cases the title and body are concatenated and separated by a tab character.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Number of users who have given this review a thumbs down
+    * Number of users who have given this review a thumbs down.
     */
-  var thumbsDownCount: js.UndefOr[Double] = js.undefined
+  var thumbsDownCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Number of users who have given this review a thumbs up
+    * Number of users who have given this review a thumbs up.
     */
-  var thumbsUpCount: js.UndefOr[Double] = js.undefined
+  var thumbsUpCount: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaUserComment {
   
@@ -86,13 +77,19 @@ object SchemaUserComment {
     
     inline def setAndroidOsVersion(value: Double): Self = StObject.set(x, "androidOsVersion", value.asInstanceOf[js.Any])
     
+    inline def setAndroidOsVersionNull: Self = StObject.set(x, "androidOsVersion", null)
+    
     inline def setAndroidOsVersionUndefined: Self = StObject.set(x, "androidOsVersion", js.undefined)
     
     inline def setAppVersionCode(value: Double): Self = StObject.set(x, "appVersionCode", value.asInstanceOf[js.Any])
     
+    inline def setAppVersionCodeNull: Self = StObject.set(x, "appVersionCode", null)
+    
     inline def setAppVersionCodeUndefined: Self = StObject.set(x, "appVersionCode", js.undefined)
     
     inline def setAppVersionName(value: String): Self = StObject.set(x, "appVersionName", value.asInstanceOf[js.Any])
+    
+    inline def setAppVersionNameNull: Self = StObject.set(x, "appVersionName", null)
     
     inline def setAppVersionNameUndefined: Self = StObject.set(x, "appVersionName", js.undefined)
     
@@ -102,6 +99,8 @@ object SchemaUserComment {
     
     inline def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
     
+    inline def setDeviceNull: Self = StObject.set(x, "device", null)
+    
     inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     inline def setLastModified(value: SchemaTimestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
@@ -110,25 +109,37 @@ object SchemaUserComment {
     
     inline def setOriginalText(value: String): Self = StObject.set(x, "originalText", value.asInstanceOf[js.Any])
     
+    inline def setOriginalTextNull: Self = StObject.set(x, "originalText", null)
+    
     inline def setOriginalTextUndefined: Self = StObject.set(x, "originalText", js.undefined)
     
     inline def setReviewerLanguage(value: String): Self = StObject.set(x, "reviewerLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setReviewerLanguageNull: Self = StObject.set(x, "reviewerLanguage", null)
     
     inline def setReviewerLanguageUndefined: Self = StObject.set(x, "reviewerLanguage", js.undefined)
     
     inline def setStarRating(value: Double): Self = StObject.set(x, "starRating", value.asInstanceOf[js.Any])
     
+    inline def setStarRatingNull: Self = StObject.set(x, "starRating", null)
+    
     inline def setStarRatingUndefined: Self = StObject.set(x, "starRating", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     inline def setThumbsDownCount(value: Double): Self = StObject.set(x, "thumbsDownCount", value.asInstanceOf[js.Any])
     
+    inline def setThumbsDownCountNull: Self = StObject.set(x, "thumbsDownCount", null)
+    
     inline def setThumbsDownCountUndefined: Self = StObject.set(x, "thumbsDownCount", js.undefined)
     
     inline def setThumbsUpCount(value: Double): Self = StObject.set(x, "thumbsUpCount", value.asInstanceOf[js.Any])
+    
+    inline def setThumbsUpCountNull: Self = StObject.set(x, "thumbsUpCount", null)
     
     inline def setThumbsUpCountUndefined: Self = StObject.set(x, "thumbsUpCount", js.undefined)
   }

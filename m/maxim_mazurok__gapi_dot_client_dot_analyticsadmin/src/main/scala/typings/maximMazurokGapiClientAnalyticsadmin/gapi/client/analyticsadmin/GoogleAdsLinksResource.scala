@@ -2,8 +2,8 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.Alt
-import typings.maximMazurokGapiClientAnalyticsadmin.anon.FieldsKey
-import typings.maximMazurokGapiClientAnalyticsadmin.anon.KeyName
+import typings.maximMazurokGapiClientAnalyticsadmin.anon.FieldsKeyName
+import typings.maximMazurokGapiClientAnalyticsadmin.anon.FieldsKeyOauthtoken
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.Name
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.PageSize
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.UpdateMask
@@ -16,7 +16,7 @@ trait GoogleAdsLinksResource extends StObject {
   
   def create(request: Alt, body: GoogleAnalyticsAdminV1alphaGoogleAdsLink): Request[GoogleAnalyticsAdminV1alphaGoogleAdsLink] = js.native
   /** Creates a GoogleAdsLink. */
-  def create(request: FieldsKey): Request[GoogleAnalyticsAdminV1alphaGoogleAdsLink] = js.native
+  def create(request: FieldsKeyOauthtoken): Request[GoogleAnalyticsAdminV1alphaGoogleAdsLink] = js.native
   
   /** Deletes a GoogleAdsLink on a property */
   def delete(): Request[js.Object] = js.native
@@ -27,6 +27,6 @@ trait GoogleAdsLinksResource extends StObject {
   def list(request: PageSize): Request[GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponse] = js.native
   
   /** Updates a GoogleAdsLink on a property */
-  def patch(request: KeyName): Request[GoogleAnalyticsAdminV1alphaGoogleAdsLink] = js.native
+  def patch(request: FieldsKeyName): Request[GoogleAnalyticsAdminV1alphaGoogleAdsLink] = js.native
   def patch(request: UpdateMask, body: GoogleAnalyticsAdminV1alphaGoogleAdsLink): Request[GoogleAnalyticsAdminV1alphaGoogleAdsLink] = js.native
 }

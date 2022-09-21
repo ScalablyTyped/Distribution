@@ -32,13 +32,13 @@ object helpMod {
       
       inline def setHelps(value: js.Array[String]): Self = StObject.set(x, "helps", value.asInstanceOf[js.Any])
       
-      inline def setHelpsVarargs(value: String*): Self = StObject.set(x, "helps", js.Array(value :_*))
+      inline def setHelpsVarargs(value: String*): Self = StObject.set(x, "helps", js.Array(value*))
       
       inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
     }
   }
 }

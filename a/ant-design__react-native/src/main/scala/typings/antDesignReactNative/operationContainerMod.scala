@@ -12,13 +12,12 @@ object operationContainerMod {
   
   @JSImport("@ant-design/react-native/lib/modal/OperationContainer", JSImport.Default)
   @js.native
-  class default protected () extends OperationContainer {
+  open class default protected () extends OperationContainer {
     def this(props: OperationContainerProps) = this()
   }
   
   @js.native
-  trait OperationContainer
-    extends Component[OperationContainerProps, js.Any, js.Any] {
+  trait OperationContainer extends Component[OperationContainerProps, Any, Any] {
     
     def onBackAndroid(): Boolean = js.native
     
@@ -44,7 +43,7 @@ object operationContainerMod {
       
       inline def setActions(value: js.Array[Action[TextStyle]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setOnAnimationEnd(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       

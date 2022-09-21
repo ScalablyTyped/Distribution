@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your Office Add-ins.
   *
-  * Visit "{@link https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}"
+  * Visit "{@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}"
   * for more information.
   */
 @js.native
@@ -18,13 +18,12 @@ trait UI extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi 1.2}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi 1.2}
     *
     * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.
     *
     * @param eventType Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`.
     * @param handler The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.
-    * @param options Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def addHandlerAsync(
@@ -34,9 +33,22 @@ trait UI extends StObject {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* result */ DialogParentMessageReceivedEventArgs, Unit],
-    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  /**
+    * Adds an event handler to the object using the specified event type.
+    *
+    * @remarks
+    *
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi 1.2}
+    *
+    * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.
+    *
+    * @param eventType Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`.
+    * @param handler The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.
+    * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
+    * @param callback Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.
+    */
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* result */ DialogParentMessageReceivedEventArgs, Unit],
@@ -58,9 +70,9 @@ trait UI extends StObject {
     *
     * **Requirement sets**: 
     * 
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
     * 
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.5}
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.5}
     *
     * The behavior of this method is specified by the following:
     *
@@ -82,13 +94,13 @@ trait UI extends StObject {
     *
     * **Requirement sets**:
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
     *
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.4}
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
     *
     * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
     * for Outlook. For more on how to specify a requirement set in your manifest, see
-    * {@link https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
     *
     * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
     * other domains.
@@ -127,7 +139,7 @@ trait UI extends StObject {
     *   </tr>
     *   <tr>
     *     <td>12004</td>
-    *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td>
+    *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td>
     *   </tr>
     *   <tr>
     *     <td>12005</td>
@@ -169,9 +181,9 @@ trait UI extends StObject {
     *   </tr>
     * </table>
     *
-    * @param startAddress - Accepts the initial HTTPS URL that opens in the dialog.
+    * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
     * @param options - Optional. Accepts an {@link Office.DialogOptions} object to define dialog display.
-    * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
+    * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
     */
   def displayDialogAsync(startAddress: String): Unit = js.native
   def displayDialogAsync(startAddress: String, callback: js.Function1[/* result */ AsyncResult[Dialog], Unit]): Unit = js.native
@@ -187,24 +199,29 @@ trait UI extends StObject {
     callback: js.Function1[/* result */ AsyncResult[Dialog], Unit]
   ): Unit = js.native
   
-  def messageParent(message: String): Unit = js.native
   /**
-    * Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same domain as the parent.
-    *
+    * Delivers a message from the dialog box to its parent/opener page. 
+    * 
     * @remarks
-    *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
-    *
-    * @param message Accepts a message from the dialog to deliver to the add-in. In addition to a boolean, anything that can serialized to a string including JSON and XML can be sent.
+    * 
+    * **Requirement sets**: 
+    * 
+    * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
+    * 
+    * - If the `messageOptions` parameter is used, {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
+    * 
+    * @param message Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string including JSON and XML can be sent. 
+    * @param messageOptions Optional. Provides options for how to send the message. 
     */
-  def messageParent(message: Boolean): Unit = js.native
+  def messageParent(message: String): Unit = js.native
+  def messageParent(message: String, messageOptions: DialogMessageOptions): Unit = js.native
   
   /**
     * Opens a browser window and loads the specified URL. 
     * 
     * @remarks
     * 
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-api-requirement-sets | OpenBrowserWindowApi 1.1}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets | OpenBrowserWindowApi 1.1}
     *  
     * @param url The full URL to be opened including protocol (e.g., https), and port number, if any.
     */

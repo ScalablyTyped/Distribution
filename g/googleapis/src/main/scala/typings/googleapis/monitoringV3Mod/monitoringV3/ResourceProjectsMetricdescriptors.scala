@@ -4,75 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Metricdescriptors")
 @js.native
-class ResourceProjectsMetricdescriptors protected () extends StObject {
+open class ResourceProjectsMetricdescriptors protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * monitoring.projects.metricDescriptors.create
-    * @desc Creates a new metric descriptor. User-created metric descriptors
-    * define custom metrics.
-    * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
-    *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
-    *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'create' method:
-    *
-    *     // The project on which to execute the request. The format is
-    * `"projects/{project_id_or_number}"`. name: "projects/{MY-PROJECT}",
-    *     resource: {},
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *   monitoring.projects.metricDescriptors.create(request, function(err,
-    * result) { if (err) { console.log(err); } else { console.log(result);
-    *     }
-    *   });
-    * });
-    * @alias monitoring.projects.metricDescriptors.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The project on which to execute the request. The format is "projects/{project_id_or_number}".
-    * @param {().MetricDescriptor} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def create(callback: BodyResponseCallback[SchemaMetricDescriptor]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMetricDescriptor] = js.native
@@ -83,8 +27,8 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
   ): Unit = js.native
   def create(
     params: ParamsResourceProjectsMetricdescriptorsCreate,
-    options: BodyResponseCallback[SchemaMetricDescriptor],
-    callback: BodyResponseCallback[SchemaMetricDescriptor]
+    options: BodyResponseCallback[Readable | SchemaMetricDescriptor],
+    callback: BodyResponseCallback[Readable | SchemaMetricDescriptor]
   ): Unit = js.native
   def create(params: ParamsResourceProjectsMetricdescriptorsCreate, options: MethodOptions): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def create(
@@ -92,67 +36,95 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMetricDescriptor]
   ): Unit = js.native
-  
   /**
-    * monitoring.projects.metricDescriptors.delete
-    * @desc Deletes a metric descriptor. Only user-created custom metrics can
-    * be deleted.
+    * Creates a new metric descriptor. The creation is executed asynchronously. User-created metric descriptors define custom metrics (https://cloud.google.com/monitoring/custom-metrics). The metric descriptor is updated if it already exists, except that metric labels are never removed.
     * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
     *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'delete' method:
-    *
-    *     // The metric descriptor on which to execute the request. The format
-    * is
-    *     // `"projects/{project_id_or_number}/metricDescriptors/{metric_id}"`.
-    * An example of `{metric_id}` is:
-    *     // `"custom.googleapis.com/my_test_metric"`.
-    *     name: "",
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *   monitoring.projects.metricDescriptors.delete(request, function(err,
-    * result) { if (err) { console.log(err); } else { console.log(result);
-    *     }
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.write',
+    *     ],
     *   });
-    * });
-    * @alias monitoring.projects.metricDescriptors.delete
-    * @memberOf! ()
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The metric descriptor on which to execute the request. The format is "projects/{project_id_or_number}/metricDescriptors/{metric_id}". An example of {metric_id} is: "custom.googleapis.com/my_test_metric".
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.metricDescriptors.create({
+    *     // Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) on which to execute the request. The format is: 4 projects/PROJECT_ID_OR_NUMBER
+    *     name: 'projects/my-project',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "description": "my_description",
+    *       //   "displayName": "my_displayName",
+    *       //   "labels": [],
+    *       //   "launchStage": "my_launchStage",
+    *       //   "metadata": {},
+    *       //   "metricKind": "my_metricKind",
+    *       //   "monitoredResourceTypes": [],
+    *       //   "name": "my_name",
+    *       //   "type": "my_type",
+    *       //   "unit": "my_unit",
+    *       //   "valueType": "my_valueType"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "description": "my_description",
+    *   //   "displayName": "my_displayName",
+    *   //   "labels": [],
+    *   //   "launchStage": "my_launchStage",
+    *   //   "metadata": {},
+    *   //   "metricKind": "my_metricKind",
+    *   //   "monitoredResourceTypes": [],
+    *   //   "name": "my_name",
+    *   //   "type": "my_type",
+    *   //   "unit": "my_unit",
+    *   //   "valueType": "my_valueType"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceProjectsMetricdescriptorsCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsMetricdescriptorsCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -160,8 +132,8 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
   def delete(params: ParamsResourceProjectsMetricdescriptorsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
     params: ParamsResourceProjectsMetricdescriptorsDelete,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def delete(params: ParamsResourceProjectsMetricdescriptorsDelete, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
@@ -169,67 +141,64 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * monitoring.projects.metricDescriptors.get
-    * @desc Gets a single metric descriptor. This method does not require a
-    * Stackdriver account.
+    * Deletes a metric descriptor. Only user-created custom metrics (https://cloud.google.com/monitoring/custom-metrics) can be deleted.
     * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
     *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'get' method:
-    *
-    *     // The metric descriptor on which to execute the request. The format
-    * is
-    *     // `"projects/{project_id_or_number}/metricDescriptors/{metric_id}"`.
-    * An example value of `{metric_id}`
-    *     // is `"compute.googleapis.com/instance/disk/read_bytes_count"`.
-    *     name: "",
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *   monitoring.projects.metricDescriptors.get(request, function(err,
-    * result) { if (err) { console.log(err); } else { console.log(result);
-    *     }
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *     ],
     *   });
-    * });
-    * @alias monitoring.projects.metricDescriptors.get
-    * @memberOf! ()
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The metric descriptor on which to execute the request. The format is "projects/{project_id_or_number}/metricDescriptors/{metric_id}". An example value of {metric_id} is "compute.googleapis.com/instance/disk/read_bytes_count".
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.metricDescriptors.delete({
+    *     // Required. The metric descriptor on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER]/metricDescriptors/[METRIC_ID] An example of [METRIC_ID] is: "custom.googleapis.com/my_test_metric".
+    *     name: 'projects/my-project/metricDescriptors/.*',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceProjectsMetricdescriptorsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceProjectsMetricdescriptorsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def get(callback: BodyResponseCallback[SchemaMetricDescriptor]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMetricDescriptor] = js.native
@@ -240,8 +209,8 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
   ): Unit = js.native
   def get(
     params: ParamsResourceProjectsMetricdescriptorsGet,
-    options: BodyResponseCallback[SchemaMetricDescriptor],
-    callback: BodyResponseCallback[SchemaMetricDescriptor]
+    options: BodyResponseCallback[Readable | SchemaMetricDescriptor],
+    callback: BodyResponseCallback[Readable | SchemaMetricDescriptor]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsMetricdescriptorsGet, options: MethodOptions): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def get(
@@ -249,76 +218,78 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMetricDescriptor]
   ): Unit = js.native
-  
   /**
-    * monitoring.projects.metricDescriptors.list
-    * @desc Lists metric descriptors that match a filter. This method does not
-    * require a Stackdriver account.
+    * Gets a single metric descriptor.
     * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
     *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'list' method:
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.read',
+    *       'https://www.googleapis.com/auth/monitoring.write',
+    *     ],
+    *   });
     *
-    *     // The project on which to execute the request. The format is
-    * `"projects/{project_id_or_number}"`. name: "projects/{MY-PROJECT}",
-    *     // Auth client
-    *     auth: authClient
-    *   };
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
     *
+    *   // Do the magic
+    *   const res = await monitoring.projects.metricDescriptors.get({
+    *     // Required. The metric descriptor on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER]/metricDescriptors/[METRIC_ID] An example value of [METRIC_ID] is "compute.googleapis.com/instance/disk/read_bytes_count".
+    *     name: 'projects/my-project/metricDescriptors/.*',
+    *   });
+    *   console.log(res.data);
     *
-    *   var recur = function(err, result) {
-    *     if (err) {
-    *       console.log(err);
-    *     } else {
-    *       console.log(result);
-    *       if (result.nextPageToken) {
-    *         request.pageToken = result.nextPageToken;
-    *         monitoring.projects.metricDescriptors.list(request, recur);
-    *       }
-    *     }
-    *   };
+    *   // Example response
+    *   // {
+    *   //   "description": "my_description",
+    *   //   "displayName": "my_displayName",
+    *   //   "labels": [],
+    *   //   "launchStage": "my_launchStage",
+    *   //   "metadata": {},
+    *   //   "metricKind": "my_metricKind",
+    *   //   "monitoredResourceTypes": [],
+    *   //   "name": "my_name",
+    *   //   "type": "my_type",
+    *   //   "unit": "my_unit",
+    *   //   "valueType": "my_valueType"
+    *   // }
+    * }
     *
-    *   monitoring.projects.metricDescriptors.list(request, recur);
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
-    * @alias monitoring.projects.metricDescriptors.list
-    * @memberOf! ()
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter If this field is empty, all custom and system-defined metric descriptors are returned. Otherwise, the filter specifies which metric descriptors are to be returned. For example, the following filter matches all custom metrics: metric.type = starts_with("custom.googleapis.com/")
-    * @param {string} params.name The project on which to execute the request. The format is "projects/{project_id_or_number}".
-    * @param {integer=} params.pageSize A positive number that is the maximum number of results to return.
-    * @param {string=} params.pageToken If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceProjectsMetricdescriptorsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsMetricdescriptorsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListMetricDescriptorsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMetricDescriptorsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListMetricDescriptorsResponse] = js.native
@@ -329,13 +300,81 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsMetricdescriptorsList,
-    options: BodyResponseCallback[SchemaListMetricDescriptorsResponse],
-    callback: BodyResponseCallback[SchemaListMetricDescriptorsResponse]
+    options: BodyResponseCallback[Readable | SchemaListMetricDescriptorsResponse],
+    callback: BodyResponseCallback[Readable | SchemaListMetricDescriptorsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsMetricdescriptorsList, options: MethodOptions): GaxiosPromise[SchemaListMetricDescriptorsResponse] = js.native
   def list(
     params: ParamsResourceProjectsMetricdescriptorsList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListMetricDescriptorsResponse]
+  ): Unit = js.native
+  /**
+    * Lists metric descriptors that match a filter.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.read',
+    *       'https://www.googleapis.com/auth/monitoring.write',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.metricDescriptors.list({
+    *     // If this field is empty, all custom and system-defined metric descriptors are returned. Otherwise, the filter (https://cloud.google.com/monitoring/api/v3/filters) specifies which metric descriptors are to be returned. For example, the following filter matches all custom metrics (https://cloud.google.com/monitoring/custom-metrics): metric.type = starts_with("custom.googleapis.com/")
+    *     filter: 'placeholder-value',
+    *     // Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER]
+    *     name: 'projects/my-project',
+    *     // A positive number that is the maximum number of results to return.
+    *     pageSize: 'placeholder-value',
+    *     // If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "metricDescriptors": [],
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceProjectsMetricdescriptorsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsMetricdescriptorsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

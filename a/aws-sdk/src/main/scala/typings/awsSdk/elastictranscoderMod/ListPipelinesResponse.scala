@@ -33,6 +33,6 @@ object ListPipelinesResponse {
     
     inline def setPipelinesUndefined: Self = StObject.set(x, "Pipelines", js.undefined)
     
-    inline def setPipelinesVarargs(value: Pipeline*): Self = StObject.set(x, "Pipelines", js.Array(value :_*))
+    inline def setPipelinesVarargs(value: Pipeline*): Self = StObject.set(x, "Pipelines", js.Array(value*))
   }
 }

@@ -39,7 +39,7 @@ object JSXOpeningElement_ {
     
     inline def setAttributes(value: js.Array[JSXAttribute_ | JSXSpreadAttribute_]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setAttributesVarargs(value: (JSXAttribute_ | JSXSpreadAttribute_)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: (JSXAttribute_ | JSXSpreadAttribute_)*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setName(value: JSXIdentifier_ | JSXMemberExpression_ | JSXNamespacedName_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

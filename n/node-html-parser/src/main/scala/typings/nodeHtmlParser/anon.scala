@@ -1,201 +1,43 @@
 package typings.nodeHtmlParser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nodeHtmlParser.htmlMod.Attributes
-import typings.nodeHtmlParser.htmlMod.HTMLElement
-import typings.nodeHtmlParser.htmlMod.InsertPosition
-import typings.nodeHtmlParser.htmlMod.Options
-import typings.nodeHtmlParser.htmlMod.RawAttributes
-import typings.nodeHtmlParser.nodeHtmlParserBooleans.`false`
-import typings.nodeHtmlParser.nodeHtmlParserBooleans.`true`
-import typings.nodeHtmlParser.nodeMod.Node
-import typings.nodeHtmlParser.nodeMod.default
-import typings.nodeHtmlParser.typeMod.NodeType
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined node-html-parser.node-html-parser/dist/nodes/html.HTMLElement & {  valid :boolean} */
-  @js.native
-  trait HTMLElementvalidboolean extends StObject {
-    
-    /* private */ var _attrs: js.Any = js.native
-    
-    /* private */ var _rawAttrs: js.Any = js.native
+  trait ClosingSlash extends StObject {
     
     /**
-      * Append a child node to childNodes
-      * @param  {Node} node node to append
-      * @return {Node}      node appended
+      * void tag serialisation, add a final slash <br/>
       */
-    def appendChild[T /* <: default */](node: T): T = js.native
+    var closingSlash: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Get attributes
-      * @return {Object} parsed and unescaped attributes
+      * options, default value is ['area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr']
       */
-    def attributes: Attributes = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
+  }
+  object ClosingSlash {
     
-    var childNodes: js.Array[Node] = js.native
+    inline def apply(): ClosingSlash = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ClosingSlash]
+    }
     
-    var classNames: js.Array[String] = js.native
-    
-    /**
-      * Exchanges given child with new child
-      * @param {HTMLElement} oldNode     node to exchange
-      * @param {HTMLElement} newNode     new node
-      */
-    def exchangeChild(oldNode: default, newNode: default): Unit = js.native
-    
-    /**
-      * Get first child node
-      * @return {Node} first child node
-      */
-    def firstChild: default = js.native
-    
-    /**
-      * Get an attribute
-      * @return {string} value of the attribute
-      */
-    def getAttribute(key: String): js.UndefOr[String] = js.native
-    
-    def hasAttribute(key: String): Boolean = js.native
-    
-    var id: String = js.native
-    
-    def innerHTML: String = js.native
-    
-    def innerText: String = js.native
-    
-    def insertAdjacentHTML(where: InsertPosition, html: String): Unit = js.native
-    
-    /**
-      * Get last child node
-      * @return {Node} last child node
-      */
-    def lastChild: default = js.native
-    
-    def nextElementSibling: HTMLElement = js.native
-    
-    def nextSibling: default = js.native
-    
-    /**
-      * Node Type declaration.
-      */
-    var nodeType: NodeType = js.native
-    
-    def outerHTML: String = js.native
-    
-    var parentNode: default = js.native
-    
-    /**
-      * Query CSS Selector to find matching node.
-      * @param  {string}         selector Simplified CSS selector
-      * @param  {Matcher}        selector A Matcher instance
-      * @return {HTMLElement}    matching node
-      */
-    def querySelector(selector: String): HTMLElement = js.native
-    def querySelector(selector: typings.nodeHtmlParser.matcherMod.default): HTMLElement = js.native
-    
-    /**
-      * Query CSS selector to find matching nodes.
-      * @param  {string}         selector Simplified CSS selector
-      * @param  {Matcher}        selector A Matcher instance
-      * @return {HTMLElement[]}  matching elements
-      */
-    def querySelectorAll(selector: String): js.Array[HTMLElement] = js.native
-    def querySelectorAll(selector: typings.nodeHtmlParser.matcherMod.default): js.Array[HTMLElement] = js.native
-    
-    /**
-      * Get escaped (as-it) attributes
-      * @return {Object} parsed attributes
-      */
-    def rawAttributes: RawAttributes = js.native
-    
-    /* private */ var rawAttrs: js.Any = js.native
-    
-    var rawTagName: String = js.native
-    
-    /**
-      * Get escpaed (as-it) text value of current node and its children.
-      * @return {string} text content
-      */
-    def rawText: String = js.native
-    @JSName("rawText")
-    var rawText_FHTMLElementvalidboolean: String = js.native
-    
-    /**
-      * Remove current element
-      */
-    def remove(): Unit = js.native
-    
-    def removeAttribute(key: String): Unit = js.native
-    
-    /**
-      * Remove Child element from childNodes array
-      * @param {HTMLElement} node     node to remove
-      */
-    def removeChild(node: default): Unit = js.native
-    
-    /**
-      * Remove whitespaces in this sub tree.
-      * @return {HTMLElement} pointer to this
-      */
-    def removeWhitespace(): this.type = js.native
-    
-    /**
-      * Set an attribute value to the HTMLElement
-      * @param {string} key The attribute name
-      * @param {string} value The value to set, or null / undefined to remove an attribute
-      */
-    def setAttribute(key: String, value: String): Unit = js.native
-    
-    /**
-      * Replace all the attributes of the HTMLElement by the provided attributes
-      * @param {Attributes} attributes the new attribute set
-      */
-    def setAttributes(attributes: Attributes): Unit = js.native
-    
-    def set_content(content: String): Unit = js.native
-    def set_content(content: String, options: Options): Unit = js.native
-    def set_content(content: js.Array[default]): Unit = js.native
-    def set_content(content: js.Array[default], options: Options): Unit = js.native
-    def set_content(content: default): Unit = js.native
-    def set_content(content: default, options: Options): Unit = js.native
-    
-    /**
-      * Get DOM structure
-      * @return {string} strucutre
-      */
-    def structure: String = js.native
-    
-    /**
-      * Get structured Text (with '\n' etc.)
-      * @return {string} structured text
-      */
-    def structuredText: String = js.native
-    
-    def tagName: String = js.native
-    
-    /**
-      * Get unescaped text value of current node and its children.
-      * @return {string} text content
-      */
-    def text: String = js.native
-    @JSName("text")
-    var text_FHTMLElementvalidboolean: String = js.native
-    
-    /**
-      * Trim element from right (in block) after seeing pattern in a TextNode.
-      * @param  {RegExp} pattern pattern to find
-      * @return {HTMLElement}    reference to current node
-      */
-    def trimRight(pattern: RegExp): this.type = js.native
-    
-    var valid: Boolean = js.native
+    extension [Self <: ClosingSlash](x: Self) {
+      
+      inline def setClosingSlash(value: Boolean): Self = StObject.set(x, "closingSlash", value.asInstanceOf[js.Any])
+      
+      inline def setClosingSlashUndefined: Self = StObject.set(x, "closingSlash", js.undefined)
+      
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+    }
   }
   
   /* Inlined std.Partial<node-html-parser.node-html-parser/dist/nodes/html.Options> */
@@ -205,7 +47,13 @@ object anon {
     
     var comment: js.UndefOr[Boolean] = js.undefined
     
+    var fixNestedATags: js.UndefOr[Boolean] = js.undefined
+    
     var lowerCaseTagName: js.UndefOr[Boolean] = js.undefined
+    
+    var parseNoneClosedTags: js.UndefOr[Boolean] = js.undefined
+    
+    var voidTag: js.UndefOr[ClosingSlash] = js.undefined
   }
   object PartialOptions {
     
@@ -224,98 +72,21 @@ object anon {
       
       inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      inline def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
+      inline def setFixNestedATags(value: Boolean): Self = StObject.set(x, "fixNestedATags", value.asInstanceOf[js.Any])
       
-      inline def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Partial<node-html-parser.node-html-parser/dist/nodes/html.Options> & {  noFix :false} */
-  trait PartialOptionsnoFixfalse extends StObject {
-    
-    var blockTextElements: js.UndefOr[StringDictionary[Boolean]] = js.undefined
-    
-    var comment: js.UndefOr[Boolean] = js.undefined
-    
-    var lowerCaseTagName: js.UndefOr[Boolean] = js.undefined
-    
-    var noFix: `false`
-  }
-  object PartialOptionsnoFixfalse {
-    
-    inline def apply(): PartialOptionsnoFixfalse = {
-      val __obj = js.Dynamic.literal(noFix = false)
-      __obj.asInstanceOf[PartialOptionsnoFixfalse]
-    }
-    
-    extension [Self <: PartialOptionsnoFixfalse](x: Self) {
-      
-      inline def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
-      
-      inline def setBlockTextElementsUndefined: Self = StObject.set(x, "blockTextElements", js.undefined)
-      
-      inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
-      
-      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setFixNestedATagsUndefined: Self = StObject.set(x, "fixNestedATags", js.undefined)
       
       inline def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
       
       inline def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
       
-      inline def setNoFix(value: `false`): Self = StObject.set(x, "noFix", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined std.Partial<node-html-parser.node-html-parser/dist/nodes/html.Options> & {  noFix :true} */
-  trait PartialOptionsnoFixtrue extends StObject {
-    
-    var blockTextElements: js.UndefOr[StringDictionary[Boolean]] = js.undefined
-    
-    var comment: js.UndefOr[Boolean] = js.undefined
-    
-    var lowerCaseTagName: js.UndefOr[Boolean] = js.undefined
-    
-    var noFix: `true`
-  }
-  object PartialOptionsnoFixtrue {
-    
-    inline def apply(): PartialOptionsnoFixtrue = {
-      val __obj = js.Dynamic.literal(noFix = true)
-      __obj.asInstanceOf[PartialOptionsnoFixtrue]
-    }
-    
-    extension [Self <: PartialOptionsnoFixtrue](x: Self) {
+      inline def setParseNoneClosedTags(value: Boolean): Self = StObject.set(x, "parseNoneClosedTags", value.asInstanceOf[js.Any])
       
-      inline def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
+      inline def setParseNoneClosedTagsUndefined: Self = StObject.set(x, "parseNoneClosedTags", js.undefined)
       
-      inline def setBlockTextElementsUndefined: Self = StObject.set(x, "blockTextElements", js.undefined)
+      inline def setVoidTag(value: ClosingSlash): Self = StObject.set(x, "voidTag", value.asInstanceOf[js.Any])
       
-      inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
-      
-      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
-      
-      inline def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
-      
-      inline def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
-      
-      inline def setNoFix(value: `true`): Self = StObject.set(x, "noFix", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Valid extends StObject {
-    
-    var valid: Boolean
-  }
-  object Valid {
-    
-    inline def apply(valid: Boolean): Valid = {
-      val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Valid]
-    }
-    
-    extension [Self <: Valid](x: Self) {
-      
-      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setVoidTagUndefined: Self = StObject.set(x, "voidTag", js.undefined)
     }
   }
 }

@@ -8,7 +8,7 @@ object discreteShadowcastingMod {
   
   @JSImport("rot-js/lib/fov/discrete-shadowcasting", JSImport.Default)
   @js.native
-  class default () extends DiscreteShadowcasting
+  open class default () extends DiscreteShadowcasting
   
   @js.native
   trait DiscreteShadowcasting

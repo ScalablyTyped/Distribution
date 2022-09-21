@@ -10,7 +10,7 @@ object rpc {
   /** An RPC service as returned by {@link Service#create}. */
   @JSImport("@apollo/protobufjs/minimal", "rpc.Service")
   @js.native
-  class Service protected ()
+  open class Service protected ()
     extends typings.apolloProtobufjs.mod.rpc.Service {
     /**
       * Constructs a new RPC service instance.

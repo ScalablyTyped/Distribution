@@ -61,7 +61,7 @@ trait Axis extends StObject {
   
   var calendar: Calendar
   
-  var categoryarray: js.Array[js.Any]
+  var categoryarray: js.Array[Any]
   
   /**
     * Specifies the ordering logic for the case of categorical variables.
@@ -151,7 +151,7 @@ trait Axis extends StObject {
   
   var nticks: Double
   
-  var range: js.Array[js.Any]
+  var range: js.Array[Any]
   
   /**
     * 'If *normal*, the range is computed in relation to the extrema
@@ -239,7 +239,7 @@ trait Axis extends StObject {
   
   var tick0: Double | String
   
-  var tickangle: Double
+  var tickangle: auto | Double
   
   var tickcolor: Color
   
@@ -278,7 +278,7 @@ trait Axis extends StObject {
   
   var ticktext: js.Array[String]
   
-  var tickvals: js.Array[js.Any]
+  var tickvals: js.Array[Any]
   
   var tickwidth: Double
   
@@ -321,7 +321,7 @@ object Axis {
   inline def apply(
     autorange: `true` | `false` | reversed,
     calendar: Calendar,
-    categoryarray: js.Array[js.Any],
+    categoryarray: js.Array[Any],
     categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`),
     color: Color,
     dividercolor: Color,
@@ -336,7 +336,7 @@ object Axis {
     linewidth: Double,
     mirror: `true` | ticks | `false` | all | allticks,
     nticks: Double,
-    range: js.Array[js.Any],
+    range: js.Array[Any],
     rangemode: normal | tozero | nonnegative,
     separatethousands: Boolean,
     showdividers: Boolean,
@@ -353,7 +353,7 @@ object Axis {
     spikesnap: data | cursor | (`hovered data`),
     spikethickness: Double,
     tick0: Double | String,
-    tickangle: Double,
+    tickangle: auto | Double,
     tickcolor: Color,
     tickfont: PartialFont,
     tickformat: String,
@@ -364,7 +364,7 @@ object Axis {
     ticks: outside | inside | _empty,
     ticksuffix: String,
     ticktext: js.Array[String],
-    tickvals: js.Array[js.Any],
+    tickvals: js.Array[Any],
     tickwidth: Double,
     title: String | PartialDataTitleFont,
     titlefont: PartialFont,
@@ -385,9 +385,9 @@ object Axis {
     
     inline def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    inline def setCategoryarray(value: js.Array[js.Any]): Self = StObject.set(x, "categoryarray", value.asInstanceOf[js.Any])
+    inline def setCategoryarray(value: js.Array[Any]): Self = StObject.set(x, "categoryarray", value.asInstanceOf[js.Any])
     
-    inline def setCategoryarrayVarargs(value: js.Any*): Self = StObject.set(x, "categoryarray", js.Array(value :_*))
+    inline def setCategoryarrayVarargs(value: Any*): Self = StObject.set(x, "categoryarray", js.Array(value*))
     
     inline def setCategoryorder(
       value: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
@@ -395,11 +395,11 @@ object Axis {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setDividercolor(value: Color): Self = StObject.set(x, "dividercolor", value.asInstanceOf[js.Any])
     
-    inline def setDividercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "dividercolor", js.Array(value :_*))
+    inline def setDividercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "dividercolor", js.Array(value*))
     
     inline def setDividerwidth(value: Double): Self = StObject.set(x, "dividerwidth", value.asInstanceOf[js.Any])
     
@@ -411,7 +411,7 @@ object Axis {
     
     inline def setGridcolor(value: Color): Self = StObject.set(x, "gridcolor", value.asInstanceOf[js.Any])
     
-    inline def setGridcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "gridcolor", js.Array(value :_*))
+    inline def setGridcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "gridcolor", js.Array(value*))
     
     inline def setGridwidth(value: Double): Self = StObject.set(x, "gridwidth", value.asInstanceOf[js.Any])
     
@@ -419,7 +419,7 @@ object Axis {
     
     inline def setLinecolor(value: Color): Self = StObject.set(x, "linecolor", value.asInstanceOf[js.Any])
     
-    inline def setLinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "linecolor", js.Array(value :_*))
+    inline def setLinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "linecolor", js.Array(value*))
     
     inline def setLinewidth(value: Double): Self = StObject.set(x, "linewidth", value.asInstanceOf[js.Any])
     
@@ -427,9 +427,9 @@ object Axis {
     
     inline def setNticks(value: Double): Self = StObject.set(x, "nticks", value.asInstanceOf[js.Any])
     
-    inline def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: js.Array[Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    inline def setRangeVarargs(value: js.Any*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Any*): Self = StObject.set(x, "range", js.Array(value*))
     
     inline def setRangemode(value: normal | tozero | nonnegative): Self = StObject.set(x, "rangemode", value.asInstanceOf[js.Any])
     
@@ -453,7 +453,7 @@ object Axis {
     
     inline def setSpikecolor(value: Color): Self = StObject.set(x, "spikecolor", value.asInstanceOf[js.Any])
     
-    inline def setSpikecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "spikecolor", js.Array(value :_*))
+    inline def setSpikecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "spikecolor", js.Array(value*))
     
     inline def setSpikedash(value: String): Self = StObject.set(x, "spikedash", value.asInstanceOf[js.Any])
     
@@ -467,11 +467,11 @@ object Axis {
     
     inline def setTick0(value: Double | String): Self = StObject.set(x, "tick0", value.asInstanceOf[js.Any])
     
-    inline def setTickangle(value: Double): Self = StObject.set(x, "tickangle", value.asInstanceOf[js.Any])
+    inline def setTickangle(value: auto | Double): Self = StObject.set(x, "tickangle", value.asInstanceOf[js.Any])
     
     inline def setTickcolor(value: Color): Self = StObject.set(x, "tickcolor", value.asInstanceOf[js.Any])
     
-    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value :_*))
+    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value*))
     
     inline def setTickfont(value: PartialFont): Self = StObject.set(x, "tickfont", value.asInstanceOf[js.Any])
     
@@ -479,7 +479,7 @@ object Axis {
     
     inline def setTickformatstops(value: js.Array[PartialTickFormatStop]): Self = StObject.set(x, "tickformatstops", value.asInstanceOf[js.Any])
     
-    inline def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = StObject.set(x, "tickformatstops", js.Array(value :_*))
+    inline def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = StObject.set(x, "tickformatstops", js.Array(value*))
     
     inline def setTicklen(value: Double): Self = StObject.set(x, "ticklen", value.asInstanceOf[js.Any])
     
@@ -493,11 +493,11 @@ object Axis {
     
     inline def setTicktext(value: js.Array[String]): Self = StObject.set(x, "ticktext", value.asInstanceOf[js.Any])
     
-    inline def setTicktextVarargs(value: String*): Self = StObject.set(x, "ticktext", js.Array(value :_*))
+    inline def setTicktextVarargs(value: String*): Self = StObject.set(x, "ticktext", js.Array(value*))
     
-    inline def setTickvals(value: js.Array[js.Any]): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
+    inline def setTickvals(value: js.Array[Any]): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
     
-    inline def setTickvalsVarargs(value: js.Any*): Self = StObject.set(x, "tickvals", js.Array(value :_*))
+    inline def setTickvalsVarargs(value: Any*): Self = StObject.set(x, "tickvals", js.Array(value*))
     
     inline def setTickwidth(value: Double): Self = StObject.set(x, "tickwidth", value.asInstanceOf[js.Any])
     
@@ -513,7 +513,7 @@ object Axis {
     
     inline def setZerolinecolor(value: Color): Self = StObject.set(x, "zerolinecolor", value.asInstanceOf[js.Any])
     
-    inline def setZerolinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "zerolinecolor", js.Array(value :_*))
+    inline def setZerolinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "zerolinecolor", js.Array(value*))
     
     inline def setZerolinewidth(value: Double): Self = StObject.set(x, "zerolinewidth", value.asInstanceOf[js.Any])
   }

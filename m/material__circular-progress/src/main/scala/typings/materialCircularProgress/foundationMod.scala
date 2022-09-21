@@ -12,13 +12,13 @@ object foundationMod {
   
   @JSImport("@material/circular-progress/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCCircularProgressFoundation {
+  open class default () extends MDCCircularProgressFoundation {
     def this(adapter: PartialMDCCircularProgres) = this()
   }
   
   @JSImport("@material/circular-progress/foundation", "MDCCircularProgressFoundation")
   @js.native
-  class MDCCircularProgressFoundation ()
+  open class MDCCircularProgressFoundation ()
     extends MDCFoundation[MDCCircularProgressAdapter]
        with MDCProgressIndicatorFoundation {
     def this(adapter: PartialMDCCircularProgres) = this()
@@ -29,20 +29,37 @@ object foundationMod {
     /* CompleteClass */
     override def close(): Unit = js.native
     
-    def getProgress(): Double = js.native
+    /* private */ var closed: Any = js.native
+    
+    /* private */ var determinate: Any = js.native
     
     /**
-      * @return Returns whether the progress indicator is hidden.
+      * @return the current progress value [0,1];
       */
-    def isClosed(): Boolean = js.native
+    /* CompleteClass */
+    override def getProgress(): Double = js.native
     
-    def isDeterminate(): Boolean = js.native
+    /**
+      * @return Whether the component is closed.
+      */
+    /* CompleteClass */
+    override def isClosed(): Boolean = js.native
+    
+    /**
+      * @return Whether the component is determinate.
+      */
+    /* CompleteClass */
+    override def isDeterminate(): Boolean = js.native
     
     /**
       * Puts the component in the open state.
       */
     /* CompleteClass */
     override def open(): Unit = js.native
+    
+    /* private */ var progress: Any = js.native
+    
+    /* private */ var radius: Any = js.native
     
     /**
       * Toggles the component between the determinate and indeterminate state.

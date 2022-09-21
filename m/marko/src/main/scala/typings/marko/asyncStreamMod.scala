@@ -10,31 +10,31 @@ object asyncStreamMod {
   @js.native
   trait AsyncStream extends Async {
     
-    def apply(global: js.Any): this.type = js.native
-    def apply(global: js.Any, writer: js.Any): this.type = js.native
-    def apply(global: js.Any, writer: js.Any, parentOut: js.Any): this.type = js.native
-    def apply(global: js.Any, writer: js.Any, parentOut: js.Any, shouldBuffer: Boolean): this.type = js.native
-    def apply(global: js.Any, writer: js.Any, parentOut: Unit, shouldBuffer: Boolean): this.type = js.native
-    def apply(global: js.Any, writer: Unit, parentOut: js.Any): this.type = js.native
-    def apply(global: js.Any, writer: Unit, parentOut: js.Any, shouldBuffer: Boolean): this.type = js.native
-    def apply(global: js.Any, writer: Unit, parentOut: Unit, shouldBuffer: Boolean): this.type = js.native
+    def apply(global: Any): this.type = js.native
+    def apply(global: Any, writer: Any): this.type = js.native
+    def apply(global: Any, writer: Any, parentOut: Any): this.type = js.native
+    def apply(global: Any, writer: Any, parentOut: Any, shouldBuffer: Boolean): this.type = js.native
+    def apply(global: Any, writer: Any, parentOut: Unit, shouldBuffer: Boolean): this.type = js.native
+    def apply(global: Any, writer: Unit, parentOut: Any): this.type = js.native
+    def apply(global: Any, writer: Unit, parentOut: Any, shouldBuffer: Boolean): this.type = js.native
+    def apply(global: Any, writer: Unit, parentOut: Unit, shouldBuffer: Boolean): this.type = js.native
     
     var DEFAULT_TIMEOUT: Double = js.native
     
     var INCLUDE_STACK: Boolean = js.native
     
-    def beginElement(name: String, elementAttrs: js.Any): Unit = js.native
+    def beginElement(name: String, elementAttrs: Any): Unit = js.native
     
-    def element(tagName: String, elementAttrs: js.Any, openTagOnly: Boolean): Unit = js.native
+    def element(tagName: String, elementAttrs: Any, openTagOnly: Boolean): Unit = js.native
     
     def enableAsyncStackTrace(): Unit = js.native
     
     def end(): this.type = js.native
-    def end(data: js.Any): this.type = js.native
+    def end(data: Any): this.type = js.native
     
     /** @deprecated */
     def getOutput(): String = js.native
     
-    def text(str: js.Any): Unit = js.native
+    def text(str: Any): Unit = js.native
   }
 }

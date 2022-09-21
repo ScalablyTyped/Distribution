@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewBatchEditStartEditingEventArgs")
 @js.native
-class ASPxClientCardViewBatchEditStartEditingEventArgs protected ()
+open class ASPxClientCardViewBatchEditStartEditingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewBatchEditStartEditingEventArgs {
   /**
@@ -21,11 +21,11 @@ class ASPxClientCardViewBatchEditStartEditingEventArgs protected ()
   def this(
     visibleIndex: Double,
     focusedColumn: typings.devexpressWeb.ASPxClientCardViewColumn,
-    cardValues: js.Any
+    cardValues: Any
   ) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -34,7 +34,7 @@ class ASPxClientCardViewBatchEditStartEditingEventArgs protected ()
     * Gets a hashtable that maintains information about editable cells.
     */
   /* CompleteClass */
-  var cardValues: js.Any = js.native
+  var cardValues: Any = js.native
   
   /**
     * Gets the CardView column that owns a cell that is about to be edited.

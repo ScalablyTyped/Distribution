@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.anon.PartialXRSessionInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,6 +42,11 @@ trait IWebXRFeature
     * Should auto-attach be disabled?
     */
   var disableAutoAttach: Boolean = js.native
+  
+  /**
+    * If this feature requires to extend the XRSessionInit object, this function will return the partial XR session init object
+    */
+  var getXRSessionInitExtension: js.UndefOr[js.Function0[js.Promise[PartialXRSessionInit]]] = js.native
   
   /**
     * This function will be executed during before enabling the feature and can be used to not-allow enabling it.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.SyncObjects")
 @js.native
-/* private */ class SyncObjects ()
+/* private */ open class SyncObjects ()
   extends StObject
      with typings.activexOutlook.Outlook.SyncObjects {
   
@@ -24,14 +24,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexOutlook.Outlook.SyncObject = js.native
+  override def Item(Index: Any): typings.activexOutlook.Outlook.SyncObject = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.SyncObjects_typekey")
   var OutlookDotSyncObjects_typekey: typings.activexOutlook.Outlook.SyncObjects = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

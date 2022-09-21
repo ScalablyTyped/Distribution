@@ -10,7 +10,7 @@ object cubicMod {
   
   object default {
     
-    @JSImport("@antv/g-math/lib/cubic", JSImport.Default)
+    @JSImport("@antv/g-math/dist/cubic", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
@@ -26,17 +26,15 @@ object cubicMod {
       x4: Double,
       y4: Double,
       t: Double
-    ): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("divide")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+    ): js.Array[js.Tuple8[Double, Double, Double, Double, Double, Double, Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("divide")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple8[Double, Double, Double, Double, Double, Double, Double, Double]]]
     
-    @JSImport("@antv/g-math/lib/cubic", "default.extrema")
+    @JSImport("@antv/g-math/dist/cubic", "default.extrema")
     @js.native
-    def extrema: js.Function4[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, js.Array[js.Any]] = js.native
-    inline def extrema(p0: Double, p1: Double, p2: Double, p3: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("extrema")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def extrema_=(
-      x: js.Function4[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, js.Array[js.Any]]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extrema")(x.asInstanceOf[js.Any])
+    def extrema: js.Function4[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, js.Array[Any]] = js.native
+    inline def extrema(p0: Double, p1: Double, p2: Double, p3: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("extrema")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def extrema_=(x: js.Function4[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, js.Array[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extrema")(x.asInstanceOf[js.Any])
     
-    @JSImport("@antv/g-math/lib/cubic", "default.interpolationAt")
+    @JSImport("@antv/g-math/dist/cubic", "default.interpolationAt")
     @js.native
     def interpolationAt: js.Function5[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, /* t */ Double, Double] = js.native
     inline def interpolationAt(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolationAt")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -44,7 +42,7 @@ object cubicMod {
       x: js.Function5[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, /* t */ Double, Double]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interpolationAt")(x.asInstanceOf[js.Any])
     
-    inline def length(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def length(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def nearestPoint(
       x1: Double,

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("HideFindResultsCommand")
 @js.native
-class HideFindResultsCommand ()
+open class HideFindResultsCommand ()
   extends StObject
      with typings.devexpressWeb.HideFindResultsCommand {
   

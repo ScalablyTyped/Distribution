@@ -38,7 +38,7 @@ trait WorkerPool extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[Any]
   ] = js.undefined
   
   /** Network to which VMs will be assigned. If empty or unspecified, the service will use the network "default". */
@@ -63,7 +63,7 @@ trait WorkerPool extends StObject {
   var poolArgs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -113,7 +113,7 @@ object WorkerPool {
     
     inline def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
     
-    inline def setDataDisksVarargs(value: Disk*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
+    inline def setDataDisksVarargs(value: Disk*): Self = StObject.set(x, "dataDisks", js.Array(value*))
     
     inline def setDefaultPackageSet(value: String): Self = StObject.set(x, "defaultPackageSet", value.asInstanceOf[js.Any])
     
@@ -146,7 +146,7 @@ object WorkerPool {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -171,12 +171,12 @@ object WorkerPool {
     
     inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
-    inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
+    inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value*))
     
     inline def setPoolArgs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[Any]
     ): Self = StObject.set(x, "poolArgs", value.asInstanceOf[js.Any])
     
     inline def setPoolArgsUndefined: Self = StObject.set(x, "poolArgs", js.undefined)
@@ -185,7 +185,7 @@ object WorkerPool {
     
     inline def setSdkHarnessContainerImagesUndefined: Self = StObject.set(x, "sdkHarnessContainerImages", js.undefined)
     
-    inline def setSdkHarnessContainerImagesVarargs(value: SdkHarnessContainerImage*): Self = StObject.set(x, "sdkHarnessContainerImages", js.Array(value :_*))
+    inline def setSdkHarnessContainerImagesVarargs(value: SdkHarnessContainerImage*): Self = StObject.set(x, "sdkHarnessContainerImages", js.Array(value*))
     
     inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     

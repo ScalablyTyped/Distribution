@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IAsyncAction
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.WinRTError
@@ -52,7 +51,7 @@ trait PlayReadySecureStopServiceRequest extends StObject {
   var sessionID: String
   
   /** Gets the secure stop session's start time property. */
-  var startTime: Date
+  var startTime: js.Date
   
   /** Gets the secure stop session's stopped flag property which indicates whether the secure stop session for this request was cleanly shut down. */
   var stopped: Boolean
@@ -61,7 +60,7 @@ trait PlayReadySecureStopServiceRequest extends StObject {
   var `type`: String
   
   /** Gets the secure stop session's update/stop time property. */
-  var updateTime: Date
+  var updateTime: js.Date
   
   /** Gets or sets the URI used to perform a service request action. */
   var uri: Uri
@@ -78,10 +77,10 @@ object PlayReadySecureStopServiceRequest {
     publisherCertificate: Double,
     responseCustomData: String,
     sessionID: String,
-    startTime: Date,
+    startTime: js.Date,
     stopped: Boolean,
     `type`: String,
-    updateTime: Date,
+    updateTime: js.Date,
     uri: Uri
   ): PlayReadySecureStopServiceRequest = {
     val __obj = js.Dynamic.literal(beginServiceRequest = js.Any.fromFunction0(beginServiceRequest), challengeCustomData = challengeCustomData.asInstanceOf[js.Any], generateManualEnablingChallenge = js.Any.fromFunction0(generateManualEnablingChallenge), nextServiceRequest = js.Any.fromFunction0(nextServiceRequest), processManualEnablingResponse = js.Any.fromFunction1(processManualEnablingResponse), protectionSystem = protectionSystem.asInstanceOf[js.Any], publisherCertificate = publisherCertificate.asInstanceOf[js.Any], responseCustomData = responseCustomData.asInstanceOf[js.Any], sessionID = sessionID.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], stopped = stopped.asInstanceOf[js.Any], updateTime = updateTime.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
@@ -109,13 +108,13 @@ object PlayReadySecureStopServiceRequest {
     
     inline def setSessionID(value: String): Self = StObject.set(x, "sessionID", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setUpdateTime(value: Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }

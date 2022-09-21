@@ -9,7 +9,7 @@ trait TagResourceRequest extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: ResourceARN
+  var ResourceArn: typings.awsSdk.networkmanagerMod.ResourceArn
   
   /**
     * The tags to apply to the specified resource.
@@ -18,17 +18,17 @@ trait TagResourceRequest extends StObject {
 }
 object TagResourceRequest {
   
-  inline def apply(ResourceArn: ResourceARN, Tags: TagList): TagResourceRequest = {
+  inline def apply(ResourceArn: ResourceArn, Tags: TagList): TagResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagResourceRequest]
   }
   
   extension [Self <: TagResourceRequest](x: Self) {
     
-    inline def setResourceArn(value: ResourceARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AdvancedPhotoCapture extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_allphotoscaptured(`type`: allphotoscaptured, listener: TypedEventHandler[AdvancedPhotoCapture, js.Any]): Unit = js.native
+  def addEventListener_allphotoscaptured(`type`: allphotoscaptured, listener: TypedEventHandler[AdvancedPhotoCapture, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_optionalreferencephotocaptured(
     `type`: optionalreferencephotocaptured,
@@ -34,7 +34,7 @@ trait AdvancedPhotoCapture extends StObject {
     * @param context An app-defined context object that passes context information to the result of the operation.
     * @return An asynchronous operation that returns an AdvancedCapturedPhoto upon successful completion.
     */
-  def captureAsync(context: js.Any): IPromiseWithIAsyncOperation[AdvancedCapturedPhoto] = js.native
+  def captureAsync(context: Any): IPromiseWithIAsyncOperation[AdvancedCapturedPhoto] = js.native
   
   /**
     * Asynchronously releases the AdvancedPhotoCapture object and resources used by the advanced photo capture operation.
@@ -43,10 +43,10 @@ trait AdvancedPhotoCapture extends StObject {
   def finishAsync(): IPromiseWithIAsyncAction = js.native
   
   /** Occurs when all of the frames required for the advanced photo capture have been captured. */
-  def onallphotoscaptured(ev: js.Any & WinRTEvent[AdvancedPhotoCapture]): Unit = js.native
+  def onallphotoscaptured(ev: Any & WinRTEvent[AdvancedPhotoCapture]): Unit = js.native
   /** Occurs when all of the frames required for the advanced photo capture have been captured. */
   @JSName("onallphotoscaptured")
-  var onallphotoscaptured_Original: TypedEventHandler[AdvancedPhotoCapture, js.Any] = js.native
+  var onallphotoscaptured_Original: TypedEventHandler[AdvancedPhotoCapture, Any] = js.native
   
   /** Raised when a reference photo for the advanced photo operation has been captured, on devices that support this feature. */
   def onoptionalreferencephotocaptured(ev: OptionalReferencePhotoCapturedEventArgs & WinRTEvent[AdvancedPhotoCapture]): Unit = js.native
@@ -54,9 +54,9 @@ trait AdvancedPhotoCapture extends StObject {
   @JSName("onoptionalreferencephotocaptured")
   var onoptionalreferencephotocaptured_Original: TypedEventHandler[AdvancedPhotoCapture, OptionalReferencePhotoCapturedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_allphotoscaptured(`type`: allphotoscaptured, listener: TypedEventHandler[AdvancedPhotoCapture, js.Any]): Unit = js.native
+  def removeEventListener_allphotoscaptured(`type`: allphotoscaptured, listener: TypedEventHandler[AdvancedPhotoCapture, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_optionalreferencephotocaptured(
     `type`: optionalreferencephotocaptured,

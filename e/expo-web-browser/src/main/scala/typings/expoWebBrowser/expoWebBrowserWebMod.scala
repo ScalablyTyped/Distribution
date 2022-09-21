@@ -39,5 +39,5 @@ object expoWebBrowserWebMod {
     inline def openBrowserAsync(url: String, browserParams: WebBrowserOpenOptions): js.Promise[WebBrowserResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBrowserAsync")(url.asInstanceOf[js.Any], browserParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserResult]]
   }
   
-  inline def featureObjectToString(features: Record[String, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("featureObjectToString")(features.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def featureObjectToString(features: Record[String, Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("featureObjectToString")(features.asInstanceOf[js.Any]).asInstanceOf[String]
 }

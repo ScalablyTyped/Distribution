@@ -10,10 +10,10 @@ A hook based router for React
 | ------------------ | :-------------: |
 | Full name          | hookrouter |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 7 |
-| # downloads        | 267452 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 26339.0 |
+| # stars            | 1502.0 |
 
 ## Links
 - [Homepage](https://github.com/Paratron/hookrouter#readme)

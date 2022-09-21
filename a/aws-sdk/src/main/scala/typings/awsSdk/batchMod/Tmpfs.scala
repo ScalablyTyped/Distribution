@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tmpfs extends StObject {
   
   /**
-    * The absolute file path in the container where the tmpfs volume is to be mounted.
+    * The absolute file path in the container where the tmpfs volume is mounted.
     */
   var containerPath: String
   
@@ -36,7 +36,7 @@ object Tmpfs {
     
     inline def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
     
-    inline def setMountOptionsVarargs(value: String*): Self = StObject.set(x, "mountOptions", js.Array(value :_*))
+    inline def setMountOptionsVarargs(value: String*): Self = StObject.set(x, "mountOptions", js.Array(value*))
     
     inline def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

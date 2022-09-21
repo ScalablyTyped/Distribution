@@ -5,27 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Output only.  Custom attribute histogram result.
-  */
 trait SchemaCustomAttributeHistogramResult extends StObject {
   
   /**
     * Stores the key of custom attribute the histogram is performed on.
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Stores bucketed histogram counting result or min/max values for custom
-    * attribute long values associated with `key`.
+    * Stores bucketed histogram counting result or min/max values for custom attribute long values associated with `key`.
     */
   var longValueHistogramResult: js.UndefOr[SchemaNumericBucketingResult] = js.undefined
   
   /**
-    * Stores a map from the values of string custom field associated with `key`
-    * to the number of jobs with that value in this histogram result.
+    * Stores a map from the values of string custom field associated with `key` to the number of jobs with that value in this histogram result.
     */
-  var stringValueHistogramResult: js.UndefOr[StringDictionary[Double]] = js.undefined
+  var stringValueHistogramResult: js.UndefOr[StringDictionary[Double] | Null] = js.undefined
 }
 object SchemaCustomAttributeHistogramResult {
   
@@ -38,6 +33,8 @@ object SchemaCustomAttributeHistogramResult {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
+    
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setLongValueHistogramResult(value: SchemaNumericBucketingResult): Self = StObject.set(x, "longValueHistogramResult", value.asInstanceOf[js.Any])
@@ -45,6 +42,8 @@ object SchemaCustomAttributeHistogramResult {
     inline def setLongValueHistogramResultUndefined: Self = StObject.set(x, "longValueHistogramResult", js.undefined)
     
     inline def setStringValueHistogramResult(value: StringDictionary[Double]): Self = StObject.set(x, "stringValueHistogramResult", value.asInstanceOf[js.Any])
+    
+    inline def setStringValueHistogramResultNull: Self = StObject.set(x, "stringValueHistogramResult", null)
     
     inline def setStringValueHistogramResultUndefined: Self = StObject.set(x, "stringValueHistogramResult", js.undefined)
   }

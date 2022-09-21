@@ -20,7 +20,7 @@ object mod {
     *
     * @param {Array} a Array.
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with Linq[T] {
     def this(a: js.Array[T]) = this()
@@ -32,9 +32,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def GetHashCode(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHashCode")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def GetHashCode(e: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHashCode")(e.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def StringifyNonCircular(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("StringifyNonCircular")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def StringifyNonCircular(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("StringifyNonCircular")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
     
     trait IEqualityComparer[T] extends StObject {
       
@@ -74,7 +74,7 @@ object mod {
         
         inline def setElements(value: js.Array[T]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
         
-        inline def setElementsVarargs(value: T*): Self = StObject.set(x, "Elements", js.Array(value :_*))
+        inline def setElementsVarargs(value: T*): Self = StObject.set(x, "Elements", js.Array(value*))
         
         inline def setKey(value: TKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       }
@@ -258,7 +258,7 @@ object mod {
       *
       * @param callback The function delegate to perform on each element of the array.
       */
-    def ForEach(callback: js.Function2[/* e */ T, /* index */ Double, js.Any]): Unit = js.native
+    def ForEach(callback: js.Function2[/* e */ T, /* index */ Double, Any]): Unit = js.native
     
     /**
       * Groups the elements of a sequence according to a specified key selector function.
@@ -270,18 +270,18 @@ object mod {
       * @returns A collection of elements of type TResult where each element represents a projection
       * over a group and its key.
       */
-    def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey]): Linq[js.Any] = js.native
-    def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey], elementSelector: js.Function1[/* e */ T, TElement]): Linq[js.Any] = js.native
+    def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey]): Linq[Any] = js.native
+    def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey], elementSelector: js.Function1[/* e */ T, TElement]): Linq[Any] = js.native
     def GroupBy[TKey, TElement](
       keySelector: js.Function1[/* e */ T, TKey],
       elementSelector: js.Function1[/* e */ T, TElement],
       comparer: IEqualityComparer[TKey]
-    ): Linq[js.Any] = js.native
+    ): Linq[Any] = js.native
     def GroupBy[TKey, TElement](
       keySelector: js.Function1[/* e */ T, TKey],
       elementSelector: Unit,
       comparer: IEqualityComparer[TKey]
-    ): Linq[js.Any] = js.native
+    ): Linq[Any] = js.native
     
     /**
       * Searches for the specified object and returns the zero-based index of the first

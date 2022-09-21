@@ -12,7 +12,7 @@ trait Manifest extends StObject {
   
   var configuration: js.UndefOr[StringDictionary[ConfigurationDefinition]] = js.undefined
   
-  var contributors: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var contributors: js.UndefOr[js.Array[Any]] = js.undefined
   
   var defaultDocument: js.UndefOr[String] = js.undefined
   
@@ -61,11 +61,11 @@ object Manifest {
     
     inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    inline def setContributors(value: js.Array[js.Any]): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
+    inline def setContributors(value: js.Array[Any]): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
     
     inline def setContributorsUndefined: Self = StObject.set(x, "contributors", js.undefined)
     
-    inline def setContributorsVarargs(value: js.Any*): Self = StObject.set(x, "contributors", js.Array(value :_*))
+    inline def setContributorsVarargs(value: Any*): Self = StObject.set(x, "contributors", js.Array(value*))
     
     inline def setDefaultDocument(value: String): Self = StObject.set(x, "defaultDocument", value.asInstanceOf[js.Any])
     
@@ -119,7 +119,7 @@ object Manifest {
     
     inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
     
-    inline def setTestsVarargs(value: String*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: String*): Self = StObject.set(x, "tests", js.Array(value*))
     
     inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     

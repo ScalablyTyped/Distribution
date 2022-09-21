@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A bounding polygon for the detected image annotation.
-  */
 trait SchemaBoundingPoly extends StObject {
   
   /**
@@ -32,12 +29,12 @@ object SchemaBoundingPoly {
     
     inline def setNormalizedVerticesUndefined: Self = StObject.set(x, "normalizedVertices", js.undefined)
     
-    inline def setNormalizedVerticesVarargs(value: SchemaNormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value :_*))
+    inline def setNormalizedVerticesVarargs(value: SchemaNormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value*))
     
     inline def setVertices(value: js.Array[SchemaVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    inline def setVerticesVarargs(value: SchemaVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: SchemaVertex*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

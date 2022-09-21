@@ -5,8 +5,13 @@ import typings.carbonComponentsReact.translationMod._CarbonTranslationKey
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn
 import typings.carbonComponentsReact.typingsSharedMod.InternationalProps
 import typings.react.mod.FocusEvent
-import typings.react.mod.ReactNode
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.std.Element
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,19 +24,12 @@ object sideNavMod extends Shortcut {
   
   trait SideNavProps
     extends StObject
-       with InternationalProps[SideNavTranslationKey] {
+       with HTMLAttributes[HTMLElement]
+       with InternationalProps[SideNavTranslationKey, Record[String, Any]] {
     
     var addFocusListeners: js.UndefOr[Boolean] = js.undefined
     
     var addMouseListeners: js.UndefOr[Boolean] = js.undefined
-    
-    var `aria-label`: js.UndefOr[String] = js.undefined
-    
-    var `aria-labelledby`: js.UndefOr[String] = js.undefined
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var className: js.UndefOr[String] = js.undefined
     
     var defaultExpanded: js.UndefOr[Boolean] = js.undefined
     
@@ -45,7 +43,11 @@ object sideNavMod extends Shortcut {
     
     var isRail: js.UndefOr[Boolean] = js.undefined
     
-    var onToggle: js.UndefOr[js.Function2[/* event */ FocusEvent[HTMLElement], /* focus */ Boolean, Unit]] = js.undefined
+    var onOverlayClick: js.UndefOr[js.Function1[/* evt */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
+    
+    var onToggle: js.UndefOr[
+        js.Function2[/* event */ FocusEvent[HTMLElement, Element], /* focus */ Boolean, Unit]
+      ] = js.undefined
   }
   object SideNavProps {
     
@@ -63,22 +65,6 @@ object sideNavMod extends Shortcut {
       inline def setAddMouseListeners(value: Boolean): Self = StObject.set(x, "addMouseListeners", value.asInstanceOf[js.Any])
       
       inline def setAddMouseListenersUndefined: Self = StObject.set(x, "addMouseListeners", js.undefined)
-      
-      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
-      
-      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
-      
-      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
-      
-      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setDefaultExpanded(value: Boolean): Self = StObject.set(x, "defaultExpanded", value.asInstanceOf[js.Any])
       
@@ -104,7 +90,11 @@ object sideNavMod extends Shortcut {
       
       inline def setIsRailUndefined: Self = StObject.set(x, "isRail", js.undefined)
       
-      inline def setOnToggle(value: (/* event */ FocusEvent[HTMLElement], /* focus */ Boolean) => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction2(value))
+      inline def setOnOverlayClick(value: /* evt */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onOverlayClick", js.Any.fromFunction1(value))
+      
+      inline def setOnOverlayClickUndefined: Self = StObject.set(x, "onOverlayClick", js.undefined)
+      
+      inline def setOnToggle(value: (/* event */ FocusEvent[HTMLElement, Element], /* focus */ Boolean) => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction2(value))
       
       inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
     }

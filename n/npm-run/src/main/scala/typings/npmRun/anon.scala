@@ -1,6 +1,6 @@
 package typings.npmRun
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.ChildProcessByStdio
 import typings.node.childProcessMod.ChildProcessWithoutNullStreams
@@ -46,8 +46,8 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(command: String): String = js.native
-    def apply(command: String, options: ExecSyncOptions): Buffer = js.native
+    def apply(command: String): String | Buffer = js.native
+    def apply(command: String, options: ExecSyncOptions): String | Buffer = js.native
     def apply(command: String, options: ExecSyncOptionsWithBufferEncoding): Buffer = js.native
     def apply(command: String, options: ExecSyncOptionsWithStringEncoding): String = js.native
   }
@@ -55,15 +55,13 @@ object anon {
   @js.native
   trait FnCallCommandArgsOptions extends StObject {
     
-    def apply(command: String): SpawnSyncReturns[Buffer] = js.native
-    def apply(command: String, args: js.Array[String]): SpawnSyncReturns[Buffer] = js.native
-    def apply(command: String, args: js.Array[String], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
+    def apply(command: String): SpawnSyncReturns[String | Buffer] = js.native
+    def apply(command: String, args: js.Array[String]): SpawnSyncReturns[String | Buffer] = js.native
+    def apply(command: String, args: js.Array[String], options: SpawnSyncOptions): SpawnSyncReturns[String | Buffer] = js.native
     def apply(command: String, args: js.Array[String], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
     def apply(command: String, args: js.Array[String], options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
-    def apply(command: String, args: Unit, options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
-    def apply(command: String, args: Unit, options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
-    def apply(command: String, args: Unit, options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
-    def apply(command: String, options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
+    def apply(command: String, args: Unit, options: SpawnSyncOptions): SpawnSyncReturns[String | Buffer] = js.native
+    def apply(command: String, options: SpawnSyncOptions): SpawnSyncReturns[String | Buffer] = js.native
     def apply(command: String, options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
     def apply(command: String, options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
   }

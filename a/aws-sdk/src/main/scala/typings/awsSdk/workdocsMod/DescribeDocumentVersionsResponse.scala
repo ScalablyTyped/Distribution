@@ -29,7 +29,7 @@ object DescribeDocumentVersionsResponse {
     
     inline def setDocumentVersionsUndefined: Self = StObject.set(x, "DocumentVersions", js.undefined)
     
-    inline def setDocumentVersionsVarargs(value: DocumentVersionMetadata*): Self = StObject.set(x, "DocumentVersions", js.Array(value :_*))
+    inline def setDocumentVersionsVarargs(value: DocumentVersionMetadata*): Self = StObject.set(x, "DocumentVersions", js.Array(value*))
     
     inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

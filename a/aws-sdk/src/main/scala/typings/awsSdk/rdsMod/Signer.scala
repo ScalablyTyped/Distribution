@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A signer object can be used to generate an auth token to a database.
   */
-class Signer ()
+open class Signer ()
   extends typings.awsSdk.rdsSignerMod.Signer {
   def this(options: SignerOptions) = this()
 }

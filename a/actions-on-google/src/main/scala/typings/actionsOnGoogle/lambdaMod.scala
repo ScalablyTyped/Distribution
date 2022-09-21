@@ -13,13 +13,13 @@ object lambdaMod {
   
   @JSImport("actions-on-google/dist/framework/lambda", "Lambda")
   @js.native
-  class Lambda_ ()
+  open class Lambda_ ()
     extends StObject
        with Framework[LambdaHandler] {
     
     /** @public */
     /* CompleteClass */
-    override def check(args: js.Any*): Boolean = js.native
+    override def check(args: Any*): Boolean = js.native
     def check(first: js.Object, second: js.Object, third: js.Object): Boolean = js.native
     
     /** @public */
@@ -38,7 +38,7 @@ object lambdaMod {
   type LambdaHandler = js.Function3[
     /* event */ JsonObject, 
     /* context */ Context, 
-    /* callback */ Callback[js.Any], 
+    /* callback */ Callback[Any], 
     js.Promise[Unit]
   ]
   

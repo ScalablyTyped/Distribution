@@ -37,7 +37,7 @@ object BlendMixin {
     
     inline def setEffects(value: js.Array[Effect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    inline def setEffectsVarargs(value: Effect*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: Effect*): Self = StObject.set(x, "effects", js.Array(value*))
     
     inline def setIsMask(value: Boolean): Self = StObject.set(x, "isMask", value.asInstanceOf[js.Any])
     

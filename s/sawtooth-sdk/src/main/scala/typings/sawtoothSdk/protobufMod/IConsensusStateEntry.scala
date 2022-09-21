@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait IConsensusStateEntry extends StObject {
   var address: js.UndefOr[String | Null] = js.undefined
   
   /** ConsensusStateEntry data */
-  var data: js.UndefOr[Uint8Array | Null] = js.undefined
+  var data: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
 }
 object IConsensusStateEntry {
   
@@ -28,7 +27,7 @@ object IConsensusStateEntry {
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataNull: Self = StObject.set(x, "data", null)
     

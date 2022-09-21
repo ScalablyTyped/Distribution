@@ -12,12 +12,17 @@ trait ThingDocument extends StObject {
   var attributes: js.UndefOr[Attributes] = js.undefined
   
   /**
-    * Indicates whether the thing is connected to the AWS IoT service.
+    * Indicates whether the thing is connected to the Amazon Web Services IoT Core service.
     */
   var connectivity: js.UndefOr[ThingConnectivity] = js.undefined
   
   /**
-    * The shadow.
+    * Contains Device Defender data. For more information about Device Defender, see Device Defender. 
+    */
+  var deviceDefender: js.UndefOr[JsonDocument] = js.undefined
+  
+  /**
+    * The unnamed shadow and named shadow. For more information about shadows, see IoT Device Shadow service. 
     */
   var shadow: js.UndefOr[JsonDocument] = js.undefined
   
@@ -58,6 +63,10 @@ object ThingDocument {
     
     inline def setConnectivityUndefined: Self = StObject.set(x, "connectivity", js.undefined)
     
+    inline def setDeviceDefender(value: JsonDocument): Self = StObject.set(x, "deviceDefender", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceDefenderUndefined: Self = StObject.set(x, "deviceDefender", js.undefined)
+    
     inline def setShadow(value: JsonDocument): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
@@ -66,7 +75,7 @@ object ThingDocument {
     
     inline def setThingGroupNamesUndefined: Self = StObject.set(x, "thingGroupNames", js.undefined)
     
-    inline def setThingGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupNames", js.Array(value :_*))
+    inline def setThingGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupNames", js.Array(value*))
     
     inline def setThingId(value: ThingId): Self = StObject.set(x, "thingId", value.asInstanceOf[js.Any])
     

@@ -16,9 +16,10 @@ object staticRequestMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@angular/http/src/static_request", "ArrayBuffer")
   @js.native
-  class ArrayBuffer protected ()
+  open class ArrayBuffer protected ()
     extends StObject
        with typings.std.ArrayBuffer {
+    /* standard es5 */
     def this(byteLength: Double) = this()
   }
   @JSImport("@angular/http/src/static_request", "ArrayBuffer")
@@ -27,11 +28,11 @@ object staticRequestMod {
   
   @JSImport("@angular/http/src/static_request", "Request")
   @js.native
-  class Request protected () extends Body {
+  open class Request protected () extends Body {
     def this(requestOptions: RequestArgs) = this()
     
     /** Type of the request body **/
-    /* private */ var contentType: js.Any = js.native
+    /* private */ var contentType: Any = js.native
     
     /**
       * Returns the content type enum based on header options.
@@ -47,7 +48,7 @@ object staticRequestMod {
       * Returns the request's body according to its type. If body is undefined, return
       * null.
       */
-    def getBody(): js.Any = js.native
+    def getBody(): Any = js.native
     
     /**
       * {@link Headers} instance

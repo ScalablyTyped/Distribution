@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html)
   */
-class DrawActionCls ()
+open class DrawActionCls ()
   extends StObject
      with typings.arcgisJsApi.esri.DrawAction {
   def this(properties: DrawActionProperties) = this()

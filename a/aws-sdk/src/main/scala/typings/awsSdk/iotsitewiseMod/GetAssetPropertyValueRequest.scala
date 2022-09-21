@@ -12,7 +12,7 @@ trait GetAssetPropertyValueRequest extends StObject {
   var assetId: js.UndefOr[ID] = js.undefined
   
   /**
-    * The property alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the AWS IoT SiteWise User Guide.
+    * The alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the IoT SiteWise User Guide.
     */
   var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.undefined
   

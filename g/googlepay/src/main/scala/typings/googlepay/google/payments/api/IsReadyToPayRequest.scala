@@ -88,7 +88,7 @@ object IsReadyToPayRequest {
     
     inline def setAllowedPaymentMethods(value: js.Array[IsReadyToPayPaymentMethodSpecification]): Self = StObject.set(x, "allowedPaymentMethods", value.asInstanceOf[js.Any])
     
-    inline def setAllowedPaymentMethodsVarargs(value: IsReadyToPayPaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value :_*))
+    inline def setAllowedPaymentMethodsVarargs(value: IsReadyToPayPaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value*))
     
     inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

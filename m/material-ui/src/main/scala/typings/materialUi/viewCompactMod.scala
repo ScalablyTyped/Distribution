@@ -10,10 +10,10 @@ object viewCompactMod {
   
   @JSImport("material-ui/svg-icons/image/view-compact", JSImport.Default)
   @js.native
-  class default () extends ImageViewCompact
+  open class default () extends ImageViewCompact
   
   @JSImport("material-ui/svg-icons/image/view-compact", "ImageViewCompact")
   @js.native
-  class ImageViewCompact ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageViewCompact ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -8,9 +8,9 @@ object anon {
   
   trait HashChange extends StObject {
     
-    var hashChange: js.UndefOr[js.Any] = js.undefined
+    var hashChange: js.UndefOr[Any] = js.undefined
     
-    var pushState: js.UndefOr[js.Any] = js.undefined
+    var pushState: js.UndefOr[Any] = js.undefined
   }
   object HashChange {
     
@@ -21,11 +21,11 @@ object anon {
     
     extension [Self <: HashChange](x: Self) {
       
-      inline def setHashChange(value: js.Any): Self = StObject.set(x, "hashChange", value.asInstanceOf[js.Any])
+      inline def setHashChange(value: Any): Self = StObject.set(x, "hashChange", value.asInstanceOf[js.Any])
       
       inline def setHashChangeUndefined: Self = StObject.set(x, "hashChange", js.undefined)
       
-      inline def setPushState(value: js.Any): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
+      inline def setPushState(value: Any): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
       
       inline def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
     }

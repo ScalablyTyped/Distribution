@@ -599,7 +599,7 @@ object anon {
     var operator: js.UndefOr[String] = js.undefined
     
     /** A list of values to filter the column value against.\ The maximum number of filter values per request is 300. */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object Column {
     
@@ -618,11 +618,11 @@ object anon {
       
       inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   

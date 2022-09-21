@@ -10,7 +10,7 @@ object optionsMod {
   
   @JSImport("smooth-scrollbar/options", "Options")
   @js.native
-  class Options () extends StObject {
+  open class Options () extends StObject {
     def this(config: PartialScrollbarOptions) = this()
     
     /**
@@ -42,7 +42,7 @@ object optionsMod {
       * Options for plugins. Syntax:
       *   plugins[pluginName] = pluginOptions: any
       */
-    val plugins: js.Any = js.native
+    val plugins: Any = js.native
     
     /**
       * Render every frame in integer pixel values

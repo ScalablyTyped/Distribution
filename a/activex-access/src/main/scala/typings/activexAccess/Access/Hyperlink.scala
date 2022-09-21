@@ -28,13 +28,13 @@ trait Hyperlink extends StObject {
   def Follow(): Unit = js.native
   def Follow(NewWindow: Boolean): Unit = js.native
   def Follow(NewWindow: Boolean, AddHistory: Boolean): Unit = js.native
-  def Follow(NewWindow: Boolean, AddHistory: Boolean, ExtraInfo: js.Any): Unit = js.native
-  def Follow(NewWindow: Boolean, AddHistory: Boolean, ExtraInfo: js.Any, Method: Unit, HeaderInfo: String): Unit = js.native
-  def Follow(NewWindow: Boolean, AddHistory: Boolean, ExtraInfo: js.Any, Method: MsoExtraInfoMethod): Unit = js.native
+  def Follow(NewWindow: Boolean, AddHistory: Boolean, ExtraInfo: Any): Unit = js.native
+  def Follow(NewWindow: Boolean, AddHistory: Boolean, ExtraInfo: Any, Method: Unit, HeaderInfo: String): Unit = js.native
+  def Follow(NewWindow: Boolean, AddHistory: Boolean, ExtraInfo: Any, Method: MsoExtraInfoMethod): Unit = js.native
   def Follow(
     NewWindow: Boolean,
     AddHistory: Boolean,
-    ExtraInfo: js.Any,
+    ExtraInfo: Any,
     Method: MsoExtraInfoMethod,
     HeaderInfo: String
   ): Unit = js.native
@@ -47,13 +47,13 @@ trait Hyperlink extends StObject {
     Method: MsoExtraInfoMethod,
     HeaderInfo: String
   ): Unit = js.native
-  def Follow(NewWindow: Boolean, AddHistory: Unit, ExtraInfo: js.Any): Unit = js.native
-  def Follow(NewWindow: Boolean, AddHistory: Unit, ExtraInfo: js.Any, Method: Unit, HeaderInfo: String): Unit = js.native
-  def Follow(NewWindow: Boolean, AddHistory: Unit, ExtraInfo: js.Any, Method: MsoExtraInfoMethod): Unit = js.native
+  def Follow(NewWindow: Boolean, AddHistory: Unit, ExtraInfo: Any): Unit = js.native
+  def Follow(NewWindow: Boolean, AddHistory: Unit, ExtraInfo: Any, Method: Unit, HeaderInfo: String): Unit = js.native
+  def Follow(NewWindow: Boolean, AddHistory: Unit, ExtraInfo: Any, Method: MsoExtraInfoMethod): Unit = js.native
   def Follow(
     NewWindow: Boolean,
     AddHistory: Unit,
-    ExtraInfo: js.Any,
+    ExtraInfo: Any,
     Method: MsoExtraInfoMethod,
     HeaderInfo: String
   ): Unit = js.native
@@ -67,13 +67,13 @@ trait Hyperlink extends StObject {
     HeaderInfo: String
   ): Unit = js.native
   def Follow(NewWindow: Unit, AddHistory: Boolean): Unit = js.native
-  def Follow(NewWindow: Unit, AddHistory: Boolean, ExtraInfo: js.Any): Unit = js.native
-  def Follow(NewWindow: Unit, AddHistory: Boolean, ExtraInfo: js.Any, Method: Unit, HeaderInfo: String): Unit = js.native
-  def Follow(NewWindow: Unit, AddHistory: Boolean, ExtraInfo: js.Any, Method: MsoExtraInfoMethod): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Boolean, ExtraInfo: Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Boolean, ExtraInfo: Any, Method: Unit, HeaderInfo: String): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Boolean, ExtraInfo: Any, Method: MsoExtraInfoMethod): Unit = js.native
   def Follow(
     NewWindow: Unit,
     AddHistory: Boolean,
-    ExtraInfo: js.Any,
+    ExtraInfo: Any,
     Method: MsoExtraInfoMethod,
     HeaderInfo: String
   ): Unit = js.native
@@ -86,16 +86,10 @@ trait Hyperlink extends StObject {
     Method: MsoExtraInfoMethod,
     HeaderInfo: String
   ): Unit = js.native
-  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: js.Any): Unit = js.native
-  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: js.Any, Method: Unit, HeaderInfo: String): Unit = js.native
-  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: js.Any, Method: MsoExtraInfoMethod): Unit = js.native
-  def Follow(
-    NewWindow: Unit,
-    AddHistory: Unit,
-    ExtraInfo: js.Any,
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Any, Method: Unit, HeaderInfo: String): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Any, Method: MsoExtraInfoMethod): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Any, Method: MsoExtraInfoMethod, HeaderInfo: String): Unit = js.native
   def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Unit, Method: Unit, HeaderInfo: String): Unit = js.native
   def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Unit, Method: MsoExtraInfoMethod): Unit = js.native
   def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Unit, Method: MsoExtraInfoMethod, HeaderInfo: String): Unit = js.native

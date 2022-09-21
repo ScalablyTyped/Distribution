@@ -35,6 +35,8 @@ trait USBDevice extends StObject {
   
   val deviceVersionSubminor: Double = js.native
   
+  def forget(): js.Promise[Unit] = js.native
+  
   def isochronousTransferIn(endpointNumber: Double, packetLengths: js.Array[Double]): js.Promise[USBIsochronousInTransferResult] = js.native
   
   def isochronousTransferOut(endpointNumber: Double, data: BufferSource, packetLengths: js.Array[Double]): js.Promise[USBIsochronousOutTransferResult] = js.native

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUserPoolMfaConfigResponse extends StObject {
   
   /**
-    * The multi-factor (MFA) configuration. Valid values include:    OFF MFA will not be used for any users.    ON MFA is required for all users to sign in.    OPTIONAL MFA will be required only for individual users who have an MFA factor enabled.  
+    * The multi-factor authentication (MFA) configuration. Valid values include:    OFF MFA won't be used for any users.    ON MFA is required for all users to sign in.    OPTIONAL MFA will be required only for individual users who have an MFA factor activated.  
     */
   var MfaConfiguration: js.UndefOr[UserPoolMfaType] = js.undefined
   
   /**
-    * The SMS text message multi-factor (MFA) configuration.
+    * The SMS text message multi-factor authentication (MFA) configuration.
     */
   var SmsMfaConfiguration: js.UndefOr[SmsMfaConfigType] = js.undefined
   
   /**
-    * The software token multi-factor (MFA) configuration.
+    * The software token multi-factor authentication (MFA) configuration.
     */
   var SoftwareTokenMfaConfiguration: js.UndefOr[SoftwareTokenMfaConfigType] = js.undefined
 }

@@ -12,6 +12,8 @@ trait FileManagerMessagesViews extends StObject {
   
   var items: js.UndefOr[String] = js.undefined
   
+  var listViewLabel: js.UndefOr[String] = js.undefined
+  
   var nameField: js.UndefOr[String] = js.undefined
   
   var sizeField: js.UndefOr[String] = js.undefined
@@ -38,6 +40,10 @@ object FileManagerMessagesViews {
     inline def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setListViewLabel(value: String): Self = StObject.set(x, "listViewLabel", value.asInstanceOf[js.Any])
+    
+    inline def setListViewLabelUndefined: Self = StObject.set(x, "listViewLabel", js.undefined)
     
     inline def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
     

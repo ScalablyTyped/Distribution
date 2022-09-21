@@ -11,7 +11,7 @@ trait DataSourceSchemaWithConstructorModel
      with DataSourceSchema {
   
   @JSName("model")
-  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], Model])] = js.undefined
+  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[TypeofModel & (Instantiable1[/* data */ js.UndefOr[Any], Model])] = js.undefined
 }
 object DataSourceSchemaWithConstructorModel {
   
@@ -22,7 +22,7 @@ object DataSourceSchemaWithConstructorModel {
   
   extension [Self <: DataSourceSchemaWithConstructorModel](x: Self) {
     
-    inline def setModel(value: TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], Model])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: TypeofModel & (Instantiable1[/* data */ js.UndefOr[Any], Model])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }

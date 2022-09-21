@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.MediaTagRequest")
 @js.native
-class MediaTagRequest protected ()
+open class MediaTagRequest protected ()
   extends StObject
      with typings.preloadjs.createjs.MediaTagRequest {
   def this(loadItem: typings.preloadjs.createjs.LoadItem, tag: HTMLAudioElement, srcAttribute: String) = this()

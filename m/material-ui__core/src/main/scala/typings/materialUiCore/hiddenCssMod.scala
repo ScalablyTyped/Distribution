@@ -66,7 +66,7 @@ object hiddenCssMod extends Shortcut {
       
       inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
       
-      inline def setOnlyVarargs(value: Breakpoint*): Self = StObject.set(x, "only", js.Array(value :_*))
+      inline def setOnlyVarargs(value: Breakpoint*): Self = StObject.set(x, "only", js.Array(value*))
       
       inline def setSmDown(value: Boolean): Self = StObject.set(x, "smDown", value.asInstanceOf[js.Any])
       

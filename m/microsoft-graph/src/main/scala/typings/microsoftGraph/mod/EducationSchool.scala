@@ -11,6 +11,9 @@ trait EducationSchool
   // Address of the school.
   var address: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
   
+  // The underlying administrativeUnit for this school.
+  var administrativeUnit: js.UndefOr[NullableOption[AdministrativeUnit]] = js.undefined
+  
   // Classes taught at the school. Nullable.
   var classes: js.UndefOr[NullableOption[js.Array[EducationClass]]] = js.undefined
   
@@ -61,13 +64,19 @@ object EducationSchool {
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
+    inline def setAdministrativeUnit(value: NullableOption[AdministrativeUnit]): Self = StObject.set(x, "administrativeUnit", value.asInstanceOf[js.Any])
+    
+    inline def setAdministrativeUnitNull: Self = StObject.set(x, "administrativeUnit", null)
+    
+    inline def setAdministrativeUnitUndefined: Self = StObject.set(x, "administrativeUnit", js.undefined)
+    
     inline def setClasses(value: NullableOption[js.Array[EducationClass]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     inline def setClassesNull: Self = StObject.set(x, "classes", null)
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setClassesVarargs(value: EducationClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: EducationClass*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
@@ -135,6 +144,6 @@ object EducationSchool {
     
     inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    inline def setUsersVarargs(value: EducationUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: EducationUser*): Self = StObject.set(x, "users", js.Array(value*))
   }
 }

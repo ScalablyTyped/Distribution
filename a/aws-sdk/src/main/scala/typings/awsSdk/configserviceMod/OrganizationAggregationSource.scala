@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrganizationAggregationSource extends StObject {
   
   /**
-    * If true, aggregate existing AWS Config regions and future regions.
+    * If true, aggregate existing Config regions and future regions.
     */
   var AllAwsRegions: js.UndefOr[Boolean] = js.undefined
   
@@ -17,7 +17,7 @@ trait OrganizationAggregationSource extends StObject {
   var AwsRegions: js.UndefOr[AggregatorRegionList] = js.undefined
   
   /**
-    * ARN of the IAM role used to retrieve AWS Organization details associated with the aggregator account.
+    * ARN of the IAM role used to retrieve Amazon Web Services Organization details associated with the aggregator account.
     */
   var RoleArn: String
 }
@@ -38,7 +38,7 @@ object OrganizationAggregationSource {
     
     inline def setAwsRegionsUndefined: Self = StObject.set(x, "AwsRegions", js.undefined)
     
-    inline def setAwsRegionsVarargs(value: String*): Self = StObject.set(x, "AwsRegions", js.Array(value :_*))
+    inline def setAwsRegionsVarargs(value: String*): Self = StObject.set(x, "AwsRegions", js.Array(value*))
     
     inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }

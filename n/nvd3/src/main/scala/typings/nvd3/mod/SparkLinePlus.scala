@@ -30,30 +30,30 @@ trait SparkLinePlus
   
   def sparkline(
     selection: Selection_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   def sparkline(
     transition: Transition_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   @JSName("sparkline")
   var sparkline_Original: SparkLine = js.native
   
   def xTickFormat(format: String): this.type = js.native
-  def xTickFormat(format: js.Function1[/* d */ js.Any, String]): this.type = js.native
-  def xTickFormat(format: js.Function2[/* d */ js.Any, /* i */ js.Any, String]): this.type = js.native
+  def xTickFormat(format: js.Function1[/* d */ Any, String]): this.type = js.native
+  def xTickFormat(format: js.Function2[/* d */ Any, /* i */ Any, String]): this.type = js.native
   
   def yTickFormat(format: String): this.type = js.native
-  def yTickFormat(format: js.Function1[/* d */ js.Any, String]): this.type = js.native
-  def yTickFormat(format: js.Function2[/* d */ js.Any, /* i */ js.Any, String]): this.type = js.native
+  def yTickFormat(format: js.Function1[/* d */ Any, String]): this.type = js.native
+  def yTickFormat(format: js.Function2[/* d */ Any, /* i */ Any, String]): this.type = js.native
 }

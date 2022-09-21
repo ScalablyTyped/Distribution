@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ParameterTranslateFunction extends StObject {
   
-  def apply(message: String, args: js.Any*): String = js.native
+  def apply(message: String, args: Any*): String = js.native
 }

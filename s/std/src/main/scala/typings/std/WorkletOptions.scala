@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WorkletOptions extends StObject {
   
+  /* standard dom */
   var credentials: js.UndefOr[RequestCredentials] = js.undefined
 }
 object WorkletOptions {

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCustomizeDataSourceWizardEventArgs")
 @js.native
-class ASPxClientCustomizeDataSourceWizardEventArgs ()
+open class ASPxClientCustomizeDataSourceWizardEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCustomizeDataSourceWizardEventArgs {
   
@@ -23,5 +23,5 @@ class ASPxClientCustomizeDataSourceWizardEventArgs ()
     * Specifies the wizard.
     */
   /* CompleteClass */
-  var Wizard: js.Any = js.native
+  var Wizard: Any = js.native
 }

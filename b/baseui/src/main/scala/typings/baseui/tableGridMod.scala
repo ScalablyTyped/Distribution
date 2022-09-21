@@ -1,39 +1,45 @@
 package typings.baseui
 
-import typings.baseui.tableMod.SortableHeadCellProps
-import typings.react.mod.FC
-import typings.styletronReact.mod.StyletronComponent
+import typings.baseui.anon.Cursor
+import typings.baseui.anon.GridColumn
+import typings.baseui.anon.GridTemplateColumns
+import typings.baseui.baseuiStrings.div
+import typings.baseui.tableTypesMod.HeadCellProps
+import typings.react.mod.global.JSX.Element
+import typings.styletronReact.typesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableGridMod {
   
-  @JSImport("baseui/table-grid", "SORT_DIRECTION")
+  @JSImport("baseui/table-grid", JSImport.Namespace)
   @js.native
-  object SORT_DIRECTION extends StObject {
+  val ^ : js.Any = js.native
+  
+  /* Inlined std.Readonly<{ readonly ASC :'ASC',  readonly DESC :'DESC'}> */
+  object SORT_DIRECTION {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.baseui.tableMod.SORT_DIRECTION & String] = js.native
+    @JSImport("baseui/table-grid", "SORT_DIRECTION.ASC")
+    @js.native
+    val ASC: typings.baseui.baseuiStrings.ASC = js.native
     
-    /* "ASC" */ val ASC: typings.baseui.tableMod.SORT_DIRECTION.ASC & String = js.native
-    
-    /* "DESC" */ val DESC: typings.baseui.tableMod.SORT_DIRECTION.DESC & String = js.native
+    @JSImport("baseui/table-grid", "SORT_DIRECTION.DESC")
+    @js.native
+    val DESC: typings.baseui.baseuiStrings.DESC = js.native
   }
   
-  @JSImport("baseui/table-grid", "SortableHeadCell")
-  @js.native
-  val SortableHeadCell: FC[SortableHeadCellProps] = js.native
+  inline def SortableHeadCell(props: HeadCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableHeadCell")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/table-grid", "StyledBodyCell")
   @js.native
-  val StyledBodyCell: StyletronComponent[js.Any] = js.native
+  val StyledBodyCell: StyletronComponent[div, GridColumn] = js.native
   
   @JSImport("baseui/table-grid", "StyledHeadCell")
   @js.native
-  val StyledHeadCell: StyletronComponent[js.Any] = js.native
+  val StyledHeadCell: StyletronComponent[div, Cursor] = js.native
   
   @JSImport("baseui/table-grid", "StyledTable")
   @js.native
-  val StyledTable: StyletronComponent[js.Any] = js.native
+  val StyledTable: StyletronComponent[div, GridTemplateColumns] = js.native
 }

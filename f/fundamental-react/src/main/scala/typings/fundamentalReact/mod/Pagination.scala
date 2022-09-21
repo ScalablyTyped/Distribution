@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "Pagination")
 @js.native
-class Pagination () extends default
+open class Pagination () extends default

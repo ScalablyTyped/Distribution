@@ -1,7 +1,6 @@
 package typings.jsWorkerSearch
 
 import typings.jsWorkerSearch.mod.INDEX_MODES
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object anon {
     
     var matchAnyToken: js.UndefOr[Boolean] = js.undefined
     
-    var tokenizePattern: js.UndefOr[RegExp] = js.undefined
+    var tokenizePattern: js.UndefOr[js.RegExp] = js.undefined
   }
   object CaseSensitive {
     
@@ -39,7 +38,7 @@ object anon {
       
       inline def setMatchAnyTokenUndefined: Self = StObject.set(x, "matchAnyToken", js.undefined)
       
-      inline def setTokenizePattern(value: RegExp): Self = StObject.set(x, "tokenizePattern", value.asInstanceOf[js.Any])
+      inline def setTokenizePattern(value: js.RegExp): Self = StObject.set(x, "tokenizePattern", value.asInstanceOf[js.Any])
       
       inline def setTokenizePatternUndefined: Self = StObject.set(x, "tokenizePattern", js.undefined)
     }

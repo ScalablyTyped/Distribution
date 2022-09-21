@@ -22,7 +22,7 @@ object IncludedPath {
     
     inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "Indexes", value.asInstanceOf[js.Any])
     
-    inline def setIndexesVarargs(value: Index*): Self = StObject.set(x, "Indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: Index*): Self = StObject.set(x, "Indexes", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }

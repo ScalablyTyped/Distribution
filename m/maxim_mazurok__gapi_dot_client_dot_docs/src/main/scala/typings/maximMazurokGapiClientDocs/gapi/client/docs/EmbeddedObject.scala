@@ -10,7 +10,7 @@ trait EmbeddedObject extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /** The properties of an embedded drawing. */
-  var embeddedDrawingProperties: js.UndefOr[js.Any] = js.undefined
+  var embeddedDrawingProperties: js.UndefOr[Any] = js.undefined
   
   /** The border of the embedded object. */
   var embeddedObjectBorder: js.UndefOr[EmbeddedObjectBorder] = js.undefined
@@ -55,7 +55,7 @@ object EmbeddedObject {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setEmbeddedDrawingProperties(value: js.Any): Self = StObject.set(x, "embeddedDrawingProperties", value.asInstanceOf[js.Any])
+    inline def setEmbeddedDrawingProperties(value: Any): Self = StObject.set(x, "embeddedDrawingProperties", value.asInstanceOf[js.Any])
     
     inline def setEmbeddedDrawingPropertiesUndefined: Self = StObject.set(x, "embeddedDrawingProperties", js.undefined)
     

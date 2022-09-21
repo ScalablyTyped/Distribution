@@ -14,12 +14,12 @@ trait GetRecommendationsResponse extends StObject {
   /**
     *  The end time of the profile the analysis data is about. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var profileEndTime: Timestamp
+  var profileEndTime: js.Date
   
   /**
     *  The start time of the profile the analysis data is about. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var profileStartTime: Timestamp
+  var profileStartTime: js.Date
   
   /**
     * The name of the profiling group the analysis data is about.
@@ -35,8 +35,8 @@ object GetRecommendationsResponse {
   
   inline def apply(
     anomalies: Anomalies,
-    profileEndTime: Timestamp,
-    profileStartTime: Timestamp,
+    profileEndTime: js.Date,
+    profileStartTime: js.Date,
     profilingGroupName: ProfilingGroupName,
     recommendations: Recommendations
   ): GetRecommendationsResponse = {
@@ -48,16 +48,16 @@ object GetRecommendationsResponse {
     
     inline def setAnomalies(value: Anomalies): Self = StObject.set(x, "anomalies", value.asInstanceOf[js.Any])
     
-    inline def setAnomaliesVarargs(value: Anomaly*): Self = StObject.set(x, "anomalies", js.Array(value :_*))
+    inline def setAnomaliesVarargs(value: Anomaly*): Self = StObject.set(x, "anomalies", js.Array(value*))
     
-    inline def setProfileEndTime(value: Timestamp): Self = StObject.set(x, "profileEndTime", value.asInstanceOf[js.Any])
+    inline def setProfileEndTime(value: js.Date): Self = StObject.set(x, "profileEndTime", value.asInstanceOf[js.Any])
     
-    inline def setProfileStartTime(value: Timestamp): Self = StObject.set(x, "profileStartTime", value.asInstanceOf[js.Any])
+    inline def setProfileStartTime(value: js.Date): Self = StObject.set(x, "profileStartTime", value.asInstanceOf[js.Any])
     
     inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
     inline def setRecommendations(value: Recommendations): Self = StObject.set(x, "recommendations", value.asInstanceOf[js.Any])
     
-    inline def setRecommendationsVarargs(value: Recommendation*): Self = StObject.set(x, "recommendations", js.Array(value :_*))
+    inline def setRecommendationsVarargs(value: Recommendation*): Self = StObject.set(x, "recommendations", js.Array(value*))
   }
 }

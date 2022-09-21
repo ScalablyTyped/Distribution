@@ -29,7 +29,7 @@ object ListSkillsStoreCategoriesResponse {
     
     inline def setCategoryListUndefined: Self = StObject.set(x, "CategoryList", js.undefined)
     
-    inline def setCategoryListVarargs(value: Category*): Self = StObject.set(x, "CategoryList", js.Array(value :_*))
+    inline def setCategoryListVarargs(value: Category*): Self = StObject.set(x, "CategoryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

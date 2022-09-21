@@ -9,7 +9,7 @@ trait GroupCollapsedEventUIParam extends StObject {
   /**
     * Gets the column object for the current group that is collapsed.
     */
-  var column: js.UndefOr[js.Any] = js.undefined
+  var column: js.UndefOr[Any] = js.undefined
   
   /**
     * Get a reference to the jQuery object for the column being collapsed (th).
@@ -19,7 +19,7 @@ trait GroupCollapsedEventUIParam extends StObject {
   /**
     * Gets the reference to the GridMultiColumnHeaders widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object GroupCollapsedEventUIParam {
   
@@ -30,7 +30,7 @@ object GroupCollapsedEventUIParam {
   
   extension [Self <: GroupCollapsedEventUIParam](x: Self) {
     
-    inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
@@ -38,7 +38,7 @@ object GroupCollapsedEventUIParam {
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

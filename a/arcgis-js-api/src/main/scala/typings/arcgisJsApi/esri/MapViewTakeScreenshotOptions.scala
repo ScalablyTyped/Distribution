@@ -22,6 +22,8 @@ trait MapViewTakeScreenshotOptions
   /**
     * The format of the resulting encoded data url.
     *
+    * @default png
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
     */
   var format: js.UndefOr[jpg | png] = js.undefined
@@ -56,6 +58,8 @@ trait MapViewTakeScreenshotOptions
   
   /**
     * The quality (0 to 100) of the encoded image when encoding as `jpg`.
+    *
+    * @default 98
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
     */
@@ -105,7 +109,7 @@ object MapViewTakeScreenshotOptions {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

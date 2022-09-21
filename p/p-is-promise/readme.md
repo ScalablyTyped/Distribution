@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-is-promise
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Check if something is a promise
@@ -10,10 +10,10 @@ Check if something is a promise
 | ------------------ | :-------------: |
 | Full name          | p-is-promise |
 | Keywords           | promise, is, detect, check, kind, type, thenable, es2015, async, await, promises, bluebird |
-| # releases         | 3 |
-| # dependents       | 67 |
-| # downloads        | 515713990 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0392514333333332E7 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-is-promise#readme)

@@ -1,6 +1,6 @@
 package typings.nodeGzip
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.zlibMod.InputType
 import typings.node.zlibMod.ZlibOptions
 import org.scalablytyped.runtime.StObject

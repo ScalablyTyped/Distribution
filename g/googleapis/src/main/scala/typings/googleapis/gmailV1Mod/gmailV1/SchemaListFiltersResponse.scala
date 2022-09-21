@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for the ListFilters method.
-  */
 trait SchemaListFiltersResponse extends StObject {
   
   /**
-    * List of a user&#39;s filters.
+    * List of a user's filters.
     */
   var filter: js.UndefOr[js.Array[SchemaFilter]] = js.undefined
 }
@@ -27,6 +24,6 @@ object SchemaListFiltersResponse {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: SchemaFilter*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: SchemaFilter*): Self = StObject.set(x, "filter", js.Array(value*))
   }
 }

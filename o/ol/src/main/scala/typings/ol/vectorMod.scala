@@ -9,7 +9,7 @@ object vectorMod {
   
   @JSImport("ol/layer/Vector", JSImport.Default)
   @js.native
-  class default () extends VectorLayer {
+  open class default () extends VectorLayer {
     def this(opt_options: Options) = this()
   }
   

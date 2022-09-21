@@ -19,5 +19,5 @@ object isEANMod {
   inline def IsEAN_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEAN")().asInstanceOf[PropertyDecorator]
   inline def IsEAN_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEAN")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isEAN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEAN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEAN(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEAN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

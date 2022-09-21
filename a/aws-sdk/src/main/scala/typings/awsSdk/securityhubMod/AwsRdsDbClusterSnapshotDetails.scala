@@ -32,7 +32,7 @@ trait AwsRdsDbClusterSnapshotDetails extends StObject {
   var DbClusterSnapshotIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The name of the database engine that you want to use for this DB instance.
     */
   var Engine: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -47,7 +47,7 @@ trait AwsRdsDbClusterSnapshotDetails extends StObject {
   var IamDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ARN of the AWS KMS master key that is used to encrypt the database instances in the DB cluster.
+    * The ARN of the KMS master key that is used to encrypt the database instances in the DB cluster.
     */
   var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -113,7 +113,7 @@ object AwsRdsDbClusterSnapshotDetails {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: NonEmptyString*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: NonEmptyString*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setClusterCreateTime(value: NonEmptyString): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
     

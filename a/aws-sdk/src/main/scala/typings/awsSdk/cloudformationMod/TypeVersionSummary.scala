@@ -7,37 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeVersionSummary extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the type version.
+    * The Amazon Resource Name (ARN) of the extension version.
     */
   var Arn: js.UndefOr[TypeArn] = js.undefined
   
   /**
-    * The description of the type version.
+    * The description of the extension version.
     */
   var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
-    * Whether the specified type version is set as the default version.
+    * Whether the specified extension version is set as the default version. This applies only to private extensions you have registered in your account, and extensions published by Amazon. For public third-party extensions, CloudFormation returns null.
     */
   var IsDefaultVersion: js.UndefOr[typings.awsSdk.cloudformationMod.IsDefaultVersion] = js.undefined
   
   /**
-    * When the version was registered.
+    * For public extensions that have been activated for this account and region, the version of the public extension to be used for CloudFormation operations in this account and region. For any extensions other than activated third-arty extensions, CloudFormation returns null. How you specified AutoUpdate when enabling the extension affects whether CloudFormation automatically updates the extension in this account and region when a new version is released. For more information, see Setting CloudFormation to automatically use new versions of extensions in the CloudFormation User Guide.
     */
-  var TimeCreated: js.UndefOr[Timestamp] = js.undefined
+  var PublicVersionNumber: js.UndefOr[typings.awsSdk.cloudformationMod.PublicVersionNumber] = js.undefined
   
   /**
-    * The kind of type.
+    * When the version was registered.
+    */
+  var TimeCreated: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The kind of extension.
     */
   var Type: js.UndefOr[RegistryType] = js.undefined
   
   /**
-    * The name of the type.
+    * The name of the extension.
     */
   var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.undefined
   
   /**
-    * The ID of a specific version of the type. The version ID is the value at the end of the Amazon Resource Name (ARN) assigned to the type version when it is registered.
+    * The ID of a specific version of the extension. The version ID is the value at the end of the Amazon Resource Name (ARN) assigned to the extension version when it's registered.
     */
   var VersionId: js.UndefOr[TypeVersionId] = js.undefined
 }
@@ -62,7 +67,11 @@ object TypeVersionSummary {
     
     inline def setIsDefaultVersionUndefined: Self = StObject.set(x, "IsDefaultVersion", js.undefined)
     
-    inline def setTimeCreated(value: Timestamp): Self = StObject.set(x, "TimeCreated", value.asInstanceOf[js.Any])
+    inline def setPublicVersionNumber(value: PublicVersionNumber): Self = StObject.set(x, "PublicVersionNumber", value.asInstanceOf[js.Any])
+    
+    inline def setPublicVersionNumberUndefined: Self = StObject.set(x, "PublicVersionNumber", js.undefined)
+    
+    inline def setTimeCreated(value: js.Date): Self = StObject.set(x, "TimeCreated", value.asInstanceOf[js.Any])
     
     inline def setTimeCreatedUndefined: Self = StObject.set(x, "TimeCreated", js.undefined)
     

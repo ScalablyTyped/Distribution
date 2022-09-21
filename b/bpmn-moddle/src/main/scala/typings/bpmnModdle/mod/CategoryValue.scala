@@ -29,7 +29,7 @@ object CategoryValue {
     
     inline def setCategorizedFlowElements(value: js.Array[FlowElement]): Self = StObject.set(x, "categorizedFlowElements", value.asInstanceOf[js.Any])
     
-    inline def setCategorizedFlowElementsVarargs(value: FlowElement*): Self = StObject.set(x, "categorizedFlowElements", js.Array(value :_*))
+    inline def setCategorizedFlowElementsVarargs(value: FlowElement*): Self = StObject.set(x, "categorizedFlowElements", js.Array(value*))
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

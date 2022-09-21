@@ -9,7 +9,6 @@ import typings.mapnik.mapnikStrings.jpeg
 import typings.mapnik.mapnikStrings.png
 import typings.mapnik.mapnikStrings.tiff
 import typings.mapnik.mapnikStrings.webp
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,7 +68,7 @@ object anon {
     
     var area_threshold: js.UndefOr[Double] = js.undefined
     
-    var callback: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var callback: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
     
     var fill_type: js.UndefOr[Double] = js.undefined
     
@@ -112,7 +111,7 @@ object anon {
       
       inline def setArea_thresholdUndefined: Self = StObject.set(x, "area_threshold", js.undefined)
       
-      inline def setCallback(value: /* err */ Error => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* err */ js.Error => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       

@@ -33,4 +33,12 @@ object webpackPluginServeStrings {
   @js.native
   sealed trait warn extends StObject
   inline def warn: warn = "warn".asInstanceOf[warn]
+  
+  @js.native
+  sealed trait ws extends StObject
+  inline def ws: ws = "ws".asInstanceOf[ws]
+  
+  @js.native
+  sealed trait wss extends StObject
+  inline def wss: wss = "wss".asInstanceOf[wss]
 }

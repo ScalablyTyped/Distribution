@@ -1,7 +1,7 @@
 
 # Scala.js typings for window-size
 
-Typings are for version 0.2.0
+Typings are for version 1.1.1
 
 ## Library description:
 Reliable way to get the height and width of terminal/console, since it's not calculated or updated the same way on all platforms, environments and node.js versions.
@@ -11,14 +11,11 @@ Reliable way to get the height and width of terminal/console, since it's not cal
 | Full name          | window-size |
 | Keywords           | columns, console, darwin, height, lines, redirected, resize, rows, size, term, term-size, terminal, tty, unix, width, win, window, windows |
 | # releases         | 0 |
-| # dependents       | 197 |
-| # downloads        | 272985609 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7221590333333332E7 |
+| # stars            | 80.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/window-size)
-- [Bugs](https://github.com/jonschlinkert/window-size/issues)
-- [Repository](https://github.com/jonschlinkert/window-size)
 - [Npm](https://www.npmjs.com/package/window-size)
     
 

@@ -18,7 +18,7 @@ trait ILanguageServiceHost
   
   def getDiagnosticsObject(): ILanguageServicesDiagnostics
   
-  def getLocalizedDiagnosticMessages(): js.Any
+  def getLocalizedDiagnosticMessages(): Any
   
   def getScriptByteOrderMark(fileName: String): ByteOrderMark
   
@@ -38,7 +38,7 @@ object ILanguageServiceHost {
     fileExists: String => Boolean,
     getCompilationSettings: () => CompilationSettings,
     getDiagnosticsObject: () => ILanguageServicesDiagnostics,
-    getLocalizedDiagnosticMessages: () => js.Any,
+    getLocalizedDiagnosticMessages: () => Any,
     getParentDirectory: String => String,
     getScriptByteOrderMark: String => ByteOrderMark,
     getScriptFileNames: () => js.Array[String],
@@ -60,7 +60,7 @@ object ILanguageServiceHost {
     
     inline def setGetDiagnosticsObject(value: () => ILanguageServicesDiagnostics): Self = StObject.set(x, "getDiagnosticsObject", js.Any.fromFunction0(value))
     
-    inline def setGetLocalizedDiagnosticMessages(value: () => js.Any): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
+    inline def setGetLocalizedDiagnosticMessages(value: () => Any): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
     
     inline def setGetScriptByteOrderMark(value: String => ByteOrderMark): Self = StObject.set(x, "getScriptByteOrderMark", js.Any.fromFunction1(value))
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "EmitOptions")
 @js.native
-class EmitOptions protected ()
+open class EmitOptions protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.EmitOptions {
   def this(
@@ -15,25 +15,25 @@ class EmitOptions protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _commonDirectoryPath: js.Any = js.native
+  var _commonDirectoryPath: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _diagnostic: js.Any = js.native
+  var _diagnostic: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _outputDirectory: js.Any = js.native
+  var _outputDirectory: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _settings: js.Any = js.native
+  var _settings: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _sharedOutputFile: js.Any = js.native
+  var _sharedOutputFile: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _sourceMapRootDirectory: js.Any = js.native
+  var _sourceMapRootDirectory: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _sourceRootDirectory: js.Any = js.native
+  var _sourceRootDirectory: Any = js.native
   
   /* CompleteClass */
   override def commonDirectoryPath(): String = js.native
@@ -42,7 +42,7 @@ class EmitOptions protected ()
   override def compilationSettings(): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = js.native
   
   /* private */ /* CompleteClass */
-  override def determineCommonDirectoryPath(compiler: js.Any): js.Any = js.native
+  override def determineCommonDirectoryPath(compiler: Any): Any = js.native
   
   /* CompleteClass */
   override def diagnostic(): typings.typescriptServices.TypeScript.Diagnostic = js.native

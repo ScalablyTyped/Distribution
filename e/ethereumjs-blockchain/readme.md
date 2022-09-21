@@ -10,10 +10,10 @@ A module to store and interact with blocks
 | ------------------ | :-------------: |
 | Full name          | ethereumjs-blockchain |
 | Keywords           | ethereum, blockchain |
-| # releases         | 6 |
-| # dependents       | 19 |
-| # downloads        | 1358724 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 414941.3333333333 |
+| # stars            | 118.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereumjs/ethereumjs-blockchain#readme)

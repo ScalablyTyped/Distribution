@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/keccak256" : "5.0.5"
+      "@ethersproject/keccak256" : "5.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/keccak256" : "5.0.5"
+      "@ethersproject/keccak256" : "5.7.0"
     }
   ],
   "compile-devDependencies" : [

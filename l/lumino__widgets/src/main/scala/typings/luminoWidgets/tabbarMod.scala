@@ -1,6 +1,7 @@
 package typings.luminoWidgets
 
 import typings.luminoSignaling.mod.ISignal
+import typings.luminoVirtualdom.mod.ElementARIAAttrs
 import typings.luminoVirtualdom.mod.ElementDataset
 import typings.luminoVirtualdom.mod.ElementInlineStyle
 import typings.luminoVirtualdom.mod.VirtualElement
@@ -16,9 +17,12 @@ import typings.luminoWidgets.tabbarMod.TabBar.Orientation
 import typings.luminoWidgets.tabbarMod.TabBar.RemoveBehavior
 import typings.luminoWidgets.titleMod.Title
 import typings.luminoWidgets.widgetMod.Widget
+import typings.std.Document
 import typings.std.Event
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLUListElement
+import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,8 +36,12 @@ object tabbarMod {
     *
     * @param options - The options for initializing the tab bar.
     */
-  class TabBar[T] () extends Widget {
+  open class TabBar[T] () extends Widget {
     def this(options: IOptions[T]) = this()
+    
+    /* private */ var _addButtonEnabled: Any = js.native
+    
+    /* private */ var _addRequested: Any = js.native
     
     /**
       * Adjust the current index for a tab insert operation.
@@ -41,7 +49,7 @@ object tabbarMod {
       * This method accounts for the tab bar's insertion behavior when
       * adjusting the current index and emitting the changed signal.
       */
-    /* private */ var _adjustCurrentForInsert: js.Any = js.native
+    /* private */ var _adjustCurrentForInsert: Any = js.native
     
     /**
       * Adjust the current index for a tab move operation.
@@ -49,7 +57,7 @@ object tabbarMod {
       * This method will not cause the actual current tab to change.
       * It silently adjusts the index to account for the given move.
       */
-    /* private */ var _adjustCurrentForMove: js.Any = js.native
+    /* private */ var _adjustCurrentForMove: Any = js.native
     
     /**
       * Adjust the current index for a tab remove operation.
@@ -57,64 +65,91 @@ object tabbarMod {
       * This method accounts for the tab bar's remove behavior when
       * adjusting the current index and emitting the changed signal.
       */
-    /* private */ var _adjustCurrentForRemove: js.Any = js.native
+    /* private */ var _adjustCurrentForRemove: Any = js.native
     
-    /* private */ var _currentChanged: js.Any = js.native
+    /* private */ var _currentChanged: Any = js.native
     
-    /* private */ var _currentIndex: js.Any = js.native
+    /* private */ var _currentIndex: Any = js.native
     
-    /* private */ var _dragData: js.Any = js.native
+    /* private */ var _document: Any = js.native
+    
+    /* private */ var _dragData: Any = js.native
     
     /**
       * Handle the `'dblclick'` event for the tab bar.
       */
-    /* private */ var _evtDblClick: js.Any = js.native
+    /* private */ var _evtDblClick: Any = js.native
     
     /**
       * Handle the `'keydown'` event for the tab bar.
       */
-    /* private */ var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the tab bar.
       */
-    /* private */ var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the tab bar.
       */
-    /* private */ var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the document.
       */
-    /* private */ var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: Any = js.native
+    
+    /* private */ var _name: Any = js.native
     
     /**
       * Handle the `changed` signal of a title object.
       */
-    /* private */ var _onTitleChanged: js.Any = js.native
+    /* private */ var _onTitleChanged: Any = js.native
     
-    /* private */ var _orientation: js.Any = js.native
+    /* private */ var _orientation: Any = js.native
     
-    /* private */ var _previousTitle: js.Any = js.native
+    /* private */ var _previousTitle: Any = js.native
     
     /**
       * Release the mouse and restore the non-dragged tab positions.
       */
-    /* private */ var _releaseMouse: js.Any = js.native
+    /* private */ var _releaseMouse: Any = js.native
     
-    /* private */ var _tabActivateRequested: js.Any = js.native
+    /* private */ var _tabActivateRequested: Any = js.native
     
-    /* private */ var _tabCloseRequested: js.Any = js.native
+    /* private */ var _tabCloseRequested: Any = js.native
     
-    /* private */ var _tabDetachRequested: js.Any = js.native
+    /* private */ var _tabDetachRequested: Any = js.native
     
-    /* private */ var _tabMoved: js.Any = js.native
+    /* private */ var _tabMoved: Any = js.native
     
-    /* private */ var _titles: js.Any = js.native
+    /* private */ var _titles: Any = js.native
     
-    /* private */ var _titlesEditable: js.Any = js.native
+    /* private */ var _titlesEditable: Any = js.native
+    
+    /**
+      * Whether the add button is enabled.
+      */
+    /**
+      * Set whether the add button is enabled.
+      */
+    var addButtonEnabled: Boolean = js.native
+    
+    /**
+      * The tab bar add button node.
+      *
+      * #### Notes
+      * This is the node which holds the add button.
+      *
+      * Modifying this node directly can lead to undefined behavior.
+      */
+    val addButtonNode: HTMLDivElement = js.native
+    
+    /**
+      * A signal emitted when the tab bar add button is clicked.
+      */
+    val addRequested: ISignal[this.type, Unit] = js.native
     
     /**
       * Add a tab to the end of the tab bar.
@@ -195,6 +230,13 @@ object tabbarMod {
     var currentTitle: Title[T] | Null = js.native
     
     /**
+      * The document to use with the tab bar.
+      *
+      * The default is the global `document` instance.
+      */
+    val document: Document | ShadowRoot = js.native
+    
+    /**
       * Handle the DOM events for the tab bar.
       *
       * @param event - The DOM event sent to the tab bar.
@@ -229,6 +271,14 @@ object tabbarMod {
       */
     def insertTab(index: Double, value: Title[T]): Title[T] = js.native
     def insertTab(index: Double, value: typings.luminoWidgets.titleMod.Title.IOptions[T]): Title[T] = js.native
+    
+    /**
+      * Get the name of the tab bar.
+      */
+    /**
+      * Set the name of the tab bar.
+      */
+    var name: String = js.native
     
     /**
       * Get the orientation of the tab bar.
@@ -359,16 +409,13 @@ object tabbarMod {
       */
     @JSImport("@lumino/widgets/types/tabbar", "TabBar.Renderer")
     @js.native
-    /**
-      * Construct a new renderer.
-      */
-    class Renderer ()
+    open class Renderer ()
       extends StObject
-         with IRenderer[js.Any] {
+         with IRenderer[Any] {
       
-      /* private */ var _tabID: js.Any = js.native
+      /* private */ var _tabID: Any = js.native
       
-      /* private */ var _tabKeys: js.Any = js.native
+      /* private */ var _tabKeys: Any = js.native
       
       /**
         * A selector which matches the close icon node in a tab.
@@ -383,7 +430,16 @@ object tabbarMod {
         *
         * @returns The full class name for the tab icon.
         */
-      def createIconClass(data: IRenderData[js.Any]): String = js.native
+      def createIconClass(data: IRenderData[Any]): String = js.native
+      
+      /**
+        * Create the ARIA attributes for a tab.
+        *
+        * @param data - The data to use for the tab.
+        *
+        * @returns The ARIA attributes for the tab.
+        */
+      def createTabARIA(data: IRenderData[Any]): ElementARIAAttrs = js.native
       
       /**
         * Create the class name for the tab.
@@ -392,7 +448,7 @@ object tabbarMod {
         *
         * @returns The full class name for the tab.
         */
-      def createTabClass(data: IRenderData[js.Any]): String = js.native
+      def createTabClass(data: IRenderData[Any]): String = js.native
       
       /**
         * Create the dataset for a tab.
@@ -401,7 +457,7 @@ object tabbarMod {
         *
         * @returns The dataset for the tab.
         */
-      def createTabDataset(data: IRenderData[js.Any]): ElementDataset = js.native
+      def createTabDataset(data: IRenderData[Any]): ElementDataset = js.native
       
       /**
         * Create a unique render key for the tab.
@@ -415,7 +471,7 @@ object tabbarMod {
         * the key is generated. This enables efficient rendering of moved
         * tabs and avoids subtle hover style artifacts.
         */
-      def createTabKey(data: IRenderData[js.Any]): String = js.native
+      def createTabKey(data: IRenderData[Any]): String = js.native
       
       /**
         * Create the inline style object for a tab.
@@ -424,7 +480,7 @@ object tabbarMod {
         *
         * @returns The inline style data for the tab.
         */
-      def createTabStyle(data: IRenderData[js.Any]): ElementInlineStyle = js.native
+      def createTabStyle(data: IRenderData[Any]): ElementInlineStyle = js.native
       
       /**
         * Render the close icon element for a tab.
@@ -433,7 +489,7 @@ object tabbarMod {
         *
         * @returns A virtual element representing the tab close icon.
         */
-      def renderCloseIcon(data: IRenderData[js.Any]): VirtualElement = js.native
+      def renderCloseIcon(data: IRenderData[Any]): VirtualElement = js.native
       
       /**
         * Render the icon element for a tab.
@@ -442,7 +498,7 @@ object tabbarMod {
         *
         * @returns A virtual element representing the tab icon.
         */
-      def renderIcon(data: IRenderData[js.Any]): VirtualElement = js.native
+      def renderIcon(data: IRenderData[Any]): VirtualElement = js.native
       
       /**
         * Render the label element for a tab.
@@ -451,7 +507,7 @@ object tabbarMod {
         *
         * @returns A virtual element representing the tab label.
         */
-      def renderLabel(data: IRenderData[js.Any]): VirtualElement = js.native
+      def renderLabel(data: IRenderData[Any]): VirtualElement = js.native
       
       /**
         * Render the virtual element for a tab.
@@ -461,8 +517,15 @@ object tabbarMod {
         * @returns A virtual element representing the tab.
         */
       /* CompleteClass */
-      override def renderTab(data: IRenderData[js.Any]): VirtualElement = js.native
+      override def renderTab(data: IRenderData[Any]): VirtualElement = js.native
     }
+    
+    /**
+      * A selector which matches the add button node in the tab bar.
+      */
+    @JSImport("@lumino/widgets/types/tabbar", "TabBar.addButtonSelector")
+    @js.native
+    val addButtonSelector: /* ".lm-TabBar-addButton" */ String = js.native
     
     /**
       * The default `Renderer` instance.
@@ -525,6 +588,13 @@ object tabbarMod {
     trait IOptions[T] extends StObject {
       
       /**
+        * Whether the add button is enabled.
+        *
+        * The default is `false`.
+        */
+      var addButtonEnabled: js.UndefOr[Boolean] = js.undefined
+      
+      /**
         * Whether a tab can be deselected by the user.
         *
         * The default is `false`.
@@ -532,11 +602,25 @@ object tabbarMod {
       var allowDeselect: js.UndefOr[Boolean] = js.undefined
       
       /**
+        * The document to use with the tab bar.
+        *
+        * The default is the global `document` instance.
+        */
+      var document: js.UndefOr[Document | ShadowRoot] = js.undefined
+      
+      /**
         * The selection behavior when inserting a tab.
         *
         * The default is `'select-tab-if-needed'`.
         */
       var insertBehavior: js.UndefOr[InsertBehavior] = js.undefined
+      
+      /**
+        * Name of the tab bar.
+        *
+        * This is used for accessibility reasons. The default is the empty string.
+        */
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The layout orientation of the tab bar.
@@ -582,13 +666,25 @@ object tabbarMod {
       
       extension [Self <: IOptions[?], T](x: Self & IOptions[T]) {
         
+        inline def setAddButtonEnabled(value: Boolean): Self = StObject.set(x, "addButtonEnabled", value.asInstanceOf[js.Any])
+        
+        inline def setAddButtonEnabledUndefined: Self = StObject.set(x, "addButtonEnabled", js.undefined)
+        
         inline def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
         
         inline def setAllowDeselectUndefined: Self = StObject.set(x, "allowDeselect", js.undefined)
         
+        inline def setDocument(value: Document | ShadowRoot): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+        
+        inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+        
         inline def setInsertBehavior(value: InsertBehavior): Self = StObject.set(x, "insertBehavior", value.asInstanceOf[js.Any])
         
         inline def setInsertBehaviorUndefined: Self = StObject.set(x, "insertBehavior", js.undefined)
+        
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
         inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         

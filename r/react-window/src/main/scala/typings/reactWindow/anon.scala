@@ -37,26 +37,26 @@ object anon {
     }
   }
   
-  trait ColumnIndex extends StObject {
+  trait ColumnIndex[T] extends StObject {
     
     var columnIndex: Double
     
-    var data: js.Any
+    var data: T
     
     var rowIndex: Double
   }
   object ColumnIndex {
     
-    inline def apply(columnIndex: Double, data: js.Any, rowIndex: Double): ColumnIndex = {
+    inline def apply[T](columnIndex: Double, data: T, rowIndex: Double): ColumnIndex[T] = {
       val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ColumnIndex]
+      __obj.asInstanceOf[ColumnIndex[T]]
     }
     
-    extension [Self <: ColumnIndex](x: Self) {
+    extension [Self <: ColumnIndex[?], T](x: Self & ColumnIndex[T]) {
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     }
@@ -112,14 +112,14 @@ object anon {
   
   trait ScrollLeft extends StObject {
     
-    var scrollLeft: Double
+    var scrollLeft: js.UndefOr[Double] = js.undefined
     
-    var scrollTop: Double
+    var scrollTop: js.UndefOr[Double] = js.undefined
   }
   object ScrollLeft {
     
-    inline def apply(scrollLeft: Double, scrollTop: Double): ScrollLeft = {
-      val __obj = js.Dynamic.literal(scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
+    inline def apply(): ScrollLeft = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollLeft]
     }
     
@@ -127,7 +127,11 @@ object anon {
       
       inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
+      inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+      
       inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
     }
   }
 }

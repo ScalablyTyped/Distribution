@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
-import typings.officeUiFabricReact.anon.PartialIAnnouncedProps
 import typings.react.mod.Component
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +11,14 @@ object announcedBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Announced/Announced.base", "AnnouncedBase")
   @js.native
-  class AnnouncedBase protected ()
-    extends Component[IAnnouncedProps, js.Object, js.Any] {
+  open class AnnouncedBase protected ()
+    extends Component[IAnnouncedProps, js.Object, Any] {
     def this(props: IAnnouncedProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IAnnouncedProps, context: js.Any) = this()
+    def this(props: IAnnouncedProps, context: Any) = this()
   }
   /* static members */
   object AnnouncedBase {
@@ -29,7 +29,7 @@ object announcedBaseMod {
     
     @JSImport("office-ui-fabric-react/lib/components/Announced/Announced.base", "AnnouncedBase.defaultProps")
     @js.native
-    def defaultProps: PartialIAnnouncedProps = js.native
-    inline def defaultProps_=(x: PartialIAnnouncedProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Partial[IAnnouncedProps] = js.native
+    inline def defaultProps_=(x: Partial[IAnnouncedProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.chevronLeftCircleMod.ChevronLeftCircleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonChevronLeftCircleMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/ChevronLeftCircle", JSImport.Default)
   @js.native
-  val default: SFC[ChevronLeftCircleProps] = js.native
+  val default: FC[ChevronLeftCircleProps] = js.native
   
-  type _To = SFC[ChevronLeftCircleProps]
+  type _To = FC[ChevronLeftCircleProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonChevronLeftCircleMod.foo` */
-  override def _to: SFC[ChevronLeftCircleProps] = default
+  override def _to: FC[ChevronLeftCircleProps] = default
 }

@@ -1,17 +1,17 @@
 package typings.peculiarAsn1Schema
 
 import typings.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@peculiar/asn1-schema/build/types/objects", JSImport.Namespace)
-@js.native
-object objectsMod extends js.Object {
+object objectsMod {
+  
+  @JSImport("@peculiar/asn1-schema/build/types/objects", "AsnArray")
   @js.native
-  class AsnArray[T] () extends Array[T] {
+  abstract class AsnArray[T] ()
+    extends StObject
+       with Array[T] {
     def this(items: js.Array[T]) = this()
   }
-  
 }
-

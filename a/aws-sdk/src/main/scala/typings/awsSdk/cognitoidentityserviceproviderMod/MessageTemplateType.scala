@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageTemplateType extends StObject {
   
   /**
-    * The message template for email messages.
+    * The message template for email messages. EmailMessage is allowed only if EmailSendingAccount is DEVELOPER. 
     */
   var EmailMessage: js.UndefOr[EmailVerificationMessageType] = js.undefined
   
   /**
-    * The subject line for email messages.
+    * The subject line for email messages. EmailSubject is allowed only if EmailSendingAccount is DEVELOPER. 
     */
   var EmailSubject: js.UndefOr[EmailVerificationSubjectType] = js.undefined
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.WebGLIndexedBufferRenderer")
 @js.native
-class WebGLIndexedBufferRenderer protected ()
+open class WebGLIndexedBufferRenderer protected ()
   extends typings.three.mod.WebGLIndexedBufferRenderer {
-  def this(gl: WebGLRenderingContext, extensions: js.Any, info: js.Any, capabilities: js.Any) = this()
+  def this(gl: WebGLRenderingContext, extensions: Any, info: Any, capabilities: Any) = this()
 }

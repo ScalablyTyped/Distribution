@@ -8,8 +8,9 @@ trait LiveChatMessageSnippet extends StObject {
   
   /**
     * The ID of the user that authored this message, this field is not always filled. textMessageEvent - the user that wrote the message fanFundingEvent - the user that funded the
-    * broadcast newSponsorEvent - the user that just became a sponsor messageDeletedEvent - the moderator that took the action messageRetractedEvent - the author that retracted their
-    * message userBannedEvent - the moderator that took the action superChatEvent - the user that made the purchase
+    * broadcast newSponsorEvent - the user that just became a sponsor memberMilestoneChatEvent - the member that sent the message membershipGiftingEvent - the user that made the purchase
+    * giftMembershipReceivedEvent - the user that received the gift membership messageDeletedEvent - the moderator that took the action messageRetractedEvent - the author that retracted
+    * their message userBannedEvent - the moderator that took the action superChatEvent - the user that made the purchase superStickerEvent - the user that made the purchase
     */
   var authorChannelId: js.UndefOr[String] = js.undefined
   
@@ -22,16 +23,28 @@ trait LiveChatMessageSnippet extends StObject {
   /** Details about the funding event, this is only set if the type is 'fanFundingEvent'. */
   var fanFundingEventDetails: js.UndefOr[LiveChatFanFundingEventDetails] = js.undefined
   
+  /** Details about the Gift Membership Received event, this is only set if the type is 'giftMembershipReceivedEvent'. */
+  var giftMembershipReceivedDetails: js.UndefOr[LiveChatGiftMembershipReceivedDetails] = js.undefined
+  
   /** Whether the message has display content that should be displayed to users. */
   var hasDisplayContent: js.UndefOr[Boolean] = js.undefined
   
   var liveChatId: js.UndefOr[String] = js.undefined
   
+  /** Details about the Member Milestone Chat event, this is only set if the type is 'memberMilestoneChatEvent'. */
+  var memberMilestoneChatDetails: js.UndefOr[LiveChatMemberMilestoneChatDetails] = js.undefined
+  
+  /** Details about the Membership Gifting event, this is only set if the type is 'membershipGiftingEvent'. */
+  var membershipGiftingDetails: js.UndefOr[LiveChatMembershipGiftingDetails] = js.undefined
+  
   var messageDeletedDetails: js.UndefOr[LiveChatMessageDeletedDetails] = js.undefined
   
   var messageRetractedDetails: js.UndefOr[LiveChatMessageRetractedDetails] = js.undefined
   
-  /** The date and time when the message was orignally published. The value is specified in ISO 8601 format. */
+  /** Details about the New Member Announcement event, this is only set if the type is 'newSponsorEvent'. Please note that "member" is the new term for "sponsor". */
+  var newSponsorDetails: js.UndefOr[LiveChatNewSponsorDetails] = js.undefined
+  
+  /** The date and time when the message was orignally published. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /** Details about the Super Chat event, this is only set if the type is 'superChatEvent'. */
@@ -69,6 +82,10 @@ object LiveChatMessageSnippet {
     
     inline def setFanFundingEventDetailsUndefined: Self = StObject.set(x, "fanFundingEventDetails", js.undefined)
     
+    inline def setGiftMembershipReceivedDetails(value: LiveChatGiftMembershipReceivedDetails): Self = StObject.set(x, "giftMembershipReceivedDetails", value.asInstanceOf[js.Any])
+    
+    inline def setGiftMembershipReceivedDetailsUndefined: Self = StObject.set(x, "giftMembershipReceivedDetails", js.undefined)
+    
     inline def setHasDisplayContent(value: Boolean): Self = StObject.set(x, "hasDisplayContent", value.asInstanceOf[js.Any])
     
     inline def setHasDisplayContentUndefined: Self = StObject.set(x, "hasDisplayContent", js.undefined)
@@ -77,6 +94,14 @@ object LiveChatMessageSnippet {
     
     inline def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
     
+    inline def setMemberMilestoneChatDetails(value: LiveChatMemberMilestoneChatDetails): Self = StObject.set(x, "memberMilestoneChatDetails", value.asInstanceOf[js.Any])
+    
+    inline def setMemberMilestoneChatDetailsUndefined: Self = StObject.set(x, "memberMilestoneChatDetails", js.undefined)
+    
+    inline def setMembershipGiftingDetails(value: LiveChatMembershipGiftingDetails): Self = StObject.set(x, "membershipGiftingDetails", value.asInstanceOf[js.Any])
+    
+    inline def setMembershipGiftingDetailsUndefined: Self = StObject.set(x, "membershipGiftingDetails", js.undefined)
+    
     inline def setMessageDeletedDetails(value: LiveChatMessageDeletedDetails): Self = StObject.set(x, "messageDeletedDetails", value.asInstanceOf[js.Any])
     
     inline def setMessageDeletedDetailsUndefined: Self = StObject.set(x, "messageDeletedDetails", js.undefined)
@@ -84,6 +109,10 @@ object LiveChatMessageSnippet {
     inline def setMessageRetractedDetails(value: LiveChatMessageRetractedDetails): Self = StObject.set(x, "messageRetractedDetails", value.asInstanceOf[js.Any])
     
     inline def setMessageRetractedDetailsUndefined: Self = StObject.set(x, "messageRetractedDetails", js.undefined)
+    
+    inline def setNewSponsorDetails(value: LiveChatNewSponsorDetails): Self = StObject.set(x, "newSponsorDetails", value.asInstanceOf[js.Any])
+    
+    inline def setNewSponsorDetailsUndefined: Self = StObject.set(x, "newSponsorDetails", js.undefined)
     
     inline def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
     

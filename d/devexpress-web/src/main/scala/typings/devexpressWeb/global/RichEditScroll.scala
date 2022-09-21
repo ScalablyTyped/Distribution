@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RichEditScroll")
 @js.native
-class RichEditScroll ()
+open class RichEditScroll ()
   extends StObject
      with typings.devexpressWeb.RichEditScroll

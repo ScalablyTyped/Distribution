@@ -14,14 +14,14 @@ object webXRInputMod {
   
   @JSImport("babylonjs/XR/webXRInput", "WebXRInput")
   @js.native
-  class WebXRInput protected ()
+  open class WebXRInput protected ()
     extends StObject
        with IDisposable {
     /**
       * Initializes the WebXRInput
       * @param xrSessionManager the xr session manager for this session
       * @param xrCamera the WebXR camera for this session. Mainly used for teleportation
-      * @param options = initialization options for this xr input
+      * @param _options = initialization options for this xr input
       */
     def this(
       /**
@@ -42,18 +42,20 @@ object webXRInputMod {
       * the WebXR camera for this session. Mainly used for teleportation
       */
     xrCamera: WebXRCamera,
-      options: IWebXRInputOptions
+      _options: IWebXRInputOptions
     ) = this()
     
-    /* private */ var _addAndRemoveControllers: js.Any = js.native
+    /* private */ var _addAndRemoveControllers: Any = js.native
     
-    /* private */ var _frameObserver: js.Any = js.native
+    /* private */ var _frameObserver: Any = js.native
     
-    /* private */ var _onInputSourcesChange: js.Any = js.native
+    /* private */ var _onInputSourcesChange: Any = js.native
     
-    /* private */ var _sessionEndedObserver: js.Any = js.native
+    /* private */ val _options: Any = js.native
     
-    /* private */ var _sessionInitObserver: js.Any = js.native
+    /* private */ var _sessionEndedObserver: Any = js.native
+    
+    /* private */ var _sessionInitObserver: Any = js.native
     
     /**
       * XR controllers being tracked
@@ -75,8 +77,6 @@ object webXRInputMod {
       * Event when a controller has been removed/disconnected
       */
     var onControllerRemovedObservable: Observable[WebXRInputSource] = js.native
-    
-    /* private */ val options: js.Any = js.native
     
     /**
       * the WebXR camera for this session. Mainly used for teleportation

@@ -13,11 +13,11 @@ trait Window extends StObject {
     database_size: Double
   ): Database
   
-  var requestFileSystem: js.Any
+  var requestFileSystem: Any
 }
 object Window {
   
-  inline def apply(openDatabase: (String, String, String, Double) => Database, requestFileSystem: js.Any): Window = {
+  inline def apply(openDatabase: (String, String, String, Double) => Database, requestFileSystem: Any): Window = {
     val __obj = js.Dynamic.literal(openDatabase = js.Any.fromFunction4(openDatabase), requestFileSystem = requestFileSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
@@ -26,6 +26,6 @@ object Window {
     
     inline def setOpenDatabase(value: (String, String, String, Double) => Database): Self = StObject.set(x, "openDatabase", js.Any.fromFunction4(value))
     
-    inline def setRequestFileSystem(value: js.Any): Self = StObject.set(x, "requestFileSystem", value.asInstanceOf[js.Any])
+    inline def setRequestFileSystem(value: Any): Self = StObject.set(x, "requestFileSystem", value.asInstanceOf[js.Any])
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("PieExportOptions")
 @js.native
-class PieExportOptions ()
+open class PieExportOptions ()
   extends StObject
      with typings.devexpressWeb.PieExportOptions {
   

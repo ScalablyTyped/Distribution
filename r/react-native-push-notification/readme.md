@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-push-notification
 
-Typings are for version 5.0
+Typings are for version 8.1
 
 ## Library description:
 React Native Local and Remote Notifications
@@ -11,9 +11,9 @@ React Native Local and Remote Notifications
 | Full name          | react-native-push-notification |
 | Keywords           | react-component, react-native, ios, android, notifications, push, apns, firebase |
 | # releases         | 25 |
-| # dependents       | 12 |
-| # downloads        | 2394929 |
-| # stars            | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 384346.0 |
+| # stars            | 6384.0 |
 
 ## Links
 - [Homepage](https://github.com/zo0r/react-native-push-notification#readme)

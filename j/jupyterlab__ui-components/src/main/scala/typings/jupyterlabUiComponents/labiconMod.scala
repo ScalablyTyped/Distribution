@@ -12,6 +12,7 @@ import typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.span
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.ILabIcon
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IProps
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IReact
+import typings.jupyterlabUiComponents.labiconMod.LabIcon.IReactProps
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IRendererOptions
 import typings.luminoSignaling.mod.Signal
 import typings.luminoVirtualdom.anon.Attrs
@@ -32,7 +33,7 @@ object labiconMod {
   
   @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon")
   @js.native
-  class LabIcon protected ()
+  open class LabIcon protected ()
     extends StObject
        with ILabIcon {
     /** *********
@@ -42,7 +43,7 @@ object labiconMod {
     
     /* protected */ var _className: String = js.native
     
-    /* protected */ def _initReact(displayName: String): ForwardRefExoticComponent[IProps & RefAttributes[SVGElement]] = js.native
+    /* protected */ def _initReact(displayName: String): ForwardRefExoticComponent[IReactProps] = js.native
     
     /* protected */ def _initRender(hasRenderUnrender: PartialIRenderer): Unit = js.native
     
@@ -62,7 +63,7 @@ object labiconMod {
     
     /* protected */ var _svgInnerHTML: js.UndefOr[String | Null] = js.native
     
-    /* protected */ var _svgReactAttrs: js.UndefOr[js.Any | Null] = js.native
+    /* protected */ var _svgReactAttrs: js.UndefOr[Any | Null] = js.native
     
     /* protected */ var _svgReplaced: Signal[this.type, Unit] = js.native
     
@@ -78,8 +79,8 @@ object labiconMod {
       *
       * @returns a view of this LabIcon instance
       */
-    def bindprops(): js.Any = js.native
-    def bindprops(props: IProps): js.Any = js.native
+    def bindprops(): Any = js.native
+    def bindprops(props: IProps): Any = js.native
     
     /**
       * Create an icon as a DOM element
@@ -172,7 +173,7 @@ object labiconMod {
     
     /* protected */ def svgInnerHTML: String | Null = js.native
     
-    /* protected */ def svgReactAttrs: js.Any | Null = js.native
+    /* protected */ def svgReactAttrs: Any | Null = js.native
     
     /**
       * A string containing the raw contents of an svg file.
@@ -196,13 +197,13 @@ object labiconMod {
     
     @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon._debug")
     @js.native
-    def _debug: js.Any = js.native
-    inline def _debug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debug")(x.asInstanceOf[js.Any])
+    def _debug: Any = js.native
+    inline def _debug_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debug")(x.asInstanceOf[js.Any])
     
     @JSImport("@jupyterlab/ui-components/lib/icon/labicon", "LabIcon._instances")
     @js.native
-    def _instances: js.Any = js.native
-    inline def _instances_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instances")(x.asInstanceOf[js.Any])
+    def _instances: Any = js.native
+    inline def _instances_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instances")(x.asInstanceOf[js.Any])
     
     /** *********
       * statics *
@@ -505,7 +506,7 @@ object labiconMod {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setChildrenVarargs(value: VirtualNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: VirtualNode*): Self = StObject.set(x, "children", js.Array(value*))
         
         inline def setProps(value: IProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
         

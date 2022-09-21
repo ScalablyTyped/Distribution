@@ -17,5 +17,5 @@ trait ColorVariableConstructor
 Instantiable0[ColorVariable]
      with Instantiable1[/* properties */ ColorVariableProperties, ColorVariable] {
   
-  def fromJSON(json: js.Any): ColorVariable = js.native
+  def fromJSON(json: Any): ColorVariable = js.native
 }

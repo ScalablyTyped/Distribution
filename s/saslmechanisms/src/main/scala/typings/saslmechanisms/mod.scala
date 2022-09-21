@@ -11,7 +11,7 @@ object mod extends Shortcut {
   
   @JSImport("saslmechanisms", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Factory
   @JSImport("saslmechanisms", JSImport.Namespace)
@@ -34,7 +34,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("saslmechanisms", "Factory")
   @js.native
-  class FactoryCls ()
+  open class FactoryCls ()
     extends StObject
        with Factory
   
@@ -46,11 +46,11 @@ object mod extends Shortcut {
     
     var name: String
     
-    def response(cred: StringDictionary[js.Any]): String
+    def response(cred: StringDictionary[Any]): String
   }
   object Mechanism {
     
-    inline def apply(challenge: String => Unit, name: String, response: StringDictionary[js.Any] => String): Mechanism = {
+    inline def apply(challenge: String => Unit, name: String, response: StringDictionary[Any] => String): Mechanism = {
       val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
       __obj.asInstanceOf[Mechanism]
     }
@@ -61,7 +61,7 @@ object mod extends Shortcut {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setResponse(value: StringDictionary[js.Any] => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+      inline def setResponse(value: StringDictionary[Any] => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
     }
   }
   

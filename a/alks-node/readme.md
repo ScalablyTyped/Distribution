@@ -10,10 +10,10 @@ Node client for ALKS
 | ------------------ | :-------------: |
 | Full name          | alks-node |
 | Keywords           | alks |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 91744 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 16533.666666666668 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/Cox-Automotive/alks-node#readme)

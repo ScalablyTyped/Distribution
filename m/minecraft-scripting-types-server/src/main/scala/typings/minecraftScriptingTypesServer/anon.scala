@@ -52,7 +52,7 @@ object anon {
       
       inline def setAccepted_items(value: js.Array[String]): Self = StObject.set(x, "accepted_items", value.asInstanceOf[js.Any])
       
-      inline def setAccepted_itemsVarargs(value: String*): Self = StObject.set(x, "accepted_items", js.Array(value :_*))
+      inline def setAccepted_itemsVarargs(value: String*): Self = StObject.set(x, "accepted_items", js.Array(value*))
       
       inline def setInteract_text(value: String): Self = StObject.set(x, "interact_text", value.asInstanceOf[js.Any])
       
@@ -166,7 +166,7 @@ object anon {
       
       inline def setEffects(value: js.Array[Amplifier]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
-      inline def setEffectsVarargs(value: Amplifier*): Self = StObject.set(x, "effects", js.Array(value :_*))
+      inline def setEffectsVarargs(value: Amplifier*): Self = StObject.set(x, "effects", js.Array(value*))
       
       inline def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -222,7 +222,7 @@ object anon {
       
       inline def setName_filter(value: js.Array[String]): Self = StObject.set(x, "name_filter", value.asInstanceOf[js.Any])
       
-      inline def setName_filterVarargs(value: String*): Self = StObject.set(x, "name_filter", js.Array(value :_*))
+      inline def setName_filterVarargs(value: String*): Self = StObject.set(x, "name_filter", js.Array(value*))
       
       inline def setOn_named(value: MinecraftTrigger | String): Self = StObject.set(x, "on_named", value.asInstanceOf[js.Any])
     }

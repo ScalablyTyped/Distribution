@@ -17,68 +17,25 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  // TODO: remove this in the next major version
-  // when removed, each of the methods in this interface can be refactored to an explicit function export
-  // and `wallpaper` namespace may be removed completely along with the `export = wallpaper` export.
-  @JSImport("wallpaper", "default")
-  @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof wallpaper */ js.Any = js.native
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof wallpaper */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def getWallpaper(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWallpaper")().asInstanceOf[js.Promise[String]]
+  inline def getWallpaper(options: GetOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWallpaper")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  /**
-  	Get the path to the wallpaper image currently set.
-  	@returns The path of the current desktop wallpaper.
-  	@example
-  	```
-  	import wallpaper = require('wallpaper');
-  	(async () => {
-  		await wallpaper.get();
-  		//=> '/Users/sindresorhus/unicorn.jpg'
-  	})();
-  	```
-  	*/
-  inline def get(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[String]]
-  inline def get(options: GetOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def screens(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("screens")().asInstanceOf[js.Promise[js.Array[String]]]
   
-  /**
-  	__macOS only.__
-  	@returns The available screens.
-  	@example
-  	```
-  	import wallpaper from 'wallpaper';
-  	(async () => {
-  		await wallpaper.screens();
-  		//=> ['Color LCD']
-  	})();
-  	```
-  	*/
-  @JSImport("wallpaper", "screens")
-  @js.native
-  def screens: js.UndefOr[js.Function0[js.Promise[js.Array[String]]]] = js.native
-  inline def screens_=(x: js.UndefOr[js.Function0[js.Promise[js.Array[String]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screens")(x.asInstanceOf[js.Any])
+  inline def setSolidColorWallpaper(rgbHexColor: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSolidColorWallpaper")(rgbHexColor.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def setSolidColorWallpaper(rgbHexColor: String, options: SetOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setSolidColorWallpaper")(rgbHexColor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  /**
-  	Set a new wallpaper.
-  	@param imagePath - The path to the image to set as the desktop wallpaper.
-  	@example
-  	```
-  	import wallpaper = require('wallpaper');
-  	(async () => {
-  		await wallpaper.set('unicorn.jpg');
-  	})();
-  	```
-  	*/
-  inline def set(imagePath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(imagePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def set(imagePath: String, options: SetOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(imagePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setWallpaper(imagePath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setWallpaper")(imagePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def setWallpaper(imagePath: String, options: SetOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setWallpaper")(imagePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait GetOptions extends StObject {
     
     /**
-    		__macOS only.__
-    		The screen to get the wallpaper from.
-    		Values: `all`, `main`, or the index of a screen from `.screens()`.
-    		@default 'main'
-    		*/
+    	__macOS only.__
+    	The screen to get the wallpaper from.
+    	Values: `all`, `main`, or the index of a screen from `.screens()`.
+    	@default 'main'
+    	*/
     val screen: js.UndefOr[all | main | Double] = js.undefined
   }
   object GetOptions {
@@ -99,19 +56,19 @@ object mod {
   trait SetOptions extends StObject {
     
     /**
-    		__macOS only.__
-    		Scaling method. Values: `auto` `fill` `fit` `stretch` `center`.
-    		@default 'auto'
-    		*/
+    	__macOS only.__
+    	Scaling method. Values: `auto` `fill` `fit` `stretch` `center`.
+    	@default 'auto'
+    	*/
     val scale: js.UndefOr[auto | fill | fit | stretch | center] = js.undefined
     
     /**
-    		__macOS only.__
-    		The screen to set the wallpaper on.
-    		Values: `all`, `main`, or the index of a screen from `.screens()`.
-    		*On Linux and Windows it's hard-coded to `main`.*
-    		@default 'all'
-    		*/
+    	__macOS only.__
+    	The screen to set the wallpaper on.
+    	Values: `all`, `main`, or the index of a screen from `.screens()`.
+    	*On Linux and Windows it's hard-coded to `main`.*
+    	@default 'all'
+    	*/
     val screen: js.UndefOr[all | main | Double] = js.undefined
   }
   object SetOptions {

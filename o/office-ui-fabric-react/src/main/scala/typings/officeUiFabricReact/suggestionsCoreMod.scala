@@ -13,15 +13,15 @@ object suggestionsCoreMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsCore", "SuggestionsCore")
   @js.native
-  class SuggestionsCore[T] protected ()
-    extends Component[ISuggestionsCoreProps[T], js.Object, js.Any] {
+  open class SuggestionsCore[T] protected ()
+    extends Component[ISuggestionsCoreProps[T], js.Object, Any] {
     def this(suggestionsProps: ISuggestionsCoreProps[T]) = this()
     
-    /* private */ var SuggestionsItemOfProperType: js.Any = js.native
+    /* private */ var SuggestionsItemOfProperType: Any = js.native
     
-    /* private */ var _onClickTypedSuggestionsItem: js.Any = js.native
+    /* private */ var _onClickTypedSuggestionsItem: Any = js.native
     
-    /* private */ var _onRemoveTypedSuggestionsItem: js.Any = js.native
+    /* private */ var _onRemoveTypedSuggestionsItem: Any = js.native
     
     /* protected */ var _selectedElement: RefObject[HTMLDivElement] = js.native
     

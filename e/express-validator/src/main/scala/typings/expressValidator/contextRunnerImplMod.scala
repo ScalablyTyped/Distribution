@@ -14,7 +14,7 @@ object contextRunnerImplMod {
   
   @JSImport("express-validator/src/chain/context-runner-impl", "ContextRunnerImpl")
   @js.native
-  class ContextRunnerImpl protected ()
+  open class ContextRunnerImpl protected ()
     extends StObject
        with ContextRunner {
     def this(builderOrContext: ContextBuilder) = this()
@@ -22,14 +22,15 @@ object contextRunnerImplMod {
     def this(builderOrContext: ContextBuilder, selectFields: SelectFields_) = this()
     def this(builderOrContext: Context, selectFields: SelectFields_) = this()
     
-    /* private */ val builderOrContext: js.Any = js.native
+    /* private */ val builderOrContext: Any = js.native
     
-    /* private */ val selectFields: js.Any = js.native
+    /* private */ val selectFields: Any = js.native
   }
   
+  @JSImport("express-validator/src/chain/context-runner-impl", "ResultWithContext")
   @js.native
-  trait ResultWithContext
-    extends Result[js.Any] {
+  open class ResultWithContext protected () extends Result[Any] {
+    def this(context: ReadonlyContext) = this()
     
     val context: ReadonlyContext = js.native
   }

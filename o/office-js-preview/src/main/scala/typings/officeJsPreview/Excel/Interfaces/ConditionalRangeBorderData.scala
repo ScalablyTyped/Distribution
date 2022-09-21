@@ -20,25 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalRangeBorderData extends StObject {
   
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
+    * Constant value that indicates the specific side of the border. See `Excel.ConditionalRangeBorderIndex` for details.
     *
-    * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var sideIndex: js.UndefOr[ConditionalRangeBorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight] = js.undefined
   
   /**
+    * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
     *
-    * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var style: js.UndefOr[

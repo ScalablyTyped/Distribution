@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenFindPanelCommand")
 @js.native
-class OpenFindPanelCommand ()
+open class OpenFindPanelCommand ()
   extends StObject
      with typings.devexpressWeb.OpenFindPanelCommand {
   

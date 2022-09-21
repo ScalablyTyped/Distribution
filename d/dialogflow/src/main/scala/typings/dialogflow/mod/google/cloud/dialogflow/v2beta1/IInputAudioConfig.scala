@@ -87,7 +87,7 @@ object IInputAudioConfig {
     
     inline def setPhraseHintsUndefined: Self = StObject.set(x, "phraseHints", js.undefined)
     
-    inline def setPhraseHintsVarargs(value: String*): Self = StObject.set(x, "phraseHints", js.Array(value :_*))
+    inline def setPhraseHintsVarargs(value: String*): Self = StObject.set(x, "phraseHints", js.Array(value*))
     
     inline def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
     
@@ -107,6 +107,6 @@ object IInputAudioConfig {
     
     inline def setSpeechContextsUndefined: Self = StObject.set(x, "speechContexts", js.undefined)
     
-    inline def setSpeechContextsVarargs(value: ISpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value :_*))
+    inline def setSpeechContextsVarargs(value: ISpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value*))
   }
 }

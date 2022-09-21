@@ -25,7 +25,7 @@ trait SpatialTileProvider
     * This method is normally used when updating your visualization.
     */
   def setQueryParams(): Unit = js.native
-  def setQueryParams(queryParams: js.Any): Unit = js.native
+  def setQueryParams(queryParams: Any): Unit = js.native
 }
 object SpatialTileProvider {
   
@@ -39,7 +39,7 @@ object SpatialTileProvider {
     var layerName: String
     
     /** The query's dynamic parameters. The dynamic parameters can be used to filter data provided by the query. */
-    var queryParams: js.UndefOr[js.Any] = js.undefined
+    var queryParams: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -52,7 +52,7 @@ object SpatialTileProvider {
       
       inline def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
       
-      inline def setQueryParams(value: js.Any): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: Any): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
       inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     }

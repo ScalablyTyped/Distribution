@@ -10,7 +10,7 @@ object reprojTileMod {
   
   @JSImport("ol/reproj/Tile", JSImport.Default)
   @js.native
-  class default protected () extends ReprojTile {
+  open class default protected () extends ReprojTile {
     def this(
       sourceProj: typings.ol.projectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
@@ -72,7 +72,7 @@ object reprojTileMod {
       getTileFunction: FunctionType,
       opt_errorThreshold: Double,
       opt_renderEdges: Boolean,
-      opt_contextOptions: js.Any
+      opt_contextOptions: Any
     ) = this()
     def this(
       sourceProj: typings.ol.projectionMod.default,
@@ -86,7 +86,7 @@ object reprojTileMod {
       getTileFunction: FunctionType,
       opt_errorThreshold: Double,
       opt_renderEdges: Unit,
-      opt_contextOptions: js.Any
+      opt_contextOptions: Any
     ) = this()
     def this(
       sourceProj: typings.ol.projectionMod.default,
@@ -100,7 +100,7 @@ object reprojTileMod {
       getTileFunction: FunctionType,
       opt_errorThreshold: Unit,
       opt_renderEdges: Boolean,
-      opt_contextOptions: js.Any
+      opt_contextOptions: Any
     ) = this()
     def this(
       sourceProj: typings.ol.projectionMod.default,
@@ -114,7 +114,7 @@ object reprojTileMod {
       getTileFunction: FunctionType,
       opt_errorThreshold: Unit,
       opt_renderEdges: Unit,
-      opt_contextOptions: js.Any
+      opt_contextOptions: Any
     ) = this()
   }
   

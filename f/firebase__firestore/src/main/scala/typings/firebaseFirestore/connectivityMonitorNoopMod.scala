@@ -2,15 +2,18 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitor
 import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitorCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/connectivity_monitor_noop", JSImport.Namespace)
-@js.native
-object connectivityMonitorNoopMod extends js.Object {
+object connectivityMonitorNoopMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/remote/connectivity_monitor_noop", "NoopConnectivityMonitor")
   @js.native
-  class NoopConnectivityMonitor () extends ConnectivityMonitor {
+  open class NoopConnectivityMonitor ()
+    extends StObject
+       with ConnectivityMonitor {
+    
     /**
       * Adds a callback to be called when connectivity changes.
       *
@@ -21,6 +24,7 @@ object connectivityMonitorNoopMod extends js.Object {
       */
     /* CompleteClass */
     override def addCallback(callback: ConnectivityMonitorCallback): Unit = js.native
+    
     /**
       * Stops monitoring connectivity. After this call completes, no further
       * callbacks will be triggered. After shutdown() is called, no further calls
@@ -29,6 +33,4 @@ object connectivityMonitorNoopMod extends js.Object {
     /* CompleteClass */
     override def shutdown(): Unit = js.native
   }
-  
 }
-

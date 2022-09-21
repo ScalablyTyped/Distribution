@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DepthRendererSceneComponent")
 @js.native
-class DepthRendererSceneComponent protected ()
+open class DepthRendererSceneComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DepthRendererSceneComponent {
   /**
@@ -16,10 +16,10 @@ class DepthRendererSceneComponent protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /* private */ /* CompleteClass */
-  var _gatherActiveCameraRenderTargets: js.Any = js.native
+  var _gatherActiveCameraRenderTargets: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _gatherRenderTargets: js.Any = js.native
+  var _gatherRenderTargets: Any = js.native
   
   /**
     * Disposes the component and the associated ressources.

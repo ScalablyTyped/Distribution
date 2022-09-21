@@ -1,7 +1,7 @@
 
 # Scala.js typings for tmi_dot_js
 
-Typings are for version 1.4
+Typings are for version 1.8
 
 ## Library description:
 Javascript library for the Twitch Messaging Interface.
@@ -11,9 +11,9 @@ Javascript library for the Twitch Messaging Interface.
 | Full name          | tmi.js |
 | Keywords           | tmi, tmijs, twitch, chat, message, messaging, interface, bot |
 | # releases         | 16 |
-| # dependents       | 57 |
-| # downloads        | 169010 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 18964.666666666668 |
+| # stars            | 1288.0 |
 
 ## Links
 - [Homepage](https://github.com/tmijs/tmi.js#readme)

@@ -25,12 +25,12 @@ object BulkEditAssignedUserRolesRequest {
     
     inline def setCreatedAssignedUserRolesUndefined: Self = StObject.set(x, "createdAssignedUserRoles", js.undefined)
     
-    inline def setCreatedAssignedUserRolesVarargs(value: AssignedUserRole*): Self = StObject.set(x, "createdAssignedUserRoles", js.Array(value :_*))
+    inline def setCreatedAssignedUserRolesVarargs(value: AssignedUserRole*): Self = StObject.set(x, "createdAssignedUserRoles", js.Array(value*))
     
     inline def setDeletedAssignedUserRoles(value: js.Array[String]): Self = StObject.set(x, "deletedAssignedUserRoles", value.asInstanceOf[js.Any])
     
     inline def setDeletedAssignedUserRolesUndefined: Self = StObject.set(x, "deletedAssignedUserRoles", js.undefined)
     
-    inline def setDeletedAssignedUserRolesVarargs(value: String*): Self = StObject.set(x, "deletedAssignedUserRoles", js.Array(value :_*))
+    inline def setDeletedAssignedUserRolesVarargs(value: String*): Self = StObject.set(x, "deletedAssignedUserRoles", js.Array(value*))
   }
 }

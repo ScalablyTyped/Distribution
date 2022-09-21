@@ -9,26 +9,26 @@ trait CreateApplicationRequest extends StObject {
   /**
     * Description of the application to be created.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[ApplicationDescription] = js.undefined
   
   /**
     * Name of the application to be created.
     */
-  var name: String
+  var name: ApplicationName
 }
 object CreateApplicationRequest {
   
-  inline def apply(name: String): CreateApplicationRequest = {
+  inline def apply(name: ApplicationName): CreateApplicationRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationRequest]
   }
   
   extension [Self <: CreateApplicationRequest](x: Self) {
     
-    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ApplicationDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ApplicationName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

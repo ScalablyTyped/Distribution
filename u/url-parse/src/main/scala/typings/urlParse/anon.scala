@@ -1,5 +1,6 @@
 package typings.urlParse
 
+import typings.std.Record
 import typings.urlParse.mod.QueryParser
 import typings.urlParse.mod.StringifyQuery
 import org.scalablytyped.runtime.StObject
@@ -10,9 +11,9 @@ object anon {
   
   trait Parse extends StObject {
     
-    def parse(query: String): js.Object
+    def parse(query: String): Record[String, js.UndefOr[String]]
     @JSName("parse")
-    var parse_Original: QueryParser
+    var parse_Original: QueryParser[Record[String, js.UndefOr[String]]]
     
     def stringify(query: js.Object): String
     @JSName("stringify")
@@ -20,14 +21,17 @@ object anon {
   }
   object Parse {
     
-    inline def apply(parse: /* query */ String => js.Object, stringify: /* query */ js.Object => String): Parse = {
+    inline def apply(
+      parse: /* query */ String => Record[String, js.UndefOr[String]],
+      stringify: /* query */ js.Object => String
+    ): Parse = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
       __obj.asInstanceOf[Parse]
     }
     
     extension [Self <: Parse](x: Self) {
       
-      inline def setParse(value: /* query */ String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* query */ String => Record[String, js.UndefOr[String]]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       inline def setStringify(value: /* query */ js.Object => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     }

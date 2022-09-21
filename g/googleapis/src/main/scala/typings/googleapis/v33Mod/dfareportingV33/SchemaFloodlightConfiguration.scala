@@ -4,32 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains properties of a Floodlight configuration.
-  */
 trait SchemaFloodlightConfiguration extends StObject {
   
   /**
-    * Account ID of this floodlight configuration. This is a read-only field
-    * that can be left blank.
+    * Account ID of this floodlight configuration. This is a read-only field that can be left blank.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Advertiser ID of the parent advertiser of this floodlight configuration.
     */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  var advertiserId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Dimension value for the ID of the advertiser. This is a read-only,
-    * auto-generated field.
+    * Dimension value for the ID of the advertiser. This is a read-only, auto-generated field.
     */
   var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Whether advertiser data is shared with Google Analytics.
     */
-  var analyticsDataSharingEnabled: js.UndefOr[Boolean] = js.undefined
+  var analyticsDataSharingEnabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Custom Viewability metric for the floodlight configuration.
@@ -37,40 +32,34 @@ trait SchemaFloodlightConfiguration extends StObject {
   var customViewabilityMetric: js.UndefOr[SchemaCustomViewabilityMetric] = js.undefined
   
   /**
-    * Whether the exposure-to-conversion report is enabled. This report shows
-    * detailed pathway information on up to 10 of the most recent ad exposures
-    * seen by a user before converting.
+    * Whether the exposure-to-conversion report is enabled. This report shows detailed pathway information on up to 10 of the most recent ad exposures seen by a user before converting.
     */
-  var exposureToConversionEnabled: js.UndefOr[Boolean] = js.undefined
+  var exposureToConversionEnabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Day that will be counted as the first day of the week in reports. This is
-    * a required field.
+    * Day that will be counted as the first day of the week in reports. This is a required field.
     */
-  var firstDayOfWeek: js.UndefOr[String] = js.undefined
+  var firstDayOfWeek: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * ID of this floodlight configuration. This is a read-only, auto-generated
-    * field.
+    * ID of this floodlight configuration. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Dimension value for the ID of this floodlight configuration. This is a
-    * read-only, auto-generated field.
+    * Dimension value for the ID of this floodlight configuration. This is a read-only, auto-generated field.
     */
   var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Whether in-app attribution tracking is enabled.
     */
-  var inAppAttributionTrackingEnabled: js.UndefOr[Boolean] = js.undefined
+  var inAppAttributionTrackingEnabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#floodlightConfiguration&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#floodlightConfiguration".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Lookback window settings for this floodlight configuration.
@@ -80,7 +69,7 @@ trait SchemaFloodlightConfiguration extends StObject {
   /**
     * Types of attribution options for natural search conversions.
     */
-  var naturalSearchConversionAttributionOption: js.UndefOr[String] = js.undefined
+  var naturalSearchConversionAttributionOption: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Settings for Campaign Manager Omniture integration.
@@ -88,10 +77,9 @@ trait SchemaFloodlightConfiguration extends StObject {
   var omnitureSettings: js.UndefOr[SchemaOmnitureSettings] = js.undefined
   
   /**
-    * Subaccount ID of this floodlight configuration. This is a read-only field
-    * that can be left blank.
+    * Subaccount ID of this floodlight configuration. This is a read-only field that can be left blank.
     */
-  var subaccountId: js.UndefOr[String] = js.undefined
+  var subaccountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Configuration settings for dynamic and image floodlight tags.
@@ -119,6 +107,8 @@ object SchemaFloodlightConfiguration {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
@@ -127,9 +117,13 @@ object SchemaFloodlightConfiguration {
     
     inline def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
+    inline def setAdvertiserIdNull: Self = StObject.set(x, "advertiserId", null)
+    
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     inline def setAnalyticsDataSharingEnabled(value: Boolean): Self = StObject.set(x, "analyticsDataSharingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyticsDataSharingEnabledNull: Self = StObject.set(x, "analyticsDataSharingEnabled", null)
     
     inline def setAnalyticsDataSharingEnabledUndefined: Self = StObject.set(x, "analyticsDataSharingEnabled", js.undefined)
     
@@ -139,9 +133,13 @@ object SchemaFloodlightConfiguration {
     
     inline def setExposureToConversionEnabled(value: Boolean): Self = StObject.set(x, "exposureToConversionEnabled", value.asInstanceOf[js.Any])
     
+    inline def setExposureToConversionEnabledNull: Self = StObject.set(x, "exposureToConversionEnabled", null)
+    
     inline def setExposureToConversionEnabledUndefined: Self = StObject.set(x, "exposureToConversionEnabled", js.undefined)
     
     inline def setFirstDayOfWeek(value: String): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+    
+    inline def setFirstDayOfWeekNull: Self = StObject.set(x, "firstDayOfWeek", null)
     
     inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
     
@@ -151,13 +149,19 @@ object SchemaFloodlightConfiguration {
     
     inline def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setInAppAttributionTrackingEnabled(value: Boolean): Self = StObject.set(x, "inAppAttributionTrackingEnabled", value.asInstanceOf[js.Any])
     
+    inline def setInAppAttributionTrackingEnabledNull: Self = StObject.set(x, "inAppAttributionTrackingEnabled", null)
+    
     inline def setInAppAttributionTrackingEnabledUndefined: Self = StObject.set(x, "inAppAttributionTrackingEnabled", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -167,6 +171,8 @@ object SchemaFloodlightConfiguration {
     
     inline def setNaturalSearchConversionAttributionOption(value: String): Self = StObject.set(x, "naturalSearchConversionAttributionOption", value.asInstanceOf[js.Any])
     
+    inline def setNaturalSearchConversionAttributionOptionNull: Self = StObject.set(x, "naturalSearchConversionAttributionOption", null)
+    
     inline def setNaturalSearchConversionAttributionOptionUndefined: Self = StObject.set(x, "naturalSearchConversionAttributionOption", js.undefined)
     
     inline def setOmnitureSettings(value: SchemaOmnitureSettings): Self = StObject.set(x, "omnitureSettings", value.asInstanceOf[js.Any])
@@ -174,6 +180,8 @@ object SchemaFloodlightConfiguration {
     inline def setOmnitureSettingsUndefined: Self = StObject.set(x, "omnitureSettings", js.undefined)
     
     inline def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
+    
+    inline def setSubaccountIdNull: Self = StObject.set(x, "subaccountId", null)
     
     inline def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
@@ -185,12 +193,12 @@ object SchemaFloodlightConfiguration {
     
     inline def setThirdPartyAuthenticationTokensUndefined: Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.undefined)
     
-    inline def setThirdPartyAuthenticationTokensVarargs(value: SchemaThirdPartyAuthenticationToken*): Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.Array(value :_*))
+    inline def setThirdPartyAuthenticationTokensVarargs(value: SchemaThirdPartyAuthenticationToken*): Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.Array(value*))
     
     inline def setUserDefinedVariableConfigurations(value: js.Array[SchemaUserDefinedVariableConfiguration]): Self = StObject.set(x, "userDefinedVariableConfigurations", value.asInstanceOf[js.Any])
     
     inline def setUserDefinedVariableConfigurationsUndefined: Self = StObject.set(x, "userDefinedVariableConfigurations", js.undefined)
     
-    inline def setUserDefinedVariableConfigurationsVarargs(value: SchemaUserDefinedVariableConfiguration*): Self = StObject.set(x, "userDefinedVariableConfigurations", js.Array(value :_*))
+    inline def setUserDefinedVariableConfigurationsVarargs(value: SchemaUserDefinedVariableConfiguration*): Self = StObject.set(x, "userDefinedVariableConfigurations", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait EndpointStateChange
 }
 object EndpointStateChange {
   
-  inline def apply(application: String, endpoint: Endpoint, timestamp: Date, `type`: String): EndpointStateChange = {
+  inline def apply(application: String, endpoint: Endpoint, timestamp: js.Date, `type`: String): EndpointStateChange = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointStateChange]

@@ -34,6 +34,8 @@ trait PortalProperties
   /**
     * The authentication mode for handling authentication when the user attempts to access a secure resource.
     *
+    * @default auto
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#authMode)
     */
   var authMode: js.UndefOr[anonymous | auto | immediate] = js.undefined
@@ -90,12 +92,16 @@ trait PortalProperties
   /**
     * When `true`, the organization's public items, groups and users are included in search queries.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSearchPublic)
     */
   var canSearchPublic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Bing key can be shared to the public and is returned as part of a portal's description call (`/sharing/rest/portals/<orgid>`).
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canShareBingPublic)
     */
@@ -104,6 +110,8 @@ trait PortalProperties
   /**
     * When `true`, members of the organization can share resources outside the organization.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSharePublic)
     */
   var canSharePublic: js.UndefOr[Boolean] = js.undefined
@@ -111,12 +119,16 @@ trait PortalProperties
   /**
     * Indicates whether to allow an organization with an enterprise IDP configured to be able to turn on or off the ArcGIS sign in.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSignInArcGIS)
     */
   var canSignInArcGIS: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to allow an organization with an enterprise IDP configured to be able to turn on or off the enterprise sign in.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSignInIDP)
     */
@@ -131,6 +143,8 @@ trait PortalProperties
   
   /**
     * Indicates whether to allow the organization to disable commenting.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#commentsEnabled)
     */
@@ -165,6 +179,13 @@ trait PortalProperties
   var defaultBasemap: js.UndefOr[BasemapProperties] = js.undefined
   
   /**
+    * The default developer basemap to use for the portal when an [apiKey](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#apiKey) is defined.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultDevBasemap)
+    */
+  var defaultDevBasemap: js.UndefOr[BasemapProperties] = js.undefined
+  
+  /**
     * The default extent to use for the portal.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultExtent)
@@ -186,7 +207,16 @@ trait PortalProperties
   var description: js.UndefOr[String] = js.undefined
   
   /**
+    * The query that defines the basemaps that should be displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html) when an [apiKey](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#apiKey) is defined.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#devBasemapGalleryGroupQuery)
+    */
+  var devBasemapGalleryGroupQuery: js.UndefOr[String] = js.undefined
+  
+  /**
     * Boolean value indicating whether to opt-in to the [Esri User Experience Improvement (EUEI) program](https://doc.arcgis.com/en/arcgis-online/reference/faq.htm#ESRI_QUESTIONANSWER_AED97F28DCD84F7682623C2FA9E5CE49).
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#eueiEnabled)
     */
@@ -216,6 +246,8 @@ trait PortalProperties
   /**
     * Indicates whether the organization has content categories.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#hasCategorySchema)
     */
   var hasCategorySchema: js.UndefOr[Boolean] = js.undefined
@@ -225,7 +257,7 @@ trait PortalProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#helperServices)
     */
-  var helperServices: js.UndefOr[js.Any] = js.undefined
+  var helperServices: js.UndefOr[Any] = js.undefined
   
   /**
     * The group that contains featured content to be displayed on the home page.
@@ -330,7 +362,7 @@ trait PortalProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#portalProperties)
     */
-  var portalProperties: js.UndefOr[js.Any] = js.undefined
+  var portalProperties: js.UndefOr[Any] = js.undefined
   
   /**
     * The region for the organization.
@@ -344,7 +376,7 @@ trait PortalProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#rotatorPanels)
     */
-  var rotatorPanels: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var rotatorPanels: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Indicates whether the description of your organization displays on the home page.
@@ -358,10 +390,12 @@ trait PortalProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * Indicates whether hosted services are supported.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#supportsHostedServices)
     */
@@ -455,7 +489,7 @@ object PortalProperties {
     
     inline def setAuthorizedCrossOriginDomainsUndefined: Self = StObject.set(x, "authorizedCrossOriginDomains", js.undefined)
     
-    inline def setAuthorizedCrossOriginDomainsVarargs(value: String*): Self = StObject.set(x, "authorizedCrossOriginDomains", js.Array(value :_*))
+    inline def setAuthorizedCrossOriginDomainsVarargs(value: String*): Self = StObject.set(x, "authorizedCrossOriginDomains", js.Array(value*))
     
     inline def setBasemapGalleryGroupQuery(value: String): Self = StObject.set(x, "basemapGalleryGroupQuery", value.asInstanceOf[js.Any])
     
@@ -525,6 +559,10 @@ object PortalProperties {
     
     inline def setDefaultBasemapUndefined: Self = StObject.set(x, "defaultBasemap", js.undefined)
     
+    inline def setDefaultDevBasemap(value: BasemapProperties): Self = StObject.set(x, "defaultDevBasemap", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultDevBasemapUndefined: Self = StObject.set(x, "defaultDevBasemap", js.undefined)
+    
     inline def setDefaultExtent(value: ExtentProperties): Self = StObject.set(x, "defaultExtent", value.asInstanceOf[js.Any])
     
     inline def setDefaultExtentUndefined: Self = StObject.set(x, "defaultExtent", js.undefined)
@@ -537,6 +575,10 @@ object PortalProperties {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setDevBasemapGalleryGroupQuery(value: String): Self = StObject.set(x, "devBasemapGalleryGroupQuery", value.asInstanceOf[js.Any])
+    
+    inline def setDevBasemapGalleryGroupQueryUndefined: Self = StObject.set(x, "devBasemapGalleryGroupQuery", js.undefined)
+    
     inline def setEueiEnabled(value: Boolean): Self = StObject.set(x, "eueiEnabled", value.asInstanceOf[js.Any])
     
     inline def setEueiEnabledUndefined: Self = StObject.set(x, "eueiEnabled", js.undefined)
@@ -545,7 +587,7 @@ object PortalProperties {
     
     inline def setFeaturedGroupsUndefined: Self = StObject.set(x, "featuredGroups", js.undefined)
     
-    inline def setFeaturedGroupsVarargs(value: PortalFeaturedGroups*): Self = StObject.set(x, "featuredGroups", js.Array(value :_*))
+    inline def setFeaturedGroupsVarargs(value: PortalFeaturedGroups*): Self = StObject.set(x, "featuredGroups", js.Array(value*))
     
     inline def setFeaturedItemsGroupQuery(value: String): Self = StObject.set(x, "featuredItemsGroupQuery", value.asInstanceOf[js.Any])
     
@@ -559,7 +601,7 @@ object PortalProperties {
     
     inline def setHasCategorySchemaUndefined: Self = StObject.set(x, "hasCategorySchema", js.undefined)
     
-    inline def setHelperServices(value: js.Any): Self = StObject.set(x, "helperServices", value.asInstanceOf[js.Any])
+    inline def setHelperServices(value: Any): Self = StObject.set(x, "helperServices", value.asInstanceOf[js.Any])
     
     inline def setHelperServicesUndefined: Self = StObject.set(x, "helperServices", js.undefined)
     
@@ -619,7 +661,7 @@ object PortalProperties {
     
     inline def setPortalModeUndefined: Self = StObject.set(x, "portalMode", js.undefined)
     
-    inline def setPortalProperties(value: js.Any): Self = StObject.set(x, "portalProperties", value.asInstanceOf[js.Any])
+    inline def setPortalProperties(value: Any): Self = StObject.set(x, "portalProperties", value.asInstanceOf[js.Any])
     
     inline def setPortalPropertiesUndefined: Self = StObject.set(x, "portalProperties", js.undefined)
     
@@ -627,17 +669,17 @@ object PortalProperties {
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    inline def setRotatorPanels(value: js.Array[js.Any]): Self = StObject.set(x, "rotatorPanels", value.asInstanceOf[js.Any])
+    inline def setRotatorPanels(value: js.Array[Any]): Self = StObject.set(x, "rotatorPanels", value.asInstanceOf[js.Any])
     
     inline def setRotatorPanelsUndefined: Self = StObject.set(x, "rotatorPanels", js.undefined)
     
-    inline def setRotatorPanelsVarargs(value: js.Any*): Self = StObject.set(x, "rotatorPanels", js.Array(value :_*))
+    inline def setRotatorPanelsVarargs(value: Any*): Self = StObject.set(x, "rotatorPanels", js.Array(value*))
     
     inline def setShowHomePageDescription(value: Boolean): Self = StObject.set(x, "showHomePageDescription", value.asInstanceOf[js.Any])
     
     inline def setShowHomePageDescriptionUndefined: Self = StObject.set(x, "showHomePageDescription", js.undefined)
     
-    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     

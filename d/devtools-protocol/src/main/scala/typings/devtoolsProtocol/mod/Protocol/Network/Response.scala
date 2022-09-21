@@ -49,7 +49,7 @@ trait Response extends StObject {
   var headers: Headers
   
   /**
-    * HTTP response headers text.
+    * HTTP response headers text. This has been replaced by the headers in Network.responseReceivedExtraInfo.
     */
   var headersText: js.UndefOr[String] = js.undefined
   
@@ -79,7 +79,7 @@ trait Response extends StObject {
   var requestHeaders: js.UndefOr[Headers] = js.undefined
   
   /**
-    * HTTP request headers text.
+    * HTTP request headers text. This has been replaced by the headers in Network.requestWillBeSentExtraInfo.
     */
   var requestHeadersText: js.UndefOr[String] = js.undefined
   

@@ -62,7 +62,7 @@ object anon {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: BabelPluginConfig*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: BabelPluginConfig*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

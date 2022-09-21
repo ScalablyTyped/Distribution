@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains an ordered list of nodes appearing in the query plan.
-  */
 trait SchemaQueryPlan extends StObject {
   
   /**
-    * The nodes in the query plan. Plan nodes are returned in pre-order
-    * starting with the plan root. Each PlanNode&#39;s `id` corresponds to its
-    * index in `plan_nodes`.
+    * The nodes in the query plan. Plan nodes are returned in pre-order starting with the plan root. Each PlanNode's `id` corresponds to its index in `plan_nodes`.
     */
   var planNodes: js.UndefOr[js.Array[SchemaPlanNode]] = js.undefined
 }
@@ -29,6 +24,6 @@ object SchemaQueryPlan {
     
     inline def setPlanNodesUndefined: Self = StObject.set(x, "planNodes", js.undefined)
     
-    inline def setPlanNodesVarargs(value: SchemaPlanNode*): Self = StObject.set(x, "planNodes", js.Array(value :_*))
+    inline def setPlanNodesVarargs(value: SchemaPlanNode*): Self = StObject.set(x, "planNodes", js.Array(value*))
   }
 }

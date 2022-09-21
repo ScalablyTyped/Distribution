@@ -1,7 +1,7 @@
 
 # Scala.js typings for irc
 
-Typings are for version v0.3.12
+Typings are for version v0.5.2
 
 ## Library description:
 An IRC client library for node
@@ -11,9 +11,9 @@ An IRC client library for node
 | Full name          | irc |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 172 |
-| # downloads        | 452789 |
-| # stars            | 30 |
+| # dependents       | 0.0 |
+| # downloads        | 7464.0 |
+| # stars            | 1322.0 |
 
 ## Links
 - [Homepage](https://github.com/martynsmith/node-irc#readme)

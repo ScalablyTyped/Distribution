@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gestalt", "FixedZIndex")
 @js.native
-class FixedZIndex protected ()
+open class FixedZIndex protected ()
   extends StObject
      with Indexable {
   def this(z: Double) = this()

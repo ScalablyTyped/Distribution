@@ -27,7 +27,7 @@ trait Minigame extends StObject {
     */
   var name: String
   
-  var onLevel: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onLevel: js.UndefOr[js.Function1[/* level */ Double, Unit]] = js.undefined
   
   var onResize: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -76,7 +76,7 @@ object Minigame {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOnLevel(value: () => Unit): Self = StObject.set(x, "onLevel", js.Any.fromFunction0(value))
+    inline def setOnLevel(value: /* level */ Double => Unit): Self = StObject.set(x, "onLevel", js.Any.fromFunction1(value))
     
     inline def setOnLevelUndefined: Self = StObject.set(x, "onLevel", js.undefined)
     

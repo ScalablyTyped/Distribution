@@ -36,6 +36,6 @@ object ListPopulationRule {
     
     inline def setListPopulationClausesUndefined: Self = StObject.set(x, "listPopulationClauses", js.undefined)
     
-    inline def setListPopulationClausesVarargs(value: ListPopulationClause*): Self = StObject.set(x, "listPopulationClauses", js.Array(value :_*))
+    inline def setListPopulationClausesVarargs(value: ListPopulationClause*): Self = StObject.set(x, "listPopulationClauses", js.Array(value*))
   }
 }

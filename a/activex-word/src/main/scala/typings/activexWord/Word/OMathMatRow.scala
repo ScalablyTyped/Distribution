@@ -14,7 +14,7 @@ trait OMathMatRow extends StObject {
   
   def Delete(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   val RowIndex: Double
   
@@ -28,7 +28,7 @@ object OMathMatRow {
     Args: OMathArgs,
     Creator: Double,
     Delete: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     RowIndex: Double,
     WordDotOMathMatRow_typekey: OMathMatRow
   ): OMathMatRow = {
@@ -47,7 +47,7 @@ object OMathMatRow {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRowIndex(value: Double): Self = StObject.set(x, "RowIndex", value.asInstanceOf[js.Any])
     

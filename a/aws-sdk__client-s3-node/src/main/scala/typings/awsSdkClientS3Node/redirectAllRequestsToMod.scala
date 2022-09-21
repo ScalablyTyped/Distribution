@@ -8,5 +8,5 @@ object redirectAllRequestsToMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_RedirectAllRequestsTo", "_RedirectAllRequestsTo")
   @js.native
-  val RedirectAllRequestsTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RedirectAllRequestsTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

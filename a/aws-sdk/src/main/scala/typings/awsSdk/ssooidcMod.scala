@@ -16,7 +16,7 @@ object ssooidcMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends SSOOIDC {
+  open class ^ () extends SSOOIDC {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -81,7 +81,7 @@ object ssooidcMod {
     /**
       * Used only when calling this API for the device code grant type. This short-term code is used to identify this authentication attempt. This should come from an in-memory reference to the result of the StartDeviceAuthorization API.
       */
-    var deviceCode: DeviceCode
+    var deviceCode: js.UndefOr[DeviceCode] = js.undefined
     
     /**
       * Supports grant types for authorization code, refresh token, and device code request.
@@ -105,8 +105,8 @@ object ssooidcMod {
   }
   object CreateTokenRequest {
     
-    inline def apply(clientId: ClientId, clientSecret: ClientSecret, deviceCode: DeviceCode, grantType: GrantType): CreateTokenRequest = {
-      val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], deviceCode = deviceCode.asInstanceOf[js.Any], grantType = grantType.asInstanceOf[js.Any])
+    inline def apply(clientId: ClientId, clientSecret: ClientSecret, grantType: GrantType): CreateTokenRequest = {
+      val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], grantType = grantType.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateTokenRequest]
     }
     
@@ -122,6 +122,8 @@ object ssooidcMod {
       
       inline def setDeviceCode(value: DeviceCode): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
       
+      inline def setDeviceCodeUndefined: Self = StObject.set(x, "deviceCode", js.undefined)
+      
       inline def setGrantType(value: GrantType): Self = StObject.set(x, "grantType", value.asInstanceOf[js.Any])
       
       inline def setRedirectUri(value: URI): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
@@ -136,7 +138,7 @@ object ssooidcMod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: Scope*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: Scope*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
   
@@ -246,7 +248,7 @@ object ssooidcMod {
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value*))
     }
   }
   

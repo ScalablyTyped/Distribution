@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "ParenthesizedArrowFunctionExpressionSyntax")
 @js.native
-class ParenthesizedArrowFunctionExpressionSyntax protected ()
+open class ParenthesizedArrowFunctionExpressionSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax {
   def this(
@@ -24,7 +24,7 @@ class ParenthesizedArrowFunctionExpressionSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   var block: typings.typescriptServices.TypeScript.BlockSyntax = js.native

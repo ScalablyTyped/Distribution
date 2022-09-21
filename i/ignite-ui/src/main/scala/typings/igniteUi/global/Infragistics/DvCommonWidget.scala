@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.DvCommonWidget")
 @js.native
-class DvCommonWidget ()
+open class DvCommonWidget ()
   extends StObject
      with typings.igniteUi.Infragistics.DvCommonWidget {
   

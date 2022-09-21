@@ -1,9 +1,11 @@
 package typings.shelljs
 
+import typings.node.nodeUrlMod.URL
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
 import typings.shelljs.shelljsBooleans.`false`
 import typings.shelljs.shelljsBooleans.`true`
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +24,7 @@ object anon {
       */
     var async: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
-    var cwd: js.UndefOr[String] = js.undefined
+    var cwd: js.UndefOr[String | URL] = js.undefined
     
     /**
       * Character encoding to use.
@@ -50,6 +52,8 @@ object anon {
     var maxBuffer: js.UndefOr[Double] = js.undefined
     
     var shell: js.UndefOr[String] = js.undefined
+    
+    var signal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Do not echo program output to the console.
@@ -81,7 +85,7 @@ object anon {
       
       inline def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -112,6 +116,10 @@ object anon {
       inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
@@ -143,7 +151,7 @@ object anon {
       */
     var async: js.UndefOr[Boolean] & `true`
     
-    var cwd: js.UndefOr[String] = js.undefined
+    var cwd: js.UndefOr[String | URL] = js.undefined
     
     /**
       * Character encoding to use.
@@ -171,6 +179,8 @@ object anon {
     var maxBuffer: js.UndefOr[Double] = js.undefined
     
     var shell: js.UndefOr[String] = js.undefined
+    
+    var signal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Do not echo program output to the console.
@@ -202,7 +212,7 @@ object anon {
       
       inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -233,6 +243,10 @@ object anon {
       inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       

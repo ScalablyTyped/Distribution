@@ -27,7 +27,7 @@ object GetDiscoveredSchemaRequest {
     
     inline def setEvents(value: listOfGetDiscoveredSchemaVersionItemInput): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: GetDiscoveredSchemaVersionItemInput*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: GetDiscoveredSchemaVersionItemInput*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

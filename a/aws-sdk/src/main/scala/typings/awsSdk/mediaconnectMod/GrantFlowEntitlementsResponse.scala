@@ -29,7 +29,7 @@ object GrantFlowEntitlementsResponse {
     
     inline def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
     
-    inline def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
+    inline def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value*))
     
     inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     

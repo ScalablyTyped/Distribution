@@ -1,5 +1,8 @@
 package typings.awsSdkUtilUserAgentBrowser
 
+import typings.awsSdkTypes.utilMod.Provider
+import typings.awsSdkTypes.utilMod.UserAgent
+import typings.awsSdkUtilUserAgentBrowser.configurationsMod.DefaultUserAgentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,5 +13,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def defaultUserAgent(packageName: String, packageVersion: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserAgent")(packageName.asInstanceOf[js.Any], packageVersion.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def defaultUserAgent(hasServiceIdClientVersion: DefaultUserAgentOptions): Provider[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserAgent")(hasServiceIdClientVersion.asInstanceOf[js.Any]).asInstanceOf[Provider[UserAgent]]
 }

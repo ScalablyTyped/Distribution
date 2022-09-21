@@ -8,49 +8,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartLegendEntryData extends StObject {
   
   /**
+    * Specifies the height of the legend entry on the chart legend.
     *
-    * Specifies the height of the legendEntry on the chart legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies the index of the legend entry in the chart legend.
     *
-    * Specifies the index of the legendEntry in the chart legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var index: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies the left value of a chart legend entry.
     *
-    * Specifies the left of a chart legendEntry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies the top of a chart legend entry.
     *
-    * Specifies the top of a chart legendEntry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var top: js.UndefOr[Double] = js.undefined
   
   /**
+    * Represents the visibility of a chart legend entry.
     *
-    * Represents the visible of a chart legend entry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the width of the legend entry on the chart Legend.
     *
-    * Represents the width of the legendEntry on the chart Legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var width: js.UndefOr[Double] = js.undefined

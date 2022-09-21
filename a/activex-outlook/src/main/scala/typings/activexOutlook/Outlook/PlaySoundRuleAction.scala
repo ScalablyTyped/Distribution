@@ -19,7 +19,7 @@ trait PlaySoundRuleAction extends StObject {
   /* private */ @JSName("Outlook.PlaySoundRuleAction_typekey")
   var OutlookDotPlaySoundRuleAction_typekey: PlaySoundRuleAction
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -32,7 +32,7 @@ object PlaySoundRuleAction {
     Enabled: Boolean,
     FilePath: String,
     OutlookDotPlaySoundRuleAction_typekey: PlaySoundRuleAction,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): PlaySoundRuleAction = {
     val __obj = js.Dynamic.literal(ActionType = ActionType.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], FilePath = FilePath.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object PlaySoundRuleAction {
     
     inline def setOutlookDotPlaySoundRuleAction_typekey(value: PlaySoundRuleAction): Self = StObject.set(x, "Outlook.PlaySoundRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

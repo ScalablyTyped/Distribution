@@ -10,12 +10,10 @@ object tableMod {
   
   @JSImport("react-bootstrap/lib/Table", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[TableProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[TableProps, js.Object, Any]
   
-  @js.native
-  trait Table
-    extends Component[TableProps, js.Object, js.Any]
+  type Table = Component[TableProps, js.Object, Any]
   
   trait TableProps
     extends StObject

@@ -19,7 +19,7 @@ trait Popup
   
   def position(): Unit = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def toggle(): Unit = js.native
   def toggle(toggle: Boolean): Unit = js.native

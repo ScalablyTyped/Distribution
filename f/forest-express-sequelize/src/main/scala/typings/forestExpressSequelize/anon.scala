@@ -64,7 +64,7 @@ object anon {
       
       inline def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
       
-      inline def setEnumsVarargs(value: String*): Self = StObject.set(x, "enums", js.Array(value :_*))
+      inline def setEnumsVarargs(value: String*): Self = StObject.set(x, "enums", js.Array(value*))
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -78,26 +78,26 @@ object anon {
       
       inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   
   trait Value extends StObject {
     
-    var value: js.Array[js.Any]
+    var value: js.Array[Any]
   }
   object Value {
     
-    inline def apply(value: js.Array[js.Any]): Value = {
+    inline def apply(value: js.Array[Any]): Value = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
     extension [Self <: Value](x: Self) {
       
-      inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

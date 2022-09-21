@@ -33,6 +33,6 @@ object GetSecurityConfigurationsResponse {
     
     inline def setSecurityConfigurationsUndefined: Self = StObject.set(x, "SecurityConfigurations", js.undefined)
     
-    inline def setSecurityConfigurationsVarargs(value: SecurityConfiguration*): Self = StObject.set(x, "SecurityConfigurations", js.Array(value :_*))
+    inline def setSecurityConfigurationsVarargs(value: SecurityConfiguration*): Self = StObject.set(x, "SecurityConfigurations", js.Array(value*))
   }
 }

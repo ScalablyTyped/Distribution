@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
+import typings.tensorflowTfjsBackendWebgl.anon.Name
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,10 +10,13 @@ object padPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/pad_packed_gpu", "PadPackedProgram")
   @js.native
-  class PadPackedProgram protected ()
+  open class PadPackedProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(xShape: js.Array[Double], paddings: js.Array[js.Tuple2[Double, Double]], constantValue: Double) = this()
+    
+    @JSName("customUniforms")
+    var customUniforms_PadPackedProgram: js.Array[Name] = js.native
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapCardViewBatchEditApi")
 @js.native
-class BootstrapCardViewBatchEditApi protected ()
+open class BootstrapCardViewBatchEditApi protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapCardViewBatchEditApi {
-  /* protected */ def this(instance: js.Any) = this()
+  /* protected */ def this(instance: Any) = this()
   
   /* CompleteClass */
   override def addNewCard(): Unit = js.native
@@ -18,7 +18,7 @@ class BootstrapCardViewBatchEditApi protected ()
   override def deleteCard(visibleIndex: Double): Unit = js.native
   
   /* CompleteClass */
-  override def deleteCardByKey(key: js.Any): Unit = js.native
+  override def deleteCardByKey(key: Any): Unit = js.native
   
   /* CompleteClass */
   override def getCardVisibleIndices(includeDeleted: Boolean): js.Array[Double] = js.native
@@ -30,7 +30,7 @@ class BootstrapCardViewBatchEditApi protected ()
   override def getInsertedCardIndices(): js.Array[Double] = js.native
   
   /* protected */ /* CompleteClass */
-  override val instance: js.Any = js.native
+  override val instance: Any = js.native
   
   /* CompleteClass */
   override def isDeletedCard(visibleIndex: Double): Boolean = js.native
@@ -42,7 +42,7 @@ class BootstrapCardViewBatchEditApi protected ()
   override def recoverCard(visibleIndex: Double): Unit = js.native
   
   /* CompleteClass */
-  override def recoverCardByKey(key: js.Any): Unit = js.native
+  override def recoverCardByKey(key: Any): Unit = js.native
   
   /* CompleteClass */
   override def validateCard(visibleIndex: Double): Boolean = js.native

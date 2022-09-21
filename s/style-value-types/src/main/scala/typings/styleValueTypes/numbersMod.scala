@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object numbersMod {
   
-  @JSImport("style-value-types/lib/value-types/numbers", "alpha")
+  @JSImport("style-value-types/lib/numbers", "alpha")
   @js.native
   val alpha: ValueType = js.native
   
-  @JSImport("style-value-types/lib/value-types/numbers", "number")
+  @JSImport("style-value-types/lib/numbers", "number")
   @js.native
   val number: ValueType = js.native
   
-  @JSImport("style-value-types/lib/value-types/numbers", "scale")
+  @JSImport("style-value-types/lib/numbers", "scale")
   @js.native
   val scale: ValueType = js.native
 }

@@ -12,17 +12,17 @@ trait SQLErrorEvent
      with EventObject {
   
   /** contains the exception that is going to be fired. */
-  var Reason: js.Any
+  var Reason: Any
 }
 object SQLErrorEvent {
   
-  inline def apply(Reason: js.Any, Source: XInterface): SQLErrorEvent = {
+  inline def apply(Reason: Any, Source: XInterface): SQLErrorEvent = {
     val __obj = js.Dynamic.literal(Reason = Reason.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SQLErrorEvent]
   }
   
   extension [Self <: SQLErrorEvent](x: Self) {
     
-    inline def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

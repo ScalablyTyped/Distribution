@@ -27,7 +27,7 @@ object FilterDialog {
     createDefault: () => Unit,
     createWithQuery: (XSingleSelectQueryComposer, XRowSet, XWindow) => Unit,
     execute: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTitle: String => Unit
   ): FilterDialog = {

@@ -1,14 +1,26 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0
-import typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.WorkspaceFolder
+import typings.vscodeLanguageserver.vscodeLanguageserverStrings.workspaceSlashworkspaceFolders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WorkspaceFoldersRequest {
   
+  @JSImport("vscode-languageserver", "WorkspaceFoldersRequest.messageDirection")
+  @js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver", "WorkspaceFoldersRequest.method")
+  @js.native
+  val method: workspaceSlashworkspaceFolders = js.native
+  
   @JSImport("vscode-languageserver", "WorkspaceFoldersRequest.type")
   @js.native
-  val `type`: ProtocolRequestType0[js.Array[WorkspaceFolder] | Null, scala.Nothing, Unit, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0[
+    js.Array[typings.vscodeLanguageserverTypes.mod.WorkspaceFolder] | Null, 
+    scala.Nothing, 
+    Unit, 
+    Unit
+  ] = js.native
 }

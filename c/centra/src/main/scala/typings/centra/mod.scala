@@ -15,23 +15,26 @@ import typings.centra.centraStrings.host
 import typings.centra.centraStrings.hostname
 import typings.centra.centraStrings.json
 import typings.centra.centraStrings.localAddress
+import typings.centra.centraStrings.lookup
 import typings.centra.centraStrings.maxHeaderSize
 import typings.centra.centraStrings.method
 import typings.centra.centraStrings.path
 import typings.centra.centraStrings.port
 import typings.centra.centraStrings.protocol
 import typings.centra.centraStrings.setHost
+import typings.centra.centraStrings.signal
 import typings.centra.centraStrings.socketPath
 import typings.centra.centraStrings.timeout
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.RequestOptions
-import typings.node.netMod.Socket
+import typings.node.netMod.LookupFunction
+import typings.node.nodeNetMod.Socket
 import typings.node.urlMod.URL_
-import typings.std.Error
+import typings.std.AbortSignal
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,13 +51,8 @@ object mod extends Shortcut {
   @js.native
   trait Request extends StObject {
     
-    def body(data: js.Any): this.type = js.native
-    @JSName("body")
-    def body_buffer(data: js.Any, sendAs: buffer): this.type = js.native
-    @JSName("body")
-    def body_form(data: js.Any, sendAs: form): this.type = js.native
-    @JSName("body")
-    def body_json(data: js.Any, sendAs: json): this.type = js.native
+    def body(data: Any): this.type = js.native
+    def body(data: Any, sendAs: json | buffer | form): this.type = js.native
     
     def compress(): this.type = js.native
     
@@ -86,7 +84,7 @@ object mod extends Shortcut {
       key: createConnection,
       value: js.Function2[
           /* options */ this.type, 
-          /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
+          /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ Socket, Unit], 
           Socket
         ]
     ): this.type = js.native
@@ -121,6 +119,10 @@ object mod extends Shortcut {
     @JSName("option")
     def option_localAddress(key: localAddress, value: String): this.type = js.native
     @JSName("option")
+    def option_lookup(key: lookup): this.type = js.native
+    @JSName("option")
+    def option_lookup(key: lookup, value: LookupFunction): this.type = js.native
+    @JSName("option")
     def option_maxHeaderSize(key: maxHeaderSize): this.type = js.native
     @JSName("option")
     def option_maxHeaderSize(key: maxHeaderSize, value: Double): this.type = js.native
@@ -147,6 +149,10 @@ object mod extends Shortcut {
     @JSName("option")
     def option_setHost(key: setHost, value: Boolean): this.type = js.native
     @JSName("option")
+    def option_signal(key: signal): this.type = js.native
+    @JSName("option")
+    def option_signal(key: signal, value: AbortSignal): this.type = js.native
+    @JSName("option")
     def option_socketPath(key: socketPath): this.type = js.native
     @JSName("option")
     def option_socketPath(key: socketPath, value: String): this.type = js.native
@@ -157,8 +163,8 @@ object mod extends Shortcut {
     
     def path(relativePath: String): this.type = js.native
     
-    def query(key: String, value: js.Any): this.type = js.native
-    def query(params: StringDictionary[js.Any]): this.type = js.native
+    def query(key: String, value: Any): this.type = js.native
+    def query(params: StringDictionary[Any]): this.type = js.native
     
     var reqHeaders: StringDictionary[String] = js.native
     
@@ -185,7 +191,7 @@ object mod extends Shortcut {
     
     var headers: IncomingHttpHeaders
     
-    def json(): js.Promise[js.Any]
+    def json(): js.Promise[Any]
     
     var statusCode: js.UndefOr[Double] = js.undefined
     
@@ -197,7 +203,7 @@ object mod extends Shortcut {
       body: Buffer,
       coreRes: IncomingMessage,
       headers: IncomingHttpHeaders,
-      json: () => js.Promise[js.Any],
+      json: () => js.Promise[Any],
       text: () => js.Promise[String]
     ): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], coreRes = coreRes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
@@ -212,7 +218,7 @@ object mod extends Shortcut {
       
       inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       

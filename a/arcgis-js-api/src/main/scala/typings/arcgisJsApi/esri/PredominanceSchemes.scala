@@ -63,6 +63,6 @@ object PredominanceSchemes {
     
     inline def setSecondarySchemes(value: js.Array[PredominanceScheme]): Self = StObject.set(x, "secondarySchemes", value.asInstanceOf[js.Any])
     
-    inline def setSecondarySchemesVarargs(value: PredominanceScheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value :_*))
+    inline def setSecondarySchemesVarargs(value: PredominanceScheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value*))
   }
 }

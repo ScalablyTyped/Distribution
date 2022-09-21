@@ -9,34 +9,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewBatchEditEndEditingEventArgs")
 @js.native
-class ASPxClientGridViewBatchEditEndEditingEventArgs protected ()
+open class ASPxClientGridViewBatchEditEndEditingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewBatchEditEndEditingEventArgs {
   /**
-    * Initializes a new instance of the ASPxClientGridViewBatchEditEndEditingEventArgs class.
-    * @param visibleIndex An integer value that specifies the visible index.
-    * @param rowValues An object that provides the row values.
-    * @param key An object that provides the row key.
+    * Initializes a new instance of the ASPxClientGridViewBatchEditEndEditingEventArgs class with specified settings.
     */
-  def this(visibleIndex: Double, rowValues: js.Any, key: js.Any) = this()
+  def this(
+    visibleIndex: Double,
+    rowValues: Any,
+    key: Any,
+    focusedColumn: typings.devexpressWeb.ASPxClientGridViewColumn
+  ) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
   
   /**
+    * Gets the column to which the edited cell belongs.
+    */
+  /* CompleteClass */
+  var focusedColumn: typings.devexpressWeb.ASPxClientGridViewColumn = js.native
+  
+  /**
     * Gets the row's key.
     */
   /* CompleteClass */
-  var key: js.Any = js.native
+  var key: Any = js.native
   
   /**
     * Gets a hashtable that maintains information about editable cells.
     */
   /* CompleteClass */
-  var rowValues: js.Any = js.native
+  var rowValues: Any = js.native
   
   /**
     * Gets the visible index of the row whose cells has been edited.

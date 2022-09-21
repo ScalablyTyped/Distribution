@@ -26,7 +26,7 @@ trait AccessibilityOptions extends StObject {
     * component to the keyboardNavigation.order for the keyboard navigation to
     * be usable.
     */
-  var customComponents: js.UndefOr[js.Any] = js.undefined
+  var customComponents: js.UndefOr[Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A text description of the chart.
@@ -47,7 +47,15 @@ trait AccessibilityOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable accessibility
-    * functionality for the chart.
+    * functionality for the chart. For more information on how to include these
+    * features, and why this is recommended, see Highcharts Accessibility.
+    *
+    * Highcharts will by default emit a warning to the console if the
+    * accessibility module is not loaded. Setting this option to `false` will
+    * override and silence the warning.
+    *
+    * Once the module is loaded, setting this option to `false` will disable
+    * the module for this chart.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
@@ -56,7 +64,7 @@ trait AccessibilityOptions extends StObject {
     * Windows High Contrast Mode is detected. By default, a high contrast theme
     * matching the high contrast system system colors is used.
     */
-  var highContrastTheme: js.UndefOr[js.Any] = js.undefined
+  var highContrastTheme: js.UndefOr[Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for keyboard navigation.
@@ -69,7 +77,7 @@ trait AccessibilityOptions extends StObject {
     * screen readers easier, but can be distracting if there are lots of charts
     * on the page. Three modes are available:
     *
-    * - `all`: Adds regions for all series, legend, menu, information region.
+    * - `all`: Adds regions for all series, legend, information region.
     *
     * - `one`: Adds a single landmark per chart.
     *
@@ -151,7 +159,7 @@ object AccessibilityOptions {
     
     inline def setAnnounceNewDataUndefined: Self = StObject.set(x, "announceNewData", js.undefined)
     
-    inline def setCustomComponents(value: js.Any): Self = StObject.set(x, "customComponents", value.asInstanceOf[js.Any])
+    inline def setCustomComponents(value: Any): Self = StObject.set(x, "customComponents", value.asInstanceOf[js.Any])
     
     inline def setCustomComponentsUndefined: Self = StObject.set(x, "customComponents", js.undefined)
     
@@ -163,7 +171,7 @@ object AccessibilityOptions {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setHighContrastTheme(value: js.Any): Self = StObject.set(x, "highContrastTheme", value.asInstanceOf[js.Any])
+    inline def setHighContrastTheme(value: Any): Self = StObject.set(x, "highContrastTheme", value.asInstanceOf[js.Any])
     
     inline def setHighContrastThemeUndefined: Self = StObject.set(x, "highContrastTheme", js.undefined)
     

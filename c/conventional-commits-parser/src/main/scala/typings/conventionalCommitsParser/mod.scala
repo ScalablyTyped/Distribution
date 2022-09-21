@@ -12,7 +12,6 @@ import typings.conventionalCommitsParser.mod.Options.Keywords
 import typings.conventionalCommitsParser.mod.Options.Pattern
 import typings.conventionalCommitsParser.mod.Options.Prefixes
 import typings.node.streamMod.Transform
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,7 +151,7 @@ object mod {
       }
     }
   }
-  type Commit[Fields /* <: String | Double | js.Symbol */] = CommitBase & typings.conventionalCommitsParser.conventionalCommitsParserStrings.Commit & TopLevel[js.Any]
+  type Commit[Fields /* <: String | Double | js.Symbol */] = CommitBase & typings.conventionalCommitsParser.conventionalCommitsParserStrings.Commit & TopLevel[Any]
   
   trait CommitBase extends StObject {
     
@@ -233,7 +232,7 @@ object mod {
       
       inline def setMentions(value: js.Array[String]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
       
-      inline def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value :_*))
+      inline def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value*))
       
       inline def setMerge(value: Field): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
@@ -241,11 +240,11 @@ object mod {
       
       inline def setNotes(value: js.Array[Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      inline def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
+      inline def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value*))
       
       inline def setReferences(value: js.Array[Reference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      inline def setReferencesVarargs(value: Reference*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: Reference*): Self = StObject.set(x, "references", js.Array(value*))
       
       inline def setRevert(value: Revert): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
       
@@ -435,7 +434,7 @@ object mod {
       * @default
       * function () {}
       */
-    var warn: js.UndefOr[(js.Function1[/* message */ js.UndefOr[js.Any], Unit]) | Boolean] = js.undefined
+    var warn: js.UndefOr[(js.Function1[/* message */ js.UndefOr[Any], Unit]) | Boolean] = js.undefined
   }
   object Options {
     
@@ -470,7 +469,7 @@ object mod {
       
       inline def setHeaderCorrespondenceUndefined: Self = StObject.set(x, "headerCorrespondence", js.undefined)
       
-      inline def setHeaderCorrespondenceVarargs(value: String*): Self = StObject.set(x, "headerCorrespondence", js.Array(value :_*))
+      inline def setHeaderCorrespondenceVarargs(value: String*): Self = StObject.set(x, "headerCorrespondence", js.Array(value*))
       
       inline def setHeaderPattern(value: Pattern): Self = StObject.set(x, "headerPattern", value.asInstanceOf[js.Any])
       
@@ -488,7 +487,7 @@ object mod {
       
       inline def setIssuePrefixesUndefined: Self = StObject.set(x, "issuePrefixes", js.undefined)
       
-      inline def setIssuePrefixesVarargs(value: String*): Self = StObject.set(x, "issuePrefixes", js.Array(value :_*))
+      inline def setIssuePrefixesVarargs(value: String*): Self = StObject.set(x, "issuePrefixes", js.Array(value*))
       
       inline def setMergeCorrespondence(value: Correspondence): Self = StObject.set(x, "mergeCorrespondence", value.asInstanceOf[js.Any])
       
@@ -496,7 +495,7 @@ object mod {
       
       inline def setMergeCorrespondenceUndefined: Self = StObject.set(x, "mergeCorrespondence", js.undefined)
       
-      inline def setMergeCorrespondenceVarargs(value: String*): Self = StObject.set(x, "mergeCorrespondence", js.Array(value :_*))
+      inline def setMergeCorrespondenceVarargs(value: String*): Self = StObject.set(x, "mergeCorrespondence", js.Array(value*))
       
       inline def setMergePattern(value: Pattern): Self = StObject.set(x, "mergePattern", value.asInstanceOf[js.Any])
       
@@ -510,7 +509,7 @@ object mod {
       
       inline def setNoteKeywordsUndefined: Self = StObject.set(x, "noteKeywords", js.undefined)
       
-      inline def setNoteKeywordsVarargs(value: String*): Self = StObject.set(x, "noteKeywords", js.Array(value :_*))
+      inline def setNoteKeywordsVarargs(value: String*): Self = StObject.set(x, "noteKeywords", js.Array(value*))
       
       inline def setReferenceActions(value: Actions): Self = StObject.set(x, "referenceActions", value.asInstanceOf[js.Any])
       
@@ -518,7 +517,7 @@ object mod {
       
       inline def setReferenceActionsUndefined: Self = StObject.set(x, "referenceActions", js.undefined)
       
-      inline def setReferenceActionsVarargs(value: String*): Self = StObject.set(x, "referenceActions", js.Array(value :_*))
+      inline def setReferenceActionsVarargs(value: String*): Self = StObject.set(x, "referenceActions", js.Array(value*))
       
       inline def setRevertCorrespondence(value: Correspondence): Self = StObject.set(x, "revertCorrespondence", value.asInstanceOf[js.Any])
       
@@ -526,7 +525,7 @@ object mod {
       
       inline def setRevertCorrespondenceUndefined: Self = StObject.set(x, "revertCorrespondence", js.undefined)
       
-      inline def setRevertCorrespondenceVarargs(value: String*): Self = StObject.set(x, "revertCorrespondence", js.Array(value :_*))
+      inline def setRevertCorrespondenceVarargs(value: String*): Self = StObject.set(x, "revertCorrespondence", js.Array(value*))
       
       inline def setRevertPattern(value: Pattern): Self = StObject.set(x, "revertPattern", value.asInstanceOf[js.Any])
       
@@ -534,14 +533,14 @@ object mod {
       
       inline def setRevertPatternUndefined: Self = StObject.set(x, "revertPattern", js.undefined)
       
-      inline def setWarn(value: (js.Function1[/* message */ js.UndefOr[js.Any], Unit]) | Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: (js.Function1[/* message */ js.UndefOr[Any], Unit]) | Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      inline def setWarnFunction1(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarnFunction1(value: /* message */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
       inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
     
-    type Pattern = RegExp | String | Null
+    type Pattern = js.RegExp | String | Null
     
     type Prefixes = js.Array[String] | String | Null
   }

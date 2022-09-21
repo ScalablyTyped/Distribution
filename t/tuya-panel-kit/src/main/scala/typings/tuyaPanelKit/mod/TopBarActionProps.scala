@@ -2,7 +2,6 @@ package typings.tuyaPanelKit.mod
 
 import typings.reactNative.mod.ImageSourcePropType
 import typings.reactNative.mod.ImageURISource
-import typings.tuyaPanelKit.tuyaPanelKitBooleans.`true`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.bevel
 import typings.tuyaPanelKit.tuyaPanelKitStrings.butt
 import typings.tuyaPanelKit.tuyaPanelKitStrings.miter
@@ -17,60 +16,344 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with TopBarProps {
   
+  /**
+    * @language zh-CN
+    * @description 上升
+    * @defaultValue 896
+    */
+  /**
+    * @language en-US
+    * @description ascent
+    * @defaultValue 896
+    */
   var ascent: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标 path，svg 的 path
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description Icon path and svg path
+    * @defaultValue ''
+    */
   var d: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 下降
+    * @defaultValue -128
+    */
+  /**
+    * @language en-US
+    * @description descent
+    * @defaultValue -128
+    */
   var descent: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否禁用
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether to disable or not.
+    * @defaultValue false
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 填充色，若传递该值 color 会被忽略
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Fill color. If this value is passed, color will be ignored.
+    * @defaultValue null
+    */
   var fill: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 水平翻转
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Horizontal flip
+    * @defaultValue false
+    */
   var hFlip: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标高度，默认为 size 的值
+    * @defaultValue 12
+    */
+  /**
+    * @language en-US
+    * @description Icon height. It is the value of size by default
+    * @defaultValue 12
+    */
   var height: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 图标id，会从组件库默认图标里取，优先级小于 d
+    * @defaultValue undefined
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>IconFontName</a>
+    */
+  /**
+    * @language en-US
+    * @description The name of the built-in icon of the component library, which can be obtained from the default icons of the component library. The priority is greater than d.
+    * @defaultValue undefined
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>IconFontName</a>
+    */
+  var name: js.UndefOr[IconFontName] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 路径透明度
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Path transparency
+    * @defaultValue null
+    */
   var opacity: js.UndefOr[String | Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标的放大倍数
+    * @defaultValue 1.0
+    */
+  /**
+    * @language en-US
+    * @description Magnification of Icon
+    * @defaultValue 1.0
+    */
   var scale: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标宽度放大倍数
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Magnification of icon width
+    * @defaultValue null
+    */
   var scaleX: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标高度放大倍数
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Multiple of icon height
+    * @defaultValue null
+    */
   var scaleY: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description TopBar.Action 的 IconFont 的尺寸
+    * @defaultValue 17
+    */
+  /**
+    * @language en-US
+    * @description TopBar.Action IconFont size.
+    * @defaultValue 17
+    */
   var size: js.UndefOr[Double] = js.undefined
   
-  var source: js.UndefOr[ImageSourcePropType] = js.undefined
+  /**
+    * @language zh-CN
+    * @description TopBar.Action的主体内容， 若为字符串则渲染文字组件，若为数值或网络图片则渲染图片组件，若不存在则渲染空View。
+    * @types <a target="_blank" href="https://reactnative.dev/docs/image#source">ImageSourcePropType</a> | string
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description TopBar.Action content.
+    * @types <a target="_blank" href="https://reactnative.dev/docs/image#source">ImageSourcePropType</a> | string
+    * @defaultValue null
+    */
+  var source: js.UndefOr[ImageSourcePropType | String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 多个实体渲染时, 空白间隔偏移量, 可以让渲染更紧凑些
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description When rendering multiple entities, the space offset can make the rendering more compact
+    * @defaultValue 0
+    */
   var spaceOffset: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description TopBar.Action 的左右边距，注若为文字类型 spacing 将会被作为额外宽度添加给 Action
+    * @defaultValue 6
+    */
+  /**
+    * @language en-US
+    * @description The left and right margins of TopBar.Action.
+    * @defaultValue 6
+    */
   var spacing: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 描边色
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Stroke color
+    * @defaultValue null
+    */
   var stroke: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 首尾端形状
+    * @defaultValue "round"
+    */
+  /**
+    * @language en-US
+    * @description Shape of the stroke cap
+    * @defaultValue "round"
+    */
   var strokeCap: js.UndefOr[round | butt | square] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 实虚线，数组内第一个元素为一段虚线的长度，第二个为间距
+    * @defaultValue [0, 0]
+    */
+  /**
+    * @language en-US
+    * @description Stroke dash. The first element in the array is the length of a dashed line, and the second parameter is the spacing
+    * @defaultValue [0, 0]
+    */
   var strokeDash: js.UndefOr[js.Array[Double]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 连接处形状
+    * @defaultValue "round"
+    */
+  /**
+    * @language en-US
+    * @description Shape of the stroke join
+    * @defaultValue "round"
+    */
   var strokeJoin: js.UndefOr[round | miter | bevel] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 描边宽度
+    * @defaultValue 1
+    */
+  /**
+    * @language en-US
+    * @description Stroke width
+    * @defaultValue 1
+    */
   var strokeWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 单位制
+    * @defaultValue 1024
+    */
+  /**
+    * @language en-US
+    * @description unitsPerEm
+    * @defaultValue 1024
+    */
   var unitsPerEm: js.UndefOr[Double] = js.undefined
   
-  var useART: js.UndefOr[`true`] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 是否使用 ART 形式
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Are art forms used
+    * @defaultValue false
+    */
+  var useART: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 垂直翻转
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Vertical flip
+    * @defaultValue false
+    */
   var vFlip: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Svg 视窗
+    * @defaultValue '0 0 1024 1024'
+    */
+  /**
+    * @language en-US
+    * @description Svg viewport
+    * @defaultValue '0 0 1024 1024'
+    */
   var viewBox: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标宽度，默认为 size 的值
+    * @defaultValue 12
+    */
+  /**
+    * @language en-US
+    * @description Icon width. It is the value of size by default
+    * @defaultValue 12
+    */
   var width: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标起始横坐标
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Starting abscissa of Icon
+    * @defaultValue 0
+    */
   var x: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标起始纵坐标
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Icon starting ordinate
+    * @defaultValue 0
+    */
   var y: js.UndefOr[Double] = js.undefined
 }
 object TopBarActionProps {
@@ -110,7 +393,7 @@ object TopBarActionProps {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: IconFontName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -134,11 +417,11 @@ object TopBarActionProps {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSource(value: ImageSourcePropType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ImageSourcePropType | String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value*))
     
     inline def setSpaceOffset(value: Double): Self = StObject.set(x, "spaceOffset", value.asInstanceOf[js.Any])
     
@@ -158,7 +441,7 @@ object TopBarActionProps {
     
     inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
     
-    inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+    inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value*))
     
     inline def setStrokeJoin(value: round | miter | bevel): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
@@ -174,7 +457,7 @@ object TopBarActionProps {
     
     inline def setUnitsPerEmUndefined: Self = StObject.set(x, "unitsPerEm", js.undefined)
     
-    inline def setUseART(value: `true`): Self = StObject.set(x, "useART", value.asInstanceOf[js.Any])
+    inline def setUseART(value: Boolean): Self = StObject.set(x, "useART", value.asInstanceOf[js.Any])
     
     inline def setUseARTUndefined: Self = StObject.set(x, "useART", js.undefined)
     

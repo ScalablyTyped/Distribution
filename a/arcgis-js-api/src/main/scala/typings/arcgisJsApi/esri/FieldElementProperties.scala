@@ -1,27 +1,44 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.field
+import typings.arcgisJsApi.anon.BarcodeScannerInputProper
+import typings.arcgisJsApi.anon.CodedValueDomainPropertie
+import typings.arcgisJsApi.anon.ComboBoxInputPropertiesty
+import typings.arcgisJsApi.anon.DateTimePickerInputProper
+import typings.arcgisJsApi.anon.RadioButtonsInputProperti
+import typings.arcgisJsApi.anon.RangeDomainPropertiestype
+import typings.arcgisJsApi.anon.SwitchInputPropertiestype
+import typings.arcgisJsApi.anon.TextAreaInputPropertiesty
+import typings.arcgisJsApi.anon.TextBoxInputPropertiestyp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FieldElementProperties
   extends StObject
-     with ElementMixinProperties {
+     with ElementProperties {
   
   /**
     * The [coded value domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html) or [range domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html) of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#domain)
     */
-  var domain: js.UndefOr[CodedValueDomainProperties | RangeDomainProperties] = js.undefined
+  var domain: js.UndefOr[CodedValueDomainPropertie | RangeDomainPropertiestype] = js.undefined
   
   /**
-    * Indicates whether the field can be edited.
+    * A Boolean determining whether users can edit this form element.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#editable)
     */
   var editable: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A reference to the [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name) of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression defined in the [expressionInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos) of the FormTemplate.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#editableExpression)
+    */
+  var editableExpression: js.UndefOr[String] = js.undefined
   
   /**
     * The field name as defined by the feature layer.
@@ -38,25 +55,27 @@ trait FieldElementProperties
   var hint: js.UndefOr[String] = js.undefined
   
   /**
-    * The input user interface to use for the element.
+    * The input to use for the element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#input)
     */
-  var input: js.UndefOr[TextBoxInputProperties | TextAreaInputProperties | DateTimePickerInputProperties] = js.undefined
+  var input: js.UndefOr[
+    TextBoxInputPropertiestyp | TextAreaInputPropertiesty | DateTimePickerInputProper | BarcodeScannerInputProper | ComboBoxInputPropertiesty | RadioButtonsInputProperti | SwitchInputPropertiestype
+  ] = js.undefined
   
   /**
-    * A reference to an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a boolean value.
+    * A reference to the [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name) of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression defined in the [expressionInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos) of the FormTemplate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#requiredExpression)
     */
   var requiredExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates the type of form [element](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-Element.html).
+    * A reference to the [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name) of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression defined in the [expressionInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos) of the FormTemplate.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#type)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#valueExpression)
     */
-  var `type`: js.UndefOr[field] = js.undefined
+  var valueExpression: js.UndefOr[String] = js.undefined
 }
 object FieldElementProperties {
   
@@ -67,11 +86,15 @@ object FieldElementProperties {
   
   extension [Self <: FieldElementProperties](x: Self) {
     
-    inline def setDomain(value: CodedValueDomainProperties | RangeDomainProperties): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: CodedValueDomainPropertie | RangeDomainPropertiestype): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableExpression(value: String): Self = StObject.set(x, "editableExpression", value.asInstanceOf[js.Any])
+    
+    inline def setEditableExpressionUndefined: Self = StObject.set(x, "editableExpression", js.undefined)
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
@@ -83,7 +106,9 @@ object FieldElementProperties {
     
     inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
-    inline def setInput(value: TextBoxInputProperties | TextAreaInputProperties | DateTimePickerInputProperties): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(
+      value: TextBoxInputPropertiestyp | TextAreaInputPropertiesty | DateTimePickerInputProper | BarcodeScannerInputProper | ComboBoxInputPropertiesty | RadioButtonsInputProperti | SwitchInputPropertiestype
+    ): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
@@ -91,8 +116,8 @@ object FieldElementProperties {
     
     inline def setRequiredExpressionUndefined: Self = StObject.set(x, "requiredExpression", js.undefined)
     
-    inline def setType(value: field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
   }
 }

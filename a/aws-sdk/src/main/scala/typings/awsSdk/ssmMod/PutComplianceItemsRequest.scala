@@ -27,7 +27,7 @@ trait PutComplianceItemsRequest extends StObject {
   var Items: ComplianceItemEntryList
   
   /**
-    * Specify an ID for this resource. For a managed instance, this is the instance ID.
+    * Specify an ID for this resource. For a managed node, this is the node ID.
     */
   var ResourceId: ComplianceResourceId
   
@@ -66,7 +66,7 @@ object PutComplianceItemsRequest {
     
     inline def setItems(value: ComplianceItemEntryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ComplianceItemEntry*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ComplianceItemEntry*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setResourceId(value: ComplianceResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

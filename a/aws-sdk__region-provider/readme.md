@@ -10,10 +10,10 @@ AWS region provider for Node.JS. Will determine the default region to use for AW
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/region-provider |
 | Keywords           | aws, credentials |
-| # releases         | 22 |
-| # dependents       | 2 |
-| # downloads        | 3214671 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 96153.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fregion-provider)

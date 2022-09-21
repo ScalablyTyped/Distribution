@@ -14,7 +14,7 @@ object simpleStorageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def on_OverQuota(event: OverQuota, handler: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_OverQuota(event: OverQuota, handler: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sdk/simple-storage", "quotaUsage")
   @js.native
@@ -22,5 +22,5 @@ object simpleStorageMod {
   
   @JSImport("sdk/simple-storage", "storage")
   @js.native
-  val storage: js.Any = js.native
+  val storage: Any = js.native
 }

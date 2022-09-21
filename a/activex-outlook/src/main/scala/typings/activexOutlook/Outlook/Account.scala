@@ -35,7 +35,7 @@ trait Account extends StObject {
   /* private */ @JSName("Outlook.Account_typekey")
   var OutlookDotAccount_typekey: Account
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -60,7 +60,7 @@ object Account {
     GetAddressEntryFromID: String => AddressEntry,
     GetRecipientFromID: String => Recipient,
     OutlookDotAccount_typekey: Account,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     SmtpAddress: String,
     UserName: String
@@ -100,7 +100,7 @@ object Account {
     
     inline def setOutlookDotAccount_typekey(value: Account): Self = StObject.set(x, "Outlook.Account_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

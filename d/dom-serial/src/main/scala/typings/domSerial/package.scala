@@ -1,8 +1,9 @@
 package typings.domSerial
 
+import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type EventHandler = js.Function1[/* event */ typings.std.Event, scala.Unit]
+type EventHandler = js.Function1[/* event */ Event, Unit]

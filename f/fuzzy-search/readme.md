@@ -10,10 +10,10 @@ Simple fuzzy search
 | ------------------ | :-------------: |
 | Full name          | fuzzy-search |
 | Keywords           | fuzzy, search, javascript |
-| # releases         | 5 |
-| # dependents       | 28 |
-| # downloads        | 5269591 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 255892.66666666666 |
+| # stars            | 179.0 |
 
 ## Links
 - [Homepage](https://github.com/wouter2203/fuzzy-search#readme)

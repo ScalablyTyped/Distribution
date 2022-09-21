@@ -14,7 +14,7 @@ trait UpdateConfigurationRequest extends StObject {
   /**
     * Required. The base64-encoded XML configuration.
     */
-  var Data: js.UndefOr[string] = js.undefined
+  var Data: string
   
   /**
     * The description of the configuration.
@@ -23,8 +23,8 @@ trait UpdateConfigurationRequest extends StObject {
 }
 object UpdateConfigurationRequest {
   
-  inline def apply(ConfigurationId: string): UpdateConfigurationRequest = {
-    val __obj = js.Dynamic.literal(ConfigurationId = ConfigurationId.asInstanceOf[js.Any])
+  inline def apply(ConfigurationId: string, Data: string): UpdateConfigurationRequest = {
+    val __obj = js.Dynamic.literal(ConfigurationId = ConfigurationId.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationRequest]
   }
   
@@ -33,8 +33,6 @@ object UpdateConfigurationRequest {
     inline def setConfigurationId(value: string): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
     
     inline def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
-    
-    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

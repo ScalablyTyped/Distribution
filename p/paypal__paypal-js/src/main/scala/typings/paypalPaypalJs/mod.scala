@@ -1,5 +1,17 @@
 package typings.paypalPaypalJs
 
+import typings.paypalPaypalJs.anon.Attributes
+import typings.paypalPaypalJs.buttonsMod.PayPalButtonsComponent
+import typings.paypalPaypalJs.buttonsMod.PayPalButtonsComponentOptions
+import typings.paypalPaypalJs.fundingEligibilityMod.FUNDING_SOURCE
+import typings.paypalPaypalJs.hostedFieldsMod.PayPalHostedFieldsComponent
+import typings.paypalPaypalJs.marksMod.PayPalMarksComponent
+import typings.paypalPaypalJs.marksMod.PayPalMarksComponentOptions
+import typings.paypalPaypalJs.messagesMod.PayPalMessagesComponent
+import typings.paypalPaypalJs.messagesMod.PayPalMessagesComponentOptions
+import typings.paypalPaypalJs.scriptOptionsMod.PayPalScriptOptions
+import typings.std.PromiseConstructor
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,132 +22,107 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loadScript(options: ScriptOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadScript")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def loadCustomScript(options: Attributes): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCustomScript")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def loadScript(options: PayPalScriptOptions): js.Promise[PayPalNamespace | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadScript")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PayPalNamespace | Null]]
+  inline def loadScript(options: PayPalScriptOptions, PromisePonyfill: PromiseConstructor): js.Promise[PayPalNamespace | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadScript")(options.asInstanceOf[js.Any], PromisePonyfill.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PayPalNamespace | Null]]
   
   @JSImport("@paypal/paypal-js", "version")
   @js.native
   val version: String = js.native
   
-  trait ScriptOptions extends StObject {
+  trait PayPalNamespace extends StObject {
     
-    var `buyer-country`: js.UndefOr[String] = js.undefined
+    var Buttons: js.UndefOr[
+        js.Function1[/* options */ js.UndefOr[PayPalButtonsComponentOptions], PayPalButtonsComponent]
+      ] = js.undefined
     
-    var `client-id`: String
+    var FUNDING: js.UndefOr[Record[String, FUNDING_SOURCE]] = js.undefined
     
-    var commit: js.UndefOr[Boolean] = js.undefined
+    var HostedFields: js.UndefOr[PayPalHostedFieldsComponent] = js.undefined
     
-    var components: js.UndefOr[String] = js.undefined
+    var Marks: js.UndefOr[
+        js.Function1[/* options */ js.UndefOr[PayPalMarksComponentOptions], PayPalMarksComponent]
+      ] = js.undefined
     
-    var currency: js.UndefOr[String] = js.undefined
+    var Messages: js.UndefOr[
+        js.Function1[/* options */ js.UndefOr[PayPalMessagesComponentOptions], PayPalMessagesComponent]
+      ] = js.undefined
     
-    var `data-client-token`: js.UndefOr[String] = js.undefined
+    var getFundingSources: js.UndefOr[typings.paypalPaypalJs.fundingEligibilityMod.getFundingSources] = js.undefined
     
-    var `data-csp-nonce`: js.UndefOr[String] = js.undefined
+    var isFundingEligible: js.UndefOr[typings.paypalPaypalJs.fundingEligibilityMod.isFundingEligible] = js.undefined
     
-    var `data-order-id`: js.UndefOr[String] = js.undefined
+    var rememberFunding: js.UndefOr[typings.paypalPaypalJs.fundingEligibilityMod.rememberFunding] = js.undefined
     
-    var `data-page-type`: js.UndefOr[String] = js.undefined
-    
-    var `data-partner-attribution-id`: js.UndefOr[String] = js.undefined
-    
-    var debug: js.UndefOr[Boolean | String] = js.undefined
-    
-    /*
-      * @deprecated
-      */
-    var `disable-card`: js.UndefOr[String] = js.undefined
-    
-    var `disable-funding`: js.UndefOr[String] = js.undefined
-    
-    var `integration-date`: js.UndefOr[String] = js.undefined
-    
-    var intent: js.UndefOr[String] = js.undefined
-    
-    var locale: js.UndefOr[String] = js.undefined
-    
-    var `merchant-id`: js.UndefOr[String] = js.undefined
-    
-    var vault: js.UndefOr[Boolean | String] = js.undefined
+    var version: String
   }
-  object ScriptOptions {
+  object PayPalNamespace {
     
-    inline def apply(`client-id`: String): ScriptOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("client-id")(`client-id`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ScriptOptions]
+    inline def apply(version: String): PayPalNamespace = {
+      val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PayPalNamespace]
     }
     
-    extension [Self <: ScriptOptions](x: Self) {
+    extension [Self <: PayPalNamespace](x: Self) {
       
-      inline def `setBuyer-country`(value: String): Self = StObject.set(x, "buyer-country", value.asInstanceOf[js.Any])
+      inline def setButtons(value: /* options */ js.UndefOr[PayPalButtonsComponentOptions] => PayPalButtonsComponent): Self = StObject.set(x, "Buttons", js.Any.fromFunction1(value))
       
-      inline def `setBuyer-countryUndefined`: Self = StObject.set(x, "buyer-country", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "Buttons", js.undefined)
       
-      inline def `setClient-id`(value: String): Self = StObject.set(x, "client-id", value.asInstanceOf[js.Any])
+      inline def setFUNDING(value: Record[String, FUNDING_SOURCE]): Self = StObject.set(x, "FUNDING", value.asInstanceOf[js.Any])
       
-      inline def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setFUNDINGUndefined: Self = StObject.set(x, "FUNDING", js.undefined)
       
-      inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+      inline def setGetFundingSources(value: () => js.Array[FUNDING_SOURCE]): Self = StObject.set(x, "getFundingSources", js.Any.fromFunction0(value))
       
-      inline def setComponents(value: String): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setGetFundingSourcesUndefined: Self = StObject.set(x, "getFundingSources", js.undefined)
       
-      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setHostedFields(value: PayPalHostedFieldsComponent): Self = StObject.set(x, "HostedFields", value.asInstanceOf[js.Any])
       
-      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setHostedFieldsUndefined: Self = StObject.set(x, "HostedFields", js.undefined)
       
-      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setIsFundingEligible(value: /* fundingSource */ FUNDING_SOURCE => Boolean): Self = StObject.set(x, "isFundingEligible", js.Any.fromFunction1(value))
       
-      inline def `setData-client-token`(value: String): Self = StObject.set(x, "data-client-token", value.asInstanceOf[js.Any])
+      inline def setIsFundingEligibleUndefined: Self = StObject.set(x, "isFundingEligible", js.undefined)
       
-      inline def `setData-client-tokenUndefined`: Self = StObject.set(x, "data-client-token", js.undefined)
+      inline def setMarks(value: /* options */ js.UndefOr[PayPalMarksComponentOptions] => PayPalMarksComponent): Self = StObject.set(x, "Marks", js.Any.fromFunction1(value))
       
-      inline def `setData-csp-nonce`(value: String): Self = StObject.set(x, "data-csp-nonce", value.asInstanceOf[js.Any])
+      inline def setMarksUndefined: Self = StObject.set(x, "Marks", js.undefined)
       
-      inline def `setData-csp-nonceUndefined`: Self = StObject.set(x, "data-csp-nonce", js.undefined)
+      inline def setMessages(value: /* options */ js.UndefOr[PayPalMessagesComponentOptions] => PayPalMessagesComponent): Self = StObject.set(x, "Messages", js.Any.fromFunction1(value))
       
-      inline def `setData-order-id`(value: String): Self = StObject.set(x, "data-order-id", value.asInstanceOf[js.Any])
+      inline def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
       
-      inline def `setData-order-idUndefined`: Self = StObject.set(x, "data-order-id", js.undefined)
+      inline def setRememberFunding(value: /* fundingSource */ js.Array[FUNDING_SOURCE] => Unit): Self = StObject.set(x, "rememberFunding", js.Any.fromFunction1(value))
       
-      inline def `setData-page-type`(value: String): Self = StObject.set(x, "data-page-type", value.asInstanceOf[js.Any])
+      inline def setRememberFundingUndefined: Self = StObject.set(x, "rememberFunding", js.undefined)
       
-      inline def `setData-page-typeUndefined`: Self = StObject.set(x, "data-page-type", js.undefined)
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  object global {
+    
+    trait Window extends StObject {
       
-      inline def `setData-partner-attribution-id`(value: String): Self = StObject.set(x, "data-partner-attribution-id", value.asInstanceOf[js.Any])
+      var paypal: js.UndefOr[PayPalNamespace | Null] = js.undefined
+    }
+    object Window {
       
-      inline def `setData-partner-attribution-idUndefined`: Self = StObject.set(x, "data-partner-attribution-id", js.undefined)
+      inline def apply(): Window = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Window]
+      }
       
-      inline def setDebug(value: Boolean | String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
-      
-      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
-      
-      inline def `setDisable-card`(value: String): Self = StObject.set(x, "disable-card", value.asInstanceOf[js.Any])
-      
-      inline def `setDisable-cardUndefined`: Self = StObject.set(x, "disable-card", js.undefined)
-      
-      inline def `setDisable-funding`(value: String): Self = StObject.set(x, "disable-funding", value.asInstanceOf[js.Any])
-      
-      inline def `setDisable-fundingUndefined`: Self = StObject.set(x, "disable-funding", js.undefined)
-      
-      inline def `setIntegration-date`(value: String): Self = StObject.set(x, "integration-date", value.asInstanceOf[js.Any])
-      
-      inline def `setIntegration-dateUndefined`: Self = StObject.set(x, "integration-date", js.undefined)
-      
-      inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
-      
-      inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
-      
-      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
-      
-      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
-      
-      inline def `setMerchant-id`(value: String): Self = StObject.set(x, "merchant-id", value.asInstanceOf[js.Any])
-      
-      inline def `setMerchant-idUndefined`: Self = StObject.set(x, "merchant-id", js.undefined)
-      
-      inline def setVault(value: Boolean | String): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
-      
-      inline def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
+      extension [Self <: Window](x: Self) {
+        
+        inline def setPaypal(value: PayPalNamespace): Self = StObject.set(x, "paypal", value.asInstanceOf[js.Any])
+        
+        inline def setPaypalNull: Self = StObject.set(x, "paypal", null)
+        
+        inline def setPaypalUndefined: Self = StObject.set(x, "paypal", js.undefined)
+      }
     }
   }
 }

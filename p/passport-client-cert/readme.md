@@ -10,10 +10,10 @@ Passport.js strategy for TLS client certificate authentication
 | ------------------ | :-------------: |
 | Full name          | passport-client-cert |
 | Keywords           | pki, passport, ssl, tls, certificate, cert, authentication |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 28599 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1518.6666666666667 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/ripjar/passport-client-cert)

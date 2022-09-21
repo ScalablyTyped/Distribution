@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/initializers", "Constant")
 @js.native
-class Constant protected () extends Initializer {
+open class Constant protected () extends Initializer {
   def this(args: ConstantArgs) = this()
   
-  /* private */ var value: js.Any = js.native
+  /* private */ var value: Any = js.native
 }
 /* static members */
 object Constant {

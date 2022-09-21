@@ -1,46 +1,72 @@
 package typings.vfileLocation
 
-import typings.vfile.mod.VFile
-import typings.vfileLocation.anon.Column
-import typings.vfileLocation.anon.Line
+import typings.std.NonNullable
+import typings.vfileLocation.anon.ToOffset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(vfile: String): Location = ^.asInstanceOf[js.Dynamic].apply(vfile.asInstanceOf[js.Any]).asInstanceOf[Location]
-  inline def apply(vfile: VFile): Location = ^.asInstanceOf[js.Dynamic].apply(vfile.asInstanceOf[js.Any]).asInstanceOf[Location]
-  
   @JSImport("vfile-location", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait Location extends StObject {
+  inline def location(file: String): ToOffset = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(file.asInstanceOf[js.Any]).asInstanceOf[ToOffset]
+  inline def location(file: js.typedarray.Uint8Array): ToOffset = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(file.asInstanceOf[js.Any]).asInstanceOf[ToOffset]
+  inline def location(file: VFile): ToOffset = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(file.asInstanceOf[js.Any]).asInstanceOf[ToOffset]
+  
+  /* Inlined std.Required<vfile-location.vfile-location.Point> */
+  trait FullPoint extends StObject {
     
-    /**
-      * Get the `offset` (`number`) for a line and column-based `position` in the bound file.
-      * Returns `-1` when given invalid or out of bounds input.
-      */
-    def toOffset(position: Column): Double
+    var column: Double
     
-    /**
-      * Get the line and column-based `position` for `offset` in the bound file.
-      */
-    def toPosition(offset: Double): Line
+    var line: Double
+    
+    var offset: Double
   }
-  object Location {
+  object FullPoint {
     
-    inline def apply(toOffset: Column => Double, toPosition: Double => Line): Location = {
-      val __obj = js.Dynamic.literal(toOffset = js.Any.fromFunction1(toOffset), toPosition = js.Any.fromFunction1(toPosition))
-      __obj.asInstanceOf[Location]
+    inline def apply(column: Double, line: Double, offset: Double): FullPoint = {
+      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FullPoint]
     }
     
-    extension [Self <: Location](x: Self) {
+    extension [Self <: FullPoint](x: Self) {
       
-      inline def setToOffset(value: Column => Double): Self = StObject.set(x, "toOffset", js.Any.fromFunction1(value))
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      inline def setToPosition(value: Double => Line): Self = StObject.set(x, "toPosition", js.Any.fromFunction1(value))
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
+  
+  type Offset = NonNullable[js.UndefOr[Double]]
+  
+  type Point = typings.unist.mod.Point
+  
+  /* Inlined std.Pick<vfile-location.vfile-location.Point, 'line' | 'column'> */
+  trait PositionalPoint extends StObject {
+    
+    var column: Double
+    
+    var line: Double
+  }
+  object PositionalPoint {
+    
+    inline def apply(column: Double, line: Double): PositionalPoint = {
+      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PositionalPoint]
+    }
+    
+    extension [Self <: PositionalPoint](x: Self) {
+      
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type VFile = typings.vfile.mod.VFile
 }

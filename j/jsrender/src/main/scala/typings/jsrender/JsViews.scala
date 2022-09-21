@@ -10,24 +10,24 @@ object JsViews {
   
   trait Context
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
     /* Ancestor tags */
     var parentTags: js.UndefOr[Hash[Tag]] = js.undefined
     
     /* ctx object */
     /* Root data object or array */
-    var root: js.Any
+    var root: Any
     
     /* This tag */
     var tag: js.UndefOr[Tag] = js.undefined
     
     /* tagCtx object */
-    var tagCtx: js.UndefOr[js.Any] = js.undefined
+    var tagCtx: js.UndefOr[Any] = js.undefined
   }
   object Context {
     
-    inline def apply(root: js.Any): Context = {
+    inline def apply(root: Any): Context = {
       val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
@@ -38,11 +38,11 @@ object JsViews {
       
       inline def setParentTagsUndefined: Self = StObject.set(x, "parentTags", js.undefined)
       
-      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
       inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      inline def setTagCtx(value: js.Any): Self = StObject.set(x, "tagCtx", value.asInstanceOf[js.Any])
+      inline def setTagCtx(value: Any): Self = StObject.set(x, "tagCtx", value.asInstanceOf[js.Any])
       
       inline def setTagCtxUndefined: Self = StObject.set(x, "tagCtx", js.undefined)
       
@@ -51,7 +51,7 @@ object JsViews {
   }
   
   // Converters
-  type Converter = js.Function2[/* value */ js.Any, /* repeated */ js.Any, js.Any]
+  type Converter = js.Function2[/* value */ Any, /* repeated */ Any, Any]
   
   /* Generic hash of objects of type T */
   type Hash[T] = StringDictionary[T]
@@ -68,7 +68,7 @@ object JsViews {
       *
       * @returns {object}
       */
-    def advanced(): Hash[js.Any] = js.native
+    def advanced(): Hash[Any] = js.native
     /**
       * Set advanced settings (useViews, _jsv ...)
       * $.views.settings.advanced({useViews: true})
@@ -76,7 +76,7 @@ object JsViews {
       * @param {object}  settings
       * @returns {Settings}
       */
-    def advanced(settings: Hash[js.Any]): Settings = js.native
+    def advanced(settings: Hash[Any]): Settings = js.native
     
     /**
       * Get allowCode mode setting
@@ -103,10 +103,10 @@ object JsViews {
     def debugMode(): Boolean = js.native
     def debugMode(
       debugMode: js.Function3[
-          /* e */ js.UndefOr[js.Any], 
+          /* e */ js.UndefOr[Any], 
           /* fallback */ js.UndefOr[String], 
           /* view */ js.UndefOr[View], 
-          js.Any
+          Any
         ]
     ): Settings = js.native
     /**
@@ -174,25 +174,25 @@ object JsViews {
     extends StObject
        with TagOptionProps {
     
-    var base: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+    var base: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.native
     
-    var baseApply: js.UndefOr[js.Function1[/* args */ js.Array[js.Any] | IArguments, js.Any]] = js.native
+    var baseApply: js.UndefOr[js.Function1[/* args */ js.Array[Any] | IArguments, Any]] = js.native
     
-    def bndArgs(): js.Array[js.Any] | Unit = js.native
-    def bndArgs(elseBlock: Double): js.Array[js.Any] | Unit = js.native
+    def bndArgs(): js.Array[Any] | Unit = js.native
+    def bndArgs(elseBlock: Double): js.Array[Any] | Unit = js.native
     
-    def ctxPrm(name: String): js.Any = js.native
-    def ctxPrm(name: String, value: js.Any): js.Any = js.native
+    def ctxPrm(name: String): Any = js.native
+    def ctxPrm(name: String, value: Any): Any = js.native
     
     // get/set in JsViews but get only in JsRender
-    def cvtArgs(): js.Array[js.Any] | Unit = js.native
-    def cvtArgs(elseBlock: Double): js.Array[js.Any] | Unit = js.native
+    def cvtArgs(): js.Array[Any] | Unit = js.native
+    def cvtArgs(elseBlock: Double): js.Array[Any] | Unit = js.native
     
     var parent: js.UndefOr[Tag] = js.native
     
     var parents: js.UndefOr[Hash[Tag]] = js.native
     
-    var rendering: js.UndefOr[Hash[js.Any]] = js.native
+    var rendering: js.UndefOr[Hash[Any]] = js.native
     
     /* Tag object */
     var tagCtx: TagCtx = js.native
@@ -207,10 +207,10 @@ object JsViews {
     
     /* tagCtx object */
     /* Arguments passed declaratively */
-    var args: js.Array[js.Any] = js.native
+    var args: js.Array[Any] = js.native
     
     /* tagCtx.bndArgs() method */
-    def bndArgs(): js.Array[js.Any] | Unit = js.native
+    def bndArgs(): js.Array[Any] | Unit = js.native
     
     /**
     	 * Template render method: render the template as a string, using the specified data and helpers/context
@@ -226,14 +226,14 @@ object JsViews {
     	 */
     /* Template for wrapped content, or else external template. Otherwise, false */
     def content(): String = js.native
-    def content(data: js.Any): String = js.native
-    def content(data: js.Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def content(data: js.Any, helpersOrContext: Hash[js.Any]): String = js.native
-    def content(data: js.Any, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
-    def content(data: js.Any, noIteration: Boolean): String = js.native
+    def content(data: Any): String = js.native
+    def content(data: Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
+    def content(data: Any, helpersOrContext: Hash[Any]): String = js.native
+    def content(data: Any, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
+    def content(data: Any, noIteration: Boolean): String = js.native
     def content(data: Unit, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def content(data: Unit, helpersOrContext: Hash[js.Any]): String = js.native
-    def content(data: Unit, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
+    def content(data: Unit, helpersOrContext: Hash[Any]): String = js.native
+    def content(data: Unit, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
     def content(data: Unit, noIteration: Boolean): String = js.native
     /* Template for wrapped content, or else external template. Otherwise, false */
     @JSName("content")
@@ -243,12 +243,12 @@ object JsViews {
     var ctx: Context = js.native
     
     /* tagCtx.ctxPrm() method */
-    def ctxPrm(name: String): js.Any = js.native
-    def ctxPrm(name: String, value: js.Any): js.Any = js.native
+    def ctxPrm(name: String): Any = js.native
+    def ctxPrm(name: String, value: Any): Any = js.native
     
     // get/set in JsViews but get only in JsRender
     /* tagCtx.cvtArgs() method */
-    def cvtArgs(): js.Array[js.Any] | Unit = js.native
+    def cvtArgs(): js.Array[Any] | Unit = js.native
     
     /* Tag instance index (if siblings rendered against array data) */
     var index: Double = js.native
@@ -257,10 +257,10 @@ object JsViews {
     var params: TagCtxParams = js.native
     
     /* Properties passed declaratively */
-    var props: Hash[js.Any] = js.native
+    var props: Hash[Any] = js.native
     
     /* Tag render method */
-    def render(arguments: js.Any*): String = js.native
+    def render(arguments: Any*): String = js.native
     /* Tag render method */
     @JSName("render")
     var render_Original: TagRenderMethod = js.native
@@ -282,14 +282,14 @@ object JsViews {
     	 */
     /* External tmpl, or else template for wrapped content. Otherwise, false */
     def tmpl(): String = js.native
-    def tmpl(data: js.Any): String = js.native
-    def tmpl(data: js.Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def tmpl(data: js.Any, helpersOrContext: Hash[js.Any]): String = js.native
-    def tmpl(data: js.Any, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
-    def tmpl(data: js.Any, noIteration: Boolean): String = js.native
+    def tmpl(data: Any): String = js.native
+    def tmpl(data: Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
+    def tmpl(data: Any, helpersOrContext: Hash[Any]): String = js.native
+    def tmpl(data: Any, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
+    def tmpl(data: Any, noIteration: Boolean): String = js.native
     def tmpl(data: Unit, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def tmpl(data: Unit, helpersOrContext: Hash[js.Any]): String = js.native
-    def tmpl(data: Unit, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
+    def tmpl(data: Unit, helpersOrContext: Hash[Any]): String = js.native
+    def tmpl(data: Unit, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
     def tmpl(data: Unit, noIteration: Boolean): String = js.native
     /* External tmpl, or else template for wrapped content. Otherwise, false */
     @JSName("tmpl")
@@ -319,7 +319,7 @@ object JsViews {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setCtx(value: Hash[String]): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
@@ -338,7 +338,7 @@ object JsViews {
   // Tags
   trait TagOptionProps
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
     var argDefault: js.UndefOr[Boolean] = js.undefined
     
@@ -348,11 +348,11 @@ object JsViews {
     
     var bindTo: js.UndefOr[Double | String | (js.Array[Double | String])] = js.undefined
     
-    var contentCtx: js.UndefOr[Boolean | (js.ThisFunction1[/* this */ TagInst, /* arg0 */ js.Any, js.Any])] = js.undefined
+    var contentCtx: js.UndefOr[Boolean | (js.ThisFunction1[/* this */ TagInst, /* arg0 */ Any, Any])] = js.undefined
     
     var convert: js.UndefOr[String | Converter] = js.undefined
     
-    var ctx: js.UndefOr[Hash[js.Any]] = js.undefined
+    var ctx: js.UndefOr[Hash[Any]] = js.undefined
     
     var flow: js.UndefOr[Boolean] = js.undefined
     
@@ -367,7 +367,7 @@ object JsViews {
         ]
       ] = js.undefined
     
-    var render: js.UndefOr[js.ThisFunction1[/* this */ TagInst, /* repeated */ js.Any, String | Unit]] = js.undefined
+    var render: js.UndefOr[js.ThisFunction1[/* this */ TagInst, /* repeated */ Any, String | Unit]] = js.undefined
   }
   object TagOptionProps {
     
@@ -390,25 +390,25 @@ object JsViews {
       
       inline def setBindFromUndefined: Self = StObject.set(x, "bindFrom", js.undefined)
       
-      inline def setBindFromVarargs(value: (Double | String)*): Self = StObject.set(x, "bindFrom", js.Array(value :_*))
+      inline def setBindFromVarargs(value: (Double | String)*): Self = StObject.set(x, "bindFrom", js.Array(value*))
       
       inline def setBindTo(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "bindTo", value.asInstanceOf[js.Any])
       
       inline def setBindToUndefined: Self = StObject.set(x, "bindTo", js.undefined)
       
-      inline def setBindToVarargs(value: (Double | String)*): Self = StObject.set(x, "bindTo", js.Array(value :_*))
+      inline def setBindToVarargs(value: (Double | String)*): Self = StObject.set(x, "bindTo", js.Array(value*))
       
-      inline def setContentCtx(value: Boolean | (js.ThisFunction1[/* this */ TagInst, /* arg0 */ js.Any, js.Any])): Self = StObject.set(x, "contentCtx", value.asInstanceOf[js.Any])
+      inline def setContentCtx(value: Boolean | (js.ThisFunction1[/* this */ TagInst, /* arg0 */ Any, Any])): Self = StObject.set(x, "contentCtx", value.asInstanceOf[js.Any])
       
       inline def setContentCtxUndefined: Self = StObject.set(x, "contentCtx", js.undefined)
       
       inline def setConvert(value: String | Converter): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
       
-      inline def setConvertFunction2(value: (/* value */ js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
+      inline def setConvertFunction2(value: (/* value */ Any, /* repeated */ Any) => Any): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
       
       inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
       
-      inline def setCtx(value: Hash[js.Any]): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: Hash[Any]): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
       inline def setCtxUndefined: Self = StObject.set(x, "ctx", js.undefined)
       
@@ -428,7 +428,7 @@ object JsViews {
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      inline def setRender(value: js.ThisFunction1[/* this */ TagInst, /* repeated */ js.Any, String | Unit]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: js.ThisFunction1[/* this */ TagInst, /* repeated */ Any, String | Unit]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
@@ -456,9 +456,9 @@ object JsViews {
     }
   }
   
-  type TagRenderMethod = js.Function1[/* repeated */ js.Any, String]
+  type TagRenderMethod = js.Function1[/* repeated */ Any, String]
   
-  type TagSetter = TagOptions | String | (js.Function1[/* repeated */ js.Any, js.Any])
+  type TagSetter = TagOptions | String | (js.Function1[/* repeated */ Any, Any])
   
   @js.native
   trait Template
@@ -469,9 +469,9 @@ object JsViews {
     
     var converters: js.UndefOr[Hash[Converter]] = js.native
     
-    var fn: js.UndefOr[js.Function1[/* repeated */ js.Any, String]] = js.native
+    var fn: js.UndefOr[js.Function1[/* repeated */ Any, String]] = js.native
     
-    var helpers: js.UndefOr[Hash[js.Any]] = js.native
+    var helpers: js.UndefOr[Hash[Any]] = js.native
     
     var markup: String = js.native
     
@@ -488,14 +488,14 @@ object JsViews {
     	 * @returns {string}   rendered template
     	 */
     def render(): String = js.native
-    def render(data: js.Any): String = js.native
-    def render(data: js.Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def render(data: js.Any, helpersOrContext: Hash[js.Any]): String = js.native
-    def render(data: js.Any, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
-    def render(data: js.Any, noIteration: Boolean): String = js.native
+    def render(data: Any): String = js.native
+    def render(data: Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
+    def render(data: Any, helpersOrContext: Hash[Any]): String = js.native
+    def render(data: Any, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
+    def render(data: Any, noIteration: Boolean): String = js.native
     def render(data: Unit, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def render(data: Unit, helpersOrContext: Hash[js.Any]): String = js.native
-    def render(data: Unit, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
+    def render(data: Unit, helpersOrContext: Hash[Any]): String = js.native
+    def render(data: Unit, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
     def render(data: Unit, noIteration: Boolean): String = js.native
     @JSName("render")
     var render_Original: TemplateRender = js.native
@@ -514,9 +514,9 @@ object JsViews {
     
     var converters: js.UndefOr[Hash[Converter]] = js.undefined
     
-    var helpers: js.UndefOr[Hash[js.Any]] = js.undefined
+    var helpers: js.UndefOr[Hash[Any]] = js.undefined
     
-    var markup: js.Any
+    var markup: Any
     
     /* Template options hash */
     var tags: js.UndefOr[Hash[TagSetter]] = js.undefined
@@ -527,7 +527,7 @@ object JsViews {
   }
   object TemplateOptions {
     
-    inline def apply(markup: js.Any): TemplateOptions = {
+    inline def apply(markup: Any): TemplateOptions = {
       val __obj = js.Dynamic.literal(markup = markup.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplateOptions]
     }
@@ -538,11 +538,11 @@ object JsViews {
       
       inline def setConvertersUndefined: Self = StObject.set(x, "converters", js.undefined)
       
-      inline def setHelpers(value: Hash[js.Any]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+      inline def setHelpers(value: Hash[Any]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
       
       inline def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
       
-      inline def setMarkup(value: js.Any): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+      inline def setMarkup(value: Any): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
       inline def setTags(value: Hash[TagSetter]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
@@ -574,14 +574,14 @@ object JsViews {
     	 * @returns {string}   rendered template
     	 */
     def apply(): String = js.native
-    def apply(data: js.Any): String = js.native
-    def apply(data: js.Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def apply(data: js.Any, helpersOrContext: Hash[js.Any]): String = js.native
-    def apply(data: js.Any, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
-    def apply(data: js.Any, noIteration: Boolean): String = js.native
+    def apply(data: Any): String = js.native
+    def apply(data: Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
+    def apply(data: Any, helpersOrContext: Hash[Any]): String = js.native
+    def apply(data: Any, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
+    def apply(data: Any, noIteration: Boolean): String = js.native
     def apply(data: Unit, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def apply(data: Unit, helpersOrContext: Hash[js.Any]): String = js.native
-    def apply(data: Unit, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
+    def apply(data: Unit, helpersOrContext: Hash[Any]): String = js.native
+    def apply(data: Unit, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
     def apply(data: Unit, noIteration: Boolean): String = js.native
   }
   
@@ -608,11 +608,11 @@ object JsViews {
     var ctx: Context = js.native
     
     /* view.ctxPrm() method: get/set contextual parameter or helper */
-    def ctxPrm(name: String): js.Any = js.native
-    def ctxPrm(name: String, value: js.Any): js.Any = js.native
+    def ctxPrm(name: String): Any = js.native
+    def ctxPrm(name: String, value: Any): Any = js.native
     
     /* contextual data */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /* view.get() method: find parent or child views */
     def get(): View = js.native
@@ -625,7 +625,7 @@ object JsViews {
     
     // get/set in JsViews but get only in JsRender
     /* Find contextual template resource */
-    def getRsc(namedCollection: String, itemName: String): js.Any = js.native
+    def getRsc(namedCollection: String, itemName: String): Any = js.native
     
     /* Index of this view in parent views collection */
     var index: Double = js.native
@@ -655,14 +655,14 @@ object JsViews {
     	 */
     /* Template rendered by view */
     def tmpl(): String = js.native
-    def tmpl(data: js.Any): String = js.native
-    def tmpl(data: js.Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def tmpl(data: js.Any, helpersOrContext: Hash[js.Any]): String = js.native
-    def tmpl(data: js.Any, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
-    def tmpl(data: js.Any, noIteration: Boolean): String = js.native
+    def tmpl(data: Any): String = js.native
+    def tmpl(data: Any, helpersOrContext: Unit, noIteration: Boolean): String = js.native
+    def tmpl(data: Any, helpersOrContext: Hash[Any]): String = js.native
+    def tmpl(data: Any, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
+    def tmpl(data: Any, noIteration: Boolean): String = js.native
     def tmpl(data: Unit, helpersOrContext: Unit, noIteration: Boolean): String = js.native
-    def tmpl(data: Unit, helpersOrContext: Hash[js.Any]): String = js.native
-    def tmpl(data: Unit, helpersOrContext: Hash[js.Any], noIteration: Boolean): String = js.native
+    def tmpl(data: Unit, helpersOrContext: Hash[Any]): String = js.native
+    def tmpl(data: Unit, helpersOrContext: Hash[Any], noIteration: Boolean): String = js.native
     def tmpl(data: Unit, noIteration: Boolean): String = js.native
     /* Template rendered by view */
     @JSName("tmpl")
@@ -678,28 +678,28 @@ object JsViews {
   @js.native
   trait ViewModel
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
     
-    var extend: Hash[js.Any] = js.native
+    var extend: Hash[Any] = js.native
     
     /* ViewModel options hash */
     var getters: js.Array[String] = js.native
     
-    def map(data: js.Any): js.Any = js.native
+    def map(data: Any): Any = js.native
   }
   
   // ViewModels
   trait ViewModelOptions extends StObject {
     
-    var extend: js.UndefOr[Hash[js.Any]] = js.undefined
+    var extend: js.UndefOr[Hash[Any]] = js.undefined
     
     /* ViewModel options hash */
     // getters?: string[] | ;
-    var getters: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var getters: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var id: js.UndefOr[String | (js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean])] = js.undefined
+    var id: js.UndefOr[String | (js.Function2[/* a */ Any, /* b */ Any, Boolean])] = js.undefined
   }
   object ViewModelOptions {
     
@@ -710,19 +710,19 @@ object JsViews {
     
     extension [Self <: ViewModelOptions](x: Self) {
       
-      inline def setExtend(value: Hash[js.Any]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+      inline def setExtend(value: Hash[Any]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
       inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
       
-      inline def setGetters(value: js.Array[js.Any]): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
+      inline def setGetters(value: js.Array[Any]): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
       
       inline def setGettersUndefined: Self = StObject.set(x, "getters", js.undefined)
       
-      inline def setGettersVarargs(value: js.Any*): Self = StObject.set(x, "getters", js.Array(value :_*))
+      inline def setGettersVarargs(value: Any*): Self = StObject.set(x, "getters", js.Array(value*))
       
-      inline def setId(value: String | (js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean])): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | (js.Function2[/* a */ Any, /* b */ Any, Boolean])): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setIdFunction2(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "id", js.Any.fromFunction2(value))
+      inline def setIdFunction2(value: (/* a */ Any, /* b */ Any) => Boolean): Self = StObject.set(x, "id", js.Any.fromFunction2(value))
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
@@ -769,8 +769,8 @@ object JsViews {
     
     // named item
     /* $.views.helpers() */
-    def helpers(namedItems: Hash[js.Any]): Views
-    def helpers(namedItems: Hash[js.Any], parentTmpl: Template): Views
+    def helpers(namedItems: Hash[Any]): Views
+    def helpers(namedItems: Hash[Any], parentTmpl: Template): Views
     /**
     	 * Generic store() function to register item, named item, or hash of items
     	 * Also used as hash to store the registered items
@@ -782,22 +782,22 @@ object JsViews {
     	 * @returns {any|Views}              e.g. compiled template - or $.views in case of registering hash of items
     	 */
     /* $.views.helpers() */
-    def helpers(name: String): js.Any
-    def helpers(name: String, item: js.Any): js.Any
-    def helpers(name: String, item: js.Any, parentTmpl: Template): js.Any
-    def helpers(name: String, item: Unit, parentTmpl: Template): js.Any
+    def helpers(name: String): Any
+    def helpers(name: String, item: Any): Any
+    def helpers(name: String, item: Any, parentTmpl: Template): Any
+    def helpers(name: String, item: Unit, parentTmpl: Template): Any
     /* $.views.helpers() */
     @JSName("helpers")
-    var helpers_Original: Store[js.Any, js.Any]
+    var helpers_Original: Store[Any, Any]
     
     /* $.views.map() */
-    def map(any: js.Any): js.Any
+    def map(any: Any): Any
     
     /* $.views.settings */
     var settings: Settings
     
     /* $.views.sub.xxx */
-    var sub: Hash[js.Any]
+    var sub: Hash[Any]
     
     // named item
     /* $.views.tags() */
@@ -872,10 +872,10 @@ object JsViews {
     
     inline def apply(
       converters: Store[Converter, Converter],
-      helpers: Store[js.Any, js.Any],
-      map: js.Any => js.Any,
+      helpers: Store[Any, Any],
+      map: Any => Any,
       settings: Settings,
-      sub: Hash[js.Any],
+      sub: Hash[Any],
       tags: Store[Tag, TagSetter],
       templates: Templates,
       viewModels: ViewModels
@@ -888,13 +888,13 @@ object JsViews {
       
       inline def setConverters(value: Store[Converter, Converter]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
       
-      inline def setHelpers(value: Store[js.Any, js.Any]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+      inline def setHelpers(value: Store[Any, Any]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
       
-      inline def setMap(value: js.Any => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: Any => Any): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
       inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      inline def setSub(value: Hash[js.Any]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: Hash[Any]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
       inline def setTags(value: Store[Tag, TagSetter]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

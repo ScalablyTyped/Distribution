@@ -8,42 +8,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PivotTableUpdateData extends StObject {
   
   /**
-    *
     * Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the PivotTable allows values in the data body to be edited by the user.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var enableDataValueEditing: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Name of the PivotTable.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in the UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApi 1.13]
     */
   var refreshOnOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the PivotTable uses custom lists when sorting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var useCustomSortLists: js.UndefOr[Boolean] = js.undefined

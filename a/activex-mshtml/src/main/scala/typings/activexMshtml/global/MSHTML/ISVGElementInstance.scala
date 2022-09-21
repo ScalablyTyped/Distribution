@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ISVGElementInstance")
 @js.native
-/* private */ class ISVGElementInstance ()
+/* private */ open class ISVGElementInstance ()
   extends StObject
      with typings.activexMshtml.MSHTML.ISVGElementInstance {
   

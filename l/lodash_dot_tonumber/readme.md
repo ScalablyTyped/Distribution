@@ -10,10 +10,10 @@ The lodash method `_.toNumber` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.tonumber |
 | Keywords           | lodash-modularized, tonumber |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 8743214 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 537610.6666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

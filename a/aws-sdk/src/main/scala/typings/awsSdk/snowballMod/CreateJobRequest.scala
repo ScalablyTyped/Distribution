@@ -22,12 +22,12 @@ trait CreateJobRequest extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * Defines the device configuration for an AWS Snowcone job.
+    * Defines the device configuration for an Snowcone job. For more information, see "https://docs.aws.amazon.com/snowball/latest/snowcone-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide or "https://docs.aws.amazon.com/snowball/latest/developer-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide.
     */
   var DeviceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.DeviceConfiguration] = js.undefined
   
   /**
-    * The forwarding address ID for a job. This field is not supported in most regions.
+    * The forwarding address ID for a job. This field is not supported in most Regions.
     */
   var ForwardingAddressId: js.UndefOr[AddressId] = js.undefined
   
@@ -37,9 +37,14 @@ trait CreateJobRequest extends StObject {
   var JobType: js.UndefOr[typings.awsSdk.snowballMod.JobType] = js.undefined
   
   /**
-    * The KmsKeyARN that you want to associate with this job. KmsKeyARNs are created using the CreateKey AWS Key Management Service (KMS) API action.
+    * The KmsKeyARN that you want to associate with this job. KmsKeyARNs are created using the CreateKey Key Management Service (KMS) API action.
     */
   var KmsKeyARN: js.UndefOr[typings.awsSdk.snowballMod.KmsKeyARN] = js.undefined
+  
+  /**
+    * The ID of the long-term pricing type for the device.
+    */
+  var LongTermPricingId: js.UndefOr[typings.awsSdk.snowballMod.LongTermPricingId] = js.undefined
   
   /**
     * Defines the Amazon Simple Notification Service (Amazon SNS) notification settings for this job.
@@ -47,12 +52,22 @@ trait CreateJobRequest extends StObject {
   var Notification: js.UndefOr[typings.awsSdk.snowballMod.Notification] = js.undefined
   
   /**
+    * Specifies the service or services on the Snow Family device that your transferred data will be exported from or imported into. Amazon Web Services Snow Family supports Amazon S3 and NFS (Network File System) and the Amazon Web Services Storage Gateway service Tape Gateway type.
+    */
+  var OnDeviceServiceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.OnDeviceServiceConfiguration] = js.undefined
+  
+  /**
+    * Allows you to securely operate and manage Snowcone devices remotely from outside of your internal network. When set to INSTALLED_AUTOSTART, remote management will automatically be available when the device arrives at your location. Otherwise, you need to use the Snowball Client to manage the device.
+    */
+  var RemoteManagement: js.UndefOr[typings.awsSdk.snowballMod.RemoteManagement] = js.undefined
+  
+  /**
     * Defines the Amazon S3 buckets associated with this job. With IMPORT jobs, you specify the bucket or buckets that your transferred data will be imported into. With EXPORT jobs, you specify the bucket or buckets that your transferred data will be exported from. Optionally, you can also specify a KeyRange value. If you choose to export a range, you define the length of the range by providing either an inclusive BeginMarker value, an inclusive EndMarker value, or both. Ranges are UTF-8 binary sorted.
     */
   var Resources: js.UndefOr[JobResource] = js.undefined
   
   /**
-    * The RoleARN that you want to associate with this job. RoleArns are created using the CreateRole AWS Identity and Access Management (IAM) API action.
+    * The RoleARN that you want to associate with this job. RoleArns are created using the CreateRole Identity and Access Management (IAM) API action.
     */
   var RoleARN: js.UndefOr[typings.awsSdk.snowballMod.RoleARN] = js.undefined
   
@@ -62,17 +77,17 @@ trait CreateJobRequest extends StObject {
   var ShippingOption: js.UndefOr[typings.awsSdk.snowballMod.ShippingOption] = js.undefined
   
   /**
-    * If your job is being created in one of the US regions, you have the option of specifying what size Snow device you'd like for this job. In all other regions, Snowballs come with 80 TB in storage capacity.
+    * If your job is being created in one of the US regions, you have the option of specifying what size Snow device you'd like for this job. In all other regions, Snowballs come with 80 TB in storage capacity. For more information, see "https://docs.aws.amazon.com/snowball/latest/snowcone-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide or "https://docs.aws.amazon.com/snowball/latest/developer-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide.
     */
   var SnowballCapacityPreference: js.UndefOr[SnowballCapacity] = js.undefined
   
   /**
-    * The type of AWS Snow Family device to use for this job.   For cluster jobs, AWS Snow Family currently supports only the EDGE device type.  The type of AWS Snow device to use for this job. Currently, the only supported device type for cluster jobs is EDGE. For more information, see Snowball Edge Device Options in the Snowball Edge Developer Guide.
+    * The type of Snow Family Devices to use for this job.   For cluster jobs, Amazon Web Services Snow Family currently supports only the EDGE device type.  The type of Amazon Web Services Snow device to use for this job. Currently, the only supported device type for cluster jobs is EDGE. For more information, see Snowball Edge Device Options in the Snowball Edge Developer Guide. For more information, see "https://docs.aws.amazon.com/snowball/latest/snowcone-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide or "https://docs.aws.amazon.com/snowball/latest/developer-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide.
     */
   var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.undefined
   
   /**
-    * The tax documents required in your AWS Region.
+    * The tax documents required in your Amazon Web Services Region.
     */
   var TaxDocuments: js.UndefOr[typings.awsSdk.snowballMod.TaxDocuments] = js.undefined
 }
@@ -113,9 +128,21 @@ object CreateJobRequest {
     
     inline def setKmsKeyARNUndefined: Self = StObject.set(x, "KmsKeyARN", js.undefined)
     
+    inline def setLongTermPricingId(value: LongTermPricingId): Self = StObject.set(x, "LongTermPricingId", value.asInstanceOf[js.Any])
+    
+    inline def setLongTermPricingIdUndefined: Self = StObject.set(x, "LongTermPricingId", js.undefined)
+    
     inline def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
     inline def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
+    
+    inline def setOnDeviceServiceConfiguration(value: OnDeviceServiceConfiguration): Self = StObject.set(x, "OnDeviceServiceConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setOnDeviceServiceConfigurationUndefined: Self = StObject.set(x, "OnDeviceServiceConfiguration", js.undefined)
+    
+    inline def setRemoteManagement(value: RemoteManagement): Self = StObject.set(x, "RemoteManagement", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteManagementUndefined: Self = StObject.set(x, "RemoteManagement", js.undefined)
     
     inline def setResources(value: JobResource): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     

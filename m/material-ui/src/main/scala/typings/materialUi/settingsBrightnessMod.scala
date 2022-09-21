@@ -10,10 +10,10 @@ object settingsBrightnessMod {
   
   @JSImport("material-ui/svg-icons/action/settings-brightness", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsBrightness
+  open class default () extends ActionSettingsBrightness
   
   @JSImport("material-ui/svg-icons/action/settings-brightness", "ActionSettingsBrightness")
   @js.native
-  class ActionSettingsBrightness ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsBrightness ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

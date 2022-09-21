@@ -27,7 +27,7 @@ trait ASPxClientSpinEdit
   def GetNumber(): Double
   
   /**
-    * Occurs on the client side when the editor's value is altered in any way.
+    * Occurs on the client when a user changes the editor's value.
     */
   var NumberChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEdit]]
   
@@ -61,7 +61,7 @@ object ASPxClientSpinEdit {
     AdjustControl: () => Unit,
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],
     Focus: () => Unit,
-    GetButton: Double => js.Any,
+    GetButton: Double => Any,
     GetButtonVisible: Double => Boolean,
     GetCaption: () => String,
     GetCaretPosition: () => Double,
@@ -69,16 +69,16 @@ object ASPxClientSpinEdit {
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
-    GetMainElement: () => js.Any,
+    GetMainElement: () => Any,
     GetMaxValue: () => Double,
     GetMinValue: () => Double,
     GetNumber: () => Double,
-    GetParentControl: () => js.Any,
+    GetParentControl: () => Any,
     GetReadOnly: () => Boolean,
     GetText: () => String,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],

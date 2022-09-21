@@ -12,7 +12,6 @@ import typings.dialogflow.mod.google.longrunning.Operation
 import typings.dialogflow.mod.google.protobuf.Empty
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents an Agents */
 @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Agents")
 @js.native
-class Agents protected () extends Service {
+open class Agents protected () extends Service {
   /**
     * Constructs a new Agents service.
     * @param rpcImpl RPC implementation
@@ -160,54 +159,54 @@ object Agents {
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteAgentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteAgentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Agents#exportAgent}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type ExportAgentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type ExportAgentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Agents#getAgent}.
     * @param error Error, if any
     * @param [response] Agent
     */
-  type GetAgentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Agent], Unit]
+  type GetAgentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Agent], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Agents#importAgent}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type ImportAgentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type ImportAgentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Agents#restoreAgent}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type RestoreAgentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type RestoreAgentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Agents#searchAgents}.
     * @param error Error, if any
     * @param [response] SearchAgentsResponse
     */
-  type SearchAgentsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[SearchAgentsResponse], Unit]
+  type SearchAgentsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[SearchAgentsResponse], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Agents#setAgent}.
     * @param error Error, if any
     * @param [response] Agent
     */
-  type SetAgentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Agent], Unit]
+  type SetAgentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Agent], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Agents#trainAgent}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type TrainAgentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type TrainAgentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
 }

@@ -10,10 +10,10 @@ Fibonacci and exponential backoffs.
 | ------------------ | :-------------: |
 | Full name          | backoff |
 | Keywords           | backoff, retry, fibonacci, exponential |
-| # releases         | 0 |
-| # dependents       | 248 |
-| # downloads        | 20376897 |
-| # stars            | 23 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2955109.0 |
+| # stars            | 333.0 |
 
 ## Links
 - [Homepage](https://github.com/MathieuTurcotte/node-backoff#readme)

@@ -134,6 +134,12 @@ object reactFilepondStrings {
   inline def className: className = "className".asInstanceOf[className]
   
   @js.native
+  sealed trait credits
+    extends StObject
+       with FilteredMethods
+  inline def credits: credits = "credits".asInstanceOf[credits]
+  
+  @js.native
   sealed trait destroy
     extends StObject
        with FilteredMethods
@@ -162,6 +168,12 @@ object reactFilepondStrings {
     extends StObject
        with FilteredMethods
   inline def dropValidation: dropValidation = "dropValidation".asInstanceOf[dropValidation]
+  
+  @js.native
+  sealed trait fileSizeBase
+    extends StObject
+       with FilteredMethods
+  inline def fileSizeBase: fileSizeBase = "fileSizeBase".asInstanceOf[fileSizeBase]
   
   @js.native
   sealed trait files
@@ -594,6 +606,12 @@ object reactFilepondStrings {
     extends StObject
        with FilteredMethods
   inline def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
+  
+  @js.native
+  sealed trait storeAsFile
+    extends StObject
+       with FilteredMethods
+  inline def storeAsFile: storeAsFile = "storeAsFile".asInstanceOf[storeAsFile]
   
   @js.native
   sealed trait styleButtonProcessItemPosition

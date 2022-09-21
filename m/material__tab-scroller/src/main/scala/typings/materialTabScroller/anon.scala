@@ -1,6 +1,6 @@
 package typings.materialTabScroller
 
-import typings.std.ClientRect
+import typings.std.DOMRect
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,9 +63,9 @@ object anon {
     
     var computeHorizontalScrollbarHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var computeScrollAreaClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
+    var computeScrollAreaClientRect: js.UndefOr[js.Function0[DOMRect]] = js.undefined
     
-    var computeScrollContentClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
+    var computeScrollContentClientRect: js.UndefOr[js.Function0[DOMRect]] = js.undefined
     
     var eventTargetMatchesSelector: js.UndefOr[js.Function2[/* evtTarget */ EventTarget, /* selector */ String, Boolean]] = js.undefined
     
@@ -106,11 +106,11 @@ object anon {
       
       inline def setComputeHorizontalScrollbarHeightUndefined: Self = StObject.set(x, "computeHorizontalScrollbarHeight", js.undefined)
       
-      inline def setComputeScrollAreaClientRect(value: () => ClientRect): Self = StObject.set(x, "computeScrollAreaClientRect", js.Any.fromFunction0(value))
+      inline def setComputeScrollAreaClientRect(value: () => DOMRect): Self = StObject.set(x, "computeScrollAreaClientRect", js.Any.fromFunction0(value))
       
       inline def setComputeScrollAreaClientRectUndefined: Self = StObject.set(x, "computeScrollAreaClientRect", js.undefined)
       
-      inline def setComputeScrollContentClientRect(value: () => ClientRect): Self = StObject.set(x, "computeScrollContentClientRect", js.Any.fromFunction0(value))
+      inline def setComputeScrollContentClientRect(value: () => DOMRect): Self = StObject.set(x, "computeScrollContentClientRect", js.Any.fromFunction0(value))
       
       inline def setComputeScrollContentClientRectUndefined: Self = StObject.set(x, "computeScrollContentClientRect", js.undefined)
       

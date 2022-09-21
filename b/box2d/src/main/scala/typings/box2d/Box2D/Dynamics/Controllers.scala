@@ -74,7 +74,7 @@ object Controllers {
       GetNext: () => b2Controller,
       GetWorld: () => b2World,
       RemoveBody: b2Body => Unit,
-      Step: js.Any => Unit,
+      Step: Any => Unit,
       angularDrag: Double,
       density: Double,
       gravity: b2Vec2,
@@ -133,7 +133,7 @@ object Controllers {
       GetNext: () => b2Controller,
       GetWorld: () => b2World,
       RemoveBody: b2Body => Unit,
-      Step: js.Any => Unit,
+      Step: Any => Unit,
       m_bodyCount: Double,
       m_bodyList: b2ControllerEdge
     ): b2ConstantAccelController = {
@@ -167,7 +167,7 @@ object Controllers {
       GetNext: () => b2Controller,
       GetWorld: () => b2World,
       RemoveBody: b2Body => Unit,
-      Step: js.Any => Unit,
+      Step: Any => Unit,
       m_bodyCount: Double,
       m_bodyList: b2ControllerEdge
     ): b2ConstantForceController = {
@@ -228,7 +228,7 @@ object Controllers {
       * Step
       * @param step b2TimeStep -> Private internal class.  Not sure why this is exposed.
       **/
-    def Step(step: js.Any): Unit
+    def Step(step: Any): Unit
     
     /**
       * Body count.
@@ -250,7 +250,7 @@ object Controllers {
       GetNext: () => b2Controller,
       GetWorld: () => b2World,
       RemoveBody: b2Body => Unit,
-      Step: js.Any => Unit,
+      Step: Any => Unit,
       m_bodyCount: Double,
       m_bodyList: b2ControllerEdge
     ): b2Controller = {
@@ -278,7 +278,7 @@ object Controllers {
       
       inline def setRemoveBody(value: b2Body => Unit): Self = StObject.set(x, "RemoveBody", js.Any.fromFunction1(value))
       
-      inline def setStep(value: js.Any => Unit): Self = StObject.set(x, "Step", js.Any.fromFunction1(value))
+      inline def setStep(value: Any => Unit): Self = StObject.set(x, "Step", js.Any.fromFunction1(value))
     }
   }
   
@@ -370,7 +370,7 @@ object Controllers {
       GetNext: () => b2Controller,
       GetWorld: () => b2World,
       RemoveBody: b2Body => Unit,
-      Step: js.Any => Unit,
+      Step: Any => Unit,
       invSqr: Boolean,
       m_bodyCount: Double,
       m_bodyList: b2ControllerEdge
@@ -420,7 +420,7 @@ object Controllers {
       GetWorld: () => b2World,
       RemoveBody: b2Body => Unit,
       SetAxisAligned: (Double, Double) => Unit,
-      Step: js.Any => Unit,
+      Step: Any => Unit,
       T: b2Mat22,
       m_bodyCount: Double,
       m_bodyList: b2ControllerEdge,

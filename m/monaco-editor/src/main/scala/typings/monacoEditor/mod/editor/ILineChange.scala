@@ -28,6 +28,6 @@ object ILineChange {
     
     inline def setCharChangesUndefined: Self = StObject.set(x, "charChanges", js.undefined)
     
-    inline def setCharChangesVarargs(value: ICharChange*): Self = StObject.set(x, "charChanges", js.Array(value :_*))
+    inline def setCharChangesVarargs(value: ICharChange*): Self = StObject.set(x, "charChanges", js.Array(value*))
   }
 }

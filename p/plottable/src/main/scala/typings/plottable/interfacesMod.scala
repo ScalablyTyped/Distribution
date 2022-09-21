@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object interfacesMod {
   
-  type AppliedProjector = js.Function2[/* datum */ js.Any, /* index */ Double, js.Any]
+  type AppliedProjector = js.Function2[/* datum */ Any, /* index */ Double, Any]
   
   type AttributeToAppliedProjector = StringDictionary[AppliedProjector]
   
@@ -38,7 +38,7 @@ object interfacesMod {
     }
   }
   
-  type IAccessor[T] = js.Function3[/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, T]
+  type IAccessor[T] = js.Function3[/* datum */ Any, /* index */ Double, /* dataset */ Dataset, T]
   
   trait IEntity[C /* <: Component */] extends StObject {
     
@@ -46,21 +46,15 @@ object interfacesMod {
     
     var component: C
     
-    var datum: js.Any
+    var datum: Any
     
     var position: Point
     
-    var selection: SimpleSelection[js.Any]
+    var selection: SimpleSelection[Any]
   }
   object IEntity {
     
-    inline def apply[C /* <: Component */](
-      bounds: IEntityBounds,
-      component: C,
-      datum: js.Any,
-      position: Point,
-      selection: SimpleSelection[js.Any]
-    ): IEntity[C] = {
+    inline def apply[C /* <: Component */](bounds: IEntityBounds, component: C, datum: Any, position: Point, selection: SimpleSelection[Any]): IEntity[C] = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEntity[C]]
     }
@@ -71,11 +65,11 @@ object interfacesMod {
       
       inline def setComponent(value: C): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      inline def setDatum(value: js.Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+      inline def setDatum(value: Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       
       inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setSelection(value: SimpleSelection[js.Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: SimpleSelection[Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,7 +102,7 @@ object interfacesMod {
     }
   }
   
-  type IRangeProjector[T] = js.Function4[/* value */ T, /* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, T]
+  type IRangeProjector[T] = js.Function4[/* value */ T, /* datum */ Any, /* index */ Double, /* dataset */ Dataset, T]
   
   trait Point extends StObject {
     
@@ -131,7 +125,7 @@ object interfacesMod {
     }
   }
   
-  type Projector = js.Function3[/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, js.Any]
+  type Projector = js.Function3[/* datum */ Any, /* index */ Double, /* dataset */ Dataset, Any]
   
   trait Range extends StObject {
     
@@ -154,7 +148,7 @@ object interfacesMod {
     }
   }
   
-  type SimpleSelection[Datum] = Selection_[BaseType, Datum | js.Object, js.Any, js.Any]
+  type SimpleSelection[Datum] = Selection_[BaseType, Datum | js.Object, Any, Any]
   
   trait SpaceRequest extends StObject {
     

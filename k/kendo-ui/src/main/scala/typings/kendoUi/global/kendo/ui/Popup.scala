@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Popup")
 @js.native
-class Popup protected ()
+open class Popup protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Popup {
   def this(element: Element) = this()
@@ -23,8 +23,8 @@ object Popup {
   /* static member */
   @JSGlobal("kendo.ui.Popup.TabKeyTrap")
   @js.native
-  def TabKeyTrap: js.Any = js.native
-  inline def TabKeyTrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabKeyTrap")(x.asInstanceOf[js.Any])
+  def TabKeyTrap: Any = js.native
+  inline def TabKeyTrap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabKeyTrap")(x.asInstanceOf[js.Any])
   
   /* static member */
   inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Popup = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Popup]

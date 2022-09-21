@@ -38,7 +38,7 @@ object ListChannelModeratorsResponse {
     
     inline def setChannelModeratorsUndefined: Self = StObject.set(x, "ChannelModerators", js.undefined)
     
-    inline def setChannelModeratorsVarargs(value: ChannelModeratorSummary*): Self = StObject.set(x, "ChannelModerators", js.Array(value :_*))
+    inline def setChannelModeratorsVarargs(value: ChannelModeratorSummary*): Self = StObject.set(x, "ChannelModerators", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents an Excel conditional data bar type.
   *
-  * Represents an Excel Conditional Data Bar Type.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.DataBarConditionalFormat")
 @js.native
-class DataBarConditionalFormat ()
+open class DataBarConditionalFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.DataBarConditionalFormat {
   

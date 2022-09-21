@@ -33,6 +33,6 @@ object DescribeSavingsPlansResponse {
     
     inline def setSavingsPlansUndefined: Self = StObject.set(x, "savingsPlans", js.undefined)
     
-    inline def setSavingsPlansVarargs(value: SavingsPlan*): Self = StObject.set(x, "savingsPlans", js.Array(value :_*))
+    inline def setSavingsPlansVarargs(value: SavingsPlan*): Self = StObject.set(x, "savingsPlans", js.Array(value*))
   }
 }

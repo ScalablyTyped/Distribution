@@ -33,6 +33,6 @@ object ClusterParameterGroupsMessage {
     
     inline def setParameterGroupsUndefined: Self = StObject.set(x, "ParameterGroups", js.undefined)
     
-    inline def setParameterGroupsVarargs(value: ClusterParameterGroup*): Self = StObject.set(x, "ParameterGroups", js.Array(value :_*))
+    inline def setParameterGroupsVarargs(value: ClusterParameterGroup*): Self = StObject.set(x, "ParameterGroups", js.Array(value*))
   }
 }

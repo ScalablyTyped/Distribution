@@ -14,8 +14,8 @@ object checkboxNativeMod {
   
   @JSImport("antd-mobile-rn/lib/checkbox/Checkbox.native", JSImport.Default)
   @js.native
-  class default protected () extends Checkbox {
-    def this(props: CheckboxPropsType, context: js.Any) = this()
+  open class default protected () extends Checkbox {
+    def this(props: CheckboxPropsType, context: Any) = this()
   }
   /* static members */
   object default {
@@ -26,13 +26,13 @@ object checkboxNativeMod {
     
     @JSImport("antd-mobile-rn/lib/checkbox/Checkbox.native", "default.AgreeItem")
     @js.native
-    def AgreeItem: js.Any = js.native
-    inline def AgreeItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
+    def AgreeItem: Any = js.native
+    inline def AgreeItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/checkbox/Checkbox.native", "default.CheckboxItem")
     @js.native
-    def CheckboxItem: js.Any = js.native
-    inline def CheckboxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
+    def CheckboxItem: Any = js.native
+    inline def CheckboxItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/checkbox/Checkbox.native", "default.defaultProps")
     @js.native
@@ -41,8 +41,7 @@ object checkboxNativeMod {
   }
   
   @js.native
-  trait Checkbox
-    extends Component[ICheckboxNativeProps, js.Any, js.Any] {
+  trait Checkbox extends Component[ICheckboxNativeProps, Any, Any] {
     
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MCheckbox(nextProps: CheckboxPropsType): Unit = js.native

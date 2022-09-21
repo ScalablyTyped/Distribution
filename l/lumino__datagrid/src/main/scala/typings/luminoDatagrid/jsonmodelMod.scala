@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object jsonmodelMod {
   
-  @JSImport("@lumino/datagrid/lib/jsonmodel", "JSONModel")
+  @JSImport("@lumino/datagrid/types/jsonmodel", "JSONModel")
   @js.native
-  class JSONModel protected () extends DataModel {
+  open class JSONModel protected () extends DataModel {
     /**
       * Create a data model with static JSON data.
       *
@@ -19,13 +19,13 @@ object jsonmodelMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _bodyFields: js.Any = js.native
+    /* private */ var _bodyFields: Any = js.native
     
-    /* private */ var _data: js.Any = js.native
+    /* private */ var _data: Any = js.native
     
-    /* private */ var _headerFields: js.Any = js.native
+    /* private */ var _headerFields: Any = js.native
     
-    /* private */ var _missingValues: js.Any = js.native
+    /* private */ var _missingValues: Any = js.native
   }
   object JSONModel {
     
@@ -128,7 +128,7 @@ object jsonmodelMod {
         
         inline def setData(value: DataSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        inline def setDataVarargs(value: ReadonlyJSONObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: ReadonlyJSONObject*): Self = StObject.set(x, "data", js.Array(value*))
         
         inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       }
@@ -175,19 +175,19 @@ object jsonmodelMod {
         
         inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setMissingValues(value: js.Array[String]): Self = StObject.set(x, "missingValues", value.asInstanceOf[js.Any])
         
         inline def setMissingValuesUndefined: Self = StObject.set(x, "missingValues", js.undefined)
         
-        inline def setMissingValuesVarargs(value: String*): Self = StObject.set(x, "missingValues", js.Array(value :_*))
+        inline def setMissingValuesVarargs(value: String*): Self = StObject.set(x, "missingValues", js.Array(value*))
         
         inline def setPrimaryKey(value: String | js.Array[String]): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
         
         inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
         
-        inline def setPrimaryKeyVarargs(value: String*): Self = StObject.set(x, "primaryKey", js.Array(value :_*))
+        inline def setPrimaryKeyVarargs(value: String*): Self = StObject.set(x, "primaryKey", js.Array(value*))
       }
     }
   }

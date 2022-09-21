@@ -1,7 +1,7 @@
 
 # Scala.js typings for looks-same
 
-Typings are for version 7.2.4
+Typings are for version 8.0.0
 
 ## Library description:
 Pure node.js library for comparing PNG-images, taking into account human color perception.
@@ -10,10 +10,10 @@ Pure node.js library for comparing PNG-images, taking into account human color p
 | ------------------ | :-------------: |
 | Full name          | looks-same |
 | Keywords           | png, compare, ciede2000, diff |
-| # releases         | 8 |
-| # dependents       | 36 |
-| # downloads        | 1539298 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 243822.66666666666 |
+| # stars            | 478.0 |
 
 ## Links
 - [Homepage](https://github.com/gemini-testing/looks-same)

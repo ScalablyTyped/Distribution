@@ -23,8 +23,8 @@ trait Fields extends StObject {
   var fields: js.UndefOr[String] = js.undefined
   
   /**
-    * The filter expression. The filter should have one of the following formats: "sn=123454" or "display_name=MyDevice". sn corresponds to serial_number of the device. The filter is
-    * case insensitive.
+    * The filter expression. The filter should have the following format: "DIRECT_CHILDREN" or format: "direct_children". The filter is case insensitive. If empty, then no nodes are
+    * filtered.
     */
   var filter: js.UndefOr[String] = js.undefined
   
@@ -34,13 +34,13 @@ trait Fields extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of devices to return in the response. If empty or zero, all devices will be listed. Must be in the range [0, 1000]. */
+  /** The maximum number of nodes to return in the response. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** A pagination token returned from a previous call to ListDevices that indicates where this listing should continue from. */
+  /** A pagination token returned from a previous call to ListNodes that indicates where this listing should continue from. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the parent resource. */
+  /** Required. The parent resource name, for example, "nodes/1". */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

@@ -13,6 +13,8 @@ import typings.awsSdk.configBaseMod.RetryDelayOptions
 import typings.awsSdk.credentialProviderChainMod.CredentialProviderChain
 import typings.awsSdk.credentialsMod.Credentials
 import typings.awsSdk.credentialsMod.CredentialsOptions
+import typings.awsSdk.tokenMod.Token
+import typings.awsSdk.tokenProviderChainMod.TokenProviderChain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined aws-sdk.aws-sdk/lib/config-base.ConfigurationOptions & {[key: string] : any} */
 trait ConfigurationOptionskeyst
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   /**
     * AWS access key ID.
@@ -195,9 +197,29 @@ trait ConfigurationOptionskeyst
   var systemClockOffset: js.UndefOr[Double] = js.undefined
   
   /**
+    * The Token to authenticate requests with.
+    */
+  var token: js.UndefOr[Token | Null] = js.undefined
+  
+  /**
+    * The provider chain used to resolve token if no static token property is set.
+    */
+  var tokenProvider: js.UndefOr[TokenProviderChain] = js.undefined
+  
+  /**
     * Whether to use the Accelerate endpoint with the S3 service.
     */
   var useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Enables IPv6 dualstack endpoint.
+    */
+  var useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Enables FIPS compatible endpoints.
+    */
+  var useFipsEndpoint: js.UndefOr[Boolean] = js.undefined
 }
 object ConfigurationOptionskeyst {
   
@@ -330,8 +352,26 @@ object ConfigurationOptionskeyst {
     
     inline def setSystemClockOffsetUndefined: Self = StObject.set(x, "systemClockOffset", js.undefined)
     
+    inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenNull: Self = StObject.set(x, "token", null)
+    
+    inline def setTokenProvider(value: TokenProviderChain): Self = StObject.set(x, "tokenProvider", value.asInstanceOf[js.Any])
+    
+    inline def setTokenProviderUndefined: Self = StObject.set(x, "tokenProvider", js.undefined)
+    
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    
     inline def setUseAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "useAccelerateEndpoint", value.asInstanceOf[js.Any])
     
     inline def setUseAccelerateEndpointUndefined: Self = StObject.set(x, "useAccelerateEndpoint", js.undefined)
+    
+    inline def setUseDualstackEndpoint(value: Boolean): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
+    
+    inline def setUseDualstackEndpointUndefined: Self = StObject.set(x, "useDualstackEndpoint", js.undefined)
+    
+    inline def setUseFipsEndpoint(value: Boolean): Self = StObject.set(x, "useFipsEndpoint", value.asInstanceOf[js.Any])
+    
+    inline def setUseFipsEndpointUndefined: Self = StObject.set(x, "useFipsEndpoint", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "SoloHelper")
 @js.native
-class SoloHelper[TIntent /* <: Intent */, TValueSpec] protected ()
+open class SoloHelper[TIntent /* <: Intent */, TValueSpec] protected ()
   extends typings.actionsOnGoogle.conversationMod.SoloHelper[TIntent, TValueSpec] {
   def this(options: HelperOptions[TIntent, TValueSpec]) = this()
 }

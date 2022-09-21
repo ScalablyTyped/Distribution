@@ -11,7 +11,7 @@ trait Brackets extends StObject {
     * the editor.
     * @deprecated
     */
-  var brackets: js.UndefOr[js.Any] = js.undefined
+  var brackets: js.UndefOr[Any] = js.undefined
   
   /**
     * This property is deprecated and not fully supported anymore by
@@ -30,7 +30,7 @@ object Brackets {
   
   extension [Self <: Brackets](x: Self) {
     
-    inline def setBrackets(value: js.Any): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
+    inline def setBrackets(value: Any): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
     
     inline def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     

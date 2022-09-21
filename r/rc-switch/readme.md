@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-switch
 
-Typings are for version 3.2.2
+Typings are for version 4.0.0
 
 ## Library description:
 switch ui component for react
@@ -10,10 +10,10 @@ switch ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-switch |
 | Keywords           | react, react-component, react-switch, switch |
-| # releases         | 12 |
-| # dependents       | 251 |
-| # downloads        | 18357516 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 3221372.0 |
+| # stars            | 181.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/switch)

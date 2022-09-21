@@ -27,7 +27,7 @@ object History {
     
     inline def setEvents(value: HistoryEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: HistoryEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: HistoryEvent*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

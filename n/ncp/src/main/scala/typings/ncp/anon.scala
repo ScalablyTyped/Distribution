@@ -2,10 +2,9 @@ package typings.ncp
 
 import typings.ncp.mod.File
 import typings.ncp.ncpBooleans.`true`
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
 import typings.node.fsMod.PathLike
-import typings.std.RegExp
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,14 +20,14 @@ object anon {
     
     var errs: js.UndefOr[PathLike] & PathLike
     
-    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
+    var filter: js.UndefOr[js.RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
     
     var limit: js.UndefOr[Double] = js.undefined
     
     var stopOnErr: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
-        js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
+        js.Function3[/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File, Unit]
       ] = js.undefined
   }
   object OptionserrsPathLike {
@@ -50,7 +49,7 @@ object anon {
       
       inline def setErrs(value: js.UndefOr[PathLike] & PathLike): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
       
-      inline def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -64,7 +63,7 @@ object anon {
       
       inline def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
       
-      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
@@ -79,14 +78,14 @@ object anon {
     
     var errs: js.UndefOr[PathLike] & Unit
     
-    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
+    var filter: js.UndefOr[js.RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
     
     var limit: js.UndefOr[Double] = js.undefined
     
     var stopOnErr: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
-        js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
+        js.Function3[/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File, Unit]
       ] = js.undefined
   }
   object Optionserrsundefined {
@@ -108,7 +107,7 @@ object anon {
       
       inline def setErrs(value: js.UndefOr[PathLike] & Unit): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
       
-      inline def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -122,7 +121,7 @@ object anon {
       
       inline def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
       
-      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
@@ -137,14 +136,14 @@ object anon {
     
     var errs: js.UndefOr[PathLike] = js.undefined
     
-    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
+    var filter: js.UndefOr[js.RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
     
     var limit: js.UndefOr[Double] = js.undefined
     
     var stopOnErr: js.UndefOr[Boolean] & `true`
     
     var transform: js.UndefOr[
-        js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
+        js.Function3[/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File, Unit]
       ] = js.undefined
   }
   object OptionsstopOnErrtrue {
@@ -168,7 +167,7 @@ object anon {
       
       inline def setErrsUndefined: Self = StObject.set(x, "errs", js.undefined)
       
-      inline def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -180,7 +179,7 @@ object anon {
       
       inline def setStopOnErr(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
       
-      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }

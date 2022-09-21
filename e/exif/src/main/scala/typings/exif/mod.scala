@@ -1,13 +1,12 @@
 package typings.exif
 
 import typings.exif.anon.ApertureValue
+import typings.exif.anon.Artist
 import typings.exif.anon.AutoBracketing
 import typings.exif.anon.Compression
-import typings.exif.anon.Copyright
 import typings.exif.anon.GPSAltitude
 import typings.exif.anon.InteropIndex
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object mod {
   
   @JSImport("exif", "ExifImage")
   @js.native
-  class ExifImage () extends StObject {
+  open class ExifImage () extends StObject {
     def this(options: String, callback: ExifImageCallback) = this()
     def this(options: ExifOptions, callback: ExifImageCallback) = this()
     def this(options: Buffer, callback: ExifImageCallback) = this()
@@ -31,7 +30,7 @@ object mod {
     def loadImage(file: Buffer, callback: ExifImageCallback): Unit = js.native
   }
   
-  type ExifCallback = js.Function3[/* error */ Error | Null, /* data */ ExifData, /* dataPath */ String, Unit]
+  type ExifCallback = js.Function3[/* error */ js.Error | Null, /* data */ ExifData, /* dataPath */ String, Unit]
   
   trait ExifData extends StObject {
     
@@ -43,7 +42,7 @@ object mod {
       */
     var gps: GPSAltitude
     
-    var image: Copyright
+    var image: Artist
     
     var interoperability: InteropIndex
     
@@ -56,7 +55,7 @@ object mod {
     inline def apply(
       exif: ApertureValue,
       gps: GPSAltitude,
-      image: Copyright,
+      image: Artist,
       interoperability: InteropIndex,
       makernote: AutoBracketing,
       thumbnail: Compression
@@ -71,7 +70,7 @@ object mod {
       
       inline def setGps(value: GPSAltitude): Self = StObject.set(x, "gps", value.asInstanceOf[js.Any])
       
-      inline def setImage(value: Copyright): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Artist): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
       inline def setInteroperability(value: InteropIndex): Self = StObject.set(x, "interoperability", value.asInstanceOf[js.Any])
       
@@ -81,7 +80,7 @@ object mod {
     }
   }
   
-  type ExifImageCallback = js.Function2[/* error */ Error | Null, /* data */ ExifData, Unit]
+  type ExifImageCallback = js.Function2[/* error */ js.Error | Null, /* data */ ExifData, Unit]
   
   trait ExifOptions extends StObject {
     

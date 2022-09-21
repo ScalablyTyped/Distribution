@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfluenceSpaceConfiguration extends StObject {
   
   /**
-    * Specifies whether Amazon Kendra should index archived spaces.
+    *  TRUE to index archived spaces.
     */
   var CrawlArchivedSpaces: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies whether Amazon Kendra should index personal spaces. Users can add restrictions to items in personal spaces. If personal spaces are indexed, queries without user context information may return restricted items from a personal space in their results. For more information, see Filtering on user context.
+    *  TRUE to index personal spaces. You can add restrictions to items in personal spaces. If personal spaces are indexed, queries without user context information may return restricted items from a personal space in their results. For more information, see Filtering on user context.
     */
   var CrawlPersonalSpaces: js.UndefOr[Boolean] = js.undefined
   
@@ -27,7 +27,7 @@ trait ConfluenceSpaceConfiguration extends StObject {
   var IncludeSpaces: js.UndefOr[ConfluenceSpaceList] = js.undefined
   
   /**
-    * Defines how space metadata fields should be mapped to index fields. Before you can map a field, you must first create an index field with a matching type using the console or the UpdateIndex operation. If you specify the SpaceFieldMappings parameter, you must specify at least one field mapping.
+    * Maps attributes or field names of Confluence spaces to Amazon Kendra index field names. To create custom fields, use the UpdateIndex API before you map to Confluence fields. For more information, see Mapping data source fields. The Confluence data source field names must exist in your Confluence custom metadata. If you specify the SpaceFieldMappings parameter, you must specify at least one field mapping.
     */
   var SpaceFieldMappings: js.UndefOr[ConfluenceSpaceFieldMappingsList] = js.undefined
 }
@@ -52,18 +52,18 @@ object ConfluenceSpaceConfiguration {
     
     inline def setExcludeSpacesUndefined: Self = StObject.set(x, "ExcludeSpaces", js.undefined)
     
-    inline def setExcludeSpacesVarargs(value: ConfluenceSpaceIdentifier*): Self = StObject.set(x, "ExcludeSpaces", js.Array(value :_*))
+    inline def setExcludeSpacesVarargs(value: ConfluenceSpaceIdentifier*): Self = StObject.set(x, "ExcludeSpaces", js.Array(value*))
     
     inline def setIncludeSpaces(value: ConfluenceSpaceList): Self = StObject.set(x, "IncludeSpaces", value.asInstanceOf[js.Any])
     
     inline def setIncludeSpacesUndefined: Self = StObject.set(x, "IncludeSpaces", js.undefined)
     
-    inline def setIncludeSpacesVarargs(value: ConfluenceSpaceIdentifier*): Self = StObject.set(x, "IncludeSpaces", js.Array(value :_*))
+    inline def setIncludeSpacesVarargs(value: ConfluenceSpaceIdentifier*): Self = StObject.set(x, "IncludeSpaces", js.Array(value*))
     
     inline def setSpaceFieldMappings(value: ConfluenceSpaceFieldMappingsList): Self = StObject.set(x, "SpaceFieldMappings", value.asInstanceOf[js.Any])
     
     inline def setSpaceFieldMappingsUndefined: Self = StObject.set(x, "SpaceFieldMappings", js.undefined)
     
-    inline def setSpaceFieldMappingsVarargs(value: ConfluenceSpaceToIndexFieldMapping*): Self = StObject.set(x, "SpaceFieldMappings", js.Array(value :_*))
+    inline def setSpaceFieldMappingsVarargs(value: ConfluenceSpaceToIndexFieldMapping*): Self = StObject.set(x, "SpaceFieldMappings", js.Array(value*))
   }
 }

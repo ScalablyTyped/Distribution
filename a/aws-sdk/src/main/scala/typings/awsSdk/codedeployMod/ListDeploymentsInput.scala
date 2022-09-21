@@ -65,7 +65,7 @@ object ListDeploymentsInput {
     
     inline def setIncludeOnlyStatusesUndefined: Self = StObject.set(x, "includeOnlyStatuses", js.undefined)
     
-    inline def setIncludeOnlyStatusesVarargs(value: DeploymentStatus*): Self = StObject.set(x, "includeOnlyStatuses", js.Array(value :_*))
+    inline def setIncludeOnlyStatusesVarargs(value: DeploymentStatus*): Self = StObject.set(x, "includeOnlyStatuses", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

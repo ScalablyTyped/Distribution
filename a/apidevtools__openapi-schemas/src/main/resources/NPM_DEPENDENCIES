@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@apidevtools/openapi-schemas" : "2.0.4"
+      "@apidevtools/openapi-schemas" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@apidevtools/openapi-schemas" : "2.0.4"
+      "@apidevtools/openapi-schemas" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

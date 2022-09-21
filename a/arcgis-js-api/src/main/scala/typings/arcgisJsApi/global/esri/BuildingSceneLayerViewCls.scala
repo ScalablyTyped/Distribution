@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-BuildingSceneLayerView.html)
   */
-class BuildingSceneLayerViewCls ()
+open class BuildingSceneLayerViewCls ()
   extends StObject
      with typings.arcgisJsApi.esri.BuildingSceneLayerView {
   def this(properties: BuildingSceneLayerViewProperties) = this()

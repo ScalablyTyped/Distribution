@@ -10,10 +10,10 @@ The lodash method `_.invokeMap` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.invokemap |
 | Keywords           | lodash-modularized, invokemap |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 2126914 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 994418.3333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

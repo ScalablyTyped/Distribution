@@ -6,8 +6,6 @@ import typings.authmosphere.tokenMod.Token
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +15,7 @@ object authenticationMiddlewareOptionsMod {
   
   trait AuthenticationMiddlewareOptions extends StObject {
     
-    var getTokenInfo: js.UndefOr[GetTokenInfo[Record[String, js.Any]]] = js.undefined
+    var getTokenInfo: js.UndefOr[GetTokenInfo[Record[String | Double | js.Symbol, Any]]] = js.undefined
     
     var logger: js.UndefOr[Logger] = js.undefined
     
@@ -39,7 +37,7 @@ object authenticationMiddlewareOptionsMod {
     extension [Self <: AuthenticationMiddlewareOptions](x: Self) {
       
       inline def setGetTokenInfo(
-        value: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[Record[String, js.Any]]]
+        value: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[Record[String | Double | js.Symbol, Any]]]
       ): Self = StObject.set(x, "getTokenInfo", js.Any.fromFunction3(value))
       
       inline def setGetTokenInfoUndefined: Self = StObject.set(x, "getTokenInfo", js.undefined)
@@ -49,7 +47,13 @@ object authenticationMiddlewareOptionsMod {
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
       inline def setOnNotAuthenticatedHandler(
-        value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* logger */ Logger) => Unit
+        value: (/* request */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* resonse */ Response_[Any, Record[String, Any]], /* next */ NextFunction, /* logger */ Logger) => Unit
       ): Self = StObject.set(x, "onNotAuthenticatedHandler", js.Any.fromFunction4(value))
       
       inline def setOnNotAuthenticatedHandlerUndefined: Self = StObject.set(x, "onNotAuthenticatedHandler", js.undefined)
@@ -58,15 +62,21 @@ object authenticationMiddlewareOptionsMod {
       
       inline def setPublicEndpointsUndefined: Self = StObject.set(x, "publicEndpoints", js.undefined)
       
-      inline def setPublicEndpointsVarargs(value: String*): Self = StObject.set(x, "publicEndpoints", js.Array(value :_*))
+      inline def setPublicEndpointsVarargs(value: String*): Self = StObject.set(x, "publicEndpoints", js.Array(value*))
       
       inline def setTokenInfoEndpoint(value: String): Self = StObject.set(x, "tokenInfoEndpoint", value.asInstanceOf[js.Any])
     }
   }
   
   type onNotAuthenticatedHandler = js.Function4[
-    /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resonse */ Response_[js.Any], 
+    /* request */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resonse */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     /* logger */ Logger, 
     Unit

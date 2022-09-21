@@ -1,6 +1,5 @@
 package typings.chromeApps.chrome
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +44,7 @@ object hid {
       
       inline def setReportIds(value: js.Array[integer]): Self = StObject.set(x, "reportIds", value.asInstanceOf[js.Any])
       
-      inline def setReportIdsVarargs(value: integer*): Self = StObject.set(x, "reportIds", js.Array(value :_*))
+      inline def setReportIdsVarargs(value: integer*): Self = StObject.set(x, "reportIds", js.Array(value*))
       
       inline def setUsage(value: integer): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
@@ -129,7 +128,7 @@ object hid {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setProductId(value: deprecated): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
@@ -173,7 +172,7 @@ object hid {
       * Raw device report descriptor (not available on Windows).
       * @since Chrome 42
       * */
-    var reportDescriptor: ArrayBuffer
+    var reportDescriptor: js.typedarray.ArrayBuffer
     
     /**
       * The serial number read from the device, if available.
@@ -194,7 +193,7 @@ object hid {
       maxOutputReportSize: integer,
       productId: integer,
       productName: String,
-      reportDescriptor: ArrayBuffer,
+      reportDescriptor: js.typedarray.ArrayBuffer,
       serialNumber: String,
       vendorId: integer
     ): HidDeviceInfo = {
@@ -206,7 +205,7 @@ object hid {
       
       inline def setCollections(value: js.Array[Collection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
       
-      inline def setCollectionsVarargs(value: Collection*): Self = StObject.set(x, "collections", js.Array(value :_*))
+      inline def setCollectionsVarargs(value: Collection*): Self = StObject.set(x, "collections", js.Array(value*))
       
       inline def setDeviceId(value: integer): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
@@ -220,7 +219,7 @@ object hid {
       
       inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
       
-      inline def setReportDescriptor(value: ArrayBuffer): Self = StObject.set(x, "reportDescriptor", value.asInstanceOf[js.Any])
+      inline def setReportDescriptor(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "reportDescriptor", value.asInstanceOf[js.Any])
       
       inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
       
@@ -254,7 +253,7 @@ object hid {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       

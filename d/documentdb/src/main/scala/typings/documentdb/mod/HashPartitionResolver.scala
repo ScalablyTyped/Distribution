@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("documentdb", "HashPartitionResolver")
 @js.native
-class HashPartitionResolver protected ()
+open class HashPartitionResolver protected ()
   extends StObject
      with PartitionResolver {
   /**
@@ -22,14 +22,14 @@ class HashPartitionResolver protected ()
     * @param options               - Options forr the ConsistentHashRing (MurmurHash)
     */
   def this(partitionKeyExtractor: String, collectionLinks: js.Array[String]) = this()
-  def this(partitionKeyExtractor: js.Function1[/* obj */ js.Any, js.Any], collectionLinks: js.Array[String]) = this()
+  def this(partitionKeyExtractor: js.Function1[/* obj */ Any, Any], collectionLinks: js.Array[String]) = this()
   def this(
     partitionKeyExtractor: String,
     collectionLinks: js.Array[String],
     options: ConsistentHashRingOptions
   ) = this()
   def this(
-    partitionKeyExtractor: js.Function1[/* obj */ js.Any, js.Any],
+    partitionKeyExtractor: js.Function1[/* obj */ Any, Any],
     collectionLinks: js.Array[String],
     options: ConsistentHashRingOptions
   ) = this()
@@ -39,7 +39,7 @@ class HashPartitionResolver protected ()
     * @param document - The document from which to extract the partition key.
     */
   /* CompleteClass */
-  override def getPartitionKey(document: js.Any): String = js.native
+  override def getPartitionKey(document: Any): String = js.native
   
   /**
     * Given a partition key, returns the correct collection link for creating a document.
@@ -58,5 +58,5 @@ class HashPartitionResolver protected ()
     * @param partitionKey - The partition key used to determine the target collection for query
     */
   /* CompleteClass */
-  override def resolveForRead(partitionKey: js.Any): js.Array[String] = js.native
+  override def resolveForRead(partitionKey: Any): js.Array[String] = js.native
 }

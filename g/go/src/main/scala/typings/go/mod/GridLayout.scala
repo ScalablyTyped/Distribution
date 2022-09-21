@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This simple layout places all of the Parts in a grid-like arrangement, ordered, spaced apart,
   * and wrapping as needed.  It ignores any Links connecting the Nodes being laid out.
   */
-class GridLayout () extends Layout {
+open class GridLayout () extends Layout {
   
   /**Gets or sets whether the Part.location or the position should be used to arrange each part.*/
   var alignment: EnumValue = js.native

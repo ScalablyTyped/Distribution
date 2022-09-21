@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Instantiate a new behavior that when attached to a mesh will allow the mesh to be scaled
   */
-class MultiPointerScaleBehavior ()
+open class MultiPointerScaleBehavior ()
   extends StObject
      with typings.babylonjs.BABYLON.MultiPointerScaleBehavior {
   

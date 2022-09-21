@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AuthenticationExtensionsClientOutputs extends StObject {
   
+  /* standard dom */
   var appid: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var credProps: js.UndefOr[CredentialPropertiesOutput] = js.undefined
   
+  /* standard dom */
   var uvm: js.UndefOr[UvmEntries] = js.undefined
 }
 object AuthenticationExtensionsClientOutputs {
@@ -33,6 +36,6 @@ object AuthenticationExtensionsClientOutputs {
     
     inline def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
     
-    inline def setUvmVarargs(value: UvmEntry*): Self = StObject.set(x, "uvm", js.Array(value :_*))
+    inline def setUvmVarargs(value: UvmEntry*): Self = StObject.set(x, "uvm", js.Array(value*))
   }
 }

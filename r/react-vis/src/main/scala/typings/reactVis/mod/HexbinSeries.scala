@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "HexbinSeries")
 @js.native
-class HexbinSeries protected () extends AbstractSeries[HexbinSeriesProps] {
+open class HexbinSeries protected () extends AbstractSeries[HexbinSeriesProps] {
   def this(props: HexbinSeriesProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HexbinSeriesProps, context: js.Any) = this()
+  def this(props: HexbinSeriesProps, context: Any) = this()
 }

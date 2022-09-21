@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.anon
 
-import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.GoogleAnalyticsAdminV1alphaGoogleAdsLink
+import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.GoogleAnalyticsAdminV1alphaConversionEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait FieldsKey extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Example format: properties/1234 */
+  /** Required. The resource name of the parent property where this conversion event will be created. Format: properties/123 */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,7 +39,7 @@ trait FieldsKey extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleAnalyticsAdminV1alphaGoogleAdsLink
+  var resource: GoogleAnalyticsAdminV1alphaConversionEvent
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait FieldsKey extends StObject {
 }
 object FieldsKey {
   
-  inline def apply(parent: String, resource: GoogleAnalyticsAdminV1alphaGoogleAdsLink): FieldsKey = {
+  inline def apply(parent: String, resource: GoogleAnalyticsAdminV1alphaConversionEvent): FieldsKey = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKey]
   }
@@ -94,7 +94,7 @@ object FieldsKey {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleAnalyticsAdminV1alphaGoogleAdsLink): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleAnalyticsAdminV1alphaConversionEvent): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

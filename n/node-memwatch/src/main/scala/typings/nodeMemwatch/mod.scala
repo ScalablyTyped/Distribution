@@ -18,7 +18,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("node-memwatch", "HeapDiff")
   @js.native
-  class HeapDiffCls ()
+  open class HeapDiffCls ()
     extends StObject
        with HeapDiff {
     
@@ -83,7 +83,7 @@ object mod extends Shortcut {
       
       inline def setDetails(value: js.Array[HeapDiffDetail]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      inline def setDetailsVarargs(value: HeapDiffDetail*): Self = StObject.set(x, "details", js.Array(value :_*))
+      inline def setDetailsVarargs(value: HeapDiffDetail*): Self = StObject.set(x, "details", js.Array(value*))
       
       inline def setFreed_nodes(value: Double): Self = StObject.set(x, "freed_nodes", value.asInstanceOf[js.Any])
       

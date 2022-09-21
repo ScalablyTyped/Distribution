@@ -31,7 +31,7 @@ object CreateTopicRequest {
     
     inline def setConfigEntriesUndefined: Self = StObject.set(x, "configEntries", js.undefined)
     
-    inline def setConfigEntriesVarargs(value: Name*): Self = StObject.set(x, "configEntries", js.Array(value :_*))
+    inline def setConfigEntriesVarargs(value: Name*): Self = StObject.set(x, "configEntries", js.Array(value*))
     
     inline def setPartitions(value: Double): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     
@@ -39,7 +39,7 @@ object CreateTopicRequest {
     
     inline def setReplicaAssignmentUndefined: Self = StObject.set(x, "replicaAssignment", js.undefined)
     
-    inline def setReplicaAssignmentVarargs(value: Partition*): Self = StObject.set(x, "replicaAssignment", js.Array(value :_*))
+    inline def setReplicaAssignmentVarargs(value: Partition*): Self = StObject.set(x, "replicaAssignment", js.Array(value*))
     
     inline def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
     

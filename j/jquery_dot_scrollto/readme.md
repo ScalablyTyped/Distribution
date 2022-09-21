@@ -10,10 +10,10 @@ Lightweight, cross-browser and highly customizable animated scrolling with jQuer
 | ------------------ | :-------------: |
 | Full name          | jquery.scrollto |
 | Keywords           | browser, animated, animation, scrolling, scroll, links, anchors, jquery, jquery-plugin, ecosystem:jquery |
-| # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 2079876 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 111498.33333333333 |
+| # stars            | 3623.0 |
 
 ## Links
 - [Homepage](https://github.com/flesler/jquery.scrollTo/)

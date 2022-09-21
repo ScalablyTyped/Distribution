@@ -1,11 +1,9 @@
 package typings.xmlCore
 
 import typings.std.BufferSource
-import typings.std.Date
 import typings.std.Document
 import typings.std.Element
 import typings.std.Node
-import typings.std.Uint8Array
 import typings.xmlCore.errorMod.XE
 import typings.xmlCore.typesMod.AssocArray
 import typings.xmlCore.typesMod.IConverter
@@ -32,14 +30,14 @@ object mod {
   
   @JSImport("xml-core", "Collection")
   @js.native
-  class Collection[I] ()
+  open class Collection[I] ()
     extends typings.xmlCore.collectionMod.Collection[I] {
     def this(items: js.Array[I]) = this()
   }
   
   @JSImport("xml-core", "Convert")
   @js.native
-  class Convert ()
+  open class Convert ()
     extends typings.xmlCore.convertMod.Convert
   /* static members */
   object Convert {
@@ -50,11 +48,11 @@ object mod {
     
     inline def Base64Padding(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64Padding")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def FromBase64(base64Text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64")(base64Text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromBase64(base64Text: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64")(base64Text.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    inline def FromBase64Url(base64url: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64Url")(base64url.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromBase64Url(base64url: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64Url")(base64url.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    inline def FromBinary(text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBinary")(text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromBinary(text: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBinary")(text.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     /**
       * Converts Date to string
@@ -65,7 +63,7 @@ object mod {
       *
       * @memberOf Convert
       */
-    inline def FromDateTime(dateTime: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FromDateTime(dateTime: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Converts HEX string to buffer
@@ -76,18 +74,18 @@ object mod {
       *
       * @memberOf Convert
       */
-    inline def FromHex(hexString: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHex")(hexString.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromHex(hexString: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHex")(hexString.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    inline def FromString(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    inline def FromString(str: String, enc: XmlBufferEncoding): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def FromString(str: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def FromString(str: String, enc: XmlBufferEncoding): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
-    inline def FromUtf8String(text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromUtf8String")(text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromUtf8String(text: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromUtf8String")(text.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    inline def ToBase64(buf: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToBase64(buf: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def ToBase64Url(data: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64Url")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToBase64Url(data: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64Url")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def ToBinary(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBinary")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToBinary(buffer: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBinary")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Converts string to Date
@@ -98,19 +96,19 @@ object mod {
       *
       * @memberOf Convert
       */
-    inline def ToDateTime(dateTime: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def ToDateTime(dateTime: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[js.Date]
     
     /**
       * Converts buffer to HEX string
       * @param  {BufferSource} buffer Incoming buffer
       * @returns string
       */
-    inline def ToHex(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToHex")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToHex(buffer: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToHex")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def ToString(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def ToString(buffer: BufferSource, enc: XmlBufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def ToUtf8String(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToUtf8String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToUtf8String(buffer: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToUtf8String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("xml-core", "DEFAULT_NAMESPACE_URI")
@@ -123,7 +121,7 @@ object mod {
   
   @JSImport("xml-core", "NamespaceManager")
   @js.native
-  class NamespaceManager ()
+  open class NamespaceManager ()
     extends typings.xmlCore.namespaceManagerMod.NamespaceManager {
     def this(items: js.Array[XmlNamespace]) = this()
   }
@@ -191,7 +189,7 @@ object mod {
   
   @JSImport("xml-core", "XmlBase64Converter")
   @js.native
-  val XmlBase64Converter: IConverter[Uint8Array] = js.native
+  val XmlBase64Converter: IConverter[js.typedarray.Uint8Array] = js.native
   
   @JSImport("xml-core", "XmlBooleanConverter")
   @js.native
@@ -202,7 +200,7 @@ object mod {
   
   @JSImport("xml-core", "XmlCollection")
   @js.native
-  class XmlCollection[I /* <: typings.xmlCore.xmlObjectMod.XmlObject */] ()
+  open class XmlCollection[I /* <: typings.xmlCore.xmlObjectMod.XmlObject */] ()
     extends typings.xmlCore.xmlCollectionMod.XmlCollection[I] {
     def this(properties: js.Object) = this()
   }
@@ -215,8 +213,8 @@ object mod {
     
     @JSImport("xml-core", "XmlCollection.parser")
     @js.native
-    def parser: js.Any = js.native
-    inline def parser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parser")(x.asInstanceOf[js.Any])
+    def parser: Any = js.native
+    inline def parser_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parser")(x.asInstanceOf[js.Any])
   }
   
   inline def XmlContent[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlContent")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
@@ -226,9 +224,9 @@ object mod {
   
   @JSImport("xml-core", "XmlError")
   @js.native
-  class XmlError protected ()
+  open class XmlError protected ()
     extends typings.xmlCore.errorMod.XmlError {
-    def this(code: XE, args: js.Any*) = this()
+    def this(code: XE, args: Any*) = this()
   }
   
   @JSImport("xml-core", "XmlNodeType")
@@ -281,7 +279,7 @@ object mod {
   
   @JSImport("xml-core", "XmlObject")
   @js.native
-  class XmlObject ()
+  open class XmlObject ()
     extends typings.xmlCore.xmlObjectMod.XmlObject {
     def this(properties: js.Object) = this()
   }
@@ -337,13 +335,13 @@ object mod {
     
     @JSImport("xml-core", "XmlObject.attributes")
     @js.native
-    def attributes: AssocArray[XmlAttributeType[js.Any]] = js.native
-    inline def attributes_=(x: AssocArray[XmlAttributeType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attributes")(x.asInstanceOf[js.Any])
+    def attributes: AssocArray[XmlAttributeType[Any]] = js.native
+    inline def attributes_=(x: AssocArray[XmlAttributeType[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attributes")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-core", "XmlObject.elements")
     @js.native
-    def elements: AssocArray[XmlChildElementType[js.Any]] = js.native
-    inline def elements_=(x: AssocArray[XmlChildElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
+    def elements: AssocArray[XmlChildElementType[Any]] = js.native
+    inline def elements_=(x: AssocArray[XmlChildElementType[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-core", "XmlObject.localName")
     @js.native
@@ -361,9 +359,9 @@ object mod {
     inline def prefix_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
   }
   
-  inline def assign(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def assign(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
-  inline def isDocument(obj: js.Any): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocument")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
+  inline def isDocument(obj: Any): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocument")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
   
-  inline def isElement(obj: js.Any): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
+  inline def isElement(obj: Any): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
 }

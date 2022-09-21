@@ -16,7 +16,7 @@ object renderResultMod {
     extends StObject
        with DomElement {
     
-    def apply(out: js.Any): this.type = js.native
+    def apply(out: Any): this.type = js.native
     
     def afterInsert(doc: Document): this.type = js.native
     
@@ -25,10 +25,10 @@ object renderResultMod {
     def getComponent(): Component = js.native
     
     def getComponents(): js.Array[Component] = js.native
-    def getComponents(selector: js.Any): js.Array[Component] = js.native
+    def getComponents(selector: Any): js.Array[Component] = js.native
     
     def getNode(doc: Document): Node = js.native
     
-    def getOutput(): js.Any = js.native
+    def getOutput(): Any = js.native
   }
 }

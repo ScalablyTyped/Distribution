@@ -58,7 +58,7 @@ object functionsMod {
       * // Using multiple arrays; given: $letters = ["A", "B"] & $numerals = ["1", "2"]
       * either($letters, $numerals) -> Returns a random value from the whole list (i.e. "A", "B", "1", "2")
       */
-    inline def either[T](list: T*): T = js.Dynamic.global.applyDynamic("either")(list.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def either[T](list: T*): T = js.Dynamic.global.applyDynamic("either")(list.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
     
     /**
       * Removes the specified key, and its associated value, from the story metadata store.
@@ -78,7 +78,7 @@ object functionsMod {
       * <<if hasVisited("Bar", "Café")>>…has been to both the Bar and Café<</if>>
       * <<if not hasVisited("Bar", "Café")>>…has never been to either the Bar, Café, or both…<</if>>
       */
-    inline def hasVisited(passageNames: String*): Boolean = js.Dynamic.global.applyDynamic("hasVisited")(passageNames.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasVisited(passageNames: String*): Boolean = js.Dynamic.global.applyDynamic("hasVisited")(passageNames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Boolean]
     
     /**
       * Load and integrate external JavaScript scripts.
@@ -149,7 +149,7 @@ object functionsMod {
       *     console.log(err);
       * });
       */
-    inline def importScripts(urls: String*): js.Promise[Unit] = js.Dynamic.global.applyDynamic("importScripts")(urls.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def importScripts(urls: String*): js.Promise[Unit] = js.Dynamic.global.applyDynamic("importScripts")(urls.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Load and integrate external CSS stylesheets.
@@ -205,7 +205,7 @@ object functionsMod {
       *      console.log(err);
       * });
       */
-    inline def importStyles(urls: String*): js.Promise[Unit] = js.Dynamic.global.applyDynamic("importStyles")(urls.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def importStyles(urls: String*): js.Promise[Unit] = js.Dynamic.global.applyDynamic("importStyles")(urls.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Returns the number of turns that have passed since the last instance of the passage with the given title occurred within
@@ -220,7 +220,7 @@ object functionsMod {
       * <<if lastVisited("Bar", "Café") is -1>>…has never been to the Bar, Café, or both…<</if>>
       * <<if lastVisited("Bar", "Café") is 2>>…has been to both the Bar and Café, most recently two turns ago…<</if>>
       */
-    inline def lastVisited(passageNames: String*): Double = js.Dynamic.global.applyDynamic("lastVisited")(passageNames.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def lastVisited(passageNames: String*): Double = js.Dynamic.global.applyDynamic("lastVisited")(passageNames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Double]
     
     /**
       * Sets the specified key and value within the story metadata store, which causes them to persist over story and browser
@@ -244,7 +244,7 @@ object functionsMod {
       * // Sets 'ngplus', with the given value, in the metadata store.
       * <<run memorize('ngplus', true)>>
       */
-    inline def memorize(key: String, value: js.Any): Unit = (js.Dynamic.global.applyDynamic("memorize")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def memorize(key: String, value: Any): Unit = (js.Dynamic.global.applyDynamic("memorize")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns the title of the active (present) passage.
@@ -310,8 +310,8 @@ object functionsMod {
       * // Set setup.ngplus to the 'ngplus' metadata, with no default.
       * <<set setup.ngplus to recall('ngplus')>>
       */
-    inline def recall(key: String): js.Any = js.Dynamic.global.applyDynamic("recall")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def recall(key: String, defaultValue: js.Any): js.Any = (js.Dynamic.global.applyDynamic("recall")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def recall(key: String): Any = js.Dynamic.global.applyDynamic("recall")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def recall(key: String, defaultValue: Any): Any = (js.Dynamic.global.applyDynamic("recall")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Renders the selected passage into the target element, replacing any existing content, and returns the element. If no passages are found and default text is specified, it will be used instead.
@@ -349,7 +349,7 @@ object functionsMod {
       * <<if tags().includes("forest")>>…the current passage is part of the forest…<</if>>
       * <<if tags("Lonely Glade").includes("forest")>>…the Lonely Glade passage is part of the forest…<</if>>
       */
-    inline def tags(passages: String*): Array[String] = js.Dynamic.global.applyDynamic("tags")(passages.asInstanceOf[js.Any]).asInstanceOf[Array[String]]
+    inline def tags(passages: String*): Array[String] = js.Dynamic.global.applyDynamic("tags")(passages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Array[String]]
     
     /**
       * Returns a reference to the current temporary variables store (equivalent to: State.temporary). This is only really useful
@@ -414,7 +414,7 @@ object functionsMod {
       * <<if visited("Café") is 1>>…has been to the Café exactly once…<</if>>
       * <<if visited("Bar", "Café") is 4>>…has been to both the Bar and Café at least four times…<</if>>
       */
-    inline def visited(passages: String*): Double = js.Dynamic.global.applyDynamic("visited")(passages.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def visited(passages: String*): Double = js.Dynamic.global.applyDynamic("visited")(passages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Double]
     
     /**
       * Returns the number of passages within the story history which are tagged with all of the given tags.
@@ -425,6 +425,6 @@ object functionsMod {
       * <<if visitedTags("forest", "haunted") is 1>>…has been to the haunted part of the forest exactly once…<</if>>
       * <<if visitedTags("forest", "burned") is 3>>…has been to the burned part of the forest three times…<</if>>
       */
-    inline def visitedTags(tags: String*): Double = js.Dynamic.global.applyDynamic("visitedTags")(tags.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def visitedTags(tags: String*): Double = js.Dynamic.global.applyDynamic("visitedTags")(tags.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Double]
   }
 }

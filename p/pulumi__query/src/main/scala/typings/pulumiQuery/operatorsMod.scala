@@ -1,10 +1,10 @@
 package typings.pulumiQuery
 
 import typings.pulumiQuery.interfacesMod.AsyncIterable
-import typings.pulumiQuery.interfacesMod.AsyncIterableIterator
 import typings.pulumiQuery.interfacesMod.AsyncQuerySource
+import typings.pulumiQuery.interfacesMod.AsyncQueryable
 import typings.pulumiQuery.interfacesMod.Evaluator
-import typings.pulumiQuery.interfacesMod.GroupedAsyncIterableIterator
+import typings.pulumiQuery.interfacesMod.GroupedAsyncIterable
 import typings.pulumiQuery.interfacesMod.Operator
 import typings.pulumiQuery.interfacesMod.OrderKey
 import typings.std.Map
@@ -33,7 +33,7 @@ object operatorsMod {
   
   inline def average_TSource_Promise[TSource](): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[js.Promise[Double]]
   
-  inline def concat[TSource](iter: AsyncIterable[TSource]): Operator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(iter.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource]]
+  inline def concat[TSource, TSource2](iter: AsyncIterable[TSource2]): Operator[TSource, TSource | TSource2] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(iter.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource | TSource2]]
   
   inline def contains[TSource](value: TSource): Evaluator[TSource, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(value.asInstanceOf[js.Any]).asInstanceOf[Evaluator[TSource, Boolean]]
   
@@ -48,7 +48,7 @@ object operatorsMod {
   
   inline def elementAtOrDefault[TSource](defaultValue: TSource, index: Double): Evaluator[TSource, TSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("elementAtOrDefault")(defaultValue.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Evaluator[TSource, TSource]]
   
-  inline def except[TSource](second: AsyncIterableIterator[TSource]): Operator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("except")(second.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource]]
+  inline def except[TSource](second: AsyncIterable[TSource]): Operator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("except")(second.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource]]
   
   inline def filter[TSource](f: js.Function2[/* t */ TSource, /* i */ Double, Boolean | js.Promise[Boolean]]): Operator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource]]
   
@@ -58,41 +58,51 @@ object operatorsMod {
   inline def firstOrDefault[TSource](defaultValue: TSource): Evaluator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("firstOrDefault")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Evaluator[TSource, TSource]]
   inline def firstOrDefault[TSource](defaultValue: TSource, predicate: js.Function1[/* t */ TSource, Boolean | js.Promise[Boolean]]): Evaluator[TSource, TSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("firstOrDefault")(defaultValue.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Evaluator[TSource, TSource]]
   
-  inline def flatMap[TSource, TInner, TResult](selector: js.Function2[/* t */ TSource, /* index */ Double, AsyncQuerySource[TInner]]): Operator[TSource, TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(selector.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TResult]]
   inline def flatMap[TSource, TInner, TResult](
-    selector: js.Function2[/* t */ TSource, /* index */ Double, AsyncQuerySource[TInner]],
+    selector: js.Function2[
+      /* t */ TSource, 
+      /* index */ Double, 
+      AsyncQuerySource[TInner] | js.Promise[AsyncQuerySource[TInner]]
+    ]
+  ): Operator[TSource, TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(selector.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TResult]]
+  inline def flatMap[TSource, TInner, TResult](
+    selector: js.Function2[
+      /* t */ TSource, 
+      /* index */ Double, 
+      AsyncQuerySource[TInner] | js.Promise[AsyncQuerySource[TInner]]
+    ],
     resultSelector: js.Function2[/* t */ TSource, /* ti */ TInner, TResult | js.Promise[TResult]]
   ): Operator[TSource, TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(selector.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Operator[TSource, TResult]]
   
   inline def groupBy[TSource, TKey, TResult](keySelector: js.Function1[/* t */ TSource, TKey | js.Promise[TKey]]): js.Function1[
-    /* source */ AsyncIterableIterator[TSource], 
-    AsyncIterableIterator[GroupedAsyncIterableIterator[TKey, TResult]]
+    /* source */ AsyncIterable[TSource], 
+    AsyncIterable[GroupedAsyncIterable[TKey, TResult]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* source */ AsyncIterableIterator[TSource], 
-    AsyncIterableIterator[GroupedAsyncIterableIterator[TKey, TResult]]
+    /* source */ AsyncIterable[TSource], 
+    AsyncIterable[GroupedAsyncIterable[TKey, TResult]]
   ]]
   inline def groupBy[TSource, TKey, TResult](
     keySelector: js.Function1[/* t */ TSource, TKey | js.Promise[TKey]],
     elementSelector: js.Function1[/* t */ TSource, TResult | js.Promise[TResult]]
   ): js.Function1[
-    /* source */ AsyncIterableIterator[TSource], 
-    AsyncIterableIterator[GroupedAsyncIterableIterator[TKey, TResult]]
+    /* source */ AsyncIterable[TSource], 
+    AsyncIterable[GroupedAsyncIterable[TKey, TResult]]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* source */ AsyncIterableIterator[TSource], 
-    AsyncIterableIterator[GroupedAsyncIterableIterator[TKey, TResult]]
+    /* source */ AsyncIterable[TSource], 
+    AsyncIterable[GroupedAsyncIterable[TKey, TResult]]
   ]]
   
   inline def groupJoin[TOuter, TInner, TKey, TResult](
-    inner: AsyncIterableIterator[TInner],
+    inner: AsyncIterable[TInner],
     outerKeySelector: js.Function1[/* to */ TOuter, TKey | js.Promise[TKey]],
     innerKeySelector: js.Function1[/* ti */ TInner, TKey | js.Promise[TKey]],
-    resultSelector: js.Function2[/* to */ TOuter, /* ti */ AsyncQuerySource[TInner], TResult | js.Promise[TResult]]
+    resultSelector: js.Function2[/* to */ TOuter, /* ti */ AsyncQueryable[TInner], TResult | js.Promise[TResult]]
   ): Operator[TOuter, TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupJoin")(inner.asInstanceOf[js.Any], outerKeySelector.asInstanceOf[js.Any], innerKeySelector.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Operator[TOuter, TResult]]
   
-  inline def intersect[TSource](second: AsyncIterableIterator[TSource]): Operator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(second.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource]]
+  inline def intersect[TSource](second: AsyncIterable[TSource]): Operator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(second.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource]]
   
   inline def join[TOuter, TInner, TKey, TResult](
-    inner: AsyncIterableIterator[TInner],
+    inner: AsyncIterable[TInner],
     outerKeySelector: js.Function1[/* to */ TOuter, TKey | js.Promise[TKey]],
     innerKeySelector: js.Function1[/* ti */ TInner, TKey | js.Promise[TKey]],
     resultSelector: js.Function2[/* to */ TOuter, /* ti */ TInner, TResult | js.Promise[TResult]]
@@ -151,12 +161,12 @@ object operatorsMod {
     elementSelector: js.Function1[/* t */ TSource, TResult | js.Promise[TResult]]
   ): Evaluator[TSource, Map[TKey, TResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any])).asInstanceOf[Evaluator[TSource, Map[TKey, TResult]]]
   
-  inline def union[TSource](second: AsyncIterableIterator[TSource]): Operator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(second.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource]]
+  inline def union[TSource](second: AsyncIterable[TSource]): Operator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(second.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource]]
   
-  inline def zip[TSource1, TSource2, TResult](source1: AsyncIterableIterator[TSource1], source2: AsyncIterableIterator[TSource2]): AsyncIterableIterator[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[TResult]]
+  inline def zip[TSource1, TSource2, TResult](source1: AsyncIterable[TSource1], source2: AsyncIterable[TSource2]): AsyncIterable[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[TResult]]
   inline def zip[TSource1, TSource2, TResult](
-    source1: AsyncIterableIterator[TSource1],
-    source2: AsyncIterableIterator[TSource2],
+    source1: AsyncIterable[TSource1],
+    source2: AsyncIterable[TSource2],
     resultSelector: js.Function2[/* t1 */ TSource1, /* t2 */ TSource2, TResult | js.Promise[TResult]]
-  ): AsyncIterableIterator[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[TResult]]
+  ): AsyncIterable[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[TResult]]
 }

@@ -13,7 +13,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hammerjs", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with HammerManager {
     def this(element: HTMLElement) = this()
@@ -25,10 +25,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Object & HammerStatic = js.native
   
+  // DIRECTION_HORIZONTAL | DIRECTION_VERTICAL
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hammerjs", "Manager")
   @js.native
-  class Manager protected ()
+  open class Manager protected ()
     extends StObject
        with HammerManager {
     def this(element: EventTarget) = this()
@@ -38,7 +39,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hammerjs", "Pan")
   @js.native
-  class Pan ()
+  open class Pan ()
     extends StObject
        with AttrRecognizer {
     def this(options: RecognizerOptions) = this()
@@ -47,7 +48,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hammerjs", "Pinch")
   @js.native
-  class Pinch ()
+  open class Pinch ()
     extends StObject
        with AttrRecognizer {
     def this(options: RecognizerOptions) = this()
@@ -56,7 +57,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hammerjs", "Press")
   @js.native
-  class Press ()
+  open class Press ()
     extends StObject
        with AttrRecognizer {
     def this(options: RecognizerOptions) = this()
@@ -65,7 +66,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hammerjs", "Recognizer")
   @js.native
-  class Recognizer ()
+  open class Recognizer ()
     extends StObject
        with typings.hammerjs.Recognizer {
     def this(options: RecognizerOptions) = this()
@@ -74,7 +75,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hammerjs", "Rotate")
   @js.native
-  class Rotate ()
+  open class Rotate ()
     extends StObject
        with AttrRecognizer {
     def this(options: RecognizerOptions) = this()
@@ -83,7 +84,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hammerjs", "Swipe")
   @js.native
-  class Swipe ()
+  open class Swipe ()
     extends StObject
        with AttrRecognizer {
     def this(options: RecognizerOptions) = this()
@@ -92,7 +93,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hammerjs", "Tap")
   @js.native
-  class Tap ()
+  open class Tap ()
     extends StObject
        with AttrRecognizer {
     def this(options: RecognizerOptions) = this()

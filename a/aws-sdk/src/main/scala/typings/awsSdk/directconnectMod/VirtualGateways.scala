@@ -24,6 +24,6 @@ object VirtualGateways {
     
     inline def setVirtualGatewaysUndefined: Self = StObject.set(x, "virtualGateways", js.undefined)
     
-    inline def setVirtualGatewaysVarargs(value: VirtualGateway*): Self = StObject.set(x, "virtualGateways", js.Array(value :_*))
+    inline def setVirtualGatewaysVarargs(value: VirtualGateway*): Self = StObject.set(x, "virtualGateways", js.Array(value*))
   }
 }

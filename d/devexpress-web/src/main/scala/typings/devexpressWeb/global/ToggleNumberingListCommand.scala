@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleNumberingListCommand")
 @js.native
-class ToggleNumberingListCommand ()
+open class ToggleNumberingListCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleNumberingListCommand {
   

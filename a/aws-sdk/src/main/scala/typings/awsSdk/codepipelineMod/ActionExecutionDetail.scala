@@ -24,7 +24,7 @@ trait ActionExecutionDetail extends StObject {
   /**
     * The last update time of the action execution.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Output details for the action execution, such as the action execution result.
@@ -49,7 +49,7 @@ trait ActionExecutionDetail extends StObject {
   /**
     * The start time of the action execution.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The status of the action execution. Status categories are InProgress, Succeeded, and Failed.
@@ -77,7 +77,7 @@ object ActionExecutionDetail {
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
@@ -97,7 +97,7 @@ object ActionExecutionDetail {
     
     inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

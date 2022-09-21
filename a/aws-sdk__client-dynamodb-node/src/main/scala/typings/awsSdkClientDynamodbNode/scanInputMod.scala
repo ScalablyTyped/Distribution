@@ -8,5 +8,5 @@ object scanInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/ScanInput", "ScanInput")
   @js.native
-  val ScanInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ScanInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

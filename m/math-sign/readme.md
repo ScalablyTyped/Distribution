@@ -10,10 +10,10 @@ ES2015 Math.sign() ponyfill
 | ------------------ | :-------------: |
 | Full name          | math-sign |
 | Keywords           | es2015, ponyfill, polyfill, shim, number, math, sign, positive, negative, sgn, signum, real |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 29529 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 840.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/math-sign#readme)

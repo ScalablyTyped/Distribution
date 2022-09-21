@@ -1,7 +1,7 @@
 
 # Scala.js typings for uuid-apikey
 
-Typings are for version 1.4
+Typings are for version 1.5.3
 
 ## Library description:
 A Base32-Crockford encoded API Key generator, validator, and converter to turn UUIDs into human readable API Keys
@@ -10,21 +10,18 @@ A Base32-Crockford encoded API Key generator, validator, and converter to turn U
 | ------------------ | :-------------: |
 | Full name          | uuid-apikey |
 | Keywords           | uuid, apikey, human-readable |
-| # releases         | 7 |
-| # dependents       | 17 |
-| # downloads        | 226651 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 41680.666666666664 |
+| # stars            | 51.0 |
 
 ## Links
-- [Homepage](https://github.com/chronosis/uuid-apikey#readme)
-- [Bugs](https://github.com/chronosis/uuid-apikey/issues)
-- [Repository](https://github.com/chronosis/uuid-apikey)
 - [Npm](https://www.npmjs.com/package/uuid-apikey)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

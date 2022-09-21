@@ -9,8 +9,8 @@ object gatewayProviderMod {
   
   @JSImport("react-gateway/GatewayProvider", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[js.Object, js.Object, js.Any]
+  open class ^ ()
+    extends Component[js.Object, js.Object, Any]
   
-  type GatewayProvider = Component[js.Object, js.Object, js.Any]
+  type GatewayProvider = Component[js.Object, js.Object, Any]
 }

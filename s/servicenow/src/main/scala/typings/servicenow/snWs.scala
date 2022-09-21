@@ -44,12 +44,7 @@ object snWs {
     
     def setHttpTimeout(timeoutMs: Double): Unit = js.native
     
-    @JSName("setLogLevel")
-    def setLogLevel_all(level: all): Unit = js.native
-    @JSName("setLogLevel")
-    def setLogLevel_basic(level: basic): Unit = js.native
-    @JSName("setLogLevel")
-    def setLogLevel_elevated(level: elevated): Unit = js.native
+    def setLogLevel(level: basic | elevated | all): Unit = js.native
     
     def setMIDServer(midServer: String): Unit = js.native
     

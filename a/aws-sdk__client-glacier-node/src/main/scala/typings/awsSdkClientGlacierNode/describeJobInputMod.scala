@@ -8,5 +8,5 @@ object describeJobInputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/DescribeJobInput", "DescribeJobInput")
   @js.native
-  val DescribeJobInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DescribeJobInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -27,14 +27,14 @@ object ActionMap {
     
     inline def setActions(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setOnEntry(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "onEntry", value.asInstanceOf[js.Any])
     
-    inline def setOnEntryVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onEntry", js.Array(value :_*))
+    inline def setOnEntryVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onEntry", js.Array(value*))
     
     inline def setOnExit(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
-    inline def setOnExitVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onExit", js.Array(value :_*))
+    inline def setOnExitVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onExit", js.Array(value*))
   }
 }

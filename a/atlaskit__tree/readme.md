@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__tree
 
-Typings are for version 4.1
+Typings are for version 8.6.2
 
 ## Library description:
 A React Component for displaying expandable and sortable tree hierarchies
@@ -10,20 +10,19 @@ A React Component for displaying expandable and sortable tree hierarchies
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/tree |
 | Keywords           | atlaskit, react, ui |
-| # releases         | 29 |
-| # dependents       | 6 |
-| # downloads        | 355828 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 70677.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://bitbucket.org/atlassian/atlassian-frontend#readme)
-- [Repository](https://bitbucket.org/atlassian/atlassian-frontend)
+- [Bugs](https://bitbucket.org/atlassian/atlassian-frontend/issues)
 - [Npm](https://www.npmjs.com/package/%40atlaskit%2Ftree)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

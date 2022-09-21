@@ -12,7 +12,7 @@ trait AccountLimit extends StObject {
   var Name: js.UndefOr[LimitName] = js.undefined
   
   /**
-    * The value that is associated with the account limit name.
+    * The value that's associated with the account limit name.
     */
   var Value: js.UndefOr[LimitValue] = js.undefined
 }

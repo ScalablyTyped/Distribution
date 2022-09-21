@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new DetectIntentResponse.
   * @param [properties] Properties to set
   */
-class DetectIntentResponse ()
+open class DetectIntentResponse ()
   extends StObject
      with IDetectIntentResponse {
   def this(properties: IDetectIntentResponse) = this()
@@ -27,7 +26,7 @@ class DetectIntentResponse ()
   
   /** DetectIntentResponse outputAudio. */
   @JSName("outputAudio")
-  var outputAudio_DetectIntentResponse: Uint8Array | String = js.native
+  var outputAudio_DetectIntentResponse: js.typedarray.Uint8Array | String = js.native
   
   /** DetectIntentResponse responseId. */
   @JSName("responseId")
@@ -37,7 +36,7 @@ class DetectIntentResponse ()
     * Converts this DetectIntentResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object DetectIntentResponse {
   
@@ -54,6 +53,8 @@ object DetectIntentResponse {
   inline def create(): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DetectIntentResponse]
   inline def create(properties: IDetectIntentResponse): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DetectIntentResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DetectIntentResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): DetectIntentResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DetectIntentResponse]
   /**
     * Decodes a DetectIntentResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -65,9 +66,8 @@ object DetectIntentResponse {
   /* static member */
   inline def decode(reader: Reader): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DetectIntentResponse]
   inline def decode(reader: Reader, length: Double): DetectIntentResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DetectIntentResponse]
-  inline def decode(reader: Uint8Array): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DetectIntentResponse]
-  inline def decode(reader: Uint8Array, length: Double): DetectIntentResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DetectIntentResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DetectIntentResponse]
   /**
     * Decodes a DetectIntentResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -77,7 +77,6 @@ object DetectIntentResponse {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DetectIntentResponse]
-  inline def decodeDelimited(reader: Uint8Array): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DetectIntentResponse]
   
   /**
     * Encodes the specified DetectIntentResponse message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.DetectIntentResponse.verify|verify} messages.
@@ -105,7 +104,7 @@ object DetectIntentResponse {
     * @returns DetectIntentResponse
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DetectIntentResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): DetectIntentResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DetectIntentResponse]
   
   /**
     * Creates a plain object from a DetectIntentResponse message. Also converts values to other types if specified.
@@ -114,8 +113,8 @@ object DetectIntentResponse {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: DetectIntentResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: DetectIntentResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: DetectIntentResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: DetectIntentResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a DetectIntentResponse message.
@@ -123,5 +122,5 @@ object DetectIntentResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

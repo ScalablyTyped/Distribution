@@ -46,12 +46,12 @@ object XTableCharts {
     ElementType: `type`,
     acquire: () => Unit,
     addNewByName: (String, Rectangle, SeqEquiv[CellRangeAddress], Boolean, Boolean) => Unit,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByName: String => Unit
   ): XTableCharts = {

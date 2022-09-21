@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteMethodRequest extends StObject {
   
   /**
-    * [Required] The HTTP verb of the Method resource.
+    * The HTTP verb of the Method resource.
     */
   var httpMethod: String
   
   /**
-    * [Required] The Resource identifier for the Method resource.
+    * The Resource identifier for the Method resource.
     */
   var resourceId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

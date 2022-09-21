@@ -1,13 +1,12 @@
 package typings.babylonjs
 
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VRStageParameters extends StObject {
   
-  var sittingToStandingTransform: js.UndefOr[Float32Array] = js.undefined
+  var sittingToStandingTransform: js.UndefOr[js.typedarray.Float32Array] = js.undefined
   
   var sizeX: js.UndefOr[Double] = js.undefined
   
@@ -22,7 +21,7 @@ object VRStageParameters {
   
   extension [Self <: VRStageParameters](x: Self) {
     
-    inline def setSittingToStandingTransform(value: Float32Array): Self = StObject.set(x, "sittingToStandingTransform", value.asInstanceOf[js.Any])
+    inline def setSittingToStandingTransform(value: js.typedarray.Float32Array): Self = StObject.set(x, "sittingToStandingTransform", value.asInstanceOf[js.Any])
     
     inline def setSittingToStandingTransformUndefined: Self = StObject.set(x, "sittingToStandingTransform", js.undefined)
     

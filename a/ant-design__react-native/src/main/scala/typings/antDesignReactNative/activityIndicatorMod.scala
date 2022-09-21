@@ -7,6 +7,7 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.small
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
+import typings.reactNative.mod.ColorValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ object activityIndicatorMod {
   
   @JSImport("@ant-design/react-native/lib/activity-indicator", JSImport.Default)
   @js.native
-  class default () extends RNActivityIndicator
+  open class default () extends RNActivityIndicator
   /* static members */
   object default {
     
@@ -35,12 +36,9 @@ object activityIndicatorMod {
     
     var animating: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.undefined
+    var color: js.UndefOr[ColorValue] = js.undefined
     
-    var size: js.UndefOr[large | small] = js.undefined
-    
-    @JSName("styles")
-    var styles_ActivityIndicatorNativeProps: js.UndefOr[ActivityIndicatorStyle] = js.undefined
+    var size: js.UndefOr[Double | large | small] = js.undefined
     
     var text: js.UndefOr[String] = js.undefined
     
@@ -59,17 +57,13 @@ object activityIndicatorMod {
       
       inline def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
       
-      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      inline def setStyles(value: ActivityIndicatorStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
-      
-      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -82,8 +76,7 @@ object activityIndicatorMod {
   }
   
   @js.native
-  trait RNActivityIndicator
-    extends Component[ActivityIndicatorNativeProps, js.Any, js.Any] {
+  trait RNActivityIndicator extends Component[ActivityIndicatorNativeProps, Any, Any] {
     
     def _renderSpinner(): Element = js.native
     

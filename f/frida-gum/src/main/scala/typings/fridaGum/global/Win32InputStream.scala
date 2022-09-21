@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Win32InputStream")
 @js.native
-class Win32InputStream protected ()
+open class Win32InputStream protected ()
   extends StObject
      with typings.fridaGum.InputStream {
   /**

@@ -35,10 +35,6 @@ object reactNavigationStackStrings {
   inline def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   
   @js.native
-  sealed trait button extends StObject
-  inline def button: button = "button".asInstanceOf[button]
-  
-  @js.native
   sealed trait card
     extends StObject
        with StackCardMode
@@ -73,6 +69,10 @@ object reactNavigationStackStrings {
     extends StObject
        with StackHeaderMode
   inline def float: float = "float".asInstanceOf[float]
+  
+  @js.native
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait head extends StObject
@@ -127,6 +127,10 @@ object reactNavigationStackStrings {
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
+  
+  @js.native
   sealed trait phoneNumber extends StObject
   inline def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
   
@@ -141,14 +145,6 @@ object reactNavigationStackStrings {
   @js.native
   sealed trait push extends StObject
   inline def push: push = "push".asInstanceOf[push]
-  
-  @js.native
-  sealed trait radiobutton_checked extends StObject
-  inline def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  
-  @js.native
-  sealed trait radiobutton_unchecked extends StObject
-  inline def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
   sealed trait screen

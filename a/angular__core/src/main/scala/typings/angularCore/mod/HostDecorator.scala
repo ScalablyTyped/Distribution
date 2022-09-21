@@ -17,7 +17,7 @@ trait HostDecorator
     *
     * @usageNotes
     *
-    * The following shows use with the `@Optional` decorator, and allows for a null result.
+    * The following shows use with the `@Optional` decorator, and allows for a `null` result.
     *
     * <code-example path="core/di/ts/metadata_spec.ts" region="Host">
     * </code-example>
@@ -25,5 +25,5 @@ trait HostDecorator
     * For an extended example, see ["Dependency Injection
     * Guide"](guide/dependency-injection-in-action#optional).
     */
-  def apply(): js.Any = js.native
+  def apply(): Any = js.native
 }

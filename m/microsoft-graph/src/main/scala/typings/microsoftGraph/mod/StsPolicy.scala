@@ -37,13 +37,13 @@ object StsPolicy {
     
     inline def setAppliesToUndefined: Self = StObject.set(x, "appliesTo", js.undefined)
     
-    inline def setAppliesToVarargs(value: DirectoryObject*): Self = StObject.set(x, "appliesTo", js.Array(value :_*))
+    inline def setAppliesToVarargs(value: DirectoryObject*): Self = StObject.set(x, "appliesTo", js.Array(value*))
     
     inline def setDefinition(value: js.Array[String]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    inline def setDefinitionVarargs(value: String*): Self = StObject.set(x, "definition", js.Array(value :_*))
+    inline def setDefinitionVarargs(value: String*): Self = StObject.set(x, "definition", js.Array(value*))
     
     inline def setIsOrganizationDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isOrganizationDefault", value.asInstanceOf[js.Any])
     

@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("stackframe/stackframe", JSImport.Namespace)
+  @JSImport("stackframe", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with StackFrame {
     def this(obj: StackFrameOptions) = this()
     
     /* CompleteClass */
-    override def getArgs(): js.UndefOr[js.Array[js.Any]] = js.native
+    override def getArgs(): js.UndefOr[js.Array[Any]] = js.native
     
     /* CompleteClass */
     override def getColumnNumber(): js.UndefOr[Double] = js.native
@@ -47,7 +47,7 @@ object mod {
     override def getSource(): js.UndefOr[String] = js.native
     
     /* CompleteClass */
-    override def setArgs(args: js.Array[js.Any]): Unit = js.native
+    override def setArgs(args: js.Array[Any]): Unit = js.native
     
     /* CompleteClass */
     override def setColumnNumber(columnNumber: Double): Unit = js.native
@@ -82,7 +82,7 @@ object mod {
   
   trait StackFrame extends StObject {
     
-    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
     
     var columnNumber: js.UndefOr[Double] = js.undefined
     
@@ -92,7 +92,7 @@ object mod {
     
     var functionName: js.UndefOr[String] = js.undefined
     
-    def getArgs(): js.UndefOr[js.Array[js.Any]]
+    def getArgs(): js.UndefOr[js.Array[Any]]
     
     def getColumnNumber(): js.UndefOr[Double]
     
@@ -124,7 +124,7 @@ object mod {
     
     var lineNumber: js.UndefOr[Double] = js.undefined
     
-    def setArgs(args: js.Array[js.Any]): Unit
+    def setArgs(args: js.Array[Any]): Unit
     
     def setColumnNumber(columnNumber: Double): Unit
     
@@ -151,7 +151,7 @@ object mod {
   object StackFrame {
     
     inline def apply(
-      getArgs: () => js.UndefOr[js.Array[js.Any]],
+      getArgs: () => js.UndefOr[js.Array[Any]],
       getColumnNumber: () => js.UndefOr[Double],
       getEvalOrigin: () => js.UndefOr[StackFrame],
       getFileName: () => js.UndefOr[String],
@@ -162,7 +162,7 @@ object mod {
       getIsToplevel: () => js.UndefOr[Boolean],
       getLineNumber: () => js.UndefOr[Double],
       getSource: () => js.UndefOr[String],
-      setArgs: js.Array[js.Any] => Unit,
+      setArgs: js.Array[Any] => Unit,
       setColumnNumber: Double => Unit,
       setEvalOrigin: StackFrame => Unit,
       setFileName: String => Unit,
@@ -180,11 +180,11 @@ object mod {
     
     extension [Self <: StackFrame](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
@@ -202,7 +202,7 @@ object mod {
       
       inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
-      inline def setGetArgs(value: () => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+      inline def setGetArgs(value: () => js.UndefOr[js.Array[Any]]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
       
       inline def setGetColumnNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
       
@@ -244,7 +244,7 @@ object mod {
       
       inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      inline def setSetArgs(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
+      inline def setSetArgs(value: js.Array[Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
       
       inline def setSetColumnNumber(value: Double => Unit): Self = StObject.set(x, "setColumnNumber", js.Any.fromFunction1(value))
       
@@ -274,7 +274,7 @@ object mod {
   
   trait StackFrameOptions extends StObject {
     
-    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
     
     var columnNumber: js.UndefOr[Double] = js.undefined
     
@@ -305,11 +305,11 @@ object mod {
     
     extension [Self <: StackFrameOptions](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       

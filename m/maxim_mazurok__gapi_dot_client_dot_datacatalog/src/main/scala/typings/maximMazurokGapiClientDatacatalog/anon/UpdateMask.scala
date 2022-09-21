@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatacatalog.anon
 
-import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1EntryGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,10 +25,7 @@ trait UpdateMask extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * The resource name of the entry group in URL format. Example: * projects/{project_id}/locations/{location}/entryGroups/{entry_group_id} Note that this EntryGroup and its child
-    * resources may not actually be stored in the location in this name.
-    */
+  /** Output only. Resource name of this taxonomy in URL format. Note: Policy tag manager generates unique taxonomy IDs. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -41,10 +37,10 @@ trait UpdateMask extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: GoogleCloudDatacatalogV1beta1EntryGroup
-  
-  /** The fields to update on the entry group. If absent or empty, all modifiable fields are updated. */
+  /**
+    * Specifies fields to update. If not set, defaults to all fields you can update. For more information, see [FieldMask]
+    * (https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask).
+    */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -55,8 +51,8 @@ trait UpdateMask extends StObject {
 }
 object UpdateMask {
   
-  inline def apply(name: String, resource: GoogleCloudDatacatalogV1beta1EntryGroup): UpdateMask = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(name: String): UpdateMask = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMask]
   }
   
@@ -99,8 +95,6 @@ object UpdateMask {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: GoogleCloudDatacatalogV1beta1EntryGroup): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

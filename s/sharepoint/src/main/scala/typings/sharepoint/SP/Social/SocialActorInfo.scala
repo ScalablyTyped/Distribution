@@ -51,9 +51,9 @@ trait SocialActorInfo
 object SocialActorInfo {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_accountName: () => String,
     get_actorType: () => SocialActorType,
     get_contentUri: () => String,

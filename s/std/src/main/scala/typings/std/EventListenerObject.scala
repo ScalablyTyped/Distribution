@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EventListenerObject extends StObject {
   
-  def handleEvent(evt: Event): Unit
+  /* standard dom */
+  def handleEvent(`object`: Event): Unit
 }
 object EventListenerObject {
   

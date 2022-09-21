@@ -11,16 +11,22 @@ object anon {
     
     var annotated: String
     
+    /* standard es2022.error */
+    var cause: js.UndefOr[Any] = js.undefined
+    
     var column: Double
     
     def inspect(): String
     
     var line: Double
     
+    /* standard es5 */
     var message: String
     
+    /* standard es5 */
     var name: String
     
+    /* standard es5 */
     var stack: js.UndefOr[String] = js.undefined
   }
   object SyntaxErrorlinenumbercolu {
@@ -40,6 +46,10 @@ object anon {
     extension [Self <: SyntaxErrorlinenumbercolu](x: Self) {
       
       inline def setAnnotated(value: String): Self = StObject.set(x, "annotated", value.asInstanceOf[js.Any])
+      
+      inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      
+      inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

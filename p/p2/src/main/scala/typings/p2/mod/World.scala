@@ -2,11 +2,15 @@ package typings.p2.mod
 
 import typings.p2.anon.BodyA
 import typings.p2.anon.BodyB
+import typings.p2.anon.BodyType
 import typings.p2.anon.ContactEquations
 import typings.p2.anon.Pairs
 import typings.p2.anon.Relaxation
 import typings.p2.anon.ShapeA
-import typings.p2.anon.Type
+import typings.p2.anon.`2`
+import typings.p2.p2Booleans.`false`
+import typings.p2.p2Numbers.`1`
+import typings.p2.p2Numbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("p2", "World")
 @js.native
 //static integrateBody(body: Body, dy: number): void;
-class World () extends EventEmitter {
+open class World () extends EventEmitter {
   def this(options: WorldOptions) = this()
   
   var accumulator: Double = js.native
@@ -53,7 +57,6 @@ class World () extends EventEmitter {
   
   var defaultMaterial: Material = js.native
   
-  //Body | boolean
   def disableBodyCollision(bodyA: Body, bodyB: Body): Unit = js.native
   
   var doProfiling: Boolean = js.native
@@ -66,7 +69,8 @@ class World () extends EventEmitter {
   
   var frictionGravity: Double = js.native
   
-  def getBodyByID(id: Double): Body = js.native
+  /** @returns The body, or false if it was not found. */
+  def getBodyByID(id: Double): Body | `false` = js.native
   
   def getContactMaterial(materialA: Material, materialB: Material): ContactMaterial = js.native
   
@@ -88,7 +92,7 @@ class World () extends EventEmitter {
   
   var postBroadphaseEvent: Pairs = js.native
   
-  var postStepEvent: Type = js.native
+  var postStepEvent: `2` = js.native
   
   var preSolveEvent: ContactEquations = js.native
   
@@ -96,7 +100,7 @@ class World () extends EventEmitter {
   
   def removeBody(body: Body): Unit = js.native
   
-  var removeBodyEvent: typings.p2.anon.Body = js.native
+  var removeBodyEvent: BodyType = js.native
   
   // ContactMaterial | boolean
   def removeConstraint(constraint: Constraint): Unit = js.native
@@ -111,7 +115,7 @@ class World () extends EventEmitter {
   
   def setGlobalStiffness(stiffness: Double): Unit = js.native
   
-  var sleepMode: Double = js.native
+  var sleepMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof World.NO_SLEEPING */ Any = js.native
   
   var solveConstraints: Boolean = js.native
   
@@ -141,16 +145,16 @@ object World {
   
   @JSImport("p2", "World.BODY_SLEEPING")
   @js.native
-  def BODY_SLEEPING: Double = js.native
-  inline def BODY_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BODY_SLEEPING")(x.asInstanceOf[js.Any])
+  def BODY_SLEEPING: typings.p2.p2Numbers.`2` = js.native
+  inline def BODY_SLEEPING_=(x: typings.p2.p2Numbers.`2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BODY_SLEEPING")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "World.ISLAND_SLEEPING")
   @js.native
-  def ISLAND_SLEEPING: Double = js.native
-  inline def ISLAND_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISLAND_SLEEPING")(x.asInstanceOf[js.Any])
+  def ISLAND_SLEEPING: `4` = js.native
+  inline def ISLAND_SLEEPING_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISLAND_SLEEPING")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "World.NO_SLEEPING")
   @js.native
-  def NO_SLEEPING: Double = js.native
-  inline def NO_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SLEEPING")(x.asInstanceOf[js.Any])
+  def NO_SLEEPING: `1` = js.native
+  inline def NO_SLEEPING_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SLEEPING")(x.asInstanceOf[js.Any])
 }

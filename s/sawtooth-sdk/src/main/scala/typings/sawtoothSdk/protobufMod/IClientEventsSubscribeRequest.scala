@@ -27,7 +27,7 @@ object IClientEventsSubscribeRequest {
     
     inline def setLastKnownBlockIdsUndefined: Self = StObject.set(x, "lastKnownBlockIds", js.undefined)
     
-    inline def setLastKnownBlockIdsVarargs(value: String*): Self = StObject.set(x, "lastKnownBlockIds", js.Array(value :_*))
+    inline def setLastKnownBlockIdsVarargs(value: String*): Self = StObject.set(x, "lastKnownBlockIds", js.Array(value*))
     
     inline def setSubscriptions(value: js.Array[IEventSubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object IClientEventsSubscribeRequest {
     
     inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
     
-    inline def setSubscriptionsVarargs(value: IEventSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: IEventSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
   }
 }

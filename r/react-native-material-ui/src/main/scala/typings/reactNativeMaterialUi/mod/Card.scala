@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "Card")
 @js.native
-class Card protected ()
-  extends Component[CardProps, js.Any, js.Any] {
+open class Card protected () extends Component[CardProps, Any, Any] {
   def this(props: CardProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CardProps, context: js.Any) = this()
+  def this(props: CardProps, context: Any) = this()
 }

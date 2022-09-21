@@ -16,13 +16,13 @@ object mod {
   
   @JSImport("passport-saml-metadata", "MetadataReader")
   @js.native
-  class MetadataReader protected ()
+  open class MetadataReader protected ()
     extends typings.passportSamlMetadata.srcMod.MetadataReader {
     def this(metadata: String) = this()
     def this(metadata: String, options: PartialMetadataConstructo) = this()
   }
   
-  inline def claimsToCamelCase(claims: js.Any, claimSchema: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("claimsToCamelCase")(claims.asInstanceOf[js.Any], claimSchema.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def claimsToCamelCase(claims: Any, claimSchema: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("claimsToCamelCase")(claims.asInstanceOf[js.Any], claimSchema.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def fetch(config: FetchConfig): js.Promise[typings.passportSamlMetadata.readerMod.MetadataReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.passportSamlMetadata.readerMod.MetadataReader]]
   

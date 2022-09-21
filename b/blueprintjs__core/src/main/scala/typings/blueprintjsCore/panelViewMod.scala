@@ -10,16 +10,16 @@ object panelViewMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/panel-stack/panelView", "PanelView")
   @js.native
-  class PanelView protected ()
+  open class PanelView protected ()
     extends AbstractPureComponent2[IPanelViewProps, js.Object, js.Object] {
     def this(props: IPanelViewProps) = this()
-    def this(props: IPanelViewProps, context: js.Any) = this()
+    def this(props: IPanelViewProps, context: Any) = this()
     
-    /* private */ var handleClose: js.Any = js.native
+    /* private */ var handleClose: Any = js.native
     
-    /* private */ var maybeRenderBack: js.Any = js.native
+    /* private */ var maybeRenderBack: Any = js.native
     
-    /* private */ var maybeRenderHeader: js.Any = js.native
+    /* private */ var maybeRenderHeader: Any = js.native
   }
   
   trait IPanelViewProps extends StObject {
@@ -28,13 +28,13 @@ object panelViewMod {
       * Callback invoked when the user presses the back button or a panel invokes
       * the `closePanel()` injected prop method.
       */
-    def onClose(removedPanel: IPanel[js.Any]): Unit
+    def onClose(removedPanel: IPanel[Any]): Unit
     
     /**
       * Callback invoked when a panel invokes the `openPanel(panel)` injected
       * prop method.
       */
-    def onOpen(addedPanel: IPanel[js.Any]): Unit
+    def onOpen(addedPanel: IPanel[Any]): Unit
     
     /** The panel to be displayed. */
     var panel: IPanel[js.Object]
@@ -48,8 +48,8 @@ object panelViewMod {
   object IPanelViewProps {
     
     inline def apply(
-      onClose: IPanel[js.Any] => Unit,
-      onOpen: IPanel[js.Any] => Unit,
+      onClose: IPanel[Any] => Unit,
+      onOpen: IPanel[Any] => Unit,
       panel: IPanel[js.Object],
       showHeader: Boolean
     ): IPanelViewProps = {
@@ -59,9 +59,9 @@ object panelViewMod {
     
     extension [Self <: IPanelViewProps](x: Self) {
       
-      inline def setOnClose(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: IPanel[Any] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      inline def setOnOpen(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      inline def setOnOpen(value: IPanel[Any] => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
       
       inline def setPanel(value: IPanel[js.Object]): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       

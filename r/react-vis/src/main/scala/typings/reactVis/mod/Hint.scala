@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "Hint")
 @js.native
-class Hint[T] protected ()
-  extends PureComponent[HintProps & T, js.Object, js.Any] {
+open class Hint[T] protected ()
+  extends PureComponent[HintProps & T, js.Object, Any] {
   def this(props: HintProps & T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HintProps & T, context: js.Any) = this()
+  def this(props: HintProps & T, context: Any) = this()
 }

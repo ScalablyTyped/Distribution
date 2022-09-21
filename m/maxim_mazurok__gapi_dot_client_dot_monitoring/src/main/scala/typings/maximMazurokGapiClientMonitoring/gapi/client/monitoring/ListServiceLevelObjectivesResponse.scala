@@ -32,6 +32,6 @@ object ListServiceLevelObjectivesResponse {
     
     inline def setServiceLevelObjectivesUndefined: Self = StObject.set(x, "serviceLevelObjectives", js.undefined)
     
-    inline def setServiceLevelObjectivesVarargs(value: ServiceLevelObjective*): Self = StObject.set(x, "serviceLevelObjectives", js.Array(value :_*))
+    inline def setServiceLevelObjectivesVarargs(value: ServiceLevelObjective*): Self = StObject.set(x, "serviceLevelObjectives", js.Array(value*))
   }
 }

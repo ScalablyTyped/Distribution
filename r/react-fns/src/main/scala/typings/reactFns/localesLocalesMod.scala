@@ -10,14 +10,13 @@ object localesLocalesMod {
   
   @JSImport("react-fns/dist/Locales/Locales", "Locales")
   @js.native
-  class Locales protected ()
-    extends Component[SharedRenderProps[LocalesProps], LocalesProps, js.Any] {
+  open class Locales protected () extends Component[SharedRenderProps[LocalesProps], LocalesProps, Any] {
     def this(props: SharedRenderProps[LocalesProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[LocalesProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[LocalesProps], context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MLocales(): Unit = js.native

@@ -61,9 +61,9 @@ trait SVGSVGElement extends StObject {
   
   def getElementById(elementId: String): IHTMLElement
   
-  def getEnclosureList(rect: SVGRect, referenceElement: ISVGElement): js.Any
+  def getEnclosureList(rect: SVGRect, referenceElement: ISVGElement): Any
   
-  def getIntersectionList(rect: SVGRect, referenceElement: ISVGElement): js.Any
+  def getIntersectionList(rect: SVGRect, referenceElement: ISVGElement): Any
   
   def getScreenCTM(): SVGMatrix
   
@@ -157,8 +157,8 @@ object SVGSVGElement {
     getCTM: () => SVGMatrix,
     getCurrentTime: () => Double,
     getElementById: String => IHTMLElement,
-    getEnclosureList: (SVGRect, ISVGElement) => js.Any,
-    getIntersectionList: (SVGRect, ISVGElement) => js.Any,
+    getEnclosureList: (SVGRect, ISVGElement) => Any,
+    getIntersectionList: (SVGRect, ISVGElement) => Any,
     getScreenCTM: () => SVGMatrix,
     getTransformToElement: ISVGElement => SVGMatrix,
     hasExtension: String => Boolean,
@@ -250,9 +250,9 @@ object SVGSVGElement {
     
     inline def setGetElementById(value: String => IHTMLElement): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
     
-    inline def setGetEnclosureList(value: (SVGRect, ISVGElement) => js.Any): Self = StObject.set(x, "getEnclosureList", js.Any.fromFunction2(value))
+    inline def setGetEnclosureList(value: (SVGRect, ISVGElement) => Any): Self = StObject.set(x, "getEnclosureList", js.Any.fromFunction2(value))
     
-    inline def setGetIntersectionList(value: (SVGRect, ISVGElement) => js.Any): Self = StObject.set(x, "getIntersectionList", js.Any.fromFunction2(value))
+    inline def setGetIntersectionList(value: (SVGRect, ISVGElement) => Any): Self = StObject.set(x, "getIntersectionList", js.Any.fromFunction2(value))
     
     inline def setGetScreenCTM(value: () => SVGMatrix): Self = StObject.set(x, "getScreenCTM", js.Any.fromFunction0(value))
     

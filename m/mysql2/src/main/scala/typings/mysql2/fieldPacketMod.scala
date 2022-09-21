@@ -9,7 +9,7 @@ object fieldPacketMod {
   
   trait FieldPacket extends StObject {
     
-    var default: js.Any
+    var default: Any
     
     var catalog: String
     
@@ -47,7 +47,7 @@ object fieldPacketMod {
       constructor: `0`,
       db: String,
       decimals: Double,
-      default: js.Any,
+      default: Any,
       flags: Double,
       length: Double,
       name: String,
@@ -75,7 +75,7 @@ object fieldPacketMod {
       
       inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       

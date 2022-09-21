@@ -12,7 +12,7 @@ object packerIndexMod {
   
   @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePacker")
   @js.native
-  class TexturePacker protected ()
+  open class TexturePacker protected ()
     extends typings.babylonjs.packerMod.TexturePacker {
     /**
       * Initializes a texture package series from an array of meshes or a single mesh.
@@ -60,7 +60,7 @@ object packerIndexMod {
   
   @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePackerFrame")
   @js.native
-  class TexturePackerFrame protected ()
+  open class TexturePackerFrame protected ()
     extends typings.babylonjs.frameMod.TexturePackerFrame {
     /**
       * Initializes a texture package frame.

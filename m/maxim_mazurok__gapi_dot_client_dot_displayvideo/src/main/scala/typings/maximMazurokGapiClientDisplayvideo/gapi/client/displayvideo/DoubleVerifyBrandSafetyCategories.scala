@@ -32,12 +32,12 @@ object DoubleVerifyBrandSafetyCategories {
     
     inline def setAvoidedHighSeverityCategoriesUndefined: Self = StObject.set(x, "avoidedHighSeverityCategories", js.undefined)
     
-    inline def setAvoidedHighSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedHighSeverityCategories", js.Array(value :_*))
+    inline def setAvoidedHighSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedHighSeverityCategories", js.Array(value*))
     
     inline def setAvoidedMediumSeverityCategories(value: js.Array[String]): Self = StObject.set(x, "avoidedMediumSeverityCategories", value.asInstanceOf[js.Any])
     
     inline def setAvoidedMediumSeverityCategoriesUndefined: Self = StObject.set(x, "avoidedMediumSeverityCategories", js.undefined)
     
-    inline def setAvoidedMediumSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedMediumSeverityCategories", js.Array(value :_*))
+    inline def setAvoidedMediumSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedMediumSeverityCategories", js.Array(value*))
   }
 }

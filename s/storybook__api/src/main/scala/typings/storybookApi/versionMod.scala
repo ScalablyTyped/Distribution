@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object versionMod {
   
-  @JSImport("@storybook/api/dist/version", "version")
+  @JSImport("@storybook/api/dist/ts3.9/version", "version")
   @js.native
-  val version: /* "6.1.1" */ String = js.native
+  val version: /* "6.5.12" */ String = js.native
 }

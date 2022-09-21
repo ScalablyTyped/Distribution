@@ -1,14 +1,23 @@
 package typings.angularRouter.mod
 
 import typings.angularCore.mod.ModuleWithProviders
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularCore.mod.ɵɵInjectorDeclaration
+import typings.angularCore.mod.ɵɵNgModuleDeclaration
+import typings.angularRouter.anon.Optional
+import typings.angularRouter.anon.TypeofRouterLink
+import typings.angularRouter.anon.TypeofRouterLinkActive
+import typings.angularRouter.anon.TypeofRouterLinkWithHref
+import typings.angularRouter.anon.TypeofRouterOutlet
+import typings.angularRouter.anon.TypeofɵEmptyOutletCompone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterModule")
 @js.native
-class RouterModule protected () extends StObject {
-  def this(guard: js.Any, router: Router) = this()
+open class RouterModule protected () extends StObject {
+  def this(guard: Any) = this()
 }
 /* static members */
 object RouterModule {
@@ -55,4 +64,55 @@ object RouterModule {
     */
   inline def forRoot(routes: Routes): ModuleWithProviders[RouterModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[RouterModule]]
   inline def forRoot(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(routes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ModuleWithProviders[RouterModule]]
+  
+  @JSImport("@angular/router", "RouterModule.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[RouterModule, js.Array[Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[RouterModule, js.Array[Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/router", "RouterModule.\u0275inj")
+  @js.native
+  def ɵinj: ɵɵInjectorDeclaration[RouterModule] = js.native
+  inline def ɵinj_=(x: ɵɵInjectorDeclaration[RouterModule]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275inj")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/router", "RouterModule.\u0275mod")
+  @js.native
+  def ɵmod: ɵɵNgModuleDeclaration[
+    RouterModule, 
+    scala.Nothing, 
+    js.Tuple5[
+      TypeofRouterOutlet, 
+      TypeofRouterLink, 
+      TypeofRouterLinkWithHref, 
+      TypeofRouterLinkActive, 
+      TypeofɵEmptyOutletCompone
+    ], 
+    js.Tuple5[
+      TypeofRouterOutlet, 
+      TypeofRouterLink, 
+      TypeofRouterLinkWithHref, 
+      TypeofRouterLinkActive, 
+      TypeofɵEmptyOutletCompone
+    ]
+  ] = js.native
+  inline def ɵmod_=(
+    x: ɵɵNgModuleDeclaration[
+      RouterModule, 
+      scala.Nothing, 
+      js.Tuple5[
+        TypeofRouterOutlet, 
+        TypeofRouterLink, 
+        TypeofRouterLinkWithHref, 
+        TypeofRouterLinkActive, 
+        TypeofɵEmptyOutletCompone
+      ], 
+      js.Tuple5[
+        TypeofRouterOutlet, 
+        TypeofRouterLink, 
+        TypeofRouterLinkWithHref, 
+        TypeofRouterLinkActive, 
+        TypeofɵEmptyOutletCompone
+      ]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275mod")(x.asInstanceOf[js.Any])
 }

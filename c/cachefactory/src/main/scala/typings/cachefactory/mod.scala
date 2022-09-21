@@ -10,18 +10,18 @@ object mod {
   
   @JSImport("cachefactory", "BinaryHeap")
   @js.native
-  class BinaryHeap () extends StObject {
+  open class BinaryHeap () extends StObject {
     def this(weightFunc: js.Function) = this()
     def this(weightFunc: js.Function, compareFunc: js.Function) = this()
     def this(weightFunc: Unit, compareFunc: js.Function) = this()
     
-    def peek(): js.Any = js.native
+    def peek(): Any = js.native
     
-    def pop(): js.Any = js.native
+    def pop(): Any = js.native
     
-    def push(node: js.Any): Unit = js.native
+    def push(node: Any): Unit = js.native
     
-    def remove(node: js.Any): Unit = js.native
+    def remove(node: Any): Unit = js.native
     
     def removeAll(): Unit = js.native
     
@@ -30,7 +30,7 @@ object mod {
   
   @JSImport("cachefactory", "Cache")
   @js.native
-  class Cache () extends StObject {
+  open class Cache () extends StObject {
     
     def destroy(): Unit = js.native
     
@@ -38,10 +38,10 @@ object mod {
     
     def enable(): Unit = js.native
     
-    def get(key: String): js.Any = js.native
-    def get(key: String, options: GetPutOptions): js.Any = js.native
-    def get(key: Double): js.Any = js.native
-    def get(key: Double, options: GetPutOptions): js.Any = js.native
+    def get(key: String): Any = js.native
+    def get(key: String, options: GetPutOptions): Any = js.native
+    def get(key: Double): Any = js.native
+    def get(key: Double, options: GetPutOptions): Any = js.native
     
     var id: String = js.native
     
@@ -52,17 +52,17 @@ object mod {
     
     def keys(): js.Array[String | Double] = js.native
     
-    def put(key: String, value: js.Any): js.Any = js.native
-    def put(key: String, value: js.Any, options: GetPutOptions): js.Any = js.native
-    def put(key: Double, value: js.Any): js.Any = js.native
-    def put(key: Double, value: js.Any, options: GetPutOptions): js.Any = js.native
+    def put(key: String, value: Any): Any = js.native
+    def put(key: String, value: Any, options: GetPutOptions): Any = js.native
+    def put(key: Double, value: Any): Any = js.native
+    def put(key: Double, value: Any, options: GetPutOptions): Any = js.native
     
-    def remove(key: String): js.Any = js.native
-    def remove(key: Double): js.Any = js.native
+    def remove(key: String): Any = js.native
+    def remove(key: Double): Any = js.native
     
     def removeAll(): Unit = js.native
     
-    def removeExpired(): StringDictionary[js.Any] = js.native
+    def removeExpired(): StringDictionary[Any] = js.native
     
     def setCacheFlushInterval(cacheFlushInterval: Double): Unit = js.native
     
@@ -73,7 +73,7 @@ object mod {
     
     def setMaxAge(maxAge: Double): Unit = js.native
     
-    def setOnExpire(onExpire: js.Function): js.Any = js.native
+    def setOnExpire(onExpire: js.Function): Any = js.native
     
     def setOptions(cacheOptions: CacheOptions): Unit = js.native
     def setOptions(cacheOptions: CacheOptions, strict: Boolean): Unit = js.native
@@ -86,12 +86,12 @@ object mod {
     def touch(key: String): Unit = js.native
     def touch(key: Double): Unit = js.native
     
-    def values(): js.Array[js.Any] = js.native
+    def values(): js.Array[Any] = js.native
   }
   
   @JSImport("cachefactory", "CacheFactory")
   @js.native
-  class CacheFactory () extends StObject {
+  open class CacheFactory () extends StObject {
     
     def clearAll(): Unit = js.native
     
@@ -116,7 +116,7 @@ object mod {
     
     def keys(): js.Array[String] = js.native
     
-    def removeExpiredFromAll(): StringDictionary[StringDictionary[js.Any]] = js.native
+    def removeExpiredFromAll(): StringDictionary[StringDictionary[Any]] = js.native
     
     def touchAll(): Unit = js.native
   }
@@ -230,7 +230,7 @@ object mod {
       
       inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      inline def setOnExpire(value: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction3(value))
+      inline def setOnExpire(value: (/* key */ String, /* value */ Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction3(value))
       
       inline def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
       
@@ -300,7 +300,7 @@ object mod {
       
       inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      inline def setOnExpire(value: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction3(value))
+      inline def setOnExpire(value: (/* key */ String, /* value */ Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction3(value))
       
       inline def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
       
@@ -351,19 +351,19 @@ object mod {
     }
   }
   
-  type OnExpireCallback = js.Function3[/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function], Unit]
+  type OnExpireCallback = js.Function3[/* key */ String, /* value */ Any, /* done */ js.UndefOr[js.Function], Unit]
   
   @js.native
   trait StorageImpl extends StObject {
     
-    def getItem(key: String): js.Any = js.native
-    def getItem(key: Double): js.Any = js.native
+    def getItem(key: String): Any = js.native
+    def getItem(key: Double): Any = js.native
     
     def removeItem(key: String): Unit = js.native
     def removeItem(key: Double): Unit = js.native
     
-    def setItem(key: String, value: js.Any): Unit = js.native
-    def setItem(key: Double, value: js.Any): Unit = js.native
+    def setItem(key: String, value: Any): Unit = js.native
+    def setItem(key: Double, value: Any): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -385,27 +385,27 @@ object mod {
     
     var Promise: js.UndefOr[PromiseConstructor] = js.undefined
     
-    def equals(a: js.Any, b: js.Any): Boolean
+    def equals(a: Any, b: Any): Boolean
     
-    def fromJson(value: String): js.Any
+    def fromJson(value: String): Any
     
-    def isFunction(value: js.Any): Boolean
+    def isFunction(value: Any): Boolean
     
-    def isNumber(value: js.Any): Boolean
+    def isNumber(value: Any): Boolean
     
-    def isObject(value: js.Any): Boolean
+    def isObject(value: Any): Boolean
     
-    def isString(value: js.Any): Boolean
+    def isString(value: Any): Boolean
   }
   object Utils_ {
     
     inline def apply(
-      equals_ : (js.Any, js.Any) => Boolean,
-      fromJson: String => js.Any,
-      isFunction: js.Any => Boolean,
-      isNumber: js.Any => Boolean,
-      isObject: js.Any => Boolean,
-      isString: js.Any => Boolean
+      equals_ : (Any, Any) => Boolean,
+      fromJson: String => Any,
+      isFunction: Any => Boolean,
+      isNumber: Any => Boolean,
+      isObject: Any => Boolean,
+      isString: Any => Boolean
     ): Utils_ = {
       val __obj = js.Dynamic.literal(fromJson = js.Any.fromFunction1(fromJson), isFunction = js.Any.fromFunction1(isFunction), isNumber = js.Any.fromFunction1(isNumber), isObject = js.Any.fromFunction1(isObject), isString = js.Any.fromFunction1(isString))
       __obj.updateDynamic("equals")(js.Any.fromFunction2(equals_))
@@ -414,17 +414,17 @@ object mod {
     
     extension [Self <: Utils_](x: Self) {
       
-      inline def setEquals_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (Any, Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      inline def setFromJson(value: String => js.Any): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
+      inline def setFromJson(value: String => Any): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
       
-      inline def setIsFunction(value: js.Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
+      inline def setIsFunction(value: Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
       
-      inline def setIsNumber(value: js.Any => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
+      inline def setIsNumber(value: Any => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
       
-      inline def setIsObject(value: js.Any => Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
+      inline def setIsObject(value: Any => Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
       
-      inline def setIsString(value: js.Any => Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
+      inline def setIsString(value: Any => Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
       
       inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       

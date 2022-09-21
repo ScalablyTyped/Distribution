@@ -10,14 +10,20 @@ trait OfficeThemeChangedEventArgs extends StObject {
   /**
     * Gets the updated Office theme.
     *
-    * [Api set: Mailbox Preview]
+    * @remarks
+    * [Api set: Mailbox preview]
+    *
+    * @beta
     */
   var officeTheme: OfficeTheme
   
   /**
-    * Gets the type of the event. See `Office.EventType` for details.
+    * Gets the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
     *
-    * [Api set: Mailbox Preview]
+    * @remarks
+    * [Api set: Mailbox preview]
+    *
+    * @beta
     */
   var `type`: officeThemeChanged
 }

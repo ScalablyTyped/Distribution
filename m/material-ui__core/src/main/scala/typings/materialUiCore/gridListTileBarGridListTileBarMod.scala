@@ -1,25 +1,25 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.anon.PartialClassNameMapGridLiActionIcon
+import typings.materialUiCore.anon.PartialClassNameMapGridLi
 import typings.materialUiCore.materialUiCoreStrings.bottom
 import typings.materialUiCore.materialUiCoreStrings.left
 import typings.materialUiCore.materialUiCoreStrings.right
 import typings.materialUiCore.materialUiCoreStrings.top
 import typings.react.mod.CSSProperties
-import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object gridListTileBarGridListTileBarMod extends Shortcut {
+object gridListTileBarGridListTileBarMod {
   
-  @JSImport("@material-ui/core/GridListTileBar/GridListTileBar", JSImport.Default)
+  @JSImport("@material-ui/core/GridListTileBar/GridListTileBar", JSImport.Namespace)
   @js.native
-  val default: ComponentType[GridListTileBarProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(props: GridListTileBarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiCore.materialUiCoreStrings.root
@@ -63,22 +63,43 @@ object gridListTileBarGridListTileBarMod extends Shortcut {
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/core.@material-ui/core/GridListTileBar/GridListTileBar.GridListTileBarClassKey, never> */
   trait GridListTileBarProps extends StObject {
     
+    /**
+      * An IconButton element to be used as secondary action target
+      * (primary action target is the tile itself).
+      */
     var actionIcon: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Position of secondary action IconButton.
+      */
     var actionPosition: js.UndefOr[left | right] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
-    var classes: js.UndefOr[PartialClassNameMapGridLiActionIcon] = js.undefined
+    /**
+      * Override or extend the styles applied to the component.
+      */
+    var classes: js.UndefOr[PartialClassNameMapGridLi] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
+    
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * String or element serving as subtitle (support text).
+      */
     var subtitle: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Title to be displayed on tile.
+      */
     var title: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Position of the title bar.
+      */
     var titlePosition: js.UndefOr[top | bottom] = js.undefined
   }
   object GridListTileBarProps {
@@ -102,17 +123,25 @@ object gridListTileBarGridListTileBarMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClasses(value: PartialClassNameMapGridLiActionIcon): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: PartialClassNameMapGridLi): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -131,9 +160,4 @@ object gridListTileBarGridListTileBarMod extends Shortcut {
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
-  
-  type _To = ComponentType[GridListTileBarProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `gridListTileBarGridListTileBarMod.foo` */
-  override def _to: ComponentType[GridListTileBarProps] = default
 }

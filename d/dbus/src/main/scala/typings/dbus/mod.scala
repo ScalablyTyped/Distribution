@@ -17,7 +17,7 @@ object mod {
     */
   @JSImport("dbus", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with DBus
   @JSImport("dbus", JSImport.Namespace)
@@ -27,20 +27,20 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Error * / any */ @JSImport("dbus", "Error")
   @js.native
-  class Error protected () extends StObject {
+  open class Error protected () extends StObject {
     def this(name: String, message: String) = this()
     
     val dbusName: String = js.native
   }
   
-  inline def Signature(`type`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Signature")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def Signature(`type`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Signature")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getBus(`type`: busType): DBusConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("getBus")(`type`.asInstanceOf[js.Any]).asInstanceOf[DBusConnection]
   
   inline def registerService(busName: busType): DBusService = ^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(busName.asInstanceOf[js.Any]).asInstanceOf[DBusService]
   inline def registerService(busName: busType, serviceName: String): DBusService = (^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(busName.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[DBusService]
   
-  type AnyInterfaceMethod = StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]
+  type AnyInterfaceMethod = StringDictionary[js.Function1[/* repeated */ Any, Unit]]
   
   /**
     * @deprecated
@@ -67,7 +67,7 @@ object mod {
     
     inline def apply(
       disconnect: () => Unit,
-      getInterface: (String, String, String, js.Function2[/* err */ Error | Null, /* iface */ DBusInterface[js.Any], Unit]) => Unit,
+      getInterface: (String, String, String, js.Function2[/* err */ Error | Null, /* iface */ DBusInterface[Any], Unit]) => Unit,
       getUniqueServiceName: (String, js.Function2[/* err */ Error | Null, /* uniqueName */ String, Unit]) => Unit,
       reconnect: js.Function0[Unit] => Unit
     ): DBusConnection = {
@@ -80,7 +80,7 @@ object mod {
       inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
       inline def setGetInterface(
-        value: (String, String, String, js.Function2[/* err */ Error | Null, /* iface */ DBusInterface[js.Any], Unit]) => Unit
+        value: (String, String, String, js.Function2[/* err */ Error | Null, /* iface */ DBusInterface[Any], Unit]) => Unit
       ): Self = StObject.set(x, "getInterface", js.Any.fromFunction4(value))
       
       inline def setGetUniqueServiceName(value: (String, js.Function2[/* err */ Error | Null, /* uniqueName */ String, Unit]) => Unit): Self = StObject.set(x, "getUniqueServiceName", js.Any.fromFunction2(value))
@@ -89,7 +89,7 @@ object mod {
     }
   }
   
-  type DBusInterface[T] = Bus & (PickMatching[T, js.Function1[/* repeated */ js.Any, Unit]])
+  type DBusInterface[T] = Bus & (PickMatching[T, js.Function1[/* repeated */ Any, Unit]])
   
   trait DBusService extends StObject {
     
@@ -137,8 +137,8 @@ object mod {
       opts: In,
       handler: js.Function3[
           /* name */ String, 
-          /* quality */ js.Any, 
-          /* callback */ js.Function1[/* res */ js.Any, Unit], 
+          /* quality */ Any, 
+          /* callback */ js.Function1[/* res */ Any, Unit], 
           Unit
         ]
     ): Unit
@@ -147,7 +147,7 @@ object mod {
     
     def addSignal(name: String, opts: Types): Unit
     
-    def emitSignal(name: String, values: js.Any*): Unit
+    def emitSignal(name: String, values: Any*): Unit
     
     var name: String
     
@@ -160,13 +160,13 @@ object mod {
     inline def apply(
       addMethod: (String, In, js.Function3[
           /* name */ String, 
-          /* quality */ js.Any, 
-          /* callback */ js.Function1[/* res */ js.Any, Unit], 
+          /* quality */ Any, 
+          /* callback */ js.Function1[/* res */ Any, Unit], 
           Unit
         ]) => Unit,
       addProperty: (String, Getter) => Unit,
       addSignal: (String, Types) => Unit,
-      emitSignal: (String, /* repeated */ js.Any) => Unit,
+      emitSignal: (String, /* repeated */ Any) => Unit,
       name: String,
       `object`: DBusServiceObject,
       update: () => Unit
@@ -181,8 +181,8 @@ object mod {
       inline def setAddMethod(
         value: (String, In, js.Function3[
               /* name */ String, 
-              /* quality */ js.Any, 
-              /* callback */ js.Function1[/* res */ js.Any, Unit], 
+              /* quality */ Any, 
+              /* callback */ js.Function1[/* res */ Any, Unit], 
               Unit
             ]) => Unit
       ): Self = StObject.set(x, "addMethod", js.Any.fromFunction3(value))
@@ -191,7 +191,7 @@ object mod {
       
       inline def setAddSignal(value: (String, Types) => Unit): Self = StObject.set(x, "addSignal", js.Any.fromFunction2(value))
       
-      inline def setEmitSignal(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emitSignal", js.Any.fromFunction2(value))
+      inline def setEmitSignal(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emitSignal", js.Any.fromFunction2(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -228,9 +228,9 @@ object mod {
   
   type PickMatching[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: T[P] extends U? T[P] : never}
-    */ typings.dbus.dbusStrings.PickMatching & TopLevel[js.Any]
+    */ typings.dbus.dbusStrings.PickMatching & TopLevel[Any]
   
-  type PropsCB = js.Function2[/* err */ js.UndefOr[Error], /* value */ js.Any, Unit]
+  type PropsCB = js.Function2[/* err */ js.UndefOr[Error], /* value */ Any, Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.dbus.dbusStrings.session

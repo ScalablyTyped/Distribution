@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("@ant-design/icons-react/lib", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antDesignIconsReact.iconMod.default
   object default {
     
@@ -21,8 +21,8 @@ object mod {
     
     /* static member */
     inline def add(
-      icons: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any)*
-    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(icons.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      icons: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any)*
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(icons.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
     /* static member */
     inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
@@ -31,11 +31,11 @@ object mod {
     @JSImport("@ant-design/icons-react/lib", "default.definitions")
     @js.native
     def definitions: MiniMap[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
       ] = js.native
     inline def definitions_=(
       x: MiniMap[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("definitions")(x.asInstanceOf[js.Any])
     
@@ -47,24 +47,24 @@ object mod {
     
     /* static member */
     inline def get(): js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
       ]]
     inline def get(key: String): js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
       ]]
     inline def get(key: String, colors: TwoToneColorPalette): js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
       ]]
     inline def get(key: Unit, colors: TwoToneColorPalette): js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ Any
       ]]
     
     /* static member */

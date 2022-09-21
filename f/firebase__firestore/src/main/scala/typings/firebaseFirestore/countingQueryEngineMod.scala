@@ -1,34 +1,35 @@
 package typings.firebaseFirestore
 
-import org.scalablytyped.runtime.TopLevel
-import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
-import typings.firebaseFirestore.collectionsMod.DocumentMap_
-import typings.firebaseFirestore.localDocumentsViewMod.LocalDocumentsView
-import typings.firebaseFirestore.persistenceMod.PersistenceTransaction
-import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
 import typings.firebaseFirestore.queryEngineMod.QueryEngine
-import typings.firebaseFirestore.queryMod.Query
-import typings.firebaseFirestore.snapshotVersionMod.SnapshotVersion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/local/counting_query_engine", JSImport.Namespace)
-@js.native
-object countingQueryEngineMod extends js.Object {
+object countingQueryEngineMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/test/unit/local/counting_query_engine", "CountingQueryEngine")
   @js.native
-  class CountingQueryEngine protected () extends QueryEngine {
-    def this(queryEngine: QueryEngine, `type`: QueryEngineType) = this()
+  open class CountingQueryEngine () extends QueryEngine {
+    
+    /**
+      * The number of documents returned by the RemoteDocumentCache's
+      * `getAll()` API (since the last call to `resetCounts()`)
+      */
+    var documentsReadByCollection: Double = js.native
+    
     /**
       * The number of documents returned by the RemoteDocumentCache's `getEntry()`
       * and `getEntries()` APIs (since the last call to `resetCounts()`)
       */
     var documentsReadByKey: Double = js.native
+    
     /**
-      * The number of documents returned by the RemoteDocumentCache's
-      * `getDocumentsMatchingQuery()` API (since the last call to `resetCounts()`)
+      * The number of mutations returned by the MutationQueue's
+      * `getAllMutationBatchesAffectingQuery()` API (since the last call to
+      * `resetCounts()`)
       */
-    var documentsReadByQuery: Double = js.native
+    var mutationsReadByCollection: Double = js.native
+    
     /**
       * The number of mutations returned by the MutationQueue's
       * `getAllMutationBatchesAffectingDocumentKey()` and
@@ -36,50 +37,25 @@ object countingQueryEngineMod extends js.Object {
       * to `resetCounts()`)
       */
     var mutationsReadByKey: Double = js.native
+    
     /**
-      * The number of mutations returned by the MutationQueue's
-      * `getAllMutationBatchesAffectingQuery()` API (since the last call to
-      * `resetCounts()`)
+      * The number of documents returned by the OverlayCache's `getOverlays()`
+      * API (since the last call to `resetCounts()`)
       */
-    var mutationsReadByQuery: Double = js.native
-    val queryEngine: js.Any = js.native
-    val `type`: QueryEngineType = js.native
-    var wrapMutationQueue: js.Any = js.native
-    var wrapRemoteDocumentCache: js.Any = js.native
-    /** Returns all local documents matching the specified query. */
-    /* CompleteClass */
-    override def getDocumentsMatchingQuery(
-      transaction: PersistenceTransaction,
-      query: Query,
-      lastLimboFreeSnapshotVersion: SnapshotVersion,
-      remoteKeys: DocumentKeySet_
-    ): PersistencePromise[DocumentMap_] = js.native
+    var overlaysReadByCollection: Double = js.native
+    
+    /**
+      * The number of documents returned by the OverlayCache's `getOverlay()`
+      * APIs (since the last call to `resetCounts()`)
+      */
+    var overlaysReadByKey: Double = js.native
+    
     def resetCounts(): Unit = js.native
-    /** Sets the document view to query against. */
-    /* CompleteClass */
-    override def setLocalDocumentsView(localDocuments: LocalDocumentsView): Unit = js.native
+    
+    /* private */ var wrapDocumentOverlayCache: Any = js.native
+    
+    /* private */ var wrapMutationQueue: Any = js.native
+    
+    /* private */ var wrapRemoteDocumentCache: Any = js.native
   }
-  
-  @js.native
-  sealed trait QueryEngineType extends js.Object
-  
-  @js.native
-  object QueryEngineType extends js.Object {
-    @js.native
-    sealed trait IndexFree extends QueryEngineType
-    
-    @js.native
-    sealed trait Simple extends QueryEngineType
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[QueryEngineType with Double] = js.native
-    /* 0 */ @js.native
-    object IndexFree extends TopLevel[IndexFree with Double]
-    
-    /* 1 */ @js.native
-    object Simple extends TopLevel[Simple with Double]
-    
-  }
-  
 }
-

@@ -46,7 +46,7 @@ object IMultiRouteParams {
     
     inline def setBoundedByUndefined: Self = StObject.set(x, "boundedBy", js.undefined)
     
-    inline def setBoundedByVarargs(value: js.Array[Double]*): Self = StObject.set(x, "boundedBy", js.Array(value :_*))
+    inline def setBoundedByVarargs(value: js.Array[Double]*): Self = StObject.set(x, "boundedBy", js.Array(value*))
     
     inline def setRequestSendInterval(value: String | Double): Self = StObject.set(x, "requestSendInterval", value.asInstanceOf[js.Any])
     
@@ -76,6 +76,6 @@ object IMultiRouteParams {
     
     inline def setViaIndexesUndefined: Self = StObject.set(x, "viaIndexes", js.undefined)
     
-    inline def setViaIndexesVarargs(value: Double*): Self = StObject.set(x, "viaIndexes", js.Array(value :_*))
+    inline def setViaIndexesVarargs(value: Double*): Self = StObject.set(x, "viaIndexes", js.Array(value*))
   }
 }

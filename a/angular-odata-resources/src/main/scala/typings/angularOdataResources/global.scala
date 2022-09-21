@@ -17,42 +17,42 @@ object global {
     
     @JSGlobal("OData.BinaryOperation")
     @js.native
-    class BinaryOperation protected ()
+    open class BinaryOperation protected ()
       extends StObject
          with typings.angularOdataResources.OData.BinaryOperation {
-      def this(propertyOrPredicate: js.Any) = this()
-      def this(propertyOrPredicate: js.Any, valueOrOperator: js.Any) = this()
-      def this(propertyOrPredicate: js.Any, valueOrOperator: js.Any, value: js.Any) = this()
-      def this(propertyOrPredicate: js.Any, valueOrOperator: Unit, value: js.Any) = this()
+      def this(propertyOrPredicate: Any) = this()
+      def this(propertyOrPredicate: Any, valueOrOperator: Any) = this()
+      def this(propertyOrPredicate: Any, valueOrOperator: Any, value: Any) = this()
+      def this(propertyOrPredicate: Any, valueOrOperator: Unit, value: Any) = this()
     }
     
     @JSGlobal("OData.Global")
     @js.native
-    class Global protected ()
+    open class Global protected ()
       extends StObject
          with typings.angularOdataResources.OData.Global {
       def this(
-        ODataBinaryOperation: js.Any,
-        ODataProvider: js.Any,
-        ODataValue: js.Any,
-        ODataProperty: js.Any,
-        ODataMethodCall: js.Any,
-        ODataPredicate: js.Any,
-        ODataOrderByStatement: js.Any
+        ODataBinaryOperation: Any,
+        ODataProvider: Any,
+        ODataValue: Any,
+        ODataProperty: Any,
+        ODataMethodCall: Any,
+        ODataPredicate: Any,
+        ODataOrderByStatement: Any
       ) = this()
       
       /* CompleteClass */
       var BinaryOperation: Instantiable3[
-            /* propertyOrPredicate */ js.Any, 
-            /* valueOrOperator */ js.UndefOr[js.Any], 
-            /* value */ js.UndefOr[js.Any], 
+            /* propertyOrPredicate */ Any, 
+            /* valueOrOperator */ js.UndefOr[Any], 
+            /* value */ js.UndefOr[Any], 
             typings.angularOdataResources.OData.BinaryOperation
           ] = js.native
       
       /* CompleteClass */
       var Func: Instantiable2[
             /* methodName */ String, 
-            /* args (repeated) */ js.Any, 
+            /* args (repeated) */ Any, 
             typings.angularOdataResources.OData.MethodCall
           ] = js.native
       
@@ -65,9 +65,9 @@ object global {
       
       /* CompleteClass */
       var Predicate: TypeofPredicate & (Instantiable3[
-            /* propertyOrValueOrPredicate */ js.Any, 
-            /* valueOrOperator */ js.UndefOr[js.Any], 
-            /* value */ js.UndefOr[js.Any], 
+            /* propertyOrValueOrPredicate */ Any, 
+            /* valueOrOperator */ js.UndefOr[Any], 
+            /* value */ js.UndefOr[Any], 
             typings.angularOdataResources.OData.Predicate
           ]) = js.native
       
@@ -75,11 +75,11 @@ object global {
       var Property: Instantiable1[/* value */ String, typings.angularOdataResources.OData.Property] = js.native
       
       /* CompleteClass */
-      var Provider: typings.angularOdataResources.OData.Provider[js.Any] = js.native
+      var Provider: typings.angularOdataResources.OData.Provider[Any] = js.native
       
       /* CompleteClass */
       var Value: Instantiable2[
-            /* value */ js.Any, 
+            /* value */ Any, 
             /* type */ js.UndefOr[String], 
             typings.angularOdataResources.OData.Value
           ] = js.native
@@ -100,34 +100,34 @@ object global {
     
     @JSGlobal("OData.MethodCall")
     @js.native
-    class MethodCall protected ()
+    open class MethodCall protected ()
       extends StObject
          with typings.angularOdataResources.OData.MethodCall {
-      def this(methodName: String, args: js.Any*) = this()
+      def this(methodName: String, args: Any*) = this()
     }
     
     @JSGlobal("OData.Operators")
     @js.native
-    class Operators ()
+    open class Operators ()
       extends StObject
          with typings.angularOdataResources.OData.Operators {
       
       /* CompleteClass */
-      override def convert(from: String): js.Any = js.native
+      override def convert(from: String): Any = js.native
       
       /* CompleteClass */
       var operators: Add = js.native
       
       /* private */ /* CompleteClass */
-      var rtrim: js.Any = js.native
+      var rtrim: Any = js.native
       
       /* private */ /* CompleteClass */
-      override def trim(value: js.Any): js.Any = js.native
+      override def trim(value: Any): Any = js.native
     }
     
     @JSGlobal("OData.OrderByStatement")
     @js.native
-    class OrderByStatement protected ()
+    open class OrderByStatement protected ()
       extends StObject
          with typings.angularOdataResources.OData.OrderByStatement {
       def this(propertyName: String) = this()
@@ -136,13 +136,13 @@ object global {
     
     @JSGlobal("OData.Predicate")
     @js.native
-    class Predicate protected ()
+    open class Predicate protected ()
       extends StObject
          with typings.angularOdataResources.OData.BinaryOperation {
-      def this(propertyOrValueOrPredicate: js.Any) = this()
-      def this(propertyOrValueOrPredicate: js.Any, valueOrOperator: js.Any) = this()
-      def this(propertyOrValueOrPredicate: js.Any, valueOrOperator: js.Any, value: js.Any) = this()
-      def this(propertyOrValueOrPredicate: js.Any, valueOrOperator: Unit, value: js.Any) = this()
+      def this(propertyOrValueOrPredicate: Any) = this()
+      def this(propertyOrValueOrPredicate: Any, valueOrOperator: Any) = this()
+      def this(propertyOrValueOrPredicate: Any, valueOrOperator: Any, value: Any) = this()
+      def this(propertyOrValueOrPredicate: Any, valueOrOperator: Unit, value: Any) = this()
     }
     object Predicate {
       
@@ -151,21 +151,21 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def and(andStatements: js.Any): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(andStatements.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
+      inline def and(andStatements: Any): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(andStatements.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
       
       /* static member */
-      inline def create(propertyOrPredicate: js.Any): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
-      inline def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
-      inline def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
-      inline def create(propertyOrPredicate: js.Any, operatorOrValue: Unit, value: js.Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
+      inline def create(propertyOrPredicate: Any): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
+      inline def create(propertyOrPredicate: Any, operatorOrValue: Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
+      inline def create(propertyOrPredicate: Any, operatorOrValue: Any, value: Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
+      inline def create(propertyOrPredicate: Any, operatorOrValue: Unit, value: Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
       
       /* static member */
-      inline def or(orStatements: js.Array[js.Any]): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(orStatements.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
+      inline def or(orStatements: js.Array[Any]): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(orStatements.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
     }
     
     @JSGlobal("OData.Property")
     @js.native
-    class Property protected ()
+    open class Property protected ()
       extends StObject
          with typings.angularOdataResources.OData.Property {
       def this(value: String) = this()
@@ -173,7 +173,7 @@ object global {
     
     @JSGlobal("OData.Provider")
     @js.native
-    class Provider[T] protected ()
+    open class Provider[T] protected ()
       extends StObject
          with typings.angularOdataResources.OData.Provider[T] {
       def this(callback: ProviderCallback[T]) = this()
@@ -181,40 +181,40 @@ object global {
     
     @JSGlobal("OData.Value")
     @js.native
-    class Value protected ()
+    open class Value protected ()
       extends StObject
          with typings.angularOdataResources.OData.Value {
-      def this(value: js.Any) = this()
-      def this(value: js.Any, `type`: String) = this()
+      def this(value: Any) = this()
+      def this(value: Any, `type`: String) = this()
       
       /* private */ /* CompleteClass */
-      override def escapeIllegalChars(haystack: js.Any): js.Any = js.native
+      override def escapeIllegalChars(haystack: Any): Any = js.native
       
       /* CompleteClass */
       override def execute(): String = js.native
       
       /* CompleteClass */
-      override def executeWithType(): js.Any = js.native
+      override def executeWithType(): Any = js.native
       
       /* CompleteClass */
-      override def executeWithUndefinedType(): js.Any = js.native
+      override def executeWithUndefinedType(): Any = js.native
       
       /* private */ /* CompleteClass */
-      override def generateDate(date: js.Any): js.Any = js.native
+      override def generateDate(date: Any): Any = js.native
       
       /* private */ /* CompleteClass */
-      var illegalChars: js.Any = js.native
+      var illegalChars: Any = js.native
       
       /* private */ /* CompleteClass */
-      var `type`: js.Any = js.native
+      var `type`: Any = js.native
       
       /* private */ /* CompleteClass */
-      var value: js.Any = js.native
+      var value: Any = js.native
     }
     
     @JSGlobal("OData.ValueTypes")
     @js.native
-    class ValueTypes ()
+    open class ValueTypes ()
       extends StObject
          with typings.angularOdataResources.OData.ValueTypes
     object ValueTypes {

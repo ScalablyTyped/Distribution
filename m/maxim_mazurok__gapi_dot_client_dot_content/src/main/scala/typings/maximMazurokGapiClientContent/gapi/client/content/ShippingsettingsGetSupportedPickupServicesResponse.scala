@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ShippingsettingsGetSupportedPickupServicesResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#shippingsettingsGetSupportedPickupServicesResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#shippingsettingsGetSupportedPickupServicesResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** A list of supported pickup services. May be empty. */
@@ -29,6 +29,6 @@ object ShippingsettingsGetSupportedPickupServicesResponse {
     
     inline def setPickupServicesUndefined: Self = StObject.set(x, "pickupServices", js.undefined)
     
-    inline def setPickupServicesVarargs(value: PickupServicesPickupService*): Self = StObject.set(x, "pickupServices", js.Array(value :_*))
+    inline def setPickupServicesVarargs(value: PickupServicesPickupService*): Self = StObject.set(x, "pickupServices", js.Array(value*))
   }
 }

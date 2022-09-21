@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("WritableStreamDefaultWriter")
 @js.native
-class WritableStreamDefaultWriter ()
+open class WritableStreamDefaultWriter[W] protected ()
   extends StObject
-     with typings.std.WritableStreamDefaultWriter[js.Any]
+     with typings.std.WritableStreamDefaultWriter[W] {
+  /* standard dom */
+  def this(stream: typings.std.WritableStream[W]) = this()
+}

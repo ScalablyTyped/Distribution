@@ -8,7 +8,7 @@ object semaphoreMod {
   
   @JSImport("semaphore-async-await/dist/Semaphore", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Semaphore {
     /**
@@ -51,10 +51,10 @@ object semaphoreMod {
     override def getPermits(): Double = js.native
     
     /* private */ /* CompleteClass */
-    var permits: js.Any = js.native
+    var permits: Any = js.native
     
     /* private */ /* CompleteClass */
-    var promiseResolverQueue: js.Any = js.native
+    var promiseResolverQueue: Any = js.native
     
     /**
       * Alias for {@linkcode Semaphore.signal}.
@@ -117,9 +117,9 @@ object semaphoreMod {
       */
     def getPermits(): Double
     
-    /* private */ var permits: js.Any
+    /* private */ var permits: Any
     
-    /* private */ var promiseResolverQueue: js.Any
+    /* private */ var promiseResolverQueue: Any
     
     /**
       * Alias for {@linkcode Semaphore.signal}.
@@ -153,10 +153,10 @@ object semaphoreMod {
     inline def apply(
       acquire: () => js.Promise[Boolean],
       drainPermits: () => Double,
-      execute: js.Function0[js.Any | js.Thenable[js.Any]] => js.Promise[js.Any],
+      execute: js.Function0[Any | js.Thenable[Any]] => js.Promise[Any],
       getPermits: () => Double,
-      permits: js.Any,
-      promiseResolverQueue: js.Any,
+      permits: Any,
+      promiseResolverQueue: Any,
       release: () => Unit,
       signal: () => Unit,
       tryAcquire: () => Boolean,
@@ -172,13 +172,13 @@ object semaphoreMod {
       
       inline def setDrainPermits(value: () => Double): Self = StObject.set(x, "drainPermits", js.Any.fromFunction0(value))
       
-      inline def setExecute(value: js.Function0[js.Any | js.Thenable[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: js.Function0[Any | js.Thenable[Any]] => js.Promise[Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
       inline def setGetPermits(value: () => Double): Self = StObject.set(x, "getPermits", js.Any.fromFunction0(value))
       
-      inline def setPermits(value: js.Any): Self = StObject.set(x, "permits", value.asInstanceOf[js.Any])
+      inline def setPermits(value: Any): Self = StObject.set(x, "permits", value.asInstanceOf[js.Any])
       
-      inline def setPromiseResolverQueue(value: js.Any): Self = StObject.set(x, "promiseResolverQueue", value.asInstanceOf[js.Any])
+      inline def setPromiseResolverQueue(value: Any): Self = StObject.set(x, "promiseResolverQueue", value.asInstanceOf[js.Any])
       
       inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       

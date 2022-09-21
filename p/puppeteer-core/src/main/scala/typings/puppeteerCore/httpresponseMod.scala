@@ -1,12 +1,13 @@
 package typings.puppeteerCore
 
+import typings.devtoolsProtocol.mod.Protocol.Network.ResourceTiming
 import typings.devtoolsProtocol.mod.Protocol.Network.Response
-import typings.node.Buffer
-import typings.puppeteerCore.connectionMod.CDPSession
-import typings.puppeteerCore.frameManagerMod.Frame
+import typings.devtoolsProtocol.mod.Protocol.Network.ResponseReceivedExtraInfoEvent
+import typings.node.bufferMod.global.Buffer
+import typings.puppeteerCore.eventEmitterMod.EventEmitter
+import typings.puppeteerCore.frameMod.Frame
 import typings.puppeteerCore.httprequestMod.HTTPRequest
 import typings.puppeteerCore.securityDetailsMod.SecurityDetails
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,43 +17,23 @@ object httpresponseMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/HTTPResponse", "HTTPResponse")
   @js.native
-  class HTTPResponse protected () extends StObject {
+  open class HTTPResponse protected () extends StObject {
     /**
       * @internal
       */
     def this(client: CDPSession, request: HTTPRequest, responsePayload: Response) = this()
-    
-    /* private */ var _bodyLoadedPromise: js.Any = js.native
-    
-    /* private */ var _bodyLoadedPromiseFulfill: js.Any = js.native
-    
-    /* private */ var _client: js.Any = js.native
-    
-    /* private */ var _contentPromise: js.Any = js.native
-    
-    /* private */ var _fromDiskCache: js.Any = js.native
-    
-    /* private */ var _fromServiceWorker: js.Any = js.native
-    
-    /* private */ var _headers: js.Any = js.native
-    
-    /* private */ var _remoteAddress: js.Any = js.native
-    
-    /* private */ var _request: js.Any = js.native
+    def this(
+      client: CDPSession,
+      request: HTTPRequest,
+      responsePayload: Response,
+      extraInfo: ResponseReceivedExtraInfoEvent
+    ) = this()
     
     /**
       * @internal
       */
     def _resolveBody(): Unit = js.native
-    def _resolveBody(err: Error): Unit = js.native
-    
-    /* private */ var _securityDetails: js.Any = js.native
-    
-    /* private */ var _status: js.Any = js.native
-    
-    /* private */ var _statusText: js.Any = js.native
-    
-    /* private */ var _url: js.Any = js.native
+    def _resolveBody(err: js.Error): Unit = js.native
     
     /**
       * @returns Promise which resolves to a buffer with response body.
@@ -91,12 +72,14 @@ object httpresponseMod {
       * This method will throw if the response body is not parsable via
       * `JSON.parse`.
       */
-    def json(): js.Promise[js.Any] = js.native
+    def json(): js.Promise[Any] = js.native
     
     /**
       * @returns True if the response was successful (status in the range 200-299).
       */
     def ok(): Boolean = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     /**
       * @returns The IP address and port number used to connect to the remote
@@ -121,7 +104,7 @@ object httpresponseMod {
     def status(): Double = js.native
     
     /**
-      * @returns  The status text of the response (e.g. usually an "OK" for a
+      * @returns The status text of the response (e.g. usually an "OK" for a
       * success).
       */
     def statusText(): String = js.native
@@ -132,21 +115,38 @@ object httpresponseMod {
     def text(): js.Promise[String] = js.native
     
     /**
+      * @returns Timing information related to the response.
+      */
+    def timing(): ResourceTiming | Null = js.native
+    
+    /**
       * @returns The URL of the response.
       */
     def url(): String = js.native
   }
   
+  @js.native
+  trait CDPSession extends EventEmitter {
+    
+    @JSName("send")
+    def send_paramsType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 536 */ Any */](
+      method: T,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param paramArgs because its type ProtocolMapping.Commands[T]['paramsType'] is not an array type */ paramArgs: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'] */ js.Any
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
+      ] = js.native
+  }
+  
   trait RemoteAddress extends StObject {
     
-    var ip: String
+    var ip: js.UndefOr[String] = js.undefined
     
-    var port: Double
+    var port: js.UndefOr[Double] = js.undefined
   }
   object RemoteAddress {
     
-    inline def apply(ip: String, port: Double): RemoteAddress = {
-      val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    inline def apply(): RemoteAddress = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoteAddress]
     }
     
@@ -154,7 +154,11 @@ object httpresponseMod {
       
       inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+      
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
 }

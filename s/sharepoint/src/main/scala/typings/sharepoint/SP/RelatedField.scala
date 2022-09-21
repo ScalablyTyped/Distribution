@@ -13,7 +13,7 @@ trait RelatedField
   
   def get_listId(): Guid = js.native
   
-  def get_lookupList(): List[js.Any] = js.native
+  def get_lookupList(): List[Any] = js.native
   
   def get_relationshipDeleteBehavior(): RelationshipDeleteBehaviorType = js.native
   

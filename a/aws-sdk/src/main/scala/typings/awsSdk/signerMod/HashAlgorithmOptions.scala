@@ -27,7 +27,7 @@ object HashAlgorithmOptions {
     
     inline def setAllowedValues(value: HashAlgorithms): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
-    inline def setAllowedValuesVarargs(value: HashAlgorithm*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: HashAlgorithm*): Self = StObject.set(x, "allowedValues", js.Array(value*))
     
     inline def setDefaultValue(value: HashAlgorithm): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }

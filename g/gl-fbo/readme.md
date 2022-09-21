@@ -10,10 +10,10 @@ Frame buffer object wrapper for WebGL
 | ------------------ | :-------------: |
 | Full name          | gl-fbo |
 | Keywords           | fbo, frame, buffer, framebuffer, object, webgl, gl, offscreen, render, texture, renderbuffer, render |
-| # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 3351105 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 367313.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/stackgl/gl-fbo)

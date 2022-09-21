@@ -17,15 +17,15 @@ trait IXTemplate
   @JSName("applyOut")
   var applyOut_IXTemplate: js.UndefOr[
     js.Function3[
-      /* values */ js.UndefOr[js.Any], 
-      /* out */ js.UndefOr[js.Any], 
-      /* parent */ js.UndefOr[js.Any], 
+      /* values */ js.UndefOr[Any], 
+      /* out */ js.UndefOr[Any], 
+      /* parent */ js.UndefOr[Any], 
       Array
     ]
   ] = js.undefined
   
   /** [Config Option] (String/Array) */
-  var definitions: js.UndefOr[js.Any] = js.undefined
+  var definitions: js.UndefOr[Any] = js.undefined
 }
 object IXTemplate {
   
@@ -37,12 +37,12 @@ object IXTemplate {
   extension [Self <: IXTemplate](x: Self) {
     
     inline def setApplyOut(
-      value: (/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[js.Any], /* parent */ js.UndefOr[js.Any]) => Array
+      value: (/* values */ js.UndefOr[Any], /* out */ js.UndefOr[Any], /* parent */ js.UndefOr[Any]) => Array
     ): Self = StObject.set(x, "applyOut", js.Any.fromFunction3(value))
     
     inline def setApplyOutUndefined: Self = StObject.set(x, "applyOut", js.undefined)
     
-    inline def setDefinitions(value: js.Any): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+    inline def setDefinitions(value: Any): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
     inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
   }

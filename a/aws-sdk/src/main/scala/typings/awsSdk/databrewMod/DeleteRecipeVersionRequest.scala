@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteRecipeVersionRequest extends StObject {
   
   /**
-    * The name of the recipe to be deleted.
+    * The name of the recipe.
     */
   var Name: RecipeName
   
   /**
-    * The version of the recipe to be deleted.
+    * The version of the recipe to be deleted. You can specify a numeric versions (X.Y) or LATEST_WORKING. LATEST_PUBLISHED is not supported.
     */
   var RecipeVersion: typings.awsSdk.databrewMod.RecipeVersion
 }

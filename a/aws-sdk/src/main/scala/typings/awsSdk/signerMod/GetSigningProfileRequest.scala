@@ -10,6 +10,11 @@ trait GetSigningProfileRequest extends StObject {
     * The name of the target signing profile.
     */
   var profileName: ProfileName
+  
+  /**
+    * The AWS account ID of the profile owner.
+    */
+  var profileOwner: js.UndefOr[AccountId] = js.undefined
 }
 object GetSigningProfileRequest {
   
@@ -21,5 +26,9 @@ object GetSigningProfileRequest {
   extension [Self <: GetSigningProfileRequest](x: Self) {
     
     inline def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
+    
+    inline def setProfileOwner(value: AccountId): Self = StObject.set(x, "profileOwner", value.asInstanceOf[js.Any])
+    
+    inline def setProfileOwnerUndefined: Self = StObject.set(x, "profileOwner", js.undefined)
   }
 }

@@ -9,15 +9,15 @@ trait RealtimeEndpointInfo extends StObject {
   /**
     * The time that the request to create the real-time endpoint for the MLModel was received. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The current status of the real-time endpoint for the MLModel. This element can have one of the following values:    NONE - Endpoint does not exist or was previously deleted.  READY - Endpoint is ready to be used for real-time predictions.  UPDATING - Updating/creating the endpoint.  
+    *  The current status of the real-time endpoint for the MLModel. This element can have one of the following values:     NONE - Endpoint does not exist or was previously deleted.    READY - Endpoint is ready to be used for real-time predictions.    UPDATING - Updating/creating the endpoint.   
     */
   var EndpointStatus: js.UndefOr[RealtimeEndpointStatus] = js.undefined
   
   /**
-    * The URI that specifies where to send real-time prediction requests for the MLModel. Note The application must wait until the real-time endpoint is ready before using this URI. 
+    * The URI that specifies where to send real-time prediction requests for the MLModel.  Note: The application must wait until the real-time endpoint is ready before using this URI.
     */
   var EndpointUrl: js.UndefOr[VipURL] = js.undefined
   
@@ -35,7 +35,7 @@ object RealtimeEndpointInfo {
   
   extension [Self <: RealtimeEndpointInfo](x: Self) {
     
-    inline def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     

@@ -62,6 +62,11 @@ trait UpdateStackRequest extends StObject {
   var StorageConnectors: js.UndefOr[StorageConnectorList] = js.undefined
   
   /**
+    * The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
+    */
+  var StreamingExperienceSettings: js.UndefOr[typings.awsSdk.appstreamMod.StreamingExperienceSettings] = js.undefined
+  
+  /**
     * The actions that are enabled or disabled for users during their streaming sessions. By default, these actions are enabled.
     */
   var UserSettings: js.UndefOr[UserSettingList] = js.undefined
@@ -79,7 +84,7 @@ object UpdateStackRequest {
     
     inline def setAccessEndpointsUndefined: Self = StObject.set(x, "AccessEndpoints", js.undefined)
     
-    inline def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value :_*))
+    inline def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value*))
     
     inline def setApplicationSettings(value: ApplicationSettings): Self = StObject.set(x, "ApplicationSettings", value.asInstanceOf[js.Any])
     
@@ -89,7 +94,7 @@ object UpdateStackRequest {
     
     inline def setAttributesToDeleteUndefined: Self = StObject.set(x, "AttributesToDelete", js.undefined)
     
-    inline def setAttributesToDeleteVarargs(value: StackAttribute*): Self = StObject.set(x, "AttributesToDelete", js.Array(value :_*))
+    inline def setAttributesToDeleteVarargs(value: StackAttribute*): Self = StObject.set(x, "AttributesToDelete", js.Array(value*))
     
     inline def setDeleteStorageConnectors(value: Boolean): Self = StObject.set(x, "DeleteStorageConnectors", value.asInstanceOf[js.Any])
     
@@ -107,7 +112,7 @@ object UpdateStackRequest {
     
     inline def setEmbedHostDomainsUndefined: Self = StObject.set(x, "EmbedHostDomains", js.undefined)
     
-    inline def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = StObject.set(x, "EmbedHostDomains", js.Array(value :_*))
+    inline def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = StObject.set(x, "EmbedHostDomains", js.Array(value*))
     
     inline def setFeedbackURL(value: FeedbackURL): Self = StObject.set(x, "FeedbackURL", value.asInstanceOf[js.Any])
     
@@ -123,12 +128,16 @@ object UpdateStackRequest {
     
     inline def setStorageConnectorsUndefined: Self = StObject.set(x, "StorageConnectors", js.undefined)
     
-    inline def setStorageConnectorsVarargs(value: StorageConnector*): Self = StObject.set(x, "StorageConnectors", js.Array(value :_*))
+    inline def setStorageConnectorsVarargs(value: StorageConnector*): Self = StObject.set(x, "StorageConnectors", js.Array(value*))
+    
+    inline def setStreamingExperienceSettings(value: StreamingExperienceSettings): Self = StObject.set(x, "StreamingExperienceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setStreamingExperienceSettingsUndefined: Self = StObject.set(x, "StreamingExperienceSettings", js.undefined)
     
     inline def setUserSettings(value: UserSettingList): Self = StObject.set(x, "UserSettings", value.asInstanceOf[js.Any])
     
     inline def setUserSettingsUndefined: Self = StObject.set(x, "UserSettings", js.undefined)
     
-    inline def setUserSettingsVarargs(value: UserSetting*): Self = StObject.set(x, "UserSettings", js.Array(value :_*))
+    inline def setUserSettingsVarargs(value: UserSetting*): Self = StObject.set(x, "UserSettings", js.Array(value*))
   }
 }

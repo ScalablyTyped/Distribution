@@ -30,6 +30,6 @@ object DescribeComponentResponse {
     
     inline def setResourceListUndefined: Self = StObject.set(x, "ResourceList", js.undefined)
     
-    inline def setResourceListVarargs(value: ResourceARN*): Self = StObject.set(x, "ResourceList", js.Array(value :_*))
+    inline def setResourceListVarargs(value: ResourceARN*): Self = StObject.set(x, "ResourceList", js.Array(value*))
   }
 }

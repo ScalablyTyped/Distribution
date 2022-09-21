@@ -22,6 +22,6 @@ object StaticValue {
     
     inline def setValues(value: StaticParameterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

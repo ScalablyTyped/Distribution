@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Dropbox.Client")
 @js.native
-class Client protected ()
+open class Client protected ()
   extends StObject
      with typings.dropboxjs.Dropbox.Client {
   def this(options: Credentials) = this()

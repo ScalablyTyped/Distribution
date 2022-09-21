@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/XR/index", "WebXRSessionManager")
 @js.native
-class WebXRSessionManager protected ()
+open class WebXRSessionManager protected ()
   extends typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager {
   /**
     * Constructs a WebXRSessionManager, this must be initialized within a user action before usage

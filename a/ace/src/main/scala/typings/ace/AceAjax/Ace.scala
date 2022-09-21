@@ -36,5 +36,5 @@ trait Ace extends StObject {
     * Provides access to require in packed noconflict mode
     * @param moduleName
     **/
-  def require(moduleName: String): js.Any = js.native
+  def require(moduleName: String): Any = js.native
 }

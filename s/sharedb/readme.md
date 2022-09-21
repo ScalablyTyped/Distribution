@@ -1,7 +1,7 @@
 
 # Scala.js typings for sharedb
 
-Typings are for version 1.0
+Typings are for version 3.0
 
 ## Library description:
 JSON OT database backend
@@ -10,10 +10,10 @@ JSON OT database backend
 | ------------------ | :-------------: |
 | Full name          | sharedb |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 56 |
-| # downloads        | 264042 |
-| # stars            | 4 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 36691.0 |
+| # stars            | 5307.0 |
 
 ## Links
 - [Homepage](https://github.com/share/sharedb#readme)

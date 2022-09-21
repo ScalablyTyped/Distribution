@@ -12,10 +12,10 @@ trait IKeyMap
   /** [Method] Add a new binding to this KeyMap
     * @param binding Object/Object[] A single KeyMap config or an array of configs. The following config object properties are supported:
     */
-  var addBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Object/Object[][]) */
-  var binding: js.UndefOr[js.Any] = js.undefined
+  var binding: js.UndefOr[Any] = js.undefined
   
   /** [Method] Destroys the KeyMap instance and removes all handlers
     * @param removeTarget Boolean True to also remove the target
@@ -45,24 +45,19 @@ trait IKeyMap
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     */
   var on: js.UndefOr[
-    js.Function3[
-      /* key */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      Unit
-    ]
+    js.Function3[/* key */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Config Option] (Function) */
-  var processEvent: js.UndefOr[js.Any] = js.undefined
+  var processEvent: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var processEventScope: js.UndefOr[js.Any] = js.undefined
+  var processEventScope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Remove a binding from this KeyMap
     * @param binding Object See for options
     */
-  var removeBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var removeBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Convenience function for setting disabled enabled by boolean
     * @param disabled Boolean
@@ -70,7 +65,7 @@ trait IKeyMap
   var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Ext.Component/Ext.Element/HTMLElement/String) */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
   
   /** [Method] Shorthand for removing a single key listener
     * @param key Number/Number[]/Object Either the numeric key code, array of key codes or an object with the following options: {key: (number or array), shift: (true/false), ctrl: (true/false), alt: (true/false)}
@@ -78,12 +73,7 @@ trait IKeyMap
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     */
   var un: js.UndefOr[
-    js.Function3[
-      /* key */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      Unit
-    ]
+    js.Function3[/* key */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]
   ] = js.undefined
 }
 object IKeyMap {
@@ -95,11 +85,11 @@ object IKeyMap {
   
   extension [Self <: IKeyMap](x: Self) {
     
-    inline def setAddBinding(value: /* binding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addBinding", js.Any.fromFunction1(value))
+    inline def setAddBinding(value: /* binding */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addBinding", js.Any.fromFunction1(value))
     
     inline def setAddBindingUndefined: Self = StObject.set(x, "addBinding", js.undefined)
     
-    inline def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    inline def setBinding(value: Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
     inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
     
@@ -127,21 +117,19 @@ object IKeyMap {
     
     inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
-    inline def setOn(
-      value: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
+    inline def setOn(value: (/* key */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setProcessEvent(value: js.Any): Self = StObject.set(x, "processEvent", value.asInstanceOf[js.Any])
+    inline def setProcessEvent(value: Any): Self = StObject.set(x, "processEvent", value.asInstanceOf[js.Any])
     
-    inline def setProcessEventScope(value: js.Any): Self = StObject.set(x, "processEventScope", value.asInstanceOf[js.Any])
+    inline def setProcessEventScope(value: Any): Self = StObject.set(x, "processEventScope", value.asInstanceOf[js.Any])
     
     inline def setProcessEventScopeUndefined: Self = StObject.set(x, "processEventScope", js.undefined)
     
     inline def setProcessEventUndefined: Self = StObject.set(x, "processEvent", js.undefined)
     
-    inline def setRemoveBinding(value: /* binding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeBinding", js.Any.fromFunction1(value))
+    inline def setRemoveBinding(value: /* binding */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "removeBinding", js.Any.fromFunction1(value))
     
     inline def setRemoveBindingUndefined: Self = StObject.set(x, "removeBinding", js.undefined)
     
@@ -149,13 +137,11 @@ object IKeyMap {
     
     inline def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setUn(
-      value: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
+    inline def setUn(value: (/* key */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
     
     inline def setUnUndefined: Self = StObject.set(x, "un", js.undefined)
   }

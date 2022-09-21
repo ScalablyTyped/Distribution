@@ -1,7 +1,6 @@
 package typings.steamTotp
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object mod {
   
   inline def getTimeOffset(
     callback: js.Function3[
-      /* error */ Error, 
+      /* error */ js.Error, 
       /* offset */ js.UndefOr[Double], 
       /* elapsedTime */ js.UndefOr[Double], 
       Unit

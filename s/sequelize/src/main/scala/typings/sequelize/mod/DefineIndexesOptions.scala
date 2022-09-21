@@ -82,7 +82,7 @@ object DefineIndexesOptions {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: (String | fn | Attribute)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (String | fn | Attribute)*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

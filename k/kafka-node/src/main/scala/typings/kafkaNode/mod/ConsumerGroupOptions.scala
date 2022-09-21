@@ -61,13 +61,13 @@ trait ConsumerGroupOptions extends StObject {
   
   var retryMinTimeout: js.UndefOr[Double] = js.undefined
   
-  var sasl: js.UndefOr[js.Any] = js.undefined
+  var sasl: js.UndefOr[Any] = js.undefined
   
   var sessionTimeout: js.UndefOr[Double] = js.undefined
   
   var ssl: js.UndefOr[Boolean] = js.undefined
   
-  var sslOptions: js.UndefOr[js.Any] = js.undefined
+  var sslOptions: js.UndefOr[Any] = js.undefined
 }
 object ConsumerGroupOptions {
   
@@ -160,7 +160,7 @@ object ConsumerGroupOptions {
     
     inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    inline def setProtocolVarargs(value: (roundrobin | range | CustomPartitionAssignmentProtocol)*): Self = StObject.set(x, "protocol", js.Array(value :_*))
+    inline def setProtocolVarargs(value: (roundrobin | range | CustomPartitionAssignmentProtocol)*): Self = StObject.set(x, "protocol", js.Array(value*))
     
     inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
@@ -174,7 +174,7 @@ object ConsumerGroupOptions {
     
     inline def setRetryMinTimeoutUndefined: Self = StObject.set(x, "retryMinTimeout", js.undefined)
     
-    inline def setSasl(value: js.Any): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
+    inline def setSasl(value: Any): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
     
     inline def setSaslUndefined: Self = StObject.set(x, "sasl", js.undefined)
     
@@ -184,7 +184,7 @@ object ConsumerGroupOptions {
     
     inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    inline def setSslOptions(value: js.Any): Self = StObject.set(x, "sslOptions", value.asInstanceOf[js.Any])
+    inline def setSslOptions(value: Any): Self = StObject.set(x, "sslOptions", value.asInstanceOf[js.Any])
     
     inline def setSslOptionsUndefined: Self = StObject.set(x, "sslOptions", js.undefined)
     

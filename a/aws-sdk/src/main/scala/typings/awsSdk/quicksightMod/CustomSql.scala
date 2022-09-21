@@ -39,7 +39,7 @@ object CustomSql {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "Columns", js.undefined)
     
-    inline def setColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "Columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "Columns", js.Array(value*))
     
     inline def setDataSourceArn(value: Arn): Self = StObject.set(x, "DataSourceArn", value.asInstanceOf[js.Any])
     

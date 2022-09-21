@@ -15,7 +15,7 @@ object desktop extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("openfin", "fin.desktop.Application")
   @js.native
-  class Application protected ()
+  open class Application protected ()
     extends StObject
        with OpenFinApplication {
     /**
@@ -39,7 +39,7 @@ object desktop extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("openfin", "fin.desktop.Notification")
   @js.native
-  class Notification protected ()
+  open class Notification protected ()
     extends StObject
        with OpenFinNotification {
     /**
@@ -62,7 +62,7 @@ object desktop extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("openfin", "fin.desktop.Window")
   @js.native
-  class Window protected ()
+  open class Window protected ()
     extends StObject
        with OpenFinWindow {
     /**

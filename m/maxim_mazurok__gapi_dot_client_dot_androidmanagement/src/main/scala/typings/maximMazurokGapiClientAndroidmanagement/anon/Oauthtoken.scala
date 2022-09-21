@@ -28,7 +28,7 @@ trait Oauthtoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The requested page size. The actual page size may be fixed to a min or max value. */
+  /** The requested page size. This is a hint and the actual page size in the response may be different. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /** A token identifying a page of results returned by the server. */

@@ -29,7 +29,7 @@ object ListDocumentClassificationJobsResponse {
     
     inline def setDocumentClassificationJobPropertiesListUndefined: Self = StObject.set(x, "DocumentClassificationJobPropertiesList", js.undefined)
     
-    inline def setDocumentClassificationJobPropertiesListVarargs(value: DocumentClassificationJobProperties*): Self = StObject.set(x, "DocumentClassificationJobPropertiesList", js.Array(value :_*))
+    inline def setDocumentClassificationJobPropertiesListVarargs(value: DocumentClassificationJobProperties*): Self = StObject.set(x, "DocumentClassificationJobPropertiesList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

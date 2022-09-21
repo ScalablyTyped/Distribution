@@ -1,7 +1,7 @@
 
 # Scala.js typings for saml
 
-Typings are for version 0.13
+Typings are for version 1.0
 
 ## Library description:
 Create SAML assertions. Supports SAML 1.1 and SAML 2.0 tokens.
@@ -10,10 +10,10 @@ Create SAML assertions. Supports SAML 1.1 and SAML 2.0 tokens.
 | ------------------ | :-------------: |
 | Full name          | saml |
 | Keywords           | saml, authentication |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 1172323 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 179006.0 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/node-saml#readme)

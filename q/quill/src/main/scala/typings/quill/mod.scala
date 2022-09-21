@@ -7,6 +7,9 @@ import typings.quill.quillBooleans.`true`
 import typings.quill.quillStrings.`editor-change`
 import typings.quill.quillStrings.`selection-change`
 import typings.quill.quillStrings.`text-change`
+import typings.quill.quillStrings.api
+import typings.quill.quillStrings.silent
+import typings.quill.quillStrings.user
 import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -19,7 +22,7 @@ object mod {
   
   @JSImport("quill", JSImport.Default)
   @js.native
-  class default protected () extends Quill {
+  open class default protected () extends Quill {
     def this(container: String) = this()
     def this(container: Element) = this()
     def this(container: String, options: QuillOptionsStatic) = this()
@@ -36,20 +39,24 @@ object mod {
     inline def debug(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def debug(level: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def find(domNode: Node): Quill | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | js.Any]
-    inline def find(domNode: Node, bubble: Boolean): Quill | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | js.Any]
+    inline def find(domNode: Node): Quill | Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | Any]
+    inline def find(domNode: Node, bubble: Boolean): Quill | Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | Any]
     
-    inline def `import`(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def `import`(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def register(defs: StringMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def register(defs: StringMap, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def register(path: String, `def`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(path: String, `def`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(path: String, `def`: Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @JSImport("quill", "default.sources")
+    @js.native
+    val sources: SourceMap = js.native
   }
   
   @JSImport("quill", "Quill")
   @js.native
-  class Quill protected ()
+  open class Quill protected ()
     extends StObject
        with EventEmitter {
     def this(container: String) = this()
@@ -57,17 +64,17 @@ object mod {
     def this(container: String, options: QuillOptionsStatic) = this()
     def this(container: Element, options: QuillOptionsStatic) = this()
     
-    def addContainer(classNameOrDomNode: String): js.Any = js.native
-    def addContainer(classNameOrDomNode: String, refNode: Node): js.Any = js.native
-    def addContainer(classNameOrDomNode: Node): js.Any = js.native
-    def addContainer(classNameOrDomNode: Node, refNode: Node): js.Any = js.native
+    def addContainer(classNameOrDomNode: String): Any = js.native
+    def addContainer(classNameOrDomNode: String, refNode: Node): Any = js.native
+    def addContainer(classNameOrDomNode: Node): Any = js.native
+    def addContainer(classNameOrDomNode: Node, refNode: Node): Any = js.native
     
     def blur(): Unit = js.native
     
     var clipboard: ClipboardStatic = js.native
     
-    def deleteText(index: Double, length: Double): js.Any = js.native
-    def deleteText(index: Double, length: Double, source: Sources): js.Any = js.native
+    def deleteText(index: Double, length: Double): Any = js.native
+    def deleteText(index: Double, length: Double, source: Sources): Any = js.native
     
     def disable(): Unit = js.native
     
@@ -76,34 +83,34 @@ object mod {
     
     def focus(): Unit = js.native
     
-    def format(name: String, value: js.Any): js.Any = js.native
-    def format(name: String, value: js.Any, source: Sources): js.Any = js.native
+    def format(name: String, value: Any): Any = js.native
+    def format(name: String, value: Any, source: Sources): Any = js.native
     
-    def formatLine(index: Double, length: Double): js.Any = js.native
-    def formatLine(index: Double, length: Double, format: String, value: js.Any): js.Any = js.native
-    def formatLine(index: Double, length: Double, format: String, value: js.Any, source: Sources): js.Any = js.native
-    def formatLine(index: Double, length: Double, formats: StringMap): js.Any = js.native
-    def formatLine(index: Double, length: Double, formats: StringMap, source: Sources): js.Any = js.native
-    def formatLine(index: Double, length: Double, source: Sources): js.Any = js.native
+    def formatLine(index: Double, length: Double): Any = js.native
+    def formatLine(index: Double, length: Double, format: String, value: Any): Any = js.native
+    def formatLine(index: Double, length: Double, format: String, value: Any, source: Sources): Any = js.native
+    def formatLine(index: Double, length: Double, formats: StringMap): Any = js.native
+    def formatLine(index: Double, length: Double, formats: StringMap, source: Sources): Any = js.native
+    def formatLine(index: Double, length: Double, source: Sources): Any = js.native
     
-    def formatText(index: Double, length: Double): js.Any = js.native
-    def formatText(index: Double, length: Double, format: String, value: js.Any): js.Any = js.native
-    def formatText(index: Double, length: Double, format: String, value: js.Any, source: Sources): js.Any = js.native
-    def formatText(index: Double, length: Double, formats: StringMap): js.Any = js.native
-    def formatText(index: Double, length: Double, formats: StringMap, source: Sources): js.Any = js.native
-    def formatText(index: Double, length: Double, source: Sources): js.Any = js.native
-    def formatText(range: RangeStatic, format: String, value: js.Any): js.Any = js.native
-    def formatText(range: RangeStatic, format: String, value: js.Any, source: Sources): js.Any = js.native
-    def formatText(range: RangeStatic, formats: StringMap): js.Any = js.native
-    def formatText(range: RangeStatic, formats: StringMap, source: Sources): js.Any = js.native
+    def formatText(index: Double, length: Double): Any = js.native
+    def formatText(index: Double, length: Double, format: String, value: Any): Any = js.native
+    def formatText(index: Double, length: Double, format: String, value: Any, source: Sources): Any = js.native
+    def formatText(index: Double, length: Double, formats: StringMap): Any = js.native
+    def formatText(index: Double, length: Double, formats: StringMap, source: Sources): Any = js.native
+    def formatText(index: Double, length: Double, source: Sources): Any = js.native
+    def formatText(range: RangeStatic, format: String, value: Any): Any = js.native
+    def formatText(range: RangeStatic, format: String, value: Any, source: Sources): Any = js.native
+    def formatText(range: RangeStatic, formats: StringMap): Any = js.native
+    def formatText(range: RangeStatic, formats: StringMap, source: Sources): Any = js.native
     
     def getBounds(index: Double): BoundsStatic = js.native
     def getBounds(index: Double, length: Double): BoundsStatic = js.native
     
-    def getContents(): js.Any = js.native
-    def getContents(index: Double): js.Any = js.native
-    def getContents(index: Double, length: Double): js.Any = js.native
-    def getContents(index: Unit, length: Double): js.Any = js.native
+    def getContents(): Any = js.native
+    def getContents(index: Double): Any = js.native
+    def getContents(index: Double, length: Double): Any = js.native
+    def getContents(index: Unit, length: Double): Any = js.native
     
     def getFormat(): StringMap = js.native
     def getFormat(index: Double): StringMap = js.native
@@ -111,21 +118,21 @@ object mod {
     def getFormat(range: RangeStatic): StringMap = js.native
     
     // Blot interface is not exported on Parchment
-    def getIndex(blot: js.Any): Double = js.native
+    def getIndex(blot: Any): Double = js.native
     
-    def getLeaf(index: Double): js.Any = js.native
+    def getLeaf(index: Double): Any = js.native
     
     def getLength(): Double = js.native
     
-    def getLine(index: Double): js.Tuple2[js.Any, Double] = js.native
+    def getLine(index: Double): js.Tuple2[Any, Double] = js.native
     
-    def getLines(): js.Array[js.Any] = js.native
-    def getLines(index: Double): js.Array[js.Any] = js.native
-    def getLines(index: Double, length: Double): js.Array[js.Any] = js.native
-    def getLines(index: Unit, length: Double): js.Array[js.Any] = js.native
-    def getLines(range: RangeStatic): js.Array[js.Any] = js.native
+    def getLines(): js.Array[Any] = js.native
+    def getLines(index: Double): js.Array[Any] = js.native
+    def getLines(index: Double, length: Double): js.Array[Any] = js.native
+    def getLines(index: Unit, length: Double): js.Array[Any] = js.native
+    def getLines(range: RangeStatic): js.Array[Any] = js.native
     
-    def getModule(name: String): js.Any = js.native
+    def getModule(name: String): Any = js.native
     
     def getSelection(): RangeStatic | Null = js.native
     @JSName("getSelection")
@@ -140,15 +147,17 @@ object mod {
     
     def hasFocus(): Boolean = js.native
     
-    def insertEmbed(index: Double, `type`: String, value: js.Any): js.Any = js.native
-    def insertEmbed(index: Double, `type`: String, value: js.Any, source: Sources): js.Any = js.native
+    def insertEmbed(index: Double, `type`: String, value: Any): Any = js.native
+    def insertEmbed(index: Double, `type`: String, value: Any, source: Sources): Any = js.native
     
-    def insertText(index: Double, text: String): js.Any = js.native
-    def insertText(index: Double, text: String, format: String, value: js.Any): js.Any = js.native
-    def insertText(index: Double, text: String, format: String, value: js.Any, source: Sources): js.Any = js.native
-    def insertText(index: Double, text: String, formats: StringMap): js.Any = js.native
-    def insertText(index: Double, text: String, formats: StringMap, source: Sources): js.Any = js.native
-    def insertText(index: Double, text: String, source: Sources): js.Any = js.native
+    def insertText(index: Double, text: String): Any = js.native
+    def insertText(index: Double, text: String, format: String, value: Any): Any = js.native
+    def insertText(index: Double, text: String, format: String, value: Any, source: Sources): Any = js.native
+    def insertText(index: Double, text: String, formats: StringMap): Any = js.native
+    def insertText(index: Double, text: String, formats: StringMap, source: Sources): Any = js.native
+    def insertText(index: Double, text: String, source: Sources): Any = js.native
+    
+    def isEnabled(): Boolean = js.native
     
     var keyboard: KeyboardStatic = js.native
     
@@ -163,42 +172,42 @@ object mod {
     def pasteHTML(index: Double, html: String): String = js.native
     def pasteHTML(index: Double, html: String, source: Sources): String = js.native
     
-    def removeFormat(index: Double, length: Double): js.Any = js.native
-    def removeFormat(index: Double, length: Double, source: Sources): js.Any = js.native
+    def removeFormat(index: Double, length: Double): Any = js.native
+    def removeFormat(index: Double, length: Double, source: Sources): Any = js.native
     
     /**
       * Internal API
       */
     var root: HTMLDivElement = js.native
     
-    var scroll: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Blot */ js.Any = js.native
+    var scroll: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Blot */ Any = js.native
     
     def setContents(
-      delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ js.Any
-    ): js.Any = js.native
+      delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ Any
+    ): Any = js.native
     def setContents(
-      delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ js.Any,
+      delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ Any,
       source: Sources
-    ): js.Any = js.native
+    ): Any = js.native
     
     def setSelection(index: Double, length: Double): Unit = js.native
     def setSelection(index: Double, length: Double, source: Sources): Unit = js.native
     def setSelection(range: RangeStatic): Unit = js.native
     def setSelection(range: RangeStatic, source: Sources): Unit = js.native
     
-    def setText(text: String): js.Any = js.native
-    def setText(text: String, source: Sources): js.Any = js.native
+    def setText(text: String): Any = js.native
+    def setText(text: String, source: Sources): Any = js.native
     
     def update(): Unit = js.native
     def update(source: Sources): Unit = js.native
     
     def updateContents(
-      delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ js.Any
-    ): js.Any = js.native
+      delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ Any
+    ): Any = js.native
     def updateContents(
-      delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ js.Any,
+      delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ Any,
       source: Sources
-    ): js.Any = js.native
+    ): Any = js.native
   }
   /* static members */
   object Quill {
@@ -211,20 +220,24 @@ object mod {
     inline def debug(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def debug(level: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def find(domNode: Node): Quill | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | js.Any]
-    inline def find(domNode: Node, bubble: Boolean): Quill | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | js.Any]
+    inline def find(domNode: Node): Quill | Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | Any]
+    inline def find(domNode: Node, bubble: Boolean): Quill | Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | Any]
     
-    inline def `import`(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def `import`(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def register(defs: StringMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def register(defs: StringMap, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def register(path: String, `def`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(path: String, `def`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(path: String, `def`: Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @JSImport("quill", "Quill.sources")
+    @js.native
+    val sources: SourceMap = js.native
   }
   
   @JSImport("quill", "RangeStatic")
   @js.native
-  class RangeStatic () extends StObject {
+  open class RangeStatic () extends StObject {
     
     var index: Double = js.native
     
@@ -269,9 +282,9 @@ object mod {
   }
   
   type ClipboardMatcherCallback = js.Function2[
-    /* node */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ js.Any
+    /* node */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* delta */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ Any
   ]
   
   type ClipboardMatcherNode = String | Double
@@ -281,10 +294,10 @@ object mod {
     
     def addMatcher(selectorOrNodeType: ClipboardMatcherNode, callback: ClipboardMatcherCallback): Unit = js.native
     
-    def convert(): js.Any = js.native
-    def convert(content: Unit, formats: StringMap): js.Any = js.native
-    def convert(content: Html): js.Any = js.native
-    def convert(content: Html, formats: StringMap): js.Any = js.native
+    def convert(): Any = js.native
+    def convert(content: Unit, formats: StringMap): Any = js.native
+    def convert(content: Html): Any = js.native
+    def convert(content: Html, formats: StringMap): Any = js.native
     
     def dangerouslyPasteHTML(html: String): Unit = js.native
     def dangerouslyPasteHTML(html: String, source: Sources): Unit = js.native
@@ -300,7 +313,7 @@ object mod {
     
     var delete: js.UndefOr[Double] = js.undefined
     
-    var insert: js.UndefOr[js.Any] = js.undefined
+    var insert: js.UndefOr[Any] = js.undefined
     
     var retain: js.UndefOr[Double] = js.undefined
   }
@@ -317,7 +330,7 @@ object mod {
       
       inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      inline def setInsert(value: js.Any): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: Any): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
       inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
@@ -329,10 +342,10 @@ object mod {
   
   type EditorChangeHandler = js.Function4[
     `text-change` | `selection-change`, 
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any) | (/* range */ RangeStatic), 
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* oldContents */ js.Any) | (/* oldRange */ RangeStatic), 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* delta */ Any) | (/* range */ RangeStatic), 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* oldContents */ Any) | (/* oldRange */ RangeStatic), 
     /* source */ Sources, 
-    js.Any
+    Any
   ]
   
   @js.native
@@ -362,9 +375,17 @@ object mod {
   
   trait Key extends StObject {
     
+    var altKey: js.UndefOr[Boolean | Null] = js.undefined
+    
+    var ctrlKey: js.UndefOr[Boolean | Null] = js.undefined
+    
     var key: String | Double
     
-    var shortKey: js.UndefOr[Boolean] = js.undefined
+    var metaKey: js.UndefOr[Boolean | Null] = js.undefined
+    
+    var shiftKey: js.UndefOr[Boolean | Null] = js.undefined
+    
+    var shortKey: js.UndefOr[Boolean | Null] = js.undefined
   }
   object Key {
     
@@ -375,9 +396,35 @@ object mod {
     
     extension [Self <: Key](x: Self) {
       
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      
+      inline def setAltKeyNull: Self = StObject.set(x, "altKey", null)
+      
+      inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+      
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      
+      inline def setCtrlKeyNull: Self = StObject.set(x, "ctrlKey", null)
+      
+      inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+      
       inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      
+      inline def setMetaKeyNull: Self = StObject.set(x, "metaKey", null)
+      
+      inline def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
+      
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      
+      inline def setShiftKeyNull: Self = StObject.set(x, "shiftKey", null)
+      
+      inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+      
       inline def setShortKey(value: Boolean): Self = StObject.set(x, "shortKey", value.asInstanceOf[js.Any])
+      
+      inline def setShortKeyNull: Self = StObject.set(x, "shortKey", null)
       
       inline def setShortKeyUndefined: Self = StObject.set(x, "shortKey", js.undefined)
     }
@@ -386,12 +433,8 @@ object mod {
   @js.native
   trait KeyboardStatic extends StObject {
     
-    def addBinding(key: Key, callback: js.Function2[/* range */ RangeStatic, /* context */ js.Any, Unit]): Unit = js.native
-    def addBinding(
-      key: Key,
-      context: js.Any,
-      callback: js.Function2[/* range */ RangeStatic, /* context */ js.Any, Unit]
-    ): Unit = js.native
+    def addBinding(key: Key, callback: js.Function2[/* range */ RangeStatic, /* context */ Any, Unit]): Unit = js.native
+    def addBinding(key: Key, context: Any, callback: js.Function2[/* range */ RangeStatic, /* context */ Any, Unit]): Unit = js.native
   }
   
   trait OptionalAttributes extends StObject {
@@ -454,7 +497,7 @@ object mod {
       
       inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value*))
       
       inline def setModules(value: StringMap): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
@@ -482,7 +525,32 @@ object mod {
     }
   }
   
-  type SelectionChangeHandler = js.Function3[/* range */ RangeStatic, /* oldRange */ RangeStatic, /* source */ Sources, js.Any]
+  type SelectionChangeHandler = js.Function3[/* range */ RangeStatic, /* oldRange */ RangeStatic, /* source */ Sources, Any]
+  
+  trait SourceMap extends StObject {
+    
+    var API: api
+    
+    var SILENT: silent
+    
+    var USER: user
+  }
+  object SourceMap {
+    
+    inline def apply(): SourceMap = {
+      val __obj = js.Dynamic.literal(API = "api", SILENT = "silent", USER = "user")
+      __obj.asInstanceOf[SourceMap]
+    }
+    
+    extension [Self <: SourceMap](x: Self) {
+      
+      inline def setAPI(value: api): Self = StObject.set(x, "API", value.asInstanceOf[js.Any])
+      
+      inline def setSILENT(value: silent): Self = StObject.set(x, "SILENT", value.asInstanceOf[js.Any])
+      
+      inline def setUSER(value: user): Self = StObject.set(x, "USER", value.asInstanceOf[js.Any])
+    }
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.quill.quillStrings.api
@@ -499,12 +567,12 @@ object mod {
     inline def user: typings.quill.quillStrings.user = "user".asInstanceOf[typings.quill.quillStrings.user]
   }
   
-  type StringMap = StringDictionary[js.Any]
+  type StringMap = StringDictionary[Any]
   
   type TextChangeHandler = js.Function3[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* oldContents */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* delta */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* oldContents */ Any, 
     /* source */ Sources, 
-    js.Any
+    Any
   ]
 }

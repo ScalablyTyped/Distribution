@@ -11,9 +11,9 @@ Search CSS(-like) strings
 | Full name          | style-search |
 | Keywords           | css, search, stylelint |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 77784452 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2726730333333334E7 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/davidtheclark/style-search#readme)

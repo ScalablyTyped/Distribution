@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResponseInit extends StObject {
   
+  /* standard dom */
   var headers: js.UndefOr[HeadersInit] = js.undefined
   
+  /* standard dom */
   var status: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var statusText: js.UndefOr[java.lang.String] = js.undefined
 }
 object ResponseInit {
@@ -25,7 +28,7 @@ object ResponseInit {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: js.Array[java.lang.String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: (js.Tuple2[java.lang.String, java.lang.String])*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

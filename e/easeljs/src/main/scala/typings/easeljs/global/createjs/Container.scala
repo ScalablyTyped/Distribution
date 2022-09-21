@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Container")
 @js.native
-class Container ()
+open class Container ()
   extends StObject
      with typings.easeljs.createjs.Container

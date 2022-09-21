@@ -13,34 +13,35 @@ object detailsRowBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsRow.base", "DetailsRowBase")
   @js.native
-  class DetailsRowBase protected ()
-    extends Component[IDetailsRowBaseProps, IDetailsRowState, js.Any] {
+  open class DetailsRowBase protected () extends Component[IDetailsRowBaseProps, IDetailsRowState, Any] {
     def this(props: IDetailsRowBaseProps) = this()
     
-    /* private */ var _cellMeasurer: js.Any = js.native
+    /* private */ var _ariaRowDescriptionId: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _cellMeasurer: Any = js.native
     
-    /* private */ var _dragDropSubscription: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _droppingClassNames: js.Any = js.native
+    /* private */ var _dragDropSubscription: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _droppingClassNames: Any = js.native
     
-    /* private */ var _focusZone: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _getRowDragDropOptions: js.Any = js.native
+    /* private */ var _focusZone: Any = js.native
+    
+    /* private */ var _getRowDragDropOptions: Any = js.native
     
     /** Whether this.props.onDidMount has been called */
-    /* private */ var _onDidMountCalled: js.Any = js.native
+    /* private */ var _onDidMountCalled: Any = js.native
     
     /* protected */ def _onRenderCheck(props: IDetailsRowCheckProps): Element = js.native
     
-    /* private */ var _onSelectionChanged: js.Any = js.native
+    /* private */ var _onSelectionChanged: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _rowClassNames: js.Any = js.native
+    /* private */ var _rowClassNames: Any = js.native
     
     /**
       * update isDropping state based on the input value, which is used to change style during drag and drop
@@ -53,7 +54,7 @@ object detailsRowBaseMod {
       * @param newValue - New isDropping state value
       * @param event - The event trigger dropping state change which can be dragenter, dragleave etc
       */
-    /* private */ var _updateDroppingState: js.Any = js.native
+    /* private */ var _updateDroppingState: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDetailsRowBase(): Unit = js.native

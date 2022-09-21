@@ -4,30 +4,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Implements the document object model (DOM) representation of the font element. The HTML Font Element <font> defines the font size, font face and color of text. */
+/**
+  * Implements the document object model (DOM) representation of the font element. The HTML Font Element <font> defines the font size, font face and color of text.
+  * @deprecated
+  */
 @js.native
 trait HTMLFontElement
   extends StObject
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
   /** @deprecated */
+  /* standard dom */
   var color: java.lang.String = js.native
   
   /**
     * Sets or retrieves the current typeface family.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var face: java.lang.String = js.native
   
   /* InferMemberOverrides */
@@ -42,5 +47,6 @@ trait HTMLFontElement
   ): Unit = js.native
   
   /** @deprecated */
+  /* standard dom */
   var size: java.lang.String = js.native
 }

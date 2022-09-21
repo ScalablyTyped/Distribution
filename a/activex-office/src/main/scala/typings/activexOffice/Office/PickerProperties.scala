@@ -11,7 +11,7 @@ trait PickerProperties extends StObject {
   
   def Add(Id: String, Value: String, Type: MsoPickerField): PickerProperty = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

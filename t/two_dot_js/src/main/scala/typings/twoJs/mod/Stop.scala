@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "Stop")
 @js.native
-class Stop protected () extends StObject {
+open class Stop protected () extends StObject {
   def this(offset: Double, color: String, opacity: Double) = this()
   
   var color: String = js.native

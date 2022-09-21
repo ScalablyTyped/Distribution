@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "ContentRemove")
 @js.native
-class ContentRemove ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class ContentRemove ()
+  extends Component[SvgIconProps, js.Object, Any]

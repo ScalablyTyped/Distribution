@@ -14,7 +14,7 @@ trait DescribeTrialResponse extends StObject {
   /**
     * When the trial was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the trial as displayed. If DisplayName isn't specified, TrialName is displayed.
@@ -34,7 +34,9 @@ trait DescribeTrialResponse extends StObject {
   /**
     * When the trial was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
+  
+  var MetadataProperties: js.UndefOr[typings.awsSdk.sagemakerMod.MetadataProperties] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the source and, optionally, the job type.
@@ -64,7 +66,7 @@ object DescribeTrialResponse {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -80,9 +82,13 @@ object DescribeTrialResponse {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    
+    inline def setMetadataProperties(value: MetadataProperties): Self = StObject.set(x, "MetadataProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataPropertiesUndefined: Self = StObject.set(x, "MetadataProperties", js.undefined)
     
     inline def setSource(value: TrialSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     

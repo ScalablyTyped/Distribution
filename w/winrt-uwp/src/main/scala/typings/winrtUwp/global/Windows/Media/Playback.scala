@@ -36,13 +36,13 @@ object Playback {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_messagereceivedfrombackground(`type`: messagereceivedfrombackground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_messagereceivedfrombackground(`type`: messagereceivedfrombackground, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_messagereceivedfromforeground(`type`: messagereceivedfromforeground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_messagereceivedfromforeground(`type`: messagereceivedfromforeground, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the current instance of the background media player. */
     /* static member */
@@ -62,24 +62,24 @@ object Playback {
     /* static member */
     @JSGlobal("Windows.Media.Playback.BackgroundMediaPlayer.onmessagereceivedfrombackground")
     @js.native
-    def onmessagereceivedfrombackground: EventHandler[js.Any] = js.native
-    inline def onmessagereceivedfrombackground_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onmessagereceivedfrombackground")(x.asInstanceOf[js.Any])
+    def onmessagereceivedfrombackground: EventHandler[Any] = js.native
+    inline def onmessagereceivedfrombackground_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onmessagereceivedfrombackground")(x.asInstanceOf[js.Any])
     
     /** Occurs when a message is received from the foreground task. */
     /* static member */
     @JSGlobal("Windows.Media.Playback.BackgroundMediaPlayer.onmessagereceivedfromforeground")
     @js.native
-    def onmessagereceivedfromforeground: EventHandler[js.Any] = js.native
-    inline def onmessagereceivedfromforeground_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onmessagereceivedfromforeground")(x.asInstanceOf[js.Any])
+    def onmessagereceivedfromforeground: EventHandler[Any] = js.native
+    inline def onmessagereceivedfromforeground_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onmessagereceivedfromforeground")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_messagereceivedfrombackground(`type`: messagereceivedfrombackground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_messagereceivedfrombackground(`type`: messagereceivedfrombackground, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_messagereceivedfromforeground(`type`: messagereceivedfromforeground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_messagereceivedfromforeground(`type`: messagereceivedfromforeground, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sends a message to the background media player.
@@ -126,7 +126,7 @@ object Playback {
   /** Represents a media item that can be played back. This class acts as a wrapper around a MediaSource that exposes the audio tracks, video tracks, and timed metadata tracks included in the media source. */
   @JSGlobal("Windows.Media.Playback.MediaPlaybackItem")
   @js.native
-  class MediaPlaybackItem protected ()
+  open class MediaPlaybackItem protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlaybackItem {
     /* unmapped type */
@@ -145,8 +145,8 @@ object Playback {
     /* static member */
     @JSGlobal("Windows.Media.Playback.MediaPlaybackItem.findFromMediaSource")
     @js.native
-    def findFromMediaSource: js.Any = js.native
-    inline def findFromMediaSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findFromMediaSource")(x.asInstanceOf[js.Any])
+    def findFromMediaSource: Any = js.native
+    inline def findFromMediaSource_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findFromMediaSource")(x.asInstanceOf[js.Any])
   }
   
   /** Represents an error that occurred trying to resolve a MediaPlaybackItem . */
@@ -218,7 +218,7 @@ object Playback {
   @JSGlobal("Windows.Media.Playback.MediaPlaybackList")
   @js.native
   /** Initializes a new instance of the MediaPlaybackList class. */
-  class MediaPlaybackList ()
+  open class MediaPlaybackList ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlaybackList
   
@@ -374,7 +374,7 @@ object Playback {
   /** Represents a marker at specific location in a media stream time-line. */
   @JSGlobal("Windows.Media.Playback.PlaybackMediaMarker")
   @js.native
-  class PlaybackMediaMarker protected ()
+  open class PlaybackMediaMarker protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.PlaybackMediaMarker {
     /**
@@ -419,7 +419,7 @@ object Playback {
   @JSGlobal("Windows.Media.Playback.PlaybackMediaMarkerSequence")
   @js.native
   /** Initializes a new instance of the PlaybackMediaMarkerSequence class. */
-  class PlaybackMediaMarkerSequence ()
+  open class PlaybackMediaMarkerSequence ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.PlaybackMediaMarkerSequence {
     
@@ -487,12 +487,12 @@ object Playback {
   
   @JSGlobal("Windows.Media.Playback.ateChangeRequestedEventArgs")
   @js.native
-  def ateChangeRequestedEventArgs: js.Any = js.native
-  inline def ateChangeRequestedEventArgs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ateChangeRequestedEventArgs")(x.asInstanceOf[js.Any])
+  def ateChangeRequestedEventArgs: Any = js.native
+  inline def ateChangeRequestedEventArgs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ateChangeRequestedEventArgs")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   @JSGlobal("Windows.Media.Playback.ositionChangeRequestedEventArgs")
   @js.native
-  def ositionChangeRequestedEventArgs: js.Any = js.native
-  inline def ositionChangeRequestedEventArgs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ositionChangeRequestedEventArgs")(x.asInstanceOf[js.Any])
+  def ositionChangeRequestedEventArgs: Any = js.native
+  inline def ositionChangeRequestedEventArgs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ositionChangeRequestedEventArgs")(x.asInstanceOf[js.Any])
 }

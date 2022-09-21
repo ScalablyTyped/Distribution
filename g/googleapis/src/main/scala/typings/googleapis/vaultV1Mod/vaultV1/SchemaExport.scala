@@ -4,43 +4,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An export
-  */
 trait SchemaExport extends StObject {
   
   /**
-    * Output only. Export sink for cloud storage files.
+    * Output only. The sink for export files in Cloud Storage.
     */
   var cloudStorageSink: js.UndefOr[SchemaCloudStorageSink] = js.undefined
   
   /**
     * Output only. The time when the export was created.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Advanced options of the export.
+    * Additional export options.
     */
   var exportOptions: js.UndefOr[SchemaExportOptions] = js.undefined
   
   /**
     * Output only. The generated export ID.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. The matter ID.
     */
-  var matterId: js.UndefOr[String] = js.undefined
+  var matterId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The export name.
+    * The export name. Don't use special characters (~!$'(),;@:/?) in the name, they can prevent you from downloading exports.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The search query being exported.
+    * The query parameters used to create the export.
     */
   var query: js.UndefOr[SchemaQuery] = js.undefined
   
@@ -50,14 +47,14 @@ trait SchemaExport extends StObject {
   var requester: js.UndefOr[SchemaUserInfo] = js.undefined
   
   /**
-    * Output only. Export statistics.
+    * Output only. Details about the export progress and size.
     */
   var stats: js.UndefOr[SchemaExportStats] = js.undefined
   
   /**
-    * Output only. The export status.
+    * Output only. The status of the export.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaExport {
   
@@ -74,6 +71,8 @@ object SchemaExport {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setExportOptions(value: SchemaExportOptions): Self = StObject.set(x, "exportOptions", value.asInstanceOf[js.Any])
@@ -82,13 +81,19 @@ object SchemaExport {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
     
+    inline def setMatterIdNull: Self = StObject.set(x, "matterId", null)
+    
     inline def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -105,6 +110,8 @@ object SchemaExport {
     inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

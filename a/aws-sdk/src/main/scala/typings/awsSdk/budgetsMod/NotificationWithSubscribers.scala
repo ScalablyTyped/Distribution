@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotificationWithSubscribers extends StObject {
   
   /**
-    * The notification that is associated with a budget.
+    * The notification that's associated with a budget.
     */
   var Notification: typings.awsSdk.budgetsMod.Notification
   
@@ -29,6 +29,6 @@ object NotificationWithSubscribers {
     
     inline def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
-    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value*))
   }
 }

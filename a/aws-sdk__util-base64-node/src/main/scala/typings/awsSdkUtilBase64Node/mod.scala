@@ -1,6 +1,5 @@
 package typings.awsSdkUtilBase64Node
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromBase64(input: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(input.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def fromBase64(input: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(input.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def toBase64(input: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toBase64(input: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

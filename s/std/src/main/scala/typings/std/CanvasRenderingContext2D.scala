@@ -26,5 +26,9 @@ trait CanvasRenderingContext2D
      with CanvasUserInterface
      with RenderingContext {
   
+  /* standard dom */
   val canvas: HTMLCanvasElement = js.native
+  
+  /* standard dom */
+  def getContextAttributes(): CanvasRenderingContext2DSettings = js.native
 }

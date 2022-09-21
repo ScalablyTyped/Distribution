@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientImageAnnotation")
 @js.native
-class ASPxClientImageAnnotation ()
+open class ASPxClientImageAnnotation ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebChartElementNamed {
   

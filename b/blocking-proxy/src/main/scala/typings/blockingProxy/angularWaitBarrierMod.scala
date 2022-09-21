@@ -12,12 +12,12 @@ object angularWaitBarrierMod {
   
   @JSImport("blocking-proxy/built/lib/angular_wait_barrier", "AngularWaitBarrier")
   @js.native
-  class AngularWaitBarrier protected ()
+  open class AngularWaitBarrier protected ()
     extends StObject
        with WebDriverBarrier {
     def this(client: SimpleWebDriverClient) = this()
     
-    /* private */ var client: js.Any = js.native
+    /* private */ var client: Any = js.native
     
     /**
       * Turn on WebDriver logging.
@@ -35,7 +35,7 @@ object angularWaitBarrierMod {
     
     var rootSelector: String = js.native
     
-    /* private */ def sendRequestToStabilize(command: js.Any): js.Any = js.native
+    /* private */ def sendRequestToStabilize(command: Any): Any = js.native
     
     /**
       * Override the logger instance. Only used for testing.
@@ -59,8 +59,8 @@ object angularWaitBarrierMod {
       */
     def setRootSelector(selector: String): Unit = js.native
     
-    /* private */ def shouldStabilize(command: js.Any): js.Any = js.native
+    /* private */ def shouldStabilize(command: Any): Any = js.native
     
-    /* private */ def waitForAngularData(): js.Any = js.native
+    /* private */ def waitForAngularData(): Any = js.native
   }
 }

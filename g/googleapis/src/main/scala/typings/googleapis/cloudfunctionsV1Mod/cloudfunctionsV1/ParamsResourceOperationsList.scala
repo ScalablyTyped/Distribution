@@ -1,9 +1,5 @@
 package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +9,7 @@ trait ParamsResourceOperationsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Required. A filter for matching the requested operations.<br><br> The
-    * supported formats of <b>filter</b> are:<br> To query for specific
-    * function: <code>project:*,location:*,function:*</code><br> To query for
-    * all of the latest operations for a project:
-    * <code>project:*,latest:true</code>
+    * Required. A filter for matching the requested operations. The supported formats of *filter* are: To query for a specific function: project:*,location:*,function:* To query for all of the latest operations for a project: project:*,latest:true
     */
   var filter: js.UndefOr[String] = js.undefined
   
@@ -32,12 +19,12 @@ trait ParamsResourceOperationsList
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The standard list page size.
+    * The maximum number of records that should be returned. Requested page size cannot exceed 100. If not set, the default page size is 100. Pagination is only supported when querying for a specific function.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The standard list page token.
+    * Token identifying which result to start with, which is returned by a previous list call. Pagination is only supported when querying for a specific function.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -49,10 +36,6 @@ object ParamsResourceOperationsList {
   }
   
   extension [Self <: ParamsResourceOperationsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

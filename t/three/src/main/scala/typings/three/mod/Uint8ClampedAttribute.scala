@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "Uint8ClampedAttribute")
 @js.native
-class Uint8ClampedAttribute protected ()
-  extends typings.three.bufferAttributeMod.Uint8ClampedAttribute {
-  def this(array: js.Any, itemSize: Double) = this()
+open class Uint8ClampedAttribute protected ()
+  extends typings.three.threeMod.Uint8ClampedAttribute {
+  def this(array: Any, itemSize: Double) = this()
 }

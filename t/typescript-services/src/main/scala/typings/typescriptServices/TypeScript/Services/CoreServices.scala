@@ -15,7 +15,7 @@ trait CoreServices extends StObject {
   
   def getDefaultCompilationSettings(): CompilationSettings
   
-  def getMemoryInfo(): js.Array[js.Any]
+  def getMemoryInfo(): js.Array[Any]
   
   def getPreProcessedFileInfo(fileName: String, sourceText: IScriptSnapshot): IPreProcessedFileInfo
   
@@ -27,7 +27,7 @@ object CoreServices {
     collectGarbage: () => Unit,
     dumpMemory: () => String,
     getDefaultCompilationSettings: () => CompilationSettings,
-    getMemoryInfo: () => js.Array[js.Any],
+    getMemoryInfo: () => js.Array[Any],
     getPreProcessedFileInfo: (String, IScriptSnapshot) => IPreProcessedFileInfo,
     host: ICoreServicesHost
   ): CoreServices = {
@@ -43,7 +43,7 @@ object CoreServices {
     
     inline def setGetDefaultCompilationSettings(value: () => CompilationSettings): Self = StObject.set(x, "getDefaultCompilationSettings", js.Any.fromFunction0(value))
     
-    inline def setGetMemoryInfo(value: () => js.Array[js.Any]): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction0(value))
+    inline def setGetMemoryInfo(value: () => js.Array[Any]): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction0(value))
     
     inline def setGetPreProcessedFileInfo(value: (String, IScriptSnapshot) => IPreProcessedFileInfo): Self = StObject.set(x, "getPreProcessedFileInfo", js.Any.fromFunction2(value))
     

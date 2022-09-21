@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StackInstance extends StObject {
   
   /**
-    * The name of the AWS account that the stack instance is associated with.
+    * The name of the Amazon Web Services account that the stack instance is associated with.
     */
   var Account: js.UndefOr[AccountId] = js.undefined
   
   /**
-    * The name of the AWS region that the stack instance is associated with.
+    * The name of the Amazon Web Services Region that the stack instance is associated with.
     */
   var Region: js.UndefOr[typings.awsSdk.servicecatalogMod.Region] = js.undefined
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRegressionLine")
 @js.native
-class ASPxClientRegressionLine ()
+open class ASPxClientRegressionLine ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSingleLevelIndicator {
   

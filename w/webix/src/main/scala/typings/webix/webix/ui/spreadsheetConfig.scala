@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait spreadsheetConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var bottombar: js.UndefOr[Boolean] = js.undefined
   
-  var buttons: js.UndefOr[js.Any] = js.undefined
+  var buttons: js.UndefOr[Any] = js.undefined
   
   var clipboard: js.UndefOr[Boolean] = js.undefined
   
@@ -24,13 +24,13 @@ trait spreadsheetConfig extends StObject {
   
   var columnWidth: js.UndefOr[Double] = js.undefined
   
-  var conditionStyle: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var conditionStyle: js.UndefOr[js.Array[Any]] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -58,7 +58,7 @@ trait spreadsheetConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var padding: js.UndefOr[Any] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
@@ -74,13 +74,13 @@ trait spreadsheetConfig extends StObject {
   
   var sheetTabWidth: js.UndefOr[Double] = js.undefined
   
-  var subbar: js.UndefOr[js.Any] = js.undefined
+  var subbar: js.UndefOr[Any] = js.undefined
   
   var toolbar: js.UndefOr[String | Boolean] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.undefined
+  var url: js.UndefOr[Any] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -95,7 +95,7 @@ object spreadsheetConfig {
   
   extension [Self <: spreadsheetConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -107,7 +107,7 @@ object spreadsheetConfig {
     
     inline def setBottombarUndefined: Self = StObject.set(x, "bottombar", js.undefined)
     
-    inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
@@ -127,25 +127,25 @@ object spreadsheetConfig {
     
     inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    inline def setConditionStyle(value: js.Array[js.Any]): Self = StObject.set(x, "conditionStyle", value.asInstanceOf[js.Any])
+    inline def setConditionStyle(value: js.Array[Any]): Self = StObject.set(x, "conditionStyle", value.asInstanceOf[js.Any])
     
     inline def setConditionStyleUndefined: Self = StObject.set(x, "conditionStyle", js.undefined)
     
-    inline def setConditionStyleVarargs(value: js.Any*): Self = StObject.set(x, "conditionStyle", js.Array(value :_*))
+    inline def setConditionStyleVarargs(value: Any*): Self = StObject.set(x, "conditionStyle", js.Array(value*))
     
     inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
@@ -199,7 +199,7 @@ object spreadsheetConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -231,7 +231,7 @@ object spreadsheetConfig {
     
     inline def setSheetTabWidthUndefined: Self = StObject.set(x, "sheetTabWidth", js.undefined)
     
-    inline def setSubbar(value: js.Any): Self = StObject.set(x, "subbar", value.asInstanceOf[js.Any])
+    inline def setSubbar(value: Any): Self = StObject.set(x, "subbar", value.asInstanceOf[js.Any])
     
     inline def setSubbarUndefined: Self = StObject.set(x, "subbar", js.undefined)
     
@@ -243,7 +243,7 @@ object spreadsheetConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

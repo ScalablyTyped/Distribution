@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isValidHostnameMod {
   
-  @JSImport("@aws-sdk/protocol-http/dist/cjs/isValidHostname", JSImport.Namespace)
+  @JSImport("@aws-sdk/protocol-http/dist-types/isValidHostname", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

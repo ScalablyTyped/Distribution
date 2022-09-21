@@ -37,7 +37,7 @@ trait IOHelper extends StObject {
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  var storage: js.Any = js.native
+  var storage: Any = js.native
   
   /**
     * Writes the specified text to the specified file.

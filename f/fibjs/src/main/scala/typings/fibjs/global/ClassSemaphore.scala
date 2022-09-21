@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassSemaphore ()
+open class ClassSemaphore ()
   extends StObject
      with typings.fibjs.ClassSemaphore {
   def this(value: Double) = this()

@@ -1,42 +1,28 @@
 package typings.firebaseStorageTypes
 
-import typings.firebaseStorageTypes.mod.UploadTaskSnapshot
-import typings.std.Error
+import typings.firebaseUtil.mod.EmulatorMockTokenOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined std.Partial<@firebase/util.@firebase/util.Observer<@firebase/storage-types.@firebase/storage-types.UploadTaskSnapshot>> */
-  trait PartialObserverUploadTask extends StObject {
+  trait MockUserToken extends StObject {
     
-    var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
-    
-    var next: js.UndefOr[js.Function1[/* value */ UploadTaskSnapshot, Unit]] = js.undefined
+    var mockUserToken: js.UndefOr[EmulatorMockTokenOptions | String] = js.undefined
   }
-  object PartialObserverUploadTask {
+  object MockUserToken {
     
-    inline def apply(): PartialObserverUploadTask = {
+    inline def apply(): MockUserToken = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialObserverUploadTask]
+      __obj.asInstanceOf[MockUserToken]
     }
     
-    extension [Self <: PartialObserverUploadTask](x: Self) {
+    extension [Self <: MockUserToken](x: Self) {
       
-      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setMockUserToken(value: EmulatorMockTokenOptions | String): Self = StObject.set(x, "mockUserToken", value.asInstanceOf[js.Any])
       
-      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
-      
-      inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
-      
-      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
-      
-      inline def setNext(value: /* value */ UploadTaskSnapshot => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
-      
-      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setMockUserTokenUndefined: Self = StObject.set(x, "mockUserToken", js.undefined)
     }
   }
 }

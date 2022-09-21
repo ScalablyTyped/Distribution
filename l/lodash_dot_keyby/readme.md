@@ -10,10 +10,10 @@ The lodash method `_.keyBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.keyby |
 | Keywords           | lodash-modularized, keyby |
-| # releases         | 0 |
-| # dependents       | 75 |
-| # downloads        | 2863668 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 365412.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

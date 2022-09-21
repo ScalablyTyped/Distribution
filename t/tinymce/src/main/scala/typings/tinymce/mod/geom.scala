@@ -13,7 +13,7 @@ object geom {
     
     def create(x: Double, y: Double, w: Double, h: Double): Rect
     
-    def findBestRelativePosition(rect: Rect, targetRect: Rect, constrainRect: Rect, rels: js.Array[js.Any]): Unit
+    def findBestRelativePosition(rect: Rect, targetRect: Rect, constrainRect: Rect, rels: js.Array[Any]): Unit
     
     def fromClientRect(clientRect: ClientRect): Rect
     
@@ -28,7 +28,7 @@ object geom {
     inline def apply(
       clamp: (Rect, Rect, Boolean) => Rect,
       create: (Double, Double, Double, Double) => Rect,
-      findBestRelativePosition: (Rect, Rect, Rect, js.Array[js.Any]) => Unit,
+      findBestRelativePosition: (Rect, Rect, Rect, js.Array[Any]) => Unit,
       fromClientRect: ClientRect => Rect,
       inflate: (Rect, Double, Double) => Rect,
       intersect: (Rect, Rect) => Rect,
@@ -44,7 +44,7 @@ object geom {
       
       inline def setCreate(value: (Double, Double, Double, Double) => Rect): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
       
-      inline def setFindBestRelativePosition(value: (Rect, Rect, Rect, js.Array[js.Any]) => Unit): Self = StObject.set(x, "findBestRelativePosition", js.Any.fromFunction4(value))
+      inline def setFindBestRelativePosition(value: (Rect, Rect, Rect, js.Array[Any]) => Unit): Self = StObject.set(x, "findBestRelativePosition", js.Any.fromFunction4(value))
       
       inline def setFromClientRect(value: ClientRect => Rect): Self = StObject.set(x, "fromClientRect", js.Any.fromFunction1(value))
       

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An instruction that copies its inputs (zero or more) to its (single)
-  * output.
-  */
 trait SchemaFlattenInstruction extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaFlattenInstruction {
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: SchemaInstructionInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: SchemaInstructionInput*): Self = StObject.set(x, "inputs", js.Array(value*))
   }
 }

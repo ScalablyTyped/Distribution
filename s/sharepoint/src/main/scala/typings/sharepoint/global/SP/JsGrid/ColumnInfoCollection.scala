@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.ColumnInfoCollection")
 @js.native
-class ColumnInfoCollection protected ()
+open class ColumnInfoCollection protected ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.ColumnInfoCollection {
-  def this(colInfoArray: js.Array[js.Any]) = this()
+  def this(colInfoArray: js.Array[Any]) = this()
 }

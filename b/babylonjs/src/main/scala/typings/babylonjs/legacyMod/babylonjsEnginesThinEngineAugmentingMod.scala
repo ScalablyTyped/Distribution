@@ -2,22 +2,26 @@ package typings.babylonjs.legacyMod
 
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.HTMLVideoElement
-import typings.babylonjs.ImageBitmap
+import typings.babylonjs.OffscreenCanvas
 import typings.babylonjs.anon.PartialRenderTargetCreati
-import typings.babylonjs.depthTextureCreationOptionsMod.DepthTextureCreationOptions
-import typings.babylonjs.engineRenderTargetMod.RenderTargetTextureSize
+import typings.babylonjs.computeEffectMod.IComputeEffectCreationOptions
+import typings.babylonjs.engineComputeShaderMod.ComputeBindingList
+import typings.babylonjs.engineComputeShaderMod.ComputeBindingMapping
+import typings.babylonjs.icanvasMod.ICanvas
+import typings.babylonjs.icomputecontextMod.IComputeContext
+import typings.babylonjs.icomputepipelinecontextMod.IComputePipelineContext
 import typings.babylonjs.ipipelinecontextMod.IPipelineContext
 import typings.babylonjs.multiRenderTargetMod.IMultiRenderTargetOptions
-import typings.babylonjs.renderTargetCreationOptionsMod.RenderTargetCreationOptions
+import typings.babylonjs.textureCreationOptionsMod.DepthTextureCreationOptions
+import typings.babylonjs.textureCreationOptionsMod.RenderTargetCreationOptions
+import typings.babylonjs.textureCreationOptionsMod.TextureSize
 import typings.babylonjs.typesMod.DataArray
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
 import typings.std.ImageData
-import typings.std.OffscreenCanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,28 +35,42 @@ object babylonjsEnginesThinEngineAugmentingMod {
     /** @hidden */
     def _cascadeLoadFiles(
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      onfinish: js.Function1[/* images */ js.Array[ArrayBuffer], Unit],
+      onfinish: js.Function1[/* images */ js.Array[js.typedarray.ArrayBuffer], Unit],
       files: js.Array[String],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
     ): Unit = js.native
     
     /** @hidden */
     def _cascadeLoadImgs(
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
+      texture: typings.babylonjs.internalTextureMod.InternalTexture,
+      onfinish: Nullable[
+          js.Function2[
+            /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+            /* images */ js.Array[HTMLImageElement | ImageBitmap], 
+            Unit
+          ]
+        ],
       files: js.Array[String],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
     ): Unit = js.native
     def _cascadeLoadImgs(
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
+      texture: typings.babylonjs.internalTextureMod.InternalTexture,
+      onfinish: Nullable[
+          js.Function2[
+            /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+            /* images */ js.Array[HTMLImageElement | ImageBitmap], 
+            Unit
+          ]
+        ],
       files: js.Array[String],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       mimeType: String
     ): Unit = js.native
@@ -62,21 +80,54 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * This is only available in WebGL 2.
       * @param size The size of face edge in the cube texture.
       * @param options The options defining the cube texture.
+      * @param rtWrapper The render target wrapper for which the depth/stencil texture must be created
       * @returns The cube texture
       */
-    def _createDepthStencilCubeTexture(size: Double, options: DepthTextureCreationOptions): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def _createDepthStencilCubeTexture(
+      size: Double,
+      options: DepthTextureCreationOptions,
+      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     
     /** @hidden */
-    def _createDepthStencilTexture(size: RenderTargetTextureSize, options: DepthTextureCreationOptions): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def _createDepthStencilTexture(
+      size: TextureSize,
+      options: DepthTextureCreationOptions,
+      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    
+    /** @hidden */
+    def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: TextureSize): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    
+    /** @hidden */
+    def _debugFlushPendingCommands(): Unit = js.native
+    
+    /** @hidden */
+    def _debugInsertMarker(text: String): Unit = js.native
+    def _debugInsertMarker(text: String, targetObject: Double): Unit = js.native
+    
+    /** @hidden */
+    def _debugPopGroup(): Unit = js.native
+    def _debugPopGroup(targetObject: Double): Unit = js.native
+    
+    /** @hidden */
+    def _debugPushGroup(groupName: String): Unit = js.native
+    def _debugPushGroup(groupName: String, targetObject: Double): Unit = js.native
+    
+    /** @hidden */
+    def _deleteComputePipelineContext(pipelineContext: IComputePipelineContext): Unit = js.native
+    
+    /** @hidden */
+    def _executeWhenComputeStateIsCompiled(pipelineContext: IComputePipelineContext, action: js.Function0[Unit]): Unit = js.native
     
     /** @hidden */
     def _partialLoadFile(
       url: String,
       index: Double,
-      loadedFiles: js.Array[ArrayBuffer],
-      onfinish: js.Function1[/* files */ js.Array[ArrayBuffer], Unit],
+      loadedFiles: js.Array[js.typedarray.ArrayBuffer],
+      onfinish: js.Function1[/* files */ js.Array[js.typedarray.ArrayBuffer], Unit],
       onErrorCallBack: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
     ): Unit = js.native
     
@@ -84,84 +135,93 @@ object babylonjsEnginesThinEngineAugmentingMod {
     def _partialLoadImg(
       url: String,
       index: Double,
-      loadedImages: js.Array[HTMLImageElement],
+      loadedImages: js.Array[HTMLImageElement | ImageBitmap],
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
-      onErrorCallBack: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
-        ]
+      texture: typings.babylonjs.internalTextureMod.InternalTexture,
+      onfinish: Nullable[
+          js.Function2[
+            /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+            /* images */ js.Array[HTMLImageElement | ImageBitmap], 
+            Unit
+          ]
+        ],
+      onErrorCallBack: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[Any], Unit]]
     ): Unit = js.native
     def _partialLoadImg(
       url: String,
       index: Double,
-      loadedImages: js.Array[HTMLImageElement],
+      loadedImages: js.Array[HTMLImageElement | ImageBitmap],
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      onfinish: js.Function1[/* images */ js.Array[HTMLImageElement], Unit],
-      onErrorCallBack: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      texture: typings.babylonjs.internalTextureMod.InternalTexture,
+      onfinish: Nullable[
+          js.Function2[
+            /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+            /* images */ js.Array[HTMLImageElement | ImageBitmap], 
+            Unit
+          ]
         ],
+      onErrorCallBack: Nullable[js.Function2[js.UndefOr[String], js.UndefOr[Any], Unit]],
       mimeType: String
     ): Unit = js.native
     
     /** @hidden */
-    def _readTexturePixels(texture: typings.babylonjs.internalTextureMod.InternalTexture, width: Double, height: Double): ArrayBufferView = js.native
+    def _prepareComputePipelineContext(
+      pipelineContext: IComputePipelineContext,
+      computeSourceCode: String,
+      rawComputeSourceCode: String,
+      defines: Nullable[String],
+      entryPoint: String
+    ): Unit = js.native
+    
+    /** @hidden */
     def _readTexturePixels(
       texture: typings.babylonjs.internalTextureMod.InternalTexture,
       width: Double,
       height: Double,
-      faceIndex: Double
-    ): ArrayBufferView = js.native
-    def _readTexturePixels(
+      faceIndex: js.UndefOr[Double],
+      level: js.UndefOr[Double],
+      buffer: js.UndefOr[Nullable[js.typedarray.ArrayBufferView]],
+      flushRenderer: js.UndefOr[Boolean],
+      noDataConversion: js.UndefOr[Boolean],
+      x: js.UndefOr[Double],
+      y: js.UndefOr[Double]
+    ): js.Promise[js.typedarray.ArrayBufferView] = js.native
+    
+    /** @hidden */
+    def _readTexturePixelsSync(
       texture: typings.babylonjs.internalTextureMod.InternalTexture,
       width: Double,
       height: Double,
-      faceIndex: Double,
-      level: Double
-    ): ArrayBufferView = js.native
-    def _readTexturePixels(
-      texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      width: Double,
-      height: Double,
-      faceIndex: Double,
-      level: Double,
-      buffer: Nullable[ArrayBufferView]
-    ): ArrayBufferView = js.native
-    def _readTexturePixels(
-      texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      width: Double,
-      height: Double,
-      faceIndex: Double,
-      level: Unit,
-      buffer: Nullable[ArrayBufferView]
-    ): ArrayBufferView = js.native
-    def _readTexturePixels(
-      texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      width: Double,
-      height: Double,
-      faceIndex: Unit,
-      level: Double
-    ): ArrayBufferView = js.native
-    def _readTexturePixels(
-      texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      width: Double,
-      height: Double,
-      faceIndex: Unit,
-      level: Double,
-      buffer: Nullable[ArrayBufferView]
-    ): ArrayBufferView = js.native
-    def _readTexturePixels(
-      texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      width: Double,
-      height: Double,
-      faceIndex: Unit,
-      level: Unit,
-      buffer: Nullable[ArrayBufferView]
-    ): ArrayBufferView = js.native
+      faceIndex: js.UndefOr[Double],
+      level: js.UndefOr[Double],
+      buffer: js.UndefOr[Nullable[js.typedarray.ArrayBufferView]],
+      flushRenderer: js.UndefOr[Boolean],
+      noDataConversion: js.UndefOr[Boolean],
+      x: js.UndefOr[Double],
+      y: js.UndefOr[Double]
+    ): js.typedarray.ArrayBufferView = js.native
+    
+    /** @hidden */
+    def _rebuildComputeEffects(): Unit = js.native
+    
+    /** @hidden */
+    def _releaseComputeEffect(effect: typings.babylonjs.computeEffectMod.ComputeEffect): Unit = js.native
     
     /**
       * @hidden
       */
     def _setCubeMapTextureParams(texture: typings.babylonjs.internalTextureMod.InternalTexture, loadMipmap: Boolean): Unit = js.native
+    def _setCubeMapTextureParams(
+      texture: typings.babylonjs.internalTextureMod.InternalTexture,
+      loadMipmap: Boolean,
+      maxLevel: Double
+    ): Unit = js.native
+    
+    /**
+      * Gets a boolean indicating if all created compute effects are ready
+      * @returns true if all effects are ready
+      */
+    def areAllComputeEffectsReady(): Boolean = js.native
     
     /**
       * Select a subsets of attachments to draw to.
@@ -187,8 +247,9 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * Bind a buffer to the current webGL context at a given location
       * @param buffer defines the buffer to bind
       * @param location defines the index where to bind the buffer
+      * @param name Name of the uniform variable to bind
       */
-    def bindUniformBufferBase(buffer: typings.babylonjs.dataBufferMod.DataBuffer, location: Double): Unit = js.native
+    def bindUniformBufferBase(buffer: typings.babylonjs.dataBufferMod.DataBuffer, location: Double, name: String): Unit = js.native
     
     /**
       * Creates a layout object to draw/clear on specific textures in a MRT
@@ -196,6 +257,102 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @returns A layout to be fed to the engine, calling `bindAttachments`.
       */
     def buildTextureLayout(textureStatus: js.Array[Boolean]): js.Array[Double] = js.native
+    
+    /**
+      * Dispatches a compute shader
+      * @param effect The compute effect
+      * @param context The compute context
+      * @param bindings The list of resources to bind to the shader
+      * @param x The number of workgroups to execute on the X dimension
+      * @param y The number of workgroups to execute on the Y dimension
+      * @param z The number of workgroups to execute on the Z dimension
+      * @param bindingsMapping list of bindings mapping (key is property name, value is binding location)
+      */
+    def computeDispatch(
+      effect: typings.babylonjs.computeEffectMod.ComputeEffect,
+      context: IComputeContext,
+      bindings: ComputeBindingList,
+      x: Double
+    ): Unit = js.native
+    def computeDispatch(
+      effect: typings.babylonjs.computeEffectMod.ComputeEffect,
+      context: IComputeContext,
+      bindings: ComputeBindingList,
+      x: Double,
+      y: Double
+    ): Unit = js.native
+    def computeDispatch(
+      effect: typings.babylonjs.computeEffectMod.ComputeEffect,
+      context: IComputeContext,
+      bindings: ComputeBindingList,
+      x: Double,
+      y: Double,
+      z: Double
+    ): Unit = js.native
+    def computeDispatch(
+      effect: typings.babylonjs.computeEffectMod.ComputeEffect,
+      context: IComputeContext,
+      bindings: ComputeBindingList,
+      x: Double,
+      y: Double,
+      z: Double,
+      bindingsMapping: ComputeBindingMapping
+    ): Unit = js.native
+    def computeDispatch(
+      effect: typings.babylonjs.computeEffectMod.ComputeEffect,
+      context: IComputeContext,
+      bindings: ComputeBindingList,
+      x: Double,
+      y: Double,
+      z: Unit,
+      bindingsMapping: ComputeBindingMapping
+    ): Unit = js.native
+    def computeDispatch(
+      effect: typings.babylonjs.computeEffectMod.ComputeEffect,
+      context: IComputeContext,
+      bindings: ComputeBindingList,
+      x: Double,
+      y: Unit,
+      z: Double
+    ): Unit = js.native
+    def computeDispatch(
+      effect: typings.babylonjs.computeEffectMod.ComputeEffect,
+      context: IComputeContext,
+      bindings: ComputeBindingList,
+      x: Double,
+      y: Unit,
+      z: Double,
+      bindingsMapping: ComputeBindingMapping
+    ): Unit = js.native
+    def computeDispatch(
+      effect: typings.babylonjs.computeEffectMod.ComputeEffect,
+      context: IComputeContext,
+      bindings: ComputeBindingList,
+      x: Double,
+      y: Unit,
+      z: Unit,
+      bindingsMapping: ComputeBindingMapping
+    ): Unit = js.native
+    
+    /**
+      * Creates a new compute context
+      * @returns the new context
+      */
+    def createComputeContext(): js.UndefOr[IComputeContext] = js.native
+    
+    /**
+      * Creates a new compute effect
+      * @param baseName Name of the effect
+      * @param options Options used to create the effect
+      * @returns The new compute effect
+      */
+    def createComputeEffect(baseName: Any, options: IComputeEffectCreationOptions): typings.babylonjs.computeEffectMod.ComputeEffect = js.native
+    
+    /**
+      * Creates a new compute pipeline context
+      * @returns the new pipeline
+      */
+    def createComputePipelineContext(): IComputePipelineContext = js.native
     
     /**
       * Creates a cube texture
@@ -214,12 +371,12 @@ object babylonjsEnginesThinEngineAugmentingMod {
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     /**
       * Creates a cube texture
@@ -241,12 +398,12 @@ object babylonjsEnginesThinEngineAugmentingMod {
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean,
       lodScale: Double,
       lodOffset: Double
@@ -266,6 +423,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
       * @param fallback defines texture to use while falling back when (compressed) texture file not found.
       * @param loaderOptions options to be passed to the loader
+      * @param useSRGBBuffer defines if the texture must be loaded in a sRGB GPU buffer (if supported by the GPU).
       * @returns the cube texture as an InternalTexture
       */
     def createCubeTexture(
@@ -273,41 +431,42 @@ object babylonjsEnginesThinEngineAugmentingMod {
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean,
       lodScale: Double,
       lodOffset: Double,
       fallback: Nullable[typings.babylonjs.internalTextureMod.InternalTexture],
-      loaderOptions: js.Any
+      loaderOptions: Any,
+      useSRGBBuffer: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createCubeTexture(
       rootUrl: String,
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createCubeTexture(
       rootUrl: String,
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean,
       lodScale: Double,
       lodOffset: Double
@@ -317,51 +476,118 @@ object babylonjsEnginesThinEngineAugmentingMod {
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean,
       lodScale: Double,
       lodOffset: Double,
       fallback: Nullable[typings.babylonjs.internalTextureMod.InternalTexture],
-      loaderOptions: js.Any
+      loaderOptions: Any,
+      useSRGBBuffer: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createCubeTexture(
       rootUrl: String,
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Unit,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean,
       lodScale: Double,
       lodOffset: Double,
       fallback: Nullable[typings.babylonjs.internalTextureMod.InternalTexture],
-      loaderOptions: js.Any
+      loaderOptions: Any,
+      useSRGBBuffer: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createCubeTexture(
       rootUrl: String,
       scene: Nullable[typings.babylonjs.sceneMod.Scene],
       files: Nullable[js.Array[String]],
       noMipmap: Unit,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean,
       lodScale: Double,
       lodOffset: Double,
       fallback: Nullable[typings.babylonjs.internalTextureMod.InternalTexture],
-      loaderOptions: js.Any
+      loaderOptions: Any,
+      useSRGBBuffer: Boolean
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    
+    /** @hidden */
+    def createCubeTextureBase(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+        ],
+      format: Double,
+      forcedExtension: Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double,
+      fallback: Nullable[typings.babylonjs.internalTextureMod.InternalTexture],
+      beforeLoadCubeDataCallback: Nullable[
+          js.Function2[
+            /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+            /* data */ js.typedarray.ArrayBufferView | js.Array[js.typedarray.ArrayBufferView], 
+            Unit
+          ]
+        ],
+      imageHandler: Nullable[
+          js.Function2[
+            /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+            /* imgs */ js.Array[HTMLImageElement | ImageBitmap], 
+            Unit
+          ]
+        ],
+      useSRGBBuffer: Boolean
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createCubeTextureBase(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      files: Nullable[js.Array[String]],
+      noMipmap: Boolean,
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+        ],
+      format: Unit,
+      forcedExtension: Any,
+      createPolynomials: Boolean,
+      lodScale: Double,
+      lodOffset: Double,
+      fallback: Nullable[typings.babylonjs.internalTextureMod.InternalTexture],
+      beforeLoadCubeDataCallback: Nullable[
+          js.Function2[
+            /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+            /* data */ js.typedarray.ArrayBufferView | js.Array[js.typedarray.ArrayBufferView], 
+            Unit
+          ]
+        ],
+      imageHandler: Nullable[
+          js.Function2[
+            /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+            /* imgs */ js.Array[HTMLImageElement | ImageBitmap], 
+            Unit
+          ]
+        ],
+      useSRGBBuffer: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     
     /**
@@ -369,9 +595,14 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * This is only available in WebGL 2 or with the depth texture extension available.
       * @param size The size of face edge in the texture.
       * @param options The options defining the texture.
+      * @param rtWrapper The render target wrapper for which the depth/stencil texture must be created
       * @returns The texture
       */
-    def createDepthStencilTexture(size: RenderTargetTextureSize, options: DepthTextureCreationOptions): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createDepthStencilTexture(
+      size: TextureSize,
+      options: DepthTextureCreationOptions,
+      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     
     /**
       * Creates a dynamic texture
@@ -392,13 +623,22 @@ object babylonjsEnginesThinEngineAugmentingMod {
     def createDynamicUniformBuffer(elements: FloatArray): typings.babylonjs.dataBufferMod.DataBuffer = js.native
     
     /**
+      * Creates an external texture
+      * @param video video element
+      * @returns the external texture, or null if external textures are not supported by the engine
+      */
+    def createExternalTexture(video: HTMLVideoElement): Nullable[typings.babylonjs.externalTextureMod.ExternalTexture] = js.native
+    
+    /**
       * Create a multi render target texture
       * @see https://doc.babylonjs.com/features/webgl2#multiple-render-target
       * @param size defines the size of the texture
       * @param options defines the creation options
-      * @returns the cube texture as an InternalTexture
+      * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
+      * @returns a new render target wrapper ready to render textures
       */
-    def createMultipleRenderTarget(size: js.Any, options: IMultiRenderTargetOptions): js.Array[typings.babylonjs.internalTextureMod.InternalTexture] = js.native
+    def createMultipleRenderTarget(size: TextureSize, options: IMultiRenderTargetOptions): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createMultipleRenderTarget(size: TextureSize, options: IMultiRenderTargetOptions, initializeBuffers: Boolean): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
     
     /**
       * Create a cube texture from prefiltered data (ie. the mipmaps contain ready to use data for PBR reflection)
@@ -436,7 +676,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Unit,
       onError: Unit,
       format: Double,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -446,7 +686,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Unit,
       onError: Unit,
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -468,7 +708,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Unit,
       onError: Unit,
       format: Unit,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -478,7 +718,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Unit,
       onError: Unit,
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -499,7 +739,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -509,7 +749,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
@@ -520,10 +760,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -532,10 +772,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -545,7 +785,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
       forcedExtension: Unit,
@@ -558,10 +798,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -570,10 +810,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -583,128 +823,8 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
-      format: Unit,
-      forcedExtension: Unit,
-      createPolynomials: Boolean
-    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: Nullable[
-          js.Function1[
-            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
-            Unit
-          ]
-        ]
-    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: Nullable[
-          js.Function1[
-            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
-            Unit
-          ]
-        ],
-      onError: Unit,
-      format: Double
-    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: Nullable[
-          js.Function1[
-            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
-            Unit
-          ]
-        ],
-      onError: Unit,
-      format: Double,
-      forcedExtension: js.Any
-    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: Nullable[
-          js.Function1[
-            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
-            Unit
-          ]
-        ],
-      onError: Unit,
-      format: Double,
-      forcedExtension: js.Any,
-      createPolynomials: Boolean
-    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: Nullable[
-          js.Function1[
-            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
-            Unit
-          ]
-        ],
-      onError: Unit,
-      format: Double,
-      forcedExtension: Unit,
-      createPolynomials: Boolean
-    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: Nullable[
-          js.Function1[
-            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
-            Unit
-          ]
-        ],
-      onError: Unit,
-      format: Unit,
-      forcedExtension: js.Any
-    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: Nullable[
-          js.Function1[
-            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
-            Unit
-          ]
-        ],
-      onError: Unit,
-      format: Unit,
-      forcedExtension: js.Any,
-      createPolynomials: Boolean
-    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createPrefilteredCubeTexture(
-      rootUrl: String,
-      scene: Nullable[typings.babylonjs.sceneMod.Scene],
-      lodScale: Double,
-      lodOffset: Double,
-      onLoad: Nullable[
-          js.Function1[
-            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
-            Unit
-          ]
-        ],
-      onError: Unit,
       format: Unit,
       forcedExtension: Unit,
       createPolynomials: Boolean
@@ -719,9 +839,6 @@ object babylonjsEnginesThinEngineAugmentingMod {
             /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
             Unit
           ]
-        ],
-      onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
         ]
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -735,8 +852,131 @@ object babylonjsEnginesThinEngineAugmentingMod {
             Unit
           ]
         ],
+      onError: Unit,
+      format: Double
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[
+          js.Function1[
+            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
+            Unit
+          ]
+        ],
+      onError: Unit,
+      format: Double,
+      forcedExtension: Any
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[
+          js.Function1[
+            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
+            Unit
+          ]
+        ],
+      onError: Unit,
+      format: Double,
+      forcedExtension: Any,
+      createPolynomials: Boolean
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[
+          js.Function1[
+            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
+            Unit
+          ]
+        ],
+      onError: Unit,
+      format: Double,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[
+          js.Function1[
+            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
+            Unit
+          ]
+        ],
+      onError: Unit,
+      format: Unit,
+      forcedExtension: Any
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[
+          js.Function1[
+            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
+            Unit
+          ]
+        ],
+      onError: Unit,
+      format: Unit,
+      forcedExtension: Any,
+      createPolynomials: Boolean
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[
+          js.Function1[
+            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
+            Unit
+          ]
+        ],
+      onError: Unit,
+      format: Unit,
+      forcedExtension: Unit,
+      createPolynomials: Boolean
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[
+          js.Function1[
+            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
+            Unit
+          ]
+        ],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+        ]
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createPrefilteredCubeTexture(
+      rootUrl: String,
+      scene: Nullable[typings.babylonjs.sceneMod.Scene],
+      lodScale: Double,
+      lodOffset: Double,
+      onLoad: Nullable[
+          js.Function1[
+            /* internalTexture */ Nullable[typings.babylonjs.internalTextureMod.InternalTexture], 
+            Unit
+          ]
+        ],
+      onError: Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
@@ -752,10 +992,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
           ]
         ],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -769,10 +1009,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
           ]
         ],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -787,7 +1027,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
           ]
         ],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
       forcedExtension: Unit,
@@ -805,10 +1045,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
           ]
         ],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -822,10 +1062,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
           ]
         ],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -840,7 +1080,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
           ]
         ],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
       forcedExtension: Unit,
@@ -860,7 +1100,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @returns the cube texture as an InternalTexture
       */
     def createRawCubeTexture(
-      data: Nullable[js.Array[ArrayBufferView]],
+      data: Nullable[js.Array[js.typedarray.ArrayBufferView]],
       size: Double,
       format: Double,
       `type`: Double,
@@ -891,13 +1131,19 @@ object babylonjsEnginesThinEngineAugmentingMod {
       format: Double,
       `type`: Double,
       noMipmap: Boolean,
-      callback: js.Function1[/* ArrayBuffer */ ArrayBuffer, Nullable[js.Array[ArrayBufferView]]],
+      callback: js.Function1[
+          /* ArrayBuffer */ js.typedarray.ArrayBuffer, 
+          Nullable[js.Array[js.typedarray.ArrayBufferView]]
+        ],
       mipmapGenerator: Nullable[
-          js.Function1[/* faces */ js.Array[ArrayBufferView], js.Array[js.Array[ArrayBufferView]]]
+          js.Function1[
+            /* faces */ js.Array[js.typedarray.ArrayBufferView], 
+            js.Array[js.Array[js.typedarray.ArrayBufferView]]
+          ]
         ],
       onLoad: Nullable[js.Function0[Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     /**
@@ -923,13 +1169,19 @@ object babylonjsEnginesThinEngineAugmentingMod {
       format: Double,
       `type`: Double,
       noMipmap: Boolean,
-      callback: js.Function1[/* ArrayBuffer */ ArrayBuffer, Nullable[js.Array[ArrayBufferView]]],
+      callback: js.Function1[
+          /* ArrayBuffer */ js.typedarray.ArrayBuffer, 
+          Nullable[js.Array[js.typedarray.ArrayBufferView]]
+        ],
       mipmapGenerator: Nullable[
-          js.Function1[/* faces */ js.Array[ArrayBufferView], js.Array[js.Array[ArrayBufferView]]]
+          js.Function1[
+            /* faces */ js.Array[js.typedarray.ArrayBufferView], 
+            js.Array[js.Array[js.typedarray.ArrayBufferView]]
+          ]
         ],
       onLoad: Nullable[js.Function0[Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       samplingMode: Double,
       invertY: Boolean
@@ -946,10 +1198,12 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param samplingMode defines the required sampling mode (Texture.NEAREST_SAMPLINGMODE by default)
       * @param compression defines the compression used (null by default)
       * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+      * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
+      * @param useSRGBBuffer defines if the texture must be loaded in a sRGB GPU buffer (if supported by the GPU).
       * @returns the raw texture inside an InternalTexture
       */
     def createRawTexture(
-      data: Nullable[ArrayBufferView],
+      data: Nullable[js.typedarray.ArrayBufferView],
       width: Double,
       height: Double,
       format: Double,
@@ -958,6 +1212,44 @@ object babylonjsEnginesThinEngineAugmentingMod {
       samplingMode: Double,
       compression: Nullable[String],
       `type`: Double
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      `type`: Double,
+      creationFlags: Double
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      `type`: Double,
+      creationFlags: Double,
+      useSRGBBuffer: Boolean
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      `type`: Double,
+      creationFlags: Unit,
+      useSRGBBuffer: Boolean
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     
     /**
@@ -972,10 +1264,11 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param samplingMode defines the required sampling mode (like Texture.NEAREST_SAMPLINGMODE)
       * @param compression defines the compressed used (can be null)
       * @param textureType defines the compressed used (can be null)
+      * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
       * @returns a new raw 2D array texture (stored in an InternalTexture)
       */
     def createRawTexture2DArray(
-      data: Nullable[ArrayBufferView],
+      data: Nullable[js.typedarray.ArrayBufferView],
       width: Double,
       height: Double,
       depth: Double,
@@ -985,6 +1278,19 @@ object babylonjsEnginesThinEngineAugmentingMod {
       samplingMode: Double,
       compression: Nullable[String],
       textureType: Double
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createRawTexture2DArray(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      depth: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      textureType: Double,
+      creationFlags: Double
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     
     /**
@@ -999,10 +1305,11 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param samplingMode defines the required sampling mode (like Texture.NEAREST_SAMPLINGMODE)
       * @param compression defines the compressed used (can be null)
       * @param textureType defines the compressed used (can be null)
+      * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
       * @returns a new raw 3D texture (stored in an InternalTexture)
       */
     def createRawTexture3D(
-      data: Nullable[ArrayBufferView],
+      data: Nullable[js.typedarray.ArrayBufferView],
       width: Double,
       height: Double,
       depth: Double,
@@ -1013,24 +1320,46 @@ object babylonjsEnginesThinEngineAugmentingMod {
       compression: Nullable[String],
       textureType: Double
     ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createRawTexture3D(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      depth: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      textureType: Double,
+      creationFlags: Double
+    ): typings.babylonjs.internalTextureMod.InternalTexture = js.native
     
     /**
-      * Creates a new render target cube texture
+      * Creates a new render target cube wrapper
       * @param size defines the size of the texture
       * @param options defines the options used to create the texture
-      * @returns a new render target cube texture stored in an InternalTexture
+      * @returns a new render target cube wrapper
       */
-    def createRenderTargetCubeTexture(size: Double): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createRenderTargetCubeTexture(size: Double): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
     
     /**
       * Creates a new render target texture
       * @param size defines the size of the texture
       * @param options defines the options used to create the texture
-      * @returns a new render target texture stored in an InternalTexture
+      * @returns a new render target wrapper ready to render texture
       */
-    def createRenderTargetTexture(size: RenderTargetTextureSize, options: Boolean): typings.babylonjs.internalTextureMod.InternalTexture = js.native
-    def createRenderTargetTexture(size: RenderTargetTextureSize, options: RenderTargetCreationOptions): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createRenderTargetTexture(size: TextureSize, options: Boolean): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createRenderTargetTexture(size: TextureSize, options: RenderTargetCreationOptions): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    
+    def createStorageBuffer(data: Double, creationFlags: Double): typings.babylonjs.dataBufferMod.DataBuffer = js.native
+    /**
+      * Creates a storage buffer
+      * @param data the data for the storage buffer or the size of the buffer
+      * @param creationFlags flags to use when creating the buffer (see Constants.BUFFER_CREATIONFLAG_XXX). The BUFFER_CREATIONFLAG_STORAGE flag will be automatically added
+      * @returns the new buffer
+      */
+    def createStorageBuffer(data: DataArray, creationFlags: Double): typings.babylonjs.dataBufferMod.DataBuffer = js.native
     
     /**
       * Create an uniform buffer
@@ -1054,9 +1383,58 @@ object babylonjsEnginesThinEngineAugmentingMod {
     def getAlphaMode(): Double = js.native
     
     /**
+      * Read data from a storage buffer
+      * @param storageBuffer The storage buffer to read from
+      * @param offset The offset in the storage buffer to start reading from (default: 0)
+      * @param size  The number of bytes to read from the storage buffer (default: capacity of the buffer)
+      * @param buffer The buffer to write the data we have read from the storage buffer to (optional)
+      * @returns If not undefined, returns the (promise) buffer (as provided by the 4th parameter) filled with the data, else it returns a (promise) Uint8Array with the data read from the storage buffer
+      */
+    def readFromStorageBuffer(storageBuffer: typings.babylonjs.dataBufferMod.DataBuffer): js.Promise[js.typedarray.ArrayBufferView] = js.native
+    def readFromStorageBuffer(storageBuffer: typings.babylonjs.dataBufferMod.DataBuffer, offset: Double): js.Promise[js.typedarray.ArrayBufferView] = js.native
+    def readFromStorageBuffer(storageBuffer: typings.babylonjs.dataBufferMod.DataBuffer, offset: Double, size: Double): js.Promise[js.typedarray.ArrayBufferView] = js.native
+    def readFromStorageBuffer(
+      storageBuffer: typings.babylonjs.dataBufferMod.DataBuffer,
+      offset: Double,
+      size: Double,
+      buffer: js.typedarray.ArrayBufferView
+    ): js.Promise[js.typedarray.ArrayBufferView] = js.native
+    def readFromStorageBuffer(
+      storageBuffer: typings.babylonjs.dataBufferMod.DataBuffer,
+      offset: Double,
+      size: Unit,
+      buffer: js.typedarray.ArrayBufferView
+    ): js.Promise[js.typedarray.ArrayBufferView] = js.native
+    def readFromStorageBuffer(storageBuffer: typings.babylonjs.dataBufferMod.DataBuffer, offset: Unit, size: Double): js.Promise[js.typedarray.ArrayBufferView] = js.native
+    def readFromStorageBuffer(
+      storageBuffer: typings.babylonjs.dataBufferMod.DataBuffer,
+      offset: Unit,
+      size: Double,
+      buffer: js.typedarray.ArrayBufferView
+    ): js.Promise[js.typedarray.ArrayBufferView] = js.native
+    def readFromStorageBuffer(
+      storageBuffer: typings.babylonjs.dataBufferMod.DataBuffer,
+      offset: Unit,
+      size: Unit,
+      buffer: js.typedarray.ArrayBufferView
+    ): js.Promise[js.typedarray.ArrayBufferView] = js.native
+    
+    /**
+      * Forces the engine to release all cached compute effects. This means that next effect compilation will have to be done completely even if a similar effect was already compiled
+      */
+    def releaseComputeEffects(): Unit = js.native
+    
+    /**
       * Restores the webgl state to only draw on the main color attachment
+      * when the frame buffer associated is the canvas frame buffer
       */
     def restoreSingleAttachment(): Unit = js.native
+    
+    /**
+      * Restores the webgl state to only draw on the main color attachment
+      * when the frame buffer associated is not the canvas frame buffer
+      */
+    def restoreSingleAttachmentForRenderTarget(): Unit = js.native
     
     /**
       * Sets alpha constants used by some alpha blending modes
@@ -1083,18 +1461,39 @@ object babylonjsEnginesThinEngineAugmentingMod {
     def setAlphaMode(mode: Double, noDepthWriteChange: Boolean): Unit = js.native
     
     /**
+      * Sets an internal texture to the according uniform.
+      * @param name The name of the uniform in the effect
+      * @param texture The texture to apply
+      */
+    def setExternalTexture(name: String, texture: Nullable[typings.babylonjs.externalTextureMod.ExternalTexture]): Unit = js.native
+    
+    /**
+      * Sets a storage buffer in the shader
+      * @param name Defines the name of the storage buffer as defined in the shader
+      * @param buffer Defines the value to give to the uniform
+      */
+    def setStorageBuffer(name: String, buffer: Nullable[typings.babylonjs.storageBufferMod.StorageBuffer]): Unit = js.native
+    
+    /**
+      * Sets a texture sampler to the according uniform.
+      * @param name The name of the uniform in the effect
+      * @param sampler The sampler to apply
+      */
+    def setTextureSampler(name: String, sampler: Nullable[typings.babylonjs.textureSamplerMod.TextureSampler]): Unit = js.native
+    
+    /**
       * Unbind a list of render target textures from the webGL context
       * This is used only when drawBuffer extension or webGL2 are active
-      * @param textures defines the render target textures to unbind
+      * @param rtWrapper defines the render target wrapper to unbind
       * @param disableGenerateMipMaps defines a boolean indicating that mipmaps must not be generated
       * @param onBeforeUnbind defines a function which will be called before the effective unbind
       */
     def unBindMultiColorAttachmentFramebuffer(
-      textures: js.Array[typings.babylonjs.internalTextureMod.InternalTexture],
+      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper,
       disableGenerateMipMaps: Boolean
     ): Unit = js.native
     def unBindMultiColorAttachmentFramebuffer(
-      textures: js.Array[typings.babylonjs.internalTextureMod.InternalTexture],
+      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper,
       disableGenerateMipMaps: Boolean,
       onBeforeUnbind: js.Function0[Unit]
     ): Unit = js.native
@@ -1116,14 +1515,16 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param premulAlpha defines if alpha is stored as premultiplied
       * @param format defines the format of the data
       * @param forceBindTexture if the texture should be forced to be bound eg. after a graphics context loss (Default: false)
+      * @param allowGPUOptimization true to allow some specific GPU optimizations (subject to engine feature "allowGPUOptimizationsForGUI" being true)
       */
     def updateDynamicTexture(
       texture: Nullable[typings.babylonjs.internalTextureMod.InternalTexture],
-      source: ImageBitmap | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | OffscreenCanvas,
+      source: ImageBitmap | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | OffscreenCanvas | ICanvas,
       invertY: js.UndefOr[Boolean],
       premulAlpha: js.UndefOr[Boolean],
       format: js.UndefOr[Double],
-      forceBindTexture: js.UndefOr[Boolean]
+      forceBindTexture: js.UndefOr[Boolean],
+      allowGPUOptimization: js.UndefOr[Boolean]
     ): Unit = js.native
     
     /**
@@ -1151,18 +1552,21 @@ object babylonjsEnginesThinEngineAugmentingMod {
     /**
       * Update the sample count for a given multiple render target texture
       * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
-      * @param textures defines the textures to update
+      * @param rtWrapper defines the render target wrapper to update
       * @param samples defines the sample count to set
+      * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
       * @returns the effective sample count (could be 0 if multisample render targets are not supported)
       */
+    def updateMultipleRenderTargetTextureSampleCount(rtWrapper: Nullable[typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper], samples: Double): Double = js.native
     def updateMultipleRenderTargetTextureSampleCount(
-      textures: Nullable[js.Array[typings.babylonjs.internalTextureMod.InternalTexture]],
-      samples: Double
+      rtWrapper: Nullable[typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper],
+      samples: Double,
+      initializeBuffers: Boolean
     ): Double = js.native
     
     /**
       * Update a raw cube texture
-      * @param texture defines the texture to udpdate
+      * @param texture defines the texture to update
       * @param data defines the data to store
       * @param format defines the data format
       * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
@@ -1170,14 +1574,14 @@ object babylonjsEnginesThinEngineAugmentingMod {
       */
     def updateRawCubeTexture(
       texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      data: js.Array[ArrayBufferView],
+      data: js.Array[js.typedarray.ArrayBufferView],
       format: Double,
       `type`: Double,
       invertY: Boolean
     ): Unit = js.native
     /**
       * Update a raw cube texture
-      * @param texture defines the texture to udpdate
+      * @param texture defines the texture to update
       * @param data defines the data to store
       * @param format defines the data format
       * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
@@ -1186,7 +1590,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       */
     def updateRawCubeTexture(
       texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      data: js.Array[ArrayBufferView],
+      data: js.Array[js.typedarray.ArrayBufferView],
       format: Double,
       `type`: Double,
       invertY: Boolean,
@@ -1194,7 +1598,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
     ): Unit = js.native
     /**
       * Update a raw cube texture
-      * @param texture defines the texture to udpdate
+      * @param texture defines the texture to update
       * @param data defines the data to store
       * @param format defines the data format
       * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
@@ -1204,7 +1608,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       */
     def updateRawCubeTexture(
       texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      data: js.Array[ArrayBufferView],
+      data: js.Array[js.typedarray.ArrayBufferView],
       format: Double,
       `type`: Double,
       invertY: Boolean,
@@ -1221,7 +1625,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       */
     def updateRawTexture(
       texture: Nullable[typings.babylonjs.internalTextureMod.InternalTexture],
-      data: Nullable[ArrayBufferView],
+      data: Nullable[js.typedarray.ArrayBufferView],
       format: Double,
       invertY: Boolean
     ): Unit = js.native
@@ -1233,14 +1637,16 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param invertY defines if data must be stored with Y axis inverted
       * @param compression defines the compression used (null by default)
       * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+      * @param useSRGBBuffer defines if the texture must be loaded in a sRGB GPU buffer (if supported by the GPU).
       */
     def updateRawTexture(
       texture: Nullable[typings.babylonjs.internalTextureMod.InternalTexture],
-      data: Nullable[ArrayBufferView],
+      data: Nullable[js.typedarray.ArrayBufferView],
       format: Double,
       invertY: Boolean,
       compression: Nullable[String],
-      `type`: Double
+      `type`: Double,
+      useSRGBBuffer: Boolean
     ): Unit = js.native
     
     /**
@@ -1252,7 +1658,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       */
     def updateRawTexture2DArray(
       texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      data: Nullable[ArrayBufferView],
+      data: Nullable[js.typedarray.ArrayBufferView],
       format: Double,
       invertY: Boolean
     ): Unit = js.native
@@ -1267,7 +1673,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       */
     def updateRawTexture2DArray(
       texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      data: Nullable[ArrayBufferView],
+      data: Nullable[js.typedarray.ArrayBufferView],
       format: Double,
       invertY: Boolean,
       compression: Nullable[String],
@@ -1283,7 +1689,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       */
     def updateRawTexture3D(
       texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      data: Nullable[ArrayBufferView],
+      data: Nullable[js.typedarray.ArrayBufferView],
       format: Double,
       invertY: Boolean
     ): Unit = js.native
@@ -1298,11 +1704,42 @@ object babylonjsEnginesThinEngineAugmentingMod {
       */
     def updateRawTexture3D(
       texture: typings.babylonjs.internalTextureMod.InternalTexture,
-      data: Nullable[ArrayBufferView],
+      data: Nullable[js.typedarray.ArrayBufferView],
       format: Double,
       invertY: Boolean,
       compression: Nullable[String],
       textureType: Double
+    ): Unit = js.native
+    
+    /**
+      * Updates the sample count of a render target texture
+      * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+      * @param rtWrapper defines the render target wrapper to update
+      * @param samples defines the sample count to set
+      * @returns the effective sample count (could be 0 if multisample render targets are not supported)
+      */
+    def updateRenderTargetTextureSampleCount(rtWrapper: Nullable[typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper], samples: Double): Double = js.native
+    
+    /**
+      * Updates a storage buffer
+      * @param buffer the storage buffer to update
+      * @param data the data used to update the storage buffer
+      * @param byteOffset the byte offset of the data
+      * @param byteLength the byte length of the data
+      */
+    def updateStorageBuffer(buffer: typings.babylonjs.dataBufferMod.DataBuffer, data: DataArray): Unit = js.native
+    def updateStorageBuffer(buffer: typings.babylonjs.dataBufferMod.DataBuffer, data: DataArray, byteOffset: Double): Unit = js.native
+    def updateStorageBuffer(
+      buffer: typings.babylonjs.dataBufferMod.DataBuffer,
+      data: DataArray,
+      byteOffset: Double,
+      byteLength: Double
+    ): Unit = js.native
+    def updateStorageBuffer(
+      buffer: typings.babylonjs.dataBufferMod.DataBuffer,
+      data: DataArray,
+      byteOffset: Unit,
+      byteLength: Double
     ): Unit = js.native
     
     /**

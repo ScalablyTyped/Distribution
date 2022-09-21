@@ -28,7 +28,7 @@ trait Project extends StObject {
   var enabledFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * [Output Only] The unique identifier for the resource. This identifier is defined by the server. This is not the project ID, and is just a unique ID used by Compute Engine to
+    * [Output Only] The unique identifier for the resource. This identifier is defined by the server. This is *not* the project ID, and is just a unique ID used by Compute Engine to
     * identify resources.
     */
   var id: js.UndefOr[String] = js.undefined
@@ -84,7 +84,7 @@ object Project {
     
     inline def setEnabledFeaturesUndefined: Self = StObject.set(x, "enabledFeatures", js.undefined)
     
-    inline def setEnabledFeaturesVarargs(value: String*): Self = StObject.set(x, "enabledFeatures", js.Array(value :_*))
+    inline def setEnabledFeaturesVarargs(value: String*): Self = StObject.set(x, "enabledFeatures", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -102,7 +102,7 @@ object Project {
     
     inline def setQuotasUndefined: Self = StObject.set(x, "quotas", js.undefined)
     
-    inline def setQuotasVarargs(value: Quota*): Self = StObject.set(x, "quotas", js.Array(value :_*))
+    inline def setQuotasVarargs(value: Quota*): Self = StObject.set(x, "quotas", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

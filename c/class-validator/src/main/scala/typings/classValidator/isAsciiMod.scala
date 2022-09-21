@@ -19,5 +19,5 @@ object isAsciiMod {
   inline def IsAscii_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAscii")().asInstanceOf[PropertyDecorator]
   inline def IsAscii_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAscii")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isAscii(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAscii")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAscii(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAscii")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

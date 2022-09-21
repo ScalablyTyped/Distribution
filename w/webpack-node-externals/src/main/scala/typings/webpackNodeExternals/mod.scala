@@ -1,6 +1,6 @@
 package typings.webpackNodeExternals
 
-import typings.std.RegExp
+import typings.webpack.mod.Externals
 import typings.webpackNodeExternals.webpackNodeExternalsStrings.`this`
 import typings.webpackNodeExternals.webpackNodeExternalsStrings.`var`
 import typings.webpackNodeExternals.webpackNodeExternalsStrings.amd
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): ExternalItem = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExternalItem]
+  inline def apply(options: Options): ExternalItem = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExternalItem]
   
   @JSImport("webpack-node-externals", JSImport.Namespace)
   @js.native
@@ -22,7 +22,12 @@ object mod {
   /** a function that accepts the module name and returns whether it should be included */
   type AllowlistFunctionType = js.Function1[/* moduleName */ String, Boolean]
   
-  type AllowlistOption = String | RegExp | AllowlistFunctionType
+  type AllowlistOption = String | js.RegExp | AllowlistFunctionType
+  
+  /** The webpack types don't export this so we have to derive it. */
+  type ExternalItem = GetArrayInnerType[Externals]
+  
+  type GetArrayInnerType[T] = Any
   
   type ImportTypeCallback = js.Function1[/* moduleName */ String, String]
   
@@ -45,13 +50,13 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
     }
   }
   
@@ -115,7 +120,7 @@ object mod {
       
       inline def setAdditionalModuleDirsUndefined: Self = StObject.set(x, "additionalModuleDirs", js.undefined)
       
-      inline def setAdditionalModuleDirsVarargs(value: String*): Self = StObject.set(x, "additionalModuleDirs", js.Array(value :_*))
+      inline def setAdditionalModuleDirsVarargs(value: String*): Self = StObject.set(x, "additionalModuleDirs", js.Array(value*))
       
       inline def setAllowlist(value: js.Array[AllowlistOption] | AllowlistOption): Self = StObject.set(x, "allowlist", value.asInstanceOf[js.Any])
       
@@ -123,13 +128,13 @@ object mod {
       
       inline def setAllowlistUndefined: Self = StObject.set(x, "allowlist", js.undefined)
       
-      inline def setAllowlistVarargs(value: AllowlistOption*): Self = StObject.set(x, "allowlist", js.Array(value :_*))
+      inline def setAllowlistVarargs(value: AllowlistOption*): Self = StObject.set(x, "allowlist", js.Array(value*))
       
       inline def setBinaryDirs(value: js.Array[String]): Self = StObject.set(x, "binaryDirs", value.asInstanceOf[js.Any])
       
       inline def setBinaryDirsUndefined: Self = StObject.set(x, "binaryDirs", js.undefined)
       
-      inline def setBinaryDirsVarargs(value: String*): Self = StObject.set(x, "binaryDirs", js.Array(value :_*))
+      inline def setBinaryDirsVarargs(value: String*): Self = StObject.set(x, "binaryDirs", js.Array(value*))
       
       inline def setImportType(value: `var` | `this` | commonjs | amd | umd | ImportTypeCallback): Self = StObject.set(x, "importType", value.asInstanceOf[js.Any])
       

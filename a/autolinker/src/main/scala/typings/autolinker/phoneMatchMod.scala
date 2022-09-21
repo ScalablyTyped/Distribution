@@ -1,8 +1,10 @@
 package typings.autolinker
 
+import typings.autolinker.abstractMatchMod.AbstractMatch
+import typings.autolinker.abstractMatchMod.AbstractMatchConfig
 import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
+import typings.autolinker.autolinkerStrings.phone
 import typings.autolinker.matchMatchMod.Match
-import typings.autolinker.matchMatchMod.MatchConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +13,9 @@ object phoneMatchMod {
   
   @JSImport("autolinker/dist/commonjs/match/phone-match", "PhoneMatch")
   @js.native
-  class PhoneMatch protected () extends Match {
+  open class PhoneMatch protected ()
+    extends AbstractMatch
+       with Match {
     /**
       * @method constructor
       * @param {Object} cfg The configuration properties for the Match
@@ -47,7 +51,7 @@ object phoneMatchMod {
       *
       * Note: This is a string to allow for prefixed 0's.
       */
-    /* private */ val number: js.Any = js.native
+    /* private */ val number: Any = js.native
     
     /**
       * @protected
@@ -58,12 +62,23 @@ object phoneMatchMod {
       *
       * Ex: '+1 (123) 456 7879'
       */
-    /* private */ val plusSign: js.Any = js.native
+    /* private */ val plusSign: Any = js.native
+    
+    /**
+      * @public
+      * @property {'phone'} type
+      *
+      * A string name for the type of match that this class represents. Can be
+      * used in a TypeScript discriminating union to type-narrow from the
+      * `Match` type.
+      */
+    @JSName("type")
+    val type_PhoneMatch: phone = js.native
   }
   
   trait PhoneMatchConfig
     extends StObject
-       with MatchConfig {
+       with AbstractMatchConfig {
     
     var number: String
     

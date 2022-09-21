@@ -12,6 +12,11 @@ trait AssetModelProperty extends StObject {
   var dataType: PropertyDataType
   
   /**
+    * The data type of the structure for this property. This parameter exists on properties that have the STRUCT data type.
+    */
+  var dataTypeSpec: js.UndefOr[Name] = js.undefined
+  
+  /**
     * The ID of the asset model property.
     */
   var id: js.UndefOr[ID] = js.undefined
@@ -42,6 +47,10 @@ object AssetModelProperty {
   extension [Self <: AssetModelProperty](x: Self) {
     
     inline def setDataType(value: PropertyDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeSpec(value: Name): Self = StObject.set(x, "dataTypeSpec", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeSpecUndefined: Self = StObject.set(x, "dataTypeSpec", js.undefined)
     
     inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

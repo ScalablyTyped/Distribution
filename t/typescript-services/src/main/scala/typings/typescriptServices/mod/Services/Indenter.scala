@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.Indenter")
 @js.native
-class Indenter ()
+open class Indenter ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.Indenter
 object Indenter {
@@ -18,10 +18,10 @@ object Indenter {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def belongsToBracket(sourceText: js.Any, token: js.Any, position: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("belongsToBracket")(sourceText.asInstanceOf[js.Any], token.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def belongsToBracket(sourceText: Any, token: Any, position: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("belongsToBracket")(sourceText.asInstanceOf[js.Any], token.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
-  inline def getCustomListIndentation(list: js.Any, element: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getCustomListIndentation")(list.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getCustomListIndentation(list: Any, element: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getCustomListIndentation")(list.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
   inline def getIndentation(
@@ -32,8 +32,8 @@ object Indenter {
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getIndentation")(node.asInstanceOf[js.Any], soruceText.asInstanceOf[js.Any], position.asInstanceOf[js.Any], editorOptions.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  inline def getListItemIndentation(list: js.Any, elementIndex: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getListItemIndentation")(list.asInstanceOf[js.Any], elementIndex.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getListItemIndentation(list: Any, elementIndex: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getListItemIndentation")(list.asInstanceOf[js.Any], elementIndex.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
-  inline def isInContainerNode(parent: js.Any, element: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isInContainerNode")(parent.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def isInContainerNode(parent: Any, element: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isInContainerNode")(parent.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

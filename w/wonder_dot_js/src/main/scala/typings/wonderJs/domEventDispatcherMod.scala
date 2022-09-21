@@ -11,7 +11,7 @@ object domEventDispatcherMod {
   
   @JSImport("wonder.js/dist/es2015/event/dispatcher/DomEventDispatcher", "DomEventDispatcher")
   @js.native
-  class DomEventDispatcher () extends EventDispatcher {
+  open class DomEventDispatcher () extends EventDispatcher {
     
     def trigger(dom: HTMLElement, event: Event): Unit = js.native
     def trigger(event: Event): Unit = js.native
@@ -23,6 +23,6 @@ object domEventDispatcherMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
   }
 }

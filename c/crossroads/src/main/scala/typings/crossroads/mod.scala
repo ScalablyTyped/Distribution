@@ -26,9 +26,9 @@ object mod extends Shortcut {
     * <br />- inspired by Robert Penner's AS3 Signals.
     * @author Miller Medeiros
     */
-  class bypassed ()
+  open class bypassed ()
     extends StObject
-       with Signal[js.Any]
+       with Signal[Any]
   
   /**
     * Signal dispatched every time that crossroads.parse find a Route that matches the request. Useful for debuging and for executing tasks that should happen at each routing.
@@ -41,9 +41,9 @@ object mod extends Shortcut {
     * <br />- inspired by Robert Penner's AS3 Signals.
     * @author Miller Medeiros
     */
-  class routed ()
+  open class routed ()
     extends StObject
-       with Signal[js.Any]
+       with Signal[Any]
   
   object CrossroadsJs {
     
@@ -66,15 +66,15 @@ object mod extends Shortcut {
         * @param handler Function that should be executed when a request matches the Route pattern.
         * @param priority Route execution priority.
         */
-      def addRoute(pattern: js.Any): Route = js.native
-      def addRoute(pattern: js.Any, handler: js.Function): Route = js.native
-      def addRoute(pattern: js.Any, handler: js.Function, priority: Double): Route = js.native
-      def addRoute(pattern: js.Any, handler: Unit, priority: Double): Route = js.native
+      def addRoute(pattern: Any): Route = js.native
+      def addRoute(pattern: Any, handler: js.Function): Route = js.native
+      def addRoute(pattern: Any, handler: js.Function, priority: Double): Route = js.native
+      def addRoute(pattern: Any, handler: Unit, priority: Double): Route = js.native
       
       /**
         * Signal dispatched every time that crossroads.parse can't find a Route that matches the request. Useful for debuging and error handling.
         */
-      var bypassed: Signal[js.Any] = js.native
+      var bypassed: Signal[Any] = js.native
       
       /**
         * Create a new independent Router instance.
@@ -112,7 +112,7 @@ object mod extends Shortcut {
         * @param request String that should be evaluated and matched against Routes to define which Route handlers should be executed and which parameters should be passed to the handlers.
         * @param defaultargs Array containing values passed to matched/routed/bypassed signals as first arguments. Useful for node.js in case you need to access the request and response objects.
         */
-      def parse(request: String, defaultArgs: js.Any*): Unit = js.native
+      def parse(request: String, defaultArgs: Any*): Unit = js.native
       
       /**
         * Pipe routers, so all crossroads.parse() calls will be forwarded to the other router as well.
@@ -139,7 +139,7 @@ object mod extends Shortcut {
       /**
         * Signal dispatched every time that crossroads.parse find a Route that matches the request. Useful for debuging and for executing tasks that should happen at each routing.
         */
-      var routed: Signal[js.Any] = js.native
+      var routed: Signal[Any] = js.native
       
       /**
         * Set if crossroads should typecast route paths. Default value is false (IMPORTANT: on v0.5.0 it was true by default).
@@ -162,10 +162,10 @@ object mod extends Shortcut {
         * @param listenercontext Context on which listener will be executed (object that should represent the `this` variable inside listener function).
         * @param priority The priority level of the event listener. Listeners with higher priority will be executed before listeners with lower priority. Listeners with same priority level will be executed at the same order as they were added. (default = 0)
         */
-      def add(listener: js.Function): SignalBinding[js.Any] = js.native
-      def add(listener: js.Function, listenerContext: js.Any): SignalBinding[js.Any] = js.native
-      def add(listener: js.Function, listenerContext: js.Any, priority: Number): SignalBinding[js.Any] = js.native
-      def add(listener: js.Function, listenerContext: Unit, priority: Number): SignalBinding[js.Any] = js.native
+      def add(listener: js.Function): SignalBinding[Any] = js.native
+      def add(listener: js.Function, listenerContext: Any): SignalBinding[Any] = js.native
+      def add(listener: js.Function, listenerContext: Any, priority: Number): SignalBinding[Any] = js.native
+      def add(listener: js.Function, listenerContext: Unit, priority: Number): SignalBinding[Any] = js.native
       
       /**
         * Remove route from crossroads and destroy it, releasing memory.
@@ -180,24 +180,24 @@ object mod extends Shortcut {
       /**
         * Return a string that matches the route replacing the capturing groups with the values provided in the replacements object.
         */
-      def interpolate(replacements: js.Any): String = js.native
+      def interpolate(replacements: Any): String = js.native
       
       /**
         * Test if Route matches against request. Return true if request validate against route rules and pattern.
         */
-      def `match`(request: js.Any): Boolean = js.native
+      def `match`(request: Any): Boolean = js.native
       
-      var matched: Signal[js.Any] = js.native
+      var matched: Signal[Any] = js.native
       
       /**
         * Object used to configure parameters/segments validation rules.
         */
-      var rules: js.Any = js.native
+      var rules: Any = js.native
       
       /**
         * Signal dispatched every time a request "leaves" the route.
         */
-      var switched: Signal[js.Any] = js.native
+      var switched: Signal[Any] = js.native
     }
   }
   

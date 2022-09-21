@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateVolumePermissionModifications extends StObject {
   
   /**
-    * Adds the specified AWS account ID or group to the list.
+    * Adds the specified Amazon Web Services account ID or group to the list.
     */
   var Add: js.UndefOr[CreateVolumePermissionList] = js.undefined
   
   /**
-    * Removes the specified AWS account ID or group from the list.
+    * Removes the specified Amazon Web Services account ID or group from the list.
     */
   var Remove: js.UndefOr[CreateVolumePermissionList] = js.undefined
 }
@@ -29,12 +29,12 @@ object CreateVolumePermissionModifications {
     
     inline def setAddUndefined: Self = StObject.set(x, "Add", js.undefined)
     
-    inline def setAddVarargs(value: CreateVolumePermission*): Self = StObject.set(x, "Add", js.Array(value :_*))
+    inline def setAddVarargs(value: CreateVolumePermission*): Self = StObject.set(x, "Add", js.Array(value*))
     
     inline def setRemove(value: CreateVolumePermissionList): Self = StObject.set(x, "Remove", value.asInstanceOf[js.Any])
     
     inline def setRemoveUndefined: Self = StObject.set(x, "Remove", js.undefined)
     
-    inline def setRemoveVarargs(value: CreateVolumePermission*): Self = StObject.set(x, "Remove", js.Array(value :_*))
+    inline def setRemoveVarargs(value: CreateVolumePermission*): Self = StObject.set(x, "Remove", js.Array(value*))
   }
 }

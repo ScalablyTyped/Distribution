@@ -31,6 +31,6 @@ object PartnerEntity {
     
     inline def setParticipantRef(value: js.Array[Participant]): Self = StObject.set(x, "participantRef", value.asInstanceOf[js.Any])
     
-    inline def setParticipantRefVarargs(value: Participant*): Self = StObject.set(x, "participantRef", js.Array(value :_*))
+    inline def setParticipantRefVarargs(value: Participant*): Self = StObject.set(x, "participantRef", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-safe-set
 
-Typings are for version 2.1
+Typings are for version 4.1.1
 
 ## Library description:
 set value at property, create intermediate properties if necessary
@@ -10,10 +10,10 @@ set value at property, create intermediate properties if necessary
 | ------------------ | :-------------: |
 | Full name          | just-safe-set |
 | Keywords           | object, safe, set, no-dependencies, just |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 433414 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 83079.0 |
+| # stars            | 4414.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)
@@ -24,7 +24,7 @@ set value at property, create intermediate properties if necessary
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

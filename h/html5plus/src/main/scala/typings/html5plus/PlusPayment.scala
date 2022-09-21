@@ -71,9 +71,9 @@ trait PlusPayment extends StObject {
   def getChannels(successCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def getChannels(
     successCB: js.Function1[/* result */ js.Array[this.type], Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def getChannels(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getChannels(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 请求支付操作
@@ -93,14 +93,9 @@ trait PlusPayment extends StObject {
     channel: Unit,
     statement: String,
     successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def request(
-    channel: Unit,
-    statement: String,
-    successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
+  def request(channel: Unit, statement: String, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def request(
     channel: Unit,
     statement: Unit,
@@ -110,9 +105,9 @@ trait PlusPayment extends StObject {
     channel: Unit,
     statement: Unit,
     successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def request(channel: Unit, statement: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def request(channel: Unit, statement: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def request(channel: PlusPaymentPaymentChannel): Unit = js.native
   def request(channel: PlusPaymentPaymentChannel, statement: String): Unit = js.native
   def request(
@@ -124,13 +119,13 @@ trait PlusPayment extends StObject {
     channel: PlusPaymentPaymentChannel,
     statement: String,
     successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def request(
     channel: PlusPaymentPaymentChannel,
     statement: String,
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def request(
     channel: PlusPaymentPaymentChannel,
@@ -141,12 +136,12 @@ trait PlusPayment extends StObject {
     channel: PlusPaymentPaymentChannel,
     statement: Unit,
     successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def request(
     channel: PlusPaymentPaymentChannel,
     statement: Unit,
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
 }

@@ -8,87 +8,151 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrePassRenderer extends StObject {
   
   /**
+    * @param faceIndex
+    * @param layer
     * @hidden
     */
-  def _afterCameraDraw(): Unit = js.native
+  def _afterDraw(): Unit = js.native
+  def _afterDraw(faceIndex: Double): Unit = js.native
+  def _afterDraw(faceIndex: Double, layer: Double): Unit = js.native
+  def _afterDraw(faceIndex: Unit, layer: Double): Unit = js.native
   
   /**
+    * @param camera
+    * @param faceIndex
+    * @param layer
     * @hidden
     */
-  def _beforeCameraDraw(): Unit = js.native
+  def _beforeDraw(): Unit = js.native
+  def _beforeDraw(camera: Unit, faceIndex: Double): Unit = js.native
+  def _beforeDraw(camera: Unit, faceIndex: Double, layer: Double): Unit = js.native
+  def _beforeDraw(camera: Unit, faceIndex: Unit, layer: Double): Unit = js.native
+  def _beforeDraw(camera: Camera): Unit = js.native
+  def _beforeDraw(camera: Camera, faceIndex: Double): Unit = js.native
+  def _beforeDraw(camera: Camera, faceIndex: Double, layer: Double): Unit = js.native
+  def _beforeDraw(camera: Camera, faceIndex: Unit, layer: Double): Unit = js.native
   
-  /* private */ var _bindFrameBuffer: js.Any = js.native
+  /* private */ var _bindFrameBuffer: Any = js.native
   
-  /* private */ var _bindPostProcessChain: js.Any = js.native
+  /**
+    * Clears the current prepass render target (in the sense of settings pixels to the scene clear color value)
+    * @hidden
+    */
+  def _clear(): Unit = js.native
   
-  /* private */ var _checkRTSize: js.Any = js.native
+  /* private */ var _clearAttachments: Any = js.native
   
-  /* private */ var _clearAttachments: js.Any = js.native
+  /* private */ val _clearColor: Any = js.native
   
-  /* private */ val _clearColor: js.Any = js.native
+  /**
+    * Creates a new PrePassRenderTarget
+    * This should be the only way to instantiate a `PrePassRenderTarget`
+    * @param name Name of the `PrePassRenderTarget`
+    * @param renderTargetTexture RenderTarget the `PrePassRenderTarget` will be attached to.
+    * Can be `null` if the created `PrePassRenderTarget` is attached to the scene (default framebuffer).
+    * @hidden
+    */
+  def _createRenderTarget(name: String, renderTargetTexture: Nullable[RenderTargetTexture]): PrePassRenderTarget = js.native
   
-  /* private */ var _createCompositionEffect: js.Any = js.native
+  /* private */ var _currentTarget: Any = js.native
   
-  /* private */ var _defaultAttachments: js.Any = js.native
+  /* private */ var _defaultAttachments: Any = js.native
   
-  /* private */ var _disable: js.Any = js.native
+  /* private */ var _disable: Any = js.native
   
   /**
     * Configuration for prepass effects
     */
-  /* private */ var _effectConfigurations: js.Any = js.native
+  /* private */ var _effectConfigurations: Any = js.native
   
-  /* private */ var _enable: js.Any = js.native
+  /* private */ var _enable: Any = js.native
   
   /**
     * Enables a texture on the MultiRenderTarget for prepass
+    * @param types
     */
-  /* private */ var _enableTextures: js.Any = js.native
+  /* private */ var _enableTextures: Any = js.native
   
-  /* private */ var _enabled: js.Any = js.native
+  /* private */ var _enabled: Any = js.native
   
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
-  /* private */ var _geometryBuffer: js.Any = js.native
-  
-  /* private */ var _initializeAttachments: js.Any = js.native
-  
-  /* private */ var _isDirty: js.Any = js.native
-  
-  /* private */ var _markAllMaterialsAsPrePassDirty: js.Any = js.native
-  
-  /* private */ var _mrtFormats: js.Any = js.native
-  
-  /* private */ var _mrtLayout: js.Any = js.native
-  
-  /* private */ var _multiRenderAttachments: js.Any = js.native
-  
-  /* private */ var _postProcesses: js.Any = js.native
-  
-  /* private */ var _resetLayout: js.Any = js.native
-  
-  /* private */ var _resetPostProcessChain: js.Any = js.native
-  
-  /* private */ var _scene: js.Any = js.native
-  
-  /* private */ var _setState: js.Any = js.native
-  
-  /* private */ var _textureFormats: js.Any = js.native
-  
-  /* private */ var _textureIndices: js.Any = js.native
-  
-  /* private */ var _update: js.Any = js.native
-  
-  /* private */ var _updateGeometryBufferLayout: js.Any = js.native
-  
-  /* private */ var _useGeometryBufferFallback: js.Any = js.native
+  /* private */ var _geometryBuffer: Any = js.native
   
   /**
-    * Adds an effect configuration to the prepass.
+    * Internal, gets the first post proces.
+    * @param postProcesses
+    * @returns the first post process to be run on this camera.
+    */
+  /* private */ var _getFirstPostProcess: Any = js.native
+  
+  /* private */ var _getPostProcessesSource: Any = js.native
+  
+  /* private */ var _hasImageProcessing: Any = js.native
+  
+  /* private */ var _isDirty: Any = js.native
+  
+  /* private */ var _linkInternalTexture: Any = js.native
+  
+  /* private */ var _markAllMaterialsAsPrePassDirty: Any = js.native
+  
+  /* private */ var _mrtFormats: Any = js.native
+  
+  /* private */ var _mrtLayout: Any = js.native
+  
+  /* private */ var _mrtNames: Any = js.native
+  
+  /* private */ var _multiRenderAttachments: Any = js.native
+  
+  /* private */ var _needsCompositionForThisPass: Any = js.native
+  
+  /* private */ var _needsImageProcessing: Any = js.native
+  
+  /* private */ var _postProcessesSourceForThisPass: Any = js.native
+  
+  /* private */ var _prepareFrame: Any = js.native
+  
+  /* private */ var _refreshGeometryBufferRendererLink: Any = js.native
+  
+  /* private */ var _reinitializeAttachments: Any = js.native
+  
+  /* private */ var _renderPostProcesses: Any = js.native
+  
+  /* private */ var _resetLayout: Any = js.native
+  
+  /* private */ var _scene: Any = js.native
+  
+  /* private */ var _setEnabled: Any = js.native
+  
+  /**
+    * @hidden
+    * Managed by the scene component
+    * @param prePassRenderTarget
+    */
+  def _setRenderTarget(prePassRenderTarget: Nullable[PrePassRenderTarget]): Unit = js.native
+  
+  /* private */ var _setRenderTargetEnabled: Any = js.native
+  
+  /* private */ var _setupOutputForThisPass: Any = js.native
+  
+  /* private */ var _textureIndices: Any = js.native
+  
+  /**
+    * @param prePassRenderTarget
+    * @hidden
+    */
+  def _unlinkInternalTexture(prePassRenderTarget: PrePassRenderTarget): Unit = js.native
+  
+  /* private */ var _update: Any = js.native
+  
+  /* private */ var _updateGeometryBufferLayout: Any = js.native
+  
+  /**
+    * Adds an effect configuration to the prepass render target.
     * If an effect has already been added, it won't add it twice and will return the configuration
     * already present.
     * @param cfg the effect configuration
-    * @return the effect configuration now used by the prepass
+    * @returns the effect configuration now used by the prepass
     */
   def addEffectConfiguration(cfg: PrePassEffectConfiguration): PrePassEffectConfiguration = js.native
   
@@ -100,9 +164,15 @@ trait PrePassRenderer extends StObject {
   def bindAttachmentsForEffect(effect: Effect, subMesh: SubMesh): Unit = js.native
   
   /**
-    * Clears the scene render target (in the sense of settings pixels to the scene clear color value)
+    * Returns true if the currently rendered prePassRenderTarget is the one
+    * associated with the scene.
     */
-  def clear(): Unit = js.native
+  def currentRTisSceneRT: Boolean = js.native
+  
+  /**
+    * The render target where the scene is directly rendered
+    */
+  var defaultRT: PrePassRenderTarget = js.native
   
   /**
     * Set to true to disable gamma transform in PrePass.
@@ -115,6 +185,11 @@ trait PrePassRenderer extends StObject {
     * Disposes the prepass renderer.
     */
   def dispose(): Unit = js.native
+  
+  /**
+    * Prevents the PrePassRenderer from using the GeometryBufferRenderer as a fallback
+    */
+  var doNotUseGeometryRendererFallback: Boolean = js.native
   
   /**
     * Indicates if the prepass is enabled
@@ -136,14 +211,16 @@ trait PrePassRenderer extends StObject {
   /**
     * Returns the index of a texture in the multi render target texture array.
     * @param type Texture type
-    * @return The index
+    * @returns The index
     */
   def getIndex(`type`: Double): Double = js.native
   
   /**
-    * Image processing post process for composition
+    * @returns the prepass render target for the rendering pass.
+    * If we are currently rendering a render target, it returns the PrePassRenderTarget
+    * associated with that render target. Otherwise, it returns the scene default PrePassRenderTarget
     */
-  var imageProcessingPostProcess: ImageProcessingPostProcess = js.native
+  def getRenderTarget(): PrePassRenderTarget = js.native
   
   /**
     * Indicates if rendering a prepass is supported
@@ -161,9 +238,9 @@ trait PrePassRenderer extends StObject {
   var mrtCount: Double = js.native
   
   /**
-    * The render target where the scene is directly rendered
+    * All the render targets generated by prepass
     */
-  var prePassRT: MultiRenderTarget = js.native
+  var renderTargets: js.Array[PrePassRenderTarget] = js.native
   
   /**
     * Restores attachments for single texture draw.
@@ -177,8 +254,11 @@ trait PrePassRenderer extends StObject {
   def samples_=(n: Double): Unit = js.native
   
   /**
-    * Uses the geometry buffer renderer as a fallback for non prepass capable effects
+    * Sets an intermediary texture between prepass and postprocesses. This texture
+    * will be used as input for post processes
+    * @param rt
+    * @returns true if there are postprocesses that will use this texture,
+    * false if there is no postprocesses - and the function has no effect
     */
-  def useGeometryBufferFallback: Boolean = js.native
-  def useGeometryBufferFallback_=(value: Boolean): Unit = js.native
+  def setCustomOutput(rt: RenderTargetTexture): Boolean = js.native
 }

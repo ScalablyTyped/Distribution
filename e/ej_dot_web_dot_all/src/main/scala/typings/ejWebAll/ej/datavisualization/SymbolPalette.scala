@@ -16,7 +16,7 @@ trait SymbolPalette
     * @param {any} JSON for the new items to added in Palette
     * @returns {void}
     */
-  def addPaletteItem(paletteName: String, node: js.Any): Unit = js.native
+  def addPaletteItem(paletteName: String, node: Any): Unit = js.native
   
   var defaults: Model = js.native
   
@@ -28,7 +28,7 @@ trait SymbolPalette
     * @param {any} JSON for the new node to removed in Palette
     * @returns {void}
     */
-  def removePaletteItem(paletteName: String, node: js.Any): Unit = js.native
+  def removePaletteItem(paletteName: String, node: Any): Unit = js.native
 }
 object SymbolPalette {
   
@@ -37,12 +37,12 @@ object SymbolPalette {
     /** Defines the default properties of the connectors
       * @Default {null}
       */
-    var connector: js.UndefOr[js.Any] = js.undefined
+    var connector: js.UndefOr[Any] = js.undefined
     
     /** Defines the default properties of the nodes
       * @Default {null}
       */
-    var node: js.UndefOr[js.Any] = js.undefined
+    var node: js.UndefOr[Any] = js.undefined
   }
   object DefaultSettings {
     
@@ -53,11 +53,11 @@ object SymbolPalette {
     
     extension [Self <: DefaultSettings](x: Self) {
       
-      inline def setConnector(value: js.Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+      inline def setConnector(value: Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
       inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
       
-      inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     }
@@ -117,7 +117,7 @@ object SymbolPalette {
     /** Defines the offset value to be left between the mouse cursor and symbol previews
       * @Default {(110, 110)}
       */
-    var previewOffset: js.UndefOr[js.Any] = js.undefined
+    var previewOffset: js.UndefOr[Any] = js.undefined
     
     /** Defines the width of the symbol previews
       * @Default {100}
@@ -183,13 +183,13 @@ object SymbolPalette {
       
       inline def setPalettesUndefined: Self = StObject.set(x, "palettes", js.undefined)
       
-      inline def setPalettesVarargs(value: Palette*): Self = StObject.set(x, "palettes", js.Array(value :_*))
+      inline def setPalettesVarargs(value: Palette*): Self = StObject.set(x, "palettes", js.Array(value*))
       
       inline def setPreviewHeight(value: Double): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
       
       inline def setPreviewHeightUndefined: Self = StObject.set(x, "previewHeight", js.undefined)
       
-      inline def setPreviewOffset(value: js.Any): Self = StObject.set(x, "previewOffset", value.asInstanceOf[js.Any])
+      inline def setPreviewOffset(value: Any): Self = StObject.set(x, "previewOffset", value.asInstanceOf[js.Any])
       
       inline def setPreviewOffsetUndefined: Self = StObject.set(x, "previewOffset", js.undefined)
       
@@ -221,7 +221,7 @@ object SymbolPalette {
     /** Defines the palette items
       * @Default {[]}
       */
-    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var items: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the name of the palette
       * @Default {null}
@@ -241,11 +241,11 @@ object SymbolPalette {
       
       inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -261,7 +261,7 @@ object SymbolPalette {
     
     /** returns the node or connector that is selected or unselected
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object SelectionChangeEventArgs {
     
@@ -276,7 +276,7 @@ object SymbolPalette {
       
       inline def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }

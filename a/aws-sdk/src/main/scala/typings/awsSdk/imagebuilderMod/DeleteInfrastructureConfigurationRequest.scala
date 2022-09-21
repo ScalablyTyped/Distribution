@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteInfrastructureConfigurationRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the infrastructure configuration to delete. 
+    * The Amazon Resource Name (ARN) of the infrastructure configuration to delete.
     */
   var infrastructureConfigurationArn: InfrastructureConfigurationArn
 }

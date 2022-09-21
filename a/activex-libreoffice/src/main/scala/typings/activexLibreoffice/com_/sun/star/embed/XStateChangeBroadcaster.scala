@@ -22,7 +22,7 @@ object XStateChangeBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addStateChangeListener: XStateChangeListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeStateChangeListener: XStateChangeListener => Unit
   ): XStateChangeBroadcaster = {

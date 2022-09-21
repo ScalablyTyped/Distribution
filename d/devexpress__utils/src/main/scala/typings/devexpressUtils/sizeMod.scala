@@ -13,7 +13,7 @@ object sizeMod {
   
   @JSImport("@devexpress/utils/lib/geometry/size", "Size")
   @js.native
-  class Size protected ()
+  open class Size protected ()
     extends StObject
        with ISize
        with ICloneable[Size]

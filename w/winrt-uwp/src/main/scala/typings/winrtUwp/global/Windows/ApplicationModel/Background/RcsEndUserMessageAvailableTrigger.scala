@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.RcsEndUserMessageAvailableTrigger")
 @js.native
 /** Initializes a new instance of the RcsEndUserMessageAvailableTrigger class. */
-class RcsEndUserMessageAvailableTrigger ()
+open class RcsEndUserMessageAvailableTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.RcsEndUserMessageAvailableTrigger

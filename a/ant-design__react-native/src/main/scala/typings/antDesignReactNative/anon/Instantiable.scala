@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Instantiable
   extends StObject
      with Instantiable1[(/* props */ MultiPickerProps) | (/* props */ Readonlydefault), ComponentDidCatch]
-     with Instantiable2[/* props */ MultiPickerProps, /* context */ js.Any, ComponentDidCatch] {
+     with Instantiable2[/* props */ MultiPickerProps, /* context */ Any, ComponentDidCatch] {
   
-  var contextType: js.UndefOr[Context[js.Any]] = js.native
+  var contextType: js.UndefOr[Context[Any]] = js.native
   
   var defaultProps: OnValueChange = js.native
 }

@@ -17,9 +17,10 @@ object InternalFieldData {
     name: InternalNamePath,
     touched: Boolean,
     validating: Boolean,
-    value: StoreValue
+    value: StoreValue,
+    warnings: js.Array[String]
   ): InternalFieldData = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalFieldData]
   }
   

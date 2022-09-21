@@ -19,7 +19,7 @@ trait HIT extends StObject {
   /**
     *  The date and time the HIT was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  A general description of the HIT.
@@ -29,7 +29,7 @@ trait HIT extends StObject {
   /**
     * The date and time the HIT expires.
     */
-  var Expiration: js.UndefOr[Timestamp] = js.undefined
+  var Expiration: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The ID of the HIT Group of this HIT.
@@ -125,7 +125,7 @@ object HIT {
     
     inline def setAutoApprovalDelayInSecondsUndefined: Self = StObject.set(x, "AutoApprovalDelayInSeconds", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -133,7 +133,7 @@ object HIT {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setExpiration(value: Timestamp): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: js.Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     
@@ -185,7 +185,7 @@ object HIT {
     
     inline def setQualificationRequirementsUndefined: Self = StObject.set(x, "QualificationRequirements", js.undefined)
     
-    inline def setQualificationRequirementsVarargs(value: QualificationRequirement*): Self = StObject.set(x, "QualificationRequirements", js.Array(value :_*))
+    inline def setQualificationRequirementsVarargs(value: QualificationRequirement*): Self = StObject.set(x, "QualificationRequirements", js.Array(value*))
     
     inline def setQuestion(value: String): Self = StObject.set(x, "Question", value.asInstanceOf[js.Any])
     

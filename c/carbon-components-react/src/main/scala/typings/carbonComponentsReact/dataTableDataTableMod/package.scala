@@ -1,11 +1,9 @@
 package typings.carbonComponentsReact.dataTableDataTableMod
 
+import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DataTable[R /* <: typings.carbonComponentsReact.dataTableDataTableMod.DataTableRow[java.lang.String] */, H /* <: typings.carbonComponentsReact.dataTableDataTableMod.DataTableHeader[java.lang.String] */] = typings.react.mod.Component[
-typings.carbonComponentsReact.dataTableDataTableMod.DataTableProps[R, H], 
-js.Object, 
-js.Any]
+type DataTable[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] = Component[DataTableProps[R, H], js.Object, Any]

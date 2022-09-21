@@ -134,7 +134,7 @@ object AMap {
         
         inline def setData(value: js.Array[typings.amapJsApiHeatmap.AMap.Heatmap.Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        inline def setDataVarargs(value: typings.amapJsApiHeatmap.AMap.Heatmap.Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: typings.amapJsApiHeatmap.AMap.Heatmap.Data*): Self = StObject.set(x, "data", js.Array(value*))
         
         inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         

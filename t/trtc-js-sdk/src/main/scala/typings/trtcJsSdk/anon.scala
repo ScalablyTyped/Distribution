@@ -4,6 +4,10 @@ import typings.trtcJsSdk.mod.ConnectionState
 import typings.trtcJsSdk.trtcJsSdkStrings.PAUSED
 import typings.trtcJsSdk.trtcJsSdkStrings.PLAYING
 import typings.trtcJsSdk.trtcJsSdkStrings.STOPPED
+import typings.trtcJsSdk.trtcJsSdkStrings.ended
+import typings.trtcJsSdk.trtcJsSdkStrings.mute
+import typings.trtcJsSdk.trtcJsSdkStrings.playing_
+import typings.trtcJsSdk.trtcJsSdkStrings.unmute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,42 +39,84 @@ object anon {
     }
   }
   
-  trait CurState extends StObject {
+  trait IsBrowserSupported extends StObject {
     
-    var curState: ConnectionState
+    /** 当前浏览器是否是 SDK 支持的浏览器 */
+    var isBrowserSupported: Boolean
     
-    var prevState: ConnectionState
+    /** 当前浏览器是否支持 H264 编码 */
+    var isH264Supported: Boolean
+    
+    /** 当前浏览器是否支持获取媒体设备及媒体流 */
+    var isMediaDevicesSupported: Boolean
+    
+    /** 当前浏览器是否支持 webRTC */
+    var isWebRTCSupported: Boolean
   }
-  object CurState {
+  object IsBrowserSupported {
     
-    inline def apply(curState: ConnectionState, prevState: ConnectionState): CurState = {
-      val __obj = js.Dynamic.literal(curState = curState.asInstanceOf[js.Any], prevState = prevState.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CurState]
+    inline def apply(
+      isBrowserSupported: Boolean,
+      isH264Supported: Boolean,
+      isMediaDevicesSupported: Boolean,
+      isWebRTCSupported: Boolean
+    ): IsBrowserSupported = {
+      val __obj = js.Dynamic.literal(isBrowserSupported = isBrowserSupported.asInstanceOf[js.Any], isH264Supported = isH264Supported.asInstanceOf[js.Any], isMediaDevicesSupported = isMediaDevicesSupported.asInstanceOf[js.Any], isWebRTCSupported = isWebRTCSupported.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IsBrowserSupported]
     }
     
-    extension [Self <: CurState](x: Self) {
+    extension [Self <: IsBrowserSupported](x: Self) {
       
-      inline def setCurState(value: ConnectionState): Self = StObject.set(x, "curState", value.asInstanceOf[js.Any])
+      inline def setIsBrowserSupported(value: Boolean): Self = StObject.set(x, "isBrowserSupported", value.asInstanceOf[js.Any])
       
-      inline def setPrevState(value: ConnectionState): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
+      inline def setIsH264Supported(value: Boolean): Self = StObject.set(x, "isH264Supported", value.asInstanceOf[js.Any])
+      
+      inline def setIsMediaDevicesSupported(value: Boolean): Self = StObject.set(x, "isMediaDevicesSupported", value.asInstanceOf[js.Any])
+      
+      inline def setIsWebRTCSupported(value: Boolean): Self = StObject.set(x, "isWebRTCSupported", value.asInstanceOf[js.Any])
     }
   }
   
-  trait State extends StObject {
+  trait PrevState extends StObject {
+    
+    var prevState: ConnectionState
+    
+    var state: ConnectionState
+  }
+  object PrevState {
+    
+    inline def apply(prevState: ConnectionState, state: ConnectionState): PrevState = {
+      val __obj = js.Dynamic.literal(prevState = prevState.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PrevState]
+    }
+    
+    extension [Self <: PrevState](x: Self) {
+      
+      inline def setPrevState(value: ConnectionState): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: ConnectionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Reason extends StObject {
+    
+    var reason: playing_ | mute | unmute | ended
     
     var state: PLAYING | PAUSED | STOPPED
     
     var `type`: String
   }
-  object State {
+  object Reason {
     
-    inline def apply(state: PLAYING | PAUSED | STOPPED, `type`: String): State = {
-      val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+    inline def apply(reason: playing_ | mute | unmute | ended, state: PLAYING | PAUSED | STOPPED, `type`: String): Reason = {
+      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[State]
+      __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: State](x: Self) {
+    extension [Self <: Reason](x: Self) {
+      
+      inline def setReason(value: playing_ | mute | unmute | ended): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
       inline def setState(value: PLAYING | PAUSED | STOPPED): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       

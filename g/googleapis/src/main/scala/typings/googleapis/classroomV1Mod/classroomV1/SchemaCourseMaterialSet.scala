@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A set of materials that appears on the &quot;About&quot; page of the
-  * course. These materials might include a syllabus, schedule, or other
-  * background information relating to the course as a whole.
-  */
 trait SchemaCourseMaterialSet extends StObject {
   
   /**
@@ -19,7 +14,7 @@ trait SchemaCourseMaterialSet extends StObject {
   /**
     * Title for this set.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCourseMaterialSet {
   
@@ -34,9 +29,11 @@ object SchemaCourseMaterialSet {
     
     inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
     
-    inline def setMaterialsVarargs(value: SchemaCourseMaterial*): Self = StObject.set(x, "materials", js.Array(value :_*))
+    inline def setMaterialsVarargs(value: SchemaCourseMaterial*): Self = StObject.set(x, "materials", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

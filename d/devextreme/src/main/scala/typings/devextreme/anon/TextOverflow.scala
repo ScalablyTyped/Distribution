@@ -1,18 +1,24 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.ellipsis
-import typings.devextreme.devextremeStrings.hide
-import typings.devextreme.devextremeStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TextOverflow extends StObject {
   
+  /**
+    * Specifies the font settings of the group labels.
+    */
   var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
+  /**
+    * Specifies what to do with labels that overflow their group headers: hide, truncated them with ellipsis, or leave them as they are.
+    */
+  var textOverflow: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.TextOverflow] = js.undefined
   
+  /**
+    * Changes the visibility of the group labels.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object TextOverflow {
@@ -28,7 +34,7 @@ object TextOverflow {
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+    inline def setTextOverflow(value: typings.devextreme.mod.DevExpress.common.charts.TextOverflow): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
     inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     

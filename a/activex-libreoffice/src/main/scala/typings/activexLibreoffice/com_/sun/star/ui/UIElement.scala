@@ -36,8 +36,8 @@ object UIElement {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     getRealInterface: () => XInterface,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     update: () => Unit

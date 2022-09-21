@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-logic-js
 
-Typings are for version 1.2
+Typings are for version 2.0
 
 ## Library description:
 Build complex rules, serialize them as JSON, and execute them in JavaScript
@@ -10,15 +10,12 @@ Build complex rules, serialize them as JSON, and execute them in JavaScript
 | ------------------ | :-------------: |
 | Full name          | json-logic-js |
 | Keywords           | json, logic, jsonlogic, rules |
-| # releases         | 3 |
-| # dependents       | 75 |
-| # downloads        | 1642924 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 327221.6666666667 |
+| # stars            | 938.0 |
 
 ## Links
-- [Homepage](https://github.com/jwadhams/json-logic-js#readme)
-- [Bugs](https://github.com/jwadhams/json-logic-js/issues)
-- [Repository](https://github.com/jwadhams/json-logic-js)
 - [Npm](https://www.npmjs.com/package/json-logic-js)
     
 

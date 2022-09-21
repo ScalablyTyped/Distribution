@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "Queue")
 @js.native
-class Queue[T] ()
+open class Queue[T] ()
   extends typings.uirouterCore.mod.Queue[T] {
   def this(_items: js.Array[T]) = this()
   def this(_items: js.Array[T], _limit: Double) = this()

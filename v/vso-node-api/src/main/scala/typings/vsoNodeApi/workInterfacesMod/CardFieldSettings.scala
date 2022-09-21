@@ -66,13 +66,13 @@ object CardFieldSettings {
     
     inline def setAdditionalFields(value: js.Array[FieldInfo]): Self = StObject.set(x, "additionalFields", value.asInstanceOf[js.Any])
     
-    inline def setAdditionalFieldsVarargs(value: FieldInfo*): Self = StObject.set(x, "additionalFields", js.Array(value :_*))
+    inline def setAdditionalFieldsVarargs(value: FieldInfo*): Self = StObject.set(x, "additionalFields", js.Array(value*))
     
     inline def setAssignedToDisplayFormat(value: IdentityDisplayFormat): Self = StObject.set(x, "assignedToDisplayFormat", value.asInstanceOf[js.Any])
     
     inline def setCoreFields(value: js.Array[FieldInfo]): Self = StObject.set(x, "coreFields", value.asInstanceOf[js.Any])
     
-    inline def setCoreFieldsVarargs(value: FieldInfo*): Self = StObject.set(x, "coreFields", js.Array(value :_*))
+    inline def setCoreFieldsVarargs(value: FieldInfo*): Self = StObject.set(x, "coreFields", js.Array(value*))
     
     inline def setShowAssignedTo(value: Boolean): Self = StObject.set(x, "showAssignedTo", value.asInstanceOf[js.Any])
     

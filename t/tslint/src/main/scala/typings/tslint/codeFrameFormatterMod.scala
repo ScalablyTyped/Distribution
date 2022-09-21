@@ -10,7 +10,7 @@ object codeFrameFormatterMod {
   
   @JSImport("tslint/lib/formatters/codeFrameFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter
+  open class Formatter () extends AbstractFormatter
   /* static members */
   object Formatter {
     

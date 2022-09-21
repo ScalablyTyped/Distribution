@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SmartArtQuickStyle")
 @js.native
-/* private */ class SmartArtQuickStyle ()
+/* private */ open class SmartArtQuickStyle ()
   extends StObject
      with typings.activexOffice.Office.SmartArtQuickStyle {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Category: String = js.native
@@ -33,5 +33,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotSmartArtQuickStyle_typekey: typings.activexOffice.Office.SmartArtQuickStyle = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

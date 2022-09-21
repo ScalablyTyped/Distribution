@@ -22,7 +22,9 @@ object HookInput {
     __obj.asInstanceOf[typings.ionic.definitionsMod.BuildHookInput]
   }
   
-  inline def ServeAfterHookInput(serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails): typings.ionic.definitionsMod.ServeAfterHookInput = {
+  inline def ServeAfterHookInput(
+    serve: (AngularServeOptions & ServeDetails) | (IonicAngularServeOptions & ServeDetails) | (Ionic1ServeOptions & ServeDetails)
+  ): typings.ionic.definitionsMod.ServeAfterHookInput = {
     val __obj = js.Dynamic.literal(name = "serve:after", serve = serve.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ionic.definitionsMod.ServeAfterHookInput]
   }

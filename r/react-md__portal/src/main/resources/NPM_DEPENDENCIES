@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/portal" : "2.4.2"
+      "@react-md/portal" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/portal" : "2.4.2"
+      "@react-md/portal" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

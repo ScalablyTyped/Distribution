@@ -22,11 +22,11 @@ object utilsCommonMod {
   inline def isNonNullString(): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNonNullString")().asInstanceOf[/* is string */ Boolean]
   inline def isNonNullString(str: String): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNonNullString")(str.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  inline def isNumber(obj: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+  inline def isNumber(obj: Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
   
   inline def isOdd(num: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOdd")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isString(obj: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  inline def isString(obj: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
   inline def numberToStringBin(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToStringBin")(num.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def numberToStringBin(num: Double, minLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberToStringBin")(num.asInstanceOf[js.Any], minLength.asInstanceOf[js.Any])).asInstanceOf[String]

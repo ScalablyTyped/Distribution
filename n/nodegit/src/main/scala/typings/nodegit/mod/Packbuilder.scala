@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Packbuilder")
 @js.native
-class Packbuilder ()
+open class Packbuilder ()
   extends typings.nodegit.packBuilderMod.Packbuilder
 /* static members */
 object Packbuilder {

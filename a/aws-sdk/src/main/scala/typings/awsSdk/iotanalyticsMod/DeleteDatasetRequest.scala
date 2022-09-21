@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteDatasetRequest extends StObject {
   
   /**
-    * The name of the data set to delete.
+    * The name of the dataset to delete.
     */
   var datasetName: DatasetName
 }

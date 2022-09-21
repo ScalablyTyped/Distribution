@@ -4,18 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for the `WatchVariable()` method.
-  */
 trait SchemaWatchVariableRequest extends StObject {
   
   /**
-    * If specified, checks the current timestamp of the variable and if the
-    * current timestamp is newer than `newerThan` timestamp, the method returns
-    * immediately.  If not specified or the variable has an older timestamp,
-    * the watcher waits for a the value to change before returning.
+    * If specified, checks the current timestamp of the variable and if the current timestamp is newer than `newerThan` timestamp, the method returns immediately. If not specified or the variable has an older timestamp, the watcher waits for a the value to change before returning.
     */
-  var newerThan: js.UndefOr[String] = js.undefined
+  var newerThan: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaWatchVariableRequest {
   
@@ -27,6 +21,8 @@ object SchemaWatchVariableRequest {
   extension [Self <: SchemaWatchVariableRequest](x: Self) {
     
     inline def setNewerThan(value: String): Self = StObject.set(x, "newerThan", value.asInstanceOf[js.Any])
+    
+    inline def setNewerThanNull: Self = StObject.set(x, "newerThan", null)
     
     inline def setNewerThanUndefined: Self = StObject.set(x, "newerThan", js.undefined)
   }

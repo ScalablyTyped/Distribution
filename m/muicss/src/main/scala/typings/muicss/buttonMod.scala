@@ -10,8 +10,8 @@ object buttonMod {
   
   @JSImport("muicss/lib/react/button", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ButtonProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ButtonProps, js.Object, Any]
   
-  type Button = Component[ButtonProps, js.Object, js.Any]
+  type Button = Component[ButtonProps, js.Object, Any]
 }

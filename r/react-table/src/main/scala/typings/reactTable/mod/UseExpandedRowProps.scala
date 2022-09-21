@@ -10,6 +10,8 @@ trait UseExpandedRowProps[D /* <: js.Object */] extends StObject {
   
   var canExpand: Boolean = js.native
   
+  var depth: Double = js.native
+  
   def getToggleRowExpandedProps(): TableExpandedToggleProps = js.native
   def getToggleRowExpandedProps(props: PartialTableExpandedToggl): TableExpandedToggleProps = js.native
   

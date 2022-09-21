@@ -33,6 +33,6 @@ object CreateClientGrant {
     
     inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
   }
 }

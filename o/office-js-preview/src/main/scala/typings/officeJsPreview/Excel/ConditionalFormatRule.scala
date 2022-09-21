@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a rule, for all traditional rule/format pairings.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -26,25 +26,25 @@ trait ConditionalFormatRule
   var context_ConditionalFormatRule: RequestContext = js.native
   
   /**
+    * The formula, if required, on which to evaluate the conditional format rule.
     *
-    * The formula, if required, to evaluate the conditional format rule on.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formula: String = js.native
   
   /**
+    * The formula, if required, on which to evaluate the conditional format rule in the user's language.
     *
-    * The formula, if required, to evaluate the conditional format rule on in the user's language.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formulaLocal: String = js.native
   
   /**
+    * The formula, if required, on which to evaluate the conditional format rule in R1C1-style notation.
     *
-    * The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formulaR1C1: String = js.native
@@ -62,14 +62,8 @@ trait ConditionalFormatRule
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalFormatRule): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ConditionalFormatRule): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

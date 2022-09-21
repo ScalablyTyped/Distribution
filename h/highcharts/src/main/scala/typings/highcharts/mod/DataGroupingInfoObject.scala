@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * (Highstock) Highcharts Stock only.
+  */
 trait DataGroupingInfoObject extends StObject {
   
   var length: Double

@@ -9,13 +9,13 @@ object bytesMod {
   
   @JSImport("@ethersproject/abi/lib/coders/bytes", "BytesCoder")
   @js.native
-  class BytesCoder protected () extends DynamicBytesCoder {
+  open class BytesCoder protected () extends DynamicBytesCoder {
     def this(localName: String) = this()
   }
   
   @JSImport("@ethersproject/abi/lib/coders/bytes", "DynamicBytesCoder")
   @js.native
-  class DynamicBytesCoder protected () extends Coder {
+  open class DynamicBytesCoder protected () extends Coder {
     def this(`type`: String, localName: String) = this()
   }
 }

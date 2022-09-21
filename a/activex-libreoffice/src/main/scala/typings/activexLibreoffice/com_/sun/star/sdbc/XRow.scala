@@ -139,7 +139,7 @@ trait XRow
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getObject(columnIndex: Double, typeMap: XNameAccess): js.Any
+  def getObject(columnIndex: Double, typeMap: XNameAccess): Any
   
   /**
     * gets a REF(&lt;structured-type&gt;) column value from the current row.
@@ -206,13 +206,13 @@ object XRow {
     getFloat: Double => Double,
     getInt: Double => Double,
     getLong: Double => Double,
-    getObject: (Double, XNameAccess) => js.Any,
+    getObject: (Double, XNameAccess) => Any,
     getRef: Double => XRef,
     getShort: Double => Double,
     getString: Double => String,
     getTime: Double => Time,
     getTimestamp: Double => DateTime,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     wasNull: () => Boolean
   ): XRow = {
@@ -248,7 +248,7 @@ object XRow {
     
     inline def setGetLong(value: Double => Double): Self = StObject.set(x, "getLong", js.Any.fromFunction1(value))
     
-    inline def setGetObject(value: (Double, XNameAccess) => js.Any): Self = StObject.set(x, "getObject", js.Any.fromFunction2(value))
+    inline def setGetObject(value: (Double, XNameAccess) => Any): Self = StObject.set(x, "getObject", js.Any.fromFunction2(value))
     
     inline def setGetRef(value: Double => XRef): Self = StObject.set(x, "getRef", js.Any.fromFunction1(value))
     

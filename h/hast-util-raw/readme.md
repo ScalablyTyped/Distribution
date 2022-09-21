@@ -1,7 +1,7 @@
 
 # Scala.js typings for hast-util-raw
 
-Typings are for version 6.0.0
+Typings are for version 7.2.2
 
 ## Library description:
 hast utility to reparse a tree
@@ -10,10 +10,10 @@ hast utility to reparse a tree
 | ------------------ | :-------------: |
 | Full name          | hast-util-raw |
 | Keywords           | unist, hast, hast-util, util, utility, parse, raw, html |
-| # releases         | 5 |
-| # dependents       | 13 |
-| # downloads        | 24635277 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5534599666666666E7 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/hast-util-raw#readme)

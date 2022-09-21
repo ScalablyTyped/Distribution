@@ -44,7 +44,7 @@ trait PlusIos extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ios.html](http://www.html5plus.org/doc/zh_cn/ios.html)
     */
   def deleteObject(): Unit = js.native
-  def deleteObject(obj: js.Any): Unit = js.native
+  def deleteObject(obj: Any): Unit = js.native
   
   /**
     * 实现代理的方法
@@ -53,8 +53,8 @@ trait PlusIos extends StObject {
     */
   def implements(): PlusIosInstanceObject = js.native
   def implements(name: String): PlusIosInstanceObject = js.native
-  def implements(name: String, obj: js.Any): PlusIosInstanceObject = js.native
-  def implements(name: Unit, obj: js.Any): PlusIosInstanceObject = js.native
+  def implements(name: String, obj: Any): PlusIosInstanceObject = js.native
+  def implements(name: Unit, obj: Any): PlusIosInstanceObject = js.native
   
   /**
     * 导入Objective-C类对象
@@ -72,14 +72,14 @@ trait PlusIos extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ios.html](http://www.html5plus.org/doc/zh_cn/ios.html)
     */
-  def invoke(): js.Any = js.native
-  def invoke(obj: Unit, name: String): js.Any = js.native
-  def invoke(obj: Unit, name: String, args: js.Any): js.Any = js.native
-  def invoke(obj: Unit, name: Unit, args: js.Any): js.Any = js.native
-  def invoke(obj: PlusIosInstanceObject): js.Any = js.native
-  def invoke(obj: PlusIosInstanceObject, name: String): js.Any = js.native
-  def invoke(obj: PlusIosInstanceObject, name: String, args: js.Any): js.Any = js.native
-  def invoke(obj: PlusIosInstanceObject, name: Unit, args: js.Any): js.Any = js.native
+  def invoke(): Any = js.native
+  def invoke(obj: Unit, name: String): Any = js.native
+  def invoke(obj: Unit, name: String, args: Any): Any = js.native
+  def invoke(obj: Unit, name: Unit, args: Any): Any = js.native
+  def invoke(obj: PlusIosInstanceObject): Any = js.native
+  def invoke(obj: PlusIosInstanceObject, name: String): Any = js.native
+  def invoke(obj: PlusIosInstanceObject, name: String, args: Any): Any = js.native
+  def invoke(obj: PlusIosInstanceObject, name: Unit, args: Any): Any = js.native
   
   /**
     * 创建实例对象
@@ -88,6 +88,6 @@ trait PlusIos extends StObject {
     */
   def newObject(): PlusIosInstanceObject = js.native
   def newObject(classname: String): PlusIosInstanceObject = js.native
-  def newObject(classname: String, args: js.Any): PlusIosInstanceObject = js.native
-  def newObject(classname: Unit, args: js.Any): PlusIosInstanceObject = js.native
+  def newObject(classname: String, args: Any): PlusIosInstanceObject = js.native
+  def newObject(classname: Unit, args: Any): PlusIosInstanceObject = js.native
 }

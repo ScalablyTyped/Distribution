@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExportDeclaration
   extends StObject
      with DeclarationStatement
-     with JSDocContainer
-     with HasJSDoc {
+     with HasJSDoc
+     with HasModifiers {
+  
+  val assertClause: js.UndefOr[AssertClause] = js.native
   
   /** Will not be assigned in the case of `export * from "foo";` */
   val exportClause: js.UndefOr[NamedExportBindings] = js.native
@@ -18,6 +20,9 @@ trait ExportDeclaration
   
   @JSName("kind")
   val kind_ExportDeclaration: typings.typescript.mod.SyntaxKind.ExportDeclaration = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ExportDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
   
   /** If this is not a StringLiteral it will be a grammar error. */
   val moduleSpecifier: js.UndefOr[Expression] = js.native

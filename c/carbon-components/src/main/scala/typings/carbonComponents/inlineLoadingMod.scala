@@ -1,5 +1,7 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.PartialInlineLoadingOptio
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,13 +11,14 @@ object inlineLoadingMod {
   
   @JSImport("carbon-components/components/inline-loading/inline-loading", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with InlineLoading {
-    def this(element: js.Any, options: js.Any) = this()
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialInlineLoadingOptio) = this()
     
     /* CompleteClass */
-    override def setState(state: js.Any): this.type = js.native
+    override def setState(state: String): this.type = js.native
   }
   object default {
     
@@ -26,8 +29,8 @@ object inlineLoadingMod {
     /* static member */
     @JSImport("carbon-components/components/inline-loading/inline-loading", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
     
     /* static member */
     object states {
@@ -61,18 +64,72 @@ object inlineLoadingMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ trait InlineLoading extends StObject {
     
-    def setState(state: js.Any): this.type
+    def setState(state: String): this.type
   }
   object InlineLoading {
     
-    inline def apply(setState: js.Any => InlineLoading): InlineLoading = {
+    inline def apply(setState: String => InlineLoading): InlineLoading = {
       val __obj = js.Dynamic.literal(setState = js.Any.fromFunction1(setState))
       __obj.asInstanceOf[InlineLoading]
     }
     
     extension [Self <: InlineLoading](x: Self) {
       
-      inline def setSetState(value: js.Any => InlineLoading): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: String => InlineLoading): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait InlineLoadingOptions extends StObject {
+    
+    var classLoadingStop: String
+    
+    var selectorError: String
+    
+    var selectorFinished: String
+    
+    var selectorInit: String
+    
+    var selectorSpinner: String
+    
+    var selectorTextActive: String
+    
+    var selectorTextError: String
+    
+    var selectorTextFinished: String
+  }
+  object InlineLoadingOptions {
+    
+    inline def apply(
+      classLoadingStop: String,
+      selectorError: String,
+      selectorFinished: String,
+      selectorInit: String,
+      selectorSpinner: String,
+      selectorTextActive: String,
+      selectorTextError: String,
+      selectorTextFinished: String
+    ): InlineLoadingOptions = {
+      val __obj = js.Dynamic.literal(classLoadingStop = classLoadingStop.asInstanceOf[js.Any], selectorError = selectorError.asInstanceOf[js.Any], selectorFinished = selectorFinished.asInstanceOf[js.Any], selectorInit = selectorInit.asInstanceOf[js.Any], selectorSpinner = selectorSpinner.asInstanceOf[js.Any], selectorTextActive = selectorTextActive.asInstanceOf[js.Any], selectorTextError = selectorTextError.asInstanceOf[js.Any], selectorTextFinished = selectorTextFinished.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InlineLoadingOptions]
+    }
+    
+    extension [Self <: InlineLoadingOptions](x: Self) {
+      
+      inline def setClassLoadingStop(value: String): Self = StObject.set(x, "classLoadingStop", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorError(value: String): Self = StObject.set(x, "selectorError", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorFinished(value: String): Self = StObject.set(x, "selectorFinished", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorSpinner(value: String): Self = StObject.set(x, "selectorSpinner", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorTextActive(value: String): Self = StObject.set(x, "selectorTextActive", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorTextError(value: String): Self = StObject.set(x, "selectorTextError", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorTextFinished(value: String): Self = StObject.set(x, "selectorTextFinished", value.asInstanceOf[js.Any])
     }
   }
 }

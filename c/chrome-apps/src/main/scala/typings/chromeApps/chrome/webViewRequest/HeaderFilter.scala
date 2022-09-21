@@ -43,7 +43,7 @@ object HeaderFilter {
     
     inline def setNameContainsUndefined: Self = StObject.set(x, "nameContains", js.undefined)
     
-    inline def setNameContainsVarargs(value: String*): Self = StObject.set(x, "nameContains", js.Array(value :_*))
+    inline def setNameContainsVarargs(value: String*): Self = StObject.set(x, "nameContains", js.Array(value*))
     
     inline def setNameEquals(value: String): Self = StObject.set(x, "nameEquals", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object HeaderFilter {
     
     inline def setValueContainsUndefined: Self = StObject.set(x, "valueContains", js.undefined)
     
-    inline def setValueContainsVarargs(value: String*): Self = StObject.set(x, "valueContains", js.Array(value :_*))
+    inline def setValueContainsVarargs(value: String*): Self = StObject.set(x, "valueContains", js.Array(value*))
     
     inline def setValueEquals(value: String): Self = StObject.set(x, "valueEquals", value.asInstanceOf[js.Any])
     

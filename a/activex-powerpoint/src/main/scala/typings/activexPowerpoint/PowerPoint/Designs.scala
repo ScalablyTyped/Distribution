@@ -19,13 +19,13 @@ trait Designs extends StObject {
   
   val Count: Double = js.native
   
-  def Item(Index: js.Any): Design = js.native
+  def Item(Index: Any): Design = js.native
   
   /** @param number [Index=-1] */
   def Load(TemplateName: String): Design = js.native
   def Load(TemplateName: String, Index: Double): Design = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.Designs_typekey")
   var PowerPointDotDesigns_typekey: Designs = js.native

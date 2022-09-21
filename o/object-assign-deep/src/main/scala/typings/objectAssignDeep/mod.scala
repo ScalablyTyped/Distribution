@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(target: js.Object, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply[T, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
-  inline def apply[T, U, V](target: T, source1: U, source2: V): T & U & V = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[T & U & V]
-  inline def apply[T, U, V, W](target: T, source1: U, source2: V, source3: W): T & U & V & W = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[T & U & V & W]
+  inline def apply(target: js.Object, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def apply[T /* <: js.Object */, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
+  inline def apply[T /* <: js.Object */, U, V](target: T, source1: U, source2: V): T & U & V = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[T & U & V]
+  inline def apply[T /* <: js.Object */, U, V, W](target: T, source1: U, source2: V, source3: W): T & U & V & W = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[T & U & V & W]
   
   @JSImport("object-assign-deep", JSImport.Namespace)
   @js.native
@@ -38,16 +38,17 @@ object mod {
   @js.native
   trait objectAssignDeep extends StObject {
     
-    def noMutate(target: js.Object, sources: js.Any*): js.Any = js.native
-    def noMutate[T, U](target: T, source: U): T & U = js.native
-    def noMutate[T, U, V](target: T, source1: U, source2: V): T & U & V = js.native
-    def noMutate[T, U, V, W](target: T, source1: U, source2: V, source3: W): T & U & V & W = js.native
+    def noMutate(target: js.Object, sources: Any*): Any = js.native
+    def noMutate[T /* <: js.Object */, U](target: T, source: U): T & U = js.native
+    def noMutate[T /* <: js.Object */, U, V](target: T, source1: U, source2: V): T & U & V = js.native
+    def noMutate[T /* <: js.Object */, U, V, W](target: T, source1: U, source2: V, source3: W): T & U & V & W = js.native
     @JSName("noMutate")
     var noMutate_Original: FnCall = js.native
     
-    def withOptions(target: js.Any, objects: js.Array[js.Any], options: Options): js.Any = js.native
-    def withOptions[T, U](target: T, objects: js.Array[U], options: Options): T & U = js.native
+    def withOptions(target: Any, objects: js.Array[Any], options: Options): Any = js.native
     def withOptions[T, U, V](target: T, objects: js.Tuple2[U, V], options: Options): T & U & V = js.native
     def withOptions[T, U, V, W](target: T, objects: js.Tuple3[U, V, W], options: Options): T & U & V & W = js.native
+    @JSName("withOptions")
+    def withOptions_TU_Intersection[T, U](target: T, objects: js.Array[U], options: Options): T & U = js.native
   }
 }

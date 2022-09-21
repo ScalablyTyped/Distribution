@@ -108,7 +108,7 @@ object Flight {
       * API for more information). This is a good place to set up event
       * listeners that bind to callbacks.
       */
-    def initialize(node: js.Any, options: js.Object): Unit = js.native
+    def initialize(node: Any, options: js.Object): Unit = js.native
     
     /**
       * If we no longer want a component instance to listen to an event we can
@@ -358,7 +358,7 @@ object Flight {
     def isEnumerable(obj: js.Object, property: String): Boolean = js.native
     
     def merge(obj1: js.Object, obj2: js.Object): js.Object = js.native
-    def merge(obj1: js.Object, obj2: js.Object, args: js.Any*): js.Object = js.native
+    def merge(obj1: js.Object, obj2: js.Object, args: Any*): js.Object = js.native
     def merge(obj1: js.Object, obj2: js.Object, deepClone: Boolean): js.Object = js.native
     
     def push(base: js.Object, extra: js.Object): Unit = js.native
@@ -366,9 +366,9 @@ object Flight {
     
     def throttle(func: js.Function, wait: Double): js.Function = js.native
     
-    def toArray(obj: js.Object): js.Array[js.Any] = js.native
-    def toArray(obj: js.Object, from: Double): js.Array[js.Any] = js.native
+    def toArray(obj: js.Object): js.Array[Any] = js.native
+    def toArray(obj: js.Object, from: Double): js.Array[Any] = js.native
     
-    def uniqueArray(array: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def uniqueArray(array: js.Array[Any]): js.Array[Any] = js.native
   }
 }

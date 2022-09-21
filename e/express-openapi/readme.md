@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-openapi
 
-Typings are for version 7.2.0
+Typings are for version 12.0.2
 
 ## Library description:
 An unopinionated OpenAPI framework for express
@@ -10,10 +10,10 @@ An unopinionated OpenAPI framework for express
 | ------------------ | :-------------: |
 | Full name          | express-openapi |
 | Keywords           | openapi, swagger, express |
-| # releases         | 18 |
-| # dependents       | 11 |
-| # downloads        | 756818 |
-| # stars            | 5 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 89646.33333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi#readme)

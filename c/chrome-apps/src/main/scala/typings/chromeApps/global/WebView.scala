@@ -29,7 +29,7 @@ object WebView {
   @JSGlobal("WebView")
   @js.native
   /** Create a new element */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with typings.chromeApps.HTMLWebViewElement {
     

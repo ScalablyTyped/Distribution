@@ -4,28 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The packages that must be installed in order for a worker to run the steps
-  * of the Cloud Dataflow job that will be assigned to its worker pool.  This
-  * is the mechanism by which the Cloud Dataflow SDK causes code to be loaded
-  * onto the workers. For example, the Cloud Dataflow Java SDK might use this
-  * to install jars containing the user&#39;s code and all of the various
-  * dependencies (libraries, data files, etc.) required in order for that code
-  * to run.
-  */
 trait SchemaPackage extends StObject {
   
   /**
-    * The resource to read the package from. The supported resource type is:
-    * Google Cloud Storage:    storage.googleapis.com/{bucket}
-    * bucket.storage.googleapis.com/
+    * The resource to read the package from. The supported resource type is: Google Cloud Storage: storage.googleapis.com/{bucket\} bucket.storage.googleapis.com/
     */
-  var location: js.UndefOr[String] = js.undefined
+  var location: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The name of the package.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPackage {
   
@@ -38,9 +27,13 @@ object SchemaPackage {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

@@ -53,7 +53,7 @@ object XAreaLink {
     acquire: () => Unit,
     getDestArea: () => CellRangeAddress,
     getSourceArea: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDestArea: CellRangeAddress => Unit,
     setSourceArea: String => Unit

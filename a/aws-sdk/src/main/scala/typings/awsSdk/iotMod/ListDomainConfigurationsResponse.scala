@@ -29,7 +29,7 @@ object ListDomainConfigurationsResponse {
     
     inline def setDomainConfigurationsUndefined: Self = StObject.set(x, "domainConfigurations", js.undefined)
     
-    inline def setDomainConfigurationsVarargs(value: DomainConfigurationSummary*): Self = StObject.set(x, "domainConfigurations", js.Array(value :_*))
+    inline def setDomainConfigurationsVarargs(value: DomainConfigurationSummary*): Self = StObject.set(x, "domainConfigurations", js.Array(value*))
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     

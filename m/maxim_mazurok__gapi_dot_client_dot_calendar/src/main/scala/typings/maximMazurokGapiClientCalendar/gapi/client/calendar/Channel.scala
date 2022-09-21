@@ -23,7 +23,7 @@ trait Channel extends StObject {
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Channel & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Channel & TopLevel[Any]
   ] = js.undefined
   
   /** A Boolean value to indicate whether payload is wanted. Optional. */
@@ -38,7 +38,7 @@ trait Channel extends StObject {
   /** An arbitrary string delivered to the target address with each notification delivered over this channel. Optional. */
   var token: js.UndefOr[String] = js.undefined
   
-  /** The type of delivery mechanism used for this channel. */
+  /** The type of delivery mechanism used for this channel. Valid values are "web_hook" (or "webhook"). Both values refer to a channel where Http requests are used to deliver messages. */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object Channel {
@@ -69,7 +69,7 @@ object Channel {
     inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Channel & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Channel & TopLevel[Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

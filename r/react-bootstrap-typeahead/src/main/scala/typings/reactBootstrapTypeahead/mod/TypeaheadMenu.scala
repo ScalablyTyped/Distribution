@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-typeahead", "TypeaheadMenu")
 @js.native
-class TypeaheadMenu[T /* <: TypeaheadModel */] protected ()
-  extends Component[TypeaheadMenuProps[T], js.Object, js.Any] {
+open class TypeaheadMenu[T /* <: TypeaheadModel */] protected ()
+  extends Component[TypeaheadMenuProps[T], js.Object, Any] {
   def this(props: TypeaheadMenuProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TypeaheadMenuProps[T], context: js.Any) = this()
+  def this(props: TypeaheadMenuProps[T], context: Any) = this()
 }

@@ -9,7 +9,9 @@ trait ClassExpression
   extends StObject
      with ClassLikeDeclarationBase
      with PrimaryExpression
-     with ClassLikeDeclaration {
+     with ClassLikeDeclaration
+     with HasDecorators
+     with HasModifiers {
   
   @JSName("kind")
   val kind_ClassExpression: typings.typescript.mod.SyntaxKind.ClassExpression = js.native

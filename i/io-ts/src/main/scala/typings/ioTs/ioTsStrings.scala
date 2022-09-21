@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ioTsStrings {
   
   @js.native
+  sealed trait apply extends StObject
+  inline def apply: apply = "<apply>".asInstanceOf[apply]
+  
+  @js.native
   sealed trait AnyArrayType extends StObject
   inline def AnyArrayType: AnyArrayType = "AnyArrayType".asInstanceOf[AnyArrayType]
   
@@ -248,6 +252,10 @@ object ioTsStrings {
   inline def fromPartial: fromPartial = "fromPartial".asInstanceOf[fromPartial]
   
   @js.native
+  sealed trait fromStruct extends StObject
+  inline def fromStruct: fromStruct = "fromStruct".asInstanceOf[fromStruct]
+  
+  @js.native
   sealed trait fromTuple extends StObject
   inline def fromTuple: fromTuple = "fromTuple".asInstanceOf[fromTuple]
   
@@ -270,6 +278,10 @@ object ioTsStrings {
     extends StObject
        with Kind
   inline def required: required = "required".asInstanceOf[required]
+  
+  @js.native
+  sealed trait struct extends StObject
+  inline def struct: struct = "struct".asInstanceOf[struct]
   
   @js.native
   sealed trait sum extends StObject

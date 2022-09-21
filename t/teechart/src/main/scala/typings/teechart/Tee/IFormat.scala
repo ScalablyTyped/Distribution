@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IFormat extends StObject {
   
-  def drawText(bounds: IRectangle, text: String): js.Any
+  def drawText(bounds: IRectangle, text: String): Any
   
-  def ellipse(x: Double, y: Double, width: Double, height: Double): js.Any
+  def ellipse(x: Double, y: Double, width: Double, height: Double): Any
   
   var fill: String
   
@@ -18,9 +18,9 @@ trait IFormat extends StObject {
   
   var image: IImage
   
-  def poligon(points: js.Array[IPoint]): js.Any
+  def poligon(points: js.Array[IPoint]): Any
   
-  def rectangle(x: Double, y: Double, width: Double, height: Double): js.Any
+  def rectangle(x: Double, y: Double, width: Double, height: Double): Any
   
   var round: IPoint
   
@@ -37,14 +37,14 @@ trait IFormat extends StObject {
 object IFormat {
   
   inline def apply(
-    drawText: (IRectangle, String) => js.Any,
-    ellipse: (Double, Double, Double, Double) => js.Any,
+    drawText: (IRectangle, String) => Any,
+    ellipse: (Double, Double, Double, Double) => Any,
     fill: String,
     font: IFont,
     gradient: IGradient,
     image: IImage,
-    poligon: js.Array[IPoint] => js.Any,
-    rectangle: (Double, Double, Double, Double) => js.Any,
+    poligon: js.Array[IPoint] => Any,
+    rectangle: (Double, Double, Double, Double) => Any,
     round: IPoint,
     shadow: IShadow,
     stroke: IStroke,
@@ -58,9 +58,9 @@ object IFormat {
   
   extension [Self <: IFormat](x: Self) {
     
-    inline def setDrawText(value: (IRectangle, String) => js.Any): Self = StObject.set(x, "drawText", js.Any.fromFunction2(value))
+    inline def setDrawText(value: (IRectangle, String) => Any): Self = StObject.set(x, "drawText", js.Any.fromFunction2(value))
     
-    inline def setEllipse(value: (Double, Double, Double, Double) => js.Any): Self = StObject.set(x, "ellipse", js.Any.fromFunction4(value))
+    inline def setEllipse(value: (Double, Double, Double, Double) => Any): Self = StObject.set(x, "ellipse", js.Any.fromFunction4(value))
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
@@ -70,9 +70,9 @@ object IFormat {
     
     inline def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    inline def setPoligon(value: js.Array[IPoint] => js.Any): Self = StObject.set(x, "poligon", js.Any.fromFunction1(value))
+    inline def setPoligon(value: js.Array[IPoint] => Any): Self = StObject.set(x, "poligon", js.Any.fromFunction1(value))
     
-    inline def setRectangle(value: (Double, Double, Double, Double) => js.Any): Self = StObject.set(x, "rectangle", js.Any.fromFunction4(value))
+    inline def setRectangle(value: (Double, Double, Double, Double) => Any): Self = StObject.set(x, "rectangle", js.Any.fromFunction4(value))
     
     inline def setRound(value: IPoint): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Condition extends StObject {
   
   /**
-    * The key in a key-value pair. For example, in "ec2:ResourceTag/Department": "accounting", "ec2:ResourceTag/Department" is the key.
+    * The key in a key-value pair. For example, in the tag Department: Accounting, Department is the key.
     */
   var ConditionKey: typings.awsSdk.backupMod.ConditionKey
   
   /**
-    * An operation, such as StringEquals, that is applied to a key-value pair used to filter resources in a selection.
+    * An operation applied to a key-value pair used to assign resources to your backup plan. Condition only supports StringEquals. For more flexible assignment options, including StringLike and the ability to exclude resources from your backup plan, use Conditions (with an "s" on the end) for your  BackupSelection .
     */
   var ConditionType: typings.awsSdk.backupMod.ConditionType
   
   /**
-    * The value in a key-value pair. For example, in "ec2:ResourceTag/Department": "accounting", "accounting" is the value.
+    * The value in a key-value pair. For example, in the tag Department: Accounting, Accounting is the value.
     */
   var ConditionValue: typings.awsSdk.backupMod.ConditionValue
 }

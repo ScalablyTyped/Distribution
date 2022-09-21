@@ -39,7 +39,7 @@ trait GetObjectResponse extends StObject {
   /**
     * The date and time that the object was last modified.
     */
-  var LastModified: js.UndefOr[TimeStamp] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The HTML status code of the request. Status codes ranging from 200 to 299 indicate success. All other status codes indicate the type of error that occurred.
@@ -79,7 +79,7 @@ object GetObjectResponse {
     
     inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    inline def setLastModified(value: TimeStamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     

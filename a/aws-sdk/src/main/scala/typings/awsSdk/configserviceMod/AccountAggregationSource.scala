@@ -12,7 +12,7 @@ trait AccountAggregationSource extends StObject {
   var AccountIds: AccountAggregationSourceAccountList
   
   /**
-    * If true, aggregate existing AWS Config regions and future regions.
+    * If true, aggregate existing Config regions and future regions.
     */
   var AllAwsRegions: js.UndefOr[Boolean] = js.undefined
   
@@ -32,7 +32,7 @@ object AccountAggregationSource {
     
     inline def setAccountIds(value: AccountAggregationSourceAccountList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
     inline def setAllAwsRegions(value: Boolean): Self = StObject.set(x, "AllAwsRegions", value.asInstanceOf[js.Any])
     
@@ -42,6 +42,6 @@ object AccountAggregationSource {
     
     inline def setAwsRegionsUndefined: Self = StObject.set(x, "AwsRegions", js.undefined)
     
-    inline def setAwsRegionsVarargs(value: String*): Self = StObject.set(x, "AwsRegions", js.Array(value :_*))
+    inline def setAwsRegionsVarargs(value: String*): Self = StObject.set(x, "AwsRegions", js.Array(value*))
   }
 }

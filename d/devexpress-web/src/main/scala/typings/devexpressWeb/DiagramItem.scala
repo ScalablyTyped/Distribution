@@ -17,11 +17,11 @@ trait DiagramItem extends StObject {
   /**
     * Gets the item's key from a data source.
     */
-  var key: js.Any
+  var key: Any
 }
 object DiagramItem {
   
-  inline def apply(id: String, key: js.Any): DiagramItem = {
+  inline def apply(id: String, key: Any): DiagramItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramItem]
   }
@@ -30,6 +30,6 @@ object DiagramItem {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

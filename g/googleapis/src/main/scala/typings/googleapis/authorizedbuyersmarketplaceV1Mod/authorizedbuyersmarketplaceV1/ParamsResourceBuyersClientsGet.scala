@@ -1,0 +1,29 @@
+package typings.googleapis.authorizedbuyersmarketplaceV1Mod.authorizedbuyersmarketplaceV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParamsResourceBuyersClientsGet
+  extends StObject
+     with StandardParameters {
+  
+  /**
+    * Required. Format: `buyers/{accountId\}/clients/{clientAccountId\}`
+    */
+  var name: js.UndefOr[String] = js.undefined
+}
+object ParamsResourceBuyersClientsGet {
+  
+  inline def apply(): ParamsResourceBuyersClientsGet = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ParamsResourceBuyersClientsGet]
+  }
+  
+  extension [Self <: ParamsResourceBuyersClientsGet](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
+}

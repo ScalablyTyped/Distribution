@@ -2,7 +2,6 @@ package typings.fastbitset
 
 import typings.fastbitset.fastbitsetNumbers.`0`
 import typings.fastbitset.fastbitsetNumbers.`1`
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +10,10 @@ object mod {
   
   @JSImport("fastbitset", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with FastBitSet {
-    def this(iterable: Iterable[Double]) = this()
+    def this(iterable: js.Iterable[Double]) = this()
     
     /** Add the value (Set the bit at `index` to `true`) */
     /* CompleteClass */

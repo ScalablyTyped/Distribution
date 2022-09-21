@@ -10,29 +10,29 @@ object pointerInteractionMod {
   
   @JSImport("plottable/build/src/interactions/pointerInteraction", "Pointer")
   @js.native
-  class Pointer () extends Interaction {
+  open class Pointer () extends Interaction {
     
-    /* private */ def _handleMouseEvent(p: js.Any, e: js.Any): js.Any = js.native
+    /* private */ var _handleMouseEvent: Any = js.native
     
-    /* private */ def _handlePointerEvent(p: js.Any, insideSVG: js.Any): js.Any = js.native
+    /* private */ var _handlePointerEvent: Any = js.native
     
-    /* private */ def _handleTouchEvent(p: js.Any, e: js.Any): js.Any = js.native
+    /* private */ var _handleTouchEvent: Any = js.native
     
-    /* private */ var _mouseDispatcher: js.Any = js.native
+    /* private */ var _mouseDispatcher: Any = js.native
     
-    /* private */ var _mouseMoveCallback: js.Any = js.native
+    /* private */ var _mouseMoveCallback: Any = js.native
     
-    /* private */ var _overComponent: js.Any = js.native
+    /* private */ var _overComponent: Any = js.native
     
-    /* private */ var _pointerEnterCallbacks: js.Any = js.native
+    /* private */ var _pointerEnterCallbacks: Any = js.native
     
-    /* private */ var _pointerExitCallbacks: js.Any = js.native
+    /* private */ var _pointerExitCallbacks: Any = js.native
     
-    /* private */ var _pointerMoveCallbacks: js.Any = js.native
+    /* private */ var _pointerMoveCallbacks: Any = js.native
     
-    /* private */ var _touchDispatcher: js.Any = js.native
+    /* private */ var _touchDispatcher: Any = js.native
     
-    /* private */ var _touchStartCallback: js.Any = js.native
+    /* private */ var _touchStartCallback: Any = js.native
     
     /**
       * Removes a callback that would be called when the pointer enters the Component.

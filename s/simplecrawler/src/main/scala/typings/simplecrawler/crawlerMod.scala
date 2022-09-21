@@ -1,6 +1,6 @@
 package typings.simplecrawler
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingMessage
@@ -33,9 +33,6 @@ import typings.simplecrawler.simplecrawlerStrings.queueadd
 import typings.simplecrawler.simplecrawlerStrings.queueduplicate
 import typings.simplecrawler.simplecrawlerStrings.queueerror
 import typings.simplecrawler.simplecrawlerStrings.robotstxterror
-import typings.std.Date
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +41,7 @@ object crawlerMod {
   
   @JSImport("simplecrawler/crawler", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Crawler {
+  open class ^ protected () extends Crawler {
     def this(initialURL: String) = this()
   }
   
@@ -59,7 +56,7 @@ object crawlerMod {
     
     var allowInitialDomainChange: Boolean = js.native
     
-    var allowedProtocols: js.Array[RegExp] = js.native
+    var allowedProtocols: js.Array[js.RegExp] = js.native
     
     var authPass: js.UndefOr[String] = js.native
     
@@ -87,7 +84,7 @@ object crawlerMod {
     
     var decompressResponses: Boolean = js.native
     
-    var discoverRegex: js.Array[js.Function0[Unit] | RegExp] = js.native
+    var discoverRegex: js.Array[js.Function0[Unit] | js.RegExp] = js.native
     
     def discoverResources(resourceText: String): js.Array[String] = js.native
     
@@ -106,7 +103,7 @@ object crawlerMod {
     def getRobotsTxt(
       url: String,
       callback: js.Function3[
-          /* error */ js.UndefOr[Error], 
+          /* error */ js.UndefOr[js.Error], 
           /* href */ js.UndefOr[String], 
           /* responseBody */ js.UndefOr[String], 
           Unit
@@ -114,7 +111,7 @@ object crawlerMod {
     ): this.type = js.native
     
     def handleResponse(queueItem: QueueItem, response: IncomingMessage): String = js.native
-    def handleResponse(queueItem: QueueItem, response: IncomingMessage, timeCommenced: Date): String = js.native
+    def handleResponse(queueItem: QueueItem, response: IncomingMessage, timeCommenced: js.Date): String = js.native
     
     var host: String = js.native
     
@@ -142,48 +139,21 @@ object crawlerMod {
     
     var needsAuth: Boolean = js.native
     
-    @JSName("on")
-    def on_complete(event: complete, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_cookieerror(
-      event: cookieerror,
-      listener: js.Function3[/* queueItem */ QueueItem, /* error */ Error, /* cookie */ String, Unit]
+    def on(event: crawlstart | complete, listener: js.Function0[Unit]): this.type = js.native
+    def on(
+      event: invaliddomain | fetchdisallowed | queueduplicate,
+      listener: js.Function1[/* queueItem */ QueueItem, Unit]
     ): this.type = js.native
-    @JSName("on")
-    def on_crawlstart(event: crawlstart, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_discoverycomplete(
-      event: discoverycomplete,
-      listener: js.Function2[/* queueItem */ QueueItem, /* resources */ js.Array[String], Unit]
+    def on(
+      event: downloadconditionerror | downloadprevented | fetch404 | fetch410 | fetchconditionerror | fetchdataerror | fetcherror | fetchheaders,
+      listener: js.Function2[
+          /* queueItem */ QueueItem, 
+          (/* error */ Any) | (/* response */ IncomingMessage), 
+          Unit
+        ]
     ): this.type = js.native
-    @JSName("on")
-    def on_downloadconditionerror(
-      event: downloadconditionerror,
-      listener: js.Function2[/* queueItem */ QueueItem, /* error */ js.Any, Unit]
-    ): this.type = js.native
-    @JSName("on")
-    def on_downloadprevented(
-      event: downloadprevented,
-      listener: js.Function2[/* queueItem */ QueueItem, /* response */ IncomingMessage, Unit]
-    ): this.type = js.native
-    @JSName("on")
-    def on_fetch404(
-      event: fetch404,
-      listener: js.Function2[/* queueItem */ QueueItem, /* response */ IncomingMessage, Unit]
-    ): this.type = js.native
-    @JSName("on")
-    def on_fetch410(
-      event: fetch410,
-      listener: js.Function2[/* queueItem */ QueueItem, /* response */ IncomingMessage, Unit]
-    ): this.type = js.native
-    @JSName("on")
-    def on_fetchclienterror(
-      event: fetchclienterror,
-      listener: js.Function2[/* queueItem */ QueueItem, /* error */ js.UndefOr[js.Object], Unit]
-    ): this.type = js.native
-    @JSName("on")
-    def on_fetchcomplete(
-      event: fetchcomplete,
+    def on(
+      event: fetchcomplete | gziperror,
       listener: js.Function3[
           /* queueItem */ QueueItem, 
           /* responseBody */ String | Buffer, 
@@ -192,26 +162,19 @@ object crawlerMod {
         ]
     ): this.type = js.native
     @JSName("on")
-    def on_fetchconditionerror(
-      event: fetchconditionerror,
-      listener: js.Function2[/* queueItem */ QueueItem, /* error */ js.Any, Unit]
+    def on_cookieerror(
+      event: cookieerror,
+      listener: js.Function3[/* queueItem */ QueueItem, /* error */ js.Error, /* cookie */ String, Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_fetchdataerror(
-      event: fetchdataerror,
-      listener: js.Function2[/* queueItem */ QueueItem, /* response */ IncomingMessage, Unit]
+    def on_discoverycomplete(
+      event: discoverycomplete,
+      listener: js.Function2[/* queueItem */ QueueItem, /* resources */ js.Array[String], Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_fetchdisallowed(event: fetchdisallowed, listener: js.Function1[/* queueItem */ QueueItem, Unit]): this.type = js.native
-    @JSName("on")
-    def on_fetcherror(
-      event: fetcherror,
-      listener: js.Function2[/* queueItem */ QueueItem, /* response */ IncomingMessage, Unit]
-    ): this.type = js.native
-    @JSName("on")
-    def on_fetchheaders(
-      event: fetchheaders,
-      listener: js.Function2[/* queueItem */ QueueItem, /* response */ IncomingMessage, Unit]
+    def on_fetchclienterror(
+      event: fetchclienterror,
+      listener: js.Function2[/* queueItem */ QueueItem, /* error */ js.UndefOr[js.Object], Unit]
     ): this.type = js.native
     @JSName("on")
     def on_fetchprevented(
@@ -236,18 +199,6 @@ object crawlerMod {
     @JSName("on")
     def on_fetchtimeout(event: fetchtimeout, listener: js.Function2[/* queueItem */ QueueItem, /* timeout */ Double, Unit]): this.type = js.native
     @JSName("on")
-    def on_gziperror(
-      event: gziperror,
-      listener: js.Function3[
-          /* queueItem */ QueueItem, 
-          /* responseBody */ String | Buffer, 
-          /* response */ IncomingMessage, 
-          Unit
-        ]
-    ): this.type = js.native
-    @JSName("on")
-    def on_invaliddomain(event: invaliddomain, listener: js.Function1[/* queueItem */ QueueItem, Unit]): this.type = js.native
-    @JSName("on")
     def on_notmodified(
       event: notmodified,
       listener: js.Function3[
@@ -263,14 +214,12 @@ object crawlerMod {
       listener: js.Function2[/* queueItem */ js.UndefOr[QueueItem], /* referrer */ js.UndefOr[QueueItem], Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_queueduplicate(event: queueduplicate, listener: js.Function1[/* queueItem */ QueueItem, Unit]): this.type = js.native
-    @JSName("on")
     def on_queueerror(
       event: queueerror,
       listener: js.Function2[/* error */ js.UndefOr[QueueItem], /* queueItem */ js.UndefOr[QueueItem], Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_robotstxterror(event: robotstxterror, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def on_robotstxterror(event: robotstxterror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     
     var parseHTMLComments: Boolean = js.native
     
@@ -320,7 +269,7 @@ object crawlerMod {
     
     var stripWWWDomain: Boolean = js.native
     
-    var supportedMimeTypes: js.Array[String | RegExp] = js.native
+    var supportedMimeTypes: js.Array[String | js.RegExp] = js.native
     
     var timeout: Double = js.native
     

@@ -26,7 +26,7 @@ object ForwardingRulesScopedList {
     
     inline def setForwardingRulesUndefined: Self = StObject.set(x, "forwardingRules", js.undefined)
     
-    inline def setForwardingRulesVarargs(value: ForwardingRule*): Self = StObject.set(x, "forwardingRules", js.Array(value :_*))
+    inline def setForwardingRulesVarargs(value: ForwardingRule*): Self = StObject.set(x, "forwardingRules", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ Simulated DOM events for automated testing
 | Full name          | simulant |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 451896 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75375.66666666667 |
+| # stars            | 203.0 |
 
 ## Links
 - [Homepage](https://github.com/Rich-Harris/simulant#readme)

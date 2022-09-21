@@ -31,7 +31,7 @@ trait Resource extends StObject {
   
   /**
     * Required. The resource name of the event_store under which the events are created. The format is
-    * "projects/${projectId}/locations/global/catalogs/${catalogId}/eventStores/${eventStoreId}"
+    * `projects/${projectId}/locations/global/catalogs/${catalogId}/eventStores/${eventStoreId}`
     */
   var parent: String
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-movable" : "2.5.3"
+      "react-movable" : "3.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-movable" : "2.5.3"
+      "react-movable" : "3.0.4"
     }
   ],
   "compile-devDependencies" : [

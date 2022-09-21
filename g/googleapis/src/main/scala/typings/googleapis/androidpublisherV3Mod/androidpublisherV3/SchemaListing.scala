@@ -7,31 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaListing extends StObject {
   
   /**
-    * Full description of the app; this may be up to 4000 characters in length.
+    * Full description of the app.
     */
-  var fullDescription: js.UndefOr[String] = js.undefined
+  var fullDescription: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Language localization code (for example, &quot;de-AT&quot; for Austrian
-    * German).
+    * Language localization code (a BCP-47 language tag; for example, "de-AT" for Austrian German).
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Short description of the app (previously known as promo text); this may
-    * be up to 80 characters in length.
+    * Short description of the app.
     */
-  var shortDescription: js.UndefOr[String] = js.undefined
+  var shortDescription: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * App&#39;s localized title.
+    * Localized title of the app.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
   /**
     * URL of a promotional YouTube video for the app.
     */
-  var video: js.UndefOr[String] = js.undefined
+  var video: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListing {
   
@@ -44,21 +42,31 @@ object SchemaListing {
     
     inline def setFullDescription(value: String): Self = StObject.set(x, "fullDescription", value.asInstanceOf[js.Any])
     
+    inline def setFullDescriptionNull: Self = StObject.set(x, "fullDescription", null)
+    
     inline def setFullDescriptionUndefined: Self = StObject.set(x, "fullDescription", js.undefined)
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     inline def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
+    inline def setShortDescriptionNull: Self = StObject.set(x, "shortDescription", null)
+    
     inline def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    
+    inline def setVideoNull: Self = StObject.set(x, "video", null)
     
     inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }

@@ -11,16 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ackUserWriteMod {
   
-  @JSImport("@firebase/database/dist/src/core/operation/AckUserWrite", "AckUserWrite")
+  @JSImport("@firebase/database/dist/node-esm/src/core/operation/AckUserWrite", "AckUserWrite")
   @js.native
-  class AckUserWrite protected ()
+  open class AckUserWrite protected ()
     extends StObject
        with Operation {
     /**
-      *
-      * @param {!Path} path
-      * @param {!ImmutableTree<!boolean>} affectedTree A tree containing true for each affected path. Affected paths can't overlap.
-      * @param {!boolean} revert
+      * @param affectedTree - A tree containing true for each affected path. Affected paths can't overlap.
       */
     def this(
       /** @inheritDoc */ path: Path,
@@ -30,30 +27,17 @@ object ackUserWriteMod {
     
     /** @inheritDoc */ var affectedTree: ImmutableTree[Boolean] = js.native
     
-    /**
-      * @param {string} childName
-      * @return {?Operation}
-      */
     /* CompleteClass */
     override def operationForChild(childName: String): Operation | Null = js.native
     
-    /**
-      * @type {!Path}
-      */
     /* CompleteClass */
     var path: Path = js.native
     
     /** @inheritDoc */ var revert: Boolean = js.native
     
-    /**
-      * @type {!OperationSource}
-      */
     /* CompleteClass */
     var source: OperationSource = js.native
     
-    /**
-      * @type {!OperationType}
-      */
     /* CompleteClass */
     var `type`: OperationType = js.native
   }

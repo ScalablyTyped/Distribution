@@ -10,7 +10,7 @@ object tokenMod {
   
   @JSImport("gherkin/dist/src/Token", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Token {
     def this(line: typings.gherkin.gherkinLineMod.default, location: ILocation) = this()
@@ -106,7 +106,7 @@ object tokenMod {
       
       inline def setMatchedItems(value: js.Array[typings.gherkin.gherkinLineMod.default]): Self = StObject.set(x, "matchedItems", value.asInstanceOf[js.Any])
       
-      inline def setMatchedItemsVarargs(value: typings.gherkin.gherkinLineMod.default*): Self = StObject.set(x, "matchedItems", js.Array(value :_*))
+      inline def setMatchedItemsVarargs(value: typings.gherkin.gherkinLineMod.default*): Self = StObject.set(x, "matchedItems", js.Array(value*))
       
       inline def setMatchedKeyword(value: String): Self = StObject.set(x, "matchedKeyword", value.asInstanceOf[js.Any])
       

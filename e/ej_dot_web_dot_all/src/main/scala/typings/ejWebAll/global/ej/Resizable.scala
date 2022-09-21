@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Resizable")
 @js.native
-class Resizable protected ()
+open class Resizable protected ()
   extends StObject
      with typings.ejWebAll.ej.Resizable {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object Resizable {
   /* static member */
   @JSGlobal("ej.Resizable.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.Resizable.fn")

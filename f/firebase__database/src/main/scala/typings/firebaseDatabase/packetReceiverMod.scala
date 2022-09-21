@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object packetReceiverMod {
   
-  @JSImport("@firebase/database/dist/src/realtime/polling/PacketReceiver", "PacketReceiver")
+  @JSImport("@firebase/database/dist/node-esm/src/realtime/polling/PacketReceiver", "PacketReceiver")
   @js.native
-  class PacketReceiver protected () extends StObject {
+  open class PacketReceiver protected () extends StObject {
     /**
       * @param onMessage_
       */
@@ -24,15 +24,13 @@ object packetReceiverMod {
       * Each message from the server comes with a response number, and an array of data. The responseNumber
       * allows us to ensure that we process them in the right order, since we can't be guaranteed that all
       * browsers will respond in the same order as the requests we sent
-      * @param {number} requestNum
-      * @param {Array} data
       */
-    def handleResponse(requestNum: Double, data: js.Array[js.Any]): Unit = js.native
+    def handleResponse(requestNum: Double, data: js.Array[Any]): Unit = js.native
     
     var onClose: js.Function0[Unit] | Null = js.native
     
-    /* private */ var onMessage_ : js.Any = js.native
+    /* private */ var onMessage_ : Any = js.native
     
-    var pendingResponses: js.Array[js.Any] = js.native
+    var pendingResponses: js.Array[Any] = js.native
   }
 }

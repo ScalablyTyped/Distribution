@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Textures/index", "MultiRenderTarget")
 @js.native
-class MultiRenderTarget protected ()
+open class MultiRenderTarget protected ()
   extends typings.babylonjs.multiRenderTargetMod.MultiRenderTarget {
   /**
     * Instantiate a new multi render target texture.
@@ -21,7 +21,35 @@ class MultiRenderTarget protected ()
     * @param count Define the number of target we are rendering into
     * @param scene Define the scene the texture belongs to
     * @param options Define the options used to create the multi render target
+    * @param textureNames Define the names to set to the textures (if count > 0 - optional)
     */
-  def this(name: String, size: js.Any, count: Double, scene: Scene) = this()
-  def this(name: String, size: js.Any, count: Double, scene: Scene, options: IMultiRenderTargetOptions) = this()
+  def this(name: String, size: Any, count: Double) = this()
+  def this(name: String, size: Any, count: Double, scene: Scene) = this()
+  def this(name: String, size: Any, count: Double, scene: Unit, options: IMultiRenderTargetOptions) = this()
+  def this(name: String, size: Any, count: Double, scene: Scene, options: IMultiRenderTargetOptions) = this()
+  def this(name: String, size: Any, count: Double, scene: Unit, options: Unit, textureNames: js.Array[String]) = this()
+  def this(
+    name: String,
+    size: Any,
+    count: Double,
+    scene: Unit,
+    options: IMultiRenderTargetOptions,
+    textureNames: js.Array[String]
+  ) = this()
+  def this(
+    name: String,
+    size: Any,
+    count: Double,
+    scene: Scene,
+    options: Unit,
+    textureNames: js.Array[String]
+  ) = this()
+  def this(
+    name: String,
+    size: Any,
+    count: Double,
+    scene: Scene,
+    options: IMultiRenderTargetOptions,
+    textureNames: js.Array[String]
+  ) = this()
 }

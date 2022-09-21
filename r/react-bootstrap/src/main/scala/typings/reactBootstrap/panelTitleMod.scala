@@ -10,12 +10,10 @@ object panelTitleMod {
   
   @JSImport("react-bootstrap/lib/PanelTitle", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PanelTitleProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PanelTitleProps, js.Object, Any]
   
-  @js.native
-  trait PanelTitle
-    extends Component[PanelTitleProps, js.Object, js.Any]
+  type PanelTitle = Component[PanelTitleProps, js.Object, Any]
   
   trait PanelTitleProps
     extends StObject

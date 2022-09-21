@@ -84,7 +84,7 @@ object Graphics {
   }
   
   /**
-    * Options for the Graphics game Object.
+    * Options for the Graphics Game Object.
     */
   trait Options
     extends StObject
@@ -122,22 +122,22 @@ object Graphics {
   trait RoundedRectRadius extends StObject {
     
     /**
-      * Bottom left
+      * Bottom left corner radius.
       */
     var bl: js.UndefOr[Double] = js.undefined
     
     /**
-      * Bottom right
+      * Bottom right corner radius.
       */
     var br: js.UndefOr[Double] = js.undefined
     
     /**
-      * Top left
+      * Top left corner radius.
       */
     var tl: js.UndefOr[Double] = js.undefined
     
     /**
-      * Top right
+      * Top right corner radius.
       */
     var tr: js.UndefOr[Double] = js.undefined
   }

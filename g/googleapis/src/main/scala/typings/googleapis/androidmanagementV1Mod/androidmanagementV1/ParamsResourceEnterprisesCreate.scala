@@ -1,9 +1,5 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,18 +9,17 @@ trait ParamsResourceEnterprisesCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Whether the enterprise admin has seen and agreed to the managed Google Play Agreement (https://www.android.com/enterprise/terms/). Do not set this field for any customer-managed enterprise (https://developers.google.com/android/management/create-enterprise#customer-managed_enterprises). Set this to field to true for all EMM-managed enterprises (https://developers.google.com/android/management/create-enterprise#emm-managed_enterprises).
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var agreementAccepted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The enterprise token appended to the callback URL.
+    * The enterprise token appended to the callback URL. Set this when creating a customer-managed enterprise (https://developers.google.com/android/management/create-enterprise#customer-managed_enterprises) and not when creating a deprecated EMM-managed enterprise (https://developers.google.com/android/management/create-enterprise#emm-managed_enterprises).
     */
   var enterpriseToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the Google Cloud Platform project which will own the
-    * enterprise.
+    * The ID of the Google Cloud Platform project which will own the enterprise.
     */
   var projectId: js.UndefOr[String] = js.undefined
   
@@ -34,7 +29,7 @@ trait ParamsResourceEnterprisesCreate
   var requestBody: js.UndefOr[SchemaEnterprise] = js.undefined
   
   /**
-    * The name of the SignupUrl used to sign up for the enterprise.
+    * The name of the SignupUrl used to sign up for the enterprise. Set this when creating a customer-managed enterprise (https://developers.google.com/android/management/create-enterprise#customer-managed_enterprises) and not when creating a deprecated EMM-managed enterprise (https://developers.google.com/android/management/create-enterprise#emm-managed_enterprises).
     */
   var signupUrlName: js.UndefOr[String] = js.undefined
 }
@@ -47,9 +42,9 @@ object ParamsResourceEnterprisesCreate {
   
   extension [Self <: ParamsResourceEnterprisesCreate](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAgreementAccepted(value: Boolean): Self = StObject.set(x, "agreementAccepted", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAgreementAcceptedUndefined: Self = StObject.set(x, "agreementAccepted", js.undefined)
     
     inline def setEnterpriseToken(value: String): Self = StObject.set(x, "enterpriseToken", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("forever-monitor", "Monitor")
   @js.native
-  class Monitor protected () extends EventEmitter {
+  open class Monitor protected () extends EventEmitter {
     /**
       * @param script - Location of the target script to run.
       * @param [options] - Configuration for this instance.
@@ -50,7 +50,7 @@ object mod {
       * @description Sends a message to a forked ChildProcess object associated with this instance
       */
     def send(): this.type = js.native
-    def send(msg: js.Any): this.type = js.native
+    def send(msg: Any): this.type = js.native
     
     /**
       * @description Start the process that this instance is configured for
@@ -75,11 +75,11 @@ object mod {
   inline def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def kill(pid: Double, killTree: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def kill(pid: Double, killTree: Boolean, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pid: Double, killTree: Boolean, signal: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pid: Double, killTree: Boolean, signal: Unit, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Boolean, signal: String, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Boolean, signal: Unit, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def kill(pid: Double, killTree: Unit, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pid: Double, killTree: Unit, signal: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pid: Double, killTree: Unit, signal: Unit, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Unit, signal: String, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Unit, signal: Unit, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def start(script: String): Monitor = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any]).asInstanceOf[Monitor]
   inline def start(script: String, options: Options): Monitor = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Monitor]
@@ -147,7 +147,7 @@ object mod {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -227,7 +227,7 @@ object mod {
       
       inline def setWatchIgnorePatternsUndefined: Self = StObject.set(x, "watchIgnorePatterns", js.undefined)
       
-      inline def setWatchIgnorePatternsVarargs(value: String*): Self = StObject.set(x, "watchIgnorePatterns", js.Array(value :_*))
+      inline def setWatchIgnorePatternsVarargs(value: String*): Self = StObject.set(x, "watchIgnorePatterns", js.Array(value*))
       
       inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
@@ -254,7 +254,7 @@ object mod {
       
       inline def setCustomFds(value: js.Array[Double]): Self = StObject.set(x, "customFds", value.asInstanceOf[js.Any])
       
-      inline def setCustomFdsVarargs(value: Double*): Self = StObject.set(x, "customFds", js.Array(value :_*))
+      inline def setCustomFdsVarargs(value: Double*): Self = StObject.set(x, "customFds", js.Array(value*))
       
       inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       

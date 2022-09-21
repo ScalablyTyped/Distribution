@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NestTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var generate: js.UndefOr[Boolean | SignalRef] = js.undefined
   
@@ -34,7 +34,7 @@ object NestTransform {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: FieldRef*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: FieldRef*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setType(value: nest): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

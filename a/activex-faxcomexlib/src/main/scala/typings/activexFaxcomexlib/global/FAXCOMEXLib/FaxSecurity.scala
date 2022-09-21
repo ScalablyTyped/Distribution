@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxSecurity Class */
 @JSGlobal("FAXCOMEXLib.FaxSecurity")
 @js.native
-/* private */ class FaxSecurity ()
+/* private */ open class FaxSecurity ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxSecurity {
   
   /** Security descriptor */
   /* CompleteClass */
-  var Descriptor: js.Any = js.native
+  var Descriptor: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxSecurity_typekey")

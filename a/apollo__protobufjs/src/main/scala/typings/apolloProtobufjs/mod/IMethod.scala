@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IMethod extends StObject {
   
   /** Method options */
-  var options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.undefined
+  var options: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /** Whether requests are streamed */
   var requestStream: js.UndefOr[Boolean] = js.undefined
@@ -34,7 +34,7 @@ object IMethod {
   
   extension [Self <: IMethod](x: Self) {
     
-    inline def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

@@ -30,13 +30,13 @@ object FunctionCall {
     
     inline def setArguments(value: js.Array[Expression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: Expression*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Expression*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

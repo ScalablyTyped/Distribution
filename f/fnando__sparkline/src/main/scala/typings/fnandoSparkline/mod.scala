@@ -1,6 +1,8 @@
 package typings.fnandoSparkline
 
+import typings.fnandoSparkline.anon.Index
 import typings.fnandoSparkline.anon.Value
+import typings.fnandoSparkline.anon.X
 import typings.std.MouseEvent
 import typings.std.Partial
 import typings.std.SVGSVGElement
@@ -22,20 +24,22 @@ object mod {
   inline def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def sparkline[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  type SparklineDatapoint[TEntry] = (TEntry & X) | Index
+  
   type SparklineNativeEntry = Double | Value
   
-  type SparklineNativeOptions[TEntry] = SparklineOptions | Partial[SparklineOptionsFetch[TEntry]]
+  type SparklineNativeOptions[TEntry] = SparklineOptions[TEntry] | Partial[SparklineOptionsFetch[TEntry]]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.fnandoSparkline.mod.SparklineOptions
+    - typings.fnandoSparkline.mod.SparklineOptions[TEntry]
     - typings.fnandoSparkline.mod.SparklineOptionsFetch[TEntry]
   */
   trait SparklineNonNativeOptions[TEntry] extends StObject
   object SparklineNonNativeOptions {
     
-    inline def SparklineOptions(): typings.fnandoSparkline.mod.SparklineOptions = {
+    inline def SparklineOptions[TEntry](): typings.fnandoSparkline.mod.SparklineOptions[TEntry] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.fnandoSparkline.mod.SparklineOptions]
+      __obj.asInstanceOf[typings.fnandoSparkline.mod.SparklineOptions[TEntry]]
     }
     
     inline def SparklineOptionsFetch[TEntry](fetch: TEntry => Double): typings.fnandoSparkline.mod.SparklineOptionsFetch[TEntry] = {
@@ -44,9 +48,9 @@ object mod {
     }
   }
   
-  trait SparklineOptions
+  trait SparklineOptions[TEntry]
     extends StObject
-       with SparklineNonNativeOptions[js.Any] {
+       with SparklineNonNativeOptions[TEntry] {
     
     /**
       * Set the cursor width. The default is 2.
@@ -61,7 +65,9 @@ object mod {
     /**
       * By setting this callback function, you'll enable the interactive mode (unless you set options.interactive to false).
       */
-    var onmousemove: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
+    var onmousemove: js.UndefOr[
+        js.Function2[/* event */ MouseEvent, /* datapoint */ SparklineDatapoint[TEntry], Unit]
+      ] = js.undefined
     
     /**
       * This callback function is called every time the mouse leaves the SVG area. You can use it to hide things like tooltips.
@@ -75,12 +81,12 @@ object mod {
   }
   object SparklineOptions {
     
-    inline def apply(): SparklineOptions = {
+    inline def apply[TEntry](): SparklineOptions[TEntry] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SparklineOptions]
+      __obj.asInstanceOf[SparklineOptions[TEntry]]
     }
     
-    extension [Self <: SparklineOptions](x: Self) {
+    extension [Self <: SparklineOptions[?], TEntry](x: Self & SparklineOptions[TEntry]) {
       
       inline def setCursorwidth(value: Double): Self = StObject.set(x, "cursorwidth", value.asInstanceOf[js.Any])
       
@@ -90,7 +96,7 @@ object mod {
       
       inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
       
-      inline def setOnmousemove(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onmousemove", js.Any.fromFunction1(value))
+      inline def setOnmousemove(value: (/* event */ MouseEvent, /* datapoint */ SparklineDatapoint[TEntry]) => Unit): Self = StObject.set(x, "onmousemove", js.Any.fromFunction2(value))
       
       inline def setOnmousemoveUndefined: Self = StObject.set(x, "onmousemove", js.undefined)
       

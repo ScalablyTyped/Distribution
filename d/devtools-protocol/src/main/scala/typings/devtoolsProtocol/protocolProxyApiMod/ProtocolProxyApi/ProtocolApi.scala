@@ -10,8 +10,6 @@ trait ProtocolApi extends StObject {
   
   var Animation: AnimationApi
   
-  var ApplicationCache: ApplicationCacheApi
-  
   var Audits: AuditsApi
   
   var BackgroundService: BackgroundServiceApi
@@ -41,6 +39,8 @@ trait ProtocolApi extends StObject {
   var DeviceOrientation: DeviceOrientationApi
   
   var Emulation: EmulationApi
+  
+  var EventBreakpoints: EventBreakpointsApi
   
   var Fetch: FetchApi
   
@@ -72,6 +72,8 @@ trait ProtocolApi extends StObject {
   
   var Performance: PerformanceApi
   
+  var PerformanceTimeline: PerformanceTimelineApi
+  
   var Profiler: ProfilerApi
   
   var Runtime: RuntimeApi
@@ -101,7 +103,6 @@ object ProtocolApi {
   inline def apply(
     Accessibility: AccessibilityApi,
     Animation: AnimationApi,
-    ApplicationCache: ApplicationCacheApi,
     Audits: AuditsApi,
     BackgroundService: BackgroundServiceApi,
     Browser: BrowserApi,
@@ -117,6 +118,7 @@ object ProtocolApi {
     Debugger: DebuggerApi,
     DeviceOrientation: DeviceOrientationApi,
     Emulation: EmulationApi,
+    EventBreakpoints: EventBreakpointsApi,
     Fetch: FetchApi,
     HeadlessExperimental: HeadlessExperimentalApi,
     HeapProfiler: HeapProfilerApi,
@@ -132,6 +134,7 @@ object ProtocolApi {
     Overlay: OverlayApi,
     Page: PageApi,
     Performance: PerformanceApi,
+    PerformanceTimeline: PerformanceTimelineApi,
     Profiler: ProfilerApi,
     Runtime: RuntimeApi,
     Schema: SchemaApi,
@@ -145,7 +148,7 @@ object ProtocolApi {
     WebAudio: WebAudioApi,
     WebAuthn: WebAuthnApi
   ): ProtocolApi = {
-    val __obj = js.Dynamic.literal(Accessibility = Accessibility.asInstanceOf[js.Any], Animation = Animation.asInstanceOf[js.Any], ApplicationCache = ApplicationCache.asInstanceOf[js.Any], Audits = Audits.asInstanceOf[js.Any], BackgroundService = BackgroundService.asInstanceOf[js.Any], Browser = Browser.asInstanceOf[js.Any], CSS = CSS.asInstanceOf[js.Any], CacheStorage = CacheStorage.asInstanceOf[js.Any], Cast = Cast.asInstanceOf[js.Any], Console = Console.asInstanceOf[js.Any], DOM = DOM.asInstanceOf[js.Any], DOMDebugger = DOMDebugger.asInstanceOf[js.Any], DOMSnapshot = DOMSnapshot.asInstanceOf[js.Any], DOMStorage = DOMStorage.asInstanceOf[js.Any], Database = Database.asInstanceOf[js.Any], Debugger = Debugger.asInstanceOf[js.Any], DeviceOrientation = DeviceOrientation.asInstanceOf[js.Any], Emulation = Emulation.asInstanceOf[js.Any], Fetch = Fetch.asInstanceOf[js.Any], HeadlessExperimental = HeadlessExperimental.asInstanceOf[js.Any], HeapProfiler = HeapProfiler.asInstanceOf[js.Any], IO = IO.asInstanceOf[js.Any], IndexedDB = IndexedDB.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any], Inspector = Inspector.asInstanceOf[js.Any], LayerTree = LayerTree.asInstanceOf[js.Any], Log = Log.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any], Memory = Memory.asInstanceOf[js.Any], Network = Network.asInstanceOf[js.Any], Overlay = Overlay.asInstanceOf[js.Any], Page = Page.asInstanceOf[js.Any], Performance = Performance.asInstanceOf[js.Any], Profiler = Profiler.asInstanceOf[js.Any], Runtime = Runtime.asInstanceOf[js.Any], Schema = Schema.asInstanceOf[js.Any], Security = Security.asInstanceOf[js.Any], ServiceWorker = ServiceWorker.asInstanceOf[js.Any], Storage = Storage.asInstanceOf[js.Any], SystemInfo = SystemInfo.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any], Tethering = Tethering.asInstanceOf[js.Any], Tracing = Tracing.asInstanceOf[js.Any], WebAudio = WebAudio.asInstanceOf[js.Any], WebAuthn = WebAuthn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Accessibility = Accessibility.asInstanceOf[js.Any], Animation = Animation.asInstanceOf[js.Any], Audits = Audits.asInstanceOf[js.Any], BackgroundService = BackgroundService.asInstanceOf[js.Any], Browser = Browser.asInstanceOf[js.Any], CSS = CSS.asInstanceOf[js.Any], CacheStorage = CacheStorage.asInstanceOf[js.Any], Cast = Cast.asInstanceOf[js.Any], Console = Console.asInstanceOf[js.Any], DOM = DOM.asInstanceOf[js.Any], DOMDebugger = DOMDebugger.asInstanceOf[js.Any], DOMSnapshot = DOMSnapshot.asInstanceOf[js.Any], DOMStorage = DOMStorage.asInstanceOf[js.Any], Database = Database.asInstanceOf[js.Any], Debugger = Debugger.asInstanceOf[js.Any], DeviceOrientation = DeviceOrientation.asInstanceOf[js.Any], Emulation = Emulation.asInstanceOf[js.Any], EventBreakpoints = EventBreakpoints.asInstanceOf[js.Any], Fetch = Fetch.asInstanceOf[js.Any], HeadlessExperimental = HeadlessExperimental.asInstanceOf[js.Any], HeapProfiler = HeapProfiler.asInstanceOf[js.Any], IO = IO.asInstanceOf[js.Any], IndexedDB = IndexedDB.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any], Inspector = Inspector.asInstanceOf[js.Any], LayerTree = LayerTree.asInstanceOf[js.Any], Log = Log.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any], Memory = Memory.asInstanceOf[js.Any], Network = Network.asInstanceOf[js.Any], Overlay = Overlay.asInstanceOf[js.Any], Page = Page.asInstanceOf[js.Any], Performance = Performance.asInstanceOf[js.Any], PerformanceTimeline = PerformanceTimeline.asInstanceOf[js.Any], Profiler = Profiler.asInstanceOf[js.Any], Runtime = Runtime.asInstanceOf[js.Any], Schema = Schema.asInstanceOf[js.Any], Security = Security.asInstanceOf[js.Any], ServiceWorker = ServiceWorker.asInstanceOf[js.Any], Storage = Storage.asInstanceOf[js.Any], SystemInfo = SystemInfo.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any], Tethering = Tethering.asInstanceOf[js.Any], Tracing = Tracing.asInstanceOf[js.Any], WebAudio = WebAudio.asInstanceOf[js.Any], WebAuthn = WebAuthn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolApi]
   }
   
@@ -154,8 +157,6 @@ object ProtocolApi {
     inline def setAccessibility(value: AccessibilityApi): Self = StObject.set(x, "Accessibility", value.asInstanceOf[js.Any])
     
     inline def setAnimation(value: AnimationApi): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationCache(value: ApplicationCacheApi): Self = StObject.set(x, "ApplicationCache", value.asInstanceOf[js.Any])
     
     inline def setAudits(value: AuditsApi): Self = StObject.set(x, "Audits", value.asInstanceOf[js.Any])
     
@@ -187,6 +188,8 @@ object ProtocolApi {
     
     inline def setEmulation(value: EmulationApi): Self = StObject.set(x, "Emulation", value.asInstanceOf[js.Any])
     
+    inline def setEventBreakpoints(value: EventBreakpointsApi): Self = StObject.set(x, "EventBreakpoints", value.asInstanceOf[js.Any])
+    
     inline def setFetch(value: FetchApi): Self = StObject.set(x, "Fetch", value.asInstanceOf[js.Any])
     
     inline def setHeadlessExperimental(value: HeadlessExperimentalApi): Self = StObject.set(x, "HeadlessExperimental", value.asInstanceOf[js.Any])
@@ -216,6 +219,8 @@ object ProtocolApi {
     inline def setPage(value: PageApi): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: PerformanceApi): Self = StObject.set(x, "Performance", value.asInstanceOf[js.Any])
+    
+    inline def setPerformanceTimeline(value: PerformanceTimelineApi): Self = StObject.set(x, "PerformanceTimeline", value.asInstanceOf[js.Any])
     
     inline def setProfiler(value: ProfilerApi): Self = StObject.set(x, "Profiler", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ trait LinkFormat extends StObject {
   
   var Locked: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var SavePictureWithDocument: Boolean
   
@@ -41,7 +41,7 @@ object LinkFormat {
     BreakLink: () => Unit,
     Creator: Double,
     Locked: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     SavePictureWithDocument: Boolean,
     SourceFullName: String,
     SourceName: String,
@@ -67,7 +67,7 @@ object LinkFormat {
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSavePictureWithDocument(value: Boolean): Self = StObject.set(x, "SavePictureWithDocument", value.asInstanceOf[js.Any])
     

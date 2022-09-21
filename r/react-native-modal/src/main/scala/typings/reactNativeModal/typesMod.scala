@@ -2,6 +2,7 @@ package typings.reactNativeModal
 
 import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.NativeSyntheticEvent
+import typings.reactNative.mod.NativeTouchEvent
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeAnimatable.mod.Animation
@@ -15,7 +16,7 @@ object typesMod {
   @js.native
   trait AnimationEvent extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   trait Animations extends StObject {
@@ -57,7 +58,9 @@ object typesMod {
     inline def up: typings.reactNativeModal.reactNativeModalStrings.up = "up".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.up]
   }
   
-  type OnOrientationChange = js.Function1[/* orientation */ NativeSyntheticEvent[js.Any], Unit]
+  type GestureResponderEvent = NativeSyntheticEvent[NativeTouchEvent]
+  
+  type OnOrientationChange = js.Function1[/* orientation */ NativeSyntheticEvent[Any], Unit]
   
   type OrNull[T] = Null | T
   

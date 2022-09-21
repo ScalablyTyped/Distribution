@@ -10,10 +10,10 @@ object touchAppMod {
   
   @JSImport("material-ui/svg-icons/action/touch-app", JSImport.Default)
   @js.native
-  class default () extends ActionTouchApp
+  open class default () extends ActionTouchApp
   
   @JSImport("material-ui/svg-icons/action/touch-app", "ActionTouchApp")
   @js.native
-  class ActionTouchApp ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionTouchApp ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

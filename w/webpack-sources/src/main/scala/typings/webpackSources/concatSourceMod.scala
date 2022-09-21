@@ -15,7 +15,7 @@ object concatSourceMod {
     */
   @JSImport("webpack-sources/lib/ConcatSource", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ConcatSource {
+  open class ^ protected () extends ConcatSource {
     def this(args: (String | typings.webpackSources.sourceMod.^)*) = this()
   }
   

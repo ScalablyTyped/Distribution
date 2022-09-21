@@ -9,7 +9,7 @@ object pageItemMod {
   
   @JSImport("react-bootstrap/lib/PageItem", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends typings.reactBootstrap.pagerItemMod.^
   
   type PageItem = typings.reactBootstrap.pagerItemMod.^

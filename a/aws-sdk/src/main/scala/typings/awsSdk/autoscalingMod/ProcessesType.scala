@@ -24,6 +24,6 @@ object ProcessesType {
     
     inline def setProcessesUndefined: Self = StObject.set(x, "Processes", js.undefined)
     
-    inline def setProcessesVarargs(value: ProcessType*): Self = StObject.set(x, "Processes", js.Array(value :_*))
+    inline def setProcessesVarargs(value: ProcessType*): Self = StObject.set(x, "Processes", js.Array(value*))
   }
 }

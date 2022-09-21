@@ -11,23 +11,23 @@ object fadeInOutBehaviorMod {
   @JSImport("babylonjs/Behaviors/Meshes/fadeInOutBehavior", "FadeInOutBehavior")
   @js.native
   /**
-    * Instatiates the FadeInOutBehavior
+    * Instantiates the FadeInOutBehavior
     */
-  class FadeInOutBehavior ()
+  open class FadeInOutBehavior ()
     extends StObject
        with Behavior[Mesh] {
     
-    /* private */ var _hoverValue: js.Any = js.native
+    /* private */ var _hoverValue: Any = js.native
     
-    /* private */ var _hovered: js.Any = js.native
+    /* private */ var _hovered: Any = js.native
     
-    /* private */ var _millisecondsPerFrame: js.Any = js.native
+    /* private */ var _millisecondsPerFrame: Any = js.native
     
-    /* private */ var _ownerNode: js.Any = js.native
+    /* private */ var _ownerNode: Any = js.native
     
-    /* private */ var _setAllVisibility: js.Any = js.native
+    /* private */ var _setAllVisibility: Any = js.native
     
-    /* private */ var _update: js.Any = js.native
+    /* private */ var _update: Any = js.native
     
     /**
       * Called when the behavior is attached to a target

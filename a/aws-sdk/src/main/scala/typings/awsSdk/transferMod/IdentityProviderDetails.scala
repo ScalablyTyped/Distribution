@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdentityProviderDetails extends StObject {
   
   /**
+    * The identifier of the Directory Service directory that you want to stop sharing.
+    */
+  var DirectoryId: js.UndefOr[typings.awsSdk.transferMod.DirectoryId] = js.undefined
+  
+  /**
+    * The ARN for a lambda function to use for the Identity provider.
+    */
+  var Function: js.UndefOr[typings.awsSdk.transferMod.Function] = js.undefined
+  
+  /**
     * Provides the type of InvocationRole used to authenticate the user account.
     */
   var InvocationRole: js.UndefOr[Role] = js.undefined
@@ -24,6 +34,14 @@ object IdentityProviderDetails {
   }
   
   extension [Self <: IdentityProviderDetails](x: Self) {
+    
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    
+    inline def setFunction(value: Function): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionUndefined: Self = StObject.set(x, "Function", js.undefined)
     
     inline def setInvocationRole(value: Role): Self = StObject.set(x, "InvocationRole", value.asInstanceOf[js.Any])
     

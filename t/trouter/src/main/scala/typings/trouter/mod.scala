@@ -1,7 +1,6 @@
 package typings.trouter
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("trouter", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with Trouter[T]
   
@@ -31,7 +30,7 @@ object mod {
       
       inline def setHandlers(value: js.Array[T]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      inline def setHandlersVarargs(value: T*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+      inline def setHandlersVarargs(value: T*): Self = StObject.set(x, "handlers", js.Array(value*))
       
       inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
@@ -149,41 +148,41 @@ object mod {
   trait Trouter[T] extends StObject {
     
     def add(method: HTTPMethod, pattern: String, handlers: T*): this.type = js.native
-    def add(method: HTTPMethod, pattern: RegExp, handlers: T*): this.type = js.native
+    def add(method: HTTPMethod, pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def all(pattern: String, handlers: T*): this.type = js.native
-    def all(pattern: RegExp, handlers: T*): this.type = js.native
+    def all(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def connect(pattern: String, handlers: T*): this.type = js.native
-    def connect(pattern: RegExp, handlers: T*): this.type = js.native
+    def connect(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def delete(pattern: String, handlers: T*): this.type = js.native
-    def delete(pattern: RegExp, handlers: T*): this.type = js.native
+    def delete(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def find(method: HTTPMethod, url: String): FindResult[T] = js.native
     
     def get(pattern: String, handlers: T*): this.type = js.native
-    def get(pattern: RegExp, handlers: T*): this.type = js.native
+    def get(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def head(pattern: String, handlers: T*): this.type = js.native
-    def head(pattern: RegExp, handlers: T*): this.type = js.native
+    def head(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def options(pattern: String, handlers: T*): this.type = js.native
-    def options(pattern: RegExp, handlers: T*): this.type = js.native
+    def options(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def patch(pattern: String, handlers: T*): this.type = js.native
-    def patch(pattern: RegExp, handlers: T*): this.type = js.native
+    def patch(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def post(pattern: String, handlers: T*): this.type = js.native
-    def post(pattern: RegExp, handlers: T*): this.type = js.native
+    def post(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def put(pattern: String, handlers: T*): this.type = js.native
-    def put(pattern: RegExp, handlers: T*): this.type = js.native
+    def put(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def trace(pattern: String, handlers: T*): this.type = js.native
-    def trace(pattern: RegExp, handlers: T*): this.type = js.native
+    def trace(pattern: js.RegExp, handlers: T*): this.type = js.native
     
     def use(pattern: String, handlers: T*): this.type = js.native
-    def use(pattern: RegExp, handlers: T*): this.type = js.native
+    def use(pattern: js.RegExp, handlers: T*): this.type = js.native
   }
 }

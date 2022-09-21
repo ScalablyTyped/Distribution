@@ -13,4 +13,6 @@ trait Runner_ extends StObject {
   def run(options: ConfigFile, callback: ServerCallback): Unit = js.native
   def run(options: ConfigOptions): Unit = js.native
   def run(options: ConfigOptions, callback: ServerCallback): Unit = js.native
+  def run(options: Config_): Unit = js.native
+  def run(options: Config_, callback: ServerCallback): Unit = js.native
 }

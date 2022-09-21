@@ -25,17 +25,20 @@ trait Location extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The location. Must be in the format `projects/∗/locations/ *`. */
+  /** Required. The location. Must be in the format `projects/ *‍/locations/ *`. */
   var location: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
+  /** Maximum number of results to return. */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /** When set to the `next_page_token` from a prior response, provides the next page of results. */
+  var pageToken: js.UndefOr[String] = js.undefined
+  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
-  
-  /** Required. String used to search for available domain names. */
-  var query: js.UndefOr[String] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
@@ -85,13 +88,17 @@ object Location {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
-    
-    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-    
-    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Accounts")
 @js.native
-class ResourceBiddersAccounts protected () extends StObject {
+open class ResourceBiddersAccounts protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
-  
-  var creatives: ResourceBiddersAccountsCreatives = js.native
   
   var filterSets: ResourceBiddersAccountsFiltersets = js.native
 }

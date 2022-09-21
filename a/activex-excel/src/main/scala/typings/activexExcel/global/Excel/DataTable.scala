@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DataTable")
 @js.native
-/* private */ class DataTable ()
+/* private */ open class DataTable ()
   extends StObject
      with typings.activexExcel.Excel.DataTable {
   
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexExcel.Excel.Application = js.native
   
   /* CompleteClass */
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   /* CompleteClass */
   override val Border: typings.activexExcel.Excel.Border = js.native
@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var HasBorderVertical: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Select(): Unit = js.native

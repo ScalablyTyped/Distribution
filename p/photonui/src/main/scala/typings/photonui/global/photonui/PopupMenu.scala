@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("photonui.PopupMenu")
 @js.native
-class PopupMenu ()
+open class PopupMenu ()
   extends StObject
      with typings.photonui.photonui.PopupWindow {
   
@@ -56,7 +56,7 @@ class PopupMenu ()
   
   // readonly
   /* CompleteClass */
-  var layoutOptions: StringDictionary[js.Any] = js.native
+  var layoutOptions: StringDictionary[Any] = js.native
   
   /* CompleteClass */
   var maxHeight: Double = js.native
@@ -100,7 +100,7 @@ class PopupMenu ()
   var position: X = js.native
   
   /* CompleteClass */
-  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit = js.native
+  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: Any): Unit = js.native
   
   /* CompleteClass */
   override def removeCallback(id: String): Unit = js.native

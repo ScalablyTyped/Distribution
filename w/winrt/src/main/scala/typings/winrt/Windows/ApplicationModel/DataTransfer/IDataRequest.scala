@@ -1,6 +1,5 @@
 package typings.winrt.Windows.ApplicationModel.DataTransfer
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait IDataRequest extends StObject {
   
   var data: DataPackage
   
-  var deadline: Date
+  var deadline: js.Date
   
   def failWithDisplayText(value: String): Unit
   
@@ -19,7 +18,7 @@ object IDataRequest {
   
   inline def apply(
     data: DataPackage,
-    deadline: Date,
+    deadline: js.Date,
     failWithDisplayText: String => Unit,
     getDeferral: () => DataRequestDeferral
   ): IDataRequest = {
@@ -31,7 +30,7 @@ object IDataRequest {
     
     inline def setData(value: DataPackage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     inline def setFailWithDisplayText(value: String => Unit): Self = StObject.set(x, "failWithDisplayText", js.Any.fromFunction1(value))
     

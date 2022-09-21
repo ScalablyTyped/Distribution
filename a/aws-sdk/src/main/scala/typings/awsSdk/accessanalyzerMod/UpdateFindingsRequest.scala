@@ -50,7 +50,7 @@ object UpdateFindingsRequest {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: FindingId*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: FindingId*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     

@@ -19,10 +19,10 @@ trait DescribeNotificationRuleResult extends StObject {
   /**
     * The date and time the notification rule was created, in timestamp format.
     */
-  var CreatedTimestamp: js.UndefOr[typings.awsSdk.codestarnotificationsMod.CreatedTimestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The level of detail included in the notifications for this resource. BASIC will include only the contents of the event as it would appear in AWS CloudWatch. FULL will include any supplemental information provided by AWS CodeStar Notifications and/or the service for the resource for which the notification is created.
+    * The level of detail included in the notifications for this resource. BASIC will include only the contents of the event as it would appear in Amazon CloudWatch. FULL will include any supplemental information provided by AWS CodeStar Notifications and/or the service for the resource for which the notification is created.
     */
   var DetailType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.DetailType] = js.undefined
   
@@ -34,7 +34,7 @@ trait DescribeNotificationRuleResult extends StObject {
   /**
     * The date and time the notification rule was most recently updated, in timestamp format.
     */
-  var LastModifiedTimestamp: js.UndefOr[typings.awsSdk.codestarnotificationsMod.LastModifiedTimestamp] = js.undefined
+  var LastModifiedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the notification rule.
@@ -57,7 +57,7 @@ trait DescribeNotificationRuleResult extends StObject {
   var Tags: js.UndefOr[typings.awsSdk.codestarnotificationsMod.Tags] = js.undefined
   
   /**
-    * A list of the SNS topics associated with the notification rule.
+    * A list of the Chatbot topics and Chatbot clients associated with the notification rule.
     */
   var Targets: js.UndefOr[TargetsBatch] = js.undefined
 }
@@ -76,7 +76,7 @@ object DescribeNotificationRuleResult {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreatedTimestamp(value: CreatedTimestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -88,9 +88,9 @@ object DescribeNotificationRuleResult {
     
     inline def setEventTypesUndefined: Self = StObject.set(x, "EventTypes", js.undefined)
     
-    inline def setEventTypesVarargs(value: EventTypeSummary*): Self = StObject.set(x, "EventTypes", js.Array(value :_*))
+    inline def setEventTypesVarargs(value: EventTypeSummary*): Self = StObject.set(x, "EventTypes", js.Array(value*))
     
-    inline def setLastModifiedTimestamp(value: LastModifiedTimestamp): Self = StObject.set(x, "LastModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimestamp(value: js.Date): Self = StObject.set(x, "LastModifiedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimestampUndefined: Self = StObject.set(x, "LastModifiedTimestamp", js.undefined)
     
@@ -114,6 +114,6 @@ object DescribeNotificationRuleResult {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: TargetSummary*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: TargetSummary*): Self = StObject.set(x, "Targets", js.Array(value*))
   }
 }

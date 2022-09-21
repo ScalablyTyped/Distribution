@@ -34,7 +34,7 @@ object PluginSpec {
     
     inline def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

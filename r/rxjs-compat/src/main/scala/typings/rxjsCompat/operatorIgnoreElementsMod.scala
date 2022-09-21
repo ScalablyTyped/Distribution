@@ -10,5 +10,5 @@ object operatorIgnoreElementsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ignoreElements(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreElements")().asInstanceOf[js.Any]
+  inline def ignoreElements(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreElements")().asInstanceOf[Any]
 }

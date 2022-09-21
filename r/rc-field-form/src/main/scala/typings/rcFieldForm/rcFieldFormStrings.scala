@@ -242,6 +242,10 @@ object rcFieldFormStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
+  
+  @js.native
   sealed trait reset extends StObject
   inline def reset: reset = "reset".asInstanceOf[reset]
   

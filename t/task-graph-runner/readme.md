@@ -10,10 +10,10 @@ Run async tasks with dependencies
 | ------------------ | :-------------: |
 | Full name          | task-graph-runner |
 | Keywords           | graph, adjacency, list, tasks, priority, priorities, sort, dependencies, topological, topo, sequencer, task, runner |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 377766 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 45251.666666666664 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/thejameskyle/task-graph-runner#readme)

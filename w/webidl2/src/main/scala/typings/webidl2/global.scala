@@ -17,7 +17,7 @@ object global {
     
     @JSGlobal("WebIDL2.WebIDLParseError")
     @js.native
-    class WebIDLParseError protected ()
+    open class WebIDLParseError protected ()
       extends typings.webidl2.mod.WebIDLParseError {
       def this(options: BareMessage) = this()
     }

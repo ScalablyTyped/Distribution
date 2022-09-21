@@ -11,7 +11,7 @@ trait ShadowLight
   
   /* protected */ var _direction: Vector3 = js.native
   
-  /* private */ var _needProjectionMatrixCompute: js.Any = js.native
+  /* private */ var _needProjectionMatrixCompute: Any = js.native
   
   /* protected */ var _position: Vector3 = js.native
   

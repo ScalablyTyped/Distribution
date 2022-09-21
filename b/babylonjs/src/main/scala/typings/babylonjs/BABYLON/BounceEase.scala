@@ -17,7 +17,7 @@ trait BounceEase
 object BounceEase {
   
   inline def apply(
-    _easingMode: js.Any,
+    _easingMode: Any,
     bounces: Double,
     bounciness: Double,
     ease: Double => Double,

@@ -48,6 +48,6 @@ object ChatMessagePolicyViolationPolicyTip {
     
     inline def setMatchedConditionDescriptionsUndefined: Self = StObject.set(x, "matchedConditionDescriptions", js.undefined)
     
-    inline def setMatchedConditionDescriptionsVarargs(value: String*): Self = StObject.set(x, "matchedConditionDescriptions", js.Array(value :_*))
+    inline def setMatchedConditionDescriptionsVarargs(value: String*): Self = StObject.set(x, "matchedConditionDescriptions", js.Array(value*))
   }
 }

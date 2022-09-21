@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.ViewPort")
 @js.native
-class ViewPort protected ()
+open class ViewPort protected ()
   extends StObject
      with typings.heremaps.H.map.ViewPort {
   /**

@@ -1,7 +1,8 @@
 package typings.xstate.typesMod
 
-import typings.xstate.anon.ContextTContext
+import typings.xstate.anon.Context
 import typings.xstate.stateMod.State
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +17,11 @@ trait Segment[TContext, TEvent /* <: EventObject */] extends StObject {
   /**
     * From state.
     */
-  var state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
+  var state: State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]
 }
 object Segment {
   
-  inline def apply[TContext, TEvent /* <: EventObject */](event: TEvent, state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Segment[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](event: TEvent, state: State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]): Segment[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Segment[TContext, TEvent]]
   }
@@ -29,6 +30,6 @@ object Segment {
     
     inline def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ object videoCallMod {
   
   @JSImport("material-ui/svg-icons/av/video-call", JSImport.Default)
   @js.native
-  class default () extends AvVideoCall
+  open class default () extends AvVideoCall
   
   @JSImport("material-ui/svg-icons/av/video-call", "AvVideoCall")
   @js.native
-  class AvVideoCall ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvVideoCall ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

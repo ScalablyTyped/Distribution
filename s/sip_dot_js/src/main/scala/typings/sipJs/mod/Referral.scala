@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Referral")
 @js.native
-class Referral protected ()
+open class Referral protected ()
   extends typings.sipJs.apiMod.Referral {
   /** @internal */
   def this(incomingReferRequest: IncomingReferRequest, session: typings.sipJs.sessionMod.Session) = this()

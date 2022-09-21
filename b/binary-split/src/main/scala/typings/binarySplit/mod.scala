@@ -1,10 +1,8 @@
 package typings.binarySplit
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
-import typings.std.ArrayBuffer
 import typings.std.SharedArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,10 +17,10 @@ object mod {
   inline def apply(splitOn: String): Transform = ^.asInstanceOf[js.Dynamic].apply(splitOn.asInstanceOf[js.Any]).asInstanceOf[Transform]
   inline def apply(splitOn: js.Array[js.BigInt | Double]): Transform = ^.asInstanceOf[js.Dynamic].apply(splitOn.asInstanceOf[js.Any]).asInstanceOf[Transform]
   inline def apply(splitOn: js.Object): Transform = ^.asInstanceOf[js.Dynamic].apply(splitOn.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(splitOn: js.typedarray.ArrayBuffer): Transform = ^.asInstanceOf[js.Dynamic].apply(splitOn.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(splitOn: js.typedarray.Uint8Array): Transform = ^.asInstanceOf[js.Dynamic].apply(splitOn.asInstanceOf[js.Any]).asInstanceOf[Transform]
   inline def apply(splitOn: Buffer): Transform = ^.asInstanceOf[js.Dynamic].apply(splitOn.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  inline def apply(splitOn: ArrayBuffer): Transform = ^.asInstanceOf[js.Dynamic].apply(splitOn.asInstanceOf[js.Any]).asInstanceOf[Transform]
   inline def apply(splitOn: SharedArrayBuffer): Transform = ^.asInstanceOf[js.Dynamic].apply(splitOn.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  inline def apply(splitOn: Uint8Array): Transform = ^.asInstanceOf[js.Dynamic].apply(splitOn.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("binary-split", JSImport.Namespace)
   @js.native

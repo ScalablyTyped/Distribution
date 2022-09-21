@@ -74,7 +74,7 @@ object resizeGroupTypesMod {
       * with the same `cacheKey` will be assumed to take up the same width and will prevent measurements.
       * The type of `cacheKey` is a string.
       */
-    var data: js.Any
+    var data: Any
     
     /**
       * Function to be called every time data is rendered. It provides the data that was actually rendered.
@@ -82,7 +82,7 @@ object resizeGroupTypesMod {
       * dropped as a result of onReduceData or to count the number of renders that an implementation of
       * onReduceData triggers.
       */
-    var dataDidRender: js.UndefOr[js.Function1[/* renderedData */ js.Any, Unit]] = js.undefined
+    var dataDidRender: js.UndefOr[js.Function1[/* renderedData */ Any, Unit]] = js.undefined
     
     /**
       * Direction of this resize group, vertical or horizontal
@@ -95,20 +95,20 @@ object resizeGroupTypesMod {
       * container has more room than the previous render and we may be able to fit more content. If there are no more
       * scaling operations to perform on teh data, it should return undefined to prevent an infinite render loop.
       */
-    var onGrowData: js.UndefOr[js.Function1[/* prevData */ js.Any, js.Any]] = js.undefined
+    var onGrowData: js.UndefOr[js.Function1[/* prevData */ Any, Any]] = js.undefined
     
     /**
       * Function to be performed on the data in order to reduce its width and make it fit into the given space.
       * If there are no more scaling steps to apply, it should return undefined to prevent
       * an infinite render loop.
       */
-    def onReduceData(prevData: js.Any): js.Any
+    def onReduceData(prevData: Any): Any
     
     /**
       * Function to render the data. Called when rendering the contents to the screen and when
       * rendering in a hidden div to measure the size of the contents.
       */
-    def onRenderData(data: js.Any): Element
+    def onRenderData(data: Any): Element
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
@@ -123,7 +123,7 @@ object resizeGroupTypesMod {
   }
   object IResizeGroupProps {
     
-    inline def apply(data: js.Any, onReduceData: js.Any => js.Any, onRenderData: js.Any => Element): IResizeGroupProps = {
+    inline def apply(data: Any, onReduceData: Any => Any, onRenderData: Any => Element): IResizeGroupProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], onReduceData = js.Any.fromFunction1(onReduceData), onRenderData = js.Any.fromFunction1(onRenderData))
       __obj.asInstanceOf[IResizeGroupProps]
     }
@@ -136,9 +136,9 @@ object resizeGroupTypesMod {
       
       inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataDidRender(value: /* renderedData */ js.Any => Unit): Self = StObject.set(x, "dataDidRender", js.Any.fromFunction1(value))
+      inline def setDataDidRender(value: /* renderedData */ Any => Unit): Self = StObject.set(x, "dataDidRender", js.Any.fromFunction1(value))
       
       inline def setDataDidRenderUndefined: Self = StObject.set(x, "dataDidRender", js.undefined)
       
@@ -146,13 +146,13 @@ object resizeGroupTypesMod {
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      inline def setOnGrowData(value: /* prevData */ js.Any => js.Any): Self = StObject.set(x, "onGrowData", js.Any.fromFunction1(value))
+      inline def setOnGrowData(value: /* prevData */ Any => Any): Self = StObject.set(x, "onGrowData", js.Any.fromFunction1(value))
       
       inline def setOnGrowDataUndefined: Self = StObject.set(x, "onGrowData", js.undefined)
       
-      inline def setOnReduceData(value: js.Any => js.Any): Self = StObject.set(x, "onReduceData", js.Any.fromFunction1(value))
+      inline def setOnReduceData(value: Any => Any): Self = StObject.set(x, "onReduceData", js.Any.fromFunction1(value))
       
-      inline def setOnRenderData(value: js.Any => Element): Self = StObject.set(x, "onRenderData", js.Any.fromFunction1(value))
+      inline def setOnRenderData(value: Any => Element): Self = StObject.set(x, "onRenderData", js.Any.fromFunction1(value))
       
       inline def setStyles(value: IStyleFunctionOrObject[IResizeGroupStyleProps, IResizeGroupStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

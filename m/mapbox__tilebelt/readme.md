@@ -11,14 +11,11 @@ simple tile utilities
 | Full name          | @mapbox/tilebelt |
 | Keywords           | tile, map, geojson |
 | # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 139525 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 50766.333333333336 |
+| # stars            | 188.0 |
 
 ## Links
-- [Homepage](https://github.com/mapbox/tilebelt)
-- [Bugs](https://github.com/mapbox/tilebelt/issues)
-- [Repository](https://github.com/mapbox/tilebelt)
 - [Npm](https://www.npmjs.com/package/%40mapbox%2Ftilebelt)
     
 

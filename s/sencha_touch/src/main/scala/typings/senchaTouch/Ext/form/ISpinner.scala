@@ -81,7 +81,7 @@ trait ISpinner
   /** [Method] Updates the component configuration
     * @param newComponent Object
     */
-  var updateComponent: js.UndefOr[js.Function1[/* newComponent */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updateComponent: js.UndefOr[js.Function1[/* newComponent */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object ISpinner {
   
@@ -156,7 +156,7 @@ object ISpinner {
     
     inline def setSetGroupButtonsUndefined: Self = StObject.set(x, "setGroupButtons", js.undefined)
     
-    inline def setUpdateComponent(value: /* newComponent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateComponent", js.Any.fromFunction1(value))
+    inline def setUpdateComponent(value: /* newComponent */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updateComponent", js.Any.fromFunction1(value))
     
     inline def setUpdateComponentUndefined: Self = StObject.set(x, "updateComponent", js.undefined)
   }

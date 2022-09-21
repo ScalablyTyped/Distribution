@@ -10,15 +10,12 @@ Next generation of react-bootstrap-table
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-table-next |
 | Keywords           | react, bootstrap, table, grid, react-component |
-| # releases         | 42 |
-| # dependents       | 26 |
-| # downloads        | 1881776 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 269654.3333333333 |
+| # stars            | 1202.0 |
 
 ## Links
-- [Homepage](https://github.com/react-bootstrap-table/react-bootstrap-table2#readme)
-- [Bugs](https://github.com/react-bootstrap-table/react-bootstrap-table2/issues)
-- [Repository](https://github.com/react-bootstrap-table/react-bootstrap-table2)
 - [Npm](https://www.npmjs.com/package/react-bootstrap-table-next)
     
 

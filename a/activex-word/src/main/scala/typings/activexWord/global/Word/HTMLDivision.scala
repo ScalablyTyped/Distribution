@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.HTMLDivision")
 @js.native
-/* private */ class HTMLDivision ()
+/* private */ open class HTMLDivision ()
   extends StObject
      with typings.activexWord.Word.HTMLDivision

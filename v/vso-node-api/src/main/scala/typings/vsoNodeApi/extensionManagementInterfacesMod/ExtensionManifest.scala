@@ -98,19 +98,19 @@ object ExtensionManifest {
     
     inline def setConstraints(value: js.Array[ContributionConstraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
-    inline def setConstraintsVarargs(value: ContributionConstraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: ContributionConstraint*): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setContributionTypes(value: js.Array[ContributionType]): Self = StObject.set(x, "contributionTypes", value.asInstanceOf[js.Any])
     
-    inline def setContributionTypesVarargs(value: ContributionType*): Self = StObject.set(x, "contributionTypes", js.Array(value :_*))
+    inline def setContributionTypesVarargs(value: ContributionType*): Self = StObject.set(x, "contributionTypes", js.Array(value*))
     
     inline def setContributions(value: js.Array[Contribution]): Self = StObject.set(x, "contributions", value.asInstanceOf[js.Any])
     
-    inline def setContributionsVarargs(value: Contribution*): Self = StObject.set(x, "contributions", js.Array(value :_*))
+    inline def setContributionsVarargs(value: Contribution*): Self = StObject.set(x, "contributions", js.Array(value*))
     
     inline def setDemands(value: js.Array[String]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    inline def setDemandsVarargs(value: String*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: String*): Self = StObject.set(x, "demands", js.Array(value*))
     
     inline def setEventCallbacks(value: ExtensionEventCallbackCollection): Self = StObject.set(x, "eventCallbacks", value.asInstanceOf[js.Any])
     
@@ -124,11 +124,11 @@ object ExtensionManifest {
     
     inline def setRestrictedTo(value: js.Array[String]): Self = StObject.set(x, "restrictedTo", value.asInstanceOf[js.Any])
     
-    inline def setRestrictedToVarargs(value: String*): Self = StObject.set(x, "restrictedTo", js.Array(value :_*))
+    inline def setRestrictedToVarargs(value: String*): Self = StObject.set(x, "restrictedTo", js.Array(value*))
     
     inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     
     inline def setServiceInstanceType(value: String): Self = StObject.set(x, "serviceInstanceType", value.asInstanceOf[js.Any])
   }

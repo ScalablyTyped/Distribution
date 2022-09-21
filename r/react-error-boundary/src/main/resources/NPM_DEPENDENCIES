@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-error-boundary" : "3.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-error-boundary" : "3.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

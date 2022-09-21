@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventFilter extends StObject {
   
   /**
-    * A list of AWS availability zones.
+    * A list of Amazon Web Services Availability Zones.
     */
   var availabilityZones: js.UndefOr[typings.awsSdk.healthMod.availabilityZones] = js.undefined
   
@@ -37,7 +37,7 @@ trait EventFilter extends StObject {
   var eventStatusCodes: js.UndefOr[eventStatusCodeList] = js.undefined
   
   /**
-    * A list of event type category codes (issue, scheduledChange, or accountNotification).
+    * A list of event type category codes. Possible values are issue, accountNotification, or scheduledChange. Currently, the investigation value isn't supported at this time.
     */
   var eventTypeCategories: js.UndefOr[eventTypeCategoryList] = js.undefined
   
@@ -52,12 +52,12 @@ trait EventFilter extends StObject {
   var lastUpdatedTimes: js.UndefOr[dateTimeRangeList] = js.undefined
   
   /**
-    * A list of AWS regions.
+    * A list of Amazon Web Services Regions.
     */
   var regions: js.UndefOr[regionList] = js.undefined
   
   /**
-    * The AWS services associated with the event. For example, EC2, RDS.
+    * The Amazon Web Services services associated with the event. For example, EC2, RDS.
     */
   var services: js.UndefOr[serviceList] = js.undefined
   
@@ -84,78 +84,78 @@ object EventFilter {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: availabilityZone*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: availabilityZone*): Self = StObject.set(x, "availabilityZones", js.Array(value*))
     
     inline def setEndTimes(value: dateTimeRangeList): Self = StObject.set(x, "endTimes", value.asInstanceOf[js.Any])
     
     inline def setEndTimesUndefined: Self = StObject.set(x, "endTimes", js.undefined)
     
-    inline def setEndTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "endTimes", js.Array(value :_*))
+    inline def setEndTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "endTimes", js.Array(value*))
     
     inline def setEntityArns(value: entityArnList): Self = StObject.set(x, "entityArns", value.asInstanceOf[js.Any])
     
     inline def setEntityArnsUndefined: Self = StObject.set(x, "entityArns", js.undefined)
     
-    inline def setEntityArnsVarargs(value: entityArn*): Self = StObject.set(x, "entityArns", js.Array(value :_*))
+    inline def setEntityArnsVarargs(value: entityArn*): Self = StObject.set(x, "entityArns", js.Array(value*))
     
     inline def setEntityValues(value: entityValueList): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
     
     inline def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
     
-    inline def setEntityValuesVarargs(value: entityValue*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
+    inline def setEntityValuesVarargs(value: entityValue*): Self = StObject.set(x, "entityValues", js.Array(value*))
     
     inline def setEventArns(value: eventArnList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
     
     inline def setEventArnsUndefined: Self = StObject.set(x, "eventArns", js.undefined)
     
-    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
+    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value*))
     
     inline def setEventStatusCodes(value: eventStatusCodeList): Self = StObject.set(x, "eventStatusCodes", value.asInstanceOf[js.Any])
     
     inline def setEventStatusCodesUndefined: Self = StObject.set(x, "eventStatusCodes", js.undefined)
     
-    inline def setEventStatusCodesVarargs(value: eventStatusCode*): Self = StObject.set(x, "eventStatusCodes", js.Array(value :_*))
+    inline def setEventStatusCodesVarargs(value: eventStatusCode*): Self = StObject.set(x, "eventStatusCodes", js.Array(value*))
     
     inline def setEventTypeCategories(value: eventTypeCategoryList): Self = StObject.set(x, "eventTypeCategories", value.asInstanceOf[js.Any])
     
     inline def setEventTypeCategoriesUndefined: Self = StObject.set(x, "eventTypeCategories", js.undefined)
     
-    inline def setEventTypeCategoriesVarargs(value: eventTypeCategory*): Self = StObject.set(x, "eventTypeCategories", js.Array(value :_*))
+    inline def setEventTypeCategoriesVarargs(value: eventTypeCategory*): Self = StObject.set(x, "eventTypeCategories", js.Array(value*))
     
     inline def setEventTypeCodes(value: eventTypeList): Self = StObject.set(x, "eventTypeCodes", value.asInstanceOf[js.Any])
     
     inline def setEventTypeCodesUndefined: Self = StObject.set(x, "eventTypeCodes", js.undefined)
     
-    inline def setEventTypeCodesVarargs(value: eventType*): Self = StObject.set(x, "eventTypeCodes", js.Array(value :_*))
+    inline def setEventTypeCodesVarargs(value: eventType*): Self = StObject.set(x, "eventTypeCodes", js.Array(value*))
     
     inline def setLastUpdatedTimes(value: dateTimeRangeList): Self = StObject.set(x, "lastUpdatedTimes", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimesUndefined: Self = StObject.set(x, "lastUpdatedTimes", js.undefined)
     
-    inline def setLastUpdatedTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "lastUpdatedTimes", js.Array(value :_*))
+    inline def setLastUpdatedTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "lastUpdatedTimes", js.Array(value*))
     
     inline def setRegions(value: regionList): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: region*): Self = StObject.set(x, "regions", js.Array(value*))
     
     inline def setServices(value: serviceList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: service*): Self = StObject.set(x, "services", js.Array(value*))
     
     inline def setStartTimes(value: dateTimeRangeList): Self = StObject.set(x, "startTimes", value.asInstanceOf[js.Any])
     
     inline def setStartTimesUndefined: Self = StObject.set(x, "startTimes", js.undefined)
     
-    inline def setStartTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "startTimes", js.Array(value :_*))
+    inline def setStartTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "startTimes", js.Array(value*))
     
     inline def setTags(value: tagFilter): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: tagSet*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: tagSet*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

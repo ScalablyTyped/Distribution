@@ -11,7 +11,7 @@ object gamepadCameraMod {
   
   @JSImport("babylonjs/Cameras/gamepadCamera", "GamepadCamera")
   @js.native
-  class GamepadCamera protected () extends UniversalCamera {
+  open class GamepadCamera protected () extends UniversalCamera {
     /**
       * Instantiates a new Gamepad Camera
       * This represents a FPS type of camera. This is only here for back compat purpose.
@@ -21,6 +21,7 @@ object gamepadCameraMod {
       * @param position Define the start position of the camera in the scene
       * @param scene Define the scene the camera belongs to
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
   }
 }

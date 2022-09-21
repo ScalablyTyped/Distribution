@@ -10,12 +10,10 @@ object enhancedSwitchMod {
   
   @JSImport("material-ui/internal/EnhancedSwitch", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[EnhancedSwitchProps, js.Object, js.Any]
+  open class default ()
+    extends Component[EnhancedSwitchProps, js.Object, Any]
   
-  @js.native
-  trait EnhancedSwitch
-    extends Component[EnhancedSwitchProps, js.Object, js.Any]
+  type EnhancedSwitch = Component[EnhancedSwitchProps, js.Object, Any]
   
   trait EnhancedSwitchProps
     extends StObject

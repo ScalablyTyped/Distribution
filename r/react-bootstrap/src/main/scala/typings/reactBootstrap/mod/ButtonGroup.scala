@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "ButtonGroup")
 @js.native
-class ButtonGroup ()
+open class ButtonGroup ()
   extends typings.reactBootstrap.libMod.ButtonGroup

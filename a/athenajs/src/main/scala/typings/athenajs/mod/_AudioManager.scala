@@ -24,20 +24,20 @@ trait _AudioManager extends StObject {
     * Plays the specified sound with `id`.
     *
     */
-  def play(id: String): js.Any = js.native
-  def play(id: String, loop: Boolean): js.Any = js.native
-  def play(id: String, loop: Boolean, volume: Double): js.Any = js.native
-  def play(id: String, loop: Boolean, volume: Double, panning: Double): js.Any = js.native
-  def play(id: String, loop: Boolean, volume: Unit, panning: Double): js.Any = js.native
-  def play(id: String, loop: Unit, volume: Double): js.Any = js.native
-  def play(id: String, loop: Unit, volume: Double, panning: Double): js.Any = js.native
-  def play(id: String, loop: Unit, volume: Unit, panning: Double): js.Any = js.native
+  def play(id: String): Any = js.native
+  def play(id: String, loop: Boolean): Any = js.native
+  def play(id: String, loop: Boolean, volume: Double): Any = js.native
+  def play(id: String, loop: Boolean, volume: Double, panning: Double): Any = js.native
+  def play(id: String, loop: Boolean, volume: Unit, panning: Double): Any = js.native
+  def play(id: String, loop: Unit, volume: Double): Any = js.native
+  def play(id: String, loop: Unit, volume: Double, panning: Double): Any = js.native
+  def play(id: String, loop: Unit, volume: Unit, panning: Double): Any = js.native
   
   /**
     * Stops playing the sound id
     *
     */
-  def stop(id: String, instanceId: js.Any): Unit = js.native
+  def stop(id: String, instanceId: Any): Unit = js.native
   
   /**
     * Toggles global sound playback

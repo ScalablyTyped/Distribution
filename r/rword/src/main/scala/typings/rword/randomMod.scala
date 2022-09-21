@@ -8,7 +8,7 @@ object randomMod {
   
   @JSImport("rword/dist/lib/random", "Random")
   @js.native
-  class Random () extends StObject
+  open class Random () extends StObject
   /* static members */
   object Random {
     
@@ -19,8 +19,8 @@ object randomMod {
     /** Transform an integer to a floating point number. */
     @JSImport("rword/dist/lib/random", "Random.intToFloat")
     @js.native
-    def intToFloat: js.Any = js.native
-    inline def intToFloat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intToFloat")(x.asInstanceOf[js.Any])
+    def intToFloat: Any = js.native
+    inline def intToFloat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intToFloat")(x.asInstanceOf[js.Any])
     
     /**
       * Generate a random number between `min` (inclusive) and `max` (exclusive).

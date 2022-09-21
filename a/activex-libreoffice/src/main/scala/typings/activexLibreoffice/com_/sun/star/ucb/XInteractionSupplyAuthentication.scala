@@ -102,7 +102,7 @@ object XInteractionSupplyAuthentication {
     canSetUserName: () => Boolean,
     getRememberAccountModes: js.Array[RememberAuthentication] => SafeArray[RememberAuthentication],
     getRememberPasswordModes: js.Array[RememberAuthentication] => SafeArray[RememberAuthentication],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     select: () => Unit,
     setAccount: String => Unit,

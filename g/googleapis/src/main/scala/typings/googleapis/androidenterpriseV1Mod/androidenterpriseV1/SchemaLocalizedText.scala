@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A localized string with its locale.
-  */
 trait SchemaLocalizedText extends StObject {
   
   /**
-    * The BCP47 tag for a locale. (e.g. &quot;en-US&quot;, &quot;de&quot;).
+    * The BCP47 tag for a locale. (e.g. "en-US", "de").
     */
-  var locale: js.UndefOr[String] = js.undefined
+  var locale: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The text localized in the associated locale.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLocalizedText {
   
@@ -30,9 +27,13 @@ object SchemaLocalizedText {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
+    inline def setLocaleNull: Self = StObject.set(x, "locale", null)
+    
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

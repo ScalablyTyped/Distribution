@@ -1,5 +1,6 @@
 package typings.wordpressNotices
 
+import typings.wordpressNotices.mod.NoticeType
 import typings.wordpressNotices.mod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wordpressNoticesStrings {
   
   @js.native
-  sealed trait default extends StObject
+  sealed trait default
+    extends StObject
+       with NoticeType
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
@@ -28,7 +31,9 @@ object wordpressNoticesStrings {
   inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait snackbar extends StObject
+  sealed trait snackbar
+    extends StObject
+       with NoticeType
   inline def snackbar: snackbar = "snackbar".asInstanceOf[snackbar]
   
   @js.native

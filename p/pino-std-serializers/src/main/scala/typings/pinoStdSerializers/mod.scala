@@ -6,7 +6,6 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.pinoStdSerializers.anon.Req
 import typings.pinoStdSerializers.anon.Res
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,35 +17,35 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def err(err: Error): SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[SerializedError]
+  inline def err(err: js.Error): SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[SerializedError]
   
   inline def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
   
-  inline def mapHttpResponse(res: ServerResponse): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
+  inline def mapHttpResponse(res: ServerResponse[IncomingMessage]): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
   
   inline def req(req: IncomingMessage): SerializedRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(req.asInstanceOf[js.Any]).asInstanceOf[SerializedRequest]
   
-  inline def res(res: ServerResponse): SerializedResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(res.asInstanceOf[js.Any]).asInstanceOf[SerializedResponse]
+  inline def res(res: ServerResponse[IncomingMessage]): SerializedResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(res.asInstanceOf[js.Any]).asInstanceOf[SerializedResponse]
   
-  inline def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapErrorSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* err */ Error, Record[String, js.Any]]]
+  inline def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ js.Error, Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapErrorSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* err */ js.Error, Record[String, Any]]]
   
-  inline def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequestSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]]
+  inline def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequestSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* req */ IncomingMessage, Record[String, Any]]]
   
-  inline def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapResponseSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* res */ ServerResponse, Record[String, js.Any]]]
+  inline def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse[IncomingMessage], Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapResponseSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* res */ ServerResponse[IncomingMessage], Record[String, Any]]]
   
-  type CustomErrorSerializer = js.Function1[/* err */ SerializedError, Record[String, js.Any]]
+  type CustomErrorSerializer = js.Function1[/* err */ SerializedError, Record[String, Any]]
   
-  type CustomRequestSerializer = js.Function1[/* req */ SerializedRequest, Record[String, js.Any]]
+  type CustomRequestSerializer = js.Function1[/* req */ SerializedRequest, Record[String, Any]]
   
-  type CustomResponseSerializer = js.Function1[/* res */ SerializedResponse, Record[String, js.Any]]
+  type CustomResponseSerializer = js.Function1[/* res */ SerializedResponse, Record[String, Any]]
   
   trait SerializedError
     extends StObject
-       with /* key */ NumberDictionary[js.Any]
+       with /* key */ NumberDictionary[Any]
        with /**
     * Any other extra properties that have been attached to the object will also be present on the serialized object.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * The supplied error message.
@@ -57,7 +56,7 @@ object mod {
       * Non-enumerable. The original Error object. This will not be included in the logged output.
       * This is available for subsequent serializers to use.
       */
-    var raw: Error
+    var raw: js.Error
     
     /**
       * The stack when the error was generated.
@@ -71,7 +70,7 @@ object mod {
   }
   object SerializedError {
     
-    inline def apply(message: String, raw: Error, stack: String, `type`: String): SerializedError = {
+    inline def apply(message: String, raw: js.Error, stack: String, `type`: String): SerializedError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedError]
@@ -81,7 +80,7 @@ object mod {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setRaw(value: Error): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: js.Error): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
@@ -168,7 +167,7 @@ object mod {
     /**
       * Non-enumerable, i.e. will not be in the output, original response object. This is available for subsequent serializers to use.
       */
-    var raw: ServerResponse
+    var raw: ServerResponse[IncomingMessage]
     
     /**
       * HTTP status code.
@@ -177,7 +176,7 @@ object mod {
   }
   object SerializedResponse {
     
-    inline def apply(headers: Record[String, String], raw: ServerResponse, statusCode: Double): SerializedResponse = {
+    inline def apply(headers: Record[String, String], raw: ServerResponse[IncomingMessage], statusCode: Double): SerializedResponse = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedResponse]
     }
@@ -186,7 +185,7 @@ object mod {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setRaw(value: ServerResponse): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: ServerResponse[IncomingMessage]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }

@@ -35,7 +35,7 @@ object UploadControlValidationErrorOccurredEventArgs {
     
     inline def setInvalidFiles(value: js.Array[BootstrapUploadControlInvalidFileInfo]): Self = StObject.set(x, "invalidFiles", value.asInstanceOf[js.Any])
     
-    inline def setInvalidFilesVarargs(value: BootstrapUploadControlInvalidFileInfo*): Self = StObject.set(x, "invalidFiles", js.Array(value :_*))
+    inline def setInvalidFilesVarargs(value: BootstrapUploadControlInvalidFileInfo*): Self = StObject.set(x, "invalidFiles", js.Array(value*))
     
     inline def setShowAlert(value: Boolean): Self = StObject.set(x, "showAlert", value.asInstanceOf[js.Any])
     

@@ -10,15 +10,12 @@ A React component for dealing with clicks outside its subtree
 | ------------------ | :-------------: |
 | Full name          | react-outside-click-handler |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 135 |
-| # downloads        | 19376517 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2549725.6666666665 |
+| # stars            | 547.0 |
 
 ## Links
-- [Homepage](https://github.com/airbnb/react-outside-click-handler#readme)
-- [Bugs](https://github.com/airbnb/react-outside-click-handler/issues)
-- [Repository](https://github.com/airbnb/react-outside-click-handler)
 - [Npm](https://www.npmjs.com/package/react-outside-click-handler)
     
 

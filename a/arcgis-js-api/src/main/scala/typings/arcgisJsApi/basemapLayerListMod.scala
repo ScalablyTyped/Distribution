@@ -22,7 +22,7 @@ object basemapLayerListMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with BasemapLayerList {
     def this(properties: BasemapLayerListProperties) = this()

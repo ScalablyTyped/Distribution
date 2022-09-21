@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchOrdersStateFilter")
 @js.native
-class SearchOrdersStateFilter () extends StObject {
+open class SearchOrdersStateFilter () extends StObject {
   
   /**
     * States to filter for. See [OrderState](#type-orderstate) for possible values.

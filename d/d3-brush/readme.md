@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-brush
 
-Typings are for version 2.1
+Typings are for version 3.0
 
 ## Library description:
 Select a one- or two-dimensional region using the mouse or touch.
@@ -10,10 +10,10 @@ Select a one- or two-dimensional region using the mouse or touch.
 | ------------------ | :-------------: |
 | Full name          | d3-brush |
 | Keywords           | d3, d3-module, brush, interaction |
-| # releases         | 16 |
-| # dependents       | 124 |
-| # downloads        | 41502144 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 6330428.666666667 |
+| # stars            | 137.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-brush/)

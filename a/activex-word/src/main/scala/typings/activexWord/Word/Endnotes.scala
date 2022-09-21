@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Endnotes extends StObject {
   
   def Add(Range: Range): Endnote = js.native
-  def Add(Range: Range, Reference: js.Any): Endnote = js.native
-  def Add(Range: Range, Reference: js.Any, Text: js.Any): Endnote = js.native
-  def Add(Range: Range, Reference: Unit, Text: js.Any): Endnote = js.native
+  def Add(Range: Range, Reference: Any): Endnote = js.native
+  def Add(Range: Range, Reference: Any, Text: Any): Endnote = js.native
+  def Add(Range: Range, Reference: Unit, Text: Any): Endnote = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -32,7 +32,7 @@ trait Endnotes extends StObject {
   
   var NumberingRule: WdNumberingRule = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def ResetContinuationNotice(): Unit = js.native
   

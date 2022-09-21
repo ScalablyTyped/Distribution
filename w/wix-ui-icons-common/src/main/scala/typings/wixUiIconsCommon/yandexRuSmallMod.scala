@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object yandexRuSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/YandexRuSmall", JSImport.Default)
   @js.native
-  val default: SFC[YandexRuSmallProps] = js.native
+  val default: FC[YandexRuSmallProps] = js.native
   
   trait YandexRuSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object YandexRuSmallProps {
     
@@ -29,14 +29,14 @@ object yandexRuSmallMod extends Shortcut {
     
     extension [Self <: YandexRuSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[YandexRuSmallProps]
+  type _To = FC[YandexRuSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `yandexRuSmallMod.foo` */
-  override def _to: SFC[YandexRuSmallProps] = default
+  override def _to: FC[YandexRuSmallProps] = default
 }

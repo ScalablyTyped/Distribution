@@ -29,7 +29,7 @@ object ListApplicationDependenciesResponse {
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "Dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: ApplicationDependencySummary*): Self = StObject.set(x, "Dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: ApplicationDependencySummary*): Self = StObject.set(x, "Dependencies", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

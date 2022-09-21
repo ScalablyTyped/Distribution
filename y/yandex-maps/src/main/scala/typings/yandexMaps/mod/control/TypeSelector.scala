@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "control.TypeSelector")
 @js.native
-class TypeSelector () extends ListBox {
+open class TypeSelector () extends ListBox {
   def this(parameters: ITypeSelectorParameters) = this()
 }

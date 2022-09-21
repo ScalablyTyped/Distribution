@@ -9,7 +9,7 @@ object la {
   
   @JSImport("ranjs", "la.Matrix")
   @js.native
-  class Matrix () extends StObject {
+  open class Matrix () extends StObject {
     def this(arg: js.Array[js.Array[Double]]) = this()
     def this(arg: Double) = this()
     def this(arg: Matrix) = this()
@@ -36,7 +36,7 @@ object la {
   
   @JSImport("ranjs", "la.Vector")
   @js.native
-  class Vector () extends StObject {
+  open class Vector () extends StObject {
     def this(arg: js.Array[Double]) = this()
     def this(arg: Double) = this()
     def this(arg: Vector) = this()

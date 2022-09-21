@@ -24,7 +24,7 @@ object mod {
         def logEvent(eventName: String, parameters: StringDictionary[String]): Unit = js.native
         
         def set(properties: AnalyticsProperties): this.type = js.native
-        def set(property: String, value: js.Any): this.type = js.native
+        def set(property: String, value: Any): this.type = js.native
         
         def setUserProperty(propertyName: String, value: String): Unit = js.native
       }
@@ -36,7 +36,7 @@ object mod {
       trait MessageEvent
         extends EventObject[typings.tabrisPluginFirebase.mod.global.firebase.Messaging] {
         
-        var data: js.Any = js.native
+        var data: Any = js.native
       }
       @JSGlobal("firebase.MessageEvent")
       @js.native

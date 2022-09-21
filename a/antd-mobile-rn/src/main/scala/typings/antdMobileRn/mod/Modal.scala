@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Modal")
 @js.native
-class Modal () extends default
+open class Modal () extends default
 object Modal {
   
   @JSImport("antd-mobile-rn", "Modal")
@@ -18,8 +18,8 @@ object Modal {
   /* static member */
   @JSImport("antd-mobile-rn", "Modal.alert")
   @js.native
-  def alert: js.Any = js.native
-  inline def alert_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
+  def alert: Any = js.native
+  inline def alert_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
   
   /* static member */
   object contextTypes {
@@ -92,12 +92,12 @@ object Modal {
   /* static member */
   @JSImport("antd-mobile-rn", "Modal.operation")
   @js.native
-  def operation: js.Any = js.native
-  inline def operation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operation")(x.asInstanceOf[js.Any])
+  def operation: Any = js.native
+  inline def operation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operation")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("antd-mobile-rn", "Modal.prompt")
   @js.native
-  def prompt: js.Any = js.native
-  inline def prompt_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prompt")(x.asInstanceOf[js.Any])
+  def prompt: Any = js.native
+  inline def prompt_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prompt")(x.asInstanceOf[js.Any])
 }

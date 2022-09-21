@@ -33,6 +33,6 @@ object ListAppliedSchemaArnsResponse {
     
     inline def setSchemaArnsUndefined: Self = StObject.set(x, "SchemaArns", js.undefined)
     
-    inline def setSchemaArnsVarargs(value: Arn*): Self = StObject.set(x, "SchemaArns", js.Array(value :_*))
+    inline def setSchemaArnsVarargs(value: Arn*): Self = StObject.set(x, "SchemaArns", js.Array(value*))
   }
 }

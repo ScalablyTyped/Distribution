@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.ToolEvent")
 @js.native
-class ToolEvent ()
+open class ToolEvent ()
   extends StObject
      with typings.paper.paper.ToolEvent {
   
@@ -70,7 +70,7 @@ class ToolEvent ()
     * @see Key.modifiers
     */
   /* CompleteClass */
-  override val modifiers: js.Any = js.native
+  override val modifiers: Any = js.native
   
   /** 
     * The position of the mouse in project coordinates when the event was

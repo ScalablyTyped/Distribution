@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protobufjs", "Service")
 @js.native
-class Service protected () extends NamespaceBase {
+open class Service protected () extends NamespaceBase {
   /**
     * Constructs a new service instance.
     * @param name Service name
@@ -15,7 +15,7 @@ class Service protected () extends NamespaceBase {
     * @throws {TypeError} If arguments are invalid
     */
   def this(name: String) = this()
-  def this(name: String, options: StringDictionary[js.Any]) = this()
+  def this(name: String, options: StringDictionary[Any]) = this()
   
   /**
     * Creates a runtime service using the specified rpc implementation.

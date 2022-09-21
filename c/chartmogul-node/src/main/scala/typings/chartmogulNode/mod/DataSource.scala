@@ -75,7 +75,7 @@ object DataSource {
       
       inline def setData_sources(value: js.Array[typings.chartmogulNode.mod.DataSource.DataSource]): Self = StObject.set(x, "data_sources", value.asInstanceOf[js.Any])
       
-      inline def setData_sourcesVarargs(value: typings.chartmogulNode.mod.DataSource.DataSource*): Self = StObject.set(x, "data_sources", js.Array(value :_*))
+      inline def setData_sourcesVarargs(value: typings.chartmogulNode.mod.DataSource.DataSource*): Self = StObject.set(x, "data_sources", js.Array(value*))
     }
   }
   

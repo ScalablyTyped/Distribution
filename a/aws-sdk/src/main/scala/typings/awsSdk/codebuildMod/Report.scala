@@ -19,7 +19,7 @@ trait Report extends StObject {
   /**
     *  The date and time this report run occurred. 
     */
-  var created: js.UndefOr[Timestamp] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The ARN of the build run that generated this report. 
@@ -29,7 +29,7 @@ trait Report extends StObject {
   /**
     *  The date and time a report expires. A report expires 30 days after it is created. An expired report is not available to view in CodeBuild. 
     */
-  var expired: js.UndefOr[Timestamp] = js.undefined
+  var expired: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  Information about where the raw data used to generate this report was exported. 
@@ -83,7 +83,7 @@ object Report {
     
     inline def setCodeCoverageSummaryUndefined: Self = StObject.set(x, "codeCoverageSummary", js.undefined)
     
-    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
@@ -91,7 +91,7 @@ object Report {
     
     inline def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
-    inline def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+    inline def setExpired(value: js.Date): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
     inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
     

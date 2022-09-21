@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse5-sax-parser
 
-Typings are for version 5.0
+Typings are for version 7.0.0
 
 ## Library description:
 Streaming SAX-style HTML parser.
@@ -10,10 +10,10 @@ Streaming SAX-style HTML parser.
 | ------------------ | :-------------: |
 | Full name          | parse5-sax-parser |
 | Keywords           | parse5, parser, stream, streaming, SAX |
-| # releases         | 4 |
-| # dependents       | 21 |
-| # downloads        | 6637708 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 6692744.333333333 |
+| # stars            | 2911.0 |
 
 ## Links
 - [Homepage](https://github.com/inikulin/parse5)
@@ -24,7 +24,7 @@ Streaming SAX-style HTML parser.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

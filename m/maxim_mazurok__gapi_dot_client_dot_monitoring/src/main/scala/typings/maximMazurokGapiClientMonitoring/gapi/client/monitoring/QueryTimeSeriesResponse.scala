@@ -38,13 +38,13 @@ object QueryTimeSeriesResponse {
     
     inline def setPartialErrorsUndefined: Self = StObject.set(x, "partialErrors", js.undefined)
     
-    inline def setPartialErrorsVarargs(value: Status*): Self = StObject.set(x, "partialErrors", js.Array(value :_*))
+    inline def setPartialErrorsVarargs(value: Status*): Self = StObject.set(x, "partialErrors", js.Array(value*))
     
     inline def setTimeSeriesData(value: js.Array[TimeSeriesData]): Self = StObject.set(x, "timeSeriesData", value.asInstanceOf[js.Any])
     
     inline def setTimeSeriesDataUndefined: Self = StObject.set(x, "timeSeriesData", js.undefined)
     
-    inline def setTimeSeriesDataVarargs(value: TimeSeriesData*): Self = StObject.set(x, "timeSeriesData", js.Array(value :_*))
+    inline def setTimeSeriesDataVarargs(value: TimeSeriesData*): Self = StObject.set(x, "timeSeriesData", js.Array(value*))
     
     inline def setTimeSeriesDescriptor(value: TimeSeriesDescriptor): Self = StObject.set(x, "timeSeriesDescriptor", value.asInstanceOf[js.Any])
     

@@ -13,12 +13,12 @@ object domMod {
   
   inline def _empty(selector: String): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
   
-  inline def getData(element: Element, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getData(element: Element, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def matches(element: Element, selector: SelectorObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def setData(element: Element, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setData(element: Element, key: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait SelectorObject extends StObject {
     

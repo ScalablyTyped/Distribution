@@ -26,8 +26,8 @@ object contextMenus {
   def ACTION_MENU_TOP_LEVEL_LIMIT: Double = js.native
   inline def ACTION_MENU_TOP_LEVEL_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTION_MENU_TOP_LEVEL_LIMIT")(x.asInstanceOf[js.Any])
   
-  inline def create(createProperties: CreateProperties): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def create(createProperties: CreateProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(createProperties: CreateProperties): Double | String = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any]).asInstanceOf[Double | String]
+  inline def create(createProperties: CreateProperties, callback: js.Function0[Unit]): Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Double | String]
   
   @JSGlobal("chrome.contextMenus.onClicked")
   @js.native

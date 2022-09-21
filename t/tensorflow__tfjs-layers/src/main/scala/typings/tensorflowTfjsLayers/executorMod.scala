@@ -5,6 +5,7 @@ import typings.std.Set
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsLayers.distTypesMod.Kwargs
+import typings.tensorflowTfjsLayers.executorUtilsMod.LruCache
 import typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +24,7 @@ object executorMod {
     * @param feeds An Array of `Feed`s, or another `FeedDict`, in which case
     *   copy-construction will be performed.
     */
-  class FeedDict () extends StObject {
+  open class FeedDict () extends StObject {
     def this(feeds: js.Array[Feed]) = this()
     def this(feeds: FeedDict) = this()
     
@@ -76,17 +77,25 @@ object executorMod {
       */
     def hasKey(key: SymbolicTensor): Boolean = js.native
     
-    /* private */ var id2Mask: js.Any = js.native
+    /* private */ var id2Mask: Any = js.native
     
-    /* private */ var id2Value: js.Any = js.native
+    /* private */ var id2Value: Any = js.native
     
-    /* private */ var name2Id: js.Any = js.native
+    /* private */ var name2Id: Any = js.native
     
     /**
       * Get all the SymbolicTensor available in this FeedDict.
       */
     def names(): js.Array[String] = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "cachedRecipientCounts")
+  @js.native
+  val cachedRecipientCounts: LruCache[RecipientCounts] = js.native
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "cachedSorted")
+  @js.native
+  val cachedSorted: LruCache[js.Array[SymbolicTensor]] = js.native
   
   inline def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
   inline def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Unit, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
@@ -98,6 +107,8 @@ object executorMod {
   inline def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
   
   inline def getTopologicalSortAndRecipientCountsForOneFetch(fetch: SymbolicTensor, feedDict: FeedDict): typings.tensorflowTfjsLayers.anon.RecipientMap = (^.asInstanceOf[js.Dynamic].applyDynamic("getTopologicalSortAndRecipientCountsForOneFetch")(fetch.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsLayers.anon.RecipientMap]
+  
+  inline def updateCacheMaxEntries(maxEntries: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateCacheMaxEntries")(maxEntries.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait ExecutionProbe extends StObject {
     
@@ -154,6 +165,8 @@ object executorMod {
       inline def setValue(value: Tensor[Rank]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
+  
+  type RecipientCounts = StringDictionary[Double]
   
   type RecipientMap = StringDictionary[Set[String]]
 }

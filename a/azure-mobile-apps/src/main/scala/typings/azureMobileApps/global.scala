@@ -17,9 +17,9 @@ object global {
       // general
       @JSGlobal("Azure.MobileApps.nh")
       @js.native
-      def nh: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Azure.ServiceBus.NotificationHubService */ js.Any = js.native
+      def nh: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Azure.ServiceBus.NotificationHubService */ Any = js.native
       inline def nh_=(
-        x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Azure.ServiceBus.NotificationHubService */ js.Any
+        x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Azure.ServiceBus.NotificationHubService */ Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nh")(x.asInstanceOf[js.Any])
     }
   }

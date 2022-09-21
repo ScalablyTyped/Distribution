@@ -10,10 +10,10 @@ object nextWeekMod {
   
   @JSImport("material-ui/svg-icons/content/next-week", JSImport.Default)
   @js.native
-  class default () extends ContentNextWeek
+  open class default () extends ContentNextWeek
   
   @JSImport("material-ui/svg-icons/content/next-week", "ContentNextWeek")
   @js.native
-  class ContentNextWeek ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentNextWeek ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

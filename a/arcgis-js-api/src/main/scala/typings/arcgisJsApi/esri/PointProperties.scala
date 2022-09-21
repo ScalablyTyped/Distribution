@@ -25,12 +25,16 @@ trait PointProperties
   /**
     * The m-coordinate of the point in map units.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#m)
     */
   var m: js.UndefOr[Double] = js.undefined
   
   /**
     * The x-coordinate (easting) of the point in map units.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#x)
     */
@@ -39,12 +43,16 @@ trait PointProperties
   /**
     * The y-coordinate (northing) of the point in map units.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#y)
     */
   var y: js.UndefOr[Double] = js.undefined
   
   /**
     * The z-coordinate (or elevation) of the point in map units.
+    *
+    * @default undefined
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#z)
     */

@@ -2,6 +2,8 @@ package typings.loadableComponent
 
 import typings.loadableComponent.mod.LoadableLibrary
 import typings.loadableComponent.mod.OptionsWithoutResolver
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
@@ -46,22 +48,20 @@ object anon {
     }
   }
   
-  trait Fallback extends StObject {
+  trait Default[Component /* <: ComponentClass[Any, ComponentState] */] extends StObject {
     
-    var fallback: js.UndefOr[Element] = js.undefined
+    var default: Component
   }
-  object Fallback {
+  object Default {
     
-    inline def apply(): Fallback = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Fallback]
+    inline def apply[Component /* <: ComponentClass[Any, ComponentState] */](default: Component): Default[Component] = {
+      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Default[Component]]
     }
     
-    extension [Self <: Fallback](x: Self) {
+    extension [Self <: Default[?], Component /* <: ComponentClass[Any, ComponentState] */](x: Self & Default[Component]) {
       
-      inline def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
-      
-      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setDefault(value: Component): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
   

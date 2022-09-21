@@ -18,11 +18,11 @@ trait ClassProvider
   /**
     * An injection token. (Typically an instance of `Type` or `InjectionToken`, but can be `any`).
     */
-  var provide: js.Any
+  var provide: Any
 }
 object ClassProvider {
   
-  inline def apply(provide: js.Any, useClass: Type[js.Any]): ClassProvider = {
+  inline def apply(provide: Any, useClass: Type[Any]): ClassProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassProvider]
   }
@@ -33,6 +33,6 @@ object ClassProvider {
     
     inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    inline def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+    inline def setProvide(value: Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
   }
 }

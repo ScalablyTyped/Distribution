@@ -35,7 +35,7 @@ object XBoundControl {
     Lock: Boolean,
     acquire: () => Unit,
     getLock: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLock: Boolean => Unit
   ): XBoundControl = {

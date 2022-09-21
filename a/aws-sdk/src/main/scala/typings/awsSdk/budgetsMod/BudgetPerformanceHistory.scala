@@ -11,7 +11,7 @@ trait BudgetPerformanceHistory extends StObject {
   var BudgetType: js.UndefOr[typings.awsSdk.budgetsMod.BudgetType] = js.undefined
   
   /**
-    * A list of amounts of cost or usage that you created budgets for, compared to your actual costs or usage.
+    * A list of amounts of cost or usage that you created budgets for, which are compared to your actual costs or usage.
     */
   var BudgetedAndActualAmountsList: js.UndefOr[typings.awsSdk.budgetsMod.BudgetedAndActualAmountsList] = js.undefined
   
@@ -48,7 +48,7 @@ object BudgetPerformanceHistory {
     
     inline def setBudgetedAndActualAmountsListUndefined: Self = StObject.set(x, "BudgetedAndActualAmountsList", js.undefined)
     
-    inline def setBudgetedAndActualAmountsListVarargs(value: BudgetedAndActualAmounts*): Self = StObject.set(x, "BudgetedAndActualAmountsList", js.Array(value :_*))
+    inline def setBudgetedAndActualAmountsListVarargs(value: BudgetedAndActualAmounts*): Self = StObject.set(x, "BudgetedAndActualAmountsList", js.Array(value*))
     
     inline def setCostFilters(value: CostFilters): Self = StObject.set(x, "CostFilters", value.asInstanceOf[js.Any])
     

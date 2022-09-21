@@ -68,7 +68,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HostBindingOpCodes
   extends StObject
-     with Array[Double | HostBindingsFunction[js.Any]] {
+     with Array[Double | HostBindingsFunction[Any]] {
   
   var __brand__ : typings.angularCore.angularCoreStrings.HostBindingOpCodes = js.native
   

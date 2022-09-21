@@ -58,7 +58,7 @@ object ProcessModel {
     
     inline def setProjects(value: js.Array[ProjectReference]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    inline def setProjectsVarargs(value: ProjectReference*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: ProjectReference*): Self = StObject.set(x, "projects", js.Array(value*))
     
     inline def setProperties(value: ProcessProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

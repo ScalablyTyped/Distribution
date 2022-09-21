@@ -10,13 +10,15 @@ trait Blob
   extends StObject
      with ImageBitmapSource
      with MediaProvider
-     with _BlobPart
-     with _BodyInit {
+     with _XMLHttpRequestBodyInit {
   
-  def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+  /* standard dom */
+  def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
   
+  /* standard dom */
   val size: Double = js.native
   
+  /* standard dom */
   def slice(): Blob = js.native
   def slice(start: Double): Blob = js.native
   def slice(start: Double, end: Double): Blob = js.native
@@ -26,9 +28,12 @@ trait Blob
   def slice(start: Unit, end: Double, contentType: java.lang.String): Blob = js.native
   def slice(start: Unit, end: Unit, contentType: java.lang.String): Blob = js.native
   
-  def stream(): ReadableStream[js.Any] = js.native
+  /* standard dom */
+  def stream(): ReadableStream[js.typedarray.Uint8Array] = js.native
   
+  /* standard dom */
   def text(): js.Promise[java.lang.String] = js.native
   
+  /* standard dom */
   val `type`: java.lang.String = js.native
 }

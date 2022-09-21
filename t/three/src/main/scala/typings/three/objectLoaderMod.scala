@@ -1,12 +1,14 @@
 package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.HTMLImageElement
 import typings.std.ProgressEvent
 import typings.three.animationClipMod.AnimationClip
+import typings.three.bufferGeometryMod.BufferGeometry
+import typings.three.eventDispatcherMod.Event
+import typings.three.instancedBufferGeometryMod.InstancedBufferGeometry
 import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
 import typings.three.materialMod.Material
@@ -20,57 +22,83 @@ object objectLoaderMod {
   
   @JSImport("three/src/loaders/ObjectLoader", "ObjectLoader")
   @js.native
-  class ObjectLoader () extends Loader {
+  open class ObjectLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
     def load(url: String): Unit = js.native
-    def load(url: String, onLoad: js.Function1[/* object */ Object3D, Unit]): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* object */ Object3D, Unit],
+      // tslint:disable-next-line:no-unnecessary-generics
+    onLoad: js.Function1[/* object */ Object3D[Event], Unit]
+    ): Unit = js.native
+    def load(
+      url: String,
+      // tslint:disable-next-line:no-unnecessary-generics
+    onLoad: js.Function1[/* object */ Object3D[Event], Unit],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* object */ Object3D, Unit],
+      // tslint:disable-next-line:no-unnecessary-generics
+    onLoad: js.Function1[/* object */ Object3D[Event], Unit],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+      onError: js.Function1[/* event */ js.Error | ErrorEvent, Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* object */ Object3D, Unit],
+      // tslint:disable-next-line:no-unnecessary-generics
+    onLoad: js.Function1[/* object */ Object3D[Event], Unit],
       onProgress: Unit,
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+      onError: js.Function1[/* event */ js.Error | ErrorEvent, Unit]
     ): Unit = js.native
-    def load(url: String, onLoad: Unit, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): Unit = js.native
     def load(
       url: String,
-      onLoad: Unit,
+      // tslint:disable-next-line:no-unnecessary-generics
+    onLoad: Unit,
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
+    ): Unit = js.native
+    def load(
+      url: String,
+      // tslint:disable-next-line:no-unnecessary-generics
+    onLoad: Unit,
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+      onError: js.Function1[/* event */ js.Error | ErrorEvent, Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: Unit,
+      // tslint:disable-next-line:no-unnecessary-generics
+    onLoad: Unit,
       onProgress: Unit,
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+      onError: js.Function1[/* event */ js.Error | ErrorEvent, Unit]
     ): Unit = js.native
     
-    def parse[T /* <: Object3D */](json: js.Any): T = js.native
-    def parse[T /* <: Object3D */](json: js.Any, onLoad: js.Function1[/* object */ Object3D, Unit]): T = js.native
+    // tslint:disable-next-line:no-unnecessary-generics
+    def parse[T /* <: Object3D[Event] */](json: Any): T = js.native
+    def parse[T /* <: Object3D[Event] */](json: Any, onLoad: js.Function1[/* object */ Object3D[Event], Unit]): T = js.native
     
     // Array of Classes that inherits from Matrial.
-    def parseAnimations(json: js.Any): js.Array[AnimationClip] = js.native
+    def parseAnimations(json: Any): js.Array[AnimationClip] = js.native
     
-    def parseGeometries(json: js.Any): js.Array[js.Any] = js.native
+    // tslint:disable-next-line:no-unnecessary-generics
+    def parseAsync[T /* <: Object3D[Event] */](json: Any): js.Promise[T] = js.native
     
-    def parseImages(json: js.Any, onLoad: js.Function0[Unit]): StringDictionary[HTMLImageElement] = js.native
+    def parseGeometries(json: Any): StringDictionary[InstancedBufferGeometry | BufferGeometry] = js.native
+    
+    def parseImages(json: Any, onLoad: js.Function0[Unit]): StringDictionary[HTMLImageElement] = js.native
+    
+    def parseImagesAsync(json: Any): js.Promise[StringDictionary[HTMLImageElement]] = js.native
     
     // Array of BufferGeometry or Geometry or Geometry2.
-    def parseMaterials(json: js.Any, textures: js.Array[Texture]): js.Array[Material] = js.native
+    def parseMaterials(json: Any, textures: js.Array[Texture]): js.Array[Material] = js.native
     
-    def parseObject[T /* <: Object3D */](data: js.Any, geometries: js.Array[js.Any], materials: js.Array[Material]): T = js.native
+    def parseObject[T /* <: Object3D[Event] */](
+      data: Any,
+      geometries: js.Array[Any],
+      materials: js.Array[Material],
+      animations: js.Array[AnimationClip]
+    ): // tslint:disable-next-line:no-unnecessary-generics
+    T = js.native
     
-    def parseTextures(json: js.Any, images: js.Any): js.Array[Texture] = js.native
+    def parseTextures(json: Any, images: Any): js.Array[Texture] = js.native
   }
 }

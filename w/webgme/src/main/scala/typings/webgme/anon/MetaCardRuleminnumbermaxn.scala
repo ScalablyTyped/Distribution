@@ -35,18 +35,18 @@ object MetaCardRuleminnumbermaxn {
     
     inline def setItems(value: js.Array[Path]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Path*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Path*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxItems(value: js.Array[Double]): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     
-    inline def setMaxItemsVarargs(value: Double*): Self = StObject.set(x, "maxItems", js.Array(value :_*))
+    inline def setMaxItemsVarargs(value: Double*): Self = StObject.set(x, "maxItems", js.Array(value*))
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinItems(value: js.Array[Double]): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
     
-    inline def setMinItemsVarargs(value: Double*): Self = StObject.set(x, "minItems", js.Array(value :_*))
+    inline def setMinItemsVarargs(value: Double*): Self = StObject.set(x, "minItems", js.Array(value*))
   }
 }

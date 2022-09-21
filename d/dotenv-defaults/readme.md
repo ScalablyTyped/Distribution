@@ -10,10 +10,10 @@ dotenv... but with defaults!
 | ------------------ | :-------------: |
 | Full name          | dotenv-defaults |
 | Keywords           | dotenv, defaults, extension, env, default, fallback |
-| # releases         | 6 |
-| # dependents       | 24 |
-| # downloads        | 90867045 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 9705095.333333334 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/mrsteele/dotenv-defaults#readme)

@@ -11,11 +11,11 @@ trait GooglePrivacyDlpV2CryptoDeterministicConfig extends StObject {
     * context is appended to plaintext value being encrypted. On decryption the provided context is validated against the value used during encryption. If a context was provided during
     * encryption, same context must be provided during decryption as well. If the context is not set, plaintext would be used as is for encryption. If the context is set but: 1. there is
     * no record present when transforming a given value or 2. the field is not present when transforming a given value, plaintext would be used as is for encryption. Note that case (1) is
-    * expected when an `InfoTypeTransformation` is applied to both structured and non-structured `ContentItem`s.
+    * expected when an `InfoTypeTransformation` is applied to both structured and unstructured `ContentItem`s.
     */
   var context: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
   
-  /** The key used by the encryption function. */
+  /** The key used by the encryption function. For deterministic encryption using AES-SIV, the provided key is internally expanded to 64 bytes prior to use. */
   var cryptoKey: js.UndefOr[GooglePrivacyDlpV2CryptoKey] = js.undefined
   
   /**

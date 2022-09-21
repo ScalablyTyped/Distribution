@@ -15,7 +15,7 @@ trait SubscriptionSnippet extends StObject {
   /** The subscription's details. */
   var description: js.UndefOr[String] = js.undefined
   
-  /** The date and time that the subscription was created. The value is specified in ISO 8601 format. */
+  /** The date and time that the subscription was created. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /** The id object contains information about the channel that the user subscribed to. */

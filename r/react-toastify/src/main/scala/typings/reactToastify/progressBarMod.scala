@@ -2,7 +2,8 @@ package typings.reactToastify
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.global.JSX.Element
-import typings.reactToastify.anon.Position
+import typings.reactToastify.anon.DefaultClassName
+import typings.reactToastify.typesMod.Theme
 import typings.reactToastify.typesMod.ToastClassName
 import typings.reactToastify.typesMod.TypeOptions
 import org.scalablytyped.runtime.StObject
@@ -14,8 +15,8 @@ object progressBarMod {
   object ProgressBar {
     
     inline def apply(
-      hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsIn: ProgressBarProps
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsIn.asInstanceOf[js.Any]).asInstanceOf[Element]
+      hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsInTheme: ProgressBarProps
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsInTheme.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-toastify/dist/components/ProgressBar", "ProgressBar")
     @js.native
@@ -91,14 +92,19 @@ object progressBarMod {
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
+      * The theme that is currently used
+      */
+    var theme: Theme
+    
+    /**
       * Optional type : info, success ...
       */
     var `type`: TypeOptions
   }
   object ProgressBarProps {
     
-    inline def apply(closeToast: () => Unit, delay: Double, isRunning: Boolean, `type`: TypeOptions): ProgressBarProps = {
-      val __obj = js.Dynamic.literal(closeToast = js.Any.fromFunction0(closeToast), delay = delay.asInstanceOf[js.Any], isRunning = isRunning.asInstanceOf[js.Any])
+    inline def apply(closeToast: () => Unit, delay: Double, isRunning: Boolean, theme: Theme, `type`: TypeOptions): ProgressBarProps = {
+      val __obj = js.Dynamic.literal(closeToast = js.Any.fromFunction0(closeToast), delay = delay.asInstanceOf[js.Any], isRunning = isRunning.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressBarProps]
     }
@@ -107,7 +113,7 @@ object progressBarMod {
       
       inline def setClassName(value: ToastClassName): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      inline def setClassNameFunction1(value: /* context */ js.UndefOr[Position] => String): Self = StObject.set(x, "className", js.Any.fromFunction1(value))
+      inline def setClassNameFunction1(value: /* context */ js.UndefOr[DefaultClassName] => String): Self = StObject.set(x, "className", js.Any.fromFunction1(value))
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
@@ -140,6 +146,8 @@ object progressBarMod {
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

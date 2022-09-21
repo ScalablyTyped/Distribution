@@ -10,10 +10,10 @@ A useful modern JavaScript solution that helps your website users to add (instal
 | ------------------ | :-------------: |
 | Full name          | a2hs.js |
 | Keywords           | add to home, add website to home screen, add pwa to home screen, install to home screen, install pwa, ios progressive web app, ios pwa |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 5360 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 606.3333333333334 |
+| # stars            | 153.0 |
 
 ## Links
 - [Homepage](https://github.io/koddr/a2hs.js)

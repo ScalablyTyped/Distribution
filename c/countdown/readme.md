@@ -9,10 +9,10 @@ A simple JavaScript API for producing an accurate, intuitive description of the 
 | ------------------ | :-------------: |
 | Full name          | countdown |
 | Keywords           | countdown, timer, clock, date, time, timespan, year, month, week, day, hour, minute, second |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 617825 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 58082.333333333336 |
+| # stars            | 466.0 |
 
 ## Links
 - [Homepage](http://countdownjs.org)

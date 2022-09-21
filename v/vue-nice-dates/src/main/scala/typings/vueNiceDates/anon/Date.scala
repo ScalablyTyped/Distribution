@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Date extends StObject {
   
-  var date: typings.std.Date | String
+  var date: js.Date | String
   
   var enableGridSwitch: Boolean
   
-  var initialDate: js.UndefOr[typings.std.Date] = js.undefined
+  var initialDate: js.UndefOr[js.Date] = js.undefined
   
   var locale: DateLocale
   
-  var maximumDate: typings.std.Date | Null
+  var maximumDate: js.Date | Null
   
-  var minimumDate: typings.std.Date | Null
+  var minimumDate: js.Date | Null
   
   var modifiers: Modifiers
   
@@ -28,7 +28,7 @@ trait Date extends StObject {
 object Date {
   
   inline def apply(
-    date: typings.std.Date | String,
+    date: js.Date | String,
     enableGridSwitch: Boolean,
     locale: DateLocale,
     modifiers: Modifiers,
@@ -40,21 +40,21 @@ object Date {
   
   extension [Self <: Date](x: Self) {
     
-    inline def setDate(value: typings.std.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setEnableGridSwitch(value: Boolean): Self = StObject.set(x, "enableGridSwitch", value.asInstanceOf[js.Any])
     
-    inline def setInitialDate(value: typings.std.Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+    inline def setInitialDate(value: js.Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
     
     inline def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
     
     inline def setLocale(value: DateLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    inline def setMaximumDate(value: typings.std.Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
+    inline def setMaximumDate(value: js.Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
     
     inline def setMaximumDateNull: Self = StObject.set(x, "maximumDate", null)
     
-    inline def setMinimumDate(value: typings.std.Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
+    inline def setMinimumDate(value: js.Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
     
     inline def setMinimumDateNull: Self = StObject.set(x, "minimumDate", null)
     

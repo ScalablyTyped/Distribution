@@ -1,6 +1,8 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.IHandle
+import typings.arcgisJsApi.arcgisJsApiStrings.`lasso-selection`
+import typings.arcgisJsApi.arcgisJsApiStrings.`rectangle-selection`
 import typings.arcgisJsApi.arcgisJsApiStrings.active
 import typings.arcgisJsApi.arcgisJsApiStrings.circle
 import typings.arcgisJsApi.arcgisJsApiStrings.continuous
@@ -35,10 +37,12 @@ trait Sketch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#activeTool)
     */
-  val activeTool: point | polyline | polygon | circle | rectangle | move | transform | reshape = js.native
+  val activeTool: point | polyline | polygon | circle | rectangle | move | transform | reshape | `rectangle-selection` | `lasso-selection` = js.native
   
   /**
     * Property controlling the visibility and order of create tool buttons.
+    *
+    * @default ["point", "polyline", "polygon", "rectangle", "circle"]
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#availableCreateTools)
     */
@@ -49,14 +53,22 @@ trait Sketch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#cancel)
     */
-  def cancel(): Unit = js.native
+  def cancel(): scala.Unit = js.native
   
   /**
     * Completes the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-update) event and changes the event's state to `complete`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#complete)
     */
-  def complete(): Unit = js.native
+  def complete(): scala.Unit = js.native
+  
+  /**
+    * Create a graphic with the geometry specified in the `tool` parameter.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
+    */
+  def create(tool: point | polyline | polygon | rectangle | circle): scala.Unit = js.native
+  def create(tool: point | polyline | polygon | rectangle | circle, createOptions: SketchCreateCreateOptions): scala.Unit = js.native
   
   /**
     * The graphic that is being created.
@@ -65,34 +77,10 @@ trait Sketch
     */
   val createGraphic: Graphic = js.native
   
-  @JSName("create")
-  def create_circle(tool: circle): Unit = js.native
-  @JSName("create")
-  def create_circle(tool: circle, createOptions: SketchCreateCreateOptions): Unit = js.native
-  /**
-    * Create a graphic with the geometry specified in the `tool` parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
-    */
-  @JSName("create")
-  def create_point(tool: point): Unit = js.native
-  @JSName("create")
-  def create_point(tool: point, createOptions: SketchCreateCreateOptions): Unit = js.native
-  @JSName("create")
-  def create_polygon(tool: polygon): Unit = js.native
-  @JSName("create")
-  def create_polygon(tool: polygon, createOptions: SketchCreateCreateOptions): Unit = js.native
-  @JSName("create")
-  def create_polyline(tool: polyline): Unit = js.native
-  @JSName("create")
-  def create_polyline(tool: polyline, createOptions: SketchCreateCreateOptions): Unit = js.native
-  @JSName("create")
-  def create_rectangle(tool: rectangle): Unit = js.native
-  @JSName("create")
-  def create_rectangle(tool: rectangle, createOptions: SketchCreateCreateOptions): Unit = js.native
-  
   /**
     * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed.
+    *
+    * @default continuous
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#creationMode)
     */
@@ -117,7 +105,7 @@ trait Sketch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#delete)
     */
-  def delete(): Unit = js.native
+  def delete(): scala.Unit = js.native
   
   /**
     * The Sketch widget's default CSS icon class.
@@ -125,6 +113,13 @@ trait Sketch
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#iconClass)
     */
   var iconClass: String = js.native
+  
+  /**
+    * Options to configure the labels shown next to each segment of the geometry being created or updated.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#labelOptions)
+    */
+  var labelOptions: SketchLabelOptions = js.native
   
   /**
     * The [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) associated with the Sketch widget.
@@ -135,6 +130,8 @@ trait Sketch
   
   /**
     * Determines the layout/orientation of the Sketch widget.
+    *
+    * @default horizontal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layout)
     */
@@ -156,7 +153,14 @@ trait Sketch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#redo)
     */
-  def redo(): Unit = js.native
+  def redo(): scala.Unit = js.native
+  
+  /**
+    * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for sketching.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#snappingOptions)
+    */
+  var snappingOptions: SnappingOptions = js.native
   
   /**
     * The Sketch widget's state.
@@ -166,21 +170,28 @@ trait Sketch
   val state: ready | disabled | active = js.native
   
   /**
+    * Options to configure the tooltip shown next to the cursor when creating or updating graphics.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#tooltipOptions)
+    */
+  var tooltipOptions: SketchTooltipOptions = js.native
+  
+  /**
     * Incrementally undo actions recorded in the stack.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#undo)
     */
-  def undo(): Unit = js.native
+  def undo(): scala.Unit = js.native
   
-  def update(graphics: js.Array[Graphic]): js.Promise[Unit] = js.native
-  def update(graphics: js.Array[Graphic], updateOptions: SketchUpdateUpdateOptions): js.Promise[Unit] = js.native
+  def update(graphics: js.Array[Graphic]): js.Promise[scala.Unit] = js.native
+  def update(graphics: js.Array[Graphic], updateOptions: SketchUpdateUpdateOptions): js.Promise[scala.Unit] = js.native
   /**
     * Initializes an update operation for the specified graphic(s) and fires [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-update) event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
     */
-  def update(graphics: Graphic): js.Promise[Unit] = js.native
-  def update(graphics: Graphic, updateOptions: SketchUpdateUpdateOptions): js.Promise[Unit] = js.native
+  def update(graphics: Graphic): js.Promise[scala.Unit] = js.native
+  def update(graphics: Graphic, updateOptions: SketchUpdateUpdateOptions): js.Promise[scala.Unit] = js.native
   
   /**
     * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) that are being updated by the Sketch widget.
@@ -202,4 +213,11 @@ trait Sketch
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#viewModel)
     */
   var viewModel: SketchViewModel = js.native
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#visibleElements)
+    */
+  var visibleElements: SketchVisibleElements = js.native
 }

@@ -53,7 +53,7 @@ object DescribeScheduledInstancesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object DescribeScheduledInstancesRequest {
     
     inline def setScheduledInstanceIdsUndefined: Self = StObject.set(x, "ScheduledInstanceIds", js.undefined)
     
-    inline def setScheduledInstanceIdsVarargs(value: ScheduledInstanceId*): Self = StObject.set(x, "ScheduledInstanceIds", js.Array(value :_*))
+    inline def setScheduledInstanceIdsVarargs(value: ScheduledInstanceId*): Self = StObject.set(x, "ScheduledInstanceIds", js.Array(value*))
     
     inline def setSlotStartTimeRange(value: SlotStartTimeRangeRequest): Self = StObject.set(x, "SlotStartTimeRange", value.asInstanceOf[js.Any])
     

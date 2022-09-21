@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoChartFormat")
 @js.native
-/* private */ class IMsoChartFormat ()
+/* private */ open class IMsoChartFormat ()
   extends StObject
      with typings.activexOffice.Office.IMsoChartFormat {
   
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Adjustments_Original: Adjustments = js.native
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var AutoShapeType: MsoAutoShapeType = js.native
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotIMsoChartFormat_typekey: typings.activexOffice.Office.IMsoChartFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PictureFormat: typings.activexOffice.Office.PictureFormat = js.native

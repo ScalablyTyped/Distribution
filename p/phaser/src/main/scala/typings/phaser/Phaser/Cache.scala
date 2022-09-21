@@ -24,7 +24,7 @@ object Cache {
       * @param key The unique key by which the data added to the cache will be referenced.
       * @param data The data to be stored in the cache.
       */
-    def add(key: String, data: js.Any): this.type
+    def add(key: String, data: Any): this.type
     
     /**
       * Destroys this cache and all items within it.
@@ -36,7 +36,7 @@ object Cache {
       * 
       * You can query the Map directly or use the BaseCache methods.
       */
-    var entries: Map[String, js.Any]
+    var entries: Map[String, Any]
     
     /**
       * An instance of EventEmitter used by the cache to emit related events.
@@ -54,7 +54,7 @@ object Cache {
       * Gets an item from this cache based on the given key.
       * @param key The unique key of the item to be retrieved from this cache.
       */
-    def get(key: String): js.Any
+    def get(key: String): Any
     
     /**
       * Returns all keys in use in this cache.
@@ -81,12 +81,12 @@ object Cache {
   object BaseCache {
     
     inline def apply(
-      add: (String, js.Any) => BaseCache,
+      add: (String, Any) => BaseCache,
       destroy: () => Unit,
-      entries: Map[String, js.Any],
+      entries: Map[String, Any],
       events: EventEmitter,
       exists: String => Boolean,
-      get: String => js.Any,
+      get: String => Any,
       getKeys: () => js.Array[String],
       has: String => Boolean,
       remove: String => BaseCache
@@ -97,17 +97,17 @@ object Cache {
     
     extension [Self <: BaseCache](x: Self) {
       
-      inline def setAdd(value: (String, js.Any) => BaseCache): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, Any) => BaseCache): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def setEntries(value: Map[String, js.Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: Map[String, Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
       inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
       
-      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
       inline def setGetKeys(value: () => js.Array[String]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
       

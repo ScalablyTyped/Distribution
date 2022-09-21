@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSasportal.anon
 
-import typings.maximMazurokGapiClientSasportal.gapi.client.sasportal.SasPortalTestPermissionsRequest
+import typings.maximMazurokGapiClientSasportal.gapi.client.sasportal.SasPortalSetPolicyRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +36,7 @@ trait PrettyPrintQuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SasPortalTestPermissionsRequest
+  var resource: SasPortalSetPolicyRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -46,7 +46,7 @@ trait PrettyPrintQuotaUser extends StObject {
 }
 object PrettyPrintQuotaUser {
   
-  inline def apply(resource: SasPortalTestPermissionsRequest): PrettyPrintQuotaUser = {
+  inline def apply(resource: SasPortalSetPolicyRequest): PrettyPrintQuotaUser = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintQuotaUser]
   }
@@ -89,7 +89,7 @@ object PrettyPrintQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SasPortalTestPermissionsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SasPortalSetPolicyRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

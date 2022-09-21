@@ -10,15 +10,15 @@ object singleDisposableMod {
   
   @JSImport("wonder-frp/dist/commonjs/Disposable/SingleDisposable", "SingleDisposable")
   @js.native
-  class SingleDisposable protected ()
+  open class SingleDisposable protected ()
     extends Entity
        with IDisposable {
     def this(dispose: js.Function) = this()
     def this(dispose: IDisposable) = this()
     
-    /* private */ var _disposable: js.Any = js.native
+    /* private */ var _disposable: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native

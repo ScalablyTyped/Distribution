@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "KeyMod")
 @js.native
-class KeyMod () extends StObject
+open class KeyMod () extends StObject
 /* static members */
 object KeyMod {
   

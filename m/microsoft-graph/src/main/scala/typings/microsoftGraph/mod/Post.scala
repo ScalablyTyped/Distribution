@@ -8,7 +8,7 @@ trait Post
   extends StObject
      with OutlookItem {
   
-  // Read-only. Nullable.
+  // Read-only. Nullable. Supports $expand.
   var attachments: js.UndefOr[NullableOption[js.Array[Attachment]]] = js.undefined
   
   // The contents of the post. This is a default property. This property can be null.
@@ -20,7 +20,7 @@ trait Post
   // Unique ID of the conversation thread. Read-only.
   var conversationThreadId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The collection of open extensions defined for the post. Read-only. Nullable.
+  // The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
   var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   /**
@@ -32,7 +32,7 @@ trait Post
   // Indicates whether the post has at least one attachment. This is a default property.
   var hasAttachments: js.UndefOr[Boolean] = js.undefined
   
-  // Read-only.
+  // Read-only. Supports $expand.
   var inReplyTo: js.UndefOr[NullableOption[Post]] = js.undefined
   
   // The collection of multi-value extended properties defined for the post. Read-only. Nullable.
@@ -43,7 +43,7 @@ trait Post
   
   /**
     * Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601
-    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var receivedDateTime: js.UndefOr[String] = js.undefined
   
@@ -71,7 +71,7 @@ object Post {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setBody(value: NullableOption[ItemBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object Post {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setFrom(value: Recipient): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
@@ -119,13 +119,13 @@ object Post {
     
     inline def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
-    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
+    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value*))
     
     inline def setNewParticipants(value: js.Array[Recipient]): Self = StObject.set(x, "newParticipants", value.asInstanceOf[js.Any])
     
     inline def setNewParticipantsUndefined: Self = StObject.set(x, "newParticipants", js.undefined)
     
-    inline def setNewParticipantsVarargs(value: Recipient*): Self = StObject.set(x, "newParticipants", js.Array(value :_*))
+    inline def setNewParticipantsVarargs(value: Recipient*): Self = StObject.set(x, "newParticipants", js.Array(value*))
     
     inline def setReceivedDateTime(value: String): Self = StObject.set(x, "receivedDateTime", value.asInstanceOf[js.Any])
     
@@ -143,6 +143,6 @@ object Post {
     
     inline def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
-    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
+    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value*))
   }
 }

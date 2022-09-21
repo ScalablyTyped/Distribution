@@ -34,7 +34,7 @@ trait FetchOptions extends StObject {
     * The callback function that will be invoked with the data from the
     * specified endpoint when the endpoint changes.
     */
-  var `then`: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var `then`: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
 }
 object FetchOptions {
   
@@ -59,7 +59,7 @@ object FetchOptions {
     
     inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    inline def setThen(value: /* result */ js.Any => Unit): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+    inline def setThen(value: /* result */ Any => Unit): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
     
     inline def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }

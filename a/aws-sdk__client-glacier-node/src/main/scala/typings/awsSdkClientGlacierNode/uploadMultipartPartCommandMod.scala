@@ -17,7 +17,7 @@ object uploadMultipartPartCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/UploadMultipartPartCommand", "UploadMultipartPartCommand")
   @js.native
-  class UploadMultipartPartCommand protected ()
+  open class UploadMultipartPartCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -35,14 +35,14 @@ object uploadMultipartPartCommandMod {
     override val middlewareStack: MiddlewareStack[UploadMultipartPartInput[Readable], UploadMultipartPartOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: GlacierResolvedConfiguration
     ): Handler[UploadMultipartPartInput[Readable], UploadMultipartPartOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: GlacierResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UploadMultipartPartInput[Readable], UploadMultipartPartOutput] = js.native
   }
 }

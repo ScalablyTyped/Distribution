@@ -20,11 +20,11 @@ trait RequestDefinition
   
   var proxy: js.UndefOr[ProxyConfigDefinition] = js.undefined
   
-  var url: String | Url
+  var url: String | UrlDefinition
 }
 object RequestDefinition {
   
-  inline def apply(url: String | Url): RequestDefinition = {
+  inline def apply(url: String | UrlDefinition): RequestDefinition = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDefinition]
   }
@@ -47,7 +47,7 @@ object RequestDefinition {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setHeaderVarargs(value: HeaderDefinition*): Self = StObject.set(x, "header", js.Array(value :_*))
+    inline def setHeaderVarargs(value: HeaderDefinition*): Self = StObject.set(x, "header", js.Array(value*))
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
@@ -57,6 +57,6 @@ object RequestDefinition {
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    inline def setUrl(value: String | Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | UrlDefinition): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

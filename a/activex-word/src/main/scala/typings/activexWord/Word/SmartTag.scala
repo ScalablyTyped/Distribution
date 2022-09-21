@@ -16,7 +16,7 @@ trait SmartTag extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Properties: CustomProperties
   
@@ -41,7 +41,7 @@ object SmartTag {
     Delete: () => Unit,
     DownloadURL: String,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Properties: CustomProperties,
     Range: Range,
     Select: () => Unit,
@@ -67,7 +67,7 @@ object SmartTag {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: CustomProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     

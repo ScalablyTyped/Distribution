@@ -33,6 +33,6 @@ object AccountAttribute {
     
     inline def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
     
-    inline def setAttributeValuesVarargs(value: AccountAttributeValue*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
+    inline def setAttributeValuesVarargs(value: AccountAttributeValue*): Self = StObject.set(x, "AttributeValues", js.Array(value*))
   }
 }

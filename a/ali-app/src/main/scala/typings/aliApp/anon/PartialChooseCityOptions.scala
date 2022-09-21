@@ -10,9 +10,9 @@ trait PartialChooseCityOptions extends StObject {
   
   var cities: js.UndefOr[js.Array[City]] = js.undefined
   
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function1[/* res */ Any, Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function1[/* res */ Any, Unit]] = js.undefined
   
   var hotCities: js.UndefOr[js.Array[City]] = js.undefined
   
@@ -35,13 +35,13 @@ object PartialChooseCityOptions {
     
     inline def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
-    inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value :_*))
+    inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value*))
     
-    inline def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setFail(value: /* res */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
@@ -49,7 +49,7 @@ object PartialChooseCityOptions {
     
     inline def setHotCitiesUndefined: Self = StObject.set(x, "hotCities", js.undefined)
     
-    inline def setHotCitiesVarargs(value: City*): Self = StObject.set(x, "hotCities", js.Array(value :_*))
+    inline def setHotCitiesVarargs(value: City*): Self = StObject.set(x, "hotCities", js.Array(value*))
     
     inline def setShowHotCities(value: Boolean): Self = StObject.set(x, "showHotCities", value.asInstanceOf[js.Any])
     

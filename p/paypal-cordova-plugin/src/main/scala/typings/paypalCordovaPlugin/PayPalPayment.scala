@@ -106,7 +106,7 @@ object PayPalPayment {
     
     inline def setItems(value: js.Array[PayPalItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: PayPalItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PayPalItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setShippingAddress(value: PayPalShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.Observable")
 @js.native
-class Observable_ ()
+open class Observable_ ()
   extends StObject
      with Observable
 object Observable_ {

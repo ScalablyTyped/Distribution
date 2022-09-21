@@ -12,7 +12,7 @@ object geometryBufferRendererSceneComponentMod {
   
   @JSImport("babylonjs/Rendering/geometryBufferRendererSceneComponent", "GeometryBufferRendererSceneComponent")
   @js.native
-  class GeometryBufferRendererSceneComponent protected ()
+  open class GeometryBufferRendererSceneComponent protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -21,7 +21,7 @@ object geometryBufferRendererSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _gatherRenderTargets: js.Any = js.native
+    /* private */ var _gatherRenderTargets: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.
@@ -72,10 +72,13 @@ object geometryBufferRendererSceneComponentMod {
       /**
         * Enables a GeometryBufferRender and associates it with the scene
         * @param ratio defines the scaling ratio to apply to the renderer (1 by default which means same resolution)
+        * @param depthFormat Format of the depth texture (default: Constants.TEXTUREFORMAT_DEPTH16)
         * @returns the GeometryBufferRenderer
         */
       def enableGeometryBufferRenderer(): Nullable[GeometryBufferRenderer] = js.native
       def enableGeometryBufferRenderer(ratio: Double): Nullable[GeometryBufferRenderer] = js.native
+      def enableGeometryBufferRenderer(ratio: Double, depthFormat: Double): Nullable[GeometryBufferRenderer] = js.native
+      def enableGeometryBufferRenderer(ratio: Unit, depthFormat: Double): Nullable[GeometryBufferRenderer] = js.native
       
       /**
         * Gets or Sets the current geometry buffer associated to the scene.

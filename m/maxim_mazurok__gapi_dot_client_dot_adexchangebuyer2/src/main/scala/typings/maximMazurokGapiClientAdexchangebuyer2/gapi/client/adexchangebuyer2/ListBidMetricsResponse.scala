@@ -28,7 +28,7 @@ object ListBidMetricsResponse {
     
     inline def setBidMetricsRowsUndefined: Self = StObject.set(x, "bidMetricsRows", js.undefined)
     
-    inline def setBidMetricsRowsVarargs(value: BidMetricsRow*): Self = StObject.set(x, "bidMetricsRows", js.Array(value :_*))
+    inline def setBidMetricsRowsVarargs(value: BidMetricsRow*): Self = StObject.set(x, "bidMetricsRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

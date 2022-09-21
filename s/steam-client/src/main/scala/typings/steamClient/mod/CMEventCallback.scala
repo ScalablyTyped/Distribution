@@ -1,7 +1,6 @@
 package typings.steamClient.mod
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import typings.steamClient.anon.Msg
 import typings.steamClient.steamClientBooleans.`false`
 import org.scalablytyped.runtime.StObject
@@ -26,7 +25,7 @@ trait CMEventCallback extends StObject {
     *
     * @param err An Error object. May contain an eresult property.
     */
-  def error(err: Error): Unit
+  def error(err: js.Error): Unit
   
   /**
     * Logon response received. If eresult is EResult.OK, loggedOn is now true.
@@ -52,7 +51,7 @@ trait CMEventCallback extends StObject {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any
+  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ Any
   ): Unit
   def message(
     /**
@@ -64,11 +63,11 @@ trait CMEventCallback extends StObject {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
+  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ Any,
     /**
     * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
     */
-  callback: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias steam-client.steam-client.SendMessage */ js.Object
+  callback: SendMessage
   ): Unit
   def message(
     /**
@@ -96,7 +95,7 @@ trait CMEventCallback extends StObject {
     /**
     * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
     */
-  callback: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias steam-client.steam-client.SendMessage */ js.Object
+  callback: SendMessage
   ): Unit
   @JSName("message")
   var message_Original: SendMessage
@@ -111,7 +110,7 @@ trait CMEventCallback extends StObject {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
+  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ Any,
     /**
     * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
     */
@@ -150,15 +149,13 @@ object CMEventCallback {
   
   inline def apply(
     connected: String => Unit,
-    error: Error => Unit,
+    error: js.Error => Unit,
     logOnResponse: CMsgClientLogonResponse => Unit,
     loggedOff: EResult => Unit,
-    message: (/* header */ Msg, /* body */ Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any), /* callback */ js.UndefOr[
-      (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias steam-client.steam-client.SendMessage */ js.Object) | `false`
-    ]) => Unit,
+    message: SendMessage,
     servers: js.Array[Server] => Unit
   ): CMEventCallback = {
-    val __obj = js.Dynamic.literal(connected = js.Any.fromFunction1(connected), error = js.Any.fromFunction1(error), logOnResponse = js.Any.fromFunction1(logOnResponse), loggedOff = js.Any.fromFunction1(loggedOff), message = js.Any.fromFunction3(message), servers = js.Any.fromFunction1(servers))
+    val __obj = js.Dynamic.literal(connected = js.Any.fromFunction1(connected), error = js.Any.fromFunction1(error), logOnResponse = js.Any.fromFunction1(logOnResponse), loggedOff = js.Any.fromFunction1(loggedOff), message = message.asInstanceOf[js.Any], servers = js.Any.fromFunction1(servers))
     __obj.asInstanceOf[CMEventCallback]
   }
   
@@ -166,17 +163,13 @@ object CMEventCallback {
     
     inline def setConnected(value: String => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
     
-    inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setLogOnResponse(value: CMsgClientLogonResponse => Unit): Self = StObject.set(x, "logOnResponse", js.Any.fromFunction1(value))
     
     inline def setLoggedOff(value: EResult => Unit): Self = StObject.set(x, "loggedOff", js.Any.fromFunction1(value))
     
-    inline def setMessage(
-      value: (/* header */ Msg, /* body */ Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any), /* callback */ js.UndefOr[
-          (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias steam-client.steam-client.SendMessage */ js.Object) | `false`
-        ]) => Unit
-    ): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
+    inline def setMessage(value: SendMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setServers(value: js.Array[Server] => Unit): Self = StObject.set(x, "servers", js.Any.fromFunction1(value))
   }

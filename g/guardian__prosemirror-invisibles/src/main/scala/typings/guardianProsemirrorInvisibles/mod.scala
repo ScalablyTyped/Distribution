@@ -1,6 +1,5 @@
 package typings.guardianProsemirrorInvisibles
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorState.mod.Plugin
 import typings.prosemirrorView.mod.Decoration
@@ -15,31 +14,31 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(builders: js.Array[Builder]): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(builders.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
+  inline def default(builders: js.Array[Builder]): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(builders.asInstanceOf[js.Any]).asInstanceOf[Plugin[Any]]
   
   inline def character(`type`: String): js.Function1[/* predicate */ js.Function1[/* char */ String, Boolean], Builder] = ^.asInstanceOf[js.Dynamic].applyDynamic("character")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* predicate */ js.Function1[/* char */ String, Boolean], Builder]]
   
-  inline def createDeco(pos: Double, `type`: String): Decoration[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeco")(pos.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Decoration[StringDictionary[js.Any]]]
+  inline def createDeco(pos: Double, `type`: String): Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeco")(pos.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Decoration]
   
   inline def hardBreak(): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("hardBreak")().asInstanceOf[Builder]
-  inline def hardBreak(predicate: js.Function1[/* node */ Node[js.Any], Boolean]): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("hardBreak")(predicate.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def hardBreak(predicate: js.Function1[/* node */ Node, Boolean]): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("hardBreak")(predicate.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
-  inline def node(`type`: String, toPosition: js.Function2[/* node */ Node[js.Any], /* pos */ Double, Double]): js.Function1[/* predicate */ js.Function1[/* node */ Node[js.Any], Boolean], Builder] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(`type`.asInstanceOf[js.Any], toPosition.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* predicate */ js.Function1[/* node */ Node[js.Any], Boolean], Builder]]
+  inline def node(`type`: String, toPosition: js.Function2[/* node */ Node, /* pos */ Double, Double]): js.Function1[/* predicate */ js.Function1[/* node */ Node, Boolean], Builder] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(`type`.asInstanceOf[js.Any], toPosition.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* predicate */ js.Function1[/* node */ Node, Boolean], Builder]]
   
   inline def paragraph(): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("paragraph")().asInstanceOf[Builder]
-  inline def paragraph(predicate: js.Function1[/* node */ Node[js.Any], Boolean]): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("paragraph")(predicate.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def paragraph(predicate: js.Function1[/* node */ Node, Boolean]): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("paragraph")(predicate.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
   inline def space(): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("space")().asInstanceOf[Builder]
   inline def space(predicate: js.Function1[/* char */ String, Boolean]): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("space")(predicate.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
-  inline def textBetween(from: Double, to: Double, doc: Node[js.Any]): js.Array[TextBetweenPosition] = (^.asInstanceOf[js.Dynamic].applyDynamic("textBetween")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextBetweenPosition]]
+  inline def textBetween(from: Double, to: Double, doc: Node): js.Array[TextBetweenPosition] = (^.asInstanceOf[js.Dynamic].applyDynamic("textBetween")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextBetweenPosition]]
   
   type Builder = js.Function4[
     /* from */ Double, 
     /* to */ Double, 
-    /* doc */ Node[js.Any], 
-    /* decos */ DecorationSet[js.Any], 
-    DecorationSet[js.Any]
+    /* doc */ Node, 
+    /* decos */ DecorationSet, 
+    DecorationSet
   ]
   
   trait TextBetweenPosition extends StObject {

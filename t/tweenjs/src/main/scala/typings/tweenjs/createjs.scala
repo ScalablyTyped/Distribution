@@ -186,10 +186,10 @@ object createjs {
     extends StObject
        with AbstractTween {
     
-    def call(callback: js.Function1[/* repeated */ js.Any, Unit]): Tween = js.native
-    def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[js.Any]): Tween = js.native
-    def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[js.Any], scope: js.Any): Tween = js.native
-    def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: Unit, scope: js.Any): Tween = js.native
+    def call(callback: js.Function1[/* repeated */ Any, Unit]): Tween = js.native
+    def call(callback: js.Function1[/* repeated */ Any, Unit], params: js.Array[Any]): Tween = js.native
+    def call(callback: js.Function1[/* repeated */ Any, Unit], params: js.Array[Any], scope: Any): Tween = js.native
+    def call(callback: js.Function1[/* repeated */ Any, Unit], params: Unit, scope: Any): Tween = js.native
     
     def label(name: String): Tween = js.native
     
@@ -201,18 +201,18 @@ object createjs {
     def play(): Tween = js.native
     def play(tween: Tween): Tween = js.native
     
-    var pluginData: js.Any = js.native
+    var pluginData: Any = js.native
     
-    def set(props: js.Any): Tween = js.native
-    def set(props: js.Any, target: js.Any): Tween = js.native
+    def set(props: Any): Tween = js.native
+    def set(props: Any, target: Any): Tween = js.native
     
     // properties
-    var target: js.Any = js.native
+    var target: Any = js.native
     
-    def to(props: js.Any): Tween = js.native
-    def to(props: js.Any, duration: Double): Tween = js.native
-    def to(props: js.Any, duration: Double, ease: js.Function): Tween = js.native
-    def to(props: js.Any, duration: Unit, ease: js.Function): Tween = js.native
+    def to(props: Any): Tween = js.native
+    def to(props: Any, duration: Double): Tween = js.native
+    def to(props: Any, duration: Double, ease: js.Function): Tween = js.native
+    def to(props: Any, duration: Unit, ease: js.Function): Tween = js.native
     
     def wait(duration: Double): Tween = js.native
     def wait(duration: Double, passive: Boolean): Tween = js.native
@@ -226,11 +226,11 @@ object createjs {
     
     var next: TweenAction
     
-    var params: js.Array[js.Any]
+    var params: js.Array[Any]
     
     var prev: TweenAction
     
-    var scope: js.Any
+    var scope: Any
     
     var t: Double
   }
@@ -240,9 +240,9 @@ object createjs {
       d: Double,
       funct: js.Function,
       next: TweenAction,
-      params: js.Array[js.Any],
+      params: js.Array[Any],
       prev: TweenAction,
-      scope: js.Any,
+      scope: Any,
       t: Double
     ): TweenAction = {
       val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], funct = funct.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
@@ -257,13 +257,13 @@ object createjs {
       
       inline def setNext(value: TweenAction): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setPrev(value: TweenAction): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
@@ -287,7 +287,7 @@ object createjs {
     
     var paused: js.UndefOr[Boolean] = js.undefined
     
-    var pluginData: js.UndefOr[js.Any] = js.undefined
+    var pluginData: js.UndefOr[Any] = js.undefined
     
     var position: js.UndefOr[Double] = js.undefined
     
@@ -334,7 +334,7 @@ object createjs {
       
       inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      inline def setPluginData(value: js.Any): Self = StObject.set(x, "pluginData", value.asInstanceOf[js.Any])
+      inline def setPluginData(value: Any): Self = StObject.set(x, "pluginData", value.asInstanceOf[js.Any])
       
       inline def setPluginDataUndefined: Self = StObject.set(x, "pluginData", js.undefined)
       

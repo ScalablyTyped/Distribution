@@ -19,8 +19,8 @@ trait IDelayedTask extends StObject {
   var delay: js.UndefOr[
     js.Function4[
       /* newDelay */ js.UndefOr[Double], 
-      /* newFn */ js.UndefOr[js.Any], 
-      /* newScope */ js.UndefOr[js.Any], 
+      /* newFn */ js.UndefOr[Any], 
+      /* newScope */ js.UndefOr[Any], 
       /* newArgs */ js.UndefOr[Array], 
       Unit
     ]
@@ -43,7 +43,7 @@ object IDelayedTask {
     inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     inline def setDelay(
-      value: (/* newDelay */ js.UndefOr[Double], /* newFn */ js.UndefOr[js.Any], /* newScope */ js.UndefOr[js.Any], /* newArgs */ js.UndefOr[Array]) => Unit
+      value: (/* newDelay */ js.UndefOr[Double], /* newFn */ js.UndefOr[Any], /* newScope */ js.UndefOr[Any], /* newArgs */ js.UndefOr[Array]) => Unit
     ): Self = StObject.set(x, "delay", js.Any.fromFunction4(value))
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)

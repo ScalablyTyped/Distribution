@@ -9,7 +9,13 @@ trait ScriptingProvider
   extends StObject
      with DataProvider {
   
-  def registerOnScriptingComplete(handler: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, js.Any]): Unit
+  /**
+    * Registers a handler for ScriptingComplete events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnScriptingComplete(handler: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, Any]): Unit
   
   def scriptAsOperation(
     connectionUri: String,
@@ -22,7 +28,7 @@ object ScriptingProvider {
   
   inline def apply(
     providerId: String,
-    registerOnScriptingComplete: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, js.Any] => Unit,
+    registerOnScriptingComplete: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, Any] => Unit,
     scriptAsOperation: (String, ScriptOperation, ObjectMetadata, ScriptingParamDetails) => Thenable[ScriptingResult]
   ): ScriptingProvider = {
     val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any], registerOnScriptingComplete = js.Any.fromFunction1(registerOnScriptingComplete), scriptAsOperation = js.Any.fromFunction4(scriptAsOperation))
@@ -31,7 +37,7 @@ object ScriptingProvider {
   
   extension [Self <: ScriptingProvider](x: Self) {
     
-    inline def setRegisterOnScriptingComplete(value: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, js.Any] => Unit): Self = StObject.set(x, "registerOnScriptingComplete", js.Any.fromFunction1(value))
+    inline def setRegisterOnScriptingComplete(value: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, Any] => Unit): Self = StObject.set(x, "registerOnScriptingComplete", js.Any.fromFunction1(value))
     
     inline def setScriptAsOperation(
       value: (String, ScriptOperation, ObjectMetadata, ScriptingParamDetails) => Thenable[ScriptingResult]

@@ -4,19 +4,19 @@
 Typings are for version 2.2
 
 ## Library description:
-Basic logging mechanism for Node 6.10+ Lambda Functions
+Lightweight logging library for any Node 10+ applications
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lambda-log |
-| Keywords           | lambda, aws, log, logger, console, wrap, wrapper, node6.10, error, warn, info, message, assert, json, cloudwatch, logs |
-| # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 783855 |
-| # stars            | 1 |
+| Keywords           | json, lambda, aws, log, logger, logging, console, wrap, wrapper, node, error, warn, info, debug, message, assert, ec2, ecs, cloudwatch, logs, function, cloud |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 185579.33333333334 |
+| # stars            | 165.0 |
 
 ## Links
-- [Homepage](https://github.com/KyleRoss/node-lambda-log#readme)
+- [Homepage](https://lambdalog.dev)
 - [Bugs](https://github.com/KyleRoss/node-lambda-log/issues)
 - [Repository](https://github.com/KyleRoss/node-lambda-log)
 - [Npm](https://www.npmjs.com/package/lambda-log)

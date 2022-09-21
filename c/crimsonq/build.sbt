@@ -1,0 +1,15 @@
+organization := "org.scalablytyped"
+name := "crimsonq"
+version := "0.5-dt-20220329Z-e93769"
+scalaVersion := "3.1.2"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "denque" % "2.1.0-42158f",
+  "org.scalablytyped" %%% "ioredis" % "5.2.3-f4e13a",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "redis-errors" % "1.2-dt-20211202Z-6fd284",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
+publishArtifact in packageDoc := false
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

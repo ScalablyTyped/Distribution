@@ -10,10 +10,10 @@ object editMod {
   
   @JSImport("material-ui/svg-icons/image/edit", JSImport.Default)
   @js.native
-  class default () extends ImageEdit
+  open class default () extends ImageEdit
   
   @JSImport("material-ui/svg-icons/image/edit", "ImageEdit")
   @js.native
-  class ImageEdit ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageEdit ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

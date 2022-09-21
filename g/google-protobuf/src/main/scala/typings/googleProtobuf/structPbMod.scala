@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Map
 import typings.googleProtobuf.mod.Message
 import typings.googleProtobuf.structPbMod.Value.KindCase
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object structPbMod {
   
   @JSImport("google-protobuf/google/protobuf/struct_pb", "ListValue")
   @js.native
-  class ListValue () extends Message {
+  open class ListValue () extends Message {
     
     def addValues(): Value = js.native
     def addValues(value: Unit, index: Double): Value = js.native
@@ -40,7 +39,7 @@ object structPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): ListValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ListValue]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): ListValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ListValue]
     
     inline def deserializeBinaryFromReader(message: ListValue, reader: BinaryReader): ListValue = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ListValue]
     
@@ -76,7 +75,7 @@ object structPbMod {
         
         inline def setValuesList(value: js.Array[typings.googleProtobuf.structPbMod.Value.AsObject]): Self = StObject.set(x, "valuesList", value.asInstanceOf[js.Any])
         
-        inline def setValuesListVarargs(value: typings.googleProtobuf.structPbMod.Value.AsObject*): Self = StObject.set(x, "valuesList", js.Array(value :_*))
+        inline def setValuesListVarargs(value: typings.googleProtobuf.structPbMod.Value.AsObject*): Self = StObject.set(x, "valuesList", js.Array(value*))
       }
     }
   }
@@ -99,7 +98,7 @@ object structPbMod {
   
   @JSImport("google-protobuf/google/protobuf/struct_pb", "Struct")
   @js.native
-  class Struct () extends Message {
+  open class Struct () extends Message {
     
     def clearFieldsMap(): Struct = js.native
     
@@ -114,7 +113,7 @@ object structPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): Struct = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Struct]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Struct = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Struct]
     
     inline def deserializeBinaryFromReader(message: Struct, reader: BinaryReader): Struct = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Struct]
     
@@ -150,14 +149,14 @@ object structPbMod {
         
         inline def setFieldsMap(value: js.Array[js.Tuple2[String, typings.googleProtobuf.structPbMod.Value.AsObject]]): Self = StObject.set(x, "fieldsMap", value.asInstanceOf[js.Any])
         
-        inline def setFieldsMapVarargs(value: (js.Tuple2[String, typings.googleProtobuf.structPbMod.Value.AsObject])*): Self = StObject.set(x, "fieldsMap", js.Array(value :_*))
+        inline def setFieldsMapVarargs(value: (js.Tuple2[String, typings.googleProtobuf.structPbMod.Value.AsObject])*): Self = StObject.set(x, "fieldsMap", js.Array(value*))
       }
     }
   }
   
   @JSImport("google-protobuf/google/protobuf/struct_pb", "Value")
   @js.native
-  class Value () extends Message {
+  open class Value () extends Message {
     
     def clearBoolValue(): Value = js.native
     
@@ -272,7 +271,7 @@ object structPbMod {
       /* 5 */ val STRUCT_VALUE: typings.googleProtobuf.structPbMod.Value.KindCase.STRUCT_VALUE & Double = js.native
     }
     
-    inline def deserializeBinary(bytes: Uint8Array): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Value]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Value]
     
     inline def deserializeBinaryFromReader(message: Value, reader: BinaryReader): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Value]
     
@@ -335,5 +334,5 @@ object structPbMod {
     }
   }
   
-  type JavaScriptValue = Null | Double | String | Boolean | js.Array[js.Any] | js.Object
+  type JavaScriptValue = Null | Double | String | Boolean | js.Array[Any] | js.Object
 }

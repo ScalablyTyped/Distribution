@@ -10,15 +10,12 @@ Standalone node server and express integration for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/node-server |
 | Keywords           | polly, pollyjs, server, record, replay, express |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 1133999 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 304729.6666666667 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fnode-server)
     
 

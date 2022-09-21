@@ -43,7 +43,7 @@ object Provider {
   
   @JSGlobal("Windows.Storage.Provider.CachedFileUpdater")
   @js.native
-  class CachedFileUpdater ()
+  open class CachedFileUpdater ()
     extends StObject
        with typings.winrt.Windows.Storage.Provider.CachedFileUpdater
   /* static members */
@@ -64,15 +64,15 @@ object Provider {
   
   @JSGlobal("Windows.Storage.Provider.CachedFileUpdaterUI")
   @js.native
-  class CachedFileUpdaterUI ()
+  open class CachedFileUpdaterUI ()
     extends StObject
        with typings.winrt.Windows.Storage.Provider.CachedFileUpdaterUI {
     
     /* CompleteClass */
-    var onfileupdaterequested: js.Any = js.native
+    var onfileupdaterequested: Any = js.native
     
     /* CompleteClass */
-    var onuirequested: js.Any = js.native
+    var onuirequested: Any = js.native
     
     /* CompleteClass */
     var title: String = js.native
@@ -86,7 +86,7 @@ object Provider {
   
   @JSGlobal("Windows.Storage.Provider.FileUpdateRequest")
   @js.native
-  class FileUpdateRequest ()
+  open class FileUpdateRequest ()
     extends StObject
        with typings.winrt.Windows.Storage.Provider.FileUpdateRequest {
     
@@ -108,7 +108,7 @@ object Provider {
   
   @JSGlobal("Windows.Storage.Provider.FileUpdateRequestDeferral")
   @js.native
-  class FileUpdateRequestDeferral ()
+  open class FileUpdateRequestDeferral ()
     extends StObject
        with typings.winrt.Windows.Storage.Provider.FileUpdateRequestDeferral {
     
@@ -118,7 +118,7 @@ object Provider {
   
   @JSGlobal("Windows.Storage.Provider.FileUpdateRequestedEventArgs")
   @js.native
-  class FileUpdateRequestedEventArgs ()
+  open class FileUpdateRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Storage.Provider.FileUpdateRequestedEventArgs {
     

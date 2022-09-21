@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-elemental", "TextField")
 @js.native
-class TextField protected ()
-  extends Component[TextFieldProps, js.Object, js.Any] {
+open class TextField protected ()
+  extends Component[TextFieldProps, js.Object, Any] {
   def this(props: TextFieldProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TextFieldProps, context: js.Any) = this()
+  def this(props: TextFieldProps, context: Any) = this()
 }

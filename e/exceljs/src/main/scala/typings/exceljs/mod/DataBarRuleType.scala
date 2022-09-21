@@ -60,7 +60,7 @@ object DataBarRuleType {
     
     inline def setCfvoUndefined: Self = StObject.set(x, "cfvo", js.undefined)
     
-    inline def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value :_*))
+    inline def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value*))
     
     inline def setDirection(value: context | leftToRight | rightToLeft): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

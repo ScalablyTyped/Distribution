@@ -9,12 +9,12 @@ trait SchemaMemoryInfo extends StObject {
   /**
     * Maximum memory that can be allocated to the process in KiB
     */
-  var memoryCapInKibibyte: js.UndefOr[String] = js.undefined
+  var memoryCapInKibibyte: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Total memory available on the device in KiB
     */
-  var memoryTotalInKibibyte: js.UndefOr[String] = js.undefined
+  var memoryTotalInKibibyte: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMemoryInfo {
   
@@ -27,9 +27,13 @@ object SchemaMemoryInfo {
     
     inline def setMemoryCapInKibibyte(value: String): Self = StObject.set(x, "memoryCapInKibibyte", value.asInstanceOf[js.Any])
     
+    inline def setMemoryCapInKibibyteNull: Self = StObject.set(x, "memoryCapInKibibyte", null)
+    
     inline def setMemoryCapInKibibyteUndefined: Self = StObject.set(x, "memoryCapInKibibyte", js.undefined)
     
     inline def setMemoryTotalInKibibyte(value: String): Self = StObject.set(x, "memoryTotalInKibibyte", value.asInstanceOf[js.Any])
+    
+    inline def setMemoryTotalInKibibyteNull: Self = StObject.set(x, "memoryTotalInKibibyte", null)
     
     inline def setMemoryTotalInKibibyteUndefined: Self = StObject.set(x, "memoryTotalInKibibyte", js.undefined)
   }

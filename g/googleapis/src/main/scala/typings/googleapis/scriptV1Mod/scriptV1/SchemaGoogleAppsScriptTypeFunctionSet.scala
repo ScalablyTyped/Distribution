@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A set of functions. No duplicates are permitted.
-  */
 trait SchemaGoogleAppsScriptTypeFunctionSet extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaGoogleAppsScriptTypeFunctionSet {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: SchemaGoogleAppsScriptTypeFunction*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaGoogleAppsScriptTypeFunction*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object XShapeCombiner {
   inline def apply(
     acquire: () => Unit,
     combine: XShapes => XShape,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     split: XShape => Unit
   ): XShapeCombiner = {

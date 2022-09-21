@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ChartAxisCategoryType extends StObject
 /**
-  *
   * Specifies the type of the category axis.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisCategoryType")
@@ -18,7 +18,8 @@ object ChartAxisCategoryType extends StObject {
   
   /**
     * Excel controls the axis type.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait automatic
@@ -27,7 +28,8 @@ object ChartAxisCategoryType extends StObject {
   
   /**
     * Axis groups data on a time scale.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait dateAxis
@@ -36,7 +38,8 @@ object ChartAxisCategoryType extends StObject {
   
   /**
     * Axis groups data by an arbitrary set of categories.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait textAxis

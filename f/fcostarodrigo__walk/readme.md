@@ -10,15 +10,12 @@ Transverse files recursively
 | ------------------ | :-------------: |
 | Full name          | @fcostarodrigo/walk |
 | Keywords           | transverse, files, recursively, list, fs |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 4295 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 868.6666666666666 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/fcostarodrigo/walk#readme)
-- [Bugs](https://github.com/fcostarodrigo/walk/issues)
-- [Repository](https://github.com/fcostarodrigo/walk)
 - [Npm](https://www.npmjs.com/package/%40fcostarodrigo%2Fwalk)
     
 

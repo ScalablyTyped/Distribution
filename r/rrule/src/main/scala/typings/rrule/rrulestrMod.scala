@@ -2,22 +2,22 @@ package typings.rrule
 
 import typings.rrule.anon.Dtstart
 import typings.rrule.anon.PartialRRuleStrOptions
-import typings.rrule.rruleMod.default
-import typings.std.Date
+import typings.rrule.rruleMod.RRule
+import typings.rrule.rrulesetMod.RRuleSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rrulestrMod {
   
-  @JSImport("rrule/dist/esm/src/rrulestr", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/rrulestr", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def parseInput(s: String, options: PartialRRuleStrOptions): Dtstart = (^.asInstanceOf[js.Dynamic].applyDynamic("parseInput")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dtstart]
   
-  inline def rrulestr(s: String): default | typings.rrule.rrulesetMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any]).asInstanceOf[default | typings.rrule.rrulesetMod.default]
-  inline def rrulestr(s: String, options: PartialRRuleStrOptions): default | typings.rrule.rrulesetMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[default | typings.rrule.rrulesetMod.default]
+  inline def rrulestr(s: String): RRule | RRuleSet = ^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any]).asInstanceOf[RRule | RRuleSet]
+  inline def rrulestr(s: String, options: PartialRRuleStrOptions): RRule | RRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RRule | RRuleSet]
   
   trait RRuleStrOptions extends StObject {
     
@@ -25,7 +25,7 @@ object rrulestrMod {
     
     var compatible: Boolean
     
-    var dtstart: Date | Null
+    var dtstart: js.Date | Null
     
     var forceset: Boolean
     
@@ -46,7 +46,7 @@ object rrulestrMod {
       
       inline def setCompatible(value: Boolean): Self = StObject.set(x, "compatible", value.asInstanceOf[js.Any])
       
-      inline def setDtstart(value: Date): Self = StObject.set(x, "dtstart", value.asInstanceOf[js.Any])
+      inline def setDtstart(value: js.Date): Self = StObject.set(x, "dtstart", value.asInstanceOf[js.Any])
       
       inline def setDtstartNull: Self = StObject.set(x, "dtstart", null)
       

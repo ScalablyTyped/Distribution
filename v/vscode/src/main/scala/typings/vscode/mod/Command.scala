@@ -10,11 +10,11 @@ trait Command extends StObject {
     * Arguments that the command handler should be
     * invoked with.
     */
-  var arguments: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var arguments: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * The identifier of the actual command handler.
-    * @see [commands.registerCommand](#commands.registerCommand).
+    * @see {@link commands.registerCommand}
     */
   var command: String
   
@@ -37,11 +37,11 @@ object Command {
   
   extension [Self <: Command](x: Self) {
     
-    inline def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Any*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

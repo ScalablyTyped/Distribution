@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object animationFrameMod {
   
-  @JSImport("rxjs/internal/scheduler/animationFrame", "animationFrame")
+  @JSImport("rxjs/dist/types/internal/scheduler/animationFrame", "animationFrame")
   @js.native
   val animationFrame: AnimationFrameScheduler = js.native
   
-  @JSImport("rxjs/internal/scheduler/animationFrame", "animationFrameScheduler")
+  @JSImport("rxjs/dist/types/internal/scheduler/animationFrame", "animationFrameScheduler")
   @js.native
   val animationFrameScheduler: AnimationFrameScheduler = js.native
 }

@@ -8,13 +8,13 @@ object mod {
   
   @JSImport("events", "EventEmitter")
   @js.native
-  class EventEmitter () extends StObject {
+  open class EventEmitter () extends StObject {
     
     def addListener(`type`: String, listener: Listener): this.type = js.native
     def addListener(`type`: Double, listener: Listener): this.type = js.native
     
-    def emit(`type`: String, args: js.Any*): Boolean = js.native
-    def emit(`type`: Double, args: js.Any*): Boolean = js.native
+    def emit(`type`: String, args: Any*): Boolean = js.native
+    def emit(`type`: Double, args: Any*): Boolean = js.native
     
     def eventNames(): js.Array[String | Double] = js.native
     
@@ -72,6 +72,6 @@ object mod {
   @js.native
   trait Listener extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
 }

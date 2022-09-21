@@ -45,13 +45,13 @@ object WorkSheet {
     
     inline def setExclamationmarkcolsUndefined: Self = StObject.set(x, "!cols", js.undefined)
     
-    inline def setExclamationmarkcolsVarargs(value: ColInfo*): Self = StObject.set(x, "!cols", js.Array(value :_*))
+    inline def setExclamationmarkcolsVarargs(value: ColInfo*): Self = StObject.set(x, "!cols", js.Array(value*))
     
     inline def setExclamationmarkmerges(value: js.Array[Range]): Self = StObject.set(x, "!merges", value.asInstanceOf[js.Any])
     
     inline def setExclamationmarkmergesUndefined: Self = StObject.set(x, "!merges", js.undefined)
     
-    inline def setExclamationmarkmergesVarargs(value: Range*): Self = StObject.set(x, "!merges", js.Array(value :_*))
+    inline def setExclamationmarkmergesVarargs(value: Range*): Self = StObject.set(x, "!merges", js.Array(value*))
     
     inline def setExclamationmarkprotect(value: ProtectInfo): Self = StObject.set(x, "!protect", value.asInstanceOf[js.Any])
     
@@ -61,6 +61,6 @@ object WorkSheet {
     
     inline def setExclamationmarkrowsUndefined: Self = StObject.set(x, "!rows", js.undefined)
     
-    inline def setExclamationmarkrowsVarargs(value: RowInfo*): Self = StObject.set(x, "!rows", js.Array(value :_*))
+    inline def setExclamationmarkrowsVarargs(value: RowInfo*): Self = StObject.set(x, "!rows", js.Array(value*))
   }
 }

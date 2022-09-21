@@ -1,6 +1,7 @@
 package typings.reactTagInput
 
 import typings.react.mod.Component
+import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.ReactChild
 import typings.reactTagInput.anon.ActiveSuggestion
 import typings.reactTagInput.anon.Id
@@ -8,6 +9,7 @@ import typings.reactTagInput.reactTagInputNumbers.`1`
 import typings.reactTagInput.reactTagInputStrings.`inline`
 import typings.reactTagInput.reactTagInputStrings.bottom
 import typings.reactTagInput.reactTagInputStrings.top
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,37 +18,37 @@ object mod {
   
   @JSImport("react-tag-input", JSImport.Default)
   @js.native
-  class default protected () extends WithContext {
+  open class default protected () extends WithContext {
     def this(props: ReactTagsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReactTagsProps, context: js.Any) = this()
+    def this(props: ReactTagsProps, context: Any) = this()
   }
   
   @JSImport("react-tag-input", "WithContext")
   @js.native
-  class WithContext protected ()
-    extends Component[ReactTagsProps, js.Object, js.Any] {
+  open class WithContext protected ()
+    extends Component[ReactTagsProps, js.Object, Any] {
     def this(props: ReactTagsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReactTagsProps, context: js.Any) = this()
+    def this(props: ReactTagsProps, context: Any) = this()
   }
   
   @JSImport("react-tag-input", "WithOutContext")
   @js.native
-  class WithOutContext protected ()
-    extends Component[ReactTagsProps, js.Object, js.Any] {
+  open class WithOutContext protected ()
+    extends Component[ReactTagsProps, js.Object, Any] {
     def this(props: ReactTagsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReactTagsProps, context: js.Any) = this()
+    def this(props: ReactTagsProps, context: Any) = this()
   }
   
   trait ReactTagsProps extends StObject {
@@ -95,6 +97,8 @@ object mod {
     
     var inputFieldPosition: js.UndefOr[top | bottom | `inline`] = js.undefined
     
+    var inputProps: js.UndefOr[InputHTMLAttributes[HTMLInputElement]] = js.undefined
+    
     var inputValue: js.UndefOr[String] = js.undefined
     
     var labelField: js.UndefOr[String] = js.undefined
@@ -109,11 +113,9 @@ object mod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var removeComponent: js.UndefOr[Component[js.Any, js.Any, js.Any]] = js.undefined
+    var removeComponent: js.UndefOr[Component[Any, Any, Any]] = js.undefined
     
     var renderSuggestion: js.UndefOr[js.Function2[/* tag */ Tag, /* query */ String, ReactChild | Unit]] = js.undefined
-    
-    var resetInputOnDelete: js.UndefOr[Boolean] = js.undefined
     
     var shouldRenderSuggestions: js.UndefOr[js.Function1[/* query */ String, Boolean]] = js.undefined
     
@@ -162,7 +164,7 @@ object mod {
       
       inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      inline def setDelimitersVarargs(value: Double*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: Double*): Self = StObject.set(x, "delimiters", js.Array(value*))
       
       inline def setHandleAddition(value: Id => Unit): Self = StObject.set(x, "handleAddition", js.Any.fromFunction1(value))
       
@@ -206,6 +208,10 @@ object mod {
       
       inline def setInputFieldPositionUndefined: Self = StObject.set(x, "inputFieldPosition", js.undefined)
       
+      inline def setInputProps(value: InputHTMLAttributes[HTMLInputElement]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      
+      inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+      
       inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
       inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
@@ -234,17 +240,13 @@ object mod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRemoveComponent(value: Component[js.Any, js.Any, js.Any]): Self = StObject.set(x, "removeComponent", value.asInstanceOf[js.Any])
+      inline def setRemoveComponent(value: Component[Any, Any, Any]): Self = StObject.set(x, "removeComponent", value.asInstanceOf[js.Any])
       
       inline def setRemoveComponentUndefined: Self = StObject.set(x, "removeComponent", js.undefined)
       
       inline def setRenderSuggestion(value: (/* tag */ Tag, /* query */ String) => ReactChild | Unit): Self = StObject.set(x, "renderSuggestion", js.Any.fromFunction2(value))
       
       inline def setRenderSuggestionUndefined: Self = StObject.set(x, "renderSuggestion", js.undefined)
-      
-      inline def setResetInputOnDelete(value: Boolean): Self = StObject.set(x, "resetInputOnDelete", value.asInstanceOf[js.Any])
-      
-      inline def setResetInputOnDeleteUndefined: Self = StObject.set(x, "resetInputOnDelete", js.undefined)
       
       inline def setShouldRenderSuggestions(value: /* query */ String => Boolean): Self = StObject.set(x, "shouldRenderSuggestions", js.Any.fromFunction1(value))
       
@@ -254,13 +256,13 @@ object mod {
       
       inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
       
-      inline def setSuggestionsVarargs(value: Tag*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+      inline def setSuggestionsVarargs(value: Tag*): Self = StObject.set(x, "suggestions", js.Array(value*))
       
       inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   

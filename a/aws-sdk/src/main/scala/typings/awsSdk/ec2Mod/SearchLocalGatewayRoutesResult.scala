@@ -33,6 +33,6 @@ object SearchLocalGatewayRoutesResult {
     
     inline def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
     
-    inline def setRoutesVarargs(value: LocalGatewayRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: LocalGatewayRoute*): Self = StObject.set(x, "Routes", js.Array(value*))
   }
 }

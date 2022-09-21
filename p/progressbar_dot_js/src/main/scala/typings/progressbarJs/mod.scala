@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.progressbarJs.anon.Typeofutils
 import typings.std.Element
+import typings.std.HTMLElement
 import typings.std.SVGPathElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +20,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("progressbar.js", "Circle")
   @js.native
-  class Circle ()
+  open class Circle ()
     extends typings.progressbarJs.circleMod.^
   @JSImport("progressbar.js", "Circle")
   @js.native
@@ -29,7 +30,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("progressbar.js", "Line")
   @js.native
-  class Line ()
+  open class Line ()
     extends typings.progressbarJs.lineMod.^
   @JSImport("progressbar.js", "Line")
   @js.native
@@ -39,13 +40,13 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("progressbar.js", "Path")
   @js.native
-  class Path[SElement /* <: Element */] ()
+  open class Path[SElement /* <: Element */] ()
     extends typings.progressbarJs.pathMod.^[SElement] {
     def this(path: String) = this()
-    def this(path: /* import warning: RewrittenClass.unapply cls was tparam SElement */ js.Any) = this()
+    def this(path: /* import warning: RewrittenClass.unapply cls was tparam SElement */ Any) = this()
     def this(path: String, options: AnimationOptions) = this()
     def this(
-      path: /* import warning: RewrittenClass.unapply cls was tparam SElement */ js.Any,
+      path: /* import warning: RewrittenClass.unapply cls was tparam SElement */ Any,
       options: AnimationOptions
     ) = this()
     def this(path: Null, options: AnimationOptions) = this()
@@ -53,13 +54,13 @@ object mod {
   @JSImport("progressbar.js", "Path")
   @js.native
   def Path: Instantiable2[
-    /* path */ (/* import warning: RewrittenClass.unapply cls was tparam SElement */ js.Any) | String | Null, 
+    /* path */ (/* import warning: RewrittenClass.unapply cls was tparam SElement */ Any) | String | Null, 
     /* options */ js.UndefOr[AnimationOptions], 
     typings.progressbarJs.pathMod.^[Element]
   ] = js.native
   inline def Path_=(
     x: Instantiable2[
-      /* path */ (/* import warning: RewrittenClass.unapply cls was tparam SElement */ js.Any) | String | Null, 
+      /* path */ (/* import warning: RewrittenClass.unapply cls was tparam SElement */ Any) | String | Null, 
       /* options */ js.UndefOr[AnimationOptions], 
       typings.progressbarJs.pathMod.^[Element]
     ]
@@ -68,7 +69,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("progressbar.js", "SemiCircle")
   @js.native
-  class SemiCircle ()
+  open class SemiCircle ()
     extends typings.progressbarJs.semicircleMod.^
   @JSImport("progressbar.js", "SemiCircle")
   @js.native
@@ -84,24 +85,24 @@ object mod {
     * @param [opts] - Options for path drawing.
     * @see {@link https://progressbarjs.readthedocs.io/en/latest/api/shape/#new-shapecontainer-options}
     */
-  class Shape ()
+  open class Shape ()
     extends typings.progressbarJs.shapeMod.^ {
     def this(container: String) = this()
-    def this(container: SVGPathElement) = this()
+    def this(container: HTMLElement) = this()
     def this(container: String, opts: PathDrawingOptions) = this()
     def this(container: Null, opts: PathDrawingOptions) = this()
-    def this(container: SVGPathElement, opts: PathDrawingOptions) = this()
+    def this(container: HTMLElement, opts: PathDrawingOptions) = this()
   }
   @JSImport("progressbar.js", "Shape")
   @js.native
   def Shape: Instantiable2[
-    /* container */ SVGPathElement | String | Null, 
+    /* container */ HTMLElement | String | Null, 
     /* opts */ js.UndefOr[PathDrawingOptions], 
     typings.progressbarJs.shapeMod.^
   ] = js.native
   inline def Shape_=(
     x: Instantiable2[
-      /* container */ SVGPathElement | String | Null, 
+      /* container */ HTMLElement | String | Null, 
       /* opts */ js.UndefOr[PathDrawingOptions], 
       typings.progressbarJs.shapeMod.^
     ]
@@ -110,7 +111,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("progressbar.js", "Square")
   @js.native
-  class Square ()
+  open class Square ()
     extends typings.progressbarJs.squareMod.^
   @JSImport("progressbar.js", "Square")
   @js.native
@@ -174,7 +175,7 @@ object mod {
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
       inline def setStep(
-        value: (/* state */ StringDictionary[js.Any], /* path */ typings.progressbarJs.pathMod.^[SVGPathElement], /* attachement */ SVGPathElement) => Unit
+        value: (/* state */ StringDictionary[Any], /* path */ typings.progressbarJs.pathMod.^[SVGPathElement], /* attachement */ SVGPathElement) => Unit
       ): Self = StObject.set(x, "step", js.Any.fromFunction3(value))
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
@@ -355,19 +356,19 @@ object mod {
   }
   
   type StepFunction = js.Function3[
-    /* state */ StringDictionary[js.Any], 
+    /* state */ StringDictionary[Any], 
     /* path */ typings.progressbarJs.pathMod.^[SVGPathElement], 
     /* attachement */ SVGPathElement, 
     Unit
   ]
   
   /** Inline CSS styles for the created SVG element */
-  type SvgInlineStyle = StringDictionary[js.Any | Null]
+  type SvgInlineStyle = StringDictionary[Any | Null]
   
   type SvgSelector = SVGPathElement | String
   
   /** Inline CSS styles for the text element */
-  type TextInlineStyle = StringDictionary[js.Any]
+  type TextInlineStyle = StringDictionary[Any]
   
   trait TextOptions extends StObject {
     

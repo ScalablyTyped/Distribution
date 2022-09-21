@@ -36,7 +36,7 @@ trait FieldAttributes extends StObject {
   
   var qFmt: String
   
-  var qSAFEARRAY: js.Array[js.Any]
+  var qSAFEARRAY: js.Array[Any]
   
   var qThou: String
   
@@ -51,7 +51,7 @@ object FieldAttributes {
   inline def apply(
     qDec: String,
     qFmt: String,
-    qSAFEARRAY: js.Array[js.Any],
+    qSAFEARRAY: js.Array[Any],
     qThou: String,
     qType: U | A | I | R | F | M | D | T | TS | IV,
     qUseThou: `0` | `1`,
@@ -67,9 +67,9 @@ object FieldAttributes {
     
     inline def setQFmt(value: String): Self = StObject.set(x, "qFmt", value.asInstanceOf[js.Any])
     
-    inline def setQSAFEARRAY(value: js.Array[js.Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
+    inline def setQSAFEARRAY(value: js.Array[Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
     
-    inline def setQSAFEARRAYVarargs(value: js.Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value :_*))
+    inline def setQSAFEARRAYVarargs(value: Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value*))
     
     inline def setQThou(value: String): Self = StObject.set(x, "qThou", value.asInstanceOf[js.Any])
     

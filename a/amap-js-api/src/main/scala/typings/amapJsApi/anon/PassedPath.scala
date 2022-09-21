@@ -20,6 +20,6 @@ object PassedPath {
     
     inline def setPassedPath(value: js.Array[LngLat]): Self = StObject.set(x, "passedPath", value.asInstanceOf[js.Any])
     
-    inline def setPassedPathVarargs(value: LngLat*): Self = StObject.set(x, "passedPath", js.Array(value :_*))
+    inline def setPassedPathVarargs(value: LngLat*): Self = StObject.set(x, "passedPath", js.Array(value*))
   }
 }

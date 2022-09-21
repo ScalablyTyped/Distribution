@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("consul", "Session")
 @js.native
-class SessionCls protected ()
+open class SessionCls protected ()
   extends StObject
      with Session {
   def this(consul: Consul) = this()

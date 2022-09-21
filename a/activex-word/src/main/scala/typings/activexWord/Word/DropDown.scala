@@ -14,7 +14,7 @@ trait DropDown extends StObject {
   
   val ListEntries: typings.activexWord.Word.ListEntries
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Valid: Boolean
   
@@ -30,7 +30,7 @@ object DropDown {
     Creator: Double,
     Default: Double,
     ListEntries: ListEntries,
-    Parent: js.Any,
+    Parent: Any,
     Valid: Boolean,
     Value: Double,
     WordDotDropDown_typekey: DropDown
@@ -50,7 +50,7 @@ object DropDown {
     
     inline def setListEntries(value: ListEntries): Self = StObject.set(x, "ListEntries", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setValid(value: Boolean): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     

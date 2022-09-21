@@ -1,9 +1,5 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,32 +9,32 @@ trait ParamsResourceChromeosdevicesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Immutable ID of the G Suite account
+    * The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
     */
   var customerId: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of results to return. Default is 100
+    * Return devices from all child orgunits, as well as the specified org unit. If this is set to true 'orgUnitPath' must be provided.
+    */
+  var includeChildOrgunits: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Maximum number of results to return.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Column to use for sorting results
+    * Device property to use for sorting results.
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
   /**
-    * Full path of the organizational unit or its ID
+    * The full path of the organizational unit (minus the leading `/`) or its unique ID.
     */
   var orgUnitPath: js.UndefOr[String] = js.undefined
   
   /**
-    * Token to specify next page in the list
+    * The `pageToken` query parameter is used to request the next page of query results. The follow-on request's `pageToken` query parameter is the `nextPageToken` from your previous response.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -48,14 +44,12 @@ trait ParamsResourceChromeosdevicesList
   var projection: js.UndefOr[String] = js.undefined
   
   /**
-    * Search string in the format given at
-    * http://support.google.com/chromeos/a/bin/answer.py?answer=1698333
+    * Search string in the format given at https://developers.google.com/admin-sdk/directory/v1/list-query-operators
     */
   var query: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to return results in ascending or descending order. Only of use
-    * when orderBy is also used
+    * Whether to return results in ascending or descending order. Must be used with the `orderBy` parameter.
     */
   var sortOrder: js.UndefOr[String] = js.undefined
 }
@@ -68,13 +62,13 @@ object ParamsResourceChromeosdevicesList {
   
   extension [Self <: ParamsResourceChromeosdevicesList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    
+    inline def setIncludeChildOrgunits(value: Boolean): Self = StObject.set(x, "includeChildOrgunits", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeChildOrgunitsUndefined: Self = StObject.set(x, "includeChildOrgunits", js.undefined)
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

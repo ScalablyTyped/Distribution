@@ -33,6 +33,6 @@ object ListOrganizationPortfolioAccessOutput {
     
     inline def setOrganizationNodesUndefined: Self = StObject.set(x, "OrganizationNodes", js.undefined)
     
-    inline def setOrganizationNodesVarargs(value: OrganizationNode*): Self = StObject.set(x, "OrganizationNodes", js.Array(value :_*))
+    inline def setOrganizationNodesVarargs(value: OrganizationNode*): Self = StObject.set(x, "OrganizationNodes", js.Array(value*))
   }
 }

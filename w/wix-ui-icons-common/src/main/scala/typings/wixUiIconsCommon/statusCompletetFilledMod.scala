@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object statusCompletetFilledMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/StatusCompletetFilled", JSImport.Default)
   @js.native
-  val default: SFC[StatusCompletetFilledProps] = js.native
+  val default: FC[StatusCompletetFilledProps] = js.native
   
   trait StatusCompletetFilledProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object StatusCompletetFilledProps {
     
@@ -29,14 +29,14 @@ object statusCompletetFilledMod extends Shortcut {
     
     extension [Self <: StatusCompletetFilledProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[StatusCompletetFilledProps]
+  type _To = FC[StatusCompletetFilledProps]
   
   /* This means you don't have to write `default`, but can instead just say `statusCompletetFilledMod.foo` */
-  override def _to: SFC[StatusCompletetFilledProps] = default
+  override def _to: FC[StatusCompletetFilledProps] = default
 }

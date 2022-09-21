@@ -26,57 +26,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineUpdateData extends StObject {
   
   /**
-    *
     * Represents the length of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.undefined
   
   /**
-    *
     * Represents the style of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.undefined
   
   /**
-    *
     * Represents the width of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.undefined
   
   /**
-    *
     * Represents the connector type for the line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var connectorType: js.UndefOr[ConnectorType | Straight | Elbow | Curve] = js.undefined
   
   /**
-    *
     * Represents the length of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.undefined
   
   /**
-    *
     * Represents the style of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.undefined
   
   /**
-    *
     * Represents the width of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.undefined

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EncryptionConfig extends StObject {
   
   /**
-    * AWS Key Management Service (AWS KMS) customer master key (CMK). Either the ARN or the alias can be used.
+    * Key Management Service (KMS) key. Either the ARN or the alias can be used.
     */
   var provider: js.UndefOr[Provider] = js.undefined
   
@@ -33,6 +33,6 @@ object EncryptionConfig {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

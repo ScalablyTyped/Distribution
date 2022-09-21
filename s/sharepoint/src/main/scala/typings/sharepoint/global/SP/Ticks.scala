@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ticks")
 @js.native
-class Ticks ()
+open class Ticks ()
   extends StObject
      with typings.sharepoint.SP.Ticks

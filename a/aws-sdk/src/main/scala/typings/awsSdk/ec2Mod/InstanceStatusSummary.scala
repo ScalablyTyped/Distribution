@@ -29,7 +29,7 @@ object InstanceStatusSummary {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
-    inline def setDetailsVarargs(value: InstanceStatusDetails*): Self = StObject.set(x, "Details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: InstanceStatusDetails*): Self = StObject.set(x, "Details", js.Array(value*))
     
     inline def setStatus(value: SummaryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

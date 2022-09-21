@@ -37,7 +37,7 @@ object ChildrenAttribute {
     
     inline def setImplicitSortUndefined: Self = StObject.set(x, "implicitSort", js.undefined)
     
-    inline def setImplicitSortVarargs(value: SortCriterion[D]*): Self = StObject.set(x, "implicitSort", js.Array(value :_*))
+    inline def setImplicitSortVarargs(value: SortCriterion[D]*): Self = StObject.set(x, "implicitSort", js.Array(value*))
     
     inline def setKeyAttributes(value: String | js.Array[String]): Self = StObject.set(x, "keyAttributes", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object ChildrenAttribute {
     
     inline def setKeyAttributesUndefined: Self = StObject.set(x, "keyAttributes", js.undefined)
     
-    inline def setKeyAttributesVarargs(value: String*): Self = StObject.set(x, "keyAttributes", js.Array(value :_*))
+    inline def setKeyAttributesVarargs(value: String*): Self = StObject.set(x, "keyAttributes", js.Array(value*))
     
     inline def setSortComparators(value: SortComparators[D]): Self = StObject.set(x, "sortComparators", value.asInstanceOf[js.Any])
     

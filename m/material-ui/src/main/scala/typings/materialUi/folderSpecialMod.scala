@@ -10,10 +10,10 @@ object folderSpecialMod {
   
   @JSImport("material-ui/svg-icons/notification/folder-special", JSImport.Default)
   @js.native
-  class default () extends NotificationFolderSpecial
+  open class default () extends NotificationFolderSpecial
   
   @JSImport("material-ui/svg-icons/notification/folder-special", "NotificationFolderSpecial")
   @js.native
-  class NotificationFolderSpecial ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationFolderSpecial ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

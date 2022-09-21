@@ -1,6 +1,5 @@
 package typings.morrisJs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,8 +28,8 @@ object morris {
   @js.native
   trait GridChart extends StObject {
     
-    def setData(data: js.Array[js.Any]): Unit = js.native
-    def setData(data: js.Array[js.Any], redraw: Boolean): Unit = js.native
+    def setData(data: js.Array[Any]): Unit = js.native
+    def setData(data: js.Array[Any], redraw: Boolean): Unit = js.native
   }
   
   trait IAreaOptions
@@ -42,13 +41,7 @@ object morris {
   }
   object IAreaOptions {
     
-    inline def apply(
-      data: js.Array[js.Any],
-      element: js.Any,
-      labels: js.Array[String],
-      xkey: String,
-      ykeys: js.Array[String]
-    ): IAreaOptions = {
+    inline def apply(data: js.Array[Any], element: Any, labels: js.Array[String], xkey: String, ykeys: js.Array[String]): IAreaOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], xkey = xkey.asInstanceOf[js.Any], ykeys = ykeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAreaOptions]
     }
@@ -70,13 +63,7 @@ object morris {
     
     /** Provide a function on this option to generate custom hover legends. */
     var hoverCallback: js.UndefOr[
-        js.Function4[
-          /* index */ Double, 
-          /* options */ this.type, 
-          /* content */ String, 
-          /* row */ js.Any, 
-          String
-        ]
+        js.Function4[/* index */ Double, /* options */ this.type, /* content */ String, /* row */ Any, String]
       ] = js.undefined
     
     /** Set to true to draw bars stacked vertically. */
@@ -84,13 +71,7 @@ object morris {
   }
   object IBarOptions {
     
-    inline def apply(
-      data: js.Array[js.Any],
-      element: js.Any,
-      labels: js.Array[String],
-      xkey: String,
-      ykeys: js.Array[String]
-    ): IBarOptions = {
+    inline def apply(data: js.Array[Any], element: Any, labels: js.Array[String], xkey: String, ykeys: js.Array[String]): IBarOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], xkey = xkey.asInstanceOf[js.Any], ykeys = ykeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBarOptions]
     }
@@ -101,9 +82,9 @@ object morris {
       
       inline def setBarColorsUndefined: Self = StObject.set(x, "barColors", js.undefined)
       
-      inline def setBarColorsVarargs(value: String*): Self = StObject.set(x, "barColors", js.Array(value :_*))
+      inline def setBarColorsVarargs(value: String*): Self = StObject.set(x, "barColors", js.Array(value*))
       
-      inline def setHoverCallback(value: (/* index */ Double, IBarOptions, /* content */ String, /* row */ js.Any) => String): Self = StObject.set(x, "hoverCallback", js.Any.fromFunction4(value))
+      inline def setHoverCallback(value: (/* index */ Double, IBarOptions, /* content */ String, /* row */ Any) => String): Self = StObject.set(x, "hoverCallback", js.Any.fromFunction4(value))
       
       inline def setHoverCallbackUndefined: Self = StObject.set(x, "hoverCallback", js.undefined)
       
@@ -116,21 +97,21 @@ object morris {
   trait IChartOptions extends StObject {
     
     /** The ID of (or a reference to) the element into which to insert the graph. */
-    var element: js.Any
+    var element: Any
     
     /** Set to true to enable automatic resizing when the containing element resizes. (default: false). */
     var resize: js.UndefOr[Boolean] = js.undefined
   }
   object IChartOptions {
     
-    inline def apply(element: js.Any): IChartOptions = {
+    inline def apply(element: Any): IChartOptions = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChartOptions]
     }
     
     extension [Self <: IChartOptions](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
@@ -176,7 +157,7 @@ object morris {
   }
   object IDonutOptions {
     
-    inline def apply(data: js.Array[IDonutData], element: js.Any): IDonutOptions = {
+    inline def apply(data: js.Array[IDonutData], element: Any): IDonutOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDonutOptions]
     }
@@ -187,11 +168,11 @@ object morris {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setData(value: js.Array[IDonutData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: IDonutData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: IDonutData*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFormatter(value: (/* y */ Double, /* data */ IDonutData) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
@@ -207,7 +188,7 @@ object morris {
     var axes: js.UndefOr[Boolean] = js.undefined
     
     /** The data to plot. This is an array of objects, containing x and y attributes as described by the xkey and ykeys options. */
-    var data: js.Array[js.Any]
+    var data: js.Array[Any]
     
     /**  Set to false to disable drawing the horizontal grid lines. */
     var grid: js.UndefOr[Boolean] = js.undefined
@@ -244,13 +225,7 @@ object morris {
   }
   object IGridChartOptions {
     
-    inline def apply(
-      data: js.Array[js.Any],
-      element: js.Any,
-      labels: js.Array[String],
-      xkey: String,
-      ykeys: js.Array[String]
-    ): IGridChartOptions = {
+    inline def apply(data: js.Array[Any], element: Any, labels: js.Array[String], xkey: String, ykeys: js.Array[String]): IGridChartOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], xkey = xkey.asInstanceOf[js.Any], ykeys = ykeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGridChartOptions]
     }
@@ -261,9 +236,9 @@ object morris {
       
       inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setGrid(value: Boolean): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
@@ -299,13 +274,13 @@ object morris {
       
       inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
       
       inline def setXkey(value: String): Self = StObject.set(x, "xkey", value.asInstanceOf[js.Any])
       
       inline def setYkeys(value: js.Array[String]): Self = StObject.set(x, "ykeys", value.asInstanceOf[js.Any])
       
-      inline def setYkeysVarargs(value: String*): Self = StObject.set(x, "ykeys", js.Array(value :_*))
+      inline def setYkeysVarargs(value: String*): Self = StObject.set(x, "ykeys", js.Array(value*))
     }
   }
   
@@ -342,13 +317,7 @@ object morris {
     
     /** Provide a function on this option to generate custom hover legends. */
     var hoverCallback: js.UndefOr[
-        js.Function4[
-          /* index */ Double, 
-          /* options */ this.type, 
-          /* content */ String, 
-          /* row */ js.Any, 
-          String
-        ]
+        js.Function4[/* index */ Double, /* options */ this.type, /* content */ String, /* row */ Any, String]
       ] = js.undefined
     
     /** Array containing colors for the series lines/points. */
@@ -382,13 +351,13 @@ object morris {
     var xLabelAngle: js.UndefOr[Double] = js.undefined
     
     /** A function that accepts Date objects and formats them for display as x-axis labels. Overrides the default formatter chosen by the automatic labeller or the xLabels option. */
-    var xLabelFormat: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
+    var xLabelFormat: js.UndefOr[js.Function1[/* date */ js.Date, String]] = js.undefined
     
     /** Sets the x axis labelling interval. By default the interval will be automatically computed. */
     var xLabels: js.UndefOr[Interval] = js.undefined
     
     /** A function that accepts y-values and formats them for display as y-axis labels. */
-    var yLabelFormat: js.UndefOr[js.Function1[/* val */ js.Any, String]] = js.undefined
+    var yLabelFormat: js.UndefOr[js.Function1[/* val */ Any, String]] = js.undefined
     
     /** Max. bound for Y-values. Alternatively, set this to 'auto' to compute automatically, or 'auto [num]' to automatically compute and ensure that the max y-value is at least [num]. */
     var ymax: js.UndefOr[Double | String] = js.undefined
@@ -398,13 +367,7 @@ object morris {
   }
   object ILineOptions {
     
-    inline def apply(
-      data: js.Array[js.Any],
-      element: js.Any,
-      labels: js.Array[String],
-      xkey: String,
-      ykeys: js.Array[String]
-    ): ILineOptions = {
+    inline def apply(data: js.Array[Any], element: Any, labels: js.Array[String], xkey: String, ykeys: js.Array[String]): ILineOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], xkey = xkey.asInstanceOf[js.Any], ykeys = ykeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILineOptions]
     }
@@ -423,7 +386,7 @@ object morris {
       
       inline def setEventLineColorsUndefined: Self = StObject.set(x, "eventLineColors", js.undefined)
       
-      inline def setEventLineColorsVarargs(value: String*): Self = StObject.set(x, "eventLineColors", js.Array(value :_*))
+      inline def setEventLineColorsVarargs(value: String*): Self = StObject.set(x, "eventLineColors", js.Array(value*))
       
       inline def setEventStrokeWidth(value: Double): Self = StObject.set(x, "eventStrokeWidth", value.asInstanceOf[js.Any])
       
@@ -433,7 +396,7 @@ object morris {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
@@ -443,7 +406,7 @@ object morris {
       
       inline def setGoalLineColorsUndefined: Self = StObject.set(x, "goalLineColors", js.undefined)
       
-      inline def setGoalLineColorsVarargs(value: String*): Self = StObject.set(x, "goalLineColors", js.Array(value :_*))
+      inline def setGoalLineColorsVarargs(value: String*): Self = StObject.set(x, "goalLineColors", js.Array(value*))
       
       inline def setGoalStrokeWidth(value: Double): Self = StObject.set(x, "goalStrokeWidth", value.asInstanceOf[js.Any])
       
@@ -453,9 +416,9 @@ object morris {
       
       inline def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
       
-      inline def setGoalsVarargs(value: Double*): Self = StObject.set(x, "goals", js.Array(value :_*))
+      inline def setGoalsVarargs(value: Double*): Self = StObject.set(x, "goals", js.Array(value*))
       
-      inline def setHoverCallback(value: (/* index */ Double, ILineOptions, /* content */ String, /* row */ js.Any) => String): Self = StObject.set(x, "hoverCallback", js.Any.fromFunction4(value))
+      inline def setHoverCallback(value: (/* index */ Double, ILineOptions, /* content */ String, /* row */ Any) => String): Self = StObject.set(x, "hoverCallback", js.Any.fromFunction4(value))
       
       inline def setHoverCallbackUndefined: Self = StObject.set(x, "hoverCallback", js.undefined)
       
@@ -463,7 +426,7 @@ object morris {
       
       inline def setLineColorsUndefined: Self = StObject.set(x, "lineColors", js.undefined)
       
-      inline def setLineColorsVarargs(value: String*): Self = StObject.set(x, "lineColors", js.Array(value :_*))
+      inline def setLineColorsVarargs(value: String*): Self = StObject.set(x, "lineColors", js.Array(value*))
       
       inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       
@@ -477,7 +440,7 @@ object morris {
       
       inline def setPointFillColorsUndefined: Self = StObject.set(x, "pointFillColors", js.undefined)
       
-      inline def setPointFillColorsVarargs(value: String*): Self = StObject.set(x, "pointFillColors", js.Array(value :_*))
+      inline def setPointFillColorsVarargs(value: String*): Self = StObject.set(x, "pointFillColors", js.Array(value*))
       
       inline def setPointSize(value: Double): Self = StObject.set(x, "pointSize", value.asInstanceOf[js.Any])
       
@@ -487,7 +450,7 @@ object morris {
       
       inline def setPointStrokeColorsUndefined: Self = StObject.set(x, "pointStrokeColors", js.undefined)
       
-      inline def setPointStrokeColorsVarargs(value: String*): Self = StObject.set(x, "pointStrokeColors", js.Array(value :_*))
+      inline def setPointStrokeColorsVarargs(value: String*): Self = StObject.set(x, "pointStrokeColors", js.Array(value*))
       
       inline def setPostUnits(value: String): Self = StObject.set(x, "postUnits", value.asInstanceOf[js.Any])
       
@@ -505,7 +468,7 @@ object morris {
       
       inline def setXLabelAngleUndefined: Self = StObject.set(x, "xLabelAngle", js.undefined)
       
-      inline def setXLabelFormat(value: /* date */ Date => String): Self = StObject.set(x, "xLabelFormat", js.Any.fromFunction1(value))
+      inline def setXLabelFormat(value: /* date */ js.Date => String): Self = StObject.set(x, "xLabelFormat", js.Any.fromFunction1(value))
       
       inline def setXLabelFormatUndefined: Self = StObject.set(x, "xLabelFormat", js.undefined)
       
@@ -513,7 +476,7 @@ object morris {
       
       inline def setXLabelsUndefined: Self = StObject.set(x, "xLabels", js.undefined)
       
-      inline def setYLabelFormat(value: /* val */ js.Any => String): Self = StObject.set(x, "yLabelFormat", js.Any.fromFunction1(value))
+      inline def setYLabelFormat(value: /* val */ Any => String): Self = StObject.set(x, "yLabelFormat", js.Any.fromFunction1(value))
       
       inline def setYLabelFormatUndefined: Self = StObject.set(x, "yLabelFormat", js.undefined)
       

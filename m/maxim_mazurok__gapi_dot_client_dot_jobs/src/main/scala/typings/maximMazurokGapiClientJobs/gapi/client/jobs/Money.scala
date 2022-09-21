@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Money extends StObject {
   
-  /** The 3-letter currency code defined in ISO 4217. */
+  /** The three-letter currency code defined in ISO 4217. */
   var currencyCode: js.UndefOr[String] = js.undefined
   
   /**

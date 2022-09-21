@@ -12,7 +12,7 @@ object ngTableFilterRowControllerMod {
   
   @JSImport("ng-table/src/browser/ngTableFilterRowController", "NgTableFilterRowController")
   @js.native
-  class NgTableFilterRowController protected () extends StObject {
+  open class NgTableFilterRowController protected () extends StObject {
     def this($scope: IScope & IScopeExtensions, ngTableFilterConfig: NgTableFilterConfig) = this()
     
     var config: NgTableFilterConfig = js.native

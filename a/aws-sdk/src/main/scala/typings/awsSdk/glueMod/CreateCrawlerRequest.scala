@@ -22,7 +22,7 @@ trait CreateCrawlerRequest extends StObject {
   var CrawlerSecurityConfiguration: js.UndefOr[typings.awsSdk.glueMod.CrawlerSecurityConfiguration] = js.undefined
   
   /**
-    * The AWS Glue database where results are written, such as: arn:aws:daylight:us-east-1::database/sometable/ *.
+    * The Glue database where results are written, such as: arn:aws:daylight:us-east-1::database/sometable/ *.
     */
   var DatabaseName: js.UndefOr[typings.awsSdk.glueMod.DatabaseName] = js.undefined
   
@@ -30,6 +30,16 @@ trait CreateCrawlerRequest extends StObject {
     * A description of the new crawler.
     */
   var Description: js.UndefOr[DescriptionString] = js.undefined
+  
+  /**
+    * Specifies Lake Formation configuration settings for the crawler.
+    */
+  var LakeFormationConfiguration: js.UndefOr[typings.awsSdk.glueMod.LakeFormationConfiguration] = js.undefined
+  
+  /**
+    * Specifies data lineage configuration settings for the crawler.
+    */
+  var LineageConfiguration: js.UndefOr[typings.awsSdk.glueMod.LineageConfiguration] = js.undefined
   
   /**
     * Name of the new crawler.
@@ -62,7 +72,7 @@ trait CreateCrawlerRequest extends StObject {
   var TablePrefix: js.UndefOr[typings.awsSdk.glueMod.TablePrefix] = js.undefined
   
   /**
-    * The tags to use with this crawler request. You may use tags to limit access to the crawler. For more information about tags in AWS Glue, see AWS Tags in AWS Glue in the developer guide.
+    * The tags to use with this crawler request. You may use tags to limit access to the crawler. For more information about tags in Glue, see Amazon Web Services Tags in Glue in the developer guide.
     */
   var Tags: js.UndefOr[TagsMap] = js.undefined
   
@@ -84,7 +94,7 @@ object CreateCrawlerRequest {
     
     inline def setClassifiersUndefined: Self = StObject.set(x, "Classifiers", js.undefined)
     
-    inline def setClassifiersVarargs(value: NameString*): Self = StObject.set(x, "Classifiers", js.Array(value :_*))
+    inline def setClassifiersVarargs(value: NameString*): Self = StObject.set(x, "Classifiers", js.Array(value*))
     
     inline def setConfiguration(value: CrawlerConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
@@ -101,6 +111,14 @@ object CreateCrawlerRequest {
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setLakeFormationConfiguration(value: LakeFormationConfiguration): Self = StObject.set(x, "LakeFormationConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setLakeFormationConfigurationUndefined: Self = StObject.set(x, "LakeFormationConfiguration", js.undefined)
+    
+    inline def setLineageConfiguration(value: LineageConfiguration): Self = StObject.set(x, "LineageConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setLineageConfigurationUndefined: Self = StObject.set(x, "LineageConfiguration", js.undefined)
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JsxExpression
   extends StObject
      with Expression
+     with JsxAttributeValue
      with JsxChild {
   
   val dotDotDotToken: js.UndefOr[Token[typings.typescript.mod.SyntaxKind.DotDotDotToken]] = js.native
@@ -18,5 +19,5 @@ trait JsxExpression
   val kind_JsxExpression: typings.typescript.mod.SyntaxKind.JsxExpression = js.native
   
   @JSName("parent")
-  val parent_JsxExpression: JsxElement | JsxAttributeLike = js.native
+  val parent_JsxExpression: JsxElement | JsxFragment | JsxAttributeLike = js.native
 }

@@ -13,7 +13,7 @@ trait WSParameter extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Type: Double
 }
@@ -23,7 +23,7 @@ object WSParameter {
     AccessDotWSParameter_typekey: WSParameter,
     IsMemberSafe: Double => Boolean,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Type: Double
   ): WSParameter = {
     val __obj = js.Dynamic.literal(IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object WSParameter {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

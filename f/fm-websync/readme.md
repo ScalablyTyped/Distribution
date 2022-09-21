@@ -10,10 +10,10 @@ Typings are for version 3.0
 | ------------------ | :-------------: |
 | Full name          | fm-websync |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 67 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/fm-websync)

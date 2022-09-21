@@ -5,11 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Detailed description of a meta item.
-  *
-  * This description is displayed when the user selects an item form the catalog.
-  */
 trait MetaDetail
   extends StObject
      with MetaPreview {
@@ -122,7 +117,7 @@ object MetaDetail {
     
     inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
     
-    inline def setCastVarargs(value: String*): Self = StObject.set(x, "cast", js.Array(value :_*))
+    inline def setCastVarargs(value: String*): Self = StObject.set(x, "cast", js.Array(value*))
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
@@ -132,13 +127,13 @@ object MetaDetail {
     
     inline def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
     
-    inline def setDirectorVarargs(value: String*): Self = StObject.set(x, "director", js.Array(value :_*))
+    inline def setDirectorVarargs(value: String*): Self = StObject.set(x, "director", js.Array(value*))
     
     inline def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     inline def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
-    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value*))
     
     inline def setImdbRating(value: String): Self = StObject.set(x, "imdbRating", value.asInstanceOf[js.Any])
     
@@ -152,7 +147,7 @@ object MetaDetail {
     
     inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    inline def setLinksVarargs(value: MetaLink*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: MetaLink*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setReleaseInfo(value: String): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
     
@@ -170,7 +165,7 @@ object MetaDetail {
     
     inline def setVideosUndefined: Self = StObject.set(x, "videos", js.undefined)
     
-    inline def setVideosVarargs(value: MetaVideo*): Self = StObject.set(x, "videos", js.Array(value :_*))
+    inline def setVideosVarargs(value: MetaVideo*): Self = StObject.set(x, "videos", js.Array(value*))
     
     inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     

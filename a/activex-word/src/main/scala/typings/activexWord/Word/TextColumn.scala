@@ -10,7 +10,7 @@ trait TextColumn extends StObject {
   
   val Creator: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var SpaceAfter: Double
   
@@ -24,7 +24,7 @@ object TextColumn {
   inline def apply(
     Application: Application,
     Creator: Double,
-    Parent: js.Any,
+    Parent: Any,
     SpaceAfter: Double,
     Width: Double,
     WordDotTextColumn_typekey: TextColumn
@@ -40,7 +40,7 @@ object TextColumn {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSpaceAfter(value: Double): Self = StObject.set(x, "SpaceAfter", value.asInstanceOf[js.Any])
     

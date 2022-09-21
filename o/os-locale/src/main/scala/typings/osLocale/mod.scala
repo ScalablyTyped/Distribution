@@ -6,38 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Get the system [locale](https://en.wikipedia.org/wiki/Locale_(computer_software)).
-  	@returns The locale.
-  	@example
-  	```
-  	import osLocale = require('os-locale');
-  	(async () => {
-  		console.log(await osLocale());
-  		//=> 'en-US'
-  	})();
-  	```
-  	*/
-  inline def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
-  inline def apply(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  
   @JSImport("os-locale", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Synchronously get the system [locale](https://en.wikipedia.org/wiki/Locale_(computer_software)).
-  	@returns The locale.
-  	*/
-  inline def sync(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[String]
-  inline def sync(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def osLocale(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("osLocale")().asInstanceOf[js.Promise[String]]
+  inline def osLocale(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("osLocale")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
+  inline def osLocaleSync(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("osLocaleSync")().asInstanceOf[String]
+  inline def osLocaleSync(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("osLocaleSync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Options extends StObject {
     
     /**
-    		Set to `false` to avoid spawning subprocesses and instead only resolve the locale from environment variables.
-    		@default true
-    		*/
+    	Set to `false` to avoid spawning subprocesses and instead only resolve the locale from environment variables.
+    	@default true
+    	*/
     val spawn: js.UndefOr[Boolean] = js.undefined
   }
   object Options {

@@ -6,15 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CodegenOptions extends StObject {
-  
-  var bindingMetadata: js.UndefOr[BindingMetadata] = js.undefined
-  
-  /**
-    * Filename for source map generation.
-    * @default 'template.vue.html'
-    */
-  var filename: js.UndefOr[String] = js.undefined
+trait CodegenOptions
+  extends StObject
+     with SharedTransformCodegenOptions {
   
   /**
     * - `module` mode will generate ES module import statements for helpers
@@ -33,8 +27,6 @@ trait CodegenOptions extends StObject {
     * @default false
     */
   var optimizeImports: js.UndefOr[Boolean] = js.undefined
-  
-  var prefixIdentifiers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Customize the global variable name of `Vue` to get helpers from
@@ -60,7 +52,11 @@ trait CodegenOptions extends StObject {
     */
   var sourceMap: js.UndefOr[Boolean] = js.undefined
   
-  var ssr: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Customize where to import ssr runtime helpers from/ **
+    * @default 'vue/server-renderer'
+    */
+  var ssrRuntimeModuleName: js.UndefOr[String] = js.undefined
 }
 object CodegenOptions {
   
@@ -71,14 +67,6 @@ object CodegenOptions {
   
   extension [Self <: CodegenOptions](x: Self) {
     
-    inline def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
-    
-    inline def setBindingMetadataUndefined: Self = StObject.set(x, "bindingMetadata", js.undefined)
-    
-    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-    
-    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
-    
     inline def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
@@ -86,10 +74,6 @@ object CodegenOptions {
     inline def setOptimizeImports(value: Boolean): Self = StObject.set(x, "optimizeImports", value.asInstanceOf[js.Any])
     
     inline def setOptimizeImportsUndefined: Self = StObject.set(x, "optimizeImports", js.undefined)
-    
-    inline def setPrefixIdentifiers(value: Boolean): Self = StObject.set(x, "prefixIdentifiers", value.asInstanceOf[js.Any])
-    
-    inline def setPrefixIdentifiersUndefined: Self = StObject.set(x, "prefixIdentifiers", js.undefined)
     
     inline def setRuntimeGlobalName(value: String): Self = StObject.set(x, "runtimeGlobalName", value.asInstanceOf[js.Any])
     
@@ -109,8 +93,8 @@ object CodegenOptions {
     
     inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     
-    inline def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
+    inline def setSsrRuntimeModuleName(value: String): Self = StObject.set(x, "ssrRuntimeModuleName", value.asInstanceOf[js.Any])
     
-    inline def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
+    inline def setSsrRuntimeModuleNameUndefined: Self = StObject.set(x, "ssrRuntimeModuleName", js.undefined)
   }
 }

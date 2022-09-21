@@ -4,8 +4,7 @@ import typings.blessed.mod.BlessedProgram
 import typings.blessed.mod.Widgets.Types.TCursor
 import typings.blessed.mod.Widgets.Types.TPosition
 import typings.blessed.mod.Widgets.Types.TTopLeft
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
+import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.ChildProcess
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.Screen")
 @js.native
-class Screen protected () extends NodeWithEvents {
+open class Screen protected () extends NodeWithEvents {
   def this(opts: IScreenOptions) = this()
   
   /**
@@ -96,7 +95,7 @@ class Screen protected () extends NodeWithEvents {
     * Attempt to change cursor shape. Will not work in all terminals (see artificial cursors for a solution
     * to this). Returns true if successful.
     */
-  def cursorShape(shape: Boolean, blink: Boolean): js.Any = js.native
+  def cursorShape(shape: Boolean, blink: Boolean): Any = js.native
   
   /**
     * Same as the log method, but only gets called if the debug option was set.
@@ -161,7 +160,7 @@ class Screen protected () extends NodeWithEvents {
     file: String,
     args: js.Array[String],
     options: NodeChildProcessExecOptions,
-    callback: js.Function1[/* repeated */ js.Any, Unit]
+    callback: js.Function1[/* repeated */ Any, Unit]
   ): ChildProcess = js.native
   
   /**
@@ -287,7 +286,7 @@ class Screen protected () extends NodeWithEvents {
   /**
     * Write string to the log file if one was created.
     */
-  def log(msg: js.Any*): Unit = js.native
+  def log(msg: Any*): Unit = js.native
   
   /**
     * Original options object.
@@ -306,11 +305,24 @@ class Screen protected () extends NodeWithEvents {
     */
   var program: BlessedProgram = js.native
   
-  def readEditor(callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
+  def readEditor(
+    callback: js.Function2[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+      /* data */ Buffer, 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Read data from text editor.
     */
-  def readEditor(options: js.Any, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
+  def readEditor(
+    options: Any,
+    callback: js.Function2[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+      /* data */ Buffer, 
+      Unit
+    ]
+  ): Unit = js.native
   
   /**
     * Reallocate the screen buffers and clear the screen.
@@ -367,7 +379,7 @@ class Screen protected () extends NodeWithEvents {
   /**
     * Set effects based on two events and attributes.
     */
-  def setEffects(el: BlessedElement, fel: BlessedElement, over: String, out: String, effects: js.Any, temp: js.Any): Unit = js.native
+  def setEffects(el: BlessedElement, fel: BlessedElement, over: String, out: String, effects: Any, temp: Any): Unit = js.native
   
   /**
     * Reset the terminal to term. Reloads terminfo.

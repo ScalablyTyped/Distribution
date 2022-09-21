@@ -43,7 +43,7 @@ object DocumentSymbol {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: DocumentSymbol*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: DocumentSymbol*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
@@ -61,6 +61,6 @@ object DocumentSymbol {
     
     inline def setTags(value: js.Array[SymbolTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: SymbolTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: SymbolTag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

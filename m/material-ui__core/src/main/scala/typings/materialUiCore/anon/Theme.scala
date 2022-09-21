@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Theme extends StObject {
   
-  var theme: typings.materialUiCore.createMuiThemeMod.Theme
+  var theme: typings.materialUiCore.createThemeMod.Theme
 }
 object Theme {
   
-  inline def apply(theme: typings.materialUiCore.createMuiThemeMod.Theme): Theme = {
+  inline def apply(theme: typings.materialUiCore.createThemeMod.Theme): Theme = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }
   
   extension [Self <: Theme](x: Self) {
     
-    inline def setTheme(value: typings.materialUiCore.createMuiThemeMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.materialUiCore.createThemeMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "Face3")
 @js.native
-class Face3 protected ()
+open class Face3 protected ()
   extends typings.wonderJs.face3Mod.Face3 {
   def this(
     aIndex: Double,
     bIndex: Double,
     cIndex: Double,
     faceNormal: typings.wonderJs.vector3Mod.Vector3,
-    vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+    vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ Any
   ) = this()
 }
 /* static members */
@@ -29,7 +29,7 @@ object Face3 {
     bIndex: Double,
     cIndex: Double,
     faceNormal: Unit,
-    vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+    vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ Any
   ): typings.wonderJs.face3Mod.Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any], faceNormal.asInstanceOf[js.Any], vertexNormals.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.face3Mod.Face3]
   inline def create(aIndex: Double, bIndex: Double, cIndex: Double, faceNormal: typings.wonderJs.vector3Mod.Vector3): typings.wonderJs.face3Mod.Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any], faceNormal.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.face3Mod.Face3]
   inline def create(
@@ -37,6 +37,6 @@ object Face3 {
     bIndex: Double,
     cIndex: Double,
     faceNormal: typings.wonderJs.vector3Mod.Vector3,
-    vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+    vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ Any
   ): typings.wonderJs.face3Mod.Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any], faceNormal.asInstanceOf[js.Any], vertexNormals.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.face3Mod.Face3]
 }

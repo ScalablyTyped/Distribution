@@ -142,7 +142,7 @@ object INxInlineMeasureDef {
     
     inline def setQExpressionsUndefined: Self = StObject.set(x, "qExpressions", js.undefined)
     
-    inline def setQExpressionsVarargs(value: String*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
+    inline def setQExpressionsVarargs(value: String*): Self = StObject.set(x, "qExpressions", js.Array(value*))
     
     inline def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
@@ -172,6 +172,6 @@ object INxInlineMeasureDef {
     
     inline def setQTagsUndefined: Self = StObject.set(x, "qTags", js.undefined)
     
-    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value*))
   }
 }

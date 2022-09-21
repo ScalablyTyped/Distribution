@@ -83,7 +83,7 @@ object adminClientMod {
       
       inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
       
-      inline def setMembersVarargs(value: Double*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: Double*): Self = StObject.set(x, "members", js.Array(value*))
       
       inline def setOriginCompany(value: String): Self = StObject.set(x, "originCompany", value.asInstanceOf[js.Any])
       
@@ -181,13 +181,13 @@ object adminClientMod {
       
       inline def setStreams(value: js.Array[AdminStreamInfo]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
       
-      inline def setStreamsVarargs(value: AdminStreamInfo*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: AdminStreamInfo*): Self = StObject.set(x, "streams", js.Array(value*))
     }
   }
   
   trait ImportMessage extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var intendedMessageFromUserId: Double
     
@@ -216,7 +216,7 @@ object adminClientMod {
     
     extension [Self <: ImportMessage](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -327,7 +327,7 @@ object adminClientMod {
       
       inline def setMembers(value: js.Array[StreamMember]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      inline def setMembersVarargs(value: StreamMember*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: StreamMember*): Self = StObject.set(x, "members", js.Array(value*))
       
       inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     }

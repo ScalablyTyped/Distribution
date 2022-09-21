@@ -18,7 +18,7 @@ object mod {
     
     def apply(range: Double): Double = js.native
     
-    def addEntropy(args: js.Any*): Unit = js.native
+    def addEntropy(args: Any*): Unit = js.native
     
     def cleanString(inStr: String): String = js.native
     

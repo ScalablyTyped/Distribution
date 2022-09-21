@@ -1,6 +1,8 @@
 package typings.carbonComponents.mod
 
 import typings.carbonComponents.anon.BACKWARD
+import typings.carbonComponents.anon.PartialNavigationMenuOpti
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,9 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("carbon-components", "NavigationMenu")
 @js.native
-class NavigationMenu protected ()
+open class NavigationMenu protected ()
   extends typings.carbonComponents.componentsMod.NavigationMenu {
-  def this(element: js.Any, options: js.Any) = this()
+  def this(element: HTMLElement) = this()
+  def this(element: HTMLElement, options: PartialNavigationMenuOpti) = this()
 }
 /* static members */
 object NavigationMenu {
@@ -26,6 +29,6 @@ object NavigationMenu {
   
   @JSImport("carbon-components", "NavigationMenu.components")
   @js.native
-  def components: WeakMap[js.Object, js.Any] = js.native
-  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  def components: WeakMap[js.Object, Any] = js.native
+  inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

@@ -20,7 +20,7 @@ object FieldSchemaInFormUrl {
     DisplayFormat: UrlFormatType,
     FieldType: String,
     Hidden: Boolean,
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     Name: String,
     ReadOnlyField: Boolean,

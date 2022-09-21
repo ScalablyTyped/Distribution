@@ -1,6 +1,5 @@
 package typings.secureRandomString
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
   
   trait Options extends StObject {
     

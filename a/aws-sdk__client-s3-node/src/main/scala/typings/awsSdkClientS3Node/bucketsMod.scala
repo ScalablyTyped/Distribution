@@ -8,5 +8,5 @@ object bucketsMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_Buckets", "_Buckets")
   @js.native
-  val Buckets: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val Buckets: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

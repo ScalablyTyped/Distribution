@@ -55,7 +55,7 @@ object Post {
     
     inline def setGlyphNameIndexUndefined: Self = StObject.set(x, "glyphNameIndex", js.undefined)
     
-    inline def setGlyphNameIndexVarargs(value: Double*): Self = StObject.set(x, "glyphNameIndex", js.Array(value :_*))
+    inline def setGlyphNameIndexVarargs(value: Double*): Self = StObject.set(x, "glyphNameIndex", js.Array(value*))
     
     inline def setIsFixedPitch(value: Double): Self = StObject.set(x, "isFixedPitch", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object Post {
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setNumberOfGlyphs(value: Double): Self = StObject.set(x, "numberOfGlyphs", value.asInstanceOf[js.Any])
     
@@ -83,7 +83,7 @@ object Post {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
     
     inline def setUnderlinePosition(value: Double): Self = StObject.set(x, "underlinePosition", value.asInstanceOf[js.Any])
     

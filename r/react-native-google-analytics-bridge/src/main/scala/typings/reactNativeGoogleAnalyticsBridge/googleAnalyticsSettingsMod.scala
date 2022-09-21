@@ -8,7 +8,7 @@ object googleAnalyticsSettingsMod {
   
   @JSImport("react-native-google-analytics-bridge/dist/GoogleAnalyticsSettings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with GoogleAnalyticsSettings
   object default {

@@ -17,5 +17,5 @@ trait SimpleMarkerSymbolConstructor
 Instantiable0[SimpleMarkerSymbol]
      with Instantiable1[/* properties */ SimpleMarkerSymbolProperties, SimpleMarkerSymbol] {
   
-  def fromJSON(json: js.Any): SimpleMarkerSymbol = js.native
+  def fromJSON(json: Any): SimpleMarkerSymbol = js.native
 }

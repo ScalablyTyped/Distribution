@@ -47,6 +47,11 @@ trait AuthorizeSecurityGroupEgressRequest extends StObject {
   var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   
   /**
+    * The tags applied to the security group rule.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
+  
+  /**
     * Not supported. Use a set of IP permissions to specify the port.
     */
   var ToPort: js.UndefOr[Integer] = js.undefined
@@ -78,7 +83,7 @@ object AuthorizeSecurityGroupEgressRequest {
     
     inline def setIpPermissionsUndefined: Self = StObject.set(x, "IpPermissions", js.undefined)
     
-    inline def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
+    inline def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value*))
     
     inline def setIpProtocol(value: String): Self = StObject.set(x, "IpProtocol", value.asInstanceOf[js.Any])
     
@@ -91,6 +96,12 @@ object AuthorizeSecurityGroupEgressRequest {
     inline def setSourceSecurityGroupOwnerId(value: String): Self = StObject.set(x, "SourceSecurityGroupOwnerId", value.asInstanceOf[js.Any])
     
     inline def setSourceSecurityGroupOwnerIdUndefined: Self = StObject.set(x, "SourceSecurityGroupOwnerId", js.undefined)
+    
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     

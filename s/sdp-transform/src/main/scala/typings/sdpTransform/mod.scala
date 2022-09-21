@@ -139,7 +139,7 @@ object mod {
       
       inline def setCandidatesUndefined: Self = StObject.set(x, "candidates", js.undefined)
       
-      inline def setCandidatesVarargs(value: Foundation*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+      inline def setCandidatesVarargs(value: Foundation*): Self = StObject.set(x, "candidates", js.Array(value*))
       
       inline def setCrypto(value: Id): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
       
@@ -151,7 +151,7 @@ object mod {
       
       inline def setFmtp(value: js.Array[Config]): Self = StObject.set(x, "fmtp", value.asInstanceOf[js.Any])
       
-      inline def setFmtpVarargs(value: Config*): Self = StObject.set(x, "fmtp", js.Array(value :_*))
+      inline def setFmtpVarargs(value: Config*): Self = StObject.set(x, "fmtp", js.Array(value*))
       
       inline def setFramerate(value: Double | String): Self = StObject.set(x, "framerate", value.asInstanceOf[js.Any])
       
@@ -161,7 +161,7 @@ object mod {
       
       inline def setImageattrsUndefined: Self = StObject.set(x, "imageattrs", js.undefined)
       
-      inline def setImageattrsVarargs(value: Attrs1*): Self = StObject.set(x, "imageattrs", js.Array(value :_*))
+      inline def setImageattrsVarargs(value: Attrs1*): Self = StObject.set(x, "imageattrs", js.Array(value*))
       
       inline def setMaxptime(value: Double): Self = StObject.set(x, "maxptime", value.asInstanceOf[js.Any])
       
@@ -187,7 +187,7 @@ object mod {
       
       inline def setRidsUndefined: Self = StObject.set(x, "rids", js.undefined)
       
-      inline def setRidsVarargs(value: Direction*): Self = StObject.set(x, "rids", js.Array(value :_*))
+      inline def setRidsVarargs(value: Direction*): Self = StObject.set(x, "rids", js.Array(value*))
       
       inline def setRtcp(value: IpVer): Self = StObject.set(x, "rtcp", value.asInstanceOf[js.Any])
       
@@ -197,11 +197,11 @@ object mod {
       
       inline def setRtcpFbTrrIntUndefined: Self = StObject.set(x, "rtcpFbTrrInt", js.undefined)
       
-      inline def setRtcpFbTrrIntVarargs(value: Value*): Self = StObject.set(x, "rtcpFbTrrInt", js.Array(value :_*))
+      inline def setRtcpFbTrrIntVarargs(value: Value*): Self = StObject.set(x, "rtcpFbTrrInt", js.Array(value*))
       
       inline def setRtcpFbUndefined: Self = StObject.set(x, "rtcpFb", js.undefined)
       
-      inline def setRtcpFbVarargs(value: Payload*): Self = StObject.set(x, "rtcpFb", js.Array(value :_*))
+      inline def setRtcpFbVarargs(value: Payload*): Self = StObject.set(x, "rtcpFb", js.Array(value*))
       
       inline def setRtcpMux(value: String): Self = StObject.set(x, "rtcpMux", value.asInstanceOf[js.Any])
       
@@ -215,7 +215,7 @@ object mod {
       
       inline def setRtp(value: js.Array[Codec]): Self = StObject.set(x, "rtp", value.asInstanceOf[js.Any])
       
-      inline def setRtpVarargs(value: Codec*): Self = StObject.set(x, "rtp", js.Array(value :_*))
+      inline def setRtpVarargs(value: Codec*): Self = StObject.set(x, "rtp", js.Array(value*))
       
       inline def setSctpmap(value: App): Self = StObject.set(x, "sctpmap", value.asInstanceOf[js.Any])
       
@@ -233,13 +233,13 @@ object mod {
       
       inline def setSsrcGroupsUndefined: Self = StObject.set(x, "ssrcGroups", js.undefined)
       
-      inline def setSsrcGroupsVarargs(value: Semantics*): Self = StObject.set(x, "ssrcGroups", js.Array(value :_*))
+      inline def setSsrcGroupsVarargs(value: Semantics*): Self = StObject.set(x, "ssrcGroups", js.Array(value*))
       
       inline def setSsrcs(value: js.Array[Attribute]): Self = StObject.set(x, "ssrcs", value.asInstanceOf[js.Any])
       
       inline def setSsrcsUndefined: Self = StObject.set(x, "ssrcs", js.undefined)
       
-      inline def setSsrcsVarargs(value: Attribute*): Self = StObject.set(x, "ssrcs", js.Array(value :_*))
+      inline def setSsrcsVarargs(value: Attribute*): Self = StObject.set(x, "ssrcs", js.Array(value*))
       
       inline def setXGoogleFlag(value: String): Self = StObject.set(x, "xGoogleFlag", value.asInstanceOf[js.Any])
       
@@ -289,7 +289,7 @@ object mod {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: Mids*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: Mids*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setIceOptions(value: String): Self = StObject.set(x, "iceOptions", value.asInstanceOf[js.Any])
       
@@ -354,7 +354,7 @@ object mod {
       
       inline def setMedia(value: js.Array[typestringportnumberproto]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      inline def setMediaVarargs(value: typestringportnumberproto*): Self = StObject.set(x, "media", js.Array(value :_*))
+      inline def setMediaVarargs(value: typestringportnumberproto*): Self = StObject.set(x, "media", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -439,7 +439,7 @@ object mod {
       
       inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      inline def setExtVarargs(value: Uri*): Self = StObject.set(x, "ext", js.Array(value :_*))
+      inline def setExtVarargs(value: Uri*): Self = StObject.set(x, "ext", js.Array(value*))
       
       inline def setFingerprint(value: Hash): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
@@ -457,7 +457,7 @@ object mod {
       
       inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      inline def setInvalidVarargs(value: ValueString*): Self = StObject.set(x, "invalid", js.Array(value :_*))
+      inline def setInvalidVarargs(value: ValueString*): Self = StObject.set(x, "invalid", js.Array(value*))
       
       inline def setSetup(value: String): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
       
@@ -493,7 +493,7 @@ object mod {
       
       inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
       
-      inline def setBandwidthVarargs(value: Limit*): Self = StObject.set(x, "bandwidth", js.Array(value :_*))
+      inline def setBandwidthVarargs(value: Limit*): Self = StObject.set(x, "bandwidth", js.Array(value*))
       
       inline def setConnection(value: Ip): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       

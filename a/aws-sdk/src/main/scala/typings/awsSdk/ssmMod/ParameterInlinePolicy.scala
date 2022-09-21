@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterInlinePolicy extends StObject {
   
   /**
-    * The status of the policy. Policies report the following statuses: Pending (the policy has not been enforced or applied yet), Finished (the policy was applied), Failed (the policy was not applied), or InProgress (the policy is being applied now). 
+    * The status of the policy. Policies report the following statuses: Pending (the policy hasn't been enforced or applied yet), Finished (the policy was applied), Failed (the policy wasn't applied), or InProgress (the policy is being applied now). 
     */
   var PolicyStatus: js.UndefOr[String] = js.undefined
   
@@ -17,7 +17,7 @@ trait ParameterInlinePolicy extends StObject {
   var PolicyText: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of policy. Parameter Store supports the following policy types: Expiration, ExpirationNotification, and NoChangeNotification. 
+    * The type of policy. Parameter Store, a capability of Amazon Web Services Systems Manager, supports the following policy types: Expiration, ExpirationNotification, and NoChangeNotification. 
     */
   var PolicyType: js.UndefOr[String] = js.undefined
 }

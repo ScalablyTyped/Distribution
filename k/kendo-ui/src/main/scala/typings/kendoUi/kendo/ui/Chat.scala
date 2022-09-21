@@ -10,18 +10,18 @@ trait Chat
   extends StObject
      with Widget {
   
-  def getUser(): js.Any = js.native
+  def getUser(): Any = js.native
   
   @JSName("options")
   var options_Chat: ChatOptions = js.native
   
   def postMessage(message: String): Unit = js.native
   
-  def renderAttachments(options: js.Any, sender: js.Any): Unit = js.native
+  def renderAttachments(options: Any, sender: Any): Unit = js.native
   
-  def renderMessage(message: js.Any, sender: js.Any): Unit = js.native
+  def renderMessage(message: Any, sender: Any): Unit = js.native
   
-  def renderSuggestedActions(suggestedActions: js.Any): Unit = js.native
+  def renderSuggestedActions(suggestedActions: Any): Unit = js.native
   
   var wrapper: JQuery = js.native
 }

@@ -10,7 +10,7 @@ trait IgPivotViewPivotGridPanel
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Determines if the panel containing the igPivotGrid will initially collapsed.

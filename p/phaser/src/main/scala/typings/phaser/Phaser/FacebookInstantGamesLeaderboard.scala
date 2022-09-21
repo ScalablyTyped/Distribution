@@ -91,7 +91,7 @@ trait FacebookInstantGamesLeaderboard
   /**
     * An Instant Game leaderboard instance.
     */
-  var ref: js.Any = js.native
+  var ref: Any = js.native
   
   /**
     * The scores in the Leaderboard from the currently requested range.
@@ -114,5 +114,5 @@ trait FacebookInstantGamesLeaderboard
     */
   def setScore(score: integer): this.type = js.native
   def setScore(score: integer, data: String): this.type = js.native
-  def setScore(score: integer, data: js.Any): this.type = js.native
+  def setScore(score: integer, data: Any): this.type = js.native
 }

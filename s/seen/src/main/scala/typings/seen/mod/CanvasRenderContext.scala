@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "CanvasRenderContext")
 @js.native
-class CanvasRenderContext protected () extends RenderContext {
+open class CanvasRenderContext protected () extends RenderContext {
   def this(elementOrId: String) = this()
   def this(elementOrId: HTMLElement) = this()
   

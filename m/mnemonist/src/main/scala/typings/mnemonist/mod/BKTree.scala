@@ -3,24 +3,24 @@ package typings.mnemonist.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.mnemonist.bkTreeMod.DistanceFunction
 import typings.mnemonist.bkTreeMod.default
-import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mnemonist", "BKTree")
 @js.native
-class BKTree[T] protected () extends default[T] {
+open class BKTree[T] protected () extends default[T] {
   // Constructor
   def this(distance: DistanceFunction[T]) = this()
 }
-
 /* static members */
-@JSImport("mnemonist", "BKTree")
-@js.native
-object BKTree extends js.Object {
-  def from[I](iterable: StringDictionary[I], distance: DistanceFunction[I]): typings.mnemonist.bkTreeMod.BKTree[I] = js.native
+object BKTree {
+  
+  @JSImport("mnemonist", "BKTree")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Statics
-  def from[I](iterable: Iterable[I], distance: DistanceFunction[I]): typings.mnemonist.bkTreeMod.BKTree[I] = js.native
+  inline def from[I](iterable: js.Iterable[I], distance: DistanceFunction[I]): typings.mnemonist.bkTreeMod.BKTree[I] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[typings.mnemonist.bkTreeMod.BKTree[I]]
+  inline def from[I](iterable: StringDictionary[I], distance: DistanceFunction[I]): typings.mnemonist.bkTreeMod.BKTree[I] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[typings.mnemonist.bkTreeMod.BKTree[I]]
 }
-

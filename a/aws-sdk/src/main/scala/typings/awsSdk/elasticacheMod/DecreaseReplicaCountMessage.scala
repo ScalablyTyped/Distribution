@@ -50,13 +50,13 @@ object DecreaseReplicaCountMessage {
     
     inline def setReplicaConfigurationUndefined: Self = StObject.set(x, "ReplicaConfiguration", js.undefined)
     
-    inline def setReplicaConfigurationVarargs(value: ConfigureShard*): Self = StObject.set(x, "ReplicaConfiguration", js.Array(value :_*))
+    inline def setReplicaConfigurationVarargs(value: ConfigureShard*): Self = StObject.set(x, "ReplicaConfiguration", js.Array(value*))
     
     inline def setReplicasToRemove(value: RemoveReplicasList): Self = StObject.set(x, "ReplicasToRemove", value.asInstanceOf[js.Any])
     
     inline def setReplicasToRemoveUndefined: Self = StObject.set(x, "ReplicasToRemove", js.undefined)
     
-    inline def setReplicasToRemoveVarargs(value: String*): Self = StObject.set(x, "ReplicasToRemove", js.Array(value :_*))
+    inline def setReplicasToRemoveVarargs(value: String*): Self = StObject.set(x, "ReplicasToRemove", js.Array(value*))
     
     inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
   }

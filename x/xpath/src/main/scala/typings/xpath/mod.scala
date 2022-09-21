@@ -16,6 +16,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def evaluate(expression: String, contextNode: Node, resolver: Null, `type`: Double): XPathResult = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], contextNode.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[XPathResult]
+  inline def evaluate(expression: String, contextNode: Node, resolver: Null, `type`: Double, result: XPathResult): XPathResult = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], contextNode.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[XPathResult]
+  inline def evaluate(expression: String, contextNode: Node, resolver: XPathNSResolver, `type`: Double): XPathResult = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], contextNode.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[XPathResult]
   inline def evaluate(
     expression: String,
     contextNode: Node,
@@ -28,8 +31,8 @@ object mod {
   @js.native
   def select: XPathSelect = js.native
   
-  inline def select1(expression: String): SelectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any]).asInstanceOf[SelectedValue]
-  inline def select1(expression: String, node: Node): SelectedValue = (^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[SelectedValue]
+  inline def select1(expression: String): js.UndefOr[SelectedValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SelectedValue]]
+  inline def select1(expression: String, node: Node): js.UndefOr[SelectedValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SelectedValue]]
   
   inline def select_=(x: XPathSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
   
@@ -42,6 +45,6 @@ object mod {
     
     def apply(expression: String): js.Array[SelectedValue] = js.native
     def apply(expression: String, node: Node): js.Array[SelectedValue] = js.native
-    def apply(expression: String, node: Node, single: `true`): SelectedValue = js.native
+    def apply(expression: String, node: Node, single: `true`): js.UndefOr[SelectedValue] = js.native
   }
 }

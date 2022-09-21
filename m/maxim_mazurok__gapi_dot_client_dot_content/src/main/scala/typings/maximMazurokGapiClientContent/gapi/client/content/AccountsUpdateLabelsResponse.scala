@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccountsUpdateLabelsResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#accountsUpdateLabelsResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#accountsUpdateLabelsResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object AccountsUpdateLabelsResponse {

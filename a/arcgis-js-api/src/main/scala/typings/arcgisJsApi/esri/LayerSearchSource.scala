@@ -19,6 +19,8 @@ trait LayerSearchSource
   /**
     * Indicates to only return results that match the search value exactly.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#exactMatch)
     */
   var exactMatch: Boolean = js.native

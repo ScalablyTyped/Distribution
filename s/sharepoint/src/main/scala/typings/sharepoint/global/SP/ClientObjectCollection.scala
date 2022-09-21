@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides a base class for a collection of objects on a remote client. */
 @JSGlobal("SP.ClientObjectCollection")
 @js.native
-class ClientObjectCollection[T] ()
+open class ClientObjectCollection[T] ()
   extends StObject
      with typings.sharepoint.SP.ClientObjectCollection[T] {
   

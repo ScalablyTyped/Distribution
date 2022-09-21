@@ -1,17 +1,17 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.anon.PartialITabProps
-import typings.blueprintjsCore.tabMod.ITabProps
+import typings.blueprintjsCore.anon.PartialTabProps
+import typings.blueprintjsCore.tabMod.TabProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Tab")
 @js.native
-class Tab protected ()
+open class Tab protected ()
   extends typings.blueprintjsCore.tabMod.Tab {
-  def this(props: ITabProps) = this()
-  def this(props: ITabProps, context: js.Any) = this()
+  def this(props: TabProps) = this()
+  def this(props: TabProps, context: Any) = this()
 }
 /* static members */
 object Tab {
@@ -22,8 +22,8 @@ object Tab {
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Tab.defaultProps")
   @js.native
-  def defaultProps: PartialITabProps = js.native
-  inline def defaultProps_=(x: PartialITabProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: PartialTabProps = js.native
+  inline def defaultProps_=(x: PartialTabProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Tab.displayName")
   @js.native

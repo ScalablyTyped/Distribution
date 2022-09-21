@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@devexpress/utils/lib/browser", "Browser")
   @js.native
-  class Browser () extends StObject
+  open class Browser () extends StObject
   /* static members */
   object Browser {
     
@@ -53,11 +53,6 @@ object mod {
       tridentPattern: String,
       ieCompatibleVersionString: String
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBrowserVersion")(userAgent.asInstanceOf[js.Any], matches.asInstanceOf[js.Any], tridentPattern.asInstanceOf[js.Any], ieCompatibleVersionString.asInstanceOf[js.Any])).asInstanceOf[Double]
-    
-    @JSImport("@devexpress/utils/lib/browser", "Browser.HardwareAcceleration")
-    @js.native
-    def HardwareAcceleration: Boolean = js.native
-    inline def HardwareAcceleration_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HardwareAcceleration")(x.asInstanceOf[js.Any])
     
     @JSImport("@devexpress/utils/lib/browser", "Browser.IE")
     @js.native
@@ -191,23 +186,48 @@ object mod {
     
     @JSImport("@devexpress/utils/lib/browser", "Browser.getIECompatibleVersionString")
     @js.native
-    def getIECompatibleVersionString: js.Any = js.native
-    inline def getIECompatibleVersionString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getIECompatibleVersionString")(x.asInstanceOf[js.Any])
+    def getIECompatibleVersionString: Any = js.native
+    inline def getIECompatibleVersionString_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getIECompatibleVersionString")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@devexpress/utils/lib/browser", "Browser.getUserAgent")
+    @js.native
+    def getUserAgent: Any = js.native
+    inline def getUserAgent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getUserAgent")(x.asInstanceOf[js.Any])
     
     @JSImport("@devexpress/utils/lib/browser", "Browser.getVersionFromMatches")
     @js.native
-    def getVersionFromMatches: js.Any = js.native
-    inline def getVersionFromMatches_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getVersionFromMatches")(x.asInstanceOf[js.Any])
+    def getVersionFromMatches: Any = js.native
+    inline def getVersionFromMatches_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getVersionFromMatches")(x.asInstanceOf[js.Any])
     
     @JSImport("@devexpress/utils/lib/browser", "Browser.getVersionFromTrident")
     @js.native
-    def getVersionFromTrident: js.Any = js.native
-    inline def getVersionFromTrident_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getVersionFromTrident")(x.asInstanceOf[js.Any])
+    def getVersionFromTrident: Any = js.native
+    inline def getVersionFromTrident_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getVersionFromTrident")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@devexpress/utils/lib/browser", "Browser.hasMaxTouchPoints")
+    @js.native
+    def hasMaxTouchPoints: Any = js.native
+    inline def hasMaxTouchPoints_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasMaxTouchPoints")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@devexpress/utils/lib/browser", "Browser.hasMsMaxTouchPoints")
+    @js.native
+    def hasMsMaxTouchPoints: Any = js.native
+    inline def hasMsMaxTouchPoints_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasMsMaxTouchPoints")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@devexpress/utils/lib/browser", "Browser.hasNavigator")
+    @js.native
+    def hasNavigator: Any = js.native
+    inline def hasNavigator_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasNavigator")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@devexpress/utils/lib/browser", "Browser.hasTouchStart")
+    @js.native
+    def hasTouchStart: Any = js.native
+    inline def hasTouchStart_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasTouchStart")(x.asInstanceOf[js.Any])
     
     @JSImport("@devexpress/utils/lib/browser", "Browser.indentPlatformMajorVersion")
     @js.native
-    def indentPlatformMajorVersion: js.Any = js.native
-    inline def indentPlatformMajorVersion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indentPlatformMajorVersion")(x.asInstanceOf[js.Any])
+    def indentPlatformMajorVersion: Any = js.native
+    inline def indentPlatformMajorVersion_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indentPlatformMajorVersion")(x.asInstanceOf[js.Any])
     
     inline def isTouchEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEnabled")().asInstanceOf[Boolean]
   }

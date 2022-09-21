@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EditAbility extends StObject {
   
-  def edit(id: js.Any): Unit = js.native
+  def edit(id: Any): Unit = js.native
   
   def editCancel(): Unit = js.native
   
@@ -15,12 +15,12 @@ trait EditAbility extends StObject {
   
   def editStop(): Unit = js.native
   
-  def focusEditor(id: js.Any): Unit = js.native
+  def focusEditor(id: Any): Unit = js.native
   
-  def getEditState(): js.Any = js.native
+  def getEditState(): Any = js.native
   
-  def getEditor(): js.Any = js.native
-  def getEditor(id: String): js.Any = js.native
+  def getEditor(): Any = js.native
+  def getEditor(id: String): Any = js.native
   
   def getEditorValue(): String = js.native
   

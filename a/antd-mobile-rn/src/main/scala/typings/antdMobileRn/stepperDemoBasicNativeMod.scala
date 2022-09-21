@@ -9,9 +9,8 @@ object stepperDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/stepper/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends StepperExample
+  open class default () extends StepperExample
   
   @js.native
-  trait StepperExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait StepperExample extends Component[Any, Any, Any]
 }

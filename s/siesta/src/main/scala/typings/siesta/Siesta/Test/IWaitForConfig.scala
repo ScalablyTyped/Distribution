@@ -12,7 +12,7 @@ trait IWaitForConfig extends StObject {
   
   var method: js.Function
   
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined
 }
@@ -33,7 +33,7 @@ object IWaitForConfig {
     
     inline def setMethod(value: js.Function): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     

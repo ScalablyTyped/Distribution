@@ -32,7 +32,7 @@ trait SymbolLayout
   
   var `icon-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined
   
-  var `icon-ignore-placement`: js.UndefOr[Boolean] = js.undefined
+  var `icon-ignore-placement`: js.UndefOr[Boolean | Expression] = js.undefined
   
   var `icon-image`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
@@ -72,11 +72,11 @@ trait SymbolLayout
   
   var `text-field`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `text-font`: js.UndefOr[String | js.Array[String] | Expression] = js.undefined
+  var `text-font`: js.UndefOr[js.Array[String] | Expression] = js.undefined
   
   var `text-ignore-placement`: js.UndefOr[Boolean] = js.undefined
   
-  var `text-justify`: js.UndefOr[left | center | right | Expression] = js.undefined
+  var `text-justify`: js.UndefOr[auto | left | center | right | Expression] = js.undefined
   
   var `text-keep-upright`: js.UndefOr[Boolean] = js.undefined
   
@@ -127,7 +127,7 @@ object SymbolLayout {
     
     inline def `setIcon-anchorUndefined`: Self = StObject.set(x, "icon-anchor", js.undefined)
     
-    inline def `setIcon-ignore-placement`(value: Boolean): Self = StObject.set(x, "icon-ignore-placement", value.asInstanceOf[js.Any])
+    inline def `setIcon-ignore-placement`(value: Boolean | Expression): Self = StObject.set(x, "icon-ignore-placement", value.asInstanceOf[js.Any])
     
     inline def `setIcon-ignore-placementUndefined`: Self = StObject.set(x, "icon-ignore-placement", js.undefined)
     
@@ -143,7 +143,7 @@ object SymbolLayout {
     
     inline def `setIcon-offsetUndefined`: Self = StObject.set(x, "icon-offset", js.undefined)
     
-    inline def `setIcon-offsetVarargs`(value: Double*): Self = StObject.set(x, "icon-offset", js.Array(value :_*))
+    inline def `setIcon-offsetVarargs`(value: Double*): Self = StObject.set(x, "icon-offset", js.Array(value*))
     
     inline def `setIcon-optional`(value: Boolean): Self = StObject.set(x, "icon-optional", value.asInstanceOf[js.Any])
     
@@ -175,7 +175,7 @@ object SymbolLayout {
     
     inline def `setIcon-text-fit-paddingUndefined`: Self = StObject.set(x, "icon-text-fit-padding", js.undefined)
     
-    inline def `setIcon-text-fit-paddingVarargs`(value: Double*): Self = StObject.set(x, "icon-text-fit-padding", js.Array(value :_*))
+    inline def `setIcon-text-fit-paddingVarargs`(value: Double*): Self = StObject.set(x, "icon-text-fit-padding", js.Array(value*))
     
     inline def `setIcon-text-fitUndefined`: Self = StObject.set(x, "icon-text-fit", js.undefined)
     
@@ -211,17 +211,17 @@ object SymbolLayout {
     
     inline def `setText-fieldUndefined`: Self = StObject.set(x, "text-field", js.undefined)
     
-    inline def `setText-font`(value: String | js.Array[String] | Expression): Self = StObject.set(x, "text-font", value.asInstanceOf[js.Any])
+    inline def `setText-font`(value: js.Array[String] | Expression): Self = StObject.set(x, "text-font", value.asInstanceOf[js.Any])
     
     inline def `setText-fontUndefined`: Self = StObject.set(x, "text-font", js.undefined)
     
-    inline def `setText-fontVarargs`(value: String*): Self = StObject.set(x, "text-font", js.Array(value :_*))
+    inline def `setText-fontVarargs`(value: String*): Self = StObject.set(x, "text-font", js.Array(value*))
     
     inline def `setText-ignore-placement`(value: Boolean): Self = StObject.set(x, "text-ignore-placement", value.asInstanceOf[js.Any])
     
     inline def `setText-ignore-placementUndefined`: Self = StObject.set(x, "text-ignore-placement", js.undefined)
     
-    inline def `setText-justify`(value: left | center | right | Expression): Self = StObject.set(x, "text-justify", value.asInstanceOf[js.Any])
+    inline def `setText-justify`(value: auto | left | center | right | Expression): Self = StObject.set(x, "text-justify", value.asInstanceOf[js.Any])
     
     inline def `setText-justifyUndefined`: Self = StObject.set(x, "text-justify", js.undefined)
     
@@ -249,7 +249,7 @@ object SymbolLayout {
     
     inline def `setText-offsetUndefined`: Self = StObject.set(x, "text-offset", js.undefined)
     
-    inline def `setText-offsetVarargs`(value: Double*): Self = StObject.set(x, "text-offset", js.Array(value :_*))
+    inline def `setText-offsetVarargs`(value: Double*): Self = StObject.set(x, "text-offset", js.Array(value*))
     
     inline def `setText-optional`(value: Boolean): Self = StObject.set(x, "text-optional", value.asInstanceOf[js.Any])
     
@@ -287,12 +287,12 @@ object SymbolLayout {
     
     inline def `setText-variable-anchorUndefined`: Self = StObject.set(x, "text-variable-anchor", js.undefined)
     
-    inline def `setText-variable-anchorVarargs`(value: Anchor*): Self = StObject.set(x, "text-variable-anchor", js.Array(value :_*))
+    inline def `setText-variable-anchorVarargs`(value: Anchor*): Self = StObject.set(x, "text-variable-anchor", js.Array(value*))
     
     inline def `setText-writing-mode`(value: js.Array[horizontal | vertical]): Self = StObject.set(x, "text-writing-mode", value.asInstanceOf[js.Any])
     
     inline def `setText-writing-modeUndefined`: Self = StObject.set(x, "text-writing-mode", js.undefined)
     
-    inline def `setText-writing-modeVarargs`(value: (horizontal | vertical)*): Self = StObject.set(x, "text-writing-mode", js.Array(value :_*))
+    inline def `setText-writing-modeVarargs`(value: (horizontal | vertical)*): Self = StObject.set(x, "text-writing-mode", js.Array(value*))
   }
 }

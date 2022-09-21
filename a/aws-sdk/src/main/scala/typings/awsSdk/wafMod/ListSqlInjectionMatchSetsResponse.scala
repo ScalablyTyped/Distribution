@@ -33,6 +33,6 @@ object ListSqlInjectionMatchSetsResponse {
     
     inline def setSqlInjectionMatchSetsUndefined: Self = StObject.set(x, "SqlInjectionMatchSets", js.undefined)
     
-    inline def setSqlInjectionMatchSetsVarargs(value: SqlInjectionMatchSetSummary*): Self = StObject.set(x, "SqlInjectionMatchSets", js.Array(value :_*))
+    inline def setSqlInjectionMatchSetsVarargs(value: SqlInjectionMatchSetSummary*): Self = StObject.set(x, "SqlInjectionMatchSets", js.Array(value*))
   }
 }

@@ -31,7 +31,7 @@ object XMenuBarMergingAcceptor {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeMergedMenuBar: () => Unit,
     setMergedMenuBar: XIndexAccess => Boolean

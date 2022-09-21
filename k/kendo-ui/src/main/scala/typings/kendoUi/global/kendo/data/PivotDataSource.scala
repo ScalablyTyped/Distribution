@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.PivotDataSource")
 @js.native
-class PivotDataSource ()
+open class PivotDataSource ()
   extends StObject
      with typings.kendoUi.kendo.data.PivotDataSource {
   def this(options: PivotDataSourceOptions) = this()

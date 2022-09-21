@@ -1,15 +1,13 @@
 package typings.ottomatedPassportTwitch
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.ottomatedPassportTwitch.ottomatedPassportTwitchBooleans.`false`
 import typings.ottomatedPassportTwitch.ottomatedPassportTwitchBooleans.`true`
 import typings.passportOauth2.mod.OAuth2Strategy
 import typings.passportOauth2.mod.StateStore
 import typings.passportOauth2.mod.VerifyCallback
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,15 +16,15 @@ object mod {
   
   @JSImport("@ottomated/passport-twitch", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Strategy {
     def this(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.StrategyOptions */ js.Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.StrategyOptions */ Any,
       verify: js.Function4[
             /* accessToken */ String, 
             /* refreshToken */ String, 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.Profile */ /* profile */ js.Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.Profile */ /* profile */ Any, 
             /* done */ VerifyCallback, 
             Unit
           ]
@@ -34,12 +32,18 @@ object mod {
     // NOTE: A union of function types prevents contextual typing of arguments.
     // tslint:disable-next-line:unified-signatures
     def this(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.StrategyOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.StrategyOptionsWithRequest */ js.Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.StrategyOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.StrategyOptionsWithRequest */ Any,
       verify: js.Function5[
-            (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) | (/* accessToken */ String), 
+            (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]) | (/* accessToken */ String), 
             /* refreshToken */ /* accessToken */ String, 
-            (/* params */ js.Any) | (/* refreshToken */ String), 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.Profile */ /* profile */ js.Any, 
+            (/* params */ Any) | (/* refreshToken */ String), 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.Profile */ /* profile */ Any, 
             /* done */ VerifyCallback, 
             Unit
           ]
@@ -47,13 +51,19 @@ object mod {
     // NOTE: A union of function types prevents contextual typing of arguments.
     // tslint:disable-next-line:unified-signatures max-line-length
     def this(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.StrategyOptionsWithRequest */ js.Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.StrategyOptionsWithRequest */ Any,
       verify: js.Function6[
-            /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+            /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], 
             /* accessToken */ String, 
-            /* params */ js.Any, 
+            /* params */ Any, 
             /* refreshToken */ String, 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.Profile */ /* profile */ js.Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify twitch.Profile */ /* profile */ Any, 
             /* done */ VerifyCallback, 
             Unit
           ]
@@ -112,7 +122,7 @@ object mod {
     def checkScope(
       scope: String,
       accessToken: String,
-      cb: js.Function2[/* err */ js.UndefOr[Error | Null], /* value */ js.UndefOr[js.Any], Unit]
+      cb: js.Function2[/* err */ js.UndefOr[js.Error | Null], /* value */ js.UndefOr[Any], Unit]
     ): Unit = js.native
   }
   
@@ -155,7 +165,7 @@ object mod {
     
     var sessionKey: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var store: js.UndefOr[StateStore] = js.undefined
     
@@ -194,13 +204,13 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       

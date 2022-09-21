@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.BoundingSphere")
 @js.native
-class BoundingSphere protected ()
+open class BoundingSphere protected ()
   extends StObject
      with typings.babylonjs.BABYLON.BoundingSphere {
   /**
@@ -34,17 +34,31 @@ object BoundingSphere {
   val ^ : js.Any = js.native
   
   /**
-    * Checks if two sphere intersct
+    * Creates a sphere from a center and a radius
+    * @param center The center
+    * @param radius radius
+    * @param matrix Optional worldMatrix
+    * @returns The sphere
+    */
+  inline def CreateFromCenterAndRadius(center: DeepImmutable[typings.babylonjs.BABYLON.Vector3], radius: Double): typings.babylonjs.BABYLON.BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.BoundingSphere]
+  inline def CreateFromCenterAndRadius(
+    center: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
+    radius: Double,
+    matrix: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
+  ): typings.babylonjs.BABYLON.BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.BoundingSphere]
+  
+  /**
+    * Checks if two sphere intersect
     * @param sphere0 sphere 0
     * @param sphere1 sphere 1
-    * @returns true if the speres intersect
+    * @returns true if the spheres intersect
     */
   inline def Intersects(
     sphere0: DeepImmutable[typings.babylonjs.BABYLON.BoundingSphere],
     sphere1: DeepImmutable[typings.babylonjs.BABYLON.BoundingSphere]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersects")(sphere0.asInstanceOf[js.Any], sphere1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("BABYLON.BoundingSphere.TmpVector3")
+  @JSGlobal("BABYLON.BoundingSphere._TmpVector3")
   @js.native
-  val TmpVector3: js.Any = js.native
+  val _TmpVector3: Any = js.native
 }

@@ -10,10 +10,10 @@ object securityMod {
   
   @JSImport("material-ui/svg-icons/hardware/security", JSImport.Default)
   @js.native
-  class default () extends HardwareSecurity
+  open class default () extends HardwareSecurity
   
   @JSImport("material-ui/svg-icons/hardware/security", "HardwareSecurity")
   @js.native
-  class HardwareSecurity ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareSecurity ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

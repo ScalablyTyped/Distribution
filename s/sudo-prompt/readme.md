@@ -10,10 +10,10 @@ Run a command using sudo, prompting the user with an OS dialog if necessary
 | ------------------ | :-------------: |
 | Full name          | sudo-prompt |
 | Keywords           | sudo, os, dialog, prompt, command, exec, user access control, UAC, privileges, administrative, elevate, run as administrator |
-| # releases         | 6 |
-| # dependents       | 117 |
-| # downloads        | 21243937 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6787537.333333333 |
+| # stars            | 413.0 |
 
 ## Links
 - [Homepage](https://github.com/jorangreef/sudo-prompt#readme)

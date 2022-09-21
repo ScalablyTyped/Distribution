@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("identicon.js", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Identicon {
     def this(hash: String) = this()
@@ -227,7 +227,7 @@ object mod {
       
       inline def setRectangles(value: js.Array[typings.identiconJs.anon.Color]): Self = StObject.set(x, "rectangles", value.asInstanceOf[js.Any])
       
-      inline def setRectanglesVarargs(value: typings.identiconJs.anon.Color*): Self = StObject.set(x, "rectangles", js.Array(value :_*))
+      inline def setRectanglesVarargs(value: typings.identiconJs.anon.Color*): Self = StObject.set(x, "rectangles", js.Array(value*))
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }

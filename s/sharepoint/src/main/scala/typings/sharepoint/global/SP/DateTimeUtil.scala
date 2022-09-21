@@ -8,7 +8,7 @@ object DateTimeUtil {
   
   @JSGlobal("SP.DateTimeUtil.SimpleDate")
   @js.native
-  class SimpleDate protected ()
+  open class SimpleDate protected ()
     extends StObject
        with typings.sharepoint.SP.DateTimeUtil.SimpleDate {
     def this(year: Double, month: Double, day: Double, era: Double) = this()

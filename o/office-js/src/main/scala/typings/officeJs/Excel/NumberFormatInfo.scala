@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
   *
+  * @remarks
   * [Api set: ExcelApi 1.11]
   */
 @js.native
@@ -35,17 +35,17 @@ trait NumberFormatInfo
   def load(propertyNames: js.Array[String]): NumberFormatInfo = js.native
   
   /**
-    *
     * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   val numberDecimalSeparator: String = js.native
   
   /**
-    *
     * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   val numberGroupSeparator: String = js.native

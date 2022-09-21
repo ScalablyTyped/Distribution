@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination.
   *
+  * @remarks
   * [Api set: ExcelApi 1.4]
   */
 trait SettingCollectionLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait SettingCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The key that represents the ID of the setting.
     *
-    * For EACH ITEM in the collection: The key that represents the id of the Setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var key: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the value stored for this setting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var value: js.UndefOr[Boolean] = js.undefined

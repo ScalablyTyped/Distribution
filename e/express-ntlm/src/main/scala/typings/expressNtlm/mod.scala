@@ -2,11 +2,9 @@ package typings.expressNtlm
 
 import typings.express.mod.Handler
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.node.tlsMod.ConnectionOptions
-import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,9 +47,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setBadrequest(
-        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
-      ): Self = StObject.set(x, "badrequest", js.Any.fromFunction3(value))
+      inline def setBadrequest(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "badrequest", js.Any.fromFunction3(value))
       
       inline def setBadrequestUndefined: Self = StObject.set(x, "badrequest", js.undefined)
       
@@ -67,17 +63,13 @@ object mod {
       
       inline def setDomaincontrollerUndefined: Self = StObject.set(x, "domaincontroller", js.undefined)
       
-      inline def setDomaincontrollerVarargs(value: String*): Self = StObject.set(x, "domaincontroller", js.Array(value :_*))
+      inline def setDomaincontrollerVarargs(value: String*): Self = StObject.set(x, "domaincontroller", js.Array(value*))
       
-      inline def setForbidden(
-        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
-      ): Self = StObject.set(x, "forbidden", js.Any.fromFunction3(value))
+      inline def setForbidden(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "forbidden", js.Any.fromFunction3(value))
       
       inline def setForbiddenUndefined: Self = StObject.set(x, "forbidden", js.undefined)
       
-      inline def setInternalservererror(
-        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
-      ): Self = StObject.set(x, "internalservererror", js.Any.fromFunction3(value))
+      inline def setInternalservererror(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "internalservererror", js.Any.fromFunction3(value))
       
       inline def setInternalservererrorUndefined: Self = StObject.set(x, "internalservererror", js.undefined)
       
@@ -89,9 +81,7 @@ object mod {
       
       inline def setTlsOptionsUndefined: Self = StObject.set(x, "tlsOptions", js.undefined)
       
-      inline def setUnauthorized(
-        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
-      ): Self = StObject.set(x, "unauthorized", js.Any.fromFunction3(value))
+      inline def setUnauthorized(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "unauthorized", js.Any.fromFunction3(value))
       
       inline def setUnauthorizedUndefined: Self = StObject.set(x, "unauthorized", js.undefined)
     }

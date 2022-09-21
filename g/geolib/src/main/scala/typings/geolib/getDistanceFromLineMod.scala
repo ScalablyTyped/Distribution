@@ -12,4 +12,10 @@ object getDistanceFromLineMod {
   val ^ : js.Any = js.native
   
   inline def default(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any], lineStart.asInstanceOf[js.Any], lineEnd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(
+    point: GeolibInputCoordinates,
+    lineStart: GeolibInputCoordinates,
+    lineEnd: GeolibInputCoordinates,
+    accuracy: Double
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any], lineStart.asInstanceOf[js.Any], lineEnd.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

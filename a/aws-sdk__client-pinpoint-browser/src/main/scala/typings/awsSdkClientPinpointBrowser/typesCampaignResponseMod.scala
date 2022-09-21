@@ -12,7 +12,6 @@ import typings.awsSdkClientPinpointBrowser.typesScheduleMod.Schedule
 import typings.awsSdkClientPinpointBrowser.typesScheduleMod.UnmarshalledSchedule
 import typings.awsSdkClientPinpointBrowser.typesTreatmentResourceMod.TreatmentResource
 import typings.awsSdkClientPinpointBrowser.typesTreatmentResourceMod.UnmarshalledTreatmentResource
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object typesCampaignResponseMod {
     /**
       * Treatments that are defined in addition to the default treatment.
       */
-    var AdditionalTreatments: js.UndefOr[js.Array[TreatmentResource] | Iterable[TreatmentResource]] = js.undefined
+    var AdditionalTreatments: js.UndefOr[js.Array[TreatmentResource] | js.Iterable[TreatmentResource]] = js.undefined
     
     /**
       * The ID of the application to which the campaign applies.
@@ -134,11 +133,11 @@ object typesCampaignResponseMod {
     
     extension [Self <: CampaignResponse](x: Self) {
       
-      inline def setAdditionalTreatments(value: js.Array[TreatmentResource] | Iterable[TreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
+      inline def setAdditionalTreatments(value: js.Array[TreatmentResource] | js.Iterable[TreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
       
       inline def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
       
-      inline def setAdditionalTreatmentsVarargs(value: TreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
+      inline def setAdditionalTreatmentsVarargs(value: TreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value*))
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
@@ -279,7 +278,7 @@ object typesCampaignResponseMod {
       
       inline def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
       
-      inline def setAdditionalTreatmentsVarargs(value: UnmarshalledTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
+      inline def setAdditionalTreatmentsVarargs(value: UnmarshalledTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value*))
       
       inline def setDefaultState(value: UnmarshalledCampaignState): Self = StObject.set(x, "DefaultState", value.asInstanceOf[js.Any])
       

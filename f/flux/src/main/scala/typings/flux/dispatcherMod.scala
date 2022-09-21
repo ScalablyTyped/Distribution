@@ -18,7 +18,7 @@ object dispatcherMod {
     *     var dispatcher = new flux.Dispatcher<any>()
     *     var typedDispatcher = new flux.Dispatcher<MyCustomActionType>()
     */
-  class ^[TPayload] ()
+  open class ^[TPayload] ()
     extends StObject
        with Dispatcher[TPayload] {
     

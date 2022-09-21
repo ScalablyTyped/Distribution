@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "CanvasPathPainter")
 @js.native
-class CanvasPathPainter protected () extends CanvasStyler {
+open class CanvasPathPainter protected () extends CanvasStyler {
   def this(ctx: CanvasRenderingContext2D) = this()
   
   def path(points: js.Array[Point]): this.type = js.native

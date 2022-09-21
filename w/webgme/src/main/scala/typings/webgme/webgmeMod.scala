@@ -17,15 +17,15 @@ object webgmeMod {
   
   @JSImport("webgme", "Standalone")
   @js.native
-  class Standalone protected () extends StObject {
-    def this(config: js.Any) = this()
+  open class Standalone protected () extends StObject {
+    def this(config: Any) = this()
     
-    def start(fn: js.Any): Unit = js.native
+    def start(fn: Any): Unit = js.native
     
     def stop(): Unit = js.native
   }
   
-  inline def addToRequireJsPaths(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addToRequireJsPaths")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addToRequireJsPaths(config: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addToRequireJsPaths")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def standaloneServer(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("standaloneServer")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def standaloneServer(config: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("standaloneServer")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

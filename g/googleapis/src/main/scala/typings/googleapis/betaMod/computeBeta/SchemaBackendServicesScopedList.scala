@@ -13,10 +13,9 @@ trait SchemaBackendServicesScopedList extends StObject {
   var backendServices: js.UndefOr[js.Array[SchemaBackendService]] = js.undefined
   
   /**
-    * Informational warning which replaces the list of backend services when
-    * the list is empty.
+    * Informational warning which replaces the list of backend services when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaBackendServicesScopedList {
   
@@ -31,9 +30,11 @@ object SchemaBackendServicesScopedList {
     
     inline def setBackendServicesUndefined: Self = StObject.set(x, "backendServices", js.undefined)
     
-    inline def setBackendServicesVarargs(value: SchemaBackendService*): Self = StObject.set(x, "backendServices", js.Array(value :_*))
+    inline def setBackendServicesVarargs(value: SchemaBackendService*): Self = StObject.set(x, "backendServices", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

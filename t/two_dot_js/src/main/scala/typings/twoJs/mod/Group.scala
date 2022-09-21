@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "Group")
 @js.native
-class Group ()
+open class Group ()
   extends StObject
      with Object {
   
@@ -62,5 +62,5 @@ object Group {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def MakeObservable(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def MakeObservable(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

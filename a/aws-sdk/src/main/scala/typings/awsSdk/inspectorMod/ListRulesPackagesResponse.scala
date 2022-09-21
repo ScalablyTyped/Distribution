@@ -31,6 +31,6 @@ object ListRulesPackagesResponse {
     
     inline def setRulesPackageArns(value: ListReturnedArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
-    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value*))
   }
 }

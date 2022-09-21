@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Service extends StObject {
   
   /**
-    * Identifier of the AWS account in which the service runs.
+    * Identifier of the Amazon Web Services account in which the service runs.
     */
   var AccountId: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ trait Service extends StObject {
   /**
     * The end time of the last segment that the service generated.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The canonical name of the service.
@@ -54,7 +54,7 @@ trait Service extends StObject {
   /**
     * The start time of the first segment that the service generated.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The service's state.
@@ -67,7 +67,7 @@ trait Service extends StObject {
   var SummaryStatistics: js.UndefOr[ServiceStatistics] = js.undefined
   
   /**
-    * The type of service.   AWS Resource - The type of an AWS resource. For example, AWS::EC2::Instance for an application running on Amazon EC2 or AWS::DynamoDB::Table for an Amazon DynamoDB table that the application used.   AWS Service - The type of an AWS service. For example, AWS::DynamoDB for downstream calls to Amazon DynamoDB that didn't target a specific table.    client - Represents the clients that sent requests to a root service.    remote - A downstream service of indeterminate type.  
+    * The type of service.   Amazon Web Services Resource - The type of an Amazon Web Services resource. For example, AWS::EC2::Instance for an application running on Amazon EC2 or AWS::DynamoDB::Table for an Amazon DynamoDB table that the application used.   Amazon Web Services Service - The type of an Amazon Web Services service. For example, AWS::DynamoDB for downstream calls to Amazon DynamoDB that didn't target a specific table.    client - Represents the clients that sent requests to a root service.    remote - A downstream service of indeterminate type.  
     */
   var Type: js.UndefOr[String] = js.undefined
 }
@@ -88,15 +88,15 @@ object Service {
     
     inline def setDurationHistogramUndefined: Self = StObject.set(x, "DurationHistogram", js.undefined)
     
-    inline def setDurationHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value :_*))
+    inline def setDurationHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value*))
     
     inline def setEdges(value: EdgeList): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
     
     inline def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
     
-    inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "Edges", js.Array(value*))
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -108,7 +108,7 @@ object Service {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setReferenceId(value: NullableInteger): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
     
@@ -118,13 +118,13 @@ object Service {
     
     inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
     
-    inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+    inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value*))
     
     inline def setRoot(value: NullableBoolean): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
     inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

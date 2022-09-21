@@ -48,7 +48,7 @@ object GetDeliverabilityTestReportResponse {
     
     inline def setIspPlacements(value: IspPlacements): Self = StObject.set(x, "IspPlacements", value.asInstanceOf[js.Any])
     
-    inline def setIspPlacementsVarargs(value: IspPlacement*): Self = StObject.set(x, "IspPlacements", js.Array(value :_*))
+    inline def setIspPlacementsVarargs(value: IspPlacement*): Self = StObject.set(x, "IspPlacements", js.Array(value*))
     
     inline def setMessage(value: MessageContent): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object GetDeliverabilityTestReportResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

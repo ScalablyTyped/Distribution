@@ -27,5 +27,5 @@ object mergeStylesMod {
   inline def mergeCss_false(args: `false`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeCss")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def mergeCss_false(args: `false`, options: IStyleOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeCss")(args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def mergeStyles_false(args: (js.UndefOr[IStyle | IStyleBaseArray | `false` | Null])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def mergeStyles_false(args: (js.UndefOr[IStyle | IStyleBaseArray | `false` | Null])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
 }

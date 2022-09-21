@@ -12,13 +12,14 @@ import typings.tabris.mod.ConstraintValue
 import typings.tabris.mod.Dimension
 import typings.tabris.mod.EventObject
 import typings.tabris.mod.ImageValue
-import typings.tabris.mod.JSXAttributes
+import typings.tabris.mod.JSXCompositeAttributes
 import typings.tabris.mod.LayoutDataValue
 import typings.tabris.mod.LinearGradientValue
 import typings.tabris.mod.Listeners
 import typings.tabris.mod.NativeObject
 import typings.tabris.mod.Omit
 import typings.tabris.mod.Properties
+import typings.tabris.mod.RuleSet
 import typings.tabris.mod.Selector
 import typings.tabris.mod.SiblingReferenceValue
 import typings.tabris.mod.StackLayout
@@ -50,7 +51,6 @@ import typings.tabris.tabrisStrings.excludeFromLayout
 import typings.tabris.tabrisStrings.height
 import typings.tabris.tabrisStrings.highlightOnTouch
 import typings.tabris.tabrisStrings.id
-import typings.tabris.tabrisStrings.jsxAttributes
 import typings.tabris.tabrisStrings.layoutData
 import typings.tabris.tabrisStrings.left
 import typings.tabris.tabrisStrings.opacity
@@ -69,7 +69,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OmitStackset extends StObject {
   
   @JSName("$children")
-  var $children: js.Array[Widget]
+  var $children: js.Array[Widget[Any]]
   
   @JSName("$flushChildren")
   def $flushChildren(): Unit
@@ -77,28 +77,28 @@ trait OmitStackset extends StObject {
   var $flushChildren_Original: js.Function0[Unit]
   
   @JSName("$getProperty")
-  def $getProperty(name: String): js.Any
+  def $getProperty(name: String): Any
   
   @JSName("$getPropertyGetter")
-  def $getPropertyGetter(propertyName: String): js.Any
+  def $getPropertyGetter(propertyName: String): Any
   @JSName("$getPropertyGetter")
-  var $getPropertyGetter_Original: js.Function1[/* propertyName */ String, js.Any]
+  var $getPropertyGetter_Original: js.Function1[/* propertyName */ String, Any]
   
   @JSName("$getPropertySetter")
-  def $getPropertySetter(propertyName: String): js.Any
+  def $getPropertySetter(propertyName: String): Any
   @JSName("$getPropertySetter")
-  var $getPropertySetter_Original: js.Function1[/* propertyName */ String, js.Any]
+  var $getPropertySetter_Original: js.Function1[/* propertyName */ String, Any]
   
   @JSName("$getProperty")
-  var $getProperty_Original: js.Function1[/* name */ String, js.Any]
+  var $getProperty_Original: js.Function1[/* name */ String, Any]
   
   @JSName("$props")
-  var $props: js.Any
+  var $props: Any
   
   @JSName("$setProperty")
-  def $setProperty(name: String, value: js.Any): Unit
+  def $setProperty(name: String, value: Any): Unit
   @JSName("$setProperty")
-  var $setProperty_Original: js.Function2[/* name */ String, /* value */ js.Any, Unit]
+  var $setProperty_Original: js.Function2[/* name */ String, /* value */ Any, Unit]
   
   @JSName("$trigger")
   def $trigger(eventType: String): Unit
@@ -107,24 +107,18 @@ trait OmitStackset extends StObject {
   @JSName("$trigger")
   var $trigger_Original: js.Function2[/* eventType */ String, /* eventData */ js.UndefOr[js.Object], Unit]
   
-  def _acceptChild(child: Widget): Boolean
+  def _acceptChild(child: Widget[Any]): Boolean
   @JSName("_acceptChild")
-  var _acceptChild_Original: js.Function1[/* child */ Widget, Boolean]
+  var _acceptChild_Original: js.Function1[/* child */ Widget[Any], Boolean]
   
-  def _addChild(child: Widget): Unit
-  def _addChild(child: Widget, index: Double): Unit
+  def _addChild(child: Widget[Any]): Unit
+  def _addChild(child: Widget[Any], index: Double): Unit
   @JSName("_addChild")
-  var _addChild_Original: js.Function2[/* child */ Widget, /* index */ js.UndefOr[Double], Unit]
+  var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `11`[Target]): Stack
-  def _apply[Target](options: `11`[Target], rules: js.Function1[/* widget */ Stack, StringDictionary[js.Object]]): Stack
-  def _apply[Target](options: `11`[Target], rules: StringDictionary[js.Object]): Stack
+  def _apply[Target](options: `9`[Target], rules: RuleSet[Stack]): Stack
   @JSName("_apply")
-  var _apply_Original: js.Function2[
-    /* options */ `11`[Stack], 
-    /* rules */ StringDictionary[js.Object] | (js.Function1[/* widget */ Stack, StringDictionary[js.Object]]) | Null, 
-    Stack
-  ]
+  var _apply_Original: js.Function2[/* options */ `9`[Stack], /* rules */ RuleSet[Stack], Stack]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -134,44 +128,50 @@ trait OmitStackset extends StObject {
   @JSName("_checkLayout")
   var _checkLayout_Original: js.Function1[/* value */ typings.tabris.mod.Layout, Unit]
   
-  def _children[Result /* <: Widget */](): WidgetCollection[Result]
-  def _children[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result]
+  def _children[Result /* <: Widget[Any] */](): WidgetCollection[Result]
+  def _children[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result]
   @JSName("_children")
-  var _children_Original: js.Function1[/* selector */ js.UndefOr[Selector[Widget, Widget]], WidgetCollection[Widget]]
+  var _children_Original: js.Function1[
+    /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]], 
+    WidgetCollection[Widget[Any]]
+  ]
   
-  def _decodeProperty(propertyName: String, value: js.Any): js.Any
+  def _decodeProperty(propertyName: String, value: Any): Any
   @JSName("_decodeProperty")
-  var _decodeProperty_Original: js.Function2[/* propertyName */ String, /* value */ js.Any, js.Any]
+  var _decodeProperty_Original: js.Function2[/* propertyName */ String, /* value */ Any, Any]
   
   def _dispose(): Unit
   def _dispose(skipNative: Boolean): Unit
   @JSName("_dispose")
   var _dispose_Original: js.Function1[/* skipNative */ js.UndefOr[Boolean], Unit]
   
-  def _encodeProperty(propertyName: String, value: js.Any): js.Any
+  def _encodeProperty(propertyName: String, value: Any): Any
   @JSName("_encodeProperty")
-  var _encodeProperty_Original: js.Function2[/* propertyName */ String, /* value */ js.Any, js.Any]
+  var _encodeProperty_Original: js.Function2[/* propertyName */ String, /* value */ Any, Any]
   
-  def _find[Result /* <: Widget */](): WidgetCollection[Result]
-  def _find[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result]
+  def _find[Result /* <: Widget[Any] */](): WidgetCollection[Result]
+  def _find[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result]
   @JSName("_find")
-  var _find_Original: js.Function1[/* selector */ js.UndefOr[Selector[Widget, Widget]], WidgetCollection[Widget]]
+  var _find_Original: js.Function1[
+    /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]], 
+    WidgetCollection[Widget[Any]]
+  ]
   
   def _getDefaultPropertyValue(propertyName: String): Unit
   @JSName("_getDefaultPropertyValue")
   var _getDefaultPropertyValue_Original: js.Function1[/* propertyName */ String, Unit]
   
-  def _getStoredProperty(propertyName: String): js.Any
+  def _getStoredProperty(propertyName: String): Any
   @JSName("_getStoredProperty")
-  var _getStoredProperty_Original: js.Function1[/* propertyName */ String, js.Any]
+  var _getStoredProperty_Original: js.Function1[/* propertyName */ String, Any]
   
-  def _getTypeDef(propertyName: String): js.Any
+  def _getTypeDef(propertyName: String): Any
   @JSName("_getTypeDef")
-  var _getTypeDef_Original: js.Function1[/* propertyName */ String, js.Any]
+  var _getTypeDef_Original: js.Function1[/* propertyName */ String, Any]
   
-  def _getXMLAttributes(): js.Array[js.Tuple2[String, js.Any]]
+  def _getXMLAttributes(): js.Array[js.Tuple2[String, Any]]
   @JSName("_getXMLAttributes")
-  var _getXMLAttributes_Original: js.Function0[js.Array[js.Tuple2[String, js.Any]]]
+  var _getXMLAttributes_Original: js.Function0[js.Array[js.Tuple2[String, Any]]]
   
   def _getXMLContent(): js.Array[String]
   @JSName("_getXMLContent")
@@ -206,26 +206,26 @@ trait OmitStackset extends StObject {
   @JSName("_listen")
   var _listen_Original: js.Function2[/* eventName */ String, /* listening */ Boolean, Unit]
   
-  def _nativeCall(methodName: String, parameters: js.Object): js.Any
+  def _nativeCall(methodName: String, parameters: js.Object): Any
   @JSName("_nativeCall")
-  var _nativeCall_Original: js.Function2[/* methodName */ String, /* parameters */ js.Object, js.Any]
+  var _nativeCall_Original: js.Function2[/* methodName */ String, /* parameters */ js.Object, Any]
   
   def _nativeCreate(): Unit
-  def _nativeCreate(param: StringDictionary[js.Any]): Unit
+  def _nativeCreate(param: StringDictionary[Any]): Unit
   @JSName("_nativeCreate")
-  var _nativeCreate_Original: js.Function1[/* param */ js.UndefOr[StringDictionary[js.Any]], Unit]
+  var _nativeCreate_Original: js.Function1[/* param */ js.UndefOr[StringDictionary[Any]], Unit]
   
-  def _nativeGet(propertyName: String): js.Any
+  def _nativeGet(propertyName: String): Any
   @JSName("_nativeGet")
-  var _nativeGet_Original: js.Function1[/* propertyName */ String, js.Any]
+  var _nativeGet_Original: js.Function1[/* propertyName */ String, Any]
   
   def _nativeListen(eventType: String, listen: Boolean): Unit
   @JSName("_nativeListen")
   var _nativeListen_Original: js.Function2[/* eventType */ String, /* listen */ Boolean, Unit]
   
-  def _nativeSet(propertyName: String, value: js.Any): Unit
+  def _nativeSet(propertyName: String, value: Any): Unit
   @JSName("_nativeSet")
-  var _nativeSet_Original: js.Function2[/* propertyName */ String, /* value */ js.Any, Unit]
+  var _nativeSet_Original: js.Function2[/* propertyName */ String, /* value */ Any, Unit]
   
   def _nativeType(): String
   @JSName("_nativeType")
@@ -243,9 +243,9 @@ trait OmitStackset extends StObject {
   @JSName("_release")
   var _release_Original: js.Function0[Unit]
   
-  def _removeChild(child: Widget): Unit
+  def _removeChild(child: Widget[Any]): Unit
   @JSName("_removeChild")
-  var _removeChild_Original: js.Function1[/* child */ Widget, Unit]
+  var _removeChild_Original: js.Function1[/* child */ Widget[Any], Unit]
   
   def _reorderProperties(propertyNames: js.Array[String]): js.Array[String]
   @JSName("_reorderProperties")
@@ -255,21 +255,21 @@ trait OmitStackset extends StObject {
   @JSName("_scheduleRenderChildren")
   var _scheduleRenderChildren_Original: js.Function0[Unit]
   
-  def _setParent(parent: Composite[Widget]): Unit
-  def _setParent(parent: Composite[Widget], index: Double): Unit
+  def _setParent(parent: Composite[Widget[Any]]): Unit
+  def _setParent(parent: Composite[Widget[Any]], index: Double): Unit
   @JSName("_setParent")
-  var _setParent_Original: js.Function2[/* parent */ Composite[Widget], /* index */ js.UndefOr[Double], Unit]
+  var _setParent_Original: js.Function2[/* parent */ Composite[Widget[Any]], /* index */ js.UndefOr[Double], Unit]
   
-  def _storeProperty(propertyName: String, encodedValue: js.Any): Unit
+  def _storeProperty(propertyName: String, encodedValue: Any): Unit
   @JSName("_storeProperty")
-  var _storeProperty_Original: js.Function2[/* propertyName */ String, /* encodedValue */ js.Any, Unit]
+  var _storeProperty_Original: js.Function2[/* propertyName */ String, /* encodedValue */ Any, Unit]
   
   def _trigger(eventType: String): Boolean
   def _trigger(eventType: String, eventData: js.Object): Boolean
   
-  def _triggerChangeEvent(propertyName: String, newEncodedValue: js.Any): Unit
+  def _triggerChangeEvent(propertyName: String, newEncodedValue: Any): Unit
   @JSName("_triggerChangeEvent")
-  var _triggerChangeEvent_Original: js.Function2[/* propertyName */ String, /* newEncodedValue */ js.Any, Unit]
+  var _triggerChangeEvent_Original: js.Function2[/* propertyName */ String, /* newEncodedValue */ Any, Unit]
   
   @JSName("_trigger")
   var _trigger_Original: js.Function2[/* eventType */ String, /* eventData */ js.UndefOr[js.Object], Boolean]
@@ -286,27 +286,19 @@ trait OmitStackset extends StObject {
   @JSName("animate")
   var animate_Original: js.Function2[/* properties */ Opacity, /* options */ AnimationOptions, js.Promise[Unit]]
   
-  def append(widgets: Widget*): Stack
+  def append(widgets: Widget[Any]*): Stack
   
-  def appendTo(parent: Composite[Widget]): Stack
+  def appendTo(parent: Composite[Widget[Any]]): Stack
   @JSName("appendTo")
-  var appendTo_Original: js.Function1[/* parent */ Composite[Widget], Stack]
+  var appendTo_Original: js.Function1[/* parent */ Composite[Widget[Any]], Stack]
   
   @JSName("append")
-  var append_Original: js.Function1[/* repeated */ Widget, Stack]
+  var append_Original: js.Function1[/* repeated */ Widget[Any], Stack]
   
   @JSName("apply")
-  def apply[Target](options: `11`[Target]): Stack
+  def apply[Target](options: `9`[Target], rules: RuleSet[Stack]): Stack
   @JSName("apply")
-  def apply[Target](options: `11`[Target], rules: js.Function1[/* widget */ Stack, StringDictionary[js.Object]]): Stack
-  @JSName("apply")
-  def apply[Target](options: `11`[Target], rules: StringDictionary[js.Object]): Stack
-  @JSName("apply")
-  var apply_Original: js.Function2[
-    /* options */ `11`[Stack], 
-    /* rules */ StringDictionary[js.Object] | (js.Function1[/* widget */ Stack, StringDictionary[js.Object]]) | Null, 
-    Stack
-  ]
+  var apply_Original: js.Function2[/* options */ `9`[Stack], /* rules */ RuleSet[Stack], Stack]
   
   var background: LinearGradientValue | ColorValue | ImageValue
   
@@ -320,10 +312,13 @@ trait OmitStackset extends StObject {
   
   var centerY: typings.tabris.mod.Offset | auto | `true`
   
-  def children[Result /* <: Widget */](): WidgetCollection[Result]
-  def children[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result]
+  def children[Result /* <: Widget[Any] */](): WidgetCollection[Result]
+  def children[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result]
   @JSName("children")
-  var children_Original: js.Function1[/* selector */ js.UndefOr[Selector[Widget, Widget]], WidgetCollection[Widget]]
+  var children_Original: js.Function1[
+    /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]], 
+    WidgetCollection[Widget[Any]]
+  ]
   
   var cid: String
   
@@ -332,21 +327,21 @@ trait OmitStackset extends StObject {
   var classList: js.Array[String]
   
   @JSName("constructor")
-  var constructor_Original: js.Function1[/* properties */ js.UndefOr[Properties[Stack, Omit[Stack, set]]], js.Any]
+  var constructor_Original: js.Function1[/* properties */ js.UndefOr[Properties[Stack, Omit[Stack, set]]], Any]
   
   var cornerRadius: Double
   
-  var data: StringDictionary[js.Any]
+  var data: Any
   
-  var defineChangeEvent: js.UndefOr[js.Any] = js.undefined
+  var defineChangeEvent: js.UndefOr[Any] = js.undefined
   
-  var defineEvent: js.UndefOr[js.Any] = js.undefined
+  var defineEvent: js.UndefOr[Any] = js.undefined
   
-  var defineEvents: js.UndefOr[js.Any] = js.undefined
+  var defineEvents: js.UndefOr[Any] = js.undefined
   
-  var defineProperties: js.UndefOr[js.Any] = js.undefined
+  var defineProperties: js.UndefOr[Any] = js.undefined
   
-  var defineProperty: js.UndefOr[js.Any] = js.undefined
+  var defineProperty: js.UndefOr[Any] = js.undefined
   
   def detach(): Stack
   @JSName("detach")
@@ -362,12 +357,15 @@ trait OmitStackset extends StObject {
   
   var excludeFromLayout: Boolean
   
-  var extend: js.UndefOr[js.Any] = js.undefined
+  var extend: js.UndefOr[Any] = js.undefined
   
-  def find[Result /* <: Widget */](): WidgetCollection[Result]
-  def find[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result]
+  def find[Result /* <: Widget[Any] */](): WidgetCollection[Result]
+  def find[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result]
   @JSName("find")
-  var find_Original: js.Function1[/* selector */ js.UndefOr[Selector[Widget, Widget]], WidgetCollection[Widget]]
+  var find_Original: js.Function1[
+    /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]], 
+    WidgetCollection[Widget[Any]]
+  ]
   
   var height: Dimension | auto
   
@@ -375,19 +373,19 @@ trait OmitStackset extends StObject {
   
   var id: String
   
-  def insertAfter(widget: Widget): Stack
+  def insertAfter(widget: Widget[Any]): Stack
   @JSName("insertAfter")
-  var insertAfter_Original: js.Function1[/* widget */ Widget, Stack]
+  var insertAfter_Original: js.Function1[/* widget */ Widget[Any], Stack]
   
-  def insertBefore(widget: Widget): Stack
+  def insertBefore(widget: Widget[Any]): Stack
   @JSName("insertBefore")
-  var insertBefore_Original: js.Function1[/* widget */ Widget, Stack]
+  var insertBefore_Original: js.Function1[/* widget */ Widget[Any], Stack]
   
   def isDisposed(): Boolean
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[Stack, Omit[Stack, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
+  var jsxAttributes: JSXCompositeAttributes[Stack, Widget[Any]]
   
   var layout: StackLayout
   
@@ -409,10 +407,10 @@ trait OmitStackset extends StObject {
     Stack
   ]
   
-  def on(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], js.Any]): Stack
+  def on(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Any]): Stack
   def on(
     `type`: String,
-    listener: js.Function1[/* event */ EventObject[NativeObject], js.Any],
+    listener: js.Function1[/* event */ EventObject[NativeObject], Any],
     context: js.Object
   ): Stack
   
@@ -509,21 +507,21 @@ trait OmitStackset extends StObject {
   @JSName("on")
   var on_Original: js.Function3[
     /* type */ String, 
-    /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], 
+    /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], 
     /* context */ js.UndefOr[js.Object], 
     Stack
   ]
   
-  def once(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], js.Any]): Stack
+  def once(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Any]): Stack
   def once(
     `type`: String,
-    listener: js.Function1[/* event */ EventObject[NativeObject], js.Any],
+    listener: js.Function1[/* event */ EventObject[NativeObject], Any],
     context: js.Object
   ): Stack
   @JSName("once")
   var once_Original: js.Function3[
     /* type */ String, 
-    /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], 
+    /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], 
     /* context */ js.UndefOr[js.Object], 
     Stack
   ]
@@ -532,16 +530,19 @@ trait OmitStackset extends StObject {
   
   var padding: js.UndefOr[BoxDimensions | Null] = js.undefined
   
-  def parent(): Composite[Widget]
+  def parent(): Composite[Widget[Any]]
   @JSName("parent")
-  var parent_Original: js.Function0[Composite[Widget]]
+  var parent_Original: js.Function0[Composite[Widget[Any]]]
   
   var right: ConstraintValue
   
-  def siblings[Result /* <: Widget */](): WidgetCollection[Result]
-  def siblings[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result]
+  def siblings[Result /* <: Widget[Any] */](): WidgetCollection[Result]
+  def siblings[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result]
   @JSName("siblings")
-  var siblings_Original: js.Function1[/* selector */ js.UndefOr[Selector[Widget, Widget]], WidgetCollection[Widget]]
+  var siblings_Original: js.Function1[
+    /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]], 
+    WidgetCollection[Widget[Any]]
+  ]
   
   var spacing: Double
   
@@ -565,28 +566,28 @@ trait OmitStackset extends StObject {
 object OmitStackset {
   
   inline def apply(
-    $children: js.Array[Widget],
+    $children: js.Array[Widget[Any]],
     $flushChildren: () => Unit,
-    $getProperty: /* name */ String => js.Any,
-    $getPropertyGetter: /* propertyName */ String => js.Any,
-    $getPropertySetter: /* propertyName */ String => js.Any,
-    $props: js.Any,
-    $setProperty: (/* name */ String, /* value */ js.Any) => Unit,
+    $getProperty: /* name */ String => Any,
+    $getPropertyGetter: /* propertyName */ String => Any,
+    $getPropertySetter: /* propertyName */ String => Any,
+    $props: Any,
+    $setProperty: (/* name */ String, /* value */ Any) => Unit,
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
-    _acceptChild: /* child */ Widget => Boolean,
-    _addChild: (/* child */ Widget, /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `11`[Stack], /* rules */ StringDictionary[js.Object] | (js.Function1[/* widget */ Stack, StringDictionary[js.Object]]) | Null) => Stack,
+    _acceptChild: /* child */ Widget[Any] => Boolean,
+    _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
+    _apply: (/* options */ `9`[Stack], /* rules */ RuleSet[Stack]) => Stack,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
-    _children: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget],
-    _decodeProperty: (/* propertyName */ String, /* value */ js.Any) => js.Any,
+    _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
+    _decodeProperty: (/* propertyName */ String, /* value */ Any) => Any,
     _dispose: /* skipNative */ js.UndefOr[Boolean] => Unit,
-    _encodeProperty: (/* propertyName */ String, /* value */ js.Any) => js.Any,
-    _find: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget],
+    _encodeProperty: (/* propertyName */ String, /* value */ Any) => Any,
+    _find: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
     _getDefaultPropertyValue: /* propertyName */ String => Unit,
-    _getStoredProperty: /* propertyName */ String => js.Any,
-    _getTypeDef: /* propertyName */ String => js.Any,
-    _getXMLAttributes: () => js.Array[js.Tuple2[String, js.Any]],
+    _getStoredProperty: /* propertyName */ String => Any,
+    _getTypeDef: /* propertyName */ String => Any,
+    _getXMLAttributes: () => js.Array[js.Tuple2[String, Any]],
     _getXMLContent: () => js.Array[String],
     _getXMLElementName: () => String,
     _getXMLFooter: /* hasChild */ Boolean => String,
@@ -595,59 +596,59 @@ object OmitStackset {
     _isListening: /* eventType */ String => Boolean,
     _layout: typings.tabris.mod.Layout,
     _listen: (/* eventName */ String, /* listening */ Boolean) => Unit,
-    _nativeCall: (/* methodName */ String, /* parameters */ js.Object) => js.Any,
-    _nativeCreate: /* param */ js.UndefOr[StringDictionary[js.Any]] => Unit,
-    _nativeGet: /* propertyName */ String => js.Any,
+    _nativeCall: (/* methodName */ String, /* parameters */ js.Object) => Any,
+    _nativeCreate: /* param */ js.UndefOr[StringDictionary[Any]] => Unit,
+    _nativeGet: /* propertyName */ String => Any,
     _nativeListen: (/* eventType */ String, /* listen */ Boolean) => Unit,
-    _nativeSet: (/* propertyName */ String, /* value */ js.Any) => Unit,
+    _nativeSet: (/* propertyName */ String, /* value */ Any) => Unit,
     _nativeType: () => String,
     _onoff: (/* eventType */ String, /* listening */ Boolean, /* listener */ js.Function) => Unit,
     _register: () => Unit,
     _release: () => Unit,
-    _removeChild: /* child */ Widget => Unit,
+    _removeChild: /* child */ Widget[Any] => Unit,
     _reorderProperties: /* propertyNames */ js.Array[String] => js.Array[String],
     _scheduleRenderChildren: () => Unit,
-    _setParent: (/* parent */ Composite[Widget], /* index */ js.UndefOr[Double]) => Unit,
-    _storeProperty: (/* propertyName */ String, /* encodedValue */ js.Any) => Unit,
+    _setParent: (/* parent */ Composite[Widget[Any]], /* index */ js.UndefOr[Double]) => Unit,
+    _storeProperty: (/* propertyName */ String, /* encodedValue */ Any) => Unit,
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
-    _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ js.Any) => Unit,
+    _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
     absoluteBounds: typings.tabris.mod.Bounds,
     alignment: left | centerX | stretchX | right,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
-    append: /* repeated */ Widget => Stack,
-    appendTo: /* parent */ Composite[Widget] => Stack,
-    apply: (/* options */ `11`[Stack], /* rules */ StringDictionary[js.Object] | (js.Function1[/* widget */ Stack, StringDictionary[js.Object]]) | Null) => Stack,
+    append: /* repeated */ Widget[Any] => Stack,
+    appendTo: /* parent */ Composite[Widget[Any]] => Stack,
+    apply: (/* options */ `9`[Stack], /* rules */ RuleSet[Stack]) => Stack,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: typings.tabris.mod.Bounds,
     centerX: typings.tabris.mod.Offset | auto | `true`,
     centerY: typings.tabris.mod.Offset | auto | `true`,
-    children: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget],
+    children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
     cid: String,
     `class`: String,
     classList: js.Array[String],
-    constructor: /* properties */ js.UndefOr[Properties[Stack, Omit[Stack, set]]] => js.Any,
+    constructor: /* properties */ js.UndefOr[Properties[Stack, Omit[Stack, set]]] => Any,
     cornerRadius: Double,
-    data: StringDictionary[js.Any],
+    data: Any,
     detach: () => Stack,
     dispose: () => Unit,
     elevation: Double,
     enabled: Boolean,
     excludeFromLayout: Boolean,
-    find: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget],
+    find: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
     height: Dimension | auto,
     highlightOnTouch: Boolean,
     id: String,
-    insertAfter: /* widget */ Widget => Stack,
-    insertBefore: /* widget */ Widget => Stack,
+    insertAfter: /* widget */ Widget[Any] => Stack,
+    insertBefore: /* widget */ Widget[Any] => Stack,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[Stack, Omit[Stack, set | jsxAttributes]]) & `3`,
+    jsxAttributes: JSXCompositeAttributes[Stack, Widget[Any]],
     layout: StackLayout,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => Stack,
-    on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => Stack,
+    on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => Stack,
     onAddChild: Listeners[CompositeAddChildEvent[Stack]],
     onBackgroundChanged: ChangeListeners[Stack, background],
     onBaselineChanged: ChangeListeners[Stack, baseline],
@@ -693,11 +694,11 @@ object OmitStackset {
     onTransformChanged: ChangeListeners[Stack, transform],
     onVisibleChanged: ChangeListeners[Stack, visible],
     onWidthChanged: ChangeListeners[Stack, width],
-    once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => Stack,
+    once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => Stack,
     opacity: Double,
-    parent: () => Composite[Widget],
+    parent: () => Composite[Widget[Any]],
     right: ConstraintValue,
-    siblings: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget],
+    siblings: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
     spacing: Double,
     top: ConstraintValue,
     transform: Transformation,
@@ -713,21 +714,21 @@ object OmitStackset {
   
   extension [Self <: OmitStackset](x: Self) {
     
-    inline def set$children(value: js.Array[Widget]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
+    inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     
-    inline def set$childrenVarargs(value: Widget*): Self = StObject.set(x, "$children", js.Array(value :_*))
+    inline def set$childrenVarargs(value: Widget[Any]*): Self = StObject.set(x, "$children", js.Array(value*))
     
     inline def set$flushChildren(value: () => Unit): Self = StObject.set(x, "$flushChildren", js.Any.fromFunction0(value))
     
-    inline def set$getProperty(value: /* name */ String => js.Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
+    inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     
-    inline def set$getPropertyGetter(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "$getPropertyGetter", js.Any.fromFunction1(value))
+    inline def set$getPropertyGetter(value: /* propertyName */ String => Any): Self = StObject.set(x, "$getPropertyGetter", js.Any.fromFunction1(value))
     
-    inline def set$getPropertySetter(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "$getPropertySetter", js.Any.fromFunction1(value))
+    inline def set$getPropertySetter(value: /* propertyName */ String => Any): Self = StObject.set(x, "$getPropertySetter", js.Any.fromFunction1(value))
     
-    inline def set$props(value: js.Any): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
+    inline def set$props(value: Any): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
     
-    inline def set$setProperty(value: (/* name */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "$setProperty", js.Any.fromFunction2(value))
+    inline def set$setProperty(value: (/* name */ String, /* value */ Any) => Unit): Self = StObject.set(x, "$setProperty", js.Any.fromFunction2(value))
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
@@ -737,13 +738,11 @@ object OmitStackset {
     
     inline def setAnimate(value: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit]): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
     
-    inline def setAppend(value: /* repeated */ Widget => Stack): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+    inline def setAppend(value: /* repeated */ Widget[Any] => Stack): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    inline def setAppendTo(value: /* parent */ Composite[Widget] => Stack): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
+    inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Stack): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(
-      value: (/* options */ `11`[Stack], /* rules */ StringDictionary[js.Object] | (js.Function1[/* widget */ Stack, StringDictionary[js.Object]]) | Null) => Stack
-    ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ `9`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -759,7 +758,9 @@ object OmitStackset {
     
     inline def setCenterY(value: typings.tabris.mod.Offset | auto | `true`): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
     
-    inline def setChildren(value: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget]): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(
+      value: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]]
+    ): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
@@ -767,31 +768,31 @@ object OmitStackset {
     
     inline def setClassList(value: js.Array[String]): Self = StObject.set(x, "classList", value.asInstanceOf[js.Any])
     
-    inline def setClassListVarargs(value: String*): Self = StObject.set(x, "classList", js.Array(value :_*))
+    inline def setClassListVarargs(value: String*): Self = StObject.set(x, "classList", js.Array(value*))
     
-    inline def setConstructor(value: /* properties */ js.UndefOr[Properties[Stack, Omit[Stack, set]]] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* properties */ js.UndefOr[Properties[Stack, Omit[Stack, set]]] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDefineChangeEvent(value: js.Any): Self = StObject.set(x, "defineChangeEvent", value.asInstanceOf[js.Any])
+    inline def setDefineChangeEvent(value: Any): Self = StObject.set(x, "defineChangeEvent", value.asInstanceOf[js.Any])
     
     inline def setDefineChangeEventUndefined: Self = StObject.set(x, "defineChangeEvent", js.undefined)
     
-    inline def setDefineEvent(value: js.Any): Self = StObject.set(x, "defineEvent", value.asInstanceOf[js.Any])
+    inline def setDefineEvent(value: Any): Self = StObject.set(x, "defineEvent", value.asInstanceOf[js.Any])
     
     inline def setDefineEventUndefined: Self = StObject.set(x, "defineEvent", js.undefined)
     
-    inline def setDefineEvents(value: js.Any): Self = StObject.set(x, "defineEvents", value.asInstanceOf[js.Any])
+    inline def setDefineEvents(value: Any): Self = StObject.set(x, "defineEvents", value.asInstanceOf[js.Any])
     
     inline def setDefineEventsUndefined: Self = StObject.set(x, "defineEvents", js.undefined)
     
-    inline def setDefineProperties(value: js.Any): Self = StObject.set(x, "defineProperties", value.asInstanceOf[js.Any])
+    inline def setDefineProperties(value: Any): Self = StObject.set(x, "defineProperties", value.asInstanceOf[js.Any])
     
     inline def setDefinePropertiesUndefined: Self = StObject.set(x, "defineProperties", js.undefined)
     
-    inline def setDefineProperty(value: js.Any): Self = StObject.set(x, "defineProperty", value.asInstanceOf[js.Any])
+    inline def setDefineProperty(value: Any): Self = StObject.set(x, "defineProperty", value.asInstanceOf[js.Any])
     
     inline def setDefinePropertyUndefined: Self = StObject.set(x, "defineProperty", js.undefined)
     
@@ -805,11 +806,13 @@ object OmitStackset {
     
     inline def setExcludeFromLayout(value: Boolean): Self = StObject.set(x, "excludeFromLayout", value.asInstanceOf[js.Any])
     
-    inline def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFind(value: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(
+      value: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]]
+    ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
     inline def setHeight(value: Dimension | auto): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -817,13 +820,13 @@ object OmitStackset {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setInsertAfter(value: /* widget */ Widget => Stack): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
+    inline def setInsertAfter(value: /* widget */ Widget[Any] => Stack): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
     
-    inline def setInsertBefore(value: /* widget */ Widget => Stack): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+    inline def setInsertBefore(value: /* widget */ Widget[Any] => Stack): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[Stack, Omit[Stack, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: JSXCompositeAttributes[Stack, Widget[Any]]): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayout(value: StackLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
@@ -836,7 +839,7 @@ object OmitStackset {
     ): Self = StObject.set(x, "off", js.Any.fromFunction3(value))
     
     inline def setOn(
-      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => Stack
+      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => Stack
     ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
     
     inline def setOnAddChild(value: Listeners[CompositeAddChildEvent[Stack]]): Self = StObject.set(x, "onAddChild", value.asInstanceOf[js.Any])
@@ -930,7 +933,7 @@ object OmitStackset {
     inline def setOnWidthChanged(value: ChangeListeners[Stack, width]): Self = StObject.set(x, "onWidthChanged", value.asInstanceOf[js.Any])
     
     inline def setOnce(
-      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => Stack
+      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => Stack
     ): Self = StObject.set(x, "once", js.Any.fromFunction3(value))
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
@@ -941,11 +944,13 @@ object OmitStackset {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setParent(value: () => Composite[Widget]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
+    inline def setParent(value: () => Composite[Widget[Any]]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
     
     inline def setRight(value: ConstraintValue): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setSiblings(value: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget]): Self = StObject.set(x, "siblings", js.Any.fromFunction1(value))
+    inline def setSiblings(
+      value: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]]
+    ): Self = StObject.set(x, "siblings", js.Any.fromFunction1(value))
     
     inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
@@ -961,35 +966,37 @@ object OmitStackset {
     
     inline def setWidth(value: Dimension | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    inline def set_acceptChild(value: /* child */ Widget => Boolean): Self = StObject.set(x, "_acceptChild", js.Any.fromFunction1(value))
+    inline def set_acceptChild(value: /* child */ Widget[Any] => Boolean): Self = StObject.set(x, "_acceptChild", js.Any.fromFunction1(value))
     
-    inline def set_addChild(value: (/* child */ Widget, /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
+    inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(
-      value: (/* options */ `11`[Stack], /* rules */ StringDictionary[js.Object] | (js.Function1[/* widget */ Stack, StringDictionary[js.Object]]) | Null) => Stack
-    ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ `9`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     
     inline def set_checkLayout(value: /* value */ typings.tabris.mod.Layout => Unit): Self = StObject.set(x, "_checkLayout", js.Any.fromFunction1(value))
     
-    inline def set_children(value: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget]): Self = StObject.set(x, "_children", js.Any.fromFunction1(value))
+    inline def set_children(
+      value: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]]
+    ): Self = StObject.set(x, "_children", js.Any.fromFunction1(value))
     
-    inline def set_decodeProperty(value: (/* propertyName */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "_decodeProperty", js.Any.fromFunction2(value))
+    inline def set_decodeProperty(value: (/* propertyName */ String, /* value */ Any) => Any): Self = StObject.set(x, "_decodeProperty", js.Any.fromFunction2(value))
     
     inline def set_dispose(value: /* skipNative */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "_dispose", js.Any.fromFunction1(value))
     
-    inline def set_encodeProperty(value: (/* propertyName */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "_encodeProperty", js.Any.fromFunction2(value))
+    inline def set_encodeProperty(value: (/* propertyName */ String, /* value */ Any) => Any): Self = StObject.set(x, "_encodeProperty", js.Any.fromFunction2(value))
     
-    inline def set_find(value: /* selector */ js.UndefOr[Selector[Widget, Widget]] => WidgetCollection[Widget]): Self = StObject.set(x, "_find", js.Any.fromFunction1(value))
+    inline def set_find(
+      value: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]]
+    ): Self = StObject.set(x, "_find", js.Any.fromFunction1(value))
     
     inline def set_getDefaultPropertyValue(value: /* propertyName */ String => Unit): Self = StObject.set(x, "_getDefaultPropertyValue", js.Any.fromFunction1(value))
     
-    inline def set_getStoredProperty(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_getStoredProperty", js.Any.fromFunction1(value))
+    inline def set_getStoredProperty(value: /* propertyName */ String => Any): Self = StObject.set(x, "_getStoredProperty", js.Any.fromFunction1(value))
     
-    inline def set_getTypeDef(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_getTypeDef", js.Any.fromFunction1(value))
+    inline def set_getTypeDef(value: /* propertyName */ String => Any): Self = StObject.set(x, "_getTypeDef", js.Any.fromFunction1(value))
     
-    inline def set_getXMLAttributes(value: () => js.Array[js.Tuple2[String, js.Any]]): Self = StObject.set(x, "_getXMLAttributes", js.Any.fromFunction0(value))
+    inline def set_getXMLAttributes(value: () => js.Array[js.Tuple2[String, Any]]): Self = StObject.set(x, "_getXMLAttributes", js.Any.fromFunction0(value))
     
     inline def set_getXMLContent(value: () => js.Array[String]): Self = StObject.set(x, "_getXMLContent", js.Any.fromFunction0(value))
     
@@ -1011,15 +1018,15 @@ object OmitStackset {
     
     inline def set_listen(value: (/* eventName */ String, /* listening */ Boolean) => Unit): Self = StObject.set(x, "_listen", js.Any.fromFunction2(value))
     
-    inline def set_nativeCall(value: (/* methodName */ String, /* parameters */ js.Object) => js.Any): Self = StObject.set(x, "_nativeCall", js.Any.fromFunction2(value))
+    inline def set_nativeCall(value: (/* methodName */ String, /* parameters */ js.Object) => Any): Self = StObject.set(x, "_nativeCall", js.Any.fromFunction2(value))
     
-    inline def set_nativeCreate(value: /* param */ js.UndefOr[StringDictionary[js.Any]] => Unit): Self = StObject.set(x, "_nativeCreate", js.Any.fromFunction1(value))
+    inline def set_nativeCreate(value: /* param */ js.UndefOr[StringDictionary[Any]] => Unit): Self = StObject.set(x, "_nativeCreate", js.Any.fromFunction1(value))
     
-    inline def set_nativeGet(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_nativeGet", js.Any.fromFunction1(value))
+    inline def set_nativeGet(value: /* propertyName */ String => Any): Self = StObject.set(x, "_nativeGet", js.Any.fromFunction1(value))
     
     inline def set_nativeListen(value: (/* eventType */ String, /* listen */ Boolean) => Unit): Self = StObject.set(x, "_nativeListen", js.Any.fromFunction2(value))
     
-    inline def set_nativeSet(value: (/* propertyName */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "_nativeSet", js.Any.fromFunction2(value))
+    inline def set_nativeSet(value: (/* propertyName */ String, /* value */ Any) => Unit): Self = StObject.set(x, "_nativeSet", js.Any.fromFunction2(value))
     
     inline def set_nativeType(value: () => String): Self = StObject.set(x, "_nativeType", js.Any.fromFunction0(value))
     
@@ -1029,19 +1036,19 @@ object OmitStackset {
     
     inline def set_release(value: () => Unit): Self = StObject.set(x, "_release", js.Any.fromFunction0(value))
     
-    inline def set_removeChild(value: /* child */ Widget => Unit): Self = StObject.set(x, "_removeChild", js.Any.fromFunction1(value))
+    inline def set_removeChild(value: /* child */ Widget[Any] => Unit): Self = StObject.set(x, "_removeChild", js.Any.fromFunction1(value))
     
     inline def set_reorderProperties(value: /* propertyNames */ js.Array[String] => js.Array[String]): Self = StObject.set(x, "_reorderProperties", js.Any.fromFunction1(value))
     
     inline def set_scheduleRenderChildren(value: () => Unit): Self = StObject.set(x, "_scheduleRenderChildren", js.Any.fromFunction0(value))
     
-    inline def set_setParent(value: (/* parent */ Composite[Widget], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_setParent", js.Any.fromFunction2(value))
+    inline def set_setParent(value: (/* parent */ Composite[Widget[Any]], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_setParent", js.Any.fromFunction2(value))
     
-    inline def set_storeProperty(value: (/* propertyName */ String, /* encodedValue */ js.Any) => Unit): Self = StObject.set(x, "_storeProperty", js.Any.fromFunction2(value))
+    inline def set_storeProperty(value: (/* propertyName */ String, /* encodedValue */ Any) => Unit): Self = StObject.set(x, "_storeProperty", js.Any.fromFunction2(value))
     
     inline def set_trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean): Self = StObject.set(x, "_trigger", js.Any.fromFunction2(value))
     
-    inline def set_triggerChangeEvent(value: (/* propertyName */ String, /* newEncodedValue */ js.Any) => Unit): Self = StObject.set(x, "_triggerChangeEvent", js.Any.fromFunction2(value))
+    inline def set_triggerChangeEvent(value: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit): Self = StObject.set(x, "_triggerChangeEvent", js.Any.fromFunction2(value))
     
     inline def set_wasSet(value: /* propertyName */ String => Boolean): Self = StObject.set(x, "_wasSet", js.Any.fromFunction1(value))
   }

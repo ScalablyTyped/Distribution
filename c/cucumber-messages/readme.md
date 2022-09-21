@@ -10,10 +10,10 @@ Protocol Buffer messages for Cucumber's inter-process communication
 | ------------------ | :-------------: |
 | Full name          | cucumber-messages |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 10 |
-| # downloads        | 2493389 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2057336.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/cucumber/cucumber-messages-javascript#readme)

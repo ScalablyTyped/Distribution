@@ -12,11 +12,11 @@ object anon {
     
     var id: Double
     
-    def selector(state: js.Any): js.Object
+    def selector(state: Any): js.Object
   }
   object Force {
     
-    inline def apply(id: Double, selector: js.Any => js.Object): Force = {
+    inline def apply(id: Double, selector: Any => js.Object): Force = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], selector = js.Any.fromFunction1(selector))
       __obj.asInstanceOf[Force]
     }
@@ -29,7 +29,7 @@ object anon {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setSelector(value: js.Any => js.Object): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
+      inline def setSelector(value: Any => js.Object): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
     }
   }
   

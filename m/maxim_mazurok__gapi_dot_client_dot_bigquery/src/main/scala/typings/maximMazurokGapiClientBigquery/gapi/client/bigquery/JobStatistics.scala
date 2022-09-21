@@ -10,6 +10,9 @@ trait JobStatistics extends StObject {
   /** [TrustedTester] [Output-only] Job progress (0.0 -> 1.0) for LOAD and EXTRACT jobs. */
   var completionRatio: js.UndefOr[Double] = js.undefined
   
+  /** [Output-only] Statistics for a copy job. */
+  var copy: js.UndefOr[JobStatistics5] = js.undefined
+  
   /** [Output-only] Creation time of this job, in milliseconds since the epoch. This field will be present on all jobs. */
   var creationTime: js.UndefOr[String] = js.undefined
   
@@ -49,6 +52,9 @@ trait JobStatistics extends StObject {
   /** [Output-only] Statistics for a child job of a script. */
   var scriptStatistics: js.UndefOr[ScriptStatistics] = js.undefined
   
+  /** [Output-only] [Preview] Information of the session if this job is part of one. */
+  var sessionInfo: js.UndefOr[SessionInfo] = js.undefined
+  
   /** [Output-only] Start time of this job, in milliseconds since the epoch. This field will be present when the job transitions from the PENDING state to either RUNNING or DONE. */
   var startTime: js.UndefOr[String] = js.undefined
   
@@ -59,7 +65,7 @@ trait JobStatistics extends StObject {
   var totalSlotMs: js.UndefOr[String] = js.undefined
   
   /** [Output-only] [Alpha] Information of the multi-statement transaction if this job is part of one. */
-  var transactionInfoTemplate: js.UndefOr[TransactionInfo] = js.undefined
+  var transactionInfo: js.UndefOr[TransactionInfo] = js.undefined
 }
 object JobStatistics {
   
@@ -73,6 +79,10 @@ object JobStatistics {
     inline def setCompletionRatio(value: Double): Self = StObject.set(x, "completionRatio", value.asInstanceOf[js.Any])
     
     inline def setCompletionRatioUndefined: Self = StObject.set(x, "completionRatio", js.undefined)
+    
+    inline def setCopy(value: JobStatistics5): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+    
+    inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
     inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
@@ -106,13 +116,13 @@ object JobStatistics {
     
     inline def setQuotaDefermentsUndefined: Self = StObject.set(x, "quotaDeferments", js.undefined)
     
-    inline def setQuotaDefermentsVarargs(value: String*): Self = StObject.set(x, "quotaDeferments", js.Array(value :_*))
+    inline def setQuotaDefermentsVarargs(value: String*): Self = StObject.set(x, "quotaDeferments", js.Array(value*))
     
     inline def setReservationUsage(value: js.Array[Name]): Self = StObject.set(x, "reservationUsage", value.asInstanceOf[js.Any])
     
     inline def setReservationUsageUndefined: Self = StObject.set(x, "reservationUsage", js.undefined)
     
-    inline def setReservationUsageVarargs(value: Name*): Self = StObject.set(x, "reservationUsage", js.Array(value :_*))
+    inline def setReservationUsageVarargs(value: Name*): Self = StObject.set(x, "reservationUsage", js.Array(value*))
     
     inline def setReservation_id(value: String): Self = StObject.set(x, "reservation_id", value.asInstanceOf[js.Any])
     
@@ -126,6 +136,10 @@ object JobStatistics {
     
     inline def setScriptStatisticsUndefined: Self = StObject.set(x, "scriptStatistics", js.undefined)
     
+    inline def setSessionInfo(value: SessionInfo): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
+    
+    inline def setSessionInfoUndefined: Self = StObject.set(x, "sessionInfo", js.undefined)
+    
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
@@ -138,8 +152,8 @@ object JobStatistics {
     
     inline def setTotalSlotMsUndefined: Self = StObject.set(x, "totalSlotMs", js.undefined)
     
-    inline def setTransactionInfoTemplate(value: TransactionInfo): Self = StObject.set(x, "transactionInfoTemplate", value.asInstanceOf[js.Any])
+    inline def setTransactionInfo(value: TransactionInfo): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
     
-    inline def setTransactionInfoTemplateUndefined: Self = StObject.set(x, "transactionInfoTemplate", js.undefined)
+    inline def setTransactionInfoUndefined: Self = StObject.set(x, "transactionInfo", js.undefined)
   }
 }

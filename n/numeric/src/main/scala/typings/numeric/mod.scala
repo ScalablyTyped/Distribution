@@ -70,11 +70,11 @@ object mod extends Shortcut {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: Boolean*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Boolean*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setF(value: Vector): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
-      inline def setFVarargs(value: Double*): Self = StObject.set(x, "f", js.Array(value :_*))
+      inline def setFVarargs(value: Double*): Self = StObject.set(x, "f", js.Array(value*))
       
       inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
@@ -82,15 +82,15 @@ object mod extends Shortcut {
       
       inline def setX(value: Vector): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
+      inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value*))
       
       inline def setY(value: Vector): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
+      inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value*))
       
       inline def setYmid(value: Vector): Self = StObject.set(x, "ymid", value.asInstanceOf[js.Any])
       
-      inline def setYmidVarargs(value: Double*): Self = StObject.set(x, "ymid", js.Array(value :_*))
+      inline def setYmidVarargs(value: Double*): Self = StObject.set(x, "ymid", js.Array(value*))
     }
   }
   
@@ -111,11 +111,11 @@ object mod extends Shortcut {
       
       inline def setL(value: Matrix): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
       
-      inline def setLVarargs(value: js.Array[Double]*): Self = StObject.set(x, "L", js.Array(value :_*))
+      inline def setLVarargs(value: js.Array[Double]*): Self = StObject.set(x, "L", js.Array(value*))
       
       inline def setU(value: Matrix): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
       
-      inline def setUVarargs(value: js.Array[Double]*): Self = StObject.set(x, "U", js.Array(value :_*))
+      inline def setUVarargs(value: js.Array[Double]*): Self = StObject.set(x, "U", js.Array(value*))
     }
   }
   
@@ -142,11 +142,11 @@ object mod extends Shortcut {
       
       inline def setP(value: Vector): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
       
-      inline def setPVarargs(value: Double*): Self = StObject.set(x, "P", js.Array(value :_*))
+      inline def setPVarargs(value: Double*): Self = StObject.set(x, "P", js.Array(value*))
       
       inline def setPinv(value: Vector): Self = StObject.set(x, "Pinv", value.asInstanceOf[js.Any])
       
-      inline def setPinvVarargs(value: Double*): Self = StObject.set(x, "Pinv", js.Array(value :_*))
+      inline def setPinvVarargs(value: Double*): Self = StObject.set(x, "Pinv", js.Array(value*))
       
       inline def setU(value: SparseMatrix): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
     }
@@ -2274,9 +2274,9 @@ object mod extends Shortcut {
     def addeqV(x: Vector, y: Vector): Vector = js.native
     
     //     All the components of x are true
-    def all(x: js.Any): Boolean = js.native
+    def all(x: Any): Boolean = js.native
     
-    def allV(x: js.Array[js.Any]): Boolean = js.native
+    def allV(x: js.Array[Any]): Boolean = js.native
     
     def and(x: Scalar, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
     def and(x: Scalar, y: Vector, args: (Scalar | Vector)*): Vector = js.native
@@ -2433,9 +2433,9 @@ object mod extends Shortcut {
     def andeqV(x: Vector, y: Vector): Vector = js.native
     
     // One or more of the components of x are true
-    def any(x: js.Any): Boolean = js.native
+    def any(x: Any): Boolean = js.native
     
-    def anyV(x: js.Array[js.Any]): Boolean = js.native
+    def anyV(x: js.Array[Any]): Boolean = js.native
     
     // Pointwise arc-sine
     def asin(
@@ -2869,8 +2869,8 @@ object mod extends Shortcut {
     
     // utility functions
     // Benchmarking routine
-    def bench(func: js.Function0[js.Any]): Double = js.native
-    def bench(func: js.Function0[js.Any], interval: Double): Double = js.native
+    def bench(func: js.Function0[Any]): Double = js.native
+    def bench(func: js.Function0[Any], interval: Double): Double = js.native
     
     def blockMatrix(x: MultidimensionalMatrix | Vector): Matrix = js.native
     // create two-dimensional matrix
@@ -3611,7 +3611,7 @@ object mod extends Shortcut {
     
     // linear algebra with arrays
     // Get Array dimensions
-    def dim(arr: js.Any): Vector = js.native
+    def dim(arr: Any): Vector = js.native
     
     def div(x: Scalar, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
     def div(x: Scalar, y: Vector, args: (Scalar | Vector)*): Vector = js.native
@@ -4062,7 +4062,7 @@ object mod extends Shortcut {
     // Get the diagonal of a Matrix
     def getDiag(matrix: Matrix): Vector = js.native
     
-    def getURL(url: String): js.Any = js.native
+    def getURL(url: String): Any = js.native
     
     def gradient(f: js.Function1[/* x */ Vector, Scalar], x: Vector): Vector = js.native
     
@@ -5471,7 +5471,7 @@ object mod extends Shortcut {
     var precision: Double = js.native
     
     def prettyPrint(): String = js.native
-    def prettyPrint(x: js.Any): String = js.native
+    def prettyPrint(x: Any): String = js.native
     
     def prod(x: MultidimensionalMatrix | Vector): Double = js.native
     // Product of all the entries of x
@@ -5856,7 +5856,7 @@ object mod extends Shortcut {
     def rshifteqV(x: Vector, y: Vector): Vector = js.native
     
     //     x and y are entrywise identical
-    def same(x: js.Any, y: js.Any): Boolean = js.native
+    def same(x: Any, y: Any): Boolean = js.native
     
     /** @deprecated */
     def sclone[T](matrix: T): T = js.native
@@ -5868,10 +5868,10 @@ object mod extends Shortcut {
     def sdiag(d: Vector): DeprecatedSparseMatrix = js.native
     
     /**  @deprecated */
-    def sdim(matrix: js.Any): Vector = js.native
-    def sdim(matrix: js.Any, ret: Unit, k: Double): Vector = js.native
-    def sdim(matrix: js.Any, ret: Vector): Vector = js.native
-    def sdim(matrix: js.Any, ret: Vector, k: Double): Vector = js.native
+    def sdim(matrix: Any): Vector = js.native
+    def sdim(matrix: Any, ret: Unit, k: Double): Vector = js.native
+    def sdim(matrix: Any, ret: Vector): Vector = js.native
+    def sdim(matrix: Any, ret: Vector, k: Double): Vector = js.native
     
     def sdot(
       x: DeprecatedSparseMatrix | DeprecatedSparseVector,
@@ -6044,8 +6044,8 @@ object mod extends Shortcut {
     
     def solveQP(Dmat: Matrix, dvec: Vector, Amat: Matrix, bvec: Vector): Iact = js.native
     def solveQP(Dmat: Matrix, dvec: Vector, Amat: Matrix, bvec: Vector, meq: Double): Iact = js.native
-    def solveQP(Dmat: Matrix, dvec: Vector, Amat: Matrix, bvec: Vector, meq: Double, factorized: js.Any): Iact = js.native
-    def solveQP(Dmat: Matrix, dvec: Vector, Amat: Matrix, bvec: Vector, meq: Unit, factorized: js.Any): Iact = js.native
+    def solveQP(Dmat: Matrix, dvec: Vector, Amat: Matrix, bvec: Vector, meq: Double, factorized: Any): Iact = js.native
+    def solveQP(Dmat: Matrix, dvec: Vector, Amat: Matrix, bvec: Vector, meq: Unit, factorized: Any): Iact = js.native
     
     // Splines
     def spline(x: Vector, y: Matrix | Vector): Spline = js.native
@@ -6370,7 +6370,7 @@ object mod extends Shortcut {
     
     // toCSV is buggy.
     // https://github.com/sloisel/numeric/pull/51
-    def toCSV(csvArray: js.Array[js.Array[js.Any]]): String = js.native
+    def toCSV(csvArray: js.Array[js.Array[Any]]): String = js.native
     
     def toUpperHessenberg(matrix: Matrix): H = js.native
     
@@ -6392,44 +6392,30 @@ object mod extends Shortcut {
     // Unconstrained optimisations
     def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector): F = js.native
     def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Double): F = js.native
-    def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Double, gradient: js.Any): F = js.native
-    def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Double, gradient: js.Any, maxit: Double): F = js.native
+    def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Double, gradient: Any): F = js.native
+    def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Double, gradient: Any, maxit: Double): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Double,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Double,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ]
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any]
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Double,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Double,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ],
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any],
       options: Hinv
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Double,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Double,
       callback: Unit,
       options: Hinv
@@ -6438,38 +6424,24 @@ object mod extends Shortcut {
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Double,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Unit,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ]
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any]
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Double,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Unit,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ],
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any],
       options: Hinv
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Double,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Unit,
       callback: Unit,
       options: Hinv
@@ -6481,14 +6453,7 @@ object mod extends Shortcut {
       tol: Double,
       gradient: Unit,
       maxit: Double,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ]
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any]
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
@@ -6496,14 +6461,7 @@ object mod extends Shortcut {
       tol: Double,
       gradient: Unit,
       maxit: Double,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ],
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any],
       options: Hinv
     ): F = js.native
     def uncmin(
@@ -6521,14 +6479,7 @@ object mod extends Shortcut {
       tol: Double,
       gradient: Unit,
       maxit: Unit,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ]
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any]
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
@@ -6536,14 +6487,7 @@ object mod extends Shortcut {
       tol: Double,
       gradient: Unit,
       maxit: Unit,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ],
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any],
       options: Hinv
     ): F = js.native
     def uncmin(
@@ -6555,44 +6499,30 @@ object mod extends Shortcut {
       callback: Unit,
       options: Hinv
     ): F = js.native
-    def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Unit, gradient: js.Any): F = js.native
-    def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Unit, gradient: js.Any, maxit: Double): F = js.native
+    def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Unit, gradient: Any): F = js.native
+    def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Unit, gradient: Any, maxit: Double): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Unit,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Double,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ]
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any]
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Unit,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Double,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ],
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any],
       options: Hinv
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Unit,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Double,
       callback: Unit,
       options: Hinv
@@ -6601,38 +6531,24 @@ object mod extends Shortcut {
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Unit,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Unit,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ]
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any]
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Unit,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Unit,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ],
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any],
       options: Hinv
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
       x0: Vector,
       tol: Unit,
-      gradient: js.Any,
+      gradient: Any,
       maxit: Unit,
       callback: Unit,
       options: Hinv
@@ -6644,14 +6560,7 @@ object mod extends Shortcut {
       tol: Unit,
       gradient: Unit,
       maxit: Double,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ]
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any]
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
@@ -6659,14 +6568,7 @@ object mod extends Shortcut {
       tol: Unit,
       gradient: Unit,
       maxit: Double,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ],
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any],
       options: Hinv
     ): F = js.native
     def uncmin(
@@ -6684,14 +6586,7 @@ object mod extends Shortcut {
       tol: Unit,
       gradient: Unit,
       maxit: Unit,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ]
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any]
     ): F = js.native
     def uncmin(
       f: js.Function1[/* x */ Vector, Scalar],
@@ -6699,14 +6594,7 @@ object mod extends Shortcut {
       tol: Unit,
       gradient: Unit,
       maxit: Unit,
-      callback: js.Function5[
-          /* it */ Double, 
-          /* x0 */ Vector, 
-          /* f0 */ Scalar, 
-          /* g0 */ Vector, 
-          /* h1 */ Matrix, 
-          js.Any
-        ],
+      callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, Any],
       options: Hinv
     ): F = js.native
     def uncmin(

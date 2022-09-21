@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListNamespacesRequest extends StObject {
   
   /**
-    * The ID for the AWS account that contains the QuickSight namespaces that you want to list.
+    * The ID for the Amazon Web Services account that contains the Amazon QuickSight namespaces that you want to list.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
@@ -17,7 +17,7 @@ trait ListNamespacesRequest extends StObject {
   var MaxResults: js.UndefOr[typings.awsSdk.quicksightMod.MaxResults] = js.undefined
   
   /**
-    * A pagination token that can be used in a subsequent request.
+    * A unique pagination token that can be used in a subsequent request. You will receive a pagination token in the response body of a previous ListNameSpaces API call if there is more data that can be returned. To receive the data, make another ListNamespaces API call with the returned token to retrieve the next page of data. Each token is valid for 24 hours. If you try to make a ListNamespaces API call with an expired token, you will receive a HTTP 400 InvalidNextTokenException error.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

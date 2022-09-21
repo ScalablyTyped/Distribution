@@ -10,10 +10,10 @@ highcharts-ng
 | ------------------ | :-------------: |
 | Full name          | highcharts-ng |
 | Keywords           | angular |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2755491 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32295.0 |
+| # stars            | 1733.0 |
 
 ## Links
 - [Homepage](https://github.com/pablojim/highcharts-ng)

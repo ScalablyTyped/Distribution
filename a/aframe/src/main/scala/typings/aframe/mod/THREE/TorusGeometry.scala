@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aframe", "THREE.TorusGeometry")
 @js.native
 /**
-	 * @param [radius=1]
-	 * @param [tube=0.4]
-	 * @param [radialSegments=8]
-	 * @param [tubularSegments=6]
-	 * @param [arc=Math.PI * 2]
-	 */
-class TorusGeometry ()
+  * @param [radius=1]
+  * @param [tube=0.4]
+  * @param [radialSegments=8]
+  * @param [tubularSegments=6]
+  * @param [arc=Math.PI * 2]
+  */
+open class TorusGeometry ()
   extends typings.three.mod.TorusGeometry

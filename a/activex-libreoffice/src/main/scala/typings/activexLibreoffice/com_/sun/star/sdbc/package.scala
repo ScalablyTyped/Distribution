@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XDriver
   * @see com.sun.star.sdbc.XConnection
   */
-type ConnectionPool = typings.activexLibreoffice.com_.sun.star.sdbc.XConnectionPool
+type ConnectionPool = XConnectionPool
 
 /**
   * is the service that every driver class must implement.
@@ -31,9 +31,9 @@ type ConnectionPool = typings.activexLibreoffice.com_.sun.star.sdbc.XConnectionP
   * @see com.sun.star.sdbc.XDriverManager
   * @see com.sun.star.sdbc.XConnection
   */
-type Driver = typings.activexLibreoffice.com_.sun.star.sdbc.XDriver
+type Driver = XDriver
 
-type DriverManager = typings.activexLibreoffice.com_.sun.star.sdbc.XDriverManager2
+type DriverManager = XDriverManager2
 
 /**
   * is an exception that provides information on database access warnings. Warnings are silently chained to the object whose method caused it to be
@@ -42,4 +42,4 @@ type DriverManager = typings.activexLibreoffice.com_.sun.star.sdbc.XDriverManage
   * @see XResultSet.getWarnings
   * @see XStatement.getWarnings
   */
-type SQLWarning = typings.activexLibreoffice.com_.sun.star.sdbc.SQLException
+type SQLWarning = SQLException

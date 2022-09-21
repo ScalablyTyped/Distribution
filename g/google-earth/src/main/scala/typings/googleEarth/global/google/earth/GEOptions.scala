@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GEOptions")
 @js.native
-class GEOptions ()
+open class GEOptions ()
   extends StObject
      with typings.googleEarth.google.earth.GEOptions {
   

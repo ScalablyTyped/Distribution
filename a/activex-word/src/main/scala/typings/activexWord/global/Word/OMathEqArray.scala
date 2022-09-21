@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathEqArray")
 @js.native
-/* private */ class OMathEqArray ()
+/* private */ open class OMathEqArray ()
   extends StObject
      with typings.activexWord.Word.OMathEqArray {
   
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ObjDist: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var RowSpacing: Double = js.native

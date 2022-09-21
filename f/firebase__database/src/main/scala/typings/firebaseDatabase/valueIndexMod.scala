@@ -8,19 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object valueIndexMod {
   
-  @JSImport("@firebase/database/dist/src/core/snap/indexes/ValueIndex", "VALUE_INDEX")
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/indexes/ValueIndex", "VALUE_INDEX")
   @js.native
   val VALUE_INDEX: ValueIndex = js.native
   
-  @JSImport("@firebase/database/dist/src/core/snap/indexes/ValueIndex", "ValueIndex")
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/indexes/ValueIndex", "ValueIndex")
   @js.native
-  class ValueIndex () extends Index {
+  open class ValueIndex () extends Index {
     
-    /**
-      * @param {*} indexValue
-      * @param {string} name
-      * @return {!NamedNode}
-      */
     def makePost(indexValue: js.Object, name: String): NamedNode = js.native
   }
 }

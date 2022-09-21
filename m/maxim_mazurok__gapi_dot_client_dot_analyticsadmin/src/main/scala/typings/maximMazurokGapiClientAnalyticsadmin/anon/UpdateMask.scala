@@ -25,7 +25,7 @@ trait UpdateMask extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. Resource name of this property. Format: properties/{property_id} Example: "properties/1000" */
+  /** Output only. Resource name of this setting. Format: properties/{property_id}/googleSignalsSettings Example: "properties/1000/googleSignalsSettings" */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -37,7 +37,10 @@ trait UpdateMask extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The list of fields to be updated. Omitted fields will not be updated. */
+  /**
+    * Required. The list of fields to be updated. Field names must be in snake case (e.g., "field_to_update"). Omitted fields will not be updated. To replace the entire entity, use
+    * one path with the string "*" to match all fields.
+    */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

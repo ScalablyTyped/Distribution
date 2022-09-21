@@ -12,7 +12,7 @@ trait Panes extends StObject {
   
   def Item(Index: Double): Pane
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Panes_typekey")
   var PowerPointDotPanes_typekey: Panes
@@ -23,7 +23,7 @@ object Panes {
     Application: Application,
     Count: Double,
     Item: Double => Pane,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPanes_typekey: Panes
   ): Panes = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object Panes {
     
     inline def setItem(value: Double => Pane): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPanes_typekey(value: Panes): Self = StObject.set(x, "PowerPoint.Panes_typekey", value.asInstanceOf[js.Any])
   }

@@ -343,7 +343,7 @@ object UI {
     
     var label: String
     
-    var markers: js.Array[js.Any]
+    var markers: js.Array[Any]
     
     var max: Double
     
@@ -372,7 +372,7 @@ object UI {
       hidden: Boolean,
       isThumbnailVisible: Boolean,
       label: String,
-      markers: js.Array[js.Any],
+      markers: js.Array[Any],
       max: Double,
       min: Double,
       progress: Double,
@@ -404,9 +404,9 @@ object UI {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      inline def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+      inline def setMarkers(value: js.Array[Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
       
-      inline def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))
+      inline def setMarkersVarargs(value: Any*): Self = StObject.set(x, "markers", js.Array(value*))
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

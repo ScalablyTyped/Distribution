@@ -110,7 +110,7 @@ object AwsIamPolicyDetails {
     
     inline def setPolicyVersionListUndefined: Self = StObject.set(x, "PolicyVersionList", js.undefined)
     
-    inline def setPolicyVersionListVarargs(value: AwsIamPolicyVersion*): Self = StObject.set(x, "PolicyVersionList", js.Array(value :_*))
+    inline def setPolicyVersionListVarargs(value: AwsIamPolicyVersion*): Self = StObject.set(x, "PolicyVersionList", js.Array(value*))
     
     inline def setUpdateDate(value: NonEmptyString): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     

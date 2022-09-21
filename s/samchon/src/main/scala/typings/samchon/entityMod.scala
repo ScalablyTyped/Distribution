@@ -58,7 +58,7 @@ object entityMod {
       * </code>
       */
     /* CompleteClass */
-    override def key(): js.Any = js.native
+    override def key(): Any = js.native
     
     /**
       * Get a XML object represents the Entity.

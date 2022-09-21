@@ -21,7 +21,7 @@ trait ChartMediaInfoValueProperties extends StObject {
   var normalizeField: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of [ChartMediaInfoValueSeries](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html) objects which provide information of x/y data data that is plotted in a chart.
+    * An array of [ChartMediaInfoValueSeries](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html) objects which provide information of x/y data that is plotted in a chart.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#series)
     */
@@ -47,7 +47,7 @@ object ChartMediaInfoValueProperties {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setNormalizeField(value: String): Self = StObject.set(x, "normalizeField", value.asInstanceOf[js.Any])
     
@@ -57,7 +57,7 @@ object ChartMediaInfoValueProperties {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: ChartMediaInfoValueSeriesProperties*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: ChartMediaInfoValueSeriesProperties*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setTooltipField(value: String): Self = StObject.set(x, "tooltipField", value.asInstanceOf[js.Any])
     

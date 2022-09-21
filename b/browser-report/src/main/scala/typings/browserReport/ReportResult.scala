@@ -79,7 +79,7 @@ object ReportResult {
     
     inline def setLang(value: js.Array[String]): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    inline def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value :_*))
+    inline def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value*))
     
     inline def setOs(value: Name): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     

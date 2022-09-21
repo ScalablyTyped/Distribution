@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogCustomAttributeDefinitionSellerVisibility")
 @js.native
-class CatalogCustomAttributeDefinitionSellerVisibility () extends StObject
+open class CatalogCustomAttributeDefinitionSellerVisibility () extends StObject

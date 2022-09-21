@@ -19,14 +19,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.officeUiFabricReact.buttonGridMod.ButtonGridCell because Already inherited
 - typings.officeUiFabricReact.gridMod.ButtonGridCell because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "ButtonGridCell")
 @js.native
-class ButtonGridCell[T, P /* <: IButtonGridCellProps[T] */] protected ()
+open class ButtonGridCell[T, P /* <: IButtonGridCellProps[T] */] protected ()
   extends typings.officeUiFabricReact.libButtonGridMod.ButtonGridCell[T, P] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
 }
 /* static members */
 object ButtonGridCell {

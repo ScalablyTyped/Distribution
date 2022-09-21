@@ -1,6 +1,6 @@
 package typings.nodeSsh
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeSsh.anon.ExecOptionsstreamboth
 import typings.nodeSsh.anon.ExecOptionsstreamstdoutst
 import typings.nodeSsh.anon.Local
@@ -9,7 +9,6 @@ import typings.nodeSsh.nodeSshStrings.sftp
 import typings.ssh2.mod.ClientChannel
 import typings.ssh2.mod.SFTPWrapper
 import typings.ssh2Streams.mod.TransferOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object mod {
   
   @JSImport("node-ssh", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with SSH
   
@@ -155,7 +154,7 @@ object mod {
         js.Function3[
           /* localPath */ String, 
           /* remotePath */ String, 
-          /* error */ js.UndefOr[Error | Null], 
+          /* error */ js.UndefOr[js.Error | Null], 
           Unit
         ]
       ] = js.undefined
@@ -188,7 +187,7 @@ object mod {
       inline def setSftpUndefined: Self = StObject.set(x, "sftp", js.undefined)
       
       inline def setTick(
-        value: (/* localPath */ String, /* remotePath */ String, /* error */ js.UndefOr[Error | Null]) => Unit
+        value: (/* localPath */ String, /* remotePath */ String, /* error */ js.UndefOr[js.Error | Null]) => Unit
       ): Self = StObject.set(x, "tick", js.Any.fromFunction3(value))
       
       inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)

@@ -29,7 +29,7 @@ object S3AccessControlList {
     
     inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
     
-    inline def setGrantsVarargs(value: S3Grant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+    inline def setGrantsVarargs(value: S3Grant*): Self = StObject.set(x, "Grants", js.Array(value*))
     
     inline def setOwner(value: S3ObjectOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
   }

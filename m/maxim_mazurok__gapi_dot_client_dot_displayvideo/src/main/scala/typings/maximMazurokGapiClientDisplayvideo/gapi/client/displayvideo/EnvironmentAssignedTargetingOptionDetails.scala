@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EnvironmentAssignedTargetingOptionDetails extends StObject {
   
-  /** Output only. The serving environment. */
+  /** The serving environment. Output only in v1. Required in v2. */
   var environment: js.UndefOr[String] = js.undefined
   
   /** Required. The targeting_option_id of a TargetingOption of type `TARGETING_TYPE_ENVIRONMENT` (e.g., "508010" for targeting the `ENVIRONMENT_WEB_OPTIMIZED` option). */

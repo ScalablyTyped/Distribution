@@ -20,8 +20,8 @@ trait ASPxClientXYDiagram2D
     * @param pane An ASPxClientXYDiagramPane object, representing the pane.
     */
   def DiagramToPoint(
-    argument: js.Any,
-    value: js.Any,
+    argument: Any,
+    value: Any,
     axisX: ASPxClientAxis2D,
     axisY: ASPxClientAxis2D,
     pane: ASPxClientXYDiagramPane
@@ -64,7 +64,7 @@ trait ASPxClientXYDiagram2D
 object ASPxClientXYDiagram2D {
   
   inline def apply(
-    DiagramToPoint: (js.Any, js.Any, ASPxClientAxis2D, ASPxClientAxis2D, ASPxClientXYDiagramPane) => ASPxClientControlCoordinates,
+    DiagramToPoint: (Any, Any, ASPxClientAxis2D, ASPxClientAxis2D, ASPxClientXYDiagramPane) => ASPxClientControlCoordinates,
     PointToDiagram: (Double, Double) => ASPxClientDiagramCoordinates,
     ShowCrosshair: (Double, Double) => Unit,
     axisX: ASPxClientAxisBase,
@@ -84,22 +84,22 @@ object ASPxClientXYDiagram2D {
     inline def setDefaultPane(value: ASPxClientXYDiagramPane): Self = StObject.set(x, "defaultPane", value.asInstanceOf[js.Any])
     
     inline def setDiagramToPoint(
-      value: (js.Any, js.Any, ASPxClientAxis2D, ASPxClientAxis2D, ASPxClientXYDiagramPane) => ASPxClientControlCoordinates
+      value: (Any, Any, ASPxClientAxis2D, ASPxClientAxis2D, ASPxClientXYDiagramPane) => ASPxClientControlCoordinates
     ): Self = StObject.set(x, "DiagramToPoint", js.Any.fromFunction5(value))
     
     inline def setPanes(value: js.Array[ASPxClientXYDiagramPane]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
     
-    inline def setPanesVarargs(value: ASPxClientXYDiagramPane*): Self = StObject.set(x, "panes", js.Array(value :_*))
+    inline def setPanesVarargs(value: ASPxClientXYDiagramPane*): Self = StObject.set(x, "panes", js.Array(value*))
     
     inline def setPointToDiagram(value: (Double, Double) => ASPxClientDiagramCoordinates): Self = StObject.set(x, "PointToDiagram", js.Any.fromFunction2(value))
     
     inline def setSecondaryAxesX(value: js.Array[ASPxClientAxis]): Self = StObject.set(x, "secondaryAxesX", value.asInstanceOf[js.Any])
     
-    inline def setSecondaryAxesXVarargs(value: ASPxClientAxis*): Self = StObject.set(x, "secondaryAxesX", js.Array(value :_*))
+    inline def setSecondaryAxesXVarargs(value: ASPxClientAxis*): Self = StObject.set(x, "secondaryAxesX", js.Array(value*))
     
     inline def setSecondaryAxesY(value: js.Array[ASPxClientAxis]): Self = StObject.set(x, "secondaryAxesY", value.asInstanceOf[js.Any])
     
-    inline def setSecondaryAxesYVarargs(value: ASPxClientAxis*): Self = StObject.set(x, "secondaryAxesY", js.Array(value :_*))
+    inline def setSecondaryAxesYVarargs(value: ASPxClientAxis*): Self = StObject.set(x, "secondaryAxesY", js.Array(value*))
     
     inline def setShowCrosshair(value: (Double, Double) => Unit): Self = StObject.set(x, "ShowCrosshair", js.Any.fromFunction2(value))
   }

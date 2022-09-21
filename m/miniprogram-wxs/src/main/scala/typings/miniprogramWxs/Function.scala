@@ -20,12 +20,12 @@ trait Function extends StObject {
     * @param argArray A set of arguments to be passed to the function.
     */
   @JSName("apply")
-  def apply(thisArg: js.Any): js.Any = js.native
+  def apply(thisArg: Any): Any = js.native
   @JSName("apply")
-  def apply(thisArg: js.Any, argArray: js.Any): js.Any = js.native
+  def apply(thisArg: Any, argArray: Any): Any = js.native
   
   // Non-standard extensions
-  var arguments: js.Any = js.native
+  var arguments: Any = js.native
   
   /**
     * For a given function, creates a bound function that has the same body as the original function.
@@ -33,14 +33,14 @@ trait Function extends StObject {
     * @param thisArg An object to which the this keyword can refer inside the new function.
     * @param argArray A list of arguments to be passed to the new function.
     */
-  def bind(thisArg: js.Any, argArray: js.Any*): js.Any = js.native
+  def bind(thisArg: Any, argArray: Any*): Any = js.native
   
   /**
     * Calls a method of an object, substituting another object for the current object.
     * @param thisArg The object to be used as the current object.
     * @param argArray A list of arguments to be passed to the method.
     */
-  def call(thisArg: js.Any, argArray: js.Any*): js.Any = js.native
+  def call(thisArg: Any, argArray: Any*): Any = js.native
   
   var caller: Function = js.native
   

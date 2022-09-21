@@ -12,7 +12,7 @@ trait ListConfigurationsRequest extends StObject {
   var configurationType: ConfigurationItemType
   
   /**
-    * You can filter the request using various logical operators and a key-value format. For example:   {"key": "serverType", "value": "webServer"}  For a complete list of filter options and guidance about using them with this action, see Using the ListConfigurations Action in the AWS Application Discovery Service User Guide.
+    * You can filter the request using various logical operators and a key-value format. For example:   {"key": "serverType", "value": "webServer"}  For a complete list of filter options and guidance about using them with this action, see Using the ListConfigurations Action in the Amazon Web Services Application Discovery Service User Guide.
     */
   var filters: js.UndefOr[Filters] = js.undefined
   
@@ -27,7 +27,7 @@ trait ListConfigurationsRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * Certain filter criteria return output that can be sorted in ascending or descending order. For a list of output characteristics for each filter, see Using the ListConfigurations Action in the AWS Application Discovery Service User Guide.
+    * Certain filter criteria return output that can be sorted in ascending or descending order. For a list of output characteristics for each filter, see Using the ListConfigurations Action in the Amazon Web Services Application Discovery Service User Guide.
     */
   var orderBy: js.UndefOr[OrderByList] = js.undefined
 }
@@ -46,7 +46,7 @@ object ListConfigurationsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object ListConfigurationsRequest {
     
     inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    inline def setOrderByVarargs(value: OrderByElement*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+    inline def setOrderByVarargs(value: OrderByElement*): Self = StObject.set(x, "orderBy", js.Array(value*))
   }
 }

@@ -15,12 +15,12 @@ object reactMdIconStrings {
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait download extends StObject
-  inline def download: download = "download".asInstanceOf[download]
-  
-  @js.native
   sealed trait dropdown extends StObject
   inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait expander extends StObject
@@ -53,4 +53,8 @@ object reactMdIconStrings {
   @js.native
   sealed trait sort extends StObject
   inline def sort: sort = "sort".asInstanceOf[sort]
+  
+  @js.native
+  sealed trait upload extends StObject
+  inline def upload: upload = "upload".asInstanceOf[upload]
 }

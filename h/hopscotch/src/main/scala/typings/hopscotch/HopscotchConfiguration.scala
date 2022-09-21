@@ -80,7 +80,7 @@ object HopscotchConfiguration {
     
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    inline def setOnCloseVarargs(value: String*): Self = StObject.set(x, "onClose", js.Array(value :_*))
+    inline def setOnCloseVarargs(value: String*): Self = StObject.set(x, "onClose", js.Array(value*))
     
     inline def setOnEnd(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object HopscotchConfiguration {
     
     inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
-    inline def setOnEndVarargs(value: String*): Self = StObject.set(x, "onEnd", js.Array(value :_*))
+    inline def setOnEndVarargs(value: String*): Self = StObject.set(x, "onEnd", js.Array(value*))
     
     inline def setOnError(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object HopscotchConfiguration {
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnErrorVarargs(value: String*): Self = StObject.set(x, "onError", js.Array(value :_*))
+    inline def setOnErrorVarargs(value: String*): Self = StObject.set(x, "onError", js.Array(value*))
     
     inline def setOnNext(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onNext", value.asInstanceOf[js.Any])
     
@@ -104,7 +104,7 @@ object HopscotchConfiguration {
     
     inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
     
-    inline def setOnNextVarargs(value: String*): Self = StObject.set(x, "onNext", js.Array(value :_*))
+    inline def setOnNextVarargs(value: String*): Self = StObject.set(x, "onNext", js.Array(value*))
     
     inline def setOnPrev(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onPrev", value.asInstanceOf[js.Any])
     
@@ -112,7 +112,7 @@ object HopscotchConfiguration {
     
     inline def setOnPrevUndefined: Self = StObject.set(x, "onPrev", js.undefined)
     
-    inline def setOnPrevVarargs(value: String*): Self = StObject.set(x, "onPrev", js.Array(value :_*))
+    inline def setOnPrevVarargs(value: String*): Self = StObject.set(x, "onPrev", js.Array(value*))
     
     inline def setOnShow(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
@@ -120,7 +120,7 @@ object HopscotchConfiguration {
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    inline def setOnShowVarargs(value: String*): Self = StObject.set(x, "onShow", js.Array(value :_*))
+    inline def setOnShowVarargs(value: String*): Self = StObject.set(x, "onShow", js.Array(value*))
     
     inline def setOnStart(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
     
@@ -128,7 +128,7 @@ object HopscotchConfiguration {
     
     inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
-    inline def setOnStartVarargs(value: String*): Self = StObject.set(x, "onStart", js.Array(value :_*))
+    inline def setOnStartVarargs(value: String*): Self = StObject.set(x, "onStart", js.Array(value*))
     
     inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
     

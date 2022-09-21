@@ -10,10 +10,10 @@ Famous Engine =================
 | ------------------ | :-------------: |
 | Full name          | famous |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 1975 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 219.66666666666666 |
+| # stars            | 1760.0 |
 
 ## Links
 - [Homepage](https://github.com/Famous/engine#readme)

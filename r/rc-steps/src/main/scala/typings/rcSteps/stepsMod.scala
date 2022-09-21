@@ -10,6 +10,7 @@ import typings.rcSteps.rcStepsStrings.horizontal
 import typings.rcSteps.rcStepsStrings.navigation
 import typings.rcSteps.rcStepsStrings.small
 import typings.rcSteps.rcStepsStrings.vertical
+import typings.rcSteps.stepMod.StepProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
@@ -21,7 +22,7 @@ object stepsMod {
   
   @JSImport("rc-steps/lib/Steps", JSImport.Default)
   @js.native
-  class default () extends Steps
+  open class default () extends Steps
   /* static members */
   object default {
     
@@ -40,13 +41,13 @@ object stepsMod {
     inline def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  type ProgressDotRender = js.Function2[/* iconDot */ js.Any, /* info */ Index, ReactNode]
+  type ProgressDotRender = js.Function2[/* iconDot */ Any, /* info */ Index, ReactNode]
   
   type StepIconRender = js.Function1[/* info */ Description, ReactNode]
   
   @js.native
   trait Steps
-    extends Component[StepsProps, js.Object, js.Any] {
+    extends Component[StepsProps, js.Object, Any] {
     
     def onStepClick(next: Double): Unit = js.native
   }
@@ -66,6 +67,8 @@ object stepsMod {
     var icons: js.UndefOr[Icons] = js.undefined
     
     var initial: js.UndefOr[Double] = js.undefined
+    
+    var items: js.UndefOr[js.Array[StepProps]] = js.undefined
     
     var labelPlacement: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -122,6 +125,12 @@ object stepsMod {
       
       inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
       
+      inline def setItems(value: js.Array[StepProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      
+      inline def setItemsVarargs(value: StepProps*): Self = StObject.set(x, "items", js.Array(value*))
+      
       inline def setLabelPlacement(value: horizontal | vertical): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
       
       inline def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
@@ -136,7 +145,7 @@ object stepsMod {
       
       inline def setProgressDot(value: ProgressDotRender | Boolean): Self = StObject.set(x, "progressDot", value.asInstanceOf[js.Any])
       
-      inline def setProgressDotFunction2(value: (/* iconDot */ js.Any, /* info */ Index) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
+      inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Index) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
       
       inline def setProgressDotUndefined: Self = StObject.set(x, "progressDot", js.undefined)
       

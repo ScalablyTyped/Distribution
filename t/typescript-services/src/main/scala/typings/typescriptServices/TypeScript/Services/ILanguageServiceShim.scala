@@ -64,7 +64,7 @@ object ILanguageServiceShim {
   
   inline def apply(
     cleanupSemanticCache: () => Unit,
-    dispose: js.Any => Unit,
+    dispose: Any => Unit,
     getBraceMatchingAtPosition: (String, Double) => String,
     getBreakpointStatementAtPosition: (String, Double) => String,
     getCompilerOptionsDiagnostics: () => String,

@@ -1,7 +1,7 @@
 package typings.xrm.Xrm
 
-import typings.std.Date
 import typings.xrm.Xrm.Collection.ItemCollection
+import typings.xrm.Xrm.Controls.BooleanControl
 import typings.xrm.Xrm.Controls.Control
 import typings.xrm.Xrm.Controls.DateControl
 import typings.xrm.Xrm.Controls.LookupControl
@@ -23,24 +23,25 @@ object Attributes {
   /**
     * Interface for an Entity attribute.
     */
-  trait Attribute extends StObject {
+  @js.native
+  trait Attribute[T] extends StObject {
     
     /**
       * Adds a handler to be called when the attribute's value is changed.
       * @param handler The function reference.
       */
-    def addOnChange(handler: ContextSensitiveHandler): Unit
+    def addOnChange(handler: ContextSensitiveHandler): Unit = js.native
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
-    var controls: ItemCollection[Control]
+    var controls: ItemCollection[Control] = js.native
     
     /**
       * Fire all "on change" event handlers.
       */
-    def fireOnChange(): Unit
+    def fireOnChange(): Unit = js.native
     
     /**
       * Gets attribute type.
@@ -57,7 +58,7 @@ object Attributes {
       * * optionset
       * * string
       */
-    def getAttributeType(): AttributeType
+    def getAttributeType(): AttributeType = js.native
     
     /**
       * Gets the attribute format.
@@ -77,63 +78,72 @@ object Attributes {
       * * url            (string)
       * @see {@link getAttributeType}
       */
-    def getFormat(): AttributeFormat
+    def getFormat(): AttributeFormat = js.native
     
     /**
       * Gets a boolean value indicating whether this Attribute has unsaved changes.
       * @returns true if there are unsaved changes, otherwise false.
       */
-    def getIsDirty(): Boolean
+    def getIsDirty(): Boolean = js.native
     
     /**
       * Gets the logical name of the attribute.
       * @returns The logical name.
       */
-    def getName(): String
+    def getName(): String = js.native
     
     /**
       * Gets a reference to the record context of this attribute.
       * @returns The parent record context.
       */
-    def getParent(): Entity
+    def getParent(): Entity = js.native
     
     /**
       * Gets the current level of requirement for the attribute.
       * @returns The required level, as either "none", "required", or "recommended"
       */
-    def getRequiredLevel(): RequirementLevel
+    def getRequiredLevel(): RequirementLevel = js.native
     
     /**
       * Gets current submit mode for the attribute.
       * @returns The submit mode, as either "always", "never", or "dirty"
       * @remarks The default value is "dirty"
       */
-    def getSubmitMode(): SubmitMode
+    def getSubmitMode(): SubmitMode = js.native
     
     /**
       * Gets the current user's privileges for the attribute.
       * @returns The user privileges.
       */
-    def getUserPrivilege(): Privilege
+    def getUserPrivilege(): Privilege = js.native
     
     /**
       * Gets the value.
       * @returns The value.
       */
-    def getValue(): js.Any
+    def getValue(): T | Null = js.native
     
     /**
       * Removes the handler from the "on change" event.
       * @param handler The handler.
       */
-    def removeOnChange(handler: ContextSensitiveHandler): Unit
+    def removeOnChange(handler: ContextSensitiveHandler): Unit = js.native
+    
+    /**
+      * Sets a value for a column to determine whether it is valid or invalid with a message
+      * @param isValid Specify false to set the column value to invalid and true to set the value to valid.
+      * @param message The message to display.
+      * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/attributes/setisvalid External Link: setIsValid (Client API reference)}
+      */
+    def setIsValid(isValid: Boolean): Unit = js.native
+    def setIsValid(isValid: Boolean, message: String): Unit = js.native
     
     /**
       * Sets the required level.
       * @param requirementLevel The requirement level, as either "none", "required", or "recommended"
       * @see {@link XrmEnum.AttributeRequirementLevel}
       */
-    def setRequiredLevel(requirementLevel: RequirementLevel): Unit
+    def setRequiredLevel(requirementLevel: RequirementLevel): Unit = js.native
     
     /**
       * Sets the submit mode.
@@ -141,72 +151,15 @@ object Attributes {
       * @default submitMode "dirty"
       * @see {@link XrmEnum.AttributeRequirementLevel}
       */
-    def setSubmitMode(submitMode: SubmitMode): Unit
+    def setSubmitMode(submitMode: SubmitMode): Unit = js.native
     
     /**
       * Sets the value.
       * @param value The value.
+      * @remarks Attributes on Quick Create Forms will not save values set with this method.
       */
-    def setValue(value: js.Any): Unit
-  }
-  object Attribute {
-    
-    inline def apply(
-      addOnChange: ContextSensitiveHandler => Unit,
-      controls: ItemCollection[Control],
-      fireOnChange: () => Unit,
-      getAttributeType: () => AttributeType,
-      getFormat: () => AttributeFormat,
-      getIsDirty: () => Boolean,
-      getName: () => String,
-      getParent: () => Entity,
-      getRequiredLevel: () => RequirementLevel,
-      getSubmitMode: () => SubmitMode,
-      getUserPrivilege: () => Privilege,
-      getValue: () => js.Any,
-      removeOnChange: ContextSensitiveHandler => Unit,
-      setRequiredLevel: RequirementLevel => Unit,
-      setSubmitMode: SubmitMode => Unit,
-      setValue: js.Any => Unit
-    ): Attribute = {
-      val __obj = js.Dynamic.literal(addOnChange = js.Any.fromFunction1(addOnChange), controls = controls.asInstanceOf[js.Any], fireOnChange = js.Any.fromFunction0(fireOnChange), getAttributeType = js.Any.fromFunction0(getAttributeType), getFormat = js.Any.fromFunction0(getFormat), getIsDirty = js.Any.fromFunction0(getIsDirty), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getRequiredLevel = js.Any.fromFunction0(getRequiredLevel), getSubmitMode = js.Any.fromFunction0(getSubmitMode), getUserPrivilege = js.Any.fromFunction0(getUserPrivilege), getValue = js.Any.fromFunction0(getValue), removeOnChange = js.Any.fromFunction1(removeOnChange), setRequiredLevel = js.Any.fromFunction1(setRequiredLevel), setSubmitMode = js.Any.fromFunction1(setSubmitMode), setValue = js.Any.fromFunction1(setValue))
-      __obj.asInstanceOf[Attribute]
-    }
-    
-    extension [Self <: Attribute](x: Self) {
-      
-      inline def setAddOnChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnChange", js.Any.fromFunction1(value))
-      
-      inline def setControls(value: ItemCollection[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
-      
-      inline def setFireOnChange(value: () => Unit): Self = StObject.set(x, "fireOnChange", js.Any.fromFunction0(value))
-      
-      inline def setGetAttributeType(value: () => AttributeType): Self = StObject.set(x, "getAttributeType", js.Any.fromFunction0(value))
-      
-      inline def setGetFormat(value: () => AttributeFormat): Self = StObject.set(x, "getFormat", js.Any.fromFunction0(value))
-      
-      inline def setGetIsDirty(value: () => Boolean): Self = StObject.set(x, "getIsDirty", js.Any.fromFunction0(value))
-      
-      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
-      
-      inline def setGetParent(value: () => Entity): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
-      
-      inline def setGetRequiredLevel(value: () => RequirementLevel): Self = StObject.set(x, "getRequiredLevel", js.Any.fromFunction0(value))
-      
-      inline def setGetSubmitMode(value: () => SubmitMode): Self = StObject.set(x, "getSubmitMode", js.Any.fromFunction0(value))
-      
-      inline def setGetUserPrivilege(value: () => Privilege): Self = StObject.set(x, "getUserPrivilege", js.Any.fromFunction0(value))
-      
-      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
-      
-      inline def setRemoveOnChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "removeOnChange", js.Any.fromFunction1(value))
-      
-      inline def setSetRequiredLevel(value: RequirementLevel => Unit): Self = StObject.set(x, "setRequiredLevel", js.Any.fromFunction1(value))
-      
-      inline def setSetSubmitMode(value: SubmitMode => Unit): Self = StObject.set(x, "setSubmitMode", js.Any.fromFunction1(value))
-      
-      inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
-    }
+    def setValue(): Unit = js.native
+    def setValue(value: T): Unit = js.native
   }
   
   /**
@@ -305,46 +258,17 @@ object Attributes {
     * Interface for a Boolean attribute.
     * @see {@link EnumAttribute}
     */
+  @js.native
   trait BooleanAttribute
     extends StObject
-       with EnumAttribute {
+       with EnumAttribute[Boolean] {
     
     /**
-      * Sets the value.
-      * @param value The value.
-      * @remarks Attributes on Quick Create Forms will not save values set with this method.
+      * A collection of all the controls on the form that interface with this attribute.
+      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
-    def setValue(value: Boolean): Unit
-  }
-  object BooleanAttribute {
-    
-    inline def apply(
-      addOnChange: ContextSensitiveHandler => Unit,
-      controls: ItemCollection[Control],
-      fireOnChange: () => Unit,
-      getAttributeType: () => AttributeType,
-      getFormat: () => AttributeFormat,
-      getInitialValue: () => Double | Boolean,
-      getIsDirty: () => Boolean,
-      getName: () => String,
-      getParent: () => Entity,
-      getRequiredLevel: () => RequirementLevel,
-      getSubmitMode: () => SubmitMode,
-      getUserPrivilege: () => Privilege,
-      getValue: () => js.Any,
-      removeOnChange: ContextSensitiveHandler => Unit,
-      setRequiredLevel: RequirementLevel => Unit,
-      setSubmitMode: SubmitMode => Unit,
-      setValue: Boolean => Unit
-    ): BooleanAttribute = {
-      val __obj = js.Dynamic.literal(addOnChange = js.Any.fromFunction1(addOnChange), controls = controls.asInstanceOf[js.Any], fireOnChange = js.Any.fromFunction0(fireOnChange), getAttributeType = js.Any.fromFunction0(getAttributeType), getFormat = js.Any.fromFunction0(getFormat), getInitialValue = js.Any.fromFunction0(getInitialValue), getIsDirty = js.Any.fromFunction0(getIsDirty), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getRequiredLevel = js.Any.fromFunction0(getRequiredLevel), getSubmitMode = js.Any.fromFunction0(getSubmitMode), getUserPrivilege = js.Any.fromFunction0(getUserPrivilege), getValue = js.Any.fromFunction0(getValue), removeOnChange = js.Any.fromFunction1(removeOnChange), setRequiredLevel = js.Any.fromFunction1(setRequiredLevel), setSubmitMode = js.Any.fromFunction1(setSubmitMode), setValue = js.Any.fromFunction1(setValue))
-      __obj.asInstanceOf[BooleanAttribute]
-    }
-    
-    extension [Self <: BooleanAttribute](x: Self) {
-      
-      inline def setSetValue(value: Boolean => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
-    }
+    @JSName("controls")
+    var controls_BooleanAttribute: ItemCollection[BooleanControl] = js.native
   }
   
   /**
@@ -352,54 +276,17 @@ object Attributes {
     *
     * @see {@link Attribute}
     */
+  @js.native
   trait DateAttribute
     extends StObject
-       with Attribute {
+       with Attribute[js.Date] {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
-    var controls_DateAttribute: ItemCollection[DateControl]
-    
-    /**
-      * Sets the value.
-      * @param value The value.
-      * @remarks Attributes on Quick Create Forms will not save values set with this method.
-      */
-    def setValue(value: Date): Unit
-  }
-  object DateAttribute {
-    
-    inline def apply(
-      addOnChange: ContextSensitiveHandler => Unit,
-      controls: ItemCollection[DateControl],
-      fireOnChange: () => Unit,
-      getAttributeType: () => AttributeType,
-      getFormat: () => AttributeFormat,
-      getIsDirty: () => Boolean,
-      getName: () => String,
-      getParent: () => Entity,
-      getRequiredLevel: () => RequirementLevel,
-      getSubmitMode: () => SubmitMode,
-      getUserPrivilege: () => Privilege,
-      getValue: () => js.Any,
-      removeOnChange: ContextSensitiveHandler => Unit,
-      setRequiredLevel: RequirementLevel => Unit,
-      setSubmitMode: SubmitMode => Unit,
-      setValue: Date => Unit
-    ): DateAttribute = {
-      val __obj = js.Dynamic.literal(addOnChange = js.Any.fromFunction1(addOnChange), controls = controls.asInstanceOf[js.Any], fireOnChange = js.Any.fromFunction0(fireOnChange), getAttributeType = js.Any.fromFunction0(getAttributeType), getFormat = js.Any.fromFunction0(getFormat), getIsDirty = js.Any.fromFunction0(getIsDirty), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getRequiredLevel = js.Any.fromFunction0(getRequiredLevel), getSubmitMode = js.Any.fromFunction0(getSubmitMode), getUserPrivilege = js.Any.fromFunction0(getUserPrivilege), getValue = js.Any.fromFunction0(getValue), removeOnChange = js.Any.fromFunction1(removeOnChange), setRequiredLevel = js.Any.fromFunction1(setRequiredLevel), setSubmitMode = js.Any.fromFunction1(setSubmitMode), setValue = js.Any.fromFunction1(setValue))
-      __obj.asInstanceOf[DateAttribute]
-    }
-    
-    extension [Self <: DateAttribute](x: Self) {
-      
-      inline def setControls(value: ItemCollection[DateControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
-      
-      inline def setSetValue(value: Date => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
-    }
+    var controls_DateAttribute: ItemCollection[DateControl] = js.native
   }
   
   /**
@@ -422,46 +309,18 @@ object Attributes {
     * Common interface for enumeration attributes (OptionSet and Boolean).
     * @see {@link Attribute}
     */
-  trait EnumAttribute
+  @js.native
+  trait EnumAttribute[T /* <: Double | Boolean */]
     extends StObject
-       with Attribute {
+       with Attribute[T] {
     
     /**
       * Gets the initial value of the attribute.
       * @returns The initial value.
       * @remarks Valid for OptionSet and boolean attribute types
+      * @see {@link https://docs.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/attributes/getinitialvalue External Link: getInitialValue (Client API reference)}
       */
-    def getInitialValue(): Double | Boolean
-  }
-  object EnumAttribute {
-    
-    inline def apply(
-      addOnChange: ContextSensitiveHandler => Unit,
-      controls: ItemCollection[Control],
-      fireOnChange: () => Unit,
-      getAttributeType: () => AttributeType,
-      getFormat: () => AttributeFormat,
-      getInitialValue: () => Double | Boolean,
-      getIsDirty: () => Boolean,
-      getName: () => String,
-      getParent: () => Entity,
-      getRequiredLevel: () => RequirementLevel,
-      getSubmitMode: () => SubmitMode,
-      getUserPrivilege: () => Privilege,
-      getValue: () => js.Any,
-      removeOnChange: ContextSensitiveHandler => Unit,
-      setRequiredLevel: RequirementLevel => Unit,
-      setSubmitMode: SubmitMode => Unit,
-      setValue: js.Any => Unit
-    ): EnumAttribute = {
-      val __obj = js.Dynamic.literal(addOnChange = js.Any.fromFunction1(addOnChange), controls = controls.asInstanceOf[js.Any], fireOnChange = js.Any.fromFunction0(fireOnChange), getAttributeType = js.Any.fromFunction0(getAttributeType), getFormat = js.Any.fromFunction0(getFormat), getInitialValue = js.Any.fromFunction0(getInitialValue), getIsDirty = js.Any.fromFunction0(getIsDirty), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getRequiredLevel = js.Any.fromFunction0(getRequiredLevel), getSubmitMode = js.Any.fromFunction0(getSubmitMode), getUserPrivilege = js.Any.fromFunction0(getUserPrivilege), getValue = js.Any.fromFunction0(getValue), removeOnChange = js.Any.fromFunction1(removeOnChange), setRequiredLevel = js.Any.fromFunction1(setRequiredLevel), setSubmitMode = js.Any.fromFunction1(setSubmitMode), setValue = js.Any.fromFunction1(setValue))
-      __obj.asInstanceOf[EnumAttribute]
-    }
-    
-    extension [Self <: EnumAttribute](x: Self) {
-      
-      inline def setGetInitialValue(value: () => Double | Boolean): Self = StObject.set(x, "getInitialValue", js.Any.fromFunction0(value))
-    }
+    def getInitialValue(): T | Null = js.native
   }
   
   /**
@@ -485,144 +344,65 @@ object Attributes {
     *
     * @see {@link Attribute}
     */
+  @js.native
   trait LookupAttribute
     extends StObject
-       with Attribute {
+       with Attribute[js.Array[LookupValue]] {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
-    var controls_LookupAttribute: ItemCollection[LookupControl]
+    var controls_LookupAttribute: ItemCollection[LookupControl] = js.native
     
     /**
       * Gets a boolean value indicating whether the Lookup is a multi-value PartyList.
       * @returns true the attribute is a PartyList, otherwise false.
       */
-    def getIsPartyList(): Boolean
-    
-    /**
-      * Sets the value.
-      * @param value The value.
-      * @remarks Attributes on Quick Create Forms will not save values set with this method.
-      */
-    def setValue(value: js.Array[LookupValue]): Unit
-  }
-  object LookupAttribute {
-    
-    inline def apply(
-      addOnChange: ContextSensitiveHandler => Unit,
-      controls: ItemCollection[LookupControl],
-      fireOnChange: () => Unit,
-      getAttributeType: () => AttributeType,
-      getFormat: () => AttributeFormat,
-      getIsDirty: () => Boolean,
-      getIsPartyList: () => Boolean,
-      getName: () => String,
-      getParent: () => Entity,
-      getRequiredLevel: () => RequirementLevel,
-      getSubmitMode: () => SubmitMode,
-      getUserPrivilege: () => Privilege,
-      getValue: () => js.Any,
-      removeOnChange: ContextSensitiveHandler => Unit,
-      setRequiredLevel: RequirementLevel => Unit,
-      setSubmitMode: SubmitMode => Unit,
-      setValue: js.Array[LookupValue] => Unit
-    ): LookupAttribute = {
-      val __obj = js.Dynamic.literal(addOnChange = js.Any.fromFunction1(addOnChange), controls = controls.asInstanceOf[js.Any], fireOnChange = js.Any.fromFunction0(fireOnChange), getAttributeType = js.Any.fromFunction0(getAttributeType), getFormat = js.Any.fromFunction0(getFormat), getIsDirty = js.Any.fromFunction0(getIsDirty), getIsPartyList = js.Any.fromFunction0(getIsPartyList), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getRequiredLevel = js.Any.fromFunction0(getRequiredLevel), getSubmitMode = js.Any.fromFunction0(getSubmitMode), getUserPrivilege = js.Any.fromFunction0(getUserPrivilege), getValue = js.Any.fromFunction0(getValue), removeOnChange = js.Any.fromFunction1(removeOnChange), setRequiredLevel = js.Any.fromFunction1(setRequiredLevel), setSubmitMode = js.Any.fromFunction1(setSubmitMode), setValue = js.Any.fromFunction1(setValue))
-      __obj.asInstanceOf[LookupAttribute]
-    }
-    
-    extension [Self <: LookupAttribute](x: Self) {
-      
-      inline def setControls(value: ItemCollection[LookupControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
-      
-      inline def setGetIsPartyList(value: () => Boolean): Self = StObject.set(x, "getIsPartyList", js.Any.fromFunction0(value))
-      
-      inline def setSetValue(value: js.Array[LookupValue] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
-    }
+    def getIsPartyList(): Boolean = js.native
   }
   
   /**
     * Interface for a Number attribute.
     * @see {@link Attribute}
     */
+  @js.native
   trait NumberAttribute
     extends StObject
-       with Attribute {
+       with Attribute[Double] {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
-    var controls_NumberAttribute: ItemCollection[NumberControl]
+    var controls_NumberAttribute: ItemCollection[NumberControl] = js.native
     
     /**
       * Gets the maximum value allowed.
       * @returns The maximum value allowed.
       */
-    def getMax(): Double
+    def getMax(): Double = js.native
     
     /**
       * Gets the minimum value allowed.
       * @returns The minimum value allowed.
       */
-    def getMin(): Double
+    def getMin(): Double = js.native
     
     /**
       * Gets the attribute's configured precision.
       * @returns The total number of allowed decimal places.
       */
-    def getPrecision(): Double
+    def getPrecision(): Double = js.native
     
     /**
-      * Sets the value.
-      * @param value The value.
-      * @remarks Attributes on Quick Create Forms will not save values set with this method.
+      * Sets the number of digits allowed to the right of the decimal point.
+      * @param precision Number of digits allowed to the right of the decimal point.
+      * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/attributes/setPrecision External Link: setPrecision (Client API reference)}
       */
-    def setValue(value: Double): Unit
-  }
-  object NumberAttribute {
-    
-    inline def apply(
-      addOnChange: ContextSensitiveHandler => Unit,
-      controls: ItemCollection[NumberControl],
-      fireOnChange: () => Unit,
-      getAttributeType: () => AttributeType,
-      getFormat: () => AttributeFormat,
-      getIsDirty: () => Boolean,
-      getMax: () => Double,
-      getMin: () => Double,
-      getName: () => String,
-      getParent: () => Entity,
-      getPrecision: () => Double,
-      getRequiredLevel: () => RequirementLevel,
-      getSubmitMode: () => SubmitMode,
-      getUserPrivilege: () => Privilege,
-      getValue: () => js.Any,
-      removeOnChange: ContextSensitiveHandler => Unit,
-      setRequiredLevel: RequirementLevel => Unit,
-      setSubmitMode: SubmitMode => Unit,
-      setValue: Double => Unit
-    ): NumberAttribute = {
-      val __obj = js.Dynamic.literal(addOnChange = js.Any.fromFunction1(addOnChange), controls = controls.asInstanceOf[js.Any], fireOnChange = js.Any.fromFunction0(fireOnChange), getAttributeType = js.Any.fromFunction0(getAttributeType), getFormat = js.Any.fromFunction0(getFormat), getIsDirty = js.Any.fromFunction0(getIsDirty), getMax = js.Any.fromFunction0(getMax), getMin = js.Any.fromFunction0(getMin), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getPrecision = js.Any.fromFunction0(getPrecision), getRequiredLevel = js.Any.fromFunction0(getRequiredLevel), getSubmitMode = js.Any.fromFunction0(getSubmitMode), getUserPrivilege = js.Any.fromFunction0(getUserPrivilege), getValue = js.Any.fromFunction0(getValue), removeOnChange = js.Any.fromFunction1(removeOnChange), setRequiredLevel = js.Any.fromFunction1(setRequiredLevel), setSubmitMode = js.Any.fromFunction1(setSubmitMode), setValue = js.Any.fromFunction1(setValue))
-      __obj.asInstanceOf[NumberAttribute]
-    }
-    
-    extension [Self <: NumberAttribute](x: Self) {
-      
-      inline def setControls(value: ItemCollection[NumberControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
-      
-      inline def setGetMax(value: () => Double): Self = StObject.set(x, "getMax", js.Any.fromFunction0(value))
-      
-      inline def setGetMin(value: () => Double): Self = StObject.set(x, "getMin", js.Any.fromFunction0(value))
-      
-      inline def setGetPrecision(value: () => Double): Self = StObject.set(x, "getPrecision", js.Any.fromFunction0(value))
-      
-      inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
-    }
+    def setPrecision(precision: Double): Unit = js.native
   }
   
   /**
@@ -630,9 +410,9 @@ object Attributes {
     * @see {@link EnumAttribute}
     */
   @js.native
-  trait OptionSetAttribute
+  trait OptionSetAttribute[T /* <: Double */]
     extends StObject
-       with EnumAttribute {
+       with EnumAttribute[T] {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
@@ -672,14 +452,6 @@ object Attributes {
       */
     def getText(): String = js.native
     
-    /**
-      * Sets the value.
-      * @param value The value.
-      * @remarks     The getOptions() method returns option values as strings. You must use parseInt
-      *              to convert them to numbers before you can use those values to set the value of an
-      *              OptionSet attribute. Attributes on Quick Create Forms will not save values set
-      *              with this method.
-      */
     def setValue(value: Double): Unit = js.native
   }
   
@@ -723,66 +495,24 @@ object Attributes {
     * Interface for a String attribute.
     * @see {@link Attribute}
     */
+  @js.native
   trait StringAttribute
     extends StObject
-       with Attribute {
+       with Attribute[String] {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
-    var controls_StringAttribute: ItemCollection[StringControl]
+    var controls_StringAttribute: ItemCollection[StringControl] = js.native
     
     /**
       * Gets maximum length allowed.
       * @returns The maximum length allowed.
       * @remarks The email form's "Description" attribute does not have the this method.
       */
-    def getMaxLength(): Double
-    
-    /**
-      * Sets the value.
-      * @param value The value.
-      * @remarks A String field with the {@link Attribute.getFormat|email} format enforces email
-      *          address formatting. Attributes on Quick Create Forms will not save values set
-      *          with this method.
-      */
-    def setValue(value: String): Unit
-  }
-  object StringAttribute {
-    
-    inline def apply(
-      addOnChange: ContextSensitiveHandler => Unit,
-      controls: ItemCollection[StringControl],
-      fireOnChange: () => Unit,
-      getAttributeType: () => AttributeType,
-      getFormat: () => AttributeFormat,
-      getIsDirty: () => Boolean,
-      getMaxLength: () => Double,
-      getName: () => String,
-      getParent: () => Entity,
-      getRequiredLevel: () => RequirementLevel,
-      getSubmitMode: () => SubmitMode,
-      getUserPrivilege: () => Privilege,
-      getValue: () => js.Any,
-      removeOnChange: ContextSensitiveHandler => Unit,
-      setRequiredLevel: RequirementLevel => Unit,
-      setSubmitMode: SubmitMode => Unit,
-      setValue: String => Unit
-    ): StringAttribute = {
-      val __obj = js.Dynamic.literal(addOnChange = js.Any.fromFunction1(addOnChange), controls = controls.asInstanceOf[js.Any], fireOnChange = js.Any.fromFunction0(fireOnChange), getAttributeType = js.Any.fromFunction0(getAttributeType), getFormat = js.Any.fromFunction0(getFormat), getIsDirty = js.Any.fromFunction0(getIsDirty), getMaxLength = js.Any.fromFunction0(getMaxLength), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getRequiredLevel = js.Any.fromFunction0(getRequiredLevel), getSubmitMode = js.Any.fromFunction0(getSubmitMode), getUserPrivilege = js.Any.fromFunction0(getUserPrivilege), getValue = js.Any.fromFunction0(getValue), removeOnChange = js.Any.fromFunction1(removeOnChange), setRequiredLevel = js.Any.fromFunction1(setRequiredLevel), setSubmitMode = js.Any.fromFunction1(setSubmitMode), setValue = js.Any.fromFunction1(setValue))
-      __obj.asInstanceOf[StringAttribute]
-    }
-    
-    extension [Self <: StringAttribute](x: Self) {
-      
-      inline def setControls(value: ItemCollection[StringControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
-      
-      inline def setGetMaxLength(value: () => Double): Self = StObject.set(x, "getMaxLength", js.Any.fromFunction0(value))
-      
-      inline def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
-    }
+    def getMaxLength(): Double = js.native
   }
   
   /**

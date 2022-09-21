@@ -27,7 +27,7 @@ object ReturnStatement {
     
     inline def setReturns(value: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
-    inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value :_*))
+    inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value*))
     
     inline def setType(value: `26`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

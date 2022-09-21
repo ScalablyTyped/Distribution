@@ -29,6 +29,6 @@ object ListServiceConfigsResponse {
     
     inline def setServiceConfigsUndefined: Self = StObject.set(x, "serviceConfigs", js.undefined)
     
-    inline def setServiceConfigsVarargs(value: Service*): Self = StObject.set(x, "serviceConfigs", js.Array(value :_*))
+    inline def setServiceConfigsVarargs(value: Service*): Self = StObject.set(x, "serviceConfigs", js.Array(value*))
   }
 }

@@ -7,22 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactYoutubeStrings {
   
   @js.native
-  sealed trait playlist extends StObject
-  inline def playlist: playlist = "playlist".asInstanceOf[playlist]
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
-  sealed trait red extends StObject
-  inline def red: red = "red".asInstanceOf[red]
-  
-  @js.native
-  sealed trait search extends StObject
-  inline def search: search = "search".asInstanceOf[search]
-  
-  @js.native
-  sealed trait user_uploads extends StObject
-  inline def user_uploads: user_uploads = "user_uploads".asInstanceOf[user_uploads]
-  
-  @js.native
-  sealed trait white extends StObject
-  inline def white: white = "white".asInstanceOf[white]
+  sealed trait `lazy` extends StObject
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
 }

@@ -9,8 +9,10 @@ trait PropertyDeclaration
   extends StObject
      with ClassElement
      with JSDocContainer
+     with HasDecorators
      with HasExpressionInitializer
      with HasJSDoc
+     with HasModifiers
      with HasType
      with VariableLikeDeclaration {
   

@@ -14,18 +14,18 @@ object Animation {
   //#region Interfaces
   trait IAnimationMethodResponse extends StObject {
     
-    def execute(): Promise[js.Any]
+    def execute(): Promise[Any]
   }
   object IAnimationMethodResponse {
     
-    inline def apply(execute: () => Promise[js.Any]): IAnimationMethodResponse = {
+    inline def apply(execute: () => Promise[Any]): IAnimationMethodResponse = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute))
       __obj.asInstanceOf[IAnimationMethodResponse]
     }
     
     extension [Self <: IAnimationMethodResponse](x: Self) {
       
-      inline def setExecute(value: () => Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => Promise[Any]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     }
   }
 }

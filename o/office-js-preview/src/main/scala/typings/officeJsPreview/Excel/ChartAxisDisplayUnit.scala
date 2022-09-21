@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ChartAxisDisplayUnit extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisDisplayUnit")
@@ -15,7 +16,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of billions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait billions
@@ -24,7 +26,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of custom value.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait custom
@@ -33,7 +36,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of hundreds of millions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait hundredMillions
@@ -42,7 +46,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of hundreds of thousands.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait hundredThousands
@@ -51,7 +56,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of hundreds.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait hundreds
@@ -60,7 +66,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of millions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait millions
@@ -69,7 +76,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * Default option. This will reset display unit to the axis, and set unit label invisible.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait none
@@ -78,7 +86,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of tens of millions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait tenMillions
@@ -87,7 +96,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of tens of thousands.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait tenThousands
@@ -96,7 +106,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of thousands.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait thousands
@@ -105,7 +116,8 @@ object ChartAxisDisplayUnit extends StObject {
   
   /**
     * This will set the axis in units of trillions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait trillions

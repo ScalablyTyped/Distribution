@@ -10,10 +10,10 @@ object brandingWatermarkMod {
   
   @JSImport("material-ui/svg-icons/av/branding-watermark", JSImport.Default)
   @js.native
-  class default () extends AvBrandingWatermark
+  open class default () extends AvBrandingWatermark
   
   @JSImport("material-ui/svg-icons/av/branding-watermark", "AvBrandingWatermark")
   @js.native
-  class AvBrandingWatermark ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvBrandingWatermark ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,7 +1,6 @@
 package typings.speedtestNet.mod
 
 import typings.speedtestNet.speedtestNetStrings.log
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,14 +22,14 @@ trait LogEvent
   /** Indicates the overall progress of the test as a fraction (0 to 1). */
   var progress: Double
   
-  var timestamp: Date
+  var timestamp: js.Date
   
   @JSName("type")
   var type_LogEvent: log
 }
 object LogEvent {
   
-  inline def apply(level: String, message: String, progress: Double, timestamp: Date): LogEvent = {
+  inline def apply(level: String, message: String, progress: Double, timestamp: js.Date): LogEvent = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("log")
     __obj.asInstanceOf[LogEvent]
@@ -44,7 +43,7 @@ object LogEvent {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setType(value: log): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -12,7 +12,7 @@ object ngTableFilterConfigMod {
   
   @JSImport("ng-table/src/browser/ngTableFilterConfig", "NgTableFilterConfig")
   @js.native
-  class NgTableFilterConfig protected () extends StObject {
+  open class NgTableFilterConfig protected () extends StObject {
     def this(/**
       * Readonly copy of the final values used to configure the service.
       */
@@ -53,20 +53,20 @@ object ngTableFilterConfigMod {
   
   @JSImport("ng-table/src/browser/ngTableFilterConfig", "NgTableFilterConfigProvider")
   @js.native
-  class NgTableFilterConfigProvider protected ()
+  open class NgTableFilterConfigProvider protected ()
     extends StObject
        with IServiceProvider {
     def this($injector: IInjectorService) = this()
     
     /* CompleteClass */
     @JSName("$get")
-    var $get: js.Any = js.native
+    var $get: Any = js.native
     @JSName("$get")
     def $get_MNgTableFilterConfigProvider(): NgTableFilterConfig = js.native
     
-    /* private */ var config: js.Any = js.native
+    /* private */ var config: Any = js.native
     
-    /* private */ var defaultConfig: js.Any = js.native
+    /* private */ var defaultConfig: Any = js.native
     
     /**
       * Reset back to factory defaults the config values that `NgTableFilterConfig` service will use

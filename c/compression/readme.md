@@ -10,10 +10,10 @@ Node.js compression middleware
 | ------------------ | :-------------: |
 | Full name          | compression |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 3498 |
-| # downloads        | 430781599 |
-| # stars            | 209 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.3772283E7 |
+| # stars            | 2559.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/compression#readme)

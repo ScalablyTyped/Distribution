@@ -1,6 +1,6 @@
 package typings.oracledb.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.oracledb.anon.Tables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ trait SubscriptionMessage extends StObject {
   
   /**
     * Name of the Advanced Queue. Undefined for CQN.
-    * 
+    *
     * @since 4.0
     */
   var queueName: js.UndefOr[String] = js.undefined
@@ -54,7 +54,7 @@ object SubscriptionMessage {
     
     inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    inline def setQueriesVarargs(value: Tables*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: Tables*): Self = StObject.set(x, "queries", js.Array(value*))
     
     inline def setQueueName(value: String): Self = StObject.set(x, "queueName", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object SubscriptionMessage {
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    inline def setTablesVarargs(value: SubscriptionTables*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: SubscriptionTables*): Self = StObject.set(x, "tables", js.Array(value*))
     
     inline def setTxId(value: Buffer): Self = StObject.set(x, "txId", value.asInstanceOf[js.Any])
     

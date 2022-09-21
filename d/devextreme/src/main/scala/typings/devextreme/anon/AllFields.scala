@@ -6,14 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AllFields extends StObject {
   
+  /**
+    * The string to display instead of All Fields.
+    */
   var allFields: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display instead of Column Fields.
+    */
   var columnFields: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display instead of Data Fields.
+    */
   var dataFields: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display instead of Filter Fields.
+    */
   var filterFields: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display instead of Row Fields.
+    */
   var rowFields: js.UndefOr[String] = js.undefined
 }
 object AllFields {

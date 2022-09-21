@@ -12,6 +12,11 @@ trait ApplicationResponse extends StObject {
   var Arn: string
   
   /**
+    * The date and time when the Application was created.
+    */
+  var CreationDate: js.UndefOr[string] = js.undefined
+  
+  /**
     * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
   var Id: string
@@ -36,6 +41,10 @@ object ApplicationResponse {
   extension [Self <: ApplicationResponse](x: Self) {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    
+    inline def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

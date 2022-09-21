@@ -1,18 +1,22 @@
 package typings.firebaseApp
 
+import typings.firebaseApp.typesMod.PlatformLoggerService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformLoggerServiceMod {
   
-  @JSImport("@firebase/app/dist/packages/app/src/platformLoggerService", "PlatformLoggerService")
+  @JSImport("@firebase/app/dist/app/src/platformLoggerService", "PlatformLoggerServiceImpl")
   @js.native
-  class PlatformLoggerService protected () extends StObject {
-    def this(container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentContainer */ js.Any) = this()
+  open class PlatformLoggerServiceImpl protected ()
+    extends StObject
+       with PlatformLoggerService {
+    def this(container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentContainer */ Any) = this()
     
-    /* private */ val container: js.Any = js.native
+    /* private */ val container: Any = js.native
     
-    def getPlatformInfoString(): String = js.native
+    /* CompleteClass */
+    override def getPlatformInfoString(): String = js.native
   }
 }

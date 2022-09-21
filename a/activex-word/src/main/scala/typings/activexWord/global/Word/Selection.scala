@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Selection")
 @js.native
-/* private */ class Selection ()
+/* private */ open class Selection ()
   extends StObject
      with typings.activexWord.Word.Selection

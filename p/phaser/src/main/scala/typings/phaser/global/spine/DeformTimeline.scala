@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.DeformTimeline")
 @js.native
-class DeformTimeline protected ()
+open class DeformTimeline protected ()
   extends StObject
      with typings.phaser.spine.DeformTimeline {
   def this(frameCount: Double) = this()
@@ -28,7 +28,7 @@ class DeformTimeline protected ()
   var attachment: typings.phaser.spine.VertexAttachment = js.native
   
   /* private */ /* CompleteClass */
-  var curves: js.Any = js.native
+  var curves: Any = js.native
   
   /* CompleteClass */
   var frameVertices: js.Array[ArrayLike[Double]] = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "FileInformation")
 @js.native
-class FileInformation protected ()
+open class FileInformation protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.FileInformation {
   def this(contents: String, byteOrderMark: typings.typescriptServices.TypeScript.ByteOrderMark) = this()

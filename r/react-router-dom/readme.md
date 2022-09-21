@@ -1,30 +1,30 @@
 
 # Scala.js typings for react-router-dom
 
-Typings are for version 5.1
+Typings are for version 6.4.0
 
 ## Library description:
-DOM bindings for React Router
+Declarative routing for React web applications
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-router-dom |
 | Keywords           | react, router, route, routing, history, link |
-| # releases         | 26 |
-| # dependents       | 5934 |
-| # downloads        | 138188220 |
-| # stars            | 72 |
+| # releases         | 48 |
+| # dependents       | 0.0 |
+| # downloads        | 3.3813039666666664E7 |
+| # stars            | 47997.0 |
 
 ## Links
-- [Homepage](https://github.com/ReactTraining/react-router#readme)
-- [Bugs](https://github.com/ReactTraining/react-router/issues)
-- [Repository](https://github.com/ReactTraining/react-router)
+- [Homepage](https://github.com/remix-run/react-router#readme)
+- [Bugs](https://github.com/remix-run/react-router/issues)
+- [Repository](https://github.com/remix-run/react-router)
 - [Npm](https://www.npmjs.com/package/react-router-dom)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

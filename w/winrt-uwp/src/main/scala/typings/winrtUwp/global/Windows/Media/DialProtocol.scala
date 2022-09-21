@@ -198,7 +198,7 @@ object DialProtocol {
   @JSGlobal("Windows.Media.DialProtocol.DialDevicePicker")
   @js.native
   /** Creates a new DialDevicePicker object. */
-  class DialDevicePicker ()
+  open class DialDevicePicker ()
     extends StObject
        with typings.winrtUwp.Windows.Media.DialProtocol.DialDevicePicker
   

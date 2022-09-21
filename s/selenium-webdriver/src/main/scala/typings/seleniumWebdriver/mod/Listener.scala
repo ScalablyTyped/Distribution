@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "Listener")
 @js.native
-class Listener protected () extends StObject {
+open class Listener protected () extends StObject {
   /**
     * @param {!Function} fn The acutal listener function.
     * @param {(Object|undefined)} scope The object in whose scope to invoke the

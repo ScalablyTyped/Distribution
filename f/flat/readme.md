@@ -10,10 +10,10 @@ Take a nested Javascript object and flatten it, or unflatten an object with deli
 | ------------------ | :-------------: |
 | Full name          | flat |
 | Keywords           | flat, json, flatten, unflatten, split, object, nested |
-| # releases         | 8 |
-| # dependents       | 881 |
-| # downloads        | 153510596 |
-| # stars            | 45 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1673795E7 |
+| # stars            | 1552.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/flat)

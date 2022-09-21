@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.StackLayout")
 @js.native
-class StackLayout ()
+/**
+  * Stack based layout manager. Can be set on the `layout` property of any `Composite` or widget
+  * extending `Composite` like `Page` or `Tab` widget. The `Stack` uses it as the default `layout`.
+  * <br/><br/> All children of the composite are automatically arranged in one vertical stack, starting
+  * from the top.
+  */
+open class StackLayout ()
   extends typings.tabris.mod.StackLayout {
   def this(options: Spacing) = this()
 }

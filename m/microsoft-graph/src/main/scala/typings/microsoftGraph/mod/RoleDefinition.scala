@@ -57,7 +57,7 @@ object RoleDefinition {
     
     inline def setRoleAssignmentsUndefined: Self = StObject.set(x, "roleAssignments", js.undefined)
     
-    inline def setRoleAssignmentsVarargs(value: RoleAssignment*): Self = StObject.set(x, "roleAssignments", js.Array(value :_*))
+    inline def setRoleAssignmentsVarargs(value: RoleAssignment*): Self = StObject.set(x, "roleAssignments", js.Array(value*))
     
     inline def setRolePermissions(value: NullableOption[js.Array[RolePermission]]): Self = StObject.set(x, "rolePermissions", value.asInstanceOf[js.Any])
     
@@ -65,6 +65,6 @@ object RoleDefinition {
     
     inline def setRolePermissionsUndefined: Self = StObject.set(x, "rolePermissions", js.undefined)
     
-    inline def setRolePermissionsVarargs(value: RolePermission*): Self = StObject.set(x, "rolePermissions", js.Array(value :_*))
+    inline def setRolePermissionsVarargs(value: RolePermission*): Self = StObject.set(x, "rolePermissions", js.Array(value*))
   }
 }

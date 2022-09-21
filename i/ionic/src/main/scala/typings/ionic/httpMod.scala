@@ -36,7 +36,7 @@ object httpMod {
   
   @JSImport("ionic/lib/http", "Client")
   @js.native
-  class Client protected ()
+  open class Client protected ()
     extends StObject
        with IClient {
     def this(config: IConfig) = this()
@@ -64,7 +64,7 @@ object httpMod {
   
   @JSImport("ionic/lib/http", "Paginator")
   @js.native
-  class Paginator[T /* <: Response[js.Array[js.Object]] */] protected ()
+  open class Paginator[T /* <: Response[js.Array[js.Object]] */] protected ()
     extends StObject
        with IPaginator[T, PagePaginatorState] {
     def this(hasClientReqgenGuardStateMax: PaginatorDeps[T, PagePaginatorState]) = this()
@@ -80,7 +80,7 @@ object httpMod {
     
     /* protected */ var max: js.UndefOr[Double] = js.native
     
-    def next(): IteratorResult[js.Promise[T], js.Any] = js.native
+    def next(): IteratorResult[js.Promise[T], Any] = js.native
     
     /* protected */ def reqgen(): js.Promise[Req] = js.native
     /* protected */ @JSName("reqgen")
@@ -99,7 +99,7 @@ object httpMod {
   
   @JSImport("ionic/lib/http", "TokenPaginator")
   @js.native
-  class TokenPaginator[T /* <: Response[js.Array[js.Object]] */] protected ()
+  open class TokenPaginator[T /* <: Response[js.Array[js.Object]] */] protected ()
     extends StObject
        with IPaginator[T, TokenPaginatorState] {
     def this(hasClientReqgenGuardStateMax: PaginatorDeps[T, TokenPaginatorState]) = this()
@@ -110,14 +110,14 @@ object httpMod {
     /* protected */ @JSName("guard")
     var guard_Original: PaginatorGuard[T] = js.native
     
-    def isPageTokenResponseMeta(meta: js.Any): /* is ionic.ionic/definitions.APIResponsePageTokenMeta */ Boolean = js.native
+    def isPageTokenResponseMeta(meta: Any): /* is ionic.ionic/definitions.APIResponsePageTokenMeta */ Boolean = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator_TokenPaginator: js.Function0[this.type] = js.native
     
     /* protected */ var max: js.UndefOr[Double] = js.native
     
-    def next(): IteratorResult[js.Promise[T], js.Any] = js.native
+    def next(): IteratorResult[js.Promise[T], Any] = js.native
     
     /* protected */ def reqgen(): js.Promise[Req] = js.native
     /* protected */ @JSName("reqgen")

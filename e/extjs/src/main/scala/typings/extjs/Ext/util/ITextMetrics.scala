@@ -12,7 +12,7 @@ trait ITextMetrics
   /** [Method] Binds this TextMetrics instance to a new element
     * @param el String/HTMLElement/Ext.Element The element or its ID.
     */
-  var bind: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var bind: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Destroy this instance */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -27,7 +27,7 @@ trait ITextMetrics
     * @param text String The text to measure
     * @returns Object An object containing the text's size {width: (width), height: (height)}
     */
-  var getSize: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], js.Any]] = js.undefined
+  var getSize: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] Returns the measured width of the specified text
     * @param text String The text to measure
@@ -49,7 +49,7 @@ object ITextMetrics {
   
   extension [Self <: ITextMetrics](x: Self) {
     
-    inline def setBind(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+    inline def setBind(value: /* el */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
     inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
@@ -61,7 +61,7 @@ object ITextMetrics {
     
     inline def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
     
-    inline def setGetSize(value: /* text */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
+    inline def setGetSize(value: /* text */ js.UndefOr[String] => Any): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
     
     inline def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
     

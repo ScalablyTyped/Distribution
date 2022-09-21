@@ -21,14 +21,14 @@ trait BootstrapListBox
   
   def addItem(text: String): Double = js.native
   // tslint:disable-line:unified-signatures
-  def addItem(text: String, value: js.Any): Double = js.native
+  def addItem(text: String, value: Any): Double = js.native
   // tslint:disable-line:unified-signatures
-  def addItem(text: String, value: js.Any, iconCssClass: String): Double = js.native
+  def addItem(text: String, value: Any, iconCssClass: String): Double = js.native
   def addItem(texts: js.Array[String]): Double = js.native
   // tslint:disable-line:unified-signatures
-  def addItem(texts: js.Array[String], value: js.Any): Double = js.native
+  def addItem(texts: js.Array[String], value: Any): Double = js.native
   // tslint:disable-line:unified-signatures unified-signatures
-  def addItem(texts: js.Array[String], value: js.Any, iconCssClass: String): Double = js.native
+  def addItem(texts: js.Array[String], value: Any, iconCssClass: String): Double = js.native
   
   // tslint:disable-line:unified-signatures unified-signatures
   def addItemCssClass(index: Double, className: String): Unit = js.native
@@ -43,7 +43,7 @@ trait BootstrapListBox
   
   def findItemByText(text: String): BootstrapListBoxItem | Null = js.native
   
-  def findItemByValue(value: js.Any): BootstrapListBoxItem | Null = js.native
+  def findItemByValue(value: Any): BootstrapListBoxItem | Null = js.native
   
   def getItem(index: Double): BootstrapListBoxItem | Null = js.native
   
@@ -61,18 +61,18 @@ trait BootstrapListBox
   
   def getSelectedItems(): js.Array[BootstrapListBoxItem] = js.native
   
-  def getSelectedValues(): js.Array[js.Any] = js.native
+  def getSelectedValues(): js.Array[Any] = js.native
   
   def insertItem(index: Double, text: String): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def insertItem(index: Double, text: String, value: js.Any): Unit = js.native
+  def insertItem(index: Double, text: String, value: Any): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def insertItem(index: Double, text: String, value: js.Any, iconCssClass: String): Unit = js.native
+  def insertItem(index: Double, text: String, value: Any, iconCssClass: String): Unit = js.native
   def insertItem(index: Double, texts: js.Array[String]): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def insertItem(index: Double, texts: js.Array[String], value: js.Any): Unit = js.native
+  def insertItem(index: Double, texts: js.Array[String], value: Any): Unit = js.native
   // tslint:disable-line:unified-signatures unified-signatures
-  def insertItem(index: Double, texts: js.Array[String], value: js.Any, iconCssClass: String): Unit = js.native
+  def insertItem(index: Double, texts: js.Array[String], value: Any, iconCssClass: String): Unit = js.native
   
   // tslint:disable-line:unified-signatures unified-signatures
   def makeItemVisible(index: Double): Unit = js.native
@@ -262,8 +262,8 @@ trait BootstrapListBox
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[ProcessingModeEventArgs], Unit]
   ): this.type = js.native
   
-  def performCallback(data: js.Any): js.Promise[Unit] = js.native
-  def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  def performCallback(data: Any): js.Promise[Unit] = js.native
+  def performCallback(data: Any, onSuccess: js.Function0[Unit]): Unit = js.native
   
   def removeItem(index: Double): Unit = js.native
   
@@ -277,7 +277,7 @@ trait BootstrapListBox
   
   def selectItems(items: js.Array[BootstrapListBoxItem]): Unit = js.native
   
-  def selectValues(values: js.Array[js.Any]): Unit = js.native
+  def selectValues(values: js.Array[Any]): Unit = js.native
   
   def setItemBadgeIconCssClass(index: Double, cssClass: String): Unit = js.native
   
@@ -301,5 +301,5 @@ trait BootstrapListBox
   
   def unselectItems(items: js.Array[BootstrapListBoxItem]): Unit = js.native
   
-  def unselectValues(values: js.Array[js.Any]): Unit = js.native
+  def unselectValues(values: js.Array[Any]): Unit = js.native
 }

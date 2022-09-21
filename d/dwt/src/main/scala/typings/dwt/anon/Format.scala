@@ -17,7 +17,7 @@ trait Format extends StObject {
     * A callback triggered during the outputting.
     * @argument fileInfo A JSON object that contains the fileName, percentage, statusCode, responseString, etc.
     */
-  var funcHttpUploadStatus: js.UndefOr[js.Function1[/* fileInfo */ js.Any, Unit]] = js.undefined
+  var funcHttpUploadStatus: js.UndefOr[js.Function1[/* fileInfo */ Any, Unit]] = js.undefined
   
   /**
     * Setup for HTTP upload via Post.
@@ -77,7 +77,7 @@ object Format {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setFuncHttpUploadStatus(value: /* fileInfo */ js.Any => Unit): Self = StObject.set(x, "funcHttpUploadStatus", js.Any.fromFunction1(value))
+    inline def setFuncHttpUploadStatus(value: /* fileInfo */ Any => Unit): Self = StObject.set(x, "funcHttpUploadStatus", js.Any.fromFunction1(value))
     
     inline def setFuncHttpUploadStatusUndefined: Self = StObject.set(x, "funcHttpUploadStatus", js.undefined)
     

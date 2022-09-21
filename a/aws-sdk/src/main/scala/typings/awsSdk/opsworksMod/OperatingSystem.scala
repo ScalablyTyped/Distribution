@@ -54,7 +54,7 @@ object OperatingSystem {
     
     inline def setConfigurationManagersUndefined: Self = StObject.set(x, "ConfigurationManagers", js.undefined)
     
-    inline def setConfigurationManagersVarargs(value: OperatingSystemConfigurationManager*): Self = StObject.set(x, "ConfigurationManagers", js.Array(value :_*))
+    inline def setConfigurationManagersVarargs(value: OperatingSystemConfigurationManager*): Self = StObject.set(x, "ConfigurationManagers", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

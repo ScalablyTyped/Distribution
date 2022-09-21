@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the PivotHierarchies that are part of the PivotTable.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.PivotHierarchyCollection")
 @js.native
-class PivotHierarchyCollection ()
+open class PivotHierarchyCollection ()
   extends StObject
      with typings.officeJs.Excel.PivotHierarchyCollection {
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reflectOwnKeysMod {
   
   /* was `typeof core.Reflect.ownKeys` */
-  inline def apply(target: js.Any): Array[PropertyKey] = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Array[PropertyKey]]
+  inline def apply(target: Any): Array[PropertyKey] = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Array[PropertyKey]]
   
   @JSImport("core-js/library/fn/reflect/own-keys", JSImport.Namespace)
   @js.native

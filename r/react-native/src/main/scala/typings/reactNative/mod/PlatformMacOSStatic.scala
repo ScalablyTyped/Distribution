@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import typings.reactNative.anon.PlatformConstantsosVersio
 import typings.reactNative.reactNativeStrings.macos
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,4 +12,10 @@ trait PlatformMacOSStatic
      with PlatformStatic {
   
   var OS: macos = js.native
+  
+  @JSName("Version")
+  var Version_PlatformMacOSStatic: String = js.native
+  
+  @JSName("constants")
+  var constants_PlatformMacOSStatic: PlatformConstantsosVersio = js.native
 }

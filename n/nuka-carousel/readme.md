@@ -1,7 +1,7 @@
 
 # Scala.js typings for nuka-carousel
 
-Typings are for version 4.7.2
+Typings are for version 5.3.0
 
 ## Library description:
 Pure React Carousel
@@ -10,15 +10,15 @@ Pure React Carousel
 | ------------------ | :-------------: |
 | Full name          | nuka-carousel |
 | Keywords           | react, carousel, nuka |
-| # releases         | 33 |
-| # dependents       | 72 |
-| # downloads        | 6385342 |
-| # stars            | 2 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 370407.3333333333 |
+| # stars            | 2728.0 |
 
 ## Links
 - [Homepage](https://github.com/FormidableLabs/nuka-carousel)
 - [Bugs](https://github.com/FormidableLabs/nuka-carousel/issues)
-- [Repository](https://github.com/kenwheeler/nuka-carousel)
+- [Repository](https://github.com/FormidableLabs/nuka-carousel)
 - [Npm](https://www.npmjs.com/package/nuka-carousel)
     
 

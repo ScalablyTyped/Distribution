@@ -1,45 +1,42 @@
 package typings.peculiarJsonSchema
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@peculiar/json-schema/build/types/prop_types", JSImport.Namespace)
-@js.native
-object propTypesMod extends js.Object {
-  @js.native
-  sealed trait JsonPropTypes extends js.Object
+object propTypesMod {
   
   @js.native
-  object JsonPropTypes extends js.Object {
-    @js.native
-    sealed trait Any extends JsonPropTypes
-    
-    @js.native
-    sealed trait Boolean extends JsonPropTypes
-    
-    @js.native
-    sealed trait Number extends JsonPropTypes
-    
-    @js.native
-    sealed trait String extends JsonPropTypes
+  sealed trait JsonPropTypes extends StObject
+  @JSImport("@peculiar/json-schema/build/types/prop_types", "JsonPropTypes")
+  @js.native
+  object JsonPropTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[JsonPropTypes with Double] = js.native
-    /* 0 */ @js.native
-    object Any extends TopLevel[Any with Double]
+    def apply(value: Double): js.UndefOr[JsonPropTypes & Double] = js.native
     
-    /* 1 */ @js.native
-    object Boolean extends TopLevel[Boolean with Double]
+    @js.native
+    sealed trait Any
+      extends StObject
+         with JsonPropTypes
+    /* 0 */ val Any: typings.peculiarJsonSchema.propTypesMod.JsonPropTypes.Any & Double = js.native
     
-    /* 2 */ @js.native
-    object Number extends TopLevel[Number with Double]
+    @js.native
+    sealed trait Boolean
+      extends StObject
+         with JsonPropTypes
+    /* 1 */ val Boolean: typings.peculiarJsonSchema.propTypesMod.JsonPropTypes.Boolean & Double = js.native
     
-    /* 3 */ @js.native
-    object String extends TopLevel[String with Double]
+    @js.native
+    sealed trait Number
+      extends StObject
+         with JsonPropTypes
+    /* 2 */ val Number: typings.peculiarJsonSchema.propTypesMod.JsonPropTypes.Number & Double = js.native
     
+    @js.native
+    sealed trait String
+      extends StObject
+         with JsonPropTypes
+    /* 3 */ val String: typings.peculiarJsonSchema.propTypesMod.JsonPropTypes.String & Double = js.native
   }
-  
 }
-

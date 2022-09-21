@@ -5,6 +5,8 @@ import typings.webpackPluginServe.webpackPluginServeStrings.error
 import typings.webpackPluginServe.webpackPluginServeStrings.info
 import typings.webpackPluginServe.webpackPluginServeStrings.trace
 import typings.webpackPluginServe.webpackPluginServeStrings.warn
+import typings.webpackPluginServe.webpackPluginServeStrings.ws
+import typings.webpackPluginServe.webpackPluginServeStrings.wss
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +16,8 @@ object anon {
   trait Address extends StObject {
     
     var address: js.UndefOr[String] = js.undefined
+    
+    var protocol: js.UndefOr[ws | wss] = js.undefined
     
     var retry: js.UndefOr[Boolean] = js.undefined
     
@@ -31,6 +35,10 @@ object anon {
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
       inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      
+      inline def setProtocol(value: ws | wss): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
       inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
@@ -62,7 +70,7 @@ object anon {
       
       inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
+      inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value*))
       
       inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       

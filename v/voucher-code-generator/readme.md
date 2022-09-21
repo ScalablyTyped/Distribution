@@ -10,13 +10,13 @@ Voucher Code Generator
 | ------------------ | :-------------: |
 | Full name          | voucher-code-generator |
 | Keywords           | voucher, coupon, discount, gift, card, code, generator |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 291428 |
-| # stars            | 6 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 53555.0 |
+| # stars            | 210.0 |
 
 ## Links
-- [Homepage](http://www.voucherify.io/)
+- [Homepage](https://www.voucherify.io/)
 - [Repository](https://github.com/rspective/voucher-code-generator-js)
 - [Npm](https://www.npmjs.com/package/voucher-code-generator)
     

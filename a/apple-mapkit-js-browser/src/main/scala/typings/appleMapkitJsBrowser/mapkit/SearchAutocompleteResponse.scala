@@ -32,6 +32,6 @@ object SearchAutocompleteResponse {
     
     inline def setResults(value: js.Array[SearchAutocompleteResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: SearchAutocompleteResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchAutocompleteResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

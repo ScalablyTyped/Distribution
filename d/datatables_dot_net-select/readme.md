@@ -9,11 +9,11 @@ Select for DataTables
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | datatables.net-select |
-| Keywords           | select, selection, DataTables, jQuery, table, DataTables |
-| # releases         | 3 |
-| # dependents       | 38 |
-| # downloads        | 2767617 |
-| # stars            | 0 |
+| Keywords           | select, selection, Datatables, jQuery, table, filter, sort |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 343774.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

@@ -106,6 +106,6 @@ object AbstractBlock {
     
     inline def setUncles(value: js.Array[String]): Self = StObject.set(x, "uncles", value.asInstanceOf[js.Any])
     
-    inline def setUnclesVarargs(value: String*): Self = StObject.set(x, "uncles", js.Array(value :_*))
+    inline def setUnclesVarargs(value: String*): Self = StObject.set(x, "uncles", js.Array(value*))
   }
 }

@@ -1,30 +1,37 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
-import typings.reactSketchapp.propsMod.FontProps
-import typings.reactSketchapp.propsMod.PathProps
+import typings.reactSketchapp.anon.Fill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/G", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/G", "G")
   @js.native
-  class default ()
-    extends Component[GProps, js.Object, js.Any]
-  
-  type G = Component[GProps, js.Object, js.Any]
-  
-  trait GProps
-    extends StObject
-       with PathProps
-       with FontProps
-  object GProps {
-    
-    inline def apply(): GProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GProps]
-    }
+  open class G protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
+  /* static members */
+  object G {
+    
+    @JSImport("react-sketchapp/lib/components/Svg/G", "G")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-sketchapp/lib/components/Svg/G", "G.propTypes")
+    @js.native
+    def propTypes: Fill = js.native
+    inline def propTypes_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
+  
+  type Props = InferProps[Fill]
 }

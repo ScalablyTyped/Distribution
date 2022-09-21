@@ -9,7 +9,7 @@ object tokenFormatterBuilderMod {
   
   @JSImport("gherkin/dist/src/TokenFormatterBuilder", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with TokenFormatterBuilder {
     
@@ -32,7 +32,7 @@ object tokenFormatterBuilderMod {
     override def startRule(ruleType: RuleType): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var tokensText: js.Any = js.native
+    var tokensText: Any = js.native
   }
   
   trait TokenFormatterBuilder extends StObject {
@@ -49,7 +49,7 @@ object tokenFormatterBuilderMod {
     
     def startRule(ruleType: RuleType): Unit
     
-    /* private */ var tokensText: js.Any
+    /* private */ var tokensText: Any
   }
   object TokenFormatterBuilder {
     
@@ -60,7 +60,7 @@ object tokenFormatterBuilderMod {
       getResult: () => String,
       reset: () => Unit,
       startRule: RuleType => Unit,
-      tokensText: js.Any
+      tokensText: Any
     ): TokenFormatterBuilder = {
       val __obj = js.Dynamic.literal(build = js.Any.fromFunction1(build), endRule = js.Any.fromFunction1(endRule), formatToken = js.Any.fromFunction1(formatToken), getResult = js.Any.fromFunction0(getResult), reset = js.Any.fromFunction0(reset), startRule = js.Any.fromFunction1(startRule), tokensText = tokensText.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenFormatterBuilder]
@@ -80,7 +80,7 @@ object tokenFormatterBuilderMod {
       
       inline def setStartRule(value: RuleType => Unit): Self = StObject.set(x, "startRule", js.Any.fromFunction1(value))
       
-      inline def setTokensText(value: js.Any): Self = StObject.set(x, "tokensText", value.asInstanceOf[js.Any])
+      inline def setTokensText(value: Any): Self = StObject.set(x, "tokensText", value.asInstanceOf[js.Any])
     }
   }
 }

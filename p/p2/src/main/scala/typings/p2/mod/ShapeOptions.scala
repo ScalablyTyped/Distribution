@@ -8,7 +8,9 @@ trait ShapeOptions
   extends StObject
      with SharedShapeOptions {
   
-  var `type`: js.UndefOr[Double] = js.undefined
+  var `type`: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Shape.CIRCLE */ Any
+  ] = js.undefined
 }
 object ShapeOptions {
   
@@ -19,7 +21,7 @@ object ShapeOptions {
   
   extension [Self <: ShapeOptions](x: Self) {
     
-    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Shape.CIRCLE */ Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

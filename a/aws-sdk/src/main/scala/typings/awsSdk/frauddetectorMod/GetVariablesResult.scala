@@ -33,6 +33,6 @@ object GetVariablesResult {
     
     inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     
-    inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

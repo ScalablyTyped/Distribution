@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConnectionInfo extends StObject {
   
-  var options: StringDictionary[js.Any]
+  var options: StringDictionary[Any]
 }
 object ConnectionInfo {
   
-  inline def apply(options: StringDictionary[js.Any]): ConnectionInfo = {
+  inline def apply(options: StringDictionary[Any]): ConnectionInfo = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInfo]
   }
   
   extension [Self <: ConnectionInfo](x: Self) {
     
-    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

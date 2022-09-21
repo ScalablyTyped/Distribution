@@ -8,5 +8,5 @@ object splitShardMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/SplitShard", "SplitShard")
   @js.native
-  val SplitShard: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val SplitShard: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "character-parser" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "character-parser" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

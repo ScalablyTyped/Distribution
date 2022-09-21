@@ -24,6 +24,6 @@ object BatchDeleteTableVersionResponse {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: TableVersionError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: TableVersionError*): Self = StObject.set(x, "Errors", js.Array(value*))
   }
 }

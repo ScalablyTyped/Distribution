@@ -11,9 +11,9 @@ A React component for wrangling image loading
 | Full name          | react-imageloader |
 | Keywords           | react-component, react, loader, component |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 306271 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6607.0 |
+| # stars            | 352.0 |
 
 ## Links
 - [Homepage](https://github.com/hzdg/react-imageloader)

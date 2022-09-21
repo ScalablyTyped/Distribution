@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "grommet-icons" : "4.5.0"
+      "grommet-icons" : "4.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "grommet-icons" : "4.5.0"
+      "grommet-icons" : "4.8.0"
     }
   ],
   "compile-devDependencies" : [

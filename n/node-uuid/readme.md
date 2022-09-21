@@ -9,10 +9,10 @@ Rigorous implementation of RFC4122 (v1 and v4) UUIDs.
 | ------------------ | :-------------: |
 | Full name          | node-uuid |
 | Keywords           | guid, rfc4122, uuid |
-| # releases         | 0 |
-| # dependents       | 3195 |
-| # downloads        | 61498790 |
-| # stars            | 197 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4404284.0 |
+| # stars            | 270.0 |
 
 ## Links
 - [Homepage](https://github.com/broofa/node-uuid)

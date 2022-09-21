@@ -38,7 +38,7 @@ object XDocumentIndex {
     dispose: () => Unit,
     getAnchor: () => XTextRange,
     getServiceName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     update: () => Unit

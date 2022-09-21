@@ -20,7 +20,7 @@ trait IFilterOptions extends StObject {
   var condition: js.UndefOr[
     Double | (js.Function4[
       /* searchTerm */ String, 
-      /* cellValue */ js.Any, 
+      /* cellValue */ Any, 
       /* row */ IGridRow, 
       /* column */ IGridColumn, 
       Boolean
@@ -81,7 +81,7 @@ object IFilterOptions {
     inline def setCondition(
       value: Double | (js.Function4[
           /* searchTerm */ String, 
-          /* cellValue */ js.Any, 
+          /* cellValue */ Any, 
           /* row */ IGridRow, 
           /* column */ IGridColumn, 
           Boolean
@@ -89,7 +89,7 @@ object IFilterOptions {
     ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     inline def setConditionFunction4(
-      value: (/* searchTerm */ String, /* cellValue */ js.Any, /* row */ IGridRow, /* column */ IGridColumn) => Boolean
+      value: (/* searchTerm */ String, /* cellValue */ Any, /* row */ IGridRow, /* column */ IGridColumn) => Boolean
     ): Self = StObject.set(x, "condition", js.Any.fromFunction4(value))
     
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
@@ -114,7 +114,7 @@ object IFilterOptions {
     
     inline def setSelectOptionsUndefined: Self = StObject.set(x, "selectOptions", js.undefined)
     
-    inline def setSelectOptionsVarargs(value: ISelectOption*): Self = StObject.set(x, "selectOptions", js.Array(value :_*))
+    inline def setSelectOptionsVarargs(value: ISelectOption*): Self = StObject.set(x, "selectOptions", js.Array(value*))
     
     inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     

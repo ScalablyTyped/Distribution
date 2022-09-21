@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Rectangle")
 @js.native
-class Rectangle ()
+open class Rectangle ()
   extends StObject
      with typings.easeljs.createjs.Rectangle {
   def this(x: Double) = this()

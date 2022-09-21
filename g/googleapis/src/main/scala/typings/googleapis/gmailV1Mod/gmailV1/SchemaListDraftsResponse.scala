@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaListDraftsResponse extends StObject {
   
   /**
-    * List of drafts.
+    * List of drafts. Note that the `Message` property in each `Draft` resource only contains an `id` and a `threadId`. The messages.get method can fetch additional message details.
     */
   var drafts: js.UndefOr[js.Array[SchemaDraft]] = js.undefined
   
   /**
     * Token to retrieve the next page of results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Estimated total number of results.
     */
-  var resultSizeEstimate: js.UndefOr[Double] = js.undefined
+  var resultSizeEstimate: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaListDraftsResponse {
   
@@ -34,13 +34,17 @@ object SchemaListDraftsResponse {
     
     inline def setDraftsUndefined: Self = StObject.set(x, "drafts", js.undefined)
     
-    inline def setDraftsVarargs(value: SchemaDraft*): Self = StObject.set(x, "drafts", js.Array(value :_*))
+    inline def setDraftsVarargs(value: SchemaDraft*): Self = StObject.set(x, "drafts", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
+    
+    inline def setResultSizeEstimateNull: Self = StObject.set(x, "resultSizeEstimate", null)
     
     inline def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
   }

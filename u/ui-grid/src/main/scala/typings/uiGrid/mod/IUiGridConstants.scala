@@ -1,6 +1,5 @@
 package typings.uiGrid.mod
 
-import typings.std.RegExp
 import typings.uiGrid.anon.ALL
 import typings.uiGrid.anon.ALT
 import typings.uiGrid.anon.ALWAYS
@@ -14,27 +13,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IUiGridConstants extends StObject {
   
-  var APOS_REGEXP: RegExp
+  var APOS_REGEXP: js.RegExp
   
   var ASC: String
   
-  var BRACKET_REGEXP: RegExp
+  var BRACKET_REGEXP: js.RegExp
   
   var COL_CLASS_PREFIX: String
   
-  var COL_FIELD: RegExp
+  var COL_FIELD: js.RegExp
   
   var CURRENCY_SYMBOLS: js.Array[String]
   
-  var CUSTOM_FILTERS: RegExp
+  var CUSTOM_FILTERS: js.RegExp
   
   var DESC: String
   
-  var DISPLAY_CELL_TEMPLATE: RegExp
+  var DISPLAY_CELL_TEMPLATE: js.RegExp
   
-  var DOT_REGEXP: RegExp
+  var DOT_REGEXP: js.RegExp
   
-  var FUNC_REGEXP: RegExp
+  var FUNC_REGEXP: js.RegExp
   
   var LOG_DEBUG_MESSAGES: Boolean
   
@@ -42,11 +41,11 @@ trait IUiGridConstants extends StObject {
   
   var LOG_WARN_MESSAGES: Boolean
   
-  var MODEL_COL_FIELD: RegExp
+  var MODEL_COL_FIELD: js.RegExp
   
-  var TEMPLATE_REGEXP: RegExp
+  var TEMPLATE_REGEXP: js.RegExp
   
-  var TOOLTIP: RegExp
+  var TOOLTIP: js.RegExp
   
   var aggregationTypes: Avg
   
@@ -65,23 +64,23 @@ trait IUiGridConstants extends StObject {
 object IUiGridConstants {
   
   inline def apply(
-    APOS_REGEXP: RegExp,
+    APOS_REGEXP: js.RegExp,
     ASC: String,
-    BRACKET_REGEXP: RegExp,
+    BRACKET_REGEXP: js.RegExp,
     COL_CLASS_PREFIX: String,
-    COL_FIELD: RegExp,
+    COL_FIELD: js.RegExp,
     CURRENCY_SYMBOLS: js.Array[String],
-    CUSTOM_FILTERS: RegExp,
+    CUSTOM_FILTERS: js.RegExp,
     DESC: String,
-    DISPLAY_CELL_TEMPLATE: RegExp,
-    DOT_REGEXP: RegExp,
-    FUNC_REGEXP: RegExp,
+    DISPLAY_CELL_TEMPLATE: js.RegExp,
+    DOT_REGEXP: js.RegExp,
+    FUNC_REGEXP: js.RegExp,
     LOG_DEBUG_MESSAGES: Boolean,
     LOG_ERROR_MESSAGES: Boolean,
     LOG_WARN_MESSAGES: Boolean,
-    MODEL_COL_FIELD: RegExp,
-    TEMPLATE_REGEXP: RegExp,
-    TOOLTIP: RegExp,
+    MODEL_COL_FIELD: js.RegExp,
+    TEMPLATE_REGEXP: js.RegExp,
+    TOOLTIP: js.RegExp,
     aggregationTypes: Avg,
     dataChange: ALL,
     events: COLUMNHEADERCLICK,
@@ -96,35 +95,35 @@ object IUiGridConstants {
   
   extension [Self <: IUiGridConstants](x: Self) {
     
-    inline def setAPOS_REGEXP(value: RegExp): Self = StObject.set(x, "APOS_REGEXP", value.asInstanceOf[js.Any])
+    inline def setAPOS_REGEXP(value: js.RegExp): Self = StObject.set(x, "APOS_REGEXP", value.asInstanceOf[js.Any])
     
     inline def setASC(value: String): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
     
     inline def setAggregationTypes(value: Avg): Self = StObject.set(x, "aggregationTypes", value.asInstanceOf[js.Any])
     
-    inline def setBRACKET_REGEXP(value: RegExp): Self = StObject.set(x, "BRACKET_REGEXP", value.asInstanceOf[js.Any])
+    inline def setBRACKET_REGEXP(value: js.RegExp): Self = StObject.set(x, "BRACKET_REGEXP", value.asInstanceOf[js.Any])
     
     inline def setCOL_CLASS_PREFIX(value: String): Self = StObject.set(x, "COL_CLASS_PREFIX", value.asInstanceOf[js.Any])
     
-    inline def setCOL_FIELD(value: RegExp): Self = StObject.set(x, "COL_FIELD", value.asInstanceOf[js.Any])
+    inline def setCOL_FIELD(value: js.RegExp): Self = StObject.set(x, "COL_FIELD", value.asInstanceOf[js.Any])
     
     inline def setCURRENCY_SYMBOLS(value: js.Array[String]): Self = StObject.set(x, "CURRENCY_SYMBOLS", value.asInstanceOf[js.Any])
     
-    inline def setCURRENCY_SYMBOLSVarargs(value: String*): Self = StObject.set(x, "CURRENCY_SYMBOLS", js.Array(value :_*))
+    inline def setCURRENCY_SYMBOLSVarargs(value: String*): Self = StObject.set(x, "CURRENCY_SYMBOLS", js.Array(value*))
     
-    inline def setCUSTOM_FILTERS(value: RegExp): Self = StObject.set(x, "CUSTOM_FILTERS", value.asInstanceOf[js.Any])
+    inline def setCUSTOM_FILTERS(value: js.RegExp): Self = StObject.set(x, "CUSTOM_FILTERS", value.asInstanceOf[js.Any])
     
     inline def setDESC(value: String): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
     
-    inline def setDISPLAY_CELL_TEMPLATE(value: RegExp): Self = StObject.set(x, "DISPLAY_CELL_TEMPLATE", value.asInstanceOf[js.Any])
+    inline def setDISPLAY_CELL_TEMPLATE(value: js.RegExp): Self = StObject.set(x, "DISPLAY_CELL_TEMPLATE", value.asInstanceOf[js.Any])
     
-    inline def setDOT_REGEXP(value: RegExp): Self = StObject.set(x, "DOT_REGEXP", value.asInstanceOf[js.Any])
+    inline def setDOT_REGEXP(value: js.RegExp): Self = StObject.set(x, "DOT_REGEXP", value.asInstanceOf[js.Any])
     
     inline def setDataChange(value: ALL): Self = StObject.set(x, "dataChange", value.asInstanceOf[js.Any])
     
     inline def setEvents(value: COLUMNHEADERCLICK): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setFUNC_REGEXP(value: RegExp): Self = StObject.set(x, "FUNC_REGEXP", value.asInstanceOf[js.Any])
+    inline def setFUNC_REGEXP(value: js.RegExp): Self = StObject.set(x, "FUNC_REGEXP", value.asInstanceOf[js.Any])
     
     inline def setFilter(value: CONTAINS): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -136,14 +135,14 @@ object IUiGridConstants {
     
     inline def setLOG_WARN_MESSAGES(value: Boolean): Self = StObject.set(x, "LOG_WARN_MESSAGES", value.asInstanceOf[js.Any])
     
-    inline def setMODEL_COL_FIELD(value: RegExp): Self = StObject.set(x, "MODEL_COL_FIELD", value.asInstanceOf[js.Any])
+    inline def setMODEL_COL_FIELD(value: js.RegExp): Self = StObject.set(x, "MODEL_COL_FIELD", value.asInstanceOf[js.Any])
     
     inline def setScrollDirection(value: DOWN): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
     
     inline def setScrollbars(value: ALWAYS): Self = StObject.set(x, "scrollbars", value.asInstanceOf[js.Any])
     
-    inline def setTEMPLATE_REGEXP(value: RegExp): Self = StObject.set(x, "TEMPLATE_REGEXP", value.asInstanceOf[js.Any])
+    inline def setTEMPLATE_REGEXP(value: js.RegExp): Self = StObject.set(x, "TEMPLATE_REGEXP", value.asInstanceOf[js.Any])
     
-    inline def setTOOLTIP(value: RegExp): Self = StObject.set(x, "TOOLTIP", value.asInstanceOf[js.Any])
+    inline def setTOOLTIP(value: js.RegExp): Self = StObject.set(x, "TOOLTIP", value.asInstanceOf[js.Any])
   }
 }

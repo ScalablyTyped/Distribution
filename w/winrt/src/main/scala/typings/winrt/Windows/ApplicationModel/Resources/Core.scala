@@ -367,7 +367,7 @@ object Core {
       hasKey: String => Boolean,
       insert: (String, String) => Boolean,
       lookup: String => String,
-      onmapchanged: js.Any,
+      onmapchanged: Any,
       remove: String => Unit,
       size: Double
     ): ResourceQualifierObservableMap = {

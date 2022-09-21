@@ -25,7 +25,7 @@ trait SparkPoints extends StObject {
   
   val Negative: SparkColor
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object SparkPoints {
   
@@ -39,7 +39,7 @@ object SparkPoints {
     Lowpoint: SparkColor,
     Markers: SparkColor,
     Negative: SparkColor,
-    Parent: js.Any
+    Parent: Any
   ): SparkPoints = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Firstpoint = Firstpoint.asInstanceOf[js.Any], Highpoint = Highpoint.asInstanceOf[js.Any], Lastpoint = Lastpoint.asInstanceOf[js.Any], Lowpoint = Lowpoint.asInstanceOf[js.Any], Markers = Markers.asInstanceOf[js.Any], Negative = Negative.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.SparkPoints_typekey")(ExcelDotSparkPoints_typekey.asInstanceOf[js.Any])
@@ -66,6 +66,6 @@ object SparkPoints {
     
     inline def setNegative(value: SparkColor): Self = StObject.set(x, "Negative", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

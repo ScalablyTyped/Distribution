@@ -347,7 +347,7 @@ object gapi {
         /**
           * Like, dislike, or remove rating from a video.
           */
-        def rate(`object`: OnBehalfOfContentOwnerRating): HttpRequest[js.Any]
+        def rate(`object`: OnBehalfOfContentOwnerRating): HttpRequest[Any]
         
         /**
           * Updates a video's metadata.
@@ -361,7 +361,7 @@ object gapi {
           getRating: IdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoGetRatingResponse],
           insert: AutoLevels => HttpRequest[GoogleApiYouTubeVideoResource],
           list: Chart => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeVideoResource]],
-          rate: OnBehalfOfContentOwnerRating => HttpRequest[js.Any],
+          rate: OnBehalfOfContentOwnerRating => HttpRequest[Any],
           update: RequestBody => HttpRequest[GoogleApiYouTubeVideoResource]
         ): videos = {
           val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), getRating = js.Any.fromFunction1(getRating), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), rate = js.Any.fromFunction1(rate), update = js.Any.fromFunction1(update))
@@ -378,7 +378,7 @@ object gapi {
           
           inline def setList(value: Chart => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeVideoResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
           
-          inline def setRate(value: OnBehalfOfContentOwnerRating => HttpRequest[js.Any]): Self = StObject.set(x, "rate", js.Any.fromFunction1(value))
+          inline def setRate(value: OnBehalfOfContentOwnerRating => HttpRequest[Any]): Self = StObject.set(x, "rate", js.Any.fromFunction1(value))
           
           inline def setUpdate(value: RequestBody => HttpRequest[GoogleApiYouTubeVideoResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         }

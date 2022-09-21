@@ -10,10 +10,10 @@ FreeSWITCH ESL Node.js Implementation
 | ------------------ | :-------------: |
 | Full name          | modesl |
 | Keywords           | freeswitch, api, wrapper, esl, event, socket, library |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 63850 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5459.666666666667 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/englercj/node-esl)

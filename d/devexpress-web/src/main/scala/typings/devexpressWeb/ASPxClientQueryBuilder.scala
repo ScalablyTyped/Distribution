@@ -48,7 +48,7 @@ trait ASPxClientQueryBuilder
   /**
     * Returns the object model of a Query Builder.
     */
-  def GetDesignerModel(): js.Any = js.native
+  def GetDesignerModel(): Any = js.native
   
   /**
     * Gets a client-side model of the currently opened query serialized to Json.

@@ -57,13 +57,13 @@ object ResourceSpecificResult {
     
     inline def setMatchedStatementsUndefined: Self = StObject.set(x, "MatchedStatements", js.undefined)
     
-    inline def setMatchedStatementsVarargs(value: Statement*): Self = StObject.set(x, "MatchedStatements", js.Array(value :_*))
+    inline def setMatchedStatementsVarargs(value: Statement*): Self = StObject.set(x, "MatchedStatements", js.Array(value*))
     
     inline def setMissingContextValues(value: ContextKeyNamesResultListType): Self = StObject.set(x, "MissingContextValues", value.asInstanceOf[js.Any])
     
     inline def setMissingContextValuesUndefined: Self = StObject.set(x, "MissingContextValues", js.undefined)
     
-    inline def setMissingContextValuesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "MissingContextValues", js.Array(value :_*))
+    inline def setMissingContextValuesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "MissingContextValues", js.Array(value*))
     
     inline def setPermissionsBoundaryDecisionDetail(value: PermissionsBoundaryDecisionDetail): Self = StObject.set(x, "PermissionsBoundaryDecisionDetail", value.asInstanceOf[js.Any])
     

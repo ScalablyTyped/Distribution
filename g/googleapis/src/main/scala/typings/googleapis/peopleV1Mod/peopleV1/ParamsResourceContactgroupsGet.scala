@@ -1,9 +1,5 @@
 package typings.googleapis.peopleV1Mod.peopleV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +9,17 @@ trait ParamsResourceContactgroupsGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Optional. A field mask to restrict which fields on the group are returned. Defaults to `metadata`, `groupType`, `memberCount`, and `name` if not set or set to empty. Valid fields are: * clientData * groupType * memberCount * metadata * name
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var groupFields: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the maximum number of members to return.
+    * Optional. Specifies the maximum number of members to return. Defaults to 0 if not set, which will return zero members.
     */
   var maxMembers: js.UndefOr[Double] = js.undefined
   
   /**
-    * The resource name of the contact group to get.
+    * Required. The resource name of the contact group to get.
     */
   var resourceName: js.UndefOr[String] = js.undefined
 }
@@ -36,9 +32,9 @@ object ParamsResourceContactgroupsGet {
   
   extension [Self <: ParamsResourceContactgroupsGet](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setGroupFields(value: String): Self = StObject.set(x, "groupFields", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setGroupFieldsUndefined: Self = StObject.set(x, "groupFields", js.undefined)
     
     inline def setMaxMembers(value: Double): Self = StObject.set(x, "maxMembers", value.asInstanceOf[js.Any])
     

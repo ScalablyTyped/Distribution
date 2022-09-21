@@ -11,20 +11,24 @@ trait DragonAura extends StObject {
     */
   var desc: String
   
+  var dname: String
+  
   var name: String
   
   var pic: Icon
 }
 object DragonAura {
   
-  inline def apply(desc: String, name: String, pic: Icon): DragonAura = {
-    val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pic = pic.asInstanceOf[js.Any])
+  inline def apply(desc: String, dname: String, name: String, pic: Icon): DragonAura = {
+    val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], dname = dname.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pic = pic.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragonAura]
   }
   
   extension [Self <: DragonAura](x: Self) {
     
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    
+    inline def setDname(value: String): Self = StObject.set(x, "dname", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

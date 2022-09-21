@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutOrganizationConfigRuleResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of an organization config rule.
+    * The Amazon Resource Name (ARN) of an organization Config rule.
     */
   var OrganizationConfigRuleArn: js.UndefOr[StringWithCharLimit256] = js.undefined
 }

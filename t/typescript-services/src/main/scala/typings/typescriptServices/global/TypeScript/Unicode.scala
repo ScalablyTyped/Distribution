@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Unicode")
 @js.native
-class Unicode ()
+open class Unicode ()
   extends StObject
      with typings.typescriptServices.TypeScript.Unicode
 object Unicode {

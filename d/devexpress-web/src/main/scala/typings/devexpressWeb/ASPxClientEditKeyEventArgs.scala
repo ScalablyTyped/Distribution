@@ -14,17 +14,17 @@ trait ASPxClientEditKeyEventArgs
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
 }
 object ASPxClientEditKeyEventArgs {
   
-  inline def apply(htmlEvent: js.Any): ASPxClientEditKeyEventArgs = {
+  inline def apply(htmlEvent: Any): ASPxClientEditKeyEventArgs = {
     val __obj = js.Dynamic.literal(htmlEvent = htmlEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientEditKeyEventArgs]
   }
   
   extension [Self <: ASPxClientEditKeyEventArgs](x: Self) {
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

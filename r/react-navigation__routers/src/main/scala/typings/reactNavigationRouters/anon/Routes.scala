@@ -58,7 +58,7 @@ object Routes {
             js.UndefOr[js.Object]
           ]
         ])*
-    ): Self = StObject.set(x, "routes", js.Array(value :_*))
+    ): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ object mod {
     * constructs mt with a number
     * @params seed
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with MersenneTwister {
     def this(seed: js.Array[Double]) = this()

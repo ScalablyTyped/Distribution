@@ -26,9 +26,10 @@ trait Alt extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. Name of the consumer config to retrieve in the format: `services/{service}/projects/{project}/global/networks/{network}`. {service} is the peering service that is
-    * managing connectivity for the service producer's organization. For Google services that support this functionality, this value is `servicenetworking.googleapis.com`. {project}
-    * is a project number e.g. `12345` that contains the service consumer's VPC network. {network} is the name of the service consumer's VPC network.
+    * Required. The name of the peered DNS domain to delete in the format: `services/{service}/projects/{project}/global/networks/{network}/peeredDnsDomains/{name}`. {service} is the
+    * peering service that is managing connectivity for the service producer's organization. For Google services that support this functionality, this value is
+    * `servicenetworking.googleapis.com`. {project} is the number of the project that contains the service consumer's VPC network e.g. `12345`. {network} is the name of the service
+    * consumer's VPC network. {name} is the name of the peered DNS domain.
     */
   var name: String
   

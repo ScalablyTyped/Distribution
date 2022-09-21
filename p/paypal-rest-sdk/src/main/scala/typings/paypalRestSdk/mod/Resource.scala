@@ -20,7 +20,7 @@ trait Resource extends StObject {
   
   val payment_mode: js.UndefOr[String] = js.undefined
   
-  val processor_response: js.UndefOr[js.Any] = js.undefined
+  val processor_response: js.UndefOr[Any] = js.undefined
   
   val protection_eligibility: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ object Resource {
     
     inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setParent_payment(value: String): Self = StObject.set(x, "parent_payment", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object Resource {
     
     inline def setPayment_modeUndefined: Self = StObject.set(x, "payment_mode", js.undefined)
     
-    inline def setProcessor_response(value: js.Any): Self = StObject.set(x, "processor_response", value.asInstanceOf[js.Any])
+    inline def setProcessor_response(value: Any): Self = StObject.set(x, "processor_response", value.asInstanceOf[js.Any])
     
     inline def setProcessor_responseUndefined: Self = StObject.set(x, "processor_response", js.undefined)
     

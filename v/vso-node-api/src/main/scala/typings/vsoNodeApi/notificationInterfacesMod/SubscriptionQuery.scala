@@ -27,7 +27,7 @@ object SubscriptionQuery {
     
     inline def setConditions(value: js.Array[SubscriptionQueryCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    inline def setConditionsVarargs(value: SubscriptionQueryCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: SubscriptionQueryCondition*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setQueryFlags(value: SubscriptionQueryFlags): Self = StObject.set(x, "queryFlags", value.asInstanceOf[js.Any])
   }

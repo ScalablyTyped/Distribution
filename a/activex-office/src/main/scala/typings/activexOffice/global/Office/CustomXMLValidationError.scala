@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.CustomXMLValidationError")
 @js.native
-/* private */ class CustomXMLValidationError ()
+/* private */ open class CustomXMLValidationError ()
   extends StObject
      with typings.activexOffice.Office.CustomXMLValidationError {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotCustomXMLValidationError_typekey: typings.activexOffice.Office.CustomXMLValidationError = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Text: String = js.native

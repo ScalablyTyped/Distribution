@@ -1,5 +1,6 @@
 package typings.babylonjs.anon
 
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,30 +9,24 @@ trait JsDecoderModule extends StObject {
   
   var jsDecoderModule: String
   
-  var jsMSCTranscoder: Null
+  var jsMSCTranscoder: Nullable[String]
   
-  var wasmMSCTranscoder: Null
+  var wasmMSCTranscoder: Nullable[String]
   
-  var wasmUASTCToASTC: Null
+  var wasmUASTCToASTC: Nullable[String]
   
-  var wasmUASTCToBC7: Null
+  var wasmUASTCToBC7: Nullable[String]
   
-  var wasmUASTCToRGBA_SRGB: Null
+  var wasmUASTCToRGBA_SRGB: Nullable[String]
   
-  var wasmUASTCToRGBA_UNORM: Null
+  var wasmUASTCToRGBA_UNORM: Nullable[String]
+  
+  var wasmZSTDDecoder: Nullable[String]
 }
 object JsDecoderModule {
   
-  inline def apply(
-    jsDecoderModule: String,
-    jsMSCTranscoder: Null,
-    wasmMSCTranscoder: Null,
-    wasmUASTCToASTC: Null,
-    wasmUASTCToBC7: Null,
-    wasmUASTCToRGBA_SRGB: Null,
-    wasmUASTCToRGBA_UNORM: Null
-  ): JsDecoderModule = {
-    val __obj = js.Dynamic.literal(jsDecoderModule = jsDecoderModule.asInstanceOf[js.Any], jsMSCTranscoder = jsMSCTranscoder.asInstanceOf[js.Any], wasmMSCTranscoder = wasmMSCTranscoder.asInstanceOf[js.Any], wasmUASTCToASTC = wasmUASTCToASTC.asInstanceOf[js.Any], wasmUASTCToBC7 = wasmUASTCToBC7.asInstanceOf[js.Any], wasmUASTCToRGBA_SRGB = wasmUASTCToRGBA_SRGB.asInstanceOf[js.Any], wasmUASTCToRGBA_UNORM = wasmUASTCToRGBA_UNORM.asInstanceOf[js.Any])
+  inline def apply(jsDecoderModule: String): JsDecoderModule = {
+    val __obj = js.Dynamic.literal(jsDecoderModule = jsDecoderModule.asInstanceOf[js.Any], jsMSCTranscoder = null, wasmMSCTranscoder = null, wasmUASTCToASTC = null, wasmUASTCToBC7 = null, wasmUASTCToRGBA_SRGB = null, wasmUASTCToRGBA_UNORM = null, wasmZSTDDecoder = null)
     __obj.asInstanceOf[JsDecoderModule]
   }
   
@@ -39,16 +34,32 @@ object JsDecoderModule {
     
     inline def setJsDecoderModule(value: String): Self = StObject.set(x, "jsDecoderModule", value.asInstanceOf[js.Any])
     
-    inline def setJsMSCTranscoder(value: Null): Self = StObject.set(x, "jsMSCTranscoder", value.asInstanceOf[js.Any])
+    inline def setJsMSCTranscoder(value: Nullable[String]): Self = StObject.set(x, "jsMSCTranscoder", value.asInstanceOf[js.Any])
     
-    inline def setWasmMSCTranscoder(value: Null): Self = StObject.set(x, "wasmMSCTranscoder", value.asInstanceOf[js.Any])
+    inline def setJsMSCTranscoderNull: Self = StObject.set(x, "jsMSCTranscoder", null)
     
-    inline def setWasmUASTCToASTC(value: Null): Self = StObject.set(x, "wasmUASTCToASTC", value.asInstanceOf[js.Any])
+    inline def setWasmMSCTranscoder(value: Nullable[String]): Self = StObject.set(x, "wasmMSCTranscoder", value.asInstanceOf[js.Any])
     
-    inline def setWasmUASTCToBC7(value: Null): Self = StObject.set(x, "wasmUASTCToBC7", value.asInstanceOf[js.Any])
+    inline def setWasmMSCTranscoderNull: Self = StObject.set(x, "wasmMSCTranscoder", null)
     
-    inline def setWasmUASTCToRGBA_SRGB(value: Null): Self = StObject.set(x, "wasmUASTCToRGBA_SRGB", value.asInstanceOf[js.Any])
+    inline def setWasmUASTCToASTC(value: Nullable[String]): Self = StObject.set(x, "wasmUASTCToASTC", value.asInstanceOf[js.Any])
     
-    inline def setWasmUASTCToRGBA_UNORM(value: Null): Self = StObject.set(x, "wasmUASTCToRGBA_UNORM", value.asInstanceOf[js.Any])
+    inline def setWasmUASTCToASTCNull: Self = StObject.set(x, "wasmUASTCToASTC", null)
+    
+    inline def setWasmUASTCToBC7(value: Nullable[String]): Self = StObject.set(x, "wasmUASTCToBC7", value.asInstanceOf[js.Any])
+    
+    inline def setWasmUASTCToBC7Null: Self = StObject.set(x, "wasmUASTCToBC7", null)
+    
+    inline def setWasmUASTCToRGBA_SRGB(value: Nullable[String]): Self = StObject.set(x, "wasmUASTCToRGBA_SRGB", value.asInstanceOf[js.Any])
+    
+    inline def setWasmUASTCToRGBA_SRGBNull: Self = StObject.set(x, "wasmUASTCToRGBA_SRGB", null)
+    
+    inline def setWasmUASTCToRGBA_UNORM(value: Nullable[String]): Self = StObject.set(x, "wasmUASTCToRGBA_UNORM", value.asInstanceOf[js.Any])
+    
+    inline def setWasmUASTCToRGBA_UNORMNull: Self = StObject.set(x, "wasmUASTCToRGBA_UNORM", null)
+    
+    inline def setWasmZSTDDecoder(value: Nullable[String]): Self = StObject.set(x, "wasmZSTDDecoder", value.asInstanceOf[js.Any])
+    
+    inline def setWasmZSTDDecoderNull: Self = StObject.set(x, "wasmZSTDDecoder", null)
   }
 }

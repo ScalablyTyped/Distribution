@@ -29,7 +29,7 @@ object ListFleetsResponse {
     
     inline def setFleetSummaryListUndefined: Self = StObject.set(x, "FleetSummaryList", js.undefined)
     
-    inline def setFleetSummaryListVarargs(value: FleetSummary*): Self = StObject.set(x, "FleetSummaryList", js.Array(value :_*))
+    inline def setFleetSummaryListVarargs(value: FleetSummary*): Self = StObject.set(x, "FleetSummaryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

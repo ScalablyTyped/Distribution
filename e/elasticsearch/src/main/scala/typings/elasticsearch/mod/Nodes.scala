@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "Nodes")
 @js.native
-class Nodes () extends StObject {
+open class Nodes () extends StObject {
   
-  def hotThreads(params: NodesHotThreadsParams): js.Promise[js.Any] = js.native
+  def hotThreads(params: NodesHotThreadsParams): js.Promise[Any] = js.native
   def hotThreads(
     params: NodesHotThreadsParams,
-    callback: js.Function3[/* error */ js.Any, /* response */ js.Any, /* status */ js.Any, Unit]
+    callback: js.Function3[/* error */ Any, /* response */ Any, /* status */ Any, Unit]
   ): Unit = js.native
   
-  def info(params: NodesInfoParams): js.Promise[js.Any] = js.native
+  def info(params: NodesInfoParams): js.Promise[Any] = js.native
   def info(
     params: NodesInfoParams,
-    callback: js.Function3[/* error */ js.Any, /* response */ js.Any, /* status */ js.Any, Unit]
+    callback: js.Function3[/* error */ Any, /* response */ Any, /* status */ Any, Unit]
   ): Unit = js.native
   
-  def stats(params: NodesStatsParams): js.Promise[js.Any] = js.native
+  def stats(params: NodesStatsParams): js.Promise[Any] = js.native
   def stats(
     params: NodesStatsParams,
-    callback: js.Function3[/* error */ js.Any, /* response */ js.Any, /* status */ js.Any, Unit]
+    callback: js.Function3[/* error */ Any, /* response */ Any, /* status */ Any, Unit]
   ): Unit = js.native
 }

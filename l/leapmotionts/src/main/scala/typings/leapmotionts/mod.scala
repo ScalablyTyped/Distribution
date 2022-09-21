@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("leapmotionts", "CircleGesture")
   @js.native
-  class CircleGesture () extends Gesture {
+  open class CircleGesture () extends Gesture {
     
     var center: Vector3 = js.native
     
@@ -36,7 +36,7 @@ object mod {
   
   @JSImport("leapmotionts", "Controller")
   @js.native
-  class Controller () extends EventDispatcher {
+  open class Controller () extends EventDispatcher {
     def this(host: String) = this()
     
     var _isConnected: Boolean = js.native
@@ -57,9 +57,9 @@ object mod {
     
     def isGestureEnabled(`type`: Double): Boolean = js.native
     
-    /* private */ var latestFrame: js.Any = js.native
+    /* private */ var latestFrame: Any = js.native
     
-    /* private */ var listener: js.Any = js.native
+    /* private */ var listener: Any = js.native
     
     def setListener(listener: Listener): Unit = js.native
   }
@@ -70,14 +70,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getHandByID(frame: js.Any, id: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getHandByID")(frame.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getHandByID(frame: Any, id: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getHandByID")(frame.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def getPointableByID(frame: js.Any, id: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointableByID")(frame.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getPointableByID(frame: Any, id: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointableByID")(frame.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   @JSImport("leapmotionts", "DefaultListener")
   @js.native
-  class DefaultListener ()
+  open class DefaultListener ()
     extends EventDispatcher
        with Listener {
     
@@ -99,9 +99,9 @@ object mod {
   
   @JSImport("leapmotionts", "EventDispatcher")
   @js.native
-  class EventDispatcher () extends StObject {
+  open class EventDispatcher () extends StObject {
     
-    /* private */ var _listeners: js.Any = js.native
+    /* private */ var _listeners: Any = js.native
     
     def addEventListener(typeStr: String, listenerFunc: js.Function): Unit = js.native
     
@@ -114,7 +114,7 @@ object mod {
   
   @JSImport("leapmotionts", "Finger")
   @js.native
-  class Finger () extends Pointable
+  open class Finger () extends Pointable
   /* static members */
   object Finger {
     
@@ -127,7 +127,7 @@ object mod {
   
   @JSImport("leapmotionts", "Frame")
   @js.native
-  class Frame () extends StObject {
+  open class Frame () extends StObject {
     
     var _gestures: js.Array[Gesture] = js.native
     
@@ -191,7 +191,7 @@ object mod {
   
   @JSImport("leapmotionts", "Gesture")
   @js.native
-  class Gesture () extends StObject {
+  open class Gesture () extends StObject {
     
     var duration: Double = js.native
     
@@ -270,7 +270,7 @@ object mod {
   
   @JSImport("leapmotionts", "Hand")
   @js.native
-  class Hand () extends StObject {
+  open class Hand () extends StObject {
     
     var direction: Vector3 = js.native
     
@@ -333,7 +333,7 @@ object mod {
   
   @JSImport("leapmotionts", "KeyTapGesture")
   @js.native
-  class KeyTapGesture () extends Gesture {
+  open class KeyTapGesture () extends Gesture {
     
     var direction: Vector3 = js.native
     
@@ -358,17 +358,17 @@ object mod {
   
   @JSImport("leapmotionts", "LeapEvent")
   @js.native
-  class LeapEvent protected () extends StObject {
+  open class LeapEvent protected () extends StObject {
     def this(`type`: String, targetListener: Listener) = this()
     def this(`type`: String, targetListener: Listener, frame: Frame) = this()
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
-    /* private */ var _type: js.Any = js.native
+    /* private */ var _type: Any = js.native
     
     var frame: Frame = js.native
     
-    def getTarget(): js.Any = js.native
+    def getTarget(): Any = js.native
     
     def getType(): String = js.native
   }
@@ -407,7 +407,7 @@ object mod {
   
   @JSImport("leapmotionts", "LeapUtil")
   @js.native
-  class LeapUtil () extends StObject
+  open class LeapUtil () extends StObject
   /* static members */
   object LeapUtil {
     
@@ -488,7 +488,7 @@ object mod {
   
   @JSImport("leapmotionts", "Matrix")
   @js.native
-  class Matrix protected () extends StObject {
+  open class Matrix protected () extends StObject {
     def this(x: Vector3, y: Vector3, z: Vector3) = this()
     def this(x: Vector3, y: Vector3, z: Vector3, _origin: Vector3) = this()
     
@@ -526,7 +526,7 @@ object mod {
   
   @JSImport("leapmotionts", "Pointable")
   @js.native
-  class Pointable () extends StObject {
+  open class Pointable () extends StObject {
     
     var direction: Vector3 = js.native
     
@@ -564,7 +564,7 @@ object mod {
   
   @JSImport("leapmotionts", "ScreenTapGesture")
   @js.native
-  class ScreenTapGesture () extends Gesture {
+  open class ScreenTapGesture () extends Gesture {
     
     var direction: Vector3 = js.native
     
@@ -589,7 +589,7 @@ object mod {
   
   @JSImport("leapmotionts", "SwipeGesture")
   @js.native
-  class SwipeGesture () extends Gesture {
+  open class SwipeGesture () extends Gesture {
     
     var direction: Vector3 = js.native
     
@@ -616,7 +616,7 @@ object mod {
   
   @JSImport("leapmotionts", "Tool")
   @js.native
-  class Tool () extends Pointable
+  open class Tool () extends Pointable
   /* static members */
   object Tool {
     
@@ -629,7 +629,7 @@ object mod {
   
   @JSImport("leapmotionts", "Vector3")
   @js.native
-  class Vector3 protected () extends StObject {
+  open class Vector3 protected () extends StObject {
     def this(x: Double, y: Double, z: Double) = this()
     
     def angleTo(other: Vector3): Double = js.native

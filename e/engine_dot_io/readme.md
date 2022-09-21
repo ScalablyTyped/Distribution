@@ -1,7 +1,7 @@
 
 # Scala.js typings for engine_dot_io
 
-Typings are for version 3.1
+Typings are for version 6.2.0
 
 ## Library description:
 The realtime engine behind Socket.IO. Provides the foundation of a bidirectional connection between client and server
@@ -10,10 +10,10 @@ The realtime engine behind Socket.IO. Provides the foundation of a bidirectional
 | ------------------ | :-------------: |
 | Full name          | engine.io |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 139 |
-| # downloads        | 179751707 |
-| # stars            | 27 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0177448666666668E7 |
+| # stars            | 4409.0 |
 
 ## Links
 - [Homepage](https://github.com/socketio/engine.io)
@@ -24,7 +24,7 @@ The realtime engine behind Socket.IO. Provides the foundation of a bidirectional
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

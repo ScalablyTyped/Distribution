@@ -29,6 +29,6 @@ object USBConfiguration {
     
     inline def setInterfaces(value: js.Array[USBInterface]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
     
-    inline def setInterfacesVarargs(value: USBInterface*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+    inline def setInterfacesVarargs(value: USBInterface*): Self = StObject.set(x, "interfaces", js.Array(value*))
   }
 }

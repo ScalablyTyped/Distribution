@@ -23,7 +23,7 @@ object ReturnTypeSearchInResponseBodyResponse {
     
     inline def setParamsType(value: js.Array[SearchInResponseBodyRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SearchInResponseBodyRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SearchInResponseBodyRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: SearchInResponseBodyResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

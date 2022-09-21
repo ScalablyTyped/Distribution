@@ -1,26 +1,30 @@
 package typings.athenajs.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.athenajs.mod.^
+import typings.std.CanvasRenderingContext2D
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def AudioManager: typings.athenajs.mod._AudioManager = typings.athenajs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AudioManager").asInstanceOf[typings.athenajs.mod._AudioManager]
+inline def AudioManager: _AudioManager = ^.asInstanceOf[js.Dynamic].selectDynamic("AudioManager").asInstanceOf[_AudioManager]
 
-inline def Dom(): typings.athenajs.mod._Dom[typings.std.HTMLElement] = typings.athenajs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dom")().asInstanceOf[typings.athenajs.mod._Dom[typings.std.HTMLElement]]
-inline def Dom(sel: java.lang.String): typings.athenajs.mod._Dom[typings.std.HTMLElement] = typings.athenajs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dom")(sel.asInstanceOf[js.Any]).asInstanceOf[typings.athenajs.mod._Dom[typings.std.HTMLElement]]
-inline def Dom(sel: typings.std.HTMLElement): typings.athenajs.mod._Dom[typings.std.HTMLElement] = typings.athenajs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dom")(sel.asInstanceOf[js.Any]).asInstanceOf[typings.athenajs.mod._Dom[typings.std.HTMLElement]]
+inline def Dom(): _Dom[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("Dom")().asInstanceOf[_Dom[HTMLElement]]
+inline def Dom(sel: String): _Dom[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("Dom")(sel.asInstanceOf[js.Any]).asInstanceOf[_Dom[HTMLElement]]
+inline def Dom(sel: HTMLElement): _Dom[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("Dom")(sel.asInstanceOf[js.Any]).asInstanceOf[_Dom[HTMLElement]]
 
-inline def FX: typings.athenajs.mod.FXInstance = typings.athenajs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FX").asInstanceOf[typings.athenajs.mod.FXInstance]
+inline def FX: FXInstance = ^.asInstanceOf[js.Dynamic].selectDynamic("FX").asInstanceOf[FXInstance]
 
-inline def InputManager: typings.athenajs.mod._InputManager = typings.athenajs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InputManager").asInstanceOf[typings.athenajs.mod._InputManager]
+inline def InputManager: _InputManager = ^.asInstanceOf[js.Dynamic].selectDynamic("InputManager").asInstanceOf[_InputManager]
 
-inline def NotificationManager: typings.athenajs.mod._NotificationManager = typings.athenajs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NotificationManager").asInstanceOf[typings.athenajs.mod._NotificationManager]
+inline def NotificationManager: _NotificationManager = ^.asInstanceOf[js.Dynamic].selectDynamic("NotificationManager").asInstanceOf[_NotificationManager]
 
-inline def ResourceManager: typings.athenajs.mod._ResourceManager = typings.athenajs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ResourceManager").asInstanceOf[typings.athenajs.mod._ResourceManager]
+inline def ResourceManager: _ResourceManager = ^.asInstanceOf[js.Dynamic].selectDynamic("ResourceManager").asInstanceOf[_ResourceManager]
 
-type Animations = org.scalablytyped.runtime.StringDictionary[typings.athenajs.mod.AnimationObject]
+type Animations = StringDictionary[AnimationObject]
 
-type JSObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type JSObject = StringDictionary[Any]
 
-type RenderingContext = typings.std.CanvasRenderingContext2D
+type RenderingContext = CanvasRenderingContext2D

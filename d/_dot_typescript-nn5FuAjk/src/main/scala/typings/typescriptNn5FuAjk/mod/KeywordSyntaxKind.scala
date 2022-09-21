@@ -1,0 +1,92 @@
+package typings.typescriptNn5FuAjk.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.AbstractKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.AnyKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.AsKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.AssertsKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.AssertKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.AsyncKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.AwaitKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.BigIntKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.BooleanKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.BreakKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.CaseKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.CatchKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ClassKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ConstKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ConstructorKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ContinueKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.DebuggerKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.DeclareKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.DefaultKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.DeleteKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.DoKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ElseKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.EnumKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ExportKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ExtendsKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.FalseKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.FinallyKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ForKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.FromKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.FunctionKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.GetKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.GlobalKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.IfKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ImplementsKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ImportKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.InferKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.InKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.InstanceOfKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.InterfaceKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.IntrinsicKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.IsKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.KeyOfKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.LetKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ModuleKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.NamespaceKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.NeverKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.NewKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.NullKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.NumberKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ObjectKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.OfKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.PackageKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.PrivateKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ProtectedKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.PublicKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ReadonlyKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.OutKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.OverrideKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.RequireKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ReturnKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.SetKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.StaticKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.StringKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.SuperKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.SwitchKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.SymbolKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ThisKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.ThrowKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.TrueKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.TryKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.TypeKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.TypeOfKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.UndefinedKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.UniqueKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.UnknownKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.VarKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.VoidKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.WhileKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.WithKeyword
+  - typings.typescriptNn5FuAjk.mod.SyntaxKind.YieldKeyword
+*/
+trait KeywordSyntaxKind
+  extends StObject
+     with JSDocSyntaxKind
+     with TokenSyntaxKind

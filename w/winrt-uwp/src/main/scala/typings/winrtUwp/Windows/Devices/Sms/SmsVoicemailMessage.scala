@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ trait SmsVoicemailMessage extends StObject {
   var simIccId: String
   
   /** The timestamp of the message. */
-  var timestamp: Date
+  var timestamp: js.Date
   
   /** The phone number the message was sent to. */
   var to: String
@@ -45,7 +44,7 @@ object SmsVoicemailMessage {
     messageCount: Double,
     messageType: SmsMessageType,
     simIccId: String,
-    timestamp: Date,
+    timestamp: js.Date,
     to: String
   ): SmsVoicemailMessage = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], cellularClass = cellularClass.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], messageClass = messageClass.asInstanceOf[js.Any], messageCount = messageCount.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], simIccId = simIccId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
@@ -68,7 +67,7 @@ object SmsVoicemailMessage {
     
     inline def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }

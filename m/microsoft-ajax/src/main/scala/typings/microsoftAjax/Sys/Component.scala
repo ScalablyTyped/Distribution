@@ -49,7 +49,7 @@ trait Component extends StObject {
     * @return
     *      An EventHandlerList object that contains references to all the events and handlers for this component.
     */
-  def get_events(): js.Any
+  def get_events(): Any
   
   /**
     * Gets the ID of the current Component object.
@@ -115,7 +115,7 @@ object Component {
     beginUpdate: () => Unit,
     dispose: () => Unit,
     endUpdate: () => Unit,
-    get_events: () => js.Any,
+    get_events: () => Any,
     get_id: () => String,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,
@@ -142,7 +142,7 @@ object Component {
     
     inline def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
     
-    inline def setGet_events(value: () => js.Any): Self = StObject.set(x, "get_events", js.Any.fromFunction0(value))
+    inline def setGet_events(value: () => Any): Self = StObject.set(x, "get_events", js.Any.fromFunction0(value))
     
     inline def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     

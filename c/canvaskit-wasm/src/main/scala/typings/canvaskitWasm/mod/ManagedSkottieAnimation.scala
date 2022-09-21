@@ -9,13 +9,17 @@ trait ManagedSkottieAnimation
   extends StObject
      with SkottieAnimation {
   
-  def getColorProps(): js.Array[js.Object] = js.native
+  def getColorProps(): js.Array[ColorProperty] = js.native
   
-  def getMarkers(): js.Array[js.Object] = js.native
+  def getMarkers(): js.Array[AnimationMarker] = js.native
   
-  def getOpacityProps(): js.Array[js.Object] = js.native
+  def getOpacityProps(): js.Array[OpacityProperty] = js.native
   
-  def setColor(key: String, color: InputColor): Unit = js.native
+  def getTextProps(): js.Array[TextProperty] = js.native
   
-  def setOpacity(key: String, opacity: Double): Unit = js.native
+  def setColor(key: String, color: InputColor): Boolean = js.native
+  
+  def setOpacity(key: String, opacity: Double): Boolean = js.native
+  
+  def setText(key: String, text: String, size: Double): Boolean = js.native
 }

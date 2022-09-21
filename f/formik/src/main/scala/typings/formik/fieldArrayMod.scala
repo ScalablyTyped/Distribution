@@ -18,18 +18,18 @@ object fieldArrayMod {
   @js.native
   val FieldArray: ComponentType[FieldArrayConfig] = js.native
   
-  inline def insert(arrayLike: ArrayLike[js.Any], index: Double, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def insert(arrayLike: ArrayLike[Any], index: Double, value: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def move(array: js.Array[js.Any], from: Double, to: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def move(array: js.Array[Any], from: Double, to: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def replace(arrayLike: ArrayLike[js.Any], index: Double, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def replace(arrayLike: ArrayLike[Any], index: Double, value: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def swap(arrayLike: ArrayLike[js.Any], indexA: Double, indexB: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("swap")(arrayLike.asInstanceOf[js.Any], indexA.asInstanceOf[js.Any], indexB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def swap(arrayLike: ArrayLike[Any], indexA: Double, indexB: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("swap")(arrayLike.asInstanceOf[js.Any], indexA.asInstanceOf[js.Any], indexB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   trait ArrayHelpers extends StObject {
     
     /** Curried fn to insert an element at a given index into the array */
-    def handleInsert(index: Double, value: js.Any): js.Function0[Unit]
+    def handleInsert(index: Double, value: Any): js.Function0[Unit]
     
     /** Imperatively move an element in an array to another index */
     def handleMove(from: Double, to: Double): js.Function0[Unit]
@@ -38,22 +38,22 @@ object fieldArrayMod {
     def handlePop(): js.Function0[Unit]
     
     /** Curried fn to add a value to the end of an array */
-    def handlePush(obj: js.Any): js.Function0[Unit]
+    def handlePush(obj: Any): js.Function0[Unit]
     
     /** Curried fn to remove an element at an index of an array */
     def handleRemove(index: Double): js.Function0[Unit]
     
     /** Curried fn to replace an element at a given index into the array */
-    def handleReplace(index: Double, value: js.Any): js.Function0[Unit]
+    def handleReplace(index: Double, value: Any): js.Function0[Unit]
     
     /** Curried fn to swap two values in an array */
     def handleSwap(indexA: Double, indexB: Double): js.Function0[Unit]
     
     /** Curried fn to add an element to the beginning of an array */
-    def handleUnshift(value: js.Any): js.Function0[Unit]
+    def handleUnshift(value: Any): js.Function0[Unit]
     
     /** Imperatively insert an element at a given index into the array */
-    def insert(index: Double, value: js.Any): Unit
+    def insert(index: Double, value: Any): Unit
     
     /** Imperatively move an element in an array to another index */
     def move(from: Double, to: Double): Unit
@@ -62,39 +62,39 @@ object fieldArrayMod {
     def pop[T](): js.UndefOr[T]
     
     /** Imperatively add a value to the end of an array */
-    def push(obj: js.Any): Unit
+    def push(obj: Any): Unit
     
     /** Imperatively remove and element at an index of an array */
     def remove[T](index: Double): js.UndefOr[T]
     
     /** Imperatively replace a value at an index of an array  */
-    def replace(index: Double, value: js.Any): Unit
+    def replace(index: Double, value: Any): Unit
     
     /** Imperatively swap two values in an array */
     def swap(indexA: Double, indexB: Double): Unit
     
     /** Imperatively add an element to the beginning of an array and return its length */
-    def unshift(value: js.Any): Double
+    def unshift(value: Any): Double
   }
   object ArrayHelpers {
     
     inline def apply(
-      handleInsert: (Double, js.Any) => js.Function0[Unit],
+      handleInsert: (Double, Any) => js.Function0[Unit],
       handleMove: (Double, Double) => js.Function0[Unit],
       handlePop: () => js.Function0[Unit],
-      handlePush: js.Any => js.Function0[Unit],
+      handlePush: Any => js.Function0[Unit],
       handleRemove: Double => js.Function0[Unit],
-      handleReplace: (Double, js.Any) => js.Function0[Unit],
+      handleReplace: (Double, Any) => js.Function0[Unit],
       handleSwap: (Double, Double) => js.Function0[Unit],
-      handleUnshift: js.Any => js.Function0[Unit],
-      insert: (Double, js.Any) => Unit,
+      handleUnshift: Any => js.Function0[Unit],
+      insert: (Double, Any) => Unit,
       move: (Double, Double) => Unit,
-      pop: () => js.UndefOr[js.Any],
-      push: js.Any => Unit,
-      remove: Double => js.UndefOr[js.Any],
-      replace: (Double, js.Any) => Unit,
+      pop: () => js.UndefOr[Any],
+      push: Any => Unit,
+      remove: Double => js.UndefOr[Any],
+      replace: (Double, Any) => Unit,
       swap: (Double, Double) => Unit,
-      unshift: js.Any => Double
+      unshift: Any => Double
     ): ArrayHelpers = {
       val __obj = js.Dynamic.literal(handleInsert = js.Any.fromFunction2(handleInsert), handleMove = js.Any.fromFunction2(handleMove), handlePop = js.Any.fromFunction0(handlePop), handlePush = js.Any.fromFunction1(handlePush), handleRemove = js.Any.fromFunction1(handleRemove), handleReplace = js.Any.fromFunction2(handleReplace), handleSwap = js.Any.fromFunction2(handleSwap), handleUnshift = js.Any.fromFunction1(handleUnshift), insert = js.Any.fromFunction2(insert), move = js.Any.fromFunction2(move), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), remove = js.Any.fromFunction1(remove), replace = js.Any.fromFunction2(replace), swap = js.Any.fromFunction2(swap), unshift = js.Any.fromFunction1(unshift))
       __obj.asInstanceOf[ArrayHelpers]
@@ -102,37 +102,37 @@ object fieldArrayMod {
     
     extension [Self <: ArrayHelpers](x: Self) {
       
-      inline def setHandleInsert(value: (Double, js.Any) => js.Function0[Unit]): Self = StObject.set(x, "handleInsert", js.Any.fromFunction2(value))
+      inline def setHandleInsert(value: (Double, Any) => js.Function0[Unit]): Self = StObject.set(x, "handleInsert", js.Any.fromFunction2(value))
       
       inline def setHandleMove(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "handleMove", js.Any.fromFunction2(value))
       
       inline def setHandlePop(value: () => js.Function0[Unit]): Self = StObject.set(x, "handlePop", js.Any.fromFunction0(value))
       
-      inline def setHandlePush(value: js.Any => js.Function0[Unit]): Self = StObject.set(x, "handlePush", js.Any.fromFunction1(value))
+      inline def setHandlePush(value: Any => js.Function0[Unit]): Self = StObject.set(x, "handlePush", js.Any.fromFunction1(value))
       
       inline def setHandleRemove(value: Double => js.Function0[Unit]): Self = StObject.set(x, "handleRemove", js.Any.fromFunction1(value))
       
-      inline def setHandleReplace(value: (Double, js.Any) => js.Function0[Unit]): Self = StObject.set(x, "handleReplace", js.Any.fromFunction2(value))
+      inline def setHandleReplace(value: (Double, Any) => js.Function0[Unit]): Self = StObject.set(x, "handleReplace", js.Any.fromFunction2(value))
       
       inline def setHandleSwap(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "handleSwap", js.Any.fromFunction2(value))
       
-      inline def setHandleUnshift(value: js.Any => js.Function0[Unit]): Self = StObject.set(x, "handleUnshift", js.Any.fromFunction1(value))
+      inline def setHandleUnshift(value: Any => js.Function0[Unit]): Self = StObject.set(x, "handleUnshift", js.Any.fromFunction1(value))
       
-      inline def setInsert(value: (Double, js.Any) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+      inline def setInsert(value: (Double, Any) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
       inline def setMove(value: (Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
       
-      inline def setPop(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPop(value: () => js.UndefOr[Any]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
-      inline def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      inline def setRemove(value: Double => js.UndefOr[js.Any]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Double => js.UndefOr[Any]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      inline def setReplace(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+      inline def setReplace(value: (Double, Any) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
       
       inline def setSwap(value: (Double, Double) => Unit): Self = StObject.set(x, "swap", js.Any.fromFunction2(value))
       
-      inline def setUnshift(value: js.Any => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+      inline def setUnshift(value: Any => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     }
   }
   
@@ -167,31 +167,31 @@ object fieldArrayMod {
     extends StObject
        with ArrayHelpers {
     
-    var form: FormikProps[js.Any]
+    var form: FormikProps[Any]
     
     var name: String
   }
   object FieldArrayRenderProps {
     
     inline def apply(
-      form: FormikProps[js.Any],
-      handleInsert: (Double, js.Any) => js.Function0[Unit],
+      form: FormikProps[Any],
+      handleInsert: (Double, Any) => js.Function0[Unit],
       handleMove: (Double, Double) => js.Function0[Unit],
       handlePop: () => js.Function0[Unit],
-      handlePush: js.Any => js.Function0[Unit],
+      handlePush: Any => js.Function0[Unit],
       handleRemove: Double => js.Function0[Unit],
-      handleReplace: (Double, js.Any) => js.Function0[Unit],
+      handleReplace: (Double, Any) => js.Function0[Unit],
       handleSwap: (Double, Double) => js.Function0[Unit],
-      handleUnshift: js.Any => js.Function0[Unit],
-      insert: (Double, js.Any) => Unit,
+      handleUnshift: Any => js.Function0[Unit],
+      insert: (Double, Any) => Unit,
       move: (Double, Double) => Unit,
       name: String,
-      pop: () => js.UndefOr[js.Any],
-      push: js.Any => Unit,
-      remove: Double => js.UndefOr[js.Any],
-      replace: (Double, js.Any) => Unit,
+      pop: () => js.UndefOr[Any],
+      push: Any => Unit,
+      remove: Double => js.UndefOr[Any],
+      replace: (Double, Any) => Unit,
       swap: (Double, Double) => Unit,
-      unshift: js.Any => Double
+      unshift: Any => Double
     ): FieldArrayRenderProps = {
       val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], handleInsert = js.Any.fromFunction2(handleInsert), handleMove = js.Any.fromFunction2(handleMove), handlePop = js.Any.fromFunction0(handlePop), handlePush = js.Any.fromFunction1(handlePush), handleRemove = js.Any.fromFunction1(handleRemove), handleReplace = js.Any.fromFunction2(handleReplace), handleSwap = js.Any.fromFunction2(handleSwap), handleUnshift = js.Any.fromFunction1(handleUnshift), insert = js.Any.fromFunction2(insert), move = js.Any.fromFunction2(move), name = name.asInstanceOf[js.Any], pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), remove = js.Any.fromFunction1(remove), replace = js.Any.fromFunction2(replace), swap = js.Any.fromFunction2(swap), unshift = js.Any.fromFunction1(unshift))
       __obj.asInstanceOf[FieldArrayRenderProps]
@@ -199,7 +199,7 @@ object fieldArrayMod {
     
     extension [Self <: FieldArrayRenderProps](x: Self) {
       
-      inline def setForm(value: FormikProps[js.Any]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: FormikProps[Any]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

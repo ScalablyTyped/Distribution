@@ -17,9 +17,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object RPIO_ {
   
+  @js.native
+  sealed trait I2cStatusCode extends StObject
+  /**
+    * Return codes for I2C read and write operations.
+    */
+  @JSGlobal("RPIO.I2cStatusCode")
+  @js.native
+  object I2cStatusCode extends StObject {
+    
+    /*!< Received a NACK */
+    @js.native
+    sealed trait ERROR_CLKT
+      extends StObject
+         with I2cStatusCode
+    
+    /*!< Received Clock Stretch Timeout */
+    @js.native
+    sealed trait ERROR_DATA
+      extends StObject
+         with I2cStatusCode
+    
+    /*!< Success */
+    @js.native
+    sealed trait ERROR_NACK
+      extends StObject
+         with I2cStatusCode
+    
+    @js.native
+    sealed trait OK
+      extends StObject
+         with I2cStatusCode
+  }
+  
+  /**
+    * Poll event callback function
+    */
   type CallbackFunction = js.Function1[/* pin */ Double, Unit]
   
   trait Options extends StObject {
+    
+    /**
+      * Rpio automatically unmaps and clears all memory maps when the node process exits.
+      */
+    var close_on_exit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * There are two device nodes for GPIO access. The default is /dev/gpiomem which, when configured with gpio group access, allows users in that group to read/write directly to that device. This removes the need to run as root, but is limited to GPIO functions.
@@ -44,7 +85,7 @@ object RPIO_ {
       *
       * Valid options:
       * gpio: use the Broadcom GPIOxx naming
-      * physical: use the physical P01-P40 header layou
+      * physical: use the physical P01-P40 header layout
       */
     var mapping: js.UndefOr[gpio | physical] = js.undefined
     
@@ -65,6 +106,10 @@ object RPIO_ {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setClose_on_exit(value: Boolean): Self = StObject.set(x, "close_on_exit", value.asInstanceOf[js.Any])
+      
+      inline def setClose_on_exitUndefined: Self = StObject.set(x, "close_on_exit", js.undefined)
       
       inline def setGpiomem(value: Boolean): Self = StObject.set(x, "gpiomem", value.asInstanceOf[js.Any])
       

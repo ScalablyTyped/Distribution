@@ -17,7 +17,7 @@ trait Queue extends StObject {
     * to be executed, but a wait for that callback is queued. The Push() method returns the last callback that was
     * added to the queue (so that it can be used for further synchronization, say as an entry in some other queue).
     */
-  def Push(specs: js.Array[js.Any]): CallbackObject
+  def Push(specs: js.Array[Any]): CallbackObject
   
   /*Decrements the running property, if it is positive. When it is zero, commands can be processed, but that is
     * not done automatically — you would need to call Process() to make that happen. This method is used
@@ -43,7 +43,7 @@ trait Queue extends StObject {
   var pending: Double
   
   /*An array containing the queued commands that are yet to be performed.*/
-  var queue: js.Array[js.Any]
+  var queue: js.Array[Any]
   
   /*This is non-zero when the queue is executing one of the commands in the queue.*/
   var running: Double
@@ -60,12 +60,12 @@ object Queue {
   
   inline def apply(
     Process: () => Unit,
-    Push: js.Array[js.Any] => CallbackObject,
+    Push: js.Array[Any] => CallbackObject,
     Resume: () => Unit,
     Suspend: () => Unit,
     call: () => Unit,
     pending: Double,
-    queue: js.Array[js.Any],
+    queue: js.Array[Any],
     running: Double,
     wait_ : js.Function => js.Function
   ): Queue = {
@@ -82,11 +82,11 @@ object Queue {
     
     inline def setProcess(value: () => Unit): Self = StObject.set(x, "Process", js.Any.fromFunction0(value))
     
-    inline def setPush(value: js.Array[js.Any] => CallbackObject): Self = StObject.set(x, "Push", js.Any.fromFunction1(value))
+    inline def setPush(value: js.Array[Any] => CallbackObject): Self = StObject.set(x, "Push", js.Any.fromFunction1(value))
     
-    inline def setQueue(value: js.Array[js.Any]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: js.Array[Any]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    inline def setQueueVarargs(value: js.Any*): Self = StObject.set(x, "queue", js.Array(value :_*))
+    inline def setQueueVarargs(value: Any*): Self = StObject.set(x, "queue", js.Array(value*))
     
     inline def setResume(value: () => Unit): Self = StObject.set(x, "Resume", js.Any.fromFunction0(value))
     

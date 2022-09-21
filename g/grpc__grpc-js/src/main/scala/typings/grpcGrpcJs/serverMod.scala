@@ -1,65 +1,102 @@
 package typings.grpcGrpcJs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
-import typings.grpcGrpcJs.makeClientMod.Deserialize
-import typings.grpcGrpcJs.makeClientMod.Serialize
-import typings.grpcGrpcJs.serverCallMod.HandleCall
-import typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials
-import typings.std.Error
+import typings.grpcGrpcJs.serverDataMod.ServerData
+import typings.grpcGrpcJs.serverDataMod.ServerDataOutput
+import typings.grpcGrpcJs.serverRefMod.ServerRef
+import typings.grpcGrpcJs.serverRefMod.ServerRefOutput
+import typings.grpcGrpcJs.socketRefMod.SocketRef
+import typings.grpcGrpcJs.socketRefMod.SocketRefOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverMod {
   
-  @JSImport("@grpc/grpc-js/build/src/server", "Server")
-  @js.native
-  class Server () extends StObject {
-    def this(options: ChannelOptions) = this()
+  trait Server extends StObject {
     
-    /* private */ var _setupHandlers: js.Any = js.native
+    /**
+      * The associated data of the Server.
+      */
+    var data: js.UndefOr[ServerData | Null] = js.undefined
     
-    def addHttp2Port(): Unit = js.native
+    /**
+      * The sockets that the server is listening on.  There are no ordering
+      * guarantees.  This may be absent.
+      */
+    var listen_socket: js.UndefOr[js.Array[SocketRef]] = js.undefined
     
-    def addProtoService(): Unit = js.native
+    /**
+      * The identifier for a Server.  This should be set.
+      */
+    var ref: js.UndefOr[ServerRef | Null] = js.undefined
+  }
+  object Server {
     
-    def addService(service: js.Object, implementation: UntypedServiceImplementation): Unit = js.native
+    inline def apply(): Server = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Server]
+    }
     
-    def bind(port: String, creds: ServerCredentials): Unit = js.native
-    
-    def bindAsync(
-      port: String,
-      creds: ServerCredentials,
-      callback: js.Function2[/* error */ Error | Null, /* port */ Double, Unit]
-    ): Unit = js.native
-    
-    def forceShutdown(): Unit = js.native
-    
-    /* private */ var handlers: js.Any = js.native
-    
-    /* private */ var http2ServerList: js.Any = js.native
-    
-    /* private */ var options: js.Any = js.native
-    
-    def register[RequestType, ResponseType](
-      name: String,
-      handler: HandleCall[RequestType, ResponseType],
-      serialize: Serialize[ResponseType],
-      deserialize: Deserialize[RequestType],
-      `type`: String
-    ): Boolean = js.native
-    
-    /* private */ var sessions: js.Any = js.native
-    
-    def start(): Unit = js.native
-    
-    /* private */ var started: js.Any = js.native
-    
-    def tryShutdown(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+    extension [Self <: Server](x: Self) {
+      
+      inline def setData(value: ServerData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setListen_socket(value: js.Array[SocketRef]): Self = StObject.set(x, "listen_socket", value.asInstanceOf[js.Any])
+      
+      inline def setListen_socketUndefined: Self = StObject.set(x, "listen_socket", js.undefined)
+      
+      inline def setListen_socketVarargs(value: SocketRef*): Self = StObject.set(x, "listen_socket", js.Array(value*))
+      
+      inline def setRef(value: ServerRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    }
   }
   
-  type UntypedHandleCall = HandleCall[js.Any, js.Any]
-  
-  type UntypedServiceImplementation = StringDictionary[UntypedHandleCall]
+  trait ServerOutput extends StObject {
+    
+    /**
+      * The associated data of the Server.
+      */
+    var data: ServerDataOutput | Null
+    
+    /**
+      * The sockets that the server is listening on.  There are no ordering
+      * guarantees.  This may be absent.
+      */
+    var listen_socket: js.Array[SocketRefOutput]
+    
+    /**
+      * The identifier for a Server.  This should be set.
+      */
+    var ref: ServerRefOutput | Null
+  }
+  object ServerOutput {
+    
+    inline def apply(listen_socket: js.Array[SocketRefOutput]): ServerOutput = {
+      val __obj = js.Dynamic.literal(listen_socket = listen_socket.asInstanceOf[js.Any], data = null, ref = null)
+      __obj.asInstanceOf[ServerOutput]
+    }
+    
+    extension [Self <: ServerOutput](x: Self) {
+      
+      inline def setData(value: ServerDataOutput): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
+      
+      inline def setListen_socket(value: js.Array[SocketRefOutput]): Self = StObject.set(x, "listen_socket", value.asInstanceOf[js.Any])
+      
+      inline def setListen_socketVarargs(value: SocketRefOutput*): Self = StObject.set(x, "listen_socket", js.Array(value*))
+      
+      inline def setRef(value: ServerRefOutput): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+    }
+  }
 }

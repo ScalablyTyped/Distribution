@@ -28,17 +28,17 @@ trait PlusIoFileEntry extends StObject {
     parent: Unit,
     newName: String,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def copyTo(parent: Unit, newName: String, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def copyTo(parent: Unit, newName: String, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def copyTo(parent: Unit, newName: Unit, succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def copyTo(
     parent: Unit,
     newName: Unit,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def copyTo(parent: Unit, newName: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def copyTo(parent: Unit, newName: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def copyTo(parent: PlusIoDirectoryEntry): Unit = js.native
   def copyTo(parent: PlusIoDirectoryEntry, newName: String): Unit = js.native
   def copyTo(
@@ -50,13 +50,13 @@ trait PlusIoFileEntry extends StObject {
     parent: PlusIoDirectoryEntry,
     newName: String,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def copyTo(
     parent: PlusIoDirectoryEntry,
     newName: String,
     succesCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def copyTo(
     parent: PlusIoDirectoryEntry,
@@ -67,13 +67,13 @@ trait PlusIoFileEntry extends StObject {
     parent: PlusIoDirectoryEntry,
     newName: Unit,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def copyTo(
     parent: PlusIoDirectoryEntry,
     newName: Unit,
     succesCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -86,9 +86,9 @@ trait PlusIoFileEntry extends StObject {
   def createWriter(succesCB: js.Function1[/* result */ PlusIoFileWriter, Unit]): Unit = js.native
   def createWriter(
     succesCB: js.Function1[/* result */ PlusIoFileWriter, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def createWriter(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def createWriter(succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 获取文件数据对象
@@ -100,9 +100,9 @@ trait PlusIoFileEntry extends StObject {
   def file(succesCB: js.Function1[/* result */ PlusIoFile, Unit]): Unit = js.native
   def file(
     succesCB: js.Function1[/* result */ PlusIoFile, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def file(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def file(succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 文件操作对象所属的文件系统对象，参考FileSystem
@@ -129,9 +129,9 @@ trait PlusIoFileEntry extends StObject {
   def getMetadata(succesCB: js.Function1[/* result */ PlusIoMetadata, Unit]): Unit = js.native
   def getMetadata(
     succesCB: js.Function1[/* result */ PlusIoMetadata, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def getMetadata(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getMetadata(succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 获取文件所属的父目录
@@ -143,9 +143,9 @@ trait PlusIoFileEntry extends StObject {
   def getParent(succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def getParent(
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def getParent(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getParent(succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 文件操作对象是否为目录，FileEntry对象固定其值为false
@@ -177,17 +177,17 @@ trait PlusIoFileEntry extends StObject {
     parent: Unit,
     newName: String,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def moveTo(parent: Unit, newName: String, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def moveTo(parent: Unit, newName: String, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def moveTo(parent: Unit, newName: Unit, succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def moveTo(
     parent: Unit,
     newName: Unit,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def moveTo(parent: Unit, newName: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def moveTo(parent: Unit, newName: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def moveTo(parent: PlusIoDirectoryEntry): Unit = js.native
   def moveTo(parent: PlusIoDirectoryEntry, newName: String): Unit = js.native
   def moveTo(
@@ -199,13 +199,13 @@ trait PlusIoFileEntry extends StObject {
     parent: PlusIoDirectoryEntry,
     newName: String,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def moveTo(
     parent: PlusIoDirectoryEntry,
     newName: String,
     succesCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def moveTo(
     parent: PlusIoDirectoryEntry,
@@ -216,13 +216,13 @@ trait PlusIoFileEntry extends StObject {
     parent: PlusIoDirectoryEntry,
     newName: Unit,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def moveTo(
     parent: PlusIoDirectoryEntry,
     newName: Unit,
     succesCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -242,9 +242,9 @@ trait PlusIoFileEntry extends StObject {
   def remove(succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def remove(
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def remove(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def remove(succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 获取文件路径转换为本地路径URL地址

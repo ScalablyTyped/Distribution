@@ -27,6 +27,11 @@ trait PrePassEffectConfiguration extends StObject {
   var name: String
   
   /**
+    * Does the output of this prepass need to go through imageprocessing
+    */
+  var needsImageProcessing: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Post process to attach for this effect
     */
   var postProcess: js.UndefOr[PostProcess] = js.undefined
@@ -57,12 +62,16 @@ object PrePassEffectConfiguration {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNeedsImageProcessing(value: Boolean): Self = StObject.set(x, "needsImageProcessing", value.asInstanceOf[js.Any])
+    
+    inline def setNeedsImageProcessingUndefined: Self = StObject.set(x, "needsImageProcessing", js.undefined)
+    
     inline def setPostProcess(value: PostProcess): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
     
     inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     
     inline def setTexturesRequired(value: js.Array[Double]): Self = StObject.set(x, "texturesRequired", value.asInstanceOf[js.Any])
     
-    inline def setTexturesRequiredVarargs(value: Double*): Self = StObject.set(x, "texturesRequired", js.Array(value :_*))
+    inline def setTexturesRequiredVarargs(value: Double*): Self = StObject.set(x, "texturesRequired", js.Array(value*))
   }
 }

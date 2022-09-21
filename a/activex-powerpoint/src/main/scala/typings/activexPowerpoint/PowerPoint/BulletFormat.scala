@@ -15,7 +15,7 @@ trait BulletFormat extends StObject {
   
   val Number: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Picture(Picture: String): Unit
   
@@ -43,7 +43,7 @@ object BulletFormat {
     Character: Double,
     Font: Font,
     Number: Double,
-    Parent: js.Any,
+    Parent: Any,
     Picture: String => Unit,
     PowerPointDotBulletFormat_typekey: BulletFormat,
     RelativeSize: Double,
@@ -69,7 +69,7 @@ object BulletFormat {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPicture(value: String => Unit): Self = StObject.set(x, "Picture", js.Any.fromFunction1(value))
     

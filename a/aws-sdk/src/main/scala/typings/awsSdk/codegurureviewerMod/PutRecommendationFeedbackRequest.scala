@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutRecommendationFeedbackRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
+    * The Amazon Resource Name (ARN) of the CodeReview object. 
     */
   var CodeReviewArn: Arn
   
   /**
-    *  List for storing reactions. Reactions are utf-8 text code for emojis. If you send an empty list it clears all your feedback. 
+    * List for storing reactions. Reactions are utf-8 text code for emojis. If you send an empty list it clears all your feedback.
     */
   var Reactions: typings.awsSdk.codegurureviewerMod.Reactions
   
   /**
-    *  The recommendation ID that can be used to track the provided recommendations and then to collect the feedback. 
+    * The recommendation ID that can be used to track the provided recommendations and then to collect the feedback.
     */
   var RecommendationId: typings.awsSdk.codegurureviewerMod.RecommendationId
 }
@@ -34,7 +34,7 @@ object PutRecommendationFeedbackRequest {
     
     inline def setReactions(value: Reactions): Self = StObject.set(x, "Reactions", value.asInstanceOf[js.Any])
     
-    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value*))
     
     inline def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
   }

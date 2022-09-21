@@ -25,7 +25,7 @@ object DeleteAssignedTargetingOptionsRequest {
     
     inline def setAssignedTargetingOptionIdsUndefined: Self = StObject.set(x, "assignedTargetingOptionIds", js.undefined)
     
-    inline def setAssignedTargetingOptionIdsVarargs(value: String*): Self = StObject.set(x, "assignedTargetingOptionIds", js.Array(value :_*))
+    inline def setAssignedTargetingOptionIdsVarargs(value: String*): Self = StObject.set(x, "assignedTargetingOptionIds", js.Array(value*))
     
     inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     

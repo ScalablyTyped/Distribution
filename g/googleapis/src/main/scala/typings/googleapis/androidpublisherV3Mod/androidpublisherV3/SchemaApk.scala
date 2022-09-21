@@ -12,9 +12,9 @@ trait SchemaApk extends StObject {
   var binary: js.UndefOr[SchemaApkBinary] = js.undefined
   
   /**
-    * The version code of the APK, as specified in the APK&#39;s manifest file.
+    * The version code of the APK, as specified in the manifest file.
     */
-  var versionCode: js.UndefOr[Double] = js.undefined
+  var versionCode: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaApk {
   
@@ -30,6 +30,8 @@ object SchemaApk {
     inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    
+    inline def setVersionCodeNull: Self = StObject.set(x, "versionCode", null)
     
     inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
   }

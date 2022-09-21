@@ -23,7 +23,7 @@ trait ImageParameters
      with Accessor {
   
   /**
-    * Dots per inch setting for an module:esri/layersMapImageLayer.
+    * Dots per inch setting for an [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#dpi)
     */
@@ -79,14 +79,16 @@ trait ImageParameters
   var layerOption: show | hide | include | exclude = js.native
   
   /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation.
+    * Converts an instance of this class to its ArcGIS portal JSON representation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#toJSON)
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /**
     * Indicates whether or not the background of the dynamic image is transparent.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#transparent)
     */

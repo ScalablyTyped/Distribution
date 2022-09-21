@@ -17,14 +17,14 @@ object mod {
   inline def hubConnection(url: String, options: Options): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Connection]
   inline def hubConnection(url: Unit, options: Options): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Connection]
   
-  inline def signalR(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")().asInstanceOf[js.Any]
-  inline def signalR(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def signalR(url: String, qs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def signalR(url: String, qs: js.Any, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def signalR(url: String, qs: Unit, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def signalR(url: Unit, qs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def signalR(url: Unit, qs: js.Any, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def signalR(url: Unit, qs: Unit, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def signalR(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")().asInstanceOf[Any]
+  inline def signalR(url: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def signalR(url: String, qs: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def signalR(url: String, qs: Any, logging: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def signalR(url: String, qs: Unit, logging: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def signalR(url: Unit, qs: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def signalR(url: Unit, qs: Any, logging: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def signalR(url: Unit, qs: Unit, logging: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @js.native
   trait Connection extends StObject {
@@ -41,14 +41,14 @@ object mod {
     
     var id: String = js.native
     
-    var proxies: StringDictionary[js.Any] = js.native
+    var proxies: StringDictionary[Any] = js.native
     
     def reconnecting(callback: js.Function0[Unit]): Unit = js.native
     
-    def start(): js.Any = js.native
-    def start(options: js.Any): js.Any = js.native
-    def start(options: js.Any, callback: js.Function0[Unit]): js.Any = js.native
-    def start(options: Unit, callback: js.Function0[Unit]): js.Any = js.native
+    def start(): Any = js.native
+    def start(options: Any): Any = js.native
+    def start(options: Any, callback: js.Function0[Unit]): Any = js.native
+    def start(options: Unit, callback: js.Function0[Unit]): Any = js.native
     
     def stop(): Unit = js.native
     def stop(async: Boolean): Unit = js.native
@@ -105,7 +105,7 @@ object mod {
       *
       * @param methodName The name of the server hub method.
       */
-    def invoke(methodName: String, args: js.Any*): js.Promise[js.Any] = js.native
+    def invoke(methodName: String, args: Any*): js.Promise[Any] = js.native
     
     /**
       * Removes the callback invocation request from the server hub for the given event name.
@@ -114,7 +114,7 @@ object mod {
       * @param callback The callback to be invoked.
       */
     def off(eventName: String): Proxy = js.native
-    def off(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Proxy = js.native
+    def off(eventName: String, callback: js.Function1[/* repeated */ Any, Unit]): Proxy = js.native
     
     /**
       * Wires up a callback to be invoked when a invocation request is received from the server hub.
@@ -123,9 +123,9 @@ object mod {
       * @param callback The callback to be invoked.
       */
     def on(eventName: String): Proxy = js.native
-    def on(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Proxy = js.native
+    def on(eventName: String, callback: js.Function1[/* repeated */ Any, Unit]): Proxy = js.native
     
-    var state: js.Any = js.native
+    var state: Any = js.native
   }
   
   type SupportsKeepAliveHandler = js.Function0[Boolean]

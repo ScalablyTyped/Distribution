@@ -12,12 +12,12 @@ trait SetLegacyAbacRequest extends StObject {
   /** Required. Whether ABAC authorization will be enabled in the cluster. */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  /** The name (project, location, cluster id) of the cluster to set legacy abac. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
+  /** The name (project, location, cluster name) of the cluster to set legacy abac. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name
-    * field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated
+    * and replaced by the name field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   

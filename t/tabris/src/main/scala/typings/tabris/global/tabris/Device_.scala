@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.Device")
 @js.native
-/* private */ class Device_ ()
+/**
+  * Provides information about the device that executes the application.
+  */
+/* private */ open class Device_ ()
   extends typings.tabris.mod.Device_

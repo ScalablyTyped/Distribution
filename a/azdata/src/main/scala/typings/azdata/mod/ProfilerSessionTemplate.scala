@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProfilerSessionTemplate extends StObject {
   
   /**
-    * TSQL for creating a session
+    * T-SQL for creating a session
     */
   var createStatement: String
   

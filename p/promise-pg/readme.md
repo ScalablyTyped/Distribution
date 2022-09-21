@@ -9,10 +9,10 @@ Promise wrapper for node-postgres
 | ------------------ | :-------------: |
 | Full name          | promise-pg |
 | Keywords           | postgres, promise |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1801 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46.666666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://bitbucket.org/lplabs/promise-pg#readme)

@@ -84,13 +84,13 @@ object CountryDartIds {
     
     inline def setCountryDartIdsUndefined: Self = StObject.set(x, "countryDartIds", js.undefined)
     
-    inline def setCountryDartIdsVarargs(value: String*): Self = StObject.set(x, "countryDartIds", js.Array(value :_*))
+    inline def setCountryDartIdsVarargs(value: String*): Self = StObject.set(x, "countryDartIds", js.Array(value*))
     
     inline def setDartIds(value: String | js.Array[String]): Self = StObject.set(x, "dartIds", value.asInstanceOf[js.Any])
     
     inline def setDartIdsUndefined: Self = StObject.set(x, "dartIds", js.undefined)
     
-    inline def setDartIdsVarargs(value: String*): Self = StObject.set(x, "dartIds", js.Array(value :_*))
+    inline def setDartIdsVarargs(value: String*): Self = StObject.set(x, "dartIds", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -122,7 +122,7 @@ object CountryDartIds {
     
     inline def setRegionDartIdsUndefined: Self = StObject.set(x, "regionDartIds", js.undefined)
     
-    inline def setRegionDartIdsVarargs(value: String*): Self = StObject.set(x, "regionDartIds", js.Array(value :_*))
+    inline def setRegionDartIdsVarargs(value: String*): Self = StObject.set(x, "regionDartIds", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

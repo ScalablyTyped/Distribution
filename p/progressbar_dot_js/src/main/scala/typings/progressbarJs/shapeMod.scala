@@ -2,6 +2,7 @@ package typings.progressbarJs
 
 import typings.progressbarJs.mod.AnimationSupport
 import typings.progressbarJs.mod.PathDrawingOptions
+import typings.std.HTMLElement
 import typings.std.HTMLParagraphElement
 import typings.std.SVGElement
 import typings.std.SVGPathElement
@@ -20,14 +21,14 @@ object shapeMod {
     * @param [opts] - Options for path drawing.
     * @see {@link https://progressbarjs.readthedocs.io/en/latest/api/shape/#new-shapecontainer-options}
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Shape {
     def this(container: String) = this()
-    def this(container: SVGPathElement) = this()
+    def this(container: HTMLElement) = this()
     def this(container: String, opts: PathDrawingOptions) = this()
     def this(container: Null, opts: PathDrawingOptions) = this()
-    def this(container: SVGPathElement, opts: PathDrawingOptions) = this()
+    def this(container: HTMLElement, opts: PathDrawingOptions) = this()
   }
   
   // tslint:disable-next-line no-empty-interface adds members from animation contract

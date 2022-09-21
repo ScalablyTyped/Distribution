@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SelectedPeopleList")
 @js.native
-class SelectedPeopleList protected ()
+open class SelectedPeopleList protected ()
   extends typings.officeUiFabricReact.mod.SelectedPeopleList {
   def this(basePickerProps: ISelectedPeopleProps) = this()
 }
@@ -20,6 +20,6 @@ object SelectedPeopleList {
   
   @JSImport("office-ui-fabric-react/lib/index.bundle", "SelectedPeopleList.defaultProps")
   @js.native
-  def defaultProps: js.Any = js.native
-  inline def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: Any = js.native
+  inline def defaultProps_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

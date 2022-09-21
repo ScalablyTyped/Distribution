@@ -25,7 +25,7 @@ object DataType {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setFieldVarargs(value: DataTypeField*): Self = StObject.set(x, "field", js.Array(value :_*))
+    inline def setFieldVarargs(value: DataTypeField*): Self = StObject.set(x, "field", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

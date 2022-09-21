@@ -1,97 +1,98 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccessToken = java.lang.String
+type AccessToken = String
 
-type ActiveJobId = java.lang.String
+type ActiveJobId = String
 
-type AppArn = java.lang.String
+type AppArn = String
 
-type AppId = java.lang.String
+type AppId = String
 
-type Apps = js.Array[typings.awsSdk.amplifyMod.App]
+type Apps = js.Array[App]
 
-type ArtifactFileName = java.lang.String
+type ArtifactFileName = String
 
-type ArtifactId = java.lang.String
+type ArtifactId = String
 
-type ArtifactUrl = java.lang.String
+type ArtifactUrl = String
 
-type Artifacts = js.Array[typings.awsSdk.amplifyMod.Artifact]
+type Artifacts = js.Array[Artifact]
 
-type ArtifactsUrl = java.lang.String
+type ArtifactsUrl = String
 
-type AssociatedResource = java.lang.String
+type AssociatedResource = String
 
-type AssociatedResources = js.Array[typings.awsSdk.amplifyMod.AssociatedResource]
+type AssociatedResources = js.Array[AssociatedResource]
 
-type AutoBranchCreationPattern = java.lang.String
+type AutoBranchCreationPattern = String
 
-type AutoBranchCreationPatterns = js.Array[typings.awsSdk.amplifyMod.AutoBranchCreationPattern]
+type AutoBranchCreationPatterns = js.Array[AutoBranchCreationPattern]
 
-type AutoSubDomainCreationPattern = java.lang.String
+type AutoSubDomainCreationPattern = String
 
-type AutoSubDomainCreationPatterns = js.Array[typings.awsSdk.amplifyMod.AutoSubDomainCreationPattern]
+type AutoSubDomainCreationPatterns = js.Array[AutoSubDomainCreationPattern]
 
-type AutoSubDomainIAMRole = java.lang.String
+type AutoSubDomainIAMRole = String
 
-type BackendEnvironmentArn = java.lang.String
+type BackendEnvironmentArn = String
 
-type BackendEnvironments = js.Array[typings.awsSdk.amplifyMod.BackendEnvironment]
+type BackendEnvironments = js.Array[BackendEnvironment]
 
-type BasicAuthCredentials = java.lang.String
+type BasicAuthCredentials = String
 
-type BranchArn = java.lang.String
+type BranchArn = String
 
-type BranchName = java.lang.String
+type BranchName = String
 
-type Branches = js.Array[typings.awsSdk.amplifyMod.Branch]
+type Branches = js.Array[Branch]
 
-type BuildSpec = java.lang.String
+type BuildSpec = String
 
-type CertificateVerificationDNSRecord = java.lang.String
+type CertificateVerificationDNSRecord = String
 
-type CommitId = java.lang.String
+type CommitId = String
 
-type CommitMessage = java.lang.String
+type CommitMessage = String
 
-type CommitTime = typings.std.Date
+type CommitTime = js.Date
 
-type Condition = java.lang.String
+type Condition = String
 
-type Context = java.lang.String
+type Context = String
 
-type CreateTime = typings.std.Date
+type CreateTime = js.Date
 
-type CustomDomain = java.lang.String
+type CustomDomain = String
 
-type CustomDomains = js.Array[typings.awsSdk.amplifyMod.CustomDomain]
+type CustomDomains = js.Array[CustomDomain]
 
-type CustomHeaders = java.lang.String
+type CustomHeaders = String
 
-type CustomRules = js.Array[typings.awsSdk.amplifyMod.CustomRule]
+type CustomRules = js.Array[CustomRule]
 
-type DNSRecord = java.lang.String
+type DNSRecord = String
 
-type DefaultDomain = java.lang.String
+type DefaultDomain = String
 
-type DeploymentArtifacts = java.lang.String
+type DeploymentArtifacts = String
 
-type Description = java.lang.String
+type Description = String
 
-type DisplayName = java.lang.String
+type DisplayName = String
 
-type DomainAssociationArn = java.lang.String
+type DomainAssociationArn = String
 
-type DomainAssociations = js.Array[typings.awsSdk.amplifyMod.DomainAssociation]
+type DomainAssociations = js.Array[DomainAssociation]
 
-type DomainName = java.lang.String
+type DomainName = String
 
-type DomainPrefix = java.lang.String
+type DomainPrefix = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_VERIFICATION
@@ -104,49 +105,49 @@ type DomainPrefix = java.lang.String
   - typings.awsSdk.awsSdkStrings.UPDATING
   - java.lang.String
 */
-type DomainStatus = typings.awsSdk.amplifyMod._DomainStatus | java.lang.String
+type DomainStatus = _DomainStatus | String
 
-type EnableAutoBranchCreation = scala.Boolean
+type EnableAutoBranchCreation = Boolean
 
-type EnableAutoBuild = scala.Boolean
+type EnableAutoBuild = Boolean
 
-type EnableAutoSubDomain = scala.Boolean
+type EnableAutoSubDomain = Boolean
 
-type EnableBasicAuth = scala.Boolean
+type EnableBasicAuth = Boolean
 
-type EnableBranchAutoBuild = scala.Boolean
+type EnableBranchAutoBuild = Boolean
 
-type EnableBranchAutoDeletion = scala.Boolean
+type EnableBranchAutoDeletion = Boolean
 
-type EnableNotification = scala.Boolean
+type EnableNotification = Boolean
 
-type EnablePerformanceMode = scala.Boolean
+type EnablePerformanceMode = Boolean
 
-type EnablePullRequestPreview = scala.Boolean
+type EnablePullRequestPreview = Boolean
 
-type EndTime = typings.std.Date
+type EndTime = js.Date
 
-type EnvKey = java.lang.String
+type EnvKey = String
 
-type EnvValue = java.lang.String
+type EnvValue = String
 
-type EnvironmentName = java.lang.String
+type EnvironmentName = String
 
-type EnvironmentVariables = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.amplifyMod.EnvValue]
+type EnvironmentVariables = StringDictionary[EnvValue]
 
-type FileMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.amplifyMod.MD5Hash]
+type FileMap = StringDictionary[MD5Hash]
 
-type FileName = java.lang.String
+type FileName = String
 
-type FileUploadUrls = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.amplifyMod.UploadUrl]
+type FileUploadUrls = StringDictionary[UploadUrl]
 
-type Framework = java.lang.String
+type Framework = String
 
-type JobArn = java.lang.String
+type JobArn = String
 
-type JobId = java.lang.String
+type JobId = String
 
-type JobReason = java.lang.String
+type JobReason = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -158,9 +159,9 @@ type JobReason = java.lang.String
   - typings.awsSdk.awsSdkStrings.CANCELLED
   - java.lang.String
 */
-type JobStatus = typings.awsSdk.amplifyMod._JobStatus | java.lang.String
+type JobStatus = _JobStatus | String
 
-type JobSummaries = js.Array[typings.awsSdk.amplifyMod.JobSummary]
+type JobSummaries = js.Array[JobSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RELEASE
@@ -169,39 +170,52 @@ type JobSummaries = js.Array[typings.awsSdk.amplifyMod.JobSummary]
   - typings.awsSdk.awsSdkStrings.WEB_HOOK
   - java.lang.String
 */
-type JobType = typings.awsSdk.amplifyMod._JobType | java.lang.String
+type JobType = _JobType | String
 
-type LastDeployTime = typings.std.Date
+type LastDeployTime = js.Date
 
-type LogUrl = java.lang.String
+type LogUrl = String
 
-type MD5Hash = java.lang.String
+type MD5Hash = String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type Name = java.lang.String
+type Name = String
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type OauthToken = java.lang.String
+type OauthToken = String
 
-type Platform = typings.awsSdk.awsSdkStrings.WEB | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.WEB
+  - typings.awsSdk.awsSdkStrings.WEB_DYNAMIC
+  - java.lang.String
+*/
+type Platform = _Platform | String
 
-type PullRequestEnvironmentName = java.lang.String
+type PullRequestEnvironmentName = String
 
-type Repository = java.lang.String
+type Repository = String
 
-type ResourceArn = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SSH
+  - typings.awsSdk.awsSdkStrings.TOKEN
+  - typings.awsSdk.awsSdkStrings.SIGV4
+  - java.lang.String
+*/
+type RepositoryCloneMethod = _RepositoryCloneMethod | String
 
-type Screenshots = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.amplifyMod.ThumbnailUrl]
+type ResourceArn = String
 
-type ServiceRoleArn = java.lang.String
+type Screenshots = StringDictionary[ThumbnailUrl]
 
-type Source = java.lang.String
+type ServiceRoleArn = String
 
-type SourceUrl = java.lang.String
+type Source = String
 
-type StackName = java.lang.String
+type SourceUrl = String
+
+type StackName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PRODUCTION
@@ -211,61 +225,61 @@ type StackName = java.lang.String
   - typings.awsSdk.awsSdkStrings.PULL_REQUEST
   - java.lang.String
 */
-type Stage = typings.awsSdk.amplifyMod._Stage | java.lang.String
+type Stage = _Stage | String
 
-type StartTime = typings.std.Date
+type StartTime = js.Date
 
-type Status = java.lang.String
+type Status = String
 
-type StatusReason = java.lang.String
+type StatusReason = String
 
-type StepName = java.lang.String
+type StepName = String
 
-type Steps = js.Array[typings.awsSdk.amplifyMod.Step]
+type Steps = js.Array[Step]
 
-type SubDomainSettings = js.Array[typings.awsSdk.amplifyMod.SubDomainSetting]
+type SubDomainSettings = js.Array[SubDomainSetting]
 
-type SubDomains = js.Array[typings.awsSdk.amplifyMod.SubDomain]
+type SubDomains = js.Array[SubDomain]
 
-type TTL = java.lang.String
+type TTL = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.amplifyMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.amplifyMod.TagValue]
+type TagMap = StringDictionary[TagValue]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Target = java.lang.String
+type Target = String
 
-type TestArtifactsUrl = java.lang.String
+type TestArtifactsUrl = String
 
-type TestConfigUrl = java.lang.String
+type TestConfigUrl = String
 
-type ThumbnailName = java.lang.String
+type ThumbnailName = String
 
-type ThumbnailUrl = java.lang.String
+type ThumbnailUrl = String
 
-type TotalNumberOfJobs = java.lang.String
+type TotalNumberOfJobs = String
 
-type UpdateTime = typings.std.Date
+type UpdateTime = js.Date
 
-type UploadUrl = java.lang.String
+type UploadUrl = String
 
-type Verified = scala.Boolean
+type Verified = Boolean
 
-type WebhookArn = java.lang.String
+type WebhookArn = String
 
-type WebhookId = java.lang.String
+type WebhookId = String
 
-type WebhookUrl = java.lang.String
+type WebhookUrl = String
 
-type Webhooks = js.Array[typings.awsSdk.amplifyMod.Webhook]
+type Webhooks = js.Array[Webhook]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-07-25`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.amplifyMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

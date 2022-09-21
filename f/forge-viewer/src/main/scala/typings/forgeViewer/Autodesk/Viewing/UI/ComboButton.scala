@@ -9,9 +9,13 @@ trait ComboButton
   extends StObject
      with Button {
   
-  def addControl(): Unit = js.native
+  def addControl(button: Button): Unit = js.native
+  
+  def removeControl(button: Button): Unit = js.native
   
   def restoreDefault(): Unit = js.native
   
   def saveAsDefault(): Unit = js.native
+  
+  var subMenu: ControlGroup = js.native
 }

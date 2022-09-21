@@ -10,7 +10,7 @@ trait SmartTagProperties extends StObject {
   def apply(Index: String): SmartTagProperty = js.native
   def apply(Index: Double): SmartTagProperty = js.native
   
-  def Add(Name: String, Value: js.Any): SmartTagProperty = js.native
+  def Add(Name: String, Value: Any): SmartTagProperty = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native
   
@@ -21,5 +21,5 @@ trait SmartTagProperties extends StObject {
   def Item(Index: String): SmartTagProperty = js.native
   def Item(Index: Double): SmartTagProperty = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

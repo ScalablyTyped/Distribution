@@ -13,7 +13,7 @@ trait PrintResponse
   /**
     * URL pointing to the location of the generated printout of the view.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-PrintTask.html#PrintResponse)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-print.html#PrintResponse)
     */
   var url: String
 }

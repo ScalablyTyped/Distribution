@@ -61,7 +61,7 @@ object IntegralAdScience {
     
     inline def setCustomSegmentIdUndefined: Self = StObject.set(x, "customSegmentId", js.undefined)
     
-    inline def setCustomSegmentIdVarargs(value: String*): Self = StObject.set(x, "customSegmentId", js.Array(value :_*))
+    inline def setCustomSegmentIdVarargs(value: String*): Self = StObject.set(x, "customSegmentId", js.Array(value*))
     
     inline def setDisplayViewability(value: String): Self = StObject.set(x, "displayViewability", value.asInstanceOf[js.Any])
     

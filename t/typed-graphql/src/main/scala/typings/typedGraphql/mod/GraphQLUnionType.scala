@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("graphql", "GraphQLUnionType")
 @js.native
-class GraphQLUnionType protected ()
+open class GraphQLUnionType protected ()
   extends StObject
      with GraphQLAbstractType
      with GraphQLCompositeType
@@ -22,7 +22,7 @@ class GraphQLUnionType protected ()
   
   var name: String = js.native
   
-  def resolveType(value: js.Any, context: js.Any, info: GraphQLResolveInfo): GraphQLObjectType = js.native
+  def resolveType(value: Any, context: Any, info: GraphQLResolveInfo): GraphQLObjectType = js.native
   @JSName("resolveType")
   var resolveType_Original: GraphQLTypeResolveFn = js.native
 }

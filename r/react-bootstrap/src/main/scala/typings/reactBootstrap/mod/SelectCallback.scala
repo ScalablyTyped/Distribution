@@ -10,8 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectCallback
-  extends EventHandler[js.Any] {
+trait SelectCallback extends EventHandler[Any] {
   
   /**
     * @deprecated
@@ -19,5 +18,5 @@ trait SelectCallback
     * It does not reflect the underlying event and should not be used.
     */
   def apply(e: MouseEvent[js.Object, NativeMouseEvent]): Unit = js.native
-  def apply(eventKey: js.Any, e: SyntheticEvent[js.Object, Event]): Unit = js.native
+  def apply(eventKey: Any, e: SyntheticEvent[js.Object, Event]): Unit = js.native
 }

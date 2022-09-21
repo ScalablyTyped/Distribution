@@ -39,6 +39,6 @@ object DescribeVTLDevicesOutput {
     
     inline def setVTLDevicesUndefined: Self = StObject.set(x, "VTLDevices", js.undefined)
     
-    inline def setVTLDevicesVarargs(value: VTLDevice*): Self = StObject.set(x, "VTLDevices", js.Array(value :_*))
+    inline def setVTLDevicesVarargs(value: VTLDevice*): Self = StObject.set(x, "VTLDevices", js.Array(value*))
   }
 }

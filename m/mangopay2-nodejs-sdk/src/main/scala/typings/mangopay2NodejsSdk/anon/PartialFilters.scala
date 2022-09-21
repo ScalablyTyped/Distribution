@@ -1,15 +1,15 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionNature
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionNature
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionStatus
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.report.Filters> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/report.report.Filters> */
 trait PartialFilters extends StObject {
   
   var AfterDate: js.UndefOr[Timestamp] = js.undefined
@@ -99,19 +99,19 @@ object PartialFilters {
     
     inline def setNatureUndefined: Self = StObject.set(x, "Nature", js.undefined)
     
-    inline def setNatureVarargs(value: TransactionNature*): Self = StObject.set(x, "Nature", js.Array(value :_*))
+    inline def setNatureVarargs(value: TransactionNature*): Self = StObject.set(x, "Nature", js.Array(value*))
     
     inline def setStatus(value: js.Array[TransactionStatus]): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setStatusVarargs(value: TransactionStatus*): Self = StObject.set(x, "Status", js.Array(value :_*))
+    inline def setStatusVarargs(value: TransactionStatus*): Self = StObject.set(x, "Status", js.Array(value*))
     
     inline def setType(value: js.Array[TransactionType]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    inline def setTypeVarargs(value: TransactionType*): Self = StObject.set(x, "Type", js.Array(value :_*))
+    inline def setTypeVarargs(value: TransactionType*): Self = StObject.set(x, "Type", js.Array(value*))
     
     inline def setWalletId(value: String): Self = StObject.set(x, "WalletId", value.asInstanceOf[js.Any])
     

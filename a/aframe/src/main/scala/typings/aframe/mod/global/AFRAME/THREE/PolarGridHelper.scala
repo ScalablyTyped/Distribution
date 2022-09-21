@@ -1,5 +1,6 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
+import typings.three.utilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,15 +8,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.PolarGridHelper")
 @js.native
-class PolarGridHelper protected ()
+open class PolarGridHelper protected ()
   extends typings.three.mod.PolarGridHelper {
   /**
-  	 * @param [radius=10]
-  	 * @param [radials=16]
-  	 * @param [circles=8]
-  	 * @param [divisions=64]
-  	 * @param [color1=0x444444]
-  	 * @param [color2=0x888888]
-  	 */
-  def this(radius: Double, radials: Double, circles: Double, divisions: Double) = this()
+    * @param [radius=10]
+    * @param [radials=16]
+    * @param [circles=8]
+    * @param [divisions=64]
+    * @param [color1=0x444444]
+    * @param [color2=0x888888]
+    */
+  def this(
+    radius: js.UndefOr[Double],
+    radials: js.UndefOr[Double],
+    circles: js.UndefOr[Double],
+    divisions: js.UndefOr[Double],
+    color1: js.UndefOr[ColorRepresentation],
+    color2: js.UndefOr[ColorRepresentation]
+  ) = this()
 }

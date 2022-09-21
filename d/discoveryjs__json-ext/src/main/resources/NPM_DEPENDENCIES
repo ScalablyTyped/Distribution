@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@discoveryjs/json-ext" : "0.5.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@discoveryjs/json-ext" : "0.5.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

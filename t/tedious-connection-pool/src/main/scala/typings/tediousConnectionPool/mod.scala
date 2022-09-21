@@ -1,9 +1,6 @@
 package typings.tediousConnectionPool
 
-import typings.node.eventsMod.EventEmitter
-import typings.std.Error
-import typings.tedious.mod.Connection
-import typings.tedious.mod.ConnectionConfig
+import typings.events.mod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,22 +12,25 @@ object mod {
     */
   @JSImport("tedious-connection-pool", JSImport.Namespace)
   @js.native
-  class ^ protected () extends tcp {
+  open class ^ protected () extends tcp {
     /**
       * Connection Pool constructor
       * @param poolConfig the pool configuration
       * @param connectionConfig the connection configuration
       */
-    def this(poolConfig: PoolConfig, connectionConfig: ConnectionConfig) = this()
+    def this(
+      poolConfig: PoolConfig,
+      connectionConfig: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify tedious.ConnectionConfig */ Any
+    ) = this()
   }
   
   /**
     * Extends Tedious Connection with release function
     */
-  @JSImport("tedious-connection-pool", "PooledConnection")
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify tedious.Connection * / any */ @JSImport("tedious-connection-pool", "PooledConnection")
   @js.native
-  class PooledConnection protected () extends Connection {
-    def this(config: ConnectionConfig) = this()
+  open class PooledConnection () extends StObject {
     
     /**
       * If the connection is issued from a connection pool returns the connection to the pool.
@@ -43,7 +43,7 @@ object mod {
     * @param err error if any
     * @param connection issued from the pool
     */
-  type ConnectionCallback = js.Function2[/* err */ Error, /* connection */ PooledConnection, Unit]
+  type ConnectionCallback = js.Function2[/* err */ js.Error, /* connection */ PooledConnection, Unit]
   
   /**
     *  Pool Configuration interface

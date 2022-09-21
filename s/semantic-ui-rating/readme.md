@@ -11,9 +11,9 @@ Single component release of rating
 | Full name          | semantic-ui-rating |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3994 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 238.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

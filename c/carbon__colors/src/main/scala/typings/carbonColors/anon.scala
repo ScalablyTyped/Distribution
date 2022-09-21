@@ -115,40 +115,4 @@ object anon {
       inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait `20` extends StObject {
-    
-    var `20`: String
-  }
-  object `20` {
-    
-    inline def apply(`20`: String): `20` = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("20")(`20`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`20`]
-    }
-    
-    extension [Self <: `20`](x: Self) {
-      
-      inline def set20(value: String): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `40` extends StObject {
-    
-    var `40`: String
-  }
-  object `40` {
-    
-    inline def apply(`40`: String): `40` = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("40")(`40`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`40`]
-    }
-    
-    extension [Self <: `40`](x: Self) {
-      
-      inline def set40(value: String): Self = StObject.set(x, "40", value.asInstanceOf[js.Any])
-    }
-  }
 }

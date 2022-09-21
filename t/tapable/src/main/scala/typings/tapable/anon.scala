@@ -1,158 +1,272 @@
 package typings.tapable
 
-import typings.tapable.mod.TapFunction
-import typings.tapable.mod.TapType
-import typings.tapable.tapableStrings.async
-import typings.tapable.tapableStrings.promise
-import typings.tapable.tapableStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait `0`[TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] extends StObject {
+  trait `0`[U, T /* <: Double */] extends StObject {
     
-    var fn: js.UndefOr[TapFunction[TTapType, TArg1, TArg2, TArg3, THookResult]] = js.undefined
+    var `0`: U
     
-    var `type`: js.UndefOr[TTapType] = js.undefined
+    var length: T
   }
   object `0` {
     
-    inline def apply[TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult](): `0`[TTapType, TArg1, TArg2, TArg3, THookResult] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`[TTapType, TArg1, TArg2, TArg3, THookResult]]
+    inline def apply[U, T /* <: Double */](`0`: U, length: T): `0`[U, T] = {
+      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+      __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[`0`[U, T]]
     }
     
-    extension [Self <: `0`[?, ?, ?, ?, ?], TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult](x: Self & (`0`[TTapType, TArg1, TArg2, TArg3, THookResult])) {
+    extension [Self <: `0`[?, ?], U, T /* <: Double */](x: Self & (`0`[U, T])) {
       
-      inline def setFn(
-        value: (TArg1, TArg2, TArg3, /* repeated */ js.Any) => js.Promise[THookResult] | THookResult | Unit
-      ): Self = StObject.set(x, "fn", js.Any.fromFunction4(value))
+      inline def set0(value: U): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
-      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
-      
-      inline def setType(value: TTapType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setLength(value: T): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Before extends StObject {
+  trait `1`[U, T /* <: js.Array[Any] */] extends StObject {
     
-    var before: js.UndefOr[String | js.Array[String]] = js.undefined
+    var `0`: js.Array[U]
     
-    var context: js.UndefOr[Boolean] = js.undefined
+    var `1`: js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+        U
+      ]
     
-    var name: String
+    var `2`: js.Tuple3[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+        U
+      ]
     
-    var stage: js.UndefOr[Double] = js.undefined
+    var `3`: js.Tuple4[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+        U
+      ]
+    
+    var `4`: js.Tuple5[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+        U
+      ]
+    
+    var `5`: js.Tuple6[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+        U
+      ]
+    
+    var `6`: js.Tuple7[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
+        U
+      ]
+    
+    var `7`: js.Tuple8[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any, 
+        U
+      ]
+    
+    var `8`: js.Tuple9[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any, 
+        U
+      ]
   }
-  object Before {
+  object `1` {
     
-    inline def apply(name: String): Before = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Before]
-    }
-    
-    extension [Self <: Before](x: Self) {
-      
-      inline def setBefore(value: String | js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
-      
-      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
-      
-      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
-      
-      inline def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setStage(value: Double): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
-      
-      inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
-    }
-  }
-  
-  trait Fn[TArg1, TArg2, TArg3, THookResult] extends StObject {
-    
-    var fn: js.UndefOr[TapFunction[sync, TArg1, TArg2, TArg3, THookResult]] = js.undefined
-    
-    var `type`: js.UndefOr[sync] = js.undefined
-  }
-  object Fn {
-    
-    inline def apply[TArg1, TArg2, TArg3, THookResult](): Fn[TArg1, TArg2, TArg3, THookResult] = {
+    inline def apply[U, T /* <: js.Array[Any] */](
+      `0`: js.Array[U],
+      `1`: js.Tuple2[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+          U
+        ],
+      `2`: js.Tuple3[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+          U
+        ],
+      `3`: js.Tuple4[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+          U
+        ],
+      `4`: js.Tuple5[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+          U
+        ],
+      `5`: js.Tuple6[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+          U
+        ],
+      `6`: js.Tuple7[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
+          U
+        ],
+      `7`: js.Tuple8[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any, 
+          U
+        ],
+      `8`: js.Tuple9[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any, 
+          U
+        ]
+    ): `1`[U, T] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Fn[TArg1, TArg2, TArg3, THookResult]]
+      __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+      __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+      __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+      __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+      __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
+      __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
+      __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
+      __obj.updateDynamic("7")(`7`.asInstanceOf[js.Any])
+      __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[`1`[U, T]]
     }
     
-    extension [Self <: Fn[?, ?, ?, ?], TArg1, TArg2, TArg3, THookResult](x: Self & (Fn[TArg1, TArg2, TArg3, THookResult])) {
+    extension [Self <: `1`[?, ?], U, T /* <: js.Array[Any] */](x: Self & (`1`[U, T])) {
       
-      inline def setFn(
-        value: (TArg1, TArg2, TArg3, /* repeated */ js.Any) => js.Promise[THookResult] | THookResult | Unit
-      ): Self = StObject.set(x, "fn", js.Any.fromFunction4(value))
+      inline def set0(value: js.Array[U]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
-      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def set0Varargs(value: U*): Self = StObject.set(x, "0", js.Array(value*))
       
-      inline def setType(value: sync): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def set1(
+        value: js.Tuple2[
+              /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+              U
+            ]
+      ): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-    }
-  }
-  
-  trait FnType[TArg1, TArg2, TArg3, THookResult] extends StObject {
-    
-    var fn: js.UndefOr[TapFunction[promise, TArg1, TArg2, TArg3, THookResult]] = js.undefined
-    
-    var `type`: js.UndefOr[promise] = js.undefined
-  }
-  object FnType {
-    
-    inline def apply[TArg1, TArg2, TArg3, THookResult](): FnType[TArg1, TArg2, TArg3, THookResult] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FnType[TArg1, TArg2, TArg3, THookResult]]
-    }
-    
-    extension [Self <: FnType[?, ?, ?, ?], TArg1, TArg2, TArg3, THookResult](x: Self & (FnType[TArg1, TArg2, TArg3, THookResult])) {
+      inline def set2(
+        value: js.Tuple3[
+              /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+              U
+            ]
+      ): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      inline def setFn(
-        value: (TArg1, TArg2, TArg3, /* repeated */ js.Any) => js.Promise[THookResult] | THookResult | Unit
-      ): Self = StObject.set(x, "fn", js.Any.fromFunction4(value))
+      inline def set3(
+        value: js.Tuple4[
+              /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+              U
+            ]
+      ): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def set4(
+        value: js.Tuple5[
+              /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+              U
+            ]
+      ): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      inline def setType(value: promise): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def set5(
+        value: js.Tuple6[
+              /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+              U
+            ]
+      ): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-    }
-  }
-  
-  trait Type[TArg1, TArg2, TArg3, THookResult] extends StObject {
-    
-    var fn: js.UndefOr[TapFunction[async, TArg1, TArg2, TArg3, THookResult]] = js.undefined
-    
-    var `type`: js.UndefOr[async] = js.undefined
-  }
-  object Type {
-    
-    inline def apply[TArg1, TArg2, TArg3, THookResult](): Type[TArg1, TArg2, TArg3, THookResult] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Type[TArg1, TArg2, TArg3, THookResult]]
-    }
-    
-    extension [Self <: Type[?, ?, ?, ?], TArg1, TArg2, TArg3, THookResult](x: Self & (Type[TArg1, TArg2, TArg3, THookResult])) {
+      inline def set6(
+        value: js.Tuple7[
+              /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
+              U
+            ]
+      ): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
-      inline def setFn(
-        value: (TArg1, TArg2, TArg3, /* repeated */ js.Any) => js.Promise[THookResult] | THookResult | Unit
-      ): Self = StObject.set(x, "fn", js.Any.fromFunction4(value))
+      inline def set7(
+        value: js.Tuple8[
+              /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any, 
+              U
+            ]
+      ): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
       
-      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
-      
-      inline def setType(value: async): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def set8(
+        value: js.Tuple9[
+              /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any, 
+              U
+            ]
+      ): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
     }
   }
 }

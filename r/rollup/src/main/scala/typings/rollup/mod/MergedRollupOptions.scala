@@ -21,6 +21,6 @@ object MergedRollupOptions {
     
     inline def setOutput(value: js.Array[OutputOptions]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    inline def setOutputVarargs(value: OutputOptions*): Self = StObject.set(x, "output", js.Array(value :_*))
+    inline def setOutputVarargs(value: OutputOptions*): Self = StObject.set(x, "output", js.Array(value*))
   }
 }

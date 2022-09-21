@@ -14,7 +14,7 @@ trait Problem extends StObject {
   /**
     * The time when the problem ended, in epoch seconds.
     */
-  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Feedback provided by the user about the problem.
@@ -32,6 +32,16 @@ trait Problem extends StObject {
   var Insights: js.UndefOr[typings.awsSdk.applicationinsightsMod.Insights] = js.undefined
   
   /**
+    *  The last time that the problem reoccurred after its last resolution. 
+    */
+  var LastRecurrenceTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    *  The number of times that the same problem reoccurred after the first time it was resolved. 
+    */
+  var RecurringCount: js.UndefOr[typings.awsSdk.applicationinsightsMod.RecurringCount] = js.undefined
+  
+  /**
     * The name of the resource group affected by the problem.
     */
   var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.undefined
@@ -44,7 +54,7 @@ trait Problem extends StObject {
   /**
     * The time when the problem started, in epoch seconds.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the problem.
@@ -69,7 +79,7 @@ object Problem {
     
     inline def setAffectedResourceUndefined: Self = StObject.set(x, "AffectedResource", js.undefined)
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -85,6 +95,14 @@ object Problem {
     
     inline def setInsightsUndefined: Self = StObject.set(x, "Insights", js.undefined)
     
+    inline def setLastRecurrenceTime(value: js.Date): Self = StObject.set(x, "LastRecurrenceTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastRecurrenceTimeUndefined: Self = StObject.set(x, "LastRecurrenceTime", js.undefined)
+    
+    inline def setRecurringCount(value: RecurringCount): Self = StObject.set(x, "RecurringCount", value.asInstanceOf[js.Any])
+    
+    inline def setRecurringCountUndefined: Self = StObject.set(x, "RecurringCount", js.undefined)
+    
     inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
     
     inline def setResourceGroupNameUndefined: Self = StObject.set(x, "ResourceGroupName", js.undefined)
@@ -93,7 +111,7 @@ object Problem {
     
     inline def setSeverityLevelUndefined: Self = StObject.set(x, "SeverityLevel", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

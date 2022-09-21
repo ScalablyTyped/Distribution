@@ -123,7 +123,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var tags: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var tags: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 标题栏控件的标题文字颜色
@@ -200,7 +200,7 @@ object PlusWebviewWebviewTitleNViewStyles {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: PlusWebview*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: PlusWebview*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setCoverage(value: String): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
@@ -230,11 +230,11 @@ object PlusWebviewWebviewTitleNViewStyles {
     
     inline def setSplitLineUndefined: Self = StObject.set(x, "splitLine", js.undefined)
     
-    inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Any*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     

@@ -1,9 +1,5 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceProjectsLocationsDatasetsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The maximum number of items to return. Capped to 100 if not specified.
-    * May not be larger than 1000.
+    * The maximum number of items to return. If not specified, 100 is used. May not be larger than 1000.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
@@ -29,8 +19,7 @@ trait ParamsResourceProjectsLocationsDatasetsList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the project whose datasets should be listed (e.g.,
-    * `projects/{project_id}/locations/{location_id}`).
+    * The name of the project whose datasets should be listed. For example, `projects/{project_id\}/locations/{location_id\}`.
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -42,10 +31,6 @@ object ParamsResourceProjectsLocationsDatasetsList {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsDatasetsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

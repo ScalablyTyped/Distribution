@@ -13,31 +13,31 @@ object anomalyBloodhoundMod {
   
   @JSImport("playable/dist/src/modules/anomaly-bloodhound/anomaly-bloodhound", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with AnomalyBloodhound {
     def this(hasEngineEventEmitter: Engine) = this()
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _callback: js.Any = js.native
+    var _callback: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _processStateChange: js.Any = js.native
+    var _processStateChange: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _timeoutMap: js.Any = js.native
+    var _timeoutMap: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -49,7 +49,7 @@ object anomalyBloodhoundMod {
     override def reportDebugInfo(hasReasonStartTSEndTS: EndTS): Unit = js.native
     
     /* CompleteClass */
-    override def setAnomalyCallback(callback: js.Function1[/* anomalyData */ js.Any, Unit]): Unit = js.native
+    override def setAnomalyCallback(callback: js.Function1[/* anomalyData */ Any, Unit]): Unit = js.native
     
     /* CompleteClass */
     override def startDelayedReport(`type`: IReportType, reason: String): Unit = js.native
@@ -88,19 +88,19 @@ object anomalyBloodhoundMod {
   
   trait AnomalyBloodhound extends StObject {
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _callback: js.Any
+    /* private */ var _callback: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _processStateChange: js.Any
+    /* private */ var _processStateChange: Any
     
-    /* private */ var _timeoutMap: js.Any
+    /* private */ var _timeoutMap: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
     def destroy(): Unit
     
@@ -108,7 +108,7 @@ object anomalyBloodhoundMod {
     
     def reportDebugInfo(hasReasonStartTSEndTS: EndTS): Unit
     
-    def setAnomalyCallback(callback: js.Function1[/* anomalyData */ js.Any, Unit]): Unit
+    def setAnomalyCallback(callback: js.Function1[/* anomalyData */ Any, Unit]): Unit
     
     def startDelayedReport(`type`: IReportType, reason: String): Unit
     
@@ -119,17 +119,17 @@ object anomalyBloodhoundMod {
   object AnomalyBloodhound {
     
     inline def apply(
-      _bindEvents: js.Any,
-      _callback: js.Any,
-      _engine: js.Any,
-      _eventEmitter: js.Any,
-      _processStateChange: js.Any,
-      _timeoutMap: js.Any,
-      _unbindEvents: js.Any,
+      _bindEvents: Any,
+      _callback: Any,
+      _engine: Any,
+      _eventEmitter: Any,
+      _processStateChange: Any,
+      _timeoutMap: Any,
+      _unbindEvents: Any,
       destroy: () => Unit,
       isDelayedReportExist: IReportType => Boolean,
       reportDebugInfo: EndTS => Unit,
-      setAnomalyCallback: js.Function1[/* anomalyData */ js.Any, Unit] => Unit,
+      setAnomalyCallback: js.Function1[/* anomalyData */ Any, Unit] => Unit,
       startDelayedReport: (IReportType, String) => Unit,
       stopAllDelayedReports: () => Unit,
       stopDelayedReport: IReportType => Unit
@@ -146,7 +146,7 @@ object anomalyBloodhoundMod {
       
       inline def setReportDebugInfo(value: EndTS => Unit): Self = StObject.set(x, "reportDebugInfo", js.Any.fromFunction1(value))
       
-      inline def setSetAnomalyCallback(value: js.Function1[/* anomalyData */ js.Any, Unit] => Unit): Self = StObject.set(x, "setAnomalyCallback", js.Any.fromFunction1(value))
+      inline def setSetAnomalyCallback(value: js.Function1[/* anomalyData */ Any, Unit] => Unit): Self = StObject.set(x, "setAnomalyCallback", js.Any.fromFunction1(value))
       
       inline def setStartDelayedReport(value: (IReportType, String) => Unit): Self = StObject.set(x, "startDelayedReport", js.Any.fromFunction2(value))
       
@@ -154,19 +154,19 @@ object anomalyBloodhoundMod {
       
       inline def setStopDelayedReport(value: IReportType => Unit): Self = StObject.set(x, "stopDelayedReport", js.Any.fromFunction1(value))
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_callback(value: js.Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
+      inline def set_callback(value: Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_processStateChange(value: js.Any): Self = StObject.set(x, "_processStateChange", value.asInstanceOf[js.Any])
+      inline def set_processStateChange(value: Any): Self = StObject.set(x, "_processStateChange", value.asInstanceOf[js.Any])
       
-      inline def set_timeoutMap(value: js.Any): Self = StObject.set(x, "_timeoutMap", value.asInstanceOf[js.Any])
+      inline def set_timeoutMap(value: Any): Self = StObject.set(x, "_timeoutMap", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FullHashesResource extends StObject {
   
   /** Finds the full hashes that match the requested hash prefixes. */
-  def find(request: Alt): Request[FindFullHashesResponse] = js.native
-  def find(request: Callback, body: FindFullHashesRequest): Request[FindFullHashesResponse] = js.native
+  def find(request: Alt): Request[GoogleSecuritySafebrowsingV4FindFullHashesResponse] = js.native
+  def find(request: Callback, body: GoogleSecuritySafebrowsingV4FindFullHashesRequest): Request[GoogleSecuritySafebrowsingV4FindFullHashesResponse] = js.native
 }

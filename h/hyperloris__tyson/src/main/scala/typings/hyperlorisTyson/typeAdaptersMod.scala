@@ -12,7 +12,7 @@ object typeAdaptersMod {
   
   @JSImport("@hyperloris/tyson/dist/types/adapters/typeAdapters", "TypeAdapters")
   @js.native
-  class TypeAdapters () extends StObject
+  open class TypeAdapters () extends StObject
   /* static members */
   object TypeAdapters {
     

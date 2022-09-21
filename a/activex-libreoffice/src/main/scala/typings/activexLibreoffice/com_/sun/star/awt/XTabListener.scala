@@ -48,7 +48,7 @@ object XTabListener {
     deactivated: Double => Unit,
     disposing: EventObject => Unit,
     inserted: Double => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removed: Double => Unit
   ): XTabListener = {

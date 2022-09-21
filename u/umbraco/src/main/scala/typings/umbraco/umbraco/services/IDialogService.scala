@@ -21,7 +21,7 @@ trait IDialogService extends StObject {
     * @param {Object} dialog the dialog object to close
     * @param {Object} args if specified this object will be sent to any callbacks registered on the dialogs.
     */
-  def close(dialog: IDialog, args: js.Any*): Unit
+  def close(dialog: IDialog, args: Any*): Unit
   
   /**
     * @ngdoc method
@@ -32,7 +32,7 @@ trait IDialogService extends StObject {
     * Closes all dialogs
     * @param {Object} args if specified this object will be sent to any callbacks registered on the dialogs.
     */
-  def closeAll(args: js.Any*): Unit
+  def closeAll(args: Any*): Unit
   
   /** Internal method that closes the dialog properly and cleans up resources */
   def closeDialog(dialog: IDialog): Unit
@@ -51,7 +51,7 @@ trait IDialogService extends StObject {
     */
   def contentPicker(options: IContentPickerOptions): IModal
   
-  var dialogs: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var dialogs: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * @ngdoc method
@@ -60,7 +60,7 @@ trait IDialogService extends StObject {
     * @description
     * Opens a dialog to an embed dialog
     */
-  def embedDialog(options: js.Any): Unit
+  def embedDialog(options: Any): Unit
   
   /**
     * @ngdoc method
@@ -184,7 +184,7 @@ trait IDialogService extends StObject {
   def propertyDialog(options: IPropertyDialogOptions): IModal
   
   /** Internal method that removes all dialogs */
-  def removeAllDialogs(args: js.Any*): Unit
+  def removeAllDialogs(args: Any*): Unit
   
   /**
     * @ngdoc method
@@ -210,16 +210,16 @@ trait IDialogService extends StObject {
     * @description
     * Opens a dialog to show a custom YSOD
     */
-  def ysodDialog(ysodError: js.Any): Unit
+  def ysodDialog(ysodError: Any): Unit
 }
 object IDialogService {
   
   inline def apply(
-    close: (IDialog, /* repeated */ js.Any) => Unit,
-    closeAll: /* repeated */ js.Any => Unit,
+    close: (IDialog, /* repeated */ Any) => Unit,
+    closeAll: /* repeated */ Any => Unit,
     closeDialog: IDialog => Unit,
     contentPicker: IContentPickerOptions => IModal,
-    embedDialog: js.Any => Unit,
+    embedDialog: Any => Unit,
     iconPicker: IIconPickerOptions => IModal,
     linkPicker: ILinkPickerOptions => IModal,
     macroPicker: IMacroPickerOptions => IModal,
@@ -229,9 +229,9 @@ object IDialogService {
     open: IDialogRenderingOptions => IModal,
     openDialog: IDialogRenderingOptions => IModal,
     propertyDialog: IPropertyDialogOptions => IModal,
-    removeAllDialogs: /* repeated */ js.Any => Unit,
+    removeAllDialogs: /* repeated */ Any => Unit,
     treePicker: ITreePickerOptions => IModal,
-    ysodDialog: js.Any => Unit
+    ysodDialog: Any => Unit
   ): IDialogService = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction2(close), closeAll = js.Any.fromFunction1(closeAll), closeDialog = js.Any.fromFunction1(closeDialog), contentPicker = js.Any.fromFunction1(contentPicker), embedDialog = js.Any.fromFunction1(embedDialog), iconPicker = js.Any.fromFunction1(iconPicker), linkPicker = js.Any.fromFunction1(linkPicker), macroPicker = js.Any.fromFunction1(macroPicker), mediaPicker = js.Any.fromFunction1(mediaPicker), memberGroupPicker = js.Any.fromFunction1(memberGroupPicker), memberPicker = js.Any.fromFunction1(memberPicker), open = js.Any.fromFunction1(open), openDialog = js.Any.fromFunction1(openDialog), propertyDialog = js.Any.fromFunction1(propertyDialog), removeAllDialogs = js.Any.fromFunction1(removeAllDialogs), treePicker = js.Any.fromFunction1(treePicker), ysodDialog = js.Any.fromFunction1(ysodDialog))
     __obj.asInstanceOf[IDialogService]
@@ -239,21 +239,21 @@ object IDialogService {
   
   extension [Self <: IDialogService](x: Self) {
     
-    inline def setClose(value: (IDialog, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
+    inline def setClose(value: (IDialog, /* repeated */ Any) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     
-    inline def setCloseAll(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "closeAll", js.Any.fromFunction1(value))
+    inline def setCloseAll(value: /* repeated */ Any => Unit): Self = StObject.set(x, "closeAll", js.Any.fromFunction1(value))
     
     inline def setCloseDialog(value: IDialog => Unit): Self = StObject.set(x, "closeDialog", js.Any.fromFunction1(value))
     
     inline def setContentPicker(value: IContentPickerOptions => IModal): Self = StObject.set(x, "contentPicker", js.Any.fromFunction1(value))
     
-    inline def setDialogs(value: js.Array[js.Any]): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
+    inline def setDialogs(value: js.Array[Any]): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
     
     inline def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
     
-    inline def setDialogsVarargs(value: js.Any*): Self = StObject.set(x, "dialogs", js.Array(value :_*))
+    inline def setDialogsVarargs(value: Any*): Self = StObject.set(x, "dialogs", js.Array(value*))
     
-    inline def setEmbedDialog(value: js.Any => Unit): Self = StObject.set(x, "embedDialog", js.Any.fromFunction1(value))
+    inline def setEmbedDialog(value: Any => Unit): Self = StObject.set(x, "embedDialog", js.Any.fromFunction1(value))
     
     inline def setIconPicker(value: IIconPickerOptions => IModal): Self = StObject.set(x, "iconPicker", js.Any.fromFunction1(value))
     
@@ -273,10 +273,10 @@ object IDialogService {
     
     inline def setPropertyDialog(value: IPropertyDialogOptions => IModal): Self = StObject.set(x, "propertyDialog", js.Any.fromFunction1(value))
     
-    inline def setRemoveAllDialogs(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeAllDialogs", js.Any.fromFunction1(value))
+    inline def setRemoveAllDialogs(value: /* repeated */ Any => Unit): Self = StObject.set(x, "removeAllDialogs", js.Any.fromFunction1(value))
     
     inline def setTreePicker(value: ITreePickerOptions => IModal): Self = StObject.set(x, "treePicker", js.Any.fromFunction1(value))
     
-    inline def setYsodDialog(value: js.Any => Unit): Self = StObject.set(x, "ysodDialog", js.Any.fromFunction1(value))
+    inline def setYsodDialog(value: Any => Unit): Self = StObject.set(x, "ysodDialog", js.Any.fromFunction1(value))
   }
 }

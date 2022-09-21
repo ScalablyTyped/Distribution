@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openssi-websdk", "Agent")
 @js.native
-class Agent protected () extends StObject {
+open class Agent protected () extends StObject {
   def this(account_url: String, agent_name: String, agent_password: String, friendly_name: String) = this()
   def this(
     account_url: String,
@@ -85,9 +85,9 @@ class Agent protected () extends StObject {
     * Returns {Promise<ProofSchema>} A promise that resolves with the created proof schema.
     */
   def createProofSchema(name: String, version: String): js.Promise[ProofSchema] = js.native
-  def createProofSchema(name: String, version: String, requestedAttributes: js.Any): js.Promise[ProofSchema] = js.native
-  def createProofSchema(name: String, version: String, requestedAttributes: js.Any, requestedPredicates: js.Any): js.Promise[ProofSchema] = js.native
-  def createProofSchema(name: String, version: String, requestedAttributes: Unit, requestedPredicates: js.Any): js.Promise[ProofSchema] = js.native
+  def createProofSchema(name: String, version: String, requestedAttributes: Any): js.Promise[ProofSchema] = js.native
+  def createProofSchema(name: String, version: String, requestedAttributes: Any, requestedPredicates: Any): js.Promise[ProofSchema] = js.native
+  def createProofSchema(name: String, version: String, requestedAttributes: Unit, requestedPredicates: Any): js.Promise[ProofSchema] = js.native
   
   /**
     * Creates a {Verification} with another agent.  The initial state must be one of 'outbound_proof_request',
@@ -120,14 +120,14 @@ class Agent protected () extends StObject {
     * {string} id The ID of a device
     * Returns {object} The delete response from Agency
     */
-  def deleteDevice(id: String): js.Any = js.native
+  def deleteDevice(id: String): Any = js.native
   
   /**
     * Delete listener
     * {string} id The ID of a listener
     * Returns {object} The delete response from Agency
     */
-  def deleteListener(id: String): js.Any = js.native
+  def deleteListener(id: String): Any = js.native
   
   /**
     * Delete a {Verification}.
@@ -212,7 +212,7 @@ class Agent protected () extends StObject {
     * Get all devices
     * Returns {object[]} Array of device objects
     */
-  def getDevices(): js.Array[js.Any] = js.native
+  def getDevices(): js.Array[Any] = js.native
   
   /**
     * Get this agent's {AgentInfo}.
@@ -224,7 +224,7 @@ class Agent protected () extends StObject {
     * Get all listeners
     * Returns {object[]} Array of listener objects
     */
-  def getListeners(): js.Array[js.Any] = js.native
+  def getListeners(): js.Array[Any] = js.native
   
   /**
     * Get the information for a {Verification}.
@@ -251,10 +251,10 @@ class Agent protected () extends StObject {
     * {Properties} [properties] Optional metadata to add to the credential offer.
     * Returns {Promise<Credential>} A promise that resolves with the credential offer.
     */
-  def offerCredential(to: RequestRecipient, source: CredentialDefinitionID, attributes: js.Any): js.Any = js.native
-  def offerCredential(to: RequestRecipient, source: CredentialDefinitionID, attributes: js.Any, properties: Properties): js.Any = js.native
-  def offerCredential(to: RequestRecipient, source: SchemaIDObj, attributes: js.Any): js.Any = js.native
-  def offerCredential(to: RequestRecipient, source: SchemaIDObj, attributes: js.Any, properties: Properties): js.Any = js.native
+  def offerCredential(to: RequestRecipient, source: CredentialDefinitionID, attributes: Any): Any = js.native
+  def offerCredential(to: RequestRecipient, source: CredentialDefinitionID, attributes: Any, properties: Properties): Any = js.native
+  def offerCredential(to: RequestRecipient, source: SchemaIDObj, attributes: Any): Any = js.native
+  def offerCredential(to: RequestRecipient, source: SchemaIDObj, attributes: Any, properties: Properties): Any = js.native
   
   /**
     * Set this agent's role to TRUST_ANCHOR on the ledger, giving the agent the ability to publish schemas and
@@ -273,8 +273,8 @@ class Agent protected () extends StObject {
     * {object} [options] Set headers, method=GET, POST, PUT, PATCH, DELETE, UPDATE by passing in object {"headers":{...}, "method":...}
     * Returns {object} The response object
     */
-  def request(path: String): js.Any = js.native
-  def request(path: String, options: js.Any): js.Any = js.native
+  def request(path: String): Any = js.native
+  def request(path: String, options: Any): Any = js.native
   
   /**
     * Creates a {Credential} and sends the credential request to a remote agent.
@@ -286,24 +286,13 @@ class Agent protected () extends StObject {
   def requestCredential(to: RequestRecipient, source: SchemaIDObj): js.Promise[Credential] = js.native
   def requestCredential(to: RequestRecipient, source: SchemaIDObj, properties: Properties): js.Promise[Credential] = js.native
   
+  def setLoggingLevel(log_level: trace | debug | info | warn | error | fatal): Unit = js.native
   /**
     * Enable logging for the agent by setting a logging level.
     * {'trace'|'debug'|'info'|'warn'|'error'|'fatal'} log_level The desired logging level.
     * Returns {void}
     */
   def setLoggingLevel(log_level: String): Unit = js.native
-  @JSName("setLoggingLevel")
-  def setLoggingLevel_debug(log_level: debug): Unit = js.native
-  @JSName("setLoggingLevel")
-  def setLoggingLevel_error(log_level: error): Unit = js.native
-  @JSName("setLoggingLevel")
-  def setLoggingLevel_fatal(log_level: fatal): Unit = js.native
-  @JSName("setLoggingLevel")
-  def setLoggingLevel_info(log_level: info): Unit = js.native
-  @JSName("setLoggingLevel")
-  def setLoggingLevel_trace(log_level: trace): Unit = js.native
-  @JSName("setLoggingLevel")
-  def setLoggingLevel_warn(log_level: warn): Unit = js.native
   
   /**
     * Set url of Agent
@@ -343,8 +332,8 @@ class Agent protected () extends StObject {
     * to 'outbound_offer'.
     * Returns {Promise<Credential>} A promise that resolves with the updated credential data.
     */
-  def updateCredential(id: String, state: CredentialState): js.Any = js.native
-  def updateCredential(id: String, state: CredentialState, attributes: js.Promise[Credential]): js.Any = js.native
+  def updateCredential(id: String, state: CredentialState): Any = js.native
+  def updateCredential(id: String, state: CredentialState, attributes: js.Promise[Credential]): Any = js.native
   
   /**
     * Updates a {Verification}.  A verifier accepts a `inbound_verification_request` by updating the state to
@@ -358,9 +347,9 @@ class Agent protected () extends StObject {
     * Returns {Promise<Verification>} A Promise that resolves with the updated verification.
     */
   def updateVerification(id: String, state: VerificationState): js.Promise[Verification] = js.native
-  def updateVerification(id: String, state: VerificationState, choices: Unit, self_attested_attributes: js.Any): js.Promise[Verification] = js.native
+  def updateVerification(id: String, state: VerificationState, choices: Unit, self_attested_attributes: Any): js.Promise[Verification] = js.native
   def updateVerification(id: String, state: VerificationState, choices: ProofSelection): js.Promise[Verification] = js.native
-  def updateVerification(id: String, state: VerificationState, choices: ProofSelection, self_attested_attributes: js.Any): js.Promise[Verification] = js.native
+  def updateVerification(id: String, state: VerificationState, choices: ProofSelection, self_attested_attributes: Any): js.Promise[Verification] = js.native
   
   /**
     * Get a {ProofSchema}

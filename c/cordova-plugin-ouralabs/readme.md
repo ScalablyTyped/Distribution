@@ -10,15 +10,12 @@ Cordova plugin for Ouralabs centralized remote logging platform.
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-ouralabs |
 | Keywords           | cordova, ouralabs, logging, logger, logs, ecosystem:cordova, cordova-android, cordova-ios |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 842 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 63.666666666666664 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/justin-credible/cordova-plugin-ouralabs#readme)
-- [Bugs](https://github.com/justin-credible/cordova-plugin-ouralabs/issues)
-- [Repository](https://github.com/justin-credible/cordova-plugin-ouralabs)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-ouralabs)
     
 

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ChartFillFormat")
 @js.native
-/* private */ class ChartFillFormat ()
+/* private */ open class ChartFillFormat ()
   extends StObject
      with typings.activexOffice.Office.ChartFillFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val BackColor: typings.activexOffice.Office.ChartColorFormat = js.native
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def OneColorGradient(Style: Double, Variant: Double, Degree: Double): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Pattern: Double = js.native
@@ -78,7 +78,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Type: Double = js.native
   
   /* CompleteClass */
-  override def UserPicture(PictureFile: String, PictureFormat: js.Any, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
+  override def UserPicture(PictureFile: String, PictureFormat: Any, PictureStackUnit: Any, PicturePlacement: Any): Unit = js.native
   
   /* CompleteClass */
   override def UserTextured(TextureFile: String): Unit = js.native

@@ -31,7 +31,7 @@ trait ExtendOpts[T /* <: Ractive[T] */]
   var noCssTransform: js.UndefOr[Boolean] = js.undefined
   
   /** An array of plugins to apply to the component. */
-  var use: js.UndefOr[js.Array[PluginExtend]] = js.undefined
+  var use: js.UndefOr[js.Array[Plugin]] = js.undefined
 }
 object ExtendOpts {
   
@@ -46,7 +46,7 @@ object ExtendOpts {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setCss(value: String | CssFn): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
@@ -74,10 +74,10 @@ object ExtendOpts {
     
     inline def setNoCssTransformUndefined: Self = StObject.set(x, "noCssTransform", js.undefined)
     
-    inline def setUse(value: js.Array[PluginExtend]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: js.Array[Plugin]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
-    inline def setUseVarargs(value: PluginExtend*): Self = StObject.set(x, "use", js.Array(value :_*))
+    inline def setUseVarargs(value: Plugin*): Self = StObject.set(x, "use", js.Array(value*))
   }
 }

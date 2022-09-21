@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenFontFormattingDialogCommand")
 @js.native
-class OpenFontFormattingDialogCommand ()
+open class OpenFontFormattingDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenFontFormattingDialogCommand {
   

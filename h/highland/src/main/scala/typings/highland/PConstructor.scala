@@ -11,8 +11,8 @@ trait PConstructor[T, P /* <: js.Thenable[T] */]
   extends StObject
      with Instantiable1[
       /* executor */ js.Function2[
-        /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit], 
-        /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+        /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
+        /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
         Unit
       ], 
       P

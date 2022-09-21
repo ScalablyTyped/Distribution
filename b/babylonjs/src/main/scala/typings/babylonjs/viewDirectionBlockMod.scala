@@ -10,7 +10,7 @@ object viewDirectionBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/viewDirectionBlock", "ViewDirectionBlock")
   @js.native
-  class ViewDirectionBlock protected () extends NodeMaterialBlock {
+  open class ViewDirectionBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new ViewDirectionBlock
       * @param name defines the block name

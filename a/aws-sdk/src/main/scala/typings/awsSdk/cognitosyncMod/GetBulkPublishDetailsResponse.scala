@@ -9,12 +9,12 @@ trait GetBulkPublishDetailsResponse extends StObject {
   /**
     * If BulkPublishStatus is SUCCEEDED, the time the last bulk publish operation completed.
     */
-  var BulkPublishCompleteTime: js.UndefOr[Date] = js.undefined
+  var BulkPublishCompleteTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date/time at which the last bulk publish was initiated.
     */
-  var BulkPublishStartTime: js.UndefOr[Date] = js.undefined
+  var BulkPublishStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Status of the last bulk publish operation, valid values are: NOT_STARTED - No bulk publish has been requested for this identity pool IN_PROGRESS - Data is being published to the configured stream SUCCEEDED - All data for the identity pool has been published to the configured stream FAILED - Some portion of the data has failed to publish, check FailureMessage for the cause.
@@ -40,11 +40,11 @@ object GetBulkPublishDetailsResponse {
   
   extension [Self <: GetBulkPublishDetailsResponse](x: Self) {
     
-    inline def setBulkPublishCompleteTime(value: Date): Self = StObject.set(x, "BulkPublishCompleteTime", value.asInstanceOf[js.Any])
+    inline def setBulkPublishCompleteTime(value: js.Date): Self = StObject.set(x, "BulkPublishCompleteTime", value.asInstanceOf[js.Any])
     
     inline def setBulkPublishCompleteTimeUndefined: Self = StObject.set(x, "BulkPublishCompleteTime", js.undefined)
     
-    inline def setBulkPublishStartTime(value: Date): Self = StObject.set(x, "BulkPublishStartTime", value.asInstanceOf[js.Any])
+    inline def setBulkPublishStartTime(value: js.Date): Self = StObject.set(x, "BulkPublishStartTime", value.asInstanceOf[js.Any])
     
     inline def setBulkPublishStartTimeUndefined: Self = StObject.set(x, "BulkPublishStartTime", js.undefined)
     

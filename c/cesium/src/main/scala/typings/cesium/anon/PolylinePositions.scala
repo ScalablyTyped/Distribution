@@ -2,7 +2,6 @@ package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian2
 import typings.cesium.mod.Cartesian3
-import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait PolylinePositions extends StObject {
   
   var shapePositions: js.Array[Cartesian2]
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
+  var vertexFormat: js.UndefOr[typings.cesium.mod.VertexFormat] = js.undefined
 }
 object PolylinePositions {
   
@@ -44,13 +43,13 @@ object PolylinePositions {
     
     inline def setPolylinePositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "polylinePositions", value.asInstanceOf[js.Any])
     
-    inline def setPolylinePositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "polylinePositions", js.Array(value :_*))
+    inline def setPolylinePositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "polylinePositions", js.Array(value*))
     
     inline def setShapePositions(value: js.Array[Cartesian2]): Self = StObject.set(x, "shapePositions", value.asInstanceOf[js.Any])
     
-    inline def setShapePositionsVarargs(value: Cartesian2*): Self = StObject.set(x, "shapePositions", js.Array(value :_*))
+    inline def setShapePositionsVarargs(value: Cartesian2*): Self = StObject.set(x, "shapePositions", js.Array(value*))
     
-    inline def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
     inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }

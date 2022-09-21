@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Window extends StObject {
   
-  def postMessage(message: js.Any, targetOrigin: String): Unit = js.native
-  def postMessage(message: js.Any, targetOrigin: String, transfer: js.Array[Transferable | OffscreenCanvas]): Unit = js.native
+  def postMessage(message: Any, targetOrigin: String): Unit = js.native
+  def postMessage(message: Any, targetOrigin: String, transfer: js.Array[Transferable | OffscreenCanvas]): Unit = js.native
 }

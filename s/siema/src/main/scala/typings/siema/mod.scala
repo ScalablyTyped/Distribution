@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("siema", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Siema {
     def this(options: SiemaOptions) = this()

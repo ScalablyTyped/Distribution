@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.Ray")
 @js.native
-class Ray ()
+open class Ray ()
   extends StObject
      with typings.cannon.CANNON.Ray {
   def this(from: typings.cannon.CANNON.Vec3) = this()

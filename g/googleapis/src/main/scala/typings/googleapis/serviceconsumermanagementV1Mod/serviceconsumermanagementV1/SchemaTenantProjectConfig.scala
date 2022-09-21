@@ -5,13 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This structure defines a tenant project to be added to the specified
-  * tenancy unit and its initial configuration and properties. A project lien
-  * is created for the tenant project to prevent the tenant project from being
-  * deleted accidentally. The lien is deleted as part of tenant project
-  * removal.
-  */
 trait SchemaTenantProjectConfig extends StObject {
   
   /**
@@ -20,18 +13,14 @@ trait SchemaTenantProjectConfig extends StObject {
   var billingConfig: js.UndefOr[SchemaBillingConfig] = js.undefined
   
   /**
-    * Folder where project in this tenancy unit must be located This folder
-    * must have been previously created with the required permissions for the
-    * caller to create and configure a project in it. Valid folder resource
-    * names have the format `folders/{folder_number}` (for example,
-    * `folders/123456`).
+    * Folder where project in this tenancy unit must be located This folder must have been previously created with the required permissions for the caller to create and configure a project in it. Valid folder resource names have the format `folders/{folder_number\}` (for example, `folders/123456`).
     */
-  var folder: js.UndefOr[String] = js.undefined
+  var folder: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Labels that are applied to this project.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
     * Configuration for the IAM service account on the tenant project.
@@ -39,15 +28,12 @@ trait SchemaTenantProjectConfig extends StObject {
   var serviceAccountConfig: js.UndefOr[SchemaServiceAccountConfig] = js.undefined
   
   /**
-    * Google Cloud API names of services that are activated on this project
-    * during provisioning.  If any of these services can&#39;t be activated,
-    * the request fails. For example:
-    * &#39;compute.googleapis.com&#39;,&#39;cloudfunctions.googleapis.com&#39;
+    * Google Cloud API names of services that are activated on this project during provisioning. If any of these services can't be activated, the request fails. For example: 'compute.googleapis.com','cloudfunctions.googleapis.com'
     */
-  var services: js.UndefOr[js.Array[String]] = js.undefined
+  var services: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Describes ownership and policies for the new tenant project. Required.
+    * Describes ownership and policies for the new tenant project.
     */
   var tenantProjectPolicy: js.UndefOr[SchemaTenantProjectPolicy] = js.undefined
 }
@@ -66,9 +52,13 @@ object SchemaTenantProjectConfig {
     
     inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
+    inline def setFolderNull: Self = StObject.set(x, "folder", null)
+    
     inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
@@ -78,9 +68,11 @@ object SchemaTenantProjectConfig {
     
     inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
+    inline def setServicesNull: Self = StObject.set(x, "services", null)
+    
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value*))
     
     inline def setTenantProjectPolicy(value: SchemaTenantProjectPolicy): Self = StObject.set(x, "tenantProjectPolicy", value.asInstanceOf[js.Any])
     

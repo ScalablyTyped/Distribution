@@ -15,7 +15,7 @@ object global {
       * 行政区查询
       * @param options 选项
       */
-    class DistrictSearch ()
+    open class DistrictSearch ()
       extends StObject
          with typings.amapJsApiDistrictSearch.AMap.DistrictSearch {
       def this(options: Options) = this()

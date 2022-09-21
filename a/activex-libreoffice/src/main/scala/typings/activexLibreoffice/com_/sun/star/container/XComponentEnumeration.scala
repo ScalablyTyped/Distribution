@@ -23,8 +23,8 @@ object XComponentEnumeration {
     acquire: () => Unit,
     hasMoreElements: () => Boolean,
     nextComponent: () => XComponent,
-    nextElement: () => js.Any,
-    queryInterface: `type` => js.Any,
+    nextElement: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XComponentEnumeration = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextComponent = js.Any.fromFunction0(nextComponent), nextElement = js.Any.fromFunction0(nextElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

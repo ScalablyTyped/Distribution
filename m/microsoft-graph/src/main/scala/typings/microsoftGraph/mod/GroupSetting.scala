@@ -11,10 +11,16 @@ trait GroupSetting
   // Display name of this group of settings, which comes from the associated template.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Unique identifier for the template used to create this group of settings. Read-only.
+  /**
+    * Unique identifier for the tenant-level groupSettingTemplates object that's been customized for this group-level
+    * settings object. Read-only.
+    */
   var templateId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Collection of name value pairs. Must contain and set all the settings defined in the template.
+  /**
+    * Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced
+    * groupSettingTemplates object.
+    */
   var values: js.UndefOr[js.Array[SettingValue]] = js.undefined
 }
 object GroupSetting {
@@ -42,6 +48,6 @@ object GroupSetting {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: SettingValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SettingValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

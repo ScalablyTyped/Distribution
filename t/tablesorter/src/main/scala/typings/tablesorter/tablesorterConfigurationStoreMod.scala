@@ -130,7 +130,7 @@ object tablesorterConfigurationStoreMod {
     
     var cssProcessing: String
     
-    var data: js.Object | js.Array[js.Array[js.Any]]
+    var data: js.Object | js.Array[js.Array[Any]]
     
     var dateFormat: String
     
@@ -306,7 +306,7 @@ object tablesorterConfigurationStoreMod {
       cssNoSort: String,
       cssNone: String,
       cssProcessing: String,
-      data: js.Object | js.Array[js.Array[js.Any]],
+      data: js.Object | js.Array[js.Array[Any]],
       dateFormat: String,
       dateRange: Double,
       debug: Boolean | String,
@@ -375,7 +375,7 @@ object tablesorterConfigurationStoreMod {
       
       inline def set$headerIndexed(value: js.Array[JQuery[HTMLElement]]): Self = StObject.set(x, "$headerIndexed", value.asInstanceOf[js.Any])
       
-      inline def set$headerIndexedVarargs(value: JQuery[HTMLElement]*): Self = StObject.set(x, "$headerIndexed", js.Array(value :_*))
+      inline def set$headerIndexedVarargs(value: JQuery[HTMLElement]*): Self = StObject.set(x, "$headerIndexed", js.Array(value*))
       
       inline def set$headers(value: JQuery[HTMLElement]): Self = StObject.set(x, "$headers", value.asInstanceOf[js.Any])
       
@@ -423,9 +423,9 @@ object tablesorterConfigurationStoreMod {
       
       inline def setCssProcessing(value: String): Self = StObject.set(x, "cssProcessing", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Object | js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object | js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
@@ -445,11 +445,11 @@ object tablesorterConfigurationStoreMod {
       
       inline def setHeaderContent(value: js.Array[String]): Self = StObject.set(x, "headerContent", value.asInstanceOf[js.Any])
       
-      inline def setHeaderContentVarargs(value: String*): Self = StObject.set(x, "headerContent", js.Array(value :_*))
+      inline def setHeaderContentVarargs(value: String*): Self = StObject.set(x, "headerContent", js.Array(value*))
       
       inline def setHeaderList(value: js.Array[HTMLElement]): Self = StObject.set(x, "headerList", value.asInstanceOf[js.Any])
       
-      inline def setHeaderListVarargs(value: HTMLElement*): Self = StObject.set(x, "headerList", js.Array(value :_*))
+      inline def setHeaderListVarargs(value: HTMLElement*): Self = StObject.set(x, "headerList", js.Array(value*))
       
       inline def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
       
@@ -479,7 +479,7 @@ object tablesorterConfigurationStoreMod {
       
       inline def setParsers(value: js.Array[Parser[TElement]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
       
-      inline def setParsersVarargs(value: Parser[TElement]*): Self = StObject.set(x, "parsers", js.Array(value :_*))
+      inline def setParsersVarargs(value: Parser[TElement]*): Self = StObject.set(x, "parsers", js.Array(value*))
       
       inline def setPointerClick(value: String): Self = StObject.set(x, "pointerClick", value.asInstanceOf[js.Any])
       
@@ -501,17 +501,17 @@ object tablesorterConfigurationStoreMod {
       
       inline def setSortAppend(value: js.Array[SortDefinition] | NumberDictionary[js.Array[RelativeSortDefinition]]): Self = StObject.set(x, "sortAppend", value.asInstanceOf[js.Any])
       
-      inline def setSortAppendVarargs(value: SortDefinition*): Self = StObject.set(x, "sortAppend", js.Array(value :_*))
+      inline def setSortAppendVarargs(value: SortDefinition*): Self = StObject.set(x, "sortAppend", js.Array(value*))
       
       inline def setSortForce(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortForce", value.asInstanceOf[js.Any])
       
-      inline def setSortForceVarargs(value: SortDefinition*): Self = StObject.set(x, "sortForce", js.Array(value :_*))
+      inline def setSortForceVarargs(value: SortDefinition*): Self = StObject.set(x, "sortForce", js.Array(value*))
       
       inline def setSortInitialOrder(value: SortOrder): Self = StObject.set(x, "sortInitialOrder", value.asInstanceOf[js.Any])
       
       inline def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
       
-      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
+      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value*))
       
       inline def setSortLocaleCompare(value: Boolean): Self = StObject.set(x, "sortLocaleCompare", value.asInstanceOf[js.Any])
       
@@ -531,7 +531,7 @@ object tablesorterConfigurationStoreMod {
       
       inline def setSortVars(value: js.Array[TableSorting]): Self = StObject.set(x, "sortVars", value.asInstanceOf[js.Any])
       
-      inline def setSortVarsVarargs(value: TableSorting*): Self = StObject.set(x, "sortVars", js.Array(value :_*))
+      inline def setSortVarsVarargs(value: TableSorting*): Self = StObject.set(x, "sortVars", js.Array(value*))
       
       inline def setStringTo(value: StringSorting): Self = StObject.set(x, "stringTo", value.asInstanceOf[js.Any])
       
@@ -565,7 +565,7 @@ object tablesorterConfigurationStoreMod {
       
       inline def setWidgets(value: js.Array[String]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
       
-      inline def setWidgetsVarargs(value: String*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+      inline def setWidgetsVarargs(value: String*): Self = StObject.set(x, "widgets", js.Array(value*))
       
       inline def setWidthFixed(value: Boolean): Self = StObject.set(x, "widthFixed", value.asInstanceOf[js.Any])
     }

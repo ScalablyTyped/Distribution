@@ -22,6 +22,6 @@ object ListFindingTypeStatsResponse {
     
     inline def setFindingTypeStatsUndefined: Self = StObject.set(x, "findingTypeStats", js.undefined)
     
-    inline def setFindingTypeStatsVarargs(value: FindingTypeStats*): Self = StObject.set(x, "findingTypeStats", js.Array(value :_*))
+    inline def setFindingTypeStatsVarargs(value: FindingTypeStats*): Self = StObject.set(x, "findingTypeStats", js.Array(value*))
   }
 }

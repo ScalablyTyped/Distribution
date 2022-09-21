@@ -10,21 +10,21 @@ object extendedPickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ExtendedPicker", "BaseExtendedPeoplePicker")
   @js.native
-  class BaseExtendedPeoplePicker protected ()
+  open class BaseExtendedPeoplePicker protected ()
     extends typings.officeUiFabricReact.extendedPeoplePickerMod.BaseExtendedPeoplePicker {
     def this(basePickerProps: IExtendedPeoplePickerProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/ExtendedPicker", "BaseExtendedPicker")
   @js.native
-  class BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */] protected ()
+  open class BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */] protected ()
     extends typings.officeUiFabricReact.baseExtendedPickerMod.BaseExtendedPicker[T, P] {
     def this(basePickerProps: P) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/ExtendedPicker", "ExtendedPeoplePicker")
   @js.native
-  class ExtendedPeoplePicker protected ()
+  open class ExtendedPeoplePicker protected ()
     extends typings.officeUiFabricReact.extendedPeoplePickerMod.ExtendedPeoplePicker {
     def this(basePickerProps: IExtendedPeoplePickerProps) = this()
   }

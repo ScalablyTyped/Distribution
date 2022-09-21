@@ -1,59 +1,31 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.babylonjs.BABYLON.Nullable
-import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.WebXREnterExitUI")
 @js.native
-/**
-  *
-  * @param scene babylon scene object to use
-  * @param options (read-only) version of the options passed to this UI
-  */
-/* private */ class WebXREnterExitUI ()
+open class WebXREnterExitUI protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXREnterExitUI {
-  
-  /* private */ /* CompleteClass */
-  var _activeButton: js.Any = js.native
-  
-  /* private */ /* CompleteClass */
-  var _buttons: js.Any = js.native
-  
-  /* private */ /* CompleteClass */
-  var _updateButtons: js.Any = js.native
-  
   /**
-    * Fired every time the active button is changed.
+    * Construct a new EnterExit UI class
     *
-    * When xr is entered via a button that launches xr that button will be the callback parameter
-    *
-    * When exiting xr the callback parameter will be null)
+    * @param _scene babylon scene object to use
+    * @param options (read-only) version of the options passed to this UI
     */
-  /* CompleteClass */
-  var activeButtonChangedObservable: typings.babylonjs.BABYLON.Observable[Nullable[typings.babylonjs.BABYLON.WebXREnterExitUIButton]] = js.native
+  def this(
+    _scene: typings.babylonjs.BABYLON.Scene,
+    /** version of the options passed to this UI */
+  options: typings.babylonjs.BABYLON.WebXREnterExitUIOptions
+  ) = this()
   
   /**
     * Releases all held resources
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
-  
-  /** version of the options passed to this UI */
-  /* CompleteClass */
-  var options: typings.babylonjs.BABYLON.WebXREnterExitUIOptions = js.native
-  
-  /**
-    * The HTML Div Element to which buttons are added.
-    */
-  /* CompleteClass */
-  override val overlay: HTMLDivElement = js.native
-  
-  /* private */ /* CompleteClass */
-  var scene: js.Any = js.native
 }
 /* static members */
 object WebXREnterExitUI {

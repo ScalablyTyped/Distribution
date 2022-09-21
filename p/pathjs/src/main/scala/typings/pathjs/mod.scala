@@ -98,35 +98,30 @@ object mod {
   
   trait IPathHistory extends StObject {
     
-    var initial: js.Any
+    var initial: Any
     
-    def listen(fallback: js.Any): Unit
+    def listen(fallback: Any): Unit
     
-    def popState(event: js.Any): Unit
+    def popState(event: Any): Unit
     
-    def pushState(state: js.Any, title: String, path: String): Unit
+    def pushState(state: Any, title: String, path: String): Unit
   }
   object IPathHistory {
     
-    inline def apply(
-      initial: js.Any,
-      listen: js.Any => Unit,
-      popState: js.Any => Unit,
-      pushState: (js.Any, String, String) => Unit
-    ): IPathHistory = {
+    inline def apply(initial: Any, listen: Any => Unit, popState: Any => Unit, pushState: (Any, String, String) => Unit): IPathHistory = {
       val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any], listen = js.Any.fromFunction1(listen), popState = js.Any.fromFunction1(popState), pushState = js.Any.fromFunction3(pushState))
       __obj.asInstanceOf[IPathHistory]
     }
     
     extension [Self <: IPathHistory](x: Self) {
       
-      inline def setInitial(value: js.Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      inline def setListen(value: js.Any => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      inline def setListen(value: Any => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
-      inline def setPopState(value: js.Any => Unit): Self = StObject.set(x, "popState", js.Any.fromFunction1(value))
+      inline def setPopState(value: Any => Unit): Self = StObject.set(x, "popState", js.Any.fromFunction1(value))
       
-      inline def setPushState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
+      inline def setPushState(value: (Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
     }
   }
   

@@ -15,13 +15,15 @@ trait Function extends StObject {
     * @param thisArg The object to be used as the this object.
     * @param argArray A set of arguments to be passed to the function.
     */
+  /* standard es5 */
   @JSName("apply")
-  def apply(thisArg: js.Any): js.Any = js.native
+  def apply(thisArg: Any): Any = js.native
   @JSName("apply")
-  def apply(thisArg: js.Any, argArray: js.Any): js.Any = js.native
+  def apply(thisArg: Any, argArray: Any): Any = js.native
   
   // Non-standard extensions
-  var arguments: js.Any = js.native
+  /* standard es5 */
+  var arguments: Any = js.native
   
   /**
     * For a given function, creates a bound function that has the same body as the original function.
@@ -29,15 +31,18 @@ trait Function extends StObject {
     * @param thisArg An object to which the this keyword can refer inside the new function.
     * @param argArray A list of arguments to be passed to the new function.
     */
-  def bind(thisArg: js.Any, argArray: js.Any*): js.Any = js.native
+  /* standard es5 */
+  def bind(thisArg: Any, argArray: Any*): Any = js.native
   
   /**
     * Calls a method of an object, substituting another object for the current object.
     * @param thisArg The object to be used as the current object.
     * @param argArray A list of arguments to be passed to the method.
     */
-  def call(thisArg: js.Any, argArray: js.Any*): js.Any = js.native
+  /* standard es5 */
+  def call(thisArg: Any, argArray: Any*): Any = js.native
   
+  /* standard es5 */
   var caller: js.Function = js.native
   
   /**
@@ -47,13 +52,16 @@ trait Function extends StObject {
     * A constructor function can control which objects are recognized as its instances by
     * 'instanceof' by overriding this method.
     */
+  /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.hasInstance)
-  var hasInstance: js.Function1[/* value */ js.Any, scala.Boolean] = js.native
+  var hasInstance: js.Function1[/* value */ Any, scala.Boolean] = js.native
   
+  /* standard es5 */
   val length: Double = js.native
   
   /**
     * Returns the name of the function. Function names are read-only and can not be changed.
     */
+  /* standard es2015.core */
   val name: java.lang.String = js.native
 }

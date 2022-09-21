@@ -10,10 +10,10 @@ Webpack block for style loader, file loader, url loader and friends.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/assets |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 114116 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4669.0 |
+| # stars            | 2983.0 |
 
 ## Links
 - [Homepage](https://github.com/andywer/webpack-blocks#readme)

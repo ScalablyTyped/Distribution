@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new ProcessCredentials object.
   */
-class ProcessCredentials ()
+open class ProcessCredentials ()
   extends typings.awsSdk.coreMod.ProcessCredentials {
   def this(options: ProcessCredentialsOptions) = this()
 }

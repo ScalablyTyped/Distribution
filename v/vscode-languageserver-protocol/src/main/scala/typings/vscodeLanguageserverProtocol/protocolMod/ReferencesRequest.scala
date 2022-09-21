@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeJsonrpc.mod.ProgressType
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashreferences
 import typings.vscodeLanguageserverTypes.mod.Location
@@ -10,16 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ReferencesRequest {
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "ReferencesRequest.method")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "ReferencesRequest.messageDirection")
+  @js.native
+  val messageDirection: MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "ReferencesRequest.method")
   @js.native
   val method: textDocumentSlashreferences = js.native
   
-  /** @deprecated Use ReferencesRequest.type */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "ReferencesRequest.resultType")
-  @js.native
-  val resultType: ProgressType[js.Array[Location]] = js.native
-  
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "ReferencesRequest.type")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "ReferencesRequest.type")
   @js.native
   val `type`: ProtocolRequestType[
     ReferenceParams, 

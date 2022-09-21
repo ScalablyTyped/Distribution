@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Sections extends StObject {
   
   def Add(): Section = js.native
-  def Add(Range: js.Any): Section = js.native
-  def Add(Range: js.Any, Start: js.Any): Section = js.native
-  def Add(Range: Unit, Start: js.Any): Section = js.native
+  def Add(Range: Any): Section = js.native
+  def Add(Range: Any, Start: Any): Section = js.native
+  def Add(Range: Unit, Start: Any): Section = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -26,7 +26,7 @@ trait Sections extends StObject {
   
   var PageSetup: typings.activexWord.Word.PageSetup = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.Sections_typekey")
   var WordDotSections_typekey: Sections = js.native

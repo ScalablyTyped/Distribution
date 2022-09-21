@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Table
   extends StObject
-     with Parent
-     with BlockContent {
+     with Parent {
   
-  var align: js.UndefOr[js.Array[AlignType]] = js.undefined
+  var align: js.UndefOr[js.Array[AlignType] | Null] = js.undefined
   
   @JSName("children")
   var children_Table: js.Array[TableContent]
@@ -30,13 +29,15 @@ object Table {
     
     inline def setAlign(value: js.Array[AlignType]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
+    inline def setAlignNull: Self = StObject.set(x, "align", null)
+    
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAlignVarargs(value: AlignType*): Self = StObject.set(x, "align", js.Array(value :_*))
+    inline def setAlignVarargs(value: AlignType*): Self = StObject.set(x, "align", js.Array(value*))
     
     inline def setChildren(value: js.Array[TableContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: TableContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TableContent*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setType(value: table): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

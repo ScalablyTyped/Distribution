@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-readdir-recursive
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Recursively read a directory
@@ -10,10 +10,10 @@ Recursively read a directory
 | ------------------ | :-------------: |
 | Full name          | fs-readdir-recursive |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 264 |
-| # downloads        | 111145241 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2877158333333334E7 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/fs-utils/fs-readdir-recursive#readme)

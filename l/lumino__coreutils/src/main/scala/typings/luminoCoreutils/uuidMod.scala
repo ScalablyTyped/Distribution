@@ -6,24 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object uuidMod {
   
-  object UUID {
-    
-    @JSImport("@lumino/coreutils/types/uuid", "UUID")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * A function which generates UUID v4 identifiers.
-      *
-      * @returns A new UUID v4 string.
-      *
-      * #### Notes
-      * This implementation complies with RFC 4122.
-      *
-      * This uses `Random.getRandomValues()` for random bytes, which in
-      * turn will use the underlying `crypto` module of the platform if
-      * it is available. The fallback for randomness is `Math.random`.
-      */
-    inline def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
-  }
+  @JSImport("@lumino/coreutils/types/uuid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def uuid4Factory(getRandomValues: js.Function1[/* bytes */ js.typedarray.Uint8Array, Unit]): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4Factory")(getRandomValues.asInstanceOf[js.Any]).asInstanceOf[js.Function0[String]]
 }

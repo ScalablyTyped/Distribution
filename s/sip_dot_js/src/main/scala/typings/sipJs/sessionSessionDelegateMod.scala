@@ -1,7 +1,7 @@
 package typings.sipJs
 
-import typings.sipJs.ackMod.IncomingAckRequest
 import typings.sipJs.inviteMod.IncomingInviteRequest
+import typings.sipJs.methodsAckMod.IncomingAckRequest
 import typings.sipJs.methodsByeMod.IncomingByeRequest
 import typings.sipJs.methodsInfoMod.IncomingInfoRequest
 import typings.sipJs.methodsMessageMod.IncomingMessageRequest

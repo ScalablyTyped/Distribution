@@ -10,10 +10,10 @@ Winston logger for Koa
 | ------------------ | :-------------: |
 | Full name          | koa-logger-winston |
 | Keywords           | logging, koa, winston, async |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 30710 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2275.3333333333335 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/selbyk/koa-logger-winston#readme)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vis", "DataView")
 @js.native
-class DataView[T /* <: DataItem | DataGroup */] protected () extends StObject {
+open class DataView[T /* <: DataItem | DataGroup */] protected () extends StObject {
   def this(items: js.Array[T]) = this()
   
   var length: Double = js.native

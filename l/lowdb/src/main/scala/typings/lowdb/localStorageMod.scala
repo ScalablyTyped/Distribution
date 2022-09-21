@@ -1,29 +1,25 @@
 package typings.lowdb
 
-import org.scalablytyped.runtime.Shortcut
-import typings.lowdb.mod.AdapterOptions
-import typings.lowdb.mod.AdapterSync
+import typings.lowdb.lowSyncMod.SyncAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object localStorageMod extends Shortcut {
+object localStorageMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("lowdb/adapters/LocalStorage", JSImport.Namespace)
+  @JSImport("lowdb/lib/adapters/LocalStorage", "LocalStorage")
   @js.native
-  class ^[SchemaT] protected ()
+  open class LocalStorage[T] protected ()
     extends StObject
-       with AdapterSync[SchemaT] {
-    def this(source: String) = this()
-    def this(source: String, options: AdapterOptions[SchemaT]) = this()
+       with SyncAdapter[T] {
+    def this(key: String) = this()
+    
+    /* private */ var `private`: Any = js.native
+    
+    /* CompleteClass */
+    override def read(): T | Null = js.native
+    
+    /* CompleteClass */
+    override def write(data: T): Unit = js.native
   }
-  @JSImport("lowdb/adapters/LocalStorage", JSImport.Namespace)
-  @js.native
-  val ^ : AdapterSync[js.Any] = js.native
-  
-  type _To = AdapterSync[js.Any]
-  
-  /* This means you don't have to write `^`, but can instead just say `localStorageMod.foo` */
-  override def _to: AdapterSync[js.Any] = ^
 }

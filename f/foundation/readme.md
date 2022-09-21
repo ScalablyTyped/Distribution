@@ -10,10 +10,10 @@ You may also want to checkout:
 | ------------------ | :-------------: |
 | Full name          | foundation |
 | Keywords           | zurb, foundation, stylus, express |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 47854 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7617.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/blai/foundation#readme)

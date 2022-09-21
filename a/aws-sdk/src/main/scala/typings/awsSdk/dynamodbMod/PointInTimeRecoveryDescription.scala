@@ -9,15 +9,15 @@ trait PointInTimeRecoveryDescription extends StObject {
   /**
     * Specifies the earliest point in time you can restore your table to. You can restore your table to any point in time during the last 35 days. 
     */
-  var EarliestRestorableDateTime: js.UndefOr[Date] = js.undefined
+  var EarliestRestorableDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  LatestRestorableDateTime is typically 5 minutes before the current time. 
     */
-  var LatestRestorableDateTime: js.UndefOr[Date] = js.undefined
+  var LatestRestorableDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The current state of point in time recovery:    ENABLING - Point in time recovery is being enabled.    ENABLED - Point in time recovery is enabled.    DISABLED - Point in time recovery is disabled.  
+    * The current state of point in time recovery:    ENABLED - Point in time recovery is enabled.    DISABLED - Point in time recovery is disabled.  
     */
   var PointInTimeRecoveryStatus: js.UndefOr[typings.awsSdk.dynamodbMod.PointInTimeRecoveryStatus] = js.undefined
 }
@@ -30,11 +30,11 @@ object PointInTimeRecoveryDescription {
   
   extension [Self <: PointInTimeRecoveryDescription](x: Self) {
     
-    inline def setEarliestRestorableDateTime(value: Date): Self = StObject.set(x, "EarliestRestorableDateTime", value.asInstanceOf[js.Any])
+    inline def setEarliestRestorableDateTime(value: js.Date): Self = StObject.set(x, "EarliestRestorableDateTime", value.asInstanceOf[js.Any])
     
     inline def setEarliestRestorableDateTimeUndefined: Self = StObject.set(x, "EarliestRestorableDateTime", js.undefined)
     
-    inline def setLatestRestorableDateTime(value: Date): Self = StObject.set(x, "LatestRestorableDateTime", value.asInstanceOf[js.Any])
+    inline def setLatestRestorableDateTime(value: js.Date): Self = StObject.set(x, "LatestRestorableDateTime", value.asInstanceOf[js.Any])
     
     inline def setLatestRestorableDateTimeUndefined: Self = StObject.set(x, "LatestRestorableDateTime", js.undefined)
     

@@ -13,8 +13,7 @@ import typings.abstractLeveldown.mod.AbstractOptions
 import typings.abstractLeveldown.mod.ErrorCallback
 import typings.abstractLeveldown.mod.ErrorKeyValueCallback
 import typings.abstractLeveldown.mod.ErrorValueCallback
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("leveldown", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with LevelDown {
     def this(location: String) = this()
@@ -35,7 +34,7 @@ object mod extends Shortcut {
   
   type Bytes = String | Buffer
   
-  type ErrorSizeCallback = js.Function2[/* err */ js.UndefOr[Error], /* size */ Double, Unit]
+  type ErrorSizeCallback = js.Function2[/* err */ js.UndefOr[js.Error], /* size */ Double, Unit]
   
   @js.native
   trait LevelDown
@@ -44,7 +43,7 @@ object mod extends Shortcut {
     
     def approximateSize(start: Bytes, end: Bytes, cb: ErrorSizeCallback): Unit = js.native
     
-    def batch(array: js.Array[AbstractBatch[js.Any, js.Any]], options: LevelDownBatchOptions, cb: ErrorCallback): AbstractChainedBatch[Bytes, Bytes] = js.native
+    def batch(array: js.Array[AbstractBatch[Any, Any]], options: LevelDownBatchOptions, cb: ErrorCallback): AbstractChainedBatch[Bytes, Bytes] = js.native
     
     def clear(cb: ErrorCallback): Unit = js.native
     def clear(options: LevelDownClearOptions, cb: ErrorCallback): Unit = js.native
@@ -192,25 +191,25 @@ object mod extends Shortcut {
     extends StObject
        with AbstractIterator[Bytes, Bytes] {
     
-    var binding: js.Any
+    var binding: Any
     
-    var cache: js.Any
+    var cache: Any
     
-    var fastFuture: js.Any
+    var fastFuture: Any
     
-    var finished: js.Any
+    var finished: Any
     
     def seek(key: Bytes): Unit
   }
   object LevelDownIterator {
     
     inline def apply(
-      binding: js.Any,
-      cache: js.Any,
+      binding: Any,
+      cache: Any,
       db: AbstractLevelDOWN[Bytes, Bytes],
       end: ErrorCallback => Unit,
-      fastFuture: js.Any,
-      finished: js.Any,
+      fastFuture: Any,
+      finished: Any,
       next: ErrorKeyValueCallback[Bytes, Bytes] => LevelDownIterator,
       seek: Bytes => Unit
     ): LevelDownIterator = {
@@ -220,13 +219,13 @@ object mod extends Shortcut {
     
     extension [Self <: LevelDownIterator](x: Self) {
       
-      inline def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+      inline def setBinding(value: Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
-      inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      inline def setFastFuture(value: js.Any): Self = StObject.set(x, "fastFuture", value.asInstanceOf[js.Any])
+      inline def setFastFuture(value: Any): Self = StObject.set(x, "fastFuture", value.asInstanceOf[js.Any])
       
-      inline def setFinished(value: js.Any): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+      inline def setFinished(value: Any): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
       
       inline def setSeek(value: Bytes => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     }

@@ -12,6 +12,11 @@ trait ErrorDetails extends StObject {
   var code: ErrorCode
   
   /**
+    *  A list of detailed errors. 
+    */
+  var details: js.UndefOr[DetailedErrors] = js.undefined
+  
+  /**
     * The error message.
     */
   var message: ErrorMessage
@@ -26,6 +31,12 @@ object ErrorDetails {
   extension [Self <: ErrorDetails](x: Self) {
     
     inline def setCode(value: ErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setDetails(value: DetailedErrors): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    
+    inline def setDetailsVarargs(value: DetailedError*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

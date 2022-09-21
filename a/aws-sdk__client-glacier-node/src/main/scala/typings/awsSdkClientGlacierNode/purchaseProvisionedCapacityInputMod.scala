@@ -8,5 +8,5 @@ object purchaseProvisionedCapacityInputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/PurchaseProvisionedCapacityInput", "PurchaseProvisionedCapacityInput")
   @js.native
-  val PurchaseProvisionedCapacityInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PurchaseProvisionedCapacityInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,9 +10,9 @@ The 1kb MV* library for building modular web applications.
 | Full name          | riotjs |
 | Keywords           | MVP, MVC, framework, library, micro |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 5996 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 111.33333333333333 |
+| # stars            | 14690.0 |
 
 ## Links
 - [Homepage](https://muut.com/riotjs)

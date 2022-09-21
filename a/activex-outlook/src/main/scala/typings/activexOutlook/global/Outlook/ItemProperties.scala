@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.ItemProperties")
 @js.native
-/* private */ class ItemProperties ()
+/* private */ open class ItemProperties ()
   extends StObject
      with typings.activexOutlook.Outlook.ItemProperties

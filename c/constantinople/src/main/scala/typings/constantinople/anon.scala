@@ -12,11 +12,11 @@ object anon {
     
     var constant: `true`
     
-    var result: js.Any
+    var result: Any
   }
   object Constant {
     
-    inline def apply(result: js.Any): Constant = {
+    inline def apply(result: Any): Constant = {
       val __obj = js.Dynamic.literal(constant = true, result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Constant]
     }
@@ -25,7 +25,7 @@ object anon {
       
       inline def setConstant(value: `true`): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.CartoDB")
 @js.native
-class CartoDB protected () extends XYZ {
+open class CartoDB protected () extends XYZ {
   /**
     * @classdesc
     * Layer source for the CartoDB tiles.

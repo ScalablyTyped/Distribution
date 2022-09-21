@@ -32,16 +32,31 @@ object surveyLocalization {
   
   inline def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
   
-  inline def getCurrentStrings(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentStrings")().asInstanceOf[js.Any]
+  inline def getCurrentStrings(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentStrings")().asInstanceOf[Any]
+  inline def getCurrentStrings(locale: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentStrings")(locale.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getLocaleStrings(loc: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleStrings")(loc.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getLocaleStrings(loc: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleStrings")(loc.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getLocales(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocales")().asInstanceOf[js.Array[String]]
+  inline def getLocales(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocales")().asInstanceOf[Any]
+  inline def getLocales(removeDefaultLoc: Boolean): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocales")(removeDefaultLoc.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getString(strName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getString")(strName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getString(strName: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getString")(strName.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getString(strName: String, locale: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getString")(strName.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("survey-knockout", "surveyLocalization.localeNames")
+  @js.native
+  def localeNames: Any = js.native
+  inline def localeNames_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localeNames")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "surveyLocalization.locales")
+  @js.native
+  def locales: Any = js.native
+  inline def locales_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locales")(x.asInstanceOf[js.Any])
+  
+  inline def onGetExternalString(name: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("onGetExternalString")(name.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("survey-knockout", "surveyLocalization.supportedLocales")
   @js.native
-  def supportedLocales: js.Array[js.Any] = js.native
-  inline def supportedLocales_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedLocales")(x.asInstanceOf[js.Any])
+  def supportedLocales: Any = js.native
+  inline def supportedLocales_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedLocales")(x.asInstanceOf[js.Any])
 }

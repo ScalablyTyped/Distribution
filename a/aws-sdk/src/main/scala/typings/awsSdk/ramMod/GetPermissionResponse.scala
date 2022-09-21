@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPermissionResponse extends StObject {
   
   /**
-    * Information about the permission.
+    * An object that contains information about the permission.
     */
   var permission: js.UndefOr[ResourceSharePermissionDetail] = js.undefined
 }

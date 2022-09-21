@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("socketcluster-client", "AGClientSocket")
   @js.native
-  class AGClientSocket protected ()
+  open class AGClientSocket protected ()
     extends typings.socketclusterClient.clientsocketMod.^ {
     def this(opts: ClientOptions) = this()
   }

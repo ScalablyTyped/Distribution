@@ -14,8 +14,8 @@ trait ValueRange extends StObject {
   var majorDimension: js.UndefOr[String] = js.undefined
   
   /**
-    * The range the values cover, in A1 notation. For output, this range indicates the entire requested range, even though the values will exclude trailing rows and columns. When
-    * appending values, this field represents the range to search for a table, after which values will be appended.
+    * The range the values cover, in [A1 notation](/sheets/api/guides/concepts#cell). For output, this range indicates the entire requested range, even though the values will exclude
+    * trailing rows and columns. When appending values, this field represents the range to search for a table, after which values will be appended.
     */
   var range: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ trait ValueRange extends StObject {
     * inner array corresponds with one cell. For output, empty trailing rows and columns will not be included. For input, supported value types are: bool, string, and double. Null values
     * will be skipped. To set a cell to an empty value, set the string value to an empty string.
     */
-  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var values: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
 }
 object ValueRange {
   
@@ -43,10 +43,10 @@ object ValueRange {
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

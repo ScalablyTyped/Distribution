@@ -29,18 +29,18 @@ object anon {
   
   trait Dhparam extends StObject {
     
-    var dhparam: js.Any
+    var dhparam: Any
   }
   object Dhparam {
     
-    inline def apply(dhparam: js.Any): Dhparam = {
+    inline def apply(dhparam: Any): Dhparam = {
       val __obj = js.Dynamic.literal(dhparam = dhparam.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dhparam]
     }
     
     extension [Self <: Dhparam](x: Self) {
       
-      inline def setDhparam(value: js.Any): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
+      inline def setDhparam(value: Any): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,56 +80,56 @@ object anon {
   
   trait Modulus extends StObject {
     
-    var modulus: js.Any
+    var modulus: Any
   }
   object Modulus {
     
-    inline def apply(modulus: js.Any): Modulus = {
+    inline def apply(modulus: Any): Modulus = {
       val __obj = js.Dynamic.literal(modulus = modulus.asInstanceOf[js.Any])
       __obj.asInstanceOf[Modulus]
     }
     
     extension [Self <: Modulus](x: Self) {
       
-      inline def setModulus(value: js.Any): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
+      inline def setModulus(value: Any): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
     }
   }
   
   trait Pkcs12 extends StObject {
     
-    var pkcs12: js.Any
+    var pkcs12: Any
   }
   object Pkcs12 {
     
-    inline def apply(pkcs12: js.Any): Pkcs12 = {
+    inline def apply(pkcs12: Any): Pkcs12 = {
       val __obj = js.Dynamic.literal(pkcs12 = pkcs12.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pkcs12]
     }
     
     extension [Self <: Pkcs12](x: Self) {
       
-      inline def setPkcs12(value: js.Any): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
+      inline def setPkcs12(value: Any): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
     }
   }
   
   trait Prime extends StObject {
     
-    var prime: js.Any
+    var prime: Any
     
-    var size: js.Any
+    var size: Any
   }
   object Prime {
     
-    inline def apply(prime: js.Any, size: js.Any): Prime = {
+    inline def apply(prime: Any, size: Any): Prime = {
       val __obj = js.Dynamic.literal(prime = prime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Prime]
     }
     
     extension [Self <: Prime](x: Self) {
       
-      inline def setPrime(value: js.Any): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
+      inline def setPrime(value: Any): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   

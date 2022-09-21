@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "PrefixFilter")
 @js.native
-class PrefixFilter protected ()
+open class PrefixFilter protected ()
   extends StObject
      with Filter {
   /*

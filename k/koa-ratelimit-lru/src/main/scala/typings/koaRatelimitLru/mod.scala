@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def apply(options: Options): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-ratelimit-lru", JSImport.Namespace)
   @js.native
@@ -34,7 +34,7 @@ object mod {
     // lru-cache ?
     val rate: js.UndefOr[Double] = js.undefined
     
-    val store: js.UndefOr[js.Any] = js.undefined
+    val store: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -73,7 +73,7 @@ object mod {
       
       inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
       inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }

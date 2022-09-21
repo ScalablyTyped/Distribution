@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "Button")
 @js.native
-class Button protected ()
+open class Button protected ()
   extends StObject
      with EventSource {
   def this(options: Element) = this()
@@ -23,6 +23,8 @@ class Button protected ()
   
   var currentState: ButtonState = js.native
   
+  def destroy(): Unit = js.native
+  
   def disable(): Unit = js.native
   
   var element: typings.std.Element = js.native
@@ -33,7 +35,11 @@ class Button protected ()
   
   var fadeLength: Double = js.native
   
-  def getHandler(eventName: ButtonEventName): js.Function2[/* source */ ButtonEventName, /* repeated */ js.Any, Unit] = js.native
+  def getHandler(eventName: ButtonEventName): js.Function2[/* source */ ButtonEventName, /* repeated */ Any, Unit] = js.native
+  
+  def notifyGroupEnter(): Unit = js.native
+  
+  def notifyGroupExit(): Unit = js.native
   
   def raiseEvent(eventName: ButtonEventName, eventArgs: js.Object): Unit = js.native
   

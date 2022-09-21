@@ -51,7 +51,7 @@ trait OlapXmlaDataSource extends StObject {
   /**
     * Retrieves the currently loaded catalogs in the data source.
     */
-  def catalogs(): js.Array[js.Any]
+  def catalogs(): js.Array[Any]
   
   /**
     * Clears all pending changes since last time the update() method is called.
@@ -71,7 +71,7 @@ trait OlapXmlaDataSource extends StObject {
   /**
     * Returns the items in the column axis.
     */
-  def columnAxis(): js.Array[js.Any]
+  def columnAxis(): js.Array[Any]
   
   /**
     * Retrieves the current cube in the data source.
@@ -81,7 +81,7 @@ trait OlapXmlaDataSource extends StObject {
   /**
     * Retrieves the currently loaded cubes in the data source.
     */
-  def cubes(): js.Array[js.Any]
+  def cubes(): js.Array[Any]
   
   /**
     * Sets a tuple member to be expanded next time the update() method is called.
@@ -96,7 +96,7 @@ trait OlapXmlaDataSource extends StObject {
   /**
     * Returns the items in the filter axis.
     */
-  def filters(): js.Array[js.Any]
+  def filters(): js.Array[Any]
   
   /**
     * Gets the first element of the specified elementType which matches the specified predicate or null if there is no such element found.
@@ -126,7 +126,7 @@ trait OlapXmlaDataSource extends StObject {
     *
     * @param hierarchyUniqueName the unique name of the hierarchy whose active filter members are returned.
     */
-  def getFilterMemberNames(hierarchyUniqueName: String): js.Array[js.Any]
+  def getFilterMemberNames(hierarchyUniqueName: String): js.Array[Any]
   
   /**
     * Returns $.ig.Hierarchy object for the specified unique name.
@@ -205,12 +205,12 @@ trait OlapXmlaDataSource extends StObject {
   /**
     * Retrieves the currently loaded measure groups in the data source.
     */
-  def measureGroups(): js.Array[js.Any]
+  def measureGroups(): js.Array[Any]
   
   /**
     * Returns the items in the measures axis.
     */
-  def measures(): js.Array[js.Any]
+  def measures(): js.Array[Any]
   
   /**
     * Returns the fully loaded metadata tree.
@@ -268,7 +268,7 @@ trait OlapXmlaDataSource extends StObject {
   /**
     * Returns the items in the row axis.
     */
-  def rowAxis(): js.Array[js.Any]
+  def rowAxis(): js.Array[Any]
   
   /**
     * Sets the current catalog for the data source and updates the cubes() and catalog() properties.
@@ -321,18 +321,18 @@ object OlapXmlaDataSource {
     addMeasureItem: js.Object => Unit,
     addRowItem: js.Object => Unit,
     catalog: () => js.Object,
-    catalogs: () => js.Array[js.Any],
+    catalogs: () => js.Array[Any],
     clearPendingChanges: () => Unit,
     collapseTupleMember: (String, Double, Double) => Unit,
-    columnAxis: () => js.Array[js.Any],
+    columnAxis: () => js.Array[Any],
     cube: () => js.Object,
-    cubes: () => js.Array[js.Any],
+    cubes: () => js.Array[Any],
     expandTupleMember: (String, Double, Double) => Unit,
-    filters: () => js.Array[js.Any],
+    filters: () => js.Array[Any],
     getCoreElement: (js.Function, js.Object) => js.Object,
     getCoreElements: (js.Function, js.Object) => js.Object,
     getDimension: String => js.Object,
-    getFilterMemberNames: String => js.Array[js.Any],
+    getFilterMemberNames: String => js.Array[Any],
     getHierarchy: String => js.Object,
     getLevel: String => js.Object,
     getMeasure: String => js.Object,
@@ -345,8 +345,8 @@ object OlapXmlaDataSource {
     isModified: () => Boolean,
     isUpdating: () => Boolean,
     measureGroup: () => js.Object,
-    measureGroups: () => js.Array[js.Any],
-    measures: () => js.Array[js.Any],
+    measureGroups: () => js.Array[Any],
+    measures: () => js.Array[Any],
     metadataTree: () => js.Object,
     removeAllFilterMembers: String => Unit,
     removeColumnItem: js.Object => Unit,
@@ -355,7 +355,7 @@ object OlapXmlaDataSource {
     removeMeasureItem: js.Object => Unit,
     removeRowItem: js.Object => Unit,
     result: () => js.Object,
-    rowAxis: () => js.Array[js.Any],
+    rowAxis: () => js.Array[Any],
     setCatalog: String => js.Object,
     setCube: String => js.Object,
     setMeasureGroup: String => js.Object,
@@ -381,21 +381,21 @@ object OlapXmlaDataSource {
     
     inline def setCatalog(value: () => js.Object): Self = StObject.set(x, "catalog", js.Any.fromFunction0(value))
     
-    inline def setCatalogs(value: () => js.Array[js.Any]): Self = StObject.set(x, "catalogs", js.Any.fromFunction0(value))
+    inline def setCatalogs(value: () => js.Array[Any]): Self = StObject.set(x, "catalogs", js.Any.fromFunction0(value))
     
     inline def setClearPendingChanges(value: () => Unit): Self = StObject.set(x, "clearPendingChanges", js.Any.fromFunction0(value))
     
     inline def setCollapseTupleMember(value: (String, Double, Double) => Unit): Self = StObject.set(x, "collapseTupleMember", js.Any.fromFunction3(value))
     
-    inline def setColumnAxis(value: () => js.Array[js.Any]): Self = StObject.set(x, "columnAxis", js.Any.fromFunction0(value))
+    inline def setColumnAxis(value: () => js.Array[Any]): Self = StObject.set(x, "columnAxis", js.Any.fromFunction0(value))
     
     inline def setCube(value: () => js.Object): Self = StObject.set(x, "cube", js.Any.fromFunction0(value))
     
-    inline def setCubes(value: () => js.Array[js.Any]): Self = StObject.set(x, "cubes", js.Any.fromFunction0(value))
+    inline def setCubes(value: () => js.Array[Any]): Self = StObject.set(x, "cubes", js.Any.fromFunction0(value))
     
     inline def setExpandTupleMember(value: (String, Double, Double) => Unit): Self = StObject.set(x, "expandTupleMember", js.Any.fromFunction3(value))
     
-    inline def setFilters(value: () => js.Array[js.Any]): Self = StObject.set(x, "filters", js.Any.fromFunction0(value))
+    inline def setFilters(value: () => js.Array[Any]): Self = StObject.set(x, "filters", js.Any.fromFunction0(value))
     
     inline def setGetCoreElement(value: (js.Function, js.Object) => js.Object): Self = StObject.set(x, "getCoreElement", js.Any.fromFunction2(value))
     
@@ -403,7 +403,7 @@ object OlapXmlaDataSource {
     
     inline def setGetDimension(value: String => js.Object): Self = StObject.set(x, "getDimension", js.Any.fromFunction1(value))
     
-    inline def setGetFilterMemberNames(value: String => js.Array[js.Any]): Self = StObject.set(x, "getFilterMemberNames", js.Any.fromFunction1(value))
+    inline def setGetFilterMemberNames(value: String => js.Array[Any]): Self = StObject.set(x, "getFilterMemberNames", js.Any.fromFunction1(value))
     
     inline def setGetHierarchy(value: String => js.Object): Self = StObject.set(x, "getHierarchy", js.Any.fromFunction1(value))
     
@@ -429,9 +429,9 @@ object OlapXmlaDataSource {
     
     inline def setMeasureGroup(value: () => js.Object): Self = StObject.set(x, "measureGroup", js.Any.fromFunction0(value))
     
-    inline def setMeasureGroups(value: () => js.Array[js.Any]): Self = StObject.set(x, "measureGroups", js.Any.fromFunction0(value))
+    inline def setMeasureGroups(value: () => js.Array[Any]): Self = StObject.set(x, "measureGroups", js.Any.fromFunction0(value))
     
-    inline def setMeasures(value: () => js.Array[js.Any]): Self = StObject.set(x, "measures", js.Any.fromFunction0(value))
+    inline def setMeasures(value: () => js.Array[Any]): Self = StObject.set(x, "measures", js.Any.fromFunction0(value))
     
     inline def setMetadataTree(value: () => js.Object): Self = StObject.set(x, "metadataTree", js.Any.fromFunction0(value))
     
@@ -449,7 +449,7 @@ object OlapXmlaDataSource {
     
     inline def setResult(value: () => js.Object): Self = StObject.set(x, "result", js.Any.fromFunction0(value))
     
-    inline def setRowAxis(value: () => js.Array[js.Any]): Self = StObject.set(x, "rowAxis", js.Any.fromFunction0(value))
+    inline def setRowAxis(value: () => js.Array[Any]): Self = StObject.set(x, "rowAxis", js.Any.fromFunction0(value))
     
     inline def setSetCatalog(value: String => js.Object): Self = StObject.set(x, "setCatalog", js.Any.fromFunction1(value))
     

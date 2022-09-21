@@ -2,8 +2,8 @@ package typings.reactMdStates
 
 import typings.react.mod.ReactElement
 import typings.reactMdStates.typesMod.RippleState
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
 import typings.reactMdTransition.typesMod.TransitionTimeout
-import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object rippleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Ripple(hasClassNamePropClassNamesPropTimeoutRippleEnteredExited: RippleProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(hasClassNamePropClassNamesPropTimeoutRippleEnteredExited.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Ripple(hasClassNamePropClassNamesPropTimeoutRippleEnteredExited: RippleProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(hasClassNamePropClassNamesPropTimeoutRippleEnteredExited.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait RippleProps extends StObject {
     

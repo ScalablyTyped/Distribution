@@ -18,7 +18,7 @@ trait Characters extends StObject {
   
   val Last: Range
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Characters_typekey")
   var WordDotCharacters_typekey: Characters
@@ -32,7 +32,7 @@ object Characters {
     First: Range,
     Item: Double => Range,
     Last: Range,
-    Parent: js.Any,
+    Parent: Any,
     WordDotCharacters_typekey: Characters
   ): Characters = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], First = First.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Last = Last.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object Characters {
     
     inline def setLast(value: Range): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotCharacters_typekey(value: Characters): Self = StObject.set(x, "Word.Characters_typekey", value.asInstanceOf[js.Any])
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.LatLngBounds")
 @js.native
-class LatLngBounds protected ()
+open class LatLngBounds protected ()
   extends StObject
      with typings.navermaps.naver.maps.LatLngBounds {
   def this(sw: typings.navermaps.naver.maps.LatLng, ne: typings.navermaps.naver.maps.LatLng) = this()

@@ -10,7 +10,7 @@ trait CommandEffect extends StObject {
   
   var Command: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.CommandEffect_typekey")
   var PowerPointDotCommandEffect_typekey: CommandEffect
@@ -24,7 +24,7 @@ object CommandEffect {
   inline def apply(
     Application: Application,
     Command: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotCommandEffect_typekey: CommandEffect,
     Type: MsoAnimCommandType,
     bookmark: String
@@ -42,7 +42,7 @@ object CommandEffect {
     
     inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotCommandEffect_typekey(value: CommandEffect): Self = StObject.set(x, "PowerPoint.CommandEffect_typekey", value.asInstanceOf[js.Any])
     

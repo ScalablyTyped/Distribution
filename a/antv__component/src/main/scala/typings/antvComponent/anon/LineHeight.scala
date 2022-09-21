@@ -6,119 +6,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LineHeight extends StObject {
   
-  var backgroundColor: Unit
+  var fill: String
   
-  var borderRadius: Unit
+  var fontFamily: String
   
-  var boxShadow: Unit
+  var fontSize: Double
   
-  var color: Unit
+  var fontWeight: String
   
-  var display: Unit
+  var lineHeight: Double
   
-  var float: Unit
+  var textAlign: String
   
-  var fontFamily: Unit
-  
-  var fontSize: Unit
-  
-  var height: Unit
-  
-  var lineHeight: Unit
-  
-  var listStyleType: String
-  
-  var margin: Unit
-  
-  var marginBottom: String
-  
-  var marginLeft: Unit
-  
-  var marginRight: Unit
-  
-  var padding: Unit
-  
-  var position: Unit
-  
-  var transition: Unit
-  
-  var visibility: Unit
-  
-  var width: Unit
-  
-  var zIndex: Unit
+  var textBaseline: String
 }
 object LineHeight {
   
   inline def apply(
-    backgroundColor: Unit,
-    borderRadius: Unit,
-    boxShadow: Unit,
-    color: Unit,
-    display: Unit,
-    float: Unit,
-    fontFamily: Unit,
-    fontSize: Unit,
-    height: Unit,
-    lineHeight: Unit,
-    listStyleType: String,
-    margin: Unit,
-    marginBottom: String,
-    marginLeft: Unit,
-    marginRight: Unit,
-    padding: Unit,
-    position: Unit,
-    transition: Unit,
-    visibility: Unit,
-    width: Unit,
-    zIndex: Unit
+    fill: String,
+    fontFamily: String,
+    fontSize: Double,
+    fontWeight: String,
+    lineHeight: Double,
+    textAlign: String,
+    textBaseline: String
   ): LineHeight = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], boxShadow = boxShadow.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], listStyleType = listStyleType.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], marginBottom = marginBottom.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any], textBaseline = textBaseline.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineHeight]
   }
   
   extension [Self <: LineHeight](x: Self) {
     
-    inline def setBackgroundColor(value: Unit): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    inline def setBorderRadius(value: Unit): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    inline def setBoxShadow(value: Unit): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: Unit): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    inline def setDisplay(value: Unit): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    inline def setFloat(value: Unit): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    inline def setFontFamily(value: Unit): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
-    
-    inline def setFontSize(value: Unit): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
-    
-    inline def setHeight(value: Unit): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-    
-    inline def setLineHeight(value: Unit): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
-    
-    inline def setListStyleType(value: String): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
-    
-    inline def setMargin(value: Unit): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
-    
-    inline def setMarginBottom(value: String): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
-    
-    inline def setMarginLeft(value: Unit): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
-    
-    inline def setMarginRight(value: Unit): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
-    
-    inline def setPadding(value: Unit): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
-    
-    inline def setPosition(value: Unit): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-    
-    inline def setTransition(value: Unit): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
-    
-    inline def setVisibility(value: Unit): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
-    
-    inline def setWidth(value: Unit): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setZIndex(value: Unit): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setTextBaseline(value: String): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
   }
 }

@@ -29,7 +29,7 @@ object GetLoadBalancerMetricDataResult {
     
     inline def setMetricDataUndefined: Self = StObject.set(x, "metricData", js.undefined)
     
-    inline def setMetricDataVarargs(value: MetricDatapoint*): Self = StObject.set(x, "metricData", js.Array(value :_*))
+    inline def setMetricDataVarargs(value: MetricDatapoint*): Self = StObject.set(x, "metricData", js.Array(value*))
     
     inline def setMetricName(value: LoadBalancerMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     

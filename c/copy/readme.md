@@ -10,15 +10,12 @@ Copy files or directories using globs.
 | ------------------ | :-------------: |
 | Full name          | copy |
 | Keywords           | async, copy, file, file-system, fs, glob, move, path, pattern, promise, stream, sync, system |
-| # releases         | 0 |
-| # dependents       | 197 |
-| # downloads        | 1228931 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 203883.33333333334 |
+| # stars            | 87.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/copy)
-- [Bugs](https://github.com/jonschlinkert/copy/issues)
-- [Repository](https://github.com/jonschlinkert/copy)
 - [Npm](https://www.npmjs.com/package/copy)
     
 

@@ -11,9 +11,9 @@ A tiny Promises/A+ promise implementation written in Typescript
 | Full name          | typescript-deferred |
 | Keywords           | promise, deferred, typescript, promises-aplus |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1163 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 83.33333333333333 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/DirtyHairy/typescript-deferred)

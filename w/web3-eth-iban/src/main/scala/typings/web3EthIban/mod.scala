@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("web3-eth-iban", "Iban")
   @js.native
-  class Iban protected () extends StObject {
+  open class Iban protected () extends StObject {
     def this(iban: String) = this()
     
     def checksum(): String = js.native

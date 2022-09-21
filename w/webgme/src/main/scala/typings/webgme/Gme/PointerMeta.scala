@@ -26,7 +26,7 @@ object PointerMeta {
     
     inline def setItems(value: js.Array[Id]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Id*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Id*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }

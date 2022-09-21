@@ -11,8 +11,8 @@ object global {
   @js.native
   val StatsDClient: Instantiable1[
     /* options */ js.UndefOr[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOptions */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOptions */ Any
     ], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StatsD */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StatsD */ Any
   ] = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AffectedEntity extends StObject {
   
   /**
-    * The 12-digit AWS account number that contains the affected entity.
+    * The 12-digit Amazon Web Services account number that contains the affected entity.
     */
   var awsAccountId: js.UndefOr[accountId] = js.undefined
   
@@ -27,14 +27,14 @@ trait AffectedEntity extends StObject {
   var entityValue: js.UndefOr[typings.awsSdk.healthMod.entityValue] = js.undefined
   
   /**
-    * The unique identifier for the event. Format: arn:aws:health:event-region::event/SERVICE/EVENT_TYPE_CODE/EVENT_TYPE_PLUS_ID . Example: Example: arn:aws:health:us-east-1::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-DEF456 
+    * The unique identifier for the event. The event ARN has the arn:aws:health:event-region::event/SERVICE/EVENT_TYPE_CODE/EVENT_TYPE_PLUS_ID  format. For example, an event ARN might look like the following:  arn:aws:health:us-east-1::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-DEF456 
     */
   var eventArn: js.UndefOr[typings.awsSdk.healthMod.eventArn] = js.undefined
   
   /**
     * The most recent time that the entity was updated.
     */
-  var lastUpdatedTime: js.UndefOr[timestamp] = js.undefined
+  var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The most recent status of the entity affected by the event. The possible values are IMPAIRED, UNIMPAIRED, and UNKNOWN.
@@ -75,7 +75,7 @@ object AffectedEntity {
     
     inline def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
     
-    inline def setLastUpdatedTime(value: timestamp): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     

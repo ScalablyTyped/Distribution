@@ -10,10 +10,10 @@ Bloom Filter using the FNV hash function
 | ------------------ | :-------------: |
 | Full name          | bloem |
 | Keywords           | bloom filter, scalable bloom filters |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 24680 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4081.3333333333335 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/wiedi/node-bloem)

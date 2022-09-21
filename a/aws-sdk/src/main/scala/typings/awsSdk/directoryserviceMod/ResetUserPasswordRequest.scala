@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResetUserPasswordRequest extends StObject {
   
   /**
-    * Identifier of the AWS Managed Microsoft AD or Simple AD directory in which the user resides.
+    * Identifier of the Managed Microsoft AD or Simple AD directory in which the user resides.
     */
   var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   

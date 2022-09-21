@@ -1,6 +1,6 @@
 package typings.cathoQuantum
 
-import typings.cathoQuantum.anon.BaseFontSizeColors
+import typings.cathoQuantum.anon.BaseFontSizeColorsSpacing
 import typings.cathoQuantum.cathoQuantumStrings.bottom
 import typings.cathoQuantum.cathoQuantumStrings.left
 import typings.cathoQuantum.cathoQuantumStrings.right
@@ -15,10 +15,10 @@ object tooltipMod {
   
   @JSImport("@catho/quantum/Tooltip", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TooltipProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TooltipProps, js.Object, Any]
   
-  type Tooltip = Component[TooltipProps, js.Object, js.Any]
+  type Tooltip = Component[TooltipProps, js.Object, Any]
   
   trait TooltipProps extends StObject {
     
@@ -30,7 +30,7 @@ object tooltipMod {
     
     var text: String
     
-    var theme: js.UndefOr[BaseFontSizeColors] = js.undefined
+    var theme: js.UndefOr[BaseFontSizeColorsSpacing] = js.undefined
     
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -47,7 +47,7 @@ object tooltipMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
@@ -59,7 +59,7 @@ object tooltipMod {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setTheme(value: BaseFontSizeColors): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: BaseFontSizeColorsSpacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       

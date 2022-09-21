@@ -21,14 +21,14 @@ trait XScriptEventsAttacher
     * @param xListener All events (if defined by {@link XScriptEventsSupplier} ) that are fired by one of the objects are mapped into a {@link ScriptEvent} an
     * @param Helper Helper object for the implementation. This value will be passed to the {@link XScriptListener} as Helper property in the {@link ScriptEvent} .
     */
-  def attachEvents(Objects: SeqEquiv[XInterface], xListener: XScriptListener, Helper: js.Any): Unit
+  def attachEvents(Objects: SeqEquiv[XInterface], xListener: XScriptListener, Helper: Any): Unit
 }
 object XScriptEventsAttacher {
   
   inline def apply(
     acquire: () => Unit,
-    attachEvents: (SeqEquiv[XInterface], XScriptListener, js.Any) => Unit,
-    queryInterface: `type` => js.Any,
+    attachEvents: (SeqEquiv[XInterface], XScriptListener, Any) => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XScriptEventsAttacher = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), attachEvents = js.Any.fromFunction3(attachEvents), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -37,6 +37,6 @@ object XScriptEventsAttacher {
   
   extension [Self <: XScriptEventsAttacher](x: Self) {
     
-    inline def setAttachEvents(value: (SeqEquiv[XInterface], XScriptListener, js.Any) => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction3(value))
+    inline def setAttachEvents(value: (SeqEquiv[XInterface], XScriptListener, Any) => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction3(value))
   }
 }

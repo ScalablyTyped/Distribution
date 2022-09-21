@@ -11,15 +11,13 @@ trait ProtectionCreatedEvent
   
   var controller: js.Object
   
-  var manifest: js.Object
-  
   @JSName("type")
   var type_ProtectionCreatedEvent: public_protectioncreated
 }
 object ProtectionCreatedEvent {
   
-  inline def apply(controller: js.Object, manifest: js.Object): ProtectionCreatedEvent = {
-    val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any])
+  inline def apply(controller: js.Object): ProtectionCreatedEvent = {
+    val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public_protectioncreated")
     __obj.asInstanceOf[ProtectionCreatedEvent]
   }
@@ -27,8 +25,6 @@ object ProtectionCreatedEvent {
   extension [Self <: ProtectionCreatedEvent](x: Self) {
     
     inline def setController(value: js.Object): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
-    
-    inline def setManifest(value: js.Object): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     inline def setType(value: public_protectioncreated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

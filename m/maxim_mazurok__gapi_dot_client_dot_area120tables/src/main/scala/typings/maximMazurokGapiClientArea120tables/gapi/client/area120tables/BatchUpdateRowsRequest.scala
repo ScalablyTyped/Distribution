@@ -22,6 +22,6 @@ object BatchUpdateRowsRequest {
     
     inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    inline def setRequestsVarargs(value: UpdateRowRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: UpdateRowRequest*): Self = StObject.set(x, "requests", js.Array(value*))
   }
 }

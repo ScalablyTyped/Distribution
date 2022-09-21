@@ -1,6 +1,5 @@
 package typings.argon2Browser
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,6 +46,8 @@ object mod {
   
   trait Argon2BrowserHashOptions extends StObject {
     
+    var ad: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+    
     var distPath: js.UndefOr[String] = js.undefined
     
     var hashLen: js.UndefOr[Double] = js.undefined
@@ -55,9 +56,11 @@ object mod {
     
     var parallelism: js.UndefOr[Double] = js.undefined
     
-    var pass: String | Uint8Array
+    var pass: String | js.typedarray.Uint8Array
     
-    var salt: String | Uint8Array
+    var salt: String | js.typedarray.Uint8Array
+    
+    var secret: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
     var time: js.UndefOr[Double] = js.undefined
     
@@ -65,12 +68,16 @@ object mod {
   }
   object Argon2BrowserHashOptions {
     
-    inline def apply(pass: String | Uint8Array, salt: String | Uint8Array): Argon2BrowserHashOptions = {
+    inline def apply(pass: String | js.typedarray.Uint8Array, salt: String | js.typedarray.Uint8Array): Argon2BrowserHashOptions = {
       val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argon2BrowserHashOptions]
     }
     
     extension [Self <: Argon2BrowserHashOptions](x: Self) {
+      
+      inline def setAd(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ad", value.asInstanceOf[js.Any])
+      
+      inline def setAdUndefined: Self = StObject.set(x, "ad", js.undefined)
       
       inline def setDistPath(value: String): Self = StObject.set(x, "distPath", value.asInstanceOf[js.Any])
       
@@ -88,9 +95,13 @@ object mod {
       
       inline def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
       
-      inline def setPass(value: String | Uint8Array): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      inline def setSalt(value: String | Uint8Array): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      
+      inline def setSecret(value: js.typedarray.Uint8Array): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      
+      inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
@@ -106,13 +117,13 @@ object mod {
     
     var encoded: String
     
-    var hash: Uint8Array
+    var hash: js.typedarray.Uint8Array
     
     var hashHex: String
   }
   object Argon2BrowserHashResult {
     
-    inline def apply(encoded: String, hash: Uint8Array, hashHex: String): Argon2BrowserHashResult = {
+    inline def apply(encoded: String, hash: js.typedarray.Uint8Array, hashHex: String): Argon2BrowserHashResult = {
       val __obj = js.Dynamic.literal(encoded = encoded.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], hashHex = hashHex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argon2BrowserHashResult]
     }
@@ -121,7 +132,7 @@ object mod {
       
       inline def setEncoded(value: String): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
       
-      inline def setHash(value: Uint8Array): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: js.typedarray.Uint8Array): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
       inline def setHashHex(value: String): Self = StObject.set(x, "hashHex", value.asInstanceOf[js.Any])
     }
@@ -150,24 +161,36 @@ object mod {
   
   trait Argon2VerifyOptions extends StObject {
     
-    var encoded: String | Uint8Array
+    var ad: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+    
+    var encoded: String | js.typedarray.Uint8Array
     
     var pass: String
+    
+    var secret: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
     var `type`: js.UndefOr[ArgonType] = js.undefined
   }
   object Argon2VerifyOptions {
     
-    inline def apply(encoded: String | Uint8Array, pass: String): Argon2VerifyOptions = {
+    inline def apply(encoded: String | js.typedarray.Uint8Array, pass: String): Argon2VerifyOptions = {
       val __obj = js.Dynamic.literal(encoded = encoded.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argon2VerifyOptions]
     }
     
     extension [Self <: Argon2VerifyOptions](x: Self) {
       
-      inline def setEncoded(value: String | Uint8Array): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
+      inline def setAd(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ad", value.asInstanceOf[js.Any])
+      
+      inline def setAdUndefined: Self = StObject.set(x, "ad", js.undefined)
+      
+      inline def setEncoded(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
       
       inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      
+      inline def setSecret(value: js.typedarray.Uint8Array): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      
+      inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
       
       inline def setType(value: ArgonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

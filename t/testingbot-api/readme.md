@@ -9,11 +9,11 @@ A wrapper around TestingBot's REST API
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | testingbot-api |
-| Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 81567 |
-| # stars            | 0 |
+| Keywords           | testingbot-api, testingbot-nodejs, nodejs api |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5683.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/testingbot/testingbot-api)

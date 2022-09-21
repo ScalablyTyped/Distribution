@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait UDPSocketSendOption extends StObject {
   var length: js.UndefOr[Double] = js.undefined
   
   /** 要发送的数据 */
-  var message: String | ArrayBuffer
+  var message: String | js.typedarray.ArrayBuffer
   
   /** 发送数据的偏移量，仅当 message 为 ArrayBuffer 类型时有效 */
   var offset: js.UndefOr[Double] = js.undefined
@@ -24,7 +23,7 @@ trait UDPSocketSendOption extends StObject {
 }
 object UDPSocketSendOption {
   
-  inline def apply(address: String, message: String | ArrayBuffer, port: Double): UDPSocketSendOption = {
+  inline def apply(address: String, message: String | js.typedarray.ArrayBuffer, port: Double): UDPSocketSendOption = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[UDPSocketSendOption]
   }
@@ -37,7 +36,7 @@ object UDPSocketSendOption {
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    inline def setMessage(value: String | ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

@@ -14,15 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object errorsMod {
   
-  @JSImport("@firebase/installations/dist/src/util/errors", JSImport.Namespace)
+  @JSImport("@firebase/installations/dist/esm/src/util/errors", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/installations/dist/src/util/errors", "ERROR_FACTORY")
+  @JSImport("@firebase/installations/dist/esm/src/util/errors", "ERROR_FACTORY")
   @js.native
   val ERROR_FACTORY: ErrorFactory[ErrorCode, ErrorParams] = js.native
   
-  inline def isServerError(error: js.Any): /* is @firebase/installations.@firebase/installations/dist/src/util/errors.ServerError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isServerError")(error.asInstanceOf[js.Any]).asInstanceOf[/* is @firebase/installations.@firebase/installations/dist/src/util/errors.ServerError */ Boolean]
+  inline def isServerError(error: Any): /* is @firebase/installations.@firebase/installations/dist/esm/src/util/errors.ServerError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isServerError")(error.asInstanceOf[js.Any]).asInstanceOf[/* is @firebase/installations.@firebase/installations/dist/esm/src/util/errors.ServerError */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebaseInstallations.firebaseInstallationsStrings.`missing-app-config-values`

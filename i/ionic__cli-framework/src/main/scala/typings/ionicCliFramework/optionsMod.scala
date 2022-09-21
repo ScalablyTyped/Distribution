@@ -4,7 +4,6 @@ import typings.ionicCliFramework.anon.IncludeSeparated
 import typings.ionicCliFramework.colorsMod.Colors
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import typings.ionicCliFramework.definitionsMod.CommandMetadataOption
-import typings.ionicCliFramework.definitionsMod.HydratedCommandMetadataOption
 import typings.ionicCliFramework.definitionsMod.HydratedParseArgsOptions
 import typings.ionicCliFramework.definitionsMod.ParsedArg
 import typings.minimist.mod.Opts
@@ -41,7 +40,7 @@ object optionsMod {
   inline def formatOptionName[O /* <: CommandMetadataOption */](opt: O): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatOptionName")(opt.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def formatOptionName[O /* <: CommandMetadataOption */](opt: O, hasShowAliasesShowValueSpecColors: FormatOptionNameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatOptionName")(opt.asInstanceOf[js.Any], hasShowAliasesShowValueSpecColors.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def hydrateCommandMetadataOption[O /* <: CommandMetadataOption */](option: O): HydratedCommandMetadataOption[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrateCommandMetadataOption")(option.asInstanceOf[js.Any]).asInstanceOf[HydratedCommandMetadataOption[O]]
+  inline def hydrateCommandMetadataOption[O /* <: CommandMetadataOption */](option: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrateCommandMetadataOption")(option.asInstanceOf[js.Any]).asInstanceOf[O]
   
   inline def hydrateOptionSpec[O /* <: CommandMetadataOption */](opt: O): HydratedOptionSpec = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrateOptionSpec")(opt.asInstanceOf[js.Any]).asInstanceOf[HydratedOptionSpec]
   

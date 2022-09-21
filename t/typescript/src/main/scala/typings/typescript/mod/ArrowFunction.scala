@@ -11,6 +11,7 @@ trait ArrowFunction
      with FunctionLikeDeclarationBase
      with FunctionLikeDeclaration
      with HasJSDoc
+     with HasModifiers
      with SignatureDeclaration {
   
   @JSName("body")
@@ -20,4 +21,7 @@ trait ArrowFunction
   
   @JSName("kind")
   val kind_ArrowFunction: typings.typescript.mod.SyntaxKind.ArrowFunction = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ArrowFunction: js.UndefOr[NodeArray[Modifier]] = js.native
 }

@@ -1,91 +1,153 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.DEPRECATED
+import typings.awsSdk.awsSdkStrings.DOCKER
+import typings.awsSdk.awsSdkStrings.ECR
+import typings.awsSdk.awsSdkStrings.SHELL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type AccountList = js.Array[typings.awsSdk.imagebuilderMod.AccountId]
+type AccountList = js.Array[AccountId]
 
-type AmiList = js.Array[typings.awsSdk.imagebuilderMod.Ami]
+type AmiList = js.Array[Ami]
 
-type AmiNameString = java.lang.String
+type AmiNameString = String
 
-type Arn = java.lang.String
+type Arn = String
 
-type ClientToken = java.lang.String
+type Boolean = scala.Boolean
 
-type ComponentBuildVersionArn = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.USER_INITIATED
+  - typings.awsSdk.awsSdkStrings.SCHEDULED
+  - typings.awsSdk.awsSdkStrings.IMPORT
+  - java.lang.String
+*/
+type BuildType = _BuildType | String
 
-type ComponentConfigurationList = js.Array[typings.awsSdk.imagebuilderMod.ComponentConfiguration]
+type ClientToken = String
 
-type ComponentData = java.lang.String
+type ComponentBuildVersionArn = String
 
-type ComponentFormat = typings.awsSdk.awsSdkStrings.SHELL | java.lang.String
+type ComponentConfigurationList = js.Array[ComponentConfiguration]
 
-type ComponentSummaryList = js.Array[typings.awsSdk.imagebuilderMod.ComponentSummary]
+type ComponentData = String
+
+type ComponentFormat = SHELL | String
+
+type ComponentParameterDescription = String
+
+type ComponentParameterDetailList = js.Array[ComponentParameterDetail]
+
+type ComponentParameterList = js.Array[ComponentParameter]
+
+type ComponentParameterName = String
+
+type ComponentParameterType = String
+
+type ComponentParameterValue = String
+
+type ComponentParameterValueList = js.Array[ComponentParameterValue]
+
+type ComponentStatus = DEPRECATED | String
+
+type ComponentSummaryList = js.Array[ComponentSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BUILD
   - typings.awsSdk.awsSdkStrings.TEST
   - java.lang.String
 */
-type ComponentType = typings.awsSdk.imagebuilderMod._ComponentType | java.lang.String
+type ComponentType = _ComponentType | String
 
-type ComponentVersionArn = java.lang.String
+type ComponentVersionArn = String
 
-type ComponentVersionArnOrBuildVersionArn = java.lang.String
+type ComponentVersionArnOrBuildVersionArn = String
 
-type ComponentVersionList = js.Array[typings.awsSdk.imagebuilderMod.ComponentVersion]
+type ComponentVersionList = js.Array[ComponentVersion]
 
-type DateTime = java.lang.String
+type ContainerList = js.Array[Container]
 
-type DistributionConfigurationArn = java.lang.String
+type ContainerRecipeArn = String
 
-type DistributionConfigurationSummaryList = js.Array[typings.awsSdk.imagebuilderMod.DistributionConfigurationSummary]
+type ContainerRecipeSummaryList = js.Array[ContainerRecipeSummary]
 
-type DistributionList = js.Array[typings.awsSdk.imagebuilderMod.Distribution]
+type ContainerRepositoryService = ECR | String
 
-type DistributionTimeoutMinutes = scala.Double
+type ContainerType = DOCKER | String
 
-type EbsIopsInteger = scala.Double
+type DateTime = String
 
-type EbsVolumeSizeInteger = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VMDK
+  - typings.awsSdk.awsSdkStrings.RAW
+  - typings.awsSdk.awsSdkStrings.VHD
+  - java.lang.String
+*/
+type DiskImageFormat = _DiskImageFormat | String
+
+type DistributionConfigurationArn = String
+
+type DistributionConfigurationSummaryList = js.Array[DistributionConfigurationSummary]
+
+type DistributionList = js.Array[Distribution]
+
+type DistributionTimeoutMinutes = Double
+
+type DockerFileTemplate = String
+
+type EbsIopsInteger = Double
+
+type EbsVolumeSizeInteger = Double
+
+type EbsVolumeThroughput = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.standard__
-  - typings.awsSdk.awsSdkStrings.io1
-  - typings.awsSdk.awsSdkStrings.io2
-  - typings.awsSdk.awsSdkStrings.gp2
-  - typings.awsSdk.awsSdkStrings.sc1
-  - typings.awsSdk.awsSdkStrings.st1
+  - typings.awsSdk.awsSdkStrings.io1_
+  - typings.awsSdk.awsSdkStrings.io2_
+  - typings.awsSdk.awsSdkStrings.gp2_
+  - typings.awsSdk.awsSdkStrings.gp3_
+  - typings.awsSdk.awsSdkStrings.sc1_
+  - typings.awsSdk.awsSdkStrings.st1_
   - java.lang.String
 */
-type EbsVolumeType = typings.awsSdk.imagebuilderMod._EbsVolumeType | java.lang.String
+type EbsVolumeType = _EbsVolumeType | String
 
-type EmptyString = java.lang.String
+type EmptyString = String
 
-type FilterList = js.Array[typings.awsSdk.imagebuilderMod.Filter]
+type FastLaunchConfigurationList = js.Array[FastLaunchConfiguration]
 
-type FilterName = java.lang.String
+type FilterList = js.Array[Filter]
 
-type FilterValue = java.lang.String
+type FilterName = String
 
-type FilterValues = js.Array[typings.awsSdk.imagebuilderMod.FilterValue]
+type FilterValue = String
 
-type ImageBuildVersionArn = java.lang.String
+type FilterValues = js.Array[FilterValue]
 
-type ImageBuilderArn = java.lang.String
+type HttpPutResponseHopLimit = Double
 
-type ImagePipelineArn = java.lang.String
+type HttpTokens = String
 
-type ImagePipelineList = js.Array[typings.awsSdk.imagebuilderMod.ImagePipeline]
+type ImageBuildVersionArn = String
 
-type ImageRecipeArn = java.lang.String
+type ImageBuilderArn = String
 
-type ImageRecipeSummaryList = js.Array[typings.awsSdk.imagebuilderMod.ImageRecipeSummary]
+type ImagePackageList = js.Array[ImagePackage]
+
+type ImagePipelineArn = String
+
+type ImagePipelineList = js.Array[ImagePipeline]
+
+type ImageRecipeArn = String
+
+type ImageRecipeSummaryList = js.Array[ImageRecipeSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -101,41 +163,66 @@ type ImageRecipeSummaryList = js.Array[typings.awsSdk.imagebuilderMod.ImageRecip
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type ImageStatus = typings.awsSdk.imagebuilderMod._ImageStatus | java.lang.String
+type ImageStatus = _ImageStatus | String
 
-type ImageSummaryList = js.Array[typings.awsSdk.imagebuilderMod.ImageSummary]
+type ImageSummaryList = js.Array[ImageSummary]
 
-type ImageTestsTimeoutMinutes = scala.Double
+type ImageTestsTimeoutMinutes = Double
 
-type ImageVersionArn = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AMI
+  - typings.awsSdk.awsSdkStrings.DOCKER
+  - java.lang.String
+*/
+type ImageType = _ImageType | String
 
-type ImageVersionArnOrBuildVersionArn = java.lang.String
+type ImageVersionArn = String
 
-type ImageVersionList = js.Array[typings.awsSdk.imagebuilderMod.ImageVersion]
+type ImageVersionArnOrBuildVersionArn = String
 
-type InfrastructureConfigurationArn = java.lang.String
+type ImageVersionList = js.Array[ImageVersion]
 
-type InfrastructureConfigurationSummaryList = js.Array[typings.awsSdk.imagebuilderMod.InfrastructureConfigurationSummary]
+type InfrastructureConfigurationArn = String
 
-type InlineComponentData = java.lang.String
+type InfrastructureConfigurationSummaryList = js.Array[InfrastructureConfigurationSummary]
 
-type InstanceBlockDeviceMappings = js.Array[typings.awsSdk.imagebuilderMod.InstanceBlockDeviceMapping]
+type InlineComponentData = String
 
-type InstanceType = java.lang.String
+type InlineDockerFileTemplate = String
 
-type InstanceTypeList = js.Array[typings.awsSdk.imagebuilderMod.InstanceType]
+type InstanceBlockDeviceMappings = js.Array[InstanceBlockDeviceMapping]
 
-type LicenseConfigurationArn = java.lang.String
+type InstanceProfileNameType = String
 
-type LicenseConfigurationArnList = js.Array[typings.awsSdk.imagebuilderMod.LicenseConfigurationArn]
+type InstanceType = String
 
-type NonEmptyString = java.lang.String
+type InstanceTypeList = js.Array[InstanceType]
+
+type LaunchTemplateConfigurationList = js.Array[LaunchTemplateConfiguration]
+
+type LaunchTemplateId = String
+
+type LicenseConfigurationArn = String
+
+type LicenseConfigurationArnList = js.Array[LicenseConfigurationArn]
+
+type MaxParallelLaunches = Double
+
+type NonEmptyString = String
 
 type NullableBoolean = scala.Boolean
 
-type OsVersion = java.lang.String
+type OrganizationArn = String
 
-type OsVersionList = js.Array[typings.awsSdk.imagebuilderMod.OsVersion]
+type OrganizationArnList = js.Array[OrganizationArn]
+
+type OrganizationalUnitArn = String
+
+type OrganizationalUnitArnList = js.Array[OrganizationalUnitArn]
+
+type OsVersion = String
+
+type OsVersionList = js.Array[OsVersion]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Self_
@@ -143,60 +230,68 @@ type OsVersionList = js.Array[typings.awsSdk.imagebuilderMod.OsVersion]
   - typings.awsSdk.awsSdkStrings.Amazon_
   - java.lang.String
 */
-type Ownership = typings.awsSdk.imagebuilderMod._Ownership | java.lang.String
+type Ownership = _Ownership | String
 
-type PaginationToken = java.lang.String
+type PaginationToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EXPRESSION_MATCH_ONLY
   - typings.awsSdk.awsSdkStrings.EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE
   - java.lang.String
 */
-type PipelineExecutionStartCondition = typings.awsSdk.imagebuilderMod._PipelineExecutionStartCondition | java.lang.String
+type PipelineExecutionStartCondition = _PipelineExecutionStartCondition | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type PipelineStatus = typings.awsSdk.imagebuilderMod._PipelineStatus | java.lang.String
+type PipelineStatus = _PipelineStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Windows_
   - typings.awsSdk.awsSdkStrings.Linux_
   - java.lang.String
 */
-type Platform = typings.awsSdk.imagebuilderMod._Platform | java.lang.String
+type Platform = _Platform | String
 
-type ResourceName = java.lang.String
+type RegionList = js.Array[NonEmptyString]
 
-type ResourcePolicyDocument = java.lang.String
+type ResourceName = String
 
-type ResourceTagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.imagebuilderMod.TagValue]
+type ResourcePolicyDocument = String
 
-type RestrictedInteger = scala.Double
+type ResourceTagMap = StringDictionary[TagValue]
 
-type SecurityGroupIds = js.Array[typings.awsSdk.imagebuilderMod.NonEmptyString]
+type RestrictedInteger = Double
 
-type SnsTopicArn = java.lang.String
+type SecurityGroupIds = js.Array[NonEmptyString]
 
-type StringList = js.Array[typings.awsSdk.imagebuilderMod.NonEmptyString]
+type SnsTopicArn = String
 
-type TagKey = java.lang.String
+type StringList = js.Array[NonEmptyString]
 
-type TagKeyList = js.Array[typings.awsSdk.imagebuilderMod.TagKey]
+type TagKey = String
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.imagebuilderMod.TagValue]
+type TagKeyList = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagMap = StringDictionary[TagValue]
 
-type Uri = java.lang.String
+type TagValue = String
 
-type VersionNumber = java.lang.String
+type TargetResourceCount = Double
+
+type Timezone = String
+
+type Uri = String
+
+type UserDataOverride = String
+
+type VersionNumber = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-12-02`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.imagebuilderMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

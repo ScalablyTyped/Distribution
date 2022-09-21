@@ -10,10 +10,10 @@ retrying execution of function for tests
 | ------------------ | :-------------: |
 | Full name          | wix-eventually |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 49853 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6064.666666666667 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/wix-eventually)

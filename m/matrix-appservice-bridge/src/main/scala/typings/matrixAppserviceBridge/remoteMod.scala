@@ -9,16 +9,16 @@ object remoteMod {
   
   @JSImport("matrix-appservice-bridge/lib/models/rooms/remote", "RemoteRoom")
   @js.native
-  class RemoteRoom protected () extends StObject {
+  open class RemoteRoom protected () extends StObject {
     /**
       * Create a remote room.
       * @param identifier The ID for this room
       * @param data The key-value data object to assign to this room.
       */
     def this(roomId: String) = this()
-    def this(roomId: String, data: Record[String, js.Any]) = this()
+    def this(roomId: String, data: Record[String, Any]) = this()
     
-    var data: Record[String, js.Any] = js.native
+    var data: Record[String, Any] = js.native
     
     /**
       * Get the data value for the given key.
@@ -39,7 +39,7 @@ object remoteMod {
       * Serialize all the data about this room, excluding the room ID.
       * @return The serialised data
       */
-    def serialize(): Record[String, js.Any] = js.native
+    def serialize(): Record[String, Any] = js.native
     
     /**
       * Set an arbitrary bridge-specific data value for this room.
@@ -47,6 +47,6 @@ object remoteMod {
       * @param val The data value. This value should be serializable via
       * <code>JSON.stringify(data)</code>.
       */
-    def set(key: String, `val`: js.Any): Unit = js.native
+    def set(key: String, `val`: Any): Unit = js.native
   }
 }

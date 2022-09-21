@@ -186,7 +186,7 @@ object mod {
   
   trait _Coordinate
     extends StObject
-       with _ParamType[js.Any]
+       with _ParamType[Any]
   object _Coordinate {
     
     inline def CoordinateLatLng(lat: Double, lng: Double): typings.haversine.mod.CoordinateLatLng = {

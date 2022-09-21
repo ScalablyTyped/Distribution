@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GetPeersResponse.
   * @param [properties] Properties to set
   */
-class GetPeersResponse ()
+open class GetPeersResponse ()
   extends StObject
      with IGetPeersResponse {
   def this(properties: IGetPeersResponse) = this()
@@ -28,7 +27,7 @@ class GetPeersResponse ()
     * Converts this GetPeersResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object GetPeersResponse {
@@ -45,6 +44,8 @@ object GetPeersResponse {
   inline def create(): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetPeersResponse]
   inline def create(properties: IGetPeersResponse): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetPeersResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetPeersResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): GetPeersResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetPeersResponse]
   /**
     * Decodes a GetPeersResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -55,9 +56,8 @@ object GetPeersResponse {
     */
   inline def decode(reader: Reader): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetPeersResponse]
   inline def decode(reader: Reader, length: Double): GetPeersResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetPeersResponse]
-  inline def decode(reader: Uint8Array): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetPeersResponse]
-  inline def decode(reader: Uint8Array, length: Double): GetPeersResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetPeersResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetPeersResponse]
   /**
     * Decodes a GetPeersResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -66,7 +66,6 @@ object GetPeersResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetPeersResponse]
-  inline def decodeDelimited(reader: Uint8Array): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetPeersResponse]
   
   /**
     * Encodes the specified GetPeersResponse message. Does not implicitly {@link GetPeersResponse.verify|verify} messages.
@@ -91,7 +90,7 @@ object GetPeersResponse {
     * @param object Plain object
     * @returns GetPeersResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetPeersResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): GetPeersResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetPeersResponse]
   
   /**
     * Creates a plain object from a GetPeersResponse message. Also converts values to other types if specified.
@@ -99,13 +98,13 @@ object GetPeersResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: GetPeersResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: GetPeersResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: GetPeersResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: GetPeersResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a GetPeersResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

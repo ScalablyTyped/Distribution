@@ -1,6 +1,6 @@
 package typings.webpackSources
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.sourceMap.mod.RawSourceMap
 import typings.sourceMap.mod.SourceMapGenerator
 import typings.webpackSources.cachedSourceMod.^
@@ -18,7 +18,7 @@ object mod {
     */
   @JSImport("webpack-sources", "CachedSource")
   @js.native
-  class CachedSource protected () extends ^ {
+  open class CachedSource protected () extends ^ {
     def this(source: typings.webpackSources.sourceMod.^) = this()
     def this(source: js.Function0[typings.webpackSources.sourceMod.^], cachedData: CachedData) = this()
     def this(source: Null, cachedData: CachedData) = this()
@@ -26,7 +26,7 @@ object mod {
   
   @JSImport("webpack-sources", "CompatSource")
   @js.native
-  class CompatSource protected ()
+  open class CompatSource protected ()
     extends typings.webpackSources.compatSourceMod.^ {
     def this(sourceLike: SourceLike) = this()
   }
@@ -45,7 +45,7 @@ object mod {
     */
   @JSImport("webpack-sources", "ConcatSource")
   @js.native
-  class ConcatSource protected ()
+  open class ConcatSource protected ()
     extends typings.webpackSources.concatSourceMod.^ {
     def this(args: (String | typings.webpackSources.sourceMod.^)*) = this()
   }
@@ -55,7 +55,7 @@ object mod {
     */
   @JSImport("webpack-sources", "OriginalSource")
   @js.native
-  class OriginalSource protected ()
+  open class OriginalSource protected ()
     extends typings.webpackSources.originalSourceMod.^ {
     /**
       * OriginalSource tries to create column mappings if requested, by splitting the source code at typical statement borders (;, {, }).
@@ -69,7 +69,7 @@ object mod {
     */
   @JSImport("webpack-sources", "PrefixSource")
   @js.native
-  class PrefixSource protected ()
+  open class PrefixSource protected ()
     extends typings.webpackSources.prefixSourceMod.^ {
     def this(prefix: String, source: String) = this()
     def this(prefix: String, source: typings.webpackSources.sourceMod.^) = this()
@@ -82,7 +82,7 @@ object mod {
     */
   @JSImport("webpack-sources", "RawSource")
   @js.native
-  class RawSource protected ()
+  open class RawSource protected ()
     extends typings.webpackSources.rawSourceMod.^ {
     def this(value: String) = this()
   }
@@ -93,7 +93,7 @@ object mod {
     */
   @JSImport("webpack-sources", "ReplaceSource")
   @js.native
-  class ReplaceSource protected ()
+  open class ReplaceSource protected ()
     extends typings.webpackSources.replaceSourceMod.^ {
     /**
       * The ReplaceSource supports "identity" mappings for child source.
@@ -105,7 +105,7 @@ object mod {
   
   @JSImport("webpack-sources", "SizeOnlySource")
   @js.native
-  class SizeOnlySource protected ()
+  open class SizeOnlySource protected ()
     extends typings.webpackSources.sizeOnlySourceMod.^ {
     def this(size: Double) = this()
   }
@@ -124,7 +124,7 @@ object mod {
     */
   @JSImport("webpack-sources", "SourceMapSource")
   @js.native
-  class SourceMapSource protected ()
+  open class SourceMapSource protected ()
     extends typings.webpackSources.sourceMapSourceMod.^ {
     def this(sourceCode: String, name: String, sourceMap: RawSourceMap) = this()
     def this(sourceCode: String, name: String, sourceMap: SourceMapGenerator) = this()

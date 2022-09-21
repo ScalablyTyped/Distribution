@@ -10,12 +10,12 @@ trait OlapTableView extends StObject {
   /**
     * Returns the column sort direction items, which were applied during the $.ig.OlapTableView initialization.
     */
-  def appliedColumnSortDirections(): js.Array[js.Any] = js.native
+  def appliedColumnSortDirections(): js.Array[Any] = js.native
   
   /**
     * Returns the level sort direction items, which were applied during the $.ig.OlapTableView initialization.
     */
-  def appliedLevelSortDirections(): js.Array[js.Any] = js.native
+  def appliedLevelSortDirections(): js.Array[Any] = js.native
   
   /**
     * Returns a javascript object, which maps the applied level sort directions to the axis name, hierarchy index in the axis and the level depth.
@@ -26,7 +26,7 @@ trait OlapTableView extends StObject {
   /**
     * Returns the table column headers.
     */
-  def columnHeaders(): js.Array[js.Any] = js.native
+  def columnHeaders(): js.Array[Any] = js.native
   
   /**
     * Gets or sets the column sort direction items, which will be applied when the $.ig.OlapTableView is initialized.
@@ -39,8 +39,8 @@ trait OlapTableView extends StObject {
     *
     * @param columnSortDirections an array of objects, which have the following properties:
     */
-  def columnSortDirections(): js.Array[js.Any] = js.native
-  def columnSortDirections(columnSortDirections: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def columnSortDirections(): js.Array[Any] = js.native
+  def columnSortDirections(columnSortDirections: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * Initializes the table view object as its rowHeaders, columnHeaders and resultCells are created for the result object the table view is related to.
@@ -56,8 +56,8 @@ trait OlapTableView extends StObject {
     *
     * @param levelSortDirections an array of objects, which have the following properties:
     */
-  def levelSortDirections(): js.Array[js.Any] = js.native
-  def levelSortDirections(levelSortDirections: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def levelSortDirections(): js.Array[Any] = js.native
+  def levelSortDirections(levelSortDirections: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * Returns the sorted $.ig.OlapResult object.
@@ -67,12 +67,12 @@ trait OlapTableView extends StObject {
   /**
     * Returns the table result cells ordered as if the grid is iterated row by row.
     */
-  def resultCells(): js.Array[js.Any] = js.native
+  def resultCells(): js.Array[Any] = js.native
   
   /**
     * Returns the table row headers.
     */
-  def rowHeaders(): js.Array[js.Any] = js.native
+  def rowHeaders(): js.Array[Any] = js.native
   
   /**
     * Returns the configuration object this table view is created with.

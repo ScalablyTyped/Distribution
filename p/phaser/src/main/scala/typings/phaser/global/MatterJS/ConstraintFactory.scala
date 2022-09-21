@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.ConstraintFactory")
 @js.native
-class ConstraintFactory ()
+open class ConstraintFactory ()
   extends StObject
      with typings.phaser.MatterJS.ConstraintFactory {
   

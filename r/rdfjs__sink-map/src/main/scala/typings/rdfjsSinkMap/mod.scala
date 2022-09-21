@@ -1,7 +1,7 @@
 package typings.rdfjsSinkMap
 
 import typings.node.eventsMod.EventEmitter
-import typings.rdfJs.mod.Sink
+import typings.rdfjsTypes.streamMod.Sink
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("@rdfjs/sink-map", JSImport.Namespace)
   @js.native
-  class ^[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] ()
+  open class ^[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] ()
     extends StObject
        with SinkMap[InputStream, OutputStream]
   
@@ -21,6 +21,6 @@ object mod {
        with Map[String, Sink[InputStream, OutputStream]] {
     
     def `import`(mediaType: String, input: InputStream): OutputStream | Null = js.native
-    def `import`(mediaType: String, input: InputStream, options: js.Any): OutputStream | Null = js.native
+    def `import`(mediaType: String, input: InputStream, options: Any): OutputStream | Null = js.native
   }
 }

@@ -19,6 +19,6 @@ object GuidOptions {
     
     inline def setVersion(value: js.Array[GuidVersions] | GuidVersions): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    inline def setVersionVarargs(value: GuidVersions*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: GuidVersions*): Self = StObject.set(x, "version", js.Array(value*))
   }
 }

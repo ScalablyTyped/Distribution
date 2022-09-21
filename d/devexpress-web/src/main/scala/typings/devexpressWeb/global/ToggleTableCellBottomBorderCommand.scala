@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleTableCellBottomBorderCommand")
 @js.native
-class ToggleTableCellBottomBorderCommand ()
+open class ToggleTableCellBottomBorderCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleTableCellBottomBorderCommand {
   

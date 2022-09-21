@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.ScaleBitmap")
 @js.native
-class ScaleBitmap protected ()
+open class ScaleBitmap protected ()
   extends StObject
      with typings.easeljs.createjs.ScaleBitmap {
   def this(imageOrUrl: String, scale9Grid: typings.easeljs.createjs.Rectangle) = this()

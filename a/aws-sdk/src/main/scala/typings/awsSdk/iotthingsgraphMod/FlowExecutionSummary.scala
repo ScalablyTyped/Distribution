@@ -9,7 +9,7 @@ trait FlowExecutionSummary extends StObject {
   /**
     * The date and time when the flow execution summary was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the flow execution.
@@ -34,7 +34,7 @@ trait FlowExecutionSummary extends StObject {
   /**
     * The date and time when the flow execution summary was last updated.
     */
-  var updatedAt: js.UndefOr[Timestamp] = js.undefined
+  var updatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object FlowExecutionSummary {
   
@@ -45,7 +45,7 @@ object FlowExecutionSummary {
   
   extension [Self <: FlowExecutionSummary](x: Self) {
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -65,7 +65,7 @@ object FlowExecutionSummary {
     
     inline def setSystemInstanceIdUndefined: Self = StObject.set(x, "systemInstanceId", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }

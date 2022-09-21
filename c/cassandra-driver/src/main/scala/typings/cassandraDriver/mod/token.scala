@@ -15,11 +15,11 @@ object token {
     
     def getType(): Code
     
-    def getValue(): js.Any
+    def getValue(): Any
   }
   object Token {
     
-    inline def apply(compare: Token => Double, equals_ : Token => Boolean, getType: () => Code, getValue: () => js.Any): Token = {
+    inline def apply(compare: Token => Double, equals_ : Token => Boolean, getType: () => Code, getValue: () => Any): Token = {
       val __obj = js.Dynamic.literal(compare = js.Any.fromFunction1(compare), getType = js.Any.fromFunction0(getType), getValue = js.Any.fromFunction0(getValue))
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
       __obj.asInstanceOf[Token]
@@ -33,7 +33,7 @@ object token {
       
       inline def setGetType(value: () => Code): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }
   }
   

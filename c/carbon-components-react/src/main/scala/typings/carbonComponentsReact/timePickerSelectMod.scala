@@ -8,6 +8,6 @@ object timePickerSelectMod {
   
   @JSImport("carbon-components-react/lib/components/TimePickerSelect", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.timePickerSelectTimePickerSelectMod.default
 }

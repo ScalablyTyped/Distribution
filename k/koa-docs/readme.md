@@ -10,10 +10,10 @@ An automatic documentation generator for koa.js APIs
 | ------------------ | :-------------: |
 | Full name          | koa-docs |
 | Keywords           | koa, koajs, api, documentation, generator, joi, docs |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 3300 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 523.0 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/a-s-o/koa-docs#readme)

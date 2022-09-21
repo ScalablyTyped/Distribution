@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.Props
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,10 +18,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](classes: Classes[T], activations: js.Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(classes.asInstanceOf[js.Any], activations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](classes: Classes[T], activations: Any*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(classes.asInstanceOf[js.Any]).`++`(activations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   inline def hover[A](component: ComponentClass[A, ComponentState]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
-  inline def hover[A](component: StatelessComponent[A]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
+  inline def hover[A](component: FunctionComponent[A]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
   
   inline def loop(index: Double, length: Double): LoopableProps = (^.asInstanceOf[js.Dynamic].applyDynamic("loop")(index.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LoopableProps]
   
@@ -45,11 +46,13 @@ object mod {
     }
   }
   
-  trait HoverProps[T]
-    extends StObject
-       with Props[T] {
+  trait HoverProps[T] extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var hover: js.UndefOr[Boolean] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[T]] = js.undefined
   }
   object HoverProps {
     
@@ -60,15 +63,27 @@ object mod {
     
     extension [Self <: HoverProps[?], T](x: Self & HoverProps[T]) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
       
       inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+      
+      inline def setRef(value: LegacyRef[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
-  trait LoopableProps
-    extends StObject
-       with Props[js.Any] {
+  trait LoopableProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var even: js.UndefOr[Boolean] = js.undefined
     
@@ -79,6 +94,8 @@ object mod {
     var `nth-child`: Double
     
     var odd: js.UndefOr[Boolean] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[Any]] = js.undefined
   }
   object LoopableProps {
     
@@ -89,6 +106,10 @@ object mod {
     }
     
     extension [Self <: LoopableProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setEven(value: Boolean): Self = StObject.set(x, "even", value.asInstanceOf[js.Any])
       
@@ -107,6 +128,14 @@ object mod {
       inline def setOdd(value: Boolean): Self = StObject.set(x, "odd", value.asInstanceOf[js.Any])
       
       inline def setOddUndefined: Self = StObject.set(x, "odd", js.undefined)
+      
+      inline def setRef(value: LegacyRef[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
 }

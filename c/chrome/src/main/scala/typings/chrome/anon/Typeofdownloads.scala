@@ -15,19 +15,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofdownloads extends StObject {
   
+  def acceptDanger(downloadId: Double): js.Promise[Unit] = js.native
   def acceptDanger(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
   
   def cancel(downloadId: Double): Unit = js.native
   def cancel(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("cancel")
+  def cancel_Promise(downloadId: Double): js.Promise[Unit] = js.native
   
   def download(options: DownloadOptions): Unit = js.native
   def download(options: DownloadOptions, callback: js.Function1[/* downloadId */ Double, Unit]): Unit = js.native
+  @JSName("download")
+  def download_Promise(options: DownloadOptions): js.Promise[Double] = js.native
   
   def drag(downloadId: Double): Unit = js.native
   
+  def erase(query: DownloadQuery): js.Promise[js.Array[Double]] = js.native
   def erase(query: DownloadQuery, callback: js.Function1[/* erasedIds */ js.Array[Double], Unit]): Unit = js.native
   
+  def getFileIcon(downloadId: Double): js.Promise[String] = js.native
   def getFileIcon(downloadId: Double, callback: js.Function1[/* iconURL */ String, Unit]): Unit = js.native
+  def getFileIcon(downloadId: Double, options: GetFileIconOptions): js.Promise[String] = js.native
   def getFileIcon(
     downloadId: Double,
     options: GetFileIconOptions,
@@ -46,13 +54,20 @@ trait Typeofdownloads extends StObject {
   
   def pause(downloadId: Double): Unit = js.native
   def pause(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("pause")
+  def pause_Promise(downloadId: Double): js.Promise[Unit] = js.native
   
   def removeFile(downloadId: Double): Unit = js.native
   def removeFile(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("removeFile")
+  def removeFile_Promise(downloadId: Double): js.Promise[Unit] = js.native
   
   def resume(downloadId: Double): Unit = js.native
   def resume(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("resume")
+  def resume_Promise(downloadId: Double): js.Promise[Unit] = js.native
   
+  def search(query: DownloadQuery): js.Promise[js.Array[DownloadItem]] = js.native
   def search(query: DownloadQuery, callback: js.Function1[/* results */ js.Array[DownloadItem], Unit]): Unit = js.native
   
   def setShelfEnabled(enabled: Boolean): Unit = js.native

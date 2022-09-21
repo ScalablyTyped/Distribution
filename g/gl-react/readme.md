@@ -10,10 +10,10 @@ Universal React library, write and compose WebGL shaders, implement complex effe
 | ------------------ | :-------------: |
 | Full name          | gl-react |
 | Keywords           | gl-react, gl, opengl, react, react-component |
-| # releases         | 12 |
-| # dependents       | 6 |
-| # downloads        | 55236 |
-| # stars            | 3 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 4961.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/gl-react)

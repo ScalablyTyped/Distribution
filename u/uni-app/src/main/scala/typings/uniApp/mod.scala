@@ -9,14 +9,13 @@ import typings.uniApp.Page.PageInstanceBaseProps
 import typings.uniApp.Page.PageScrollOption
 import typings.uniApp.Page.ShareAppMessageOption
 import typings.uniApp.Page.TabItemTapOption
-import typings.vue.vueMod.Vue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  trait ComponentOptions[V /* <: Vue */]
+  trait ComponentOptions[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */]
     extends StObject
        with Hooks {
     
@@ -27,12 +26,12 @@ object mod {
   }
   object ComponentOptions {
     
-    inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
+    inline def apply[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](): ComponentOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptions[V]]
     }
     
-    extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
+    extension [Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](x: Self & ComponentOptions[V]) {
       
       inline def setMpType(value: String): Self = StObject.set(x, "mpType", value.asInstanceOf[js.Any])
       
@@ -44,14 +43,14 @@ object mod {
   - typings.uniApp.Page.PageInstance because var conflicts: onHide, onShow. Inlined onLoad, onReady, onUnload, onPullDownRefresh, onReachBottom, onShareAppMessage, onPageScroll, onResize, onTabItemTap, onNavigationBarButtonTap, onBackPress, onNavigationBarSearchInputChanged, onNavigationBarSearchInputConfirmed, onNavigationBarSearchInputClicked */ trait Hooks
     extends StObject
        with AppInstance[js.Object]
-       with PageInstanceBaseProps[js.Any] {
+       with PageInstanceBaseProps[Any] {
     
     /**
       * 监听页面返回
       * @param options tab 点击参数
       * @return 返回 `true` 时阻止页面返回
       */
-    var onBackPress: js.UndefOr[js.Function1[/* options */ BackPressOption, js.Any]] = js.undefined
+    var onBackPress: js.UndefOr[js.Function1[/* options */ BackPressOption, Any]] = js.undefined
     
     /**
       * 生命周期回调 监听页面加载
@@ -149,7 +148,7 @@ object mod {
     
     extension [Self <: Hooks](x: Self) {
       
-      inline def setOnBackPress(value: /* options */ BackPressOption => js.Any): Self = StObject.set(x, "onBackPress", js.Any.fromFunction1(value))
+      inline def setOnBackPress(value: /* options */ BackPressOption => Any): Self = StObject.set(x, "onBackPress", js.Any.fromFunction1(value))
       
       inline def setOnBackPressUndefined: Self = StObject.set(x, "onBackPress", js.undefined)
       

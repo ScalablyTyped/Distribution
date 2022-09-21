@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("DeviceUUID.DeviceUUID")
     @js.native
-    class DeviceUUID ()
+    open class DeviceUUID ()
       extends typings.deviceUuid.mod.DeviceUUID
   }
 }

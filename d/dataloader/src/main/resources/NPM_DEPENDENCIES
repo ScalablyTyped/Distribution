@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dataloader" : "2.0.0"
+      "dataloader" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "dataloader" : "2.0.0"
+      "dataloader" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

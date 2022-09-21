@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Runner")
 @js.native
-class Runner () extends StObject {
+open class Runner () extends StObject {
   
   /**
     * A `Number` that specifies the time step between updates in milliseconds.
@@ -14,7 +14,7 @@ class Runner () extends StObject {
     * If it is `false`, then `delta` can dynamically change to maintain the correct apparent simulation speed.
     *
     * @property delta
-    * @type number
+    * @type {number}
     * @default 1000 / 60
     */
   var delta: Double = js.native
@@ -23,7 +23,7 @@ class Runner () extends StObject {
     * A flag that specifies whether the runner is running or not.
     *
     * @property enabled
-    * @type boolean
+    * @type {boolean}
     * @default true
     */
   var enabled: Boolean = js.native
@@ -34,7 +34,7 @@ class Runner () extends StObject {
     * If the timing is variable, then the apparent simulation speed will be constant (approximately, but at the cost of determininism).
     *
     * @property isFixed
-    * @type boolean
+    * @type {boolean}
     * @default false
     */
   var isFixed: Boolean = js.native

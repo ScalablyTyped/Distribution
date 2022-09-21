@@ -12,7 +12,7 @@ trait SharedWorkspaceMembers extends StObject {
   def Add(Email: String, DomainName: String, DisplayName: String): SharedWorkspaceMember = js.native
   def Add(Email: String, DomainName: String, DisplayName: String, Role: String): SharedWorkspaceMember = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -22,5 +22,5 @@ trait SharedWorkspaceMembers extends StObject {
   
   val ItemCountExceeded: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

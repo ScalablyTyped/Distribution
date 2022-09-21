@@ -9,7 +9,7 @@ trait WebXRHTCViveMotionController
   extends StObject
      with WebXRAbstractMotionController {
   
-  /* private */ var _modelRootNode: js.Any = js.native
+  /* private */ var _modelRootNode: Any = js.native
   
   /* protected */ def _updateModel(): Unit = js.native
 }

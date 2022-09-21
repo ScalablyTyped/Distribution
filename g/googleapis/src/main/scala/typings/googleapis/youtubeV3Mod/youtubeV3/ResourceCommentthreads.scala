@@ -4,31 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Commentthreads")
 @js.native
-class ResourceCommentthreads protected () extends StObject {
+open class ResourceCommentthreads protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * youtube.commentThreads.insert
-    * @desc Creates a new top-level comment. To add a reply to an existing
-    * comment, use the comments.insert method instead.
-    * @alias youtube.commentThreads.insert
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.part The part parameter identifies the properties that the API response will include. Set the parameter value to snippet. The snippet part has a quota cost of 2 units.
-    * @param {().CommentThread} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def insert(): GaxiosPromise[SchemaCommentThread] = js.native
   def insert(callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
@@ -36,8 +24,8 @@ class ResourceCommentthreads protected () extends StObject {
   def insert(params: ParamsResourceCommentthreadsInsert, callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
   def insert(
     params: ParamsResourceCommentthreadsInsert,
-    options: BodyResponseCallback[SchemaCommentThread],
-    callback: BodyResponseCallback[SchemaCommentThread]
+    options: BodyResponseCallback[Readable | SchemaCommentThread],
+    callback: BodyResponseCallback[Readable | SchemaCommentThread]
   ): Unit = js.native
   def insert(params: ParamsResourceCommentthreadsInsert, options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
   def insert(
@@ -45,30 +33,79 @@ class ResourceCommentthreads protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentThread]
   ): Unit = js.native
-  
   /**
-    * youtube.commentThreads.list
-    * @desc Returns a list of comment threads that match the API request
-    * parameters.
-    * @alias youtube.commentThreads.list
-    * @memberOf! ()
+    * Inserts a new resource into this collection.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/youtube.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.allThreadsRelatedToChannelId The allThreadsRelatedToChannelId parameter instructs the API to return all comment threads associated with the specified channel. The response can include comments about the channel or about the channel's videos.
-    * @param {string=} params.channelId The channelId parameter instructs the API to return comment threads containing comments about the specified channel. (The response will not include comments left on videos that the channel uploaded.)
-    * @param {string=} params.id The id parameter specifies a comma-separated list of comment thread IDs for the resources that should be retrieved.
-    * @param {integer=} params.maxResults The maxResults parameter specifies the maximum number of items that should be returned in the result set.  Note: This parameter is not supported for use in conjunction with the id parameter.
-    * @param {string=} params.moderationStatus Set this parameter to limit the returned comment threads to a particular moderation state.  Note: This parameter is not supported for use in conjunction with the id parameter.
-    * @param {string=} params.order The order parameter specifies the order in which the API response should list comment threads. Valid values are:  - time - Comment threads are ordered by time. This is the default behavior. - relevance - Comment threads are ordered by relevance.Note: This parameter is not supported for use in conjunction with the id parameter.
-    * @param {string=} params.pageToken The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken property identifies the next page of the result that can be retrieved.  Note: This parameter is not supported for use in conjunction with the id parameter.
-    * @param {string} params.part The part parameter specifies a comma-separated list of one or more commentThread resource properties that the API response will include.
-    * @param {string=} params.searchTerms The searchTerms parameter instructs the API to limit the API response to only contain comments that contain the specified search terms.  Note: This parameter is not supported for use in conjunction with the id parameter.
-    * @param {string=} params.textFormat Set this parameter's value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text.
-    * @param {string=} params.videoId The videoId parameter instructs the API to return comment threads associated with the specified video ID.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const youtube = google.youtube('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/youtube.force-ssl'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await youtube.commentThreads.insert({
+    *     // The *part* parameter identifies the properties that the API response will include. Set the parameter value to snippet. The snippet part has a quota cost of 2 units.
+    *     part: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "etag": "my_etag",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "replies": {},
+    *       //   "snippet": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "replies": {},
+    *   //   "snippet": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceCommentthreadsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceCommentthreadsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCommentThreadListResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
@@ -79,8 +116,8 @@ class ResourceCommentthreads protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceCommentthreadsList,
-    options: BodyResponseCallback[SchemaCommentThreadListResponse],
-    callback: BodyResponseCallback[SchemaCommentThreadListResponse]
+    options: BodyResponseCallback[Readable | SchemaCommentThreadListResponse],
+    callback: BodyResponseCallback[Readable | SchemaCommentThreadListResponse]
   ): Unit = js.native
   def list(params: ParamsResourceCommentthreadsList, options: MethodOptions): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
   def list(
@@ -88,34 +125,87 @@ class ResourceCommentthreads protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCommentThreadListResponse]
   ): Unit = js.native
-  
   /**
-    * youtube.commentThreads.update
-    * @desc Modifies the top-level comment in a comment thread.
-    * @alias youtube.commentThreads.update
-    * @memberOf! ()
+    * Retrieves a list of resources, possibly filtered.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/youtube.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.part The part parameter specifies a comma-separated list of commentThread resource properties that the API response will include. You must at least include the snippet part in the parameter value since that part contains all of the properties that the API request can update.
-    * @param {().CommentThread} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const youtube = google.youtube('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/youtube.force-ssl'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await youtube.commentThreads.list({
+    *     // Returns the comment threads of all videos of the channel and the channel comments as well.
+    *     allThreadsRelatedToChannelId: 'placeholder-value',
+    *     // Returns the comment threads for all the channel comments (ie does not include comments left on videos).
+    *     channelId: 'placeholder-value',
+    *     // Returns the comment threads with the given IDs for Stubby or Apiary.
+    *     id: 'placeholder-value',
+    *     // The *maxResults* parameter specifies the maximum number of items that should be returned in the result set.
+    *     maxResults: 'placeholder-value',
+    *     // Limits the returned comment threads to those with the specified moderation status. Not compatible with the 'id' filter. Valid values: published, heldForReview, likelySpam.
+    *     moderationStatus: 'placeholder-value',
+    *
+    *     order: 'placeholder-value',
+    *     // The *pageToken* parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.
+    *     pageToken: 'placeholder-value',
+    *     // The *part* parameter specifies a comma-separated list of one or more commentThread resource properties that the API response will include.
+    *     part: 'placeholder-value',
+    *     // Limits the returned comment threads to those matching the specified key words. Not compatible with the 'id' filter.
+    *     searchTerms: 'placeholder-value',
+    *     // The requested text format for the returned comments.
+    *     textFormat: 'placeholder-value',
+    *     // Returns the comment threads of the specified video.
+    *     videoId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "eventId": "my_eventId",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "pageInfo": {},
+    *   //   "tokenPagination": {},
+    *   //   "visitorId": "my_visitorId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def update(): GaxiosPromise[SchemaCommentThread] = js.native
-  def update(callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
-  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
-  def update(params: ParamsResourceCommentthreadsUpdate): GaxiosPromise[SchemaCommentThread] = js.native
-  def update(params: ParamsResourceCommentthreadsUpdate, callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
-  def update(
-    params: ParamsResourceCommentthreadsUpdate,
-    options: BodyResponseCallback[SchemaCommentThread],
-    callback: BodyResponseCallback[SchemaCommentThread]
-  ): Unit = js.native
-  def update(params: ParamsResourceCommentthreadsUpdate, options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
-  def update(
-    params: ParamsResourceCommentthreadsUpdate,
-    options: MethodOptions,
-    callback: BodyResponseCallback[SchemaCommentThread]
+  def list(params: ParamsResourceCommentthreadsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceCommentthreadsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

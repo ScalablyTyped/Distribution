@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "Status")
 @js.native
-class Status protected ()
+open class Status protected ()
   extends typings.guacamoleClient.statusMod.Status {
   /**
     * @param code The Guacamole status code, as defined by Guacamole.Status.Code.

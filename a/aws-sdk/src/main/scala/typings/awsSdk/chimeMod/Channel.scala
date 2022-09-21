@@ -12,27 +12,27 @@ trait Channel extends StObject {
   var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
-    * The administrator who created the channel.
+    * The AppInstanceUser who created the channel.
     */
   var CreatedBy: js.UndefOr[Identity] = js.undefined
   
   /**
-    * The time at which the administrator created the channel.
+    * The time at which the AppInstanceUser created the channel.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The time at which a member sent the last message in a session.
+    * The time at which a member sent the last message in the channel.
     */
-  var LastMessageTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastMessageTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time at which a channel was last updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The metadata of the channel.
+    * The channel's metadata.
     */
   var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
@@ -47,7 +47,7 @@ trait Channel extends StObject {
   var Name: js.UndefOr[NonEmptyResourceName] = js.undefined
   
   /**
-    * The channel's privacy setting, PUBLIC or HIDDEN.
+    * The channel's privacy setting.
     */
   var Privacy: js.UndefOr[ChannelPrivacy] = js.undefined
 }
@@ -68,15 +68,15 @@ object Channel {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    inline def setLastMessageTimestamp(value: Timestamp): Self = StObject.set(x, "LastMessageTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastMessageTimestamp(value: js.Date): Self = StObject.set(x, "LastMessageTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastMessageTimestampUndefined: Self = StObject.set(x, "LastMessageTimestamp", js.undefined)
     
-    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRDefaultExperience")
 @js.native
-/* private */ class WebXRDefaultExperience ()
+/* private */ open class WebXRDefaultExperience ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRDefaultExperience {
   
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var baseExperience: typings.babylonjs.BABYLON.WebXRExperienceHelper = js.native
   
   /**
-    * DIsposes of the experience helper
+    * Disposes of the experience helper
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
@@ -34,6 +34,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   /* CompleteClass */
   var input: typings.babylonjs.BABYLON.WebXRInput = js.native
+  
+  /**
+    * Enables near interaction for hands/controllers
+    */
+  /* CompleteClass */
+  var nearInteraction: typings.babylonjs.BABYLON.WebXRNearInteraction = js.native
   
   /**
     * Enables laser pointer and selection

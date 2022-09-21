@@ -42,7 +42,7 @@ object GeocodingComponents {
     
     inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    inline def setCountryVarargs(value: String*): Self = StObject.set(x, "country", js.Array(value :_*))
+    inline def setCountryVarargs(value: String*): Self = StObject.set(x, "country", js.Array(value*))
     
     inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     

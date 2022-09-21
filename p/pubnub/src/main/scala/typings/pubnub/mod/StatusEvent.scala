@@ -41,11 +41,11 @@ object StatusEvent {
     
     inline def setAffectedChannelGroups(value: js.Array[String]): Self = StObject.set(x, "affectedChannelGroups", value.asInstanceOf[js.Any])
     
-    inline def setAffectedChannelGroupsVarargs(value: String*): Self = StObject.set(x, "affectedChannelGroups", js.Array(value :_*))
+    inline def setAffectedChannelGroupsVarargs(value: String*): Self = StObject.set(x, "affectedChannelGroups", js.Array(value*))
     
     inline def setAffectedChannels(value: js.Array[String]): Self = StObject.set(x, "affectedChannels", value.asInstanceOf[js.Any])
     
-    inline def setAffectedChannelsVarargs(value: String*): Self = StObject.set(x, "affectedChannels", js.Array(value :_*))
+    inline def setAffectedChannelsVarargs(value: String*): Self = StObject.set(x, "affectedChannels", js.Array(value*))
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -57,6 +57,6 @@ object StatusEvent {
     
     inline def setSubscribedChannels(value: js.Array[String]): Self = StObject.set(x, "subscribedChannels", value.asInstanceOf[js.Any])
     
-    inline def setSubscribedChannelsVarargs(value: String*): Self = StObject.set(x, "subscribedChannels", js.Array(value :_*))
+    inline def setSubscribedChannelsVarargs(value: String*): Self = StObject.set(x, "subscribedChannels", js.Array(value*))
   }
 }

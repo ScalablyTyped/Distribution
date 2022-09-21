@@ -54,7 +54,7 @@ object AutoScalingThresholds {
     
     inline def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
     
-    inline def setAlarmsVarargs(value: String*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: String*): Self = StObject.set(x, "Alarms", js.Array(value*))
     
     inline def setCpuThreshold(value: Double): Self = StObject.set(x, "CpuThreshold", value.asInstanceOf[js.Any])
     

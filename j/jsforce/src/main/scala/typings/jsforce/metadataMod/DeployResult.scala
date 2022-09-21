@@ -81,7 +81,7 @@ object DeployResult {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setDetailsVarargs(value: js.Object*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: js.Object*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

@@ -23,10 +23,9 @@ import typings.nobleMac.nobleMacStrings.stateChange
 import typings.nobleMac.nobleMacStrings.valueRead
 import typings.nobleMac.nobleMacStrings.valueWrite
 import typings.nobleMac.nobleMacStrings.write
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ object mod {
   
   @JSImport("noble-mac", "Characteristic")
   @js.native
-  class Characteristic () extends EventEmitter {
+  open class Characteristic () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     def broadcast(broadcast: Boolean): Unit = js.native
@@ -55,14 +54,11 @@ object mod {
     def notify(notify: Boolean): Unit = js.native
     def notify(notify: Boolean, callback: js.Function1[/* error */ String, Unit]): Unit = js.native
     
+    def on(event: broadcast | notify, listener: js.Function1[/* state */ String, Unit]): this.type = js.native
     def on(event: String, listener: js.Function): this.type = js.native
     def on(event: String, option: Boolean, listener: js.Function): this.type = js.native
     @JSName("on")
-    def on_broadcast(event: broadcast, listener: js.Function1[/* state */ String, Unit]): this.type = js.native
-    @JSName("on")
     def on_descriptorsDiscover(event: descriptorsDiscover, listener: js.Function1[/* descriptors */ js.Array[Descriptor], Unit]): this.type = js.native
-    @JSName("on")
-    def on_notify(event: notify, listener: js.Function1[/* state */ String, Unit]): this.type = js.native
     @JSName("on")
     def on_read(event: read, listener: js.Function2[/* data */ Buffer, /* isNotification */ Boolean, Unit]): this.type = js.native
     @JSName("on")
@@ -89,7 +85,7 @@ object mod {
   
   @JSImport("noble-mac", "Descriptor")
   @js.native
-  class Descriptor () extends EventEmitter {
+  open class Descriptor () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     var name: String = js.native
@@ -113,7 +109,7 @@ object mod {
   
   @JSImport("noble-mac", "Peripheral")
   @js.native
-  class Peripheral () extends EventEmitter {
+  open class Peripheral () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     var address: String = js.native
@@ -160,11 +156,8 @@ object mod {
     
     var id: String = js.native
     
+    def on(event: connect | disconnect, listener: js.Function1[/* error */ String, Unit]): this.type = js.native
     def on(event: String, listener: js.Function): this.type = js.native
-    @JSName("on")
-    def on_connect(event: connect, listener: js.Function1[/* error */ String, Unit]): this.type = js.native
-    @JSName("on")
-    def on_disconnect(event: disconnect, listener: js.Function1[/* error */ String, Unit]): this.type = js.native
     @JSName("on")
     def on_rssiUpdate(event: rssiUpdate, listener: js.Function1[/* rssi */ Double, Unit]): this.type = js.native
     @JSName("on")
@@ -193,7 +186,7 @@ object mod {
   
   @JSImport("noble-mac", "Service")
   @js.native
-  class Service () extends EventEmitter {
+  open class Service () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     var characteristics: js.Array[Characteristic] = js.native
@@ -231,39 +224,33 @@ object mod {
     var uuid: String = js.native
   }
   
+  inline def on(event: scanStart | scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   inline def on(event: String, listener: js.Function): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
   inline def on_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
-  
-  inline def on_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
-  
-  inline def on_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
   inline def on_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
   inline def removeAllListeners(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[EventEmitter]
   inline def removeAllListeners(event: String): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
   
+  inline def removeListener(event: scanStart | scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   inline def removeListener(event: String, listener: js.Function): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
   inline def removeListener_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  inline def removeListener_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
-  
-  inline def removeListener_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
-  
   inline def removeListener_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
   inline def startScanning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")().asInstanceOf[Unit]
-  inline def startScanning(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startScanning(callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def startScanning(serviceUUIDs: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def startScanning(serviceUUIDs: js.Array[String], allowDuplicates: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], allowDuplicates.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def startScanning(
     serviceUUIDs: js.Array[String],
     allowDuplicates: Boolean,
-    callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], allowDuplicates.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def startScanning(serviceUUIDs: js.Array[String], callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def startScanning(serviceUUIDs: js.Array[String], callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("noble-mac", "state")
   @js.native
@@ -307,7 +294,7 @@ object mod {
       
       inline def setServiceUuids(value: js.Array[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
       
-      inline def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value :_*))
+      inline def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value*))
       
       inline def setTxPowerLevel(value: Double): Self = StObject.set(x, "txPowerLevel", value.asInstanceOf[js.Any])
     }

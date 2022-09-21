@@ -5,35 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type HammerListener = js.Function1[/* event */ typings.hammerjs.HammerInput, scala.Unit]
+type HammerListener = js.Function1[/* event */ HammerInput, Unit]
 
-type MouseInput = typings.hammerjs.HammerInput
+type MouseInput = HammerInput
 
-type PanRecognizer = typings.hammerjs.AttrRecognizer
+type PanRecognizer = AttrRecognizer
 
-type PinchRecognizer = typings.hammerjs.AttrRecognizer
+type PinchRecognizer = AttrRecognizer
 
-type PointerEventInput = typings.hammerjs.HammerInput
+type PointerEventInput = HammerInput
 
-type PressRecognizer = typings.hammerjs.AttrRecognizer
+type PressRecognizer = AttrRecognizer
 
-type RecognizerTuple = js.Array[typings.hammerjs.RecognizerStatic] | (js.Tuple2[typings.hammerjs.RecognizerStatic, typings.hammerjs.RecognizerOptions]) | (js.Tuple3[
-typings.hammerjs.RecognizerStatic, 
-typings.hammerjs.RecognizerOptions, 
-java.lang.String | js.Array[java.lang.String]]) | (js.Tuple4[
-typings.hammerjs.RecognizerStatic, 
-typings.hammerjs.RecognizerOptions, 
-java.lang.String | js.Array[java.lang.String], 
-java.lang.String | typings.hammerjs.Recognizer | (js.Array[java.lang.String | typings.hammerjs.Recognizer])])
+type RecognizerTuple = js.Array[RecognizerStatic] | (js.Tuple2[RecognizerStatic, RecognizerOptions]) | (js.Tuple3[RecognizerStatic, RecognizerOptions, String | js.Array[String]]) | (js.Tuple4[
+RecognizerStatic, 
+RecognizerOptions, 
+String | js.Array[String], 
+String | Recognizer | (js.Array[String | Recognizer])])
 
-type RotateRecognizer = typings.hammerjs.AttrRecognizer
+type RotateRecognizer = AttrRecognizer
 
-type SingleTouchInput = typings.hammerjs.HammerInput
+type SingleTouchInput = HammerInput
 
-type SwipeRecognizer = typings.hammerjs.AttrRecognizer
+type SwipeRecognizer = AttrRecognizer
 
-type TapRecognizer = typings.hammerjs.AttrRecognizer
+type TapRecognizer = AttrRecognizer
 
-type TouchInput = typings.hammerjs.HammerInput
+type TouchInput = HammerInput
 
-type TouchMouseInput = typings.hammerjs.HammerInput
+type TouchMouseInput = HammerInput

@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Card {
   
-  type Card = Component[CardProps, js.Object, js.Any]
+  type Card = Component[CardProps, js.Object, Any]
   
-  type CardActions = Component[CardActionsProps, js.Object, js.Any]
+  type CardActions = Component[CardActionsProps, js.Object, Any]
   
   trait CardActionsProps extends StObject {
     
     var actAsExpander: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -38,6 +40,10 @@ object Card {
       
       inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -56,7 +62,7 @@ object Card {
     }
   }
   
-  type CardExpandable = Component[CardExpandableProps, js.Object, js.Any]
+  type CardExpandable = Component[CardExpandableProps, js.Object, Any]
   
   trait CardExpandableProps extends StObject {
     
@@ -89,7 +95,7 @@ object Card {
     }
   }
   
-  type CardHeader = Component[CardHeaderProps, js.Object, js.Any]
+  type CardHeader = Component[CardHeaderProps, js.Object, Any]
   
   trait CardHeaderProps extends StObject {
     
@@ -200,11 +206,13 @@ object Card {
     }
   }
   
-  type CardMedia = Component[CardMediaProps, js.Object, js.Any]
+  type CardMedia = Component[CardMediaProps, js.Object, Any]
   
   trait CardMediaProps extends StObject {
     
     var actAsExpander: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var expandable: js.UndefOr[Boolean] = js.undefined
     
@@ -232,6 +240,10 @@ object Card {
       inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
       inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
@@ -267,6 +279,8 @@ object Card {
     
     var actAsExpander: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var containerStyle: js.UndefOr[CSSProperties] = js.undefined
@@ -295,6 +309,10 @@ object Card {
       inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
       inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -330,11 +348,13 @@ object Card {
     }
   }
   
-  type CardText = Component[CardTextProps, js.Object, js.Any]
+  type CardText = Component[CardTextProps, js.Object, Any]
   
   trait CardTextProps extends StObject {
     
     var actAsExpander: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -357,6 +377,10 @@ object Card {
       
       inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -375,7 +399,7 @@ object Card {
     }
   }
   
-  type CardTitle = Component[CardTitleProps, js.Object, js.Any]
+  type CardTitle = Component[CardTitleProps, js.Object, Any]
   
   trait CardTitleProps extends StObject {
     

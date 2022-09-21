@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Point")
 @js.native
-class Point ()
+open class Point ()
   extends StObject
      with typings.easeljs.createjs.Point {
   def this(x: Double) = this()

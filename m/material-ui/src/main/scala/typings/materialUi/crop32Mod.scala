@@ -10,10 +10,10 @@ object crop32Mod {
   
   @JSImport("material-ui/svg-icons/image/crop-3-2", JSImport.Default)
   @js.native
-  class default () extends ImageCrop32
+  open class default () extends ImageCrop32
   
   @JSImport("material-ui/svg-icons/image/crop-3-2", "ImageCrop32")
   @js.native
-  class ImageCrop32 ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCrop32 ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

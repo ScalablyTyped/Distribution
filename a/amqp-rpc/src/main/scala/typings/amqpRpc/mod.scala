@@ -14,16 +14,16 @@ object mod {
   
   @JSImport("amqp-rpc", "amqpRPC")
   @js.native
-  class amqpRPC () extends StObject {
+  open class amqpRPC () extends StObject {
     def this(opt: Options) = this()
     
     def call[T](cmd: String, params: T): String = js.native
-    def call[T](cmd: String, params: T, cb: Unit, context: js.Any): String = js.native
-    def call[T](cmd: String, params: T, cb: Unit, context: js.Any, options: CallOptions): String = js.native
+    def call[T](cmd: String, params: T, cb: Unit, context: Any): String = js.native
+    def call[T](cmd: String, params: T, cb: Unit, context: Any, options: CallOptions): String = js.native
     def call[T](cmd: String, params: T, cb: Unit, context: Unit, options: CallOptions): String = js.native
     def call[T](cmd: String, params: T, cb: Callback): String = js.native
-    def call[T](cmd: String, params: T, cb: Callback, context: js.Any): String = js.native
-    def call[T](cmd: String, params: T, cb: Callback, context: js.Any, options: CallOptions): String = js.native
+    def call[T](cmd: String, params: T, cb: Callback, context: Any): String = js.native
+    def call[T](cmd: String, params: T, cb: Callback, context: Any, options: CallOptions): String = js.native
     def call[T](cmd: String, params: T, cb: Callback, context: Unit, options: CallOptions): String = js.native
     
     def callBroadcast[T](cmd: String, params: T): Unit = js.native
@@ -54,7 +54,7 @@ object mod {
           /* info */ js.UndefOr[CommandInfo], 
           Unit
         ],
-      context: js.Any
+      context: Any
     ): Boolean = js.native
     def on[T](
       cmd: String,
@@ -64,7 +64,7 @@ object mod {
           /* info */ js.UndefOr[CommandInfo], 
           Unit
         ],
-      context: js.Any,
+      context: Any,
       options: HandlerOptions
     ): Boolean = js.native
     def on[T](
@@ -87,23 +87,23 @@ object mod {
     def onBroadcast[T](
       cmd: String,
       cb: js.Function2[/* params */ js.UndefOr[T], /* cb */ js.UndefOr[CallbackWithError], Unit],
-      context: js.Any
+      context: Any
     ): Boolean = js.native
     def onBroadcast[T](
       cmd: String,
       cb: js.Function2[/* params */ js.UndefOr[T], /* cb */ js.UndefOr[CallbackWithError], Unit],
-      context: js.Any,
-      options: js.Any
+      context: Any,
+      options: Any
     ): Boolean = js.native
     def onBroadcast[T](
       cmd: String,
       cb: js.Function2[/* params */ js.UndefOr[T], /* cb */ js.UndefOr[CallbackWithError], Unit],
       context: Unit,
-      options: js.Any
+      options: Any
     ): Boolean = js.native
-    def onBroadcast[T](cmd: String, cb: Unit, context: js.Any): Boolean = js.native
-    def onBroadcast[T](cmd: String, cb: Unit, context: js.Any, options: js.Any): Boolean = js.native
-    def onBroadcast[T](cmd: String, cb: Unit, context: Unit, options: js.Any): Boolean = js.native
+    def onBroadcast[T](cmd: String, cb: Unit, context: Any): Boolean = js.native
+    def onBroadcast[T](cmd: String, cb: Unit, context: Any, options: Any): Boolean = js.native
+    def onBroadcast[T](cmd: String, cb: Unit, context: Unit, options: Any): Boolean = js.native
   }
   
   inline def factory(): amqpRPC = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")().asInstanceOf[amqpRPC]
@@ -111,11 +111,11 @@ object mod {
   
   trait BroadcastOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
-    var onComplete: js.UndefOr[js.Any] = js.undefined
+    var onComplete: js.UndefOr[Any] = js.undefined
     
-    var onResponse: js.UndefOr[js.Any] = js.undefined
+    var onResponse: js.UndefOr[Any] = js.undefined
     
     var ttl: js.UndefOr[Double] = js.undefined
   }
@@ -128,15 +128,15 @@ object mod {
     
     extension [Self <: BroadcastOptions](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setOnComplete(value: js.Any): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+      inline def setOnComplete(value: Any): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      inline def setOnResponse(value: js.Any): Self = StObject.set(x, "onResponse", value.asInstanceOf[js.Any])
+      inline def setOnResponse(value: Any): Self = StObject.set(x, "onResponse", value.asInstanceOf[js.Any])
       
       inline def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
       
@@ -148,7 +148,7 @@ object mod {
   
   trait CallOptions extends StObject {
     
-    var autoDeleteCallback: js.UndefOr[js.Any] = js.undefined
+    var autoDeleteCallback: js.UndefOr[Any] = js.undefined
     
     var correlationId: js.UndefOr[String] = js.undefined
   }
@@ -161,7 +161,7 @@ object mod {
     
     extension [Self <: CallOptions](x: Self) {
       
-      inline def setAutoDeleteCallback(value: js.Any): Self = StObject.set(x, "autoDeleteCallback", value.asInstanceOf[js.Any])
+      inline def setAutoDeleteCallback(value: Any): Self = StObject.set(x, "autoDeleteCallback", value.asInstanceOf[js.Any])
       
       inline def setAutoDeleteCallbackUndefined: Self = StObject.set(x, "autoDeleteCallback", js.undefined)
       
@@ -171,9 +171,9 @@ object mod {
     }
   }
   
-  type Callback = js.Function1[/* repeated */ js.Any, Unit]
+  type Callback = js.Function1[/* repeated */ Any, Unit]
   
-  type CallbackWithError = js.Function2[/* err */ js.Any, /* repeated */ js.Any, Unit]
+  type CallbackWithError = js.Function2[/* err */ Any, /* repeated */ Any, Unit]
   
   trait CommandInfo extends StObject {
     
@@ -251,13 +251,13 @@ object mod {
   
   trait Options extends StObject {
     
-    var conn_options: js.UndefOr[js.Any] = js.undefined
+    var conn_options: js.UndefOr[Any] = js.undefined
     
-    var connection: js.UndefOr[js.Any] = js.undefined
+    var connection: js.UndefOr[Any] = js.undefined
     
     var exchange: js.UndefOr[String] = js.undefined
     
-    var exchangeInstance: js.UndefOr[js.Any] = js.undefined
+    var exchangeInstance: js.UndefOr[Any] = js.undefined
     
     var exchange_options: js.UndefOr[AutoDelete] = js.undefined
     
@@ -274,17 +274,17 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setConn_options(value: js.Any): Self = StObject.set(x, "conn_options", value.asInstanceOf[js.Any])
+      inline def setConn_options(value: Any): Self = StObject.set(x, "conn_options", value.asInstanceOf[js.Any])
       
       inline def setConn_optionsUndefined: Self = StObject.set(x, "conn_options", js.undefined)
       
-      inline def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
       inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
       
       inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
       
-      inline def setExchangeInstance(value: js.Any): Self = StObject.set(x, "exchangeInstance", value.asInstanceOf[js.Any])
+      inline def setExchangeInstance(value: Any): Self = StObject.set(x, "exchangeInstance", value.asInstanceOf[js.Any])
       
       inline def setExchangeInstanceUndefined: Self = StObject.set(x, "exchangeInstance", js.undefined)
       

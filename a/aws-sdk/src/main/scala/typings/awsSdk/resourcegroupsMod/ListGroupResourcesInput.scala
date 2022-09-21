@@ -17,7 +17,7 @@ trait ListGroupResourcesInput extends StObject {
   var Group: js.UndefOr[GroupString] = js.undefined
   
   /**
-    * Don't use this parameter. Use Group instead.
+    *    Deprecated - don't use this parameter. Use the Group request field instead.   
     */
   var GroupName: js.UndefOr[typings.awsSdk.resourcegroupsMod.GroupName] = js.undefined
   
@@ -44,7 +44,7 @@ object ListGroupResourcesInput {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: ResourceFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ResourceFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

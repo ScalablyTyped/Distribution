@@ -4,6 +4,7 @@ import typings.plotlyJs.anon.PartialEdits
 import typings.plotlyJs.anon.Partialfilenamestringscal
 import typings.plotlyJs.mod.ModeBarButton
 import typings.plotlyJs.mod.ModeBarDefaultButtons
+import typings.plotlyJs.mod.PlotlyHTMLElement
 import typings.reactPlotlyJs.reactPlotlyJsBooleans.`false`
 import typings.reactPlotlyJs.reactPlotlyJsNumbers.`0`
 import typings.reactPlotlyJs.reactPlotlyJsNumbers.`1`
@@ -29,6 +30,8 @@ trait PartialConfig extends StObject {
   
   var doubleClick: js.UndefOr[resetPlussignautosize | reset | autosize | `false`] = js.undefined
   
+  var doubleClickDelay: js.UndefOr[Double] = js.undefined
+  
   var editable: js.UndefOr[Boolean] = js.undefined
   
   var edits: js.UndefOr[PartialEdits] = js.undefined
@@ -37,11 +40,13 @@ trait PartialConfig extends StObject {
   
   var frameMargins: js.UndefOr[Double] = js.undefined
   
-  var globalTransforms: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var globalTransforms: js.UndefOr[js.Array[Any]] = js.undefined
   
   var linkText: js.UndefOr[String] = js.undefined
   
   var locale: js.UndefOr[String] = js.undefined
+  
+  var locales: js.UndefOr[js.Object] = js.undefined
   
   var logging: js.UndefOr[Boolean | `0` | `1` | `2`] = js.undefined
   
@@ -65,7 +70,9 @@ trait PartialConfig extends StObject {
   
   var sendData: js.UndefOr[Boolean] = js.undefined
   
-  var setBackground: js.UndefOr[js.Function0[String | opaque | transparent]] = js.undefined
+  var setBackground: js.UndefOr[
+    (js.Function2[/* gd */ PlotlyHTMLElement, /* bgColor */ String, Unit]) | opaque | transparent
+  ] = js.undefined
   
   var showAxisDragHandles: js.UndefOr[Boolean] = js.undefined
   
@@ -86,6 +93,10 @@ trait PartialConfig extends StObject {
   var toImageButtonOptions: js.UndefOr[Partialfilenamestringscal] = js.undefined
   
   var topojsonURL: js.UndefOr[String] = js.undefined
+  
+  var typesetMath: js.UndefOr[Boolean] = js.undefined
+  
+  var watermark: js.UndefOr[Boolean] = js.undefined
 }
 object PartialConfig {
   
@@ -110,6 +121,10 @@ object PartialConfig {
     
     inline def setDoubleClick(value: resetPlussignautosize | reset | autosize | `false`): Self = StObject.set(x, "doubleClick", value.asInstanceOf[js.Any])
     
+    inline def setDoubleClickDelay(value: Double): Self = StObject.set(x, "doubleClickDelay", value.asInstanceOf[js.Any])
+    
+    inline def setDoubleClickDelayUndefined: Self = StObject.set(x, "doubleClickDelay", js.undefined)
+    
     inline def setDoubleClickUndefined: Self = StObject.set(x, "doubleClick", js.undefined)
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
@@ -128,11 +143,11 @@ object PartialConfig {
     
     inline def setFrameMarginsUndefined: Self = StObject.set(x, "frameMargins", js.undefined)
     
-    inline def setGlobalTransforms(value: js.Array[js.Any]): Self = StObject.set(x, "globalTransforms", value.asInstanceOf[js.Any])
+    inline def setGlobalTransforms(value: js.Array[Any]): Self = StObject.set(x, "globalTransforms", value.asInstanceOf[js.Any])
     
     inline def setGlobalTransformsUndefined: Self = StObject.set(x, "globalTransforms", js.undefined)
     
-    inline def setGlobalTransformsVarargs(value: js.Any*): Self = StObject.set(x, "globalTransforms", js.Array(value :_*))
+    inline def setGlobalTransformsVarargs(value: Any*): Self = StObject.set(x, "globalTransforms", js.Array(value*))
     
     inline def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
     
@@ -141,6 +156,10 @@ object PartialConfig {
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setLocales(value: js.Object): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+    
+    inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
     inline def setLogging(value: Boolean | `0` | `1` | `2`): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
@@ -156,17 +175,17 @@ object PartialConfig {
     
     inline def setModeBarButtonsToAddUndefined: Self = StObject.set(x, "modeBarButtonsToAdd", js.undefined)
     
-    inline def setModeBarButtonsToAddVarargs(value: (ModeBarButton | ModeBarDefaultButtons)*): Self = StObject.set(x, "modeBarButtonsToAdd", js.Array(value :_*))
+    inline def setModeBarButtonsToAddVarargs(value: (ModeBarButton | ModeBarDefaultButtons)*): Self = StObject.set(x, "modeBarButtonsToAdd", js.Array(value*))
     
     inline def setModeBarButtonsToRemove(value: js.Array[ModeBarDefaultButtons]): Self = StObject.set(x, "modeBarButtonsToRemove", value.asInstanceOf[js.Any])
     
     inline def setModeBarButtonsToRemoveUndefined: Self = StObject.set(x, "modeBarButtonsToRemove", js.undefined)
     
-    inline def setModeBarButtonsToRemoveVarargs(value: ModeBarDefaultButtons*): Self = StObject.set(x, "modeBarButtonsToRemove", js.Array(value :_*))
+    inline def setModeBarButtonsToRemoveVarargs(value: ModeBarDefaultButtons*): Self = StObject.set(x, "modeBarButtonsToRemove", js.Array(value*))
     
     inline def setModeBarButtonsUndefined: Self = StObject.set(x, "modeBarButtons", js.undefined)
     
-    inline def setModeBarButtonsVarargs(value: (js.Array[ModeBarButton | ModeBarDefaultButtons])*): Self = StObject.set(x, "modeBarButtons", js.Array(value :_*))
+    inline def setModeBarButtonsVarargs(value: (js.Array[ModeBarButton | ModeBarDefaultButtons])*): Self = StObject.set(x, "modeBarButtons", js.Array(value*))
     
     inline def setPlotGlPixelRatio(value: Double): Self = StObject.set(x, "plotGlPixelRatio", value.asInstanceOf[js.Any])
     
@@ -192,7 +211,11 @@ object PartialConfig {
     
     inline def setSendDataUndefined: Self = StObject.set(x, "sendData", js.undefined)
     
-    inline def setSetBackground(value: () => String | opaque | transparent): Self = StObject.set(x, "setBackground", js.Any.fromFunction0(value))
+    inline def setSetBackground(
+      value: (js.Function2[/* gd */ PlotlyHTMLElement, /* bgColor */ String, Unit]) | opaque | transparent
+    ): Self = StObject.set(x, "setBackground", value.asInstanceOf[js.Any])
+    
+    inline def setSetBackgroundFunction2(value: (/* gd */ PlotlyHTMLElement, /* bgColor */ String) => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction2(value))
     
     inline def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
     
@@ -235,5 +258,13 @@ object PartialConfig {
     inline def setTopojsonURL(value: String): Self = StObject.set(x, "topojsonURL", value.asInstanceOf[js.Any])
     
     inline def setTopojsonURLUndefined: Self = StObject.set(x, "topojsonURL", js.undefined)
+    
+    inline def setTypesetMath(value: Boolean): Self = StObject.set(x, "typesetMath", value.asInstanceOf[js.Any])
+    
+    inline def setTypesetMathUndefined: Self = StObject.set(x, "typesetMath", js.undefined)
+    
+    inline def setWatermark(value: Boolean): Self = StObject.set(x, "watermark", value.asInstanceOf[js.Any])
+    
+    inline def setWatermarkUndefined: Self = StObject.set(x, "watermark", js.undefined)
   }
 }

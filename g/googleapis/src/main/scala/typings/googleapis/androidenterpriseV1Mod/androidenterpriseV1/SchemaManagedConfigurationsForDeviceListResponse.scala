@@ -4,16 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The managed configuration resources for the device.
-  */
 trait SchemaManagedConfigurationsForDeviceListResponse extends StObject {
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#managedConfigurationsForDeviceListResponse&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A managed configuration for an app on a specific device.
@@ -29,14 +20,10 @@ object SchemaManagedConfigurationsForDeviceListResponse {
   
   extension [Self <: SchemaManagedConfigurationsForDeviceListResponse](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setManagedConfigurationForDevice(value: js.Array[SchemaManagedConfiguration]): Self = StObject.set(x, "managedConfigurationForDevice", value.asInstanceOf[js.Any])
     
     inline def setManagedConfigurationForDeviceUndefined: Self = StObject.set(x, "managedConfigurationForDevice", js.undefined)
     
-    inline def setManagedConfigurationForDeviceVarargs(value: SchemaManagedConfiguration*): Self = StObject.set(x, "managedConfigurationForDevice", js.Array(value :_*))
+    inline def setManagedConfigurationForDeviceVarargs(value: SchemaManagedConfiguration*): Self = StObject.set(x, "managedConfigurationForDevice", js.Array(value*))
   }
 }

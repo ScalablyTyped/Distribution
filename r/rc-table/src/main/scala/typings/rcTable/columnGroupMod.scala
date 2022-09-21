@@ -12,6 +12,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.react.mod.TdHTMLAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +28,7 @@ object columnGroupMod {
     * This is a syntactic sugar for `columns` prop.
     * So HOC will not work on this.
     */
-  inline def default[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default[RecordType](_underscore: ColumnGroupProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* Inlined parent std.Omit<rc-table.rc-table/lib/interface.ColumnType<RecordType>, 'children'> */
   trait ColumnGroupProps[RecordType] extends StObject {
@@ -62,7 +63,7 @@ object columnGroupMod {
     
     var render: js.UndefOr[
         js.Function3[
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* record */ RecordType, 
           /* index */ Double, 
           ReactNode | RenderedCell[RecordType]
@@ -92,7 +93,7 @@ object columnGroupMod {
       
       inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,7 @@ object columnGroupMod {
       
       inline def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
       
-      inline def setDataIndexVarargs(value: (String | Double)*): Self = StObject.set(x, "dataIndex", js.Array(value :_*))
+      inline def setDataIndexVarargs(value: (String | Double)*): Self = StObject.set(x, "dataIndex", js.Array(value*))
       
       inline def setEllipsis(value: CellEllipsisType): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,7 @@ object columnGroupMod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setOnCell(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = StObject.set(x, "onCell", js.Any.fromFunction2(value))
+      inline def setOnCell(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]): Self = StObject.set(x, "onCell", js.Any.fromFunction2(value))
       
       inline def setOnCellClick(value: (/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
       
@@ -129,13 +130,13 @@ object columnGroupMod {
       inline def setOnCellUndefined: Self = StObject.set(x, "onCell", js.undefined)
       
       inline def setOnHeaderCell(
-        value: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]
+        value: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]
       ): Self = StObject.set(x, "onHeaderCell", js.Any.fromFunction2(value))
       
       inline def setOnHeaderCellUndefined: Self = StObject.set(x, "onHeaderCell", js.undefined)
       
       inline def setRender(
-        value: (/* value */ js.Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType]
+        value: (/* value */ Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType]
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCustomizeParameterEditorsEventArgs")
 @js.native
-class ASPxClientCustomizeParameterEditorsEventArgs protected ()
+open class ASPxClientCustomizeParameterEditorsEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCustomizeParameterEditorsEventArgs {
   /**

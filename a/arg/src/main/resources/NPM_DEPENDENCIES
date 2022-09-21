@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "arg" : "4.1.3"
+      "arg" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "arg" : "4.1.3"
+      "arg" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

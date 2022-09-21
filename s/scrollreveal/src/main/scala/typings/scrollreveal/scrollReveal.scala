@@ -15,6 +15,12 @@ object scrollReveal {
     def apply(): ScrollRevealObject = js.native
     def apply(options: ScrollRevealObjectOptions): ScrollRevealObject = js.native
     
+    def clean(selector: String): Unit = js.native
+    def clean(selector: HTMLElement): Unit = js.native
+    def clean(selector: NodeListOf[Element]): Unit = js.native
+    
+    def destroy(): Unit = js.native
+    
     def reveal(selector: String): ScrollRevealObject = js.native
     def reveal(selector: String, interval: Double): ScrollRevealObject = js.native
     def reveal(selector: String, options: ScrollRevealObjectOptions): ScrollRevealObject = js.native
@@ -41,7 +47,9 @@ object scrollReveal {
     
     var beforeReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
     
-    var container: js.UndefOr[js.Any] = js.undefined
+    var cleanup: js.UndefOr[Boolean] = js.undefined
+    
+    var container: js.UndefOr[Any] = js.undefined
     
     var delay: js.UndefOr[Double] = js.undefined
     
@@ -96,7 +104,11 @@ object scrollReveal {
       
       inline def setBeforeRevealUndefined: Self = StObject.set(x, "beforeReveal", js.undefined)
       
-      inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setCleanup(value: Boolean): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
+      
+      inline def setCleanupUndefined: Self = StObject.set(x, "cleanup", js.undefined)
+      
+      inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       

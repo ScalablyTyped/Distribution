@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "DualShockPad")
 @js.native
-class DualShockPad protected ()
+open class DualShockPad protected ()
   extends typings.babylonjs.indexMod.DualShockPad {
   /**
     * Creates a new DualShock gamepad object
@@ -14,5 +14,5 @@ class DualShockPad protected ()
     * @param index defines its index
     * @param gamepad defines the internal HTML gamepad object
     */
-  def this(id: String, index: Double, gamepad: js.Any) = this()
+  def this(id: String, index: Double, gamepad: Any) = this()
 }

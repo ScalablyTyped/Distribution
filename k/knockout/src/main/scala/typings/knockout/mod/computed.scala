@@ -21,5 +21,5 @@ object computed {
   
   @JSImport("knockout", "computed.fn")
   @js.native
-  val fn: ComputedFunctions[js.Any] = js.native
+  val fn: ComputedFunctions[Any] = js.native
 }

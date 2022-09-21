@@ -13,7 +13,7 @@ object utilsMod {
   
   inline def canUseDOM(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseDOM")().asInstanceOf[Boolean]
   
-  inline def combineRefs[T](refs: (js.UndefOr[(js.Function1[/* instance */ T | Null, Unit]) | RefObject[T] | Null])*): js.Function1[/* instance */ T | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineRefs")(refs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* instance */ T | Null, Unit]]
+  inline def combineRefs[T](refs: (js.UndefOr[(js.Function1[/* instance */ T | Null, Unit]) | RefObject[T] | Null])*): js.Function1[/* instance */ T | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineRefs")(refs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[/* instance */ T | Null, Unit]]
   
   inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
 }

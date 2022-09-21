@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRichEditAutoCorrectEventArgs")
 @js.native
-class ASPxClientRichEditAutoCorrectEventArgs protected ()
+open class ASPxClientRichEditAutoCorrectEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRichEditAutoCorrectEventArgs {
   /**
@@ -18,7 +18,7 @@ class ASPxClientRichEditAutoCorrectEventArgs protected ()
     * @param interval The Interval object specifying the input string.
     * @param handled true if the event is handled and no default processing is required; otherwise false.
     */
-  def this(text: js.Any, interval: js.Any, handled: js.Any) = this()
+  def this(text: Any, interval: Any, handled: Any) = this()
   
   /**
     * Specifies whether the event is handled.

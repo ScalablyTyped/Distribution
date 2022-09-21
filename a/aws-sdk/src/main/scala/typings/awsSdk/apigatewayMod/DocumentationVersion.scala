@@ -9,7 +9,7 @@ trait DocumentationVersion extends StObject {
   /**
     * The date when the API documentation snapshot is created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the API documentation snapshot.
@@ -30,7 +30,7 @@ object DocumentationVersion {
   
   extension [Self <: DocumentationVersion](x: Self) {
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     

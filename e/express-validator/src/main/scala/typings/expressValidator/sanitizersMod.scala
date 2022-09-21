@@ -11,6 +11,8 @@ object sanitizersMod {
   @js.native
   trait Sanitizers[Return] extends StObject {
     
+    def default(default_value: Any): Return = js.native
+    
     def blacklist(chars: String): Return = js.native
     
     def customSanitizer(sanitizer: CustomSanitizer): Return = js.native
@@ -22,6 +24,8 @@ object sanitizersMod {
     
     def normalizeEmail(): Return = js.native
     def normalizeEmail(options: NormalizeEmailOptions): Return = js.native
+    
+    def replace(values_to_replace: Any, new_value: Any): Return = js.native
     
     def rtrim(): Return = js.native
     def rtrim(chars: String): Return = js.native
@@ -40,6 +44,10 @@ object sanitizersMod {
     
     def toInt(): Return = js.native
     def toInt(radix: Double): Return = js.native
+    
+    def toLowerCase(): Return = js.native
+    
+    def toUpperCase(): Return = js.native
     
     def trim(): Return = js.native
     def trim(chars: String): Return = js.native

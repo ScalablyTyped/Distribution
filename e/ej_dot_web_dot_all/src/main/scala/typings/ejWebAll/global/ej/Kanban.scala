@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Kanban")
 @js.native
-class Kanban protected ()
+open class Kanban protected ()
   extends StObject
      with typings.ejWebAll.ej.Kanban {
   def this(element: JQuery) = this()
@@ -75,8 +75,8 @@ object Kanban {
   /* static member */
   @JSGlobal("ej.Kanban.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Kanban.SelectionType")
   @js.native

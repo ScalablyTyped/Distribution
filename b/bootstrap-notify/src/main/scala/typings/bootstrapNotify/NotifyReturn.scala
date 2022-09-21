@@ -13,11 +13,11 @@ trait NotifyReturn extends StObject {
   
   def close(): Unit
   
-  def update(command: String, update: js.Any): Unit
+  def update(command: String, update: Any): Unit
 }
 object NotifyReturn {
   
-  inline def apply($ele: JQuery[HTMLElement], close: () => Unit, update: (String, js.Any) => Unit): NotifyReturn = {
+  inline def apply($ele: JQuery[HTMLElement], close: () => Unit, update: (String, Any) => Unit): NotifyReturn = {
     val __obj = js.Dynamic.literal($ele = $ele.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[NotifyReturn]
   }
@@ -28,6 +28,6 @@ object NotifyReturn {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    inline def setUpdate(value: (String, js.Any) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (String, Any) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

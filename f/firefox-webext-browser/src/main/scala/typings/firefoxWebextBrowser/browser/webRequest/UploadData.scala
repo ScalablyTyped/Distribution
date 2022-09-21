@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UploadData extends StObject {
   
   /** An ArrayBuffer with a copy of the data. */
-  var bytes: js.UndefOr[js.Any] = js.undefined
+  var bytes: js.UndefOr[Any] = js.undefined
   
   /** A string with the file's path and name. */
   var file: js.UndefOr[String] = js.undefined
@@ -22,7 +22,7 @@ object UploadData {
   
   extension [Self <: UploadData](x: Self) {
     
-    inline def setBytes(value: js.Any): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: Any): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     

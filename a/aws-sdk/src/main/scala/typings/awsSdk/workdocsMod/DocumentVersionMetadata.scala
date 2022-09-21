@@ -9,12 +9,12 @@ trait DocumentVersionMetadata extends StObject {
   /**
     * The timestamp when the content of the document was originally created.
     */
-  var ContentCreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var ContentCreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The timestamp when the content of the document was modified.
     */
-  var ContentModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var ContentModifiedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The content type of the document.
@@ -24,7 +24,7 @@ trait DocumentVersionMetadata extends StObject {
   /**
     * The timestamp when the document was first uploaded.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the creator.
@@ -39,7 +39,7 @@ trait DocumentVersionMetadata extends StObject {
   /**
     * The timestamp when the document was last uploaded.
     */
-  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var ModifiedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the version.
@@ -80,11 +80,11 @@ object DocumentVersionMetadata {
   
   extension [Self <: DocumentVersionMetadata](x: Self) {
     
-    inline def setContentCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentCreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setContentCreatedTimestamp(value: js.Date): Self = StObject.set(x, "ContentCreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setContentCreatedTimestampUndefined: Self = StObject.set(x, "ContentCreatedTimestamp", js.undefined)
     
-    inline def setContentModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setContentModifiedTimestamp(value: js.Date): Self = StObject.set(x, "ContentModifiedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setContentModifiedTimestampUndefined: Self = StObject.set(x, "ContentModifiedTimestamp", js.undefined)
     
@@ -92,7 +92,7 @@ object DocumentVersionMetadata {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    inline def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -104,7 +104,7 @@ object DocumentVersionMetadata {
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    inline def setModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setModifiedTimestamp(value: js.Date): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setModifiedTimestampUndefined: Self = StObject.set(x, "ModifiedTimestamp", js.undefined)
     

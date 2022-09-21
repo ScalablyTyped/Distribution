@@ -1,7 +1,7 @@
 
 # Scala.js typings for split-on-first
 
-Typings are for version 1.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Split a string on the first occurance of a given separator
@@ -10,10 +10,10 @@ Split a string on the first occurance of a given separator
 | ------------------ | :-------------: |
 | Full name          | split-on-first |
 | Keywords           | split, string, first, once, occurrence, separator, delimiter, text |
-| # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 102427471 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3337196666666668E7 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/split-on-first#readme)

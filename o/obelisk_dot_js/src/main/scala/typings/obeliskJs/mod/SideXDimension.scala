@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "SideXDimension")
 @js.native
-class SideXDimension () extends AbstractDimension {
+open class SideXDimension () extends AbstractDimension {
   def this(xAxis: Double) = this()
   def this(xAxis: Double, zAxis: Double) = this()
   def this(xAxis: Unit, zAxis: Double) = this()

@@ -10,10 +10,10 @@ Environment-aware configuration.
 | ------------------ | :-------------: |
 | Full name          | confit |
 | Keywords           | application, config, configuration |
-| # releases         | 2 |
-| # dependents       | 23 |
-| # downloads        | 201612 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18018.666666666668 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/krakenjs/confit#readme)

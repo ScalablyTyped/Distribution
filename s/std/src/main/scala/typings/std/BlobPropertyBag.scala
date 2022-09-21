@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BlobPropertyBag extends StObject {
   
+  /* standard dom */
   var endings: js.UndefOr[EndingType] = js.undefined
   
+  /* standard dom */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 object BlobPropertyBag {

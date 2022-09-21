@@ -1,81 +1,77 @@
 package typings.autoprefixer
 
-import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.StringDictionary
 import typings.autoprefixer.anon.Browsers
-import typings.autoprefixer.autoprefixerBooleans.`false`
+import typings.autoprefixer.anon.From
+import typings.autoprefixer.autoprefixerBooleans.`true`
 import typings.autoprefixer.autoprefixerStrings.`no-2009`
-import typings.autoprefixer.autoprefixerStrings.`no-autoplace`
-import typings.autoprefixer.autoprefixerStrings.autoplace
 import typings.browserslist.mod.Stats
-import typings.postcss.mod.Plugin_
-import typings.postcss.mod.Result
-import typings.postcss.mod.Root_
+import typings.postcss.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  inline def apply(): Plugin & ExportedAPI = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin & ExportedAPI]
+  inline def apply(browsers: js.Array[String]): Plugin & ExportedAPI = ^.asInstanceOf[js.Dynamic].apply(browsers.asInstanceOf[js.Any]).asInstanceOf[Plugin & ExportedAPI]
+  inline def apply(browsers: js.Array[String], options: Options): Plugin & ExportedAPI = (^.asInstanceOf[js.Dynamic].apply(browsers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Plugin & ExportedAPI]
+  inline def apply(options: Options): Plugin & ExportedAPI = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin & ExportedAPI]
   
   @JSImport("autoprefixer", JSImport.Namespace)
   @js.native
-  val ^ : Autoprefixer = js.native
+  val ^ : js.Any = js.native
+  
+  /** Autoprefixer default browsers */
+  @JSImport("autoprefixer", "defaults")
+  @js.native
+  def defaults: js.Array[String] = js.native
+  inline def defaults_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  
+  /** Inspect with default Autoprefixer */
+  @JSImport("autoprefixer", "info")
+  @js.native
+  def info: js.Function1[/* options */ js.UndefOr[From], String] = js.native
+  inline def info_=(x: js.Function1[/* options */ js.UndefOr[From], String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
+  
+  @JSImport("autoprefixer", "postcss")
+  @js.native
+  def postcss: `true` = js.native
+  inline def postcss_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("postcss")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait Autoprefixer
-    extends Plugin_[Options]
-       with ExportedAPI {
-    
-    /* InferMemberOverrides */
-    override def apply(arg1: /* root */ Root_, arg2: /* result */ Result): js.Promise[js.Any] | js.Any = js.native
-  }
-  
-  type BrowserslistTarget = String | js.Array[String] | StringDictionary[js.Array[String]]
-  
   trait ExportedAPI extends StObject {
     
+    var browsers: String | js.Array[String] = js.native
+    
     /** Autoprefixer data */
-    var data: Browsers
+    var data: Browsers = js.native
     
     /** Autoprefixer default browsers */
-    var defaults: js.Any
+    var defaults: js.Array[String] = js.native
     
     /** Inspect with default Autoprefixer */
-    def info(): Unit
+    def info(): String = js.native
+    def info(options: From): String = js.native
+    
+    var options: Options = js.native
   }
-  object ExportedAPI {
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.autoprefixer.autoprefixerStrings.autoplace
+    - typings.autoprefixer.autoprefixerStrings.`no-autoplace`
+  */
+  trait GridValue extends StObject
+  object GridValue {
     
-    inline def apply(data: Browsers, defaults: js.Any, info: () => Unit): ExportedAPI = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], info = js.Any.fromFunction0(info))
-      __obj.asInstanceOf[ExportedAPI]
-    }
+    inline def autoplace: typings.autoprefixer.autoprefixerStrings.autoplace = "autoplace".asInstanceOf[typings.autoprefixer.autoprefixerStrings.autoplace]
     
-    extension [Self <: ExportedAPI](x: Self) {
-      
-      inline def setData(value: Browsers): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
-      
-      inline def setInfo(value: () => Unit): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
-    }
+    inline def `no-autoplace`: typings.autoprefixer.autoprefixerStrings.`no-autoplace` = "no-autoplace".asInstanceOf[typings.autoprefixer.autoprefixerStrings.`no-autoplace`]
   }
   
   trait Options extends StObject {
     
     /** should Autoprefixer add prefixes. */
     var add: js.UndefOr[Boolean] = js.undefined
-    
-    /** @deprecated 'Change `browser` option to `overrideBrowserslist` in Autoprefixer */
-    var browser: js.UndefOr[String] = js.undefined
-    
-    /**
-      * @deprecated Replace Autoprefixer `browsers` option to Browserslist config.
-      * Use `browserslist` key in `package.json` or `.browserslistrc` file.
-      */
-    var browsers: js.UndefOr[js.Array[String] | String] = js.undefined
-    
-    /** @deprecated Change `browserslist` option to `overrideBrowserslist` in Autoprefixer */
-    var browserslist: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /** should Autoprefixer use Visual Cascade, if CSS is uncompressed */
     var cascade: js.UndefOr[Boolean] = js.undefined
@@ -87,7 +83,7 @@ object mod extends Shortcut {
     var flexbox: js.UndefOr[Boolean | `no-2009`] = js.undefined
     
     /** should Autoprefixer add IE 10-11 prefixes for Grid Layout properties */
-    var grid: js.UndefOr[`false` | autoplace | `no-autoplace`] = js.undefined
+    var grid: js.UndefOr[Boolean | GridValue] = js.undefined
     
     /** do not raise error on unknown browser version in `Browserslist` config. */
     var ignoreUnknownVersions: js.UndefOr[Boolean] = js.undefined
@@ -98,7 +94,7 @@ object mod extends Shortcut {
       * The best practice is to use `.browserslistrc` config or `browserslist` key in `package.json`
       * to share target browsers with Babel, ESLint and Stylelint
       */
-    var overrideBrowserslist: js.UndefOr[BrowserslistTarget] = js.undefined
+    var overrideBrowserslist: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** should Autoprefixer [remove outdated] prefixes */
     var remove: js.UndefOr[Boolean] = js.undefined
@@ -122,22 +118,6 @@ object mod extends Shortcut {
       
       inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
       
-      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
-      
-      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
-      
-      inline def setBrowsers(value: js.Array[String] | String): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
-      
-      inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
-      
-      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value :_*))
-      
-      inline def setBrowserslist(value: js.Array[String] | String): Self = StObject.set(x, "browserslist", value.asInstanceOf[js.Any])
-      
-      inline def setBrowserslistUndefined: Self = StObject.set(x, "browserslist", js.undefined)
-      
-      inline def setBrowserslistVarargs(value: String*): Self = StObject.set(x, "browserslist", js.Array(value :_*))
-      
       inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       
       inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
@@ -150,7 +130,7 @@ object mod extends Shortcut {
       
       inline def setFlexboxUndefined: Self = StObject.set(x, "flexbox", js.undefined)
       
-      inline def setGrid(value: `false` | autoplace | `no-autoplace`): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Boolean | GridValue): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
@@ -158,11 +138,11 @@ object mod extends Shortcut {
       
       inline def setIgnoreUnknownVersionsUndefined: Self = StObject.set(x, "ignoreUnknownVersions", js.undefined)
       
-      inline def setOverrideBrowserslist(value: BrowserslistTarget): Self = StObject.set(x, "overrideBrowserslist", value.asInstanceOf[js.Any])
+      inline def setOverrideBrowserslist(value: String | js.Array[String]): Self = StObject.set(x, "overrideBrowserslist", value.asInstanceOf[js.Any])
       
       inline def setOverrideBrowserslistUndefined: Self = StObject.set(x, "overrideBrowserslist", js.undefined)
       
-      inline def setOverrideBrowserslistVarargs(value: String*): Self = StObject.set(x, "overrideBrowserslist", js.Array(value :_*))
+      inline def setOverrideBrowserslistVarargs(value: String*): Self = StObject.set(x, "overrideBrowserslist", js.Array(value*))
       
       inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
@@ -178,8 +158,28 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Autoprefixer
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Autoprefixer = ^
+  object global {
+    
+    object NodeJS {
+      
+      trait ProcessEnv extends StObject {
+        
+        var AUTOPREFIXER_GRID: js.UndefOr[GridValue] = js.undefined
+      }
+      object ProcessEnv {
+        
+        inline def apply(): ProcessEnv = {
+          val __obj = js.Dynamic.literal()
+          __obj.asInstanceOf[ProcessEnv]
+        }
+        
+        extension [Self <: ProcessEnv](x: Self) {
+          
+          inline def setAUTOPREFIXER_GRID(value: GridValue): Self = StObject.set(x, "AUTOPREFIXER_GRID", value.asInstanceOf[js.Any])
+          
+          inline def setAUTOPREFIXER_GRIDUndefined: Self = StObject.set(x, "AUTOPREFIXER_GRID", js.undefined)
+        }
+      }
+    }
+  }
 }

@@ -64,7 +64,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.Attribute")
   @js.native
-  class Attribute ()
+  open class Attribute ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.Attribute
   
   /**
@@ -88,7 +88,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.AttributeList")
   @js.native
-  class AttributeList ()
+  open class AttributeList ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.AttributeList {
     def this(params: Sorted) = this()
   }
@@ -171,7 +171,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.ContentInfo")
   @js.native
-  class ContentInfo ()
+  open class ContentInfo ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.ContentInfo {
     def this(params: ASN1ObjectParam) = this()
     def this(params: TypeParam) = this()
@@ -194,7 +194,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.ContentType")
   @js.native
-  class ContentType ()
+  open class ContentType ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.ContentType {
     def this(params: Name) = this()
     def this(params: OidString) = this()
@@ -221,7 +221,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.EncapsulatedContentInfo")
   @js.native
-  class EncapsulatedContentInfo ()
+  open class EncapsulatedContentInfo ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.EncapsulatedContentInfo {
     def this(params: string) = this()
   }
@@ -246,7 +246,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.IssuerAndSerialNumber")
   @js.native
-  class IssuerAndSerialNumber ()
+  open class IssuerAndSerialNumber ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.IssuerAndSerialNumber {
     def this(params: String) = this()
     def this(params: CertString) = this()
@@ -269,7 +269,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.MessageDigest")
   @js.native
-  class MessageDigest ()
+  open class MessageDigest ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.MessageDigest {
     def this(params: Hex) = this()
   }
@@ -306,7 +306,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.SignedData")
   @js.native
-  class SignedData ()
+  open class SignedData ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.SignedData
   
   /**
@@ -333,7 +333,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.SignerInfo")
   @js.native
-  class SignerInfo ()
+  open class SignerInfo ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.SignerInfo {
     def this(params: String) = this()
   }
@@ -362,7 +362,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.SigningCertificate")
   @js.native
-  class SigningCertificate ()
+  open class SigningCertificate ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.SigningCertificate {
     def this(params: ArrayParam[String]) = this()
   }
@@ -398,7 +398,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.SigningCertificateV2")
   @js.native
-  class SigningCertificateV2 ()
+  open class SigningCertificateV2 ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.SigningCertificateV2 {
     def this(params: Array) = this()
     def this(params: ArrayParam[String]) = this()
@@ -426,7 +426,7 @@ object cms {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cms.SigningTime")
   @js.native
-  class SigningTime ()
+  open class SigningTime ()
     extends typings.jsrsasign.mod.KJUR.asn1.cms.SigningTime {
     def this(params: StringParam) = this()
     def this(params: TypeParam) = this()

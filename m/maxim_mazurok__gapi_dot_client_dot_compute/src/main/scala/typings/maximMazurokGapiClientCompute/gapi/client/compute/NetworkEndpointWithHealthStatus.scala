@@ -25,7 +25,7 @@ object NetworkEndpointWithHealthStatus {
     
     inline def setHealthsUndefined: Self = StObject.set(x, "healths", js.undefined)
     
-    inline def setHealthsVarargs(value: HealthStatusForNetworkEndpoint*): Self = StObject.set(x, "healths", js.Array(value :_*))
+    inline def setHealthsVarargs(value: HealthStatusForNetworkEndpoint*): Self = StObject.set(x, "healths", js.Array(value*))
     
     inline def setNetworkEndpoint(value: NetworkEndpoint): Self = StObject.set(x, "networkEndpoint", value.asInstanceOf[js.Any])
     

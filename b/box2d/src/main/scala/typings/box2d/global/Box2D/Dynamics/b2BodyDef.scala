@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Box2D.Dynamics.b2BodyDef")
 @js.native
-class b2BodyDef ()
+open class b2BodyDef ()
   extends StObject
      with typings.box2d.Box2D.Dynamics.b2BodyDef {
   
@@ -96,5 +96,5 @@ class b2BodyDef ()
     * Use this to store application specific body data.
     **/
   /* CompleteClass */
-  var userData: js.Any = js.native
+  var userData: Any = js.native
 }

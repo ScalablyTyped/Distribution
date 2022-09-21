@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PlatformMethod extends StObject {
   
-  def apply(args: js.Any*): js.Promise[js.Any] = js.native
+  def apply(args: Any*): js.Promise[Any] = js.native
 }

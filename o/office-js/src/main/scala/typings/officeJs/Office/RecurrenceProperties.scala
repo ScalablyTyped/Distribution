@@ -10,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Represents the properties of the recurrence.
   * 
+  * @remarks
   * [Api set: Mailbox 1.7]
   * 
-  * @remarks
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait RecurrenceProperties extends StObject {
   
@@ -77,7 +76,7 @@ object RecurrenceProperties {
     
     inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
-    inline def setDaysVarargs(value: (Days | String)*): Self = StObject.set(x, "days", js.Array(value :_*))
+    inline def setDaysVarargs(value: (Days | String)*): Self = StObject.set(x, "days", js.Array(value*))
     
     inline def setFirstDayOfWeek(value: Days | String): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
     

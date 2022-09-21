@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.ShadowMaterial")
 @js.native
-class ShadowMaterial ()
+open class ShadowMaterial ()
   extends typings.three.mod.ShadowMaterial {
   def this(parameters: ShadowMaterialParameters) = this()
 }

@@ -11,7 +11,6 @@ import typings.jupyterlabServices.kernelRestapiMod.IModel
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoPolling.pollMod.Poll.Standby
 import typings.luminoSignaling.mod.ISignal
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,31 +28,31 @@ object kernelManagerMod {
     *
     * @param options - The default options for kernel.
     */
-  class KernelManager () extends BaseManager {
+  open class KernelManager () extends BaseManager {
     def this(options: IOptions) = this()
     
-    /* private */ var _connectionFailure: js.Any = js.native
+    /* private */ var _connectionFailure: Any = js.native
     
-    /* private */ var _isReady: js.Any = js.native
+    /* private */ var _isReady: Any = js.native
     
-    /* private */ var _kernelConnections: js.Any = js.native
+    /* private */ var _kernelConnections: Any = js.native
     
-    /* private */ var _models: js.Any = js.native
+    /* private */ var _models: Any = js.native
     
-    /* private */ var _onDisposed: js.Any = js.native
+    /* private */ var _onDisposed: Any = js.native
     
     /**
       * Handle a kernel starting.
       */
-    /* private */ var _onStarted: js.Any = js.native
+    /* private */ var _onStarted: Any = js.native
     
-    /* private */ var _onStatusChanged: js.Any = js.native
+    /* private */ var _onStatusChanged: Any = js.native
     
-    /* private */ var _pollModels: js.Any = js.native
+    /* private */ var _pollModels: Any = js.native
     
-    /* private */ var _ready: js.Any = js.native
+    /* private */ var _ready: Any = js.native
     
-    /* private */ var _runningChanged: js.Any = js.native
+    /* private */ var _runningChanged: Any = js.native
     
     /**
       * Connect to an existing kernel.
@@ -78,7 +77,7 @@ object kernelManagerMod {
       * A signal emitted when there is a connection failure.
       */
     @JSName("connectionFailure")
-    def connectionFailure_MKernelManager: ISignal[this.type, Error] = js.native
+    def connectionFailure_MKernelManager: ISignal[this.type, js.Error] = js.native
     
     /**
       * Find a kernel by id.

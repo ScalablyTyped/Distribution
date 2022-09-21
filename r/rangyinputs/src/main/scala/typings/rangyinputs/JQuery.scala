@@ -38,12 +38,7 @@ trait JQuery extends StObject {
     * If no value is supplied for selectionBehaviour, the selection is not changed and left at the mercy of the browser (placing the caret at the start is not uncommon when the textarea's value is changed).
     */
   def insertText(text: String, pos: Double): JQuery = js.native
-  @JSName("insertText")
-  def insertText_collapseToEnd(text: String, pos: Double, selectionBehaviour: collapseToEnd): JQuery = js.native
-  @JSName("insertText")
-  def insertText_collapseToStart(text: String, pos: Double, selectionBehaviour: collapseToStart): JQuery = js.native
-  @JSName("insertText")
-  def insertText_select(text: String, pos: Double, selectionBehaviour: select): JQuery = js.native
+  def insertText(text: String, pos: Double, selectionBehaviour: select | collapseToStart | collapseToEnd): JQuery = js.native
   
   /**
     * Replaces the currently selected text in the text input or textarea element with the specified text and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
@@ -55,12 +50,7 @@ trait JQuery extends StObject {
     * If no value is supplied for selectionBehaviour, "collapseToEnd" is assumed.
     */
   def replaceSelectedText(text: String): JQuery = js.native
-  @JSName("replaceSelectedText")
-  def replaceSelectedText_collapseToEnd(text: String, selectionBehaviour: collapseToEnd): JQuery = js.native
-  @JSName("replaceSelectedText")
-  def replaceSelectedText_collapseToStart(text: String, selectionBehaviour: collapseToStart): JQuery = js.native
-  @JSName("replaceSelectedText")
-  def replaceSelectedText_select(text: String, selectionBehaviour: select): JQuery = js.native
+  def replaceSelectedText(text: String, selectionBehaviour: select | collapseToStart | collapseToEnd): JQuery = js.native
   
   /** Selects the text within the text input or textarea element between the specified start and end character indices. */
   def setSelection(start: Double): JQuery = js.native
@@ -76,10 +66,9 @@ trait JQuery extends StObject {
     * If no value is supplied for selectionBehaviour, "select" is assumed.
     */
   def surroundSelectedText(textBefore: String, textAfter: String): JQuery = js.native
-  @JSName("surroundSelectedText")
-  def surroundSelectedText_collapseToEnd(textBefore: String, textAfter: String, selectionBehaviour: collapseToEnd): JQuery = js.native
-  @JSName("surroundSelectedText")
-  def surroundSelectedText_collapseToStart(textBefore: String, textAfter: String, selectionBehaviour: collapseToStart): JQuery = js.native
-  @JSName("surroundSelectedText")
-  def surroundSelectedText_select(textBefore: String, textAfter: String, selectionBehaviour: select): JQuery = js.native
+  def surroundSelectedText(
+    textBefore: String,
+    textAfter: String,
+    selectionBehaviour: select | collapseToStart | collapseToEnd
+  ): JQuery = js.native
 }

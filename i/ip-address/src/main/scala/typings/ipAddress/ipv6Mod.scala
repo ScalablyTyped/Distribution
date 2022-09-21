@@ -4,18 +4,18 @@ import typings.ipAddress.anon.Address
 import typings.ipAddress.anon.ClassName
 import typings.ipAddress.anon.Error
 import typings.ipAddress.anon.GroupIndividual
+import typings.ipAddress.commonMod.ReverseFormOptions
 import typings.ipAddress.ipv4Mod.Address4
 import typings.jsbn.mod.BigInteger
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipv6Mod {
   
-  @JSImport("ip-address/dist/lib/ipv6", "Address6")
+  @JSImport("ip-address/dist/cjs/lib/ipv6", "Address6")
   @js.native
-  class Address6 protected () extends StObject {
+  open class Address6 protected () extends StObject {
     def this(address: String) = this()
     def this(address: String, optionalGroups: Double) = this()
     
@@ -322,8 +322,8 @@ object ipv6Mod {
       * @param {boolean} substringSearch
       * @returns {RegExp}
       */
-    def regularExpression(): RegExp = js.native
-    def regularExpression(substringSearch: Boolean): RegExp = js.native
+    def regularExpression(): js.RegExp = js.native
+    def regularExpression(substringSearch: Boolean): js.RegExp = js.native
     
     /**
       * Generate a regular expression string that can be used to find or validate
@@ -419,7 +419,7 @@ object ipv6Mod {
   /* static members */
   object Address6 {
     
-    @JSImport("ip-address/dist/lib/ipv6", "Address6")
+    @JSImport("ip-address/dist/cjs/lib/ipv6", "Address6")
     @js.native
     val ^ : js.Any = js.native
     
@@ -467,7 +467,7 @@ object ipv6Mod {
       * @static
       * @returns {Address6}
       */
-    inline def fromByteArray(bytes: js.Array[js.Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
+    inline def fromByteArray(bytes: js.Array[Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     /**
       * Convert a URL (with optional port number) to an address object
@@ -487,28 +487,9 @@ object ipv6Mod {
       * @static
       * @returns {Address6}
       */
-    inline def fromUnsignedByteArray(bytes: js.Array[js.Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
+    inline def fromUnsignedByteArray(bytes: js.Array[Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     inline def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  }
-  
-  trait ReverseFormOptions extends StObject {
-    
-    var omitSuffix: js.UndefOr[Boolean] = js.undefined
-  }
-  object ReverseFormOptions {
-    
-    inline def apply(): ReverseFormOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ReverseFormOptions]
-    }
-    
-    extension [Self <: ReverseFormOptions](x: Self) {
-      
-      inline def setOmitSuffix(value: Boolean): Self = StObject.set(x, "omitSuffix", value.asInstanceOf[js.Any])
-      
-      inline def setOmitSuffixUndefined: Self = StObject.set(x, "omitSuffix", js.undefined)
-    }
   }
   
   trait SixToFourProperties extends StObject {

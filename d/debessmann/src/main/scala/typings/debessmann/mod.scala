@@ -1,7 +1,6 @@
 package typings.debessmann
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("debessmann", "DM")
   @js.native
-  class DM () extends StObject {
+  open class DM () extends StObject {
     
     def init(endpoint: String, authkey: String): Unit = js.native
     
@@ -19,7 +18,7 @@ object mod {
   
   @JSImport("debessmann", "Event")
   @js.native
-  class Event () extends StObject {
+  open class Event () extends StObject {
     
     var _id: EventId = js.native
     
@@ -29,18 +28,18 @@ object mod {
     
     var metrics: js.UndefOr[StringDictionary[Double]] = js.native
     
-    var payload: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[Any] = js.native
     
     var timestamp: js.UndefOr[String] = js.native
   }
   
   @JSImport("debessmann", "EventId")
   @js.native
-  class EventId () extends StObject {
+  open class EventId () extends StObject {
     
     var seq: Double = js.native
     
-    var time: Date = js.native
+    var time: js.Date = js.native
   }
   
   object global {

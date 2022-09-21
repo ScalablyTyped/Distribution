@@ -2,7 +2,6 @@ package typings.anyDbTransaction
 
 import typings.anyDb.mod.Adapter
 import typings.anyDb.mod.Queryable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,26 +16,26 @@ object mod {
   inline def apply(
     q: Queryable,
     beginStatement: String,
-    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+    callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  inline def apply(q: Queryable, callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  inline def apply(q: Queryable, callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   inline def apply(q: Queryable, options: Unit, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   inline def apply(
     q: Queryable,
     options: Unit,
     beginStatement: String,
-    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+    callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   inline def apply(
     q: Queryable,
     options: Unit,
     beginStatement: Unit,
-    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+    callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   inline def apply(
     q: Queryable,
     options: Unit,
-    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+    callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   inline def apply(q: Queryable, options: TransactionOptions): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   inline def apply(q: Queryable, options: TransactionOptions, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
@@ -44,18 +43,18 @@ object mod {
     q: Queryable,
     options: TransactionOptions,
     beginStatement: String,
-    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+    callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   inline def apply(
     q: Queryable,
     options: TransactionOptions,
     beginStatement: Unit,
-    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+    callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   inline def apply(
     q: Queryable,
     options: TransactionOptions,
-    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+    callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   
   @JSImport("any-db-transaction", JSImport.Namespace)
@@ -97,13 +96,13 @@ object mod {
       * statement completes. The transaction object itself will be unusable after calling commit().
       */
     def commit(): Unit = js.native
-    def commit(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def commit(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * The same as Transaction.commit but issues a ROLLBACK. Again, the transaction will be unusable after calling this method.
       */
     def rollback(): Unit = js.native
-    def rollback(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def rollback(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
   }
   
   trait TransactionOptions extends StObject {
@@ -126,7 +125,7 @@ object mod {
     /**
       * Callback for transaction
       */
-    var callback: js.UndefOr[js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]] = js.undefined
+    var callback: js.UndefOr[js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]] = js.undefined
     
     /**
       * SQL statement for committing a transaction, default 'COMMIT'
@@ -159,7 +158,7 @@ object mod {
       
       inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
       
-      inline def setCallback(value: (/* error */ Error, /* transaction */ Transaction) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* error */ js.Error, /* transaction */ Transaction) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       

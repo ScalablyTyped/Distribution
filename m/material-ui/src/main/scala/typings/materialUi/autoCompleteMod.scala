@@ -12,7 +12,7 @@ object autoCompleteMod {
   
   @JSImport("material-ui/AutoComplete", JSImport.Default)
   @js.native
-  class default () extends AutoComplete
+  open class default () extends AutoComplete
   /* static members */
   object default {
     
@@ -45,8 +45,8 @@ object autoCompleteMod {
   
   @JSImport("material-ui/AutoComplete", "AutoComplete")
   @js.native
-  class AutoComplete ()
-    extends Component[AutoCompleteProps[js.Any], js.Object, js.Any]
+  open class AutoComplete ()
+    extends Component[AutoCompleteProps[Any], js.Object, Any]
   /* static members */
   object AutoComplete {
     

@@ -19,7 +19,7 @@ trait AccountRuleCondition extends StObject {
   /* private */ @JSName("Outlook.AccountRuleCondition_typekey")
   var OutlookDotAccountRuleCondition_typekey: AccountRuleCondition
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -32,7 +32,7 @@ object AccountRuleCondition {
     ConditionType: OlRuleConditionType,
     Enabled: Boolean,
     OutlookDotAccountRuleCondition_typekey: AccountRuleCondition,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): AccountRuleCondition = {
     val __obj = js.Dynamic.literal(Account = Account.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], ConditionType = ConditionType.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object AccountRuleCondition {
     
     inline def setOutlookDotAccountRuleCondition_typekey(value: AccountRuleCondition): Self = StObject.set(x, "Outlook.AccountRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

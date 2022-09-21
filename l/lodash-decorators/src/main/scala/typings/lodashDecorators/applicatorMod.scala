@@ -12,6 +12,6 @@ object applicatorMod {
   abstract class Applicator () extends StObject {
     
     @JSName("apply")
-    def apply(options: ApplicateOptions): js.Any = js.native
+    def apply(options: ApplicateOptions): Any = js.native
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Overlay
   extends StObject
-     with /* x */ StringDictionary[js.Any] {
+     with /* x */ StringDictionary[Any] {
   
   def addEventListener(event: String, handler: Callback): Unit = js.native
   

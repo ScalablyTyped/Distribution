@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
-import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.InAppProduct
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.Track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,14 +17,11 @@ trait Resource extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
-  /**
-    * If true the prices for all regions targeted by the parent app that don't have a price specified for this in-app product will be auto converted to the target currency based on
-    * the default price. Defaults to false.
-    */
-  var autoConvertMissingPrices: js.UndefOr[Boolean] = js.undefined
-  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
+  
+  /** Identifier of the edit. */
+  var editId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -45,10 +42,10 @@ trait Resource extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: InAppProduct
+  var resource: Track
   
-  /** Unique identifier for the in-app product. */
-  var sku: String
+  /** Identifier of the track. */
+  var track: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -58,8 +55,8 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  inline def apply(packageName: String, resource: InAppProduct, sku: String): Resource = {
-    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any])
+  inline def apply(editId: String, packageName: String, resource: Track, track: String): Resource = {
+    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
   
@@ -77,13 +74,11 @@ object Resource {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    inline def setAutoConvertMissingPrices(value: Boolean): Self = StObject.set(x, "autoConvertMissingPrices", value.asInstanceOf[js.Any])
-    
-    inline def setAutoConvertMissingPricesUndefined: Self = StObject.set(x, "autoConvertMissingPrices", js.undefined)
-    
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setEditId(value: String): Self = StObject.set(x, "editId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -107,9 +102,9 @@ object Resource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: InAppProduct): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Track): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+    inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

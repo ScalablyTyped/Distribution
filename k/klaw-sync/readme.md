@@ -10,10 +10,10 @@ Recursive, synchronous, and fast file system walker
 | ------------------ | :-------------: |
 | Full name          | klaw-sync |
 | Keywords           | fs, walk, walker, walk-sync, klaw, readdir-sync |
-| # releases         | 0 |
-| # dependents       | 302 |
-| # downloads        | 19847567 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5256579.333333333 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://github.com/manidlou/node-klaw-sync#readme)

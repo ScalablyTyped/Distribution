@@ -28,7 +28,7 @@ object FloodlightActivityGroupsListResponse {
     
     inline def setFloodlightActivityGroupsUndefined: Self = StObject.set(x, "floodlightActivityGroups", js.undefined)
     
-    inline def setFloodlightActivityGroupsVarargs(value: FloodlightActivityGroup*): Self = StObject.set(x, "floodlightActivityGroups", js.Array(value :_*))
+    inline def setFloodlightActivityGroupsVarargs(value: FloodlightActivityGroup*): Self = StObject.set(x, "floodlightActivityGroups", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

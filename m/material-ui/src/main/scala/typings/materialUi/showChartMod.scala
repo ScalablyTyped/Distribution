@@ -10,10 +10,10 @@ object showChartMod {
   
   @JSImport("material-ui/svg-icons/editor/show-chart", JSImport.Default)
   @js.native
-  class default () extends EditorShowChart
+  open class default () extends EditorShowChart
   
   @JSImport("material-ui/svg-icons/editor/show-chart", "EditorShowChart")
   @js.native
-  class EditorShowChart ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorShowChart ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

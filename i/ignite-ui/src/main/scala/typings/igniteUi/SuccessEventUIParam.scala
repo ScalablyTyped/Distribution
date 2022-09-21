@@ -9,7 +9,7 @@ trait SuccessEventUIParam extends StObject {
   /**
     * Populated with options for the specific field in the collection or null.
     */
-  var fieldOptions: js.UndefOr[js.Any] = js.undefined
+  var fieldOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Get the formatted message text, if any.
@@ -19,7 +19,7 @@ trait SuccessEventUIParam extends StObject {
   /**
     * Gets reference to the igValidator widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Determine the outcome of the validation.
@@ -29,7 +29,7 @@ trait SuccessEventUIParam extends StObject {
   /**
     * Gets the current value in target.
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object SuccessEventUIParam {
   
@@ -40,7 +40,7 @@ object SuccessEventUIParam {
   
   extension [Self <: SuccessEventUIParam](x: Self) {
     
-    inline def setFieldOptions(value: js.Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
+    inline def setFieldOptions(value: Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
     
     inline def setFieldOptionsUndefined: Self = StObject.set(x, "fieldOptions", js.undefined)
     
@@ -48,7 +48,7 @@ object SuccessEventUIParam {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
@@ -56,7 +56,7 @@ object SuccessEventUIParam {
     
     inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

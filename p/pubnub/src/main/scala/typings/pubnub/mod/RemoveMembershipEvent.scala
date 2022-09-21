@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveMembershipEvent
   extends StObject
      with BaseObjectsEvent
-     with ObjectsEvent[js.Any, js.Any, js.Any] {
+     with ObjectsEvent[Any, Any, Any] {
   
   @JSName("message")
   var message_RemoveMembershipEvent: DataUuid

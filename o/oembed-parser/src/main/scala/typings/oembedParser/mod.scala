@@ -15,7 +15,9 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def extract(url: String): js.Promise[OembedData] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OembedData]]
-  inline def extract(url: String, params: js.Any): js.Promise[OembedData] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OembedData]]
+  inline def extract(url: String, params: Any): js.Promise[OembedData] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OembedData]]
+  
+  inline def findProvider(url: String): FindProviderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("findProvider")(url.asInstanceOf[js.Any]).asInstanceOf[FindProviderResult]
   
   inline def hasProvider(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasProvider")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -49,15 +51,40 @@ object mod {
       
       inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value*))
       
       inline def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
       
       inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
       
-      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FindProviderResult extends StObject {
+    
+    var fetchEndpoint: String
+    
+    var provider_name: String
+    
+    var provider_url: String
+  }
+  object FindProviderResult {
+    
+    inline def apply(fetchEndpoint: String, provider_name: String, provider_url: String): FindProviderResult = {
+      val __obj = js.Dynamic.literal(fetchEndpoint = fetchEndpoint.asInstanceOf[js.Any], provider_name = provider_name.asInstanceOf[js.Any], provider_url = provider_url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FindProviderResult]
+    }
+    
+    extension [Self <: FindProviderResult](x: Self) {
+      
+      inline def setFetchEndpoint(value: String): Self = StObject.set(x, "fetchEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setProvider_name(value: String): Self = StObject.set(x, "provider_name", value.asInstanceOf[js.Any])
+      
+      inline def setProvider_url(value: String): Self = StObject.set(x, "provider_url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,7 +118,7 @@ object mod {
     var author_url: js.UndefOr[String] = js.undefined
     
     /** The suggested cache lifetime for this resource, in seconds. Consumers may choose to use this value or not. */
-    var cache_age: js.UndefOr[String] = js.undefined
+    var cache_age: js.UndefOr[String | Double] = js.undefined
     
     /** The name of the resource provider. */
     var provider_name: js.UndefOr[String] = js.undefined
@@ -143,7 +170,7 @@ object mod {
       
       inline def setAuthor_urlUndefined: Self = StObject.set(x, "author_url", js.undefined)
       
-      inline def setCache_age(value: String): Self = StObject.set(x, "cache_age", value.asInstanceOf[js.Any])
+      inline def setCache_age(value: String | Double): Self = StObject.set(x, "cache_age", value.asInstanceOf[js.Any])
       
       inline def setCache_ageUndefined: Self = StObject.set(x, "cache_age", js.undefined)
       
@@ -235,7 +262,7 @@ object mod {
       
       inline def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
       
       inline def setProvider_name(value: String): Self = StObject.set(x, "provider_name", value.asInstanceOf[js.Any])
       

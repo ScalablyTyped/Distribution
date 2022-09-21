@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "ShadowGeneratorSceneComponent")
 @js.native
-class ShadowGeneratorSceneComponent protected ()
+open class ShadowGeneratorSceneComponent protected ()
   extends typings.babylonjs.lightsIndexMod.ShadowGeneratorSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

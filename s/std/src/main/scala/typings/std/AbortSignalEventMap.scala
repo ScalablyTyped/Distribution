@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AbortSignalEventMap extends StObject {
   
+  /* standard dom */
   var abort: Event
 }
 object AbortSignalEventMap {

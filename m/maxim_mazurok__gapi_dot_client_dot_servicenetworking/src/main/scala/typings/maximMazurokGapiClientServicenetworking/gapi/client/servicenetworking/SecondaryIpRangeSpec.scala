@@ -12,6 +12,12 @@ trait SecondaryIpRangeSpec extends StObject {
     */
   var ipPrefixLength: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Optional. Enable outside allocation using public IP addresses. Any public IP range may be specified. If this field is provided, we will not use customer reserved ranges for this
+    * secondary IP range.
+    */
+  var outsideAllocationPublicIpRange: js.UndefOr[String] = js.undefined
+  
   /** Required. A name for the secondary IP range. The name must be 1-63 characters long, and comply with RFC1035. The name must be unique within the subnetwork. */
   var rangeName: js.UndefOr[String] = js.undefined
   
@@ -33,6 +39,10 @@ object SecondaryIpRangeSpec {
     inline def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     
     inline def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
+    
+    inline def setOutsideAllocationPublicIpRange(value: String): Self = StObject.set(x, "outsideAllocationPublicIpRange", value.asInstanceOf[js.Any])
+    
+    inline def setOutsideAllocationPublicIpRangeUndefined: Self = StObject.set(x, "outsideAllocationPublicIpRange", js.undefined)
     
     inline def setRangeName(value: String): Self = StObject.set(x, "rangeName", value.asInstanceOf[js.Any])
     

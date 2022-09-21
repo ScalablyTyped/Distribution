@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "AlertDialog")
 @js.native
-class AlertDialog protected ()
-  extends Component[IsCancelable, js.Any] {
+open class AlertDialog protected () extends Component[IsCancelable, Any] {
   def this(props: HTMLAttributesidclassName & IsCancelable) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & IsCancelable, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & IsCancelable, context: Any) = this()
 }

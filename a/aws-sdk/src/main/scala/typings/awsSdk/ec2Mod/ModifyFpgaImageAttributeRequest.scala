@@ -52,7 +52,7 @@ trait ModifyFpgaImageAttributeRequest extends StObject {
   var UserGroups: js.UndefOr[UserGroupStringList] = js.undefined
   
   /**
-    * The AWS account IDs. This parameter is valid only when modifying the loadPermission attribute.
+    * The Amazon Web Services account IDs. This parameter is valid only when modifying the loadPermission attribute.
     */
   var UserIds: js.UndefOr[UserIdStringList] = js.undefined
 }
@@ -95,18 +95,18 @@ object ModifyFpgaImageAttributeRequest {
     
     inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    inline def setProductCodesVarargs(value: String*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: String*): Self = StObject.set(x, "ProductCodes", js.Array(value*))
     
     inline def setUserGroups(value: UserGroupStringList): Self = StObject.set(x, "UserGroups", value.asInstanceOf[js.Any])
     
     inline def setUserGroupsUndefined: Self = StObject.set(x, "UserGroups", js.undefined)
     
-    inline def setUserGroupsVarargs(value: String*): Self = StObject.set(x, "UserGroups", js.Array(value :_*))
+    inline def setUserGroupsVarargs(value: String*): Self = StObject.set(x, "UserGroups", js.Array(value*))
     
     inline def setUserIds(value: UserIdStringList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
     inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
-    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value*))
   }
 }

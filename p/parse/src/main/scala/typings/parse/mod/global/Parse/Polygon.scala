@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Parse.Polygon")
 @js.native
-class Polygon protected ()
+open class Polygon protected ()
   extends StObject
      with _FieldType {
   def this(arg1: js.Array[js.Array[Double] | GeoPoint]) = this()
   
   def containsPoint(point: GeoPoint): Boolean = js.native
   
-  def equals(other: js.Any): Boolean = js.native
-  
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

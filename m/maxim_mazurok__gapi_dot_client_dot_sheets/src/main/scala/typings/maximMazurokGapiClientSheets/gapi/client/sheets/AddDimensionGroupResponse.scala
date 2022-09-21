@@ -22,6 +22,6 @@ object AddDimensionGroupResponse {
     
     inline def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
     
-    inline def setDimensionGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
+    inline def setDimensionGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value*))
   }
 }

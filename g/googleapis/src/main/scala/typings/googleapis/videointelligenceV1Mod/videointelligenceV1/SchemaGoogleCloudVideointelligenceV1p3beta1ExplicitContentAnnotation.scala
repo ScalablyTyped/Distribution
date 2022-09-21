@@ -4,17 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Explicit content annotation (based on per-frame visual signals only). If no
-  * explicit content has been detected in a frame, no annotations are present
-  * for that frame.
-  */
 trait SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation extends StObject {
   
   /**
     * All video frames where explicit content was detected.
     */
   var frames: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame]] = js.undefined
+  
+  /**
+    * Feature version.
+    */
+  var version: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation {
   
@@ -29,6 +29,12 @@ object SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation {
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame*): Self = StObject.set(x, "frames", js.Array(value*))
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

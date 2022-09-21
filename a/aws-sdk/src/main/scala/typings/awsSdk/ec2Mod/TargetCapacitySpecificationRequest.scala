@@ -22,6 +22,11 @@ trait TargetCapacitySpecificationRequest extends StObject {
   var SpotTargetCapacity: js.UndefOr[Integer] = js.undefined
   
   /**
+    * The unit for the target capacity. Default: units (translates to number of instances)
+    */
+  var TargetCapacityUnitType: js.UndefOr[typings.awsSdk.ec2Mod.TargetCapacityUnitType] = js.undefined
+  
+  /**
     * The number of units to request, filled using DefaultTargetCapacityType.
     */
   var TotalTargetCapacity: Integer
@@ -46,6 +51,10 @@ object TargetCapacitySpecificationRequest {
     inline def setSpotTargetCapacity(value: Integer): Self = StObject.set(x, "SpotTargetCapacity", value.asInstanceOf[js.Any])
     
     inline def setSpotTargetCapacityUndefined: Self = StObject.set(x, "SpotTargetCapacity", js.undefined)
+    
+    inline def setTargetCapacityUnitType(value: TargetCapacityUnitType): Self = StObject.set(x, "TargetCapacityUnitType", value.asInstanceOf[js.Any])
+    
+    inline def setTargetCapacityUnitTypeUndefined: Self = StObject.set(x, "TargetCapacityUnitType", js.undefined)
     
     inline def setTotalTargetCapacity(value: Integer): Self = StObject.set(x, "TotalTargetCapacity", value.asInstanceOf[js.Any])
   }

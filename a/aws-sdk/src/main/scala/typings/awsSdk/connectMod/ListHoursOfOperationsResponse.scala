@@ -29,7 +29,7 @@ object ListHoursOfOperationsResponse {
     
     inline def setHoursOfOperationSummaryListUndefined: Self = StObject.set(x, "HoursOfOperationSummaryList", js.undefined)
     
-    inline def setHoursOfOperationSummaryListVarargs(value: HoursOfOperationSummary*): Self = StObject.set(x, "HoursOfOperationSummaryList", js.Array(value :_*))
+    inline def setHoursOfOperationSummaryListVarargs(value: HoursOfOperationSummary*): Self = StObject.set(x, "HoursOfOperationSummaryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

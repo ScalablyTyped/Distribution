@@ -2,9 +2,9 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.feedContentMod.FeedContentProps
 import typings.semanticUiReact.feedDateMod.FeedDateProps
 import typings.semanticUiReact.feedEventMod.FeedEventProps
@@ -33,29 +33,29 @@ object feedFeedMod extends Shortcut {
     extends StObject
        with FunctionComponent[FeedProps] {
     
-    var Content: StatelessComponent[FeedContentProps] = js.native
+    var Content: FC[FeedContentProps] = js.native
     
-    var Date: StatelessComponent[FeedDateProps] = js.native
+    var Date: FC[FeedDateProps] = js.native
     
-    var Event: StatelessComponent[FeedEventProps] = js.native
+    var Event: FC[FeedEventProps] = js.native
     
-    var Extra: StatelessComponent[FeedExtraProps] = js.native
+    var Extra: FC[FeedExtraProps] = js.native
     
-    var Label: StatelessComponent[FeedLabelProps] = js.native
+    var Label: FC[FeedLabelProps] = js.native
     
-    var Like: StatelessComponent[FeedLikeProps] = js.native
+    var Like: FC[FeedLikeProps] = js.native
     
-    var Meta: StatelessComponent[FeedMetaProps] = js.native
+    var Meta: FC[FeedMetaProps] = js.native
     
-    var Summary: StatelessComponent[FeedSummaryProps] = js.native
+    var Summary: FC[FeedSummaryProps] = js.native
     
-    var User: StatelessComponent[FeedUserProps] = js.native
+    var User: FC[FeedUserProps] = js.native
   }
   
   trait FeedProps
     extends StObject
        with StrictFeedProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FeedProps {
     
     inline def apply(): FeedProps = {
@@ -67,7 +67,7 @@ object feedFeedMod extends Shortcut {
   trait StrictFeedProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -90,7 +90,7 @@ object feedFeedMod extends Shortcut {
     
     extension [Self <: StrictFeedProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -106,7 +106,7 @@ object feedFeedMod extends Shortcut {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: SemanticShorthandItem[FeedEventProps]*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: SemanticShorthandItem[FeedEventProps]*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setSize(value: small | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -27,6 +27,9 @@ trait GrimoireMinigame
     */
   def computeMagicM(): Unit = js.native
   
+  @JSName("draw")
+  def draw_MGrimoireMinigame(): Unit = js.native
+  
   /**
     * Computes the fail chance for  aspell
     */
@@ -43,6 +46,9 @@ trait GrimoireMinigame
   def getSpellCostBreakdown(spell: GrimoireSpell): String = js.native
   
   var infoL: HTMLDivElement = js.native
+  
+  @JSName("logic")
+  def logic_MGrimoireMinigame(): Unit = js.native
   
   var lumpRefill: HTMLDivElement = js.native
   

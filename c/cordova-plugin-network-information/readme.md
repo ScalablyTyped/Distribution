@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-network-information
 
-Typings are for version 2.0.2
+Typings are for version 3.0.0
 
 ## Library description:
 Cordova Network Information Plugin
@@ -10,15 +10,12 @@ Cordova Network Information Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-network-information |
 | Keywords           | cordova, network, information, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows, cordova-browser |
-| # releases         | 1 |
-| # dependents       | 34 |
-| # downloads        | 1695840 |
-| # stars            | 19 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 123229.66666666667 |
+| # stars            | 447.0 |
 
 ## Links
-- [Homepage](https://github.com/apache/cordova-plugin-network-information#readme)
-- [Bugs](https://github.com/apache/cordova-plugin-network-information/issues)
-- [Repository](https://github.com/apache/cordova-plugin-network-information)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-network-information)
     
 

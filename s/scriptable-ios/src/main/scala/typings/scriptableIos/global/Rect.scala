@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Rect")
 @js.native
-class Rect protected ()
+open class Rect protected ()
   extends StObject
      with typings.scriptableIos.Rect {
   /**

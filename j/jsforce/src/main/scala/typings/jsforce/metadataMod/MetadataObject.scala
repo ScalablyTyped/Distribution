@@ -31,7 +31,7 @@ object MetadataObject {
     
     inline def setChildXmlNamesUndefined: Self = StObject.set(x, "childXmlNames", js.undefined)
     
-    inline def setChildXmlNamesVarargs(value: String*): Self = StObject.set(x, "childXmlNames", js.Array(value :_*))
+    inline def setChildXmlNamesVarargs(value: String*): Self = StObject.set(x, "childXmlNames", js.Array(value*))
     
     inline def setDirectoryName(value: String): Self = StObject.set(x, "directoryName", value.asInstanceOf[js.Any])
     

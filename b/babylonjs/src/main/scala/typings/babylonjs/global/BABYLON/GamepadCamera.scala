@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.GamepadCamera")
 @js.native
-class GamepadCamera protected ()
+open class GamepadCamera protected ()
   extends StObject
      with typings.babylonjs.BABYLON.GamepadCamera {
   /**
@@ -20,6 +20,7 @@ class GamepadCamera protected ()
     * @param position Define the start position of the camera in the scene
     * @param scene Define the scene the camera belongs to
     */
+  def this(name: String, position: typings.babylonjs.BABYLON.Vector3) = this()
   def this(name: String, position: typings.babylonjs.BABYLON.Vector3, scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /**

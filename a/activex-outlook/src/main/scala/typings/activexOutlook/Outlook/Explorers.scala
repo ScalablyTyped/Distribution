@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Explorers extends StObject {
   
-  def Add(Folder: js.Any, DisplayMode: OlFolderDisplayMode): Explorer
+  def Add(Folder: Any, DisplayMode: OlFolderDisplayMode): Explorer
   
   val Application: typings.activexOutlook.Outlook.Application
   
@@ -14,25 +14,25 @@ trait Explorers extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): Explorer
+  def Item(Index: Any): Explorer
   
   /* private */ @JSName("Outlook.Explorers_typekey")
   var OutlookDotExplorers_typekey: Explorers
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
 object Explorers {
   
   inline def apply(
-    Add: (js.Any, OlFolderDisplayMode) => Explorer,
+    Add: (Any, OlFolderDisplayMode) => Explorer,
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => Explorer,
+    Item: Any => Explorer,
     OutlookDotExplorers_typekey: Explorers,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): Explorers = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object Explorers {
   
   extension [Self <: Explorers](x: Self) {
     
-    inline def setAdd(value: (js.Any, OlFolderDisplayMode) => Explorer): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Any, OlFolderDisplayMode) => Explorer): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
@@ -50,11 +50,11 @@ object Explorers {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Explorer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Explorer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotExplorers_typekey(value: Explorers): Self = StObject.set(x, "Outlook.Explorers_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

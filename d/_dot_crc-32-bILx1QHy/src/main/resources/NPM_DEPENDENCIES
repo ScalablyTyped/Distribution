@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".crc-32-bILx1QHy" : "1.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".crc-32-bILx1QHy" : "1.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

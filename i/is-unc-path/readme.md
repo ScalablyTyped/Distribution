@@ -10,10 +10,10 @@ Returns true if a filepath is a windows UNC file path.
 | ------------------ | :-------------: |
 | Full name          | is-unc-path |
 | Keywords           | absolute, expression, file, filepath, is, match, matching, path, regex, regexp, regular, unc, win, windows |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 163972412 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0426685E7 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/is-unc-path)

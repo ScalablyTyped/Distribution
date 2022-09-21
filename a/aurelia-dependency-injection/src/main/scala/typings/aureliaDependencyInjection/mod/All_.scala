@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-dependency-injection", "All")
 @js.native
-class All_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends StObject {
+open class All_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends StObject {
   def this(key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) = this()
   
   def get(container: Container): js.Array[TImpl] = js.native

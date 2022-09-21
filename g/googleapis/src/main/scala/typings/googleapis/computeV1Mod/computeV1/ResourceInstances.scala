@@ -4,98 +4,17 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Instances")
 @js.native
-class ResourceInstances protected () extends StObject {
+open class ResourceInstances protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * compute.instances.addAccessConfig
-    * @desc Adds an access config to an instance's network interface.
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // The instance name for this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     // The name of the network interface to add to this instance.
-    *     networkInterface: '',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.addAccessConfig(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.addAccessConfig
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance The instance name for this request.
-    * @param {string} params.networkInterface The name of the network interface to add to this instance.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().AccessConfig} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def addAccessConfig(): GaxiosPromise[SchemaOperation] = js.native
   def addAccessConfig(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addAccessConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -103,8 +22,8 @@ class ResourceInstances protected () extends StObject {
   def addAccessConfig(params: ParamsResourceInstancesAddaccessconfig, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addAccessConfig(
     params: ParamsResourceInstancesAddaccessconfig,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def addAccessConfig(params: ParamsResourceInstancesAddaccessconfig, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addAccessConfig(
@@ -112,91 +31,231 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.aggregatedList
-    * @desc Retrieves aggregated list of all of the instances in your project
-    * across all regions and zones.
+    * Adds an access config to an instance's network interface.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.addAccessConfig({
+    *     // The instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The name of the network interface to add to this instance.
+    *     networkInterface: 'placeholder-value',
     *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
     *
-    *     auth: authClient,
-    *   };
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "externalIpv6": "my_externalIpv6",
+    *       //   "externalIpv6PrefixLength": 0,
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "natIP": "my_natIP",
+    *       //   "networkTier": "my_networkTier",
+    *       //   "publicPtrDomainName": "my_publicPtrDomainName",
+    *       //   "setPublicPtr": false,
+    *       //   "type": "my_type"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
     *
-    *   var handlePage = function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
     *
-    *     var itemsPage = response['items'];
-    *     if (!itemsPage) {
-    *       return;
-    *     }
-    *     Object.keys(itemsPage).forEach(function(name) {
-    *       // TODO: Change code below to process each `name` property:
-    *       console.log(name + ': ' + JSON.stringify(itemsPage[name], null,
-    * 2));
-    *     });
-    *
-    *     if (response.nextPageToken) {
-    *       request.pageToken = response.nextPageToken;
-    *       compute.instances.aggregatedList(request, handlePage);
-    *     }
-    *   };
-    *
-    *   compute.instances.aggregatedList(request, handlePage);
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.aggregatedList
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Project ID for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def addAccessConfig(params: ParamsResourceInstancesAddaccessconfig, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def addAccessConfig(
+    params: ParamsResourceInstancesAddaccessconfig,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def addResourcePolicies(): GaxiosPromise[SchemaOperation] = js.native
+  def addResourcePolicies(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addResourcePolicies(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addResourcePolicies(params: ParamsResourceInstancesAddresourcepolicies): GaxiosPromise[SchemaOperation] = js.native
+  def addResourcePolicies(
+    params: ParamsResourceInstancesAddresourcepolicies,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  def addResourcePolicies(
+    params: ParamsResourceInstancesAddresourcepolicies,
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
+  ): Unit = js.native
+  def addResourcePolicies(params: ParamsResourceInstancesAddresourcepolicies, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addResourcePolicies(
+    params: ParamsResourceInstancesAddresourcepolicies,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Adds existing resource policies to an instance. You can only add one policy right now which will be applied to this instance for scheduling live migrations.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.addResourcePolicies({
+    *     // The instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "resourcePolicies": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def addResourcePolicies(params: ParamsResourceInstancesAddresourcepolicies, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def addResourcePolicies(
+    params: ParamsResourceInstancesAddresourcepolicies,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def aggregatedList(): GaxiosPromise[SchemaInstanceAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaInstanceAggregatedList]): Unit = js.native
   def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceAggregatedList] = js.native
@@ -207,8 +266,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def aggregatedList(
     params: ParamsResourceInstancesAggregatedlist,
-    options: BodyResponseCallback[SchemaInstanceAggregatedList],
-    callback: BodyResponseCallback[SchemaInstanceAggregatedList]
+    options: BodyResponseCallback[Readable | SchemaInstanceAggregatedList],
+    callback: BodyResponseCallback[Readable | SchemaInstanceAggregatedList]
   ): Unit = js.native
   def aggregatedList(params: ParamsResourceInstancesAggregatedlist, options: MethodOptions): GaxiosPromise[SchemaInstanceAggregatedList] = js.native
   def aggregatedList(
@@ -216,90 +275,86 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceAggregatedList]
   ): Unit = js.native
-  
   /**
-    * compute.instances.attachDisk
-    * @desc Attaches an existing Disk resource to an instance. You must first
-    * create the disk before you can attach it. It is not possible to create
-    * and attach a disk at the same time. For more information, read Adding a
-    * persistent disk to your instance.
+    * Retrieves an aggregated list of all of the instances in your project across all regions and zones. The performance of this method degrades when a filter is specified on a project that has a very large number of instances.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // The instance name for this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.attachDisk(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.aggregatedList({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // Indicates whether every visible scope for each scope type (zone, region, global) should be included in the response. For new resource types added after this field, the flag has no effect as new resource types will always include every visible scope for each scope type in response. For resource types which predate this field, if this flag is omitted or false, only scopes of the scope types where the resource type is expected to be found will be included.
+    *     includeAllScopes: 'placeholder-value',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "items": {},
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "unreachables": [],
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.attachDisk
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {boolean=} params.forceAttach Whether to force attach the disk even if it's currently attached to another instance.
-    * @param {string} params.instance The instance name for this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().AttachedDisk} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def aggregatedList(params: ParamsResourceInstancesAggregatedlist, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def aggregatedList(
+    params: ParamsResourceInstancesAggregatedlist,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def attachDisk(): GaxiosPromise[SchemaOperation] = js.native
   def attachDisk(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def attachDisk(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -307,8 +362,8 @@ class ResourceInstances protected () extends StObject {
   def attachDisk(params: ParamsResourceInstancesAttachdisk, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def attachDisk(
     params: ParamsResourceInstancesAttachdisk,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def attachDisk(params: ParamsResourceInstancesAttachdisk, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def attachDisk(
@@ -316,84 +371,241 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  /**
+    * Attaches an existing Disk resource to an instance. You must first create the disk before you can attach it. It is not possible to create and attach a disk at the same time. For more information, read Adding a persistent disk to your instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.attachDisk({
+    *     // Whether to force attach the regional disk even if it's currently attached to another instance. If you try to force attach a zonal disk to an instance, you will receive an error.
+    *     forceAttach: 'placeholder-value',
+    *     // The instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "architecture": "my_architecture",
+    *       //   "autoDelete": false,
+    *       //   "boot": false,
+    *       //   "deviceName": "my_deviceName",
+    *       //   "diskEncryptionKey": {},
+    *       //   "diskSizeGb": "my_diskSizeGb",
+    *       //   "guestOsFeatures": [],
+    *       //   "index": 0,
+    *       //   "initializeParams": {},
+    *       //   "interface": "my_interface",
+    *       //   "kind": "my_kind",
+    *       //   "licenses": [],
+    *       //   "mode": "my_mode",
+    *       //   "shieldedInstanceInitialState": {},
+    *       //   "source": "my_source",
+    *       //   "type": "my_type"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def attachDisk(params: ParamsResourceInstancesAttachdisk, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def attachDisk(
+    params: ParamsResourceInstancesAttachdisk,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def bulkInsert(): GaxiosPromise[SchemaOperation] = js.native
+  def bulkInsert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def bulkInsert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def bulkInsert(params: ParamsResourceInstancesBulkinsert): GaxiosPromise[SchemaOperation] = js.native
+  def bulkInsert(params: ParamsResourceInstancesBulkinsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def bulkInsert(
+    params: ParamsResourceInstancesBulkinsert,
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
+  ): Unit = js.native
+  def bulkInsert(params: ParamsResourceInstancesBulkinsert, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def bulkInsert(
+    params: ParamsResourceInstancesBulkinsert,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Creates multiple instances. Count specifies the number of instances to create. For more information, see About bulk creation of VMs.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.bulkInsert({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "count": "my_count",
+    *       //   "instanceProperties": {},
+    *       //   "locationPolicy": {},
+    *       //   "minCount": "my_minCount",
+    *       //   "namePattern": "my_namePattern",
+    *       //   "perInstanceProperties": {},
+    *       //   "sourceInstanceTemplate": "my_sourceInstanceTemplate"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def bulkInsert(params: ParamsResourceInstancesBulkinsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def bulkInsert(
+    params: ParamsResourceInstancesBulkinsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * compute.instances.delete
-    * @desc Deletes the specified Instance resource. For more information, see
-    * Stopping or Deleting an Instance.
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance resource to delete.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.delete(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance resource to delete.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -401,8 +613,8 @@ class ResourceInstances protected () extends StObject {
   def delete(params: ParamsResourceInstancesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
     params: ParamsResourceInstancesDelete,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def delete(params: ParamsResourceInstancesDelete, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(
@@ -410,89 +622,96 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.deleteAccessConfig
-    * @desc Deletes an access config from an instance's network interface.
+    * Deletes the specified Instance resource. For more information, see Deleting an instance.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // The instance name for this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     // The name of the access config to delete.
-    *     accessConfig: '',  // TODO: Update placeholder value.
-    *
-    *     // The name of the network interface.
-    *     networkInterface: '',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.deleteAccessConfig(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.delete({
+    *     // Name of the instance resource to delete.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.deleteAccessConfig
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accessConfig The name of the access config to delete.
-    * @param {string} params.instance The instance name for this request.
-    * @param {string} params.networkInterface The name of the network interface.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceInstancesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceInstancesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def deleteAccessConfig(): GaxiosPromise[SchemaOperation] = js.native
   def deleteAccessConfig(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def deleteAccessConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -500,8 +719,8 @@ class ResourceInstances protected () extends StObject {
   def deleteAccessConfig(params: ParamsResourceInstancesDeleteaccessconfig, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def deleteAccessConfig(
     params: ParamsResourceInstancesDeleteaccessconfig,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def deleteAccessConfig(params: ParamsResourceInstancesDeleteaccessconfig, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteAccessConfig(
@@ -509,85 +728,100 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.detachDisk
-    * @desc Detaches a disk from an instance.
+    * Deletes an access config from an instance's network interface.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Instance name.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     // Disk device name to detach.
-    *     deviceName: '',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.detachDisk(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.deleteAccessConfig({
+    *     // The name of the access config to delete.
+    *     accessConfig: 'placeholder-value',
+    *     // The instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The name of the network interface.
+    *     networkInterface: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.detachDisk
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.deviceName The device name of the disk to detach. Make a get() request on the instance to view currently attached disks and device names.
-    * @param {string} params.instance Instance name for this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def deleteAccessConfig(params: ParamsResourceInstancesDeleteaccessconfig, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def deleteAccessConfig(
+    params: ParamsResourceInstancesDeleteaccessconfig,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def detachDisk(): GaxiosPromise[SchemaOperation] = js.native
   def detachDisk(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def detachDisk(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -595,8 +829,8 @@ class ResourceInstances protected () extends StObject {
   def detachDisk(params: ParamsResourceInstancesDetachdisk, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def detachDisk(
     params: ParamsResourceInstancesDetachdisk,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def detachDisk(params: ParamsResourceInstancesDetachdisk, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def detachDisk(
@@ -604,81 +838,98 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.get
-    * @desc Returns the specified Instance resource. Gets a list of available
-    * instances by making a list() request.
+    * Detaches a disk from an instance.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance resource to return.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.get(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.detachDisk({
+    *     // The device name of the disk to detach. Make a get() request on the instance to view currently attached disks and device names.
+    *     deviceName: 'placeholder-value',
+    *     // Instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.get
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance resource to return.
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def detachDisk(params: ParamsResourceInstancesDetachdisk, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def detachDisk(
+    params: ParamsResourceInstancesDetachdisk,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaInstance]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstance] = js.native
@@ -686,8 +937,8 @@ class ResourceInstances protected () extends StObject {
   def get(params: ParamsResourceInstancesGet, callback: BodyResponseCallback[SchemaInstance]): Unit = js.native
   def get(
     params: ParamsResourceInstancesGet,
-    options: BodyResponseCallback[SchemaInstance],
-    callback: BodyResponseCallback[SchemaInstance]
+    options: BodyResponseCallback[Readable | SchemaInstance],
+    callback: BodyResponseCallback[Readable | SchemaInstance]
   ): Unit = js.native
   def get(params: ParamsResourceInstancesGet, options: MethodOptions): GaxiosPromise[SchemaInstance] = js.native
   def get(
@@ -695,22 +946,296 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstance]
   ): Unit = js.native
-  
   /**
-    * compute.instances.getIamPolicy
-    * @desc Gets the access control policy for a resource. May be empty if no
-    * such policy or resource exists.
-    * @alias compute.instances.getIamPolicy
-    * @memberOf! ()
+    * Returns the specified Instance resource. Gets a list of available instances by making a list() request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.resource_ Name or id of the resource for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.get({
+    *     // Name of the instance resource to return.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "advancedMachineFeatures": {},
+    *   //   "canIpForward": false,
+    *   //   "confidentialInstanceConfig": {},
+    *   //   "cpuPlatform": "my_cpuPlatform",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "deletionProtection": false,
+    *   //   "description": "my_description",
+    *   //   "disks": [],
+    *   //   "displayDevice": {},
+    *   //   "fingerprint": "my_fingerprint",
+    *   //   "guestAccelerators": [],
+    *   //   "hostname": "my_hostname",
+    *   //   "id": "my_id",
+    *   //   "keyRevocationActionType": "my_keyRevocationActionType",
+    *   //   "kind": "my_kind",
+    *   //   "labelFingerprint": "my_labelFingerprint",
+    *   //   "labels": {},
+    *   //   "lastStartTimestamp": "my_lastStartTimestamp",
+    *   //   "lastStopTimestamp": "my_lastStopTimestamp",
+    *   //   "lastSuspendedTimestamp": "my_lastSuspendedTimestamp",
+    *   //   "machineType": "my_machineType",
+    *   //   "metadata": {},
+    *   //   "minCpuPlatform": "my_minCpuPlatform",
+    *   //   "name": "my_name",
+    *   //   "networkInterfaces": [],
+    *   //   "networkPerformanceConfig": {},
+    *   //   "params": {},
+    *   //   "privateIpv6GoogleAccess": "my_privateIpv6GoogleAccess",
+    *   //   "reservationAffinity": {},
+    *   //   "resourcePolicies": [],
+    *   //   "satisfiesPzs": false,
+    *   //   "scheduling": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "serviceAccounts": [],
+    *   //   "shieldedInstanceConfig": {},
+    *   //   "shieldedInstanceIntegrityPolicy": {},
+    *   //   "sourceMachineImage": "my_sourceMachineImage",
+    *   //   "sourceMachineImageEncryptionKey": {},
+    *   //   "startRestricted": false,
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "tags": {},
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceInstancesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceInstancesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def getEffectiveFirewalls(): GaxiosPromise[SchemaInstancesGetEffectiveFirewallsResponse] = js.native
+  def getEffectiveFirewalls(callback: BodyResponseCallback[SchemaInstancesGetEffectiveFirewallsResponse]): Unit = js.native
+  def getEffectiveFirewalls(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstancesGetEffectiveFirewallsResponse] = js.native
+  def getEffectiveFirewalls(params: ParamsResourceInstancesGeteffectivefirewalls): GaxiosPromise[SchemaInstancesGetEffectiveFirewallsResponse] = js.native
+  def getEffectiveFirewalls(
+    params: ParamsResourceInstancesGeteffectivefirewalls,
+    callback: BodyResponseCallback[SchemaInstancesGetEffectiveFirewallsResponse]
+  ): Unit = js.native
+  def getEffectiveFirewalls(
+    params: ParamsResourceInstancesGeteffectivefirewalls,
+    options: BodyResponseCallback[Readable | SchemaInstancesGetEffectiveFirewallsResponse],
+    callback: BodyResponseCallback[Readable | SchemaInstancesGetEffectiveFirewallsResponse]
+  ): Unit = js.native
+  def getEffectiveFirewalls(params: ParamsResourceInstancesGeteffectivefirewalls, options: MethodOptions): GaxiosPromise[SchemaInstancesGetEffectiveFirewallsResponse] = js.native
+  def getEffectiveFirewalls(
+    params: ParamsResourceInstancesGeteffectivefirewalls,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaInstancesGetEffectiveFirewallsResponse]
+  ): Unit = js.native
+  /**
+    * Returns effective firewalls applied to an interface of the instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.getEffectiveFirewalls({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // The name of the network interface to get the effective firewalls.
+    *     networkInterface: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "firewallPolicys": [],
+    *   //   "firewalls": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def getEffectiveFirewalls(params: ParamsResourceInstancesGeteffectivefirewalls, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getEffectiveFirewalls(
+    params: ParamsResourceInstancesGeteffectivefirewalls,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def getGuestAttributes(): GaxiosPromise[SchemaGuestAttributes] = js.native
+  def getGuestAttributes(callback: BodyResponseCallback[SchemaGuestAttributes]): Unit = js.native
+  def getGuestAttributes(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGuestAttributes] = js.native
+  def getGuestAttributes(params: ParamsResourceInstancesGetguestattributes): GaxiosPromise[SchemaGuestAttributes] = js.native
+  def getGuestAttributes(
+    params: ParamsResourceInstancesGetguestattributes,
+    callback: BodyResponseCallback[SchemaGuestAttributes]
+  ): Unit = js.native
+  def getGuestAttributes(
+    params: ParamsResourceInstancesGetguestattributes,
+    options: BodyResponseCallback[Readable | SchemaGuestAttributes],
+    callback: BodyResponseCallback[Readable | SchemaGuestAttributes]
+  ): Unit = js.native
+  def getGuestAttributes(params: ParamsResourceInstancesGetguestattributes, options: MethodOptions): GaxiosPromise[SchemaGuestAttributes] = js.native
+  def getGuestAttributes(
+    params: ParamsResourceInstancesGetguestattributes,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaGuestAttributes]
+  ): Unit = js.native
+  /**
+    * Returns the specified guest attributes entry.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.getGuestAttributes({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Specifies the guest attributes path to be queried.
+    *     queryPath: 'placeholder-value',
+    *     // Specifies the key for the guest attributes entry.
+    *     variableKey: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind",
+    *   //   "queryPath": "my_queryPath",
+    *   //   "queryValue": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "variableKey": "my_variableKey",
+    *   //   "variableValue": "my_variableValue"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def getGuestAttributes(params: ParamsResourceInstancesGetguestattributes, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getGuestAttributes(
+    params: ParamsResourceInstancesGetguestattributes,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
@@ -718,8 +1243,8 @@ class ResourceInstances protected () extends StObject {
   def getIamPolicy(params: ParamsResourceInstancesGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
     params: ParamsResourceInstancesGetiampolicy,
-    options: BodyResponseCallback[SchemaPolicy],
-    callback: BodyResponseCallback[SchemaPolicy]
+    options: BodyResponseCallback[Readable | SchemaPolicy],
+    callback: BodyResponseCallback[Readable | SchemaPolicy]
   ): Unit = js.native
   def getIamPolicy(params: ParamsResourceInstancesGetiampolicy, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
@@ -727,81 +1252,161 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
-  
   /**
-    * compute.instances.getSerialPortOutput
-    * @desc Returns the last 1 MB of serial port output from the specified
-    * instance.
+    * Gets the access control policy for a resource. May be empty if no such policy or resource exists.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance scoping this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.getSerialPortOutput(request, function(err, response)
-    * { if (err) { console.error(err); return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.getIamPolicy({
+    *     // Requested IAM Policy version.
+    *     optionsRequestedPolicyVersion: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name or id of the resource for this request.
+    *     resource: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "auditConfigs": [],
+    *   //   "bindings": [],
+    *   //   "etag": "my_etag",
+    *   //   "rules": [],
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.getSerialPortOutput
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance scoping this request.
-    * @param {integer=} params.port Specifies which COM or serial port to retrieve data from.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.start Returns output starting from a specific byte position. Use this to page through output when the output is too large to return in a single request. For the initial request, leave this field unspecified. For subsequent calls, this field should be set to the next value returned in the previous call.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getIamPolicy(params: ParamsResourceInstancesGetiampolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getIamPolicy(
+    params: ParamsResourceInstancesGetiampolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def getScreenshot(): GaxiosPromise[SchemaScreenshot] = js.native
+  def getScreenshot(callback: BodyResponseCallback[SchemaScreenshot]): Unit = js.native
+  def getScreenshot(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScreenshot] = js.native
+  def getScreenshot(params: ParamsResourceInstancesGetscreenshot): GaxiosPromise[SchemaScreenshot] = js.native
+  def getScreenshot(params: ParamsResourceInstancesGetscreenshot, callback: BodyResponseCallback[SchemaScreenshot]): Unit = js.native
+  def getScreenshot(
+    params: ParamsResourceInstancesGetscreenshot,
+    options: BodyResponseCallback[Readable | SchemaScreenshot],
+    callback: BodyResponseCallback[Readable | SchemaScreenshot]
+  ): Unit = js.native
+  def getScreenshot(params: ParamsResourceInstancesGetscreenshot, options: MethodOptions): GaxiosPromise[SchemaScreenshot] = js.native
+  def getScreenshot(
+    params: ParamsResourceInstancesGetscreenshot,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaScreenshot]
+  ): Unit = js.native
+  /**
+    * Returns the screenshot from the specified instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.getScreenshot({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contents": "my_contents",
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def getScreenshot(params: ParamsResourceInstancesGetscreenshot, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getScreenshot(
+    params: ParamsResourceInstancesGetscreenshot,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getSerialPortOutput(): GaxiosPromise[SchemaSerialPortOutput] = js.native
   def getSerialPortOutput(callback: BodyResponseCallback[SchemaSerialPortOutput]): Unit = js.native
   def getSerialPortOutput(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSerialPortOutput] = js.native
@@ -812,8 +1417,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def getSerialPortOutput(
     params: ParamsResourceInstancesGetserialportoutput,
-    options: BodyResponseCallback[SchemaSerialPortOutput],
-    callback: BodyResponseCallback[SchemaSerialPortOutput]
+    options: BodyResponseCallback[Readable | SchemaSerialPortOutput],
+    callback: BodyResponseCallback[Readable | SchemaSerialPortOutput]
   ): Unit = js.native
   def getSerialPortOutput(params: ParamsResourceInstancesGetserialportoutput, options: MethodOptions): GaxiosPromise[SchemaSerialPortOutput] = js.native
   def getSerialPortOutput(
@@ -821,21 +1426,80 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSerialPortOutput]
   ): Unit = js.native
-  
   /**
-    * compute.instances.getShieldedInstanceIdentity
-    * @desc Returns the Shielded Instance Identity of an instance
-    * @alias compute.instances.getShieldedInstanceIdentity
-    * @memberOf! ()
+    * Returns the last 1 MB of serial port output from the specified instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name or id of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.getSerialPortOutput({
+    *     // Name of the instance for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Specifies which COM or serial port to retrieve data from.
+    *     port: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Specifies the starting byte position of the output to return. To start with the first byte of output to the specified port, omit this field or set it to `0`. If the output for that byte position is available, this field matches the `start` parameter sent with the request. If the amount of serial console output exceeds the size of the buffer (1 MB), the oldest output is discarded and is no longer available. If the requested start position refers to discarded output, the start position is adjusted to the oldest output still available, and the adjusted start position is returned as the `start` property value. You can also provide a negative start position, which translates to the most recent number of bytes written to the serial port. For example, -3 is interpreted as the most recent 3 bytes written to the serial console.
+    *     start: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contents": "my_contents",
+    *   //   "kind": "my_kind",
+    *   //   "next": "my_next",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "start": "my_start"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getSerialPortOutput(params: ParamsResourceInstancesGetserialportoutput, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getSerialPortOutput(
+    params: ParamsResourceInstancesGetserialportoutput,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getShieldedInstanceIdentity(): GaxiosPromise[SchemaShieldedInstanceIdentity] = js.native
   def getShieldedInstanceIdentity(callback: BodyResponseCallback[SchemaShieldedInstanceIdentity]): Unit = js.native
   def getShieldedInstanceIdentity(params: Unit, options: MethodOptions): GaxiosPromise[SchemaShieldedInstanceIdentity] = js.native
@@ -846,8 +1510,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def getShieldedInstanceIdentity(
     params: ParamsResourceInstancesGetshieldedinstanceidentity,
-    options: BodyResponseCallback[SchemaShieldedInstanceIdentity],
-    callback: BodyResponseCallback[SchemaShieldedInstanceIdentity]
+    options: BodyResponseCallback[Readable | SchemaShieldedInstanceIdentity],
+    callback: BodyResponseCallback[Readable | SchemaShieldedInstanceIdentity]
   ): Unit = js.native
   def getShieldedInstanceIdentity(params: ParamsResourceInstancesGetshieldedinstanceidentity, options: MethodOptions): GaxiosPromise[SchemaShieldedInstanceIdentity] = js.native
   def getShieldedInstanceIdentity(
@@ -855,84 +1519,74 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaShieldedInstanceIdentity]
   ): Unit = js.native
-  
   /**
-    * compute.instances.insert
-    * @desc Creates an instance resource in the specified project using the
-    * data included in the request.
+    * Returns the Shielded Instance Identity of an instance
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.insert(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.getShieldedInstanceIdentity({
+    *     // Name or id of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "encryptionKey": {},
+    *   //   "kind": "my_kind",
+    *   //   "signingKey": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.insert
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string=} params.sourceInstanceTemplate Specifies instance template to create the instance.  This field is optional. It can be a full or partial URL. For example, the following are all valid URLs to an instance template:   - https://www.googleapis.com/compute/v1/projects/project/global/instanceTemplates/instanceTemplate  - projects/project/global/instanceTemplates/instanceTemplate  - global/instanceTemplates/instanceTemplate
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().Instance} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getShieldedInstanceIdentity(params: ParamsResourceInstancesGetshieldedinstanceidentity, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getShieldedInstanceIdentity(
+    params: ParamsResourceInstancesGetshieldedinstanceidentity,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -940,8 +1594,8 @@ class ResourceInstances protected () extends StObject {
   def insert(params: ParamsResourceInstancesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
     params: ParamsResourceInstancesInsert,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def insert(params: ParamsResourceInstancesInsert, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(
@@ -949,94 +1603,148 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.list
-    * @desc Retrieves the list of instances contained within the specified
-    * zone.
+    * Creates an instance resource in the specified project using the data included in the request.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.insert({
     *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Specifies instance template to create the instance. This field is optional. It can be a full or partial URL. For example, the following are all valid URLs to an instance template: - https://www.googleapis.com/compute/v1/projects/project /global/instanceTemplates/instanceTemplate - projects/project/global/instanceTemplates/instanceTemplate - global/instanceTemplates/instanceTemplate
+    *     sourceInstanceTemplate: 'placeholder-value',
+    *     // Specifies the machine image to use to create the instance. This field is optional. It can be a full or partial URL. For example, the following are all valid URLs to a machine image: - https://www.googleapis.com/compute/v1/projects/project/global/global /machineImages/machineImage - projects/project/global/global/machineImages/machineImage - global/machineImages/machineImage
+    *     sourceMachineImage: 'placeholder-value',
     *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
     *
-    *     auth: authClient,
-    *   };
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "advancedMachineFeatures": {},
+    *       //   "canIpForward": false,
+    *       //   "confidentialInstanceConfig": {},
+    *       //   "cpuPlatform": "my_cpuPlatform",
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "deletionProtection": false,
+    *       //   "description": "my_description",
+    *       //   "disks": [],
+    *       //   "displayDevice": {},
+    *       //   "fingerprint": "my_fingerprint",
+    *       //   "guestAccelerators": [],
+    *       //   "hostname": "my_hostname",
+    *       //   "id": "my_id",
+    *       //   "keyRevocationActionType": "my_keyRevocationActionType",
+    *       //   "kind": "my_kind",
+    *       //   "labelFingerprint": "my_labelFingerprint",
+    *       //   "labels": {},
+    *       //   "lastStartTimestamp": "my_lastStartTimestamp",
+    *       //   "lastStopTimestamp": "my_lastStopTimestamp",
+    *       //   "lastSuspendedTimestamp": "my_lastSuspendedTimestamp",
+    *       //   "machineType": "my_machineType",
+    *       //   "metadata": {},
+    *       //   "minCpuPlatform": "my_minCpuPlatform",
+    *       //   "name": "my_name",
+    *       //   "networkInterfaces": [],
+    *       //   "networkPerformanceConfig": {},
+    *       //   "params": {},
+    *       //   "privateIpv6GoogleAccess": "my_privateIpv6GoogleAccess",
+    *       //   "reservationAffinity": {},
+    *       //   "resourcePolicies": [],
+    *       //   "satisfiesPzs": false,
+    *       //   "scheduling": {},
+    *       //   "selfLink": "my_selfLink",
+    *       //   "serviceAccounts": [],
+    *       //   "shieldedInstanceConfig": {},
+    *       //   "shieldedInstanceIntegrityPolicy": {},
+    *       //   "sourceMachineImage": "my_sourceMachineImage",
+    *       //   "sourceMachineImageEncryptionKey": {},
+    *       //   "startRestricted": false,
+    *       //   "status": "my_status",
+    *       //   "statusMessage": "my_statusMessage",
+    *       //   "tags": {},
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
     *
-    *   var handlePage = function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
     *
-    *     var itemsPage = response['items'];
-    *     if (!itemsPage) {
-    *       return;
-    *     }
-    *     for (var i = 0; i < itemsPage.length; i++) {
-    *       // TODO: Change code below to process each resource in `itemsPage`:
-    *       console.log(JSON.stringify(itemsPage[i], null, 2));
-    *     }
-    *
-    *     if (response.nextPageToken) {
-    *       request.pageToken = response.nextPageToken;
-    *       compute.instances.list(request, handlePage);
-    *     }
-    *   };
-    *
-    *   compute.instances.list(request, handlePage);
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.list
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceInstancesInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceInstancesInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaInstanceList] = js.native
   def list(callback: BodyResponseCallback[SchemaInstanceList]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceList] = js.native
@@ -1044,8 +1752,8 @@ class ResourceInstances protected () extends StObject {
   def list(params: ParamsResourceInstancesList, callback: BodyResponseCallback[SchemaInstanceList]): Unit = js.native
   def list(
     params: ParamsResourceInstancesList,
-    options: BodyResponseCallback[SchemaInstanceList],
-    callback: BodyResponseCallback[SchemaInstanceList]
+    options: BodyResponseCallback[Readable | SchemaInstanceList],
+    callback: BodyResponseCallback[Readable | SchemaInstanceList]
   ): Unit = js.native
   def list(params: ParamsResourceInstancesList, options: MethodOptions): GaxiosPromise[SchemaInstanceList] = js.native
   def list(
@@ -1053,27 +1761,85 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceList]
   ): Unit = js.native
-  
   /**
-    * compute.instances.listReferrers
-    * @desc Retrieves the list of referrers to instances contained within the
-    * specified zone. For more information, read Viewing Referrers to VM
-    * Instances.
-    * @alias compute.instances.listReferrers
-    * @memberOf! ()
+    * Retrieves the list of instances contained within the specified zone.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {string} params.instance Name of the target instance scoping this request, or '-' if the request should span over all instances in the container.
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.list({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceInstancesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceInstancesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def listReferrers(): GaxiosPromise[SchemaInstanceListReferrers] = js.native
   def listReferrers(callback: BodyResponseCallback[SchemaInstanceListReferrers]): Unit = js.native
   def listReferrers(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceListReferrers] = js.native
@@ -1084,8 +1850,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def listReferrers(
     params: ParamsResourceInstancesListreferrers,
-    options: BodyResponseCallback[SchemaInstanceListReferrers],
-    callback: BodyResponseCallback[SchemaInstanceListReferrers]
+    options: BodyResponseCallback[Readable | SchemaInstanceListReferrers],
+    callback: BodyResponseCallback[Readable | SchemaInstanceListReferrers]
   ): Unit = js.native
   def listReferrers(params: ParamsResourceInstancesListreferrers, options: MethodOptions): GaxiosPromise[SchemaInstanceListReferrers] = js.native
   def listReferrers(
@@ -1093,83 +1859,204 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaInstanceListReferrers]
   ): Unit = js.native
-  
   /**
-    * compute.instances.reset
-    * @desc Performs a reset on the instance. This is a hard reset the VM does
-    * not do a graceful shutdown. For more information, see Resetting an
-    * instance.
+    * Retrieves a list of resources that refer to the VM instance specified in the request. For example, if the VM instance is part of a managed or unmanaged instance group, the referrers list includes the instance group. For more information, read Viewing referrers to VM instances.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance scoping this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.reset(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.listReferrers({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // Name of the target instance scoping this request, or '-' if the request should span over all instances in the container.
+    *     instance: '-|[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.reset
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def listReferrers(params: ParamsResourceInstancesListreferrers, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def listReferrers(
+    params: ParamsResourceInstancesListreferrers,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def removeResourcePolicies(): GaxiosPromise[SchemaOperation] = js.native
+  def removeResourcePolicies(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def removeResourcePolicies(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def removeResourcePolicies(params: ParamsResourceInstancesRemoveresourcepolicies): GaxiosPromise[SchemaOperation] = js.native
+  def removeResourcePolicies(
+    params: ParamsResourceInstancesRemoveresourcepolicies,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  def removeResourcePolicies(
+    params: ParamsResourceInstancesRemoveresourcepolicies,
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
+  ): Unit = js.native
+  def removeResourcePolicies(params: ParamsResourceInstancesRemoveresourcepolicies, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def removeResourcePolicies(
+    params: ParamsResourceInstancesRemoveresourcepolicies,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Removes resource policies from an instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.removeResourcePolicies({
+    *     // The instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "resourcePolicies": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def removeResourcePolicies(params: ParamsResourceInstancesRemoveresourcepolicies, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def removeResourcePolicies(
+    params: ParamsResourceInstancesRemoveresourcepolicies,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def reset(): GaxiosPromise[SchemaOperation] = js.native
   def reset(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def reset(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1177,8 +2064,8 @@ class ResourceInstances protected () extends StObject {
   def reset(params: ParamsResourceInstancesReset, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def reset(
     params: ParamsResourceInstancesReset,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def reset(params: ParamsResourceInstancesReset, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def reset(
@@ -1186,80 +2073,278 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setDeletionProtection
-    * @desc Sets deletion protection on the instance.
+    * Performs a reset on the instance. This is a hard reset. The VM does not do a graceful shutdown. For more information, see Resetting an instance.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the resource for this request.
-    *     resource_: 'my-resource',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setDeletionProtection(request, function(err,
-    * response) { if (err) { console.error(err); return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.reset({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setDeletionProtection
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {boolean=} params.deletionProtection Whether the resource should be protected against deletion.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.resource_ Name or id of the resource for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def reset(params: ParamsResourceInstancesReset, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def reset(
+    params: ParamsResourceInstancesReset,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def resume(): GaxiosPromise[SchemaOperation] = js.native
+  def resume(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def resume(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def resume(params: ParamsResourceInstancesResume): GaxiosPromise[SchemaOperation] = js.native
+  def resume(params: ParamsResourceInstancesResume, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def resume(
+    params: ParamsResourceInstancesResume,
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
+  ): Unit = js.native
+  def resume(params: ParamsResourceInstancesResume, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def resume(
+    params: ParamsResourceInstancesResume,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Resumes an instance that was suspended using the instances().suspend method.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.resume({
+    *     // Name of the instance resource to resume.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def resume(params: ParamsResourceInstancesResume, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def resume(
+    params: ParamsResourceInstancesResume,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def sendDiagnosticInterrupt(): GaxiosPromise[Unit] = js.native
+  def sendDiagnosticInterrupt(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def sendDiagnosticInterrupt(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def sendDiagnosticInterrupt(params: ParamsResourceInstancesSenddiagnosticinterrupt): GaxiosPromise[Unit] = js.native
+  def sendDiagnosticInterrupt(params: ParamsResourceInstancesSenddiagnosticinterrupt, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def sendDiagnosticInterrupt(
+    params: ParamsResourceInstancesSenddiagnosticinterrupt,
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
+  ): Unit = js.native
+  def sendDiagnosticInterrupt(params: ParamsResourceInstancesSenddiagnosticinterrupt, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def sendDiagnosticInterrupt(
+    params: ParamsResourceInstancesSenddiagnosticinterrupt,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Unit]
+  ): Unit = js.native
+  /**
+    * Sends diagnostic interrupt to the instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.sendDiagnosticInterrupt({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def sendDiagnosticInterrupt(params: ParamsResourceInstancesSenddiagnosticinterrupt, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def sendDiagnosticInterrupt(
+    params: ParamsResourceInstancesSenddiagnosticinterrupt,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setDeletionProtection(): GaxiosPromise[SchemaOperation] = js.native
   def setDeletionProtection(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setDeletionProtection(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1270,8 +2355,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def setDeletionProtection(
     params: ParamsResourceInstancesSetdeletionprotection,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setDeletionProtection(params: ParamsResourceInstancesSetdeletionprotection, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setDeletionProtection(
@@ -1279,89 +2364,98 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setDiskAutoDelete
-    * @desc Sets the auto-delete flag for a disk attached to an instance.
+    * Sets deletion protection on the instance.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // The instance name.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     // Whether to auto-delete the disk when the instance is deleted.
-    *     autoDelete: false,  // TODO: Update placeholder value.
-    *
-    *     // The device name of the disk to modify.
-    *     deviceName: '',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setDiskAutoDelete(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setDeletionProtection({
+    *     // Whether the resource should be protected against deletion.
+    *     deletionProtection: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Name or id of the resource for this request.
+    *     resource: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setDiskAutoDelete
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {boolean} params.autoDelete Whether to auto-delete the disk when the instance is deleted.
-    * @param {string} params.deviceName The device name of the disk to modify. Make a get() request on the instance to view currently attached disks and device names.
-    * @param {string} params.instance The instance name for this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setDeletionProtection(params: ParamsResourceInstancesSetdeletionprotection, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setDeletionProtection(
+    params: ParamsResourceInstancesSetdeletionprotection,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setDiskAutoDelete(): GaxiosPromise[SchemaOperation] = js.native
   def setDiskAutoDelete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setDiskAutoDelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1369,8 +2463,8 @@ class ResourceInstances protected () extends StObject {
   def setDiskAutoDelete(params: ParamsResourceInstancesSetdiskautodelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setDiskAutoDelete(
     params: ParamsResourceInstancesSetdiskautodelete,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setDiskAutoDelete(params: ParamsResourceInstancesSetdiskautodelete, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setDiskAutoDelete(
@@ -1378,23 +2472,100 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setIamPolicy
-    * @desc Sets the access control policy on the specified resource. Replaces
-    * any existing policy.
-    * @alias compute.instances.setIamPolicy
-    * @memberOf! ()
+    * Sets the auto-delete flag for a disk attached to an instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.resource_ Name or id of the resource for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().ZoneSetPolicyRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setDiskAutoDelete({
+    *     // Whether to auto-delete the disk when the instance is deleted.
+    *     autoDelete: 'placeholder-value',
+    *     // The device name of the disk to modify. Make a get() request on the instance to view currently attached disks and device names.
+    *     deviceName: 'w[w.-]{0,254}',
+    *     // The instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setDiskAutoDelete(params: ParamsResourceInstancesSetdiskautodelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setDiskAutoDelete(
+    params: ParamsResourceInstancesSetdiskautodelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
@@ -1402,8 +2573,8 @@ class ResourceInstances protected () extends StObject {
   def setIamPolicy(params: ParamsResourceInstancesSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
     params: ParamsResourceInstancesSetiampolicy,
-    options: BodyResponseCallback[SchemaPolicy],
-    callback: BodyResponseCallback[SchemaPolicy]
+    options: BodyResponseCallback[Readable | SchemaPolicy],
+    callback: BodyResponseCallback[Readable | SchemaPolicy]
   ): Unit = js.native
   def setIamPolicy(params: ParamsResourceInstancesSetiampolicy, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
@@ -1411,87 +2582,85 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setLabels
-    * @desc Sets labels on an instance. To learn more about labels, read the
-    * Labeling Resources documentation.
+    * Sets the access control policy on the specified resource. Replaces any existing policy.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance scoping this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setLabels(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setIamPolicy({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name or id of the resource for this request.
+    *     resource: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bindings": [],
+    *       //   "etag": "my_etag",
+    *       //   "policy": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "auditConfigs": [],
+    *   //   "bindings": [],
+    *   //   "etag": "my_etag",
+    *   //   "rules": [],
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setLabels
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().InstancesSetLabelsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setIamPolicy(params: ParamsResourceInstancesSetiampolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setIamPolicy(
+    params: ParamsResourceInstancesSetiampolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1499,8 +2668,8 @@ class ResourceInstances protected () extends StObject {
   def setLabels(params: ParamsResourceInstancesSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
     params: ParamsResourceInstancesSetlabels,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setLabels(params: ParamsResourceInstancesSetlabels, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(
@@ -1508,85 +2677,105 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setMachineResources
-    * @desc Changes the number and/or type of accelerator for a stopped
-    * instance to the values specified in the request.
+    * Sets labels on an instance. To learn more about labels, read the Labeling Resources documentation.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance scoping this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setMachineResources(request, function(err, response)
-    * { if (err) { console.error(err); return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setLabels({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "labelFingerprint": "my_labelFingerprint",
+    *       //   "labels": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setMachineResources
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().InstancesSetMachineResourcesRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setLabels(params: ParamsResourceInstancesSetlabels, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setLabels(
+    params: ParamsResourceInstancesSetlabels,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setMachineResources(): GaxiosPromise[SchemaOperation] = js.native
   def setMachineResources(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMachineResources(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1597,8 +2786,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def setMachineResources(
     params: ParamsResourceInstancesSetmachineresources,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setMachineResources(params: ParamsResourceInstancesSetmachineresources, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMachineResources(
@@ -1606,87 +2795,104 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setMachineType
-    * @desc Changes the machine type for a stopped instance to the machine type
-    * specified in the request.
+    * Changes the number and/or type of accelerator for a stopped instance to the values specified in the request.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance scoping this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setMachineType(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setMachineResources({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "guestAccelerators": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setMachineType
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().InstancesSetMachineTypeRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setMachineResources(params: ParamsResourceInstancesSetmachineresources, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setMachineResources(
+    params: ParamsResourceInstancesSetmachineresources,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setMachineType(): GaxiosPromise[SchemaOperation] = js.native
   def setMachineType(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMachineType(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1694,8 +2900,8 @@ class ResourceInstances protected () extends StObject {
   def setMachineType(params: ParamsResourceInstancesSetmachinetype, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMachineType(
     params: ParamsResourceInstancesSetmachinetype,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setMachineType(params: ParamsResourceInstancesSetmachinetype, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMachineType(
@@ -1703,87 +2909,104 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setMetadata
-    * @desc Sets metadata for the specified instance to the data included in
-    * the request.
+    * Changes the machine type for a stopped instance to the machine type specified in the request.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance scoping this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setMetadata(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setMachineType({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "machineType": "my_machineType"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setMetadata
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().Metadata} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setMachineType(params: ParamsResourceInstancesSetmachinetype, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setMachineType(
+    params: ParamsResourceInstancesSetmachinetype,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setMetadata(): GaxiosPromise[SchemaOperation] = js.native
   def setMetadata(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMetadata(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1791,8 +3014,8 @@ class ResourceInstances protected () extends StObject {
   def setMetadata(params: ParamsResourceInstancesSetmetadata, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMetadata(
     params: ParamsResourceInstancesSetmetadata,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setMetadata(params: ParamsResourceInstancesSetmetadata, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMetadata(
@@ -1800,88 +3023,106 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setMinCpuPlatform
-    * @desc Changes the minimum CPU platform that this instance should use.
-    * This method can only be called on a stopped instance. For more
-    * information, read Specifying a Minimum CPU Platform.
+    * Sets metadata for the specified instance to the data included in the request.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance scoping this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setMinCpuPlatform(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setMetadata({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "fingerprint": "my_fingerprint",
+    *       //   "items": [],
+    *       //   "kind": "my_kind"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setMinCpuPlatform
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().InstancesSetMinCpuPlatformRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setMetadata(params: ParamsResourceInstancesSetmetadata, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setMetadata(
+    params: ParamsResourceInstancesSetmetadata,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setMinCpuPlatform(): GaxiosPromise[SchemaOperation] = js.native
   def setMinCpuPlatform(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMinCpuPlatform(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1889,8 +3130,8 @@ class ResourceInstances protected () extends StObject {
   def setMinCpuPlatform(params: ParamsResourceInstancesSetmincpuplatform, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMinCpuPlatform(
     params: ParamsResourceInstancesSetmincpuplatform,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setMinCpuPlatform(params: ParamsResourceInstancesSetmincpuplatform, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMinCpuPlatform(
@@ -1898,86 +3139,104 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setScheduling
-    * @desc Sets an instance's scheduling options.
+    * Changes the minimum CPU platform that this instance should use. This method can only be called on a stopped instance. For more information, read Specifying a Minimum CPU Platform.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Instance name.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setScheduling(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setMinCpuPlatform({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "minCpuPlatform": "my_minCpuPlatform"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setScheduling
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Instance name for this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().Scheduling} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setMinCpuPlatform(params: ParamsResourceInstancesSetmincpuplatform, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setMinCpuPlatform(
+    params: ParamsResourceInstancesSetmincpuplatform,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setScheduling(): GaxiosPromise[SchemaOperation] = js.native
   def setScheduling(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setScheduling(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1985,8 +3244,8 @@ class ResourceInstances protected () extends StObject {
   def setScheduling(params: ParamsResourceInstancesSetscheduling, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setScheduling(
     params: ParamsResourceInstancesSetscheduling,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setScheduling(params: ParamsResourceInstancesSetscheduling, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setScheduling(
@@ -1994,87 +3253,111 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setServiceAccount
-    * @desc Sets the service account on the instance. For more information,
-    * read Changing the service account and access scopes for an instance.
+    * Sets an instance's scheduling options. You can only call this method on a stopped instance, that is, a VM instance that is in a `TERMINATED` state. See Instance Life Cycle for more information on the possible instance states. For more information about setting scheduling options for a VM, see Set VM host maintenance policy.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance resource to start.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setServiceAccount(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setScheduling({
+    *     // Instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "automaticRestart": false,
+    *       //   "instanceTerminationAction": "my_instanceTerminationAction",
+    *       //   "locationHint": "my_locationHint",
+    *       //   "minNodeCpus": 0,
+    *       //   "nodeAffinities": [],
+    *       //   "onHostMaintenance": "my_onHostMaintenance",
+    *       //   "preemptible": false,
+    *       //   "provisioningModel": "my_provisioningModel"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setServiceAccount
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance resource to start.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().InstancesSetServiceAccountRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setScheduling(params: ParamsResourceInstancesSetscheduling, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setScheduling(
+    params: ParamsResourceInstancesSetscheduling,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setServiceAccount(): GaxiosPromise[SchemaOperation] = js.native
   def setServiceAccount(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setServiceAccount(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2082,8 +3365,8 @@ class ResourceInstances protected () extends StObject {
   def setServiceAccount(params: ParamsResourceInstancesSetserviceaccount, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setServiceAccount(
     params: ParamsResourceInstancesSetserviceaccount,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setServiceAccount(params: ParamsResourceInstancesSetserviceaccount, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setServiceAccount(
@@ -2091,26 +3374,105 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setShieldedInstanceIntegrityPolicy
-    * @desc Sets the Shielded Instance integrity policy for an instance. You
-    * can only use this method on a running instance. This method supports
-    * PATCH semantics and uses the JSON merge patch format and processing
-    * rules.
-    * @alias compute.instances.setShieldedInstanceIntegrityPolicy
-    * @memberOf! ()
+    * Sets the service account on the instance. For more information, read Changing the service account and access scopes for an instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name or id of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().ShieldedInstanceIntegrityPolicy} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setServiceAccount({
+    *     // Name of the instance resource to start.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "email": "my_email",
+    *       //   "scopes": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setServiceAccount(params: ParamsResourceInstancesSetserviceaccount, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setServiceAccount(
+    params: ParamsResourceInstancesSetserviceaccount,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setShieldedInstanceIntegrityPolicy(): GaxiosPromise[SchemaOperation] = js.native
   def setShieldedInstanceIntegrityPolicy(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setShieldedInstanceIntegrityPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2121,8 +3483,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def setShieldedInstanceIntegrityPolicy(
     params: ParamsResourceInstancesSetshieldedinstanceintegritypolicy,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setShieldedInstanceIntegrityPolicy(params: ParamsResourceInstancesSetshieldedinstanceintegritypolicy, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setShieldedInstanceIntegrityPolicy(
@@ -2130,87 +3492,104 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.setTags
-    * @desc Sets network tags for the specified instance to the data included
-    * in the request.
+    * Sets the Shielded Instance integrity policy for an instance. You can only use this method on a running instance. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance scoping this request.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.setTags(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setShieldedInstanceIntegrityPolicy({
+    *     // Name or id of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "updateAutoLearnPolicy": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.setTags
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().Tags} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setShieldedInstanceIntegrityPolicy(params: ParamsResourceInstancesSetshieldedinstanceintegritypolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setShieldedInstanceIntegrityPolicy(
+    params: ParamsResourceInstancesSetshieldedinstanceintegritypolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setTags(): GaxiosPromise[SchemaOperation] = js.native
   def setTags(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setTags(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2218,8 +3597,8 @@ class ResourceInstances protected () extends StObject {
   def setTags(params: ParamsResourceInstancesSettags, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setTags(
     params: ParamsResourceInstancesSettags,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setTags(params: ParamsResourceInstancesSettags, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setTags(
@@ -2227,21 +3606,105 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.simulateMaintenanceEvent
-    * @desc Simulates a maintenance event on the instance.
-    * @alias compute.instances.simulateMaintenanceEvent
-    * @memberOf! ()
+    * Sets network tags for the specified instance to the data included in the request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.setTags({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "fingerprint": "my_fingerprint",
+    *       //   "items": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setTags(params: ParamsResourceInstancesSettags, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setTags(
+    params: ParamsResourceInstancesSettags,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def simulateMaintenanceEvent(): GaxiosPromise[SchemaOperation] = js.native
   def simulateMaintenanceEvent(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def simulateMaintenanceEvent(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2252,8 +3715,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def simulateMaintenanceEvent(
     params: ParamsResourceInstancesSimulatemaintenanceevent,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def simulateMaintenanceEvent(params: ParamsResourceInstancesSimulatemaintenanceevent, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def simulateMaintenanceEvent(
@@ -2261,82 +3724,94 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.start
-    * @desc Starts an instance that was stopped using the instances().stop
-    * method. For more information, see Restart an instance.
+    * Simulates a host maintenance event on a VM. For more information, see Simulate a host maintenance event.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance resource to start.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.start(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.simulateMaintenanceEvent({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.start
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance resource to start.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def simulateMaintenanceEvent(params: ParamsResourceInstancesSimulatemaintenanceevent, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def simulateMaintenanceEvent(
+    params: ParamsResourceInstancesSimulatemaintenanceevent,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def start(): GaxiosPromise[SchemaOperation] = js.native
   def start(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def start(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2344,8 +3819,8 @@ class ResourceInstances protected () extends StObject {
   def start(params: ParamsResourceInstancesStart, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def start(
     params: ParamsResourceInstancesStart,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def start(params: ParamsResourceInstancesStart, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def start(
@@ -2353,85 +3828,96 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.startWithEncryptionKey
-    * @desc Starts an instance that was stopped using the instances().stop
-    * method. For more information, see Restart an instance.
+    * Starts an instance that was stopped using the instances().stop method. For more information, see Restart an instance.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance resource to start.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.startWithEncryptionKey(request, function(err,
-    * response) { if (err) { console.error(err); return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.start({
+    *     // Name of the instance resource to start.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.startWithEncryptionKey
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance resource to start.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().InstancesStartWithEncryptionKeyRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def start(params: ParamsResourceInstancesStart, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def start(
+    params: ParamsResourceInstancesStart,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def startWithEncryptionKey(): GaxiosPromise[SchemaOperation] = js.native
   def startWithEncryptionKey(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def startWithEncryptionKey(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2442,8 +3928,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def startWithEncryptionKey(
     params: ParamsResourceInstancesStartwithencryptionkey,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def startWithEncryptionKey(params: ParamsResourceInstancesStartwithencryptionkey, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def startWithEncryptionKey(
@@ -2451,86 +3937,104 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.stop
-    * @desc Stops a running instance, shutting it down cleanly, and allows you
-    * to restart the instance at a later time. Stopped instances do not incur
-    * VM usage charges while they are stopped. However, resources that the VM
-    * is using, such as persistent disks and static IP addresses, will continue
-    * to be charged until they are deleted. For more information, see Stopping
-    * an instance.
+    * Starts an instance that was stopped using the instances().stop method. For more information, see Restart an instance.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('v1');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the zone for this request.
-    *     zone: 'my-zone',  // TODO: Update placeholder value.
-    *
-    *     // Name of the instance resource to stop.
-    *     instance: 'my-instance',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.instances.stop(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.startWithEncryptionKey({
+    *     // Name of the instance resource to start.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "disks": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.instances.stop
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name of the instance resource to stop.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def startWithEncryptionKey(params: ParamsResourceInstancesStartwithencryptionkey, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def startWithEncryptionKey(
+    params: ParamsResourceInstancesStartwithencryptionkey,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def stop(): GaxiosPromise[SchemaOperation] = js.native
   def stop(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def stop(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2538,8 +4042,8 @@ class ResourceInstances protected () extends StObject {
   def stop(params: ParamsResourceInstancesStop, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def stop(
     params: ParamsResourceInstancesStop,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def stop(params: ParamsResourceInstancesStop, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def stop(
@@ -2547,22 +4051,202 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.testIamPermissions
-    * @desc Returns permissions that a caller has on the specified resource.
-    * @alias compute.instances.testIamPermissions
-    * @memberOf! ()
+    * Stops a running instance, shutting it down cleanly, and allows you to restart the instance at a later time. Stopped instances do not incur VM usage charges while they are stopped. However, resources that the VM is using, such as persistent disks and static IP addresses, will continue to be charged until they are deleted. For more information, see Stopping an instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.resource_ Name or id of the resource for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().TestPermissionsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.stop({
+    *     // Name of the instance resource to stop.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def stop(params: ParamsResourceInstancesStop, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def stop(
+    params: ParamsResourceInstancesStop,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def suspend(): GaxiosPromise[SchemaOperation] = js.native
+  def suspend(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def suspend(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def suspend(params: ParamsResourceInstancesSuspend): GaxiosPromise[SchemaOperation] = js.native
+  def suspend(params: ParamsResourceInstancesSuspend, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def suspend(
+    params: ParamsResourceInstancesSuspend,
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
+  ): Unit = js.native
+  def suspend(params: ParamsResourceInstancesSuspend, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def suspend(
+    params: ParamsResourceInstancesSuspend,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * This method suspends a running instance, saving its state to persistent storage, and allows you to resume the instance at a later time. Suspended instances have no compute costs (cores or RAM), and incur only storage charges for the saved VM memory and localSSD data. Any charged resources the virtual machine was using, such as persistent disks and static IP addresses, will continue to be charged while the instance is suspended. For more information, see Suspending and resuming an instance.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.suspend({
+    *     // Name of the instance resource to suspend.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def suspend(params: ParamsResourceInstancesSuspend, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def suspend(
+    params: ParamsResourceInstancesSuspend,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
   def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
@@ -2573,8 +4257,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def testIamPermissions(
     params: ParamsResourceInstancesTestiampermissions,
-    options: BodyResponseCallback[SchemaTestPermissionsResponse],
-    callback: BodyResponseCallback[SchemaTestPermissionsResponse]
+    options: BodyResponseCallback[Readable | SchemaTestPermissionsResponse],
+    callback: BodyResponseCallback[Readable | SchemaTestPermissionsResponse]
   ): Unit = js.native
   def testIamPermissions(params: ParamsResourceInstancesTestiampermissions, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
@@ -2582,27 +4266,240 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
-  
   /**
-    * compute.instances.updateAccessConfig
-    * @desc Updates the specified access config from an instance's network
-    * interface with the data included in the request. This method supports
-    * PATCH semantics and uses the JSON merge patch format and processing
-    * rules.
-    * @alias compute.instances.updateAccessConfig
-    * @memberOf! ()
+    * Returns permissions that a caller has on the specified resource.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance The instance name for this request.
-    * @param {string} params.networkInterface The name of the network interface where the access config is attached.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().AccessConfig} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.testIamPermissions({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name or id of the resource for this request.
+    *     resource: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "permissions": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "permissions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def testIamPermissions(params: ParamsResourceInstancesTestiampermissions, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def testIamPermissions(
+    params: ParamsResourceInstancesTestiampermissions,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def update(): GaxiosPromise[SchemaOperation] = js.native
+  def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: ParamsResourceInstancesUpdate): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: ParamsResourceInstancesUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def update(
+    params: ParamsResourceInstancesUpdate,
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
+  ): Unit = js.native
+  def update(params: ParamsResourceInstancesUpdate, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(
+    params: ParamsResourceInstancesUpdate,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Updates an instance only if the necessary resources are available. This method can update only a specific set of instance properties. See Updating a running instance for a list of updatable instance properties.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.update({
+    *     // Name of the instance resource to update.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Specifies the action to take when updating an instance even if the updated properties do not require it. If not specified, then Compute Engine acts based on the minimum action that the updated properties require.
+    *     minimalAction: 'placeholder-value',
+    *     // Specifies the most disruptive action that can be taken on the instance as part of the update. Compute Engine returns an error if the instance properties require a more disruptive action as part of the instance update. Valid options from lowest to highest are NO_EFFECT, REFRESH, and RESTART.
+    *     mostDisruptiveAllowedAction: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "advancedMachineFeatures": {},
+    *       //   "canIpForward": false,
+    *       //   "confidentialInstanceConfig": {},
+    *       //   "cpuPlatform": "my_cpuPlatform",
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "deletionProtection": false,
+    *       //   "description": "my_description",
+    *       //   "disks": [],
+    *       //   "displayDevice": {},
+    *       //   "fingerprint": "my_fingerprint",
+    *       //   "guestAccelerators": [],
+    *       //   "hostname": "my_hostname",
+    *       //   "id": "my_id",
+    *       //   "keyRevocationActionType": "my_keyRevocationActionType",
+    *       //   "kind": "my_kind",
+    *       //   "labelFingerprint": "my_labelFingerprint",
+    *       //   "labels": {},
+    *       //   "lastStartTimestamp": "my_lastStartTimestamp",
+    *       //   "lastStopTimestamp": "my_lastStopTimestamp",
+    *       //   "lastSuspendedTimestamp": "my_lastSuspendedTimestamp",
+    *       //   "machineType": "my_machineType",
+    *       //   "metadata": {},
+    *       //   "minCpuPlatform": "my_minCpuPlatform",
+    *       //   "name": "my_name",
+    *       //   "networkInterfaces": [],
+    *       //   "networkPerformanceConfig": {},
+    *       //   "params": {},
+    *       //   "privateIpv6GoogleAccess": "my_privateIpv6GoogleAccess",
+    *       //   "reservationAffinity": {},
+    *       //   "resourcePolicies": [],
+    *       //   "satisfiesPzs": false,
+    *       //   "scheduling": {},
+    *       //   "selfLink": "my_selfLink",
+    *       //   "serviceAccounts": [],
+    *       //   "shieldedInstanceConfig": {},
+    *       //   "shieldedInstanceIntegrityPolicy": {},
+    *       //   "sourceMachineImage": "my_sourceMachineImage",
+    *       //   "sourceMachineImageEncryptionKey": {},
+    *       //   "startRestricted": false,
+    *       //   "status": "my_status",
+    *       //   "statusMessage": "my_statusMessage",
+    *       //   "tags": {},
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceInstancesUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceInstancesUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def updateAccessConfig(): GaxiosPromise[SchemaOperation] = js.native
   def updateAccessConfig(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def updateAccessConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2610,8 +4507,8 @@ class ResourceInstances protected () extends StObject {
   def updateAccessConfig(params: ParamsResourceInstancesUpdateaccessconfig, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def updateAccessConfig(
     params: ParamsResourceInstancesUpdateaccessconfig,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def updateAccessConfig(params: ParamsResourceInstancesUpdateaccessconfig, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateAccessConfig(
@@ -2619,25 +4516,231 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.updateNetworkInterface
-    * @desc Updates an instance's network interface. This method follows PATCH
-    * semantics.
-    * @alias compute.instances.updateNetworkInterface
-    * @memberOf! ()
+    * Updates the specified access config from an instance's network interface with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance The instance name for this request.
-    * @param {string} params.networkInterface The name of the network interface to update.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().NetworkInterface} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.updateAccessConfig({
+    *     // The instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The name of the network interface where the access config is attached.
+    *     networkInterface: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "externalIpv6": "my_externalIpv6",
+    *       //   "externalIpv6PrefixLength": 0,
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "natIP": "my_natIP",
+    *       //   "networkTier": "my_networkTier",
+    *       //   "publicPtrDomainName": "my_publicPtrDomainName",
+    *       //   "setPublicPtr": false,
+    *       //   "type": "my_type"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def updateAccessConfig(params: ParamsResourceInstancesUpdateaccessconfig, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def updateAccessConfig(
+    params: ParamsResourceInstancesUpdateaccessconfig,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def updateDisplayDevice(): GaxiosPromise[SchemaOperation] = js.native
+  def updateDisplayDevice(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def updateDisplayDevice(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def updateDisplayDevice(params: ParamsResourceInstancesUpdatedisplaydevice): GaxiosPromise[SchemaOperation] = js.native
+  def updateDisplayDevice(
+    params: ParamsResourceInstancesUpdatedisplaydevice,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  def updateDisplayDevice(
+    params: ParamsResourceInstancesUpdatedisplaydevice,
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
+  ): Unit = js.native
+  def updateDisplayDevice(params: ParamsResourceInstancesUpdatedisplaydevice, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def updateDisplayDevice(
+    params: ParamsResourceInstancesUpdatedisplaydevice,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Updates the Display config for a VM instance. You can only use this method on a stopped VM instance. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.updateDisplayDevice({
+    *     // Name of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "enableDisplay": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def updateDisplayDevice(params: ParamsResourceInstancesUpdatedisplaydevice, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def updateDisplayDevice(
+    params: ParamsResourceInstancesUpdatedisplaydevice,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def updateNetworkInterface(): GaxiosPromise[SchemaOperation] = js.native
   def updateNetworkInterface(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def updateNetworkInterface(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2648,8 +4751,8 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def updateNetworkInterface(
     params: ParamsResourceInstancesUpdatenetworkinterface,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def updateNetworkInterface(params: ParamsResourceInstancesUpdatenetworkinterface, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateNetworkInterface(
@@ -2657,25 +4760,120 @@ class ResourceInstances protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.instances.updateShieldedInstanceConfig
-    * @desc Updates the Shielded Instance config for an instance. You can only
-    * use this method on a stopped instance. This method supports PATCH
-    * semantics and uses the JSON merge patch format and processing rules.
-    * @alias compute.instances.updateShieldedInstanceConfig
-    * @memberOf! ()
+    * Updates an instance's network interface. This method can only update an interface's alias IP range and attached network. See Modifying alias IP ranges for an existing instance for instructions on changing alias IP ranges. See Migrating a VM between networks for instructions on migrating an interface. This method follows PATCH semantics.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.instance Name or id of the instance scoping this request.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().ShieldedInstanceConfig} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.updateNetworkInterface({
+    *     // The instance name for this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The name of the network interface to update.
+    *     networkInterface: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accessConfigs": [],
+    *       //   "aliasIpRanges": [],
+    *       //   "fingerprint": "my_fingerprint",
+    *       //   "internalIpv6PrefixLength": 0,
+    *       //   "ipv6AccessConfigs": [],
+    *       //   "ipv6AccessType": "my_ipv6AccessType",
+    *       //   "ipv6Address": "my_ipv6Address",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "network": "my_network",
+    *       //   "networkIP": "my_networkIP",
+    *       //   "nicType": "my_nicType",
+    *       //   "queueCount": 0,
+    *       //   "stackType": "my_stackType",
+    *       //   "subnetwork": "my_subnetwork"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def updateNetworkInterface(params: ParamsResourceInstancesUpdatenetworkinterface, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def updateNetworkInterface(
+    params: ParamsResourceInstancesUpdatenetworkinterface,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def updateShieldedInstanceConfig(): GaxiosPromise[SchemaOperation] = js.native
   def updateShieldedInstanceConfig(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def updateShieldedInstanceConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -2686,13 +4884,112 @@ class ResourceInstances protected () extends StObject {
   ): Unit = js.native
   def updateShieldedInstanceConfig(
     params: ParamsResourceInstancesUpdateshieldedinstanceconfig,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def updateShieldedInstanceConfig(params: ParamsResourceInstancesUpdateshieldedinstanceconfig, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateShieldedInstanceConfig(
     params: ParamsResourceInstancesUpdateshieldedinstanceconfig,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Updates the Shielded Instance config for an instance. You can only use this method on a stopped instance. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.instances.updateShieldedInstanceConfig({
+    *     // Name or id of the instance scoping this request.
+    *     instance: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "enableIntegrityMonitoring": false,
+    *       //   "enableSecureBoot": false,
+    *       //   "enableVtpm": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def updateShieldedInstanceConfig(params: ParamsResourceInstancesUpdateshieldedinstanceconfig, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def updateShieldedInstanceConfig(
+    params: ParamsResourceInstancesUpdateshieldedinstanceconfig,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

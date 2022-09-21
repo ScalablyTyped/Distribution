@@ -165,7 +165,7 @@ object pagerOptionsMod {
     extension [Self <: PagerOptions[?], TElement](x: Self & PagerOptions[TElement]) {
       
       inline def setPager_ajaxError(
-        value: (/* config */ TablesorterConfigurationStore[TElement], /* request */ jqXHR[js.Any], /* ajaxSettings */ AjaxSettings[js.Any], /* thrownError */ String) => String
+        value: (/* config */ TablesorterConfigurationStore[TElement], /* request */ jqXHR[Any], /* ajaxSettings */ AjaxSettings[Any], /* thrownError */ String) => String
       ): Self = StObject.set(x, "pager_ajaxError", js.Any.fromFunction4(value))
       
       inline def setPager_ajaxErrorUndefined: Self = StObject.set(x, "pager_ajaxError", js.undefined)
@@ -175,11 +175,7 @@ object pagerOptionsMod {
       inline def setPager_ajaxObjectUndefined: Self = StObject.set(x, "pager_ajaxObject", js.undefined)
       
       inline def setPager_ajaxProcessing(
-        value: (/* data */ js.Any, TElement, /* request */ jqXHR[js.Any]) => PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
-              Double, 
-              JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
-              js.UndefOr[js.Array[String]]
-            ])
+        value: (/* data */ Any, TElement, /* request */ jqXHR[Any]) => PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[Double, JQuery[HTMLElement] | js.Array[js.Array[Any]], js.UndefOr[js.Array[String]]])
       ): Self = StObject.set(x, "pager_ajaxProcessing", js.Any.fromFunction3(value))
       
       inline def setPager_ajaxProcessingUndefined: Self = StObject.set(x, "pager_ajaxProcessing", js.undefined)
@@ -210,7 +206,7 @@ object pagerOptionsMod {
       
       inline def setPager_output(value: String | PagerOutputProcessor[TElement]): Self = StObject.set(x, "pager_output", value.asInstanceOf[js.Any])
       
-      inline def setPager_outputFunction2(value: (TElement, /* pager */ js.Any) => String): Self = StObject.set(x, "pager_output", js.Any.fromFunction2(value))
+      inline def setPager_outputFunction2(value: (TElement, /* pager */ Any) => String): Self = StObject.set(x, "pager_output", js.Any.fromFunction2(value))
       
       inline def setPager_outputUndefined: Self = StObject.set(x, "pager_output", js.undefined)
       

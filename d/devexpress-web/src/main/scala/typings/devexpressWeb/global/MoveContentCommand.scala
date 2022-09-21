@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MoveContentCommand")
 @js.native
-class MoveContentCommand ()
+open class MoveContentCommand ()
   extends StObject
      with typings.devexpressWeb.MoveContentCommand {
   

@@ -18,7 +18,7 @@ object Core {
     /** Exposes a collection of individual animation effects that are performed on a specific target to make up a complete Windows opacity, scaling, or translation animation. */
     @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationDescription")
     @js.native
-    class AnimationDescription protected ()
+    open class AnimationDescription protected ()
       extends StObject
          with typings.winrtUwp.Windows.UI.Core.AnimationMetrics.AnimationDescription {
       /**

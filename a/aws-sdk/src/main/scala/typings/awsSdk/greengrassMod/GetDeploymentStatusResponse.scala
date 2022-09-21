@@ -52,7 +52,7 @@ object GetDeploymentStatusResponse {
     
     inline def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
     
-    inline def setErrorDetailsVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetails", js.Array(value :_*))
+    inline def setErrorDetailsVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetails", js.Array(value*))
     
     inline def setErrorMessage(value: string): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-telegram-bot-api", JSImport.Namespace)
 @js.native
-class ^ protected () extends TelegramBot {
+open class ^ protected () extends TelegramBot {
   def this(token: String) = this()
   def this(token: String, options: ConstructorOptions) = this()
 }

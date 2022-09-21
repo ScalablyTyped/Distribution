@@ -1,10 +1,13 @@
 package typings.reactNavigationCore
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.reactNavigationCore.typesMod.Descriptor
+import typings.reactNavigationCore.typesMod.Keyof
 import typings.reactNavigationCore.typesMod.NavigationHelpers
+import typings.reactNavigationCore.typesMod.NavigationProp
+import typings.reactNavigationCore.typesMod.RouteProp
 import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,8 +22,20 @@ object useCurrentRenderMod {
   
   trait Options extends StObject {
     
-    var descriptors: StringDictionary[
-        Descriptor[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object]
+    var descriptors: Record[
+        String, 
+        Descriptor[
+          js.Object, 
+          NavigationProp[
+            ParamListBase, 
+            Keyof[ParamListBase], 
+            Unit, 
+            NavigationState[ParamListBase], 
+            js.Object, 
+            js.Object
+          ], 
+          RouteProp[ParamListBase, Keyof[ParamListBase]]
+        ]
       ]
     
     var navigation: NavigationHelpers[ParamListBase, js.Object]
@@ -30,8 +45,20 @@ object useCurrentRenderMod {
   object Options {
     
     inline def apply(
-      descriptors: StringDictionary[
-          Descriptor[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object]
+      descriptors: Record[
+          String, 
+          Descriptor[
+            js.Object, 
+            NavigationProp[
+              ParamListBase, 
+              Keyof[ParamListBase], 
+              Unit, 
+              NavigationState[ParamListBase], 
+              js.Object, 
+              js.Object
+            ], 
+            RouteProp[ParamListBase, Keyof[ParamListBase]]
+          ]
         ],
       navigation: NavigationHelpers[ParamListBase, js.Object],
       state: NavigationState[ParamListBase]
@@ -43,8 +70,20 @@ object useCurrentRenderMod {
     extension [Self <: Options](x: Self) {
       
       inline def setDescriptors(
-        value: StringDictionary[
-              Descriptor[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object]
+        value: Record[
+              String, 
+              Descriptor[
+                js.Object, 
+                NavigationProp[
+                  ParamListBase, 
+                  Keyof[ParamListBase], 
+                  Unit, 
+                  NavigationState[ParamListBase], 
+                  js.Object, 
+                  js.Object
+                ], 
+                RouteProp[ParamListBase, Keyof[ParamListBase]]
+              ]
             ]
       ): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       

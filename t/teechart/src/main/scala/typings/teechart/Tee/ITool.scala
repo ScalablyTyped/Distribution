@@ -14,9 +14,9 @@ trait ITool extends StObject {
   
   def draw(): Unit
   
-  def mousedown(event: js.Any): Boolean
+  def mousedown(event: Any): Boolean
   
-  def mousemove(event: js.Any): Boolean
+  def mousemove(event: Any): Boolean
 }
 object ITool {
   
@@ -25,8 +25,8 @@ object ITool {
     chart: IChart,
     clicked: IPoint => Boolean,
     draw: () => Unit,
-    mousedown: js.Any => Boolean,
-    mousemove: js.Any => Boolean
+    mousedown: Any => Boolean,
+    mousemove: Any => Boolean
   ): ITool = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], clicked = js.Any.fromFunction1(clicked), draw = js.Any.fromFunction0(draw), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove))
     __obj.asInstanceOf[ITool]
@@ -42,8 +42,8 @@ object ITool {
     
     inline def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    inline def setMousedown(value: js.Any => Boolean): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
+    inline def setMousedown(value: Any => Boolean): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
     
-    inline def setMousemove(value: js.Any => Boolean): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
+    inline def setMousemove(value: Any => Boolean): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
   }
 }

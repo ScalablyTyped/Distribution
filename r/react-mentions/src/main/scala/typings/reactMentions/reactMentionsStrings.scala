@@ -7,6 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactMentionsStrings {
   
   @js.native
+  sealed trait END extends StObject
+  inline def END: END = "END".asInstanceOf[END]
+  
+  @js.native
+  sealed trait NULL extends StObject
+  inline def NULL: NULL = "NULL".asInstanceOf[NULL]
+  
+  @js.native
+  sealed trait START extends StObject
+  inline def START: START = "START".asInstanceOf[START]
+  
+  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   
@@ -55,6 +67,10 @@ object reactMentionsStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
+  sealed trait display extends StObject
+  inline def display: display = "display".asInstanceOf[display]
+  
+  @js.native
   sealed trait email extends StObject
   inline def email: email = "email".asInstanceOf[email]
   
@@ -73,6 +89,10 @@ object reactMentionsStrings {
   @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @js.native
+  sealed trait id extends StObject
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait inherit extends StObject

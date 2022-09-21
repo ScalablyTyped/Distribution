@@ -35,7 +35,7 @@ object Layer {
     acquire: () => Unit,
     getTimestamp: () => String,
     listSubLayerIds: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readData: XLayerHandler => Unit,
     readSubLayerData: (XLayerHandler, String) => Unit,
     release: () => Unit

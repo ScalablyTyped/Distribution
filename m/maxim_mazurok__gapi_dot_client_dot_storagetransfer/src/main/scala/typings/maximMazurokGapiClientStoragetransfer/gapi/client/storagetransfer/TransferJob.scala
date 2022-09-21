@@ -18,24 +18,32 @@ trait TransferJob extends StObject {
   /** Output only. The time that the transfer job was last modified. */
   var lastModificationTime: js.UndefOr[String] = js.undefined
   
-  /** The name of the most recently started TransferOperation of this JobConfig. Present if and only if at least one TransferOperation has been created for this JobConfig. */
+  /** The name of the most recently started TransferOperation of this JobConfig. Present if a TransferOperation has been created for this JobConfig. */
   var latestOperationName: js.UndefOr[String] = js.undefined
   
+  /** Logging configuration. */
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
+  
   /**
-    * A unique name (within the transfer project) assigned when the job is created. If this field is empty in a CreateTransferJobRequest, Storage Transfer Service will assign a unique
-    * name. Otherwise, the specified name is used as the unique name for this job. If the specified name is in use by a job, the creation request fails with an ALREADY_EXISTS error. This
-    * name must start with `"transferJobs/"` prefix and end with a letter or a number, and should be no more than 128 characters. Example: `"transferJobs/[A-Za-z0-9-._~]*[A-Za-z0-9]$"`
-    * Invalid job names will fail with an INVALID_ARGUMENT error.
+    * A unique name (within the transfer project) assigned when the job is created. If this field is empty in a CreateTransferJobRequest, Storage Transfer Service assigns a unique name.
+    * Otherwise, the specified name is used as the unique name for this job. If the specified name is in use by a job, the creation request fails with an ALREADY_EXISTS error. This name
+    * must start with `"transferJobs/"` prefix and end with a letter or a number, and should be no more than 128 characters. For transfers involving PosixFilesystem, this name must start
+    * with `transferJobs/OPI` specifically. For all other transfer types, this name must not start with `transferJobs/OPI`. Non-PosixFilesystem example:
+    * `"transferJobs/^(?!OPI)[A-Za-z0-9-._~]*[A-Za-z0-9]$"` PosixFilesystem example: `"transferJobs/OPI^[A-Za-z0-9-._~]*[A-Za-z0-9]$"` Applications must not rely on the enforcement of
+    * naming requirements involving OPI. Invalid job names fail with an INVALID_ARGUMENT error.
     */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Notification configuration. */
+  /** Notification configuration. This is not supported for transfers involving PosixFilesystem. */
   var notificationConfig: js.UndefOr[NotificationConfig] = js.undefined
   
-  /** The ID of the Google Cloud Platform Project that owns the job. */
+  /** The ID of the Google Cloud project that owns the job. */
   var projectId: js.UndefOr[String] = js.undefined
   
-  /** Schedule specification. */
+  /**
+    * Specifies schedule for the transfer job. This is an optional field. When the field is not set, the job never executes a transfer, unless you invoke RunTransferJob or update the job
+    * to have a non-empty schedule.
+    */
   var schedule: js.UndefOr[Schedule] = js.undefined
   
   /**
@@ -75,6 +83,10 @@ object TransferJob {
     inline def setLatestOperationName(value: String): Self = StObject.set(x, "latestOperationName", value.asInstanceOf[js.Any])
     
     inline def setLatestOperationNameUndefined: Self = StObject.set(x, "latestOperationName", js.undefined)
+    
+    inline def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

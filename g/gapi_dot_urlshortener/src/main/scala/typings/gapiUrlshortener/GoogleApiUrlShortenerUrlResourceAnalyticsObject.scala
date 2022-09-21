@@ -54,21 +54,21 @@ object GoogleApiUrlShortenerUrlResourceAnalyticsObject {
     
     inline def setBrowsers(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     
-    inline def setBrowsersVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+    inline def setBrowsersVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "browsers", js.Array(value*))
     
     inline def setCountries(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
-    inline def setCountriesVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "countries", js.Array(value*))
     
     inline def setLongUrlClicks(value: String): Self = StObject.set(x, "longUrlClicks", value.asInstanceOf[js.Any])
     
     inline def setPlatforms(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
-    inline def setPlatformsVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "platforms", js.Array(value*))
     
     inline def setReferrers(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "referrers", value.asInstanceOf[js.Any])
     
-    inline def setReferrersVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "referrers", js.Array(value :_*))
+    inline def setReferrersVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "referrers", js.Array(value*))
     
     inline def setShortUrlClicks(value: String): Self = StObject.set(x, "shortUrlClicks", value.asInstanceOf[js.Any])
   }

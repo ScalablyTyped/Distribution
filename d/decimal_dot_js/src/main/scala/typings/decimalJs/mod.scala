@@ -24,7 +24,7 @@ object mod {
   
   @JSImport("decimal.js", JSImport.Default)
   @js.native
-  class default protected () extends Decimal {
+  open class default protected () extends Decimal {
     def this(n: Value) = this()
   }
   /* static members */
@@ -103,6 +103,8 @@ object mod {
     
     inline def ceil(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
+    inline def clamp(n: Value, min: Value, max: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(n.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    
     inline def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
     inline def config(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
@@ -121,9 +123,9 @@ object mod {
     
     inline def floor(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    inline def hypot(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def hypot(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    inline def isDecimal(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDecimal(`object`: Any): /* is decimal.js.decimal.js.Decimal */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is decimal.js.decimal.js.Decimal */ Boolean]
     
     inline def ln(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ln")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
@@ -134,13 +136,13 @@ object mod {
     
     inline def log2(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    inline def max(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def max(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "default.maxE")
     @js.native
     val maxE: Double = js.native
     
-    inline def min(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def min(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "default.minE")
     @js.native
@@ -184,6 +186,8 @@ object mod {
     
     inline def sub(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
+    inline def sum(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(n.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.decimalJs.mod.Decimal]
+    
     inline def tan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     inline def tanh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
@@ -201,7 +205,7 @@ object mod {
   
   @JSImport("decimal.js", "Decimal")
   @js.native
-  class Decimal protected () extends StObject {
+  open class Decimal protected () extends StObject {
     def this(n: Value) = this()
     
     def abs(): Decimal = js.native
@@ -225,6 +229,10 @@ object mod {
     def cbrt(): Decimal = js.native
     
     def ceil(): Decimal = js.native
+    
+    def clamp(min: Value, max: Value): Decimal = js.native
+    
+    def clampedTo(min: Value, max: Value): Decimal = js.native
     
     def cmp(n: Value): Double = js.native
     
@@ -326,8 +334,6 @@ object mod {
     
     def mul(n: Value): Decimal = js.native
     
-    /* private */ val name: String = js.native
-    
     def naturalExponential(): Decimal = js.native
     
     def naturalLogarithm(): Decimal = js.native
@@ -426,6 +432,8 @@ object mod {
     def toSignificantDigits(significantDigits: Double): Decimal = js.native
     def toSignificantDigits(significantDigits: Double, rounding: Rounding): Decimal = js.native
     
+    /* private */ val toStringTag: String = js.native
+    
     def trunc(): Decimal = js.native
     
     def truncated(): Decimal = js.native
@@ -507,6 +515,8 @@ object mod {
     
     inline def ceil(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
+    inline def clamp(n: Value, min: Value, max: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(n.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    
     inline def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
     inline def config(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
@@ -525,9 +535,9 @@ object mod {
     
     inline def floor(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    inline def hypot(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def hypot(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    inline def isDecimal(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDecimal(`object`: Any): /* is decimal.js.decimal.js.Decimal */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is decimal.js.decimal.js.Decimal */ Boolean]
     
     inline def ln(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ln")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
@@ -538,13 +548,13 @@ object mod {
     
     inline def log2(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    inline def max(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def max(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "Decimal.maxE")
     @js.native
     val maxE: Double = js.native
     
-    inline def min(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def min(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "Decimal.minE")
     @js.native
@@ -587,6 +597,8 @@ object mod {
     inline def sqrt(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     inline def sub(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    
+    inline def sum(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(n.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     inline def tan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
@@ -720,6 +732,8 @@ object mod {
       
       def ceil(n: Value): typings.decimalJs.mod.Decimal = js.native
       
+      def clamp(n: Value, min: Value, max: Value): typings.decimalJs.mod.Decimal = js.native
+      
       def clone(`object`: Config): Constructor = js.native
       
       def config(`object`: Config): Constructor = js.native
@@ -738,7 +752,7 @@ object mod {
       
       def hypot(n: Value*): typings.decimalJs.mod.Decimal = js.native
       
-      def isDecimal(`object`: js.Any): Boolean = js.native
+      def isDecimal(`object`: Any): /* is decimal.js.decimal.js.Decimal */ Boolean = js.native
       
       def ln(n: Value): typings.decimalJs.mod.Decimal = js.native
       
@@ -788,6 +802,8 @@ object mod {
       def sqrt(n: Value): typings.decimalJs.mod.Decimal = js.native
       
       def sub(x: Value, y: Value): typings.decimalJs.mod.Decimal = js.native
+      
+      def sum(n: Value*): typings.decimalJs.mod.Decimal = js.native
       
       def tan(n: Value): typings.decimalJs.mod.Decimal = js.native
       

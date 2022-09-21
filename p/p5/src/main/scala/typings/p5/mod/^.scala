@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // tslint:disable-next-line:no-empty-interface
 @JSImport("p5", JSImport.Namespace)
 @js.native
-class ^ protected ()
+open class ^ protected ()
   extends StObject
      with p5 {
   /**
@@ -33,6 +33,6 @@ class ^ protected ()
     *   @param [node] element to attach canvas to
     *   @return a p5 instance
     */
-  def this(sketch: js.Function1[/* repeated */ js.Any, js.Any]) = this()
-  def this(sketch: js.Function1[/* repeated */ js.Any, js.Any], node: HTMLElement) = this()
+  def this(sketch: js.Function1[/* repeated */ Any, Any]) = this()
+  def this(sketch: js.Function1[/* repeated */ Any, Any], node: HTMLElement) = this()
 }

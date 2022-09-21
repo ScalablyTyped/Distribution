@@ -33,6 +33,6 @@ object DescribeUsageReportSubscriptionsResult {
     
     inline def setUsageReportSubscriptionsUndefined: Self = StObject.set(x, "UsageReportSubscriptions", js.undefined)
     
-    inline def setUsageReportSubscriptionsVarargs(value: UsageReportSubscription*): Self = StObject.set(x, "UsageReportSubscriptions", js.Array(value :_*))
+    inline def setUsageReportSubscriptionsVarargs(value: UsageReportSubscription*): Self = StObject.set(x, "UsageReportSubscriptions", js.Array(value*))
   }
 }

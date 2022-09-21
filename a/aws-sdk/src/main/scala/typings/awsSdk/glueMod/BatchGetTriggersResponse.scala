@@ -31,10 +31,10 @@ object BatchGetTriggersResponse {
     
     inline def setTriggersNotFoundUndefined: Self = StObject.set(x, "TriggersNotFound", js.undefined)
     
-    inline def setTriggersNotFoundVarargs(value: NameString*): Self = StObject.set(x, "TriggersNotFound", js.Array(value :_*))
+    inline def setTriggersNotFoundVarargs(value: NameString*): Self = StObject.set(x, "TriggersNotFound", js.Array(value*))
     
     inline def setTriggersUndefined: Self = StObject.set(x, "Triggers", js.undefined)
     
-    inline def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "Triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "Triggers", js.Array(value*))
   }
 }

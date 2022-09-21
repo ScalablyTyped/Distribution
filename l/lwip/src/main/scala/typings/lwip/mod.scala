@@ -4,7 +4,7 @@ import typings.lwip.anon.Height
 import typings.lwip.lwipStrings.gif
 import typings.lwip.lwipStrings.jpg
 import typings.lwip.lwipStrings.png
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,8 +20,8 @@ object mod {
   
   inline def open(source: String, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def open(source: String, `type`: String, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(source: Buffer, `type`: String, callback: ImageCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def open(source: Buffer, `type`: Height, callback: ImageCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def open(source: Buffer, `type`: String, callback: ImageCallback): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def open(source: Buffer, `type`: Height, callback: ImageCallback): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @js.native
   trait Batch extends StObject {
@@ -461,7 +461,7 @@ object mod {
     def writeFile_png(path: String, format: png, params: PngBufferParams, callback: ImageCallback): Unit = js.native
   }
   
-  type BufferCallback = js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]
+  type BufferCallback = js.Function2[/* err */ Any, /* buffer */ Buffer, Unit]
   
   type Color = String | (js.Tuple4[Double, Double, Double, Double]) | ColorObject
   
@@ -1004,7 +1004,7 @@ object mod {
     def writeFile_png(path: String, format: png, params: PngBufferParams, callback: ImageCallback): Unit = js.native
   }
   
-  type ImageCallback = js.Function2[/* err */ js.Any, /* image */ Image, Unit]
+  type ImageCallback = js.Function2[/* err */ Any, /* image */ Image, Unit]
   
   trait JpegBufferParams extends StObject {
     

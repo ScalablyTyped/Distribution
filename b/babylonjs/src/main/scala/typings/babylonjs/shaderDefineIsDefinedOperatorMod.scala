@@ -9,7 +9,7 @@ object shaderDefineIsDefinedOperatorMod {
   
   @JSImport("babylonjs/Engines/Processors/Expressions/Operators/shaderDefineIsDefinedOperator", "ShaderDefineIsDefinedOperator")
   @js.native
-  class ShaderDefineIsDefinedOperator protected () extends ShaderDefineExpression {
+  open class ShaderDefineIsDefinedOperator protected () extends ShaderDefineExpression {
     def this(define: String) = this()
     def this(define: String, not: Boolean) = this()
     

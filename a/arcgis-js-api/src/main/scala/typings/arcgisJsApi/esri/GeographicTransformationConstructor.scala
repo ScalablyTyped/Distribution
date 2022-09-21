@@ -15,4 +15,4 @@ trait GeographicTransformationConstructor
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformation.html)
   */
 Instantiable0[GeographicTransformation]
-     with Instantiable1[/* properties */ js.Any, GeographicTransformation]
+     with Instantiable1[/* properties */ Any, GeographicTransformation]

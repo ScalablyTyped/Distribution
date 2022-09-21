@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FormatterFactory[T /* <: SlickData */] extends StObject {
   
-  def getFormatter(column: Column[T]): Formatter[js.Any]
+  def getFormatter(column: Column[T]): Formatter[Any]
 }
 object FormatterFactory {
   
-  inline def apply[T /* <: SlickData */](getFormatter: Column[T] => Formatter[js.Any]): FormatterFactory[T] = {
+  inline def apply[T /* <: SlickData */](getFormatter: Column[T] => Formatter[Any]): FormatterFactory[T] = {
     val __obj = js.Dynamic.literal(getFormatter = js.Any.fromFunction1(getFormatter))
     __obj.asInstanceOf[FormatterFactory[T]]
   }
   
   extension [Self <: FormatterFactory[?], T /* <: SlickData */](x: Self & FormatterFactory[T]) {
     
-    inline def setGetFormatter(value: Column[T] => Formatter[js.Any]): Self = StObject.set(x, "getFormatter", js.Any.fromFunction1(value))
+    inline def setGetFormatter(value: Column[T] => Formatter[Any]): Self = StObject.set(x, "getFormatter", js.Any.fromFunction1(value))
   }
 }

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of adding a chart to a spreadsheet.
-  */
 trait SchemaAddChartResponse extends StObject {
   
   /**

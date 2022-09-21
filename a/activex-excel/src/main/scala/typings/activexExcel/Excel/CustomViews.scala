@@ -24,7 +24,7 @@ trait CustomViews extends StObject {
   def Item(ViewName: String): CustomView = js.native
   def Item(ViewName: Double): CustomView = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(ViewName: js.Any): CustomView = js.native
+  def _Default(ViewName: Any): CustomView = js.native
 }

@@ -1,27 +1,30 @@
 
 # Scala.js typings for rdf-js
 
-Typings are for version 4.0
+Typings are for version 4.0.2
 
 ## Library description:
-Mirror of the RDFJS TS typings
+Mirror of RDF/JS TypeScript typings
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rdf-js |
-| Keywords           | RDF, RDFJS |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1970 |
-| # stars            | 0 |
+| Keywords           | rdfjs, rdfjs |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 56740.333333333336 |
+| # stars            | 0.0 |
 
 ## Links
+- [Homepage](https://github.com/rdfjs/rdf-js#readme)
+- [Bugs](https://github.com/rdfjs/rdf-js/issues)
+- [Repository](https://github.com/rdfjs/rdf-js)
 - [Npm](https://www.npmjs.com/package/rdf-js)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -9,5 +9,5 @@ trait UnaryExpression
   extends StObject
      with Expression {
   
-  var _unaryExpressionBrand: js.Any = js.native
+  var _unaryExpressionBrand: Any = js.native
 }

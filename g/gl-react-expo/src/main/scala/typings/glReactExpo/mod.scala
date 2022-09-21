@@ -10,14 +10,14 @@ object mod {
   
   @JSImport("gl-react-expo", "Surface")
   @js.native
-  class Surface protected ()
+  open class Surface protected ()
     extends typings.glReact.mod.Surface[GLViewNative] {
     def this(props: typings.glReact.mod.SurfaceProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.glReact.mod.SurfaceProps, context: js.Any) = this()
+    def this(props: typings.glReact.mod.SurfaceProps, context: Any) = this()
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

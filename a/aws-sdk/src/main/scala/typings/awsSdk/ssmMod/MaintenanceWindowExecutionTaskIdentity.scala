@@ -9,12 +9,12 @@ trait MaintenanceWindowExecutionTaskIdentity extends StObject {
   /**
     * The time the task execution finished.
     */
-  var EndTime: js.UndefOr[DateTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time the task execution started.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the task execution.
@@ -22,12 +22,12 @@ trait MaintenanceWindowExecutionTaskIdentity extends StObject {
   var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.undefined
   
   /**
-    * The details explaining the status of the task execution. Only available for certain status values.
+    * The details explaining the status of the task execution. Not available for all status values.
     */
   var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
   
   /**
-    * The ARN of the task that ran.
+    * The Amazon Resource Name (ARN) of the task that ran.
     */
   var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
   
@@ -55,11 +55,11 @@ object MaintenanceWindowExecutionTaskIdentity {
   
   extension [Self <: MaintenanceWindowExecutionTaskIdentity](x: Self) {
     
-    inline def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

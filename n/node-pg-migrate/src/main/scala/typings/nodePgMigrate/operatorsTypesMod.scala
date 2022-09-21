@@ -245,7 +245,7 @@ object operatorsTypesMod {
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: FunctionParam*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: FunctionParam*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setType(value: function | operator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

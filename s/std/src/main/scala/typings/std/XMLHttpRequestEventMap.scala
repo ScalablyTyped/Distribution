@@ -8,6 +8,7 @@ trait XMLHttpRequestEventMap
   extends StObject
      with XMLHttpRequestEventTargetEventMap {
   
+  /* standard dom */
   var readystatechange: Event
 }
 object XMLHttpRequestEventMap {

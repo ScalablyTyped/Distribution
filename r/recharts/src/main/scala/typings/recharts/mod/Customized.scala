@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Customized")
 @js.native
-class Customized protected ()
-  extends Component[CustomizedProps, js.Object, js.Any] {
+open class Customized protected ()
+  extends Component[CustomizedProps, js.Object, Any] {
   def this(props: CustomizedProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CustomizedProps, context: js.Any) = this()
+  def this(props: CustomizedProps, context: Any) = this()
 }

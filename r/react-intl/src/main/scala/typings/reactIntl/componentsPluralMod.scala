@@ -1,67 +1,27 @@
 package typings.reactIntl
 
-import typings.formatjsIntl.srcTypesMod.CustomFormatConfig
-import typings.react.mod.ComponentType
-import typings.react.mod.PropsWithChildren
+import org.scalablytyped.runtime.Shortcut
+import typings.formatjsIntl.srcTypesMod.FormatPluralOptions
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.ValidationMap
-import typings.react.mod.WeakValidationMap
-import typings.reactIntl.componentsInjectIntlMod.WithIntlProps
-import typings.reactIntl.srcTypesMod.IntlShape
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object componentsPluralMod {
+object componentsPluralMod extends Shortcut {
   
-  /* Inlined react.react.FC<react-intl.react-intl/src/components/injectIntl.WithIntlProps<react-intl.react-intl/src/components/plural.Props>> & {  WrappedComponent :react.react.ComponentType<react-intl.react-intl/src/components/plural.Props>} */
-  object default {
-    
-    inline def apply(props: PropsWithChildren[WithIntlProps[Props]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[WithIntlProps[Props]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
-    
-    @JSImport("react-intl/src/components/plural", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-intl/src/components/plural", "default.WrappedComponent")
-    @js.native
-    def WrappedComponent: ComponentType[Props] = js.native
-    inline def WrappedComponent_=(x: ComponentType[Props]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrappedComponent")(x.asInstanceOf[js.Any])
-    
-    @JSImport("react-intl/src/components/plural", "default.contextTypes")
-    @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
-    
-    @JSImport("react-intl/src/components/plural", "default.defaultProps")
-    @js.native
-    def defaultProps: js.UndefOr[Partial[WithIntlProps[Props]]] = js.native
-    inline def defaultProps_=(x: js.UndefOr[Partial[WithIntlProps[Props]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-    
-    @JSImport("react-intl/src/components/plural", "default.displayName")
-    @js.native
-    def displayName: js.UndefOr[String] = js.native
-    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-    
-    @JSImport("react-intl/src/components/plural", "default.propTypes")
-    @js.native
-    def propTypes: js.UndefOr[WeakValidationMap[WithIntlProps[Props]]] = js.native
-    inline def propTypes_=(x: js.UndefOr[WeakValidationMap[WithIntlProps[Props]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("react-intl/src/components/plural", JSImport.Default)
+  @js.native
+  val default: FC[Props] = js.native
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped std.Intl.PluralRulesOptions extends 'localeMatcher' ? never : std.Intl.PluralRulesOptions */ trait Props
+  trait Props
     extends StObject
-       with CustomFormatConfig {
+       with FormatPluralOptions {
     
     var children: js.UndefOr[js.Function1[/* value */ ReactNode, ReactElement | Null]] = js.undefined
     
     var few: js.UndefOr[ReactNode] = js.undefined
-    
-    var intl: IntlShape
     
     var many: js.UndefOr[ReactNode] = js.undefined
     
@@ -77,8 +37,8 @@ object componentsPluralMod {
   }
   object Props {
     
-    inline def apply(intl: IntlShape, value: Double): Props = {
-      val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(value: Double): Props = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
@@ -91,8 +51,6 @@ object componentsPluralMod {
       inline def setFew(value: ReactNode): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
       
       inline def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
-      
-      inline def setIntl(value: IntlShape): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
       
       inline def setMany(value: ReactNode): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
       
@@ -117,4 +75,9 @@ object componentsPluralMod {
       inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
     }
   }
+  
+  type _To = FC[Props]
+  
+  /* This means you don't have to write `default`, but can instead just say `componentsPluralMod.foo` */
+  override def _to: FC[Props] = default
 }

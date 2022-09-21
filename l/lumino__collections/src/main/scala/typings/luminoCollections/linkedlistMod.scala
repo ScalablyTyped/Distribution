@@ -13,19 +13,16 @@ object linkedlistMod {
   
   @JSImport("@lumino/collections/types/linkedlist", "LinkedList")
   @js.native
-  /**
-    * Construct a new linked list.
-    */
-  class LinkedList[T] ()
+  open class LinkedList[T] ()
     extends StObject
        with IIterable[T]
        with IRetroable[T] {
     
-    /* private */ var _first: js.Any = js.native
+    /* private */ var _first: Any = js.native
     
-    /* private */ var _last: js.Any = js.native
+    /* private */ var _last: Any = js.native
     
-    /* private */ var _size: js.Any = js.native
+    /* private */ var _size: Any = js.native
     
     /**
       * Add a value to the beginning of the list.
@@ -322,12 +319,12 @@ object linkedlistMod {
       *
       * @param node - The first node in the list.
       */
-    class ForwardNodeIterator[T] ()
+    open class ForwardNodeIterator[T] ()
       extends StObject
          with IIterator[INode[T]] {
       def this(node: INode[T]) = this()
       
-      /* private */ var _node: js.Any = js.native
+      /* private */ var _node: Any = js.native
       
       /**
         * Get an iterator over the object's values.
@@ -372,12 +369,12 @@ object linkedlistMod {
       *
       * @param node - The first node in the list.
       */
-    class ForwardValueIterator[T] ()
+    open class ForwardValueIterator[T] ()
       extends StObject
          with IIterator[T] {
       def this(node: INode[T]) = this()
       
-      /* private */ var _node: js.Any = js.native
+      /* private */ var _node: Any = js.native
       
       /**
         * Get an iterator over the object's values.
@@ -422,12 +419,12 @@ object linkedlistMod {
       *
       * @param node - The last node in the list.
       */
-    class RetroNodeIterator[T] ()
+    open class RetroNodeIterator[T] ()
       extends StObject
          with IIterator[INode[T]] {
       def this(node: INode[T]) = this()
       
-      /* private */ var _node: js.Any = js.native
+      /* private */ var _node: Any = js.native
       
       /**
         * Get an iterator over the object's values.
@@ -472,12 +469,12 @@ object linkedlistMod {
       *
       * @param node - The last node in the list.
       */
-    class RetroValueIterator[T] ()
+    open class RetroValueIterator[T] ()
       extends StObject
          with IIterator[T] {
       def this(node: INode[T]) = this()
       
-      /* private */ var _node: js.Any = js.native
+      /* private */ var _node: Any = js.native
       
       /**
         * Get an iterator over the object's values.

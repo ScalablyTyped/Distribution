@@ -8,15 +8,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object checkboxPropsTypeMod {
   
+  trait CheckboxForwardedRef extends StObject {
+    
+    def onPress(): Unit
+  }
+  object CheckboxForwardedRef {
+    
+    inline def apply(onPress: () => Unit): CheckboxForwardedRef = {
+      val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction0(onPress))
+      __obj.asInstanceOf[CheckboxForwardedRef]
+    }
+    
+    extension [Self <: CheckboxForwardedRef](x: Self) {
+      
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    }
+  }
+  
   trait CheckboxItemPropsType
     extends StObject
        with CheckboxPropsType {
     
-    var extra: js.UndefOr[ReactNode] = js.undefined
+    var left: js.UndefOr[Boolean] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.undefined
+    var right: js.UndefOr[Boolean] = js.undefined
   }
   object CheckboxItemPropsType {
     
@@ -27,17 +44,17 @@ object checkboxPropsTypeMod {
     
     extension [Self <: CheckboxItemPropsType](x: Self) {
       
-      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setOnPress(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
       inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     }
   }
   
@@ -45,11 +62,17 @@ object checkboxPropsTypeMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* params */ OnChangeParams, Unit]] = js.undefined
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
+    
+    var onChange: js.UndefOr[js.Function1[/* _e */ OnChangeParams, Unit]] = js.undefined
+    
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object CheckboxPropsType {
     
@@ -64,6 +87,10 @@ object checkboxPropsTypeMod {
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
       
       inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
@@ -72,9 +99,17 @@ object checkboxPropsTypeMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setOnChange(value: /* params */ OnChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+      
+      inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
+      
+      inline def setOnChange(value: /* _e */ OnChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
   

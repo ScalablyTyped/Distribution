@@ -10,7 +10,7 @@ trait KiiThingFields
      with /**
   * custom fields.
   */
-/* name */ StringDictionary[js.Any] {
+/* name */ StringDictionary[Any] {
   
   /**
     * firmware version given by thing vendor.

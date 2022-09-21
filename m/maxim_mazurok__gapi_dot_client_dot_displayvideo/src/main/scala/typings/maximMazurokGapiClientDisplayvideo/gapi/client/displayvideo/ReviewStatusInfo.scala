@@ -46,12 +46,12 @@ object ReviewStatusInfo {
     
     inline def setExchangeReviewStatusesUndefined: Self = StObject.set(x, "exchangeReviewStatuses", js.undefined)
     
-    inline def setExchangeReviewStatusesVarargs(value: ExchangeReviewStatus*): Self = StObject.set(x, "exchangeReviewStatuses", js.Array(value :_*))
+    inline def setExchangeReviewStatusesVarargs(value: ExchangeReviewStatus*): Self = StObject.set(x, "exchangeReviewStatuses", js.Array(value*))
     
     inline def setPublisherReviewStatuses(value: js.Array[PublisherReviewStatus]): Self = StObject.set(x, "publisherReviewStatuses", value.asInstanceOf[js.Any])
     
     inline def setPublisherReviewStatusesUndefined: Self = StObject.set(x, "publisherReviewStatuses", js.undefined)
     
-    inline def setPublisherReviewStatusesVarargs(value: PublisherReviewStatus*): Self = StObject.set(x, "publisherReviewStatuses", js.Array(value :_*))
+    inline def setPublisherReviewStatusesVarargs(value: PublisherReviewStatus*): Self = StObject.set(x, "publisherReviewStatuses", js.Array(value*))
   }
 }

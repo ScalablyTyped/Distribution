@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.RetryStrategy")
 @js.native
-class RetryStrategy ()
+open class RetryStrategy ()
   extends StObject
      with typings.babylonjs.BABYLON.RetryStrategy
 /* static members */

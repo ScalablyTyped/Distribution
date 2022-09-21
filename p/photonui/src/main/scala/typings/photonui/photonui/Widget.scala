@@ -25,7 +25,7 @@ trait Widget
   var html: HTMLElement
   
   // readonly
-  var layoutOptions: StringDictionary[js.Any]
+  var layoutOptions: StringDictionary[Any]
   
   var name: String
   
@@ -59,13 +59,13 @@ object Widget {
     destroy: () => Unit,
     hide: () => Unit,
     html: HTMLElement,
-    layoutOptions: StringDictionary[js.Any],
+    layoutOptions: StringDictionary[Any],
     name: String,
     offsetHeight: Double,
     offsetWidth: Double,
     parent: Widget,
     parentName: String,
-    registerCallback: (String, String, js.Function, js.Any) => Unit,
+    registerCallback: (String, String, js.Function, Any) => Unit,
     removeCallback: String => Unit,
     removeClass: String => Unit,
     show: () => Unit,
@@ -91,7 +91,7 @@ object Widget {
     
     inline def setHtml(value: HTMLElement): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    inline def setLayoutOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "layoutOptions", value.asInstanceOf[js.Any])
+    inline def setLayoutOptions(value: StringDictionary[Any]): Self = StObject.set(x, "layoutOptions", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

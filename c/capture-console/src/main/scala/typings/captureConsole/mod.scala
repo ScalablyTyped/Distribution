@@ -1,7 +1,7 @@
 package typings.captureConsole
 
 import typings.captureConsole.anon.Stderr
-import typings.node.NodeJS.WritableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +12,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def capture(streams: js.Array[WritableStream], exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def capture(streams: js.Array[WritableStream], opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def capture(streams: WritableStream, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def capture(streams: WritableStream, opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def capture(streams: js.Array[WritableStream[Any]], exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def capture(streams: js.Array[WritableStream[Any]], opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def capture(streams: WritableStream[Any], exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def capture(streams: WritableStream[Any], opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def captureStderr(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureStderr")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def captureStderr(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStderr")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -27,27 +27,27 @@ object mod {
   inline def captureStdout(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStdout")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def hook(
-    stream: WritableStream,
+    stream: WritableStream[Any],
     exec: js.Function3[
       /* string */ String, 
       /* encoding */ js.UndefOr[String], 
-      /* fd */ js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]], 
+      /* fd */ js.UndefOr[js.Function1[/* error */ js.UndefOr[Any], Unit]], 
       Unit
     ]
   ): js.Function0[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Boolean]]
   inline def hook(
-    stream: WritableStream,
+    stream: WritableStream[Any],
     opts: CaptureOptions,
     exec: js.Function3[
       /* string */ String, 
       /* encoding */ js.UndefOr[String], 
-      /* fd */ js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]], 
+      /* fd */ js.UndefOr[js.Function1[/* error */ js.UndefOr[Any], Unit]], 
       Unit
     ]
   ): js.Function0[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Boolean]]
   
-  inline def intercept(stream: WritableStream, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def intercept(stream: WritableStream, opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def intercept(stream: WritableStream[Any], exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def intercept(stream: WritableStream[Any], opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def interceptStderr(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptStderr")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def interceptStderr(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptStderr")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -59,31 +59,31 @@ object mod {
   inline def interceptStdout(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptStdout")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def startCapture(
-    stream: WritableStream,
+    stream: WritableStream[Any],
     exec: js.Function3[
       /* string */ String, 
       /* encoding */ js.UndefOr[String], 
-      /* fd */ js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]], 
+      /* fd */ js.UndefOr[js.Function1[/* error */ js.UndefOr[Any], Unit]], 
       Unit
     ]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startCapture")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def startCapture(
-    stream: WritableStream,
+    stream: WritableStream[Any],
     opts: CaptureOptions,
     exec: js.Function3[
       /* string */ String, 
       /* encoding */ js.UndefOr[String], 
-      /* fd */ js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]], 
+      /* fd */ js.UndefOr[js.Function1[/* error */ js.UndefOr[Any], Unit]], 
       Unit
     ]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startCapture")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def startIntercept(stream: WritableStream, exec: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startIntercept")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def startIntercept(stream: WritableStream, opts: CaptureOptions, exec: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startIntercept")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def startIntercept(stream: WritableStream[Any], exec: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startIntercept")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def startIntercept(stream: WritableStream[Any], opts: CaptureOptions, exec: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startIntercept")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def stopCapture(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stopCapture")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def stopCapture(stream: WritableStream[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stopCapture")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def stopIntercept(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stopIntercept")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def stopIntercept(stream: WritableStream[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stopIntercept")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait CaptureOptions extends StObject {
     

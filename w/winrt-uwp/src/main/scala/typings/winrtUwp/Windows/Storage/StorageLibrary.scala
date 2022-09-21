@@ -14,22 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StorageLibrary extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_definitionchanged(`type`: definitionchanged, listener: TypedEventHandler[StorageLibrary, js.Any]): Unit = js.native
+  def addEventListener_definitionchanged(`type`: definitionchanged, listener: TypedEventHandler[StorageLibrary, Any]): Unit = js.native
   
   /** Gets the folders in the current library. */
   var folders: IObservableVector[StorageFolder] = js.native
   
   /** Occurs when the list of folders in the current library changes. */
-  def ondefinitionchanged(ev: js.Any & WinRTEvent[StorageLibrary]): Unit = js.native
+  def ondefinitionchanged(ev: Any & WinRTEvent[StorageLibrary]): Unit = js.native
   /** Occurs when the list of folders in the current library changes. */
   @JSName("ondefinitionchanged")
-  var ondefinitionchanged_Original: TypedEventHandler[StorageLibrary, js.Any] = js.native
+  var ondefinitionchanged_Original: TypedEventHandler[StorageLibrary, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_definitionchanged(`type`: definitionchanged, listener: TypedEventHandler[StorageLibrary, js.Any]): Unit = js.native
+  def removeEventListener_definitionchanged(`type`: definitionchanged, listener: TypedEventHandler[StorageLibrary, Any]): Unit = js.native
   
   /**
     * Prompts the user to select a folder, and then adds the folder to the library.

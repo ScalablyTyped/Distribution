@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MediaStreamEventMap extends StObject {
   
+  /* standard dom */
   var addtrack: MediaStreamTrackEvent
   
+  /* standard dom */
   var removetrack: MediaStreamTrackEvent
 }
 object MediaStreamEventMap {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for to-fast-properties
 
-Typings are for version 3.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 Force V8 to use fast properties for an object
@@ -10,15 +10,12 @@ Force V8 to use fast properties for an object
 | ------------------ | :-------------: |
 | Full name          | to-fast-properties |
 | Keywords           | object, properties, props, v8, optimize, fast, convert, mode |
-| # releases         | 3 |
-| # dependents       | 160 |
-| # downloads        | 866961244 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1856424733333333E8 |
+| # stars            | 215.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/to-fast-properties#readme)
-- [Bugs](https://github.com/sindresorhus/to-fast-properties/issues)
-- [Repository](https://github.com/sindresorhus/to-fast-properties)
 - [Npm](https://www.npmjs.com/package/to-fast-properties)
     
 

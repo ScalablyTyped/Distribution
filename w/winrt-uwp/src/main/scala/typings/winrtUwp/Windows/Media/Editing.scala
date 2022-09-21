@@ -322,7 +322,7 @@ object Editing {
       scaledWidth: Double,
       scaledHeight: Double,
       framePrecision: VideoFramePrecision
-    ): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    ): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /** Gets the list of overlay layers for the media composition. */
     var overlayLayers: IVector[MediaOverlayLayer] = js.native

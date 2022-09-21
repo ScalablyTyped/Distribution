@@ -34,7 +34,7 @@ trait FilePickerSelectedFilesArray
     */
   def getMany(startIndex: Double): ItemsStorageFile = js.native
   
-  def indexOf(value: StorageFile, extra: js.Any*): Index = js.native
+  def indexOf(value: StorageFile, extra: Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: StorageFile): Double = js.native

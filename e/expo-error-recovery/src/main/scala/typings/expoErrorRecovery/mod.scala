@@ -13,9 +13,9 @@ object mod {
   
   @JSImport("expo-error-recovery", "recoveredProps")
   @js.native
-  val recoveredProps: (Record[String, js.Any]) | Null = js.native
+  val recoveredProps: ErrorRecoveryProps | Null = js.native
   
   inline def setRecoveryProps(props: ErrorRecoveryProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecoveryProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type ErrorRecoveryProps = Record[String, js.Any]
+  type ErrorRecoveryProps = Record[String, Any]
 }

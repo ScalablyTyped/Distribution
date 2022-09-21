@@ -27,7 +27,7 @@ object InstallabilityError {
     
     inline def setErrorArguments(value: js.Array[InstallabilityErrorArgument]): Self = StObject.set(x, "errorArguments", value.asInstanceOf[js.Any])
     
-    inline def setErrorArgumentsVarargs(value: InstallabilityErrorArgument*): Self = StObject.set(x, "errorArguments", js.Array(value :_*))
+    inline def setErrorArgumentsVarargs(value: InstallabilityErrorArgument*): Self = StObject.set(x, "errorArguments", js.Array(value*))
     
     inline def setErrorId(value: String): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
   }

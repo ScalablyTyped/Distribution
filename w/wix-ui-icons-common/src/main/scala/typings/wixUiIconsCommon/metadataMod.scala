@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object metadataMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/metadata", JSImport.Default)
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/general/metadata", JSImport.Default)
   @js.native
   val default: js.Array[IconMetadata] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/general/metadata", "deprecatedGeneralIcons")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/general/metadata", "generalIconsMetadata")
   @js.native
-  val deprecatedGeneralIcons: js.Array[String] = js.native
+  val generalIconsMetadata: js.Array[IconMetadata] = js.native
   
   type _To = js.Array[IconMetadata]
   

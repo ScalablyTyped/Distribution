@@ -20,15 +20,17 @@ object utilMod {
     */
   @JSImport("socks/typings/common/util", "SocksClientError")
   @js.native
-  class SocksClientError protected ()
+  open class SocksClientError protected ()
     extends StObject
        with Error {
     def this(message: String, options: SocksClientChainOptions) = this()
     def this(message: String, options: SocksClientOptions) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -39,7 +41,7 @@ object utilMod {
     * Shuffles a given array.
     * @param array The array to shuffle.
     */
-  inline def shuffleArray(array: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleArray")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def shuffleArray(array: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleArray")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type RequireOnlyOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]:? std.Required<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
 }

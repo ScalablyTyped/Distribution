@@ -65,25 +65,25 @@ object CreativeAssetMetadata {
     
     inline def setClickTagsUndefined: Self = StObject.set(x, "clickTags", js.undefined)
     
-    inline def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value :_*))
+    inline def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value*))
     
     inline def setCounterCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "counterCustomEvents", value.asInstanceOf[js.Any])
     
     inline def setCounterCustomEventsUndefined: Self = StObject.set(x, "counterCustomEvents", js.undefined)
     
-    inline def setCounterCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "counterCustomEvents", js.Array(value :_*))
+    inline def setCounterCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "counterCustomEvents", js.Array(value*))
     
     inline def setDetectedFeatures(value: js.Array[String]): Self = StObject.set(x, "detectedFeatures", value.asInstanceOf[js.Any])
     
     inline def setDetectedFeaturesUndefined: Self = StObject.set(x, "detectedFeatures", js.undefined)
     
-    inline def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value :_*))
+    inline def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value*))
     
     inline def setExitCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "exitCustomEvents", value.asInstanceOf[js.Any])
     
     inline def setExitCustomEventsUndefined: Self = StObject.set(x, "exitCustomEvents", js.undefined)
     
-    inline def setExitCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "exitCustomEvents", js.Array(value :_*))
+    inline def setExitCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "exitCustomEvents", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -105,12 +105,12 @@ object CreativeAssetMetadata {
     
     inline def setTimerCustomEventsUndefined: Self = StObject.set(x, "timerCustomEvents", js.undefined)
     
-    inline def setTimerCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "timerCustomEvents", js.Array(value :_*))
+    inline def setTimerCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "timerCustomEvents", js.Array(value*))
     
     inline def setWarnedValidationRules(value: js.Array[String]): Self = StObject.set(x, "warnedValidationRules", value.asInstanceOf[js.Any])
     
     inline def setWarnedValidationRulesUndefined: Self = StObject.set(x, "warnedValidationRules", js.undefined)
     
-    inline def setWarnedValidationRulesVarargs(value: String*): Self = StObject.set(x, "warnedValidationRules", js.Array(value :_*))
+    inline def setWarnedValidationRulesVarargs(value: String*): Self = StObject.set(x, "warnedValidationRules", js.Array(value*))
   }
 }

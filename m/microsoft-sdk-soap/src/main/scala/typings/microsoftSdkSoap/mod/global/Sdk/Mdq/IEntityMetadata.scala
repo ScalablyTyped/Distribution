@@ -14,7 +14,7 @@ trait IEntityMetadata extends StObject {
   
   var Attributes: js.Array[IAttributeMetadata]
   
-  var AutoCreateAccessTeams: js.Any
+  var AutoCreateAccessTeams: Any
   
   var AutoRouteToOwnerQueue: Boolean
   
@@ -48,7 +48,7 @@ trait IEntityMetadata extends StObject {
   
   var IconSmallName: String
   
-  var IntroducedVersion: js.Any
+  var IntroducedVersion: Any
   
   var IsAIRUpdated: Boolean
   
@@ -133,7 +133,7 @@ object IEntityMetadata {
   inline def apply(
     ActivityTypeMask: Double,
     Attributes: js.Array[IAttributeMetadata],
-    AutoCreateAccessTeams: js.Any,
+    AutoCreateAccessTeams: Any,
     AutoRouteToOwnerQueue: Boolean,
     CanBeInManyToMany: ManagedProperty[Boolean],
     CanBePrimaryEntityInRelationship: ManagedProperty[Boolean],
@@ -150,7 +150,7 @@ object IEntityMetadata {
     IconLargeName: String,
     IconMediumName: String,
     IconSmallName: String,
-    IntroducedVersion: js.Any,
+    IntroducedVersion: Any,
     IsAIRUpdated: Boolean,
     IsActivity: Boolean,
     IsActivityParty: Boolean,
@@ -201,9 +201,9 @@ object IEntityMetadata {
     
     inline def setAttributes(value: js.Array[IAttributeMetadata]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    inline def setAttributesVarargs(value: IAttributeMetadata*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: IAttributeMetadata*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
-    inline def setAutoCreateAccessTeams(value: js.Any): Self = StObject.set(x, "AutoCreateAccessTeams", value.asInstanceOf[js.Any])
+    inline def setAutoCreateAccessTeams(value: Any): Self = StObject.set(x, "AutoCreateAccessTeams", value.asInstanceOf[js.Any])
     
     inline def setAutoRouteToOwnerQueue(value: Boolean): Self = StObject.set(x, "AutoRouteToOwnerQueue", value.asInstanceOf[js.Any])
     
@@ -237,7 +237,7 @@ object IEntityMetadata {
     
     inline def setIconSmallName(value: String): Self = StObject.set(x, "IconSmallName", value.asInstanceOf[js.Any])
     
-    inline def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
+    inline def setIntroducedVersion(value: Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
     
     inline def setIsAIRUpdated(value: Boolean): Self = StObject.set(x, "IsAIRUpdated", value.asInstanceOf[js.Any])
     
@@ -313,7 +313,7 @@ object IEntityMetadata {
     
     inline def setPrivileges(value: js.Array[SecurityPrivilegeMetadata]): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
     
-    inline def setPrivilegesVarargs(value: SecurityPrivilegeMetadata*): Self = StObject.set(x, "Privileges", js.Array(value :_*))
+    inline def setPrivilegesVarargs(value: SecurityPrivilegeMetadata*): Self = StObject.set(x, "Privileges", js.Array(value*))
     
     inline def setRecurrenceBaseEntityLogicalName(value: String): Self = StObject.set(x, "RecurrenceBaseEntityLogicalName", value.asInstanceOf[js.Any])
     

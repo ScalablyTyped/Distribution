@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Events extends StObject {
   
-  def CommandBarEvents(CommandBarControl: js.Any): typings.activexVbide.VBIDE.CommandBarEvents
+  def CommandBarEvents(CommandBarControl: Any): typings.activexVbide.VBIDE.CommandBarEvents
   
   def ReferencesEvents(VBProject: VBProject): typings.activexVbide.VBIDE.ReferencesEvents
   
@@ -16,7 +16,7 @@ trait Events extends StObject {
 object Events {
   
   inline def apply(
-    CommandBarEvents: js.Any => CommandBarEvents,
+    CommandBarEvents: Any => CommandBarEvents,
     ReferencesEvents: VBProject => ReferencesEvents,
     VBIDEDotEvents_typekey: Events
   ): Events = {
@@ -27,7 +27,7 @@ object Events {
   
   extension [Self <: Events](x: Self) {
     
-    inline def setCommandBarEvents(value: js.Any => CommandBarEvents): Self = StObject.set(x, "CommandBarEvents", js.Any.fromFunction1(value))
+    inline def setCommandBarEvents(value: Any => CommandBarEvents): Self = StObject.set(x, "CommandBarEvents", js.Any.fromFunction1(value))
     
     inline def setReferencesEvents(value: VBProject => ReferencesEvents): Self = StObject.set(x, "ReferencesEvents", js.Any.fromFunction1(value))
     

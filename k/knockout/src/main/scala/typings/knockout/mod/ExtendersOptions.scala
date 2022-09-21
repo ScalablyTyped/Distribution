@@ -12,7 +12,7 @@ trait ExtendersOptions[T] extends StObject {
   var deferred: `true`
   
   @JSName("notify")
-  var notify_FExtendersOptions: always | js.Any
+  var notify_FExtendersOptions: always | Any
   
   var rateLimit: Double | RateLimitOptions
   
@@ -23,7 +23,7 @@ trait ExtendersOptions[T] extends StObject {
 object ExtendersOptions {
   
   inline def apply[T](
-    notify_ : always | js.Any,
+    notify_ : always | Any,
     rateLimit: Double | RateLimitOptions,
     throttle: Double,
     trackArrayChanges: `true` | CompareArraysOptions
@@ -37,7 +37,7 @@ object ExtendersOptions {
     
     inline def setDeferred(value: `true`): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
-    inline def setNotify_(value: always | js.Any): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: always | Any): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
     inline def setRateLimit(value: Double | RateLimitOptions): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
     

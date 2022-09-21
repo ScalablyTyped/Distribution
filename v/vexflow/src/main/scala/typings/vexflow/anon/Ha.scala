@@ -27,7 +27,7 @@ object Ha {
     
     inline def setO(value: js.Array[String]): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
     
-    inline def setOVarargs(value: String*): Self = StObject.set(x, "o", js.Array(value :_*))
+    inline def setOVarargs(value: String*): Self = StObject.set(x, "o", js.Array(value*))
     
     inline def setX_max(value: Double): Self = StObject.set(x, "x_max", value.asInstanceOf[js.Any])
     

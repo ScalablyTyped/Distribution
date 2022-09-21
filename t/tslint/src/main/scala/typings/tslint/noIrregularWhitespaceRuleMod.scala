@@ -1,6 +1,5 @@
 package typings.tslint
 
-import typings.std.RegExp
 import typings.tslint.mod.Rules.AbstractRule
 import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
@@ -12,11 +11,11 @@ object noIrregularWhitespaceRuleMod {
   
   @JSImport("tslint/lib/rules/noIrregularWhitespaceRule", "IRREGULAR_WHITESPACE_REGEX")
   @js.native
-  val IRREGULAR_WHITESPACE_REGEX: RegExp = js.native
+  val IRREGULAR_WHITESPACE_REGEX: js.RegExp = js.native
   
   @JSImport("tslint/lib/rules/noIrregularWhitespaceRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */

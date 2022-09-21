@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Site
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,17 +13,14 @@ trait Uploadprotocol extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the parent channel. */
-  var advertiserId: js.UndefOr[String] = js.undefined
-  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /** Required. An identifier unique to the targeting type in this partner that identifies the assigned targeting option being requested. */
+  var assignedTargetingOptionId: String
+  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
-  
-  /** Required. The ID of the parent channel in which the site will be created. */
-  var channelId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -35,7 +31,7 @@ trait Uploadprotocol extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the partner that owns the parent channel. */
+  /** Required. The ID of the partner. */
   var partnerId: String
   
   /** Returns response with indentations and line breaks. */
@@ -44,8 +40,8 @@ trait Uploadprotocol extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: Site
+  /** Required. Identifies the type of this assigned targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL` */
+  var targetingType: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -55,8 +51,8 @@ trait Uploadprotocol extends StObject {
 }
 object Uploadprotocol {
   
-  inline def apply(channelId: String, partnerId: String, resource: Site): Uploadprotocol = {
-    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], partnerId = partnerId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(assignedTargetingOptionId: String, partnerId: String, targetingType: String): Uploadprotocol = {
+    val __obj = js.Dynamic.literal(assignedTargetingOptionId = assignedTargetingOptionId.asInstanceOf[js.Any], partnerId = partnerId.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uploadprotocol]
   }
   
@@ -70,19 +66,15 @@ object Uploadprotocol {
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
-    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
-    
-    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
-    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
+    inline def setAssignedTargetingOptionId(value: String): Self = StObject.set(x, "assignedTargetingOptionId", value.asInstanceOf[js.Any])
+    
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-    
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -106,7 +98,7 @@ object Uploadprotocol {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Site): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

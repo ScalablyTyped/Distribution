@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudSecuritycenterV1p1beta1Finding extends StObject {
   
+  /**
+    * The canonical name of the finding. It's either "organizations/{organization_id}/sources/{source_id}/findings/{finding_id}",
+    * "folders/{folder_id}/sources/{source_id}/findings/{finding_id}" or "projects/{project_number}/sources/{source_id}/findings/{finding_id}", depending on the closest CRM ancestor of
+    * the resource associated with the finding.
+    */
+  var canonicalName: js.UndefOr[String] = js.undefined
+  
   /** The additional taxonomy group within findings from a given source. This field is immutable after creation time. Example: "XSS_FLASH_INJECTION" */
   var category: js.UndefOr[String] = js.undefined
   
@@ -16,6 +23,7 @@ trait GoogleCloudSecuritycenterV1p1beta1Finding extends StObject {
   /**
     * The time at which the event took place, or when an update to the finding occurred. For example, if the finding represents an open firewall it would capture the time the detector
     * believes the firewall became open. The accuracy is determined by the detector. If the finding were to be resolved afterward, this time would reflect when the finding was resolved.
+    * Must not be set to a value greater than the current timestamp.
     */
   var eventTime: js.UndefOr[String] = js.undefined
   
@@ -57,7 +65,7 @@ trait GoogleCloudSecuritycenterV1p1beta1Finding extends StObject {
   var sourceProperties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GoogleCloudSecuritycenterV1p1beta1Finding & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GoogleCloudSecuritycenterV1p1beta1Finding & TopLevel[Any]
   ] = js.undefined
   
   /** The state of the finding. */
@@ -71,6 +79,10 @@ object GoogleCloudSecuritycenterV1p1beta1Finding {
   }
   
   extension [Self <: GoogleCloudSecuritycenterV1p1beta1Finding](x: Self) {
+    
+    inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
+    
+    inline def setCanonicalNameUndefined: Self = StObject.set(x, "canonicalName", js.undefined)
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -111,7 +123,7 @@ object GoogleCloudSecuritycenterV1p1beta1Finding {
     inline def setSourceProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GoogleCloudSecuritycenterV1p1beta1Finding & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GoogleCloudSecuritycenterV1p1beta1Finding & TopLevel[Any]
     ): Self = StObject.set(x, "sourceProperties", value.asInstanceOf[js.Any])
     
     inline def setSourcePropertiesUndefined: Self = StObject.set(x, "sourceProperties", js.undefined)

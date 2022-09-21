@@ -29,7 +29,7 @@ object XDriverAccess {
   inline def apply(
     acquire: () => Unit,
     getDriverByURL: String => XDriver,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDriverAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDriverByURL = js.Any.fromFunction1(getDriverByURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

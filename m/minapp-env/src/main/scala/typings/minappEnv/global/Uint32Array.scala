@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Uint32Array")
 @js.native
-class Uint32Array protected ()
+open class Uint32Array protected ()
   extends StObject
      with typings.minappEnv.Uint32Array {
   def this(arrayOrArrayBuffer: ArrayBufferLike) = this()

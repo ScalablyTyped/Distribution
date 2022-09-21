@@ -17,6 +17,13 @@ trait WMSSublayer
   var description: String = js.native
   
   /**
+    * An array of time, elevation and other dimensions for the sublayer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#dimensions)
+    */
+  val dimensions: js.Array[TimeDimension | ElevationDimension | GenericDimension] = js.native
+  
+  /**
     * The full extent of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#fullExtent)
@@ -40,6 +47,8 @@ trait WMSSublayer
   /**
     * Indicates whether the layer will be included in the legend.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#legendEnabled)
     */
   var legendEnabled: Boolean = js.native
@@ -54,12 +63,16 @@ trait WMSSublayer
   /**
     * The maximum scale (most zoomed in) at which the layer is visible in the view.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#maxScale)
     */
   var maxScale: Double = js.native
   
   /**
     * The minimum scale (most zoomed out) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#minScale)
     */
@@ -75,12 +88,16 @@ trait WMSSublayer
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#popupEnabled)
     */
   var popupEnabled: Boolean = js.native
   
   /**
     * Indicates if the layer can be queried, i.e.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#queryable)
     */

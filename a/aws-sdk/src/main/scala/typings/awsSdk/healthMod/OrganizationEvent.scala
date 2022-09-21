@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrganizationEvent extends StObject {
   
   /**
-    * The unique identifier for the event. Format: arn:aws:health:event-region::event/SERVICE/EVENT_TYPE_CODE/EVENT_TYPE_PLUS_ID . Example: Example: arn:aws:health:us-east-1::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-DEF456 
+    * The unique identifier for the event. The event ARN has the arn:aws:health:event-region::event/SERVICE/EVENT_TYPE_CODE/EVENT_TYPE_PLUS_ID  format. For example, an event ARN might look like the following:  arn:aws:health:us-east-1::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-DEF456 
     */
   var arn: js.UndefOr[eventArn] = js.undefined
   
   /**
     * The date and time that the event ended.
     */
-  var endTime: js.UndefOr[timestamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * This parameter specifies if the AWS Health event is a public AWS service event or an account-specific event.   If the eventScopeCode value is PUBLIC, then the affectedAccounts value is always empty.   If the eventScopeCode value is ACCOUNT_SPECIFIC, then the affectedAccounts value lists the affected AWS accounts in your organization. For example, if an event affects a service such as Amazon Elastic Compute Cloud and you have AWS accounts that use that service, those account IDs appear in the response.   If the eventScopeCode value is NONE, then the eventArn that you specified in the request is invalid or doesn't exist.  
+    * This parameter specifies if the Health event is a public Amazon Web Services service event or an account-specific event.   If the eventScopeCode value is PUBLIC, then the affectedAccounts value is always empty.   If the eventScopeCode value is ACCOUNT_SPECIFIC, then the affectedAccounts value lists the affected Amazon Web Services accounts in your organization. For example, if an event affects a service such as Amazon Elastic Compute Cloud and you have Amazon Web Services accounts that use that service, those account IDs appear in the response.   If the eventScopeCode value is NONE, then the eventArn that you specified in the request is invalid or doesn't exist.  
     */
   var eventScopeCode: js.UndefOr[typings.awsSdk.healthMod.eventScopeCode] = js.undefined
   
   /**
-    * The category of the event type.
+    * A list of event type category codes. Possible values are issue, accountNotification, or scheduledChange. Currently, the investigation value isn't supported at this time.
     */
   var eventTypeCategory: js.UndefOr[typings.awsSdk.healthMod.eventTypeCategory] = js.undefined
   
@@ -34,22 +34,22 @@ trait OrganizationEvent extends StObject {
   /**
     * The most recent date and time that the event was updated.
     */
-  var lastUpdatedTime: js.UndefOr[timestamp] = js.undefined
+  var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS Region name of the event.
+    * The Amazon Web Services Region name of the event.
     */
   var region: js.UndefOr[typings.awsSdk.healthMod.region] = js.undefined
   
   /**
-    * The AWS service that is affected by the event. For example, EC2, RDS.
+    * The Amazon Web Services service that is affected by the event, such as EC2 and RDS.
     */
   var service: js.UndefOr[typings.awsSdk.healthMod.service] = js.undefined
   
   /**
     * The date and time that the event began.
     */
-  var startTime: js.UndefOr[timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The most recent status of the event. Possible values are open, closed, and upcoming.
@@ -69,7 +69,7 @@ object OrganizationEvent {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setEndTime(value: timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -85,7 +85,7 @@ object OrganizationEvent {
     
     inline def setEventTypeCodeUndefined: Self = StObject.set(x, "eventTypeCode", js.undefined)
     
-    inline def setLastUpdatedTime(value: timestamp): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
@@ -97,7 +97,7 @@ object OrganizationEvent {
     
     inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    inline def setStartTime(value: timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

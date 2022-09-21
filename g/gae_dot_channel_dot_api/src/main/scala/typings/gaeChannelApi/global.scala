@@ -12,7 +12,7 @@ object global {
       
       @JSGlobal("goog.appengine.Channel")
       @js.native
-      class Channel protected ()
+      open class Channel protected ()
         extends StObject
            with typings.gaeChannelApi.goog.appengine.Channel {
         /**
@@ -24,7 +24,7 @@ object global {
       
       @JSGlobal("goog.appengine.Socket")
       @js.native
-      class Socket ()
+      open class Socket ()
         extends StObject
            with typings.gaeChannelApi.goog.appengine.Socket {
         
@@ -59,7 +59,7 @@ object global {
           * @param message.data
           */
         /* CompleteClass */
-        override def onmessage(message: js.Any): Unit = js.native
+        override def onmessage(message: Any): Unit = js.native
         
         /**
           * Set this to a function called when the socket is ready to receive messages.

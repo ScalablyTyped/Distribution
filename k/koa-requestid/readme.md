@@ -10,10 +10,10 @@ A middleware that adds a request id to a koa application
 | ------------------ | :-------------: |
 | Full name          | koa-requestid |
 | Keywords           | koa, request, request-id, requestId |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 578666 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 198571.33333333334 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/uphold/koa-requestid/)

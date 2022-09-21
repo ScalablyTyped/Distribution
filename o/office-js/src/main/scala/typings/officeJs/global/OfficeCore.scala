@@ -17,11 +17,11 @@ object OfficeCore {
   
   @JSGlobal("OfficeCore.RequestContext")
   @js.native
-  class RequestContext ()
+  open class RequestContext ()
     extends StObject
        with ClientRequestContext {
     def this(url: String) = this()
-    def this(url: js.Any) = this()
+    def this(url: Any) = this()
     def this(url: RequestUrlAndHeaderInfo) = this()
   }
 }

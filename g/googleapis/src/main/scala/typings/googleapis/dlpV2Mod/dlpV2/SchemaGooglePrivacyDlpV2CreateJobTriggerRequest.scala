@@ -4,23 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for CreateJobTrigger.
-  */
 trait SchemaGooglePrivacyDlpV2CreateJobTriggerRequest extends StObject {
   
   /**
-    * The JobTrigger to create.
+    * Required. The JobTrigger to create.
     */
   var jobTrigger: js.UndefOr[SchemaGooglePrivacyDlpV2JobTrigger] = js.undefined
   
   /**
-    * The trigger id can contain uppercase and lowercase letters, numbers, and
-    * hyphens; that is, it must match the regular expression: `[a-zA-Z\\d-_]+`.
-    * The maximum length is 100 characters. Can be empty to allow the system to
-    * generate one.
+    * Deprecated. This field has no effect.
     */
-  var triggerId: js.UndefOr[String] = js.undefined
+  var locationId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The trigger id can contain uppercase and lowercase letters, numbers, and hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`. The maximum length is 100 characters. Can be empty to allow the system to generate one.
+    */
+  var triggerId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CreateJobTriggerRequest {
   
@@ -35,7 +34,15 @@ object SchemaGooglePrivacyDlpV2CreateJobTriggerRequest {
     
     inline def setJobTriggerUndefined: Self = StObject.set(x, "jobTrigger", js.undefined)
     
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    
+    inline def setLocationIdNull: Self = StObject.set(x, "locationId", null)
+    
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    
     inline def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerIdNull: Self = StObject.set(x, "triggerId", null)
     
     inline def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
   }

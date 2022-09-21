@@ -34,7 +34,7 @@ object Columns {
     
     inline def setAttributeNamesUndefined: Self = StObject.set(x, "attributeNames", js.undefined)
     
-    inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value*))
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
@@ -44,7 +44,7 @@ object Columns {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Column*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Column*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

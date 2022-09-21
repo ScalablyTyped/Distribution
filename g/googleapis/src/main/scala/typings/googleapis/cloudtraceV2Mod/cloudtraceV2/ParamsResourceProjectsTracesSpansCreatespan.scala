@@ -1,9 +1,5 @@
 package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +9,7 @@ trait ParamsResourceProjectsTracesSpansCreatespan
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The resource name of the span in the following format:
-    * projects/[PROJECT_ID]/traces/[TRACE_ID]/spans/SPAN_ID is a unique
-    * identifier for a trace within a project; it is a 32-character hexadecimal
-    * encoding of a 16-byte array.  [SPAN_ID] is a unique identifier for a span
-    * within a trace; it is a 16-character hexadecimal encoding of an 8-byte
-    * array.
+    * Required. The resource name of the span in the following format: * `projects/[PROJECT_ID]/traces/[TRACE_ID]/spans/[SPAN_ID]` `[TRACE_ID]` is a unique identifier for a trace within a project; it is a 32-character hexadecimal encoding of a 16-byte array. It should not be zero. `[SPAN_ID]` is a unique identifier for a span within a trace; it is a 16-character hexadecimal encoding of an 8-byte array. It should not be zero. .
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -40,10 +26,6 @@ object ParamsResourceProjectsTracesSpansCreatespan {
   }
   
   extension [Self <: ParamsResourceProjectsTracesSpansCreatespan](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

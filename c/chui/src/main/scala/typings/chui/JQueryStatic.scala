@@ -189,8 +189,8 @@ trait JQueryStatic extends StObject {
   /**
     * Creates and initializes a slide out menu. Possible options: {dynamic: true, callback: function() { alert("Woohoo!");}}
     */
-  def UISlideout(): js.Any = js.native
-  def UISlideout(options: Dynamic): js.Any = js.native
+  def UISlideout(): Any = js.native
+  def UISlideout(options: Dynamic): Any = js.native
   /**
     * Creates and initializes a slide out menu. Possible options: {dynamic: true, callback: function() { alert("Woohoo!");}}
     */
@@ -268,8 +268,8 @@ trait JQueryStatic extends StObject {
     * @param callback A callback to execute on each loop.
     * @param args Any arguments you need to pass to the callback.
     */
-  def forEach(obj: js.Array[js.Any], callback: js.Function): js.Any = js.native
-  def forEach(obj: js.Array[js.Any], callback: js.Function, args: js.Any): js.Any = js.native
+  def forEach(obj: js.Array[Any], callback: js.Function): Any = js.native
+  def forEach(obj: js.Array[Any], callback: js.Function, args: Any): Any = js.native
   
   /**
     * Whether OS is Android

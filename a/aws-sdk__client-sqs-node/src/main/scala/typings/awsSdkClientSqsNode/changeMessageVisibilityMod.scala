@@ -8,5 +8,5 @@ object changeMessageVisibilityMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/ChangeMessageVisibility", "ChangeMessageVisibility")
   @js.native
-  val ChangeMessageVisibility: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val ChangeMessageVisibility: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

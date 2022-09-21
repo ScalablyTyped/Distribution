@@ -1,6 +1,5 @@
 package typings.joi.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +37,7 @@ trait UriOptions extends StObject {
     * Specifies one or more acceptable Schemes, should only include the scheme name.
     * Can be an Array or String (strings are automatically escaped for use in a Regular Expression).
     */
-  var scheme: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+  var scheme: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
 }
 object UriOptions {
   
@@ -65,10 +64,10 @@ object UriOptions {
     
     inline def setRelativeOnlyUndefined: Self = StObject.set(x, "relativeOnly", js.undefined)
     
-    inline def setScheme(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
-    inline def setSchemeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "scheme", js.Array(value :_*))
+    inline def setSchemeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "scheme", js.Array(value*))
   }
 }

@@ -12,10 +12,10 @@ trait ICycleButton
      with ISplit {
   
   /** [Config Option] (Function) */
-  var changeHandler: js.UndefOr[js.Any] = js.undefined
+  var changeHandler: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var forceGlyph: js.UndefOr[js.Any] = js.undefined
+  var forceGlyph: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var forceIcon: js.UndefOr[java.lang.String] = js.undefined
@@ -58,11 +58,11 @@ object ICycleButton {
   
   extension [Self <: ICycleButton](x: Self) {
     
-    inline def setChangeHandler(value: js.Any): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
+    inline def setChangeHandler(value: Any): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
     
     inline def setChangeHandlerUndefined: Self = StObject.set(x, "changeHandler", js.undefined)
     
-    inline def setForceGlyph(value: js.Any): Self = StObject.set(x, "forceGlyph", value.asInstanceOf[js.Any])
+    inline def setForceGlyph(value: Any): Self = StObject.set(x, "forceGlyph", value.asInstanceOf[js.Any])
     
     inline def setForceGlyphUndefined: Self = StObject.set(x, "forceGlyph", js.undefined)
     

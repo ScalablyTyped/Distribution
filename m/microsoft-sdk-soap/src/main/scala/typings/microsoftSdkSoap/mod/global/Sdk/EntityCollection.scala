@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.EntityCollection")
 @js.native
-class EntityCollection protected () extends StObject {
+open class EntityCollection protected () extends StObject {
   /**
     * Contains a collection of entity instances.
     * @param entities Initializes a new instance of the EntityCollection class setting the Sdk.Collection of Sdk.Entity objects.

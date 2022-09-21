@@ -30,7 +30,7 @@ object ManagedZoneDnsSecConfig {
     
     inline def setDefaultKeySpecsUndefined: Self = StObject.set(x, "defaultKeySpecs", js.undefined)
     
-    inline def setDefaultKeySpecsVarargs(value: DnsKeySpec*): Self = StObject.set(x, "defaultKeySpecs", js.Array(value :_*))
+    inline def setDefaultKeySpecsVarargs(value: DnsKeySpec*): Self = StObject.set(x, "defaultKeySpecs", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

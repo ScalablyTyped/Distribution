@@ -21,6 +21,6 @@ object IExecuteRequest {
     
     inline def setCode(value: String | js.Array[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setCodeVarargs(value: String*): Self = StObject.set(x, "code", js.Array(value :_*))
+    inline def setCodeVarargs(value: String*): Self = StObject.set(x, "code", js.Array(value*))
   }
 }

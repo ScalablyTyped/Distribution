@@ -67,7 +67,7 @@ trait Vector extends StObject {
     *
     * @param {Function} fn The function to apply to each element (x, i) => {}.
     */
-  def each(fn: js.Function2[/* x */ Double, /* i */ Double, js.Any]): Unit = js.native
+  def each(fn: js.Function2[/* x */ Double, /* i */ Double, Any]): Unit = js.native
   
   /**
     * Gets an array containing the vector's elements.
@@ -134,7 +134,7 @@ trait Vector extends StObject {
     *
     * @param {Function} fn The function to apply to each element (x, i) => {}.
     */
-  def map(fn: js.Function2[/* x */ Double, /* i */ Double, js.Any]): Vector = js.native
+  def map(fn: js.Function2[/* x */ Double, /* i */ Double, Any]): Vector = js.native
   
   /**
     * Returns the (absolute) largest element of the vector.

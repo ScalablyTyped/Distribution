@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyLaunchTemplateRequest extends StObject {
   
   /**
-    * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraint: Maximum 128 ASCII characters.
+    * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring idempotency. Constraint: Maximum 128 ASCII characters.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
@@ -22,12 +22,12 @@ trait ModifyLaunchTemplateRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
+    * The ID of the launch template. You must specify either the LaunchTemplateId or the LaunchTemplateName, but not both.
     */
   var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.undefined
   
   /**
-    * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
+    * The name of the launch template. You must specify either the LaunchTemplateName or the LaunchTemplateId, but not both.
     */
   var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.undefined
 }

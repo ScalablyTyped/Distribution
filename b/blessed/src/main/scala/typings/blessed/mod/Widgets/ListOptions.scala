@@ -28,7 +28,7 @@ trait ListOptions[TStyle /* <: ListElementStyle */]
     * callback function which should be called with the search string. The search string is then used to
     * jump to an item that is found in items.
     */
-  var search: js.UndefOr[js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]] = js.undefined
+  var search: js.UndefOr[js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]] = js.undefined
   
   /**
     * Style for a selected item. Style for an unselected item.
@@ -57,9 +57,9 @@ object ListOptions {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setSearch(value: (/* err */ js.Any, /* value */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+    inline def setSearch(value: (/* err */ Any, /* value */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
     
     inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     

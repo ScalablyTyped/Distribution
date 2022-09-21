@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.dragSelectingTool, which you can modify.
   */
-class DragSelectingTool () extends Tool {
+open class DragSelectingTool () extends Tool {
   
   /**Gets or sets the Part used as the "rubber-band selection box" that is stretched to follow the mouse, as feedback for what area will be passed to .selectInRect upon a mouse-up.*/
   var box: Part = js.native

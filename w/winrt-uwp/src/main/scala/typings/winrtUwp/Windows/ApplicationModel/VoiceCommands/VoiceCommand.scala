@@ -14,7 +14,7 @@ trait VoiceCommand extends StObject {
   var commandName: String
   
   /** Gets a dictionary containing the semantic properties of the recognized phrase in the voice command. */
-  var properties: IMapView[String, IVectorView[js.Any]]
+  var properties: IMapView[String, IVectorView[Any]]
   
   /** Gets the SpeechRecognitionResult object representing the results returned by the voice command. */
   var speechRecognitionResult: SpeechRecognitionResult
@@ -23,7 +23,7 @@ object VoiceCommand {
   
   inline def apply(
     commandName: String,
-    properties: IMapView[String, IVectorView[js.Any]],
+    properties: IMapView[String, IVectorView[Any]],
     speechRecognitionResult: SpeechRecognitionResult
   ): VoiceCommand = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], speechRecognitionResult = speechRecognitionResult.asInstanceOf[js.Any])
@@ -34,7 +34,7 @@ object VoiceCommand {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: IMapView[String, IVectorView[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, IVectorView[Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setSpeechRecognitionResult(value: SpeechRecognitionResult): Self = StObject.set(x, "speechRecognitionResult", value.asInstanceOf[js.Any])
   }

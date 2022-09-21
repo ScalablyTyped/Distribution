@@ -24,6 +24,8 @@ trait PagerMessages extends StObject {
   
   var page: js.UndefOr[String] = js.undefined
   
+  var pageButtonLabel: js.UndefOr[String] = js.undefined
+  
   var previous: js.UndefOr[String] = js.undefined
   
   var refresh: js.UndefOr[String] = js.undefined
@@ -70,6 +72,10 @@ object PagerMessages {
     inline def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
     
     inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageButtonLabel(value: String): Self = StObject.set(x, "pageButtonLabel", value.asInstanceOf[js.Any])
+    
+    inline def setPageButtonLabelUndefined: Self = StObject.set(x, "pageButtonLabel", js.undefined)
     
     inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     

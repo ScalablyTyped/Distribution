@@ -22,7 +22,7 @@ object Qwest {
     var dataType: js.UndefOr[String] = js.undefined
     
     /** javascript object containing headers to be sent */
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /** the password to access to the URL, if needed */
     var password: js.UndefOr[String] = js.undefined
@@ -64,7 +64,7 @@ object Qwest {
       
       inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -94,31 +94,21 @@ object Qwest {
     
     /** Request has failed */
     def `catch`(
-      callback: js.Function3[
-          /* e */ js.Any, 
-          /* xhr */ js.UndefOr[js.Any], 
-          /* response */ js.UndefOr[js.Any], 
-          js.Any
-        ]
+      callback: js.Function3[/* e */ Any, /* xhr */ js.UndefOr[Any], /* response */ js.UndefOr[Any], Any]
     ): Promise
     
     /** Always run */
-    def complete(callback: js.Function0[js.Any]): Promise
+    def complete(callback: js.Function0[Any]): Promise
     
     /** Request is successful */
-    def `then`(callback: js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], js.Any]): Promise
+    def `then`(callback: js.Function2[/* xhr */ Any, /* response */ js.UndefOr[Any], Any]): Promise
   }
   object Promise {
     
     inline def apply(
-      `catch`: js.Function3[
-          /* e */ js.Any, 
-          /* xhr */ js.UndefOr[js.Any], 
-          /* response */ js.UndefOr[js.Any], 
-          js.Any
-        ] => Promise,
-      complete: js.Function0[js.Any] => Promise,
-      `then`: js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], js.Any] => Promise
+      `catch`: js.Function3[/* e */ Any, /* xhr */ js.UndefOr[Any], /* response */ js.UndefOr[Any], Any] => Promise,
+      complete: js.Function0[Any] => Promise,
+      `then`: js.Function2[/* xhr */ Any, /* response */ js.UndefOr[Any], Any] => Promise
     ): Promise = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
       __obj.updateDynamic("catch")(js.Any.fromFunction1(`catch`))
@@ -129,17 +119,12 @@ object Qwest {
     extension [Self <: Promise](x: Self) {
       
       inline def setCatch(
-        value: js.Function3[
-              /* e */ js.Any, 
-              /* xhr */ js.UndefOr[js.Any], 
-              /* response */ js.UndefOr[js.Any], 
-              js.Any
-            ] => Promise
+        value: js.Function3[/* e */ Any, /* xhr */ js.UndefOr[Any], /* response */ js.UndefOr[Any], Any] => Promise
       ): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
-      inline def setComplete(value: js.Function0[js.Any] => Promise): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: js.Function0[Any] => Promise): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
-      inline def setThen(value: js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], js.Any] => Promise): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+      inline def setThen(value: js.Function2[/* xhr */ Any, /* response */ js.UndefOr[Any], Any] => Promise): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
     }
   }
   
@@ -150,7 +135,7 @@ object Qwest {
     var base: String = js.native
     
     /** Set XHR options before request */
-    def before(callback: js.Function0[js.Any]): Static = js.native
+    def before(callback: js.Function0[Any]): Static = js.native
     
     /**
       * Perfoms an AJAX DELETE request
@@ -159,8 +144,8 @@ object Qwest {
       * @param options Configuration options for the AJAX request
       * */
     def delete(url: String): Promise = js.native
-    def delete(url: String, data: js.Any): Promise = js.native
-    def delete(url: String, data: js.Any, options: Options): Promise = js.native
+    def delete(url: String, data: Any): Promise = js.native
+    def delete(url: String, data: Any, options: Options): Promise = js.native
     def delete(url: String, data: Unit, options: Options): Promise = js.native
     
     /**
@@ -170,8 +155,8 @@ object Qwest {
       * @param options Configuration options for the AJAX request
       * */
     def get(url: String): Promise = js.native
-    def get(url: String, data: js.Any): Promise = js.native
-    def get(url: String, data: js.Any, options: Options): Promise = js.native
+    def get(url: String, data: Any): Promise = js.native
+    def get(url: String, data: Any, options: Options): Promise = js.native
     def get(url: String, data: Unit, options: Options): Promise = js.native
     
     /** Sets the request limit */
@@ -184,8 +169,8 @@ object Qwest {
       * @param options Configuration options for the AJAX request
       * */
     def post(url: String): Promise = js.native
-    def post(url: String, data: js.Any): Promise = js.native
-    def post(url: String, data: js.Any, options: Options): Promise = js.native
+    def post(url: String, data: Any): Promise = js.native
+    def post(url: String, data: Any, options: Options): Promise = js.native
     def post(url: String, data: Unit, options: Options): Promise = js.native
     
     /**
@@ -195,8 +180,8 @@ object Qwest {
       * @param options Configuration options for the AJAX request
       * */
     def put(url: String): Promise = js.native
-    def put(url: String, data: js.Any): Promise = js.native
-    def put(url: String, data: js.Any, options: Options): Promise = js.native
+    def put(url: String, data: Any): Promise = js.native
+    def put(url: String, data: Any, options: Options): Promise = js.native
     def put(url: String, data: Unit, options: Options): Promise = js.native
     
     /** Set default cross-domain response type for IE8/9 (defaults to 'json') */

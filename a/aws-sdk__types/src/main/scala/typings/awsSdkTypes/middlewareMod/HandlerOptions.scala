@@ -12,6 +12,13 @@ trait HandlerOptions extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
+    * A flag to override the existing middleware with the same name. Without
+    * setting it, adding middleware with duplicated name will throw an exception.
+    * @internal
+    */
+  var `override`: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Handlers are ordered using a "step" that describes the stage of command
     * execution at which the handler will be executed. The available steps are:
     *
@@ -61,6 +68,10 @@ object HandlerOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    
     inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
@@ -69,6 +80,6 @@ object HandlerOptions {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

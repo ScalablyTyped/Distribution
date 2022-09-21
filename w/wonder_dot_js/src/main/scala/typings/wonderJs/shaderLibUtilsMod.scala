@@ -10,7 +10,7 @@ object shaderLibUtilsMod {
   
   @JSImport("wonder.js/dist/es2015/utils/ShaderLibUtils", "ShaderLibUtils")
   @js.native
-  class ShaderLibUtils () extends StObject
+  open class ShaderLibUtils () extends StObject
   /* static members */
   object ShaderLibUtils {
     

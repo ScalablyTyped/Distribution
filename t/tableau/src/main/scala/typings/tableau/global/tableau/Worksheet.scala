@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.Worksheet")
 @js.native
-class Worksheet ()
+open class Worksheet ()
   extends StObject
      with typings.tableau.tableau.Worksheet {
   

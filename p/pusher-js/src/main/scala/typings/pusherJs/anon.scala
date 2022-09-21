@@ -1,140 +1,119 @@
 package typings.pusherJs
 
-import typings.pusherJs.mod.AuthInfo
+import org.scalablytyped.runtime.Instantiable2
+import typings.pusherJs.pusherMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Activity extends StObject {
+  trait Abort extends StObject {
     
-    def activity(): Unit
+    def abort(): Unit
     
-    def closed(): Unit
-    
-    def error(error: js.Any): Unit
-    
-    def message(message: String): Unit
-    
-    def ping(): Unit
+    def forceMinPriority(p: Any): Unit
   }
-  object Activity {
+  object Abort {
     
-    inline def apply(
-      activity: () => Unit,
-      closed: () => Unit,
-      error: js.Any => Unit,
-      message: String => Unit,
-      ping: () => Unit
-    ): Activity = {
-      val __obj = js.Dynamic.literal(activity = js.Any.fromFunction0(activity), closed = js.Any.fromFunction0(closed), error = js.Any.fromFunction1(error), message = js.Any.fromFunction1(message), ping = js.Any.fromFunction0(ping))
-      __obj.asInstanceOf[Activity]
+    inline def apply(abort: () => Unit, forceMinPriority: Any => Unit): Abort = {
+      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), forceMinPriority = js.Any.fromFunction1(forceMinPriority))
+      __obj.asInstanceOf[Abort]
     }
     
-    extension [Self <: Activity](x: Self) {
+    extension [Self <: Abort](x: Self) {
       
-      inline def setActivity(value: () => Unit): Self = StObject.set(x, "activity", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      inline def setClosed(value: () => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
-      
-      inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
-      
-      inline def setMessage(value: String => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
-      
-      inline def setPing(value: () => Unit): Self = StObject.set(x, "ping", js.Any.fromFunction0(value))
+      inline def setForceMinPriority(value: Any => Unit): Self = StObject.set(x, "forceMinPriority", js.Any.fromFunction1(value))
     }
   }
   
-  trait Authorize extends StObject {
+  trait Delay extends StObject {
     
-    def authorize(
-      socketId: String,
-      callback: js.Function2[/* errored */ Boolean, /* authInfo */ js.UndefOr[AuthInfo], Unit]
-    ): Unit
+    var delay: Any
   }
-  object Authorize {
+  object Delay {
     
-    inline def apply(
-      authorize: (String, js.Function2[/* errored */ Boolean, /* authInfo */ js.UndefOr[AuthInfo], Unit]) => Unit
-    ): Authorize = {
-      val __obj = js.Dynamic.literal(authorize = js.Any.fromFunction2(authorize))
-      __obj.asInstanceOf[Authorize]
+    inline def apply(delay: Any): Delay = {
+      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Delay]
     }
     
-    extension [Self <: Authorize](x: Self) {
+    extension [Self <: Delay](x: Self) {
       
-      inline def setAuthorize(
-        value: (String, js.Function2[/* errored */ Boolean, /* authInfo */ js.UndefOr[AuthInfo], Unit]) => Unit
-      ): Self = StObject.set(x, "authorize", js.Any.fromFunction2(value))
+      inline def setDelay(value: Any): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Backoff extends StObject {
+  trait DelayNumber extends StObject {
     
-    def backoff(): Unit
-    
-    def refused(): Unit
-    
-    def retry(): Unit
-    
-    def ssl_only(): Unit
+    var delay: Double
   }
-  object Backoff {
+  object DelayNumber {
     
-    inline def apply(backoff: () => Unit, refused: () => Unit, retry: () => Unit, ssl_only: () => Unit): Backoff = {
-      val __obj = js.Dynamic.literal(backoff = js.Any.fromFunction0(backoff), refused = js.Any.fromFunction0(refused), retry = js.Any.fromFunction0(retry), ssl_only = js.Any.fromFunction0(ssl_only))
-      __obj.asInstanceOf[Backoff]
+    inline def apply(delay: Double): DelayNumber = {
+      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DelayNumber]
     }
     
-    extension [Self <: Backoff](x: Self) {
+    extension [Self <: DelayNumber](x: Self) {
       
-      inline def setBackoff(value: () => Unit): Self = StObject.set(x, "backoff", js.Any.fromFunction0(value))
-      
-      inline def setRefused(value: () => Unit): Self = StObject.set(x, "refused", js.Any.fromFunction0(value))
-      
-      inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
-      
-      inline def setSsl_only(value: () => Unit): Self = StObject.set(x, "ssl_only", js.Any.fromFunction0(value))
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Connected extends StObject {
+  trait ForceMinPriority extends StObject {
     
-    def backoff(): Unit
+    def abort(): Unit
     
-    def connected(handshake: js.Any): Unit
-    
-    def refused(): Unit
-    
-    def retry(): Unit
-    
-    def ssl_only(): Unit
+    def forceMinPriority(): Unit
   }
-  object Connected {
+  object ForceMinPriority {
     
-    inline def apply(
-      backoff: () => Unit,
-      connected: js.Any => Unit,
-      refused: () => Unit,
-      retry: () => Unit,
-      ssl_only: () => Unit
-    ): Connected = {
-      val __obj = js.Dynamic.literal(backoff = js.Any.fromFunction0(backoff), connected = js.Any.fromFunction1(connected), refused = js.Any.fromFunction0(refused), retry = js.Any.fromFunction0(retry), ssl_only = js.Any.fromFunction0(ssl_only))
-      __obj.asInstanceOf[Connected]
+    inline def apply(abort: () => Unit, forceMinPriority: () => Unit): ForceMinPriority = {
+      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), forceMinPriority = js.Any.fromFunction0(forceMinPriority))
+      __obj.asInstanceOf[ForceMinPriority]
     }
     
-    extension [Self <: Connected](x: Self) {
+    extension [Self <: ForceMinPriority](x: Self) {
       
-      inline def setBackoff(value: () => Unit): Self = StObject.set(x, "backoff", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      inline def setConnected(value: js.Any => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
+      inline def setForceMinPriority(value: () => Unit): Self = StObject.set(x, "forceMinPriority", js.Any.fromFunction0(value))
+    }
+  }
+  
+  @js.native
+  trait Instantiable
+    extends StObject
+       with Instantiable2[/* key */ String, /* options */ Any, default] {
+    
+    def ready(): Unit = js.native
+  }
+  
+  trait Promise extends StObject {
+    
+    var promise: js.Promise[Any]
+    
+    var reject: Any
+    
+    var resolve: Any
+  }
+  object Promise {
+    
+    inline def apply(promise: js.Promise[Any], reject: Any, resolve: Any): Promise = {
+      val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reject = reject.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Promise]
+    }
+    
+    extension [Self <: Promise](x: Self) {
       
-      inline def setRefused(value: () => Unit): Self = StObject.set(x, "refused", js.Any.fromFunction0(value))
+      inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
+      inline def setReject(value: Any): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
       
-      inline def setSsl_only(value: () => Unit): Self = StObject.set(x, "ssl_only", js.Any.fromFunction0(value))
+      inline def setResolve(value: Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     }
   }
 }

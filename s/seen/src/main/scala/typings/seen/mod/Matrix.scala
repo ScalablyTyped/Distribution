@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Matrix")
 @js.native
-class Matrix () extends StObject {
+open class Matrix () extends StObject {
   def this(m: js.Array[Double]) = this()
   
   def bake(): this.type = js.native

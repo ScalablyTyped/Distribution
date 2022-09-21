@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaUrlMapReference extends StObject {
   
-  var urlMap: js.UndefOr[String] = js.undefined
+  var urlMap: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUrlMapReference {
   
@@ -18,6 +18,8 @@ object SchemaUrlMapReference {
   extension [Self <: SchemaUrlMapReference](x: Self) {
     
     inline def setUrlMap(value: String): Self = StObject.set(x, "urlMap", value.asInstanceOf[js.Any])
+    
+    inline def setUrlMapNull: Self = StObject.set(x, "urlMap", null)
     
     inline def setUrlMapUndefined: Self = StObject.set(x, "urlMap", js.undefined)
   }

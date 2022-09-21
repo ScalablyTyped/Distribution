@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel application that manages the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ApplicationLoadOptions extends StObject {
@@ -19,68 +19,68 @@ trait ApplicationLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Returns the Excel calculation engine version used for the last full recalculation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var calculationEngineVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
     *
-    * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
   var calculationMode: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns the calculation state of the application. See `Excel.CalculationState` for details.
     *
-    * Returns the calculation state of the application. See Excel.CalculationState for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var calculationState: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var cultureInfo: js.UndefOr[CultureInfoLoadOptions] = js.undefined
   
   /**
+    * Gets the string used as the decimal separator for numeric values. This is based on the local Excel settings.
     *
-    * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var decimalSeparator: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
-    * Returns the Iterative Calculation settings.
+    * Returns the iterative calculation settings.
     In Excel on Windows and Mac, the settings will apply to the Excel Application.
     In Excel on the web and other platforms, the settings will apply to the active workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var iterativeCalculation: js.UndefOr[IterativeCalculationLoadOptions] = js.undefined
   
   /**
+    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
     *
-    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var thousandsSeparator: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the system separators of Excel are enabled.
     System separators include the decimal separator and thousands separator.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var useSystemSeparators: js.UndefOr[Boolean] = js.undefined

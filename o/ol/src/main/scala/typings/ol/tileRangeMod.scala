@@ -14,7 +14,7 @@ object tileRangeMod {
   
   @JSImport("ol/TileRange", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TileRange {
     def this(minX: Double, maxX: Double, minY: Double, maxY: Double) = this()

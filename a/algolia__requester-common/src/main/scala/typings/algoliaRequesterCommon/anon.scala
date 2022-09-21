@@ -19,9 +19,9 @@ object anon {
   object ReadonlyPromiseResponse {
     
     inline def apply(
-      `catch`: () => js.Promise[Response | js.Any],
+      `catch`: () => js.Promise[Response | Any],
       `finally`: () => js.Promise[Response],
-      `then`: () => js.Promise[js.Any | js.Any]
+      `then`: () => js.Promise[Any | Any]
     ): ReadonlyPromiseResponse = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -32,11 +32,11 @@ object anon {
     
     extension [Self <: ReadonlyPromiseResponse](x: Self) {
       
-      inline def setCatch(value: () => js.Promise[Response | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[Response | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
       inline def setFinally(value: () => js.Promise[Response]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -52,9 +52,9 @@ object anon {
   object ReadonlyPromisevoid {
     
     inline def apply(
-      `catch`: () => js.Promise[Unit | js.Any],
+      `catch`: () => js.Promise[Unit | Any],
       `finally`: () => js.Promise[Unit],
-      `then`: () => js.Promise[js.Any | js.Any]
+      `then`: () => js.Promise[Any | Any]
     ): ReadonlyPromisevoid = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -65,11 +65,11 @@ object anon {
     
     extension [Self <: ReadonlyPromisevoid](x: Self) {
       
-      inline def setCatch(value: () => js.Promise[Unit | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[Unit | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
       inline def setFinally(value: () => js.Promise[Unit]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
 }

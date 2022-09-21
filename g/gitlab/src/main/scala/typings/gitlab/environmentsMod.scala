@@ -15,7 +15,7 @@ object environmentsMod {
   
   @JSImport("gitlab/dist/types/core/services/Environments", "Environments")
   @js.native
-  class Environments () extends BaseService {
+  open class Environments () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[js.Array[EnvironmentSchema]] = js.native

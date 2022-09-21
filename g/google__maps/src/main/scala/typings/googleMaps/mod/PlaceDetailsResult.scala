@@ -205,13 +205,13 @@ object PlaceDetailsResult {
     
     inline def setAddress_components(value: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     
-    inline def setAddress_componentsVarargs(value: (AddressComponent[AddressType | PlaceDetailsAddressComponentType])*): Self = StObject.set(x, "address_components", js.Array(value :_*))
+    inline def setAddress_componentsVarargs(value: (AddressComponent[AddressType | PlaceDetailsAddressComponentType])*): Self = StObject.set(x, "address_components", js.Array(value*))
     
     inline def setAdr_address(value: String): Self = StObject.set(x, "adr_address", value.asInstanceOf[js.Any])
     
     inline def setAlt_ids(value: js.Array[AlternativePlaceId]): Self = StObject.set(x, "alt_ids", value.asInstanceOf[js.Any])
     
-    inline def setAlt_idsVarargs(value: AlternativePlaceId*): Self = StObject.set(x, "alt_ids", js.Array(value :_*))
+    inline def setAlt_idsVarargs(value: AlternativePlaceId*): Self = StObject.set(x, "alt_ids", js.Array(value*))
     
     inline def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
     
@@ -231,7 +231,7 @@ object PlaceDetailsResult {
     
     inline def setPhotos(value: js.Array[PlacePhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    inline def setPhotosVarargs(value: PlacePhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: PlacePhoto*): Self = StObject.set(x, "photos", js.Array(value*))
     
     inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
@@ -243,13 +243,13 @@ object PlaceDetailsResult {
     
     inline def setReviews(value: js.Array[PlaceReview]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
     
-    inline def setReviewsVarargs(value: PlaceReview*): Self = StObject.set(x, "reviews", js.Array(value :_*))
+    inline def setReviewsVarargs(value: PlaceReview*): Self = StObject.set(x, "reviews", js.Array(value*))
     
     inline def setScope(value: PlaceIdScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

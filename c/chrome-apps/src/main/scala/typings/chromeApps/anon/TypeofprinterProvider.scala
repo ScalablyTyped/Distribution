@@ -34,7 +34,7 @@ trait TypeofprinterProvider extends StObject {
     */
   val onGetUsbPrinterInfoRequested: Event[
     js.Function2[
-      /* device */ js.Any, 
+      /* device */ Any, 
       /* resultCallback */ js.Function1[/* printerInfo */ js.UndefOr[PrinterInfo], Unit], 
       Unit
     ]
@@ -67,7 +67,7 @@ object TypeofprinterProvider {
     ],
     onGetUsbPrinterInfoRequested: Event[
       js.Function2[
-        /* device */ js.Any, 
+        /* device */ Any, 
         /* resultCallback */ js.Function1[/* printerInfo */ js.UndefOr[PrinterInfo], Unit], 
         Unit
       ]
@@ -108,7 +108,7 @@ object TypeofprinterProvider {
     inline def setOnGetUsbPrinterInfoRequested(
       value: Event[
           js.Function2[
-            /* device */ js.Any, 
+            /* device */ Any, 
             /* resultCallback */ js.Function1[/* printerInfo */ js.UndefOr[PrinterInfo], Unit], 
             Unit
           ]

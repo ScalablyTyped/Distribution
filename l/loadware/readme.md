@@ -10,10 +10,10 @@ A library to make sense of a bunch of middleware definitions and return a simple
 | ------------------ | :-------------: |
 | Full name          | loadware |
 | Keywords           | loadware, middleware, load, normalize |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 310596 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32334.333333333332 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/franciscop/loadware#readme)

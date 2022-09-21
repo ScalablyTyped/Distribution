@@ -4,19 +4,19 @@
 Typings are for version 2.3
 
 ## Library description:
-Streams3, a user-land copy of the stream library from Node.js
+Node.js Streams, a user-land copy of the stream library from Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | readable-stream |
 | Keywords           | readable, stream, pipe |
-| # releases         | 7 |
-| # dependents       | 2268 |
-| # downloads        | 2627489994 |
-| # stars            | 46 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.162059096666667E8 |
+| # stars            | 927.0 |
 
 ## Links
-- [Homepage](https://github.com/nodejs/readable-stream#readme)
+- [Homepage](https://github.com/nodejs/readable-stream)
 - [Bugs](https://github.com/nodejs/readable-stream/issues)
 - [Repository](https://github.com/nodejs/readable-stream)
 - [Npm](https://www.npmjs.com/package/readable-stream)

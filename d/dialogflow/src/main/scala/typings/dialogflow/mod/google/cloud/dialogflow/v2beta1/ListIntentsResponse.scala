@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ListIntentsResponse.
   * @param [properties] Properties to set
   */
-class ListIntentsResponse ()
+open class ListIntentsResponse ()
   extends StObject
      with IListIntentsResponse {
   def this(properties: IListIntentsResponse) = this()
@@ -33,7 +32,7 @@ class ListIntentsResponse ()
     * Converts this ListIntentsResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object ListIntentsResponse {
   
@@ -50,6 +49,8 @@ object ListIntentsResponse {
   inline def create(): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListIntentsResponse]
   inline def create(properties: IListIntentsResponse): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ListIntentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListIntentsResponse]
   /**
     * Decodes a ListIntentsResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object ListIntentsResponse {
   /* static member */
   inline def decode(reader: Reader): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
   inline def decode(reader: Reader, length: Double): ListIntentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListIntentsResponse]
-  inline def decode(reader: Uint8Array): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
-  inline def decode(reader: Uint8Array, length: Double): ListIntentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListIntentsResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
   /**
     * Decodes a ListIntentsResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object ListIntentsResponse {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
-  inline def decodeDelimited(reader: Uint8Array): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
   
   /**
     * Encodes the specified ListIntentsResponse message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ListIntentsResponse.verify|verify} messages.
@@ -101,7 +100,7 @@ object ListIntentsResponse {
     * @returns ListIntentsResponse
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ListIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListIntentsResponse]
   
   /**
     * Creates a plain object from a ListIntentsResponse message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object ListIntentsResponse {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: ListIntentsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ListIntentsResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListIntentsResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ListIntentsResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ListIntentsResponse message.
@@ -119,5 +118,5 @@ object ListIntentsResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

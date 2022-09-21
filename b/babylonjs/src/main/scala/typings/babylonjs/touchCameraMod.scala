@@ -11,7 +11,7 @@ object touchCameraMod {
   
   @JSImport("babylonjs/Cameras/touchCamera", "TouchCamera")
   @js.native
-  class TouchCamera protected () extends FreeCamera {
+  open class TouchCamera protected () extends FreeCamera {
     /**
       * Instantiates a new touch camera.
       * This represents a FPS type of camera controlled by touch.
@@ -21,6 +21,7 @@ object touchCameraMod {
       * @param position Define the start position of the camera in the scene
       * @param scene Define the scene the camera belongs to
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
     
     /**

@@ -17,12 +17,10 @@ object githubMod {
   
   @JSImport("react-color/lib/components/github/Github", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[GithubPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[GithubPickerProps, js.Object, Any]
   
-  @js.native
-  trait GithubPicker
-    extends Component[GithubPickerProps, js.Object, js.Any]
+  type GithubPicker = Component[GithubPickerProps, js.Object, Any]
   
   trait GithubPickerProps
     extends StObject
@@ -52,7 +50,7 @@ object githubMod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setOnSwatchHover(value: (/* color */ ColorResult, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onSwatchHover", js.Any.fromFunction2(value))
       

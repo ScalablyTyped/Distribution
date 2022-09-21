@@ -34,7 +34,7 @@ object StartBgpFailoverTestRequest {
     
     inline def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
     
-    inline def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
+    inline def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value*))
     
     inline def setTestDurationInMinutes(value: TestDuration): Self = StObject.set(x, "testDurationInMinutes", value.asInstanceOf[js.Any])
     

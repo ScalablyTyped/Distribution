@@ -23,7 +23,7 @@ object ConnectFailureFilter {
     
     inline def setEnvelopeIdsUndefined: Self = StObject.set(x, "envelopeIds", js.undefined)
     
-    inline def setEnvelopeIdsVarargs(value: String*): Self = StObject.set(x, "envelopeIds", js.Array(value :_*))
+    inline def setEnvelopeIdsVarargs(value: String*): Self = StObject.set(x, "envelopeIds", js.Array(value*))
     
     inline def setSynchronous(value: String): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
     

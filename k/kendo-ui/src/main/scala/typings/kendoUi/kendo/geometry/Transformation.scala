@@ -18,7 +18,7 @@ trait Transformation
   
   var options: TransformationOptions = js.native
   
-  def rotate(angle: Double, center: js.Any): Transformation = js.native
+  def rotate(angle: Double, center: Any): Transformation = js.native
   def rotate(angle: Double, center: Point): Transformation = js.native
   
   def scale(scaleX: Double, scaleY: Double): Transformation = js.native

@@ -68,7 +68,7 @@ object MessageDetails {
     
     inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUser(value: UserDetails): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     

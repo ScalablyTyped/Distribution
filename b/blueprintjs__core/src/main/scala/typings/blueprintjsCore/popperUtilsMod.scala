@@ -27,7 +27,7 @@ object popperUtilsMod {
   
   inline def getOppositePosition(side: Position): left | right | bottom | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getOppositePosition")(side.asInstanceOf[js.Any]).asInstanceOf[left | right | bottom | top]
   
-  inline def getPosition(placement: Placement): left | right | bottom | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(placement.asInstanceOf[js.Any]).asInstanceOf[left | right | bottom | top]
+  inline def getPosition(placement: Placement): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(placement.asInstanceOf[js.Any]).asInstanceOf[Position]
   
   inline def getTransformOrigin(data: Data): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformOrigin")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   

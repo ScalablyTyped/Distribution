@@ -22,6 +22,6 @@ object ExchangeConfig {
     
     inline def setEnabledExchangesUndefined: Self = StObject.set(x, "enabledExchanges", js.undefined)
     
-    inline def setEnabledExchangesVarargs(value: ExchangeConfigEnabledExchange*): Self = StObject.set(x, "enabledExchanges", js.Array(value :_*))
+    inline def setEnabledExchangesVarargs(value: ExchangeConfigEnabledExchange*): Self = StObject.set(x, "enabledExchanges", js.Array(value*))
   }
 }

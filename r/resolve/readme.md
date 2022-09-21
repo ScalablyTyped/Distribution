@@ -1,7 +1,7 @@
 
 # Scala.js typings for resolve
 
-Typings are for version 1.17.0
+Typings are for version 1.20.0
 
 ## Library description:
 resolve like require.resolve() on behalf of files asynchronously and synchronously
@@ -10,10 +10,10 @@ resolve like require.resolve() on behalf of files asynchronously and synchronous
 | ------------------ | :-------------: |
 | Full name          | resolve |
 | Keywords           | resolve, require, node, module |
-| # releases         | 23 |
-| # dependents       | 5135 |
-| # downloads        | 1640578852 |
-| # stars            | 29 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 2.40337296E8 |
+| # stars            | 693.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/resolve#readme)

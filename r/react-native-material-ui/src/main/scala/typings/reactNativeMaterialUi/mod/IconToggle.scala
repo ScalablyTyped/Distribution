@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "IconToggle")
 @js.native
-class IconToggle protected ()
-  extends Component[IconToggleProps, js.Any, js.Any] {
+open class IconToggle protected () extends Component[IconToggleProps, Any, Any] {
   def this(props: IconToggleProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IconToggleProps, context: js.Any) = this()
+  def this(props: IconToggleProps, context: Any) = this()
 }

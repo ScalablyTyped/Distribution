@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__type-model
 
-Typings are for version 1.0.0-pre.11
+Typings are for version 1.0.0-pre.23
 
 ## Library description:
 Utility types for TypeScript.
@@ -10,15 +10,12 @@ Utility types for TypeScript.
 | ------------------ | :-------------: |
 | Full name          | @esfx/type-model |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 5 |
-| # downloads        | 197763 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 21723.666666666668 |
+| # stars            | 161.0 |
 
 ## Links
-- [Homepage](https://github.com/esfx/esfx#readme)
-- [Bugs](https://github.com/esfx/esfx/issues)
-- [Repository](https://github.com/esfx/esfx)
 - [Npm](https://www.npmjs.com/package/%40esfx%2Ftype-model)
     
 

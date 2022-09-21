@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__tooltip
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 Create accessible tooltips within react-md based on the material design specifications.
@@ -10,10 +10,10 @@ Create accessible tooltips within react-md based on the material design specific
 | ------------------ | :-------------: |
 | Full name          | @react-md/tooltip |
 | Keywords           | accessibility, a11y, react-md, material design, react, tooltip, magic tooltip, component, components |
-| # releases         | 39 |
-| # dependents       | 3 |
-| # downloads        | 39209 |
-| # stars            | 0 |
+| # releases         | 42 |
+| # dependents       | 0.0 |
+| # downloads        | 7722.0 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/tooltip/demos)

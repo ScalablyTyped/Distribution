@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExternalDocumentationObject
   extends StObject
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ StringDictionary[Any] {
   
   var description: js.UndefOr[String] = js.undefined
   

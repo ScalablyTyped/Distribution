@@ -31,7 +31,7 @@ object KeyFrames {
     
     inline def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
     
-    inline def setKeyframesVarargs(value: (KeyFrame | Comment)*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
+    inline def setKeyframesVarargs(value: (KeyFrame | Comment)*): Self = StObject.set(x, "keyframes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

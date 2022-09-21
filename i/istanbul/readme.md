@@ -11,9 +11,9 @@ Yet another JS code coverage tool that computes statement, line, function and br
 | Full name          | istanbul |
 | Keywords           | coverage, code coverage, JS code coverage, JS coverage |
 | # releases         | 1 |
-| # dependents       | 842 |
-| # downloads        | 48935105 |
-| # stars            | 222 |
+| # dependents       | 0.0 |
+| # downloads        | 2990511.0 |
+| # stars            | 8523.0 |
 
 ## Links
 - [Homepage](https://github.com/gotwarlost/istanbul#readme)

@@ -33,7 +33,7 @@ object anon {
   
   trait Error extends StObject {
     
-    var error: js.Any
+    var error: Any
     
     var isLoading: Boolean
     
@@ -41,14 +41,14 @@ object anon {
   }
   object Error {
     
-    inline def apply(error: js.Any, isLoading: Boolean): Error = {
+    inline def apply(error: Any, isLoading: Boolean): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
     extension [Self <: Error](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       

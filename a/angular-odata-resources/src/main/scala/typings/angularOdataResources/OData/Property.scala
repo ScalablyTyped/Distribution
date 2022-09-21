@@ -9,5 +9,5 @@ trait Property
   extends StObject
      with IExecutable {
   
-  /* private */ var value: js.Any = js.native
+  /* private */ var value: Any = js.native
 }

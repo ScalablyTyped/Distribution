@@ -9,22 +9,22 @@ trait Query extends StObject {
   
   def addParams(key: String, value: String): Query = js.native
   
-  def execute(dataManager: DataManager, done: js.Any): js.Any = js.native
-  def execute(dataManager: DataManager, done: js.Any, fail: String): js.Any = js.native
-  def execute(dataManager: DataManager, done: js.Any, fail: String, always: String): js.Any = js.native
-  def execute(dataManager: DataManager, done: js.Any, fail: Unit, always: String): js.Any = js.native
+  def execute(dataManager: DataManager, done: Any): Any = js.native
+  def execute(dataManager: DataManager, done: Any, fail: String): Any = js.native
+  def execute(dataManager: DataManager, done: Any, fail: String, always: String): Any = js.native
+  def execute(dataManager: DataManager, done: Any, fail: Unit, always: String): Any = js.native
   
   def executeLocal(dataManager: DataManager): DataManager = js.native
   
-  def expand(tables: js.Any): Query = js.native
+  def expand(tables: Any): Query = js.native
   
   def foreignKey(key: String): Query = js.native
   
-  def from(tableName: js.Any): Query = js.native
+  def from(tableName: Any): Query = js.native
   
   def group(fieldName: String): Query = js.native
   
-  def hierarchy(query: Query, selectorFn: js.Any): Query = js.native
+  def hierarchy(query: Query, selectorFn: Any): Query = js.native
   
   def key(field: String): Query = js.native
   
@@ -34,30 +34,24 @@ trait Query extends StObject {
   
   def requiresCount(): Query = js.native
   
-  def search(searchKey: js.Any): Query = js.native
-  def search(searchKey: js.Any, fieldNames: js.Any): Query = js.native
-  def search(searchKey: js.Any, fieldNames: js.Any, operator: String): Query = js.native
-  def search(searchKey: js.Any, fieldNames: js.Any, operator: String, ignoreCase: Boolean): Query = js.native
-  def search(
-    searchKey: js.Any,
-    fieldNames: js.Any,
-    operator: String,
-    ignoreCase: Boolean,
-    ignoreAccent: Boolean
-  ): Query = js.native
-  def search(searchKey: js.Any, fieldNames: js.Any, operator: String, ignoreCase: Unit, ignoreAccent: Boolean): Query = js.native
-  def search(searchKey: js.Any, fieldNames: js.Any, operator: Unit, ignoreCase: Boolean): Query = js.native
-  def search(searchKey: js.Any, fieldNames: js.Any, operator: Unit, ignoreCase: Boolean, ignoreAccent: Boolean): Query = js.native
-  def search(searchKey: js.Any, fieldNames: js.Any, operator: Unit, ignoreCase: Unit, ignoreAccent: Boolean): Query = js.native
-  def search(searchKey: js.Any, fieldNames: Unit, operator: String): Query = js.native
-  def search(searchKey: js.Any, fieldNames: Unit, operator: String, ignoreCase: Boolean): Query = js.native
-  def search(searchKey: js.Any, fieldNames: Unit, operator: String, ignoreCase: Boolean, ignoreAccent: Boolean): Query = js.native
-  def search(searchKey: js.Any, fieldNames: Unit, operator: String, ignoreCase: Unit, ignoreAccent: Boolean): Query = js.native
-  def search(searchKey: js.Any, fieldNames: Unit, operator: Unit, ignoreCase: Boolean): Query = js.native
-  def search(searchKey: js.Any, fieldNames: Unit, operator: Unit, ignoreCase: Boolean, ignoreAccent: Boolean): Query = js.native
-  def search(searchKey: js.Any, fieldNames: Unit, operator: Unit, ignoreCase: Unit, ignoreAccent: Boolean): Query = js.native
+  def search(searchKey: Any): Query = js.native
+  def search(searchKey: Any, fieldNames: Any): Query = js.native
+  def search(searchKey: Any, fieldNames: Any, operator: String): Query = js.native
+  def search(searchKey: Any, fieldNames: Any, operator: String, ignoreCase: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Any, operator: String, ignoreCase: Boolean, ignoreAccent: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Any, operator: String, ignoreCase: Unit, ignoreAccent: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Any, operator: Unit, ignoreCase: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Any, operator: Unit, ignoreCase: Boolean, ignoreAccent: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Any, operator: Unit, ignoreCase: Unit, ignoreAccent: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Unit, operator: String): Query = js.native
+  def search(searchKey: Any, fieldNames: Unit, operator: String, ignoreCase: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Unit, operator: String, ignoreCase: Boolean, ignoreAccent: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Unit, operator: String, ignoreCase: Unit, ignoreAccent: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Unit, operator: Unit, ignoreCase: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Unit, operator: Unit, ignoreCase: Boolean, ignoreAccent: Boolean): Query = js.native
+  def search(searchKey: Any, fieldNames: Unit, operator: Unit, ignoreCase: Unit, ignoreAccent: Boolean): Query = js.native
   
-  def select(fieldNames: js.Any): Query = js.native
+  def select(fieldNames: Any): Query = js.native
   
   def skip(nos: Double): Query = js.native
   
@@ -72,21 +66,15 @@ trait Query extends StObject {
   
   def `using`(dataManager: DataManager): Query = js.native
   
-  def where(fieldName: String, operator: FilterOperators, value: js.Any): Query = js.native
-  def where(fieldName: String, operator: FilterOperators, value: js.Any, ignoreCase: Boolean): Query = js.native
+  def where(fieldName: String, operator: FilterOperators, value: Any): Query = js.native
+  def where(fieldName: String, operator: FilterOperators, value: Any, ignoreCase: Boolean): Query = js.native
   def where(
     fieldName: String,
     operator: FilterOperators,
-    value: js.Any,
+    value: Any,
     ignoreCase: Boolean,
     ignoreAccent: Boolean
   ): Query = js.native
-  def where(
-    fieldName: String,
-    operator: FilterOperators,
-    value: js.Any,
-    ignoreCase: Unit,
-    ignoreAccent: Boolean
-  ): Query = js.native
+  def where(fieldName: String, operator: FilterOperators, value: Any, ignoreCase: Unit, ignoreAccent: Boolean): Query = js.native
   def where(predicate: Predicate): Query = js.native
 }

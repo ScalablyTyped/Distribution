@@ -46,7 +46,7 @@ object anon {
       
       inline def setEvents(value: EventSubscriptionType | js.Array[EventSubscriptionType]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: EventSubscriptionType*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: EventSubscriptionType*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setListener(value: Event => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     }
@@ -74,7 +74,7 @@ object anon {
         value: typings.sipml.SIPml.Stack.EventSubscriptionType | js.Array[typings.sipml.SIPml.Stack.EventSubscriptionType]
       ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: typings.sipml.SIPml.Stack.EventSubscriptionType*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: typings.sipml.SIPml.Stack.EventSubscriptionType*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setListener(value: typings.sipml.SIPml.Stack.Event => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     }

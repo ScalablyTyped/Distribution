@@ -13,7 +13,7 @@ trait ILruCache
     * @returns Ext.util.HashMap this
     */
   @JSName("clear")
-  var clear_ILruCache: js.UndefOr[js.Function1[/* initial */ js.UndefOr[js.Any], IHashMap]] = js.undefined
+  var clear_ILruCache: js.UndefOr[js.Function1[/* initial */ js.UndefOr[Any], IHashMap]] = js.undefined
   
   /** [Method] Performs a shallow copy on this haLruCachesh
     * @returns Ext.util.HashMap The new hash object.
@@ -30,8 +30,8 @@ trait ILruCache
   @JSName("each")
   var each_ILruCache: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* reverse */ js.UndefOr[Boolean], 
       this.type
     ]
@@ -42,7 +42,7 @@ trait ILruCache
     * @returns Object The value at that key. If it doesn't exist, undefined is returned.
     */
   @JSName("get")
-  var get_ILruCache: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var get_ILruCache: js.UndefOr[js.Function1[/* key */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (Number) */
   var maxSize: js.UndefOr[Double] = js.undefined
@@ -59,7 +59,7 @@ object ILruCache {
   
   extension [Self <: ILruCache](x: Self) {
     
-    inline def setClear(value: /* initial */ js.UndefOr[js.Any] => IHashMap): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: /* initial */ js.UndefOr[Any] => IHashMap): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
@@ -68,12 +68,12 @@ object ILruCache {
     inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     inline def setEach(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* reverse */ js.UndefOr[Boolean]) => ILruCache
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* reverse */ js.UndefOr[Boolean]) => ILruCache
     ): Self = StObject.set(x, "each", js.Any.fromFunction3(value))
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    inline def setGet(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* key */ js.UndefOr[Any] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     

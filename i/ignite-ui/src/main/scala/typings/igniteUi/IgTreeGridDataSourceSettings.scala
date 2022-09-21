@@ -10,7 +10,7 @@ trait IgTreeGridDataSourceSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * The name of the property that keeps track of the level in the hierarchy.Defaults to __ig_options.dataLevel.
@@ -35,14 +35,14 @@ trait IgTreeGridDataSourceSettings
     * The name of the property that keeps track of the level in the hierarchy.Defaults to __ig_options.dataLevel.
     *
     */
-  var propertyDataLevel: js.UndefOr[js.Any] = js.undefined
+  var propertyDataLevel: js.UndefOr[Any] = js.undefined
   
   /**
     * *** IMPORTANT DEPRECATED *** Use the expandedKey option instead.
     * The name of the property that keeps track of the expansion state of a data item. Defaults to __ig_options.expanded.
     *
     */
-  var propertyExpanded: js.UndefOr[js.Any] = js.undefined
+  var propertyExpanded: js.UndefOr[Any] = js.undefined
 }
 object IgTreeGridDataSourceSettings {
   
@@ -65,11 +65,11 @@ object IgTreeGridDataSourceSettings {
     
     inline def setInitialFlatDataViewUndefined: Self = StObject.set(x, "initialFlatDataView", js.undefined)
     
-    inline def setPropertyDataLevel(value: js.Any): Self = StObject.set(x, "propertyDataLevel", value.asInstanceOf[js.Any])
+    inline def setPropertyDataLevel(value: Any): Self = StObject.set(x, "propertyDataLevel", value.asInstanceOf[js.Any])
     
     inline def setPropertyDataLevelUndefined: Self = StObject.set(x, "propertyDataLevel", js.undefined)
     
-    inline def setPropertyExpanded(value: js.Any): Self = StObject.set(x, "propertyExpanded", value.asInstanceOf[js.Any])
+    inline def setPropertyExpanded(value: Any): Self = StObject.set(x, "propertyExpanded", value.asInstanceOf[js.Any])
     
     inline def setPropertyExpandedUndefined: Self = StObject.set(x, "propertyExpanded", js.undefined)
   }

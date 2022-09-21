@@ -1,7 +1,7 @@
 
 # Scala.js typings for eth-sig-util
 
-Typings are for version 2.1
+Typings are for version 3.0.1
 
 ## Library description:
 A few useful functions for signing ethereum data
@@ -10,10 +10,10 @@ A few useful functions for signing ethereum data
 | ------------------ | :-------------: |
 | Full name          | eth-sig-util |
 | Keywords           | ethereum, signature |
-| # releases         | 14 |
-| # dependents       | 224 |
-| # downloads        | 3175817 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1914476.3333333333 |
+| # stars            | 425.0 |
 
 ## Links
 - [Homepage](https://github.com/MetaMask/eth-sig-util#readme)
@@ -24,7 +24,7 @@ A few useful functions for signing ethereum data
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

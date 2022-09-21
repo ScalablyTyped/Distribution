@@ -45,7 +45,7 @@ object global {
     /**
       * Creates an instance of Action.
       */
-    class Action ()
+    open class Action ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
       def this(hasNameTitleProperties: Name) = this()
@@ -159,7 +159,7 @@ object global {
     /**
       * Initialization method.
       */
-    class BaseNode ()
+    open class BaseNode ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
       def this(hasCategoryNameTitleDescriptionProperties: Category) = this()
@@ -312,7 +312,7 @@ object global {
     /**
       * Initialization method.
       */
-    class BehaviorTree ()
+    open class BehaviorTree ()
       extends StObject
          with typings.behavior3.b3.BehaviorTree
     
@@ -357,7 +357,7 @@ object global {
     /**
       * Initialization method.
       */
-    class Blackboard ()
+    open class Blackboard ()
       extends StObject
          with typings.behavior3.b3.Blackboard {
       
@@ -371,7 +371,7 @@ object global {
         *
         */
       /* CompleteClass */
-      override def _getMemory(treeScope: String, nodeScope: String): js.Any = js.native
+      override def _getMemory(treeScope: String, nodeScope: String): Any = js.native
       
       /**
         * Internal method to retrieve the node context memory, given the tree
@@ -379,7 +379,7 @@ object global {
         *
         */
       /* CompleteClass */
-      override def _getNodeMemory(treeMemory: String, nodeScope: String): js.Any = js.native
+      override def _getNodeMemory(treeMemory: String, nodeScope: String): Any = js.native
       
       /**
         * Internal method to retrieve the tree context memory. If the memory does
@@ -387,7 +387,7 @@ object global {
         *
         */
       /* CompleteClass */
-      override def _getTreeMemory(treeScope: String): js.Any = js.native
+      override def _getTreeMemory(treeScope: String): Any = js.native
       
       /**
         * Retrieves a value in the blackboard. If treeScope and nodeScope are
@@ -400,7 +400,7 @@ object global {
         *
         */
       /* CompleteClass */
-      override def get(key: String, treeScope: String, nodeScope: String): js.Any = js.native
+      override def get(key: String, treeScope: String, nodeScope: String): Any = js.native
       
       /**
         * Stores a value in the blackboard. If treeScope and nodeScope are
@@ -465,7 +465,7 @@ object global {
     /**
       * Creates an instance of Composite.
       */
-    class Composite ()
+    open class Composite ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
       def this(hasChildrenNameTitleProperties: Children) = this()
@@ -565,7 +565,7 @@ object global {
     /**
       * Creates an instance of Condition.
       */
-    class Condition ()
+    open class Condition ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
       def this(hasNameTitleProperties: Name) = this()
@@ -700,7 +700,7 @@ object global {
     /**
       * Creates an instance of Decorator.
       */
-    class Decorator ()
+    open class Decorator ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
       def this(hasChildNameTitleProperties: Child) = this()
@@ -803,7 +803,7 @@ object global {
     /**
       * Creates an instance of Error.
       */
-    class Error ()
+    open class Error ()
       extends StObject
          with typings.behavior3.b3.Error {
       
@@ -905,7 +905,7 @@ object global {
     /**
       * Creates an instance of Failer.
       */
-    class Failer ()
+    open class Failer ()
       extends StObject
          with typings.behavior3.b3.Failer {
       
@@ -1004,7 +1004,7 @@ object global {
     /**
       * Creates an instance of Inverter.
       */
-    class Inverter ()
+    open class Inverter ()
       extends StObject
          with typings.behavior3.b3.Inverter {
       def this(hasChild: `1`) = this()
@@ -1111,7 +1111,7 @@ object global {
       * - **child** (*BaseNode*) The child node.
       *
       */
-    class Limiter ()
+    open class Limiter ()
       extends StObject
          with typings.behavior3.b3.Limiter {
       def this(hasChildMaxLoop: MaxLoop) = this()
@@ -1217,7 +1217,7 @@ object global {
       * - **child** (*BaseNode*) The child node.
       *
       */
-    class MaxTime ()
+    open class MaxTime ()
       extends StObject
          with typings.behavior3.b3.MaxTime {
       def this(hasMaxTimeChild: typings.behavior3.anon.MaxTime) = this()
@@ -1319,7 +1319,7 @@ object global {
     /**
       * Creates an instance of MemPriority.
       */
-    class MemPriority ()
+    open class MemPriority ()
       extends StObject
          with typings.behavior3.b3.MemPriority {
       def this(hasChildren: `0`) = this()
@@ -1421,7 +1421,7 @@ object global {
     /**
       * Creates an instance of MemSequence.
       */
-    class MemSequence ()
+    open class MemSequence ()
       extends StObject
          with typings.behavior3.b3.MemSequence {
       def this(hasChildren: `0`) = this()
@@ -1522,7 +1522,7 @@ object global {
     /**
       * Creates an instance of Priority.
       */
-    class Priority ()
+    open class Priority ()
       extends StObject
          with typings.behavior3.b3.Priority {
       def this(hasChildren: `0`) = this()
@@ -1631,7 +1631,7 @@ object global {
       * - **child** (*BaseNode*) The child node.
       *
       */
-    class RepeatUntilFailure ()
+    open class RepeatUntilFailure ()
       extends StObject
          with typings.behavior3.b3.RepeatUntilFailure {
       def this(hasMaxLoopChild: ChildMaxLoop) = this()
@@ -1736,7 +1736,7 @@ object global {
       * - **child** (*BaseNode*) The child node.
       *
       */
-    class RepeatUntilSuccess ()
+    open class RepeatUntilSuccess ()
       extends StObject
          with typings.behavior3.b3.RepeatUntilSuccess {
       def this(hasMaxLoopChild: ChildMaxLoop) = this()
@@ -1841,7 +1841,7 @@ object global {
       * - **child** (*BaseNode*) The child node.
       *
       */
-    class Repeater ()
+    open class Repeater ()
       extends StObject
          with typings.behavior3.b3.Repeater {
       def this(hasMaxLoopChild: ChildMaxLoop) = this()
@@ -1940,7 +1940,7 @@ object global {
     /**
       * Creates an instance of Runner.
       */
-    class Runner ()
+    open class Runner ()
       extends StObject
          with typings.behavior3.b3.Runner {
       
@@ -2044,7 +2044,7 @@ object global {
     /**
       * Creates an instance of Sequence.
       */
-    class Sequence ()
+    open class Sequence ()
       extends StObject
          with typings.behavior3.b3.Sequence {
       def this(hasChildren: `0`) = this()
@@ -2143,7 +2143,7 @@ object global {
     /**
       * Creates an instance of Succeeder.
       */
-    class Succeeder ()
+    open class Succeeder ()
       extends StObject
          with typings.behavior3.b3.Succeeder {
       
@@ -2252,7 +2252,7 @@ object global {
     /**
       * Initialization method.
       */
-    class Tick ()
+    open class Tick ()
       extends StObject
          with typings.behavior3.b3.Tick {
       
@@ -2260,31 +2260,31 @@ object global {
         * Callback when closing a node (called by BaseNode).
         */
       /* CompleteClass */
-      override def _closeNode(node: js.Any): Unit = js.native
+      override def _closeNode(node: Any): Unit = js.native
       
       /**
         * Called when entering a node (called by BaseNode).
         */
       /* CompleteClass */
-      override def _enterNode(node: js.Any): Unit = js.native
+      override def _enterNode(node: Any): Unit = js.native
       
       /**
         * Callback when exiting a node (called by BaseNode).
         */
       /* CompleteClass */
-      override def _exitNode(node: js.Any): Unit = js.native
+      override def _exitNode(node: Any): Unit = js.native
       
       /**
         * Callback when opening a node (called by BaseNode).
         */
       /* CompleteClass */
-      override def _openNode(node: js.Any): Unit = js.native
+      override def _openNode(node: Any): Unit = js.native
       
       /**
         * Callback when ticking a node (called by BaseNode).
         */
       /* CompleteClass */
-      override def _tickNode(node: js.Any): Unit = js.native
+      override def _tickNode(node: Any): Unit = js.native
     }
     
     @JSGlobal("b3.VERSION")
@@ -2300,7 +2300,7 @@ object global {
     /**
       * Creates an instance of Wait.
       */
-    class Wait ()
+    open class Wait ()
       extends StObject
          with typings.behavior3.b3.Wait {
       def this(hasMilliseconds: Milliseconds) = this()

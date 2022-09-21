@@ -23,6 +23,6 @@ object RollupWatchOptions {
     
     inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    inline def setOutputVarargs(value: OutputOptions*): Self = StObject.set(x, "output", js.Array(value :_*))
+    inline def setOutputVarargs(value: OutputOptions*): Self = StObject.set(x, "output", js.Array(value*))
   }
 }

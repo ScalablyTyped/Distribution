@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/line-ripple" : "8.0.0"
+      "@material/line-ripple" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/line-ripple" : "8.0.0"
+      "@material/line-ripple" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListStepsOutput extends StObject {
   
   /**
-    * The pagination token that indicates the next set of results to retrieve.
+    * The maximum number of steps that a single ListSteps action returns is 50. To return a longer list of steps, use multiple ListSteps actions along with the Marker parameter, which is a pagination token that indicates the next set of results to retrieve.
     */
   var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
   
@@ -33,6 +33,6 @@ object ListStepsOutput {
     
     inline def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
-    inline def setStepsVarargs(value: StepSummary*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: StepSummary*): Self = StObject.set(x, "Steps", js.Array(value*))
   }
 }

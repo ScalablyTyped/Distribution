@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "LinkModel")
 @js.native
-class LinkModel[T /* <: LinkModelListener */] ()
+open class LinkModel[T /* <: LinkModelListener */] ()
   extends typings.stormReactDiagrams.linkModelMod.LinkModel[T] {
   def this(linkType: String) = this()
   def this(linkType: String, id: String) = this()

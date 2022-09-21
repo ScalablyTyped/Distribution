@@ -21,7 +21,7 @@ trait TreeDataProvider[T] extends StObject {
     * Optional method to return the parent of `element`.
     * Return `null` or `undefined` if `element` is a child of root.
     *
-    * **NOTE:** This method should be implemented in order to access [reveal](#TreeView.reveal) API.
+    * **NOTE:** This method should be implemented in order to access {@link TreeView.reveal reveal} API.
     *
     * @param element The element for which the parent has to be returned.
     * @return Parent of `element`.
@@ -29,10 +29,10 @@ trait TreeDataProvider[T] extends StObject {
   var getParent: js.UndefOr[js.Function1[/* element */ T, ProviderResult[T]]] = js.native
   
   /**
-    * Get [TreeItem](#TreeItem) representation of the `element`
+    * Get {@link TreeItem} representation of the `element`
     *
-    * @param element The element for which [TreeItem](#TreeItem) representation is asked for.
-    * @return [TreeItem](#TreeItem) representation of the element
+    * @param element The element for which {@link TreeItem} representation is asked for.
+    * @return TreeItem representation of the element.
     */
   def getTreeItem(element: T): TreeItem | Thenable[TreeItem] = js.native
   
@@ -41,5 +41,35 @@ trait TreeDataProvider[T] extends StObject {
     * This will trigger the view to update the changed element/root and its children recursively (if shown).
     * To signal that root has changed, do not pass any argument or pass `undefined` or `null`.
     */
-  var onDidChangeTreeData: js.UndefOr[Event[js.UndefOr[T | Null | Unit]]] = js.native
+  var onDidChangeTreeData: js.UndefOr[Event[js.UndefOr[T | js.Array[T] | Null | Unit]]] = js.native
+  
+  /**
+    * Called on hover to resolve the {@link TreeItem.tooltip TreeItem} property if it is undefined.
+    * Called on tree item click/open to resolve the {@link TreeItem.command TreeItem} property if it is undefined.
+    * Only properties that were undefined can be resolved in `resolveTreeItem`.
+    * Functionality may be expanded later to include being called to resolve other missing
+    * properties on selection and/or on open.
+    *
+    * Will only ever be called once per TreeItem.
+    *
+    * onDidChangeTreeData should not be triggered from within resolveTreeItem.
+    *
+    * *Note* that this function is called when tree items are already showing in the UI.
+    * Because of that, no property that changes the presentation (label, description, etc.)
+    * can be changed.
+    *
+    * @param item Undefined properties of `item` should be set then `item` should be returned.
+    * @param element The object associated with the TreeItem.
+    * @param token A cancellation token.
+    * @return The resolved tree item or a thenable that resolves to such. It is OK to return the given
+    * `item`. When no result is returned, the given `item` will be used.
+    */
+  var resolveTreeItem: js.UndefOr[
+    js.Function3[
+      /* item */ TreeItem, 
+      /* element */ T, 
+      /* token */ CancellationToken, 
+      ProviderResult[TreeItem]
+    ]
+  ] = js.native
 }

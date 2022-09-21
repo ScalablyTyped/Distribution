@@ -35,7 +35,7 @@ object XSetSpellAlternatives {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setAlternatives: SeqEquiv[String] => Unit,
     setFailureType: Double => Unit

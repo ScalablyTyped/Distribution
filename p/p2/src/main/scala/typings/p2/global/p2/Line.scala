@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Line")
 @js.native
-class Line ()
+open class Line ()
   extends typings.p2.mod.Line {
   def this(options: LineOptions) = this()
 }

@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v1beta1
-import typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1.Options
-import typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1.Proximitybeacon
+import typings.googleapis.fcmV1Mod.fcmV1.Fcm
+import typings.googleapis.fcmV1Mod.fcmV1.Options
+import typings.googleapis.googleapisStrings.v1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn105 extends StObject {
   
-  def apply(options: Options): Proximitybeacon = js.native
-  def apply(version: v1beta1): Proximitybeacon = js.native
+  def apply(options: Options): Fcm = js.native
+  def apply(version: v1): Fcm = js.native
 }

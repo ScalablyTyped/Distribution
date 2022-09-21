@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-root-path
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a path is the root path. Example: `/` or `C:\`
@@ -9,16 +9,13 @@ Check if a path is the root path. Example: `/` or `C:\`
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-root-path |
-| Keywords           | root, path, dir, directory, top, level, absolute, check, detect, is |
+| Keywords           | root, path, directory, top, level, absolute, check, detect, is |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 154 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 26.0 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/is-root-path#readme)
-- [Bugs](https://github.com/sindresorhus/is-root-path/issues)
-- [Repository](https://github.com/sindresorhus/is-root-path)
 - [Npm](https://www.npmjs.com/package/is-root-path)
     
 

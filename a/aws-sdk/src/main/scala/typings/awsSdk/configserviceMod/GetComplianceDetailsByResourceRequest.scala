@@ -17,12 +17,12 @@ trait GetComplianceDetailsByResourceRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS resource for which you want compliance information.
+    * The ID of the Amazon Web Services resource for which you want compliance information.
     */
   var ResourceId: BaseResourceId
   
   /**
-    * The type of the AWS resource for which you want compliance information.
+    * The type of the Amazon Web Services resource for which you want compliance information.
     */
   var ResourceType: StringWithCharLimit256
 }
@@ -39,7 +39,7 @@ object GetComplianceDetailsByResourceRequest {
     
     inline def setComplianceTypesUndefined: Self = StObject.set(x, "ComplianceTypes", js.undefined)
     
-    inline def setComplianceTypesVarargs(value: ComplianceType*): Self = StObject.set(x, "ComplianceTypes", js.Array(value :_*))
+    inline def setComplianceTypesVarargs(value: ComplianceType*): Self = StObject.set(x, "ComplianceTypes", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

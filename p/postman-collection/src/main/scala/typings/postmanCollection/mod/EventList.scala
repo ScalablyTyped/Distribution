@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "EventList")
 @js.native
-class EventList protected () extends PropertyList[Event] {
-  def this(parent: js.Any, populate: js.Array[Event]) = this()
+open class EventList protected () extends PropertyList[Event] {
+  def this(parent: Any, populate: js.Array[Event]) = this()
   
   def listeners(name: String): js.Array[Event] = js.native
   
@@ -20,5 +20,5 @@ object EventList {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isEventList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEventList(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

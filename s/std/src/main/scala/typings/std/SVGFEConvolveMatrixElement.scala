@@ -11,43 +11,57 @@ trait SVGFEConvolveMatrixElement
      with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
   
+  /* standard dom */
   val SVG_EDGEMODE_DUPLICATE: Double = js.native
   
+  /* standard dom */
   val SVG_EDGEMODE_NONE: Double = js.native
   
+  /* standard dom */
   val SVG_EDGEMODE_UNKNOWN: Double = js.native
   
+  /* standard dom */
   val SVG_EDGEMODE_WRAP: Double = js.native
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val bias: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val divisor: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val edgeMode: SVGAnimatedEnumeration = js.native
   
+  /* standard dom */
   val in1: SVGAnimatedString = js.native
   
+  /* standard dom */
   val kernelMatrix: SVGAnimatedNumberList = js.native
   
+  /* standard dom */
   val kernelUnitLengthX: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val kernelUnitLengthY: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val orderX: SVGAnimatedInteger = js.native
   
+  /* standard dom */
   val orderY: SVGAnimatedInteger = js.native
   
+  /* standard dom */
   val preserveAlpha: SVGAnimatedBoolean = js.native
   
   /* InferMemberOverrides */
@@ -61,7 +75,9 @@ trait SVGFEConvolveMatrixElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val targetX: SVGAnimatedInteger = js.native
   
+  /* standard dom */
   val targetY: SVGAnimatedInteger = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for url-join
 
-Typings are for version 4.0
+Typings are for version 5.0.0
 
 ## Library description:
 Join urls and normalize as in path.join.
@@ -10,10 +10,10 @@ Join urls and normalize as in path.join.
 | ------------------ | :-------------: |
 | Full name          | url-join |
 | Keywords           | url, join |
-| # releases         | 2 |
-| # dependents       | 1256 |
-| # downloads        | 155052236 |
-| # stars            | 17 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9293214333333332E7 |
+| # stars            | 295.0 |
 
 ## Links
 - [Homepage](https://github.com/jfromaniello/url-join#readme)
@@ -24,7 +24,7 @@ Join urls and normalize as in path.join.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

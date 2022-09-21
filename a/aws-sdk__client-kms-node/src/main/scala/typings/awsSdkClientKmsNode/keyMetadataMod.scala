@@ -8,5 +8,5 @@ object keyMetadataMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/_KeyMetadata", "_KeyMetadata")
   @js.native
-  val KeyMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val KeyMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

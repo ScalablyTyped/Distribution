@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WatchExchangeTradeResponse extends StObject {
   
+  // "0.01"
   var error: js.UndefOr[String] = js.undefined
   
   var rate: js.UndefOr[Double] = js.undefined

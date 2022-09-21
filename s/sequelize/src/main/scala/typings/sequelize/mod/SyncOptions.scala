@@ -1,6 +1,5 @@
 package typings.sequelize.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ trait SyncOptions extends StObject {
     * Match a regex against the database name before syncing, a safety check for cases where force: true is
     * used in tests but not live code
     */
-  var `match`: js.UndefOr[RegExp] = js.undefined
+  var `match`: js.UndefOr[js.RegExp] = js.undefined
   
   /**
     * The schema that the tables should be created in. This can be overriden for each table in sequelize.define
@@ -74,7 +73,7 @@ object SyncOptions {
     
     inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: js.RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     

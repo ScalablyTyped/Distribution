@@ -32,7 +32,7 @@ object ObjectDisplayOptions {
     
     inline def setMetalinesUndefined: Self = StObject.set(x, "metalines", js.undefined)
     
-    inline def setMetalinesVarargs(value: Metaline*): Self = StObject.set(x, "metalines", js.Array(value :_*))
+    inline def setMetalinesVarargs(value: Metaline*): Self = StObject.set(x, "metalines", js.Array(value*))
     
     inline def setObjectDisplayLabel(value: String): Self = StObject.set(x, "objectDisplayLabel", value.asInstanceOf[js.Any])
     

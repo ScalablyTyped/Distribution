@@ -33,7 +33,7 @@ object XRemoteContentProviderActivator {
   inline def apply(
     acquire: () => Unit,
     activateRemoteContentProviders: () => XContentProviderManager,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XRemoteContentProviderActivator = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), activateRemoteContentProviders = js.Any.fromFunction0(activateRemoteContentProviders), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defaults to server_error.
   * @param status Defaults to 500 if code is not specified.
   */
-class TokenError () extends OAuth2Error {
+open class TokenError () extends OAuth2Error {
   def this(message: String) = this()
   def this(message: String, code: String) = this()
   def this(message: String, code: TokenErrorCode) = this()

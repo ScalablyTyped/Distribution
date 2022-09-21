@@ -1,28 +1,29 @@
 package typings.firebaseFirestore
 
-import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/test/util/promise", JSImport.Namespace)
-@js.native
-object utilPromiseMod extends js.Object {
+object utilPromiseMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/test/util/promise", "Deferred")
   @js.native
-  class Deferred[R] () extends js.Object {
+  open class Deferred[R] () extends StObject {
+    
     var promise: js.Promise[R] = js.native
+    
+    def reject(): Unit = js.native
+    def reject(reason: js.Error): Unit = js.native
     @JSName("reject")
     var reject_Original: Rejecter = js.native
-    @JSName("resolve")
-    var resolve_Original: Resolver[R] = js.native
-    def reject(): Unit = js.native
-    def reject(reason: Error): Unit = js.native
-    def resolve(): Unit = js.native
+    
     def resolve(value: R): Unit = js.native
     def resolve(value: js.Promise[R]): Unit = js.native
+    @JSName("resolve")
+    var resolve_Original: Resolver[R] = js.native
   }
   
-  type Rejecter = js.Function1[/* reason */ js.UndefOr[Error], Unit]
-  type Resolver[R] = js.Function1[/* value */ js.UndefOr[R | js.Promise[R]], Unit]
+  type Rejecter = js.Function1[/* reason */ js.UndefOr[js.Error], Unit]
+  
+  type Resolver[R] = js.Function1[/* value */ R | js.Promise[R], Unit]
 }
-

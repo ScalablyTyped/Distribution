@@ -18,7 +18,7 @@ object badgePropsTypeMod {
     
     var size: js.UndefOr[large | small] = js.undefined
     
-    var text: js.UndefOr[js.Any] = js.undefined
+    var text: js.UndefOr[Any] = js.undefined
   }
   object BadgePropsTypes {
     
@@ -45,7 +45,7 @@ object badgePropsTypeMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }

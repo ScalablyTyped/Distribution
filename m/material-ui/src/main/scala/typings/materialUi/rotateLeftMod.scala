@@ -10,10 +10,10 @@ object rotateLeftMod {
   
   @JSImport("material-ui/svg-icons/image/rotate-left", JSImport.Default)
   @js.native
-  class default () extends ImageRotateLeft
+  open class default () extends ImageRotateLeft
   
   @JSImport("material-ui/svg-icons/image/rotate-left", "ImageRotateLeft")
   @js.native
-  class ImageRotateLeft ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageRotateLeft ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

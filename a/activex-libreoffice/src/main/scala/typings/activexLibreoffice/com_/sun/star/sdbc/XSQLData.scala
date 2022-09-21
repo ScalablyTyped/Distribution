@@ -71,7 +71,7 @@ object XSQLData {
     SQLTypeName: String,
     acquire: () => Unit,
     getSQLTypeName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readSQL: (XSQLInput, String) => Unit,
     release: () => Unit,
     writeSQL: XSQLOutput => Unit

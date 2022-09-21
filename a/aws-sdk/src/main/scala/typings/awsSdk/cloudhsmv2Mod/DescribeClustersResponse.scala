@@ -29,7 +29,7 @@ object DescribeClustersResponse {
     
     inline def setClustersUndefined: Self = StObject.set(x, "Clusters", js.undefined)
     
-    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "Clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "Clusters", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

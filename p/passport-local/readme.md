@@ -10,10 +10,10 @@ Local username and password authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-local |
 | Keywords           | passport, local, auth, authn, authentication, username, password |
-| # releases         | 0 |
-| # dependents       | 1208 |
-| # downloads        | 17526451 |
-| # stars            | 108 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2563729.3333333335 |
+| # stars            | 2621.0 |
 
 ## Links
 - [Homepage](https://github.com/jaredhanson/passport-local#readme)

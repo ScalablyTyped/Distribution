@@ -9,10 +9,10 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | react-router-navigation-core |
 | Keywords           | web, react-native, ios, android, router, navigation, navigator |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 190707 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 332.0 |
+| # stars            | 500.0 |
 
 ## Links
 - [Homepage](https://github.com/LeoLeBras/react-router-navigation#readme)

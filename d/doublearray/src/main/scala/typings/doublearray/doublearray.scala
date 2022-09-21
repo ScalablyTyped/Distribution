@@ -1,12 +1,6 @@
 package typings.doublearray
 
 import typings.doublearray.anon.All
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,29 +16,29 @@ object doublearray {
     
     def getBase(): Double = js.native
     
-    def getBaseBuffer(): js.Any = js.native
+    def getBaseBuffer(): Any = js.native
     
     def getCheck(): Double = js.native
     
     // Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array
-    def getCheckBuffer(): js.Any = js.native
+    def getCheckBuffer(): Any = js.native
     
     def getFirstUnusedNode(): Double = js.native
     
-    def loadBaseBuffer(base_buffer: Int16Array): BaseAndCheck = js.native
-    def loadBaseBuffer(base_buffer: Int32Array): BaseAndCheck = js.native
+    def loadBaseBuffer(base_buffer: js.typedarray.Int16Array): BaseAndCheck = js.native
+    def loadBaseBuffer(base_buffer: js.typedarray.Int32Array): BaseAndCheck = js.native
     // Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array
-    def loadBaseBuffer(base_buffer: Int8Array): BaseAndCheck = js.native
-    def loadBaseBuffer(base_buffer: Uint16Array): BaseAndCheck = js.native
-    def loadBaseBuffer(base_buffer: Uint32Array): BaseAndCheck = js.native
-    def loadBaseBuffer(base_buffer: Uint8Array): BaseAndCheck = js.native
+    def loadBaseBuffer(base_buffer: js.typedarray.Int8Array): BaseAndCheck = js.native
+    def loadBaseBuffer(base_buffer: js.typedarray.Uint16Array): BaseAndCheck = js.native
+    def loadBaseBuffer(base_buffer: js.typedarray.Uint32Array): BaseAndCheck = js.native
+    def loadBaseBuffer(base_buffer: js.typedarray.Uint8Array): BaseAndCheck = js.native
     
-    def loadCheckBuffer(check_buffer: Int16Array): BaseAndCheck = js.native
-    def loadCheckBuffer(check_buffer: Int32Array): BaseAndCheck = js.native
-    def loadCheckBuffer(check_buffer: Int8Array): BaseAndCheck = js.native
-    def loadCheckBuffer(check_buffer: Uint16Array): BaseAndCheck = js.native
-    def loadCheckBuffer(check_buffer: Uint32Array): BaseAndCheck = js.native
-    def loadCheckBuffer(check_buffer: Uint8Array): BaseAndCheck = js.native
+    def loadCheckBuffer(check_buffer: js.typedarray.Int16Array): BaseAndCheck = js.native
+    def loadCheckBuffer(check_buffer: js.typedarray.Int32Array): BaseAndCheck = js.native
+    def loadCheckBuffer(check_buffer: js.typedarray.Int8Array): BaseAndCheck = js.native
+    def loadCheckBuffer(check_buffer: js.typedarray.Uint16Array): BaseAndCheck = js.native
+    def loadCheckBuffer(check_buffer: js.typedarray.Uint32Array): BaseAndCheck = js.native
+    def loadCheckBuffer(check_buffer: js.typedarray.Uint8Array): BaseAndCheck = js.native
     
     def setBase(index: Double, base_value: Double): Unit = js.native
     
@@ -123,15 +117,15 @@ object doublearray {
     def build(keys: js.Array[KeyValue], sorted: Boolean): DoubleArray = js.native
     def build(keys: Unit, sorted: Boolean): DoubleArray = js.native
     
-    def findAllocatableBase(children_info: Int32Array): Double = js.native
+    def findAllocatableBase(children_info: js.typedarray.Int32Array): Double = js.native
     
-    def getChildrenInfo(position: Double, start: Double, length: Double): Int32Array = js.native
+    def getChildrenInfo(position: Double, start: Double, length: Double): js.typedarray.Int32Array = js.native
     
     def isUnusedNode(index: Double): Boolean = js.native
     
     var keys: js.Array[KeyValue] = js.native
     
-    def setBC(parent_id: Double, children_info: Int32Array, _base: Double): Unit = js.native
+    def setBC(parent_id: Double, children_info: js.typedarray.Int32Array, _base: Double): Unit = js.native
   }
   
   trait KeyValue extends StObject {

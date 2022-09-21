@@ -22,7 +22,7 @@ object distanceMeasurement2DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with DistanceMeasurement2D {
     def this(properties: DistanceMeasurement2DProperties) = this()

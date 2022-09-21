@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_File")
 @js.native
-class ClassFile ()
+open class ClassFile ()
   extends StObject
      with typings.fibjs.ClassFile

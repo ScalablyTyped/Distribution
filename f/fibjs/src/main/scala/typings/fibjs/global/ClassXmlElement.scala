@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_XmlElement")
 @js.native
-class ClassXmlElement ()
+open class ClassXmlElement ()
   extends StObject
      with typings.fibjs.ClassXmlElement

@@ -1,6 +1,6 @@
 package typings.node.cryptoMod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.nodeStrings.pkcs1
 import typings.node.nodeStrings.pkcs8
 import typings.node.nodeStrings.sec1

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Page[D, P]
   extends StObject
-     with Component[D, P, js.Array[js.Any]] {
+     with Component[D, P, js.Array[Any]] {
   
   /**
     * 强制更新

@@ -3,210 +3,165 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 import typings.googleapis.anon.AppIcon
 import typings.googleapis.anon.Contexts
 import typings.googleapis.anon.Date
+import typings.googleapis.anon.DetectedProviderIds
 import typings.googleapis.anon.DisapprovalReasons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A creative and its classification data.
-  */
 trait SchemaCreative extends StObject {
   
   /**
-    * The HTML snippet that displays the ad when inserted in the web page. If
-    * set, videoURL, videoVastXML, and nativeAd should not be set.
+    * The HTML snippet that displays the ad when inserted in the web page. If set, videoURL, videoVastXML, and nativeAd should not be set.
     */
-  var HTMLSnippet: js.UndefOr[String] = js.undefined
+  var HTMLSnippet: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Account id.
     */
-  var accountId: js.UndefOr[Double] = js.undefined
+  var accountId: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The link to the Ad Preferences page. This is only supported for native
-    * ads.
+    * The link to the Ad Preferences page. This is only supported for native ads.
     */
-  var adChoicesDestinationUrl: js.UndefOr[String] = js.undefined
+  var adChoicesDestinationUrl: js.UndefOr[String | Null] = js.undefined
+  
+  var adTechnologyProviders: js.UndefOr[DetectedProviderIds | Null] = js.undefined
   
   /**
-    * Detected advertiser id, if any. Read-only. This field should not be set
-    * in requests.
+    * Detected advertiser id, if any. Read-only. This field should not be set in requests.
     */
-  var advertiserId: js.UndefOr[js.Array[String]] = js.undefined
+  var advertiserId: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The name of the company being advertised in the creative. The value
-    * provided must exist in the advertisers.txt file.
+    * The name of the company being advertised in the creative. A list of advertisers is provided in the advertisers.txt file.
     */
-  var advertiserName: js.UndefOr[String] = js.undefined
+  var advertiserName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The agency id for this creative.
     */
-  var agencyId: js.UndefOr[String] = js.undefined
+  var agencyId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The last upload timestamp of this creative if it was uploaded via API.
-    * Read-only. The value of this field is generated, and will be ignored for
-    * uploads. (formatted RFC 3339 timestamp).
+    * The last upload timestamp of this creative if it was uploaded via API. Read-only. The value of this field is generated, and will be ignored for uploads. (formatted RFC 3339 timestamp).
     */
-  var apiUploadTimestamp: js.UndefOr[String] = js.undefined
+  var apiUploadTimestamp: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * List of buyer selectable attributes for the ads that may be shown from
-    * this snippet. Each attribute is represented by an integer as defined in
-    * buyer-declarable-creative-attributes.txt.
+    * List of buyer selectable attributes for the ads that may be shown from this snippet. Each attribute is represented by an integer as defined in  buyer-declarable-creative-attributes.txt.
     */
-  var attribute: js.UndefOr[js.Array[Double]] = js.undefined
+  var attribute: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
     * A buyer-specific id identifying the creative in this ad.
     */
-  var buyerCreativeId: js.UndefOr[String] = js.undefined
+  var buyerCreativeId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The set of destination urls for the snippet.
     */
-  var clickThroughUrl: js.UndefOr[js.Array[String]] = js.undefined
+  var clickThroughUrl: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Shows any corrections that were applied to this creative. Read-only. This
-    * field should not be set in requests.
+    * Shows any corrections that were applied to this creative. Read-only. This field should not be set in requests.
     */
-  var corrections: js.UndefOr[js.Array[Contexts]] = js.undefined
+  var corrections: js.UndefOr[js.Array[Contexts] | Null] = js.undefined
   
   /**
-    * Creative status identity type that the creative item applies to. Ad
-    * Exchange real-time bidding is migrating to the sizeless creative
-    * verification. Originally, Ad Exchange assigned creative verification
-    * status to a unique combination of a buyer creative ID and creative
-    * dimensions. Post-migration, a single verification status will be assigned
-    * at the buyer creative ID level. This field allows to distinguish whether
-    * a given creative status applies to a unique combination of a buyer
-    * creative ID and creative dimensions, or to a buyer creative ID as a
-    * whole.
+    * Creative status identity type that the creative item applies to. Ad Exchange real-time bidding is migrating to the sizeless creative verification. Originally, Ad Exchange assigned creative verification status to a unique combination of a buyer creative ID and creative dimensions. Post-migration, a single verification status will be assigned at the buyer creative ID level. This field allows to distinguish whether a given creative status applies to a unique combination of a buyer creative ID and creative dimensions, or to a buyer creative ID as a whole.
     */
-  var creativeStatusIdentityType: js.UndefOr[String] = js.undefined
+  var creativeStatusIdentityType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Top-level deals status. Read-only. This field should not be set in
-    * requests. If disapproved, an entry for auctionType=DIRECT_DEALS (or ALL)
-    * in servingRestrictions will also exist. Note that this may be nuanced
-    * with other contextual restrictions, in which case it may be preferable to
-    * read from servingRestrictions directly.
+    * Top-level deals status. Read-only. This field should not be set in requests. If disapproved, an entry for auctionType=DIRECT_DEALS (or ALL) in servingRestrictions will also exist. Note that this may be nuanced with other contextual restrictions, in which case it may be preferable to read from servingRestrictions directly.
     */
-  var dealsStatus: js.UndefOr[String] = js.undefined
+  var dealsStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Detected domains for this creative. Read-only. This field should not be
-    * set in requests.
+    * Detected domains for this creative. Read-only. This field should not be set in requests.
     */
-  var detectedDomains: js.UndefOr[js.Array[String]] = js.undefined
+  var detectedDomains: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The filtering reasons for the creative. Read-only. This field should not
-    * be set in requests.
+    * The filtering reasons for the creative. Read-only. This field should not be set in requests.
     */
-  var filteringReasons: js.UndefOr[Date] = js.undefined
+  var filteringReasons: js.UndefOr[Date | Null] = js.undefined
   
   /**
     * Ad height.
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The set of urls to be called to record an impression.
     */
-  var impressionTrackingUrl: js.UndefOr[js.Array[String]] = js.undefined
+  var impressionTrackingUrl: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Detected languages for this creative. Read-only. This field should not be
-    * set in requests.
+    * Detected languages for this creative. Read-only. This field should not be set in requests.
     */
-  var languages: js.UndefOr[js.Array[String]] = js.undefined
+  var languages: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * If nativeAd is set, HTMLSnippet, videoVastXML, and the videoURL outside
-    * of nativeAd should not be set. (The videoURL inside nativeAd can be set.)
+    * If nativeAd is set, HTMLSnippet, videoVastXML, and the videoURL outside of nativeAd should not be set. (The videoURL inside nativeAd can be set.)
     */
-  var nativeAd: js.UndefOr[AppIcon] = js.undefined
+  var nativeAd: js.UndefOr[AppIcon | Null] = js.undefined
   
   /**
-    * Top-level open auction status. Read-only. This field should not be set in
-    * requests. If disapproved, an entry for auctionType=OPEN_AUCTION (or ALL)
-    * in servingRestrictions will also exist. Note that this may be nuanced
-    * with other contextual restrictions, in which case it may be preferable to
-    * read from ServingRestrictions directly.
+    * Top-level open auction status. Read-only. This field should not be set in requests. If disapproved, an entry for auctionType=OPEN_AUCTION (or ALL) in servingRestrictions will also exist. Note that this may be nuanced with other contextual restrictions, in which case it may be preferable to read from ServingRestrictions directly.
     */
-  var openAuctionStatus: js.UndefOr[String] = js.undefined
+  var openAuctionStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Detected product categories, if any. Each category is represented by an
-    * integer as defined in  ad-product-categories.txt. Read-only. This field
-    * should not be set in requests.
+    * Detected product categories, if any. Each category is represented by an integer as defined in  ad-product-categories.txt. Read-only. This field should not be set in requests.
     */
-  var productCategories: js.UndefOr[js.Array[Double]] = js.undefined
+  var productCategories: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
-    * All restricted categories for the ads that may be shown from this
-    * snippet. Each category is represented by an integer as defined in the
-    * ad-restricted-categories.txt.
+    * All restricted categories for the ads that may be shown from this snippet. Each category is represented by an integer as defined in the  ad-restricted-categories.txt.
     */
-  var restrictedCategories: js.UndefOr[js.Array[Double]] = js.undefined
+  var restrictedCategories: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
-    * Detected sensitive categories, if any. Each category is represented by an
-    * integer as defined in  ad-sensitive-categories.txt. Read-only. This field
-    * should not be set in requests.
+    * Detected sensitive categories, if any. Each category is represented by an integer as defined in  ad-sensitive-categories.txt. Read-only. This field should not be set in requests.
     */
-  var sensitiveCategories: js.UndefOr[js.Array[Double]] = js.undefined
+  var sensitiveCategories: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
-    * The granular status of this ad in specific contexts. A context here
-    * relates to where something ultimately serves (for example, a physical
-    * location, a platform, an HTTPS vs HTTP request, or the type of auction).
-    * Read-only. This field should not be set in requests. See the examples in
-    * the Creatives guide for more details.
+    * The granular status of this ad in specific contexts. A context here relates to where something ultimately serves (for example, a physical location, a platform, an HTTPS vs HTTP request, or the type of auction). Read-only. This field should not be set in requests. See the examples in the Creatives guide for more details.
     */
-  var servingRestrictions: js.UndefOr[js.Array[DisapprovalReasons]] = js.undefined
+  var servingRestrictions: js.UndefOr[js.Array[DisapprovalReasons] | Null] = js.undefined
   
   /**
-    * List of vendor types for the ads that may be shown from this snippet.
-    * Each vendor type is represented by an integer as defined in vendors.txt.
+    * List of vendor types for the ads that may be shown from this snippet. Each vendor type is represented by an integer as defined in vendors.txt.
     */
-  var vendorType: js.UndefOr[js.Array[Double]] = js.undefined
+  var vendorType: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
-    * The version for this creative. Read-only. This field should not be set in
-    * requests.
+    * The version for this creative. Read-only. This field should not be set in requests.
     */
-  var version: js.UndefOr[Double] = js.undefined
+  var version: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The URL to fetch a video ad. If set, HTMLSnippet, videoVastXML, and
-    * nativeAd should not be set. Note, this is different from
-    * resource.native_ad.video_url above.
+    * The URL to fetch a video ad. If set, HTMLSnippet, videoVastXML, and nativeAd should not be set. Note, this is different from resource.native_ad.video_url above.
     */
-  var videoURL: js.UndefOr[String] = js.undefined
+  var videoURL: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The contents of a VAST document for a video ad. This document should
-    * conform to the VAST 2.0 or 3.0 standard. If set, HTMLSnippet, videoURL,
-    * and nativeAd and should not be set.
+    * The contents of a VAST document for a video ad. This document should conform to the VAST 2.0 or 3.0 standard. If set, HTMLSnippet, videoURL, and nativeAd and should not be set.
     */
-  var videoVastXML: js.UndefOr[String] = js.undefined
+  var videoVastXML: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Ad width.
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaCreative {
   
@@ -219,145 +174,211 @@ object SchemaCreative {
     
     inline def setAccountId(value: Double): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setAdChoicesDestinationUrl(value: String): Self = StObject.set(x, "adChoicesDestinationUrl", value.asInstanceOf[js.Any])
     
+    inline def setAdChoicesDestinationUrlNull: Self = StObject.set(x, "adChoicesDestinationUrl", null)
+    
     inline def setAdChoicesDestinationUrlUndefined: Self = StObject.set(x, "adChoicesDestinationUrl", js.undefined)
+    
+    inline def setAdTechnologyProviders(value: DetectedProviderIds): Self = StObject.set(x, "adTechnologyProviders", value.asInstanceOf[js.Any])
+    
+    inline def setAdTechnologyProvidersNull: Self = StObject.set(x, "adTechnologyProviders", null)
+    
+    inline def setAdTechnologyProvidersUndefined: Self = StObject.set(x, "adTechnologyProviders", js.undefined)
     
     inline def setAdvertiserId(value: js.Array[String]): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
+    inline def setAdvertiserIdNull: Self = StObject.set(x, "advertiserId", null)
+    
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    inline def setAdvertiserIdVarargs(value: String*): Self = StObject.set(x, "advertiserId", js.Array(value :_*))
+    inline def setAdvertiserIdVarargs(value: String*): Self = StObject.set(x, "advertiserId", js.Array(value*))
     
     inline def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertiserNameNull: Self = StObject.set(x, "advertiserName", null)
     
     inline def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
     
     inline def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
     
+    inline def setAgencyIdNull: Self = StObject.set(x, "agencyId", null)
+    
     inline def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
     
     inline def setApiUploadTimestamp(value: String): Self = StObject.set(x, "apiUploadTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setApiUploadTimestampNull: Self = StObject.set(x, "apiUploadTimestamp", null)
     
     inline def setApiUploadTimestampUndefined: Self = StObject.set(x, "apiUploadTimestamp", js.undefined)
     
     inline def setAttribute(value: js.Array[Double]): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
+    inline def setAttributeNull: Self = StObject.set(x, "attribute", null)
+    
     inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    inline def setAttributeVarargs(value: Double*): Self = StObject.set(x, "attribute", js.Array(value :_*))
+    inline def setAttributeVarargs(value: Double*): Self = StObject.set(x, "attribute", js.Array(value*))
     
     inline def setBuyerCreativeId(value: String): Self = StObject.set(x, "buyerCreativeId", value.asInstanceOf[js.Any])
+    
+    inline def setBuyerCreativeIdNull: Self = StObject.set(x, "buyerCreativeId", null)
     
     inline def setBuyerCreativeIdUndefined: Self = StObject.set(x, "buyerCreativeId", js.undefined)
     
     inline def setClickThroughUrl(value: js.Array[String]): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
+    inline def setClickThroughUrlNull: Self = StObject.set(x, "clickThroughUrl", null)
+    
     inline def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
-    inline def setClickThroughUrlVarargs(value: String*): Self = StObject.set(x, "clickThroughUrl", js.Array(value :_*))
+    inline def setClickThroughUrlVarargs(value: String*): Self = StObject.set(x, "clickThroughUrl", js.Array(value*))
     
     inline def setCorrections(value: js.Array[Contexts]): Self = StObject.set(x, "corrections", value.asInstanceOf[js.Any])
     
+    inline def setCorrectionsNull: Self = StObject.set(x, "corrections", null)
+    
     inline def setCorrectionsUndefined: Self = StObject.set(x, "corrections", js.undefined)
     
-    inline def setCorrectionsVarargs(value: Contexts*): Self = StObject.set(x, "corrections", js.Array(value :_*))
+    inline def setCorrectionsVarargs(value: Contexts*): Self = StObject.set(x, "corrections", js.Array(value*))
     
     inline def setCreativeStatusIdentityType(value: String): Self = StObject.set(x, "creativeStatusIdentityType", value.asInstanceOf[js.Any])
+    
+    inline def setCreativeStatusIdentityTypeNull: Self = StObject.set(x, "creativeStatusIdentityType", null)
     
     inline def setCreativeStatusIdentityTypeUndefined: Self = StObject.set(x, "creativeStatusIdentityType", js.undefined)
     
     inline def setDealsStatus(value: String): Self = StObject.set(x, "dealsStatus", value.asInstanceOf[js.Any])
     
+    inline def setDealsStatusNull: Self = StObject.set(x, "dealsStatus", null)
+    
     inline def setDealsStatusUndefined: Self = StObject.set(x, "dealsStatus", js.undefined)
     
     inline def setDetectedDomains(value: js.Array[String]): Self = StObject.set(x, "detectedDomains", value.asInstanceOf[js.Any])
     
+    inline def setDetectedDomainsNull: Self = StObject.set(x, "detectedDomains", null)
+    
     inline def setDetectedDomainsUndefined: Self = StObject.set(x, "detectedDomains", js.undefined)
     
-    inline def setDetectedDomainsVarargs(value: String*): Self = StObject.set(x, "detectedDomains", js.Array(value :_*))
+    inline def setDetectedDomainsVarargs(value: String*): Self = StObject.set(x, "detectedDomains", js.Array(value*))
     
     inline def setFilteringReasons(value: Date): Self = StObject.set(x, "filteringReasons", value.asInstanceOf[js.Any])
+    
+    inline def setFilteringReasonsNull: Self = StObject.set(x, "filteringReasons", null)
     
     inline def setFilteringReasonsUndefined: Self = StObject.set(x, "filteringReasons", js.undefined)
     
     inline def setHTMLSnippet(value: String): Self = StObject.set(x, "HTMLSnippet", value.asInstanceOf[js.Any])
     
+    inline def setHTMLSnippetNull: Self = StObject.set(x, "HTMLSnippet", null)
+    
     inline def setHTMLSnippetUndefined: Self = StObject.set(x, "HTMLSnippet", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setImpressionTrackingUrl(value: js.Array[String]): Self = StObject.set(x, "impressionTrackingUrl", value.asInstanceOf[js.Any])
     
+    inline def setImpressionTrackingUrlNull: Self = StObject.set(x, "impressionTrackingUrl", null)
+    
     inline def setImpressionTrackingUrlUndefined: Self = StObject.set(x, "impressionTrackingUrl", js.undefined)
     
-    inline def setImpressionTrackingUrlVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrl", js.Array(value :_*))
+    inline def setImpressionTrackingUrlVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrl", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
+    inline def setLanguagesNull: Self = StObject.set(x, "languages", null)
+    
     inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
     
     inline def setNativeAd(value: AppIcon): Self = StObject.set(x, "nativeAd", value.asInstanceOf[js.Any])
+    
+    inline def setNativeAdNull: Self = StObject.set(x, "nativeAd", null)
     
     inline def setNativeAdUndefined: Self = StObject.set(x, "nativeAd", js.undefined)
     
     inline def setOpenAuctionStatus(value: String): Self = StObject.set(x, "openAuctionStatus", value.asInstanceOf[js.Any])
     
+    inline def setOpenAuctionStatusNull: Self = StObject.set(x, "openAuctionStatus", null)
+    
     inline def setOpenAuctionStatusUndefined: Self = StObject.set(x, "openAuctionStatus", js.undefined)
     
     inline def setProductCategories(value: js.Array[Double]): Self = StObject.set(x, "productCategories", value.asInstanceOf[js.Any])
     
+    inline def setProductCategoriesNull: Self = StObject.set(x, "productCategories", null)
+    
     inline def setProductCategoriesUndefined: Self = StObject.set(x, "productCategories", js.undefined)
     
-    inline def setProductCategoriesVarargs(value: Double*): Self = StObject.set(x, "productCategories", js.Array(value :_*))
+    inline def setProductCategoriesVarargs(value: Double*): Self = StObject.set(x, "productCategories", js.Array(value*))
     
     inline def setRestrictedCategories(value: js.Array[Double]): Self = StObject.set(x, "restrictedCategories", value.asInstanceOf[js.Any])
     
+    inline def setRestrictedCategoriesNull: Self = StObject.set(x, "restrictedCategories", null)
+    
     inline def setRestrictedCategoriesUndefined: Self = StObject.set(x, "restrictedCategories", js.undefined)
     
-    inline def setRestrictedCategoriesVarargs(value: Double*): Self = StObject.set(x, "restrictedCategories", js.Array(value :_*))
+    inline def setRestrictedCategoriesVarargs(value: Double*): Self = StObject.set(x, "restrictedCategories", js.Array(value*))
     
     inline def setSensitiveCategories(value: js.Array[Double]): Self = StObject.set(x, "sensitiveCategories", value.asInstanceOf[js.Any])
     
+    inline def setSensitiveCategoriesNull: Self = StObject.set(x, "sensitiveCategories", null)
+    
     inline def setSensitiveCategoriesUndefined: Self = StObject.set(x, "sensitiveCategories", js.undefined)
     
-    inline def setSensitiveCategoriesVarargs(value: Double*): Self = StObject.set(x, "sensitiveCategories", js.Array(value :_*))
+    inline def setSensitiveCategoriesVarargs(value: Double*): Self = StObject.set(x, "sensitiveCategories", js.Array(value*))
     
     inline def setServingRestrictions(value: js.Array[DisapprovalReasons]): Self = StObject.set(x, "servingRestrictions", value.asInstanceOf[js.Any])
     
+    inline def setServingRestrictionsNull: Self = StObject.set(x, "servingRestrictions", null)
+    
     inline def setServingRestrictionsUndefined: Self = StObject.set(x, "servingRestrictions", js.undefined)
     
-    inline def setServingRestrictionsVarargs(value: DisapprovalReasons*): Self = StObject.set(x, "servingRestrictions", js.Array(value :_*))
+    inline def setServingRestrictionsVarargs(value: DisapprovalReasons*): Self = StObject.set(x, "servingRestrictions", js.Array(value*))
     
     inline def setVendorType(value: js.Array[Double]): Self = StObject.set(x, "vendorType", value.asInstanceOf[js.Any])
     
+    inline def setVendorTypeNull: Self = StObject.set(x, "vendorType", null)
+    
     inline def setVendorTypeUndefined: Self = StObject.set(x, "vendorType", js.undefined)
     
-    inline def setVendorTypeVarargs(value: Double*): Self = StObject.set(x, "vendorType", js.Array(value :_*))
+    inline def setVendorTypeVarargs(value: Double*): Self = StObject.set(x, "vendorType", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def setVideoURL(value: String): Self = StObject.set(x, "videoURL", value.asInstanceOf[js.Any])
     
+    inline def setVideoURLNull: Self = StObject.set(x, "videoURL", null)
+    
     inline def setVideoURLUndefined: Self = StObject.set(x, "videoURL", js.undefined)
     
     inline def setVideoVastXML(value: String): Self = StObject.set(x, "videoVastXML", value.asInstanceOf[js.Any])
     
+    inline def setVideoVastXMLNull: Self = StObject.set(x, "videoVastXML", null)
+    
     inline def setVideoVastXMLUndefined: Self = StObject.set(x, "videoVastXML", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

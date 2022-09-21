@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "Stylesheet")
 @js.native
-class Stylesheet ()
+open class Stylesheet ()
   extends typings.officeUiFabricReact.mod.Stylesheet {
   def this(config: IStyleSheetConfig) = this()
 }

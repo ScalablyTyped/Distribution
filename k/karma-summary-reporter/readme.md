@@ -1,7 +1,7 @@
 
 # Scala.js typings for karma-summary-reporter
 
-Typings are for version 1.7
+Typings are for version 3.1
 
 ## Library description:
 Displays a summary of tested browsers and failed testcases after a test run.
@@ -10,15 +10,12 @@ Displays a summary of tested browsers and failed testcases after a test run.
 | ------------------ | :-------------: |
 | Full name          | karma-summary-reporter |
 | Keywords           | karma-plugin, karma-reporter |
-| # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 376357 |
-| # stars            | 2 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 39093.333333333336 |
+| # stars            | 6.0 |
 
 ## Links
-- [Homepage](https://github.com/sth/karma-summary-reporter#readme)
-- [Bugs](https://github.com/sth/karma-summary-reporter/issues)
-- [Repository](https://github.com/sth/karma-summary-reporter)
 - [Npm](https://www.npmjs.com/package/karma-summary-reporter)
     
 

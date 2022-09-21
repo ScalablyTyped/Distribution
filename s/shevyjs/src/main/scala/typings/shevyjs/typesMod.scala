@@ -42,23 +42,23 @@ object typesMod {
       
       inline def setAugmentedFourth(value: Scale): Self = StObject.set(x, "augmentedFourth", value.asInstanceOf[js.Any])
       
-      inline def setAugmentedFourthVarargs(value: Factor*): Self = StObject.set(x, "augmentedFourth", js.Array(value :_*))
+      inline def setAugmentedFourthVarargs(value: Factor*): Self = StObject.set(x, "augmentedFourth", js.Array(value*))
       
       inline def setMajorSecond(value: Scale): Self = StObject.set(x, "majorSecond", value.asInstanceOf[js.Any])
       
-      inline def setMajorSecondVarargs(value: Factor*): Self = StObject.set(x, "majorSecond", js.Array(value :_*))
+      inline def setMajorSecondVarargs(value: Factor*): Self = StObject.set(x, "majorSecond", js.Array(value*))
       
       inline def setMajorThird(value: Scale): Self = StObject.set(x, "majorThird", value.asInstanceOf[js.Any])
       
-      inline def setMajorThirdVarargs(value: Factor*): Self = StObject.set(x, "majorThird", js.Array(value :_*))
+      inline def setMajorThirdVarargs(value: Factor*): Self = StObject.set(x, "majorThird", js.Array(value*))
       
       inline def setMinorThird(value: Scale): Self = StObject.set(x, "minorThird", value.asInstanceOf[js.Any])
       
-      inline def setMinorThirdVarargs(value: Factor*): Self = StObject.set(x, "minorThird", js.Array(value :_*))
+      inline def setMinorThirdVarargs(value: Factor*): Self = StObject.set(x, "minorThird", js.Array(value*))
       
       inline def setPerfectFourth(value: Scale): Self = StObject.set(x, "perfectFourth", value.asInstanceOf[js.Any])
       
-      inline def setPerfectFourthVarargs(value: Factor*): Self = StObject.set(x, "perfectFourth", js.Array(value :_*))
+      inline def setPerfectFourthVarargs(value: Factor*): Self = StObject.set(x, "perfectFourth", js.Array(value*))
     }
   }
   
@@ -120,7 +120,7 @@ object typesMod {
       
       inline def setBaseFontScale(value: Scale | majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth): Self = StObject.set(x, "baseFontScale", value.asInstanceOf[js.Any])
       
-      inline def setBaseFontScaleVarargs(value: Factor*): Self = StObject.set(x, "baseFontScale", js.Array(value :_*))
+      inline def setBaseFontScaleVarargs(value: Factor*): Self = StObject.set(x, "baseFontScale", js.Array(value*))
       
       inline def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
       

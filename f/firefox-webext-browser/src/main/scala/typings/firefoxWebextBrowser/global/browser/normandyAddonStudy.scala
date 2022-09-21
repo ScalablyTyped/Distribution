@@ -20,14 +20,14 @@ object normandyAddonStudy {
     * Marks the study as ended and then uninstalls the addon.
     * @param reason The reason why the study is ending.
     */
-  inline def endStudy(reason: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("endStudy")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def endStudy(reason: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("endStudy")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   /** Returns an object with metadata about the client which may be required for constructing survey URLs. */
-  inline def getClientMetadata(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientMetadata")().asInstanceOf[js.Promise[js.Any]]
+  inline def getClientMetadata(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientMetadata")().asInstanceOf[js.Promise[Any]]
   
   /* normandyAddonStudy functions */
   /** Returns a study object for the current study. */
-  inline def getStudy(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStudy")().asInstanceOf[js.Promise[js.Any]]
+  inline def getStudy(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStudy")().asInstanceOf[js.Promise[Any]]
   
   /* normandyAddonStudy events */
   /**

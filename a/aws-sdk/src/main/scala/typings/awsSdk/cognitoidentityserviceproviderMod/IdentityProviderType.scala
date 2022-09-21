@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdentityProviderType extends StObject {
   
   /**
-    * A mapping of identity provider attributes to standard and custom user pool attributes.
+    * A mapping of IdP attributes to standard and custom user pool attributes.
     */
   var AttributeMapping: js.UndefOr[AttributeMappingType] = js.undefined
   
   /**
-    * The date the identity provider was created.
+    * The date the IdP was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A list of identity provider identifiers.
+    * A list of IdP identifiers.
     */
   var IdpIdentifiers: js.UndefOr[IdpIdentifiersListType] = js.undefined
   
   /**
-    * The date the identity provider was last modified.
+    * The date the IdP was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identity provider details. The following list describes the provider detail keys for each identity provider type.   For Google and Login with Amazon:   client_id   client_secret   authorize_scopes     For Facebook:   client_id   client_secret   authorize_scopes   api_version     For Sign in with Apple:   client_id   team_id   key_id   private_key   authorize_scopes     For OIDC providers:   client_id   client_secret   attributes_request_method   oidc_issuer   authorize_scopes   authorize_url if not available from discovery URL specified by oidc_issuer key    token_url if not available from discovery URL specified by oidc_issuer key    attributes_url if not available from discovery URL specified by oidc_issuer key    jwks_uri if not available from discovery URL specified by oidc_issuer key    authorize_scopes     For SAML providers:   MetadataFile OR MetadataURL   IDPSignOut optional     
+    * The IdP details. The following list describes the provider detail keys for each IdP type.   For Google and Login with Amazon:   client_id   client_secret   authorize_scopes     For Facebook:   client_id   client_secret   authorize_scopes   api_version     For Sign in with Apple:   client_id   team_id   key_id   private_key  You can submit a private_key when you add or update an IdP. Describe operations don't return the private key.    authorize_scopes     For OIDC providers:   client_id   client_secret   attributes_request_method   oidc_issuer   authorize_scopes   The following keys are only present if Amazon Cognito didn't discover them at the oidc_issuer URL.   authorize_url    token_url    attributes_url    jwks_uri      Amazon Cognito sets the value of the following keys automatically. They are read-only.   attributes_url_add_attributes        For SAML providers:   MetadataFile or MetadataURL   IDPSignout optional     
     */
   var ProviderDetails: js.UndefOr[ProviderDetailsType] = js.undefined
   
   /**
-    * The identity provider name.
+    * The IdP name.
     */
   var ProviderName: js.UndefOr[ProviderNameType] = js.undefined
   
   /**
-    * The identity provider type.
+    * The IdP type.
     */
   var ProviderType: js.UndefOr[IdentityProviderTypeType] = js.undefined
   
@@ -59,7 +59,7 @@ object IdentityProviderType {
     
     inline def setAttributeMappingUndefined: Self = StObject.set(x, "AttributeMapping", js.undefined)
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -67,9 +67,9 @@ object IdentityProviderType {
     
     inline def setIdpIdentifiersUndefined: Self = StObject.set(x, "IdpIdentifiers", js.undefined)
     
-    inline def setIdpIdentifiersVarargs(value: IdpIdentifierType*): Self = StObject.set(x, "IdpIdentifiers", js.Array(value :_*))
+    inline def setIdpIdentifiersVarargs(value: IdpIdentifierType*): Self = StObject.set(x, "IdpIdentifiers", js.Array(value*))
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

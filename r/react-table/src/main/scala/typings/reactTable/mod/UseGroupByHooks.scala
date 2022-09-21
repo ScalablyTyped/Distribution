@@ -19,6 +19,6 @@ object UseGroupByHooks {
     
     inline def setGetGroupByToggleProps(value: js.Array[HeaderGroupPropGetter[D]]): Self = StObject.set(x, "getGroupByToggleProps", value.asInstanceOf[js.Any])
     
-    inline def setGetGroupByTogglePropsVarargs(value: HeaderGroupPropGetter[D]*): Self = StObject.set(x, "getGroupByToggleProps", js.Array(value :_*))
+    inline def setGetGroupByTogglePropsVarargs(value: HeaderGroupPropGetter[D]*): Self = StObject.set(x, "getGroupByToggleProps", js.Array(value*))
   }
 }

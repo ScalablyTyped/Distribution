@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__esri.Accessor")
 @js.native
-class Accessor ()
+open class Accessor ()
   extends StObject
      with typings.arcgisJsApi.esri.Accessor {
-  def this(obj: js.Any) = this()
+  def this(obj: Any) = this()
 }

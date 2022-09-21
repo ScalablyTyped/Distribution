@@ -1,16 +1,16 @@
 package typings.bip174.anon
 
 import typings.bip174.interfacesMod.KeyValue
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CanAdd extends StObject {
   
-  def canAdd(currentData: js.Any, newData: js.Any): Boolean
+  def canAdd(currentData: Any, newData: Any): Boolean
   
-  def check(data: js.Any): /* is node.Buffer */ Boolean
+  def check(data: Any): /* is node.buffer.<global>.Buffer */ Boolean
   
   def decode(keyVal: KeyValue): Buffer
   
@@ -21,8 +21,8 @@ trait CanAdd extends StObject {
 object CanAdd {
   
   inline def apply(
-    canAdd: (js.Any, js.Any) => Boolean,
-    check: js.Any => /* is node.Buffer */ Boolean,
+    canAdd: (Any, Any) => Boolean,
+    check: Any => /* is node.buffer.<global>.Buffer */ Boolean,
     decode: KeyValue => Buffer,
     encode: Buffer => KeyValue,
     expected: String
@@ -33,9 +33,9 @@ object CanAdd {
   
   extension [Self <: CanAdd](x: Self) {
     
-    inline def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
+    inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     
-    inline def setCheck(value: js.Any => /* is node.Buffer */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: Any => /* is node.buffer.<global>.Buffer */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
     inline def setDecode(value: KeyValue => Buffer): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

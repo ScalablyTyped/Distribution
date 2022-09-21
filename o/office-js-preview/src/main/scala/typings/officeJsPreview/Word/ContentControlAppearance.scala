@@ -7,11 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ContentControlAppearance extends StObject
 /**
+  * ContentControl appearance.
   *
-  * Either bounding box, or tags, or hidden.
-  *
-  * [Api set: WordApi]
   * @remarks
+  * [Api set: WordApi 1.1]
+  *
+  * Content control appearance options are bounding box, tags, or hidden.
   */
 @JSGlobal("Word.ContentControlAppearance")
 @js.native
@@ -19,7 +20,8 @@ object ContentControlAppearance extends StObject {
   
   /**
     * Represents a content control shown as a shaded rectangle or bounding box (with optional title).
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait boundingBox
@@ -28,7 +30,8 @@ object ContentControlAppearance extends StObject {
   
   /**
     * Represents a content control that is not shown.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait hidden
@@ -37,7 +40,8 @@ object ContentControlAppearance extends StObject {
   
   /**
     * Represents a content control shown as start and end markers.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait tags

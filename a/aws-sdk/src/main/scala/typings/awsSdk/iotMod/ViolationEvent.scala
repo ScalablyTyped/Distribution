@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViolationEvent extends StObject {
   
   /**
-    * The behavior which was violated.
+    * The behavior that was violated.
     */
   var behavior: js.UndefOr[Behavior] = js.undefined
   
@@ -27,9 +27,24 @@ trait ViolationEvent extends StObject {
   var thingName: js.UndefOr[DeviceDefenderThingName] = js.undefined
   
   /**
+    * The verification state of the violation (detect alarm).
+    */
+  var verificationState: js.UndefOr[VerificationState] = js.undefined
+  
+  /**
+    * The description of the verification state of the violation.
+    */
+  var verificationStateDescription: js.UndefOr[VerificationStateDescription] = js.undefined
+  
+  /**
+    *  The details of a violation event. 
+    */
+  var violationEventAdditionalInfo: js.UndefOr[ViolationEventAdditionalInfo] = js.undefined
+  
+  /**
     * The time the violation event occurred.
     */
-  var violationEventTime: js.UndefOr[Timestamp] = js.undefined
+  var violationEventTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of violation event.
@@ -66,7 +81,19 @@ object ViolationEvent {
     
     inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
     
-    inline def setViolationEventTime(value: Timestamp): Self = StObject.set(x, "violationEventTime", value.asInstanceOf[js.Any])
+    inline def setVerificationState(value: VerificationState): Self = StObject.set(x, "verificationState", value.asInstanceOf[js.Any])
+    
+    inline def setVerificationStateDescription(value: VerificationStateDescription): Self = StObject.set(x, "verificationStateDescription", value.asInstanceOf[js.Any])
+    
+    inline def setVerificationStateDescriptionUndefined: Self = StObject.set(x, "verificationStateDescription", js.undefined)
+    
+    inline def setVerificationStateUndefined: Self = StObject.set(x, "verificationState", js.undefined)
+    
+    inline def setViolationEventAdditionalInfo(value: ViolationEventAdditionalInfo): Self = StObject.set(x, "violationEventAdditionalInfo", value.asInstanceOf[js.Any])
+    
+    inline def setViolationEventAdditionalInfoUndefined: Self = StObject.set(x, "violationEventAdditionalInfo", js.undefined)
+    
+    inline def setViolationEventTime(value: js.Date): Self = StObject.set(x, "violationEventTime", value.asInstanceOf[js.Any])
     
     inline def setViolationEventTimeUndefined: Self = StObject.set(x, "violationEventTime", js.undefined)
     

@@ -17,6 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassMessage ()
+open class ClassMessage ()
   extends StObject
      with typings.fibjs.ClassMessage

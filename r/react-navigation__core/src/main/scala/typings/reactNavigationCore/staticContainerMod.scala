@@ -10,10 +10,10 @@ object staticContainerMod extends Shortcut {
   
   @JSImport("@react-navigation/core/lib/typescript/src/StaticContainer", JSImport.Default)
   @js.native
-  val default: MemoExoticComponent[js.Function1[/* props */ js.Any, js.Any]] = js.native
+  val default: MemoExoticComponent[js.Function1[/* props */ Any, Any]] = js.native
   
-  type _To = MemoExoticComponent[js.Function1[/* props */ js.Any, js.Any]]
+  type _To = MemoExoticComponent[js.Function1[/* props */ Any, Any]]
   
   /* This means you don't have to write `default`, but can instead just say `staticContainerMod.foo` */
-  override def _to: MemoExoticComponent[js.Function1[/* props */ js.Any, js.Any]] = default
+  override def _to: MemoExoticComponent[js.Function1[/* props */ Any, Any]] = default
 }

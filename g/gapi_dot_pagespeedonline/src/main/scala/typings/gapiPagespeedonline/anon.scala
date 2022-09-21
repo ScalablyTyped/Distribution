@@ -29,7 +29,7 @@ object anon {
       
       inline def setArgs(value: js.Array[Type]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: Type*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Type*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
@@ -330,7 +330,7 @@ object anon {
       
       inline def setDetails(value: js.Array[Args]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      inline def setDetailsVarargs(value: Args*): Self = StObject.set(x, "details", js.Array(value :_*))
+      inline def setDetailsVarargs(value: Args*): Self = StObject.set(x, "details", js.Array(value*))
       
       inline def setResult(value: Args): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
@@ -389,7 +389,7 @@ object anon {
       
       inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
       
-      inline def setRuleVarargs(value: String*): Self = StObject.set(x, "rule", js.Array(value :_*))
+      inline def setRuleVarargs(value: String*): Self = StObject.set(x, "rule", js.Array(value*))
       
       inline def setScreenshot(value: Boolean): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
       
@@ -428,7 +428,7 @@ object anon {
       
       inline def setUrls(value: js.Array[Details]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      inline def setUrlsVarargs(value: Details*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: Details*): Self = StObject.set(x, "urls", js.Array(value*))
     }
   }
   

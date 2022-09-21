@@ -1,6 +1,5 @@
 package typings.nextServer
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +52,7 @@ object constantsMod {
   
   @JSImport("next-server/constants", "IS_BUNDLED_PAGE_REGEX")
   @js.native
-  val IS_BUNDLED_PAGE_REGEX: RegExp = js.native
+  val IS_BUNDLED_PAGE_REGEX: js.RegExp = js.native
   
   @JSImport("next-server/constants", "PAGES_MANIFEST")
   @js.native
@@ -85,7 +84,7 @@ object constantsMod {
   
   @JSImport("next-server/constants", "ROUTE_NAME_REGEX")
   @js.native
-  val ROUTE_NAME_REGEX: RegExp = js.native
+  val ROUTE_NAME_REGEX: js.RegExp = js.native
   
   @JSImport("next-server/constants", "SERVERLESS_DIRECTORY")
   @js.native
@@ -93,7 +92,7 @@ object constantsMod {
   
   @JSImport("next-server/constants", "SERVERLESS_ROUTE_NAME_REGEX")
   @js.native
-  val SERVERLESS_ROUTE_NAME_REGEX: RegExp = js.native
+  val SERVERLESS_ROUTE_NAME_REGEX: js.RegExp = js.native
   
   @JSImport("next-server/constants", "SERVER_DIRECTORY")
   @js.native

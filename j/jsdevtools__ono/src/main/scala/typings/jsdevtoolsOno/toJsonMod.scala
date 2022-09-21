@@ -1,7 +1,6 @@
 package typings.jsdevtoolsOno
 
 import typings.jsdevtoolsOno.typesMod.ErrorPOJO
-import typings.std.Error
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,5 +17,5 @@ object toJsonMod {
   
   inline def toJSON(): ErrorPOJO = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[ErrorPOJO]
   
-  inline def toJSON_Intersection(): ErrorPOJO & Error = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[ErrorPOJO & Error]
+  inline def toJSON_Intersection(): ErrorPOJO & js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[ErrorPOJO & js.Error]
 }

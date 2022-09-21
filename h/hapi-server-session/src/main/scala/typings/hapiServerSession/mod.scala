@@ -23,7 +23,7 @@ object mod extends Shortcut {
     
     var algorithm: js.UndefOr[String] = js.undefined
     
-    var cache: js.UndefOr[CachePolicyOptions[js.Any]] = js.undefined
+    var cache: js.UndefOr[CachePolicyOptions[Any]] = js.undefined
     
     var cookie: js.UndefOr[ServerStateCookieOptions] = js.undefined
     
@@ -50,7 +50,7 @@ object mod extends Shortcut {
       
       inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      inline def setCache(value: CachePolicyOptions[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: CachePolicyOptions[Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
@@ -78,7 +78,7 @@ object mod extends Shortcut {
       
       inline def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
       
-      inline def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
+      inline def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value*))
     }
   }
   
@@ -92,18 +92,18 @@ object mod extends Shortcut {
     
     trait Request extends StObject {
       
-      var session: js.Any
+      var session: Any
     }
     object Request {
       
-      inline def apply(session: js.Any): Request = {
+      inline def apply(session: Any): Request = {
         val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
       extension [Self <: Request](x: Self) {
         
-        inline def setSession(value: js.Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+        inline def setSession(value: Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       }
     }
   }

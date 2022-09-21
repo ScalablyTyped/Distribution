@@ -19,7 +19,7 @@ trait nlobjPortlet
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * add a column (nlobjColumn) to this LIST portlet and return it.
@@ -72,8 +72,8 @@ Instantiable0[js.Any] {
     */
   def addField(name: String, `type`: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: String, source: js.Any): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: Unit, source: js.Any): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: String, source: Any): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: Unit, source: Any): js.Function0[Unit] = js.native
   
   /**
     * add a line (containing text or simple HTML) with optional indenting and URL to this LINKS portlet.
@@ -88,8 +88,8 @@ Instantiable0[js.Any] {
     */
   def addLine(text: String): Unit = js.native
   def addLine(text: String, url: String): Unit = js.native
-  def addLine(text: String, url: String, indent: js.Any): Unit = js.native
-  def addLine(text: String, url: Unit, indent: js.Any): Unit = js.native
+  def addLine(text: String, url: String, indent: Any): Unit = js.native
+  def addLine(text: String, url: Unit, indent: Any): Unit = js.native
   
   /**
     * add a row (nlobjSearchResult or Array of name-value pairs) to this LIST portlet.
@@ -98,7 +98,7 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @param row
     */
-  def addRow(row: js.Any): Unit = js.native
+  def addRow(row: Any): Unit = js.native
   
   /**
     * add multiple rows (Array of nlobjSearchResults or name-value pair Arrays) to this LIST portlet.
@@ -107,7 +107,7 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @param rows
     */
-  def addRows(rows: js.Any): Unit = js.native
+  def addRows(rows: Any): Unit = js.native
   
   /**
     * set the entire contents of the HTML portlet (will be placed inside a <TD>...</TD>).

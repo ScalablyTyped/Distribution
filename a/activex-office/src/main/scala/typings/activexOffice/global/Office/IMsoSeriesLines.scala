@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoSeriesLines")
 @js.native
-/* private */ class IMsoSeriesLines ()
+/* private */ open class IMsoSeriesLines ()
   extends StObject
      with typings.activexOffice.Office.IMsoSeriesLines {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Border: typings.activexOffice.Office.IMsoBorder = js.native
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override def Delete(): js.Any = js.native
+  override def Delete(): Any = js.native
   
   /* CompleteClass */
   override val Format: typings.activexOffice.Office.IMsoChartFormat = js.native
@@ -33,8 +33,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotIMsoSeriesLines_typekey: typings.activexOffice.Office.IMsoSeriesLines = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
 }

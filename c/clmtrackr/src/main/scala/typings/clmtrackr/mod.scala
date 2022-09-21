@@ -20,7 +20,7 @@ object mod {
     
     @JSImport("clmtrackr", "default.tracker")
     @js.native
-    class tracker ()
+    open class tracker ()
       extends StObject
          with typings.clmtrackr.mod._default.tracker {
       def this(params: TrackerParams) = this()
@@ -33,7 +33,7 @@ object mod {
   
   type IPosition = js.Tuple2[Double, Double]
   
-  type Model = js.Any
+  type Model = Any
   
   trait TrackerParams extends StObject {
     
@@ -110,9 +110,7 @@ object mod {
       
       def reset(): Unit = js.native
       
-      def setResponseMode(`type`: blend, list: js.Array[raw | sobel | lbp]): Unit = js.native
-      def setResponseMode(`type`: cycle, list: js.Array[raw | sobel | lbp]): Unit = js.native
-      def setResponseMode(`type`: single, list: js.Array[raw | sobel | lbp]): Unit = js.native
+      def setResponseMode(`type`: single | cycle | blend, list: js.Array[raw | sobel | lbp]): Unit = js.native
       
       def start(element: HTMLCanvasElement): Unit = js.native
       def start(element: HTMLVideoElement): Unit = js.native

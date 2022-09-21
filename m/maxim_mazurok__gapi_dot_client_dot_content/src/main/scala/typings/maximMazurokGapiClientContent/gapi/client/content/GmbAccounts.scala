@@ -9,7 +9,7 @@ trait GmbAccounts extends StObject {
   /** The ID of the Merchant Center account. */
   var accountId: js.UndefOr[String] = js.undefined
   
-  /** A list of GMB accounts which are available to the merchant. */
+  /** A list of Business Profiles which are available to the merchant. */
   var gmbAccounts: js.UndefOr[js.Array[GmbAccountsGmbAccount]] = js.undefined
 }
 object GmbAccounts {
@@ -29,6 +29,6 @@ object GmbAccounts {
     
     inline def setGmbAccountsUndefined: Self = StObject.set(x, "gmbAccounts", js.undefined)
     
-    inline def setGmbAccountsVarargs(value: GmbAccountsGmbAccount*): Self = StObject.set(x, "gmbAccounts", js.Array(value :_*))
+    inline def setGmbAccountsVarargs(value: GmbAccountsGmbAccount*): Self = StObject.set(x, "gmbAccounts", js.Array(value*))
   }
 }

@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fromEventPatternMod {
   
-  @JSImport("rxjs/internal/observable/fromEventPattern", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/observable/fromEventPattern", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromEventPattern[T](addHandler: js.Function1[/* handler */ NodeEventHandler, js.Any]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEventPattern")(addHandler.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  inline def fromEventPattern[T](addHandler: js.Function1[/* handler */ NodeEventHandler, Any]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEventPattern")(addHandler.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
   inline def fromEventPattern[T](
-    addHandler: js.Function1[/* handler */ NodeEventHandler, js.Any],
-    removeHandler: js.Function2[/* handler */ NodeEventHandler, js.UndefOr[js.Any], Unit]
+    addHandler: js.Function1[/* handler */ NodeEventHandler, Any],
+    removeHandler: js.Function2[/* handler */ NodeEventHandler, js.UndefOr[Any], Unit]
   ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventPattern")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   inline def fromEventPattern[T](
-    addHandler: js.Function1[/* handler */ NodeEventHandler, js.Any],
-    removeHandler: js.Function2[/* handler */ NodeEventHandler, /* signal */ js.UndefOr[js.Any], Unit],
-    resultSelector: js.Function1[/* repeated */ js.Any, T]
+    addHandler: js.Function1[/* handler */ NodeEventHandler, Any],
+    removeHandler: js.Function2[/* handler */ NodeEventHandler, /* signal */ js.UndefOr[Any], Unit],
+    resultSelector: js.Function1[/* repeated */ Any, T]
   ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventPattern")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   inline def fromEventPattern[T](
-    addHandler: js.Function1[/* handler */ NodeEventHandler, js.Any],
+    addHandler: js.Function1[/* handler */ NodeEventHandler, Any],
     removeHandler: Unit,
-    resultSelector: js.Function1[/* repeated */ js.Any, T]
+    resultSelector: js.Function1[/* repeated */ Any, T]
   ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventPattern")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
 }

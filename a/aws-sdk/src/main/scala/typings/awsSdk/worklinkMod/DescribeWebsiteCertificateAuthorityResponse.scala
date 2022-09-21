@@ -14,7 +14,7 @@ trait DescribeWebsiteCertificateAuthorityResponse extends StObject {
   /**
     * The time that the certificate authority was added.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The certificate name to display.
@@ -34,7 +34,7 @@ object DescribeWebsiteCertificateAuthorityResponse {
     
     inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
-    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

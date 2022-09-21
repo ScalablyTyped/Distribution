@@ -5,6 +5,7 @@ import typings.grommet.baseMod.ExtendType
 import typings.grommet.baseMod.ExtendValue
 import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.GapType
+import typings.grommet.utilsMod.PadType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,19 +15,23 @@ trait Toggle extends StObject {
   
   var border: js.UndefOr[ColorWidth] = js.undefined
   
-  var check: js.UndefOr[ExtendRadius] = js.undefined
+  var check: js.UndefOr[RadiusThickness] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
+  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
   var gap: js.UndefOr[GapType] = js.undefined
   
-  var hover: js.UndefOr[`26`] = js.undefined
+  var hover: js.UndefOr[`22`] = js.undefined
   
-  var icon: js.UndefOr[`27`] = js.undefined
+  var icon: js.UndefOr[`35`] = js.undefined
   
   var icons: js.UndefOr[Checked] = js.undefined
+  
+  var label: js.UndefOr[`34`] = js.undefined
+  
+  var pad: js.UndefOr[PadType] = js.undefined
   
   var size: js.UndefOr[String] = js.undefined
   
@@ -45,7 +50,7 @@ object Toggle {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setCheck(value: ExtendRadius): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+    inline def setCheck(value: RadiusThickness): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
     inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
@@ -53,9 +58,9 @@ object Toggle {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
@@ -63,17 +68,25 @@ object Toggle {
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setHover(value: `26`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `22`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    inline def setIcon(value: `27`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: `35`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     inline def setIcons(value: Checked): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setLabel(value: `34`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

@@ -23,9 +23,8 @@ trait Filter extends StObject {
   var fields: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. Use `filter` to return subset of rollouts. The following filters are supported: -- To limit the results to only those in
-    * [status](google.api.servicemanagement.v1.RolloutStatus) 'SUCCESS', use filter='status=SUCCESS' -- To limit the results to those in
-    * [status](google.api.servicemanagement.v1.RolloutStatus) 'CANCELLED' or 'FAILED', use filter='status=CANCELLED OR status=FAILED'
+    * Required. Use `filter` to return subset of rollouts. The following filters are supported: -- By status. For example, `filter='status=SUCCESS'` -- By strategy. For example,
+    * `filter='strategy=TrafficPercentStrategy'`
     */
   var filter: js.UndefOr[String] = js.undefined
   
@@ -47,7 +46,7 @@ trait Filter extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the service. See the [overview](/service-management/overview) for naming requirements. For example: `example.googleapis.com`. */
+  /** Required. The name of the service. See the [overview](https://cloud.google.com/service-management/overview) for naming requirements. For example: `example.googleapis.com`. */
   var serviceName: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

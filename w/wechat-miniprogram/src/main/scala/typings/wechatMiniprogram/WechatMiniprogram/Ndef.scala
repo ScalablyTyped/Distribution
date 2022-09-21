@@ -21,21 +21,29 @@ trait Ndef extends StObject {
     *
     * 最低基础库： `2.11.2` */
   def connect(): Unit = js.native
-  def connect(option: ConnectOption): Unit = js.native
+  def connect(option: NdefConnectOption): Unit = js.native
+  
+  /** [Ndef.isConnected(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/Ndef.isConnected.html)
+    *
+    * 检查是否已连接
+    *
+    * 最低基础库： `2.11.2` */
+  def isConnected(): Unit = js.native
+  def isConnected(option: IsConnectedOption): Unit = js.native
   
   /** [Ndef.offNdefMessage(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/Ndef.offNdefMessage.html)
     *
     * 取消监听 Ndef 消息
     *
     * 最低基础库： `2.11.2` */
-  def offNdefMessage(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def offNdefMessage(callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   
   /** [Ndef.onNdefMessage(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/Ndef.onNdefMessage.html)
     *
     * 监听 Ndef 消息
     *
     * 最低基础库： `2.11.2` */
-  def onNdefMessage(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def onNdefMessage(callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   
   /** [Ndef.setTimeout(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/Ndef.setTimeout.html)
     *

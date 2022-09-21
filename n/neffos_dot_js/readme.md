@@ -1,7 +1,7 @@
 
 # Scala.js typings for neffos_dot_js
 
-Typings are for version 0.1.25
+Typings are for version 0.1.26
 
 ## Library description:
 javascript client for the modern neffos websocket framework
@@ -9,11 +9,11 @@ javascript client for the modern neffos websocket framework
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | neffos.js |
-| Keywords           | neffos, realtime, framework, websocket, events, iris |
-| # releases         | 27 |
-| # dependents       | 1 |
-| # downloads        | 3929 |
-| # stars            | 0 |
+| Keywords           | neffos, realtime, framework, websocket, events, iris, iris web framework |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 214.0 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/kataras/neffos.js#readme)

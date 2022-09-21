@@ -1,6 +1,5 @@
 package typings.loadicons
 
-import typings.std.Error
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,5 +16,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function2[/* error */ Error | Null, /* svg */ SVGElement, Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* svg */ SVGElement, Unit]
 }

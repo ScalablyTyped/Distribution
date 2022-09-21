@@ -105,7 +105,7 @@ object App {
     
     inline def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
-    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "DataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "DataSources", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -115,7 +115,7 @@ object App {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
     
-    inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "Domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "Domains", js.Array(value*))
     
     inline def setEnableSsl(value: Boolean): Self = StObject.set(x, "EnableSsl", value.asInstanceOf[js.Any])
     
@@ -125,7 +125,7 @@ object App {
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
-    inline def setEnvironmentVarargs(value: EnvironmentVariable*): Self = StObject.set(x, "Environment", js.Array(value :_*))
+    inline def setEnvironmentVarargs(value: EnvironmentVariable*): Self = StObject.set(x, "Environment", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

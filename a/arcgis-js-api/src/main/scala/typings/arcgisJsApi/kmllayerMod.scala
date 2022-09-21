@@ -32,6 +32,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reflect
 import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
+import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.KMLLayer
 import typings.arcgisJsApi.esri.KMLLayerConstructor
 import typings.arcgisJsApi.esri.KMLLayerProperties
@@ -54,7 +55,7 @@ object kmllayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with KMLLayer {
     def this(properties: KMLLayerProperties) = this()
@@ -62,13 +63,27 @@ object kmllayerMod extends Shortcut {
     /**
       * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
       *
+      * @default normal
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
       */
     /* CompleteClass */
     var blendMode: average | `color-burn` | `color-dodge` | color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor = js.native
     
     /**
+      * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+      *
+      * @default null
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+      */
+    /* CompleteClass */
+    var effect: Effect = js.native
+    
+    /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
+      *
+      * @default 0
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
       */
@@ -77,6 +92,8 @@ object kmllayerMod extends Shortcut {
     
     /**
       * The minimum scale (most zoomed out) at which the layer is visible in the view.
+      *
+      * @default 0
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
       */

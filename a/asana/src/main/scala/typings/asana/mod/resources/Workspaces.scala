@@ -6,6 +6,7 @@ import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.Users.Type
 import typings.asana.mod.resources.Workspaces.ShortType
 import typings.asana.mod.resources.Workspaces.TypeaheadParams
+import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Workspaces
   extends StObject
-     with Resource {
+     with TopLevelResource {
   
   /**
     * * The user can be referenced by their globally unique user ID or their email address.
@@ -48,10 +49,10 @@ trait Workspaces
     * @param dispatchOptions?
     * @return
     */
-  def addUser(workspace: String, data: UserParams): typings.bluebird.mod.^[Type] = js.native
-  def addUser(workspace: String, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def addUser(workspace: Double, data: UserParams): typings.bluebird.mod.^[Type] = js.native
-  def addUser(workspace: Double, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def addUser(workspace: String, data: UserParams): ^[Type] = js.native
+  def addUser(workspace: String, data: UserParams, dispatchOptions: Any): ^[Type] = js.native
+  def addUser(workspace: Double, data: UserParams): ^[Type] = js.native
+  def addUser(workspace: Double, data: UserParams, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * Returns the compact records for all workspaces visible to the authorized user.
@@ -62,10 +63,10 @@ trait Workspaces
     * @param dispatchOptions?
     * @return
     */
-  def findAll(): typings.bluebird.mod.^[ResourceList[ShortType]] = js.native
-  def findAll(params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[ShortType]] = js.native
-  def findAll(params: PaginationParams): typings.bluebird.mod.^[ResourceList[ShortType]] = js.native
-  def findAll(params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[ShortType]] = js.native
+  def findAll(): ^[ResourceList[ShortType]] = js.native
+  def findAll(params: Unit, dispatchOptions: Any): ^[ResourceList[ShortType]] = js.native
+  def findAll(params: PaginationParams): ^[ResourceList[ShortType]] = js.native
+  def findAll(params: PaginationParams, dispatchOptions: Any): ^[ResourceList[ShortType]] = js.native
   
   /**
     * * Returns the full workspace record for a single workspace.
@@ -78,14 +79,35 @@ trait Workspaces
     * @param dispatchOptions?
     * @return
     */
-  def findById(workspace: String): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def findById(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def findById(workspace: String, params: Params): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def findById(workspace: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def findById(workspace: Double): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def findById(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def findById(workspace: Double, params: Params): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def findById(workspace: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def findById(workspace: String): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def findById(workspace: String, params: Unit, dispatchOptions: Any): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def findById(workspace: String, params: Params): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def findById(workspace: String, params: Params, dispatchOptions: Any): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def findById(workspace: Double): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def findById(workspace: Double, params: Unit, dispatchOptions: Any): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def findById(workspace: Double, params: Params): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def findById(workspace: Double, params: Params, dispatchOptions: Any): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  
+  // https://github.com/Asana/node-asana/blob/6bf00fb3257847744bf0ebe2dc0e95c445477282/lib/resources/gen/workspaces.js#L57-L74
+  /**
+    * Get multiple workspaces
+    * @param {Object} params: Parameters for the request
+    *  - offset {String}:  Offset token. An offset to the next page returned by the API. A pagination request will return an offset token, which can be used as an input parameter to the next
+    *    request. If an offset is not passed in, the API will return the first page of results. 'Note: You can only pass in an offset that was returned to you via a previously
+    *    paginated request.'
+    *  - limit {Number}:  Results per page. The number of objects to return per page. The value must be between 1 and 100.
+    *  - optFields {[String]}:  Defines fields to return. Some requests return *compact* representations of objects in order to conserve resources and complete the request more
+    *    efficiently. Other times requests return more information than you may need. This option allows you to list the exact set of fields that the API should be sure to return for the
+    *    objects. The field names should be provided as paths, described below. The id of included objects will always be returned, regardless of the field options.
+    * - optPretty {Boolean}:  Provides "pretty" output. Provides the response in a "pretty" format. In the case of JSON this means doing proper line breaking and indentation to make it
+    *    readable. This will take extra time and increase the response size so it is advisable only to use this during debugging.
+    * @param {Object} [dispatchOptions]: Options, if any, to pass the dispatcher for the request
+    * @return {Promise} The requested resource
+    */
+  def getWorkspaces(): ^[ResourceList[typings.asana.mod.resources.Workspaces.Type]] = js.native
+  def getWorkspaces(params: Any): ^[ResourceList[typings.asana.mod.resources.Workspaces.Type]] = js.native
+  def getWorkspaces(params: Any, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Workspaces.Type]] = js.native
+  def getWorkspaces(params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Workspaces.Type]] = js.native
   
   /**
     * * The user making this call must be an admin in the workspace.
@@ -102,10 +124,10 @@ trait Workspaces
     * @param dispatchOptions?
     * @return
     */
-  def removeUser(workspace: String, data: UserParams): typings.bluebird.mod.^[js.Any] = js.native
-  def removeUser(workspace: String, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def removeUser(workspace: Double, data: UserParams): typings.bluebird.mod.^[js.Any] = js.native
-  def removeUser(workspace: Double, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def removeUser(workspace: String, data: UserParams): ^[Any] = js.native
+  def removeUser(workspace: String, data: UserParams, dispatchOptions: Any): ^[Any] = js.native
+  def removeUser(workspace: Double, data: UserParams): ^[Any] = js.native
+  def removeUser(workspace: Double, data: UserParams, dispatchOptions: Any): ^[Any] = js.native
   
   /**
     * * Retrieves objects in the workspace based on an auto-completion/typeahead
@@ -131,14 +153,14 @@ trait Workspaces
     * @param dispatchOptions?
     * @return
     */
-  def typeahead(workspace: String): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def typeahead(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def typeahead(workspace: String, params: TypeaheadParams): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def typeahead(workspace: String, params: TypeaheadParams, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def typeahead(workspace: Double): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def typeahead(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def typeahead(workspace: Double, params: TypeaheadParams): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def typeahead(workspace: Double, params: TypeaheadParams, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def typeahead(workspace: String): ^[SimpleResourceList] = js.native
+  def typeahead(workspace: String, params: Unit, dispatchOptions: Any): ^[SimpleResourceList] = js.native
+  def typeahead(workspace: String, params: TypeaheadParams): ^[SimpleResourceList] = js.native
+  def typeahead(workspace: String, params: TypeaheadParams, dispatchOptions: Any): ^[SimpleResourceList] = js.native
+  def typeahead(workspace: Double): ^[SimpleResourceList] = js.native
+  def typeahead(workspace: Double, params: Unit, dispatchOptions: Any): ^[SimpleResourceList] = js.native
+  def typeahead(workspace: Double, params: TypeaheadParams): ^[SimpleResourceList] = js.native
+  def typeahead(workspace: Double, params: TypeaheadParams, dispatchOptions: Any): ^[SimpleResourceList] = js.native
   
   /**
     * * A specific, existing workspace can be updated by making a PUT request on
@@ -157,17 +179,17 @@ trait Workspaces
     * @param dispatchOptions?
     * @return
     */
-  def update(workspace: String, data: Name): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def update(workspace: String, data: Name, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def update(workspace: Double, data: Name): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
-  def update(workspace: Double, data: Name, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def update(workspace: String, data: Name): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def update(workspace: String, data: Name, dispatchOptions: Any): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def update(workspace: Double, data: Name): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
+  def update(workspace: Double, data: Name, dispatchOptions: Any): ^[typings.asana.mod.resources.Workspaces.Type] = js.native
 }
 object Workspaces extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Workspaces")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Workspaces {
     /**
@@ -180,22 +202,56 @@ object Workspaces extends Shortcut {
   @js.native
   val ^ : WorkspacesStatic = js.native
   
-  @js.native
   trait ShortType
     extends StObject
        with Resource {
     
-    var is_organization: js.UndefOr[Boolean] = js.native
+    var is_organization: js.UndefOr[Boolean] = js.undefined
+  }
+  object ShortType {
+    
+    inline def apply(gid: String, name: String, resource_type: String): ShortType = {
+      val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ShortType]
+    }
+    
+    extension [Self <: ShortType](x: Self) {
+      
+      inline def setIs_organization(value: Boolean): Self = StObject.set(x, "is_organization", value.asInstanceOf[js.Any])
+      
+      inline def setIs_organizationUndefined: Self = StObject.set(x, "is_organization", js.undefined)
+    }
   }
   
-  @js.native
   trait Type
     extends StObject
        with Resource {
     
-    var email_domains: js.Array[String] = js.native
+    var email_domains: js.Array[String]
     
-    var is_organization: Boolean = js.native
+    var is_organization: Boolean
+  }
+  object Type {
+    
+    inline def apply(
+      email_domains: js.Array[String],
+      gid: String,
+      is_organization: Boolean,
+      name: String,
+      resource_type: String
+    ): typings.asana.mod.resources.Workspaces.Type = {
+      val __obj = js.Dynamic.literal(email_domains = email_domains.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], is_organization = is_organization.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.asana.mod.resources.Workspaces.Type]
+    }
+    
+    extension [Self <: typings.asana.mod.resources.Workspaces.Type](x: Self) {
+      
+      inline def setEmail_domains(value: js.Array[String]): Self = StObject.set(x, "email_domains", value.asInstanceOf[js.Any])
+      
+      inline def setEmail_domainsVarargs(value: String*): Self = StObject.set(x, "email_domains", js.Array(value*))
+      
+      inline def setIs_organization(value: Boolean): Self = StObject.set(x, "is_organization", value.asInstanceOf[js.Any])
+    }
   }
   
   trait TypeaheadParams extends StObject {

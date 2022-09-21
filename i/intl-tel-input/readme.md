@@ -1,7 +1,7 @@
 
 # Scala.js typings for intl-tel-input
 
-Typings are for version 14.0
+Typings are for version 17.0
 
 ## Library description:
 A JavaScript plugin for entering and validating international telephone numbers
@@ -10,10 +10,10 @@ A JavaScript plugin for entering and validating international telephone numbers
 | ------------------ | :-------------: |
 | Full name          | intl-tel-input |
 | Keywords           | international, i18n, country, dial, code, telephone, mobile, input, flag |
-| # releases         | 31 |
-| # dependents       | 36 |
-| # downloads        | 5032161 |
-| # stars            | 10 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 897940.3333333334 |
+| # stars            | 6401.0 |
 
 ## Links
 - [Homepage](https://github.com/jackocnr/intl-tel-input#readme)

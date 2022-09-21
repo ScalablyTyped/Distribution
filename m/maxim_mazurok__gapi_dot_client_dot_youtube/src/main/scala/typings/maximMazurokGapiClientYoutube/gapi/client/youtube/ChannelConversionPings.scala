@@ -22,6 +22,6 @@ object ChannelConversionPings {
     
     inline def setPingsUndefined: Self = StObject.set(x, "pings", js.undefined)
     
-    inline def setPingsVarargs(value: ChannelConversionPing*): Self = StObject.set(x, "pings", js.Array(value :_*))
+    inline def setPingsVarargs(value: ChannelConversionPing*): Self = StObject.set(x, "pings", js.Array(value*))
   }
 }

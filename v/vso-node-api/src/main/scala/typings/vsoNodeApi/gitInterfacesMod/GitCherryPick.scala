@@ -13,7 +13,7 @@ trait GitCherryPick
 object GitCherryPick {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     cherryPickId: Double,
     detailedStatus: GitAsyncRefOperationDetail,
     parameters: GitAsyncRefOperationParameters,

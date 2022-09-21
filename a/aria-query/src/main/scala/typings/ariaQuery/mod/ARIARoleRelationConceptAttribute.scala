@@ -29,7 +29,7 @@ object ARIARoleRelationConceptAttribute {
     
     inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
-    inline def setConstraintsVarargs(value: (unset | Greaterthansign1)*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: (unset | Greaterthansign1)*): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -12,10 +12,10 @@ trait IMenuService extends StObject {
   
   def close(): Unit = js.native
   
-  def hide(): IPromise[js.Any] = js.native
-  def hide(response: js.Any): IPromise[js.Any] = js.native
-  def hide(response: js.Any, options: js.Any): IPromise[js.Any] = js.native
-  def hide(response: Unit, options: js.Any): IPromise[js.Any] = js.native
+  def hide(): IPromise[Any] = js.native
+  def hide(response: Any): IPromise[Any] = js.native
+  def hide(response: Any, options: Any): IPromise[Any] = js.native
+  def hide(response: Unit, options: Any): IPromise[Any] = js.native
   
   def open(): Unit = js.native
   def open(event: JQueryEventObject): Unit = js.native

@@ -64,13 +64,13 @@ object BlockingResponse {
     
     inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
-    inline def setRequestHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+    inline def setRequestHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
     
     inline def setResponseHeaders(value: HttpHeaders): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
     
     inline def setUpgradeToSecure(value: Boolean): Self = StObject.set(x, "upgradeToSecure", value.asInstanceOf[js.Any])
     

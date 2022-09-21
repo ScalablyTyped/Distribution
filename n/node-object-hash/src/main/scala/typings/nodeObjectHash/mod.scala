@@ -1,6 +1,6 @@
 package typings.nodeObjectHash
 
-import typings.node.cryptoMod.HexBase64Latin1Encoding
+import typings.node.cryptoMod.BinaryToTextEncoding
 import typings.nodeObjectHash.objectSorterMod.SorterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,6 +11,7 @@ object mod {
   /**
     * Hasher constructor
     * @param options hasher options
+    * @return hasher instance
     */
   inline def apply(): Hasher = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Hasher]
   inline def apply(options: HasherOptions): Hasher = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Hasher]
@@ -19,23 +20,47 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * If object implements Hashable interface then value from toHash
+    * will be used for hash function. It means that the different objects
+    * with the function toHash that return the same value will have the same hash
+    */
+  trait Hashable extends StObject {
+    
+    def toHashableString(): String
+  }
+  object Hashable {
+    
+    inline def apply(toHashableString: () => String): Hashable = {
+      val __obj = js.Dynamic.literal(toHashableString = js.Any.fromFunction0(toHashableString))
+      __obj.asInstanceOf[Hashable]
+    }
+    
+    extension [Self <: Hashable](x: Self) {
+      
+      inline def setToHashableString(value: () => String): Self = StObject.set(x, "toHashableString", js.Any.fromFunction0(value))
+    }
+  }
+  
   @js.native
   trait Hasher extends StObject {
     
+    def hash(`object`: Any): String = js.native
+    def hash(`object`: Any, opts: HasherOptions): String = js.native
     /**
       * Create hash of an object
       * @param object source object
       * @returns hash string of an object
       */
-    def hash(`object`: js.Any): String = js.native
-    def hash(`object`: js.Any, opts: HasherOptions): String = js.native
+    def hash(`object`: Hashable): String = js.native
+    def hash(`object`: Hashable, opts: HasherOptions): String = js.native
     
     /**
       * Create sorted string from an object
       * @param object source object
       * @returns sorted string from an object
       */
-    def sort(`object`: js.Any): String = js.native
+    def sort(`object`: Any): String = js.native
     
     /**
       * Create sorted string from an object
@@ -43,7 +68,7 @@ object mod {
       * @returns sorted string from an object
       * @alias sort
       */
-    def sortObject(`object`: js.Any): String = js.native
+    def sortObject(`object`: Any): String = js.native
   }
   
   /**
@@ -63,7 +88,7 @@ object mod {
       * String encoding for hash
       * @default 'hex'
       */
-    var enc: js.UndefOr[HexBase64Latin1Encoding] = js.undefined
+    var enc: js.UndefOr[BinaryToTextEncoding] = js.undefined
   }
   object HasherOptions {
     
@@ -78,7 +103,7 @@ object mod {
       
       inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
       
-      inline def setEnc(value: HexBase64Latin1Encoding): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
+      inline def setEnc(value: BinaryToTextEncoding): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
       
       inline def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
     }

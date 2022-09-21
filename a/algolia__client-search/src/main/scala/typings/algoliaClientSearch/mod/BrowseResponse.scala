@@ -31,6 +31,6 @@ object BrowseResponse {
     
     inline def setHits(value: js.Array[TObject & ObjectWithObjectID]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    inline def setHitsVarargs(value: (TObject & ObjectWithObjectID)*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: (TObject & ObjectWithObjectID)*): Self = StObject.set(x, "hits", js.Array(value*))
   }
 }

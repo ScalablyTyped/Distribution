@@ -1,6 +1,6 @@
 package typings.node.anon
 
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.nodeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -12,7 +12,7 @@ trait Overlay extends StObject {
   
   var point: typings.bmapgl.BMapGL.Point
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
 }
@@ -22,7 +22,7 @@ object Overlay {
     overlay: typings.bmapgl.BMapGL.Overlay,
     pixel: typings.bmapgl.BMapGL.Pixel,
     point: typings.bmapgl.BMapGL.Point,
-    target: js.Any,
+    target: Any,
     `type`: String
   ): Overlay = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any], pixel = pixel.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
@@ -38,7 +38,7 @@ object Overlay {
     
     inline def setPoint(value: typings.bmapgl.BMapGL.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

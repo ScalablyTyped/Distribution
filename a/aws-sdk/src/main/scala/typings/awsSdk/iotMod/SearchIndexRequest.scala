@@ -22,7 +22,7 @@ trait SearchIndexRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The search query string.
+    * The search query string. For more information about the search query syntax, see Query syntax.
     */
   var queryString: QueryString
   

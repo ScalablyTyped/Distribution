@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object logMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(arg: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(arg: js.Any, base: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arg: Unit, base: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(arg: Any): Any = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(arg: Any, base: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arg: Unit, base: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/math/log", JSImport.Namespace)
   @js.native

@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("rc-upload", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.rcUpload.uploadMod.default
   object default {
     
@@ -21,8 +21,8 @@ object mod {
       
       @JSImport("rc-upload", "default.defaultProps.beforeUpload")
       @js.native
-      def beforeUpload: js.Any = js.native
-      inline def beforeUpload_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUpload")(x.asInstanceOf[js.Any])
+      def beforeUpload: Any = js.native
+      inline def beforeUpload_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUpload")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-upload", "default.defaultProps.component")
       @js.native
@@ -31,8 +31,8 @@ object mod {
       
       @JSImport("rc-upload", "default.defaultProps.customRequest")
       @js.native
-      def customRequest: js.Any = js.native
-      inline def customRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customRequest")(x.asInstanceOf[js.Any])
+      def customRequest: Any = js.native
+      inline def customRequest_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customRequest")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-upload", "default.defaultProps.multipart")
       @js.native

@@ -4,7 +4,7 @@ import typings.react.mod.Context
 import typings.react.mod.NamedExoticComponent
 import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
-import typings.reactNativeGestureHandler.mod.PanGestureHandler
+import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandler
 import typings.reactNavigation.mod.CreateNavigatorConfig
 import typings.reactNavigation.mod.NavigationNavigator
 import typings.reactNavigation.mod.NavigationParams
@@ -40,7 +40,7 @@ object mod {
   
   @JSImport("react-navigation-stack", "Assets")
   @js.native
-  val Assets: js.Array[js.Any] = js.native
+  val Assets: js.Array[Any] = js.native
   
   @JSImport("react-navigation-stack", "CardAnimationContext")
   @js.native
@@ -108,7 +108,7 @@ object mod {
   
   @JSImport("react-navigation-stack", "StackView")
   @js.native
-  class StackView ()
+  open class StackView ()
     extends typings.reactNavigationStack.vendorMod.StackView
   /* static members */
   object StackView {
@@ -182,14 +182,14 @@ object mod {
     routeConfigMap: NavigationRouteConfigMap[
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 
-      js.Any
+      Any
     ]
-  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStackNavigator")(routeConfigMap.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStackNavigator")(routeConfigMap.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
   inline def createStackNavigator(
     routeConfigMap: NavigationRouteConfigMap[
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 
-      js.Any
+      Any
     ],
     stackConfig: CreateNavigatorConfig[
       StackNavigationConfig, 
@@ -197,7 +197,7 @@ object mod {
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]
     ]
-  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStackNavigator")(routeConfigMap.asInstanceOf[js.Any], stackConfig.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStackNavigator")(routeConfigMap.asInstanceOf[js.Any], stackConfig.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
   
   inline def useCardAnimation(): StackCardInterpolationProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useCardAnimation")().asInstanceOf[StackCardInterpolationProps]
   

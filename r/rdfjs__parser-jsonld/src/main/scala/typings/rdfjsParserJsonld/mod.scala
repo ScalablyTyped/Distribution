@@ -1,13 +1,12 @@
 package typings.rdfjsParserJsonld
 
 import typings.jsonld.jsonldSpecMod.Context
-import typings.jsonld.jsonldSpecMod.JsonLdObj
 import typings.node.eventsMod.EventEmitter
-import typings.rdfJs.mod.BaseQuad
-import typings.rdfJs.mod.DataFactory
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.Sink
-import typings.rdfJs.mod.Stream
+import typings.rdfjsTypes.dataModelMod.BaseQuad
+import typings.rdfjsTypes.dataModelMod.DataFactory
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.streamMod.Sink
+import typings.rdfjsTypes.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("@rdfjs/parser-jsonld", JSImport.Namespace)
   @js.native
-  class ^[Q /* <: BaseQuad */] ()
+  open class ^[Q /* <: BaseQuad */] ()
     extends StObject
        with Parser[Q] {
     def this(options: ParserOptions) = this()
@@ -67,8 +66,6 @@ object mod {
       inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setContextVarargs(value: JsonLdObj*): Self = StObject.set(x, "context", js.Array(value :_*))
       
       inline def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       

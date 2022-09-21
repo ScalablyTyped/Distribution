@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fortawesome/react-fontawesome" : "0.1.12"
+      "@fortawesome/react-fontawesome" : "0.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@fortawesome/react-fontawesome" : "0.1.12"
+      "@fortawesome/react-fontawesome" : "0.2.0"
     }
   ],
   "compile-devDependencies" : [

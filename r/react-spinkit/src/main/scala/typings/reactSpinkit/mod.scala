@@ -51,10 +51,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-spinkit", JSImport.Namespace)
   @js.native
-  class ^ protected ()
-    extends Component[SpinnerProps, ComponentState, js.Any] {
+  open class ^ protected () extends Component[SpinnerProps, ComponentState, Any] {
     def this(props: SpinnerProps) = this()
-    def this(props: SpinnerProps, context: js.Any) = this()
+    def this(props: SpinnerProps, context: Any) = this()
   }
   @JSImport("react-spinkit", JSImport.Namespace)
   @js.native

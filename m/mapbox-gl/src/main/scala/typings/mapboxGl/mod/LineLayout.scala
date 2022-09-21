@@ -14,7 +14,7 @@ trait LineLayout
      with Layout
      with _AnyLayout {
   
-  var `line-cap`: js.UndefOr[butt | round | square] = js.undefined
+  var `line-cap`: js.UndefOr[butt | round | square | Expression] = js.undefined
   
   var `line-join`: js.UndefOr[bevel | round | miter | Expression] = js.undefined
   
@@ -33,7 +33,7 @@ object LineLayout {
   
   extension [Self <: LineLayout](x: Self) {
     
-    inline def `setLine-cap`(value: butt | round | square): Self = StObject.set(x, "line-cap", value.asInstanceOf[js.Any])
+    inline def `setLine-cap`(value: butt | round | square | Expression): Self = StObject.set(x, "line-cap", value.asInstanceOf[js.Any])
     
     inline def `setLine-capUndefined`: Self = StObject.set(x, "line-cap", js.undefined)
     

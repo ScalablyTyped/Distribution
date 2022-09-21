@@ -21,10 +21,10 @@ object TonalColorsInput {
     
     inline def setAmbient(value: InputColor): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
     
-    inline def setAmbientVarargs(value: Double*): Self = StObject.set(x, "ambient", js.Array(value :_*))
+    inline def setAmbientVarargs(value: Double*): Self = StObject.set(x, "ambient", js.Array(value*))
     
     inline def setSpot(value: InputColor): Self = StObject.set(x, "spot", value.asInstanceOf[js.Any])
     
-    inline def setSpotVarargs(value: Double*): Self = StObject.set(x, "spot", js.Array(value :_*))
+    inline def setSpotVarargs(value: Double*): Self = StObject.set(x, "spot", js.Array(value*))
   }
 }

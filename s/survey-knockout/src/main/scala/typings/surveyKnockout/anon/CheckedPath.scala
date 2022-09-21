@@ -10,6 +10,8 @@ trait CheckedPath extends StObject {
   
   var control: String
   
+  var controlCheckbox: String
+  
   var disabledLabel: String
   
   var indeterminatePath: String
@@ -30,6 +32,8 @@ trait CheckedPath extends StObject {
   
   var root: String
   
+  var rootRadio: String
+  
   var slider: String
   
   var switch: String
@@ -41,6 +45,7 @@ object CheckedPath {
   inline def apply(
     checkedPath: String,
     control: String,
+    controlCheckbox: String,
     disabledLabel: String,
     indeterminatePath: String,
     item: String,
@@ -51,11 +56,12 @@ object CheckedPath {
     label: String,
     materialDecorator: String,
     root: String,
+    rootRadio: String,
     slider: String,
     switch: String,
     uncheckedPath: String
   ): CheckedPath = {
-    val __obj = js.Dynamic.literal(checkedPath = checkedPath.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], disabledLabel = disabledLabel.asInstanceOf[js.Any], indeterminatePath = indeterminatePath.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemIndeterminate = itemIndeterminate.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], slider = slider.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], uncheckedPath = uncheckedPath.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkedPath = checkedPath.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], controlCheckbox = controlCheckbox.asInstanceOf[js.Any], disabledLabel = disabledLabel.asInstanceOf[js.Any], indeterminatePath = indeterminatePath.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemIndeterminate = itemIndeterminate.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], rootRadio = rootRadio.asInstanceOf[js.Any], slider = slider.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], uncheckedPath = uncheckedPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckedPath]
   }
   
@@ -64,6 +70,8 @@ object CheckedPath {
     inline def setCheckedPath(value: String): Self = StObject.set(x, "checkedPath", value.asInstanceOf[js.Any])
     
     inline def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    
+    inline def setControlCheckbox(value: String): Self = StObject.set(x, "controlCheckbox", value.asInstanceOf[js.Any])
     
     inline def setDisabledLabel(value: String): Self = StObject.set(x, "disabledLabel", value.asInstanceOf[js.Any])
     
@@ -84,6 +92,8 @@ object CheckedPath {
     inline def setMaterialDecorator(value: String): Self = StObject.set(x, "materialDecorator", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootRadio(value: String): Self = StObject.set(x, "rootRadio", value.asInstanceOf[js.Any])
     
     inline def setSlider(value: String): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     

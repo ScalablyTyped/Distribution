@@ -10,10 +10,10 @@ Determine address of proxied request
 | ------------------ | :-------------: |
 | Full name          | proxy-addr |
 | Keywords           | ip, proxy, x-forwarded-for |
-| # releases         | 3 |
-| # dependents       | 215 |
-| # downloads        | 593206146 |
-| # stars            | 13 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9.2780846E7 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/proxy-addr#readme)

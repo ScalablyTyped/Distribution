@@ -10,10 +10,10 @@ object memoryMod {
   
   @JSImport("material-ui/svg-icons/hardware/memory", JSImport.Default)
   @js.native
-  class default () extends HardwareMemory
+  open class default () extends HardwareMemory
   
   @JSImport("material-ui/svg-icons/hardware/memory", "HardwareMemory")
   @js.native
-  class HardwareMemory ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareMemory ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

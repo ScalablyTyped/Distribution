@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderFulfillmentType")
 @js.native
-class OrderFulfillmentType () extends StObject
+open class OrderFulfillmentType () extends StObject

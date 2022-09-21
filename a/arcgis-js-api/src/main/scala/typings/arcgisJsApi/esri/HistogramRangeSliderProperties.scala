@@ -7,7 +7,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`less-than`
 import typings.arcgisJsApi.arcgisJsApiStrings.`not-between`
 import typings.arcgisJsApi.arcgisJsApiStrings.`not-equal`
 import typings.arcgisJsApi.arcgisJsApiStrings.average
-import typings.arcgisJsApi.arcgisJsApiStrings.between
+import typings.arcgisJsApi.arcgisJsApiStrings.between_
 import typings.arcgisJsApi.arcgisJsApiStrings.equal
 import typings.arcgisJsApi.arcgisJsApiStrings.max
 import typings.arcgisJsApi.arcgisJsApiStrings.min
@@ -59,12 +59,16 @@ trait HistogramRangeSliderProperties
   /**
     * Sets the color of the histogram bars that are excluded based on the specified [rangeType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#rangeType).
     *
+    * @default #d7e5f0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#excludedBarColor)
     */
   var excludedBarColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * Sets the color of the histogram bars that are included in the specified [rangeType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#rangeType).
+    *
+    * @default #599dd4
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#includedBarColor)
     */
@@ -94,6 +98,8 @@ trait HistogramRangeSliderProperties
   /**
     * Defines how slider thumb values should be rounded.
     *
+    * @default 4
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#precision)
     */
   var precision: js.UndefOr[Double] = js.undefined
@@ -104,7 +110,7 @@ trait HistogramRangeSliderProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#rangeType)
     */
   var rangeType: js.UndefOr[
-    equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
+    equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between_ | `not-between`
   ] = js.undefined
   
   /**
@@ -116,6 +122,8 @@ trait HistogramRangeSliderProperties
   
   /**
     * Indicates the number of standard deviation lines to render on the histogram from the [average].
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#standardDeviationCount)
     */
@@ -148,7 +156,7 @@ object HistogramRangeSliderProperties {
     
     inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
-    inline def setBarCreatedFunction(value: (/* index */ Double, /* element */ js.Any) => Unit): Self = StObject.set(x, "barCreatedFunction", js.Any.fromFunction2(value))
+    inline def setBarCreatedFunction(value: (/* index */ Double, /* element */ Any) => scala.Unit): Self = StObject.set(x, "barCreatedFunction", js.Any.fromFunction2(value))
     
     inline def setBarCreatedFunctionUndefined: Self = StObject.set(x, "barCreatedFunction", js.undefined)
     
@@ -156,10 +164,10 @@ object HistogramRangeSliderProperties {
     
     inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
-    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value*))
     
     inline def setDataLineCreatedFunction(
-      value: (/* lineElement */ js.Any, /* labelElement */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit
+      value: (/* lineElement */ Any, /* labelElement */ js.UndefOr[Any], /* index */ js.UndefOr[Double]) => scala.Unit
     ): Self = StObject.set(x, "dataLineCreatedFunction", js.Any.fromFunction3(value))
     
     inline def setDataLineCreatedFunctionUndefined: Self = StObject.set(x, "dataLineCreatedFunction", js.undefined)
@@ -168,19 +176,19 @@ object HistogramRangeSliderProperties {
     
     inline def setDataLinesUndefined: Self = StObject.set(x, "dataLines", js.undefined)
     
-    inline def setDataLinesVarargs(value: HistogramRangeSliderDataLines*): Self = StObject.set(x, "dataLines", js.Array(value :_*))
+    inline def setDataLinesVarargs(value: HistogramRangeSliderDataLines*): Self = StObject.set(x, "dataLines", js.Array(value*))
     
     inline def setExcludedBarColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "excludedBarColor", value.asInstanceOf[js.Any])
     
     inline def setExcludedBarColorUndefined: Self = StObject.set(x, "excludedBarColor", js.undefined)
     
-    inline def setExcludedBarColorVarargs(value: Double*): Self = StObject.set(x, "excludedBarColor", js.Array(value :_*))
+    inline def setExcludedBarColorVarargs(value: Double*): Self = StObject.set(x, "excludedBarColor", js.Array(value*))
     
     inline def setIncludedBarColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "includedBarColor", value.asInstanceOf[js.Any])
     
     inline def setIncludedBarColorUndefined: Self = StObject.set(x, "includedBarColor", js.undefined)
     
-    inline def setIncludedBarColorVarargs(value: Double*): Self = StObject.set(x, "includedBarColor", js.Array(value :_*))
+    inline def setIncludedBarColorVarargs(value: Double*): Self = StObject.set(x, "includedBarColor", js.Array(value*))
     
     inline def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String
@@ -201,7 +209,7 @@ object HistogramRangeSliderProperties {
     inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     inline def setRangeType(
-      value: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
+      value: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between_ | `not-between`
     ): Self = StObject.set(x, "rangeType", value.asInstanceOf[js.Any])
     
     inline def setRangeTypeUndefined: Self = StObject.set(x, "rangeType", js.undefined)
@@ -218,7 +226,7 @@ object HistogramRangeSliderProperties {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     
     inline def setViewModel(value: HistogramRangeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

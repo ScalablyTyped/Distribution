@@ -9,7 +9,7 @@ trait SchemaGoogleCloudMlV1Config extends StObject {
   /**
     * The service account Cloud ML uses to run on TPU node.
     */
-  var tpuServiceAccount: js.UndefOr[String] = js.undefined
+  var tpuServiceAccount: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudMlV1Config {
   
@@ -21,6 +21,8 @@ object SchemaGoogleCloudMlV1Config {
   extension [Self <: SchemaGoogleCloudMlV1Config](x: Self) {
     
     inline def setTpuServiceAccount(value: String): Self = StObject.set(x, "tpuServiceAccount", value.asInstanceOf[js.Any])
+    
+    inline def setTpuServiceAccountNull: Self = StObject.set(x, "tpuServiceAccount", null)
     
     inline def setTpuServiceAccountUndefined: Self = StObject.set(x, "tpuServiceAccount", js.undefined)
   }

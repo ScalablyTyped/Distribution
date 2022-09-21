@@ -29,7 +29,7 @@ trait Phonetics extends StObject {
   
   val Length: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Start: Double = js.native
   
@@ -37,5 +37,5 @@ trait Phonetics extends StObject {
   
   var Visible: Boolean = js.native
   
-  def _Default(Index: Double): js.Any = js.native
+  def _Default(Index: Double): Any = js.native
 }

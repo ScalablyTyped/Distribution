@@ -10,26 +10,26 @@ object elementQueriesElementQueriesMod {
   
   @JSImport("playable/dist/src/modules/ui/core/element-queries/element-queries", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ElementQueries {
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, hasPrefix: Prefix) = this()
     
     /* private */ /* CompleteClass */
-    var _element: js.Any = js.native
+    var _element: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _getQueryAttributeValue: js.Any = js.native
+    var _getQueryAttributeValue: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _queries: js.Any = js.native
+    var _queries: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _queryPrefix: js.Any = js.native
+    var _queryPrefix: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _setQueryAttribute: js.Any = js.native
+    var _setQueryAttribute: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -43,15 +43,15 @@ object elementQueriesElementQueriesMod {
   
   trait ElementQueries extends StObject {
     
-    /* private */ var _element: js.Any
+    /* private */ var _element: Any
     
-    /* private */ var _getQueryAttributeValue: js.Any
+    /* private */ var _getQueryAttributeValue: Any
     
-    /* private */ var _queries: js.Any
+    /* private */ var _queries: Any
     
-    /* private */ var _queryPrefix: js.Any
+    /* private */ var _queryPrefix: Any
     
-    /* private */ var _setQueryAttribute: js.Any
+    /* private */ var _setQueryAttribute: Any
     
     def destroy(): Unit
     
@@ -62,11 +62,11 @@ object elementQueriesElementQueriesMod {
   object ElementQueries {
     
     inline def apply(
-      _element: js.Any,
-      _getQueryAttributeValue: js.Any,
-      _queries: js.Any,
-      _queryPrefix: js.Any,
-      _setQueryAttribute: js.Any,
+      _element: Any,
+      _getQueryAttributeValue: Any,
+      _queries: Any,
+      _queryPrefix: Any,
+      _setQueryAttribute: Any,
       destroy: () => Unit,
       getQueries: () => Unit,
       setWidth: Double => Unit
@@ -83,15 +83,15 @@ object elementQueriesElementQueriesMod {
       
       inline def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
       
-      inline def set_element(value: js.Any): Self = StObject.set(x, "_element", value.asInstanceOf[js.Any])
+      inline def set_element(value: Any): Self = StObject.set(x, "_element", value.asInstanceOf[js.Any])
       
-      inline def set_getQueryAttributeValue(value: js.Any): Self = StObject.set(x, "_getQueryAttributeValue", value.asInstanceOf[js.Any])
+      inline def set_getQueryAttributeValue(value: Any): Self = StObject.set(x, "_getQueryAttributeValue", value.asInstanceOf[js.Any])
       
-      inline def set_queries(value: js.Any): Self = StObject.set(x, "_queries", value.asInstanceOf[js.Any])
+      inline def set_queries(value: Any): Self = StObject.set(x, "_queries", value.asInstanceOf[js.Any])
       
-      inline def set_queryPrefix(value: js.Any): Self = StObject.set(x, "_queryPrefix", value.asInstanceOf[js.Any])
+      inline def set_queryPrefix(value: Any): Self = StObject.set(x, "_queryPrefix", value.asInstanceOf[js.Any])
       
-      inline def set_setQueryAttribute(value: js.Any): Self = StObject.set(x, "_setQueryAttribute", value.asInstanceOf[js.Any])
+      inline def set_setQueryAttribute(value: Any): Self = StObject.set(x, "_setQueryAttribute", value.asInstanceOf[js.Any])
     }
   }
 }

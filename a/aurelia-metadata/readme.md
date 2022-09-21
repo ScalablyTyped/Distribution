@@ -10,10 +10,10 @@ Utilities for reading and writing the metadata of JavaScript functions.
 | ------------------ | :-------------: |
 | Full name          | aurelia-metadata |
 | Keywords           | aurelia, metadata, annotations |
-| # releases         | 3 |
-| # dependents       | 56 |
-| # downloads        | 544570 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 53890.333333333336 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](http://aurelia.io)

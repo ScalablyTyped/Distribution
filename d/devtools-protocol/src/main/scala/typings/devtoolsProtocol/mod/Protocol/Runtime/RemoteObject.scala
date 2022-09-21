@@ -9,13 +9,8 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.boolean
 import typings.devtoolsProtocol.devtoolsProtocolStrings.dataview
 import typings.devtoolsProtocol.devtoolsProtocolStrings.date
 import typings.devtoolsProtocol.devtoolsProtocolStrings.error
-import typings.devtoolsProtocol.devtoolsProtocolStrings.externref
-import typings.devtoolsProtocol.devtoolsProtocolStrings.f32
-import typings.devtoolsProtocol.devtoolsProtocolStrings.f64
 import typings.devtoolsProtocol.devtoolsProtocolStrings.function
 import typings.devtoolsProtocol.devtoolsProtocolStrings.generator
-import typings.devtoolsProtocol.devtoolsProtocolStrings.i32
-import typings.devtoolsProtocol.devtoolsProtocolStrings.i64
 import typings.devtoolsProtocol.devtoolsProtocolStrings.iterator
 import typings.devtoolsProtocol.devtoolsProtocolStrings.map
 import typings.devtoolsProtocol.devtoolsProtocolStrings.node
@@ -28,10 +23,10 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.string
 import typings.devtoolsProtocol.devtoolsProtocolStrings.symbol
 import typings.devtoolsProtocol.devtoolsProtocolStrings.typedarray
 import typings.devtoolsProtocol.devtoolsProtocolStrings.undefined
-import typings.devtoolsProtocol.devtoolsProtocolStrings.v128
-import typings.devtoolsProtocol.devtoolsProtocolStrings.wasm
+import typings.devtoolsProtocol.devtoolsProtocolStrings.wasmvalue
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakmap
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakset
+import typings.devtoolsProtocol.devtoolsProtocolStrings.webassemblymemory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,16 +56,18 @@ trait RemoteObject extends StObject {
   var preview: js.UndefOr[ObjectPreview] = js.undefined
   
   /**
-    * Object subtype hint. Specified for `object` or `wasm` type values only. (RemoteObjectSubtype enum)
+    * Object subtype hint. Specified for `object` type values only.
+    * NOTE: If you change anything here, make sure to also update
+    * `subtype` in `ObjectPreview` and `PropertyPreview` below. (RemoteObjectSubtype enum)
     */
   var subtype: js.UndefOr[
-    array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error | proxy_ | promise | typedarray | arraybuffer | dataview | i32 | i64 | f32 | f64 | v128 | externref
+    array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error | proxy_ | promise | typedarray | arraybuffer | dataview | webassemblymemory | wasmvalue
   ] = js.undefined
   
   /**
     * Object type. (RemoteObjectType enum)
     */
-  var `type`: `object` | function | undefined | string | number | boolean | symbol | bigint | wasm
+  var `type`: `object` | function | undefined | string | number | boolean | symbol | bigint
   
   /**
     * Primitive value which can not be JSON-stringified does not have `value`, but gets this
@@ -81,11 +78,16 @@ trait RemoteObject extends StObject {
   /**
     * Remote object value in case of primitive values or JSON values (if it was requested).
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * WebDriver BiDi representation of the value.
+    */
+  var webDriverValue: js.UndefOr[WebDriverValue] = js.undefined
 }
 object RemoteObject {
   
-  inline def apply(`type`: `object` | function | undefined | string | number | boolean | symbol | bigint | wasm): RemoteObject = {
+  inline def apply(`type`: `object` | function | undefined | string | number | boolean | symbol | bigint): RemoteObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteObject]
@@ -114,19 +116,23 @@ object RemoteObject {
     inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     inline def setSubtype(
-      value: array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error | proxy_ | promise | typedarray | arraybuffer | dataview | i32 | i64 | f32 | f64 | v128 | externref
+      value: array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error | proxy_ | promise | typedarray | arraybuffer | dataview | webassemblymemory | wasmvalue
     ): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
     inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
-    inline def setType(value: `object` | function | undefined | string | number | boolean | symbol | bigint | wasm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `object` | function | undefined | string | number | boolean | symbol | bigint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUnserializableValue(value: UnserializableValue): Self = StObject.set(x, "unserializableValue", value.asInstanceOf[js.Any])
     
     inline def setUnserializableValueUndefined: Self = StObject.set(x, "unserializableValue", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWebDriverValue(value: WebDriverValue): Self = StObject.set(x, "webDriverValue", value.asInstanceOf[js.Any])
+    
+    inline def setWebDriverValueUndefined: Self = StObject.set(x, "webDriverValue", js.undefined)
   }
 }

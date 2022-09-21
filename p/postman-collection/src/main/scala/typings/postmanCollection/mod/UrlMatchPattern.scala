@@ -2,14 +2,13 @@ package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Host
 import typings.postmanCollection.anon.Pattern
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postman-collection", "UrlMatchPattern")
 @js.native
-class UrlMatchPattern protected () extends StObject {
+open class UrlMatchPattern protected () extends StObject {
   def this(options: String) = this()
   def this(options: Pattern) = this()
   
@@ -17,7 +16,7 @@ class UrlMatchPattern protected () extends StObject {
   
   def getProtocols(): js.Array[String] = js.native
   
-  def globPatternToRegexp(pattern: String): RegExp = js.native
+  def globPatternToRegexp(pattern: String): js.RegExp = js.native
   
   def matchAbsoluteHostPattern(matchRegexObject: Host, remote: String): Boolean = js.native
   

@@ -7,17 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.BaseTexture")
 @js.native
-class BaseTexture protected ()
+/**
+  * Instantiates a new BaseTexture.
+  * Base class of all the textures in babylon.
+  * It groups all the common properties the materials, post process, lights... might need
+  * in order to make a correct use of the texture.
+  * @param sceneOrEngine Define the scene or engine the texture belongs to
+  * @param internalTexture Define the internal texture associated with the texture
+  */
+open class BaseTexture ()
   extends StObject
      with typings.babylonjs.BABYLON.BaseTexture {
-  /**
-    * Instantiates a new BaseTexture.
-    * Base class of all the textures in babylon.
-    * It groups all the common properties the materials, post process, lights... might need
-    * in order to make a correct use of the texture.
-    * @param sceneOrEngine Define the scene or engine the texture blongs to
-    */
   def this(sceneOrEngine: Nullable[typings.babylonjs.BABYLON.Scene | typings.babylonjs.BABYLON.ThinEngine]) = this()
+  def this(sceneOrEngine: Unit, internalTexture: Nullable[typings.babylonjs.BABYLON.InternalTexture]) = this()
+  def this(
+    sceneOrEngine: Nullable[typings.babylonjs.BABYLON.Scene | typings.babylonjs.BABYLON.ThinEngine],
+    internalTexture: Nullable[typings.babylonjs.BABYLON.InternalTexture]
+  ) = this()
   
   /**
     * Array of animations
@@ -48,8 +54,8 @@ object BaseTexture {
     */
   inline def WhenAllReady(textures: js.Array[typings.babylonjs.BABYLON.BaseTexture], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WhenAllReady")(textures.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("BABYLON.BaseTexture._isScene")
+  @JSGlobal("BABYLON.BaseTexture._IsScene")
   @js.native
-  def _isScene: js.Any = js.native
-  inline def _isScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isScene")(x.asInstanceOf[js.Any])
+  def _IsScene: Any = js.native
+  inline def _IsScene_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsScene")(x.asInstanceOf[js.Any])
 }

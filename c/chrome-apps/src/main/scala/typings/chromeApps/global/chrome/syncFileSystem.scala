@@ -33,8 +33,8 @@ import typings.chromeApps.chromeAppsStrings.synced_
 import typings.chromeApps.chromeAppsStrings.temporary_unavailable_
 import typings.chromeApps.chromeAppsStrings.updated_
 import typings.filesystem.FileEntry
-import typings.filesystem.FileSystem
 import typings.std.Exclude
+import typings.std.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

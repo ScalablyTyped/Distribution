@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UnityNotification extends StObject {
   
-  def showNotification(summary: String, body: String): js.Any = js.native
-  def showNotification(summary: String, body: String, iconUrl: String): js.Any = js.native
+  def showNotification(summary: String, body: String): Any = js.native
+  def showNotification(summary: String, body: String, iconUrl: String): Any = js.native
 }

@@ -10,10 +10,10 @@ Typings are for version 2.0.1
 | ------------------ | :-------------: |
 | Full name          | indefinite-observable |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 18280463 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2384418.6666666665 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/material-motion/indefinite-observable-js/#readme)

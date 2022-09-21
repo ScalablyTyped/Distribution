@@ -167,7 +167,7 @@ object s3Mod {
   
   @JSImport("@aws-sdk/client-s3-browser/S3", "S3")
   @js.native
-  class S3 protected () extends S3Client {
+  open class S3 protected () extends S3Client {
     def this(configuration: S3Configuration) = this()
     
     /**
@@ -180,7 +180,7 @@ object s3Mod {
     def abortMultipartUpload(args: AbortMultipartUploadInput): js.Promise[AbortMultipartUploadOutput] = js.native
     def abortMultipartUpload(
       args: AbortMultipartUploadInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[AbortMultipartUploadOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[AbortMultipartUploadOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -192,7 +192,7 @@ object s3Mod {
     def completeMultipartUpload(args: CompleteMultipartUploadInput): js.Promise[CompleteMultipartUploadOutput] = js.native
     def completeMultipartUpload(
       args: CompleteMultipartUploadInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CompleteMultipartUploadOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CompleteMultipartUploadOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -205,7 +205,7 @@ object s3Mod {
     def copyObject(args: CopyObjectInput): js.Promise[CopyObjectOutput] = js.native
     def copyObject(
       args: CopyObjectInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CopyObjectOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CopyObjectOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -219,7 +219,7 @@ object s3Mod {
     def createBucket(args: CreateBucketInput): js.Promise[CreateBucketOutput] = js.native
     def createBucket(
       args: CreateBucketInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateBucketOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateBucketOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -231,7 +231,7 @@ object s3Mod {
     def createMultipartUpload(args: CreateMultipartUploadInput): js.Promise[CreateMultipartUploadOutput] = js.native
     def createMultipartUpload(
       args: CreateMultipartUploadInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateMultipartUploadOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateMultipartUploadOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -243,7 +243,7 @@ object s3Mod {
     def deleteBucket(args: DeleteBucketInput): js.Promise[DeleteBucketOutput] = js.native
     def deleteBucket(
       args: DeleteBucketInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -255,11 +255,7 @@ object s3Mod {
     def deleteBucketAnalyticsConfiguration(args: DeleteBucketAnalyticsConfigurationInput): js.Promise[DeleteBucketAnalyticsConfigurationOutput] = js.native
     def deleteBucketAnalyticsConfiguration(
       args: DeleteBucketAnalyticsConfigurationInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[DeleteBucketAnalyticsConfigurationOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketAnalyticsConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -271,7 +267,7 @@ object s3Mod {
     def deleteBucketCors(args: DeleteBucketCorsInput): js.Promise[DeleteBucketCorsOutput] = js.native
     def deleteBucketCors(
       args: DeleteBucketCorsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketCorsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketCorsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -283,7 +279,7 @@ object s3Mod {
     def deleteBucketEncryption(args: DeleteBucketEncryptionInput): js.Promise[DeleteBucketEncryptionOutput] = js.native
     def deleteBucketEncryption(
       args: DeleteBucketEncryptionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketEncryptionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketEncryptionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -295,11 +291,7 @@ object s3Mod {
     def deleteBucketInventoryConfiguration(args: DeleteBucketInventoryConfigurationInput): js.Promise[DeleteBucketInventoryConfigurationOutput] = js.native
     def deleteBucketInventoryConfiguration(
       args: DeleteBucketInventoryConfigurationInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[DeleteBucketInventoryConfigurationOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketInventoryConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -311,7 +303,7 @@ object s3Mod {
     def deleteBucketLifecycle(args: DeleteBucketLifecycleInput): js.Promise[DeleteBucketLifecycleOutput] = js.native
     def deleteBucketLifecycle(
       args: DeleteBucketLifecycleInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketLifecycleOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketLifecycleOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -323,11 +315,7 @@ object s3Mod {
     def deleteBucketMetricsConfiguration(args: DeleteBucketMetricsConfigurationInput): js.Promise[DeleteBucketMetricsConfigurationOutput] = js.native
     def deleteBucketMetricsConfiguration(
       args: DeleteBucketMetricsConfigurationInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[DeleteBucketMetricsConfigurationOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketMetricsConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -339,7 +327,7 @@ object s3Mod {
     def deleteBucketPolicy(args: DeleteBucketPolicyInput): js.Promise[DeleteBucketPolicyOutput] = js.native
     def deleteBucketPolicy(
       args: DeleteBucketPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -351,7 +339,7 @@ object s3Mod {
     def deleteBucketReplication(args: DeleteBucketReplicationInput): js.Promise[DeleteBucketReplicationOutput] = js.native
     def deleteBucketReplication(
       args: DeleteBucketReplicationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketReplicationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketReplicationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -363,7 +351,7 @@ object s3Mod {
     def deleteBucketTagging(args: DeleteBucketTaggingInput): js.Promise[DeleteBucketTaggingOutput] = js.native
     def deleteBucketTagging(
       args: DeleteBucketTaggingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketTaggingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketTaggingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -375,7 +363,7 @@ object s3Mod {
     def deleteBucketWebsite(args: DeleteBucketWebsiteInput): js.Promise[DeleteBucketWebsiteOutput] = js.native
     def deleteBucketWebsite(
       args: DeleteBucketWebsiteInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBucketWebsiteOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBucketWebsiteOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -387,7 +375,7 @@ object s3Mod {
     def deleteObject(args: DeleteObjectInput): js.Promise[DeleteObjectOutput] = js.native
     def deleteObject(
       args: DeleteObjectInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteObjectOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteObjectOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -399,7 +387,7 @@ object s3Mod {
     def deleteObjectTagging(args: DeleteObjectTaggingInput): js.Promise[DeleteObjectTaggingOutput] = js.native
     def deleteObjectTagging(
       args: DeleteObjectTaggingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteObjectTaggingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteObjectTaggingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -411,7 +399,7 @@ object s3Mod {
     def deleteObjects(args: DeleteObjectsInput): js.Promise[DeleteObjectsOutput] = js.native
     def deleteObjects(
       args: DeleteObjectsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteObjectsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteObjectsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -423,11 +411,7 @@ object s3Mod {
     def getBucketAccelerateConfiguration(args: GetBucketAccelerateConfigurationInput): js.Promise[GetBucketAccelerateConfigurationOutput] = js.native
     def getBucketAccelerateConfiguration(
       args: GetBucketAccelerateConfigurationInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[GetBucketAccelerateConfigurationOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketAccelerateConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -439,7 +423,7 @@ object s3Mod {
     def getBucketAcl(args: GetBucketAclInput): js.Promise[GetBucketAclOutput] = js.native
     def getBucketAcl(
       args: GetBucketAclInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketAclOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketAclOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -451,7 +435,7 @@ object s3Mod {
     def getBucketAnalyticsConfiguration(args: GetBucketAnalyticsConfigurationInput): js.Promise[GetBucketAnalyticsConfigurationOutput] = js.native
     def getBucketAnalyticsConfiguration(
       args: GetBucketAnalyticsConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketAnalyticsConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketAnalyticsConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -463,7 +447,7 @@ object s3Mod {
     def getBucketCors(args: GetBucketCorsInput): js.Promise[GetBucketCorsOutput] = js.native
     def getBucketCors(
       args: GetBucketCorsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketCorsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketCorsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -475,7 +459,7 @@ object s3Mod {
     def getBucketEncryption(args: GetBucketEncryptionInput): js.Promise[GetBucketEncryptionOutput] = js.native
     def getBucketEncryption(
       args: GetBucketEncryptionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketEncryptionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketEncryptionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -487,7 +471,7 @@ object s3Mod {
     def getBucketInventoryConfiguration(args: GetBucketInventoryConfigurationInput): js.Promise[GetBucketInventoryConfigurationOutput] = js.native
     def getBucketInventoryConfiguration(
       args: GetBucketInventoryConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketInventoryConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketInventoryConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -499,7 +483,7 @@ object s3Mod {
     def getBucketLifecycle(args: GetBucketLifecycleInput): js.Promise[GetBucketLifecycleOutput] = js.native
     def getBucketLifecycle(
       args: GetBucketLifecycleInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketLifecycleOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketLifecycleOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -511,7 +495,7 @@ object s3Mod {
     def getBucketLifecycleConfiguration(args: GetBucketLifecycleConfigurationInput): js.Promise[GetBucketLifecycleConfigurationOutput] = js.native
     def getBucketLifecycleConfiguration(
       args: GetBucketLifecycleConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketLifecycleConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketLifecycleConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -523,7 +507,7 @@ object s3Mod {
     def getBucketLocation(args: GetBucketLocationInput): js.Promise[GetBucketLocationOutput] = js.native
     def getBucketLocation(
       args: GetBucketLocationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketLocationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketLocationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -535,7 +519,7 @@ object s3Mod {
     def getBucketLogging(args: GetBucketLoggingInput): js.Promise[GetBucketLoggingOutput] = js.native
     def getBucketLogging(
       args: GetBucketLoggingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketLoggingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketLoggingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -547,7 +531,7 @@ object s3Mod {
     def getBucketMetricsConfiguration(args: GetBucketMetricsConfigurationInput): js.Promise[GetBucketMetricsConfigurationOutput] = js.native
     def getBucketMetricsConfiguration(
       args: GetBucketMetricsConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketMetricsConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketMetricsConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -559,7 +543,7 @@ object s3Mod {
     def getBucketNotification(args: GetBucketNotificationInput): js.Promise[GetBucketNotificationOutput] = js.native
     def getBucketNotification(
       args: GetBucketNotificationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketNotificationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketNotificationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -571,11 +555,7 @@ object s3Mod {
     def getBucketNotificationConfiguration(args: GetBucketNotificationConfigurationInput): js.Promise[GetBucketNotificationConfigurationOutput] = js.native
     def getBucketNotificationConfiguration(
       args: GetBucketNotificationConfigurationInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[GetBucketNotificationConfigurationOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketNotificationConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -587,7 +567,7 @@ object s3Mod {
     def getBucketPolicy(args: GetBucketPolicyInput): js.Promise[GetBucketPolicyOutput] = js.native
     def getBucketPolicy(
       args: GetBucketPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -599,7 +579,7 @@ object s3Mod {
     def getBucketReplication(args: GetBucketReplicationInput): js.Promise[GetBucketReplicationOutput] = js.native
     def getBucketReplication(
       args: GetBucketReplicationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketReplicationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketReplicationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -611,7 +591,7 @@ object s3Mod {
     def getBucketRequestPayment(args: GetBucketRequestPaymentInput): js.Promise[GetBucketRequestPaymentOutput] = js.native
     def getBucketRequestPayment(
       args: GetBucketRequestPaymentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketRequestPaymentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketRequestPaymentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -623,7 +603,7 @@ object s3Mod {
     def getBucketTagging(args: GetBucketTaggingInput): js.Promise[GetBucketTaggingOutput] = js.native
     def getBucketTagging(
       args: GetBucketTaggingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketTaggingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketTaggingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -635,7 +615,7 @@ object s3Mod {
     def getBucketVersioning(args: GetBucketVersioningInput): js.Promise[GetBucketVersioningOutput] = js.native
     def getBucketVersioning(
       args: GetBucketVersioningInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketVersioningOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketVersioningOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -647,7 +627,7 @@ object s3Mod {
     def getBucketWebsite(args: GetBucketWebsiteInput): js.Promise[GetBucketWebsiteOutput] = js.native
     def getBucketWebsite(
       args: GetBucketWebsiteInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBucketWebsiteOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBucketWebsiteOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -660,7 +640,7 @@ object s3Mod {
     def getObject(args: GetObjectInput): js.Promise[GetObjectOutput[Blob]] = js.native
     def getObject(
       args: GetObjectInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetObjectOutput[Blob]], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetObjectOutput[Blob]], Unit]
     ): Unit = js.native
     
     /**
@@ -673,7 +653,7 @@ object s3Mod {
     def getObjectAcl(args: GetObjectAclInput): js.Promise[GetObjectAclOutput] = js.native
     def getObjectAcl(
       args: GetObjectAclInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetObjectAclOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetObjectAclOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -685,7 +665,7 @@ object s3Mod {
     def getObjectTagging(args: GetObjectTaggingInput): js.Promise[GetObjectTaggingOutput] = js.native
     def getObjectTagging(
       args: GetObjectTaggingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetObjectTaggingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetObjectTaggingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -697,7 +677,7 @@ object s3Mod {
     def getObjectTorrent(args: GetObjectTorrentInput): js.Promise[GetObjectTorrentOutput[Blob]] = js.native
     def getObjectTorrent(
       args: GetObjectTorrentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetObjectTorrentOutput[Blob]], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetObjectTorrentOutput[Blob]], Unit]
     ): Unit = js.native
     
     /**
@@ -710,7 +690,7 @@ object s3Mod {
     def headBucket(args: HeadBucketInput): js.Promise[HeadBucketOutput] = js.native
     def headBucket(
       args: HeadBucketInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[HeadBucketOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[HeadBucketOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -723,7 +703,7 @@ object s3Mod {
     def headObject(args: HeadObjectInput): js.Promise[HeadObjectOutput] = js.native
     def headObject(
       args: HeadObjectInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[HeadObjectOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[HeadObjectOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -735,11 +715,7 @@ object s3Mod {
     def listBucketAnalyticsConfigurations(args: ListBucketAnalyticsConfigurationsInput): js.Promise[ListBucketAnalyticsConfigurationsOutput] = js.native
     def listBucketAnalyticsConfigurations(
       args: ListBucketAnalyticsConfigurationsInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[ListBucketAnalyticsConfigurationsOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListBucketAnalyticsConfigurationsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -751,11 +727,7 @@ object s3Mod {
     def listBucketInventoryConfigurations(args: ListBucketInventoryConfigurationsInput): js.Promise[ListBucketInventoryConfigurationsOutput] = js.native
     def listBucketInventoryConfigurations(
       args: ListBucketInventoryConfigurationsInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[ListBucketInventoryConfigurationsOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListBucketInventoryConfigurationsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -767,7 +739,7 @@ object s3Mod {
     def listBucketMetricsConfigurations(args: ListBucketMetricsConfigurationsInput): js.Promise[ListBucketMetricsConfigurationsOutput] = js.native
     def listBucketMetricsConfigurations(
       args: ListBucketMetricsConfigurationsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListBucketMetricsConfigurationsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListBucketMetricsConfigurationsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -779,7 +751,7 @@ object s3Mod {
     def listBuckets(args: ListBucketsInput): js.Promise[ListBucketsOutput] = js.native
     def listBuckets(
       args: ListBucketsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListBucketsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListBucketsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -791,7 +763,7 @@ object s3Mod {
     def listMultipartUploads(args: ListMultipartUploadsInput): js.Promise[ListMultipartUploadsOutput] = js.native
     def listMultipartUploads(
       args: ListMultipartUploadsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListMultipartUploadsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListMultipartUploadsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -803,7 +775,7 @@ object s3Mod {
     def listObjectVersions(args: ListObjectVersionsInput): js.Promise[ListObjectVersionsOutput] = js.native
     def listObjectVersions(
       args: ListObjectVersionsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListObjectVersionsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListObjectVersionsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -816,7 +788,7 @@ object s3Mod {
     def listObjects(args: ListObjectsInput): js.Promise[ListObjectsOutput] = js.native
     def listObjects(
       args: ListObjectsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListObjectsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListObjectsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -829,7 +801,7 @@ object s3Mod {
     def listObjectsV2(args: ListObjectsV2Input): js.Promise[ListObjectsV2Output] = js.native
     def listObjectsV2(
       args: ListObjectsV2Input,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListObjectsV2Output], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListObjectsV2Output], Unit]
     ): Unit = js.native
     
     /**
@@ -841,7 +813,7 @@ object s3Mod {
     def listParts(args: ListPartsInput): js.Promise[ListPartsOutput] = js.native
     def listParts(
       args: ListPartsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListPartsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListPartsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -853,11 +825,7 @@ object s3Mod {
     def putBucketAccelerateConfiguration(args: PutBucketAccelerateConfigurationInput): js.Promise[PutBucketAccelerateConfigurationOutput] = js.native
     def putBucketAccelerateConfiguration(
       args: PutBucketAccelerateConfigurationInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[PutBucketAccelerateConfigurationOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketAccelerateConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -869,7 +837,7 @@ object s3Mod {
     def putBucketAcl(args: PutBucketAclInput): js.Promise[PutBucketAclOutput] = js.native
     def putBucketAcl(
       args: PutBucketAclInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketAclOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketAclOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -881,7 +849,7 @@ object s3Mod {
     def putBucketAnalyticsConfiguration(args: PutBucketAnalyticsConfigurationInput): js.Promise[PutBucketAnalyticsConfigurationOutput] = js.native
     def putBucketAnalyticsConfiguration(
       args: PutBucketAnalyticsConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketAnalyticsConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketAnalyticsConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -893,7 +861,7 @@ object s3Mod {
     def putBucketCors(args: PutBucketCorsInput): js.Promise[PutBucketCorsOutput] = js.native
     def putBucketCors(
       args: PutBucketCorsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketCorsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketCorsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -905,7 +873,7 @@ object s3Mod {
     def putBucketEncryption(args: PutBucketEncryptionInput): js.Promise[PutBucketEncryptionOutput] = js.native
     def putBucketEncryption(
       args: PutBucketEncryptionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketEncryptionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketEncryptionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -917,7 +885,7 @@ object s3Mod {
     def putBucketInventoryConfiguration(args: PutBucketInventoryConfigurationInput): js.Promise[PutBucketInventoryConfigurationOutput] = js.native
     def putBucketInventoryConfiguration(
       args: PutBucketInventoryConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketInventoryConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketInventoryConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -929,7 +897,7 @@ object s3Mod {
     def putBucketLifecycle(args: PutBucketLifecycleInput): js.Promise[PutBucketLifecycleOutput] = js.native
     def putBucketLifecycle(
       args: PutBucketLifecycleInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketLifecycleOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketLifecycleOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -941,7 +909,7 @@ object s3Mod {
     def putBucketLifecycleConfiguration(args: PutBucketLifecycleConfigurationInput): js.Promise[PutBucketLifecycleConfigurationOutput] = js.native
     def putBucketLifecycleConfiguration(
       args: PutBucketLifecycleConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketLifecycleConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketLifecycleConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -953,7 +921,7 @@ object s3Mod {
     def putBucketLogging(args: PutBucketLoggingInput): js.Promise[PutBucketLoggingOutput] = js.native
     def putBucketLogging(
       args: PutBucketLoggingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketLoggingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketLoggingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -965,7 +933,7 @@ object s3Mod {
     def putBucketMetricsConfiguration(args: PutBucketMetricsConfigurationInput): js.Promise[PutBucketMetricsConfigurationOutput] = js.native
     def putBucketMetricsConfiguration(
       args: PutBucketMetricsConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketMetricsConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketMetricsConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -977,7 +945,7 @@ object s3Mod {
     def putBucketNotification(args: PutBucketNotificationInput): js.Promise[PutBucketNotificationOutput] = js.native
     def putBucketNotification(
       args: PutBucketNotificationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketNotificationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketNotificationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -989,11 +957,7 @@ object s3Mod {
     def putBucketNotificationConfiguration(args: PutBucketNotificationConfigurationInput): js.Promise[PutBucketNotificationConfigurationOutput] = js.native
     def putBucketNotificationConfiguration(
       args: PutBucketNotificationConfigurationInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[PutBucketNotificationConfigurationOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketNotificationConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1005,7 +969,7 @@ object s3Mod {
     def putBucketPolicy(args: PutBucketPolicyInput): js.Promise[PutBucketPolicyOutput] = js.native
     def putBucketPolicy(
       args: PutBucketPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1017,7 +981,7 @@ object s3Mod {
     def putBucketReplication(args: PutBucketReplicationInput): js.Promise[PutBucketReplicationOutput] = js.native
     def putBucketReplication(
       args: PutBucketReplicationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketReplicationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketReplicationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1029,7 +993,7 @@ object s3Mod {
     def putBucketRequestPayment(args: PutBucketRequestPaymentInput): js.Promise[PutBucketRequestPaymentOutput] = js.native
     def putBucketRequestPayment(
       args: PutBucketRequestPaymentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketRequestPaymentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketRequestPaymentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1041,7 +1005,7 @@ object s3Mod {
     def putBucketTagging(args: PutBucketTaggingInput): js.Promise[PutBucketTaggingOutput] = js.native
     def putBucketTagging(
       args: PutBucketTaggingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketTaggingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketTaggingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1053,7 +1017,7 @@ object s3Mod {
     def putBucketVersioning(args: PutBucketVersioningInput): js.Promise[PutBucketVersioningOutput] = js.native
     def putBucketVersioning(
       args: PutBucketVersioningInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketVersioningOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketVersioningOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1065,7 +1029,7 @@ object s3Mod {
     def putBucketWebsite(args: PutBucketWebsiteInput): js.Promise[PutBucketWebsiteOutput] = js.native
     def putBucketWebsite(
       args: PutBucketWebsiteInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutBucketWebsiteOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutBucketWebsiteOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1077,7 +1041,7 @@ object s3Mod {
     def putObject(args: PutObjectInput[Blob]): js.Promise[PutObjectOutput] = js.native
     def putObject(
       args: PutObjectInput[Blob],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutObjectOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutObjectOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1090,7 +1054,7 @@ object s3Mod {
     def putObjectAcl(args: PutObjectAclInput): js.Promise[PutObjectAclOutput] = js.native
     def putObjectAcl(
       args: PutObjectAclInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutObjectAclOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutObjectAclOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1102,7 +1066,7 @@ object s3Mod {
     def putObjectTagging(args: PutObjectTaggingInput): js.Promise[PutObjectTaggingOutput] = js.native
     def putObjectTagging(
       args: PutObjectTaggingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutObjectTaggingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutObjectTaggingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1115,7 +1079,7 @@ object s3Mod {
     def restoreObject(args: RestoreObjectInput): js.Promise[RestoreObjectOutput] = js.native
     def restoreObject(
       args: RestoreObjectInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RestoreObjectOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RestoreObjectOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1127,7 +1091,7 @@ object s3Mod {
     def selectObjectContent(args: SelectObjectContentInput): js.Promise[SelectObjectContentOutput] = js.native
     def selectObjectContent(
       args: SelectObjectContentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SelectObjectContentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SelectObjectContentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1139,7 +1103,7 @@ object s3Mod {
     def uploadPart(args: UploadPartInput[Blob]): js.Promise[UploadPartOutput] = js.native
     def uploadPart(
       args: UploadPartInput[Blob],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UploadPartOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UploadPartOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1151,7 +1115,7 @@ object s3Mod {
     def uploadPartCopy(args: UploadPartCopyInput): js.Promise[UploadPartCopyOutput] = js.native
     def uploadPartCopy(
       args: UploadPartCopyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UploadPartCopyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UploadPartCopyOutput], Unit]
     ): Unit = js.native
   }
 }

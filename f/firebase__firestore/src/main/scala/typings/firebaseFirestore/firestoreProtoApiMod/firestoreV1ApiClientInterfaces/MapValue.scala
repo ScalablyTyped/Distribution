@@ -1,20 +1,25 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
 import typings.firebaseFirestore.firestoreProtoApiMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapValue extends js.Object {
+trait MapValue extends StObject {
+  
   var fields: js.UndefOr[ApiClientObjectMap[Value]] = js.undefined
 }
-
 object MapValue {
-  @scala.inline
-  def apply(fields: ApiClientObjectMap[Value] = null): MapValue = {
+  
+  inline def apply(): MapValue = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapValue]
   }
+  
+  extension [Self <: MapValue](x: Self) {
+    
+    inline def setFields(value: ApiClientObjectMap[Value]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+  }
 }
-

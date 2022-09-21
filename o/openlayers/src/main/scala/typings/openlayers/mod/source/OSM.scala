@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Open Street Map options.
   * @api stable
   */
-class OSM () extends XYZ {
+open class OSM () extends XYZ {
   def this(opt_options: OSMOptions) = this()
 }
 object OSM {

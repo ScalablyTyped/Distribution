@@ -33,6 +33,6 @@ object UpdateActionsMessage {
     
     inline def setUpdateActionsUndefined: Self = StObject.set(x, "UpdateActions", js.undefined)
     
-    inline def setUpdateActionsVarargs(value: UpdateAction*): Self = StObject.set(x, "UpdateActions", js.Array(value :_*))
+    inline def setUpdateActionsVarargs(value: UpdateAction*): Self = StObject.set(x, "UpdateActions", js.Array(value*))
   }
 }

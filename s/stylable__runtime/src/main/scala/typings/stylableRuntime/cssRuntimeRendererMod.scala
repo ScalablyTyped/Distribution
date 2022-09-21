@@ -3,7 +3,7 @@ package typings.stylableRuntime
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import typings.std.HTMLStyleElement
-import typings.stylableRuntime.cssRuntimeRendererMod.global.Window
+import typings.stylableRuntime.esmCssRuntimeRendererMod.global.Window
 import typings.stylableRuntime.keyedListRendererMod.DOMListRenderer
 import typings.stylableRuntime.typesMod.RenderableStylesheet
 import org.scalablytyped.runtime.StObject
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cssRuntimeRendererMod {
   
-  @JSImport("@stylable/runtime/cjs/css-runtime-renderer", "RuntimeRenderer")
+  @JSImport("@stylable/runtime/dist/css-runtime-renderer", "RuntimeRenderer")
   @js.native
-  class RuntimeRenderer () extends StObject {
+  open class RuntimeRenderer () extends StObject {
     
     def findDepthIndex(depth: Double): Double = js.native
     
@@ -44,7 +44,7 @@ object cssRuntimeRendererMod {
     var window: Window | Null = js.native
   }
   
-  @JSImport("@stylable/runtime/cjs/css-runtime-renderer", "$")
+  @JSImport("@stylable/runtime/dist/css-runtime-renderer", "$")
   @js.native
   val _empty: RuntimeRenderer = js.native
   
@@ -56,12 +56,12 @@ object cssRuntimeRendererMod {
     }
     object Window {
       
-      inline def apply(): Window = {
+      inline def apply(): typings.stylableRuntime.cssRuntimeRendererMod.global.Window = {
         val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[Window]
+        __obj.asInstanceOf[typings.stylableRuntime.cssRuntimeRendererMod.global.Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      extension [Self <: typings.stylableRuntime.cssRuntimeRendererMod.global.Window](x: Self) {
         
         inline def set__stylable_renderer_global_counter(value: Double): Self = StObject.set(x, "__stylable_renderer_global_counter", value.asInstanceOf[js.Any])
         

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Query.QueryExpression")
 @js.native
-class QueryExpression protected () extends QueryBase {
+open class QueryExpression protected () extends QueryBase {
   /**
     * Initializes a new instance of the QueryExpression class setting the entity name.
     * @param entityName The name of the entity.

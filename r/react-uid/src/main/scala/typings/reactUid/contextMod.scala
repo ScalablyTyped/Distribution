@@ -33,15 +33,15 @@ object contextMod {
     
     var prefix: String = js.native
     
-    def uid(item: js.Any): String = js.native
-    def uid(item: js.Any, index: Double): String = js.native
+    def uid(item: Any): String = js.native
+    def uid(item: Any, index: Double): String = js.native
     
     var value: Double = js.native
   }
   
   trait UIDProps extends StObject {
     
-    def children(id: String, uid: js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]): ReactNode
+    def children(id: String, uid: js.Function2[/* item */ Any, /* index */ js.UndefOr[Double], String]): ReactNode
     
     var idSource: js.UndefOr[IdSourceType] = js.undefined
     
@@ -50,7 +50,7 @@ object contextMod {
   object UIDProps {
     
     inline def apply(
-      children: (String, js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]) => ReactNode
+      children: (String, js.Function2[/* item */ Any, /* index */ js.UndefOr[Double], String]) => ReactNode
     ): UIDProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children))
       __obj.asInstanceOf[UIDProps]
@@ -58,9 +58,7 @@ object contextMod {
     
     extension [Self <: UIDProps](x: Self) {
       
-      inline def setChildren(
-        value: (String, js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]) => ReactNode
-      ): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (String, js.Function2[/* item */ Any, /* index */ js.UndefOr[Double], String]) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
       inline def setIdSource(value: IdSourceType): Self = StObject.set(x, "idSource", value.asInstanceOf[js.Any])
       

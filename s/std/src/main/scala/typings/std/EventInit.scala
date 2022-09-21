@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EventInit extends StObject {
   
+  /* standard dom */
   var bubbles: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var cancelable: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var composed: js.UndefOr[scala.Boolean] = js.undefined
 }
 object EventInit {

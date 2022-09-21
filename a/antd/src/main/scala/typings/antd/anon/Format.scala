@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Format extends StObject {
+trait Format[DisabledTime] extends StObject {
+  
+  var disabledTime: js.UndefOr[DisabledTime] = js.undefined
   
   var format: js.UndefOr[String] = js.undefined
   
@@ -13,12 +15,16 @@ trait Format extends StObject {
 }
 object Format {
   
-  inline def apply(): Format = {
+  inline def apply[DisabledTime](): Format[DisabledTime] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Format]
+    __obj.asInstanceOf[Format[DisabledTime]]
   }
   
-  extension [Self <: Format](x: Self) {
+  extension [Self <: Format[?], DisabledTime](x: Self & Format[DisabledTime]) {
+    
+    inline def setDisabledTime(value: DisabledTime): Self = StObject.set(x, "disabledTime", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

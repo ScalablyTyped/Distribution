@@ -4,26 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to export resources.
-  */
 trait SchemaExportResourcesRequest extends StObject {
   
   /**
-    * The BigQuery output destination.  The BigQuery location requires two IAM
-    * roles: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.  The
-    * output will be one BigQuery table per resource type.
+    * If provided, only resources updated after this time are exported. The time uses the format YYYY-MM-DDThh:mm:ss.sss+zz:zz. For example, `2015-02-07T13:28:17.239+02:00` or `2017-01-01T00:00:00Z`. The time must be specified to the second and include a time zone.
+    */
+  var _since: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * String of comma-delimited FHIR resource types. If provided, only resources of the specified resource type(s) are exported.
+    */
+  var _type: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The BigQuery output destination. The Cloud Healthcare Service Agent requires two IAM roles on the BigQuery location: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`. The output is one BigQuery table per resource type. Unlike when setting `BigQueryDestination` for `StreamConfig`, `ExportResources` does not create BigQuery views.
     */
   var bigqueryDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestination] = js.undefined
   
   /**
-    * The Cloud Storage output destination.  The Cloud Storage location
-    * requires the `roles/storage.objectAdmin` Cloud IAM role.  The exported
-    * outputs are organized by FHIR resource types. The server will create one
-    * object per resource type. Each object contains newline delimited JSON,
-    * and each line is a FHIR resource.
+    * The Cloud Storage output destination. The Cloud Healthcare Service Agent requires the `roles/storage.objectAdmin` Cloud IAM roles on the Cloud Storage location. The exported outputs are organized by FHIR resource types. The server creates one object per resource type. Each object contains newline delimited JSON, and each line is a FHIR resource.
     */
-  var gcsDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirRestGcsDestination] = js.undefined
+  var gcsDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirGcsDestination] = js.undefined
 }
 object SchemaExportResourcesRequest {
   
@@ -38,8 +39,20 @@ object SchemaExportResourcesRequest {
     
     inline def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
     
-    inline def setGcsDestination(value: SchemaGoogleCloudHealthcareV1beta1FhirRestGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
+    inline def setGcsDestination(value: SchemaGoogleCloudHealthcareV1beta1FhirGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
     inline def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
+    
+    inline def set_since(value: String): Self = StObject.set(x, "_since", value.asInstanceOf[js.Any])
+    
+    inline def set_sinceNull: Self = StObject.set(x, "_since", null)
+    
+    inline def set_sinceUndefined: Self = StObject.set(x, "_since", js.undefined)
+    
+    inline def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    
+    inline def set_typeNull: Self = StObject.set(x, "_type", null)
+    
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

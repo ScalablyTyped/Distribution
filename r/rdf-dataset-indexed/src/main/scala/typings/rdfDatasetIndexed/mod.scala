@@ -1,11 +1,11 @@
 package typings.rdfDatasetIndexed
 
 import typings.rdfDatasetIndexed.datasetMod.DatasetIndexed
-import typings.rdfJs.mod.BaseQuad
-import typings.rdfJs.mod.DataFactory
-import typings.rdfJs.mod.DatasetCore
-import typings.rdfJs.mod.DatasetCoreFactory
-import typings.rdfJs.mod.Quad
+import typings.rdfjsTypes.dataModelMod.BaseQuad
+import typings.rdfjsTypes.dataModelMod.DataFactory
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.datasetMod.DatasetCore
+import typings.rdfjsTypes.datasetMod.DatasetCoreFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

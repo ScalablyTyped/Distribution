@@ -1,6 +1,7 @@
 package typings.reactNativeTabNavigator
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
@@ -12,52 +13,50 @@ object mod {
   
   @JSImport("react-native-tab-navigator", JSImport.Default)
   @js.native
-  class default protected () extends TabNavigator {
+  open class default protected () extends TabNavigator {
     def this(props: TabNavigatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabNavigatorProps, context: js.Any) = this()
+    def this(props: TabNavigatorProps, context: Any) = this()
   }
   object default {
     
     @JSImport("react-native-tab-navigator", "default.Item")
     @js.native
-    class Item protected ()
+    open class Item protected ()
       extends typings.reactNativeTabNavigator.mod.TabNavigator.Item {
       def this(props: TabNavigatorItemProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: TabNavigatorItemProps, context: js.Any) = this()
+      def this(props: TabNavigatorItemProps, context: Any) = this()
     }
   }
   
   @JSImport("react-native-tab-navigator", "TabNavigator")
   @js.native
-  class TabNavigator protected ()
-    extends Component[TabNavigatorProps, js.Any, js.Any] {
+  open class TabNavigator protected () extends Component[TabNavigatorProps, Any, Any] {
     def this(props: TabNavigatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabNavigatorProps, context: js.Any) = this()
+    def this(props: TabNavigatorProps, context: Any) = this()
   }
   object TabNavigator {
     
     @JSImport("react-native-tab-navigator", "TabNavigator.Item")
     @js.native
-    class Item protected ()
-      extends Component[TabNavigatorItemProps, js.Any, js.Any] {
+    open class Item protected () extends Component[TabNavigatorItemProps, Any, Any] {
       def this(props: TabNavigatorItemProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: TabNavigatorItemProps, context: js.Any) = this()
+      def this(props: TabNavigatorItemProps, context: Any) = this()
     }
   }
   
@@ -72,6 +71,8 @@ object mod {
       * Text for Item badge
       */
     var badgeText: js.UndefOr[String | Double] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * onPress method for Item
@@ -135,6 +136,10 @@ object mod {
       
       inline def setBadgeTextUndefined: Self = StObject.set(x, "badgeText", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
       inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
@@ -175,6 +180,8 @@ object mod {
   
   trait TabNavigatorProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Disable onPress opacity for Tab
       *
@@ -205,6 +212,10 @@ object mod {
     }
     
     extension [Self <: TabNavigatorProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setHidesTabTouch(value: Boolean): Self = StObject.set(x, "hidesTabTouch", value.asInstanceOf[js.Any])
       

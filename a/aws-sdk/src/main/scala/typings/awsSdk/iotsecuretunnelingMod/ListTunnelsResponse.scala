@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTunnelsResponse extends StObject {
   
   /**
-    * A token to used to retrieve the next set of results.
+    * The token to use to get the next set of results, or null if there are no additional results.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * A short description of the tunnels in an AWS account.
+    * A short description of the tunnels in an Amazon Web Services account.
     */
   var tunnelSummaries: js.UndefOr[TunnelSummaryList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListTunnelsResponse {
     
     inline def setTunnelSummariesUndefined: Self = StObject.set(x, "tunnelSummaries", js.undefined)
     
-    inline def setTunnelSummariesVarargs(value: TunnelSummary*): Self = StObject.set(x, "tunnelSummaries", js.Array(value :_*))
+    inline def setTunnelSummariesVarargs(value: TunnelSummary*): Self = StObject.set(x, "tunnelSummaries", js.Array(value*))
   }
 }

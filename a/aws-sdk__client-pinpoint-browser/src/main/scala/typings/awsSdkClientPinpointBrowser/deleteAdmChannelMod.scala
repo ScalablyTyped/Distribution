@@ -8,5 +8,5 @@ object deleteAdmChannelMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteAdmChannel", "DeleteAdmChannel")
   @js.native
-  val DeleteAdmChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteAdmChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

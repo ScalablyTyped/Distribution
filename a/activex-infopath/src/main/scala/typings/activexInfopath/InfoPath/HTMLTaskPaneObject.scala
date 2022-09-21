@@ -10,7 +10,7 @@ trait HTMLTaskPaneObject extends StObject {
   
   val HTMLDocument: IHTMLDocument2
   
-  def HTMLWindow(pvarIndex: js.Any): js.Any
+  def HTMLWindow(pvarIndex: Any): Any
   @JSName("HTMLWindow")
   val HTMLWindow_Original: IHTMLWindow2
   

@@ -10,10 +10,10 @@ A Node.js module to fetch HTML meta tags (including Open Graph) from a remote UR
 | ------------------ | :-------------: |
 | Full name          | metaget |
 | Keywords           | metatags, metadata, fetch, meta, remote, meta, tags, html, parse, opengraph, open graph |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 8790 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1134.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/mrvautin/metaget#readme)

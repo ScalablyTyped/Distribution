@@ -29,7 +29,7 @@ object DescribeInstanceAssociationsStatusResult {
     
     inline def setInstanceAssociationStatusInfosUndefined: Self = StObject.set(x, "InstanceAssociationStatusInfos", js.undefined)
     
-    inline def setInstanceAssociationStatusInfosVarargs(value: InstanceAssociationStatusInfo*): Self = StObject.set(x, "InstanceAssociationStatusInfos", js.Array(value :_*))
+    inline def setInstanceAssociationStatusInfosVarargs(value: InstanceAssociationStatusInfo*): Self = StObject.set(x, "InstanceAssociationStatusInfos", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

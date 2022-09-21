@@ -15,7 +15,7 @@ object NumberFormatting {
   /** Formats and parses currencies. */
   @JSGlobal("Windows.Globalization.NumberFormatting.CurrencyFormatter")
   @js.native
-  class CurrencyFormatter protected ()
+  open class CurrencyFormatter protected ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.NumberFormatting.CurrencyFormatter {
     /**
@@ -170,7 +170,7 @@ object NumberFormatting {
   @JSGlobal("Windows.Globalization.NumberFormatting.DecimalFormatter")
   @js.native
   /** Creates a DecimalFormatter object and initializes it to default values. */
-  class DecimalFormatter ()
+  open class DecimalFormatter ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.NumberFormatting.DecimalFormatter {
     /**
@@ -289,7 +289,7 @@ object NumberFormatting {
   @JSGlobal("Windows.Globalization.NumberFormatting.IncrementNumberRounder")
   @js.native
   /** Creates an IncrementNumberRounder object. */
-  class IncrementNumberRounder ()
+  open class IncrementNumberRounder ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.NumberFormatting.IncrementNumberRounder {
     
@@ -354,7 +354,7 @@ object NumberFormatting {
   @JSGlobal("Windows.Globalization.NumberFormatting.NumeralSystemTranslator")
   @js.native
   /** Creates a NumeralSystemTranslator object initialized by the list of current runtime language values preferred by the user. */
-  class NumeralSystemTranslator ()
+  open class NumeralSystemTranslator ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.NumberFormatting.NumeralSystemTranslator {
     /**
@@ -388,7 +388,7 @@ object NumberFormatting {
   @JSGlobal("Windows.Globalization.NumberFormatting.PercentFormatter")
   @js.native
   /** Creates a PercentFormatter object and initializes it to default values. */
-  class PercentFormatter ()
+  open class PercentFormatter ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.NumberFormatting.PercentFormatter {
     /**
@@ -507,7 +507,7 @@ object NumberFormatting {
   @JSGlobal("Windows.Globalization.NumberFormatting.PermilleFormatter")
   @js.native
   /** Creates a PermilleFormatter object and initializes it to default values. */
-  class PermilleFormatter ()
+  open class PermilleFormatter ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.NumberFormatting.PermilleFormatter {
     /**
@@ -659,7 +659,7 @@ object NumberFormatting {
   @JSGlobal("Windows.Globalization.NumberFormatting.SignificantDigitsNumberRounder")
   @js.native
   /** Creates a SignificantDigitsNumberRounder object. */
-  class SignificantDigitsNumberRounder ()
+  open class SignificantDigitsNumberRounder ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.NumberFormatting.SignificantDigitsNumberRounder {
     

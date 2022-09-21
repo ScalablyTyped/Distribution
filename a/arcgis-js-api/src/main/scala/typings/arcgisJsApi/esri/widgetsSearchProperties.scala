@@ -1,6 +1,8 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.source
 import typings.arcgisJsApi.arcgisJsApiStrings.suggestion
 import typings.arcgisJsApi.arcgisJsApiStrings.warning
@@ -16,12 +18,16 @@ trait widgetsSearchProperties
   /**
     * The current active menu of the Search widget.
     *
+    * @default none
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeMenu)
     */
-  var activeMenu: js.UndefOr[none | suggestion | source | warning] = js.undefined
+  var activeMenu: js.UndefOr[none_ | suggestion | source | warning] = js.undefined
   
   /**
     * The selected source's index.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeSourceIndex)
     */
@@ -30,6 +36,8 @@ trait widgetsSearchProperties
   /**
     * String value used as a hint for input text when searching on multiple sources.
     *
+    * @default "Find address or place"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#allPlaceholder)
     */
   var allPlaceholder: js.UndefOr[String] = js.undefined
@@ -37,12 +45,16 @@ trait widgetsSearchProperties
   /**
     * Indicates whether to automatically select and zoom to the first geocoded result.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#autoSelect)
     */
   var autoSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, the widget is visually withdrawn and cannot be interacted with.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#disabled)
     */
@@ -58,12 +70,16 @@ trait widgetsSearchProperties
   /**
     * Indicates whether or not to include [defaultSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSources) in the Search UI.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#includeDefaultSources)
     */
   var includeDefaultSources: js.UndefOr[Boolean | js.Function] = js.undefined
   
   /**
     * Enables location services within the widget.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#locationEnabled)
     */
@@ -72,12 +88,16 @@ trait widgetsSearchProperties
   /**
     * The maximum number of results returned by the widget if not specified by the source.
     *
+    * @default 6
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#maxResults)
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of suggestions returned by the widget if not specified by the source.
+    *
+    * @default 6
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#maxSuggestions)
     */
@@ -86,12 +106,16 @@ trait widgetsSearchProperties
   /**
     * The minimum number of characters needed for the search if not specified by the source.
     *
+    * @default 3
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#minSuggestCharacters)
     */
   var minSuggestCharacters: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether to display the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) on feature click.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#popupEnabled)
     */
@@ -114,12 +138,16 @@ trait widgetsSearchProperties
   /**
     * Indicates if the [resultGraphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#resultGraphic) will display at the location of the selected feature.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#resultGraphicEnabled)
     */
   var resultGraphicEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to display the option to search all sources.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#searchAllEnabled)
     */
@@ -133,7 +161,7 @@ trait widgetsSearchProperties
   var searchTerm: js.UndefOr[String] = js.undefined
   
   /**
-    * The Search widget may be used to search features in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or geocode locations with a [Locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html).
+    * The Search widget may be used to search features in a [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html)/[feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) service feature layer(s), [SceneLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) with an associated feature layer, [BuildingComponentSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html) with an associated feature layer, [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html) or [OGCFeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html), or [table](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTable.html), or geocode locations with a [locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources)
     */
@@ -141,6 +169,8 @@ trait widgetsSearchProperties
   
   /**
     * Enable suggestions for the widget.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#suggestionsEnabled)
     */
@@ -151,7 +181,7 @@ trait widgetsSearchProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * The view model for this widget.
@@ -169,7 +199,7 @@ object widgetsSearchProperties {
   
   extension [Self <: widgetsSearchProperties](x: Self) {
     
-    inline def setActiveMenu(value: none | suggestion | source | warning): Self = StObject.set(x, "activeMenu", value.asInstanceOf[js.Any])
+    inline def setActiveMenu(value: none_ | suggestion | source | warning): Self = StObject.set(x, "activeMenu", value.asInstanceOf[js.Any])
     
     inline def setActiveMenuUndefined: Self = StObject.set(x, "activeMenu", js.undefined)
     
@@ -241,13 +271,13 @@ object widgetsSearchProperties {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: SearchSourceProperties*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SearchSourceProperties*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setSuggestionsEnabled(value: Boolean): Self = StObject.set(x, "suggestionsEnabled", value.asInstanceOf[js.Any])
     
     inline def setSuggestionsEnabledUndefined: Self = StObject.set(x, "suggestionsEnabled", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewModel(value: SearchViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

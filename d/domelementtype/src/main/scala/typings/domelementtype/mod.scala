@@ -1,14 +1,6 @@
 package typings.domelementtype
 
-import typings.domelementtype.anon.Type
-import typings.domelementtype.domelementtypeStrings.cdata
-import typings.domelementtype.domelementtypeStrings.comment
-import typings.domelementtype.domelementtypeStrings.directive
-import typings.domelementtype.domelementtypeStrings.doctype
-import typings.domelementtype.domelementtypeStrings.script
-import typings.domelementtype.domelementtypeStrings.style
-import typings.domelementtype.domelementtypeStrings.tag
-import typings.domelementtype.domelementtypeStrings.text
+import typings.domelementtype.anon.TypeElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +27,83 @@ object mod {
   @js.native
   val Doctype: String | Double = js.native
   
+  @js.native
+  sealed trait ElementType extends StObject
+  @JSImport("domelementtype", "ElementType")
+  @js.native
+  object ElementType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[ElementType & String] = js.native
+    
+    /** Type for <![CDATA[ ... ]]> */
+    @js.native
+    sealed trait CDATA
+      extends StObject
+         with ElementType
+    /* "cdata" */ val CDATA: typings.domelementtype.mod.ElementType.CDATA & String = js.native
+    
+    /** Type for <!-- ... --> */
+    @js.native
+    sealed trait Comment
+      extends StObject
+         with ElementType
+    /* "comment" */ val Comment: typings.domelementtype.mod.ElementType.Comment & String = js.native
+    
+    /** Type for <? ... ?> */
+    @js.native
+    sealed trait Directive
+      extends StObject
+         with ElementType
+    /* "directive" */ val Directive: typings.domelementtype.mod.ElementType.Directive & String = js.native
+    
+    /** Type for <!doctype ...> */
+    @js.native
+    sealed trait Doctype
+      extends StObject
+         with ElementType
+    /* "doctype" */ val Doctype: typings.domelementtype.mod.ElementType.Doctype & String = js.native
+    
+    /** Type for the root element of a document */
+    @js.native
+    sealed trait Root
+      extends StObject
+         with ElementType
+    /* "root" */ val Root: typings.domelementtype.mod.ElementType.Root & String = js.native
+    
+    /** Type for <script> tags */
+    @js.native
+    sealed trait Script
+      extends StObject
+         with ElementType
+    /* "script" */ val Script: typings.domelementtype.mod.ElementType.Script & String = js.native
+    
+    /** Type for <style> tags */
+    @js.native
+    sealed trait Style
+      extends StObject
+         with ElementType
+    /* "style" */ val Style: typings.domelementtype.mod.ElementType.Style & String = js.native
+    
+    /** Type for Any tag */
+    @js.native
+    sealed trait Tag
+      extends StObject
+         with ElementType
+    /* "tag" */ val Tag: typings.domelementtype.mod.ElementType.Tag & String = js.native
+    
+    /** Type for Text */
+    @js.native
+    sealed trait Text
+      extends StObject
+         with ElementType
+    /* "text" */ val Text: typings.domelementtype.mod.ElementType.Text & String = js.native
+  }
+  
+  @JSImport("domelementtype", "Root")
+  @js.native
+  val Root: String | Double = js.native
+  
   @JSImport("domelementtype", "Script")
   @js.native
   val Script: String | Double = js.native
@@ -51,43 +120,5 @@ object mod {
   @js.native
   val Text: String | Double = js.native
   
-  inline def isTag(elem: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTag")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.domelementtype.domelementtypeStrings.text
-    - typings.domelementtype.domelementtypeStrings.directive
-    - typings.domelementtype.domelementtypeStrings.comment
-    - typings.domelementtype.domelementtypeStrings.script
-    - typings.domelementtype.domelementtypeStrings.style
-    - typings.domelementtype.domelementtypeStrings.tag
-    - typings.domelementtype.domelementtypeStrings.cdata
-    - typings.domelementtype.domelementtypeStrings.doctype
-  */
-  trait ElementType extends StObject
-  object ElementType {
-    
-    /** Type for <![CDATA[ ... ]]> */
-    inline def CDATA: cdata = "cdata".asInstanceOf[cdata]
-    
-    /** Type for <!-- ... --> */
-    inline def Comment: comment = "comment".asInstanceOf[comment]
-    
-    /** Type for <? ... ?> */
-    inline def Directive: directive = "directive".asInstanceOf[directive]
-    
-    /** Type for <!doctype ...> */
-    inline def Doctype: doctype = "doctype".asInstanceOf[doctype]
-    
-    /** Type for <script> tags */
-    inline def Script: script = "script".asInstanceOf[script]
-    
-    /** Type for <style> tags */
-    inline def Style: style = "style".asInstanceOf[style]
-    
-    /** Type for Any tag */
-    inline def Tag: tag = "tag".asInstanceOf[tag]
-    
-    /** Type for Text */
-    inline def Text: text = "text".asInstanceOf[text]
-  }
+  inline def isTag(elem: TypeElementType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTag")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

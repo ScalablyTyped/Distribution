@@ -49,10 +49,10 @@ object events {
       * @param callback Called with registered rules.
       * Parameter rules: Rules that were registered, the optional parameters are filled with values.
       */
-    def addRules(rules: js.Array[Rule[js.Any, js.Any]]): Unit = js.native
+    def addRules(rules: js.Array[Rule[Any, Any]]): Unit = js.native
     def addRules(
-      rules: js.Array[Rule[js.Any, js.Any]],
-      callback: js.Function1[/* rules */ js.Array[Rule[js.Any, js.Any]], Unit]
+      rules: js.Array[Rule[Any, Any]],
+      callback: js.Function1[/* rules */ js.Array[Rule[Any, Any]], Unit]
     ): Unit = js.native
     
     /**
@@ -60,7 +60,7 @@ object events {
       * @param callback Called with registered rules.
       * Parameter *rules*: Rules that were registered, the optional parameters are filled with values.
       */
-    def getRules(callback: js.Function1[/* rules */ js.Array[Rule[js.Any, js.Any]], Unit]): Unit = js.native
+    def getRules(callback: js.Function1[/* rules */ js.Array[Rule[Any, Any]], Unit]): Unit = js.native
     /**
       * Returns currently registered rules.
       * @param ruleIdentifiers If an array is passed, only rules with identifiers contained in this array are returned.
@@ -69,7 +69,7 @@ object events {
       */
     def getRules(
       ruleIdentifiers: js.Array[String],
-      callback: js.Function1[/* rules */ js.Array[Rule[js.Any, js.Any]], Unit]
+      callback: js.Function1[/* rules */ js.Array[Rule[Any, Any]], Unit]
     ): Unit = js.native
     
     /**
@@ -160,11 +160,11 @@ object events {
       
       inline def setActions(value: js.Array[K]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: K*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: K*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setConditions(value: js.Array[T]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      inline def setConditionsVarargs(value: T*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+      inline def setConditionsVarargs(value: T*): Self = StObject.set(x, "conditions", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -178,7 +178,7 @@ object events {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -317,7 +317,7 @@ object events {
       
       inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      inline def setPortsVarargs(value: (integer | js.Array[integer])*): Self = StObject.set(x, "ports", js.Array(value :_*))
+      inline def setPortsVarargs(value: (integer | js.Array[integer])*): Self = StObject.set(x, "ports", js.Array(value*))
       
       inline def setQueryContains(value: String): Self = StObject.set(x, "queryContains", value.asInstanceOf[js.Any])
       
@@ -339,7 +339,7 @@ object events {
       
       inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
       
-      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
       
       inline def setUrlContains(value: String): Self = StObject.set(x, "urlContains", value.asInstanceOf[js.Any])
       

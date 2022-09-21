@@ -3,7 +3,7 @@ package typings.antd.anon
 import typings.antd.configProviderContextMod.CSPConfig
 import typings.antd.configProviderContextMod.DirectionType
 import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.renderEmptyMod.RenderEmptyHandler
+import typings.antd.defaultRenderEmptyMod.RenderEmptyHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.Validator
 import typings.std.HTMLElement
@@ -18,6 +18,8 @@ trait WeakValidationMapConfigPr extends StObject {
   
   var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
   
+  var componentDisabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  
   var componentSize: js.UndefOr[Validator[js.UndefOr[Null | SizeType]]] = js.undefined
   
   var csp: js.UndefOr[Validator[js.UndefOr[CSPConfig | Null]]] = js.undefined
@@ -26,19 +28,23 @@ trait WeakValidationMapConfigPr extends StObject {
   
   var dropdownMatchSelectWidth: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var form: js.UndefOr[Validator[js.UndefOr[Null | ValidateMessages]]] = js.undefined
+  var form: js.UndefOr[Validator[js.UndefOr[Null | RequiredMark]]] = js.undefined
   
   var getPopupContainer: js.UndefOr[
-    Validator[js.UndefOr[(js.Function1[/* triggerNode */ HTMLElement, HTMLElement]) | Null]]
+    Validator[js.UndefOr[(js.Function1[js.UndefOr[HTMLElement], HTMLElement]) | Null]]
   ] = js.undefined
   
   var getTargetContainer: js.UndefOr[Validator[js.UndefOr[js.Function0[HTMLElement] | Null]]] = js.undefined
+  
+  var iconPrefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
   var input: js.UndefOr[Validator[js.UndefOr[AutoComplete | Null]]] = js.undefined
   
   var locale: js.UndefOr[Validator[js.UndefOr[typings.antd.localeProviderMod.Locale | Null]]] = js.undefined
   
   var pageHeader: js.UndefOr[Validator[js.UndefOr[Ghost | Null]]] = js.undefined
+  
+  var pagination: js.UndefOr[Validator[js.UndefOr[Null | ShowSizeChanger]]] = js.undefined
   
   var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -65,6 +71,10 @@ object WeakValidationMapConfigPr {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
+    inline def setComponentDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "componentDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setComponentDisabledUndefined: Self = StObject.set(x, "componentDisabled", js.undefined)
+    
     inline def setComponentSize(value: Validator[js.UndefOr[Null | SizeType]]): Self = StObject.set(x, "componentSize", value.asInstanceOf[js.Any])
     
     inline def setComponentSizeUndefined: Self = StObject.set(x, "componentSize", js.undefined)
@@ -81,17 +91,21 @@ object WeakValidationMapConfigPr {
     
     inline def setDropdownMatchSelectWidthUndefined: Self = StObject.set(x, "dropdownMatchSelectWidth", js.undefined)
     
-    inline def setForm(value: Validator[js.UndefOr[Null | ValidateMessages]]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: Validator[js.UndefOr[Null | RequiredMark]]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    inline def setGetPopupContainer(value: Validator[js.UndefOr[(js.Function1[/* triggerNode */ HTMLElement, HTMLElement]) | Null]]): Self = StObject.set(x, "getPopupContainer", value.asInstanceOf[js.Any])
+    inline def setGetPopupContainer(value: Validator[js.UndefOr[(js.Function1[js.UndefOr[HTMLElement], HTMLElement]) | Null]]): Self = StObject.set(x, "getPopupContainer", value.asInstanceOf[js.Any])
     
     inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
     
     inline def setGetTargetContainer(value: Validator[js.UndefOr[js.Function0[HTMLElement] | Null]]): Self = StObject.set(x, "getTargetContainer", value.asInstanceOf[js.Any])
     
     inline def setGetTargetContainerUndefined: Self = StObject.set(x, "getTargetContainer", js.undefined)
+    
+    inline def setIconPrefixCls(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "iconPrefixCls", value.asInstanceOf[js.Any])
+    
+    inline def setIconPrefixClsUndefined: Self = StObject.set(x, "iconPrefixCls", js.undefined)
     
     inline def setInput(value: Validator[js.UndefOr[AutoComplete | Null]]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
@@ -104,6 +118,10 @@ object WeakValidationMapConfigPr {
     inline def setPageHeader(value: Validator[js.UndefOr[Ghost | Null]]): Self = StObject.set(x, "pageHeader", value.asInstanceOf[js.Any])
     
     inline def setPageHeaderUndefined: Self = StObject.set(x, "pageHeader", js.undefined)
+    
+    inline def setPagination(value: Validator[js.UndefOr[Null | ShowSizeChanger]]): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
     inline def setPrefixCls(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     

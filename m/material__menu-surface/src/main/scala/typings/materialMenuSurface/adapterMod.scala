@@ -3,7 +3,8 @@ package typings.materialMenuSurface
 import typings.materialMenuSurface.anon.PartialMDCMenuDistance
 import typings.materialMenuSurface.typesMod.MDCMenuDimensions
 import typings.materialMenuSurface.typesMod.MDCMenuPoint
-import typings.std.ClientRect
+import typings.std.DOMRect
+import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,11 +16,13 @@ object adapterMod {
     
     def addClass(className: String): Unit
     
-    def getAnchorDimensions(): ClientRect | Null
+    def getAnchorDimensions(): DOMRect | Null
     
     def getBodyDimensions(): MDCMenuDimensions
     
     def getInnerDimensions(): MDCMenuDimensions
+    
+    var getOwnerDocument: js.UndefOr[js.Function0[Document]] = js.undefined
     
     def getWindowDimensions(): MDCMenuDimensions
     
@@ -38,8 +41,14 @@ object adapterMod {
     /** Emits an event when the menu surface is closed. */
     def notifyClose(): Unit
     
+    /** Emits an event when the menu surface is closing. */
+    def notifyClosing(): Unit
+    
     /** Emits an event when the menu surface is opened. */
     def notifyOpen(): Unit
+    
+    /** Emits an event when the menu surface is opening. */
+    def notifyOpening(): Unit
     
     def removeClass(className: String): Unit
     
@@ -59,7 +68,7 @@ object adapterMod {
     
     inline def apply(
       addClass: String => Unit,
-      getAnchorDimensions: () => ClientRect | Null,
+      getAnchorDimensions: () => DOMRect | Null,
       getBodyDimensions: () => MDCMenuDimensions,
       getInnerDimensions: () => MDCMenuDimensions,
       getWindowDimensions: () => MDCMenuDimensions,
@@ -70,7 +79,9 @@ object adapterMod {
       isFocused: () => Boolean,
       isRtl: () => Boolean,
       notifyClose: () => Unit,
+      notifyClosing: () => Unit,
       notifyOpen: () => Unit,
+      notifyOpening: () => Unit,
       removeClass: String => Unit,
       restoreFocus: () => Unit,
       saveFocus: () => Unit,
@@ -78,7 +89,7 @@ object adapterMod {
       setPosition: PartialMDCMenuDistance => Unit,
       setTransformOrigin: String => Unit
     ): MDCMenuSurfaceAdapter = {
-      val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), getAnchorDimensions = js.Any.fromFunction0(getAnchorDimensions), getBodyDimensions = js.Any.fromFunction0(getBodyDimensions), getInnerDimensions = js.Any.fromFunction0(getInnerDimensions), getWindowDimensions = js.Any.fromFunction0(getWindowDimensions), getWindowScroll = js.Any.fromFunction0(getWindowScroll), hasAnchor = js.Any.fromFunction0(hasAnchor), hasClass = js.Any.fromFunction1(hasClass), isElementInContainer = js.Any.fromFunction1(isElementInContainer), isFocused = js.Any.fromFunction0(isFocused), isRtl = js.Any.fromFunction0(isRtl), notifyClose = js.Any.fromFunction0(notifyClose), notifyOpen = js.Any.fromFunction0(notifyOpen), removeClass = js.Any.fromFunction1(removeClass), restoreFocus = js.Any.fromFunction0(restoreFocus), saveFocus = js.Any.fromFunction0(saveFocus), setMaxHeight = js.Any.fromFunction1(setMaxHeight), setPosition = js.Any.fromFunction1(setPosition), setTransformOrigin = js.Any.fromFunction1(setTransformOrigin))
+      val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), getAnchorDimensions = js.Any.fromFunction0(getAnchorDimensions), getBodyDimensions = js.Any.fromFunction0(getBodyDimensions), getInnerDimensions = js.Any.fromFunction0(getInnerDimensions), getWindowDimensions = js.Any.fromFunction0(getWindowDimensions), getWindowScroll = js.Any.fromFunction0(getWindowScroll), hasAnchor = js.Any.fromFunction0(hasAnchor), hasClass = js.Any.fromFunction1(hasClass), isElementInContainer = js.Any.fromFunction1(isElementInContainer), isFocused = js.Any.fromFunction0(isFocused), isRtl = js.Any.fromFunction0(isRtl), notifyClose = js.Any.fromFunction0(notifyClose), notifyClosing = js.Any.fromFunction0(notifyClosing), notifyOpen = js.Any.fromFunction0(notifyOpen), notifyOpening = js.Any.fromFunction0(notifyOpening), removeClass = js.Any.fromFunction1(removeClass), restoreFocus = js.Any.fromFunction0(restoreFocus), saveFocus = js.Any.fromFunction0(saveFocus), setMaxHeight = js.Any.fromFunction1(setMaxHeight), setPosition = js.Any.fromFunction1(setPosition), setTransformOrigin = js.Any.fromFunction1(setTransformOrigin))
       __obj.asInstanceOf[MDCMenuSurfaceAdapter]
     }
     
@@ -86,11 +97,15 @@ object adapterMod {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      inline def setGetAnchorDimensions(value: () => ClientRect | Null): Self = StObject.set(x, "getAnchorDimensions", js.Any.fromFunction0(value))
+      inline def setGetAnchorDimensions(value: () => DOMRect | Null): Self = StObject.set(x, "getAnchorDimensions", js.Any.fromFunction0(value))
       
       inline def setGetBodyDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getBodyDimensions", js.Any.fromFunction0(value))
       
       inline def setGetInnerDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getInnerDimensions", js.Any.fromFunction0(value))
+      
+      inline def setGetOwnerDocument(value: () => Document): Self = StObject.set(x, "getOwnerDocument", js.Any.fromFunction0(value))
+      
+      inline def setGetOwnerDocumentUndefined: Self = StObject.set(x, "getOwnerDocument", js.undefined)
       
       inline def setGetWindowDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getWindowDimensions", js.Any.fromFunction0(value))
       
@@ -108,7 +123,11 @@ object adapterMod {
       
       inline def setNotifyClose(value: () => Unit): Self = StObject.set(x, "notifyClose", js.Any.fromFunction0(value))
       
+      inline def setNotifyClosing(value: () => Unit): Self = StObject.set(x, "notifyClosing", js.Any.fromFunction0(value))
+      
       inline def setNotifyOpen(value: () => Unit): Self = StObject.set(x, "notifyOpen", js.Any.fromFunction0(value))
+      
+      inline def setNotifyOpening(value: () => Unit): Self = StObject.set(x, "notifyOpening", js.Any.fromFunction0(value))
       
       inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       

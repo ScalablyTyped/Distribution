@@ -49,7 +49,7 @@ object DateFilter {
     
     inline def setDateComparatorsUndefined: Self = StObject.set(x, "dateComparators", js.undefined)
     
-    inline def setDateComparatorsVarargs(value: FilterComparator*): Self = StObject.set(x, "dateComparators", js.Array(value :_*))
+    inline def setDateComparatorsVarargs(value: FilterComparator*): Self = StObject.set(x, "dateComparators", js.Array(value*))
     
     inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

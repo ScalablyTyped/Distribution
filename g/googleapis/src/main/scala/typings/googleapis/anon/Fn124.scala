@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
+import typings.googleapis.gkebackupV1Mod.gkebackupV1.Gkebackup
+import typings.googleapis.gkebackupV1Mod.gkebackupV1.Options
 import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.siteVerificationV1Mod.siteVerificationV1.Options
-import typings.googleapis.siteVerificationV1Mod.siteVerificationV1.Siteverification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn124 extends StObject {
   
-  def apply(options: Options): Siteverification = js.native
-  def apply(version: v1): Siteverification = js.native
+  def apply(options: Options): Gkebackup = js.native
+  def apply(version: v1): Gkebackup = js.native
 }

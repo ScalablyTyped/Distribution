@@ -1,5 +1,6 @@
 package typings.ionicons.stencilPublicRuntimeMod.JSXBase
 
+import typings.ionicons.stencilPublicRuntimeMod.JSXAttributes
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
@@ -17,11 +18,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DOMAttributes[T] extends StObject {
+trait DOMAttributes[T]
+  extends StObject
+     with JSXAttributes[T] {
   
   var exportparts: js.UndefOr[String] = js.undefined
-  
-  var key: js.UndefOr[String | Double] = js.undefined
   
   var onAnimationEnd: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
   
@@ -117,13 +118,13 @@ trait DOMAttributes[T] extends StObject {
   
   var onFocusCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onFocusIn: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
+  var onFocusin: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onFocusInCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
+  var onFocusinCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onFocusOut: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
+  var onFocusout: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
-  var onFocusOutCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
+  var onFocusoutCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   
   var onGotPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
@@ -255,8 +256,6 @@ trait DOMAttributes[T] extends StObject {
   
   var part: js.UndefOr[String] = js.undefined
   
-  var ref: js.UndefOr[js.Function1[/* elm */ js.UndefOr[T], Unit]] = js.undefined
-  
   var slot: js.UndefOr[String] = js.undefined
 }
 object DOMAttributes {
@@ -271,10 +270,6 @@ object DOMAttributes {
     inline def setExportparts(value: String): Self = StObject.set(x, "exportparts", value.asInstanceOf[js.Any])
     
     inline def setExportpartsUndefined: Self = StObject.set(x, "exportparts", js.undefined)
-    
-    inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    
-    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setOnAnimationEnd(value: /* event */ AnimationEvent => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
     
@@ -462,23 +457,23 @@ object DOMAttributes {
     
     inline def setOnFocusCaptureUndefined: Self = StObject.set(x, "onFocusCapture", js.undefined)
     
-    inline def setOnFocusIn(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onFocusIn", js.Any.fromFunction1(value))
-    
-    inline def setOnFocusInCapture(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onFocusInCapture", js.Any.fromFunction1(value))
-    
-    inline def setOnFocusInCaptureUndefined: Self = StObject.set(x, "onFocusInCapture", js.undefined)
-    
-    inline def setOnFocusInUndefined: Self = StObject.set(x, "onFocusIn", js.undefined)
-    
-    inline def setOnFocusOut(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onFocusOut", js.Any.fromFunction1(value))
-    
-    inline def setOnFocusOutCapture(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onFocusOutCapture", js.Any.fromFunction1(value))
-    
-    inline def setOnFocusOutCaptureUndefined: Self = StObject.set(x, "onFocusOutCapture", js.undefined)
-    
-    inline def setOnFocusOutUndefined: Self = StObject.set(x, "onFocusOut", js.undefined)
-    
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    
+    inline def setOnFocusin(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onFocusin", js.Any.fromFunction1(value))
+    
+    inline def setOnFocusinCapture(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onFocusinCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnFocusinCaptureUndefined: Self = StObject.set(x, "onFocusinCapture", js.undefined)
+    
+    inline def setOnFocusinUndefined: Self = StObject.set(x, "onFocusin", js.undefined)
+    
+    inline def setOnFocusout(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onFocusout", js.Any.fromFunction1(value))
+    
+    inline def setOnFocusoutCapture(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onFocusoutCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnFocusoutCaptureUndefined: Self = StObject.set(x, "onFocusoutCapture", js.undefined)
+    
+    inline def setOnFocusoutUndefined: Self = StObject.set(x, "onFocusout", js.undefined)
     
     inline def setOnGotPointerCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onGotPointerCapture", js.Any.fromFunction1(value))
     
@@ -739,10 +734,6 @@ object DOMAttributes {
     inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
-    
-    inline def setRef(value: /* elm */ js.UndefOr[T] => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-    
-    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     

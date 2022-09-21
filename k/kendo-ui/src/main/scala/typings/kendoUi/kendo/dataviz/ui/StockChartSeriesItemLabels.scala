@@ -16,9 +16,9 @@ trait StockChartSeriesItemLabels extends StObject {
   
   var format: js.UndefOr[String | js.Function] = js.undefined
   
-  var margin: js.UndefOr[Double | js.Any] = js.undefined
+  var margin: js.UndefOr[Double | Any] = js.undefined
   
-  var padding: js.UndefOr[Double | js.Any] = js.undefined
+  var padding: js.UndefOr[Double | Any] = js.undefined
   
   var position: js.UndefOr[String | js.Function] = js.undefined
   
@@ -55,11 +55,11 @@ object StockChartSeriesItemLabels {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setMargin(value: Double | js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double | Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setPadding(value: Double | js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     

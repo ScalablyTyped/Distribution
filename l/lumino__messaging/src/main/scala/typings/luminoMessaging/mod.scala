@@ -1,6 +1,5 @@
 package typings.luminoMessaging
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("@lumino/messaging", "ConflatableMessage")
   @js.native
-  class ConflatableMessage protected () extends Message {
+  open class ConflatableMessage protected () extends Message {
     /**
       * Construct a new message.
       *
@@ -28,7 +27,7 @@ object mod {
   
   @JSImport("@lumino/messaging", "Message")
   @js.native
-  class Message protected () extends StObject {
+  open class Message protected () extends StObject {
     /**
       * Construct a new message.
       *
@@ -223,7 +222,7 @@ object mod {
     /**
       * A type alias for the exception handler function.
       */
-    type ExceptionHandler = js.Function1[/* err */ Error, Unit]
+    type ExceptionHandler = js.Function1[/* err */ js.Error, Unit]
   }
   
   trait IMessageHandler extends StObject {

@@ -46,13 +46,13 @@ object Profile {
     
     inline def setNodes(value: js.Array[ProfileNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: ProfileNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: ProfileNode*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setSamples(value: js.Array[integer]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
     inline def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
     
-    inline def setSamplesVarargs(value: integer*): Self = StObject.set(x, "samples", js.Array(value :_*))
+    inline def setSamplesVarargs(value: integer*): Self = StObject.set(x, "samples", js.Array(value*))
     
     inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object Profile {
     
     inline def setTimeDeltasUndefined: Self = StObject.set(x, "timeDeltas", js.undefined)
     
-    inline def setTimeDeltasVarargs(value: integer*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
+    inline def setTimeDeltasVarargs(value: integer*): Self = StObject.set(x, "timeDeltas", js.Array(value*))
   }
 }

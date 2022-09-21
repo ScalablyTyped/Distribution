@@ -8,7 +8,6 @@ import typings.awsSdkClientS3Browser.typesRedirectAllRequestsToMod.RedirectAllRe
 import typings.awsSdkClientS3Browser.typesRedirectAllRequestsToMod.UnmarshalledRedirectAllRequestsTo
 import typings.awsSdkClientS3Browser.typesRoutingRuleMod.RoutingRule
 import typings.awsSdkClientS3Browser.typesRoutingRuleMod.UnmarshalledRoutingRule
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,7 +67,7 @@ object typesWebsiteConfigurationMod {
       
       inline def setRoutingRulesUndefined: Self = StObject.set(x, "RoutingRules", js.undefined)
       
-      inline def setRoutingRulesVarargs(value: UnmarshalledRoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value :_*))
+      inline def setRoutingRulesVarargs(value: UnmarshalledRoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value*))
     }
   }
   
@@ -94,7 +93,7 @@ object typesWebsiteConfigurationMod {
     /**
       * _RoutingRules shape
       */
-    var RoutingRules: js.UndefOr[js.Array[RoutingRule] | Iterable[RoutingRule]] = js.undefined
+    var RoutingRules: js.UndefOr[js.Array[RoutingRule] | js.Iterable[RoutingRule]] = js.undefined
   }
   object WebsiteConfiguration {
     
@@ -117,11 +116,11 @@ object typesWebsiteConfigurationMod {
       
       inline def setRedirectAllRequestsToUndefined: Self = StObject.set(x, "RedirectAllRequestsTo", js.undefined)
       
-      inline def setRoutingRules(value: js.Array[RoutingRule] | Iterable[RoutingRule]): Self = StObject.set(x, "RoutingRules", value.asInstanceOf[js.Any])
+      inline def setRoutingRules(value: js.Array[RoutingRule] | js.Iterable[RoutingRule]): Self = StObject.set(x, "RoutingRules", value.asInstanceOf[js.Any])
       
       inline def setRoutingRulesUndefined: Self = StObject.set(x, "RoutingRules", js.undefined)
       
-      inline def setRoutingRulesVarargs(value: RoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value :_*))
+      inline def setRoutingRulesVarargs(value: RoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value*))
     }
   }
 }

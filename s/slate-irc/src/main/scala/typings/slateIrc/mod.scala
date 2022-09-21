@@ -14,7 +14,6 @@ import typings.slateIrc.slateIrcStrings.part
 import typings.slateIrc.slateIrcStrings.quit
 import typings.slateIrc.slateIrcStrings.topic
 import typings.slateIrc.slateIrcStrings.welcome
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object mod {
   
   @JSImport("slate-irc", "Client")
   @js.native
-  class Client () extends StObject {
+  open class Client () extends StObject {
     
     def action(target: String, msg: String): Unit = js.native
     
@@ -51,7 +50,7 @@ object mod {
     
     def mode(target: String, flags: String, params: String): Unit = js.native
     
-    def names(channel: String, callback: js.Function2[/* error */ Error, /* names */ js.Array[Mode], Unit]): Unit = js.native
+    def names(channel: String, callback: js.Function2[/* error */ js.Error, /* names */ js.Array[Mode], Unit]): Unit = js.native
     
     def nick(nick: String): Unit = js.native
     
@@ -197,7 +196,7 @@ object mod {
       
       inline def setMotd(value: js.Array[String]): Self = StObject.set(x, "motd", value.asInstanceOf[js.Any])
       
-      inline def setMotdVarargs(value: String*): Self = StObject.set(x, "motd", js.Array(value :_*))
+      inline def setMotdVarargs(value: String*): Self = StObject.set(x, "motd", js.Array(value*))
     }
   }
   
@@ -304,7 +303,7 @@ object mod {
       
       inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
       
       inline def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
       

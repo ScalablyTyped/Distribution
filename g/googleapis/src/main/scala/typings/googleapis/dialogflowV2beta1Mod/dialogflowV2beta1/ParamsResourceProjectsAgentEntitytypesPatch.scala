@@ -1,9 +1,5 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,24 +9,12 @@ trait ParamsResourceProjectsAgentEntitytypesPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional. The language of entity synonyms defined in `entity_type`. If
-    * not specified, the agent's default language is used. [Many
-    * languages](https://cloud.google.com/dialogflow-enterprise/docs/reference/language)
-    * are supported. Note: languages must be enabled in the agent before they
-    * can be used.
+    * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
     */
   var languageCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The unique identifier of the entity type. Required for
-    * EntityTypes.UpdateEntityType and EntityTypes.BatchUpdateEntityTypes
-    * methods. Format: `projects/<Project ID>/agent/entityTypes/<Entity Type
-    * ID>`.
+    * The unique identifier of the entity type. Required for EntityTypes.UpdateEntityType and EntityTypes.BatchUpdateEntityTypes methods. Supported formats: - `projects//agent/entityTypes/` - `projects//locations//agent/entityTypes/`
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -52,10 +36,6 @@ object ParamsResourceProjectsAgentEntitytypesPatch {
   }
   
   extension [Self <: ParamsResourceProjectsAgentEntitytypesPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

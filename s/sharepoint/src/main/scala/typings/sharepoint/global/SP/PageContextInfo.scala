@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.PageContextInfo")
 @js.native
-class PageContextInfo ()
+open class PageContextInfo ()
   extends StObject
      with typings.sharepoint.SP.PageContextInfo
 object PageContextInfo {

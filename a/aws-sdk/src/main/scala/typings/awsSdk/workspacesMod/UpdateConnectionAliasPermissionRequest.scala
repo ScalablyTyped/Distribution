@@ -12,7 +12,7 @@ trait UpdateConnectionAliasPermissionRequest extends StObject {
   var AliasId: ConnectionAliasId
   
   /**
-    * Indicates whether to share or unshare the connection alias with the specified AWS account.
+    * Indicates whether to share or unshare the connection alias with the specified Amazon Web Services account.
     */
   var ConnectionAliasPermission: typings.awsSdk.workspacesMod.ConnectionAliasPermission
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetManagedScalingPolicyInput extends StObject {
   
   /**
-    *  Specifies the ID of the cluster for which the managed scaling policy will be fetched. 
+    * Specifies the ID of the cluster for which the managed scaling policy will be fetched. 
     */
   var ClusterId: typings.awsSdk.emrMod.ClusterId
 }

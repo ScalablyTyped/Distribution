@@ -22,7 +22,7 @@ object throbberMod {
   
   @JSImport("cli-color/throbber", "Iterator")
   @js.native
-  class Iterator () extends StObject {
+  open class Iterator () extends StObject {
     
     val index: Double = js.native
     

@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Unmerges cells in the given range.
-  */
 trait SchemaUnmergeCellsRequest extends StObject {
   
   /**
-    * The range within which all cells should be unmerged. If the range spans
-    * multiple merges, all will be unmerged. The range must not partially span
-    * any merge.
+    * The range within which all cells should be unmerged. If the range spans multiple merges, all will be unmerged. The range must not partially span any merge.
     */
   var range: js.UndefOr[SchemaGridRange] = js.undefined
 }

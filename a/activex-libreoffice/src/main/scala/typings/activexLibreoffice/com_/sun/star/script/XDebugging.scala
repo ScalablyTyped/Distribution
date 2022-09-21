@@ -97,7 +97,7 @@ object XDebugging {
     getContextInformation: Double => ContextInformation,
     getStackTrace: () => SafeArray[String],
     isVariable: (String, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setBreakPoint: (String, Double, Boolean) => Double,
     setVariable: (String, String, Double) => Unit,

@@ -3,12 +3,38 @@ package typings.karmaCoverage
 import org.scalablytyped.runtime.StringDictionary
 import typings.istanbul.mod.Store
 import typings.karmaCoverage.anon.KarmaCoverageReporterrepo
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
+  
+  trait CheckTresholds extends StObject {
+    
+    var each: js.UndefOr[Tresholds] = js.undefined
+    
+    var global: js.UndefOr[Tresholds] = js.undefined
+  }
+  object CheckTresholds {
+    
+    inline def apply(): CheckTresholds = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CheckTresholds]
+    }
+    
+    extension [Self <: CheckTresholds](x: Self) {
+      
+      inline def setEach(value: Tresholds): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
+      
+      inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+      
+      inline def setGlobal(value: Tresholds): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+    }
+  }
   
   trait ConfigOptions extends StObject {
     
@@ -34,10 +60,10 @@ object mod {
   
   trait KarmaCoverageReporter
     extends StObject
-       with /* moreSettings */ StringDictionary[js.Any] {
+       with /* moreSettings */ StringDictionary[Any] {
     
     /** This will be used to configure minimum threshold enforcement for coverage results */
-    var check: js.UndefOr[js.Any] = js.undefined
+    var check: js.UndefOr[CheckTresholds] = js.undefined
     
     /** This will be used to output coverage reports. When you set a relative path, the directory is resolved against the basePath. */
     var dir: js.UndefOr[String] = js.undefined
@@ -56,7 +82,11 @@ object mod {
       * It is possible to override this behavior and point out an instrumenter
       * for the files matching a specific pattern.
       */
-    var instrumenter: js.UndefOr[js.Any] = js.undefined
+    var instrumenter: js.UndefOr[StringDictionary[String]] = js.undefined
+    
+    var instrumenterOptions: js.UndefOr[Record[String, Record[String, Any]]] = js.undefined
+    
+    var instrumenters: js.UndefOr[Record[String, Any]] = js.undefined
     
     /** You can use multiple reporters, by providing array of options */
     var reporters: js.UndefOr[js.Array[Reporter]] = js.undefined
@@ -78,7 +108,7 @@ object mod {
     var useJSExtensionForCoffeeScript: js.UndefOr[Boolean] = js.undefined
     
     /** This will be used to set the coverage threshold colors */
-    var watermarks: js.UndefOr[js.Any] = js.undefined
+    var watermarks: js.UndefOr[Watermarks] = js.undefined
   }
   object KarmaCoverageReporter {
     
@@ -89,7 +119,7 @@ object mod {
     
     extension [Self <: KarmaCoverageReporter](x: Self) {
       
-      inline def setCheck(value: js.Any): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: CheckTresholds): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
       inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
@@ -105,15 +135,23 @@ object mod {
       
       inline def setIncludeAllSourcesUndefined: Self = StObject.set(x, "includeAllSources", js.undefined)
       
-      inline def setInstrumenter(value: js.Any): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
+      inline def setInstrumenter(value: StringDictionary[String]): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
+      
+      inline def setInstrumenterOptions(value: Record[String, Record[String, Any]]): Self = StObject.set(x, "instrumenterOptions", value.asInstanceOf[js.Any])
+      
+      inline def setInstrumenterOptionsUndefined: Self = StObject.set(x, "instrumenterOptions", js.undefined)
       
       inline def setInstrumenterUndefined: Self = StObject.set(x, "instrumenter", js.undefined)
+      
+      inline def setInstrumenters(value: Record[String, Any]): Self = StObject.set(x, "instrumenters", value.asInstanceOf[js.Any])
+      
+      inline def setInstrumentersUndefined: Self = StObject.set(x, "instrumenters", js.undefined)
       
       inline def setReporters(value: js.Array[Reporter]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
       
       inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
       
-      inline def setReportersVarargs(value: Reporter*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+      inline def setReportersVarargs(value: Reporter*): Self = StObject.set(x, "reporters", js.Array(value*))
       
       inline def setSourceStore(value: Store): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
       
@@ -133,7 +171,7 @@ object mod {
       
       inline def setUseJSExtensionForCoffeeScriptUndefined: Self = StObject.set(x, "useJSExtensionForCoffeeScript", js.undefined)
       
-      inline def setWatermarks(value: js.Any): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
+      inline def setWatermarks(value: Watermarks): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
       
       inline def setWatermarksUndefined: Self = StObject.set(x, "watermarks", js.undefined)
     }
@@ -177,6 +215,7 @@ object mod {
     }
   }
   
+  /** Reporter type */
   /* Rewritten from type alias, can be one of: 
     - typings.karmaCoverage.karmaCoverageStrings.html
     - typings.karmaCoverage.karmaCoverageStrings.lcov
@@ -214,5 +253,93 @@ object mod {
     inline def text: typings.karmaCoverage.karmaCoverageStrings.text = "text".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.text]
     
     inline def `text-summary`: typings.karmaCoverage.karmaCoverageStrings.`text-summary` = "text-summary".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.`text-summary`]
+  }
+  
+  trait Tresholds extends StObject {
+    
+    var branches: js.UndefOr[Double] = js.undefined
+    
+    var excludes: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var functions: js.UndefOr[Double] = js.undefined
+    
+    var lines: js.UndefOr[Double] = js.undefined
+    
+    var overrides: js.UndefOr[Record[String, Tresholds]] = js.undefined
+    
+    var statements: js.UndefOr[Double] = js.undefined
+  }
+  object Tresholds {
+    
+    inline def apply(): Tresholds = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tresholds]
+    }
+    
+    extension [Self <: Tresholds](x: Self) {
+      
+      inline def setBranches(value: Double): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      
+      inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+      
+      inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
+      
+      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
+      
+      inline def setFunctions(value: Double): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      
+      inline def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      
+      inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+      
+      inline def setOverrides(value: Record[String, Tresholds]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      
+      inline def setStatements(value: Double): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      
+      inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+    }
+  }
+  
+  trait Watermarks extends StObject {
+    
+    var branches: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    
+    var functions: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    
+    var lines: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    
+    var statements: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  }
+  object Watermarks {
+    
+    inline def apply(): Watermarks = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Watermarks]
+    }
+    
+    extension [Self <: Watermarks](x: Self) {
+      
+      inline def setBranches(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      
+      inline def setFunctions(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      
+      inline def setLines(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      
+      inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+      
+      inline def setStatements(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      
+      inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+    }
   }
 }

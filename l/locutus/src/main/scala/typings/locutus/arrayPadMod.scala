@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrayPadMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padSize: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padSize: js.Any, padValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padSize: Unit, padValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padSize: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padSize: js.Any, padValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padSize: Unit, padValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(input: Any): Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(input: Any, padSize: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, padSize: Any, padValue: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, padSize: Unit, padValue: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padSize: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padSize: Any, padValue: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padSize: Unit, padValue: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/array/array_pad", JSImport.Namespace)
   @js.native

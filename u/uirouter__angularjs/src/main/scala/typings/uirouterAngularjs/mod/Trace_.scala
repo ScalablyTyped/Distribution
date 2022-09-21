@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/angularjs", "Trace")
 @js.native
 /** @internal */
-class Trace_ ()
+open class Trace_ ()
   extends typings.uirouterCore.mod.Trace_

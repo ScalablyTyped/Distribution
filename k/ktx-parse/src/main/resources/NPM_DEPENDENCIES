@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ktx-parse" : "0.4.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ktx-parse" : "0.4.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

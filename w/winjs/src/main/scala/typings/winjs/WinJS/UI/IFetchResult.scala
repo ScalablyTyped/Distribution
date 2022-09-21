@@ -64,7 +64,7 @@ object IFetchResult {
     
     inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

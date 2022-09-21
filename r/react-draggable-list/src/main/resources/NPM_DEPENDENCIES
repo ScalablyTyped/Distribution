@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-draggable-list" : "4.0.3"
+      "react-draggable-list" : "4.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-draggable-list" : "4.0.3"
+      "react-draggable-list" : "4.1.0"
     }
   ],
   "compile-devDependencies" : [

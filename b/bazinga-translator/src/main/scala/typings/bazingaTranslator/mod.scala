@@ -75,10 +75,10 @@ object mod extends Shortcut {
       * @param locale         The locale or null to use the default
       */
     def trans(id: String): String = js.native
-    def trans(id: String, parameters: js.Any): String = js.native
-    def trans(id: String, parameters: js.Any, domain: String): String = js.native
-    def trans(id: String, parameters: js.Any, domain: String, locale: String): String = js.native
-    def trans(id: String, parameters: js.Any, domain: Unit, locale: String): String = js.native
+    def trans(id: String, parameters: Any): String = js.native
+    def trans(id: String, parameters: Any, domain: String): String = js.native
+    def trans(id: String, parameters: Any, domain: String, locale: String): String = js.native
+    def trans(id: String, parameters: Any, domain: Unit, locale: String): String = js.native
     def trans(id: String, parameters: Unit, domain: String): String = js.native
     def trans(id: String, parameters: Unit, domain: String, locale: String): String = js.native
     def trans(id: String, parameters: Unit, domain: Unit, locale: String): String = js.native
@@ -93,10 +93,10 @@ object mod extends Shortcut {
       * @param locale         The locale or null to use the default
       */
     def transChoice(id: String, number: Double): String = js.native
-    def transChoice(id: String, number: Double, parameters: js.Any): String = js.native
-    def transChoice(id: String, number: Double, parameters: js.Any, domain: String): String = js.native
-    def transChoice(id: String, number: Double, parameters: js.Any, domain: String, locale: String): String = js.native
-    def transChoice(id: String, number: Double, parameters: js.Any, domain: Unit, locale: String): String = js.native
+    def transChoice(id: String, number: Double, parameters: Any): String = js.native
+    def transChoice(id: String, number: Double, parameters: Any, domain: String): String = js.native
+    def transChoice(id: String, number: Double, parameters: Any, domain: String, locale: String): String = js.native
+    def transChoice(id: String, number: Double, parameters: Any, domain: Unit, locale: String): String = js.native
     def transChoice(id: String, number: Double, parameters: Unit, domain: String): String = js.native
     def transChoice(id: String, number: Double, parameters: Unit, domain: String, locale: String): String = js.native
     def transChoice(id: String, number: Double, parameters: Unit, domain: Unit, locale: String): String = js.native

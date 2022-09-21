@@ -10,10 +10,10 @@ Famous sorting algorithms based on vote popularity and time
 | ------------------ | :-------------: |
 | Full name          | decay |
 | Keywords           | hotsort, hackerhot, wilsonscore, popularity, sorting, voting |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 6198 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1668.0 |
+| # stars            | 367.0 |
 
 ## Links
 - [Homepage](https://github.com/clux/decay#readme)

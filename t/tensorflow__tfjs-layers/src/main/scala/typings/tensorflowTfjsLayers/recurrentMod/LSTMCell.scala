@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "LSTMCell")
 @js.native
-class LSTMCell protected () extends RNNCell {
+open class LSTMCell protected () extends RNNCell {
   def this(args: LSTMCellLayerArgs) = this()
   
   val DEFAULT_ACTIVATION: /* "tanh" */ String = js.native
@@ -35,6 +35,8 @@ class LSTMCell protected () extends RNNCell {
   val biasRegularizer: Regularizer = js.native
   
   val dropout: Double = js.native
+  
+  val dropoutFunc: js.Function = js.native
   
   val implementation: Double = js.native
   

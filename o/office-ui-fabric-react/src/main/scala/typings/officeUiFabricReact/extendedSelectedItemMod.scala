@@ -12,11 +12,10 @@ object extendedSelectedItemMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/Items/ExtendedSelectedItem", "ExtendedSelectedItem")
   @js.native
-  class ExtendedSelectedItem protected ()
-    extends Component[ISelectedPeopleItemProps, IPeoplePickerItemState, js.Any] {
+  open class ExtendedSelectedItem protected () extends Component[ISelectedPeopleItemProps, IPeoplePickerItemState, Any] {
     def this(props: ISelectedPeopleItemProps) = this()
     
-    /* private */ var _onClickIconButton: js.Any = js.native
+    /* private */ var _onClickIconButton: Any = js.native
     
     /* protected */ var persona: RefObject[HTMLDivElement] = js.native
   }

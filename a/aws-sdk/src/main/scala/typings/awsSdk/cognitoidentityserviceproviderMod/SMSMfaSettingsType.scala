@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SMSMfaSettingsType extends StObject {
   
   /**
-    * Specifies whether SMS text message MFA is enabled.
+    * Specifies whether SMS text message MFA is activated. If an MFA type is activated for a user, the user will be prompted for MFA during all sign-in attempts, unless device tracking is turned on and the device has been trusted.
     */
   var Enabled: js.UndefOr[BooleanType] = js.undefined
   

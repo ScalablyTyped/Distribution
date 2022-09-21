@@ -17,5 +17,5 @@ trait DotDensityRendererConstructor
 Instantiable0[DotDensityRenderer]
      with Instantiable1[/* properties */ DotDensityRendererProperties, DotDensityRenderer] {
   
-  def fromJSON(json: js.Any): DotDensityRenderer = js.native
+  def fromJSON(json: Any): DotDensityRenderer = js.native
 }

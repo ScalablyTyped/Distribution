@@ -10,10 +10,10 @@ object bookmarkMod {
   
   @JSImport("material-ui/svg-icons/action/bookmark", JSImport.Default)
   @js.native
-  class default () extends ActionBookmark
+  open class default () extends ActionBookmark
   
   @JSImport("material-ui/svg-icons/action/bookmark", "ActionBookmark")
   @js.native
-  class ActionBookmark ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionBookmark ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -64,7 +64,7 @@ trait XGridColumn
     *
     * This identifier will not be evaluated by the grid control, or its model. It is merely for clients to identify particular columns.
     */
-  var Identifier: js.Any
+  var Identifier: Any
   
   /**
     * denotes the index of the column within the grid column model it belongs to
@@ -110,7 +110,7 @@ object XGridColumn {
     Flexibility: Double,
     HelpText: String,
     HorizontalAlign: HorizontalAlignment,
-    Identifier: js.Any,
+    Identifier: Any,
     Index: Double,
     MaxWidth: Double,
     MinWidth: Double,
@@ -121,7 +121,7 @@ object XGridColumn {
     addGridColumnListener: XGridColumnListener => Unit,
     createClone: () => XCloneable,
     dispose: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removeGridColumnListener: XGridColumnListener => Unit
@@ -144,7 +144,7 @@ object XGridColumn {
     
     inline def setHorizontalAlign(value: HorizontalAlignment): Self = StObject.set(x, "HorizontalAlign", value.asInstanceOf[js.Any])
     
-    inline def setIdentifier(value: js.Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     

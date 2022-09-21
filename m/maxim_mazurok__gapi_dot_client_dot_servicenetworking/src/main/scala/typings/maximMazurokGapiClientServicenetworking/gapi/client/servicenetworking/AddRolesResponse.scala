@@ -22,6 +22,6 @@ object AddRolesResponse {
     
     inline def setPolicyBindingUndefined: Self = StObject.set(x, "policyBinding", js.undefined)
     
-    inline def setPolicyBindingVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBinding", js.Array(value :_*))
+    inline def setPolicyBindingVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBinding", js.Array(value*))
   }
 }

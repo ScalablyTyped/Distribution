@@ -1,7 +1,7 @@
 
 # Scala.js typings for color-convert
 
-Typings are for version 1.9
+Typings are for version 2.0
 
 ## Library description:
 Plain color conversion functions
@@ -10,10 +10,10 @@ Plain color conversion functions
 | ------------------ | :-------------: |
 | Full name          | color-convert |
 | Keywords           | color, colour, convert, converter, conversion, rgb, hsl, hsv, hwb, cmyk, ansi, ansi16 |
-| # releases         | 3 |
-| # dependents       | 376 |
-| # downloads        | 1301908982 |
-| # stars            | 12 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5.101538803333333E8 |
+| # stars            | 626.0 |
 
 ## Links
 - [Homepage](https://github.com/Qix-/color-convert#readme)

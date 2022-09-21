@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("pdf-image", "PDFImage")
   @js.native
-  class PDFImage[CombinedImage /* <: Boolean */] protected () extends StObject {
+  open class PDFImage[CombinedImage /* <: Boolean */] protected () extends StObject {
     def this(
       path: String,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type OptionalSpread<CombinedImage> is not an array type */ options: OptionalSpread[CombinedImage]
@@ -2249,7 +2249,7 @@ object mod {
   }
   
   type OptionalSpread[CombinedImage /* <: Boolean */] = js.Array[
-    (Options & `0`[CombinedImage]) | (Options & CombinedImageCombinedImage[CombinedImage]) | js.Any
+    (Options & `0`[CombinedImage]) | (Options & CombinedImageCombinedImage[CombinedImage]) | Any
   ]
   
   trait Options extends StObject {

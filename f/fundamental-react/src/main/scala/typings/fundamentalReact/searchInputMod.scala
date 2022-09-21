@@ -14,8 +14,8 @@ object searchInputMod {
   
   @JSImport("fundamental-react/lib/SearchInput/SearchInput", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SearchInputProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SearchInputProps, js.Object, Any]
   object default {
     
     @JSImport("fundamental-react/lib/SearchInput/SearchInput", JSImport.Default)
@@ -29,11 +29,11 @@ object searchInputMod {
     inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.SearchInput): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  type SearchInput = Component[SearchInputProps, js.Object, js.Any]
+  type SearchInput = Component[SearchInputProps, js.Object, Any]
   
   trait SearchInputProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -43,13 +43,13 @@ object searchInputMod {
     
     var inShellbar: js.UndefOr[Boolean] = js.undefined
     
-    var inputGroupAddonProps: js.UndefOr[js.Any] = js.undefined
+    var inputGroupAddonProps: js.UndefOr[Any] = js.undefined
     
-    var inputGroupProps: js.UndefOr[js.Any] = js.undefined
+    var inputGroupProps: js.UndefOr[Any] = js.undefined
     
-    var inputProps: js.UndefOr[js.Any] = js.undefined
+    var inputProps: js.UndefOr[Any] = js.undefined
     
-    var listProps: js.UndefOr[js.Any] = js.undefined
+    var listProps: js.UndefOr[Any] = js.undefined
     
     var noSearchBtn: js.UndefOr[Boolean] = js.undefined
     
@@ -59,9 +59,9 @@ object searchInputMod {
     
     var placeholder: js.UndefOr[String] = js.undefined
     
-    var popoverProps: js.UndefOr[js.Any] = js.undefined
+    var popoverProps: js.UndefOr[Any] = js.undefined
     
-    var searchBtnProps: js.UndefOr[js.Any] = js.undefined
+    var searchBtnProps: js.UndefOr[Any] = js.undefined
     
     var searchList: js.UndefOr[js.Array[Callback]] = js.undefined
     
@@ -92,19 +92,19 @@ object searchInputMod {
       
       inline def setInShellbarUndefined: Self = StObject.set(x, "inShellbar", js.undefined)
       
-      inline def setInputGroupAddonProps(value: js.Any): Self = StObject.set(x, "inputGroupAddonProps", value.asInstanceOf[js.Any])
+      inline def setInputGroupAddonProps(value: Any): Self = StObject.set(x, "inputGroupAddonProps", value.asInstanceOf[js.Any])
       
       inline def setInputGroupAddonPropsUndefined: Self = StObject.set(x, "inputGroupAddonProps", js.undefined)
       
-      inline def setInputGroupProps(value: js.Any): Self = StObject.set(x, "inputGroupProps", value.asInstanceOf[js.Any])
+      inline def setInputGroupProps(value: Any): Self = StObject.set(x, "inputGroupProps", value.asInstanceOf[js.Any])
       
       inline def setInputGroupPropsUndefined: Self = StObject.set(x, "inputGroupProps", js.undefined)
       
-      inline def setInputProps(value: js.Any): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: Any): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      inline def setListProps(value: js.Any): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
+      inline def setListProps(value: Any): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
       
       inline def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
       
@@ -124,11 +124,11 @@ object searchInputMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPopoverProps(value: js.Any): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: Any): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       
-      inline def setSearchBtnProps(value: js.Any): Self = StObject.set(x, "searchBtnProps", value.asInstanceOf[js.Any])
+      inline def setSearchBtnProps(value: Any): Self = StObject.set(x, "searchBtnProps", value.asInstanceOf[js.Any])
       
       inline def setSearchBtnPropsUndefined: Self = StObject.set(x, "searchBtnProps", js.undefined)
       
@@ -136,7 +136,7 @@ object searchInputMod {
       
       inline def setSearchListUndefined: Self = StObject.set(x, "searchList", js.undefined)
       
-      inline def setSearchListVarargs(value: Callback*): Self = StObject.set(x, "searchList", js.Array(value :_*))
+      inline def setSearchListVarargs(value: Callback*): Self = StObject.set(x, "searchList", js.Array(value*))
       
       inline def setValidationState(value: Text): Self = StObject.set(x, "validationState", value.asInstanceOf[js.Any])
       

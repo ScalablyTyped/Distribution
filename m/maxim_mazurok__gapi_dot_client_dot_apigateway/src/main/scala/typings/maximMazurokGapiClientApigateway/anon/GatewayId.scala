@@ -32,7 +32,7 @@ trait GatewayId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Parent resource of the Gateway, of the form: `projects/∗/locations/ *` */
+  /** Required. Parent resource of the Gateway, of the form: `projects/ *‍/locations/ *` */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

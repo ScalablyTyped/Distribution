@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsConverter
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.tensorflowTfjsConverter.anon.TypeoftfOps
 import typings.tensorflowTfjsConverter.compiledApiMod.IAttrValue
 import typings.tensorflowTfjsConverter.compiledApiMod.ISignatureDef
 import typings.tensorflowTfjsConverter.executionContextMod.ExecutionContext
@@ -47,20 +48,22 @@ object operationsTypesMod {
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.basic_math
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.control
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.convolution
+    - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.creation
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.custom
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.dynamic
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.evaluation
-    - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.image
-    - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.creation
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.graph
+    - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.hash_table
+    - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.image
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.logical
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.matrices
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.normalization
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.reduction
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.slice_join
+    - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.sparse
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.spectral
+    - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.string
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.transformation
-    - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.hash_table
   */
   trait Category extends StObject
   object Category {
@@ -97,7 +100,11 @@ object operationsTypesMod {
     
     inline def slice_join: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.slice_join = "slice_join".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.slice_join]
     
+    inline def sparse: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.sparse = "sparse".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.sparse]
+    
     inline def spectral: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.spectral = "spectral".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.spectral]
+    
+    inline def string: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.string = "string".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.string]
     
     inline def transformation: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.transformation = "transformation".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.transformation]
   }
@@ -143,21 +150,21 @@ object operationsTypesMod {
       
       inline def setInitNodesUndefined: Self = StObject.set(x, "initNodes", js.undefined)
       
-      inline def setInitNodesVarargs(value: Node*): Self = StObject.set(x, "initNodes", js.Array(value :_*))
+      inline def setInitNodesVarargs(value: Node*): Self = StObject.set(x, "initNodes", js.Array(value*))
       
       inline def setInputs(value: js.Array[Node]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: Node*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: Node*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setNodes(value: StringDictionary[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
       inline def setOutputs(value: js.Array[Node]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      inline def setOutputsVarargs(value: Node*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: Node*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setPlaceholders(value: js.Array[Node]): Self = StObject.set(x, "placeholders", value.asInstanceOf[js.Any])
       
-      inline def setPlaceholdersVarargs(value: Node*): Self = StObject.set(x, "placeholders", js.Array(value :_*))
+      inline def setPlaceholdersVarargs(value: Node*): Self = StObject.set(x, "placeholders", js.Array(value*))
       
       inline def setSignature(value: ISignatureDef): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
@@ -165,7 +172,7 @@ object operationsTypesMod {
       
       inline def setWeights(value: js.Array[Node]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
       
-      inline def setWeightsVarargs(value: Node*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Node*): Self = StObject.set(x, "weights", js.Array(value*))
     }
   }
   
@@ -188,7 +195,7 @@ object operationsTypesMod {
       
       inline def setInputs(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "inputs", js.Array(value*))
     }
   }
   
@@ -246,18 +253,20 @@ object operationsTypesMod {
     }
   }
   
-  type InternalOpAsyncExecutor = js.Function4[
+  type InternalOpAsyncExecutor = js.Function5[
     /* node */ Node, 
     /* tensorMap */ NamedTensorsMap, 
     /* context */ ExecutionContext, 
     /* resourceManager */ js.UndefOr[ResourceManager], 
+    /* ops */ js.UndefOr[TypeoftfOps], 
     js.Promise[js.Array[Tensor[Rank]]]
   ]
   
-  type InternalOpExecutor = js.Function3[
+  type InternalOpExecutor = js.Function4[
     /* node */ Node, 
     /* tensorMap */ NamedTensorsMap, 
     /* context */ ExecutionContext, 
+    /* ops */ js.UndefOr[TypeoftfOps], 
     Tensor[Rank] | js.Array[Tensor[Rank]]
   ]
   
@@ -280,6 +289,8 @@ object operationsTypesMod {
     var name: String
     
     var op: String
+    
+    var outputs: js.UndefOr[js.Array[String]] = js.undefined
     
     var rawAttrs: js.UndefOr[StringDictionary[IAttrValue]] = js.undefined
     
@@ -309,7 +320,7 @@ object operationsTypesMod {
       
       inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDefaultOutput(value: Double): Self = StObject.set(x, "defaultOutput", value.asInstanceOf[js.Any])
       
@@ -317,17 +328,23 @@ object operationsTypesMod {
       
       inline def setInputNames(value: js.Array[String]): Self = StObject.set(x, "inputNames", value.asInstanceOf[js.Any])
       
-      inline def setInputNamesVarargs(value: String*): Self = StObject.set(x, "inputNames", js.Array(value :_*))
+      inline def setInputNamesVarargs(value: String*): Self = StObject.set(x, "inputNames", js.Array(value*))
       
       inline def setInputParams(value: StringDictionary[InputParamValue]): Self = StObject.set(x, "inputParams", value.asInstanceOf[js.Any])
       
       inline def setInputs(value: js.Array[Node]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: Node*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: Node*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      
+      inline def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      
+      inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+      
+      inline def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setRawAttrs(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "rawAttrs", value.asInstanceOf[js.Any])
       
@@ -354,6 +371,8 @@ object operationsTypesMod {
     
     var inputs: js.UndefOr[js.Array[InputParamMapper]] = js.undefined
     
+    var outputs: js.UndefOr[js.Array[String]] = js.undefined
+    
     var tfOpName: String
   }
   object OpMapper {
@@ -369,7 +388,7 @@ object operationsTypesMod {
       
       inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      inline def setAttrsVarargs(value: AttrParamMapper*): Self = StObject.set(x, "attrs", js.Array(value :_*))
+      inline def setAttrsVarargs(value: AttrParamMapper*): Self = StObject.set(x, "attrs", js.Array(value*))
       
       inline def setCategory(value: Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -385,7 +404,13 @@ object operationsTypesMod {
       
       inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      inline def setInputsVarargs(value: InputParamMapper*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: InputParamMapper*): Self = StObject.set(x, "inputs", js.Array(value*))
+      
+      inline def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      
+      inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+      
+      inline def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setTfOpName(value: String): Self = StObject.set(x, "tfOpName", value.asInstanceOf[js.Any])
     }
@@ -415,7 +440,7 @@ object operationsTypesMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: (js.Array[Double] | Boolean | Double | String | Tensor[Rank])*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: (js.Array[Double] | Boolean | Double | String | Tensor[Rank])*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -494,7 +519,7 @@ object operationsTypesMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: (js.Array[Double] | Boolean | Double | String | Tensor[Rank])*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (js.Array[Double] | Boolean | Double | String | Tensor[Rank])*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   

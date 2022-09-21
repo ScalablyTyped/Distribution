@@ -43,7 +43,7 @@ object typesListStreamsOutputMod {
       
       inline def setStreamNames(value: js.Array[String]): Self = StObject.set(x, "StreamNames", value.asInstanceOf[js.Any])
       
-      inline def setStreamNamesVarargs(value: String*): Self = StObject.set(x, "StreamNames", js.Array(value :_*))
+      inline def setStreamNamesVarargs(value: String*): Self = StObject.set(x, "StreamNames", js.Array(value*))
     }
   }
 }

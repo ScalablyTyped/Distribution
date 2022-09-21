@@ -11,7 +11,7 @@ trait IgSplitter
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Fired after collapsing is performed
@@ -72,7 +72,7 @@ trait IgSplitter
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies the orientation of the splitter.
@@ -172,7 +172,7 @@ object IgSplitter {
     
     inline def setLayoutRefreshingUndefined: Self = StObject.set(x, "layoutRefreshing", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -184,7 +184,7 @@ object IgSplitter {
     
     inline def setPanelsUndefined: Self = StObject.set(x, "panels", js.undefined)
     
-    inline def setPanelsVarargs(value: IgSplitterPanel*): Self = StObject.set(x, "panels", js.Array(value :_*))
+    inline def setPanelsVarargs(value: IgSplitterPanel*): Self = StObject.set(x, "panels", js.Array(value*))
     
     inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     

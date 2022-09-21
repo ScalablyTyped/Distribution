@@ -1,5 +1,6 @@
 package typings.hapiHapi.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.hapiCatbox.mod.ClientOptions
 import typings.hapiHapi.anon.Encoding
 import typings.hapiHapi.anon.IsCaseSensitive
@@ -8,7 +9,10 @@ import typings.hapiHapi.anon.MaxEventLoopDelay
 import typings.hapiHapi.anon.Parser
 import typings.hapiHapi.hapiHapiBooleans.`false`
 import typings.hapiMimos.mod.MimosOptions
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,7 +94,15 @@ trait ServerOptions extends StObject {
     * If the listener needs to be manually started, set autoListen to false.
     * If the listener uses TLS, set tls to true.
     */
-  var listener: js.UndefOr[Server] = js.undefined
+  var listener: js.UndefOr[
+    Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]
+  ] = js.undefined
   
   /**
     * @default { sampleInterval: 0 }.
@@ -112,7 +124,7 @@ trait ServerOptions extends StObject {
     * * * predicate - method with signature function(mime) when this mime type is found in the database, this function will execute to allows customizations.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsmime)
     */
-  var mime: js.UndefOr[MimosOptions] = js.undefined
+  var mime: js.UndefOr[MimosOptions[js.Object]] = js.undefined
   
   /**
     * @default {}.
@@ -167,7 +179,15 @@ trait ServerOptions extends StObject {
     * @default none.
     * Used to create an HTTPS connection. The tls object is passed unchanged to the node HTTPS server as described in the node HTTPS documentation.
     */
-  var tls: js.UndefOr[Boolean | typings.node.httpsMod.ServerOptions] = js.undefined
+  var tls: js.UndefOr[
+    Boolean | (typings.node.httpsMod.ServerOptions[
+      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      ]
+    ])
+  ] = js.undefined
   
   /**
     * @default constructed from runtime server information.
@@ -200,7 +220,7 @@ object ServerOptions {
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    inline def setCacheVarargs(value: ServerOptionsCache*): Self = StObject.set(x, "cache", js.Array(value :_*))
+    inline def setCacheVarargs(value: ServerOptionsCache*): Self = StObject.set(x, "cache", js.Array(value*))
     
     inline def setCompression(value: Boolean | ServerOptionsCompression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
@@ -214,7 +234,15 @@ object ServerOptions {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setListener(value: Server): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+    inline def setListener(
+      value: Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
@@ -222,7 +250,7 @@ object ServerOptions {
     
     inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    inline def setMime(value: MimosOptions): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: MimosOptions[js.Object]): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
     inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
@@ -250,7 +278,15 @@ object ServerOptions {
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    inline def setTls(value: Boolean | typings.node.httpsMod.ServerOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(
+      value: Boolean | (typings.node.httpsMod.ServerOptions[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+    ): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     

@@ -1,9 +1,11 @@
 package typings.atlassianConnectJs.anon
 
+import typings.atlassianConnectJs.AP.navigator.CustomDataValue
 import typings.atlassianConnectJs.atlassianConnectJsStrings.`version-at-save`
 import typings.atlassianConnectJs.atlassianConnectJsStrings.blogpost
 import typings.atlassianConnectJs.atlassianConnectJsStrings.current
 import typings.atlassianConnectJs.atlassianConnectJsStrings.page
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +23,7 @@ trait PartialNavigatorContext extends StObject {
   
   var contentType: js.UndefOr[page | blogpost] = js.undefined
   
-  var customData: js.UndefOr[String] = js.undefined
+  var customData: js.UndefOr[Record[String, CustomDataValue]] = js.undefined
   
   var dashboardId: js.UndefOr[String] = js.undefined
   
@@ -74,7 +76,7 @@ object PartialNavigatorContext {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setCustomData(value: String): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: Record[String, CustomDataValue]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     

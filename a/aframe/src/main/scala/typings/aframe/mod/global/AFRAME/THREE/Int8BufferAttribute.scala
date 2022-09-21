@@ -1,6 +1,5 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.Int8BufferAttribute")
 @js.native
-class Int8BufferAttribute protected ()
+open class Int8BufferAttribute protected ()
   extends typings.three.mod.Int8BufferAttribute {
-  def this(array: Iterable[Double], itemSize: Double) = this()
+  def this(array: js.Iterable[Double], itemSize: Double) = this()
 }

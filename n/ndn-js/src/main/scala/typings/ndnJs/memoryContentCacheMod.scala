@@ -15,7 +15,7 @@ object memoryContentCacheMod {
   
   @JSImport("ndn-js/memory-content-cache", "MemoryContentCache")
   @js.native
-  class MemoryContentCache protected () extends StObject {
+  open class MemoryContentCache protected () extends StObject {
     def this(face: Face) = this()
     def this(face: Face, cleanupIntervalMilliseconds: Double) = this()
     
@@ -25,48 +25,48 @@ object memoryContentCacheMod {
     
     def getStorePendingInterest(): OnInterestCallback = js.native
     
-    def registerPrefix(name: Name, onRegisterFailed: js.Function1[/* prefix */ Name, js.Any]): Unit = js.native
+    def registerPrefix(name: Name, onRegisterFailed: js.Function1[/* prefix */ Name, Any]): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any]
+      onRegisterFailed: js.Function1[/* prefix */ Name, Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, Any]
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any],
+      onRegisterFailed: js.Function1[/* prefix */ Name, Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, Any],
       onDataNotFound: Unit,
       flags: ForwardingFlags
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any],
+      onRegisterFailed: js.Function1[/* prefix */ Name, Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, Any],
       onDataNotFound: OnInterestCallback
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any],
+      onRegisterFailed: js.Function1[/* prefix */ Name, Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, Any],
       onDataNotFound: OnInterestCallback,
       flags: ForwardingFlags
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterFailed: js.Function1[/* prefix */ Name, Any],
       onRegisterSuccess: Unit,
       onDataNotFound: Unit,
       flags: ForwardingFlags
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterFailed: js.Function1[/* prefix */ Name, Any],
       onRegisterSuccess: Unit,
       onDataNotFound: OnInterestCallback
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterFailed: js.Function1[/* prefix */ Name, Any],
       onRegisterSuccess: Unit,
       onDataNotFound: OnInterestCallback,
       flags: ForwardingFlags

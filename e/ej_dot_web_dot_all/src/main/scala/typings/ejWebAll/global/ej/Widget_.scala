@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Widget")
 @js.native
-class Widget_ protected ()
+open class Widget_ protected ()
   extends StObject
      with typings.ejWebAll.ej.Widget_ {
-  def this(pluginName: String, className: String, proto: js.Any) = this()
+  def this(pluginName: String, className: String, proto: Any) = this()
 }
 object Widget_ {
   
@@ -18,7 +18,7 @@ object Widget_ {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def extend(widget: typings.ejWebAll.ej.Widget_): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(widget.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def extend(widget: typings.ejWebAll.ej.Widget_): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(widget.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* static member */
   @JSGlobal("ej.Widget.fn")

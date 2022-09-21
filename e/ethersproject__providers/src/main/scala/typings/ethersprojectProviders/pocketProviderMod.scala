@@ -12,14 +12,16 @@ object pocketProviderMod {
   
   @JSImport("@ethersproject/providers/lib/pocket-provider", "PocketProvider")
   @js.native
-  class PocketProvider () extends UrlJsonRpcProvider {
+  open class PocketProvider () extends UrlJsonRpcProvider {
     def this(network: Networkish) = this()
-    def this(network: Unit, apiKey: js.Any) = this()
-    def this(network: Networkish, apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: Any) = this()
+    def this(network: Networkish, apiKey: Any) = this()
     
     val applicationId: String = js.native
     
     val applicationSecretKey: String = js.native
+    
+    val loadBalancer: Boolean = js.native
   }
   /* static members */
   object PocketProvider {
@@ -28,8 +30,8 @@ object pocketProviderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getApiKey(apiKey: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def getUrl(network: Network, apiKey: js.Any): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
+    inline def getUrl(network: Network, apiKey: Any): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
   }
 }

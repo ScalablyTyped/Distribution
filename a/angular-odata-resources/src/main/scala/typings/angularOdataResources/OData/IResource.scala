@@ -10,135 +10,135 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IResource[T] extends StObject {
   
   @JSName("$delete")
-  def $delete(): js.Any = js.native
+  def $delete(): Any = js.native
   @JSName("$delete")
-  def $delete(params: js.Object): js.Any = js.native
+  def $delete(params: js.Object): Any = js.native
   @JSName("$delete")
-  def $delete(params: js.Object, success: js.Function): js.Any = js.native
+  def $delete(params: js.Object, success: js.Function): Any = js.native
   @JSName("$delete")
-  def $delete(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  def $delete(params: js.Object, success: js.Function, error: js.Function): Any = js.native
   @JSName("$delete")
-  def $delete(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  def $delete(params: js.Object, success: Unit, error: js.Function): Any = js.native
   @JSName("$delete")
-  def $delete(params: Unit, success: js.Function): js.Any = js.native
+  def $delete(params: Unit, success: js.Function): Any = js.native
   @JSName("$delete")
-  def $delete(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  def $delete(params: Unit, success: js.Function, error: js.Function): Any = js.native
   @JSName("$delete")
-  def $delete(params: Unit, success: Unit, error: js.Function): js.Any = js.native
+  def $delete(params: Unit, success: Unit, error: js.Function): Any = js.native
   @JSName("$delete")
-  def $delete(success: js.Function): js.Any = js.native
+  def $delete(success: js.Function): Any = js.native
   @JSName("$delete")
-  def $delete(success: js.Function, error: js.Function): js.Any = js.native
+  def $delete(success: js.Function, error: js.Function): Any = js.native
   
   @JSName("$get")
-  def $get(): js.Any = js.native
+  def $get(): Any = js.native
   @JSName("$get")
-  def $get(params: js.Object): js.Any = js.native
+  def $get(params: js.Object): Any = js.native
   @JSName("$get")
-  def $get(params: js.Object, success: js.Function): js.Any = js.native
+  def $get(params: js.Object, success: js.Function): Any = js.native
   @JSName("$get")
-  def $get(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  def $get(params: js.Object, success: js.Function, error: js.Function): Any = js.native
   @JSName("$get")
-  def $get(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  def $get(params: js.Object, success: Unit, error: js.Function): Any = js.native
   @JSName("$get")
-  def $get(params: Unit, success: js.Function): js.Any = js.native
+  def $get(params: Unit, success: js.Function): Any = js.native
   @JSName("$get")
-  def $get(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  def $get(params: Unit, success: js.Function, error: js.Function): Any = js.native
   @JSName("$get")
-  def $get(params: Unit, success: Unit, error: js.Function): js.Any = js.native
+  def $get(params: Unit, success: Unit, error: js.Function): Any = js.native
   @JSName("$get")
-  def $get(success: js.Function): js.Any = js.native
+  def $get(success: js.Function): Any = js.native
   @JSName("$get")
-  def $get(success: js.Function, error: js.Function): js.Any = js.native
+  def $get(success: js.Function, error: js.Function): Any = js.native
   
   /** the promise of the original server interaction that created this instance. **/
   @JSName("$promise")
-  var $promise: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<T> */ js.Any = js.native
+  var $promise: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<T> */ Any = js.native
   
   @JSName("$query")
-  def $query(): js.Any = js.native
+  def $query(): Any = js.native
   @JSName("$query")
-  def $query(params: js.Object): js.Any = js.native
+  def $query(params: js.Object): Any = js.native
   @JSName("$query")
-  def $query(params: js.Object, success: js.Function): js.Any = js.native
+  def $query(params: js.Object, success: js.Function): Any = js.native
   @JSName("$query")
-  def $query(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  def $query(params: js.Object, success: js.Function, error: js.Function): Any = js.native
   @JSName("$query")
-  def $query(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  def $query(params: js.Object, success: Unit, error: js.Function): Any = js.native
   @JSName("$query")
-  def $query(params: Unit, success: js.Function): js.Any = js.native
+  def $query(params: Unit, success: js.Function): Any = js.native
   @JSName("$query")
-  def $query(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  def $query(params: Unit, success: js.Function, error: js.Function): Any = js.native
   @JSName("$query")
-  def $query(params: Unit, success: Unit, error: js.Function): js.Any = js.native
+  def $query(params: Unit, success: Unit, error: js.Function): Any = js.native
   @JSName("$query")
-  def $query(success: js.Function): js.Any = js.native
+  def $query(success: js.Function): Any = js.native
   @JSName("$query")
-  def $query(success: js.Function, error: js.Function): js.Any = js.native
+  def $query(success: js.Function, error: js.Function): Any = js.native
   
   @JSName("$remove")
-  def $remove(): js.Any = js.native
+  def $remove(): Any = js.native
   @JSName("$remove")
-  def $remove(params: js.Object): js.Any = js.native
+  def $remove(params: js.Object): Any = js.native
   @JSName("$remove")
-  def $remove(params: js.Object, success: js.Function): js.Any = js.native
+  def $remove(params: js.Object, success: js.Function): Any = js.native
   @JSName("$remove")
-  def $remove(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  def $remove(params: js.Object, success: js.Function, error: js.Function): Any = js.native
   @JSName("$remove")
-  def $remove(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  def $remove(params: js.Object, success: Unit, error: js.Function): Any = js.native
   @JSName("$remove")
-  def $remove(params: Unit, success: js.Function): js.Any = js.native
+  def $remove(params: Unit, success: js.Function): Any = js.native
   @JSName("$remove")
-  def $remove(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  def $remove(params: Unit, success: js.Function, error: js.Function): Any = js.native
   @JSName("$remove")
-  def $remove(params: Unit, success: Unit, error: js.Function): js.Any = js.native
+  def $remove(params: Unit, success: Unit, error: js.Function): Any = js.native
   @JSName("$remove")
-  def $remove(success: js.Function): js.Any = js.native
+  def $remove(success: js.Function): Any = js.native
   @JSName("$remove")
-  def $remove(success: js.Function, error: js.Function): js.Any = js.native
+  def $remove(success: js.Function, error: js.Function): Any = js.native
   
   @JSName("$resolved")
   var $resolved: Boolean = js.native
   
   @JSName("$save")
-  def $save(): js.Any = js.native
+  def $save(): Any = js.native
   @JSName("$save")
-  def $save(params: js.Object): js.Any = js.native
+  def $save(params: js.Object): Any = js.native
   @JSName("$save")
-  def $save(params: js.Object, success: js.Function): js.Any = js.native
+  def $save(params: js.Object, success: js.Function): Any = js.native
   @JSName("$save")
-  def $save(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  def $save(params: js.Object, success: js.Function, error: js.Function): Any = js.native
   @JSName("$save")
-  def $save(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  def $save(params: js.Object, success: Unit, error: js.Function): Any = js.native
   @JSName("$save")
-  def $save(params: Unit, success: js.Function): js.Any = js.native
+  def $save(params: Unit, success: js.Function): Any = js.native
   @JSName("$save")
-  def $save(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  def $save(params: Unit, success: js.Function, error: js.Function): Any = js.native
   @JSName("$save")
-  def $save(params: Unit, success: Unit, error: js.Function): js.Any = js.native
+  def $save(params: Unit, success: Unit, error: js.Function): Any = js.native
   @JSName("$save")
-  def $save(success: js.Function): js.Any = js.native
+  def $save(success: js.Function): Any = js.native
   @JSName("$save")
-  def $save(success: js.Function, error: js.Function): js.Any = js.native
+  def $save(success: js.Function, error: js.Function): Any = js.native
   
   @JSName("$update")
-  def $update(): js.Any = js.native
+  def $update(): Any = js.native
   @JSName("$update")
-  def $update(params: js.Object): js.Any = js.native
+  def $update(params: js.Object): Any = js.native
   @JSName("$update")
-  def $update(params: js.Object, success: js.Function): js.Any = js.native
+  def $update(params: js.Object, success: js.Function): Any = js.native
   @JSName("$update")
-  def $update(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  def $update(params: js.Object, success: js.Function, error: js.Function): Any = js.native
   @JSName("$update")
-  def $update(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  def $update(params: js.Object, success: Unit, error: js.Function): Any = js.native
   @JSName("$update")
-  def $update(params: Unit, success: js.Function): js.Any = js.native
+  def $update(params: Unit, success: js.Function): Any = js.native
   @JSName("$update")
-  def $update(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  def $update(params: Unit, success: js.Function, error: js.Function): Any = js.native
   @JSName("$update")
-  def $update(params: Unit, success: Unit, error: js.Function): js.Any = js.native
+  def $update(params: Unit, success: Unit, error: js.Function): Any = js.native
   @JSName("$update")
-  def $update(success: js.Function): js.Any = js.native
+  def $update(success: js.Function): Any = js.native
   @JSName("$update")
-  def $update(success: js.Function, error: js.Function): js.Any = js.native
+  def $update(success: js.Function, error: js.Function): Any = js.native
 }

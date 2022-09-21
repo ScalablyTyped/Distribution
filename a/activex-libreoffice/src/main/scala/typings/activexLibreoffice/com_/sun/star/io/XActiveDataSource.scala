@@ -33,7 +33,7 @@ object XActiveDataSource {
     OutputStream: XOutputStream,
     acquire: () => Unit,
     getOutputStream: () => XOutputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setOutputStream: XOutputStream => Unit
   ): XActiveDataSource = {

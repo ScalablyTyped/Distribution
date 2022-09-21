@@ -21,7 +21,7 @@ object Listener {
   
   extension [Self <: Listener](x: Self) {
     
-    inline def setOnReceiveMessage(value: (/* message */ js.Any, /* next */ js.Function) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
+    inline def setOnReceiveMessage(value: (/* message */ Any, /* next */ js.Function) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
     
     inline def setOnReceiveMessageUndefined: Self = StObject.set(x, "onReceiveMessage", js.undefined)
     

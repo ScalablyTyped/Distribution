@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   A Filter to find documents with a geo_shapes matching a specific shape.
   */
-class GeoShapeFilter ()
+open class GeoShapeFilter ()
   extends StObject
      with Filter {
   

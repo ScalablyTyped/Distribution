@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GenderAssignedTargetingOptionDetails extends StObject {
   
-  /** Output only. The gender of the audience. */
+  /** The gender of the audience. Output only in v1. Required in v2. */
   var gender: js.UndefOr[String] = js.undefined
   
   /** Required. The targeting_option_id of a TargetingOption of type `TARGETING_TYPE_GENDER`. */

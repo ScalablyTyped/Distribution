@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-sidecar
 
-Typings are for version 1.0.3
+Typings are for version 1.1.2
 
 ## Library description:
 Sidecar code splitting utils
@@ -10,13 +10,12 @@ Sidecar code splitting utils
 | ------------------ | :-------------: |
 | Full name          | use-sidecar |
 | Keywords           | code spliting, react, sidecar |
-| # releases         | 12 |
-| # dependents       | 3 |
-| # downloads        | 60657643 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 6702521.666666667 |
+| # stars            | 82.0 |
 
 ## Links
-- [Homepage](https://github.com/theKashey/use-sidecar)
 - [Npm](https://www.npmjs.com/package/use-sidecar)
     
 

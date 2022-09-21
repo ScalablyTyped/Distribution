@@ -1,5 +1,8 @@
 package typings.parseFullName
 
+import typings.parseFullName.parseFullNameNumbers.`-1`
+import typings.parseFullName.parseFullNameNumbers.`0`
+import typings.parseFullName.parseFullNameNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,68 +13,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parseFullName(nameToParse: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any]).asInstanceOf[Name]
-  inline def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Boolean, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
   inline def parseFullName(
     nameToParse: String,
-    partToReturn: Unit,
-    fixCase: Boolean,
-    stopOnError: Boolean,
-    useLongLists: Boolean
-  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(
-    nameToParse: String,
-    partToReturn: Unit,
-    fixCase: Boolean,
-    stopOnError: Unit,
-    useLongLists: Boolean
-  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Unit, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(
-    nameToParse: String,
-    partToReturn: Unit,
-    fixCase: Unit,
-    stopOnError: Boolean,
-    useLongLists: Boolean
-  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Unit, stopOnError: Unit, useLongLists: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(nameToParse: String, partToReturn: partToReturn): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(
-    nameToParse: String,
-    partToReturn: partToReturn,
-    fixCase: Boolean,
-    stopOnError: Boolean,
-    useLongLists: Boolean
-  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(
-    nameToParse: String,
-    partToReturn: partToReturn,
-    fixCase: Boolean,
-    stopOnError: Unit,
-    useLongLists: Boolean
-  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Unit, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(
-    nameToParse: String,
-    partToReturn: partToReturn,
-    fixCase: Unit,
-    stopOnError: Boolean,
-    useLongLists: Boolean
-  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  inline def parseFullName(
-    nameToParse: String,
-    partToReturn: partToReturn,
-    fixCase: Unit,
-    stopOnError: Unit,
-    useLongLists: Boolean
+    partToReturn: js.UndefOr[partToReturn],
+    fixCase: js.UndefOr[Boolean | `-1` | `0` | `1`],
+    stopOnError: js.UndefOr[Boolean | `0` | `1`],
+    useLongLists: js.UndefOr[Boolean | `0` | `1`]
   ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
   
   trait Name extends StObject {
     
-    var error: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var error: js.UndefOr[js.Array[Any]] = js.undefined
     
     var first: js.UndefOr[String] = js.undefined
     
@@ -94,11 +46,11 @@ object mod {
     
     extension [Self <: Name](x: Self) {
       
-      inline def setError(value: js.Array[js.Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Array[Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setErrorVarargs(value: js.Any*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: Any*): Self = StObject.set(x, "error", js.Array(value*))
       
       inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       

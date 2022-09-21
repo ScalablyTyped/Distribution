@@ -16,7 +16,7 @@ trait IObjectTemplateSelector extends StObject {
   
   def GetObjectTypeName(): String
   
-  def GetTemplateItems(): js.Any
+  def GetTemplateItems(): Any
   
   def SelectItem(itemID: String): Unit
 }
@@ -28,7 +28,7 @@ object IObjectTemplateSelector {
     GetObjectTypeIconURL: () => String,
     GetObjectTypeId: () => Double,
     GetObjectTypeName: () => String,
-    GetTemplateItems: () => js.Any,
+    GetTemplateItems: () => Any,
     SelectItem: String => Unit
   ): IObjectTemplateSelector = {
     val __obj = js.Dynamic.literal(ClassSelector = ClassSelector.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any], GetObjectTypeIconURL = js.Any.fromFunction0(GetObjectTypeIconURL), GetObjectTypeId = js.Any.fromFunction0(GetObjectTypeId), GetObjectTypeName = js.Any.fromFunction0(GetObjectTypeName), GetTemplateItems = js.Any.fromFunction0(GetTemplateItems), SelectItem = js.Any.fromFunction1(SelectItem))
@@ -47,7 +47,7 @@ object IObjectTemplateSelector {
     
     inline def setGetObjectTypeName(value: () => String): Self = StObject.set(x, "GetObjectTypeName", js.Any.fromFunction0(value))
     
-    inline def setGetTemplateItems(value: () => js.Any): Self = StObject.set(x, "GetTemplateItems", js.Any.fromFunction0(value))
+    inline def setGetTemplateItems(value: () => Any): Self = StObject.set(x, "GetTemplateItems", js.Any.fromFunction0(value))
     
     inline def setSelectItem(value: String => Unit): Self = StObject.set(x, "SelectItem", js.Any.fromFunction1(value))
   }

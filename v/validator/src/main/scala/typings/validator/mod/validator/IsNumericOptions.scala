@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IsNumericOptions extends StObject {
   
+  var locale: js.UndefOr[AlphaLocale] = js.undefined
+  
   /**
     * If `no_symbols` is true, the validator will reject numeric strings that feature a symbol (e.g. `+`, `-`, or `.`).
     *
@@ -21,6 +23,10 @@ object IsNumericOptions {
   }
   
   extension [Self <: IsNumericOptions](x: Self) {
+    
+    inline def setLocale(value: AlphaLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     inline def setNo_symbols(value: Boolean): Self = StObject.set(x, "no_symbols", value.asInstanceOf[js.Any])
     

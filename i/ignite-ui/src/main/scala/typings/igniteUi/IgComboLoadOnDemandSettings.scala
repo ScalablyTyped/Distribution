@@ -10,7 +10,7 @@ trait IgComboLoadOnDemandSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets option to enable load on demand.

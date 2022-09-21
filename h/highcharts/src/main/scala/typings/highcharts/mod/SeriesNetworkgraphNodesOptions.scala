@@ -72,7 +72,7 @@ object SeriesNetworkgraphNodesOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: SeriesNetworkgraphDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: SeriesNetworkgraphDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,7 @@ trait XmlMap extends StObject {
   
   var Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PreserveColumnFilter: Boolean = js.native
   

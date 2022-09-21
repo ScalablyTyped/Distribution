@@ -62,7 +62,7 @@ object anon {
     
     var scale: js.UndefOr[Double] = js.undefined
     
-    var srcEvent: js.Any
+    var srcEvent: Any
     
     var startMutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.undefined
     
@@ -80,7 +80,7 @@ object anon {
     
     inline def apply(
       preTouches: js.Array[Finger],
-      srcEvent: js.Any,
+      srcEvent: Any,
       startTime: Double,
       startTouches: js.Array[Finger],
       time: Double,
@@ -108,7 +108,7 @@ object anon {
       
       inline def setMutliFingerStatusUndefined: Self = StObject.set(x, "mutliFingerStatus", js.undefined)
       
-      inline def setMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "mutliFingerStatus", js.Array(value :_*))
+      inline def setMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "mutliFingerStatus", js.Array(value*))
       
       inline def setPan(value: Boolean): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
       
@@ -120,7 +120,7 @@ object anon {
       
       inline def setPreTouches(value: js.Array[Finger]): Self = StObject.set(x, "preTouches", value.asInstanceOf[js.Any])
       
-      inline def setPreTouchesVarargs(value: Finger*): Self = StObject.set(x, "preTouches", js.Array(value :_*))
+      inline def setPreTouchesVarargs(value: Finger*): Self = StObject.set(x, "preTouches", js.Array(value*))
       
       inline def setPress(value: Boolean): Self = StObject.set(x, "press", value.asInstanceOf[js.Any])
       
@@ -138,19 +138,19 @@ object anon {
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      inline def setSrcEvent(value: js.Any): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
+      inline def setSrcEvent(value: Any): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
       
       inline def setStartMutliFingerStatus(value: js.Array[MultiFingerStatus]): Self = StObject.set(x, "startMutliFingerStatus", value.asInstanceOf[js.Any])
       
       inline def setStartMutliFingerStatusUndefined: Self = StObject.set(x, "startMutliFingerStatus", js.undefined)
       
-      inline def setStartMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "startMutliFingerStatus", js.Array(value :_*))
+      inline def setStartMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "startMutliFingerStatus", js.Array(value*))
       
       inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTouches(value: js.Array[Finger]): Self = StObject.set(x, "startTouches", value.asInstanceOf[js.Any])
       
-      inline def setStartTouchesVarargs(value: Finger*): Self = StObject.set(x, "startTouches", js.Array(value :_*))
+      inline def setStartTouchesVarargs(value: Finger*): Self = StObject.set(x, "startTouches", js.Array(value*))
       
       inline def setSwipe(value: Boolean): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
       
@@ -160,7 +160,7 @@ object anon {
       
       inline def setTouches(value: js.Array[Finger]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      inline def setTouchesVarargs(value: Finger*): Self = StObject.set(x, "touches", js.Array(value :_*))
+      inline def setTouchesVarargs(value: Finger*): Self = StObject.set(x, "touches", js.Array(value*))
     }
   }
   
@@ -193,7 +193,7 @@ object anon {
     
     var angle: Double
     
-    var time: js.Any
+    var time: Any
     
     var velocity: Double
     
@@ -205,7 +205,7 @@ object anon {
   }
   object Time {
     
-    inline def apply(angle: Double, time: js.Any, velocity: Double, x: Double, y: Double, z: Double): Time = {
+    inline def apply(angle: Double, time: Any, velocity: Double, x: Double, y: Double, z: Double): Time = {
       val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[Time]
     }
@@ -214,7 +214,7 @@ object anon {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      inline def setTime(value: js.Any): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Any): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
       

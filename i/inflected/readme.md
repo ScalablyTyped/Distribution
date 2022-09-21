@@ -11,14 +11,11 @@ A port of ActiveSupport's inflector to Node.js
 | Full name          | inflected |
 | Keywords           | inflector, inflection, pluralize, singularize, camelize, titleize, tableize, humanize, capitalize, constantify, dasherize, ordinalize, parameterize, transliterate, activesupport |
 | # releases         | 2 |
-| # dependents       | 157 |
-| # downloads        | 33118907 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4202976.0 |
+| # stars            | 155.0 |
 
 ## Links
-- [Homepage](https://github.com/martinandert/inflected#readme)
-- [Bugs](https://github.com/martinandert/inflected/issues)
-- [Repository](https://github.com/martinandert/inflected)
 - [Npm](https://www.npmjs.com/package/inflected)
     
 

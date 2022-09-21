@@ -32,7 +32,7 @@ object StorageType {
     
     inline def setStorageTypeLimitsUndefined: Self = StObject.set(x, "StorageTypeLimits", js.undefined)
     
-    inline def setStorageTypeLimitsVarargs(value: StorageTypeLimit*): Self = StObject.set(x, "StorageTypeLimits", js.Array(value :_*))
+    inline def setStorageTypeLimitsVarargs(value: StorageTypeLimit*): Self = StObject.set(x, "StorageTypeLimits", js.Array(value*))
     
     inline def setStorageTypeName(value: StorageTypeName): Self = StObject.set(x, "StorageTypeName", value.asInstanceOf[js.Any])
     

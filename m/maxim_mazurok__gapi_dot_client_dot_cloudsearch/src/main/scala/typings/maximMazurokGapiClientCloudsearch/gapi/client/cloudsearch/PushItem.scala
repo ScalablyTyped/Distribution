@@ -13,7 +13,7 @@ trait PushItem extends StObject {
   var contentHash: js.UndefOr[String] = js.undefined
   
   /**
-    * Metadata hash of the item according to the repository. If specified, this is used to determine how to modify this item's status. Setting this field and the type field results in
+    * The metadata hash of the item according to the repository. If specified, this is used to determine how to modify this item's status. Setting this field and the type field results in
     * argument error. The maximum length is 2048 characters.
     */
   var metadataHash: js.UndefOr[String] = js.undefined
@@ -21,7 +21,7 @@ trait PushItem extends StObject {
   /** Provides additional document state information for the connector, such as an alternate repository ID and other metadata. The maximum length is 8192 bytes. */
   var payload: js.UndefOr[String] = js.undefined
   
-  /** Queue to which this item belongs to. The default queue is chosen if this field is not specified. The maximum length is 512 characters. */
+  /** Queue to which this item belongs. The `default` queue is chosen if this field is not specified. The maximum length is 512 characters. */
   var queue: js.UndefOr[String] = js.undefined
   
   /**

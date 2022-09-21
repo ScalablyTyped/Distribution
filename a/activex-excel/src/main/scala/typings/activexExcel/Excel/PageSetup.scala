@@ -77,7 +77,7 @@ trait PageSetup extends StObject {
   
   var PaperSize: XlPaperSize
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PrintArea: String
   
@@ -91,10 +91,7 @@ trait PageSetup extends StObject {
   
   var PrintNotes: Boolean
   
-  @JSName("PrintQuality")
-  def PrintQuality_1(Index: `1`): Double
-  @JSName("PrintQuality")
-  def PrintQuality_2(Index: `2`): Double
+  def PrintQuality(Index: `1` | `2`): Double
   @JSName("PrintQuality")
   var PrintQuality_Original: SafeArray[Double] & (js.Function1[/* Index */ `1` | `2`, Double])
   
@@ -154,7 +151,7 @@ object PageSetup {
     Orientation: XlPageOrientation,
     Pages: Pages,
     PaperSize: XlPaperSize,
-    Parent: js.Any,
+    Parent: Any,
     PrintArea: String,
     PrintComments: XlPrintLocation,
     PrintErrors: XlPrintErrors,
@@ -244,7 +241,7 @@ object PageSetup {
     
     inline def setPaperSize(value: XlPaperSize): Self = StObject.set(x, "PaperSize", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrintArea(value: String): Self = StObject.set(x, "PrintArea", value.asInstanceOf[js.Any])
     

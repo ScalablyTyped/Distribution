@@ -18,7 +18,7 @@ object rulerMod {
     */
   @JSImport("remarkable/lib/ruler", JSImport.Namespace)
   @js.native
-  class ^[RULE] ()
+  open class ^[RULE] ()
     extends StObject
        with Ruler[RULE]
   

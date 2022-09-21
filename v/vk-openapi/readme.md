@@ -11,9 +11,9 @@ Vkontakte Open API for websites for use with Browserify.
 | Full name          | vk-openapi |
 | Keywords           | vk, vkontakte, browserify |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 486 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 152.33333333333334 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/ololoepepe/vk-openapi)

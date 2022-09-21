@@ -10,10 +10,10 @@ object vibrationMod {
   
   @JSImport("material-ui/svg-icons/notification/vibration", JSImport.Default)
   @js.native
-  class default () extends NotificationVibration
+  open class default () extends NotificationVibration
   
   @JSImport("material-ui/svg-icons/notification/vibration", "NotificationVibration")
   @js.native
-  class NotificationVibration ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationVibration ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

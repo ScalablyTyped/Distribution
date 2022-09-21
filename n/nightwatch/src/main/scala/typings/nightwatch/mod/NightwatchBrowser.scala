@@ -8,3 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NightwatchBrowser
   extends StObject
      with NightwatchAPI
+     with NightwatchComponentTestingCommands

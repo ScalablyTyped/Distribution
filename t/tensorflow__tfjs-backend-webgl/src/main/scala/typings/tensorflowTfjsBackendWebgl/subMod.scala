@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object subMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Sub", "sub")
+  @js.native
+  val sub: KernelFunc = js.native
+  
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Sub", "subConfig")
   @js.native
   val subConfig: KernelConfig = js.native
-  
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Sub", "subKernelFunc")
-  @js.native
-  val subKernelFunc: KernelFunc = js.native
 }

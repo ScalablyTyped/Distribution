@@ -8,7 +8,7 @@ trait ChatRenderMessageSender extends StObject {
   
   var iconUrl: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[js.Any] = js.undefined
+  var id: js.UndefOr[Any] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
 }
@@ -25,7 +25,7 @@ object ChatRenderMessageSender {
     
     inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     

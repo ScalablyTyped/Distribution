@@ -55,7 +55,7 @@ object ChooseMessageFileOption {
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    inline def setExtensionVarargs(value: String*): Self = StObject.set(x, "extension", js.Array(value :_*))
+    inline def setExtensionVarargs(value: String*): Self = StObject.set(x, "extension", js.Array(value*))
     
     inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     

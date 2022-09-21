@@ -15,7 +15,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : ProsemirrorTestBuilder = js.native
   
-  type Args = js.Array[String | TaggedProsemirrorNode[js.Any] | TaggedFlatObject[js.Any]]
+  type Args = js.Array[String | TaggedProsemirrorNode[Any] | TaggedFlatObject[Any] | js.Object]
   
   type Builder = js.Function2[
     /* testSchema */ Schema[String, String], 
@@ -41,7 +41,7 @@ object mod extends Shortcut {
     }
   }
   
-  type MarkBuilderMethod[S /* <: Schema[js.Any, js.Any] */] = js.Function1[/* args */ Args, TaggedFlatObject[S]]
+  type MarkBuilderMethod[S /* <: Schema[Any, Any] */] = js.Function1[/* args */ Args, TaggedFlatObject[S]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in string ]: any} */ trait MarkTypeAttributes extends StObject {
@@ -61,7 +61,7 @@ object mod extends Shortcut {
     }
   }
   
-  type NodeBuilderMethod[S /* <: Schema[js.Any, js.Any] */] = js.Function1[/* args */ Args, TaggedProsemirrorNode[S]]
+  type NodeBuilderMethod[S /* <: Schema[Any, Any] */] = js.Function1[/* args */ Args, TaggedProsemirrorNode[S]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in string ]: any} */ trait NodeTypeAttributes extends StObject {
@@ -371,7 +371,7 @@ object mod extends Shortcut {
     }
   }
   
-  trait TaggedFlatObject[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait TaggedFlatObject[S /* <: Schema[Any, Any] */] extends StObject {
     
     var flat: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]]
     
@@ -379,24 +379,24 @@ object mod extends Shortcut {
   }
   object TaggedFlatObject {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](flat: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]], tag: Record[String, Double]): TaggedFlatObject[S] = {
+    inline def apply[S /* <: Schema[Any, Any] */](flat: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]], tag: Record[String, Double]): TaggedFlatObject[S] = {
       val __obj = js.Dynamic.literal(flat = flat.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaggedFlatObject[S]]
     }
     
-    extension [Self <: TaggedFlatObject[?], S /* <: Schema[js.Any, js.Any] */](x: Self & TaggedFlatObject[S]) {
+    extension [Self <: TaggedFlatObject[?], S /* <: Schema[Any, Any] */](x: Self & TaggedFlatObject[S]) {
       
       inline def setFlat(value: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
-      inline def setFlatVarargs(value: (TaggedProsemirrorNode[S] | TaggedFlatObject[S])*): Self = StObject.set(x, "flat", js.Array(value :_*))
+      inline def setFlatVarargs(value: (TaggedProsemirrorNode[S] | TaggedFlatObject[S])*): Self = StObject.set(x, "flat", js.Array(value*))
       
       inline def setTag(value: Record[String, Double]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait TaggedProsemirrorNode[S /* <: Schema[js.Any, js.Any] */]
-    extends Node[js.Any]
+  trait TaggedProsemirrorNode[S /* <: Schema[Any, Any] */]
+    extends Node
        with TaggedFlatObject[S]
   
   /* Rewritten from type alias, can be one of: 

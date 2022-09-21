@@ -33,6 +33,6 @@ object ListSentimentDetectionJobsResponse {
     
     inline def setSentimentDetectionJobPropertiesListUndefined: Self = StObject.set(x, "SentimentDetectionJobPropertiesList", js.undefined)
     
-    inline def setSentimentDetectionJobPropertiesListVarargs(value: SentimentDetectionJobProperties*): Self = StObject.set(x, "SentimentDetectionJobPropertiesList", js.Array(value :_*))
+    inline def setSentimentDetectionJobPropertiesListVarargs(value: SentimentDetectionJobProperties*): Self = StObject.set(x, "SentimentDetectionJobPropertiesList", js.Array(value*))
   }
 }

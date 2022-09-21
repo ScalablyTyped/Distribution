@@ -10,10 +10,10 @@ This package is no longer supported and has been deprecated. To avoid malicious 
 | ------------------ | :-------------: |
 | Full name          | dynatrace |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 818 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 123.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/npm/deprecate-holder#readme)

@@ -1,6 +1,5 @@
 package typings.jasmineAjax
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait JasmineAjaxRequestStub extends StObject {
   
   var query: String
   
-  var url: RegExp | String
+  var url: js.RegExp | String
 }
 object JasmineAjaxRequestStub {
   
@@ -36,7 +35,7 @@ object JasmineAjaxRequestStub {
     matches: (String, String, String) => Boolean,
     method: String,
     query: String,
-    url: RegExp | String
+    url: js.RegExp | String
   ): JasmineAjaxRequestStub = {
     val __obj = js.Dynamic.literal(andCallFunction = js.Any.fromFunction1(andCallFunction), andError = js.Any.fromFunction1(andError), andReturn = js.Any.fromFunction1(andReturn), andTimeout = js.Any.fromFunction0(andTimeout), data = data.asInstanceOf[js.Any], matches = js.Any.fromFunction3(matches), method = method.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[JasmineAjaxRequestStub]
@@ -60,6 +59,6 @@ object JasmineAjaxRequestStub {
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setUrl(value: RegExp | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: js.RegExp | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

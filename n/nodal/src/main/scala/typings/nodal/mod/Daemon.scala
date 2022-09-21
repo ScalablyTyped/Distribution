@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "Daemon")
 @js.native
-class Daemon ()
+open class Daemon ()
   extends typings.fxn.mod.Daemon {
   
-  def error(req: js.Any, res: js.Any, err: js.Any): Unit = js.native
+  def error(req: Any, res: Any, err: Any): Unit = js.native
 }

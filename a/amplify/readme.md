@@ -10,10 +10,10 @@ Amplify is a wrapper around the NodeJS http packages to help make development ea
 | ------------------ | :-------------: |
 | Full name          | amplify |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 29306 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5755.666666666667 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/chafnan/amplify#readme)

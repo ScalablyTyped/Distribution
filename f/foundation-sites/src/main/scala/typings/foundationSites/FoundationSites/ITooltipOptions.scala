@@ -6,7 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ITooltipOptions extends StObject {
   
+  var alignment: js.UndefOr[String] = js.undefined
+  
+  var allowBottomOverlap: js.UndefOr[Boolean] = js.undefined
+  
+  var allowHtml: js.UndefOr[Boolean] = js.undefined
+  
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
+  
   var clickOpen: js.UndefOr[Boolean] = js.undefined
+  
+  var disableForTouch: js.UndefOr[Any] = js.undefined
   
   var disableHover: js.UndefOr[Boolean] = js.undefined
   
@@ -18,7 +28,7 @@ trait ITooltipOptions extends StObject {
   
   var hoverDelay: js.UndefOr[Double] = js.undefined
   
-  var positionClass: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.undefined
   
   var showOn: js.UndefOr[String] = js.undefined
   
@@ -29,6 +39,12 @@ trait ITooltipOptions extends StObject {
   var tipText: js.UndefOr[String] = js.undefined
   
   var tooltipClass: js.UndefOr[String] = js.undefined
+  
+  var tooltipHeight: js.UndefOr[Double] = js.undefined
+  
+  var tooltipWidth: js.UndefOr[Double] = js.undefined
+  
+  var touchCloseText: js.UndefOr[String] = js.undefined
   
   var triggerClass: js.UndefOr[String] = js.undefined
   
@@ -43,9 +59,29 @@ object ITooltipOptions {
   
   extension [Self <: ITooltipOptions](x: Self) {
     
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setAllowBottomOverlap(value: Boolean): Self = StObject.set(x, "allowBottomOverlap", value.asInstanceOf[js.Any])
+    
+    inline def setAllowBottomOverlapUndefined: Self = StObject.set(x, "allowBottomOverlap", js.undefined)
+    
+    inline def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
+    
+    inline def setAllowHtmlUndefined: Self = StObject.set(x, "allowHtml", js.undefined)
+    
+    inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
+    
+    inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
+    
     inline def setClickOpen(value: Boolean): Self = StObject.set(x, "clickOpen", value.asInstanceOf[js.Any])
     
     inline def setClickOpenUndefined: Self = StObject.set(x, "clickOpen", js.undefined)
+    
+    inline def setDisableForTouch(value: Any): Self = StObject.set(x, "disableForTouch", value.asInstanceOf[js.Any])
+    
+    inline def setDisableForTouchUndefined: Self = StObject.set(x, "disableForTouch", js.undefined)
     
     inline def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
     
@@ -67,9 +103,9 @@ object ITooltipOptions {
     
     inline def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
     
-    inline def setPositionClass(value: String): Self = StObject.set(x, "positionClass", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    inline def setPositionClassUndefined: Self = StObject.set(x, "positionClass", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setShowOn(value: String): Self = StObject.set(x, "showOn", value.asInstanceOf[js.Any])
     
@@ -90,6 +126,18 @@ object ITooltipOptions {
     inline def setTooltipClass(value: String): Self = StObject.set(x, "tooltipClass", value.asInstanceOf[js.Any])
     
     inline def setTooltipClassUndefined: Self = StObject.set(x, "tooltipClass", js.undefined)
+    
+    inline def setTooltipHeight(value: Double): Self = StObject.set(x, "tooltipHeight", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipHeightUndefined: Self = StObject.set(x, "tooltipHeight", js.undefined)
+    
+    inline def setTooltipWidth(value: Double): Self = StObject.set(x, "tooltipWidth", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipWidthUndefined: Self = StObject.set(x, "tooltipWidth", js.undefined)
+    
+    inline def setTouchCloseText(value: String): Self = StObject.set(x, "touchCloseText", value.asInstanceOf[js.Any])
+    
+    inline def setTouchCloseTextUndefined: Self = StObject.set(x, "touchCloseText", js.undefined)
     
     inline def setTriggerClass(value: String): Self = StObject.set(x, "triggerClass", value.asInstanceOf[js.Any])
     

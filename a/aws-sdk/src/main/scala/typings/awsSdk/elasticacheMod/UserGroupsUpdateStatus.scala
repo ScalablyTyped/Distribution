@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UserGroupsUpdateStatus extends StObject {
   
   /**
-    * The list of user group IDs to add.
+    * The ID of the user group to add.
     */
   var UserGroupIdsToAdd: js.UndefOr[UserGroupIdList] = js.undefined
   
   /**
-    * The list of user group IDs to remove.
+    * The ID of the user group to remove.
     */
   var UserGroupIdsToRemove: js.UndefOr[UserGroupIdList] = js.undefined
 }
@@ -29,12 +29,12 @@ object UserGroupsUpdateStatus {
     
     inline def setUserGroupIdsToAddUndefined: Self = StObject.set(x, "UserGroupIdsToAdd", js.undefined)
     
-    inline def setUserGroupIdsToAddVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToAdd", js.Array(value :_*))
+    inline def setUserGroupIdsToAddVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToAdd", js.Array(value*))
     
     inline def setUserGroupIdsToRemove(value: UserGroupIdList): Self = StObject.set(x, "UserGroupIdsToRemove", value.asInstanceOf[js.Any])
     
     inline def setUserGroupIdsToRemoveUndefined: Self = StObject.set(x, "UserGroupIdsToRemove", js.undefined)
     
-    inline def setUserGroupIdsToRemoveVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToRemove", js.Array(value :_*))
+    inline def setUserGroupIdsToRemoveVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToRemove", js.Array(value*))
   }
 }

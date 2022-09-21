@@ -16,14 +16,14 @@ trait BootboxDialogOptions[T]
   
   var centerVertical: js.UndefOr[Boolean] = js.undefined
   
-  var message: JQuery[HTMLElement] | js.Array[js.Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+  var message: JQuery[HTMLElement] | js.Array[Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
   
   var swapButtonOrder: js.UndefOr[Boolean] = js.undefined
 }
 object BootboxDialogOptions {
   
   inline def apply[T](
-    message: JQuery[HTMLElement] | js.Array[js.Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+    message: JQuery[HTMLElement] | js.Array[Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
   ): BootboxDialogOptions[T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxDialogOptions[T]]
@@ -36,12 +36,12 @@ object BootboxDialogOptions {
     inline def setCenterVerticalUndefined: Self = StObject.set(x, "centerVertical", js.undefined)
     
     inline def setMessage(
-      value: JQuery[HTMLElement] | js.Array[js.Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+      value: JQuery[HTMLElement] | js.Array[Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
     ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageFunction2(value: (/* index */ Double, /* html */ String) => String | Element | JQuery[HTMLElement]): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
     
-    inline def setMessageVarargs(value: js.Any*): Self = StObject.set(x, "message", js.Array(value :_*))
+    inline def setMessageVarargs(value: Any*): Self = StObject.set(x, "message", js.Array(value*))
     
     inline def setSwapButtonOrder(value: Boolean): Self = StObject.set(x, "swapButtonOrder", value.asInstanceOf[js.Any])
     

@@ -41,11 +41,11 @@ object DestinationUriReady {
     
     inline def `setDestination-attributes-supportedUndefined`: Self = StObject.set(x, "destination-attributes-supported", js.undefined)
     
-    inline def `setDestination-attributes-supportedVarargs`(value: String*): Self = StObject.set(x, "destination-attributes-supported", js.Array(value :_*))
+    inline def `setDestination-attributes-supportedVarargs`(value: String*): Self = StObject.set(x, "destination-attributes-supported", js.Array(value*))
     
     inline def `setDestination-attributesUndefined`: Self = StObject.set(x, "destination-attributes", js.undefined)
     
-    inline def `setDestination-attributesVarargs`(value: js.Object*): Self = StObject.set(x, "destination-attributes", js.Array(value :_*))
+    inline def `setDestination-attributesVarargs`(value: js.Object*): Self = StObject.set(x, "destination-attributes", js.Array(value*))
     
     inline def `setDestination-info`(value: String): Self = StObject.set(x, "destination-info", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object DestinationUriReady {
     
     inline def `setDestination-mandatory-access-attributesUndefined`: Self = StObject.set(x, "destination-mandatory-access-attributes", js.undefined)
     
-    inline def `setDestination-mandatory-access-attributesVarargs`(value: String*): Self = StObject.set(x, "destination-mandatory-access-attributes", js.Array(value :_*))
+    inline def `setDestination-mandatory-access-attributesVarargs`(value: String*): Self = StObject.set(x, "destination-mandatory-access-attributes", js.Array(value*))
     
     inline def `setDestination-name`(value: String): Self = StObject.set(x, "destination-name", value.asInstanceOf[js.Any])
     
@@ -69,13 +69,13 @@ object DestinationUriReady {
     
     inline def `setDestination-oauth-scopeUndefined`: Self = StObject.set(x, "destination-oauth-scope", js.undefined)
     
-    inline def `setDestination-oauth-scopeVarargs`(value: String*): Self = StObject.set(x, "destination-oauth-scope", js.Array(value :_*))
+    inline def `setDestination-oauth-scopeVarargs`(value: String*): Self = StObject.set(x, "destination-oauth-scope", js.Array(value*))
     
     inline def `setDestination-oauth-token`(value: js.Array[String]): Self = StObject.set(x, "destination-oauth-token", value.asInstanceOf[js.Any])
     
     inline def `setDestination-oauth-tokenUndefined`: Self = StObject.set(x, "destination-oauth-token", js.undefined)
     
-    inline def `setDestination-oauth-tokenVarargs`(value: String*): Self = StObject.set(x, "destination-oauth-token", js.Array(value :_*))
+    inline def `setDestination-oauth-tokenVarargs`(value: String*): Self = StObject.set(x, "destination-oauth-token", js.Array(value*))
     
     inline def `setDestination-oauth-uri`(value: String): Self = StObject.set(x, "destination-oauth-uri", value.asInstanceOf[js.Any])
     

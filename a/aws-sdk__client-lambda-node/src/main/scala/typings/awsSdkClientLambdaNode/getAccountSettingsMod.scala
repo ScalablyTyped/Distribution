@@ -8,5 +8,5 @@ object getAccountSettingsMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/GetAccountSettings", "GetAccountSettings")
   @js.native
-  val GetAccountSettings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetAccountSettings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

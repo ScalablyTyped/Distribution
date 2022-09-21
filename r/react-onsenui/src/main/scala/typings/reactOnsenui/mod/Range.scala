@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Range")
 @js.native
-class Range protected ()
-  extends Component[OnChange, js.Any] {
+open class Range protected () extends Component[OnChange, Any] {
   def this(props: HTMLAttributesidclassName & OnChange) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & OnChange, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & OnChange, context: Any) = this()
 }

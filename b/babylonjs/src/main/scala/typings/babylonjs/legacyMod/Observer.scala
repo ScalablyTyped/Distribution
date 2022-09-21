@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "Observer")
 @js.native
-class Observer[T] protected ()
+open class Observer[T] protected ()
   extends typings.babylonjs.indexMod.Observer[T] {
   /**
     * Creates a new observer
@@ -36,6 +36,6 @@ class Observer[T] protected ()
     /**
     * Defines the current scope used to restore the JS context
     */
-  scope: js.Any
+  scope: Any
   ) = this()
 }

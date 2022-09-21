@@ -22,6 +22,6 @@ object BatchEnableStandardsRequest {
     
     inline def setStandardsSubscriptionRequests(value: StandardsSubscriptionRequests): Self = StObject.set(x, "StandardsSubscriptionRequests", value.asInstanceOf[js.Any])
     
-    inline def setStandardsSubscriptionRequestsVarargs(value: StandardsSubscriptionRequest*): Self = StObject.set(x, "StandardsSubscriptionRequests", js.Array(value :_*))
+    inline def setStandardsSubscriptionRequestsVarargs(value: StandardsSubscriptionRequest*): Self = StObject.set(x, "StandardsSubscriptionRequests", js.Array(value*))
   }
 }

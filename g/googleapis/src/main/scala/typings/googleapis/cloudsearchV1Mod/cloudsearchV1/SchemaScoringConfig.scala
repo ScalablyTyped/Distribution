@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Scoring configurations for a source while processing a Search or Suggest
-  * request.
-  */
 trait SchemaScoringConfig extends StObject {
   
   /**
-    * Whether to use freshness as a ranking signal. By default, freshness is
-    * used as a ranking signal. Note that this setting is not available in the
-    * Admin UI.
+    * Whether to use freshness as a ranking signal. By default, freshness is used as a ranking signal. Note that this setting is not available in the Admin UI.
     */
-  var disableFreshness: js.UndefOr[Boolean] = js.undefined
+  var disableFreshness: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Whether to personalize the results. By default, personal signals will be
-    * used to boost results.
+    * Whether to personalize the results. By default, personal signals will be used to boost results.
     */
-  var disablePersonalization: js.UndefOr[Boolean] = js.undefined
+  var disablePersonalization: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaScoringConfig {
   
@@ -34,9 +27,13 @@ object SchemaScoringConfig {
     
     inline def setDisableFreshness(value: Boolean): Self = StObject.set(x, "disableFreshness", value.asInstanceOf[js.Any])
     
+    inline def setDisableFreshnessNull: Self = StObject.set(x, "disableFreshness", null)
+    
     inline def setDisableFreshnessUndefined: Self = StObject.set(x, "disableFreshness", js.undefined)
     
     inline def setDisablePersonalization(value: Boolean): Self = StObject.set(x, "disablePersonalization", value.asInstanceOf[js.Any])
+    
+    inline def setDisablePersonalizationNull: Self = StObject.set(x, "disablePersonalization", null)
     
     inline def setDisablePersonalizationUndefined: Self = StObject.set(x, "disablePersonalization", js.undefined)
   }

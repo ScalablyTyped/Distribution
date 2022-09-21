@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.TransitRoute")
 @js.native
-class TransitRoute protected ()
+open class TransitRoute protected ()
   extends StObject
      with typings.bmapgl.BMapGL.TransitRoute {
   def this(location: String) = this()

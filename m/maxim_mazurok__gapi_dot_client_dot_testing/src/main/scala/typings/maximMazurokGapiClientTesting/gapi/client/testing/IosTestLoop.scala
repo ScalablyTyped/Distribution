@@ -36,6 +36,6 @@ object IosTestLoop {
     
     inline def setScenariosUndefined: Self = StObject.set(x, "scenarios", js.undefined)
     
-    inline def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+    inline def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value*))
   }
 }

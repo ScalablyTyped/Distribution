@@ -21,7 +21,7 @@ trait InvokeDefinition[TContext, TEvent /* <: EventObject */]
     *
     * Data should be mapped to match the child machine's context shape.
     */
-  var data: js.UndefOr[(Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])] = js.undefined
+  var data: js.UndefOr[(Mapper[TContext, TEvent, Any]) | (PropertyMapper[TContext, TEvent, Any])] = js.undefined
   
   /**
     * @deprecated
@@ -29,6 +29,8 @@ trait InvokeDefinition[TContext, TEvent /* <: EventObject */]
     *  Use `autoForward` property instead of `forward`. Support for `forward` will get removed in the future.
     */
   var forward: js.UndefOr[Boolean] = js.undefined
+  
+  var meta: js.UndefOr[MetaObject] = js.undefined
   
   /**
     * The source of the machine to be invoked, or the machine itself.
@@ -49,15 +51,19 @@ object InvokeDefinition {
     
     inline def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
     
-    inline def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: (Mapper[TContext, TEvent, Any]) | (PropertyMapper[TContext, TEvent, Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    inline def setDataFunction2(value: (TContext, TEvent) => Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
     inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+    
+    inline def setMeta(value: MetaObject): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     inline def setSrc(value: String | InvokeSourceDefinition): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }

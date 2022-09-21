@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "SubSurfaceBlock")
 @js.native
-class SubSurfaceBlock protected ()
+open class SubSurfaceBlock protected ()
   extends typings.babylonjs.blocksIndexMod.SubSurfaceBlock {
   /**
     * Create a new SubSurfaceBlock

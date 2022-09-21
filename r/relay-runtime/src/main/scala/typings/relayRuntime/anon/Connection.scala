@@ -29,7 +29,7 @@ object Connection {
     
     inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    inline def setConnectionVarargs(value: ConnectionMetadata*): Self = StObject.set(x, "connection", js.Array(value :_*))
+    inline def setConnectionVarargs(value: ConnectionMetadata*): Self = StObject.set(x, "connection", js.Array(value*))
     
     inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     

@@ -17,6 +17,11 @@ trait JobProgressSummary extends StObject {
   var NumberOfTasksSucceeded: js.UndefOr[JobNumberOfTasksSucceeded] = js.undefined
   
   /**
+    * The JobTimers attribute of a job's progress summary.
+    */
+  var Timers: js.UndefOr[JobTimers] = js.undefined
+  
+  /**
     * 
     */
   var TotalNumberOfTasks: js.UndefOr[JobTotalNumberOfTasks] = js.undefined
@@ -37,6 +42,10 @@ object JobProgressSummary {
     inline def setNumberOfTasksSucceeded(value: JobNumberOfTasksSucceeded): Self = StObject.set(x, "NumberOfTasksSucceeded", value.asInstanceOf[js.Any])
     
     inline def setNumberOfTasksSucceededUndefined: Self = StObject.set(x, "NumberOfTasksSucceeded", js.undefined)
+    
+    inline def setTimers(value: JobTimers): Self = StObject.set(x, "Timers", value.asInstanceOf[js.Any])
+    
+    inline def setTimersUndefined: Self = StObject.set(x, "Timers", js.undefined)
     
     inline def setTotalNumberOfTasks(value: JobTotalNumberOfTasks): Self = StObject.set(x, "TotalNumberOfTasks", value.asInstanceOf[js.Any])
     

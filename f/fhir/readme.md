@@ -9,10 +9,10 @@ Library that assists in handling FHIR resources. Supports serialization between 
 | ------------------ | :-------------: |
 | Full name          | fhir |
 | Keywords           | fhir, healthcare, interoperability, xml, json, serialization, hl7, standards, clinical |
-| # releases         | 15 |
-| # dependents       | 4 |
-| # downloads        | 52367 |
-| # stars            | 1 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 15766.666666666666 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/lantanagroup/FHIR.js#readme)

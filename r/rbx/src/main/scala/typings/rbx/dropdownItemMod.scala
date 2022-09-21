@@ -57,7 +57,7 @@ object dropdownItemMod {
   
   @JSImport("rbx/components/dropdown/dropdown-item", "DropdownItem")
   @js.native
-  val DropdownItem: ForwardRefAsExoticComponent[DropdownItemProps, ElementType[js.Any]] = js.native
+  val DropdownItem: ForwardRefAsExoticComponent[DropdownItemProps, ElementType[Any]] = js.native
   
   trait DropdownItemModifierProps extends StObject {
     

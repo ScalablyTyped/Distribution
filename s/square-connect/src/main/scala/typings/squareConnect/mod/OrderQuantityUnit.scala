@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderQuantityUnit")
 @js.native
-class OrderQuantityUnit () extends StObject {
+open class OrderQuantityUnit () extends StObject {
   
   /**
     * A `MeasurementUnit` that represents the unit of measure for the quantity.

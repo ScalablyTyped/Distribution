@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateFunctionRequest extends StObject {
   
   /**
+    * The instruction set architecture that the function supports. Enter a string array with one of the valid values (arm64 or x86_64). The default value is x86_64.
+    */
+  var Architectures: js.UndefOr[ArchitecturesList] = js.undefined
+  
+  /**
     * The code for the function.
     */
   var Code: FunctionCode
+  
+  /**
+    * To enable code signing for this function, specify the ARN of a code-signing configuration. A code-signing configuration includes a set of signing profiles, which define the trusted publishers for this function.
+    */
+  var CodeSigningConfigArn: js.UndefOr[typings.awsSdk.lambdaMod.CodeSigningConfigArn] = js.undefined
   
   /**
     * A dead letter queue configuration that specifies the queue or topic where Lambda sends asynchronous events when they fail processing. For more information, see Dead Letter Queues.
@@ -27,6 +37,11 @@ trait CreateFunctionRequest extends StObject {
   var Environment: js.UndefOr[typings.awsSdk.lambdaMod.Environment] = js.undefined
   
   /**
+    * The size of the function’s /tmp directory in MB. The default value is 512, but can be any whole number between 512 and 10240 MB.
+    */
+  var EphemeralStorage: js.UndefOr[typings.awsSdk.lambdaMod.EphemeralStorage] = js.undefined
+  
+  /**
     * Connection settings for an Amazon EFS file system.
     */
   var FileSystemConfigs: js.UndefOr[FileSystemConfigList] = js.undefined
@@ -37,12 +52,17 @@ trait CreateFunctionRequest extends StObject {
   var FunctionName: typings.awsSdk.lambdaMod.FunctionName
   
   /**
-    * The name of the method within your code that Lambda calls to execute your function. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see Programming Model.
+    * The name of the method within your code that Lambda calls to execute your function. Handler is required if the deployment package is a .zip file archive. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see Programming Model.
     */
-  var Handler: typings.awsSdk.lambdaMod.Handler
+  var Handler: js.UndefOr[typings.awsSdk.lambdaMod.Handler] = js.undefined
   
   /**
-    * The ARN of the AWS Key Management Service (AWS KMS) key that's used to encrypt your function's environment variables. If it's not provided, AWS Lambda uses a default service key.
+    * Container image configuration values that override the values in the container image Dockerfile.
+    */
+  var ImageConfig: js.UndefOr[typings.awsSdk.lambdaMod.ImageConfig] = js.undefined
+  
+  /**
+    * The ARN of the Amazon Web Services Key Management Service (KMS) key that's used to encrypt your function's environment variables. If it's not provided, Lambda uses a default service key.
     */
   var KMSKeyArn: js.UndefOr[typings.awsSdk.lambdaMod.KMSKeyArn] = js.undefined
   
@@ -52,9 +72,14 @@ trait CreateFunctionRequest extends StObject {
   var Layers: js.UndefOr[LayerList] = js.undefined
   
   /**
-    * The amount of memory that your function has access to. Increasing the function's memory also increases its CPU allocation. The default value is 128 MB. The value must be a multiple of 64 MB.
+    * The amount of memory available to the function at runtime. Increasing the function memory also increases its CPU allocation. The default value is 128 MB. The value can be any multiple of 1 MB.
     */
   var MemorySize: js.UndefOr[typings.awsSdk.lambdaMod.MemorySize] = js.undefined
+  
+  /**
+    * The type of deployment package. Set to Image for container image and set Zip for ZIP archive.
+    */
+  var PackageType: js.UndefOr[typings.awsSdk.lambdaMod.PackageType] = js.undefined
   
   /**
     * Set to true to publish the first version of the function during creation.
@@ -67,9 +92,9 @@ trait CreateFunctionRequest extends StObject {
   var Role: RoleArn
   
   /**
-    * The identifier of the function's runtime.
+    * The identifier of the function's runtime. Runtime is required if the deployment package is a .zip file archive. 
     */
-  var Runtime: typings.awsSdk.lambdaMod.Runtime
+  var Runtime: js.UndefOr[typings.awsSdk.lambdaMod.Runtime] = js.undefined
   
   /**
     * A list of tags to apply to the function.
@@ -77,30 +102,40 @@ trait CreateFunctionRequest extends StObject {
   var Tags: js.UndefOr[typings.awsSdk.lambdaMod.Tags] = js.undefined
   
   /**
-    * The amount of time that Lambda allows a function to run before stopping it. The default is 3 seconds. The maximum allowed value is 900 seconds.
+    * The amount of time (in seconds) that Lambda allows a function to run before stopping it. The default is 3 seconds. The maximum allowed value is 900 seconds. For additional information, see Lambda execution environment.
     */
   var Timeout: js.UndefOr[typings.awsSdk.lambdaMod.Timeout] = js.undefined
   
   /**
-    * Set Mode to Active to sample and trace a subset of incoming requests with AWS X-Ray.
+    * Set Mode to Active to sample and trace a subset of incoming requests with X-Ray.
     */
   var TracingConfig: js.UndefOr[typings.awsSdk.lambdaMod.TracingConfig] = js.undefined
   
   /**
-    * For network connectivity to AWS resources in a VPC, specify a list of security groups and subnets in the VPC. When you connect a function to a VPC, it can only access resources and the internet through that VPC. For more information, see VPC Settings.
+    * For network connectivity to Amazon Web Services resources in a VPC, specify a list of security groups and subnets in the VPC. When you connect a function to a VPC, it can only access resources and the internet through that VPC. For more information, see VPC Settings.
     */
   var VpcConfig: js.UndefOr[typings.awsSdk.lambdaMod.VpcConfig] = js.undefined
 }
 object CreateFunctionRequest {
   
-  inline def apply(Code: FunctionCode, FunctionName: FunctionName, Handler: Handler, Role: RoleArn, Runtime: Runtime): CreateFunctionRequest = {
-    val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any], Handler = Handler.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any], Runtime = Runtime.asInstanceOf[js.Any])
+  inline def apply(Code: FunctionCode, FunctionName: FunctionName, Role: RoleArn): CreateFunctionRequest = {
+    val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFunctionRequest]
   }
   
   extension [Self <: CreateFunctionRequest](x: Self) {
     
+    inline def setArchitectures(value: ArchitecturesList): Self = StObject.set(x, "Architectures", value.asInstanceOf[js.Any])
+    
+    inline def setArchitecturesUndefined: Self = StObject.set(x, "Architectures", js.undefined)
+    
+    inline def setArchitecturesVarargs(value: Architecture*): Self = StObject.set(x, "Architectures", js.Array(value*))
+    
     inline def setCode(value: FunctionCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeSigningConfigArn(value: CodeSigningConfigArn): Self = StObject.set(x, "CodeSigningConfigArn", value.asInstanceOf[js.Any])
+    
+    inline def setCodeSigningConfigArnUndefined: Self = StObject.set(x, "CodeSigningConfigArn", js.undefined)
     
     inline def setDeadLetterConfig(value: DeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
     
@@ -114,15 +149,25 @@ object CreateFunctionRequest {
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
+    inline def setEphemeralStorage(value: EphemeralStorage): Self = StObject.set(x, "EphemeralStorage", value.asInstanceOf[js.Any])
+    
+    inline def setEphemeralStorageUndefined: Self = StObject.set(x, "EphemeralStorage", js.undefined)
+    
     inline def setFileSystemConfigs(value: FileSystemConfigList): Self = StObject.set(x, "FileSystemConfigs", value.asInstanceOf[js.Any])
     
     inline def setFileSystemConfigsUndefined: Self = StObject.set(x, "FileSystemConfigs", js.undefined)
     
-    inline def setFileSystemConfigsVarargs(value: FileSystemConfig*): Self = StObject.set(x, "FileSystemConfigs", js.Array(value :_*))
+    inline def setFileSystemConfigsVarargs(value: FileSystemConfig*): Self = StObject.set(x, "FileSystemConfigs", js.Array(value*))
     
     inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
     inline def setHandler(value: Handler): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
+    
+    inline def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
+    
+    inline def setImageConfig(value: ImageConfig): Self = StObject.set(x, "ImageConfig", value.asInstanceOf[js.Any])
+    
+    inline def setImageConfigUndefined: Self = StObject.set(x, "ImageConfig", js.undefined)
     
     inline def setKMSKeyArn(value: KMSKeyArn): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
     
@@ -132,11 +177,15 @@ object CreateFunctionRequest {
     
     inline def setLayersUndefined: Self = StObject.set(x, "Layers", js.undefined)
     
-    inline def setLayersVarargs(value: LayerVersionArn*): Self = StObject.set(x, "Layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: LayerVersionArn*): Self = StObject.set(x, "Layers", js.Array(value*))
     
     inline def setMemorySize(value: MemorySize): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
     
     inline def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
+    
+    inline def setPackageType(value: PackageType): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
+    
+    inline def setPackageTypeUndefined: Self = StObject.set(x, "PackageType", js.undefined)
     
     inline def setPublish(value: Boolean): Self = StObject.set(x, "Publish", value.asInstanceOf[js.Any])
     
@@ -145,6 +194,8 @@ object CreateFunctionRequest {
     inline def setRole(value: RoleArn): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     inline def setRuntime(value: Runtime): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
+    
+    inline def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

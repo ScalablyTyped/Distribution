@@ -664,6 +664,7 @@ object mod {
     def multiply(multiplier: Double, roundingMode: RoundingMode): Dinero = js.native
     
     def percentage(percentage: Double): Dinero = js.native
+    def percentage(percentage: Double, roundingMode: RoundingMode): Dinero = js.native
     
     def setLocale(newLocale: String): Dinero = js.native
     
@@ -711,7 +712,7 @@ object mod {
   
   trait ExchangeRatesApiOptions extends StObject {
     
-    var endpoint: String | js.Promise[StringDictionary[js.Any]]
+    var endpoint: String | js.Promise[StringDictionary[Any]]
     
     var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
@@ -721,14 +722,14 @@ object mod {
   }
   object ExchangeRatesApiOptions {
     
-    inline def apply(endpoint: String | js.Promise[StringDictionary[js.Any]]): ExchangeRatesApiOptions = {
+    inline def apply(endpoint: String | js.Promise[StringDictionary[Any]]): ExchangeRatesApiOptions = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExchangeRatesApiOptions]
     }
     
     extension [Self <: ExchangeRatesApiOptions](x: Self) {
       
-      inline def setEndpoint(value: String | js.Promise[StringDictionary[js.Any]]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String | js.Promise[StringDictionary[Any]]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -782,9 +783,12 @@ object mod {
     - typings.dineroJs.dineroJsStrings.HALF_DOWN
     - typings.dineroJs.dineroJsStrings.HALF_TOWARDS_ZERO
     - typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO
+    - typings.dineroJs.dineroJsStrings.DOWN
   */
   trait RoundingMode extends StObject
   object RoundingMode {
+    
+    inline def DOWN: typings.dineroJs.dineroJsStrings.DOWN = "DOWN".asInstanceOf[typings.dineroJs.dineroJsStrings.DOWN]
     
     inline def HALF_AWAY_FROM_ZERO: typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO = "HALF_AWAY_FROM_ZERO".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO]
     

@@ -10,7 +10,7 @@ object staticHTTPTunnelMod {
   
   @JSImport("guacamole-client/lib/StaticHTTPTunnel", "StaticHTTPTunnel")
   @js.native
-  class StaticHTTPTunnel protected () extends Tunnel {
+  open class StaticHTTPTunnel protected () extends Tunnel {
     /**
       * @param url The URL of a Guacamole protocol dump.
       * @param [crossDomain=false] Whether tunnel requests will be cross-domain, and thus must use CORS

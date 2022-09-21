@@ -2,8 +2,7 @@ package typings.cassandraDriver.mod
 
 import typings.cassandraDriver.graphMod.graph.EnumValue
 import typings.cassandraDriver.typesMod.types.ResultSet
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object datastax {
     
     @JSImport("cassandra-driver", "datastax.graph.GraphResultSet")
     @js.native
-    class GraphResultSet protected ()
+    open class GraphResultSet protected ()
       extends typings.cassandraDriver.datastaxMod.datastax.graph.GraphResultSet {
       def this(rs: ResultSet) = this()
     }
@@ -29,7 +28,7 @@ object datastax {
     
     inline def asInt(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asInt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    inline def asTimestamp(value: Date): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def asTimestamp(value: js.Date): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     inline def asUdt(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asUdt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
@@ -73,7 +72,7 @@ object datastax {
     
     @JSImport("cassandra-driver", "datastax.search.DateRange")
     @js.native
-    class DateRange protected ()
+    open class DateRange protected ()
       extends typings.cassandraDriver.datastaxMod.datastax.search.DateRange {
       def this(
         lowerBound: typings.cassandraDriver.searchMod.search.DateRangeBound,
@@ -95,7 +94,7 @@ object datastax {
     
     @JSImport("cassandra-driver", "datastax.search.DateRangeBound")
     @js.native
-    class DateRangeBound ()
+    open class DateRangeBound ()
       extends typings.cassandraDriver.datastaxMod.datastax.search.DateRangeBound
     object DateRangeBound {
       

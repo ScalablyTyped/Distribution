@@ -10,13 +10,13 @@ object consumerMod {
   
   @JSImport("writable-consumable-stream/consumer", JSImport.Namespace)
   @js.native
-  class ^[T] protected ()
+  open class ^[T] protected ()
     extends StObject
        with Consumer[T] {
     def this(stream: typings.writableConsumableStream.mod.^[T], id: Double, startNode: Node[T], timeout: Double) = this()
     
     /* CompleteClass */
-    override def next(): js.Promise[IteratorResult[T, js.Any]] = js.native
+    override def next(): js.Promise[IteratorResult[T, Any]] = js.native
     
     /* CompleteClass */
     override def `return`(): Unit = js.native
@@ -36,17 +36,15 @@ object consumerMod {
     var id: Double = js.native
     
     def kill(): Unit = js.native
-    def kill(value: js.Any): Unit = js.native
+    def kill(value: Any): Unit = js.native
     
-    def releaseBackpressure(packet: js.Any): Unit = js.native
-    
-    def resetBackpressure(): Unit = js.native
+    def releaseBackpressure(packet: Any): Unit = js.native
     
     var stream: typings.writableConsumableStream.mod.^[T] = js.native
     
     var timeout: Double = js.native
     
-    def write(packet: js.Any): Unit = js.native
+    def write(packet: Any): Unit = js.native
   }
   
   trait ConsumerStats extends StObject {

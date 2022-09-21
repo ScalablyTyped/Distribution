@@ -31,7 +31,7 @@ object mod extends Shortcut {
             * @param {String} name - The key name for the location of the value
             * @returns The saved value; if you saved an object, you get an object
             */
-          def get(name: String): js.Any
+          def get(name: String): Any
           
           /**
             * Deletes the saved value with the key name
@@ -46,22 +46,22 @@ object mod extends Shortcut {
             * @param {String} name - The key name for the location of the value
             * @param value - The value to store
             */
-          def set(name: String, value: js.Any): Unit
+          def set(name: String, value: Any): Unit
         }
         object INamespacedStoreService {
           
-          inline def apply(get: String => js.Any, remove: String => Unit, set: (String, js.Any) => Unit): INamespacedStoreService = {
+          inline def apply(get: String => Any, remove: String => Unit, set: (String, Any) => Unit): INamespacedStoreService = {
             val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
             __obj.asInstanceOf[INamespacedStoreService]
           }
           
           extension [Self <: INamespacedStoreService](x: Self) {
             
-            inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+            inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
             
             inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
             
-            inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+            inline def setSet(value: (String, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
           }
         }
         

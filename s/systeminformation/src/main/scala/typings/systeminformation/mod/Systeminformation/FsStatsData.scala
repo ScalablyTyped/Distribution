@@ -10,20 +10,20 @@ trait FsStatsData extends StObject {
   
   var rx: Double
   
-  var rx_sec: Double
+  var rx_sec: Double | Null
   
   var tx: Double
   
-  var tx_sec: Double
+  var tx_sec: Double | Null
   
   var wx: Double
   
-  var wx_sec: Double
+  var wx_sec: Double | Null
 }
 object FsStatsData {
   
-  inline def apply(ms: Double, rx: Double, rx_sec: Double, tx: Double, tx_sec: Double, wx: Double, wx_sec: Double): FsStatsData = {
-    val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], rx_sec = rx_sec.asInstanceOf[js.Any], tx = tx.asInstanceOf[js.Any], tx_sec = tx_sec.asInstanceOf[js.Any], wx = wx.asInstanceOf[js.Any], wx_sec = wx_sec.asInstanceOf[js.Any])
+  inline def apply(ms: Double, rx: Double, tx: Double, wx: Double): FsStatsData = {
+    val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], tx = tx.asInstanceOf[js.Any], wx = wx.asInstanceOf[js.Any], rx_sec = null, tx_sec = null, wx_sec = null)
     __obj.asInstanceOf[FsStatsData]
   }
   
@@ -35,12 +35,18 @@ object FsStatsData {
     
     inline def setRx_sec(value: Double): Self = StObject.set(x, "rx_sec", value.asInstanceOf[js.Any])
     
+    inline def setRx_secNull: Self = StObject.set(x, "rx_sec", null)
+    
     inline def setTx(value: Double): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
     
     inline def setTx_sec(value: Double): Self = StObject.set(x, "tx_sec", value.asInstanceOf[js.Any])
     
+    inline def setTx_secNull: Self = StObject.set(x, "tx_sec", null)
+    
     inline def setWx(value: Double): Self = StObject.set(x, "wx", value.asInstanceOf[js.Any])
     
     inline def setWx_sec(value: Double): Self = StObject.set(x, "wx_sec", value.asInstanceOf[js.Any])
+    
+    inline def setWx_secNull: Self = StObject.set(x, "wx_sec", null)
   }
 }

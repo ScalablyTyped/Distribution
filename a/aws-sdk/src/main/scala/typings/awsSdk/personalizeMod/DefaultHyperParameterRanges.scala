@@ -34,18 +34,18 @@ object DefaultHyperParameterRanges {
     
     inline def setCategoricalHyperParameterRangesUndefined: Self = StObject.set(x, "categoricalHyperParameterRanges", js.undefined)
     
-    inline def setCategoricalHyperParameterRangesVarargs(value: DefaultCategoricalHyperParameterRange*): Self = StObject.set(x, "categoricalHyperParameterRanges", js.Array(value :_*))
+    inline def setCategoricalHyperParameterRangesVarargs(value: DefaultCategoricalHyperParameterRange*): Self = StObject.set(x, "categoricalHyperParameterRanges", js.Array(value*))
     
     inline def setContinuousHyperParameterRanges(value: DefaultContinuousHyperParameterRanges): Self = StObject.set(x, "continuousHyperParameterRanges", value.asInstanceOf[js.Any])
     
     inline def setContinuousHyperParameterRangesUndefined: Self = StObject.set(x, "continuousHyperParameterRanges", js.undefined)
     
-    inline def setContinuousHyperParameterRangesVarargs(value: DefaultContinuousHyperParameterRange*): Self = StObject.set(x, "continuousHyperParameterRanges", js.Array(value :_*))
+    inline def setContinuousHyperParameterRangesVarargs(value: DefaultContinuousHyperParameterRange*): Self = StObject.set(x, "continuousHyperParameterRanges", js.Array(value*))
     
     inline def setIntegerHyperParameterRanges(value: DefaultIntegerHyperParameterRanges): Self = StObject.set(x, "integerHyperParameterRanges", value.asInstanceOf[js.Any])
     
     inline def setIntegerHyperParameterRangesUndefined: Self = StObject.set(x, "integerHyperParameterRanges", js.undefined)
     
-    inline def setIntegerHyperParameterRangesVarargs(value: DefaultIntegerHyperParameterRange*): Self = StObject.set(x, "integerHyperParameterRanges", js.Array(value :_*))
+    inline def setIntegerHyperParameterRangesVarargs(value: DefaultIntegerHyperParameterRange*): Self = StObject.set(x, "integerHyperParameterRanges", js.Array(value*))
   }
 }

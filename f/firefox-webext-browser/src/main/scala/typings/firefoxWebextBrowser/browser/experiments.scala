@@ -95,11 +95,11 @@ object experiments {
       
       inline def setPaths(value: APIPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      inline def setPathsVarargs(value: APIPath*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: APIPath*): Self = StObject.set(x, "paths", js.Array(value*))
       
       inline def setScopes(value: js.Array[APIChildScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setScopesVarargs(value: APIChildScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: APIChildScope*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setScript(value: ExperimentURL): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     }
@@ -128,19 +128,19 @@ object experiments {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: APIEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: APIEvent*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setPaths(value: APIPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setPathsVarargs(value: APIPath*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: APIPath*): Self = StObject.set(x, "paths", js.Array(value*))
       
       inline def setScopes(value: js.Array[APIParentScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: APIParentScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: APIParentScope*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setScript(value: ExperimentURL): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     }

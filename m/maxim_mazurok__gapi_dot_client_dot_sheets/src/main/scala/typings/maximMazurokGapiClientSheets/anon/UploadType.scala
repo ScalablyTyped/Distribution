@@ -34,7 +34,7 @@ trait UploadType extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The A1 notation of the values to clear. */
+  /** The [A1 notation or R1C1 notation](/sheets/api/guides/concepts#cell) of the values to clear. */
   var range: String
   
   /** The ID of the spreadsheet to update. */

@@ -433,6 +433,12 @@ object eventsMod {
         Event
       ]
     
+    var resize: js.Function2[
+        /* element */ Document | Element | Window | Node, 
+        /* options */ js.UndefOr[js.Object], 
+        Event
+      ]
+    
     var scroll: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
@@ -505,7 +511,25 @@ object eventsMod {
         Event
       ]
     
+    var transitionCancel: js.Function2[
+        /* element */ Document | Element | Window | Node, 
+        /* options */ js.UndefOr[js.Object], 
+        Event
+      ]
+    
     var transitionEnd: js.Function2[
+        /* element */ Document | Element | Window | Node, 
+        /* options */ js.UndefOr[js.Object], 
+        Event
+      ]
+    
+    var transitionRun: js.Function2[
+        /* element */ Document | Element | Window | Node, 
+        /* options */ js.UndefOr[js.Object], 
+        Event
+      ]
+    
+    var transitionStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
@@ -599,6 +623,7 @@ object eventsMod {
       progress: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       rateChange: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       reset: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
+      resize: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       scroll: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       seeked: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       seeking: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
@@ -611,12 +636,15 @@ object eventsMod {
       touchEnd: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       touchMove: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       touchStart: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
+      transitionCancel: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       transitionEnd: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
+      transitionRun: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
+      transitionStart: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       volumeChange: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       waiting: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       wheel: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
     ): CreateObject = {
-      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction2(abort), animationEnd = js.Any.fromFunction2(animationEnd), animationIteration = js.Any.fromFunction2(animationIteration), animationStart = js.Any.fromFunction2(animationStart), blur = js.Any.fromFunction2(blur), canPlay = js.Any.fromFunction2(canPlay), canPlayThrough = js.Any.fromFunction2(canPlayThrough), change = js.Any.fromFunction2(change), click = js.Any.fromFunction2(click), compositionEnd = js.Any.fromFunction2(compositionEnd), compositionStart = js.Any.fromFunction2(compositionStart), compositionUpdate = js.Any.fromFunction2(compositionUpdate), contextMenu = js.Any.fromFunction2(contextMenu), copy = js.Any.fromFunction2(copy), cut = js.Any.fromFunction2(cut), dblClick = js.Any.fromFunction2(dblClick), doubleClick = js.Any.fromFunction2(doubleClick), drag = js.Any.fromFunction2(drag), dragEnd = js.Any.fromFunction2(dragEnd), dragEnter = js.Any.fromFunction2(dragEnter), dragExit = js.Any.fromFunction2(dragExit), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), dragStart = js.Any.fromFunction2(dragStart), drop = js.Any.fromFunction2(drop), durationChange = js.Any.fromFunction2(durationChange), emptied = js.Any.fromFunction2(emptied), encrypted = js.Any.fromFunction2(encrypted), ended = js.Any.fromFunction2(ended), error = js.Any.fromFunction2(error), focus = js.Any.fromFunction2(focus), focusIn = js.Any.fromFunction2(focusIn), focusOut = js.Any.fromFunction2(focusOut), gotPointerCapture = js.Any.fromFunction2(gotPointerCapture), input = js.Any.fromFunction2(input), invalid = js.Any.fromFunction2(invalid), keyDown = js.Any.fromFunction2(keyDown), keyPress = js.Any.fromFunction2(keyPress), keyUp = js.Any.fromFunction2(keyUp), load = js.Any.fromFunction2(load), loadStart = js.Any.fromFunction2(loadStart), loadedData = js.Any.fromFunction2(loadedData), loadedMetadata = js.Any.fromFunction2(loadedMetadata), lostPointerCapture = js.Any.fromFunction2(lostPointerCapture), mouseDown = js.Any.fromFunction2(mouseDown), mouseEnter = js.Any.fromFunction2(mouseEnter), mouseLeave = js.Any.fromFunction2(mouseLeave), mouseMove = js.Any.fromFunction2(mouseMove), mouseOut = js.Any.fromFunction2(mouseOut), mouseOver = js.Any.fromFunction2(mouseOver), mouseUp = js.Any.fromFunction2(mouseUp), paste = js.Any.fromFunction2(paste), pause = js.Any.fromFunction2(pause), play = js.Any.fromFunction2(play), playing = js.Any.fromFunction2(playing), pointerCancel = js.Any.fromFunction2(pointerCancel), pointerDown = js.Any.fromFunction2(pointerDown), pointerEnter = js.Any.fromFunction2(pointerEnter), pointerLeave = js.Any.fromFunction2(pointerLeave), pointerMove = js.Any.fromFunction2(pointerMove), pointerOut = js.Any.fromFunction2(pointerOut), pointerOver = js.Any.fromFunction2(pointerOver), pointerUp = js.Any.fromFunction2(pointerUp), popState = js.Any.fromFunction2(popState), progress = js.Any.fromFunction2(progress), rateChange = js.Any.fromFunction2(rateChange), reset = js.Any.fromFunction2(reset), scroll = js.Any.fromFunction2(scroll), seeked = js.Any.fromFunction2(seeked), seeking = js.Any.fromFunction2(seeking), select = js.Any.fromFunction2(select), stalled = js.Any.fromFunction2(stalled), submit = js.Any.fromFunction2(submit), suspend = js.Any.fromFunction2(suspend), timeUpdate = js.Any.fromFunction2(timeUpdate), touchCancel = js.Any.fromFunction2(touchCancel), touchEnd = js.Any.fromFunction2(touchEnd), touchMove = js.Any.fromFunction2(touchMove), touchStart = js.Any.fromFunction2(touchStart), transitionEnd = js.Any.fromFunction2(transitionEnd), volumeChange = js.Any.fromFunction2(volumeChange), waiting = js.Any.fromFunction2(waiting), wheel = js.Any.fromFunction2(wheel))
+      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction2(abort), animationEnd = js.Any.fromFunction2(animationEnd), animationIteration = js.Any.fromFunction2(animationIteration), animationStart = js.Any.fromFunction2(animationStart), blur = js.Any.fromFunction2(blur), canPlay = js.Any.fromFunction2(canPlay), canPlayThrough = js.Any.fromFunction2(canPlayThrough), change = js.Any.fromFunction2(change), click = js.Any.fromFunction2(click), compositionEnd = js.Any.fromFunction2(compositionEnd), compositionStart = js.Any.fromFunction2(compositionStart), compositionUpdate = js.Any.fromFunction2(compositionUpdate), contextMenu = js.Any.fromFunction2(contextMenu), copy = js.Any.fromFunction2(copy), cut = js.Any.fromFunction2(cut), dblClick = js.Any.fromFunction2(dblClick), doubleClick = js.Any.fromFunction2(doubleClick), drag = js.Any.fromFunction2(drag), dragEnd = js.Any.fromFunction2(dragEnd), dragEnter = js.Any.fromFunction2(dragEnter), dragExit = js.Any.fromFunction2(dragExit), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), dragStart = js.Any.fromFunction2(dragStart), drop = js.Any.fromFunction2(drop), durationChange = js.Any.fromFunction2(durationChange), emptied = js.Any.fromFunction2(emptied), encrypted = js.Any.fromFunction2(encrypted), ended = js.Any.fromFunction2(ended), error = js.Any.fromFunction2(error), focus = js.Any.fromFunction2(focus), focusIn = js.Any.fromFunction2(focusIn), focusOut = js.Any.fromFunction2(focusOut), gotPointerCapture = js.Any.fromFunction2(gotPointerCapture), input = js.Any.fromFunction2(input), invalid = js.Any.fromFunction2(invalid), keyDown = js.Any.fromFunction2(keyDown), keyPress = js.Any.fromFunction2(keyPress), keyUp = js.Any.fromFunction2(keyUp), load = js.Any.fromFunction2(load), loadStart = js.Any.fromFunction2(loadStart), loadedData = js.Any.fromFunction2(loadedData), loadedMetadata = js.Any.fromFunction2(loadedMetadata), lostPointerCapture = js.Any.fromFunction2(lostPointerCapture), mouseDown = js.Any.fromFunction2(mouseDown), mouseEnter = js.Any.fromFunction2(mouseEnter), mouseLeave = js.Any.fromFunction2(mouseLeave), mouseMove = js.Any.fromFunction2(mouseMove), mouseOut = js.Any.fromFunction2(mouseOut), mouseOver = js.Any.fromFunction2(mouseOver), mouseUp = js.Any.fromFunction2(mouseUp), paste = js.Any.fromFunction2(paste), pause = js.Any.fromFunction2(pause), play = js.Any.fromFunction2(play), playing = js.Any.fromFunction2(playing), pointerCancel = js.Any.fromFunction2(pointerCancel), pointerDown = js.Any.fromFunction2(pointerDown), pointerEnter = js.Any.fromFunction2(pointerEnter), pointerLeave = js.Any.fromFunction2(pointerLeave), pointerMove = js.Any.fromFunction2(pointerMove), pointerOut = js.Any.fromFunction2(pointerOut), pointerOver = js.Any.fromFunction2(pointerOver), pointerUp = js.Any.fromFunction2(pointerUp), popState = js.Any.fromFunction2(popState), progress = js.Any.fromFunction2(progress), rateChange = js.Any.fromFunction2(rateChange), reset = js.Any.fromFunction2(reset), resize = js.Any.fromFunction2(resize), scroll = js.Any.fromFunction2(scroll), seeked = js.Any.fromFunction2(seeked), seeking = js.Any.fromFunction2(seeking), select = js.Any.fromFunction2(select), stalled = js.Any.fromFunction2(stalled), submit = js.Any.fromFunction2(submit), suspend = js.Any.fromFunction2(suspend), timeUpdate = js.Any.fromFunction2(timeUpdate), touchCancel = js.Any.fromFunction2(touchCancel), touchEnd = js.Any.fromFunction2(touchEnd), touchMove = js.Any.fromFunction2(touchMove), touchStart = js.Any.fromFunction2(touchStart), transitionCancel = js.Any.fromFunction2(transitionCancel), transitionEnd = js.Any.fromFunction2(transitionEnd), transitionRun = js.Any.fromFunction2(transitionRun), transitionStart = js.Any.fromFunction2(transitionStart), volumeChange = js.Any.fromFunction2(volumeChange), waiting = js.Any.fromFunction2(waiting), wheel = js.Any.fromFunction2(wheel))
       __obj.asInstanceOf[CreateObject]
     }
     
@@ -890,6 +918,10 @@ object eventsMod {
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
       
+      inline def setResize(
+        value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
+      ): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
+      
       inline def setScroll(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "scroll", js.Any.fromFunction2(value))
@@ -938,9 +970,21 @@ object eventsMod {
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "touchStart", js.Any.fromFunction2(value))
       
+      inline def setTransitionCancel(
+        value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
+      ): Self = StObject.set(x, "transitionCancel", js.Any.fromFunction2(value))
+      
       inline def setTransitionEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
+      
+      inline def setTransitionRun(
+        value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
+      ): Self = StObject.set(x, "transitionRun", js.Any.fromFunction2(value))
+      
+      inline def setTransitionStart(
+        value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
+      ): Self = StObject.set(x, "transitionStart", js.Any.fromFunction2(value))
       
       inline def setVolumeChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
@@ -999,6 +1043,7 @@ object eventsMod {
     - typings.testingLibraryDom.testingLibraryDomStrings.touchEnd
     - typings.testingLibraryDom.testingLibraryDomStrings.touchMove
     - typings.testingLibraryDom.testingLibraryDomStrings.touchStart
+    - typings.testingLibraryDom.testingLibraryDomStrings.resize
     - typings.testingLibraryDom.testingLibraryDomStrings.scroll
     - typings.testingLibraryDom.testingLibraryDomStrings.wheel
     - typings.testingLibraryDom.testingLibraryDomStrings.abort
@@ -1028,7 +1073,10 @@ object eventsMod {
     - typings.testingLibraryDom.testingLibraryDomStrings.animationStart
     - typings.testingLibraryDom.testingLibraryDomStrings.animationEnd
     - typings.testingLibraryDom.testingLibraryDomStrings.animationIteration
+    - typings.testingLibraryDom.testingLibraryDomStrings.transitionCancel
     - typings.testingLibraryDom.testingLibraryDomStrings.transitionEnd
+    - typings.testingLibraryDom.testingLibraryDomStrings.transitionRun
+    - typings.testingLibraryDom.testingLibraryDomStrings.transitionStart
     - typings.testingLibraryDom.testingLibraryDomStrings.doubleClick
     - typings.testingLibraryDom.testingLibraryDomStrings.pointerOver
     - typings.testingLibraryDom.testingLibraryDomStrings.pointerEnter
@@ -1178,6 +1226,8 @@ object eventsMod {
     
     inline def reset: typings.testingLibraryDom.testingLibraryDomStrings.reset = "reset".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.reset]
     
+    inline def resize: typings.testingLibraryDom.testingLibraryDomStrings.resize = "resize".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.resize]
+    
     inline def scroll: typings.testingLibraryDom.testingLibraryDomStrings.scroll = "scroll".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.scroll]
     
     inline def seeked: typings.testingLibraryDom.testingLibraryDomStrings.seeked = "seeked".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.seeked]
@@ -1202,7 +1252,13 @@ object eventsMod {
     
     inline def touchStart: typings.testingLibraryDom.testingLibraryDomStrings.touchStart = "touchStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.touchStart]
     
+    inline def transitionCancel: typings.testingLibraryDom.testingLibraryDomStrings.transitionCancel = "transitionCancel".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.transitionCancel]
+    
     inline def transitionEnd: typings.testingLibraryDom.testingLibraryDomStrings.transitionEnd = "transitionEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.transitionEnd]
+    
+    inline def transitionRun: typings.testingLibraryDom.testingLibraryDomStrings.transitionRun = "transitionRun".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.transitionRun]
+    
+    inline def transitionStart: typings.testingLibraryDom.testingLibraryDomStrings.transitionStart = "transitionStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.transitionStart]
     
     inline def volumeChange: typings.testingLibraryDom.testingLibraryDomStrings.volumeChange = "volumeChange".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.volumeChange]
     
@@ -1618,6 +1674,12 @@ object eventsMod {
         Boolean
       ]
     
+    var resize: js.Function2[
+        /* element */ Document | Element | Window | Node, 
+        /* options */ js.UndefOr[js.Object], 
+        Boolean
+      ]
+    
     var scroll: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
@@ -1690,7 +1752,25 @@ object eventsMod {
         Boolean
       ]
     
+    var transitionCancel: js.Function2[
+        /* element */ Document | Element | Window | Node, 
+        /* options */ js.UndefOr[js.Object], 
+        Boolean
+      ]
+    
     var transitionEnd: js.Function2[
+        /* element */ Document | Element | Window | Node, 
+        /* options */ js.UndefOr[js.Object], 
+        Boolean
+      ]
+    
+    var transitionRun: js.Function2[
+        /* element */ Document | Element | Window | Node, 
+        /* options */ js.UndefOr[js.Object], 
+        Boolean
+      ]
+    
+    var transitionStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
@@ -1784,6 +1864,7 @@ object eventsMod {
       progress: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       rateChange: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       reset: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
+      resize: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       scroll: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       seeked: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       seeking: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
@@ -1796,12 +1877,15 @@ object eventsMod {
       touchEnd: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       touchMove: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       touchStart: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
+      transitionCancel: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       transitionEnd: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
+      transitionRun: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
+      transitionStart: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       volumeChange: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       waiting: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       wheel: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
     ): FireObject = {
-      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction2(abort), animationEnd = js.Any.fromFunction2(animationEnd), animationIteration = js.Any.fromFunction2(animationIteration), animationStart = js.Any.fromFunction2(animationStart), blur = js.Any.fromFunction2(blur), canPlay = js.Any.fromFunction2(canPlay), canPlayThrough = js.Any.fromFunction2(canPlayThrough), change = js.Any.fromFunction2(change), click = js.Any.fromFunction2(click), compositionEnd = js.Any.fromFunction2(compositionEnd), compositionStart = js.Any.fromFunction2(compositionStart), compositionUpdate = js.Any.fromFunction2(compositionUpdate), contextMenu = js.Any.fromFunction2(contextMenu), copy = js.Any.fromFunction2(copy), cut = js.Any.fromFunction2(cut), dblClick = js.Any.fromFunction2(dblClick), doubleClick = js.Any.fromFunction2(doubleClick), drag = js.Any.fromFunction2(drag), dragEnd = js.Any.fromFunction2(dragEnd), dragEnter = js.Any.fromFunction2(dragEnter), dragExit = js.Any.fromFunction2(dragExit), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), dragStart = js.Any.fromFunction2(dragStart), drop = js.Any.fromFunction2(drop), durationChange = js.Any.fromFunction2(durationChange), emptied = js.Any.fromFunction2(emptied), encrypted = js.Any.fromFunction2(encrypted), ended = js.Any.fromFunction2(ended), error = js.Any.fromFunction2(error), focus = js.Any.fromFunction2(focus), focusIn = js.Any.fromFunction2(focusIn), focusOut = js.Any.fromFunction2(focusOut), gotPointerCapture = js.Any.fromFunction2(gotPointerCapture), input = js.Any.fromFunction2(input), invalid = js.Any.fromFunction2(invalid), keyDown = js.Any.fromFunction2(keyDown), keyPress = js.Any.fromFunction2(keyPress), keyUp = js.Any.fromFunction2(keyUp), load = js.Any.fromFunction2(load), loadStart = js.Any.fromFunction2(loadStart), loadedData = js.Any.fromFunction2(loadedData), loadedMetadata = js.Any.fromFunction2(loadedMetadata), lostPointerCapture = js.Any.fromFunction2(lostPointerCapture), mouseDown = js.Any.fromFunction2(mouseDown), mouseEnter = js.Any.fromFunction2(mouseEnter), mouseLeave = js.Any.fromFunction2(mouseLeave), mouseMove = js.Any.fromFunction2(mouseMove), mouseOut = js.Any.fromFunction2(mouseOut), mouseOver = js.Any.fromFunction2(mouseOver), mouseUp = js.Any.fromFunction2(mouseUp), paste = js.Any.fromFunction2(paste), pause = js.Any.fromFunction2(pause), play = js.Any.fromFunction2(play), playing = js.Any.fromFunction2(playing), pointerCancel = js.Any.fromFunction2(pointerCancel), pointerDown = js.Any.fromFunction2(pointerDown), pointerEnter = js.Any.fromFunction2(pointerEnter), pointerLeave = js.Any.fromFunction2(pointerLeave), pointerMove = js.Any.fromFunction2(pointerMove), pointerOut = js.Any.fromFunction2(pointerOut), pointerOver = js.Any.fromFunction2(pointerOver), pointerUp = js.Any.fromFunction2(pointerUp), popState = js.Any.fromFunction2(popState), progress = js.Any.fromFunction2(progress), rateChange = js.Any.fromFunction2(rateChange), reset = js.Any.fromFunction2(reset), scroll = js.Any.fromFunction2(scroll), seeked = js.Any.fromFunction2(seeked), seeking = js.Any.fromFunction2(seeking), select = js.Any.fromFunction2(select), stalled = js.Any.fromFunction2(stalled), submit = js.Any.fromFunction2(submit), suspend = js.Any.fromFunction2(suspend), timeUpdate = js.Any.fromFunction2(timeUpdate), touchCancel = js.Any.fromFunction2(touchCancel), touchEnd = js.Any.fromFunction2(touchEnd), touchMove = js.Any.fromFunction2(touchMove), touchStart = js.Any.fromFunction2(touchStart), transitionEnd = js.Any.fromFunction2(transitionEnd), volumeChange = js.Any.fromFunction2(volumeChange), waiting = js.Any.fromFunction2(waiting), wheel = js.Any.fromFunction2(wheel))
+      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction2(abort), animationEnd = js.Any.fromFunction2(animationEnd), animationIteration = js.Any.fromFunction2(animationIteration), animationStart = js.Any.fromFunction2(animationStart), blur = js.Any.fromFunction2(blur), canPlay = js.Any.fromFunction2(canPlay), canPlayThrough = js.Any.fromFunction2(canPlayThrough), change = js.Any.fromFunction2(change), click = js.Any.fromFunction2(click), compositionEnd = js.Any.fromFunction2(compositionEnd), compositionStart = js.Any.fromFunction2(compositionStart), compositionUpdate = js.Any.fromFunction2(compositionUpdate), contextMenu = js.Any.fromFunction2(contextMenu), copy = js.Any.fromFunction2(copy), cut = js.Any.fromFunction2(cut), dblClick = js.Any.fromFunction2(dblClick), doubleClick = js.Any.fromFunction2(doubleClick), drag = js.Any.fromFunction2(drag), dragEnd = js.Any.fromFunction2(dragEnd), dragEnter = js.Any.fromFunction2(dragEnter), dragExit = js.Any.fromFunction2(dragExit), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), dragStart = js.Any.fromFunction2(dragStart), drop = js.Any.fromFunction2(drop), durationChange = js.Any.fromFunction2(durationChange), emptied = js.Any.fromFunction2(emptied), encrypted = js.Any.fromFunction2(encrypted), ended = js.Any.fromFunction2(ended), error = js.Any.fromFunction2(error), focus = js.Any.fromFunction2(focus), focusIn = js.Any.fromFunction2(focusIn), focusOut = js.Any.fromFunction2(focusOut), gotPointerCapture = js.Any.fromFunction2(gotPointerCapture), input = js.Any.fromFunction2(input), invalid = js.Any.fromFunction2(invalid), keyDown = js.Any.fromFunction2(keyDown), keyPress = js.Any.fromFunction2(keyPress), keyUp = js.Any.fromFunction2(keyUp), load = js.Any.fromFunction2(load), loadStart = js.Any.fromFunction2(loadStart), loadedData = js.Any.fromFunction2(loadedData), loadedMetadata = js.Any.fromFunction2(loadedMetadata), lostPointerCapture = js.Any.fromFunction2(lostPointerCapture), mouseDown = js.Any.fromFunction2(mouseDown), mouseEnter = js.Any.fromFunction2(mouseEnter), mouseLeave = js.Any.fromFunction2(mouseLeave), mouseMove = js.Any.fromFunction2(mouseMove), mouseOut = js.Any.fromFunction2(mouseOut), mouseOver = js.Any.fromFunction2(mouseOver), mouseUp = js.Any.fromFunction2(mouseUp), paste = js.Any.fromFunction2(paste), pause = js.Any.fromFunction2(pause), play = js.Any.fromFunction2(play), playing = js.Any.fromFunction2(playing), pointerCancel = js.Any.fromFunction2(pointerCancel), pointerDown = js.Any.fromFunction2(pointerDown), pointerEnter = js.Any.fromFunction2(pointerEnter), pointerLeave = js.Any.fromFunction2(pointerLeave), pointerMove = js.Any.fromFunction2(pointerMove), pointerOut = js.Any.fromFunction2(pointerOut), pointerOver = js.Any.fromFunction2(pointerOver), pointerUp = js.Any.fromFunction2(pointerUp), popState = js.Any.fromFunction2(popState), progress = js.Any.fromFunction2(progress), rateChange = js.Any.fromFunction2(rateChange), reset = js.Any.fromFunction2(reset), resize = js.Any.fromFunction2(resize), scroll = js.Any.fromFunction2(scroll), seeked = js.Any.fromFunction2(seeked), seeking = js.Any.fromFunction2(seeking), select = js.Any.fromFunction2(select), stalled = js.Any.fromFunction2(stalled), submit = js.Any.fromFunction2(submit), suspend = js.Any.fromFunction2(suspend), timeUpdate = js.Any.fromFunction2(timeUpdate), touchCancel = js.Any.fromFunction2(touchCancel), touchEnd = js.Any.fromFunction2(touchEnd), touchMove = js.Any.fromFunction2(touchMove), touchStart = js.Any.fromFunction2(touchStart), transitionCancel = js.Any.fromFunction2(transitionCancel), transitionEnd = js.Any.fromFunction2(transitionEnd), transitionRun = js.Any.fromFunction2(transitionRun), transitionStart = js.Any.fromFunction2(transitionStart), volumeChange = js.Any.fromFunction2(volumeChange), waiting = js.Any.fromFunction2(waiting), wheel = js.Any.fromFunction2(wheel))
       __obj.asInstanceOf[FireObject]
     }
     
@@ -2075,6 +2159,10 @@ object eventsMod {
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
       
+      inline def setResize(
+        value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
+      ): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
+      
       inline def setScroll(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "scroll", js.Any.fromFunction2(value))
@@ -2123,9 +2211,21 @@ object eventsMod {
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "touchStart", js.Any.fromFunction2(value))
       
+      inline def setTransitionCancel(
+        value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
+      ): Self = StObject.set(x, "transitionCancel", js.Any.fromFunction2(value))
+      
       inline def setTransitionEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
+      
+      inline def setTransitionRun(
+        value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
+      ): Self = StObject.set(x, "transitionRun", js.Any.fromFunction2(value))
+      
+      inline def setTransitionStart(
+        value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
+      ): Self = StObject.set(x, "transitionStart", js.Any.fromFunction2(value))
       
       inline def setVolumeChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean

@@ -446,7 +446,7 @@ object dockspawn {
       
       inline def setPages(value: js.Array[TabPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      inline def setPagesVarargs(value: TabPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: TabPage*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setResize(value: (Double, Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
       

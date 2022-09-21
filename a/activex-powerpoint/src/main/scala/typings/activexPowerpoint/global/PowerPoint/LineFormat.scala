@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.LineFormat")
 @js.native
-/* private */ class LineFormat ()
+/* private */ open class LineFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.LineFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var BackColor: typings.activexPowerpoint.PowerPoint.ColorFormat = js.native
@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var InsetPen: MsoTriState = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Pattern: MsoPatternType = js.native

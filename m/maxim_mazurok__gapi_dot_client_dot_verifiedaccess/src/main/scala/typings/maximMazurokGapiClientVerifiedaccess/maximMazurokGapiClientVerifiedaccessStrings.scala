@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientVerifiedaccessStrings {
   
   @js.native
-  sealed trait v1 extends StObject
-  inline def v1: v1 = "v1".asInstanceOf[v1]
+  sealed trait v2 extends StObject
+  inline def v2: v2 = "v2".asInstanceOf[v2]
   
   @js.native
   sealed trait verifiedaccess extends StObject

@@ -14,7 +14,7 @@ object policyApiMod {
   
   @JSImport("vso-node-api/PolicyApi", "PolicyApi")
   @js.native
-  class PolicyApi protected () extends IPolicyApi {
+  open class PolicyApi protected () extends IPolicyApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }

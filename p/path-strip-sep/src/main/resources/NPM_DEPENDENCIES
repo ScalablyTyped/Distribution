@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "path-strip-sep" : "1.0.13"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "path-strip-sep" : "1.0.13"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

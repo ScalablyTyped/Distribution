@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientFirebase.anon.Oauthtoken
+import typings.maximMazurokGapiClientFirebase.anon.PageSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,5 +19,5 @@ trait AvailableLocationsResource extends StObject {
     * a specified project do not require any specific project permissions.
     */
   def list(): Request[ListAvailableLocationsResponse] = js.native
-  def list(request: Oauthtoken): Request[ListAvailableLocationsResponse] = js.native
+  def list(request: PageSize): Request[ListAvailableLocationsResponse] = js.native
 }

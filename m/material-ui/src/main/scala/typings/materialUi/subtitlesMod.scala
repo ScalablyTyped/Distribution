@@ -10,10 +10,10 @@ object subtitlesMod {
   
   @JSImport("material-ui/svg-icons/av/subtitles", JSImport.Default)
   @js.native
-  class default () extends AvSubtitles
+  open class default () extends AvSubtitles
   
   @JSImport("material-ui/svg-icons/av/subtitles", "AvSubtitles")
   @js.native
-  class AvSubtitles ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvSubtitles ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

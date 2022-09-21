@@ -10,10 +10,10 @@ object navigateBeforeMod {
   
   @JSImport("material-ui/svg-icons/image/navigate-before", JSImport.Default)
   @js.native
-  class default () extends ImageNavigateBefore
+  open class default () extends ImageNavigateBefore
   
   @JSImport("material-ui/svg-icons/image/navigate-before", "ImageNavigateBefore")
   @js.native
-  class ImageNavigateBefore ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageNavigateBefore ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

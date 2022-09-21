@@ -14,12 +14,12 @@ trait QFieldValue extends StObject {
   // TODO
   var qNum: js.UndefOr[String] = js.native
   
-  var qState: js.Any = js.native
+  var qState: Any = js.native
   
   var qText: String = js.native
   
-  def select(): js.Promise[js.Any] = js.native
-  def select(toggle: Boolean): js.Promise[js.Any] = js.native
-  def select(toggle: Boolean, softlock: Boolean): js.Promise[js.Any] = js.native
-  def select(toggle: Unit, softlock: Boolean): js.Promise[js.Any] = js.native
+  def select(): js.Promise[Any] = js.native
+  def select(toggle: Boolean): js.Promise[Any] = js.native
+  def select(toggle: Boolean, softlock: Boolean): js.Promise[Any] = js.native
+  def select(toggle: Unit, softlock: Boolean): js.Promise[Any] = js.native
 }

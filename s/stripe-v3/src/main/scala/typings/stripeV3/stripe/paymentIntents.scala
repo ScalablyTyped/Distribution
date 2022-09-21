@@ -672,7 +672,7 @@ object paymentIntents {
       
       inline def setPayment_method_types(value: js.Array[String]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
       
-      inline def setPayment_method_typesVarargs(value: String*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
+      inline def setPayment_method_typesVarargs(value: String*): Self = StObject.set(x, "payment_method_types", js.Array(value*))
       
       inline def setReceipt_email(value: String): Self = StObject.set(x, "receipt_email", value.asInstanceOf[js.Any])
       
@@ -775,11 +775,11 @@ object paymentIntents {
       * to invoke authentication flows. The shape of the contents
       * is subject to change and is only intended to be used by Stripe.js.
       */
-    var use_stripe_sdk: js.Any
+    var use_stripe_sdk: Any
   }
   object PaymentIntentNextActionUseStripeSdk {
     
-    inline def apply(use_stripe_sdk: js.Any): PaymentIntentNextActionUseStripeSdk = {
+    inline def apply(use_stripe_sdk: Any): PaymentIntentNextActionUseStripeSdk = {
       val __obj = js.Dynamic.literal(use_stripe_sdk = use_stripe_sdk.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("use_stripe_sdk")
       __obj.asInstanceOf[PaymentIntentNextActionUseStripeSdk]
@@ -789,7 +789,7 @@ object paymentIntents {
       
       inline def setType(value: use_stripe_sdk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setUse_stripe_sdk(value: js.Any): Self = StObject.set(x, "use_stripe_sdk", value.asInstanceOf[js.Any])
+      inline def setUse_stripe_sdk(value: Any): Self = StObject.set(x, "use_stripe_sdk", value.asInstanceOf[js.Any])
     }
   }
   

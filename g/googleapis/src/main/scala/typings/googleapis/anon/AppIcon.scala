@@ -30,8 +30,6 @@ trait AppIcon extends StObject {
   
   var starRating: js.UndefOr[Double] = js.undefined
   
-  var store: js.UndefOr[String] = js.undefined
-  
   var videoURL: js.UndefOr[String] = js.undefined
 }
 object AppIcon {
@@ -79,7 +77,7 @@ object AppIcon {
     
     inline def setImpressionTrackingUrlUndefined: Self = StObject.set(x, "impressionTrackingUrl", js.undefined)
     
-    inline def setImpressionTrackingUrlVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrl", js.Array(value :_*))
+    inline def setImpressionTrackingUrlVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrl", js.Array(value*))
     
     inline def setLogo(value: Height): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
@@ -92,10 +90,6 @@ object AppIcon {
     inline def setStarRating(value: Double): Self = StObject.set(x, "starRating", value.asInstanceOf[js.Any])
     
     inline def setStarRatingUndefined: Self = StObject.set(x, "starRating", js.undefined)
-    
-    inline def setStore(value: String): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
-    
-    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     inline def setVideoURL(value: String): Self = StObject.set(x, "videoURL", value.asInstanceOf[js.Any])
     

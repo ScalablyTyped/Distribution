@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Shader")
 @js.native
-class Shader () extends StObject {
+open class Shader () extends StObject {
   
   def shade(lights: js.Array[Light], renderModel: RenderModel, material: Material): Unit = js.native
 }

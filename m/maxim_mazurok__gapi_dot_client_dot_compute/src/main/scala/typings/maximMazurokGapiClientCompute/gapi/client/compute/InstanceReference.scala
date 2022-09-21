@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InstanceReference extends StObject {
   
-  /** The URL for a specific instance. */
+  /** The URL for a specific instance. @required compute.instancegroups.addInstances/removeInstances */
   var instance: js.UndefOr[String] = js.undefined
 }
 object InstanceReference {

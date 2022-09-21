@@ -23,7 +23,7 @@ object XDrawPageDuplicator {
   inline def apply(
     acquire: () => Unit,
     duplicate: XDrawPage => XDrawPage,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDrawPageDuplicator = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), duplicate = js.Any.fromFunction1(duplicate), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

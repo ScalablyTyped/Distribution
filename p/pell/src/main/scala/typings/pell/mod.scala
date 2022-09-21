@@ -188,7 +188,7 @@ object mod {
       
       inline def setActions(value: js.Array[pellAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: pellAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: pellAction*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setClasses(value: pellClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       

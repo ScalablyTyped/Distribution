@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TabProps
   extends StObject
-     with HTMLProps[js.Any]
+     with HTMLProps[Any]
      with CustomRenderedComponent {
   
   var active: js.UndefOr[Boolean] = js.undefined
   
   var cssPrefix: js.UndefOr[String] = js.undefined
   
-  var onTabClick: js.UndefOr[js.Function1[/* tabId */ Double, js.Any]] = js.undefined
+  var onTabClick: js.UndefOr[js.Function1[/* tabId */ Double, Any]] = js.undefined
   
   var tabId: js.UndefOr[Double] = js.undefined
 }
@@ -35,7 +35,7 @@ object TabProps {
     
     inline def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
     
-    inline def setOnTabClick(value: /* tabId */ Double => js.Any): Self = StObject.set(x, "onTabClick", js.Any.fromFunction1(value))
+    inline def setOnTabClick(value: /* tabId */ Double => Any): Self = StObject.set(x, "onTabClick", js.Any.fromFunction1(value))
     
     inline def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)
     

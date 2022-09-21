@@ -10,16 +10,16 @@ import typings.sentryTypes.extraMod.Extra
 import typings.sentryTypes.extraMod.Extras
 import typings.sentryTypes.integrationMod.Integration
 import typings.sentryTypes.integrationMod.IntegrationClass
-import typings.sentryTypes.optionsMod.Options
+import typings.sentryTypes.miscMod.Primitive
+import typings.sentryTypes.optionsMod.ClientOptions
 import typings.sentryTypes.scopeMod.Scope
 import typings.sentryTypes.sessionMod.Session
-import typings.sentryTypes.sessionMod.SessionContext
 import typings.sentryTypes.severityMod.Severity
-import typings.sentryTypes.spanMod.Span
-import typings.sentryTypes.spanMod.SpanContext
+import typings.sentryTypes.severityMod.SeverityLevel
 import typings.sentryTypes.transactionMod.CustomSamplingContext
 import typings.sentryTypes.transactionMod.Transaction
 import typings.sentryTypes.transactionMod.TransactionContext
+import typings.sentryTypes.transportMod.BaseTransportOptions
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,7 +47,7 @@ object hubMod {
       * @param client An SDK client (client) instance.
       */
     def bindClient(): Unit = js.native
-    def bindClient(client: Client[Options]): Unit = js.native
+    def bindClient(client: Client[ClientOptions[BaseTransportOptions]]): Unit = js.native
     
     /**
       * Captures a manually created event and sends it to Sentry.
@@ -65,8 +65,8 @@ object hubMod {
       * @param hint May contain additional information about the original exception.
       * @returns The generated eventId.
       */
-    def captureException(exception: js.Any): String = js.native
-    def captureException(exception: js.Any, hint: EventHint): String = js.native
+    def captureException(exception: Any): String = js.native
+    def captureException(exception: Any, hint: EventHint): String = js.native
     
     /**
       * Captures a message event and sends it to Sentry.
@@ -79,7 +79,16 @@ object hubMod {
     def captureMessage(message: String): String = js.native
     def captureMessage(message: String, level: Unit, hint: EventHint): String = js.native
     def captureMessage(message: String, level: Severity): String = js.native
+    def captureMessage(message: String, level: SeverityLevel): String = js.native
+    def captureMessage(message: String, level: SeverityLevel, hint: EventHint): String = js.native
     def captureMessage(message: String, level: Severity, hint: EventHint): String = js.native
+    
+    /**
+      * Sends the current session on the scope to Sentry
+      * @param endSession If set the session will be marked as exited and removed from the scope
+      */
+    def captureSession(): Unit = js.native
+    def captureSession(endSession: Boolean): Unit = js.native
     
     /**
       * Callback to set context information onto the scope.
@@ -94,7 +103,7 @@ object hubMod {
     def endSession(): Unit = js.native
     
     /** Returns the client of the top stack. */
-    def getClient(): js.UndefOr[Client[Options]] = js.native
+    def getClient(): js.UndefOr[Client[ClientOptions[BaseTransportOptions]]] = js.native
     
     /** Returns the integration if installed on the current client. */
     def getIntegration[T /* <: Integration */](integration: IntegrationClass[T]): T | Null = js.native
@@ -138,7 +147,7 @@ object hubMod {
     def pushScope(): Scope = js.native
     
     /**
-      * For the duraction of the callback, this hub will be set as the global current Hub.
+      * For the duration of the callback, this hub will be set as the global current Hub.
       * This function is useful if you want to run your own client and hook into an already initialized one
       * e.g.: Reporting issues to your own sentry when running in your component while still using the users configuration.
       */
@@ -150,7 +159,7 @@ object hubMod {
       * @param context Any kind of data. This data will be normalized.
       */
     def setContext(name: String): Unit = js.native
-    def setContext(name: String, context: StringDictionary[js.Any]): Unit = js.native
+    def setContext(name: String, context: StringDictionary[Any]): Unit = js.native
     
     /**
       * Set key:value that will be sent as extra data with the event.
@@ -167,16 +176,20 @@ object hubMod {
     
     /**
       * Set key:value that will be sent as tags data with the event.
+      *
+      * Can also be used to unset a tag, by passing `undefined`.
+      *
       * @param key String key of tag
-      * @param value String value of tag
+      * @param value Value of tag
       */
-    def setTag(key: String, value: String): Unit = js.native
+    def setTag(key: String, value: Primitive): Unit = js.native
     
     /**
       * Set an object that will be merged sent as tags data with the event.
+      *
       * @param tags Tags context object to merge into current context.
       */
-    def setTags(tags: StringDictionary[String]): Unit = js.native
+    def setTags(tags: StringDictionary[Primitive]): Unit = js.native
     
     /**
       * Updates user context information for future events.
@@ -199,15 +212,7 @@ object hubMod {
       * @returns The session which was just started
       */
     def startSession(): Session = js.native
-    def startSession(context: SessionContext): Session = js.native
-    
-    /**
-      * Starts a new `Span` and returns it. If there is a `Span` on the `Scope`,
-      * the new `Span` will be a child of the existing `Span`.
-      *
-      * @param context Properties of the new `Span`.
-      */
-    def startSpan(context: SpanContext): Span = js.native
+    def startSession(context: Session): Session = js.native
     
     /**
       * Starts a new `Transaction` and returns it. This is the entry point to manual tracing instrumentation.

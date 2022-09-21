@@ -2,13 +2,14 @@ package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.highchartsStrings.auto
+import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Axis")
 @js.native
-class Axis protected () extends StObject {
+open class Axis protected () extends StObject {
   /**
     * Create a new axis object. Called internally when instanciating a new
     * chart or adding axes by Highcharts.Chart#addAxis.
@@ -72,6 +73,12 @@ class Axis protected () extends StObject {
   def addTitle(display: Boolean): Unit = js.native
   
   /**
+    * (Highstock) Check the groupPixelWidth and apply the grouping if
+    * needed. Fired only after processing the data.
+    */
+  def applyGrouping(): Unit = js.native
+  
+  /**
     * If categories are present for the axis, names are used instead of numbers
     * for that axis.
     *
@@ -105,9 +112,13 @@ class Axis protected () extends StObject {
     * @param this
     *        Formatter context of axis label.
     *
+    * @param ctx
+    *        Formatter context of axis label.
+    *
     * @return The formatted label content.
     */
   def defaultLabelFormatter(): String = js.native
+  def defaultLabelFormatter(ctx: AxisLabelsFormatterContextObject): String = js.native
   
   /**
     * Internal function to draw a crosshair.
@@ -128,6 +139,23 @@ class Axis protected () extends StObject {
   def drawCrosshair(e: PointerEventObject, point: Point): Unit = js.native
   
   /**
+    * Drill down to a given category. This is the same as clicking on an
+    * axis label. If multiple series with drilldown are present, all will
+    * drill down to the given category.
+    *
+    * See also `Point.doDrilldown` for drilling down on a single point
+    * instance.
+    *
+    * @param x
+    *        The index of the category
+    *
+    * @param originalEvent
+    *        The original event, used internally.
+    */
+  def drilldownCategory(x: Double): Unit = js.native
+  def drilldownCategory(x: Double, originalEvent: MouseEvent): Unit = js.native
+  
+  /**
     * Get the current extremes for the axis.
     *
     * @return An object containing extremes information.
@@ -146,7 +174,7 @@ class Axis protected () extends StObject {
   def getLinePath(lineWidth: Double): SVGPathArray = js.native
   
   /**
-    * Internal function to et the tick positions of a linear axis to round
+    * Internal function to get the tick positions of a linear axis to round
     * values like whole tens or every five.
     *
     * @param tickInterval
@@ -165,6 +193,8 @@ class Axis protected () extends StObject {
   /**
     * Resolve the new minorTicks/minorTickInterval options into the legacy
     * loosely typed minorTickInterval option.
+    *
+    * @return Legacy option
     */
   def getMinorTickInterval(): auto | Double | Null = js.native
   
@@ -215,7 +245,7 @@ class Axis protected () extends StObject {
     * @return The translated threshold position in terms of pixels, and
     *         corrected to stay within the axis bounds.
     */
-  def getThreshold(threshold: Double): js.UndefOr[Double] = js.native
+  def getThreshold(threshold: Double): Double = js.native
   
   /**
     * Return true if the axis has associated data.
@@ -318,8 +348,11 @@ class Axis protected () extends StObject {
     *
     * @param pos
     *        The position in axis values.
+    *
+    * @param slideIn
+    *        Whether the tick should animate in from last computed position
     */
-  def renderMinorTick(pos: Double): Unit = js.native
+  def renderMinorTick(pos: Double, slideIn: Boolean): Unit = js.native
   
   /**
     * Render a major tick into the given position. If a tick already exists in
@@ -330,8 +363,11 @@ class Axis protected () extends StObject {
     *
     * @param i
     *        The tick index.
+    *
+    * @param slideIn
+    *        Whether the tick should animate in from last computed position
     */
-  def renderTick(pos: Double, i: Double): Unit = js.native
+  def renderTick(pos: Double, i: Double, slideIn: Boolean): Unit = js.native
   
   /**
     * Whether the axis is reversed. Based on the `axis.reversed`, option, but
@@ -357,12 +393,12 @@ class Axis protected () extends StObject {
   def setCategories(categories: js.Array[String], redraw: Boolean): Unit = js.native
   
   /**
-    * Highstock only. Set the compare mode on all series belonging to an Y
-    * axis after render time.
+    * Highcharts Stock only. Set the compare mode on all series belonging
+    * to a Y axis.
     *
     * @param compare
-    *        The compare mode. Can be one of `null` (default), `"value"` or
-    *        `"percent"`.
+    *        The compare mode. Can be one of `undefined` (default), `null`,
+    *        `"value"` or `"percent"`.
     *
     * @param redraw
     *        Whether to redraw the chart or to wait for a later call to
@@ -371,11 +407,30 @@ class Axis protected () extends StObject {
   def setCompare(): Unit = js.native
   def setCompare(compare: String): Unit = js.native
   def setCompare(compare: String, redraw: Boolean): Unit = js.native
+  def setCompare(compare: Null, redraw: Boolean): Unit = js.native
   def setCompare(compare: Unit, redraw: Boolean): Unit = js.native
   
   /**
-    * (Highstock) Highstock only. Force data grouping on all the axis'
-    * series.
+    * Highcharts Stock only. Set the cumulative mode on all series
+    * belonging to a Y axis.
+    *
+    * @param cumulative
+    *        Whether to disable or enable the cumulative mode. Can be one
+    *        of `undefined` (default, treated as `false`), `false` or
+    *        `true`.
+    *
+    * @param redraw
+    *        Whether to redraw the chart or to wait for a later call to
+    *        Chart#redraw.
+    */
+  def setCumulative(): Unit = js.native
+  def setCumulative(cumulative: Boolean): Unit = js.native
+  def setCumulative(cumulative: Boolean, redraw: Boolean): Unit = js.native
+  def setCumulative(cumulative: Unit, redraw: Boolean): Unit = js.native
+  
+  /**
+    * (Highstock) Highcharts Stock only. Force data grouping on all the
+    * axis' series.
     *
     * @param dataGrouping
     *        A `dataGrouping` configuration. Use `false` to disable data
@@ -423,96 +478,96 @@ class Axis protected () extends StObject {
   def setExtremes(newMin: Double, newMax: Double): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double, redraw: Boolean): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: Boolean): Unit = js.native
-  def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: Boolean, eventArguments: js.Any): Unit = js.native
-  def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: Boolean, eventArguments: Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: Unit, eventArguments: Any): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def setExtremes(
     newMin: Double,
     newMax: Double,
     redraw: Boolean,
     animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
+    eventArguments: Any
   ): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: Boolean): Unit = js.native
-  def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: Boolean, eventArguments: js.Any): Unit = js.native
-  def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: Boolean, eventArguments: Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: Unit, eventArguments: Any): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   def setExtremes(
     newMin: Double,
     newMax: Double,
     redraw: Unit,
     animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
+    eventArguments: Any
   ): Unit = js.native
   def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean): Unit = js.native
   def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: Boolean): Unit = js.native
-  def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: Boolean, eventArguments: js.Any): Unit = js.native
-  def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: Boolean, eventArguments: Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: Unit, eventArguments: Any): Unit = js.native
   def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def setExtremes(
     newMin: Double,
     newMax: Unit,
     redraw: Boolean,
     animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
+    eventArguments: Any
   ): Unit = js.native
   def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: Boolean): Unit = js.native
-  def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: Boolean, eventArguments: js.Any): Unit = js.native
-  def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: Boolean, eventArguments: Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: Unit, eventArguments: Any): Unit = js.native
   def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   def setExtremes(
     newMin: Double,
     newMax: Unit,
     redraw: Unit,
     animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
+    eventArguments: Any
   ): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Double): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: Boolean): Unit = js.native
-  def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: Boolean, eventArguments: js.Any): Unit = js.native
-  def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: Boolean, eventArguments: Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: Unit, eventArguments: Any): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def setExtremes(
     newMin: Unit,
     newMax: Double,
     redraw: Boolean,
     animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
+    eventArguments: Any
   ): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: Boolean): Unit = js.native
-  def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: Boolean, eventArguments: js.Any): Unit = js.native
-  def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: Boolean, eventArguments: Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: Unit, eventArguments: Any): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   def setExtremes(
     newMin: Unit,
     newMax: Double,
     redraw: Unit,
     animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
+    eventArguments: Any
   ): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: Boolean): Unit = js.native
-  def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: Boolean, eventArguments: js.Any): Unit = js.native
-  def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: Boolean, eventArguments: Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: Unit, eventArguments: Any): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def setExtremes(
     newMin: Unit,
     newMax: Unit,
     redraw: Boolean,
     animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
+    eventArguments: Any
   ): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: Boolean): Unit = js.native
-  def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: Boolean, eventArguments: js.Any): Unit = js.native
-  def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: Boolean, eventArguments: Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: Unit, eventArguments: Any): Unit = js.native
   def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   def setExtremes(
     newMin: Unit,
     newMax: Unit,
     redraw: Unit,
     animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
+    eventArguments: Any
   ): Unit = js.native
   
   /**

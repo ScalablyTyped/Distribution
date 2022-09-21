@@ -21,6 +21,6 @@ object SchemaBatchCreatePerfSamplesResponse {
     
     inline def setPerfSamplesUndefined: Self = StObject.set(x, "perfSamples", js.undefined)
     
-    inline def setPerfSamplesVarargs(value: SchemaPerfSample*): Self = StObject.set(x, "perfSamples", js.Array(value :_*))
+    inline def setPerfSamplesVarargs(value: SchemaPerfSample*): Self = StObject.set(x, "perfSamples", js.Array(value*))
   }
 }

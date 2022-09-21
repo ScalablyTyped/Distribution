@@ -4,29 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Savedadstyles")
 @js.native
-class ResourceSavedadstyles protected () extends StObject {
+open class ResourceSavedadstyles protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * adsense.savedadstyles.get
-    * @desc Get a specific saved ad style from the user's account.
-    * @alias adsense.savedadstyles.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.savedAdStyleId Saved ad style to retrieve.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaSavedAdStyle] = js.native
   def get(callback: BodyResponseCallback[SchemaSavedAdStyle]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSavedAdStyle] = js.native
@@ -34,8 +24,8 @@ class ResourceSavedadstyles protected () extends StObject {
   def get(params: ParamsResourceSavedadstylesGet, callback: BodyResponseCallback[SchemaSavedAdStyle]): Unit = js.native
   def get(
     params: ParamsResourceSavedadstylesGet,
-    options: BodyResponseCallback[SchemaSavedAdStyle],
-    callback: BodyResponseCallback[SchemaSavedAdStyle]
+    options: BodyResponseCallback[Readable | SchemaSavedAdStyle],
+    callback: BodyResponseCallback[Readable | SchemaSavedAdStyle]
   ): Unit = js.native
   def get(params: ParamsResourceSavedadstylesGet, options: MethodOptions): GaxiosPromise[SchemaSavedAdStyle] = js.native
   def get(
@@ -43,20 +33,69 @@ class ResourceSavedadstyles protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSavedAdStyle]
   ): Unit = js.native
-  
   /**
-    * adsense.savedadstyles.list
-    * @desc List all saved ad styles in the user's account.
-    * @alias adsense.savedadstyles.list
-    * @memberOf! ()
+    * Get a specific saved ad style from the user's account.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/adsense.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object=} params Parameters for request
-    * @param {integer=} params.maxResults The maximum number of saved ad styles to include in the response, used for paging.
-    * @param {string=} params.pageToken A continuation token, used to page through saved ad styles. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const adsense = google.adsense('v1.4');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/adsense',
+    *       'https://www.googleapis.com/auth/adsense.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await adsense.savedadstyles.get({
+    *     // Saved ad style to retrieve.
+    *     savedAdStyleId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "adStyle": {},
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceSavedadstylesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceSavedadstylesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaSavedAdStyles] = js.native
   def list(callback: BodyResponseCallback[SchemaSavedAdStyles]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSavedAdStyles] = js.native
@@ -64,13 +103,77 @@ class ResourceSavedadstyles protected () extends StObject {
   def list(params: ParamsResourceSavedadstylesList, callback: BodyResponseCallback[SchemaSavedAdStyles]): Unit = js.native
   def list(
     params: ParamsResourceSavedadstylesList,
-    options: BodyResponseCallback[SchemaSavedAdStyles],
-    callback: BodyResponseCallback[SchemaSavedAdStyles]
+    options: BodyResponseCallback[Readable | SchemaSavedAdStyles],
+    callback: BodyResponseCallback[Readable | SchemaSavedAdStyles]
   ): Unit = js.native
   def list(params: ParamsResourceSavedadstylesList, options: MethodOptions): GaxiosPromise[SchemaSavedAdStyles] = js.native
   def list(
     params: ParamsResourceSavedadstylesList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSavedAdStyles]
+  ): Unit = js.native
+  /**
+    * List all saved ad styles in the user's account.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/adsense.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const adsense = google.adsense('v1.4');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/adsense',
+    *       'https://www.googleapis.com/auth/adsense.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await adsense.savedadstyles.list({
+    *     // The maximum number of saved ad styles to include in the response, used for paging.
+    *     maxResults: 'placeholder-value',
+    *     // A continuation token, used to page through saved ad styles. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceSavedadstylesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceSavedadstylesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

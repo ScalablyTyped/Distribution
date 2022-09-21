@@ -8,9 +8,6 @@ trait OutputOptions extends StObject {
   
   /** Force format output, otherwise attempt to use input format (optional, default true) */
   var force: js.UndefOr[Boolean] = js.undefined
-  
-  /** Quality, integer 1-100 (optional, default 80) */
-  var quality: js.UndefOr[Double] = js.undefined
 }
 object OutputOptions {
   
@@ -24,9 +21,5 @@ object OutputOptions {
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
-    
-    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
-    
-    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

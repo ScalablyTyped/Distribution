@@ -9,7 +9,7 @@ trait ObjectLiteralElement
   extends StObject
      with NamedDeclaration {
   
-  var _objectLiteralBrand: js.Any = js.native
+  var _objectLiteralBrand: Any = js.native
   
   @JSName("name")
   val name_ObjectLiteralElement: js.UndefOr[PropertyName] = js.native

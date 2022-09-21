@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@achingbrain/ip-address" : "8.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@achingbrain/ip-address" : "8.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

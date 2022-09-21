@@ -14,7 +14,7 @@ object screenSpaceCurvaturePostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/screenSpaceCurvaturePostProcess", "ScreenSpaceCurvaturePostProcess")
   @js.native
-  class ScreenSpaceCurvaturePostProcess protected () extends PostProcess {
+  open class ScreenSpaceCurvaturePostProcess protected () extends PostProcess {
     /**
       * Creates a new instance ScreenSpaceCurvaturePostProcess
       * @param name The name of the effect.
@@ -39,7 +39,7 @@ object screenSpaceCurvaturePostProcessMod {
       blockCompilation: js.UndefOr[Boolean]
     ) = this()
     
-    /* private */ var _geometryBufferRenderer: js.Any = js.native
+    /* private */ var _geometryBufferRenderer: Any = js.native
     
     /**
       * Defines how much ridge the curvature effect displays.
@@ -58,7 +58,13 @@ object screenSpaceCurvaturePostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): ScreenSpaceCurvaturePostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ScreenSpaceCurvaturePostProcess]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): ScreenSpaceCurvaturePostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ScreenSpaceCurvaturePostProcess]
   }
 }

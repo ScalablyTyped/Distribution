@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.MenuLauncherControlProperties")
 @js.native
-class MenuLauncherControlProperties ()
+open class MenuLauncherControlProperties ()
   extends StObject
      with typings.sharepoint.CUI.ControlProperties {
   

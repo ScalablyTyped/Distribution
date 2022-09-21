@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The SVGAnimatedNumber interface is used for attributes which take a list of numbers and which can be animated. */
 trait SVGAnimatedNumberList extends StObject {
   
+  /* standard dom */
   val animVal: SVGNumberList
   
+  /* standard dom */
   val baseVal: SVGNumberList
 }
 object SVGAnimatedNumberList {

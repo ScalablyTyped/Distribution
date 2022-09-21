@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "MercatorCoordinate")
 @js.native
-class MercatorCoordinate protected () extends StObject {
+open class MercatorCoordinate protected () extends StObject {
   def this(x: Double, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
   

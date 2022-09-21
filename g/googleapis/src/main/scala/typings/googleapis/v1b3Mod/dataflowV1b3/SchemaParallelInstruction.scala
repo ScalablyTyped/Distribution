@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes a particular operation comprising a MapTask.
-  */
 trait SchemaParallelInstruction extends StObject {
   
   /**
@@ -17,12 +14,12 @@ trait SchemaParallelInstruction extends StObject {
   /**
     * User-provided name of this operation.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * System-defined name for the operation in the original workflow graph.
     */
-  var originalName: js.UndefOr[String] = js.undefined
+  var originalName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Describes the outputs of the instruction.
@@ -47,7 +44,7 @@ trait SchemaParallelInstruction extends StObject {
   /**
     * System-defined name of this operation. Unique across the workflow.
     */
-  var systemName: js.UndefOr[String] = js.undefined
+  var systemName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Additional information for Write instructions.
@@ -69,9 +66,13 @@ object SchemaParallelInstruction {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalNameNull: Self = StObject.set(x, "originalName", null)
     
     inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
@@ -79,7 +80,7 @@ object SchemaParallelInstruction {
     
     inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: SchemaInstructionOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: SchemaInstructionOutput*): Self = StObject.set(x, "outputs", js.Array(value*))
     
     inline def setParDo(value: SchemaParDoInstruction): Self = StObject.set(x, "parDo", value.asInstanceOf[js.Any])
     
@@ -94,6 +95,8 @@ object SchemaParallelInstruction {
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     inline def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
+    
+    inline def setSystemNameNull: Self = StObject.set(x, "systemName", null)
     
     inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     

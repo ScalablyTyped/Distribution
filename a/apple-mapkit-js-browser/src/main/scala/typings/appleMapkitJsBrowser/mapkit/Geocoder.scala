@@ -1,7 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
 import typings.appleMapkitJsBrowser.anon.PickGeocoderConstructorOp
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +34,13 @@ trait Geocoder extends StObject {
   /**
     * Converts an address to geographic coordinates.
     */
-  def lookup(place: String, callback: js.Function2[/* error */ Error | Null, /* data */ GeocoderResponse, Unit]): Double = js.native
   def lookup(
     place: String,
-    callback: js.Function2[/* error */ Error | Null, /* data */ GeocoderResponse, Unit],
+    callback: js.Function2[/* error */ js.Error | Null, /* data */ GeocoderResponse, Unit]
+  ): Double = js.native
+  def lookup(
+    place: String,
+    callback: js.Function2[/* error */ js.Error | Null, /* data */ GeocoderResponse, Unit],
     options: GeocoderLookupOptions
   ): Double = js.native
   
@@ -53,11 +55,11 @@ trait Geocoder extends StObject {
     */
   def reverseLookup(
     coordinate: Coordinate,
-    callback: js.Function2[/* error */ Error | Null, /* data */ GeocoderResponse, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* data */ GeocoderResponse, Unit]
   ): Double = js.native
   def reverseLookup(
     coordinate: Coordinate,
-    callback: js.Function2[/* error */ Error | Null, /* data */ GeocoderResponse, Unit],
+    callback: js.Function2[/* error */ js.Error | Null, /* data */ GeocoderResponse, Unit],
     options: PickGeocoderConstructorOp
   ): Double = js.native
 }

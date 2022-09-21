@@ -10,7 +10,7 @@ trait IgTileManagerSplitterOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets whether the splitter should be initially collapsed.

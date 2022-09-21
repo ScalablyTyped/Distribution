@@ -10,10 +10,10 @@ Standalone parallax scrolling for mobile and desktop with CSS variables
 | ------------------ | :-------------: |
 | Full name          | basicscroll |
 | Keywords           | parallax, scroll, scrolling |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 98931 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 18119.0 |
+| # stars            | 3542.0 |
 
 ## Links
 - [Homepage](https://github.com/electerious/basicScroll)

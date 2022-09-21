@@ -19,7 +19,7 @@ trait User extends StObject {
   /**
     * The date and time the user was created in the user pool.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies whether the user in the user pool is enabled.
@@ -61,7 +61,7 @@ object User {
     
     inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     
-    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

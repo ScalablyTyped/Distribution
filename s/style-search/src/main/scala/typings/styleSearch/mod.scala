@@ -103,7 +103,7 @@ object mod {
       
       inline def setTarget(value: String | js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value*))
     }
   }
   
@@ -125,6 +125,9 @@ object mod {
     /** whether the match is inside a function — this includes the parentheses around the arguments */
     val insideFunctionArguments: Boolean
     
+    /** whether the match is inside parenthesis */
+    val insideParens: Boolean
+    
     /** whether the match is inside a string */
     val insideString: Boolean
     
@@ -140,11 +143,12 @@ object mod {
       endIndex: Double,
       insideComment: Boolean,
       insideFunctionArguments: Boolean,
+      insideParens: Boolean,
       insideString: Boolean,
       startIndex: Double,
       target: String
     ): StyleSearchMatch = {
-      val __obj = js.Dynamic.literal(endIndex = endIndex.asInstanceOf[js.Any], insideComment = insideComment.asInstanceOf[js.Any], insideFunctionArguments = insideFunctionArguments.asInstanceOf[js.Any], insideString = insideString.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(endIndex = endIndex.asInstanceOf[js.Any], insideComment = insideComment.asInstanceOf[js.Any], insideFunctionArguments = insideFunctionArguments.asInstanceOf[js.Any], insideParens = insideParens.asInstanceOf[js.Any], insideString = insideString.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyleSearchMatch]
     }
     
@@ -155,6 +159,8 @@ object mod {
       inline def setInsideComment(value: Boolean): Self = StObject.set(x, "insideComment", value.asInstanceOf[js.Any])
       
       inline def setInsideFunctionArguments(value: Boolean): Self = StObject.set(x, "insideFunctionArguments", value.asInstanceOf[js.Any])
+      
+      inline def setInsideParens(value: Boolean): Self = StObject.set(x, "insideParens", value.asInstanceOf[js.Any])
       
       inline def setInsideString(value: Boolean): Self = StObject.set(x, "insideString", value.asInstanceOf[js.Any])
       

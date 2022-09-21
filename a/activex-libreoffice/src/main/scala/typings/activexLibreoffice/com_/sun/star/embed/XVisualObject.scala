@@ -65,7 +65,7 @@ object XVisualObject {
     getMapUnit: Double => Double,
     getPreferredVisualRepresentation: Double => VisualRepresentation,
     getVisualAreaSize: Double => Size,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setVisualAreaSize: (Double, Size) => Unit
   ): XVisualObject = {

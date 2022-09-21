@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssignIpv6AddressesResult extends StObject {
   
   /**
-    * The IPv6 addresses assigned to the network interface.
+    * The new IPv6 addresses assigned to the network interface. Existing IPv6 addresses that were assigned to the network interface before the request are not included.
     */
   var AssignedIpv6Addresses: js.UndefOr[Ipv6AddressList] = js.undefined
+  
+  /**
+    * The IPv6 prefixes that are assigned to the network interface.
+    */
+  var AssignedIpv6Prefixes: js.UndefOr[IpPrefixList] = js.undefined
   
   /**
     * The ID of the network interface.
@@ -29,7 +34,13 @@ object AssignIpv6AddressesResult {
     
     inline def setAssignedIpv6AddressesUndefined: Self = StObject.set(x, "AssignedIpv6Addresses", js.undefined)
     
-    inline def setAssignedIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "AssignedIpv6Addresses", js.Array(value :_*))
+    inline def setAssignedIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "AssignedIpv6Addresses", js.Array(value*))
+    
+    inline def setAssignedIpv6Prefixes(value: IpPrefixList): Self = StObject.set(x, "AssignedIpv6Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setAssignedIpv6PrefixesUndefined: Self = StObject.set(x, "AssignedIpv6Prefixes", js.undefined)
+    
+    inline def setAssignedIpv6PrefixesVarargs(value: String*): Self = StObject.set(x, "AssignedIpv6Prefixes", js.Array(value*))
     
     inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     

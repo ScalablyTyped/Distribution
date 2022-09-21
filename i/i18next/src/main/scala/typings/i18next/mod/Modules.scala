@@ -10,6 +10,8 @@ trait Modules extends StObject {
   
   var external: js.Array[ThirdPartyModule]
   
+  var formatter: js.UndefOr[FormatterModule] = js.undefined
+  
   var i18nFormat: js.UndefOr[I18nFormatModule] = js.undefined
   
   var languageDetector: js.UndefOr[LanguageDetectorModule | LanguageDetectorAsyncModule] = js.undefined
@@ -31,7 +33,11 @@ object Modules {
     
     inline def setExternal(value: js.Array[ThirdPartyModule]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
-    inline def setExternalVarargs(value: ThirdPartyModule*): Self = StObject.set(x, "external", js.Array(value :_*))
+    inline def setExternalVarargs(value: ThirdPartyModule*): Self = StObject.set(x, "external", js.Array(value*))
+    
+    inline def setFormatter(value: FormatterModule): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     inline def setI18nFormat(value: I18nFormatModule): Self = StObject.set(x, "i18nFormat", value.asInstanceOf[js.Any])
     

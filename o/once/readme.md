@@ -10,10 +10,10 @@ Run a function exactly one time
 | ------------------ | :-------------: |
 | Full name          | once |
 | Keywords           | once, function, one, single |
-| # releases         | 0 |
-| # dependents       | 1035 |
-| # downloads        | 986725318 |
-| # stars            | 41 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4606696833333334E8 |
+| # stars            | 207.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/once#readme)

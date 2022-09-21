@@ -1,7 +1,7 @@
 
 # Scala.js typings for google__markerclustererplus
 
-Typings are for version 2.1
+Typings are for version 5.1.3
 
 ## Library description:
 Creates and manages per-zoom-level clusters for large amounts of markers.
@@ -10,10 +10,10 @@ Creates and manages per-zoom-level clusters for large amounts of markers.
 | ------------------ | :-------------: |
 | Full name          | @google/markerclustererplus |
 | Keywords           | cluster, google, maps, marker |
-| # releases         | 22 |
-| # dependents       | 7 |
-| # downloads        | 1262481 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 145573.33333333334 |
+| # stars            | 1084.0 |
 
 ## Links
 - [Homepage](https://github.com/googlemaps/v3-utility-library/tree/master/markerclustererplus)
@@ -24,7 +24,7 @@ Creates and manages per-zoom-level clusters for large amounts of markers.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

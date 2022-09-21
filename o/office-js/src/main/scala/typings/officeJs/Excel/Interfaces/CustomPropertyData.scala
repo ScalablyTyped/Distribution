@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomPropertyData extends StObject {
   
   /**
-    *
     * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The type of the value used for the custom property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: js.UndefOr[
@@ -31,12 +31,12 @@ trait CustomPropertyData extends StObject {
   ] = js.undefined
   
   /**
-    *
     * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object CustomPropertyData {
   
@@ -57,7 +57,7 @@ object CustomPropertyData {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

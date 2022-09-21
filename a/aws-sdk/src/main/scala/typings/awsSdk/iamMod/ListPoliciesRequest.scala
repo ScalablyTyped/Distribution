@@ -32,7 +32,7 @@ trait ListPoliciesRequest extends StObject {
   var PolicyUsageFilter: js.UndefOr[PolicyUsageType] = js.undefined
   
   /**
-    * The scope to use for filtering the results. To list only AWS managed policies, set Scope to AWS. To list only the customer managed policies in your AWS account, set Scope to Local. This parameter is optional. If it is not included, or if it is set to All, all policies are returned.
+    * The scope to use for filtering the results. To list only Amazon Web Services managed policies, set Scope to AWS. To list only the customer managed policies in your Amazon Web Services account, set Scope to Local. This parameter is optional. If it is not included, or if it is set to All, all policies are returned.
     */
   var Scope: js.UndefOr[policyScopeType] = js.undefined
 }

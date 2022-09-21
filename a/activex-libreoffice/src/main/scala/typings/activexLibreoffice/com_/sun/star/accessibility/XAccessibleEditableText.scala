@@ -140,7 +140,7 @@ object XAccessibleEditableText {
     getTextRange: (Double, Double) => String,
     insertText: (String, Double) => Boolean,
     pasteText: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     replaceText: (Double, Double, String) => Boolean,
     setAttributes: (Double, Double, SeqEquiv[PropertyValue]) => Boolean,

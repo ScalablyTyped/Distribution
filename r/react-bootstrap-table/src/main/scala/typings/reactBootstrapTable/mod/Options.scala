@@ -21,7 +21,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * a filter on <TableHeaderColumn>.
     */
   var afterColumnFilter: js.UndefOr[
-    js.Function2[/* filterConds */ js.Array[FilterData[js.Any]], /* result */ js.Array[TRow], Unit]
+    js.Function2[/* filterConds */ js.Array[FilterData[Any]], /* result */ js.Array[TRow], Unit]
   ] = js.undefined
   
   /**
@@ -92,7 +92,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var clearSearchBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit], 
       ReactElement
     ]
   ] = js.undefined
@@ -128,7 +128,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var deleteBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit], 
       ReactElement
     ]
   ] = js.undefined
@@ -189,7 +189,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var exportCSVBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit], 
       ReactElement
     ]
   ] = js.undefined
@@ -209,7 +209,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var firstPage: js.UndefOr[js.Any] = js.undefined
+  var firstPage: js.UndefOr[Any] = js.undefined
   
   /**
     * Customize the tooltip text shown when hovering over the firstPage button.
@@ -251,7 +251,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var insertBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit], 
       ReactElement
     ]
   ] = js.undefined
@@ -344,7 +344,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var lastPage: js.UndefOr[js.Any] = js.undefined
+  var lastPage: js.UndefOr[Any] = js.undefined
   
   /**
     * Customize the tooltip text shown when hovering over the lastPage button.
@@ -356,7 +356,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var nextPage: js.UndefOr[js.Any] = js.undefined
+  var nextPage: js.UndefOr[Any] = js.undefined
   
   /**
     * Customize the tooltip text shown when hovering over the nextPage button.
@@ -429,7 +429,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     js.Function3[
       /* rowKey */ Double | String, 
       /* isExpand */ Boolean, 
-      /* event */ MouseEvent[js.Any, NativeMouseEvent], 
+      /* event */ MouseEvent[Any, NativeMouseEvent], 
       Unit
     ]
   ] = js.undefined
@@ -445,7 +445,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * This function takes one argument: filterObj which is an object which take dataField
     * as object key and the value is the filter condition.
     */
-  var onFilterChange: js.UndefOr[js.Function1[/* filterObject */ FilterData[js.Any], Unit]] = js.undefined
+  var onFilterChange: js.UndefOr[js.Function1[/* filterObject */ FilterData[Any], Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called when mouse enters the table.
@@ -478,7 +478,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
       /* row */ TRow, 
       /* columnIndex */ Double, 
       /* rowIndex */ Double, 
-      /* event */ MouseEvent[js.Any, NativeMouseEvent], 
+      /* event */ MouseEvent[Any, NativeMouseEvent], 
       Unit
     ]
   ] = js.undefined
@@ -490,7 +490,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `event`: the double click event.
     */
   var onRowDoubleClick: js.UndefOr[
-    js.Function2[/* row */ TRow, /* event */ MouseEvent[js.Any, NativeMouseEvent], Unit]
+    js.Function2[/* row */ TRow, /* event */ MouseEvent[Any, NativeMouseEvent], Unit]
   ] = js.undefined
   
   /**
@@ -499,7 +499,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `row`: the row data the mouse entered
     *   `e`: the mouse event data
     */
-  var onRowMouseOut: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent], Unit]] = js.undefined
+  var onRowMouseOut: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[Any, NativeMouseEvent], Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called when the mouse enters a row in table.
@@ -507,7 +507,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     *   `row`: the row data the mouse entered
     *   `e`: the mouse event data
     */
-  var onRowMouseOver: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent], Unit]] = js.undefined
+  var onRowMouseOver: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[Any, NativeMouseEvent], Unit]] = js.undefined
   
   /**
     * Assign a callback function which will be called when search text changes. This function takes
@@ -599,7 +599,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var prePage: js.UndefOr[js.Any] = js.undefined
+  var prePage: js.UndefOr[Any] = js.undefined
   
   /**
     * Customize the tooltip text shown when hovering over the prePage button.
@@ -652,7 +652,7 @@ trait Options[TRow /* <: js.Object */] extends StObject {
     */
   var showSelectedOnlyBtn: js.UndefOr[
     js.Function2[
-      /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], 
+      /* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit], 
       /* showSelected */ Boolean, 
       ReactElement
     ]
@@ -719,7 +719,7 @@ object Options {
   
   extension [Self <: Options[?], TRow /* <: js.Object */](x: Self & Options[TRow]) {
     
-    inline def setAfterColumnFilter(value: (/* filterConds */ js.Array[FilterData[js.Any]], /* result */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterColumnFilter", js.Any.fromFunction2(value))
+    inline def setAfterColumnFilter(value: (/* filterConds */ js.Array[FilterData[Any]], /* result */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterColumnFilter", js.Any.fromFunction2(value))
     
     inline def setAfterColumnFilterUndefined: Self = StObject.set(x, "afterColumnFilter", js.undefined)
     
@@ -753,9 +753,7 @@ object Options {
     
     inline def setClearSearch(value: Boolean): Self = StObject.set(x, "clearSearch", value.asInstanceOf[js.Any])
     
-    inline def setClearSearchBtn(
-      value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
-    ): Self = StObject.set(x, "clearSearchBtn", js.Any.fromFunction1(value))
+    inline def setClearSearchBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit] => ReactElement): Self = StObject.set(x, "clearSearchBtn", js.Any.fromFunction1(value))
     
     inline def setClearSearchBtnUndefined: Self = StObject.set(x, "clearSearchBtn", js.undefined)
     
@@ -777,9 +775,7 @@ object Options {
     
     inline def setDefaultSortOrderUndefined: Self = StObject.set(x, "defaultSortOrder", js.undefined)
     
-    inline def setDeleteBtn(
-      value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
-    ): Self = StObject.set(x, "deleteBtn", js.Any.fromFunction1(value))
+    inline def setDeleteBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit] => ReactElement): Self = StObject.set(x, "deleteBtn", js.Any.fromFunction1(value))
     
     inline def setDeleteBtnUndefined: Self = StObject.set(x, "deleteBtn", js.undefined)
     
@@ -817,11 +813,9 @@ object Options {
     
     inline def setExpandingUndefined: Self = StObject.set(x, "expanding", js.undefined)
     
-    inline def setExpandingVarargs(value: (Double | String)*): Self = StObject.set(x, "expanding", js.Array(value :_*))
+    inline def setExpandingVarargs(value: (Double | String)*): Self = StObject.set(x, "expanding", js.Array(value*))
     
-    inline def setExportCSVBtn(
-      value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
-    ): Self = StObject.set(x, "exportCSVBtn", js.Any.fromFunction1(value))
+    inline def setExportCSVBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit] => ReactElement): Self = StObject.set(x, "exportCSVBtn", js.Any.fromFunction1(value))
     
     inline def setExportCSVBtnUndefined: Self = StObject.set(x, "exportCSVBtn", js.undefined)
     
@@ -833,7 +827,7 @@ object Options {
     
     inline def setExportCSVTextUndefined: Self = StObject.set(x, "exportCSVText", js.undefined)
     
-    inline def setFirstPage(value: js.Any): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
+    inline def setFirstPage(value: Any): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
     
     inline def setFirstPageTitle(value: String): Self = StObject.set(x, "firstPageTitle", value.asInstanceOf[js.Any])
     
@@ -857,9 +851,7 @@ object Options {
     
     inline def setIgnoreEditableUndefined: Self = StObject.set(x, "ignoreEditable", js.undefined)
     
-    inline def setInsertBtn(
-      value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
-    ): Self = StObject.set(x, "insertBtn", js.Any.fromFunction1(value))
+    inline def setInsertBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit] => ReactElement): Self = StObject.set(x, "insertBtn", js.Any.fromFunction1(value))
     
     inline def setInsertBtnUndefined: Self = StObject.set(x, "insertBtn", js.undefined)
     
@@ -899,7 +891,7 @@ object Options {
     
     inline def setKeepSizePerPageStateUndefined: Self = StObject.set(x, "keepSizePerPageState", js.undefined)
     
-    inline def setLastPage(value: js.Any): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
+    inline def setLastPage(value: Any): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
     
     inline def setLastPageTitle(value: String): Self = StObject.set(x, "lastPageTitle", value.asInstanceOf[js.Any])
     
@@ -907,7 +899,7 @@ object Options {
     
     inline def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
     
-    inline def setNextPage(value: js.Any): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
+    inline def setNextPage(value: Any): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
     
     inline def setNextPageTitle(value: String): Self = StObject.set(x, "nextPageTitle", value.asInstanceOf[js.Any])
     
@@ -940,7 +932,7 @@ object Options {
     inline def setOnDeleteRowUndefined: Self = StObject.set(x, "onDeleteRow", js.undefined)
     
     inline def setOnExpand(
-      value: (/* rowKey */ Double | String, /* isExpand */ Boolean, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit
+      value: (/* rowKey */ Double | String, /* isExpand */ Boolean, /* event */ MouseEvent[Any, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onExpand", js.Any.fromFunction3(value))
     
     inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
@@ -949,7 +941,7 @@ object Options {
     
     inline def setOnExportToCSVUndefined: Self = StObject.set(x, "onExportToCSV", js.undefined)
     
-    inline def setOnFilterChange(value: /* filterObject */ FilterData[js.Any] => Unit): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction1(value))
+    inline def setOnFilterChange(value: /* filterObject */ FilterData[Any] => Unit): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction1(value))
     
     inline def setOnFilterChangeUndefined: Self = StObject.set(x, "onFilterChange", js.undefined)
     
@@ -966,20 +958,20 @@ object Options {
     inline def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
     
     inline def setOnRowClick(
-      value: (/* row */ TRow, /* columnIndex */ Double, /* rowIndex */ Double, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit
+      value: (/* row */ TRow, /* columnIndex */ Double, /* rowIndex */ Double, /* event */ MouseEvent[Any, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onRowClick", js.Any.fromFunction4(value))
     
     inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
-    inline def setOnRowDoubleClick(value: (/* row */ TRow, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction2(value))
+    inline def setOnRowDoubleClick(value: (/* row */ TRow, /* event */ MouseEvent[Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction2(value))
     
     inline def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
     
-    inline def setOnRowMouseOut(value: (/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction2(value))
+    inline def setOnRowMouseOut(value: (/* row */ TRow, /* e */ MouseEvent[Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction2(value))
     
     inline def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
     
-    inline def setOnRowMouseOver(value: (/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction2(value))
+    inline def setOnRowMouseOver(value: (/* row */ TRow, /* e */ MouseEvent[Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction2(value))
     
     inline def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
     
@@ -1031,7 +1023,7 @@ object Options {
     
     inline def setPaginationSizeUndefined: Self = StObject.set(x, "paginationSize", js.undefined)
     
-    inline def setPrePage(value: js.Any): Self = StObject.set(x, "prePage", value.asInstanceOf[js.Any])
+    inline def setPrePage(value: Any): Self = StObject.set(x, "prePage", value.asInstanceOf[js.Any])
     
     inline def setPrePageTitle(value: String): Self = StObject.set(x, "prePageTitle", value.asInstanceOf[js.Any])
     
@@ -1060,7 +1052,7 @@ object Options {
     inline def setSearchPanelUndefined: Self = StObject.set(x, "searchPanel", js.undefined)
     
     inline def setShowSelectedOnlyBtn(
-      value: (/* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], /* showSelected */ Boolean) => ReactElement
+      value: (/* onClick */ js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit], /* showSelected */ Boolean) => ReactElement
     ): Self = StObject.set(x, "showSelectedOnlyBtn", js.Any.fromFunction2(value))
     
     inline def setShowSelectedOnlyBtnUndefined: Self = StObject.set(x, "showSelectedOnlyBtn", js.undefined)
@@ -1075,7 +1067,7 @@ object Options {
     
     inline def setSizePerPageListUndefined: Self = StObject.set(x, "sizePerPageList", js.undefined)
     
-    inline def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
+    inline def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value*))
     
     inline def setSizePerPageUndefined: Self = StObject.set(x, "sizePerPage", js.undefined)
     
@@ -1087,13 +1079,13 @@ object Options {
     
     inline def setSortNameUndefined: Self = StObject.set(x, "sortName", js.undefined)
     
-    inline def setSortNameVarargs(value: (/* keyof TRow */ String)*): Self = StObject.set(x, "sortName", js.Array(value :_*))
+    inline def setSortNameVarargs(value: (/* keyof TRow */ String)*): Self = StObject.set(x, "sortName", js.Array(value*))
     
     inline def setSortOrder(value: SortOrder | js.Array[SortOrder]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
-    inline def setSortOrderVarargs(value: SortOrder*): Self = StObject.set(x, "sortOrder", js.Array(value :_*))
+    inline def setSortOrderVarargs(value: SortOrder*): Self = StObject.set(x, "sortOrder", js.Array(value*))
     
     inline def setToolBar(value: /* props */ ToolBarProps => ReactElement): Self = StObject.set(x, "toolBar", js.Any.fromFunction1(value))
     

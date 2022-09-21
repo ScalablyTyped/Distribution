@@ -37,10 +37,10 @@ trait JQuery extends StObject {
   
   def formSerialize(): String = js.native
   
-  def formToArray(): js.Array[js.Any] = js.native
-  def formToArray(semantic: Boolean): js.Array[js.Any] = js.native
-  def formToArray(semantic: Boolean, elements: js.Array[Element]): js.Array[js.Any] = js.native
-  def formToArray(semantic: Unit, elements: js.Array[Element]): js.Array[js.Any] = js.native
+  def formToArray(): js.Array[Any] = js.native
+  def formToArray(semantic: Boolean): js.Array[Any] = js.native
+  def formToArray(semantic: Boolean, elements: js.Array[Element]): js.Array[Any] = js.native
+  def formToArray(semantic: Unit, elements: js.Array[Element]): js.Array[Any] = js.native
   
   def resetForm(): JQuery = js.native
   

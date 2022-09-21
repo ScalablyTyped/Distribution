@@ -10,10 +10,10 @@ object localPostOfficeMod {
   
   @JSImport("material-ui/svg-icons/maps/local-post-office", JSImport.Default)
   @js.native
-  class default () extends MapsLocalPostOffice
+  open class default () extends MapsLocalPostOffice
   
   @JSImport("material-ui/svg-icons/maps/local-post-office", "MapsLocalPostOffice")
   @js.native
-  class MapsLocalPostOffice ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalPostOffice ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@devexpress/utils/lib/utils/key", "KeyUtils")
 @js.native
-class KeyUtils () extends StObject
+open class KeyUtils () extends StObject
 /* static members */
 object KeyUtils {
   

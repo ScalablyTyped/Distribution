@@ -1,8 +1,7 @@
 package typings.getImageColors
 
 import typings.chromaJs.mod.Color
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object mod {
   /**
     * If you don't like promises, you can use node-style callbacks too
     */
-  type Callback = js.Function2[/* error */ Error | Null, /* colors */ js.Array[Color], Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* colors */ js.Array[Color], Unit]
   
   trait Options extends StObject {
     
@@ -35,6 +34,9 @@ object mod {
       */
     var count: js.UndefOr[Double] = js.undefined
     
+    /**
+      * @default undefined
+      */
     var `type`: js.UndefOr[String] = js.undefined
   }
   object Options {

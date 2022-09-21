@@ -13,5 +13,5 @@ object relayDefaultHandlerProviderMod {
   
   inline def RelayDefaultHandlerProvider(handle: String): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("RelayDefaultHandlerProvider")(handle.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
-  type HandlerProvider = js.Function1[/* handle */ String, js.Any]
+  type HandlerProvider = js.Function1[/* handle */ String, Any]
 }

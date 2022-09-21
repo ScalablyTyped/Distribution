@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an object containing values and types of a named item.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -41,18 +41,18 @@ trait NamedItemArrayValues
   def toJSON(): NamedItemArrayValuesData = js.native
   
   /**
-    *
     * Represents the types for each item in the named item array
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   val types: js.Array[js.Array[RangeValueType]] = js.native
   
   /**
-    *
     * Represents the values of each item in the named item array.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  val values: js.Array[js.Array[js.Any]] = js.native
+  val values: js.Array[js.Array[Any]] = js.native
 }

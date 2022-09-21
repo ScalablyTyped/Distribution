@@ -82,7 +82,7 @@ object mod {
   
   @JSImport("plupload", "Uploader")
   @js.native
-  class Uploader protected ()
+  open class Uploader protected ()
     extends StObject
        with typings.plupload.plupload.Uploader {
     def this(settings: pluploadSettings) = this()
@@ -100,7 +100,7 @@ object mod {
     * @param {Object} obj DOM element like object to add handler to.
     * @param {String} name Class name
     */
-  inline def addClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addClass(obj: Any, name: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Adds an event handler to the specified object and store reference to the handler
@@ -113,8 +113,8 @@ object mod {
     * @param {Function} callback Function to call when event occurs.
     * @param {String} (optional) key that might be used to add specifity to the event record.
     */
-  inline def addEvent(obj: js.Any, name: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addEvent(obj: js.Any, name: String, callback: js.Function, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addEvent(obj: Any, name: String, callback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addEvent(obj: Any, name: String, callback: js.Function, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Registers a filter that will be executed for each file added to the queue.
@@ -138,7 +138,7 @@ object mod {
     * @param {Object} pack Language pack items to add.
     * @return {Object} Extended language pack object.
     */
-  inline def addI18n(pack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addI18n")(pack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def addI18n(pack: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addI18n")(pack.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Builds a full url out of a base URL and an object with items to append as query string items.
@@ -149,7 +149,7 @@ object mod {
     * @param {Object} items Name/value object to serialize as a querystring.
     * @return {String} String with url + serialized query string items.
     */
-  inline def buildUrl(url: String, items: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUrl")(url.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def buildUrl(url: String, items: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUrl")(url.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Cleans the specified name from national characters (diacritics). The result will be a name with only a-z, 0-9 and _.
@@ -171,7 +171,7 @@ object mod {
     * @param {Object} obj Object to iterate.
     * @param {function} callback Callback function to execute for each item.
     */
-  inline def each(obj: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def each(obj: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Extends the specified object with another object.
@@ -182,7 +182,7 @@ object mod {
     * @param {Object..} obj Multiple objects to extend with.
     * @return {Object} Same as target, the extended object.
     */
-  inline def extend(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def extend(target: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Formats the specified number as a size string for example 1024 becomes 1 KB.
@@ -203,7 +203,7 @@ object mod {
     * @param {Element} root Optional root element to stop calculations at.
     * @return {object} Absolute position of the specified element object with x, y fields.
     */
-  inline def getPos(node: Element, root: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPos")(node.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getPos(node: Element, root: Element): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPos")(node.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Returns the size of the specified node in pixels.
@@ -213,7 +213,7 @@ object mod {
     * @param {Node} node Node to get the size of.
     * @return {Object} Object with a w and h property.
     */
-  inline def getSize(node: Node): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getSize(node: Node): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(node.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Returns a given computed style of a DOM element.
@@ -223,7 +223,7 @@ object mod {
     * @param {Object} obj DOM element like object.
     * @param {String} name Style you want to get from the DOM element
     */
-  inline def getStyle(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getStyle(obj: Any, name: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Generates an unique ID. This is 99.99% unique since it takes the current time and 5 random numbers.
@@ -246,7 +246,7 @@ object mod {
     * @param {Object} obj DOM element like object to add handler to.
     * @param {String} name Class name
     */
-  inline def hasClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def hasClass(obj: Any, name: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Find an element in array and return its index if present, otherwise return -1.
@@ -257,7 +257,7 @@ object mod {
     * @param {Array} array
     * @return {Int} Index of the element, or -1 if not found
     */
-  inline def inArray(needle: js.Any, array: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(needle.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def inArray(needle: Any, array: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(needle.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     Recieve an array of functions (usually async) to call in sequence, each  function
@@ -270,7 +270,7 @@ object mod {
     @param {Array} queue Array of functions to call in sequence
     @param {Function} cb Main callback that is called in the end, or in case of error
     */
-  inline def inSeries(queue: js.Array[js.Any], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inSeries")(queue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def inSeries(queue: js.Array[Any], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inSeries")(queue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Checks if object is empty.
@@ -280,11 +280,11 @@ object mod {
     * @param {Object} obj Object to check.
     * @return {Boolean}
     */
-  inline def isEmptyObj(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObj")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmptyObj(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObj")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("plupload", "mimeTypes")
   @js.native
-  val mimeTypes: js.Any = js.native
+  val mimeTypes: Any = js.native
   
   inline def parseSize(size: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSize")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
   /**
@@ -307,7 +307,7 @@ object mod {
     * @param {String} [runtimes] Comma-separated list of runtimes to check against
     * @return {String} Type of compatible runtime
     */
-  inline def predictRuntime(config: js.Any, runtimes: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("predictRuntime")(config.asInstanceOf[js.Any], runtimes.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def predictRuntime(config: Any, runtimes: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("predictRuntime")(config.asInstanceOf[js.Any], runtimes.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Remove all kind of events from the specified object
@@ -317,8 +317,8 @@ object mod {
     * @param {Object} obj DOM element to remove event listeners from.
     * @param {String} (optional) unique key to match, when removing events.
     */
-  inline def removeAllEvents(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def removeAllEvents(obj: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def removeAllEvents(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def removeAllEvents(obj: Any, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Removes specified className from specified DOM element.
@@ -328,7 +328,7 @@ object mod {
     * @param {Object} obj DOM element like object to add handler to.
     * @param {String} name Class name
     */
-  inline def removeClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def removeClass(obj: Any, name: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Remove event handler from the specified object. If third argument (callback)
@@ -340,9 +340,9 @@ object mod {
     * @param {String} name Name of event listener to remove.
     * @param {Function|String} (optional) might be a callback or unique key to match.
     */
-  inline def removeEvent(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def removeEvent(obj: js.Any, name: String, optional: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def removeEvent(obj: js.Any, name: String, optional: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def removeEvent(obj: Any, name: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def removeEvent(obj: Any, name: String, optional: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def removeEvent(obj: Any, name: String, optional: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Pseudo sprintf implementation - simple way to replace tokens with specified values.
@@ -360,7 +360,7 @@ object mod {
     * @param {Object} obj Object with length field.
     * @return {Array} Array object containing all items.
     */
-  inline def toArray(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def toArray(obj: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   /**
     * Translates the specified string by checking for the english string in the language pack lookup.
@@ -381,11 +381,11 @@ object mod {
     * @param {Object} o Object to check.
     * @return {String} Object [[Class]]
     */
-  inline def typeOf(o: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(o.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def typeOf(o: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(o.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("plupload", "ua")
   @js.native
-  val ua: js.Any = js.native
+  val ua: Any = js.native
   
   /**
     * Encodes the specified string.

@@ -1,31 +1,20 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.Mode
-import typings.antdMobile.navBarPropsTypeMod.NavBarProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.Shortcut
+import typings.antdMobile.navBarNavBarMod.NavBarProps
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object navBarMod {
+object navBarMod extends Shortcut {
   
-  @JSImport("antd-mobile/lib/nav-bar", JSImport.Default)
+  @JSImport("antd-mobile/es/components/nav-bar", JSImport.Default)
   @js.native
-  class default () extends NavBar
-  /* static members */
-  object default {
-    
-    @JSImport("antd-mobile/lib/nav-bar", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd-mobile/lib/nav-bar", "default.defaultProps")
-    @js.native
-    def defaultProps: Mode = js.native
-    inline def defaultProps_=(x: Mode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val default: FC[NavBarProps] = js.native
   
-  @js.native
-  trait NavBar
-    extends Component[NavBarProps, js.Any, js.Any]
+  type _To = FC[NavBarProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `navBarMod.foo` */
+  override def _to: FC[NavBarProps] = default
 }

@@ -6,10 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("asn1js", "Any")
 @js.native
-class Any () extends StObject {
-  def this(params: AnyParams) = this()
+open class Any ()
+  extends StObject
+     with IAny
+     with _AsnSchemaType {
+  def this(hasNameOptional: AnyParams) = this()
   
+  /* CompleteClass */
   var name: String = js.native
   
+  /* CompleteClass */
   var optional: scala.Boolean = js.native
 }

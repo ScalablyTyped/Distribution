@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.JSONPLoader")
 @js.native
-class JSONPLoader protected ()
+open class JSONPLoader protected ()
   extends StObject
      with typings.preloadjs.createjs.AbstractLoader {
   def this(loadItem: js.Object) = this()

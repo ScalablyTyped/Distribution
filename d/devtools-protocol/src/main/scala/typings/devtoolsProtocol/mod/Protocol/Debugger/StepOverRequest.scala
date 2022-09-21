@@ -24,6 +24,6 @@ object StepOverRequest {
     
     inline def setSkipListUndefined: Self = StObject.set(x, "skipList", js.undefined)
     
-    inline def setSkipListVarargs(value: LocationRange*): Self = StObject.set(x, "skipList", js.Array(value :_*))
+    inline def setSkipListVarargs(value: LocationRange*): Self = StObject.set(x, "skipList", js.Array(value*))
   }
 }

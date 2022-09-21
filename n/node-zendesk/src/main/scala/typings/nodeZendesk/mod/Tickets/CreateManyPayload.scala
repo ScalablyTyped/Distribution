@@ -19,6 +19,6 @@ object CreateManyPayload {
     
     inline def setTickets(value: js.Array[CreateModel]): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     
-    inline def setTicketsVarargs(value: CreateModel*): Self = StObject.set(x, "tickets", js.Array(value :_*))
+    inline def setTicketsVarargs(value: CreateModel*): Self = StObject.set(x, "tickets", js.Array(value*))
   }
 }

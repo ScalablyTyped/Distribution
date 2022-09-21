@@ -5,12 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question for the `InputPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait InputQuestion[T /* <: Answers */]
   extends StObject
      with InputQuestionOptions[T] {

@@ -10,7 +10,7 @@ object bufferTableMod {
   
   @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/BufferTable", "BufferTable")
   @js.native
-  class BufferTable () extends StObject
+  open class BufferTable () extends StObject
   /* static members */
   object BufferTable {
     

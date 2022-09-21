@@ -17,9 +17,9 @@ object timersMod {
   
   inline def clearTimeout(timerID: TIMEOUT_ID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timerID.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setInterval(callback: js.Function1[/* repeated */ js.Any, js.Any], timeoutMS: Double): INTERVAL_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[INTERVAL_ID]
+  inline def setInterval(callback: js.Function1[/* repeated */ Any, Any], timeoutMS: Double): INTERVAL_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[INTERVAL_ID]
   
-  inline def setTimeout(callback: js.Function1[/* repeated */ js.Any, js.Any], timeoutMS: Double): TIMEOUT_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[TIMEOUT_ID]
+  inline def setTimeout(callback: js.Function1[/* repeated */ Any, Any], timeoutMS: Double): TIMEOUT_ID = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], timeoutMS.asInstanceOf[js.Any])).asInstanceOf[TIMEOUT_ID]
   
   type INTERVAL_ID = Double
   

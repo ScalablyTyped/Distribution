@@ -22,7 +22,7 @@ trait ViewOptions extends StObject {
   
   var reload: js.UndefOr[Boolean] = js.undefined
   
-  var scroller: js.UndefOr[js.Any] = js.undefined
+  var scroller: js.UndefOr[Any] = js.undefined
   
   var show: js.UndefOr[js.Function1[/* e */ ViewShowEvent, Unit]] = js.undefined
   
@@ -79,7 +79,7 @@ object ViewOptions {
     
     inline def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
     
-    inline def setScroller(value: js.Any): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
+    inline def setScroller(value: Any): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
     
     inline def setScrollerUndefined: Self = StObject.set(x, "scroller", js.undefined)
     

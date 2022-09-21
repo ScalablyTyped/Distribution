@@ -10,14 +10,14 @@ import typings.hotShots.hotShotsStrings.error
 import typings.hotShots.hotShotsStrings.info
 import typings.hotShots.hotShotsStrings.low
 import typings.hotShots.hotShotsStrings.normal
+import typings.hotShots.hotShotsStrings.stream
 import typings.hotShots.hotShotsStrings.success
 import typings.hotShots.hotShotsStrings.tcp
 import typings.hotShots.hotShotsStrings.udp
 import typings.hotShots.hotShotsStrings.uds
 import typings.hotShots.hotShotsStrings.warning
 import typings.node.dgramMod.Socket
-import typings.std.Date
-import typings.std.Error
+import typings.node.dgramMod.SocketOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,215 +26,215 @@ object mod {
   
   @JSImport("hot-shots", "StatsD")
   @js.native
-  class StatsD () extends StObject {
+  open class StatsD () extends StObject {
     def this(options: ClientOptions) = this()
     
     var CHECKS: DatadogChecks = js.native
     
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Double): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Double): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Double,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Double,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Double, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Double, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Double,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Unit,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Unit, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Unit, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Unit,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Unit, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Tags, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String]): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], sampleRate: Double): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Unit, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Tags, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String]): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], sampleRate: Double): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Double,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Double,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Double,
       tags: Tags
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Double,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Unit,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Unit,
       tags: Tags
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Unit,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncDistTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncDistTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
     
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Double): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Double): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Double,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Double,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Double, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Double, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Double,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Unit,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Unit, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, sampleRate: Unit, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: String,
       sampleRate: Unit,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Unit, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Tags, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String]): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], sampleRate: Double): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Unit, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: String, tags: Tags, callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String]): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], callback: StatsCb): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], sampleRate: Double): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Double,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Double,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Double,
       tags: Tags
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Double,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Unit,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Unit,
       tags: Tags
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       sampleRate: Unit,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
-    def asyncTimer[P /* <: js.Array[js.Any] */, R](
+    def asyncTimer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, js.Promise[R]], stat: js.Array[String], tags: Tags): js.Function1[/* args */ P, js.Promise[R]] = js.native
+    def asyncTimer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, js.Promise[R]],
       stat: js.Array[String],
       tags: Tags,
@@ -253,9 +253,11 @@ object mod {
     def childClient(): StatsD = js.native
     def childClient(options: ChildClientOptions): StatsD = js.native
     
-    def close(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+    def close(): Unit = js.native
+    def close(callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     def decrement(stat: String): Unit = js.native
+    def decrement(stat: String, tags: Tags): Unit = js.native
     def decrement(stat: String, value: Double): Unit = js.native
     def decrement(stat: String, value: Double, callback: StatsCb): Unit = js.native
     def decrement(stat: String, value: Double, sampleRate: Double): Unit = js.native
@@ -471,69 +473,82 @@ object mod {
     
     var socket: Socket = js.native
     
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Double): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Double, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Double): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Double, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, R],
       stat: String,
       sampleRate: Double,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Double, tags: Tags): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Double, tags: Tags): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, R],
       stat: String,
       sampleRate: Double,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Unit, tags: Unit, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Unit, tags: Tags): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Unit, tags: Tags, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, tags: Unit, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, tags: Tags): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: String, tags: Tags, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String]): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], callback: StatsCb): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], sampleRate: Double): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], sampleRate: Double, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Unit, tags: Unit, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Unit, tags: Tags): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, sampleRate: Unit, tags: Tags, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, tags: Unit, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, tags: Tags): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: String, tags: Tags, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String]): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], sampleRate: Double): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], sampleRate: Double, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, R],
       stat: js.Array[String],
       sampleRate: Double,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], sampleRate: Double, tags: Tags): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], sampleRate: Double, tags: Tags): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, R],
       stat: js.Array[String],
       sampleRate: Double,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](
+    def timer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, R],
       stat: js.Array[String],
       sampleRate: Unit,
       tags: Unit,
       callback: StatsCb
     ): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], sampleRate: Unit, tags: Tags): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], sampleRate: Unit, tags: Tags): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](
       func: js.Function1[/* args */ P, R],
       stat: js.Array[String],
       sampleRate: Unit,
       tags: Tags,
       callback: StatsCb
     ): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], tags: Unit, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], tags: Tags): js.Function1[/* args */ P, R] = js.native
-    def timer[P /* <: js.Array[js.Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], tags: Tags, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], tags: Unit, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], tags: Tags): js.Function1[/* args */ P, R] = js.native
+    def timer[P /* <: js.Array[Any] */, R](func: js.Function1[/* args */ P, R], stat: js.Array[String], tags: Tags, callback: StatsCb): js.Function1[/* args */ P, R] = js.native
     
+    def timing(stat: String, value: js.Date): Unit = js.native
+    def timing(stat: String, value: js.Date, callback: StatsCb): Unit = js.native
+    def timing(stat: String, value: js.Date, sampleRate: Double): Unit = js.native
+    def timing(stat: String, value: js.Date, sampleRate: Double, callback: StatsCb): Unit = js.native
+    def timing(stat: String, value: js.Date, sampleRate: Double, tags: Unit, callback: StatsCb): Unit = js.native
+    def timing(stat: String, value: js.Date, sampleRate: Double, tags: Tags): Unit = js.native
+    def timing(stat: String, value: js.Date, sampleRate: Double, tags: Tags, callback: StatsCb): Unit = js.native
+    def timing(stat: String, value: js.Date, sampleRate: Unit, tags: Unit, callback: StatsCb): Unit = js.native
+    def timing(stat: String, value: js.Date, sampleRate: Unit, tags: Tags): Unit = js.native
+    def timing(stat: String, value: js.Date, sampleRate: Unit, tags: Tags, callback: StatsCb): Unit = js.native
+    def timing(stat: String, value: js.Date, tags: Unit, callback: StatsCb): Unit = js.native
+    def timing(stat: String, value: js.Date, tags: Tags): Unit = js.native
+    def timing(stat: String, value: js.Date, tags: Tags, callback: StatsCb): Unit = js.native
     def timing(stat: String, value: Double): Unit = js.native
     def timing(stat: String, value: Double, callback: StatsCb): Unit = js.native
     def timing(stat: String, value: Double, sampleRate: Double): Unit = js.native
@@ -547,19 +562,19 @@ object mod {
     def timing(stat: String, value: Double, tags: Unit, callback: StatsCb): Unit = js.native
     def timing(stat: String, value: Double, tags: Tags): Unit = js.native
     def timing(stat: String, value: Double, tags: Tags, callback: StatsCb): Unit = js.native
-    def timing(stat: String, value: Date): Unit = js.native
-    def timing(stat: String, value: Date, callback: StatsCb): Unit = js.native
-    def timing(stat: String, value: Date, sampleRate: Double): Unit = js.native
-    def timing(stat: String, value: Date, sampleRate: Double, callback: StatsCb): Unit = js.native
-    def timing(stat: String, value: Date, sampleRate: Double, tags: Unit, callback: StatsCb): Unit = js.native
-    def timing(stat: String, value: Date, sampleRate: Double, tags: Tags): Unit = js.native
-    def timing(stat: String, value: Date, sampleRate: Double, tags: Tags, callback: StatsCb): Unit = js.native
-    def timing(stat: String, value: Date, sampleRate: Unit, tags: Unit, callback: StatsCb): Unit = js.native
-    def timing(stat: String, value: Date, sampleRate: Unit, tags: Tags): Unit = js.native
-    def timing(stat: String, value: Date, sampleRate: Unit, tags: Tags, callback: StatsCb): Unit = js.native
-    def timing(stat: String, value: Date, tags: Unit, callback: StatsCb): Unit = js.native
-    def timing(stat: String, value: Date, tags: Tags): Unit = js.native
-    def timing(stat: String, value: Date, tags: Tags, callback: StatsCb): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, callback: StatsCb): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, sampleRate: Double): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, sampleRate: Double, callback: StatsCb): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, sampleRate: Double, tags: Unit, callback: StatsCb): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, sampleRate: Double, tags: Tags): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, sampleRate: Double, tags: Tags, callback: StatsCb): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, sampleRate: Unit, tags: Unit, callback: StatsCb): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, sampleRate: Unit, tags: Tags): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, sampleRate: Unit, tags: Tags, callback: StatsCb): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, tags: Unit, callback: StatsCb): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, tags: Tags): Unit = js.native
+    def timing(stat: js.Array[String], value: js.Date, tags: Tags, callback: StatsCb): Unit = js.native
     def timing(stat: js.Array[String], value: Double): Unit = js.native
     def timing(stat: js.Array[String], value: Double, callback: StatsCb): Unit = js.native
     def timing(stat: js.Array[String], value: Double, sampleRate: Double): Unit = js.native
@@ -573,19 +588,6 @@ object mod {
     def timing(stat: js.Array[String], value: Double, tags: Unit, callback: StatsCb): Unit = js.native
     def timing(stat: js.Array[String], value: Double, tags: Tags): Unit = js.native
     def timing(stat: js.Array[String], value: Double, tags: Tags, callback: StatsCb): Unit = js.native
-    def timing(stat: js.Array[String], value: Date): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, callback: StatsCb): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, sampleRate: Double): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, sampleRate: Double, callback: StatsCb): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, sampleRate: Double, tags: Unit, callback: StatsCb): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, sampleRate: Double, tags: Tags): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, sampleRate: Double, tags: Tags, callback: StatsCb): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, sampleRate: Unit, tags: Unit, callback: StatsCb): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, sampleRate: Unit, tags: Tags): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, sampleRate: Unit, tags: Tags, callback: StatsCb): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, tags: Unit, callback: StatsCb): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, tags: Tags): Unit = js.native
-    def timing(stat: js.Array[String], value: Date, tags: Tags, callback: StatsCb): Unit = js.native
     
     def unique(stat: String, value: String): Unit = js.native
     def unique(stat: String, value: String, callback: StatsCb): Unit = js.native
@@ -643,7 +645,7 @@ object mod {
   
   trait CheckOptions extends StObject {
     
-    var date_happened: js.UndefOr[Date] = js.undefined
+    var date_happened: js.UndefOr[js.Date] = js.undefined
     
     var hostname: js.UndefOr[String] = js.undefined
     
@@ -658,7 +660,7 @@ object mod {
     
     extension [Self <: CheckOptions](x: Self) {
       
-      inline def setDate_happened(value: Date): Self = StObject.set(x, "date_happened", value.asInstanceOf[js.Any])
+      inline def setDate_happened(value: js.Date): Self = StObject.set(x, "date_happened", value.asInstanceOf[js.Any])
       
       inline def setDate_happenedUndefined: Self = StObject.set(x, "date_happened", js.undefined)
       
@@ -693,7 +695,7 @@ object mod {
       
       inline def setGlobalTagsUndefined: Self = StObject.set(x, "globalTags", js.undefined)
       
-      inline def setGlobalTagsVarargs(value: String*): Self = StObject.set(x, "globalTags", js.Array(value :_*))
+      inline def setGlobalTagsVarargs(value: String*): Self = StObject.set(x, "globalTags", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -715,7 +717,9 @@ object mod {
     
     var cacheDnsTtl: js.UndefOr[Double] = js.undefined
     
-    var errorHandler: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var closingFlushInterval: js.UndefOr[Double] = js.undefined
+    
+    var errorHandler: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
     
     var globalTags: js.UndefOr[Tags] = js.undefined
     
@@ -735,7 +739,7 @@ object mod {
     
     var prefix: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[tcp | udp | uds] = js.undefined
+    var protocol: js.UndefOr[tcp | udp | uds | stream] = js.undefined
     
     var sampleRate: js.UndefOr[Double] = js.undefined
     
@@ -747,7 +751,13 @@ object mod {
     
     var tagSeparator: js.UndefOr[String] = js.undefined
     
+    var tcpGracefulErrorHandling: js.UndefOr[Boolean] = js.undefined
+    
+    var tcpGracefulRestartRateLimit: js.UndefOr[Double] = js.undefined
+    
     var telegraf: js.UndefOr[Boolean] = js.undefined
+    
+    var udpSocketOptions: js.UndefOr[SocketOptions] = js.undefined
     
     var udsGracefulErrorHandling: js.UndefOr[Boolean] = js.undefined
     
@@ -780,7 +790,11 @@ object mod {
       
       inline def setCacheDnsUndefined: Self = StObject.set(x, "cacheDns", js.undefined)
       
-      inline def setErrorHandler(value: /* err */ Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setClosingFlushInterval(value: Double): Self = StObject.set(x, "closingFlushInterval", value.asInstanceOf[js.Any])
+      
+      inline def setClosingFlushIntervalUndefined: Self = StObject.set(x, "closingFlushInterval", js.undefined)
+      
+      inline def setErrorHandler(value: /* err */ js.Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
@@ -788,7 +802,7 @@ object mod {
       
       inline def setGlobalTagsUndefined: Self = StObject.set(x, "globalTags", js.undefined)
       
-      inline def setGlobalTagsVarargs(value: String*): Self = StObject.set(x, "globalTags", js.Array(value :_*))
+      inline def setGlobalTagsVarargs(value: String*): Self = StObject.set(x, "globalTags", js.Array(value*))
       
       inline def setGlobalize(value: Boolean): Self = StObject.set(x, "globalize", value.asInstanceOf[js.Any])
       
@@ -822,7 +836,7 @@ object mod {
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      inline def setProtocol(value: tcp | udp | uds): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: tcp | udp | uds | stream): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
@@ -846,9 +860,21 @@ object mod {
       
       inline def setTagSeparatorUndefined: Self = StObject.set(x, "tagSeparator", js.undefined)
       
+      inline def setTcpGracefulErrorHandling(value: Boolean): Self = StObject.set(x, "tcpGracefulErrorHandling", value.asInstanceOf[js.Any])
+      
+      inline def setTcpGracefulErrorHandlingUndefined: Self = StObject.set(x, "tcpGracefulErrorHandling", js.undefined)
+      
+      inline def setTcpGracefulRestartRateLimit(value: Double): Self = StObject.set(x, "tcpGracefulRestartRateLimit", value.asInstanceOf[js.Any])
+      
+      inline def setTcpGracefulRestartRateLimitUndefined: Self = StObject.set(x, "tcpGracefulRestartRateLimit", js.undefined)
+      
       inline def setTelegraf(value: Boolean): Self = StObject.set(x, "telegraf", value.asInstanceOf[js.Any])
       
       inline def setTelegrafUndefined: Self = StObject.set(x, "telegraf", js.undefined)
+      
+      inline def setUdpSocketOptions(value: SocketOptions): Self = StObject.set(x, "udpSocketOptions", value.asInstanceOf[js.Any])
+      
+      inline def setUdpSocketOptionsUndefined: Self = StObject.set(x, "udpSocketOptions", js.undefined)
       
       inline def setUdsGracefulErrorHandling(value: Boolean): Self = StObject.set(x, "udsGracefulErrorHandling", value.asInstanceOf[js.Any])
       
@@ -918,7 +944,7 @@ object mod {
     
     var alert_type: js.UndefOr[info | warning | success | error] = js.undefined
     
-    var date_happened: js.UndefOr[Date] = js.undefined
+    var date_happened: js.UndefOr[js.Date] = js.undefined
     
     var hostname: js.UndefOr[String] = js.undefined
     
@@ -943,7 +969,7 @@ object mod {
       
       inline def setAlert_typeUndefined: Self = StObject.set(x, "alert_type", js.undefined)
       
-      inline def setDate_happened(value: Date): Self = StObject.set(x, "date_happened", value.asInstanceOf[js.Any])
+      inline def setDate_happened(value: js.Date): Self = StObject.set(x, "date_happened", value.asInstanceOf[js.Any])
       
       inline def setDate_happenedUndefined: Self = StObject.set(x, "date_happened", js.undefined)
       
@@ -961,7 +987,7 @@ object mod {
     }
   }
   
-  type StatsCb = js.Function2[/* error */ js.UndefOr[Error], /* bytes */ js.Any, Unit]
+  type StatsCb = js.Function2[/* error */ js.UndefOr[js.Error], /* bytes */ Any, Unit]
   
   type Tags = StringDictionary[String] | js.Array[String]
   

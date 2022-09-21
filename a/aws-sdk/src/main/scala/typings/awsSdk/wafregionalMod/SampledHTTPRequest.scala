@@ -24,7 +24,7 @@ trait SampledHTTPRequest extends StObject {
   /**
     * The time at which AWS WAF received the request from your AWS resource, in Unix time format (in seconds).
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.wafregionalMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A value that indicates how one result in the response relates proportionally to other results in the response. A result that has a weight of 2 represents roughly twice as many CloudFront web requests as a result that has a weight of 1.
@@ -50,7 +50,7 @@ object SampledHTTPRequest {
     
     inline def setRuleWithinRuleGroupUndefined: Self = StObject.set(x, "RuleWithinRuleGroup", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     

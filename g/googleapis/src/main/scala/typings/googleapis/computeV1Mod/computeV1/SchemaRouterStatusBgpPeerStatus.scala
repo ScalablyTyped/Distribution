@@ -11,51 +11,57 @@ trait SchemaRouterStatusBgpPeerStatus extends StObject {
     */
   var advertisedRoutes: js.UndefOr[js.Array[SchemaRoute]] = js.undefined
   
+  var bfdStatus: js.UndefOr[SchemaBfdStatus] = js.undefined
+  
   /**
     * IP address of the local BGP interface.
     */
-  var ipAddress: js.UndefOr[String] = js.undefined
+  var ipAddress: js.UndefOr[String | Null] = js.undefined
   
   /**
     * URL of the VPN tunnel that this BGP peer controls.
     */
-  var linkedVpnTunnel: js.UndefOr[String] = js.undefined
+  var linkedVpnTunnel: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Name of this BGP peer. Unique within the Routers resource.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Number of routes learned from the remote BGP Peer.
     */
-  var numLearnedRoutes: js.UndefOr[Double] = js.undefined
+  var numLearnedRoutes: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * IP address of the remote BGP interface.
     */
-  var peerIpAddress: js.UndefOr[String] = js.undefined
+  var peerIpAddress: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * BGP state as specified in RFC1771.
+    * [Output only] URI of the VM instance that is used as third-party router appliances such as Next Gen Firewalls, Virtual Routers, or Router Appliances. The VM instance is the peer side of the BGP session.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var routerApplianceInstance: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Status of the BGP peer: {UP, DOWN}
+    * The state of the BGP session. For a list of possible values for this field, see BGP session states.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Time this session has been up. Format: 14 years, 51 weeks, 6 days, 23
-    * hours, 59 minutes, 59 seconds
+    * Status of the BGP peer: {UP, DOWN\}
     */
-  var uptime: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Time this session has been up. Format: 14 years, 51 weeks, 6 days, 23 hours, 59 minutes, 59 seconds
+    */
+  var uptime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Time this session has been up, in seconds. Format: 145
     */
-  var uptimeSeconds: js.UndefOr[String] = js.undefined
+  var uptimeSeconds: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRouterStatusBgpPeerStatus {
   
@@ -70,39 +76,67 @@ object SchemaRouterStatusBgpPeerStatus {
     
     inline def setAdvertisedRoutesUndefined: Self = StObject.set(x, "advertisedRoutes", js.undefined)
     
-    inline def setAdvertisedRoutesVarargs(value: SchemaRoute*): Self = StObject.set(x, "advertisedRoutes", js.Array(value :_*))
+    inline def setAdvertisedRoutesVarargs(value: SchemaRoute*): Self = StObject.set(x, "advertisedRoutes", js.Array(value*))
+    
+    inline def setBfdStatus(value: SchemaBfdStatus): Self = StObject.set(x, "bfdStatus", value.asInstanceOf[js.Any])
+    
+    inline def setBfdStatusUndefined: Self = StObject.set(x, "bfdStatus", js.undefined)
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressNull: Self = StObject.set(x, "ipAddress", null)
     
     inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     inline def setLinkedVpnTunnel(value: String): Self = StObject.set(x, "linkedVpnTunnel", value.asInstanceOf[js.Any])
     
+    inline def setLinkedVpnTunnelNull: Self = StObject.set(x, "linkedVpnTunnel", null)
+    
     inline def setLinkedVpnTunnelUndefined: Self = StObject.set(x, "linkedVpnTunnel", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNumLearnedRoutes(value: Double): Self = StObject.set(x, "numLearnedRoutes", value.asInstanceOf[js.Any])
     
+    inline def setNumLearnedRoutesNull: Self = StObject.set(x, "numLearnedRoutes", null)
+    
     inline def setNumLearnedRoutesUndefined: Self = StObject.set(x, "numLearnedRoutes", js.undefined)
     
     inline def setPeerIpAddress(value: String): Self = StObject.set(x, "peerIpAddress", value.asInstanceOf[js.Any])
     
+    inline def setPeerIpAddressNull: Self = StObject.set(x, "peerIpAddress", null)
+    
     inline def setPeerIpAddressUndefined: Self = StObject.set(x, "peerIpAddress", js.undefined)
     
+    inline def setRouterApplianceInstance(value: String): Self = StObject.set(x, "routerApplianceInstance", value.asInstanceOf[js.Any])
+    
+    inline def setRouterApplianceInstanceNull: Self = StObject.set(x, "routerApplianceInstance", null)
+    
+    inline def setRouterApplianceInstanceUndefined: Self = StObject.set(x, "routerApplianceInstance", js.undefined)
+    
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     inline def setUptime(value: String): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
     
+    inline def setUptimeNull: Self = StObject.set(x, "uptime", null)
+    
     inline def setUptimeSeconds(value: String): Self = StObject.set(x, "uptimeSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setUptimeSecondsNull: Self = StObject.set(x, "uptimeSeconds", null)
     
     inline def setUptimeSecondsUndefined: Self = StObject.set(x, "uptimeSeconds", js.undefined)
     

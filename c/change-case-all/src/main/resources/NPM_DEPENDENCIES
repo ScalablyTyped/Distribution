@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "change-case-all" : "1.0.15"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "change-case-all" : "1.0.15"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

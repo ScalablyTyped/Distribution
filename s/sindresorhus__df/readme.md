@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__df
 
-Typings are for version 3.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Get free disk space info from `df -kP`
@@ -10,10 +10,10 @@ Get free disk space info from `df -kP`
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/df |
 | Keywords           | df, dfkp, df-kp, disk, space, free, info, data, fs, filesystem, file-system, drive, mount, size, capacity |
-| # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 4820462 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 587552.6666666666 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/df#readme)

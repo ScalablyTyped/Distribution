@@ -12,7 +12,7 @@ abstract class Clock () extends StObject {
   
   def millis(): Double = js.native
   
-  def zone(): js.Any = js.native
+  def zone(): Any = js.native
 }
 object Clock {
   

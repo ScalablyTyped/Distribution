@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html)
   */
-class LineOfSightCls ()
+open class LineOfSightCls ()
   extends StObject
      with typings.arcgisJsApi.esri.LineOfSight {
   def this(properties: LineOfSightProperties) = this()

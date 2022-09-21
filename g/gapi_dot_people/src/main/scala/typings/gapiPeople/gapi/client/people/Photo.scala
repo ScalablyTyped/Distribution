@@ -6,18 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Photo extends StObject {
   
+  var default: Boolean
+  
   var metadata: FieldMetadata
   
   var url: String
 }
 object Photo {
   
-  inline def apply(metadata: FieldMetadata, url: String): Photo = {
-    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(default: Boolean, metadata: FieldMetadata, url: String): Photo = {
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Photo]
   }
   
   extension [Self <: Photo](x: Self) {
+    
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

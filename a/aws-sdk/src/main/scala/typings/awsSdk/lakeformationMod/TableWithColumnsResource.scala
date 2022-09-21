@@ -48,7 +48,7 @@ object TableWithColumnsResource {
     
     inline def setColumnNamesUndefined: Self = StObject.set(x, "ColumnNames", js.undefined)
     
-    inline def setColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ColumnNames", js.Array(value :_*))
+    inline def setColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ColumnNames", js.Array(value*))
     
     inline def setColumnWildcard(value: ColumnWildcard): Self = StObject.set(x, "ColumnWildcard", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ A <Modal/> component for react-native
 | ------------------ | :-------------: |
 | Full name          | react-native-modalbox |
 | Keywords           | react-component, react-native, ios, android, modal, box, modalbox, window, swipe |
-| # releases         | 6 |
-| # dependents       | 36 |
-| # downloads        | 641661 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 61872.666666666664 |
+| # stars            | 2807.0 |
 
 ## Links
 - [Homepage](https://github.com/maxs15/react-native-modalbox#readme)

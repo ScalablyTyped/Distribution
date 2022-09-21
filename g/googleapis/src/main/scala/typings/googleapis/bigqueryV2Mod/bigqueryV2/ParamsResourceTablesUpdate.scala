@@ -1,9 +1,5 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +9,9 @@ trait ParamsResourceTablesUpdate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * When true will autodetect schema, else will keep original schema
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var autodetect_schema: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Dataset ID of the table to update
@@ -46,9 +42,9 @@ object ParamsResourceTablesUpdate {
   
   extension [Self <: ParamsResourceTablesUpdate](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAutodetect_schema(value: Boolean): Self = StObject.set(x, "autodetect_schema", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAutodetect_schemaUndefined: Self = StObject.set(x, "autodetect_schema", js.undefined)
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

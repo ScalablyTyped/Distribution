@@ -10,10 +10,10 @@ object directionsBoatMod {
   
   @JSImport("material-ui/svg-icons/maps/directions-boat", JSImport.Default)
   @js.native
-  class default () extends MapsDirectionsBoat
+  open class default () extends MapsDirectionsBoat
   
   @JSImport("material-ui/svg-icons/maps/directions-boat", "MapsDirectionsBoat")
   @js.native
-  class MapsDirectionsBoat ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsDirectionsBoat ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

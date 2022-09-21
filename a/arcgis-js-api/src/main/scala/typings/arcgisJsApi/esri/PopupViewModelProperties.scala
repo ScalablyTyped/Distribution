@@ -1,5 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.ActionButtonPropertiestyp
+import typings.arcgisJsApi.anon.ActionTogglePropertiestyp
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,10 +18,12 @@ trait PopupViewModelProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#actions)
     */
-  var actions: js.UndefOr[CollectionProperties[ActionButtonProperties | ActionToggleProperties]] = js.undefined
+  var actions: js.UndefOr[CollectionProperties[ActionButtonPropertiestyp | ActionTogglePropertiestyp]] = js.undefined
   
   /**
     * This closes the popup when the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) camera or [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) changes.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#autoCloseEnabled)
     */
@@ -26,9 +32,20 @@ trait PopupViewModelProperties
   /**
     * This property indicates to the `Popup` that it needs to allow or disallow the click event propagation.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#autoOpenEnabled)
     */
   var autoOpenEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates if the "Browse features" experience is active in a [cluster](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html) popup.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#browseClusterEnabled)
+    */
+  var browseClusterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The content of the popup.
@@ -40,9 +57,18 @@ trait PopupViewModelProperties
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#defaultPopupTemplateEnabled)
     */
   var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Defines the specific [abilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#Abilities) that the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) widget should use when querying and displaying its content.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#featureViewModelAbilities)
+    */
+  var featureViewModelAbilities: js.UndefOr[FeatureViewModelAbilities] = js.undefined
   
   /**
     * An array of features associated with the popup.
@@ -52,11 +78,31 @@ trait PopupViewModelProperties
   var features: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
   
   /**
+    * The number of features to fetch at one time.
+    *
+    * @default 20
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#featuresPerPage)
+    */
+  var featuresPerPage: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Highlight the selected popup feature using the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions) set on the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions) set on the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#highlightEnabled)
     */
   var highlightEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether or not to include [defaultActions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#defaultActions) in the Popup's UI.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#includeDefaultActions)
+    */
+  var includeDefaultActions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Geometry used to position the popup.
@@ -70,7 +116,7 @@ trait PopupViewModelProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#promises)
     */
-  var promises: js.UndefOr[js.Array[js.Promise[js.Any]]] = js.undefined
+  var promises: js.UndefOr[js.Array[js.Promise[Any]]] = js.undefined
   
   /**
     * Index of the feature that is [selected](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeature).
@@ -91,10 +137,12 @@ trait PopupViewModelProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * Indicates whether the popup is visible.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#visible)
     */
@@ -109,11 +157,11 @@ object PopupViewModelProperties {
   
   extension [Self <: PopupViewModelProperties](x: Self) {
     
-    inline def setActions(value: CollectionProperties[ActionButtonProperties | ActionToggleProperties]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: CollectionProperties[ActionButtonPropertiestyp | ActionTogglePropertiestyp]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: (ActionButtonProperties | ActionToggleProperties)*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (ActionButtonPropertiestyp | ActionTogglePropertiestyp)*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAutoCloseEnabled(value: Boolean): Self = StObject.set(x, "autoCloseEnabled", value.asInstanceOf[js.Any])
     
@@ -123,6 +171,10 @@ object PopupViewModelProperties {
     
     inline def setAutoOpenEnabledUndefined: Self = StObject.set(x, "autoOpenEnabled", js.undefined)
     
+    inline def setBrowseClusterEnabled(value: Boolean): Self = StObject.set(x, "browseClusterEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setBrowseClusterEnabledUndefined: Self = StObject.set(x, "browseClusterEnabled", js.undefined)
+    
     inline def setContent(value: String | HTMLElement | WidgetProperties): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
@@ -131,25 +183,37 @@ object PopupViewModelProperties {
     
     inline def setDefaultPopupTemplateEnabledUndefined: Self = StObject.set(x, "defaultPopupTemplateEnabled", js.undefined)
     
+    inline def setFeatureViewModelAbilities(value: FeatureViewModelAbilities): Self = StObject.set(x, "featureViewModelAbilities", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureViewModelAbilitiesUndefined: Self = StObject.set(x, "featureViewModelAbilities", js.undefined)
+    
     inline def setFeatures(value: js.Array[GraphicProperties]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesPerPage(value: Double): Self = StObject.set(x, "featuresPerPage", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesPerPageUndefined: Self = StObject.set(x, "featuresPerPage", js.undefined)
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "highlightEnabled", value.asInstanceOf[js.Any])
     
     inline def setHighlightEnabledUndefined: Self = StObject.set(x, "highlightEnabled", js.undefined)
     
+    inline def setIncludeDefaultActions(value: Boolean): Self = StObject.set(x, "includeDefaultActions", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeDefaultActionsUndefined: Self = StObject.set(x, "includeDefaultActions", js.undefined)
+    
     inline def setLocation(value: PointProperties): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setPromises(value: js.Array[js.Promise[js.Any]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
+    inline def setPromises(value: js.Array[js.Promise[Any]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
     
     inline def setPromisesUndefined: Self = StObject.set(x, "promises", js.undefined)
     
-    inline def setPromisesVarargs(value: js.Promise[js.Any]*): Self = StObject.set(x, "promises", js.Array(value :_*))
+    inline def setPromisesVarargs(value: js.Promise[Any]*): Self = StObject.set(x, "promises", js.Array(value*))
     
     inline def setSelectedFeatureIndex(value: Double): Self = StObject.set(x, "selectedFeatureIndex", value.asInstanceOf[js.Any])
     
@@ -159,7 +223,7 @@ object PopupViewModelProperties {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     

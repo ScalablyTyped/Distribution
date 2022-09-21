@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_Worker")
 @js.native
-class ClassWorker protected ()
+open class ClassWorker protected ()
   extends StObject
      with typings.fibjs.ClassWorker {
   /**

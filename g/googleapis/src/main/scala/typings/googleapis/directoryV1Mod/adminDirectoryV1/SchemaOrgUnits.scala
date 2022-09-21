@@ -4,24 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON response template for List Organization Units operation in Directory
-  * API.
-  */
 trait SchemaOrgUnits extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Kind of resource this is.
+    * The type of the API resource. For Org Unit resources, the type is `admin#directory#orgUnits`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * List of user objects.
+    * List of organizational unit objects.
     */
   var organizationUnits: js.UndefOr[js.Array[SchemaOrgUnit]] = js.undefined
 }
@@ -36,9 +32,13 @@ object SchemaOrgUnits {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -46,6 +46,6 @@ object SchemaOrgUnits {
     
     inline def setOrganizationUnitsUndefined: Self = StObject.set(x, "organizationUnits", js.undefined)
     
-    inline def setOrganizationUnitsVarargs(value: SchemaOrgUnit*): Self = StObject.set(x, "organizationUnits", js.Array(value :_*))
+    inline def setOrganizationUnitsVarargs(value: SchemaOrgUnit*): Self = StObject.set(x, "organizationUnits", js.Array(value*))
   }
 }

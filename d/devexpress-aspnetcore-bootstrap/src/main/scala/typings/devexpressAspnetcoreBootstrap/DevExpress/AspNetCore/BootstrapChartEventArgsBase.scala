@@ -8,21 +8,21 @@ trait BootstrapChartEventArgsBase
   extends StObject
      with EventArgs {
   
-  val component: js.Any
+  val component: Any
   
-  val element: js.Any
+  val element: Any
 }
 object BootstrapChartEventArgsBase {
   
-  inline def apply(component: js.Any, element: js.Any, sender: Control): BootstrapChartEventArgsBase = {
+  inline def apply(component: Any, element: Any, sender: Control): BootstrapChartEventArgsBase = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapChartEventArgsBase]
   }
   
   extension [Self <: BootstrapChartEventArgsBase](x: Self) {
     
-    inline def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

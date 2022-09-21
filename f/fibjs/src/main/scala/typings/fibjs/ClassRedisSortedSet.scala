@@ -22,7 +22,7 @@ trait ClassRedisSortedSet
     * 
     * 
     */
-  def add(sms: js.Any*): Double = js.native
+  def add(sms: Any*): Double = js.native
   /**
     * 
     * @brief 将一个或多个 member 元素及其 score 值加入到有序集当中
@@ -75,8 +75,8 @@ trait ClassRedisSortedSet
     * 
     * 
     */
-  def range(start: Double, stop: Double): js.Array[js.Any] = js.native
-  def range(start: Double, stop: Double, withScores: Boolean): js.Array[js.Any] = js.native
+  def range(start: Double, stop: Double): js.Array[Any] = js.native
+  def range(start: Double, stop: Double, withScores: Boolean): js.Array[Any] = js.native
   
   /**
     * 
@@ -88,8 +88,8 @@ trait ClassRedisSortedSet
     * 
     * 
     */
-  def rangeRev(start: Double, stop: Double): js.Array[js.Any] = js.native
-  def rangeRev(start: Double, stop: Double, withScores: Boolean): js.Array[js.Any] = js.native
+  def rangeRev(start: Double, stop: Double): js.Array[Any] = js.native
+  def rangeRev(start: Double, stop: Double, withScores: Boolean): js.Array[Any] = js.native
   
   /**
     * 
@@ -119,7 +119,7 @@ trait ClassRedisSortedSet
     * 
     * 
     */
-  def remove(members: js.Any*): Double = js.native
+  def remove(members: Any*): Double = js.native
   /**
     * 
     * @brief 移除有序集中的一个或多个 member 元素
@@ -128,7 +128,7 @@ trait ClassRedisSortedSet
     * 
     * 
     */
-  def remove(members: js.Array[js.Any]): Double = js.native
+  def remove(members: js.Array[Any]): Double = js.native
   
   /**
     * 

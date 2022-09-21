@@ -19,6 +19,6 @@ object WorkerVersionUpdatedEvent {
     
     inline def setVersions(value: js.Array[ServiceWorkerVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    inline def setVersionsVarargs(value: ServiceWorkerVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: ServiceWorkerVersion*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

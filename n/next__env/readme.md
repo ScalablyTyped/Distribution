@@ -1,7 +1,7 @@
 
 # Scala.js typings for next__env
 
-Typings are for version 10.0.2
+Typings are for version 12.3.1
 
 ## Library description:
 Next.js dotenv file loading
@@ -10,10 +10,10 @@ Next.js dotenv file loading
 | ------------------ | :-------------: |
 | Full name          | @next/env |
 | Keywords           | react, next, next.js, dotenv |
-| # releases         | 121 |
-| # dependents       | 8 |
-| # downloads        | 12237395 |
-| # stars            | 0 |
+| # releases         | 685 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2207705333333334E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/vercel/next.js#readme)

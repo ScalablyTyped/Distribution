@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SliderOptions extends StObject {
+trait SliderOptions
+  extends StObject
+     with AllEditorOptions {
   
   var change: js.UndefOr[js.Function1[/* e */ SliderChangeEvent, Unit]] = js.undefined
   

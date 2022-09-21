@@ -42,6 +42,6 @@ object InputPrepareScheduleActionSettings {
     
     inline def setUrlPathUndefined: Self = StObject.set(x, "UrlPath", js.undefined)
     
-    inline def setUrlPathVarargs(value: string*): Self = StObject.set(x, "UrlPath", js.Array(value :_*))
+    inline def setUrlPathVarargs(value: string*): Self = StObject.set(x, "UrlPath", js.Array(value*))
   }
 }

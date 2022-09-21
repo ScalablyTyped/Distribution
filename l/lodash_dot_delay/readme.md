@@ -10,10 +10,10 @@ The lodash method `_.delay` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.delay |
 | Keywords           | lodash-modularized, delay |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 478895 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51389.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

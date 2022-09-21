@@ -11,7 +11,7 @@ object lintMod {
   
   @JSImport("gitlab/dist/types/core/services/Lint", "Lint")
   @js.native
-  class Lint () extends BaseService {
+  open class Lint () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def lint(content: String): js.Promise[js.Object] = js.native

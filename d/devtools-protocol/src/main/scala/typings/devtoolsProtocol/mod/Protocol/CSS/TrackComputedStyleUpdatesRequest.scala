@@ -19,6 +19,6 @@ object TrackComputedStyleUpdatesRequest {
     
     inline def setPropertiesToTrack(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "propertiesToTrack", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesToTrackVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "propertiesToTrack", js.Array(value :_*))
+    inline def setPropertiesToTrackVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "propertiesToTrack", js.Array(value*))
   }
 }

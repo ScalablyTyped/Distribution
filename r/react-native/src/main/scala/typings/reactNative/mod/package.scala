@@ -1,180 +1,184 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.BaseSyntheticEvent
+import typings.react.mod.Component
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.ComponentType
+import typings.react.mod.ElementType
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
+import typings.reactNative.anon.Layout
+import typings.reactNative.anon.ReadonlyactionNamestring
+import typings.reactNative.mod.^
+import typings.reactNative.reactNativeBooleans.`false`
+import typings.reactNative.reactNativeStrings.`visible-password`
+import typings.reactNative.reactNativeStrings.announcementFinished
+import typings.reactNative.reactNativeStrings.hardwareBackPress
+import typings.std.Exclude
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ART = typings.reactNative.mod.ARTStatic
+inline def AccessibilityInfo: AccessibilityInfoStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("AccessibilityInfo").asInstanceOf[AccessibilityInfoStatic]
+type AccessibilityInfo = AccessibilityInfoStatic
 
-inline def AccessibilityInfo: typings.reactNative.mod.AccessibilityInfoStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AccessibilityInfo").asInstanceOf[typings.reactNative.mod.AccessibilityInfoStatic]
-type AccessibilityInfo = typings.reactNative.mod.AccessibilityInfoStatic
+inline def ActionSheetIOS: ActionSheetIOSStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("ActionSheetIOS").asInstanceOf[ActionSheetIOSStatic]
+type ActionSheetIOS = ActionSheetIOSStatic
 
-inline def ActionSheetIOS: typings.reactNative.mod.ActionSheetIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ActionSheetIOS").asInstanceOf[typings.reactNative.mod.ActionSheetIOSStatic]
-type ActionSheetIOS = typings.reactNative.mod.ActionSheetIOSStatic
+inline def Alert: AlertStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Alert").asInstanceOf[AlertStatic]
+type Alert = AlertStatic
 
-inline def Alert: typings.reactNative.mod.AlertStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Alert").asInstanceOf[typings.reactNative.mod.AlertStatic]
-type Alert = typings.reactNative.mod.AlertStatic
+inline def AppState: AppStateStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("AppState").asInstanceOf[AppStateStatic]
+type AppState = AppStateStatic
 
-inline def AppState: typings.reactNative.mod.AppStateStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AppState").asInstanceOf[typings.reactNative.mod.AppStateStatic]
-type AppState = typings.reactNative.mod.AppStateStatic
+inline def AsyncStorage: AsyncStorageStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("AsyncStorage").asInstanceOf[AsyncStorageStatic]
+type AsyncStorage = AsyncStorageStatic
 
-inline def AsyncStorage: typings.reactNative.mod.AsyncStorageStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AsyncStorage").asInstanceOf[typings.reactNative.mod.AsyncStorageStatic]
-type AsyncStorage = typings.reactNative.mod.AsyncStorageStatic
+inline def BackHandler: BackHandlerStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("BackHandler").asInstanceOf[BackHandlerStatic]
+type BackHandler = BackHandlerStatic
 
-inline def BackHandler: typings.reactNative.mod.BackHandlerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BackHandler").asInstanceOf[typings.reactNative.mod.BackHandlerStatic]
-type BackHandler = typings.reactNative.mod.BackHandlerStatic
+inline def CameraRoll: CameraRollStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("CameraRoll").asInstanceOf[CameraRollStatic]
+type CameraRoll = CameraRollStatic
 
-inline def CameraRoll: typings.reactNative.mod.CameraRollStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CameraRoll").asInstanceOf[typings.reactNative.mod.CameraRollStatic]
-type CameraRoll = typings.reactNative.mod.CameraRollStatic
+inline def Clipboard: ClipboardStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Clipboard").asInstanceOf[ClipboardStatic]
+type Clipboard = ClipboardStatic
 
-inline def Clipboard: typings.reactNative.mod.ClipboardStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Clipboard").asInstanceOf[typings.reactNative.mod.ClipboardStatic]
-type Clipboard = typings.reactNative.mod.ClipboardStatic
+inline def DatePickerAndroid: DatePickerAndroidStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("DatePickerAndroid").asInstanceOf[DatePickerAndroidStatic]
+type DatePickerAndroid = DatePickerAndroidStatic
 
-inline def ColorPropType: typings.react.mod.Validator[java.lang.String] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ColorPropType").asInstanceOf[typings.react.mod.Validator[java.lang.String]]
+inline def DevSettings: DevSettingsStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("DevSettings").asInstanceOf[DevSettingsStatic]
 
-inline def DatePickerAndroid: typings.reactNative.mod.DatePickerAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DatePickerAndroid").asInstanceOf[typings.reactNative.mod.DatePickerAndroidStatic]
-type DatePickerAndroid = typings.reactNative.mod.DatePickerAndroidStatic
+inline def DynamicColorIOS(tuple: DynamicColorIOSTuple): OpaqueColorValue = ^.asInstanceOf[js.Dynamic].applyDynamic("DynamicColorIOS")(tuple.asInstanceOf[js.Any]).asInstanceOf[OpaqueColorValue]
 
-inline def DevSettings: typings.reactNative.mod.DevSettingsStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DevSettings").asInstanceOf[typings.reactNative.mod.DevSettingsStatic]
+inline def Easing: EasingStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Easing").asInstanceOf[EasingStatic]
+type Easing = EasingStatic
 
-inline def DynamicColorIOS(tuple: typings.reactNative.mod.DynamicColorIOSTuple): typings.reactNative.mod.OpaqueColorValue = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DynamicColorIOS")(tuple.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.OpaqueColorValue]
+inline def I18nManager: I18nManagerStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("I18nManager").asInstanceOf[I18nManagerStatic]
+type I18nManager = I18nManagerStatic
 
-inline def Easing: typings.reactNative.mod.EasingStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Easing").asInstanceOf[typings.reactNative.mod.EasingStatic]
-type Easing = typings.reactNative.mod.EasingStatic
+inline def ImageEditor: ImageEditorStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("ImageEditor").asInstanceOf[ImageEditorStatic]
+type ImageEditor = ImageEditorStatic
 
-inline def EdgeInsetsPropType: typings.react.mod.Validator[typings.reactNative.mod.Insets] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EdgeInsetsPropType").asInstanceOf[typings.react.mod.Validator[typings.reactNative.mod.Insets]]
+inline def ImagePickerIOS: ImagePickerIOSStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("ImagePickerIOS").asInstanceOf[ImagePickerIOSStatic]
+type ImagePickerIOS = ImagePickerIOSStatic
 
-inline def I18nManager: typings.reactNative.mod.I18nManagerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("I18nManager").asInstanceOf[typings.reactNative.mod.I18nManagerStatic]
-type I18nManager = typings.reactNative.mod.I18nManagerStatic
+inline def ImageStore: ImageStoreStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("ImageStore").asInstanceOf[ImageStoreStatic]
+type ImageStore = ImageStoreStatic
 
-inline def ImageEditor: typings.reactNative.mod.ImageEditorStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImageEditor").asInstanceOf[typings.reactNative.mod.ImageEditorStatic]
-type ImageEditor = typings.reactNative.mod.ImageEditorStatic
+inline def InteractionManager: InteractionManagerStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("InteractionManager").asInstanceOf[InteractionManagerStatic]
 
-inline def ImagePickerIOS: typings.reactNative.mod.ImagePickerIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImagePickerIOS").asInstanceOf[typings.reactNative.mod.ImagePickerIOSStatic]
-type ImagePickerIOS = typings.reactNative.mod.ImagePickerIOSStatic
+inline def Keyboard: KeyboardStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Keyboard").asInstanceOf[KeyboardStatic]
 
-inline def ImageStore: typings.reactNative.mod.ImageStoreStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImageStore").asInstanceOf[typings.reactNative.mod.ImageStoreStatic]
-type ImageStore = typings.reactNative.mod.ImageStoreStatic
+inline def LayoutAnimation: LayoutAnimationStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("LayoutAnimation").asInstanceOf[LayoutAnimationStatic]
+type LayoutAnimation = LayoutAnimationStatic
 
-inline def InteractionManager: typings.reactNative.mod.InteractionManagerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InteractionManager").asInstanceOf[typings.reactNative.mod.InteractionManagerStatic]
+inline def Linking: LinkingStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Linking").asInstanceOf[LinkingStatic]
+type Linking = LinkingStatic
 
-inline def Keyboard: typings.reactNative.mod.KeyboardStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Keyboard").asInstanceOf[typings.reactNative.mod.KeyboardStatic]
+inline def LogBox: LogBoxStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("LogBox").asInstanceOf[LogBoxStatic]
+type LogBox = LogBoxStatic
 
-inline def LayoutAnimation: typings.reactNative.mod.LayoutAnimationStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LayoutAnimation").asInstanceOf[typings.reactNative.mod.LayoutAnimationStatic]
-type LayoutAnimation = typings.reactNative.mod.LayoutAnimationStatic
+inline def NativeModules: NativeModulesStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("NativeModules").asInstanceOf[NativeModulesStatic]
 
-inline def Linking: typings.reactNative.mod.LinkingStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Linking").asInstanceOf[typings.reactNative.mod.LinkingStatic]
-type Linking = typings.reactNative.mod.LinkingStatic
+inline def PanResponder: PanResponderStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("PanResponder").asInstanceOf[PanResponderStatic]
+type PanResponder = PanResponderStatic
 
-inline def LogBox: typings.reactNative.mod.LogBoxStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LogBox").asInstanceOf[typings.reactNative.mod.LogBoxStatic]
-type LogBox = typings.reactNative.mod.LogBoxStatic
+inline def PermissionsAndroid: PermissionsAndroidStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("PermissionsAndroid").asInstanceOf[PermissionsAndroidStatic]
+type PermissionsAndroid = PermissionsAndroidStatic
 
-inline def NativeModules: typings.reactNative.mod.NativeModulesStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NativeModules").asInstanceOf[typings.reactNative.mod.NativeModulesStatic]
+inline def PixelRatio: PixelRatioStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("PixelRatio").asInstanceOf[PixelRatioStatic]
 
-inline def PanResponder: typings.reactNative.mod.PanResponderStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PanResponder").asInstanceOf[typings.reactNative.mod.PanResponderStatic]
-type PanResponder = typings.reactNative.mod.PanResponderStatic
+inline def Platform: PlatformIOSStatic | PlatformAndroidStatic | PlatformWindowsOSStatic | PlatformMacOSStatic | PlatformWebStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Platform").asInstanceOf[PlatformIOSStatic | PlatformAndroidStatic | PlatformWindowsOSStatic | PlatformMacOSStatic | PlatformWebStatic]
 
-inline def PermissionsAndroid: typings.reactNative.mod.PermissionsAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PermissionsAndroid").asInstanceOf[typings.reactNative.mod.PermissionsAndroidStatic]
-type PermissionsAndroid = typings.reactNative.mod.PermissionsAndroidStatic
+inline def PlatformColor(colors: String*): OpaqueColorValue = ^.asInstanceOf[js.Dynamic].applyDynamic("PlatformColor")(colors.asInstanceOf[Seq[js.Any]]*).asInstanceOf[OpaqueColorValue]
 
-inline def PixelRatio: typings.reactNative.mod.PixelRatioStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PixelRatio").asInstanceOf[typings.reactNative.mod.PixelRatioStatic]
+inline def Pressable: ForwardRefExoticComponent[PressableProps & RefAttributes[View]] = ^.asInstanceOf[js.Dynamic].selectDynamic("Pressable").asInstanceOf[ForwardRefExoticComponent[PressableProps & RefAttributes[View]]]
 
-inline def Platform: typings.reactNative.mod.PlatformIOSStatic | typings.reactNative.mod.PlatformAndroidStatic | typings.reactNative.mod.PlatformWindowsOSStatic | typings.reactNative.mod.PlatformMacOSStatic | typings.reactNative.mod.PlatformWebStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Platform").asInstanceOf[typings.reactNative.mod.PlatformIOSStatic | typings.reactNative.mod.PlatformAndroidStatic | typings.reactNative.mod.PlatformWindowsOSStatic | typings.reactNative.mod.PlatformMacOSStatic | typings.reactNative.mod.PlatformWebStatic]
+inline def PushNotificationIOS: PushNotificationIOSStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("PushNotificationIOS").asInstanceOf[PushNotificationIOSStatic]
+type PushNotificationIOS = PushNotificationIOSStatic
 
-inline def PlatformColor(colors: java.lang.String*): typings.reactNative.mod.OpaqueColorValue = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PlatformColor")(colors.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.OpaqueColorValue]
+inline def Settings: SettingsStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Settings").asInstanceOf[SettingsStatic]
+type Settings = SettingsStatic
 
-inline def Pressable: typings.react.mod.ForwardRefExoticComponent[
-typings.reactNative.mod.PressableProps & typings.react.mod.RefAttributes[typings.reactNative.mod.View]] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Pressable").asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.reactNative.mod.PressableProps & typings.react.mod.RefAttributes[typings.reactNative.mod.View]]]
+inline def ShadowPropTypesIOS: ShadowPropTypesIOSStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("ShadowPropTypesIOS").asInstanceOf[ShadowPropTypesIOSStatic]
 
-inline def PushNotificationIOS: typings.reactNative.mod.PushNotificationIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PushNotificationIOS").asInstanceOf[typings.reactNative.mod.PushNotificationIOSStatic]
-type PushNotificationIOS = typings.reactNative.mod.PushNotificationIOSStatic
+inline def Share: ShareStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Share").asInstanceOf[ShareStatic]
+type Share = ShareStatic
 
-inline def Settings: typings.reactNative.mod.SettingsStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Settings").asInstanceOf[typings.reactNative.mod.SettingsStatic]
-type Settings = typings.reactNative.mod.SettingsStatic
+inline def Systrace: SystraceStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Systrace").asInstanceOf[SystraceStatic]
+type Systrace = SystraceStatic
 
-inline def ShadowPropTypesIOS: typings.reactNative.mod.ShadowPropTypesIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShadowPropTypesIOS").asInstanceOf[typings.reactNative.mod.ShadowPropTypesIOSStatic]
+inline def TimePickerAndroid: TimePickerAndroidStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("TimePickerAndroid").asInstanceOf[TimePickerAndroidStatic]
+type TimePickerAndroid = TimePickerAndroidStatic
 
-inline def Share: typings.reactNative.mod.ShareStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Share").asInstanceOf[typings.reactNative.mod.ShareStatic]
-type Share = typings.reactNative.mod.ShareStatic
+inline def ToastAndroid: ToastAndroidStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("ToastAndroid").asInstanceOf[ToastAndroidStatic]
+type ToastAndroid = ToastAndroidStatic
 
-inline def StatusBarIOS: typings.reactNative.mod.StatusBarIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StatusBarIOS").asInstanceOf[typings.reactNative.mod.StatusBarIOSStatic]
-type StatusBarIOS = typings.reactNative.mod.StatusBarIOSStatic
+inline def UIManager: UIManagerStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("UIManager").asInstanceOf[UIManagerStatic]
+type UIManager = UIManagerStatic
 
-inline def Systrace: typings.reactNative.mod.SystraceStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Systrace").asInstanceOf[typings.reactNative.mod.SystraceStatic]
-type Systrace = typings.reactNative.mod.SystraceStatic
+inline def Vibration: VibrationStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Vibration").asInstanceOf[VibrationStatic]
+type Vibration = VibrationStatic
 
-inline def TimePickerAndroid: typings.reactNative.mod.TimePickerAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TimePickerAndroid").asInstanceOf[typings.reactNative.mod.TimePickerAndroidStatic]
-type TimePickerAndroid = typings.reactNative.mod.TimePickerAndroidStatic
+inline def createElement[P](`type`: ElementType[Any], props: P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
+inline def createElement[P](`type`: ElementType[Any], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
 
-inline def ToastAndroid: typings.reactNative.mod.ToastAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToastAndroid").asInstanceOf[typings.reactNative.mod.ToastAndroidStatic]
-type ToastAndroid = typings.reactNative.mod.ToastAndroidStatic
+inline def findNodeHandle(): Null | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")().asInstanceOf[Null | Double]
+inline def findNodeHandle(componentOrHandle: Double): Null | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[Null | Double]
+inline def findNodeHandle(componentOrHandle: Component[Any, Any, Any]): Null | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[Null | Double]
+inline def findNodeHandle(componentOrHandle: ComponentClass[Any, ComponentState]): Null | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[Null | Double]
 
-inline def UIManager: typings.reactNative.mod.UIManagerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UIManager").asInstanceOf[typings.reactNative.mod.UIManagerStatic]
-type UIManager = typings.reactNative.mod.UIManagerStatic
+inline def processColor(): js.UndefOr[ProcessedColorValue | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("processColor")().asInstanceOf[js.UndefOr[ProcessedColorValue | Null]]
+inline def processColor(color: Double): js.UndefOr[ProcessedColorValue | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("processColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ProcessedColorValue | Null]]
+inline def processColor(color: ColorValue): js.UndefOr[ProcessedColorValue | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("processColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ProcessedColorValue | Null]]
 
-inline def Vibration: typings.reactNative.mod.VibrationStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Vibration").asInstanceOf[typings.reactNative.mod.VibrationStatic]
-type Vibration = typings.reactNative.mod.VibrationStatic
+inline def requireNativeComponent[T](viewName: String): HostComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("requireNativeComponent")(viewName.asInstanceOf[js.Any]).asInstanceOf[HostComponent[T]]
 
-inline def createElement[P](`type`: typings.react.mod.ReactType[js.Any], props: P, children: typings.react.mod.ReactNode*): typings.react.mod.ReactElement = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactElement]
-inline def createElement[P](
-  `type`: typings.react.mod.ReactType[js.Any],
-  props: scala.Unit,
-  children: typings.react.mod.ReactNode*
-): typings.react.mod.ReactElement = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactElement]
+inline def spread(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__spread")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
-inline def findNodeHandle(): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")().asInstanceOf[scala.Null | scala.Double]
-inline def findNodeHandle(componentOrHandle: scala.Double): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[scala.Null | scala.Double]
-inline def findNodeHandle(componentOrHandle: typings.react.mod.Component[js.Any, js.Any, js.Any]): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[scala.Null | scala.Double]
-inline def findNodeHandle(componentOrHandle: typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[scala.Null | scala.Double]
+inline def unstableBatchedUpdates(callback: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, Any], a: A): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, Any], a: A, b: B): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def processColor(): js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("processColor")().asInstanceOf[js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null]]
-inline def processColor(color: scala.Double): js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("processColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null]]
-inline def processColor(color: typings.reactNative.mod.ColorValue): js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("processColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null]]
+inline def unstableEnableLogBox(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_enableLogBox")().asInstanceOf[Unit]
 
-inline def requireNativeComponent[T](viewName: java.lang.String): typings.reactNative.mod.HostComponent[T] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("requireNativeComponent")(viewName.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.HostComponent[T]]
+inline def useColorScheme(): ColorSchemeName = ^.asInstanceOf[js.Dynamic].applyDynamic("useColorScheme")().asInstanceOf[ColorSchemeName]
 
-inline def spread(target: js.Any, sources: js.Any*): js.Any = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("__spread")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def useWindowDimensions(): ScaledSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowDimensions")().asInstanceOf[ScaledSize]
 
-inline def unstableBatchedUpdates(callback: js.Function0[js.Any]): scala.Unit = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, js.Any], a: A): scala.Unit = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, js.Any], a: A, b: B): scala.Unit = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+type AccessibilityActionEvent = NativeSyntheticEvent[ReadonlyactionNamestring]
 
-inline def unstableEnableLogBox(): scala.Unit = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_enableLogBox")().asInstanceOf[scala.Unit]
+type AccessibilityAnnouncementEventName = announcementFinished
 
-inline def useColorScheme(): typings.reactNative.mod.ColorSchemeName = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useColorScheme")().asInstanceOf[typings.reactNative.mod.ColorSchemeName]
-
-inline def useWindowDimensions(): typings.reactNative.mod.ScaledSize = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useWindowDimensions")().asInstanceOf[typings.reactNative.mod.ScaledSize]
-
-type AccessibilityActionEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNative.anon.ReadonlyactionNamestring]
-
-type AccessibilityAnnouncementEventName = typings.reactNative.reactNativeStrings.announcementFinished
-
-type AccessibilityAnnouncementFinishedEventHandler = js.Function1[
-/* event */ typings.reactNative.mod.AccessibilityAnnouncementFinishedEvent, 
-scala.Unit]
+type AccessibilityAnnouncementFinishedEventHandler = js.Function1[/* event */ AccessibilityAnnouncementFinishedEvent, Unit]
 
 // iOS-only Event
-type AccessibilityChangeEvent = scala.Boolean
+type AccessibilityChangeEvent = Boolean
 
-type AccessibilityChangeEventHandler = js.Function1[/* event */ typings.reactNative.mod.AccessibilityChangeEvent, scala.Unit]
+type AccessibilityChangeEventHandler = js.Function1[/* event */ AccessibilityChangeEvent, Unit]
 
-type AccessibilityProperties = typings.reactNative.mod.AccessibilityProps
+type AccessibilityProperties = AccessibilityProps
 
-type AccessibilityPropertiesAndroid = typings.reactNative.mod.AccessibilityPropsAndroid
+type AccessibilityPropertiesAndroid = AccessibilityPropsAndroid
 
-type AccessibilityPropertiesIOS = typings.reactNative.mod.AccessibilityPropsIOS
+type AccessibilityPropertiesIOS = AccessibilityPropsIOS
 
-type ActivityIndicatorComponent = typings.react.mod.Component[typings.reactNative.mod.ActivityIndicatorProps, js.Object, js.Any]
+type ActivityIndicatorComponent = Component[ActivityIndicatorProps, js.Object, Any]
 
-type ActivityIndicatorIOSProperties = typings.reactNative.mod.ActivityIndicatorIOSProps
+type ActivityIndicatorIOSProperties = ActivityIndicatorIOSProps
 
-type ActivityIndicatorProperties = typings.reactNative.mod.ActivityIndicatorProps
+type ActivityIndicatorProperties = ActivityIndicatorProps
 
-type BackPressEventName = typings.reactNative.reactNativeStrings.hardwareBackPress
+type BackPressEventName = hardwareBackPress
 
-type ButtonProperties = typings.reactNative.mod.ButtonProps
+type ButtonProperties = ButtonProps
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNative.reactNativeStrings.light
@@ -182,173 +186,145 @@ type ButtonProperties = typings.reactNative.mod.ButtonProps
   - scala.Null
   - scala.Unit
 */
-type ColorSchemeName = js.UndefOr[typings.reactNative.mod._ColorSchemeName | scala.Null]
+type ColorSchemeName = js.UndefOr[_ColorSchemeName | Null]
 
-type ColorValue = java.lang.String | typings.reactNative.mod.OpaqueColorValue
+type ColorValue = String | OpaqueColorValue
 
-type ComponentProvider = js.Function0[typings.react.mod.ComponentType[js.Any]]
+type ComponentProvider = js.Function0[ComponentType[Any]]
 
-type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
+type Constructor[T] = Instantiable1[/* args (repeated) */ Any, T]
 
-type DatePickerIOSComponent = typings.react.mod.Component[typings.reactNative.mod.DatePickerIOSProps, js.Object, js.Any]
+type DatePickerIOSComponent = Component[DatePickerIOSProps, js.Object, Any]
 
-type DatePickerIOSProperties = typings.reactNative.mod.DatePickerIOSProps
+type DatePickerIOSProperties = DatePickerIOSProps
 
 /**
   * @see https://reactnative.dev/docs/sectionlist
   */
-type DefaultSectionT = org.scalablytyped.runtime.StringDictionary[js.Any]
+type DefaultSectionT = StringDictionary[Any]
 
-type DrawerLayoutAndroidComponent = typings.react.mod.Component[typings.reactNative.mod.DrawerLayoutAndroidProps, js.Object, js.Any]
+type DrawerLayoutAndroidComponent = Component[DrawerLayoutAndroidProps, js.Object, Any]
 
-type DrawerLayoutAndroidProperties = typings.reactNative.mod.DrawerLayoutAndroidProps
+type DrawerLayoutAndroidProperties = DrawerLayoutAndroidProps
 
-type DrawerSlideEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNative.mod.NativeTouchEvent]
+type DrawerSlideEvent = NativeSyntheticEvent[NativeTouchEvent]
 
-type EasingFunction = js.Function1[/* value */ scala.Double, scala.Double]
+type EasingFunction = js.Function1[/* value */ Double, Double]
 
-type ErrorHandlerCallback = js.Function2[/* error */ js.Any, /* isFatal */ js.UndefOr[scala.Boolean], scala.Unit]
+type ErrorHandlerCallback = js.Function2[/* error */ Any, /* isFatal */ js.UndefOr[Boolean], Unit]
 
-type Falsy = js.UndefOr[scala.Null | typings.reactNative.reactNativeBooleans.`false`]
+type Falsy = js.UndefOr[Null | `false`]
 
-type FlatListProperties[ItemT] = typings.reactNative.mod.FlatListProps[ItemT]
+type FlatListProperties[ItemT] = FlatListProps[ItemT]
 
-type GestureResponderEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNative.mod.NativeTouchEvent]
+type GestureResponderEvent = NativeSyntheticEvent[NativeTouchEvent]
 
-type Handle = scala.Double
+type Handle = Double
 
-type ImageBackgroundComponent = typings.react.mod.Component[typings.reactNative.mod.ImageBackgroundProps, js.Object, js.Any]
+type ImageBackgroundComponent = Component[ImageBackgroundProps, js.Object, Any]
 
-type ImageBackgroundProperties = typings.reactNative.mod.ImageBackgroundProps
+type ImageBackgroundProperties = ImageBackgroundProps
 
-type ImageComponent = typings.react.mod.Component[typings.reactNative.mod.ImageProps, js.Object, js.Any]
+type ImageComponent = Component[ImageProps, js.Object, Any]
 
-type ImagePickerResult = js.Tuple3[java.lang.String, scala.Double, scala.Double]
+type ImagePickerResult = js.Tuple3[String, Double, Double]
 
-type ImageProperties = typings.reactNative.mod.ImageProps
+type ImageProperties = ImageProps
 
-type ImagePropertiesAndroid = typings.reactNative.mod.ImagePropsAndroid
+type ImagePropertiesAndroid = ImagePropsAndroid
 
-type ImagePropertiesIOS = typings.reactNative.mod.ImagePropsIOS
+type ImagePropertiesIOS = ImagePropsIOS
 
-type ImagePropertiesSourceOptions = typings.reactNative.mod.ImageSourcePropType
+type ImagePropertiesSourceOptions = ImageSourcePropType
 
-type ImageRequireSource = scala.Double
+type ImageRequireSource = Double
 
-type ImageSourcePropType = typings.reactNative.mod.ImageURISource | js.Array[typings.reactNative.mod.ImageURISource] | typings.reactNative.mod.ImageRequireSource
+type ImageSourcePropType = ImageURISource | js.Array[ImageURISource] | ImageRequireSource
 
-type InputAccessoryViewProperties = typings.reactNative.mod.InputAccessoryViewProps
+type InputAccessoryViewProperties = InputAccessoryViewProps
 
 /**
   * It is a component to solve the common problem of views that need to move out of the way of the virtual keyboard.
   * It can automatically adjust either its position or bottom padding based on the position of the keyboard.
   */
-type KeyboardAvoidingViewComponent = typings.react.mod.Component[typings.reactNative.mod.KeyboardAvoidingViewProps, js.Object, js.Any]
+type KeyboardAvoidingViewComponent = Component[KeyboardAvoidingViewProps, js.Object, Any]
 
-type KeyboardEventListener = js.Function1[/* event */ typings.reactNative.mod.KeyboardEvent, scala.Unit]
+type KeyboardEventListener = js.Function1[/* event */ KeyboardEvent, Unit]
 
-type KeyboardTypeAndroid = typings.reactNative.reactNativeStrings.`visible-password`
+type KeyboardTypeAndroid = `visible-password`
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNative.mod.KeyboardType
   - typings.reactNative.mod.KeyboardTypeAndroid
   - typings.reactNative.mod.KeyboardTypeIOS
 */
-type KeyboardTypeOptions = typings.reactNative.mod._KeyboardTypeOptions | typings.reactNative.mod.KeyboardTypeAndroid
+type KeyboardTypeOptions = _KeyboardTypeOptions | KeyboardTypeAndroid
 
-type LayoutChangeEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNative.anon.Layout]
+type LayoutChangeEvent = NativeSyntheticEvent[Layout]
 
-type ListRenderItem[ItemT] = js.Function1[
-/* info */ typings.reactNative.mod.ListRenderItemInfo[ItemT], 
-typings.react.mod.ReactElement | scala.Null]
+type ListRenderItem[ItemT] = js.Function1[/* info */ ListRenderItemInfo[ItemT], ReactElement | Null]
 
-type ListViewComponent = typings.react.mod.Component[typings.reactNative.mod.ListViewProps, js.Object, js.Any]
+type ListViewComponent = Component[ListViewProps, js.Object, Any]
 
-type ListViewProperties = typings.reactNative.mod.ListViewProps
+type ListViewProperties = ListViewProps
 
 /**
   * @see https://reactnative.dev/docs/maskedviewios
   */
-type MaskedViewComponent = typings.react.mod.Component[typings.reactNative.mod.MaskedViewIOSProps, js.Object, js.Any]
+type MaskedViewComponent = Component[MaskedViewIOSProps, js.Object, Any]
 
-type MaskedViewIOSProperties = typings.reactNative.mod.MaskedViewIOSProps
+type MaskedViewIOSProperties = MaskedViewIOSProps
 
-type MeasureInWindowOnSuccessCallback = js.Function4[
-/* x */ scala.Double, 
-/* y */ scala.Double, 
-/* width */ scala.Double, 
-/* height */ scala.Double, 
-scala.Unit]
+type MeasureInWindowOnSuccessCallback = js.Function4[/* x */ Double, /* y */ Double, /* width */ Double, /* height */ Double, Unit]
 
-type MeasureLayoutOnSuccessCallback = js.Function4[
-/* left */ scala.Double, 
-/* top */ scala.Double, 
-/* width */ scala.Double, 
-/* height */ scala.Double, 
-scala.Unit]
+type MeasureLayoutOnSuccessCallback = js.Function4[/* left */ Double, /* top */ Double, /* width */ Double, /* height */ Double, Unit]
 
 type MeasureOnSuccessCallback = js.Function6[
-/* x */ scala.Double, 
-/* y */ scala.Double, 
-/* width */ scala.Double, 
-/* height */ scala.Double, 
-/* pageX */ scala.Double, 
-/* pageY */ scala.Double, 
-scala.Unit]
+/* x */ Double, 
+/* y */ Double, 
+/* width */ Double, 
+/* height */ Double, 
+/* pageX */ Double, 
+/* pageY */ Double, 
+Unit]
 
-type ModalProperties = typings.reactNative.mod.ModalProps
+type ModalProperties = ModalProps
 
-type NativeMethodsMixin = typings.reactNative.mod.NativeMethods
+type MouseEvent = NativeSyntheticEvent[NativeMouseEvent]
 
-type NativeMethodsMixinType = typings.reactNative.mod.NativeMethods
+type NativeMethodsMixin = NativeMethods
+
+type NativeMethodsMixinType = NativeMethods
 
 /**
   * Interface for NativeModules which allows to augment NativeModules with type informations.
   * See react-native-sensor-manager for example.
   */
-type NativeModulesStatic = org.scalablytyped.runtime.StringDictionary[js.Any]
+type NativeModulesStatic = StringDictionary[Any]
 
-type NativeSyntheticEvent[T] = typings.react.mod.BaseSyntheticEvent[T, typings.reactNative.mod.NodeHandle, typings.reactNative.mod.NodeHandle]
+type NativeSyntheticEvent[T] = BaseSyntheticEvent[T, NodeHandle, NodeHandle]
 
-type NavigatorIOSProperties = typings.reactNative.mod.NavigatorIOSProps
+type NavigatorIOSProperties = NavigatorIOSProps
 
-type NodeHandle = scala.Double
+type NodeHandle = Double
 
-type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 
-type OpaqueColorValue = js.Symbol
+type PointerEvent = NativeSyntheticEvent[NativePointerEvent]
 
-/**
-  * @see https://reactnative.dev/docs/pickerios
-  * @see PickerIOS.ios.js
-  */
-type PickerIOSComponent = typings.react.mod.Component[typings.reactNative.mod.PickerIOSProps, js.Object, js.Any]
-
-type PickerIOSItemProperties = typings.reactNative.mod.PickerIOSItemProps
-
-type PickerIOSProperties = typings.reactNative.mod.PickerIOSProps
-
-type PickerItemProperties = typings.reactNative.mod.PickerItemProps
-
-type PickerProperties = typings.reactNative.mod.PickerProps
-
-type PickerPropertiesAndroid = typings.reactNative.mod.PickerPropsAndroid
-
-type PickerPropertiesIOS = typings.reactNative.mod.PickerPropsIOS
-
-type ProcessedColorValue = scala.Double | typings.reactNative.mod.OpaqueColorValue
+type ProcessedColorValue = Double | OpaqueColorValue
 
 /**
   * React component that wraps the Android-only `ProgressBar`. This component is used to indicate
   * that the app is loading or there is some activity in the app.
   */
-type ProgressBarAndroidComponent = typings.react.mod.Component[typings.reactNative.mod.ProgressBarAndroidProps, js.Object, js.Any]
+type ProgressBarAndroidComponent = Component[ProgressBarAndroidProps, js.Object, Any]
 
-type ProgressBarAndroidProperties = typings.reactNative.mod.ProgressBarAndroidProps
+type ProgressBarAndroidProperties = ProgressBarAndroidProps
 
-type ProgressViewIOSComponent = typings.react.mod.Component[typings.reactNative.mod.ProgressViewIOSProps, js.Object, js.Any]
+type ProgressViewIOSComponent = Component[ProgressViewIOSProps, js.Object, Any]
 
-type ProgressViewIOSProperties = typings.reactNative.mod.ProgressViewIOSProps
+type ProgressViewIOSProperties = ProgressViewIOSProps
 
 /**
   * Receive events from native-code
@@ -357,7 +333,7 @@ type ProgressViewIOSProperties = typings.reactNative.mod.ProgressViewIOSProps
   * @see https://github.com/facebook/react-native/blob/0.34-stable\Libraries\EventEmitter\RCTNativeAppEventEmitter.js
   * @see https://reactnative.dev/docs/native-modules-ios#sending-events-to-javascript
   */
-type RCTNativeAppEventEmitter = typings.reactNative.mod.DeviceEventEmitterStatic
+type RCTNativeAppEventEmitter = DeviceEventEmitterStatic
 
 /**
   * Wrapper around android native recycler view.
@@ -373,11 +349,11 @@ type RCTNativeAppEventEmitter = typings.reactNative.mod.DeviceEventEmitterStatic
   * use it pass this component as `renderScrollComponent` to the list view. For
   * now only horizontal scrolling is supported.
   */
-type RecyclerViewBackedScrollViewComponent = typings.react.mod.Component[typings.reactNative.mod.RecyclerViewBackedScrollViewProps, js.Object, js.Any]
+type RecyclerViewBackedScrollViewComponent = Component[RecyclerViewBackedScrollViewProps, js.Object, Any]
 
-type RecyclerViewBackedScrollViewProperties = typings.reactNative.mod.RecyclerViewBackedScrollViewProps
+type RecyclerViewBackedScrollViewProperties = RecyclerViewBackedScrollViewProps
 
-type RecyclerViewBackedScrollViewProps = typings.reactNative.mod.ScrollViewProps
+type RecyclerViewBackedScrollViewProps = ScrollViewProps
 
 /**
   * This component is used inside a ScrollView or ListView to add pull to refresh
@@ -387,15 +363,15 @@ type RecyclerViewBackedScrollViewProps = typings.reactNative.mod.ScrollViewProps
   * __Note:__ `refreshing` is a controlled prop, this is why it needs to be set to true
   * in the `onRefresh` function otherwise the refresh indicator will stop immediately.
   */
-type RefreshControlComponent = typings.react.mod.Component[typings.reactNative.mod.RefreshControlProps, js.Object, js.Any]
+type RefreshControlComponent = Component[RefreshControlProps, js.Object, Any]
 
-type RefreshControlProperties = typings.reactNative.mod.RefreshControlProps
+type RefreshControlProperties = RefreshControlProps
 
-type RefreshControlPropertiesAndroid = typings.reactNative.mod.RefreshControlPropsAndroid
+type RefreshControlPropertiesAndroid = RefreshControlPropsAndroid
 
-type RefreshControlPropertiesIOS = typings.reactNative.mod.RefreshControlPropsIOS
+type RefreshControlPropertiesIOS = RefreshControlPropsIOS
 
-type Runnable = js.Function1[/* appParameters */ js.Any, scala.Unit]
+type Runnable = js.Function1[/* appParameters */ Any, Unit]
 
 /**
   * Renders nested content and automatically applies paddings reflect the portion of the view
@@ -403,76 +379,48 @@ type Runnable = js.Function1[/* appParameters */ js.Any, scala.Unit]
   * Moreover, and most importantly, Safe Area's paddings reflect physical limitation of the screen,
   * such as rounded corners or camera notches (aka sensor housing area on iPhone X).
   */
-type SafeAreaViewComponent = typings.react.mod.Component[typings.reactNative.mod.ViewProps, js.Object, js.Any]
+type SafeAreaViewComponent = Component[ViewProps, js.Object, Any]
 
-type ScrollResponderEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNative.mod.NativeTouchEvent]
+type ScrollResponderEvent = NativeSyntheticEvent[NativeTouchEvent]
 
-type ScrollViewComponent = typings.react.mod.Component[typings.reactNative.mod.ScrollViewProps, js.Object, js.Any]
+type ScrollViewComponent = Component[ScrollViewProps, js.Object, Any]
 
-type ScrollViewProperties = typings.reactNative.mod.ScrollViewProps
+type ScrollViewProperties = ScrollViewProps
 
-type ScrollViewPropertiesAndroid = typings.reactNative.mod.ScrollViewPropsAndroid
+type ScrollViewPropertiesAndroid = ScrollViewPropsAndroid
 
-type ScrollViewPropertiesIOS = typings.reactNative.mod.ScrollViewPropsIOS
+type ScrollViewPropertiesIOS = ScrollViewPropsIOS
 
-type SectionListData[ItemT, SectionT] = (typings.reactNative.mod.SectionBase[ItemT, SectionT]) & SectionT
+type SectionListData[ItemT, SectionT] = (SectionBase[ItemT, SectionT]) & SectionT
 
-type SectionListProperties[ItemT] = typings.reactNative.mod.SectionListProps[ItemT, typings.reactNative.mod.DefaultSectionT]
+type SectionListProperties[ItemT] = SectionListProps[ItemT, DefaultSectionT]
 
-type SectionListRenderItem[ItemT, SectionT] = js.Function1[
-/* info */ typings.reactNative.mod.SectionListRenderItemInfo[ItemT, SectionT], 
-typings.react.mod.ReactElement | scala.Null]
-
-/**
-  * Use `SegmentedControlIOS` to render a UISegmentedControl iOS.
-  *
-  * #### Programmatically changing selected index
-  *
-  * The selected index can be changed on the fly by assigning the
-  * selectIndex prop to a state variable, then changing that variable.
-  * Note that the state variable would need to be updated as the user
-  * selects a value and changes the index, as shown in the example below.
-  *
-  * ````
-  * <SegmentedControlIOS
-  *   values={['One', 'Two']}
-  *   selectedIndex={this.state.selectedIndex}
-  *   onChange={(event) => {
-  *     this.setState({selectedIndex: event.nativeEvent.selectedSegmentIndex});
-  *   }}
-  * />
-  * ````
-  */
-type SegmentedControlIOSComponent = typings.react.mod.Component[typings.reactNative.mod.SegmentedControlIOSProps, js.Object, js.Any]
-
-type SegmentedControlIOSProperties = typings.reactNative.mod.SegmentedControlIOSProps
+type SectionListRenderItem[ItemT, SectionT] = js.Function1[/* info */ SectionListRenderItemInfo[ItemT, SectionT], ReactElement | Null]
 
 /**
   * A component used to select a single value from a range of values.
   */
-type SliderComponent = typings.react.mod.Component[typings.reactNative.mod.SliderProps, js.Object, js.Any]
+type SliderComponent = Component[SliderProps, js.Object, Any]
 
-type SliderIOS = typings.reactNative.mod.Slider
+type SliderIOS = Slider
 
-type SliderProperties = typings.reactNative.mod.SliderProps
+type SliderProperties = SliderProps
 
-type SliderPropertiesAndroid = typings.reactNative.mod.SliderPropsAndroid
+type SliderPropertiesAndroid = SliderPropsAndroid
 
-type SliderPropertiesIOS = typings.reactNative.mod.SliderPropsIOS
+type SliderPropertiesIOS = SliderPropsIOS
 
-type SnapshotViewIOSComponent = typings.react.mod.Component[typings.reactNative.mod.SnapshotViewIOSProps, js.Object, js.Any]
+type SnapshotViewIOSComponent = Component[SnapshotViewIOSProps, js.Object, Any]
 
-type SnapshotViewIOSProperties = typings.reactNative.mod.SnapshotViewIOSProps
+type SnapshotViewIOSProperties = SnapshotViewIOSProps
 
-type StatusBarIOSStatic = typings.reactNative.mod.NativeEventEmitter
+type StatusBarProperties = StatusBarProps
 
-type StatusBarProperties = typings.reactNative.mod.StatusBarProps
+type StatusBarPropertiesAndroid = StatusBarPropsAndroid
 
-type StatusBarPropertiesAndroid = typings.reactNative.mod.StatusBarPropsAndroid
+type StatusBarPropertiesIOS = StatusBarPropsIOS
 
-type StatusBarPropertiesIOS = typings.reactNative.mod.StatusBarPropsIOS
-
-type StyleProp[T] = T | typings.reactNative.mod.RegisteredStyle[T] | (typings.reactNative.mod.RecursiveArray[T | typings.reactNative.mod.RegisteredStyle[T] | typings.reactNative.mod.Falsy]) | typings.reactNative.mod.Falsy
+type StyleProp[T] = T | RegisteredStyle[T] | Any | Falsy
 
 /**
   * Renders a boolean input.
@@ -482,63 +430,43 @@ type StyleProp[T] = T | typings.reactNative.mod.RegisteredStyle[T] | (typings.re
   * If the `value` prop is not updated, the component will continue to render
   * the supplied `value` prop instead of the expected result of any user actions.
   */
-type SwitchComponent = typings.react.mod.Component[typings.reactNative.mod.SwitchProps, js.Object, js.Any]
+type SwitchComponent = Component[SwitchProps, js.Object, Any]
 
-type SwitchIOSProperties = typings.reactNative.mod.SwitchIOSProps
+type SwitchIOSProperties = SwitchIOSProps
 
-type SwitchProperties = typings.reactNative.mod.SwitchProps
+type SwitchProperties = SwitchProps
 
-type SwitchPropertiesIOS = typings.reactNative.mod.SwitchPropsIOS
+type SwitchPropertiesIOS = SwitchPropsIOS
 
-type TabBarIOSItemProperties = typings.reactNative.mod.TabBarIOSItemProps
+type TabBarIOSItemProperties = TabBarIOSItemProps
 
-type TabBarIOSProperties = typings.reactNative.mod.TabBarIOSProps
+type TabBarIOSProperties = TabBarIOSProps
 
-type Task = js.Function1[/* taskData */ js.Any, js.Promise[scala.Unit]]
+type Task = js.Function1[/* taskData */ Any, js.Promise[Unit]]
 
-type TaskProvider = js.Function0[typings.reactNative.mod.Task]
+type TaskProvider = js.Function0[Task]
 
 /**
   * A React component for displaying text which supports nesting, styling, and touch handling.
   */
-type TextComponent = typings.react.mod.Component[typings.reactNative.mod.TextProps, js.Object, js.Any]
+type TextComponent = Component[TextProps, js.Object, Any]
 
-type TextInputAndroidProperties = typings.reactNative.mod.TextInputAndroidProps
+type TextInputAndroidProperties = TextInputAndroidProps
 
 /**
   * @see https://reactnative.dev/docs/textinput#methods
   */
-type TextInputComponent = typings.react.mod.Component[typings.reactNative.mod.TextInputProps, js.Object, js.Any]
+type TextInputComponent = Component[TextInputProps, js.Object, Any]
 
-type TextInputIOSProperties = typings.reactNative.mod.TextInputIOSProps
+type TextInputIOSProperties = TextInputIOSProps
 
-type TextInputProperties = typings.reactNative.mod.TextInputProps
+type TextInputProperties = TextInputProps
 
-type TextProperties = typings.reactNative.mod.TextProps
+type TextProperties = TextProps
 
-type TextPropertiesAndroid = typings.reactNative.mod.TextPropsAndroid
+type TextPropertiesAndroid = TextPropsAndroid
 
-type TextPropertiesIOS = typings.reactNative.mod.TextPropsIOS
-
-/**
-  * React component that wraps the Android-only [`Toolbar` widget][0]. A Toolbar can display a logo,
-  * navigation icon (e.g. hamburger menu), a title & subtitle and a list of actions. The title and
-  * subtitle are expanded so the logo and navigation icons are displayed on the left, title and
-  * subtitle in the middle and the actions on the right.
-  *
-  * If the toolbar has an only child, it will be displayed between the title and actions.
-  *
-  * Although the Toolbar supports remote images for the logo, navigation and action icons, this
-  * should only be used in DEV mode where `require('./some_icon.png')` translates into a packager
-  * URL. In release mode you should always use a drawable resource for these icons. Using
-  * `require('./some_icon.png')` will do this automatically for you, so as long as you don't
-  * explicitly use e.g. `{uri: 'http://...'}`, you will be good.
-  *
-  * [0]: https://developer.android.com/reference/android/support/v7/widget/Toolbar.html
-  */
-type ToolbarAndroidComponent = typings.react.mod.Component[typings.reactNative.mod.ToolbarAndroidProps, js.Object, js.Any]
-
-type ToolbarAndroidProperties = typings.reactNative.mod.ToolbarAndroidProps
+type TextPropertiesIOS = TextPropsIOS
 
 /**
   * A wrapper for making views respond properly to touches.
@@ -553,9 +481,9 @@ type ToolbarAndroidProperties = typings.reactNative.mod.ToolbarAndroidProps
   *
   * @see https://reactnative.dev/docs/touchablehighlight
   */
-type TouchableHighlightComponent = typings.react.mod.Component[typings.reactNative.mod.TouchableHighlightProps, js.Object, js.Any]
+type TouchableHighlightComponent = Component[TouchableHighlightProps, js.Object, Any]
 
-type TouchableHighlightProperties = typings.reactNative.mod.TouchableHighlightProps
+type TouchableHighlightProperties = TouchableHighlightProps
 
 /**
   * A wrapper for making views respond properly to touches (Android only).
@@ -567,9 +495,9 @@ type TouchableHighlightProperties = typings.reactNative.mod.TouchableHighlightPr
   *
   * @see https://reactnative.dev/docs/touchablenativefeedback#content
   */
-type TouchableNativeFeedbackComponent = typings.react.mod.Component[typings.reactNative.mod.TouchableNativeFeedbackProps, js.Object, js.Any]
+type TouchableNativeFeedbackComponent = Component[TouchableNativeFeedbackProps, js.Object, Any]
 
-type TouchableNativeFeedbackProperties = typings.reactNative.mod.TouchableNativeFeedbackProps
+type TouchableNativeFeedbackProperties = TouchableNativeFeedbackProps
 
 /**
   * A wrapper for making views respond properly to touches.
@@ -579,9 +507,9 @@ type TouchableNativeFeedbackProperties = typings.reactNative.mod.TouchableNative
   *
   * @see https://reactnative.dev/docs/touchableopacity
   */
-type TouchableOpacityComponent = typings.react.mod.Component[typings.reactNative.mod.TouchableOpacityProps, js.Object, js.Any]
+type TouchableOpacityComponent = Component[TouchableOpacityProps, js.Object, Any]
 
-type TouchableOpacityProperties = typings.reactNative.mod.TouchableOpacityProps
+type TouchableOpacityProperties = TouchableOpacityProps
 
 /**
   * Do not use unless you have a very good reason.
@@ -590,9 +518,9 @@ type TouchableOpacityProperties = typings.reactNative.mod.TouchableOpacityProps
   *
   * @see https://reactnative.dev/docs/touchablewithoutfeedback
   */
-type TouchableWithoutFeedbackComponent = typings.react.mod.Component[typings.reactNative.mod.TouchableWithoutFeedbackProps, js.Object, js.Any]
+type TouchableWithoutFeedbackComponent = Component[TouchableWithoutFeedbackProps, js.Object, Any]
 
-type TouchableWithoutFeedbackProperties = typings.reactNative.mod.TouchableWithoutFeedbackProps
+type TouchableWithoutFeedbackProperties = TouchableWithoutFeedbackProps
 
 /**
   * The most fundamental component for building UI, View is a container that supports layout with flexbox, style, some touch handling,
@@ -600,30 +528,30 @@ type TouchableWithoutFeedbackProperties = typings.reactNative.mod.TouchableWitho
   * View maps directly to the native view equivalent on whatever platform React is running on,
   * whether that is a UIView, <div>, android.view, etc.
   */
-type ViewComponent = typings.react.mod.Component[typings.reactNative.mod.ViewProps, js.Object, js.Any]
+type ViewComponent = Component[ViewProps, js.Object, Any]
 
-type ViewPagerAndroidComponent = typings.react.mod.Component[typings.reactNative.mod.ViewPagerAndroidProps, js.Object, js.Any]
+type ViewPagerAndroidComponent = Component[ViewPagerAndroidProps, js.Object, Any]
 
-type ViewPagerAndroidProperties = typings.reactNative.mod.ViewPagerAndroidProps
+type ViewPagerAndroidProperties = ViewPagerAndroidProps
 
-type ViewProperties = typings.reactNative.mod.ViewProps
+type ViewProperties = ViewProps
 
-type ViewPropertiesAndroid = typings.reactNative.mod.ViewPropsAndroid
+type ViewPropertiesAndroid = ViewPropsAndroid
 
-type ViewPropertiesIOS = typings.reactNative.mod.ViewPropsIOS
+type ViewPropertiesIOS = ViewPropsIOS
 
-type ViewabilityConfigCallbackPairs = js.Array[typings.reactNative.mod.ViewabilityConfigCallbackPair]
+type ViewabilityConfigCallbackPairs = js.Array[ViewabilityConfigCallbackPair]
 
-type VirtualizedListProperties[ItemT] = typings.reactNative.mod.VirtualizedListProps[ItemT]
+type VirtualizedListProperties[ItemT] = VirtualizedListProps[ItemT]
 
 /* was `typeof Image` */
-type _Image = typings.reactNative.mod.Image
+type _Image = Image
 
 /* was `typeof ScrollView` */
-type _ScrollView = typings.reactNative.mod.ScrollView
+type _ScrollView = ScrollView
 
 /* was `typeof Text` */
-type _Text = typings.reactNative.mod.Text
+type _Text = Text
 
 /* was `typeof View` */
-type _View = typings.reactNative.mod.View
+type _View = View

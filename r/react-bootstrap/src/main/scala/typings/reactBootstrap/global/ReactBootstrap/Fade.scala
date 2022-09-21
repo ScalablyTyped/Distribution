@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Fade")
 @js.native
-class Fade ()
+open class Fade ()
   extends typings.reactBootstrap.mod.Fade

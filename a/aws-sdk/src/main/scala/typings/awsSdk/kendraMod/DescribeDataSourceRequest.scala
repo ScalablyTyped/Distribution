@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDataSourceRequest extends StObject {
   
   /**
-    * The unique identifier of the data source to describe.
+    * The identifier of the data source connector.
     */
   var Id: DataSourceId
   
   /**
-    * The identifier of the index that contains the data source.
+    * The identifier of the index used with the data source connector.
     */
   var IndexId: typings.awsSdk.kendraMod.IndexId
 }

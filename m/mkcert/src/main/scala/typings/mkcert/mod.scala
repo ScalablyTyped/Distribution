@@ -93,7 +93,7 @@ object mod {
       
       inline def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value*))
       
       inline def setValidityDays(value: Double): Self = StObject.set(x, "validityDays", value.asInstanceOf[js.Any])
     }

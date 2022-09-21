@@ -9,10 +9,10 @@ Flash message middleware for Connect.
 | ------------------ | :-------------: |
 | Full name          | connect-flash |
 | Keywords           | connect, express, flash, messages |
-| # releases         | 0 |
-| # dependents       | 453 |
-| # downloads        | 6472671 |
-| # stars            | 93 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 577387.3333333334 |
+| # stars            | 1209.0 |
 
 ## Links
 - [Homepage](https://github.com/jaredhanson/connect-flash#readme)

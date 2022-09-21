@@ -49,7 +49,7 @@ trait TableChartBuilder extends StObject {
   
   def setInitialSortingDescending(column: Integer): TableChartBuilder = js.native
   
-  def setOption(option: String, value: js.Any): TableChartBuilder = js.native
+  def setOption(option: String, value: Any): TableChartBuilder = js.native
   
   def showRowNumberColumn(showRowNumber: Boolean): TableChartBuilder = js.native
   

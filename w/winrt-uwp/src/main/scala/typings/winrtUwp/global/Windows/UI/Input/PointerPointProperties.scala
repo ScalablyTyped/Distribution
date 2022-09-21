@@ -119,5 +119,5 @@ abstract class PointerPointProperties ()
   var ytilt: Double = js.native
   
   /* CompleteClass */
-  var zdistance: js.Any = js.native
+  var zdistance: Any = js.native
 }

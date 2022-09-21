@@ -10,10 +10,10 @@ object bugReportMod {
   
   @JSImport("material-ui/svg-icons/action/bug-report", JSImport.Default)
   @js.native
-  class default () extends ActionBugReport
+  open class default () extends ActionBugReport
   
   @JSImport("material-ui/svg-icons/action/bug-report", "ActionBugReport")
   @js.native
-  class ActionBugReport ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionBugReport ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

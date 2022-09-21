@@ -9,19 +9,21 @@ object parametersMod {
   
   @JSImport("sip.js/lib/grammar/parameters", "Parameters")
   @js.native
-  class Parameters protected () extends StObject {
-    def this(parameters: StringDictionary[String]) = this()
+  open class Parameters protected () extends StObject {
+    def this(parameters: StringDictionary[js.UndefOr[String | Double | Null]]) = this()
     
     def clearParams(): Unit = js.native
     
-    def deleteParam(parameter: String): js.Any = js.native
+    def deleteParam(key: String): js.UndefOr[String | Null] = js.native
     
-    def getParam(key: String): js.UndefOr[String] = js.native
+    def getParam(key: String): js.UndefOr[String | Null] = js.native
     
     def hasParam(key: String): Boolean = js.native
     
-    var parameters: StringDictionary[String] = js.native
+    var parameters: StringDictionary[String | Null] = js.native
     
-    def setParam(key: String, value: js.Any): Unit = js.native
+    def setParam(key: String): Unit = js.native
+    def setParam(key: String, value: String): Unit = js.native
+    def setParam(key: String, value: Double): Unit = js.native
   }
 }

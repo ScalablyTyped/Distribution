@@ -27,9 +27,9 @@ object configSourceMod {
   abstract class GithubApiConfigSource protected () extends JsonConfigSource {
     def this(name: String, url: String) = this()
     
-    /* private */ def readResponse(): js.Any = js.native
+    /* private */ def readResponse(): Any = js.native
     
-    /* private */ def requestJson(): js.Any = js.native
+    /* private */ def requestJson(): Any = js.native
   }
   
   @JSImport("webdriver-manager/built/lib/binaries/config_source", "JsonConfigSource")
@@ -51,17 +51,17 @@ object configSourceMod {
   abstract class XmlConfigSource protected () extends ConfigSource {
     def this(name: String, xmlUrl: String) = this()
     
-    /* private */ def convertXml2js(xml: js.Any): js.Any = js.native
+    /* private */ def convertXml2js(xml: Any): Any = js.native
     
     /* protected */ def getFileName(): String = js.native
     
-    /* protected */ def getXml(): js.Promise[js.Any] = js.native
+    /* protected */ def getXml(): js.Promise[Any] = js.native
     
     var name: String = js.native
     
-    /* private */ def readResponse(): js.Any = js.native
+    /* private */ def readResponse(): Any = js.native
     
-    /* private */ def requestXml(): js.Any = js.native
+    /* private */ def requestXml(): Any = js.native
     
     var xmlUrl: String = js.native
   }

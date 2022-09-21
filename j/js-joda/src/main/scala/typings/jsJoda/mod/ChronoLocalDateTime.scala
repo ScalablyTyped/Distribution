@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class ChronoLocalDateTime () extends Temporal {
   
-  def adjustInto(temporal: js.Any): js.Any = js.native
+  def adjustInto(temporal: Any): Any = js.native
   
   def chronology(): Chronology = js.native
   

@@ -10,15 +10,13 @@ Single component release of dropdown
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-dropdown |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 77665 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 18932.0 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)
-- [Bugs](https://github.com/Semantic-Org/Semantic-UI/issues)
-- [Repository](https://github.com/Semantic-Org/UI-Dropdown)
 - [Npm](https://www.npmjs.com/package/semantic-ui-dropdown)
     
 

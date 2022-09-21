@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.NetworkNack")
 @js.native
-class NetworkNack ()
+open class NetworkNack ()
   extends typings.ndnJs.mod.NetworkNack
 object NetworkNack {
   

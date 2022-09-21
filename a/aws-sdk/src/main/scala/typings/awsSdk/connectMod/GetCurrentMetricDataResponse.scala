@@ -9,7 +9,7 @@ trait GetCurrentMetricDataResponse extends StObject {
   /**
     * The time at which the metrics were retrieved and cached for pagination.
     */
-  var DataSnapshotTime: js.UndefOr[timestamp] = js.undefined
+  var DataSnapshotTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Information about the real-time metrics.
@@ -30,7 +30,7 @@ object GetCurrentMetricDataResponse {
   
   extension [Self <: GetCurrentMetricDataResponse](x: Self) {
     
-    inline def setDataSnapshotTime(value: timestamp): Self = StObject.set(x, "DataSnapshotTime", value.asInstanceOf[js.Any])
+    inline def setDataSnapshotTime(value: js.Date): Self = StObject.set(x, "DataSnapshotTime", value.asInstanceOf[js.Any])
     
     inline def setDataSnapshotTimeUndefined: Self = StObject.set(x, "DataSnapshotTime", js.undefined)
     
@@ -38,7 +38,7 @@ object GetCurrentMetricDataResponse {
     
     inline def setMetricResultsUndefined: Self = StObject.set(x, "MetricResults", js.undefined)
     
-    inline def setMetricResultsVarargs(value: CurrentMetricResult*): Self = StObject.set(x, "MetricResults", js.Array(value :_*))
+    inline def setMetricResultsVarargs(value: CurrentMetricResult*): Self = StObject.set(x, "MetricResults", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

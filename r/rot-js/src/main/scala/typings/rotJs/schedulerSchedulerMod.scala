@@ -11,12 +11,12 @@ object schedulerSchedulerMod {
   /**
     * @class Abstract scheduler
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with Scheduler[T] {
     
     /* CompleteClass */
-    var _current: js.Any = js.native
+    var _current: Any = js.native
     
     /* CompleteClass */
     var _queue: typings.rotJs.eventqueueMod.default[T] = js.native
@@ -56,7 +56,7 @@ object schedulerSchedulerMod {
       * @returns {?}
       */
     /* CompleteClass */
-    override def next(): js.Any = js.native
+    override def next(): Any = js.native
     
     /**
       * Remove a previously added item
@@ -64,12 +64,12 @@ object schedulerSchedulerMod {
       * @returns {bool} successful?
       */
     /* CompleteClass */
-    override def remove(item: js.Any): Boolean = js.native
+    override def remove(item: Any): Boolean = js.native
   }
   
   trait Scheduler[T] extends StObject {
     
-    var _current: js.Any
+    var _current: Any
     
     var _queue: typings.rotJs.eventqueueMod.default[T]
     
@@ -102,27 +102,27 @@ object schedulerSchedulerMod {
       * Schedule next item
       * @returns {?}
       */
-    def next(): js.Any
+    def next(): Any
     
     /**
       * Remove a previously added item
       * @param {?} item
       * @returns {bool} successful?
       */
-    def remove(item: js.Any): Boolean
+    def remove(item: Any): Boolean
   }
   object Scheduler {
     
     inline def apply[T](
-      _current: js.Any,
+      _current: Any,
       _queue: typings.rotJs.eventqueueMod.default[T],
       _repeat: js.Array[T],
       add: (T, Boolean) => Scheduler[T],
       clear: () => Scheduler[T],
       getTime: () => Double,
       getTimeOf: T => js.UndefOr[Double],
-      next: () => js.Any,
-      remove: js.Any => Boolean
+      next: () => Any,
+      remove: Any => Boolean
     ): Scheduler[T] = {
       val __obj = js.Dynamic.literal(_current = _current.asInstanceOf[js.Any], _queue = _queue.asInstanceOf[js.Any], _repeat = _repeat.asInstanceOf[js.Any], add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), getTime = js.Any.fromFunction0(getTime), getTimeOf = js.Any.fromFunction1(getTimeOf), next = js.Any.fromFunction0(next), remove = js.Any.fromFunction1(remove))
       __obj.asInstanceOf[Scheduler[T]]
@@ -138,17 +138,17 @@ object schedulerSchedulerMod {
       
       inline def setGetTimeOf(value: T => js.UndefOr[Double]): Self = StObject.set(x, "getTimeOf", js.Any.fromFunction1(value))
       
-      inline def setNext(value: () => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Any): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      inline def setRemove(value: js.Any => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Any => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      inline def set_current(value: js.Any): Self = StObject.set(x, "_current", value.asInstanceOf[js.Any])
+      inline def set_current(value: Any): Self = StObject.set(x, "_current", value.asInstanceOf[js.Any])
       
       inline def set_queue(value: typings.rotJs.eventqueueMod.default[T]): Self = StObject.set(x, "_queue", value.asInstanceOf[js.Any])
       
       inline def set_repeat(value: js.Array[T]): Self = StObject.set(x, "_repeat", value.asInstanceOf[js.Any])
       
-      inline def set_repeatVarargs(value: T*): Self = StObject.set(x, "_repeat", js.Array(value :_*))
+      inline def set_repeatVarargs(value: T*): Self = StObject.set(x, "_repeat", js.Array(value*))
     }
   }
 }

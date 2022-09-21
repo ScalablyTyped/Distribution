@@ -24,6 +24,6 @@ object Stages {
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setItemVarargs(value: Stage*): Self = StObject.set(x, "item", js.Array(value :_*))
+    inline def setItemVarargs(value: Stage*): Self = StObject.set(x, "item", js.Array(value*))
   }
 }

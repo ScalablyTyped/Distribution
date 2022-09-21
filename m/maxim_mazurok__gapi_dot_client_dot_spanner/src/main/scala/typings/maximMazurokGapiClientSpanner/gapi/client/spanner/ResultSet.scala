@@ -13,7 +13,7 @@ trait ResultSet extends StObject {
     * Each element in `rows` is a row whose format is defined by metadata.row_type. The ith element in each row matches the ith field in metadata.row_type. Elements are encoded based on
     * type as described here.
     */
-  var rows: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var rows: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   /**
     * Query plan and execution statistics for the SQL statement that produced this result set. These can be requested by setting ExecuteSqlRequest.query_mode. DML statements always
@@ -35,11 +35,11 @@ object ResultSet {
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[Any]*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setStats(value: ResultSetStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     

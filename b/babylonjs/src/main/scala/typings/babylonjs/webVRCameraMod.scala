@@ -8,7 +8,6 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.webVRControllerMod.WebVRController
-import typings.std.Float32Array
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,18 +18,20 @@ object webVRCameraMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.webVRCameraMod.PoseControlled because var conflicts: position, rotationQuaternion. Inlined devicePosition, deviceRotationQuaternion, rawPose, deviceScaleFactor, updateFromDevice */ @JSImport("babylonjs/Cameras/VR/webVRCamera", "WebVRFreeCamera")
   @js.native
-  class WebVRFreeCamera protected () extends FreeCamera {
+  open class WebVRFreeCamera protected () extends FreeCamera {
     /**
       * Instantiates a WebVRFreeCamera.
       * @param name The name of the WebVRFreeCamera
       * @param position The starting anchor position for the camera
       * @param scene The scene the camera belongs to
-      * @param webVROptions a set of customizable options for the webVRCamera
+      * @param _webVROptions a set of customizable options for the webVRCamera
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
-    def this(name: String, position: Vector3, scene: Scene, webVROptions: WebVROptions) = this()
+    def this(name: String, position: Vector3, scene: Unit, _webVROptions: WebVROptions) = this()
+    def this(name: String, position: Vector3, scene: Scene, _webVROptions: WebVROptions) = this()
     
-    /* private */ var _attached: js.Any = js.native
+    /* private */ var _attached: Any = js.native
     
     /**
       * @hidden
@@ -38,58 +39,64 @@ object webVRCameraMod {
       */
     def _computeDevicePosition(): Unit = js.native
     
-    /* private */ var _correctPositionIfNotTrackPosition: js.Any = js.native
+    /* private */ var _correctPositionIfNotTrackPosition: Any = js.native
     
-    /* private */ var _defaultHeight: js.Any = js.native
+    /* private */ var _defaultHeight: Any = js.native
     
     /* protected */ var _descendants: js.Array[Node] = js.native
     
-    /* private */ var _detachIfAttached: js.Any = js.native
+    /* private */ var _detachIfAttached: Any = js.native
     
-    /* private */ var _deviceRoomPosition: js.Any = js.native
+    /* private */ var _deviceRoomPosition: Any = js.native
     
     /** @hidden */
     var _deviceRoomRotationQuaternion: Quaternion = js.native
     
-    /* private */ var _deviceToWorld: js.Any = js.native
+    /* private */ var _deviceToWorld: Any = js.native
     
-    /* private */ var _frameData: js.Any = js.native
+    /* private */ var _frameData: Any = js.native
     
-    /* private */ var _leftController: js.Any = js.native
+    /* private */ var _leftController: Any = js.native
     
-    /* private */ var _lightOnControllers: js.Any = js.native
+    /* private */ var _lightOnControllers: Any = js.native
     
-    /* private */ var _onGamepadConnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadConnectedObserver: Any = js.native
     
-    /* private */ var _onGamepadDisconnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadDisconnectedObserver: Any = js.native
     
-    /* private */ var _onVREnabled: js.Any = js.native
+    /* private */ var _onVREnabled: Any = js.native
     
-    /* private */ var _oneVector: js.Any = js.native
+    /* private */ var _oneVector: Any = js.native
     
-    /* private */ var _poseSet: js.Any = js.native
+    /* private */ var _poseSet: Any = js.native
     
-    /* private */ var _rightController: js.Any = js.native
+    /* private */ var _rightController: Any = js.native
     
-    /* private */ var _specsVersion: js.Any = js.native
+    /* protected */ var _setRigMode: Any = js.native
     
-    /* private */ var _standingMatrix: js.Any = js.native
+    /* private */ var _specsVersion: Any = js.native
     
-    /* private */ var _tmpMatrix: js.Any = js.native
+    /* private */ var _standingMatrix: Any = js.native
     
-    /* private */ var _updateCacheWhenTrackingDisabledObserver: js.Any = js.native
+    /* private */ var _tmpMatrix: Any = js.native
+    
+    /* private */ var _updateCacheCalled: Any = js.native
+    
+    /* private */ var _updateCacheWhenTrackingDisabledObserver: Any = js.native
     
     /**
       * @hidden
       * The vrDisplay tied to the camera. See https://developer.mozilla.org/en-US/docs/Web/API/VRDisplay
       */
-    var _vrDevice: js.Any = js.native
+    var _vrDevice: Any = js.native
     
-    /* private */ var _workingMatrix: js.Any = js.native
+    /* private */ var _webVROptions: Any = js.native
     
-    /* private */ var _workingVector: js.Any = js.native
+    /* private */ var _workingMatrix: Any = js.native
     
-    /* private */ var _worldToDevice: js.Any = js.native
+    /* private */ var _workingVector: Any = js.native
+    
+    /* private */ var _worldToDevice: Any = js.native
     
     /**
       * References to the webVR controllers for the vrDevice.
@@ -119,7 +126,7 @@ object webVRCameraMod {
     
     /**
       * Gets a vrController by name.
-      * @param name The name of the controller to retreive
+      * @param name The name of the controller to retrieve
       * @returns the controller matching the name specified or null if not found
       */
     def getControllerByName(name: String): Nullable[WebVRController] = js.native
@@ -147,7 +154,7 @@ object webVRCameraMod {
     /**
       * Emits an event when the HMD's pose has been updated.
       */
-    var onPoseUpdatedFromDeviceObservable: Observable[js.Any] = js.native
+    var onPoseUpdatedFromDeviceObservable: Observable[Any] = js.native
     
     /**
       * The rawPose of the vrDevice.
@@ -169,8 +176,6 @@ object webVRCameraMod {
       * The controller corresponding to the users right hand.
       */
     def rightController: Nullable[WebVRController] = js.native
-    
-    /* private */ var updateCacheCalled: js.Any = js.native
     
     /**
       * Updates the poseControlled values based on the input device pose.
@@ -194,8 +199,6 @@ object webVRCameraMod {
       * @returns A promise with a boolean set to if the standing matrix is supported.
       */
     def useStandingMatrixAsync(): js.Promise[Boolean] = js.native
-    
-    /* private */ var webVROptions: js.Any = js.native
   }
   
   trait DevicePose extends StObject {
@@ -203,32 +206,32 @@ object webVRCameraMod {
     /**
       * The angularAcceleration of the device, values in array are [x,y,z].
       */
-    val angularAcceleration: Nullable[Float32Array]
+    val angularAcceleration: Nullable[js.typedarray.Float32Array]
     
     /**
       * The angularVelocity of the device, values in array are [x,y,z].
       */
-    val angularVelocity: Nullable[Float32Array]
+    val angularVelocity: Nullable[js.typedarray.Float32Array]
     
     /**
       * The linearAcceleration of the device, values in array are [x,y,z].
       */
-    val linearAcceleration: Nullable[Float32Array]
+    val linearAcceleration: Nullable[js.typedarray.Float32Array]
     
     /**
       * The linearVelocity of the device, values in array are [x,y,z].
       */
-    val linearVelocity: Nullable[Float32Array]
+    val linearVelocity: Nullable[js.typedarray.Float32Array]
     
     /**
       * The orientation of the device in a quaternion array, values in array are [x,y,z,w].
       */
-    val orientation: Nullable[Float32Array]
+    val orientation: Nullable[js.typedarray.Float32Array]
     
     /**
       * The position of the device, values in array are [x,y,z].
       */
-    val position: Nullable[Float32Array]
+    val position: Nullable[js.typedarray.Float32Array]
   }
   object DevicePose {
     
@@ -239,27 +242,27 @@ object webVRCameraMod {
     
     extension [Self <: DevicePose](x: Self) {
       
-      inline def setAngularAcceleration(value: Nullable[Float32Array]): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
+      inline def setAngularAcceleration(value: Nullable[js.typedarray.Float32Array]): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
       
       inline def setAngularAccelerationNull: Self = StObject.set(x, "angularAcceleration", null)
       
-      inline def setAngularVelocity(value: Nullable[Float32Array]): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
+      inline def setAngularVelocity(value: Nullable[js.typedarray.Float32Array]): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
       
       inline def setAngularVelocityNull: Self = StObject.set(x, "angularVelocity", null)
       
-      inline def setLinearAcceleration(value: Nullable[Float32Array]): Self = StObject.set(x, "linearAcceleration", value.asInstanceOf[js.Any])
+      inline def setLinearAcceleration(value: Nullable[js.typedarray.Float32Array]): Self = StObject.set(x, "linearAcceleration", value.asInstanceOf[js.Any])
       
       inline def setLinearAccelerationNull: Self = StObject.set(x, "linearAcceleration", null)
       
-      inline def setLinearVelocity(value: Nullable[Float32Array]): Self = StObject.set(x, "linearVelocity", value.asInstanceOf[js.Any])
+      inline def setLinearVelocity(value: Nullable[js.typedarray.Float32Array]): Self = StObject.set(x, "linearVelocity", value.asInstanceOf[js.Any])
       
       inline def setLinearVelocityNull: Self = StObject.set(x, "linearVelocity", null)
       
-      inline def setOrientation(value: Nullable[Float32Array]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Nullable[js.typedarray.Float32Array]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationNull: Self = StObject.set(x, "orientation", null)
       
-      inline def setPosition(value: Nullable[Float32Array]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Nullable[js.typedarray.Float32Array]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionNull: Self = StObject.set(x, "position", null)
     }
@@ -386,7 +389,7 @@ object webVRCameraMod {
     var useCustomVRButton: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * If multiview should be used if availible (default: false)
+      * If multiview should be used if available (default: false)
       */
     var useMultiview: js.UndefOr[Boolean] = js.undefined
   }

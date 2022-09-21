@@ -14,7 +14,7 @@ trait Binding extends StObject {
   /**
     * Calls the source method with the specified args object. This method is present in event bindings like trigger/delegate.
     */
-  var callSource: js.UndefOr[js.Function1[/* event */ js.Any, js.Any]] = js.undefined
+  var callSource: js.UndefOr[js.Function1[/* event */ Any, Any]] = js.undefined
   
   /**
     * Whether the binding is data-bound.
@@ -44,12 +44,12 @@ trait Binding extends StObject {
   /**
     * Assigns a value to the source.
     */
-  var updateSource: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  var updateSource: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
   
   /**
     * Assigns a value to the target.
     */
-  var updateTarget: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  var updateTarget: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
 }
 object Binding {
   
@@ -62,7 +62,7 @@ object Binding {
     
     inline def setBind(value: Scope => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
-    inline def setCallSource(value: /* event */ js.Any => js.Any): Self = StObject.set(x, "callSource", js.Any.fromFunction1(value))
+    inline def setCallSource(value: /* event */ Any => Any): Self = StObject.set(x, "callSource", js.Any.fromFunction1(value))
     
     inline def setCallSourceUndefined: Self = StObject.set(x, "callSource", js.undefined)
     
@@ -80,11 +80,11 @@ object Binding {
     
     inline def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
     
-    inline def setUpdateSource(value: /* value */ js.Any => Unit): Self = StObject.set(x, "updateSource", js.Any.fromFunction1(value))
+    inline def setUpdateSource(value: /* value */ Any => Unit): Self = StObject.set(x, "updateSource", js.Any.fromFunction1(value))
     
     inline def setUpdateSourceUndefined: Self = StObject.set(x, "updateSource", js.undefined)
     
-    inline def setUpdateTarget(value: /* value */ js.Any => Unit): Self = StObject.set(x, "updateTarget", js.Any.fromFunction1(value))
+    inline def setUpdateTarget(value: /* value */ Any => Unit): Self = StObject.set(x, "updateTarget", js.Any.fromFunction1(value))
     
     inline def setUpdateTargetUndefined: Self = StObject.set(x, "updateTarget", js.undefined)
   }

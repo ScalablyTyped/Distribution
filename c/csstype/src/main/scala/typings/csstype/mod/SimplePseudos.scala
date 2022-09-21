@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`Colon-moz-placeholder`
   - typings.csstype.csstypeStrings.`Colon-moz-read-only`
   - typings.csstype.csstypeStrings.`Colon-moz-read-write`
+  - typings.csstype.csstypeStrings.`Colon-moz-ui-invalid`
+  - typings.csstype.csstypeStrings.`Colon-moz-ui-valid`
   - typings.csstype.csstypeStrings.`Colon-ms-fullscreen`
   - typings.csstype.csstypeStrings.`Colon-ms-input-placeholder`
   - typings.csstype.csstypeStrings.`Colon-webkit-any-link`
@@ -26,6 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`ColonColon-ms-browse`
   - typings.csstype.csstypeStrings.`ColonColon-ms-check`
   - typings.csstype.csstypeStrings.`ColonColon-ms-clear`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-expand`
   - typings.csstype.csstypeStrings.`ColonColon-ms-fill`
   - typings.csstype.csstypeStrings.`ColonColon-ms-fill-lower`
   - typings.csstype.csstypeStrings.`ColonColon-ms-fill-upper`
@@ -56,12 +59,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.ColonColonplaceholder
   - typings.csstype.csstypeStrings.ColonColonselection
   - typings.csstype.csstypeStrings.`ColonColonspelling-error`
+  - typings.csstype.csstypeStrings.`ColonColontarget-text`
   - typings.csstype.csstypeStrings.Colonactive
   - typings.csstype.csstypeStrings.Colonafter
   - typings.csstype.csstypeStrings.`Colonany-link`
   - typings.csstype.csstypeStrings.Colonbefore
   - typings.csstype.csstypeStrings.Colonblank
   - typings.csstype.csstypeStrings.Colonchecked
+  - typings.csstype.csstypeStrings.Coloncurrent
   - typings.csstype.csstypeStrings.Colondefault
   - typings.csstype.csstypeStrings.Colondefined
   - typings.csstype.csstypeStrings.Colondisabled
@@ -76,6 +81,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`Colonfocus-visible`
   - typings.csstype.csstypeStrings.`Colonfocus-within`
   - typings.csstype.csstypeStrings.Colonfullscreen
+  - typings.csstype.csstypeStrings.Colonfuture
   - typings.csstype.csstypeStrings.Colonhover
   - typings.csstype.csstypeStrings.`Colonin-range`
   - typings.csstype.csstypeStrings.Colonindeterminate
@@ -84,11 +90,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`Colonlast-of-type`
   - typings.csstype.csstypeStrings.Colonleft
   - typings.csstype.csstypeStrings.Colonlink
+  - typings.csstype.csstypeStrings.`Colonlocal-link`
+  - typings.csstype.csstypeStrings.`Colonnth-col`
+  - typings.csstype.csstypeStrings.`Colonnth-last-col`
   - typings.csstype.csstypeStrings.`Colononly-child`
   - typings.csstype.csstypeStrings.`Colononly-of-type`
   - typings.csstype.csstypeStrings.Colonoptional
   - typings.csstype.csstypeStrings.`Colonout-of-range`
+  - typings.csstype.csstypeStrings.Colonpast
+  - typings.csstype.csstypeStrings.Colonpaused
+  - typings.csstype.csstypeStrings.`Colonpicture-in-picture`
   - typings.csstype.csstypeStrings.`Colonplaceholder-shown`
+  - typings.csstype.csstypeStrings.Colonplaying
   - typings.csstype.csstypeStrings.`Colonread-only`
   - typings.csstype.csstypeStrings.`Colonread-write`
   - typings.csstype.csstypeStrings.Colonrequired
@@ -96,6 +109,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.Colonroot
   - typings.csstype.csstypeStrings.Colonscope
   - typings.csstype.csstypeStrings.Colontarget
+  - typings.csstype.csstypeStrings.`Colontarget-within`
+  - typings.csstype.csstypeStrings.`Colonuser-invalid`
+  - typings.csstype.csstypeStrings.`Colonuser-valid`
   - typings.csstype.csstypeStrings.Colonvalid
   - typings.csstype.csstypeStrings.Colonvisited
 */
@@ -115,6 +131,10 @@ object SimplePseudos {
   inline def `Colon-moz-read-only`: typings.csstype.csstypeStrings.`Colon-moz-read-only` = ":-moz-read-only".asInstanceOf[typings.csstype.csstypeStrings.`Colon-moz-read-only`]
   
   inline def `Colon-moz-read-write`: typings.csstype.csstypeStrings.`Colon-moz-read-write` = ":-moz-read-write".asInstanceOf[typings.csstype.csstypeStrings.`Colon-moz-read-write`]
+  
+  inline def `Colon-moz-ui-invalid`: typings.csstype.csstypeStrings.`Colon-moz-ui-invalid` = ":-moz-ui-invalid".asInstanceOf[typings.csstype.csstypeStrings.`Colon-moz-ui-invalid`]
+  
+  inline def `Colon-moz-ui-valid`: typings.csstype.csstypeStrings.`Colon-moz-ui-valid` = ":-moz-ui-valid".asInstanceOf[typings.csstype.csstypeStrings.`Colon-moz-ui-valid`]
   
   inline def `Colon-ms-fullscreen`: typings.csstype.csstypeStrings.`Colon-ms-fullscreen` = ":-ms-fullscreen".asInstanceOf[typings.csstype.csstypeStrings.`Colon-ms-fullscreen`]
   
@@ -143,6 +163,8 @@ object SimplePseudos {
   inline def `ColonColon-ms-check`: typings.csstype.csstypeStrings.`ColonColon-ms-check` = "::-ms-check".asInstanceOf[typings.csstype.csstypeStrings.`ColonColon-ms-check`]
   
   inline def `ColonColon-ms-clear`: typings.csstype.csstypeStrings.`ColonColon-ms-clear` = "::-ms-clear".asInstanceOf[typings.csstype.csstypeStrings.`ColonColon-ms-clear`]
+  
+  inline def `ColonColon-ms-expand`: typings.csstype.csstypeStrings.`ColonColon-ms-expand` = "::-ms-expand".asInstanceOf[typings.csstype.csstypeStrings.`ColonColon-ms-expand`]
   
   inline def `ColonColon-ms-fill`: typings.csstype.csstypeStrings.`ColonColon-ms-fill` = "::-ms-fill".asInstanceOf[typings.csstype.csstypeStrings.`ColonColon-ms-fill`]
   
@@ -204,6 +226,8 @@ object SimplePseudos {
   
   inline def `ColonColonspelling-error`: typings.csstype.csstypeStrings.`ColonColonspelling-error` = "::spelling-error".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonspelling-error`]
   
+  inline def `ColonColontarget-text`: typings.csstype.csstypeStrings.`ColonColontarget-text` = "::target-text".asInstanceOf[typings.csstype.csstypeStrings.`ColonColontarget-text`]
+  
   inline def Colonactive: typings.csstype.csstypeStrings.Colonactive = ":active".asInstanceOf[typings.csstype.csstypeStrings.Colonactive]
   
   inline def Colonafter: typings.csstype.csstypeStrings.Colonafter = ":after".asInstanceOf[typings.csstype.csstypeStrings.Colonafter]
@@ -215,6 +239,8 @@ object SimplePseudos {
   inline def Colonblank: typings.csstype.csstypeStrings.Colonblank = ":blank".asInstanceOf[typings.csstype.csstypeStrings.Colonblank]
   
   inline def Colonchecked: typings.csstype.csstypeStrings.Colonchecked = ":checked".asInstanceOf[typings.csstype.csstypeStrings.Colonchecked]
+  
+  inline def Coloncurrent: typings.csstype.csstypeStrings.Coloncurrent = ":current".asInstanceOf[typings.csstype.csstypeStrings.Coloncurrent]
   
   inline def Colondefault: typings.csstype.csstypeStrings.Colondefault = ":default".asInstanceOf[typings.csstype.csstypeStrings.Colondefault]
   
@@ -244,6 +270,8 @@ object SimplePseudos {
   
   inline def Colonfullscreen: typings.csstype.csstypeStrings.Colonfullscreen = ":fullscreen".asInstanceOf[typings.csstype.csstypeStrings.Colonfullscreen]
   
+  inline def Colonfuture: typings.csstype.csstypeStrings.Colonfuture = ":future".asInstanceOf[typings.csstype.csstypeStrings.Colonfuture]
+  
   inline def Colonhover: typings.csstype.csstypeStrings.Colonhover = ":hover".asInstanceOf[typings.csstype.csstypeStrings.Colonhover]
   
   inline def `Colonin-range`: typings.csstype.csstypeStrings.`Colonin-range` = ":in-range".asInstanceOf[typings.csstype.csstypeStrings.`Colonin-range`]
@@ -260,6 +288,12 @@ object SimplePseudos {
   
   inline def Colonlink: typings.csstype.csstypeStrings.Colonlink = ":link".asInstanceOf[typings.csstype.csstypeStrings.Colonlink]
   
+  inline def `Colonlocal-link`: typings.csstype.csstypeStrings.`Colonlocal-link` = ":local-link".asInstanceOf[typings.csstype.csstypeStrings.`Colonlocal-link`]
+  
+  inline def `Colonnth-col`: typings.csstype.csstypeStrings.`Colonnth-col` = ":nth-col".asInstanceOf[typings.csstype.csstypeStrings.`Colonnth-col`]
+  
+  inline def `Colonnth-last-col`: typings.csstype.csstypeStrings.`Colonnth-last-col` = ":nth-last-col".asInstanceOf[typings.csstype.csstypeStrings.`Colonnth-last-col`]
+  
   inline def `Colononly-child`: typings.csstype.csstypeStrings.`Colononly-child` = ":only-child".asInstanceOf[typings.csstype.csstypeStrings.`Colononly-child`]
   
   inline def `Colononly-of-type`: typings.csstype.csstypeStrings.`Colononly-of-type` = ":only-of-type".asInstanceOf[typings.csstype.csstypeStrings.`Colononly-of-type`]
@@ -268,7 +302,15 @@ object SimplePseudos {
   
   inline def `Colonout-of-range`: typings.csstype.csstypeStrings.`Colonout-of-range` = ":out-of-range".asInstanceOf[typings.csstype.csstypeStrings.`Colonout-of-range`]
   
+  inline def Colonpast: typings.csstype.csstypeStrings.Colonpast = ":past".asInstanceOf[typings.csstype.csstypeStrings.Colonpast]
+  
+  inline def Colonpaused: typings.csstype.csstypeStrings.Colonpaused = ":paused".asInstanceOf[typings.csstype.csstypeStrings.Colonpaused]
+  
+  inline def `Colonpicture-in-picture`: typings.csstype.csstypeStrings.`Colonpicture-in-picture` = ":picture-in-picture".asInstanceOf[typings.csstype.csstypeStrings.`Colonpicture-in-picture`]
+  
   inline def `Colonplaceholder-shown`: typings.csstype.csstypeStrings.`Colonplaceholder-shown` = ":placeholder-shown".asInstanceOf[typings.csstype.csstypeStrings.`Colonplaceholder-shown`]
+  
+  inline def Colonplaying: typings.csstype.csstypeStrings.Colonplaying = ":playing".asInstanceOf[typings.csstype.csstypeStrings.Colonplaying]
   
   inline def `Colonread-only`: typings.csstype.csstypeStrings.`Colonread-only` = ":read-only".asInstanceOf[typings.csstype.csstypeStrings.`Colonread-only`]
   
@@ -283,6 +325,12 @@ object SimplePseudos {
   inline def Colonscope: typings.csstype.csstypeStrings.Colonscope = ":scope".asInstanceOf[typings.csstype.csstypeStrings.Colonscope]
   
   inline def Colontarget: typings.csstype.csstypeStrings.Colontarget = ":target".asInstanceOf[typings.csstype.csstypeStrings.Colontarget]
+  
+  inline def `Colontarget-within`: typings.csstype.csstypeStrings.`Colontarget-within` = ":target-within".asInstanceOf[typings.csstype.csstypeStrings.`Colontarget-within`]
+  
+  inline def `Colonuser-invalid`: typings.csstype.csstypeStrings.`Colonuser-invalid` = ":user-invalid".asInstanceOf[typings.csstype.csstypeStrings.`Colonuser-invalid`]
+  
+  inline def `Colonuser-valid`: typings.csstype.csstypeStrings.`Colonuser-valid` = ":user-valid".asInstanceOf[typings.csstype.csstypeStrings.`Colonuser-valid`]
   
   inline def Colonvalid: typings.csstype.csstypeStrings.Colonvalid = ":valid".asInstanceOf[typings.csstype.csstypeStrings.Colonvalid]
   

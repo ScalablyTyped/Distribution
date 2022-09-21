@@ -17,8 +17,8 @@ trait ControlWrapper extends StObject {
   
   def getControlType(): String = js.native
   
-  def getOption(key: String): js.Any = js.native
-  def getOption(key: String, opt_default_val: js.Any): js.Any = js.native
+  def getOption(key: String): Any = js.native
+  def getOption(key: String, opt_default_val: Any): Any = js.native
   
   def getOptions(): js.Object = js.native
   

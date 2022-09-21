@@ -52,7 +52,7 @@ object XXMLEncryptionTemplate {
     getStatus: () => SecurityOperationStatus,
     getTarget: () => XXMLElementWrapper,
     getTemplate: () => XXMLElementWrapper,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setStatus: SecurityOperationStatus => Unit,
     setTarget: XXMLElementWrapper => Unit,

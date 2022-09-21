@@ -34,13 +34,13 @@ object EnhancedMonitoringOutput {
     
     inline def setCurrentShardLevelMetricsUndefined: Self = StObject.set(x, "CurrentShardLevelMetrics", js.undefined)
     
-    inline def setCurrentShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "CurrentShardLevelMetrics", js.Array(value :_*))
+    inline def setCurrentShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "CurrentShardLevelMetrics", js.Array(value*))
     
     inline def setDesiredShardLevelMetrics(value: MetricsNameList): Self = StObject.set(x, "DesiredShardLevelMetrics", value.asInstanceOf[js.Any])
     
     inline def setDesiredShardLevelMetricsUndefined: Self = StObject.set(x, "DesiredShardLevelMetrics", js.undefined)
     
-    inline def setDesiredShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "DesiredShardLevelMetrics", js.Array(value :_*))
+    inline def setDesiredShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "DesiredShardLevelMetrics", js.Array(value*))
     
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     

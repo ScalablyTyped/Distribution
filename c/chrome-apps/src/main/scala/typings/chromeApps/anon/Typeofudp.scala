@@ -8,7 +8,6 @@ import typings.chromeApps.chrome.sockets.ReceiveEventArgs
 import typings.chromeApps.chrome.sockets.SendInfo
 import typings.chromeApps.chrome.sockets.SocketInfo
 import typings.chromeApps.chrome.sockets.SocketProperties
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -153,7 +152,7 @@ trait Typeofudp extends StObject {
     */
   def send(
     socketId: integer,
-    data: ArrayBuffer,
+    data: js.typedarray.ArrayBuffer,
     address: String,
     port: integer,
     callback: js.Function1[/* sendInfo */ SendInfo, Unit]

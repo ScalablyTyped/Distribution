@@ -1,5 +1,6 @@
 package typings.mapboxMapboxSdk
 
+import typings.mapboxMapboxSdk.anon.TokenId
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
@@ -17,6 +18,8 @@ object tokensMod {
   
   trait CreateTokenRequest extends StObject {
     
+    var allowedUrls: js.UndefOr[js.Array[String]] = js.undefined
+    
     var note: js.UndefOr[String] = js.undefined
     
     var resources: js.UndefOr[js.Array[String]] = js.undefined
@@ -32,6 +35,12 @@ object tokensMod {
     
     extension [Self <: CreateTokenRequest](x: Self) {
       
+      inline def setAllowedUrls(value: js.Array[String]): Self = StObject.set(x, "allowedUrls", value.asInstanceOf[js.Any])
+      
+      inline def setAllowedUrlsUndefined: Self = StObject.set(x, "allowedUrls", js.undefined)
+      
+      inline def setAllowedUrlsVarargs(value: String*): Self = StObject.set(x, "allowedUrls", js.Array(value*))
+      
       inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
       inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
@@ -40,13 +49,13 @@ object tokensMod {
       
       inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     }
   }
   
@@ -94,7 +103,7 @@ object tokensMod {
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     }
   }
   
@@ -178,7 +187,7 @@ object tokensMod {
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
@@ -213,51 +222,51 @@ object tokensMod {
       * Create a new temporary access token.
       * @param request
       */
-    def createTemporaryToken(request: TemporaryTokenRequest): MapiRequest
+    def createTemporaryToken(request: TemporaryTokenRequest): MapiRequest[Any]
     
     /**
       * Create a new access token.
       * @param request
       */
-    def createToken(request: CreateTokenRequest): MapiRequest
+    def createToken(request: CreateTokenRequest): MapiRequest[Any]
     
     /**
       * Delete an access token.
       * @param request
       */
-    def deleteToken(request: UpdateDeleteTokenRequest): MapiRequest
+    def deleteToken(request: TokenId): MapiRequest[Any]
     
     /**
       * Get data about the client's access token.
       */
-    def getToken(): MapiRequest
+    def getToken(): MapiRequest[Any]
     
     /**
       * List your available scopes. Each item is a metadata object about the scope, not just the string scope.
       */
-    def listScopes(): MapiRequest
+    def listScopes(): MapiRequest[Any]
     
     /**
       * List your access tokens.
       */
-    def listTokens(): MapiRequest
+    def listTokens(): MapiRequest[Any]
     
     /**
       * Update an access token.
       * @param request
       */
-    def updateToken(request: UpdateDeleteTokenRequest): MapiRequest
+    def updateToken(request: UpdateTokenRequest): MapiRequest[Any]
   }
   object TokensService {
     
     inline def apply(
-      createTemporaryToken: TemporaryTokenRequest => MapiRequest,
-      createToken: CreateTokenRequest => MapiRequest,
-      deleteToken: UpdateDeleteTokenRequest => MapiRequest,
-      getToken: () => MapiRequest,
-      listScopes: () => MapiRequest,
-      listTokens: () => MapiRequest,
-      updateToken: UpdateDeleteTokenRequest => MapiRequest
+      createTemporaryToken: TemporaryTokenRequest => MapiRequest[Any],
+      createToken: CreateTokenRequest => MapiRequest[Any],
+      deleteToken: TokenId => MapiRequest[Any],
+      getToken: () => MapiRequest[Any],
+      listScopes: () => MapiRequest[Any],
+      listTokens: () => MapiRequest[Any],
+      updateToken: UpdateTokenRequest => MapiRequest[Any]
     ): TokensService = {
       val __obj = js.Dynamic.literal(createTemporaryToken = js.Any.fromFunction1(createTemporaryToken), createToken = js.Any.fromFunction1(createToken), deleteToken = js.Any.fromFunction1(deleteToken), getToken = js.Any.fromFunction0(getToken), listScopes = js.Any.fromFunction0(listScopes), listTokens = js.Any.fromFunction0(listTokens), updateToken = js.Any.fromFunction1(updateToken))
       __obj.asInstanceOf[TokensService]
@@ -265,36 +274,36 @@ object tokensMod {
     
     extension [Self <: TokensService](x: Self) {
       
-      inline def setCreateTemporaryToken(value: TemporaryTokenRequest => MapiRequest): Self = StObject.set(x, "createTemporaryToken", js.Any.fromFunction1(value))
+      inline def setCreateTemporaryToken(value: TemporaryTokenRequest => MapiRequest[Any]): Self = StObject.set(x, "createTemporaryToken", js.Any.fromFunction1(value))
       
-      inline def setCreateToken(value: CreateTokenRequest => MapiRequest): Self = StObject.set(x, "createToken", js.Any.fromFunction1(value))
+      inline def setCreateToken(value: CreateTokenRequest => MapiRequest[Any]): Self = StObject.set(x, "createToken", js.Any.fromFunction1(value))
       
-      inline def setDeleteToken(value: UpdateDeleteTokenRequest => MapiRequest): Self = StObject.set(x, "deleteToken", js.Any.fromFunction1(value))
+      inline def setDeleteToken(value: TokenId => MapiRequest[Any]): Self = StObject.set(x, "deleteToken", js.Any.fromFunction1(value))
       
-      inline def setGetToken(value: () => MapiRequest): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
+      inline def setGetToken(value: () => MapiRequest[Any]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
       
-      inline def setListScopes(value: () => MapiRequest): Self = StObject.set(x, "listScopes", js.Any.fromFunction0(value))
+      inline def setListScopes(value: () => MapiRequest[Any]): Self = StObject.set(x, "listScopes", js.Any.fromFunction0(value))
       
-      inline def setListTokens(value: () => MapiRequest): Self = StObject.set(x, "listTokens", js.Any.fromFunction0(value))
+      inline def setListTokens(value: () => MapiRequest[Any]): Self = StObject.set(x, "listTokens", js.Any.fromFunction0(value))
       
-      inline def setUpdateToken(value: UpdateDeleteTokenRequest => MapiRequest): Self = StObject.set(x, "updateToken", js.Any.fromFunction1(value))
+      inline def setUpdateToken(value: UpdateTokenRequest => MapiRequest[Any]): Self = StObject.set(x, "updateToken", js.Any.fromFunction1(value))
     }
   }
   
-  trait UpdateDeleteTokenRequest
+  trait UpdateTokenRequest
     extends StObject
        with CreateTokenRequest {
     
     var tokenId: String
   }
-  object UpdateDeleteTokenRequest {
+  object UpdateTokenRequest {
     
-    inline def apply(tokenId: String): UpdateDeleteTokenRequest = {
+    inline def apply(tokenId: String): UpdateTokenRequest = {
       val __obj = js.Dynamic.literal(tokenId = tokenId.asInstanceOf[js.Any])
-      __obj.asInstanceOf[UpdateDeleteTokenRequest]
+      __obj.asInstanceOf[UpdateTokenRequest]
     }
     
-    extension [Self <: UpdateDeleteTokenRequest](x: Self) {
+    extension [Self <: UpdateTokenRequest](x: Self) {
       
       inline def setTokenId(value: String): Self = StObject.set(x, "tokenId", value.asInstanceOf[js.Any])
     }

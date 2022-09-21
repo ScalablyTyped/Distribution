@@ -24,7 +24,7 @@ object logMod {
   
   @JSImport("sip.js/lib/core/log", "Logger")
   @js.native
-  class Logger protected ()
+  open class Logger protected ()
     extends typings.sipJs.loggerMod.Logger {
     def this(logger: typings.sipJs.loggerFactoryMod.LoggerFactory, category: String) = this()
     def this(logger: typings.sipJs.loggerFactoryMod.LoggerFactory, category: String, label: String) = this()
@@ -32,6 +32,6 @@ object logMod {
   
   @JSImport("sip.js/lib/core/log", "LoggerFactory")
   @js.native
-  class LoggerFactory ()
+  open class LoggerFactory ()
     extends typings.sipJs.loggerFactoryMod.LoggerFactory
 }

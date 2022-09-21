@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JQuery extends StObject {
   
-  def foundation(method: String, args: js.Any*): JQuery = js.native
-  def foundation(method: js.Array[js.Any], args: js.Any*): JQuery = js.native
-  def foundation(method: Unit, args: js.Any*): JQuery = js.native
+  def foundation(method: String, args: Any*): JQuery = js.native
+  def foundation(method: js.Array[Any], args: Any*): JQuery = js.native
+  def foundation(method: Unit, args: Any*): JQuery = js.native
 }

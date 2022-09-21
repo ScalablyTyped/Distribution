@@ -6,19 +6,8 @@ import typings.dynamodb.dynamodbStrings.Binary
 import typings.dynamodb.dynamodbStrings.INCLUDE
 import typings.dynamodb.dynamodbStrings.KEYS_ONLY
 import typings.dynamodb.dynamodbStrings.Number
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Stream
-import typings.std.ArrayBuffer
-import typings.std.DataView
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,13 +36,13 @@ object dynamoDBMod {
       
       inline def setValues(value: js.Array[binaryType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: binaryType*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: binaryType*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
-  type DocumentClient = js.Any
+  type DocumentClient = Any
   
-  type DynamoDB = js.Any
+  type DynamoDB = Any
   
   /* Rewritten from type alias, can be one of: 
     - typings.dynamodb.dynamoDBMod.StringSet
@@ -111,7 +100,7 @@ object dynamoDBMod {
       
       inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      inline def setAttributesToGetVarargs(value: String*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: String*): Self = StObject.set(x, "AttributesToGet", js.Array(value*))
       
       inline def setConsistentRead(value: Boolean): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
@@ -157,7 +146,7 @@ object dynamoDBMod {
       
       inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -180,7 +169,7 @@ object dynamoDBMod {
       
       inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
       
-      inline def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
+      inline def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value*))
       
       inline def setProjectionType(value: ALL | KEYS_ONLY | INCLUDE | String): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
       
@@ -210,9 +199,9 @@ object dynamoDBMod {
       
       inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
-  type binaryType = Buffer | js.Object | ArrayBuffer | DataView | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array | Stream
+  type binaryType = Buffer | js.Object | js.typedarray.ArrayBuffer | js.typedarray.DataView | js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array | Stream
 }

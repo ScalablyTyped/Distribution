@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs an empty Node.
   * @param {EnumValue=} type if not supplied, the default Panel type is Panel.Position.
   */
-class Node () extends Part {
+open class Node () extends Part {
   def this(`type`: EnumValue) = this()
   
   /**Gets or sets whether this Node is to be avoided by Links whose Link.routing is Link.AvoidsNodes.*/

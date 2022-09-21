@@ -9,7 +9,7 @@ object opacityMod {
   
   @JSImport("@antv/attr/lib/attributes/opacity", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.antvAttr.baseMod.default {
     def this(cfg: AttributeCfg) = this()
   }

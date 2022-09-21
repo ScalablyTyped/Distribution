@@ -1,7 +1,7 @@
 
 # Scala.js typings for rtlcss
 
-Typings are for version 2.4
+Typings are for version 3.5
 
 ## Library description:
 Framework for transforming cascading style sheets (CSS) from left-to-right (LTR) to right-to-left (RTL)
@@ -10,10 +10,10 @@ Framework for transforming cascading style sheets (CSS) from left-to-right (LTR)
 | ------------------ | :-------------: |
 | Full name          | rtlcss |
 | Keywords           | rtl, css, ltr, rtlcss, framework, style, mirror, flip, convert, transform |
-| # releases         | 8 |
-| # dependents       | 55 |
-| # downloads        | 7016521 |
-| # stars            | 8 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1545001.0 |
+| # stars            | 1521.0 |
 
 ## Links
 - [Homepage](https://rtlcss.com/)

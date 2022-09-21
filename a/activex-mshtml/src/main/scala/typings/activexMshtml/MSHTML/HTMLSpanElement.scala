@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLSpanElement extends StObject {
   
   def FireEvent(bstrEventName: String): Boolean = js.native
-  def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
+  def FireEvent(bstrEventName: String, pvarEventObject: Any): Boolean = js.native
   
   /* private */ @JSName("MSHTML.HTMLSpanElement_typekey")
   var MSHTMLDotHTMLSpanElement_typekey: HTMLSpanElement = js.native
@@ -16,11 +16,11 @@ trait HTMLSpanElement extends StObject {
   var accessKey: String = js.native
   
   def addBehavior(bstrURL: String): Double = js.native
-  def addBehavior(bstrURL: String, pvarFactory: js.Any): Double = js.native
+  def addBehavior(bstrURL: String, pvarFactory: Any): Double = js.native
   
-  def addFilter(pUnk: js.Any): Unit = js.native
+  def addFilter(pUnk: Any): Unit = js.native
   
-  val all: js.Any = js.native
+  val all: Any = js.native
   
   def appendChild(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
@@ -80,11 +80,11 @@ trait HTMLSpanElement extends StObject {
   
   var ariaValuenow: String = js.native
   
-  def attachEvent(event: String, pdisp: js.Any): Boolean = js.native
+  def attachEvent(event: String, pdisp: Any): Boolean = js.native
   
-  val attributes: js.Any = js.native
+  val attributes: Any = js.native
   
-  val behaviorUrns: js.Any = js.native
+  val behaviorUrns: Any = js.native
   
   def blur(): Unit = js.native
   
@@ -92,9 +92,9 @@ trait HTMLSpanElement extends StObject {
   
   val canHaveHTML: Boolean = js.native
   
-  val childNodes: js.Any = js.native
+  val childNodes: Any = js.native
   
-  val children: js.Any = js.native
+  val children: Any = js.native
   
   var className: String = js.native
   
@@ -116,13 +116,13 @@ trait HTMLSpanElement extends StObject {
   
   def componentFromPoint(x: Double, y: Double): String = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   def contains(pChild: IHTMLElement): Boolean = js.native
   
   var contentEditable: String = js.native
   
-  def createControlRange(): js.Any = js.native
+  def createControlRange(): Any = js.native
   
   val currentStyle: IHTMLCurrentStyle = js.native
   
@@ -132,20 +132,20 @@ trait HTMLSpanElement extends StObject {
   
   var dataSrc: String = js.native
   
-  def detachEvent(event: String, pdisp: js.Any): Unit = js.native
+  def detachEvent(event: String, pdisp: Any): Unit = js.native
   
   var dir: String = js.native
   
   var disabled: Boolean = js.native
   
   def doScroll(): Unit = js.native
-  def doScroll(component: js.Any): Unit = js.native
+  def doScroll(component: Any): Unit = js.native
   
-  val document: js.Any = js.native
+  val document: Any = js.native
   
   def dragDrop(): Boolean = js.native
   
-  def filters(pvarIndex: js.Any): js.Any = js.native
+  def filters(pvarIndex: Any): Any = js.native
   @JSName("filters")
   val filters_Original: IHTMLFiltersCollection = js.native
   
@@ -156,14 +156,14 @@ trait HTMLSpanElement extends StObject {
   def getAdjacentText(where: String): String = js.native
   
   /** @param lFlags [lFlags=0] */
-  def getAttribute(strAttributeName: String): js.Any = js.native
-  def getAttribute(strAttributeName: String, lFlags: Double): js.Any = js.native
+  def getAttribute(strAttributeName: String): Any = js.native
+  def getAttribute(strAttributeName: String, lFlags: Double): Any = js.native
   
-  def getAttributeNS(pvarNS: js.Any, strAttributeName: String): js.Any = js.native
+  def getAttributeNS(pvarNS: Any, strAttributeName: String): Any = js.native
   
   def getAttributeNode(bstrName: String): IHTMLDOMAttribute = js.native
   
-  def getAttributeNodeNS(pvarNS: js.Any, bstrName: String): IHTMLDOMAttribute2 = js.native
+  def getAttributeNodeNS(pvarNS: Any, bstrName: String): IHTMLDOMAttribute2 = js.native
   
   def getBoundingClientRect(): IHTMLRect = js.native
   
@@ -173,13 +173,13 @@ trait HTMLSpanElement extends StObject {
   
   def getElementsByTagName(v: String): IHTMLElementCollection = js.native
   
-  def getElementsByTagNameNS(varNS: js.Any, bstrLocalName: String): IHTMLElementCollection = js.native
+  def getElementsByTagNameNS(varNS: Any, bstrLocalName: String): IHTMLElementCollection = js.native
   
-  def getExpression(propname: String): js.Any = js.native
+  def getExpression(propname: String): Any = js.native
   
   def hasAttribute(name: String): Boolean = js.native
   
-  def hasAttributeNS(pvarNS: js.Any, name: String): Boolean = js.native
+  def hasAttributeNS(pvarNS: Any, name: String): Boolean = js.native
   
   def hasAttributes(): Boolean = js.native
   
@@ -191,7 +191,7 @@ trait HTMLSpanElement extends StObject {
   
   val ie8_attributes: IHTMLAttributeCollection3 = js.native
   
-  def ie8_getAttribute(strAttributeName: String): js.Any = js.native
+  def ie8_getAttribute(strAttributeName: String): Any = js.native
   
   def ie8_getAttributeNode(bstrName: String): IHTMLDOMAttribute2 = js.native
   
@@ -199,13 +199,13 @@ trait HTMLSpanElement extends StObject {
   
   def ie8_removeAttributeNode(pattr: IHTMLDOMAttribute2): IHTMLDOMAttribute2 = js.native
   
-  def ie8_setAttribute(strAttributeName: String, AttributeValue: js.Any): Unit = js.native
+  def ie8_setAttribute(strAttributeName: String, AttributeValue: Any): Unit = js.native
   
   def ie8_setAttributeNode(pattr: IHTMLDOMAttribute2): IHTMLDOMAttribute2 = js.native
   
   def ie9_appendChild(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
-  def ie9_getAttribute(strAttributeName: String): js.Any = js.native
+  def ie9_getAttribute(strAttributeName: String): Any = js.native
   
   def ie9_getAttributeNode(strAttributeName: String): IHTMLDOMAttribute2 = js.native
   
@@ -214,7 +214,7 @@ trait HTMLSpanElement extends StObject {
   def ie9_hasAttributes(): Boolean = js.native
   
   def ie9_insertBefore(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
-  def ie9_insertBefore(newChild: IHTMLDOMNode, refChild: js.Any): IHTMLDOMNode = js.native
+  def ie9_insertBefore(newChild: IHTMLDOMNode, refChild: Any): IHTMLDOMNode = js.native
   
   val ie9_nodeName: String = js.native
   
@@ -226,7 +226,7 @@ trait HTMLSpanElement extends StObject {
   
   def ie9_replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
-  def ie9_setAttribute(strAttributeName: String, pvarAttributeValue: js.Any): Unit = js.native
+  def ie9_setAttribute(strAttributeName: String, pvarAttributeValue: Any): Unit = js.native
   
   def ie9_setAttributeNode(pattr: IHTMLDOMAttribute2): IHTMLDOMAttribute2 = js.native
   
@@ -243,11 +243,11 @@ trait HTMLSpanElement extends StObject {
   def insertAdjacentText(where: String, text: String): Unit = js.native
   
   def insertBefore(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
-  def insertBefore(newChild: IHTMLDOMNode, refChild: js.Any): IHTMLDOMNode = js.native
+  def insertBefore(newChild: IHTMLDOMNode, refChild: Any): IHTMLDOMNode = js.native
   
   val isContentEditable: Boolean = js.native
   
-  def isDefaultNamespace(pvarNamespace: js.Any): Boolean = js.native
+  def isDefaultNamespace(pvarNamespace: Any): Boolean = js.native
   
   val isDisabled: Boolean = js.native
   
@@ -257,7 +257,7 @@ trait HTMLSpanElement extends StObject {
   
   def isSameNode(otherNode: IHTMLDOMNode3): Boolean = js.native
   
-  def isSupported(feature: String, version: js.Any): Boolean = js.native
+  def isSupported(feature: String, version: Any): Boolean = js.native
   
   val isTextEdit: Boolean = js.native
   
@@ -267,14 +267,14 @@ trait HTMLSpanElement extends StObject {
   
   val lastChild: IHTMLDOMNode = js.native
   
-  val localName: js.Any = js.native
+  val localName: Any = js.native
   
-  def lookupNamespaceURI(pvarPrefix: js.Any): js.Any = js.native
+  def lookupNamespaceURI(pvarPrefix: Any): Any = js.native
   
-  def lookupPrefix(pvarNamespaceURI: js.Any): js.Any = js.native
+  def lookupPrefix(pvarNamespaceURI: Any): Any = js.native
   
   def mergeAttributes(mergeThis: IHTMLElement): Unit = js.native
-  def mergeAttributes(mergeThis: IHTMLElement, pvarFlags: js.Any): Unit = js.native
+  def mergeAttributes(mergeThis: IHTMLElement, pvarFlags: Any): Unit = js.native
   
   def msMatchesSelector(v: String): Boolean = js.native
   
@@ -282,7 +282,7 @@ trait HTMLSpanElement extends StObject {
   
   def msSetPointerCapture(pointerId: Double): Unit = js.native
   
-  val namespaceURI: js.Any = js.native
+  val namespaceURI: Any = js.native
   
   val nextSibling: IHTMLDOMNode = js.native
   
@@ -290,7 +290,7 @@ trait HTMLSpanElement extends StObject {
   
   val nodeType: Double = js.native
   
-  var nodeValue: js.Any = js.native
+  var nodeValue: Any = js.native
   
   def normalize(): Unit = js.native
   
@@ -304,241 +304,241 @@ trait HTMLSpanElement extends StObject {
   
   val offsetWidth: Double = js.native
   
-  var onabort: js.Any = js.native
+  var onabort: Any = js.native
   
-  var onactivate: js.Any = js.native
+  var onactivate: Any = js.native
   
-  var onafterupdate: js.Any = js.native
+  var onafterupdate: Any = js.native
   
-  var onbeforeactivate: js.Any = js.native
+  var onbeforeactivate: Any = js.native
   
-  var onbeforecopy: js.Any = js.native
+  var onbeforecopy: Any = js.native
   
-  var onbeforecut: js.Any = js.native
+  var onbeforecut: Any = js.native
   
-  var onbeforedeactivate: js.Any = js.native
+  var onbeforedeactivate: Any = js.native
   
-  var onbeforeeditfocus: js.Any = js.native
+  var onbeforeeditfocus: Any = js.native
   
-  var onbeforepaste: js.Any = js.native
+  var onbeforepaste: Any = js.native
   
-  var onbeforeupdate: js.Any = js.native
+  var onbeforeupdate: Any = js.native
   
-  var onblur: js.Any = js.native
+  var onblur: Any = js.native
   
-  var oncanplay: js.Any = js.native
+  var oncanplay: Any = js.native
   
-  var oncanplaythrough: js.Any = js.native
+  var oncanplaythrough: Any = js.native
   
-  var oncellchange: js.Any = js.native
+  var oncellchange: Any = js.native
   
-  var onchange: js.Any = js.native
+  var onchange: Any = js.native
   
-  var onclick: js.Any = js.native
+  var onclick: Any = js.native
   
-  var oncontextmenu: js.Any = js.native
+  var oncontextmenu: Any = js.native
   
-  var oncontrolselect: js.Any = js.native
+  var oncontrolselect: Any = js.native
   
-  var oncopy: js.Any = js.native
+  var oncopy: Any = js.native
   
-  var oncuechange: js.Any = js.native
+  var oncuechange: Any = js.native
   
-  var oncut: js.Any = js.native
+  var oncut: Any = js.native
   
-  var ondataavailable: js.Any = js.native
+  var ondataavailable: Any = js.native
   
-  var ondatasetchanged: js.Any = js.native
+  var ondatasetchanged: Any = js.native
   
-  var ondatasetcomplete: js.Any = js.native
+  var ondatasetcomplete: Any = js.native
   
-  var ondblclick: js.Any = js.native
+  var ondblclick: Any = js.native
   
-  var ondeactivate: js.Any = js.native
+  var ondeactivate: Any = js.native
   
-  var ondrag: js.Any = js.native
+  var ondrag: Any = js.native
   
-  var ondragend: js.Any = js.native
+  var ondragend: Any = js.native
   
-  var ondragenter: js.Any = js.native
+  var ondragenter: Any = js.native
   
-  var ondragleave: js.Any = js.native
+  var ondragleave: Any = js.native
   
-  var ondragover: js.Any = js.native
+  var ondragover: Any = js.native
   
-  var ondragstart: js.Any = js.native
+  var ondragstart: Any = js.native
   
-  var ondrop: js.Any = js.native
+  var ondrop: Any = js.native
   
-  var ondurationchange: js.Any = js.native
+  var ondurationchange: Any = js.native
   
-  var onemptied: js.Any = js.native
+  var onemptied: Any = js.native
   
-  var onended: js.Any = js.native
+  var onended: Any = js.native
   
-  var onerror: js.Any = js.native
+  var onerror: Any = js.native
   
-  var onerrorupdate: js.Any = js.native
+  var onerrorupdate: Any = js.native
   
-  var onfilterchange: js.Any = js.native
+  var onfilterchange: Any = js.native
   
-  var onfocus: js.Any = js.native
+  var onfocus: Any = js.native
   
-  var onfocusin: js.Any = js.native
+  var onfocusin: Any = js.native
   
-  var onfocusout: js.Any = js.native
+  var onfocusout: Any = js.native
   
-  var onhelp: js.Any = js.native
+  var onhelp: Any = js.native
   
-  var oninput: js.Any = js.native
+  var oninput: Any = js.native
   
-  var oninvalid: js.Any = js.native
+  var oninvalid: Any = js.native
   
-  var onkeydown: js.Any = js.native
+  var onkeydown: Any = js.native
   
-  var onkeypress: js.Any = js.native
+  var onkeypress: Any = js.native
   
-  var onkeyup: js.Any = js.native
+  var onkeyup: Any = js.native
   
-  var onlayoutcomplete: js.Any = js.native
+  var onlayoutcomplete: Any = js.native
   
-  var onload: js.Any = js.native
+  var onload: Any = js.native
   
-  var onloadeddata: js.Any = js.native
+  var onloadeddata: Any = js.native
   
-  var onloadedmetadata: js.Any = js.native
+  var onloadedmetadata: Any = js.native
   
-  var onloadstart: js.Any = js.native
+  var onloadstart: Any = js.native
   
-  var onlosecapture: js.Any = js.native
+  var onlosecapture: Any = js.native
   
-  var onmousedown: js.Any = js.native
+  var onmousedown: Any = js.native
   
-  var onmouseenter: js.Any = js.native
+  var onmouseenter: Any = js.native
   
-  var onmouseleave: js.Any = js.native
+  var onmouseleave: Any = js.native
   
-  var onmousemove: js.Any = js.native
+  var onmousemove: Any = js.native
   
-  var onmouseout: js.Any = js.native
+  var onmouseout: Any = js.native
   
-  var onmouseover: js.Any = js.native
+  var onmouseover: Any = js.native
   
-  var onmouseup: js.Any = js.native
+  var onmouseup: Any = js.native
   
-  var onmousewheel: js.Any = js.native
+  var onmousewheel: Any = js.native
   
-  var onmove: js.Any = js.native
+  var onmove: Any = js.native
   
-  var onmoveend: js.Any = js.native
+  var onmoveend: Any = js.native
   
-  var onmovestart: js.Any = js.native
+  var onmovestart: Any = js.native
   
-  var onmsanimationend: js.Any = js.native
+  var onmsanimationend: Any = js.native
   
-  var onmsanimationiteration: js.Any = js.native
+  var onmsanimationiteration: Any = js.native
   
-  var onmsanimationstart: js.Any = js.native
+  var onmsanimationstart: Any = js.native
   
-  var onmsgesturechange: js.Any = js.native
+  var onmsgesturechange: Any = js.native
   
-  var onmsgesturedoubletap: js.Any = js.native
+  var onmsgesturedoubletap: Any = js.native
   
-  var onmsgestureend: js.Any = js.native
+  var onmsgestureend: Any = js.native
   
-  var onmsgesturehold: js.Any = js.native
+  var onmsgesturehold: Any = js.native
   
-  var onmsgesturestart: js.Any = js.native
+  var onmsgesturestart: Any = js.native
   
-  var onmsgesturetap: js.Any = js.native
+  var onmsgesturetap: Any = js.native
   
-  var onmsgotpointercapture: js.Any = js.native
+  var onmsgotpointercapture: Any = js.native
   
-  var onmsinertiastart: js.Any = js.native
+  var onmsinertiastart: Any = js.native
   
-  var onmslostpointercapture: js.Any = js.native
+  var onmslostpointercapture: Any = js.native
   
-  var onmsmanipulationstatechanged: js.Any = js.native
+  var onmsmanipulationstatechanged: Any = js.native
   
-  var onmspointercancel: js.Any = js.native
+  var onmspointercancel: Any = js.native
   
-  var onmspointerdown: js.Any = js.native
+  var onmspointerdown: Any = js.native
   
-  var onmspointerhover: js.Any = js.native
+  var onmspointerhover: Any = js.native
   
-  var onmspointermove: js.Any = js.native
+  var onmspointermove: Any = js.native
   
-  var onmspointerout: js.Any = js.native
+  var onmspointerout: Any = js.native
   
-  var onmspointerover: js.Any = js.native
+  var onmspointerover: Any = js.native
   
-  var onmspointerup: js.Any = js.native
+  var onmspointerup: Any = js.native
   
-  var onmstransitionend: js.Any = js.native
+  var onmstransitionend: Any = js.native
   
-  var onmstransitionstart: js.Any = js.native
+  var onmstransitionstart: Any = js.native
   
-  var onpage: js.Any = js.native
+  var onpage: Any = js.native
   
-  var onpaste: js.Any = js.native
+  var onpaste: Any = js.native
   
-  var onpause: js.Any = js.native
+  var onpause: Any = js.native
   
-  var onplay: js.Any = js.native
+  var onplay: Any = js.native
   
-  var onplaying: js.Any = js.native
+  var onplaying: Any = js.native
   
-  var onprogress: js.Any = js.native
+  var onprogress: Any = js.native
   
-  var onpropertychange: js.Any = js.native
+  var onpropertychange: Any = js.native
   
-  var onratechange: js.Any = js.native
+  var onratechange: Any = js.native
   
-  var onreadystatechange: js.Any = js.native
+  var onreadystatechange: Any = js.native
   
-  var onreset: js.Any = js.native
+  var onreset: Any = js.native
   
-  var onresize: js.Any = js.native
+  var onresize: Any = js.native
   
-  var onresizeend: js.Any = js.native
+  var onresizeend: Any = js.native
   
-  var onresizestart: js.Any = js.native
+  var onresizestart: Any = js.native
   
-  var onrowenter: js.Any = js.native
+  var onrowenter: Any = js.native
   
-  var onrowexit: js.Any = js.native
+  var onrowexit: Any = js.native
   
-  var onrowsdelete: js.Any = js.native
+  var onrowsdelete: Any = js.native
   
-  var onrowsinserted: js.Any = js.native
+  var onrowsinserted: Any = js.native
   
-  var onscroll: js.Any = js.native
+  var onscroll: Any = js.native
   
-  var onseeked: js.Any = js.native
+  var onseeked: Any = js.native
   
-  var onseeking: js.Any = js.native
+  var onseeking: Any = js.native
   
-  var onselect: js.Any = js.native
+  var onselect: Any = js.native
   
-  var onselectstart: js.Any = js.native
+  var onselectstart: Any = js.native
   
-  var onstalled: js.Any = js.native
+  var onstalled: Any = js.native
   
-  var onsubmit: js.Any = js.native
+  var onsubmit: Any = js.native
   
-  var onsuspend: js.Any = js.native
+  var onsuspend: Any = js.native
   
-  var ontimeupdate: js.Any = js.native
+  var ontimeupdate: Any = js.native
   
-  var onvolumechange: js.Any = js.native
+  var onvolumechange: Any = js.native
   
-  var onwaiting: js.Any = js.native
+  var onwaiting: Any = js.native
   
   var outerHTML: String = js.native
   
   var outerText: String = js.native
   
-  val ownerDocument: js.Any = js.native
+  val ownerDocument: Any = js.native
   
   val parentElement: IHTMLElement = js.native
   
@@ -546,7 +546,7 @@ trait HTMLSpanElement extends StObject {
   
   val parentTextEdit: IHTMLElement = js.native
   
-  var prefix: js.Any = js.native
+  var prefix: Any = js.native
   
   val previousSibling: IHTMLDOMNode = js.native
   
@@ -554,9 +554,9 @@ trait HTMLSpanElement extends StObject {
   
   def querySelectorAll(v: String): IHTMLDOMChildrenCollection = js.native
   
-  val readyState: js.Any = js.native
+  val readyState: Any = js.native
   
-  val recordNumber: js.Any = js.native
+  val recordNumber: Any = js.native
   
   def releaseCapture(): Unit = js.native
   
@@ -564,7 +564,7 @@ trait HTMLSpanElement extends StObject {
   def removeAttribute(strAttributeName: String): Boolean = js.native
   def removeAttribute(strAttributeName: String, lFlags: Double): Boolean = js.native
   
-  def removeAttributeNS(pvarNS: js.Any, strAttributeName: String): Unit = js.native
+  def removeAttributeNS(pvarNS: Any, strAttributeName: String): Unit = js.native
   
   def removeAttributeNode(pattr: IHTMLDOMAttribute): IHTMLDOMAttribute = js.native
   
@@ -574,7 +574,7 @@ trait HTMLSpanElement extends StObject {
   
   def removeExpression(propname: String): Boolean = js.native
   
-  def removeFilter(pUnk: js.Any): Unit = js.native
+  def removeFilter(pUnk: Any): Unit = js.native
   
   /** @param fDeep [fDeep=false] */
   def removeNode(): IHTMLDOMNode = js.native
@@ -595,7 +595,7 @@ trait HTMLSpanElement extends StObject {
   val scrollHeight: Double = js.native
   
   def scrollIntoView(): Unit = js.native
-  def scrollIntoView(varargStart: js.Any): Unit = js.native
+  def scrollIntoView(varargStart: Any): Unit = js.native
   
   var scrollLeft: Double = js.native
   
@@ -606,10 +606,10 @@ trait HTMLSpanElement extends StObject {
   def setActive(): Unit = js.native
   
   /** @param lFlags [lFlags=1] */
-  def setAttribute(strAttributeName: String, AttributeValue: js.Any): Unit = js.native
-  def setAttribute(strAttributeName: String, AttributeValue: js.Any, lFlags: Double): Unit = js.native
+  def setAttribute(strAttributeName: String, AttributeValue: Any): Unit = js.native
+  def setAttribute(strAttributeName: String, AttributeValue: Any, lFlags: Double): Unit = js.native
   
-  def setAttributeNS(pvarNS: js.Any, strAttributeName: String, pvarAttributeValue: js.Any): Unit = js.native
+  def setAttributeNS(pvarNS: Any, strAttributeName: String, pvarAttributeValue: Any): Unit = js.native
   
   def setAttributeNode(pattr: IHTMLDOMAttribute): IHTMLDOMAttribute = js.native
   
@@ -625,7 +625,7 @@ trait HTMLSpanElement extends StObject {
   
   val sourceIndex: Double = js.native
   
-  var spellcheck: js.Any = js.native
+  var spellcheck: Any = js.native
   
   val style: IHTMLStyle = js.native
   
@@ -637,7 +637,7 @@ trait HTMLSpanElement extends StObject {
   
   var tagUrn: String = js.native
   
-  var textContent: js.Any = js.native
+  var textContent: Any = js.native
   
   var title: String = js.native
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.SortingExpressionsManager")
 @js.native
-class SortingExpressionsManager ()
+open class SortingExpressionsManager ()
   extends StObject
      with typings.igniteUi.Infragistics.SortingExpressionsManager {
   

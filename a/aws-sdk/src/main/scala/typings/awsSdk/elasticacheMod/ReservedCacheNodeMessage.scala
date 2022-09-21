@@ -33,6 +33,6 @@ object ReservedCacheNodeMessage {
     
     inline def setReservedCacheNodesUndefined: Self = StObject.set(x, "ReservedCacheNodes", js.undefined)
     
-    inline def setReservedCacheNodesVarargs(value: ReservedCacheNode*): Self = StObject.set(x, "ReservedCacheNodes", js.Array(value :_*))
+    inline def setReservedCacheNodesVarargs(value: ReservedCacheNode*): Self = StObject.set(x, "ReservedCacheNodes", js.Array(value*))
   }
 }

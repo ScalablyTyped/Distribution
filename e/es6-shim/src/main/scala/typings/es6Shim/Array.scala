@@ -54,7 +54,7 @@ trait Array[T] extends StObject {
   def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], Boolean]): js.UndefOr[T] = js.native
   def find(
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): js.UndefOr[T] = js.native
   
   /**
@@ -66,7 +66,7 @@ trait Array[T] extends StObject {
     * predicate. If it is not provided, undefined is used instead.
     */
   def findIndex(predicate: js.Function1[/* value */ T, Boolean]): Double = js.native
-  def findIndex(predicate: js.Function1[/* value */ T, Boolean], thisArg: js.Any): Double = js.native
+  def findIndex(predicate: js.Function1[/* value */ T, Boolean], thisArg: Any): Double = js.native
   
   /**
     * Returns an list of keys in the array

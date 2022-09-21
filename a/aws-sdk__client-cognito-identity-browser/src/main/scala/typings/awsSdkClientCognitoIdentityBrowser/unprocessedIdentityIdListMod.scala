@@ -8,5 +8,5 @@ object unprocessedIdentityIdListMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/_UnprocessedIdentityIdList", "_UnprocessedIdentityIdList")
   @js.native
-  val UnprocessedIdentityIdList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val UnprocessedIdentityIdList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

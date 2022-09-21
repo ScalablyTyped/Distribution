@@ -1,34 +1,29 @@
 package typings.errCode
 
-import typings.errCode.anon.Code
-import typings.errCode.anon.CodeNonNullable
-import typings.errCode.anon.`0`
-import typings.errCode.anon.`1`
-import typings.errCode.anon.`2`
-import typings.errCode.anon.`3`
-import typings.std.Error
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err): Err & Props = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Err & Props]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: String): Err & Props & CodeNonNullable = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Err & Props & CodeNonNullable]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: String, props: Props): Err & Props & CodeNonNullable = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Err & Props & CodeNonNullable]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: js.BigInt): Err & Props & `1` = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Err & Props & `1`]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: js.BigInt, props: Props): Err & Props & `1` = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Err & Props & `1`]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: Boolean): Err & Props & `0` = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Err & Props & `0`]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: Boolean, props: Props): Err & Props & `0` = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Err & Props & `0`]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: Double): Err & Props & Code = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Err & Props & Code]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: Double, props: Props): Err & Props & Code = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Err & Props & Code]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: Null, props: Props): Err & Props & `2` = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Err & Props & `2`]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, code: Unit, props: Props): Err & Props & `3` = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Err & Props & `3`]
-  inline def apply[Props /* <: js.Object */, Err /* <: Error */](error: Err, props: Props): Err & Props = (^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Err & Props]
+  /**
+    *
+    * @param {any} err - An Error
+    * @param {string|Extensions} code - A string code or props to set on the error
+    * @param {Extensions} [props] - Props to set on the error
+    * @returns {Error & Extensions}
+    */
+  inline def apply(err: Any, code: String): js.Error & Extensions = (^.asInstanceOf[js.Dynamic].apply(err.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Error & Extensions]
+  inline def apply(err: Any, code: String, props: Extensions): js.Error & Extensions = (^.asInstanceOf[js.Dynamic].apply(err.asInstanceOf[js.Any], code.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Error & Extensions]
+  inline def apply(err: Any, code: Extensions): js.Error & Extensions = (^.asInstanceOf[js.Dynamic].apply(err.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Error & Extensions]
+  inline def apply(err: Any, code: Extensions, props: Extensions): js.Error & Extensions = (^.asInstanceOf[js.Dynamic].apply(err.asInstanceOf[js.Any], code.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Error & Extensions]
   
   @JSImport("err-code", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  type Scalar = js.UndefOr[Double | String | Boolean | js.BigInt | Null]
+  type Err = js.Error
+  
+  type Extensions = StringDictionary[Any]
 }

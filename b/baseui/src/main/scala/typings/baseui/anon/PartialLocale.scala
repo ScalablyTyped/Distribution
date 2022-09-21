@@ -1,28 +1,47 @@
 package typings.baseui.anon
 
-import typings.dateFns.anon.DateTime
-import typings.dateFns.anon.Day
-import typings.dateFns.anon.FirstWeekContainsDateWeekStartsOn
+import typings.baseui.breadcrumbsLocaleMod.BreadcrumbLocale
+import typings.baseui.buttonGroupLocaleMod.ButtonGroupLocale
+import typings.baseui.dataTableLocaleMod.DataTableLocale
+import typings.baseui.datepickerLocaleMod.DatepickerLocale
+import typings.baseui.drawerLocaleMod.DrawerLocale
+import typings.baseui.fileUploaderLocaleMod.FileUploaderLocale
+import typings.baseui.localeMod.AccordionLocale
+import typings.baseui.menuLocaleMod.MenuLocale
+import typings.baseui.modalLocaleMod.ModalLocale
+import typings.baseui.paginationLocaleMod.PaginationLocale
+import typings.baseui.selectLocaleMod.SelectLocale
+import typings.baseui.toastLocaleMod.ToastLocale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<date-fns.Locale> */
+/* Inlined std.Partial<baseui.baseui/locale/types.Locale> */
 trait PartialLocale extends StObject {
   
-  var code: js.UndefOr[String] = js.undefined
+  var accordion: js.UndefOr[AccordionLocale] = js.undefined
   
-  var formatDistance: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var breadcrumbs: js.UndefOr[BreadcrumbLocale] = js.undefined
   
-  var formatLong: js.UndefOr[DateTime] = js.undefined
+  var buttongroup: js.UndefOr[ButtonGroupLocale] = js.undefined
   
-  var formatRelative: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var datatable: js.UndefOr[DataTableLocale] = js.undefined
   
-  var localize: js.UndefOr[Day] = js.undefined
+  var datepicker: js.UndefOr[DatepickerLocale] = js.undefined
   
-  var `match`: js.UndefOr[Day] = js.undefined
+  var drawer: js.UndefOr[DrawerLocale] = js.undefined
   
-  var options: js.UndefOr[FirstWeekContainsDateWeekStartsOn] = js.undefined
+  var fileuploader: js.UndefOr[FileUploaderLocale] = js.undefined
+  
+  var menu: js.UndefOr[MenuLocale] = js.undefined
+  
+  var modal: js.UndefOr[ModalLocale] = js.undefined
+  
+  var pagination: js.UndefOr[PaginationLocale] = js.undefined
+  
+  var select: js.UndefOr[SelectLocale] = js.undefined
+  
+  var toast: js.UndefOr[ToastLocale] = js.undefined
 }
 object PartialLocale {
   
@@ -33,32 +52,52 @@ object PartialLocale {
   
   extension [Self <: PartialLocale](x: Self) {
     
-    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setAccordion(value: AccordionLocale): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     
-    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
     
-    inline def setFormatDistance(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "formatDistance", js.Any.fromFunction1(value))
+    inline def setBreadcrumbs(value: BreadcrumbLocale): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
     
-    inline def setFormatDistanceUndefined: Self = StObject.set(x, "formatDistance", js.undefined)
+    inline def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
     
-    inline def setFormatLong(value: DateTime): Self = StObject.set(x, "formatLong", value.asInstanceOf[js.Any])
+    inline def setButtongroup(value: ButtonGroupLocale): Self = StObject.set(x, "buttongroup", value.asInstanceOf[js.Any])
     
-    inline def setFormatLongUndefined: Self = StObject.set(x, "formatLong", js.undefined)
+    inline def setButtongroupUndefined: Self = StObject.set(x, "buttongroup", js.undefined)
     
-    inline def setFormatRelative(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "formatRelative", js.Any.fromFunction1(value))
+    inline def setDatatable(value: DataTableLocale): Self = StObject.set(x, "datatable", value.asInstanceOf[js.Any])
     
-    inline def setFormatRelativeUndefined: Self = StObject.set(x, "formatRelative", js.undefined)
+    inline def setDatatableUndefined: Self = StObject.set(x, "datatable", js.undefined)
     
-    inline def setLocalize(value: Day): Self = StObject.set(x, "localize", value.asInstanceOf[js.Any])
+    inline def setDatepicker(value: DatepickerLocale): Self = StObject.set(x, "datepicker", value.asInstanceOf[js.Any])
     
-    inline def setLocalizeUndefined: Self = StObject.set(x, "localize", js.undefined)
+    inline def setDatepickerUndefined: Self = StObject.set(x, "datepicker", js.undefined)
     
-    inline def setMatch(value: Day): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setDrawer(value: DrawerLocale): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
     
-    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setDrawerUndefined: Self = StObject.set(x, "drawer", js.undefined)
     
-    inline def setOptions(value: FirstWeekContainsDateWeekStartsOn): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setFileuploader(value: FileUploaderLocale): Self = StObject.set(x, "fileuploader", value.asInstanceOf[js.Any])
     
-    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setFileuploaderUndefined: Self = StObject.set(x, "fileuploader", js.undefined)
+    
+    inline def setMenu(value: MenuLocale): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    
+    inline def setModal(value: ModalLocale): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    
+    inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+    
+    inline def setPagination(value: PaginationLocale): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+    
+    inline def setSelect(value: SelectLocale): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setToast(value: ToastLocale): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
+    
+    inline def setToastUndefined: Self = StObject.set(x, "toast", js.undefined)
   }
 }

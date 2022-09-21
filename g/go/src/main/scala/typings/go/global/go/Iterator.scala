@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("go.Iterator")
 @js.native
-class Iterator[T] ()
+open class Iterator[T] ()
   extends typings.go.mod.Iterator[T]

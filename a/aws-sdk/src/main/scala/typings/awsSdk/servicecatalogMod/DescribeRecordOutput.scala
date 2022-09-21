@@ -42,6 +42,6 @@ object DescribeRecordOutput {
     
     inline def setRecordOutputsUndefined: Self = StObject.set(x, "RecordOutputs", js.undefined)
     
-    inline def setRecordOutputsVarargs(value: RecordOutput*): Self = StObject.set(x, "RecordOutputs", js.Array(value :_*))
+    inline def setRecordOutputsVarargs(value: RecordOutput*): Self = StObject.set(x, "RecordOutputs", js.Array(value*))
   }
 }

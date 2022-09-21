@@ -12,9 +12,14 @@ trait EBSOptions extends StObject {
   var EBSEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the IOPD for a Provisioned IOPS EBS volume (SSD).
+    * Specifies the IOPS for Provisioned IOPS And GP3 EBS volume (SSD).
     */
   var Iops: js.UndefOr[IntegerClass] = js.undefined
+  
+  /**
+    * Specifies the Throughput for GP3 EBS volume (SSD).
+    */
+  var Throughput: js.UndefOr[IntegerClass] = js.undefined
   
   /**
     *  Integer to specify the size of an EBS volume.
@@ -42,6 +47,10 @@ object EBSOptions {
     inline def setIops(value: IntegerClass): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
     inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
+    
+    inline def setThroughput(value: IntegerClass): Self = StObject.set(x, "Throughput", value.asInstanceOf[js.Any])
+    
+    inline def setThroughputUndefined: Self = StObject.set(x, "Throughput", js.undefined)
     
     inline def setVolumeSize(value: IntegerClass): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     

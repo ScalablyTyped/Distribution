@@ -14,6 +14,8 @@ object ecmaVersionsMod {
     - typings.regexpp.regexppNumbers.`2018`
     - typings.regexpp.regexppNumbers.`2019`
     - typings.regexpp.regexppNumbers.`2020`
+    - typings.regexpp.regexppNumbers.`2021`
+    - typings.regexpp.regexppNumbers.`2022`
   */
   trait EcmaVersion extends StObject
   object EcmaVersion {
@@ -29,6 +31,10 @@ object ecmaVersionsMod {
     inline def `2019`: typings.regexpp.regexppNumbers.`2019` = 2019.asInstanceOf[typings.regexpp.regexppNumbers.`2019`]
     
     inline def `2020`: typings.regexpp.regexppNumbers.`2020` = 2020.asInstanceOf[typings.regexpp.regexppNumbers.`2020`]
+    
+    inline def `2021`: typings.regexpp.regexppNumbers.`2021` = 2021.asInstanceOf[typings.regexpp.regexppNumbers.`2021`]
+    
+    inline def `2022`: typings.regexpp.regexppNumbers.`2022` = 2022.asInstanceOf[typings.regexpp.regexppNumbers.`2022`]
     
     inline def `5`: typings.regexpp.regexppNumbers.`5` = 5.asInstanceOf[typings.regexpp.regexppNumbers.`5`]
   }

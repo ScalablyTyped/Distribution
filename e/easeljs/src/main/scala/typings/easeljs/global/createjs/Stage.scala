@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Stage")
 @js.native
-class Stage protected ()
+open class Stage protected ()
   extends StObject
      with typings.easeljs.createjs.Stage {
   def this(canvas: String) = this()

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new BlockHeader.
   * @param [properties] Properties to set
   */
-class BlockHeader ()
+open class BlockHeader ()
   extends StObject
      with IBlockHeader {
   def this(properties: IBlockHeader) = this()
@@ -26,11 +25,11 @@ class BlockHeader ()
   
   /** BlockHeader blockNum. */
   @JSName("blockNum")
-  var blockNum_BlockHeader: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  var blockNum_BlockHeader: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any) = js.native
   
   /** BlockHeader consensus. */
   @JSName("consensus")
-  var consensus_BlockHeader: Uint8Array = js.native
+  var consensus_BlockHeader: js.typedarray.Uint8Array = js.native
   
   /** BlockHeader previousBlockId. */
   @JSName("previousBlockId")
@@ -48,7 +47,7 @@ class BlockHeader ()
     * Converts this BlockHeader to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object BlockHeader {
@@ -65,6 +64,8 @@ object BlockHeader {
   inline def create(): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BlockHeader]
   inline def create(properties: IBlockHeader): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BlockHeader]
   
+  inline def decode(reader: js.typedarray.Uint8Array): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BlockHeader]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): BlockHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BlockHeader]
   /**
     * Decodes a BlockHeader message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -75,9 +76,8 @@ object BlockHeader {
     */
   inline def decode(reader: Reader): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BlockHeader]
   inline def decode(reader: Reader, length: Double): BlockHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BlockHeader]
-  inline def decode(reader: Uint8Array): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BlockHeader]
-  inline def decode(reader: Uint8Array, length: Double): BlockHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BlockHeader]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BlockHeader]
   /**
     * Decodes a BlockHeader message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -86,7 +86,6 @@ object BlockHeader {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BlockHeader]
-  inline def decodeDelimited(reader: Uint8Array): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BlockHeader]
   
   /**
     * Encodes the specified BlockHeader message. Does not implicitly {@link BlockHeader.verify|verify} messages.
@@ -111,7 +110,7 @@ object BlockHeader {
     * @param object Plain object
     * @returns BlockHeader
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BlockHeader]
+  inline def fromObject(`object`: StringDictionary[Any]): BlockHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BlockHeader]
   
   /**
     * Creates a plain object from a BlockHeader message. Also converts values to other types if specified.
@@ -119,13 +118,13 @@ object BlockHeader {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: BlockHeader): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: BlockHeader, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: BlockHeader): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: BlockHeader, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a BlockHeader message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

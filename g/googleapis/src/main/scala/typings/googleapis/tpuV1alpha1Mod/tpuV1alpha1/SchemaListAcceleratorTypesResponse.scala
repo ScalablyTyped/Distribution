@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for ListAcceleratorTypes.
-  */
 trait SchemaListAcceleratorTypesResponse extends StObject {
   
   /**
@@ -17,7 +14,12 @@ trait SchemaListAcceleratorTypesResponse extends StObject {
   /**
     * The next page token or empty if none.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Locations that could not be reached.
+    */
+  var unreachable: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaListAcceleratorTypesResponse {
   
@@ -32,10 +34,20 @@ object SchemaListAcceleratorTypesResponse {
     
     inline def setAcceleratorTypesUndefined: Self = StObject.set(x, "acceleratorTypes", js.undefined)
     
-    inline def setAcceleratorTypesVarargs(value: SchemaAcceleratorType*): Self = StObject.set(x, "acceleratorTypes", js.Array(value :_*))
+    inline def setAcceleratorTypesVarargs(value: SchemaAcceleratorType*): Self = StObject.set(x, "acceleratorTypes", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    
+    inline def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
+    
+    inline def setUnreachableNull: Self = StObject.set(x, "unreachable", null)
+    
+    inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
+    
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

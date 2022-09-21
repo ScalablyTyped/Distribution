@@ -60,7 +60,7 @@ object publisherOptionsMod {
       
       inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value*))
       
       inline def setParams(value: FromTag): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

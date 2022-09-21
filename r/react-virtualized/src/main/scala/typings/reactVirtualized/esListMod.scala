@@ -11,7 +11,6 @@ import typings.reactVirtualized.anon.PartialCellPosition
 import typings.reactVirtualized.esCellMeasurerMod.CellPosition
 import typings.reactVirtualized.esCellMeasurerMod.MeasuredCellParent
 import typings.reactVirtualized.esGridMod.GridCoreProps
-import typings.reactVirtualized.esScrollSyncMod.OnScrollParams
 import typings.reactVirtualized.mod.Index
 import typings.reactVirtualized.mod.IndexRange
 import typings.reactVirtualized.mod.OverscanIndexRange
@@ -21,16 +20,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esListMod {
   
-  @JSImport("react-virtualized/dist/es/List", "List")
+  @JSImport("react-virtualized/dist/es/List", JSImport.Default)
   @js.native
-  class List protected ()
-    extends PureComponent[ListProps, js.Object, js.Any] {
+  open class default protected () extends List {
     def this(props: ListProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ListProps, context: js.Any) = this()
+    def this(props: ListProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/es/List", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/es/List", "default.defaultProps")
+    @js.native
+    def defaultProps: AutoHeight = js.native
+    inline def defaultProps_=(x: AutoHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-virtualized/dist/es/List", "List")
+  @js.native
+  open class List protected ()
+    extends PureComponent[ListProps, js.Object, Any] {
+    def this(props: ListProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ListProps, context: Any) = this()
     
     var Grid: js.UndefOr[typings.reactVirtualized.esGridMod.Grid] = js.native
     
@@ -87,20 +109,8 @@ object esListMod {
       */
     var onRowsRendered: js.UndefOr[js.Function1[/* info */ RenderedRows, Unit]] = js.undefined
     
-    /**
-      * Callback invoked whenever the scroll offset changes within the inner scrollable region.
-      * This callback can be used to sync scrolling between lists, tables, or grids.
-      * ({ clientHeight, scrollHeight, scrollTop }): void
-      */
-    @JSName("onScroll")
-    var onScroll_ListProps: js.UndefOr[js.Function1[/* params */ OnScrollParams, Unit]] = js.undefined
-    
     /** Responsible for rendering a row given an index; ({ index: number }): node */
     var rowRenderer: ListRowRenderer
-    
-    /** See Grid#scrollToAlignment */
-    @JSName("scrollToAlignment")
-    var scrollToAlignment_ListProps: js.UndefOr[String] = js.undefined
     
     /** Row index to ensure visible (by forcefully scrolling if necessary) */
     var scrollToIndex: js.UndefOr[Double] = js.undefined
@@ -128,15 +138,7 @@ object esListMod {
       
       inline def setOnRowsRenderedUndefined: Self = StObject.set(x, "onRowsRendered", js.undefined)
       
-      inline def setOnScroll(value: /* params */ OnScrollParams => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
-      
-      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
-      
       inline def setRowRenderer(value: /* props */ ListRowProps => ReactNode): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
-      
-      inline def setScrollToAlignment(value: String): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
-      
-      inline def setScrollToAlignmentUndefined: Self = StObject.set(x, "scrollToAlignment", js.undefined)
       
       inline def setScrollToIndex(value: Double): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,7 @@ object esListMod {
     
     var key: String
     
-    var parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent
+    var parent: (Component[GridCoreProps, js.Object, Any]) & MeasuredCellParent
     
     var style: CSSProperties
   }
@@ -169,7 +171,7 @@ object esListMod {
       isScrolling: Boolean,
       isVisible: Boolean,
       key: String,
-      parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent,
+      parent: (Component[GridCoreProps, js.Object, Any]) & MeasuredCellParent,
       style: CSSProperties
     ): ListRowProps = {
       val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
@@ -188,7 +190,7 @@ object esListMod {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setParent(value: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: (Component[GridCoreProps, js.Object, Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }

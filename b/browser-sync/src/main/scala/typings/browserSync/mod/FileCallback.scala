@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FileCallback extends StObject {
   
-  def fn(event: String, file: String): js.Any
+  def fn(event: String, file: String): Any
   
   var `match`: js.UndefOr[String | js.Array[String]] = js.undefined
   
@@ -15,20 +15,20 @@ trait FileCallback extends StObject {
 }
 object FileCallback {
   
-  inline def apply(fn: (String, String) => js.Any): FileCallback = {
+  inline def apply(fn: (String, String) => Any): FileCallback = {
     val __obj = js.Dynamic.literal(fn = js.Any.fromFunction2(fn))
     __obj.asInstanceOf[FileCallback]
   }
   
   extension [Self <: FileCallback](x: Self) {
     
-    inline def setFn(value: (String, String) => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+    inline def setFn(value: (String, String) => Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
     
     inline def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+    inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value*))
     
     inline def setOptions(value: WatchOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

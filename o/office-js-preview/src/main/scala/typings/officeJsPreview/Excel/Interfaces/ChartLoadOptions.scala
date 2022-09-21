@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a chart object in a workbook.
-  To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
+  To learn more about the chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartLoadOptions extends StObject {
@@ -20,197 +20,195 @@ trait ChartLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents chart axes.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var axes: js.UndefOr[ChartAxesLoadOptions] = js.undefined
   
   /**
+    * Specifies a chart category label level enumeration constant, referring to the level of the source category labels.
     *
-    * Specifies a ChartCategoryLabelLevel enumeration constant referring to
-    the level of where the category labels are being sourced from.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var categoryLabelLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the type of the chart. See `Excel.ChartType` for details.
     *
-    * Specifies the type of the chart. See Excel.ChartType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var chartType: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the data labels on the chart.
     *
-    * Represents the datalabels on the chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var dataLabels: js.UndefOr[ChartDataLabelsLoadOptions] = js.undefined
   
   /**
-    *
     * Specifies the way that blank cells are plotted on a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var displayBlanksAs: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Encapsulates the format properties for the chart area.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartAreaFormatLoadOptions] = js.undefined
   
   /**
-    *
     * Specifies the height, in points, of the chart object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The unique ID of chart.
     *
-    * The unique id of chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The distance, in points, from the left side of the chart to the worksheet origin.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the legend for the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var legend: js.UndefOr[ChartLegendLoadOptions] = js.undefined
   
   /**
-    *
     * Specifies the name of a chart object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Encapsulates the options for a pivot chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pivotOptions: js.UndefOr[ChartPivotOptionsLoadOptions] = js.undefined
   
   /**
+    * Represents the plot area for the chart.
     *
-    * Represents the plotArea for the chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var plotArea: js.UndefOr[ChartPlotAreaLoadOptions] = js.undefined
   
   /**
-    *
     * Specifies the way columns or rows are used as data series on the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var plotBy: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
     *
-    * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var plotVisibleOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents either a single series or collection of series in the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var series: js.UndefOr[ChartSeriesCollectionLoadOptions] = js.undefined
   
   /**
+    * Specifies a chart series name level enumeration constant, referring to the level of the source series names.
     *
-    * Specifies a ChartSeriesNameLevel enumeration constant referring to
-    the level of where the series names are being sourced from.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var seriesNameLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether to display all field buttons on a PivotChart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showAllFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
-    If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
+    If the value axis becomes smaller than the size of the data points, you can use this property to set whether to show the data labels.
     This property applies to 2-D charts only.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showDataLabelsOverMaximum: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the chart style for the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var style: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
     *
-    * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var title: js.UndefOr[ChartTitleLoadOptions] = js.undefined
   
   /**
-    *
     * Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the width, in points, of the chart object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var width: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The worksheet containing the current chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined

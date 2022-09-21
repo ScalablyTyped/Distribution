@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-ace
 
-Typings are for version 9.2.0
+Typings are for version 10.1.0
 
 ## Library description:
 A react component for Ace Editor
@@ -10,10 +10,10 @@ A react component for Ace Editor
 | ------------------ | :-------------: |
 | Full name          | react-ace |
 | Keywords           | ace, ace editor, react-component, react |
-| # releases         | 18 |
-| # dependents       | 288 |
-| # downloads        | 14429243 |
-| # stars            | 13 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 1483392.6666666667 |
+| # stars            | 3551.0 |
 
 ## Links
 - [Homepage](https://github.com/securingsincity/react-ace#readme)

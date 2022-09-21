@@ -1,13 +1,9 @@
 package typings.bookshelf.mod
 
-import typings.knex.mod.Knex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bookshelf", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def apply(knex: Knex[_, js.Array[_]]): Bookshelf = js.native
-}
-
+object ^ extends StObject

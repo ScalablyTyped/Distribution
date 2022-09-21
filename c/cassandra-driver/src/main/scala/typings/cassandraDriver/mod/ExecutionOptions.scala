@@ -5,7 +5,7 @@ import typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingP
 import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
 import typings.cassandraDriver.typesMod.types.Long
 import typings.cassandraDriver.typesMod.types.consistencies
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait ExecutionOptions extends StObject {
   
   def getConsistency(): consistencies
   
-  def getCustomPayload(): StringDictionary[js.Any]
+  def getCustomPayload(): StringDictionary[Any]
   
   def getFetchSize(): Double
   
@@ -61,7 +61,7 @@ object ExecutionOptions {
   inline def apply(
     getCaptureStackTrace: () => Boolean,
     getConsistency: () => consistencies,
-    getCustomPayload: () => StringDictionary[js.Any],
+    getCustomPayload: () => StringDictionary[Any],
     getFetchSize: () => Double,
     getFixedHost: () => Host,
     getHints: () => js.Array[js.Array[String] | String],
@@ -92,7 +92,7 @@ object ExecutionOptions {
     
     inline def setGetConsistency(value: () => consistencies): Self = StObject.set(x, "getConsistency", js.Any.fromFunction0(value))
     
-    inline def setGetCustomPayload(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "getCustomPayload", js.Any.fromFunction0(value))
+    inline def setGetCustomPayload(value: () => StringDictionary[Any]): Self = StObject.set(x, "getCustomPayload", js.Any.fromFunction0(value))
     
     inline def setGetFetchSize(value: () => Double): Self = StObject.set(x, "getFetchSize", js.Any.fromFunction0(value))
     

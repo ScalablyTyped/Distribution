@@ -10,7 +10,7 @@ object enterpriseMod {
   
   @JSImport("ionic/commands/enterprise", "EnterpriseNamespace")
   @js.native
-  class EnterpriseNamespace () extends Namespace {
+  open class EnterpriseNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

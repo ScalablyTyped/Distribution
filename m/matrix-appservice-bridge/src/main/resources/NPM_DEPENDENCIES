@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "matrix-appservice-bridge" : "2.3.1"
+      "matrix-appservice-bridge" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "matrix-appservice-bridge" : "2.3.1"
+      "matrix-appservice-bridge" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

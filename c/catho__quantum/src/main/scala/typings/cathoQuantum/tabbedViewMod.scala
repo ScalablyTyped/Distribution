@@ -1,6 +1,6 @@
 package typings.cathoQuantum
 
-import typings.cathoQuantum.anon.ComponentsSpacing
+import typings.cathoQuantum.anon.BaseFontSizeBreakpointsComponents
 import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
 import typings.react.mod.Component
@@ -11,29 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tabbedViewMod {
   
-  @JSImport("@catho/quantum/TabbedView", "Tab")
+  @JSImport("@catho/quantum/TabbedView", JSImport.Default)
   @js.native
-  class Tab protected ()
-    extends Component[TabProps, js.Object, js.Any] {
-    def this(props: TabProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: TabProps, context: js.Any) = this()
+  open class default ()
+    extends Component[TabbedViewProps, js.Object, Any]
+  /* static members */
+  object default {
+    
+    @JSImport("@catho/quantum/TabbedView", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@catho/quantum/TabbedView", "default.Tab")
+    @js.native
+    def Tab: typings.cathoQuantum.tabbedViewMod.Tab = js.native
+    inline def Tab_=(x: Tab): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@catho/quantum/TabbedView", "TabbedView")
-  @js.native
-  class TabbedView protected ()
-    extends Component[TabbedViewProps, js.Object, js.Any] {
-    def this(props: TabbedViewProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: TabbedViewProps, context: js.Any) = this()
-  }
+  type Tab = Component[TabProps, js.Object, Any]
   
   trait TabProps extends StObject {
     
@@ -62,7 +57,7 @@ object tabbedViewMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -72,6 +67,8 @@ object tabbedViewMod {
     }
   }
   
+  type TabbedView = Component[TabbedViewProps, js.Object, Any]
+  
   trait TabbedViewProps extends StObject {
     
     var activeTab: js.UndefOr[String] = js.undefined
@@ -80,11 +77,11 @@ object tabbedViewMod {
     
     var fluid: js.UndefOr[Boolean] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onTabClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var skin: js.UndefOr[neutral | primary] = js.undefined
     
-    var theme: js.UndefOr[ComponentsSpacing] = js.undefined
+    var theme: js.UndefOr[BaseFontSizeBreakpointsComponents] = js.undefined
   }
   object TabbedViewProps {
     
@@ -103,21 +100,21 @@ object tabbedViewMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
       inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnTabClick(value: () => Unit): Self = StObject.set(x, "onTabClick", js.Any.fromFunction0(value))
       
-      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)
       
       inline def setSkin(value: neutral | primary): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
       inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      inline def setTheme(value: ComponentsSpacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: BaseFontSizeBreakpointsComponents): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }

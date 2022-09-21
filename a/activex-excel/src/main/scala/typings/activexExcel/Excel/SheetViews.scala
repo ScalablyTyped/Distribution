@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SheetViews extends StObject {
   
-  def apply(Index: js.Any): SheetView = js.native
+  def apply(Index: Any): SheetView = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -15,9 +15,9 @@ trait SheetViews extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Item(Index: js.Any): SheetView = js.native
+  def Item(Index: Any): SheetView = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): js.Any = js.native
+  def _Default(Index: Any): Any = js.native
 }

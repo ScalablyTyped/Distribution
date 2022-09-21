@@ -10,10 +10,10 @@ object localCarWashMod {
   
   @JSImport("material-ui/svg-icons/maps/local-car-wash", JSImport.Default)
   @js.native
-  class default () extends MapsLocalCarWash
+  open class default () extends MapsLocalCarWash
   
   @JSImport("material-ui/svg-icons/maps/local-car-wash", "MapsLocalCarWash")
   @js.native
-  class MapsLocalCarWash ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalCarWash ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

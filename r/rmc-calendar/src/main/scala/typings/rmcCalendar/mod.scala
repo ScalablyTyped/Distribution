@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("rmc-calendar", "Calendar")
   @js.native
-  class Calendar protected () extends default {
+  open class Calendar protected () extends default {
     def this(props: PropsType) = this()
   }
   /* static members */
@@ -41,7 +41,7 @@ object mod {
   
   @JSImport("rmc-calendar", "DatePicker")
   @js.native
-  class DatePicker ()
+  open class DatePicker ()
     extends typings.rmcCalendar.datePickerMod.default
   
   object Locale {

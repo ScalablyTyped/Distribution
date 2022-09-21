@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object babelWalkStrings {
   
   @js.native
+  sealed trait Accessor extends StObject
+  inline def Accessor: Accessor = "Accessor".asInstanceOf[Accessor]
+  
+  @js.native
   sealed trait AnyTypeAnnotation extends StObject
   inline def AnyTypeAnnotation: AnyTypeAnnotation = "AnyTypeAnnotation".asInstanceOf[AnyTypeAnnotation]
   
@@ -97,6 +101,10 @@ object babelWalkStrings {
   @js.native
   sealed trait Class extends StObject
   inline def Class: Class = "Class".asInstanceOf[Class]
+  
+  @js.native
+  sealed trait ClassAccessorProperty extends StObject
+  inline def ClassAccessorProperty: ClassAccessorProperty = "ClassAccessorProperty".asInstanceOf[ClassAccessorProperty]
   
   @js.native
   sealed trait ClassBody extends StObject
@@ -427,6 +435,10 @@ object babelWalkStrings {
   inline def ImportSpecifier: ImportSpecifier = "ImportSpecifier".asInstanceOf[ImportSpecifier]
   
   @js.native
+  sealed trait IndexedAccessType extends StObject
+  inline def IndexedAccessType: IndexedAccessType = "IndexedAccessType".asInstanceOf[IndexedAccessType]
+  
+  @js.native
   sealed trait InferredPredicate extends StObject
   inline def InferredPredicate: InferredPredicate = "InferredPredicate".asInstanceOf[InferredPredicate]
   
@@ -547,12 +559,20 @@ object babelWalkStrings {
   inline def Method: Method = "Method".asInstanceOf[Method]
   
   @js.native
+  sealed trait Miscellaneous extends StObject
+  inline def Miscellaneous: Miscellaneous = "Miscellaneous".asInstanceOf[Miscellaneous]
+  
+  @js.native
   sealed trait MixedTypeAnnotation extends StObject
   inline def MixedTypeAnnotation: MixedTypeAnnotation = "MixedTypeAnnotation".asInstanceOf[MixedTypeAnnotation]
   
   @js.native
   sealed trait ModuleDeclaration extends StObject
   inline def ModuleDeclaration: ModuleDeclaration = "ModuleDeclaration".asInstanceOf[ModuleDeclaration]
+  
+  @js.native
+  sealed trait ModuleExpression extends StObject
+  inline def ModuleExpression: ModuleExpression = "ModuleExpression".asInstanceOf[ModuleExpression]
   
   @js.native
   sealed trait ModuleSpecifier extends StObject
@@ -643,6 +663,10 @@ object babelWalkStrings {
   inline def OptionalCallExpression: OptionalCallExpression = "OptionalCallExpression".asInstanceOf[OptionalCallExpression]
   
   @js.native
+  sealed trait OptionalIndexedAccessType extends StObject
+  inline def OptionalIndexedAccessType: OptionalIndexedAccessType = "OptionalIndexedAccessType".asInstanceOf[OptionalIndexedAccessType]
+  
+  @js.native
   sealed trait OptionalMemberExpression extends StObject
   inline def OptionalMemberExpression: OptionalMemberExpression = "OptionalMemberExpression".asInstanceOf[OptionalMemberExpression]
   
@@ -725,6 +749,10 @@ object babelWalkStrings {
   @js.native
   sealed trait SpreadElement extends StObject
   inline def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
+  
+  @js.native
+  sealed trait Standardized extends StObject
+  inline def Standardized: Standardized = "Standardized".asInstanceOf[Standardized]
   
   @js.native
   sealed trait Statement extends StObject
@@ -857,6 +885,10 @@ object babelWalkStrings {
   @js.native
   sealed trait TSInferType extends StObject
   inline def TSInferType: TSInferType = "TSInferType".asInstanceOf[TSInferType]
+  
+  @js.native
+  sealed trait TSInstantiationExpression extends StObject
+  inline def TSInstantiationExpression: TSInstantiationExpression = "TSInstantiationExpression".asInstanceOf[TSInstantiationExpression]
   
   @js.native
   sealed trait TSInterfaceBody extends StObject
@@ -1059,6 +1091,10 @@ object babelWalkStrings {
   inline def ThrowStatement: ThrowStatement = "ThrowStatement".asInstanceOf[ThrowStatement]
   
   @js.native
+  sealed trait TopicReference extends StObject
+  inline def TopicReference: TopicReference = "TopicReference".asInstanceOf[TopicReference]
+  
+  @js.native
   sealed trait TryStatement extends StObject
   inline def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
   
@@ -1093,6 +1129,10 @@ object babelWalkStrings {
   @js.native
   sealed trait TypeParameterInstantiation extends StObject
   inline def TypeParameterInstantiation: TypeParameterInstantiation = "TypeParameterInstantiation".asInstanceOf[TypeParameterInstantiation]
+  
+  @js.native
+  sealed trait TypeScript extends StObject
+  inline def TypeScript: TypeScript = "TypeScript".asInstanceOf[TypeScript]
   
   @js.native
   sealed trait TypeofTypeAnnotation extends StObject

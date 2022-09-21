@@ -12,6 +12,11 @@ trait SigningProfile extends StObject {
   var arn: js.UndefOr[java.lang.String] = js.undefined
   
   /**
+    * The name of the signing platform.
+    */
+  var platformDisplayName: js.UndefOr[DisplayName] = js.undefined
+  
+  /**
     * The ID of a platform that is available for use by a signing profile.
     */
   var platformId: js.UndefOr[PlatformId] = js.undefined
@@ -20,6 +25,21 @@ trait SigningProfile extends StObject {
     * The name of the signing profile.
     */
   var profileName: js.UndefOr[ProfileName] = js.undefined
+  
+  /**
+    * The version of a signing profile.
+    */
+  var profileVersion: js.UndefOr[ProfileVersion] = js.undefined
+  
+  /**
+    * The ARN of a signing profile, including the profile version.
+    */
+  var profileVersionArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * The validity period for a signing job created using this signing profile.
+    */
+  var signatureValidityPeriod: js.UndefOr[SignatureValidityPeriod] = js.undefined
   
   /**
     * The ACM certificate that is available for use by a signing profile.
@@ -54,6 +74,10 @@ object SigningProfile {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
+    inline def setPlatformDisplayName(value: DisplayName): Self = StObject.set(x, "platformDisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformDisplayNameUndefined: Self = StObject.set(x, "platformDisplayName", js.undefined)
+    
     inline def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
     
     inline def setPlatformIdUndefined: Self = StObject.set(x, "platformId", js.undefined)
@@ -61,6 +85,18 @@ object SigningProfile {
     inline def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     
     inline def setProfileNameUndefined: Self = StObject.set(x, "profileName", js.undefined)
+    
+    inline def setProfileVersion(value: ProfileVersion): Self = StObject.set(x, "profileVersion", value.asInstanceOf[js.Any])
+    
+    inline def setProfileVersionArn(value: Arn): Self = StObject.set(x, "profileVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setProfileVersionArnUndefined: Self = StObject.set(x, "profileVersionArn", js.undefined)
+    
+    inline def setProfileVersionUndefined: Self = StObject.set(x, "profileVersion", js.undefined)
+    
+    inline def setSignatureValidityPeriod(value: SignatureValidityPeriod): Self = StObject.set(x, "signatureValidityPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureValidityPeriodUndefined: Self = StObject.set(x, "signatureValidityPeriod", js.undefined)
     
     inline def setSigningMaterial(value: SigningMaterial): Self = StObject.set(x, "signingMaterial", value.asInstanceOf[js.Any])
     

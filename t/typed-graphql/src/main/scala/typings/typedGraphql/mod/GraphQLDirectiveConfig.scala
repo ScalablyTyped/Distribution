@@ -31,7 +31,7 @@ object GraphQLDirectiveConfig {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

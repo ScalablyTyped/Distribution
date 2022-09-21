@@ -1,40 +1,31 @@
 package typings.firebaseFirestore.indexeddbSchemaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbPrimaryClient")
-@js.native
-class DbPrimaryClient protected () extends js.Object {
-  def this(
-    ownerId: String,
-    /** Whether to allow shared access from multiple tabs. */
-  allowTabSynchronization: Boolean,
-    leaseTimestampMs: Double
-  ) = this()
+trait DbPrimaryClient extends StObject {
+  
   /** Whether to allow shared access from multiple tabs. */
-  var allowTabSynchronization: Boolean = js.native
-  var leaseTimestampMs: Double = js.native
-  var ownerId: String = js.native
+  var allowTabSynchronization: Boolean
+  
+  var leaseTimestampMs: Double
+  
+  var ownerId: String
 }
-
-/* static members */
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbPrimaryClient")
-@js.native
-object DbPrimaryClient extends js.Object {
-  /**
-    * The key string used for the single object that exists in the
-    * DbPrimaryClient store.
-    */
-  var key: String = js.native
-  /**
-    * Name of the IndexedDb object store.
-    *
-    * Note that the name 'owner' is chosen to ensure backwards compatibility with
-    * older clients that only supported single locked access to the persistence
-    * layer.
-    */
-  var store: String = js.native
+object DbPrimaryClient {
+  
+  inline def apply(allowTabSynchronization: Boolean, leaseTimestampMs: Double, ownerId: String): DbPrimaryClient = {
+    val __obj = js.Dynamic.literal(allowTabSynchronization = allowTabSynchronization.asInstanceOf[js.Any], leaseTimestampMs = leaseTimestampMs.asInstanceOf[js.Any], ownerId = ownerId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DbPrimaryClient]
+  }
+  
+  extension [Self <: DbPrimaryClient](x: Self) {
+    
+    inline def setAllowTabSynchronization(value: Boolean): Self = StObject.set(x, "allowTabSynchronization", value.asInstanceOf[js.Any])
+    
+    inline def setLeaseTimestampMs(value: Double): Self = StObject.set(x, "leaseTimestampMs", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+  }
 }
-

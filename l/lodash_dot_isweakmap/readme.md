@@ -10,10 +10,10 @@ The lodash method `_.isWeakMap` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isweakmap |
 | Keywords           | lodash-modularized, isweakmap |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 937 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 81.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A maintenance window for VMs. When set, we restrict our maintenance
-  * operations to this window.
-  */
 trait SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow extends StObject {
   
   var dailyMaintenanceWindow: js.UndefOr[SchemaResourcePolicyDailyCycle] = js.undefined

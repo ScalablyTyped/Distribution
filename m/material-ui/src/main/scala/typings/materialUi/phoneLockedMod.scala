@@ -10,10 +10,10 @@ object phoneLockedMod {
   
   @JSImport("material-ui/svg-icons/notification/phone-locked", JSImport.Default)
   @js.native
-  class default () extends NotificationPhoneLocked
+  open class default () extends NotificationPhoneLocked
   
   @JSImport("material-ui/svg-icons/notification/phone-locked", "NotificationPhoneLocked")
   @js.native
-  class NotificationPhoneLocked ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationPhoneLocked ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

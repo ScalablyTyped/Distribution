@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "VRMultiviewToSingleviewPostProcess")
 @js.native
-class VRMultiviewToSingleviewPostProcess protected ()
+open class VRMultiviewToSingleviewPostProcess protected ()
   extends typings.babylonjs.indexMod.VRMultiviewToSingleviewPostProcess {
   /**
     * Initializes a VRMultiviewToSingleview

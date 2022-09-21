@@ -30,7 +30,7 @@ object XStyleFamiliesSupplier {
     StyleFamilies: XNameAccess,
     acquire: () => Unit,
     getStyleFamilies: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStyleFamiliesSupplier = {
     val __obj = js.Dynamic.literal(StyleFamilies = StyleFamilies.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getStyleFamilies = js.Any.fromFunction0(getStyleFamilies), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

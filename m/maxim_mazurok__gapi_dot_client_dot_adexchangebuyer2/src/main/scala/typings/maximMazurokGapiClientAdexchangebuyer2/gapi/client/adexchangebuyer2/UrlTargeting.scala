@@ -25,12 +25,12 @@ object UrlTargeting {
     
     inline def setExcludedUrlsUndefined: Self = StObject.set(x, "excludedUrls", js.undefined)
     
-    inline def setExcludedUrlsVarargs(value: String*): Self = StObject.set(x, "excludedUrls", js.Array(value :_*))
+    inline def setExcludedUrlsVarargs(value: String*): Self = StObject.set(x, "excludedUrls", js.Array(value*))
     
     inline def setTargetedUrls(value: js.Array[String]): Self = StObject.set(x, "targetedUrls", value.asInstanceOf[js.Any])
     
     inline def setTargetedUrlsUndefined: Self = StObject.set(x, "targetedUrls", js.undefined)
     
-    inline def setTargetedUrlsVarargs(value: String*): Self = StObject.set(x, "targetedUrls", js.Array(value :_*))
+    inline def setTargetedUrlsVarargs(value: String*): Self = StObject.set(x, "targetedUrls", js.Array(value*))
   }
 }

@@ -29,6 +29,6 @@ object ListWorkspacesResponse {
     
     inline def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
     
-    inline def setWorkspacesVarargs(value: Workspace*): Self = StObject.set(x, "workspaces", js.Array(value :_*))
+    inline def setWorkspacesVarargs(value: Workspace*): Self = StObject.set(x, "workspaces", js.Array(value*))
   }
 }

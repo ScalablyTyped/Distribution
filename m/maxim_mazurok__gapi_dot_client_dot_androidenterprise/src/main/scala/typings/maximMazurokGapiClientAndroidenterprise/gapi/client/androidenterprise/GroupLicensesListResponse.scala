@@ -22,6 +22,6 @@ object GroupLicensesListResponse {
     
     inline def setGroupLicenseUndefined: Self = StObject.set(x, "groupLicense", js.undefined)
     
-    inline def setGroupLicenseVarargs(value: GroupLicense*): Self = StObject.set(x, "groupLicense", js.Array(value :_*))
+    inline def setGroupLicenseVarargs(value: GroupLicense*): Self = StObject.set(x, "groupLicense", js.Array(value*))
   }
 }

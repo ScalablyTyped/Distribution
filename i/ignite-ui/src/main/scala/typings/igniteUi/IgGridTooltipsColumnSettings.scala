@@ -10,7 +10,7 @@ trait IgGridTooltipsColumnSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory.

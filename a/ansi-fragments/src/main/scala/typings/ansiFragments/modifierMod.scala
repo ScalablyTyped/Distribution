@@ -13,7 +13,7 @@ object modifierMod {
   
   @JSImport("ansi-fragments/build/fragments/Modifier", "Modifier")
   @js.native
-  class Modifier_ protected ()
+  open class Modifier_ protected ()
     extends StObject
        with IFragment {
     def this(ansiModifier: AnsiModifier, children: js.Array[String | IFragment]) = this()
@@ -21,12 +21,12 @@ object modifierMod {
     /* CompleteClass */
     override def build(): String = js.native
     
-    /* private */ val children: js.Any = js.native
+    /* private */ val children: Any = js.native
     
-    /* private */ val modifier: js.Any = js.native
+    /* private */ val modifier: Any = js.native
   }
   
-  inline def modifier(ansiModifier: AnsiModifier, children: (String | IFragment)*): Modifier_ = (^.asInstanceOf[js.Dynamic].applyDynamic("modifier")(ansiModifier.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Modifier_]
+  inline def modifier(ansiModifier: AnsiModifier, children: (String | IFragment)*): Modifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("modifier")(List(ansiModifier.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Modifier_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiFragments.ansiFragmentsStrings.dim

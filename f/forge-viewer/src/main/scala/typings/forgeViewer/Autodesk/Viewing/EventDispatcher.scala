@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EventDispatcher extends StObject {
   
-  def addEventListener(`type`: String, listener: js.Function1[/* event */ js.Any, Unit]): Unit = js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* event */ js.Any, Unit], options: js.Any): Unit = js.native
+  def addEventListener(`type`: String, listener: js.Function1[/* event */ Any, Unit]): Unit = js.native
+  def addEventListener(`type`: String, listener: js.Function1[/* event */ Any, Unit], options: Any): Unit = js.native
   
-  def dispatchEvent(event: js.Any): Unit = js.native
+  def dispatchEvent(event: Any): Unit = js.native
   
-  def hasEventListener(`type`: String, listener: js.Function1[/* event */ js.Any, Unit]): Boolean = js.native
+  def hasEventListener(`type`: String, listener: js.Function1[/* event */ Any, Unit]): Boolean = js.native
   
-  def removeEventListener(`type`: String, listener: js.Function1[/* event */ js.Any, Unit]): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.Function1[/* event */ Any, Unit]): Unit = js.native
 }

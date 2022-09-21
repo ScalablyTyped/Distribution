@@ -21,7 +21,7 @@ abstract class RestrictedLaunchActivatedEventArgs ()
   
   /** Gets information about a shared context for the restricted launch. */
   /* CompleteClass */
-  var sharedContext: js.Any = js.native
+  var sharedContext: Any = js.native
   
   /** Gets the splash screen object, which provides information about the transition from the splash screen to the activated app. */
   /* CompleteClass */

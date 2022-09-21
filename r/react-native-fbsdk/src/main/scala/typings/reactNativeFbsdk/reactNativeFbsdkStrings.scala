@@ -28,6 +28,10 @@ object reactNativeFbsdkStrings {
   inline def Closed: Closed = "Closed".asInstanceOf[Closed]
   
   @js.native
+  sealed trait LDU extends StObject
+  inline def LDU: LDU = "LDU".asInstanceOf[LDU]
+  
+  @js.native
   sealed trait Open
     extends StObject
        with AppGroupPrivacy

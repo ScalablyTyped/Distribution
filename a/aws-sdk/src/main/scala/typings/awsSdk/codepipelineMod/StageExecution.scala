@@ -12,7 +12,7 @@ trait StageExecution extends StObject {
   var pipelineExecutionId: PipelineExecutionId
   
   /**
-    * The status of the stage, or for a completed stage, the last status of the stage.
+    * The status of the stage, or for a completed stage, the last status of the stage.  A status of cancelled means that the pipeline’s definition was updated before the stage execution could be completed. 
     */
   var status: StageExecutionStatus
 }

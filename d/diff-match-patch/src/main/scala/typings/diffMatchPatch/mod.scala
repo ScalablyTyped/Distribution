@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("diff-match-patch", "diff_match_patch")
   @js.native
-  class diffMatchPatch () extends StObject {
+  open class diffMatchPatch () extends StObject {
     
     var Diff_EditCost: Double = js.native
     
@@ -107,7 +107,7 @@ object mod {
   
   @JSImport("diff-match-patch", "patch_obj")
   @js.native
-  class patchObj () extends StObject {
+  open class patchObj () extends StObject {
     
     var diffs: js.Array[Diff] = js.native
     

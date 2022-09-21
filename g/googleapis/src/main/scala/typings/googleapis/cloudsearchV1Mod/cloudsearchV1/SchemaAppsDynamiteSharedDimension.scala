@@ -1,0 +1,34 @@
+package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaAppsDynamiteSharedDimension extends StObject {
+  
+  var height: js.UndefOr[Double | Null] = js.undefined
+  
+  var width: js.UndefOr[Double | Null] = js.undefined
+}
+object SchemaAppsDynamiteSharedDimension {
+  
+  inline def apply(): SchemaAppsDynamiteSharedDimension = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaAppsDynamiteSharedDimension]
+  }
+  
+  extension [Self <: SchemaAppsDynamiteSharedDimension](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
+}

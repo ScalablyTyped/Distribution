@@ -6,6 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResourceInfo extends StObject {
   
+  /**
+    * Optional. The identifier of the container of this resource. For Google Cloud APIs, the resource container must be one of the following formats: - `projects/` - `folders/` -
+    * `organizations/` For the policy enforcement on the container level (VPCSC and Location Policy check), this field takes precedence on the container extracted from name when presents.
+    */
+  var container: js.UndefOr[String] = js.undefined
+  
+  /** Optional. The location of the resource. The value must be a valid zone, region or multiregion. For example: "europe-west4" or "northamerica-northeast1-a" */
+  var location: js.UndefOr[String] = js.undefined
+  
   /** The name of the resource referenced in the request. */
   var name: js.UndefOr[String] = js.undefined
   
@@ -23,6 +32,14 @@ object ResourceInfo {
   }
   
   extension [Self <: ResourceInfo](x: Self) {
+    
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

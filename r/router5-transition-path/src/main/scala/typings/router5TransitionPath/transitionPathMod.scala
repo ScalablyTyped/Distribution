@@ -21,13 +21,13 @@ object transitionPathMod {
   
   trait State
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var meta: js.UndefOr[Options] = js.undefined
     
     var name: String
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var params: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object State {
     
@@ -44,7 +44,7 @@ object transitionPathMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
@@ -71,11 +71,11 @@ object transitionPathMod {
       
       inline def setToActivate(value: js.Array[String]): Self = StObject.set(x, "toActivate", value.asInstanceOf[js.Any])
       
-      inline def setToActivateVarargs(value: String*): Self = StObject.set(x, "toActivate", js.Array(value :_*))
+      inline def setToActivateVarargs(value: String*): Self = StObject.set(x, "toActivate", js.Array(value*))
       
       inline def setToDeactivate(value: js.Array[String]): Self = StObject.set(x, "toDeactivate", value.asInstanceOf[js.Any])
       
-      inline def setToDeactivateVarargs(value: String*): Self = StObject.set(x, "toDeactivate", js.Array(value :_*))
+      inline def setToDeactivateVarargs(value: String*): Self = StObject.set(x, "toDeactivate", js.Array(value*))
     }
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JQueryStatic extends StObject {
   
-  def address(): js.Any
+  def address(): Any
   @JSName("address")
   var address_Original: JQueryAddressStatic
 }

@@ -61,7 +61,7 @@ object Draggable {
     
     /** returns the event model values
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the draggable model
       */
@@ -69,7 +69,7 @@ object Draggable {
     
     /** returns the exact mouse down target element
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -88,7 +88,7 @@ object Draggable {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -96,7 +96,7 @@ object Draggable {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -114,7 +114,7 @@ object Draggable {
     
     /** returns the event model values
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the draggable model
       */
@@ -122,7 +122,7 @@ object Draggable {
     
     /** returns the exact mouse down target element
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -141,7 +141,7 @@ object Draggable {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -149,7 +149,7 @@ object Draggable {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -167,7 +167,7 @@ object Draggable {
     
     /** returns the event model values
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the draggable model
       */
@@ -175,7 +175,7 @@ object Draggable {
     
     /** returns the exact mouse down target element
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -194,7 +194,7 @@ object Draggable {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -202,7 +202,7 @@ object Draggable {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -216,11 +216,11 @@ object Draggable {
     
     /** returns the draggable element object
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the event model values
       */
-    var sender: js.UndefOr[js.Any] = js.undefined
+    var sender: js.UndefOr[Any] = js.undefined
   }
   object HelperEventArgs {
     
@@ -231,11 +231,11 @@ object Draggable {
     
     extension [Self <: HelperEventArgs](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setSender(value: js.Any): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: Any): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
       inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
     }
@@ -257,7 +257,7 @@ object Draggable {
     /** Sets the offset of the dragging helper relative to the mouse cursor.
       * @Default {{ top: -1, left: -2 }}
       */
-    var cursorAt: js.UndefOr[js.Any] = js.undefined
+    var cursorAt: js.UndefOr[Any] = js.undefined
     
     /** This event is triggered when dragging element is destroyed.
       */
@@ -327,7 +327,7 @@ object Draggable {
       
       inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      inline def setCursorAt(value: js.Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
+      inline def setCursorAt(value: Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
       
       inline def setCursorAtUndefined: Self = StObject.set(x, "cursorAt", js.undefined)
       

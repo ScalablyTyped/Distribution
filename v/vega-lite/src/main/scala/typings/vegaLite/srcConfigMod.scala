@@ -26,6 +26,7 @@ import typings.vegaLite.vegaLiteStrings.verbal
 import typings.vegaLite.vegaLiteStrings.width
 import typings.vegaTypings.colorMod.Color
 import typings.vegaTypings.configMod.RangeConfig
+import typings.vegaTypings.localeMod.Locale
 import typings.vegaTypings.scaleMod.RangeScheme
 import typings.vegaTypings.signalMod.InitSignal
 import typings.vegaTypings.signalMod.NewSignal
@@ -226,17 +227,11 @@ object srcConfigMod {
   inline def fontSizeSignalConfig(fontSize: Boolean): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontSizeSignalConfig")(fontSize.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
   inline def fontSizeSignalConfig(fontSize: FontSizeConfig): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontSizeSignalConfig")(fontSize.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
   
-  inline def getViewConfigContinuousSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigContinuousSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getViewConfigContinuousSize[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width | height): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigContinuousSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getViewConfigContinuousSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigContinuousSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getViewConfigDiscreteSize[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width | height): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getViewConfigDiscreteSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double | Step]
-  
-  inline def getViewConfigDiscreteSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double | Step]
-  
-  inline def getViewConfigDiscreteStep_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteStep")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def getViewConfigDiscreteStep_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteStep")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getViewConfigDiscreteStep[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width | height): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteStep")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def initConfig(): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[Config[SignalRef]]
   inline def initConfig(specifiedConfig: Config[ExprRef | SignalRef]): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(specifiedConfig.asInstanceOf[js.Any]).asInstanceOf[Config[SignalRef]]
@@ -274,6 +269,11 @@ object srcConfigMod {
       * A delimiter, such as a newline character, upon which to break text strings into multiple lines. This property provides a global default for text marks, which is overridden by mark or style config settings, and by the lineBreak mark encoding channel. If signal-valued, either string or regular expression (regexp) values are valid.
       */
     var lineBreak: js.UndefOr[String | ES] = js.undefined
+    
+    /**
+      * Locale definitions for string parsing and formatting of number and date values. The locale object should contain `number` and/or `time` properties with [locale definitions](https://vega.github.io/vega/docs/api/locale/). Locale definitions provided in the config block may be overridden by the View constructor locale option.
+      */
+    var locale: js.UndefOr[Locale] = js.undefined
     
     /**
       * Projection configuration, which determines default properties for all [projections](https://vega.github.io/vega-lite/docs/projection.html). For a full list of projection configuration options, please see the [corresponding section of the projection documentation](https://vega.github.io/vega-lite/docs/projection.html#config).
@@ -320,6 +320,10 @@ object srcConfigMod {
       
       inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
       
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      
       inline def setProjection(value: ProjectionConfig): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
       inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
@@ -332,7 +336,7 @@ object srcConfigMod {
       
       inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
-      inline def setSignalsVarargs(value: (InitSignal | NewSignal)*): Self = StObject.set(x, "signals", js.Array(value :_*))
+      inline def setSignalsVarargs(value: (InitSignal | NewSignal)*): Self = StObject.set(x, "signals", js.Array(value*))
       
       inline def setStyle(value: StyleConfigIndex[ES]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -392,9 +396,41 @@ object srcConfigMod {
     var fontSize: js.UndefOr[Boolean | FontSizeConfig] = js.undefined
     
     /**
-      * D3 Number format for guide labels and text marks. For example `"s"` for SI units. Use [D3's number format pattern](https://github.com/d3/d3-format#locale_format).
+      * If normalizedNumberFormatType is not specified,
+      * D3 number format for axis labels, text marks, and tooltips of normalized stacked fields (fields with `stack: "normalize"`). For example `"s"` for SI units.
+      * Use [D3's number format pattern](https://github.com/d3/d3-format#locale_format).
+      *
+      * If `config.normalizedNumberFormatType` is specified and `config.customFormatTypes` is `true`, this value will be passed as `format` alongside `datum.value` to the `config.numberFormatType` function.
+      * __Default value:__ `%`
+      */
+    var normalizedNumberFormat: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [Custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type)
+      * for `config.normalizedNumberFormat`.
+      *
+      * __Default value:__ `undefined` -- This is equilvalent to call D3-format, which is exposed as [`format` in Vega-Expression](https://vega.github.io/vega/docs/expressions/#format).
+      * __Note:__ You must also set `customFormatTypes` to `true` to use this feature.
+      */
+    var normalizedNumberFormatType: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If numberFormatType is not specified,
+      * D3 number format for guide labels, text marks, and tooltips of non-normalized fields (fields *without* `stack: "normalize"`). For example `"s"` for SI units.
+      * Use [D3's number format pattern](https://github.com/d3/d3-format#locale_format).
+      *
+      * If `config.numberFormatType` is specified and `config.customFormatTypes` is `true`, this value will be passed as `format` alongside `datum.value` to the `config.numberFormatType` function.
       */
     var numberFormat: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [Custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type)
+      * for `config.numberFormat`.
+      *
+      * __Default value:__ `undefined` -- This is equilvalent to call D3-format, which is exposed as [`format` in Vega-Expression](https://vega.github.io/vega/docs/expressions/#format).
+      * __Note:__ You must also set `customFormatTypes` to `true` to use this feature.
+      */
+    var numberFormatType: js.UndefOr[String] = js.undefined
     
     /**
       * Scale configuration determines default properties for all [scales](https://vega.github.io/vega-lite/docs/scale.html). For a full list of scale configuration options, please see the [corresponding section of the scale documentation](https://vega.github.io/vega-lite/docs/scale.html#config).
@@ -411,6 +447,15 @@ object srcConfigMod {
       * __Note:__ Axes automatically determine the format for each label automatically so this config does not affect axes.
       */
     var timeFormat: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [Custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type)
+      * for `config.timeFormat`.
+      *
+      * __Default value:__ `undefined` -- This is equilvalent to call D3-time-format, which is exposed as [`timeFormat` in Vega-Expression](https://vega.github.io/vega/docs/expressions/#timeFormat).
+      * __Note:__ You must also set `customFormatTypes` to `true` and there must *not* be a `timeUnit` defined to use this feature.
+      */
+    var timeFormatType: js.UndefOr[String] = js.undefined
     
     /** Default properties for [single view plots](https://vega.github.io/vega-lite/docs/spec.html#single). */
     var view: js.UndefOr[ViewConfig[ES]] = js.undefined
@@ -448,7 +493,19 @@ object srcConfigMod {
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
+      inline def setNormalizedNumberFormat(value: String): Self = StObject.set(x, "normalizedNumberFormat", value.asInstanceOf[js.Any])
+      
+      inline def setNormalizedNumberFormatType(value: String): Self = StObject.set(x, "normalizedNumberFormatType", value.asInstanceOf[js.Any])
+      
+      inline def setNormalizedNumberFormatTypeUndefined: Self = StObject.set(x, "normalizedNumberFormatType", js.undefined)
+      
+      inline def setNormalizedNumberFormatUndefined: Self = StObject.set(x, "normalizedNumberFormat", js.undefined)
+      
       inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+      
+      inline def setNumberFormatType(value: String): Self = StObject.set(x, "numberFormatType", value.asInstanceOf[js.Any])
+      
+      inline def setNumberFormatTypeUndefined: Self = StObject.set(x, "numberFormatType", js.undefined)
       
       inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
       
@@ -461,6 +518,10 @@ object srcConfigMod {
       inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
       inline def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+      
+      inline def setTimeFormatType(value: String): Self = StObject.set(x, "timeFormatType", value.asInstanceOf[js.Any])
+      
+      inline def setTimeFormatTypeUndefined: Self = StObject.set(x, "timeFormatType", js.undefined)
       
       inline def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
       
@@ -510,23 +571,9 @@ object srcConfigMod {
     var discreteWidth: js.UndefOr[Double | Step] = js.undefined
     
     /**
-      * Default height
-      *
-      * __Deprecated:__ Since Vega-Lite 4.0. Please use continuousHeight and discreteHeight instead.
-      */
-    var height: js.UndefOr[Double] = js.undefined
-    
-    /**
       * Default step size for x-/y- discrete fields.
       */
     var step: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Default width
-      *
-      * __Deprecated:__ Since Vega-Lite 4.0. Please use continuousWidth and discreteWidth instead.
-      */
-    var width: js.UndefOr[Double] = js.undefined
   }
   object ViewConfig {
     
@@ -557,17 +604,9 @@ object srcConfigMod {
       
       inline def setDiscreteWidthUndefined: Self = StObject.set(x, "discreteWidth", js.undefined)
       
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
       inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

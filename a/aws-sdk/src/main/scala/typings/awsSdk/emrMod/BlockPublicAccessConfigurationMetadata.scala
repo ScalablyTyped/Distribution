@@ -14,11 +14,11 @@ trait BlockPublicAccessConfigurationMetadata extends StObject {
   /**
     * The date and time that the configuration was created.
     */
-  var CreationDateTime: Date
+  var CreationDateTime: js.Date
 }
 object BlockPublicAccessConfigurationMetadata {
   
-  inline def apply(CreatedByArn: ArnType, CreationDateTime: Date): BlockPublicAccessConfigurationMetadata = {
+  inline def apply(CreatedByArn: ArnType, CreationDateTime: js.Date): BlockPublicAccessConfigurationMetadata = {
     val __obj = js.Dynamic.literal(CreatedByArn = CreatedByArn.asInstanceOf[js.Any], CreationDateTime = CreationDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockPublicAccessConfigurationMetadata]
   }
@@ -27,6 +27,6 @@ object BlockPublicAccessConfigurationMetadata {
     
     inline def setCreatedByArn(value: ArnType): Self = StObject.set(x, "CreatedByArn", value.asInstanceOf[js.Any])
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
   }
 }

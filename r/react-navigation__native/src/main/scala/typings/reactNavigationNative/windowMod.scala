@@ -34,5 +34,9 @@ object windowMod {
     inline def location_=(x: URL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("location")(x.asInstanceOf[js.Any])
     
     inline def removeEventListener_popstate(`type`: popstate, listener: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @JSImport("@react-navigation/native/lib/typescript/src/@/mocks/window", "default.window")
+    @js.native
+    val window: Any = js.native
   }
 }

@@ -14,7 +14,7 @@ trait CheckIsSupportSoterAuthenticationRes extends StObject {
   /**
     * 接口调用成功的回调函数
     */
-  var supportMode: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var supportMode: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object CheckIsSupportSoterAuthenticationRes {
   
@@ -29,10 +29,10 @@ object CheckIsSupportSoterAuthenticationRes {
     
     inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    inline def setSupportMode(value: js.Array[js.Any]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
+    inline def setSupportMode(value: js.Array[Any]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
     
     inline def setSupportModeUndefined: Self = StObject.set(x, "supportMode", js.undefined)
     
-    inline def setSupportModeVarargs(value: js.Any*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
+    inline def setSupportModeVarargs(value: Any*): Self = StObject.set(x, "supportMode", js.Array(value*))
   }
 }

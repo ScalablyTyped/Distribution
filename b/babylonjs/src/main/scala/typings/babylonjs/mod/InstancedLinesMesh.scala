@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "InstancedLinesMesh")
 @js.native
-class InstancedLinesMesh protected ()
+open class InstancedLinesMesh protected ()
   extends typings.babylonjs.legacyMod.InstancedLinesMesh {
   def this(name: String, source: typings.babylonjs.linesMeshMod.LinesMesh) = this()
 }

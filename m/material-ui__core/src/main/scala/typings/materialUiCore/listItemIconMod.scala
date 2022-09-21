@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.listItemIconListItemIconMod.ListItemIconProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object listItemIconMod extends Shortcut {
+object listItemIconMod {
   
-  @JSImport("@material-ui/core/ListItemIcon", JSImport.Default)
+  @JSImport("@material-ui/core/ListItemIcon", JSImport.Namespace)
   @js.native
-  val default: ComponentType[ListItemIconProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[ListItemIconProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `listItemIconMod.foo` */
-  override def _to: ComponentType[ListItemIconProps] = default
+  inline def default(props: ListItemIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

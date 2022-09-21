@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTestPermissionsResponse extends StObject {
   
   /**
-    * A subset of `TestPermissionsRequest.permissions` that the caller is
-    * allowed.
+    * A subset of `TestPermissionsRequest.permissions` that the caller is allowed.
     */
-  var permissions: js.UndefOr[js.Array[String]] = js.undefined
+  var permissions: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaTestPermissionsResponse {
   
@@ -23,8 +22,10 @@ object SchemaTestPermissionsResponse {
     
     inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
+    inline def setPermissionsNull: Self = StObject.set(x, "permissions", null)
+    
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
   }
 }

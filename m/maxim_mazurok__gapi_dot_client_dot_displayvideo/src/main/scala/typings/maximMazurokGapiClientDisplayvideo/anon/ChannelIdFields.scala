@@ -13,8 +13,8 @@ trait ChannelIdFields extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the created channel. */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  /** The ID of the advertiser that owns the parent channel. */
+  var advertiserId: String
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -22,11 +22,18 @@ trait ChannelIdFields extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the channel. Assigned by the system. */
+  /** Required. The ID of the parent channel to which the requested sites belong. */
   var channelId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Allows filtering by site fields. Supported syntax: * Filter expressions for site currently can only contain at most one * restriction. * A restriction has the form of `{field}
+    * {operator} {value}`. * The operator must be `CONTAINS (:)`. * Supported fields: - `urlOrAppId` Examples: * All sites for which the URL or app ID contains "google": `urlOrAppId :
+    * "google"`
+    */
+  var filter: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
@@ -34,17 +41,29 @@ trait ChannelIdFields extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the partner that owns the created channel. */
-  var partnerId: String
+  /**
+    * Field by which to sort the list. Acceptable values are: * `urlOrAppId` (default) The default sorting order is ascending. To specify descending order for a field, a suffix "
+    * desc" should be added to the field name. Example: `urlOrAppId desc`.
+    */
+  var orderBy: js.UndefOr[String] = js.undefined
+  
+  /** Requested page size. Must be between `1` and `10000`. If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value is specified. */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * A token identifying a page of results the server should return. Typically, this is the value of next_page_token returned from the previous call to `ListSites` method. If not
+    * specified, the first page of results will be returned.
+    */
+  var pageToken: js.UndefOr[String] = js.undefined
+  
+  /** The ID of the partner that owns the parent channel. */
+  var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Required. The mask to control which fields to update. */
-  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -54,8 +73,8 @@ trait ChannelIdFields extends StObject {
 }
 object ChannelIdFields {
   
-  inline def apply(channelId: String, partnerId: String): ChannelIdFields = {
-    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], partnerId = partnerId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, channelId: String): ChannelIdFields = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelIdFields]
   }
   
@@ -71,8 +90,6 @@ object ChannelIdFields {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
-    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
@@ -87,6 +104,10 @@ object ChannelIdFields {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -95,7 +116,21 @@ object ChannelIdFields {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -104,10 +139,6 @@ object ChannelIdFields {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

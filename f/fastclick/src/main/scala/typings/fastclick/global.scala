@@ -11,26 +11,26 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("FastClick")
   @js.native
-  class FastClick protected ()
+  open class FastClick protected ()
     extends StObject
        with FastClickObject {
-    def this(layer: js.Any) = this()
-    def this(layer: js.Any, options: FastClickOptions) = this()
+    def this(layer: Any) = this()
+    def this(layer: Any, options: FastClickOptions) = this()
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
     
     /* CompleteClass */
-    override def determineEventType(targetElement: js.Any): String = js.native
+    override def determineEventType(targetElement: Any): String = js.native
     
     /* CompleteClass */
-    override def findControl(labelElement: js.Any): js.Any = js.native
+    override def findControl(labelElement: Any): Any = js.native
     
     /* CompleteClass */
-    override def focus(targetElement: js.Any): Unit = js.native
+    override def focus(targetElement: Any): Unit = js.native
     
     /* CompleteClass */
-    override def getTargetElementFromEventTarget(eventTarget: EventTarget): js.Any = js.native
+    override def getTargetElementFromEventTarget(eventTarget: EventTarget): Any = js.native
     
     /* CompleteClass */
     var lastTouchIdentifier: Double = js.native
@@ -39,16 +39,16 @@ object global {
     var layer: Element = js.native
     
     /* CompleteClass */
-    override def needsClick(target: js.Any): Boolean = js.native
+    override def needsClick(target: Any): Boolean = js.native
     
     /* CompleteClass */
-    override def needsFocus(target: js.Any): Boolean = js.native
+    override def needsFocus(target: Any): Boolean = js.native
     
     /* CompleteClass */
     var tapDelay: Double = js.native
     
     /* CompleteClass */
-    var targetElement: js.Any = js.native
+    var targetElement: Any = js.native
     
     /* CompleteClass */
     var touchBoundary: Double = js.native

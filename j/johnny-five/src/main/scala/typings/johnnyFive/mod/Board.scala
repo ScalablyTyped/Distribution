@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Board")
 @js.native
-class Board () extends StObject {
+open class Board () extends StObject {
   def this(option: BoardOption) = this()
   
   def analogRead(pin: String, cb: js.Function1[/* item */ Double, Unit]): Unit = js.native
@@ -25,7 +25,7 @@ class Board () extends StObject {
   
   var id: String = js.native
   
-  var io: js.Any = js.native
+  var io: Any = js.native
   
   var isReady: Boolean = js.native
   

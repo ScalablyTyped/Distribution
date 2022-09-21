@@ -33,19 +33,19 @@ object ParsedQuery {
     
     inline def setAst(value: js.Array[QueryAstNode]): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    inline def setAstVarargs(value: QueryAstNode*): Self = StObject.set(x, "ast", js.Array(value :_*))
+    inline def setAstVarargs(value: QueryAstNode*): Self = StObject.set(x, "ast", js.Array(value*))
     
     inline def setBindVars(value: js.Array[String]): Self = StObject.set(x, "bindVars", value.asInstanceOf[js.Any])
     
-    inline def setBindVarsVarargs(value: String*): Self = StObject.set(x, "bindVars", js.Array(value :_*))
+    inline def setBindVarsVarargs(value: String*): Self = StObject.set(x, "bindVars", js.Array(value*))
     
     inline def setCollections(value: js.Array[String]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    inline def setCollectionsVarargs(value: String*): Self = StObject.set(x, "collections", js.Array(value :_*))
+    inline def setCollectionsVarargs(value: String*): Self = StObject.set(x, "collections", js.Array(value*))
     
     inline def setParameters(value: js.Array[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: String*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: String*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setParsed(value: Boolean): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
   }

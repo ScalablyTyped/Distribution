@@ -22,6 +22,6 @@ object ListShaCertificatesResponse {
     
     inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    inline def setCertificatesVarargs(value: ShaCertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: ShaCertificate*): Self = StObject.set(x, "certificates", js.Array(value*))
   }
 }

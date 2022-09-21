@@ -230,7 +230,7 @@ object b3 {
       * it may not be compatible with load for now.
       *
       */
-    def dump(): js.Any = js.native
+    def dump(): Any = js.native
     
     /**
       * This method loads a Behavior Tree from a data structure, populating this
@@ -257,8 +257,8 @@ object b3 {
       *
       *
       */
-    def load(data: js.Any): Unit = js.native
-    def load(data: js.Any, names: js.Any): Unit = js.native
+    def load(data: Any): Unit = js.native
+    def load(data: Any, names: Any): Unit = js.native
     
     /**
       * Propagates the tick signal through the tree, starting from the root.
@@ -278,7 +278,7 @@ object b3 {
       * automatically.
       *
       */
-    def tick(target: js.Any, blackboard: Blackboard): String = js.native
+    def tick(target: Any, blackboard: Blackboard): String = js.native
   }
   
   /**
@@ -328,21 +328,21 @@ object b3 {
       * return the global memory.
       *
       */
-    def _getMemory(treeScope: String, nodeScope: String): js.Any
+    def _getMemory(treeScope: String, nodeScope: String): Any
     
     /**
       * Internal method to retrieve the node context memory, given the tree
       * memory. If the memory does not exist, this method creates is.
       *
       */
-    def _getNodeMemory(treeMemory: String, nodeScope: String): js.Any
+    def _getNodeMemory(treeMemory: String, nodeScope: String): Any
     
     /**
       * Internal method to retrieve the tree context memory. If the memory does
       * not exist, this method creates it.
       *
       */
-    def _getTreeMemory(treeScope: String): js.Any
+    def _getTreeMemory(treeScope: String): Any
     
     /**
       * Retrieves a value in the blackboard. If treeScope and nodeScope are
@@ -354,7 +354,7 @@ object b3 {
       * memory.
       *
       */
-    def get(key: String, treeScope: String, nodeScope: String): js.Any
+    def get(key: String, treeScope: String, nodeScope: String): Any
     
     /**
       * Stores a value in the blackboard. If treeScope and nodeScope are
@@ -371,10 +371,10 @@ object b3 {
   object Blackboard {
     
     inline def apply(
-      _getMemory: (String, String) => js.Any,
-      _getNodeMemory: (String, String) => js.Any,
-      _getTreeMemory: String => js.Any,
-      get: (String, String, String) => js.Any,
+      _getMemory: (String, String) => Any,
+      _getNodeMemory: (String, String) => Any,
+      _getTreeMemory: String => Any,
+      get: (String, String, String) => Any,
       set: (String, String, String, String) => Unit
     ): Blackboard = {
       val __obj = js.Dynamic.literal(_getMemory = js.Any.fromFunction2(_getMemory), _getNodeMemory = js.Any.fromFunction2(_getNodeMemory), _getTreeMemory = js.Any.fromFunction1(_getTreeMemory), get = js.Any.fromFunction3(get), set = js.Any.fromFunction4(set))
@@ -383,15 +383,15 @@ object b3 {
     
     extension [Self <: Blackboard](x: Self) {
       
-      inline def setGet(value: (String, String, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+      inline def setGet(value: (String, String, String) => Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
       inline def setSet(value: (String, String, String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
       
-      inline def set_getMemory(value: (String, String) => js.Any): Self = StObject.set(x, "_getMemory", js.Any.fromFunction2(value))
+      inline def set_getMemory(value: (String, String) => Any): Self = StObject.set(x, "_getMemory", js.Any.fromFunction2(value))
       
-      inline def set_getNodeMemory(value: (String, String) => js.Any): Self = StObject.set(x, "_getNodeMemory", js.Any.fromFunction2(value))
+      inline def set_getNodeMemory(value: (String, String) => Any): Self = StObject.set(x, "_getNodeMemory", js.Any.fromFunction2(value))
       
-      inline def set_getTreeMemory(value: String => js.Any): Self = StObject.set(x, "_getTreeMemory", js.Any.fromFunction1(value))
+      inline def set_getTreeMemory(value: String => Any): Self = StObject.set(x, "_getTreeMemory", js.Any.fromFunction1(value))
     }
   }
   
@@ -898,36 +898,36 @@ object b3 {
     /**
       * Callback when closing a node (called by BaseNode).
       */
-    def _closeNode(node: js.Any): Unit
+    def _closeNode(node: Any): Unit
     
     /**
       * Called when entering a node (called by BaseNode).
       */
-    def _enterNode(node: js.Any): Unit
+    def _enterNode(node: Any): Unit
     
     /**
       * Callback when exiting a node (called by BaseNode).
       */
-    def _exitNode(node: js.Any): Unit
+    def _exitNode(node: Any): Unit
     
     /**
       * Callback when opening a node (called by BaseNode).
       */
-    def _openNode(node: js.Any): Unit
+    def _openNode(node: Any): Unit
     
     /**
       * Callback when ticking a node (called by BaseNode).
       */
-    def _tickNode(node: js.Any): Unit
+    def _tickNode(node: Any): Unit
   }
   object Tick {
     
     inline def apply(
-      _closeNode: js.Any => Unit,
-      _enterNode: js.Any => Unit,
-      _exitNode: js.Any => Unit,
-      _openNode: js.Any => Unit,
-      _tickNode: js.Any => Unit
+      _closeNode: Any => Unit,
+      _enterNode: Any => Unit,
+      _exitNode: Any => Unit,
+      _openNode: Any => Unit,
+      _tickNode: Any => Unit
     ): Tick = {
       val __obj = js.Dynamic.literal(_closeNode = js.Any.fromFunction1(_closeNode), _enterNode = js.Any.fromFunction1(_enterNode), _exitNode = js.Any.fromFunction1(_exitNode), _openNode = js.Any.fromFunction1(_openNode), _tickNode = js.Any.fromFunction1(_tickNode))
       __obj.asInstanceOf[Tick]
@@ -935,15 +935,15 @@ object b3 {
     
     extension [Self <: Tick](x: Self) {
       
-      inline def set_closeNode(value: js.Any => Unit): Self = StObject.set(x, "_closeNode", js.Any.fromFunction1(value))
+      inline def set_closeNode(value: Any => Unit): Self = StObject.set(x, "_closeNode", js.Any.fromFunction1(value))
       
-      inline def set_enterNode(value: js.Any => Unit): Self = StObject.set(x, "_enterNode", js.Any.fromFunction1(value))
+      inline def set_enterNode(value: Any => Unit): Self = StObject.set(x, "_enterNode", js.Any.fromFunction1(value))
       
-      inline def set_exitNode(value: js.Any => Unit): Self = StObject.set(x, "_exitNode", js.Any.fromFunction1(value))
+      inline def set_exitNode(value: Any => Unit): Self = StObject.set(x, "_exitNode", js.Any.fromFunction1(value))
       
-      inline def set_openNode(value: js.Any => Unit): Self = StObject.set(x, "_openNode", js.Any.fromFunction1(value))
+      inline def set_openNode(value: Any => Unit): Self = StObject.set(x, "_openNode", js.Any.fromFunction1(value))
       
-      inline def set_tickNode(value: js.Any => Unit): Self = StObject.set(x, "_tickNode", js.Any.fromFunction1(value))
+      inline def set_tickNode(value: Any => Unit): Self = StObject.set(x, "_tickNode", js.Any.fromFunction1(value))
     }
   }
   

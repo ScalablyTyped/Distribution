@@ -12,7 +12,7 @@ object OrientationSensor {
   inline def apply(
     getCurrentReading: () => OrientationSensorReading,
     minimumReportInterval: Double,
-    onreadingchanged: js.Any,
+    onreadingchanged: Any,
     reportInterval: Double
   ): OrientationSensor = {
     val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])

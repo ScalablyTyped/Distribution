@@ -11,23 +11,23 @@ object intervalsMod {
   
   @JSImport("@devexpress/utils/lib/intervals/sparse/intervals", "SparseIntervals")
   @js.native
-  class SparseIntervals[T /* <: ConstInterval */] () extends StObject {
+  open class SparseIntervals[T /* <: ConstInterval */] () extends StObject {
     def this(list: js.Array[T]) = this()
     
-    /* private */ var _count: js.Any = js.native
+    /* private */ var _count: Any = js.native
     
-    /* private */ var _numIntervals: js.Any = js.native
+    /* private */ var _numIntervals: Any = js.native
     
-    val count: Double = js.native
+    def count: Double = js.native
     
     def getInterval(index: Double): T = js.native
     
     def getNativeIterator(): SparseIntervalsIterator[T] = js.native
     
-    def getObjectsIterator[ObjT /* <: js.Any */](objects: js.Array[ObjT]): SparseObjectsIterator[T, ObjT] = js.native
+    def getObjectsIterator[ObjT /* <: Any */](objects: js.Array[ObjT]): SparseObjectsIterator[T, ObjT] = js.native
     
-    /* private */ var list: js.Any = js.native
+    /* private */ var list: Any = js.native
     
-    val numIntervals: Double = js.native
+    def numIntervals: Double = js.native
   }
 }

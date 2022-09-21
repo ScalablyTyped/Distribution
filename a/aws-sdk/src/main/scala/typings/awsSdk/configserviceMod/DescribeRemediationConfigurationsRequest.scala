@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeRemediationConfigurationsRequest extends StObject {
   
   /**
-    * A list of AWS Config rule names of remediation configurations for which you want details. 
+    * A list of Config rule names of remediation configurations for which you want details. 
     */
   var ConfigRuleNames: typings.awsSdk.configserviceMod.ConfigRuleNames
 }
@@ -22,6 +22,6 @@ object DescribeRemediationConfigurationsRequest {
     
     inline def setConfigRuleNames(value: ConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     
-    inline def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
+    inline def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value*))
   }
 }

@@ -1,10 +1,8 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.ImageBitmap
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.Blob
 import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,69 +13,74 @@ trait Texture
      with BaseTexture {
   
   /** @hidden */
-  var _buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob | ImageBitmap] = js.native
+  var _buffer: Nullable[
+    String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
+  ] = js.native
   
-  /* private */ var _cachedCoordinatesMode: js.Any = js.native
+  /* private */ var _cachedCoordinatesMode: Any = js.native
   
-  /* private */ var _cachedHomogeneousRotationInUVTransform: js.Any = js.native
+  /* private */ var _cachedHomogeneousRotationInUVTransform: Any = js.native
   
-  /* private */ var _cachedProjectionMatrixId: js.Any = js.native
+  /* private */ var _cachedProjectionMatrixId: Any = js.native
   
-  /* private */ var _cachedTextureMatrix: js.Any = js.native
+  /* private */ var _cachedTextureMatrix: Any = js.native
   
-  /* private */ var _cachedUAng: js.Any = js.native
+  /* private */ var _cachedUAng: Any = js.native
   
-  /* private */ var _cachedUOffset: js.Any = js.native
+  /* private */ var _cachedUOffset: Any = js.native
   
-  /* private */ var _cachedURotationCenter: js.Any = js.native
+  /* private */ var _cachedURotationCenter: Any = js.native
   
-  /* private */ var _cachedUScale: js.Any = js.native
+  /* private */ var _cachedUScale: Any = js.native
   
-  /* private */ var _cachedVAng: js.Any = js.native
+  /* private */ var _cachedVAng: Any = js.native
   
-  /* private */ var _cachedVOffset: js.Any = js.native
+  /* private */ var _cachedVOffset: Any = js.native
   
-  /* private */ var _cachedVRotationCenter: js.Any = js.native
+  /* private */ var _cachedVRotationCenter: Any = js.native
   
-  /* private */ var _cachedVScale: js.Any = js.native
+  /* private */ var _cachedVScale: Any = js.native
   
-  /* private */ var _cachedWAng: js.Any = js.native
+  /* private */ var _cachedWAng: Any = js.native
   
-  /* private */ var _cachedWRotationCenter: js.Any = js.native
+  /* private */ var _cachedWRotationCenter: Any = js.native
   
-  /* private */ var _delayedOnError: js.Any = js.native
+  /* private */ var _creationFlags: Any = js.native
   
-  /* private */ var _delayedOnLoad: js.Any = js.native
+  /* private */ var _delayedOnError: Any = js.native
   
-  /* private */ var _deleteBuffer: js.Any = js.native
+  /* private */ var _delayedOnLoad: Any = js.native
+  
+  /* private */ var _deleteBuffer: Any = js.native
+  
+  /* private */ var _forcedExtension: Any = js.native
   
   /* protected */ var _format: Nullable[Double] = js.native
-  
-  /** @hidden */
-  /* protected */ var _initialSamplingMode: Double = js.native
   
   /** @hidden */
   var _invertY: Boolean = js.native
   
   /* protected */ var _isBlocking: Boolean = js.native
   
-  /* private */ var _loaderOptions: js.Any = js.native
+  /* private */ var _loaderOptions: Any = js.native
   
-  /* private */ var _mimeType: js.Any = js.native
+  /* private */ var _mimeType: Any = js.native
   
-  /* private */ var _noMipmap: js.Any = js.native
+  /* private */ var _noMipmap: Any = js.native
   
-  /* private */ var _prepareRowForTextureGeneration: js.Any = js.native
+  /* private */ var _prepareRowForTextureGeneration: Any = js.native
   
-  /* private */ var _projectionModeMatrix: js.Any = js.native
+  /* private */ var _projectionModeMatrix: Any = js.native
   
-  /* private */ var _rowGenerationMatrix: js.Any = js.native
+  /* private */ var _rowGenerationMatrix: Any = js.native
   
-  /* private */ var _t0: js.Any = js.native
+  /* private */ var _t0: Any = js.native
   
-  /* private */ var _t1: js.Any = js.native
+  /* private */ var _t1: Any = js.native
   
-  /* private */ var _t2: js.Any = js.native
+  /* private */ var _t2: Any = js.native
+  
+  /* private */ var _useSRGBBuffer: Any = js.native
   
   /**
     * Checks if the texture has the same transform matrix than another texture
@@ -119,12 +122,8 @@ trait Texture
   var onLoadObservable: Observable[Texture] = js.native
   
   /**
-    * Get the current sampling mode associated with the texture.
-    */
-  def samplingMode: Double = js.native
-  
-  /**
     * Define an offset on the texture to rotate around the u coordinates of the UVs
+    * The angle is defined in radians.
     * @see https://doc.babylonjs.com/how_to/more_materials
     */
   var uAng: Double = js.native
@@ -151,14 +150,40 @@ trait Texture
     * @param url the url of the texture
     * @param buffer the buffer of the texture (defaults to null)
     * @param onLoad callback called when the texture is loaded  (defaults to null)
+    * @param forcedExtension defines the extension to use to pick the right loader
     */
   def updateURL(url: String): Unit = js.native
   def updateURL(url: String, buffer: Unit, onLoad: js.Function0[Unit]): Unit = js.native
-  def updateURL(url: String, buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob]): Unit = js.native
+  def updateURL(url: String, buffer: Unit, onLoad: js.Function0[Unit], forcedExtension: String): Unit = js.native
+  def updateURL(url: String, buffer: Unit, onLoad: Unit, forcedExtension: String): Unit = js.native
   def updateURL(
     url: String,
-    buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob],
+    buffer: Nullable[
+      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+    ]
+  ): Unit = js.native
+  def updateURL(
+    url: String,
+    buffer: Nullable[
+      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+    ],
     onLoad: js.Function0[Unit]
+  ): Unit = js.native
+  def updateURL(
+    url: String,
+    buffer: Nullable[
+      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+    ],
+    onLoad: js.Function0[Unit],
+    forcedExtension: String
+  ): Unit = js.native
+  def updateURL(
+    url: String,
+    buffer: Nullable[
+      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+    ],
+    onLoad: Unit,
+    forcedExtension: String
   ): Unit = js.native
   
   /**
@@ -168,6 +193,7 @@ trait Texture
   
   /**
     * Define an offset on the texture to rotate around the v coordinates of the UVs
+    * The angle is defined in radians.
     * @see https://doc.babylonjs.com/how_to/more_materials
     */
   var vAng: Double = js.native
@@ -191,6 +217,7 @@ trait Texture
   
   /**
     * Define an offset on the texture to rotate around the w coordinates of the UVs (in case of 3d texture)
+    * The angle is defined in radians.
     * @see https://doc.babylonjs.com/how_to/more_materials
     */
   var wAng: Double = js.native

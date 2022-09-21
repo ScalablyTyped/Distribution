@@ -12,7 +12,7 @@ trait IVaultUI extends StObject {
   def ShowMessage(message: String): Double = js.native
   def ShowMessage(message: IMessage): Double = js.native
   
-  def ShowPopupDashboard(dashboardID: String, waitUntilClosed: Boolean, data: js.Any): Unit = js.native
+  def ShowPopupDashboard(dashboardID: String, waitUntilClosed: Boolean, data: Any): Unit = js.native
   
   val Vault: IVault = js.native
   

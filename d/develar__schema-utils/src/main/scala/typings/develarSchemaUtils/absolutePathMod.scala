@@ -1,7 +1,7 @@
 package typings.develarSchemaUtils
 
-import typings.ajv.mod.ErrorObject
-import typings.ajv.mod.ErrorParameters
+import typings.ajv.distTypesMod.ErrorObject
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,24 +23,24 @@ object absolutePathMod {
   
   trait SchemaUtilErrorObject
     extends StObject
-       with ErrorObject {
+       with ErrorObject[String, Record[String, Any], Any] {
     
-    var children: js.UndefOr[js.Array[ErrorObject]] = js.undefined
+    var children: js.UndefOr[js.Array[ErrorObject[String, Record[String, Any], Any]]] = js.undefined
   }
   object SchemaUtilErrorObject {
     
-    inline def apply(dataPath: String, keyword: String, params: ErrorParameters, schemaPath: String): SchemaUtilErrorObject = {
-      val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
+    inline def apply(instancePath: String, keyword: String, params: Record[String, Any], schemaPath: String): SchemaUtilErrorObject = {
+      val __obj = js.Dynamic.literal(instancePath = instancePath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaUtilErrorObject]
     }
     
     extension [Self <: SchemaUtilErrorObject](x: Self) {
       
-      inline def setChildren(value: js.Array[ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ErrorObject[String, Record[String, Any], Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: (ErrorObject[String, Record[String, Any], Any])*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
 }

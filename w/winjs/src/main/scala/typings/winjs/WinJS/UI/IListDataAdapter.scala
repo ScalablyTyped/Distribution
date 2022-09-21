@@ -125,7 +125,7 @@ trait IListDataAdapter[T] extends StObject {
     * @param previousIndexHint The index to move the item after, if known.
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
-  def moveAfter(key: String, previousKey: js.Any, indexHint: String, previousIndexHint: Double): Promise[IItem[T]]
+  def moveAfter(key: String, previousKey: Any, indexHint: String, previousIndexHint: Double): Promise[IItem[T]]
   
   /**
     * Moves the specified item to just before another item.
@@ -135,7 +135,7 @@ trait IListDataAdapter[T] extends StObject {
     * @param nextIndexHint The index to move the item before, if known.
     * @returns A Promise that contains the IItem that was added or an EditError if an error was encountered.
     **/
-  def moveBefore(key: String, nextKey: js.Any, indexHint: String, nextIndexHint: Double): Promise[IItem[T]]
+  def moveBefore(key: String, nextKey: Any, indexHint: String, nextIndexHint: Double): Promise[IItem[T]]
   
   /**
     * Moves the specified item to the end of the IListDataAdapter object's data source.
@@ -184,8 +184,8 @@ object IListDataAdapter {
     itemsFromIndex: (Double, Double, Double) => Promise[IFetchResult[T]],
     itemsFromKey: (String, Double, Double) => Promise[IFetchResult[T]],
     itemsFromStart: Double => Promise[IFetchResult[T]],
-    moveAfter: (String, js.Any, String, Double) => Promise[IItem[T]],
-    moveBefore: (String, js.Any, String, Double) => Promise[IItem[T]],
+    moveAfter: (String, Any, String, Double) => Promise[IItem[T]],
+    moveBefore: (String, Any, String, Double) => Promise[IItem[T]],
     moveToEnd: (String, Double) => Promise[IItem[T]],
     moveToStart: (String, Double) => Promise[IItem[T]],
     remove: (String, T, Double) => Promise[Unit],
@@ -223,9 +223,9 @@ object IListDataAdapter {
     
     inline def setItemsFromStart(value: Double => Promise[IFetchResult[T]]): Self = StObject.set(x, "itemsFromStart", js.Any.fromFunction1(value))
     
-    inline def setMoveAfter(value: (String, js.Any, String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "moveAfter", js.Any.fromFunction4(value))
+    inline def setMoveAfter(value: (String, Any, String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "moveAfter", js.Any.fromFunction4(value))
     
-    inline def setMoveBefore(value: (String, js.Any, String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "moveBefore", js.Any.fromFunction4(value))
+    inline def setMoveBefore(value: (String, Any, String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "moveBefore", js.Any.fromFunction4(value))
     
     inline def setMoveToEnd(value: (String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "moveToEnd", js.Any.fromFunction2(value))
     

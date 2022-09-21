@@ -12,7 +12,7 @@ trait FieldLevelEncryptionProfileConfig extends StObject {
   var CallerReference: String
   
   /**
-    * An optional comment for the field-level encryption profile.
+    * An optional comment for the field-level encryption profile. The comment cannot be longer than 128 characters.
     */
   var Comment: js.UndefOr[String] = js.undefined
   

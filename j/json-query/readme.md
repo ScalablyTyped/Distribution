@@ -10,10 +10,10 @@ Retrieves values from JSON objects for data binding. Offers params, nested queri
 | ------------------ | :-------------: |
 | Full name          | json-query |
 | Keywords           | data binding, filter, json, query |
-| # releases         | 0 |
-| # dependents       | 84 |
-| # downloads        | 615718 |
-| # stars            | 28 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 113363.66666666667 |
+| # stars            | 491.0 |
 
 ## Links
 - [Homepage](http://github.com/mmckegg/json-query)

@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LineLayer
   extends StObject
-     with LayerBase
-     with Layer {
+     with Layer
+     with AnyLayer {
   
-  var layout: js.UndefOr[LineLayout] = js.undefined
+  @JSName("layout")
+  var layout_LineLayer: js.UndefOr[LineLayout] = js.undefined
   
-  var paint: js.UndefOr[LinePaint] = js.undefined
+  @JSName("paint")
+  var paint_LineLayer: js.UndefOr[LinePaint] = js.undefined
   
-  var `type`: line
+  @JSName("type")
+  var type_LineLayer: line
 }
 object LineLayer {
   

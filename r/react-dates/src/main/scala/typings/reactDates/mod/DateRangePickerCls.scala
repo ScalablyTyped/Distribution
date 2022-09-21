@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("react-dates", "DateRangePicker")
 @js.native
-class DateRangePickerCls protected ()
-  extends Component[typings.reactDates.mod.DateRangePickerShape, ComponentState, js.Any] {
+open class DateRangePickerCls protected ()
+  extends Component[typings.reactDates.mod.DateRangePickerShape, ComponentState, Any] {
   def this(props: typings.reactDates.mod.DateRangePickerShape) = this()
-  def this(props: typings.reactDates.mod.DateRangePickerShape, context: js.Any) = this()
+  def this(props: typings.reactDates.mod.DateRangePickerShape, context: Any) = this()
 }

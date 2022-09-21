@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the conditional formats that are overlap the range.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalFormatCollection")
 @js.native
-class ConditionalFormatCollection ()
+open class ConditionalFormatCollection ()
   extends StObject
      with typings.officeJsPreview.Excel.ConditionalFormatCollection {
   

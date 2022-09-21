@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Where extends StObject {
   
-  var where: js.Any
+  var where: Any
 }
 object Where {
   
-  inline def apply(where: js.Any): Where = {
+  inline def apply(where: Any): Where = {
     val __obj = js.Dynamic.literal(where = where.asInstanceOf[js.Any])
     __obj.asInstanceOf[Where]
   }
   
   extension [Self <: Where](x: Self) {
     
-    inline def setWhere(value: js.Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
   }
 }

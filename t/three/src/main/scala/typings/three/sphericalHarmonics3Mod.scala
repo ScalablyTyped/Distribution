@@ -11,15 +11,16 @@ object sphericalHarmonics3Mod {
   
   @JSImport("three/src/math/SphericalHarmonics3", "SphericalHarmonics3")
   @js.native
-  class SphericalHarmonics3 () extends StObject {
+  open class SphericalHarmonics3 () extends StObject {
     
     def add(sh: SphericalHarmonics3): SphericalHarmonics3 = js.native
     
     def addScaledSH(sh: SphericalHarmonics3, s: Double): SphericalHarmonics3 = js.native
     
     /**
-    	 * @default [new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]
-    	 */
+      * @default [new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(),
+      * new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]
+      */
     var coefficients: js.Array[Vector3] = js.native
     
     def copy(sh: SphericalHarmonics3): SphericalHarmonics3 = js.native
@@ -27,17 +28,12 @@ object sphericalHarmonics3Mod {
     def equals(sh: SphericalHarmonics3): Boolean = js.native
     
     /**
-    	 * Sets the values of this spherical harmonics from the provided array.
-    	 * @param array the source array.
-    	 * @param offset (optional) offset into the array. Default is 0.
-    	 */
+      * Sets the values of this spherical harmonics from the provided array or array-like.
+      * @param array the source array or array-like.
+      * @param offset (optional) offset into the array. Default is 0.
+      */
     def fromArray(array: js.Array[Double]): this.type = js.native
     def fromArray(array: js.Array[Double], offset: Double): this.type = js.native
-    /**
-    	 * Sets the values of this spherical harmonics from the provided array-like.
-    	 * @param array the source array-like.
-    	 * @param offset (optional) offset into the array-like. Default is 0.
-    	 */
     def fromArray(array: ArrayLike[Double]): this.type = js.native
     def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
     
@@ -54,21 +50,21 @@ object sphericalHarmonics3Mod {
     def set(coefficients: js.Array[Vector3]): SphericalHarmonics3 = js.native
     
     /**
-    	 * Returns an array with the values of this spherical harmonics, or copies them into the provided array.
-    	 * @param array (optional) array to store the spherical harmonics to. If this is not provided, a new array will be created.
-    	 * @param offset (optional) optional offset into the array.
-    	 * @return The created or provided array.
-    	 */
+      * Returns an array with the values of this spherical harmonics, or copies them into the provided array.
+      * @param array (optional) array to store the spherical harmonics to. If this is not provided, a new array will be created.
+      * @param offset (optional) optional offset into the array.
+      * @return The created or provided array.
+      */
     def toArray(): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
     def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     /**
-    	 * Returns an array with the values of this spherical harmonics, or copies them into the provided array-like.
-    	 * @param array array-like to store the spherical harmonics to.
-    	 * @param offset (optional) optional offset into the array-like.
-    	 * @return The provided array-like.
-    	 */
+      * Returns an array with the values of this spherical harmonics, or copies them into the provided array-like.
+      * @param array array-like to store the spherical harmonics to.
+      * @param offset (optional) optional offset into the array-like.
+      * @return The provided array-like.
+      */
     def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
     def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
     

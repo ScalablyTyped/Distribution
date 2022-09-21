@@ -33,6 +33,6 @@ object Geometry {
     
     inline def setPolygonUndefined: Self = StObject.set(x, "Polygon", js.undefined)
     
-    inline def setPolygonVarargs(value: Point*): Self = StObject.set(x, "Polygon", js.Array(value :_*))
+    inline def setPolygonVarargs(value: Point*): Self = StObject.set(x, "Polygon", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.webpackBlocksDevServer
 
-import typings.std.RegExp
 import typings.webpackBlocksDevServer.anon.Errors
 import typings.webpackBlocksDevServer.webpackBlocksDevServerBooleans.`false`
 import typings.webpackBlocksDevServer.webpackBlocksDevServerStrings.`errors-only`
@@ -23,12 +22,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(options: Unit, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(options: Unit, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(options: Options, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(options: Options, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(options: Unit, entry: String): Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(options: Unit, entry: js.Array[String]): Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(options: Options): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(options: Options, entry: String): Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(options: Options, entry: js.Array[String]): Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("@webpack-blocks/dev-server", JSImport.Namespace)
   @js.native
@@ -36,15 +35,15 @@ object mod {
   
   trait ContextObject extends StObject {
     
-    var `match`: js.Any
+    var `match`: Any
     
-    var parsedUrl: js.Any
+    var parsedUrl: Any
     
-    var request: js.Any
+    var request: Any
   }
   object ContextObject {
     
-    inline def apply(`match`: js.Any, parsedUrl: js.Any, request: js.Any): ContextObject = {
+    inline def apply(`match`: Any, parsedUrl: Any, request: Any): ContextObject = {
       val __obj = js.Dynamic.literal(parsedUrl = parsedUrl.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContextObject]
@@ -52,11 +51,11 @@ object mod {
     
     extension [Self <: ContextObject](x: Self) {
       
-      inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      inline def setParsedUrl(value: js.Any): Self = StObject.set(x, "parsedUrl", value.asInstanceOf[js.Any])
+      inline def setParsedUrl(value: Any): Self = StObject.set(x, "parsedUrl", value.asInstanceOf[js.Any])
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,7 +88,7 @@ object mod {
       
       inline def setHtmlAcceptHeadersUndefined: Self = StObject.set(x, "htmlAcceptHeaders", js.undefined)
       
-      inline def setHtmlAcceptHeadersVarargs(value: String*): Self = StObject.set(x, "htmlAcceptHeaders", js.Array(value :_*))
+      inline def setHtmlAcceptHeadersVarargs(value: String*): Self = StObject.set(x, "htmlAcceptHeaders", js.Array(value*))
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -105,7 +104,7 @@ object mod {
     }
   }
   
-  type InjectClientFunction = js.Function1[/* compilerConfig */ js.Any, Boolean]
+  type InjectClientFunction = js.Function1[/* compilerConfig */ Any, Boolean]
   
   trait Options extends StObject {
     
@@ -212,7 +211,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAfter(value: (/* app */ js.Any, /* server */ js.Any) => Unit): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
+      inline def setAfter(value: (/* app */ Any, /* server */ Any) => Unit): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
@@ -220,9 +219,9 @@ object mod {
       
       inline def setAllowedHostsUndefined: Self = StObject.set(x, "allowedHosts", js.undefined)
       
-      inline def setAllowedHostsVarargs(value: String*): Self = StObject.set(x, "allowedHosts", js.Array(value :_*))
+      inline def setAllowedHostsVarargs(value: String*): Self = StObject.set(x, "allowedHosts", js.Array(value*))
       
-      inline def setBefore(value: (/* app */ js.Any, /* server */ js.Any) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+      inline def setBefore(value: (/* app */ Any, /* server */ Any) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
@@ -242,7 +241,7 @@ object mod {
       
       inline def setContentBaseUndefined: Self = StObject.set(x, "contentBase", js.undefined)
       
-      inline def setContentBaseVarargs(value: String*): Self = StObject.set(x, "contentBase", js.Array(value :_*))
+      inline def setContentBaseVarargs(value: String*): Self = StObject.set(x, "contentBase", js.Array(value*))
       
       inline def setDisableHostCheck(value: Boolean): Self = StObject.set(x, "disableHostCheck", value.asInstanceOf[js.Any])
       
@@ -286,13 +285,13 @@ object mod {
       
       inline def setInjectClient(value: Boolean | InjectClientFunction): Self = StObject.set(x, "injectClient", value.asInstanceOf[js.Any])
       
-      inline def setInjectClientFunction1(value: /* compilerConfig */ js.Any => Boolean): Self = StObject.set(x, "injectClient", js.Any.fromFunction1(value))
+      inline def setInjectClientFunction1(value: /* compilerConfig */ Any => Boolean): Self = StObject.set(x, "injectClient", js.Any.fromFunction1(value))
       
       inline def setInjectClientUndefined: Self = StObject.set(x, "injectClient", js.undefined)
       
       inline def setInjectHot(value: Boolean | InjectClientFunction): Self = StObject.set(x, "injectHot", value.asInstanceOf[js.Any])
       
-      inline def setInjectHotFunction1(value: /* compilerConfig */ js.Any => Boolean): Self = StObject.set(x, "injectHot", js.Any.fromFunction1(value))
+      inline def setInjectHotFunction1(value: /* compilerConfig */ Any => Boolean): Self = StObject.set(x, "injectHot", js.Any.fromFunction1(value))
       
       inline def setInjectHotUndefined: Self = StObject.set(x, "injectHot", js.undefined)
       
@@ -344,7 +343,7 @@ object mod {
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      inline def setProxyVarargs(value: ProxyType*): Self = StObject.set(x, "proxy", js.Array(value :_*))
+      inline def setProxyVarargs(value: ProxyType*): Self = StObject.set(x, "proxy", js.Array(value*))
       
       inline def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
@@ -362,7 +361,7 @@ object mod {
       
       inline def setServeIndexUndefined: Self = StObject.set(x, "serveIndex", js.undefined)
       
-      inline def setSetup(value: /* compilerConfig */ js.Any => Boolean): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
+      inline def setSetup(value: /* compilerConfig */ Any => Boolean): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
       
       inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
       
@@ -417,9 +416,9 @@ object mod {
   type PathFunction = js.Function0[String]
   
   type ProxyFunction = js.Function3[
-    /* request */ js.Any, 
-    /* response */ js.Any, 
-    /* proxy */ js.Any, 
+    /* request */ Any, 
+    /* response */ Any, 
+    /* proxy */ Any, 
     js.UndefOr[Null | `false` | String]
   ]
   
@@ -427,20 +426,20 @@ object mod {
   
   trait RewritesObject extends StObject {
     
-    var from: RegExp
+    var from: js.RegExp
     
     var to: String | RewritesToFunction
   }
   object RewritesObject {
     
-    inline def apply(from: RegExp, to: String | RewritesToFunction): RewritesObject = {
+    inline def apply(from: js.RegExp, to: String | RewritesToFunction): RewritesObject = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[RewritesObject]
     }
     
     extension [Self <: RewritesObject](x: Self) {
       
-      inline def setFrom(value: RegExp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: js.RegExp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setTo(value: String | RewritesToFunction): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -452,7 +451,7 @@ object mod {
   
   type SetHeadersFunction = js.Function3[/* res */ js.Object, /* path */ String, /* stat */ js.Object, Unit]
   
-  type StartMiddlewareFunction = js.Function2[/* app */ js.Any, /* server */ js.Any, Unit]
+  type StartMiddlewareFunction = js.Function2[/* app */ Any, /* server */ Any, Unit]
   
   trait TransportMode extends StObject {
     
@@ -487,7 +486,7 @@ object mod {
     
     var aggregateTimeout: js.UndefOr[Double] = js.undefined
     
-    var ignored: js.UndefOr[RegExp] = js.undefined
+    var ignored: js.UndefOr[js.RegExp] = js.undefined
     
     var poll: js.UndefOr[Boolean | Double] = js.undefined
   }
@@ -504,7 +503,7 @@ object mod {
       
       inline def setAggregateTimeoutUndefined: Self = StObject.set(x, "aggregateTimeout", js.undefined)
       
-      inline def setIgnored(value: RegExp): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+      inline def setIgnored(value: js.RegExp): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       
       inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
       

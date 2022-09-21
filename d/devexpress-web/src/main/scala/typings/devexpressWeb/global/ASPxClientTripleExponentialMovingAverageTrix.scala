@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTripleExponentialMovingAverageTrix")
 @js.native
-class ASPxClientTripleExponentialMovingAverageTrix ()
+open class ASPxClientTripleExponentialMovingAverageTrix ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTripleExponentialMovingAverageTrix {
   

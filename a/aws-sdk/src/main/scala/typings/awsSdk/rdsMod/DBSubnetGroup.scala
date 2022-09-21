@@ -27,9 +27,14 @@ trait DBSubnetGroup extends StObject {
   var SubnetGroupStatus: js.UndefOr[String] = js.undefined
   
   /**
-    *  Contains a list of Subnet elements. 
+    * Contains a list of Subnet elements.
     */
   var Subnets: js.UndefOr[SubnetList] = js.undefined
+  
+  /**
+    * The network type of the DB subnet group. Valid values:    IPV4     DUAL    A DBSubnetGroup can support only the IPv4 protocol or the IPv4 and the IPv6 protocols (DUAL). For more information, see  Working with a DB instance in a VPC in the Amazon RDS User Guide. 
+    */
+  var SupportedNetworkTypes: js.UndefOr[StringList] = js.undefined
   
   /**
     * Provides the VpcId of the DB subnet group.
@@ -65,7 +70,13 @@ object DBSubnetGroup {
     
     inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    inline def setSubnetsVarargs(value: Subnet*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: Subnet*): Self = StObject.set(x, "Subnets", js.Array(value*))
+    
+    inline def setSupportedNetworkTypes(value: StringList): Self = StObject.set(x, "SupportedNetworkTypes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedNetworkTypesUndefined: Self = StObject.set(x, "SupportedNetworkTypes", js.undefined)
+    
+    inline def setSupportedNetworkTypesVarargs(value: String*): Self = StObject.set(x, "SupportedNetworkTypes", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

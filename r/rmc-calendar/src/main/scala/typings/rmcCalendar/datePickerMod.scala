@@ -13,7 +13,7 @@ object datePickerMod {
   
   @JSImport("rmc-calendar/lib/DatePicker", JSImport.Default)
   @js.native
-  class default () extends DatePicker
+  open class default () extends DatePicker
   
   @js.native
   trait DatePicker
@@ -30,9 +30,9 @@ object datePickerMod {
     
     def setPanel(dom: HTMLDivElement): Unit = js.native
     
-    def setTransform(nodeStyle: CSSStyleDeclaration, value: js.Any): Unit = js.native
+    def setTransform(nodeStyle: CSSStyleDeclaration, value: Any): Unit = js.native
     
-    def setTransition(nodeStyle: CSSStyleDeclaration, value: js.Any): Unit = js.native
+    def setTransition(nodeStyle: CSSStyleDeclaration, value: Any): Unit = js.native
     
     var touchHandler: OnFinish = js.native
     

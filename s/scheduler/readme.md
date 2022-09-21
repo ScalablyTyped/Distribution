@@ -10,10 +10,10 @@ Cooperative scheduler for the browser environment.
 | ------------------ | :-------------: |
 | Full name          | scheduler |
 | Keywords           | react |
-| # releases         | 136 |
-| # dependents       | 191 |
-| # downloads        | 448548798 |
-| # stars            | 1 |
+| # releases         | 751 |
+| # dependents       | 0.0 |
+| # downloads        | 7.113658133333333E7 |
+| # stars            | 195015.0 |
 
 ## Links
 - [Homepage](https://reactjs.org/)

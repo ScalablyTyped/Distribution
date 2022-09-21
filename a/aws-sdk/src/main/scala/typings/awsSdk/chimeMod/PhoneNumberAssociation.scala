@@ -9,7 +9,7 @@ trait PhoneNumberAssociation extends StObject {
   /**
     * The timestamp of the phone number association, in ISO 8601 format.
     */
-  var AssociatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var AssociatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Defines the association with an Amazon Chime account ID, user ID, Amazon Chime Voice Connector ID, or Amazon Chime Voice Connector group ID.
@@ -30,7 +30,7 @@ object PhoneNumberAssociation {
   
   extension [Self <: PhoneNumberAssociation](x: Self) {
     
-    inline def setAssociatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "AssociatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setAssociatedTimestamp(value: js.Date): Self = StObject.set(x, "AssociatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setAssociatedTimestampUndefined: Self = StObject.set(x, "AssociatedTimestamp", js.undefined)
     

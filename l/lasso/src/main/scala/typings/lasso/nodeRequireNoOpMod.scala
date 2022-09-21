@@ -10,5 +10,5 @@ object nodeRequireNoOpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def enable(extensions: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(extensions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enable(extensions: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(extensions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
 }

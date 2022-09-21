@@ -43,11 +43,11 @@ object GridSize {
     
     inline def setLinks(value: js.Array[Labels]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    inline def setLinksVarargs(value: Labels*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Labels*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setNodes(value: js.Array[Ports]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: Ports*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Ports*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

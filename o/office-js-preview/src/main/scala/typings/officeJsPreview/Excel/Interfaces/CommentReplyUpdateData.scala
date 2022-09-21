@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentReplyUpdateData extends StObject {
   
   /**
-    *
     * The comment reply's content. The string is plain text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[String] = js.undefined

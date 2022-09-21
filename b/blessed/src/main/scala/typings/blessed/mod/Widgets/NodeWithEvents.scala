@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.NodeWithEvents")
 @js.native
-class NodeWithEvents protected () extends Node {
+open class NodeWithEvents protected () extends Node {
   def this(options: INodeOptions) = this()
   
   /**
     * Bind a keypress listener for a specific key.
     */
-  def key(name: String, listener: js.Function2[/* ch */ js.Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
-  def key(name: js.Array[String], listener: js.Function2[/* ch */ js.Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
+  def key(name: String, listener: js.Function2[/* ch */ Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
+  def key(name: js.Array[String], listener: js.Function2[/* ch */ Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
   
-  def on(event: String, listener: js.Function2[/* ch */ js.Any, /* key */ IKeyEventArg, Unit]): this.type = js.native
+  def on(event: String, listener: js.Function2[/* ch */ Any, /* key */ IKeyEventArg, Unit]): this.type = js.native
   def on(event: NodeGenericEventType, callback: js.Function0[Unit]): this.type = js.native
   /** Received on mouse events. */
   def on(event: NodeMouseEventType, callback: js.Function1[/* arg */ IMouseEventArg, Unit]): this.type = js.native
@@ -34,12 +34,12 @@ class NodeWithEvents protected () extends Node {
   /**
     * Bind a keypress listener for a specific key once.
     */
-  def onceKey(name: String, listener: js.Function2[/* ch */ js.Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
+  def onceKey(name: String, listener: js.Function2[/* ch */ Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
   
-  def removeKey(name: String, listener: js.Function2[/* ch */ js.Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
+  def removeKey(name: String, listener: js.Function2[/* ch */ Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
   
   /**
     * Remove a keypress listener for a specific key.
     */
-  def unkey(name: String, listener: js.Function2[/* ch */ js.Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
+  def unkey(name: String, listener: js.Function2[/* ch */ Any, /* key */ IKeyEventArg, Unit]): Unit = js.native
 }

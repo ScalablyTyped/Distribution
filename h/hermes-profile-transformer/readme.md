@@ -1,7 +1,7 @@
 
 # Scala.js typings for hermes-profile-transformer
 
-Typings are for version 0.0.6
+Typings are for version 0.0.9
 
 ## Library description:
 The Hermes runtime, used by React Native for Android, is able to output [Chrome Trace Events](https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview) in JSON Object Format.
@@ -11,9 +11,9 @@ The Hermes runtime, used by React Native for Android, is able to output [Chrome 
 | Full name          | hermes-profile-transformer |
 | Keywords           | profiling, hermes, transformation, transformers, dev-tools, react-native, react-native-community, react-native-cli |
 | # releases         | 10 |
-| # dependents       | 7 |
-| # downloads        | 337416 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2779147.6666666665 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/hermes-profile-transformer#readme)

@@ -11,7 +11,7 @@ trait IgSplitButton
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event fired when the button is clicked.
@@ -108,7 +108,7 @@ object IgSplitButton {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: IgSplitButtonItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IgSplitButtonItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSwapDefaultEnabled(value: Boolean): Self = StObject.set(x, "swapDefaultEnabled", value.asInstanceOf[js.Any])
     

@@ -1,46 +1,56 @@
 package typings.mangopay2NodejsSdk
 
-import typings.mangopay2NodejsSdk.mod.AVSResult
-import typings.mangopay2NodejsSdk.mod.ColumnAndDirection
-import typings.mangopay2NodejsSdk.mod.PaymentStatus
-import typings.mangopay2NodejsSdk.mod.PreAuthorizationStatus
-import typings.mangopay2NodejsSdk.mod.SecureMode
-import typings.mangopay2NodejsSdk.mod.bankAccount.BankAccountType
-import typings.mangopay2NodejsSdk.mod.bankAccount.DepositAccountType
-import typings.mangopay2NodejsSdk.mod.card.CardStatus
-import typings.mangopay2NodejsSdk.mod.card.CardValidity
-import typings.mangopay2NodejsSdk.mod.client.BusinessType
-import typings.mangopay2NodejsSdk.mod.client.PlatformType
-import typings.mangopay2NodejsSdk.mod.client.Sector
-import typings.mangopay2NodejsSdk.mod.dispute.DisputeReasonType
-import typings.mangopay2NodejsSdk.mod.dispute.DisputeStatus
-import typings.mangopay2NodejsSdk.mod.dispute.DisputeType
-import typings.mangopay2NodejsSdk.mod.disputeDocument.DisputeDocumentType
-import typings.mangopay2NodejsSdk.mod.disputeDocument.DocumentStatus
-import typings.mangopay2NodejsSdk.mod.disputeDocument.RefusedReasonType
-import typings.mangopay2NodejsSdk.mod.event.EventType
-import typings.mangopay2NodejsSdk.mod.hook.HookStatus
-import typings.mangopay2NodejsSdk.mod.hook.HookValidity
-import typings.mangopay2NodejsSdk.mod.kycDocument.KYCDocumentRefusedReasonType
-import typings.mangopay2NodejsSdk.mod.kycDocument.KycDocumentType
-import typings.mangopay2NodejsSdk.mod.mandate.MandateCultureCode
-import typings.mangopay2NodejsSdk.mod.mandate.MandateScheme
-import typings.mangopay2NodejsSdk.mod.mandate.MandateStatus
-import typings.mangopay2NodejsSdk.mod.payIn.PayInExecutionType
-import typings.mangopay2NodejsSdk.mod.payIn.PayInPaymentType
-import typings.mangopay2NodejsSdk.mod.refund.RefundReasonType
-import typings.mangopay2NodejsSdk.mod.report.Column
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionNature
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
-import typings.mangopay2NodejsSdk.mod.user.RequiredUserLegalData
-import typings.mangopay2NodejsSdk.mod.user.RequiredUserNaturalData
-import typings.mangopay2NodejsSdk.mod.user.StaticKeys
-import typings.mangopay2NodejsSdk.mod.wallet.ClientFundsType
-import typings.mangopay2NodejsSdk.mod.wallet.FundsType
+import typings.mangopay2NodejsSdk.bankAccountMod.bankAccount.BankAccountType
+import typings.mangopay2NodejsSdk.bankAccountMod.bankAccount.DepositAccountType
+import typings.mangopay2NodejsSdk.cardMod.card.CardStatus
+import typings.mangopay2NodejsSdk.cardMod.card.CardValidity
+import typings.mangopay2NodejsSdk.cardPreauthorizationMod.cardPreAuthorization.PaymentStatus
+import typings.mangopay2NodejsSdk.cardPreauthorizationMod.cardPreAuthorization.PreAuthorizationStatus
+import typings.mangopay2NodejsSdk.clientMod.client.BusinessType
+import typings.mangopay2NodejsSdk.clientMod.client.PlatformType
+import typings.mangopay2NodejsSdk.clientMod.client.Sector
+import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DisputeDocumentType
+import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.RefusedReasonType
+import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeReasonType
+import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeStatus
+import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeType
+import typings.mangopay2NodejsSdk.eventMod.event.EventType
+import typings.mangopay2NodejsSdk.hookMod.hook.HookStatus
+import typings.mangopay2NodejsSdk.hookMod.hook.HookValidity
+import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.DocumentStatus
+import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.KYCDocumentRefusedReasonType
+import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.KycDocumentType
+import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateCultureCode
+import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateScheme
+import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateStatus
+import typings.mangopay2NodejsSdk.payInMod.payIn.DirectDebitType
+import typings.mangopay2NodejsSdk.payInMod.payIn.FrequencyType
+import typings.mangopay2NodejsSdk.payInMod.payIn.PayInExecutionType
+import typings.mangopay2NodejsSdk.payInMod.payIn.PayInPaymentType
+import typings.mangopay2NodejsSdk.payInMod.payIn.RecurringPaymentStatus
+import typings.mangopay2NodejsSdk.payInMod.payIn.RecurringType
+import typings.mangopay2NodejsSdk.payInMod.payIn.`3DSVersion`
+import typings.mangopay2NodejsSdk.payOutMod.payOut.PayoutModeRequestedType
+import typings.mangopay2NodejsSdk.refundMod.refund.RefundReasonType
+import typings.mangopay2NodejsSdk.reportMod.report.Column
+import typings.mangopay2NodejsSdk.securityInfoMod.securityInfo.AVSResult
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionNature
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionStatus
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
 import typings.mangopay2NodejsSdk.typesMod.ApiMethod
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
+import typings.mangopay2NodejsSdk.typesMod.SecureMode
+import typings.mangopay2NodejsSdk.userMod.user.RequiredUserLegalData
+import typings.mangopay2NodejsSdk.userMod.user.RequiredUserLegalOwnerData
+import typings.mangopay2NodejsSdk.userMod.user.RequiredUserLegalPayerData
+import typings.mangopay2NodejsSdk.userMod.user.RequiredUserNaturalData
+import typings.mangopay2NodejsSdk.userMod.user.RequiredUserNaturalOwnerData
+import typings.mangopay2NodejsSdk.userMod.user.RequiredUserNaturalPayerData
+import typings.mangopay2NodejsSdk.userMod.user.StaticKeys
+import typings.mangopay2NodejsSdk.userMod.user.UserCategory
+import typings.mangopay2NodejsSdk.walletMod.wallet.ClientFundsType
+import typings.mangopay2NodejsSdk.walletMod.wallet.FundsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -186,12 +196,6 @@ object mangopay2NodejsSdkStrings {
   inline def AS: AS = "AS".asInstanceOf[AS]
   
   @js.native
-  sealed trait ASC
-    extends StObject
-       with ColumnAndDirection
-  inline def ASC: ASC = "ASC".asInstanceOf[ASC]
-  
-  @js.native
   sealed trait AT
     extends StObject
        with CountryISO
@@ -208,6 +212,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CurrencyISO
   inline def AUD: AUD = "AUD".asInstanceOf[AUD]
+  
+  @js.native
+  sealed trait AUTHENTICATION_NEEDED
+    extends StObject
+       with RecurringPaymentStatus
+  inline def AUTHENTICATION_NEEDED: AUTHENTICATION_NEEDED = "AUTHENTICATION_NEEDED".asInstanceOf[AUTHENTICATION_NEEDED]
   
   @js.native
   sealed trait AUTHORISATION_DISPUTED
@@ -250,6 +260,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with Column
   inline def Alias: Alias = "Alias".asInstanceOf[Alias]
+  
+  @js.native
+  sealed trait Annual
+    extends StObject
+       with FrequencyType
+  inline def Annual: Annual = "Annual".asInstanceOf[Annual]
   
   @js.native
   sealed trait AuthorId
@@ -308,7 +324,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait BCMC
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.card.CardType
+       with typings.mangopay2NodejsSdk.cardMod.card.CardType
   inline def BCMC: BCMC = "BCMC".asInstanceOf[BCMC]
   
   @js.native
@@ -470,7 +486,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait BUSINESS
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.user.LegalPersonType
+       with typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
   inline def BUSINESS: BUSINESS = "BUSINESS".asInstanceOf[BUSINESS]
   
   @js.native
@@ -528,9 +544,22 @@ object mangopay2NodejsSdkStrings {
   inline def BankWireRef: BankWireRef = "BankWireRef".asInstanceOf[BankWireRef]
   
   @js.native
+  sealed trait Biannual
+    extends StObject
+       with FrequencyType
+  inline def Biannual: Biannual = "Biannual".asInstanceOf[Biannual]
+  
+  @js.native
+  sealed trait Bimonthly
+    extends StObject
+       with FrequencyType
+  inline def Bimonthly: Bimonthly = "Bimonthly".asInstanceOf[Bimonthly]
+  
+  @js.native
   sealed trait Birthday
     extends StObject
        with RequiredUserNaturalData
+       with RequiredUserNaturalOwnerData
   inline def Birthday: Birthday = "Birthday".asInstanceOf[Birthday]
   
   @js.native
@@ -567,7 +596,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait CB_VISA_MASTERCARD
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.card.CardType
+       with typings.mangopay2NodejsSdk.cardMod.card.CardType
   inline def CB_VISA_MASTERCARD: CB_VISA_MASTERCARD = "CB_VISA_MASTERCARD".asInstanceOf[CB_VISA_MASTERCARD]
   
   @js.native
@@ -637,6 +666,12 @@ object mangopay2NodejsSdkStrings {
   inline def CL: CL = "CL".asInstanceOf[CL]
   
   @js.native
+  sealed trait CLASSIC_SUBSCRIPTION
+    extends StObject
+       with RecurringType
+  inline def CLASSIC_SUBSCRIPTION: CLASSIC_SUBSCRIPTION = "CLASSIC_SUBSCRIPTION".asInstanceOf[CLASSIC_SUBSCRIPTION]
+  
+  @js.native
   sealed trait CLOSED
     extends StObject
        with DisputeStatus
@@ -702,9 +737,10 @@ object mangopay2NodejsSdkStrings {
        with CardStatus
        with DisputeStatus
        with DocumentStatus
-       with typings.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
+       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
        with MandateStatus
        with PreAuthorizationStatus
+       with RecurringPaymentStatus
        with TransactionStatus
   inline def CREATED: CREATED = "CREATED".asInstanceOf[CREATED]
   
@@ -746,6 +782,12 @@ object mangopay2NodejsSdkStrings {
   inline def CROWDFUNDING_REWARD: CROWDFUNDING_REWARD = "CROWDFUNDING_REWARD".asInstanceOf[CROWDFUNDING_REWARD]
   
   @js.native
+  sealed trait CS
+    extends StObject
+       with CountryISO
+  inline def CS: CS = "CS".asInstanceOf[CS]
+  
+  @js.native
   sealed trait CSV extends StObject
   inline def CSV: CSV = "CSV".asInstanceOf[CSV]
   
@@ -766,6 +808,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CurrencyISO
   inline def CUP: CUP = "CUP".asInstanceOf[CUP]
+  
+  @js.native
+  sealed trait CUSTOM
+    extends StObject
+       with RecurringType
+  inline def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
   
   @js.native
   sealed trait CV
@@ -822,6 +870,12 @@ object mangopay2NodejsSdkStrings {
   inline def CardType: CardType = "CardType".asInstanceOf[CardType]
   
   @js.native
+  sealed trait CompanyNumber
+    extends StObject
+       with RequiredUserLegalOwnerData
+  inline def CompanyNumber: CompanyNumber = "CompanyNumber".asInstanceOf[CompanyNumber]
+  
+  @js.native
   sealed trait Country
     extends StObject
        with Column
@@ -831,6 +885,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait CountryOfResidence
     extends StObject
        with RequiredUserNaturalData
+       with RequiredUserNaturalOwnerData
   inline def CountryOfResidence: CountryOfResidence = "CountryOfResidence".asInstanceOf[CountryOfResidence]
   
   @js.native
@@ -871,11 +926,21 @@ object mangopay2NodejsSdkStrings {
   inline def Culture: Culture = "Culture".asInstanceOf[Culture]
   
   @js.native
+  sealed trait DA
+    extends StObject
+       with CountryISO
+  inline def DA: DA = "DA".asInstanceOf[DA]
+  
+  @js.native
   sealed trait DE
     extends StObject
        with CountryISO
        with MandateCultureCode
   inline def DE: DE = "DE".asInstanceOf[DE]
+  
+  @js.native
+  sealed trait DECLARATION_DO_NOT_MATCH_UBO_INFORMATION extends StObject
+  inline def DECLARATION_DO_NOT_MATCH_UBO_INFORMATION: DECLARATION_DO_NOT_MATCH_UBO_INFORMATION = "DECLARATION_DO_NOT_MATCH_UBO_INFORMATION".asInstanceOf[DECLARATION_DO_NOT_MATCH_UBO_INFORMATION]
   
   @js.native
   sealed trait DECLARATIVE extends StObject
@@ -895,15 +960,9 @@ object mangopay2NodejsSdkStrings {
   inline def DELIVERY_PROOF: DELIVERY_PROOF = "DELIVERY_PROOF".asInstanceOf[DELIVERY_PROOF]
   
   @js.native
-  sealed trait DESC
-    extends StObject
-       with ColumnAndDirection
-  inline def DESC: DESC = "DESC".asInstanceOf[DESC]
-  
-  @js.native
   sealed trait DINERS
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.card.CardType
+       with typings.mangopay2NodejsSdk.cardMod.card.CardType
   inline def DINERS: DINERS = "DINERS".asInstanceOf[DINERS]
   
   @js.native
@@ -1021,6 +1080,10 @@ object mangopay2NodejsSdkStrings {
   inline def DO: DO = "DO".asInstanceOf[DO]
   
   @js.native
+  sealed trait DOCUMENTS_NEEDED extends StObject
+  inline def DOCUMENTS_NEEDED: DOCUMENTS_NEEDED = "DOCUMENTS_NEEDED".asInstanceOf[DOCUMENTS_NEEDED]
+  
+  @js.native
   sealed trait DOCUMENT_DO_NOT_MATCH_ACCOUNT_DATA
     extends StObject
        with KYCDocumentRefusedReasonType
@@ -1099,6 +1162,12 @@ object mangopay2NodejsSdkStrings {
   inline def DZD: DZD = "DZD".asInstanceOf[DZD]
   
   @js.native
+  sealed trait Daily
+    extends StObject
+       with FrequencyType
+  inline def Daily: Daily = "Daily".asInstanceOf[Daily]
+  
+  @js.native
   sealed trait DebitedFundsAmount
     extends StObject
        with Column
@@ -1175,8 +1244,15 @@ object mangopay2NodejsSdkStrings {
   inline def EH: EH = "EH".asInstanceOf[EH]
   
   @js.native
+  sealed trait EL
+    extends StObject
+       with CountryISO
+  inline def EL: EL = "EL".asInstanceOf[EL]
+  
+  @js.native
   sealed trait EN
     extends StObject
+       with CountryISO
        with MandateCultureCode
   inline def EN: EN = "EN".asInstanceOf[EN]
   
@@ -1185,6 +1261,18 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with HookStatus
   inline def ENABLED: ENABLED = "ENABLED".asInstanceOf[ENABLED]
+  
+  @js.native
+  sealed trait ENDED
+    extends StObject
+       with RecurringPaymentStatus
+  inline def ENDED: ENDED = "ENDED".asInstanceOf[ENDED]
+  
+  @js.native
+  sealed trait EQUITY
+    extends StObject
+       with Sector
+  inline def EQUITY: EQUITY = "EQUITY".asInstanceOf[EQUITY]
   
   @js.native
   sealed trait ER
@@ -1232,6 +1320,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait EXPIRED
     extends StObject
+       with MandateStatus
        with PaymentStatus
   inline def EXPIRED: EXPIRED = "EXPIRED".asInstanceOf[EXPIRED]
   
@@ -1245,7 +1334,11 @@ object mangopay2NodejsSdkStrings {
   sealed trait Email
     extends StObject
        with RequiredUserLegalData
+       with RequiredUserLegalOwnerData
+       with RequiredUserLegalPayerData
        with RequiredUserNaturalData
+       with RequiredUserNaturalOwnerData
+       with RequiredUserNaturalPayerData
   inline def Email: Email = "Email".asInstanceOf[Email]
   
   @js.native
@@ -1343,10 +1436,22 @@ object mangopay2NodejsSdkStrings {
   inline def FR: FR = "FR".asInstanceOf[FR]
   
   @js.native
+  sealed trait FRACTIONED_PAYMENT
+    extends StObject
+       with RecurringType
+  inline def FRACTIONED_PAYMENT: FRACTIONED_PAYMENT = "FRACTIONED_PAYMENT".asInstanceOf[FRACTIONED_PAYMENT]
+  
+  @js.native
   sealed trait FRANCHISE
     extends StObject
        with BusinessType
   inline def FRANCHISE: FRANCHISE = "FRANCHISE".asInstanceOf[FRANCHISE]
+  
+  @js.native
+  sealed trait FRANCHISE_
+    extends StObject
+       with Sector
+  inline def FRANCHISE_ : FRANCHISE_ = "FRANCHISE_".asInstanceOf[FRANCHISE_]
   
   @js.native
   sealed trait FRAUD
@@ -1382,6 +1487,8 @@ object mangopay2NodejsSdkStrings {
   sealed trait FirstName
     extends StObject
        with RequiredUserNaturalData
+       with RequiredUserNaturalOwnerData
+       with RequiredUserNaturalPayerData
   inline def FirstName: FirstName = "FirstName".asInstanceOf[FirstName]
   
   @js.native
@@ -1462,6 +1569,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CurrencyISO
   inline def GIP: GIP = "GIP".asInstanceOf[GIP]
+  
+  @js.native
+  sealed trait GIROPAY
+    extends StObject
+       with DirectDebitType
+  inline def GIROPAY: GIROPAY = "GIROPAY".asInstanceOf[GIROPAY]
   
   @js.native
   sealed trait GL
@@ -1626,6 +1739,12 @@ object mangopay2NodejsSdkStrings {
   inline def HUF: HUF = "HUF".asInstanceOf[HUF]
   
   @js.native
+  sealed trait HeadquartersAddress
+    extends StObject
+       with RequiredUserLegalOwnerData
+  inline def HeadquartersAddress: HeadquartersAddress = "HeadquartersAddress".asInstanceOf[HeadquartersAddress]
+  
+  @js.native
   sealed trait IBAN
     extends StObject
        with BankAccountType
@@ -1640,7 +1759,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait IDEAL
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.card.CardType
+       with typings.mangopay2NodejsSdk.cardMod.card.CardType
   inline def IDEAL: IDEAL = "IDEAL".asInstanceOf[IDEAL]
   
   @js.native
@@ -1692,6 +1811,10 @@ object mangopay2NodejsSdkStrings {
   inline def IN: IN = "IN".asInstanceOf[IN]
   
   @js.native
+  sealed trait INCOMPLETE extends StObject
+  inline def INCOMPLETE: INCOMPLETE = "INCOMPLETE".asInstanceOf[INCOMPLETE]
+  
+  @js.native
   sealed trait INITIALIZED_BY_CLIENT
     extends StObject
        with RefundReasonType
@@ -1702,6 +1825,30 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CurrencyISO
   inline def INR: INR = "INR".asInstanceOf[INR]
+  
+  @js.native
+  sealed trait INSTANT_PAYMENT
+    extends StObject
+       with PayoutModeRequestedType
+  inline def INSTANT_PAYMENT: INSTANT_PAYMENT = "INSTANT_PAYMENT".asInstanceOf[INSTANT_PAYMENT]
+  
+  @js.native
+  sealed trait INSTANT_PAYMENT_ONLY
+    extends StObject
+       with PayoutModeRequestedType
+  inline def INSTANT_PAYMENT_ONLY: INSTANT_PAYMENT_ONLY = "INSTANT_PAYMENT_ONLY".asInstanceOf[INSTANT_PAYMENT_ONLY]
+  
+  @js.native
+  sealed trait INSTANT_PAYOUT_FALLBACKED
+    extends StObject
+       with EventType
+  inline def INSTANT_PAYOUT_FALLBACKED: INSTANT_PAYOUT_FALLBACKED = "INSTANT_PAYOUT_FALLBACKED".asInstanceOf[INSTANT_PAYOUT_FALLBACKED]
+  
+  @js.native
+  sealed trait INSTANT_PAYOUT_SUCCEEDED
+    extends StObject
+       with EventType
+  inline def INSTANT_PAYOUT_SUCCEEDED: INSTANT_PAYOUT_SUCCEEDED = "INSTANT_PAYOUT_SUCCEEDED".asInstanceOf[INSTANT_PAYOUT_SUCCEEDED]
   
   @js.native
   sealed trait INVALID
@@ -1723,6 +1870,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with DisputeDocumentType
   inline def INVOICE: INVOICE = "INVOICE".asInstanceOf[INVOICE]
+  
+  @js.native
+  sealed trait IN_PROGRESS
+    extends StObject
+       with RecurringPaymentStatus
+  inline def IN_PROGRESS: IN_PROGRESS = "IN_PROGRESS".asInstanceOf[IN_PROGRESS]
   
   @js.native
   sealed trait IO
@@ -1949,6 +2102,12 @@ object mangopay2NodejsSdkStrings {
   inline def KYC_FAILED: KYC_FAILED = "KYC_FAILED".asInstanceOf[KYC_FAILED]
   
   @js.native
+  sealed trait KYC_OUTDATED
+    extends StObject
+       with EventType
+  inline def KYC_OUTDATED: KYC_OUTDATED = "KYC_OUTDATED".asInstanceOf[KYC_OUTDATED]
+  
+  @js.native
   sealed trait KYC_SUCCEEDED
     extends StObject
        with EventType
@@ -2041,7 +2200,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait LEGAL
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.user.PersonType
+       with typings.mangopay2NodejsSdk.userMod.user.PersonType
   inline def LEGAL: LEGAL = "LEGAL".asInstanceOf[LEGAL]
   
   @js.native
@@ -2053,7 +2212,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait LIGHT
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.user.KYCLevel
+       with typings.mangopay2NodejsSdk.userMod.user.KYCLevel
   inline def LIGHT: LIGHT = "LIGHT".asInstanceOf[LIGHT]
   
   @js.native
@@ -2067,6 +2226,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CurrencyISO
   inline def LKR: LKR = "LKR".asInstanceOf[LKR]
+  
+  @js.native
+  sealed trait LOAN
+    extends StObject
+       with Sector
+  inline def LOAN: LOAN = "LOAN".asInstanceOf[LOAN]
   
   @js.native
   sealed trait LR
@@ -2126,42 +2291,61 @@ object mangopay2NodejsSdkStrings {
   sealed trait LastName
     extends StObject
        with RequiredUserNaturalData
+       with RequiredUserNaturalOwnerData
+       with RequiredUserNaturalPayerData
   inline def LastName: LastName = "LastName".asInstanceOf[LastName]
   
   @js.native
   sealed trait LegalPersonType
     extends StObject
        with RequiredUserLegalData
+       with RequiredUserLegalOwnerData
+       with RequiredUserLegalPayerData
   inline def LegalPersonType: LegalPersonType = "LegalPersonType".asInstanceOf[LegalPersonType]
+  
+  @js.native
+  sealed trait LegalRepresentativeAddress
+    extends StObject
+       with RequiredUserLegalData
+       with RequiredUserLegalOwnerData
+       with RequiredUserLegalPayerData
+  inline def LegalRepresentativeAddress: LegalRepresentativeAddress = "LegalRepresentativeAddress".asInstanceOf[LegalRepresentativeAddress]
   
   @js.native
   sealed trait LegalRepresentativeBirthday
     extends StObject
        with RequiredUserLegalData
+       with RequiredUserLegalOwnerData
   inline def LegalRepresentativeBirthday: LegalRepresentativeBirthday = "LegalRepresentativeBirthday".asInstanceOf[LegalRepresentativeBirthday]
   
   @js.native
   sealed trait LegalRepresentativeCountryOfResidence
     extends StObject
        with RequiredUserLegalData
+       with RequiredUserLegalOwnerData
   inline def LegalRepresentativeCountryOfResidence: LegalRepresentativeCountryOfResidence = "LegalRepresentativeCountryOfResidence".asInstanceOf[LegalRepresentativeCountryOfResidence]
   
   @js.native
   sealed trait LegalRepresentativeFirstName
     extends StObject
        with RequiredUserLegalData
+       with RequiredUserLegalOwnerData
+       with RequiredUserLegalPayerData
   inline def LegalRepresentativeFirstName: LegalRepresentativeFirstName = "LegalRepresentativeFirstName".asInstanceOf[LegalRepresentativeFirstName]
   
   @js.native
   sealed trait LegalRepresentativeLastName
     extends StObject
        with RequiredUserLegalData
+       with RequiredUserLegalOwnerData
+       with RequiredUserLegalPayerData
   inline def LegalRepresentativeLastName: LegalRepresentativeLastName = "LegalRepresentativeLastName".asInstanceOf[LegalRepresentativeLastName]
   
   @js.native
   sealed trait LegalRepresentativeNationality
     extends StObject
        with RequiredUserLegalData
+       with RequiredUserLegalOwnerData
   inline def LegalRepresentativeNationality: LegalRepresentativeNationality = "LegalRepresentativeNationality".asInstanceOf[LegalRepresentativeNationality]
   
   @js.native
@@ -2185,7 +2369,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait MAESTRO
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.card.CardType
+       with typings.mangopay2NodejsSdk.cardMod.card.CardType
   inline def MAESTRO: MAESTRO = "MAESTRO".asInstanceOf[MAESTRO]
   
   @js.native
@@ -2199,6 +2383,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with EventType
   inline def MANDATE_CREATED: MANDATE_CREATED = "MANDATE_CREATED".asInstanceOf[MANDATE_CREATED]
+  
+  @js.native
+  sealed trait MANDATE_EXPIRED
+    extends StObject
+       with EventType
+  inline def MANDATE_EXPIRED: MANDATE_EXPIRED = "MANDATE_EXPIRED".asInstanceOf[MANDATE_EXPIRED]
   
   @js.native
   sealed trait MANDATE_FAILED
@@ -2222,7 +2412,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait MASTERPASS
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.card.CardType
+       with typings.mangopay2NodejsSdk.cardMod.card.CardType
   inline def MASTERPASS: MASTERPASS = "MASTERPASS".asInstanceOf[MASTERPASS]
   
   @js.native
@@ -2444,6 +2634,12 @@ object mangopay2NodejsSdkStrings {
   inline def MakeKeysNullable: MakeKeysNullable = "MakeKeysNullable".asInstanceOf[MakeKeysNullable]
   
   @js.native
+  sealed trait Monthly
+    extends StObject
+       with FrequencyType
+  inline def Monthly: Monthly = "Monthly".asInstanceOf[Monthly]
+  
+  @js.native
   sealed trait NA
     extends StObject
        with CountryISO
@@ -2458,7 +2654,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait NATURAL
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.user.PersonType
+       with typings.mangopay2NodejsSdk.userMod.user.PersonType
   inline def NATURAL: NATURAL = "NATURAL".asInstanceOf[NATURAL]
   
   @js.native
@@ -2539,6 +2735,12 @@ object mangopay2NodejsSdkStrings {
   inline def NO_CHECK: NO_CHECK = "NO_CHECK".asInstanceOf[NO_CHECK]
   
   @js.native
+  sealed trait NO_CHOICE
+    extends StObject
+       with SecureMode
+  inline def NO_CHOICE: NO_CHOICE = "NO_CHOICE".asInstanceOf[NO_CHOICE]
+  
+  @js.native
   sealed trait NO_MATCH
     extends StObject
        with AVSResult
@@ -2584,12 +2786,15 @@ object mangopay2NodejsSdkStrings {
   sealed trait Name
     extends StObject
        with RequiredUserLegalData
+       with RequiredUserLegalOwnerData
+       with RequiredUserLegalPayerData
   inline def Name: Name = "Name".asInstanceOf[Name]
   
   @js.native
   sealed trait Nationality
     extends StObject
        with RequiredUserNaturalData
+       with RequiredUserNaturalOwnerData
   inline def Nationality: Nationality = "Nationality".asInstanceOf[Nationality]
   
   @js.native
@@ -2619,8 +2824,12 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait ORGANIZATION
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.user.LegalPersonType
+       with typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
   inline def ORGANIZATION: ORGANIZATION = "ORGANIZATION".asInstanceOf[ORGANIZATION]
+  
+  @js.native
+  sealed trait ORGANIZATION_CHART_NEEDED extends StObject
+  inline def ORGANIZATION_CHART_NEEDED: ORGANIZATION_CHART_NEEDED = "ORGANIZATION_CHART_NEEDED".asInstanceOf[ORGANIZATION_CHART_NEEDED]
   
   @js.native
   sealed trait OTHER
@@ -2635,6 +2844,24 @@ object mangopay2NodejsSdkStrings {
   inline def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   
   @js.native
+  sealed trait OTHER_
+    extends StObject
+       with Sector
+  inline def OTHER_ : OTHER_ = "OTHER_".asInstanceOf[OTHER_]
+  
+  @js.native
+  sealed trait OUT_OF_DATE
+    extends StObject
+       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
+  inline def OUT_OF_DATE: OUT_OF_DATE = "OUT_OF_DATE".asInstanceOf[OUT_OF_DATE]
+  
+  @js.native
+  sealed trait OWNER
+    extends StObject
+       with UserCategory
+  inline def OWNER: OWNER = "OWNER".asInstanceOf[OWNER]
+  
+  @js.native
   sealed trait OWNER_DO_NOT_MATCH_BANKACCOUNT
     extends StObject
        with RefundReasonType
@@ -2643,7 +2870,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait P24
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.card.CardType
+       with typings.mangopay2NodejsSdk.cardMod.card.CardType
   inline def P24: P24 = "P24".asInstanceOf[P24]
   
   @js.native
@@ -2663,6 +2890,18 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CurrencyISO
   inline def PAB: PAB = "PAB".asInstanceOf[PAB]
+  
+  @js.native
+  sealed trait PAYCONIQ
+    extends StObject
+       with PayInPaymentType
+  inline def PAYCONIQ: PAYCONIQ = "PAYCONIQ".asInstanceOf[PAYCONIQ]
+  
+  @js.native
+  sealed trait PAYER
+    extends StObject
+       with UserCategory
+  inline def PAYER: PAYER = "PAYER".asInstanceOf[PAYER]
   
   @js.native
   sealed trait PAYIN
@@ -2727,7 +2966,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait PAYLIB
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.card.CardType
+       with typings.mangopay2NodejsSdk.cardMod.card.CardType
   inline def PAYLIB: PAYLIB = "PAYLIB".asInstanceOf[PAYLIB]
   
   @js.native
@@ -2870,6 +3109,12 @@ object mangopay2NodejsSdkStrings {
   inline def PN: PN = "PN".asInstanceOf[PN]
   
   @js.native
+  sealed trait POOL_GROUP_PAYMENT
+    extends StObject
+       with Sector
+  inline def POOL_GROUP_PAYMENT: POOL_GROUP_PAYMENT = "POOL_GROUP_PAYMENT".asInstanceOf[POOL_GROUP_PAYMENT]
+  
+  @js.native
   sealed trait POSTAL_CODE_MATCH_ONLY
     extends StObject
        with AVSResult
@@ -2880,6 +3125,18 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CountryISO
   inline def PR: PR = "PR".asInstanceOf[PR]
+  
+  @js.native
+  sealed trait PREAUTHORIZATION_CREATED
+    extends StObject
+       with EventType
+  inline def PREAUTHORIZATION_CREATED: PREAUTHORIZATION_CREATED = "PREAUTHORIZATION_CREATED".asInstanceOf[PREAUTHORIZATION_CREATED]
+  
+  @js.native
+  sealed trait PREAUTHORIZATION_FAILED
+    extends StObject
+       with EventType
+  inline def PREAUTHORIZATION_FAILED: PREAUTHORIZATION_FAILED = "PREAUTHORIZATION_FAILED".asInstanceOf[PREAUTHORIZATION_FAILED]
   
   @js.native
   sealed trait PREAUTHORIZATION_PAYMENT_CANCELED
@@ -2906,6 +3163,12 @@ object mangopay2NodejsSdkStrings {
   inline def PREAUTHORIZATION_PAYMENT_WAITING: PREAUTHORIZATION_PAYMENT_WAITING = "PREAUTHORIZATION_PAYMENT_WAITING".asInstanceOf[PREAUTHORIZATION_PAYMENT_WAITING]
   
   @js.native
+  sealed trait PREAUTHORIZATION_SUCCEEDED
+    extends StObject
+       with EventType
+  inline def PREAUTHORIZATION_SUCCEEDED: PREAUTHORIZATION_SUCCEEDED = "PREAUTHORIZATION_SUCCEEDED".asInstanceOf[PREAUTHORIZATION_SUCCEEDED]
+  
+  @js.native
   sealed trait PREAUTHORIZED
     extends StObject
        with PayInPaymentType
@@ -2928,6 +3191,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with DisputeReasonType
   inline def PRODUCT_UNACCEPTABLE: PRODUCT_UNACCEPTABLE = "PRODUCT_UNACCEPTABLE".asInstanceOf[PRODUCT_UNACCEPTABLE]
+  
+  @js.native
+  sealed trait PROPERTY_EQUITY
+    extends StObject
+       with Sector
+  inline def PROPERTY_EQUITY: PROPERTY_EQUITY = "PROPERTY_EQUITY".asInstanceOf[PROPERTY_EQUITY]
   
   @js.native
   sealed trait PS
@@ -3008,6 +3277,12 @@ object mangopay2NodejsSdkStrings {
   inline def QAR: QAR = "QAR".asInstanceOf[QAR]
   
   @js.native
+  sealed trait Quarterly
+    extends StObject
+       with FrequencyType
+  inline def Quarterly: Quarterly = "Quarterly".asInstanceOf[Quarterly]
+  
+  @js.native
   sealed trait RE
     extends StObject
        with CountryISO
@@ -3041,7 +3316,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait REFUSED
     extends StObject
        with DocumentStatus
-       with typings.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
+       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
   inline def REFUSED: REFUSED = "REFUSED".asInstanceOf[REFUSED]
   
   @js.native
@@ -3053,7 +3328,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait REGULAR
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.user.KYCLevel
+       with typings.mangopay2NodejsSdk.userMod.user.KYCLevel
        with TransactionNature
   inline def REGULAR: REGULAR = "REGULAR".asInstanceOf[REGULAR]
   
@@ -3080,6 +3355,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with DisputeType
   inline def RETRIEVAL: RETRIEVAL = "RETRIEVAL".asInstanceOf[RETRIEVAL]
+  
+  @js.native
+  sealed trait REWARDS_CHARITY
+    extends StObject
+       with Sector
+  inline def REWARDS_CHARITY: REWARDS_CHARITY = "REWARDS_CHARITY".asInstanceOf[REWARDS_CHARITY]
   
   @js.native
   sealed trait RO
@@ -3244,6 +3525,10 @@ object mangopay2NodejsSdkStrings {
   inline def SH: SH = "SH".asInstanceOf[SH]
   
   @js.native
+  sealed trait SHAREHOLDERS_DECLARATION_NEEDED extends StObject
+  inline def SHAREHOLDERS_DECLARATION_NEEDED: SHAREHOLDERS_DECLARATION_NEEDED = "SHAREHOLDERS_DECLARATION_NEEDED".asInstanceOf[SHAREHOLDERS_DECLARATION_NEEDED]
+  
+  @js.native
   sealed trait SHAREHOLDER_DECLARATION
     extends StObject
        with KycDocumentType
@@ -3304,9 +3589,15 @@ object mangopay2NodejsSdkStrings {
   inline def SO: SO = "SO".asInstanceOf[SO]
   
   @js.native
+  sealed trait SOFORT
+    extends StObject
+       with DirectDebitType
+  inline def SOFORT: SOFORT = "SOFORT".asInstanceOf[SOFORT]
+  
+  @js.native
   sealed trait SOLETRADER
     extends StObject
-       with typings.mangopay2NodejsSdk.mod.user.LegalPersonType
+       with typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
   inline def SOLETRADER: SOLETRADER = "SOLETRADER".asInstanceOf[SOLETRADER]
   
   @js.native
@@ -3357,6 +3648,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CountryISO
   inline def ST: ST = "ST".asInstanceOf[ST]
+  
+  @js.native
+  sealed trait STANDARD
+    extends StObject
+       with PayoutModeRequestedType
+  inline def STANDARD: STANDARD = "STANDARD".asInstanceOf[STANDARD]
   
   @js.native
   sealed trait STN
@@ -3425,6 +3722,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CurrencyISO
   inline def SZL: SZL = "SZL".asInstanceOf[SZL]
+  
+  @js.native
+  sealed trait Semiannual
+    extends StObject
+       with FrequencyType
+  inline def Semiannual: Semiannual = "Semiannual".asInstanceOf[Semiannual]
   
   @js.native
   sealed trait ShareholderDeclaration
@@ -3553,8 +3856,8 @@ object mangopay2NodejsSdkStrings {
   inline def TR: TR = "TR".asInstanceOf[TR]
   
   @js.native
-  sealed trait TRANSACTIONS extends StObject
-  inline def TRANSACTIONS: TRANSACTIONS = "TRANSACTIONS".asInstanceOf[TRANSACTIONS]
+  sealed trait TRANSACTION extends StObject
+  inline def TRANSACTION: TRANSACTION = "TRANSACTION".asInstanceOf[TRANSACTION]
   
   @js.native
   sealed trait TRANSACTION_NOT_RECOGNIZED
@@ -3683,6 +3986,19 @@ object mangopay2NodejsSdkStrings {
   inline def Tag: Tag = "Tag".asInstanceOf[Tag]
   
   @js.native
+  sealed trait TermsAndConditionsAccepted
+    extends StObject
+       with RequiredUserLegalOwnerData
+       with RequiredUserNaturalOwnerData
+  inline def TermsAndConditionsAccepted: TermsAndConditionsAccepted = "TermsAndConditionsAccepted".asInstanceOf[TermsAndConditionsAccepted]
+  
+  @js.native
+  sealed trait TwiceAMonth
+    extends StObject
+       with FrequencyType
+  inline def TwiceAMonth: TwiceAMonth = "TwiceAMonth".asInstanceOf[TwiceAMonth]
+  
+  @js.native
   sealed trait Type
     extends StObject
        with Column
@@ -3707,6 +4023,12 @@ object mangopay2NodejsSdkStrings {
   inline def UBO_DECLARATION_CREATED: UBO_DECLARATION_CREATED = "UBO_DECLARATION_CREATED".asInstanceOf[UBO_DECLARATION_CREATED]
   
   @js.native
+  sealed trait UBO_DECLARATION_INCOMPLETE
+    extends StObject
+       with EventType
+  inline def UBO_DECLARATION_INCOMPLETE: UBO_DECLARATION_INCOMPLETE = "UBO_DECLARATION_INCOMPLETE".asInstanceOf[UBO_DECLARATION_INCOMPLETE]
+  
+  @js.native
   sealed trait UBO_DECLARATION_REFUSED
     extends StObject
        with EventType
@@ -3723,6 +4045,10 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with EventType
   inline def UBO_DECLARATION_VALIDATION_ASKED: UBO_DECLARATION_VALIDATION_ASKED = "UBO_DECLARATION_VALIDATION_ASKED".asInstanceOf[UBO_DECLARATION_VALIDATION_ASKED]
+  
+  @js.native
+  sealed trait UBO_IDENTITY_NEEDED extends StObject
+  inline def UBO_IDENTITY_NEEDED: UBO_IDENTITY_NEEDED = "UBO_IDENTITY_NEEDED".asInstanceOf[UBO_IDENTITY_NEEDED]
   
   @js.native
   sealed trait UG
@@ -3782,6 +4108,42 @@ object mangopay2NodejsSdkStrings {
   inline def USER_CORRESPONDANCE: USER_CORRESPONDANCE = "USER_CORRESPONDANCE".asInstanceOf[USER_CORRESPONDANCE]
   
   @js.native
+  sealed trait USER_INFLOWS_BLOCKED
+    extends StObject
+       with EventType
+  inline def USER_INFLOWS_BLOCKED: USER_INFLOWS_BLOCKED = "USER_INFLOWS_BLOCKED".asInstanceOf[USER_INFLOWS_BLOCKED]
+  
+  @js.native
+  sealed trait USER_INFLOWS_UNBLOCKED
+    extends StObject
+       with EventType
+  inline def USER_INFLOWS_UNBLOCKED: USER_INFLOWS_UNBLOCKED = "USER_INFLOWS_UNBLOCKED".asInstanceOf[USER_INFLOWS_UNBLOCKED]
+  
+  @js.native
+  sealed trait USER_KYC_LIGHT
+    extends StObject
+       with EventType
+  inline def USER_KYC_LIGHT: USER_KYC_LIGHT = "USER_KYC_LIGHT".asInstanceOf[USER_KYC_LIGHT]
+  
+  @js.native
+  sealed trait USER_KYC_REGULAR
+    extends StObject
+       with EventType
+  inline def USER_KYC_REGULAR: USER_KYC_REGULAR = "USER_KYC_REGULAR".asInstanceOf[USER_KYC_REGULAR]
+  
+  @js.native
+  sealed trait USER_OUTFLOWS_BLOCKED
+    extends StObject
+       with EventType
+  inline def USER_OUTFLOWS_BLOCKED: USER_OUTFLOWS_BLOCKED = "USER_OUTFLOWS_BLOCKED".asInstanceOf[USER_OUTFLOWS_BLOCKED]
+  
+  @js.native
+  sealed trait USER_OUTFLOWS_UNBLOCKED
+    extends StObject
+       with EventType
+  inline def USER_OUTFLOWS_UNBLOCKED: USER_OUTFLOWS_UNBLOCKED = "USER_OUTFLOWS_UNBLOCKED".asInstanceOf[USER_OUTFLOWS_UNBLOCKED]
+  
+  @js.native
   sealed trait UY
     extends StObject
        with CountryISO
@@ -3806,6 +4168,18 @@ object mangopay2NodejsSdkStrings {
   inline def UZS: UZS = "UZS".asInstanceOf[UZS]
   
   @js.native
+  sealed trait V1
+    extends StObject
+       with `3DSVersion`
+  inline def V1: V1 = "V1".asInstanceOf[V1]
+  
+  @js.native
+  sealed trait V2_1
+    extends StObject
+       with `3DSVersion`
+  inline def V2_1: V2_1 = "V2_1".asInstanceOf[V2_1]
+  
+  @js.native
   sealed trait VA
     extends StObject
        with CountryISO
@@ -3823,7 +4197,7 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CardStatus
        with DocumentStatus
-       with typings.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
+       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
        with PaymentStatus
   inline def VALIDATED: VALIDATED = "VALIDATED".asInstanceOf[VALIDATED]
   
@@ -3831,7 +4205,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait VALIDATION_ASKED
     extends StObject
        with DocumentStatus
-       with typings.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
+       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
   inline def VALIDATION_ASKED: VALIDATION_ASKED = "VALIDATION_ASKED".asInstanceOf[VALIDATION_ASKED]
   
   @js.native
@@ -3895,6 +4269,10 @@ object mangopay2NodejsSdkStrings {
   inline def WAITING: WAITING = "WAITING".asInstanceOf[WAITING]
   
   @js.native
+  sealed trait WALLET extends StObject
+  inline def WALLET: WALLET = "WALLET".asInstanceOf[WALLET]
+  
+  @js.native
   sealed trait WEB
     extends StObject
        with PayInExecutionType
@@ -3913,6 +4291,10 @@ object mangopay2NodejsSdkStrings {
   inline def WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS: WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS = "WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS".asInstanceOf[WITHDRAWAL_IMPOSSIBLE_ON_SAVINGS_ACCOUNTS]
   
   @js.native
+  sealed trait WRONG_UBO_INFORMATION extends StObject
+  inline def WRONG_UBO_INFORMATION: WRONG_UBO_INFORMATION = "WRONG_UBO_INFORMATION".asInstanceOf[WRONG_UBO_INFORMATION]
+  
+  @js.native
   sealed trait WS
     extends StObject
        with CountryISO
@@ -3923,6 +4305,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CurrencyISO
   inline def WST: WST = "WST".asInstanceOf[WST]
+  
+  @js.native
+  sealed trait Weekly
+    extends StObject
+       with FrequencyType
+  inline def Weekly: Weekly = "Weekly".asInstanceOf[Weekly]
   
   @js.native
   sealed trait WireReference
@@ -4273,6 +4661,12 @@ object mangopay2NodejsSdkStrings {
   inline def hooks_save: hooks_save = "hooks_save".asInstanceOf[hooks_save]
   
   @js.native
+  sealed trait idempotency_response_get
+    extends StObject
+       with ApiMethod
+  inline def idempotency_response_get: idempotency_response_get = "idempotency_response_get".asInstanceOf[idempotency_response_get]
+  
+  @js.native
   sealed trait kyc_documents_all
     extends StObject
        with ApiMethod
@@ -4351,6 +4745,12 @@ object mangopay2NodejsSdkStrings {
   inline def mandates_get_for_user: mandates_get_for_user = "mandates_get_for_user".asInstanceOf[mandates_get_for_user]
   
   @js.native
+  sealed trait `payins_applepay-direct_create`
+    extends StObject
+       with ApiMethod
+  inline def `payins_applepay-direct_create`: `payins_applepay-direct_create` = "payins_applepay-direct_create".asInstanceOf[`payins_applepay-direct_create`]
+  
+  @js.native
   sealed trait `payins_bankwire-direct_create`
     extends StObject
        with ApiMethod
@@ -4367,6 +4767,12 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with ApiMethod
   inline def `payins_card-web_create`: `payins_card-web_create` = "payins_card-web_create".asInstanceOf[`payins_card-web_create`]
+  
+  @js.native
+  sealed trait payins_create_recurring_card_direct
+    extends StObject
+       with ApiMethod
+  inline def payins_create_recurring_card_direct: payins_create_recurring_card_direct = "payins_create_recurring_card_direct".asInstanceOf[payins_create_recurring_card_direct]
   
   @js.native
   sealed trait payins_createrefunds
@@ -4393,6 +4799,18 @@ object mangopay2NodejsSdkStrings {
   inline def payins_get: payins_get = "payins_get".asInstanceOf[payins_get]
   
   @js.native
+  sealed trait `payins_googlepay-direct_create`
+    extends StObject
+       with ApiMethod
+  inline def `payins_googlepay-direct_create`: `payins_googlepay-direct_create` = "payins_googlepay-direct_create".asInstanceOf[`payins_googlepay-direct_create`]
+  
+  @js.native
+  sealed trait `payins_payconiq-web_create`
+    extends StObject
+       with ApiMethod
+  inline def `payins_payconiq-web_create`: `payins_payconiq-web_create` = "payins_payconiq-web_create".asInstanceOf[`payins_payconiq-web_create`]
+  
+  @js.native
   sealed trait `payins_paypal-web_create`
     extends StObject
        with ApiMethod
@@ -4405,10 +4823,34 @@ object mangopay2NodejsSdkStrings {
   inline def `payins_preauthorized-direct_create`: `payins_preauthorized-direct_create` = "payins_preauthorized-direct_create".asInstanceOf[`payins_preauthorized-direct_create`]
   
   @js.native
+  sealed trait payins_recurring_registration
+    extends StObject
+       with ApiMethod
+  inline def payins_recurring_registration: payins_recurring_registration = "payins_recurring_registration".asInstanceOf[payins_recurring_registration]
+  
+  @js.native
+  sealed trait payins_recurring_registration_get
+    extends StObject
+       with ApiMethod
+  inline def payins_recurring_registration_get: payins_recurring_registration_get = "payins_recurring_registration_get".asInstanceOf[payins_recurring_registration_get]
+  
+  @js.native
+  sealed trait payins_recurring_registration_put
+    extends StObject
+       with ApiMethod
+  inline def payins_recurring_registration_put: payins_recurring_registration_put = "payins_recurring_registration_put".asInstanceOf[payins_recurring_registration_put]
+  
+  @js.native
   sealed trait payouts_bankwire_create
     extends StObject
        with ApiMethod
   inline def payouts_bankwire_create: payouts_bankwire_create = "payouts_bankwire_create".asInstanceOf[payouts_bankwire_create]
+  
+  @js.native
+  sealed trait payouts_bankwire_get
+    extends StObject
+       with ApiMethod
+  inline def payouts_bankwire_get: payouts_bankwire_get = "payouts_bankwire_get".asInstanceOf[payouts_bankwire_get]
   
   @js.native
   sealed trait payouts_get
@@ -4537,6 +4979,12 @@ object mangopay2NodejsSdkStrings {
   inline def transfers_get: transfers_get = "transfers_get".asInstanceOf[transfers_get]
   
   @js.native
+  sealed trait ubo_create
+    extends StObject
+       with ApiMethod
+  inline def ubo_create: ubo_create = "ubo_create".asInstanceOf[ubo_create]
+  
+  @js.native
   sealed trait ubo_declaration_create
     extends StObject
        with ApiMethod
@@ -4553,6 +5001,24 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with ApiMethod
   inline def ubo_declaration_update: ubo_declaration_update = "ubo_declaration_update".asInstanceOf[ubo_declaration_update]
+  
+  @js.native
+  sealed trait ubo_declarations_get
+    extends StObject
+       with ApiMethod
+  inline def ubo_declarations_get: ubo_declarations_get = "ubo_declarations_get".asInstanceOf[ubo_declarations_get]
+  
+  @js.native
+  sealed trait ubo_get
+    extends StObject
+       with ApiMethod
+  inline def ubo_get: ubo_get = "ubo_get".asInstanceOf[ubo_get]
+  
+  @js.native
+  sealed trait ubo_update
+    extends StObject
+       with ApiMethod
+  inline def ubo_update: ubo_update = "ubo_update".asInstanceOf[ubo_update]
   
   @js.native
   sealed trait users_all

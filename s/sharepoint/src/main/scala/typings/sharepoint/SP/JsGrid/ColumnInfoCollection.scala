@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColumnInfoCollection extends StObject {
   
-  def AppendColumn(colInfo: js.Any): Unit = js.native
+  def AppendColumn(colInfo: Any): Unit = js.native
   
-  def GetColumnArray(): js.Array[js.Any] = js.native
-  def GetColumnArray(bVisibleOnly: Boolean): js.Array[js.Any] = js.native
+  def GetColumnArray(): js.Array[Any] = js.native
+  def GetColumnArray(bVisibleOnly: Boolean): js.Array[Any] = js.native
   
-  def GetColumnByKey(key: String): js.Any = js.native
+  def GetColumnByKey(key: String): Any = js.native
   
-  def GetColumnMap(): StringDictionary[js.Any] = js.native
+  def GetColumnMap(): StringDictionary[Any] = js.native
   
   /** Returns null if the specified column is not found or hidden. */
   def GetColumnPosition(key: String): Double = js.native
   
-  def InsertColumnAt(idx: Double, colInfo: js.Any): Unit = js.native
+  def InsertColumnAt(idx: Double, colInfo: Any): Unit = js.native
   
   def RemoveColumn(key: String): Unit = js.native
 }

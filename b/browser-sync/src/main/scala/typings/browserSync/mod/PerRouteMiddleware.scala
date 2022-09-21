@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PerRouteMiddleware extends StObject {
   
-  def handle(req: IncomingMessage, res: ServerResponse, next: js.Function0[Unit]): js.Any
+  def handle(req: IncomingMessage, res: ServerResponse[IncomingMessage], next: js.Function0[Unit]): Any
   @JSName("handle")
   var handle_Original: MiddlewareHandler
   
@@ -19,7 +19,7 @@ trait PerRouteMiddleware extends StObject {
 object PerRouteMiddleware {
   
   inline def apply(
-    handle: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any,
+    handle: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* next */ js.Function0[Unit]) => Any,
     route: String
   ): PerRouteMiddleware = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction3(handle), route = route.asInstanceOf[js.Any])
@@ -29,7 +29,7 @@ object PerRouteMiddleware {
   extension [Self <: PerRouteMiddleware](x: Self) {
     
     inline def setHandle(
-      value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any
+      value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* next */ js.Function0[Unit]) => Any
     ): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

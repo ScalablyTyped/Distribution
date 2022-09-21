@@ -10,10 +10,10 @@ object formatItalicMod {
   
   @JSImport("material-ui/svg-icons/editor/format-italic", JSImport.Default)
   @js.native
-  class default () extends EditorFormatItalic
+  open class default () extends EditorFormatItalic
   
   @JSImport("material-ui/svg-icons/editor/format-italic", "EditorFormatItalic")
   @js.native
-  class EditorFormatItalic ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatItalic ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

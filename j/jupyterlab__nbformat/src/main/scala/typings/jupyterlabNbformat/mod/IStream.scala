@@ -41,6 +41,6 @@ object IStream {
     
     inline def setText(value: MultilineString): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
   }
 }

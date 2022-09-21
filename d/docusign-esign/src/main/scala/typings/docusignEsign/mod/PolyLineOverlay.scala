@@ -688,7 +688,7 @@ object PolyLineOverlay {
     
     inline def setPolyLinesUndefined: Self = StObject.set(x, "polyLines", js.undefined)
     
-    inline def setPolyLinesVarargs(value: PolyLine*): Self = StObject.set(x, "polyLines", js.Array(value :_*))
+    inline def setPolyLinesVarargs(value: PolyLine*): Self = StObject.set(x, "polyLines", js.Array(value*))
     
     inline def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
@@ -734,7 +734,7 @@ object PolyLineOverlay {
     
     inline def setTabGroupLabelsUndefined: Self = StObject.set(x, "tabGroupLabels", js.undefined)
     
-    inline def setTabGroupLabelsVarargs(value: String*): Self = StObject.set(x, "tabGroupLabels", js.Array(value :_*))
+    inline def setTabGroupLabelsVarargs(value: String*): Self = StObject.set(x, "tabGroupLabels", js.Array(value*))
     
     inline def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     

@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A terms and conditions page to be accepted during provisioning.
-  */
 trait SchemaTermsAndConditions extends StObject {
   
   /**
-    * A well-formatted HTML string. It will be parsed on the client with
-    * android.text.Html#fromHtml.
+    * A well-formatted HTML string. It will be parsed on the client with android.text.Html#fromHtml.
     */
   var content: js.UndefOr[SchemaUserFacingMessage] = js.undefined
   

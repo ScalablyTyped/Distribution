@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FileLoggingSession extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_logfilegenerated(
     `type`: logfilegenerated,
@@ -51,7 +51,7 @@ trait FileLoggingSession extends StObject {
   @JSName("onlogfilegenerated")
   var onlogfilegenerated_Original: TypedEventHandler[IFileLoggingSession, LogFileGeneratedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_logfilegenerated(
     `type`: logfilegenerated,

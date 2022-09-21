@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Arm64Relocator")
 @js.native
-class Arm64Relocator protected ()
+open class Arm64Relocator protected ()
   extends StObject
      with typings.fridaGum.Arm64Relocator {
   /**

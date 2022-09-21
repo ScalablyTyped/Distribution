@@ -9,7 +9,7 @@ object cylindricalMod {
   
   @JSImport("three/src/math/Cylindrical", "Cylindrical")
   @js.native
-  class Cylindrical () extends StObject {
+  open class Cylindrical () extends StObject {
     def this(radius: Double) = this()
     def this(radius: Double, theta: Double) = this()
     def this(radius: Unit, theta: Double) = this()
@@ -21,8 +21,8 @@ object cylindricalMod {
     def copy(other: Cylindrical): this.type = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var radius: Double = js.native
     
     def set(radius: Double, theta: Double, y: Double): this.type = js.native
@@ -32,13 +32,13 @@ object cylindricalMod {
     def setFromVector3(vec3: Vector3): this.type = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var theta: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var y: Double = js.native
   }
 }

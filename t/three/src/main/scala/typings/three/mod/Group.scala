@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "Group")
 @js.native
-class Group ()
-  extends typings.three.groupMod.Group
+open class Group ()
+  extends typings.three.threeMod.Group

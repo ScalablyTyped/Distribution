@@ -8,48 +8,61 @@ trait SignIn
   extends StObject
      with Entity {
   
-  // App name displayed in the Azure Portal.
+  // App name displayed in the Azure Portal. Supports $filter (eq and startsWith operators only).
   var appDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Unique GUID representing the app ID in the Azure Active Directory.
+  // Unique GUID representing the app ID in the Azure Active Directory. Supports $filter (eq operator only).
   var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
   var appliedConditionalAccessPolicies: js.UndefOr[NullableOption[js.Array[AppliedConditionalAccessPolicy]]] = js.undefined
   
   /**
-    * Identifies the legacy client used for sign-in activity. Includes Browser, Exchange Active Sync, modern clients, IMAP,
-    * MAPI, SMTP, and POP.
+    * Identifies the client used for the sign-in activity. Modern authentication clients include Browser and modern clients.
+    * Legacy authentication clients include Exchange ActiveSync, IMAP, MAPI, SMTP, POP, and other clients. Supports $filter
+    * (eq operator only).
     */
   var clientAppUsed: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Reports status of an activated conditional access policy. Possible values are: success, failure, notApplied, and
-    * unknownFutureValue.
+    * unknownFutureValue. Supports $filter (eq operator only).
     */
   var conditionalAccessStatus: js.UndefOr[NullableOption[ConditionalAccessStatus]] = js.undefined
   
-  // The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity.
+  /**
+    * The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity. Supports
+    * $filter (eq operator only).
+    */
   var correlationId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as '2014-01-01T00:00:00Z'.
+  /**
+    * Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as 2014-01-01T00:00:00Z.
+    * Supports $orderby and $filter (eq, le, and ge operators only).
+    */
   var createdDateTime: js.UndefOr[String] = js.undefined
   
-  // Device information from where the sign-in occurred; includes device ID, operating system, and browser.
+  /**
+    * Device information from where the sign-in occurred; includes device ID, operating system, and browser. Supports $filter
+    * (eq and startsWith operators only) on browser and operatingSytem properties.
+    */
   var deviceDetail: js.UndefOr[NullableOption[DeviceDetail]] = js.undefined
   
-  // IP address of the client used to sign in.
+  // IP address of the client used to sign in. Supports $filter (eq and startsWith operators only).
   var ipAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates if a sign-in is interactive or not.
   var isInteractive: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // Provides the city, state, and country code where the sign-in originated.
+  /**
+    * Provides the city, state, and country code where the sign-in originated. Supports $filter (eq and startsWith operators
+    * only) on city, state, and countryOrRegion properties.
+    */
   var location: js.UndefOr[NullableOption[SignInLocation]] = js.undefined
   
-  // Name of the resource the user signed into.
+  // Name of the resource the user signed into. Supports $filter (eq operator only).
   var resourceDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // ID of the resource that the user signed into.
+  // ID of the resource that the user signed into. Supports $filter (eq operator only).
   var resourceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
@@ -57,55 +70,60 @@ trait SignIn
     * adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset,
     * adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser,
     * adminConfirmedSigninCompromised, unknownFutureValue. The value none means that no action has been performed on the user
-    * or sign-in so far. Note: Details for this property require an Azure AD Premium P2 license. Other licenses return the
-    * value hidden.
+    * or sign-in so far. Supports $filter (eq operator only).Note: Details for this property require an Azure AD Premium P2
+    * license. Other licenses return the value hidden.
     */
   var riskDetail: js.UndefOr[NullableOption[RiskDetail]] = js.undefined
   
   /**
     * Risk event types associated with the sign-in. The possible values are: unlikelyTravel, anonymizedIPAddress,
     * maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials,
-    * investigationsThreatIntelligence, generic, and unknownFutureValue.
+    * investigationsThreatIntelligence, generic, and unknownFutureValue. Supports $filter (eq operator only).
     */
   var riskEventTypes: js.UndefOr[NullableOption[js.Array[RiskEventType]]] = js.undefined
   
   /**
     * The list of risk event types associated with the sign-in. Possible values: unlikelyTravel, anonymizedIPAddress,
     * maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials,
-    * investigationsThreatIntelligence, generic, or unknownFutureValue.
+    * investigationsThreatIntelligence, generic, or unknownFutureValue. Supports $filter (eq and startsWith operators only).
     */
   var riskEventTypes_v2: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Aggregated risk level. The possible values are: none, low, medium, high, hidden, and unknownFutureValue. The value
-    * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are
-    * only available for Azure AD Premium P2 customers. All other customers will be returned hidden.
+    * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Supports $filter (eq operator only).
+    * Note: Details for this property are only available for Azure AD Premium P2 customers. All other customers will be
+    * returned hidden.
     */
   var riskLevelAggregated: js.UndefOr[NullableOption[RiskLevel]] = js.undefined
   
   /**
     * Risk level during sign-in. The possible values are: none, low, medium, high, hidden, and unknownFutureValue. The value
-    * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are
-    * only available for Azure AD Premium P2 customers. All other customers will be returned hidden.
+    * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Supports $filter (eq operator only).
+    * Note: Details for this property are only available for Azure AD Premium P2 customers. All other customers will be
+    * returned hidden.
     */
   var riskLevelDuringSignIn: js.UndefOr[NullableOption[RiskLevel]] = js.undefined
   
   /**
     * Reports status of the risky user, sign-in, or a risk event. The possible values are: none, confirmedSafe, remediated,
-    * dismissed, atRisk, confirmedCompromised, unknownFutureValue.
+    * dismissed, atRisk, confirmedCompromised, unknownFutureValue. Supports $filter (eq operator only).
     */
   var riskState: js.UndefOr[NullableOption[RiskState]] = js.undefined
   
-  // Sign-in status. Possible values include Success and Failure.
+  /**
+    * Sign-in status. Includes the error code and description of the error (in case of a sign-in failure). Supports $filter
+    * (eq operator only) on errorCode property.
+    */
   var status: js.UndefOr[NullableOption[SignInStatus]] = js.undefined
   
-  // Display name of the user that initiated the sign-in.
+  // Display name of the user that initiated the sign-in. Supports $filter (eq and startsWith operators only).
   var userDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // ID of the user that initiated the sign-in.
+  // ID of the user that initiated the sign-in. Supports $filter (eq operator only).
   var userId: js.UndefOr[String] = js.undefined
   
-  // User principal name of the user that initiated the sign-in.
+  // User principal name of the user that initiated the sign-in. Supports $filter (eq and startsWith operators only).
   var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SignIn {
@@ -135,7 +153,7 @@ object SignIn {
     
     inline def setAppliedConditionalAccessPoliciesUndefined: Self = StObject.set(x, "appliedConditionalAccessPolicies", js.undefined)
     
-    inline def setAppliedConditionalAccessPoliciesVarargs(value: AppliedConditionalAccessPolicy*): Self = StObject.set(x, "appliedConditionalAccessPolicies", js.Array(value :_*))
+    inline def setAppliedConditionalAccessPoliciesVarargs(value: AppliedConditionalAccessPolicy*): Self = StObject.set(x, "appliedConditionalAccessPolicies", js.Array(value*))
     
     inline def setClientAppUsed(value: NullableOption[String]): Self = StObject.set(x, "clientAppUsed", value.asInstanceOf[js.Any])
     
@@ -207,7 +225,7 @@ object SignIn {
     
     inline def setRiskEventTypesUndefined: Self = StObject.set(x, "riskEventTypes", js.undefined)
     
-    inline def setRiskEventTypesVarargs(value: RiskEventType*): Self = StObject.set(x, "riskEventTypes", js.Array(value :_*))
+    inline def setRiskEventTypesVarargs(value: RiskEventType*): Self = StObject.set(x, "riskEventTypes", js.Array(value*))
     
     inline def setRiskEventTypes_v2(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "riskEventTypes_v2", value.asInstanceOf[js.Any])
     
@@ -215,7 +233,7 @@ object SignIn {
     
     inline def setRiskEventTypes_v2Undefined: Self = StObject.set(x, "riskEventTypes_v2", js.undefined)
     
-    inline def setRiskEventTypes_v2Varargs(value: String*): Self = StObject.set(x, "riskEventTypes_v2", js.Array(value :_*))
+    inline def setRiskEventTypes_v2Varargs(value: String*): Self = StObject.set(x, "riskEventTypes_v2", js.Array(value*))
     
     inline def setRiskLevelAggregated(value: NullableOption[RiskLevel]): Self = StObject.set(x, "riskLevelAggregated", value.asInstanceOf[js.Any])
     

@@ -2,6 +2,8 @@ package typings.emailAddresses
 
 import typings.emailAddresses.anon.Address
 import typings.emailAddresses.anon.Name
+import typings.emailAddresses.emailAddressesStrings.group
+import typings.emailAddresses.emailAddressesStrings.mailbox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +31,7 @@ object emailAddresses {
       
       inline def setChildren(value: js.Array[ASTNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ASTNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ASTNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -40,6 +42,12 @@ object emailAddresses {
   }
   
   trait Options extends StObject {
+    
+    var addressListSeparator: js.UndefOr[String] = js.undefined
+    
+    var atInDisplayName: js.UndefOr[Boolean] = js.undefined
+    
+    var commaInDisplayName: js.UndefOr[Boolean] = js.undefined
     
     var input: String
     
@@ -53,7 +61,7 @@ object emailAddresses {
     
     var simple: js.UndefOr[Boolean] = js.undefined
     
-    var startAt: js.UndefOr[String] = js.undefined
+    var startAt: js.UndefOr[StartProductions] = js.undefined
     
     var strict: js.UndefOr[Boolean] = js.undefined
   }
@@ -65,6 +73,18 @@ object emailAddresses {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setAddressListSeparator(value: String): Self = StObject.set(x, "addressListSeparator", value.asInstanceOf[js.Any])
+      
+      inline def setAddressListSeparatorUndefined: Self = StObject.set(x, "addressListSeparator", js.undefined)
+      
+      inline def setAtInDisplayName(value: Boolean): Self = StObject.set(x, "atInDisplayName", value.asInstanceOf[js.Any])
+      
+      inline def setAtInDisplayNameUndefined: Self = StObject.set(x, "atInDisplayName", js.undefined)
+      
+      inline def setCommaInDisplayName(value: Boolean): Self = StObject.set(x, "commaInDisplayName", value.asInstanceOf[js.Any])
+      
+      inline def setCommaInDisplayNameUndefined: Self = StObject.set(x, "commaInDisplayName", js.undefined)
       
       inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -88,7 +108,7 @@ object emailAddresses {
       
       inline def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
       
-      inline def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      inline def setStartAt(value: StartProductions): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
       inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
       
@@ -108,13 +128,13 @@ object emailAddresses {
     
     var parts: Name
     
-    var `type`: String
+    var `type`: group
   }
   object ParsedGroup {
     
-    inline def apply(addresses: js.Array[ParsedMailbox], name: String, parts: Name, `type`: String): ParsedGroup = {
+    inline def apply(addresses: js.Array[ParsedMailbox], name: String, parts: Name): ParsedGroup = {
       val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("group")
       __obj.asInstanceOf[ParsedGroup]
     }
     
@@ -122,7 +142,7 @@ object emailAddresses {
       
       inline def setAddresses(value: js.Array[ParsedMailbox]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      inline def setAddressesVarargs(value: ParsedMailbox*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: ParsedMailbox*): Self = StObject.set(x, "addresses", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -132,7 +152,7 @@ object emailAddresses {
       
       inline def setParts(value: Name): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,19 +164,19 @@ object emailAddresses {
     
     var local: String
     
-    var name: String
+    var name: String | Null
     
     var node: js.UndefOr[ASTNode] = js.undefined
     
     var parts: Address
     
-    var `type`: String
+    var `type`: mailbox
   }
   object ParsedMailbox {
     
-    inline def apply(address: String, domain: String, local: String, name: String, parts: Address, `type`: String): ParsedMailbox = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def apply(address: String, domain: String, local: String, parts: Address): ParsedMailbox = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], name = null)
+      __obj.updateDynamic("type")("mailbox")
       __obj.asInstanceOf[ParsedMailbox]
     }
     
@@ -170,13 +190,15 @@ object emailAddresses {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
+      inline def setNameNull: Self = StObject.set(x, "name", null)
+      
       inline def setNode(value: ASTNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
       inline def setParts(value: Address): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mailbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,9 +219,42 @@ object emailAddresses {
       
       inline def setAddresses(value: js.Array[ParsedMailbox | ParsedGroup]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      inline def setAddressesVarargs(value: (ParsedMailbox | ParsedGroup)*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: (ParsedMailbox | ParsedGroup)*): Self = StObject.set(x, "addresses", js.Array(value*))
       
       inline def setAst(value: ASTNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.emailAddresses.emailAddressesStrings.address
+    - typings.emailAddresses.emailAddressesStrings.`address-list`
+    - typings.emailAddresses.emailAddressesStrings.`angle-addr`
+    - typings.emailAddresses.emailAddressesStrings.from
+    - typings.emailAddresses.emailAddressesStrings.group
+    - typings.emailAddresses.emailAddressesStrings.mailbox
+    - typings.emailAddresses.emailAddressesStrings.`mailbox-list`
+    - typings.emailAddresses.emailAddressesStrings.`reply-to`
+    - typings.emailAddresses.emailAddressesStrings.sender
+  */
+  trait StartProductions extends StObject
+  object StartProductions {
+    
+    inline def address: typings.emailAddresses.emailAddressesStrings.address = "address".asInstanceOf[typings.emailAddresses.emailAddressesStrings.address]
+    
+    inline def `address-list`: typings.emailAddresses.emailAddressesStrings.`address-list` = "address-list".asInstanceOf[typings.emailAddresses.emailAddressesStrings.`address-list`]
+    
+    inline def `angle-addr`: typings.emailAddresses.emailAddressesStrings.`angle-addr` = "angle-addr".asInstanceOf[typings.emailAddresses.emailAddressesStrings.`angle-addr`]
+    
+    inline def from: typings.emailAddresses.emailAddressesStrings.from = "from".asInstanceOf[typings.emailAddresses.emailAddressesStrings.from]
+    
+    inline def group: typings.emailAddresses.emailAddressesStrings.group = "group".asInstanceOf[typings.emailAddresses.emailAddressesStrings.group]
+    
+    inline def mailbox: typings.emailAddresses.emailAddressesStrings.mailbox = "mailbox".asInstanceOf[typings.emailAddresses.emailAddressesStrings.mailbox]
+    
+    inline def `mailbox-list`: typings.emailAddresses.emailAddressesStrings.`mailbox-list` = "mailbox-list".asInstanceOf[typings.emailAddresses.emailAddressesStrings.`mailbox-list`]
+    
+    inline def `reply-to`: typings.emailAddresses.emailAddressesStrings.`reply-to` = "reply-to".asInstanceOf[typings.emailAddresses.emailAddressesStrings.`reply-to`]
+    
+    inline def sender: typings.emailAddresses.emailAddressesStrings.sender = "sender".asInstanceOf[typings.emailAddresses.emailAddressesStrings.sender]
   }
 }

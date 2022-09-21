@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for the Check method.
-  */
 trait SchemaCheckRequest extends StObject {
   
   /**
@@ -15,25 +12,19 @@ trait SchemaCheckRequest extends StObject {
   var operation: js.UndefOr[SchemaOperation] = js.undefined
   
   /**
-    * Requests the project settings to be returned as part of the check
-    * response.
+    * Requests the project settings to be returned as part of the check response.
     */
-  var requestProjectSettings: js.UndefOr[Boolean] = js.undefined
+  var requestProjectSettings: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Specifies which version of service configuration should be used to
-    * process the request.  If unspecified or no matching version can be found,
-    * the latest one will be used.
+    * Specifies which version of service configuration should be used to process the request. If unspecified or no matching version can be found, the latest one will be used.
     */
-  var serviceConfigId: js.UndefOr[String] = js.undefined
+  var serviceConfigId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Indicates if service activation check should be skipped for this request.
-    * Default behavior is to perform the check and apply relevant quota.
-    * WARNING: Setting this flag to &quot;true&quot; will disable quota
-    * enforcement.
+    * Indicates if service activation check should be skipped for this request. Default behavior is to perform the check and apply relevant quota. WARNING: Setting this flag to "true" will disable quota enforcement.
     */
-  var skipActivationCheck: js.UndefOr[Boolean] = js.undefined
+  var skipActivationCheck: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaCheckRequest {
   
@@ -50,13 +41,19 @@ object SchemaCheckRequest {
     
     inline def setRequestProjectSettings(value: Boolean): Self = StObject.set(x, "requestProjectSettings", value.asInstanceOf[js.Any])
     
+    inline def setRequestProjectSettingsNull: Self = StObject.set(x, "requestProjectSettings", null)
+    
     inline def setRequestProjectSettingsUndefined: Self = StObject.set(x, "requestProjectSettings", js.undefined)
     
     inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
+    inline def setServiceConfigIdNull: Self = StObject.set(x, "serviceConfigId", null)
+    
     inline def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
     
     inline def setSkipActivationCheck(value: Boolean): Self = StObject.set(x, "skipActivationCheck", value.asInstanceOf[js.Any])
+    
+    inline def setSkipActivationCheckNull: Self = StObject.set(x, "skipActivationCheck", null)
     
     inline def setSkipActivationCheckUndefined: Self = StObject.set(x, "skipActivationCheck", js.undefined)
   }

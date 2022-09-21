@@ -10,10 +10,10 @@ object reactMod {
   
   @JSImport("linkifyjs/react", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LinkifyProps, js.Object, js.Any]
+  open class default ()
+    extends Component[LinkifyProps, js.Object, Any]
   
-  type Linkify = Component[LinkifyProps, js.Object, js.Any]
+  type Linkify = Component[LinkifyProps, js.Object, Any]
   
   trait LinkifyProps extends StObject {
     

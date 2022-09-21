@@ -1,7 +1,7 @@
 
 # Scala.js typings for quoted-printable
 
-Typings are for version v0.2.1
+Typings are for version 1.0
 
 ## Library description:
 A robust & character encoding–agnostic JavaScript implementation of the `Quoted-Printable` content transfer encoding as defined by RFC 2045.
@@ -11,9 +11,9 @@ A robust & character encoding–agnostic JavaScript implementation of the `Quote
 | Full name          | quoted-printable |
 | Keywords           | decode, decoding, encode, encoding, quoted-printable, string |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 1443646 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 276474.0 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://mths.be/quoted-printable)

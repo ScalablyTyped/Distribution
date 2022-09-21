@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,12 @@ trait ParamsResourceSitesList
      with StandardParameters {
   
   /**
-    * This search filter is no longer supported and will have no effect on the
-    * results returned.
+    * This search filter is no longer supported and will have no effect on the results returned.
     */
   var acceptsInStreamVideoPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * This search filter is no longer supported and will have no effect on the
-    * results returned.
+    * This search filter is no longer supported and will have no effect on the results returned.
     */
   var acceptsInterstitialPlacements: js.UndefOr[Boolean] = js.undefined
   
@@ -38,11 +32,6 @@ trait ParamsResourceSitesList
     * Select only approved sites.
     */
   var approved: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only sites with these campaign IDs.
@@ -75,12 +64,7 @@ trait ParamsResourceSitesList
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for objects by name, ID or keyName. Wildcards (*) are
-    * allowed. For example, "site*2015" will return objects with names like
-    * "site June 2015", "site April 2015", or simply "site 2015". Most of the
-    * searches also add wildcards implicitly at the start and the end of the
-    * search string. For example, a search string of "site" will match objects
-    * with name "my site", "site 2015", or simply "site".
+    * Allows searching for objects by name, ID or keyName. Wildcards (*) are allowed. For example, "site*2015" will return objects with names like "site June 2015", "site April 2015", or simply "site 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "site" will match objects with name "my site", "site 2015", or simply "site".
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -133,27 +117,23 @@ object ParamsResourceSitesList {
     
     inline def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setCampaignIds(value: js.Array[String]): Self = StObject.set(x, "campaignIds", value.asInstanceOf[js.Any])
     
     inline def setCampaignIdsUndefined: Self = StObject.set(x, "campaignIds", js.undefined)
     
-    inline def setCampaignIdsVarargs(value: String*): Self = StObject.set(x, "campaignIds", js.Array(value :_*))
+    inline def setCampaignIdsVarargs(value: String*): Self = StObject.set(x, "campaignIds", js.Array(value*))
     
     inline def setDirectorySiteIds(value: js.Array[String]): Self = StObject.set(x, "directorySiteIds", value.asInstanceOf[js.Any])
     
     inline def setDirectorySiteIdsUndefined: Self = StObject.set(x, "directorySiteIds", js.undefined)
     
-    inline def setDirectorySiteIdsVarargs(value: String*): Self = StObject.set(x, "directorySiteIds", js.Array(value :_*))
+    inline def setDirectorySiteIdsVarargs(value: String*): Self = StObject.set(x, "directorySiteIds", js.Array(value*))
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

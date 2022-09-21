@@ -28,6 +28,6 @@ object ClientConfig {
     
     inline def setXdsConfigUndefined: Self = StObject.set(x, "xdsConfig", js.undefined)
     
-    inline def setXdsConfigVarargs(value: PerXdsConfig*): Self = StObject.set(x, "xdsConfig", js.Array(value :_*))
+    inline def setXdsConfigVarargs(value: PerXdsConfig*): Self = StObject.set(x, "xdsConfig", js.Array(value*))
   }
 }

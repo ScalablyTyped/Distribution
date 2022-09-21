@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.Size")
 @js.native
-class Size protected ()
+open class Size protected ()
   extends StObject
      with typings.navermaps.naver.maps.Size {
   def this(width: Double, height: Double) = this()

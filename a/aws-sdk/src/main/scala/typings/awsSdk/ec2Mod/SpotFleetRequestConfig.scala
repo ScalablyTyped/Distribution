@@ -14,7 +14,7 @@ trait SpotFleetRequestConfig extends StObject {
   /**
     * The creation date and time of the request.
     */
-  var CreateTime: js.UndefOr[MillisecondDateTime] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The configuration of the Spot Fleet request.
@@ -49,7 +49,7 @@ object SpotFleetRequestConfig {
     
     inline def setActivityStatusUndefined: Self = StObject.set(x, "ActivityStatus", js.undefined)
     
-    inline def setCreateTime(value: MillisecondDateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -69,6 +69,6 @@ object SpotFleetRequestConfig {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

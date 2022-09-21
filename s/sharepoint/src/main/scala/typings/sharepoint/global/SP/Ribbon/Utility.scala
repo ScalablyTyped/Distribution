@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.Utility")
 @js.native
-class Utility ()
+open class Utility ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.Utility

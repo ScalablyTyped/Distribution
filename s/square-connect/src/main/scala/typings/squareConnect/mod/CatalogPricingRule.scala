@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogPricingRule")
 @js.native
-class CatalogPricingRule () extends StObject {
+open class CatalogPricingRule () extends StObject {
   
   /**
     * @deprecated Please use the `exclude_products_id` field to apply an exclude set instead.

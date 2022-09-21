@@ -6,7 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /** Callback which processes dialog result value after dialog is closed */
-type DialogReturnValueCallback = js.Function2[
-/* dialogResult */ typings.sharepoint.SP.UI.DialogResult, 
-/* returnValue */ js.Any, 
-scala.Unit]
+type DialogReturnValueCallback = js.Function2[/* dialogResult */ DialogResult, /* returnValue */ Any, Unit]

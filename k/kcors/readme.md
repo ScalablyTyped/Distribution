@@ -10,10 +10,10 @@ Cross-Origin Resource Sharing(CORS) for koa
 | ------------------ | :-------------: |
 | Full name          | kcors |
 | Keywords           | cors, koa-cors, Cross-Origin Resource Sharing, @koa/cors, koa, koajs |
-| # releases         | 0 |
-| # dependents       | 156 |
-| # downloads        | 1061866 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 137870.33333333334 |
+| # stars            | 689.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/cors)

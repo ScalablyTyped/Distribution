@@ -1,7 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.Arc")
 @js.native
-class Arc protected ()
+open class Arc protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Arc {
   /**
@@ -45,8 +44,8 @@ class Arc protected ()
     x: js.UndefOr[Double],
     y: js.UndefOr[Double],
     radius: js.UndefOr[Double],
-    startAngle: js.UndefOr[integer],
-    endAngle: js.UndefOr[integer],
+    startAngle: js.UndefOr[Double],
+    endAngle: js.UndefOr[Double],
     anticlockwise: js.UndefOr[Boolean],
     fillColor: js.UndefOr[Double],
     fillAlpha: js.UndefOr[Double]
@@ -67,36 +66,6 @@ class Arc protected ()
   var depth: Double = js.native
   
   /**
-    * The displayed height of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  var displayHeight: Double = js.native
-  
-  /**
-    * The displayed width of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  var displayWidth: Double = js.native
-  
-  /**
-    * The native (un-scaled) height of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayHeight` property.
-    */
-  /* CompleteClass */
-  var height: Double = js.native
-  
-  /**
     * The depth of this Game Object within the Scene.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
@@ -109,33 +78,7 @@ class Arc protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
-  
-  /**
-    * Sets the display size of this Game Object.
-    * 
-    * Calling this will adjust the scale.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDisplaySize(width: Double, height: Double): this.type = js.native
-  
-  /**
-    * Sets the internal size of this Game Object, as used for frame or physics body creation.
-    * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setSize(width: Double, height: Double): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the visibility of this Game Object.
@@ -153,14 +96,4 @@ class Arc protected ()
     */
   /* CompleteClass */
   var visible: Boolean = js.native
-  
-  /**
-    * The native (un-scaled) width of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayWidth` property.
-    */
-  /* CompleteClass */
-  var width: Double = js.native
 }

@@ -1,6 +1,5 @@
 package typings.tabris
 
-import typings.std.ArrayBuffer
 import typings.tabris.tabrisStrings.`force-cache`
 import typings.tabris.tabrisStrings.`import`
 import typings.tabris.tabrisStrings.`no-cache`
@@ -56,7 +55,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Request extends StObject {
   
-  def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+  def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
   
   def blob(): js.Promise[Blob] = js.native
   
@@ -70,7 +69,7 @@ trait Request extends StObject {
   
   val headers: Headers = js.native
   
-  def json(): js.Promise[js.Any] = js.native
+  def json(): js.Promise[Any] = js.native
   @JSName("json")
   def json_T[T](): js.Promise[T] = js.native
   

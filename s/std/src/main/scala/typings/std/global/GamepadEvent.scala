@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("GamepadEvent")
 @js.native
-class GamepadEvent protected ()
+open class GamepadEvent protected ()
   extends StObject
      with typings.std.GamepadEvent {
+  /* standard dom */
   def this(`type`: java.lang.String, eventInitDict: GamepadEventInit) = this()
 }

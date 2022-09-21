@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapPopupWindow")
 @js.native
-class BootstrapPopupWindow protected ()
+open class BootstrapPopupWindow protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapPopupWindow {
-  /* protected */ def this(instance: js.Any) = this()
+  /* protected */ def this(instance: Any) = this()
   
   /* CompleteClass */
   override def getFooterImageUrl(): String = js.native
@@ -33,7 +33,7 @@ class BootstrapPopupWindow protected ()
   override val index: Double = js.native
   
   /* protected */ /* CompleteClass */
-  override val instance: js.Any = js.native
+  override val instance: Any = js.native
   
   /* CompleteClass */
   override val name: String = js.native

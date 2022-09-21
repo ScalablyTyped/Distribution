@@ -18,12 +18,6 @@ object GetIdentityPoolRolesInput {
     __obj.asInstanceOf[GetIdentityPoolRolesInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetIdentityPoolRolesInput")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: GetIdentityPoolRolesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: GetIdentityPoolRolesInput](x: Self) {
     
     inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])

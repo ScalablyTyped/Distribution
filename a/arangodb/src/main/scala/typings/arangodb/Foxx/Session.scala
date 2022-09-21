@@ -8,13 +8,13 @@ trait Session extends StObject {
   
   var created: Double
   
-  var data: js.Any
+  var data: Any
   
   var uid: String | Null
 }
 object Session {
   
-  inline def apply(created: Double, data: js.Any): Session = {
+  inline def apply(created: Double, data: Any): Session = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], uid = null)
     __obj.asInstanceOf[Session]
   }
@@ -23,7 +23,7 @@ object Session {
     
     inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     

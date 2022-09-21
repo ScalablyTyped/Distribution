@@ -9,7 +9,7 @@ trait ClickFeedback extends StObject {
   /**
     * The Unix timestamp of the date and time that the result was clicked.
     */
-  var ClickTime: Timestamp
+  var ClickTime: js.Date
   
   /**
     * The unique identifier of the search result that was clicked.
@@ -18,14 +18,14 @@ trait ClickFeedback extends StObject {
 }
 object ClickFeedback {
   
-  inline def apply(ClickTime: Timestamp, ResultId: ResultId): ClickFeedback = {
+  inline def apply(ClickTime: js.Date, ResultId: ResultId): ClickFeedback = {
     val __obj = js.Dynamic.literal(ClickTime = ClickTime.asInstanceOf[js.Any], ResultId = ResultId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickFeedback]
   }
   
   extension [Self <: ClickFeedback](x: Self) {
     
-    inline def setClickTime(value: Timestamp): Self = StObject.set(x, "ClickTime", value.asInstanceOf[js.Any])
+    inline def setClickTime(value: js.Date): Self = StObject.set(x, "ClickTime", value.asInstanceOf[js.Any])
     
     inline def setResultId(value: ResultId): Self = StObject.set(x, "ResultId", value.asInstanceOf[js.Any])
   }

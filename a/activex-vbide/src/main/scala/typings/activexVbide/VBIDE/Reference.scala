@@ -8,7 +8,7 @@ trait Reference extends StObject {
   
   val BuiltIn: Boolean
   
-  def Collection(index: js.Any): Reference
+  def Collection(index: Any): Reference
   @JSName("Collection")
   val Collection_Original: References
   

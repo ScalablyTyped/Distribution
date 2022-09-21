@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.SchedulerDataSource")
 @js.native
-class SchedulerDataSource ()
+open class SchedulerDataSource ()
   extends StObject
      with typings.kendoUi.kendo.data.SchedulerDataSource

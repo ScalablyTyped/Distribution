@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-reflect
 
-Typings are for version 2.1.0
+Typings are for version 3.1.0
 
 ## Library description:
 Make a promise always fulfill with its actual fulfillment value or rejection reason
@@ -10,10 +10,10 @@ Make a promise always fulfill with its actual fulfillment value or rejection rea
 | ------------------ | :-------------: |
 | Full name          | p-reflect |
 | Keywords           | promise, reflect, inspect, debug, fulfill, reject, fulfilled, rejected, error, async, await, promises, bluebird |
-| # releases         | 3 |
-| # dependents       | 23 |
-| # downloads        | 3524679 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2464756.3333333335 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-reflect#readme)

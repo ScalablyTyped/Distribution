@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MetadataParam extends StObject {
   
-  var metadata: js.Any
+  var metadata: Any
 }
 object MetadataParam {
   
-  inline def apply(metadata: js.Any): MetadataParam = {
+  inline def apply(metadata: Any): MetadataParam = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataParam]
   }
   
   extension [Self <: MetadataParam](x: Self) {
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

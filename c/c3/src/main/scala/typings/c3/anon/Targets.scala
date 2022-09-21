@@ -20,6 +20,6 @@ object Targets {
     
     inline def setTargets(value: js.Array[DataSeries]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: DataSeries*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: DataSeries*): Self = StObject.set(x, "targets", js.Array(value*))
   }
 }

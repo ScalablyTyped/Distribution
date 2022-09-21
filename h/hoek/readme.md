@@ -10,10 +10,10 @@ General purpose node utilities
 | ------------------ | :-------------: |
 | Full name          | hoek |
 | Keywords           | utilities |
-| # releases         | 10 |
-| # dependents       | 1046 |
-| # downloads        | 226460328 |
-| # stars            | 32 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4778136333333334E7 |
+| # stars            | 473.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/hoek#readme)

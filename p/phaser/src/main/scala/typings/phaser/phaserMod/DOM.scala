@@ -2,6 +2,7 @@ package typings.phaser.phaserMod
 
 import typings.phaser.ContentLoadedCallback
 import typings.std.ActiveXObject
+import typings.std.DOMHighResTimeStamp
 import typings.std.DOMParser
 import typings.std.FrameRequestCallback
 import typings.std.HTMLElement
@@ -75,7 +76,7 @@ object DOM {
     */
   @JSImport("phaser", "DOM.RequestAnimationFrame")
   @js.native
-  class RequestAnimationFrame ()
+  open class RequestAnimationFrame ()
     extends StObject
        with typings.phaser.Phaser.DOM.RequestAnimationFrame {
     
@@ -83,7 +84,7 @@ object DOM {
       * The callback to be invoked each step.
       */
     /* CompleteClass */
-    override def callback(time: Double): Unit = js.native
+    override def callback(time: DOMHighResTimeStamp): Unit = js.native
     /**
       * The callback to be invoked each step.
       */
@@ -129,7 +130,7 @@ object DOM {
       * Updates the local tick value, invokes the callback and schedules another call to requestAnimationFrame.
       */
     /* CompleteClass */
-    override def step(time: Double): Unit = js.native
+    override def step(time: DOMHighResTimeStamp): Unit = js.native
     
     /**
       * The SetTimeout step function.

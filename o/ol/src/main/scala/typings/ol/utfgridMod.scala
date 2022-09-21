@@ -15,13 +15,13 @@ object utfgridMod {
   
   @JSImport("ol/source/UTFGrid", JSImport.Default)
   @js.native
-  class default protected () extends UTFGrid {
+  open class default protected () extends UTFGrid {
     def this(options: Options) = this()
   }
   
   @JSImport("ol/source/UTFGrid", "CustomTile")
   @js.native
-  class CustomTile protected ()
+  open class CustomTile protected ()
     extends typings.ol.olTileMod.default {
     def this(
       tileCoord: TileCoord,
@@ -36,13 +36,13 @@ object utfgridMod {
       * Calls the callback (synchronously by default) with the available data
       * for given coordinate (or null if not yet loaded).
       */
-    def forDataAtCoordinate(coordinate: Coordinate, callback: js.Function1[/* p0 */ js.Any, Unit]): Unit = js.native
-    def forDataAtCoordinate(coordinate: Coordinate, callback: js.Function1[/* p0 */ js.Any, Unit], opt_request: Boolean): Unit = js.native
+    def forDataAtCoordinate(coordinate: Coordinate, callback: js.Function1[/* p0 */ Any, Unit]): Unit = js.native
+    def forDataAtCoordinate(coordinate: Coordinate, callback: js.Function1[/* p0 */ Any, Unit], opt_request: Boolean): Unit = js.native
     
     /**
       * Synchronously returns data at given coordinate (if available).
       */
-    def getData(coordinate: Coordinate): js.Any = js.native
+    def getData(coordinate: Coordinate): Any = js.native
     
     /**
       * Get the image element for this tile.
@@ -96,11 +96,11 @@ object utfgridMod {
       * for given coordinate and resolution (or null if not yet loaded or
       * in case of an error).
       */
-    def forDataAtCoordinateAndResolution(coordinate: Coordinate, resolution: Double, callback: js.Function1[/* p0 */ js.Any, Unit]): Unit = js.native
+    def forDataAtCoordinateAndResolution(coordinate: Coordinate, resolution: Double, callback: js.Function1[/* p0 */ Any, Unit]): Unit = js.native
     def forDataAtCoordinateAndResolution(
       coordinate: Coordinate,
       resolution: Double,
-      callback: js.Function1[/* p0 */ js.Any, Unit],
+      callback: js.Function1[/* p0 */ Any, Unit],
       opt_request: Boolean
     ): Unit = js.native
     
@@ -145,11 +145,11 @@ object utfgridMod {
       
       inline def setGrid(value: js.Array[String]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      inline def setGridVarargs(value: String*): Self = StObject.set(x, "grid", js.Array(value :_*))
+      inline def setGridVarargs(value: String*): Self = StObject.set(x, "grid", js.Array(value*))
       
       inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     }
   }
 }

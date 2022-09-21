@@ -21,16 +21,16 @@ object ChaiSpies {
       * ```
       */
     def `with`(
-      a: js.Any,
-      b: js.UndefOr[js.Any],
-      c: js.UndefOr[js.Any],
-      d: js.UndefOr[js.Any],
-      e: js.UndefOr[js.Any],
-      f: js.UndefOr[js.Any],
-      g: js.UndefOr[js.Any],
-      h: js.UndefOr[js.Any],
-      i: js.UndefOr[js.Any],
-      j: js.UndefOr[js.Any]
+      a: Any,
+      b: js.UndefOr[Any],
+      c: js.UndefOr[Any],
+      d: js.UndefOr[Any],
+      e: js.UndefOr[Any],
+      f: js.UndefOr[Any],
+      g: js.UndefOr[Any],
+      h: js.UndefOr[Any],
+      i: js.UndefOr[Any],
+      j: js.UndefOr[Any]
     ): Assertion
     @JSName("with")
     var with_Original: AlwaysWith
@@ -64,16 +64,16 @@ object ChaiSpies {
       * ```
       */
     def apply(
-      a: js.Any,
-      b: js.UndefOr[js.Any],
-      c: js.UndefOr[js.Any],
-      d: js.UndefOr[js.Any],
-      e: js.UndefOr[js.Any],
-      f: js.UndefOr[js.Any],
-      g: js.UndefOr[js.Any],
-      h: js.UndefOr[js.Any],
-      i: js.UndefOr[js.Any],
-      j: js.UndefOr[js.Any]
+      a: Any,
+      b: js.UndefOr[Any],
+      c: js.UndefOr[Any],
+      d: js.UndefOr[Any],
+      e: js.UndefOr[Any],
+      f: js.UndefOr[Any],
+      g: js.UndefOr[Any],
+      h: js.UndefOr[Any],
+      i: js.UndefOr[Any],
+      j: js.UndefOr[Any]
     ): Assertion = js.native
     
     /**
@@ -87,16 +87,16 @@ object ChaiSpies {
       * ```
       */
     def exactly(
-      a: js.UndefOr[js.Any],
-      b: js.UndefOr[js.Any],
-      c: js.UndefOr[js.Any],
-      d: js.UndefOr[js.Any],
-      e: js.UndefOr[js.Any],
-      f: js.UndefOr[js.Any],
-      g: js.UndefOr[js.Any],
-      h: js.UndefOr[js.Any],
-      i: js.UndefOr[js.Any],
-      j: js.UndefOr[js.Any]
+      a: js.UndefOr[Any],
+      b: js.UndefOr[Any],
+      c: js.UndefOr[Any],
+      d: js.UndefOr[Any],
+      e: js.UndefOr[Any],
+      f: js.UndefOr[Any],
+      g: js.UndefOr[Any],
+      h: js.UndefOr[Any],
+      i: js.UndefOr[Any],
+      j: js.UndefOr[Any]
     ): Assertion = js.native
   }
   
@@ -311,16 +311,16 @@ object ChaiSpies {
       * ```
       */
     def `with`(
-      a: js.Any,
-      b: js.UndefOr[js.Any],
-      c: js.UndefOr[js.Any],
-      d: js.UndefOr[js.Any],
-      e: js.UndefOr[js.Any],
-      f: js.UndefOr[js.Any],
-      g: js.UndefOr[js.Any],
-      h: js.UndefOr[js.Any],
-      i: js.UndefOr[js.Any],
-      j: js.UndefOr[js.Any]
+      a: Any,
+      b: js.UndefOr[Any],
+      c: js.UndefOr[Any],
+      d: js.UndefOr[Any],
+      e: js.UndefOr[Any],
+      f: js.UndefOr[Any],
+      g: js.UndefOr[Any],
+      h: js.UndefOr[Any],
+      i: js.UndefOr[Any],
+      j: js.UndefOr[Any]
     ): Assertion = js.native
     @JSName("with")
     var with_Original: With = js.native
@@ -362,18 +362,18 @@ object ChaiSpies {
       * @param {function} fn replacement function
       * @returns function to actually call
       */
-    def on(`object`: js.Object, methodNames: String): js.Any = js.native
+    def on(`object`: js.Object, methodNames: String): Any = js.native
     def on(
       `object`: js.Object,
       methodNames: String,
-      fn: js.Function1[/* parameters */ js.Array[js.Any] | js.Any, js.Any]
-    ): js.Any = js.native
-    def on(`object`: js.Object, methodNames: js.Array[String]): js.Any = js.native
+      fn: js.Function1[/* parameters */ js.Array[Any] | Any, Any]
+    ): Any = js.native
+    def on(`object`: js.Object, methodNames: js.Array[String]): Any = js.native
     def on(
       `object`: js.Object,
       methodNames: js.Array[String],
-      fn: js.Function1[/* parameters */ js.Array[js.Any] | js.Any, js.Any]
-    ): js.Any = js.native
+      fn: js.Function1[/* parameters */ js.Array[Any] | Any, Any]
+    ): Any = js.native
     
     /**
       * #### chai.spy.restore (function)
@@ -433,7 +433,7 @@ object ChaiSpies {
     def apply[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R](fn: SpyFunc10[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R]): SpyFunc10Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R] = js.native
     def apply[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R](name: String, fn: SpyFunc10[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R]): SpyFunc10Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R] = js.native
     
-    def interface(methods: js.Array[String]): js.Any = js.native
+    def interface(methods: js.Array[String]): Any = js.native
     /**
       * #### chai.spy.interface (function)
       *
@@ -445,7 +445,7 @@ object ChaiSpies {
       * @param {String[]|Object} method names or method definitions
       * @returns object with spied methods
       */
-    def interface(name: String, methods: js.Array[String]): js.Any = js.native
+    def interface(name: String, methods: js.Array[String]): Any = js.native
     def interface[T](methods: T): T = js.native
     def interface[T](name: String, methods: T): T = js.native
     
@@ -461,18 +461,18 @@ object ChaiSpies {
       * @param {function} fn replacement function
       * @returns function to actually call
       */
-    def on(`object`: js.Object, methodNames: String): js.Any = js.native
+    def on(`object`: js.Object, methodNames: String): Any = js.native
     def on(
       `object`: js.Object,
       methodNames: String,
-      fn: js.Function1[/* parameters */ js.Array[js.Any] | js.Any, js.Any]
-    ): js.Any = js.native
-    def on(`object`: js.Object, methodNames: js.Array[String]): js.Any = js.native
+      fn: js.Function1[/* parameters */ js.Array[Any] | Any, Any]
+    ): Any = js.native
+    def on(`object`: js.Object, methodNames: js.Array[String]): Any = js.native
     def on(
       `object`: js.Object,
       methodNames: js.Array[String],
-      fn: js.Function1[/* parameters */ js.Array[js.Any] | js.Any, js.Any]
-    ): js.Any = js.native
+      fn: js.Function1[/* parameters */ js.Array[Any] | Any, Any]
+    ): Any = js.native
     
     /**
       * #### chai.spy.restore (function)
@@ -704,16 +704,16 @@ object ChaiSpies {
       * ```
       */
     def apply(
-      a: js.Any,
-      b: js.UndefOr[js.Any],
-      c: js.UndefOr[js.Any],
-      d: js.UndefOr[js.Any],
-      e: js.UndefOr[js.Any],
-      f: js.UndefOr[js.Any],
-      g: js.UndefOr[js.Any],
-      h: js.UndefOr[js.Any],
-      i: js.UndefOr[js.Any],
-      j: js.UndefOr[js.Any]
+      a: Any,
+      b: js.UndefOr[Any],
+      c: js.UndefOr[Any],
+      d: js.UndefOr[Any],
+      e: js.UndefOr[Any],
+      f: js.UndefOr[Any],
+      g: js.UndefOr[Any],
+      h: js.UndefOr[Any],
+      i: js.UndefOr[Any],
+      j: js.UndefOr[Any]
     ): Assertion = js.native
     
     /**
@@ -729,16 +729,16 @@ object ChaiSpies {
       * Can be used for calls with a single argument too.
       */
     def exactly(
-      a: js.UndefOr[js.Any],
-      b: js.UndefOr[js.Any],
-      c: js.UndefOr[js.Any],
-      d: js.UndefOr[js.Any],
-      e: js.UndefOr[js.Any],
-      f: js.UndefOr[js.Any],
-      g: js.UndefOr[js.Any],
-      h: js.UndefOr[js.Any],
-      i: js.UndefOr[js.Any],
-      j: js.UndefOr[js.Any]
+      a: js.UndefOr[Any],
+      b: js.UndefOr[Any],
+      c: js.UndefOr[Any],
+      d: js.UndefOr[Any],
+      e: js.UndefOr[Any],
+      f: js.UndefOr[Any],
+      g: js.UndefOr[Any],
+      h: js.UndefOr[Any],
+      i: js.UndefOr[Any],
+      j: js.UndefOr[Any]
     ): Assertion = js.native
   }
 }

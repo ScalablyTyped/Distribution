@@ -3,8 +3,8 @@ package typings.appBuilderLib
 import typings.appBuilderLib.packagerMod.Packager
 import typings.appBuilderLib.platformPackagerMod.PlatformPackager
 import typings.builderUtil.fsMod.FileTransformer
-import typings.fsExtra.mod.Stats
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.fsMod.Stats
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,18 +18,18 @@ object appFileCopierMod {
   
   inline def computeFileSets(
     matchers: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileMatcher */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileMatcher */ Any
     ],
     transformer: Null,
-    platformPackager: PlatformPackager[js.Any],
+    platformPackager: PlatformPackager[Any],
     isElectronCompile: Boolean
   ): js.Promise[js.Array[ResolvedFileSet]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeFileSets")(matchers.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], platformPackager.asInstanceOf[js.Any], isElectronCompile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ResolvedFileSet]]]
   inline def computeFileSets(
     matchers: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileMatcher */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileMatcher */ Any
     ],
     transformer: FileTransformer,
-    platformPackager: PlatformPackager[js.Any],
+    platformPackager: PlatformPackager[Any],
     isElectronCompile: Boolean
   ): js.Promise[js.Array[ResolvedFileSet]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeFileSets")(matchers.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], platformPackager.asInstanceOf[js.Any], isElectronCompile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ResolvedFileSet]]]
   
@@ -64,7 +64,7 @@ object appFileCopierMod {
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setMetadata(value: Map[String, Stats]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       

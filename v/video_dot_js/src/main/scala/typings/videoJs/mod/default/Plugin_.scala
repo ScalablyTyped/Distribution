@@ -12,7 +12,7 @@ object Plugin_ {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("video.js", "default.Plugin")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Plugin {
     /**
@@ -24,7 +24,7 @@ object Plugin_ {
       *        A Video.js player instance.
       */
     def this(player: typings.videoJs.mod.videojs.Player) = this()
-    def this(player: typings.videoJs.mod.videojs.Player, options: js.Any) = this()
+    def this(player: typings.videoJs.mod.videojs.Player, options: Any) = this()
   }
   
   @JSImport("video.js", "default.Plugin")
@@ -93,7 +93,7 @@ object Plugin_ {
     * @return Whether or not a plugin is a basic plugin.
     */
   inline def isBasic(plugin: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBasic")(plugin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isBasic(plugin: js.Function0[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBasic")(plugin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBasic(plugin: js.Function0[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBasic")(plugin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def registerPlugin[T /* <: TypeofPlugin */](name: String, plugin: T): js.Function0[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Function0[T]]
   /**

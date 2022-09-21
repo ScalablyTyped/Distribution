@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.EquiRectangularCubeTextureAssetTask")
 @js.native
-class EquiRectangularCubeTextureAssetTask protected ()
+open class EquiRectangularCubeTextureAssetTask protected ()
   extends StObject
      with typings.babylonjs.BABYLON.EquiRectangularCubeTextureAssetTask {
   /**

@@ -7,19 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Name extends StObject {
   
   /**
-    * Name of the event. This is the specific name of the activity reported by the API. And each eventName is related to a specific G Suite service or feature which the API organizes
-    * into types of events. For eventName request parameters in general: - If no eventName is given, the report returns all possible instances of an eventName. - When you request an
-    * eventName, the API's response returns all activities which contain that eventName. It is possible that the returned activities will have other eventName properties in addition
-    * to the one requested. For more information about eventName properties, see the list of event names for various applications above in applicationName.
+    * Name of the event. This is the specific name of the activity reported by the API. And each `eventName` is related to a specific Google Workspace service or feature which the API
+    * organizes into types of events. For `eventName` request parameters in general: - If no `eventName` is given, the report returns all possible instances of an `eventName`. - When
+    * you request an `eventName`, the API's response returns all activities which contain that `eventName`. It is possible that the returned activities will have other `eventName`
+    * properties in addition to the one requested. For more information about `eventName` properties, see the list of event names for various applications above in `applicationName`.
     */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Parameter value pairs for various applications. For more information about eventName parameters, see the list of event names for various applications above in applicationName. */
+  /**
+    * Parameter value pairs for various applications. For more information about `eventName` parameters, see the list of event names for various applications above in
+    * `applicationName`.
+    */
   var parameters: js.UndefOr[js.Array[BoolValue]] = js.undefined
   
   /**
-    * Type of event. The G Suite service or feature that an administrator changes is identified in the type property which identifies an event using the eventName property. For a full
-    * list of the API's type categories, see the list of event names for various applications above in applicationName.
+    * Type of event. The Google Workspace service or feature that an administrator changes is identified in the `type` property which identifies an event using the `eventName`
+    * property. For a full list of the API's `type` categories, see the list of event names for various applications above in `applicationName`.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -40,7 +43,7 @@ object Name {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: BoolValue*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: BoolValue*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

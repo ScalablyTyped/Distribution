@@ -1,7 +1,7 @@
 
 # Scala.js typings for arg
 
-Typings are for version 4.1.3
+Typings are for version 5.0.2
 
 ## Library description:
 Unopinionated, no-frills CLI argument parser
@@ -11,9 +11,9 @@ Unopinionated, no-frills CLI argument parser
 | Full name          | arg |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 1022 |
-| # downloads        | 210621723 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.736015333333333E7 |
+| # stars            | 1080.0 |
 
 ## Links
 - [Homepage](https://github.com/vercel/arg#readme)

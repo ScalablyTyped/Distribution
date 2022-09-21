@@ -5,7 +5,6 @@ import typings.sequelize.anon.Logging
 import typings.sequelize.anon.Schema
 import typings.sequelize.anon.SchemaTableName
 import typings.sequelize.anon.TableName
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait QueryInterface extends StObject {
     *
     * We don't have a definition for the QueryGenerator, because I doubt it is commonly in use separately.
     */
-  var QueryGenerator: js.Any = js.native
+  var QueryGenerator: Any = js.native
   
   def addColumn(tableName: String, key: String, attribute: DataTypeAbstract): typings.bluebird.mod.^[Unit] = js.native
   def addColumn(tableName: String, key: String, attribute: DataTypeAbstract, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
@@ -80,14 +79,9 @@ trait QueryInterface extends StObject {
     * Deletes multiple rows at once
     */
   def bulkDelete(tableName: String, identifier: js.Object): typings.bluebird.mod.^[js.Object] = js.native
-  def bulkDelete(tableName: String, identifier: js.Object, options: Unit, model: Model[js.Any, js.Any, js.Any]): typings.bluebird.mod.^[js.Object] = js.native
+  def bulkDelete(tableName: String, identifier: js.Object, options: Unit, model: Model[Any, Any, Any]): typings.bluebird.mod.^[js.Object] = js.native
   def bulkDelete(tableName: String, identifier: js.Object, options: QueryOptions): typings.bluebird.mod.^[js.Object] = js.native
-  def bulkDelete(
-    tableName: String,
-    identifier: js.Object,
-    options: QueryOptions,
-    model: Model[js.Any, js.Any, js.Any]
-  ): typings.bluebird.mod.^[js.Object] = js.native
+  def bulkDelete(tableName: String, identifier: js.Object, options: QueryOptions, model: Model[Any, Any, Any]): typings.bluebird.mod.^[js.Object] = js.native
   
   /**
     * Inserts multiple records at once
@@ -212,10 +206,10 @@ trait QueryInterface extends StObject {
   /**
     * Postgres only. Create a function
     */
-  def createFunction(functionName: String, params: js.Array[js.Any], returnType: String, language: String, body: String): typings.bluebird.mod.^[Unit] = js.native
+  def createFunction(functionName: String, params: js.Array[Any], returnType: String, language: String, body: String): typings.bluebird.mod.^[Unit] = js.native
   def createFunction(
     functionName: String,
-    params: js.Array[js.Any],
+    params: js.Array[Any],
     returnType: String,
     language: String,
     body: String,
@@ -252,18 +246,18 @@ trait QueryInterface extends StObject {
     tableName: String,
     triggerName: String,
     timingType: String,
-    fireOnArray: js.Array[js.Any],
+    fireOnArray: js.Array[Any],
     functionName: String,
-    functionParams: js.Array[js.Any],
+    functionParams: js.Array[Any],
     optionsArray: js.Array[String]
   ): typings.bluebird.mod.^[Unit] = js.native
   def createTrigger(
     tableName: String,
     triggerName: String,
     timingType: String,
-    fireOnArray: js.Array[js.Any],
+    fireOnArray: js.Array[Any],
     functionName: String,
-    functionParams: js.Array[js.Any],
+    functionParams: js.Array[Any],
     optionsArray: js.Array[String],
     options: QueryInterfaceOptions
   ): typings.bluebird.mod.^[Unit] = js.native
@@ -283,8 +277,8 @@ trait QueryInterface extends StObject {
   /**
     * Deletes a row
     */
-  def delete(instance: Instance[js.Any], tableName: String, identifier: js.Object): typings.bluebird.mod.^[js.Object] = js.native
-  def delete(instance: Instance[js.Any], tableName: String, identifier: js.Object, options: QueryOptions): typings.bluebird.mod.^[js.Object] = js.native
+  def delete(instance: Instance[Any], tableName: String, identifier: js.Object): typings.bluebird.mod.^[js.Object] = js.native
+  def delete(instance: Instance[Any], tableName: String, identifier: js.Object, options: QueryOptions): typings.bluebird.mod.^[js.Object] = js.native
   
   /**
     * Describe a table
@@ -321,8 +315,8 @@ trait QueryInterface extends StObject {
   /**
     * Postgres only. Drops a function
     */
-  def dropFunction(functionName: String, params: js.Array[js.Any]): typings.bluebird.mod.^[Unit] = js.native
-  def dropFunction(functionName: String, params: js.Array[js.Any], options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
+  def dropFunction(functionName: String, params: js.Array[Any]): typings.bluebird.mod.^[Unit] = js.native
+  def dropFunction(functionName: String, params: js.Array[Any], options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
   
   /**
     * Drops the specified schema (table).
@@ -354,8 +348,8 @@ trait QueryInterface extends StObject {
     */
   def escape(): String = js.native
   def escape(value: String): String = js.native
+  def escape(value: js.Date): String = js.native
   def escape(value: Double): String = js.native
-  def escape(value: Date): String = js.native
   
   /**
     * Returns all foreign key constraints of each table in list
@@ -366,9 +360,9 @@ trait QueryInterface extends StObject {
   /**
     * Increments a row value
     */
-  def increment(instance: Instance[js.Any], tableName: String, values: js.Object, identifier: js.Object): typings.bluebird.mod.^[js.Object] = js.native
+  def increment(instance: Instance[Any], tableName: String, values: js.Object, identifier: js.Object): typings.bluebird.mod.^[js.Object] = js.native
   def increment(
-    instance: Instance[js.Any],
+    instance: Instance[Any],
     tableName: String,
     values: js.Object,
     identifier: js.Object,
@@ -378,8 +372,8 @@ trait QueryInterface extends StObject {
   /**
     * Inserts a new record
     */
-  def insert(instance: Instance[js.Any], tableName: String, values: js.Object): typings.bluebird.mod.^[js.Object] = js.native
-  def insert(instance: Instance[js.Any], tableName: String, values: js.Object, options: QueryOptions): typings.bluebird.mod.^[js.Object] = js.native
+  def insert(instance: Instance[Any], tableName: String, values: js.Object): typings.bluebird.mod.^[js.Object] = js.native
+  def insert(instance: Instance[Any], tableName: String, values: js.Object, options: QueryOptions): typings.bluebird.mod.^[js.Object] = js.native
   
   /**
     * Put a name to an index
@@ -407,18 +401,13 @@ trait QueryInterface extends StObject {
     * Selects raw without parsing the string into an object
     */
   def rawSelect(tableName: String, options: QueryOptions, attributeSelector: String): typings.bluebird.mod.^[js.Array[String]] = js.native
-  def rawSelect(
-    tableName: String,
-    options: QueryOptions,
-    attributeSelector: String,
-    model: Model[js.Any, js.Any, js.Any]
-  ): typings.bluebird.mod.^[js.Array[String]] = js.native
+  def rawSelect(tableName: String, options: QueryOptions, attributeSelector: String, model: Model[Any, Any, Any]): typings.bluebird.mod.^[js.Array[String]] = js.native
   def rawSelect(tableName: String, options: QueryOptions, attributeSelector: js.Array[String]): typings.bluebird.mod.^[js.Array[String]] = js.native
   def rawSelect(
     tableName: String,
     options: QueryOptions,
     attributeSelector: js.Array[String],
-    model: Model[js.Any, js.Any, js.Any]
+    model: Model[Any, Any, Any]
   ): typings.bluebird.mod.^[js.Array[String]] = js.native
   
   /**
@@ -454,10 +443,10 @@ trait QueryInterface extends StObject {
   /**
     * Postgres only. Rename a function
     */
-  def renameFunction(oldFunctionName: String, params: js.Array[js.Any], newFunctionName: String): typings.bluebird.mod.^[Unit] = js.native
+  def renameFunction(oldFunctionName: String, params: js.Array[Any], newFunctionName: String): typings.bluebird.mod.^[Unit] = js.native
   def renameFunction(
     oldFunctionName: String,
-    params: js.Array[js.Any],
+    params: js.Array[Any],
     newFunctionName: String,
     options: QueryInterfaceOptions
   ): typings.bluebird.mod.^[Unit] = js.native
@@ -483,8 +472,8 @@ trait QueryInterface extends StObject {
   /**
     * Returns selected rows
     */
-  def select(model: Model[js.Any, js.Any, js.Any], tableName: String): typings.bluebird.mod.^[js.Array[js.Object]] = js.native
-  def select(model: Model[js.Any, js.Any, js.Any], tableName: String, options: QueryOptions): typings.bluebird.mod.^[js.Array[js.Object]] = js.native
+  def select(model: Model[Any, Any, Any], tableName: String): typings.bluebird.mod.^[js.Array[js.Object]] = js.native
+  def select(model: Model[Any, Any, Any], tableName: String, options: QueryOptions): typings.bluebird.mod.^[js.Array[js.Object]] = js.native
   
   /**
     * Returns the current sequelize instance.
@@ -534,9 +523,9 @@ trait QueryInterface extends StObject {
   /**
     * Updates a row
     */
-  def update(instance: Instance[js.Any], tableName: String, values: js.Object, identifier: js.Object): typings.bluebird.mod.^[js.Object] = js.native
+  def update(instance: Instance[Any], tableName: String, values: js.Object, identifier: js.Object): typings.bluebird.mod.^[js.Object] = js.native
   def update(
-    instance: Instance[js.Any],
+    instance: Instance[Any],
     tableName: String,
     values: js.Object,
     identifier: js.Object,
@@ -546,17 +535,12 @@ trait QueryInterface extends StObject {
   /**
     * Inserts or Updates a record in the database
     */
+  def upsert(tableName: String, values: js.Object, updateValues: js.Object, model: Model[Any, Any, Any]): typings.bluebird.mod.^[js.Object] = js.native
   def upsert(
     tableName: String,
     values: js.Object,
     updateValues: js.Object,
-    model: Model[js.Any, js.Any, js.Any]
-  ): typings.bluebird.mod.^[js.Object] = js.native
-  def upsert(
-    tableName: String,
-    values: js.Object,
-    updateValues: js.Object,
-    model: Model[js.Any, js.Any, js.Any],
+    model: Model[Any, Any, Any],
     options: QueryOptions
   ): typings.bluebird.mod.^[js.Object] = js.native
 }

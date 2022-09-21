@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.mod.SecurityNamespace.CasesRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,8 +9,9 @@ trait Security
   extends StObject
      with Entity {
   
-  // Read-only. Nullable.
   var alerts: js.UndefOr[NullableOption[js.Array[Alert]]] = js.undefined
+  
+  var cases: js.UndefOr[NullableOption[CasesRoot]] = js.undefined
   
   var secureScoreControlProfiles: js.UndefOr[NullableOption[js.Array[SecureScoreControlProfile]]] = js.undefined
   
@@ -30,7 +32,13 @@ object Security {
     
     inline def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
     
-    inline def setAlertsVarargs(value: Alert*): Self = StObject.set(x, "alerts", js.Array(value :_*))
+    inline def setAlertsVarargs(value: Alert*): Self = StObject.set(x, "alerts", js.Array(value*))
+    
+    inline def setCases(value: NullableOption[CasesRoot]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
+    
+    inline def setCasesNull: Self = StObject.set(x, "cases", null)
+    
+    inline def setCasesUndefined: Self = StObject.set(x, "cases", js.undefined)
     
     inline def setSecureScoreControlProfiles(value: NullableOption[js.Array[SecureScoreControlProfile]]): Self = StObject.set(x, "secureScoreControlProfiles", value.asInstanceOf[js.Any])
     
@@ -38,7 +46,7 @@ object Security {
     
     inline def setSecureScoreControlProfilesUndefined: Self = StObject.set(x, "secureScoreControlProfiles", js.undefined)
     
-    inline def setSecureScoreControlProfilesVarargs(value: SecureScoreControlProfile*): Self = StObject.set(x, "secureScoreControlProfiles", js.Array(value :_*))
+    inline def setSecureScoreControlProfilesVarargs(value: SecureScoreControlProfile*): Self = StObject.set(x, "secureScoreControlProfiles", js.Array(value*))
     
     inline def setSecureScores(value: NullableOption[js.Array[SecureScore]]): Self = StObject.set(x, "secureScores", value.asInstanceOf[js.Any])
     
@@ -46,6 +54,6 @@ object Security {
     
     inline def setSecureScoresUndefined: Self = StObject.set(x, "secureScores", js.undefined)
     
-    inline def setSecureScoresVarargs(value: SecureScore*): Self = StObject.set(x, "secureScores", js.Array(value :_*))
+    inline def setSecureScoresVarargs(value: SecureScore*): Self = StObject.set(x, "secureScores", js.Array(value*))
   }
 }

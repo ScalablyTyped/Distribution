@@ -126,7 +126,7 @@ object Adcode {
     
     inline def setDiscountsUndefined: Self = StObject.set(x, "discounts", js.undefined)
     
-    inline def setDiscountsVarargs(value: Discount*): Self = StObject.set(x, "discounts", js.Array(value :_*))
+    inline def setDiscountsVarargs(value: Discount*): Self = StObject.set(x, "discounts", js.Array(value*))
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
@@ -144,13 +144,13 @@ object Adcode {
     
     inline def setGroupbuysUndefined: Self = StObject.set(x, "groupbuys", js.undefined)
     
-    inline def setGroupbuysVarargs(value: Groupbuy*): Self = StObject.set(x, "groupbuys", js.Array(value :_*))
+    inline def setGroupbuysVarargs(value: Groupbuy*): Self = StObject.set(x, "groupbuys", js.Array(value*))
     
     inline def setPcode(value: String): Self = StObject.set(x, "pcode", value.asInstanceOf[js.Any])
     
     inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
     
     inline def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
     

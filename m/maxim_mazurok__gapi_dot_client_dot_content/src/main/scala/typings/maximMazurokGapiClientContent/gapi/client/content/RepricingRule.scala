@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RepricingRule extends StObject {
   
-  /** Required. Immutable. CLDR country code (e.g. "US"). */
+  /** The rule definition for TYPE_COGS_BASED. Required when the rule type is TYPE_COGS_BASED. */
+  var cogsBasedRule: js.UndefOr[RepricingRuleCostOfGoodsSaleRule] = js.undefined
+  
+  /** Required. Immutable. [CLDR country code](http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) (e.g. "US"). */
   var countryCode: js.UndefOr[String] = js.undefined
   
   /** Required. Time period when the rule should take effect. */
@@ -33,6 +36,9 @@ trait RepricingRule extends StObject {
   /** Output only. Immutable. The ID to uniquely identify each repricing rule. */
   var ruleId: js.UndefOr[String] = js.undefined
   
+  /** The rule definition for TYPE_STATS_BASED. Required when the rule type is TYPE_STATS_BASED. */
+  var statsBasedRule: js.UndefOr[RepricingRuleStatsBasedRule] = js.undefined
+  
   /** The title for the rule. */
   var title: js.UndefOr[String] = js.undefined
   
@@ -47,6 +53,10 @@ object RepricingRule {
   }
   
   extension [Self <: RepricingRule](x: Self) {
+    
+    inline def setCogsBasedRule(value: RepricingRuleCostOfGoodsSaleRule): Self = StObject.set(x, "cogsBasedRule", value.asInstanceOf[js.Any])
+    
+    inline def setCogsBasedRuleUndefined: Self = StObject.set(x, "cogsBasedRule", js.undefined)
     
     inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
@@ -79,6 +89,10 @@ object RepricingRule {
     inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
     inline def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
+    
+    inline def setStatsBasedRule(value: RepricingRuleStatsBasedRule): Self = StObject.set(x, "statsBasedRule", value.asInstanceOf[js.Any])
+    
+    inline def setStatsBasedRuleUndefined: Self = StObject.set(x, "statsBasedRule", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -34,13 +34,13 @@ object GetResourcesResponse {
     
     inline def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
     
-    inline def setDocumentsVarargs(value: DocumentMetadata*): Self = StObject.set(x, "Documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: DocumentMetadata*): Self = StObject.set(x, "Documents", js.Array(value*))
     
     inline def setFolders(value: FolderMetadataList): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
     
     inline def setFoldersUndefined: Self = StObject.set(x, "Folders", js.undefined)
     
-    inline def setFoldersVarargs(value: FolderMetadata*): Self = StObject.set(x, "Folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: FolderMetadata*): Self = StObject.set(x, "Folders", js.Array(value*))
     
     inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

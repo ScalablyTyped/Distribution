@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +11,12 @@ trait CloneOperationInformation extends StObject {
   /**
     * If the operation is complete, the DateTime of completion. If operation is not complete, this is DateTime.MaxValue
     */
-  var completionDate: Date
+  var completionDate: js.Date
   
   /**
     * DateTime when the operation was started
     */
-  var creationDate: Date
+  var creationDate: js.Date
   
   /**
     * Shallow reference of the destination
@@ -78,8 +77,8 @@ object CloneOperationInformation {
   
   inline def apply(
     cloneStatistics: CloneStatistics,
-    completionDate: Date,
-    creationDate: Date,
+    completionDate: js.Date,
+    creationDate: js.Date,
     destinationObject: ShallowReference,
     destinationPlan: ShallowReference,
     destinationProject: ShallowReference,
@@ -100,9 +99,9 @@ object CloneOperationInformation {
     
     inline def setCloneStatistics(value: CloneStatistics): Self = StObject.set(x, "cloneStatistics", value.asInstanceOf[js.Any])
     
-    inline def setCompletionDate(value: Date): Self = StObject.set(x, "completionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "completionDate", value.asInstanceOf[js.Any])
     
-    inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setDestinationObject(value: ShallowReference): Self = StObject.set(x, "destinationObject", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.prettier.mod
 
+import typings.prettier.prettierBooleans.`false`
 import typings.prettier.prettierStrings.`as-needed`
 import typings.prettier.prettierStrings.all
 import typings.prettier.prettierStrings.always
@@ -35,8 +36,8 @@ object ParserOptions {
   
   inline def apply[T](
     arrowParens: avoid | always,
+    bracketSameLine: Boolean,
     bracketSpacing: Boolean,
-    embeddedInHtml: Boolean,
     embeddedLanguageFormatting: auto | off,
     endOfLine: auto | lf | crlf | cr,
     filepath: String,
@@ -48,7 +49,8 @@ object ParserOptions {
     locStart: T => Double,
     originalText: String,
     parser: (LiteralUnion[BuiltInParserName, String]) | CustomParser,
-    plugins: js.Array[String | Plugin[js.Any]],
+    pluginSearchDirs: js.Array[String] | `false`,
+    plugins: js.Array[String | Plugin[Any]],
     printWidth: Double,
     proseWrap: always | never | preserve,
     quoteProps: `as-needed` | consistent | preserve,
@@ -56,13 +58,14 @@ object ParserOptions {
     rangeStart: Double,
     requirePragma: Boolean,
     semi: Boolean,
+    singleAttributePerLine: Boolean,
     singleQuote: Boolean,
     tabWidth: Double,
     trailingComma: none | es5 | all,
     useTabs: Boolean,
     vueIndentScriptAndStyle: Boolean
   ): ParserOptions[T] = {
-    val __obj = js.Dynamic.literal(arrowParens = arrowParens.asInstanceOf[js.Any], bracketSpacing = bracketSpacing.asInstanceOf[js.Any], embeddedInHtml = embeddedInHtml.asInstanceOf[js.Any], embeddedLanguageFormatting = embeddedLanguageFormatting.asInstanceOf[js.Any], endOfLine = endOfLine.asInstanceOf[js.Any], filepath = filepath.asInstanceOf[js.Any], htmlWhitespaceSensitivity = htmlWhitespaceSensitivity.asInstanceOf[js.Any], insertPragma = insertPragma.asInstanceOf[js.Any], jsxBracketSameLine = jsxBracketSameLine.asInstanceOf[js.Any], jsxSingleQuote = jsxSingleQuote.asInstanceOf[js.Any], locEnd = js.Any.fromFunction1(locEnd), locStart = js.Any.fromFunction1(locStart), originalText = originalText.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], printWidth = printWidth.asInstanceOf[js.Any], proseWrap = proseWrap.asInstanceOf[js.Any], quoteProps = quoteProps.asInstanceOf[js.Any], rangeEnd = rangeEnd.asInstanceOf[js.Any], rangeStart = rangeStart.asInstanceOf[js.Any], requirePragma = requirePragma.asInstanceOf[js.Any], semi = semi.asInstanceOf[js.Any], singleQuote = singleQuote.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], trailingComma = trailingComma.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any], vueIndentScriptAndStyle = vueIndentScriptAndStyle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arrowParens = arrowParens.asInstanceOf[js.Any], bracketSameLine = bracketSameLine.asInstanceOf[js.Any], bracketSpacing = bracketSpacing.asInstanceOf[js.Any], embeddedLanguageFormatting = embeddedLanguageFormatting.asInstanceOf[js.Any], endOfLine = endOfLine.asInstanceOf[js.Any], filepath = filepath.asInstanceOf[js.Any], htmlWhitespaceSensitivity = htmlWhitespaceSensitivity.asInstanceOf[js.Any], insertPragma = insertPragma.asInstanceOf[js.Any], jsxBracketSameLine = jsxBracketSameLine.asInstanceOf[js.Any], jsxSingleQuote = jsxSingleQuote.asInstanceOf[js.Any], locEnd = js.Any.fromFunction1(locEnd), locStart = js.Any.fromFunction1(locStart), originalText = originalText.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], pluginSearchDirs = pluginSearchDirs.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], printWidth = printWidth.asInstanceOf[js.Any], proseWrap = proseWrap.asInstanceOf[js.Any], quoteProps = quoteProps.asInstanceOf[js.Any], rangeEnd = rangeEnd.asInstanceOf[js.Any], rangeStart = rangeStart.asInstanceOf[js.Any], requirePragma = requirePragma.asInstanceOf[js.Any], semi = semi.asInstanceOf[js.Any], singleAttributePerLine = singleAttributePerLine.asInstanceOf[js.Any], singleQuote = singleQuote.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], trailingComma = trailingComma.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any], vueIndentScriptAndStyle = vueIndentScriptAndStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions[T]]
   }
   

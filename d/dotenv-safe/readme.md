@@ -10,10 +10,10 @@ Load environment variables from .env and ensure they are defined
 | ------------------ | :-------------: |
 | Full name          | dotenv-safe |
 | Keywords           | dotenv |
-| # releases         | 4 |
-| # dependents       | 100 |
-| # downloads        | 3784757 |
-| # stars            | 16 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 499636.6666666667 |
+| # stars            | 719.0 |
 
 ## Links
 - [Homepage](https://github.com/rolodato/dotenv-safe#readme)

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Graphics.Printing
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Graphics.Printing.IPrintDocumentSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +14,7 @@ abstract class PrintTaskSourceRequestedArgs ()
   
   /** Gets the DateTime object that indicates the deadline for a print task source request. */
   /* CompleteClass */
-  var deadline: Date = js.native
+  var deadline: js.Date = js.native
   
   /**
     * Gets a PrintTaskSourceRequestedDeferral object that provides access to a Complete method. This method indicates then the deferral is over.

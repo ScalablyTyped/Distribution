@@ -18,7 +18,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("TL.Timeline")
     @js.native
-    class Timeline protected ()
+    open class Timeline protected ()
       extends StObject
          with ITimeline {
       def this(containerId: String, data: String) = this()

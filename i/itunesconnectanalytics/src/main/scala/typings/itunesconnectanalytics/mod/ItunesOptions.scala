@@ -12,7 +12,7 @@ trait ItunesOptions extends StObject {
   
   var concurrentRequests: js.UndefOr[Double] = js.undefined
   
-  def errorCallback(error: js.Any): Unit
+  def errorCallback(error: Any): Unit
   
   var loginURL: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait ItunesOptions extends StObject {
 }
 object ItunesOptions {
   
-  inline def apply(errorCallback: js.Any => Unit, successCallback: String => Unit): ItunesOptions = {
+  inline def apply(errorCallback: Any => Unit, successCallback: String => Unit): ItunesOptions = {
     val __obj = js.Dynamic.literal(errorCallback = js.Any.fromFunction1(errorCallback), successCallback = js.Any.fromFunction1(successCallback))
     __obj.asInstanceOf[ItunesOptions]
   }
@@ -41,7 +41,7 @@ object ItunesOptions {
     
     inline def setConcurrentRequestsUndefined: Self = StObject.set(x, "concurrentRequests", js.undefined)
     
-    inline def setErrorCallback(value: js.Any => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
+    inline def setErrorCallback(value: Any => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
     
     inline def setLoginURL(value: String): Self = StObject.set(x, "loginURL", value.asInstanceOf[js.Any])
     

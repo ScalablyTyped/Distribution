@@ -1,6 +1,7 @@
 package typings.opentelemetryCore
 
-import typings.opentelemetryCore.anon.RequiredENVIRONMENT
+import typings.opentelemetryCore.utilsEnvironmentMod.ENVIRONMENT
+import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +12,5 @@ object nodeEnvironmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getEnv(): RequiredENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[RequiredENVIRONMENT]
+  inline def getEnv(): Required[ENVIRONMENT] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[Required[ENVIRONMENT]]
 }

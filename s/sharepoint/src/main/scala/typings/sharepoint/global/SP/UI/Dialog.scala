@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a dialog. Do not use this class directly from your code. */
 @JSGlobal("SP.UI.Dialog")
 @js.native
-class Dialog ()
+open class Dialog ()
   extends StObject
      with typings.sharepoint.SP.UI.Dialog {
   
@@ -17,13 +17,13 @@ class Dialog ()
   override def autoSize(): Unit = js.native
   
   /* CompleteClass */
-  override def autoSizeSuppressScrollbar(resizePageCallBack: js.Any): Unit = js.native
+  override def autoSizeSuppressScrollbar(resizePageCallBack: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_allowMaximize(): Boolean = js.native
   
   /* CompleteClass */
-  override def get_args(): js.Any = js.native
+  override def get_args(): Any = js.native
   
   /* CompleteClass */
   override def get_closed(): Boolean = js.native
@@ -47,7 +47,7 @@ class Dialog ()
   override def get_lastTabStop(): HTMLElement = js.native
   
   /* CompleteClass */
-  override def get_returnValue(): js.Any = js.native
+  override def get_returnValue(): Any = js.native
   
   /* CompleteClass */
   override def get_showClose(): Boolean = js.native
@@ -59,5 +59,5 @@ class Dialog ()
   override def get_url(): String = js.native
   
   /* CompleteClass */
-  override def set_returnValue(value: js.Any): Unit = js.native
+  override def set_returnValue(value: Any): Unit = js.native
 }

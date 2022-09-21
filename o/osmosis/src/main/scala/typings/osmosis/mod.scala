@@ -19,9 +19,9 @@ object mod extends Shortcut {
       * Set configuration options for the **preceeding** command on down the chain.
       */
     def config(option: String): Osmosis = js.native
-    def config(option: String, value: js.Any): Osmosis = js.native
-    def config(option: StringDictionary[js.Any]): Osmosis = js.native
-    def config(option: StringDictionary[js.Any], value: js.Any): Osmosis = js.native
+    def config(option: String, value: Any): Osmosis = js.native
+    def config(option: StringDictionary[Any]): Osmosis = js.native
+    def config(option: StringDictionary[Any], value: Any): Osmosis = js.native
     
     /**
       * Set a cookie. Short for `.config({ cookies: ... })`. Note: Setting a cookie to `null` will delete the cookie.
@@ -33,24 +33,24 @@ object mod extends Shortcut {
       * passing string to your function
       * result data, osmosis finished
       */
-    def data(callback: js.Function1[/* param */ js.Any, js.Any]): Osmosis = js.native
+    def data(callback: js.Function1[/* param */ Any, Any]): Osmosis = js.native
     
     /**
       * passing string to your function
       * debug data
       */
-    def debug(callback: js.Function1[/* param */ String, js.Any]): Osmosis = js.native
+    def debug(callback: js.Function1[/* param */ String, Any]): Osmosis = js.native
     
     /**
       * Call a callback when the Osmosis instance has completely finished.
       */
-    def done(callback: js.Function0[js.Any]): Osmosis = js.native
+    def done(callback: js.Function0[Any]): Osmosis = js.native
     
     /**
       * passing string to your function
       * error data
       */
-    def error(callback: js.Function1[/* param */ String, js.Any]): Osmosis = js.native
+    def error(callback: js.Function1[/* param */ String, Any]): Osmosis = js.native
     
     /**
       * find DOM by selector
@@ -82,7 +82,7 @@ object mod extends Shortcut {
       * passing string to your function
       * log data
       */
-    def log(callback: js.Function1[/* param */ String, js.Any]): Osmosis = js.native
+    def log(callback: js.Function1[/* param */ String, Any]): Osmosis = js.native
     
     /**
       * paginate followed url

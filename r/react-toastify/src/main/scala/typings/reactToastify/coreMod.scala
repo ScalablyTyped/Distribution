@@ -1,16 +1,14 @@
 package typings.reactToastify
 
-import typings.react.mod.ReactText
-import typings.reactToastify.anon.BOTTOMCENTER
-import typings.reactToastify.anon.DARK
+import typings.reactToastify.coreToastMod.ToastPromiseParams
 import typings.reactToastify.eventManagerMod.EventManager_
 import typings.reactToastify.eventManagerMod.OnChangeCallback
-import typings.reactToastify.reactToastifyBooleans.`false`
 import typings.reactToastify.typesMod.ClearWaitingQueueParams
 import typings.reactToastify.typesMod.Id
-import typings.reactToastify.typesMod.ToastContainerProps
 import typings.reactToastify.typesMod.ToastContent
 import typings.reactToastify.typesMod.ToastOptions
+import typings.reactToastify.typesMod.ToastPosition
+import typings.reactToastify.typesMod.TypeOptions
 import typings.reactToastify.typesMod.UpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,80 +22,229 @@ object coreMod {
   
   object toast {
     
-    inline def apply(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
-    inline def apply(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
+    inline def apply(content: ToastContent[Any]): Id = ^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any]).asInstanceOf[Id]
+    inline def apply(content: ToastContent[Any], options: ToastOptions[js.Object]): Id = (^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Id]
     
     @JSImport("react-toastify/dist/core", "toast")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("react-toastify/dist/core", "toast.POSITION")
+    object POSITION {
+      
+      @JSImport("react-toastify/dist/core", "toast.POSITION")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-toastify/dist/core", "toast.POSITION.BOTTOM_CENTER")
+      @js.native
+      def BOTTOM_CENTER: ToastPosition = js.native
+      inline def BOTTOM_CENTER_=(x: ToastPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM_CENTER")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-toastify/dist/core", "toast.POSITION.BOTTOM_LEFT")
+      @js.native
+      def BOTTOM_LEFT: ToastPosition = js.native
+      inline def BOTTOM_LEFT_=(x: ToastPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM_LEFT")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-toastify/dist/core", "toast.POSITION.BOTTOM_RIGHT")
+      @js.native
+      def BOTTOM_RIGHT: ToastPosition = js.native
+      inline def BOTTOM_RIGHT_=(x: ToastPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM_RIGHT")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-toastify/dist/core", "toast.POSITION.TOP_CENTER")
+      @js.native
+      def TOP_CENTER: ToastPosition = js.native
+      inline def TOP_CENTER_=(x: ToastPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_CENTER")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-toastify/dist/core", "toast.POSITION.TOP_LEFT")
+      @js.native
+      def TOP_LEFT: ToastPosition = js.native
+      inline def TOP_LEFT_=(x: ToastPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_LEFT")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-toastify/dist/core", "toast.POSITION.TOP_RIGHT")
+      @js.native
+      def TOP_RIGHT: ToastPosition = js.native
+      inline def TOP_RIGHT_=(x: ToastPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_RIGHT")(x.asInstanceOf[js.Any])
+    }
+    
+    object TYPE {
+      
+      @JSImport("react-toastify/dist/core", "toast.TYPE")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-toastify/dist/core", "toast.TYPE.DEFAULT")
+      @js.native
+      def DEFAULT: TypeOptions = js.native
+      inline def DEFAULT_=(x: TypeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-toastify/dist/core", "toast.TYPE.ERROR")
+      @js.native
+      def ERROR: TypeOptions = js.native
+      inline def ERROR_=(x: TypeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-toastify/dist/core", "toast.TYPE.INFO")
+      @js.native
+      def INFO: TypeOptions = js.native
+      inline def INFO_=(x: TypeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-toastify/dist/core", "toast.TYPE.SUCCESS")
+      @js.native
+      def SUCCESS: TypeOptions = js.native
+      inline def SUCCESS_=(x: TypeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-toastify/dist/core", "toast.TYPE.WARNING")
+      @js.native
+      def WARNING: TypeOptions = js.native
+      inline def WARNING_=(x: TypeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
+    }
+    
+    @JSImport("react-toastify/dist/core", "toast.clearWaitingQueue")
     @js.native
-    def POSITION: BOTTOMCENTER = js.native
-    inline def POSITION_=(x: BOTTOMCENTER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION")(x.asInstanceOf[js.Any])
+    def clearWaitingQueue: js.Function1[/* params */ js.UndefOr[ClearWaitingQueueParams], Unit] = js.native
+    inline def clearWaitingQueue_=(x: js.Function1[/* params */ js.UndefOr[ClearWaitingQueueParams], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearWaitingQueue")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-toastify/dist/core", "toast.TYPE")
+    @JSImport("react-toastify/dist/core", "toast.dark")
     @js.native
-    def TYPE: DARK = js.native
-    inline def TYPE_=(x: DARK): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
+    def dark: js.Function2[
+        /* content */ ToastContent[Any], 
+        /* options */ js.UndefOr[ToastOptions[js.Object]], 
+        Id
+      ] = js.native
+    inline def dark_=(
+      x: js.Function2[
+          /* content */ ToastContent[Any], 
+          /* options */ js.UndefOr[ToastOptions[js.Object]], 
+          Id
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dark")(x.asInstanceOf[js.Any])
     
-    /**
-      * Clear waiting queue when limit is used
-      */
-    inline def clearWaitingQueue(): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearWaitingQueue")().asInstanceOf[`false` | Unit]
-    inline def clearWaitingQueue(params: ClearWaitingQueueParams): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearWaitingQueue")(params.asInstanceOf[js.Any]).asInstanceOf[`false` | Unit]
+    @JSImport("react-toastify/dist/core", "toast.dismiss")
+    @js.native
+    def dismiss: js.Function1[/* id */ js.UndefOr[Id], Unit] = js.native
+    inline def dismiss_=(x: js.Function1[/* id */ js.UndefOr[Id], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dismiss")(x.asInstanceOf[js.Any])
     
-    /**
-      * Configure the ToastContainer when lazy mounted
-      */
-    inline def configure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Unit]
-    inline def configure(config: ToastContainerProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @JSImport("react-toastify/dist/core", "toast.done")
+    @js.native
+    def done: js.Function1[/* id */ Id, Unit] = js.native
+    inline def done_=(x: js.Function1[/* id */ Id, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("done")(x.asInstanceOf[js.Any])
     
-    inline def dark(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("dark")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
-    inline def dark(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("dark")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
+    @JSImport("react-toastify/dist/core", "toast.error")
+    @js.native
+    def error: js.Function2[
+        /* content */ ToastContent[Any], 
+        /* options */ js.UndefOr[ToastOptions[js.Object]], 
+        Id
+      ] = js.native
+    inline def error_=(
+      x: js.Function2[
+          /* content */ ToastContent[Any], 
+          /* options */ js.UndefOr[ToastOptions[js.Object]], 
+          Id
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
     
-    /**
-      * Remove toast programmaticaly
-      */
-    inline def dismiss(): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[`false` | Unit]
-    inline def dismiss(id: String): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(id.asInstanceOf[js.Any]).asInstanceOf[`false` | Unit]
-    inline def dismiss(id: Double): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(id.asInstanceOf[js.Any]).asInstanceOf[`false` | Unit]
+    @JSImport("react-toastify/dist/core", "toast.info")
+    @js.native
+    def info: js.Function2[
+        /* content */ ToastContent[Any], 
+        /* options */ js.UndefOr[ToastOptions[js.Object]], 
+        Id
+      ] = js.native
+    inline def info_=(
+      x: js.Function2[
+          /* content */ ToastContent[Any], 
+          /* options */ js.UndefOr[ToastOptions[js.Object]], 
+          Id
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
     
-    /**
-      * Used for controlled progress bar.
-      */
-    inline def done(id: Id): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("done")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @JSImport("react-toastify/dist/core", "toast.isActive")
+    @js.native
+    def isActive: js.Function1[/* id */ Id, Boolean] = js.native
+    inline def isActive_=(x: js.Function1[/* id */ Id, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isActive")(x.asInstanceOf[js.Any])
     
-    inline def error(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
-    inline def error(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
+    @JSImport("react-toastify/dist/core", "toast.loading")
+    @js.native
+    def loading: js.Function2[
+        /* content */ ToastContent[Any], 
+        /* options */ js.UndefOr[ToastOptions[js.Object]], 
+        Id
+      ] = js.native
+    inline def loading_=(
+      x: js.Function2[
+          /* content */ ToastContent[Any], 
+          /* options */ js.UndefOr[ToastOptions[js.Object]], 
+          Id
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
     
-    inline def info(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
-    inline def info(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
+    @JSImport("react-toastify/dist/core", "toast.onChange")
+    @js.native
+    def onChange: js.Function1[/* callback */ OnChangeCallback, js.Function0[Unit]] = js.native
+    inline def onChange_=(x: js.Function1[/* callback */ OnChangeCallback, js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
     
-    /**
-      * return true if one container is displaying the toast
-      */
-    inline def isActive(id: Id): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def promise[T](promise: js.Function0[js.Promise[T]], hasPendingErrorSuccess: ToastPromiseParams[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(promise.asInstanceOf[js.Any], hasPendingErrorSuccess.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    inline def promise[T](
+      promise: js.Function0[js.Promise[T]],
+      hasPendingErrorSuccess: ToastPromiseParams[T],
+      options: ToastOptions[js.Object]
+    ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(promise.asInstanceOf[js.Any], hasPendingErrorSuccess.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    /* was `typeof handlePromise` */
+    inline def promise[T](promise: js.Promise[T], hasPendingErrorSuccess: ToastPromiseParams[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(promise.asInstanceOf[js.Any], hasPendingErrorSuccess.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    inline def promise[T](
+      promise: js.Promise[T],
+      hasPendingErrorSuccess: ToastPromiseParams[T],
+      options: ToastOptions[js.Object]
+    ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(promise.asInstanceOf[js.Any], hasPendingErrorSuccess.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
     
-    /**
-      * Track changes. The callback get the number of toast displayed
-      *
-      */
-    inline def onChange(callback: OnChangeCallback): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+    @JSImport("react-toastify/dist/core", "toast.success")
+    @js.native
+    def success: js.Function2[
+        /* content */ ToastContent[Any], 
+        /* options */ js.UndefOr[ToastOptions[js.Object]], 
+        Id
+      ] = js.native
+    inline def success_=(
+      x: js.Function2[
+          /* content */ ToastContent[Any], 
+          /* options */ js.UndefOr[ToastOptions[js.Object]], 
+          Id
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
     
-    inline def success(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
-    inline def success(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
+    @JSImport("react-toastify/dist/core", "toast.update")
+    @js.native
+    def update: js.Function2[/* toastId */ Id, /* options */ js.UndefOr[UpdateOptions[Any]], Unit] = js.native
+    inline def update_=(x: js.Function2[/* toastId */ Id, /* options */ js.UndefOr[UpdateOptions[Any]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("update")(x.asInstanceOf[js.Any])
     
-    inline def update(toastId: Id): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(toastId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def update(toastId: Id, options: UpdateOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(toastId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @JSImport("react-toastify/dist/core", "toast.warn")
+    @js.native
+    def warn: js.Function2[
+        /* content */ ToastContent[Any], 
+        /* options */ js.UndefOr[ToastOptions[js.Object]], 
+        Id
+      ] = js.native
+    inline def warn_=(
+      x: js.Function2[
+          /* content */ ToastContent[Any], 
+          /* options */ js.UndefOr[ToastOptions[js.Object]], 
+          Id
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
     
-    /**
-      * Maybe I should remove warning in favor of warn, I don't know
-      */
-    inline def warn(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
-    inline def warn(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
-    
-    inline def warning(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
-    inline def warning(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
+    @JSImport("react-toastify/dist/core", "toast.warning")
+    @js.native
+    def warning: js.Function2[
+        /* content */ ToastContent[Any], 
+        /* options */ js.UndefOr[ToastOptions[js.Object]], 
+        Id
+      ] = js.native
+    inline def warning_=(
+      x: js.Function2[
+          /* content */ ToastContent[Any], 
+          /* options */ js.UndefOr[ToastOptions[js.Object]], 
+          Id
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
 }

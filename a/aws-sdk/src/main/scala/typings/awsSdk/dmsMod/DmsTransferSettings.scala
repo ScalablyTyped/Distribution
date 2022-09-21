@@ -12,7 +12,7 @@ trait DmsTransferSettings extends StObject {
   var BucketName: js.UndefOr[String] = js.undefined
   
   /**
-    *  The IAM role that has permission to access the Amazon S3 bucket. 
+    * The Amazon Resource Name (ARN) used by the service access IAM role. The role must allow the iam:PassRole action.
     */
   var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
 }

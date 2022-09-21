@@ -12,7 +12,7 @@ trait DeleteServiceRequest extends StObject {
   var cluster: js.UndefOr[String] = js.undefined
   
   /**
-    * If true, allows you to delete a service even if it has not been scaled down to zero tasks. It is only necessary to use this if the service is using the REPLICA scheduling strategy.
+    * If true, allows you to delete a service even if it wasn't scaled down to zero tasks. It's only necessary to use this if the service uses the REPLICA scheduling strategy.
     */
   var force: js.UndefOr[BoxedBoolean] = js.undefined
   

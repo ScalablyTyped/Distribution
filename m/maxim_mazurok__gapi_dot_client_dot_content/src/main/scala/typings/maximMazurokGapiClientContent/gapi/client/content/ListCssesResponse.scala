@@ -25,7 +25,7 @@ object ListCssesResponse {
     
     inline def setCssesUndefined: Self = StObject.set(x, "csses", js.undefined)
     
-    inline def setCssesVarargs(value: Css*): Self = StObject.set(x, "csses", js.Array(value :_*))
+    inline def setCssesVarargs(value: Css*): Self = StObject.set(x, "csses", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

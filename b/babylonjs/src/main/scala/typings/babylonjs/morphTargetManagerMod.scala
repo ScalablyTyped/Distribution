@@ -1,9 +1,12 @@
 package typings.babylonjs
 
+import typings.babylonjs.abstractSceneMod.AbstractScene
+import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.morphTargetMod.MorphTarget
+import typings.babylonjs.rawTexture2DArrayMod.RawTexture2DArray
+import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,40 +19,80 @@ object morphTargetManagerMod {
     * Creates a new MorphTargetManager
     * @param scene defines the current scene
     */
-  class MorphTargetManager () extends StObject {
+  open class MorphTargetManager ()
+    extends StObject
+       with IDisposable {
     def this(scene: Nullable[Scene]) = this()
     
-    /* private */ var _activeTargets: js.Any = js.native
+    /* private */ var _activeTargets: Any = js.native
     
-    /* private */ var _influences: js.Any = js.native
+    /**
+      * @param effect
+      * @hidden
+      */
+    def _bind(effect: Effect): Unit = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _blockCounter: Any = js.native
     
-    /* private */ var _supportsNormals: js.Any = js.native
+    /* private */ var _canUseTextureForTargets: Any = js.native
     
-    /* private */ var _supportsTangents: js.Any = js.native
+    /* private */ var _influences: Any = js.native
     
-    /* private */ var _supportsUVs: js.Any = js.native
+    /* private */ var _morphTargetTextureIndices: Any = js.native
     
-    /* private */ var _syncActiveTargets: js.Any = js.native
+    /** @hidden */
+    var _parentContainer: Nullable[AbstractScene] = js.native
     
-    /* private */ var _targetDataLayoutChangedObservers: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _targetInfluenceChangedObservers: js.Any = js.native
+    /* private */ var _supportsNormals: Any = js.native
     
-    /* private */ var _targets: js.Any = js.native
+    /* private */ var _supportsTangents: Any = js.native
     
-    /* private */ var _tempInfluences: js.Any = js.native
+    /* private */ var _supportsUVs: Any = js.native
     
-    /* private */ var _uniqueId: js.Any = js.native
+    /* private */ var _syncActiveTargets: Any = js.native
     
-    /* private */ var _vertexCount: js.Any = js.native
+    /* private */ var _targetDataLayoutChangedObservers: Any = js.native
+    
+    /* private */ var _targetInfluenceChangedObservers: Any = js.native
+    
+    /** @hidden */
+    var _targetStoreTexture: Nullable[RawTexture2DArray] = js.native
+    
+    /* private */ var _targets: Any = js.native
+    
+    /* private */ var _tempInfluences: Any = js.native
+    
+    /* private */ var _textureHeight: Any = js.native
+    
+    /* private */ var _textureVertexStride: Any = js.native
+    
+    /* private */ var _textureWidth: Any = js.native
+    
+    /* private */ var _uniqueId: Any = js.native
+    
+    /* private */ var _useTextureToStoreTargets: Any = js.native
+    
+    /* private */ var _vertexCount: Any = js.native
     
     /**
       * Add a new target to this manager
       * @param target defines the target to add
       */
     def addTarget(target: MorphTarget): Unit = js.native
+    
+    def areUpdatesFrozen: Boolean = js.native
+    /**
+      * Sets a boolean indicating that adding new target or updating an existing target will not update the underlying data buffers
+      */
+    def areUpdatesFrozen_=(block: Boolean): Unit = js.native
+    
+    /**
+      * Releases all held resources
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Gets or sets a boolean indicating if normals must be morphed
@@ -83,7 +126,12 @@ object morphTargetManagerMod {
     /**
       * Gets the list of influences (one per target)
       */
-    def influences: Float32Array = js.native
+    def influences: js.typedarray.Float32Array = js.native
+    
+    /**
+      * Gets a boolean indicating that the targets are stored into a texture (instead of as attributes)
+      */
+    def isUsingTextureForTargets: Boolean = js.native
     
     /**
       * Gets the number of influencers (ie. the number of targets with influences > 0)
@@ -96,6 +144,11 @@ object morphTargetManagerMod {
     def numTargets: Double = js.native
     
     /**
+      * Gets or sets a boolean indicating if influencers must be optimized (eg. recompiling the shader if less influencers are used)
+      */
+    var optimizeInfluencers: Boolean = js.native
+    
+    /**
       * Removes a target from the manager
       * @param target defines the target to remove
       */
@@ -105,7 +158,7 @@ object morphTargetManagerMod {
       * Serializes the current manager into a Serialization object
       * @returns the serialized object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Gets a boolean indicating if this manager supports morphing of normals
@@ -123,7 +176,7 @@ object morphTargetManagerMod {
     def supportsUVs: Boolean = js.native
     
     /**
-      * Syncrhonize the targets with all the meshes using this morph target manager
+      * Synchronize the targets with all the meshes using this morph target manager
       */
     def synchronize(): Unit = js.native
     
@@ -131,6 +184,13 @@ object morphTargetManagerMod {
       * Gets the unique ID of this manager
       */
     def uniqueId: Double = js.native
+    
+    /**
+      * Gets or sets a boolean indicating that targets should be stored as a texture instead of using vertex attributes (default is true).
+      * Please note that this option is not available if the hardware does not support it
+      */
+    def useTextureToStoreTargets: Boolean = js.native
+    def useTextureToStoreTargets_=(value: Boolean): Unit = js.native
     
     /**
       * Gets the number of vertices handled by this manager
@@ -144,12 +204,18 @@ object morphTargetManagerMod {
     @js.native
     val ^ : js.Any = js.native
     
+    /** Enable storing morph target data into textures when set to true (true by default) */
+    @JSImport("babylonjs/Morph/morphTargetManager", "MorphTargetManager.EnableTextureStorage")
+    @js.native
+    def EnableTextureStorage: Boolean = js.native
+    inline def EnableTextureStorage_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EnableTextureStorage")(x.asInstanceOf[js.Any])
+    
     /**
       * Creates a new MorphTargetManager from serialized data
       * @param serializationObject defines the serialized data
       * @param scene defines the hosting scene
       * @returns the new MorphTargetManager
       */
-    inline def Parse(serializationObject: js.Any, scene: Scene): MorphTargetManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[MorphTargetManager]
+    inline def Parse(serializationObject: Any, scene: Scene): MorphTargetManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[MorphTargetManager]
   }
 }

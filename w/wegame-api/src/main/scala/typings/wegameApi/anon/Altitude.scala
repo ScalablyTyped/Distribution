@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Altitude extends StObject {
   
   /**
-    * 传入 true 会返回高度信息，由于获取高度需要较高精确度，会减慢接口返回速度    >= 1.6.0
+    * 传入 true 会返回高度信息，由于获取高度需要较高精确度，会减慢接口返回速度 >= 1.6.0
     */
   var altitude: js.UndefOr[Boolean] = js.undefined
   

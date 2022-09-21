@@ -14,12 +14,12 @@ trait FormNameRuleCondition extends StObject {
   
   var Enabled: Boolean
   
-  var FormName: js.Any
+  var FormName: Any
   
   /* private */ @JSName("Outlook.FormNameRuleCondition_typekey")
   var OutlookDotFormNameRuleCondition_typekey: FormNameRuleCondition
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -30,9 +30,9 @@ object FormNameRuleCondition {
     Class: OlObjectClass,
     ConditionType: OlRuleConditionType,
     Enabled: Boolean,
-    FormName: js.Any,
+    FormName: Any,
     OutlookDotFormNameRuleCondition_typekey: FormNameRuleCondition,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): FormNameRuleCondition = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], ConditionType = ConditionType.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], FormName = FormName.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -50,11 +50,11 @@ object FormNameRuleCondition {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    inline def setFormName(value: js.Any): Self = StObject.set(x, "FormName", value.asInstanceOf[js.Any])
+    inline def setFormName(value: Any): Self = StObject.set(x, "FormName", value.asInstanceOf[js.Any])
     
     inline def setOutlookDotFormNameRuleCondition_typekey(value: FormNameRuleCondition): Self = StObject.set(x, "Outlook.FormNameRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

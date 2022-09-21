@@ -1,40 +1,40 @@
 organization := "org.scalablytyped"
 name := "d3"
-version := "6.2-dt-20201118Z-67d29f"
-scalaVersion := "3.0.1"
+version := "7.4-dt-20220913Z-cf98c8"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "d3-array" % "2.8-dt-20201116Z-4ed463",
-  "org.scalablytyped" %%% "d3-axis" % "2.0-dt-20201104Z-c95b93",
-  "org.scalablytyped" %%% "d3-brush" % "2.1-dt-20200930Z-c36f7e",
-  "org.scalablytyped" %%% "d3-chord" % "2.0-dt-20200929Z-e2b11c",
-  "org.scalablytyped" %%% "d3-color" % "2.0-dt-20201117Z-92e398",
-  "org.scalablytyped" %%% "d3-contour" % "2.0-dt-20200930Z-5f9d5a",
-  "org.scalablytyped" %%% "d3-delaunay" % "5.3-dt-20200930Z-05f61f",
-  "org.scalablytyped" %%% "d3-dispatch" % "2.0-dt-20200930Z-a038ed",
-  "org.scalablytyped" %%% "d3-drag" % "2.0-dt-20201028Z-dc4179",
-  "org.scalablytyped" %%% "d3-dsv" % "2.0-dt-20201001Z-15babb",
-  "org.scalablytyped" %%% "d3-ease" % "2.0-dt-20200930Z-a791ac",
-  "org.scalablytyped" %%% "d3-fetch" % "2.0-dt-20201001Z-3cd993",
-  "org.scalablytyped" %%% "d3-force" % "2.1-dt-20201002Z-d41378",
-  "org.scalablytyped" %%% "d3-format" % "2.0-dt-20200930Z-5bb964",
-  "org.scalablytyped" %%% "d3-geo" % "2.0-dt-20201002Z-886c89",
-  "org.scalablytyped" %%% "d3-hierarchy" % "2.0-dt-20200929Z-5d6b04",
-  "org.scalablytyped" %%% "d3-interpolate" % "2.0-dt-20201001Z-aa67e8",
-  "org.scalablytyped" %%% "d3-path" % "2.0-dt-20201002Z-6a8acd",
-  "org.scalablytyped" %%% "d3-quadtree" % "2.0-dt-20200930Z-8fe629",
-  "org.scalablytyped" %%% "d3-random" % "2.2-dt-20201002Z-4eddb2",
-  "org.scalablytyped" %%% "d3-scale" % "3.2-dt-20201104Z-9eb583",
-  "org.scalablytyped" %%% "d3-selection" % "2.0-dt-20201002Z-a8cb53",
-  "org.scalablytyped" %%% "d3-shape" % "2.0-dt-20201028Z-c8f145",
-  "org.scalablytyped" %%% "d3-time" % "2.0-dt-20201002Z-54d48e",
-  "org.scalablytyped" %%% "d3-time-format" % "3.0-dt-20201002Z-2d6d9a",
-  "org.scalablytyped" %%% "d3-timer" % "2.0-dt-20201002Z-12514b",
-  "org.scalablytyped" %%% "d3-transition" % "2.0-dt-20201002Z-efca7d",
-  "org.scalablytyped" %%% "d3-zoom" % "2.0-dt-20201104Z-c4b70c",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20201002Z-2461bc",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "d3-array" % "3.0-dt-20220624Z-1a40ef",
+  "org.scalablytyped" %%% "d3-axis" % "3.0-dt-20220624Z-1fa9f7",
+  "org.scalablytyped" %%% "d3-brush" % "3.0-dt-20211202Z-aacd4b",
+  "org.scalablytyped" %%% "d3-chord" % "3.0-dt-20211202Z-8da4ae",
+  "org.scalablytyped" %%% "d3-color" % "3.1-dt-20220522Z-72e26c",
+  "org.scalablytyped" %%% "d3-contour" % "3.0-dt-20211202Z-cd4b71",
+  "org.scalablytyped" %%% "d3-delaunay" % "6.0-dt-20220524Z-67363b",
+  "org.scalablytyped" %%% "d3-dispatch" % "3.0-dt-20220624Z-0d26e7",
+  "org.scalablytyped" %%% "d3-drag" % "3.0-dt-20211202Z-2a65d5",
+  "org.scalablytyped" %%% "d3-dsv" % "3.0-dt-20220819Z-e4d87a",
+  "org.scalablytyped" %%% "d3-ease" % "3.0-dt-20211223Z-b88c1a",
+  "org.scalablytyped" %%% "d3-fetch" % "3.0-dt-20220624Z-e082c6",
+  "org.scalablytyped" %%% "d3-force" % "3.0-dt-20211202Z-ca37d1",
+  "org.scalablytyped" %%% "d3-format" % "3.0-dt-20211202Z-8b6479",
+  "org.scalablytyped" %%% "d3-geo" % "3.0-dt-20211202Z-a2b86e",
+  "org.scalablytyped" %%% "d3-hierarchy" % "3.1-dt-20220624Z-d81f64",
+  "org.scalablytyped" %%% "d3-interpolate" % "3.0-dt-20220624Z-289c33",
+  "org.scalablytyped" %%% "d3-path" % "3.0-dt-20220310Z-97e717",
+  "org.scalablytyped" %%% "d3-quadtree" % "3.0-dt-20220624Z-dd9af3",
+  "org.scalablytyped" %%% "d3-random" % "3.0-dt-20211202Z-36dbc9",
+  "org.scalablytyped" %%% "d3-scale" % "4.0-dt-20220624Z-604817",
+  "org.scalablytyped" %%% "d3-selection" % "3.0-dt-20220720Z-acb353",
+  "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20220624Z-3bff61",
+  "org.scalablytyped" %%% "d3-time" % "3.0-dt-20211202Z-b48dde",
+  "org.scalablytyped" %%% "d3-time-format" % "4.0-dt-20211202Z-33fc79",
+  "org.scalablytyped" %%% "d3-timer" % "3.0-dt-20211202Z-0f32a8",
+  "org.scalablytyped" %%% "d3-transition" % "3.0-dt-20220817Z-4e2220",
+  "org.scalablytyped" %%% "d3-zoom" % "3.0-dt-20220624Z-ae5189",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20220713Z-5d61ed",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

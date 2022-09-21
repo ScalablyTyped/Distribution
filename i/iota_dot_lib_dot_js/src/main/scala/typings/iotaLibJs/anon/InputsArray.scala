@@ -20,6 +20,6 @@ object InputsArray {
     
     inline def setInputs(value: js.Array[TransactionObject]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    inline def setInputsVarargs(value: TransactionObject*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: TransactionObject*): Self = StObject.set(x, "inputs", js.Array(value*))
   }
 }

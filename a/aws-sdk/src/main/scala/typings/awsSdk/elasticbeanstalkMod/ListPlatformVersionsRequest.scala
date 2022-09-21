@@ -34,7 +34,7 @@ object ListPlatformVersionsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: PlatformFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: PlatformFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxRecords(value: PlatformMaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     

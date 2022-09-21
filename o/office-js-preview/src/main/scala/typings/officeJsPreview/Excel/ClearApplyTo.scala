@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ClearApplyTo extends StObject
 /**
-  * [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks & HyperlinksAndFormats.]
+  * @remarks
+  * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ClearApplyTo")
 @js.native
 object ClearApplyTo extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
   sealed trait all
     extends StObject
@@ -20,7 +25,8 @@ object ClearApplyTo extends StObject {
   
   /**
     * Clears the contents of the range.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
     */
   @js.native
   sealed trait contents
@@ -29,7 +35,8 @@ object ClearApplyTo extends StObject {
   
   /**
     * Clears all formatting for the range.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
     */
   @js.native
   sealed trait formats
@@ -38,7 +45,8 @@ object ClearApplyTo extends StObject {
   
   /**
     * Clears all hyperlinks, but leaves all content and formatting intact.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait hyperlinks
@@ -47,7 +55,8 @@ object ClearApplyTo extends StObject {
   
   /**
     * Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait removeHyperlinks

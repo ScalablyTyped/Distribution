@@ -9,11 +9,11 @@ trait SwitchBooleanAction
   extends StObject
      with Action {
   
-  /* private */ var _effectiveTarget: js.Any = js.native
+  /* private */ var _effectiveTarget: Any = js.native
   
-  /* private */ var _property: js.Any = js.native
+  /* private */ var _property: Any = js.native
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _target: Any = js.native
   
   /**
     * The path to the boolean property in the target object

@@ -4,9 +4,7 @@ import typings.nextServer.anon.AmpBindInitData
 import typings.nextServer.anon.Amphtml
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.querystringMod.ParsedUrlQuery
 import typings.node.urlMod.UrlWithParsedQuery
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,44 +13,44 @@ object nextServerMod {
   
   @JSImport("next-server/dist/server/next-server", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Server {
     def this(hasDirStaticMarkupQuietConf: ServerConstructor) = this()
   }
   
-  type NextConfig = js.Any
+  type NextConfig = Any
   
   @js.native
   trait Server extends StObject {
     
-    /* private */ val _isLikeServerless: js.Any = js.native
+    /* private */ val _isLikeServerless: Any = js.native
     
     var buildId: String = js.native
     
-    /* private */ var close: js.Any = js.native
+    /* private */ var close: Any = js.native
     
-    /* private */ var compression: js.Any = js.native
+    /* private */ var compression: Any = js.native
     
-    /* private */ var currentPhase: js.Any = js.native
+    /* private */ var currentPhase: Any = js.native
     
     var dir: String = js.native
     
     var distDir: String = js.native
     
-    /* private */ var dynamicRoutes: js.Any = js.native
+    /* private */ var dynamicRoutes: Any = js.native
     
-    /* private */ var findPageComponents: js.Any = js.native
+    /* private */ var findPageComponents: Any = js.native
     
-    /* private */ var generatePublicRoutes: js.Any = js.native
+    /* private */ var generatePublicRoutes: Any = js.native
     
-    /* private */ var generateRoutes: js.Any = js.native
+    /* private */ var generateRoutes: Any = js.native
     
-    /* private */ var getDynamicRoutes: js.Any = js.native
+    /* private */ var getDynamicRoutes: Any = js.native
     
     def getRequestHandler(): js.Function3[
         /* req */ IncomingMessage, 
-        /* res */ ServerResponse, 
+        /* res */ ServerResponse[IncomingMessage], 
         /* parsedUrl */ js.UndefOr[UrlWithParsedQuery], 
         js.Promise[Unit]
       ] = js.native
@@ -63,15 +61,15 @@ object nextServerMod {
       * @param res http response
       * @param pathname path of request
       */
-    /* private */ var handleApiRequest: js.Any = js.native
+    /* private */ var handleApiRequest: Any = js.native
     
-    /* private */ var handleCompression: js.Any = js.native
+    /* private */ var handleCompression: Any = js.native
     
-    /* private */ var handleRequest: js.Any = js.native
+    /* private */ var handleRequest: Any = js.native
     
-    /* private */ var isServeableUrl: js.Any = js.native
+    /* private */ var isServeableUrl: Any = js.native
     
-    /* private */ var logError: js.Any = js.native
+    /* private */ var logError: Any = js.native
     
     var nextConfig: NextConfig = js.native
     
@@ -83,78 +81,117 @@ object nextServerMod {
     
     var quiet: Boolean = js.native
     
-    /* private */ var readBuildId: js.Any = js.native
+    /* private */ var readBuildId: Any = js.native
     
-    def render(req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[Unit] = js.native
+    def render(req: IncomingMessage, res: ServerResponse[IncomingMessage], pathname: String): js.Promise[Unit] = js.native
     def render(
       req: IncomingMessage,
-      res: ServerResponse,
+      res: ServerResponse[IncomingMessage],
+      pathname: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+    ): js.Promise[Unit] = js.native
+    def render(
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      pathname: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
+      parsedUrl: UrlWithParsedQuery
+    ): js.Promise[Unit] = js.native
+    def render(
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
       pathname: String,
       query: Unit,
       parsedUrl: UrlWithParsedQuery
     ): js.Promise[Unit] = js.native
-    def render(req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[Unit] = js.native
-    def render(
+    
+    def render404(req: IncomingMessage, res: ServerResponse[IncomingMessage]): js.Promise[Unit] = js.native
+    def render404(req: IncomingMessage, res: ServerResponse[IncomingMessage], parsedUrl: UrlWithParsedQuery): js.Promise[Unit] = js.native
+    
+    def renderError(err: js.Error, req: IncomingMessage, res: ServerResponse[IncomingMessage], pathname: String): js.Promise[Unit] = js.native
+    def renderError(
+      err: js.Error,
       req: IncomingMessage,
-      res: ServerResponse,
+      res: ServerResponse[IncomingMessage],
       pathname: String,
-      query: ParsedUrlQuery,
-      parsedUrl: UrlWithParsedQuery
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+    ): js.Promise[Unit] = js.native
+    def renderError(err: Null, req: IncomingMessage, res: ServerResponse[IncomingMessage], pathname: String): js.Promise[Unit] = js.native
+    def renderError(
+      err: Null,
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      pathname: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
     ): js.Promise[Unit] = js.native
     
-    def render404(req: IncomingMessage, res: ServerResponse): js.Promise[Unit] = js.native
-    def render404(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.Promise[Unit] = js.native
-    
-    def renderError(err: Null, req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[Unit] = js.native
-    def renderError(err: Null, req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[Unit] = js.native
-    def renderError(err: Error, req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[Unit] = js.native
-    def renderError(err: Error, req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[Unit] = js.native
-    
-    def renderErrorToHTML(err: Null, req: IncomingMessage, res: ServerResponse, _pathname: String): js.Promise[js.Any] = js.native
-    def renderErrorToHTML(err: Null, req: IncomingMessage, res: ServerResponse, _pathname: String, query: ParsedUrlQuery): js.Promise[js.Any] = js.native
-    def renderErrorToHTML(err: Error, req: IncomingMessage, res: ServerResponse, _pathname: String): js.Promise[js.Any] = js.native
-    def renderErrorToHTML(err: Error, req: IncomingMessage, res: ServerResponse, _pathname: String, query: ParsedUrlQuery): js.Promise[js.Any] = js.native
+    def renderErrorToHTML(err: js.Error, req: IncomingMessage, res: ServerResponse[IncomingMessage], _pathname: String): js.Promise[Any] = js.native
+    def renderErrorToHTML(
+      err: js.Error,
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      _pathname: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+    ): js.Promise[Any] = js.native
+    def renderErrorToHTML(err: Null, req: IncomingMessage, res: ServerResponse[IncomingMessage], _pathname: String): js.Promise[Any] = js.native
+    def renderErrorToHTML(
+      err: Null,
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      _pathname: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+    ): js.Promise[Any] = js.native
     
     var renderOpts: AmpBindInitData = js.native
     
-    def renderToHTML(req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[String | Null] = js.native
+    def renderToHTML(req: IncomingMessage, res: ServerResponse[IncomingMessage], pathname: String): js.Promise[String | Null] = js.native
     def renderToHTML(
       req: IncomingMessage,
-      res: ServerResponse,
+      res: ServerResponse[IncomingMessage],
+      pathname: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+    ): js.Promise[String | Null] = js.native
+    def renderToHTML(
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      pathname: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
+      hasAmphtmlDataOnlyHasAmp: Amphtml
+    ): js.Promise[String | Null] = js.native
+    def renderToHTML(
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
       pathname: String,
       query: Unit,
       hasAmphtmlDataOnlyHasAmp: Amphtml
     ): js.Promise[String | Null] = js.native
-    def renderToHTML(req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[String | Null] = js.native
-    def renderToHTML(
-      req: IncomingMessage,
-      res: ServerResponse,
-      pathname: String,
-      query: ParsedUrlQuery,
-      hasAmphtmlDataOnlyHasAmp: Amphtml
-    ): js.Promise[String | Null] = js.native
     
-    /* private */ var renderToHTMLWithComponents: js.Any = js.native
+    /* private */ var renderToHTMLWithComponents: Any = js.native
     
     /**
       * Resolves path to resolver function
       * @param pathname path of request
       */
-    /* private */ var resolveApiRequest: js.Any = js.native
+    /* private */ var resolveApiRequest: Any = js.native
     
     var router: typings.nextServer.serverRouterMod.default = js.native
     
-    /* private */ var run: js.Any = js.native
+    /* private */ var run: Any = js.native
     
-    /* private */ var sendHTML: js.Any = js.native
+    /* private */ var sendHTML: Any = js.native
     
-    def serveStatic(req: IncomingMessage, res: ServerResponse, path: String): js.Promise[Unit] = js.native
-    def serveStatic(req: IncomingMessage, res: ServerResponse, path: String, parsedUrl: UrlWithParsedQuery): js.Promise[Unit] = js.native
+    def serveStatic(req: IncomingMessage, res: ServerResponse[IncomingMessage], path: String): js.Promise[Unit] = js.native
+    def serveStatic(
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      path: String,
+      parsedUrl: UrlWithParsedQuery
+    ): js.Promise[Unit] = js.native
     
     def setAssetPrefix(): Unit = js.native
     def setAssetPrefix(prefix: String): Unit = js.native
     
-    /* private */ var setImmutableAssetCacheControl: js.Any = js.native
+    /* private */ var setImmutableAssetCacheControl: Any = js.native
   }
   
   trait ServerConstructor extends StObject {

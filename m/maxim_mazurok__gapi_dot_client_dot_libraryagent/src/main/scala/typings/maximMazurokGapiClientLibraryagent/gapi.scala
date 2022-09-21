@@ -105,7 +105,7 @@ object gapi {
           
           inline def setBooksUndefined: Self = StObject.set(x, "books", js.undefined)
           
-          inline def setBooksVarargs(value: GoogleExampleLibraryagentV1Book*): Self = StObject.set(x, "books", js.Array(value :_*))
+          inline def setBooksVarargs(value: GoogleExampleLibraryagentV1Book*): Self = StObject.set(x, "books", js.Array(value*))
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -141,7 +141,7 @@ object gapi {
           
           inline def setShelvesUndefined: Self = StObject.set(x, "shelves", js.undefined)
           
-          inline def setShelvesVarargs(value: GoogleExampleLibraryagentV1Shelf*): Self = StObject.set(x, "shelves", js.Array(value :_*))
+          inline def setShelvesVarargs(value: GoogleExampleLibraryagentV1Shelf*): Self = StObject.set(x, "shelves", js.Array(value*))
         }
       }
       

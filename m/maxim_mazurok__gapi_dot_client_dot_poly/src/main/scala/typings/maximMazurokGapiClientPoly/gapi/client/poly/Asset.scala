@@ -83,7 +83,7 @@ object Asset {
     
     inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
-    inline def setFormatsVarargs(value: Format*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: Format*): Self = StObject.set(x, "formats", js.Array(value*))
     
     inline def setIsCurated(value: Boolean): Self = StObject.set(x, "isCurated", value.asInstanceOf[js.Any])
     

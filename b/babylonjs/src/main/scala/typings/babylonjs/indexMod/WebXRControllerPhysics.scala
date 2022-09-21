@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebXRControllerPhysics")
 @js.native
-class WebXRControllerPhysics protected ()
+open class WebXRControllerPhysics protected ()
   extends typings.babylonjs.xRIndexMod.WebXRControllerPhysics {
   /**
     * Construct a new Controller Physics Feature

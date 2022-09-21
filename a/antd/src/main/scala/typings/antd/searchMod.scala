@@ -2,6 +2,7 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.inputInputMod.InputProps
+import typings.rcInput.interfaceMod.InputRef
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.KeyboardEvent
@@ -19,7 +20,7 @@ object searchMod extends Shortcut {
   
   @JSImport("antd/lib/input/Search", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[SearchProps & RefAttributes[typings.antd.inputInputMod.default]] = js.native
+  val default: ForwardRefExoticComponent[SearchProps & RefAttributes[InputRef]] = js.native
   
   trait SearchProps
     extends StObject
@@ -72,8 +73,8 @@ object searchMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[SearchProps & RefAttributes[typings.antd.inputInputMod.default]]
+  type _To = ForwardRefExoticComponent[SearchProps & RefAttributes[InputRef]]
   
   /* This means you don't have to write `default`, but can instead just say `searchMod.foo` */
-  override def _to: ForwardRefExoticComponent[SearchProps & RefAttributes[typings.antd.inputInputMod.default]] = default
+  override def _to: ForwardRefExoticComponent[SearchProps & RefAttributes[InputRef]] = default
 }

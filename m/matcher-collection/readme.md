@@ -10,10 +10,10 @@ Minimatch but for collections of minimatcher matchers.
 | ------------------ | :-------------: |
 | Full name          | matcher-collection |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 9 |
-| # downloads        | 18730425 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3840605.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/stefanpenner/matcher-collection#readme)

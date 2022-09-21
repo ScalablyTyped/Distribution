@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "GeoPoint")
 @js.native
-class GeoPoint protected ()
+open class GeoPoint protected ()
   extends StObject
      with Geo {
   /*
     Defines a point
     */
-  def this(p: js.Array[js.Any]) = this()
+  def this(p: js.Array[Any]) = this()
   
   /*
     The type of ejs object.  For internal use only.
@@ -25,7 +25,7 @@ class GeoPoint protected ()
     Example:
     [41.12, -71.34]
     */
-  def array(a: js.Array[js.Any]): GeoPoint = js.native
+  def array(a: js.Array[Any]): GeoPoint = js.native
   
   /*
     Sets the GeoPoint as a GeoHash.  The hash is a string of
@@ -54,5 +54,5 @@ class GeoPoint protected ()
     Retrieves the internal script object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

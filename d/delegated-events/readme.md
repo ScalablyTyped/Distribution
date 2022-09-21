@@ -10,10 +10,10 @@ A small, fast delegated event library.
 | ------------------ | :-------------: |
 | Full name          | delegated-events |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 130139 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17213.0 |
+| # stars            | 995.0 |
 
 ## Links
 - [Homepage](https://github.com/dgraham/delegated-events#readme)

@@ -1,13 +1,12 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.anon.Count
 import typings.antd.configProviderSizeContextMod.SizeType
+import typings.antd.inputInputMod.InputFocusOptions
+import typings.antd.statusUtilsMod.InputStatus
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.std.AddEventListenerOptions
-import typings.std.EventListenerOptions
-import typings.std.EventListenerOrEventListenerObject
-import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +17,23 @@ object textAreaMod extends Shortcut {
   @js.native
   val default: ForwardRefExoticComponent[TextAreaProps & RefAttributes[TextAreaRef]] = js.native
   
+  trait ShowCountProps extends StObject {
+    
+    def formatter(args: Count): String
+  }
+  object ShowCountProps {
+    
+    inline def apply(formatter: Count => String): ShowCountProps = {
+      val __obj = js.Dynamic.literal(formatter = js.Any.fromFunction1(formatter))
+      __obj.asInstanceOf[ShowCountProps]
+    }
+    
+    extension [Self <: ShowCountProps](x: Self) {
+      
+      inline def setFormatter(value: Count => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    }
+  }
+  
   trait TextAreaProps
     extends StObject
        with typings.rcTextarea.mod.TextAreaProps {
@@ -26,9 +42,11 @@ object textAreaMod extends Shortcut {
     
     var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var showCount: js.UndefOr[Boolean] = js.undefined
+    var showCount: js.UndefOr[Boolean | ShowCountProps] = js.undefined
     
     var size: js.UndefOr[SizeType] = js.undefined
+    
+    var status: js.UndefOr[InputStatus] = js.undefined
   }
   object TextAreaProps {
     
@@ -47,36 +65,29 @@ object textAreaMod extends Shortcut {
       
       inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      inline def setShowCount(value: Boolean): Self = StObject.set(x, "showCount", value.asInstanceOf[js.Any])
+      inline def setShowCount(value: Boolean | ShowCountProps): Self = StObject.set(x, "showCount", value.asInstanceOf[js.Any])
       
       inline def setShowCountUndefined: Self = StObject.set(x, "showCount", js.undefined)
       
       inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
   @js.native
-  trait TextAreaRef
-    extends StObject
-       with HTMLTextAreaElement {
+  trait TextAreaRef extends StObject {
     
-    /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
-    /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
-    /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    def blur(): Unit = js.native
     
-    /* InferMemberOverrides */
-    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
-    /* InferMemberOverrides */
-    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
-    /* InferMemberOverrides */
-    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+    def focus(): Unit = js.native
+    def focus(options: InputFocusOptions): Unit = js.native
     
-    var resizableTextArea: js.Any = js.native
+    var resizableTextArea: js.UndefOr[typings.rcTextarea.resizableTextAreaMod.default] = js.native
   }
   
   type _To = ForwardRefExoticComponent[TextAreaProps & RefAttributes[TextAreaRef]]

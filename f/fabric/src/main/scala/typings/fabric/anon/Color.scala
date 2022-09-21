@@ -8,11 +8,11 @@ trait Color extends StObject {
   
   var color: String
   
-  var offset: String
+  var offset: Double
 }
 object Color {
   
-  inline def apply(color: String, offset: String): Color = {
+  inline def apply(color: String, offset: Double): Color = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
@@ -21,6 +21,6 @@ object Color {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

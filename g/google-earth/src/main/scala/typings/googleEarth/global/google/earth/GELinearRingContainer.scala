@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GELinearRingContainer")
 @js.native
-class GELinearRingContainer ()
+open class GELinearRingContainer ()
   extends StObject
      with typings.googleEarth.google.earth.GESchemaObjectContainer[typings.googleEarth.google.earth.KmlLinearRing] {
   

@@ -86,8 +86,8 @@ object cssTreeStrings {
   inline def Group: Group = "Group".asInstanceOf[Group]
   
   @js.native
-  sealed trait HexColor extends StObject
-  inline def HexColor: HexColor = "HexColor".asInstanceOf[HexColor]
+  sealed trait Hash extends StObject
+  inline def Hash: Hash = "Hash".asInstanceOf[Hash]
   
   @js.native
   sealed trait IdSelector extends StObject

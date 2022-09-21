@@ -15,6 +15,8 @@ trait BarChartMediaInfo
   /**
     * Indicates the type of chart.
     *
+    * @default bar-chart
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-BarChartMediaInfo.html#type)
     */
   val `type`: String = js.native

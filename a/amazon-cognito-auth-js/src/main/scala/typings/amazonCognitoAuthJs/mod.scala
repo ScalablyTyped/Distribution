@@ -4,8 +4,6 @@ import typings.amazonCognitoAuthJs.anon.ContentType
 import typings.std.Map
 import typings.std.ReadonlyMap
 import typings.std.ReadonlySet
-import typings.std.RegExp
-import typings.std.Storage
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +13,7 @@ object mod {
   
   @JSImport("amazon-cognito-auth-js", "CognitoAccessToken")
   @js.native
-  class CognitoAccessToken protected () extends StObject {
+  open class CognitoAccessToken protected () extends StObject {
     /**
       * Constructs a new CognitoAccessToken object
       * @param AccessToken The JWT access token.
@@ -51,7 +49,7 @@ object mod {
   
   @JSImport("amazon-cognito-auth-js", "CognitoAuth")
   @js.native
-  class CognitoAuth protected () extends StObject {
+  open class CognitoAuth protected () extends StObject {
     /**
       * Constructs a new CognitoAuth object
       * @param options Creation options
@@ -74,7 +72,7 @@ object mod {
       * @param set2 the other set
       * @returns boolean value is true if two sets are identical
       */
-    def compareSets(set1: ReadonlySet[js.Any], set2: ReadonlySet[js.Any]): Boolean = js.native
+    def compareSets(set1: ReadonlySet[Any], set2: ReadonlySet[Any]): Boolean = js.native
     
     /**
       * Create the XHR object
@@ -233,7 +231,7 @@ object mod {
       * The http POST request onFailure callback.
       * @param err the error object
       */
-    def onFailure(err: js.Any): Unit = js.native
+    def onFailure(err: Any): Unit = js.native
     
     /**
       * The http POST request onSuccess callback when exchanging code for tokens.
@@ -298,7 +296,7 @@ object mod {
   
   @JSImport("amazon-cognito-auth-js", "CognitoAuthSession")
   @js.native
-  class CognitoAuthSession protected () extends StObject {
+  open class CognitoAuthSession protected () extends StObject {
     /**
       * Constructs a new CognitoUserSession object
       * @param sessionData The session's tokens, scopes, and state.
@@ -370,7 +368,7 @@ object mod {
   
   @JSImport("amazon-cognito-auth-js", "CognitoIdToken")
   @js.native
-  class CognitoIdToken protected () extends StObject {
+  open class CognitoIdToken protected () extends StObject {
     /**
       * Constructs a new CognitoIdToken object
       * @param IdToken The JWT Id token
@@ -401,7 +399,7 @@ object mod {
   
   @JSImport("amazon-cognito-auth-js", "CognitoRefreshToken")
   @js.native
-  class CognitoRefreshToken protected () extends StObject {
+  open class CognitoRefreshToken protected () extends StObject {
     /**
       * Constructs a new CognitoRefreshToken object
       * @param RefreshToken The JWT refresh token.
@@ -422,7 +420,7 @@ object mod {
   
   @JSImport("amazon-cognito-auth-js", "CognitoTokenScopes")
   @js.native
-  class CognitoTokenScopes protected () extends StObject {
+  open class CognitoTokenScopes protected () extends StObject {
     /**
       * Constructs a new CognitoTokenScopes object
       * @param TokenScopesArray The token scopes
@@ -441,9 +439,56 @@ object mod {
     def setTokenScopes(tokenScopes: js.Array[String]): Unit = js.native
   }
   
+  @JSImport("amazon-cognito-auth-js", "CookieStorage")
+  @js.native
+  open class CookieStorage protected ()
+    extends StObject
+       with CognitoAuthStorage {
+    /**
+      * Constructs a new CookieStorage object
+      * @param data Creation options.
+      */
+    def this(data: CookieStorageOptions) = this()
+    
+    /**
+      * This is used to clear the storage
+      * @returns nothing
+      */
+    def clear(): js.Object = js.native
+    
+    /**
+      * Returns the current value associated with the given key, or null or
+      * undefined if the given key does not exist in the list associated with
+      * the object.
+      */
+    /* CompleteClass */
+    override def getItem(key: String): js.UndefOr[String | Null] = js.native
+    
+    /**
+      * Removes the key/value pair with the given key from the list associated
+      * with the object, if a key/value pair with the given key exists.
+      */
+    /* CompleteClass */
+    override def removeItem(key: String): Unit = js.native
+    
+    /**
+      * Sets the value of the pair identified by key to value, creating a new
+      * key/value pair if none existed for key previously.
+      */
+    /* CompleteClass */
+    override def setItem(key: String, value: String): Unit = js.native
+    /**
+      * This is used to set a specific item in storage
+      * @param key the key for the item
+      * @param value the value
+      * @returns value that was set
+      */
+    def setItem(key: String, value: Any): String = js.native
+  }
+  
   @JSImport("amazon-cognito-auth-js", "DateHelper")
   @js.native
-  class DateHelper () extends StObject {
+  open class DateHelper () extends StObject {
     
     /**
       * @returns The current time in "ddd MMM D HH:mm:ss UTC YYYY" format.
@@ -457,13 +502,13 @@ object mod {
     * This is used to get a storage object
     * @returns the storage
     */
-  class StorageHelper () extends StObject {
+  open class StorageHelper () extends StObject {
     
     /**
       * This is used to return the storage
       * @returns the storage
       */
-    def getStorage(): Storage = js.native
+    def getStorage(): CognitoAuthStorage = js.native
   }
   
   trait CognitoAuthOptions extends StObject {
@@ -489,6 +534,12 @@ object mod {
     var IdentityProvider: js.UndefOr[String] = js.undefined
     
     /**
+      * Optional: A function called to launch an Uri.
+      * By default it uses window.location in browsers, and the Linking class in react native.
+      */
+    var LaunchUri: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.undefined
+    
+    /**
       * Required: Required: The redirect Uri, which will be launched after authentication as signed in.
       */
     var RedirectUriSignIn: String
@@ -497,6 +548,13 @@ object mod {
       * Required: The redirect Uri, which will be launched when signed out.
       */
     var RedirectUriSignOut: String
+    
+    /**
+      * Optional: Storage provider used to store session data.
+      * By default, it uses localStorage if available or an in-memory structure.
+      * @example new CookieStorage()
+      */
+    var Storage: js.UndefOr[CognitoAuthStorage] = js.undefined
     
     /**
       * Optional: The token scopes
@@ -529,15 +587,23 @@ object mod {
       
       inline def setIdentityProviderUndefined: Self = StObject.set(x, "IdentityProvider", js.undefined)
       
+      inline def setLaunchUri(value: /* url */ String => Unit): Self = StObject.set(x, "LaunchUri", js.Any.fromFunction1(value))
+      
+      inline def setLaunchUriUndefined: Self = StObject.set(x, "LaunchUri", js.undefined)
+      
       inline def setRedirectUriSignIn(value: String): Self = StObject.set(x, "RedirectUriSignIn", value.asInstanceOf[js.Any])
       
       inline def setRedirectUriSignOut(value: String): Self = StObject.set(x, "RedirectUriSignOut", value.asInstanceOf[js.Any])
+      
+      inline def setStorage(value: CognitoAuthStorage): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
+      
+      inline def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
       
       inline def setTokenScopesArray(value: js.Array[String]): Self = StObject.set(x, "TokenScopesArray", value.asInstanceOf[js.Any])
       
       inline def setTokenScopesArrayUndefined: Self = StObject.set(x, "TokenScopesArray", js.undefined)
       
-      inline def setTokenScopesArrayVarargs(value: String*): Self = StObject.set(x, "TokenScopesArray", js.Array(value :_*))
+      inline def setTokenScopesArrayVarargs(value: String*): Self = StObject.set(x, "TokenScopesArray", js.Array(value*))
       
       inline def setUserPoolId(value: String): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
       
@@ -545,22 +611,64 @@ object mod {
     }
   }
   
+  trait CognitoAuthStorage extends StObject {
+    
+    /**
+      * Returns the current value associated with the given key, or null or
+      * undefined if the given key does not exist in the list associated with
+      * the object.
+      */
+    def getItem(key: String): js.UndefOr[String | Null]
+    
+    /**
+      * Removes the key/value pair with the given key from the list associated
+      * with the object, if a key/value pair with the given key exists.
+      */
+    def removeItem(key: String): Unit
+    
+    /**
+      * Sets the value of the pair identified by key to value, creating a new
+      * key/value pair if none existed for key previously.
+      */
+    def setItem(key: String, value: String): Unit
+  }
+  object CognitoAuthStorage {
+    
+    inline def apply(
+      getItem: String => js.UndefOr[String | Null],
+      removeItem: String => Unit,
+      setItem: (String, String) => Unit
+    ): CognitoAuthStorage = {
+      val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
+      __obj.asInstanceOf[CognitoAuthStorage]
+    }
+    
+    extension [Self <: CognitoAuthStorage](x: Self) {
+      
+      inline def setGetItem(value: String => js.UndefOr[String | Null]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      
+      inline def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      
+      inline def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+    }
+  }
+  
   trait CognitoAuthUserHandler extends StObject {
     
-    def onFailure(err: js.Any): Unit
+    def onFailure(err: Any): Unit
     
     def onSuccess(authSession: CognitoAuthSession): Unit
   }
   object CognitoAuthUserHandler {
     
-    inline def apply(onFailure: js.Any => Unit, onSuccess: CognitoAuthSession => Unit): CognitoAuthUserHandler = {
+    inline def apply(onFailure: Any => Unit, onSuccess: CognitoAuthSession => Unit): CognitoAuthUserHandler = {
       val __obj = js.Dynamic.literal(onFailure = js.Any.fromFunction1(onFailure), onSuccess = js.Any.fromFunction1(onSuccess))
       __obj.asInstanceOf[CognitoAuthUserHandler]
     }
     
     extension [Self <: CognitoAuthUserHandler](x: Self) {
       
-      inline def setOnFailure(value: js.Any => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
+      inline def setOnFailure(value: Any => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
       
       inline def setOnSuccess(value: CognitoAuthSession => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     }
@@ -610,7 +718,7 @@ object mod {
     
     var HEADER: ContentType
     
-    var HOSTNAMEREGEX: RegExp
+    var HOSTNAMEREGEX: js.RegExp
     
     var IDTOKEN: String
     
@@ -620,9 +728,9 @@ object mod {
     
     var POUNDSIGN: String
     
-    var QUERYPARAMETERREGEX1: RegExp
+    var QUERYPARAMETERREGEX1: js.RegExp
     
-    var QUERYPARAMETERREGEX2: RegExp
+    var QUERYPARAMETERREGEX2: js.RegExp
     
     var QUESTIONMARK: String
     
@@ -676,13 +784,13 @@ object mod {
       ERROR: String,
       ERROR_DESCRIPTION: String,
       HEADER: ContentType,
-      HOSTNAMEREGEX: RegExp,
+      HOSTNAMEREGEX: js.RegExp,
       IDTOKEN: String,
       PARAMETERERROR: String,
       POST: String,
       POUNDSIGN: String,
-      QUERYPARAMETERREGEX1: RegExp,
-      QUERYPARAMETERREGEX2: RegExp,
+      QUERYPARAMETERREGEX1: js.RegExp,
+      QUERYPARAMETERREGEX2: js.RegExp,
       QUESTIONMARK: String,
       REFRESHTOKEN: String,
       SCOPE: String,
@@ -746,7 +854,7 @@ object mod {
       
       inline def setHEADER(value: ContentType): Self = StObject.set(x, "HEADER", value.asInstanceOf[js.Any])
       
-      inline def setHOSTNAMEREGEX(value: RegExp): Self = StObject.set(x, "HOSTNAMEREGEX", value.asInstanceOf[js.Any])
+      inline def setHOSTNAMEREGEX(value: js.RegExp): Self = StObject.set(x, "HOSTNAMEREGEX", value.asInstanceOf[js.Any])
       
       inline def setIDTOKEN(value: String): Self = StObject.set(x, "IDTOKEN", value.asInstanceOf[js.Any])
       
@@ -756,9 +864,9 @@ object mod {
       
       inline def setPOUNDSIGN(value: String): Self = StObject.set(x, "POUNDSIGN", value.asInstanceOf[js.Any])
       
-      inline def setQUERYPARAMETERREGEX1(value: RegExp): Self = StObject.set(x, "QUERYPARAMETERREGEX1", value.asInstanceOf[js.Any])
+      inline def setQUERYPARAMETERREGEX1(value: js.RegExp): Self = StObject.set(x, "QUERYPARAMETERREGEX1", value.asInstanceOf[js.Any])
       
-      inline def setQUERYPARAMETERREGEX2(value: RegExp): Self = StObject.set(x, "QUERYPARAMETERREGEX2", value.asInstanceOf[js.Any])
+      inline def setQUERYPARAMETERREGEX2(value: js.RegExp): Self = StObject.set(x, "QUERYPARAMETERREGEX2", value.asInstanceOf[js.Any])
       
       inline def setQUESTIONMARK(value: String): Self = StObject.set(x, "QUESTIONMARK", value.asInstanceOf[js.Any])
       
@@ -845,6 +953,53 @@ object mod {
       inline def setTokenScopes(value: CognitoTokenScopes): Self = StObject.set(x, "TokenScopes", value.asInstanceOf[js.Any])
       
       inline def setTokenScopesUndefined: Self = StObject.set(x, "TokenScopes", js.undefined)
+    }
+  }
+  
+  trait CookieStorageOptions extends StObject {
+    
+    /**
+      * Cookies domain
+      */
+    var domain: String
+    
+    /**
+      * Cookie expiration (in days, default: 365)
+      */
+    var expires: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Cookies path (default: '/')
+      */
+    var path: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Cookie secure flag (default: true)
+      */
+    var secure: js.UndefOr[Boolean] = js.undefined
+  }
+  object CookieStorageOptions {
+    
+    inline def apply(domain: String): CookieStorageOptions = {
+      val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CookieStorageOptions]
+    }
+    
+    extension [Self <: CookieStorageOptions](x: Self) {
+      
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     }
   }
   

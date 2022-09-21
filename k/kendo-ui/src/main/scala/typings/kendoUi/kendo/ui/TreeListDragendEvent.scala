@@ -11,6 +11,8 @@ trait TreeListDragendEvent
   
   var destination: js.UndefOr[TreeListModel] = js.undefined
   
+  var position: js.UndefOr[String] = js.undefined
+  
   var source: js.UndefOr[TreeListModel] = js.undefined
 }
 object TreeListDragendEvent {
@@ -25,6 +27,10 @@ object TreeListDragendEvent {
     inline def setDestination(value: TreeListModel): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setSource(value: TreeListModel): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

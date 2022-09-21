@@ -2,7 +2,6 @@ package typings.tensorflowTfjsLayers
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.std.Array
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,18 +34,13 @@ object typesMod {
   
   type PyJson[Keys /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ x in Keys ]:? @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonValue}
-    */ typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PyJson & TopLevel[js.Any]
+    */ typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PyJson & TopLevel[Any]
   
-  @js.native
-  trait PyJsonArray
-    extends StObject
-       with Array[PyJsonValue]
-       with _PyJsonValue
+  type PyJsonArray = js.Array[PyJsonValue]
   
   trait PyJsonDict
     extends StObject
        with /* key */ StringDictionary[PyJsonValue]
-       with _PyJsonValue
   object PyJsonDict {
     
     inline def apply(): PyJsonDict = {
@@ -55,15 +49,5 @@ object typesMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Boolean
-    - scala.Double
-    - java.lang.String
-    - scala.Null
-    - typings.tensorflowTfjsLayers.typesMod.PyJsonArray
-    - typings.tensorflowTfjsLayers.typesMod.PyJsonDict
-  */
-  type PyJsonValue = _PyJsonValue | Boolean | Double | String | Null
-  
-  trait _PyJsonValue extends StObject
+  type PyJsonValue = Boolean | Double | String | Null | Any | PyJsonDict
 }

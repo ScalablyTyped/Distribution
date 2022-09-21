@@ -3,7 +3,6 @@ package typings.rpiGpio
 import org.scalablytyped.runtime.Shortcut
 import typings.node.eventsMod.EventEmitter
 import typings.rpiGpio.anon.DIRHIGH
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object mod extends Shortcut {
     inline def rising: typings.rpiGpio.rpiGpioStrings.rising = "rising".asInstanceOf[typings.rpiGpio.rpiGpioStrings.rising]
   }
   
-  type ErrorCallback = js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+  type ErrorCallback = js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
   
   @js.native
   trait Gpio extends EventEmitter {
@@ -165,7 +164,7 @@ object mod extends Shortcut {
     inline def out: typings.rpiGpio.rpiGpioStrings.out = "out".asInstanceOf[typings.rpiGpio.rpiGpioStrings.out]
   }
   
-  type ValueCallback[T] = js.Function2[/* err */ js.UndefOr[Error | Null], /* value */ js.UndefOr[T], Unit]
+  type ValueCallback[T] = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* value */ js.UndefOr[T], Unit]
   
   type _To = Gpio
   

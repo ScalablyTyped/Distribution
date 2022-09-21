@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GEPhotoOverlayViewer")
 @js.native
-class GEPhotoOverlayViewer ()
+open class GEPhotoOverlayViewer ()
   extends StObject
      with typings.googleEarth.google.earth.GEPhotoOverlayViewer {
   

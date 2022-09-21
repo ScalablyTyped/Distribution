@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "LSTM")
 @js.native
-class LSTM protected () extends RNN_ {
+open class LSTM protected () extends RNN_ {
   def this(args: LSTMLayerArgs) = this()
 }
 /* static members */

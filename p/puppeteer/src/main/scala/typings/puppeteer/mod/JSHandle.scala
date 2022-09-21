@@ -1,46 +1,118 @@
 package typings.puppeteer.mod
 
-import typings.std.Element
+import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObject
+import typings.std.Awaited
 import typings.std.Map
+import typings.std.Node
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.puppeteer.mod._HandleOr because Already inherited */ @JSImport("puppeteer", "JSHandle")
 @js.native
-trait JSHandle[T]
+open class JSHandle[T] ()
   extends StObject
-     with JSEvalable[T] {
+     with HandleFor[T] {
   
   /**
-    * Returns a ElementHandle
+    * @returns Either `null` or the handle itself if the handle is an
+    * instance of {@link ElementHandle}.
     */
-  def asElement(): ElementHandle[Element] | Null = js.native
+  def asElement(): ElementHandle[Node] | Null = js.native
   
   /**
-    * Stops referencing the element handle.
+    * Releases the object referenced by the handle for garbage collection.
     */
   def dispose(): js.Promise[Unit] = js.native
   
+  /* Excluded from this release type: client */
+  /* Excluded from this release type: disposed */
+  /* Excluded from this release type: __constructor */
+  /* Excluded from this release type: executionContext */
   /**
-    * Gets the execution context.
+    * Evaluates the given function with the current handle as its first argument.
+    *
+    * @see {@link ExecutionContext.evaluate} for more details.
     */
-  def executionContext(): ExecutionContext = js.native
+  def evaluate[Params /* <: js.Array[Any] */, Func /* <: EvaluateFunc[
+    /* import warning: importer.ImportType#apply c repeated non-array type: Params */ js.Array[Params]
+  ] */](
+    pageFunction: Func,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Params is not an array type */ args: Params
+  ): js.Promise[Awaited[ReturnType[Func]]] = js.native
+  def evaluate[Params /* <: js.Array[Any] */, Func /* <: EvaluateFunc[
+    /* import warning: importer.ImportType#apply c repeated non-array type: Params */ js.Array[Params]
+  ] */](
+    pageFunction: String,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Params is not an array type */ args: Params
+  ): js.Promise[Awaited[ReturnType[Func]]] = js.native
   
   /**
-    * Returns a map with property names as keys and JSHandle instances for the property values.
+    * Evaluates the given function with the current handle as its first argument.
+    *
+    * @see {@link ExecutionContext.evaluateHandle} for more details.
     */
-  def getProperties(): js.Promise[Map[String, JSHandle[js.Any]]] = js.native
+  def evaluateHandle[Params /* <: js.Array[Any] */, Func /* <: EvaluateFunc[
+    /* import warning: importer.ImportType#apply c repeated non-array type: Params */ js.Array[Params]
+  ] */](
+    pageFunction: Func,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Params is not an array type */ args: Params
+  ): js.Promise[HandleFor[Awaited[ReturnType[Func]]]] = js.native
+  def evaluateHandle[Params /* <: js.Array[Any] */, Func /* <: EvaluateFunc[
+    /* import warning: importer.ImportType#apply c repeated non-array type: Params */ js.Array[Params]
+  ] */](
+    pageFunction: String,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Params is not an array type */ args: Params
+  ): js.Promise[HandleFor[Awaited[ReturnType[Func]]]] = js.native
   
   /**
-    * Fetches a single property from the objectHandle.
-    * @param propertyName The property to get.
+    * Gets a map of handles representing the properties of the current handle.
+    *
+    * @example
+    *
+    * ```ts
+    * const listHandle = await page.evaluateHandle(() => document.body.children);
+    * const properties = await listHandle.getProperties();
+    * const children = [];
+    * for (const property of properties.values()) {
+    *   const element = property.asElement();
+    *   if (element) {
+    *     children.push(element);
+    *   }
+    * }
+    * children; // holds elementHandles to all children of document.body
+    * ```
     */
-  def getProperty(propertyName: String): js.Promise[JSHandle[js.Any]] = js.native
+  def getProperties(): js.Promise[Map[String, JSHandle[Any]]] = js.native
+  
+  def getProperty(propertyName: String): js.Promise[JSHandle[Any]] = js.native
+  /**
+    * Fetches a single property from the referenced object.
+    */
+  def getProperty[K /* <: /* keyof T */ String */](propertyName: HandleOr[K]): js.Promise[
+    HandleFor[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
+  ] = js.native
   
   /**
-    * Returns a JSON representation of the object.
-    * The JSON is generated by running JSON.stringify on the object in page and consequent JSON.parse in puppeteer.
-    * @throws The method will throw if the referenced object is not stringifiable.
+    * @returns A vanilla object representing the serializable portions of the
+    * referenced object.
+    * @throws Throws if the object cannot be serialized due to circularity.
+    *
+    * @remarks
+    * If the object has a `toJSON` function, it **will not** be called.
     */
-  def jsonValue(): js.Promise[js.Any] = js.native
+  def jsonValue(): js.Promise[T] = js.native
+  
+  /* private */ var `private`: Any = js.native
+  
+  /**
+    * Provides access to the
+    * [Protocol.Runtime.RemoteObject](https://chromedevtools.github.io/devtools-protocol/tot/Runtime/#type-RemoteObject)
+    * backing this handle.
+    */
+  def remoteObject(): RemoteObject = js.native
 }

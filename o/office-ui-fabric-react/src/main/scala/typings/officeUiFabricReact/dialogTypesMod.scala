@@ -125,14 +125,14 @@ object dialogTypesMod {
       * Can also be specified separately in content and modal.
       */
     var onDismiss: js.UndefOr[
-        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], js.Any]
+        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], Any]
       ] = js.undefined
     
     /**
       * A callback function which is called after the Dialog is dismissed and the animation is complete.
       * @deprecated Pass through via `modalProps` instead
       */
-    var onDismissed: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onDismissed: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * A callback function for when the Dialog content is mounted on the overlay layer
@@ -248,11 +248,11 @@ object dialogTypesMod {
       
       inline def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
       
-      inline def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      inline def setOnDismissed(value: () => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
+      inline def setOnDismissed(value: () => Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
       
       inline def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
       
@@ -286,7 +286,7 @@ object dialogTypesMod {
       
       inline def setTopButtonsPropsUndefined: Self = StObject.set(x, "topButtonsProps", js.undefined)
       
-      inline def setTopButtonsPropsVarargs(value: IButtonProps*): Self = StObject.set(x, "topButtonsProps", js.Array(value :_*))
+      inline def setTopButtonsPropsVarargs(value: IButtonProps*): Self = StObject.set(x, "topButtonsProps", js.Array(value*))
       
       inline def setType(value: DialogType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

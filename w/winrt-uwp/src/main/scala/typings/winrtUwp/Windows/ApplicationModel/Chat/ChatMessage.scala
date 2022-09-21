@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
@@ -50,7 +49,7 @@ trait ChatMessage extends StObject {
   var isSimMessage: Boolean
   
   /** Gets the local timestamp of the message. */
-  var localTimestamp: Date
+  var localTimestamp: js.Date
   
   /** Gets or sets the type of the ChatMessage . */
   var messageKind: ChatMessageKind
@@ -59,7 +58,7 @@ trait ChatMessage extends StObject {
   var messageOperatorKind: ChatMessageOperatorKind
   
   /** Gets the network timestamp of the message. */
-  var networkTimestamp: Date
+  var networkTimestamp: js.Date
   
   /** Gets the list of send statuses for the message. */
   var recipientSendStatuses: IMapView[String, ChatMessageStatus]
@@ -107,10 +106,10 @@ object ChatMessage {
     isReplyDisabled: Boolean,
     isSeen: Boolean,
     isSimMessage: Boolean,
-    localTimestamp: Date,
+    localTimestamp: js.Date,
     messageKind: ChatMessageKind,
     messageOperatorKind: ChatMessageOperatorKind,
-    networkTimestamp: Date,
+    networkTimestamp: js.Date,
     recipientSendStatuses: IMapView[String, ChatMessageStatus],
     recipients: IVector[String],
     recipientsDeliveryInfos: IVector[ChatRecipientDeliveryInfo],
@@ -154,13 +153,13 @@ object ChatMessage {
     
     inline def setIsSimMessage(value: Boolean): Self = StObject.set(x, "isSimMessage", value.asInstanceOf[js.Any])
     
-    inline def setLocalTimestamp(value: Date): Self = StObject.set(x, "localTimestamp", value.asInstanceOf[js.Any])
+    inline def setLocalTimestamp(value: js.Date): Self = StObject.set(x, "localTimestamp", value.asInstanceOf[js.Any])
     
     inline def setMessageKind(value: ChatMessageKind): Self = StObject.set(x, "messageKind", value.asInstanceOf[js.Any])
     
     inline def setMessageOperatorKind(value: ChatMessageOperatorKind): Self = StObject.set(x, "messageOperatorKind", value.asInstanceOf[js.Any])
     
-    inline def setNetworkTimestamp(value: Date): Self = StObject.set(x, "networkTimestamp", value.asInstanceOf[js.Any])
+    inline def setNetworkTimestamp(value: js.Date): Self = StObject.set(x, "networkTimestamp", value.asInstanceOf[js.Any])
     
     inline def setRecipientSendStatuses(value: IMapView[String, ChatMessageStatus]): Self = StObject.set(x, "recipientSendStatuses", value.asInstanceOf[js.Any])
     

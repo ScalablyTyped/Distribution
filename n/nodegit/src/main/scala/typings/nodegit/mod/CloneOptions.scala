@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "CloneOptions")
 @js.native
-class CloneOptions ()
+open class CloneOptions ()
   extends typings.nodegit.cloneOptionsMod.CloneOptions

@@ -25,7 +25,7 @@ object mod {
         *
         * @param newItems provides an array of items to be appended.
         */
-      def append(newItems: js.Array[js.Any]): Unit = js.native
+      def append(newItems: js.Array[Any]): Unit = js.native
       
       /**
         * Replaces the item in the buffer at the given index with the new items.
@@ -38,7 +38,7 @@ object mod {
         * be deleted, otherwise the items in the array replace the item. If the newItem array contains the old item,
         * the old item stays in place.
         */
-      def applyUpdates(index: Double, newItems: js.Array[js.Any]): Unit = js.native
+      def applyUpdates(index: Double, newItems: js.Array[Any]): Unit = js.native
       /**
         * Replaces the item in the buffer at the given index with the new items.
         *
@@ -50,7 +50,7 @@ object mod {
         * unaffected, unless some updates were made to the item in the updater function. This can be thought of as
         * in place update.
         */
-      def applyUpdates(updater: js.Function2[/* item */ js.Any, /* scope */ IRepeatScope, js.Any]): Unit = js.native
+      def applyUpdates(updater: js.Function2[/* item */ Any, /* scope */ IRepeatScope, Any]): Unit = js.native
       
       /**
         * a boolean value indicating whether there are any pending load requests.
@@ -62,7 +62,7 @@ object mod {
         *
         * @param newItems provides an array of items to be prepended.
         */
-      def prepend(newItems: js.Array[js.Any]): Unit = js.native
+      def prepend(newItems: js.Array[Any]): Unit = js.native
       
       /**
         * calling this method reinitializes and reloads the scroller content.
@@ -74,7 +74,7 @@ object mod {
       /**
         * a reference to the item currently in the topmost visible position.
         */
-      var topVisible: js.Any = js.native
+      var topVisible: Any = js.native
       
       /**
         * a reference to the DOM element currently in the topmost visible position.
@@ -114,18 +114,18 @@ object mod {
         * Important: Make sure to respect the index and count parameters of the request. The array passed to the
         * success method should have exactly count elements unless it hit eof/bof
         */
-      def get(index: Double, count: Double, success: js.Function1[/* results */ js.Array[T], js.Any]): Unit
+      def get(index: Double, count: Double, success: js.Function1[/* results */ js.Array[T], Any]): Unit
     }
     object IScrollDatasource {
       
-      inline def apply[T](get: (Double, Double, js.Function1[/* results */ js.Array[T], js.Any]) => Unit): IScrollDatasource[T] = {
+      inline def apply[T](get: (Double, Double, js.Function1[/* results */ js.Array[T], Any]) => Unit): IScrollDatasource[T] = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get))
         __obj.asInstanceOf[IScrollDatasource[T]]
       }
       
       extension [Self <: IScrollDatasource[?], T](x: Self & IScrollDatasource[T]) {
         
-        inline def setGet(value: (Double, Double, js.Function1[/* results */ js.Array[T], js.Any]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+        inline def setGet(value: (Double, Double, js.Function1[/* results */ js.Array[T], Any]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       }
     }
   }

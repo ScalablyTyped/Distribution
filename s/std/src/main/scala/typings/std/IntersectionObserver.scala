@@ -7,18 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport. */
 trait IntersectionObserver extends StObject {
   
+  /* standard dom */
   def disconnect(): Unit
   
+  /* standard dom */
   def observe(target: Element): Unit
   
-  val root: Element | Null
+  /* standard dom */
+  val root: Element | Document | Null
   
+  /* standard dom */
   val rootMargin: java.lang.String
   
+  /* standard dom */
   def takeRecords(): js.Array[IntersectionObserverEntry]
   
+  /* standard dom */
   val thresholds: js.Array[Double]
   
+  /* standard dom */
   def unobserve(target: Element): Unit
 }
 object IntersectionObserver {
@@ -41,7 +48,7 @@ object IntersectionObserver {
     
     inline def setObserve(value: Element => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
     
-    inline def setRoot(value: Element): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Element | Document): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootMargin(value: java.lang.String): Self = StObject.set(x, "rootMargin", value.asInstanceOf[js.Any])
     
@@ -51,7 +58,7 @@ object IntersectionObserver {
     
     inline def setThresholds(value: js.Array[Double]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
-    inline def setThresholdsVarargs(value: Double*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+    inline def setThresholdsVarargs(value: Double*): Self = StObject.set(x, "thresholds", js.Array(value*))
     
     inline def setUnobserve(value: Element => Unit): Self = StObject.set(x, "unobserve", js.Any.fromFunction1(value))
   }

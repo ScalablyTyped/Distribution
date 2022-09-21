@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMMutationEvent")
 @js.native
-/* private */ class DOMMutationEvent ()
+/* private */ open class DOMMutationEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMMutationEvent {
   
@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     eventType: String,
     canBubble: Boolean,
     cancelable: Boolean,
-    relatedNodeArg: js.Any,
+    relatedNodeArg: Any,
     prevValueArg: String,
     newValueArg: String,
     attrNameArg: String,
@@ -66,7 +66,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def preventDefault(): Unit = js.native
   
   /* CompleteClass */
-  override val relatedNode: js.Any = js.native
+  override val relatedNode: Any = js.native
   
   /* CompleteClass */
   override val srcElement: typings.activexMshtml.MSHTML.IHTMLElement = js.native

@@ -60,6 +60,8 @@ trait EventParams extends StObject {
   
   var meta: MetadataParam
   
+  var metadataCueParsed: MetadataParam
+  
   var mute: MuteParam
   
   var pause: PlayParam
@@ -85,6 +87,8 @@ trait EventParams extends StObject {
   var visualQuality: VisualQualityParam
   
   var volume: VolumeParam
+  
+  var warning: WarningParam
 }
 object EventParams {
   
@@ -116,6 +120,7 @@ object EventParams {
     levels: LevelsParam,
     levelsChanged: LevelsChangedParam,
     meta: MetadataParam,
+    metadataCueParsed: MetadataParam,
     mute: MuteParam,
     pause: PlayParam,
     play: PlayParam,
@@ -128,9 +133,10 @@ object EventParams {
     setupError: ErrorParam,
     time: TimeParam,
     visualQuality: VisualQualityParam,
-    volume: VolumeParam
+    volume: VolumeParam,
+    warning: WarningParam
   ): EventParams = {
-    val __obj = js.Dynamic.literal(adClick = adClick.asInstanceOf[js.Any], adCompanions = adCompanions.asInstanceOf[js.Any], adComplete = adComplete.asInstanceOf[js.Any], adError = adError.asInstanceOf[js.Any], adImpression = adImpression.asInstanceOf[js.Any], adPause = adPause.asInstanceOf[js.Any], adPlay = adPlay.asInstanceOf[js.Any], adRequest = adRequest.asInstanceOf[js.Any], adSchedule = adSchedule.asInstanceOf[js.Any], adSkipped = adSkipped.asInstanceOf[js.Any], adStarted = adStarted.asInstanceOf[js.Any], adTime = adTime.asInstanceOf[js.Any], audioTrackChanged = audioTrackChanged.asInstanceOf[js.Any], audioTracks = audioTracks.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any], bufferChange = bufferChange.asInstanceOf[js.Any], captionsChanged = captionsChanged.asInstanceOf[js.Any], captionsList = captionsList.asInstanceOf[js.Any], cast = cast.asInstanceOf[js.Any], controls = controls.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], firstFrame = firstFrame.asInstanceOf[js.Any], fullscreen = fullscreen.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any], levelsChanged = levelsChanged.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], mute = mute.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playbackRateChanged = playbackRateChanged.asInstanceOf[js.Any], playlist = playlist.asInstanceOf[js.Any], playlistItem = playlistItem.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], seek = seek.asInstanceOf[js.Any], setupError = setupError.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], visualQuality = visualQuality.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adClick = adClick.asInstanceOf[js.Any], adCompanions = adCompanions.asInstanceOf[js.Any], adComplete = adComplete.asInstanceOf[js.Any], adError = adError.asInstanceOf[js.Any], adImpression = adImpression.asInstanceOf[js.Any], adPause = adPause.asInstanceOf[js.Any], adPlay = adPlay.asInstanceOf[js.Any], adRequest = adRequest.asInstanceOf[js.Any], adSchedule = adSchedule.asInstanceOf[js.Any], adSkipped = adSkipped.asInstanceOf[js.Any], adStarted = adStarted.asInstanceOf[js.Any], adTime = adTime.asInstanceOf[js.Any], audioTrackChanged = audioTrackChanged.asInstanceOf[js.Any], audioTracks = audioTracks.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any], bufferChange = bufferChange.asInstanceOf[js.Any], captionsChanged = captionsChanged.asInstanceOf[js.Any], captionsList = captionsList.asInstanceOf[js.Any], cast = cast.asInstanceOf[js.Any], controls = controls.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], firstFrame = firstFrame.asInstanceOf[js.Any], fullscreen = fullscreen.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any], levelsChanged = levelsChanged.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadataCueParsed = metadataCueParsed.asInstanceOf[js.Any], mute = mute.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playbackRateChanged = playbackRateChanged.asInstanceOf[js.Any], playlist = playlist.asInstanceOf[js.Any], playlistItem = playlistItem.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], seek = seek.asInstanceOf[js.Any], setupError = setupError.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], visualQuality = visualQuality.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventParams]
   }
   
@@ -190,6 +196,8 @@ object EventParams {
     
     inline def setMeta(value: MetadataParam): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
+    inline def setMetadataCueParsed(value: MetadataParam): Self = StObject.set(x, "metadataCueParsed", value.asInstanceOf[js.Any])
+    
     inline def setMute(value: MuteParam): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
     
     inline def setPause(value: PlayParam): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
@@ -215,5 +223,7 @@ object EventParams {
     inline def setVisualQuality(value: VisualQualityParam): Self = StObject.set(x, "visualQuality", value.asInstanceOf[js.Any])
     
     inline def setVolume(value: VolumeParam): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    
+    inline def setWarning(value: WarningParam): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

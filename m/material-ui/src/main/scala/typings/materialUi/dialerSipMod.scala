@@ -10,10 +10,10 @@ object dialerSipMod {
   
   @JSImport("material-ui/svg-icons/communication/dialer-sip", JSImport.Default)
   @js.native
-  class default () extends CommunicationDialerSip
+  open class default () extends CommunicationDialerSip
   
   @JSImport("material-ui/svg-icons/communication/dialer-sip", "CommunicationDialerSip")
   @js.native
-  class CommunicationDialerSip ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationDialerSip ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Notification")
 @js.native
-class Notification protected ()
+open class Notification protected ()
   extends typings.sipJs.apiMod.Notification {
   /** @internal */
   def this(incomingNotifyRequest: IncomingNotifyRequest) = this()

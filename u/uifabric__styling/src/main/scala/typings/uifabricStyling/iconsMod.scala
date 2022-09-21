@@ -120,6 +120,12 @@ object iconsMod {
     
     var icons: StringDictionary[String | Element]
     
+    /**
+      * Indicates to the icon renderer that it is safe to merge any props on the original `Icon` element
+      * onto the child content element registered for the icon which are valid for HTML images.
+      */
+    var mergeImageProps: js.UndefOr[Boolean] = js.undefined
+    
     var style: js.UndefOr[IRawStyle] = js.undefined
   }
   object IIconSubset {
@@ -136,6 +142,10 @@ object iconsMod {
       inline def setFontFaceUndefined: Self = StObject.set(x, "fontFace", js.undefined)
       
       inline def setIcons(value: StringDictionary[String | Element]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      
+      inline def setMergeImageProps(value: Boolean): Self = StObject.set(x, "mergeImageProps", value.asInstanceOf[js.Any])
+      
+      inline def setMergeImagePropsUndefined: Self = StObject.set(x, "mergeImageProps", js.undefined)
       
       inline def setStyle(value: IRawStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

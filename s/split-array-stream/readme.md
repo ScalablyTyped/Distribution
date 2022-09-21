@@ -10,10 +10,10 @@ Safely push each item of an array to a stream
 | ------------------ | :-------------: |
 | Full name          | split-array-stream |
 | Keywords           | array, stream, split, push |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 26497366 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2085528.6666666667 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/stephenplusplus/split-array-stream#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_classroom
 
-Typings are for version 1.0.20201118
+Typings are for version 1.0.20220806
 
 ## Library description:
 TypeScript typings for Google Classroom API v1
@@ -10,10 +10,10 @@ TypeScript typings for Google Classroom API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.classroom |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 1 |
-| # downloads        | 4069 |
-| # stars            | 0 |
+| # releases         | 242 |
+| # dependents       | 0.0 |
+| # downloads        | 14821.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

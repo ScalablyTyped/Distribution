@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.StatusBar")
 @js.native
-/* private */ class StatusBar_ ()
+/**
+  * The status bar is the area where notifications, status icons and device time are displayed. The
+  * singleton instance can be accessed via `statusBar`.
+  */
+/* private */ open class StatusBar_ ()
   extends typings.tabris.mod.StatusBar_ {
   /* private */ def this(properties: Properties[typings.tabris.mod.StatusBar_, OmitStatusBarsetBackground]) = this()
 }

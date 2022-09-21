@@ -23,7 +23,7 @@ trait PrintOption extends StObject {
     * The paper size spec
     * example: 'mediaSize':{'name': 'CUSTOM', 'width_microns': 279400, 'height_microns': 215900, 'custom_display_name':'Letter', 'is_default': true}
     */
-  var mediaSize: js.Any
+  var mediaSize: Any
   
   /**
     * The path of the output PDF when printing to PDF
@@ -45,7 +45,7 @@ object PrintOption {
   inline def apply(
     headerFooterEnabled: Boolean,
     landscape: Boolean,
-    mediaSize: js.Any,
+    mediaSize: Any,
     pdf_path: String,
     printer: String,
     shouldPrintBackgrounds: Boolean
@@ -60,7 +60,7 @@ object PrintOption {
     
     inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
-    inline def setMediaSize(value: js.Any): Self = StObject.set(x, "mediaSize", value.asInstanceOf[js.Any])
+    inline def setMediaSize(value: Any): Self = StObject.set(x, "mediaSize", value.asInstanceOf[js.Any])
     
     inline def setPdf_path(value: String): Self = StObject.set(x, "pdf_path", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ trait CustomerGateway extends StObject {
   var DeviceName: js.UndefOr[String] = js.undefined
   
   /**
-    * The Internet-routable IP address of the customer gateway's outside interface.
+    * The IP address of the customer gateway device's outside interface.
     */
   var IpAddress: js.UndefOr[String] = js.undefined
   
@@ -83,7 +83,7 @@ object CustomerGateway {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

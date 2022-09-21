@@ -44,7 +44,7 @@ object typesListJobsOutputMod {
       
       inline def setJobListUndefined: Self = StObject.set(x, "JobList", js.undefined)
       
-      inline def setJobListVarargs(value: UnmarshalledGlacierJobDescription*): Self = StObject.set(x, "JobList", js.Array(value :_*))
+      inline def setJobListVarargs(value: UnmarshalledGlacierJobDescription*): Self = StObject.set(x, "JobList", js.Array(value*))
       
       inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
       

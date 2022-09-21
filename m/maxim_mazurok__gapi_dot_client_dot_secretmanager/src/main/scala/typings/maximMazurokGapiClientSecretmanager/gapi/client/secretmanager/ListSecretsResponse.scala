@@ -12,7 +12,7 @@ trait ListSecretsResponse extends StObject {
   /** The list of Secrets sorted in reverse by create_time (newest first). */
   var secrets: js.UndefOr[js.Array[Secret]] = js.undefined
   
-  /** The total number of Secrets. */
+  /** The total number of Secrets but 0 when the ListSecretsRequest.filter field is set. */
   var totalSize: js.UndefOr[Double] = js.undefined
 }
 object ListSecretsResponse {
@@ -32,7 +32,7 @@ object ListSecretsResponse {
     
     inline def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
     
-    inline def setSecretsVarargs(value: Secret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+    inline def setSecretsVarargs(value: Secret*): Self = StObject.set(x, "secrets", js.Array(value*))
     
     inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     

@@ -9,5 +9,5 @@ object global {
   
   @JSGlobal("FlipMove")
   @js.native
-  class FlipMove () extends default
+  open class FlipMove () extends default
 }

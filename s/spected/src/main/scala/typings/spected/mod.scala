@@ -15,14 +15,14 @@ object mod {
   inline def default[ROOTINPUT, SPEC /* <: SpecValue[ROOTINPUT, ROOTINPUT] */](spec: SPEC, input: ROOTINPUT): Result[ROOTINPUT, SPEC] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(spec.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Result[ROOTINPUT, SPEC]]
   
   type ErrorMsg[INPUT] = js.UndefOr[
-    String | Double | Boolean | js.Symbol | Null | js.Object | (js.Function2[/* value */ INPUT, /* field */ String, js.Any])
+    String | Double | Boolean | js.Symbol | Null | js.Object | (js.Function2[/* value */ INPUT, /* field */ String, Any])
   ]
   
   type Predicate[INPUT, ROOTINPUT] = js.Function2[/* value */ INPUT, /* inputs */ ROOTINPUT, Boolean]
   
   type Result[INPUT, SPEC] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof INPUT ]: true | std.Array<any> | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias spected.spected.Result<INPUT[key], any> * / object}
-    */ typings.spected.spectedStrings.Result & TopLevel[js.Any]
+  {[ key in keyof INPUT ]: true | std.Array<any> | spected.spected.Result<INPUT[key], any>}
+    */ typings.spected.spectedStrings.Result & TopLevel[INPUT]
   
   type Spec[INPUT, ROOTINPUT] = js.Tuple2[Predicate[INPUT, ROOTINPUT], ErrorMsg[INPUT]]
   
@@ -30,7 +30,7 @@ object mod {
   
   type SpecFunction[INPUT, ROOTINPUT] = js.Function1[
     /* value */ INPUT, 
-    (js.Array[SpecArray[js.Any, ROOTINPUT]]) | (SpecArray[INPUT, ROOTINPUT]) | (SpecObject[INPUT, ROOTINPUT])
+    (js.Array[SpecArray[Any, ROOTINPUT]]) | (SpecArray[INPUT, ROOTINPUT]) | (SpecObject[INPUT, ROOTINPUT])
   ]
   
   type SpecObject[INPUT, ROOTINPUT] = Partial[

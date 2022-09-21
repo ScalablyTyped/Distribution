@@ -21,14 +21,14 @@ object defaultLinkWidgetMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/widgets/DefaultLinkWidget", "DefaultLinkWidget")
   @js.native
-  class DefaultLinkWidget protected () extends BaseWidget[DefaultLinkProps, DefaultLinkState] {
+  open class DefaultLinkWidget protected () extends BaseWidget[DefaultLinkProps, DefaultLinkState] {
     def this(props: DefaultLinkProps) = this()
     
     def addPointToLink(event: MouseEvent, index: Double): Unit = js.native
     
     def calculateAllLabelPosition(): Unit = js.native
     
-    def calculateLabelPosition(label: js.Any, index: Double): Unit = js.native
+    def calculateLabelPosition(label: Any, index: Double): Unit = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDefaultLinkWidget(): Unit = js.native
@@ -40,8 +40,8 @@ object defaultLinkWidgetMod {
     
     def generateLabel(label: LabelModel): Element = js.native
     
-    def generateLink(path: String, extraProps: js.Any, id: String): Element = js.native
-    def generateLink(path: String, extraProps: js.Any, id: Double): Element = js.native
+    def generateLink(path: String, extraProps: Any, id: String): Element = js.native
+    def generateLink(path: String, extraProps: Any, id: Double): Element = js.native
     
     def generatePoint(pointIndex: Double): Element = js.native
     
@@ -82,7 +82,7 @@ object defaultLinkWidgetMod {
     
     var link: DefaultLinkModel
     
-    var pointAdded: js.UndefOr[js.Function2[/* point */ PointModel, /* event */ MouseEvent, js.Any]] = js.undefined
+    var pointAdded: js.UndefOr[js.Function2[/* point */ PointModel, /* event */ MouseEvent, Any]] = js.undefined
     
     var smooth: js.UndefOr[Boolean] = js.undefined
     
@@ -105,7 +105,7 @@ object defaultLinkWidgetMod {
       
       inline def setLink(value: DefaultLinkModel): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      inline def setPointAdded(value: (/* point */ PointModel, /* event */ MouseEvent) => js.Any): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
+      inline def setPointAdded(value: (/* point */ PointModel, /* event */ MouseEvent) => Any): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
       
       inline def setPointAddedUndefined: Self = StObject.set(x, "pointAdded", js.undefined)
       

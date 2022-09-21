@@ -32,6 +32,6 @@ object TransactionReceiptWithDecodedLogs {
     
     inline def setLogs(value: js.Array[LogWithDecodedArgs[DecodedLogArgs] | LogEntry]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
-    inline def setLogsVarargs(value: (LogWithDecodedArgs[DecodedLogArgs] | LogEntry)*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: (LogWithDecodedArgs[DecodedLogArgs] | LogEntry)*): Self = StObject.set(x, "logs", js.Array(value*))
   }
 }

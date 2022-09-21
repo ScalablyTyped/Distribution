@@ -11,9 +11,9 @@ trait switchButtonConfig extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  var attributes: js.UndefOr[Any] = js.undefined
   
   var badge: js.UndefOr[Double | String] = js.undefined
   
@@ -29,13 +29,13 @@ trait switchButtonConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var customCheckbox: js.UndefOr[Boolean] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[js.Any] = js.undefined
+  var format: js.UndefOr[Any] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
   
@@ -46,8 +46,6 @@ trait switchButtonConfig extends StObject {
   var icon: js.UndefOr[String] = js.undefined
   
   var id: js.UndefOr[String | Double] = js.undefined
-  
-  var image: js.UndefOr[String] = js.undefined
   
   var inputAlign: js.UndefOr[String] = js.undefined
   
@@ -81,9 +79,13 @@ trait switchButtonConfig extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
+  var offLabel: js.UndefOr[String] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var pattern: js.UndefOr[js.Any] = js.undefined
+  var onLabel: js.UndefOr[String] = js.undefined
+  
+  var pattern: js.UndefOr[Any] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -97,9 +99,9 @@ trait switchButtonConfig extends StObject {
   
   var required: js.UndefOr[Boolean] = js.undefined
   
-  var suggest: js.UndefOr[js.Any] = js.undefined
+  var suggest: js.UndefOr[Any] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.undefined
+  var tooltip: js.UndefOr[Any] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -109,7 +111,7 @@ trait switchButtonConfig extends StObject {
   
   var validateEvent: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.undefined
+  var value: js.UndefOr[String | Double | Boolean] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -128,11 +130,11 @@ object switchButtonConfig {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
@@ -164,7 +166,7 @@ object switchButtonConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -176,7 +178,7 @@ object switchButtonConfig {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
@@ -199,10 +201,6 @@ object switchButtonConfig {
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
-    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
-    
-    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     inline def setInputAlign(value: String): Self = StObject.set(x, "inputAlign", value.asInstanceOf[js.Any])
     
@@ -268,11 +266,19 @@ object switchButtonConfig {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setOffLabel(value: String): Self = StObject.set(x, "offLabel", value.asInstanceOf[js.Any])
+    
+    inline def setOffLabelUndefined: Self = StObject.set(x, "offLabel", js.undefined)
+    
     inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnLabel(value: String): Self = StObject.set(x, "onLabel", value.asInstanceOf[js.Any])
+    
+    inline def setOnLabelUndefined: Self = StObject.set(x, "onLabel", js.undefined)
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPattern(value: js.Any): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Any): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
@@ -300,11 +306,11 @@ object switchButtonConfig {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setSuggest(value: js.Any): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
+    inline def setSuggest(value: Any): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
     
     inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
     
-    inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
@@ -324,7 +330,7 @@ object switchButtonConfig {
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

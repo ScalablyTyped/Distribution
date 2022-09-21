@@ -26,7 +26,7 @@ object InstanceGroupManagersScopedList {
     
     inline def setInstanceGroupManagersUndefined: Self = StObject.set(x, "instanceGroupManagers", js.undefined)
     
-    inline def setInstanceGroupManagersVarargs(value: InstanceGroupManager*): Self = StObject.set(x, "instanceGroupManagers", js.Array(value :_*))
+    inline def setInstanceGroupManagersVarargs(value: InstanceGroupManager*): Self = StObject.set(x, "instanceGroupManagers", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

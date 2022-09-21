@@ -27,12 +27,12 @@ object Rule {
     
     inline def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
-    inline def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value*))
     
     inline def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
     inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value*))
   }
 }

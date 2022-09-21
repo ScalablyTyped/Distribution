@@ -17,7 +17,7 @@ trait SubmitContainerStateChangeRequest extends StObject {
   var containerName: js.UndefOr[String] = js.undefined
   
   /**
-    * The exit code returned for the state change request.
+    * The exit code that's returned for the state change request.
     */
   var exitCode: js.UndefOr[BoxedInteger] = js.undefined
   
@@ -71,7 +71,7 @@ object SubmitContainerStateChangeRequest {
     
     inline def setNetworkBindingsUndefined: Self = StObject.set(x, "networkBindings", js.undefined)
     
-    inline def setNetworkBindingsVarargs(value: NetworkBinding*): Self = StObject.set(x, "networkBindings", js.Array(value :_*))
+    inline def setNetworkBindingsVarargs(value: NetworkBinding*): Self = StObject.set(x, "networkBindings", js.Array(value*))
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

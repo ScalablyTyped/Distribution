@@ -18,6 +18,12 @@ object utilMod {
   inline def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
   inline def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory, initialFocusEl: HTMLElement): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any], initialFocusEl.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
   
+  inline def isScrollAtBottom(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtBottom")().asInstanceOf[Boolean]
+  inline def isScrollAtBottom(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtBottom")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isScrollAtTop(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtTop")().asInstanceOf[Boolean]
+  inline def isScrollAtTop(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtTop")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def isScrollable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollable")().asInstanceOf[Boolean]
   inline def isScrollable(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollable")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

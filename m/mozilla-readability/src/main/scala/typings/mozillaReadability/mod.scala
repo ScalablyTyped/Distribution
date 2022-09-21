@@ -15,7 +15,7 @@ object mod {
     */
   @JSImport("mozilla-readability", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Readability {
     /**
@@ -146,7 +146,7 @@ object mod {
       
       inline def setClassesToPreserveUndefined: Self = StObject.set(x, "classesToPreserve", js.undefined)
       
-      inline def setClassesToPreserveVarargs(value: String*): Self = StObject.set(x, "classesToPreserve", js.Array(value :_*))
+      inline def setClassesToPreserveVarargs(value: String*): Self = StObject.set(x, "classesToPreserve", js.Array(value*))
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

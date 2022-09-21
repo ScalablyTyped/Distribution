@@ -17,7 +17,7 @@ trait DescribeRepositoriesRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The AWS account ID associated with the registry that contains the repositories to be described. If you do not specify a registry, the default registry is assumed.
+    * The Amazon Web Services account ID associated with the registry that contains the repositories to be described. If you do not specify a registry, the default registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
@@ -51,6 +51,6 @@ object DescribeRepositoriesRequest {
     
     inline def setRepositoryNamesUndefined: Self = StObject.set(x, "repositoryNames", js.undefined)
     
-    inline def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value :_*))
+    inline def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value*))
   }
 }

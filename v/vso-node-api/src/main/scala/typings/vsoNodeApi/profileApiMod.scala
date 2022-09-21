@@ -19,7 +19,7 @@ object profileApiMod {
   
   @JSImport("vso-node-api/ProfileApi", "ProfileApi")
   @js.native
-  class ProfileApi protected () extends IProfileApi {
+  open class ProfileApi protected () extends IProfileApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -37,14 +37,14 @@ object profileApiMod {
     def getAvatar(id: String, size: String, format: String): js.Promise[Avatar] = js.native
     def getAvatar(id: String, size: Unit, format: String): js.Promise[Avatar] = js.native
     
-    def getAvatarPreview(container: js.Any, id: String): js.Promise[Avatar] = js.native
-    def getAvatarPreview(container: js.Any, id: String, size: String): js.Promise[Avatar] = js.native
-    def getAvatarPreview(container: js.Any, id: String, size: String, format: String): js.Promise[Avatar] = js.native
-    def getAvatarPreview(container: js.Any, id: String, size: String, format: String, displayName: String): js.Promise[Avatar] = js.native
-    def getAvatarPreview(container: js.Any, id: String, size: String, format: Unit, displayName: String): js.Promise[Avatar] = js.native
-    def getAvatarPreview(container: js.Any, id: String, size: Unit, format: String): js.Promise[Avatar] = js.native
-    def getAvatarPreview(container: js.Any, id: String, size: Unit, format: String, displayName: String): js.Promise[Avatar] = js.native
-    def getAvatarPreview(container: js.Any, id: String, size: Unit, format: Unit, displayName: String): js.Promise[Avatar] = js.native
+    def getAvatarPreview(container: Any, id: String): js.Promise[Avatar] = js.native
+    def getAvatarPreview(container: Any, id: String, size: String): js.Promise[Avatar] = js.native
+    def getAvatarPreview(container: Any, id: String, size: String, format: String): js.Promise[Avatar] = js.native
+    def getAvatarPreview(container: Any, id: String, size: String, format: String, displayName: String): js.Promise[Avatar] = js.native
+    def getAvatarPreview(container: Any, id: String, size: String, format: Unit, displayName: String): js.Promise[Avatar] = js.native
+    def getAvatarPreview(container: Any, id: String, size: Unit, format: String): js.Promise[Avatar] = js.native
+    def getAvatarPreview(container: Any, id: String, size: Unit, format: String, displayName: String): js.Promise[Avatar] = js.native
+    def getAvatarPreview(container: Any, id: String, size: Unit, format: Unit, displayName: String): js.Promise[Avatar] = js.native
     
     def getGeoRegion(ipaddress: String): js.Promise[GeoRegion] = js.native
     
@@ -303,14 +303,11 @@ object profileApiMod {
     
     def resetAvatar(id: String): js.Promise[Unit] = js.native
     
-    def setAvatar(container: js.Any, id: String): js.Promise[Unit] = js.native
+    def setAvatar(container: Any, id: String): js.Promise[Unit] = js.native
     
-    def setProfileAttribute(container: js.Any, id: String, descriptor: String): js.Promise[Unit] = js.native
+    def setProfileAttribute(container: Any, id: String, descriptor: String): js.Promise[Unit] = js.native
     
-    def setProfileAttributes(
-      attributesCollection: VssJsonCollectionWrapperV[js.Array[ProfileAttributeBase[js.Any]]],
-      id: String
-    ): js.Promise[Unit] = js.native
+    def setProfileAttributes(attributesCollection: VssJsonCollectionWrapperV[js.Array[ProfileAttributeBase[Any]]], id: String): js.Promise[Unit] = js.native
     
     def updateProfile(profile: Profile, id: String): js.Promise[Unit] = js.native
   }

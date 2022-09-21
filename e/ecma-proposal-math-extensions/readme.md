@@ -10,10 +10,10 @@ Tests and a polyfill for the ES2017 Math Extensions Proposal
 | ------------------ | :-------------: |
 | Full name          | ecma-proposal-math-extensions |
 | Keywords           | ecmascript, math, test262, Math.map, Math.remap, Math.scale, Math.clamp, Math.constrain, Math.radians, Math.degrees |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 5408 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1216.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/ecma-proposal-math-extensions)

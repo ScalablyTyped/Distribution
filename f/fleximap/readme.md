@@ -10,10 +10,10 @@ A flexible hash map which supports deep keys.
 | ------------------ | :-------------: |
 | Full name          | fleximap |
 | Keywords           | fleximap, flexible, hashmap, deep, keys, multidimensional |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 1041765 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 43649.333333333336 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/fleximap#readme)

@@ -9,7 +9,7 @@ trait BatchGetFrameMetricDataResponse extends StObject {
   /**
     *  The end time of the time period for the returned time series values. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var endTime: Timestamp
+  var endTime: js.Date
   
   /**
     *  List of instances, or time steps, in the time series. For example, if the period is one day (PT24H)), and the resolution is five minutes (PT5M), then there are 288 endTimes in the list that are each five minutes appart. 
@@ -29,7 +29,7 @@ trait BatchGetFrameMetricDataResponse extends StObject {
   /**
     *  The start time of the time period for the returned time series values. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var startTime: Timestamp
+  var startTime: js.Date
   
   /**
     * List of instances which remained unprocessed. This will create a missing time step in the list of end times.
@@ -39,11 +39,11 @@ trait BatchGetFrameMetricDataResponse extends StObject {
 object BatchGetFrameMetricDataResponse {
   
   inline def apply(
-    endTime: Timestamp,
+    endTime: js.Date,
     endTimes: ListOfTimestamps,
     frameMetricData: FrameMetricData,
     resolution: AggregationPeriod,
-    startTime: Timestamp,
+    startTime: js.Date,
     unprocessedEndTimes: UnprocessedEndTimeMap
   ): BatchGetFrameMetricDataResponse = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], endTimes = endTimes.asInstanceOf[js.Any], frameMetricData = frameMetricData.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], unprocessedEndTimes = unprocessedEndTimes.asInstanceOf[js.Any])
@@ -52,19 +52,19 @@ object BatchGetFrameMetricDataResponse {
   
   extension [Self <: BatchGetFrameMetricDataResponse](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimes(value: ListOfTimestamps): Self = StObject.set(x, "endTimes", value.asInstanceOf[js.Any])
     
-    inline def setEndTimesVarargs(value: TimestampStructure*): Self = StObject.set(x, "endTimes", js.Array(value :_*))
+    inline def setEndTimesVarargs(value: TimestampStructure*): Self = StObject.set(x, "endTimes", js.Array(value*))
     
     inline def setFrameMetricData(value: FrameMetricData): Self = StObject.set(x, "frameMetricData", value.asInstanceOf[js.Any])
     
-    inline def setFrameMetricDataVarargs(value: FrameMetricDatum*): Self = StObject.set(x, "frameMetricData", js.Array(value :_*))
+    inline def setFrameMetricDataVarargs(value: FrameMetricDatum*): Self = StObject.set(x, "frameMetricData", js.Array(value*))
     
     inline def setResolution(value: AggregationPeriod): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedEndTimes(value: UnprocessedEndTimeMap): Self = StObject.set(x, "unprocessedEndTimes", value.asInstanceOf[js.Any])
   }

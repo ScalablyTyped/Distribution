@@ -25,7 +25,7 @@ trait Widget
   def init(selector: String): Unit = js.native
   def init(selector: String, options: js.Object): Unit = js.native
   
-  var options: js.Any = js.native
+  var options: Any = js.native
   
   def resize(): Unit = js.native
   def resize(force: Boolean): Unit = js.native

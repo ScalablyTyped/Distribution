@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object resultMod {
   
-  @JSImport("@storybook/addon-jest/dist/components/Result", JSImport.Namespace)
+  @JSImport("@storybook/addon-jest/dist/ts3.9/components/Result", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -17,7 +17,7 @@ object resultMod {
   
   trait ResultProps extends StObject {
     
-    var failureMessages: js.Any
+    var failureMessages: Any
     
     var fullName: js.UndefOr[String] = js.undefined
     
@@ -27,14 +27,14 @@ object resultMod {
   }
   object ResultProps {
     
-    inline def apply(failureMessages: js.Any, status: String): ResultProps = {
+    inline def apply(failureMessages: Any, status: String): ResultProps = {
       val __obj = js.Dynamic.literal(failureMessages = failureMessages.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultProps]
     }
     
     extension [Self <: ResultProps](x: Self) {
       
-      inline def setFailureMessages(value: js.Any): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
+      inline def setFailureMessages(value: Any): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
       
       inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       

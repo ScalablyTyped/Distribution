@@ -17,7 +17,7 @@ trait PivotLineCells extends StObject {
   
   def Item(Index: Double): PivotCell = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): PivotCell = js.native
+  def _Default(Index: Any): PivotCell = js.native
 }

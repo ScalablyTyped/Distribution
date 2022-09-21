@@ -6,14 +6,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto")
 @js.native
-class FileDescriptorProto () extends Message {
+open class FileDescriptorProto () extends Message {
   
   def addDependency(value: String): String = js.native
   def addDependency(value: String, index: Double): String = js.native
@@ -135,7 +134,7 @@ object FileDescriptorProto {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): FileDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorProto]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): FileDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorProto]
   
   inline def deserializeBinaryFromReader(message: FileDescriptorProto, reader: BinaryReader): FileDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorProto]
   
@@ -199,19 +198,19 @@ object FileDescriptorProto {
       
       inline def setDependencyList(value: js.Array[String]): Self = StObject.set(x, "dependencyList", value.asInstanceOf[js.Any])
       
-      inline def setDependencyListVarargs(value: String*): Self = StObject.set(x, "dependencyList", js.Array(value :_*))
+      inline def setDependencyListVarargs(value: String*): Self = StObject.set(x, "dependencyList", js.Array(value*))
       
       inline def setEnumTypeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject]): Self = StObject.set(x, "enumTypeList", value.asInstanceOf[js.Any])
       
-      inline def setEnumTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject*): Self = StObject.set(x, "enumTypeList", js.Array(value :_*))
+      inline def setEnumTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject*): Self = StObject.set(x, "enumTypeList", js.Array(value*))
       
       inline def setExtensionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]): Self = StObject.set(x, "extensionList", value.asInstanceOf[js.Any])
       
-      inline def setExtensionListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "extensionList", js.Array(value :_*))
+      inline def setExtensionListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "extensionList", js.Array(value*))
       
       inline def setMessageTypeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.AsObject]): Self = StObject.set(x, "messageTypeList", value.asInstanceOf[js.Any])
       
-      inline def setMessageTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.AsObject*): Self = StObject.set(x, "messageTypeList", js.Array(value :_*))
+      inline def setMessageTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.AsObject*): Self = StObject.set(x, "messageTypeList", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -227,11 +226,11 @@ object FileDescriptorProto {
       
       inline def setPublicDependencyList(value: js.Array[Double]): Self = StObject.set(x, "publicDependencyList", value.asInstanceOf[js.Any])
       
-      inline def setPublicDependencyListVarargs(value: Double*): Self = StObject.set(x, "publicDependencyList", js.Array(value :_*))
+      inline def setPublicDependencyListVarargs(value: Double*): Self = StObject.set(x, "publicDependencyList", js.Array(value*))
       
       inline def setServiceList(value: js.Array[typings.googleProtobuf.descriptorPbMod.ServiceDescriptorProto.AsObject]): Self = StObject.set(x, "serviceList", value.asInstanceOf[js.Any])
       
-      inline def setServiceListVarargs(value: typings.googleProtobuf.descriptorPbMod.ServiceDescriptorProto.AsObject*): Self = StObject.set(x, "serviceList", js.Array(value :_*))
+      inline def setServiceListVarargs(value: typings.googleProtobuf.descriptorPbMod.ServiceDescriptorProto.AsObject*): Self = StObject.set(x, "serviceList", js.Array(value*))
       
       inline def setSourceCodeInfo(value: typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.AsObject): Self = StObject.set(x, "sourceCodeInfo", value.asInstanceOf[js.Any])
       
@@ -243,7 +242,7 @@ object FileDescriptorProto {
       
       inline def setWeakDependencyList(value: js.Array[Double]): Self = StObject.set(x, "weakDependencyList", value.asInstanceOf[js.Any])
       
-      inline def setWeakDependencyListVarargs(value: Double*): Self = StObject.set(x, "weakDependencyList", js.Array(value :_*))
+      inline def setWeakDependencyListVarargs(value: Double*): Self = StObject.set(x, "weakDependencyList", js.Array(value*))
     }
   }
 }

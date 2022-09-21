@@ -10,15 +10,12 @@ The most efficient JS implementation calculating the Levenshtein distance, i.e. 
 | ------------------ | :-------------: |
 | Full name          | js-levenshtein |
 | Keywords           | levenshtein, distance, algorithm, algo, string, difference, diff, fast, fuzzy, similar, similarity, compare, comparison, edit, text, match, matching |
-| # releases         | 0 |
-| # dependents       | 67 |
-| # downloads        | 152323294 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0372759666666666E7 |
+| # stars            | 337.0 |
 
 ## Links
-- [Homepage](https://github.com/gustf/js-levenshtein#readme)
-- [Bugs](https://github.com/gustf/js-levenshtein/issues)
-- [Repository](https://github.com/gustf/js-levenshtein)
 - [Npm](https://www.npmjs.com/package/js-levenshtein)
     
 

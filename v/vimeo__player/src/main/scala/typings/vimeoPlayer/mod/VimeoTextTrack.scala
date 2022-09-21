@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VimeoTextTrack extends StObject {
   
-  var kind: String
+  var kind: TrackKind
   
   var label: String
   
@@ -16,14 +16,14 @@ trait VimeoTextTrack extends StObject {
 }
 object VimeoTextTrack {
   
-  inline def apply(kind: String, label: String, language: String): VimeoTextTrack = {
+  inline def apply(kind: TrackKind, label: String, language: String): VimeoTextTrack = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
     __obj.asInstanceOf[VimeoTextTrack]
   }
   
   extension [Self <: VimeoTextTrack](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: TrackKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,7 @@ trait IEditSession
     * @param marker object with update method
     * @param inFront Set to `true` to establish a front marker
     **/
-  def addDynamicMarker(marker: js.Any, inFront: Boolean): Unit = js.native
+  def addDynamicMarker(marker: Any, inFront: Boolean): Unit = js.native
   
   def addFold(text: String, range: Range): Unit = js.native
   
@@ -118,7 +118,7 @@ trait IEditSession
     * @param docRow The document row to check
     * @param docColumn The document column to check
     **/
-  def documentToScreenPosition(docRow: Double, docColumn: Double): js.Any = js.native
+  def documentToScreenPosition(docRow: Double, docColumn: Double): Any = js.native
   
   /**
     * For the given document row and column, returns the screen row.
@@ -134,7 +134,7 @@ trait IEditSession
     **/
   def duplicateLines(firstRow: Double, lastRow: Double): Double = js.native
   
-  def expandFold(arg: js.Any): Unit = js.native
+  def expandFold(arg: Any): Unit = js.native
   
   def findMatchingBracket(position: Position): Unit = js.native
   
@@ -152,12 +152,12 @@ trait IEditSession
     * @param row The row number to start from
     * @param column The column number to start from
     **/
-  def getAWordRange(row: Double, column: Double): js.Any = js.native
+  def getAWordRange(row: Double, column: Double): Any = js.native
   
   /**
     * Returns the annotations for the `EditSession`.
     **/
-  def getAnnotations(): js.Any = js.native
+  def getAnnotations(): Any = js.native
   
   /**
     * Returns an array of numbers, indicating which rows have breakpoints.
@@ -183,11 +183,11 @@ trait IEditSession
     **/
   def getDocumentLastRowColumnPosition(docRow: Double, docColumn: Double): Double = js.native
   
-  def getFoldAt(row: Double, column: Double): js.Any = js.native
+  def getFoldAt(row: Double, column: Double): Any = js.native
   
-  def getFoldDisplayLine(foldLine: js.Any, docRow: Double, docColumn: Double): js.Any = js.native
+  def getFoldDisplayLine(foldLine: Any, docRow: Double, docColumn: Double): Any = js.native
   
-  def getFoldsInRange(range: Range): js.Any = js.native
+  def getFoldsInRange(range: Range): Any = js.native
   
   /**
     * Returns the number of rows in the document.
@@ -211,7 +211,7 @@ trait IEditSession
     * Returns an array containing the IDs of all the markers, either front or back.
     * @param inFront If `true`, indicates you only want front markers; `false` indicates only back markers
     **/
-  def getMarkers(inFront: Boolean): js.Array[js.Any] = js.native
+  def getMarkers(inFront: Boolean): js.Array[Any] = js.native
   
   /**
     * Returns the current text mode.
@@ -352,7 +352,7 @@ trait IEditSession
     * Returns an object that defines the minimum and maximum of the wrap limit; it looks something like this:
     * { min: wrapLimitRange_min, max: wrapLimitRange_max }
     **/
-  def getWrapLimitRange(): js.Any = js.native
+  def getWrapLimitRange(): Any = js.native
   
   def highlight(text: String): Unit = js.native
   
@@ -379,13 +379,13 @@ trait IEditSession
     * @param position The position {row, column} to start inserting at
     * @param text A chunk of text to insert
     **/
-  def insert(position: Position, text: String): js.Any = js.native
+  def insert(position: Position, text: String): Any = js.native
   
   /**
     * Returns `true` if the character at the position is a soft tab.
     * @param position The position to check
     **/
-  def isTabStop(position: js.Any): Boolean = js.native
+  def isTabStop(position: Any): Boolean = js.native
   
   /**
     * Shifts all the lines in the document down one, starting from `firstRow` and ending at `lastRow`.
@@ -409,9 +409,9 @@ trait IEditSession
     * @param fromRange The range of text you want moved within the document
     * @param toPosition The location (row and column) where you want to move the text to
     **/
-  def moveText(fromRange: Range, toPosition: js.Any): Range = js.native
+  def moveText(fromRange: Range, toPosition: Any): Range = js.native
   
-  def on(event: String, fn: js.Function1[/* e */ js.Any, js.Any]): Unit = js.native
+  def on(event: String, fn: js.Function1[/* e */ Any, Any]): Unit = js.native
   
   /**
     * Reloads all the tokens on the current session. This function calls [[BackgroundTokenizer.start `BackgroundTokenizer.start ()`]] to all the rows; it also emits the `'tokenizerUpdate'` event.
@@ -429,15 +429,15 @@ trait IEditSession
     * @param deltas An array of previous changes
     * @param dontSelect {:dontSelect}
     **/
-  def redoChanges(deltas: js.Array[js.Any], dontSelect: Boolean): Range = js.native
+  def redoChanges(deltas: js.Array[Any], dontSelect: Boolean): Range = js.native
   
   /**
     * Removes the `range` from the document.
     * @param range A specified Range to remove
     **/
-  def remove(range: Range): js.Any = js.native
+  def remove(range: Range): Any = js.native
   
-  def removeFold(arg: js.Any): Unit = js.native
+  def removeFold(arg: Any): Unit = js.native
   
   /**
     * Removes `className` from the `row`.
@@ -457,7 +457,7 @@ trait IEditSession
     * @param range A specified Range to replace
     * @param text The new text to use as a replacement
     **/
-  def replace(range: Range, text: String): js.Any = js.native
+  def replace(range: Range, text: String): Any = js.native
   
   def screenToDocumentColumn(row: Double, column: Double): Unit = js.native
   
@@ -466,7 +466,7 @@ trait IEditSession
     * @param screenRow The screen row to check
     * @param screenColumn The screen column to check
     **/
-  def screenToDocumentPosition(screenRow: Double, screenColumn: Double): js.Any = js.native
+  def screenToDocumentPosition(screenRow: Double, screenColumn: Double): Any = js.native
   
   var selection: Selection = js.native
   
@@ -487,7 +487,7 @@ trait IEditSession
     * Sets a breakpoint on every row number given by `rows`. This function also emites the `'changeBreakpoint'` event.
     * @param rows An array of row indices
     **/
-  def setBreakpoints(rows: js.Array[js.Any]): Unit = js.native
+  def setBreakpoints(rows: js.Array[Any]): Unit = js.native
   
   /**
     * Sets the `EditSession` to point to a new `Document`. If a `BackgroundTokenizer` exists, it also points to `doc`.
@@ -581,7 +581,7 @@ trait IEditSession
     * @param deltas An array of previous changes
     * @param dontSelect [If `true`, doesn't select the range of where the change occured]{: #dontSelect}
     **/
-  def undoChanges(deltas: js.Array[js.Any], dontSelect: Boolean): Range = js.native
+  def undoChanges(deltas: js.Array[Any], dontSelect: Boolean): Range = js.native
   
-  def unfold(arg1: js.Any, arg2: Boolean): Unit = js.native
+  def unfold(arg1: Any, arg2: Boolean): Unit = js.native
 }

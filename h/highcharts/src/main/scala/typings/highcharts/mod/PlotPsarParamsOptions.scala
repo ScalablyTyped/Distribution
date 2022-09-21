@@ -36,6 +36,8 @@ trait PlotPsarParamsOptions extends StObject {
     * maximum of maxAccelerationFactor, no matter how long the uptrend extends.
     */
   var maxAccelerationFactor: js.UndefOr[Double] = js.undefined
+  
+  var period: js.UndefOr[String] = js.undefined
 }
 object PlotPsarParamsOptions {
   
@@ -65,5 +67,9 @@ object PlotPsarParamsOptions {
     inline def setMaxAccelerationFactor(value: Double): Self = StObject.set(x, "maxAccelerationFactor", value.asInstanceOf[js.Any])
     
     inline def setMaxAccelerationFactorUndefined: Self = StObject.set(x, "maxAccelerationFactor", js.undefined)
+    
+    inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

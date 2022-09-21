@@ -10,10 +10,10 @@ A React Notification System fully customized
 | ------------------ | :-------------: |
 | Full name          | react-notification-system |
 | Keywords           | react, notification, notification system, component, react component, react-component |
-| # releases         | 3 |
-| # dependents       | 50 |
-| # downloads        | 2554271 |
-| # stars            | 12 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 207083.0 |
+| # stars            | 2439.0 |
 
 ## Links
 - [Homepage](https://github.com/igorprado/react-notification-system)

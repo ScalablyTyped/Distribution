@@ -23,7 +23,7 @@ trait TopologyConfig extends StObject {
   var userStageToComputationNameMap: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig & TopLevel[Any]
   ] = js.undefined
 }
 object TopologyConfig {
@@ -39,13 +39,13 @@ object TopologyConfig {
     
     inline def setComputationsUndefined: Self = StObject.set(x, "computations", js.undefined)
     
-    inline def setComputationsVarargs(value: ComputationTopology*): Self = StObject.set(x, "computations", js.Array(value :_*))
+    inline def setComputationsVarargs(value: ComputationTopology*): Self = StObject.set(x, "computations", js.Array(value*))
     
     inline def setDataDiskAssignments(value: js.Array[DataDiskAssignment]): Self = StObject.set(x, "dataDiskAssignments", value.asInstanceOf[js.Any])
     
     inline def setDataDiskAssignmentsUndefined: Self = StObject.set(x, "dataDiskAssignments", js.undefined)
     
-    inline def setDataDiskAssignmentsVarargs(value: DataDiskAssignment*): Self = StObject.set(x, "dataDiskAssignments", js.Array(value :_*))
+    inline def setDataDiskAssignmentsVarargs(value: DataDiskAssignment*): Self = StObject.set(x, "dataDiskAssignments", js.Array(value*))
     
     inline def setForwardingKeyBits(value: Double): Self = StObject.set(x, "forwardingKeyBits", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object TopologyConfig {
     inline def setUserStageToComputationNameMap(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig & TopLevel[Any]
     ): Self = StObject.set(x, "userStageToComputationNameMap", value.asInstanceOf[js.Any])
     
     inline def setUserStageToComputationNameMapUndefined: Self = StObject.set(x, "userStageToComputationNameMap", js.undefined)

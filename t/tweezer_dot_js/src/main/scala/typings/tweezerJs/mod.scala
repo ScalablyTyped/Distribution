@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("tweezer.js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Tweezer {
     def this(opts: Options) = this()

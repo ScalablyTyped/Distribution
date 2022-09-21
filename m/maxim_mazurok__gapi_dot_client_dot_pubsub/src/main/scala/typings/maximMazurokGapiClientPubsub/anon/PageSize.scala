@@ -28,23 +28,20 @@ trait PageSize extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Maximum number of subscription names to return. */
+  /** Maximum number of topics to return. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /**
-    * The value returned by the last `ListTopicSubscriptionsResponse`; indicates that this is a continuation of a prior `ListTopicSubscriptions` call, and that the system should
-    * return the next page of data.
-    */
+  /** The value returned by the last `ListTopicsResponse`; indicates that this is a continuation of a prior `ListTopics` call, and that the system should return the next page of data. */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
+  /** Required. The name of the project in which to list topics. Format is `projects/{project-id}`. */
+  var project: String
+  
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Required. The name of the topic that subscriptions are attached to. Format is `projects/{project}/topics/{topic}`. */
-  var topic: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -54,8 +51,8 @@ trait PageSize extends StObject {
 }
 object PageSize {
   
-  inline def apply(topic: String): PageSize = {
-    val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
+  inline def apply(project: String): PageSize = {
+    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSize]
   }
   
@@ -101,11 +98,11 @@ object PageSize {
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

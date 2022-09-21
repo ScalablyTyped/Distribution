@@ -14,7 +14,7 @@ trait Target extends StObject {
   
   /**
     * A code or identifier for this diagnostic.
-    * Should be used for later processing, e.g. when providing [code actions](#CodeActionContext).
+    * Should be used for later processing, e.g. when providing {@link CodeActionContext code actions}.
     */
   var value: String | Double
 }

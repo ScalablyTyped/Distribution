@@ -9,9 +9,8 @@ object swipeActionDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/swipe-action/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends BasicSwipeActionExample
+  open class default () extends BasicSwipeActionExample
   
   @js.native
-  trait BasicSwipeActionExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicSwipeActionExample extends Component[Any, Any, Any]
 }

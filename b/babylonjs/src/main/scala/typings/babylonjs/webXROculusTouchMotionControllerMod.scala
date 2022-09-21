@@ -12,7 +12,7 @@ object webXROculusTouchMotionControllerMod {
   
   @JSImport("babylonjs/XR/motionController/webXROculusTouchMotionController", "WebXROculusTouchMotionController")
   @js.native
-  class WebXROculusTouchMotionController protected () extends WebXRAbstractMotionController {
+  open class WebXROculusTouchMotionController protected () extends WebXRAbstractMotionController {
     def this(
       scene: Scene,
       gamepadObject: IMinimalMotionControllerObject,
@@ -22,32 +22,32 @@ object webXROculusTouchMotionControllerMod {
       scene: Scene,
       gamepadObject: IMinimalMotionControllerObject,
       handedness: MotionControllerHandedness,
-      legacyMapping: Boolean
+      _legacyMapping: Boolean
     ) = this()
     def this(
       scene: Scene,
       gamepadObject: IMinimalMotionControllerObject,
       handedness: MotionControllerHandedness,
-      legacyMapping: Boolean,
+      _legacyMapping: Boolean,
       _forceLegacyControllers: Boolean
     ) = this()
     def this(
       scene: Scene,
       gamepadObject: IMinimalMotionControllerObject,
       handedness: MotionControllerHandedness,
-      legacyMapping: Unit,
+      _legacyMapping: Unit,
       _forceLegacyControllers: Boolean
     ) = this()
     
-    /* private */ var _forceLegacyControllers: js.Any = js.native
+    /* private */ var _forceLegacyControllers: Any = js.native
     
     /**
       * Is this the new type of oculus touch. At the moment both have the same profile and it is impossible to differentiate
       * between the touch and touch 2.
       */
-    /* private */ var _isQuest: js.Any = js.native
+    /* private */ var _isQuest: Any = js.native
     
-    /* private */ var _modelRootNode: js.Any = js.native
+    /* private */ var _modelRootNode: Any = js.native
     
     /* protected */ def _updateModel(): Unit = js.native
   }

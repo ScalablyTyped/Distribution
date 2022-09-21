@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @param {string} id A reference to a DIV by its ID as a string.
   */
-class Overview ()
+open class Overview ()
   extends typings.go.mod.Overview {
   /**
     * @param {HTMLDivElement} div A reference to a DIV element in the DOM.

@@ -10,15 +10,12 @@ Minimal ORM for mysql, postgresql and sqlite with complete arbitrary SQL query s
 | ------------------ | :-------------: |
 | Full name          | anydb-sql |
 | Keywords           | any, db, sql, orm, postgres, pg, postgresql, mysql, sqlite |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 5250 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 491.6666666666667 |
+| # stars            | 39.0 |
 
 ## Links
-- [Homepage](https://github.com/doxout/anydb-sql#readme)
-- [Bugs](https://github.com/doxout/anydb-sql/issues)
-- [Repository](https://github.com/doxout/anydb-sql)
 - [Npm](https://www.npmjs.com/package/anydb-sql)
     
 

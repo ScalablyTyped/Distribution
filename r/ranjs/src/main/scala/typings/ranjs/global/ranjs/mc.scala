@@ -14,7 +14,7 @@ object mc {
   
   @JSGlobal("ranjs.mc.RWM")
   @js.native
-  class RWM protected ()
+  open class RWM protected ()
     extends typings.ranjs.mod.mc.RWM {
     def this(logDensity: js.Function1[/* x */ js.Array[Double], Double]) = this()
     def this(logDensity: js.Function1[/* x */ js.Array[Double], Double], config: Dim) = this()

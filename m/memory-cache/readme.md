@@ -10,10 +10,10 @@ A simple in-memory cache. put(), get() and del()
 | ------------------ | :-------------: |
 | Full name          | memory-cache |
 | Keywords           | cache, ram, simple, storage |
-| # releases         | 0 |
-| # dependents       | 367 |
-| # downloads        | 9428025 |
-| # stars            | 63 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1860909.0 |
+| # stars            | 1487.0 |
 
 ## Links
 - [Homepage](https://github.com/ptarjan/node-cache#readme)

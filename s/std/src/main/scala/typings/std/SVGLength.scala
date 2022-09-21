@@ -7,38 +7,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Correspond to the <length> basic data type. */
 trait SVGLength extends StObject {
   
+  /* standard dom */
   val SVG_LENGTHTYPE_CM: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_EMS: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_EXS: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_IN: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_MM: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_NUMBER: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_PC: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_PERCENTAGE: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_PT: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_PX: Double
   
+  /* standard dom */
   val SVG_LENGTHTYPE_UNKNOWN: Double
   
+  /* standard dom */
   def convertToSpecifiedUnits(unitType: Double): Unit
   
+  /* standard dom */
   def newValueSpecifiedUnits(unitType: Double, valueInSpecifiedUnits: Double): Unit
   
+  /* standard dom */
   val unitType: Double
   
+  /* standard dom */
   var value: Double
   
+  /* standard dom */
   var valueAsString: java.lang.String
   
+  /* standard dom */
   var valueInSpecifiedUnits: Double
 }
 object SVGLength {

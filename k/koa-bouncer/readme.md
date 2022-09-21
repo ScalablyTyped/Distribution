@@ -10,10 +10,10 @@ A parameter validation library for Koa routes
 | ------------------ | :-------------: |
 | Full name          | koa-bouncer |
 | Keywords           | validation, koa |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 12007 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2110.0 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/danneu/koa-bouncer)

@@ -1,6 +1,5 @@
 package typings.awsSdkClientCognitoIdentityBrowser
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object typesCredentialsMod {
     /**
       * <p>The date at which these credentials will expire.</p>
       */
-    var Expiration: js.UndefOr[Date | String | Double] = js.undefined
+    var Expiration: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The Secret Access Key portion of the credentials</p>
@@ -42,7 +41,7 @@ object typesCredentialsMod {
       
       inline def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
       
-      inline def setExpiration(value: Date | String | Double): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: js.Date | String | Double): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
       
       inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
       
@@ -64,7 +63,7 @@ object typesCredentialsMod {
       * <p>The date at which these credentials will expire.</p>
       */
     @JSName("Expiration")
-    var Expiration_UnmarshalledCredentials: js.UndefOr[Date] = js.undefined
+    var Expiration_UnmarshalledCredentials: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledCredentials {
     
@@ -75,7 +74,7 @@ object typesCredentialsMod {
     
     extension [Self <: UnmarshalledCredentials](x: Self) {
       
-      inline def setExpiration(value: Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: js.Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
       
       inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     }

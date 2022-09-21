@@ -1,6 +1,5 @@
 package typings.postcssSelectorParser.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +13,8 @@ trait Root_
     * Raises an error, if the processor is invoked on
     * a postcss Rule node, a better error message is raised.
     */
-  def error(message: String): Error = js.native
-  def error(message: String, options: ErrorOptions): Error = js.native
+  def error(message: String): js.Error = js.native
+  def error(message: String, options: ErrorOptions): js.Error = js.native
   
   def nodeAt(line: Double, column: Double): Node = js.native
   

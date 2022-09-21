@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for BigtableInstanceAdmin.PartialUpdateInstance.
-  */
 trait SchemaPartialUpdateInstanceRequest extends StObject {
   
   /**
-    * The Instance which will (partially) replace the current value.
+    * Required. The Instance which will (partially) replace the current value.
     */
   var instance: js.UndefOr[SchemaInstance] = js.undefined
   
   /**
-    * The subset of Instance fields which should be replaced. Must be
-    * explicitly set.
+    * Required. The subset of Instance fields which should be replaced. Must be explicitly set.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPartialUpdateInstanceRequest {
   
@@ -34,6 +30,8 @@ object SchemaPartialUpdateInstanceRequest {
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

@@ -8,5 +8,5 @@ object traceUsersMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_TraceUsers", "_TraceUsers")
   @js.native
-  val TraceUsers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val TraceUsers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

@@ -25,9 +25,6 @@ trait QuotaUserUploadType extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the job. */
-  var location: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -48,8 +45,8 @@ trait QuotaUserUploadType extends StObject {
 }
 object QuotaUserUploadType {
   
-  inline def apply(location: String, projectId: String): QuotaUserUploadType = {
-    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+  inline def apply(projectId: String): QuotaUserUploadType = {
+    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUserUploadType]
   }
   
@@ -78,8 +75,6 @@ object QuotaUserUploadType {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
-    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     

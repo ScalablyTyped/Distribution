@@ -19,11 +19,11 @@ trait FieldLevelEncryption extends StObject {
   /**
     * The last time the field-level encryption configuration was changed. 
     */
-  var LastModifiedTime: timestamp
+  var LastModifiedTime: js.Date
 }
 object FieldLevelEncryption {
   
-  inline def apply(FieldLevelEncryptionConfig: FieldLevelEncryptionConfig, Id: String, LastModifiedTime: timestamp): FieldLevelEncryption = {
+  inline def apply(FieldLevelEncryptionConfig: FieldLevelEncryptionConfig, Id: String, LastModifiedTime: js.Date): FieldLevelEncryption = {
     val __obj = js.Dynamic.literal(FieldLevelEncryptionConfig = FieldLevelEncryptionConfig.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldLevelEncryption]
   }
@@ -34,6 +34,6 @@ object FieldLevelEncryption {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

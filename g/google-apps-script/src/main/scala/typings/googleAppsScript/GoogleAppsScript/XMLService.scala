@@ -734,7 +734,7 @@ object XMLService {
   @js.native
   trait XmlService extends StObject {
     
-    var ContentTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentType */ js.Any = js.native
+    var ContentTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentType */ Any = js.native
     
     def createCdata(text: String): Cdata = js.native
     

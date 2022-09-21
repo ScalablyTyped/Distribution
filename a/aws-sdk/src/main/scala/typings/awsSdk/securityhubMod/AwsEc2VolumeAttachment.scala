@@ -22,7 +22,7 @@ trait AwsEc2VolumeAttachment extends StObject {
   var InstanceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The attachment state of the volume.
+    * The attachment state of the volume. Valid values are as follows:    attaching     attached     busy     detaching     detached   
     */
   var Status: js.UndefOr[NonEmptyString] = js.undefined
 }

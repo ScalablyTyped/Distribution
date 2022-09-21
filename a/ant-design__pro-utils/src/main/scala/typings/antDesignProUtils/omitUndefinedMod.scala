@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object omitUndefinedMod {
   
-  @JSImport("@ant-design/pro-utils/lib/omitUndefined", JSImport.Namespace)
+  @JSImport("@ant-design/pro-utils/es/omitUndefined", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def omitUndefined[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("omitUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
 }

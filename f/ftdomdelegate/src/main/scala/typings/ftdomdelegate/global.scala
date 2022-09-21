@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("Delegate")
   @js.native
-  class Delegate protected ()
+  open class Delegate protected ()
     extends StObject
        with typings.ftdomdelegate.Delegate {
     def this(element: HTMLElement) = this()

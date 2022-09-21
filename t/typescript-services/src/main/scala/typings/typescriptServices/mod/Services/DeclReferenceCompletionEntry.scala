@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.DeclReferenceCompletionEntry")
 @js.native
-class DeclReferenceCompletionEntry protected ()
+open class DeclReferenceCompletionEntry protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.DeclReferenceCompletionEntry {
   def this(name: String, kind: String, kindModifiers: String, decl: PullDecl) = this()
@@ -22,7 +22,7 @@ class DeclReferenceCompletionEntry protected ()
   var fullSymbolName: String = js.native
   
   /* private */ /* CompleteClass */
-  var hasBeenResolved: js.Any = js.native
+  var hasBeenResolved: Any = js.native
   
   /* CompleteClass */
   override def isResolved(): Boolean = js.native

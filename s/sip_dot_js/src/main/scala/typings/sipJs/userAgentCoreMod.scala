@@ -10,7 +10,7 @@ object userAgentCoreMod {
   
   @JSImport("sip.js/lib/core/user-agent-core", "UserAgentCore")
   @js.native
-  class UserAgentCore protected ()
+  open class UserAgentCore protected ()
     extends typings.sipJs.userAgentCoreUserAgentCoreMod.UserAgentCore {
     /**
       * Constructor.

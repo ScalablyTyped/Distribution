@@ -22,7 +22,7 @@ object anon {
     /**
       * Error message
       */
-    var message: js.UndefOr[js.Any] & String
+    var message: js.UndefOr[Any] & String
     
     /**
       * Error name
@@ -53,7 +53,7 @@ object anon {
   }
   object Optionsmessagestring {
     
-    inline def apply(message: js.UndefOr[js.Any] & String): Optionsmessagestring = {
+    inline def apply(message: js.UndefOr[Any] & String): Optionsmessagestring = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsmessagestring]
     }
@@ -68,7 +68,7 @@ object anon {
       
       inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      inline def setMessage(value: js.UndefOr[js.Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.UndefOr[Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -104,7 +104,7 @@ object anon {
     /**
       * Error message
       */
-    var message: js.UndefOr[js.Any] & String
+    var message: js.UndefOr[Any] & String
     
     /**
       * Error name
@@ -137,7 +137,7 @@ object anon {
   }
   object Optionspluginstringmessag {
     
-    inline def apply(message: js.UndefOr[js.Any] & String, plugin: String): Optionspluginstringmessag = {
+    inline def apply(message: js.UndefOr[Any] & String, plugin: String): Optionspluginstringmessag = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionspluginstringmessag]
     }
@@ -152,7 +152,7 @@ object anon {
       
       inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      inline def setMessage(value: js.UndefOr[js.Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.UndefOr[Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -177,6 +177,9 @@ object anon {
   /* Inlined plugin-error.plugin-error.PluginError<{}> */
   trait PluginError extends StObject {
     
+    /* standard es2022.error */
+    var cause: js.UndefOr[Any] = js.undefined
+    
     /**
       * File name where the error occurred
       */
@@ -187,8 +190,10 @@ object anon {
       */
     var lineNumber: js.UndefOr[Double] = js.undefined
     
+    /* standard es5 */
     var message: String
     
+    /* standard es5 */
     var name: String
     
     /**
@@ -206,6 +211,7 @@ object anon {
       */
     var showStack: Boolean
     
+    /* standard es5 */
     var stack: js.UndefOr[String] = js.undefined
   }
   object PluginError {
@@ -216,6 +222,10 @@ object anon {
     }
     
     extension [Self <: PluginError](x: Self) {
+      
+      inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      
+      inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       

@@ -2,6 +2,7 @@ package typings.reactRange
 
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.RefObject
 import typings.reactRange.anon.DraggedThumbIndex
 import typings.reactRange.anon.X
@@ -20,7 +21,7 @@ object rangeMod {
   
   @JSImport("react-range/lib/Range", JSImport.Default)
   @js.native
-  class default protected () extends Range {
+  open class default protected () extends Range {
     def this(props: IProps) = this()
   }
   object default {
@@ -76,7 +77,7 @@ object rangeMod {
   
   @js.native
   trait Range
-    extends Component[IProps, js.Object, js.Any] {
+    extends Component[IProps, js.Object, Any] {
     
     def addMouseEvents(e: MouseEvent): Unit = js.native
     
@@ -88,7 +89,7 @@ object rangeMod {
     def componentDidMount_MRange(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MRange(prevProps: IProps): Unit = js.native
+    def componentDidUpdate_MRange(prevProps: IProps, prevState: Any): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MRange(): Unit = js.native
@@ -101,11 +102,11 @@ object rangeMod {
     
     def getThumbs(): js.Array[Element] = js.native
     
-    var markRefs: js.Array[RefObject[HTMLElement]] = js.native
+    var markRefs: js.UndefOr[js.Array[RefObject[HTMLElement]]] = js.native
     
     def normalizeValue(value: Double, index: Double): Double = js.native
     
-    var numOfMarks: Double = js.native
+    var numOfMarks: js.UndefOr[Double] = js.native
     
     def onEnd(e: Event): js.UndefOr[Null] = js.native
     
@@ -113,7 +114,7 @@ object rangeMod {
     
     def onKeyUp(e: KeyboardEvent[Element]): Unit = js.native
     
-    def onMouseDownTrack(e: typings.react.mod.MouseEvent[Element, MouseEvent]): Unit = js.native
+    def onMouseDownTrack(e: typings.react.mod.MouseEvent[Element, NativeMouseEvent]): Unit = js.native
     
     def onMouseMove(e: MouseEvent): Unit = js.native
     
@@ -127,13 +128,11 @@ object rangeMod {
     
     def onTouchStartTrack(e: typings.react.mod.TouchEvent[Element]): Unit = js.native
     
-    var resizeObserver: js.Any = js.native
+    var resizeObserver: Any = js.native
     
     def schdOnEnd(e: Event): Unit = js.native
     
     def schdOnMouseMove(e: MouseEvent): Unit = js.native
-    
-    def schdOnResize(): Unit = js.native
     
     def schdOnTouchMove(e: TouchEvent): Unit = js.native
     
@@ -143,5 +142,7 @@ object rangeMod {
     var thumbRefs: js.Array[RefObject[HTMLElement]] = js.native
     
     var trackRef: RefObject[HTMLElement] = js.native
+    
+    def updateMarkRefs(props: IProps): Unit = js.native
   }
 }

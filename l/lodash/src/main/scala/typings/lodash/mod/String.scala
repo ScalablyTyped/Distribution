@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait String
   extends StObject
      with LoDashImplicitWrapper[java.lang.String]
-     with _ImpChain[js.Any] {
+     with _ImpChain[Any] {
   
   /**
     * @see _.castArray
@@ -30,24 +30,24 @@ trait String
     * @see _.each
     */
   def each(): String = js.native
-  def each(iteratee: StringIterator[js.Any]): String = js.native
+  def each(iteratee: StringIterator[Any]): String = js.native
   
   /**
     * @see _.eachRight
     */
   def eachRight(): String = js.native
-  def eachRight(iteratee: StringIterator[js.Any]): String = js.native
+  def eachRight(iteratee: StringIterator[Any]): String = js.native
   /**
     * @see _.eachRight
     */
   @JSName("eachRight")
-  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[js.Any]], String] = js.native
+  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[Any]], String] = js.native
   
   /**
     * @see _.each
     */
   @JSName("each")
-  var each_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[js.Any]], String] = js.native
+  var each_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[Any]], String] = js.native
   
   /**
     * @see _.filter
@@ -98,13 +98,13 @@ trait String
     * @see _.forEach
     */
   def forEach(): String = js.native
-  def forEach(iteratee: StringIterator[js.Any]): String = js.native
+  def forEach(iteratee: StringIterator[Any]): String = js.native
   
   /**
     * @see _.forEachRight
     */
   def forEachRight(): String = js.native
-  def forEachRight(iteratee: StringIterator[js.Any]): String = js.native
+  def forEachRight(iteratee: StringIterator[Any]): String = js.native
   
   def get(path: js.Array[Double]): java.lang.String = js.native
   def get(path: js.Array[Double], defaultValue: java.lang.String): java.lang.String = js.native
@@ -143,7 +143,7 @@ trait String
   /**
     * @see _.iteratee
     */
-  def iteratee(): Function[js.Function1[/* o */ js.Object, js.Any]] = js.native
+  def iteratee(): Function[js.Function1[/* o */ js.Object, Any]] = js.native
   
   /**
     * @see _.join

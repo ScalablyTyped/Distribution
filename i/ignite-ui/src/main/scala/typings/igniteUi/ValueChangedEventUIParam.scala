@@ -9,22 +9,22 @@ trait ValueChangedEventUIParam extends StObject {
   /**
     * Gets the editor input.
     */
-  var editorInput: js.UndefOr[js.Any] = js.undefined
+  var editorInput: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the value entered from the user after internal formatting. The argument type might differ depending on the editor type.
     */
-  var newValue: js.UndefOr[js.Any] = js.undefined
+  var newValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the value entered from the user before internal formatting. The argument type might differ depending on the editor type.
     */
-  var originalValue: js.UndefOr[js.Any] = js.undefined
+  var originalValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the editor.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ValueChangedEventUIParam {
   
@@ -35,19 +35,19 @@ object ValueChangedEventUIParam {
   
   extension [Self <: ValueChangedEventUIParam](x: Self) {
     
-    inline def setEditorInput(value: js.Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
+    inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     
     inline def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
     
-    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
-    inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+    inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     
     inline def setOriginalValueUndefined: Self = StObject.set(x, "originalValue", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

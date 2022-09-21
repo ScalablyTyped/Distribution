@@ -7,19 +7,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "SphereOutlineGeometry")
 @js.native
-class SphereOutlineGeometry () extends Packable {
+open class SphereOutlineGeometry () extends StObject {
   def this(options: SlicePartitions) = this()
 }
+/* static members */
 object SphereOutlineGeometry {
   
   @JSImport("cesium", "SphereOutlineGeometry")
   @js.native
   val ^ : js.Any = js.native
   
-  /* static member */
-  inline def createGeometry(sphereGeometry: SphereOutlineGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(sphereGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  /**
+    * Computes the geometric representation of an outline of a sphere, including its vertices, indices, and a bounding sphere.
+    * @param sphereGeometry - A description of the sphere outline.
+    * @returns The computed vertices and indices.
+    */
+  inline def createGeometry(sphereGeometry: SphereOutlineGeometry): js.UndefOr[Geometry] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(sphereGeometry.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Geometry]]
   
-  /* static member */
+  /**
+    * Stores the provided instance into the provided array.
+    * @param value - The value to pack.
+    * @param array - The array to pack into.
+    * @param [startingIndex = 0] - The index into the array at which to start packing the elements.
+    * @returns The array that was packed into
+    */
+  inline def pack(value: SphereOutlineGeometry, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def pack(value: SphereOutlineGeometry, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  /**
+    * The number of elements used to pack the object into an array.
+    */
+  @JSImport("cesium", "SphereOutlineGeometry.packedLength")
+  @js.native
+  def packedLength: Double = js.native
+  inline def packedLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("packedLength")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Retrieves an instance from a packed array.
+    * @param array - The packed array.
+    * @param [startingIndex = 0] - The starting index of the element to be unpacked.
+    * @param [result] - The object into which to store the result.
+    * @returns The modified result parameter or a new SphereOutlineGeometry instance if one was not provided.
+    */
   inline def unpack(array: js.Array[Double]): SphereOutlineGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[SphereOutlineGeometry]
   inline def unpack(array: js.Array[Double], startingIndex: Double): SphereOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[SphereOutlineGeometry]
   inline def unpack(array: js.Array[Double], startingIndex: Double, result: SphereOutlineGeometry): SphereOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[SphereOutlineGeometry]

@@ -8,7 +8,7 @@ object graphDataItemMod {
   
   @JSImport("amcharts/GraphDataItem", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with GraphDataItem {
     
@@ -64,7 +64,7 @@ object graphDataItemMod {
       * Array of colors of the data item, used by column and candlestick chart only.
       */
     /* CompleteClass */
-    var fillColors: js.Array[js.Any] = js.native
+    var fillColors: js.Array[Any] = js.native
     
     /**
       * Object which holds percents when recalculateToPercents is set to true.
@@ -148,7 +148,7 @@ object graphDataItemMod {
     /**
       * Array of colors of the data item, used by column and candlestick chart only.
       */
-    var fillColors: js.Array[js.Any]
+    var fillColors: js.Array[Any]
     
     /**
       * Object which holds percents when recalculateToPercents is set to true.
@@ -191,7 +191,7 @@ object graphDataItemMod {
       customBullet: String,
       dataContext: js.Object,
       description: String,
-      fillColors: js.Array[js.Any],
+      fillColors: js.Array[Any],
       percents: js.Object,
       serialDataItem: typings.amcharts.serialDataItemMod.default,
       url: String,
@@ -221,9 +221,9 @@ object graphDataItemMod {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      inline def setFillColors(value: js.Array[js.Any]): Self = StObject.set(x, "fillColors", value.asInstanceOf[js.Any])
+      inline def setFillColors(value: js.Array[Any]): Self = StObject.set(x, "fillColors", value.asInstanceOf[js.Any])
       
-      inline def setFillColorsVarargs(value: js.Any*): Self = StObject.set(x, "fillColors", js.Array(value :_*))
+      inline def setFillColorsVarargs(value: Any*): Self = StObject.set(x, "fillColors", js.Array(value*))
       
       inline def setPercents(value: js.Object): Self = StObject.set(x, "percents", value.asInstanceOf[js.Any])
       

@@ -20,6 +20,8 @@ object anon {
     
     var `private`: js.UndefOr[Boolean] = js.undefined
     
+    var proxyRevalidate: js.UndefOr[Boolean] = js.undefined
+    
     var public: js.UndefOr[Boolean] = js.undefined
     
     var sMaxAge: js.UndefOr[Double] = js.undefined
@@ -60,6 +62,10 @@ object anon {
       inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
       inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      
+      inline def setProxyRevalidate(value: Boolean): Self = StObject.set(x, "proxyRevalidate", value.asInstanceOf[js.Any])
+      
+      inline def setProxyRevalidateUndefined: Self = StObject.set(x, "proxyRevalidate", js.undefined)
       
       inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       

@@ -1,44 +1,36 @@
 package typings.domSerial
 
 import typings.domSerial.anon.PartialSerialPortInfo
+import typings.std.Event
+import typings.std.EventTarget
 import typings.std.ReadableStream
 import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SerialPort extends StObject {
+@js.native
+trait SerialPort
+  extends StObject
+     with EventTarget {
+  
+  def close(): js.Promise[Unit] = js.native
+  
+  def getInfo(): PartialSerialPortInfo = js.native
+  
+  def onconnect(event: Event): Unit = js.native
+  @JSName("onconnect")
+  var onconnect_Original: EventHandler = js.native
+  
+  def ondisconnect(event: Event): Unit = js.native
+  @JSName("ondisconnect")
+  var ondisconnect_Original: EventHandler = js.native
   
   // Chromium implementation (spec: out)
-  def getInfo(): PartialSerialPortInfo
+  def open(options: SerialOptions): js.Promise[Unit] = js.native
   
-  def open(options: SerialOptions): js.Promise[Unit]
-  
-  val readable: ReadableStream[js.Any]
+  val readable: ReadableStream[Any] = js.native
   
   // Chromium implementation (spec: in)
-  val writable: WritableStream[js.Any]
-}
-object SerialPort {
-  
-  inline def apply(
-    getInfo: () => PartialSerialPortInfo,
-    open: SerialOptions => js.Promise[Unit],
-    readable: ReadableStream[js.Any],
-    writable: WritableStream[js.Any]
-  ): SerialPort = {
-    val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction0(getInfo), open = js.Any.fromFunction1(open), readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SerialPort]
-  }
-  
-  extension [Self <: SerialPort](x: Self) {
-    
-    inline def setGetInfo(value: () => PartialSerialPortInfo): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
-    
-    inline def setOpen(value: SerialOptions => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
-    
-    inline def setReadable(value: ReadableStream[js.Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
-    
-    inline def setWritable(value: WritableStream[js.Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
-  }
+  val writable: WritableStream[Any] = js.native
 }

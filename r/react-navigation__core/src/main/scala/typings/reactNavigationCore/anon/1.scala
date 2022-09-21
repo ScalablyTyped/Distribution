@@ -1,24 +1,25 @@
 package typings.reactNavigationCore.anon
 
+import typings.reactNavigationRouters.typesMod.PartialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `1`[Data] extends StObject {
+trait `1` extends StObject {
   
-  val data: js.UndefOr[Data] = js.undefined
+  var state: js.UndefOr[Any | PartialState[Any]] = js.undefined
 }
 object `1` {
   
-  inline def apply[Data](): `1`[Data] = {
+  inline def apply(): `1` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`1`[Data]]
+    __obj.asInstanceOf[`1`]
   }
   
-  extension [Self <: `1`[?], Data](x: Self & `1`[Data]) {
+  extension [Self <: `1`](x: Self) {
     
-    inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setState(value: Any | PartialState[Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

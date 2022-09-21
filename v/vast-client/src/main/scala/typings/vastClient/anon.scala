@@ -1,6 +1,5 @@
 package typings.vastClient
 
-import typings.std.Error
 import typings.std.XMLDocument
 import typings.vastClient.mod.VastAdExtension
 import typings.vastClient.mod.VastSystem
@@ -13,8 +12,8 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
+    def apply(err: js.Error): Unit = js.native
     def apply(err: Null, xml: XMLDocument): Unit = js.native
-    def apply(err: Error): Unit = js.native
   }
   
   /* Inlined std.Pick<vast-client.vast-client.VastError, 'ERRORCODE'> */
@@ -61,7 +60,7 @@ object anon {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: VastAdExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: VastAdExtension*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setSystem(value: VastSystem | String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
       

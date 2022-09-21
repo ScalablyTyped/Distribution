@@ -38,7 +38,7 @@ object GoogleActionsV2PermissionValueSpec {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: GoogleActionsV2PermissionValueSpecPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: GoogleActionsV2PermissionValueSpecPermissions*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setUpdatePermissionValueSpec(value: GoogleActionsV2UpdatePermissionValueSpec): Self = StObject.set(x, "updatePermissionValueSpec", value.asInstanceOf[js.Any])
     

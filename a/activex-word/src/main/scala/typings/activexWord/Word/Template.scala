@@ -55,7 +55,7 @@ trait Template extends StObject {
   
   def OpenAsDocument(): Document
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Path: String
   
@@ -93,7 +93,7 @@ object Template {
     NoLineBreakBefore: String,
     NoProofing: Double,
     OpenAsDocument: () => Document,
-    Parent: js.Any,
+    Parent: Any,
     Path: String,
     Save: () => Unit,
     Saved: Boolean,
@@ -148,7 +148,7 @@ object Template {
     
     inline def setOpenAsDocument(value: () => Document): Self = StObject.set(x, "OpenAsDocument", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

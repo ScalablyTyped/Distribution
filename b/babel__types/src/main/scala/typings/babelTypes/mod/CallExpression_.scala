@@ -11,11 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait CallExpression_
   extends StObject
      with BaseNode
-     with Expression {
+     with Expression
+     with Standardized {
   
   var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
   
-  var callee: Expression | V8IntrinsicIdentifier_
+  var callee: Expression | Super_ | V8IntrinsicIdentifier_
   
   var optional: `true` | `false` | Null
   
@@ -30,7 +31,7 @@ object CallExpression_ {
   
   inline def apply(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
-    callee: Expression | V8IntrinsicIdentifier_
+    callee: Expression | Super_ | V8IntrinsicIdentifier_
   ): CallExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeArguments = null, typeParameters = null)
     __obj.updateDynamic("type")("CallExpression")
@@ -41,9 +42,9 @@ object CallExpression_ {
     
     inline def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: (Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_)*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: (Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_)*): Self = StObject.set(x, "arguments", js.Array(value*))
     
-    inline def setCallee(value: Expression | V8IntrinsicIdentifier_): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: Expression | Super_ | V8IntrinsicIdentifier_): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
     inline def setOptional(value: `true` | `false`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

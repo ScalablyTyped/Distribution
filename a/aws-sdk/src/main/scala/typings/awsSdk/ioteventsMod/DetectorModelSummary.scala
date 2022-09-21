@@ -9,7 +9,7 @@ trait DetectorModelSummary extends StObject {
   /**
     * The time the detector model was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A brief description of the detector model.
@@ -30,7 +30,7 @@ object DetectorModelSummary {
   
   extension [Self <: DetectorModelSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     

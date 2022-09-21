@@ -9,8 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WeakMapConstructor
   extends StObject
-     with Instantiable0[WeakMap[js.Object, js.Object]]
-     with Instantiable1[
-      (/* entries */ js.Array[js.Tuple2[js.Object, js.Object]]) | (/* iterable */ Iterable[js.Tuple2[js.Object, js.Object]]), 
+     with /* standard es2015.collection */
+Instantiable0[WeakMap[js.Object, js.Object]]
+     with /* standard es2015.iterable */
+Instantiable1[
+      (/* entries */ js.Array[js.Tuple2[js.Object, js.Object]]) | (/* iterable */ js.Iterable[js.Tuple2[js.Object, js.Object]]), 
       WeakMap[js.Object, js.Object]
     ]

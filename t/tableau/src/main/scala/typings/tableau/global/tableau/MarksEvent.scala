@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.MarksEvent")
 @js.native
-class MarksEvent ()
+open class MarksEvent ()
   extends StObject
      with typings.tableau.tableau.MarksEvent {
   

@@ -46,7 +46,7 @@ object Pnp {
     
     var id: String
     
-    var properties: IMapView[String, js.Any]
+    var properties: IMapView[String, Any]
     
     var `type`: PnpObjectType
     
@@ -56,7 +56,7 @@ object Pnp {
     
     inline def apply(
       id: String,
-      properties: IMapView[String, js.Any],
+      properties: IMapView[String, Any],
       `type`: PnpObjectType,
       update: PnpObjectUpdate => Unit
     ): IPnpObject = {
@@ -69,7 +69,7 @@ object Pnp {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -93,13 +93,13 @@ object Pnp {
     
     var id: String
     
-    var properties: IMapView[String, js.Any]
+    var properties: IMapView[String, Any]
     
     var `type`: PnpObjectType
   }
   object IPnpObjectUpdate {
     
-    inline def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): IPnpObjectUpdate = {
+    inline def apply(id: String, properties: IMapView[String, Any], `type`: PnpObjectType): IPnpObjectUpdate = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPnpObjectUpdate]
@@ -109,7 +109,7 @@ object Pnp {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -117,15 +117,15 @@ object Pnp {
   
   trait IPnpObjectWatcher extends StObject {
     
-    var onadded: js.Any
+    var onadded: Any
     
-    var onenumerationcompleted: js.Any
+    var onenumerationcompleted: Any
     
-    var onremoved: js.Any
+    var onremoved: Any
     
-    var onstopped: js.Any
+    var onstopped: Any
     
-    var onupdated: js.Any
+    var onupdated: Any
     
     def start(): Unit
     
@@ -136,11 +136,11 @@ object Pnp {
   object IPnpObjectWatcher {
     
     inline def apply(
-      onadded: js.Any,
-      onenumerationcompleted: js.Any,
-      onremoved: js.Any,
-      onstopped: js.Any,
-      onupdated: js.Any,
+      onadded: Any,
+      onenumerationcompleted: Any,
+      onremoved: Any,
+      onstopped: Any,
+      onupdated: Any,
       start: () => Unit,
       status: DeviceWatcherStatus,
       stop: () => Unit
@@ -151,15 +151,15 @@ object Pnp {
     
     extension [Self <: IPnpObjectWatcher](x: Self) {
       
-      inline def setOnadded(value: js.Any): Self = StObject.set(x, "onadded", value.asInstanceOf[js.Any])
+      inline def setOnadded(value: Any): Self = StObject.set(x, "onadded", value.asInstanceOf[js.Any])
       
-      inline def setOnenumerationcompleted(value: js.Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
+      inline def setOnenumerationcompleted(value: Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
       
-      inline def setOnremoved(value: js.Any): Self = StObject.set(x, "onremoved", value.asInstanceOf[js.Any])
+      inline def setOnremoved(value: Any): Self = StObject.set(x, "onremoved", value.asInstanceOf[js.Any])
       
-      inline def setOnstopped(value: js.Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
+      inline def setOnstopped(value: Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
       
-      inline def setOnupdated(value: js.Any): Self = StObject.set(x, "onupdated", value.asInstanceOf[js.Any])
+      inline def setOnupdated(value: Any): Self = StObject.set(x, "onupdated", value.asInstanceOf[js.Any])
       
       inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
@@ -176,7 +176,7 @@ object Pnp {
     
     inline def apply(
       id: String,
-      properties: IMapView[String, js.Any],
+      properties: IMapView[String, Any],
       `type`: PnpObjectType,
       update: PnpObjectUpdate => Unit
     ): PnpObject = {
@@ -196,7 +196,7 @@ object Pnp {
        with IPnpObjectUpdate
   object PnpObjectUpdate {
     
-    inline def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): PnpObjectUpdate = {
+    inline def apply(id: String, properties: IMapView[String, Any], `type`: PnpObjectType): PnpObjectUpdate = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PnpObjectUpdate]
@@ -209,11 +209,11 @@ object Pnp {
   object PnpObjectWatcher {
     
     inline def apply(
-      onadded: js.Any,
-      onenumerationcompleted: js.Any,
-      onremoved: js.Any,
-      onstopped: js.Any,
-      onupdated: js.Any,
+      onadded: Any,
+      onenumerationcompleted: Any,
+      onremoved: Any,
+      onstopped: Any,
+      onupdated: Any,
       start: () => Unit,
       status: DeviceWatcherStatus,
       stop: () => Unit

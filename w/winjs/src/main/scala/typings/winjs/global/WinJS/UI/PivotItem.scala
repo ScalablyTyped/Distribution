@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element The DOM element hosts the new PivotItem.
   * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
   **/
-class PivotItem ()
+open class PivotItem ()
   extends StObject
      with typings.winjs.WinJS.UI.PivotItem {
   def this(element: HTMLElement) = this()
-  def this(element: Unit, options: js.Any) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: Unit, options: Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
   
   //#endregion Methods
   //#region Properties
@@ -64,8 +64,8 @@ object PivotItem {
   /* static member */
   @JSGlobal("WinJS.UI.PivotItem.isDeclarativeControlContainer")
   @js.native
-  def isDeclarativeControlContainer: js.Any = js.native
-  inline def isDeclarativeControlContainer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDeclarativeControlContainer")(x.asInstanceOf[js.Any])
+  def isDeclarativeControlContainer: Any = js.native
+  inline def isDeclarativeControlContainer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDeclarativeControlContainer")(x.asInstanceOf[js.Any])
   
   /**
     * Indicates that the object is compatibile with declarative processing.

@@ -20,11 +20,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Input = StringDictionary[js.Any]
+  type Input = StringDictionary[Any]
   
   trait Package
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
     var _id: String
     
@@ -99,7 +99,7 @@ object mod {
       
       inline def setContributorsUndefined: Self = StObject.set(x, "contributors", js.undefined)
       
-      inline def setContributorsVarargs(value: Person*): Self = StObject.set(x, "contributors", js.Array(value :_*))
+      inline def setContributorsVarargs(value: Person*): Self = StObject.set(x, "contributors", js.Array(value*))
       
       inline def setDependencies(value: StringDictionary[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -121,7 +121,7 @@ object mod {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
       
@@ -131,7 +131,7 @@ object mod {
       
       inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
       
@@ -141,13 +141,13 @@ object mod {
       
       inline def setMaintainersUndefined: Self = StObject.set(x, "maintainers", js.undefined)
       
-      inline def setMaintainersVarargs(value: Person*): Self = StObject.set(x, "maintainers", js.Array(value :_*))
+      inline def setMaintainersVarargs(value: Person*): Self = StObject.set(x, "maintainers", js.Array(value*))
       
       inline def setMan(value: js.Array[String]): Self = StObject.set(x, "man", value.asInstanceOf[js.Any])
       
       inline def setManUndefined: Self = StObject.set(x, "man", js.undefined)
       
-      inline def setManVarargs(value: String*): Self = StObject.set(x, "man", js.Array(value :_*))
+      inline def setManVarargs(value: String*): Self = StObject.set(x, "man", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

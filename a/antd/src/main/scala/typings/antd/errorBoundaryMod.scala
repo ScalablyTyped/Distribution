@@ -12,22 +12,23 @@ object errorBoundaryMod {
   
   @JSImport("antd/lib/alert/ErrorBoundary", JSImport.Default)
   @js.native
-  class default () extends ErrorBoundary
+  open class default () extends ErrorBoundary
   
   @js.native
-  trait ErrorBoundary
-    extends Component[ErrorBoundaryProps, Error, js.Any] {
+  trait ErrorBoundary extends Component[ErrorBoundaryProps, Error, Any] {
     
     @JSName("componentDidCatch")
-    def componentDidCatch_MErrorBoundary(error: Null, info: js.Object): Unit = js.native
+    def componentDidCatch_MErrorBoundary(error: js.Error, info: js.Object): Unit = js.native
     @JSName("componentDidCatch")
-    def componentDidCatch_MErrorBoundary(error: typings.std.Error, info: js.Object): Unit = js.native
+    def componentDidCatch_MErrorBoundary(error: Null, info: js.Object): Unit = js.native
     
     @JSName("state")
     var state_ErrorBoundary: Info = js.native
   }
   
   trait ErrorBoundaryProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var description: js.UndefOr[ReactNode] = js.undefined
     
@@ -41,6 +42,10 @@ object errorBoundaryMod {
     }
     
     extension [Self <: ErrorBoundaryProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

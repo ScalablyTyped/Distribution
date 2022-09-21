@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Media
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -254,7 +253,7 @@ object Import {
     
     /** Gets the creation date of the imported item. */
     /* CompleteClass */
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     /** Gets a list of the names of files associated with this item that were deleted. */
     /* CompleteClass */
@@ -341,7 +340,7 @@ object Import {
       * @return An asynchronous operation that returns a list of available sources on successful completion.
       */
     /* static member */
-    inline def findAllSourcesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllSourcesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllSourcesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllSourcesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Gets the list of all pending photo import operations.
@@ -473,7 +472,7 @@ object Import {
     
     /** Gets the date of the sidecar or sibling file. */
     /* CompleteClass */
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     /** Gets the name of the sidecar or sibling file. */
     /* CompleteClass */
@@ -512,7 +511,7 @@ object Import {
     
     /** Gets the current date and time on the device. */
     /* CompleteClass */
-    var dateTime: Date = js.native
+    var dateTime: js.Date = js.native
     
     /** Gets a human-readable description of the source device. */
     /* CompleteClass */
@@ -706,7 +705,7 @@ object Import {
     
     /** Gets the date of the imported video segment. */
     /* CompleteClass */
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     /** Gets the name of the imported video segment. */
     /* CompleteClass */

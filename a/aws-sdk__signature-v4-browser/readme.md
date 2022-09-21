@@ -10,10 +10,10 @@ A standalone AWS Signature V4 request signer for browser JavaScript
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/signature-v4-browser |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 0 |
-| # downloads        | 808 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 103.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fsignature-v4-browser)

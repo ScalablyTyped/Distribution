@@ -10,7 +10,7 @@ trait JSTreeStaticDefaultsCore extends StObject {
     * the open / close animation duration in milliseconds - set this to `false` to disable the animation (default is `200`)
     * @name $.jstree.defaults.core.animation
     */
-  var animation: js.UndefOr[js.Any] = js.undefined
+  var animation: js.UndefOr[Any] = js.undefined
   
   /**
     * determines what happens when a user tries to modify the structure of the tree
@@ -31,7 +31,7 @@ trait JSTreeStaticDefaultsCore extends StObject {
     *
     * @name $.jstree.defaults.core.check_callback
     */
-  var check_callback: js.UndefOr[js.Any] = js.undefined
+  var check_callback: js.UndefOr[Any] = js.undefined
   
   /**
     * data configuration
@@ -87,7 +87,7 @@ trait JSTreeStaticDefaultsCore extends StObject {
     *
     * @name $.jstree.defaults.core.data
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * Should the node be toggled if the text is double clicked. Defaults to `true`
@@ -100,7 +100,7 @@ trait JSTreeStaticDefaultsCore extends StObject {
     * (operation prevented, ajax failed, etc)
     * @name $.jstree.defaults.core.error
     */
-  def error(): js.Any
+  def error(): Any
   
   /**
     * if left as `true` all parents of all selected nodes will be opened once the tree loads
@@ -160,7 +160,7 @@ trait JSTreeStaticDefaultsCore extends StObject {
     *
     * @name $.jstree.defaults.core.strings
     */
-  var strings: js.UndefOr[js.Any] = js.undefined
+  var strings: js.UndefOr[Any] = js.undefined
   
   /**
     * theme configuration object
@@ -178,22 +178,22 @@ trait JSTreeStaticDefaultsCore extends StObject {
 }
 object JSTreeStaticDefaultsCore {
   
-  inline def apply(error: () => js.Any): JSTreeStaticDefaultsCore = {
+  inline def apply(error: () => Any): JSTreeStaticDefaultsCore = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction0(error))
     __obj.asInstanceOf[JSTreeStaticDefaultsCore]
   }
   
   extension [Self <: JSTreeStaticDefaultsCore](x: Self) {
     
-    inline def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setCheck_callback(value: js.Any): Self = StObject.set(x, "check_callback", value.asInstanceOf[js.Any])
+    inline def setCheck_callback(value: Any): Self = StObject.set(x, "check_callback", value.asInstanceOf[js.Any])
     
     inline def setCheck_callbackUndefined: Self = StObject.set(x, "check_callback", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -201,7 +201,7 @@ object JSTreeStaticDefaultsCore {
     
     inline def setDblclick_toggleUndefined: Self = StObject.set(x, "dblclick_toggle", js.undefined)
     
-    inline def setError(value: () => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+    inline def setError(value: () => Any): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
     
     inline def setExpand_selected_onload(value: Boolean): Self = StObject.set(x, "expand_selected_onload", value.asInstanceOf[js.Any])
     
@@ -227,7 +227,7 @@ object JSTreeStaticDefaultsCore {
     
     inline def setRestore_focusUndefined: Self = StObject.set(x, "restore_focus", js.undefined)
     
-    inline def setStrings(value: js.Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     

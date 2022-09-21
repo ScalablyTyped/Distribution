@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "pino" : "8.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "pino" : "8.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

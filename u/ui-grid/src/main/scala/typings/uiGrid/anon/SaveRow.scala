@@ -16,8 +16,8 @@ trait SaveRow[TEntity] extends StObject {
     *
     * Your method should call setSavePromise somewhere in the body before returning control.
     * The feature will then wait, with the gridRow greyed out whilst this promise is being resolved.
-    * @param {ng.IScope} scope The grid scope
-    * @param {saveRowHandler} handler Callback
+    * @param scope The grid scope
+    * @param handler Callback
     */
   def saveRow(scope: IScope, handler: saveRowHandler[TEntity]): Unit
 }

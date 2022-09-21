@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for the UpdateSnapshot method.
-  */
 trait SchemaUpdateSnapshotRequest extends StObject {
   
   /**
-    * The updated snapshot object.
+    * Required. The updated snapshot object.
     */
   var snapshot: js.UndefOr[SchemaSnapshot] = js.undefined
   
   /**
-    * Indicates which fields in the provided snapshot to update. Must be
-    * specified and non-empty.
+    * Required. Indicates which fields in the provided snapshot to update. Must be specified and non-empty.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUpdateSnapshotRequest {
   
@@ -34,6 +30,8 @@ object SchemaUpdateSnapshotRequest {
     inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

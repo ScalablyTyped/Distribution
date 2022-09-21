@@ -29,7 +29,7 @@ object DescribeMatchmakingConfigurationsOutput {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: MatchmakingConfiguration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: MatchmakingConfiguration*): Self = StObject.set(x, "Configurations", js.Array(value*))
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

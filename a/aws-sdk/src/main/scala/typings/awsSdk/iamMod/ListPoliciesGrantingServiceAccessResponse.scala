@@ -40,6 +40,6 @@ object ListPoliciesGrantingServiceAccessResponse {
     
     inline def setPoliciesGrantingServiceAccess(value: listPolicyGrantingServiceAccessResponseListType): Self = StObject.set(x, "PoliciesGrantingServiceAccess", value.asInstanceOf[js.Any])
     
-    inline def setPoliciesGrantingServiceAccessVarargs(value: ListPoliciesGrantingServiceAccessEntry*): Self = StObject.set(x, "PoliciesGrantingServiceAccess", js.Array(value :_*))
+    inline def setPoliciesGrantingServiceAccessVarargs(value: ListPoliciesGrantingServiceAccessEntry*): Self = StObject.set(x, "PoliciesGrantingServiceAccess", js.Array(value*))
   }
 }

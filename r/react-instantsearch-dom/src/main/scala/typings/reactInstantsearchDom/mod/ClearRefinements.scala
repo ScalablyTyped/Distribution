@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-dom", "ClearRefinements")
 @js.native
-class ClearRefinements protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(props: js.Any) = this()
+open class ClearRefinements protected ()
+  extends Component[Any, js.Object, Any] {
+  def this(props: Any) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Any, context: js.Any) = this()
+  def this(props: Any, context: Any) = this()
 }

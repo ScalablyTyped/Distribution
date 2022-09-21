@@ -9,7 +9,7 @@ trait SchemaInstancesSetMinCpuPlatformRequest extends StObject {
   /**
     * Minimum cpu/platform this instance should be started at.
     */
-  var minCpuPlatform: js.UndefOr[String] = js.undefined
+  var minCpuPlatform: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInstancesSetMinCpuPlatformRequest {
   
@@ -21,6 +21,8 @@ object SchemaInstancesSetMinCpuPlatformRequest {
   extension [Self <: SchemaInstancesSetMinCpuPlatformRequest](x: Self) {
     
     inline def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
+    
+    inline def setMinCpuPlatformNull: Self = StObject.set(x, "minCpuPlatform", null)
     
     inline def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
   }

@@ -12,7 +12,7 @@ trait GetExportRequest extends StObject {
   var accepts: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The type of export. Acceptable values are 'oas30' for OpenAPI 3.0.x and 'swagger' for Swagger/OpenAPI 2.0.
+    * The type of export. Acceptable values are 'oas30' for OpenAPI 3.0.x and 'swagger' for Swagger/OpenAPI 2.0.
     */
   var exportType: String
   
@@ -22,12 +22,12 @@ trait GetExportRequest extends StObject {
   var parameters: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   
   /**
-    * [Required] The name of the Stage that will be exported.
+    * The name of the Stage that will be exported.
     */
   var stageName: String
 }

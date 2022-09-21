@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A CloudWorkspaceSourceContext denotes a workspace at a particular snapshot.
-  */
 trait SchemaCloudWorkspaceSourceContext extends StObject {
   
   /**
-    * The ID of the snapshot. An empty snapshot_id refers to the most recent
-    * snapshot.
+    * The ID of the snapshot. An empty snapshot_id refers to the most recent snapshot.
     */
-  var snapshotId: js.UndefOr[String] = js.undefined
+  var snapshotId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the workspace.
@@ -30,6 +26,8 @@ object SchemaCloudWorkspaceSourceContext {
   extension [Self <: SchemaCloudWorkspaceSourceContext](x: Self) {
     
     inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotIdNull: Self = StObject.set(x, "snapshotId", null)
     
     inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
     

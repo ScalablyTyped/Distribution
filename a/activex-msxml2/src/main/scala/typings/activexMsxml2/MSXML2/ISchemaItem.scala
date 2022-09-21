@@ -22,7 +22,7 @@ trait ISchemaItem extends StObject {
   
   val unhandledAttributes: IVBSAXAttributes
   
-  def writeAnnotation(annotationSink: js.Any): Boolean
+  def writeAnnotation(annotationSink: Any): Boolean
 }
 object ISchemaItem {
   
@@ -34,7 +34,7 @@ object ISchemaItem {
     namespaceURI: String,
     schema: ISchema,
     unhandledAttributes: IVBSAXAttributes,
-    writeAnnotation: js.Any => Boolean
+    writeAnnotation: Any => Boolean
   ): ISchemaItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], itemType = itemType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespaceURI = namespaceURI.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], unhandledAttributes = unhandledAttributes.asInstanceOf[js.Any], writeAnnotation = js.Any.fromFunction1(writeAnnotation))
     __obj.updateDynamic("MSXML2.ISchemaItem_typekey")(MSXML2DotISchemaItem_typekey.asInstanceOf[js.Any])
@@ -57,6 +57,6 @@ object ISchemaItem {
     
     inline def setUnhandledAttributes(value: IVBSAXAttributes): Self = StObject.set(x, "unhandledAttributes", value.asInstanceOf[js.Any])
     
-    inline def setWriteAnnotation(value: js.Any => Boolean): Self = StObject.set(x, "writeAnnotation", js.Any.fromFunction1(value))
+    inline def setWriteAnnotation(value: Any => Boolean): Self = StObject.set(x, "writeAnnotation", js.Any.fromFunction1(value))
   }
 }

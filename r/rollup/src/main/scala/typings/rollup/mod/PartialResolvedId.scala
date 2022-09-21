@@ -1,6 +1,8 @@
 package typings.rollup.mod
 
 import typings.rollup.rollupStrings.`no-treeshake`
+import typings.rollup.rollupStrings.absolute
+import typings.rollup.rollupStrings.relative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +12,7 @@ trait PartialResolvedId
   extends StObject
      with _ResolveIdResult {
   
-  var external: js.UndefOr[Boolean] = js.undefined
+  var external: js.UndefOr[Boolean | absolute | relative] = js.undefined
   
   var id: String
   
@@ -29,7 +31,7 @@ object PartialResolvedId {
   
   extension [Self <: PartialResolvedId](x: Self) {
     
-    inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+    inline def setExternal(value: Boolean | absolute | relative): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     

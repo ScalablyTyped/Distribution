@@ -33,6 +33,6 @@ object ListPhoneNumbersOptedOutResponse {
     
     inline def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
     
-    inline def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value*))
   }
 }

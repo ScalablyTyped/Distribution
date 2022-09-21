@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.Map")
 @js.native
-class Map_ protected ()
+open class Map_ protected ()
   extends StObject
      with typings.heremaps.H.Map_ {
   /**

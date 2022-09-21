@@ -64,7 +64,7 @@ object ElasticLoadBalancer {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setDnsName(value: String): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
@@ -74,7 +74,7 @@ object ElasticLoadBalancer {
     
     inline def setEc2InstanceIdsUndefined: Self = StObject.set(x, "Ec2InstanceIds", js.undefined)
     
-    inline def setEc2InstanceIdsVarargs(value: String*): Self = StObject.set(x, "Ec2InstanceIds", js.Array(value :_*))
+    inline def setEc2InstanceIdsVarargs(value: String*): Self = StObject.set(x, "Ec2InstanceIds", js.Array(value*))
     
     inline def setElasticLoadBalancerName(value: String): Self = StObject.set(x, "ElasticLoadBalancerName", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object ElasticLoadBalancer {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

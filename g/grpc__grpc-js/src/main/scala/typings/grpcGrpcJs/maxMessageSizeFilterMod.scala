@@ -12,21 +12,21 @@ object maxMessageSizeFilterMod {
   
   @JSImport("@grpc/grpc-js/build/src/max-message-size-filter", "MaxMessageSizeFilter")
   @js.native
-  class MaxMessageSizeFilter protected () extends BaseFilter {
+  open class MaxMessageSizeFilter protected () extends BaseFilter {
     def this(options: ChannelOptions, callStream: Call) = this()
     
-    /* private */ val callStream: js.Any = js.native
+    /* private */ val callStream: Any = js.native
     
-    /* private */ var maxReceiveMessageSize: js.Any = js.native
+    /* private */ var maxReceiveMessageSize: Any = js.native
     
-    /* private */ var maxSendMessageSize: js.Any = js.native
+    /* private */ var maxSendMessageSize: Any = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val options: Any = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/max-message-size-filter", "MaxMessageSizeFilterFactory")
   @js.native
-  class MaxMessageSizeFilterFactory protected ()
+  open class MaxMessageSizeFilterFactory protected ()
     extends StObject
        with FilterFactory[MaxMessageSizeFilter] {
     def this(options: ChannelOptions) = this()
@@ -34,6 +34,6 @@ object maxMessageSizeFilterMod {
     /* CompleteClass */
     override def createFilter(callStream: Call): MaxMessageSizeFilter = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val options: Any = js.native
   }
 }

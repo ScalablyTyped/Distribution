@@ -11,9 +11,9 @@ Create REST resources and controllers with Sequelize and Express or Restify
 | Full name          | epilogue |
 | Keywords           | sequelize, sequelizejs, rest, restful, epilogue, json, api |
 | # releases         | 1 |
-| # dependents       | 8 |
-| # downloads        | 20071 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 967.3333333333334 |
+| # stars            | 844.0 |
 
 ## Links
 - [Homepage](https://github.com/dchester/epilogue#readme)

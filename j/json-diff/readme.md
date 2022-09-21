@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-diff
 
-Typings are for version 0.5
+Typings are for version 0.9
 
 ## Library description:
 JSON diff
@@ -10,10 +10,10 @@ JSON diff
 | ------------------ | :-------------: |
 | Full name          | json-diff |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 103 |
-| # downloads        | 9871764 |
-| # stars            | 11 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 1667674.3333333333 |
+| # stars            | 794.0 |
 
 ## Links
 - [Homepage](https://github.com/andreyvit/json-diff)

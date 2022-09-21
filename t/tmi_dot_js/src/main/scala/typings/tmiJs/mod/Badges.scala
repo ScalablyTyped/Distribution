@@ -1,14 +1,19 @@
 package typings.tmiJs.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Badges extends StObject {
+trait Badges
+  extends StObject
+     with /* other */ StringDictionary[js.UndefOr[String]] {
   
   var admin: js.UndefOr[String] = js.undefined
   
   var bits: js.UndefOr[String] = js.undefined
+  
+  var `bits-leader`: js.UndefOr[String] = js.undefined
   
   var broadcaster: js.UndefOr[String] = js.undefined
   
@@ -23,6 +28,8 @@ trait Badges extends StObject {
   var premium: js.UndefOr[String] = js.undefined
   
   var staff: js.UndefOr[String] = js.undefined
+  
+  var `sub-gifter`: js.UndefOr[String] = js.undefined
   
   var subscriber: js.UndefOr[String] = js.undefined
   
@@ -44,6 +51,10 @@ object Badges {
     inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
     
     inline def setBits(value: String): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+    
+    inline def `setBits-leader`(value: String): Self = StObject.set(x, "bits-leader", value.asInstanceOf[js.Any])
+    
+    inline def `setBits-leaderUndefined`: Self = StObject.set(x, "bits-leader", js.undefined)
     
     inline def setBitsUndefined: Self = StObject.set(x, "bits", js.undefined)
     
@@ -74,6 +85,10 @@ object Badges {
     inline def setStaff(value: String): Self = StObject.set(x, "staff", value.asInstanceOf[js.Any])
     
     inline def setStaffUndefined: Self = StObject.set(x, "staff", js.undefined)
+    
+    inline def `setSub-gifter`(value: String): Self = StObject.set(x, "sub-gifter", value.asInstanceOf[js.Any])
+    
+    inline def `setSub-gifterUndefined`: Self = StObject.set(x, "sub-gifter", js.undefined)
     
     inline def setSubscriber(value: String): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,7 @@ object XNamedNodeMap {
     getNamedItem: String => XNode,
     getNamedItemNS: (String, String) => XNode,
     item: Double => XNode,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeNamedItem: String => XNode,
     removeNamedItemNS: (String, String) => XNode,

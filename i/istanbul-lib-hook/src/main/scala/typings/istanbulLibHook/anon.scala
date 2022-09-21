@@ -28,7 +28,7 @@ object anon {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setPostLoadHook(value: /* filename */ String => Unit): Self = StObject.set(x, "postLoadHook", js.Any.fromFunction1(value))
       

@@ -23,9 +23,9 @@ trait WorkbookConnection extends StObject {
   
   val OLEDBConnection: typings.activexExcel.Excel.OLEDBConnection
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Ranges(Index: js.Any): Range
+  def Ranges(Index: Any): Range
   @JSName("Ranges")
   val Ranges_Original: Ranges
   
@@ -46,7 +46,7 @@ object WorkbookConnection {
     Name: String,
     ODBCConnection: ODBCConnection,
     OLEDBConnection: OLEDBConnection,
-    Parent: js.Any,
+    Parent: Any,
     Ranges: Ranges,
     Refresh: () => Unit,
     Type: XlConnectionType,
@@ -75,7 +75,7 @@ object WorkbookConnection {
     
     inline def setOLEDBConnection(value: OLEDBConnection): Self = StObject.set(x, "OLEDBConnection", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRanges(value: Ranges): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
     

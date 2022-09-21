@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "JsonMissingTypeErrorBase")
 @js.native
-class JsonMissingTypeErrorBase protected () extends JsonError {
+open class JsonMissingTypeErrorBase protected () extends JsonError {
   def this(baseClassName: String, `type`: String, message: String) = this()
   
   var baseClassName: String = js.native

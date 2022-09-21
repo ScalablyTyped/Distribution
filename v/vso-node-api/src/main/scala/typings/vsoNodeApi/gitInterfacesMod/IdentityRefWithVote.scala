@@ -61,6 +61,6 @@ object IdentityRefWithVote {
     
     inline def setVotedFor(value: js.Array[IdentityRefWithVote]): Self = StObject.set(x, "votedFor", value.asInstanceOf[js.Any])
     
-    inline def setVotedForVarargs(value: IdentityRefWithVote*): Self = StObject.set(x, "votedFor", js.Array(value :_*))
+    inline def setVotedForVarargs(value: IdentityRefWithVote*): Self = StObject.set(x, "votedFor", js.Array(value*))
   }
 }

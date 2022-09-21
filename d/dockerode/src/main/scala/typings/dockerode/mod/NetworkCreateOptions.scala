@@ -1,6 +1,7 @@
 package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +27,8 @@ trait NetworkCreateOptions extends StObject {
   var Name: String
   
   var Options: js.UndefOr[StringDictionary[String]] = js.undefined
+  
+  var abortSignal: js.UndefOr[AbortSignal] = js.undefined
 }
 object NetworkCreateOptions {
   
@@ -35,6 +38,10 @@ object NetworkCreateOptions {
   }
   
   extension [Self <: NetworkCreateOptions](x: Self) {
+    
+    inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
+    
+    inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
     
     inline def setAttachable(value: Boolean): Self = StObject.set(x, "Attachable", value.asInstanceOf[js.Any])
     

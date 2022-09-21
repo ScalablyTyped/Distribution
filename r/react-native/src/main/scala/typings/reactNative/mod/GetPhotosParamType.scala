@@ -49,6 +49,6 @@ object GetPhotosParamType {
     
     inline def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
     
-    inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
+    inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value*))
   }
 }

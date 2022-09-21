@@ -9,7 +9,7 @@ trait LaunchDetails extends StObject {
   /**
     * The latest time that this application was launched successfully.
     */
-  var latestLaunchTime: js.UndefOr[Timestamp] = js.undefined
+  var latestLaunchTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the latest stack launched for this application.
@@ -30,7 +30,7 @@ object LaunchDetails {
   
   extension [Self <: LaunchDetails](x: Self) {
     
-    inline def setLatestLaunchTime(value: Timestamp): Self = StObject.set(x, "latestLaunchTime", value.asInstanceOf[js.Any])
+    inline def setLatestLaunchTime(value: js.Date): Self = StObject.set(x, "latestLaunchTime", value.asInstanceOf[js.Any])
     
     inline def setLatestLaunchTimeUndefined: Self = StObject.set(x, "latestLaunchTime", js.undefined)
     

@@ -12,7 +12,7 @@ trait BackupPlan extends StObject {
   var AdvancedBackupSettings: js.UndefOr[typings.awsSdk.backupMod.AdvancedBackupSettings] = js.undefined
   
   /**
-    * The display name of a backup plan.
+    * The display name of a backup plan. Must contain 1 to 50 alphanumeric or '-_.' characters.
     */
   var BackupPlanName: typings.awsSdk.backupMod.BackupPlanName
   
@@ -34,12 +34,12 @@ object BackupPlan {
     
     inline def setAdvancedBackupSettingsUndefined: Self = StObject.set(x, "AdvancedBackupSettings", js.undefined)
     
-    inline def setAdvancedBackupSettingsVarargs(value: AdvancedBackupSetting*): Self = StObject.set(x, "AdvancedBackupSettings", js.Array(value :_*))
+    inline def setAdvancedBackupSettingsVarargs(value: AdvancedBackupSetting*): Self = StObject.set(x, "AdvancedBackupSettings", js.Array(value*))
     
     inline def setBackupPlanName(value: BackupPlanName): Self = StObject.set(x, "BackupPlanName", value.asInstanceOf[js.Any])
     
     inline def setRules(value: BackupRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: BackupRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: BackupRule*): Self = StObject.set(x, "Rules", js.Array(value*))
   }
 }

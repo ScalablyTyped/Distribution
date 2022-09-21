@@ -167,7 +167,7 @@ object mod {
       
       inline def setTemplatingUndefined: Self = StObject.set(x, "templating", js.undefined)
       
-      inline def setTemplatingVarargs(value: String*): Self = StObject.set(x, "templating", js.Array(value :_*))
+      inline def setTemplatingVarargs(value: String*): Self = StObject.set(x, "templating", js.Array(value*))
       
       inline def setWrap_line_length(value: Double): Self = StObject.set(x, "wrap_line_length", value.asInstanceOf[js.Any])
       
@@ -220,13 +220,13 @@ object mod {
       
       inline def setContent_unformattedUndefined: Self = StObject.set(x, "content_unformatted", js.undefined)
       
-      inline def setContent_unformattedVarargs(value: String*): Self = StObject.set(x, "content_unformatted", js.Array(value :_*))
+      inline def setContent_unformattedVarargs(value: String*): Self = StObject.set(x, "content_unformatted", js.Array(value*))
       
       inline def setExtra_liners(value: js.Array[String]): Self = StObject.set(x, "extra_liners", value.asInstanceOf[js.Any])
       
       inline def setExtra_linersUndefined: Self = StObject.set(x, "extra_liners", js.undefined)
       
-      inline def setExtra_linersVarargs(value: String*): Self = StObject.set(x, "extra_liners", js.Array(value :_*))
+      inline def setExtra_linersVarargs(value: String*): Self = StObject.set(x, "extra_liners", js.Array(value*))
       
       inline def setIndent_body_inner_html(value: Boolean): Self = StObject.set(x, "indent_body_inner_html", value.asInstanceOf[js.Any])
       
@@ -252,13 +252,13 @@ object mod {
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setInlineVarargs(value: String*): Self = StObject.set(x, "inline", js.Array(value :_*))
+      inline def setInlineVarargs(value: String*): Self = StObject.set(x, "inline", js.Array(value*))
       
       inline def setUnformatted(value: js.Array[String]): Self = StObject.set(x, "unformatted", value.asInstanceOf[js.Any])
       
       inline def setUnformattedUndefined: Self = StObject.set(x, "unformatted", js.undefined)
       
-      inline def setUnformattedVarargs(value: String*): Self = StObject.set(x, "unformatted", js.Array(value :_*))
+      inline def setUnformattedVarargs(value: String*): Self = StObject.set(x, "unformatted", js.Array(value*))
       
       inline def setUnformatted_content_delimiter(value: String): Self = StObject.set(x, "unformatted_content_delimiter", value.asInstanceOf[js.Any])
       
@@ -268,7 +268,7 @@ object mod {
       
       inline def setVoid_elementsUndefined: Self = StObject.set(x, "void_elements", js.undefined)
       
-      inline def setVoid_elementsVarargs(value: String*): Self = StObject.set(x, "void_elements", js.Array(value :_*))
+      inline def setVoid_elementsVarargs(value: String*): Self = StObject.set(x, "void_elements", js.Array(value*))
       
       inline def setWrap_attributes(
         value: auto | force | `force-aligned` | `force-expand-multiline` | `aligned-multiple` | preserve | `preserve-aligned`

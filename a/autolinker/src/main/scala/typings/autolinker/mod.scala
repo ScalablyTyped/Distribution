@@ -1,26 +1,25 @@
 package typings.autolinker
 
-import org.scalablytyped.runtime.Instantiable1
+import typings.autolinker.abstractMatchMod.AbstractMatchConfig
 import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilderCfg
-import typings.autolinker.anon.Email
-import typings.autolinker.anon.Hashtag
 import typings.autolinker.autolinkerMod.AutolinkerConfig
 import typings.autolinker.emailMatchMod.EmailMatchConfig
 import typings.autolinker.hashtagMatchMod.HashtagMatchConfig
-import typings.autolinker.hashtagMatcherMod.HashtagMatcherConfig
 import typings.autolinker.htmlTagMod.HtmlTagCfg
-import typings.autolinker.matchMatchMod.MatchConfig
-import typings.autolinker.matcherMatcherMod.MatcherConfig
+import typings.autolinker.matchMatchMod.Match
 import typings.autolinker.mentionMatchMod.MentionMatchConfig
-import typings.autolinker.mentionMatcherMod.MentionMatcherConfig
+import typings.autolinker.parseMatchesMod.ParseMatchesArgs
 import typings.autolinker.phoneMatchMod.PhoneMatchConfig
 import typings.autolinker.urlMatchMod.UrlMatchConfig
-import typings.autolinker.urlMatcherMod.UrlMatcherConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("autolinker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("autolinker", JSImport.Default)
   @js.native
@@ -29,7 +28,7 @@ object mod {
     * @param {Object} [cfg] The configuration options for the Autolinker instance,
     *   specified in an Object (map).
     */
-  class default ()
+  open class default ()
     extends typings.autolinker.autolinkerMod.default {
     def this(cfg: AutolinkerConfig) = this()
   }
@@ -41,25 +40,6 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
-      * For backwards compatibility with Autolinker 1.x, the AnchorTagBuilder
-      * class is provided as a static on the Autolinker class.
-      */
-    @JSImport("autolinker", "default.AnchorTagBuilder")
-    @js.native
-    val AnchorTagBuilder: Instantiable1[
-        /* cfg */ js.UndefOr[AnchorTagBuilderCfg], 
-        typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
-      ] = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the HtmlTag class is
-      * provided as a static on the Autolinker class.
-      */
-    @JSImport("autolinker", "default.HtmlTag")
-    @js.native
-    val HtmlTag: Instantiable1[/* cfg */ js.UndefOr[HtmlTagCfg], typings.autolinker.htmlTagMod.HtmlTag] = js.native
-    
-    /**
       * Automatically links URLs, Email addresses, Phone Numbers, Twitter handles,
       * Hashtags, and Mentions found in the given chunk of HTML. Does not link URLs
       * found within HTML tags.
@@ -83,22 +63,6 @@ object mod {
       */
     inline def link(textOrHtml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def link(textOrHtml: String, options: AutolinkerConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the Match classes are
-      * provided as statics on the Autolinker class.
-      */
-    @JSImport("autolinker", "default.match")
-    @js.native
-    val `match`: Hashtag = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the Matcher classes are
-      * provided as statics on the Autolinker class.
-      */
-    @JSImport("autolinker", "default.matcher")
-    @js.native
-    val matcher: Email = js.native
     
     /**
       * Parses the input `textOrHtml` looking for URLs, email addresses, phone
@@ -133,7 +97,7 @@ object mod {
       * @return {Autolinker.match.Match[]} The array of Matches found in the
       *   given input `textOrHtml`.
       */
-    inline def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.autolinker.matchMatchMod.Match]]
+    inline def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Match]]
     
     /**
       * @static
@@ -141,11 +105,24 @@ object mod {
       *
       * The Autolinker version number in the form major.minor.patch
       *
-      * Ex: 0.25.1
+      * Ex: 3.15.0
       */
     @JSImport("autolinker", "default.version")
     @js.native
-    val version: /* "3.14.2" */ String = js.native
+    val version: /* "4.0.0" */ String = js.native
+  }
+  
+  @JSImport("autolinker", "AbstractMatch")
+  @js.native
+  abstract class AbstractMatch protected ()
+    extends typings.autolinker.matchMod.AbstractMatch {
+    /**
+      * @member Autolinker.match.Match
+      * @method constructor
+      * @param {Object} cfg The configuration properties for the Match
+      *   instance, specified in an Object (map).
+      */
+    def this(cfg: AbstractMatchConfig) = this()
   }
   
   @JSImport("autolinker", "AnchorTagBuilder")
@@ -154,7 +131,7 @@ object mod {
     * @method constructor
     * @param {Object} [cfg] The configuration options for the AnchorTagBuilder instance, specified in an Object (map).
     */
-  class AnchorTagBuilder ()
+  open class AnchorTagBuilder ()
     extends typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder {
     def this(cfg: AnchorTagBuilderCfg) = this()
   }
@@ -166,7 +143,7 @@ object mod {
     * @param {Object} [cfg] The configuration options for the Autolinker instance,
     *   specified in an Object (map).
     */
-  class Autolinker ()
+  open class Autolinker ()
     extends typings.autolinker.autolinkerMod.default {
     def this(cfg: AutolinkerConfig) = this()
   }
@@ -176,25 +153,6 @@ object mod {
     @JSImport("autolinker", "Autolinker")
     @js.native
     val ^ : js.Any = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the AnchorTagBuilder
-      * class is provided as a static on the Autolinker class.
-      */
-    @JSImport("autolinker", "Autolinker.AnchorTagBuilder")
-    @js.native
-    val AnchorTagBuilder: Instantiable1[
-        /* cfg */ js.UndefOr[AnchorTagBuilderCfg], 
-        typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
-      ] = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the HtmlTag class is
-      * provided as a static on the Autolinker class.
-      */
-    @JSImport("autolinker", "Autolinker.HtmlTag")
-    @js.native
-    val HtmlTag: Instantiable1[/* cfg */ js.UndefOr[HtmlTagCfg], typings.autolinker.htmlTagMod.HtmlTag] = js.native
     
     /**
       * Automatically links URLs, Email addresses, Phone Numbers, Twitter handles,
@@ -220,22 +178,6 @@ object mod {
       */
     inline def link(textOrHtml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def link(textOrHtml: String, options: AutolinkerConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the Match classes are
-      * provided as statics on the Autolinker class.
-      */
-    @JSImport("autolinker", "Autolinker.match")
-    @js.native
-    val `match`: Hashtag = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the Matcher classes are
-      * provided as statics on the Autolinker class.
-      */
-    @JSImport("autolinker", "Autolinker.matcher")
-    @js.native
-    val matcher: Email = js.native
     
     /**
       * Parses the input `textOrHtml` looking for URLs, email addresses, phone
@@ -270,7 +212,7 @@ object mod {
       * @return {Autolinker.match.Match[]} The array of Matches found in the
       *   given input `textOrHtml`.
       */
-    inline def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.autolinker.matchMatchMod.Match]]
+    inline def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Match]]
     
     /**
       * @static
@@ -278,16 +220,16 @@ object mod {
       *
       * The Autolinker version number in the form major.minor.patch
       *
-      * Ex: 0.25.1
+      * Ex: 3.15.0
       */
     @JSImport("autolinker", "Autolinker.version")
     @js.native
-    val version: /* "3.14.2" */ String = js.native
+    val version: /* "4.0.0" */ String = js.native
   }
   
   @JSImport("autolinker", "EmailMatch")
   @js.native
-  class EmailMatch protected ()
+  open class EmailMatch protected ()
     extends typings.autolinker.matchMod.EmailMatch {
     /**
       * @method constructor
@@ -297,21 +239,9 @@ object mod {
     def this(cfg: EmailMatchConfig) = this()
   }
   
-  @JSImport("autolinker", "EmailMatcher")
-  @js.native
-  class EmailMatcher protected ()
-    extends typings.autolinker.matcherMod.EmailMatcher {
-    /**
-      * @method constructor
-      * @param {Object} cfg The configuration properties for the Matcher
-      *   instance, specified in an Object (map).
-      */
-    def this(cfg: MatcherConfig) = this()
-  }
-  
   @JSImport("autolinker", "HashtagMatch")
   @js.native
-  class HashtagMatch protected ()
+  open class HashtagMatch protected ()
     extends typings.autolinker.matchMod.HashtagMatch {
     /**
       * @method constructor
@@ -321,57 +251,20 @@ object mod {
     def this(cfg: HashtagMatchConfig) = this()
   }
   
-  @JSImport("autolinker", "HashtagMatcher")
-  @js.native
-  class HashtagMatcher protected ()
-    extends typings.autolinker.matcherMod.HashtagMatcher {
-    /**
-      * @method constructor
-      * @param {Object} cfg The configuration properties for the Match instance,
-      *   specified in an Object (map).
-      */
-    def this(cfg: HashtagMatcherConfig) = this()
-  }
-  
   @JSImport("autolinker", "HtmlTag")
   @js.native
   /**
     * @method constructor
     * @param {Object} [cfg] The configuration properties for this class, in an Object (map)
     */
-  class HtmlTag ()
+  open class HtmlTag ()
     extends typings.autolinker.htmlTagMod.HtmlTag {
     def this(cfg: HtmlTagCfg) = this()
   }
   
-  @JSImport("autolinker", "Match")
-  @js.native
-  abstract class Match protected ()
-    extends typings.autolinker.matchMod.Match {
-    /**
-      * @member Autolinker.match.Match
-      * @method constructor
-      * @param {Object} cfg The configuration properties for the Match
-      *   instance, specified in an Object (map).
-      */
-    def this(cfg: MatchConfig) = this()
-  }
-  
-  @JSImport("autolinker", "Matcher")
-  @js.native
-  abstract class Matcher protected ()
-    extends typings.autolinker.matcherMod.Matcher {
-    /**
-      * @method constructor
-      * @param {Object} cfg The configuration properties for the Matcher
-      *   instance, specified in an Object (map).
-      */
-    def this(cfg: MatcherConfig) = this()
-  }
-  
   @JSImport("autolinker", "MentionMatch")
   @js.native
-  class MentionMatch protected ()
+  open class MentionMatch protected ()
     extends typings.autolinker.matchMod.MentionMatch {
     /**
       * @method constructor
@@ -381,21 +274,9 @@ object mod {
     def this(cfg: MentionMatchConfig) = this()
   }
   
-  @JSImport("autolinker", "MentionMatcher")
-  @js.native
-  class MentionMatcher protected ()
-    extends typings.autolinker.matcherMod.MentionMatcher {
-    /**
-      * @method constructor
-      * @param {Object} cfg The configuration properties for the Match instance,
-      *   specified in an Object (map).
-      */
-    def this(cfg: MentionMatcherConfig) = this()
-  }
-  
   @JSImport("autolinker", "PhoneMatch")
   @js.native
-  class PhoneMatch protected ()
+  open class PhoneMatch protected ()
     extends typings.autolinker.matchMod.PhoneMatch {
     /**
       * @method constructor
@@ -405,21 +286,9 @@ object mod {
     def this(cfg: PhoneMatchConfig) = this()
   }
   
-  @JSImport("autolinker", "PhoneMatcher")
-  @js.native
-  class PhoneMatcher protected ()
-    extends typings.autolinker.matcherMod.PhoneMatcher {
-    /**
-      * @method constructor
-      * @param {Object} cfg The configuration properties for the Matcher
-      *   instance, specified in an Object (map).
-      */
-    def this(cfg: MatcherConfig) = this()
-  }
-  
   @JSImport("autolinker", "UrlMatch")
   @js.native
-  class UrlMatch protected ()
+  open class UrlMatch protected ()
     extends typings.autolinker.matchMod.UrlMatch {
     /**
       * @method constructor
@@ -429,15 +298,7 @@ object mod {
     def this(cfg: UrlMatchConfig) = this()
   }
   
-  @JSImport("autolinker", "UrlMatcher")
-  @js.native
-  class UrlMatcher protected ()
-    extends typings.autolinker.matcherMod.UrlMatcher {
-    /**
-      * @method constructor
-      * @param {Object} cfg The configuration properties for the Match instance,
-      *   specified in an Object (map).
-      */
-    def this(cfg: UrlMatcherConfig) = this()
-  }
+  inline def excludeUnbalancedTrailingBracesAndPunctuation(matchedText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("excludeUnbalancedTrailingBracesAndPunctuation")(matchedText.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def parseMatches(text: String, args: ParseMatchesArgs): js.Array[Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMatches")(text.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Array[Match]]
 }

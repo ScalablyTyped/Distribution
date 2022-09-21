@@ -1,27 +1,38 @@
 package typings.intercomWeb
 
-import typings.intercomWeb.anon.Createdat
-import typings.intercomWeb.intercomWebStrings.boot
-import typings.intercomWeb.intercomWebStrings.getVisitorId
-import typings.intercomWeb.intercomWebStrings.hide
-import typings.intercomWeb.intercomWebStrings.onActivatorClick
-import typings.intercomWeb.intercomWebStrings.onHide
-import typings.intercomWeb.intercomWebStrings.onShow
-import typings.intercomWeb.intercomWebStrings.onUnreadCountChange
-import typings.intercomWeb.intercomWebStrings.show
-import typings.intercomWeb.intercomWebStrings.showMessages
-import typings.intercomWeb.intercomWebStrings.showNewMessage
-import typings.intercomWeb.intercomWebStrings.shutdown
-import typings.intercomWeb.intercomWebStrings.startTour
-import typings.intercomWeb.intercomWebStrings.trackEvent
-import typings.intercomWeb.intercomWebStrings.update
+import org.scalablytyped.runtime.StringDictionary
+import typings.intercomWeb.intercomWebStrings.avatar
+import typings.std.Parameters
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Intercom {
   
-  /* Rewritten from type alias, can be one of: 
+  trait IntercomAvatar extends StObject {
+    
+    var image_url: String
+    
+    var `type`: avatar
+  }
+  object IntercomAvatar {
+    
+    inline def apply(image_url: String): IntercomAvatar = {
+      val __obj = js.Dynamic.literal(image_url = image_url.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("avatar")
+      __obj.asInstanceOf[IntercomAvatar]
+    }
+    
+    extension [Self <: IntercomAvatar](x: Self) {
+      
+      inline def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: avatar): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* keyof intercom-web.Intercom_.IntercomCommandSignature */ /* Rewritten from type alias, can be one of: 
     - typings.intercomWeb.intercomWebStrings.boot
     - typings.intercomWeb.intercomWebStrings.shutdown
     - typings.intercomWeb.intercomWebStrings.update
@@ -36,51 +47,153 @@ object Intercom {
     - typings.intercomWeb.intercomWebStrings.trackEvent
     - typings.intercomWeb.intercomWebStrings.getVisitorId
     - typings.intercomWeb.intercomWebStrings.startTour
+    - typings.intercomWeb.intercomWebStrings.showArticle
   */
   trait IntercomCommand extends StObject
-  object IntercomCommand {
+  
+  @js.native
+  trait IntercomCommandSignature extends StObject {
     
-    inline def boot: typings.intercomWeb.intercomWebStrings.boot = "boot".asInstanceOf[typings.intercomWeb.intercomWebStrings.boot]
+    def boot(settings: IntercomSettings): Unit = js.native
     
-    inline def getVisitorId: typings.intercomWeb.intercomWebStrings.getVisitorId = "getVisitorId".asInstanceOf[typings.intercomWeb.intercomWebStrings.getVisitorId]
+    def getVisitorId(): String = js.native
     
-    inline def hide: typings.intercomWeb.intercomWebStrings.hide = "hide".asInstanceOf[typings.intercomWeb.intercomWebStrings.hide]
+    def hide(): Unit = js.native
     
-    inline def onActivatorClick: typings.intercomWeb.intercomWebStrings.onActivatorClick = "onActivatorClick".asInstanceOf[typings.intercomWeb.intercomWebStrings.onActivatorClick]
+    def onActivatorClick(callback: js.Function0[Unit]): Unit = js.native
     
-    inline def onHide: typings.intercomWeb.intercomWebStrings.onHide = "onHide".asInstanceOf[typings.intercomWeb.intercomWebStrings.onHide]
+    def onHide(callback: js.Function0[Unit]): Unit = js.native
     
-    inline def onShow: typings.intercomWeb.intercomWebStrings.onShow = "onShow".asInstanceOf[typings.intercomWeb.intercomWebStrings.onShow]
+    def onShow(callback: js.Function0[Unit]): Unit = js.native
     
-    inline def onUnreadCountChange: typings.intercomWeb.intercomWebStrings.onUnreadCountChange = "onUnreadCountChange".asInstanceOf[typings.intercomWeb.intercomWebStrings.onUnreadCountChange]
+    def onUnreadCountChange(callback: js.Function1[/* unreadCount */ Double, Unit]): Unit = js.native
     
-    inline def show: typings.intercomWeb.intercomWebStrings.show = "show".asInstanceOf[typings.intercomWeb.intercomWebStrings.show]
+    def show(): Unit = js.native
     
-    inline def showMessages: typings.intercomWeb.intercomWebStrings.showMessages = "showMessages".asInstanceOf[typings.intercomWeb.intercomWebStrings.showMessages]
+    def showArticle(articleId: Double): Unit = js.native
     
-    inline def showNewMessage: typings.intercomWeb.intercomWebStrings.showNewMessage = "showNewMessage".asInstanceOf[typings.intercomWeb.intercomWebStrings.showNewMessage]
+    def showMessages(): Unit = js.native
     
-    inline def shutdown: typings.intercomWeb.intercomWebStrings.shutdown = "shutdown".asInstanceOf[typings.intercomWeb.intercomWebStrings.shutdown]
+    def showNewMessage(): Unit = js.native
+    def showNewMessage(prepopulateMessage: String): Unit = js.native
     
-    inline def startTour: typings.intercomWeb.intercomWebStrings.startTour = "startTour".asInstanceOf[typings.intercomWeb.intercomWebStrings.startTour]
+    def shutdown(): Unit = js.native
     
-    inline def trackEvent: typings.intercomWeb.intercomWebStrings.trackEvent = "trackEvent".asInstanceOf[typings.intercomWeb.intercomWebStrings.trackEvent]
+    def startTour(tourId: Double): Unit = js.native
     
-    inline def update: typings.intercomWeb.intercomWebStrings.update = "update".asInstanceOf[typings.intercomWeb.intercomWebStrings.update]
+    def trackEvent(): Unit = js.native
+    def trackEvent(tag: String): Unit = js.native
+    def trackEvent(tag: String, metadata: Any): Unit = js.native
+    def trackEvent(tag: Unit, metadata: Any): Unit = js.native
+    
+    def update(): Unit = js.native
+    def update(settings: IntercomSettings): Unit = js.native
   }
   
-  trait IntercomSettings extends StObject {
+  trait IntercomCompany
+    extends StObject
+       with /* custom_attribute */ StringDictionary[IntercomCustomAttribute] {
+    
+    var company_id: js.UndefOr[String | Double] = js.undefined
+    
+    var created_at: js.UndefOr[Double] = js.undefined
+    
+    var id: js.UndefOr[String | Double] = js.undefined
+    
+    var industry: js.UndefOr[String] = js.undefined
+    
+    var monthly_spend: js.UndefOr[Double] = js.undefined
+    
+    var name: String
+    
+    var plan: js.UndefOr[String] = js.undefined
+    
+    var remote_created_at: js.UndefOr[Double] = js.undefined
+    
+    var size: js.UndefOr[Double] = js.undefined
+    
+    var user_count: js.UndefOr[Double] = js.undefined
+    
+    var website: js.UndefOr[String] = js.undefined
+  }
+  object IntercomCompany {
+    
+    inline def apply(name: String): IntercomCompany = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IntercomCompany]
+    }
+    
+    extension [Self <: IntercomCompany](x: Self) {
+      
+      inline def setCompany_id(value: String | Double): Self = StObject.set(x, "company_id", value.asInstanceOf[js.Any])
+      
+      inline def setCompany_idUndefined: Self = StObject.set(x, "company_id", js.undefined)
+      
+      inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      
+      inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
+      
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setIndustry(value: String): Self = StObject.set(x, "industry", value.asInstanceOf[js.Any])
+      
+      inline def setIndustryUndefined: Self = StObject.set(x, "industry", js.undefined)
+      
+      inline def setMonthly_spend(value: Double): Self = StObject.set(x, "monthly_spend", value.asInstanceOf[js.Any])
+      
+      inline def setMonthly_spendUndefined: Self = StObject.set(x, "monthly_spend", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      
+      inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
+      
+      inline def setRemote_created_at(value: Double): Self = StObject.set(x, "remote_created_at", value.asInstanceOf[js.Any])
+      
+      inline def setRemote_created_atUndefined: Self = StObject.set(x, "remote_created_at", js.undefined)
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setUser_count(value: Double): Self = StObject.set(x, "user_count", value.asInstanceOf[js.Any])
+      
+      inline def setUser_countUndefined: Self = StObject.set(x, "user_count", js.undefined)
+      
+      inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+      
+      inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+    }
+  }
+  
+  type IntercomCustomAttribute = js.UndefOr[String | Double | Boolean | Null]
+  
+  trait IntercomSettings
+    extends StObject
+       with // Custom attributes
+  /* custom_attribute */ StringDictionary[
+          IntercomCompany | js.Array[IntercomCompany] | IntercomAvatar | IntercomCustomAttribute
+        ] {
     
     var action_color: js.UndefOr[String] = js.undefined
     
     var alignment: js.UndefOr[String] = js.undefined
     
+    var api_base: js.UndefOr[String] = js.undefined
+    
     // Messenger attributes
     var app_id: js.UndefOr[String] = js.undefined
     
+    var avatar: js.UndefOr[IntercomAvatar] = js.undefined
+    
     var background_color: js.UndefOr[String] = js.undefined
     
-    var company: js.UndefOr[Createdat] = js.undefined
+    var companies: js.UndefOr[js.Array[IntercomCompany]] = js.undefined
+    
+    var company: js.UndefOr[IntercomCompany] = js.undefined
     
     var created_at: js.UndefOr[Double] = js.undefined
     
@@ -136,15 +249,29 @@ object Intercom {
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
+      inline def setApi_base(value: String): Self = StObject.set(x, "api_base", value.asInstanceOf[js.Any])
+      
+      inline def setApi_baseUndefined: Self = StObject.set(x, "api_base", js.undefined)
+      
       inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
       
       inline def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
+      
+      inline def setAvatar(value: IntercomAvatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
       
       inline def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
       
       inline def setBackground_colorUndefined: Self = StObject.set(x, "background_color", js.undefined)
       
-      inline def setCompany(value: Createdat): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+      inline def setCompanies(value: js.Array[IntercomCompany]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
+      
+      inline def setCompaniesUndefined: Self = StObject.set(x, "companies", js.undefined)
+      
+      inline def setCompaniesVarargs(value: IntercomCompany*): Self = StObject.set(x, "companies", js.Array(value*))
+      
+      inline def setCompany(value: IntercomCompany): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
       
       inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
       
@@ -225,32 +352,14 @@ object Intercom {
   @js.native
   trait IntercomStatic extends StObject {
     
-    def apply(command: IntercomCommand): Unit = js.native
-    def apply(command: IntercomCommand, param1: js.Any): Unit = js.native
-    def apply(command: IntercomCommand, param1: js.Any, param2: js.Any): Unit = js.native
-    def apply(command: IntercomCommand, param1: Unit, param2: js.Any): Unit = js.native
-    def apply(command: boot, param: IntercomSettings): Unit = js.native
-    def apply(command: getVisitorId): String = js.native
-    def apply(command: hide): Unit = js.native
-    def apply(command: onActivatorClick): Unit = js.native
-    def apply(command: onActivatorClick, param: js.Function0[Unit]): Unit = js.native
-    def apply(command: onHide): Unit = js.native
-    def apply(command: onHide, param: js.Function0[Unit]): Unit = js.native
-    def apply(command: onShow): Unit = js.native
-    def apply(command: onShow, param: js.Function0[Unit]): Unit = js.native
-    def apply(command: onUnreadCountChange, cb: js.Function1[/* unreadCount */ Double, Unit]): Unit = js.native
-    def apply(command: show): Unit = js.native
-    def apply(command: showMessages): Unit = js.native
-    def apply(command: showNewMessage): Unit = js.native
-    def apply(command: showNewMessage, param: String): Unit = js.native
-    def apply(command: shutdown): Unit = js.native
-    def apply(command: startTour, tourId: Double): Unit = js.native
-    def apply(command: trackEvent): Unit = js.native
-    def apply(command: trackEvent, tag: String): Unit = js.native
-    def apply(command: trackEvent, tag: String, metadata: js.Any): Unit = js.native
-    def apply(command: trackEvent, tag: Unit, metadata: js.Any): Unit = js.native
-    def apply(command: update): Unit = js.native
-    def apply(command: update, param: IntercomSettings): Unit = js.native
+    def apply[Command /* <: IntercomCommand */](
+      command: Command,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type Parameters<IntercomCommandSignature[Command]> is not an array type */ params: Parameters[
+          /* import warning: importer.ImportType#apply Failed type conversion: intercom-web.Intercom_.IntercomCommandSignature[Command] */ js.Any
+        ]
+    ): ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: intercom-web.Intercom_.IntercomCommandSignature[Command] */ js.Any
+      ] = js.native
     
     var booted: Boolean = js.native
   }

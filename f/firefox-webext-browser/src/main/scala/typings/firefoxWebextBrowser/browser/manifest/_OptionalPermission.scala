@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browserSettings
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browsingData
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.downloads
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.downloadsDotopen
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.management
@@ -15,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notifications
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.privacy
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.proxy
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeMessaging
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webNavigation
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmarks
-  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browsingData
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.find
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history
@@ -53,6 +54,8 @@ object _OptionalPermission {
   inline def history: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history = "history".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history]
   
   inline def management: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.management = "management".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.management]
+  
+  inline def nativeMessaging: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeMessaging = "nativeMessaging".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeMessaging]
   
   inline def notifications: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notifications = "notifications".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notifications]
   

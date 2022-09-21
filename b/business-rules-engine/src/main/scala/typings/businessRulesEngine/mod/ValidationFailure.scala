@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("business-rules-engine", "ValidationFailure")
 @js.native
-class ValidationFailure protected ()
+open class ValidationFailure protected ()
   extends StObject
      with IError {
   def this(Error: IError, IsAsync: Boolean) = this()

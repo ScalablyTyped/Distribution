@@ -15,7 +15,7 @@ trait CredentialsOptions extends StObject {
   
   var clientSecret: js.UndefOr[String] = js.undefined
   
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], Any]] = js.undefined
   
   var expiration: js.UndefOr[Double] = js.undefined
   
@@ -54,7 +54,7 @@ object CredentialsOptions {
     
     inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
     
-    inline def setConstructor(value: /* options */ js.UndefOr[CredentialsOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* options */ js.UndefOr[CredentialsOptions] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait KnockoutStatic extends StObject {
   
-  def applyBindingsWithValidation(viewModel: js.Any): Unit = js.native
-  def applyBindingsWithValidation(viewModel: js.Any, rootNode: js.Any): Unit = js.native
-  def applyBindingsWithValidation(viewModel: js.Any, rootNode: js.Any, options: KnockoutValidationConfiguration): Unit = js.native
-  def applyBindingsWithValidation(viewModel: js.Any, rootNode: Unit, options: KnockoutValidationConfiguration): Unit = js.native
+  def applyBindingsWithValidation(viewModel: Any): Unit = js.native
+  def applyBindingsWithValidation(viewModel: Any, rootNode: Any): Unit = js.native
+  def applyBindingsWithValidation(viewModel: Any, rootNode: Any, options: KnockoutValidationConfiguration): Unit = js.native
+  def applyBindingsWithValidation(viewModel: Any, rootNode: Unit, options: KnockoutValidationConfiguration): Unit = js.native
   
-  def validatedObservable[T](): js.Any = js.native
-  def validatedObservable[T](initialValue: T): js.Any = js.native
+  def validatedObservable[T](): Any = js.native
+  def validatedObservable[T](initialValue: T): Any = js.native
   
   var validation: KnockoutValidationStatic = js.native
 }

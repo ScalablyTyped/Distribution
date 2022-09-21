@@ -71,9 +71,9 @@ object ioptionsMod {
     
     var tsconfig: js.UndefOr[String] = js.undefined
     
-    var tsconfigDefaults: js.Any
+    var tsconfigDefaults: Any
     
-    var tsconfigOverride: js.Any
+    var tsconfigOverride: Any
     
     var typescript: TypeoftsTypes
     
@@ -95,8 +95,8 @@ object ioptionsMod {
       rollupCommonJSResolveHack: Boolean,
       sourceMapCallback: (String, String) => Unit,
       transformers: js.Array[TransformerFactoryCreator],
-      tsconfigDefaults: js.Any,
-      tsconfigOverride: js.Any,
+      tsconfigDefaults: Any,
+      tsconfigOverride: Any,
       typescript: TypeoftsTypes,
       useTsconfigDeclarationDir: Boolean,
       verbosity: Double
@@ -119,11 +119,11 @@ object ioptionsMod {
       
       inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setObjectHashIgnoreUnknownHack(value: Boolean): Self = StObject.set(x, "objectHashIgnoreUnknownHack", value.asInstanceOf[js.Any])
       
@@ -133,13 +133,13 @@ object ioptionsMod {
       
       inline def setTransformers(value: js.Array[TransformerFactoryCreator]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
       
-      inline def setTransformersVarargs(value: TransformerFactoryCreator*): Self = StObject.set(x, "transformers", js.Array(value :_*))
+      inline def setTransformersVarargs(value: TransformerFactoryCreator*): Self = StObject.set(x, "transformers", js.Array(value*))
       
       inline def setTsconfig(value: String): Self = StObject.set(x, "tsconfig", value.asInstanceOf[js.Any])
       
-      inline def setTsconfigDefaults(value: js.Any): Self = StObject.set(x, "tsconfigDefaults", value.asInstanceOf[js.Any])
+      inline def setTsconfigDefaults(value: Any): Self = StObject.set(x, "tsconfigDefaults", value.asInstanceOf[js.Any])
       
-      inline def setTsconfigOverride(value: js.Any): Self = StObject.set(x, "tsconfigOverride", value.asInstanceOf[js.Any])
+      inline def setTsconfigOverride(value: Any): Self = StObject.set(x, "tsconfigOverride", value.asInstanceOf[js.Any])
       
       inline def setTsconfigUndefined: Self = StObject.set(x, "tsconfig", js.undefined)
       

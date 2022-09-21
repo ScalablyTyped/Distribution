@@ -10,6 +10,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object navermapsStrings {
   
   @js.native
+  sealed trait A extends StObject
+  inline def A: A = "A".asInstanceOf[A]
+  
+  @js.native
+  sealed trait BUILDING_NAME extends StObject
+  inline def BUILDING_NAME: BUILDING_NAME = "BUILDING_NAME".asInstanceOf[BUILDING_NAME]
+  
+  @js.native
+  sealed trait BUILDING_NUMBER extends StObject
+  inline def BUILDING_NUMBER: BUILDING_NUMBER = "BUILDING_NUMBER".asInstanceOf[BUILDING_NUMBER]
+  
+  @js.native
+  sealed trait L extends StObject
+  inline def L: L = "L".asInstanceOf[L]
+  
+  @js.native
+  sealed trait LAND_NUMBER extends StObject
+  inline def LAND_NUMBER: LAND_NUMBER = "LAND_NUMBER".asInstanceOf[LAND_NUMBER]
+  
+  @js.native
+  sealed trait POSTAL_CODE extends StObject
+  inline def POSTAL_CODE: POSTAL_CODE = "POSTAL_CODE".asInstanceOf[POSTAL_CODE]
+  
+  @js.native
+  sealed trait RI extends StObject
+  inline def RI: RI = "RI".asInstanceOf[RI]
+  
+  @js.native
+  sealed trait ROAD_NAME extends StObject
+  inline def ROAD_NAME: ROAD_NAME = "ROAD_NAME".asInstanceOf[ROAD_NAME]
+  
+  @js.native
+  sealed trait S extends StObject
+  inline def S: S = "S".asInstanceOf[S]
+  
+  @js.native
+  sealed trait SIDO extends StObject
+  inline def SIDO: SIDO = "SIDO".asInstanceOf[SIDO]
+  
+  @js.native
+  sealed trait SIGUGUN extends StObject
+  inline def SIGUGUN: SIGUGUN = "SIGUGUN".asInstanceOf[SIGUGUN]
+  
+  @js.native
   sealed trait bevel
     extends StObject
        with strokeLineJoinType
@@ -67,13 +111,8 @@ object navermapsStrings {
   sealed trait round
     extends StObject
        with strokeLineCapType
-  inline def round: round = "round".asInstanceOf[round]
-  
-  @js.native
-  sealed trait `round `
-    extends StObject
        with strokeLineJoinType
-  inline def `round `: `round ` = ("round ").asInstanceOf[`round `]
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
   sealed trait shortdash

@@ -11,7 +11,7 @@ sealed trait AttachmentType extends StObject
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.AttachmentType")
 @js.native
@@ -23,7 +23,7 @@ object AttachmentType extends StObject {
     * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object
     * contains a URL to the file.
     * From requirement set 1.8, the `url` property included in the attachment's
-    * {@link https://docs.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8 | details} object
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8 | details} object
     * contains a URL to the file in Compose mode.
     */
   @js.native

@@ -10,7 +10,7 @@ object rulesMod {
   
   @js.native
   sealed trait ImpactValue extends StObject
-  @JSImport("@storybook/addon-a11y/dist/components/Report/Rules", "ImpactValue")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/Report/Rules", "ImpactValue")
   @js.native
   object ImpactValue extends StObject {
     
@@ -42,7 +42,7 @@ object rulesMod {
     /* "serious" */ val SERIOUS: typings.storybookAddonA11y.rulesMod.ImpactValue.SERIOUS & String = js.native
   }
   
-  @JSImport("@storybook/addon-a11y/dist/components/Report/Rules", "Rules")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/Report/Rules", "Rules")
   @js.native
   val Rules: FunctionComponent[RulesProps] = js.native
   
@@ -61,7 +61,7 @@ object rulesMod {
       
       inline def setRules(value: js.Array[CheckResult]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      inline def setRulesVarargs(value: CheckResult*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: CheckResult*): Self = StObject.set(x, "rules", js.Array(value*))
     }
   }
 }

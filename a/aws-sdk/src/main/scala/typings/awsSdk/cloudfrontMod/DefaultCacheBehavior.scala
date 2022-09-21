@@ -9,7 +9,7 @@ trait DefaultCacheBehavior extends StObject {
   var AllowedMethods: js.UndefOr[typings.awsSdk.cloudfrontMod.AllowedMethods] = js.undefined
   
   /**
-    * The unique identifier of the cache policy that is attached to the default cache behavior. For more information, see Creating cache policies or Using the managed cache policies in the Amazon CloudFront Developer Guide.
+    * The unique identifier of the cache policy that is attached to the default cache behavior. For more information, see Creating cache policies or Using the managed cache policies in the Amazon CloudFront Developer Guide. A DefaultCacheBehavior must include either a CachePolicyId or ForwardedValues. We recommend that you use a CachePolicyId.
     */
   var CachePolicyId: js.UndefOr[String] = js.undefined
   
@@ -29,12 +29,17 @@ trait DefaultCacheBehavior extends StObject {
   var FieldLevelEncryptionId: js.UndefOr[String] = js.undefined
   
   /**
-    * This field is deprecated. We recommend that you use a cache policy or an origin request policy instead of this field. For more information, see Working with policies in the Amazon CloudFront Developer Guide. If you want to include values in the cache key, use a cache policy. For more information, see Creating cache policies or Using the managed cache policies in the Amazon CloudFront Developer Guide. If you want to send values to the origin but not include them in the cache key, use an origin request policy. For more information, see Creating origin request policies or Using the managed origin request policies in the Amazon CloudFront Developer Guide. A complex type that specifies how CloudFront handles query strings, cookies, and HTTP headers.
+    * This field is deprecated. We recommend that you use a cache policy or an origin request policy instead of this field. For more information, see Working with policies in the Amazon CloudFront Developer Guide. If you want to include values in the cache key, use a cache policy. For more information, see Creating cache policies or Using the managed cache policies in the Amazon CloudFront Developer Guide. If you want to send values to the origin but not include them in the cache key, use an origin request policy. For more information, see Creating origin request policies or Using the managed origin request policies in the Amazon CloudFront Developer Guide. A DefaultCacheBehavior must include either a CachePolicyId or ForwardedValues. We recommend that you use a CachePolicyId. A complex type that specifies how CloudFront handles query strings, cookies, and HTTP headers.
     */
   var ForwardedValues: js.UndefOr[typings.awsSdk.cloudfrontMod.ForwardedValues] = js.undefined
   
   /**
-    * A complex type that contains zero or more Lambda function associations for a cache behavior.
+    * A list of CloudFront functions that are associated with this cache behavior. CloudFront functions must be published to the LIVE stage to associate them with a cache behavior.
+    */
+  var FunctionAssociations: js.UndefOr[typings.awsSdk.cloudfrontMod.FunctionAssociations] = js.undefined
+  
+  /**
+    * A complex type that contains zero or more Lambda@Edge function associations for a cache behavior.
     */
   var LambdaFunctionAssociations: js.UndefOr[typings.awsSdk.cloudfrontMod.LambdaFunctionAssociations] = js.undefined
   
@@ -59,6 +64,11 @@ trait DefaultCacheBehavior extends StObject {
   var RealtimeLogConfigArn: js.UndefOr[String] = js.undefined
   
   /**
+    * The identifier for a response headers policy.
+    */
+  var ResponseHeadersPolicyId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Indicates whether you want to distribute media files in the Microsoft Smooth Streaming format using the origin that is associated with this cache behavior. If so, specify true; if not, specify false. If you specify true for SmoothStreaming, you can still distribute other content using this cache behavior if the content matches the value of PathPattern. 
     */
   var SmoothStreaming: js.UndefOr[Boolean] = js.undefined
@@ -74,7 +84,7 @@ trait DefaultCacheBehavior extends StObject {
   var TrustedKeyGroups: js.UndefOr[typings.awsSdk.cloudfrontMod.TrustedKeyGroups] = js.undefined
   
   /**
-    *  We recommend using TrustedKeyGroups instead of TrustedSigners.  A list of AWS account IDs whose public keys CloudFront can use to validate signed URLs or signed cookies. When a cache behavior contains trusted signers, CloudFront requires signed URLs or signed cookies for all requests that match the cache behavior. The URLs or cookies must be signed with the private key of a CloudFront key pair in a trusted signer’s AWS account. The signed URL or cookie contains information about which public key CloudFront should use to verify the signature. For more information, see Serving private content in the Amazon CloudFront Developer Guide.
+    *  We recommend using TrustedKeyGroups instead of TrustedSigners.  A list of Amazon Web Services account IDs whose public keys CloudFront can use to validate signed URLs or signed cookies. When a cache behavior contains trusted signers, CloudFront requires signed URLs or signed cookies for all requests that match the cache behavior. The URLs or cookies must be signed with the private key of a CloudFront key pair in a trusted signer’s Amazon Web Services account. The signed URL or cookie contains information about which public key CloudFront should use to verify the signature. For more information, see Serving private content in the Amazon CloudFront Developer Guide.
     */
   var TrustedSigners: js.UndefOr[typings.awsSdk.cloudfrontMod.TrustedSigners] = js.undefined
   
@@ -116,6 +126,10 @@ object DefaultCacheBehavior {
     
     inline def setForwardedValuesUndefined: Self = StObject.set(x, "ForwardedValues", js.undefined)
     
+    inline def setFunctionAssociations(value: FunctionAssociations): Self = StObject.set(x, "FunctionAssociations", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionAssociationsUndefined: Self = StObject.set(x, "FunctionAssociations", js.undefined)
+    
     inline def setLambdaFunctionAssociations(value: LambdaFunctionAssociations): Self = StObject.set(x, "LambdaFunctionAssociations", value.asInstanceOf[js.Any])
     
     inline def setLambdaFunctionAssociationsUndefined: Self = StObject.set(x, "LambdaFunctionAssociations", js.undefined)
@@ -135,6 +149,10 @@ object DefaultCacheBehavior {
     inline def setRealtimeLogConfigArn(value: String): Self = StObject.set(x, "RealtimeLogConfigArn", value.asInstanceOf[js.Any])
     
     inline def setRealtimeLogConfigArnUndefined: Self = StObject.set(x, "RealtimeLogConfigArn", js.undefined)
+    
+    inline def setResponseHeadersPolicyId(value: String): Self = StObject.set(x, "ResponseHeadersPolicyId", value.asInstanceOf[js.Any])
+    
+    inline def setResponseHeadersPolicyIdUndefined: Self = StObject.set(x, "ResponseHeadersPolicyId", js.undefined)
     
     inline def setSmoothStreaming(value: Boolean): Self = StObject.set(x, "SmoothStreaming", value.asInstanceOf[js.Any])
     

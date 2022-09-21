@@ -32,7 +32,7 @@ object XRemoteContentProviderChangeNotifier {
   inline def apply(
     acquire: () => Unit,
     addRemoteContentProviderChangeListener: XRemoteContentProviderChangeListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeRemoteContentProviderChangeListener: XRemoteContentProviderChangeListener => Unit
   ): XRemoteContentProviderChangeNotifier = {

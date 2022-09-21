@@ -1,6 +1,5 @@
 package typings.xmlchars
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object ed4Mod {
   
   @JSImport("xmlchars/xml/1.0/ed4", "BASE_CHAR_RE")
   @js.native
-  val BASE_CHAR_RE: RegExp = js.native
+  val BASE_CHAR_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "CHAR")
   @js.native
@@ -21,7 +20,7 @@ object ed4Mod {
   
   @JSImport("xmlchars/xml/1.0/ed4", "CHAR_RE")
   @js.native
-  val CHAR_RE: RegExp = js.native
+  val CHAR_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "COMBINING_CHAR")
   @js.native
@@ -29,7 +28,7 @@ object ed4Mod {
   
   @JSImport("xmlchars/xml/1.0/ed4", "COMBINING_CHAR_RE")
   @js.native
-  val COMBINING_CHAR_RE: RegExp = js.native
+  val COMBINING_CHAR_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "DIGIT")
   @js.native
@@ -37,7 +36,7 @@ object ed4Mod {
   
   @JSImport("xmlchars/xml/1.0/ed4", "DIGIT_RE")
   @js.native
-  val DIGIT_RE: RegExp = js.native
+  val DIGIT_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "EXTENDER")
   @js.native
@@ -45,7 +44,7 @@ object ed4Mod {
   
   @JSImport("xmlchars/xml/1.0/ed4", "EXTENDER_RE")
   @js.native
-  val EXTENDER_RE: RegExp = js.native
+  val EXTENDER_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "IDEOGRAPHIC")
   @js.native
@@ -53,7 +52,7 @@ object ed4Mod {
   
   @JSImport("xmlchars/xml/1.0/ed4", "IDEOGRAPHIC_RE")
   @js.native
-  val IDEOGRAPHIC_RE: RegExp = js.native
+  val IDEOGRAPHIC_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "LETTER")
   @js.native
@@ -61,7 +60,7 @@ object ed4Mod {
   
   @JSImport("xmlchars/xml/1.0/ed4", "LETTER_RE")
   @js.native
-  val LETTER_RE: RegExp = js.native
+  val LETTER_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "NAME_CHAR")
   @js.native
@@ -69,15 +68,15 @@ object ed4Mod {
   
   @JSImport("xmlchars/xml/1.0/ed4", "NAME_CHAR_RE")
   @js.native
-  val NAME_CHAR_RE: RegExp = js.native
+  val NAME_CHAR_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "NAME_RE")
   @js.native
-  val NAME_RE: RegExp = js.native
+  val NAME_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "NMTOKEN_RE")
   @js.native
-  val NMTOKEN_RE: RegExp = js.native
+  val NMTOKEN_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xml/1.0/ed4", "S")
   @js.native
@@ -85,5 +84,5 @@ object ed4Mod {
   
   @JSImport("xmlchars/xml/1.0/ed4", "S_RE")
   @js.native
-  val S_RE: RegExp = js.native
+  val S_RE: js.RegExp = js.native
 }

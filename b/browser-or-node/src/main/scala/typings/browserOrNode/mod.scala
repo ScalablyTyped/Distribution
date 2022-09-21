@@ -6,9 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("browser-or-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("browser-or-node", "isBrowser")
   @js.native
   val isBrowser: Boolean = js.native
+  
+  inline def isJsDom(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsDom")().asInstanceOf[Boolean]
   
   @JSImport("browser-or-node", "isNode")
   @js.native

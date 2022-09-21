@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReservedDBInstancesOfferingMessage extends StObject {
   
   /**
-    *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+    * An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
   var Marker: js.UndefOr[String] = js.undefined
   
@@ -33,6 +33,6 @@ object ReservedDBInstancesOfferingMessage {
     
     inline def setReservedDBInstancesOfferingsUndefined: Self = StObject.set(x, "ReservedDBInstancesOfferings", js.undefined)
     
-    inline def setReservedDBInstancesOfferingsVarargs(value: ReservedDBInstancesOffering*): Self = StObject.set(x, "ReservedDBInstancesOfferings", js.Array(value :_*))
+    inline def setReservedDBInstancesOfferingsVarargs(value: ReservedDBInstancesOffering*): Self = StObject.set(x, "ReservedDBInstancesOfferings", js.Array(value*))
   }
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateS3ResourcesRequest extends StObject {
   
   /**
-    * The AWS ID of the Amazon Macie Classic member account whose S3 resources' classification types you want to update. 
+    * (Discontinued) The Amazon Web Services account ID of the Amazon Macie Classic member account whose S3 resources' classification types you want to update.
     */
   var memberAccountId: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
-    * The S3 resources whose classification types you want to update.
+    * (Discontinued) The S3 resources whose classification types you want to update.
     */
   var s3ResourcesUpdate: S3ResourcesClassificationUpdate
 }
@@ -31,6 +31,6 @@ object UpdateS3ResourcesRequest {
     
     inline def setS3ResourcesUpdate(value: S3ResourcesClassificationUpdate): Self = StObject.set(x, "s3ResourcesUpdate", value.asInstanceOf[js.Any])
     
-    inline def setS3ResourcesUpdateVarargs(value: S3ResourceClassificationUpdate*): Self = StObject.set(x, "s3ResourcesUpdate", js.Array(value :_*))
+    inline def setS3ResourcesUpdateVarargs(value: S3ResourceClassificationUpdate*): Self = StObject.set(x, "s3ResourcesUpdate", js.Array(value*))
   }
 }

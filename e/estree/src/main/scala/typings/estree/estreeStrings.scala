@@ -2,7 +2,9 @@ package typings.estree
 
 import typings.estree.mod.AssignmentOperator
 import typings.estree.mod.BinaryOperator
+import typings.estree.mod.Expression
 import typings.estree.mod.LogicalOperator
+import typings.estree.mod.Node
 import typings.estree.mod.UnaryOperator
 import typings.estree.mod.UpdateOperator
 import org.scalablytyped.runtime.StObject
@@ -398,12 +400,20 @@ object estreeStrings {
   inline def PlussignPlussign: PlussignPlussign = "++".asInstanceOf[PlussignPlussign]
   
   @js.native
+  sealed trait PrivateIdentifier extends StObject
+  inline def PrivateIdentifier: PrivateIdentifier = "PrivateIdentifier".asInstanceOf[PrivateIdentifier]
+  
+  @js.native
   sealed trait Program extends StObject
   inline def Program: Program = "Program".asInstanceOf[Program]
   
   @js.native
   sealed trait Property extends StObject
   inline def Property: Property = "Property".asInstanceOf[Property]
+  
+  @js.native
+  sealed trait PropertyDefinition extends StObject
+  inline def PropertyDefinition: PropertyDefinition = "PropertyDefinition".asInstanceOf[PropertyDefinition]
   
   @js.native
   sealed trait QuestionmarkQuestionmark
@@ -438,6 +448,10 @@ object estreeStrings {
   @js.native
   sealed trait SpreadElement extends StObject
   inline def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
+  
+  @js.native
+  sealed trait StaticBlock extends StObject
+  inline def StaticBlock: StaticBlock = "StaticBlock".asInstanceOf[StaticBlock]
   
   @js.native
   sealed trait Super extends StObject
@@ -534,6 +548,72 @@ object estreeStrings {
   inline def `^Equalssign`: `^Equalssign` = "^=".asInstanceOf[`^Equalssign`]
   
   @js.native
+  sealed trait alternate
+    extends StObject
+       with Expression
+       with Node
+  inline def alternate: alternate = "alternate".asInstanceOf[alternate]
+  
+  @js.native
+  sealed trait argument
+    extends StObject
+       with Expression
+       with Node
+  inline def argument: argument = "argument".asInstanceOf[argument]
+  
+  @js.native
+  sealed trait await
+    extends StObject
+       with Node
+  inline def await: await = "await".asInstanceOf[await]
+  
+  @js.native
+  sealed trait bigint
+    extends StObject
+       with Expression
+       with Node
+  inline def bigint: bigint = "bigint".asInstanceOf[bigint]
+  
+  @js.native
+  sealed trait block_
+    extends StObject
+       with Node
+  inline def block_ : block_ = "block".asInstanceOf[block_]
+  
+  @js.native
+  sealed trait body
+    extends StObject
+       with Expression
+       with Node
+  inline def body: body = "body".asInstanceOf[body]
+  
+  @js.native
+  sealed trait cases
+    extends StObject
+       with Node
+  inline def cases: cases = "cases".asInstanceOf[cases]
+  
+  @js.native
+  sealed trait comments
+    extends StObject
+       with Node
+  inline def comments: comments = "comments".asInstanceOf[comments]
+  
+  @js.native
+  sealed trait computed
+    extends StObject
+       with Expression
+       with Node
+  inline def computed: computed = "computed".asInstanceOf[computed]
+  
+  @js.native
+  sealed trait consequent
+    extends StObject
+       with Expression
+       with Node
+  inline def consequent: consequent = "consequent".asInstanceOf[consequent]
+  
+  @js.native
   sealed trait const extends StObject
   inline def const: const = "const".asInstanceOf[const]
   
@@ -542,14 +622,91 @@ object estreeStrings {
   inline def constructor: constructor = "constructor".asInstanceOf[constructor]
   
   @js.native
+  sealed trait declaration
+    extends StObject
+       with Node
+  inline def declaration: declaration = "declaration".asInstanceOf[declaration]
+  
+  @js.native
+  sealed trait declarations
+    extends StObject
+       with Node
+  inline def declarations: declarations = "declarations".asInstanceOf[declarations]
+  
+  @js.native
+  sealed trait delegate
+    extends StObject
+       with Expression
+       with Node
+  inline def delegate: delegate = "delegate".asInstanceOf[delegate]
+  
+  @js.native
   sealed trait delete
     extends StObject
        with UnaryOperator
   inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
+  sealed trait discriminant
+    extends StObject
+       with Node
+  inline def discriminant: discriminant = "discriminant".asInstanceOf[discriminant]
+  
+  @js.native
+  sealed trait elements
+    extends StObject
+       with Expression
+       with Node
+  inline def elements: elements = "elements".asInstanceOf[elements]
+  
+  @js.native
+  sealed trait exported
+    extends StObject
+       with Node
+  inline def exported: exported = "exported".asInstanceOf[exported]
+  
+  @js.native
+  sealed trait expression
+    extends StObject
+       with Expression
+       with Node
+  inline def expression: expression = "expression".asInstanceOf[expression]
+  
+  @js.native
+  sealed trait expressions
+    extends StObject
+       with Expression
+       with Node
+  inline def expressions: expressions = "expressions".asInstanceOf[expressions]
+  
+  @js.native
+  sealed trait finalizer
+    extends StObject
+       with Node
+  inline def finalizer: finalizer = "finalizer".asInstanceOf[finalizer]
+  
+  @js.native
   sealed trait get extends StObject
   inline def get: get = "get".asInstanceOf[get]
+  
+  @js.native
+  sealed trait handler
+    extends StObject
+       with Node
+  inline def handler: handler = "handler".asInstanceOf[handler]
+  
+  @js.native
+  sealed trait id
+    extends StObject
+       with Expression
+       with Node
+  inline def id: id = "id".asInstanceOf[id]
+  
+  @js.native
+  sealed trait imported
+    extends StObject
+       with Node
+  inline def imported: imported = "imported".asInstanceOf[imported]
   
   @js.native
   sealed trait in
@@ -558,8 +715,16 @@ object estreeStrings {
   inline def in: in = "in".asInstanceOf[in]
   
   @js.native
-  sealed trait init extends StObject
+  sealed trait init
+    extends StObject
+       with Node
   inline def init: init = "init".asInstanceOf[init]
+  
+  @js.native
+  sealed trait innerComments
+    extends StObject
+       with Node
+  inline def innerComments: innerComments = "innerComments".asInstanceOf[innerComments]
   
   @js.native
   sealed trait instanceof
@@ -568,16 +733,140 @@ object estreeStrings {
   inline def instanceof: instanceof = "instanceof".asInstanceOf[instanceof]
   
   @js.native
+  sealed trait key
+    extends StObject
+       with Node
+  inline def key: key = "key".asInstanceOf[key]
+  
+  @js.native
+  sealed trait kind
+    extends StObject
+       with Node
+  inline def kind: kind = "kind".asInstanceOf[kind]
+  
+  @js.native
+  sealed trait label
+    extends StObject
+       with Node
+  inline def label: label = "label".asInstanceOf[label]
+  
+  @js.native
+  sealed trait left
+    extends StObject
+       with Expression
+       with Node
+  inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
   sealed trait let extends StObject
   inline def let: let = "let".asInstanceOf[let]
   
   @js.native
-  sealed trait method extends StObject
+  sealed trait meta
+    extends StObject
+       with Expression
+       with Node
+  inline def meta: meta = "meta".asInstanceOf[meta]
+  
+  @js.native
+  sealed trait method
+    extends StObject
+       with Node
   inline def method: method = "method".asInstanceOf[method]
   
   @js.native
   sealed trait module extends StObject
   inline def module: module = "module".asInstanceOf[module]
+  
+  @js.native
+  sealed trait name
+    extends StObject
+       with Expression
+       with Node
+  inline def name: name = "name".asInstanceOf[name]
+  
+  @js.native
+  sealed trait `object`
+    extends StObject
+       with Expression
+       with Node
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
+  sealed trait operator
+    extends StObject
+       with Expression
+       with Node
+  inline def operator: operator = "operator".asInstanceOf[operator]
+  
+  @js.native
+  sealed trait optional
+    extends StObject
+       with Expression
+       with Node
+  inline def optional: optional = "optional".asInstanceOf[optional]
+  
+  @js.native
+  sealed trait param
+    extends StObject
+       with Node
+  inline def param: param = "param".asInstanceOf[param]
+  
+  @js.native
+  sealed trait prefix
+    extends StObject
+       with Expression
+       with Node
+  inline def prefix: prefix = "prefix".asInstanceOf[prefix]
+  
+  @js.native
+  sealed trait properties
+    extends StObject
+       with Expression
+       with Node
+  inline def properties: properties = "properties".asInstanceOf[properties]
+  
+  @js.native
+  sealed trait property_
+    extends StObject
+       with Expression
+       with Node
+  inline def property_ : property_ = "property".asInstanceOf[property_]
+  
+  @js.native
+  sealed trait quasi
+    extends StObject
+       with Expression
+       with Node
+  inline def quasi: quasi = "quasi".asInstanceOf[quasi]
+  
+  @js.native
+  sealed trait quasis
+    extends StObject
+       with Expression
+       with Node
+  inline def quasis: quasis = "quasis".asInstanceOf[quasis]
+  
+  @js.native
+  sealed trait raw
+    extends StObject
+       with Expression
+       with Node
+  inline def raw: raw = "raw".asInstanceOf[raw]
+  
+  @js.native
+  sealed trait regex
+    extends StObject
+       with Expression
+       with Node
+  inline def regex: regex = "regex".asInstanceOf[regex]
+  
+  @js.native
+  sealed trait right
+    extends StObject
+       with Expression
+       with Node
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait script extends StObject
@@ -588,10 +877,81 @@ object estreeStrings {
   inline def set: set = "set".asInstanceOf[set]
   
   @js.native
+  sealed trait shorthand
+    extends StObject
+       with Node
+  inline def shorthand: shorthand = "shorthand".asInstanceOf[shorthand]
+  
+  @js.native
+  sealed trait source
+    extends StObject
+       with Expression
+       with Node
+  inline def source: source = "source".asInstanceOf[source]
+  
+  @js.native
+  sealed trait sourceType
+    extends StObject
+       with Node
+  inline def sourceType: sourceType = "sourceType".asInstanceOf[sourceType]
+  
+  @js.native
+  sealed trait specifiers
+    extends StObject
+       with Node
+  inline def specifiers: specifiers = "specifiers".asInstanceOf[specifiers]
+  
+  @js.native
+  sealed trait static
+    extends StObject
+       with Node
+  inline def static: static = "static".asInstanceOf[static]
+  
+  @js.native
+  sealed trait tag
+    extends StObject
+       with Expression
+       with Node
+  inline def tag: tag = "tag".asInstanceOf[tag]
+  
+  @js.native
+  sealed trait tail
+    extends StObject
+       with Node
+  inline def tail: tail = "tail".asInstanceOf[tail]
+  
+  @js.native
+  sealed trait test
+    extends StObject
+       with Expression
+       with Node
+  inline def test: test = "test".asInstanceOf[test]
+  
+  @js.native
+  sealed trait `type`
+    extends StObject
+       with Expression
+       with Node
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
+  
+  @js.native
   sealed trait typeof
     extends StObject
        with UnaryOperator
   inline def typeof: typeof = "typeof".asInstanceOf[typeof]
+  
+  @js.native
+  sealed trait update
+    extends StObject
+       with Node
+  inline def update: update = "update".asInstanceOf[update]
+  
+  @js.native
+  sealed trait value
+    extends StObject
+       with Expression
+       with Node
+  inline def value: value = "value".asInstanceOf[value]
   
   @js.native
   sealed trait `var` extends StObject

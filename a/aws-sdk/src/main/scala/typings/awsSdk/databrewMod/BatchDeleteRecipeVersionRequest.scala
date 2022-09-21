@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchDeleteRecipeVersionRequest extends StObject {
   
   /**
-    * The name of the recipe to be modified.
+    * The name of the recipe whose versions are to be deleted.
     */
   var Name: RecipeName
   
   /**
-    * An array of version identifiers to be deleted.
+    * An array of version identifiers, for the recipe versions to be deleted. You can specify numeric versions (X.Y) or LATEST_WORKING. LATEST_PUBLISHED is not supported.
     */
   var RecipeVersions: RecipeVersionList
 }
@@ -29,6 +29,6 @@ object BatchDeleteRecipeVersionRequest {
     
     inline def setRecipeVersions(value: RecipeVersionList): Self = StObject.set(x, "RecipeVersions", value.asInstanceOf[js.Any])
     
-    inline def setRecipeVersionsVarargs(value: RecipeVersion*): Self = StObject.set(x, "RecipeVersions", js.Array(value :_*))
+    inline def setRecipeVersionsVarargs(value: RecipeVersion*): Self = StObject.set(x, "RecipeVersions", js.Array(value*))
   }
 }

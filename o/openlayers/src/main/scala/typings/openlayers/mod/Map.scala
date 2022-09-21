@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "Map")
 @js.native
-class Map protected () extends Object {
+open class Map protected () extends Object {
   /**
     * @classdesc
     * The map is the core component of OpenLayers. For a map to render, a view,
@@ -147,26 +147,26 @@ class Map protected () extends Object {
     * @api stable
     */
   def forEachLayerAtPixel[T](pixel: Pixel, callback: js.Function2[/* layer */ Layer, /* color */ Color_, T]): T = js.native
-  def forEachLayerAtPixel[T](pixel: Pixel, callback: js.Function2[/* layer */ Layer, /* color */ Color_, T], opt_this: js.Any): T = js.native
+  def forEachLayerAtPixel[T](pixel: Pixel, callback: js.Function2[/* layer */ Layer, /* color */ Color_, T], opt_this: Any): T = js.native
   def forEachLayerAtPixel[T](
     pixel: Pixel,
     callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
-    opt_this: js.Any,
+    opt_this: Any,
     opt_layerFilter: js.Function1[/* layer */ Layer, Boolean]
   ): T = js.native
   def forEachLayerAtPixel[T](
     pixel: Pixel,
     callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
-    opt_this: js.Any,
+    opt_this: Any,
     opt_layerFilter: js.Function1[/* layer */ Layer, Boolean],
-    opt_this2: js.Any
+    opt_this2: Any
   ): T = js.native
   def forEachLayerAtPixel[T](
     pixel: Pixel,
     callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
-    opt_this: js.Any,
+    opt_this: Any,
     opt_layerFilter: Unit,
-    opt_this2: js.Any
+    opt_this2: Any
   ): T = js.native
   def forEachLayerAtPixel[T](
     pixel: Pixel,
@@ -179,14 +179,14 @@ class Map protected () extends Object {
     callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
     opt_this: Unit,
     opt_layerFilter: js.Function1[/* layer */ Layer, Boolean],
-    opt_this2: js.Any
+    opt_this2: Any
   ): T = js.native
   def forEachLayerAtPixel[T](
     pixel: Pixel,
     callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
     opt_this: Unit,
     opt_layerFilter: Unit,
-    opt_this2: js.Any
+    opt_this2: Any
   ): T = js.native
   
   /**

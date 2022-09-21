@@ -1,44 +1,46 @@
 package typings.socketIoRedis
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Except extends StObject {
+  /* Inlined std.Partial<socket.io-redis.socket.io-redis.RedisAdapterOptions> */
+  trait PartialRedisAdapterOption extends StObject {
     
-    var except: js.UndefOr[js.Array[String]] = js.undefined
+    var key: js.UndefOr[String] = js.undefined
     
-    var flags: js.UndefOr[StringDictionary[Boolean]] = js.undefined
+    var pubClient: js.UndefOr[Any] = js.undefined
     
-    var rooms: js.UndefOr[js.Array[String]] = js.undefined
+    var requestsTimeout: js.UndefOr[Double] = js.undefined
+    
+    var subClient: js.UndefOr[Any] = js.undefined
   }
-  object Except {
+  object PartialRedisAdapterOption {
     
-    inline def apply(): Except = {
+    inline def apply(): PartialRedisAdapterOption = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Except]
+      __obj.asInstanceOf[PartialRedisAdapterOption]
     }
     
-    extension [Self <: Except](x: Self) {
+    extension [Self <: PartialRedisAdapterOption](x: Self) {
       
-      inline def setExcept(value: js.Array[String]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
+      inline def setPubClient(value: Any): Self = StObject.set(x, "pubClient", value.asInstanceOf[js.Any])
       
-      inline def setFlags(value: StringDictionary[Boolean]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setPubClientUndefined: Self = StObject.set(x, "pubClient", js.undefined)
       
-      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setRequestsTimeout(value: Double): Self = StObject.set(x, "requestsTimeout", value.asInstanceOf[js.Any])
       
-      inline def setRooms(value: js.Array[String]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
+      inline def setRequestsTimeoutUndefined: Self = StObject.set(x, "requestsTimeout", js.undefined)
       
-      inline def setRoomsUndefined: Self = StObject.set(x, "rooms", js.undefined)
+      inline def setSubClient(value: Any): Self = StObject.set(x, "subClient", value.asInstanceOf[js.Any])
       
-      inline def setRoomsVarargs(value: String*): Self = StObject.set(x, "rooms", js.Array(value :_*))
+      inline def setSubClientUndefined: Self = StObject.set(x, "subClient", js.undefined)
     }
   }
 }

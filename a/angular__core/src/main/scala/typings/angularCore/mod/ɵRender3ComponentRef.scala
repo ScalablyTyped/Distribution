@@ -6,32 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "\u0275Render3ComponentRef")
 @js.native
-class ɵRender3ComponentRef[T] protected () extends ComponentRef[T] {
+open class ɵRender3ComponentRef[T] protected () extends ComponentRef[T] {
   def this(
     componentType: Type[T],
     instance: T,
-    location: ElementRef[js.Any],
-    _rootLView: ɵangularPackagesCoreCoreBv,
+    location: ElementRef[Any],
+    _rootLView: LView[Any],
     _tNode: TContainerNode
   ) = this()
   def this(
     componentType: Type[T],
     instance: T,
-    location: ElementRef[js.Any],
-    _rootLView: ɵangularPackagesCoreCoreBv,
+    location: ElementRef[Any],
+    _rootLView: LView[Any],
     _tNode: TElementContainerNode
   ) = this()
   def this(
     componentType: Type[T],
     instance: T,
-    location: ElementRef[js.Any],
-    _rootLView: ɵangularPackagesCoreCoreBv,
-    _tNode: ɵangularPackagesCoreCoreBh
+    location: ElementRef[Any],
+    _rootLView: LView[Any],
+    _tNode: TElementNode
   ) = this()
   
-  /* private */ var _rootLView: js.Any = js.native
+  /* private */ var _rootLView: Any = js.native
   
-  /* private */ var _tNode: js.Any = js.native
+  /* private */ var _tNode: Any = js.native
   
   @JSName("changeDetectorRef")
   var changeDetectorRef_FɵRender3ComponentRef: ChangeDetectorRef = js.native
@@ -39,16 +39,14 @@ class ɵRender3ComponentRef[T] protected () extends ComponentRef[T] {
   @JSName("componentType")
   var componentType_FɵRender3ComponentRef: Type[T] = js.native
   
-  var destroyCbs: js.Array[js.Function0[Unit]] | Null = js.native
-  
   @JSName("hostView")
-  var hostView_FɵRender3ComponentRef: ViewRef2[T] = js.native
+  var hostView_FɵRender3ComponentRef: ɵViewRef[T] = js.native
   
   @JSName("instance")
   var instance_FɵRender3ComponentRef: T = js.native
   
   @JSName("location")
-  var location_FɵRender3ComponentRef: ElementRef[js.Any] = js.native
+  var location_FɵRender3ComponentRef: ElementRef[Any] = js.native
   
   def onDestroy(callback: js.Function0[Unit]): Unit = js.native
 }

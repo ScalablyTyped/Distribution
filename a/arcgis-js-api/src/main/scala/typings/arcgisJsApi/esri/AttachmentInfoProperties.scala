@@ -9,70 +9,70 @@ trait AttachmentInfoProperties extends StObject {
   /**
     * The content type of the attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#contentType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#contentType)
     */
   var contentType: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of [ExifInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#ExifInfo) for the attachment.
+    * An array of [ExifInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#ExifInfo) for the attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#exifInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#exifInfo)
     */
   var exifInfo: js.UndefOr[js.Array[ExifInfo]] = js.undefined
   
   /**
     * The global identifier for the attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#globalId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#globalId)
     */
   var globalId: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#id)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#id)
     */
   var id: js.UndefOr[Double] = js.undefined
   
   /**
     * Keywords used for the attachments.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#keywords)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#keywords)
     */
   var keywords: js.UndefOr[String] = js.undefined
   
   /**
     * String value indicating the name of the file attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#name)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#name)
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
     * The parent or the feature global id of the attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#parentGlobalId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#parentGlobalId)
     */
   var parentGlobalId: js.UndefOr[Double] = js.undefined
   
   /**
     * The parent or the feature object id of the attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#parentObjectId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#parentObjectId)
     */
   var parentObjectId: js.UndefOr[Double] = js.undefined
   
   /**
     * The file size of the attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#size)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#size)
     */
   var size: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of the attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#url)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#url)
     */
   var url: js.UndefOr[String] = js.undefined
 }
@@ -93,7 +93,7 @@ object AttachmentInfoProperties {
     
     inline def setExifInfoUndefined: Self = StObject.set(x, "exifInfo", js.undefined)
     
-    inline def setExifInfoVarargs(value: ExifInfo*): Self = StObject.set(x, "exifInfo", js.Array(value :_*))
+    inline def setExifInfoVarargs(value: ExifInfo*): Self = StObject.set(x, "exifInfo", js.Array(value*))
     
     inline def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
     

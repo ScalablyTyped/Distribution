@@ -9,11 +9,11 @@ RowReorder for DataTables
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | datatables.net-rowreorder |
-| Keywords           | row reordering, DataTables, jQuery, table, DataTables |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 1426319 |
-| # stars            | 0 |
+| Keywords           | RowReorder, Row Reordering, Datatables, jQuery, table, filter, sort |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 183290.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

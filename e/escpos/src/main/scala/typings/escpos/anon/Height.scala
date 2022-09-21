@@ -23,7 +23,7 @@ object Height {
     
     inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -7,21 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaCarriersCarrier extends StObject {
   
   /**
-    * The CLDR country code of the carrier (e.g., &quot;US&quot;). Always
-    * present.
+    * The CLDR country code of the carrier (e.g., "US"). Always present.
     */
-  var country: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name of the carrier (e.g., &quot;UPS&quot;). Always present.
+    * A list of services supported for EDD (Estimated Delivery Date) calculation. This is the list of valid values for WarehouseBasedDeliveryTime.carrierService.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var eddServices: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * A list of supported services (e.g., &quot;ground&quot;) for that carrier.
-    * Contains at least one service.
+    * The name of the carrier (e.g., `"UPS"`). Always present.
     */
-  var services: js.UndefOr[js.Array[String]] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * A list of supported services (e.g., `"ground"`) for that carrier. Contains at least one service. This is the list of valid values for CarrierRate.carrierService.
+    */
+  var services: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaCarriersCarrier {
   
@@ -34,16 +37,30 @@ object SchemaCarriersCarrier {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
+    inline def setCountryNull: Self = StObject.set(x, "country", null)
+    
     inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
+    inline def setEddServices(value: js.Array[String]): Self = StObject.set(x, "eddServices", value.asInstanceOf[js.Any])
+    
+    inline def setEddServicesNull: Self = StObject.set(x, "eddServices", null)
+    
+    inline def setEddServicesUndefined: Self = StObject.set(x, "eddServices", js.undefined)
+    
+    inline def setEddServicesVarargs(value: String*): Self = StObject.set(x, "eddServices", js.Array(value*))
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
+    inline def setServicesNull: Self = StObject.set(x, "services", null)
+    
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

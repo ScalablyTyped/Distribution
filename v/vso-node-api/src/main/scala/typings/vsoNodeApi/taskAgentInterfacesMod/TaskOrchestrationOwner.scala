@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TaskOrchestrationOwner extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   var id: Double
   
@@ -14,7 +14,7 @@ trait TaskOrchestrationOwner extends StObject {
 }
 object TaskOrchestrationOwner {
   
-  inline def apply(_links: js.Any, id: Double, name: String): TaskOrchestrationOwner = {
+  inline def apply(_links: Any, id: Double, name: String): TaskOrchestrationOwner = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOrchestrationOwner]
   }
@@ -25,6 +25,6 @@ object TaskOrchestrationOwner {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

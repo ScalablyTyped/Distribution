@@ -1,7 +1,7 @@
 
 # Scala.js typings for typescript-optional
 
-Typings are for version 2.0.1
+Typings are for version 3.0.0-alpha.3
 
 ## Library description:
 Optional (like Java) implementation in TypeScript
@@ -10,10 +10,10 @@ Optional (like Java) implementation in TypeScript
 | ------------------ | :-------------: |
 | Full name          | typescript-optional |
 | Keywords           | java, optional, typescript |
-| # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 82323 |
-| # stars            | 0 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 29441.0 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/bromne/typescript-optional#readme)

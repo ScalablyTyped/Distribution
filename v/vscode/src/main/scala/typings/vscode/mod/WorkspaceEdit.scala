@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "WorkspaceEdit")
 @js.native
-class WorkspaceEdit () extends StObject {
+open class WorkspaceEdit () extends StObject {
   
   /**
     * Create a regular file.

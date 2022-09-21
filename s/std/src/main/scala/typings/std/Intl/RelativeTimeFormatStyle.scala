@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The length of the internationalized message.
   *
   * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat#Parameters).
-  *
-  * [Specification](https://tc39.es/ecma402/#sec-InitializeRelativeTimeFormat).
   */
 /* Rewritten from type alias, can be one of: 
   - typings.std.stdStrings.long

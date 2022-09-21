@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.presentation
 
+import typings.activexLibreoffice.com_.sun.star.drawing.DrawingDocumentDrawView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This component integrates a view to a handout page inside a presentation document into the desktop.
   * @since OOo 1.1.2
   */
-type HandoutView = typings.activexLibreoffice.com_.sun.star.drawing.DrawingDocumentDrawView
+type HandoutView = DrawingDocumentDrawView
 
 /**
   * This component integrates a view to a handout page inside a presentation document into the desktop.
   * @since OOo 1.1.2
   */
-type NotesView = typings.activexLibreoffice.com_.sun.star.drawing.DrawingDocumentDrawView
+type NotesView = DrawingDocumentDrawView
 
-type SlideShow = typings.activexLibreoffice.com_.sun.star.presentation.XSlideShow
+type SlideShow = XSlideShow
 
-type TransitionFactory = typings.activexLibreoffice.com_.sun.star.presentation.XTransitionFactory
+type TransitionFactory = XTransitionFactory

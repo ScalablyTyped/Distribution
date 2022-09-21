@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("indefinite-observable", "IndefiniteObservable")
   @js.native
-  class IndefiniteObservable[T] protected () extends default[T] {
+  open class IndefiniteObservable[T] protected () extends default[T] {
     /**
       * The provided function should receive an observer and connect that
       * observer's `next` method to an event source (for instance,

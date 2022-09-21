@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetProtocolsListResponse extends StObject {
   
   /**
-    * Information about the specified AWS Firewall Manager protocols list.
+    * Information about the specified Firewall Manager protocols list.
     */
   var ProtocolsList: js.UndefOr[ProtocolsListData] = js.undefined
   

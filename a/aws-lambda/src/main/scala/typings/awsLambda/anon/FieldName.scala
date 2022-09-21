@@ -15,7 +15,7 @@ trait FieldName extends StObject {
   
   var selectionSetList: js.Array[String]
   
-  var variables: StringDictionary[js.Any]
+  var variables: StringDictionary[Any]
 }
 object FieldName {
   
@@ -24,7 +24,7 @@ object FieldName {
     parentTypeName: String,
     selectionSetGraphQL: String,
     selectionSetList: js.Array[String],
-    variables: StringDictionary[js.Any]
+    variables: StringDictionary[Any]
   ): FieldName = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], parentTypeName = parentTypeName.asInstanceOf[js.Any], selectionSetGraphQL = selectionSetGraphQL.asInstanceOf[js.Any], selectionSetList = selectionSetList.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldName]
@@ -40,8 +40,8 @@ object FieldName {
     
     inline def setSelectionSetList(value: js.Array[String]): Self = StObject.set(x, "selectionSetList", value.asInstanceOf[js.Any])
     
-    inline def setSelectionSetListVarargs(value: String*): Self = StObject.set(x, "selectionSetList", js.Array(value :_*))
+    inline def setSelectionSetListVarargs(value: String*): Self = StObject.set(x, "selectionSetList", js.Array(value*))
     
-    inline def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: StringDictionary[Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

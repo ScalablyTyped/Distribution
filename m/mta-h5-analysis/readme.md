@@ -11,9 +11,9 @@ this is wechat-h5 data analysis js sdk from MTA platform
 | Full name          | mta-h5-analysis |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 25482 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 798.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/mta-h5-analysis)

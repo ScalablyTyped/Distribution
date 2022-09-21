@@ -10,8 +10,7 @@ trait PopStateEvent
   extends StObject
      with Event {
   
-  /**
-    * Returns a copy of the information that was provided to pushState() or replaceState().
-    */
-  val state: js.Any = js.native
+  /** Returns a copy of the information that was provided to pushState() or replaceState(). */
+  /* standard dom */
+  val state: Any = js.native
 }

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientLogging.anon
 
-import typings.maximMazurokGapiClientLogging.gapi.client.logging.LogView
+import typings.maximMazurokGapiClientLogging.gapi.client.logging.LogExclusion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +27,8 @@ trait Key extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The full resource name of the view to update "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]" Example:
-    * "projects/my-project-id/locations/my-location/buckets/my-bucket-id/views/my-view-id".
+    * Required. The resource name of the exclusion to update: "projects/[PROJECT_ID]/exclusions/[EXCLUSION_ID]" "organizations/[ORGANIZATION_ID]/exclusions/[EXCLUSION_ID]"
+    * "billingAccounts/[BILLING_ACCOUNT_ID]/exclusions/[EXCLUSION_ID]" "folders/[FOLDER_ID]/exclusions/[EXCLUSION_ID]" For example:"projects/my-project/exclusions/my-exclusion"
     */
   var name: String
   
@@ -42,12 +42,12 @@ trait Key extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: LogView
+  var resource: LogExclusion
   
   /**
-    * Optional. Field mask that specifies the fields in view that need an update. A field will be overwritten if, and only if, it is in the update mask. name and output only fields
-    * cannot be updated.For a detailed FieldMask definition, see https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#google.protobuf.FieldMaskExample:
-    * updateMask=filter.
+    * Required. A non-empty list of fields to change in the existing exclusion. New values for the fields are taken from the corresponding fields in the LogExclusion included in this
+    * request. Fields not mentioned in update_mask are not changed and are ignored in the request.For example, to change the filter and description of an exclusion, specify an
+    * update_mask of "filter,description".
     */
   var updateMask: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ trait Key extends StObject {
 }
 object Key {
   
-  inline def apply(name: String, resource: LogView): Key = {
+  inline def apply(name: String, resource: LogExclusion): Key = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
@@ -104,7 +104,7 @@ object Key {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: LogView): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: LogExclusion): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

@@ -4,49 +4,42 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Product data. After inserting, updating, or deleting a product, it may take
-  * several minutes before changes take effect.
-  */
 trait SchemaProduct extends StObject {
   
   /**
     * Additional URLs of images of the item.
     */
-  var additionalImageLinks: js.UndefOr[js.Array[String]] = js.undefined
+  var additionalImageLinks: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Additional categories of the item (formatted as in products feed
-    * specification).
+    * Additional categories of the item (formatted as in products data specification).
     */
-  var additionalProductTypes: js.UndefOr[js.Array[String]] = js.undefined
+  var additionalProductTypes: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Set to true if the item is targeted towards adults.
+    * Should be set to true if the item is targeted towards adults.
     */
-  var adult: js.UndefOr[Boolean] = js.undefined
+  var adult: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Used to group items in an arbitrary way. Only for CPA%, discouraged
-    * otherwise.
+    * Used to group items in an arbitrary way. Only for CPA%, discouraged otherwise.
     */
-  var adwordsGrouping: js.UndefOr[String] = js.undefined
+  var adwordsGrouping: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Similar to adwords_grouping, but only works on CPC.
     */
-  var adwordsLabels: js.UndefOr[js.Array[String]] = js.undefined
+  var adwordsLabels: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Allows advertisers to override the item URL when the product is shown
-    * within the context of Product Ads.
+    * Allows advertisers to override the item URL when the product is shown within the context of Product Ads.
     */
-  var adwordsRedirect: js.UndefOr[String] = js.undefined
+  var adwordsRedirect: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Target age group of the item.
+    * Target age group of the item. Acceptable values are: - "`adult`" - "`infant`" - "`kids`" - "`newborn`" - "`toddler`" - "`youngAdult`"
     */
-  var ageGroup: js.UndefOr[String] = js.undefined
+  var ageGroup: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Deprecated. Do not use.
@@ -54,40 +47,44 @@ trait SchemaProduct extends StObject {
   var aspects: js.UndefOr[js.Array[SchemaProductAspect]] = js.undefined
   
   /**
-    * Availability status of the item.
+    * Availability status of the item. Acceptable values are: - "`in stock`" - "`out of stock`" - "`preorder`"
     */
-  var availability: js.UndefOr[String] = js.undefined
+  var availability: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The day a pre-ordered product becomes available for delivery, in ISO 8601
-    * format.
+    * The day a pre-ordered product becomes available for delivery, in ISO 8601 format.
     */
-  var availabilityDate: js.UndefOr[String] = js.undefined
+  var availabilityDate: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Brand of the item.
     */
-  var brand: js.UndefOr[String] = js.undefined
+  var brand: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The item&#39;s channel (online or local).
+    * URL for the canonical version of your item's landing page.
     */
-  var channel: js.UndefOr[String] = js.undefined
+  var canonicalLink: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. The item's channel (online or local). Acceptable values are: - "`local`" - "`online`"
+    */
+  var channel: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Color of the item.
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Condition or state of the item.
+    * Condition or state of the item. Acceptable values are: - "`new`" - "`refurbished`" - "`used`"
     */
-  var condition: js.UndefOr[String] = js.undefined
+  var condition: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The two-letter ISO 639-1 language code for the item.
+    * Required. The two-letter ISO 639-1 language code for the item.
     */
-  var contentLanguage: js.UndefOr[String] = js.undefined
+  var contentLanguage: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Cost of goods sold. Used for gross profit reporting.
@@ -95,11 +92,7 @@ trait SchemaProduct extends StObject {
   var costOfGoodsSold: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * A list of custom (merchant-provided) attributes. It can also be used for
-    * submitting any attribute of the feed specification in its generic form
-    * (e.g., { &quot;name&quot;: &quot;size type&quot;, &quot;value&quot;:
-    * &quot;regular&quot; }). This is useful for submitting attributes not
-    * explicitly exposed by the API.
+    * A list of custom (merchant-provided) attributes. It can also be used for submitting any attribute of the feed specification in its generic form (e.g., `{ "name": "size type", "value": "regular" \}`). This is useful for submitting attributes not explicitly exposed by the API, such as additional attributes used for Buy on Google (formerly known as Shopping Actions).
     */
   var customAttributes: js.UndefOr[js.Array[SchemaCustomAttribute]] = js.undefined
   
@@ -111,32 +104,32 @@ trait SchemaProduct extends StObject {
   /**
     * Custom label 0 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel0: js.UndefOr[String] = js.undefined
+  var customLabel0: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Custom label 1 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel1: js.UndefOr[String] = js.undefined
+  var customLabel1: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Custom label 2 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel2: js.UndefOr[String] = js.undefined
+  var customLabel2: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Custom label 3 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel3: js.UndefOr[String] = js.undefined
+  var customLabel3: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Custom label 4 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel4: js.UndefOr[String] = js.undefined
+  var customLabel4: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Description of the item.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Specifies the intended destinations for the product.
@@ -146,103 +139,92 @@ trait SchemaProduct extends StObject {
   /**
     * An identifier for an item for dynamic remarketing campaigns.
     */
-  var displayAdsId: js.UndefOr[String] = js.undefined
+  var displayAdsId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * URL directly to your item&#39;s landing page for dynamic remarketing
-    * campaigns.
+    * URL directly to your item's landing page for dynamic remarketing campaigns.
     */
-  var displayAdsLink: js.UndefOr[String] = js.undefined
+  var displayAdsLink: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Advertiser-specified recommendations.
     */
-  var displayAdsSimilarIds: js.UndefOr[js.Array[String]] = js.undefined
+  var displayAdsSimilarIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Title of an item for dynamic remarketing campaigns.
     */
-  var displayAdsTitle: js.UndefOr[String] = js.undefined
+  var displayAdsTitle: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Offer margin for dynamic remarketing campaigns.
     */
-  var displayAdsValue: js.UndefOr[Double] = js.undefined
+  var displayAdsValue: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The energy efficiency class as defined in EU directive 2010/30/EU.
+    * The energy efficiency class as defined in EU directive 2010/30/EU. Acceptable values are: - "`A`" - "`A+`" - "`A++`" - "`A+++`" - "`B`" - "`C`" - "`D`" - "`E`" - "`F`" - "`G`"
     */
-  var energyEfficiencyClass: js.UndefOr[String] = js.undefined
+  var energyEfficiencyClass: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Date on which the item should expire, as specified upon insertion, in ISO
-    * 8601 format. The actual expiration date in Google Shopping is exposed in
-    * productstatuses as googleExpirationDate and might be earlier if
-    * expirationDate is too far in the future.
+    * Date on which the item should expire, as specified upon insertion, in ISO 8601 format. The actual expiration date in Google Shopping is exposed in `productstatuses` as `googleExpirationDate` and might be earlier if `expirationDate` is too far in the future.
     */
-  var expirationDate: js.UndefOr[String] = js.undefined
+  var expirationDate: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Target gender of the item.
+    * Target gender of the item. Acceptable values are: - "`female`" - "`male`" - "`unisex`"
     */
-  var gender: js.UndefOr[String] = js.undefined
+  var gender: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Google&#39;s category of the item (see Google product taxonomy).
+    * Google's category of the item (see [Google product taxonomy](https://support.google.com/merchants/answer/1705911)). When querying products, this field will contain the user provided value. There is currently no way to get back the auto assigned google product categories through the API.
     */
-  var googleProductCategory: js.UndefOr[String] = js.undefined
+  var googleProductCategory: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Global Trade Item Number (GTIN) of the item.
     */
-  var gtin: js.UndefOr[String] = js.undefined
+  var gtin: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The REST ID of the product. Content API methods that operate on products
-    * take this as their productId parameter. The REST ID for a product is of
-    * the form channel:contentLanguage:targetCountry:offerId.
+    * The REST ID of the product. Content API methods that operate on products take this as their `productId` parameter. The REST ID for a product is of the form channel:contentLanguage: targetCountry: offerId.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * False when the item does not have unique product identifiers appropriate
-    * to its category, such as GTIN, MPN, and brand. Required according to the
-    * Unique Product Identifier Rules for all target countries except for
-    * Canada.
+    * False when the item does not have unique product identifiers appropriate to its category, such as GTIN, MPN, and brand. Required according to the Unique Product Identifier Rules for all target countries except for Canada.
     */
-  var identifierExists: js.UndefOr[Boolean] = js.undefined
+  var identifierExists: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * URL of an image of the item.
     */
-  var imageLink: js.UndefOr[String] = js.undefined
+  var imageLink: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Number and amount of installments to pay for an item. Brazil only.
+    * Number and amount of installments to pay for an item.
     */
   var installment: js.UndefOr[SchemaInstallment] = js.undefined
   
   /**
-    * Whether the item is a merchant-defined bundle. A bundle is a custom
-    * grouping of different products sold by a merchant for a single price.
+    * Whether the item is a merchant-defined bundle. A bundle is a custom grouping of different products sold by a merchant for a single price.
     */
-  var isBundle: js.UndefOr[Boolean] = js.undefined
+  var isBundle: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Shared identifier for all variants of the same product.
     */
-  var itemGroupId: js.UndefOr[String] = js.undefined
+  var itemGroupId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#product&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#product`"
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * URL directly linking to your item&#39;s page on your website.
+    * URL directly linking to your item's page on your website.
     */
-  var link: js.UndefOr[String] = js.undefined
+  var link: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Loyalty points that users receive after purchasing the item. Japan only.
@@ -252,61 +234,57 @@ trait SchemaProduct extends StObject {
   /**
     * The material of which the item is made.
     */
-  var material: js.UndefOr[String] = js.undefined
+  var material: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The energy efficiency class as defined in EU directive 2010/30/EU.
+    * The energy efficiency class as defined in EU directive 2010/30/EU. Acceptable values are: - "`A`" - "`A+`" - "`A++`" - "`A+++`" - "`B`" - "`C`" - "`D`" - "`E`" - "`F`" - "`G`"
     */
-  var maxEnergyEfficiencyClass: js.UndefOr[String] = js.undefined
+  var maxEnergyEfficiencyClass: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Maximal product handling time (in business days).
     */
-  var maxHandlingTime: js.UndefOr[String] = js.undefined
+  var maxHandlingTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The energy efficiency class as defined in EU directive 2010/30/EU.
+    * The energy efficiency class as defined in EU directive 2010/30/EU. Acceptable values are: - "`A`" - "`A+`" - "`A++`" - "`A+++`" - "`B`" - "`C`" - "`D`" - "`E`" - "`F`" - "`G`"
     */
-  var minEnergyEfficiencyClass: js.UndefOr[String] = js.undefined
+  var minEnergyEfficiencyClass: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Minimal product handling time (in business days).
     */
-  var minHandlingTime: js.UndefOr[String] = js.undefined
+  var minHandlingTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Link to a mobile-optimized version of the landing page.
+    * URL for the mobile-optimized version of your item's landing page.
     */
-  var mobileLink: js.UndefOr[String] = js.undefined
+  var mobileLink: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Manufacturer Part Number (MPN) of the item.
     */
-  var mpn: js.UndefOr[String] = js.undefined
+  var mpn: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The number of identical products in a merchant-defined multipack.
     */
-  var multipack: js.UndefOr[String] = js.undefined
+  var multipack: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A unique identifier for the item. Leading and trailing whitespaces are
-    * stripped and multiple whitespaces are replaced by a single whitespace
-    * upon submission. Only valid unicode characters are accepted. See the
-    * products feed specification for details. Note: Content API methods that
-    * operate on products take the REST ID of the product, not this identifier.
+    * Required. A unique identifier for the item. Leading and trailing whitespaces are stripped and multiple whitespaces are replaced by a single whitespace upon submission. Only valid unicode characters are accepted. See the products feed specification for details. *Note:* Content API methods that operate on products take the REST ID of the product, *not* this identifier.
     */
-  var offerId: js.UndefOr[String] = js.undefined
+  var offerId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Deprecated. Whether an item is available for purchase only online.
+    * Deprecated.
     */
-  var onlineOnly: js.UndefOr[Boolean] = js.undefined
+  var onlineOnly: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The item&#39;s pattern (e.g. polka dots).
+    * The item's pattern (e.g. polka dots).
     */
-  var pattern: js.UndefOr[String] = js.undefined
+  var pattern: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Price of the item.
@@ -314,14 +292,14 @@ trait SchemaProduct extends StObject {
   var price: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * Your category of the item (formatted as in products feed specification).
+    * Your category of the item (formatted as in products data specification).
     */
-  var productType: js.UndefOr[String] = js.undefined
+  var productType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The unique ID of a promotion.
     */
-  var promotionIds: js.UndefOr[js.Array[String]] = js.undefined
+  var promotionIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Advertised sale price of the item.
@@ -329,16 +307,14 @@ trait SchemaProduct extends StObject {
   var salePrice: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * Date range during which the item is on sale (see products feed
-    * specification).
+    * Date range during which the item is on sale (see products data specification ).
     */
-  var salePriceEffectiveDate: js.UndefOr[String] = js.undefined
+  var salePriceEffectiveDate: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The quantity of the product that is available for selling on Google.
-    * Supported only for online products.
+    * The quantity of the product that is available for selling on Google. Supported only for online products.
     */
-  var sellOnGoogleQuantity: js.UndefOr[String] = js.undefined
+  var sellOnGoogleQuantity: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Shipping rules.
@@ -351,10 +327,9 @@ trait SchemaProduct extends StObject {
   var shippingHeight: js.UndefOr[SchemaProductShippingDimension] = js.undefined
   
   /**
-    * The shipping label of the product, used to group product in account-level
-    * shipping rules.
+    * The shipping label of the product, used to group product in account-level shipping rules.
     */
-  var shippingLabel: js.UndefOr[String] = js.undefined
+  var shippingLabel: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Length of the item for shipping.
@@ -372,29 +347,29 @@ trait SchemaProduct extends StObject {
   var shippingWidth: js.UndefOr[SchemaProductShippingDimension] = js.undefined
   
   /**
-    * System in which the size is specified. Recommended for apparel items.
+    * System in which the size is specified. Recommended for apparel items. Acceptable values are: - "`AU`" - "`BR`" - "`CN`" - "`DE`" - "`EU`" - "`FR`" - "`IT`" - "`JP`" - "`MEX`" - "`UK`" - "`US`"
     */
-  var sizeSystem: js.UndefOr[String] = js.undefined
+  var sizeSystem: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The cut of the item. Recommended for apparel items.
+    * The cut of the item. Recommended for apparel items. Acceptable values are: - "`big and tall`" - "`maternity`" - "`oversize`" - "`petite`" - "`plus`" - "`regular`"
     */
-  var sizeType: js.UndefOr[String] = js.undefined
+  var sizeType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Size of the item.
+    * Size of the item. Only one value is allowed. For variants with different sizes, insert a separate product for each size with the same `itemGroupId` value (see size definition).
     */
-  var sizes: js.UndefOr[js.Array[String]] = js.undefined
+  var sizes: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The source of the offer, i.e., how the offer was created.
+    * The source of the offer, i.e., how the offer was created. Acceptable values are: - "`api`" - "`crawl`" - "`feed`"
     */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The CLDR territory code for the item.
+    * Required. The CLDR territory code for the item.
     */
-  var targetCountry: js.UndefOr[String] = js.undefined
+  var targetCountry: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Tax information.
@@ -404,7 +379,7 @@ trait SchemaProduct extends StObject {
   /**
     * Title of the item.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The preference of the denominator of the unit price.
@@ -417,10 +392,9 @@ trait SchemaProduct extends StObject {
   var unitPricingMeasure: js.UndefOr[SchemaProductUnitPricingMeasure] = js.undefined
   
   /**
-    * Deprecated. The read-only list of intended destinations which passed
-    * validation.
+    * Deprecated. The read-only list of intended destinations which passed validation.
     */
-  var validatedDestinations: js.UndefOr[js.Array[String]] = js.undefined
+  var validatedDestinations: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Read-only warnings.
@@ -438,35 +412,49 @@ object SchemaProduct {
     
     inline def setAdditionalImageLinks(value: js.Array[String]): Self = StObject.set(x, "additionalImageLinks", value.asInstanceOf[js.Any])
     
+    inline def setAdditionalImageLinksNull: Self = StObject.set(x, "additionalImageLinks", null)
+    
     inline def setAdditionalImageLinksUndefined: Self = StObject.set(x, "additionalImageLinks", js.undefined)
     
-    inline def setAdditionalImageLinksVarargs(value: String*): Self = StObject.set(x, "additionalImageLinks", js.Array(value :_*))
+    inline def setAdditionalImageLinksVarargs(value: String*): Self = StObject.set(x, "additionalImageLinks", js.Array(value*))
     
     inline def setAdditionalProductTypes(value: js.Array[String]): Self = StObject.set(x, "additionalProductTypes", value.asInstanceOf[js.Any])
     
+    inline def setAdditionalProductTypesNull: Self = StObject.set(x, "additionalProductTypes", null)
+    
     inline def setAdditionalProductTypesUndefined: Self = StObject.set(x, "additionalProductTypes", js.undefined)
     
-    inline def setAdditionalProductTypesVarargs(value: String*): Self = StObject.set(x, "additionalProductTypes", js.Array(value :_*))
+    inline def setAdditionalProductTypesVarargs(value: String*): Self = StObject.set(x, "additionalProductTypes", js.Array(value*))
     
     inline def setAdult(value: Boolean): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
+    
+    inline def setAdultNull: Self = StObject.set(x, "adult", null)
     
     inline def setAdultUndefined: Self = StObject.set(x, "adult", js.undefined)
     
     inline def setAdwordsGrouping(value: String): Self = StObject.set(x, "adwordsGrouping", value.asInstanceOf[js.Any])
     
+    inline def setAdwordsGroupingNull: Self = StObject.set(x, "adwordsGrouping", null)
+    
     inline def setAdwordsGroupingUndefined: Self = StObject.set(x, "adwordsGrouping", js.undefined)
     
     inline def setAdwordsLabels(value: js.Array[String]): Self = StObject.set(x, "adwordsLabels", value.asInstanceOf[js.Any])
     
+    inline def setAdwordsLabelsNull: Self = StObject.set(x, "adwordsLabels", null)
+    
     inline def setAdwordsLabelsUndefined: Self = StObject.set(x, "adwordsLabels", js.undefined)
     
-    inline def setAdwordsLabelsVarargs(value: String*): Self = StObject.set(x, "adwordsLabels", js.Array(value :_*))
+    inline def setAdwordsLabelsVarargs(value: String*): Self = StObject.set(x, "adwordsLabels", js.Array(value*))
     
     inline def setAdwordsRedirect(value: String): Self = StObject.set(x, "adwordsRedirect", value.asInstanceOf[js.Any])
+    
+    inline def setAdwordsRedirectNull: Self = StObject.set(x, "adwordsRedirect", null)
     
     inline def setAdwordsRedirectUndefined: Self = StObject.set(x, "adwordsRedirect", js.undefined)
     
     inline def setAgeGroup(value: String): Self = StObject.set(x, "ageGroup", value.asInstanceOf[js.Any])
+    
+    inline def setAgeGroupNull: Self = StObject.set(x, "ageGroup", null)
     
     inline def setAgeGroupUndefined: Self = StObject.set(x, "ageGroup", js.undefined)
     
@@ -474,33 +462,53 @@ object SchemaProduct {
     
     inline def setAspectsUndefined: Self = StObject.set(x, "aspects", js.undefined)
     
-    inline def setAspectsVarargs(value: SchemaProductAspect*): Self = StObject.set(x, "aspects", js.Array(value :_*))
+    inline def setAspectsVarargs(value: SchemaProductAspect*): Self = StObject.set(x, "aspects", js.Array(value*))
     
     inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityDate(value: String): Self = StObject.set(x, "availabilityDate", value.asInstanceOf[js.Any])
     
+    inline def setAvailabilityDateNull: Self = StObject.set(x, "availabilityDate", null)
+    
     inline def setAvailabilityDateUndefined: Self = StObject.set(x, "availabilityDate", js.undefined)
+    
+    inline def setAvailabilityNull: Self = StObject.set(x, "availability", null)
     
     inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
     inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
+    inline def setBrandNull: Self = StObject.set(x, "brand", null)
+    
     inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
+    inline def setCanonicalLink(value: String): Self = StObject.set(x, "canonicalLink", value.asInstanceOf[js.Any])
+    
+    inline def setCanonicalLinkNull: Self = StObject.set(x, "canonicalLink", null)
+    
+    inline def setCanonicalLinkUndefined: Self = StObject.set(x, "canonicalLink", js.undefined)
+    
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    
+    inline def setChannelNull: Self = StObject.set(x, "channel", null)
     
     inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
+    inline def setColorNull: Self = StObject.set(x, "color", null)
+    
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
+    inline def setConditionNull: Self = StObject.set(x, "condition", null)
+    
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setContentLanguageNull: Self = StObject.set(x, "contentLanguage", null)
     
     inline def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
     
@@ -512,35 +520,47 @@ object SchemaProduct {
     
     inline def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
     
-    inline def setCustomAttributesVarargs(value: SchemaCustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value :_*))
+    inline def setCustomAttributesVarargs(value: SchemaCustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value*))
     
     inline def setCustomGroups(value: js.Array[SchemaCustomGroup]): Self = StObject.set(x, "customGroups", value.asInstanceOf[js.Any])
     
     inline def setCustomGroupsUndefined: Self = StObject.set(x, "customGroups", js.undefined)
     
-    inline def setCustomGroupsVarargs(value: SchemaCustomGroup*): Self = StObject.set(x, "customGroups", js.Array(value :_*))
+    inline def setCustomGroupsVarargs(value: SchemaCustomGroup*): Self = StObject.set(x, "customGroups", js.Array(value*))
     
     inline def setCustomLabel0(value: String): Self = StObject.set(x, "customLabel0", value.asInstanceOf[js.Any])
+    
+    inline def setCustomLabel0Null: Self = StObject.set(x, "customLabel0", null)
     
     inline def setCustomLabel0Undefined: Self = StObject.set(x, "customLabel0", js.undefined)
     
     inline def setCustomLabel1(value: String): Self = StObject.set(x, "customLabel1", value.asInstanceOf[js.Any])
     
+    inline def setCustomLabel1Null: Self = StObject.set(x, "customLabel1", null)
+    
     inline def setCustomLabel1Undefined: Self = StObject.set(x, "customLabel1", js.undefined)
     
     inline def setCustomLabel2(value: String): Self = StObject.set(x, "customLabel2", value.asInstanceOf[js.Any])
+    
+    inline def setCustomLabel2Null: Self = StObject.set(x, "customLabel2", null)
     
     inline def setCustomLabel2Undefined: Self = StObject.set(x, "customLabel2", js.undefined)
     
     inline def setCustomLabel3(value: String): Self = StObject.set(x, "customLabel3", value.asInstanceOf[js.Any])
     
+    inline def setCustomLabel3Null: Self = StObject.set(x, "customLabel3", null)
+    
     inline def setCustomLabel3Undefined: Self = StObject.set(x, "customLabel3", js.undefined)
     
     inline def setCustomLabel4(value: String): Self = StObject.set(x, "customLabel4", value.asInstanceOf[js.Any])
     
+    inline def setCustomLabel4Null: Self = StObject.set(x, "customLabel4", null)
+    
     inline def setCustomLabel4Undefined: Self = StObject.set(x, "customLabel4", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
@@ -548,59 +568,85 @@ object SchemaProduct {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: SchemaProductDestination*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: SchemaProductDestination*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setDisplayAdsId(value: String): Self = StObject.set(x, "displayAdsId", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayAdsIdNull: Self = StObject.set(x, "displayAdsId", null)
     
     inline def setDisplayAdsIdUndefined: Self = StObject.set(x, "displayAdsId", js.undefined)
     
     inline def setDisplayAdsLink(value: String): Self = StObject.set(x, "displayAdsLink", value.asInstanceOf[js.Any])
     
+    inline def setDisplayAdsLinkNull: Self = StObject.set(x, "displayAdsLink", null)
+    
     inline def setDisplayAdsLinkUndefined: Self = StObject.set(x, "displayAdsLink", js.undefined)
     
     inline def setDisplayAdsSimilarIds(value: js.Array[String]): Self = StObject.set(x, "displayAdsSimilarIds", value.asInstanceOf[js.Any])
     
+    inline def setDisplayAdsSimilarIdsNull: Self = StObject.set(x, "displayAdsSimilarIds", null)
+    
     inline def setDisplayAdsSimilarIdsUndefined: Self = StObject.set(x, "displayAdsSimilarIds", js.undefined)
     
-    inline def setDisplayAdsSimilarIdsVarargs(value: String*): Self = StObject.set(x, "displayAdsSimilarIds", js.Array(value :_*))
+    inline def setDisplayAdsSimilarIdsVarargs(value: String*): Self = StObject.set(x, "displayAdsSimilarIds", js.Array(value*))
     
     inline def setDisplayAdsTitle(value: String): Self = StObject.set(x, "displayAdsTitle", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayAdsTitleNull: Self = StObject.set(x, "displayAdsTitle", null)
     
     inline def setDisplayAdsTitleUndefined: Self = StObject.set(x, "displayAdsTitle", js.undefined)
     
     inline def setDisplayAdsValue(value: Double): Self = StObject.set(x, "displayAdsValue", value.asInstanceOf[js.Any])
     
+    inline def setDisplayAdsValueNull: Self = StObject.set(x, "displayAdsValue", null)
+    
     inline def setDisplayAdsValueUndefined: Self = StObject.set(x, "displayAdsValue", js.undefined)
     
     inline def setEnergyEfficiencyClass(value: String): Self = StObject.set(x, "energyEfficiencyClass", value.asInstanceOf[js.Any])
+    
+    inline def setEnergyEfficiencyClassNull: Self = StObject.set(x, "energyEfficiencyClass", null)
     
     inline def setEnergyEfficiencyClassUndefined: Self = StObject.set(x, "energyEfficiencyClass", js.undefined)
     
     inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
+    inline def setExpirationDateNull: Self = StObject.set(x, "expirationDate", null)
+    
     inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
     inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    
+    inline def setGenderNull: Self = StObject.set(x, "gender", null)
     
     inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
     inline def setGoogleProductCategory(value: String): Self = StObject.set(x, "googleProductCategory", value.asInstanceOf[js.Any])
     
+    inline def setGoogleProductCategoryNull: Self = StObject.set(x, "googleProductCategory", null)
+    
     inline def setGoogleProductCategoryUndefined: Self = StObject.set(x, "googleProductCategory", js.undefined)
     
     inline def setGtin(value: String): Self = StObject.set(x, "gtin", value.asInstanceOf[js.Any])
+    
+    inline def setGtinNull: Self = StObject.set(x, "gtin", null)
     
     inline def setGtinUndefined: Self = StObject.set(x, "gtin", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setIdentifierExists(value: Boolean): Self = StObject.set(x, "identifierExists", value.asInstanceOf[js.Any])
     
+    inline def setIdentifierExistsNull: Self = StObject.set(x, "identifierExists", null)
+    
     inline def setIdentifierExistsUndefined: Self = StObject.set(x, "identifierExists", js.undefined)
     
     inline def setImageLink(value: String): Self = StObject.set(x, "imageLink", value.asInstanceOf[js.Any])
+    
+    inline def setImageLinkNull: Self = StObject.set(x, "imageLink", null)
     
     inline def setImageLinkUndefined: Self = StObject.set(x, "imageLink", js.undefined)
     
@@ -610,17 +656,25 @@ object SchemaProduct {
     
     inline def setIsBundle(value: Boolean): Self = StObject.set(x, "isBundle", value.asInstanceOf[js.Any])
     
+    inline def setIsBundleNull: Self = StObject.set(x, "isBundle", null)
+    
     inline def setIsBundleUndefined: Self = StObject.set(x, "isBundle", js.undefined)
     
     inline def setItemGroupId(value: String): Self = StObject.set(x, "itemGroupId", value.asInstanceOf[js.Any])
+    
+    inline def setItemGroupIdNull: Self = StObject.set(x, "itemGroupId", null)
     
     inline def setItemGroupIdUndefined: Self = StObject.set(x, "itemGroupId", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    
+    inline def setLinkNull: Self = StObject.set(x, "link", null)
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
@@ -630,45 +684,67 @@ object SchemaProduct {
     
     inline def setMaterial(value: String): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
+    inline def setMaterialNull: Self = StObject.set(x, "material", null)
+    
     inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     inline def setMaxEnergyEfficiencyClass(value: String): Self = StObject.set(x, "maxEnergyEfficiencyClass", value.asInstanceOf[js.Any])
+    
+    inline def setMaxEnergyEfficiencyClassNull: Self = StObject.set(x, "maxEnergyEfficiencyClass", null)
     
     inline def setMaxEnergyEfficiencyClassUndefined: Self = StObject.set(x, "maxEnergyEfficiencyClass", js.undefined)
     
     inline def setMaxHandlingTime(value: String): Self = StObject.set(x, "maxHandlingTime", value.asInstanceOf[js.Any])
     
+    inline def setMaxHandlingTimeNull: Self = StObject.set(x, "maxHandlingTime", null)
+    
     inline def setMaxHandlingTimeUndefined: Self = StObject.set(x, "maxHandlingTime", js.undefined)
     
     inline def setMinEnergyEfficiencyClass(value: String): Self = StObject.set(x, "minEnergyEfficiencyClass", value.asInstanceOf[js.Any])
+    
+    inline def setMinEnergyEfficiencyClassNull: Self = StObject.set(x, "minEnergyEfficiencyClass", null)
     
     inline def setMinEnergyEfficiencyClassUndefined: Self = StObject.set(x, "minEnergyEfficiencyClass", js.undefined)
     
     inline def setMinHandlingTime(value: String): Self = StObject.set(x, "minHandlingTime", value.asInstanceOf[js.Any])
     
+    inline def setMinHandlingTimeNull: Self = StObject.set(x, "minHandlingTime", null)
+    
     inline def setMinHandlingTimeUndefined: Self = StObject.set(x, "minHandlingTime", js.undefined)
     
     inline def setMobileLink(value: String): Self = StObject.set(x, "mobileLink", value.asInstanceOf[js.Any])
+    
+    inline def setMobileLinkNull: Self = StObject.set(x, "mobileLink", null)
     
     inline def setMobileLinkUndefined: Self = StObject.set(x, "mobileLink", js.undefined)
     
     inline def setMpn(value: String): Self = StObject.set(x, "mpn", value.asInstanceOf[js.Any])
     
+    inline def setMpnNull: Self = StObject.set(x, "mpn", null)
+    
     inline def setMpnUndefined: Self = StObject.set(x, "mpn", js.undefined)
     
     inline def setMultipack(value: String): Self = StObject.set(x, "multipack", value.asInstanceOf[js.Any])
+    
+    inline def setMultipackNull: Self = StObject.set(x, "multipack", null)
     
     inline def setMultipackUndefined: Self = StObject.set(x, "multipack", js.undefined)
     
     inline def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     
+    inline def setOfferIdNull: Self = StObject.set(x, "offerId", null)
+    
     inline def setOfferIdUndefined: Self = StObject.set(x, "offerId", js.undefined)
     
     inline def setOnlineOnly(value: Boolean): Self = StObject.set(x, "onlineOnly", value.asInstanceOf[js.Any])
     
+    inline def setOnlineOnlyNull: Self = StObject.set(x, "onlineOnly", null)
+    
     inline def setOnlineOnlyUndefined: Self = StObject.set(x, "onlineOnly", js.undefined)
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternNull: Self = StObject.set(x, "pattern", null)
     
     inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
@@ -678,23 +754,31 @@ object SchemaProduct {
     
     inline def setProductType(value: String): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
     
+    inline def setProductTypeNull: Self = StObject.set(x, "productType", null)
+    
     inline def setProductTypeUndefined: Self = StObject.set(x, "productType", js.undefined)
     
     inline def setPromotionIds(value: js.Array[String]): Self = StObject.set(x, "promotionIds", value.asInstanceOf[js.Any])
     
+    inline def setPromotionIdsNull: Self = StObject.set(x, "promotionIds", null)
+    
     inline def setPromotionIdsUndefined: Self = StObject.set(x, "promotionIds", js.undefined)
     
-    inline def setPromotionIdsVarargs(value: String*): Self = StObject.set(x, "promotionIds", js.Array(value :_*))
+    inline def setPromotionIdsVarargs(value: String*): Self = StObject.set(x, "promotionIds", js.Array(value*))
     
     inline def setSalePrice(value: SchemaPrice): Self = StObject.set(x, "salePrice", value.asInstanceOf[js.Any])
     
     inline def setSalePriceEffectiveDate(value: String): Self = StObject.set(x, "salePriceEffectiveDate", value.asInstanceOf[js.Any])
+    
+    inline def setSalePriceEffectiveDateNull: Self = StObject.set(x, "salePriceEffectiveDate", null)
     
     inline def setSalePriceEffectiveDateUndefined: Self = StObject.set(x, "salePriceEffectiveDate", js.undefined)
     
     inline def setSalePriceUndefined: Self = StObject.set(x, "salePrice", js.undefined)
     
     inline def setSellOnGoogleQuantity(value: String): Self = StObject.set(x, "sellOnGoogleQuantity", value.asInstanceOf[js.Any])
+    
+    inline def setSellOnGoogleQuantityNull: Self = StObject.set(x, "sellOnGoogleQuantity", null)
     
     inline def setSellOnGoogleQuantityUndefined: Self = StObject.set(x, "sellOnGoogleQuantity", js.undefined)
     
@@ -706,6 +790,8 @@ object SchemaProduct {
     
     inline def setShippingLabel(value: String): Self = StObject.set(x, "shippingLabel", value.asInstanceOf[js.Any])
     
+    inline def setShippingLabelNull: Self = StObject.set(x, "shippingLabel", null)
+    
     inline def setShippingLabelUndefined: Self = StObject.set(x, "shippingLabel", js.undefined)
     
     inline def setShippingLength(value: SchemaProductShippingDimension): Self = StObject.set(x, "shippingLength", value.asInstanceOf[js.Any])
@@ -714,7 +800,7 @@ object SchemaProduct {
     
     inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
     
-    inline def setShippingVarargs(value: SchemaProductShipping*): Self = StObject.set(x, "shipping", js.Array(value :_*))
+    inline def setShippingVarargs(value: SchemaProductShipping*): Self = StObject.set(x, "shipping", js.Array(value*))
     
     inline def setShippingWeight(value: SchemaProductShippingWeight): Self = StObject.set(x, "shippingWeight", value.asInstanceOf[js.Any])
     
@@ -726,23 +812,33 @@ object SchemaProduct {
     
     inline def setSizeSystem(value: String): Self = StObject.set(x, "sizeSystem", value.asInstanceOf[js.Any])
     
+    inline def setSizeSystemNull: Self = StObject.set(x, "sizeSystem", null)
+    
     inline def setSizeSystemUndefined: Self = StObject.set(x, "sizeSystem", js.undefined)
     
     inline def setSizeType(value: String): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
+    
+    inline def setSizeTypeNull: Self = StObject.set(x, "sizeType", null)
     
     inline def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
     inline def setSizes(value: js.Array[String]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
+    inline def setSizesNull: Self = StObject.set(x, "sizes", null)
+    
     inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
-    inline def setSizesVarargs(value: String*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+    inline def setSizesVarargs(value: String*): Self = StObject.set(x, "sizes", js.Array(value*))
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     inline def setTargetCountry(value: String): Self = StObject.set(x, "targetCountry", value.asInstanceOf[js.Any])
+    
+    inline def setTargetCountryNull: Self = StObject.set(x, "targetCountry", null)
     
     inline def setTargetCountryUndefined: Self = StObject.set(x, "targetCountry", js.undefined)
     
@@ -750,9 +846,11 @@ object SchemaProduct {
     
     inline def setTaxesUndefined: Self = StObject.set(x, "taxes", js.undefined)
     
-    inline def setTaxesVarargs(value: SchemaProductTax*): Self = StObject.set(x, "taxes", js.Array(value :_*))
+    inline def setTaxesVarargs(value: SchemaProductTax*): Self = StObject.set(x, "taxes", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
@@ -766,14 +864,16 @@ object SchemaProduct {
     
     inline def setValidatedDestinations(value: js.Array[String]): Self = StObject.set(x, "validatedDestinations", value.asInstanceOf[js.Any])
     
+    inline def setValidatedDestinationsNull: Self = StObject.set(x, "validatedDestinations", null)
+    
     inline def setValidatedDestinationsUndefined: Self = StObject.set(x, "validatedDestinations", js.undefined)
     
-    inline def setValidatedDestinationsVarargs(value: String*): Self = StObject.set(x, "validatedDestinations", js.Array(value :_*))
+    inline def setValidatedDestinationsVarargs(value: String*): Self = StObject.set(x, "validatedDestinations", js.Array(value*))
     
     inline def setWarnings(value: js.Array[SchemaError]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: SchemaError*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: SchemaError*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

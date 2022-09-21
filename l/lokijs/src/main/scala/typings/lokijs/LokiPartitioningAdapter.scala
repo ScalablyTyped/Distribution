@@ -1,7 +1,6 @@
 package typings.lokijs
 
 import typings.lokijs.anon.PageSize
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.paging] - (default: false) set to true to enable paging collection data.
   * @param [options.pageSize] - (default : 25MB) you can use this to limit size of strings passed to inner adapter.
   * @param [options.delimiter] - allows you to override the default delimeter
-  * @constructor LokiPartitioningAdapter
   */
 trait LokiPartitioningAdapter
   extends StObject
@@ -44,7 +42,7 @@ trait LokiPartitioningAdapter
     * @param callback - adapter callback to return load result to caller
     */
   @JSName("exportDatabase")
-  def exportDatabase_MLokiPartitioningAdapter(dbname: String, dbref: Loki, callback: js.Function1[/* err */ Error | Null, Unit]): Unit
+  def exportDatabase_MLokiPartitioningAdapter(dbname: String, dbref: Loki, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit
   
   /**
     * Used to sequentially load the next page of collection partition, one at a time.
@@ -73,28 +71,28 @@ trait LokiPartitioningAdapter
     *
     * @param callback - adapter callback to return load result to caller
     */
-  def saveNextPage(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
+  def saveNextPage(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit
   
   /**
     * Helper method used internally to save each dirty collection, one at a time.
     *
     * @param callback - adapter callback to return load result to caller
     */
-  def saveNextPartition(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
+  def saveNextPartition(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit
 }
 object LokiPartitioningAdapter {
   
   inline def apply(
     dbname: String,
-    exportDatabase: (String, Loki, js.Function1[/* err */ Error | Null, Unit]) => Unit,
-    loadDatabase: (String, js.Function1[/* value */ js.Any, Unit]) => Unit,
+    exportDatabase: (String, Loki, js.Function1[/* err */ js.Error | Null, Unit]) => Unit,
+    loadDatabase: (String, js.Function1[/* value */ Any, Unit]) => Unit,
     loadNextPage: js.Function0[Unit] => Unit,
     loadNextPartition: (Double, js.Function0[Unit]) => Unit,
     mode: String,
     options: PageSize,
     pageIterator: PageIterator | js.Object,
-    saveNextPage: js.Function1[/* err */ Error | Null, Unit] => Unit,
-    saveNextPartition: js.Function1[/* err */ Error | Null, Unit] => Unit
+    saveNextPage: js.Function1[/* err */ js.Error | Null, Unit] => Unit,
+    saveNextPartition: js.Function1[/* err */ js.Error | Null, Unit] => Unit
   ): LokiPartitioningAdapter = {
     val __obj = js.Dynamic.literal(dbname = dbname.asInstanceOf[js.Any], exportDatabase = js.Any.fromFunction3(exportDatabase), loadDatabase = js.Any.fromFunction2(loadDatabase), loadNextPage = js.Any.fromFunction1(loadNextPage), loadNextPartition = js.Any.fromFunction2(loadNextPartition), mode = mode.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], pageIterator = pageIterator.asInstanceOf[js.Any], saveNextPage = js.Any.fromFunction1(saveNextPage), saveNextPartition = js.Any.fromFunction1(saveNextPartition), adapter = null, dbref = null)
     __obj.asInstanceOf[LokiPartitioningAdapter]
@@ -116,9 +114,9 @@ object LokiPartitioningAdapter {
     
     inline def setDirtyPartitionsUndefined: Self = StObject.set(x, "dirtyPartitions", js.undefined)
     
-    inline def setDirtyPartitionsVarargs(value: Double*): Self = StObject.set(x, "dirtyPartitions", js.Array(value :_*))
+    inline def setDirtyPartitionsVarargs(value: Double*): Self = StObject.set(x, "dirtyPartitions", js.Array(value*))
     
-    inline def setExportDatabase(value: (String, Loki, js.Function1[/* err */ Error | Null, Unit]) => Unit): Self = StObject.set(x, "exportDatabase", js.Any.fromFunction3(value))
+    inline def setExportDatabase(value: (String, Loki, js.Function1[/* err */ js.Error | Null, Unit]) => Unit): Self = StObject.set(x, "exportDatabase", js.Any.fromFunction3(value))
     
     inline def setLoadNextPage(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "loadNextPage", js.Any.fromFunction1(value))
     
@@ -130,8 +128,8 @@ object LokiPartitioningAdapter {
     
     inline def setPageIterator(value: PageIterator | js.Object): Self = StObject.set(x, "pageIterator", value.asInstanceOf[js.Any])
     
-    inline def setSaveNextPage(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPage", js.Any.fromFunction1(value))
+    inline def setSaveNextPage(value: js.Function1[/* err */ js.Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPage", js.Any.fromFunction1(value))
     
-    inline def setSaveNextPartition(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPartition", js.Any.fromFunction1(value))
+    inline def setSaveNextPartition(value: js.Function1[/* err */ js.Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPartition", js.Any.fromFunction1(value))
   }
 }

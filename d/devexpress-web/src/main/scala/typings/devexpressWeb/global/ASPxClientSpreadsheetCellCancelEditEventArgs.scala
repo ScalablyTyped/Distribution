@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpreadsheetCellCancelEditEventArgs")
 @js.native
-class ASPxClientSpreadsheetCellCancelEditEventArgs protected ()
+open class ASPxClientSpreadsheetCellCancelEditEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpreadsheetCellCancelEditEventArgs {
   /**

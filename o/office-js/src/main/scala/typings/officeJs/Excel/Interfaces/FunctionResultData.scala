@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionResultData[T] extends StObject {
   
   /**
-    *
     * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var error: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error property is not set).
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var value: js.UndefOr[T] = js.undefined

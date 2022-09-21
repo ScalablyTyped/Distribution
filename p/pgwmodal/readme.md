@@ -10,10 +10,10 @@ Responsive Modal / Dialog window for jQuery, Zepto and AngularJS
 | ------------------ | :-------------: |
 | Full name          | pgwmodal |
 | Keywords           | modal, dialog, window, popup, alert, lightbox, responsive, mobile, jquery, jquery-plugin, zepto, angular, angularjs |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 849 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 50.333333333333336 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://pgwjs.com/pgwmodal)

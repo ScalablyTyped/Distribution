@@ -62,7 +62,7 @@ object adaptersTypesMod {
       
       inline def setBitrates(value: js.Array[String]): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
       
-      inline def setBitratesVarargs(value: String*): Self = StObject.set(x, "bitrates", js.Array(value :_*))
+      inline def setBitratesVarargs(value: String*): Self = StObject.set(x, "bitrates", js.Array(value*))
       
       inline def setBwEstimate(value: Double): Self = StObject.set(x, "bwEstimate", value.asInstanceOf[js.Any])
       
@@ -102,7 +102,7 @@ object adaptersTypesMod {
     
     var mediaStreamDeliveryPriority: MediaStreamDeliveryPriority
     
-    def setMediaStreams(mediaStreams: js.Any): Unit
+    def setMediaStreams(mediaStreams: Any): Unit
     
     var syncWithLiveTime: Double
   }
@@ -119,7 +119,7 @@ object adaptersTypesMod {
       isSeekAvailable: Boolean,
       isSyncWithLive: Boolean,
       mediaStreamDeliveryPriority: MediaStreamDeliveryPriority,
-      setMediaStreams: js.Any => Unit,
+      setMediaStreams: Any => Unit,
       syncWithLiveTime: Double
     ): IPlaybackAdapter = {
       val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), canPlay = js.Any.fromFunction1(canPlay), currentUrl = currentUrl.asInstanceOf[js.Any], debugInfo = debugInfo.asInstanceOf[js.Any], detach = js.Any.fromFunction0(detach), isDynamicContent = isDynamicContent.asInstanceOf[js.Any], isDynamicContentEnded = isDynamicContentEnded.asInstanceOf[js.Any], isSeekAvailable = isSeekAvailable.asInstanceOf[js.Any], isSyncWithLive = isSyncWithLive.asInstanceOf[js.Any], mediaStreamDeliveryPriority = mediaStreamDeliveryPriority.asInstanceOf[js.Any], setMediaStreams = js.Any.fromFunction1(setMediaStreams), syncWithLiveTime = syncWithLiveTime.asInstanceOf[js.Any])
@@ -134,7 +134,7 @@ object adaptersTypesMod {
       
       inline def setCurrentUrl(value: PlayableMediaSource): Self = StObject.set(x, "currentUrl", value.asInstanceOf[js.Any])
       
-      inline def setCurrentUrlVarargs(value: (String | IPlayableSource)*): Self = StObject.set(x, "currentUrl", js.Array(value :_*))
+      inline def setCurrentUrlVarargs(value: (String | IPlayableSource)*): Self = StObject.set(x, "currentUrl", js.Array(value*))
       
       inline def setDebugInfo(value: IAdapterDebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
       
@@ -150,7 +150,7 @@ object adaptersTypesMod {
       
       inline def setMediaStreamDeliveryPriority(value: MediaStreamDeliveryPriority): Self = StObject.set(x, "mediaStreamDeliveryPriority", value.asInstanceOf[js.Any])
       
-      inline def setSetMediaStreams(value: js.Any => Unit): Self = StObject.set(x, "setMediaStreams", js.Any.fromFunction1(value))
+      inline def setSetMediaStreams(value: Any => Unit): Self = StObject.set(x, "setMediaStreams", js.Any.fromFunction1(value))
       
       inline def setSyncWithLiveTime(value: Double): Self = StObject.set(x, "syncWithLiveTime", value.asInstanceOf[js.Any])
     }

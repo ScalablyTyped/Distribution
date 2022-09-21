@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait ResultRetentionSettings extends StObject {
   
   var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date
+  var lastUpdatedDate: js.Date
   
   var manualResultsRetentionDuration: Double
 }
@@ -21,7 +20,7 @@ object ResultRetentionSettings {
   inline def apply(
     automatedResultsRetentionDuration: Double,
     lastUpdatedBy: IdentityRef,
-    lastUpdatedDate: Date,
+    lastUpdatedDate: js.Date,
     manualResultsRetentionDuration: Double
   ): ResultRetentionSettings = {
     val __obj = js.Dynamic.literal(automatedResultsRetentionDuration = automatedResultsRetentionDuration.asInstanceOf[js.Any], lastUpdatedBy = lastUpdatedBy.asInstanceOf[js.Any], lastUpdatedDate = lastUpdatedDate.asInstanceOf[js.Any], manualResultsRetentionDuration = manualResultsRetentionDuration.asInstanceOf[js.Any])
@@ -34,7 +33,7 @@ object ResultRetentionSettings {
     
     inline def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setManualResultsRetentionDuration(value: Double): Self = StObject.set(x, "manualResultsRetentionDuration", value.asInstanceOf[js.Any])
   }

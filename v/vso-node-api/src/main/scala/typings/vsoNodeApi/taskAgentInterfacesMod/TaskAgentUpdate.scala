@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait TaskAgentUpdate extends StObject {
   /**
     * Gets the date on which this agent update was requested.
     */
-  var requestTime: Date
+  var requestTime: js.Date
   
   /**
     * The identity that request the agent update
@@ -37,7 +36,7 @@ object TaskAgentUpdate {
   
   inline def apply(
     currentState: String,
-    requestTime: Date,
+    requestTime: js.Date,
     requestedBy: IdentityRef,
     sourceVersion: PackageVersion,
     targetVersion: PackageVersion
@@ -50,7 +49,7 @@ object TaskAgentUpdate {
     
     inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
-    inline def setRequestTime(value: Date): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
+    inline def setRequestTime(value: js.Date): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     
     inline def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     

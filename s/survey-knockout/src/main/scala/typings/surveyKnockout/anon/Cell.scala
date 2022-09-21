@@ -8,21 +8,19 @@ trait Cell extends StObject {
   
   var cell: String
   
-  var detailButton: String
+  var cellLabel: String
   
-  var detailButtonExpanded: String
+  var cellResponsiveTitle: String
   
-  var detailCell: String
+  var cellText: String
   
-  var detailIcon: String
+  var cellTextSelected: String
   
-  var detailIconExpanded: String
+  var itemChecked: String
   
-  var detailPanelCell: String
+  var itemDecorator: String
   
-  var detailRowText: String
-  
-  var headerCell: String
+  var label: String
   
   var root: String
 }
@@ -30,17 +28,16 @@ object Cell {
   
   inline def apply(
     cell: String,
-    detailButton: String,
-    detailButtonExpanded: String,
-    detailCell: String,
-    detailIcon: String,
-    detailIconExpanded: String,
-    detailPanelCell: String,
-    detailRowText: String,
-    headerCell: String,
+    cellLabel: String,
+    cellResponsiveTitle: String,
+    cellText: String,
+    cellTextSelected: String,
+    itemChecked: String,
+    itemDecorator: String,
+    label: String,
     root: String
   ): Cell = {
-    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], detailButton = detailButton.asInstanceOf[js.Any], detailButtonExpanded = detailButtonExpanded.asInstanceOf[js.Any], detailCell = detailCell.asInstanceOf[js.Any], detailIcon = detailIcon.asInstanceOf[js.Any], detailIconExpanded = detailIconExpanded.asInstanceOf[js.Any], detailPanelCell = detailPanelCell.asInstanceOf[js.Any], detailRowText = detailRowText.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], cellLabel = cellLabel.asInstanceOf[js.Any], cellResponsiveTitle = cellResponsiveTitle.asInstanceOf[js.Any], cellText = cellText.asInstanceOf[js.Any], cellTextSelected = cellTextSelected.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cell]
   }
   
@@ -48,21 +45,19 @@ object Cell {
     
     inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    inline def setDetailButton(value: String): Self = StObject.set(x, "detailButton", value.asInstanceOf[js.Any])
+    inline def setCellLabel(value: String): Self = StObject.set(x, "cellLabel", value.asInstanceOf[js.Any])
     
-    inline def setDetailButtonExpanded(value: String): Self = StObject.set(x, "detailButtonExpanded", value.asInstanceOf[js.Any])
+    inline def setCellResponsiveTitle(value: String): Self = StObject.set(x, "cellResponsiveTitle", value.asInstanceOf[js.Any])
     
-    inline def setDetailCell(value: String): Self = StObject.set(x, "detailCell", value.asInstanceOf[js.Any])
+    inline def setCellText(value: String): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
     
-    inline def setDetailIcon(value: String): Self = StObject.set(x, "detailIcon", value.asInstanceOf[js.Any])
+    inline def setCellTextSelected(value: String): Self = StObject.set(x, "cellTextSelected", value.asInstanceOf[js.Any])
     
-    inline def setDetailIconExpanded(value: String): Self = StObject.set(x, "detailIconExpanded", value.asInstanceOf[js.Any])
+    inline def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
     
-    inline def setDetailPanelCell(value: String): Self = StObject.set(x, "detailPanelCell", value.asInstanceOf[js.Any])
+    inline def setItemDecorator(value: String): Self = StObject.set(x, "itemDecorator", value.asInstanceOf[js.Any])
     
-    inline def setDetailRowText(value: String): Self = StObject.set(x, "detailRowText", value.asInstanceOf[js.Any])
-    
-    inline def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

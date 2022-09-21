@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "dfareporting_v3_3.Resource$Userrolepermissions")
 @js.native
-class ResourceUserrolepermissions protected ()
+open class ResourceUserrolepermissions protected ()
   extends typings.googleapis.v33Mod.dfareportingV33.ResourceUserrolepermissions {
   def this(context: APIRequestContext) = this()
 }

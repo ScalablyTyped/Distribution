@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__algorithm
 
-Typings are for version 1.3.3
+Typings are for version 1.9.2
 
 ## Library description:
 Lumino Algorithms and Iterators
@@ -10,15 +10,12 @@ Lumino Algorithms and Iterators
 | ------------------ | :-------------: |
 | Full name          | @lumino/algorithm |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 154 |
-| # downloads        | 1381820 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 286149.6666666667 |
+| # stars            | 370.0 |
 
 ## Links
-- [Homepage](https://github.com/jupyterlab/lumino)
-- [Bugs](https://github.com/jupyterlab/lumino/issues)
-- [Repository](https://github.com/jupyterlab/lumino)
 - [Npm](https://www.npmjs.com/package/%40lumino%2Falgorithm)
     
 

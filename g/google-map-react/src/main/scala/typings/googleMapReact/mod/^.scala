@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-map-react", JSImport.Namespace)
 @js.native
-class ^ ()
-  extends Component[Props, js.Object, js.Any]
+open class ^ ()
+  extends Component[Props, js.Object, Any]
 @JSImport("google-map-react", JSImport.Namespace)
 @js.native
 object ^ extends StObject

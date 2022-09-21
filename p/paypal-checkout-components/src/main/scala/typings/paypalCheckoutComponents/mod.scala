@@ -1,6 +1,7 @@
 package typings.paypalCheckoutComponents
 
 import typings.paypalCheckoutComponents.buttonMod.ButtonRenderer
+import typings.paypalCheckoutComponents.buttonMod.ButtonsRenderer
 import typings.paypalCheckoutComponents.buttonMod.FundingOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -74,6 +75,10 @@ object mod {
     /* "small" */ val Small: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Small & String = js.native
   }
   
+  @JSImport("paypal-checkout-components", "Buttons")
+  @js.native
+  val Buttons: ButtonsRenderer = js.native
+  
   @JSImport("paypal-checkout-components", "Environment")
   @js.native
   object Environment extends StObject {
@@ -98,6 +103,8 @@ object mod {
     /* 0 */ val CREDIT: typings.paypalCheckoutComponents.buttonMod.FundingOption.CREDIT & Double = js.native
     
     /* 3 */ val ELV: typings.paypalCheckoutComponents.buttonMod.FundingOption.ELV & Double = js.native
+    
+    /* 4 */ val PAYPAL: typings.paypalCheckoutComponents.buttonMod.FundingOption.PAYPAL & Double = js.native
     
     /* 2 */ val VENMO: typings.paypalCheckoutComponents.buttonMod.FundingOption.VENMO & Double = js.native
   }

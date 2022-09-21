@@ -1,0 +1,29 @@
+package typings.googleapis.homegraphV1Mod.homegraphV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaAgentDeviceId extends StObject {
+  
+  /**
+    * Third-party device ID.
+    */
+  var id: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaAgentDeviceId {
+  
+  inline def apply(): SchemaAgentDeviceId = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaAgentDeviceId]
+  }
+  
+  extension [Self <: SchemaAgentDeviceId](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+  }
+}

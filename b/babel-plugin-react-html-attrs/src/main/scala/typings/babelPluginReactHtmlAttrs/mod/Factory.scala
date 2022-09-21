@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Factory[P] extends StObject {
   
-  def apply(props: Attributes & P, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[js.Any]] = js.native
-  def apply(props: Unit, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[js.Any]] = js.native
+  def apply(props: Attributes & P, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = js.native
+  def apply(props: Unit, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = js.native
 }

@@ -12,13 +12,13 @@ trait OIndex extends StObject {
   
   var algorithm: String = js.native
   
-  def cacheData(indices: js.Array[js.Any]): js.Promise[ODB] = js.native
+  def cacheData(indices: js.Array[Any]): js.Promise[ODB] = js.native
   
   var cached: Boolean = js.native
   
   var clusters: js.Array[OCluster] = js.native
   
-  def configure(config: js.Any): Unit = js.native
+  def configure(config: Any): Unit = js.native
   
   def create(config: js.Array[IndexConfig]): js.Promise[OIndex] = js.native
   def create(config: IndexConfig): js.Promise[OIndex] = js.native

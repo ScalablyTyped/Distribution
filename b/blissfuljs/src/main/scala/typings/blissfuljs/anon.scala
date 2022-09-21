@@ -33,7 +33,7 @@ object anon {
   
   trait Data
     extends StObject
-       with /* propertyName */ StringDictionary[js.Any] {
+       with /* propertyName */ StringDictionary[Any] {
     
     var data: js.UndefOr[String] = js.undefined
     
@@ -41,19 +41,19 @@ object anon {
     
     var method: js.UndefOr[String] = js.undefined
     
-    var onreadystatechange: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any]] = js.undefined
+    var onreadystatechange: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], Any]] = js.undefined
     
     var readyState: js.UndefOr[Double] = js.undefined
     
-    var response: js.UndefOr[js.Any] = js.undefined
+    var response: js.UndefOr[Any] = js.undefined
     
-    var responseBody: js.UndefOr[js.Any] = js.undefined
+    var responseBody: js.UndefOr[Any] = js.undefined
     
     var responseText: js.UndefOr[String] = js.undefined
     
     var responseType: js.UndefOr[String] = js.undefined
     
-    var responseXML: js.UndefOr[js.Any] = js.undefined
+    var responseXML: js.UndefOr[Any] = js.undefined
     
     var status: js.UndefOr[Double] = js.undefined
     
@@ -86,7 +86,7 @@ object anon {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setOnreadystatechange(value: /* ev */ ProgressEvent[EventTarget] => js.Any): Self = StObject.set(x, "onreadystatechange", js.Any.fromFunction1(value))
+      inline def setOnreadystatechange(value: /* ev */ ProgressEvent[EventTarget] => Any): Self = StObject.set(x, "onreadystatechange", js.Any.fromFunction1(value))
       
       inline def setOnreadystatechangeUndefined: Self = StObject.set(x, "onreadystatechange", js.undefined)
       
@@ -94,9 +94,9 @@ object anon {
       
       inline def setReadyStateUndefined: Self = StObject.set(x, "readyState", js.undefined)
       
-      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      inline def setResponseBody(value: js.Any): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
+      inline def setResponseBody(value: Any): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
       
       inline def setResponseBodyUndefined: Self = StObject.set(x, "responseBody", js.undefined)
       
@@ -110,7 +110,7 @@ object anon {
       
       inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      inline def setResponseXML(value: js.Any): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
+      inline def setResponseXML(value: Any): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
       
       inline def setResponseXMLUndefined: Self = StObject.set(x, "responseXML", js.undefined)
       
@@ -138,7 +138,7 @@ object anon {
   
   trait DictpropertyName
     extends StObject
-       with /* propertyName */ StringDictionary[js.Any] {
+       with /* propertyName */ StringDictionary[Any] {
     
     var `abstract`: js.UndefOr[Boolean] = js.undefined
     

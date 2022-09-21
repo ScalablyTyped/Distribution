@@ -1,7 +1,7 @@
 
 # Scala.js typings for jdenticon
 
-Typings are for version 3.0.1
+Typings are for version 3.2.0
 
 ## Library description:
 Javascript identicon generator
@@ -10,10 +10,10 @@ Javascript identicon generator
 | ------------------ | :-------------: |
 | Full name          | jdenticon |
 | Keywords           | javascript, identicon, jdenticon, avatar |
-| # releases         | 5 |
-| # dependents       | 26 |
-| # downloads        | 333852 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 79098.33333333333 |
+| # stars            | 1094.0 |
 
 ## Links
 - [Homepage](https://jdenticon.com/)

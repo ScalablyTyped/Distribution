@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PlayerFramework.DynamicTextTrack")
 @js.native
-class DynamicTextTrack ()
+open class DynamicTextTrack ()
   extends StObject
      with typings.playerframework.PlayerFramework.DynamicTextTrack {
   
   /* CompleteClass */
-  override def augmentPayload(payload: js.Any, startTime: Double, endTime: Double): Unit = js.native
+  override def augmentPayload(payload: Any, startTime: Double, endTime: Double): Unit = js.native
   
   /* CompleteClass */
   var label: String = js.native
@@ -20,5 +20,5 @@ class DynamicTextTrack ()
   var language: String = js.native
   
   /* CompleteClass */
-  var stream: js.Any = js.native
+  var stream: Any = js.native
 }

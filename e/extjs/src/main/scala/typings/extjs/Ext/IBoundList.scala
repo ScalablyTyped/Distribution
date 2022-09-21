@@ -18,15 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param initial Object
     */
   @JSName("bindStore")
-  var bindStore_IBoundList: js.UndefOr[
-    js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var bindStore_IBoundList: js.UndefOr[js.Function2[/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Retrieves the first direct child of this container which matches the passed selector or component
     * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
     * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
     */
-  var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+  var child: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (String) */
   var displayField: js.UndefOr[java.lang.String] = js.undefined
@@ -35,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
     * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
     */
-  var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+  var down: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] A method that returns the inner template for displaying items in the list
     * @param displayField String The displayField for the BoundList.
@@ -60,7 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
     * @returns Ext.Component[] Components matched by the passed function
     */
-  var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.undefined
+  var queryBy: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Any], Array]] = js.undefined
   
   /** [Method] Finds a component at any level under this container matching the id itemId
     * @param id String The id to find
@@ -77,11 +75,11 @@ object IBoundList {
   
   extension [Self <: IBoundList](x: Self) {
     
-    inline def setBindStore(value: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
+    inline def setBindStore(value: (/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
     
     inline def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
     
-    inline def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+    inline def setChild(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
     
     inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
     
@@ -89,7 +87,7 @@ object IBoundList {
     
     inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
-    inline def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+    inline def setDown(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
     inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
@@ -107,7 +105,7 @@ object IBoundList {
     
     inline def setQuery(value: js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
-    inline def setQueryBy(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
+    inline def setQueryBy(value: (js.UndefOr[Any], js.UndefOr[Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
     
     inline def setQueryById(value: js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
     

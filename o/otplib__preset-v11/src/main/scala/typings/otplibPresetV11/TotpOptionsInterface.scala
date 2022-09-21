@@ -8,7 +8,7 @@ trait TotpOptionsInterface
   extends StObject
      with HotpOptionsInterface {
   
-  var epoch: js.UndefOr[js.Any] = js.undefined
+  var epoch: js.UndefOr[Any] = js.undefined
   
   var step: js.UndefOr[Double] = js.undefined
   
@@ -23,7 +23,7 @@ object TotpOptionsInterface {
   
   extension [Self <: TotpOptionsInterface](x: Self) {
     
-    inline def setEpoch(value: js.Any): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
+    inline def setEpoch(value: Any): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
     
     inline def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
     
@@ -35,6 +35,6 @@ object TotpOptionsInterface {
     
     inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     
-    inline def setWindowVarargs(value: Double*): Self = StObject.set(x, "window", js.Array(value :_*))
+    inline def setWindowVarargs(value: Double*): Self = StObject.set(x, "window", js.Array(value*))
   }
 }

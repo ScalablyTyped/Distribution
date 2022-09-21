@@ -10,10 +10,10 @@ Fast af css-in-js in under 1kb
 | ------------------ | :-------------: |
 | Full name          | cxs |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 657088 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 76970.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/cxs)

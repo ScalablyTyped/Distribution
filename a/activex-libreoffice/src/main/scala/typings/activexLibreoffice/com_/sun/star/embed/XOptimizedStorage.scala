@@ -40,7 +40,7 @@ trait XOptimizedStorage extends StObject {
     * allows to get property of the child element with the specified name. The implementation of the method might allow to access only subset of the
     * supported by element properties.
     */
-  def getElementPropertyValue(sElementName: String, sPropertyName: String): js.Any
+  def getElementPropertyValue(sElementName: String, sPropertyName: String): Any
   
   /** allows to insert a raw stream representing non-encrypted stream with header. */
   def insertRawNonEncrStreamElementDirect(sStreamName: String, xInStream: XInputStream): Unit
@@ -60,7 +60,7 @@ object XOptimizedStorage {
     attachToURL: (String, Boolean) => Unit,
     copyElementDirectlyTo: (String, XOptimizedStorage, String) => Unit,
     copyStreamElementData: (String, XStream) => Unit,
-    getElementPropertyValue: (String, String) => js.Any,
+    getElementPropertyValue: (String, String) => Any,
     insertRawNonEncrStreamElementDirect: (String, XInputStream) => Unit,
     insertStreamElementDirect: (String, XInputStream, SeqEquiv[PropertyValue]) => Unit,
     writeAndAttachToStream: XStream => Unit
@@ -77,7 +77,7 @@ object XOptimizedStorage {
     
     inline def setCopyStreamElementData(value: (String, XStream) => Unit): Self = StObject.set(x, "copyStreamElementData", js.Any.fromFunction2(value))
     
-    inline def setGetElementPropertyValue(value: (String, String) => js.Any): Self = StObject.set(x, "getElementPropertyValue", js.Any.fromFunction2(value))
+    inline def setGetElementPropertyValue(value: (String, String) => Any): Self = StObject.set(x, "getElementPropertyValue", js.Any.fromFunction2(value))
     
     inline def setInsertRawNonEncrStreamElementDirect(value: (String, XInputStream) => Unit): Self = StObject.set(x, "insertRawNonEncrStreamElementDirect", js.Any.fromFunction2(value))
     

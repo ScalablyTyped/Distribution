@@ -17,9 +17,9 @@ trait AttackSummary extends StObject {
   var AttackVectors: js.UndefOr[AttackVectorDescriptionList] = js.undefined
   
   /**
-    * The end time of the attack, in Unix time in seconds. For more information see timestamp.
+    * The end time of the attack, in Unix time in seconds. 
     */
-  var EndTime: js.UndefOr[AttackTimestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN (Amazon Resource Name) of the resource that was attacked.
@@ -27,9 +27,9 @@ trait AttackSummary extends StObject {
   var ResourceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The start time of the attack, in Unix time in seconds. For more information see timestamp.
+    * The start time of the attack, in Unix time in seconds. 
     */
-  var StartTime: js.UndefOr[AttackTimestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object AttackSummary {
   
@@ -48,9 +48,9 @@ object AttackSummary {
     
     inline def setAttackVectorsUndefined: Self = StObject.set(x, "AttackVectors", js.undefined)
     
-    inline def setAttackVectorsVarargs(value: AttackVectorDescription*): Self = StObject.set(x, "AttackVectors", js.Array(value :_*))
+    inline def setAttackVectorsVarargs(value: AttackVectorDescription*): Self = StObject.set(x, "AttackVectors", js.Array(value*))
     
-    inline def setEndTime(value: AttackTimestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -58,7 +58,7 @@ object AttackSummary {
     
     inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
-    inline def setStartTime(value: AttackTimestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

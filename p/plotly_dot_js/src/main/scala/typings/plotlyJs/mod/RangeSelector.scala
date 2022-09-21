@@ -60,7 +60,7 @@ object RangeSelector {
     
     inline def setButtons(value: js.Array[PartialRangeSelectorButto]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    inline def setButtonsVarargs(value: PartialRangeSelectorButto*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: PartialRangeSelectorButto*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

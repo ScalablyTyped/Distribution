@@ -1,7 +1,7 @@
 
 # Scala.js typings for month-days
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Get the number of days in a month
@@ -11,9 +11,9 @@ Get the number of days in a month
 | Full name          | month-days |
 | Keywords           | month, days, year, date, utc, number, count |
 | # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 3144 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 430.0 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/month-days#readme)

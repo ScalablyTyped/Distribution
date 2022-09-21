@@ -22,6 +22,6 @@ object BatchGetCrawlersRequest {
     
     inline def setCrawlerNames(value: CrawlerNameList): Self = StObject.set(x, "CrawlerNames", value.asInstanceOf[js.Any])
     
-    inline def setCrawlerNamesVarargs(value: NameString*): Self = StObject.set(x, "CrawlerNames", js.Array(value :_*))
+    inline def setCrawlerNamesVarargs(value: NameString*): Self = StObject.set(x, "CrawlerNames", js.Array(value*))
   }
 }

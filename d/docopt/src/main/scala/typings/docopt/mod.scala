@@ -10,7 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def docopt(doc: String, options: DocoptOption): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("docopt")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def docopt(doc: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("docopt")(doc.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def docopt(doc: String, options: DocoptOption): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("docopt")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait DocoptOption extends StObject {
     
@@ -27,7 +28,7 @@ object mod {
     var options_first: js.UndefOr[Boolean] = js.undefined
     
     /** (default:null) is an optional argument that specifies the version of your program. If supplied, then, if the parser encounters --version option, it will print the supplied version and terminate. version could be any printable object, but most likely a string, e.g. '2.1.0rc1'. */
-    var version: js.UndefOr[js.Any] = js.undefined
+    var version: js.UndefOr[Any] = js.undefined
   }
   object DocoptOption {
     
@@ -42,7 +43,7 @@ object mod {
       
       inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value*))
       
       inline def setExit(value: Boolean): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,7 @@ object mod {
       
       inline def setOptions_firstUndefined: Self = StObject.set(x, "options_first", js.undefined)
       
-      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }

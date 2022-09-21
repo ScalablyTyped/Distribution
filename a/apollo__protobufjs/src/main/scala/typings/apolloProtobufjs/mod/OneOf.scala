@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@apollo/protobufjs", "OneOf")
 @js.native
-class OneOf protected () extends ReflectionObject {
+open class OneOf protected () extends ReflectionObject {
   /**
     * Constructs a new oneof instance.
     * @param name Oneof name
@@ -17,29 +17,15 @@ class OneOf protected () extends ReflectionObject {
     */
   def this(name: String) = this()
   def this(name: String, fieldNames: js.Array[String]) = this()
-  def this(name: String, fieldNames: StringDictionary[js.UndefOr[js.Any]]) = this()
-  def this(name: String, fieldNames: js.Array[String], options: StringDictionary[js.UndefOr[js.Any]]) = this()
-  def this(
-    name: String,
-    fieldNames: StringDictionary[js.UndefOr[js.Any]],
-    options: StringDictionary[js.UndefOr[js.Any]]
-  ) = this()
-  def this(name: String, fieldNames: Unit, options: StringDictionary[js.UndefOr[js.Any]]) = this()
-  def this(
-    name: String,
-    fieldNames: js.Array[String],
-    options: StringDictionary[js.UndefOr[js.Any]],
-    comment: String
-  ) = this()
+  def this(name: String, fieldNames: StringDictionary[Any]) = this()
+  def this(name: String, fieldNames: js.Array[String], options: StringDictionary[Any]) = this()
+  def this(name: String, fieldNames: StringDictionary[Any], options: StringDictionary[Any]) = this()
+  def this(name: String, fieldNames: Unit, options: StringDictionary[Any]) = this()
+  def this(name: String, fieldNames: js.Array[String], options: StringDictionary[Any], comment: String) = this()
   def this(name: String, fieldNames: js.Array[String], options: Unit, comment: String) = this()
-  def this(
-    name: String,
-    fieldNames: StringDictionary[js.UndefOr[js.Any]],
-    options: StringDictionary[js.UndefOr[js.Any]],
-    comment: String
-  ) = this()
-  def this(name: String, fieldNames: StringDictionary[js.UndefOr[js.Any]], options: Unit, comment: String) = this()
-  def this(name: String, fieldNames: Unit, options: StringDictionary[js.UndefOr[js.Any]], comment: String) = this()
+  def this(name: String, fieldNames: StringDictionary[Any], options: StringDictionary[Any], comment: String) = this()
+  def this(name: String, fieldNames: StringDictionary[Any], options: Unit, comment: String) = this()
+  def this(name: String, fieldNames: Unit, options: StringDictionary[Any], comment: String) = this()
   def this(name: String, fieldNames: Unit, options: Unit, comment: String) = this()
   
   /**
@@ -76,7 +62,7 @@ object OneOf {
     * @param fieldNames Field names
     * @returns Decorator function
     */
-  inline def d[T /* <: String */](fieldNames: String*): OneOfDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldNames.asInstanceOf[js.Any]).asInstanceOf[OneOfDecorator]
+  inline def d[T /* <: String */](fieldNames: String*): OneOfDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldNames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[OneOfDecorator]
   
   /**
     * Constructs a oneof from a oneof descriptor.

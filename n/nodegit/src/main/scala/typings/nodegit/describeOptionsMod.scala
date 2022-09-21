@@ -9,9 +9,9 @@ object describeOptionsMod {
   
   @JSImport("nodegit/describe-options", "DescribeOptions")
   @js.native
-  class DescribeOptions ()
+  open class DescribeOptions ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var describeStrategy: js.UndefOr[Double] = js.native
     

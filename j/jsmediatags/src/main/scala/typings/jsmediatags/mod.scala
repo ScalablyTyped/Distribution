@@ -53,10 +53,10 @@ object mod {
   
   @JSImport("jsmediatags", "Reader")
   @js.native
-  class Reader protected () extends StObject {
-    def this(file: js.Any) = this()
+  open class Reader protected () extends StObject {
+    def this(file: Any) = this()
     
-    var _file: js.Any = js.native
+    var _file: Any = js.native
     
     var _fileReader: TypeofMediaFileReader = js.native
     
@@ -83,5 +83,5 @@ object mod {
     def setTagsToRead(tagsToRead: js.Array[String]): Reader = js.native
   }
   
-  inline def read(location: js.Any, callbacks: CallbackType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(location.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def read(location: Any, callbacks: CallbackType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(location.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

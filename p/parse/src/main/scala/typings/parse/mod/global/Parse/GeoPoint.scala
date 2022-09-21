@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.GeoPoint")
 @js.native
-class GeoPoint ()
+open class GeoPoint ()
   extends StObject
      with _FieldType {
   def this(coords: js.Tuple2[Double, Double]) = this()
@@ -50,5 +50,5 @@ class GeoPoint ()
   
   def radiansTo(point: GeoPoint): Double = js.native
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

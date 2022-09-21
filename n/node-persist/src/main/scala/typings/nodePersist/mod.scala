@@ -1,7 +1,6 @@
 package typings.nodePersist
 
-import typings.node.BufferEncoding
-import typings.std.RegExp
+import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   
   @JSImport("node-persist", "LocalStorage")
   @js.native
-  class LocalStorage () extends StObject {
+  open class LocalStorage () extends StObject {
     def this(options: InitOptions) = this()
     
     def calcTTL(): js.UndefOr[Double] = js.native
@@ -22,7 +21,7 @@ object mod {
     
     def clear(): js.Promise[Unit] = js.native
     
-    def copy(value: js.Any): js.Any = js.native
+    def copy(value: Any): Any = js.native
     
     def data(): js.Promise[js.Array[Datum]] = js.native
     
@@ -32,7 +31,7 @@ object mod {
     
     def forEach(callback: js.Function1[/* data */ Datum, js.Promise[Unit] | Unit]): js.Promise[Unit] = js.native
     
-    def get(key: String): js.Promise[js.Any] = js.native
+    def get(key: String): js.Promise[Any] = js.native
     
     def getDatum(key: String): Datum | Unit = js.native
     
@@ -40,7 +39,7 @@ object mod {
     
     def getDatumValue(key: String): Datum | Unit = js.native
     
-    def getItem(key: String): js.Promise[js.Any] = js.native
+    def getItem(key: String): js.Promise[Any] = js.native
     
     def getRawDatum(key: String): String | Unit = js.native
     
@@ -53,10 +52,10 @@ object mod {
     def length(): js.Promise[Double] = js.native
     def length(filter: FilterFunction[Datum]): js.Promise[Double] = js.native
     
-    def log(args: js.Any*): Unit = js.native
+    def log(args: Any*): Unit = js.native
     
-    def parse(): js.Any = js.native
-    def parse(str: String): js.Any = js.native
+    def parse(): Any = js.native
+    def parse(str: String): Any = js.native
     
     def readDirectory(dir: String): js.Promise[js.Array[Datum]] = js.native
     
@@ -69,11 +68,11 @@ object mod {
     
     def rm(key: String): js.Promise[DeleteFileResult] = js.native
     
-    def set(key: String, value: js.Any): js.Promise[WriteFileResult] = js.native
-    def set(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
+    def set(key: String, value: Any): js.Promise[WriteFileResult] = js.native
+    def set(key: String, value: Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
     
-    def setItem(key: String, value: js.Any): js.Promise[WriteFileResult] = js.native
-    def setItem(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
+    def setItem(key: String, value: Any): js.Promise[WriteFileResult] = js.native
+    def setItem(key: String, value: Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
     
     def setOptions(): Unit = js.native
     def setOptions(options: InitOptions): Unit = js.native
@@ -82,20 +81,20 @@ object mod {
     
     def stopExpiredKeysInterval(): Unit = js.native
     
-    def stringify(obj: js.Any): String = js.native
+    def stringify(obj: Any): String = js.native
     
-    def update(key: String, value: js.Any): js.Promise[WriteFileResult] = js.native
-    def update(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
+    def update(key: String, value: Any): js.Promise[WriteFileResult] = js.native
+    def update(key: String, value: Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
     
-    def updateItem(key: String, value: js.Any): js.Promise[WriteFileResult] = js.native
-    def updateItem(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
+    def updateItem(key: String, value: Any): js.Promise[WriteFileResult] = js.native
+    def updateItem(key: String, value: Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
     
-    def values(): js.Promise[js.Array[js.Any]] = js.native
-    def values(filter: FilterFunction[Datum]): js.Promise[js.Array[js.Any]] = js.native
+    def values(): js.Promise[js.Array[Any]] = js.native
+    def values(filter: FilterFunction[Datum]): js.Promise[js.Array[Any]] = js.native
     
-    def valuesWithKeyMatch(): js.Promise[js.Array[js.Any]] = js.native
-    def valuesWithKeyMatch(`match`: String): js.Promise[js.Array[js.Any]] = js.native
-    def valuesWithKeyMatch(`match`: RegExp): js.Promise[js.Array[js.Any]] = js.native
+    def valuesWithKeyMatch(): js.Promise[js.Array[Any]] = js.native
+    def valuesWithKeyMatch(`match`: String): js.Promise[js.Array[Any]] = js.native
+    def valuesWithKeyMatch(`match`: js.RegExp): js.Promise[js.Array[Any]] = js.native
     
     def writeFile(file: String, content: Datum): js.Promise[WriteFileResult] = js.native
   }
@@ -105,7 +104,7 @@ object mod {
   
   inline def clear(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Unit]]
   
-  inline def copy(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def copy(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def create(): LocalStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[LocalStorage]
   inline def create(options: InitOptions): LocalStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[LocalStorage]
@@ -122,7 +121,7 @@ object mod {
   
   inline def forEach(callback: js.Function1[/* data */ Datum, js.Promise[Unit] | Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def get(key: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def get(key: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   inline def getDatum(key: String): Datum | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatum")(key.asInstanceOf[js.Any]).asInstanceOf[Datum | Unit]
   
@@ -130,7 +129,7 @@ object mod {
   
   inline def getDatumValue(key: String): Datum | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatumValue")(key.asInstanceOf[js.Any]).asInstanceOf[Datum | Unit]
   
-  inline def getItem(key: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def getItem(key: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   inline def getRawDatum(key: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawDatum")(key.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
   
@@ -143,10 +142,10 @@ object mod {
   inline def length(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("length")().asInstanceOf[js.Promise[Double]]
   inline def length(filter: FilterFunction[Datum]): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
-  inline def log(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def parse(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[js.Any]
-  inline def parse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parse(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[Any]
+  inline def parse(str: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def readDirectory(dir: String): js.Promise[js.Array[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readDirectory")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Datum]]]
   
@@ -159,11 +158,11 @@ object mod {
   
   inline def rm(key: String): js.Promise[DeleteFileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("rm")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteFileResult]]
   
-  inline def set(key: String, value: js.Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
-  inline def set(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  inline def set(key: String, value: Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  inline def set(key: String, value: Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
-  inline def setItem(key: String, value: js.Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
-  inline def setItem(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  inline def setItem(key: String, value: Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  inline def setItem(key: String, value: Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
   inline def setOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")().asInstanceOf[Unit]
   inline def setOptions(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -172,20 +171,20 @@ object mod {
   
   inline def stopExpiredKeysInterval(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopExpiredKeysInterval")().asInstanceOf[Unit]
   
-  inline def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def update(key: String, value: js.Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
-  inline def update(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  inline def update(key: String, value: Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  inline def update(key: String, value: Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
-  inline def updateItem(key: String, value: js.Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
-  inline def updateItem(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  inline def updateItem(key: String, value: Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  inline def updateItem(key: String, value: Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
-  inline def values(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def values(filter: FilterFunction[Datum]): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def values(): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def values(filter: FilterFunction[Datum]): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
   
-  inline def valuesWithKeyMatch(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesWithKeyMatch")().asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def valuesWithKeyMatch(`match`: String): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesWithKeyMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def valuesWithKeyMatch(`match`: RegExp): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesWithKeyMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def valuesWithKeyMatch(): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesWithKeyMatch")().asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def valuesWithKeyMatch(`match`: String): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesWithKeyMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def valuesWithKeyMatch(`match`: js.RegExp): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesWithKeyMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
   
   inline def writeFile(file: String, content: Datum): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
@@ -193,13 +192,13 @@ object mod {
     
     var key: String
     
-    var ttl: js.UndefOr[Double] = js.undefined
+    var ttl: js.UndefOr[Milliseconds] = js.undefined
     
-    var value: js.Any
+    var value: Any
   }
   object Datum {
     
-    inline def apply(key: String, value: js.Any): Datum = {
+    inline def apply(key: String, value: Any): Datum = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Datum]
     }
@@ -208,17 +207,19 @@ object mod {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Milliseconds): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
       inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   trait DatumOptions extends StObject {
     
     var raw: js.UndefOr[Boolean] = js.undefined
+    
+    var ttl: js.UndefOr[Milliseconds] = js.undefined
   }
   object DatumOptions {
     
@@ -232,6 +233,10 @@ object mod {
       inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      
+      inline def setTtl(value: Milliseconds): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   
@@ -289,11 +294,11 @@ object mod {
     
     var forgiveParseErrors: js.UndefOr[Boolean] = js.undefined
     
-    var logging: js.UndefOr[(js.Function1[/* repeated */ js.Any, Unit]) | Boolean] = js.undefined
+    var logging: js.UndefOr[(js.Function1[/* repeated */ Any, Unit]) | Boolean] = js.undefined
     
-    var parse: js.UndefOr[js.Function1[/* str */ String, js.Any]] = js.undefined
+    var parse: js.UndefOr[js.Function1[/* str */ String, Any]] = js.undefined
     
-    var stringify: js.UndefOr[js.Function1[/* data */ js.Any, String]] = js.undefined
+    var stringify: js.UndefOr[js.Function1[/* data */ Any, String]] = js.undefined
     
     var ttl: js.UndefOr[Milliseconds] = js.undefined
   }
@@ -322,17 +327,17 @@ object mod {
       
       inline def setForgiveParseErrorsUndefined: Self = StObject.set(x, "forgiveParseErrors", js.undefined)
       
-      inline def setLogging(value: (js.Function1[/* repeated */ js.Any, Unit]) | Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogging(value: (js.Function1[/* repeated */ Any, Unit]) | Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
-      inline def setLoggingFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logging", js.Any.fromFunction1(value))
+      inline def setLoggingFunction1(value: /* repeated */ Any => Unit): Self = StObject.set(x, "logging", js.Any.fromFunction1(value))
       
       inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
-      inline def setParse(value: /* str */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* str */ String => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      inline def setStringify(value: /* data */ js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: /* data */ Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
       
       inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
       
@@ -346,20 +351,20 @@ object mod {
   
   trait WriteFileResult extends StObject {
     
-    var content: js.Any
+    var content: Any
     
     var file: String
   }
   object WriteFileResult {
     
-    inline def apply(content: js.Any, file: String): WriteFileResult = {
+    inline def apply(content: Any, file: String): WriteFileResult = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteFileResult]
     }
     
     extension [Self <: WriteFileResult](x: Self) {
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }

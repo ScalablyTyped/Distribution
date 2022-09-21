@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.FormattedValueCollection")
 @js.native
-class FormattedValueCollection () extends StObject
+open class FormattedValueCollection () extends StObject

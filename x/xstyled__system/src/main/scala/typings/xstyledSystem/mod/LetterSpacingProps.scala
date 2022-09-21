@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.LetterSpacing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LetterSpacingProps[TLength] extends StObject {
   
-  val letterSpacing: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val letterSpacing: js.UndefOr[ResponsiveValue[LetterSpacing[TLength]]] = js.undefined
 }
 object LetterSpacingProps {
   
@@ -21,16 +18,10 @@ object LetterSpacingProps {
   
   extension [Self <: LetterSpacingProps[?], TLength](x: Self & LetterSpacingProps[TLength]) {
     
-    inline def setLetterSpacing(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: ResponsiveValue[LetterSpacing[TLength]]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
-    inline def setLetterSpacingVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
+    inline def setLetterSpacingVarargs(value: LetterSpacing[TLength]*): Self = StObject.set(x, "letterSpacing", js.Array(value*))
   }
 }

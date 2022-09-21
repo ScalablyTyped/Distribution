@@ -9,7 +9,7 @@ object tileMod {
   
   @JSImport("rot-js/lib/display/tile", JSImport.Default)
   @js.native
-  class default () extends Tile
+  open class default () extends Tile
   
   @js.native
   trait Tile

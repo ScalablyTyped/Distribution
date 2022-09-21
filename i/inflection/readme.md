@@ -1,7 +1,7 @@
 
 # Scala.js typings for inflection
 
-Typings are for version 1.5.0
+Typings are for version 1.13.0
 
 ## Library description:
 A port of inflection-js to node.js module
@@ -10,10 +10,10 @@ A port of inflection-js to node.js module
 | ------------------ | :-------------: |
 | Full name          | inflection |
 | Keywords           | inflection, inflections, inflection-js, pluralize, singularize, camelize, underscore, humanize, capitalize, dasherize, titleize, demodulize, tableize, classify, foreign_key, ordinalize |
-| # releases         | 0 |
-| # dependents       | 842 |
-| # downloads        | 84174873 |
-| # stars            | 16 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0643519E7 |
+| # stars            | 490.0 |
 
 ## Links
 - [Homepage](https://github.com/dreamerslab/node.inflection#readme)

@@ -15,7 +15,7 @@ trait ISceneLoaderPluginFactory extends StObject {
   
   /**
     * Function called to create a new plugin
-    * @return the new plugin
+    * @returns the new plugin
     */
   def createPlugin(): ISceneLoaderPlugin | ISceneLoaderPluginAsync
   

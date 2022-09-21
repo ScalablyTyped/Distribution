@@ -10,10 +10,10 @@ object listListMod {
   
   @JSImport("material-ui/List/List", JSImport.Default)
   @js.native
-  class default () extends List
+  open class default () extends List
   
   @JSImport("material-ui/List/List", "List")
   @js.native
-  class List ()
-    extends Component[ListProps, js.Object, js.Any]
+  open class List ()
+    extends Component[ListProps, js.Object, Any]
 }

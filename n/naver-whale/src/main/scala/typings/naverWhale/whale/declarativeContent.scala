@@ -47,7 +47,7 @@ object declarativeContent {
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value*))
       
       inline def setIsBookmarked(value: Boolean): Self = StObject.set(x, "isBookmarked", value.asInstanceOf[js.Any])
       
@@ -170,7 +170,7 @@ object declarativeContent {
       
       inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      inline def setPortsVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "ports", js.Array(value :_*))
+      inline def setPortsVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "ports", js.Array(value*))
       
       inline def setQueryContains(value: String): Self = StObject.set(x, "queryContains", value.asInstanceOf[js.Any])
       
@@ -192,7 +192,7 @@ object declarativeContent {
       
       inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
       
-      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
       
       inline def setUrlContains(value: String): Self = StObject.set(x, "urlContains", value.asInstanceOf[js.Any])
       
@@ -217,6 +217,8 @@ object declarativeContent {
   }
   
   trait SetIcon extends StObject
+  
+  trait ShowAction extends StObject
   
   trait ShowPageAction extends StObject
 }

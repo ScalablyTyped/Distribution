@@ -10,7 +10,6 @@ import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object commitsMod {
   
   @JSImport("gitlab/dist/types/core/services/Commits", "Commits")
   @js.native
-  class Commits () extends BaseService {
+  open class Commits () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native
@@ -151,15 +150,15 @@ object commitsMod {
     
     var author_name: String
     
-    var authored_date: js.UndefOr[Date] = js.undefined
+    var authored_date: js.UndefOr[js.Date] = js.undefined
     
-    var committed_date: js.UndefOr[Date] = js.undefined
+    var committed_date: js.UndefOr[js.Date] = js.undefined
     
     var committer_email: js.UndefOr[String] = js.undefined
     
     var committer_name: js.UndefOr[String] = js.undefined
     
-    var created_at: Date
+    var created_at: js.Date
     
     var id: String
     
@@ -176,7 +175,7 @@ object commitsMod {
     inline def apply(
       author_email: String,
       author_name: String,
-      created_at: Date,
+      created_at: js.Date,
       id: String,
       message: String,
       short_id: String,
@@ -192,11 +191,11 @@ object commitsMod {
       
       inline def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
       
-      inline def setAuthored_date(value: Date): Self = StObject.set(x, "authored_date", value.asInstanceOf[js.Any])
+      inline def setAuthored_date(value: js.Date): Self = StObject.set(x, "authored_date", value.asInstanceOf[js.Any])
       
       inline def setAuthored_dateUndefined: Self = StObject.set(x, "authored_date", js.undefined)
       
-      inline def setCommitted_date(value: Date): Self = StObject.set(x, "committed_date", value.asInstanceOf[js.Any])
+      inline def setCommitted_date(value: js.Date): Self = StObject.set(x, "committed_date", value.asInstanceOf[js.Any])
       
       inline def setCommitted_dateUndefined: Self = StObject.set(x, "committed_date", js.undefined)
       
@@ -208,7 +207,7 @@ object commitsMod {
       
       inline def setCommitter_nameUndefined: Self = StObject.set(x, "committer_name", js.undefined)
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -218,7 +217,7 @@ object commitsMod {
       
       inline def setParent_idsUndefined: Self = StObject.set(x, "parent_ids", js.undefined)
       
-      inline def setParent_idsVarargs(value: String*): Self = StObject.set(x, "parent_ids", js.Array(value :_*))
+      inline def setParent_idsVarargs(value: String*): Self = StObject.set(x, "parent_ids", js.Array(value*))
       
       inline def setShort_id(value: String): Self = StObject.set(x, "short_id", value.asInstanceOf[js.Any])
       

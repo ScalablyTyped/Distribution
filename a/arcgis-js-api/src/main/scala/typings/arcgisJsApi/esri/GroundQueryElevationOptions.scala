@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -9,6 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GroundQueryElevationOptions
   extends StObject
      with Object {
+  
+  /**
+    * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
+    *
+    * @default auto
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#queryElevation)
+    */
+  var demResolution: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The value that appears in the resulting geometry when there is no data available.
@@ -23,6 +33,13 @@ trait GroundQueryElevationOptions
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#queryElevation)
     */
   var returnSampleInfo: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#queryElevation)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object GroundQueryElevationOptions {
   
@@ -37,6 +54,10 @@ object GroundQueryElevationOptions {
   
   extension [Self <: GroundQueryElevationOptions](x: Self) {
     
+    inline def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
+    
+    inline def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
+    
     inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     
     inline def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
@@ -44,5 +65,9 @@ object GroundQueryElevationOptions {
     inline def setReturnSampleInfo(value: Boolean): Self = StObject.set(x, "returnSampleInfo", value.asInstanceOf[js.Any])
     
     inline def setReturnSampleInfoUndefined: Self = StObject.set(x, "returnSampleInfo", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

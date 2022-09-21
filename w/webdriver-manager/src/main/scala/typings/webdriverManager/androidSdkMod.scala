@@ -11,7 +11,7 @@ object androidSdkMod {
   
   @JSImport("webdriver-manager/built/lib/binaries/android_sdk", "AndroidSDK")
   @js.native
-  class AndroidSDK () extends Binary {
+  open class AndroidSDK () extends Binary {
     def this(alternateCDN: String) = this()
     
     def url(ostype: String): String = js.native

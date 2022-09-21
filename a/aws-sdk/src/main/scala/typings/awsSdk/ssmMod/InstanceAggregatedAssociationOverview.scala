@@ -12,7 +12,7 @@ trait InstanceAggregatedAssociationOverview extends StObject {
   var DetailedStatus: js.UndefOr[StatusName] = js.undefined
   
   /**
-    * The number of associations for the instance(s).
+    * The number of associations for the managed node(s).
     */
   var InstanceAssociationStatusAggregatedCount: js.UndefOr[typings.awsSdk.ssmMod.InstanceAssociationStatusAggregatedCount] = js.undefined
 }

@@ -1,6 +1,7 @@
 package typings.cookieclicker
 
 import typings.cookieclicker.Game.AchievementPool
+import typings.cookieclicker.Game.GameHooks
 import typings.cookieclicker.Game.UpgradePool
 import typings.cookieclicker.Game._TooltipOrigins
 import org.scalablytyped.runtime.StObject
@@ -12,6 +13,10 @@ object cookieclickerStrings {
   @js.native
   sealed trait `2d` extends StObject
   inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
+  
+  @js.native
+  sealed trait Achievement extends StObject
+  inline def Achievement: Achievement = "Achievement".asInstanceOf[Achievement]
   
   @js.native
   sealed trait Bank extends StObject
@@ -38,6 +43,10 @@ object cookieclickerStrings {
   inline def Temple: Temple = "Temple".asInstanceOf[Temple]
   
   @js.native
+  sealed trait Upgrade extends StObject
+  inline def Upgrade: Upgrade = "Upgrade".asInstanceOf[Upgrade]
+  
+  @js.native
   sealed trait `Wizard tower` extends StObject
   inline def `Wizard tower`: `Wizard tower` = ("Wizard tower").asInstanceOf[`Wizard tower`]
   
@@ -60,8 +69,8 @@ object cookieclickerStrings {
   inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait achievement extends StObject
-  inline def achievement: achievement = "achievement".asInstanceOf[achievement]
+  sealed trait achievement_ extends StObject
+  inline def achievement_ : achievement_ = "achievement".asInstanceOf[achievement_]
   
   @js.native
   sealed trait address extends StObject
@@ -74,6 +83,14 @@ object cookieclickerStrings {
   @js.native
   sealed trait animate extends StObject
   inline def animate: animate = "animate".asInstanceOf[animate]
+  
+  @js.native
+  sealed trait animateMotion extends StObject
+  inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
+  
+  @js.native
+  sealed trait animateTransform extends StObject
+  inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
   sealed trait animationcancel extends StObject
@@ -90,10 +107,6 @@ object cookieclickerStrings {
   @js.native
   sealed trait animationstart extends StObject
   inline def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
-  
-  @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
   
   @js.native
   sealed trait area extends StObject
@@ -140,16 +153,20 @@ object cookieclickerStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
-  
-  @js.native
   sealed trait bdi extends StObject
   inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
   @js.native
   sealed trait bdo extends StObject
   inline def bdo: bdo = "bdo".asInstanceOf[bdo]
+  
+  @js.native
+  sealed trait beforeinput extends StObject
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
+  
+  @js.native
+  sealed trait bgMusic extends StObject
+  inline def bgMusic: bgMusic = "bgMusic".asInstanceOf[bgMusic]
   
   @js.native
   sealed trait bitmaprenderer extends StObject
@@ -192,10 +209,6 @@ object cookieclickerStrings {
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait cancel extends StObject
-  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
-  
-  @js.native
   sealed trait canplay extends StObject
   inline def canplay: canplay = "canplay".asInstanceOf[canplay]
   
@@ -216,6 +229,12 @@ object cookieclickerStrings {
   inline def change: change = "change".asInstanceOf[change]
   
   @js.native
+  sealed trait check
+    extends StObject
+       with GameHooks
+  inline def check: check = "check".asInstanceOf[check]
+  
+  @js.native
   sealed trait circle extends StObject
   inline def circle: circle = "circle".asInstanceOf[circle]
   
@@ -224,7 +243,9 @@ object cookieclickerStrings {
   inline def cite: cite = "cite".asInstanceOf[cite]
   
   @js.native
-  sealed trait click extends StObject
+  sealed trait click
+    extends StObject
+       with GameHooks
   inline def click: click = "click".asInstanceOf[click]
   
   @js.native
@@ -234,6 +255,10 @@ object cookieclickerStrings {
   @js.native
   sealed trait close extends StObject
   inline def close: close = "close".asInstanceOf[close]
+  
+  @js.native
+  sealed trait cloudSave extends StObject
+  inline def cloudSave: cloudSave = "cloudSave".asInstanceOf[cloudSave]
   
   @js.native
   sealed trait code extends StObject
@@ -248,8 +273,16 @@ object cookieclickerStrings {
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait concat extends StObject
-  inline def concat: concat = "concat".asInstanceOf[concat]
+  sealed trait compositionend extends StObject
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart extends StObject
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate extends StObject
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
   
   @js.native
   sealed trait contextmenu extends StObject
@@ -262,20 +295,34 @@ object cookieclickerStrings {
   inline def cookie: cookie = "cookie".asInstanceOf[cookie]
   
   @js.native
-  sealed trait cookiesPerClick extends StObject
+  sealed trait cookiesPerClick
+    extends StObject
+       with GameHooks
   inline def cookiesPerClick: cookiesPerClick = "cookiesPerClick".asInstanceOf[cookiesPerClick]
+  
+  @js.native
+  sealed trait cookiesound extends StObject
+  inline def cookiesound: cookiesound = "cookiesound".asInstanceOf[cookiesound]
   
   @js.native
   sealed trait copy extends StObject
   inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait copyWithin extends StObject
-  inline def copyWithin: copyWithin = "copyWithin".asInstanceOf[copyWithin]
+  sealed trait cps
+    extends StObject
+       with GameHooks
+  inline def cps: cps = "cps".asInstanceOf[cps]
   
   @js.native
-  sealed trait cps extends StObject
-  inline def cps: cps = "cps".asInstanceOf[cps]
+  sealed trait crates extends StObject
+  inline def crates: crates = "crates".asInstanceOf[crates]
+  
+  @js.native
+  sealed trait create
+    extends StObject
+       with GameHooks
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
   sealed trait cuechange extends StObject
@@ -340,8 +387,8 @@ object cookieclickerStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dir extends StObject
-  inline def dir: dir = "dir".asInstanceOf[dir]
+  sealed trait discordPresence extends StObject
+  inline def discordPresence: discordPresence = "discordPresence".asInstanceOf[discordPresence]
   
   @js.native
   sealed trait div extends StObject
@@ -364,10 +411,6 @@ object cookieclickerStrings {
   inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
   
   @js.native
-  sealed trait dragexit extends StObject
-  inline def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
-  
-  @js.native
   sealed trait dragleave extends StObject
   inline def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
   
@@ -378,6 +421,12 @@ object cookieclickerStrings {
   @js.native
   sealed trait dragstart extends StObject
   inline def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
+  
+  @js.native
+  sealed trait draw
+    extends StObject
+       with GameHooks
+  inline def draw: draw = "draw".asInstanceOf[draw]
   
   @js.native
   sealed trait drop extends StObject
@@ -418,16 +467,8 @@ object cookieclickerStrings {
   inline def ended: ended = "ended".asInstanceOf[ended]
   
   @js.native
-  sealed trait entries extends StObject
-  inline def entries: entries = "entries".asInstanceOf[entries]
-  
-  @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
-  
-  @js.native
-  sealed trait every extends StObject
-  inline def every: every = "every".asInstanceOf[every]
   
   @js.native
   sealed trait extraButtons extends StObject
@@ -468,6 +509,10 @@ object cookieclickerStrings {
   @js.native
   sealed trait feDistantLight extends StObject
   inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
+  
+  @js.native
+  sealed trait feDropShadow extends StObject
+  inline def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
   
   @js.native
   sealed trait feFlood extends StObject
@@ -546,32 +591,12 @@ object cookieclickerStrings {
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
-  sealed trait fill extends StObject
-  inline def fill: fill = "fill".asInstanceOf[fill]
-  
-  @js.native
   sealed trait filter extends StObject
   inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
   sealed trait filters extends StObject
   inline def filters: filters = "filters".asInstanceOf[filters]
-  
-  @js.native
-  sealed trait find extends StObject
-  inline def find: find = "find".asInstanceOf[find]
-  
-  @js.native
-  sealed trait findIndex extends StObject
-  inline def findIndex: findIndex = "findIndex".asInstanceOf[findIndex]
-  
-  @js.native
-  sealed trait flat extends StObject
-  inline def flat: flat = "flat".asInstanceOf[flat]
-  
-  @js.native
-  sealed trait flatMap extends StObject
-  inline def flatMap: flatMap = "flatMap".asInstanceOf[flatMap]
   
   @js.native
   sealed trait focus extends StObject
@@ -586,16 +611,8 @@ object cookieclickerStrings {
   inline def focusout: focusout = "focusout".asInstanceOf[focusout]
   
   @js.native
-  sealed trait font extends StObject
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
-  
-  @js.native
-  sealed trait forEach extends StObject
-  inline def forEach: forEach = "forEach".asInstanceOf[forEach]
   
   @js.native
   sealed trait foreignObject extends StObject
@@ -610,16 +627,24 @@ object cookieclickerStrings {
   inline def format: format = "format".asInstanceOf[format]
   
   @js.native
+  sealed trait formdata extends StObject
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
+  
+  @js.native
   sealed trait fortune extends StObject
   inline def fortune: fortune = "fortune".asInstanceOf[fortune]
   
   @js.native
-  sealed trait frame extends StObject
-  inline def frame: frame = "frame".asInstanceOf[frame]
+  sealed trait fortuneCPS extends StObject
+  inline def fortuneCPS: fortuneCPS = "fortuneCPS".asInstanceOf[fortuneCPS]
   
   @js.native
-  sealed trait frameset extends StObject
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
+  sealed trait fortuneGC extends StObject
+  inline def fortuneGC: fortuneGC = "fortuneGC".asInstanceOf[fortuneGC]
+  
+  @js.native
+  sealed trait fullscreen extends StObject
+  inline def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   
   @js.native
   sealed trait fullscreenchange extends StObject
@@ -706,14 +731,6 @@ object cookieclickerStrings {
   inline def img: img = "img".asInstanceOf[img]
   
   @js.native
-  sealed trait includes extends StObject
-  inline def includes: includes = "includes".asInstanceOf[includes]
-  
-  @js.native
-  sealed trait indexOf extends StObject
-  inline def indexOf: indexOf = "indexOf".asInstanceOf[indexOf]
-  
-  @js.native
   sealed trait input extends StObject
   inline def input: input = "input".asInstanceOf[input]
   
@@ -724,10 +741,6 @@ object cookieclickerStrings {
   @js.native
   sealed trait invalid extends StObject
   inline def invalid: invalid = "invalid".asInstanceOf[invalid]
-  
-  @js.native
-  sealed trait join extends StObject
-  inline def join: join = "join".asInstanceOf[join]
   
   @js.native
   sealed trait kbd extends StObject
@@ -742,20 +755,12 @@ object cookieclickerStrings {
   inline def keypress: keypress = "keypress".asInstanceOf[keypress]
   
   @js.native
-  sealed trait keys extends StObject
-  inline def keys: keys = "keys".asInstanceOf[keys]
-  
-  @js.native
   sealed trait keyup extends StObject
   inline def keyup: keyup = "keyup".asInstanceOf[keyup]
   
   @js.native
   sealed trait label extends StObject
   inline def label: label = "label".asInstanceOf[label]
-  
-  @js.native
-  sealed trait lastIndexOf extends StObject
-  inline def lastIndexOf: lastIndexOf = "lastIndexOf".asInstanceOf[lastIndexOf]
   
   @js.native
   sealed trait left
@@ -766,10 +771,6 @@ object cookieclickerStrings {
   @js.native
   sealed trait legend extends StObject
   inline def legend: legend = "legend".asInstanceOf[legend]
-  
-  @js.native
-  sealed trait length extends StObject
-  inline def length: length = "length".asInstanceOf[length]
   
   @js.native
   sealed trait li extends StObject
@@ -804,6 +805,12 @@ object cookieclickerStrings {
   inline def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   
   @js.native
+  sealed trait logic
+    extends StObject
+       with GameHooks
+  inline def logic: logic = "logic".asInstanceOf[logic]
+  
+  @js.native
   sealed trait lostpointercapture extends StObject
   inline def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   
@@ -822,10 +829,6 @@ object cookieclickerStrings {
   @js.native
   sealed trait marker extends StObject
   inline def marker: marker = "marker".asInstanceOf[marker]
-  
-  @js.native
-  sealed trait marquee extends StObject
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
   
   @js.native
   sealed trait mask extends StObject
@@ -884,6 +887,10 @@ object cookieclickerStrings {
   inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
+  sealed trait mpath extends StObject
+  inline def mpath: mpath = "mpath".asInstanceOf[mpath]
+  
+  @js.native
   sealed trait nav extends StObject
   inline def nav: nav = "nav".asInstanceOf[nav]
   
@@ -896,6 +903,10 @@ object cookieclickerStrings {
   @js.native
   sealed trait noscript extends StObject
   inline def noscript: noscript = "noscript".asInstanceOf[noscript]
+  
+  @js.native
+  sealed trait notScary extends StObject
+  inline def notScary: notScary = "notScary".asInstanceOf[notScary]
   
   @js.native
   sealed trait notifs extends StObject
@@ -928,10 +939,6 @@ object cookieclickerStrings {
   @js.native
   sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
-  
-  @js.native
-  sealed trait param extends StObject
-  inline def param: param = "param".asInstanceOf[param]
   
   @js.native
   sealed trait particles extends StObject
@@ -1006,10 +1013,6 @@ object cookieclickerStrings {
   inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait pop extends StObject
-  inline def pop: pop = "pop".asInstanceOf[pop]
-  
-  @js.native
   sealed trait popups extends StObject
   inline def popups: popups = "popups".asInstanceOf[popups]
   
@@ -1034,10 +1037,6 @@ object cookieclickerStrings {
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait push extends StObject
-  inline def push: push = "push".asInstanceOf[push]
-  
-  @js.native
   sealed trait q extends StObject
   inline def q: q = "q".asInstanceOf[q]
   
@@ -1054,24 +1053,20 @@ object cookieclickerStrings {
   inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait reduce extends StObject
-  inline def reduce: reduce = "reduce".asInstanceOf[reduce]
+  sealed trait reincarnate
+    extends StObject
+       with GameHooks
+  inline def reincarnate: reincarnate = "reincarnate".asInstanceOf[reincarnate]
   
   @js.native
-  sealed trait reduceRight extends StObject
-  inline def reduceRight: reduceRight = "reduceRight".asInstanceOf[reduceRight]
-  
-  @js.native
-  sealed trait reset extends StObject
+  sealed trait reset
+    extends StObject
+       with GameHooks
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
   sealed trait resize extends StObject
   inline def resize: resize = "resize".asInstanceOf[resize]
-  
-  @js.native
-  sealed trait reverse extends StObject
-  inline def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
   sealed trait rp extends StObject
@@ -1092,6 +1087,10 @@ object cookieclickerStrings {
   @js.native
   sealed trait samp extends StObject
   inline def samp: samp = "samp".asInstanceOf[samp]
+  
+  @js.native
+  sealed trait screenreader extends StObject
+  inline def screenreader: screenreader = "screenreader".asInstanceOf[screenreader]
   
   @js.native
   sealed trait script extends StObject
@@ -1130,38 +1129,30 @@ object cookieclickerStrings {
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
+  
+  @js.native
   sealed trait shadow
     extends StObject
        with AchievementPool
   inline def shadow: shadow = "shadow".asInstanceOf[shadow]
   
   @js.native
-  sealed trait shift extends StObject
-  inline def shift: shift = "shift".asInstanceOf[shift]
-  
-  @js.native
   sealed trait showBackupWarning extends StObject
   inline def showBackupWarning: showBackupWarning = "showBackupWarning".asInstanceOf[showBackupWarning]
-  
-  @js.native
-  sealed trait slice extends StObject
-  inline def slice: slice = "slice".asInstanceOf[slice]
   
   @js.native
   sealed trait slot extends StObject
   inline def slot: slot = "slot".asInstanceOf[slot]
   
   @js.native
+  sealed trait slotchange extends StObject
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
+  
+  @js.native
   sealed trait small extends StObject
   inline def small: small = "small".asInstanceOf[small]
-  
-  @js.native
-  sealed trait some extends StObject
-  inline def some: some = "some".asInstanceOf[some]
-  
-  @js.native
-  sealed trait sort extends StObject
-  inline def sort: sort = "sort".asInstanceOf[sort]
   
   @js.native
   sealed trait source extends StObject
@@ -1170,10 +1161,6 @@ object cookieclickerStrings {
   @js.native
   sealed trait span extends StObject
   inline def span: span = "span".asInstanceOf[span]
-  
-  @js.native
-  sealed trait splice extends StObject
-  inline def splice: splice = "splice".asInstanceOf[splice]
   
   @js.native
   sealed trait stalled extends StObject
@@ -1286,7 +1273,9 @@ object cookieclickerStrings {
   inline def `this`: `this` = "this".asInstanceOf[`this`]
   
   @js.native
-  sealed trait ticker extends StObject
+  sealed trait ticker
+    extends StObject
+       with GameHooks
   inline def ticker: ticker = "ticker".asInstanceOf[ticker]
   
   @js.native
@@ -1306,16 +1295,16 @@ object cookieclickerStrings {
   inline def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait toLocaleString extends StObject
-  
-  @js.native
-  sealed trait toString extends StObject
-  
-  @js.native
   sealed trait toggle
     extends StObject
        with UpgradePool
   inline def toggle: toggle = "toggle".asInstanceOf[toggle]
+  
+  @js.native
+  sealed trait top
+    extends StObject
+       with _TooltipOrigins
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait touchcancel extends StObject
@@ -1370,26 +1359,18 @@ object cookieclickerStrings {
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
-  sealed trait unshift extends StObject
-  inline def unshift: unshift = "unshift".asInstanceOf[unshift]
-  
-  @js.native
   sealed trait unused
     extends StObject
        with UpgradePool
   inline def unused: unused = "unused".asInstanceOf[unused]
   
   @js.native
-  sealed trait upgrade extends StObject
-  inline def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
+  sealed trait upgrade_ extends StObject
+  inline def upgrade_ : upgrade_ = "upgrade".asInstanceOf[upgrade_]
   
   @js.native
   sealed trait use extends StObject
   inline def use: use = "use".asInstanceOf[use]
-  
-  @js.native
-  sealed trait values extends StObject
-  inline def values: values = "values".asInstanceOf[values]
   
   @js.native
   sealed trait `var` extends StObject
@@ -1426,6 +1407,22 @@ object cookieclickerStrings {
   @js.native
   sealed trait webgl2 extends StObject
   inline def webgl2: webgl2 = "webgl2".asInstanceOf[webgl2]
+  
+  @js.native
+  sealed trait webkitanimationend extends StObject
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration extends StObject
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart extends StObject
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend extends StObject
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
   
   @js.native
   sealed trait wheel extends StObject

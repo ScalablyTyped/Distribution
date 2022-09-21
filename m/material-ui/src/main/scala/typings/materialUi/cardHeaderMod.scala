@@ -10,10 +10,10 @@ object cardHeaderMod {
   
   @JSImport("material-ui/Card/CardHeader", JSImport.Default)
   @js.native
-  class default () extends CardHeader
+  open class default () extends CardHeader
   
   @JSImport("material-ui/Card/CardHeader", "CardHeader")
   @js.native
-  class CardHeader ()
-    extends Component[CardHeaderProps, js.Object, js.Any]
+  open class CardHeader ()
+    extends Component[CardHeaderProps, js.Object, Any]
 }

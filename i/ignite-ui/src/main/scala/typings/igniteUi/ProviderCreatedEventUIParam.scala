@@ -9,12 +9,12 @@ trait ProviderCreatedEventUIParam extends StObject {
   /**
     * Gets reference to the igZoombar.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the created provider.
     */
-  var provider: js.UndefOr[js.Any] = js.undefined
+  var provider: js.UndefOr[Any] = js.undefined
 }
 object ProviderCreatedEventUIParam {
   
@@ -25,11 +25,11 @@ object ProviderCreatedEventUIParam {
   
   extension [Self <: ProviderCreatedEventUIParam](x: Self) {
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setProvider(value: js.Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }

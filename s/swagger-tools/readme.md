@@ -11,9 +11,9 @@ Various tools for using and integrating with Swagger.
 | Full name          | swagger-tools |
 | Keywords           | api, connect, middleware, swagger |
 | # releases         | 0 |
-| # dependents       | 141 |
-| # downloads        | 8883767 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 229748.66666666666 |
+| # stars            | 690.0 |
 
 ## Links
 - [Homepage](https://github.com/apigee-127/swagger-tools)

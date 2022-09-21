@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGPolylineElement")
 @js.native
-/* private */ class SVGPolylineElement ()
+/* private */ open class SVGPolylineElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGPolylineElement {
   

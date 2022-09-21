@@ -21,10 +21,11 @@ import typings.std.DOMTokenList
 import typings.std.Document
 import typings.std.DragEvent
 import typings.std.Element
-import typings.std.Error
+import typings.std.ElementInternals
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
+import typings.std.FormDataEvent
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLCollection
 import typings.std.HTMLCollectionOf
@@ -32,11 +33,11 @@ import typings.std.HTMLElement
 import typings.std.HTMLSlotElement
 import typings.std.InsertPosition
 import typings.std.KeyboardEvent
+import typings.std.MediaStream
 import typings.std.MouseEvent
 import typings.std.NamedNodeMap
 import typings.std.Node
 import typings.std.NodeListOf
-import typings.std.OffscreenCanvas
 import typings.std.OnErrorEventHandler
 import typings.std.ParentNode
 import typings.std.PointerEvent
@@ -44,6 +45,7 @@ import typings.std.ProgressEvent
 import typings.std.SecurityPolicyViolationEvent
 import typings.std.ShadowRoot
 import typings.std.ShadowRootInit
+import typings.std.SubmitEvent
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
@@ -98,7 +100,7 @@ trait PropsHTMLCanvasElementcon extends StObject {
   var addEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any], 
       Unit
     ]
   ] = js.undefined
@@ -109,9 +111,83 @@ trait PropsHTMLCanvasElementcon extends StObject {
   
   var append: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var appendChild: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
+  var appendChild: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
+  
+  var ariaAtomic: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaAutoComplete: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaBusy: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaChecked: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaColCount: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaColIndex: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaColSpan: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaCurrent: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaDisabled: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaExpanded: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaHasPopup: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaHidden: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaKeyShortcuts: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaLabel: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaLevel: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaLive: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaModal: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaMultiLine: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaMultiSelectable: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaOrientation: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaPlaceholder: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaPosInSet: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaPressed: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaReadOnly: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRequired: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRoleDescription: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRowCount: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRowIndex: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRowSpan: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaSelected: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaSetSize: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaSort: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaValueMax: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaValueMin: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaValueNow: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaValueText: js.UndefOr[String | Null] = js.undefined
   
   var assignedSlot: js.UndefOr[HTMLSlotElement | Null] = js.undefined
+  
+  var attachInternals: js.UndefOr[js.Function0[ElementInternals]] = js.undefined
   
   var attachShadow: js.UndefOr[js.Function1[/* init */ ShadowRootInit, ShadowRoot]] = js.undefined
   
@@ -126,6 +202,8 @@ trait PropsHTMLCanvasElementcon extends StObject {
   var before: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
   var blur: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var captureStream: js.UndefOr[js.Function0[MediaStream]] = js.undefined
   
   var childElementCount: js.UndefOr[Double] = js.undefined
   
@@ -223,21 +301,21 @@ trait PropsHTMLCanvasElementcon extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
+  var inert: js.UndefOr[Boolean] = js.undefined
+  
   var innerHTML: js.UndefOr[String] = js.undefined
   
   var innerText: js.UndefOr[String] = js.undefined
   
   var inputMode: js.UndefOr[String] = js.undefined
   
-  var insertAdjacentElement: js.UndefOr[
-    js.Function2[/* position */ InsertPosition, /* insertedElement */ Element, Element | Null]
-  ] = js.undefined
+  var insertAdjacentElement: js.UndefOr[js.Function2[/* where */ InsertPosition, /* element */ Element, Element | Null]] = js.undefined
   
-  var insertAdjacentHTML: js.UndefOr[js.Function2[/* where */ InsertPosition, /* html */ String, Unit]] = js.undefined
+  var insertAdjacentHTML: js.UndefOr[js.Function2[/* position */ InsertPosition, /* text */ String, Unit]] = js.undefined
   
-  var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* text */ String, Unit]] = js.undefined
+  var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* data */ String, Unit]] = js.undefined
   
-  var insertBefore: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
+  var insertBefore: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
   
   var isConnected: js.UndefOr[Boolean] = js.undefined
   
@@ -265,8 +343,6 @@ trait PropsHTMLCanvasElementcon extends StObject {
   
   var matches: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.undefined
   
-  var msGetRegionContent: js.UndefOr[js.Function0[js.Any]] = js.undefined
-  
   var namespaceURI: js.UndefOr[String | Null] = js.undefined
   
   var nextElementSibling: js.UndefOr[Element | Null] = js.undefined
@@ -293,205 +369,209 @@ trait PropsHTMLCanvasElementcon extends StObject {
   
   var offsetWidth: js.UndefOr[Double] = js.undefined
   
-  var onabort: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]) | Null] = js.undefined
+  var onabort: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]) | Null] = js.undefined
   
-  var onanimationcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
+  var onanimationcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null] = js.undefined
   
-  var onanimationend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
+  var onanimationend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null] = js.undefined
   
-  var onanimationiteration: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
+  var onanimationiteration: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null] = js.undefined
   
-  var onanimationstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
+  var onanimationstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null] = js.undefined
   
-  var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, js.Any]) | Null] = js.undefined
+  var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null] = js.undefined
   
-  var oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var oncanplaythrough: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var oncanplaythrough: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var onclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var onclose: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onclose: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var oncopy: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null] = js.undefined
   
-  var oncopy: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, js.Any]) | Null] = js.undefined
+  var oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var oncut: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null] = js.undefined
   
-  var oncut: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, js.Any]) | Null] = js.undefined
+  var ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var ondrag: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null] = js.undefined
   
-  var ondrag: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
+  var ondragend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null] = js.undefined
   
-  var ondragend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
+  var ondragenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null] = js.undefined
   
-  var ondragenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
+  var ondragleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null] = js.undefined
   
-  var ondragexit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var ondragover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null] = js.undefined
   
-  var ondragleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
+  var ondragstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null] = js.undefined
   
-  var ondragover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
+  var ondrop: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null] = js.undefined
   
-  var ondragstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
+  var ondurationchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var ondrop: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
+  var onemptied: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var ondurationchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
-  
-  var onemptied: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
-  
-  var onended: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onended: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
   var onerror: js.UndefOr[OnErrorEventHandler] = js.undefined
   
-  var onfocus: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, js.Any]) | Null] = js.undefined
+  var onfocus: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null] = js.undefined
   
-  var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onformdata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any]) | Null] = js.undefined
   
-  var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var ongotpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var oninput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var ongotpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
   
-  var oninvalid: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var oninput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onkeydown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
+  var oninvalid: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onkeypress: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
+  var onkeydown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null] = js.undefined
   
-  var onkeyup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
+  var onkeypress: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null] = js.undefined
   
-  var onload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onkeyup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null] = js.undefined
   
-  var onloadeddata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onloadedmetadata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onloadeddata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onloadstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onloadedmetadata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onlostpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onloadstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onmousedown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var onlostpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
   
-  var onmouseenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var onmousedown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var onmouseleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var onmouseenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var onmousemove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var onmouseleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var onmouseout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var onmousemove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var onmouseover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var onmouseout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var onmouseup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
+  var onmouseover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var onpaste: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, js.Any]) | Null] = js.undefined
+  var onmouseup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
-  var onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onpaste: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null] = js.undefined
   
-  var onplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onplaying: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onpointercancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onplaying: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onpointerdown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onpointercancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
   
-  var onpointerenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onpointerdown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
   
-  var onpointerleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onpointerenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
   
-  var onpointermove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onpointerleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
   
-  var onpointerout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onpointermove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
   
-  var onpointerover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onpointerout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
   
-  var onpointerup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
+  var onpointerover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
+  
+  var onpointerup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null] = js.undefined
   
   var onprogress: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null
+    (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any]) | Null
   ] = js.undefined
   
-  var onratechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onratechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onreset: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onreset: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onresize: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]) | Null] = js.undefined
+  var onresize: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]) | Null] = js.undefined
   
-  var onscroll: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onscroll: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
   var onsecuritypolicyviolation: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, js.Any]) | Null
+    (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any]) | Null
   ] = js.undefined
   
-  var onseeked: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onseeked: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onseeking: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onseeking: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onselect: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onselect: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onselectionchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onselectionchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onselectstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onselectstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onstalled: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onslotchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onsubmit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onstalled: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onsuspend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onsubmit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any]) | Null] = js.undefined
   
-  var ontimeupdate: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onsuspend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var ontoggle: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var ontimeupdate: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
+  var ontoggle: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
+  var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.undefined
   
-  var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
+  var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.undefined
   
-  var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
+  var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.undefined
   
-  var ontransitioncancel: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
-  ] = js.undefined
+  var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.undefined
   
-  var ontransitionend: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
-  ] = js.undefined
+  var ontransitioncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null] = js.undefined
   
-  var ontransitionrun: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
-  ] = js.undefined
+  var ontransitionend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null] = js.undefined
   
-  var ontransitionstart: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
-  ] = js.undefined
+  var ontransitionrun: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null] = js.undefined
   
-  var onvolumechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var ontransitionstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null] = js.undefined
   
-  var onwaiting: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+  var onvolumechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
-  var onwheel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, js.Any]) | Null] = js.undefined
+  var onwaiting: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
+  
+  var onwebkitanimationend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
+  
+  var onwebkitanimationiteration: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
+  
+  var onwebkitanimationstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
+  
+  var onwebkittransitionend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
+  
+  var onwheel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any]) | Null] = js.undefined
   
   var outerHTML: js.UndefOr[String] = js.undefined
+  
+  var outerText: js.UndefOr[String] = js.undefined
   
   var ownerDocument: js.UndefOr[Document] = js.undefined
   
   var parentElement: js.UndefOr[HTMLElement | Null] = js.undefined
   
-  var parentNode: js.UndefOr[(Node & ParentNode) | Null] = js.undefined
+  var parentNode: js.UndefOr[ParentNode | Null] = js.undefined
+  
+  var part: js.UndefOr[DOMTokenList] = js.undefined
   
   var prefix: js.UndefOr[String | Null] = js.undefined
   
@@ -515,17 +595,19 @@ trait PropsHTMLCanvasElementcon extends StObject {
   
   var removeAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr]] = js.undefined
   
-  var removeChild: js.UndefOr[js.Function1[/* oldChild */ Node, Node]] = js.undefined
+  var removeChild: js.UndefOr[js.Function1[/* child */ Node, Node]] = js.undefined
   
   var removeEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any], 
       Unit
     ]
   ] = js.undefined
   
-  var replaceChild: js.UndefOr[js.Function2[/* newChild */ Node, /* oldChild */ Node, Node]] = js.undefined
+  var replaceChild: js.UndefOr[js.Function2[/* node */ Node, /* child */ Node, Node]] = js.undefined
+  
+  var replaceChildren: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
   var replaceWith: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
@@ -583,8 +665,6 @@ trait PropsHTMLCanvasElementcon extends StObject {
   
   var toggleAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Boolean]] = js.undefined
   
-  var transferControlToOffscreen: js.UndefOr[js.Function0[OffscreenCanvas]] = js.undefined
-  
   var translate: js.UndefOr[Boolean] = js.undefined
   
   var webkitMatchesSelector: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.undefined
@@ -613,7 +693,7 @@ object PropsHTMLCanvasElementcon {
     inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
     inline def setAddEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]) => Unit
     ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     inline def setAddEventListenerUndefined: Self = StObject.set(x, "addEventListener", js.undefined)
@@ -628,17 +708,237 @@ object PropsHTMLCanvasElementcon {
     
     inline def setAppend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    inline def setAppendChild(value: /* newChild */ Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: /* node */ Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
     inline def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
     
     inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    
+    inline def setAriaAtomic(value: String): Self = StObject.set(x, "ariaAtomic", value.asInstanceOf[js.Any])
+    
+    inline def setAriaAtomicNull: Self = StObject.set(x, "ariaAtomic", null)
+    
+    inline def setAriaAtomicUndefined: Self = StObject.set(x, "ariaAtomic", js.undefined)
+    
+    inline def setAriaAutoComplete(value: String): Self = StObject.set(x, "ariaAutoComplete", value.asInstanceOf[js.Any])
+    
+    inline def setAriaAutoCompleteNull: Self = StObject.set(x, "ariaAutoComplete", null)
+    
+    inline def setAriaAutoCompleteUndefined: Self = StObject.set(x, "ariaAutoComplete", js.undefined)
+    
+    inline def setAriaBusy(value: String): Self = StObject.set(x, "ariaBusy", value.asInstanceOf[js.Any])
+    
+    inline def setAriaBusyNull: Self = StObject.set(x, "ariaBusy", null)
+    
+    inline def setAriaBusyUndefined: Self = StObject.set(x, "ariaBusy", js.undefined)
+    
+    inline def setAriaChecked(value: String): Self = StObject.set(x, "ariaChecked", value.asInstanceOf[js.Any])
+    
+    inline def setAriaCheckedNull: Self = StObject.set(x, "ariaChecked", null)
+    
+    inline def setAriaCheckedUndefined: Self = StObject.set(x, "ariaChecked", js.undefined)
+    
+    inline def setAriaColCount(value: String): Self = StObject.set(x, "ariaColCount", value.asInstanceOf[js.Any])
+    
+    inline def setAriaColCountNull: Self = StObject.set(x, "ariaColCount", null)
+    
+    inline def setAriaColCountUndefined: Self = StObject.set(x, "ariaColCount", js.undefined)
+    
+    inline def setAriaColIndex(value: String): Self = StObject.set(x, "ariaColIndex", value.asInstanceOf[js.Any])
+    
+    inline def setAriaColIndexNull: Self = StObject.set(x, "ariaColIndex", null)
+    
+    inline def setAriaColIndexUndefined: Self = StObject.set(x, "ariaColIndex", js.undefined)
+    
+    inline def setAriaColSpan(value: String): Self = StObject.set(x, "ariaColSpan", value.asInstanceOf[js.Any])
+    
+    inline def setAriaColSpanNull: Self = StObject.set(x, "ariaColSpan", null)
+    
+    inline def setAriaColSpanUndefined: Self = StObject.set(x, "ariaColSpan", js.undefined)
+    
+    inline def setAriaCurrent(value: String): Self = StObject.set(x, "ariaCurrent", value.asInstanceOf[js.Any])
+    
+    inline def setAriaCurrentNull: Self = StObject.set(x, "ariaCurrent", null)
+    
+    inline def setAriaCurrentUndefined: Self = StObject.set(x, "ariaCurrent", js.undefined)
+    
+    inline def setAriaDisabled(value: String): Self = StObject.set(x, "ariaDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setAriaDisabledNull: Self = StObject.set(x, "ariaDisabled", null)
+    
+    inline def setAriaDisabledUndefined: Self = StObject.set(x, "ariaDisabled", js.undefined)
+    
+    inline def setAriaExpanded(value: String): Self = StObject.set(x, "ariaExpanded", value.asInstanceOf[js.Any])
+    
+    inline def setAriaExpandedNull: Self = StObject.set(x, "ariaExpanded", null)
+    
+    inline def setAriaExpandedUndefined: Self = StObject.set(x, "ariaExpanded", js.undefined)
+    
+    inline def setAriaHasPopup(value: String): Self = StObject.set(x, "ariaHasPopup", value.asInstanceOf[js.Any])
+    
+    inline def setAriaHasPopupNull: Self = StObject.set(x, "ariaHasPopup", null)
+    
+    inline def setAriaHasPopupUndefined: Self = StObject.set(x, "ariaHasPopup", js.undefined)
+    
+    inline def setAriaHidden(value: String): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
+    
+    inline def setAriaHiddenNull: Self = StObject.set(x, "ariaHidden", null)
+    
+    inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
+    
+    inline def setAriaKeyShortcuts(value: String): Self = StObject.set(x, "ariaKeyShortcuts", value.asInstanceOf[js.Any])
+    
+    inline def setAriaKeyShortcutsNull: Self = StObject.set(x, "ariaKeyShortcuts", null)
+    
+    inline def setAriaKeyShortcutsUndefined: Self = StObject.set(x, "ariaKeyShortcuts", js.undefined)
+    
+    inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLabelNull: Self = StObject.set(x, "ariaLabel", null)
+    
+    inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+    
+    inline def setAriaLevel(value: String): Self = StObject.set(x, "ariaLevel", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLevelNull: Self = StObject.set(x, "ariaLevel", null)
+    
+    inline def setAriaLevelUndefined: Self = StObject.set(x, "ariaLevel", js.undefined)
+    
+    inline def setAriaLive(value: String): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLiveNull: Self = StObject.set(x, "ariaLive", null)
+    
+    inline def setAriaLiveUndefined: Self = StObject.set(x, "ariaLive", js.undefined)
+    
+    inline def setAriaModal(value: String): Self = StObject.set(x, "ariaModal", value.asInstanceOf[js.Any])
+    
+    inline def setAriaModalNull: Self = StObject.set(x, "ariaModal", null)
+    
+    inline def setAriaModalUndefined: Self = StObject.set(x, "ariaModal", js.undefined)
+    
+    inline def setAriaMultiLine(value: String): Self = StObject.set(x, "ariaMultiLine", value.asInstanceOf[js.Any])
+    
+    inline def setAriaMultiLineNull: Self = StObject.set(x, "ariaMultiLine", null)
+    
+    inline def setAriaMultiLineUndefined: Self = StObject.set(x, "ariaMultiLine", js.undefined)
+    
+    inline def setAriaMultiSelectable(value: String): Self = StObject.set(x, "ariaMultiSelectable", value.asInstanceOf[js.Any])
+    
+    inline def setAriaMultiSelectableNull: Self = StObject.set(x, "ariaMultiSelectable", null)
+    
+    inline def setAriaMultiSelectableUndefined: Self = StObject.set(x, "ariaMultiSelectable", js.undefined)
+    
+    inline def setAriaOrientation(value: String): Self = StObject.set(x, "ariaOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setAriaOrientationNull: Self = StObject.set(x, "ariaOrientation", null)
+    
+    inline def setAriaOrientationUndefined: Self = StObject.set(x, "ariaOrientation", js.undefined)
+    
+    inline def setAriaPlaceholder(value: String): Self = StObject.set(x, "ariaPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def setAriaPlaceholderNull: Self = StObject.set(x, "ariaPlaceholder", null)
+    
+    inline def setAriaPlaceholderUndefined: Self = StObject.set(x, "ariaPlaceholder", js.undefined)
+    
+    inline def setAriaPosInSet(value: String): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
+    
+    inline def setAriaPosInSetNull: Self = StObject.set(x, "ariaPosInSet", null)
+    
+    inline def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
+    
+    inline def setAriaPressed(value: String): Self = StObject.set(x, "ariaPressed", value.asInstanceOf[js.Any])
+    
+    inline def setAriaPressedNull: Self = StObject.set(x, "ariaPressed", null)
+    
+    inline def setAriaPressedUndefined: Self = StObject.set(x, "ariaPressed", js.undefined)
+    
+    inline def setAriaReadOnly(value: String): Self = StObject.set(x, "ariaReadOnly", value.asInstanceOf[js.Any])
+    
+    inline def setAriaReadOnlyNull: Self = StObject.set(x, "ariaReadOnly", null)
+    
+    inline def setAriaReadOnlyUndefined: Self = StObject.set(x, "ariaReadOnly", js.undefined)
+    
+    inline def setAriaRequired(value: String): Self = StObject.set(x, "ariaRequired", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRequiredNull: Self = StObject.set(x, "ariaRequired", null)
+    
+    inline def setAriaRequiredUndefined: Self = StObject.set(x, "ariaRequired", js.undefined)
+    
+    inline def setAriaRoleDescription(value: String): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRoleDescriptionNull: Self = StObject.set(x, "ariaRoleDescription", null)
+    
+    inline def setAriaRoleDescriptionUndefined: Self = StObject.set(x, "ariaRoleDescription", js.undefined)
+    
+    inline def setAriaRowCount(value: String): Self = StObject.set(x, "ariaRowCount", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRowCountNull: Self = StObject.set(x, "ariaRowCount", null)
+    
+    inline def setAriaRowCountUndefined: Self = StObject.set(x, "ariaRowCount", js.undefined)
+    
+    inline def setAriaRowIndex(value: String): Self = StObject.set(x, "ariaRowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRowIndexNull: Self = StObject.set(x, "ariaRowIndex", null)
+    
+    inline def setAriaRowIndexUndefined: Self = StObject.set(x, "ariaRowIndex", js.undefined)
+    
+    inline def setAriaRowSpan(value: String): Self = StObject.set(x, "ariaRowSpan", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRowSpanNull: Self = StObject.set(x, "ariaRowSpan", null)
+    
+    inline def setAriaRowSpanUndefined: Self = StObject.set(x, "ariaRowSpan", js.undefined)
+    
+    inline def setAriaSelected(value: String): Self = StObject.set(x, "ariaSelected", value.asInstanceOf[js.Any])
+    
+    inline def setAriaSelectedNull: Self = StObject.set(x, "ariaSelected", null)
+    
+    inline def setAriaSelectedUndefined: Self = StObject.set(x, "ariaSelected", js.undefined)
+    
+    inline def setAriaSetSize(value: String): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
+    
+    inline def setAriaSetSizeNull: Self = StObject.set(x, "ariaSetSize", null)
+    
+    inline def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
+    
+    inline def setAriaSort(value: String): Self = StObject.set(x, "ariaSort", value.asInstanceOf[js.Any])
+    
+    inline def setAriaSortNull: Self = StObject.set(x, "ariaSort", null)
+    
+    inline def setAriaSortUndefined: Self = StObject.set(x, "ariaSort", js.undefined)
+    
+    inline def setAriaValueMax(value: String): Self = StObject.set(x, "ariaValueMax", value.asInstanceOf[js.Any])
+    
+    inline def setAriaValueMaxNull: Self = StObject.set(x, "ariaValueMax", null)
+    
+    inline def setAriaValueMaxUndefined: Self = StObject.set(x, "ariaValueMax", js.undefined)
+    
+    inline def setAriaValueMin(value: String): Self = StObject.set(x, "ariaValueMin", value.asInstanceOf[js.Any])
+    
+    inline def setAriaValueMinNull: Self = StObject.set(x, "ariaValueMin", null)
+    
+    inline def setAriaValueMinUndefined: Self = StObject.set(x, "ariaValueMin", js.undefined)
+    
+    inline def setAriaValueNow(value: String): Self = StObject.set(x, "ariaValueNow", value.asInstanceOf[js.Any])
+    
+    inline def setAriaValueNowNull: Self = StObject.set(x, "ariaValueNow", null)
+    
+    inline def setAriaValueNowUndefined: Self = StObject.set(x, "ariaValueNow", js.undefined)
+    
+    inline def setAriaValueText(value: String): Self = StObject.set(x, "ariaValueText", value.asInstanceOf[js.Any])
+    
+    inline def setAriaValueTextNull: Self = StObject.set(x, "ariaValueText", null)
+    
+    inline def setAriaValueTextUndefined: Self = StObject.set(x, "ariaValueText", js.undefined)
     
     inline def setAssignedSlot(value: HTMLSlotElement): Self = StObject.set(x, "assignedSlot", value.asInstanceOf[js.Any])
     
     inline def setAssignedSlotNull: Self = StObject.set(x, "assignedSlot", null)
     
     inline def setAssignedSlotUndefined: Self = StObject.set(x, "assignedSlot", js.undefined)
+    
+    inline def setAttachInternals(value: () => ElementInternals): Self = StObject.set(x, "attachInternals", js.Any.fromFunction0(value))
+    
+    inline def setAttachInternalsUndefined: Self = StObject.set(x, "attachInternals", js.undefined)
     
     inline def setAttachShadow(value: /* init */ ShadowRootInit => ShadowRoot): Self = StObject.set(x, "attachShadow", js.Any.fromFunction1(value))
     
@@ -675,6 +975,10 @@ object PropsHTMLCanvasElementcon {
     inline def setCOMMENT_NODE(value: Double): Self = StObject.set(x, "COMMENT_NODE", value.asInstanceOf[js.Any])
     
     inline def setCOMMENT_NODEUndefined: Self = StObject.set(x, "COMMENT_NODE", js.undefined)
+    
+    inline def setCaptureStream(value: () => MediaStream): Self = StObject.set(x, "captureStream", js.Any.fromFunction0(value))
+    
+    inline def setCaptureStreamUndefined: Self = StObject.set(x, "captureStream", js.undefined)
     
     inline def setChildElementCount(value: Double): Self = StObject.set(x, "childElementCount", value.asInstanceOf[js.Any])
     
@@ -740,7 +1044,7 @@ object PropsHTMLCanvasElementcon {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setDOCUMENT_FRAGMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
     
@@ -912,6 +1216,10 @@ object PropsHTMLCanvasElementcon {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
+    inline def setInert(value: Boolean): Self = StObject.set(x, "inert", value.asInstanceOf[js.Any])
+    
+    inline def setInertUndefined: Self = StObject.set(x, "inert", js.undefined)
+    
     inline def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
     
     inline def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
@@ -924,19 +1232,19 @@ object PropsHTMLCanvasElementcon {
     
     inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
     
-    inline def setInsertAdjacentElement(value: (/* position */ InsertPosition, /* insertedElement */ Element) => Element | Null): Self = StObject.set(x, "insertAdjacentElement", js.Any.fromFunction2(value))
+    inline def setInsertAdjacentElement(value: (/* where */ InsertPosition, /* element */ Element) => Element | Null): Self = StObject.set(x, "insertAdjacentElement", js.Any.fromFunction2(value))
     
     inline def setInsertAdjacentElementUndefined: Self = StObject.set(x, "insertAdjacentElement", js.undefined)
     
-    inline def setInsertAdjacentHTML(value: (/* where */ InsertPosition, /* html */ String) => Unit): Self = StObject.set(x, "insertAdjacentHTML", js.Any.fromFunction2(value))
+    inline def setInsertAdjacentHTML(value: (/* position */ InsertPosition, /* text */ String) => Unit): Self = StObject.set(x, "insertAdjacentHTML", js.Any.fromFunction2(value))
     
     inline def setInsertAdjacentHTMLUndefined: Self = StObject.set(x, "insertAdjacentHTML", js.undefined)
     
-    inline def setInsertAdjacentText(value: (/* where */ InsertPosition, /* text */ String) => Unit): Self = StObject.set(x, "insertAdjacentText", js.Any.fromFunction2(value))
+    inline def setInsertAdjacentText(value: (/* where */ InsertPosition, /* data */ String) => Unit): Self = StObject.set(x, "insertAdjacentText", js.Any.fromFunction2(value))
     
     inline def setInsertAdjacentTextUndefined: Self = StObject.set(x, "insertAdjacentText", js.undefined)
     
-    inline def setInsertBefore(value: /* newChild */ Node => Node): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+    inline def setInsertBefore(value: /* node */ Node => Node): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
     inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
@@ -995,10 +1303,6 @@ object PropsHTMLCanvasElementcon {
     inline def setMatches(value: /* selectors */ String => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     
     inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
-    
-    inline def setMsGetRegionContent(value: () => js.Any): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
-    
-    inline def setMsGetRegionContentUndefined: Self = StObject.set(x, "msGetRegionContent", js.undefined)
     
     inline def setNOTATION_NODE(value: Double): Self = StObject.set(x, "NOTATION_NODE", value.asInstanceOf[js.Any])
     
@@ -1066,543 +1370,567 @@ object PropsHTMLCanvasElementcon {
     
     inline def setOffsetWidthUndefined: Self = StObject.set(x, "offsetWidth", js.undefined)
     
-    inline def setOnabort(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+    inline def setOnabort(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ UIEvent, Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     
     inline def setOnabortNull: Self = StObject.set(x, "onabort", null)
     
     inline def setOnabortUndefined: Self = StObject.set(x, "onabort", js.undefined)
     
-    inline def setOnanimationcancel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationcancel", value.asInstanceOf[js.Any])
+    inline def setOnanimationcancel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ AnimationEvent, Any]): Self = StObject.set(x, "onanimationcancel", value.asInstanceOf[js.Any])
     
     inline def setOnanimationcancelNull: Self = StObject.set(x, "onanimationcancel", null)
     
     inline def setOnanimationcancelUndefined: Self = StObject.set(x, "onanimationcancel", js.undefined)
     
-    inline def setOnanimationend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationend", value.asInstanceOf[js.Any])
+    inline def setOnanimationend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ AnimationEvent, Any]): Self = StObject.set(x, "onanimationend", value.asInstanceOf[js.Any])
     
     inline def setOnanimationendNull: Self = StObject.set(x, "onanimationend", null)
     
     inline def setOnanimationendUndefined: Self = StObject.set(x, "onanimationend", js.undefined)
     
-    inline def setOnanimationiteration(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationiteration", value.asInstanceOf[js.Any])
+    inline def setOnanimationiteration(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ AnimationEvent, Any]): Self = StObject.set(x, "onanimationiteration", value.asInstanceOf[js.Any])
     
     inline def setOnanimationiterationNull: Self = StObject.set(x, "onanimationiteration", null)
     
     inline def setOnanimationiterationUndefined: Self = StObject.set(x, "onanimationiteration", js.undefined)
     
-    inline def setOnanimationstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationstart", value.asInstanceOf[js.Any])
+    inline def setOnanimationstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ AnimationEvent, Any]): Self = StObject.set(x, "onanimationstart", value.asInstanceOf[js.Any])
     
     inline def setOnanimationstartNull: Self = StObject.set(x, "onanimationstart", null)
     
     inline def setOnanimationstartUndefined: Self = StObject.set(x, "onanimationstart", js.undefined)
     
-    inline def setOnauxclick(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
+    inline def setOnauxclick(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
     
     inline def setOnauxclickNull: Self = StObject.set(x, "onauxclick", null)
     
     inline def setOnauxclickUndefined: Self = StObject.set(x, "onauxclick", js.undefined)
     
-    inline def setOnblur(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+    inline def setOnblur(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ FocusEvent, Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
     
     inline def setOnblurNull: Self = StObject.set(x, "onblur", null)
     
     inline def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
     
-    inline def setOncancel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
-    
-    inline def setOncancelNull: Self = StObject.set(x, "oncancel", null)
-    
-    inline def setOncancelUndefined: Self = StObject.set(x, "oncancel", js.undefined)
-    
-    inline def setOncanplay(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
+    inline def setOncanplay(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
     
     inline def setOncanplayNull: Self = StObject.set(x, "oncanplay", null)
     
     inline def setOncanplayUndefined: Self = StObject.set(x, "oncanplay", js.undefined)
     
-    inline def setOncanplaythrough(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
+    inline def setOncanplaythrough(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
     
     inline def setOncanplaythroughNull: Self = StObject.set(x, "oncanplaythrough", null)
     
     inline def setOncanplaythroughUndefined: Self = StObject.set(x, "oncanplaythrough", js.undefined)
     
-    inline def setOnchange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
+    inline def setOnchange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
     
     inline def setOnchangeNull: Self = StObject.set(x, "onchange", null)
     
     inline def setOnchangeUndefined: Self = StObject.set(x, "onchange", js.undefined)
     
-    inline def setOnclick(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+    inline def setOnclick(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     
     inline def setOnclickNull: Self = StObject.set(x, "onclick", null)
     
     inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
-    inline def setOnclose(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
+    inline def setOnclose(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
     
     inline def setOncloseNull: Self = StObject.set(x, "onclose", null)
     
     inline def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
     
-    inline def setOncontextmenu(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
+    inline def setOncontextmenu(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
     
     inline def setOncontextmenuNull: Self = StObject.set(x, "oncontextmenu", null)
     
     inline def setOncontextmenuUndefined: Self = StObject.set(x, "oncontextmenu", js.undefined)
     
-    inline def setOncopy(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
+    inline def setOncopy(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ ClipboardEvent, Any]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
     
     inline def setOncopyNull: Self = StObject.set(x, "oncopy", null)
     
     inline def setOncopyUndefined: Self = StObject.set(x, "oncopy", js.undefined)
     
-    inline def setOncuechange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
+    inline def setOncuechange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
     
     inline def setOncuechangeNull: Self = StObject.set(x, "oncuechange", null)
     
     inline def setOncuechangeUndefined: Self = StObject.set(x, "oncuechange", js.undefined)
     
-    inline def setOncut(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
+    inline def setOncut(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ ClipboardEvent, Any]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
     
     inline def setOncutNull: Self = StObject.set(x, "oncut", null)
     
     inline def setOncutUndefined: Self = StObject.set(x, "oncut", js.undefined)
     
-    inline def setOndblclick(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
+    inline def setOndblclick(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
     
     inline def setOndblclickNull: Self = StObject.set(x, "ondblclick", null)
     
     inline def setOndblclickUndefined: Self = StObject.set(x, "ondblclick", js.undefined)
     
-    inline def setOndrag(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
+    inline def setOndrag(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, Any]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
     
     inline def setOndragNull: Self = StObject.set(x, "ondrag", null)
     
     inline def setOndragUndefined: Self = StObject.set(x, "ondrag", js.undefined)
     
-    inline def setOndragend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
+    inline def setOndragend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, Any]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
     
     inline def setOndragendNull: Self = StObject.set(x, "ondragend", null)
     
     inline def setOndragendUndefined: Self = StObject.set(x, "ondragend", js.undefined)
     
-    inline def setOndragenter(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
+    inline def setOndragenter(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, Any]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
     
     inline def setOndragenterNull: Self = StObject.set(x, "ondragenter", null)
     
     inline def setOndragenterUndefined: Self = StObject.set(x, "ondragenter", js.undefined)
     
-    inline def setOndragexit(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
-    
-    inline def setOndragexitNull: Self = StObject.set(x, "ondragexit", null)
-    
-    inline def setOndragexitUndefined: Self = StObject.set(x, "ondragexit", js.undefined)
-    
-    inline def setOndragleave(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
+    inline def setOndragleave(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, Any]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
     
     inline def setOndragleaveNull: Self = StObject.set(x, "ondragleave", null)
     
     inline def setOndragleaveUndefined: Self = StObject.set(x, "ondragleave", js.undefined)
     
-    inline def setOndragover(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
+    inline def setOndragover(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, Any]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
     
     inline def setOndragoverNull: Self = StObject.set(x, "ondragover", null)
     
     inline def setOndragoverUndefined: Self = StObject.set(x, "ondragover", js.undefined)
     
-    inline def setOndragstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
+    inline def setOndragstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, Any]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
     
     inline def setOndragstartNull: Self = StObject.set(x, "ondragstart", null)
     
     inline def setOndragstartUndefined: Self = StObject.set(x, "ondragstart", js.undefined)
     
-    inline def setOndrop(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
+    inline def setOndrop(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ DragEvent, Any]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
     
     inline def setOndropNull: Self = StObject.set(x, "ondrop", null)
     
     inline def setOndropUndefined: Self = StObject.set(x, "ondrop", js.undefined)
     
-    inline def setOndurationchange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
+    inline def setOndurationchange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
     
     inline def setOndurationchangeNull: Self = StObject.set(x, "ondurationchange", null)
     
     inline def setOndurationchangeUndefined: Self = StObject.set(x, "ondurationchange", js.undefined)
     
-    inline def setOnemptied(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
+    inline def setOnemptied(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
     
     inline def setOnemptiedNull: Self = StObject.set(x, "onemptied", null)
     
     inline def setOnemptiedUndefined: Self = StObject.set(x, "onemptied", js.undefined)
     
-    inline def setOnended(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
+    inline def setOnended(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
     
     inline def setOnendedNull: Self = StObject.set(x, "onended", null)
     
     inline def setOnendedUndefined: Self = StObject.set(x, "onended", js.undefined)
     
     inline def setOnerror(
-      value: (/* event */ Event | String, /* source */ js.UndefOr[String], /* lineno */ js.UndefOr[Double], /* colno */ js.UndefOr[Double], /* error */ js.UndefOr[Error]) => js.Any
+      value: (/* event */ Event | String, /* source */ js.UndefOr[String], /* lineno */ js.UndefOr[Double], /* colno */ js.UndefOr[Double], /* error */ js.UndefOr[js.Error]) => Any
     ): Self = StObject.set(x, "onerror", js.Any.fromFunction5(value))
     
     inline def setOnerrorNull: Self = StObject.set(x, "onerror", null)
     
     inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    inline def setOnfocus(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
+    inline def setOnfocus(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ FocusEvent, Any]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
     
     inline def setOnfocusNull: Self = StObject.set(x, "onfocus", null)
     
     inline def setOnfocusUndefined: Self = StObject.set(x, "onfocus", js.undefined)
     
-    inline def setOnfullscreenchange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
+    inline def setOnformdata(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ FormDataEvent, Any]): Self = StObject.set(x, "onformdata", value.asInstanceOf[js.Any])
+    
+    inline def setOnformdataNull: Self = StObject.set(x, "onformdata", null)
+    
+    inline def setOnformdataUndefined: Self = StObject.set(x, "onformdata", js.undefined)
+    
+    inline def setOnfullscreenchange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
     
     inline def setOnfullscreenchangeNull: Self = StObject.set(x, "onfullscreenchange", null)
     
     inline def setOnfullscreenchangeUndefined: Self = StObject.set(x, "onfullscreenchange", js.undefined)
     
-    inline def setOnfullscreenerror(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
+    inline def setOnfullscreenerror(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
     
     inline def setOnfullscreenerrorNull: Self = StObject.set(x, "onfullscreenerror", null)
     
     inline def setOnfullscreenerrorUndefined: Self = StObject.set(x, "onfullscreenerror", js.undefined)
     
-    inline def setOngotpointercapture(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "ongotpointercapture", value.asInstanceOf[js.Any])
+    inline def setOngotpointercapture(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "ongotpointercapture", value.asInstanceOf[js.Any])
     
     inline def setOngotpointercaptureNull: Self = StObject.set(x, "ongotpointercapture", null)
     
     inline def setOngotpointercaptureUndefined: Self = StObject.set(x, "ongotpointercapture", js.undefined)
     
-    inline def setOninput(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
+    inline def setOninput(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
     
     inline def setOninputNull: Self = StObject.set(x, "oninput", null)
     
     inline def setOninputUndefined: Self = StObject.set(x, "oninput", js.undefined)
     
-    inline def setOninvalid(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
+    inline def setOninvalid(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
     
     inline def setOninvalidNull: Self = StObject.set(x, "oninvalid", null)
     
     inline def setOninvalidUndefined: Self = StObject.set(x, "oninvalid", js.undefined)
     
-    inline def setOnkeydown(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
+    inline def setOnkeydown(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ KeyboardEvent, Any]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
     
     inline def setOnkeydownNull: Self = StObject.set(x, "onkeydown", null)
     
     inline def setOnkeydownUndefined: Self = StObject.set(x, "onkeydown", js.undefined)
     
-    inline def setOnkeypress(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
+    inline def setOnkeypress(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ KeyboardEvent, Any]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
     
     inline def setOnkeypressNull: Self = StObject.set(x, "onkeypress", null)
     
     inline def setOnkeypressUndefined: Self = StObject.set(x, "onkeypress", js.undefined)
     
-    inline def setOnkeyup(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
+    inline def setOnkeyup(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ KeyboardEvent, Any]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
     
     inline def setOnkeyupNull: Self = StObject.set(x, "onkeyup", null)
     
     inline def setOnkeyupUndefined: Self = StObject.set(x, "onkeyup", js.undefined)
     
-    inline def setOnload(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    inline def setOnload(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
     
     inline def setOnloadNull: Self = StObject.set(x, "onload", null)
     
     inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
-    inline def setOnloadeddata(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
+    inline def setOnloadeddata(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
     
     inline def setOnloadeddataNull: Self = StObject.set(x, "onloadeddata", null)
     
     inline def setOnloadeddataUndefined: Self = StObject.set(x, "onloadeddata", js.undefined)
     
-    inline def setOnloadedmetadata(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
+    inline def setOnloadedmetadata(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
     
     inline def setOnloadedmetadataNull: Self = StObject.set(x, "onloadedmetadata", null)
     
     inline def setOnloadedmetadataUndefined: Self = StObject.set(x, "onloadedmetadata", js.undefined)
     
-    inline def setOnloadstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
+    inline def setOnloadstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
     
     inline def setOnloadstartNull: Self = StObject.set(x, "onloadstart", null)
     
     inline def setOnloadstartUndefined: Self = StObject.set(x, "onloadstart", js.undefined)
     
-    inline def setOnlostpointercapture(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onlostpointercapture", value.asInstanceOf[js.Any])
+    inline def setOnlostpointercapture(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "onlostpointercapture", value.asInstanceOf[js.Any])
     
     inline def setOnlostpointercaptureNull: Self = StObject.set(x, "onlostpointercapture", null)
     
     inline def setOnlostpointercaptureUndefined: Self = StObject.set(x, "onlostpointercapture", js.undefined)
     
-    inline def setOnmousedown(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
+    inline def setOnmousedown(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
     
     inline def setOnmousedownNull: Self = StObject.set(x, "onmousedown", null)
     
     inline def setOnmousedownUndefined: Self = StObject.set(x, "onmousedown", js.undefined)
     
-    inline def setOnmouseenter(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
+    inline def setOnmouseenter(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
     
     inline def setOnmouseenterNull: Self = StObject.set(x, "onmouseenter", null)
     
     inline def setOnmouseenterUndefined: Self = StObject.set(x, "onmouseenter", js.undefined)
     
-    inline def setOnmouseleave(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
+    inline def setOnmouseleave(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
     
     inline def setOnmouseleaveNull: Self = StObject.set(x, "onmouseleave", null)
     
     inline def setOnmouseleaveUndefined: Self = StObject.set(x, "onmouseleave", js.undefined)
     
-    inline def setOnmousemove(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
+    inline def setOnmousemove(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
     
     inline def setOnmousemoveNull: Self = StObject.set(x, "onmousemove", null)
     
     inline def setOnmousemoveUndefined: Self = StObject.set(x, "onmousemove", js.undefined)
     
-    inline def setOnmouseout(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
+    inline def setOnmouseout(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
     
     inline def setOnmouseoutNull: Self = StObject.set(x, "onmouseout", null)
     
     inline def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
     
-    inline def setOnmouseover(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
+    inline def setOnmouseover(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
     
     inline def setOnmouseoverNull: Self = StObject.set(x, "onmouseover", null)
     
     inline def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
     
-    inline def setOnmouseup(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
+    inline def setOnmouseup(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
     
     inline def setOnmouseupNull: Self = StObject.set(x, "onmouseup", null)
     
     inline def setOnmouseupUndefined: Self = StObject.set(x, "onmouseup", js.undefined)
     
-    inline def setOnpaste(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ ClipboardEvent, js.Any]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
+    inline def setOnpaste(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ ClipboardEvent, Any]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
     
     inline def setOnpasteNull: Self = StObject.set(x, "onpaste", null)
     
     inline def setOnpasteUndefined: Self = StObject.set(x, "onpaste", js.undefined)
     
-    inline def setOnpause(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
+    inline def setOnpause(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
     
     inline def setOnpauseNull: Self = StObject.set(x, "onpause", null)
     
     inline def setOnpauseUndefined: Self = StObject.set(x, "onpause", js.undefined)
     
-    inline def setOnplay(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
+    inline def setOnplay(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
     
     inline def setOnplayNull: Self = StObject.set(x, "onplay", null)
     
     inline def setOnplayUndefined: Self = StObject.set(x, "onplay", js.undefined)
     
-    inline def setOnplaying(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
+    inline def setOnplaying(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
     
     inline def setOnplayingNull: Self = StObject.set(x, "onplaying", null)
     
     inline def setOnplayingUndefined: Self = StObject.set(x, "onplaying", js.undefined)
     
-    inline def setOnpointercancel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
+    inline def setOnpointercancel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
     
     inline def setOnpointercancelNull: Self = StObject.set(x, "onpointercancel", null)
     
     inline def setOnpointercancelUndefined: Self = StObject.set(x, "onpointercancel", js.undefined)
     
-    inline def setOnpointerdown(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
+    inline def setOnpointerdown(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
     
     inline def setOnpointerdownNull: Self = StObject.set(x, "onpointerdown", null)
     
     inline def setOnpointerdownUndefined: Self = StObject.set(x, "onpointerdown", js.undefined)
     
-    inline def setOnpointerenter(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
+    inline def setOnpointerenter(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
     
     inline def setOnpointerenterNull: Self = StObject.set(x, "onpointerenter", null)
     
     inline def setOnpointerenterUndefined: Self = StObject.set(x, "onpointerenter", js.undefined)
     
-    inline def setOnpointerleave(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
+    inline def setOnpointerleave(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
     
     inline def setOnpointerleaveNull: Self = StObject.set(x, "onpointerleave", null)
     
     inline def setOnpointerleaveUndefined: Self = StObject.set(x, "onpointerleave", js.undefined)
     
-    inline def setOnpointermove(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
+    inline def setOnpointermove(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
     
     inline def setOnpointermoveNull: Self = StObject.set(x, "onpointermove", null)
     
     inline def setOnpointermoveUndefined: Self = StObject.set(x, "onpointermove", js.undefined)
     
-    inline def setOnpointerout(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
+    inline def setOnpointerout(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
     
     inline def setOnpointeroutNull: Self = StObject.set(x, "onpointerout", null)
     
     inline def setOnpointeroutUndefined: Self = StObject.set(x, "onpointerout", js.undefined)
     
-    inline def setOnpointerover(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
+    inline def setOnpointerover(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
     
     inline def setOnpointeroverNull: Self = StObject.set(x, "onpointerover", null)
     
     inline def setOnpointeroverUndefined: Self = StObject.set(x, "onpointerover", js.undefined)
     
-    inline def setOnpointerup(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
+    inline def setOnpointerup(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ PointerEvent, Any]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
     
     inline def setOnpointerupNull: Self = StObject.set(x, "onpointerup", null)
     
     inline def setOnpointerupUndefined: Self = StObject.set(x, "onpointerup", js.undefined)
     
-    inline def setOnprogress(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ ProgressEvent[EventTarget], js.Any]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+    inline def setOnprogress(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ ProgressEvent[EventTarget], Any]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
     inline def setOnprogressNull: Self = StObject.set(x, "onprogress", null)
     
     inline def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
     
-    inline def setOnratechange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
+    inline def setOnratechange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
     
     inline def setOnratechangeNull: Self = StObject.set(x, "onratechange", null)
     
     inline def setOnratechangeUndefined: Self = StObject.set(x, "onratechange", js.undefined)
     
-    inline def setOnreset(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
+    inline def setOnreset(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
     
     inline def setOnresetNull: Self = StObject.set(x, "onreset", null)
     
     inline def setOnresetUndefined: Self = StObject.set(x, "onreset", js.undefined)
     
-    inline def setOnresize(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
+    inline def setOnresize(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ UIEvent, Any]): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
     
     inline def setOnresizeNull: Self = StObject.set(x, "onresize", null)
     
     inline def setOnresizeUndefined: Self = StObject.set(x, "onresize", js.undefined)
     
-    inline def setOnscroll(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
+    inline def setOnscroll(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
     
     inline def setOnscrollNull: Self = StObject.set(x, "onscroll", null)
     
     inline def setOnscrollUndefined: Self = StObject.set(x, "onscroll", js.undefined)
     
-    inline def setOnsecuritypolicyviolation(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ SecurityPolicyViolationEvent, js.Any]): Self = StObject.set(x, "onsecuritypolicyviolation", value.asInstanceOf[js.Any])
+    inline def setOnsecuritypolicyviolation(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ SecurityPolicyViolationEvent, Any]): Self = StObject.set(x, "onsecuritypolicyviolation", value.asInstanceOf[js.Any])
     
     inline def setOnsecuritypolicyviolationNull: Self = StObject.set(x, "onsecuritypolicyviolation", null)
     
     inline def setOnsecuritypolicyviolationUndefined: Self = StObject.set(x, "onsecuritypolicyviolation", js.undefined)
     
-    inline def setOnseeked(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
+    inline def setOnseeked(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
     
     inline def setOnseekedNull: Self = StObject.set(x, "onseeked", null)
     
     inline def setOnseekedUndefined: Self = StObject.set(x, "onseeked", js.undefined)
     
-    inline def setOnseeking(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
+    inline def setOnseeking(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
     
     inline def setOnseekingNull: Self = StObject.set(x, "onseeking", null)
     
     inline def setOnseekingUndefined: Self = StObject.set(x, "onseeking", js.undefined)
     
-    inline def setOnselect(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
+    inline def setOnselect(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
     
     inline def setOnselectNull: Self = StObject.set(x, "onselect", null)
     
     inline def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
     
-    inline def setOnselectionchange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselectionchange", value.asInstanceOf[js.Any])
+    inline def setOnselectionchange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onselectionchange", value.asInstanceOf[js.Any])
     
     inline def setOnselectionchangeNull: Self = StObject.set(x, "onselectionchange", null)
     
     inline def setOnselectionchangeUndefined: Self = StObject.set(x, "onselectionchange", js.undefined)
     
-    inline def setOnselectstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
+    inline def setOnselectstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
     
     inline def setOnselectstartNull: Self = StObject.set(x, "onselectstart", null)
     
     inline def setOnselectstartUndefined: Self = StObject.set(x, "onselectstart", js.undefined)
     
-    inline def setOnstalled(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
+    inline def setOnslotchange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onslotchange", value.asInstanceOf[js.Any])
+    
+    inline def setOnslotchangeNull: Self = StObject.set(x, "onslotchange", null)
+    
+    inline def setOnslotchangeUndefined: Self = StObject.set(x, "onslotchange", js.undefined)
+    
+    inline def setOnstalled(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
     
     inline def setOnstalledNull: Self = StObject.set(x, "onstalled", null)
     
     inline def setOnstalledUndefined: Self = StObject.set(x, "onstalled", js.undefined)
     
-    inline def setOnsubmit(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+    inline def setOnsubmit(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ SubmitEvent, Any]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
     
     inline def setOnsubmitNull: Self = StObject.set(x, "onsubmit", null)
     
     inline def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
     
-    inline def setOnsuspend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
+    inline def setOnsuspend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
     
     inline def setOnsuspendNull: Self = StObject.set(x, "onsuspend", null)
     
     inline def setOnsuspendUndefined: Self = StObject.set(x, "onsuspend", js.undefined)
     
-    inline def setOntimeupdate(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
+    inline def setOntimeupdate(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
     
     inline def setOntimeupdateNull: Self = StObject.set(x, "ontimeupdate", null)
     
     inline def setOntimeupdateUndefined: Self = StObject.set(x, "ontimeupdate", js.undefined)
     
-    inline def setOntoggle(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "ontoggle", value.asInstanceOf[js.Any])
+    inline def setOntoggle(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "ontoggle", value.asInstanceOf[js.Any])
     
     inline def setOntoggleNull: Self = StObject.set(x, "ontoggle", null)
     
     inline def setOntoggleUndefined: Self = StObject.set(x, "ontoggle", js.undefined)
     
-    inline def setOntouchcancel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchcancel", value.asInstanceOf[js.Any])
+    inline def setOntouchcancel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TouchEvent, Any]): Self = StObject.set(x, "ontouchcancel", value.asInstanceOf[js.Any])
     
     inline def setOntouchcancelNull: Self = StObject.set(x, "ontouchcancel", null)
     
     inline def setOntouchcancelUndefined: Self = StObject.set(x, "ontouchcancel", js.undefined)
     
-    inline def setOntouchend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchend", value.asInstanceOf[js.Any])
+    inline def setOntouchend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TouchEvent, Any]): Self = StObject.set(x, "ontouchend", value.asInstanceOf[js.Any])
     
     inline def setOntouchendNull: Self = StObject.set(x, "ontouchend", null)
     
     inline def setOntouchendUndefined: Self = StObject.set(x, "ontouchend", js.undefined)
     
-    inline def setOntouchmove(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchmove", value.asInstanceOf[js.Any])
+    inline def setOntouchmove(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TouchEvent, Any]): Self = StObject.set(x, "ontouchmove", value.asInstanceOf[js.Any])
     
     inline def setOntouchmoveNull: Self = StObject.set(x, "ontouchmove", null)
     
     inline def setOntouchmoveUndefined: Self = StObject.set(x, "ontouchmove", js.undefined)
     
-    inline def setOntouchstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchstart", value.asInstanceOf[js.Any])
+    inline def setOntouchstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TouchEvent, Any]): Self = StObject.set(x, "ontouchstart", value.asInstanceOf[js.Any])
     
     inline def setOntouchstartNull: Self = StObject.set(x, "ontouchstart", null)
     
     inline def setOntouchstartUndefined: Self = StObject.set(x, "ontouchstart", js.undefined)
     
-    inline def setOntransitioncancel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitioncancel", value.asInstanceOf[js.Any])
+    inline def setOntransitioncancel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TransitionEvent, Any]): Self = StObject.set(x, "ontransitioncancel", value.asInstanceOf[js.Any])
     
     inline def setOntransitioncancelNull: Self = StObject.set(x, "ontransitioncancel", null)
     
     inline def setOntransitioncancelUndefined: Self = StObject.set(x, "ontransitioncancel", js.undefined)
     
-    inline def setOntransitionend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionend", value.asInstanceOf[js.Any])
+    inline def setOntransitionend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TransitionEvent, Any]): Self = StObject.set(x, "ontransitionend", value.asInstanceOf[js.Any])
     
     inline def setOntransitionendNull: Self = StObject.set(x, "ontransitionend", null)
     
     inline def setOntransitionendUndefined: Self = StObject.set(x, "ontransitionend", js.undefined)
     
-    inline def setOntransitionrun(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionrun", value.asInstanceOf[js.Any])
+    inline def setOntransitionrun(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TransitionEvent, Any]): Self = StObject.set(x, "ontransitionrun", value.asInstanceOf[js.Any])
     
     inline def setOntransitionrunNull: Self = StObject.set(x, "ontransitionrun", null)
     
     inline def setOntransitionrunUndefined: Self = StObject.set(x, "ontransitionrun", js.undefined)
     
-    inline def setOntransitionstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionstart", value.asInstanceOf[js.Any])
+    inline def setOntransitionstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ TransitionEvent, Any]): Self = StObject.set(x, "ontransitionstart", value.asInstanceOf[js.Any])
     
     inline def setOntransitionstartNull: Self = StObject.set(x, "ontransitionstart", null)
     
     inline def setOntransitionstartUndefined: Self = StObject.set(x, "ontransitionstart", js.undefined)
     
-    inline def setOnvolumechange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
+    inline def setOnvolumechange(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
     
     inline def setOnvolumechangeNull: Self = StObject.set(x, "onvolumechange", null)
     
     inline def setOnvolumechangeUndefined: Self = StObject.set(x, "onvolumechange", js.undefined)
     
-    inline def setOnwaiting(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
+    inline def setOnwaiting(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
     
     inline def setOnwaitingNull: Self = StObject.set(x, "onwaiting", null)
     
     inline def setOnwaitingUndefined: Self = StObject.set(x, "onwaiting", js.undefined)
     
-    inline def setOnwheel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ WheelEvent, js.Any]): Self = StObject.set(x, "onwheel", value.asInstanceOf[js.Any])
+    inline def setOnwebkitanimationend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onwebkitanimationend", value.asInstanceOf[js.Any])
+    
+    inline def setOnwebkitanimationendNull: Self = StObject.set(x, "onwebkitanimationend", null)
+    
+    inline def setOnwebkitanimationendUndefined: Self = StObject.set(x, "onwebkitanimationend", js.undefined)
+    
+    inline def setOnwebkitanimationiteration(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onwebkitanimationiteration", value.asInstanceOf[js.Any])
+    
+    inline def setOnwebkitanimationiterationNull: Self = StObject.set(x, "onwebkitanimationiteration", null)
+    
+    inline def setOnwebkitanimationiterationUndefined: Self = StObject.set(x, "onwebkitanimationiteration", js.undefined)
+    
+    inline def setOnwebkitanimationstart(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onwebkitanimationstart", value.asInstanceOf[js.Any])
+    
+    inline def setOnwebkitanimationstartNull: Self = StObject.set(x, "onwebkitanimationstart", null)
+    
+    inline def setOnwebkitanimationstartUndefined: Self = StObject.set(x, "onwebkitanimationstart", js.undefined)
+    
+    inline def setOnwebkittransitionend(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]): Self = StObject.set(x, "onwebkittransitionend", value.asInstanceOf[js.Any])
+    
+    inline def setOnwebkittransitionendNull: Self = StObject.set(x, "onwebkittransitionend", null)
+    
+    inline def setOnwebkittransitionendUndefined: Self = StObject.set(x, "onwebkittransitionend", js.undefined)
+    
+    inline def setOnwheel(value: js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ WheelEvent, Any]): Self = StObject.set(x, "onwheel", value.asInstanceOf[js.Any])
     
     inline def setOnwheelNull: Self = StObject.set(x, "onwheel", null)
     
@@ -1611,6 +1939,10 @@ object PropsHTMLCanvasElementcon {
     inline def setOuterHTML(value: String): Self = StObject.set(x, "outerHTML", value.asInstanceOf[js.Any])
     
     inline def setOuterHTMLUndefined: Self = StObject.set(x, "outerHTML", js.undefined)
+    
+    inline def setOuterText(value: String): Self = StObject.set(x, "outerText", value.asInstanceOf[js.Any])
+    
+    inline def setOuterTextUndefined: Self = StObject.set(x, "outerText", js.undefined)
     
     inline def setOwnerDocument(value: Document): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
     
@@ -1626,11 +1958,15 @@ object PropsHTMLCanvasElementcon {
     
     inline def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
     
-    inline def setParentNode(value: Node & ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     inline def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
     
     inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
+    
+    inline def setPart(value: DOMTokenList): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
@@ -1680,21 +2016,25 @@ object PropsHTMLCanvasElementcon {
     
     inline def setRemoveAttributeUndefined: Self = StObject.set(x, "removeAttribute", js.undefined)
     
-    inline def setRemoveChild(value: /* oldChild */ Node => Node): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+    inline def setRemoveChild(value: /* child */ Node => Node): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
     inline def setRemoveChildUndefined: Self = StObject.set(x, "removeChild", js.undefined)
     
     inline def setRemoveEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, js.Any]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsHTMLCanvasElementcon, /* ev */ Event, Any]) => Unit
     ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     inline def setRemoveEventListenerUndefined: Self = StObject.set(x, "removeEventListener", js.undefined)
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setReplaceChild(value: (/* newChild */ Node, /* oldChild */ Node) => Node): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
+    inline def setReplaceChild(value: (/* node */ Node, /* child */ Node) => Node): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
     
     inline def setReplaceChildUndefined: Self = StObject.set(x, "replaceChild", js.undefined)
+    
+    inline def setReplaceChildren(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "replaceChildren", js.Any.fromFunction1(value))
+    
+    inline def setReplaceChildrenUndefined: Self = StObject.set(x, "replaceChildren", js.undefined)
     
     inline def setReplaceWith(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
@@ -1811,10 +2151,6 @@ object PropsHTMLCanvasElementcon {
     inline def setToggleAttribute(value: /* qualifiedName */ String => Boolean): Self = StObject.set(x, "toggleAttribute", js.Any.fromFunction1(value))
     
     inline def setToggleAttributeUndefined: Self = StObject.set(x, "toggleAttribute", js.undefined)
-    
-    inline def setTransferControlToOffscreen(value: () => OffscreenCanvas): Self = StObject.set(x, "transferControlToOffscreen", js.Any.fromFunction0(value))
-    
-    inline def setTransferControlToOffscreenUndefined: Self = StObject.set(x, "transferControlToOffscreen", js.undefined)
     
     inline def setTranslate(value: Boolean): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     

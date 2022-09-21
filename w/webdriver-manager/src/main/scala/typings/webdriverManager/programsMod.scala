@@ -13,7 +13,7 @@ object programsMod {
   
   @JSImport("webdriver-manager/built/lib/cli/programs", "Program")
   @js.native
-  class Program () extends StObject {
+  open class Program () extends StObject {
     
     /**
       * Registers a method that will be used to run the program.
@@ -54,7 +54,7 @@ object programsMod {
       */
     def getOptions_(allOptions: Options): Options = js.native
     
-    /* private */ def getValue_(key: js.Any, json: js.Any): js.Any = js.native
+    /* private */ def getValue_(key: Any, json: Any): Any = js.native
     
     var helpDescription: String = js.native
     

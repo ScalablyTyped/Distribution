@@ -8,5 +8,5 @@ object globalTableAlreadyExistsExceptionMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/GlobalTableAlreadyExistsException", "GlobalTableAlreadyExistsException")
   @js.native
-  val GlobalTableAlreadyExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GlobalTableAlreadyExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

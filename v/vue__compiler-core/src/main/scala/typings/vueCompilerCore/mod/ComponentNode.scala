@@ -10,7 +10,7 @@ trait ComponentNode
      with BaseElementNode
      with ElementNode {
   
-  var codegenNode: js.UndefOr[VNodeCall | CacheExpression] = js.undefined
+  var codegenNode: js.UndefOr[VNodeCall | CacheExpression | MemoExpression] = js.undefined
   
   var ssrCodegenNode: js.UndefOr[CallExpression] = js.undefined
   
@@ -34,7 +34,7 @@ object ComponentNode {
   
   extension [Self <: ComponentNode](x: Self) {
     
-    inline def setCodegenNode(value: VNodeCall | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
+    inline def setCodegenNode(value: VNodeCall | CacheExpression | MemoExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
     inline def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     

@@ -10,16 +10,17 @@ object mod {
   
   @JSImport("zipkin-context-cls", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with CLSContext {
     def this(name: String) = this()
+    def this(name: String, supportAsyncAwait: Boolean) = this()
     
     /* CompleteClass */
-    override def getContext(): js.Any = js.native
+    override def getContext(): Any = js.native
     
     /* CompleteClass */
-    override def letContext[V](ctx: js.Any, callback: js.Function0[V]): V = js.native
+    override def letContext[V](ctx: Any, callback: js.Function0[V]): V = js.native
     /* CompleteClass */
     override def letContext[V](ctx: TraceId, callback: js.Function0[V]): V = js.native
     
@@ -27,14 +28,14 @@ object mod {
     override def scoped[V](callback: js.Function0[V]): V = js.native
     
     /* CompleteClass */
-    override def setContext(ctx: js.Any): Unit = js.native
+    override def setContext(ctx: Any): Unit = js.native
     /* CompleteClass */
     override def setContext(ctx: TraceId): Unit = js.native
   }
   
   trait CLSContext
     extends StObject
-       with Context[js.Any] {
+       with Context[Any] {
     
     def letContext[V](ctx: TraceId, callback: js.Function0[V]): V
     
@@ -43,9 +44,9 @@ object mod {
   object CLSContext {
     
     inline def apply(
-      getContext: () => js.Any,
-      letContext: (TraceId, js.Function0[js.Any]) => js.Any,
-      scoped: js.Function0[js.Any] => js.Any,
+      getContext: () => Any,
+      letContext: (TraceId, js.Function0[Any]) => Any,
+      scoped: js.Function0[Any] => Any,
       setContext: TraceId => Unit
     ): CLSContext = {
       val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), letContext = js.Any.fromFunction2(letContext), scoped = js.Any.fromFunction1(scoped), setContext = js.Any.fromFunction1(setContext))
@@ -54,7 +55,7 @@ object mod {
     
     extension [Self <: CLSContext](x: Self) {
       
-      inline def setLetContext(value: (TraceId, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "letContext", js.Any.fromFunction2(value))
+      inline def setLetContext(value: (TraceId, js.Function0[Any]) => Any): Self = StObject.set(x, "letContext", js.Any.fromFunction2(value))
       
       inline def setSetContext(value: TraceId => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     }

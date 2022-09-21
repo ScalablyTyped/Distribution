@@ -9,7 +9,7 @@ trait LedgerSummary extends StObject {
   /**
     * The date and time, in epoch time format, when the ledger was created. (Epoch time format is the number of seconds elapsed since 12:00:00 AM January 1, 1970 UTC.)
     */
-  var CreationDateTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the ledger.
@@ -30,7 +30,7 @@ object LedgerSummary {
   
   extension [Self <: LedgerSummary](x: Self) {
     
-    inline def setCreationDateTime(value: Timestamp): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     

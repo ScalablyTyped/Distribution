@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CanvasShapes")
 @js.native
-/* private */ class CanvasShapes ()
+/* private */ open class CanvasShapes ()
   extends StObject
      with typings.activexWord.Word.CanvasShapes {
   
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): typings.activexWord.Word.Shape = js.native
   
   /* CompleteClass */
-  override def AddCurve(SafeArrayOfPoints: js.Any): typings.activexWord.Word.Shape = js.native
+  override def AddCurve(SafeArrayOfPoints: Any): typings.activexWord.Word.Shape = js.native
   
   /* CompleteClass */
   override def AddLabel(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): typings.activexWord.Word.Shape = js.native
@@ -34,16 +34,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /* CompleteClass */
   override def AddPicture(
     FileName: String,
-    LinkToFile: js.UndefOr[js.Any],
-    SaveWithDocument: js.UndefOr[js.Any],
-    Left: js.UndefOr[js.Any],
-    Top: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any]
+    LinkToFile: js.UndefOr[Any],
+    SaveWithDocument: js.UndefOr[Any],
+    Left: js.UndefOr[Any],
+    Top: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    Height: js.UndefOr[Any]
   ): typings.activexWord.Word.Shape = js.native
   
   /* CompleteClass */
-  override def AddPolyline(SafeArrayOfPoints: js.Any): typings.activexWord.Word.Shape = js.native
+  override def AddPolyline(SafeArrayOfPoints: Any): typings.activexWord.Word.Shape = js.native
   
   /* CompleteClass */
   override def AddShape(Type: Double, Left: Double, Top: Double, Width: Double, Height: Double): typings.activexWord.Word.Shape = js.native
@@ -76,13 +76,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexWord.Word.Shape = js.native
+  override def Item(Index: Any): typings.activexWord.Word.Shape = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override def Range(Index: js.Any): typings.activexWord.Word.ShapeRange = js.native
+  override def Range(Index: Any): typings.activexWord.Word.ShapeRange = js.native
   
   /* CompleteClass */
   override def SelectAll(): Unit = js.native

@@ -8,70 +8,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object viewCacheMod {
   
-  @JSImport("@firebase/database/dist/src/core/view/ViewCache", "ViewCache")
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/ViewCache", JSImport.Namespace)
   @js.native
-  class ViewCache protected () extends StObject {
-    /**
-      *
-      * @param {!CacheNode} eventCache_
-      * @param {!CacheNode} serverCache_
-      */
-    def this(eventCache_ : CacheNode, serverCache_ : CacheNode) = this()
+  val ^ : js.Any = js.native
+  
+  inline def newViewCache(eventCache: CacheNode, serverCache: CacheNode): ViewCache = (^.asInstanceOf[js.Dynamic].applyDynamic("newViewCache")(eventCache.asInstanceOf[js.Any], serverCache.asInstanceOf[js.Any])).asInstanceOf[ViewCache]
+  
+  inline def viewCacheGetCompleteEventSnap(viewCache: ViewCache): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("viewCacheGetCompleteEventSnap")(viewCache.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+  
+  inline def viewCacheGetCompleteServerSnap(viewCache: ViewCache): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("viewCacheGetCompleteServerSnap")(viewCache.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+  
+  inline def viewCacheUpdateEventSnap(viewCache: ViewCache, eventSnap: Node, complete: Boolean, filtered: Boolean): ViewCache = (^.asInstanceOf[js.Dynamic].applyDynamic("viewCacheUpdateEventSnap")(viewCache.asInstanceOf[js.Any], eventSnap.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], filtered.asInstanceOf[js.Any])).asInstanceOf[ViewCache]
+  
+  inline def viewCacheUpdateServerSnap(viewCache: ViewCache, serverSnap: Node, complete: Boolean, filtered: Boolean): ViewCache = (^.asInstanceOf[js.Dynamic].applyDynamic("viewCacheUpdateServerSnap")(viewCache.asInstanceOf[js.Any], serverSnap.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], filtered.asInstanceOf[js.Any])).asInstanceOf[ViewCache]
+  
+  trait ViewCache extends StObject {
     
-    /* private */ val eventCache_ : js.Any = js.native
+    val eventCache: CacheNode
     
-    /**
-      * @return {?Node}
-      */
-    def getCompleteEventSnap(): Node | Null = js.native
-    
-    /**
-      * @return {?Node}
-      */
-    def getCompleteServerSnap(): Node | Null = js.native
-    
-    /**
-      * @return {!CacheNode}
-      */
-    def getEventCache(): CacheNode = js.native
-    
-    /**
-      * @return {!CacheNode}
-      */
-    def getServerCache(): CacheNode = js.native
-    
-    /* private */ val serverCache_ : js.Any = js.native
-    
-    /**
-      * @param {!Node} eventSnap
-      * @param {boolean} complete
-      * @param {boolean} filtered
-      * @return {!ViewCache}
-      */
-    def updateEventSnap(eventSnap: Node, complete: Boolean, filtered: Boolean): ViewCache = js.native
-    
-    /**
-      * @param {!Node} serverSnap
-      * @param {boolean} complete
-      * @param {boolean} filtered
-      * @return {!ViewCache}
-      */
-    def updateServerSnap(serverSnap: Node, complete: Boolean, filtered: Boolean): ViewCache = js.native
+    val serverCache: CacheNode
   }
-  /* static members */
   object ViewCache {
     
-    @JSImport("@firebase/database/dist/src/core/view/ViewCache", "ViewCache")
-    @js.native
-    val ^ : js.Any = js.native
+    inline def apply(eventCache: CacheNode, serverCache: CacheNode): ViewCache = {
+      val __obj = js.Dynamic.literal(eventCache = eventCache.asInstanceOf[js.Any], serverCache = serverCache.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ViewCache]
+    }
     
-    /**
-      * @const
-      * @type {ViewCache}
-      */
-    @JSImport("@firebase/database/dist/src/core/view/ViewCache", "ViewCache.Empty")
-    @js.native
-    def Empty: ViewCache = js.native
-    inline def Empty_=(x: ViewCache): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
+    extension [Self <: ViewCache](x: Self) {
+      
+      inline def setEventCache(value: CacheNode): Self = StObject.set(x, "eventCache", value.asInstanceOf[js.Any])
+      
+      inline def setServerCache(value: CacheNode): Self = StObject.set(x, "serverCache", value.asInstanceOf[js.Any])
+    }
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "ArrayBuffer")
 @js.native
-class ArrayBuffer ()
+open class ArrayBuffer ()
   extends typings.wonderJs.arrayBufferMod.ArrayBuffer
 /* static members */
 object ArrayBuffer {

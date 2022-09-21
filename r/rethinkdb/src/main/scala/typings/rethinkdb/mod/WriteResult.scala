@@ -1,6 +1,5 @@
 package typings.rethinkdb.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait WriteResult extends StObject {
   
   var errors: Double
   
-  var first_error: Error
+  var first_error: js.Error
   
   var generated_keys: js.Array[String]
   
@@ -28,7 +27,7 @@ object WriteResult {
   inline def apply(
     deleted: Double,
     errors: Double,
-    first_error: Error,
+    first_error: js.Error,
     generated_keys: js.Array[String],
     inserted: Double,
     replaced: Double,
@@ -45,11 +44,11 @@ object WriteResult {
     
     inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setFirst_error(value: Error): Self = StObject.set(x, "first_error", value.asInstanceOf[js.Any])
+    inline def setFirst_error(value: js.Error): Self = StObject.set(x, "first_error", value.asInstanceOf[js.Any])
     
     inline def setGenerated_keys(value: js.Array[String]): Self = StObject.set(x, "generated_keys", value.asInstanceOf[js.Any])
     
-    inline def setGenerated_keysVarargs(value: String*): Self = StObject.set(x, "generated_keys", js.Array(value :_*))
+    inline def setGenerated_keysVarargs(value: String*): Self = StObject.set(x, "generated_keys", js.Array(value*))
     
     inline def setInserted(value: Double): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
     

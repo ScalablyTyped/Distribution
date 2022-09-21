@@ -24,6 +24,6 @@ object DescribeOperatingSystemsResponse {
     
     inline def setOperatingSystemsUndefined: Self = StObject.set(x, "OperatingSystems", js.undefined)
     
-    inline def setOperatingSystemsVarargs(value: OperatingSystem*): Self = StObject.set(x, "OperatingSystems", js.Array(value :_*))
+    inline def setOperatingSystemsVarargs(value: OperatingSystem*): Self = StObject.set(x, "OperatingSystems", js.Array(value*))
   }
 }

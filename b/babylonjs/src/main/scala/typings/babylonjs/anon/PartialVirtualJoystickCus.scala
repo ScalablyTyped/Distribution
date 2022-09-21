@@ -17,7 +17,7 @@ trait PartialVirtualJoystickCus extends StObject {
   
   var limitToContainer: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[Y] = js.undefined
+  var position: js.UndefOr[X] = js.undefined
   
   var puckImage: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ object PartialVirtualJoystickCus {
     
     inline def setLimitToContainerUndefined: Self = StObject.set(x, "limitToContainer", js.undefined)
     
-    inline def setPosition(value: Y): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: X): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     

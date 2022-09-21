@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SharedWorkspaceFile")
 @js.native
-/* private */ class SharedWorkspaceFile ()
+/* private */ open class SharedWorkspaceFile ()
   extends StObject
      with typings.activexOffice.Office.SharedWorkspaceFile {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val CreatedBy: String = js.native
@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotSharedWorkspaceFile_typekey: typings.activexOffice.Office.SharedWorkspaceFile = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val URL: String = js.native

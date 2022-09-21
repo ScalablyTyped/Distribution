@@ -1,0 +1,448 @@
+package typings.sentryNode
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.sentryCore.mod.Integrations.FunctionToString
+import typings.sentryCore.mod.Integrations.InboundFilters
+import typings.sentryHub.anon.FnCall
+import typings.sentryHub.anon.FnCallBreadcrumbHint
+import typings.sentryHub.anon.FnCallCallback
+import typings.sentryHub.anon.FnCallContextCustomSamplingContext
+import typings.sentryHub.anon.FnCallEventHint
+import typings.sentryHub.anon.FnCallMessageLevelHint
+import typings.sentryHub.anon.FnCallNameContext
+import typings.sentryHub.anon.FnCallUser
+import typings.sentryHub.hubMod.Carrier
+import typings.sentryNode.anon.Breadcrumbs
+import typings.sentryNode.anon.Include
+import typings.sentryNode.anon.Key
+import typings.sentryNode.anon.Mode
+import typings.sentryNode.anon.OmitAddRequestDataToEvent
+import typings.sentryNode.anon.OnFatalError
+import typings.sentryNode.anon.ShouldHandleError
+import typings.sentryNode.anon.TypeofConsole
+import typings.sentryNode.anon.TypeofContext
+import typings.sentryNode.anon.TypeofContextLines
+import typings.sentryNode.anon.TypeofCoreIntegrations
+import typings.sentryNode.anon.TypeofCoreIntegrationsInstantiable
+import typings.sentryNode.anon.TypeofHttp_
+import typings.sentryNode.anon.TypeofLinkedErrors
+import typings.sentryNode.anon.TypeofModules
+import typings.sentryNode.anon.TypeofOnUncaughtException
+import typings.sentryNode.anon.TypeofOnUnhandledRejectio
+import typings.sentryNode.contextMod.ContextOptions
+import typings.sentryNode.contextlinesMod.ContextLinesOptions
+import typings.sentryNode.handlersMod.MiddlewareError
+import typings.sentryNode.handlersMod.RequestHandlerOptions
+import typings.sentryNode.integrationsMod.Console
+import typings.sentryNode.integrationsMod.Context
+import typings.sentryNode.integrationsMod.ContextLines
+import typings.sentryNode.integrationsMod.Http
+import typings.sentryNode.integrationsMod.LinkedErrors
+import typings.sentryNode.integrationsMod.Modules
+import typings.sentryNode.integrationsMod.OnUncaughtException
+import typings.sentryNode.integrationsMod.OnUnhandledRejection
+import typings.sentryNode.requestDataDeprecatedMod.ExpressRequest
+import typings.sentryNode.requestDataDeprecatedMod.ParseRequestOptions
+import typings.sentryNode.transportsHttpMod.NodeTransportOptions
+import typings.sentryNode.typesMod.NodeClientOptions
+import typings.sentryNode.typesMod.NodeOptions
+import typings.sentryTypes.breadcrumbMod.Breadcrumb
+import typings.sentryTypes.clientMod.Client
+import typings.sentryTypes.eventMod.Event
+import typings.sentryTypes.eventMod.EventHint
+import typings.sentryTypes.eventprocessorMod.EventProcessor
+import typings.sentryTypes.extraMod.Extra
+import typings.sentryTypes.extraMod.Extras
+import typings.sentryTypes.miscMod.ExtractedNodeRequestData
+import typings.sentryTypes.miscMod.Primitive
+import typings.sentryTypes.optionsMod.ClientOptions
+import typings.sentryTypes.scopeMod.CaptureContext
+import typings.sentryTypes.severityMod.Severity
+import typings.sentryTypes.severityMod.SeverityLevel
+import typings.sentryTypes.stacktraceMod.StackParser
+import typings.sentryTypes.transactionMod.CustomSamplingContext
+import typings.sentryTypes.transactionMod.TransactionContext
+import typings.sentryTypes.transportMod.BaseTransportOptions
+import typings.sentryTypes.transportMod.InternalBaseTransportOptions
+import typings.sentryTypes.transportMod.Transport
+import typings.sentryTypes.transportMod.TransportRequestExecutor
+import typings.sentryTypes.userMod.User
+import typings.sentryUtils.promisebufferMod.PromiseBuffer
+import typings.sentryUtils.requestdataMod.CrossPlatformRequest
+import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object mod {
+  
+  @JSImport("@sentry/node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  object Handlers {
+    
+    @JSImport("@sentry/node", "Handlers")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def errorHandler(): js.Function4[
+        /* error */ MiddlewareError, 
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ MiddlewareError, Unit], 
+        Unit
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")().asInstanceOf[js.Function4[
+        /* error */ MiddlewareError, 
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ MiddlewareError, Unit], 
+        Unit
+      ]]
+    inline def errorHandler(options: ShouldHandleError): js.Function4[
+        /* error */ MiddlewareError, 
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ MiddlewareError, Unit], 
+        Unit
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
+        /* error */ MiddlewareError, 
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ MiddlewareError, Unit], 
+        Unit
+      ]]
+    
+    inline def extractRequestData(req: StringDictionary[Any]): ExtractedNodeRequestData = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any]).asInstanceOf[ExtractedNodeRequestData]
+    inline def extractRequestData(req: StringDictionary[Any], keys: js.Array[String]): ExtractedNodeRequestData = (^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[ExtractedNodeRequestData]
+    
+    inline def parseRequest(event: Event, req: ExpressRequest): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Event]
+    inline def parseRequest(event: Event, req: ExpressRequest, options: ParseRequestOptions): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
+    
+    inline def requestHandler(): js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
+        Unit
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestHandler")().asInstanceOf[js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
+        Unit
+      ]]
+    inline def requestHandler(options: RequestHandlerOptions): js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
+        Unit
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
+        Unit
+      ]]
+    
+    inline def tracingHandler(): js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
+        Unit
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("tracingHandler")().asInstanceOf[js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
+        Unit
+      ]]
+  }
+  
+  @JSImport("@sentry/node", "Hub")
+  @js.native
+  /**
+    * Creates a new instance of the hub, will push one {@link Layer} into the
+    * internal stack on creation.
+    *
+    * @param client bound to the hub.
+    * @param scope bound to the hub.
+    * @param version number, higher number means higher priority.
+    */
+  open class Hub ()
+    extends typings.sentryCore.mod.Hub {
+    def this(client: Client[ClientOptions[BaseTransportOptions]]) = this()
+    def this(client: Unit, scope: typings.sentryHub.scopeMod.Scope) = this()
+    def this(client: Client[ClientOptions[BaseTransportOptions]], scope: typings.sentryHub.scopeMod.Scope) = this()
+    def this(client: Unit, scope: Unit, _version: Double) = this()
+    def this(client: Unit, scope: typings.sentryHub.scopeMod.Scope, _version: Double) = this()
+    def this(client: Client[ClientOptions[BaseTransportOptions]], scope: Unit, _version: Double) = this()
+    def this(
+      client: Client[ClientOptions[BaseTransportOptions]],
+      scope: typings.sentryHub.scopeMod.Scope,
+      _version: Double
+    ) = this()
+  }
+  
+  object Integrations {
+    
+    @JSImport("@sentry/node", "Integrations")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.Console")
+    @js.native
+    open class Console ()
+      extends typings.sentryNode.integrationsMod.Console
+    @JSImport("@sentry/node", "Integrations.Console")
+    @js.native
+    def Console: TypeofConsole = js.native
+    inline def Console_=(x: TypeofConsole): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Console")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.Context")
+    @js.native
+    open class Context ()
+      extends typings.sentryNode.integrationsMod.Context {
+      def this(_options: ContextOptions) = this()
+    }
+    @JSImport("@sentry/node", "Integrations.Context")
+    @js.native
+    def Context: TypeofContext = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.ContextLines")
+    @js.native
+    open class ContextLines ()
+      extends typings.sentryNode.integrationsMod.ContextLines {
+      def this(_options: ContextLinesOptions) = this()
+    }
+    @JSImport("@sentry/node", "Integrations.ContextLines")
+    @js.native
+    def ContextLines: TypeofContextLines = js.native
+    inline def ContextLines_=(x: TypeofContextLines): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContextLines")(x.asInstanceOf[js.Any])
+    
+    inline def Context_=(x: TypeofContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Context")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.FunctionToString")
+    @js.native
+    open class FunctionToString ()
+      extends typings.sentryCore.mod.Integrations.FunctionToString
+    @JSImport("@sentry/node", "Integrations.FunctionToString")
+    @js.native
+    def FunctionToString: TypeofCoreIntegrations = js.native
+    inline def FunctionToString_=(x: TypeofCoreIntegrations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FunctionToString")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.Http")
+    @js.native
+    /**
+      * @inheritDoc
+      */
+    open class Http ()
+      extends typings.sentryNode.integrationsMod.Http {
+      def this(options: Breadcrumbs) = this()
+    }
+    @JSImport("@sentry/node", "Integrations.Http")
+    @js.native
+    def Http: TypeofHttp_ = js.native
+    inline def Http_=(x: TypeofHttp_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Http")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.InboundFilters")
+    @js.native
+    open class InboundFilters ()
+      extends typings.sentryCore.mod.Integrations.InboundFilters
+    @JSImport("@sentry/node", "Integrations.InboundFilters")
+    @js.native
+    def InboundFilters: TypeofCoreIntegrationsInstantiable = js.native
+    inline def InboundFilters_=(x: TypeofCoreIntegrationsInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InboundFilters")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.LinkedErrors")
+    @js.native
+    /**
+      * @inheritDoc
+      */
+    open class LinkedErrors ()
+      extends typings.sentryNode.integrationsMod.LinkedErrors {
+      def this(options: Key) = this()
+    }
+    @JSImport("@sentry/node", "Integrations.LinkedErrors")
+    @js.native
+    def LinkedErrors: TypeofLinkedErrors = js.native
+    inline def LinkedErrors_=(x: TypeofLinkedErrors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LinkedErrors")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.Modules")
+    @js.native
+    open class Modules ()
+      extends typings.sentryNode.integrationsMod.Modules
+    @JSImport("@sentry/node", "Integrations.Modules")
+    @js.native
+    def Modules: TypeofModules = js.native
+    inline def Modules_=(x: TypeofModules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Modules")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.OnUncaughtException")
+    @js.native
+    /**
+      * @inheritDoc
+      */
+    open class OnUncaughtException ()
+      extends typings.sentryNode.integrationsMod.OnUncaughtException {
+      def this(_options: OnFatalError) = this()
+    }
+    @JSImport("@sentry/node", "Integrations.OnUncaughtException")
+    @js.native
+    def OnUncaughtException: TypeofOnUncaughtException = js.native
+    inline def OnUncaughtException_=(x: TypeofOnUncaughtException): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnUncaughtException")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.OnUnhandledRejection")
+    @js.native
+    /**
+      * @inheritDoc
+      */
+    open class OnUnhandledRejection ()
+      extends typings.sentryNode.integrationsMod.OnUnhandledRejection {
+      def this(_options: Mode) = this()
+    }
+    @JSImport("@sentry/node", "Integrations.OnUnhandledRejection")
+    @js.native
+    def OnUnhandledRejection: TypeofOnUnhandledRejectio = js.native
+    inline def OnUnhandledRejection_=(x: TypeofOnUnhandledRejectio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnUnhandledRejection")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@sentry/node", "NodeClient")
+  @js.native
+  open class NodeClient protected ()
+    extends typings.sentryNode.clientMod.NodeClient {
+    /**
+      * Creates a new Node SDK instance.
+      * @param options Configuration options for this SDK.
+      */
+    def this(options: NodeClientOptions) = this()
+  }
+  
+  @JSImport("@sentry/node", "SDK_VERSION")
+  @js.native
+  val SDK_VERSION: /* "7.13.0" */ String = js.native
+  
+  @JSImport("@sentry/node", "Scope")
+  @js.native
+  open class Scope ()
+    extends typings.sentryCore.mod.Scope
+  /* static members */
+  object Scope {
+    
+    @JSImport("@sentry/node", "Scope")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def clone(scope: typings.sentryHub.scopeMod.Scope): typings.sentryHub.scopeMod.Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(scope.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.scopeMod.Scope]
+  }
+  
+  @JSImport("@sentry/node", "Severity")
+  @js.native
+  object Severity extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.sentryTypes.severityMod.Severity & String] = js.native
+    
+    /* "debug" */ val Debug: typings.sentryTypes.severityMod.Severity.Debug & String = js.native
+    
+    /* "error" */ val Error: typings.sentryTypes.severityMod.Severity.Error & String = js.native
+    
+    /* "fatal" */ val Fatal: typings.sentryTypes.severityMod.Severity.Fatal & String = js.native
+    
+    /* "info" */ val Info: typings.sentryTypes.severityMod.Severity.Info & String = js.native
+    
+    /* "log" */ val Log: typings.sentryTypes.severityMod.Severity.Log & String = js.native
+    
+    /* "warning" */ val Warning: typings.sentryTypes.severityMod.Severity.Warning & String = js.native
+  }
+  
+  inline def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCallBreadcrumbHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("addBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallBreadcrumbHint]]
+  
+  inline def addGlobalEventProcessor(callback: EventProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalEventProcessor")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def addRequestDataToEvent(event: Event, req: CrossPlatformRequest): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def addRequestDataToEvent(event: Event, req: CrossPlatformRequest, options: OmitAddRequestDataToEvent): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
+  
+  inline def captureEvent(event: Event): ReturnType[FnCallEventHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallEventHint]]
+  inline def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallEventHint]]
+  
+  inline def captureException(exception: Any): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
+  inline def captureException(exception: Any, captureContext: CaptureContext): ReturnType[FnCall] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCall]]
+  
+  inline def captureMessage(message: String): ReturnType[FnCallMessageLevelHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
+  inline def captureMessage(message: String, captureContext: CaptureContext): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
+  inline def captureMessage(message: String, captureContext: Severity): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
+  inline def captureMessage(message: String, captureContext: SeverityLevel): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
+  
+  inline def close(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Promise[Boolean]]
+  inline def close(timeout: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  
+  inline def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.scopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("configureScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
+  
+  inline def createTransport(options: InternalBaseTransportOptions, makeRequest: TransportRequestExecutor): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any])).asInstanceOf[Transport]
+  inline def createTransport(
+    options: InternalBaseTransportOptions,
+    makeRequest: TransportRequestExecutor,
+    buffer: PromiseBuffer[Unit]
+  ): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Transport]
+  
+  inline def deepReadDirSync(targetDir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepReadDirSync")(targetDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  @JSImport("@sentry/node", "defaultIntegrations")
+  @js.native
+  val defaultIntegrations: js.Array[
+    Console | Http | OnUncaughtException | OnUnhandledRejection | ContextLines | LinkedErrors | Modules | Context | InboundFilters | FunctionToString
+  ] = js.native
+  
+  @JSImport("@sentry/node", "defaultStackParser")
+  @js.native
+  val defaultStackParser: StackParser = js.native
+  
+  inline def extractRequestData(req: CrossPlatformRequest): ExtractedNodeRequestData = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any]).asInstanceOf[ExtractedNodeRequestData]
+  inline def extractRequestData(req: CrossPlatformRequest, options: Include): ExtractedNodeRequestData = (^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtractedNodeRequestData]
+  
+  inline def flush(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[js.Promise[Boolean]]
+  inline def flush(timeout: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  
+  inline def getCurrentHub(): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentHub")().asInstanceOf[typings.sentryHub.hubMod.Hub]
+  
+  inline def getHubFromCarrier(carrier: Carrier): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubFromCarrier")(carrier.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.hubMod.Hub]
+  
+  inline def getSentryRelease(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSentryRelease")().asInstanceOf[js.UndefOr[String]]
+  inline def getSentryRelease(fallback: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSentryRelease")(fallback.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  inline def init(options: NodeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def lastEventId(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastEventId")().asInstanceOf[js.UndefOr[String]]
+  
+  inline def makeMain(hub: typings.sentryHub.hubMod.Hub): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMain")(hub.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.hubMod.Hub]
+  
+  inline def makeNodeTransport(options: NodeTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeNodeTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  
+  inline def setContext(name: String): ReturnType[FnCallNameContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(name.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallNameContext]]
+  inline def setContext(name: String, context: StringDictionary[Any]): ReturnType[FnCallNameContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallNameContext]]
+  
+  inline def setExtra(key: String, extra: Extra): ReturnType[js.Function2[/* key */ String, /* extra */ Extra, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtra")(key.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[ReturnType[js.Function2[/* key */ String, /* extra */ Extra, Unit]]]
+  
+  inline def setExtras(extras: Extras): ReturnType[js.Function1[/* extras */ Extras, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setExtras")(extras.asInstanceOf[js.Any]).asInstanceOf[ReturnType[js.Function1[/* extras */ Extras, Unit]]]
+  
+  inline def setTag(key: String, value: Primitive): ReturnType[js.Function2[/* key */ String, /* value */ Primitive, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ReturnType[js.Function2[/* key */ String, /* value */ Primitive, Unit]]]
+  
+  inline def setTags(tags: StringDictionary[Primitive]): ReturnType[js.Function1[/* tags */ StringDictionary[Primitive], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setTags")(tags.asInstanceOf[js.Any]).asInstanceOf[ReturnType[js.Function1[/* tags */ StringDictionary[Primitive], Unit]]]
+  
+  inline def setUser(): ReturnType[FnCallUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUser")().asInstanceOf[ReturnType[FnCallUser]]
+  inline def setUser(user: User): ReturnType[FnCallUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUser")(user.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallUser]]
+  
+  inline def startTransaction(context: TransactionContext): ReturnType[FnCallContextCustomSamplingContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallContextCustomSamplingContext]]
+  inline def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): ReturnType[FnCallContextCustomSamplingContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any], customSamplingContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallContextCustomSamplingContext]]
+  
+  inline def withScope(callback: js.Function1[/* scope */ typings.sentryHub.scopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("withScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
+}

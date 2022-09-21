@@ -4,24 +4,24 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SimpleBindingData
+trait SimpleBindingData[Scope]
   extends StObject
-     with BaseBindingData
-     with BindingData {
+     with BaseBindingData[Scope]
+     with _BindingData[Scope] {
   
-  var expressions: js.Array[ExpressionData]
+  var expressions: js.Array[ExpressionData[Scope]]
 }
 object SimpleBindingData {
   
-  inline def apply(expressions: js.Array[ExpressionData]): SimpleBindingData = {
+  inline def apply[Scope](expressions: js.Array[ExpressionData[Scope]]): SimpleBindingData[Scope] = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SimpleBindingData]
+    __obj.asInstanceOf[SimpleBindingData[Scope]]
   }
   
-  extension [Self <: SimpleBindingData](x: Self) {
+  extension [Self <: SimpleBindingData[?], Scope](x: Self & SimpleBindingData[Scope]) {
     
-    inline def setExpressions(value: js.Array[ExpressionData]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Array[ExpressionData[Scope]]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    inline def setExpressionsVarargs(value: ExpressionData*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: ExpressionData[Scope]*): Self = StObject.set(x, "expressions", js.Array(value*))
   }
 }

@@ -1,9 +1,8 @@
 package typings.clientSessions
 
 import org.scalablytyped.runtime.Shortcut
-import typings.cookies.mod.IOptions
-import typings.node.Buffer
-import typings.std.Error
+import typings.cookies.mod.SetOption
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,9 +34,34 @@ object mod extends Shortcut {
     }
   }
   
+  trait CookieOptions
+    extends StObject
+       with SetOption {
+    
+    /**
+      * a boolean indicating whether the cookie will expire when browser closes or not
+      * (false by default).
+      */
+    var ephemeral: js.UndefOr[Boolean] = js.undefined
+  }
+  object CookieOptions {
+    
+    inline def apply(): CookieOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CookieOptions]
+    }
+    
+    extension [Self <: CookieOptions](x: Self) {
+      
+      inline def setEphemeral(value: Boolean): Self = StObject.set(x, "ephemeral", value.asInstanceOf[js.Any])
+      
+      inline def setEphemeralUndefined: Self = StObject.set(x, "ephemeral", js.undefined)
+    }
+  }
+  
   trait DecodeResult extends StObject {
     
-    var content: js.Any
+    var content: Any
     
     var createdAt: Double
     
@@ -45,14 +69,14 @@ object mod extends Shortcut {
   }
   object DecodeResult {
     
-    inline def apply(content: js.Any, createdAt: Double, duration: Double): DecodeResult = {
+    inline def apply(content: Any, createdAt: Double, duration: Double): DecodeResult = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodeResult]
     }
     
     extension [Self <: DecodeResult](x: Self) {
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -60,9 +84,9 @@ object mod extends Shortcut {
     }
   }
   
-  type NextFunction = js.Function1[/* err */ js.UndefOr[Error], Unit]
+  type NextFunction = js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   
-  type RequestHandler = js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ NextFunction, js.Any]
+  type RequestHandler = js.Function3[/* req */ Any, /* res */ Any, /* next */ NextFunction, Any]
   
   trait SessionOptions extends StObject {
     
@@ -72,7 +96,7 @@ object mod extends Shortcut {
       */
     var activeDuration: js.UndefOr[Double] = js.undefined
     
-    var cookie: js.UndefOr[IOptions] = js.undefined
+    var cookie: js.UndefOr[CookieOptions] = js.undefined
     
     /**
       * session cookie name.
@@ -111,7 +135,7 @@ object mod extends Shortcut {
       
       inline def setActiveDurationUndefined: Self = StObject.set(x, "activeDuration", js.undefined)
       
-      inline def setCookie(value: IOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
       inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
@@ -142,14 +166,14 @@ object mod extends Shortcut {
   @js.native
   trait Util extends StObject {
     
-    def computeHmac(options: js.Any, iv: String, ciphertext: String, duration: Double, createdAt: Double): Buffer = js.native
+    def computeHmac(options: Any, iv: String, ciphertext: String, duration: Double, createdAt: Double): Buffer = js.native
     
     def decode(options: SessionOptions, encoded: String): DecodeResult = js.native
     
-    def encode(options: SessionOptions, content: js.Any): String = js.native
-    def encode(options: SessionOptions, content: js.Any, duration: Double): String = js.native
-    def encode(options: SessionOptions, content: js.Any, duration: Double, createdAt: Double): String = js.native
-    def encode(options: SessionOptions, content: js.Any, duration: Unit, createdAt: Double): String = js.native
+    def encode(options: SessionOptions, content: Any): String = js.native
+    def encode(options: SessionOptions, content: Any, duration: Double): String = js.native
+    def encode(options: SessionOptions, content: Any, duration: Double, createdAt: Double): String = js.native
+    def encode(options: SessionOptions, content: Any, duration: Unit, createdAt: Double): String = js.native
   }
   
   type _To = Sessions

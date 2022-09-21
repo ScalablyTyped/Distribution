@@ -273,7 +273,7 @@ object XConnection {
     nativeSQL: String => String,
     prepareCall: String => XPreparedStatement,
     prepareStatement: String => XPreparedStatement,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     rollback: () => Unit,
     setAutoCommit: Boolean => Unit,

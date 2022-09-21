@@ -17,12 +17,12 @@ trait CreateRoutingProfileRequest extends StObject {
   var Description: RoutingProfileDescription
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
-    * The channels agents can handle in the Contact Control Panel (CCP) for this routing profile.
+    * The channels that agents can handle in the Contact Control Panel (CCP) for this routing profile.
     */
   var MediaConcurrencies: typings.awsSdk.connectMod.MediaConcurrencies
   
@@ -32,12 +32,12 @@ trait CreateRoutingProfileRequest extends StObject {
   var Name: RoutingProfileName
   
   /**
-    * The inbound queues associated with the routing profile. If no queue is added, the agent can only make outbound calls.
+    * The inbound queues associated with the routing profile. If no queue is added, the agent can make only outbound calls.
     */
   var QueueConfigs: js.UndefOr[RoutingProfileQueueConfigList] = js.undefined
   
   /**
-    * One or more tags.
+    * The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }
@@ -64,7 +64,7 @@ object CreateRoutingProfileRequest {
     
     inline def setMediaConcurrencies(value: MediaConcurrencies): Self = StObject.set(x, "MediaConcurrencies", value.asInstanceOf[js.Any])
     
-    inline def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value :_*))
+    inline def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value*))
     
     inline def setName(value: RoutingProfileName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object CreateRoutingProfileRequest {
     
     inline def setQueueConfigsUndefined: Self = StObject.set(x, "QueueConfigs", js.undefined)
     
-    inline def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = StObject.set(x, "QueueConfigs", js.Array(value :_*))
+    inline def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = StObject.set(x, "QueueConfigs", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "CancellationTokenSource")
 @js.native
-class CancellationTokenSource () extends StObject {
+open class CancellationTokenSource () extends StObject {
   
   /**
     * Signal cancellation on the token.

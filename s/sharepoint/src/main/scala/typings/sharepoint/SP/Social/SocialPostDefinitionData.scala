@@ -24,9 +24,9 @@ trait SocialPostDefinitionData
 object SocialPostDefinitionData {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_items: () => js.Array[SocialPostDefinitionDataItem],
     get_name: () => String,
     get_typeId: () => String,

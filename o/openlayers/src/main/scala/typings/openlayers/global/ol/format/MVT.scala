@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class MVT ()
+open class MVT ()
   extends typings.openlayers.mod.format.MVT {
   def this(opt_options: MVTOptions) = this()
 }

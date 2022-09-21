@@ -1,6 +1,5 @@
 package typings.hapiJoi.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,16 +84,16 @@ trait ObjectSchema[TSchema]
     */
   def oxor(peers: (String | HierarchySeparatorOptions)*): this.type = js.native
   
-  def pattern(pattern: SchemaLike, schema: SchemaLike): this.type = js.native
-  def pattern(pattern: SchemaLike, schema: SchemaLike, options: ObjectPatternOptions): this.type = js.native
   /**
     * Specify validation rules for unknown keys matching a pattern.
     *
     * @param pattern - a pattern that can be either a regular expression or a joi schema that will be tested against the unknown key names
     * @param schema - the schema object matching keys must validate against
     */
-  def pattern(pattern: RegExp, schema: SchemaLike): this.type = js.native
-  def pattern(pattern: RegExp, schema: SchemaLike, options: ObjectPatternOptions): this.type = js.native
+  def pattern(pattern: js.RegExp, schema: SchemaLike): this.type = js.native
+  def pattern(pattern: js.RegExp, schema: SchemaLike, options: ObjectPatternOptions): this.type = js.native
+  def pattern(pattern: SchemaLike, schema: SchemaLike): this.type = js.native
+  def pattern(pattern: SchemaLike, schema: SchemaLike, options: ObjectPatternOptions): this.type = js.native
   
   /**
     * Requires the object to be a Joi reference.
@@ -111,8 +110,8 @@ trait ObjectSchema[TSchema]
     */
   def rename(from: String, to: String): this.type = js.native
   def rename(from: String, to: String, options: RenameOptions): this.type = js.native
-  def rename(from: RegExp, to: String): this.type = js.native
-  def rename(from: RegExp, to: String, options: RenameOptions): this.type = js.native
+  def rename(from: js.RegExp, to: String): this.type = js.native
+  def rename(from: js.RegExp, to: String, options: RenameOptions): this.type = js.native
   
   /**
     * Requires the object to be a Joi schema instance.

@@ -10,7 +10,7 @@ trait StockChartNavigator extends StObject {
   
   var categoryAxis: js.UndefOr[StockChartNavigatorCategoryAxis] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   var dateField: js.UndefOr[String] = js.undefined
   
@@ -41,7 +41,7 @@ object StockChartNavigator {
     
     inline def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -65,7 +65,7 @@ object StockChartNavigator {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: StockChartNavigatorSeriesItem*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: StockChartNavigatorSeriesItem*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

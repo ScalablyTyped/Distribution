@@ -74,7 +74,7 @@ object Text {
   /** A segmenter class that is able to segment provided text into units appropriate for selecting text by words. */
   @JSGlobal("Windows.Data.Text.SelectableWordsSegmenter")
   @js.native
-  class SelectableWordsSegmenter protected ()
+  open class SelectableWordsSegmenter protected ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.SelectableWordsSegmenter {
     /**
@@ -117,7 +117,7 @@ object Text {
   /** Permits apps to perform text queries using Advanced Query Syntax (AQS) strings, with the option of providing a language tag to be employed in the query. */
   @JSGlobal("Windows.Data.Text.SemanticTextQuery")
   @js.native
-  class SemanticTextQuery protected ()
+  open class SemanticTextQuery protected ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.SemanticTextQuery {
     /**
@@ -153,7 +153,7 @@ object Text {
   /** Converts input phonetic characters into a collection of corresponding ideographic characters (Chinese characters). */
   @JSGlobal("Windows.Data.Text.TextConversionGenerator")
   @js.native
-  class TextConversionGenerator protected ()
+  open class TextConversionGenerator protected ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.TextConversionGenerator {
     /**
@@ -166,7 +166,7 @@ object Text {
   /** Predicts Japanese words based on a phonetic characters prefix. */
   @JSGlobal("Windows.Data.Text.TextPredictionGenerator")
   @js.native
-  class TextPredictionGenerator protected ()
+  open class TextPredictionGenerator protected ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.TextPredictionGenerator {
     /**
@@ -179,7 +179,7 @@ object Text {
   /** Reverse-converts a Japanese string which is mix of phonetic and ideographic characters, to a string of phonetic characters. */
   @JSGlobal("Windows.Data.Text.TextReverseConversionGenerator")
   @js.native
-  class TextReverseConversionGenerator protected ()
+  open class TextReverseConversionGenerator protected ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.TextReverseConversionGenerator {
     /**
@@ -463,7 +463,7 @@ object Text {
   /** A segmenter class that is able to segment provided text into words. */
   @JSGlobal("Windows.Data.Text.WordsSegmenter")
   @js.native
-  class WordsSegmenter protected ()
+  open class WordsSegmenter protected ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.WordsSegmenter {
     /**

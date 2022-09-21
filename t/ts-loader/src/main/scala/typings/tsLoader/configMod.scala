@@ -6,6 +6,7 @@ import typings.tsLoader.interfacesMod.LoaderOptions
 import typings.tsLoader.loggerMod.Logger
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.ParsedCommandLine
+import typings.webpack.mod.LoaderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ object configMod {
   inline def getConfigFile(
     compiler: Typeoftypescript,
     colors: Chalk,
-    loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.loader.LoaderContext */ js.Any,
+    loader: LoaderContext[LoaderOptions],
     loaderOptions: LoaderOptions,
     compilerCompatible: Boolean,
     log: Logger,
@@ -31,21 +32,21 @@ object configMod {
     configFile: ConfigFile,
     basePath: String,
     configFilePath: String,
-    enableProjectReferences: Boolean
-  ): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigParseResult")(compiler.asInstanceOf[js.Any], configFile.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], configFilePath.asInstanceOf[js.Any], enableProjectReferences.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
+    loaderOptions: LoaderOptions
+  ): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigParseResult")(compiler.asInstanceOf[js.Any], configFile.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], configFilePath.asInstanceOf[js.Any], loaderOptions.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
   inline def getConfigParseResult(
     compiler: Typeoftypescript,
     configFile: ConfigFile,
     basePath: String,
     configFilePath: Unit,
-    enableProjectReferences: Boolean
-  ): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigParseResult")(compiler.asInstanceOf[js.Any], configFile.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], configFilePath.asInstanceOf[js.Any], enableProjectReferences.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
+    loaderOptions: LoaderOptions
+  ): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigParseResult")(compiler.asInstanceOf[js.Any], configFile.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], configFilePath.asInstanceOf[js.Any], loaderOptions.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
   
   inline def getParsedCommandLine(compiler: Typeoftypescript, loaderOptions: LoaderOptions, configFilePath: String): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLine")(compiler.asInstanceOf[js.Any], loaderOptions.asInstanceOf[js.Any], configFilePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
   
   trait ConfigFile extends StObject {
     
-    var config: js.UndefOr[js.Any] = js.undefined
+    var config: js.UndefOr[Any] = js.undefined
     
     var error: js.UndefOr[Diagnostic] = js.undefined
   }
@@ -58,7 +59,7 @@ object configMod {
     
     extension [Self <: ConfigFile](x: Self) {
       
-      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       

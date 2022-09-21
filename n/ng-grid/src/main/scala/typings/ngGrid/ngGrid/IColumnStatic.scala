@@ -14,7 +14,7 @@ trait IColumnStatic
       /* $scope */ IGridScope, 
       /* grid */ IGridInstance, 
       /* domUtilityService */ IDomUtilityService, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITemplateCacheService */ /* $templateCache */ js.Any, 
-      /* $utils */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITemplateCacheService */ /* $templateCache */ Any, 
+      /* $utils */ Any, 
       IColumn
     ]

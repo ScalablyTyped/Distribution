@@ -2,8 +2,6 @@ package typings.cytoscape.mod
 
 import typings.cytoscape.anon.Degree
 import typings.cytoscape.anon.MaxDegree
-import typings.cytoscape.cytoscapeBooleans.`false`
-import typings.cytoscape.cytoscapeNumbers.`10`
 import typings.cytoscape.cytoscapeStrings.concentric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def concentric(node: Degree): Double
   
   // whether levels have an equal radial distance betwen them, may cause bounding box overflow
-  var equidistant: `false`
+  var equidistant: Boolean
   
   // min spacing between outside of nodes (used for radius adjustment)
   // height of layout area (overrides container height)
@@ -33,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   // the variation of concentric values in each level
   def levelWidth(node: MaxDegree): Double
   
-  var minNodeSpacing: `10`
+  var minNodeSpacing: Double
   
   @JSName("name")
   var name_ConcentricLayoutOptions: concentric
@@ -55,15 +53,17 @@ object ConcentricLayoutOptions {
   
   inline def apply(
     concentric: Degree => Double,
+    equidistant: Boolean,
     fit: Boolean,
     height: Unit,
     levelWidth: MaxDegree => Double,
+    minNodeSpacing: Double,
     nodeDimensionsIncludeLabels: Boolean,
     spacingFactor: Unit,
     startAngle: Double,
     width: Unit
   ): ConcentricLayoutOptions = {
-    val __obj = js.Dynamic.literal(concentric = js.Any.fromFunction1(concentric), equidistant = false, fit = fit.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], levelWidth = js.Any.fromFunction1(levelWidth), minNodeSpacing = 10, name = "concentric", nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], spacingFactor = spacingFactor.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(concentric = js.Any.fromFunction1(concentric), equidistant = equidistant.asInstanceOf[js.Any], fit = fit.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], levelWidth = js.Any.fromFunction1(levelWidth), minNodeSpacing = minNodeSpacing.asInstanceOf[js.Any], name = "concentric", nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], spacingFactor = spacingFactor.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConcentricLayoutOptions]
   }
   
@@ -75,13 +75,13 @@ object ConcentricLayoutOptions {
     
     inline def setConcentric(value: Degree => Double): Self = StObject.set(x, "concentric", js.Any.fromFunction1(value))
     
-    inline def setEquidistant(value: `false`): Self = StObject.set(x, "equidistant", value.asInstanceOf[js.Any])
+    inline def setEquidistant(value: Boolean): Self = StObject.set(x, "equidistant", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Unit): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setLevelWidth(value: MaxDegree => Double): Self = StObject.set(x, "levelWidth", js.Any.fromFunction1(value))
     
-    inline def setMinNodeSpacing(value: `10`): Self = StObject.set(x, "minNodeSpacing", value.asInstanceOf[js.Any])
+    inline def setMinNodeSpacing(value: Double): Self = StObject.set(x, "minNodeSpacing", value.asInstanceOf[js.Any])
     
     inline def setName(value: concentric): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

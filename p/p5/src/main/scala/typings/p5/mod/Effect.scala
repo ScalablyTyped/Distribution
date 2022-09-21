@@ -25,7 +25,7 @@ trait Effect extends StObject {
   def amp(vol: Unit, rampTime: Unit, tFromNow: Double): Unit = js.native
   
   /**
-    *   Link effects together in a chainExample usage:
+    *   Link effects together in a chain Example usage:
     *   filter.chain(reverb, delay, panner); May be used
     *   with an open-ended number of arguments
     *   @param [arguments] Chain together multiple sound

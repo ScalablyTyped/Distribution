@@ -1,5 +1,6 @@
 package typings.antd
 
+import typings.antd.anon.Call
 import typings.antd.anon.Configurable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +12,7 @@ object throttleByAnimationFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def throttleByAnimationFrame(fn: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleByAnimationFrame")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def throttleByAnimationFrame[T /* <: js.Array[Any] */](fn: js.Function1[/* args */ T, Unit]): Call[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleByAnimationFrame")(fn.asInstanceOf[js.Any]).asInstanceOf[Call[T]]
   
-  inline def throttleByAnimationFrameDecorator(): js.Function3[/* target */ js.Any, /* key */ String, /* descriptor */ js.Any, Configurable] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleByAnimationFrameDecorator")().asInstanceOf[js.Function3[/* target */ js.Any, /* key */ String, /* descriptor */ js.Any, Configurable]]
+  inline def throttleByAnimationFrameDecorator(): js.Function3[/* target */ Any, /* key */ String, /* descriptor */ Any, Configurable] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleByAnimationFrameDecorator")().asInstanceOf[js.Function3[/* target */ Any, /* key */ String, /* descriptor */ Any, Configurable]]
 }

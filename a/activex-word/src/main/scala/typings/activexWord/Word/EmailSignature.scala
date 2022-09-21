@@ -14,7 +14,7 @@ trait EmailSignature extends StObject {
   
   var NewMessageSignature: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ReplyMessageSignature: String
   
@@ -28,7 +28,7 @@ object EmailSignature {
     Creator: Double,
     EmailSignatureEntries: EmailSignatureEntries,
     NewMessageSignature: String,
-    Parent: js.Any,
+    Parent: Any,
     ReplyMessageSignature: String,
     WordDotEmailSignature_typekey: EmailSignature
   ): EmailSignature = {
@@ -47,7 +47,7 @@ object EmailSignature {
     
     inline def setNewMessageSignature(value: String): Self = StObject.set(x, "NewMessageSignature", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReplyMessageSignature(value: String): Self = StObject.set(x, "ReplyMessageSignature", value.asInstanceOf[js.Any])
     

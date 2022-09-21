@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("webprogbase-console-view", "ConsoleBrowser")
   @js.native
-  class ConsoleBrowser () extends StObject {
+  open class ConsoleBrowser () extends StObject {
     
     def open(serverPort: Double): Unit = js.native
     
@@ -18,28 +18,28 @@ object mod {
   
   @JSImport("webprogbase-console-view", "InputForm")
   @js.native
-  class InputForm protected () extends StObject {
+  open class InputForm protected () extends StObject {
     def this(nextState: String, fieldsObject: FormFields) = this()
     
     // if  private members aren't defined, typescript allows assigning anything to InputForm
-    /* private */ var members: js.Any = js.native
+    /* private */ var members: Any = js.native
   }
   
   @JSImport("webprogbase-console-view", "Request")
   @js.native
-  /* private */ class Request () extends StObject {
+  /* private */ open class Request () extends StObject {
     
-    var data: BasicObject[js.Any] | Null = js.native
+    var data: BasicObject[Any] | Null = js.native
     
     var state: String = js.native
   }
   
   @JSImport("webprogbase-console-view", "Response")
   @js.native
-  /* private */ class Response () extends StObject {
+  /* private */ open class Response () extends StObject {
     
     def redirect(toState: String): Unit = js.native
-    def redirect(toState: String, data: BasicObject[js.Any]): Unit = js.native
+    def redirect(toState: String, data: BasicObject[Any]): Unit = js.native
     
     def send(text: String): Unit = js.native
     def send(text: String, statesOrForm: InputForm): Unit = js.native
@@ -48,7 +48,7 @@ object mod {
   
   @JSImport("webprogbase-console-view", "ServerApp")
   @js.native
-  class ServerApp () extends StObject {
+  open class ServerApp () extends StObject {
     
     /**
       * Start listening for new clients' connections
@@ -101,20 +101,20 @@ object mod {
   
   trait StateLinkDescriptor extends StObject {
     
-    var data: BasicObject[js.Any]
+    var data: BasicObject[Any]
     
     var description: String
   }
   object StateLinkDescriptor {
     
-    inline def apply(data: BasicObject[js.Any], description: String): StateLinkDescriptor = {
+    inline def apply(data: BasicObject[Any], description: String): StateLinkDescriptor = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateLinkDescriptor]
     }
     
     extension [Self <: StateLinkDescriptor](x: Self) {
       
-      inline def setData(value: BasicObject[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: BasicObject[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }

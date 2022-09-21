@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DAVAdapterObject")
 @js.native
-/* private */ class DAVAdapterObject ()
+/* private */ open class DAVAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.DAVAdapterObject {
   

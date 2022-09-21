@@ -10,10 +10,10 @@ object redeemMod {
   
   @JSImport("material-ui/svg-icons/action/redeem", JSImport.Default)
   @js.native
-  class default () extends ActionRedeem
+  open class default () extends ActionRedeem
   
   @JSImport("material-ui/svg-icons/action/redeem", "ActionRedeem")
   @js.native
-  class ActionRedeem ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionRedeem ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

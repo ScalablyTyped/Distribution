@@ -12,7 +12,7 @@ trait UntagResourceRequest extends StObject {
   var ResourceId: typings.awsSdk.efsMod.ResourceId
   
   /**
-    * The keys of the key:value tag pairs that you want to remove from the specified EFS resource.
+    * The keys of the key-value tag pairs that you want to remove from the specified EFS resource.
     */
   var TagKeys: typings.awsSdk.efsMod.TagKeys
 }
@@ -29,6 +29,6 @@ object UntagResourceRequest {
     
     inline def setTagKeys(value: TagKeys): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

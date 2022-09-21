@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BuildingLevelConstructor
   extends StObject
-     with Instantiable0[BuildingLevel]
+     with /**
+  * Provides information for the building level filter, such as the value selected by the user or the minimum and maximum allowed values.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html)
+  */
+Instantiable0[BuildingLevel]
      with Instantiable1[/* properties */ BuildingLevelProperties, BuildingLevel]

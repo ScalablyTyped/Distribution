@@ -9,11 +9,13 @@ trait IBodyEvent
      with IEvent {
   
   var body: Body
+  
+  var target: Body
 }
 object IBodyEvent {
   
-  inline def apply(body: Body, `type`: String): IBodyEvent = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+  inline def apply(body: Body, target: Body, `type`: String): IBodyEvent = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyEvent]
   }
@@ -21,5 +23,7 @@ object IBodyEvent {
   extension [Self <: IBodyEvent](x: Self) {
     
     inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setTarget(value: Body): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

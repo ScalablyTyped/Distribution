@@ -20,7 +20,7 @@ trait nlobjSubList
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * add a button to this sublist.
@@ -60,7 +60,7 @@ Instantiable0[js.Any] {
     * @param source
     * @return
     */
-  def addField(name: String, `type`: String, label: String, source: js.Any): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: String, source: Any): js.Function0[Unit] = js.native
   
   /**
     * add "Mark All" and "Unmark All" buttons to this sublist of type "list".
@@ -144,7 +144,7 @@ Instantiable0[js.Any] {
     * @param value
     * @return
     */
-  def setLineItemMatrixValue(field: String, line: js.Any, column: js.Any, value: String): js.Any = js.native
+  def setLineItemMatrixValue(field: String, line: Any, column: Any, value: String): Any = js.native
   
   /**
     * set the value of a cell in this sublist.
@@ -161,7 +161,7 @@ Instantiable0[js.Any] {
     * @param line
     * @param value
     */
-  def setLineItemValue(field: String, line: js.Any, value: String): Unit = js.native
+  def setLineItemValue(field: String, line: Any, value: String): Unit = js.native
   
   /**
     * set values for multiple lines (Array of nlobjSearchResults or name-value pair Arrays) in this sublist.
@@ -171,7 +171,7 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @param values
     */
-  def setLineItemValues(values: js.Any): Unit = js.native
+  def setLineItemValues(values: Any): Unit = js.native
   
   /**
     * designate a field on sublist that must be unique across all lines (only supported on sublists of type inlineeditor, editor).

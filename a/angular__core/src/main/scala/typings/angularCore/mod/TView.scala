@@ -26,7 +26,7 @@ trait TView extends StObject {
     * This is a blueprint used to generate LView instances for this TView. Copying this
     * blueprint is faster than creating a new LView from scratch.
     */
-  var blueprint: ɵangularPackagesCoreCoreBv
+  var blueprint: LView[Any]
   
   /**
     * When a view is destroyed, listeners need to be released and outputs need to be
@@ -54,7 +54,7 @@ trait TView extends StObject {
     * 2nd index is: index of function context in LView.cleanupInstances[]
     *               `tView.cleanup[i+0].call(lView[CLEANUP][tView.cleanup[i+1]])`
     */
-  var cleanup: js.Array[js.Any] | Null
+  var cleanup: js.Array[Any] | Null
   
   /**
     * A list of element indices for child components that will need to be
@@ -264,7 +264,7 @@ object TView {
   
   inline def apply(
     bindingStartIndex: Double,
-    blueprint: ɵangularPackagesCoreCoreBv,
+    blueprint: LView[Any],
     data: TData,
     expandoStartIndex: Double,
     firstCreatePass: Boolean,
@@ -283,49 +283,49 @@ object TView {
     
     inline def setBindingStartIndex(value: Double): Self = StObject.set(x, "bindingStartIndex", value.asInstanceOf[js.Any])
     
-    inline def setBlueprint(value: ɵangularPackagesCoreCoreBv): Self = StObject.set(x, "blueprint", value.asInstanceOf[js.Any])
+    inline def setBlueprint(value: LView[Any]): Self = StObject.set(x, "blueprint", value.asInstanceOf[js.Any])
     
-    inline def setCleanup(value: js.Array[js.Any]): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
+    inline def setCleanup(value: js.Array[Any]): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
     
     inline def setCleanupNull: Self = StObject.set(x, "cleanup", null)
     
-    inline def setCleanupVarargs(value: js.Any*): Self = StObject.set(x, "cleanup", js.Array(value :_*))
+    inline def setCleanupVarargs(value: Any*): Self = StObject.set(x, "cleanup", js.Array(value*))
     
     inline def setComponents(value: js.Array[Double]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     inline def setComponentsNull: Self = StObject.set(x, "components", null)
     
-    inline def setComponentsVarargs(value: Double*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: Double*): Self = StObject.set(x, "components", js.Array(value*))
     
     inline def setConsts(value: TConstants): Self = StObject.set(x, "consts", value.asInstanceOf[js.Any])
     
     inline def setConstsNull: Self = StObject.set(x, "consts", null)
     
-    inline def setConstsVarargs(value: (TAttributes | String)*): Self = StObject.set(x, "consts", js.Array(value :_*))
+    inline def setConstsVarargs(value: (TAttributes | String)*): Self = StObject.set(x, "consts", js.Array(value*))
     
     inline def setContentCheckHooks(value: HookData): Self = StObject.set(x, "contentCheckHooks", value.asInstanceOf[js.Any])
     
     inline def setContentCheckHooksNull: Self = StObject.set(x, "contentCheckHooks", null)
     
-    inline def setContentCheckHooksVarargs(value: HookEntry*): Self = StObject.set(x, "contentCheckHooks", js.Array(value :_*))
+    inline def setContentCheckHooksVarargs(value: HookEntry*): Self = StObject.set(x, "contentCheckHooks", js.Array(value*))
     
     inline def setContentHooks(value: HookData): Self = StObject.set(x, "contentHooks", value.asInstanceOf[js.Any])
     
     inline def setContentHooksNull: Self = StObject.set(x, "contentHooks", null)
     
-    inline def setContentHooksVarargs(value: HookEntry*): Self = StObject.set(x, "contentHooks", js.Array(value :_*))
+    inline def setContentHooksVarargs(value: HookEntry*): Self = StObject.set(x, "contentHooks", js.Array(value*))
     
     inline def setContentQueries(value: js.Array[Double]): Self = StObject.set(x, "contentQueries", value.asInstanceOf[js.Any])
     
     inline def setContentQueriesNull: Self = StObject.set(x, "contentQueries", null)
     
-    inline def setContentQueriesVarargs(value: Double*): Self = StObject.set(x, "contentQueries", js.Array(value :_*))
+    inline def setContentQueriesVarargs(value: Double*): Self = StObject.set(x, "contentQueries", js.Array(value*))
     
     inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataVarargs(
-      value: (TNode | ɵPipeDef[js.Any] | ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any] | Double | TStylingRange | TStylingKey | Type[js.Any] | InjectionToken[js.Any] | TI18n | I18nUpdateOpCodes | TIcu | Null | String)*
-    ): Self = StObject.set(x, "data", js.Array(value :_*))
+      value: (TNode | ɵPipeDef[Any] | ɵDirectiveDef[Any] | ɵComponentDef[Any] | Double | TStylingRange | TStylingKey | ProviderToken[Any] | TI18n | I18nUpdateOpCodes | TIcu | Null | String)*
+    ): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDeclTNode(value: TNode): Self = StObject.set(x, "declTNode", value.asInstanceOf[js.Any])
     
@@ -335,13 +335,13 @@ object TView {
     
     inline def setDestroyHooksNull: Self = StObject.set(x, "destroyHooks", null)
     
-    inline def setDestroyHooksVarargs(value: (HookEntry | HookData)*): Self = StObject.set(x, "destroyHooks", js.Array(value :_*))
+    inline def setDestroyHooksVarargs(value: (HookEntry | HookData)*): Self = StObject.set(x, "destroyHooks", js.Array(value*))
     
     inline def setDirectiveRegistry(value: DirectiveDefList): Self = StObject.set(x, "directiveRegistry", value.asInstanceOf[js.Any])
     
     inline def setDirectiveRegistryNull: Self = StObject.set(x, "directiveRegistry", null)
     
-    inline def setDirectiveRegistryVarargs(value: (ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any])*): Self = StObject.set(x, "directiveRegistry", js.Array(value :_*))
+    inline def setDirectiveRegistryVarargs(value: (ɵDirectiveDef[Any] | ɵComponentDef[Any])*): Self = StObject.set(x, "directiveRegistry", js.Array(value*))
     
     inline def setExpandoStartIndex(value: Double): Self = StObject.set(x, "expandoStartIndex", value.asInstanceOf[js.Any])
     
@@ -363,19 +363,19 @@ object TView {
     
     inline def setPipeRegistryNull: Self = StObject.set(x, "pipeRegistry", null)
     
-    inline def setPipeRegistryVarargs(value: ɵPipeDef[js.Any]*): Self = StObject.set(x, "pipeRegistry", js.Array(value :_*))
+    inline def setPipeRegistryVarargs(value: ɵPipeDef[Any]*): Self = StObject.set(x, "pipeRegistry", js.Array(value*))
     
     inline def setPreOrderCheckHooks(value: HookData): Self = StObject.set(x, "preOrderCheckHooks", value.asInstanceOf[js.Any])
     
     inline def setPreOrderCheckHooksNull: Self = StObject.set(x, "preOrderCheckHooks", null)
     
-    inline def setPreOrderCheckHooksVarargs(value: HookEntry*): Self = StObject.set(x, "preOrderCheckHooks", js.Array(value :_*))
+    inline def setPreOrderCheckHooksVarargs(value: HookEntry*): Self = StObject.set(x, "preOrderCheckHooks", js.Array(value*))
     
     inline def setPreOrderHooks(value: HookData): Self = StObject.set(x, "preOrderHooks", value.asInstanceOf[js.Any])
     
     inline def setPreOrderHooksNull: Self = StObject.set(x, "preOrderHooks", null)
     
-    inline def setPreOrderHooksVarargs(value: HookEntry*): Self = StObject.set(x, "preOrderHooks", js.Array(value :_*))
+    inline def setPreOrderHooksVarargs(value: HookEntry*): Self = StObject.set(x, "preOrderHooks", js.Array(value*))
     
     inline def setQueries(value: TQueries): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
@@ -385,7 +385,7 @@ object TView {
     
     inline def setSchemasNull: Self = StObject.set(x, "schemas", null)
     
-    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value*))
     
     inline def setStaticContentQueries(value: Boolean): Self = StObject.set(x, "staticContentQueries", value.asInstanceOf[js.Any])
     
@@ -401,13 +401,13 @@ object TView {
     
     inline def setViewCheckHooksNull: Self = StObject.set(x, "viewCheckHooks", null)
     
-    inline def setViewCheckHooksVarargs(value: HookEntry*): Self = StObject.set(x, "viewCheckHooks", js.Array(value :_*))
+    inline def setViewCheckHooksVarargs(value: HookEntry*): Self = StObject.set(x, "viewCheckHooks", js.Array(value*))
     
     inline def setViewHooks(value: HookData): Self = StObject.set(x, "viewHooks", value.asInstanceOf[js.Any])
     
     inline def setViewHooksNull: Self = StObject.set(x, "viewHooks", null)
     
-    inline def setViewHooksVarargs(value: HookEntry*): Self = StObject.set(x, "viewHooks", js.Array(value :_*))
+    inline def setViewHooksVarargs(value: HookEntry*): Self = StObject.set(x, "viewHooks", js.Array(value*))
     
     inline def setViewQuery(value: (/* rf */ ɵRenderFlags, js.Object) => Unit): Self = StObject.set(x, "viewQuery", js.Any.fromFunction2(value))
     

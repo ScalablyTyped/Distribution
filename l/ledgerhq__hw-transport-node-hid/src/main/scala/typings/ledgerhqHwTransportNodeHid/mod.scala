@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@ledgerhq/hw-transport-node-hid", JSImport.Default)
   @js.native
-  class default protected () extends TransportNodeHid {
+  open class default protected () extends TransportNodeHid {
     def this(device: HID) = this()
     def this(device: HID, ledgerTransport: Boolean) = this()
     def this(device: HID, ledgerTransport: Boolean, timeout: Double) = this()
@@ -31,7 +31,7 @@ object mod {
     
     var device: HID = js.native
     
-    var exchangeStack: js.Array[js.Any] = js.native
+    var exchangeStack: js.Array[Any] = js.native
     
     var ledgerTransport: Boolean = js.native
     

@@ -8,5 +8,5 @@ object alreadyExistsExceptionMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/AlreadyExistsException", "AlreadyExistsException")
   @js.native
-  val AlreadyExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AlreadyExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -48,7 +48,7 @@ trait ClearBladeInt extends StObject {
   
   def edgeId(): String = js.native
   
-  def execute(error: js.Object, response: js.Object, callback: CbCallback): js.Any = js.native
+  def execute(error: js.Object, response: js.Object, callback: CbCallback): Any = js.native
   
   def getAllCollections(callback: CbCallback): Unit = js.native
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompletionResult extends StObject {
   
-  /** The URI of the company image for CompletionType.COMPANY_NAME. */
+  /** The URI of the company image for COMPANY_NAME. */
   var imageUri: js.UndefOr[String] = js.undefined
   
   /** The suggestion for the query. */

@@ -96,7 +96,7 @@ object mod {
     * or `undefined` if `whatBump` does not return a valid `level` property, or
     * the `level` property is not set by `whatBump`.
     */
-  type Callback = js.Function2[/* error */ js.Any, /* recommendation */ Recommendation, Unit]
+  type Callback = js.Function2[/* error */ Any, /* recommendation */ Recommendation, Unit]
   
   /**
     * `options` is an object with the following properties:
@@ -117,7 +117,7 @@ object mod {
       * `conventional-changelog-preset-loader` if the `preset` options is set.
       */
     var config: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ Any
       ] = js.undefined
     
     /**
@@ -142,12 +142,24 @@ object mod {
     var lernaPackage: js.UndefOr[String] = js.undefined
     
     /**
+      * Specify the path to only calculate with git commits related to the path.
+      * If you want to calculate recommended bumps of packages in a Lerna-managed
+      * repository, path should be use along with lernaPackage for each of the package.
+      */
+    var path: js.UndefOr[String] = js.undefined
+    
+    /**
       * It's recommended to use a preset so you don't have to define everything
       * yourself.
       *
       * The value is passed to [`conventional-changelog-preset-loader`](https://www.npmjs.com/package/conventional-changelog-preset-loader).
       */
     var preset: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If given, unstable tags (e.g. `x.x.x-alpha.1`, `x.x.x-rc.2`) will be skipped.
+      */
+    var skipUnstable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify a prefix for the git tag that will be taken into account during the
@@ -185,7 +197,7 @@ object mod {
     extension [Self <: Options](x: Self) {
       
       inline def setConfig(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ Any
       ): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
@@ -198,9 +210,17 @@ object mod {
       
       inline def setLernaPackageUndefined: Self = StObject.set(x, "lernaPackage", js.undefined)
       
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
       inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
       inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      
+      inline def setSkipUnstable(value: Boolean): Self = StObject.set(x, "skipUnstable", value.asInstanceOf[js.Any])
+      
+      inline def setSkipUnstableUndefined: Self = StObject.set(x, "skipUnstable", js.undefined)
       
       inline def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
       

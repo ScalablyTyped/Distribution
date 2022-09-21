@@ -22,6 +22,8 @@ trait CompoundExpressionNode
     */
   var identifiers: js.UndefOr[js.Array[String]] = js.undefined
   
+  var isHandlerKey: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("type")
   var type_CompoundExpressionNode: `8`
 }
@@ -48,13 +50,17 @@ object CompoundExpressionNode {
     
     inline def setChildrenVarargs(
       value: (SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol)*
-    ): Self = StObject.set(x, "children", js.Array(value :_*))
+    ): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setIdentifiers(value: js.Array[String]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     
     inline def setIdentifiersUndefined: Self = StObject.set(x, "identifiers", js.undefined)
     
-    inline def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
+    inline def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value*))
+    
+    inline def setIsHandlerKey(value: Boolean): Self = StObject.set(x, "isHandlerKey", value.asInstanceOf[js.Any])
+    
+    inline def setIsHandlerKeyUndefined: Self = StObject.set(x, "isHandlerKey", js.undefined)
     
     inline def setType(value: `8`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

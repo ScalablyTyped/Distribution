@@ -18,7 +18,7 @@ trait Schema
   
   var discriminator: js.UndefOr[String] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.undefined
+  var example: js.UndefOr[Any] = js.undefined
   
   var externalDocs: js.UndefOr[ExternalDocs] = js.undefined
   
@@ -51,13 +51,13 @@ object Schema {
     
     inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
     
-    inline def setAllOfVarargs(value: Schema*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+    inline def setAllOfVarargs(value: Schema*): Self = StObject.set(x, "allOf", js.Array(value*))
     
     inline def setDiscriminator(value: String): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
     
     inline def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
     
-    inline def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    inline def setExample(value: Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     
@@ -77,7 +77,7 @@ object Schema {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
     
     inline def setXml(value: XML): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ object deleteVaultAccessPolicyOutputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/DeleteVaultAccessPolicyOutput", "DeleteVaultAccessPolicyOutput")
   @js.native
-  val DeleteVaultAccessPolicyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteVaultAccessPolicyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,10 +10,10 @@ Queues failed requests and uses the Background Sync API to replay them when the 
 | ------------------ | :-------------: |
 | Full name          | workbox-google-analytics |
 | Keywords           | workbox, workboxjs, service worker, sw, offline, google, analytics |
-| # releases         | 29 |
-| # dependents       | 7 |
-| # downloads        | 117971555 |
-| # stars            | 1 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7582996666666668E7 |
+| # stars            | 10909.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/workbox)

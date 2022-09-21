@@ -14,7 +14,7 @@ object plugin {
     /** [Method] Returns the value of bufferedCollection
       * @returns Object
       */
-    var getBufferedCollection: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getBufferedCollection: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of leadingBufferZone
       * @returns Number
@@ -35,7 +35,7 @@ object plugin {
     /** [Method] Returns the value of store
       * @returns Object
       */
-    var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getStore: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of trailingBufferZone
       * @returns Number
@@ -53,15 +53,13 @@ object plugin {
     /** [Method] Prefetches data into the store using its configured proxy
       * @param options Object config object, passed into the Ext.data.Operation object before loading. See load
       */
-    var prefetch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var prefetch: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Prefetches a page of data
       * @param page Number The page to prefetch
       * @param options Object config object, passed into the Ext.data.Operation object before loading. See load
       */
-    var prefetchPage: js.UndefOr[
-        js.Function2[/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var prefetchPage: js.UndefOr[js.Function2[/* page */ js.UndefOr[Double], /* options */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
     var purgePageCount: js.UndefOr[Double] = js.undefined
@@ -69,7 +67,7 @@ object plugin {
     /** [Method] Sets the value of bufferedCollection
       * @param bufferedCollection Object The new value.
       */
-    var setBufferedCollection: js.UndefOr[js.Function1[/* bufferedCollection */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setBufferedCollection: js.UndefOr[js.Function1[/* bufferedCollection */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of leadingBufferZone
       * @param leadingBufferZone Number The new value.
@@ -84,7 +82,7 @@ object plugin {
     /** [Method] Sets the value of store
       * @param store Object The new value.
       */
-    var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of trailingBufferZone
       * @param trailingBufferZone Number The new value.
@@ -108,7 +106,7 @@ object plugin {
     
     extension [Self <: IBuffered](x: Self) {
       
-      inline def setGetBufferedCollection(value: () => js.Any): Self = StObject.set(x, "getBufferedCollection", js.Any.fromFunction0(value))
+      inline def setGetBufferedCollection(value: () => Any): Self = StObject.set(x, "getBufferedCollection", js.Any.fromFunction0(value))
       
       inline def setGetBufferedCollectionUndefined: Self = StObject.set(x, "getBufferedCollection", js.undefined)
       
@@ -124,7 +122,7 @@ object plugin {
       
       inline def setGetPurgePageCountUndefined: Self = StObject.set(x, "getPurgePageCount", js.undefined)
       
-      inline def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+      inline def setGetStore(value: () => Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
       
       inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
       
@@ -140,9 +138,9 @@ object plugin {
       
       inline def setLeadingBufferZoneUndefined: Self = StObject.set(x, "leadingBufferZone", js.undefined)
       
-      inline def setPrefetch(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
+      inline def setPrefetch(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
       
-      inline def setPrefetchPage(value: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "prefetchPage", js.Any.fromFunction2(value))
+      inline def setPrefetchPage(value: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "prefetchPage", js.Any.fromFunction2(value))
       
       inline def setPrefetchPageUndefined: Self = StObject.set(x, "prefetchPage", js.undefined)
       
@@ -152,7 +150,7 @@ object plugin {
       
       inline def setPurgePageCountUndefined: Self = StObject.set(x, "purgePageCount", js.undefined)
       
-      inline def setSetBufferedCollection(value: /* bufferedCollection */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBufferedCollection", js.Any.fromFunction1(value))
+      inline def setSetBufferedCollection(value: /* bufferedCollection */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBufferedCollection", js.Any.fromFunction1(value))
       
       inline def setSetBufferedCollectionUndefined: Self = StObject.set(x, "setBufferedCollection", js.undefined)
       
@@ -164,7 +162,7 @@ object plugin {
       
       inline def setSetPurgePageCountUndefined: Self = StObject.set(x, "setPurgePageCount", js.undefined)
       
-      inline def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
+      inline def setSetStore(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
       
       inline def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
       

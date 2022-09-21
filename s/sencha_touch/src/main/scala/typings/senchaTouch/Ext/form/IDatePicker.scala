@@ -37,7 +37,7 @@ trait IDatePicker
   var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object/Ext.picker.Date) */
-  var picker: js.UndefOr[js.Any] = js.undefined
+  var picker: js.UndefOr[Any] = js.undefined
   
   /** [Method] Resets the Select field to the value of the first record in the store
     * @returns Ext.field.Select this
@@ -58,7 +58,7 @@ trait IDatePicker
   /** [Method] Sets the value of picker
     * @param picker Object/Ext.picker.Date The new value.
     */
-  var setPicker: js.UndefOr[js.Function1[/* picker */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setPicker: js.UndefOr[js.Function1[/* picker */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IDatePicker {
   
@@ -97,7 +97,7 @@ object IDatePicker {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setPicker(value: js.Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+    inline def setPicker(value: Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
     inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
     
@@ -113,7 +113,7 @@ object IDatePicker {
     
     inline def setSetDestroyPickerOnHideUndefined: Self = StObject.set(x, "setDestroyPickerOnHide", js.undefined)
     
-    inline def setSetPicker(value: /* picker */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPicker", js.Any.fromFunction1(value))
+    inline def setSetPicker(value: /* picker */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPicker", js.Any.fromFunction1(value))
     
     inline def setSetPickerUndefined: Self = StObject.set(x, "setPicker", js.undefined)
   }

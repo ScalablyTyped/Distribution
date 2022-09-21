@@ -4,16 +4,16 @@
 Typings are for version 1.0
 
 ## Library description:
-QR code component for Vue.js.
+QR code component for Vue 3.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @chenfengyuan/vue-qrcode |
-| Keywords           | qrcode, QR code, 2d bar code, vue-component, html, css, javascript, front-end, web |
-| # releases         | 3 |
-| # dependents       | 13 |
-| # downloads        | 525526 |
-| # stars            | 0 |
+| Keywords           | qrcode, qr-code, 2d-bar-code, vue, vue3, vue-component, front-end, web |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 91181.33333333333 |
+| # stars            | 876.0 |
 
 ## Links
 - [Homepage](https://fengyuanchen.github.io/vue-qrcode)

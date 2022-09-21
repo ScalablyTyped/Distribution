@@ -10,10 +10,10 @@ Simple full-text search in your browser.
 | ------------------ | :-------------: |
 | Full name          | lunr |
 | Keywords           | search |
-| # releases         | 7 |
-| # dependents       | 290 |
-| # downloads        | 21220891 |
-| # stars            | 21 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5029623.666666667 |
+| # stars            | 8114.0 |
 
 ## Links
 - [Homepage](https://lunrjs.com)

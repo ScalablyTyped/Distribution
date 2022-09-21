@@ -11,7 +11,7 @@ object binaryExtensionMod {
   
   @JSImport("cometd/BinaryExtension", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with BinaryExtension {
     

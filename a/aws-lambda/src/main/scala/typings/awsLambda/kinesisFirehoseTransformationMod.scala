@@ -1,5 +1,6 @@
 package typings.awsLambda
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
@@ -73,6 +74,8 @@ object kinesisFirehoseTransformationMod {
     var records: js.Array[FirehoseTransformationEventRecord]
     
     var region: String
+    
+    var sourceKinesisStreamArn: js.UndefOr[String] = js.undefined
   }
   object FirehoseTransformationEvent {
     
@@ -94,9 +97,13 @@ object kinesisFirehoseTransformationMod {
       
       inline def setRecords(value: js.Array[FirehoseTransformationEventRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: FirehoseTransformationEventRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: FirehoseTransformationEventRecord*): Self = StObject.set(x, "records", js.Array(value*))
       
       inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      
+      inline def setSourceKinesisStreamArn(value: String): Self = StObject.set(x, "sourceKinesisStreamArn", value.asInstanceOf[js.Any])
+      
+      inline def setSourceKinesisStreamArnUndefined: Self = StObject.set(x, "sourceKinesisStreamArn", js.undefined)
     }
   }
   
@@ -134,6 +141,23 @@ object kinesisFirehoseTransformationMod {
   
   type FirehoseTransformationHandler = Handler[FirehoseTransformationEvent, FirehoseTransformationResult]
   
+  trait FirehoseTransformationMetadata extends StObject {
+    
+    var partitionKeys: StringDictionary[String]
+  }
+  object FirehoseTransformationMetadata {
+    
+    inline def apply(partitionKeys: StringDictionary[String]): FirehoseTransformationMetadata = {
+      val __obj = js.Dynamic.literal(partitionKeys = partitionKeys.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FirehoseTransformationMetadata]
+    }
+    
+    extension [Self <: FirehoseTransformationMetadata](x: Self) {
+      
+      inline def setPartitionKeys(value: StringDictionary[String]): Self = StObject.set(x, "partitionKeys", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait FirehoseTransformationResult extends StObject {
     
     var records: js.Array[FirehoseTransformationResultRecord]
@@ -149,7 +173,7 @@ object kinesisFirehoseTransformationMod {
       
       inline def setRecords(value: js.Array[FirehoseTransformationResultRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: FirehoseTransformationResultRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: FirehoseTransformationResultRecord*): Self = StObject.set(x, "records", js.Array(value*))
     }
   }
   
@@ -157,6 +181,8 @@ object kinesisFirehoseTransformationMod {
     
     /** Encode in Base64 */
     var data: String
+    
+    var metadata: js.UndefOr[FirehoseTransformationMetadata] = js.undefined
     
     var recordId: String
     
@@ -172,6 +198,10 @@ object kinesisFirehoseTransformationMod {
     extension [Self <: FirehoseTransformationResultRecord](x: Self) {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setMetadata(value: FirehoseTransformationMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
       inline def setRecordId(value: String): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
       

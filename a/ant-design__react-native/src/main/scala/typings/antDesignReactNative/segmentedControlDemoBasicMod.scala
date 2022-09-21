@@ -9,14 +9,13 @@ object segmentedControlDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/segmented-control/demo/basic", JSImport.Default)
   @js.native
-  class default () extends BasicTagExample
+  open class default () extends BasicTagExample
   
   @js.native
-  trait BasicTagExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicTagExample extends Component[Any, Any, Any] {
     
-    def onChange(e: js.Any): Unit = js.native
+    def onChange(e: Any): Unit = js.native
     
-    def onValueChange(value: js.Any): Unit = js.native
+    def onValueChange(value: Any): Unit = js.native
   }
 }

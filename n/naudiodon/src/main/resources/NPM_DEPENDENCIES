@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "naudiodon" : "2.3.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "naudiodon" : "2.3.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

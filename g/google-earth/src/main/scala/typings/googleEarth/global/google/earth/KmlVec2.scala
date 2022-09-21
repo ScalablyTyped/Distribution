@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlVec2")
 @js.native
-class KmlVec2 ()
+open class KmlVec2 ()
   extends StObject
      with typings.googleEarth.google.earth.KmlVec2 {
   

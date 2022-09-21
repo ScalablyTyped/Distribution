@@ -10,10 +10,10 @@ Recursive object extending
 | ------------------ | :-------------: |
 | Full name          | deep-extend |
 | Keywords           | deep-extend, extend, deep, recursive, xtend, clone, merge, json |
-| # releases         | 0 |
-| # dependents       | 999 |
-| # downloads        | 535384470 |
-| # stars            | 17 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.0760689333333336E7 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](https://github.com/unclechu/node-deep-extend)

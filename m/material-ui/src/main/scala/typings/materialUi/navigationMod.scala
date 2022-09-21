@@ -10,10 +10,10 @@ object navigationMod {
   
   @JSImport("material-ui/svg-icons/maps/navigation", JSImport.Default)
   @js.native
-  class default () extends MapsNavigation
+  open class default () extends MapsNavigation
   
   @JSImport("material-ui/svg-icons/maps/navigation", "MapsNavigation")
   @js.native
-  class MapsNavigation ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsNavigation ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

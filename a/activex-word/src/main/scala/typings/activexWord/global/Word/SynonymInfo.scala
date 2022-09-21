@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.SynonymInfo")
 @js.native
-/* private */ class SynonymInfo ()
+/* private */ open class SynonymInfo ()
   extends StObject
      with typings.activexWord.Word.SynonymInfo {
   
   /* CompleteClass */
-  override val AntonymList: js.Any = js.native
+  override val AntonymList: Any = js.native
   
   /* CompleteClass */
   override val Application: typings.activexWord.Word.Application = js.native
@@ -26,22 +26,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val MeaningCount: Double = js.native
   
   /* CompleteClass */
-  override val MeaningList: js.Any = js.native
+  override val MeaningList: Any = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override val PartOfSpeechList: js.Any = js.native
+  override val PartOfSpeechList: Any = js.native
   
   /* CompleteClass */
-  override val RelatedExpressionList: js.Any = js.native
+  override val RelatedExpressionList: Any = js.native
   
   /* CompleteClass */
-  override val RelatedWordList: js.Any = js.native
+  override val RelatedWordList: Any = js.native
   
   /* CompleteClass */
-  override def SynonymList(Meaning: js.Any): js.Any = js.native
+  override def SynonymList(Meaning: Any): Any = js.native
   
   /* CompleteClass */
   override val Word: String = js.native

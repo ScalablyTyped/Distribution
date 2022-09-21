@@ -48,7 +48,7 @@ object LabIcon {
   trait IRenderer extends StObject {
     
     def render(container: HTMLElement): Unit = js.native
-    def render(container: HTMLElement, options: js.Any): Unit = js.native
+    def render(container: HTMLElement, options: Any): Unit = js.native
     
     def unrender(container: HTMLElement): Unit = js.native
   }

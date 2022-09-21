@@ -43,9 +43,9 @@ object exporter {
     
     /**
       * Exports rows from the grid in csv format, the data exported is selected based on the provided options
-      * @param {string} rowTypes which rows to export, valid values are uiGridExporterConstants.ALL,
+      * @param rowTypes which rows to export, valid values are uiGridExporterConstants.ALL,
       * uiGridExporterConstants.VISIBLE, uiGridExporterConstants.SELECTED
-      * @param {string} colTypes which columns to export, valid values are uiGridExporterConstants.ALL,
+      * @param colTypes which columns to export, valid values are uiGridExporterConstants.ALL,
       * uiGridExporterConstants.VISIBLE
       */
     def csvExport(rowTypes: String, colTypes: String): Unit
@@ -54,9 +54,9 @@ object exporter {
       * Exports rows from the grid in pdf format, the data exported is selected based on the provided options
       * Note that this function has a dependency on pdfMake, all going well this has been installed for you. The
       * resulting pdf opens in a new browser window.
-      * @param {string} rowTypes which rows to export, valid values are uiGridExporterConstants.ALL,
+      * @param rowTypes which rows to export, valid values are uiGridExporterConstants.ALL,
       * uiGridExporterConstants.VISIBLE, uiGridExporterConstants.SELECTED
-      * @param {string} colTypes which columns to export, valid values are uiGridExporterConstants.ALL,
+      * @param colTypes which columns to export, valid values are uiGridExporterConstants.ALL,
       * uiGridExporterConstants.VISIBLE
       */
     def pdfExport(rowTypes: String, colTypes: String): Unit
@@ -82,7 +82,7 @@ object exporter {
       * This promise is needed when exporting all rows, and the data need to be provided by server side.
       * Default is null
       * @default null
-      * @returns {ng.IPromise<Array<TEntity>>} A promise to load all data from server
+      * @returns A promise to load all data from server
       */
     var exporterAllDataFn: js.UndefOr[js.Function0[IPromise[js.Array[TEntity]]]] = js.undefined
     
@@ -91,7 +91,7 @@ object exporter {
       * DEPRECATED - exporterAllDataFn used to be called this, but it wasn't a promise,
       * it was a function that returned a promise. Deprecated, but supported for backward compatibility,
       * use exporterAllDataFn instead.
-      * @returns {ng.IPromise<Array<TEntity>>} A promise to load all data from server
+      * @returns A promise to load all data from server
       */
     var exporterAllDataPromise: js.UndefOr[js.Function0[IPromise[js.Array[TEntity]]]] = js.undefined
     
@@ -116,19 +116,19 @@ object exporter {
       * The method is called once for each field exported, and provides the grid,
       * the gridCol, and the GridRow for you to use as context in massaging the data.
       *
-      * @param {IGridInstance} grid The grid
-      * @param {IGridRow} row Current row
-      * @param {IGridColumn} col Current column
-      * @param {any} value The cell value
-      * @returns {any} Formatted value
+      * @param grid The grid
+      * @param row Current row
+      * @param col Current column
+      * @param value The cell value
+      * @returns Formatted value
       */
     var exporterFieldCallback: js.UndefOr[
         js.Function4[
           /* grid */ IGridInstanceOf[TEntity], 
           /* row */ IGridRowOf[TEntity], 
           /* col */ IGridColumnOf[TEntity], 
-          /* value */ js.Any, 
-          js.Any
+          /* value */ Any, 
+          Any
         ]
       ] = js.undefined
     
@@ -139,8 +139,8 @@ object exporter {
       *
       * Behaviour can be changed to pass in name instead of displayName through use
       * of exporterHeaderFilterUseName: true.
-      * @param {string} displayName
-      * @returns {string} The filtered header
+      * @param displayName
+      * @returns The filtered header
       */
     var exporterHeaderFilter: js.UndefOr[js.Function1[/* displayName */ String, String]] = js.undefined
     
@@ -199,15 +199,15 @@ object exporter {
       * Takes in the complete docDefinition, and must return an updated docDefinition ready for pdfMake.
       * Example
       * In this example we add a style to the style array, so that we can use it in our footer definition.
-      * @param {any} docDefinition Document definition in pdfMake format
+      * @param docDefinition Document definition in pdfMake format
       */
-    var exporterPdfCustomFormatter: js.UndefOr[js.Function1[/* docDefinition */ js.Any, js.Any]] = js.undefined
+    var exporterPdfCustomFormatter: js.UndefOr[js.Function1[/* docDefinition */ Any, Any]] = js.undefined
     
     /**
       * The default style in pdfMake format
       * @todo replace with pdfmake format
       */
-    var exporterPdfDefaultStyle: js.UndefOr[js.Any] = js.undefined
+    var exporterPdfDefaultStyle: js.UndefOr[Any] = js.undefined
     
     /**
       * The default filename to use when saving the downloaded pdf,
@@ -223,7 +223,7 @@ object exporter {
       * @todo replace any with pdfmake format
       */
     var exporterPdfFooter: js.UndefOr[
-        String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])
+        String | Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])
       ] = js.undefined
     
     /**
@@ -232,7 +232,7 @@ object exporter {
       * @todo replace any with pdfmake format
       */
     var exporterPdfHeader: js.UndefOr[
-        String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])
+        String | Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])
       ] = js.undefined
     
     /**
@@ -261,7 +261,7 @@ object exporter {
       * exporterPdfTableHeaderStyle
       * @todo replace any with pdfmake format
       */
-    var exporterPdfTableHeaderStyle: js.UndefOr[js.Any] = js.undefined
+    var exporterPdfTableHeaderStyle: js.UndefOr[Any] = js.undefined
     
     /**
       * A tableLayout in pdfMake format, controls gridlines and the like. We use the default layout usually.
@@ -269,7 +269,7 @@ object exporter {
       * @default null
       * @todo replace any with pdfmake format
       */
-    var exporterPdfTableLayout: js.UndefOr[js.Any] = js.undefined
+    var exporterPdfTableLayout: js.UndefOr[Any] = js.undefined
     
     /**
       * The tableStyle in pdfMake format
@@ -277,7 +277,7 @@ object exporter {
       * @default { margin: [0, 5, 0, 15] }
       * @todo replace any with pdfmake format
       */
-    var exporterPdfTableStyle: js.UndefOr[js.Any] = js.undefined
+    var exporterPdfTableStyle: js.UndefOr[Any] = js.undefined
     
     /**
       * Columns that should not be exported.
@@ -325,7 +325,7 @@ object exporter {
       inline def setExporterCsvFilenameUndefined: Self = StObject.set(x, "exporterCsvFilename", js.undefined)
       
       inline def setExporterFieldCallback(
-        value: (/* grid */ IGridInstanceOf[TEntity], /* row */ IGridRowOf[TEntity], /* col */ IGridColumnOf[TEntity], /* value */ js.Any) => js.Any
+        value: (/* grid */ IGridInstanceOf[TEntity], /* row */ IGridRowOf[TEntity], /* col */ IGridColumnOf[TEntity], /* value */ Any) => Any
       ): Self = StObject.set(x, "exporterFieldCallback", js.Any.fromFunction4(value))
       
       inline def setExporterFieldCallbackUndefined: Self = StObject.set(x, "exporterFieldCallback", js.undefined)
@@ -362,11 +362,11 @@ object exporter {
       
       inline def setExporterOlderExcelCompatibilityUndefined: Self = StObject.set(x, "exporterOlderExcelCompatibility", js.undefined)
       
-      inline def setExporterPdfCustomFormatter(value: /* docDefinition */ js.Any => js.Any): Self = StObject.set(x, "exporterPdfCustomFormatter", js.Any.fromFunction1(value))
+      inline def setExporterPdfCustomFormatter(value: /* docDefinition */ Any => Any): Self = StObject.set(x, "exporterPdfCustomFormatter", js.Any.fromFunction1(value))
       
       inline def setExporterPdfCustomFormatterUndefined: Self = StObject.set(x, "exporterPdfCustomFormatter", js.undefined)
       
-      inline def setExporterPdfDefaultStyle(value: js.Any): Self = StObject.set(x, "exporterPdfDefaultStyle", value.asInstanceOf[js.Any])
+      inline def setExporterPdfDefaultStyle(value: Any): Self = StObject.set(x, "exporterPdfDefaultStyle", value.asInstanceOf[js.Any])
       
       inline def setExporterPdfDefaultStyleUndefined: Self = StObject.set(x, "exporterPdfDefaultStyle", js.undefined)
       
@@ -374,13 +374,13 @@ object exporter {
       
       inline def setExporterPdfFilenameUndefined: Self = StObject.set(x, "exporterPdfFilename", js.undefined)
       
-      inline def setExporterPdfFooter(value: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])): Self = StObject.set(x, "exporterPdfFooter", value.asInstanceOf[js.Any])
+      inline def setExporterPdfFooter(value: String | Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])): Self = StObject.set(x, "exporterPdfFooter", value.asInstanceOf[js.Any])
       
       inline def setExporterPdfFooterFunction2(value: (/* currentPage */ Double, /* pageCount */ Double) => String): Self = StObject.set(x, "exporterPdfFooter", js.Any.fromFunction2(value))
       
       inline def setExporterPdfFooterUndefined: Self = StObject.set(x, "exporterPdfFooter", js.undefined)
       
-      inline def setExporterPdfHeader(value: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])): Self = StObject.set(x, "exporterPdfHeader", value.asInstanceOf[js.Any])
+      inline def setExporterPdfHeader(value: String | Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])): Self = StObject.set(x, "exporterPdfHeader", value.asInstanceOf[js.Any])
       
       inline def setExporterPdfHeaderFunction2(value: (/* currentPage */ Double, /* pageCount */ Double) => String): Self = StObject.set(x, "exporterPdfHeader", js.Any.fromFunction2(value))
       
@@ -398,15 +398,15 @@ object exporter {
       
       inline def setExporterPdfPageSizeUndefined: Self = StObject.set(x, "exporterPdfPageSize", js.undefined)
       
-      inline def setExporterPdfTableHeaderStyle(value: js.Any): Self = StObject.set(x, "exporterPdfTableHeaderStyle", value.asInstanceOf[js.Any])
+      inline def setExporterPdfTableHeaderStyle(value: Any): Self = StObject.set(x, "exporterPdfTableHeaderStyle", value.asInstanceOf[js.Any])
       
       inline def setExporterPdfTableHeaderStyleUndefined: Self = StObject.set(x, "exporterPdfTableHeaderStyle", js.undefined)
       
-      inline def setExporterPdfTableLayout(value: js.Any): Self = StObject.set(x, "exporterPdfTableLayout", value.asInstanceOf[js.Any])
+      inline def setExporterPdfTableLayout(value: Any): Self = StObject.set(x, "exporterPdfTableLayout", value.asInstanceOf[js.Any])
       
       inline def setExporterPdfTableLayoutUndefined: Self = StObject.set(x, "exporterPdfTableLayout", js.undefined)
       
-      inline def setExporterPdfTableStyle(value: js.Any): Self = StObject.set(x, "exporterPdfTableStyle", value.asInstanceOf[js.Any])
+      inline def setExporterPdfTableStyle(value: Any): Self = StObject.set(x, "exporterPdfTableStyle", value.asInstanceOf[js.Any])
       
       inline def setExporterPdfTableStyleUndefined: Self = StObject.set(x, "exporterPdfTableStyle", js.undefined)
       
@@ -414,7 +414,7 @@ object exporter {
       
       inline def setExporterSuppressColumnsUndefined: Self = StObject.set(x, "exporterSuppressColumns", js.undefined)
       
-      inline def setExporterSuppressColumnsVarargs(value: String*): Self = StObject.set(x, "exporterSuppressColumns", js.Array(value :_*))
+      inline def setExporterSuppressColumnsVarargs(value: String*): Self = StObject.set(x, "exporterSuppressColumns", js.Array(value*))
       
       inline def setExporterSuppressMenu(value: Boolean): Self = StObject.set(x, "exporterSuppressMenu", value.asInstanceOf[js.Any])
       

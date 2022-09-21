@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardExportImageFormat")
 @js.native
-class DashboardExportImageFormat ()
+open class DashboardExportImageFormat ()
   extends StObject
      with typings.devexpressWeb.DashboardExportImageFormat
 object DashboardExportImageFormat {

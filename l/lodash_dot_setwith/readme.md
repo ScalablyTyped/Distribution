@@ -10,10 +10,10 @@ The lodash method `_.setWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.setwith |
 | Keywords           | lodash-modularized, setwith |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 300932 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 214079.33333333334 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

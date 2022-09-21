@@ -71,7 +71,7 @@ object WorksheetBasicProperties {
     
     inline def setHeaderValuesUndefined: Self = StObject.set(x, "headerValues", js.undefined)
     
-    inline def setHeaderValuesVarargs(value: String*): Self = StObject.set(x, "headerValues", js.Array(value :_*))
+    inline def setHeaderValuesVarargs(value: String*): Self = StObject.set(x, "headerValues", js.Array(value*))
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

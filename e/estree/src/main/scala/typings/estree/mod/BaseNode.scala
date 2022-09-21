@@ -26,12 +26,12 @@ object BaseNode {
     
     inline def setLeadingCommentsUndefined: Self = StObject.set(x, "leadingComments", js.undefined)
     
-    inline def setLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "leadingComments", js.Array(value :_*))
+    inline def setLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "leadingComments", js.Array(value*))
     
     inline def setTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "trailingComments", value.asInstanceOf[js.Any])
     
     inline def setTrailingCommentsUndefined: Self = StObject.set(x, "trailingComments", js.undefined)
     
-    inline def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value :_*))
+    inline def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value*))
   }
 }

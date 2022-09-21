@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to update device metadata in batch.
-  */
 trait SchemaUpdateDeviceMetadataInBatchRequest extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaUpdateDeviceMetadataInBatchRequest {
     
     inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
-    inline def setUpdatesVarargs(value: SchemaUpdateMetadataArguments*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: SchemaUpdateMetadataArguments*): Self = StObject.set(x, "updates", js.Array(value*))
   }
 }

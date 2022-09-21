@@ -12,7 +12,7 @@ trait DeleteAnalysisRequest extends StObject {
   var AnalysisId: RestrictiveResourceId
   
   /**
-    * The ID of the AWS account where you want to delete an analysis.
+    * The ID of the Amazon Web Services account where you want to delete an analysis.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
@@ -22,7 +22,7 @@ trait DeleteAnalysisRequest extends StObject {
   var ForceDeleteWithoutRecovery: js.UndefOr[scala.Boolean] = js.undefined
   
   /**
-    * A value that specifies the number of days that QuickSight waits before it deletes the analysis. You can't use this parameter with the ForceDeleteWithoutRecovery option in the same API call. The default value is 30.
+    * A value that specifies the number of days that Amazon QuickSight waits before it deletes the analysis. You can't use this parameter with the ForceDeleteWithoutRecovery option in the same API call. The default value is 30.
     */
   var RecoveryWindowInDays: js.UndefOr[typings.awsSdk.quicksightMod.RecoveryWindowInDays] = js.undefined
 }

@@ -4,8 +4,6 @@ import typings.vegaTypings.markMod.Compare
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.utilMod.Vector7
-import typings.vegaTypings.vegaTypingsStrings.begin
-import typings.vegaTypings.vegaTypingsStrings.end
 import typings.vegaTypings.vegaTypingsStrings.label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LabelTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
-  var anchor: js.UndefOr[js.Array[String] | String | SignalRef] = js.undefined
+  var anchor: js.UndefOr[js.Array[LabelAnchor] | LabelAnchor | SignalRef] = js.undefined
   
   var as: js.UndefOr[(Vector7[String | SignalRef]) | SignalRef] = js.undefined
   
@@ -23,13 +21,15 @@ trait LabelTransform
   
   var avoidMarks: js.UndefOr[js.Array[String]] = js.undefined
   
-  var lineAnchor: js.UndefOr[begin | end | SignalRef] = js.undefined
+  var lineAnchor: js.UndefOr[LineLabelAnchor | SignalRef] = js.undefined
   
   var markIndex: js.UndefOr[Double] = js.undefined
   
+  var method: js.UndefOr[AreaLabelMethod] = js.undefined
+  
   var offset: js.UndefOr[js.Array[Double] | Double | SignalRef] = js.undefined
   
-  var padding: js.UndefOr[Double | SignalRef] = js.undefined
+  var padding: js.UndefOr[Double | Null | SignalRef] = js.undefined
   
   var size: (Vector2[Double | SignalRef]) | SignalRef
   
@@ -47,11 +47,11 @@ object LabelTransform {
   
   extension [Self <: LabelTransform](x: Self) {
     
-    inline def setAnchor(value: js.Array[String] | String | SignalRef): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: js.Array[LabelAnchor] | LabelAnchor | SignalRef): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    inline def setAnchorVarargs(value: String*): Self = StObject.set(x, "anchor", js.Array(value :_*))
+    inline def setAnchorVarargs(value: LabelAnchor*): Self = StObject.set(x, "anchor", js.Array(value*))
     
     inline def setAs(value: (Vector7[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
@@ -65,9 +65,9 @@ object LabelTransform {
     
     inline def setAvoidMarksUndefined: Self = StObject.set(x, "avoidMarks", js.undefined)
     
-    inline def setAvoidMarksVarargs(value: String*): Self = StObject.set(x, "avoidMarks", js.Array(value :_*))
+    inline def setAvoidMarksVarargs(value: String*): Self = StObject.set(x, "avoidMarks", js.Array(value*))
     
-    inline def setLineAnchor(value: begin | end | SignalRef): Self = StObject.set(x, "lineAnchor", value.asInstanceOf[js.Any])
+    inline def setLineAnchor(value: LineLabelAnchor | SignalRef): Self = StObject.set(x, "lineAnchor", value.asInstanceOf[js.Any])
     
     inline def setLineAnchorUndefined: Self = StObject.set(x, "lineAnchor", js.undefined)
     
@@ -75,13 +75,19 @@ object LabelTransform {
     
     inline def setMarkIndexUndefined: Self = StObject.set(x, "markIndex", js.undefined)
     
+    inline def setMethod(value: AreaLabelMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
     inline def setOffset(value: js.Array[Double] | Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
     
     inline def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingNull: Self = StObject.set(x, "padding", null)
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     

@@ -36,7 +36,7 @@ object Fail {
     
     inline def setKeyList(value: js.Array[String]): Self = StObject.set(x, "keyList", value.asInstanceOf[js.Any])
     
-    inline def setKeyListVarargs(value: String*): Self = StObject.set(x, "keyList", js.Array(value :_*))
+    inline def setKeyListVarargs(value: String*): Self = StObject.set(x, "keyList", js.Array(value*))
     
     inline def setSuccess(value: /* res */ `2` => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

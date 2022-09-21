@@ -1,5 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.configuration.backend
 
+import typings.activexLibreoffice.com_.sun.star.lang.WrappedTargetException
+import typings.activexLibreoffice.com_.sun.star.task.XJob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Exception thrown when authentication to the underlying backend fails due to an unknown user-id or invalid credentials.
   * @since OOo 1.1.2
   */
-type AuthenticationFailedException = typings.activexLibreoffice.com_.sun.star.configuration.backend.BackendSetupException
+type AuthenticationFailedException = BackendSetupException
 
 /**
   * Generic exception thrown when physical access to an underlying backend fails.
@@ -17,7 +19,7 @@ type AuthenticationFailedException = typings.activexLibreoffice.com_.sun.star.co
   * Wraps an exception that originates in the underlying access layer.
   * @since OOo 1.1.2
   */
-type BackendAccessException = typings.activexLibreoffice.com_.sun.star.lang.WrappedTargetException
+type BackendAccessException = WrappedTargetException
 
 /**
   * Exception thrown when a connection to the underlying backend cannot be established.
@@ -26,7 +28,7 @@ type BackendAccessException = typings.activexLibreoffice.com_.sun.star.lang.Wrap
   * of the backend access layer.
   * @since OOo 1.1.2
   */
-type CannotConnectException = typings.activexLibreoffice.com_.sun.star.configuration.backend.BackendSetupException
+type CannotConnectException = BackendSetupException
 
 /**
   * Exception thrown when the connection to the underlying backend was lost irrecoverably.
@@ -34,13 +36,13 @@ type CannotConnectException = typings.activexLibreoffice.com_.sun.star.configura
   * Any future attempts to access data from the backend through this object will also fail.
   * @since OOo 1.1.2
   */
-type ConnectionLostException = typings.activexLibreoffice.com_.sun.star.configuration.backend.BackendAccessException
+type ConnectionLostException = BackendAccessException
 
 /**
   * allows importing data from one configuration repository into another.
   * @since OOo 1.1.2
   */
-type DataImporter = typings.activexLibreoffice.com_.sun.star.task.XJob
+type DataImporter = XJob
 
 /**
   * is a {@link DefaultBackend} , that is the default {@link DefaultBackend} for its {@link com.sun.star.uno.XComponentContext} .
@@ -50,13 +52,13 @@ type DataImporter = typings.activexLibreoffice.com_.sun.star.task.XJob
   * .
   * @since OOo 1.1.2
   */
-type DefaultBackend = typings.activexLibreoffice.com_.sun.star.configuration.backend.Backend
+type DefaultBackend = Backend
 
 /**
   * allows scanning a configuration data repository for available components .
   * @since OOo 1.1.2
   */
-type HierarchyBrowser = typings.activexLibreoffice.com_.sun.star.task.XJob
+type HierarchyBrowser = XJob
 
 /**
   * Exception thrown when access to the underlying backend fails because of insufficient access rights to some needed resource.
@@ -65,33 +67,33 @@ type HierarchyBrowser = typings.activexLibreoffice.com_.sun.star.task.XJob
   * data.Missing access to personal data.Missing write access when updating data.
   * @since OOo 1.1.2
   */
-type InsufficientAccessRightsException = typings.activexLibreoffice.com_.sun.star.configuration.backend.BackendAccessException
+type InsufficientAccessRightsException = BackendAccessException
 
 /**
   * Exception thrown when authentication to the underlying backend fails because the configured authentication mechanism is not supported by the backend
   * or no valid mechanism can be negotiated.
   * @since OOo 1.1.2
   */
-type InvalidAuthenticationMechanismException = typings.activexLibreoffice.com_.sun.star.configuration.backend.BackendSetupException
+type InvalidAuthenticationMechanismException = BackendSetupException
 
 /**
   * describe the contents of a layer to an {@link XLayerHandler} object. The contents of the layer is contained in the sequence of {@link PropertyInfo}
   * structures
   * @see PropertyInfo
   */
-type LayerDescriber = typings.activexLibreoffice.com_.sun.star.configuration.backend.XLayerContentDescriber
+type LayerDescriber = XLayerContentDescriber
 
 /** implements {@link MultiLayerStratum} that provides access to a multiple layers of configuration data from LDAP source */
-type LdapMultiLayerStratum = typings.activexLibreoffice.com_.sun.star.configuration.backend.MultiLayerStratum
+type LdapMultiLayerStratum = MultiLayerStratum
 
 /**
   * implements {@link SingleBackend} that stores data in an LDAP directory.
   * @since OOo 1.1.2
   */
-type LdapSingleBackend = typings.activexLibreoffice.com_.sun.star.configuration.backend.SingleBackend
+type LdapSingleBackend = SingleBackend
 
 /** implements {@link SingleLayerStratum} that provides access to a single layer of configuration data from LDAP source */
-type LdapSingleStratum = typings.activexLibreoffice.com_.sun.star.configuration.backend.SingleLayerStratum
+type LdapSingleStratum = SingleLayerStratum
 
 /**
   * allows importing data from a local configuration data repository or file into any {@link Backend} .
@@ -103,26 +105,26 @@ type LdapSingleStratum = typings.activexLibreoffice.com_.sun.star.configuration.
   * @see com.sun.star.configuration.backend.LocalSingleBackend Service that can be used to access a local configuration database.
   * @since OOo 1.1.2
   */
-type LocalDataImporter = typings.activexLibreoffice.com_.sun.star.configuration.backend.DataImporter
+type LocalDataImporter = DataImporter
 
 /**
   * is a {@link HierarchyBrowser} , that browses a configuration database stored in the local file system.
   * @see com.sun.star.configuration.backend.LocalSingleBackend
   * @since OOo 1.1.2
   */
-type LocalHierarchyBrowser = typings.activexLibreoffice.com_.sun.star.configuration.backend.HierarchyBrowser
+type LocalHierarchyBrowser = HierarchyBrowser
 
 /** implements {@link SchemaSupplier} providing access to local configuration schemas */
-type LocalSchemaSupplier = typings.activexLibreoffice.com_.sun.star.configuration.backend.SchemaSupplier
+type LocalSchemaSupplier = SchemaSupplier
 
 /**
   * implements {@link SingleBackend} that stores data in the local file system using the OOR XML formats.
   * @since OOo 1.1.2
   */
-type LocalSingleBackend = typings.activexLibreoffice.com_.sun.star.configuration.backend.SingleBackend
+type LocalSingleBackend = SingleBackend
 
 /** implements {@link SingleLayerStratum} that provides access to a singe layer of configuration data from local file system */
-type LocalSingleStratum = typings.activexLibreoffice.com_.sun.star.configuration.backend.SingleLayerStratum
+type LocalSingleStratum = SingleLayerStratum
 
 /**
   * imports data into a configuration layer by merging with existing data.
@@ -130,27 +132,27 @@ type LocalSingleStratum = typings.activexLibreoffice.com_.sun.star.configuration
   * No named arguments to {@link com.sun.star.lang.XInitialization.initialize()} are supported.
   * @since OOo 1.1.2
   */
-type MergeImporter = typings.activexLibreoffice.com_.sun.star.configuration.backend.Importer
+type MergeImporter = Importer
 
 /**
   * implements {@link BackendAdapter} that maintains a cache so it can operate even if the {@link SingleBackend} holding the data is inaccessible.
   * @see com.sun.star.configuration.backend.OnlineBackend
   * @since OOo 1.1.2
   */
-type OfflineBackend = typings.activexLibreoffice.com_.sun.star.configuration.backend.BackendAdapter
+type OfflineBackend = BackendAdapter
 
 /**
   * implements a {@link BackendAdapter} that requires that the {@link SingleBackend} holding the data is continuously accessible.
   * @see com.sun.star.configuration.backend.OfflineBackend
   * @since OOo 1.1.2
   */
-type OnlineBackend = typings.activexLibreoffice.com_.sun.star.configuration.backend.BackendAdapter
+type OnlineBackend = BackendAdapter
 
 /** implements {@link SingleLayerStratum} that provides access to a singe layer of configuration data from external data store */
-type PlatformBackend = typings.activexLibreoffice.com_.sun.star.configuration.backend.SingleLayerStratum
+type PlatformBackend = SingleLayerStratum
 
 /** provides access to configuration schemas */
-type SchemaSupplier = typings.activexLibreoffice.com_.sun.star.configuration.backend.XSchemaSupplier
+type SchemaSupplier = XSchemaSupplier
 
 /**
   * implements a simple {@link BackendAdapter} that can be used for normal configuration operation.
@@ -159,4 +161,4 @@ type SchemaSupplier = typings.activexLibreoffice.com_.sun.star.configuration.bac
   * @see com.sun.star.configuration.backend.OnlineBackend
   * @since OOo 1.1.2
   */
-type SingleBackendAdapter = typings.activexLibreoffice.com_.sun.star.configuration.backend.BackendAdapter
+type SingleBackendAdapter = BackendAdapter

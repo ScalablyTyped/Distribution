@@ -45,12 +45,12 @@ object ModifyOptionGroupMessage {
     
     inline def setOptionsToIncludeUndefined: Self = StObject.set(x, "OptionsToInclude", js.undefined)
     
-    inline def setOptionsToIncludeVarargs(value: OptionConfiguration*): Self = StObject.set(x, "OptionsToInclude", js.Array(value :_*))
+    inline def setOptionsToIncludeVarargs(value: OptionConfiguration*): Self = StObject.set(x, "OptionsToInclude", js.Array(value*))
     
     inline def setOptionsToRemove(value: OptionNamesList): Self = StObject.set(x, "OptionsToRemove", value.asInstanceOf[js.Any])
     
     inline def setOptionsToRemoveUndefined: Self = StObject.set(x, "OptionsToRemove", js.undefined)
     
-    inline def setOptionsToRemoveVarargs(value: String*): Self = StObject.set(x, "OptionsToRemove", js.Array(value :_*))
+    inline def setOptionsToRemoveVarargs(value: String*): Self = StObject.set(x, "OptionsToRemove", js.Array(value*))
   }
 }

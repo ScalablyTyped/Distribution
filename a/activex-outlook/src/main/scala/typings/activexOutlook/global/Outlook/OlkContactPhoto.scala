@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkContactPhoto")
 @js.native
-/* private */ class OlkContactPhoto ()
+/* private */ open class OlkContactPhoto ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkContactPhoto {
   

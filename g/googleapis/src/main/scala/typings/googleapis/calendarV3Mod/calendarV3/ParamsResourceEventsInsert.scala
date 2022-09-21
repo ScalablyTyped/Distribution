@@ -1,9 +1,5 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,30 +9,17 @@ trait ParamsResourceEventsInsert
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Calendar identifier. To retrieve calendar IDs call the calendarList.list
-    * method. If you want to access the primary calendar of the currently
-    * logged in user, use the "primary" keyword.
+    * Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the "primary" keyword.
     */
   var calendarId: js.UndefOr[String] = js.undefined
   
   /**
-    * Version number of conference data supported by the API client. Version 0
-    * assumes no conference data support and ignores conference data in the
-    * event's body. Version 1 enables support for copying of ConferenceData as
-    * well as for creating new conferences using the createRequest field of
-    * conferenceData. The default is 0.
+    * Version number of conference data supported by the API client. Version 0 assumes no conference data support and ignores conference data in the event's body. Version 1 enables support for copying of ConferenceData as well as for creating new conferences using the createRequest field of conferenceData. The default is 0.
     */
   var conferenceDataVersion: js.UndefOr[Double] = js.undefined
   
   /**
-    * The maximum number of attendees to include in the response. If there are
-    * more than the specified number of attendees, only the participant is
-    * returned. Optional.
+    * The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.
     */
   var maxAttendees: js.UndefOr[Double] = js.undefined
   
@@ -46,22 +29,19 @@ trait ParamsResourceEventsInsert
   var requestBody: js.UndefOr[SchemaEvent] = js.undefined
   
   /**
-    * Deprecated. Please use sendUpdates instead.  Whether to send
-    * notifications about the creation of the new event. Note that some emails
-    * might still be sent even if you set the value to false. The default is
-    * false.
+    * Deprecated. Please use sendUpdates instead.
+    *
+    * Whether to send notifications about the creation of the new event. Note that some emails might still be sent even if you set the value to false. The default is false.
     */
   var sendNotifications: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether to send notifications about the creation of the new event. Note
-    * that some emails might still be sent. The default is false.
+    * Whether to send notifications about the creation of the new event. Note that some emails might still be sent. The default is false.
     */
   var sendUpdates: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether API client performing operation supports event attachments.
-    * Optional. The default is False.
+    * Whether API client performing operation supports event attachments. Optional. The default is False.
     */
   var supportsAttachments: js.UndefOr[Boolean] = js.undefined
 }
@@ -73,10 +53,6 @@ object ParamsResourceEventsInsert {
   }
   
   extension [Self <: ParamsResourceEventsInsert](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     

@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request for Datastore.Rollback.
-  */
 trait SchemaRollbackRequest extends StObject {
   
   /**
-    * The transaction identifier, returned by a call to
-    * Datastore.BeginTransaction.
+    * Required. The transaction identifier, returned by a call to Datastore.BeginTransaction.
     */
-  var transaction: js.UndefOr[String] = js.undefined
+  var transaction: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRollbackRequest {
   
@@ -25,6 +21,8 @@ object SchemaRollbackRequest {
   extension [Self <: SchemaRollbackRequest](x: Self) {
     
     inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionNull: Self = StObject.set(x, "transaction", null)
     
     inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }

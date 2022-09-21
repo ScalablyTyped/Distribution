@@ -40,12 +40,12 @@ trait FormDescription extends StObject {
   /* private */ @JSName("Outlook.FormDescription_typekey")
   var OutlookDotFormDescription_typekey: FormDescription = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Password: String = js.native
   
   def PublishForm(Registry: OlFormRegistry): Unit = js.native
-  def PublishForm(Registry: OlFormRegistry, Folder: js.Any): Unit = js.native
+  def PublishForm(Registry: OlFormRegistry, Folder: Any): Unit = js.native
   
   val ScriptText: String = js.native
   

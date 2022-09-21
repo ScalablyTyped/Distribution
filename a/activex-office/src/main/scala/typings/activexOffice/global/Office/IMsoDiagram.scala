@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoDiagram")
 @js.native
-/* private */ class IMsoDiagram ()
+/* private */ open class IMsoDiagram ()
   extends StObject
      with typings.activexOffice.Office.IMsoDiagram {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var AutoFormat: MsoTriState = js.native
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def FitText(): Unit = js.native
   
   /* CompleteClass */
-  override def Nodes(Index: js.Any): typings.activexOffice.Office.DiagramNode = js.native
+  override def Nodes(Index: Any): typings.activexOffice.Office.DiagramNode = js.native
   /* CompleteClass */
   @JSName("Nodes")
   override val Nodes_Original: DiagramNodes = js.native
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotIMsoDiagram_typekey: typings.activexOffice.Office.IMsoDiagram = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Reverse: MsoTriState = js.native

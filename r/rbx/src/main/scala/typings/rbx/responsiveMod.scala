@@ -23,14 +23,14 @@ object responsiveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
-  inline def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(): ValidationMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[Any]]
+  inline def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[Any]]
   
-  inline def makeResponsiveBreakpointLimitedPropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointLimitedPropTypes")().asInstanceOf[ValidationMap[js.Any]]
-  inline def makeResponsiveBreakpointLimitedPropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointLimitedPropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  inline def makeResponsiveBreakpointLimitedPropTypes(): ValidationMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointLimitedPropTypes")().asInstanceOf[ValidationMap[Any]]
+  inline def makeResponsiveBreakpointLimitedPropTypes(variables: PartialVariablesDefinitio): ValidationMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointLimitedPropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[Any]]
   
-  inline def makeResponsiveBreakpointPropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointPropTypes")().asInstanceOf[ValidationMap[js.Any]]
-  inline def makeResponsiveBreakpointPropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointPropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  inline def makeResponsiveBreakpointPropTypes(): ValidationMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointPropTypes")().asInstanceOf[ValidationMap[Any]]
+  inline def makeResponsiveBreakpointPropTypes(variables: PartialVariablesDefinitio): ValidationMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointPropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[Any]]
   
   @JSImport("rbx/base/helpers/responsive", "makeValidatingTransform")
   @js.native

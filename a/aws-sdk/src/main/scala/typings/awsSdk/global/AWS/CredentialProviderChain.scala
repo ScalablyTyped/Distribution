@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new CredentialProviderChain with a default set of providers specified by defaultProviders.
   */
-class CredentialProviderChain ()
+open class CredentialProviderChain ()
   extends typings.awsSdk.mod.CredentialProviderChain {
   def this(providers: js.Array[provider]) = this()
 }

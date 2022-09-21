@@ -1,7 +1,7 @@
 
 # Scala.js typings for topojson-client
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 Manipulate TopoJSON and convert it to GeoJSON.
@@ -10,10 +10,10 @@ Manipulate TopoJSON and convert it to GeoJSON.
 | ------------------ | :-------------: |
 | Full name          | topojson-client |
 | Keywords           | topojson, topology, geojson |
-| # releases         | 3 |
-| # dependents       | 94 |
-| # downloads        | 18137286 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3351575.0 |
+| # stars            | 166.0 |
 
 ## Links
 - [Homepage](https://github.com/topojson/topojson-client)

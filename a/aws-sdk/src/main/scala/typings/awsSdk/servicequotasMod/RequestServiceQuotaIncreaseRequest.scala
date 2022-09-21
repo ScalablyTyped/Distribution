@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestServiceQuotaIncreaseRequest extends StObject {
   
   /**
-    * Specifies the value submitted in the service quota increase request. 
+    * The new, increased value for the quota.
     */
   var DesiredValue: QuotaValue
   
   /**
-    * Specifies the service quota that you want to use.
+    * The quota identifier.
     */
   var QuotaCode: typings.awsSdk.servicequotasMod.QuotaCode
   
   /**
-    * Specifies the service that you want to use.
+    * The service identifier.
     */
   var ServiceCode: typings.awsSdk.servicequotasMod.ServiceCode
 }

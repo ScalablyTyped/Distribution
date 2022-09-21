@@ -10,15 +10,12 @@ A fairly straightforward port of the Python calendar package with extensions whe
 | ------------------ | :-------------: |
 | Full name          | node-calendar |
 | Keywords           | calendar, python, year, month, day, locale, isleap, leapdays, monthrange, setlocale, noconflict, timegm, weekday, getfirstweekday, setfirstweekday, iterweekdays, itermonthdates, itermonthdays, itermonthdays2, monthdatescalendar, monthdayscalendar, monthdays2calendar, yeardatescalendar, yeardayscalendar, yeardays2calendar |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 8526 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 982.3333333333334 |
+| # stars            | 32.0 |
 
 ## Links
-- [Homepage](https://github.com/ArminTamzarian/node-calendar#readme)
-- [Bugs](https://github.com/ArminTamzarian/node-calendar/issues)
-- [Repository](https://github.com/ArminTamzarian/node-calendar)
 - [Npm](https://www.npmjs.com/package/node-calendar)
     
 

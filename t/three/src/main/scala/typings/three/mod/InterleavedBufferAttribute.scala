@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "InterleavedBufferAttribute")
 @js.native
-class InterleavedBufferAttribute protected ()
-  extends typings.three.interleavedBufferAttributeMod.InterleavedBufferAttribute {
+open class InterleavedBufferAttribute protected ()
+  extends typings.three.threeMod.InterleavedBufferAttribute {
   def this(
     interleavedBuffer: typings.three.interleavedBufferMod.InterleavedBuffer,
     itemSize: Double,

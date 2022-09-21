@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PortalBasemapsSourceConstructor
   extends StObject
-     with Instantiable0[PortalBasemapsSource]
+     with /**
+  * The PortalBasemapsSource class is a Portal-driven [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-BasemapGalleryViewModel.html#source) in the [BasemapGalleryViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-BasemapGalleryViewModel.html) or [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html)
+  */
+Instantiable0[PortalBasemapsSource]
      with Instantiable1[/* properties */ PortalBasemapsSourceProperties, PortalBasemapsSource]

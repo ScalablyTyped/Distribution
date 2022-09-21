@@ -28,7 +28,7 @@ object mod {
   
   inline def metric(label: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("metric")(label.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type FunctionWrapper = js.Function1[/* handler */ js.Any, js.Any]
+  type FunctionWrapper = js.Function1[/* handler */ Any, Any]
   
   trait LibraryConfig extends StObject {
     

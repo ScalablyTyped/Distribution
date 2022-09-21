@@ -1,11 +1,10 @@
 package typings.snazzyInfoWindow
 
-import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.LatLngLiteral
-import typings.googlemaps.google.maps.Map
-import typings.googlemaps.google.maps.Marker
-import typings.googlemaps.google.maps.OverlayView
-import typings.std.Element
+import typings.googleMaps.google.maps.LatLng
+import typings.googleMaps.google.maps.LatLngLiteral
+import typings.googleMaps.google.maps.Map
+import typings.googleMaps.google.maps.Marker
+import typings.googleMaps.google.maps.OverlayView
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("snazzy-info-window", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SnazzyInfoWindow {
     def this(opts: InfoWindowOptions) = this()
@@ -245,7 +244,7 @@ object mod {
       * The Google Map associated to this info window.
       * Only required if you are not using a marker.
       */
-    var map: js.UndefOr[Map[Element]] = js.undefined
+    var map: js.UndefOr[Map] = js.undefined
     
     /**
       * The Google Maps marker associated to this info window.
@@ -399,7 +398,7 @@ object mod {
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       

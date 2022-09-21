@@ -29,7 +29,7 @@ object IndexAttachment {
     
     inline def setIndexedAttributesUndefined: Self = StObject.set(x, "IndexedAttributes", js.undefined)
     
-    inline def setIndexedAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "IndexedAttributes", js.Array(value :_*))
+    inline def setIndexedAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "IndexedAttributes", js.Array(value*))
     
     inline def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     

@@ -9,8 +9,7 @@ object reducerComponentMod {
   
   @JSImport("react-fns/dist/ReducerComponent", "ReducerComponent")
   @js.native
-  class ReducerComponent[P, S, A] protected ()
-    extends Component[P, S, js.Any] {
+  open class ReducerComponent[P, S, A] protected () extends Component[P, S, Any] {
     def this(props: P) = this()
     
     def dispatch(action: A): Unit = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-cognito-identity", "ListTagsForResourceCommand")
 @js.native
-class ListTagsForResourceCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.listTagsForResourceCommandMod.ListTagsForResourceCommand {
+open class ListTagsForResourceCommand protected ()
+  extends typings.awsSdkClientCognitoIdentity.commandsMod.ListTagsForResourceCommand {
   def this(input: ListTagsForResourceCommandInput) = this()
 }

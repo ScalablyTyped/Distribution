@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewContextMenuItemClickEventArgs")
 @js.native
-class ASPxClientGridViewContextMenuItemClickEventArgs protected ()
+open class ASPxClientGridViewContextMenuItemClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewContextMenuItemClickEventArgs {
   /**

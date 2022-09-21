@@ -1,6 +1,7 @@
 
 # Scala.js typings for inline-css
 
+Typings are for version 3.0
 
 ## Library description:
 Inline css into an html file.
@@ -9,10 +10,10 @@ Inline css into an html file.
 | ------------------ | :-------------: |
 | Full name          | inline-css |
 | Keywords           | inline, css, html, email |
-| # releases         | 9 |
-| # dependents       | 63 |
-| # downloads        | 2378332 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 637307.3333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jonkemp/inline-css#readme)

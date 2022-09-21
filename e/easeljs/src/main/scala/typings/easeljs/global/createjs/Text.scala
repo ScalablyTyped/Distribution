@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Text")
 @js.native
-class Text ()
+open class Text ()
   extends StObject
      with typings.easeljs.createjs.Text {
   def this(text: String) = this()

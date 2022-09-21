@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ToString
   extends StObject
-     with /* key */ StringDictionary[js.Any]
+     with /* key */ StringDictionary[Any]
 object ToString {
   
   inline def apply(): ToString = {

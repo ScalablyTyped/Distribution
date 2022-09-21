@@ -8,5 +8,5 @@ object s3KeyFilterMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_S3KeyFilter", "_S3KeyFilter")
   @js.native
-  val S3KeyFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val S3KeyFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

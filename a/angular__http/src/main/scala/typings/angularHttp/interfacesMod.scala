@@ -8,7 +8,6 @@ import typings.angularHttp.enumsMod.ResponseType
 import typings.angularHttp.headersMod.Headers
 import typings.angularHttp.staticRequestMod.Request
 import typings.angularHttp.urlSearchParamsMod.URLSearchParams
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.FormData
 import org.scalablytyped.runtime.StObject
@@ -25,14 +24,14 @@ object interfacesMod {
     
     var request: Request = js.native
     
-    var response: js.Any = js.native
+    var response: Any = js.native
   }
   
   @JSImport("@angular/http/src/interfaces", "ConnectionBackend")
   @js.native
   abstract class ConnectionBackend () extends StObject {
     
-    def createConnection(request: js.Any): Connection = js.native
+    def createConnection(request: Any): Connection = js.native
   }
   
   @JSImport("@angular/http/src/interfaces", "XSRFStrategy")
@@ -66,18 +65,18 @@ object interfacesMod {
   
   trait RequestOptionsArgs extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var headers: js.UndefOr[Headers | Null] = js.undefined
     
     var method: js.UndefOr[String | RequestMethod | Null] = js.undefined
     
-    var params: js.UndefOr[String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]]) | Null] = js.undefined
+    var params: js.UndefOr[String | URLSearchParams | (StringDictionary[Any | js.Array[Any]]) | Null] = js.undefined
     
     var responseType: js.UndefOr[ResponseContentType | Null] = js.undefined
     
     /** @deprecated from 4.0.0. Use params instead. */
-    var search: js.UndefOr[String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]]) | Null] = js.undefined
+    var search: js.UndefOr[String | URLSearchParams | (StringDictionary[Any | js.Array[Any]]) | Null] = js.undefined
     
     var url: js.UndefOr[String | Null] = js.undefined
     
@@ -92,7 +91,7 @@ object interfacesMod {
     
     extension [Self <: RequestOptionsArgs](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -108,7 +107,7 @@ object interfacesMod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setParams(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: String | URLSearchParams | (StringDictionary[Any | js.Array[Any]])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsNull: Self = StObject.set(x, "params", null)
       
@@ -120,7 +119,7 @@ object interfacesMod {
       
       inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      inline def setSearch(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]])): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String | URLSearchParams | (StringDictionary[Any | js.Array[Any]])): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
       inline def setSearchNull: Self = StObject.set(x, "search", null)
       
@@ -142,7 +141,7 @@ object interfacesMod {
   
   trait ResponseOptionsArgs extends StObject {
     
-    var body: js.UndefOr[String | js.Object | FormData | ArrayBuffer | Blob | Null] = js.undefined
+    var body: js.UndefOr[String | js.Object | FormData | js.typedarray.ArrayBuffer | Blob | Null] = js.undefined
     
     var headers: js.UndefOr[Headers | Null] = js.undefined
     
@@ -163,7 +162,7 @@ object interfacesMod {
     
     extension [Self <: ResponseOptionsArgs](x: Self) {
       
-      inline def setBody(value: String | js.Object | FormData | ArrayBuffer | Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | js.Object | FormData | js.typedarray.ArrayBuffer | Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyNull: Self = StObject.set(x, "body", null)
       

@@ -12,8 +12,8 @@ object mousePointEventMod {
   
   @JSImport("wonder.js/dist/es2015/event/object/MousePointEvent", "MousePointEvent")
   @js.native
-  class MousePointEvent protected () extends PointEvent {
-    def this(event: js.Any, eventName: EEventName) = this()
+  open class MousePointEvent protected () extends PointEvent {
+    def this(event: Any, eventName: EEventName) = this()
     
     @JSName("button")
     var button_MousePointEvent: Double = js.native

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GitPushRef extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
-  var date: Date
+  var date: js.Date
   
   var pushCorrelationId: String
   
@@ -23,8 +22,8 @@ trait GitPushRef extends StObject {
 object GitPushRef {
   
   inline def apply(
-    _links: js.Any,
-    date: Date,
+    _links: Any,
+    date: js.Date,
     pushCorrelationId: String,
     pushId: Double,
     pushedBy: IdentityRef,
@@ -36,7 +35,7 @@ object GitPushRef {
   
   extension [Self <: GitPushRef](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setPushCorrelationId(value: String): Self = StObject.set(x, "pushCorrelationId", value.asInstanceOf[js.Any])
     
@@ -46,6 +45,6 @@ object GitPushRef {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

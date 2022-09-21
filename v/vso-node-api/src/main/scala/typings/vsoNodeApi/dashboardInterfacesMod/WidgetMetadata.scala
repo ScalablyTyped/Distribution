@@ -144,7 +144,7 @@ object WidgetMetadata {
     
     inline def setAllowedSizes(value: js.Array[WidgetSize]): Self = StObject.set(x, "allowedSizes", value.asInstanceOf[js.Any])
     
-    inline def setAllowedSizesVarargs(value: WidgetSize*): Self = StObject.set(x, "allowedSizes", js.Array(value :_*))
+    inline def setAllowedSizesVarargs(value: WidgetSize*): Self = StObject.set(x, "allowedSizes", js.Array(value*))
     
     inline def setAnalyticsServiceRequired(value: Boolean): Self = StObject.set(x, "analyticsServiceRequired", value.asInstanceOf[js.Any])
     
@@ -182,11 +182,11 @@ object WidgetMetadata {
     
     inline def setSupportedScopes(value: js.Array[WidgetScope]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
     
-    inline def setSupportedScopesVarargs(value: WidgetScope*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
+    inline def setSupportedScopesVarargs(value: WidgetScope*): Self = StObject.set(x, "supportedScopes", js.Array(value*))
     
     inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setTypeId(value: String): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
   }

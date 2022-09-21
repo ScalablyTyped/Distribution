@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@rtsao/csstype" : "2.6.5-forked.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@rtsao/csstype" : "2.6.5-forked.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

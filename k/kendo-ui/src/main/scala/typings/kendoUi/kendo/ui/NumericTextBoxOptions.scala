@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NumericTextBoxOptions extends StObject {
+trait NumericTextBoxOptions
+  extends StObject
+     with AllEditorOptions {
   
   var change: js.UndefOr[js.Function1[/* e */ NumericTextBoxChangeEvent, Unit]] = js.undefined
   
@@ -15,6 +17,8 @@ trait NumericTextBoxOptions extends StObject {
   var downArrowText: js.UndefOr[String] = js.undefined
   
   var factor: js.UndefOr[Double] = js.undefined
+  
+  var fillMode: js.UndefOr[String] = js.undefined
   
   var format: js.UndefOr[String] = js.undefined
   
@@ -31,6 +35,12 @@ trait NumericTextBoxOptions extends StObject {
   var restrictDecimals: js.UndefOr[Boolean] = js.undefined
   
   var round: js.UndefOr[Boolean] = js.undefined
+  
+  var rounded: js.UndefOr[String] = js.undefined
+  
+  var selectOnFocus: js.UndefOr[Boolean] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var spin: js.UndefOr[js.Function1[/* e */ NumericTextBoxSpinEvent, Unit]] = js.undefined
   
@@ -71,6 +81,10 @@ object NumericTextBoxOptions {
     
     inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
+    
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -102,6 +116,18 @@ object NumericTextBoxOptions {
     inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
     inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
+    inline def setSelectOnFocus(value: Boolean): Self = StObject.set(x, "selectOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setSelectOnFocusUndefined: Self = StObject.set(x, "selectOnFocus", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSpin(value: /* e */ NumericTextBoxSpinEvent => Unit): Self = StObject.set(x, "spin", js.Any.fromFunction1(value))
     

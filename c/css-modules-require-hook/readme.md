@@ -10,15 +10,12 @@ A require hook to compile CSS Modules on the fly
 | ------------------ | :-------------: |
 | Full name          | css-modules-require-hook |
 | Keywords           | css-modules, require, hook |
-| # releases         | 0 |
-| # dependents       | 86 |
-| # downloads        | 4299060 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1018499.3333333334 |
+| # stars            | 485.0 |
 
 ## Links
-- [Homepage](https://github.com/css-modules/css-modules-require-hook)
-- [Bugs](https://github.com/css-modules/css-modules-require-hook/issues)
-- [Repository](https://github.com/css-modules/css-modules-require-hook)
 - [Npm](https://www.npmjs.com/package/css-modules-require-hook)
     
 

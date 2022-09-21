@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__requester-common
 
-Typings are for version 4.8.0
+Typings are for version 4.14.2
 
 ## Library description:
 Common interfaces for promise-based request libraries
@@ -10,10 +10,10 @@ Common interfaces for promise-based request libraries
 | ------------------ | :-------------: |
 | Full name          | @algolia/requester-common |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 11 |
-| # downloads        | 6788209 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 2848809.6666666665 |
+| # stars            | 1133.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-js#readme)

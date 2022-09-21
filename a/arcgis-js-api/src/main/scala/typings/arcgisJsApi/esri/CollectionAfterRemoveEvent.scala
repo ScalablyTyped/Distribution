@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CollectionAfterRemoveEvent extends StObject {
   
-  var item: js.Any
+  var item: Any
 }
 object CollectionAfterRemoveEvent {
   
-  inline def apply(item: js.Any): CollectionAfterRemoveEvent = {
+  inline def apply(item: Any): CollectionAfterRemoveEvent = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionAfterRemoveEvent]
   }
   
   extension [Self <: CollectionAfterRemoveEvent](x: Self) {
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

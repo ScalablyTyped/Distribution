@@ -1,0 +1,31 @@
+package typings.tslintXANLscI2
+
+import typings.tslintXANLscI2.abstractFormatterDTsMod.AbstractFormatter
+import typings.tslintXANLscI2.formatterDTsMod.IFormatterMetadata
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object checkstyleFormatterDTsMod {
+  
+  @JSImport(".tslint-xANLscI2/lib/formatters/checkstyleFormatter.d.ts", "Formatter")
+  @js.native
+  open class Formatter () extends AbstractFormatter {
+    
+    /* private */ var escapeXml: Any = js.native
+    
+    /* private */ var formatFailure: Any = js.native
+  }
+  /* static members */
+  object Formatter {
+    
+    @JSImport(".tslint-xANLscI2/lib/formatters/checkstyleFormatter.d.ts", "Formatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport(".tslint-xANLscI2/lib/formatters/checkstyleFormatter.d.ts", "Formatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+  }
+}

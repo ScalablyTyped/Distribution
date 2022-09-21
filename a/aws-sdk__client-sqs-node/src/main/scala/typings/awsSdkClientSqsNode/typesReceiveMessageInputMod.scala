@@ -20,7 +20,6 @@ import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.RedrivePolicy
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.VisibilityTimeout
 import typings.awsSdkClientSqsNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,7 @@ object typesReceiveMessageInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -59,7 +58,7 @@ object typesReceiveMessageInputMod {
     var AttributeNames: js.UndefOr[
         (js.Array[
           All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRetentionPeriod | ApproximateNumberOfMessages | ApproximateNumberOfMessagesNotVisible | CreatedTimestamp | LastModifiedTimestamp | QueueArn | ApproximateNumberOfMessagesDelayed | DelaySeconds | ReceiveMessageWaitTimeSeconds | RedrivePolicy | FifoQueue | ContentBasedDeduplication | KmsMasterKeyId | KmsDataKeyReusePeriodSeconds | String
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRetentionPeriod | ApproximateNumberOfMessages | ApproximateNumberOfMessagesNotVisible | CreatedTimestamp | LastModifiedTimestamp | QueueArn | ApproximateNumberOfMessagesDelayed | DelaySeconds | ReceiveMessageWaitTimeSeconds | RedrivePolicy | FifoQueue | ContentBasedDeduplication | KmsMasterKeyId | KmsDataKeyReusePeriodSeconds | String
         ])
       ] = js.undefined
@@ -72,7 +71,7 @@ object typesReceiveMessageInputMod {
     /**
       * <p>The name of the message attribute, where <i>N</i> is the index.</p> <ul> <li> <p>The name can contain alphanumeric characters and the underscore (<code>_</code>), hyphen (<code>-</code>), and period (<code>.</code>).</p> </li> <li> <p>The name is case-sensitive and must be unique among all attribute names for the message.</p> </li> <li> <p>The name must not start with AWS-reserved prefixes such as <code>AWS.</code> or <code>Amazon.</code> (or any casing variants).</p> </li> <li> <p>The name must not start or end with a period (<code>.</code>), and it should not have periods in succession (<code>..</code>).</p> </li> <li> <p>The name can be up to 256 characters long.</p> </li> </ul> <p>When using <code>ReceiveMessage</code>, you can send a list of attribute names to receive, or you can return all of the attributes by specifying <code>All</code> or <code>.*</code> in your request. You can also use all message attributes starting with a prefix, for example <code>bar.*</code>.</p>
       */
-    var MessageAttributeNames: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var MessageAttributeNames: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>The URL of the Amazon SQS queue from which messages are received.</p> <p>Queue URLs and names are case-sensitive.</p>
@@ -108,7 +107,7 @@ object typesReceiveMessageInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -120,7 +119,7 @@ object typesReceiveMessageInputMod {
       inline def setAttributeNames(
         value: (js.Array[
               All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRetentionPeriod | ApproximateNumberOfMessages | ApproximateNumberOfMessagesNotVisible | CreatedTimestamp | LastModifiedTimestamp | QueueArn | ApproximateNumberOfMessagesDelayed | DelaySeconds | ReceiveMessageWaitTimeSeconds | RedrivePolicy | FifoQueue | ContentBasedDeduplication | KmsMasterKeyId | KmsDataKeyReusePeriodSeconds | String
-            ]) | (Iterable[
+            ]) | (js.Iterable[
               All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRetentionPeriod | ApproximateNumberOfMessages | ApproximateNumberOfMessagesNotVisible | CreatedTimestamp | LastModifiedTimestamp | QueueArn | ApproximateNumberOfMessagesDelayed | DelaySeconds | ReceiveMessageWaitTimeSeconds | RedrivePolicy | FifoQueue | ContentBasedDeduplication | KmsMasterKeyId | KmsDataKeyReusePeriodSeconds | String
             ])
       ): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
@@ -129,17 +128,17 @@ object typesReceiveMessageInputMod {
       
       inline def setAttributeNamesVarargs(
         value: (All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRetentionPeriod | ApproximateNumberOfMessages | ApproximateNumberOfMessagesNotVisible | CreatedTimestamp | LastModifiedTimestamp | QueueArn | ApproximateNumberOfMessagesDelayed | DelaySeconds | ReceiveMessageWaitTimeSeconds | RedrivePolicy | FifoQueue | ContentBasedDeduplication | KmsMasterKeyId | KmsDataKeyReusePeriodSeconds | String)*
-      ): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+      ): Self = StObject.set(x, "AttributeNames", js.Array(value*))
       
       inline def setMaxNumberOfMessages(value: Double): Self = StObject.set(x, "MaxNumberOfMessages", value.asInstanceOf[js.Any])
       
       inline def setMaxNumberOfMessagesUndefined: Self = StObject.set(x, "MaxNumberOfMessages", js.undefined)
       
-      inline def setMessageAttributeNames(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "MessageAttributeNames", value.asInstanceOf[js.Any])
+      inline def setMessageAttributeNames(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "MessageAttributeNames", value.asInstanceOf[js.Any])
       
       inline def setMessageAttributeNamesUndefined: Self = StObject.set(x, "MessageAttributeNames", js.undefined)
       
-      inline def setMessageAttributeNamesVarargs(value: String*): Self = StObject.set(x, "MessageAttributeNames", js.Array(value :_*))
+      inline def setMessageAttributeNamesVarargs(value: String*): Self = StObject.set(x, "MessageAttributeNames", js.Array(value*))
       
       inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
       

@@ -7,17 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreatePortalRequest extends StObject {
   
   /**
+    * Contains the configuration information of an alarm created in an IoT SiteWise Monitor portal. You can use the alarm to monitor an asset property and get notified when the asset property value is outside a specified range. For more information, see Monitoring with alarms in the IoT SiteWise Application Guide.
+    */
+  var alarms: js.UndefOr[Alarms] = js.undefined
+  
+  /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The service to use to authenticate users to the portal. Choose from the following options:    SSO – The portal uses AWS Single Sign-On to authenticate users and manage user permissions. Before you can create a portal that uses AWS SSO, you must enable AWS SSO. For more information, see Enabling AWS SSO in the AWS IoT SiteWise User Guide. This option is only available in AWS Regions other than the China Regions.    IAM – The portal uses AWS Identity and Access Management (IAM) to authenticate users and manage user permissions. IAM users must have the iotsitewise:CreatePresignedPortalUrl permission to sign in to the portal. This option is only available in the China Regions.   You can't change this value after you create a portal. Default: SSO 
+    * The email address that sends alarm notifications.  If you use the IoT Events managed Lambda function to manage your emails, you must verify the sender email address in Amazon SES. 
+    */
+  var notificationSenderEmail: js.UndefOr[Email] = js.undefined
+  
+  /**
+    * The service to use to authenticate users to the portal. Choose from the following options:    SSO – The portal uses Amazon Web Services Single Sign On to authenticate users and manage user permissions. Before you can create a portal that uses Amazon Web Services SSO, you must enable Amazon Web Services SSO. For more information, see Enabling Amazon Web Services SSO in the IoT SiteWise User Guide. This option is only available in Amazon Web Services Regions other than the China Regions.    IAM – The portal uses Identity and Access Management to authenticate users and manage user permissions.   You can't change this value after you create a portal. Default: SSO 
     */
   var portalAuthMode: js.UndefOr[AuthMode] = js.undefined
   
   /**
-    * The AWS administrator's contact email address.
+    * The Amazon Web Services administrator's contact email address.
     */
   var portalContactEmail: Email
   
@@ -37,12 +47,12 @@ trait CreatePortalRequest extends StObject {
   var portalName: Name
   
   /**
-    * The ARN of a service role that allows the portal's users to access your AWS IoT SiteWise resources on your behalf. For more information, see Using service roles for AWS IoT SiteWise Monitor in the AWS IoT SiteWise User Guide.
+    * The ARN of a service role that allows the portal's users to access your IoT SiteWise resources on your behalf. For more information, see Using service roles for IoT SiteWise Monitor in the IoT SiteWise User Guide.
     */
   var roleArn: ARN
   
   /**
-    * A list of key-value pairs that contain metadata for the portal. For more information, see Tagging your AWS IoT SiteWise resources in the AWS IoT SiteWise User Guide.
+    * A list of key-value pairs that contain metadata for the portal. For more information, see Tagging your IoT SiteWise resources in the IoT SiteWise User Guide.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }
@@ -55,9 +65,17 @@ object CreatePortalRequest {
   
   extension [Self <: CreatePortalRequest](x: Self) {
     
+    inline def setAlarms(value: Alarms): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
+    
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    
+    inline def setNotificationSenderEmail(value: Email): Self = StObject.set(x, "notificationSenderEmail", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationSenderEmailUndefined: Self = StObject.set(x, "notificationSenderEmail", js.undefined)
     
     inline def setPortalAuthMode(value: AuthMode): Self = StObject.set(x, "portalAuthMode", value.asInstanceOf[js.Any])
     

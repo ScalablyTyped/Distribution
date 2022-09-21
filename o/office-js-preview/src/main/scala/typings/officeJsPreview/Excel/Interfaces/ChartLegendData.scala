@@ -16,81 +16,81 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartLegendData extends StObject {
   
   /**
-    *
     * Represents the formatting of a chart legend, which includes fill and font formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartLegendFormatData] = js.undefined
   
   /**
+    * Specifies the height, in points, of the legend on the chart. Value is `null` if the legend is not visible.
     *
-    * Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies the left value, in points, of the legend on the chart. Value is `null` if the legend is not visible.
     *
-    * Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Represents a collection of legendEntries in the legend.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var legendEntries: js.UndefOr[js.Array[ChartLegendEntryData]] = js.undefined
   
   /**
-    *
     * Specifies if the chart legend should overlap with the main body of the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var overlay: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the position of the legend on the chart. See `Excel.ChartLegendPosition` for details.
     *
-    * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var position: js.UndefOr[ChartLegendPosition | Invalid | Top | Bottom | Left | Right | Corner | Custom] = js.undefined
   
   /**
-    *
     * Specifies if the legend has a shadow on the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showShadow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the top of a chart legend.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var top: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies if the chart legend is visible.
     *
-    * Specifies if the ChartLegend is visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the width, in points, of the legend on the chart. Value is `null` if the legend is not visible.
     *
-    * Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var width: js.UndefOr[Double] = js.undefined
@@ -120,7 +120,7 @@ object ChartLegendData {
     
     inline def setLegendEntriesUndefined: Self = StObject.set(x, "legendEntries", js.undefined)
     
-    inline def setLegendEntriesVarargs(value: ChartLegendEntryData*): Self = StObject.set(x, "legendEntries", js.Array(value :_*))
+    inline def setLegendEntriesVarargs(value: ChartLegendEntryData*): Self = StObject.set(x, "legendEntries", js.Array(value*))
     
     inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     

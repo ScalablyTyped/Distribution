@@ -21,36 +21,36 @@ trait XMLHTTP60 extends StObject {
   def getResponseHeader(bstrHeader: String): String = js.native
   
   /** Register a complete event handler */
-  val onreadystatechange: js.Any = js.native
+  val onreadystatechange: Any = js.native
   
   /** Open HTTP connection */
   def open(bstrMethod: String, bstrUrl: String): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: Unit, bstrPassword: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Unit, bstrPassword: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Any, bstrUser: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Any, bstrUser: Any, bstrPassword: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Any, bstrUser: Unit, bstrPassword: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Any, bstrPassword: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Unit, bstrPassword: Any): Unit = js.native
   
   /** Get ready state */
   val readyState: Double = js.native
   
   /** Get response body */
-  val responseBody: js.Any = js.native
+  val responseBody: Any = js.native
   
   /** Get response body */
-  val responseStream: js.Any = js.native
+  val responseStream: Any = js.native
   
   /** Get response body */
   val responseText: String = js.native
   
   /** Get response body */
-  val responseXML: js.Any = js.native
+  val responseXML: Any = js.native
   
   /** Send HTTP request */
   def send(): Unit = js.native
-  def send(varBody: js.Any): Unit = js.native
+  def send(varBody: Any): Unit = js.native
   
   /** Add HTTP request header */
   def setRequestHeader(bstrHeader: String, bstrValue: String): Unit = js.native

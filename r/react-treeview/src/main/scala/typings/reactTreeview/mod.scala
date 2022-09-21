@@ -12,8 +12,7 @@ object mod {
   
   @JSImport("react-treeview", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[TreeProps, js.Any, js.Any]
+  open class ^ () extends Component[TreeProps, Any, Any]
   
   trait TreeProps
     extends StObject
@@ -66,5 +65,5 @@ object mod {
     }
   }
   
-  type TreeView = Component[TreeProps, js.Any, js.Any]
+  type TreeView = Component[TreeProps, Any, Any]
 }

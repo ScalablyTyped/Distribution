@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlLinearRing")
 @js.native
-class KmlLinearRing ()
+open class KmlLinearRing ()
   extends StObject
      with typings.googleEarth.google.earth.KmlLineString {
   

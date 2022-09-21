@@ -4,16 +4,17 @@ import typings.reactNative.mod.Animated.SpringAnimationConfig
 import typings.reactNative.mod.Animated.TimingAnimationConfig
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.RecursivePartial
 import typings.reactNativeElements.reactNativeElementsStrings.horizontal
 import typings.reactNativeElements.reactNativeElementsStrings.spring
 import typings.reactNativeElements.reactNativeElementsStrings.timing
 import typings.reactNativeElements.reactNativeElementsStrings.vertical
+import typings.reactNativeElements.sliderMod.Sizable
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.SliderProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/slider/Slider.SliderProps>> */
 trait RecursivePartialPartialSl extends StObject {
   
   var allowTouchTrack: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
@@ -23,6 +24,8 @@ trait RecursivePartialPartialSl extends StObject {
   var animationConfig: js.UndefOr[RecursivePartial[js.UndefOr[TimingAnimationConfig | SpringAnimationConfig]]] = js.undefined
   
   var animationType: js.UndefOr[RecursivePartial[js.UndefOr[spring | timing]]] = js.undefined
+  
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[ContainerHorizontal]]] = js.undefined
   
   var debugTouchArea: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
@@ -48,13 +51,13 @@ trait RecursivePartialPartialSl extends StObject {
   
   var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var thumbProps: js.UndefOr[RecursivePartial[js.UndefOr[js.Any]]] = js.undefined
+  var thumbProps: js.UndefOr[RecursivePartial[js.UndefOr[Any]]] = js.undefined
   
   var thumbStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
   var thumbTintColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var thumbTouchSize: js.UndefOr[RecursivePartial[js.UndefOr[Height]]] = js.undefined
+  var thumbTouchSize: js.UndefOr[RecursivePartial[js.UndefOr[Sizable]]] = js.undefined
   
   var trackStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
@@ -84,6 +87,10 @@ object RecursivePartialPartialSl {
     inline def setAnimationType(value: RecursivePartial[js.UndefOr[spring | timing]]): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
     inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
+    
+    inline def setContainerStyle(value: RecursivePartial[js.UndefOr[ContainerHorizontal]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     inline def setDebugTouchArea(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "debugTouchArea", value.asInstanceOf[js.Any])
     
@@ -133,7 +140,7 @@ object RecursivePartialPartialSl {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setThumbProps(value: RecursivePartial[js.UndefOr[js.Any]]): Self = StObject.set(x, "thumbProps", value.asInstanceOf[js.Any])
+    inline def setThumbProps(value: RecursivePartial[js.UndefOr[Any]]): Self = StObject.set(x, "thumbProps", value.asInstanceOf[js.Any])
     
     inline def setThumbPropsUndefined: Self = StObject.set(x, "thumbProps", js.undefined)
     
@@ -145,7 +152,7 @@ object RecursivePartialPartialSl {
     
     inline def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     
-    inline def setThumbTouchSize(value: RecursivePartial[js.UndefOr[Height]]): Self = StObject.set(x, "thumbTouchSize", value.asInstanceOf[js.Any])
+    inline def setThumbTouchSize(value: RecursivePartial[js.UndefOr[Sizable]]): Self = StObject.set(x, "thumbTouchSize", value.asInstanceOf[js.Any])
     
     inline def setThumbTouchSizeUndefined: Self = StObject.set(x, "thumbTouchSize", js.undefined)
     

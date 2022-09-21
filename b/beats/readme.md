@@ -10,10 +10,10 @@ A naive but generic beat-detection module.
 | ------------------ | :-------------: |
 | Full name          | beats |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 613 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 49.0 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/beats#readme)

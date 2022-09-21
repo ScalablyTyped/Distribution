@@ -33,6 +33,6 @@ object ListOutgoingCertificatesResponse {
     
     inline def setOutgoingCertificatesUndefined: Self = StObject.set(x, "outgoingCertificates", js.undefined)
     
-    inline def setOutgoingCertificatesVarargs(value: OutgoingCertificate*): Self = StObject.set(x, "outgoingCertificates", js.Array(value :_*))
+    inline def setOutgoingCertificatesVarargs(value: OutgoingCertificate*): Self = StObject.set(x, "outgoingCertificates", js.Array(value*))
   }
 }

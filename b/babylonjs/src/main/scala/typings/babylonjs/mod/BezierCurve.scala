@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "BezierCurve")
 @js.native
-class BezierCurve ()
+open class BezierCurve ()
   extends typings.babylonjs.legacyMod.BezierCurve
 /* static members */
 object BezierCurve {

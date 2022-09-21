@@ -9,7 +9,7 @@ trait OrgChartSpec extends StObject {
   /** The data containing the labels for all the nodes in the chart. Labels must be unique. */
   var labels: js.UndefOr[ChartData] = js.undefined
   
-  /** The color of the org chart nodes. */
+  /** The color of the org chart nodes. Deprecated: Use node_color_style. */
   var nodeColor: js.UndefOr[Color] = js.undefined
   
   /** The color of the org chart nodes. If node_color is also set, this field takes precedence. */
@@ -21,7 +21,7 @@ trait OrgChartSpec extends StObject {
   /** The data containing the label of the parent for the corresponding node. A blank value indicates that the node has no parent and is a top-level node. This field is optional. */
   var parentLabels: js.UndefOr[ChartData] = js.undefined
   
-  /** The color of the selected org chart nodes. */
+  /** The color of the selected org chart nodes. Deprecated: Use selected_node_color_style. */
   var selectedNodeColor: js.UndefOr[Color] = js.undefined
   
   /** The color of the selected org chart nodes. If selected_node_color is also set, this field takes precedence. */

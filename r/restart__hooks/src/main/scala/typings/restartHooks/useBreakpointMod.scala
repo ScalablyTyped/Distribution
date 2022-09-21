@@ -2,9 +2,6 @@ package typings.restartHooks
 
 import typings.restartHooks.anon.FnCall
 import typings.restartHooks.anon.PartialRecordDefaultBreak
-import typings.restartHooks.restartHooksBooleans.`true`
-import typings.restartHooks.restartHooksStrings.down
-import typings.restartHooks.restartHooksStrings.up
 import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -18,15 +15,13 @@ object useBreakpointMod {
   val ^ : js.Any = js.native
   
   inline def default(breakpointMap: PartialRecordDefaultBreak): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpointMap.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(breakpointMap: PartialRecordDefaultBreak, window: Window): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpointMap.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def default(breakpoint: DefaultBreakpoints): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(breakpoint: DefaultBreakpoints, direction: Unit, window: Window): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(breakpoint: DefaultBreakpoints, direction: BreakpointDirection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(breakpoint: DefaultBreakpoints, direction: BreakpointDirection, window: Window): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def createBreakpointHook[TKey /* <: String */](breakpointValues: Record[TKey, String | Double]): FnCall[TKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBreakpointHook")(breakpointValues.asInstanceOf[js.Any]).asInstanceOf[FnCall[TKey]]
-  
-  inline def default_down(breakpoint: DefaultBreakpoints, direction: down): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def default_true(breakpoint: DefaultBreakpoints, direction: `true`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def default_up(breakpoint: DefaultBreakpoints, direction: up): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoint.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.restartHooks.restartHooksBooleans.`true`
@@ -57,6 +52,8 @@ object useBreakpointMod {
     var xl: js.UndefOr[BreakpointDirection] = js.undefined
     
     var xs: js.UndefOr[BreakpointDirection] = js.undefined
+    
+    var xxl: js.UndefOr[BreakpointDirection] = js.undefined
   }
   object DefaultBreakpointMap {
     
@@ -86,6 +83,10 @@ object useBreakpointMod {
       inline def setXs(value: BreakpointDirection): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
       inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+      
+      inline def setXxl(value: BreakpointDirection): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
+      
+      inline def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
     }
   }
   
@@ -95,6 +96,7 @@ object useBreakpointMod {
     - typings.restartHooks.restartHooksStrings.md
     - typings.restartHooks.restartHooksStrings.lg
     - typings.restartHooks.restartHooksStrings.xl
+    - typings.restartHooks.restartHooksStrings.xxl
   */
   trait DefaultBreakpoints extends StObject
   object DefaultBreakpoints {
@@ -108,5 +110,7 @@ object useBreakpointMod {
     inline def xl: typings.restartHooks.restartHooksStrings.xl = "xl".asInstanceOf[typings.restartHooks.restartHooksStrings.xl]
     
     inline def xs: typings.restartHooks.restartHooksStrings.xs = "xs".asInstanceOf[typings.restartHooks.restartHooksStrings.xs]
+    
+    inline def xxl: typings.restartHooks.restartHooksStrings.xxl = "xxl".asInstanceOf[typings.restartHooks.restartHooksStrings.xxl]
   }
 }

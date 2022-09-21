@@ -25,13 +25,13 @@ object InstanceTreeNode {
     
     inline def setChildren(value: js.Array[InstanceTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: InstanceTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: InstanceTreeNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setDbId(value: Double): Self = StObject.set(x, "dbId", value.asInstanceOf[js.Any])
     
     inline def setFragments(value: js.Array[Double]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
     
-    inline def setFragmentsVarargs(value: Double*): Self = StObject.set(x, "fragments", js.Array(value :_*))
+    inline def setFragmentsVarargs(value: Double*): Self = StObject.set(x, "fragments", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -8,5 +8,5 @@ object listBranchesInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/ListBranchesInput", "ListBranchesInput")
   @js.native
-  val ListBranchesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListBranchesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

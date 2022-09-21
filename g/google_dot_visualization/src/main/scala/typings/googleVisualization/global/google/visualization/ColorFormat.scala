@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.ColorFormat")
 @js.native
-class ColorFormat ()
+open class ColorFormat ()
   extends StObject
      with typings.googleVisualization.google.visualization.ColorFormat {
   
@@ -20,7 +20,7 @@ class ColorFormat ()
     * @param toBgColor - The background color for cells holding values at the high end of the gradient. Values can be either '#RRGGBB' values or defined color constants, (example: '#FF0000' or 'red').
     */
   /* CompleteClass */
-  override def addGradientRange(from: js.Any, to: js.Any, color: String, fromBgColor: String, toBgColor: String): Unit = js.native
+  override def addGradientRange(from: Any, to: Any, color: String, fromBgColor: String, toBgColor: String): Unit = js.native
   
   /**
     * Specifies a foreground color and/or background color to a cell, depending on the cell value. Any cell with a value in the specified from—to range will be assigned color and bgcolor. It is important to realize that the range is non-inclusive, because creating a range from 1—1,000 and a second from 1,000— 2,000 will not cover the value 1,000!
@@ -31,7 +31,7 @@ class ColorFormat ()
     * @param bgcolor - The color to apply to the background of matching cells. Values can be either '#RRGGBB' values or defined color constants, (example: '#FF0000' or 'red').
     */
   /* CompleteClass */
-  override def addRange(from: js.Any, to: js.Any, color: String, bgcolor: String): Unit = js.native
+  override def addRange(from: Any, to: Any, color: String, bgcolor: String): Unit = js.native
   
   /**
     * Reformats the data in the specified column.

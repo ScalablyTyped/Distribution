@@ -8,6 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IWebXRControllerPointerSelectionOptions extends StObject {
   
   /**
+    * A function that will be called when a new laser pointer mesh is generated.
+    * This function should return a mesh that will be used as the laser pointer mesh.
+    * The height (y) of the mesh must be 1.
+    */
+  var customLasterPointerMeshGenerator: js.UndefOr[js.Function0[AbstractMesh]] = js.undefined
+  
+  /**
+    * A function that will be called when a new selection mesh is generated.
+    * This function should return a mesh that will be used as the selection mesh.
+    * The default is a torus with a 0.01 diameter and 0.0075 thickness .
+    */
+  var customSelectionMeshGenerator: js.UndefOr[js.Function0[Mesh]] = js.undefined
+  
+  /**
     * if provided, this scene will be used to render meshes.
     */
   var customUtilityLayerScene: js.UndefOr[Scene] = js.undefined
@@ -107,6 +121,14 @@ object IWebXRControllerPointerSelectionOptions {
   }
   
   extension [Self <: IWebXRControllerPointerSelectionOptions](x: Self) {
+    
+    inline def setCustomLasterPointerMeshGenerator(value: () => AbstractMesh): Self = StObject.set(x, "customLasterPointerMeshGenerator", js.Any.fromFunction0(value))
+    
+    inline def setCustomLasterPointerMeshGeneratorUndefined: Self = StObject.set(x, "customLasterPointerMeshGenerator", js.undefined)
+    
+    inline def setCustomSelectionMeshGenerator(value: () => Mesh): Self = StObject.set(x, "customSelectionMeshGenerator", js.Any.fromFunction0(value))
+    
+    inline def setCustomSelectionMeshGeneratorUndefined: Self = StObject.set(x, "customSelectionMeshGenerator", js.undefined)
     
     inline def setCustomUtilityLayerScene(value: Scene): Self = StObject.set(x, "customUtilityLayerScene", value.asInstanceOf[js.Any])
     

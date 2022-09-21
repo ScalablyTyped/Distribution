@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata of a matched search result.
-  */
 trait SchemaMetadata extends StObject {
   
   /**
     * The creation time for this document or object in the search result.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Options that specify how to display a structured data search result.
@@ -27,12 +24,12 @@ trait SchemaMetadata extends StObject {
   /**
     * Mime type of the search result.
     */
-  var mimeType: js.UndefOr[String] = js.undefined
+  var mimeType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Object type of the search result.
     */
-  var objectType: js.UndefOr[String] = js.undefined
+  var objectType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Owner (usually creator) of the document or object of the search result.
@@ -45,12 +42,14 @@ trait SchemaMetadata extends StObject {
   var source: js.UndefOr[SchemaSource] = js.undefined
   
   /**
-    * The last modified date for the object in the search result. If not set in
-    * the item, the value returned here is empty. When `updateTime` is used for
-    * calculating freshness and is not set, this value defaults to 2 years from
-    * the current time.
+    * The thumbnail URL of the result.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var thumbnailUrl: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The last modified date for the object in the search result. If not set in the item, the value returned here is empty. When `updateTime` is used for calculating freshness and is not set, this value defaults to 2 years from the current time.
+    */
+  var updateTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMetadata {
   
@@ -63,6 +62,8 @@ object SchemaMetadata {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setDisplayOptions(value: SchemaResultDisplayMetadata): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
@@ -73,13 +74,17 @@ object SchemaMetadata {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: SchemaNamedProperty*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaNamedProperty*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    
+    inline def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
     
     inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    
+    inline def setObjectTypeNull: Self = StObject.set(x, "objectType", null)
     
     inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
@@ -91,7 +96,15 @@ object SchemaMetadata {
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
+    inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailUrlNull: Self = StObject.set(x, "thumbnailUrl", null)
+    
+    inline def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
+    
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }

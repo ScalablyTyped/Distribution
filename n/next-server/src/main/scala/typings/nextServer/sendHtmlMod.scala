@@ -15,7 +15,7 @@ object sendHtmlMod {
   
   inline def sendHTML(
     req: IncomingMessage,
-    res: ServerResponse,
+    res: ServerResponse[IncomingMessage],
     html: String,
     hasGenerateEtagsPoweredByHeader: GenerateEtags
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendHTML")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], html.asInstanceOf[js.Any], hasGenerateEtagsPoweredByHeader.asInstanceOf[js.Any])).asInstanceOf[Unit]

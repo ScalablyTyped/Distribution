@@ -10,7 +10,7 @@ object setMod {
   
   @JSImport("ionic/commands/config/set", "ConfigSetCommand")
   @js.native
-  class ConfigSetCommand protected () extends BaseConfigCommand {
+  open class ConfigSetCommand protected () extends BaseConfigCommand {
     def this(namespace: INamespace) = this()
   }
 }

@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("@lumino/application", "Application")
   @js.native
-  class Application[T /* <: Widget */] protected () extends StObject {
+  open class Application[T /* <: Widget */] protected () extends StObject {
     /**
       * Construct a new application.
       *
@@ -26,13 +26,13 @@ object mod {
       */
     def this(options: IOptions[T]) = this()
     
-    /* private */ var _delegate: js.Any = js.native
+    /* private */ var _delegate: Any = js.native
     
-    /* private */ var _pluginMap: js.Any = js.native
+    /* private */ var _pluginMap: Any = js.native
     
-    /* private */ var _serviceMap: js.Any = js.native
+    /* private */ var _serviceMap: Any = js.native
     
-    /* private */ var _started: js.Any = js.native
+    /* private */ var _started: Any = js.native
     
     /**
       * Activate the plugin with the given id.
@@ -153,7 +153,7 @@ object mod {
       * If the plugin provides a service which has already been provided
       * by another plugin, the new service will override the old service.
       */
-    def registerPlugin(plugin: IPlugin[this.type, js.Any]): Unit = js.native
+    def registerPlugin(plugin: IPlugin[this.type, Any]): Unit = js.native
     
     /**
       * Register multiple plugins with the application.
@@ -163,7 +163,7 @@ object mod {
       * #### Notes
       * This calls `registerPlugin()` for each of the given plugins.
       */
-    def registerPlugins(plugins: js.Array[IPlugin[this.type, js.Any]]): Unit = js.native
+    def registerPlugins(plugins: js.Array[IPlugin[this.type, Any]]): Unit = js.native
     
     /**
       * Resolve an optional service of a given type.
@@ -334,13 +334,13 @@ object mod {
         
         inline def setIgnorePluginsUndefined: Self = StObject.set(x, "ignorePlugins", js.undefined)
         
-        inline def setIgnorePluginsVarargs(value: String*): Self = StObject.set(x, "ignorePlugins", js.Array(value :_*))
+        inline def setIgnorePluginsVarargs(value: String*): Self = StObject.set(x, "ignorePlugins", js.Array(value*))
         
         inline def setStartPlugins(value: js.Array[String]): Self = StObject.set(x, "startPlugins", value.asInstanceOf[js.Any])
         
         inline def setStartPluginsUndefined: Self = StObject.set(x, "startPlugins", js.undefined)
         
-        inline def setStartPluginsVarargs(value: String*): Self = StObject.set(x, "startPlugins", js.Array(value :_*))
+        inline def setStartPluginsVarargs(value: String*): Self = StObject.set(x, "startPlugins", js.Array(value*))
       }
     }
   }
@@ -364,7 +364,7 @@ object mod {
       * This function will not be called unless all of its required
       * services can be fulfilled.
       */
-    def activate(app: T, args: js.Any*): U | js.Promise[U]
+    def activate(app: T, args: Any*): U | js.Promise[U]
     
     /**
       * Whether the plugin should be activated on application start.
@@ -393,7 +393,7 @@ object mod {
       * following all required services. If an optional service cannot be
       * resolved, `null` will be passed in its place.
       */
-    var optional: js.UndefOr[js.Array[Token[js.Any]]] = js.undefined
+    var optional: js.UndefOr[js.Array[Token[Any]]] = js.undefined
     
     /**
       * The type of service provided by the plugin, if any.
@@ -417,18 +417,18 @@ object mod {
       * will be passed to the `activate()` function, in the order they
       * are specified in the `requires` array.
       */
-    var requires: js.UndefOr[js.Array[Token[js.Any]]] = js.undefined
+    var requires: js.UndefOr[js.Array[Token[Any]]] = js.undefined
   }
   object IPlugin {
     
-    inline def apply[T, U](activate: (T, /* repeated */ js.Any) => U | js.Promise[U], id: String): IPlugin[T, U] = {
+    inline def apply[T, U](activate: (T, /* repeated */ Any) => U | js.Promise[U], id: String): IPlugin[T, U] = {
       val __obj = js.Dynamic.literal(activate = js.Any.fromFunction2(activate), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPlugin[T, U]]
     }
     
     extension [Self <: IPlugin[?, ?], T, U](x: Self & (IPlugin[T, U])) {
       
-      inline def setActivate(value: (T, /* repeated */ js.Any) => U | js.Promise[U]): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
+      inline def setActivate(value: (T, /* repeated */ Any) => U | js.Promise[U]): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -436,21 +436,21 @@ object mod {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setOptional(value: js.Array[Token[js.Any]]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: js.Array[Token[Any]]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
       inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      inline def setOptionalVarargs(value: Token[js.Any]*): Self = StObject.set(x, "optional", js.Array(value :_*))
+      inline def setOptionalVarargs(value: Token[Any]*): Self = StObject.set(x, "optional", js.Array(value*))
       
       inline def setProvides(value: Token[U]): Self = StObject.set(x, "provides", value.asInstanceOf[js.Any])
       
       inline def setProvidesUndefined: Self = StObject.set(x, "provides", js.undefined)
       
-      inline def setRequires(value: js.Array[Token[js.Any]]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      inline def setRequires(value: js.Array[Token[Any]]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
       inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
       
-      inline def setRequiresVarargs(value: Token[js.Any]*): Self = StObject.set(x, "requires", js.Array(value :_*))
+      inline def setRequiresVarargs(value: Token[Any]*): Self = StObject.set(x, "requires", js.Array(value*))
     }
   }
 }

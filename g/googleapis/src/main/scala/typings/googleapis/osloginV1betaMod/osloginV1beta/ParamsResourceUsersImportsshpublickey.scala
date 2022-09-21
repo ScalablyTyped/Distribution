@@ -1,9 +1,5 @@
 package typings.googleapis.osloginV1betaMod.osloginV1beta
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +9,7 @@ trait ParamsResourceUsersImportsshpublickey
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The unique ID for the user in format `users/{user}`.
+    * The unique ID for the user in format `users/{user\}`.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -31,6 +22,11 @@ trait ParamsResourceUsersImportsshpublickey
     * Request body metadata
     */
   var requestBody: js.UndefOr[SchemaSshPublicKey] = js.undefined
+  
+  /**
+    * The view configures whether to retrieve security keys information.
+    */
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersImportsshpublickey {
   
@@ -40,10 +36,6 @@ object ParamsResourceUsersImportsshpublickey {
   }
   
   extension [Self <: ParamsResourceUsersImportsshpublickey](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
@@ -56,5 +48,9 @@ object ParamsResourceUsersImportsshpublickey {
     inline def setRequestBody(value: SchemaSshPublicKey): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

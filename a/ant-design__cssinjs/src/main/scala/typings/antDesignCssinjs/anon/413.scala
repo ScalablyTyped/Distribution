@@ -1,0 +1,22 @@
+package typings.antDesignCssinjs.anon
+
+import typings.antDesignCssinjs.keyframesMod.default
+import typings.csstype.mod.Property.AnimationName
+import typings.std.Extract
+import typings.std.NonNullable
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait `413` extends StObject {
+  
+  var value: js.UndefOr[
+    AnimationName | (js.Array[
+      (Extract[
+        js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]] | default], 
+        String
+      ]) | NonNullable[js.UndefOr[AnimationName]]
+    ]) | default
+  ] = js.native
+}

@@ -10,14 +10,14 @@ trait ObservableObject
   extends StObject
      with Observable {
   
-  def get(name: String): js.Any = js.native
+  def get(name: String): Any = js.native
   
   def init(): Unit = js.native
-  def init(value: js.Any): Unit = js.native
+  def init(value: Any): Unit = js.native
   
   def parent(): ObservableObject = js.native
   
-  def set(name: String, value: js.Any): Unit = js.native
+  def set(name: String, value: Any): Unit = js.native
   
   def toJSON(): js.Object = js.native
   

@@ -15,7 +15,7 @@ trait Integration extends StObject {
   /**
     * The service name to be used for this plugin.
     */
-  var service: js.UndefOr[String | js.Any] = js.undefined
+  var service: js.UndefOr[String | Any] = js.undefined
 }
 object Integration {
   
@@ -30,7 +30,7 @@ object Integration {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setService(value: String | js.Any): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String | Any): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }

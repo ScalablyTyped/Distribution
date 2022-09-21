@@ -13,7 +13,7 @@ object easingMod {
     * @see https://easings.net/#easeInBack
     * @param amplitude Defines the amplitude of the function
     */
-  class BackEase () extends EasingFunction {
+  open class BackEase () extends EasingFunction {
     def this(/** Defines the amplitude of the function */
     amplitude: Double) = this()
     
@@ -31,7 +31,7 @@ object easingMod {
     * @param x2 Defines the x component of the end tangent in the bezier curve
     * @param y2 Defines the y component of the end tangent in the bezier curve
     */
-  class BezierCurveEase () extends EasingFunction {
+  open class BezierCurveEase () extends EasingFunction {
     def this(/** Defines the x component of the start tangent in the bezier curve */
     x1: Double) = this()
     def this(
@@ -180,7 +180,7 @@ object easingMod {
     * @param bounces Defines the number of bounces
     * @param bounciness Defines the amplitude of the bounce
     */
-  class BounceEase () extends EasingFunction {
+  open class BounceEase () extends EasingFunction {
     def this(/** Defines the number of bounces */
     bounces: Double) = this()
     def this(
@@ -205,22 +205,22 @@ object easingMod {
   
   @JSImport("babylonjs/Animations/easing", "CircleEase")
   @js.native
-  class CircleEase () extends EasingFunction
+  open class CircleEase () extends EasingFunction
   
   @JSImport("babylonjs/Animations/easing", "CubicEase")
   @js.native
-  class CubicEase () extends EasingFunction
+  open class CubicEase () extends EasingFunction
   
   @JSImport("babylonjs/Animations/easing", "EasingFunction")
   @js.native
-  class EasingFunction ()
+  open class EasingFunction ()
     extends StObject
        with IEasingFunction {
     
-    /* private */ var _easingMode: js.Any = js.native
+    /* private */ var _easingMode: Any = js.native
     
     /**
-      * Given an input gradient between 0 and 1, this returns the corrseponding value
+      * Given an input gradient between 0 and 1, this returns the corresponding value
       * of the easing function.
       * The link below provides some of the most common examples of easing functions.
       * @see https://easings.net/
@@ -231,6 +231,7 @@ object easingMod {
     override def ease(gradient: Double): Double = js.native
     
     /**
+      * @param gradient
       * @hidden
       */
     def easeInCore(gradient: Double): Double = js.native
@@ -280,7 +281,7 @@ object easingMod {
     * @param oscillations Defines the number of oscillations
     * @param springiness Defines the amplitude of the oscillations
     */
-  class ElasticEase () extends EasingFunction {
+  open class ElasticEase () extends EasingFunction {
     def this(/** Defines the number of oscillations*/
     oscillations: Double) = this()
     def this(
@@ -310,7 +311,7 @@ object easingMod {
     * @see https://easings.net/#easeInExpo
     * @param exponent Defines the exponent of the function
     */
-  class ExponentialEase () extends EasingFunction {
+  open class ExponentialEase () extends EasingFunction {
     def this(/** Defines the exponent of the function */
     exponent: Double) = this()
     
@@ -325,7 +326,7 @@ object easingMod {
     * @see https://easings.net/#easeInQuad
     * @param power Defines the power of the function
     */
-  class PowerEase () extends EasingFunction {
+  open class PowerEase () extends EasingFunction {
     def this(/** Defines the power of the function */
     power: Double) = this()
     
@@ -335,24 +336,24 @@ object easingMod {
   
   @JSImport("babylonjs/Animations/easing", "QuadraticEase")
   @js.native
-  class QuadraticEase () extends EasingFunction
+  open class QuadraticEase () extends EasingFunction
   
   @JSImport("babylonjs/Animations/easing", "QuarticEase")
   @js.native
-  class QuarticEase () extends EasingFunction
+  open class QuarticEase () extends EasingFunction
   
   @JSImport("babylonjs/Animations/easing", "QuinticEase")
   @js.native
-  class QuinticEase () extends EasingFunction
+  open class QuinticEase () extends EasingFunction
   
   @JSImport("babylonjs/Animations/easing", "SineEase")
   @js.native
-  class SineEase () extends EasingFunction
+  open class SineEase () extends EasingFunction
   
   trait IEasingFunction extends StObject {
     
     /**
-      * Given an input gradient between 0 and 1, this returns the corrseponding value
+      * Given an input gradient between 0 and 1, this returns the corresponding value
       * of the easing function.
       * The link below provides some of the most common examples of easing functions.
       * @see https://easings.net/

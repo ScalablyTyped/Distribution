@@ -11,10 +11,10 @@ object mod {
   
   @JSImport("react-icon-base", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IconBaseProps, js.Object, js.Any]
+  open class default ()
+    extends Component[IconBaseProps, js.Object, Any]
   
-  type IconBaseClass = Component[IconBaseProps, js.Object, js.Any]
+  type IconBaseClass = Component[IconBaseProps, js.Object, Any]
   
   trait IconBaseProps
     extends StObject
@@ -23,7 +23,7 @@ object mod {
     var size: js.UndefOr[String | Double] = js.undefined
     
     @JSName("style")
-    var style_IconBaseProps: js.UndefOr[js.Any] = js.undefined
+    var style_IconBaseProps: js.UndefOr[Any] = js.undefined
   }
   object IconBaseProps {
     
@@ -38,7 +38,7 @@ object mod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

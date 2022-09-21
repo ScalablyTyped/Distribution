@@ -32,7 +32,7 @@ object mod {
     * - Allow an initial dot: ".prop.subprop" as well as "prop.subprop".
     * - Allow existential criterion by tailing question mark: "prop.subprop?".
     */
-  type Criterion[T] = (js.Function1[/* item */ T, js.Any]) | Double | String
+  type Criterion[T] = (js.Function1[/* item */ T, Any]) | Double | String
   
   /**
     * Sorting function.

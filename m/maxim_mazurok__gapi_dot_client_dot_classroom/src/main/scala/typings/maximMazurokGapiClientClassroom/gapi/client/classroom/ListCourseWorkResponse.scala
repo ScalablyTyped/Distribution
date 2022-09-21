@@ -25,7 +25,7 @@ object ListCourseWorkResponse {
     
     inline def setCourseWorkUndefined: Self = StObject.set(x, "courseWork", js.undefined)
     
-    inline def setCourseWorkVarargs(value: CourseWork*): Self = StObject.set(x, "courseWork", js.Array(value :_*))
+    inline def setCourseWorkVarargs(value: CourseWork*): Self = StObject.set(x, "courseWork", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

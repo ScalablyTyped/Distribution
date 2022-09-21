@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait MeetingSuggestion extends StObject {
   
@@ -69,7 +69,7 @@ object MeetingSuggestion {
     
     inline def setAttendees(value: js.Array[EmailUser]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
-    inline def setAttendeesVarargs(value: EmailUser*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: EmailUser*): Self = StObject.set(x, "attendees", js.Array(value*))
     
     inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

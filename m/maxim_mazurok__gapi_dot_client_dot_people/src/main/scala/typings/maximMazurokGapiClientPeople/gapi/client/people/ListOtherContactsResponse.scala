@@ -17,6 +17,9 @@ trait ListOtherContactsResponse extends StObject {
     * information.
     */
   var otherContacts: js.UndefOr[js.Array[Person]] = js.undefined
+  
+  /** The total number of other contacts in the list without pagination. */
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object ListOtherContactsResponse {
   
@@ -39,6 +42,10 @@ object ListOtherContactsResponse {
     
     inline def setOtherContactsUndefined: Self = StObject.set(x, "otherContacts", js.undefined)
     
-    inline def setOtherContactsVarargs(value: Person*): Self = StObject.set(x, "otherContacts", js.Array(value :_*))
+    inline def setOtherContactsVarargs(value: Person*): Self = StObject.set(x, "otherContacts", js.Array(value*))
+    
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

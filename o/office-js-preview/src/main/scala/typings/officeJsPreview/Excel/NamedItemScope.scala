@@ -7,17 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait NamedItemScope extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.4]
   */
 @JSGlobal("Excel.NamedItemScope")
 @js.native
 object NamedItemScope extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.4]
+    */
   @js.native
   sealed trait workbook
     extends StObject
        with NamedItemScope
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.4]
+    */
   @js.native
   sealed trait worksheet
     extends StObject

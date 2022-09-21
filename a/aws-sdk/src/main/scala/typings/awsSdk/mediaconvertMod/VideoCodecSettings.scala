@@ -12,7 +12,7 @@ trait VideoCodecSettings extends StObject {
   var Av1Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Av1Settings] = js.undefined
   
   /**
-    * Required when you set your output video codec to AVC-Intra. For more information about the AVC-I settings, see the relevant specification. For detailed information about SD and HD in AVC-I, see https://ieeexplore.ieee.org/document/7290936.
+    * Required when you choose AVC-Intra for your output video codec. For more information about the AVC-Intra settings, see the relevant specification. For detailed information about SD and HD in AVC-Intra, see https://ieeexplore.ieee.org/document/7290936. For information about 4K/2K in AVC-Intra, see https://pro-av.panasonic.net/en/avc-ultra/AVC-ULTRAoverview.pdf.
     */
   var AvcIntraSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AvcIntraSettings] = js.undefined
   
@@ -60,6 +60,11 @@ trait VideoCodecSettings extends StObject {
     * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value VP9.
     */
   var Vp9Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Vp9Settings] = js.undefined
+  
+  /**
+    * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value XAVC.
+    */
+  var XavcSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.XavcSettings] = js.undefined
 }
 object VideoCodecSettings {
   
@@ -113,5 +118,9 @@ object VideoCodecSettings {
     inline def setVp9Settings(value: Vp9Settings): Self = StObject.set(x, "Vp9Settings", value.asInstanceOf[js.Any])
     
     inline def setVp9SettingsUndefined: Self = StObject.set(x, "Vp9Settings", js.undefined)
+    
+    inline def setXavcSettings(value: XavcSettings): Self = StObject.set(x, "XavcSettings", value.asInstanceOf[js.Any])
+    
+    inline def setXavcSettingsUndefined: Self = StObject.set(x, "XavcSettings", js.undefined)
   }
 }

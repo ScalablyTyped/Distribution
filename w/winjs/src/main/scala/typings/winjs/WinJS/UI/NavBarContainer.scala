@@ -43,7 +43,7 @@ trait NavBarContainer extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this NavBarCommand. Call this method when the NavBarCommand is no longer needed. After calling this method, the NavBarCommand becomes unusable.
@@ -81,13 +81,13 @@ trait NavBarContainer extends StObject {
     * Occurs when a child NavBarCommand object's click event fires.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.index, detail.navbarcommand, detail.data.
     **/
-  def oninvoked(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def oninvoked(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs when the split button of a child NavBarCommand is opened or closed. A split button is toggled when the user navigates to another page or opens another split button.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.opened, detail.index, detail.navbarcommand, detail.data.
     **/
-  def onsplittoggle(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onsplittoggle(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Removes an event handler that the addEventListener method registered.

@@ -11,7 +11,7 @@ trait IgTextEditor
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets whether the editor value can become null.
@@ -184,7 +184,7 @@ trait IgTextEditor
     * Items in the list can be of type string.
     *
     */
-  var listItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var listItems: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
@@ -196,7 +196,7 @@ trait IgTextEditor
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the maximum length of a text which can be entered by the user.
@@ -362,13 +362,13 @@ trait IgTextEditor
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.undefined
+  var validatorOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after the editor value is changed. It can be raised after loosing focus or on spin events.
@@ -509,17 +509,17 @@ object IgTextEditor {
     
     inline def setListItemHoverDurationUndefined: Self = StObject.set(x, "listItemHoverDuration", js.undefined)
     
-    inline def setListItems(value: js.Array[js.Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+    inline def setListItems(value: js.Array[Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
     
     inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
     
-    inline def setListItemsVarargs(value: js.Any*): Self = StObject.set(x, "listItems", js.Array(value :_*))
+    inline def setListItemsVarargs(value: Any*): Self = StObject.set(x, "listItems", js.Array(value*))
     
     inline def setListWidth(value: Double): Self = StObject.set(x, "listWidth", value.asInstanceOf[js.Any])
     
     inline def setListWidthUndefined: Self = StObject.set(x, "listWidth", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -619,11 +619,11 @@ object IgTextEditor {
     
     inline def setToUpperUndefined: Self = StObject.set(x, "toUpper", js.undefined)
     
-    inline def setValidatorOptions(value: js.Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
+    inline def setValidatorOptions(value: Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
     
     inline def setValidatorOptionsUndefined: Self = StObject.set(x, "validatorOptions", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueChanged(value: (/* event */ Event, /* ui */ ValueChangedEventUIParam) => Unit): Self = StObject.set(x, "valueChanged", js.Any.fromFunction2(value))
     

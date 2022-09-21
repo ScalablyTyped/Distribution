@@ -3,7 +3,6 @@ package typings.apolloProtobufjs.global.protobuf
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.IConversionOptions
 import typings.apolloProtobufjs.mod.Properties
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new message instance.
   * @param [properties] Properties to set
   */
-class Message[T /* <: js.Object */] ()
+open class Message[T /* <: js.Object */] ()
   extends typings.apolloProtobufjs.mod.Message[T] {
   def this(properties: Properties[T]) = this()
 }
@@ -36,23 +35,23 @@ object Message {
     * @returns Message instance
     */
   inline def create[T /* <: typings.apolloProtobufjs.mod.Message[T] */](): typings.apolloProtobufjs.mod.Message[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloProtobufjs.mod.Message[T]]
-  inline def create[T /* <: typings.apolloProtobufjs.mod.Message[T] */](properties: StringDictionary[js.UndefOr[js.Any]]): typings.apolloProtobufjs.mod.Message[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Message[T]]
+  inline def create[T /* <: typings.apolloProtobufjs.mod.Message[T] */](properties: StringDictionary[Any]): typings.apolloProtobufjs.mod.Message[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Message[T]]
   
+  inline def decode[T /* <: typings.apolloProtobufjs.mod.Message[T] */](reader: js.typedarray.Uint8Array): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
   /**
     * Decodes a message of this type.
     * @param reader Reader or buffer to decode
     * @returns Decoded message
     */
   inline def decode[T /* <: typings.apolloProtobufjs.mod.Message[T] */](reader: typings.apolloProtobufjs.mod.Reader): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def decode[T /* <: typings.apolloProtobufjs.mod.Message[T] */](reader: Uint8Array): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
   
+  inline def decodeDelimited[T /* <: typings.apolloProtobufjs.mod.Message[T] */](reader: js.typedarray.Uint8Array): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
   /**
     * Decodes a message of this type preceeded by its length as a varint.
     * @param reader Reader or buffer to decode
     * @returns Decoded message
     */
   inline def decodeDelimited[T /* <: typings.apolloProtobufjs.mod.Message[T] */](reader: typings.apolloProtobufjs.mod.Reader): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def decodeDelimited[T /* <: typings.apolloProtobufjs.mod.Message[T] */](reader: Uint8Array): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Encodes a message of this type.
@@ -62,8 +61,8 @@ object Message {
     */
   inline def encode[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: T): typings.apolloProtobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
   inline def encode[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: T, writer: typings.apolloProtobufjs.mod.Writer): typings.apolloProtobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
-  inline def encode[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: StringDictionary[js.UndefOr[js.Any]]): typings.apolloProtobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
-  inline def encode[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: StringDictionary[js.UndefOr[js.Any]], writer: typings.apolloProtobufjs.mod.Writer): typings.apolloProtobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
+  inline def encode[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: StringDictionary[Any]): typings.apolloProtobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
+  inline def encode[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: StringDictionary[Any], writer: typings.apolloProtobufjs.mod.Writer): typings.apolloProtobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
   
   /**
     * Encodes a message of this type preceeded by its length as a varint.
@@ -73,15 +72,15 @@ object Message {
     */
   inline def encodeDelimited[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: T): typings.apolloProtobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
   inline def encodeDelimited[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: T, writer: typings.apolloProtobufjs.mod.Writer): typings.apolloProtobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
-  inline def encodeDelimited[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: StringDictionary[js.UndefOr[js.Any]]): typings.apolloProtobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
-  inline def encodeDelimited[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: StringDictionary[js.UndefOr[js.Any]], writer: typings.apolloProtobufjs.mod.Writer): typings.apolloProtobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
+  inline def encodeDelimited[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: StringDictionary[Any]): typings.apolloProtobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
+  inline def encodeDelimited[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: StringDictionary[Any], writer: typings.apolloProtobufjs.mod.Writer): typings.apolloProtobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Writer]
   
   /**
     * Creates a new message of this type from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Message instance
     */
-  inline def fromObject[T /* <: typings.apolloProtobufjs.mod.Message[T] */](`object`: StringDictionary[js.UndefOr[js.Any]]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def fromObject[T /* <: typings.apolloProtobufjs.mod.Message[T] */](`object`: StringDictionary[Any]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Creates a plain object from a message of this type. Also converts values to other types if specified.
@@ -89,13 +88,13 @@ object Message {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: T): StringDictionary[js.UndefOr[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[js.Any]]]
-  inline def toObject[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: T, options: IConversionOptions): StringDictionary[js.UndefOr[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.UndefOr[js.Any]]]
+  inline def toObject[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: T): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject[T /* <: typings.apolloProtobufjs.mod.Message[T] */](message: T, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a message of this type.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.UndefOr[js.Any]]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

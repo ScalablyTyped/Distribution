@@ -5,7 +5,6 @@ import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.AT_S
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.AT_TIMESTAMP
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.LATEST
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.TRIM_HORIZON
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object typesStartingPositionMod {
     /**
       * _Timestamp shape
       */
-    var Timestamp: js.UndefOr[Date | String | Double] = js.undefined
+    var Timestamp: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * _ShardIteratorType shape
@@ -42,7 +41,7 @@ object typesStartingPositionMod {
       
       inline def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
       
-      inline def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
       
@@ -58,7 +57,7 @@ object typesStartingPositionMod {
       * _Timestamp shape
       */
     @JSName("Timestamp")
-    var Timestamp_UnmarshalledStartingPosition: js.UndefOr[Date] = js.undefined
+    var Timestamp_UnmarshalledStartingPosition: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledStartingPosition {
     
@@ -69,7 +68,7 @@ object typesStartingPositionMod {
     
     extension [Self <: UnmarshalledStartingPosition](x: Self) {
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     }

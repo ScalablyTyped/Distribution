@@ -10,12 +10,10 @@ object enhancedButtonMod {
   
   @JSImport("material-ui/internal/EnhancedButton", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[EnhancedButtonProps, js.Object, js.Any]
+  open class default ()
+    extends Component[EnhancedButtonProps, js.Object, Any]
   
-  @js.native
-  trait EnhancedButton
-    extends Component[EnhancedButtonProps, js.Object, js.Any]
+  type EnhancedButton = Component[EnhancedButtonProps, js.Object, Any]
   
   trait EnhancedButtonProps
     extends StObject

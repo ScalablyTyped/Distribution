@@ -38,7 +38,7 @@ trait Range extends StObject {
   def apply(RowIndex: Double): Range = js.native
   def apply(RowIndex: Double, ColumnIndex: Double): Range = js.native
   
-  def Activate(): js.Any = js.native
+  def Activate(): Any = js.native
   
   def AddComment(): typings.activexExcel.Excel.Comment = js.native
   def AddComment(Text: String): typings.activexExcel.Excel.Comment = js.native
@@ -293,26 +293,26 @@ trait Range extends StObject {
     RelativeTo: Range
   ): String = js.native
   
-  def AdvancedFilter(Action: XlFilterAction): js.Any = js.native
-  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Unit, CopyToRange: Unit, Unique: Boolean): js.Any = js.native
-  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Range): js.Any = js.native
-  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Range, CopyToRange: Unit, Unique: Boolean): js.Any = js.native
+  def AdvancedFilter(Action: XlFilterAction): Any = js.native
+  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Unit, CopyToRange: Unit, Unique: Boolean): Any = js.native
+  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Range): Any = js.native
+  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Range, CopyToRange: Unit, Unique: Boolean): Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`): Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: Unit, CopyToRange: Unit, Unique: Boolean): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Unit, CopyToRange: Unit, Unique: Boolean): Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: Unit, CopyToRange: Range): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Unit, CopyToRange: Range): Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: Unit, CopyToRange: Range, Unique: Boolean): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Unit, CopyToRange: Range, Unique: Boolean): Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range): Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Unit, Unique: Boolean): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Unit, Unique: Boolean): Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Range): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Range): Any = js.native
   @JSName("AdvancedFilter")
-  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Range, Unique: Boolean): js.Any = js.native
+  def AdvancedFilter_2(Action: `2`, CriteriaRange: Range, CopyToRange: Range, Unique: Boolean): Any = js.native
   
   def AllocateChanges(): Unit = js.native
   
@@ -329,9 +329,9 @@ trait Range extends StObject {
     OmitRow: js.UndefOr[Boolean],
     Order: js.UndefOr[XlApplyNamesOrder],
     AppendLast: js.UndefOr[Boolean]
-  ): js.Any = js.native
+  ): Any = js.native
   
-  def ApplyOutlineStyles(): js.Any = js.native
+  def ApplyOutlineStyles(): Any = js.native
   
   def Areas(Index: Double): Range = js.native
   @JSName("Areas")
@@ -340,178 +340,178 @@ trait Range extends StObject {
   def AutoComplete(String: String): String = js.native
   
   /** @param Type [Type=0] */
-  def AutoFill(Destination: Range): js.Any = js.native
-  def AutoFill(Destination: Range, Type: XlAutoFillType): js.Any = js.native
+  def AutoFill(Destination: Range): Any = js.native
+  def AutoFill(Destination: Range, Type: XlAutoFillType): Any = js.native
   
   /** @param Operator [Operator=1] */
-  def AutoFilter(Field: Double, Criteria1: String): js.Any = js.native
-  def AutoFilter(Field: Double, Criteria1: String, Operator: Unit, Criteria2: String): js.Any = js.native
-  def AutoFilter(Field: Double, Criteria1: String, Operator: Unit, Criteria2: String, VisibleDropDown: Boolean): js.Any = js.native
-  def AutoFilter(Field: Double, Criteria1: String, Operator: Unit, Criteria2: Unit, VisibleDropDown: Boolean): js.Any = js.native
-  def AutoFilter(Field: Double, Criteria1: String, Operator: XlAutoFilterOperator): js.Any = js.native
-  def AutoFilter(Field: Double, Criteria1: String, Operator: XlAutoFilterOperator, Criteria2: String): js.Any = js.native
+  def AutoFilter(Field: Double, Criteria1: String): Any = js.native
+  def AutoFilter(Field: Double, Criteria1: String, Operator: Unit, Criteria2: String): Any = js.native
+  def AutoFilter(Field: Double, Criteria1: String, Operator: Unit, Criteria2: String, VisibleDropDown: Boolean): Any = js.native
+  def AutoFilter(Field: Double, Criteria1: String, Operator: Unit, Criteria2: Unit, VisibleDropDown: Boolean): Any = js.native
+  def AutoFilter(Field: Double, Criteria1: String, Operator: XlAutoFilterOperator): Any = js.native
+  def AutoFilter(Field: Double, Criteria1: String, Operator: XlAutoFilterOperator, Criteria2: String): Any = js.native
   def AutoFilter(
     Field: Double,
     Criteria1: String,
     Operator: XlAutoFilterOperator,
     Criteria2: String,
     VisibleDropDown: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def AutoFilter(
     Field: Double,
     Criteria1: String,
     Operator: XlAutoFilterOperator,
     Criteria2: Unit,
     VisibleDropDown: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   
-  def AutoFit(): js.Any = js.native
+  def AutoFit(): Any = js.native
   
   /** @param Format [Format=1] */
   def AutoFormat(
     Format: js.UndefOr[XlRangeAutoFormat],
-    Number: js.UndefOr[js.Any],
-    Font: js.UndefOr[js.Any],
-    Alignment: js.UndefOr[js.Any],
-    Border: js.UndefOr[js.Any],
-    Pattern: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Number: js.UndefOr[Any],
+    Font: js.UndefOr[Any],
+    Alignment: js.UndefOr[Any],
+    Border: js.UndefOr[Any],
+    Pattern: js.UndefOr[Any],
+    Width: js.UndefOr[Any]
+  ): Any = js.native
   
-  def AutoOutline(): js.Any = js.native
+  def AutoOutline(): Any = js.native
   
   /**
     * @param Weight [Weight=2]
     * @param ColorIndex [ColorIndex=-4105]
     */
-  def BorderAround(): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Double): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: Double): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: XlThemeColor): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: Double): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: XlThemeColor): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Double): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Double, ThemeColor: Double): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Double, ThemeColor: XlThemeColor): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: Double): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: XlThemeColor): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double, ThemeColor: Double): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double, ThemeColor: XlThemeColor): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Unit, ThemeColor: Double): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Unit, ThemeColor: XlThemeColor): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Double): js.Any = js.native
+  def BorderAround(): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Double): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: Double): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: XlThemeColor): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: Double): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: XlThemeColor): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Double): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Double, ThemeColor: Double): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Double, ThemeColor: XlThemeColor): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: Double): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: Unit, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: XlThemeColor): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double, ThemeColor: Double): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double, ThemeColor: XlThemeColor): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Unit, ThemeColor: Double): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: Unit, Color: Unit, ThemeColor: XlThemeColor): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: XlColorIndex): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Double): Any = js.native
   def BorderAround(
     LineStyle: Unit,
     Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Double,
     ThemeColor: Double
-  ): js.Any = js.native
+  ): Any = js.native
   def BorderAround(
     LineStyle: Unit,
     Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Double,
     ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: Double): js.Any = js.native
+  ): Any = js.native
+  def BorderAround(LineStyle: Unit, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: Double): Any = js.native
   def BorderAround(
     LineStyle: Unit,
     Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Unit,
     ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Double): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: Double): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: XlThemeColor): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: Double): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: XlThemeColor): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex, Color: Double): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex, Color: Double, ThemeColor: Double): js.Any = js.native
+  ): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Double): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: Double): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Double, ThemeColor: XlThemeColor): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: Double): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: Unit, Color: Unit, ThemeColor: XlThemeColor): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex, Color: Double): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex, Color: Double, ThemeColor: Double): Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: Unit,
     ColorIndex: XlColorIndex,
     Color: Double,
     ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: Double): js.Any = js.native
+  ): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: Unit, ColorIndex: XlColorIndex, Color: Unit, ThemeColor: Double): Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: Unit,
     ColorIndex: XlColorIndex,
     Color: Unit,
     ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double): js.Any = js.native
+  ): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: Unit, Color: Double): Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
     ColorIndex: Unit,
     Color: Double,
     ThemeColor: Double
-  ): js.Any = js.native
+  ): Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
     ColorIndex: Unit,
     Color: Double,
     ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: Unit, Color: Unit, ThemeColor: Double): js.Any = js.native
+  ): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: Unit, Color: Unit, ThemeColor: Double): Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
     ColorIndex: Unit,
     Color: Unit,
     ThemeColor: XlThemeColor
-  ): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
-  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Double): js.Any = js.native
+  ): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: XlColorIndex): Any = js.native
+  def BorderAround(LineStyle: XlLineStyle, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Double): Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Double,
     ThemeColor: Double
-  ): js.Any = js.native
+  ): Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Double,
     ThemeColor: XlThemeColor
-  ): js.Any = js.native
+  ): Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Unit,
     ThemeColor: Double
-  ): js.Any = js.native
+  ): Any = js.native
   def BorderAround(
     LineStyle: XlLineStyle,
     Weight: XlBorderWeight,
     ColorIndex: XlColorIndex,
     Color: Unit,
     ThemeColor: XlThemeColor
-  ): js.Any = js.native
+  ): Any = js.native
   
   def Borders(Index: XlBordersIndex): Border = js.native
   @JSName("Borders")
   val Borders_Original: Borders = js.native
   
-  def Calculate(): js.Any = js.native
+  def Calculate(): Any = js.native
   
-  def CalculateRowMajorOrder(): js.Any = js.native
+  def CalculateRowMajorOrder(): Any = js.native
   
   def Cells(Address: String): Range = js.native
   def Cells(RowIndex: Double): Range = js.native
@@ -524,41 +524,41 @@ trait Range extends StObject {
   def Characters(Start: Double, Length: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Unit, Length: Double): typings.activexExcel.Excel.Characters = js.native
   
-  def CheckSpelling(): js.Any = js.native
-  def CheckSpelling(CustomDictionary: String): js.Any = js.native
-  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean): js.Any = js.native
-  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): js.Any = js.native
+  def CheckSpelling(): Any = js.native
+  def CheckSpelling(CustomDictionary: String): Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean): Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): Any = js.native
   def CheckSpelling(
     CustomDictionary: String,
     IgnoreUppercase: Boolean,
     AlwaysSuggest: Boolean,
     SpellLang: MsoLanguageID
-  ): js.Any = js.native
-  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): js.Any = js.native
-  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Boolean): js.Any = js.native
-  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): js.Any = js.native
-  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Boolean): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): js.Any = js.native
+  ): Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Boolean): Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): Any = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Boolean): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): Any = js.native
   
-  def Clear(): js.Any = js.native
+  def Clear(): Any = js.native
   
   def ClearComments(): Unit = js.native
   
-  def ClearContents(): js.Any = js.native
+  def ClearContents(): Any = js.native
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): Any = js.native
   
   def ClearHyperlinks(): Unit = js.native
   
-  def ClearNotes(): js.Any = js.native
+  def ClearNotes(): Any = js.native
   
-  def ClearOutline(): js.Any = js.native
+  def ClearOutline(): Any = js.native
   
   val Column: Double = js.native
   
@@ -574,112 +574,112 @@ trait Range extends StObject {
   
   val Comment: typings.activexExcel.Excel.Comment = js.native
   
-  def Consolidate(): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean, LeftColumn: Boolean): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean, LeftColumn: Boolean, CreateLinks: Boolean): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean, LeftColumn: Unit, CreateLinks: Boolean): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: Unit, TopRow: Unit, LeftColumn: Boolean): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: Unit, TopRow: Unit, LeftColumn: Boolean, CreateLinks: Boolean): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: Unit, TopRow: Unit, LeftColumn: Unit, CreateLinks: Boolean): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: XlConsolidationFunction): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: XlConsolidationFunction, TopRow: Boolean): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: XlConsolidationFunction, TopRow: Boolean, LeftColumn: Boolean): js.Any = js.native
+  def Consolidate(): Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean): Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean, LeftColumn: Boolean): Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean, LeftColumn: Boolean, CreateLinks: Boolean): Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Boolean, LeftColumn: Unit, CreateLinks: Boolean): Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Unit, LeftColumn: Boolean): Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Unit, LeftColumn: Boolean, CreateLinks: Boolean): Any = js.native
+  def Consolidate(Sources: Unit, Function: Unit, TopRow: Unit, LeftColumn: Unit, CreateLinks: Boolean): Any = js.native
+  def Consolidate(Sources: Unit, Function: XlConsolidationFunction): Any = js.native
+  def Consolidate(Sources: Unit, Function: XlConsolidationFunction, TopRow: Boolean): Any = js.native
+  def Consolidate(Sources: Unit, Function: XlConsolidationFunction, TopRow: Boolean, LeftColumn: Boolean): Any = js.native
   def Consolidate(
     Sources: Unit,
     Function: XlConsolidationFunction,
     TopRow: Boolean,
     LeftColumn: Boolean,
     CreateLinks: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Consolidate(
     Sources: Unit,
     Function: XlConsolidationFunction,
     TopRow: Boolean,
     LeftColumn: Unit,
     CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(Sources: Unit, Function: XlConsolidationFunction, TopRow: Unit, LeftColumn: Boolean): js.Any = js.native
+  ): Any = js.native
+  def Consolidate(Sources: Unit, Function: XlConsolidationFunction, TopRow: Unit, LeftColumn: Boolean): Any = js.native
   def Consolidate(
     Sources: Unit,
     Function: XlConsolidationFunction,
     TopRow: Unit,
     LeftColumn: Boolean,
     CreateLinks: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Consolidate(
     Sources: Unit,
     Function: XlConsolidationFunction,
     TopRow: Unit,
     LeftColumn: Unit,
     CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(Sources: SafeArray[String]): js.Any = js.native
-  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Boolean): js.Any = js.native
-  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Boolean, LeftColumn: Boolean): js.Any = js.native
+  ): Any = js.native
+  def Consolidate(Sources: SafeArray[String]): Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Boolean): Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Boolean, LeftColumn: Boolean): Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
     Function: Unit,
     TopRow: Boolean,
     LeftColumn: Boolean,
     CreateLinks: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
     Function: Unit,
     TopRow: Boolean,
     LeftColumn: Unit,
     CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Unit, LeftColumn: Boolean): js.Any = js.native
+  ): Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Unit, LeftColumn: Boolean): Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
     Function: Unit,
     TopRow: Unit,
     LeftColumn: Boolean,
     CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Unit, LeftColumn: Unit, CreateLinks: Boolean): js.Any = js.native
-  def Consolidate(Sources: SafeArray[String], Function: XlConsolidationFunction): js.Any = js.native
-  def Consolidate(Sources: SafeArray[String], Function: XlConsolidationFunction, TopRow: Boolean): js.Any = js.native
+  ): Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: Unit, TopRow: Unit, LeftColumn: Unit, CreateLinks: Boolean): Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: XlConsolidationFunction): Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: XlConsolidationFunction, TopRow: Boolean): Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
     Function: XlConsolidationFunction,
     TopRow: Boolean,
     LeftColumn: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
     Function: XlConsolidationFunction,
     TopRow: Boolean,
     LeftColumn: Boolean,
     CreateLinks: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
     Function: XlConsolidationFunction,
     TopRow: Boolean,
     LeftColumn: Unit,
     CreateLinks: Boolean
-  ): js.Any = js.native
-  def Consolidate(Sources: SafeArray[String], Function: XlConsolidationFunction, TopRow: Unit, LeftColumn: Boolean): js.Any = js.native
+  ): Any = js.native
+  def Consolidate(Sources: SafeArray[String], Function: XlConsolidationFunction, TopRow: Unit, LeftColumn: Boolean): Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
     Function: XlConsolidationFunction,
     TopRow: Unit,
     LeftColumn: Boolean,
     CreateLinks: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Consolidate(
     Sources: SafeArray[String],
     Function: XlConsolidationFunction,
     TopRow: Unit,
     LeftColumn: Unit,
     CreateLinks: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   
-  def Copy(): js.Any = js.native
-  def Copy(Destination: Range): js.Any = js.native
+  def Copy(): Any = js.native
+  def Copy(Destination: Range): Any = js.native
   
   def CopyFromRecordset(Data: Recordset): Double = js.native
   def CopyFromRecordset(Data: Recordset, MaxRows: Double): Double = js.native
@@ -694,201 +694,201 @@ trait Range extends StObject {
     * @param Appearance [Appearance=1]
     * @param Format [Format=-4147]
     */
-  def CopyPicture(): js.Any = js.native
-  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): js.Any = js.native
-  def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
-  def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
+  def CopyPicture(): Any = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): Any = js.native
+  def CopyPicture(Appearance: XlPictureAppearance): Any = js.native
+  def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): Any = js.native
   
   val Count: Double = js.native
   
   val CountLarge: Double = js.native
   
-  def CreateNames(): js.Any = js.native
-  def CreateNames(Top: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: Boolean, Bottom: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: Boolean, Bottom: Boolean, Right: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: Boolean, Bottom: Unit, Right: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: Unit, Bottom: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: Unit, Bottom: Boolean, Right: Boolean): js.Any = js.native
-  def CreateNames(Top: Boolean, Left: Unit, Bottom: Unit, Right: Boolean): js.Any = js.native
-  def CreateNames(Top: Unit, Left: Boolean): js.Any = js.native
-  def CreateNames(Top: Unit, Left: Boolean, Bottom: Boolean): js.Any = js.native
-  def CreateNames(Top: Unit, Left: Boolean, Bottom: Boolean, Right: Boolean): js.Any = js.native
-  def CreateNames(Top: Unit, Left: Boolean, Bottom: Unit, Right: Boolean): js.Any = js.native
-  def CreateNames(Top: Unit, Left: Unit, Bottom: Boolean): js.Any = js.native
-  def CreateNames(Top: Unit, Left: Unit, Bottom: Boolean, Right: Boolean): js.Any = js.native
-  def CreateNames(Top: Unit, Left: Unit, Bottom: Unit, Right: Boolean): js.Any = js.native
+  def CreateNames(): Any = js.native
+  def CreateNames(Top: Boolean): Any = js.native
+  def CreateNames(Top: Boolean, Left: Boolean): Any = js.native
+  def CreateNames(Top: Boolean, Left: Boolean, Bottom: Boolean): Any = js.native
+  def CreateNames(Top: Boolean, Left: Boolean, Bottom: Boolean, Right: Boolean): Any = js.native
+  def CreateNames(Top: Boolean, Left: Boolean, Bottom: Unit, Right: Boolean): Any = js.native
+  def CreateNames(Top: Boolean, Left: Unit, Bottom: Boolean): Any = js.native
+  def CreateNames(Top: Boolean, Left: Unit, Bottom: Boolean, Right: Boolean): Any = js.native
+  def CreateNames(Top: Boolean, Left: Unit, Bottom: Unit, Right: Boolean): Any = js.native
+  def CreateNames(Top: Unit, Left: Boolean): Any = js.native
+  def CreateNames(Top: Unit, Left: Boolean, Bottom: Boolean): Any = js.native
+  def CreateNames(Top: Unit, Left: Boolean, Bottom: Boolean, Right: Boolean): Any = js.native
+  def CreateNames(Top: Unit, Left: Boolean, Bottom: Unit, Right: Boolean): Any = js.native
+  def CreateNames(Top: Unit, Left: Unit, Bottom: Boolean): Any = js.native
+  def CreateNames(Top: Unit, Left: Unit, Bottom: Boolean, Right: Boolean): Any = js.native
+  def CreateNames(Top: Unit, Left: Unit, Bottom: Unit, Right: Boolean): Any = js.native
   
   /** @param Appearance [Appearance=1] */
-  def CreatePublisher(Edition: js.Any): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: js.Any): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: js.Any, ContainsBIFF: js.Any): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: js.Any, ContainsBIFF: js.Any, ContainsRTF: js.Any): js.Any = js.native
+  def CreatePublisher(Edition: Any): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: Unit, ContainsPICT: Any): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: Unit, ContainsPICT: Any, ContainsBIFF: Any): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: Unit, ContainsPICT: Any, ContainsBIFF: Any, ContainsRTF: Any): Any = js.native
   def CreatePublisher(
-    Edition: js.Any,
+    Edition: Any,
     Appearance: Unit,
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
+    ContainsPICT: Any,
+    ContainsBIFF: Any,
+    ContainsRTF: Any,
+    ContainsVALU: Any
+  ): Any = js.native
   def CreatePublisher(
-    Edition: js.Any,
+    Edition: Any,
     Appearance: Unit,
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.Any,
+    ContainsPICT: Any,
+    ContainsBIFF: Any,
     ContainsRTF: Unit,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: js.Any, ContainsBIFF: Unit, ContainsRTF: js.Any): js.Any = js.native
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: Unit, ContainsPICT: Any, ContainsBIFF: Unit, ContainsRTF: Any): Any = js.native
   def CreatePublisher(
-    Edition: js.Any,
+    Edition: Any,
     Appearance: Unit,
-    ContainsPICT: js.Any,
+    ContainsPICT: Any,
     ContainsBIFF: Unit,
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
+    ContainsRTF: Any,
+    ContainsVALU: Any
+  ): Any = js.native
   def CreatePublisher(
-    Edition: js.Any,
+    Edition: Any,
     Appearance: Unit,
-    ContainsPICT: js.Any,
+    ContainsPICT: Any,
     ContainsBIFF: Unit,
     ContainsRTF: Unit,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: Unit, ContainsBIFF: js.Any): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: Unit, ContainsBIFF: js.Any, ContainsRTF: js.Any): js.Any = js.native
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: Unit, ContainsPICT: Unit, ContainsBIFF: Any): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: Unit, ContainsPICT: Unit, ContainsBIFF: Any, ContainsRTF: Any): Any = js.native
   def CreatePublisher(
-    Edition: js.Any,
+    Edition: Any,
     Appearance: Unit,
     ContainsPICT: Unit,
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
+    ContainsBIFF: Any,
+    ContainsRTF: Any,
+    ContainsVALU: Any
+  ): Any = js.native
   def CreatePublisher(
-    Edition: js.Any,
+    Edition: Any,
     Appearance: Unit,
     ContainsPICT: Unit,
-    ContainsBIFF: js.Any,
+    ContainsBIFF: Any,
     ContainsRTF: Unit,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: Unit, ContainsPICT: Unit, ContainsBIFF: Unit, ContainsRTF: js.Any): js.Any = js.native
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: Unit, ContainsPICT: Unit, ContainsBIFF: Unit, ContainsRTF: Any): Any = js.native
   def CreatePublisher(
-    Edition: js.Any,
-    Appearance: Unit,
-    ContainsPICT: Unit,
-    ContainsBIFF: Unit,
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
+    Edition: Any,
     Appearance: Unit,
     ContainsPICT: Unit,
     ContainsBIFF: Unit,
-    ContainsRTF: Unit,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance, ContainsPICT: js.Any): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance, ContainsPICT: js.Any, ContainsBIFF: js.Any): js.Any = js.native
+    ContainsRTF: Any,
+    ContainsVALU: Any
+  ): Any = js.native
   def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: js.Any,
-    ContainsRTF: Unit,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: Unit,
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: Unit,
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: js.Any,
-    ContainsBIFF: Unit,
-    ContainsRTF: Unit,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(Edition: js.Any, Appearance: XlPictureAppearance, ContainsPICT: Unit, ContainsBIFF: js.Any): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: Unit,
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: Unit,
-    ContainsBIFF: js.Any,
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: Unit,
-    ContainsBIFF: js.Any,
-    ContainsRTF: Unit,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: Unit,
-    ContainsBIFF: Unit,
-    ContainsRTF: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
-    ContainsPICT: Unit,
-    ContainsBIFF: Unit,
-    ContainsRTF: js.Any,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
-  def CreatePublisher(
-    Edition: js.Any,
-    Appearance: XlPictureAppearance,
+    Edition: Any,
+    Appearance: Unit,
     ContainsPICT: Unit,
     ContainsBIFF: Unit,
     ContainsRTF: Unit,
-    ContainsVALU: js.Any
-  ): js.Any = js.native
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: XlPictureAppearance): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: XlPictureAppearance, ContainsPICT: Any): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: XlPictureAppearance, ContainsPICT: Any, ContainsBIFF: Any): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Any,
+    ContainsBIFF: Any,
+    ContainsRTF: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Any,
+    ContainsBIFF: Any,
+    ContainsRTF: Any,
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Any,
+    ContainsBIFF: Any,
+    ContainsRTF: Unit,
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Any,
+    ContainsBIFF: Unit,
+    ContainsRTF: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Any,
+    ContainsBIFF: Unit,
+    ContainsRTF: Any,
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Any,
+    ContainsBIFF: Unit,
+    ContainsRTF: Unit,
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(Edition: Any, Appearance: XlPictureAppearance, ContainsPICT: Unit, ContainsBIFF: Any): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: Any,
+    ContainsRTF: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: Any,
+    ContainsRTF: Any,
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: Any,
+    ContainsRTF: Unit,
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: Unit,
+    ContainsRTF: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: Unit,
+    ContainsRTF: Any,
+    ContainsVALU: Any
+  ): Any = js.native
+  def CreatePublisher(
+    Edition: Any,
+    Appearance: XlPictureAppearance,
+    ContainsPICT: Unit,
+    ContainsBIFF: Unit,
+    ContainsRTF: Unit,
+    ContainsVALU: Any
+  ): Any = js.native
   
   val Creator: XlCreator = js.native
   
@@ -904,41 +904,41 @@ trait Range extends StObject {
   @JSName("CurrentRegion")
   val CurrentRegion_Original: Range = js.native
   
-  def Cut(): js.Any = js.native
-  def Cut(Destination: Range): js.Any = js.native
+  def Cut(): Any = js.native
+  def Cut(Destination: Range): Any = js.native
   
   /**
     * @param Type [Type=-4132]
     * @param Date [Date=1]
     * @param Step [Step=1]
     */
-  def DataSeries(Rowcol: XlRowCol): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double, Stop: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double, Stop: Double, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double, Stop: Unit, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Unit, Stop: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Unit, Stop: Double, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Unit, Stop: Unit, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double, Stop: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double, Stop: Double, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double, Stop: Unit, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Unit, Stop: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Unit, Stop: Double, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Unit, Stop: Unit, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double, Stop: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double, Stop: Double, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double, Stop: Unit, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Unit, Stop: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Unit, Stop: Double, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Unit, Stop: Unit, Trend: Boolean): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: Double): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: Double, Stop: Double): js.Any = js.native
+  def DataSeries(Rowcol: XlRowCol): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double, Stop: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double, Stop: Double, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Double, Stop: Unit, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Unit, Stop: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Unit, Stop: Double, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: Unit, Step: Unit, Stop: Unit, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double, Stop: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double, Stop: Double, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Double, Stop: Unit, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Unit, Stop: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Unit, Stop: Double, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: Unit, Date: XlDataSeriesDate, Step: Unit, Stop: Unit, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double, Stop: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double, Stop: Double, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Double, Stop: Unit, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Unit, Stop: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Unit, Stop: Double, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: Unit, Step: Unit, Stop: Unit, Trend: Boolean): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: Double): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: Double, Stop: Double): Any = js.native
   def DataSeries(
     Rowcol: XlRowCol,
     Type: XlDataSeriesType,
@@ -946,7 +946,7 @@ trait Range extends StObject {
     Step: Double,
     Stop: Double,
     Trend: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def DataSeries(
     Rowcol: XlRowCol,
     Type: XlDataSeriesType,
@@ -954,8 +954,8 @@ trait Range extends StObject {
     Step: Double,
     Stop: Unit,
     Trend: Boolean
-  ): js.Any = js.native
-  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: Unit, Stop: Double): js.Any = js.native
+  ): Any = js.native
+  def DataSeries(Rowcol: XlRowCol, Type: XlDataSeriesType, Date: XlDataSeriesDate, Step: Unit, Stop: Double): Any = js.native
   def DataSeries(
     Rowcol: XlRowCol,
     Type: XlDataSeriesType,
@@ -963,7 +963,7 @@ trait Range extends StObject {
     Step: Unit,
     Stop: Double,
     Trend: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def DataSeries(
     Rowcol: XlRowCol,
     Type: XlDataSeriesType,
@@ -971,10 +971,10 @@ trait Range extends StObject {
     Step: Unit,
     Stop: Unit,
     Trend: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   
-  def Delete(): js.Any = js.native
-  def Delete(Shift: XlDeleteShiftDirection): js.Any = js.native
+  def Delete(): Any = js.native
+  def Delete(Shift: XlDeleteShiftDirection): Any = js.native
   
   def Dependents(Address: String): Range = js.native
   def Dependents(RowIndex: Double): Range = js.native
@@ -1006,66 +1006,66 @@ trait Range extends StObject {
     * @param Appearance [Appearance=1]
     * @param ChartSize [ChartSize=1]
     */
-  def EditionOptions(Type: XlEditionType, Option: XlEditionOptionsOption, Name: js.Any, Reference: js.Any): js.Any = js.native
+  def EditionOptions(Type: XlEditionType, Option: XlEditionOptionsOption, Name: Any, Reference: Any): Any = js.native
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
-    Name: js.Any,
-    Reference: js.Any,
+    Name: Any,
+    Reference: Any,
     Appearance: Unit,
     ChartSize: Unit,
-    Format: js.Any
-  ): js.Any = js.native
+    Format: Any
+  ): Any = js.native
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
-    Name: js.Any,
-    Reference: js.Any,
+    Name: Any,
+    Reference: Any,
     Appearance: Unit,
     ChartSize: XlPictureAppearance
-  ): js.Any = js.native
+  ): Any = js.native
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
-    Name: js.Any,
-    Reference: js.Any,
+    Name: Any,
+    Reference: Any,
     Appearance: Unit,
     ChartSize: XlPictureAppearance,
-    Format: js.Any
-  ): js.Any = js.native
+    Format: Any
+  ): Any = js.native
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
-    Name: js.Any,
-    Reference: js.Any,
+    Name: Any,
+    Reference: Any,
     Appearance: XlPictureAppearance
-  ): js.Any = js.native
+  ): Any = js.native
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
-    Name: js.Any,
-    Reference: js.Any,
+    Name: Any,
+    Reference: Any,
     Appearance: XlPictureAppearance,
     ChartSize: Unit,
-    Format: js.Any
-  ): js.Any = js.native
+    Format: Any
+  ): Any = js.native
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
-    Name: js.Any,
-    Reference: js.Any,
+    Name: Any,
+    Reference: Any,
     Appearance: XlPictureAppearance,
     ChartSize: XlPictureAppearance
-  ): js.Any = js.native
+  ): Any = js.native
   def EditionOptions(
     Type: XlEditionType,
     Option: XlEditionOptionsOption,
-    Name: js.Any,
-    Reference: js.Any,
+    Name: Any,
+    Reference: Any,
     Appearance: XlPictureAppearance,
     ChartSize: XlPictureAppearance,
-    Format: js.Any
-  ): js.Any = js.native
+    Format: Any
+  ): Any = js.native
   
   def End(Direction: XlDirection): Range = js.native
   
@@ -1095,35 +1095,35 @@ trait Range extends StObject {
     From: js.UndefOr[Double],
     To: js.UndefOr[Double],
     OpenAfterPublish: js.UndefOr[Boolean],
-    FixedFormatExtClassPtr: js.UndefOr[js.Any]
+    FixedFormatExtClassPtr: js.UndefOr[Any]
   ): Unit = js.native
   
-  def FillDown(): js.Any = js.native
+  def FillDown(): Any = js.native
   
-  def FillLeft(): js.Any = js.native
+  def FillLeft(): Any = js.native
   
-  def FillRight(): js.Any = js.native
+  def FillRight(): Any = js.native
   
-  def FillUp(): js.Any = js.native
+  def FillUp(): Any = js.native
   
   /** @param SearchDirection [SearchDirection=1] */
   def Find(
-    What: js.Any,
-    After: js.UndefOr[js.Any],
+    What: Any,
+    After: js.UndefOr[Any],
     LookIn: js.UndefOr[XlFindLookIn],
     LookAt: js.UndefOr[XlLookAt],
     SearchOrder: js.UndefOr[XlSearchOrder],
     SearchDirection: js.UndefOr[XlSearchDirection],
     MatchCase: js.UndefOr[Boolean],
     MatchByte: js.UndefOr[Boolean],
-    SearchFormat: js.UndefOr[js.Any]
+    SearchFormat: js.UndefOr[Any]
   ): Range = js.native
   
   def FindNext(): Range = js.native
-  def FindNext(After: js.Any): Range = js.native
+  def FindNext(After: Any): Range = js.native
   
   def FindPrevious(): Range = js.native
-  def FindPrevious(After: js.Any): Range = js.native
+  def FindPrevious(After: Any): Range = js.native
   
   val Font: typings.activexExcel.Excel.Font = js.native
   
@@ -1146,26 +1146,26 @@ trait Range extends StObject {
   
   var FormulaR1C1Local: String | SafeArray[String] = js.native
   
-  def FunctionWizard(): js.Any = js.native
+  def FunctionWizard(): Any = js.native
   
-  def GoalSeek(Goal: js.Any, ChangingCell: Range): Boolean = js.native
+  def GoalSeek(Goal: Any, ChangingCell: Range): Boolean = js.native
   
-  def Group(): js.Any = js.native
-  def Group(Start: js.Any): js.Any = js.native
-  def Group(Start: js.Any, End: js.Any): js.Any = js.native
-  def Group(Start: js.Any, End: js.Any, By: Double): js.Any = js.native
-  def Group(Start: js.Any, End: js.Any, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
-  def Group(Start: js.Any, End: js.Any, By: Unit, Periods: SafeArray[Boolean]): js.Any = js.native
-  def Group(Start: js.Any, End: Unit, By: Double): js.Any = js.native
-  def Group(Start: js.Any, End: Unit, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
-  def Group(Start: js.Any, End: Unit, By: Unit, Periods: SafeArray[Boolean]): js.Any = js.native
-  def Group(Start: Unit, End: js.Any): js.Any = js.native
-  def Group(Start: Unit, End: js.Any, By: Double): js.Any = js.native
-  def Group(Start: Unit, End: js.Any, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
-  def Group(Start: Unit, End: js.Any, By: Unit, Periods: SafeArray[Boolean]): js.Any = js.native
-  def Group(Start: Unit, End: Unit, By: Double): js.Any = js.native
-  def Group(Start: Unit, End: Unit, By: Double, Periods: SafeArray[Boolean]): js.Any = js.native
-  def Group(Start: Unit, End: Unit, By: Unit, Periods: SafeArray[Boolean]): js.Any = js.native
+  def Group(): Any = js.native
+  def Group(Start: Any): Any = js.native
+  def Group(Start: Any, End: Any): Any = js.native
+  def Group(Start: Any, End: Any, By: Double): Any = js.native
+  def Group(Start: Any, End: Any, By: Double, Periods: SafeArray[Boolean]): Any = js.native
+  def Group(Start: Any, End: Any, By: Unit, Periods: SafeArray[Boolean]): Any = js.native
+  def Group(Start: Any, End: Unit, By: Double): Any = js.native
+  def Group(Start: Any, End: Unit, By: Double, Periods: SafeArray[Boolean]): Any = js.native
+  def Group(Start: Any, End: Unit, By: Unit, Periods: SafeArray[Boolean]): Any = js.native
+  def Group(Start: Unit, End: Any): Any = js.native
+  def Group(Start: Unit, End: Any, By: Double): Any = js.native
+  def Group(Start: Unit, End: Any, By: Double, Periods: SafeArray[Boolean]): Any = js.native
+  def Group(Start: Unit, End: Any, By: Unit, Periods: SafeArray[Boolean]): Any = js.native
+  def Group(Start: Unit, End: Unit, By: Double): Any = js.native
+  def Group(Start: Unit, End: Unit, By: Double, Periods: SafeArray[Boolean]): Any = js.native
+  def Group(Start: Unit, End: Unit, By: Unit, Periods: SafeArray[Boolean]): Any = js.native
   
   val HasArray: Boolean = js.native
   
@@ -1186,10 +1186,10 @@ trait Range extends StObject {
   
   var IndentLevel: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` = js.native
   
-  def Insert(): js.Any = js.native
-  def Insert(Shift: Unit, CopyOrigin: js.Any): js.Any = js.native
-  def Insert(Shift: XlInsertShiftDirection): js.Any = js.native
-  def Insert(Shift: XlInsertShiftDirection, CopyOrigin: js.Any): js.Any = js.native
+  def Insert(): Any = js.native
+  def Insert(Shift: Unit, CopyOrigin: Any): Any = js.native
+  def Insert(Shift: XlInsertShiftDirection): Any = js.native
+  def Insert(Shift: XlInsertShiftDirection, CopyOrigin: Any): Any = js.native
   
   def InsertIndent(InsertAmount: Double): Unit = js.native
   
@@ -1199,13 +1199,13 @@ trait Range extends StObject {
   def Item(RowIndex: Double): Range = js.native
   def Item(RowIndex: Double, ColumnIndex: Double): Range = js.native
   
-  def Justify(): js.Any = js.native
+  def Justify(): Any = js.native
   
   val Left: Double = js.native
   
   val ListHeaderRows: Double = js.native
   
-  def ListNames(): js.Any = js.native
+  def ListNames(): Any = js.native
   
   val ListObject: typings.activexExcel.Excel.ListObject = js.native
   
@@ -1228,14 +1228,14 @@ trait Range extends StObject {
   
   var Name: String | typings.activexExcel.Excel.Name = js.native
   
-  def NavigateArrow(): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: Boolean): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Double): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Double, LinkNumber: Double): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Unit, LinkNumber: Double): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: Unit, ArrowNumber: Double): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: Unit, ArrowNumber: Double, LinkNumber: Double): js.Any = js.native
-  def NavigateArrow(TowardPrecedent: Unit, ArrowNumber: Unit, LinkNumber: Double): js.Any = js.native
+  def NavigateArrow(): Any = js.native
+  def NavigateArrow(TowardPrecedent: Boolean): Any = js.native
+  def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Double): Any = js.native
+  def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Double, LinkNumber: Double): Any = js.native
+  def NavigateArrow(TowardPrecedent: Boolean, ArrowNumber: Unit, LinkNumber: Double): Any = js.native
+  def NavigateArrow(TowardPrecedent: Unit, ArrowNumber: Double): Any = js.native
+  def NavigateArrow(TowardPrecedent: Unit, ArrowNumber: Double, LinkNumber: Double): Any = js.native
+  def NavigateArrow(TowardPrecedent: Unit, ArrowNumber: Unit, LinkNumber: Double): Any = js.native
   
   def Next(Address: String): Range = js.native
   def Next(RowIndex: Double): Range = js.native
@@ -1267,33 +1267,33 @@ trait Range extends StObject {
   
   var PageBreak: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Parse(): js.Any = js.native
-  def Parse(ParseLine: String): js.Any = js.native
-  def Parse(ParseLine: String, Destination: Range): js.Any = js.native
-  def Parse(ParseLine: Unit, Destination: Range): js.Any = js.native
+  def Parse(): Any = js.native
+  def Parse(ParseLine: String): Any = js.native
+  def Parse(ParseLine: String, Destination: Range): Any = js.native
+  def Parse(ParseLine: Unit, Destination: Range): Any = js.native
   
   /**
     * @param Paste [Paste=-4104]
     * @param Operation [Operation=-4142]
     */
-  def PasteSpecial(): js.Any = js.native
-  def PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Unit, Transpose: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation): js.Any = js.native
-  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Unit, Transpose: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean, Transpose: Boolean): js.Any = js.native
-  def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: Boolean): js.Any = js.native
+  def PasteSpecial(): Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Boolean): Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Boolean, Transpose: Boolean): Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Unit, Transpose: Boolean): Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation): Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean): Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean, Transpose: Boolean): Any = js.native
+  def PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: Boolean): Any = js.native
+  def PasteSpecial(Paste: XlPasteType): Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Boolean): Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Boolean, Transpose: Boolean): Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Unit, Transpose: Boolean): Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation): Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean): Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Boolean, Transpose: Boolean): Any = js.native
+  def PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: Boolean): Any = js.native
   
   val Phonetic: typings.activexExcel.Excel.Phonetic = js.native
   
@@ -1332,10 +1332,10 @@ trait Range extends StObject {
     PrintToFile: js.UndefOr[T],
     Collate: js.UndefOr[Boolean],
     PrToFileName: js.UndefOr[PrintToFileName[T]]
-  ): js.Any = js.native
+  ): Any = js.native
   
-  def PrintPreview(): js.Any = js.native
-  def PrintPreview(EnableChanges: Boolean): js.Any = js.native
+  def PrintPreview(): Any = js.native
+  def PrintPreview(EnableChanges: Boolean): Any = js.native
   
   val QueryTable: typings.activexExcel.Excel.QueryTable = js.native
   
@@ -1352,7 +1352,7 @@ trait Range extends StObject {
   def RemoveDuplicates(Columns: SafeArray[Double]): Unit = js.native
   def RemoveDuplicates(Columns: SafeArray[Double], Header: XlYesNoGuess): Unit = js.native
   
-  def RemoveSubtotal(): js.Any = js.native
+  def RemoveSubtotal(): Any = js.native
   
   def Replace(
     What: String,
@@ -1383,39 +1383,39 @@ trait Range extends StObject {
   val Rows_Original: Range = js.native
   
   def Run(
-    Arg1: js.UndefOr[js.Any],
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any],
-    Arg9: js.UndefOr[js.Any],
-    Arg10: js.UndefOr[js.Any],
-    Arg11: js.UndefOr[js.Any],
-    Arg12: js.UndefOr[js.Any],
-    Arg13: js.UndefOr[js.Any],
-    Arg14: js.UndefOr[js.Any],
-    Arg15: js.UndefOr[js.Any],
-    Arg16: js.UndefOr[js.Any],
-    Arg17: js.UndefOr[js.Any],
-    Arg18: js.UndefOr[js.Any],
-    Arg19: js.UndefOr[js.Any],
-    Arg20: js.UndefOr[js.Any],
-    Arg21: js.UndefOr[js.Any],
-    Arg22: js.UndefOr[js.Any],
-    Arg23: js.UndefOr[js.Any],
-    Arg24: js.UndefOr[js.Any],
-    Arg25: js.UndefOr[js.Any],
-    Arg26: js.UndefOr[js.Any],
-    Arg27: js.UndefOr[js.Any],
-    Arg28: js.UndefOr[js.Any],
-    Arg29: js.UndefOr[js.Any],
-    Arg30: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Arg1: js.UndefOr[Any],
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any],
+    Arg9: js.UndefOr[Any],
+    Arg10: js.UndefOr[Any],
+    Arg11: js.UndefOr[Any],
+    Arg12: js.UndefOr[Any],
+    Arg13: js.UndefOr[Any],
+    Arg14: js.UndefOr[Any],
+    Arg15: js.UndefOr[Any],
+    Arg16: js.UndefOr[Any],
+    Arg17: js.UndefOr[Any],
+    Arg18: js.UndefOr[Any],
+    Arg19: js.UndefOr[Any],
+    Arg20: js.UndefOr[Any],
+    Arg21: js.UndefOr[Any],
+    Arg22: js.UndefOr[Any],
+    Arg23: js.UndefOr[Any],
+    Arg24: js.UndefOr[Any],
+    Arg25: js.UndefOr[Any],
+    Arg26: js.UndefOr[Any],
+    Arg27: js.UndefOr[Any],
+    Arg28: js.UndefOr[Any],
+    Arg29: js.UndefOr[Any],
+    Arg30: js.UndefOr[Any]
+  ): Any = js.native
   
-  def Select(): js.Any = js.native
+  def Select(): Any = js.native
   
   def ServerActions(Index: String): Action = js.native
   def ServerActions(Index: Double): Action = js.native
@@ -1424,21 +1424,21 @@ trait Range extends StObject {
   
   def SetPhonetic(): Unit = js.native
   
-  def Show(): js.Any = js.native
+  def Show(): Any = js.native
   
-  def ShowDependents(): js.Any = js.native
-  def ShowDependents(Remove: Boolean): js.Any = js.native
+  def ShowDependents(): Any = js.native
+  def ShowDependents(Remove: Boolean): Any = js.native
   
-  var ShowDetail: js.Any = js.native
+  var ShowDetail: Any = js.native
   
-  def ShowErrors(): js.Any = js.native
+  def ShowErrors(): Any = js.native
   
-  def ShowPrecedents(): js.Any = js.native
-  def ShowPrecedents(Remove: Boolean): js.Any = js.native
+  def ShowPrecedents(): Any = js.native
+  def ShowPrecedents(Remove: Boolean): Any = js.native
   
   var ShrinkToFit: Boolean | Null = js.native
   
-  def SmartTags(Index: js.Any): SmartTag = js.native
+  def SmartTags(Index: Any): SmartTag = js.native
   @JSName("SmartTags")
   val SmartTags_Original: SmartTags = js.native
   
@@ -1456,10 +1456,10 @@ trait Range extends StObject {
   def Sort(
     Key1: String | Range,
     Order1: js.UndefOr[XlSortOrder],
-    Key2: js.UndefOr[js.Any],
-    Type: js.UndefOr[js.Any],
+    Key2: js.UndefOr[Any],
+    Type: js.UndefOr[Any],
     Order2: js.UndefOr[XlSortOrder],
-    Key3: js.UndefOr[js.Any],
+    Key3: js.UndefOr[Any],
     Order3: js.UndefOr[XlSortOrder],
     Header: js.UndefOr[XlYesNoGuess],
     OrderCustom: js.UndefOr[Double],
@@ -1469,7 +1469,7 @@ trait Range extends StObject {
     DataOption1: js.UndefOr[XlSortDataOption],
     DataOption2: js.UndefOr[XlSortDataOption],
     DataOption3: js.UndefOr[XlSortDataOption]
-  ): js.Any = js.native
+  ): Any = js.native
   
   /**
     * @param SortMethod [SortMethod=1]
@@ -1486,7 +1486,7 @@ trait Range extends StObject {
     SortMethod: js.UndefOr[XlSortMethod],
     Key1: js.UndefOr[String | Range],
     Order1: js.UndefOr[XlSortOrder],
-    Type: js.UndefOr[js.Any],
+    Type: js.UndefOr[Any],
     Key2: js.UndefOr[String | Range],
     Order2: js.UndefOr[XlSortOrder],
     Key3: js.UndefOr[String | Range],
@@ -1498,7 +1498,7 @@ trait Range extends StObject {
     DataOption1: js.UndefOr[XlSortDataOption],
     DataOption2: js.UndefOr[XlSortDataOption],
     DataOption3: js.UndefOr[XlSortDataOption]
-  ): js.Any = js.native
+  ): Any = js.native
   
   val SoundNote: typings.activexExcel.Excel.SoundNote = js.native
   
@@ -1511,21 +1511,14 @@ trait Range extends StObject {
   def Speak(SpeakDirection: XlSpeakDirection): Unit = js.native
   def Speak(SpeakDirection: XlSpeakDirection, SpeakFormulas: Boolean): Unit = js.native
   
-  def SpecialCells(Type: XlCellType): Range = js.native
-  @JSName("SpecialCells")
-  def SpecialCells_2(Type: `2`): Range = js.native
-  @JSName("SpecialCells")
-  def SpecialCells_2(Type: `2`, Value: XlSpecialCellsValue): Range = js.native
-  @JSName("SpecialCells")
-  def SpecialCells_4123(Type: `-4123`): Range = js.native
-  @JSName("SpecialCells")
-  def SpecialCells_4123(Type: `-4123`, Value: XlSpecialCellsValue): Range = js.native
+  def SpecialCells(Type: `-4123` | `2` | XlCellType): Range = js.native
+  def SpecialCells(Type: `2` | `-4123`, Value: XlSpecialCellsValue): Range = js.native
   
   var Style: typings.activexExcel.Excel.Style = js.native
   
   /** @param Format [Format=-4158] */
-  def SubscribeTo(Edition: String): js.Any = js.native
-  def SubscribeTo(Edition: String, Format: XlSubscribeToFormat): js.Any = js.native
+  def SubscribeTo(Edition: String): Any = js.native
+  def SubscribeTo(Edition: String, Format: XlSubscribeToFormat): Any = js.native
   
   /** @param SummaryBelowData [SummaryBelowData=1] */
   def Subtotal(
@@ -1534,7 +1527,7 @@ trait Range extends StObject {
     TotalList: SafeArray[Double],
     Replace: Boolean,
     PageBreaks: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def Subtotal(
     GroupBy: Double,
     Function: XlConsolidationFunction,
@@ -1542,14 +1535,14 @@ trait Range extends StObject {
     Replace: Boolean,
     PageBreaks: Boolean,
     SummaryBelowData: XlSummaryRow
-  ): js.Any = js.native
+  ): Any = js.native
   
   val Summary: Boolean = js.native
   
-  def Table(): js.Any = js.native
-  def Table(RowInput: Unit, ColumnInput: Range): js.Any = js.native
-  def Table(RowInput: Range): js.Any = js.native
-  def Table(RowInput: Range, ColumnInput: Range): js.Any = js.native
+  def Table(): Any = js.native
+  def Table(RowInput: Unit, ColumnInput: Range): Any = js.native
+  def Table(RowInput: Range): Any = js.native
+  def Table(RowInput: Range, ColumnInput: Range): Any = js.native
   
   val Text: String = js.native
   
@@ -1568,17 +1561,17 @@ trait Range extends StObject {
     Space: js.UndefOr[Boolean],
     Other: js.UndefOr[Boolean],
     OtherChar: js.UndefOr[String],
-    FieldInfo: js.UndefOr[SafeArray[js.Any]],
+    FieldInfo: js.UndefOr[SafeArray[Any]],
     DecimalSeparator: js.UndefOr[String],
     ThousandsSeparator: js.UndefOr[String],
-    TrailingMinusNumbers: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    TrailingMinusNumbers: js.UndefOr[Any]
+  ): Any = js.native
   
   val Top: Double = js.native
   
   def UnMerge(): Unit = js.native
   
-  def Ungroup(): js.Any = js.native
+  def Ungroup(): Any = js.native
   
   var UseStandardHeight: Boolean | Null = js.native
   
@@ -1587,14 +1580,14 @@ trait Range extends StObject {
   val Validation: typings.activexExcel.Excel.Validation = js.native
   
   // tslint:disable-next-line: ban-types
-  def Value(): js.Any = js.native
-  def Value(RangeValueDataType: XlRangeValueDataType): js.Any = js.native
+  def Value(): Any = js.native
+  def Value(RangeValueDataType: XlRangeValueDataType): Any = js.native
   
-  var Value2: js.Any = js.native
+  var Value2: Any = js.native
   
   // tslint:disable-next-line: ban-types
   @JSName("Value")
-  var Value_Original: (Exclude[js.Any, js.Function]) & (js.Function1[/* RangeValueDataType */ js.UndefOr[XlRangeValueDataType], js.Any]) = js.native
+  var Value_Original: (Exclude[Any, js.Function]) & (js.Function1[/* RangeValueDataType */ js.UndefOr[XlRangeValueDataType], Any]) = js.native
   
   var VerticalAlignment: VerticalAlignments = js.native
   
@@ -1610,59 +1603,59 @@ trait Range extends StObject {
     * @param Weight [Weight=2]
     * @param ColorIndex [ColorIndex=-4105]
     */
-  def _BorderAround(LineStyle: js.Any): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: Unit, ColorIndex: Unit, Color: js.Any): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: Unit, ColorIndex: XlColorIndex): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: Unit, ColorIndex: XlColorIndex, Color: js.Any): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: Unit, Color: js.Any): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex): js.Any = js.native
-  def _BorderAround(LineStyle: js.Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: js.Any): js.Any = js.native
+  def _BorderAround(LineStyle: Any): Any = js.native
+  def _BorderAround(LineStyle: Any, Weight: Unit, ColorIndex: Unit, Color: Any): Any = js.native
+  def _BorderAround(LineStyle: Any, Weight: Unit, ColorIndex: XlColorIndex): Any = js.native
+  def _BorderAround(LineStyle: Any, Weight: Unit, ColorIndex: XlColorIndex, Color: Any): Any = js.native
+  def _BorderAround(LineStyle: Any, Weight: XlBorderWeight): Any = js.native
+  def _BorderAround(LineStyle: Any, Weight: XlBorderWeight, ColorIndex: Unit, Color: Any): Any = js.native
+  def _BorderAround(LineStyle: Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex): Any = js.native
+  def _BorderAround(LineStyle: Any, Weight: XlBorderWeight, ColorIndex: XlColorIndex, Color: Any): Any = js.native
   
-  def _Default(): js.Any = js.native
-  def _Default(RowIndex: js.Any): js.Any = js.native
-  def _Default(RowIndex: js.Any, ColumnIndex: js.Any): js.Any = js.native
-  def _Default(RowIndex: Unit, ColumnIndex: js.Any): js.Any = js.native
+  def _Default(): Any = js.native
+  def _Default(RowIndex: Any): Any = js.native
+  def _Default(RowIndex: Any, ColumnIndex: Any): Any = js.native
+  def _Default(RowIndex: Unit, ColumnIndex: Any): Any = js.native
   
   /**
     * @param Paste [Paste=-4104]
     * @param Operation [Operation=-4142]
     */
-  def _PasteSpecial(): js.Any = js.native
-  def _PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Unit, Transpose: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation): js.Any = js.native
-  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Unit, Transpose: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: js.Any, Transpose: js.Any): js.Any = js.native
-  def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: js.Any): js.Any = js.native
+  def _PasteSpecial(): Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Any): Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Any, Transpose: Any): Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: Unit, SkipBlanks: Unit, Transpose: Any): Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation): Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Any): Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Any, Transpose: Any): Any = js.native
+  def _PasteSpecial(Paste: Unit, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: Any): Any = js.native
+  def _PasteSpecial(Paste: XlPasteType): Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Any): Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Any, Transpose: Any): Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: Unit, SkipBlanks: Unit, Transpose: Any): Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation): Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Any): Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Any, Transpose: Any): Any = js.native
+  def _PasteSpecial(Paste: XlPasteType, Operation: XlPasteSpecialOperation, SkipBlanks: Unit, Transpose: Any): Any = js.native
   
   def _PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    PrToFileName: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    PrToFileName: js.UndefOr[Any]
+  ): Any = js.native
   
   def __PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any]
+  ): Any = js.native
 }

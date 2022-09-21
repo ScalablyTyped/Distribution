@@ -25,7 +25,7 @@ object End {
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
+    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object End {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
+    inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value*))
   }
 }

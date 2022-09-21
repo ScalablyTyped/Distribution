@@ -15,7 +15,7 @@ object gridIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/grid/index.native", JSImport.Default)
   @js.native
-  class default () extends Grid
+  open class default () extends Grid
   /* static members */
   object default {
     
@@ -30,8 +30,7 @@ object gridIndexNativeMod {
   }
   
   @js.native
-  trait Grid
-    extends Component[GridProps, js.Any, js.Any] {
+  trait Grid extends Component[GridProps, Any, Any] {
     
     def getFlexItemStyle(columnNum: Double): BorderRightWidth = js.native
   }
@@ -44,7 +43,7 @@ object gridIndexNativeMod {
     
     var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
   }
   object GridProps {
     
@@ -65,7 +64,7 @@ object gridIndexNativeMod {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }

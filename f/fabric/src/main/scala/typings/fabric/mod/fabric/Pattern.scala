@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Pattern")
 @js.native
-class Pattern ()
+open class Pattern ()
   extends typings.fabric.fabricImplMod.Pattern {
   def this(options: IPatternOptions) = this()
 }

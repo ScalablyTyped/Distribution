@@ -9,14 +9,14 @@ object abstractMeasurerMod {
   
   @JSImport("typesettable/build/src/measurers/abstractMeasurer", "AbstractMeasurer")
   @js.native
-  class AbstractMeasurer protected () extends StObject {
+  open class AbstractMeasurer protected () extends StObject {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()
     
     def measure(): IDimensions = js.native
     def measure(text: String): IDimensions = js.native
     
-    /* private */ var ruler: js.Any = js.native
+    /* private */ var ruler: Any = js.native
   }
   /* static members */
   object AbstractMeasurer {

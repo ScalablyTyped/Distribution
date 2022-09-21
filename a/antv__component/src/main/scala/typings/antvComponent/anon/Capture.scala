@@ -12,13 +12,13 @@ trait Capture extends StObject {
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
   var containerClassName: String
   
   var containerTpl: String
   
-  var events: js.Any
+  var events: Any
   
   var id: String
   
@@ -30,7 +30,7 @@ trait Capture extends StObject {
   
   var offsetY: Double
   
-  var parent: js.Any
+  var parent: Any
   
   var `type`: String
   
@@ -44,16 +44,16 @@ object Capture {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    container: js.Any,
+    container: Any,
     containerClassName: String,
     containerTpl: String,
-    events: js.Any,
+    events: Any,
     id: String,
     locationType: String,
     name: String,
     offsetX: Double,
     offsetY: Double,
-    parent: js.Any,
+    parent: Any,
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean
@@ -71,13 +71,13 @@ object Capture {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
     inline def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -89,7 +89,7 @@ object Capture {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,7 @@ object Onenote {
     
     inline def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
     
-    inline def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
+    inline def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value*))
     
     inline def setOperations(value: NullableOption[js.Array[OnenoteOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object Onenote {
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: OnenoteOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: OnenoteOperation*): Self = StObject.set(x, "operations", js.Array(value*))
     
     inline def setPages(value: NullableOption[js.Array[OnenotePage]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object Onenote {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: OnenotePage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: OnenotePage*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setResources(value: NullableOption[js.Array[OnenoteResource]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object Onenote {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: OnenoteResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: OnenoteResource*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setSectionGroups(value: NullableOption[js.Array[SectionGroup]]): Self = StObject.set(x, "sectionGroups", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object Onenote {
     
     inline def setSectionGroupsUndefined: Self = StObject.set(x, "sectionGroups", js.undefined)
     
-    inline def setSectionGroupsVarargs(value: SectionGroup*): Self = StObject.set(x, "sectionGroups", js.Array(value :_*))
+    inline def setSectionGroupsVarargs(value: SectionGroup*): Self = StObject.set(x, "sectionGroups", js.Array(value*))
     
     inline def setSections(value: NullableOption[js.Array[OnenoteSection]]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
@@ -87,6 +87,6 @@ object Onenote {
     
     inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    inline def setSectionsVarargs(value: OnenoteSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: OnenoteSection*): Self = StObject.set(x, "sections", js.Array(value*))
   }
 }

@@ -29,11 +29,13 @@ object TypeFormatFlags extends StObject {
   
   /* 536870912 */ val NoTypeReduction: typings.typescript.mod.TypeFormatFlags.NoTypeReduction & Double = js.native
   
-  /* 814775659 */ val NodeBuilderFlagsMask: typings.typescript.mod.TypeFormatFlags.NodeBuilderFlagsMask & Double = js.native
+  /* 848330091 */ val NodeBuilderFlagsMask: typings.typescript.mod.TypeFormatFlags.NodeBuilderFlagsMask & Double = js.native
   
   /* 0 */ val None: typings.typescript.mod.TypeFormatFlags.None & Double = js.native
   
   /* 8192 */ val OmitParameterModifiers: typings.typescript.mod.TypeFormatFlags.OmitParameterModifiers & Double = js.native
+  
+  /* 33554432 */ val OmitThisParameter: typings.typescript.mod.TypeFormatFlags.OmitThisParameter & Double = js.native
   
   /* 256 */ val SuppressAnyReturnType: typings.typescript.mod.TypeFormatFlags.SuppressAnyReturnType & Double = js.native
   

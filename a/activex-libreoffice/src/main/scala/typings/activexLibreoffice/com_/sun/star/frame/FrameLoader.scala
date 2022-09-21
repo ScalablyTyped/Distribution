@@ -28,9 +28,9 @@ object FrameLoader {
     acquire: () => Unit,
     cancel: () => Unit,
     getName: () => String,
-    initialize: SeqEquiv[js.Any] => Unit,
+    initialize: SeqEquiv[Any] => Unit,
     load: (XFrame, String, SeqEquiv[PropertyValue], XLoadEventListener) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setName: String => Unit
   ): FrameLoader = {

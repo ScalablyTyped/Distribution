@@ -23,11 +23,11 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends StObjec
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
-    * Required. Machine type of the worker, such as `n1-standard-2`. See https://cloud.google.com/compute/docs/machine-types for a list of supported machine types. Note that `f1-micro`
+    * Required. Machine type of the worker, such as `e2-standard-2`. See https://cloud.google.com/compute/docs/machine-types for a list of supported machine types. Note that `f1-micro`
     * and `g1-small` are not yet supported.
     */
   var machineType: js.UndefOr[String] = js.undefined
@@ -50,8 +50,8 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends StObjec
     */
   var reserved: js.UndefOr[Boolean] = js.undefined
   
-  /** Sole-tenant node information for pools hosted on STNs. */
-  var soleTenancy: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig] = js.undefined
+  /** The node type name to be used for sole-tenant nodes. */
+  var soleTenantNodeType: js.UndefOr[String] = js.undefined
   
   /** The name of the image used by each VM. */
   var vmImage: js.UndefOr[String] = js.undefined
@@ -80,7 +80,7 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -105,9 +105,9 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
     
     inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
     
-    inline def setSoleTenancy(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig): Self = StObject.set(x, "soleTenancy", value.asInstanceOf[js.Any])
+    inline def setSoleTenantNodeType(value: String): Self = StObject.set(x, "soleTenantNodeType", value.asInstanceOf[js.Any])
     
-    inline def setSoleTenancyUndefined: Self = StObject.set(x, "soleTenancy", js.undefined)
+    inline def setSoleTenantNodeTypeUndefined: Self = StObject.set(x, "soleTenantNodeType", js.undefined)
     
     inline def setVmImage(value: String): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
     

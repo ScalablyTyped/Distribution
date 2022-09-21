@@ -15,7 +15,7 @@ object checkboxMod extends Shortcut {
   
   trait CheckboxProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -35,17 +35,17 @@ object checkboxMod extends Shortcut {
     
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var inputProps: js.UndefOr[js.Any] = js.undefined
+    var inputProps: js.UndefOr[Any] = js.undefined
     
     var labelClasses: js.UndefOr[String] = js.undefined
     
-    var labelProps: js.UndefOr[js.Any] = js.undefined
+    var labelProps: js.UndefOr[Any] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var value: js.UndefOr[String] = js.undefined
   }
@@ -94,7 +94,7 @@ object checkboxMod extends Shortcut {
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setInputProps(value: js.Any): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: Any): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
@@ -102,7 +102,7 @@ object checkboxMod extends Shortcut {
       
       inline def setLabelClassesUndefined: Self = StObject.set(x, "labelClasses", js.undefined)
       
-      inline def setLabelProps(value: js.Any): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
+      inline def setLabelProps(value: Any): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
       
       inline def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
       
@@ -110,11 +110,11 @@ object checkboxMod extends Shortcut {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       

@@ -10,7 +10,7 @@ object pictureInPictureMod {
   
   @JSImport("playable/dist/src/modules/picture-in-picture/picture-in-picture", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PictureInPicture {
     def this(hasEventEmitterEngine: Engine) = this()
@@ -60,13 +60,13 @@ object pictureInPictureMod {
     extends StObject
        with IPictureInPicture {
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _helper: js.Any = js.native
+    /* private */ var _helper: Any = js.native
     
-    /* private */ var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: Any = js.native
     
-    /* private */ var _onChange: js.Any = js.native
+    /* private */ var _onChange: Any = js.native
     
     @JSName("isEnabled")
     def isEnabled_MPictureInPicture: Boolean = js.native

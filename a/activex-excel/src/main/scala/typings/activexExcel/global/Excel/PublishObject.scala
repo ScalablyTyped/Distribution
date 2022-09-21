@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PublishObject")
 @js.native
-/* private */ class PublishObject ()
+/* private */ open class PublishObject ()
   extends StObject
      with typings.activexExcel.Excel.PublishObject

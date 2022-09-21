@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.ListbarElement")
 @js.native
-class ListbarElement protected () extends BoxElement {
+open class ListbarElement protected () extends BoxElement {
   def this(opts: ListbarOptions) = this()
   
   /**
@@ -43,12 +43,7 @@ class ListbarElement protected () extends BoxElement {
     */
   def moveRight(offset: Double): Unit = js.native
   
-  @JSName("on")
-  def on_removeitem(event: `remove item`, callback: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_selecttab(event: `select tab`, callback: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_setitems(event: `set items`, callback: js.Function0[Unit]): this.type = js.native
+  def on(event: (`set items`) | (`remove item`) | (`select tab`), callback: js.Function0[Unit]): this.type = js.native
   
   /**
     * Original options object.

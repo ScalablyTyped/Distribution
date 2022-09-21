@@ -12,6 +12,11 @@ trait CreatePredictorRequest extends StObject {
   var AlgorithmArn: js.UndefOr[Arn] = js.undefined
   
   /**
+    *   The LatencyOptimized AutoML override strategy is only available in private beta. Contact AWS Support or your account manager to learn more about access privileges.   Used to overide the default AutoML strategy, which is to optimize predictor accuracy. To apply an AutoML strategy that minimizes training time, use LatencyOptimized. This parameter is only valid for predictors trained using AutoML.
+    */
+  var AutoMLOverrideStrategy: js.UndefOr[typings.awsSdk.forecastserviceMod.AutoMLOverrideStrategy] = js.undefined
+  
+  /**
     * An AWS Key Management Service (KMS) key and the AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the key.
     */
   var EncryptionConfig: js.UndefOr[typings.awsSdk.forecastserviceMod.EncryptionConfig] = js.undefined
@@ -45,6 +50,11 @@ trait CreatePredictorRequest extends StObject {
     * Describes the dataset group that contains the data to use to train the predictor.
     */
   var InputDataConfig: typings.awsSdk.forecastserviceMod.InputDataConfig
+  
+  /**
+    * The accuracy metric used to optimize the predictor.
+    */
+  var OptimizationMetric: js.UndefOr[typings.awsSdk.forecastserviceMod.OptimizationMetric] = js.undefined
   
   /**
     * Whether to perform AutoML. When Amazon Forecast performs AutoML, it evaluates the algorithms it provides and chooses the best algorithm and configuration for your training dataset. The default value is false. In this case, you are required to specify an algorithm. Set PerformAutoML to true to have Amazon Forecast perform AutoML. This is a good option if you aren't sure which algorithm is suitable for your training data. In this case, PerformHPO must be false.
@@ -89,6 +99,10 @@ object CreatePredictorRequest {
     
     inline def setAlgorithmArnUndefined: Self = StObject.set(x, "AlgorithmArn", js.undefined)
     
+    inline def setAutoMLOverrideStrategy(value: AutoMLOverrideStrategy): Self = StObject.set(x, "AutoMLOverrideStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setAutoMLOverrideStrategyUndefined: Self = StObject.set(x, "AutoMLOverrideStrategy", js.undefined)
+    
     inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     
     inline def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
@@ -105,13 +119,17 @@ object CreatePredictorRequest {
     
     inline def setForecastTypesUndefined: Self = StObject.set(x, "ForecastTypes", js.undefined)
     
-    inline def setForecastTypesVarargs(value: ForecastType*): Self = StObject.set(x, "ForecastTypes", js.Array(value :_*))
+    inline def setForecastTypesVarargs(value: ForecastType*): Self = StObject.set(x, "ForecastTypes", js.Array(value*))
     
     inline def setHPOConfig(value: HyperParameterTuningJobConfig): Self = StObject.set(x, "HPOConfig", value.asInstanceOf[js.Any])
     
     inline def setHPOConfigUndefined: Self = StObject.set(x, "HPOConfig", js.undefined)
     
     inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizationMetric(value: OptimizationMetric): Self = StObject.set(x, "OptimizationMetric", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizationMetricUndefined: Self = StObject.set(x, "OptimizationMetric", js.undefined)
     
     inline def setPerformAutoML(value: Boolean): Self = StObject.set(x, "PerformAutoML", value.asInstanceOf[js.Any])
     
@@ -127,7 +145,7 @@ object CreatePredictorRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTrainingParameters(value: TrainingParameters): Self = StObject.set(x, "TrainingParameters", value.asInstanceOf[js.Any])
     

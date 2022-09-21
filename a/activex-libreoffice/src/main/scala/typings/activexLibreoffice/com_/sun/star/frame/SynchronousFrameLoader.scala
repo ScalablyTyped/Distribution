@@ -28,9 +28,9 @@ object SynchronousFrameLoader {
     acquire: () => Unit,
     cancel: () => Unit,
     getName: () => String,
-    initialize: SeqEquiv[js.Any] => Unit,
+    initialize: SeqEquiv[Any] => Unit,
     load: (SeqEquiv[PropertyValue], XFrame) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setName: String => Unit
   ): SynchronousFrameLoader = {

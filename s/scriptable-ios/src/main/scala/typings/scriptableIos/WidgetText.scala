@@ -114,7 +114,7 @@ trait WidgetText extends StObject {
     * _URL to open._
     *
     * The URL will be opened when the text is tapped. This is only supported in medium and large widgets. Small widgets can only have a single tap target, which is specified by the `url`
-    * property on the widget.
+    * property in the widget configurator.
     * @see https://docs.scriptable.app/widgettext/#url
     */
   var url: String

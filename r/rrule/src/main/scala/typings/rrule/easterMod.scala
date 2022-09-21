@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object easterMod {
   
-  @JSImport("rrule/dist/esm/src/iterinfo/easter", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/iterinfo/easter", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

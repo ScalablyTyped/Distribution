@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactI18nextStrings {
   
   @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   
@@ -59,8 +63,16 @@ object reactI18nextStrings {
   inline def email: email = "email".asInstanceOf[email]
   
   @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
   sealed trait execute extends StObject
   inline def execute: execute = "execute".asInstanceOf[execute]
+  
+  @js.native
+  sealed trait fallback extends StObject
+  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
   
   @js.native
   sealed trait grammar extends StObject
@@ -205,6 +217,10 @@ object reactI18nextStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait vertical extends StObject

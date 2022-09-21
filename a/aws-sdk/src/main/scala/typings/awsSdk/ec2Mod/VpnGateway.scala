@@ -66,7 +66,7 @@ object VpnGateway {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setType(value: GatewayType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object VpnGateway {
     
     inline def setVpcAttachmentsUndefined: Self = StObject.set(x, "VpcAttachments", js.undefined)
     
-    inline def setVpcAttachmentsVarargs(value: VpcAttachment*): Self = StObject.set(x, "VpcAttachments", js.Array(value :_*))
+    inline def setVpcAttachmentsVarargs(value: VpcAttachment*): Self = StObject.set(x, "VpcAttachments", js.Array(value*))
     
     inline def setVpnGatewayId(value: String): Self = StObject.set(x, "VpnGatewayId", value.asInstanceOf[js.Any])
     

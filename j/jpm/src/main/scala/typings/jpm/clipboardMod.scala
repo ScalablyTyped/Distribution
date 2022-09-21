@@ -14,18 +14,8 @@ object clipboardMod {
   val ^ : js.Any = js.native
   
   inline def get(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[String]
-  
-  inline def get_html(datatype: html): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(datatype.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def get_image(datatype: image): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(datatype.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def get_text(datatype: text): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(datatype.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def get(datatype: text | html | image): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(datatype.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def set(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def set_html(data: String, datatype: html): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(data.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def set_image(data: String, datatype: image): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(data.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def set_text(data: String, datatype: text): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(data.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(data: String, datatype: text | html | image): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(data.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

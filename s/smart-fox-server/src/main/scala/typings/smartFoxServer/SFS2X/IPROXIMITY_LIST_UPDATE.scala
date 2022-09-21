@@ -32,18 +32,18 @@ object IPROXIMITY_LIST_UPDATE {
     
     inline def setAddedItems(value: js.Array[MMOItem]): Self = StObject.set(x, "addedItems", value.asInstanceOf[js.Any])
     
-    inline def setAddedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "addedItems", js.Array(value :_*))
+    inline def setAddedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "addedItems", js.Array(value*))
     
     inline def setAddedUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "addedUsers", value.asInstanceOf[js.Any])
     
-    inline def setAddedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "addedUsers", js.Array(value :_*))
+    inline def setAddedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "addedUsers", js.Array(value*))
     
     inline def setRemovedItems(value: js.Array[MMOItem]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
     
-    inline def setRemovedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "removedItems", js.Array(value :_*))
+    inline def setRemovedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "removedItems", js.Array(value*))
     
     inline def setRemovedUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "removedUsers", value.asInstanceOf[js.Any])
     
-    inline def setRemovedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "removedUsers", js.Array(value :_*))
+    inline def setRemovedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "removedUsers", js.Array(value*))
   }
 }

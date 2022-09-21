@@ -10,10 +10,10 @@ Ellipsizes a string at the nearest whitespace character near the end of allowed 
 | ------------------ | :-------------: |
 | Full name          | ellipsize |
 | Keywords           | ellipsize, ellipsis, truncate, shorten, string |
-| # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 1109296 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 438649.6666666667 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/mvhenten/ellipsize)

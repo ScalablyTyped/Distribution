@@ -32,9 +32,9 @@ trait PrincipalInfo
 object PrincipalInfo {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_department: () => String,
     get_displayName: () => String,
     get_email: () => String,

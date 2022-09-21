@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SharedArrayBufferConstructor
   extends StObject
-     with Instantiable1[/* byteLength */ Double, SharedArrayBuffer]
+     with /* standard es2017.sharedmemory */
+Instantiable1[/* byteLength */ Double, SharedArrayBuffer]

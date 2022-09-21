@@ -11,14 +11,12 @@ Single component release of api
 | Full name          | semantic-ui-api |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 19407 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 15883.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)
-- [Bugs](https://github.com/Semantic-Org/Semantic-UI/issues)
-- [Repository](https://github.com/Semantic-Org/UI-Api)
 - [Npm](https://www.npmjs.com/package/semantic-ui-api)
     
 

@@ -8,7 +8,7 @@ object gaugeAxisMod {
   
   @JSImport("amcharts/GaugeAxis", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with GaugeAxis {
     
@@ -16,7 +16,7 @@ object gaugeAxisMod {
       * Adds event listener to the object.
       */
     /* CompleteClass */
-    override def addListener(`type`: String, handler: js.Any): Unit = js.native
+    override def addListener(`type`: String, handler: Any): Unit = js.native
     
     /**
       * Axis opacity.
@@ -119,14 +119,14 @@ object gaugeAxisMod {
       * @default '0%'
       */
     /* CompleteClass */
-    var centerX: js.Any = js.native
+    var centerX: Any = js.native
     
     /**
       * Y position of the axis, relative to the center of the gauge.
       * @default '0%'
       */
     /* CompleteClass */
-    var centerY: js.Any = js.native
+    var centerY: Any = js.native
     
     /**
       * Specifies labels color of the axis.
@@ -172,7 +172,7 @@ object gaugeAxisMod {
       * Unique id of an axis.
       */
     /* CompleteClass */
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /**
       * Specifies if labels should be placed inside or outside the axis.
@@ -234,13 +234,13 @@ object gaugeAxisMod {
       * @default '95%'
       */
     /* CompleteClass */
-    var radius: js.Any = js.native
+    var radius: Any = js.native
     
     /**
       * Removes event listener from chart object.
       */
     /* CompleteClass */
-    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit = js.native
     
     /**
       * Sets bottom text.
@@ -380,7 +380,7 @@ object gaugeAxisMod {
     /**
       * Adds event listener to the object.
       */
-    def addListener(`type`: String, handler: js.Any): Unit
+    def addListener(`type`: String, handler: Any): Unit
     
     /**
       * Axis opacity.
@@ -468,13 +468,13 @@ object gaugeAxisMod {
       * X position of the axis, relative to the center of the gauge.
       * @default '0%'
       */
-    var centerX: js.Any
+    var centerX: Any
     
     /**
       * Y position of the axis, relative to the center of the gauge.
       * @default '0%'
       */
-    var centerY: js.Any
+    var centerY: Any
     
     /**
       * Specifies labels color of the axis.
@@ -513,7 +513,7 @@ object gaugeAxisMod {
     /**
       * Unique id of an axis.
       */
-    var id: js.Any
+    var id: Any
     
     /**
       * Specifies if labels should be placed inside or outside the axis.
@@ -566,12 +566,12 @@ object gaugeAxisMod {
       * Axis radius.
       * @default '95%'
       */
-    var radius: js.Any
+    var radius: Any
     
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit
+    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit
     
     /**
       * Sets bottom text.
@@ -688,7 +688,7 @@ object gaugeAxisMod {
   object GaugeAxis {
     
     inline def apply(
-      addListener: (String, js.Any) => Unit,
+      addListener: (String, Any) => Unit,
       axisAlpha: Double,
       axisColor: String,
       axisThickness: Double,
@@ -703,15 +703,15 @@ object gaugeAxisMod {
       bottomTextColor: String,
       bottomTextFontSize: Double,
       bottomTextYOffset: Double,
-      centerX: js.Any,
-      centerY: js.Any,
+      centerX: Any,
+      centerY: Any,
       color: String,
       endAngle: Double,
       endValue: Double,
       fontSize: Double,
       gridCount: Double,
       gridInside: Boolean,
-      id: js.Any,
+      id: Any,
       inside: Boolean,
       labelFrequency: Double,
       labelFunction: Double => String,
@@ -720,8 +720,8 @@ object gaugeAxisMod {
       listeners: js.Array[js.Object],
       minorTickInterval: Double,
       minorTickLength: Double,
-      radius: js.Any,
-      removeListener: (typings.amcharts.amChartMod.default, String, js.Any) => Unit,
+      radius: Any,
+      removeListener: (typings.amcharts.amChartMod.default, String, Any) => Unit,
       setBottomText: String => Unit,
       setTopText: String => Unit,
       showFirstLabel: Boolean,
@@ -749,7 +749,7 @@ object gaugeAxisMod {
     
     extension [Self <: GaugeAxis](x: Self) {
       
-      inline def setAddListener(value: (String, js.Any) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (String, Any) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
       inline def setAxisAlpha(value: Double): Self = StObject.set(x, "axisAlpha", value.asInstanceOf[js.Any])
       
@@ -761,7 +761,7 @@ object gaugeAxisMod {
       
       inline def setBandGradientRatio(value: js.Array[Double]): Self = StObject.set(x, "bandGradientRatio", value.asInstanceOf[js.Any])
       
-      inline def setBandGradientRatioVarargs(value: Double*): Self = StObject.set(x, "bandGradientRatio", js.Array(value :_*))
+      inline def setBandGradientRatioVarargs(value: Double*): Self = StObject.set(x, "bandGradientRatio", js.Array(value*))
       
       inline def setBandOutlineAlpha(value: Double): Self = StObject.set(x, "bandOutlineAlpha", value.asInstanceOf[js.Any])
       
@@ -771,7 +771,7 @@ object gaugeAxisMod {
       
       inline def setBands(value: js.Array[typings.amcharts.gaugeBandMod.default]): Self = StObject.set(x, "bands", value.asInstanceOf[js.Any])
       
-      inline def setBandsVarargs(value: typings.amcharts.gaugeBandMod.default*): Self = StObject.set(x, "bands", js.Array(value :_*))
+      inline def setBandsVarargs(value: typings.amcharts.gaugeBandMod.default*): Self = StObject.set(x, "bands", js.Array(value*))
       
       inline def setBottomText(value: String): Self = StObject.set(x, "bottomText", value.asInstanceOf[js.Any])
       
@@ -783,9 +783,9 @@ object gaugeAxisMod {
       
       inline def setBottomTextYOffset(value: Double): Self = StObject.set(x, "bottomTextYOffset", value.asInstanceOf[js.Any])
       
-      inline def setCenterX(value: js.Any): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
+      inline def setCenterX(value: Any): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
       
-      inline def setCenterY(value: js.Any): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
+      inline def setCenterY(value: Any): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -799,7 +799,7 @@ object gaugeAxisMod {
       
       inline def setGridInside(value: Boolean): Self = StObject.set(x, "gridInside", value.asInstanceOf[js.Any])
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
       
@@ -813,15 +813,15 @@ object gaugeAxisMod {
       
       inline def setListeners(value: js.Array[js.Object]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      inline def setListenersVarargs(value: js.Object*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(value: js.Object*): Self = StObject.set(x, "listeners", js.Array(value*))
       
       inline def setMinorTickInterval(value: Double): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
       
       inline def setMinorTickLength(value: Double): Self = StObject.set(x, "minorTickLength", value.asInstanceOf[js.Any])
       
-      inline def setRadius(value: js.Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, js.Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
+      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
       
       inline def setSetBottomText(value: String => Unit): Self = StObject.set(x, "setBottomText", js.Any.fromFunction1(value))
       

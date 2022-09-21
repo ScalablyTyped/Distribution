@@ -10,10 +10,10 @@ Polyfill for OffscreenCanvas to move Three.js/WebGL/2D canvas to Web Worker
 | ------------------ | :-------------: |
 | Full name          | offscreen-canvas |
 | Keywords           | offscreen canvas, canvas, webgl, polyfill, three.js |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 7235 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1801.0 |
+| # stars            | 282.0 |
 
 ## Links
 - [Homepage](https://github.com/ai/offscreen-canvas#readme)

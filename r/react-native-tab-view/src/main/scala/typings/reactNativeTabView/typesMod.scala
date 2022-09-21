@@ -1,12 +1,17 @@
 package typings.reactNativeTabView
 
-import typings.reactNativeTabView.anon.Damping
-import typings.reactNativeTabView.anon.Duration
+import typings.reactNative.mod.Animated.AnimatedInterpolation
+import typings.reactNative.mod.GestureResponderEvent
+import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.ViewStyle
+import typings.reactNativePagerView.typesMod.Orientation
+import typings.reactNativePagerView.typesMod.OverScrollMode
 import typings.reactNativeTabView.reactNativeTabViewStrings.`on-drag`
 import typings.reactNativeTabView.reactNativeTabViewStrings.auto
-import typings.reactNativeTabView.reactNativeTabViewStrings.enter
+import typings.reactNativeTabView.reactNativeTabViewStrings.locale
+import typings.reactNativeTabView.reactNativeTabViewStrings.ltr
 import typings.reactNativeTabView.reactNativeTabViewStrings.none
-import typings.std.Node
+import typings.reactNativeTabView.reactNativeTabViewStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,24 +41,18 @@ object typesMod {
   
   trait EventEmitterProps extends StObject {
     
-    @JSName("addListener")
-    def addListener_enter(`type`: enter, listener: Listener): Unit
-    
-    @JSName("removeListener")
-    def removeListener_enter(`type`: enter, listener: Listener): Unit
+    def addEnterListener(listener: Listener): js.Function0[Unit]
   }
   object EventEmitterProps {
     
-    inline def apply(addListener: (enter, Listener) => Unit, removeListener: (enter, Listener) => Unit): EventEmitterProps = {
-      val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), removeListener = js.Any.fromFunction2(removeListener))
+    inline def apply(addEnterListener: Listener => js.Function0[Unit]): EventEmitterProps = {
+      val __obj = js.Dynamic.literal(addEnterListener = js.Any.fromFunction1(addEnterListener))
       __obj.asInstanceOf[EventEmitterProps]
     }
     
     extension [Self <: EventEmitterProps](x: Self) {
       
-      inline def setAddListener(value: (enter, Listener) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
-      
-      inline def setRemoveListener(value: (enter, Listener) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setAddEnterListener(value: Listener => js.Function0[Unit]): Self = StObject.set(x, "addEnterListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -99,43 +98,69 @@ object typesMod {
       
       inline def setRoutes(value: js.Array[T]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: T*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: T*): Self = StObject.set(x, "routes", js.Array(value*))
     }
   }
   
-  trait PagerCommonProps extends StObject {
+  /* Inlined std.Omit<react-native-pager-view.react-native-pager-view.PagerViewProps, 'initialPage' | 'scrollEnabled' | 'onPageScroll' | 'onPageSelected' | 'onPageScrollStateChanged' | 'keyboardDismissMode' | 'children'> & {  keyboardDismissMode :'none' | 'on-drag' | 'auto' | undefined,   swipeEnabled :boolean | undefined,   onSwipeStart :(): void | undefined,   onSwipeEnd :(): void | undefined} */
+  trait PagerProps extends StObject {
     
-    var keyboardDismissMode: none | `on-drag` | auto
+    var keyboardDismissMode: js.UndefOr[none | `on-drag` | auto] = js.undefined
+    
+    var layoutDirection: js.UndefOr[rtl | ltr | locale] = js.undefined
+    
+    var offscreenPageLimit: js.UndefOr[Double] = js.undefined
+    
+    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
+    
+    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
     var onSwipeEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onSwipeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var springConfig: Damping
+    var orientation: js.UndefOr[Orientation] = js.undefined
     
-    var springVelocityScale: js.UndefOr[Double] = js.undefined
+    var overScrollMode: js.UndefOr[OverScrollMode] = js.undefined
     
-    var swipeEnabled: Boolean
+    var overdrag: js.UndefOr[Boolean] = js.undefined
     
-    var swipeVelocityImpact: js.UndefOr[Double] = js.undefined
+    var pageMargin: js.UndefOr[Double] = js.undefined
     
-    var timingConfig: Duration
+    var showPageIndicator: js.UndefOr[Boolean] = js.undefined
+    
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+    
+    var swipeEnabled: js.UndefOr[Boolean] = js.undefined
   }
-  object PagerCommonProps {
+  object PagerProps {
     
-    inline def apply(
-      keyboardDismissMode: none | `on-drag` | auto,
-      springConfig: Damping,
-      swipeEnabled: Boolean,
-      timingConfig: Duration
-    ): PagerCommonProps = {
-      val __obj = js.Dynamic.literal(keyboardDismissMode = keyboardDismissMode.asInstanceOf[js.Any], springConfig = springConfig.asInstanceOf[js.Any], swipeEnabled = swipeEnabled.asInstanceOf[js.Any], timingConfig = timingConfig.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PagerCommonProps]
+    inline def apply(): PagerProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PagerProps]
     }
     
-    extension [Self <: PagerCommonProps](x: Self) {
+    extension [Self <: PagerProps](x: Self) {
       
       inline def setKeyboardDismissMode(value: none | `on-drag` | auto): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+      
+      inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
+      
+      inline def setLayoutDirection(value: rtl | ltr | locale): Self = StObject.set(x, "layoutDirection", value.asInstanceOf[js.Any])
+      
+      inline def setLayoutDirectionUndefined: Self = StObject.set(x, "layoutDirection", js.undefined)
+      
+      inline def setOffscreenPageLimit(value: Double): Self = StObject.set(x, "offscreenPageLimit", value.asInstanceOf[js.Any])
+      
+      inline def setOffscreenPageLimitUndefined: Self = StObject.set(x, "offscreenPageLimit", js.undefined)
+      
+      inline def setOnMoveShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
+      
+      inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
+      
+      inline def setOnStartShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onStartShouldSetResponder", js.Any.fromFunction1(value))
+      
+      inline def setOnStartShouldSetResponderUndefined: Self = StObject.set(x, "onStartShouldSetResponder", js.undefined)
       
       inline def setOnSwipeEnd(value: () => Unit): Self = StObject.set(x, "onSwipeEnd", js.Any.fromFunction0(value))
       
@@ -145,19 +170,35 @@ object typesMod {
       
       inline def setOnSwipeStartUndefined: Self = StObject.set(x, "onSwipeStart", js.undefined)
       
-      inline def setSpringConfig(value: Damping): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      inline def setSpringVelocityScale(value: Double): Self = StObject.set(x, "springVelocityScale", value.asInstanceOf[js.Any])
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      inline def setSpringVelocityScaleUndefined: Self = StObject.set(x, "springVelocityScale", js.undefined)
+      inline def setOverScrollMode(value: OverScrollMode): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
+      
+      inline def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
+      
+      inline def setOverdrag(value: Boolean): Self = StObject.set(x, "overdrag", value.asInstanceOf[js.Any])
+      
+      inline def setOverdragUndefined: Self = StObject.set(x, "overdrag", js.undefined)
+      
+      inline def setPageMargin(value: Double): Self = StObject.set(x, "pageMargin", value.asInstanceOf[js.Any])
+      
+      inline def setPageMarginUndefined: Self = StObject.set(x, "pageMargin", js.undefined)
+      
+      inline def setShowPageIndicator(value: Boolean): Self = StObject.set(x, "showPageIndicator", value.asInstanceOf[js.Any])
+      
+      inline def setShowPageIndicatorUndefined: Self = StObject.set(x, "showPageIndicator", js.undefined)
+      
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setSwipeEnabled(value: Boolean): Self = StObject.set(x, "swipeEnabled", value.asInstanceOf[js.Any])
       
-      inline def setSwipeVelocityImpact(value: Double): Self = StObject.set(x, "swipeVelocityImpact", value.asInstanceOf[js.Any])
-      
-      inline def setSwipeVelocityImpactUndefined: Self = StObject.set(x, "swipeVelocityImpact", js.undefined)
-      
-      inline def setTimingConfig(value: Duration): Self = StObject.set(x, "timingConfig", value.asInstanceOf[js.Any])
+      inline def setSwipeEnabledUndefined: Self = StObject.set(x, "swipeEnabled", js.undefined)
     }
   }
   
@@ -231,11 +272,11 @@ object typesMod {
     
     var layout: Layout
     
-    var position: Node
+    var position: AnimatedInterpolation[Double | String]
   }
   object SceneRendererProps {
     
-    inline def apply(jumpTo: String => Unit, layout: Layout, position: Node): SceneRendererProps = {
+    inline def apply(jumpTo: String => Unit, layout: Layout, position: AnimatedInterpolation[Double | String]): SceneRendererProps = {
       val __obj = js.Dynamic.literal(jumpTo = js.Any.fromFunction1(jumpTo), layout = layout.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[SceneRendererProps]
     }
@@ -246,7 +287,7 @@ object typesMod {
       
       inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      inline def setPosition(value: Node): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
 }

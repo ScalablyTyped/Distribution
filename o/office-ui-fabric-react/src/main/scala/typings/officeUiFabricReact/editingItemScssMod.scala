@@ -8,9 +8,9 @@ object editingItemScssMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/Items/EditingItem.scss", "editingContainer")
   @js.native
-  val editingContainer: /* "editingContainer_436df1d9" */ String = js.native
+  val editingContainer: /* "editingContainer_c5788fa2" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/Items/EditingItem.scss", "editingInput")
   @js.native
-  val editingInput: /* "editingInput_436df1d9" */ String = js.native
+  val editingInput: /* "editingInput_c5788fa2" */ String = js.native
 }

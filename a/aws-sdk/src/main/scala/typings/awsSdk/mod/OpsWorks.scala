@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class OpsWorks ()
+open class OpsWorks ()
   extends typings.awsSdk.allMod.OpsWorks {
   def this(options: ClientConfiguration) = this()
 }

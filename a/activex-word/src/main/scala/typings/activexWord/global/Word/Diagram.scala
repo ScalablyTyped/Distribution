@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Diagram")
 @js.native
-/* private */ class Diagram ()
+/* private */ open class Diagram ()
   extends StObject
      with typings.activexWord.Word.Diagram {
   
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Nodes: typings.activexWord.Word.DiagramNodes = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Reverse: MsoTriState = js.native

@@ -1,15 +1,5 @@
 package typings.simpleSha1
 
-import typings.std.DataView
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +16,7 @@ object mod {
   inline def sync(buf: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def sync(buf: ArrayBufferView): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type ArrayBufferView = TypedArray | DataView
+  type ArrayBufferView = TypedArray | js.typedarray.DataView
   
-  type TypedArray = Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array | Int8Array | Int16Array | Int32Array | Float32Array | Float64Array
+  type TypedArray = js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Uint16Array | js.typedarray.Uint32Array | js.typedarray.Int8Array | js.typedarray.Int16Array | js.typedarray.Int32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
 }

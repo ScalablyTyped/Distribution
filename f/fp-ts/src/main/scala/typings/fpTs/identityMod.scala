@@ -3,6 +3,8 @@ package typings.fpTs
 import org.scalablytyped.runtime.TopLevel
 import typings.fpTs.altMod.Alt1
 import typings.fpTs.applicativeMod.Applicative1
+import typings.fpTs.applyMod.Apply1
+import typings.fpTs.chainMod.Chain1
 import typings.fpTs.chainRecMod.ChainRec1
 import typings.fpTs.comonadMod.Comonad1
 import typings.fpTs.eqMod.Eq
@@ -10,6 +12,7 @@ import typings.fpTs.foldableMod.Foldable1
 import typings.fpTs.functorMod.Functor1
 import typings.fpTs.monadMod.Monad1
 import typings.fpTs.monoidMod.Monoid
+import typings.fpTs.pointedMod.Pointed1
 import typings.fpTs.showMod.Show
 import typings.fpTs.traversableMod.PipeableTraverse1
 import typings.fpTs.traversableMod.Sequence1
@@ -33,13 +36,25 @@ object identityMod {
   @js.native
   val Applicative: Applicative1[typings.fpTs.identityMod.URI] = js.native
   
+  @JSImport("fp-ts/lib/Identity", "Apply")
+  @js.native
+  val Apply: Apply1[typings.fpTs.identityMod.URI] = js.native
+  
   @JSImport("fp-ts/lib/Identity", "ChainRec")
   @js.native
   val ChainRec: ChainRec1[typings.fpTs.identityMod.URI] = js.native
   
+  @JSImport("fp-ts/lib/Identity", "Chain")
+  @js.native
+  val Chain_ : Chain1[typings.fpTs.identityMod.URI] = js.native
+  
   @JSImport("fp-ts/lib/Identity", "Comonad")
   @js.native
   val Comonad: Comonad1[typings.fpTs.identityMod.URI] = js.native
+  
+  @JSImport("fp-ts/lib/Identity", "Do")
+  @js.native
+  val Do: Identity_[js.Object] = js.native
   
   @JSImport("fp-ts/lib/Identity", "Foldable")
   @js.native
@@ -53,6 +68,10 @@ object identityMod {
   @js.native
   val Monad: Monad1[typings.fpTs.identityMod.URI] = js.native
   
+  @JSImport("fp-ts/lib/Identity", "Pointed")
+  @js.native
+  val Pointed: Pointed1[typings.fpTs.identityMod.URI] = js.native
+  
   @JSImport("fp-ts/lib/Identity", "Traversable")
   @js.native
   val Traversable: Traversable1[typings.fpTs.identityMod.URI] = js.native
@@ -64,51 +83,53 @@ object identityMod {
   
   inline def alt[A](that: js.Function0[Identity_[A]]): js.Function1[/* fa */ Identity_[A], Identity_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Identity_[A], Identity_[A]]]
   
-  inline def ap[A](fa: Identity_[A]): js.Function1[/* fab */ Identity_[js.Function1[/* a */ A, js.Any]], Identity_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Identity_[js.Function1[/* a */ A, js.Any]], Identity_[js.Any]]]
+  inline def altW[B](that: js.Function0[Identity_[B]]): js.Function1[/* fa */ Identity_[Any], Identity_[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Identity_[Any], Identity_[Any | B]]]
   
-  inline def apFirst[B](fb: Identity_[B]): js.Function1[/* fa */ Identity_[js.Any], Identity_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Identity_[js.Any], Identity_[js.Any]]]
+  inline def ap[A](fa: Identity_[A]): js.Function1[/* fab */ Identity_[js.Function1[/* a */ A, Any]], Identity_[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Identity_[js.Function1[/* a */ A, Any]], Identity_[Any]]]
   
-  inline def apS[A, N /* <: String */, B](name: Exclude[N, /* keyof A */ String], fb: B): js.Function1[
+  inline def apFirst[B](second: B): js.Function1[/* first */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Any, Any]]
+  
+  inline def apS[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], fb: B): js.Function1[
     /* fa */ A, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N | keyof A ]: K extends keyof A? A[K] : B}
+  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ A, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N | keyof A ]: K extends keyof A? A[K] : B}
+  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
   ]]
   
-  inline def apSecond[B](fb: B): js.Function1[/* fa */ js.Any, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Any, B]]
+  inline def apSecond[B](second: B): js.Function1[/* first */ Any, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Any, B]]
   
   inline def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
-    /* fa */ A, 
+    /* ma */ A, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N | keyof A ]: K extends keyof A? A[K] : B}
+  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* fa */ A, 
+    /* ma */ A, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N | keyof A ]: K extends keyof A? A[K] : B}
+  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
   ]]
   
   inline def bindTo[N /* <: String */](name: N): js.Function1[
-    /* fa */ js.Any, 
+    /* fa */ Any, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[js.Any]
+  {readonly [ K in N ]: any}
+    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* fa */ js.Any, 
+    /* fa */ Any, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[js.Any]
+  {readonly [ K in N ]: any}
+    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
   ]]
   
   inline def chain[A, B](f: js.Function1[/* a */ A, Identity_[B]]): js.Function1[/* ma */ Identity_[A], Identity_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Identity_[A], Identity_[B]]]
   
-  inline def chainFirst[A, B](f: js.Function1[/* a */ A, Identity_[B]]): js.Function1[/* ma */ Identity_[A], Identity_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Identity_[A], Identity_[A]]]
+  inline def chainFirst[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* first */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ A, A]]
   
   inline def duplicate[A](ma: Identity_[A]): Identity_[Identity_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(ma.asInstanceOf[js.Any]).asInstanceOf[Identity_[Identity_[A]]]
   
@@ -116,15 +137,11 @@ object identityMod {
   
   inline def extract[A](wa: Identity_[A]): A = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(wa.asInstanceOf[js.Any]).asInstanceOf[A]
   
+  inline def flap[A](a: A): js.Function1[/* fab */ js.Function1[/* a */ A, Any], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ js.Function1[/* a */ A, Any], Any]]
+  
   inline def flatten[A](mma: Identity_[Identity_[A]]): Identity_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Identity_[A]]
   
-  inline def foldMap[M](M: Monoid[M]): js.Function1[
-    /* f */ js.Function1[/* a */ js.Any, M], 
-    js.Function1[/* fa */ Identity_[js.Any], M]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* f */ js.Function1[/* a */ js.Any, M], 
-    js.Function1[/* fa */ Identity_[js.Any], M]
-  ]]
+  inline def foldMap[M](M: Monoid[M]): js.Function1[/* f */ js.Function1[/* a */ Any, M], js.Function1[/* fa */ Identity_[Any], M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* a */ Any, M], js.Function1[/* fa */ Identity_[Any], M]]]
   
   inline def getEq[A](E: Eq[A]): Eq[Identity_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(E.asInstanceOf[js.Any]).asInstanceOf[Eq[Identity_[A]]]
   
@@ -139,8 +156,8 @@ object identityMod {
   @JSImport("fp-ts/lib/Identity", "of")
   @js.native
   val of: js.Function1[
-    /* a */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any
+    /* a */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
   ] = js.native
   
   inline def reduce[A, B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): js.Function1[/* fa */ Identity_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ Identity_[A], B]]

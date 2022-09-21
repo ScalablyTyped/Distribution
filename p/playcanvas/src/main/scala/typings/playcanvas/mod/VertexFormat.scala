@@ -1,135 +1,169 @@
 package typings.playcanvas.mod
 
 import typings.playcanvas.anon.Components
-import typings.playcanvas.anon.Name
+import typings.playcanvas.anon.DataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @typedef {import('./graphics-device.js').GraphicsDevice} GraphicsDevice */
 /**
-  * Returns a new pc.VertexFormat object.
-  * @example
-  * // Specify 3-component positions (x, y, z)
-  * var vertexFormat = new pc.VertexFormat(graphicsDevice, [
-  *     { semantic: pc.SEMANTIC_POSITION, components: 3, type: pc.TYPE_FLOAT32 }
-  * ]);
-  * @example
-  * // Specify 2-component positions (x, y), a texture coordinate (u, v) and a vertex color (r, g, b, a)
-  * var vertexFormat = new pc.VertexFormat(graphicsDevice, [
-  *     { semantic: pc.SEMANTIC_POSITION, components: 2, type: pc.TYPE_FLOAT32 },
-  *     { semantic: pc.SEMANTIC_TEXCOORD0, components: 2, type: pc.TYPE_FLOAT32 },
-  *     { semantic: pc.SEMANTIC_COLOR, components: 4, type: pc.TYPE_UINT8, normalize: true }
-  * ]);
-  * @property elements - The vertex attribute elements.
-  * @property elements[].name - The meaning of the vertex element. This is used to link
-  * the vertex data to a shader input. Can be:
+  * A vertex format is a descriptor that defines the layout of vertex data inside a
+  * {@link VertexBuffer}.
   *
-  * * {@link pc.SEMANTIC_POSITION}
-  * * {@link pc.SEMANTIC_NORMAL}
-  * * {@link pc.SEMANTIC_TANGENT}
-  * * {@link pc.SEMANTIC_BLENDWEIGHT}
-  * * {@link pc.SEMANTIC_BLENDINDICES}
-  * * {@link pc.SEMANTIC_COLOR}
-  * * {@link pc.SEMANTIC_TEXCOORD0}
-  * * {@link pc.SEMANTIC_TEXCOORD1}
-  * * {@link pc.SEMANTIC_TEXCOORD2}
-  * * {@link pc.SEMANTIC_TEXCOORD3}
-  * * {@link pc.SEMANTIC_TEXCOORD4}
-  * * {@link pc.SEMANTIC_TEXCOORD5}
-  * * {@link pc.SEMANTIC_TEXCOORD6}
-  * * {@link pc.SEMANTIC_TEXCOORD7}
+  * @property {object[]} elements The vertex attribute elements.
+  * @property {string} elements[].name The meaning of the vertex element. This is used to link the
+  * vertex data to a shader input. Can be:
+  *
+  * - {@link SEMANTIC_POSITION}
+  * - {@link SEMANTIC_NORMAL}
+  * - {@link SEMANTIC_TANGENT}
+  * - {@link SEMANTIC_BLENDWEIGHT}
+  * - {@link SEMANTIC_BLENDINDICES}
+  * - {@link SEMANTIC_COLOR}
+  * - {@link SEMANTIC_TEXCOORD0}
+  * - {@link SEMANTIC_TEXCOORD1}
+  * - {@link SEMANTIC_TEXCOORD2}
+  * - {@link SEMANTIC_TEXCOORD3}
+  * - {@link SEMANTIC_TEXCOORD4}
+  * - {@link SEMANTIC_TEXCOORD5}
+  * - {@link SEMANTIC_TEXCOORD6}
+  * - {@link SEMANTIC_TEXCOORD7}
   *
   * If vertex data has a meaning other that one of those listed above, use the user-defined
-  * semantics: pc.SEMANTIC_ATTR0 to pc.SEMANTIC_ATTR15.
-  * @property elements[].numComponents - The number of components of the vertex attribute.
+  * semantics: {@link SEMANTIC_ATTR0} to {@link SEMANTIC_ATTR15}.
+  * @property {number} elements[].numComponents The number of components of the vertex attribute.
   * Can be 1, 2, 3 or 4.
-  * @property elements[].dataType - The data type of the attribute. Can be:
+  * @property {number} elements[].dataType The data type of the attribute. Can be:
   *
-  * * {@link pc.TYPE_INT8}
-  * * {@link pc.TYPE_UINT8}
-  * * {@link pc.TYPE_INT16}
-  * * {@link pc.TYPE_UINT16}
-  * * {@link pc.TYPE_INT32}
-  * * {@link pc.TYPE_UINT32}
-  * * {@link pc.TYPE_FLOAT32}
-  * @property elements[].normalize - If true, vertex attribute data will be mapped from a
-  * 0 to 255 range down to 0 to 1 when fed to a shader. If false, vertex attribute data is left
+  * - {@link TYPE_INT8}
+  * - {@link TYPE_UINT8}
+  * - {@link TYPE_INT16}
+  * - {@link TYPE_UINT16}
+  * - {@link TYPE_INT32}
+  * - {@link TYPE_UINT32}
+  * - {@link TYPE_FLOAT32}
+  * @property {boolean} elements[].normalize If true, vertex attribute data will be mapped from a 0
+  * to 255 range down to 0 to 1 when fed to a shader. If false, vertex attribute data is left
   * unchanged. If this property is unspecified, false is assumed.
-  * @property elements[].offset - The number of initial bytes at the start of a vertex that are not relevant to this attribute.
-  * @property elements[].stride - The number of total bytes that are between the start of one vertex, and the start of the next.
-  * @property elements[].size - The size of the attribute in bytes.
-  * @param graphicsDevice - The graphics device used to manage this vertex format.
-  * @param description - An array of vertex attribute descriptions.
-  * @param description[].semantic - The meaning of the vertex element. This is used to link
-  * the vertex data to a shader input. Can be:
-  *
-  * * {@link pc.SEMANTIC_POSITION}
-  * * {@link pc.SEMANTIC_NORMAL}
-  * * {@link pc.SEMANTIC_TANGENT}
-  * * {@link pc.SEMANTIC_BLENDWEIGHT}
-  * * {@link pc.SEMANTIC_BLENDINDICES}
-  * * {@link pc.SEMANTIC_COLOR}
-  * * {@link pc.SEMANTIC_TEXCOORD0}
-  * * {@link pc.SEMANTIC_TEXCOORD1}
-  * * {@link pc.SEMANTIC_TEXCOORD2}
-  * * {@link pc.SEMANTIC_TEXCOORD3}
-  * * {@link pc.SEMANTIC_TEXCOORD4}
-  * * {@link pc.SEMANTIC_TEXCOORD5}
-  * * {@link pc.SEMANTIC_TEXCOORD6}
-  * * {@link pc.SEMANTIC_TEXCOORD7}
-  *
-  * If vertex data has a meaning other that one of those listed above, use the user-defined
-  * semantics: pc.SEMANTIC_ATTR0 to pc.SEMANTIC_ATTR15.
-  * @param description[].components - The number of components of the vertex attribute.
-  * Can be 1, 2, 3 or 4.
-  * @param description[].type - The data type of the attribute. Can be:
-  *
-  * * {@link pc.TYPE_INT8}
-  * * {@link pc.TYPE_UINT8}
-  * * {@link pc.TYPE_INT16}
-  * * {@link pc.TYPE_UINT16}
-  * * {@link pc.TYPE_INT32}
-  * * {@link pc.TYPE_UINT32}
-  * * {@link pc.TYPE_FLOAT32}
-  * @param [description[].normalize] - If true, vertex attribute data will be mapped from a
-  * 0 to 255 range down to 0 to 1 when fed to a shader. If false, vertex attribute data is left
-  * unchanged. If this property is unspecified, false is assumed.
-  * @param [vertexCount] - When specified, vertex format will be set up for non-interleaved format with a specified
-  * number of vertices. (example: PPPPNNNNCCCC), where arrays of individual attributes will be stored one right after the other (subject to alignment requirements).
-  * Note that in this case, the format depends on the number of vertices, and needs to change when the number of vertices changes.
-  * When not specified, vertex format will be interleaved. (example: PNCPNCPNCPNC)
+  * @property {number} elements[].offset The number of initial bytes at the start of a vertex that
+  * are not relevant to this attribute.
+  * @property {number} elements[].stride The number of total bytes that are between the start of one
+  * vertex, and the start of the next.
+  * @property {number} elements[].size The size of the attribute in bytes.
   */
 @JSImport("playcanvas", "VertexFormat")
 @js.native
-class VertexFormat protected ()
-  extends StObject
-     with typings.playcanvas.pc.VertexFormat {
-  def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, description: js.Array[Components]) = this()
-  def this(
-    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
-    description: js.Array[Components],
-    vertexCount: Double
-  ) = this()
+open class VertexFormat protected () extends StObject {
+  /**
+    * Create a new VertexFormat instance.
+    *
+    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this vertex format.
+    * @param {object[]} description - An array of vertex attribute descriptions.
+    * @param {string} description[].semantic - The meaning of the vertex element. This is used to link
+    * the vertex data to a shader input. Can be:
+    *
+    * - {@link SEMANTIC_POSITION}
+    * - {@link SEMANTIC_NORMAL}
+    * - {@link SEMANTIC_TANGENT}
+    * - {@link SEMANTIC_BLENDWEIGHT}
+    * - {@link SEMANTIC_BLENDINDICES}
+    * - {@link SEMANTIC_COLOR}
+    * - {@link SEMANTIC_TEXCOORD0}
+    * - {@link SEMANTIC_TEXCOORD1}
+    * - {@link SEMANTIC_TEXCOORD2}
+    * - {@link SEMANTIC_TEXCOORD3}
+    * - {@link SEMANTIC_TEXCOORD4}
+    * - {@link SEMANTIC_TEXCOORD5}
+    * - {@link SEMANTIC_TEXCOORD6}
+    * - {@link SEMANTIC_TEXCOORD7}
+    *
+    * If vertex data has a meaning other that one of those listed above, use the user-defined
+    * semantics: {@link SEMANTIC_ATTR0} to {@link SEMANTIC_ATTR15}.
+    * @param {number} description[].components - The number of components of the vertex attribute.
+    * Can be 1, 2, 3 or 4.
+    * @param {number} description[].type - The data type of the attribute. Can be:
+    *
+    * - {@link TYPE_INT8}
+    * - {@link TYPE_UINT8}
+    * - {@link TYPE_INT16}
+    * - {@link TYPE_UINT16}
+    * - {@link TYPE_INT32}
+    * - {@link TYPE_UINT32}
+    * - {@link TYPE_FLOAT32}
+    *
+    * @param {boolean} [description[].normalize] - If true, vertex attribute data will be mapped
+    * from a 0 to 255 range down to 0 to 1 when fed to a shader. If false, vertex attribute data
+    * is left unchanged. If this property is unspecified, false is assumed.
+    * @param {number} [vertexCount] - When specified, vertex format will be set up for
+    * non-interleaved format with a specified number of vertices. (example: PPPPNNNNCCCC), where
+    * arrays of individual attributes will be stored one right after the other (subject to
+    * alignment requirements). Note that in this case, the format depends on the number of
+    * vertices, and needs to change when the number of vertices changes. When not specified,
+    * vertex format will be interleaved. (example: PNCPNCPNCPNC).
+    * @example
+    * // Specify 3-component positions (x, y, z)
+    * var vertexFormat = new pc.VertexFormat(graphicsDevice, [
+    *     { semantic: pc.SEMANTIC_POSITION, components: 3, type: pc.TYPE_FLOAT32 }
+    * ]);
+    * @example
+    * // Specify 2-component positions (x, y), a texture coordinate (u, v) and a vertex color (r, g, b, a)
+    * var vertexFormat = new pc.VertexFormat(graphicsDevice, [
+    *     { semantic: pc.SEMANTIC_POSITION, components: 2, type: pc.TYPE_FLOAT32 },
+    *     { semantic: pc.SEMANTIC_TEXCOORD0, components: 2, type: pc.TYPE_FLOAT32 },
+    *     { semantic: pc.SEMANTIC_COLOR, components: 4, type: pc.TYPE_UINT8, normalize: true }
+    * ]);
+    */
+  def this(graphicsDevice: GraphicsDevice, description: js.Array[Components]) = this()
+  def this(graphicsDevice: GraphicsDevice, description: js.Array[Components], vertexCount: Double) = this()
+  
+  var _elements: js.Array[DataType] = js.native
   
   /**
-    * The vertex attribute elements.
+    * Evaluates hash values for the format allowing fast compare of batching / rendering compatibility.
+    *
+    * @private
     */
-  /* CompleteClass */
-  var elements: js.Array[Name] = js.native
+  /* private */ var _evaluateHash: Any = js.native
   
-  /**
-    * Applies any changes made to the VertexFormat's properties.
-    */
-  /* CompleteClass */
-  override def update(): Unit = js.native
+  var batchingHash: Double = js.native
+  
+  def elements: js.Array[DataType] = js.native
+  
+  var hasColor: Boolean = js.native
+  
+  var hasTangents: Boolean = js.native
+  
+  var hasUv0: Boolean = js.native
+  
+  var hasUv1: Boolean = js.native
+  
+  var interleaved: Boolean = js.native
+  
+  var renderingingHash: Double = js.native
+  
+  var renderingingHashString: String = js.native
+  
+  var size: Double = js.native
+  
+  var vertexCount: Double = js.native
+  
+  var verticesByteSize: Double = js.native
 }
 object VertexFormat {
   
+  @JSImport("playcanvas", "VertexFormat")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
-    * Returns {@link pc.VertexFormat} used to store matrices of type {@link pc.Mat4} for hardware instancing.
+    * @type {VertexFormat}
+    * @private
     */
   /* static member */
-  @JSImport("playcanvas", "VertexFormat.defaultInstancingFormat")
+  @JSImport("playcanvas", "VertexFormat._defaultInstancingFormat")
   @js.native
-  val defaultInstancingFormat: typings.playcanvas.pc.VertexFormat = js.native
+  def defaultInstancingFormat: Any = js.native
+  
+  inline def defaultInstancingFormat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultInstancingFormat")(x.asInstanceOf[js.Any])
 }

@@ -3,7 +3,7 @@ package typings.vegaLite
 import typings.vegaLite.dataflowMod.DataFlowNode
 import typings.vegaLite.unitMod.UnitModel
 import typings.vegaTypings.exprMod.ExprRef
-import typings.vegaTypings.transformMod.GeoJSONTransform
+import typings.vegaTypings.transformMod.Transforms
 import typings.vegaTypings.utilMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object geojsonMod {
   
   @JSImport("vega-lite/build/src/compile/data/geojson", "GeoJSONNode")
   @js.native
-  class GeoJSONNode protected () extends DataFlowNode {
+  open class GeoJSONNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode) = this()
     def this(parent: DataFlowNode, fields: Vector2[String | ExprRef]) = this()
     def this(parent: DataFlowNode, fields: Unit, geojson: String) = this()
@@ -23,13 +23,13 @@ object geojsonMod {
     def this(parent: DataFlowNode, fields: Vector2[String | ExprRef], geojson: String, signal: String) = this()
     def this(parent: DataFlowNode, fields: Vector2[String | ExprRef], geojson: Unit, signal: String) = this()
     
-    def assemble(): GeoJSONTransform = js.native
+    def assemble(): js.Array[Transforms] = js.native
     
-    /* private */ var fields: js.Any = js.native
+    /* private */ var fields: Any = js.native
     
-    /* private */ var geojson: js.Any = js.native
+    /* private */ var geojson: Any = js.native
     
-    /* private */ var signal: js.Any = js.native
+    /* private */ var signal: Any = js.native
   }
   /* static members */
   object GeoJSONNode {

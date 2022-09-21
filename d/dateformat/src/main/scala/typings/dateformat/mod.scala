@@ -1,63 +1,55 @@
 package typings.dateformat
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * dateFormat()
-    *
-    * Accepts a date, a mask, or a date and a mask.
-    * Returns a formatted version of the given date.
-    * The date defaults to the current date/time.
-    * The mask defaults to dateFormat.masks.default.
-    *
-    * https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js#L18
-    */
-  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  inline def apply(date: String): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(date: String, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: String, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: String, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: String, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: String, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: String, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: String, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Double): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(date: Double, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Double, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Double, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Double, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Double, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Double, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Double, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Unit, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Unit, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Unit, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Unit, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Unit, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Unit, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Unit, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Date): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(date: Date, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Date, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Date, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Date, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Date, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Date, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(date: Date, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("dateformat", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  inline def default(date: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(date: String, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: String, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: String, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: String, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: String, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: String, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: String, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(date: js.Date, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: js.Date, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: js.Date, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: js.Date, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: js.Date, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: js.Date, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: js.Date, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(date: Double, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Double, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Double, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Double, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Double, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Double, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Double, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Unit, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Unit, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Unit, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Unit, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Unit, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Unit, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(date: Unit, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def formatTimezone(date: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTimezone")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatTimezone(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTimezone")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("dateformat", "i18n")
   @js.native
@@ -66,32 +58,9 @@ object mod {
   
   @JSImport("dateformat", "masks")
   @js.native
-  val masks: DateFormatMasks = js.native
+  def masks: DateFormatMasks = js.native
+  inline def masks_=(x: DateFormatMasks): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("masks")(x.asInstanceOf[js.Any])
   
-  /**
-    * dateFormat.i18n
-    *
-    * Internationalization strings
-    *
-    * Example:
-    *
-    * @example ```
-    * dateFormat.i18n = {
-    *     dayNames: [
-    *         'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat',
-    *         'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
-    *     ],
-    *     monthNames: [
-    *         'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
-    *         'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
-    *     ],
-    *     timeNames: [
-    *         'a', 'p', 'am', 'pm', 'A', 'P', 'AM', 'PM'
-    *     ]
-    * };```
-    *
-    * @see https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js#L124
-    */
   trait DateFormatI18n extends StObject {
     
     var dayNames: js.Array[String]
@@ -111,53 +80,90 @@ object mod {
       
       inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
       
-      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value*))
       
       inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
       
-      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
       
       inline def setTimeNames(value: js.Array[String]): Self = StObject.set(x, "timeNames", value.asInstanceOf[js.Any])
       
-      inline def setTimeNamesVarargs(value: String*): Self = StObject.set(x, "timeNames", js.Array(value :_*))
+      inline def setTimeNamesVarargs(value: String*): Self = StObject.set(x, "timeNames", js.Array(value*))
     }
   }
   
-  /**
-    * dateFormat.masks
-    *
-    * Predefined Formats
-    *
-    * @see https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js#L107
-    */
   trait DateFormatMasks
     extends StObject
        with /* key */ StringDictionary[String] {
     
+    /**
+      * @default "ddd mmm dd yyyy HH:MM:ss"
+      */
     var default: String
     
+    /**
+      * @default "ddd, dd mmm yyyy HH:MM:ss Z"
+      */
     var expiresHeaderFormat: String
     
+    /**
+      * @default "dddd, mmmm d, yyyy"
+      */
     var fullDate: String
     
+    /**
+      * @default "yyyy-mm-dd"
+      */
     var isoDate: String
     
+    /**
+      * @default "yyyy-mm-dd'T'HH:MM:sso"
+      */
     var isoDateTime: String
     
+    /**
+      * @default "HH:MM:ss"
+      */
     var isoTime: String
     
+    /**
+      * @default "UTC:yyyy-mm-dd'T'HH:MM:ss'Z'"
+      */
     var isoUtcDateTime: String
     
+    /**
+      * @default "mmmm d, yyyy"
+      */
     var longDate: String
     
+    /**
+      * @default "h:MM:ss TT Z"
+      */
     var longTime: String
     
+    /**
+      * @default "mmm d, yyyy"
+      */
     var mediumDate: String
     
+    /**
+      * @default "h:MM:ss TT"
+      */
     var mediumTime: String
     
+    /**
+      * @default "mm/dd/yyyy"
+      */
+    var paddedShortDate: String
+    
+    /**
+      * @default "m/d/yy"
+      */
     var shortDate: String
     
+    /**
+      * @default "h:MM TT"
+      */
     var shortTime: String
   }
   object DateFormatMasks {
@@ -174,10 +180,11 @@ object mod {
       longTime: String,
       mediumDate: String,
       mediumTime: String,
+      paddedShortDate: String,
       shortDate: String,
       shortTime: String
     ): DateFormatMasks = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], expiresHeaderFormat = expiresHeaderFormat.asInstanceOf[js.Any], fullDate = fullDate.asInstanceOf[js.Any], isoDate = isoDate.asInstanceOf[js.Any], isoDateTime = isoDateTime.asInstanceOf[js.Any], isoTime = isoTime.asInstanceOf[js.Any], isoUtcDateTime = isoUtcDateTime.asInstanceOf[js.Any], longDate = longDate.asInstanceOf[js.Any], longTime = longTime.asInstanceOf[js.Any], mediumDate = mediumDate.asInstanceOf[js.Any], mediumTime = mediumTime.asInstanceOf[js.Any], shortDate = shortDate.asInstanceOf[js.Any], shortTime = shortTime.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], expiresHeaderFormat = expiresHeaderFormat.asInstanceOf[js.Any], fullDate = fullDate.asInstanceOf[js.Any], isoDate = isoDate.asInstanceOf[js.Any], isoDateTime = isoDateTime.asInstanceOf[js.Any], isoTime = isoTime.asInstanceOf[js.Any], isoUtcDateTime = isoUtcDateTime.asInstanceOf[js.Any], longDate = longDate.asInstanceOf[js.Any], longTime = longTime.asInstanceOf[js.Any], mediumDate = mediumDate.asInstanceOf[js.Any], mediumTime = mediumTime.asInstanceOf[js.Any], paddedShortDate = paddedShortDate.asInstanceOf[js.Any], shortDate = shortDate.asInstanceOf[js.Any], shortTime = shortTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateFormatMasks]
     }
     
@@ -204,6 +211,8 @@ object mod {
       inline def setMediumDate(value: String): Self = StObject.set(x, "mediumDate", value.asInstanceOf[js.Any])
       
       inline def setMediumTime(value: String): Self = StObject.set(x, "mediumTime", value.asInstanceOf[js.Any])
+      
+      inline def setPaddedShortDate(value: String): Self = StObject.set(x, "paddedShortDate", value.asInstanceOf[js.Any])
       
       inline def setShortDate(value: String): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
       

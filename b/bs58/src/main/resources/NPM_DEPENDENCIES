@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "bs58" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "bs58" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

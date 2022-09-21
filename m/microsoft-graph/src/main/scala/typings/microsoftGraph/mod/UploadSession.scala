@@ -44,7 +44,7 @@ object UploadSession {
     
     inline def setNextExpectedRangesUndefined: Self = StObject.set(x, "nextExpectedRanges", js.undefined)
     
-    inline def setNextExpectedRangesVarargs(value: String*): Self = StObject.set(x, "nextExpectedRanges", js.Array(value :_*))
+    inline def setNextExpectedRangesVarargs(value: String*): Self = StObject.set(x, "nextExpectedRanges", js.Array(value*))
     
     inline def setUploadUrl(value: NullableOption[String]): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     

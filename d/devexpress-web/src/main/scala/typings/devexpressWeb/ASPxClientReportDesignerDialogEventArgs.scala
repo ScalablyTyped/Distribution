@@ -14,7 +14,7 @@ trait ASPxClientReportDesignerDialogEventArgs
   /**
     * Specifies the report currently being processed.
     */
-  var Report: js.Any
+  var Report: Any
   
   /**
     * Specifies the URL of the report currently being processed.
@@ -23,14 +23,14 @@ trait ASPxClientReportDesignerDialogEventArgs
 }
 object ASPxClientReportDesignerDialogEventArgs {
   
-  inline def apply(Report: js.Any, Url: String): ASPxClientReportDesignerDialogEventArgs = {
+  inline def apply(Report: Any, Url: String): ASPxClientReportDesignerDialogEventArgs = {
     val __obj = js.Dynamic.literal(Report = Report.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerDialogEventArgs]
   }
   
   extension [Self <: ASPxClientReportDesignerDialogEventArgs](x: Self) {
     
-    inline def setReport(value: js.Any): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
+    inline def setReport(value: Any): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }

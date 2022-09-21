@@ -1,14 +1,14 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestId
-import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
-import typings.maximMazurokGapiClientCompute.anon.PrettyPrintPriority
-import typings.maximMazurokGapiClientCompute.anon.Priority
+import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProjectQuotaUserRequestIdResource
+import typings.maximMazurokGapiClientCompute.anon.PriorityProject
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserSecurityPolicy
 import typings.maximMazurokGapiClientCompute.anon.RequestIdSecurityPolicy
 import typings.maximMazurokGapiClientCompute.anon.ResourceSecurityPolicy
+import typings.maximMazurokGapiClientCompute.anon.SecurityPolicyUploadType
+import typings.maximMazurokGapiClientCompute.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,11 +30,11 @@ trait SecurityPoliciesResource extends StObject {
   
   /** Gets a rule at the specified priority. */
   def getRule(): Request[SecurityPolicyRule] = js.native
-  def getRule(request: Priority): Request[SecurityPolicyRule] = js.native
+  def getRule(request: PriorityProject): Request[SecurityPolicyRule] = js.native
   
   /** Creates a new policy in the specified project using the data included in the request. */
-  def insert(request: AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestId): Request[Operation] = js.native
-  def insert(request: FieldsKey, body: SecurityPolicy): Request[Operation] = js.native
+  def insert(request: OauthtokenPrettyPrintProjectQuotaUserRequestIdResource): Request[Operation] = js.native
+  def insert(request: Xgafv, body: SecurityPolicy): Request[Operation] = js.native
   
   /** List all the policies that have been configured for the specified project. */
   def list(): Request[SecurityPolicyList] = js.native
@@ -45,14 +45,17 @@ trait SecurityPoliciesResource extends StObject {
   def listPreconfiguredExpressionSets(request: MaxResults): Request[SecurityPoliciesListPreconfiguredExpressionSetsResponse] = js.native
   
   def patch(request: RequestIdSecurityPolicy, body: SecurityPolicy): Request[Operation] = js.native
-  /** Patches the specified policy with the data included in the request. */
+  /**
+    * Patches the specified policy with the data included in the request. This cannot be used to be update the rules in the policy. Please use the per rule methods like addRule,
+    * patchRule, and removeRule instead.
+    */
   def patch(request: ResourceSecurityPolicy): Request[Operation] = js.native
   
+  def patchRule(request: PriorityProject, body: SecurityPolicyRule): Request[Operation] = js.native
   /** Patches a rule at the specified priority. */
-  def patchRule(request: PrettyPrintPriority): Request[Operation] = js.native
-  def patchRule(request: Priority, body: SecurityPolicyRule): Request[Operation] = js.native
+  def patchRule(request: SecurityPolicyUploadType): Request[Operation] = js.native
   
   /** Deletes a rule at the specified priority. */
   def removeRule(): Request[Operation] = js.native
-  def removeRule(request: Priority): Request[Operation] = js.native
+  def removeRule(request: PriorityProject): Request[Operation] = js.native
 }

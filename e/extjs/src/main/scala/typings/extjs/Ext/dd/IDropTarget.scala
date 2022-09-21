@@ -28,7 +28,7 @@ trait IDropTarget
     js.Function3[
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       Boolean
     ]
   ] = js.undefined
@@ -43,7 +43,7 @@ trait IDropTarget
     js.Function3[
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       String
     ]
   ] = js.undefined
@@ -57,7 +57,7 @@ trait IDropTarget
     js.Function3[
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -72,7 +72,7 @@ trait IDropTarget
     js.Function3[
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       String
     ]
   ] = js.undefined
@@ -102,25 +102,25 @@ object IDropTarget {
     inline def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
     
     inline def setNotifyDrop(
-      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean
+      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => Boolean
     ): Self = StObject.set(x, "notifyDrop", js.Any.fromFunction3(value))
     
     inline def setNotifyDropUndefined: Self = StObject.set(x, "notifyDrop", js.undefined)
     
     inline def setNotifyEnter(
-      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
+      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => String
     ): Self = StObject.set(x, "notifyEnter", js.Any.fromFunction3(value))
     
     inline def setNotifyEnterUndefined: Self = StObject.set(x, "notifyEnter", js.undefined)
     
     inline def setNotifyOut(
-      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit
+      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "notifyOut", js.Any.fromFunction3(value))
     
     inline def setNotifyOutUndefined: Self = StObject.set(x, "notifyOut", js.undefined)
     
     inline def setNotifyOver(
-      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
+      value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[Any]) => String
     ): Self = StObject.set(x, "notifyOver", js.Any.fromFunction3(value))
     
     inline def setNotifyOverUndefined: Self = StObject.set(x, "notifyOver", js.undefined)

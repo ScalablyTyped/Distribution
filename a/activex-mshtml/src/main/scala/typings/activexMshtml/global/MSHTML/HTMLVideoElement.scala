@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLVideoElement")
 @js.native
-/* private */ class HTMLVideoElement ()
+/* private */ open class HTMLVideoElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLVideoElement

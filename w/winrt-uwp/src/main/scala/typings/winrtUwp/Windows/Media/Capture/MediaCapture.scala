@@ -51,9 +51,9 @@ trait MediaCapture extends StObject {
     */
   def addEffectAsync(mediaStreamType: MediaStreamType, effectActivationID: String, effectSettings: IPropertySet): IPromiseWithIAsyncAction = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_camerastreamstatechanged(`type`: camerastreamstatechanged, listener: TypedEventHandler[MediaCapture, js.Any]): Unit = js.native
+  def addEventListener_camerastreamstatechanged(`type`: camerastreamstatechanged, listener: TypedEventHandler[MediaCapture, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_failed(`type`: failed, listener: MediaCaptureFailedEventHandler): Unit = js.native
   @JSName("addEventListener")
@@ -66,7 +66,7 @@ trait MediaCapture extends StObject {
   @JSName("addEventListener")
   def addEventListener_recordlimitationexceeded(`type`: recordlimitationexceeded, listener: RecordLimitationExceededEventHandler): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_thermalstatuschanged(`type`: thermalstatuschanged, listener: TypedEventHandler[MediaCapture, js.Any]): Unit = js.native
+  def addEventListener_thermalstatuschanged(`type`: thermalstatuschanged, listener: TypedEventHandler[MediaCapture, Any]): Unit = js.native
   
   /**
     * Adds a video effect to the capture pipeline.
@@ -114,7 +114,7 @@ trait MediaCapture extends StObject {
     * @param propertyId The encoding property to retrieve.
     * @return Returns the value of the encoding property.
     */
-  def getEncoderProperty(mediaStreamType: MediaStreamType, propertyId: String): js.Any = js.native
+  def getEncoderProperty(mediaStreamType: MediaStreamType, propertyId: String): Any = js.native
   
   /**
     * Gets a preview frame from the capture device.
@@ -162,10 +162,10 @@ trait MediaCapture extends StObject {
   var mediaCaptureSettings: MediaCaptureSettings = js.native
   
   /** Occurs when the state of the camera stream changes. */
-  def oncamerastreamstatechanged(ev: js.Any & WinRTEvent[MediaCapture]): Unit = js.native
+  def oncamerastreamstatechanged(ev: Any & WinRTEvent[MediaCapture]): Unit = js.native
   /** Occurs when the state of the camera stream changes. */
   @JSName("oncamerastreamstatechanged")
-  var oncamerastreamstatechanged_Original: TypedEventHandler[MediaCapture, js.Any] = js.native
+  var oncamerastreamstatechanged_Original: TypedEventHandler[MediaCapture, Any] = js.native
   
   /** Raised when an error occurs during media capture. */
   def onfailed(ev: MediaCaptureFailedEventArgs & WinRTEvent[MediaCapture]): Unit = js.native
@@ -192,10 +192,10 @@ trait MediaCapture extends StObject {
   var onrecordlimitationexceeded_Original: RecordLimitationExceededEventHandler = js.native
   
   /** Occurs when the thermal status of the capture device changes. */
-  def onthermalstatuschanged(ev: js.Any & WinRTEvent[MediaCapture]): Unit = js.native
+  def onthermalstatuschanged(ev: Any & WinRTEvent[MediaCapture]): Unit = js.native
   /** Occurs when the thermal status of the capture device changes. */
   @JSName("onthermalstatuschanged")
-  var onthermalstatuschanged_Original: TypedEventHandler[MediaCapture, js.Any] = js.native
+  var onthermalstatuschanged_Original: TypedEventHandler[MediaCapture, Any] = js.native
   
   /**
     * Pauses an ongoing record operation.
@@ -268,9 +268,9 @@ trait MediaCapture extends StObject {
     */
   def prepareVariablePhotoSequenceCaptureAsync(`type`: ImageEncodingProperties): IPromiseWithIAsyncOperation[VariablePhotoSequenceCapture] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_camerastreamstatechanged(`type`: camerastreamstatechanged, listener: TypedEventHandler[MediaCapture, js.Any]): Unit = js.native
+  def removeEventListener_camerastreamstatechanged(`type`: camerastreamstatechanged, listener: TypedEventHandler[MediaCapture, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_failed(`type`: failed, listener: MediaCaptureFailedEventHandler): Unit = js.native
   @JSName("removeEventListener")
@@ -283,7 +283,7 @@ trait MediaCapture extends StObject {
   @JSName("removeEventListener")
   def removeEventListener_recordlimitationexceeded(`type`: recordlimitationexceeded, listener: RecordLimitationExceededEventHandler): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_thermalstatuschanged(`type`: thermalstatuschanged, listener: TypedEventHandler[MediaCapture, js.Any]): Unit = js.native
+  def removeEventListener_thermalstatuschanged(`type`: thermalstatuschanged, listener: TypedEventHandler[MediaCapture, Any]): Unit = js.native
   
   /**
     * Resumes a paused recording operation.
@@ -297,7 +297,7 @@ trait MediaCapture extends StObject {
     * @param propertyId The encoding property to set.
     * @param propertyValue The new value of the encoding property.
     */
-  def setEncoderProperty(mediaStreamType: MediaStreamType, propertyId: String, propertyValue: js.Any): Unit = js.native
+  def setEncoderProperty(mediaStreamType: MediaStreamType, propertyId: String, propertyValue: Any): Unit = js.native
   
   /**
     * Asynchronously sets the media encoding properties.

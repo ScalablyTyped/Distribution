@@ -1,38 +1,36 @@
 package typings.grommet
 
+import typings.grommet.anon.Content
 import typings.grommet.anon.Dark
-import typings.grommet.anon.Location
 import typings.grommet.anon.Name
-import typings.grommet.grommetStrings.color
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.SVGProps
-import typings.std.Omit
-import typings.std.SVGSVGElement
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object worldMapMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/WorldMap", "WorldMap")
   @js.native
-  class WorldMap protected ()
-    extends Component[WorldMapProps & (Omit[SVGProps[SVGSVGElement], color]), ComponentState, js.Any] {
-    def this(props: WorldMapProps & (Omit[SVGProps[SVGSVGElement], color])) = this()
-    def this(props: WorldMapProps & (Omit[SVGProps[SVGSVGElement], color]), context: js.Any) = this()
+  val WorldMap: FC[WorldMapExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.SVGProps<std.SVGSVGElement>, 'color' | 'fill'> ]: react.react.SVGProps<std.SVGSVGElement>[P]} */ trait WorldMapExtendedProps
+    extends StObject
+       with WorldMapProps
+  object WorldMapExtendedProps {
+    
+    inline def apply(): WorldMapExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WorldMapExtendedProps]
+    }
   }
-  @JSImport("grommet/components/WorldMap", "WorldMap")
-  @js.native
-  val WorldMap: ComponentClass[WorldMapProps & (Omit[SVGProps[SVGSVGElement], color]), ComponentState] = js.native
   
   trait WorldMapProps extends StObject {
     
@@ -52,9 +50,9 @@ object worldMapMod {
     
     var margin: js.UndefOr[MarginType] = js.undefined
     
-    var onSelectPlace: js.UndefOr[js.Function1[/* place */ js.Array[Double], Unit]] = js.undefined
+    var onSelectPlace: js.UndefOr[js.Function1[/* place */ js.Tuple2[Double, Double], Unit]] = js.undefined
     
-    var places: js.UndefOr[js.Array[Location]] = js.undefined
+    var places: js.UndefOr[js.Array[Content]] = js.undefined
   }
   object WorldMapProps {
     
@@ -81,7 +79,7 @@ object worldMapMod {
       
       inline def setContinentsUndefined: Self = StObject.set(x, "continents", js.undefined)
       
-      inline def setContinentsVarargs(value: Name*): Self = StObject.set(x, "continents", js.Array(value :_*))
+      inline def setContinentsVarargs(value: Name*): Self = StObject.set(x, "continents", js.Array(value*))
       
       inline def setFill(value: FillType): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -99,15 +97,15 @@ object worldMapMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setOnSelectPlace(value: /* place */ js.Array[Double] => Unit): Self = StObject.set(x, "onSelectPlace", js.Any.fromFunction1(value))
+      inline def setOnSelectPlace(value: /* place */ js.Tuple2[Double, Double] => Unit): Self = StObject.set(x, "onSelectPlace", js.Any.fromFunction1(value))
       
       inline def setOnSelectPlaceUndefined: Self = StObject.set(x, "onSelectPlace", js.undefined)
       
-      inline def setPlaces(value: js.Array[Location]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+      inline def setPlaces(value: js.Array[Content]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
       
       inline def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
       
-      inline def setPlacesVarargs(value: Location*): Self = StObject.set(x, "places", js.Array(value :_*))
+      inline def setPlacesVarargs(value: Content*): Self = StObject.set(x, "places", js.Array(value*))
     }
   }
 }

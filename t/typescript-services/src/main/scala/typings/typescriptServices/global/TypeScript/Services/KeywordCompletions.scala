@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.KeywordCompletions")
 @js.native
-class KeywordCompletions ()
+open class KeywordCompletions ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.KeywordCompletions
 object KeywordCompletions {
@@ -21,12 +21,12 @@ object KeywordCompletions {
   /* static member */
   @JSGlobal("TypeScript.Services.KeywordCompletions.keywordCompletions")
   @js.native
-  def keywordCompletions: js.Any = js.native
-  inline def keywordCompletions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keywordCompletions")(x.asInstanceOf[js.Any])
+  def keywordCompletions: Any = js.native
+  inline def keywordCompletions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keywordCompletions")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("TypeScript.Services.KeywordCompletions.keywords")
   @js.native
-  def keywords: js.Any = js.native
-  inline def keywords_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keywords")(x.asInstanceOf[js.Any])
+  def keywords: Any = js.native
+  inline def keywords_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keywords")(x.asInstanceOf[js.Any])
 }

@@ -5,7 +5,6 @@ import typings.node.httpMod.AgentOptions
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestOptions
 import typings.node.httpsMod.Agent
-import typings.std.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +13,12 @@ object mod {
   
   @JSImport("agentkeepalive", JSImport.Namespace)
   @js.native
-  class ^ () extends HttpAgent
+  open class ^ () extends HttpAgent
   
   @JSImport("agentkeepalive", "HttpsAgent")
   @js.native
-  class HttpsAgent () extends Agent {
-    def this(opts: HttpOptions) = this()
+  open class HttpsAgent () extends Agent {
+    def this(opts: HttpsOptions) = this()
     
     def createSocket(req: IncomingMessage, options: RequestOptions, cb: js.Function): Unit = js.native
     
@@ -138,33 +137,33 @@ object mod {
   
   trait Constants_ extends StObject {
     
-    var CREATE_HTTPS_CONNECTION: Symbol
+    var CREATE_HTTPS_CONNECTION: js.Symbol
     
-    var CREATE_ID: Symbol
+    var CREATE_ID: js.Symbol
     
-    var CURRENT_ID: Symbol
+    var CURRENT_ID: js.Symbol
     
-    var INIT_SOCKET: Symbol
+    var INIT_SOCKET: js.Symbol
     
-    var SOCKET_CREATED_TIME: Symbol
+    var SOCKET_CREATED_TIME: js.Symbol
     
-    var SOCKET_NAME: Symbol
+    var SOCKET_NAME: js.Symbol
     
-    var SOCKET_REQUEST_COUNT: Symbol
+    var SOCKET_REQUEST_COUNT: js.Symbol
     
-    var SOCKET_REQUEST_FINISHED_COUNT: Symbol
+    var SOCKET_REQUEST_FINISHED_COUNT: js.Symbol
   }
   object Constants_ {
     
     inline def apply(
-      CREATE_HTTPS_CONNECTION: Symbol,
-      CREATE_ID: Symbol,
-      CURRENT_ID: Symbol,
-      INIT_SOCKET: Symbol,
-      SOCKET_CREATED_TIME: Symbol,
-      SOCKET_NAME: Symbol,
-      SOCKET_REQUEST_COUNT: Symbol,
-      SOCKET_REQUEST_FINISHED_COUNT: Symbol
+      CREATE_HTTPS_CONNECTION: js.Symbol,
+      CREATE_ID: js.Symbol,
+      CURRENT_ID: js.Symbol,
+      INIT_SOCKET: js.Symbol,
+      SOCKET_CREATED_TIME: js.Symbol,
+      SOCKET_NAME: js.Symbol,
+      SOCKET_REQUEST_COUNT: js.Symbol,
+      SOCKET_REQUEST_FINISHED_COUNT: js.Symbol
     ): Constants_ = {
       val __obj = js.Dynamic.literal(CREATE_HTTPS_CONNECTION = CREATE_HTTPS_CONNECTION.asInstanceOf[js.Any], CREATE_ID = CREATE_ID.asInstanceOf[js.Any], CURRENT_ID = CURRENT_ID.asInstanceOf[js.Any], INIT_SOCKET = INIT_SOCKET.asInstanceOf[js.Any], SOCKET_CREATED_TIME = SOCKET_CREATED_TIME.asInstanceOf[js.Any], SOCKET_NAME = SOCKET_NAME.asInstanceOf[js.Any], SOCKET_REQUEST_COUNT = SOCKET_REQUEST_COUNT.asInstanceOf[js.Any], SOCKET_REQUEST_FINISHED_COUNT = SOCKET_REQUEST_FINISHED_COUNT.asInstanceOf[js.Any])
       __obj.asInstanceOf[Constants_]
@@ -172,21 +171,21 @@ object mod {
     
     extension [Self <: Constants_](x: Self) {
       
-      inline def setCREATE_HTTPS_CONNECTION(value: Symbol): Self = StObject.set(x, "CREATE_HTTPS_CONNECTION", value.asInstanceOf[js.Any])
+      inline def setCREATE_HTTPS_CONNECTION(value: js.Symbol): Self = StObject.set(x, "CREATE_HTTPS_CONNECTION", value.asInstanceOf[js.Any])
       
-      inline def setCREATE_ID(value: Symbol): Self = StObject.set(x, "CREATE_ID", value.asInstanceOf[js.Any])
+      inline def setCREATE_ID(value: js.Symbol): Self = StObject.set(x, "CREATE_ID", value.asInstanceOf[js.Any])
       
-      inline def setCURRENT_ID(value: Symbol): Self = StObject.set(x, "CURRENT_ID", value.asInstanceOf[js.Any])
+      inline def setCURRENT_ID(value: js.Symbol): Self = StObject.set(x, "CURRENT_ID", value.asInstanceOf[js.Any])
       
-      inline def setINIT_SOCKET(value: Symbol): Self = StObject.set(x, "INIT_SOCKET", value.asInstanceOf[js.Any])
+      inline def setINIT_SOCKET(value: js.Symbol): Self = StObject.set(x, "INIT_SOCKET", value.asInstanceOf[js.Any])
       
-      inline def setSOCKET_CREATED_TIME(value: Symbol): Self = StObject.set(x, "SOCKET_CREATED_TIME", value.asInstanceOf[js.Any])
+      inline def setSOCKET_CREATED_TIME(value: js.Symbol): Self = StObject.set(x, "SOCKET_CREATED_TIME", value.asInstanceOf[js.Any])
       
-      inline def setSOCKET_NAME(value: Symbol): Self = StObject.set(x, "SOCKET_NAME", value.asInstanceOf[js.Any])
+      inline def setSOCKET_NAME(value: js.Symbol): Self = StObject.set(x, "SOCKET_NAME", value.asInstanceOf[js.Any])
       
-      inline def setSOCKET_REQUEST_COUNT(value: Symbol): Self = StObject.set(x, "SOCKET_REQUEST_COUNT", value.asInstanceOf[js.Any])
+      inline def setSOCKET_REQUEST_COUNT(value: js.Symbol): Self = StObject.set(x, "SOCKET_REQUEST_COUNT", value.asInstanceOf[js.Any])
       
-      inline def setSOCKET_REQUEST_FINISHED_COUNT(value: Symbol): Self = StObject.set(x, "SOCKET_REQUEST_FINISHED_COUNT", value.asInstanceOf[js.Any])
+      inline def setSOCKET_REQUEST_FINISHED_COUNT(value: js.Symbol): Self = StObject.set(x, "SOCKET_REQUEST_FINISHED_COUNT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,5 +268,5 @@ object mod {
     }
   }
   
-  type PlainObject = StringDictionary[js.Any]
+  type PlainObject = StringDictionary[Any]
 }

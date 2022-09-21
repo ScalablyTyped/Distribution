@@ -50,13 +50,13 @@ object UpdateConfigurationTemplateMessage {
     
     inline def setOptionSettingsUndefined: Self = StObject.set(x, "OptionSettings", js.undefined)
     
-    inline def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value :_*))
+    inline def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value*))
     
     inline def setOptionsToRemove(value: OptionsSpecifierList): Self = StObject.set(x, "OptionsToRemove", value.asInstanceOf[js.Any])
     
     inline def setOptionsToRemoveUndefined: Self = StObject.set(x, "OptionsToRemove", js.undefined)
     
-    inline def setOptionsToRemoveVarargs(value: OptionSpecification*): Self = StObject.set(x, "OptionsToRemove", js.Array(value :_*))
+    inline def setOptionsToRemoveVarargs(value: OptionSpecification*): Self = StObject.set(x, "OptionsToRemove", js.Array(value*))
     
     inline def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }

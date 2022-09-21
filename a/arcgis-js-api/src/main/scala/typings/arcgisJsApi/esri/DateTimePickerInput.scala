@@ -8,10 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DateTimePickerInput
   extends StObject
-     with Input {
+     with Accessor
+     with JSONSupport
+     with inputsInput {
   
   /**
     * Indicates if the input should provide an option to select the time.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#includeTime)
     */
@@ -32,10 +36,9 @@ trait DateTimePickerInput
   var min: Double = js.native
   
   /**
-    * The type of input.
+    * The type of form element input.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#type)
     */
-  @JSName("type")
-  var type_DateTimePickerInput: `datetime-picker` = js.native
+  val `type`: `datetime-picker` = js.native
 }

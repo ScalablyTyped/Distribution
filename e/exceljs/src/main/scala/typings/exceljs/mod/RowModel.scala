@@ -46,7 +46,7 @@ object RowModel {
     
     inline def setCells(value: js.Array[CellModel]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    inline def setCellsVarargs(value: CellModel*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: CellModel*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassInt64 ()
+open class ClassInt64 ()
   extends StObject
      with typings.fibjs.ClassInt64 {
   /**

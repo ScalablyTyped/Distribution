@@ -1,11 +1,10 @@
 package typings.passportClientCert
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.tlsMod.Certificate
 import typings.passportClientCert.passportClientCertBooleans.`false`
 import typings.passportClientCert.passportClientCertBooleans.`true`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +13,30 @@ object mod {
   
   @JSImport("passport-client-cert", "Strategy")
   @js.native
-  class Strategy protected () extends StObject {
+  open class Strategy protected () extends StObject {
     def this(verify: VerifyFunction) = this()
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
     
     var name: String = js.native
   }
@@ -33,7 +49,7 @@ object mod {
     
     var issuerInfo: Certificate
     
-    var raw: js.Any
+    var raw: Any
     
     var serialNumber: String
     
@@ -49,7 +65,7 @@ object mod {
       fingerprint: String,
       issuer: Certificate,
       issuerInfo: Certificate,
-      raw: js.Any,
+      raw: Any,
       serialNumber: String,
       subject: Certificate,
       valid_from: String,
@@ -67,7 +83,7 @@ object mod {
       
       inline def setIssuerInfo(value: Certificate): Self = StObject.set(x, "issuerInfo", value.asInstanceOf[js.Any])
       
-      inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
       
@@ -116,8 +132,8 @@ object mod {
   }
   
   type VerifyCallback = js.Function3[
-    /* error */ js.Any, 
-    /* user */ js.UndefOr[js.Any], 
+    /* error */ Any, 
+    /* user */ js.UndefOr[Any], 
     /* options */ js.UndefOr[VerifyOptions], 
     Unit
   ]
@@ -126,7 +142,13 @@ object mod {
   
   type VerifyFunctionWithRequest = js.Function3[
     /* clientCert */ PeerCertificate, 
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* done */ VerifyCallback, 
     Unit
   ]

@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Interface for the WebAPI Execute request response
   */
-type ExecuteResponse = typings.std.Response
+type ExecuteResponse = Response

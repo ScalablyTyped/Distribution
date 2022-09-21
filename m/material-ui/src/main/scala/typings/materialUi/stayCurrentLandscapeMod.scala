@@ -10,10 +10,10 @@ object stayCurrentLandscapeMod {
   
   @JSImport("material-ui/svg-icons/communication/stay-current-landscape", JSImport.Default)
   @js.native
-  class default () extends CommunicationStayCurrentLandscape
+  open class default () extends CommunicationStayCurrentLandscape
   
   @JSImport("material-ui/svg-icons/communication/stay-current-landscape", "CommunicationStayCurrentLandscape")
   @js.native
-  class CommunicationStayCurrentLandscape ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationStayCurrentLandscape ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

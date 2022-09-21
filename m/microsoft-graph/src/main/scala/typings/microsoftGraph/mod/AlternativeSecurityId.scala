@@ -10,7 +10,7 @@ trait AlternativeSecurityId extends StObject {
   var identityProvider: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For internal use only
-  var key: js.UndefOr[NullableOption[Double]] = js.undefined
+  var key: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For internal use only
   var `type`: js.UndefOr[NullableOption[Double]] = js.undefined
@@ -30,7 +30,7 @@ object AlternativeSecurityId {
     
     inline def setIdentityProviderUndefined: Self = StObject.set(x, "identityProvider", js.undefined)
     
-    inline def setKey(value: NullableOption[Double]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: NullableOption[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyNull: Self = StObject.set(x, "key", null)
     

@@ -8,5 +8,5 @@ object invalidFileLocationExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidFileLocationException", "InvalidFileLocationException")
   @js.native
-  val InvalidFileLocationException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidFileLocationException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

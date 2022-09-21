@@ -45,7 +45,7 @@ trait Document extends StObject {
   
   val ActiveWindow: Window = js.native
   
-  def ActiveWritingStyle(LanguageID: js.Any): String = js.native
+  def ActiveWritingStyle(LanguageID: Any): String = js.native
   
   def AddDocumentWorkspaceHeader(RichFormat: Boolean, Url: String, Title: String, Description: String, ID: String): Unit = js.native
   
@@ -59,7 +59,7 @@ trait Document extends StObject {
   
   def ApplyQuickStyleSet(Name: String): Unit = js.native
   
-  def ApplyQuickStyleSet2(Style: js.Any): Unit = js.native
+  def ApplyQuickStyleSet2(Style: Any): Unit = js.native
   
   def ApplyTheme(Name: String): Unit = js.native
   
@@ -72,13 +72,13 @@ trait Document extends StObject {
   var AutoHyphenation: Boolean = js.native
   
   def AutoSummarize(): Range = js.native
-  def AutoSummarize(Length: js.Any): Range = js.native
-  def AutoSummarize(Length: js.Any, Mode: js.Any): Range = js.native
-  def AutoSummarize(Length: js.Any, Mode: js.Any, UpdateProperties: js.Any): Range = js.native
-  def AutoSummarize(Length: js.Any, Mode: Unit, UpdateProperties: js.Any): Range = js.native
-  def AutoSummarize(Length: Unit, Mode: js.Any): Range = js.native
-  def AutoSummarize(Length: Unit, Mode: js.Any, UpdateProperties: js.Any): Range = js.native
-  def AutoSummarize(Length: Unit, Mode: Unit, UpdateProperties: js.Any): Range = js.native
+  def AutoSummarize(Length: Any): Range = js.native
+  def AutoSummarize(Length: Any, Mode: Any): Range = js.native
+  def AutoSummarize(Length: Any, Mode: Any, UpdateProperties: Any): Range = js.native
+  def AutoSummarize(Length: Any, Mode: Unit, UpdateProperties: Any): Range = js.native
+  def AutoSummarize(Length: Unit, Mode: Any): Range = js.native
+  def AutoSummarize(Length: Unit, Mode: Any, UpdateProperties: Any): Range = js.native
+  def AutoSummarize(Length: Unit, Mode: Unit, UpdateProperties: Any): Range = js.native
   
   var Background: Shape = js.native
   
@@ -105,11 +105,11 @@ trait Document extends StObject {
     */
   def CheckIn(): Unit = js.native
   def CheckIn(SaveChanges: Boolean): Unit = js.native
-  def CheckIn(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
-  def CheckIn(SaveChanges: Boolean, Comments: js.Any, MakePublic: Boolean): Unit = js.native
+  def CheckIn(SaveChanges: Boolean, Comments: Any): Unit = js.native
+  def CheckIn(SaveChanges: Boolean, Comments: Any, MakePublic: Boolean): Unit = js.native
   def CheckIn(SaveChanges: Boolean, Comments: Unit, MakePublic: Boolean): Unit = js.native
-  def CheckIn(SaveChanges: Unit, Comments: js.Any): Unit = js.native
-  def CheckIn(SaveChanges: Unit, Comments: js.Any, MakePublic: Boolean): Unit = js.native
+  def CheckIn(SaveChanges: Unit, Comments: Any): Unit = js.native
+  def CheckIn(SaveChanges: Unit, Comments: Any, MakePublic: Boolean): Unit = js.native
   def CheckIn(SaveChanges: Unit, Comments: Unit, MakePublic: Boolean): Unit = js.native
   
   /**
@@ -118,50 +118,50 @@ trait Document extends StObject {
     */
   def CheckInWithVersion(): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: Boolean): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: Boolean, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any, MakePublic: Boolean): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any, MakePublic: Boolean, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any, MakePublic: Unit, VersionType: Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Boolean): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Boolean, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: Boolean): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: Boolean, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Boolean, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Unit, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any, MakePublic: Boolean): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any, MakePublic: Boolean, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any, MakePublic: Unit, VersionType: Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Boolean): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Boolean, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Boolean, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Unit, VersionType: Any): Unit = js.native
   
   def CheckNewSmartTags(): Unit = js.native
   
   def CheckSpelling(
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    AlwaysSuggest: js.UndefOr[js.Any],
-    CustomDictionary2: js.UndefOr[js.Any],
-    CustomDictionary3: js.UndefOr[js.Any],
-    CustomDictionary4: js.UndefOr[js.Any],
-    CustomDictionary5: js.UndefOr[js.Any],
-    CustomDictionary6: js.UndefOr[js.Any],
-    CustomDictionary7: js.UndefOr[js.Any],
-    CustomDictionary8: js.UndefOr[js.Any],
-    CustomDictionary9: js.UndefOr[js.Any],
-    CustomDictionary10: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    AlwaysSuggest: js.UndefOr[Any],
+    CustomDictionary2: js.UndefOr[Any],
+    CustomDictionary3: js.UndefOr[Any],
+    CustomDictionary4: js.UndefOr[Any],
+    CustomDictionary5: js.UndefOr[Any],
+    CustomDictionary6: js.UndefOr[Any],
+    CustomDictionary7: js.UndefOr[Any],
+    CustomDictionary8: js.UndefOr[Any],
+    CustomDictionary9: js.UndefOr[Any],
+    CustomDictionary10: js.UndefOr[Any]
   ): Unit = js.native
   
   val ChildNodeSuggestions: XMLChildNodeSuggestions = js.native
   
-  var ClickAndTypeParagraphStyle: js.Any = js.native
+  var ClickAndTypeParagraphStyle: Any = js.native
   
   def Close(): Unit = js.native
-  def Close(SaveChanges: js.Any): Unit = js.native
-  def Close(SaveChanges: js.Any, OriginalFormat: js.Any): Unit = js.native
-  def Close(SaveChanges: js.Any, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
-  def Close(SaveChanges: js.Any, OriginalFormat: Unit, RouteDocument: js.Any): Unit = js.native
-  def Close(SaveChanges: Unit, OriginalFormat: js.Any): Unit = js.native
-  def Close(SaveChanges: Unit, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
-  def Close(SaveChanges: Unit, OriginalFormat: Unit, RouteDocument: js.Any): Unit = js.native
+  def Close(SaveChanges: Any): Unit = js.native
+  def Close(SaveChanges: Any, OriginalFormat: Any): Unit = js.native
+  def Close(SaveChanges: Any, OriginalFormat: Any, RouteDocument: Any): Unit = js.native
+  def Close(SaveChanges: Any, OriginalFormat: Unit, RouteDocument: Any): Unit = js.native
+  def Close(SaveChanges: Unit, OriginalFormat: Any): Unit = js.native
+  def Close(SaveChanges: Unit, OriginalFormat: Any, RouteDocument: Any): Unit = js.native
+  def Close(SaveChanges: Unit, OriginalFormat: Unit, RouteDocument: Any): Unit = js.native
   
   def ClosePrintPreview(): Unit = js.native
   
@@ -178,208 +178,208 @@ trait Document extends StObject {
   
   def Compare(
     Name: String,
-    AuthorName: js.UndefOr[js.Any],
-    CompareTarget: js.UndefOr[js.Any],
-    DetectFormatChanges: js.UndefOr[js.Any],
-    IgnoreAllComparisonWarnings: js.UndefOr[js.Any],
-    AddToRecentFiles: js.UndefOr[js.Any],
-    RemovePersonalInformation: js.UndefOr[js.Any],
-    RemoveDateAndTime: js.UndefOr[js.Any]
+    AuthorName: js.UndefOr[Any],
+    CompareTarget: js.UndefOr[Any],
+    DetectFormatChanges: js.UndefOr[Any],
+    IgnoreAllComparisonWarnings: js.UndefOr[Any],
+    AddToRecentFiles: js.UndefOr[Any],
+    RemovePersonalInformation: js.UndefOr[Any],
+    RemoveDateAndTime: js.UndefOr[Any]
   ): Unit = js.native
   
   def Compare2000(Name: String): Unit = js.native
   
   def Compare2002(Name: String): Unit = js.native
-  def Compare2002(Name: String, AuthorName: js.Any): Unit = js.native
-  def Compare2002(Name: String, AuthorName: js.Any, CompareTarget: js.Any): Unit = js.native
-  def Compare2002(Name: String, AuthorName: js.Any, CompareTarget: js.Any, DetectFormatChanges: js.Any): Unit = js.native
+  def Compare2002(Name: String, AuthorName: Any): Unit = js.native
+  def Compare2002(Name: String, AuthorName: Any, CompareTarget: Any): Unit = js.native
+  def Compare2002(Name: String, AuthorName: Any, CompareTarget: Any, DetectFormatChanges: Any): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: js.Any,
-    CompareTarget: js.Any,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: js.Any
+    AuthorName: Any,
+    CompareTarget: Any,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Any
   ): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: js.Any,
-    CompareTarget: js.Any,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: js.Any,
-    AddToRecentFiles: js.Any
+    AuthorName: Any,
+    CompareTarget: Any,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Any,
+    AddToRecentFiles: Any
   ): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: js.Any,
-    CompareTarget: js.Any,
-    DetectFormatChanges: js.Any,
+    AuthorName: Any,
+    CompareTarget: Any,
+    DetectFormatChanges: Any,
     IgnoreAllComparisonWarnings: Unit,
-    AddToRecentFiles: js.Any
+    AddToRecentFiles: Any
   ): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: js.Any,
-    CompareTarget: js.Any,
+    AuthorName: Any,
+    CompareTarget: Any,
     DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: js.Any
+    IgnoreAllComparisonWarnings: Any
   ): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: js.Any,
-    CompareTarget: js.Any,
+    AuthorName: Any,
+    CompareTarget: Any,
     DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: js.Any,
-    AddToRecentFiles: js.Any
+    IgnoreAllComparisonWarnings: Any,
+    AddToRecentFiles: Any
   ): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: js.Any,
-    CompareTarget: js.Any,
-    DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: Unit,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Compare2002(Name: String, AuthorName: js.Any, CompareTarget: Unit, DetectFormatChanges: js.Any): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: js.Any,
-    CompareTarget: Unit,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: js.Any,
-    CompareTarget: Unit,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: js.Any,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: js.Any,
-    CompareTarget: Unit,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: Unit,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: js.Any,
-    CompareTarget: Unit,
-    DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: js.Any,
-    CompareTarget: Unit,
-    DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: js.Any,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: js.Any,
-    CompareTarget: Unit,
+    AuthorName: Any,
+    CompareTarget: Any,
     DetectFormatChanges: Unit,
     IgnoreAllComparisonWarnings: Unit,
-    AddToRecentFiles: js.Any
+    AddToRecentFiles: Any
   ): Unit = js.native
-  def Compare2002(Name: String, AuthorName: Unit, CompareTarget: js.Any): Unit = js.native
-  def Compare2002(Name: String, AuthorName: Unit, CompareTarget: js.Any, DetectFormatChanges: js.Any): Unit = js.native
+  def Compare2002(Name: String, AuthorName: Any, CompareTarget: Unit, DetectFormatChanges: Any): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: Unit,
-    CompareTarget: js.Any,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: Unit,
-    CompareTarget: js.Any,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: js.Any,
-    AddToRecentFiles: js.Any
+    AuthorName: Any,
+    CompareTarget: Unit,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Any
   ): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: Unit,
-    CompareTarget: js.Any,
-    DetectFormatChanges: js.Any,
+    AuthorName: Any,
+    CompareTarget: Unit,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Any,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Any,
+    CompareTarget: Unit,
+    DetectFormatChanges: Any,
     IgnoreAllComparisonWarnings: Unit,
-    AddToRecentFiles: js.Any
+    AddToRecentFiles: Any
   ): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: Unit,
-    CompareTarget: js.Any,
-    DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: Unit,
-    CompareTarget: js.Any,
-    DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: js.Any,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: Unit,
-    CompareTarget: js.Any,
-    DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: Unit,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Compare2002(Name: String, AuthorName: Unit, CompareTarget: Unit, DetectFormatChanges: js.Any): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: Unit,
-    CompareTarget: Unit,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: Unit,
-    CompareTarget: Unit,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: js.Any,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: Unit,
-    CompareTarget: Unit,
-    DetectFormatChanges: js.Any,
-    IgnoreAllComparisonWarnings: Unit,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Compare2002(
-    Name: String,
-    AuthorName: Unit,
+    AuthorName: Any,
     CompareTarget: Unit,
     DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: js.Any
+    IgnoreAllComparisonWarnings: Any
   ): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: Unit,
+    AuthorName: Any,
     CompareTarget: Unit,
     DetectFormatChanges: Unit,
-    IgnoreAllComparisonWarnings: js.Any,
-    AddToRecentFiles: js.Any
+    IgnoreAllComparisonWarnings: Any,
+    AddToRecentFiles: Any
   ): Unit = js.native
   def Compare2002(
     Name: String,
-    AuthorName: Unit,
+    AuthorName: Any,
     CompareTarget: Unit,
     DetectFormatChanges: Unit,
     IgnoreAllComparisonWarnings: Unit,
-    AddToRecentFiles: js.Any
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Compare2002(Name: String, AuthorName: Unit, CompareTarget: Any): Unit = js.native
+  def Compare2002(Name: String, AuthorName: Unit, CompareTarget: Any, DetectFormatChanges: Any): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Any,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Any,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Any,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Any,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Unit,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Any,
+    DetectFormatChanges: Unit,
+    IgnoreAllComparisonWarnings: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Any,
+    DetectFormatChanges: Unit,
+    IgnoreAllComparisonWarnings: Any,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Any,
+    DetectFormatChanges: Unit,
+    IgnoreAllComparisonWarnings: Unit,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Compare2002(Name: String, AuthorName: Unit, CompareTarget: Unit, DetectFormatChanges: Any): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Unit,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Unit,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Any,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Unit,
+    DetectFormatChanges: Any,
+    IgnoreAllComparisonWarnings: Unit,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Unit,
+    DetectFormatChanges: Unit,
+    IgnoreAllComparisonWarnings: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Unit,
+    DetectFormatChanges: Unit,
+    IgnoreAllComparisonWarnings: Any,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: Unit,
+    CompareTarget: Unit,
+    DetectFormatChanges: Unit,
+    IgnoreAllComparisonWarnings: Unit,
+    AddToRecentFiles: Any
   ): Unit = js.native
   
   def Compatibility(Type: WdCompatibility): Boolean = js.native
@@ -387,11 +387,11 @@ trait Document extends StObject {
   val CompatibilityMode: Double = js.native
   
   def ComputeStatistics(Statistic: WdStatistic): Double = js.native
-  def ComputeStatistics(Statistic: WdStatistic, IncludeFootnotesAndEndnotes: js.Any): Double = js.native
+  def ComputeStatistics(Statistic: WdStatistic, IncludeFootnotesAndEndnotes: Any): Double = js.native
   
   var ConsecutiveHyphensLimit: Double = js.native
   
-  val Container: js.Any = js.native
+  val Container: Any = js.native
   
   val Content: Range = js.native
   
@@ -407,16 +407,16 @@ trait Document extends StObject {
   def ConvertAutoHyphens(): Unit = js.native
   
   def ConvertNumbersToText(): Unit = js.native
-  def ConvertNumbersToText(NumberType: js.Any): Unit = js.native
+  def ConvertNumbersToText(NumberType: Any): Unit = js.native
   
   def ConvertVietDoc(CodePageOrigin: Double): Unit = js.native
   
   def CopyStylesFromTemplate(Template: String): Unit = js.native
   
   def CountNumberedItems(): Double = js.native
-  def CountNumberedItems(NumberType: js.Any): Double = js.native
-  def CountNumberedItems(NumberType: js.Any, Level: js.Any): Double = js.native
-  def CountNumberedItems(NumberType: Unit, Level: js.Any): Double = js.native
+  def CountNumberedItems(NumberType: Any): Double = js.native
+  def CountNumberedItems(NumberType: Any, Level: Any): Double = js.native
+  def CountNumberedItems(NumberType: Unit, Level: Any): Double = js.native
   
   def CreateLetterContent(
     DateFormat: String,
@@ -442,14 +442,14 @@ trait Document extends StObject {
     SenderJobTitle: String,
     SenderInitials: String,
     EnclosureNumber: Double,
-    InfoBlock: js.UndefOr[js.Any],
-    RecipientCode: js.UndefOr[js.Any],
-    RecipientGender: js.UndefOr[js.Any],
-    ReturnAddressShortForm: js.UndefOr[js.Any],
-    SenderCity: js.UndefOr[js.Any],
-    SenderCode: js.UndefOr[js.Any],
-    SenderGender: js.UndefOr[js.Any],
-    SenderReference: js.UndefOr[js.Any]
+    InfoBlock: js.UndefOr[Any],
+    RecipientCode: js.UndefOr[Any],
+    RecipientGender: js.UndefOr[Any],
+    ReturnAddressShortForm: js.UndefOr[Any],
+    SenderCity: js.UndefOr[Any],
+    SenderCode: js.UndefOr[Any],
+    SenderGender: js.UndefOr[Any],
+    SenderReference: js.UndefOr[Any]
   ): LetterContent = js.native
   
   val Creator: Double = js.native
@@ -470,7 +470,7 @@ trait Document extends StObject {
   
   var DefaultTabStop: Double = js.native
   
-  val DefaultTableStyle: js.Any = js.native
+  val DefaultTableStyle: Any = js.native
   
   var DefaultTargetFrame: String = js.native
   
@@ -479,7 +479,7 @@ trait Document extends StObject {
   def DeleteAllCommentsShown(): Unit = js.native
   
   def DeleteAllEditableRanges(): Unit = js.native
-  def DeleteAllEditableRanges(EditorID: js.Any): Unit = js.native
+  def DeleteAllEditableRanges(EditorID: Any): Unit = js.native
   
   def DeleteAllInkAnnotations(): Unit = js.native
   
@@ -514,7 +514,7 @@ trait Document extends StObject {
   def Dummy4(): Unit = js.native
   
   def EditionOptions(Type: WdEditionType, Option: WdEditionOption, Name: String): Unit = js.native
-  def EditionOptions(Type: WdEditionType, Option: WdEditionOption, Name: String, Format: js.Any): Unit = js.native
+  def EditionOptions(Type: WdEditionType, Option: WdEditionOption, Name: String, Format: Any): Unit = js.native
   
   val Email: typings.activexWord.Word.Email = js.native
   
@@ -563,7 +563,7 @@ trait Document extends StObject {
     DocStructureTags: js.UndefOr[Boolean],
     BitmapMissingFonts: js.UndefOr[Boolean],
     UseISO19005_1: js.UndefOr[Boolean],
-    FixedFormatExtClassPtr: js.UndefOr[js.Any]
+    FixedFormatExtClassPtr: js.UndefOr[Any]
   ): Unit = js.native
   
   var FarEastLineBreakLanguage: WdFarEastLineBreakLanguageID = js.native
@@ -577,13 +577,13 @@ trait Document extends StObject {
   def FitToPages(): Unit = js.native
   
   def FollowHyperlink(
-    Address: js.UndefOr[js.Any],
-    SubAddress: js.UndefOr[js.Any],
-    NewWindow: js.UndefOr[js.Any],
-    AddHistory: js.UndefOr[js.Any],
-    ExtraInfo: js.UndefOr[js.Any],
-    Method: js.UndefOr[js.Any],
-    HeaderInfo: js.UndefOr[js.Any]
+    Address: js.UndefOr[Any],
+    SubAddress: js.UndefOr[Any],
+    NewWindow: js.UndefOr[Any],
+    AddHistory: js.UndefOr[Any],
+    ExtraInfo: js.UndefOr[Any],
+    Method: js.UndefOr[Any],
+    HeaderInfo: js.UndefOr[Any]
   ): Unit = js.native
   
   val Footnotes: typings.activexWord.Word.Footnotes = js.native
@@ -616,7 +616,7 @@ trait Document extends StObject {
   
   val FullName: String = js.native
   
-  def GetCrossReferenceItems(ReferenceType: js.Any): js.Any = js.native
+  def GetCrossReferenceItems(ReferenceType: Any): Any = js.native
   
   def GetLetterContent(): LetterContent = js.native
   
@@ -625,21 +625,21 @@ trait Document extends StObject {
   def GetWorkflowTemplates(): WorkflowTemplates = js.native
   
   def GoTo(): Range = js.native
-  def GoTo(What: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: js.Any, Count: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: js.Any, Count: js.Any, Name: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: js.Any, Count: Unit, Name: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: Unit, Count: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: Unit, Count: js.Any, Name: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: Unit, Count: Unit, Name: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: js.Any, Count: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: js.Any, Count: js.Any, Name: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: js.Any, Count: Unit, Name: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: Unit, Count: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: Unit, Count: js.Any, Name: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: Unit, Count: Unit, Name: js.Any): Range = js.native
+  def GoTo(What: Any): Range = js.native
+  def GoTo(What: Any, Which: Any): Range = js.native
+  def GoTo(What: Any, Which: Any, Count: Any): Range = js.native
+  def GoTo(What: Any, Which: Any, Count: Any, Name: Any): Range = js.native
+  def GoTo(What: Any, Which: Any, Count: Unit, Name: Any): Range = js.native
+  def GoTo(What: Any, Which: Unit, Count: Any): Range = js.native
+  def GoTo(What: Any, Which: Unit, Count: Any, Name: Any): Range = js.native
+  def GoTo(What: Any, Which: Unit, Count: Unit, Name: Any): Range = js.native
+  def GoTo(What: Unit, Which: Any): Range = js.native
+  def GoTo(What: Unit, Which: Any, Count: Any): Range = js.native
+  def GoTo(What: Unit, Which: Any, Count: Any, Name: Any): Range = js.native
+  def GoTo(What: Unit, Which: Any, Count: Unit, Name: Any): Range = js.native
+  def GoTo(What: Unit, Which: Unit, Count: Any): Range = js.native
+  def GoTo(What: Unit, Which: Unit, Count: Any, Name: Any): Range = js.native
+  def GoTo(What: Unit, Which: Unit, Count: Unit, Name: Any): Range = js.native
   
   var GrammarChecked: Boolean = js.native
   
@@ -716,68 +716,68 @@ trait Document extends StObject {
   def ManualHyphenation(): Unit = js.native
   
   def Merge(FileName: String): Unit = js.native
-  def Merge(FileName: String, MergeTarget: js.Any): Unit = js.native
-  def Merge(FileName: String, MergeTarget: js.Any, DetectFormatChanges: js.Any): Unit = js.native
-  def Merge(FileName: String, MergeTarget: js.Any, DetectFormatChanges: js.Any, UseFormattingFrom: js.Any): Unit = js.native
+  def Merge(FileName: String, MergeTarget: Any): Unit = js.native
+  def Merge(FileName: String, MergeTarget: Any, DetectFormatChanges: Any): Unit = js.native
+  def Merge(FileName: String, MergeTarget: Any, DetectFormatChanges: Any, UseFormattingFrom: Any): Unit = js.native
   def Merge(
     FileName: String,
-    MergeTarget: js.Any,
-    DetectFormatChanges: js.Any,
-    UseFormattingFrom: js.Any,
-    AddToRecentFiles: js.Any
+    MergeTarget: Any,
+    DetectFormatChanges: Any,
+    UseFormattingFrom: Any,
+    AddToRecentFiles: Any
   ): Unit = js.native
   def Merge(
     FileName: String,
-    MergeTarget: js.Any,
-    DetectFormatChanges: js.Any,
+    MergeTarget: Any,
+    DetectFormatChanges: Any,
     UseFormattingFrom: Unit,
-    AddToRecentFiles: js.Any
+    AddToRecentFiles: Any
   ): Unit = js.native
-  def Merge(FileName: String, MergeTarget: js.Any, DetectFormatChanges: Unit, UseFormattingFrom: js.Any): Unit = js.native
+  def Merge(FileName: String, MergeTarget: Any, DetectFormatChanges: Unit, UseFormattingFrom: Any): Unit = js.native
   def Merge(
     FileName: String,
-    MergeTarget: js.Any,
+    MergeTarget: Any,
     DetectFormatChanges: Unit,
-    UseFormattingFrom: js.Any,
-    AddToRecentFiles: js.Any
+    UseFormattingFrom: Any,
+    AddToRecentFiles: Any
   ): Unit = js.native
   def Merge(
     FileName: String,
-    MergeTarget: js.Any,
+    MergeTarget: Any,
     DetectFormatChanges: Unit,
     UseFormattingFrom: Unit,
-    AddToRecentFiles: js.Any
+    AddToRecentFiles: Any
   ): Unit = js.native
-  def Merge(FileName: String, MergeTarget: Unit, DetectFormatChanges: js.Any): Unit = js.native
-  def Merge(FileName: String, MergeTarget: Unit, DetectFormatChanges: js.Any, UseFormattingFrom: js.Any): Unit = js.native
+  def Merge(FileName: String, MergeTarget: Unit, DetectFormatChanges: Any): Unit = js.native
+  def Merge(FileName: String, MergeTarget: Unit, DetectFormatChanges: Any, UseFormattingFrom: Any): Unit = js.native
   def Merge(
     FileName: String,
     MergeTarget: Unit,
-    DetectFormatChanges: js.Any,
-    UseFormattingFrom: js.Any,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Merge(
-    FileName: String,
-    MergeTarget: Unit,
-    DetectFormatChanges: js.Any,
-    UseFormattingFrom: Unit,
-    AddToRecentFiles: js.Any
-  ): Unit = js.native
-  def Merge(FileName: String, MergeTarget: Unit, DetectFormatChanges: Unit, UseFormattingFrom: js.Any): Unit = js.native
-  def Merge(
-    FileName: String,
-    MergeTarget: Unit,
-    DetectFormatChanges: Unit,
-    UseFormattingFrom: js.Any,
-    AddToRecentFiles: js.Any
+    DetectFormatChanges: Any,
+    UseFormattingFrom: Any,
+    AddToRecentFiles: Any
   ): Unit = js.native
   def Merge(
     FileName: String,
     MergeTarget: Unit,
+    DetectFormatChanges: Any,
+    UseFormattingFrom: Unit,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Merge(FileName: String, MergeTarget: Unit, DetectFormatChanges: Unit, UseFormattingFrom: Any): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: Unit,
+    DetectFormatChanges: Unit,
+    UseFormattingFrom: Any,
+    AddToRecentFiles: Any
+  ): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: Unit,
     DetectFormatChanges: Unit,
     UseFormattingFrom: Unit,
-    AddToRecentFiles: js.Any
+    AddToRecentFiles: Any
   ): Unit = js.native
   
   def Merge2000(FileName: String): Unit = js.native
@@ -820,7 +820,7 @@ trait Document extends StObject {
   
   val Paragraphs: typings.activexWord.Word.Paragraphs = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Password: String = js.native
   
@@ -834,7 +834,7 @@ trait Document extends StObject {
   
   val Path: String = js.native
   
-  def Permission(Index: js.Any): UserPermission = js.native
+  def Permission(Index: Any): UserPermission = js.native
   @JSName("Permission")
   val Permission_Original: Permission = js.native
   
@@ -847,62 +847,62 @@ trait Document extends StObject {
   var PrintFractionalWidths: Boolean = js.native
   
   def PrintOut(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any],
-    PrintZoomColumn: js.UndefOr[js.Any],
-    PrintZoomRow: js.UndefOr[js.Any],
-    PrintZoomPaperWidth: js.UndefOr[js.Any],
-    PrintZoomPaperHeight: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any],
+    PrintZoomColumn: js.UndefOr[Any],
+    PrintZoomRow: js.UndefOr[Any],
+    PrintZoomPaperWidth: js.UndefOr[Any],
+    PrintZoomPaperHeight: js.UndefOr[Any]
   ): Unit = js.native
   
   def PrintOut2000(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any],
-    PrintZoomColumn: js.UndefOr[js.Any],
-    PrintZoomRow: js.UndefOr[js.Any],
-    PrintZoomPaperWidth: js.UndefOr[js.Any],
-    PrintZoomPaperHeight: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any],
+    PrintZoomColumn: js.UndefOr[Any],
+    PrintZoomRow: js.UndefOr[Any],
+    PrintZoomPaperWidth: js.UndefOr[Any],
+    PrintZoomPaperHeight: js.UndefOr[Any]
   ): Unit = js.native
   
   def PrintOutOld(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any]
   ): Unit = js.native
   
   var PrintPostScriptOverText: Boolean = js.native
@@ -912,32 +912,26 @@ trait Document extends StObject {
   var PrintRevisions: Boolean = js.native
   
   def Protect(Type: WdProtectionType): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: js.Any, Password: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: js.Any, Password: js.Any, UseIRM: js.Any): Unit = js.native
-  def Protect(
-    Type: WdProtectionType,
-    NoReset: js.Any,
-    Password: js.Any,
-    UseIRM: js.Any,
-    EnforceStyleLock: js.Any
-  ): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: js.Any, Password: js.Any, UseIRM: Unit, EnforceStyleLock: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: js.Any, Password: Unit, UseIRM: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: js.Any, Password: Unit, UseIRM: js.Any, EnforceStyleLock: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: js.Any, Password: Unit, UseIRM: Unit, EnforceStyleLock: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: Unit, Password: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: Unit, Password: js.Any, UseIRM: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: Unit, Password: js.Any, UseIRM: js.Any, EnforceStyleLock: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: Unit, Password: js.Any, UseIRM: Unit, EnforceStyleLock: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Unit, UseIRM: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Unit, UseIRM: js.Any, EnforceStyleLock: js.Any): Unit = js.native
-  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Unit, UseIRM: Unit, EnforceStyleLock: js.Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Any, Password: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Any, Password: Any, UseIRM: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Any, Password: Any, UseIRM: Any, EnforceStyleLock: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Any, Password: Any, UseIRM: Unit, EnforceStyleLock: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Any, Password: Unit, UseIRM: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Any, Password: Unit, UseIRM: Any, EnforceStyleLock: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Any, Password: Unit, UseIRM: Unit, EnforceStyleLock: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Any, UseIRM: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Any, UseIRM: Any, EnforceStyleLock: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Any, UseIRM: Unit, EnforceStyleLock: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Unit, UseIRM: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Unit, UseIRM: Any, EnforceStyleLock: Any): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: Unit, Password: Unit, UseIRM: Unit, EnforceStyleLock: Any): Unit = js.native
   
   def Protect2002(Type: WdProtectionType): Unit = js.native
-  def Protect2002(Type: WdProtectionType, NoReset: js.Any): Unit = js.native
-  def Protect2002(Type: WdProtectionType, NoReset: js.Any, Password: js.Any): Unit = js.native
-  def Protect2002(Type: WdProtectionType, NoReset: Unit, Password: js.Any): Unit = js.native
+  def Protect2002(Type: WdProtectionType, NoReset: Any): Unit = js.native
+  def Protect2002(Type: WdProtectionType, NoReset: Any, Password: Any): Unit = js.native
+  def Protect2002(Type: WdProtectionType, NoReset: Unit, Password: Any): Unit = js.native
   
   val ProtectionType: WdProtectionType = js.native
   
@@ -961,7 +955,7 @@ trait Document extends StObject {
   def RecheckSmartTags(): Unit = js.native
   
   def Redo(): Boolean = js.native
-  def Redo(Times: js.Any): Boolean = js.native
+  def Redo(Times: Any): Boolean = js.native
   
   def RejectAllRevisions(): Unit = js.native
   
@@ -980,7 +974,7 @@ trait Document extends StObject {
   def RemoveLockedStyles(): Unit = js.native
   
   def RemoveNumbers(): Unit = js.native
-  def RemoveNumbers(NumberType: js.Any): Unit = js.native
+  def RemoveNumbers(NumberType: Any): Unit = js.native
   
   var RemovePersonalInformation: Boolean = js.native
   
@@ -995,7 +989,7 @@ trait Document extends StObject {
   def ReplyAll(): Unit = js.native
   
   def ReplyWithChanges(): Unit = js.native
-  def ReplyWithChanges(ShowMessage: js.Any): Unit = js.native
+  def ReplyWithChanges(ShowMessage: Any): Unit = js.native
   
   val Research: typings.activexWord.Word.Research = js.native
   
@@ -1014,63 +1008,63 @@ trait Document extends StObject {
   def RunAutoMacro(Which: WdAutoMacros): Unit = js.native
   
   def RunLetterWizard(): Unit = js.native
-  def RunLetterWizard(LetterContent: js.Any): Unit = js.native
-  def RunLetterWizard(LetterContent: js.Any, WizardMode: js.Any): Unit = js.native
-  def RunLetterWizard(LetterContent: Unit, WizardMode: js.Any): Unit = js.native
+  def RunLetterWizard(LetterContent: Any): Unit = js.native
+  def RunLetterWizard(LetterContent: Any, WizardMode: Any): Unit = js.native
+  def RunLetterWizard(LetterContent: Unit, WizardMode: Any): Unit = js.native
   
   def Save(): Unit = js.native
   
   def SaveAs(
-    FileName: js.UndefOr[js.Any],
-    FileFormat: js.UndefOr[js.Any],
-    LockComments: js.UndefOr[js.Any],
-    Password: js.UndefOr[js.Any],
-    AddToRecentFiles: js.UndefOr[js.Any],
-    WritePassword: js.UndefOr[js.Any],
-    ReadOnlyRecommended: js.UndefOr[js.Any],
-    EmbedTrueTypeFonts: js.UndefOr[js.Any],
-    SaveNativePictureFormat: js.UndefOr[js.Any],
-    SaveFormsData: js.UndefOr[js.Any],
-    SaveAsAOCELetter: js.UndefOr[js.Any],
-    Encoding: js.UndefOr[js.Any],
-    InsertLineBreaks: js.UndefOr[js.Any],
-    AllowSubstitutions: js.UndefOr[js.Any],
-    LineEnding: js.UndefOr[js.Any],
-    AddBiDiMarks: js.UndefOr[js.Any]
+    FileName: js.UndefOr[Any],
+    FileFormat: js.UndefOr[Any],
+    LockComments: js.UndefOr[Any],
+    Password: js.UndefOr[Any],
+    AddToRecentFiles: js.UndefOr[Any],
+    WritePassword: js.UndefOr[Any],
+    ReadOnlyRecommended: js.UndefOr[Any],
+    EmbedTrueTypeFonts: js.UndefOr[Any],
+    SaveNativePictureFormat: js.UndefOr[Any],
+    SaveFormsData: js.UndefOr[Any],
+    SaveAsAOCELetter: js.UndefOr[Any],
+    Encoding: js.UndefOr[Any],
+    InsertLineBreaks: js.UndefOr[Any],
+    AllowSubstitutions: js.UndefOr[Any],
+    LineEnding: js.UndefOr[Any],
+    AddBiDiMarks: js.UndefOr[Any]
   ): Unit = js.native
   
   def SaveAs2(
-    FileName: js.UndefOr[js.Any],
-    FileFormat: js.UndefOr[js.Any],
-    LockComments: js.UndefOr[js.Any],
-    Password: js.UndefOr[js.Any],
-    AddToRecentFiles: js.UndefOr[js.Any],
-    WritePassword: js.UndefOr[js.Any],
-    ReadOnlyRecommended: js.UndefOr[js.Any],
-    EmbedTrueTypeFonts: js.UndefOr[js.Any],
-    SaveNativePictureFormat: js.UndefOr[js.Any],
-    SaveFormsData: js.UndefOr[js.Any],
-    SaveAsAOCELetter: js.UndefOr[js.Any],
-    Encoding: js.UndefOr[js.Any],
-    InsertLineBreaks: js.UndefOr[js.Any],
-    AllowSubstitutions: js.UndefOr[js.Any],
-    LineEnding: js.UndefOr[js.Any],
-    AddBiDiMarks: js.UndefOr[js.Any],
-    CompatibilityMode: js.UndefOr[js.Any]
+    FileName: js.UndefOr[Any],
+    FileFormat: js.UndefOr[Any],
+    LockComments: js.UndefOr[Any],
+    Password: js.UndefOr[Any],
+    AddToRecentFiles: js.UndefOr[Any],
+    WritePassword: js.UndefOr[Any],
+    ReadOnlyRecommended: js.UndefOr[Any],
+    EmbedTrueTypeFonts: js.UndefOr[Any],
+    SaveNativePictureFormat: js.UndefOr[Any],
+    SaveFormsData: js.UndefOr[Any],
+    SaveAsAOCELetter: js.UndefOr[Any],
+    Encoding: js.UndefOr[Any],
+    InsertLineBreaks: js.UndefOr[Any],
+    AllowSubstitutions: js.UndefOr[Any],
+    LineEnding: js.UndefOr[Any],
+    AddBiDiMarks: js.UndefOr[Any],
+    CompatibilityMode: js.UndefOr[Any]
   ): Unit = js.native
   
   def SaveAs2000(
-    FileName: js.UndefOr[js.Any],
-    FileFormat: js.UndefOr[js.Any],
-    LockComments: js.UndefOr[js.Any],
-    Password: js.UndefOr[js.Any],
-    AddToRecentFiles: js.UndefOr[js.Any],
-    WritePassword: js.UndefOr[js.Any],
-    ReadOnlyRecommended: js.UndefOr[js.Any],
-    EmbedTrueTypeFonts: js.UndefOr[js.Any],
-    SaveNativePictureFormat: js.UndefOr[js.Any],
-    SaveFormsData: js.UndefOr[js.Any],
-    SaveAsAOCELetter: js.UndefOr[js.Any]
+    FileName: js.UndefOr[Any],
+    FileFormat: js.UndefOr[Any],
+    LockComments: js.UndefOr[Any],
+    Password: js.UndefOr[Any],
+    AddToRecentFiles: js.UndefOr[Any],
+    WritePassword: js.UndefOr[Any],
+    ReadOnlyRecommended: js.UndefOr[Any],
+    EmbedTrueTypeFonts: js.UndefOr[Any],
+    SaveNativePictureFormat: js.UndefOr[Any],
+    SaveFormsData: js.UndefOr[Any],
+    SaveAsAOCELetter: js.UndefOr[Any]
   ): Unit = js.native
   
   def SaveAsQuickStyleSet(FileName: String): Unit = js.native
@@ -1085,7 +1079,7 @@ trait Document extends StObject {
   
   var Saved: Boolean = js.native
   
-  def Scripts(Index: js.Any): Script = js.native
+  def Scripts(Index: Any): Script = js.native
   @JSName("Scripts")
   val Scripts_Original: Scripts = js.native
   
@@ -1094,7 +1088,7 @@ trait Document extends StObject {
   def Select(): Unit = js.native
   
   def SelectAllEditableRanges(): Unit = js.native
-  def SelectAllEditableRanges(EditorID: js.Any): Unit = js.native
+  def SelectAllEditableRanges(EditorID: Any): Unit = js.native
   
   def SelectContentControlsByTag(Tag: String): typings.activexWord.Word.ContentControls = js.native
   
@@ -1125,40 +1119,40 @@ trait Document extends StObject {
   def SelectUnlinkedControls(Stream: CustomXMLPart): typings.activexWord.Word.ContentControls = js.native
   
   def SendFax(Address: String): Unit = js.native
-  def SendFax(Address: String, Subject: js.Any): Unit = js.native
+  def SendFax(Address: String, Subject: Any): Unit = js.native
   
   def SendFaxOverInternet(): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.Any): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.Any, Subject: js.Any): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.Any, Subject: js.Any, ShowMessage: js.Any): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.Any, Subject: Unit, ShowMessage: js.Any): Unit = js.native
-  def SendFaxOverInternet(Recipients: Unit, Subject: js.Any): Unit = js.native
-  def SendFaxOverInternet(Recipients: Unit, Subject: js.Any, ShowMessage: js.Any): Unit = js.native
-  def SendFaxOverInternet(Recipients: Unit, Subject: Unit, ShowMessage: js.Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: Any, Subject: Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: Any, Subject: Any, ShowMessage: Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: Any, Subject: Unit, ShowMessage: Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: Unit, Subject: Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: Unit, Subject: Any, ShowMessage: Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: Unit, Subject: Unit, ShowMessage: Any): Unit = js.native
   
   def SendForReview(): Unit = js.native
-  def SendForReview(Recipients: js.Any): Unit = js.native
-  def SendForReview(Recipients: js.Any, Subject: js.Any): Unit = js.native
-  def SendForReview(Recipients: js.Any, Subject: js.Any, ShowMessage: js.Any): Unit = js.native
-  def SendForReview(Recipients: js.Any, Subject: js.Any, ShowMessage: js.Any, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: js.Any, Subject: js.Any, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: js.Any, Subject: Unit, ShowMessage: js.Any): Unit = js.native
-  def SendForReview(Recipients: js.Any, Subject: Unit, ShowMessage: js.Any, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: js.Any, Subject: Unit, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: js.Any): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: js.Any, ShowMessage: js.Any): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: js.Any, ShowMessage: js.Any, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: js.Any, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: js.Any): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: js.Any, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: Any): Unit = js.native
+  def SendForReview(Recipients: Any, Subject: Any): Unit = js.native
+  def SendForReview(Recipients: Any, Subject: Any, ShowMessage: Any): Unit = js.native
+  def SendForReview(Recipients: Any, Subject: Any, ShowMessage: Any, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: Any, Subject: Any, ShowMessage: Unit, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: Any, Subject: Unit, ShowMessage: Any): Unit = js.native
+  def SendForReview(Recipients: Any, Subject: Unit, ShowMessage: Any, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: Any, Subject: Unit, ShowMessage: Unit, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Any, ShowMessage: Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Any, ShowMessage: Any, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Any, ShowMessage: Unit, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Any, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Unit, IncludeAttachment: Any): Unit = js.native
   
   def SendMail(): Unit = js.native
   
   def SendMailer(): Unit = js.native
-  def SendMailer(FileFormat: js.Any): Unit = js.native
-  def SendMailer(FileFormat: js.Any, Priority: js.Any): Unit = js.native
-  def SendMailer(FileFormat: Unit, Priority: js.Any): Unit = js.native
+  def SendMailer(FileFormat: Any): Unit = js.native
+  def SendMailer(FileFormat: Any, Priority: Any): Unit = js.native
+  def SendMailer(FileFormat: Unit, Priority: Any): Unit = js.native
   
   val Sentences: typings.activexWord.Word.Sentences = js.native
   
@@ -1169,9 +1163,9 @@ trait Document extends StObject {
   
   def SetCompatibilityMode(Mode: Double): Unit = js.native
   
-  def SetDefaultTableStyle(Style: js.Any, SetInTemplate: Boolean): Unit = js.native
+  def SetDefaultTableStyle(Style: Any, SetInTemplate: Boolean): Unit = js.native
   
-  def SetLetterContent(LetterContent: js.Any): Unit = js.native
+  def SetLetterContent(LetterContent: Any): Unit = js.native
   
   def SetPasswordEncryptionOptions(
     PasswordEncryptionProvider: String,
@@ -1182,7 +1176,7 @@ trait Document extends StObject {
     PasswordEncryptionProvider: String,
     PasswordEncryptionAlgorithm: String,
     PasswordEncryptionKeyLength: Double,
-    PasswordEncryptionFileProperties: js.Any
+    PasswordEncryptionFileProperties: Any
   ): Unit = js.native
   
   val Shapes: typings.activexWord.Word.Shapes = js.native
@@ -1260,14 +1254,14 @@ trait Document extends StObject {
   val Type: WdDocumentType = js.native
   
   def Undo(): Boolean = js.native
-  def Undo(Times: js.Any): Boolean = js.native
+  def Undo(Times: Any): Boolean = js.native
   
   def UndoClear(): Unit = js.native
   
   def UnfreezeLayout(): Unit = js.native
   
   def Unprotect(): Unit = js.native
-  def Unprotect(Password: js.Any): Unit = js.native
+  def Unprotect(Password: Any): Unit = js.native
   
   def UpdateStyles(): Unit = js.native
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.NumberFormat")
 @js.native
-class NumberFormat ()
+open class NumberFormat ()
   extends StObject
      with typings.googleVisualization.google.visualization.NumberFormat {
   def this(options: NumberFormatOptions) = this()

@@ -27,10 +27,9 @@ object checkboxCheckboxMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Checkbox/Checkbox", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[CheckboxProps, ComponentState, js.Any] {
+  open class default protected () extends Component[CheckboxProps, ComponentState, Any] {
     def this(props: CheckboxProps) = this()
-    def this(props: CheckboxProps, context: js.Any) = this()
+    def this(props: CheckboxProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Checkbox/Checkbox", JSImport.Default)
   @js.native
@@ -39,7 +38,7 @@ object checkboxCheckboxMod extends Shortcut {
   trait CheckboxProps
     extends StObject
        with StrictCheckboxProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object CheckboxProps {
     
     inline def apply(): CheckboxProps = {
@@ -53,7 +52,7 @@ object checkboxCheckboxMod extends Shortcut {
        with InputHTMLAttributes[HTMLInputElement] {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Whether or not checkbox is indeterminate. */
     var defaultIndeterminate: js.UndefOr[Boolean] = js.undefined
@@ -157,7 +156,7 @@ object checkboxCheckboxMod extends Shortcut {
     
     extension [Self <: StrictCheckboxProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

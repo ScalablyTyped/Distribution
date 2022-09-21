@@ -54,7 +54,7 @@ object PlaceDetailsRequest {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: PlaceDetailsRequestField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: PlaceDetailsRequestField*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

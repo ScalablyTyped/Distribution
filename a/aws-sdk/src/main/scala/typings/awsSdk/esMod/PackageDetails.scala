@@ -11,14 +11,14 @@ trait PackageDetails extends StObject {
   /**
     * Timestamp which tells creation date of the package.
     */
-  var CreatedAt: js.UndefOr[typings.awsSdk.esMod.CreatedAt] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Additional information if the package is in an error state. Null otherwise.
     */
   var ErrorDetails: js.UndefOr[typings.awsSdk.esMod.ErrorDetails] = js.undefined
   
-  var LastUpdatedAt: js.UndefOr[LastUpdated] = js.undefined
+  var LastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * User-specified description of the package.
@@ -58,7 +58,7 @@ object PackageDetails {
     
     inline def setAvailablePackageVersionUndefined: Self = StObject.set(x, "AvailablePackageVersion", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -66,7 +66,7 @@ object PackageDetails {
     
     inline def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
     
-    inline def setLastUpdatedAt(value: LastUpdated): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object elementsMod {
   
-  @JSImport("@storybook/addon-a11y/dist/components/Report/Elements", "Elements")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/Report/Elements", "Elements")
   @js.native
   val Elements: FunctionComponent[ElementsProps] = js.native
   
@@ -31,7 +31,7 @@ object elementsMod {
       
       inline def setElements(value: js.Array[NodeResult]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      inline def setElementsVarargs(value: NodeResult*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: NodeResult*): Self = StObject.set(x, "elements", js.Array(value*))
       
       inline def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -23,14 +23,14 @@ trait SequelizeStaticAndInstance
   /**
     * A reference to the sequelize instance class.
     */
-  var Instance: typings.sequelize.mod.Instance[js.Any] = js.native
+  var Instance: typings.sequelize.mod.Instance[Any] = js.native
   
   /**
     * A Model represents a table in the database. Sometimes you might also see it referred to as model, or
     * simply as factory. This class should not be instantiated directly, it is created using sequelize.define,
     * and already created models can be loaded using sequelize.import
     */
-  var Model: typings.sequelize.mod.Model[js.Any, js.Any, js.Any] = js.native
+  var Model: typings.sequelize.mod.Model[Any, Any, Any] = js.native
   
   var Op: Operators = js.native
   
@@ -40,10 +40,10 @@ trait SequelizeStaticAndInstance
   var Promise: TypeofPromise & (Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
-        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
+        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any]], 
         Unit
       ], 
-      /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+      /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
       /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
       Unit
     ], 
@@ -81,7 +81,7 @@ trait SequelizeStaticAndInstance
     */
   def and(args: (String | js.Object)*): typings.sequelize.mod.and = js.native
   
-  def asIs(`val`: js.Any): literal = js.native
+  def asIs(`val`: Any): literal = js.native
   
   /**
     * Creates a object representing a call to the cast function.
@@ -89,7 +89,7 @@ trait SequelizeStaticAndInstance
     * @param val The value to cast
     * @param type The type to cast it to
     */
-  def cast(`val`: js.Any, `type`: String): typings.sequelize.mod.cast = js.native
+  def cast(`val`: Any, `type`: String): typings.sequelize.mod.cast = js.native
   
   /**
     * Creates a object representing a column in the DB. This is often useful in conjunction with
@@ -117,7 +117,7 @@ trait SequelizeStaticAndInstance
     * @param fn The function you want to call
     * @param args All further arguments will be passed as arguments to the function
     */
-  def fn(fn: String, args: js.Any*): typings.sequelize.mod.fn = js.native
+  def fn(fn: String, args: Any*): typings.sequelize.mod.fn = js.native
   
   /**
     * Creates an object representing nested where conditions for postgres's json data-type.
@@ -141,7 +141,7 @@ trait SequelizeStaticAndInstance
     *
     * @param val
     */
-  def literal(`val`: js.Any): typings.sequelize.mod.literal = js.native
+  def literal(`val`: Any): typings.sequelize.mod.literal = js.native
   
   /**
     * An OR query

@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for the metagame config resource
-  */
 trait SchemaMetagameConfig extends StObject {
   
   /**
-    * Current version of the metagame configuration data. When this data is
-    * updated, the version number will be increased by one.
+    * Current version of the metagame configuration data. When this data is updated, the version number will be increased by one.
     */
-  var currentVersion: js.UndefOr[Double] = js.undefined
+  var currentVersion: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#metagameConfig.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#metagameConfig`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of player levels.
@@ -37,9 +32,13 @@ object SchemaMetagameConfig {
     
     inline def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
+    inline def setCurrentVersionNull: Self = StObject.set(x, "currentVersion", null)
+    
     inline def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -47,6 +46,6 @@ object SchemaMetagameConfig {
     
     inline def setPlayerLevelsUndefined: Self = StObject.set(x, "playerLevels", js.undefined)
     
-    inline def setPlayerLevelsVarargs(value: SchemaPlayerLevel*): Self = StObject.set(x, "playerLevels", js.Array(value :_*))
+    inline def setPlayerLevelsVarargs(value: SchemaPlayerLevel*): Self = StObject.set(x, "playerLevels", js.Array(value*))
   }
 }

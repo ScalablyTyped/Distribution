@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type InteractionRequestStringResolver = typings.activexLibreoffice.com_.sun.star.task.XInteractionRequestStringResolver
+type InteractionRequestStringResolver = XInteractionRequestStringResolver
 
 /**
   * A legacy (single-instance) service-variant of {@link theJobExecutor} singleton.
   * @deprecated DeprecatedUse theJobExecutor singleton instead.
   */
-type JobExecutor = typings.activexLibreoffice.com_.sun.star.task.XJobExecutor
+type JobExecutor = XJobExecutor
 
 /**
   * this request specifies the mode in which the password should be asked
@@ -20,13 +20,13 @@ type JobExecutor = typings.activexLibreoffice.com_.sun.star.task.XJobExecutor
   * service are Abort and Approve.
   * @since OOo 1.1.2
   */
-type MasterPasswordRequest = typings.activexLibreoffice.com_.sun.star.task.PasswordRequest
+type MasterPasswordRequest = PasswordRequest
 
 /**
   * This singleton is intended to allow to restart the office asynchronously.
   * @since OOo 3.3
   */
-type OfficeRestartManager = typings.activexLibreoffice.com_.sun.star.task.XRestartManager
+type OfficeRestartManager = XRestartManager
 
 /**
   * this service is kind of storage that allows to store passwords and to retrieve already stored.
@@ -39,7 +39,7 @@ type OfficeRestartManager = typings.activexLibreoffice.com_.sun.star.task.XResta
   * password interaction does not return super password ( for any reason ), {@link NoMasterException} exception is thrown to let user use non-persistent
   * way explicitly.
   */
-type PasswordContainer = typings.activexLibreoffice.com_.sun.star.task.XPasswordContainer2
+type PasswordContainer = XPasswordContainer2
 
 /**
   * An interaction request handler that uses the {@link com.sun.star.task.PasswordContainer} service to handle {@link
@@ -51,22 +51,22 @@ type PasswordContainer = typings.activexLibreoffice.com_.sun.star.task.XPassword
   * If the password container does not contain credentials matching the authentication request, the service implementation selects no continuation.
   * @since OOo 3.3
   */
-type PasswordContainerInteractionHandler = typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
+type PasswordContainerInteractionHandler = XInteractionHandler
 
 /** An interaction continuation specifing to abort executing the process that issued the request. */
-type XInteractionAbort = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+type XInteractionAbort = XInteractionContinuation
 
 /** An interaction continuation specifying "approval". */
-type XInteractionApprove = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+type XInteractionApprove = XInteractionContinuation
 
 /** specifies a continuation where the user does not actually decide the question they were confronted with, but postpones the decision to a later time. */
-type XInteractionAskLater = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+type XInteractionAskLater = XInteractionContinuation
 
 /** An interaction continuation specifying "disapproval". */
-type XInteractionDisapprove = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+type XInteractionDisapprove = XInteractionContinuation
 
 /** An interaction continuation specifing to try to re-execute the process that issued the request. */
-type XInteractionRetry = typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
+type XInteractionRetry = XInteractionContinuation
 
 /**
   * Generic job execution singleton
@@ -80,4 +80,4 @@ type XInteractionRetry = typings.activexLibreoffice.com_.sun.star.task.XInteract
   * @see AsyncJob
   * @since LibreOffice 4.3
   */
-type theJobExecutor = typings.activexLibreoffice.com_.sun.star.task.XJobExecutor
+type theJobExecutor = XJobExecutor

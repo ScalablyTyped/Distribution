@@ -16,7 +16,7 @@ object describeIdentityCommandMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/commands/DescribeIdentityCommand", "DescribeIdentityCommand")
   @js.native
-  class DescribeIdentityCommand protected ()
+  open class DescribeIdentityCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object describeIdentityCommandMod {
     override val middlewareStack: MiddlewareStack[DescribeIdentityInput, DescribeIdentityOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[DescribeIdentityInput, DescribeIdentityOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CognitoIdentityResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DescribeIdentityInput, DescribeIdentityOutput] = js.native
   }
 }

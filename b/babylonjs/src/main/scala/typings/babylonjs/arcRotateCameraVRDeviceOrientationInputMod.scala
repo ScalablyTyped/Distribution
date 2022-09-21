@@ -14,19 +14,22 @@ object arcRotateCameraVRDeviceOrientationInputMod {
   /**
     * Instantiate a new ArcRotateCameraVRDeviceOrientationInput.
     */
-  class ArcRotateCameraVRDeviceOrientationInput ()
+  open class ArcRotateCameraVRDeviceOrientationInput ()
     extends StObject
        with ICameraInput[ArcRotateCamera] {
     
-    /* private */ var _alpha: js.Any = js.native
+    /* private */ var _alpha: Any = js.native
     
-    /* private */ var _deviceOrientationHandler: js.Any = js.native
+    /* private */ var _deviceOrientationHandler: Any = js.native
     
-    /* private */ var _dirty: js.Any = js.native
+    /* private */ var _dirty: Any = js.native
     
-    /* private */ var _gamma: js.Any = js.native
+    /* private */ var _gamma: Any = js.native
     
-    /** @hidden */
+    /**
+      * @param evt
+      * @hidden
+      */
     def _onOrientationEvent(evt: DeviceOrientationEvent): Unit = js.native
     
     /**

@@ -6,41 +6,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[CK /* <: String */] extends StObject {
+  trait Gte extends StObject {
     
-    var contextKey: js.UndefOr[CK] = js.undefined
+    var gte: String
+    
+    var keyAsBuffer: Boolean
+    
+    var keys: Boolean
+    
+    var lte: String
+    
+    var valueAsBuffer: Boolean
+    
+    var values: Boolean
   }
-  object `0` {
+  object Gte {
     
-    inline def apply[CK /* <: String */](): `0`[CK] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`[CK]]
+    inline def apply(
+      gte: String,
+      keyAsBuffer: Boolean,
+      keys: Boolean,
+      lte: String,
+      valueAsBuffer: Boolean,
+      values: Boolean
+    ): Gte = {
+      val __obj = js.Dynamic.literal(gte = gte.asInstanceOf[js.Any], keyAsBuffer = keyAsBuffer.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], lte = lte.asInstanceOf[js.Any], valueAsBuffer = valueAsBuffer.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Gte]
     }
     
-    extension [Self <: `0`[?], CK /* <: String */](x: Self & `0`[CK]) {
+    extension [Self <: Gte](x: Self) {
       
-      inline def setContextKey(value: CK): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
+      inline def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
       
-      inline def setContextKeyUndefined: Self = StObject.set(x, "contextKey", js.undefined)
-    }
-  }
-  
-  trait ContextKey extends StObject {
-    
-    var contextKey: js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam CK */ js.Any] = js.undefined
-  }
-  object ContextKey {
-    
-    inline def apply(): ContextKey = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ContextKey]
-    }
-    
-    extension [Self <: ContextKey](x: Self) {
+      inline def setKeyAsBuffer(value: Boolean): Self = StObject.set(x, "keyAsBuffer", value.asInstanceOf[js.Any])
       
-      inline def setContextKey(value: /* import warning: RewrittenClass.unapply cls was tparam CK */ js.Any): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
+      inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      inline def setContextKeyUndefined: Self = StObject.set(x, "contextKey", js.undefined)
+      inline def setLte(value: String): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+      
+      inline def setValueAsBuffer(value: Boolean): Self = StObject.set(x, "valueAsBuffer", value.asInstanceOf[js.Any])
+      
+      inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
 }

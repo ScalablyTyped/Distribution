@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleTextCaseCommand")
 @js.native
-class ToggleTextCaseCommand ()
+open class ToggleTextCaseCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleTextCaseCommand {
   

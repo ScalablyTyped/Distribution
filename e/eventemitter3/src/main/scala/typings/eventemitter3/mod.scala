@@ -12,7 +12,7 @@ object mod extends Shortcut {
   
   @JSImport("eventemitter3", JSImport.Namespace)
   @js.native
-  class ^[EventTypes /* <: ValidEventTypes */, Context /* <: js.Any */] ()
+  open class ^[EventTypes /* <: ValidEventTypes */, Context /* <: Any */] ()
     extends StObject
        with typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
   @JSImport("eventemitter3", JSImport.Namespace)
@@ -20,7 +20,7 @@ object mod extends Shortcut {
   val ^ : EventEmitterStatic = js.native
   
   @js.native
-  trait EventEmitter[EventTypes /* <: ValidEventTypes */, Context /* <: js.Any */] extends StObject {
+  trait EventEmitter[EventTypes /* <: ValidEventTypes */, Context /* <: Any */] extends StObject {
     
     def addListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
     def addListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
@@ -95,7 +95,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("eventemitter3", "EventEmitter")
   @js.native
-  class EventEmitterCls[EventTypes /* <: ValidEventTypes */, Context] ()
+  open class EventEmitterCls[EventTypes /* <: ValidEventTypes */, Context] ()
     extends StObject
        with typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
   
@@ -107,7 +107,7 @@ object mod extends Shortcut {
   
   type ArgumentMap[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K] extends (args : ...any): void? std.Parameters<T[K]> : T[K] extends std.Array<any>? T[K] : std.Array<any>}
-    */ typings.eventemitter3.eventemitter3Strings.ArgumentMap & TopLevel[js.Any]
+    */ typings.eventemitter3.eventemitter3Strings.ArgumentMap & TopLevel[Any]
   
   type EventArgs[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = Parameters[EventListener[T, K]]
   
@@ -117,13 +117,13 @@ object mod extends Shortcut {
        with Instantiable0[typings.eventemitter3.mod.EventEmitter[ValidEventTypes, js.Object]]
   
   type EventListener[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = js.Function1[
-    /* import warning: importer.ImportType#apply Failed type conversion: eventemitter3.eventemitter3.ArgumentMap<std.Exclude<T, string | symbol>>[std.Extract<K, keyof T>] */ /* args */ js.Any, 
+    (/* import warning: importer.ImportType#apply Failed type conversion: eventemitter3.eventemitter3.ArgumentMap<std.Exclude<T, string | symbol>>[std.Extract<K, keyof T>] */ /* args */ js.Any) | (/* repeated */ Any), 
     Unit
   ]
   
   type EventNames[T /* <: ValidEventTypes */] = (/* keyof T */ String) | T
   
-  type ListenerFn[Args /* <: js.Array[js.Any] */] = js.Function1[/* args */ Args, Unit]
+  type ListenerFn[Args /* <: js.Array[Any] */] = js.Function1[/* args */ Args, Unit]
   
   type ValidEventTypes = String | js.Symbol | js.Object
   

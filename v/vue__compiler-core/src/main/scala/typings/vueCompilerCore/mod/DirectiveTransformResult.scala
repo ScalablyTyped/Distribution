@@ -27,12 +27,12 @@ object DirectiveTransformResult {
     
     inline def setProps(value: js.Array[Property]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    inline def setPropsVarargs(value: Property*): Self = StObject.set(x, "props", js.Array(value :_*))
+    inline def setPropsVarargs(value: Property*): Self = StObject.set(x, "props", js.Array(value*))
     
     inline def setSsrTagParts(value: js.Array[String | JSChildNode]): Self = StObject.set(x, "ssrTagParts", value.asInstanceOf[js.Any])
     
     inline def setSsrTagPartsUndefined: Self = StObject.set(x, "ssrTagParts", js.undefined)
     
-    inline def setSsrTagPartsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "ssrTagParts", js.Array(value :_*))
+    inline def setSsrTagPartsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "ssrTagParts", js.Array(value*))
   }
 }

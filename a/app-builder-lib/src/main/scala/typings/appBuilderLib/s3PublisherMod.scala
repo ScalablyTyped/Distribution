@@ -11,7 +11,7 @@ object s3PublisherMod {
   
   @JSImport("app-builder-lib/out/publish/s3/s3Publisher", JSImport.Default)
   @js.native
-  class default protected () extends S3Publisher {
+  open class default protected () extends S3Publisher {
     def this(context: PublishContext, info: S3Options) = this()
   }
   /* static members */
@@ -28,9 +28,9 @@ object s3PublisherMod {
   @js.native
   trait S3Publisher extends BaseS3Publisher {
     
-    /* private */ val info: js.Any = js.native
+    /* private */ val info: Any = js.native
     
     @JSName("providerName")
-    val providerName_FS3Publisher: /* "S3" */ String = js.native
+    val providerName_FS3Publisher: /* "s3" */ String = js.native
   }
 }

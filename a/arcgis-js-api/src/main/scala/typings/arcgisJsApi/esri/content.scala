@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A convenience module for importing [Content](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-Content.html) classes when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html).
+  * A convenience module for importing [Content](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-Content.html) classes when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/typescript-setup/).
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content.html)
   */
@@ -19,10 +19,13 @@ object content {
     - typings.arcgisJsApi.esri.FieldsContent
     - typings.arcgisJsApi.esri.AttachmentsContent
     - typings.arcgisJsApi.esri.CustomContent
+    - typings.arcgisJsApi.esri.ExpressionContent
   */
   trait Content extends StObject
   
   type CustomContent = typings.arcgisJsApi.esri.CustomContent
+  
+  type ExpressionContent = typings.arcgisJsApi.esri.ExpressionContent
   
   type FieldsContent = typings.arcgisJsApi.esri.FieldsContent
   

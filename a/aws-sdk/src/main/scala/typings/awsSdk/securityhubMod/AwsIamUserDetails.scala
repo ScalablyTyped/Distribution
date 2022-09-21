@@ -59,7 +59,7 @@ object AwsIamUserDetails {
     
     inline def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
-    inline def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
+    inline def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value*))
     
     inline def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object AwsIamUserDetails {
     
     inline def setGroupListUndefined: Self = StObject.set(x, "GroupList", js.undefined)
     
-    inline def setGroupListVarargs(value: NonEmptyString*): Self = StObject.set(x, "GroupList", js.Array(value :_*))
+    inline def setGroupListVarargs(value: NonEmptyString*): Self = StObject.set(x, "GroupList", js.Array(value*))
     
     inline def setPath(value: NonEmptyString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
@@ -91,6 +91,6 @@ object AwsIamUserDetails {
     
     inline def setUserPolicyListUndefined: Self = StObject.set(x, "UserPolicyList", js.undefined)
     
-    inline def setUserPolicyListVarargs(value: AwsIamUserPolicy*): Self = StObject.set(x, "UserPolicyList", js.Array(value :_*))
+    inline def setUserPolicyListVarargs(value: AwsIamUserPolicy*): Self = StObject.set(x, "UserPolicyList", js.Array(value*))
   }
 }

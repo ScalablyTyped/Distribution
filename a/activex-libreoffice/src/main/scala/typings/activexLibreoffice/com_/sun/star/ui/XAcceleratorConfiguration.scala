@@ -84,7 +84,7 @@ trait XAcceleratorConfiguration
     * @returns A (non packed!) list of key events, where every item match by index directly to a command of the specified **CommandList** . If a command does no
     * @throws com::sun::star::lang::IllegalArgumentException if at least one of the specified commands is empty. It can't be checked, if a command is valid - b
     */
-  def getPreferredKeyEventsForCommandList(lCommandList: SeqEquiv[String]): SafeArray[js.Any]
+  def getPreferredKeyEventsForCommandList(lCommandList: SeqEquiv[String]): SafeArray[Any]
   
   /**
     * search for an key-command-binding inside this configuration set, where the specified command is used.
@@ -132,11 +132,11 @@ object XAcceleratorConfiguration {
     getAllKeyEvents: () => SafeArray[KeyEvent],
     getCommandByKeyEvent: KeyEvent => String,
     getKeyEventsByCommand: String => SafeArray[KeyEvent],
-    getPreferredKeyEventsForCommandList: SeqEquiv[String] => SafeArray[js.Any],
+    getPreferredKeyEventsForCommandList: SeqEquiv[String] => SafeArray[Any],
     hasStorage: () => Boolean,
     isModified: () => Boolean,
     isReadOnly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reload: () => Unit,
     removeCommandFromAllKeyEvents: String => Unit,
@@ -161,7 +161,7 @@ object XAcceleratorConfiguration {
     
     inline def setGetKeyEventsByCommand(value: String => SafeArray[KeyEvent]): Self = StObject.set(x, "getKeyEventsByCommand", js.Any.fromFunction1(value))
     
-    inline def setGetPreferredKeyEventsForCommandList(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPreferredKeyEventsForCommandList", js.Any.fromFunction1(value))
+    inline def setGetPreferredKeyEventsForCommandList(value: SeqEquiv[String] => SafeArray[Any]): Self = StObject.set(x, "getPreferredKeyEventsForCommandList", js.Any.fromFunction1(value))
     
     inline def setRemoveCommandFromAllKeyEvents(value: String => Unit): Self = StObject.set(x, "removeCommandFromAllKeyEvents", js.Any.fromFunction1(value))
     

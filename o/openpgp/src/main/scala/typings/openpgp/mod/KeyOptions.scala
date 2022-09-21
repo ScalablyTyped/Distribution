@@ -1,7 +1,6 @@
 package typings.openpgp.mod
 
 import typings.openpgp.anon.Passphrase
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait KeyOptions extends StObject {
   /**
     * (optional) override the creation date of the key and the key signatures
     */
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * (optional) The number of seconds after the key creation time that the key expires
@@ -59,7 +58,7 @@ object KeyOptions {
     
     inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
@@ -79,10 +78,10 @@ object KeyOptions {
     
     inline def setSubkeysUndefined: Self = StObject.set(x, "subkeys", js.undefined)
     
-    inline def setSubkeysVarargs(value: Passphrase*): Self = StObject.set(x, "subkeys", js.Array(value :_*))
+    inline def setSubkeysVarargs(value: Passphrase*): Self = StObject.set(x, "subkeys", js.Array(value*))
     
     inline def setUserIds(value: js.Array[UserID]): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
     
-    inline def setUserIdsVarargs(value: UserID*): Self = StObject.set(x, "userIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: UserID*): Self = StObject.set(x, "userIds", js.Array(value*))
   }
 }

@@ -1,14 +1,16 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
+import typings.awsSdkClientCognitoIdentity.anon.ExceptionOptionTypeDevelo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object DeveloperUserAlreadyRegisteredException {
-  
-  @JSImport("@aws-sdk/client-cognito-identity", "DeveloperUserAlreadyRegisteredException")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: typings.awsSdkClientCognitoIdentity.models0Mod.DeveloperUserAlreadyRegisteredException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+@JSImport("@aws-sdk/client-cognito-identity", "DeveloperUserAlreadyRegisteredException")
+@js.native
+open class DeveloperUserAlreadyRegisteredException protected ()
+  extends typings.awsSdkClientCognitoIdentity.modelsMod.DeveloperUserAlreadyRegisteredException {
+  /**
+    * @internal
+    */
+  def this(opts: ExceptionOptionTypeDevelo) = this()
 }

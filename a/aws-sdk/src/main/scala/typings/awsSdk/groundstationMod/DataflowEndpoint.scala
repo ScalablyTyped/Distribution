@@ -14,7 +14,7 @@ trait DataflowEndpoint extends StObject {
   /**
     * Maximum transmission unit (MTU) size in bytes of a dataflow endpoint.
     */
-  var mtu: js.UndefOr[DataflowEndpointmtuInteger] = js.undefined
+  var mtu: js.UndefOr[DataflowEndpointMtuInteger] = js.undefined
   
   /**
     * Name of a dataflow endpoint.
@@ -39,7 +39,7 @@ object DataflowEndpoint {
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    inline def setMtu(value: DataflowEndpointmtuInteger): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
+    inline def setMtu(value: DataflowEndpointMtuInteger): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
     
     inline def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
     

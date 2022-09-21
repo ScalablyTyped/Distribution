@@ -11,7 +11,7 @@ trait SourcesResource extends StObject {
   
   /**
     * Returns list of sources that user can use for Search and Suggest APIs. **Note:** This API requires a standard end user account to execute. A service account can't perform Query API
-    * requests directly; to use a service account to perform queries, set up [G Suite domain-wide delegation of
+    * requests directly; to use a service account to perform queries, set up [Google Workspace domain-wide delegation of
     * authority](https://developers.google.com/cloud-search/docs/guides/delegation/).
     */
   def list(): Request[ListQuerySourcesResponse] = js.native

@@ -33,6 +33,6 @@ object GlobalTable {
     
     inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
     
-    inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+    inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
   }
 }

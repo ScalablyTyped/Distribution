@@ -8,8 +8,6 @@ import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.NONE
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.UPDATING
 import typings.awsSdkClientKinesisBrowser.typesEnhancedMetricsMod.EnhancedMetrics
 import typings.awsSdkClientKinesisBrowser.typesEnhancedMetricsMod.UnmarshalledEnhancedMetrics
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +29,7 @@ object typesStreamDescriptionSummaryMod {
     /**
       * <p>Represents the current enhanced monitoring settings of the stream.</p>
       */
-    var EnhancedMonitoring: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics]
+    var EnhancedMonitoring: js.Array[EnhancedMetrics] | js.Iterable[EnhancedMetrics]
     
     /**
       * <p>The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique identifier, a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias <code>aws/kinesis</code>.</p> <ul> <li> <p>Key ARN example: <code>arn:aws:kms:us-east-1:123456789012:key/12345678-1234-1234-1234-123456789012</code> </p> </li> <li> <p>Alias ARN example: <code> arn:aws:kms:us-east-1:123456789012:alias/MyAliasName</code> </p> </li> <li> <p>Globally unique key ID example: <code>12345678-1234-1234-1234-123456789012</code> </p> </li> <li> <p>Alias name example: <code>alias/MyAliasName</code> </p> </li> <li> <p>Master key owned by Kinesis Data Streams: <code>alias/aws/kinesis</code> </p> </li> </ul>
@@ -56,7 +54,7 @@ object typesStreamDescriptionSummaryMod {
     /**
       * <p>The approximate time that the stream was created.</p>
       */
-    var StreamCreationTimestamp: Date | String | Double
+    var StreamCreationTimestamp: js.Date | String | Double
     
     /**
       * <p>The name of the stream being described.</p>
@@ -71,11 +69,11 @@ object typesStreamDescriptionSummaryMod {
   object StreamDescriptionSummary {
     
     inline def apply(
-      EnhancedMonitoring: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics],
+      EnhancedMonitoring: js.Array[EnhancedMetrics] | js.Iterable[EnhancedMetrics],
       OpenShardCount: Double,
       RetentionPeriodHours: Double,
       StreamARN: String,
-      StreamCreationTimestamp: Date | String | Double,
+      StreamCreationTimestamp: js.Date | String | Double,
       StreamName: String,
       StreamStatus: CREATING | DELETING | ACTIVE | UPDATING | String
     ): StreamDescriptionSummary = {
@@ -93,9 +91,9 @@ object typesStreamDescriptionSummaryMod {
       
       inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
       
-      inline def setEnhancedMonitoring(value: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
+      inline def setEnhancedMonitoring(value: js.Array[EnhancedMetrics] | js.Iterable[EnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       
-      inline def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
+      inline def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value*))
       
       inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
@@ -107,7 +105,7 @@ object typesStreamDescriptionSummaryMod {
       
       inline def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
       
-      inline def setStreamCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setStreamCreationTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
       
       inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
@@ -129,7 +127,7 @@ object typesStreamDescriptionSummaryMod {
       * <p>The approximate time that the stream was created.</p>
       */
     @JSName("StreamCreationTimestamp")
-    var StreamCreationTimestamp_UnmarshalledStreamDescriptionSummary: Date
+    var StreamCreationTimestamp_UnmarshalledStreamDescriptionSummary: js.Date
   }
   object UnmarshalledStreamDescriptionSummary {
     
@@ -138,7 +136,7 @@ object typesStreamDescriptionSummaryMod {
       OpenShardCount: Double,
       RetentionPeriodHours: Double,
       StreamARN: String,
-      StreamCreationTimestamp: Date,
+      StreamCreationTimestamp: js.Date,
       StreamName: String,
       StreamStatus: CREATING | DELETING | ACTIVE | UPDATING | String
     ): UnmarshalledStreamDescriptionSummary = {
@@ -150,9 +148,9 @@ object typesStreamDescriptionSummaryMod {
       
       inline def setEnhancedMonitoring(value: js.Array[UnmarshalledEnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       
-      inline def setEnhancedMonitoringVarargs(value: UnmarshalledEnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
+      inline def setEnhancedMonitoringVarargs(value: UnmarshalledEnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value*))
       
-      inline def setStreamCreationTimestamp(value: Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setStreamCreationTimestamp(value: js.Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
     }
   }
 }

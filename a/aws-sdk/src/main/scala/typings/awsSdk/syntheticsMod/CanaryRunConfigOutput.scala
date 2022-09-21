@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CanaryRunConfigOutput extends StObject {
   
   /**
-    * Displays whether this canary run used active AWS X-Ray tracing. 
+    * Displays whether this canary run used active X-Ray tracing. 
     */
   var ActiveTracing: js.UndefOr[NullableBoolean] = js.undefined
   

@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,52 +9,37 @@ trait ParamsResourceFloodlightactivitiesList
      with StandardParameters {
   
   /**
-    * Select only floodlight activities for the specified advertiser ID. Must
-    * specify either ids, advertiserId, or floodlightConfigurationId for a
-    * non-empty result.
+    * Select only floodlight activities for the specified advertiser ID. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty result.
     */
   var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Select only floodlight activities with the specified floodlight activity
-    * group IDs.
+    * Select only floodlight activities with the specified floodlight activity group IDs.
     */
   var floodlightActivityGroupIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Select only floodlight activities with the specified floodlight activity
-    * group name.
+    * Select only floodlight activities with the specified floodlight activity group name.
     */
   var floodlightActivityGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * Select only floodlight activities with the specified floodlight activity
-    * group tag string.
+    * Select only floodlight activities with the specified floodlight activity group tag string.
     */
   var floodlightActivityGroupTagString: js.UndefOr[String] = js.undefined
   
   /**
-    * Select only floodlight activities with the specified floodlight activity
-    * group type.
+    * Select only floodlight activities with the specified floodlight activity group type.
     */
   var floodlightActivityGroupType: js.UndefOr[String] = js.undefined
   
   /**
-    * Select only floodlight activities for the specified floodlight
-    * configuration ID. Must specify either ids, advertiserId, or
-    * floodlightConfigurationId for a non-empty result.
+    * Select only floodlight activities for the specified floodlight configuration ID. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty result.
     */
   var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
-    * Select only floodlight activities with the specified IDs. Must specify
-    * either ids, advertiserId, or floodlightConfigurationId for a non-empty
-    * result.
+    * Select only floodlight activities with the specified IDs. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty result.
     */
   var ids: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -78,14 +59,7 @@ trait ParamsResourceFloodlightactivitiesList
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for objects by name or ID. Wildcards (*) are allowed.
-    * For example, "floodlightactivity*2015" will return objects with names
-    * like "floodlightactivity June 2015", "floodlightactivity April 2015", or
-    * simply "floodlightactivity 2015". Most of the searches also add wildcards
-    * implicitly at the start and the end of the search string. For example, a
-    * search string of "floodlightactivity" will match objects with name "my
-    * floodlightactivity activity", "floodlightactivity 2015", or simply
-    * "floodlightactivity".
+    * Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "floodlightactivity*2015" will return objects with names like "floodlightactivity June 2015", "floodlightactivity April 2015", or simply "floodlightactivity 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "floodlightactivity" will match objects with name "my floodlightactivity activity", "floodlightactivity 2015", or simply "floodlightactivity".
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -117,15 +91,11 @@ object ParamsResourceFloodlightactivitiesList {
     
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setFloodlightActivityGroupIds(value: js.Array[String]): Self = StObject.set(x, "floodlightActivityGroupIds", value.asInstanceOf[js.Any])
     
     inline def setFloodlightActivityGroupIdsUndefined: Self = StObject.set(x, "floodlightActivityGroupIds", js.undefined)
     
-    inline def setFloodlightActivityGroupIdsVarargs(value: String*): Self = StObject.set(x, "floodlightActivityGroupIds", js.Array(value :_*))
+    inline def setFloodlightActivityGroupIdsVarargs(value: String*): Self = StObject.set(x, "floodlightActivityGroupIds", js.Array(value*))
     
     inline def setFloodlightActivityGroupName(value: String): Self = StObject.set(x, "floodlightActivityGroupName", value.asInstanceOf[js.Any])
     
@@ -147,7 +117,7 @@ object ParamsResourceFloodlightactivitiesList {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

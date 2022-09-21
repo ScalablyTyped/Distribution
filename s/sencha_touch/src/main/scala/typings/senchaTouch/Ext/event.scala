@@ -17,12 +17,12 @@ object event {
     /** [Method] Returns the value of publishers
       * @returns Object
       */
-    var getPublishers: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getPublishers: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of publishers
       * @param publishers Object The new value.
       */
-    var setPublishers: js.UndefOr[js.Function1[/* publishers */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setPublishers: js.UndefOr[js.Function1[/* publishers */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IDispatcher {
     
@@ -33,11 +33,11 @@ object event {
     
     extension [Self <: IDispatcher](x: Self) {
       
-      inline def setGetPublishers(value: () => js.Any): Self = StObject.set(x, "getPublishers", js.Any.fromFunction0(value))
+      inline def setGetPublishers(value: () => Any): Self = StObject.set(x, "getPublishers", js.Any.fromFunction0(value))
       
       inline def setGetPublishersUndefined: Self = StObject.set(x, "getPublishers", js.undefined)
       
-      inline def setSetPublishers(value: /* publishers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPublishers", js.Any.fromFunction1(value))
+      inline def setSetPublishers(value: /* publishers */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPublishers", js.Any.fromFunction1(value))
       
       inline def setSetPublishersUndefined: Self = StObject.set(x, "setPublishers", js.undefined)
     }
@@ -67,7 +67,7 @@ object event {
     var getTarget: js.UndefOr[
         js.Function3[
           /* selector */ js.UndefOr[java.lang.String], 
-          /* maxDepth */ js.UndefOr[js.Any], 
+          /* maxDepth */ js.UndefOr[Any], 
           /* returnEl */ js.UndefOr[Boolean], 
           HTMLElement
         ]
@@ -76,7 +76,7 @@ object event {
     /** [Method] Returns the time of the event
       * @returns Date
       */
-    var getTime: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTime: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Gets the X and Y coordinates of the event
       * @returns Array
@@ -117,12 +117,12 @@ object event {
       inline def setGetPageYUndefined: Self = StObject.set(x, "getPageY", js.undefined)
       
       inline def setGetTarget(
-        value: (/* selector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement
+        value: (/* selector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement
       ): Self = StObject.set(x, "getTarget", js.Any.fromFunction3(value))
       
       inline def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
       
-      inline def setGetTime(value: () => js.Any): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+      inline def setGetTime(value: () => Any): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
       
       inline def setGetTimeUndefined: Self = StObject.set(x, "getTime", js.undefined)
       
@@ -249,7 +249,7 @@ object event {
       /** [Method] Returns the value of recognizers
         * @returns Object
         */
-      var getRecognizers: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getRecognizers: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Sets the value of moveThrottle
         * @param moveThrottle Number The new value.
@@ -259,7 +259,7 @@ object event {
       /** [Method] Sets the value of recognizers
         * @param recognizers Object The new value.
         */
-      var setRecognizers: js.UndefOr[js.Function1[/* recognizers */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setRecognizers: js.UndefOr[js.Function1[/* recognizers */ js.UndefOr[Any], Unit]] = js.undefined
     }
     object ITouchGesture {
       
@@ -274,7 +274,7 @@ object event {
         
         inline def setGetMoveThrottleUndefined: Self = StObject.set(x, "getMoveThrottle", js.undefined)
         
-        inline def setGetRecognizers(value: () => js.Any): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
+        inline def setGetRecognizers(value: () => Any): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
         
         inline def setGetRecognizersUndefined: Self = StObject.set(x, "getRecognizers", js.undefined)
         
@@ -282,7 +282,7 @@ object event {
         
         inline def setSetMoveThrottleUndefined: Self = StObject.set(x, "setMoveThrottle", js.undefined)
         
-        inline def setSetRecognizers(value: /* recognizers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRecognizers", js.Any.fromFunction1(value))
+        inline def setSetRecognizers(value: /* recognizers */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setRecognizers", js.Any.fromFunction1(value))
         
         inline def setSetRecognizersUndefined: Self = StObject.set(x, "setRecognizers", js.undefined)
       }
@@ -421,7 +421,7 @@ object event {
       /** [Method] Returns the value of callbackScope
         * @returns Object
         */
-      var getCallbackScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getCallbackScope: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Retrieves the id of this component
         * @returns String id
@@ -432,27 +432,27 @@ object event {
       /** [Method] Returns the value of onFailed
         * @returns Object
         */
-      var getOnFailed: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getOnFailed: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of onRecognized
         * @returns Object
         */
-      var getOnRecognized: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getOnRecognized: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Sets the value of callbackScope
         * @param callbackScope Object The new value.
         */
-      var setCallbackScope: js.UndefOr[js.Function1[/* callbackScope */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setCallbackScope: js.UndefOr[js.Function1[/* callbackScope */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of onFailed
         * @param onFailed Object The new value.
         */
-      var setOnFailed: js.UndefOr[js.Function1[/* onFailed */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setOnFailed: js.UndefOr[js.Function1[/* onFailed */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of onRecognized
         * @param onRecognized Object The new value.
         */
-      var setOnRecognized: js.UndefOr[js.Function1[/* onRecognized */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setOnRecognized: js.UndefOr[js.Function1[/* onRecognized */ js.UndefOr[Any], Unit]] = js.undefined
     }
     object IRecognizer {
       
@@ -463,7 +463,7 @@ object event {
       
       extension [Self <: IRecognizer](x: Self) {
         
-        inline def setGetCallbackScope(value: () => js.Any): Self = StObject.set(x, "getCallbackScope", js.Any.fromFunction0(value))
+        inline def setGetCallbackScope(value: () => Any): Self = StObject.set(x, "getCallbackScope", js.Any.fromFunction0(value))
         
         inline def setGetCallbackScopeUndefined: Self = StObject.set(x, "getCallbackScope", js.undefined)
         
@@ -471,23 +471,23 @@ object event {
         
         inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
         
-        inline def setGetOnFailed(value: () => js.Any): Self = StObject.set(x, "getOnFailed", js.Any.fromFunction0(value))
+        inline def setGetOnFailed(value: () => Any): Self = StObject.set(x, "getOnFailed", js.Any.fromFunction0(value))
         
         inline def setGetOnFailedUndefined: Self = StObject.set(x, "getOnFailed", js.undefined)
         
-        inline def setGetOnRecognized(value: () => js.Any): Self = StObject.set(x, "getOnRecognized", js.Any.fromFunction0(value))
+        inline def setGetOnRecognized(value: () => Any): Self = StObject.set(x, "getOnRecognized", js.Any.fromFunction0(value))
         
         inline def setGetOnRecognizedUndefined: Self = StObject.set(x, "getOnRecognized", js.undefined)
         
-        inline def setSetCallbackScope(value: /* callbackScope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallbackScope", js.Any.fromFunction1(value))
+        inline def setSetCallbackScope(value: /* callbackScope */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCallbackScope", js.Any.fromFunction1(value))
         
         inline def setSetCallbackScopeUndefined: Self = StObject.set(x, "setCallbackScope", js.undefined)
         
-        inline def setSetOnFailed(value: /* onFailed */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnFailed", js.Any.fromFunction1(value))
+        inline def setSetOnFailed(value: /* onFailed */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setOnFailed", js.Any.fromFunction1(value))
         
         inline def setSetOnFailedUndefined: Self = StObject.set(x, "setOnFailed", js.undefined)
         
-        inline def setSetOnRecognized(value: /* onRecognized */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnRecognized", js.Any.fromFunction1(value))
+        inline def setSetOnRecognized(value: /* onRecognized */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setOnRecognized", js.Any.fromFunction1(value))
         
         inline def setSetOnRecognizedUndefined: Self = StObject.set(x, "setOnRecognized", js.undefined)
       }

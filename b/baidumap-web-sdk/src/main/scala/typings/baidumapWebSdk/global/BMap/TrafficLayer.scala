@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.TrafficLayer")
 @js.native
-class TrafficLayer ()
+open class TrafficLayer ()
   extends StObject
      with typings.baidumapWebSdk.BMap.TileLayer {
   def this(opts: TrafficLayerOptions) = this()

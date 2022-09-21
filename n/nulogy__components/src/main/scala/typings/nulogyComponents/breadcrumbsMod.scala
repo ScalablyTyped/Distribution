@@ -8,5 +8,5 @@ object breadcrumbsMod {
   
   @JSImport("@nulogy/components/src/Breadcrumbs", "Breadcrumbs")
   @js.native
-  val Breadcrumbs: js.Any = js.native
+  val Breadcrumbs: Any = js.native
 }

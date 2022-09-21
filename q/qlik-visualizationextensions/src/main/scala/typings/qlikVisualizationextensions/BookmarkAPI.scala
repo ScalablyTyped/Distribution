@@ -16,7 +16,7 @@ object BookmarkAPI {
       * @return - A promise of a Qlik engine reply.
       */
     @JSName("apply")
-    def apply(id: String): IPromise[js.Any] = js.native
+    def apply(id: String): IPromise[Any] = js.native
     
     /**
       * Creates a bookmark based on the current selection.
@@ -25,14 +25,14 @@ object BookmarkAPI {
       * @param [sheetId] - Optional. Bookmark sheet id. Introduced in version 2.2.
       * @return - A promise of a Qlik engine reply.
       */
-    def create(title: String, description: String): IPromise[js.Any] = js.native
-    def create(title: String, description: String, sheetId: String): IPromise[js.Any] = js.native
+    def create(title: String, description: String): IPromise[Any] = js.native
+    def create(title: String, description: String, sheetId: String): IPromise[Any] = js.native
     
     /**
       * Removes a bookmark.
       * @param id - Bookmark id.
       * @return - A promise of a Qlik engine reply.
       */
-    def remove(id: String): IPromise[js.Any] = js.native
+    def remove(id: String): IPromise[Any] = js.native
   }
 }

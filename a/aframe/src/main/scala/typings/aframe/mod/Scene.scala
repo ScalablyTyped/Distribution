@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Scene
   extends StObject
-     with Entity[ObjectMap[Component[js.Any, System[js.Any]]]] {
+     with Entity[ObjectMap[Component[Any, System[Any]]]] {
   
   def addEventListener(`type`: SceneEvents, listener: EventListener): Unit = js.native
   def addEventListener(`type`: SceneEvents, listener: EventListener, useCapture: Boolean): Unit = js.native
@@ -22,7 +22,7 @@ trait Scene
   
   var canvas: HTMLCanvasElement = js.native
   
-  var effect: js.UndefOr[js.Any] = js.native
+  var effect: js.UndefOr[Any] = js.native
   
   def enterVR(): js.Promise[Unit] | Unit = js.native
   
@@ -40,7 +40,7 @@ trait Scene
   var renderer: WebGLRenderer = js.native
   
   // THREE.VREffect
-  var systems: ObjectMap[System[js.Any]] = js.native
+  var systems: ObjectMap[System[Any]] = js.native
   
   var time: Double = js.native
 }

@@ -27,49 +27,49 @@ trait LensRenderingPipeline
     */
   var LensDepthOfFieldEffect: String = js.native
   
-  /* private */ var _blurNoise: js.Any = js.native
+  /* private */ var _blurNoise: Any = js.native
   
-  /* private */ var _chromaticAberration: js.Any = js.native
+  /* private */ var _chromaticAberration: Any = js.native
   
-  /* private */ var _chromaticAberrationPostProcess: js.Any = js.native
+  /* private */ var _chromaticAberrationPostProcess: Any = js.native
   
-  /* private */ var _createChromaticAberrationPostProcess: js.Any = js.native
+  /* private */ var _createChromaticAberrationPostProcess: Any = js.native
   
-  /* private */ var _createDepthOfFieldPostProcess: js.Any = js.native
+  /* private */ var _createDepthOfFieldPostProcess: Any = js.native
   
-  /* private */ var _createGrainTexture: js.Any = js.native
+  /* private */ var _createGrainTexture: Any = js.native
   
-  /* private */ var _createHighlightsPostProcess: js.Any = js.native
+  /* private */ var _createHighlightsPostProcess: Any = js.native
   
-  /* private */ var _depthOfFieldPostProcess: js.Any = js.native
+  /* private */ var _depthOfFieldPostProcess: Any = js.native
   
-  /* private */ var _depthTexture: js.Any = js.native
+  /* private */ var _depthTexture: Any = js.native
   
-  /* private */ var _distortion: js.Any = js.native
+  /* private */ var _distortion: Any = js.native
   
-  /* private */ var _dofAperture: js.Any = js.native
+  /* private */ var _dofAperture: Any = js.native
   
-  /* private */ var _dofDarken: js.Any = js.native
+  /* private */ var _dofDarken: Any = js.native
   
-  /* private */ var _dofDistance: js.Any = js.native
+  /* private */ var _dofDistance: Any = js.native
   
-  /* private */ var _dofPentagon: js.Any = js.native
+  /* private */ var _dofPentagon: Any = js.native
   
-  /* private */ var _edgeBlur: js.Any = js.native
+  /* private */ var _edgeBlur: Any = js.native
   
-  /* private */ var _grainAmount: js.Any = js.native
+  /* private */ var _grainAmount: Any = js.native
   
-  /* private */ var _grainTexture: js.Any = js.native
+  /* private */ var _grainTexture: Any = js.native
   
-  /* private */ var _highlightsGain: js.Any = js.native
+  /* private */ var _highlightsGain: Any = js.native
   
-  /* private */ var _highlightsPostProcess: js.Any = js.native
+  /* private */ var _highlightsPostProcess: Any = js.native
   
-  /* private */ var _highlightsThreshold: js.Any = js.native
+  /* private */ var _highlightsThreshold: Any = js.native
   
-  /* private */ var _pentagonBokehIsEnabled: js.Any = js.native
+  /* private */ var _pentagonBokehIsEnabled: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /**
     * Gets or sets a boolean indicating if blur noise is enabled
@@ -231,7 +231,7 @@ trait LensRenderingPipeline
   def setFocusDistance(amount: Double): Unit = js.native
   
   /**
-    * Sets the amout of grain
+    * Sets the amount of grain
     * @param amount Amount of grain
     */
   def setGrainAmount(amount: Double): Unit = js.native

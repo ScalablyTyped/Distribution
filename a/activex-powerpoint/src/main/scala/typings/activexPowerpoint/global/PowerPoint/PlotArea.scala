@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PlotArea")
 @js.native
-/* private */ class PlotArea ()
+/* private */ open class PlotArea ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PlotArea {
   
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Border: typings.activexPowerpoint.PowerPoint.ChartBorder = js.native
   
   /* CompleteClass */
-  override def ClearFormats(): js.Any = js.native
+  override def ClearFormats(): Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Position: XlChartElementPosition = js.native
@@ -64,7 +64,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PowerPointDotPlotArea_typekey: typings.activexPowerpoint.PowerPoint.PlotArea = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
   
   /* CompleteClass */
   var Top: Double = js.native

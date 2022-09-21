@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VectorSourceImpl
   extends StObject
      with VectorSource
-     with AnySourceImpl {
+     with _AnySourceImpl {
   
   /**
     * Sets the source `tiles` property and re-renders the map.

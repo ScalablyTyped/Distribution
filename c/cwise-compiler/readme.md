@@ -10,15 +10,12 @@ cwise's internal compiler
 | ------------------ | :-------------: |
 | Full name          | cwise-compiler |
 | Keywords           | cwise, ndarray, compiler |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 11184032 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1665083.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/scijs/cwise-compiler#readme)
-- [Bugs](https://github.com/scijs/cwise-compiler/issues)
-- [Repository](https://github.com/scijs/cwise-compiler)
 - [Npm](https://www.npmjs.com/package/cwise-compiler)
     
 

@@ -21,6 +21,14 @@ object PointerInput extends StObject {
   
   /* 3 */ val MiddleClick: typings.babylonjs.deviceEnumsMod.PointerInput.MiddleClick & Double = js.native
   
+  /* 7 */ val MouseWheelX: typings.babylonjs.deviceEnumsMod.PointerInput.MouseWheelX & Double = js.native
+  
+  /* 8 */ val MouseWheelY: typings.babylonjs.deviceEnumsMod.PointerInput.MouseWheelY & Double = js.native
+  
+  /* 9 */ val MouseWheelZ: typings.babylonjs.deviceEnumsMod.PointerInput.MouseWheelZ & Double = js.native
+  
+  /* 12 */ val Move: typings.babylonjs.deviceEnumsMod.PointerInput.Move & Double = js.native
+  
   /* 4 */ val RightClick: typings.babylonjs.deviceEnumsMod.PointerInput.RightClick & Double = js.native
   
   /* 1 */ val Vertical: typings.babylonjs.deviceEnumsMod.PointerInput.Vertical & Double = js.native

@@ -10,10 +10,10 @@ The lodash method `_.deburr` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.deburr |
 | Keywords           | lodash-modularized, deburr |
-| # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 17092820 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4048187.6666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

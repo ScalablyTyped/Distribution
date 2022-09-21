@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SaveResult extends StObject {
   
+  var errors: js.UndefOr[SaveError | js.Array[SaveError]] = js.undefined
+  
   var fullName: String
   
   var success: Boolean
@@ -18,6 +20,12 @@ object SaveResult {
   }
   
   extension [Self <: SaveResult](x: Self) {
+    
+    inline def setErrors(value: SaveError | js.Array[SaveError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    
+    inline def setErrorsVarargs(value: SaveError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     

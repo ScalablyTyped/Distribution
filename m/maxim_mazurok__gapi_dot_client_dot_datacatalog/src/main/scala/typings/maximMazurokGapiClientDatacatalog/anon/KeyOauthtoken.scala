@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatacatalog.anon
 
-import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1PolicyTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ trait KeyOauthtoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the taxonomy that the policy tag will belong to. */
+  /** Required. The name of the project and the template location [region](https://cloud.google.com/data-catalog/docs/concepts/regions). */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -38,8 +37,11 @@ trait KeyOauthtoken extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: GoogleCloudDatacatalogV1beta1PolicyTag
+  /**
+    * Required. The ID of the tag template to create. The ID must contain only lowercase letters (a-z), numbers (0-9), or underscores (_), and must start with a letter or underscore.
+    * The maximum size is 64 bytes when encoded in UTF-8.
+    */
+  var tagTemplateId: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +51,8 @@ trait KeyOauthtoken extends StObject {
 }
 object KeyOauthtoken {
   
-  inline def apply(parent: String, resource: GoogleCloudDatacatalogV1beta1PolicyTag): KeyOauthtoken = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(parent: String): KeyOauthtoken = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtoken]
   }
   
@@ -94,7 +96,9 @@ object KeyOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleCloudDatacatalogV1beta1PolicyTag): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setTagTemplateId(value: String): Self = StObject.set(x, "tagTemplateId", value.asInstanceOf[js.Any])
+    
+    inline def setTagTemplateIdUndefined: Self = StObject.set(x, "tagTemplateId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

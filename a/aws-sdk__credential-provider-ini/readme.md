@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-provider-ini
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 AWS credential provider that sources credentials from ~/.aws/credentials and ~/.aws/config
@@ -10,10 +10,10 @@ AWS credential provider that sources credentials from ~/.aws/credentials and ~/.
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-ini |
 | Keywords           | aws, credentials |
-| # releases         | 42 |
-| # dependents       | 8 |
-| # downloads        | 7065917 |
-| # stars            | 0 |
+| # releases         | 109 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5463984666666666E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/credential-provider-ini)

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("orientjs", "OSequence")
 @js.native
-class OSequence () extends StObject {
+open class OSequence () extends StObject {
   
   var cache: js.UndefOr[Double] = js.native
   
@@ -24,22 +24,6 @@ class OSequence () extends StObject {
     */
   def cacheData(sequences: js.Array[OSequence]): ODB = js.native
   
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: Double, incerement: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: Double, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: Double, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: Unit, incerement: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: Unit, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_CACHED(name: String, `type`: CACHED, start: Unit, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
   /**
     * Create a new sequence.
     *
@@ -50,22 +34,14 @@ class OSequence () extends StObject {
     * @param  cache     The cache number
     * @promise {Object}                The created sequence object
     */
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: Double, incerement: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: Double, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: Double, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: Unit, incerement: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: Unit, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
-  @JSName("create")
-  def create_ORDERED(name: String, `type`: ORDERED, start: Unit, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
+  def create(name: String, `type`: ORDERED | CACHED): js.Promise[OSequence] = js.native
+  def create(name: String, `type`: ORDERED | CACHED, start: Double): js.Promise[OSequence] = js.native
+  def create(name: String, `type`: ORDERED | CACHED, start: Double, incerement: Double): js.Promise[OSequence] = js.native
+  def create(name: String, `type`: ORDERED | CACHED, start: Double, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  def create(name: String, `type`: ORDERED | CACHED, start: Double, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
+  def create(name: String, `type`: ORDERED | CACHED, start: Unit, incerement: Double): js.Promise[OSequence] = js.native
+  def create(name: String, `type`: ORDERED | CACHED, start: Unit, incerement: Double, cache: Double): js.Promise[OSequence] = js.native
+  def create(name: String, `type`: ORDERED | CACHED, start: Unit, incerement: Unit, cache: Double): js.Promise[OSequence] = js.native
   
   var db: js.UndefOr[ODB] = js.native
   

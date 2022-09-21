@@ -11,17 +11,23 @@ sealed trait WindingOrder extends StObject
 object WindingOrder extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WindingOrder & Double] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[WindingOrder & scala.Nothing] = js.native
   
+  /**
+    * Vertices are in clockwise order.
+    */
   @js.native
   sealed trait CLOCKWISE
     extends StObject
        with WindingOrder
-  /* 0 */ val CLOCKWISE: typings.cesium.mod.WindingOrder.CLOCKWISE & Double = js.native
+  /* WebGLConstants.CW */ val CLOCKWISE: typings.cesium.mod.WindingOrder.CLOCKWISE & scala.Nothing = js.native
   
+  /**
+    * Vertices are in counter-clockwise order.
+    */
   @js.native
   sealed trait COUNTER_CLOCKWISE
     extends StObject
        with WindingOrder
-  /* 1 */ val COUNTER_CLOCKWISE: typings.cesium.mod.WindingOrder.COUNTER_CLOCKWISE & Double = js.native
+  /* WebGLConstants.CCW */ val COUNTER_CLOCKWISE: typings.cesium.mod.WindingOrder.COUNTER_CLOCKWISE & scala.Nothing = js.native
 }

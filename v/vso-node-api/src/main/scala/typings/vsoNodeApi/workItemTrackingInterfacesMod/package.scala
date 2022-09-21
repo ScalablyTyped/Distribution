@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ReportingWorkItemLinksBatch = typings.vsoNodeApi.workItemTrackingInterfacesMod.StreamedBatch[typings.vsoNodeApi.workItemTrackingInterfacesMod.ReportingWorkItemLink]
+type ReportingWorkItemLinksBatch = StreamedBatch[ReportingWorkItemLink]
 
-type ReportingWorkItemRevisionsBatch = typings.vsoNodeApi.workItemTrackingInterfacesMod.StreamedBatch[typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItem]
+type ReportingWorkItemRevisionsBatch = StreamedBatch[WorkItem]
 
-type WorkItemRelation = typings.vsoNodeApi.workItemTrackingInterfacesMod.Link
+type WorkItemRelation = Link

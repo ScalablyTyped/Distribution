@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request message for the text annotation API, which can perform multiple
-  * analysis types (sentiment, entities, and syntax) in one call.
-  */
 trait SchemaAnnotateTextRequest extends StObject {
   
   /**
@@ -18,7 +14,7 @@ trait SchemaAnnotateTextRequest extends StObject {
   /**
     * The encoding type used by the API to calculate offsets.
     */
-  var encodingType: js.UndefOr[String] = js.undefined
+  var encodingType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The enabled features.
@@ -39,6 +35,8 @@ object SchemaAnnotateTextRequest {
     inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     inline def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingTypeNull: Self = StObject.set(x, "encodingType", null)
     
     inline def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
     

@@ -12,7 +12,7 @@ trait Chat extends StObject {
   
   var id: String
   
-  var mentions: js.Array[js.Any]
+  var mentions: js.Array[Any]
   
   var message: String
   
@@ -27,7 +27,7 @@ object Chat {
   inline def apply(
     from: User,
     id: String,
-    mentions: js.Array[js.Any],
+    mentions: js.Array[Any],
     message: String,
     muted: Boolean,
     raw: RawChatMessage,
@@ -44,9 +44,9 @@ object Chat {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setMentions(value: js.Array[js.Any]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
+    inline def setMentions(value: js.Array[Any]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
-    inline def setMentionsVarargs(value: js.Any*): Self = StObject.set(x, "mentions", js.Array(value :_*))
+    inline def setMentionsVarargs(value: Any*): Self = StObject.set(x, "mentions", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

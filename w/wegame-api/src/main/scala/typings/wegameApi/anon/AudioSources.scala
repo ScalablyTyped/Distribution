@@ -23,6 +23,6 @@ object AudioSources {
     
     inline def setAudioSources(value: js.Array[AudioSourceType]): Self = StObject.set(x, "audioSources", value.asInstanceOf[js.Any])
     
-    inline def setAudioSourcesVarargs(value: AudioSourceType*): Self = StObject.set(x, "audioSources", js.Array(value :_*))
+    inline def setAudioSourcesVarargs(value: AudioSourceType*): Self = StObject.set(x, "audioSources", js.Array(value*))
   }
 }

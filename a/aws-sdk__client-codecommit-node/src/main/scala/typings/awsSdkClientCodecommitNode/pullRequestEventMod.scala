@@ -8,5 +8,5 @@ object pullRequestEventMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_PullRequestEvent", "_PullRequestEvent")
   @js.native
-  val PullRequestEvent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PullRequestEvent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -29,7 +29,7 @@ object DescribeOutboundCrossClusterSearchConnectionsResponse {
     
     inline def setCrossClusterSearchConnectionsUndefined: Self = StObject.set(x, "CrossClusterSearchConnections", js.undefined)
     
-    inline def setCrossClusterSearchConnectionsVarargs(value: OutboundCrossClusterSearchConnection*): Self = StObject.set(x, "CrossClusterSearchConnections", js.Array(value :_*))
+    inline def setCrossClusterSearchConnectionsVarargs(value: OutboundCrossClusterSearchConnection*): Self = StObject.set(x, "CrossClusterSearchConnections", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

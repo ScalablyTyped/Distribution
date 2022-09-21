@@ -60,7 +60,7 @@ object ResultProvenance {
     
     inline def setConversionSourcesUndefined: Self = StObject.set(x, "conversionSources", js.undefined)
     
-    inline def setConversionSourcesVarargs(value: PhysicalLocation*): Self = StObject.set(x, "conversionSources", js.Array(value :_*))
+    inline def setConversionSourcesVarargs(value: PhysicalLocation*): Self = StObject.set(x, "conversionSources", js.Array(value*))
     
     inline def setFirstDetectionRunGuid(value: String): Self = StObject.set(x, "firstDetectionRunGuid", value.asInstanceOf[js.Any])
     

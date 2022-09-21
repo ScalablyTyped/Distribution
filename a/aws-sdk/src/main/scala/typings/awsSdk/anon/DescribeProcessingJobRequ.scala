@@ -13,7 +13,7 @@ trait DescribeProcessingJobRequ extends StObject {
   var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
-    * The name of the processing job. The name must be unique within an AWS Region in the AWS account.
+    * The name of the processing job. The name must be unique within an Amazon Web Services Region in the Amazon Web Services account.
     */
   var ProcessingJobName: typings.awsSdk.sagemakerMod.ProcessingJobName
 }

@@ -22,6 +22,6 @@ object PushNodesByBackendIdsToFrontendRequest {
     
     inline def setBackendNodeIds(value: js.Array[BackendNodeId]): Self = StObject.set(x, "backendNodeIds", value.asInstanceOf[js.Any])
     
-    inline def setBackendNodeIdsVarargs(value: BackendNodeId*): Self = StObject.set(x, "backendNodeIds", js.Array(value :_*))
+    inline def setBackendNodeIdsVarargs(value: BackendNodeId*): Self = StObject.set(x, "backendNodeIds", js.Array(value*))
   }
 }

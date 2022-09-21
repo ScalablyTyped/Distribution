@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorTableCellPropertiesDialog")
 @js.native
-class ASPxClientHtmlEditorTableCellPropertiesDialog ()
+open class ASPxClientHtmlEditorTableCellPropertiesDialog ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorTableCellPropertiesDialog {
   

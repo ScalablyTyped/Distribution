@@ -14,7 +14,7 @@ trait TypeofWebGLUniforms
   extends StObject
      with Instantiable2[/* gl */ WebGLRenderingContext, /* program */ WebGLProgram, WebGLUniforms] {
   
-  def seqWithValue(seq: js.Any, values: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def seqWithValue(seq: Any, values: js.Array[Any]): js.Array[Any] = js.native
   
-  def upload(gl: WebGLRenderingContext, seq: js.Any, values: js.Array[js.Any], textures: WebGLTextures): Unit = js.native
+  def upload(gl: WebGLRenderingContext, seq: Any, values: js.Array[Any], textures: WebGLTextures): Unit = js.native
 }

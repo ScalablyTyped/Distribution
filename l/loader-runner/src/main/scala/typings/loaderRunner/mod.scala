@@ -1,8 +1,7 @@
 package typings.loaderRunner
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,11 @@ object mod {
   
   inline def runLoaders(
     options: RunLoaderOption,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ RunLoaderResult, js.Any]
+    callback: js.Function2[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* result */ RunLoaderResult, 
+      Any
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runLoaders")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ExtendedLoaderContext extends StObject {
@@ -38,7 +41,7 @@ object mod {
     
     var currentRequest: String
     
-    var data: js.Any
+    var data: Any
     
     def dependency(file: String): Unit
     
@@ -52,7 +55,7 @@ object mod {
     
     var previousRequest: String
     
-    var query: StringDictionary[js.Any] | String
+    var query: StringDictionary[Any] | String
     
     var remainingRequest: String
     
@@ -72,14 +75,14 @@ object mod {
       cacheable: Boolean => Unit,
       clearDependencies: () => Unit,
       currentRequest: String,
-      data: js.Any,
+      data: Any,
       dependency: String => Unit,
       getContextDependencies: () => js.Array[String],
       getDependencies: () => js.Array[String],
       loaderIndex: Double,
       loaders: js.Array[Loader],
       previousRequest: String,
-      query: StringDictionary[js.Any] | String,
+      query: StringDictionary[Any] | String,
       remainingRequest: String,
       request: String,
       resource: String
@@ -112,7 +115,7 @@ object mod {
       
       inline def setCurrentRequest(value: String): Self = StObject.set(x, "currentRequest", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDependency(value: String => Unit): Self = StObject.set(x, "dependency", js.Any.fromFunction1(value))
       
@@ -124,11 +127,11 @@ object mod {
       
       inline def setLoaders(value: js.Array[Loader]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
-      inline def setLoadersVarargs(value: Loader*): Self = StObject.set(x, "loaders", js.Array(value :_*))
+      inline def setLoadersVarargs(value: Loader*): Self = StObject.set(x, "loaders", js.Array(value*))
       
       inline def setPreviousRequest(value: String): Self = StObject.set(x, "previousRequest", value.asInstanceOf[js.Any])
       
-      inline def setQuery(value: StringDictionary[js.Any] | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringDictionary[Any] | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setRemainingRequest(value: String): Self = StObject.set(x, "remainingRequest", value.asInstanceOf[js.Any])
       
@@ -148,13 +151,13 @@ object mod {
   
   trait Loader extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var normal: Null | (js.Function1[/* request */ String, String])
     
     var normalExecuted: Boolean
     
-    var options: js.Any
+    var options: Any
     
     var path: String
     
@@ -171,9 +174,9 @@ object mod {
   object Loader {
     
     inline def apply(
-      data: js.Any,
+      data: Any,
       normalExecuted: Boolean,
-      options: js.Any,
+      options: Any,
       path: String,
       pitchExecuted: Boolean,
       query: String,
@@ -186,7 +189,7 @@ object mod {
     
     extension [Self <: Loader](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setNormal(value: /* request */ String => String): Self = StObject.set(x, "normal", js.Any.fromFunction1(value))
       
@@ -194,7 +197,7 @@ object mod {
       
       inline def setNormalNull: Self = StObject.set(x, "normal", null)
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -214,13 +217,17 @@ object mod {
   
   trait RunLoaderOption extends StObject {
     
-    var context: js.Any
+    var context: Any
     
-    var loaders: js.Array[js.Any]
+    var loaders: js.Array[Any]
     
     def readResource(
       filename: String,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* data */ Buffer | Null, 
+          Unit
+        ]
     ): Unit
     
     var resource: String
@@ -228,9 +235,13 @@ object mod {
   object RunLoaderOption {
     
     inline def apply(
-      context: js.Any,
-      loaders: js.Array[js.Any],
-      readResource: (String, js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]) => Unit,
+      context: Any,
+      loaders: js.Array[Any],
+      readResource: (String, js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* data */ Buffer | Null, 
+          Unit
+        ]) => Unit,
       resource: String
     ): RunLoaderOption = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], readResource = js.Any.fromFunction2(readResource), resource = resource.asInstanceOf[js.Any])
@@ -239,14 +250,18 @@ object mod {
     
     extension [Self <: RunLoaderOption](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setLoaders(value: js.Array[js.Any]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
+      inline def setLoaders(value: js.Array[Any]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
-      inline def setLoadersVarargs(value: js.Any*): Self = StObject.set(x, "loaders", js.Array(value :_*))
+      inline def setLoadersVarargs(value: Any*): Self = StObject.set(x, "loaders", js.Array(value*))
       
       inline def setReadResource(
-        value: (String, js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]) => Unit
+        value: (String, js.Function2[
+              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+              /* data */ Buffer | Null, 
+              Unit
+            ]) => Unit
       ): Self = StObject.set(x, "readResource", js.Any.fromFunction2(value))
       
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
@@ -278,11 +293,11 @@ object mod {
       
       inline def setContextDependencies(value: js.Array[String]): Self = StObject.set(x, "contextDependencies", value.asInstanceOf[js.Any])
       
-      inline def setContextDependenciesVarargs(value: String*): Self = StObject.set(x, "contextDependencies", js.Array(value :_*))
+      inline def setContextDependenciesVarargs(value: String*): Self = StObject.set(x, "contextDependencies", js.Array(value*))
       
       inline def setFileDependencies(value: js.Array[String]): Self = StObject.set(x, "fileDependencies", value.asInstanceOf[js.Any])
       
-      inline def setFileDependenciesVarargs(value: String*): Self = StObject.set(x, "fileDependencies", js.Array(value :_*))
+      inline def setFileDependenciesVarargs(value: String*): Self = StObject.set(x, "fileDependencies", js.Array(value*))
       
       inline def setResourceBuffer(value: Buffer): Self = StObject.set(x, "resourceBuffer", value.asInstanceOf[js.Any])
       
@@ -294,7 +309,7 @@ object mod {
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setResultVarargs(value: (Buffer | Null)*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: (Buffer | Null)*): Self = StObject.set(x, "result", js.Array(value*))
     }
   }
 }

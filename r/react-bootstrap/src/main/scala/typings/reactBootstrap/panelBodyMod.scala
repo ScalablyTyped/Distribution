@@ -10,12 +10,10 @@ object panelBodyMod {
   
   @JSImport("react-bootstrap/lib/PanelBody", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PanelBodyProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PanelBodyProps, js.Object, Any]
   
-  @js.native
-  trait PanelBody
-    extends Component[PanelBodyProps, js.Object, js.Any]
+  type PanelBody = Component[PanelBodyProps, js.Object, Any]
   
   trait PanelBodyProps
     extends StObject

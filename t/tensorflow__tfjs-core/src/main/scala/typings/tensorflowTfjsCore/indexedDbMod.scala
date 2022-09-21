@@ -20,11 +20,11 @@ object indexedDbMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/io/indexed_db", "BrowserIndexedDBManager")
   @js.native
-  class BrowserIndexedDBManager ()
+  open class BrowserIndexedDBManager ()
     extends StObject
        with ModelStoreManager {
     
-    /* private */ var indexedDB: js.Any = js.native
+    /* private */ var indexedDB: Any = js.native
     
     /**
       * List all models in the model store.
@@ -50,7 +50,7 @@ object indexedDbMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/io/indexed_db", "BrowserIndexedDB")
   @js.native
-  class BrowserIndexedDB_ protected ()
+  open class BrowserIndexedDB_ protected ()
     extends StObject
        with IOHandler {
     def this(modelPath: String) = this()
@@ -69,7 +69,7 @@ object indexedDbMod {
       * @returns A `Promise` of `SaveResult`, if the action is put, or a `Promise`
       *   of `ModelArtifacts`, if the action is get.
       */
-    /* private */ var databaseAction: js.Any = js.native
+    /* private */ var databaseAction: Any = js.native
     
     /* protected */ val indexedDB: IDBFactory = js.native
     

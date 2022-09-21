@@ -1,120 +1,117 @@
 package typings.nivoLine
 
 import typings.nivoLine.mod.LineLayerType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nivoLineStrings {
-  @js.native
-  sealed trait areas extends LineLayerType
   
   @js.native
-  sealed trait axes extends LineLayerType
+  sealed trait areas
+    extends StObject
+       with LineLayerType
+  inline def areas: areas = "areas".asInstanceOf[areas]
   
   @js.native
-  sealed trait basis extends js.Object
+  sealed trait axes
+    extends StObject
+       with LineLayerType
+  inline def axes: axes = "axes".asInstanceOf[axes]
   
   @js.native
-  sealed trait cardinal extends js.Object
+  sealed trait basis extends StObject
+  inline def basis: basis = "basis".asInstanceOf[basis]
   
   @js.native
-  sealed trait catmullRom extends js.Object
+  sealed trait cardinal extends StObject
+  inline def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
   
   @js.native
-  sealed trait crosshair extends LineLayerType
+  sealed trait catmullRom extends StObject
+  inline def catmullRom: catmullRom = "catmullRom".asInstanceOf[catmullRom]
   
   @js.native
-  sealed trait grid extends LineLayerType
+  sealed trait crosshair
+    extends StObject
+       with LineLayerType
+  inline def crosshair: crosshair = "crosshair".asInstanceOf[crosshair]
   
   @js.native
-  sealed trait legends extends LineLayerType
+  sealed trait grid
+    extends StObject
+       with LineLayerType
+  inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait legends
+    extends StObject
+       with LineLayerType
+  inline def legends: legends = "legends".asInstanceOf[legends]
   
   @js.native
-  sealed trait lines extends LineLayerType
+  sealed trait linear extends StObject
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait markers extends LineLayerType
+  sealed trait lines
+    extends StObject
+       with LineLayerType
+  inline def lines: lines = "lines".asInstanceOf[lines]
   
   @js.native
-  sealed trait mesh extends LineLayerType
+  sealed trait markers
+    extends StObject
+       with LineLayerType
+  inline def markers: markers = "markers".asInstanceOf[markers]
   
   @js.native
-  sealed trait monotoneX extends js.Object
+  sealed trait mesh
+    extends StObject
+       with LineLayerType
+  inline def mesh: mesh = "mesh".asInstanceOf[mesh]
   
   @js.native
-  sealed trait monotoneY extends js.Object
+  sealed trait monotoneX extends StObject
+  inline def monotoneX: monotoneX = "monotoneX".asInstanceOf[monotoneX]
   
   @js.native
-  sealed trait natural extends js.Object
+  sealed trait monotoneY extends StObject
+  inline def monotoneY: monotoneY = "monotoneY".asInstanceOf[monotoneY]
   
   @js.native
-  sealed trait points extends LineLayerType
+  sealed trait natural extends StObject
+  inline def natural: natural = "natural".asInstanceOf[natural]
   
   @js.native
-  sealed trait slices extends LineLayerType
+  sealed trait points
+    extends StObject
+       with LineLayerType
+  inline def points: points = "points".asInstanceOf[points]
   
   @js.native
-  sealed trait step extends js.Object
+  sealed trait slices
+    extends StObject
+       with LineLayerType
+  inline def slices: slices = "slices".asInstanceOf[slices]
   
   @js.native
-  sealed trait stepAfter extends js.Object
+  sealed trait step extends StObject
+  inline def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait stepBefore extends js.Object
+  sealed trait stepAfter extends StObject
+  inline def stepAfter: stepAfter = "stepAfter".asInstanceOf[stepAfter]
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait stepBefore extends StObject
+  inline def stepBefore: stepBefore = "stepBefore".asInstanceOf[stepBefore]
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
   
-  @scala.inline
-  def areas: areas = "areas".asInstanceOf[areas]
-  @scala.inline
-  def axes: axes = "axes".asInstanceOf[axes]
-  @scala.inline
-  def basis: basis = "basis".asInstanceOf[basis]
-  @scala.inline
-  def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
-  @scala.inline
-  def catmullRom: catmullRom = "catmullRom".asInstanceOf[catmullRom]
-  @scala.inline
-  def crosshair: crosshair = "crosshair".asInstanceOf[crosshair]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def legends: legends = "legends".asInstanceOf[legends]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def lines: lines = "lines".asInstanceOf[lines]
-  @scala.inline
-  def markers: markers = "markers".asInstanceOf[markers]
-  @scala.inline
-  def mesh: mesh = "mesh".asInstanceOf[mesh]
-  @scala.inline
-  def monotoneX: monotoneX = "monotoneX".asInstanceOf[monotoneX]
-  @scala.inline
-  def monotoneY: monotoneY = "monotoneY".asInstanceOf[monotoneY]
-  @scala.inline
-  def natural: natural = "natural".asInstanceOf[natural]
-  @scala.inline
-  def points: points = "points".asInstanceOf[points]
-  @scala.inline
-  def slices: slices = "slices".asInstanceOf[slices]
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
-  @scala.inline
-  def stepAfter: stepAfter = "stepAfter".asInstanceOf[stepAfter]
-  @scala.inline
-  def stepBefore: stepBefore = "stepBefore".asInstanceOf[stepBefore]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  @js.native
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
 }
-

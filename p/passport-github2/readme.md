@@ -10,10 +10,10 @@ GitHub authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-github2 |
 | Keywords           | passport, github, auth, authn, authentication, identity |
-| # releases         | 2 |
-| # dependents       | 55 |
-| # downloads        | 841839 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 155989.0 |
+| # stars            | 228.0 |
 
 ## Links
 - [Homepage](https://github.com/cfsghost/passport-github#readme)

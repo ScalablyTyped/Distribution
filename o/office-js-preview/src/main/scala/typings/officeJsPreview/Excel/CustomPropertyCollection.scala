@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Contains the collection of custom properties.
   *
-  * Contains the collection of customProperty objects.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -24,12 +24,13 @@ trait CustomPropertyCollection
   /**
     * Creates a new or sets an existing custom property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @param key Required. The custom property's key, which is case-insensitive. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
     * @param value Required. The custom property's value. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
     */
-  def add(key: String, value: js.Any): CustomProperty = js.native
+  def add(key: String, value: Any): CustomProperty = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -38,6 +39,7 @@ trait CustomPropertyCollection
   /**
     * Deletes all custom properties in this collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   def deleteAll(): Unit = js.native
@@ -45,13 +47,15 @@ trait CustomPropertyCollection
   /**
     * Gets the count of custom properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
+    * Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does not exist.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @param key The key that identifies the custom property object.
@@ -59,8 +63,10 @@ trait CustomPropertyCollection
   def getItem(key: String): CustomProperty = js.native
   
   /**
-    * Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.
+    * Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @param key Required. The key that identifies the custom property object.

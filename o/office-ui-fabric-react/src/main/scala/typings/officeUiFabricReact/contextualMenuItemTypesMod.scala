@@ -39,7 +39,7 @@ object contextualMenuItemTypesMod {
       * If dismissAll is true, all menus will be closed.
       */
     var dismissMenu: js.UndefOr[
-        js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* ev */ js.UndefOr[Any], /* dismissAll */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /**
@@ -82,7 +82,7 @@ object contextualMenuItemTypesMod {
     /**
       * This prop will get set by ContextualMenu and can be called to open this item's subMenu, if present.
       */
-    var openSubMenu: js.UndefOr[js.Function2[/* item */ js.Any, /* target */ HTMLElement, Unit]] = js.undefined
+    var openSubMenu: js.UndefOr[js.Function2[/* item */ Any, /* target */ HTMLElement, Unit]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
@@ -111,7 +111,7 @@ object contextualMenuItemTypesMod {
       
       inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      inline def setDismissMenu(value: (/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "dismissMenu", js.Any.fromFunction2(value))
+      inline def setDismissMenu(value: (/* ev */ js.UndefOr[Any], /* dismissAll */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "dismissMenu", js.Any.fromFunction2(value))
       
       inline def setDismissMenuUndefined: Self = StObject.set(x, "dismissMenu", js.undefined)
       
@@ -137,7 +137,7 @@ object contextualMenuItemTypesMod {
       
       inline def setOnCheckmarkClickUndefined: Self = StObject.set(x, "onCheckmarkClick", js.undefined)
       
-      inline def setOpenSubMenu(value: (/* item */ js.Any, /* target */ HTMLElement) => Unit): Self = StObject.set(x, "openSubMenu", js.Any.fromFunction2(value))
+      inline def setOpenSubMenu(value: (/* item */ Any, /* target */ HTMLElement) => Unit): Self = StObject.set(x, "openSubMenu", js.Any.fromFunction2(value))
       
       inline def setOpenSubMenuUndefined: Self = StObject.set(x, "openSubMenu", js.undefined)
       
@@ -310,81 +310,57 @@ object contextualMenuItemTypesMod {
     /**
       * Styles for a menu item that is an anchor link.
       */
-    var anchorLink: IStyle
+    var anchorLink: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Default style for checkmark icons.
       */
-    var checkmarkIcon: IStyle
+    var checkmarkIcon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for a divider item of a ContextualMenu.
       */
-    var divider: IStyle
+    var divider: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Default icon color style for known icons.
       */
-    var iconColor: IStyle
-    
-    /**
-      * Styles for the icon element of a menu item.
-      */
-    @JSName("icon")
-    var icon_IContextualMenuItemStyles: IStyle
+    var iconColor: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for a menu item that is an anchor link.
       */
-    var item: IStyle
-    
-    /**
-      * Styles for the label of a menu item.
-      */
-    @JSName("label")
-    var label_IContextualMenuItemStyles: IStyle
+    var item: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for the content inside the button/link of the menuItem.
       */
-    var linkContent: IStyle
+    var linkContent: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for a menu item that is a link.
       */
-    var linkContentMenu: IStyle
-    
-    /**
-      * Style for the root element.
-      */
-    @JSName("root")
-    var root_IContextualMenuItemStyles: IStyle
-    
-    /**
-      * Styles for the secondary text of a menu item.
-      */
-    @JSName("secondaryText")
-    var secondaryText_IContextualMenuItemStyles: IStyle
+    var linkContentMenu: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for the container of a split menu item.
       */
-    var splitContainer: IStyle
+    var splitContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for the menu portion of a split menu item.
       */
-    var splitMenu: IStyle
+    var splitMenu: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for the primary portion of a split menu item.
       */
-    var splitPrimary: IStyle
+    var splitPrimary: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for the submenu icon of a menu item.
       */
-    var subMenuIcon: IStyle
+    var subMenuIcon: js.UndefOr[IStyle] = js.undefined
   }
   object IContextualMenuItemStyles {
     
@@ -413,29 +389,17 @@ object contextualMenuItemTypesMod {
       
       inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      inline def setIcon(value: IStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-      
       inline def setIconColor(value: IStyle): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
       
       inline def setIconColorNull: Self = StObject.set(x, "iconColor", null)
       
       inline def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
       
-      inline def setIconNull: Self = StObject.set(x, "icon", null)
-      
-      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
-      
       inline def setItem(value: IStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemNull: Self = StObject.set(x, "item", null)
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
-      
-      inline def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-      
-      inline def setLabelNull: Self = StObject.set(x, "label", null)
-      
-      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       inline def setLinkContent(value: IStyle): Self = StObject.set(x, "linkContent", value.asInstanceOf[js.Any])
       
@@ -448,18 +412,6 @@ object contextualMenuItemTypesMod {
       inline def setLinkContentNull: Self = StObject.set(x, "linkContent", null)
       
       inline def setLinkContentUndefined: Self = StObject.set(x, "linkContent", js.undefined)
-      
-      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
-      
-      inline def setRootNull: Self = StObject.set(x, "root", null)
-      
-      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
-      
-      inline def setSecondaryText(value: IStyle): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
-      
-      inline def setSecondaryTextNull: Self = StObject.set(x, "secondaryText", null)
-      
-      inline def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
       
       inline def setSplitContainer(value: IStyle): Self = StObject.set(x, "splitContainer", value.asInstanceOf[js.Any])
       

@@ -3,7 +3,6 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.flat
 import typings.arcgisJsApi.arcgisJsApiStrings.smooth
 import typings.arcgisJsApi.arcgisJsApiStrings.source
-import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait MeshComponent
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html#faces)
     */
-  var faces: Uint32Array = js.native
+  var faces: js.typedarray.Uint32Array = js.native
   
   /**
     * The material determines how the component is visualized.

@@ -21,7 +21,7 @@ object jasmine {
     /**
       * Verifies that a Promise is (or has been) rejected with the specified parameter.
       */
-    def toBeRejectedWith(value: js.Any): Boolean
+    def toBeRejectedWith(value: Any): Boolean
     
     /**
       * Verifies that a Promise is (or has been) resolved.
@@ -31,16 +31,16 @@ object jasmine {
     /**
       * Verifies that a Promise is (or has been) resolved with the specified parameter.
       */
-    def toBeResolvedWith(value: js.Any): Boolean
+    def toBeResolvedWith(value: Any): Boolean
   }
   object Matchers {
     
     inline def apply[T](
       toBePromise: () => Boolean,
       toBeRejected: () => Boolean,
-      toBeRejectedWith: js.Any => Boolean,
+      toBeRejectedWith: Any => Boolean,
       toBeResolved: () => Boolean,
-      toBeResolvedWith: js.Any => Boolean
+      toBeResolvedWith: Any => Boolean
     ): Matchers[T] = {
       val __obj = js.Dynamic.literal(toBePromise = js.Any.fromFunction0(toBePromise), toBeRejected = js.Any.fromFunction0(toBeRejected), toBeRejectedWith = js.Any.fromFunction1(toBeRejectedWith), toBeResolved = js.Any.fromFunction0(toBeResolved), toBeResolvedWith = js.Any.fromFunction1(toBeResolvedWith))
       __obj.asInstanceOf[Matchers[T]]
@@ -52,11 +52,11 @@ object jasmine {
       
       inline def setToBeRejected(value: () => Boolean): Self = StObject.set(x, "toBeRejected", js.Any.fromFunction0(value))
       
-      inline def setToBeRejectedWith(value: js.Any => Boolean): Self = StObject.set(x, "toBeRejectedWith", js.Any.fromFunction1(value))
+      inline def setToBeRejectedWith(value: Any => Boolean): Self = StObject.set(x, "toBeRejectedWith", js.Any.fromFunction1(value))
       
       inline def setToBeResolved(value: () => Boolean): Self = StObject.set(x, "toBeResolved", js.Any.fromFunction0(value))
       
-      inline def setToBeResolvedWith(value: js.Any => Boolean): Self = StObject.set(x, "toBeResolvedWith", js.Any.fromFunction1(value))
+      inline def setToBeResolvedWith(value: Any => Boolean): Self = StObject.set(x, "toBeResolvedWith", js.Any.fromFunction1(value))
     }
   }
 }

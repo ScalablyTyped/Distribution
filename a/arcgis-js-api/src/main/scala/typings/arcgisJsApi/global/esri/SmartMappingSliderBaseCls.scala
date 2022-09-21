@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.SmartMappingSliderBase")
 @js.native
-class SmartMappingSliderBaseCls ()
+/**
+  * The base class for all Smart Mapping slider widgets.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html)
+  */
+open class SmartMappingSliderBaseCls ()
   extends StObject
      with typings.arcgisJsApi.esri.SmartMappingSliderBase {
   def this(properties: SmartMappingSliderBaseProperties) = this()

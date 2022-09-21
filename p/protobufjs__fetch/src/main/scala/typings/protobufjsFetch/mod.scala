@@ -1,7 +1,5 @@
 package typings.protobufjsFetch
 
-import typings.std.Error
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +24,7 @@ object mod {
     * @returns {Promise<string|Uint8Array>} Promise
     * @variation 3
     */
-  inline def apply(path: String): js.Promise[String | Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Uint8Array]]
+  inline def apply(path: String): js.Promise[String | js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | js.typedarray.Uint8Array]]
   /**
     * Fetches the contents of a file.
     * @name util.fetch
@@ -37,7 +35,7 @@ object mod {
     * @variation 2
     */
   inline def apply(path: String, callback: FetchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(path: String, options: FetchOptions): js.Promise[String | Uint8Array] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Uint8Array]]
+  inline def apply(path: String, options: FetchOptions): js.Promise[String | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.Uint8Array]]
   
   @JSImport("@protobufjs/fetch", JSImport.Namespace)
   @js.native
@@ -51,7 +49,7 @@ object mod {
     * @param {string} [contents] File contents, if there hasn't been an error
     * @returns {undefined}
     */
-  type FetchCallback = js.Function2[/* error */ Error, /* contents */ js.UndefOr[String], Unit]
+  type FetchCallback = js.Function2[/* error */ js.Error, /* contents */ js.UndefOr[String], Unit]
   
   /**
     * Options as used by {@link util.fetch}.

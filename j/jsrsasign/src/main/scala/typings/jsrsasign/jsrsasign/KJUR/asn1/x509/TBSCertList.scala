@@ -102,7 +102,7 @@ object TBSCertList {
     setSignatureAlgByParam: NameParam => Unit,
     setThisUpdateByParam: StringParam => Unit
   ): TBSCertList = {
-    val __obj = js.Dynamic.literal(addRevokedCert = js.Any.fromFunction2(addRevokedCert), getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setIssuerByParam = js.Any.fromFunction1(setIssuerByParam), setNextUpdateByParam = js.Any.fromFunction1(setNextUpdateByParam), setSignatureAlgByParam = js.Any.fromFunction1(setSignatureAlgByParam), setThisUpdateByParam = js.Any.fromFunction1(setThisUpdateByParam))
+    val __obj = js.Dynamic.literal(addRevokedCert = js.Any.fromFunction2(addRevokedCert), getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setIssuerByParam = js.Any.fromFunction1(setIssuerByParam), setNextUpdateByParam = js.Any.fromFunction1(setNextUpdateByParam), setSignatureAlgByParam = js.Any.fromFunction1(setSignatureAlgByParam), setThisUpdateByParam = js.Any.fromFunction1(setThisUpdateByParam), params = null)
     __obj.asInstanceOf[TBSCertList]
   }
   

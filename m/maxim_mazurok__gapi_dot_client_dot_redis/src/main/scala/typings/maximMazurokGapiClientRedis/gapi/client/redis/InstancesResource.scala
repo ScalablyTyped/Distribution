@@ -11,6 +11,7 @@ import typings.maximMazurokGapiClientRedis.anon.Oauthtoken
 import typings.maximMazurokGapiClientRedis.anon.PrettyPrint
 import typings.maximMazurokGapiClientRedis.anon.QuotaUser
 import typings.maximMazurokGapiClientRedis.anon.Resource
+import typings.maximMazurokGapiClientRedis.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,7 +76,11 @@ trait InstancesResource extends StObject {
   def patch(request: PrettyPrint): Request[Operation] = js.native
   def patch(request: QuotaUser, body: Instance): Request[Operation] = js.native
   
+  def rescheduleMaintenance(request: Callback, body: RescheduleMaintenanceRequest): Request[Operation] = js.native
+  /** Reschedule maintenance for a given instance in a given project and location. */
+  def rescheduleMaintenance(request: Resource): Request[Operation] = js.native
+  
   def upgrade(request: Callback, body: UpgradeInstanceRequest): Request[Operation] = js.native
   /** Upgrades Redis instance to the newer Redis version specified in the request. */
-  def upgrade(request: Resource): Request[Operation] = js.native
+  def upgrade(request: UploadType): Request[Operation] = js.native
 }

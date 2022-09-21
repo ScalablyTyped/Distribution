@@ -8,5 +8,5 @@ object globalSecondaryIndexMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_GlobalSecondaryIndex", "_GlobalSecondaryIndex")
   @js.native
-  val GlobalSecondaryIndex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GlobalSecondaryIndex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

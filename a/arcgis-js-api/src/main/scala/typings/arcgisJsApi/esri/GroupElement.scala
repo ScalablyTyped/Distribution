@@ -22,6 +22,8 @@ trait GroupElement
   /**
     * Defines if the group should be expanded or collapsed when the form is initially displayed.
     *
+    * @default expanded
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-GroupElement.html#initialState)
     */
   var initialState: collapsed | expanded = js.native
@@ -32,5 +34,5 @@ trait GroupElement
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-GroupElement.html#type)
     */
   @JSName("type")
-  var type_GroupElement: group = js.native
+  val type_GroupElement: group = js.native
 }

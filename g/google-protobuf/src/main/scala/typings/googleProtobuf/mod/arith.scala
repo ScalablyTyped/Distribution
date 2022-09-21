@@ -8,7 +8,7 @@ object arith {
   
   @JSImport("google-protobuf", "arith.Int64")
   @js.native
-  class Int64 protected () extends StObject {
+  open class Int64 protected () extends StObject {
     def this(lo: Double, hi: Double) = this()
     
     def add(other: Int64): Int64 = js.native
@@ -31,7 +31,7 @@ object arith {
   
   @JSImport("google-protobuf", "arith.UInt64")
   @js.native
-  class UInt64 protected () extends StObject {
+  open class UInt64 protected () extends StObject {
     def this(lo: Double, hi: Double) = this()
     
     def add(other: UInt64): UInt64 = js.native

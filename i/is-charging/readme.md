@@ -10,15 +10,12 @@ Find out if a computer is charging
 | ------------------ | :-------------: |
 | Full name          | is-charging |
 | Keywords           | battery, charge, charging, indication, is, linux, mac, osx, utility, win, windows |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 3011 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 237.0 |
+| # stars            | 74.0 |
 
 ## Links
-- [Homepage](https://github.com/gillstrom/is-charging#readme)
-- [Bugs](https://github.com/gillstrom/is-charging/issues)
-- [Repository](https://github.com/gillstrom/is-charging)
 - [Npm](https://www.npmjs.com/package/is-charging)
     
 

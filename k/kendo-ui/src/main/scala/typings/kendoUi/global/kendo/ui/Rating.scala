@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Rating")
 @js.native
-class Rating protected ()
+open class Rating protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Rating {
   def this(element: Element) = this()

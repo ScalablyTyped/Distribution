@@ -25,7 +25,7 @@ object MinimumOrderValueTableStoreCodeSetWithMov {
     
     inline def setStoreCodesUndefined: Self = StObject.set(x, "storeCodes", js.undefined)
     
-    inline def setStoreCodesVarargs(value: String*): Self = StObject.set(x, "storeCodes", js.Array(value :_*))
+    inline def setStoreCodesVarargs(value: String*): Self = StObject.set(x, "storeCodes", js.Array(value*))
     
     inline def setValue(value: Price): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

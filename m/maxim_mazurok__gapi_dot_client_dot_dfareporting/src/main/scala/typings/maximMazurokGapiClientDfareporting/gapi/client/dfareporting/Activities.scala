@@ -28,7 +28,7 @@ object Activities {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object Activities {
     
     inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
   }
 }

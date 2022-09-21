@@ -11,7 +11,7 @@ trait RadialGradient
      with Gradient {
   
   def center(): Point = js.native
-  def center(center: js.Any): Unit = js.native
+  def center(center: Any): Unit = js.native
   def center(center: Point): Unit = js.native
   
   @JSName("options")

@@ -6,10 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(time: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(time: js.Array[Double], smallest: Unit, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(time: js.Array[Double], smallest: Increment): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(time: js.Array[Double], smallest: Increment, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: js.Array[Double | String]): String = ^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(time: js.Array[Double | String], smallest: String): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: js.Array[Double | String], smallest: String, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: js.Array[Double | String], smallest: Unit, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: js.Array[Double | String], smallest: Increment): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: js.Array[Double | String], smallest: Increment, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: Double): String = ^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(time: Double, smallest: String): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: Double, smallest: String, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: Double, smallest: Unit, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: Double, smallest: Increment): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(time: Double, smallest: Increment, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("pretty-time", JSImport.Namespace)
   @js.native

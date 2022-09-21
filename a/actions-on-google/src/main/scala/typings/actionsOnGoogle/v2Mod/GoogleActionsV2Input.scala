@@ -16,7 +16,7 @@ trait GoogleActionsV2Input extends StObject {
     * Opaque context set in the interactive canvas web app for all subsequent
     * intents
     */
-  var canvasState: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var canvasState: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Indicates the user's intent. For the first conversation turn, the intent
@@ -51,9 +51,9 @@ object GoogleActionsV2Input {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value*))
     
-    inline def setCanvasState(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "canvasState", value.asInstanceOf[js.Any])
+    inline def setCanvasState(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "canvasState", value.asInstanceOf[js.Any])
     
     inline def setCanvasStateUndefined: Self = StObject.set(x, "canvasState", js.undefined)
     
@@ -65,6 +65,6 @@ object GoogleActionsV2Input {
     
     inline def setRawInputsUndefined: Self = StObject.set(x, "rawInputs", js.undefined)
     
-    inline def setRawInputsVarargs(value: GoogleActionsV2RawInput*): Self = StObject.set(x, "rawInputs", js.Array(value :_*))
+    inline def setRawInputsVarargs(value: GoogleActionsV2RawInput*): Self = StObject.set(x, "rawInputs", js.Array(value*))
   }
 }

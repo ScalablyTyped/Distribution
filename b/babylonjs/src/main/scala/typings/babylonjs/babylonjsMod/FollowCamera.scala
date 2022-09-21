@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Cameras/index", "FollowCamera")
 @js.native
-class FollowCamera protected ()
+open class FollowCamera protected ()
   extends typings.babylonjs.followCameraMod.FollowCamera {
   /**
     * Instantiates the follow camera.
@@ -20,6 +20,8 @@ class FollowCamera protected ()
     * @param scene Define the scene the camera belong to
     * @param lockedTarget Define the target of the camera
     */
+  def this(name: String, position: Vector3) = this()
   def this(name: String, position: Vector3, scene: Scene) = this()
+  def this(name: String, position: Vector3, scene: Unit, lockedTarget: Nullable[AbstractMesh]) = this()
   def this(name: String, position: Vector3, scene: Scene, lockedTarget: Nullable[AbstractMesh]) = this()
 }

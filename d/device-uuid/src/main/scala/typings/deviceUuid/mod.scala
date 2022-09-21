@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("device-uuid", "DeviceUUID")
   @js.native
-  class DeviceUUID () extends StObject {
+  open class DeviceUUID () extends StObject {
     
     var Agent: typings.deviceUuid.mod.Agent = js.native
     

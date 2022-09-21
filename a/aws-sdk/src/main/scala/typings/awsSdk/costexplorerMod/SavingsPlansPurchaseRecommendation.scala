@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SavingsPlansPurchaseRecommendation extends StObject {
   
   /**
-    * The account scope that you want your recommendations for. Amazon Web Services calculates recommendations including the management account and member accounts if the value is set to PAYER. If the value is LINKED, recommendations are calculated for individual member accounts only.
+    * The account scope that you want your recommendations for. Amazon Web Services calculates recommendations that include the management account and member accounts if the value is set to PAYER. If the value is LINKED, recommendations are calculated for individual member accounts only.
     */
   var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.undefined
   
   /**
-    * The lookback period in days, used to generate the recommendation.
+    * The lookback period in days that's used to generate the recommendation.
     */
   var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.undefined
   
   /**
-    * The payment option used to generate the recommendation.
+    * The payment option that's used to generate the recommendation.
     */
   var PaymentOption: js.UndefOr[typings.awsSdk.costexplorerMod.PaymentOption] = js.undefined
   
   /**
-    * Details for the Savings Plans we recommend that you purchase to cover existing Savings Plans eligible workloads.
+    * Details for the Savings Plans that we recommend that you purchase to cover existing Savings Plans eligible workloads.
     */
   var SavingsPlansPurchaseRecommendationDetails: js.UndefOr[SavingsPlansPurchaseRecommendationDetailList] = js.undefined
   
@@ -37,7 +37,7 @@ trait SavingsPlansPurchaseRecommendation extends StObject {
   var SavingsPlansType: js.UndefOr[SupportedSavingsPlansType] = js.undefined
   
   /**
-    * The Savings Plans recommendation term in years, used to generate the recommendation.
+    * The Savings Plans recommendation term in years. It's used to generate the recommendation.
     */
   var TermInYears: js.UndefOr[typings.awsSdk.costexplorerMod.TermInYears] = js.undefined
 }
@@ -66,7 +66,7 @@ object SavingsPlansPurchaseRecommendation {
     
     inline def setSavingsPlansPurchaseRecommendationDetailsUndefined: Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", js.undefined)
     
-    inline def setSavingsPlansPurchaseRecommendationDetailsVarargs(value: SavingsPlansPurchaseRecommendationDetail*): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", js.Array(value :_*))
+    inline def setSavingsPlansPurchaseRecommendationDetailsVarargs(value: SavingsPlansPurchaseRecommendationDetail*): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", js.Array(value*))
     
     inline def setSavingsPlansPurchaseRecommendationSummary(value: SavingsPlansPurchaseRecommendationSummary): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationSummary", value.asInstanceOf[js.Any])
     

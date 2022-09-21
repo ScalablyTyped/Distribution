@@ -36,7 +36,7 @@ object global {
       * @constructor
       * @param converterOptions - Configuration object, describes which extensions to apply.
       */
-    class ConverterCls ()
+    open class ConverterCls ()
       extends StObject
          with Converter {
       def this(converterOptions: ConverterOptions) = this()
@@ -109,7 +109,7 @@ object global {
       * @param key - the option key.
       * @returns Returns the value of the given `key`.
       */
-    inline def getOption(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getOption(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * Get the "global" options.
@@ -156,7 +156,7 @@ object global {
       * @param key - the option key.
       * @param value - the option value.
       */
-    inline def setOption(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def setOption(key: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Get a registered subParser.

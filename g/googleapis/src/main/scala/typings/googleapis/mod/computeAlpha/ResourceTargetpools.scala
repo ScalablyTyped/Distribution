@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_alpha.Resource$Targetpools")
 @js.native
-class ResourceTargetpools protected ()
+open class ResourceTargetpools protected ()
   extends typings.googleapis.alphaMod.computeAlpha.ResourceTargetpools {
   def this(context: APIRequestContext) = this()
 }

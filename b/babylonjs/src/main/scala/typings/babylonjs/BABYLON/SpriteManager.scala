@@ -10,29 +10,31 @@ trait SpriteManager
      with ISpriteManager {
   
   /** Associative array from JSON sprite data file */
-  /* private */ var _cellData: js.Any = js.native
+  /* private */ var _cellData: Any = js.native
   
-  /* private */ var _checkTextureAlpha: js.Any = js.native
+  /* private */ var _checkTextureAlpha: Any = js.native
   
-  /* private */ var _customUpdate: js.Any = js.native
+  /* private */ var _customUpdate: Any = js.native
   
-  /* private */ var _fromPacked: js.Any = js.native
+  /* private */ var _disableDepthWrite: Any = js.native
   
-  /* private */ var _makePacked: js.Any = js.native
+  /* private */ var _fromPacked: Any = js.native
   
-  /* private */ var _onDisposeObserver: js.Any = js.native
+  /* private */ var _makePacked: Any = js.native
+  
+  /* private */ var _onDisposeObserver: Any = js.native
   
   /** True when packed cell data from JSON file is ready*/
-  /* private */ var _packedAndReady: js.Any = js.native
+  /* private */ var _packedAndReady: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /** Array of sprite names from JSON sprite data file */
-  /* private */ var _spriteMap: js.Any = js.native
+  /* private */ var _spriteMap: Any = js.native
   
-  /* private */ var _spriteRenderer: js.Any = js.native
+  /* private */ var _spriteRenderer: Any = js.native
   
-  /* private */ var _textureContent: js.Any = js.native
+  /* private */ var _textureContent: Any = js.native
   
   /**
     * Blend mode use to render the particle, it can be any of
@@ -64,7 +66,8 @@ trait SpriteManager
     *  It can be handy to disable depth writing when using textures without alpha channel
     *  and setting some specific blend modes.
     */
-  var disableDepthWrite: Boolean = js.native
+  def disableDepthWrite: Boolean = js.native
+  def disableDepthWrite_=(value: Boolean): Unit = js.native
   
   /** Gets or sets a boolean indicating if the manager must consider scene fog when rendering */
   def fogEnabled: Boolean = js.native
@@ -97,8 +100,8 @@ trait SpriteManager
     * @param serializeTexture defines if the texture must be serialized as well
     * @returns the JSON object
     */
-  def serialize(): js.Any = js.native
-  def serialize(serializeTexture: Boolean): js.Any = js.native
+  def serialize(): Any = js.native
+  def serialize(serializeTexture: Boolean): Any = js.native
   
   /** Snippet ID if the manager was created from the snippet server */
   var snippetId: String = js.native

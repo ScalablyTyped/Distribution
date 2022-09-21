@@ -24,6 +24,6 @@ object IROOM_GROUP_SUBSCRIBE {
     
     inline def setNewRooms(value: js.Array[SFSRoom]): Self = StObject.set(x, "newRooms", value.asInstanceOf[js.Any])
     
-    inline def setNewRoomsVarargs(value: SFSRoom*): Self = StObject.set(x, "newRooms", js.Array(value :_*))
+    inline def setNewRoomsVarargs(value: SFSRoom*): Self = StObject.set(x, "newRooms", js.Array(value*))
   }
 }

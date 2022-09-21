@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersAcknowledgeRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.RequestReviewBuyOnGoogleProgramRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +26,11 @@ trait ResourceUploadType extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account that manages the order. This cannot be a multi-client account. */
+  /** Required. The ID of the account. */
   var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** The ID of the order. */
-  var orderId: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -41,8 +38,11 @@ trait ResourceUploadType extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Required. The program region code [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). Currently only US is available. */
+  var regionCode: String
+  
   /** Request body */
-  var resource: OrdersAcknowledgeRequest
+  var resource: RequestReviewBuyOnGoogleProgramRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +52,8 @@ trait ResourceUploadType extends StObject {
 }
 object ResourceUploadType {
   
-  inline def apply(merchantId: String, orderId: String, resource: OrdersAcknowledgeRequest): ResourceUploadType = {
-    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(merchantId: String, regionCode: String, resource: RequestReviewBuyOnGoogleProgramRequest): ResourceUploadType = {
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], regionCode = regionCode.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceUploadType]
   }
   
@@ -89,8 +89,6 @@ object ResourceUploadType {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
-    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -99,7 +97,9 @@ object ResourceUploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrdersAcknowledgeRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    
+    inline def setResource(value: RequestReviewBuyOnGoogleProgramRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

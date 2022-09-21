@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forest-express-sequelize", "StatSerializer")
 @js.native
-class StatSerializer protected () extends StObject {
+open class StatSerializer protected () extends StObject {
   def this(stats: Value) = this()
   
   def perform(): StatSerialized = js.native

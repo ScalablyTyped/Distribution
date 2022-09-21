@@ -57,7 +57,7 @@ object GoogleActionsV2AppRequest {
     
     inline def setAvailableSurfacesUndefined: Self = StObject.set(x, "availableSurfaces", js.undefined)
     
-    inline def setAvailableSurfacesVarargs(value: GoogleActionsV2Surface*): Self = StObject.set(x, "availableSurfaces", js.Array(value :_*))
+    inline def setAvailableSurfacesVarargs(value: GoogleActionsV2Surface*): Self = StObject.set(x, "availableSurfaces", js.Array(value*))
     
     inline def setConversation(value: GoogleActionsV2Conversation): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object GoogleActionsV2AppRequest {
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: GoogleActionsV2Input*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: GoogleActionsV2Input*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setIsInSandbox(value: Boolean): Self = StObject.set(x, "isInSandbox", value.asInstanceOf[js.Any])
     

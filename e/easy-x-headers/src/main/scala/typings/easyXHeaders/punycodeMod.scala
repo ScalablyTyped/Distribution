@@ -40,6 +40,6 @@ object punycodeMod {
   
   @JSImport("punycode", "version")
   @js.native
-  def version: js.Any = js.native
-  inline def version_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  def version: Any = js.native
+  inline def version_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

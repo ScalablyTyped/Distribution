@@ -21,7 +21,7 @@ trait FileTransferError extends StObject {
   var code: Double
   
   /* Exception that is thrown by native code */
-  var exception: js.Any
+  var exception: Any
   
   /** HTTP status code. This attribute is only available when a response code is received from the HTTP connection. */
   var http_status: Double
@@ -34,7 +34,7 @@ trait FileTransferError extends StObject {
 }
 object FileTransferError {
   
-  inline def apply(body: String, code: Double, exception: js.Any, http_status: Double, source: String, target: String): FileTransferError = {
+  inline def apply(body: String, code: Double, exception: Any, http_status: Double, source: String, target: String): FileTransferError = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], exception = exception.asInstanceOf[js.Any], http_status = http_status.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileTransferError]
   }
@@ -45,7 +45,7 @@ object FileTransferError {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setException(value: js.Any): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    inline def setException(value: Any): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
     inline def setHttp_status(value: Double): Self = StObject.set(x, "http_status", value.asInstanceOf[js.Any])
     

@@ -40,6 +40,6 @@ object DescribeSuggestersRequest {
     
     inline def setSuggesterNamesUndefined: Self = StObject.set(x, "SuggesterNames", js.undefined)
     
-    inline def setSuggesterNamesVarargs(value: StandardName*): Self = StObject.set(x, "SuggesterNames", js.Array(value :_*))
+    inline def setSuggesterNamesVarargs(value: StandardName*): Self = StObject.set(x, "SuggesterNames", js.Array(value*))
   }
 }

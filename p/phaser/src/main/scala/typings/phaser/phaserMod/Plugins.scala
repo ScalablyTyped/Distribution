@@ -8,17 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Plugins {
   
-  @JSImport("phaser", "Plugins")
-  @js.native
-  val ^ : js.Any = js.native
-  
   /**
     * A Global Plugin is installed just once into the Game owned Plugin Manager.
     * It can listen for Game events and respond to them.
     */
   @JSImport("phaser", "Plugins.BasePlugin")
   @js.native
-  class BasePlugin protected ()
+  open class BasePlugin protected ()
     extends StObject
        with typings.phaser.Phaser.Plugins.BasePlugin {
     /**
@@ -29,40 +25,50 @@ object Plugins {
   }
   
   /**
-    * These are the core plugins that are installed into every Scene.Systems instance, no matter what.
-    * They are optionally exposed in the Scene as well (see the InjectionMap for details)
-    * 
-    * They are created in the order in which they appear in this array and EventEmitter is always first.
+    * The Default Plugins.
     */
-  @JSImport("phaser", "Plugins.CoreScene")
-  @js.native
-  def CoreScene: js.Array[js.Any] = js.native
-  inline def CoreScene_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CoreScene")(x.asInstanceOf[js.Any])
-  
-  /**
-    * These plugins are created in Scene.Systems in addition to the CoreScenePlugins.
-    * 
-    * You can elect not to have these plugins by either creating a DefaultPlugins object as part
-    * of the Game Config, by creating a Plugins object as part of a Scene Config, or by modifying this array
-    * and building your own bundle.
-    * 
-    * They are optionally exposed in the Scene as well (see the InjectionMap for details)
-    * 
-    * They are always created in the order in which they appear in the array.
-    */
-  @JSImport("phaser", "Plugins.DefaultScene")
-  @js.native
-  def DefaultScene: js.Array[js.Any] = js.native
-  inline def DefaultScene_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultScene")(x.asInstanceOf[js.Any])
-  
-  /**
-    * These are the Global Managers that are created by the Phaser.Game instance.
-    * They are referenced from Scene.Systems so that plugins can use them.
-    */
-  @JSImport("phaser", "Plugins.Global")
-  @js.native
-  def Global: js.Array[js.Any] = js.native
-  inline def Global_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Global")(x.asInstanceOf[js.Any])
+  object DefaultPlugins {
+    
+    @JSImport("phaser", "Plugins.DefaultPlugins")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * These are the core plugins that are installed into every Scene.Systems instance, no matter what.
+      * They are optionally exposed in the Scene as well (see the InjectionMap for details)
+      * 
+      * They are created in the order in which they appear in this array and EventEmitter is always first.
+      */
+    @JSImport("phaser", "Plugins.DefaultPlugins.CoreScene")
+    @js.native
+    def CoreScene: js.Array[Any] = js.native
+    inline def CoreScene_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CoreScene")(x.asInstanceOf[js.Any])
+    
+    /**
+      * These plugins are created in Scene.Systems in addition to the CoreScenePlugins.
+      * 
+      * You can elect not to have these plugins by either creating a DefaultPlugins object as part
+      * of the Game Config, by creating a Plugins object as part of a Scene Config, or by modifying this array
+      * and building your own bundle.
+      * 
+      * They are optionally exposed in the Scene as well (see the InjectionMap for details)
+      * 
+      * They are always created in the order in which they appear in the array.
+      */
+    @JSImport("phaser", "Plugins.DefaultPlugins.DefaultScene")
+    @js.native
+    def DefaultScene: js.Array[Any] = js.native
+    inline def DefaultScene_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultScene")(x.asInstanceOf[js.Any])
+    
+    /**
+      * These are the Global Managers that are created by the Phaser.Game instance.
+      * They are referenced from Scene.Systems so that plugins can use them.
+      */
+    @JSImport("phaser", "Plugins.DefaultPlugins.Global")
+    @js.native
+    def Global: js.Array[Any] = js.native
+    inline def Global_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Global")(x.asInstanceOf[js.Any])
+  }
   
   object PluginCache {
     
@@ -134,7 +140,7 @@ object Plugins {
       * @param mapping If this plugin is to be injected into the Scene Systems, this is the property key map used.
       * @param data A value to be passed to the plugin's `init` method.
       */
-    inline def registerCustom(key: String, plugin: js.Function, mapping: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustom")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerCustom(key: String, plugin: js.Function, mapping: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustom")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes a core plugin based on the given key.
@@ -154,7 +160,7 @@ object Plugins {
     * 
     * It is a global system and therefore belongs to the Game instance, not a specific Scene.
     * 
-    * It works in conjunction with the PluginCache. Core internal plugins automatically register themselves 
+    * It works in conjunction with the PluginCache. Core internal plugins automatically register themselves
     * with the Cache, but it's the Plugin Manager that is responsible for injecting them into the Scenes.
     * 
     * There are two types of plugin:
@@ -184,7 +190,7 @@ object Plugins {
     */
   @JSImport("phaser", "Plugins.PluginManager")
   @js.native
-  class PluginManager protected ()
+  open class PluginManager protected ()
     extends StObject
        with typings.phaser.Phaser.Plugins.PluginManager {
     /**
@@ -201,14 +207,19 @@ object Plugins {
     */
   @JSImport("phaser", "Plugins.ScenePlugin")
   @js.native
-  class ScenePlugin protected ()
+  open class ScenePlugin protected ()
     extends StObject
        with typings.phaser.Phaser.Plugins.ScenePlugin {
     /**
       * 
       * @param scene A reference to the Scene that has installed this plugin.
       * @param pluginManager A reference to the Plugin Manager.
+      * @param pluginKey The key under which this plugin has been installed into the Scene Systems.
       */
-    def this(scene: typings.phaser.Phaser.Scene, pluginManager: typings.phaser.Phaser.Plugins.PluginManager) = this()
+    def this(
+      scene: typings.phaser.Phaser.Scene,
+      pluginManager: typings.phaser.Phaser.Plugins.PluginManager,
+      pluginKey: String
+    ) = this()
   }
 }

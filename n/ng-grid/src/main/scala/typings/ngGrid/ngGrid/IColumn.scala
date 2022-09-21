@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IColumn extends StObject {
   
-  var aggLabelFilter: js.Any
+  var aggLabelFilter: Any
   
   var cellClass: String
   
-  var cellEditableCondition: js.Any
+  var cellEditableCondition: Any
   
-  var cellFilter: js.Any
+  var cellFilter: Any
   
   var cellTemplate: String
   
@@ -28,11 +28,11 @@ trait IColumn extends StObject {
   
   var field: String
   
-  def gripClick(): js.Any
+  def gripClick(): Any
   
-  def gripOnMouseDown(event: js.Any): js.Any
+  def gripOnMouseDown(event: Any): Any
   
-  def gripOnMouseUp(event: js.Any): Unit
+  def gripOnMouseUp(event: Any): Unit
   
   var groupIndex: Double
   
@@ -58,7 +58,7 @@ trait IColumn extends StObject {
   
   def noSortVisible(): Boolean
   
-  def onMouseMove(event: js.Any): Unit
+  def onMouseMove(event: Any): Unit
   
   var originalIndex: Double
   
@@ -74,7 +74,7 @@ trait IColumn extends StObject {
   
   def showSortButtonUp(): Boolean
   
-  def sort(event: js.Any): Boolean
+  def sort(event: Any): Boolean
   
   var sortDirection: String
   
@@ -93,10 +93,10 @@ trait IColumn extends StObject {
 object IColumn {
   
   inline def apply(
-    aggLabelFilter: js.Any,
+    aggLabelFilter: Any,
     cellClass: String,
-    cellEditableCondition: js.Any,
-    cellFilter: js.Any,
+    cellEditableCondition: Any,
+    cellFilter: Any,
     cellTemplate: String,
     colDef: IColumnDef,
     copy: () => IColumn,
@@ -104,9 +104,9 @@ object IColumn {
     displayName: String,
     enableCellEdit: Boolean,
     field: String,
-    gripClick: () => js.Any,
-    gripOnMouseDown: js.Any => js.Any,
-    gripOnMouseUp: js.Any => Unit,
+    gripClick: () => Any,
+    gripOnMouseDown: Any => Any,
+    gripOnMouseUp: Any => Unit,
     groupIndex: Double,
     groupable: Boolean,
     groupedByClass: () => String,
@@ -119,7 +119,7 @@ object IColumn {
     maxWidth: Double,
     minWidth: Double,
     noSortVisible: () => Boolean,
-    onMouseMove: js.Any => Unit,
+    onMouseMove: Any => Unit,
     originalIndex: Double,
     pinnable: Boolean,
     pinned: Boolean,
@@ -127,7 +127,7 @@ object IColumn {
     setVars: IColumn => Unit,
     showSortButtonDown: () => Boolean,
     showSortButtonUp: () => Boolean,
-    sort: js.Any => Boolean,
+    sort: Any => Boolean,
     sortDirection: String,
     sortPriority: Double,
     sortable: Boolean,
@@ -142,13 +142,13 @@ object IColumn {
   
   extension [Self <: IColumn](x: Self) {
     
-    inline def setAggLabelFilter(value: js.Any): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
+    inline def setAggLabelFilter(value: Any): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
     
     inline def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
     
-    inline def setCellEditableCondition(value: js.Any): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
+    inline def setCellEditableCondition(value: Any): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
     
-    inline def setCellFilter(value: js.Any): Self = StObject.set(x, "cellFilter", value.asInstanceOf[js.Any])
+    inline def setCellFilter(value: Any): Self = StObject.set(x, "cellFilter", value.asInstanceOf[js.Any])
     
     inline def setCellTemplate(value: String): Self = StObject.set(x, "cellTemplate", value.asInstanceOf[js.Any])
     
@@ -164,11 +164,11 @@ object IColumn {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    inline def setGripClick(value: () => js.Any): Self = StObject.set(x, "gripClick", js.Any.fromFunction0(value))
+    inline def setGripClick(value: () => Any): Self = StObject.set(x, "gripClick", js.Any.fromFunction0(value))
     
-    inline def setGripOnMouseDown(value: js.Any => js.Any): Self = StObject.set(x, "gripOnMouseDown", js.Any.fromFunction1(value))
+    inline def setGripOnMouseDown(value: Any => Any): Self = StObject.set(x, "gripOnMouseDown", js.Any.fromFunction1(value))
     
-    inline def setGripOnMouseUp(value: js.Any => Unit): Self = StObject.set(x, "gripOnMouseUp", js.Any.fromFunction1(value))
+    inline def setGripOnMouseUp(value: Any => Unit): Self = StObject.set(x, "gripOnMouseUp", js.Any.fromFunction1(value))
     
     inline def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
     
@@ -194,7 +194,7 @@ object IColumn {
     
     inline def setNoSortVisible(value: () => Boolean): Self = StObject.set(x, "noSortVisible", js.Any.fromFunction0(value))
     
-    inline def setOnMouseMove(value: js.Any => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    inline def setOnMouseMove(value: Any => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     inline def setOriginalIndex(value: Double): Self = StObject.set(x, "originalIndex", value.asInstanceOf[js.Any])
     
@@ -210,7 +210,7 @@ object IColumn {
     
     inline def setShowSortButtonUp(value: () => Boolean): Self = StObject.set(x, "showSortButtonUp", js.Any.fromFunction0(value))
     
-    inline def setSort(value: js.Any => Boolean): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+    inline def setSort(value: Any => Boolean): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
     inline def setSortDirection(value: String): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     

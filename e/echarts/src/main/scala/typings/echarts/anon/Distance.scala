@@ -199,7 +199,7 @@ trait Distance extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.data.emphasis.label.offset
     */
-  var offset: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var offset: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Padding of the text fregment, for example:
@@ -216,7 +216,7 @@ trait Distance extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.data.emphasis.label.padding
     */
-  var padding: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
     * Label position.
@@ -253,7 +253,7 @@ trait Distance extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.data.emphasis.label.position
     */
-  var position: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+  var position: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   /**
     * "Rich text styles" can be defined in this `rich`
@@ -492,23 +492,23 @@ object Distance {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setOffset(value: js.Array[js.Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Array[Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOffsetVarargs(value: js.Any*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Any*): Self = StObject.set(x, "offset", js.Array(value*))
     
-    inline def setPadding(value: js.Array[js.Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Array[Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: js.Any*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Any*): Self = StObject.set(x, "padding", js.Array(value*))
     
-    inline def setPosition(value: js.Array[js.Any] | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Array[Any] | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
     
     inline def setRich(
       value: /**

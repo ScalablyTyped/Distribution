@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-protobuf", "BinaryIterator")
 @js.native
-class BinaryIterator () extends StObject {
+open class BinaryIterator () extends StObject {
   def this(decoder: BinaryDecoder) = this()
   def this(decoder: Unit, next: js.Function0[Double | Boolean | String | Null]) = this()
   def this(decoder: BinaryDecoder, next: js.Function0[Double | Boolean | String | Null]) = this()

@@ -14,10 +14,9 @@ object stepMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/elements/Step", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[StepProps, ComponentState, js.Any] {
+  open class default protected () extends Component[StepProps, ComponentState, Any] {
     def this(props: StepProps) = this()
-    def this(props: StepProps, context: js.Any) = this()
+    def this(props: StepProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/elements/Step", JSImport.Default)
   @js.native

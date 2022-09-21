@@ -14,9 +14,11 @@ object TextDocumentEdit {
     * Creates a new `TextDocumentEdit`
     */
   inline def create(
-    textDocument: typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier,
-    edits: js.Array[typings.vscodeLanguageserverTypes.mod.TextEdit]
+    textDocument: typings.vscodeLanguageserverTypes.mod.OptionalVersionedTextDocumentIdentifier,
+    edits: js.Array[
+      typings.vscodeLanguageserverTypes.mod.TextEdit | typings.vscodeLanguageserverTypes.mod.AnnotatedTextEdit
+    ]
   ): typings.vscodeLanguageserverTypes.mod.TextDocumentEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(textDocument.asInstanceOf[js.Any], edits.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.TextDocumentEdit]
   
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean]
 }

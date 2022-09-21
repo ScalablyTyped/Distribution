@@ -28,12 +28,12 @@ object GoogleDatastoreAdminV1EntityFilter {
     
     inline def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
     
-    inline def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
+    inline def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value*))
     
     inline def setNamespaceIds(value: js.Array[String]): Self = StObject.set(x, "namespaceIds", value.asInstanceOf[js.Any])
     
     inline def setNamespaceIdsUndefined: Self = StObject.set(x, "namespaceIds", js.undefined)
     
-    inline def setNamespaceIdsVarargs(value: String*): Self = StObject.set(x, "namespaceIds", js.Array(value :_*))
+    inline def setNamespaceIdsVarargs(value: String*): Self = StObject.set(x, "namespaceIds", js.Array(value*))
   }
 }

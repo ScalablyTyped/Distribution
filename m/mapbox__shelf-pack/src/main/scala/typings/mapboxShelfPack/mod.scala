@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("@mapbox/shelf-pack", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ShelfPack {
     def this(width: Double) = this()
@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("@mapbox/shelf-pack", "Bin")
   @js.native
-  class Bin protected () extends StObject {
+  open class Bin protected () extends StObject {
     def this(id: ID, x: Double, y: Double, w: Double, h: Double) = this()
     def this(id: ID, x: Double, y: Double, w: Double, h: Double, maxw: Double) = this()
     def this(id: ID, x: Double, y: Double, w: Double, h: Double, maxw: Double, maxh: Double) = this()

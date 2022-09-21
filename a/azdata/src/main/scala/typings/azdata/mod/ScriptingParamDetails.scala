@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ScriptingParamDetails extends StObject {
   
-  var filePath: String
+  var filePath: js.UndefOr[String] = js.undefined
   
   var scriptCompatibilityOption: String
   
@@ -17,18 +17,19 @@ trait ScriptingParamDetails extends StObject {
 object ScriptingParamDetails {
   
   inline def apply(
-    filePath: String,
     scriptCompatibilityOption: String,
     targetDatabaseEngineEdition: String,
     targetDatabaseEngineType: String
   ): ScriptingParamDetails = {
-    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], scriptCompatibilityOption = scriptCompatibilityOption.asInstanceOf[js.Any], targetDatabaseEngineEdition = targetDatabaseEngineEdition.asInstanceOf[js.Any], targetDatabaseEngineType = targetDatabaseEngineType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scriptCompatibilityOption = scriptCompatibilityOption.asInstanceOf[js.Any], targetDatabaseEngineEdition = targetDatabaseEngineEdition.asInstanceOf[js.Any], targetDatabaseEngineType = targetDatabaseEngineType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptingParamDetails]
   }
   
   extension [Self <: ScriptingParamDetails](x: Self) {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
     inline def setScriptCompatibilityOption(value: String): Self = StObject.set(x, "scriptCompatibilityOption", value.asInstanceOf[js.Any])
     

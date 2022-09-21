@@ -11,17 +11,23 @@ sealed trait TextureMagnificationFilter extends StObject
 object TextureMagnificationFilter extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextureMagnificationFilter & Double] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[TextureMagnificationFilter & scala.Nothing] = js.native
   
+  /**
+    * Samples the texture through bi-linear interpolation of the four nearest pixels. This produces smoother results than <code>NEAREST</code> filtering.
+    */
   @js.native
   sealed trait LINEAR
     extends StObject
        with TextureMagnificationFilter
-  /* 0 */ val LINEAR: typings.cesium.mod.TextureMagnificationFilter.LINEAR & Double = js.native
+  /* WebGLConstants.LINEAR */ val LINEAR: typings.cesium.mod.TextureMagnificationFilter.LINEAR & scala.Nothing = js.native
   
+  /**
+    * Samples the texture by returning the closest pixel.
+    */
   @js.native
   sealed trait NEAREST
     extends StObject
        with TextureMagnificationFilter
-  /* 1 */ val NEAREST: typings.cesium.mod.TextureMagnificationFilter.NEAREST & Double = js.native
+  /* WebGLConstants.NEAREST */ val NEAREST: typings.cesium.mod.TextureMagnificationFilter.NEAREST & scala.Nothing = js.native
 }

@@ -57,7 +57,7 @@ object Container {
     
     inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
-    inline def setDomainNameVarargs(value: String*): Self = StObject.set(x, "domainName", js.Array(value :_*))
+    inline def setDomainNameVarargs(value: String*): Self = StObject.set(x, "domainName", js.Array(value*))
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
@@ -87,6 +87,6 @@ object Container {
     
     inline def setUsageContextUndefined: Self = StObject.set(x, "usageContext", js.undefined)
     
-    inline def setUsageContextVarargs(value: String*): Self = StObject.set(x, "usageContext", js.Array(value :_*))
+    inline def setUsageContextVarargs(value: String*): Self = StObject.set(x, "usageContext", js.Array(value*))
   }
 }

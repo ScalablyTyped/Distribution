@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("mqtt", "Client")
   @js.native
-  class Client protected ()
+  open class Client protected ()
     extends typings.mqtt.clientMod.MqttClient {
     def this(
       streamBuilder: js.Function1[/* client */ typings.mqtt.clientMod.MqttClient, IStream],
@@ -25,7 +25,7 @@ object mod {
   
   @JSImport("mqtt", "MqttClient")
   @js.native
-  class MqttClient protected ()
+  open class MqttClient protected ()
     extends typings.mqtt.connectMod.MqttClient {
     def this(
       streamBuilder: js.Function1[/* client */ typings.mqtt.clientMod.MqttClient, IStream],
@@ -40,7 +40,7 @@ object mod {
     */
   @JSImport("mqtt", "Store")
   @js.native
-  class Store protected ()
+  open class Store protected ()
     extends typings.mqtt.storeMod.Store {
     /**
       * Store constructor
@@ -51,15 +51,29 @@ object mod {
   }
   
   /**
+    * UniqueMessageIdProvider
+    */
+  @JSImport("mqtt", "UniqueMessageIdProvider")
+  @js.native
+  /**
+    * UniqueMessageIdProvider constructor.
+    * @constructor
+    */
+  open class UniqueMessageIdProvider ()
+    extends typings.mqtt.uniqueMessageIdProviderMod.UniqueMessageIdProvider
+  
+  /**
     * connect - connect to an MQTT broker.
     *
-    * @param {String} [brokerUrl] - url of the broker, optional
+    * @param {String} brokerUrl - url of the broker
     * @param {Object} opts - see MqttClient#constructor
     */
-  inline def connect(): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[typings.mqtt.clientMod.MqttClient]
   inline def connect(brokerUrl: String): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.clientMod.MqttClient]
   inline def connect(brokerUrl: String, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
-  inline def connect(brokerUrl: js.Any): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.clientMod.MqttClient]
-  inline def connect(brokerUrl: js.Any, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
-  inline def connect(brokerUrl: Unit, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  /**
+    * connect - connect to an MQTT broker.
+    *
+    * @param {Object} opts - see MqttClient#constructor
+    */
+  inline def connect(opts: IClientOptions): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.clientMod.MqttClient]
 }

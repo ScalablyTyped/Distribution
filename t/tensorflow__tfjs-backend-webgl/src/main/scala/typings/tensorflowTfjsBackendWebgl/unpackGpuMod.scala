@@ -9,10 +9,13 @@ object unpackGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/unpack_gpu", "UnpackProgram")
   @js.native
-  class UnpackProgram protected ()
+  open class UnpackProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(outputShape: js.Array[Double]) = this()
+    
+    @JSName("enableShapeUniforms")
+    var enableShapeUniforms_UnpackProgram: Boolean = js.native
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

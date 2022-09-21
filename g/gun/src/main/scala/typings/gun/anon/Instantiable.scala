@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Instantiable
   extends StObject
-     with Instantiable1[/* args (repeated) */ js.Any, js.Any]
+     with Instantiable1[/* args (repeated) */ Any, Any]

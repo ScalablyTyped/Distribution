@@ -19,10 +19,10 @@ trait JobMetadata extends StObject {
   /**
     * The creation date for this job.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A value that defines the real-time status of a Snow device's data transfer while the device is at AWS. This data is only available while a job has a JobState value of InProgress, for both import and export jobs.
+    * A value that defines the real-time status of a Snow device's data transfer while the device is at Amazon Web Services. This data is only available while a job has a JobState value of InProgress, for both import and export jobs.
     */
   var DataTransferProgress: js.UndefOr[DataTransfer] = js.undefined
   
@@ -59,9 +59,14 @@ trait JobMetadata extends StObject {
   var JobType: js.UndefOr[typings.awsSdk.snowballMod.JobType] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for the AWS Key Management Service (AWS KMS) key associated with this job. This ARN was created using the CreateKey API action in AWS KMS.
+    * The Amazon Resource Name (ARN) for the Key Management Service (KMS) key associated with this job. This ARN was created using the CreateKey API action in KMS.
     */
   var KmsKeyARN: js.UndefOr[typings.awsSdk.snowballMod.KmsKeyARN] = js.undefined
+  
+  /**
+    * The ID of the long-term pricing type for the device.
+    */
+  var LongTermPricingId: js.UndefOr[typings.awsSdk.snowballMod.LongTermPricingId] = js.undefined
   
   /**
     * The Amazon Simple Notification Service (Amazon SNS) notification settings associated with a specific job. The Notification object is returned as a part of the response syntax of the DescribeJob action in the JobMetadata data type.
@@ -69,12 +74,22 @@ trait JobMetadata extends StObject {
   var Notification: js.UndefOr[typings.awsSdk.snowballMod.Notification] = js.undefined
   
   /**
+    * Represents metadata and configuration settings for services on an Amazon Web Services Snow Family device.
+    */
+  var OnDeviceServiceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.OnDeviceServiceConfiguration] = js.undefined
+  
+  /**
+    * Allows you to securely operate and manage Snowcone devices remotely from outside of your internal network. When set to INSTALLED_AUTOSTART, remote management will automatically be available when the device arrives at your location. Otherwise, you need to use the Snowball Client to manage the device.
+    */
+  var RemoteManagement: js.UndefOr[typings.awsSdk.snowballMod.RemoteManagement] = js.undefined
+  
+  /**
     * An array of S3Resource objects. Each S3Resource object represents an Amazon S3 bucket that your transferred data will be exported from or imported into.
     */
   var Resources: js.UndefOr[JobResource] = js.undefined
   
   /**
-    * The role ARN associated with this job. This ARN was created using the CreateRole API action in AWS Identity and Access Management (IAM).
+    * The role ARN associated with this job. This ARN was created using the CreateRole API action in Identity and Access Management.
     */
   var RoleARN: js.UndefOr[typings.awsSdk.snowballMod.RoleARN] = js.undefined
   
@@ -84,7 +99,7 @@ trait JobMetadata extends StObject {
   var ShippingDetails: js.UndefOr[typings.awsSdk.snowballMod.ShippingDetails] = js.undefined
   
   /**
-    * The Snow device capacity preference for this job, specified at job creation. In US regions, you can choose between 50 TB and 80 TB Snowballs. All other regions use 80 TB capacity Snowballs.
+    * The Snow device capacity preference for this job, specified at job creation. In US regions, you can choose between 50 TB and 80 TB Snowballs. All other regions use 80 TB capacity Snowballs. For more information, see "https://docs.aws.amazon.com/snowball/latest/snowcone-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide or "https://docs.aws.amazon.com/snowball/latest/developer-guide/snow-device-types.html" (Snow Family Devices and Capacity) in the Snowcone User Guide.
     */
   var SnowballCapacityPreference: js.UndefOr[SnowballCapacity] = js.undefined
   
@@ -94,7 +109,7 @@ trait JobMetadata extends StObject {
   var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.undefined
   
   /**
-    * The metadata associated with the tax documents required in your AWS Region.
+    * The metadata associated with the tax documents required in your Amazon Web Services Region.
     */
   var TaxDocuments: js.UndefOr[typings.awsSdk.snowballMod.TaxDocuments] = js.undefined
 }
@@ -115,7 +130,7 @@ object JobMetadata {
     
     inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -155,9 +170,21 @@ object JobMetadata {
     
     inline def setKmsKeyARNUndefined: Self = StObject.set(x, "KmsKeyARN", js.undefined)
     
+    inline def setLongTermPricingId(value: LongTermPricingId): Self = StObject.set(x, "LongTermPricingId", value.asInstanceOf[js.Any])
+    
+    inline def setLongTermPricingIdUndefined: Self = StObject.set(x, "LongTermPricingId", js.undefined)
+    
     inline def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
     inline def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
+    
+    inline def setOnDeviceServiceConfiguration(value: OnDeviceServiceConfiguration): Self = StObject.set(x, "OnDeviceServiceConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setOnDeviceServiceConfigurationUndefined: Self = StObject.set(x, "OnDeviceServiceConfiguration", js.undefined)
+    
+    inline def setRemoteManagement(value: RemoteManagement): Self = StObject.set(x, "RemoteManagement", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteManagementUndefined: Self = StObject.set(x, "RemoteManagement", js.undefined)
     
     inline def setResources(value: JobResource): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     

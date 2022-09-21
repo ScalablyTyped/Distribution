@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrdersCreateTestOrderResponse extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#ordersCreateTestOrderResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "content#ordersCreateTestOrderResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the newly created test order.
     */
-  var orderId: js.UndefOr[String] = js.undefined
+  var orderId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrdersCreateTestOrderResponse {
   
@@ -28,9 +27,13 @@ object SchemaOrdersCreateTestOrderResponse {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    
+    inline def setOrderIdNull: Self = StObject.set(x, "orderId", null)
     
     inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
   }

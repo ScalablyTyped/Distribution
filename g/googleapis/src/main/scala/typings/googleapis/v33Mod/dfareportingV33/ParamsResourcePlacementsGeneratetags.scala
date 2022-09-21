@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourcePlacementsGeneratetags
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Generate placements belonging to this campaign. This is a required field.
@@ -33,8 +24,7 @@ trait ParamsResourcePlacementsGeneratetags
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Tag formats to generate for these placements.  Note:
-    * PLACEMENT_TAG_STANDARD can only be generated for 1x1 placements.
+    * Tag formats to generate for these placements. *Note:* PLACEMENT_TAG_STANDARD can only be generated for 1x1 placements.
     */
   var tagFormats: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -47,10 +37,6 @@ object ParamsResourcePlacementsGeneratetags {
   
   extension [Self <: ParamsResourcePlacementsGeneratetags](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     inline def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
@@ -59,7 +45,7 @@ object ParamsResourcePlacementsGeneratetags {
     
     inline def setPlacementIdsUndefined: Self = StObject.set(x, "placementIds", js.undefined)
     
-    inline def setPlacementIdsVarargs(value: String*): Self = StObject.set(x, "placementIds", js.Array(value :_*))
+    inline def setPlacementIdsVarargs(value: String*): Self = StObject.set(x, "placementIds", js.Array(value*))
     
     inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
@@ -69,6 +55,6 @@ object ParamsResourcePlacementsGeneratetags {
     
     inline def setTagFormatsUndefined: Self = StObject.set(x, "tagFormats", js.undefined)
     
-    inline def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value :_*))
+    inline def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value*))
   }
 }

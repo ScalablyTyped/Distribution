@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libIslotsMod {
   
-  type ExtractProps[TUnion] = js.Any
+  type ExtractProps[TUnion] = Any
   
   type ExtractShorthand[TUnion] = String | Double | Boolean
   

@@ -10,9 +10,9 @@ object webGLDataBufferMod {
   
   @JSImport("babylonjs/Meshes/WebGL/webGLDataBuffer", "WebGLDataBuffer")
   @js.native
-  class WebGLDataBuffer protected () extends DataBuffer {
+  open class WebGLDataBuffer protected () extends DataBuffer {
     def this(resource: WebGLBuffer) = this()
     
-    /* private */ var _buffer: js.Any = js.native
+    /* private */ var _buffer: Any = js.native
   }
 }

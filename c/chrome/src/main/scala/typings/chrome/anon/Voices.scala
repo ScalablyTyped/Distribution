@@ -19,6 +19,6 @@ object Voices {
     
     inline def setVoices(value: js.Array[Eventtypes]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
     
-    inline def setVoicesVarargs(value: Eventtypes*): Self = StObject.set(x, "voices", js.Array(value :_*))
+    inline def setVoicesVarargs(value: Eventtypes*): Self = StObject.set(x, "voices", js.Array(value*))
   }
 }

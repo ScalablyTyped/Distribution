@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "LerpBlock")
 @js.native
-class LerpBlock protected ()
+open class LerpBlock protected ()
   extends typings.babylonjs.nodeIndexMod.LerpBlock {
   /**
     * Creates a new LerpBlock

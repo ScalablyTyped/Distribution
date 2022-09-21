@@ -9,7 +9,7 @@ trait LookupEventsRequest extends StObject {
   /**
     * Specifies that only events that occur before or at the specified time are returned. If the specified end time is before the specified start time, an error is returned.
     */
-  var EndTime: js.UndefOr[Date] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies the event category. If you do not specify an event category, events of the category are not returned in the response. For example, if you do not specify insight as the value of EventCategory, no Insights events are returned.
@@ -27,14 +27,14 @@ trait LookupEventsRequest extends StObject {
   var MaxResults: js.UndefOr[typings.awsSdk.cloudtrailMod.MaxResults] = js.undefined
   
   /**
-    * The token to use to get the next page of results after a previous API call. This token must be passed in with the same parameters that were specified in the the original call. For example, if the original call specified an AttributeKey of 'Username' with a value of 'root', the call with NextToken should include those same parameters.
+    * The token to use to get the next page of results after a previous API call. This token must be passed in with the same parameters that were specified in the original call. For example, if the original call specified an AttributeKey of 'Username' with a value of 'root', the call with NextToken should include those same parameters.
     */
   var NextToken: js.UndefOr[typings.awsSdk.cloudtrailMod.NextToken] = js.undefined
   
   /**
     * Specifies that only events that occur after or at the specified time are returned. If the specified start time is after the specified end time, an error is returned.
     */
-  var StartTime: js.UndefOr[Date] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object LookupEventsRequest {
   
@@ -45,7 +45,7 @@ object LookupEventsRequest {
   
   extension [Self <: LookupEventsRequest](x: Self) {
     
-    inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -57,7 +57,7 @@ object LookupEventsRequest {
     
     inline def setLookupAttributesUndefined: Self = StObject.set(x, "LookupAttributes", js.undefined)
     
-    inline def setLookupAttributesVarargs(value: LookupAttribute*): Self = StObject.set(x, "LookupAttributes", js.Array(value :_*))
+    inline def setLookupAttributesVarargs(value: LookupAttribute*): Self = StObject.set(x, "LookupAttributes", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object LookupEventsRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

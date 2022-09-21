@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogsLocation extends StObject {
   
   /**
-    *  Information about Amazon CloudWatch Logs for a build project. 
+    *  Information about CloudWatch Logs for a build project. 
     */
   var cloudWatchLogs: js.UndefOr[CloudWatchLogsConfig] = js.undefined
   
   /**
-    *  The ARN of Amazon CloudWatch Logs for a build project. Its format is arn:${Partition}:logs:${Region}:${Account}:log-group:${LogGroupName}:log-stream:${LogStreamName}. For more information, see Resources Defined by Amazon CloudWatch Logs. 
+    *  The ARN of CloudWatch Logs for a build project. Its format is arn:${Partition}:logs:${Region}:${Account}:log-group:${LogGroupName}:log-stream:${LogStreamName}. For more information, see Resources Defined by CloudWatch Logs. 
     */
   var cloudWatchLogsArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The URL to an individual build log in Amazon CloudWatch Logs.
+    * The URL to an individual build log in CloudWatch Logs.
     */
   var deepLink: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the Amazon CloudWatch Logs group for the build logs.
+    * The name of the CloudWatch Logs group for the build logs.
     */
   var groupName: js.UndefOr[String] = js.undefined
   
@@ -42,7 +42,7 @@ trait LogsLocation extends StObject {
   var s3LogsArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the Amazon CloudWatch Logs stream for the build logs.
+    * The name of the CloudWatch Logs stream for the build logs.
     */
   var streamName: js.UndefOr[String] = js.undefined
 }

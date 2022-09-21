@@ -33,6 +33,6 @@ object DescribeInstancesResult {
     
     inline def setReservationsUndefined: Self = StObject.set(x, "Reservations", js.undefined)
     
-    inline def setReservationsVarargs(value: Reservation*): Self = StObject.set(x, "Reservations", js.Array(value :_*))
+    inline def setReservationsVarargs(value: Reservation*): Self = StObject.set(x, "Reservations", js.Array(value*))
   }
 }

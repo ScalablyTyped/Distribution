@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Legend")
 @js.native
-/* private */ class Legend ()
+/* private */ open class Legend ()
   extends StObject
      with typings.activexExcel.Excel.Legend {
   
@@ -17,19 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexExcel.Excel.Application = js.native
   
   /* CompleteClass */
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   /* CompleteClass */
   override val Border: typings.activexExcel.Excel.Border = js.native
   
   /* CompleteClass */
-  override def Clear(): js.Any = js.native
+  override def Clear(): Any = js.native
   
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
   /* CompleteClass */
-  override def Delete(): js.Any = js.native
+  override def Delete(): Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Excel.Legend_typekey")
@@ -66,13 +66,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Position: XlLegendPosition = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
   
   /* CompleteClass */
   var Shadow: Boolean = js.native

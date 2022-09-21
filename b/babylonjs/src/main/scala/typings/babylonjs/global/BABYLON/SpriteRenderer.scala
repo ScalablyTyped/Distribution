@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SpriteRenderer")
 @js.native
-class SpriteRenderer protected ()
+open class SpriteRenderer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SpriteRenderer {
   /**

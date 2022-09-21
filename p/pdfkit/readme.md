@@ -1,7 +1,7 @@
 
 # Scala.js typings for pdfkit
 
-Typings are for version v0.10.0
+Typings are for version v0.12.3
 
 ## Library description:
 A PDF generation library for Node.js
@@ -10,10 +10,10 @@ A PDF generation library for Node.js
 | ------------------ | :-------------: |
 | Full name          | pdfkit |
 | Keywords           | pdf, pdf writer, pdf generator, graphics, document, vector |
-| # releases         | 4 |
-| # dependents       | 237 |
-| # downloads        | 20065326 |
-| # stars            | 76 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1999605.0 |
+| # stars            | 8158.0 |
 
 ## Links
 - [Homepage](http://pdfkit.org/)

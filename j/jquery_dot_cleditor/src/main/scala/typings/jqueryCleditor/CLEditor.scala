@@ -35,10 +35,10 @@ trait CLEditor extends StObject {
   
   var doc: Document = js.native
   
-  def execCommand(commands: String, value: js.Any): CLEditor = js.native
-  def execCommand(commands: String, value: js.Any, useCSS: Boolean): CLEditor = js.native
-  def execCommand(commands: String, value: js.Any, useCSS: Boolean, button: js.Any): CLEditor = js.native
-  def execCommand(commands: String, value: js.Any, useCSS: Unit, button: js.Any): CLEditor = js.native
+  def execCommand(commands: String, value: Any): CLEditor = js.native
+  def execCommand(commands: String, value: Any, useCSS: Boolean): CLEditor = js.native
+  def execCommand(commands: String, value: Any, useCSS: Boolean, button: Any): CLEditor = js.native
+  def execCommand(commands: String, value: Any, useCSS: Unit, button: Any): CLEditor = js.native
   
   def focus(): CLEditor = js.native
   
@@ -55,7 +55,7 @@ trait CLEditor extends StObject {
   def selectedText(): String = js.native
   
   def showMessage(message: String): CLEditor = js.native
-  def showMessage(message: String, button: js.Any): CLEditor = js.native
+  def showMessage(message: String, button: Any): CLEditor = js.native
   
   def sourceMode(): Boolean = js.native
   

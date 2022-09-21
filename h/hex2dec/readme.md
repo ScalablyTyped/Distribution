@@ -10,10 +10,10 @@ Arbitrary precision decimal/hexadecimal converter.
 | ------------------ | :-------------: |
 | Full name          | hex2dec |
 | Keywords           | decimal, hexadecimal, converter, precision, int64, long, hex |
-| # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 12414045 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1046310.0 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/donmccurdy/hex2dec#readme)

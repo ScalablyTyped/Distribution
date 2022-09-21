@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Storage
 
-import typings.std.Uint8Array
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.IAsyncAction
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.PathIO")
 @js.native
-class PathIO ()
+open class PathIO ()
   extends StObject
      with typings.winrt.Windows.Storage.PathIO
 /* static members */
@@ -39,7 +38,7 @@ object PathIO {
   
   inline def writeBufferAsync(absolutePath: String, buffer: IBuffer): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBufferAsync")(absolutePath.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
   
-  inline def writeBytesAsync(absolutePath: String, buffer: Uint8Array): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBytesAsync")(absolutePath.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
+  inline def writeBytesAsync(absolutePath: String, buffer: js.typedarray.Uint8Array): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBytesAsync")(absolutePath.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
   
   inline def writeLinesAsync(absolutePath: String, lines: IIterable[String]): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
   inline def writeLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]

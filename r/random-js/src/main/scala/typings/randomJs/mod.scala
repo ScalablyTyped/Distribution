@@ -4,7 +4,6 @@ import typings.randomJs.typesMod.Distribution
 import typings.randomJs.typesMod.Engine
 import typings.randomJs.typesMod.StringDistribution
 import typings.std.ArrayLike
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object mod {
     * MersenneTwister19937 should not be instantiated directly.
     * Instead, use the static methods `seed`, `seedWithArray`, or `autoSeed`.
     */
-  /* private */ class MersenneTwister19937 ()
+  /* private */ open class MersenneTwister19937 ()
     extends typings.randomJs.mersenneTwister19937Mod.MersenneTwister19937
   /* static members */
   object MersenneTwister19937 {
@@ -55,7 +54,7 @@ object mod {
     * Creates a new Random wrapper
     * @param engine The engine to use (defaults to a `Math.random`-based implementation)
     */
-  class Random ()
+  open class Random ()
     extends typings.randomJs.randomMod.Random {
     def this(engine: Engine) = this()
   }
@@ -73,7 +72,7 @@ object mod {
   inline def createEntropy(engine: Engine): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEntropy")(engine.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   inline def createEntropy(engine: Engine, length: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEntropy")(engine.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  inline def date(start: Date, end: Date): Distribution[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Distribution[Date]]
+  inline def date(start: js.Date, end: js.Date): Distribution[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Distribution[js.Date]]
   
   inline def dice(sideCount: Double, dieCount: Double): Distribution[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dice")(sideCount.asInstanceOf[js.Any], dieCount.asInstanceOf[js.Any])).asInstanceOf[Distribution[js.Array[Double]]]
   

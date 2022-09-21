@@ -37,7 +37,7 @@ object ParentalControlSettings {
     
     inline def setCountriesBlockedForMinorsUndefined: Self = StObject.set(x, "countriesBlockedForMinors", js.undefined)
     
-    inline def setCountriesBlockedForMinorsVarargs(value: String*): Self = StObject.set(x, "countriesBlockedForMinors", js.Array(value :_*))
+    inline def setCountriesBlockedForMinorsVarargs(value: String*): Self = StObject.set(x, "countriesBlockedForMinors", js.Array(value*))
     
     inline def setLegalAgeGroupRule(value: NullableOption[String]): Self = StObject.set(x, "legalAgeGroupRule", value.asInstanceOf[js.Any])
     

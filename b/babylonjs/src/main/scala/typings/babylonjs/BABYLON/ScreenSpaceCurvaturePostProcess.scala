@@ -9,7 +9,7 @@ trait ScreenSpaceCurvaturePostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _geometryBufferRenderer: js.Any = js.native
+  /* private */ var _geometryBufferRenderer: Any = js.native
   
   /**
     * Defines how much ridge the curvature effect displays.

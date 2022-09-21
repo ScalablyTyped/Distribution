@@ -34,7 +34,7 @@ trait FilePattern extends StObject {
     * Choose the type to use when including a file
     * @default 'js'
     * @description  The type determines the mechanism for including the file.
-    * The css and html types create link elements; the js, dart, and module elements create script elements.
+    * The css and html types create link elements; the js and module elements create script elements.
     * The dom type includes the file content in the page, used, for example, to test components combining HTML and JS.
     */
   var `type`: js.UndefOr[FilePatternTypes] = js.undefined

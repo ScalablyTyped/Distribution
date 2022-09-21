@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata for Index operations.
-  */
 trait SchemaGoogleDatastoreAdminV1IndexOperationMetadata extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaGoogleDatastoreAdminV1IndexOperationMetadata extends StObject {
   /**
     * The index resource ID that this operation is acting on.
     */
-  var indexId: js.UndefOr[String] = js.undefined
+  var indexId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * An estimate of the number of entities processed.
@@ -38,6 +35,8 @@ object SchemaGoogleDatastoreAdminV1IndexOperationMetadata {
     inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
     inline def setIndexId(value: String): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
+    
+    inline def setIndexIdNull: Self = StObject.set(x, "indexId", null)
     
     inline def setIndexIdUndefined: Self = StObject.set(x, "indexId", js.undefined)
     

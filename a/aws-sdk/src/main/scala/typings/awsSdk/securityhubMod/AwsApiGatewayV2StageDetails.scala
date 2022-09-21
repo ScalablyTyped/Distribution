@@ -22,6 +22,11 @@ trait AwsApiGatewayV2StageDetails extends StObject {
   var AutoDeploy: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The identifier of a client certificate for a stage. Supported only for WebSocket API calls.
+    */
+  var ClientCertificateId: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
     * Indicates when the stage was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
   var CreatedDate: js.UndefOr[NonEmptyString] = js.undefined
@@ -86,6 +91,10 @@ object AwsApiGatewayV2StageDetails {
     inline def setAutoDeploy(value: Boolean): Self = StObject.set(x, "AutoDeploy", value.asInstanceOf[js.Any])
     
     inline def setAutoDeployUndefined: Self = StObject.set(x, "AutoDeploy", js.undefined)
+    
+    inline def setClientCertificateId(value: NonEmptyString): Self = StObject.set(x, "ClientCertificateId", value.asInstanceOf[js.Any])
+    
+    inline def setClientCertificateIdUndefined: Self = StObject.set(x, "ClientCertificateId", js.undefined)
     
     inline def setCreatedDate(value: NonEmptyString): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

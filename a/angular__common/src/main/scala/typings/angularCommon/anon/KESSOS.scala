@@ -33,22 +33,22 @@ object KESSOS {
     
     inline def setBBD(value: js.Array[String]): Self = StObject.set(x, "BBD", value.asInstanceOf[js.Any])
     
-    inline def setBBDVarargs(value: String*): Self = StObject.set(x, "BBD", js.Array(value :_*))
+    inline def setBBDVarargs(value: String*): Self = StObject.set(x, "BBD", js.Array(value*))
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setKES(value: js.Array[String]): Self = StObject.set(x, "KES", value.asInstanceOf[js.Any])
     
-    inline def setKESVarargs(value: String*): Self = StObject.set(x, "KES", js.Array(value :_*))
+    inline def setKESVarargs(value: String*): Self = StObject.set(x, "KES", js.Array(value*))
     
     inline def setSOS(value: js.Array[String]): Self = StObject.set(x, "SOS", value.asInstanceOf[js.Any])
     
-    inline def setSOSVarargs(value: String*): Self = StObject.set(x, "SOS", js.Array(value :_*))
+    inline def setSOSVarargs(value: String*): Self = StObject.set(x, "SOS", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
   }
 }

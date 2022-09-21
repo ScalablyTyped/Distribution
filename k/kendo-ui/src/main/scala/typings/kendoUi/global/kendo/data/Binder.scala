@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.Binder")
 @js.native
-class Binder protected ()
+open class Binder protected ()
   extends StObject
      with typings.kendoUi.kendo.data.Binder {
-  def this(element: js.Any, bindings: Bindings) = this()
-  def this(element: js.Any, bindings: Bindings, options: BinderOptions) = this()
+  def this(element: Any, bindings: Bindings) = this()
+  def this(element: Any, bindings: Bindings, options: BinderOptions) = this()
 }
 object Binder {
   

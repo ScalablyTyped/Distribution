@@ -1,47 +1,44 @@
 package typings.nivoLegends.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Color extends js.Object {
-  var color: js.UndefOr[String] = js.native
-  var fill: js.UndefOr[String] = js.native
-  var id: String | Double = js.native
-  var label: String | Double = js.native
+trait Color extends StObject {
+  
+  var color: Double
+  
+  var extent: js.Array[Double]
+  
+  var id: Double
+  
+  var index: Double
+  
+  var label: String
+  
+  var value: Double
 }
-
 object Color {
-  @scala.inline
-  def apply(id: String | Double, label: String | Double): Color = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+  
+  inline def apply(color: Double, extent: js.Array[Double], id: Double, index: Double, label: String, value: Double): Color = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
-  @scala.inline
-  implicit class ColorOps[Self <: Color] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setLabel(value: String | Double): Self = this.set("label", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
-    @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
-  }
   
+  extension [Self <: Color](x: Self) {
+    
+    inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setExtent(value: js.Array[Double]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    
+    inline def setExtentVarargs(value: Double*): Self = StObject.set(x, "extent", js.Array(value*))
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

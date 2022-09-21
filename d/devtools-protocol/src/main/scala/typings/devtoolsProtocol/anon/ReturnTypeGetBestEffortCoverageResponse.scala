@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReturnTypeGetBestEffortCoverageResponse extends StObject {
   
-  var paramsType: js.Array[js.Any]
+  var paramsType: js.Array[Any]
   
   var returnType: GetBestEffortCoverageResponse
 }
 object ReturnTypeGetBestEffortCoverageResponse {
   
-  inline def apply(paramsType: js.Array[js.Any], returnType: GetBestEffortCoverageResponse): ReturnTypeGetBestEffortCoverageResponse = {
+  inline def apply(paramsType: js.Array[Any], returnType: GetBestEffortCoverageResponse): ReturnTypeGetBestEffortCoverageResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetBestEffortCoverageResponse]
   }
   
   extension [Self <: ReturnTypeGetBestEffortCoverageResponse](x: Self) {
     
-    inline def setParamsType(value: js.Array[js.Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: js.Any*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: Any*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetBestEffortCoverageResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

@@ -1,7 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.asc_
-import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +20,8 @@ trait FieldColumn
   /**
     * The field configuration for the column.
     *
+    * @deprecated since version 4.24. Use {@link module:esri/widgets/FeatureTable/support/FieldColumnTemplate} via the FeatureTable's {@link module:esri/widgets/FeatureTable/support/TableTemplate tableTemplate}.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#config)
     */
   var config: FieldColumnConfig = js.native
@@ -31,7 +31,7 @@ trait FieldColumn
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#defaultValue)
     */
-  val defaultValue: Double | String | js.Any = js.native
+  val defaultValue: Double | String | Any = js.native
   
   /**
     * Contains information describing the purpose of each field.
@@ -39,13 +39,6 @@ trait FieldColumn
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#description)
     */
   val description: String = js.native
-  
-  /**
-    * Controls the sort order of the column.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#direction)
-    */
-  var direction: asc_ | desc_ | js.Any = js.native
   
   /**
     * Indicates whether the field is editable.
@@ -62,11 +55,11 @@ trait FieldColumn
   var field: Field = js.native
   
   /**
-    * If applicable, the associated [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) tied to the column.
+    * If applicable, the associated [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) tied to the column.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#layer)
     */
-  var layer: FeatureLayer = js.native
+  var layer: FeatureLayer | SceneLayer = js.native
   
   /**
     * Restricts the input length for the column.
@@ -81,6 +74,13 @@ trait FieldColumn
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#menuConfig)
     */
   val menuConfig: ButtonMenuConfig = js.native
+  
+  /**
+    * Restricts the input length for the column.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#minLength)
+    */
+  val minLength: Double = js.native
   
   /**
     * The name of the field.

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Row")
 @js.native
-/* private */ class Row ()
+/* private */ open class Row ()
   extends StObject
      with typings.activexOutlook.Outlook.Row {
   
@@ -16,30 +16,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexOutlook.Outlook.Application = js.native
   
   /* CompleteClass */
-  override def BinaryToString(Index: js.Any): String = js.native
+  override def BinaryToString(Index: Any): String = js.native
   
   /* CompleteClass */
   override val Class: OlObjectClass = js.native
   
   /* CompleteClass */
-  override def GetValues(): js.Any = js.native
+  override def GetValues(): Any = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): js.Any = js.native
+  override def Item(Index: Any): Any = js.native
   
   /* CompleteClass */
-  override def LocalTimeToUTC(Index: js.Any): VarDate = js.native
+  override def LocalTimeToUTC(Index: Any): VarDate = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.Row_typekey")
   var OutlookDotRow_typekey: typings.activexOutlook.Outlook.Row = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native
   
   /* CompleteClass */
-  override def UTCToLocalTime(Index: js.Any): VarDate = js.native
+  override def UTCToLocalTime(Index: Any): VarDate = js.native
 }

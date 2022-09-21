@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.ACL")
 @js.native
-class ACL () extends StObject {
-  def this(arg1: js.Any) = this()
+open class ACL () extends StObject {
+  def this(arg1: Any) = this()
   
   def getPublicReadAccess(): Boolean = js.native
   
@@ -38,7 +38,7 @@ class ACL () extends StObject {
   def getWriteAccess(userId: String): Boolean = js.native
   def getWriteAccess(userId: User[Attributes]): Boolean = js.native
   
-  var permissionsById: js.Any = js.native
+  var permissionsById: Any = js.native
   
   def setPublicReadAccess(allowed: Boolean): Unit = js.native
   
@@ -56,5 +56,5 @@ class ACL () extends StObject {
   def setWriteAccess(userId: String, allowed: Boolean): Unit = js.native
   def setWriteAccess(userId: User[Attributes], allowed: Boolean): Unit = js.native
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

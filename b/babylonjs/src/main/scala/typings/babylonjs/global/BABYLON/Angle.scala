@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Angle")
 @js.native
-class Angle protected ()
+open class Angle protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Angle {
   /**
@@ -17,7 +17,7 @@ class Angle protected ()
   def this(radians: Double) = this()
   
   /* private */ /* CompleteClass */
-  var _radians: js.Any = js.native
+  var _radians: Any = js.native
   
   /**
     * Get value in degrees

@@ -33,7 +33,7 @@ object SvgPanZoom {
       
       inline def setHaltEventListeners(value: js.Array[String]): Self = StObject.set(x, "haltEventListeners", value.asInstanceOf[js.Any])
       
-      inline def setHaltEventListenersVarargs(value: String*): Self = StObject.set(x, "haltEventListeners", js.Array(value :_*))
+      inline def setHaltEventListenersVarargs(value: String*): Self = StObject.set(x, "haltEventListeners", js.Array(value*))
       
       inline def setInit(value: CustomEventOptions => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }

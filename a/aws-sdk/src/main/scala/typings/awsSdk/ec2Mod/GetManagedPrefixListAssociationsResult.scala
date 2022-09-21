@@ -33,6 +33,6 @@ object GetManagedPrefixListAssociationsResult {
     
     inline def setPrefixListAssociationsUndefined: Self = StObject.set(x, "PrefixListAssociations", js.undefined)
     
-    inline def setPrefixListAssociationsVarargs(value: PrefixListAssociation*): Self = StObject.set(x, "PrefixListAssociations", js.Array(value :_*))
+    inline def setPrefixListAssociationsVarargs(value: PrefixListAssociation*): Self = StObject.set(x, "PrefixListAssociations", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage.Streams
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IPromiseWithOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +34,7 @@ trait DataReader extends StObject {
     * @param count The count of bytes to load into the intermediate buffer.
     * @return The asynchronous load data request.
     */
-  def loadAsync(count: Double): IPromiseWithOperation[js.Any, DataReaderLoadOperation]
+  def loadAsync(count: Double): IPromiseWithOperation[Any, DataReaderLoadOperation]
   
   /**
     * Reads a Boolean value from the input stream.
@@ -66,7 +65,7 @@ trait DataReader extends StObject {
     * Reads a date and time value from the input stream.
     * @return The value.
     */
-  def readDateTime(): Date
+  def readDateTime(): js.Date
   
   /**
     * Reads a floating-point value from the input stream.
@@ -149,12 +148,12 @@ object DataReader {
     detachBuffer: () => IBuffer,
     detachStream: () => IInputStream,
     inputStreamOptions: InputStreamOptions,
-    loadAsync: Double => IPromiseWithOperation[js.Any, DataReaderLoadOperation],
+    loadAsync: Double => IPromiseWithOperation[Any, DataReaderLoadOperation],
     readBoolean: () => Boolean,
     readBuffer: Double => IBuffer,
     readByte: () => Double,
     readBytes: () => js.Array[Double],
-    readDateTime: () => Date,
+    readDateTime: () => js.Date,
     readDouble: () => Double,
     readGuid: () => String,
     readInt16: () => Double,
@@ -185,7 +184,7 @@ object DataReader {
     
     inline def setInputStreamOptions(value: InputStreamOptions): Self = StObject.set(x, "inputStreamOptions", value.asInstanceOf[js.Any])
     
-    inline def setLoadAsync(value: Double => IPromiseWithOperation[js.Any, DataReaderLoadOperation]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction1(value))
+    inline def setLoadAsync(value: Double => IPromiseWithOperation[Any, DataReaderLoadOperation]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction1(value))
     
     inline def setReadBoolean(value: () => Boolean): Self = StObject.set(x, "readBoolean", js.Any.fromFunction0(value))
     
@@ -195,7 +194,7 @@ object DataReader {
     
     inline def setReadBytes(value: () => js.Array[Double]): Self = StObject.set(x, "readBytes", js.Any.fromFunction0(value))
     
-    inline def setReadDateTime(value: () => Date): Self = StObject.set(x, "readDateTime", js.Any.fromFunction0(value))
+    inline def setReadDateTime(value: () => js.Date): Self = StObject.set(x, "readDateTime", js.Any.fromFunction0(value))
     
     inline def setReadDouble(value: () => Double): Self = StObject.set(x, "readDouble", js.Any.fromFunction0(value))
     

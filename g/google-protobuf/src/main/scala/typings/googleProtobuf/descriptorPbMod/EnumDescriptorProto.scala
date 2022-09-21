@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto")
 @js.native
-class EnumDescriptorProto () extends Message {
+open class EnumDescriptorProto () extends Message {
   
   def addReservedName(value: String): String = js.native
   def addReservedName(value: String, index: Double): String = js.native
@@ -73,7 +72,7 @@ object EnumDescriptorProto {
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.EnumReservedRange")
   @js.native
-  class EnumReservedRange () extends Message {
+  open class EnumReservedRange () extends Message {
     
     def clearEnd(): EnumReservedRange = js.native
     
@@ -98,7 +97,7 @@ object EnumDescriptorProto {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
     
     inline def deserializeBinaryFromReader(message: EnumReservedRange, reader: BinaryReader): EnumReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EnumReservedRange]
     
@@ -143,7 +142,7 @@ object EnumDescriptorProto {
     }
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
   
   inline def deserializeBinaryFromReader(message: EnumDescriptorProto, reader: BinaryReader): EnumDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EnumDescriptorProto]
   
@@ -201,7 +200,7 @@ object EnumDescriptorProto {
       
       inline def setReservedNameList(value: js.Array[String]): Self = StObject.set(x, "reservedNameList", value.asInstanceOf[js.Any])
       
-      inline def setReservedNameListVarargs(value: String*): Self = StObject.set(x, "reservedNameList", js.Array(value :_*))
+      inline def setReservedNameListVarargs(value: String*): Self = StObject.set(x, "reservedNameList", js.Array(value*))
       
       inline def setReservedRangeList(
         value: js.Array[
@@ -209,11 +208,11 @@ object EnumDescriptorProto {
             ]
       ): Self = StObject.set(x, "reservedRangeList", value.asInstanceOf[js.Any])
       
-      inline def setReservedRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject*): Self = StObject.set(x, "reservedRangeList", js.Array(value :_*))
+      inline def setReservedRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject*): Self = StObject.set(x, "reservedRangeList", js.Array(value*))
       
       inline def setValueList(value: js.Array[typings.googleProtobuf.descriptorPbMod.EnumValueDescriptorProto.AsObject]): Self = StObject.set(x, "valueList", value.asInstanceOf[js.Any])
       
-      inline def setValueListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumValueDescriptorProto.AsObject*): Self = StObject.set(x, "valueList", js.Array(value :_*))
+      inline def setValueListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumValueDescriptorProto.AsObject*): Self = StObject.set(x, "valueList", js.Array(value*))
     }
   }
 }

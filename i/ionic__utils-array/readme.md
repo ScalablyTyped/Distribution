@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-array
 
-Typings are for version 1.2.2
+Typings are for version 2.1.5
 
 ## Library description:
 Array utils
@@ -10,10 +10,10 @@ Array utils
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-array |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 4 |
-| # downloads        | 3680942 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 665208.6666666666 |
+| # stars            | 1982.0 |
 
 ## Links
 - [Homepage](https://ionicframework.com/)

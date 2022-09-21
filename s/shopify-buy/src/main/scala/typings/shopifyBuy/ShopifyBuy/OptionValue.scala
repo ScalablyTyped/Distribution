@@ -10,11 +10,11 @@ trait OptionValue extends StObject {
   
   var option_id: String
   
-  var value: js.Any
+  var value: Any
 }
 object OptionValue {
   
-  inline def apply(name: String, option_id: String, value: js.Any): OptionValue = {
+  inline def apply(name: String, option_id: String, value: Any): OptionValue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], option_id = option_id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionValue]
   }
@@ -25,6 +25,6 @@ object OptionValue {
     
     inline def setOption_id(value: String): Self = StObject.set(x, "option_id", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

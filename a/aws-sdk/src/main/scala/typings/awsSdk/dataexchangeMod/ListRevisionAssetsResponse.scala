@@ -29,7 +29,7 @@ object ListRevisionAssetsResponse {
     
     inline def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
     
-    inline def setAssetsVarargs(value: AssetEntry*): Self = StObject.set(x, "Assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: AssetEntry*): Self = StObject.set(x, "Assets", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

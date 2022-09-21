@@ -10,10 +10,10 @@ security holding package
 | ------------------ | :-------------: |
 | Full name          | duo_web_sdk |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 0 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 15.666666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/npm/security-holder#readme)

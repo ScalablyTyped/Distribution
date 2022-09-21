@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +18,7 @@ trait LayerListProperties
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html).
+    * A function that executes each time a [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#listItemCreatedFunction)
     */
@@ -24,6 +26,8 @@ trait LayerListProperties
   
   /**
     * Indicates whether more than one list item may be selected by the user at a single time.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#multipleSelectionEnabled)
     */
@@ -39,23 +43,18 @@ trait LayerListProperties
   /**
     * Indicates whether list items may be selected by the user.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectionEnabled)
     */
   var selectionEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Option for enabling status indicators, which indicate whether or not each layer is loading resources.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#statusIndicatorsVisible)
-    */
-  var statusIndicatorsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * The view model for this widget.
@@ -84,7 +83,7 @@ object LayerListProperties {
     
     inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    inline def setListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
+    inline def setListItemCreatedFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
     
     inline def setListItemCreatedFunctionUndefined: Self = StObject.set(x, "listItemCreatedFunction", js.undefined)
     
@@ -96,17 +95,13 @@ object LayerListProperties {
     
     inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
-    inline def setSelectedItemsVarargs(value: ListItemProperties*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: ListItemProperties*): Self = StObject.set(x, "selectedItems", js.Array(value*))
     
     inline def setSelectionEnabled(value: Boolean): Self = StObject.set(x, "selectionEnabled", value.asInstanceOf[js.Any])
     
     inline def setSelectionEnabledUndefined: Self = StObject.set(x, "selectionEnabled", js.undefined)
     
-    inline def setStatusIndicatorsVisible(value: Boolean): Self = StObject.set(x, "statusIndicatorsVisible", value.asInstanceOf[js.Any])
-    
-    inline def setStatusIndicatorsVisibleUndefined: Self = StObject.set(x, "statusIndicatorsVisible", js.undefined)
-    
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewModel(value: LayerListViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

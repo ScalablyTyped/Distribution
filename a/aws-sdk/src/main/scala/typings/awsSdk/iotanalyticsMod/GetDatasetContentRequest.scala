@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDatasetContentRequest extends StObject {
   
   /**
-    * The name of the data set whose contents are retrieved.
+    * The name of the dataset whose contents are retrieved.
     */
   var datasetName: DatasetName
   
   /**
-    * The version of the data set whose contents are retrieved. You can also use the strings "$LATEST" or "$LATEST_SUCCEEDED" to retrieve the contents of the latest or latest successfully completed data set. If not specified, "$LATEST_SUCCEEDED" is the default.
+    * The version of the dataset whose contents are retrieved. You can also use the strings "$LATEST" or "$LATEST_SUCCEEDED" to retrieve the contents of the latest or latest successfully completed dataset. If not specified, "$LATEST_SUCCEEDED" is the default.
     */
   var versionId: js.UndefOr[DatasetContentVersion] = js.undefined
 }

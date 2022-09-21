@@ -9,7 +9,7 @@ trait InstanceNetworkInterfaceAttachment extends StObject {
   /**
     * The time stamp when the attachment initiated.
     */
-  var AttachTime: js.UndefOr[DateTime] = js.undefined
+  var AttachTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the network interface attachment.
@@ -45,7 +45,7 @@ object InstanceNetworkInterfaceAttachment {
   
   extension [Self <: InstanceNetworkInterfaceAttachment](x: Self) {
     
-    inline def setAttachTime(value: DateTime): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
+    inline def setAttachTime(value: js.Date): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     
     inline def setAttachTimeUndefined: Self = StObject.set(x, "AttachTime", js.undefined)
     

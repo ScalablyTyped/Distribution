@@ -29,7 +29,7 @@ object DBClusterBacktrackMessage {
     
     inline def setDBClusterBacktracksUndefined: Self = StObject.set(x, "DBClusterBacktracks", js.undefined)
     
-    inline def setDBClusterBacktracksVarargs(value: DBClusterBacktrack*): Self = StObject.set(x, "DBClusterBacktracks", js.Array(value :_*))
+    inline def setDBClusterBacktracksVarargs(value: DBClusterBacktrack*): Self = StObject.set(x, "DBClusterBacktracks", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

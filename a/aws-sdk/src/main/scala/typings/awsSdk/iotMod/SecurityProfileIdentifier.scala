@@ -12,7 +12,7 @@ trait SecurityProfileIdentifier extends StObject {
   var arn: SecurityProfileArn
   
   /**
-    * The name you have given to the security profile.
+    * The name you've given to the security profile.
     */
   var name: SecurityProfileName
 }

@@ -10,10 +10,10 @@ A JSON polyfill for older JavaScript platforms.
 | ------------------ | :-------------: |
 | Full name          | json3 |
 | Keywords           | json, spec, ecma, es5, lexer, parser, stringify |
-| # releases         | 2 |
-| # dependents       | 144 |
-| # downloads        | 352119235 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6410230333333332E7 |
+| # stars            | 1028.0 |
 
 ## Links
 - [Homepage](https://bestiejs.github.io/json3)

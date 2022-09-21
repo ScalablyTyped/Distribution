@@ -29,7 +29,7 @@ object GraphQLSchemaConfig {
     
     inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    inline def setDirectivesVarargs(value: GraphQLDirective*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: GraphQLDirective*): Self = StObject.set(x, "directives", js.Array(value*))
     
     inline def setMutation(value: GraphQLObjectType): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object GraphQLSchemaConfig {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: GraphQLNamedType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: GraphQLNamedType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

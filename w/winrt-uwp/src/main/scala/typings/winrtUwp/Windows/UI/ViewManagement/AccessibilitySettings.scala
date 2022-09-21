@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AccessibilitySettings extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_highcontrastchanged(`type`: highcontrastchanged, listener: TypedEventHandler[AccessibilitySettings, js.Any]): Unit = js.native
+  def addEventListener_highcontrastchanged(`type`: highcontrastchanged, listener: TypedEventHandler[AccessibilitySettings, Any]): Unit = js.native
   
   /** Gets a value that indicates whether the system high contrast feature is on or off. */
   var highContrast: Boolean = js.native
@@ -23,12 +23,12 @@ trait AccessibilitySettings extends StObject {
   var highContrastScheme: String = js.native
   
   /** Occurs when the system high contrast feature turns on or off. */
-  def onhighcontrastchanged(ev: js.Any & WinRTEvent[AccessibilitySettings]): Unit = js.native
+  def onhighcontrastchanged(ev: Any & WinRTEvent[AccessibilitySettings]): Unit = js.native
   /** Occurs when the system high contrast feature turns on or off. */
   @JSName("onhighcontrastchanged")
-  var onhighcontrastchanged_Original: TypedEventHandler[AccessibilitySettings, js.Any] = js.native
+  var onhighcontrastchanged_Original: TypedEventHandler[AccessibilitySettings, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_highcontrastchanged(`type`: highcontrastchanged, listener: TypedEventHandler[AccessibilitySettings, js.Any]): Unit = js.native
+  def removeEventListener_highcontrastchanged(`type`: highcontrastchanged, listener: TypedEventHandler[AccessibilitySettings, Any]): Unit = js.native
 }

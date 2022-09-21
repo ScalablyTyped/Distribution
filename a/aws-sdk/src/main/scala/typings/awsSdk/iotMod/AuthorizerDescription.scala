@@ -24,15 +24,20 @@ trait AuthorizerDescription extends StObject {
   /**
     * The UNIX timestamp of when the authorizer was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * When true, the result from the authorizer’s Lambda function is cached for the time specified in refreshAfterInSeconds. The cached result is used while the device reuses the same HTTP connection.
+    */
+  var enableCachingForHttp: js.UndefOr[EnableCachingForHttp] = js.undefined
   
   /**
     * The UNIX timestamp of when the authorizer was last updated.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Specifies whether AWS IoT validates the token signature in an authorization request.
+    * Specifies whether IoT validates the token signature in an authorization request.
     */
   var signingDisabled: js.UndefOr[BooleanKey] = js.undefined
   
@@ -72,11 +77,15 @@ object AuthorizerDescription {
     
     inline def setAuthorizerNameUndefined: Self = StObject.set(x, "authorizerName", js.undefined)
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setEnableCachingForHttp(value: EnableCachingForHttp): Self = StObject.set(x, "enableCachingForHttp", value.asInstanceOf[js.Any])
+    
+    inline def setEnableCachingForHttpUndefined: Self = StObject.set(x, "enableCachingForHttp", js.undefined)
+    
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     

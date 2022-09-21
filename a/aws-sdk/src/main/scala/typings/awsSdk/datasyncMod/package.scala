@@ -1,49 +1,60 @@
 package typings.awsSdk.datasyncMod
 
+import typings.awsSdk.awsSdkStrings.SIMPLE_PATTERN
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActivationKey = java.lang.String
+type ActivationKey = String
 
-type AgentArn = java.lang.String
+type AgentArn = String
 
-type AgentArnList = js.Array[typings.awsSdk.datasyncMod.AgentArn]
+type AgentArnList = js.Array[AgentArn]
 
-type AgentList = js.Array[typings.awsSdk.datasyncMod.AgentListEntry]
+type AgentList = js.Array[AgentListEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ONLINE
   - typings.awsSdk.awsSdkStrings.OFFLINE
   - java.lang.String
 */
-type AgentStatus = typings.awsSdk.datasyncMod._AgentStatus | java.lang.String
+type AgentStatus = _AgentStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.BEST_EFFORT
   - java.lang.String
 */
-type Atime = typings.awsSdk.datasyncMod._Atime | java.lang.String
+type Atime = _Atime | String
 
-type BytesPerSecond = scala.Double
+type BytesPerSecond = Double
 
-type DestinationNetworkInterfaceArns = js.Array[typings.awsSdk.datasyncMod.NetworkInterfaceArn]
+type DestinationNetworkInterfaceArns = js.Array[NetworkInterfaceArn]
 
-type Duration = scala.Double
+type Duration = Double
 
-type Ec2SecurityGroupArn = java.lang.String
+type Ec2SecurityGroupArn = String
 
-type Ec2SecurityGroupArnList = js.Array[typings.awsSdk.datasyncMod.Ec2SecurityGroupArn]
+type Ec2SecurityGroupArnList = js.Array[Ec2SecurityGroupArn]
 
-type Ec2SubnetArn = java.lang.String
+type Ec2SubnetArn = String
 
-type EfsFilesystemArn = java.lang.String
+type EfsAccessPointArn = String
 
-type EfsSubdirectory = java.lang.String
+type EfsFilesystemArn = String
 
-type Endpoint = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.TLS1_2
+  - java.lang.String
+*/
+type EfsInTransitEncryption = _EfsInTransitEncryption | String
+
+type EfsSubdirectory = String
+
+type Endpoint = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLIC
@@ -51,21 +62,27 @@ type Endpoint = java.lang.String
   - typings.awsSdk.awsSdkStrings.FIPS
   - java.lang.String
 */
-type EndpointType = typings.awsSdk.datasyncMod._EndpointType | java.lang.String
+type EndpointType = _EndpointType | String
 
-type FilterAttributeValue = java.lang.String
+type FilterAttributeValue = String
 
-type FilterList = js.Array[typings.awsSdk.datasyncMod.FilterRule]
+type FilterList = js.Array[FilterRule]
 
-type FilterType = typings.awsSdk.awsSdkStrings.SIMPLE_PATTERN | java.lang.String
+type FilterType = SIMPLE_PATTERN | String
 
-type FilterValue = java.lang.String
+type FilterValue = String
 
-type FilterValues = js.Array[typings.awsSdk.datasyncMod.FilterAttributeValue]
+type FilterValues = js.Array[FilterAttributeValue]
 
-type FsxFilesystemArn = java.lang.String
+type FsxFilesystemArn = String
 
-type FsxWindowsSubdirectory = java.lang.String
+type FsxLustreSubdirectory = String
+
+type FsxOntapSubdirectory = String
+
+type FsxOpenZfsSubdirectory = String
+
+type FsxWindowsSubdirectory = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -74,13 +91,60 @@ type FsxWindowsSubdirectory = java.lang.String
   - typings.awsSdk.awsSdkStrings.BOTH
   - java.lang.String
 */
-type Gid = typings.awsSdk.datasyncMod._Gid | java.lang.String
+type Gid = _Gid | String
 
-type IamRoleArn = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SIMPLE
+  - typings.awsSdk.awsSdkStrings.KERBEROS
+  - java.lang.String
+*/
+type HdfsAuthenticationType = _HdfsAuthenticationType | String
 
-type InputTagList = js.Array[typings.awsSdk.datasyncMod.TagListEntry]
+type HdfsBlockSize = Double
 
-type LocationArn = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.AUTHENTICATION
+  - typings.awsSdk.awsSdkStrings.INTEGRITY
+  - typings.awsSdk.awsSdkStrings.PRIVACY
+  - java.lang.String
+*/
+type HdfsDataTransferProtection = _HdfsDataTransferProtection | String
+
+type HdfsNameNodeList = js.Array[HdfsNameNode]
+
+type HdfsReplicationFactor = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.AUTHENTICATION
+  - typings.awsSdk.awsSdkStrings.INTEGRITY
+  - typings.awsSdk.awsSdkStrings.PRIVACY
+  - java.lang.String
+*/
+type HdfsRpcProtection = _HdfsRpcProtection | String
+
+type HdfsServerHostname = String
+
+type HdfsServerPort = Double
+
+type HdfsSubdirectory = String
+
+type HdfsUser = String
+
+type IamRoleArn = String
+
+type InputTagList = js.Array[TagListEntry]
+
+type KerberosKeytabFile = Buffer | js.typedarray.Uint8Array | Blob | String
+
+type KerberosKrb5ConfFile = Buffer | js.typedarray.Uint8Array | Blob | String
+
+type KerberosPrincipal = String
+
+type KmsKeyProviderUri = String
+
+type LocationArn = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LocationUri
@@ -88,15 +152,15 @@ type LocationArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.CreationTime
   - java.lang.String
 */
-type LocationFilterName = typings.awsSdk.datasyncMod._LocationFilterName | java.lang.String
+type LocationFilterName = _LocationFilterName | String
 
-type LocationFilters = js.Array[typings.awsSdk.datasyncMod.LocationFilter]
+type LocationFilters = js.Array[LocationFilter]
 
-type LocationList = js.Array[typings.awsSdk.datasyncMod.LocationListEntry]
+type LocationList = js.Array[LocationListEntry]
 
-type LocationUri = java.lang.String
+type LocationUri = String
 
-type LogGroupArn = java.lang.String
+type LogGroupArn = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
@@ -104,22 +168,22 @@ type LogGroupArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.TRANSFER
   - java.lang.String
 */
-type LogLevel = typings.awsSdk.datasyncMod._LogLevel | java.lang.String
+type LogLevel = _LogLevel | String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.PRESERVE
   - java.lang.String
 */
-type Mtime = typings.awsSdk.datasyncMod._Mtime | java.lang.String
+type Mtime = _Mtime | String
 
-type NetworkInterfaceArn = java.lang.String
+type NetworkInterfaceArn = String
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type NfsSubdirectory = java.lang.String
+type NfsSubdirectory = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTOMATIC
@@ -128,22 +192,29 @@ type NfsSubdirectory = java.lang.String
   - typings.awsSdk.awsSdkStrings.NFS4_1
   - java.lang.String
 */
-type NfsVersion = typings.awsSdk.datasyncMod._NfsVersion | java.lang.String
+type NfsVersion = _NfsVersion | String
 
-type ObjectStorageAccessKey = java.lang.String
+type ObjectStorageAccessKey = String
 
-type ObjectStorageBucketName = java.lang.String
+type ObjectStorageBucketName = String
 
-type ObjectStorageSecretKey = java.lang.String
+type ObjectStorageSecretKey = String
 
-type ObjectStorageServerPort = scala.Double
+type ObjectStorageServerPort = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HTTPS
   - typings.awsSdk.awsSdkStrings.HTTP
   - java.lang.String
 */
-type ObjectStorageServerProtocol = typings.awsSdk.datasyncMod._ObjectStorageServerProtocol | java.lang.String
+type ObjectStorageServerProtocol = _ObjectStorageServerProtocol | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PRESERVE
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type ObjectTags = _ObjectTags | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Equals_
@@ -158,20 +229,20 @@ type ObjectStorageServerProtocol = typings.awsSdk.datasyncMod._ObjectStorageServ
   - typings.awsSdk.awsSdkStrings.BeginsWith
   - java.lang.String
 */
-type Operator = typings.awsSdk.datasyncMod._Operator | java.lang.String
+type Operator = _Operator | String
 
-type OutputTagList = js.Array[typings.awsSdk.datasyncMod.TagListEntry]
+type OutputTagList = js.Array[TagListEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALWAYS
   - typings.awsSdk.awsSdkStrings.NEVER
   - java.lang.String
 */
-type OverwriteMode = typings.awsSdk.datasyncMod._OverwriteMode | java.lang.String
+type OverwriteMode = _OverwriteMode | String
 
-type PLSecurityGroupArnList = js.Array[typings.awsSdk.datasyncMod.Ec2SecurityGroupArn]
+type PLSecurityGroupArnList = js.Array[Ec2SecurityGroupArn]
 
-type PLSubnetArnList = js.Array[typings.awsSdk.datasyncMod.Ec2SubnetArn]
+type PLSubnetArnList = js.Array[Ec2SubnetArn]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -179,30 +250,30 @@ type PLSubnetArnList = js.Array[typings.awsSdk.datasyncMod.Ec2SubnetArn]
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type PhaseStatus = typings.awsSdk.datasyncMod._PhaseStatus | java.lang.String
+type PhaseStatus = _PhaseStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.PRESERVE
   - java.lang.String
 */
-type PosixPermissions = typings.awsSdk.datasyncMod._PosixPermissions | java.lang.String
+type PosixPermissions = _PosixPermissions | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PRESERVE
   - typings.awsSdk.awsSdkStrings.REMOVE
   - java.lang.String
 */
-type PreserveDeletedFiles = typings.awsSdk.datasyncMod._PreserveDeletedFiles | java.lang.String
+type PreserveDeletedFiles = _PreserveDeletedFiles | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.PRESERVE
   - java.lang.String
 */
-type PreserveDevices = typings.awsSdk.datasyncMod._PreserveDevices | java.lang.String
+type PreserveDevices = _PreserveDevices | String
 
-type S3BucketArn = java.lang.String
+type S3BucketArn = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
@@ -214,21 +285,29 @@ type S3BucketArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.OUTPOSTS
   - java.lang.String
 */
-type S3StorageClass = typings.awsSdk.datasyncMod._S3StorageClass | java.lang.String
+type S3StorageClass = _S3StorageClass | String
 
-type S3Subdirectory = java.lang.String
+type S3Subdirectory = String
 
-type ScheduleExpressionCron = java.lang.String
+type ScheduleExpressionCron = String
 
-type ServerHostname = java.lang.String
+type ServerHostname = String
 
-type SmbDomain = java.lang.String
+type SmbDomain = String
 
-type SmbPassword = java.lang.String
+type SmbPassword = String
 
-type SmbSubdirectory = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.OWNER_DACL
+  - typings.awsSdk.awsSdkStrings.OWNER_DACL_SACL
+  - java.lang.String
+*/
+type SmbSecurityDescriptorCopyFlags = _SmbSecurityDescriptorCopyFlags | String
 
-type SmbUser = java.lang.String
+type SmbSubdirectory = String
+
+type SmbUser = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTOMATIC
@@ -236,23 +315,25 @@ type SmbUser = java.lang.String
   - typings.awsSdk.awsSdkStrings.SMB3
   - java.lang.String
 */
-type SmbVersion = typings.awsSdk.datasyncMod._SmbVersion | java.lang.String
+type SmbVersion = _SmbVersion | String
 
-type SourceNetworkInterfaceArns = js.Array[typings.awsSdk.datasyncMod.NetworkInterfaceArn]
+type SourceNetworkInterfaceArns = js.Array[NetworkInterfaceArn]
 
-type TagKey = java.lang.String
+type StorageVirtualMachineArn = String
 
-type TagKeyList = js.Array[typings.awsSdk.datasyncMod.TagKey]
+type TagKey = String
 
-type TagValue = java.lang.String
+type TagKeyList = js.Array[TagKey]
 
-type TaggableResourceArn = java.lang.String
+type TagValue = String
 
-type TaskArn = java.lang.String
+type TaggableResourceArn = String
 
-type TaskExecutionArn = java.lang.String
+type TaskArn = String
 
-type TaskExecutionList = js.Array[typings.awsSdk.datasyncMod.TaskExecutionListEntry]
+type TaskExecutionArn = String
+
+type TaskExecutionList = js.Array[TaskExecutionListEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUEUED
@@ -264,25 +345,25 @@ type TaskExecutionList = js.Array[typings.awsSdk.datasyncMod.TaskExecutionListEn
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type TaskExecutionStatus = typings.awsSdk.datasyncMod._TaskExecutionStatus | java.lang.String
+type TaskExecutionStatus = _TaskExecutionStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LocationId
   - typings.awsSdk.awsSdkStrings.CreationTime
   - java.lang.String
 */
-type TaskFilterName = typings.awsSdk.datasyncMod._TaskFilterName | java.lang.String
+type TaskFilterName = _TaskFilterName | String
 
-type TaskFilters = js.Array[typings.awsSdk.datasyncMod.TaskFilter]
+type TaskFilters = js.Array[TaskFilter]
 
-type TaskList = js.Array[typings.awsSdk.datasyncMod.TaskListEntry]
+type TaskList = js.Array[TaskListEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type TaskQueueing = typings.awsSdk.datasyncMod._TaskQueueing | java.lang.String
+type TaskQueueing = _TaskQueueing | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
@@ -292,16 +373,16 @@ type TaskQueueing = typings.awsSdk.datasyncMod._TaskQueueing | java.lang.String
   - typings.awsSdk.awsSdkStrings.UNAVAILABLE
   - java.lang.String
 */
-type TaskStatus = typings.awsSdk.datasyncMod._TaskStatus | java.lang.String
+type TaskStatus = _TaskStatus | String
 
-type Time = typings.std.Date
+type Time = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CHANGED
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type TransferMode = typings.awsSdk.datasyncMod._TransferMode | java.lang.String
+type TransferMode = _TransferMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -310,7 +391,7 @@ type TransferMode = typings.awsSdk.datasyncMod._TransferMode | java.lang.String
   - typings.awsSdk.awsSdkStrings.BOTH
   - java.lang.String
 */
-type Uid = typings.awsSdk.datasyncMod._Uid | java.lang.String
+type Uid = _Uid | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.POINT_IN_TIME_CONSISTENT
@@ -318,15 +399,15 @@ type Uid = typings.awsSdk.datasyncMod._Uid | java.lang.String
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type VerifyMode = typings.awsSdk.datasyncMod._VerifyMode | java.lang.String
+type VerifyMode = _VerifyMode | String
 
-type VpcEndpointId = java.lang.String
+type VpcEndpointId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-11-09`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.datasyncMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type long = scala.Double
+type long = Double

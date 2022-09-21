@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_MySQL")
 @js.native
-class ClassMySQL ()
+open class ClassMySQL ()
   extends StObject
      with typings.fibjs.ClassMySQL

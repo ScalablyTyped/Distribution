@@ -60,6 +60,6 @@ object SupportedLanguages {
     
     inline def setLanguagesVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "languages", js.Array(value :_*))
+    ): Self = StObject.set(x, "languages", js.Array(value*))
   }
 }

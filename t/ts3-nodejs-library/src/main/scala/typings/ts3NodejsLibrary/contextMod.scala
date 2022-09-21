@@ -86,7 +86,7 @@ object contextMod {
       
       inline def setEvents(value: js.Array[ActiveEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: ActiveEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: ActiveEvent*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setLogin(value: LoginInfo): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
       

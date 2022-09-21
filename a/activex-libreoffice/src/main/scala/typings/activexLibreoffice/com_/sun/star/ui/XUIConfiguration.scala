@@ -40,7 +40,7 @@ object XUIConfiguration {
   inline def apply(
     acquire: () => Unit,
     addConfigurationListener: XUIConfigurationListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeConfigurationListener: XUIConfigurationListener => Unit
   ): XUIConfiguration = {

@@ -22,6 +22,6 @@ object CardList {
     
     inline def setCardList(value: js.Array[IsSuccess]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
-    inline def setCardListVarargs(value: IsSuccess*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: IsSuccess*): Self = StObject.set(x, "cardList", js.Array(value*))
   }
 }

@@ -35,18 +35,18 @@ object InputOutputSpecification {
     
     inline def setDataInputs(value: js.Array[DataInput]): Self = StObject.set(x, "dataInputs", value.asInstanceOf[js.Any])
     
-    inline def setDataInputsVarargs(value: DataInput*): Self = StObject.set(x, "dataInputs", js.Array(value :_*))
+    inline def setDataInputsVarargs(value: DataInput*): Self = StObject.set(x, "dataInputs", js.Array(value*))
     
     inline def setDataOutputs(value: js.Array[DataOutput]): Self = StObject.set(x, "dataOutputs", value.asInstanceOf[js.Any])
     
-    inline def setDataOutputsVarargs(value: DataOutput*): Self = StObject.set(x, "dataOutputs", js.Array(value :_*))
+    inline def setDataOutputsVarargs(value: DataOutput*): Self = StObject.set(x, "dataOutputs", js.Array(value*))
     
     inline def setInputSets(value: js.Array[InputSet]): Self = StObject.set(x, "inputSets", value.asInstanceOf[js.Any])
     
-    inline def setInputSetsVarargs(value: InputSet*): Self = StObject.set(x, "inputSets", js.Array(value :_*))
+    inline def setInputSetsVarargs(value: InputSet*): Self = StObject.set(x, "inputSets", js.Array(value*))
     
     inline def setOutputSets(value: js.Array[OutputSet]): Self = StObject.set(x, "outputSets", value.asInstanceOf[js.Any])
     
-    inline def setOutputSetsVarargs(value: OutputSet*): Self = StObject.set(x, "outputSets", js.Array(value :_*))
+    inline def setOutputSetsVarargs(value: OutputSet*): Self = StObject.set(x, "outputSets", js.Array(value*))
   }
 }

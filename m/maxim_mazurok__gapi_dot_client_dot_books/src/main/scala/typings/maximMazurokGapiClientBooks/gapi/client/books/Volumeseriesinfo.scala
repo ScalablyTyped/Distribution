@@ -43,6 +43,6 @@ object Volumeseriesinfo {
     
     inline def setVolumeSeriesUndefined: Self = StObject.set(x, "volumeSeries", js.undefined)
     
-    inline def setVolumeSeriesVarargs(value: Issue*): Self = StObject.set(x, "volumeSeries", js.Array(value :_*))
+    inline def setVolumeSeriesVarargs(value: Issue*): Self = StObject.set(x, "volumeSeries", js.Array(value*))
   }
 }

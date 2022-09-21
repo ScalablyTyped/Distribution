@@ -1,7 +1,7 @@
 
 # Scala.js typings for pretty-quick
 
-Typings are for version 2.0
+Typings are for version 3.1
 
 ## Library description:
 Get Pretty Quick
@@ -10,10 +10,10 @@ Get Pretty Quick
 | ------------------ | :-------------: |
 | Full name          | pretty-quick |
 | Keywords           | git, mercurial, hg, prettier, pretty-quick, formatting, code, vcs, precommit |
-| # releases         | 13 |
-| # dependents       | 107 |
-| # downloads        | 25273870 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 4525507.0 |
+| # stars            | 1912.0 |
 
 ## Links
 - [Homepage](https://github.com/azz/pretty-quick#readme)

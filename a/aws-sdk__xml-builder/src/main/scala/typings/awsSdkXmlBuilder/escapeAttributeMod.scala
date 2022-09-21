@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object escapeAttributeMod {
   
-  @JSImport("@aws-sdk/xml-builder/dist/cjs/escape-attribute", JSImport.Namespace)
+  @JSImport("@aws-sdk/xml-builder/dist-types/escape-attribute", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

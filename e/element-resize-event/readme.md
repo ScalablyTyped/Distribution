@@ -1,7 +1,7 @@
 
 # Scala.js typings for element-resize-event
 
-Typings are for version 2.0.9
+Typings are for version 3.0
 
 ## Library description:
 Polyfill to make it easy to listen for element resize events
@@ -9,11 +9,11 @@ Polyfill to make it easy to listen for element resize events
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | element-resize-event |
-| Keywords           | event, resize, element-query, element queries |
-| # releases         | 3 |
-| # dependents       | 103 |
-| # downloads        | 1880173 |
-| # stars            | 8 |
+| Keywords           | element queries, element-query, event, resize |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 295376.0 |
+| # stars            | 176.0 |
 
 ## Links
 - [Homepage](https://github.com/KyleAMathews/element-resize-event)

@@ -27,10 +27,10 @@ object zoomPointsOptions {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setPoints(value: js.Array[LocationBaseOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: LocationBaseOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: LocationBaseOptions*): Self = StObject.set(x, "points", js.Array(value*))
   }
 }

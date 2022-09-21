@@ -8,7 +8,7 @@ trait ListBoxToolbar extends StObject {
   
   var position: js.UndefOr[String] = js.undefined
   
-  var tools: js.UndefOr[js.Any] = js.undefined
+  var tools: js.UndefOr[Any] = js.undefined
 }
 object ListBoxToolbar {
   
@@ -23,7 +23,7 @@ object ListBoxToolbar {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setTools(value: js.Any): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+    inline def setTools(value: Any): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     
     inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
   }

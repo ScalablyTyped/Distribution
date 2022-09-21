@@ -18,19 +18,19 @@ trait WorkbookChartAxis
     * Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The returned
     * value is always a number.
     */
-  var majorUnit: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var majorUnit: js.UndefOr[NullableOption[Any]] = js.undefined
   
   /**
     * Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis
     * values). The returned value is always a number.
     */
-  var maximum: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var maximum: js.UndefOr[NullableOption[Any]] = js.undefined
   
   /**
     * Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis
     * values). The returned value is always a number.
     */
-  var minimum: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var minimum: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
   var minorGridlines: js.UndefOr[NullableOption[WorkbookChartGridlines]] = js.undefined
@@ -39,7 +39,7 @@ trait WorkbookChartAxis
     * Represents the interval between two minor tick marks. 'Can be set to a numeric value or an empty string (for automatic
     * axis values). The returned value is always a number.
     */
-  var minorUnit: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var minorUnit: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // Represents the axis title. Read-only.
   var title: js.UndefOr[NullableOption[WorkbookChartAxisTitle]] = js.undefined
@@ -65,19 +65,19 @@ object WorkbookChartAxis {
     
     inline def setMajorGridlinesUndefined: Self = StObject.set(x, "majorGridlines", js.undefined)
     
-    inline def setMajorUnit(value: NullableOption[js.Any]): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
+    inline def setMajorUnit(value: NullableOption[Any]): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
     
     inline def setMajorUnitNull: Self = StObject.set(x, "majorUnit", null)
     
     inline def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
     
-    inline def setMaximum(value: NullableOption[js.Any]): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: NullableOption[Any]): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     inline def setMaximumNull: Self = StObject.set(x, "maximum", null)
     
     inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    inline def setMinimum(value: NullableOption[js.Any]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: NullableOption[Any]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     inline def setMinimumNull: Self = StObject.set(x, "minimum", null)
     
@@ -89,7 +89,7 @@ object WorkbookChartAxis {
     
     inline def setMinorGridlinesUndefined: Self = StObject.set(x, "minorGridlines", js.undefined)
     
-    inline def setMinorUnit(value: NullableOption[js.Any]): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
+    inline def setMinorUnit(value: NullableOption[Any]): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
     
     inline def setMinorUnitNull: Self = StObject.set(x, "minorUnit", null)
     

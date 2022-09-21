@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_servicedirectory
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220804
 
 ## Library description:
 TypeScript typings for Service Directory API v1
@@ -10,10 +10,10 @@ TypeScript typings for Service Directory API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.servicedirectory |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 918 |
-| # stars            | 0 |
+| # releases         | 70 |
+| # dependents       | 0.0 |
+| # downloads        | 857.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

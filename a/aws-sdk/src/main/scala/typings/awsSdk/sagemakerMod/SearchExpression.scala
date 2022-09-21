@@ -39,13 +39,13 @@ object SearchExpression {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setNestedFilters(value: NestedFiltersList): Self = StObject.set(x, "NestedFilters", value.asInstanceOf[js.Any])
     
     inline def setNestedFiltersUndefined: Self = StObject.set(x, "NestedFilters", js.undefined)
     
-    inline def setNestedFiltersVarargs(value: NestedFilters*): Self = StObject.set(x, "NestedFilters", js.Array(value :_*))
+    inline def setNestedFiltersVarargs(value: NestedFilters*): Self = StObject.set(x, "NestedFilters", js.Array(value*))
     
     inline def setOperator(value: BooleanOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,6 @@ object SearchExpression {
     
     inline def setSubExpressionsUndefined: Self = StObject.set(x, "SubExpressions", js.undefined)
     
-    inline def setSubExpressionsVarargs(value: SearchExpression*): Self = StObject.set(x, "SubExpressions", js.Array(value :_*))
+    inline def setSubExpressionsVarargs(value: SearchExpression*): Self = StObject.set(x, "SubExpressions", js.Array(value*))
   }
 }

@@ -36,7 +36,7 @@ object HighlightResultPrimitive {
     
     inline def setMatchedWords(value: js.Array[String]): Self = StObject.set(x, "matchedWords", value.asInstanceOf[js.Any])
     
-    inline def setMatchedWordsVarargs(value: String*): Self = StObject.set(x, "matchedWords", js.Array(value :_*))
+    inline def setMatchedWordsVarargs(value: String*): Self = StObject.set(x, "matchedWords", js.Array(value*))
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

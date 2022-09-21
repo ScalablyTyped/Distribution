@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(str: String, data: js.Any): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(str: String, data: js.Any, options: ReadonlyOptions): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String, data: Any): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String, data: Any, options: ReadonlyOptions): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("string-placeholder", JSImport.Namespace)
   @js.native

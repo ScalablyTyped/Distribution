@@ -17,17 +17,17 @@ trait Binding
   
   def destroy(): Unit = js.native
   
-  def get(): js.Any = js.native
+  def get(): Any = js.native
   
   var observable: Boolean = js.native
   
-  var parents: js.Array[js.Any] = js.native
+  var parents: js.Array[Any] = js.native
   
   var path: String = js.native
   
-  def set(value: js.Any): Unit = js.native
+  def set(value: Any): Unit = js.native
   
-  var source: js.Any = js.native
+  var source: Any = js.native
   
   def start(source: Observable): Unit = js.native
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryRenderedFeaturesParams extends StObject {
   
-  var filter: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var filter: js.UndefOr[js.Array[Any]] = js.undefined
   
   var layers: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -19,16 +19,16 @@ object QueryRenderedFeaturesParams {
   
   extension [Self <: QueryRenderedFeaturesParams](x: Self) {
     
-    inline def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Array[Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Any*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value*))
   }
 }

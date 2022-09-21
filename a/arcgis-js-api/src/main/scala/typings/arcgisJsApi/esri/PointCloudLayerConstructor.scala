@@ -17,5 +17,5 @@ trait PointCloudLayerConstructor
 Instantiable0[PointCloudLayer]
      with Instantiable1[/* properties */ PointCloudLayerProperties, PointCloudLayer] {
   
-  def fromJSON(json: js.Any): PointCloudLayer = js.native
+  def fromJSON(json: Any): PointCloudLayer = js.native
 }

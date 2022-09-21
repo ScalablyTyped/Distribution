@@ -10,10 +10,10 @@ React datetime picker powered by momentjs
 | ------------------ | :-------------: |
 | Full name          | input-moment |
 | Keywords           | react, react-component, input, datetime, picker, moment |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 216472 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 28229.333333333332 |
+| # stars            | 522.0 |
 
 ## Links
 - [Homepage](https://github.com/wangzuo/input-moment#readme)

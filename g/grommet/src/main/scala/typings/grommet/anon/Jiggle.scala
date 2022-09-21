@@ -8,7 +8,7 @@ trait Jiggle extends StObject {
   
   var duration: js.UndefOr[String] = js.undefined
   
-  var jiggle: js.UndefOr[Duration] = js.undefined
+  var jiggle: js.UndefOr[`11`] = js.undefined
 }
 object Jiggle {
   
@@ -23,7 +23,7 @@ object Jiggle {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setJiggle(value: Duration): Self = StObject.set(x, "jiggle", value.asInstanceOf[js.Any])
+    inline def setJiggle(value: `11`): Self = StObject.set(x, "jiggle", value.asInstanceOf[js.Any])
     
     inline def setJiggleUndefined: Self = StObject.set(x, "jiggle", js.undefined)
   }

@@ -1,5 +1,6 @@
 package typings.reactMapGl.mod
 
+import typings.react.mod.ReactNode
 import typings.reactMapGl.reactMapGlStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InteractiveMapProps
   extends StObject
      with StaticMapProps {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var clickRadius: js.UndefOr[Double] = js.undefined
   
@@ -100,6 +103,10 @@ object InteractiveMapProps {
   
   extension [Self <: InteractiveMapProps](x: Self) {
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setClickRadius(value: Double): Self = StObject.set(x, "clickRadius", value.asInstanceOf[js.Any])
     
     inline def setClickRadiusUndefined: Self = StObject.set(x, "clickRadius", js.undefined)
@@ -128,7 +135,7 @@ object InteractiveMapProps {
     
     inline def setInteractiveLayerIdsUndefined: Self = StObject.set(x, "interactiveLayerIds", js.undefined)
     
-    inline def setInteractiveLayerIdsVarargs(value: String*): Self = StObject.set(x, "interactiveLayerIds", js.Array(value :_*))
+    inline def setInteractiveLayerIdsVarargs(value: String*): Self = StObject.set(x, "interactiveLayerIds", js.Array(value*))
     
     inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     

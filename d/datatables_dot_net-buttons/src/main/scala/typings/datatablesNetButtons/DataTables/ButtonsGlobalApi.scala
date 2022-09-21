@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ButtonsGlobalApi extends StObject {
   
   def apply(): ButtonsApi = js.native
-  def apply(groupSelector: js.Any): ButtonsApi = js.native
-  def apply(groupSelector: js.Any, buttonSelector: js.Any): ButtonsApi = js.native
-  def apply(groupSelector: Unit, buttonSelector: js.Any): ButtonsApi = js.native
+  def apply(groupSelector: Any): ButtonsApi = js.native
+  def apply(groupSelector: Any, buttonSelector: Any): ButtonsApi = js.native
+  def apply(groupSelector: Unit, buttonSelector: Any): ButtonsApi = js.native
   
   /**
     * Obtain data from a DataTable that is suitable for exporting by saving into a file or copying to clipboard.

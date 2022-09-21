@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the data labels on a chart point.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartDataLabels")
 @js.native
-class ChartDataLabels ()
+open class ChartDataLabels ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartDataLabels {
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "editor.ConfigurationChangedEvent")
 @js.native
-class ConfigurationChangedEvent () extends StObject {
+open class ConfigurationChangedEvent () extends StObject {
   
   def hasChanged(id: EditorOption): Boolean = js.native
 }

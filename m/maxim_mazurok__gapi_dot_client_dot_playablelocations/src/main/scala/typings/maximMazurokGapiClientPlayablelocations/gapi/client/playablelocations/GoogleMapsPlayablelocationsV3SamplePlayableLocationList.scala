@@ -22,6 +22,6 @@ object GoogleMapsPlayablelocationsV3SamplePlayableLocationList {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: GoogleMapsPlayablelocationsV3SamplePlayableLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: GoogleMapsPlayablelocationsV3SamplePlayableLocation*): Self = StObject.set(x, "locations", js.Array(value*))
   }
 }

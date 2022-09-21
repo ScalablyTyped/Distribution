@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-community/cli-types" : "4.10.1"
+      "@react-native-community/cli-types" : "9.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-community/cli-types" : "4.10.1"
+      "@react-native-community/cli-types" : "9.1.0"
     }
   ],
   "compile-devDependencies" : [

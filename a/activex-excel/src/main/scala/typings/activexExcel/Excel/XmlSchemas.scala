@@ -19,7 +19,7 @@ trait XmlSchemas extends StObject {
   def Item(Index: String): XmlSchema = js.native
   def Item(Index: Double): XmlSchema = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): XmlSchema = js.native
+  def _Default(Index: Any): XmlSchema = js.native
 }

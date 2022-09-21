@@ -23,11 +23,11 @@ trait scheduling extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#schedule)
     */
-  def schedule(callback: js.Function): js.Any
+  def schedule(callback: js.Function): Any
 }
 object scheduling {
   
-  inline def apply(addFrameTask: PhaseCallbacks => FrameTaskHandle, schedule: js.Function => js.Any): scheduling = {
+  inline def apply(addFrameTask: PhaseCallbacks => FrameTaskHandle, schedule: js.Function => Any): scheduling = {
     val __obj = js.Dynamic.literal(addFrameTask = js.Any.fromFunction1(addFrameTask), schedule = js.Any.fromFunction1(schedule))
     __obj.asInstanceOf[scheduling]
   }
@@ -36,6 +36,6 @@ object scheduling {
     
     inline def setAddFrameTask(value: PhaseCallbacks => FrameTaskHandle): Self = StObject.set(x, "addFrameTask", js.Any.fromFunction1(value))
     
-    inline def setSchedule(value: js.Function => js.Any): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+    inline def setSchedule(value: js.Function => Any): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
   }
 }

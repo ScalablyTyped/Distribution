@@ -1,9 +1,7 @@
 package typings.itMultipart
 
-import typings.itMultipart.anon.Body
-import typings.node.httpMod.IncomingMessage
+import typings.node.bufferMod.global.Buffer
 import typings.std.AsyncIterable
-import typings.std.AsyncIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,56 +9,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /**
+    * @typedef {import('http').IncomingMessage} IncomingMessage
     * @typedef {import('http').IncomingHttpHeaders} IncomingHttpHeaders
-    */
-  /**
-    * @template T
-    * @typedef {AsyncIterable<T> & AsyncIterator<T>} It
+    * @typedef {Object} Part
+    * @property {IncomingHttpHeaders} headers
+    * @property {AsyncIterable<Buffer>} body
     */
   /**
     * Streaming multipart HTTP message parser
-    * @param {import('http').IncomingMessage} source
-    * @param {string} [boundary]
-    * @returns {AsyncIterable<{headers:IncomingHttpHeaders, body:It<Buffer>}>}
+    *
+    * @param {IncomingMessage} request
+    * @returns {AsyncIterable<Part>}
     */
-  inline def apply(source: IncomingMessage): AsyncIterable[Body] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Body]]
-  inline def apply(source: IncomingMessage, boundary: String): AsyncIterable[Body] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[Body]]
+  inline def apply(request: IncomingMessage): AsyncIterable[Part] = ^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Part]]
   
-  @JSImport("it-multipart/dist", JSImport.Namespace)
+  @JSImport("it-multipart", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   type IncomingHttpHeaders = typings.node.httpMod.IncomingHttpHeaders
   
-  @js.native
-  trait It[T]
-    extends StObject
-       with AsyncIterable[T]
-       with AsyncIterator[T, js.Any, Unit]
+  type IncomingMessage = typings.node.httpMod.IncomingMessage
   
-  trait PrefixPush[T] extends StObject {
+  trait Part extends StObject {
     
-    def push(arg0: T): Unit
+    var body: AsyncIterable[Buffer]
+    
+    var headers: IncomingHttpHeaders
   }
-  object PrefixPush {
+  object Part {
     
-    inline def apply[T](push: T => Unit): PrefixPush[T] = {
-      val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
-      __obj.asInstanceOf[PrefixPush[T]]
+    inline def apply(body: AsyncIterable[Buffer], headers: IncomingHttpHeaders): Part = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Part]
     }
     
-    extension [Self <: PrefixPush[?], T](x: Self & PrefixPush[T]) {
+    extension [Self <: Part](x: Self) {
       
-      inline def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setBody(value: AsyncIterable[Buffer]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
-  
-  @js.native
-  trait PrefixStream[T]
-    extends StObject
-       with AsyncIterable[T]
-       with AsyncIterator[T, js.Any, Unit]
-       with PrefixPush[T]
-  
-  type parseHeaders = js.Function1[/* arg0 */ String, IncomingHttpHeaders]
 }

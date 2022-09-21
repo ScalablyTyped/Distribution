@@ -49,7 +49,7 @@ object XViewPane {
     getFirstVisibleColumn: () => Double,
     getFirstVisibleRow: () => Double,
     getVisibleRange: () => CellRangeAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFirstVisibleColumn: Double => Unit,
     setFirstVisibleRow: Double => Unit

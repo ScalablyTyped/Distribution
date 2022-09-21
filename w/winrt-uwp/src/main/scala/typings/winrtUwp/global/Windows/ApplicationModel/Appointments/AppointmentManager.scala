@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Rect
@@ -65,7 +64,7 @@ object AppointmentManager {
     * @return An asynchronous action.
     */
   /* static member */
-  inline def showAppointmentDetailsAsync(appointmentId: String, instanceStartDate: Date): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("showAppointmentDetailsAsync")(appointmentId.asInstanceOf[js.Any], instanceStartDate.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def showAppointmentDetailsAsync(appointmentId: String, instanceStartDate: js.Date): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("showAppointmentDetailsAsync")(appointmentId.asInstanceOf[js.Any], instanceStartDate.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   
   /**
     * Shows the Appointments provider Add Appointment UI including the full edit experience, to enable the user to add an appointment.
@@ -101,7 +100,7 @@ object AppointmentManager {
     * @return When this method completes, it returns a Boolean value that indicates whether the Appointment provider app removed the appointment.
     */
   /* static member */
-  inline def showRemoveAppointmentAsync(appointmentId: String, selection: Rect, preferredPlacement: Placement, instanceStartDate: Date): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("showRemoveAppointmentAsync")(appointmentId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], preferredPlacement.asInstanceOf[js.Any], instanceStartDate.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def showRemoveAppointmentAsync(appointmentId: String, selection: Rect, preferredPlacement: Placement, instanceStartDate: js.Date): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("showRemoveAppointmentAsync")(appointmentId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], preferredPlacement.asInstanceOf[js.Any], instanceStartDate.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   
   /**
     * Shows the Appointments provider Replace Appointment UI, to enable the user to replace an appointment.
@@ -146,7 +145,7 @@ object AppointmentManager {
     appointment: typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment,
     selection: Rect,
     preferredPlacement: Placement,
-    instanceStartDate: Date
+    instanceStartDate: js.Date
   ): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showReplaceAppointmentAsync")(appointmentId.asInstanceOf[js.Any], appointment.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], preferredPlacement.asInstanceOf[js.Any], instanceStartDate.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
   
   /**
@@ -156,5 +155,5 @@ object AppointmentManager {
     * @return When this method returns, it does not return a result. On completion, the AsyncActionCompletedHandler specified by get_Completed / Completed is invoked.
     */
   /* static member */
-  inline def showTimeFrameAsync(timeToShow: Date, duration: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("showTimeFrameAsync")(timeToShow.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def showTimeFrameAsync(timeToShow: js.Date, duration: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("showTimeFrameAsync")(timeToShow.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
 }

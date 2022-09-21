@@ -12,25 +12,24 @@ trait SchemaListConnectionsResponse extends StObject {
   var connections: js.UndefOr[js.Array[SchemaPerson]] = js.undefined
   
   /**
-    * The token that can be used to retrieve the next page of results.
+    * A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The token that can be used to retrieve changes since the last request.
+    * A token, which can be sent as `sync_token` to retrieve changes since the last request. Request must set `request_sync_token` to return the sync token. When the response is paginated, only the last page will contain `nextSyncToken`.
     */
-  var nextSyncToken: js.UndefOr[String] = js.undefined
+  var nextSyncToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The total number of items in the list without pagination.
     */
-  var totalItems: js.UndefOr[Double] = js.undefined
+  var totalItems: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * **DEPRECATED** (Please use totalItems) The total number of people in the
-    * list without pagination.
+    * **DEPRECATED** (Please use totalItems) The total number of people in the list without pagination.
     */
-  var totalPeople: js.UndefOr[Double] = js.undefined
+  var totalPeople: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaListConnectionsResponse {
   
@@ -45,21 +44,29 @@ object SchemaListConnectionsResponse {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: SchemaPerson*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: SchemaPerson*): Self = StObject.set(x, "connections", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
     
+    inline def setNextSyncTokenNull: Self = StObject.set(x, "nextSyncToken", null)
+    
     inline def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
     
     inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
+    inline def setTotalItemsNull: Self = StObject.set(x, "totalItems", null)
+    
     inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
     
     inline def setTotalPeople(value: Double): Self = StObject.set(x, "totalPeople", value.asInstanceOf[js.Any])
+    
+    inline def setTotalPeopleNull: Self = StObject.set(x, "totalPeople", null)
     
     inline def setTotalPeopleUndefined: Self = StObject.set(x, "totalPeople", js.undefined)
   }

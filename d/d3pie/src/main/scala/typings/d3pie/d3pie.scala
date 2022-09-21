@@ -30,23 +30,23 @@ object d3pie {
     
     def destroy(): Unit
     
-    def getOpenSegment(): js.Any
+    def getOpenSegment(): Any
     
     def openSegment(index: Double): Unit
     
     def redraw(): Unit
     
-    def updateProp(propKey: String, value: js.Any): Unit
+    def updateProp(propKey: String, value: Any): Unit
   }
   object ID3PieChart {
     
     inline def apply(
       closeSegment: Unit => Unit,
       destroy: () => Unit,
-      getOpenSegment: () => js.Any,
+      getOpenSegment: () => Any,
       openSegment: Double => Unit,
       redraw: () => Unit,
-      updateProp: (String, js.Any) => Unit
+      updateProp: (String, Any) => Unit
     ): ID3PieChart = {
       val __obj = js.Dynamic.literal(closeSegment = js.Any.fromFunction1(closeSegment), destroy = js.Any.fromFunction0(destroy), getOpenSegment = js.Any.fromFunction0(getOpenSegment), openSegment = js.Any.fromFunction1(openSegment), redraw = js.Any.fromFunction0(redraw), updateProp = js.Any.fromFunction2(updateProp))
       __obj.asInstanceOf[ID3PieChart]
@@ -58,13 +58,13 @@ object d3pie {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def setGetOpenSegment(value: () => js.Any): Self = StObject.set(x, "getOpenSegment", js.Any.fromFunction0(value))
+      inline def setGetOpenSegment(value: () => Any): Self = StObject.set(x, "getOpenSegment", js.Any.fromFunction0(value))
       
       inline def setOpenSegment(value: Double => Unit): Self = StObject.set(x, "openSegment", js.Any.fromFunction1(value))
       
       inline def setRedraw(value: () => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction0(value))
       
-      inline def setUpdateProp(value: (String, js.Any) => Unit): Self = StObject.set(x, "updateProp", js.Any.fromFunction2(value))
+      inline def setUpdateProp(value: (String, Any) => Unit): Self = StObject.set(x, "updateProp", js.Any.fromFunction2(value))
     }
   }
   

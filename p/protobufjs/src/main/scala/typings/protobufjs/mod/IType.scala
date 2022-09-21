@@ -38,7 +38,7 @@ object IType {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setFields(value: StringDictionary[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -54,6 +54,6 @@ object IType {
     
     inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
     
-    inline def setReservedVarargs(value: js.Array[Double]*): Self = StObject.set(x, "reserved", js.Array(value :_*))
+    inline def setReservedVarargs(value: js.Array[Double]*): Self = StObject.set(x, "reserved", js.Array(value*))
   }
 }

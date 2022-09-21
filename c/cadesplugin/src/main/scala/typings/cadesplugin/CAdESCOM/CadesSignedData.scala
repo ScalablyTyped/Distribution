@@ -81,8 +81,19 @@ trait CadesSignedData extends StObject {
     EncodingType: ValuesOf[CAPICOM_ENCODING_TYPE]
   ): String = js.native
   
+  def SignHash(hashedData: CPHashedData, signer: CPSigner, CadesType: ValuesOf[CADESCOM_CADES_TYPE]): String = js.native
+  def SignHash(
+    hashedData: CPHashedData,
+    signer: CPSigner,
+    CadesType: ValuesOf[CADESCOM_CADES_TYPE],
+    EncodingType: ValuesOf[CAPICOM_ENCODING_TYPE]
+  ): String = js.native
+  
   def VerifyCades(SignedMessage: String): Unit = js.native
   def VerifyCades(SignedMessage: String, CadesType: Unit, bDetached: Boolean): Unit = js.native
   def VerifyCades(SignedMessage: String, CadesType: ValuesOf[CADESCOM_CADES_TYPE]): Unit = js.native
   def VerifyCades(SignedMessage: String, CadesType: ValuesOf[CADESCOM_CADES_TYPE], bDetached: Boolean): Unit = js.native
+  
+  def VerifyHash(hashedData: CPHashedData, SignedMessage: String): Unit = js.native
+  def VerifyHash(hashedData: CPHashedData, SignedMessage: String, CadesType: ValuesOf[CADESCOM_CADES_TYPE]): Unit = js.native
 }

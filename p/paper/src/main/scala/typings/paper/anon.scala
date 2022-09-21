@@ -84,11 +84,11 @@ object anon {
       *     on Mac, or the control key is pressed on Windows and Linux}.
       */
     /* static member */
-    var modifiers: js.Any
+    var modifiers: Any
   }
   object TypeofKey {
     
-    inline def apply(isDown: String => Boolean, modifiers: js.Any): TypeofKey = {
+    inline def apply(isDown: String => Boolean, modifiers: Any): TypeofKey = {
       val __obj = js.Dynamic.literal(isDown = js.Any.fromFunction1(isDown), modifiers = modifiers.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofKey]
     }
@@ -97,7 +97,7 @@ object anon {
       
       inline def setIsDown(value: String => Boolean): Self = StObject.set(x, "isDown", js.Any.fromFunction1(value))
       
-      inline def setModifiers(value: js.Any): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: Any): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,18 +107,18 @@ object anon {
       * Retrieves a PaperScope object with the given scope id.
       */
     /* static member */
-    def get(id: js.Any): PaperScope
+    def get(id: Any): PaperScope
   }
   object TypeofPaperScope {
     
-    inline def apply(get: js.Any => PaperScope): TypeofPaperScope = {
+    inline def apply(get: Any => PaperScope): TypeofPaperScope = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[TypeofPaperScope]
     }
     
     extension [Self <: TypeofPaperScope](x: Self) {
       
-      inline def setGet(value: js.Any => PaperScope): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Any => PaperScope): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   

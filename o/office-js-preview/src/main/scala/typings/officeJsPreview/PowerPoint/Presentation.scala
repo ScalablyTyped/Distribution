@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: PowerPointApi 1.0]
   */
 @js.native
@@ -21,10 +22,51 @@ trait Presentation
   var context_Presentation: RequestContext = js.native
   
   /**
-    * Inserts the specified slides from a presentation into the current presentation.
+    * Returns the selected shapes in the current slide of the presentation.
+    If no shapes are selected, an empty collection is returned.
     *
+    * @remarks
     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
     * @beta
+    */
+  def getSelectedShapes(): ShapeScopedCollection = js.native
+  
+  /**
+    * Returns the selected slides in the current view of the presentation.
+    The first item in the collection is the active slide that is visible in the editing area.
+    If no slides are selected, an empty collection is returned.
+    *
+    * @remarks
+    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getSelectedSlides(): SlideScopedCollection = js.native
+  
+  /**
+    * Returns the selected {@link PowerPoint.TextRange} in the current view of the presentation.
+    Throws an exception if no text is selected.
+    *
+    * @remarks
+    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getSelectedTextRange(): TextRange = js.native
+  
+  /**
+    * Returns the selected {@link PowerPoint.TextRange} in the current view of the presentation.
+    If no text is selected, an object with an `isNullObject` property set to `true` is returned.
+    *
+    * @remarks
+    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getSelectedTextRangeOrNullObject(): TextRange = js.native
+  
+  /**
+    * Inserts the specified slides from a presentation into the current presentation.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.2]
     *
     * @param base64File The base64-encoded string representing the source presentation file.
     * @param options The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.
@@ -44,13 +86,39 @@ trait Presentation
   def load(propertyNames: js.Array[String]): Presentation = js.native
   
   /**
+    * Selects the slides in the current view of the presentation. Existing slide selection is replaced with the new selection.
     *
-    * Returns an ordered collection of slides in the presentation.
-    *
+    * @remarks
     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
     * @beta
+    *
+    * @param slideIds List of slide IDs to select in the presentation. If the list is empty, selection is cleared.
+    */
+  def setSelectedSlides(slideIds: js.Array[String]): Unit = js.native
+  
+  /**
+    * Returns the collection of `SlideMaster` objects that are in the presentation.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.3]
+    */
+  val slideMasters: SlideMasterCollection = js.native
+  
+  /**
+    * Returns an ordered collection of slides in the presentation.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.2]
     */
   val slides: SlideCollection = js.native
+  
+  /**
+    * Returns a collection of tags attached to the presentation.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.3]
+    */
+  val tags: TagCollection = js.native
   
   val title: String = js.native
   

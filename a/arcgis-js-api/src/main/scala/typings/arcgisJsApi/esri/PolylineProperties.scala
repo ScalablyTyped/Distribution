@@ -28,6 +28,6 @@ object PolylineProperties {
     
     inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    inline def setPathsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "paths", js.Array(value*))
   }
 }

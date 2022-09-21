@@ -3,24 +3,6 @@
 
 Typings are for version 3.5.0
 
-## Library description:
-JavaScript implementation of the SSIM algorithm
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | ssim.js |
-| Keywords           | ssim, mssim, ssim_map, image, compare, structural, similarity, processing |
-| # releases         | 23 |
-| # dependents       | 0 |
-| # downloads        | 2375 |
-| # stars            | 1 |
-
-## Links
-- [Homepage](https://github.com/obartra/ssim#readme)
-- [Bugs](https://github.com/obartra/ssim/issues)
-- [Repository](https://github.com/obartra/ssim)
-- [Npm](https://www.npmjs.com/package/ssim.js)
-    
 
 
 ## Note

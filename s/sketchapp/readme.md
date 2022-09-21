@@ -3,6 +3,21 @@
 
 Typings are for version 56.0
 
+## Library description:
+SketchApp is A React component...
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | sketchapp |
+| Keywords           | sketchapp, prototype, create, npm sketchapp |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 9.666666666666666 |
+| # stars            | ? |
+
+## Links
+- [Npm](https://www.npmjs.com/package/sketchapp)
+    
 
 
 ## Note

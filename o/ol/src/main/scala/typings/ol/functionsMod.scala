@@ -16,5 +16,5 @@ object functionsMod {
   
   inline def VOID(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("VOID")().asInstanceOf[Unit]
   
-  inline def memoizeOne[ReturnType](fn: js.Function1[/* p0 */ js.Any, ReturnType]): js.Function1[/* p0 */ js.Any, ReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoizeOne")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* p0 */ js.Any, ReturnType]]
+  inline def memoizeOne[ReturnType](fn: js.Function1[/* p0 */ Any, ReturnType]): js.Function1[/* p0 */ Any, ReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoizeOne")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* p0 */ Any, ReturnType]]
 }

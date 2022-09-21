@@ -47,7 +47,7 @@ object ImageCanvasOptions {
     
     inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
     
     inline def setCanvasFunction(
       value: (/* extent */ Extent_, /* resolution */ Double, /* pixelRatio */ Double, /* size */ Size, /* proj */ Projection) => HTMLCanvasElement
@@ -69,7 +69,7 @@ object ImageCanvasOptions {
     
     inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
     
-    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
     
     inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

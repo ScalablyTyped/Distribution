@@ -10,10 +10,10 @@ Calculate when HTTP responses expire from the cache headers
 | ------------------ | :-------------: |
 | Full name          | expired |
 | Keywords           | calculate, HTTP, response, expires, expire, expirey, cache, headers, pure |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 8511 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 197.0 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/lukechilds/expired)

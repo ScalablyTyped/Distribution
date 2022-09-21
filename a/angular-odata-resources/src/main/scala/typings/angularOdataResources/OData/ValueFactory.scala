@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ValueFactory
   extends StObject
-     with Instantiable1[/* value */ js.Any, Value]
-     with Instantiable2[/* value */ js.Any, /* type */ String, Value]
+     with Instantiable1[/* value */ Any, Value]
+     with Instantiable2[/* value */ Any, /* type */ String, Value]

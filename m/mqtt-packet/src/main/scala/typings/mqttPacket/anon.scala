@@ -1,7 +1,7 @@
 package typings.mqttPacket
 
 import typings.mqttPacket.mod.QoS
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +40,7 @@ object anon {
     
     var topicAliasMaximum: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.undefined
+    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
     
     var wildcardSubscriptionAvailable: js.UndefOr[Boolean] = js.undefined
   }
@@ -113,7 +113,7 @@ object anon {
       
       inline def setTopicAliasMaximumUndefined: Self = StObject.set(x, "topicAliasMaximum", js.undefined)
       
-      inline def setUserProperties(value: js.Object): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       
       inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
       
@@ -124,6 +124,43 @@ object anon {
   }
   
   trait AuthenticationData extends StObject {
+    
+    var authenticationData: js.UndefOr[Buffer] = js.undefined
+    
+    var authenticationMethod: js.UndefOr[String] = js.undefined
+    
+    var reasonString: js.UndefOr[String] = js.undefined
+    
+    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
+  }
+  object AuthenticationData {
+    
+    inline def apply(): AuthenticationData = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AuthenticationData]
+    }
+    
+    extension [Self <: AuthenticationData](x: Self) {
+      
+      inline def setAuthenticationData(value: Buffer): Self = StObject.set(x, "authenticationData", value.asInstanceOf[js.Any])
+      
+      inline def setAuthenticationDataUndefined: Self = StObject.set(x, "authenticationData", js.undefined)
+      
+      inline def setAuthenticationMethod(value: String): Self = StObject.set(x, "authenticationMethod", value.asInstanceOf[js.Any])
+      
+      inline def setAuthenticationMethodUndefined: Self = StObject.set(x, "authenticationMethod", js.undefined)
+      
+      inline def setReasonString(value: String): Self = StObject.set(x, "reasonString", value.asInstanceOf[js.Any])
+      
+      inline def setReasonStringUndefined: Self = StObject.set(x, "reasonString", js.undefined)
+      
+      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      
+      inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
+    }
+  }
+  
+  trait AuthenticationMethod extends StObject {
     
     var authenticationData: js.UndefOr[Buffer] = js.undefined
     
@@ -141,16 +178,16 @@ object anon {
     
     var topicAliasMaximum: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.undefined
+    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
   }
-  object AuthenticationData {
+  object AuthenticationMethod {
     
-    inline def apply(): AuthenticationData = {
+    inline def apply(): AuthenticationMethod = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AuthenticationData]
+      __obj.asInstanceOf[AuthenticationMethod]
     }
     
-    extension [Self <: AuthenticationData](x: Self) {
+    extension [Self <: AuthenticationMethod](x: Self) {
       
       inline def setAuthenticationData(value: Buffer): Self = StObject.set(x, "authenticationData", value.asInstanceOf[js.Any])
       
@@ -184,7 +221,7 @@ object anon {
       
       inline def setTopicAliasMaximumUndefined: Self = StObject.set(x, "topicAliasMaximum", js.undefined)
       
-      inline def setUserProperties(value: js.Object): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       
       inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
     }
@@ -198,11 +235,11 @@ object anon {
     
     var messageExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var payloadFormatIndicator: js.UndefOr[Double] = js.undefined
+    var payloadFormatIndicator: js.UndefOr[Boolean] = js.undefined
     
     var responseTopic: js.UndefOr[String] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.undefined
+    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
     
     var willDelayInterval: js.UndefOr[Double] = js.undefined
   }
@@ -227,7 +264,7 @@ object anon {
       
       inline def setMessageExpiryIntervalUndefined: Self = StObject.set(x, "messageExpiryInterval", js.undefined)
       
-      inline def setPayloadFormatIndicator(value: Double): Self = StObject.set(x, "payloadFormatIndicator", value.asInstanceOf[js.Any])
+      inline def setPayloadFormatIndicator(value: Boolean): Self = StObject.set(x, "payloadFormatIndicator", value.asInstanceOf[js.Any])
       
       inline def setPayloadFormatIndicatorUndefined: Self = StObject.set(x, "payloadFormatIndicator", js.undefined)
       
@@ -235,7 +272,7 @@ object anon {
       
       inline def setResponseTopicUndefined: Self = StObject.set(x, "responseTopic", js.undefined)
       
-      inline def setUserProperties(value: js.Object): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       
       inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
       
@@ -257,11 +294,11 @@ object anon {
     
     var responseTopic: js.UndefOr[String] = js.undefined
     
-    var subscriptionIdentifier: js.UndefOr[Double] = js.undefined
+    var subscriptionIdentifier: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     var topicAlias: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.undefined
+    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
   }
   object CorrelationData {
     
@@ -292,15 +329,17 @@ object anon {
       
       inline def setResponseTopicUndefined: Self = StObject.set(x, "responseTopic", js.undefined)
       
-      inline def setSubscriptionIdentifier(value: Double): Self = StObject.set(x, "subscriptionIdentifier", value.asInstanceOf[js.Any])
+      inline def setSubscriptionIdentifier(value: Double | js.Array[Double]): Self = StObject.set(x, "subscriptionIdentifier", value.asInstanceOf[js.Any])
       
       inline def setSubscriptionIdentifierUndefined: Self = StObject.set(x, "subscriptionIdentifier", js.undefined)
+      
+      inline def setSubscriptionIdentifierVarargs(value: Double*): Self = StObject.set(x, "subscriptionIdentifier", js.Array(value*))
       
       inline def setTopicAlias(value: Double): Self = StObject.set(x, "topicAlias", value.asInstanceOf[js.Any])
       
       inline def setTopicAliasUndefined: Self = StObject.set(x, "topicAlias", js.undefined)
       
-      inline def setUserProperties(value: js.Object): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       
       inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
     }
@@ -349,7 +388,9 @@ object anon {
     
     var reasonString: js.UndefOr[String] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.undefined
+    var subscriptionIdentifier: js.UndefOr[Double] = js.undefined
+    
+    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
   }
   object ReasonString {
     
@@ -364,7 +405,11 @@ object anon {
       
       inline def setReasonStringUndefined: Self = StObject.set(x, "reasonString", js.undefined)
       
-      inline def setUserProperties(value: js.Object): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      inline def setSubscriptionIdentifier(value: Double): Self = StObject.set(x, "subscriptionIdentifier", value.asInstanceOf[js.Any])
+      
+      inline def setSubscriptionIdentifierUndefined: Self = StObject.set(x, "subscriptionIdentifier", js.undefined)
+      
+      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       
       inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
     }
@@ -378,7 +423,7 @@ object anon {
     
     var sessionExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.undefined
+    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
   }
   object ServerReference {
     
@@ -401,7 +446,32 @@ object anon {
       
       inline def setSessionExpiryIntervalUndefined: Self = StObject.set(x, "sessionExpiryInterval", js.undefined)
       
-      inline def setUserProperties(value: js.Object): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      
+      inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
+    }
+  }
+  
+  trait UserProperties extends StObject {
+    
+    var reasonString: js.UndefOr[String] = js.undefined
+    
+    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
+  }
+  object UserProperties {
+    
+    inline def apply(): UserProperties = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UserProperties]
+    }
+    
+    extension [Self <: UserProperties](x: Self) {
+      
+      inline def setReasonString(value: String): Self = StObject.set(x, "reasonString", value.asInstanceOf[js.Any])
+      
+      inline def setReasonStringUndefined: Self = StObject.set(x, "reasonString", js.undefined)
+      
+      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       
       inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
     }

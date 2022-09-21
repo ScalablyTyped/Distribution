@@ -19,7 +19,7 @@ trait UserPromptDisplayingEventUIParam extends StObject {
   /**
     * Gets the exception for the error, if there was one.
     */
-  var exception: js.UndefOr[js.Any] = js.undefined
+  var exception: js.UndefOr[Any] = js.undefined
   
   /**
     * Get or set the message that will be displayed.
@@ -29,7 +29,7 @@ trait UserPromptDisplayingEventUIParam extends StObject {
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Get the [action](ig.spreadsheet.SpreadsheetUserPromptTrigger) that caused the prompt to be displayed.
@@ -53,7 +53,7 @@ object UserPromptDisplayingEventUIParam {
     
     inline def setDisplayMessageUndefined: Self = StObject.set(x, "displayMessage", js.undefined)
     
-    inline def setException(value: js.Any): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    inline def setException(value: Any): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
     inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
@@ -61,7 +61,7 @@ object UserPromptDisplayingEventUIParam {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

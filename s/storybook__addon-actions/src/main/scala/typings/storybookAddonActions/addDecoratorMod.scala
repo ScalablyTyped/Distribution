@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object addDecoratorMod {
   
-  @JSImport("@storybook/addon-actions/dist/preset/addDecorator", "decorators")
+  @JSImport("@storybook/addon-actions/dist/ts3.9/preset/addDecorator", "decorators")
   @js.native
-  val decorators: js.Array[js.Function1[/* args */ js.Any, js.Any]] = js.native
+  val decorators: js.Array[js.Function1[/* args */ Any, Any]] = js.native
 }

@@ -11,14 +11,11 @@ seen.js is a library for drawing simple 3D scenes in SVG and HTML5 Canvas elemen
 | Full name          | seen |
 | Keywords           | 3d, svg, canvas |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 604 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 52.0 |
+| # stars            | 874.0 |
 
 ## Links
-- [Homepage](https://github.com/themadcreator/seen#readme)
-- [Bugs](https://github.com/themadcreator/seen/issues)
-- [Repository](https://github.com/themadcreator/seen)
 - [Npm](https://www.npmjs.com/package/seen)
     
 

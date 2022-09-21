@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientErrorCodes")
 @js.native
-class ClientErrorCodes ()
+open class ClientErrorCodes ()
   extends StObject
      with typings.sharepoint.SP.ClientErrorCodes
 object ClientErrorCodes {

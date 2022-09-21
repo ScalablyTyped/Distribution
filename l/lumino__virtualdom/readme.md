@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__virtualdom
 
-Typings are for version 1.7.3
+Typings are for version 1.14.2
 
 ## Library description:
 Lumino Virtual DOM
@@ -10,10 +10,10 @@ Lumino Virtual DOM
 | ------------------ | :-------------: |
 | Full name          | @lumino/virtualdom |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 18 |
-| # downloads        | 1192671 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 283251.0 |
+| # stars            | 370.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

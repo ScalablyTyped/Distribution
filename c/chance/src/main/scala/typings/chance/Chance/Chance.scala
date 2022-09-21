@@ -6,6 +6,7 @@ import typings.chance.anon.PartialCharacterOptions
 import typings.chance.anon.PartialEmailOptions
 import typings.chance.anon.PartialFirstNameOptions
 import typings.chance.anon.PartialIntegerOptions
+import typings.chance.anon.PartialMacOptions
 import typings.chance.anon.PartialNameOptions
 import typings.chance.anon.PartialPrefixOptions
 import typings.chance.anon.PartialSentenceOptions
@@ -31,7 +32,6 @@ import typings.chance.chanceStrings.provinces
 import typings.chance.chanceStrings.street_suffixes
 import typings.chance.chanceStrings.territories
 import typings.chance.chanceStrings.us_states_and_dc
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,10 +72,10 @@ trait Chance
   
   def bb_pin(): String = js.native
   
-  def birthday(): Date = js.native
-  def birthday(opts: Options): Date | String = js.native
+  def birthday(): js.Date | String = js.native
+  def birthday(opts: Options): js.Date | String = js.native
   @JSName("birthday")
-  def birthday_Union(): Date | String = js.native
+  def birthday_Date(): js.Date = js.native
   
   // Basics
   def bool(): Boolean = js.native
@@ -139,8 +139,8 @@ trait Chance
   
   def d8(): Double = js.native
   
-  def date(): Date = js.native
-  def date(opts: DateOptions): Date | String = js.native
+  def date(): js.Date = js.native
+  def date(opts: DateOptions): js.Date | String = js.native
   
   def depth(): Double = js.native
   def depth(opts: Options): Double = js.native
@@ -225,14 +225,17 @@ trait Chance
   def longitude(): Double = js.native
   def longitude(opts: Options): Double = js.native
   
-  def mersenne_twister(): js.Any = js.native
-  def mersenne_twister(seed: Seed): js.Any = js.native
+  def mac_address(): String = js.native
+  def mac_address(opts: PartialMacOptions): String = js.native
+  
+  def mersenne_twister(): Any = js.native
+  def mersenne_twister(seed: Seed): Any = js.native
   
   def millisecond(): Double = js.native
   
   def minute(): Double = js.native
   
-  def mixin(desc: MixinDescriptor): js.Any = js.native
+  def mixin(desc: MixinDescriptor): Any = js.native
   
   def month(): String = js.native
   def month(opts: Options): Month = js.native
@@ -312,29 +315,29 @@ trait Chance
   def sentence(): String = js.native
   def sentence(opts: PartialSentenceOptions): String = js.native
   
-  def set[T](key: String, values: js.Array[T]): js.Any = js.native
+  def set[T](key: String, values: js.Array[T]): Any = js.native
   @JSName("set")
   var set_Original: Setter = js.native
   @JSName("set")
-  def set_armedforces(key: armed_forces, values: js.Array[String]): js.Any = js.native
+  def set_armedforces(key: armed_forces, values: js.Array[String]): Any = js.native
   @JSName("set")
-  def set_cctypes(key: cc_types, values: js.Array[String]): js.Any = js.native
+  def set_cctypes(key: cc_types, values: js.Array[String]): Any = js.native
   @JSName("set")
-  def set_currencytypes(key: currency_types, values: js.Array[String]): js.Any = js.native
+  def set_currencytypes(key: currency_types, values: js.Array[String]): Any = js.native
   @JSName("set")
-  def set_firstNames(key: firstNames, values: js.Array[String]): js.Any = js.native
+  def set_firstNames(key: firstNames, values: js.Array[String]): Any = js.native
   @JSName("set")
-  def set_lastNames(key: lastNames, values: js.Array[String]): js.Any = js.native
+  def set_lastNames(key: lastNames, values: js.Array[String]): Any = js.native
   @JSName("set")
-  def set_months(key: months, values: js.Array[String]): js.Any = js.native
+  def set_months(key: months, values: js.Array[String]): Any = js.native
   @JSName("set")
-  def set_provinces(key: provinces, values: js.Array[String]): js.Any = js.native
+  def set_provinces(key: provinces, values: js.Array[String]): Any = js.native
   @JSName("set")
-  def set_streetsuffixes(key: street_suffixes, values: js.Array[String]): js.Any = js.native
+  def set_streetsuffixes(key: street_suffixes, values: js.Array[String]): Any = js.native
   @JSName("set")
-  def set_territories(key: territories, values: js.Array[String]): js.Any = js.native
+  def set_territories(key: territories, values: js.Array[String]): Any = js.native
   @JSName("set")
-  def set_usstatesanddc(key: us_states_and_dc, values: js.Array[String]): js.Any = js.native
+  def set_usstatesanddc(key: us_states_and_dc, values: js.Array[String]): Any = js.native
   
   def shuffle[T](arr: js.Array[T]): js.Array[T] = js.native
   

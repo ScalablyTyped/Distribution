@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "DateTime")
 @js.native
-class DateTime protected ()
+open class DateTime protected ()
   extends typings.actionsOnGoogle.conversationMod.DateTime {
   /**
     * @param options DateTime options

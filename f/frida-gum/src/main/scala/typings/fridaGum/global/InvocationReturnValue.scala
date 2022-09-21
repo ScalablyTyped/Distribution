@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InvocationReturnValue")
 @js.native
-class InvocationReturnValue ()
+open class InvocationReturnValue ()
   extends StObject
      with typings.fridaGum.InvocationReturnValue

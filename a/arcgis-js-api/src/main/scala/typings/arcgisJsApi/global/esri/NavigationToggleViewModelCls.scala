@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html)
   */
-class NavigationToggleViewModelCls ()
+open class NavigationToggleViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.NavigationToggleViewModel {
   def this(properties: NavigationToggleViewModelProperties) = this()

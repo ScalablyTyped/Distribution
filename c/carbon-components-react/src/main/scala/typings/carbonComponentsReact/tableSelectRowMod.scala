@@ -1,10 +1,13 @@
 package typings.carbonComponentsReact
 
 import org.scalablytyped.runtime.Shortcut
+import typings.carbonComponentsReact.radioButtonRadioButtonMod.RadioButtonValue
+import typings.react.mod.ChangeEvent
 import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLInputElement
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +17,17 @@ object tableSelectRowMod extends Shortcut {
   @JSImport("carbon-components-react/lib/components/DataTable/TableSelectRow", JSImport.Default)
   @js.native
   val default: FC[TableSelectRowProps] = js.native
+  
+  type TableSelectRowOnChange = js.Function3[
+    /* value */ js.UndefOr[RadioButtonValue | Boolean], 
+    /* idOrName */ js.UndefOr[
+      String | (NonNullable[
+        /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/typings/shared.ReactAttr<std.HTMLElement>['id'] */ js.Any
+      ])
+    ], 
+    /* evt */ ChangeEvent[HTMLInputElement], 
+    Unit
+  ]
   
   trait TableSelectRowProps extends StObject {
     
@@ -28,6 +42,8 @@ object tableSelectRowMod extends Shortcut {
     var id: String
     
     var name: String
+    
+    var onChange: js.UndefOr[TableSelectRowOnChange] = js.undefined
     
     def onSelect(event: MouseEvent[HTMLInputElement, NativeMouseEvent]): Unit
     
@@ -64,6 +80,16 @@ object tableSelectRowMod extends Shortcut {
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOnChange(
+        value: (/* value */ js.UndefOr[RadioButtonValue | Boolean], /* idOrName */ js.UndefOr[
+              String | (NonNullable[
+                /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/typings/shared.ReactAttr<std.HTMLElement>['id'] */ js.Any
+              ])
+            ], /* evt */ ChangeEvent[HTMLInputElement]) => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
+      
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnSelect(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       

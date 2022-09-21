@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "RoundedRect")
 @js.native
-class RoundedRect () extends Shape {
+open class RoundedRect () extends Shape {
   def this(options: RoundedRectOptions) = this()
   
   def copy(options: RoundedRectOptions): RoundedRect = js.native

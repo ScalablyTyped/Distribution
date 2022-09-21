@@ -17,13 +17,13 @@ trait MediaStreamSamplePropertySet extends StObject {
     * Returns an iterator to enumerate the items in the property set.
     * @return The iterator. The current position of the iterator is index 0, or the end of the property set if the property set is empty.
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
+  def first(): IIterator[IKeyValuePair[Any, Any]]
   
   /**
     * Gets an immutable view of the property set.
     * @return The immutable view.
     */
-  def getView(): IMapView[String, js.Any]
+  def getView(): IMapView[String, Any]
   
   /**
     * Indicates if the specified key exists in the property set.
@@ -38,14 +38,14 @@ trait MediaStreamSamplePropertySet extends StObject {
     * @param value The value of the key.
     * @return True if the method replaces a value that already exists for the key; false if this is a new key.
     */
-  def insert(key: String, value: js.Any): Boolean
+  def insert(key: String, value: Any): Boolean
   
   /**
     * Retrieves the value for the specified key.
     * @param key The key to retrieve the value for.
     * @return The value, if an item with the specified key exists; otherwise, null.
     */
-  def lookup(key: String): js.Any
+  def lookup(key: String): Any
   
   /**
     * Removes an item from the property set.
@@ -60,11 +60,11 @@ object MediaStreamSamplePropertySet {
   
   inline def apply(
     clear: () => Unit,
-    first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
-    getView: () => IMapView[String, js.Any],
+    first: () => IIterator[IKeyValuePair[Any, Any]],
+    getView: () => IMapView[String, Any],
     hasKey: String => Boolean,
-    insert: (String, js.Any) => Boolean,
-    lookup: String => js.Any,
+    insert: (String, Any) => Boolean,
+    lookup: String => Any,
     remove: String => Unit,
     size: Double
   ): MediaStreamSamplePropertySet = {
@@ -76,15 +76,15 @@ object MediaStreamSamplePropertySet {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
-    inline def setGetView(value: () => IMapView[String, js.Any]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+    inline def setGetView(value: () => IMapView[String, Any]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
     inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
     
-    inline def setInsert(value: (String, js.Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (String, Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
-    inline def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+    inline def setLookup(value: String => Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     
     inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     

@@ -1,30 +1,29 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.animationConfig
+import typings.devextreme.mod.DevExpress.AnimationConfig
+import typings.devextreme.mod.DevExpress.Device
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Animation extends StObject {
   
-  var animation: js.UndefOr[animationConfig] = js.undefined
+  var animation: AnimationConfig
   
-  var device: js.UndefOr[typings.devextreme.mod.DevExpress.Device] = js.undefined
+  var device: js.UndefOr[Device] = js.undefined
 }
 object Animation {
   
-  inline def apply(): Animation = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(animation: AnimationConfig): Animation = {
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animation]
   }
   
   extension [Self <: Animation](x: Self) {
     
-    inline def setAnimation(value: animationConfig): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: AnimationConfig): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
-    
-    inline def setDevice(value: typings.devextreme.mod.DevExpress.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
   }

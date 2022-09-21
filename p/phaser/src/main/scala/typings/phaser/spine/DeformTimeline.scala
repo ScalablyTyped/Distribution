@@ -23,7 +23,7 @@ object DeformTimeline {
   inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     attachment: VertexAttachment,
-    curves: js.Any,
+    curves: Any,
     frameVertices: js.Array[ArrayLike[Double]],
     frames: ArrayLike[Double],
     getCurvePercent: (Double, Double) => Double,
@@ -46,7 +46,7 @@ object DeformTimeline {
     
     inline def setFrameVertices(value: js.Array[ArrayLike[Double]]): Self = StObject.set(x, "frameVertices", value.asInstanceOf[js.Any])
     
-    inline def setFrameVerticesVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "frameVertices", js.Array(value :_*))
+    inline def setFrameVerticesVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "frameVertices", js.Array(value*))
     
     inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

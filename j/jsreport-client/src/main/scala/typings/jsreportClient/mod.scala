@@ -2,7 +2,8 @@ package typings.jsreportClient
 
 import typings.jsreportClient.anon.PartialRequest
 import typings.jsreportClient.mod.jsreportCoreAugmentingMod.Client
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,7 +31,7 @@ object mod {
     }
     
     @js.native
-    trait ClientRenderResponse extends ServerResponse {
+    trait ClientRenderResponse extends ServerResponse[IncomingMessage] {
       
       def body(): js.Promise[Buffer] = js.native
     }

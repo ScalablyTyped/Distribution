@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("google-ddns", "DynamicDNS")
   @js.native
-  class DynamicDNS protected () extends StObject {
+  open class DynamicDNS protected () extends StObject {
     def this(options: DynamicDNSOptions) = this()
     
     /**
@@ -52,7 +52,7 @@ object mod {
   
   @JSImport("google-ddns", "Service")
   @js.native
-  class Service protected () extends StObject {
+  open class Service protected () extends StObject {
     def this(options: ServiceOptions) = this()
     
     /**

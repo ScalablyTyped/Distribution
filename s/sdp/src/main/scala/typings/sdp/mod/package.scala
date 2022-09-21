@@ -1,105 +1,107 @@
 package typings.sdp.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.sdp.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def generateIdentifier(): java.lang.String = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateIdentifier")().asInstanceOf[java.lang.String]
+inline def generateIdentifier(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateIdentifier")().asInstanceOf[String]
 
-inline def generateSessionId(): java.lang.String = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateSessionId")().asInstanceOf[java.lang.String]
+inline def generateSessionId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSessionId")().asInstanceOf[String]
 
-inline def getDescription(blob: typings.sdp.mod.SDPBlob): typings.sdp.mod.SDPSection = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDescription")(blob.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPSection]
+inline def getDescription(blob: SDPBlob): SDPSection = ^.asInstanceOf[js.Dynamic].applyDynamic("getDescription")(blob.asInstanceOf[js.Any]).asInstanceOf[SDPSection]
 
-inline def getDirection(mediaSection: typings.sdp.mod.SDPSection, sessionpart: typings.sdp.mod.SDPSection): typings.sdp.mod.SDPDirection = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDirection")(mediaSection.asInstanceOf[js.Any], sessionpart.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPDirection]
+inline def getDirection(mediaSection: SDPSection, sessionpart: SDPSection): SDPDirection = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirection")(mediaSection.asInstanceOf[js.Any], sessionpart.asInstanceOf[js.Any])).asInstanceOf[SDPDirection]
 
-inline def getDtlsParameters(mediaSection: typings.sdp.mod.SDPSection, session: typings.sdp.mod.SDPSection): typings.sdp.mod.SDPDtlsParameters = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDtlsParameters")(mediaSection.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPDtlsParameters]
+inline def getDtlsParameters(mediaSection: SDPSection, session: SDPSection): SDPDtlsParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("getDtlsParameters")(mediaSection.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[SDPDtlsParameters]
 
-inline def getIceParameters(mediaSection: typings.sdp.mod.SDPSection, session: typings.sdp.mod.SDPSection): typings.sdp.mod.SDPIceParameters = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getIceParameters")(mediaSection.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPIceParameters]
+inline def getIceParameters(mediaSection: SDPSection, session: SDPSection): SDPIceParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("getIceParameters")(mediaSection.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[SDPIceParameters]
 
-inline def getKind(mediaSection: typings.sdp.mod.SDPSection): java.lang.String = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getKind")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getKind(mediaSection: SDPSection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKind")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getMediaSections(blob: typings.sdp.mod.SDPBlob): js.Array[typings.sdp.mod.SDPSection] = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMediaSections")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.sdp.mod.SDPSection]]
+inline def getMediaSections(blob: SDPBlob): js.Array[SDPSection] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMediaSections")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Array[SDPSection]]
 
-inline def getMid(mediaSection: typings.sdp.mod.SDPSection): java.lang.String = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMid")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getMid(mediaSection: SDPSection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMid")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def isRejected(mediaSection: typings.sdp.mod.SDPSection): scala.Boolean = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isRejected")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isRejected(mediaSection: SDPSection): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejected")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def isValidSDP(blob: typings.sdp.mod.SDPBlob): scala.Boolean = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isValidSDP")(blob.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isValidSDP(blob: SDPBlob): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidSDP")(blob.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def localCname: java.lang.String = typings.sdp.mod.^.asInstanceOf[js.Dynamic].selectDynamic("localCname").asInstanceOf[java.lang.String]
+inline def localCname: String = ^.asInstanceOf[js.Dynamic].selectDynamic("localCname").asInstanceOf[String]
 
-inline def matchPrefix(blob: typings.sdp.mod.SDPBlob, prefix: java.lang.String): js.Array[typings.sdp.mod.SDPLine] = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchPrefix")(blob.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.sdp.mod.SDPLine]]
+inline def matchPrefix(blob: SDPBlob, prefix: String): js.Array[SDPLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPrefix")(blob.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[SDPLine]]
 
-inline def parseCandidate(line: typings.sdp.mod.SDPLine): typings.sdp.mod.SDPIceCandidate = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseCandidate")(line.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPIceCandidate]
+inline def parseCandidate(line: SDPLine): SDPIceCandidate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCandidate")(line.asInstanceOf[js.Any]).asInstanceOf[SDPIceCandidate]
 
-inline def parseExtmap(line: typings.sdp.mod.SDPLine): typings.sdp.mod.SDPHeaderExtension = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseExtmap")(line.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPHeaderExtension]
+inline def parseExtmap(line: SDPLine): SDPHeaderExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExtmap")(line.asInstanceOf[js.Any]).asInstanceOf[SDPHeaderExtension]
 
-inline def parseFingerprint(line: typings.sdp.mod.SDPLine): typings.sdp.mod.SDPFingerprint = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseFingerprint")(line.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPFingerprint]
+inline def parseFingerprint(line: SDPLine): SDPFingerprint = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFingerprint")(line.asInstanceOf[js.Any]).asInstanceOf[SDPFingerprint]
 
-inline def parseFmtp(line: typings.sdp.mod.SDPLine): typings.sdp.mod.SDPCodecAdditionalParameters = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseFmtp")(line.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPCodecAdditionalParameters]
+inline def parseFmtp(line: SDPLine): SDPCodecAdditionalParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFmtp")(line.asInstanceOf[js.Any]).asInstanceOf[SDPCodecAdditionalParameters]
 
-inline def parseIceOptions(line: typings.sdp.mod.SDPLine): js.Array[java.lang.String] = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseIceOptions")(line.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
+inline def parseIceOptions(line: SDPLine): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseIceOptions")(line.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 
-inline def parseMLine(mediaSection: typings.sdp.mod.SDPSection): typings.sdp.mod.SDPMLine = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseMLine")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPMLine]
+inline def parseMLine(mediaSection: SDPSection): SDPMLine = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMLine")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[SDPMLine]
 
-inline def parseMsid(mediaSection: typings.sdp.mod.SDPSection): typings.sdp.mod.SDPMediaStreamId = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseMsid")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPMediaStreamId]
+inline def parseMsid(mediaSection: SDPSection): SDPMediaStreamId = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMsid")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[SDPMediaStreamId]
 
-inline def parseOLine(mediaSection: typings.sdp.mod.SDPSection): typings.sdp.mod.SDPOLine = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseOLine")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPOLine]
+inline def parseOLine(mediaSection: SDPSection): SDPOLine = ^.asInstanceOf[js.Dynamic].applyDynamic("parseOLine")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[SDPOLine]
 
-inline def parseRtcpFb(line: typings.sdp.mod.SDPLine): typings.sdp.mod.SDPFeedbackParameter = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseRtcpFb")(line.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPFeedbackParameter]
+inline def parseRtcpFb(line: SDPLine): SDPFeedbackParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtcpFb")(line.asInstanceOf[js.Any]).asInstanceOf[SDPFeedbackParameter]
 
-inline def parseRtcpParameters(mediaSection: typings.sdp.mod.SDPSection): typings.sdp.mod.SDPRtcpParameters = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseRtcpParameters")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPRtcpParameters]
+inline def parseRtcpParameters(mediaSection: SDPSection): SDPRtcpParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtcpParameters")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[SDPRtcpParameters]
 
-inline def parseRtpEncodingParameters(mediaSection: typings.sdp.mod.SDPSection): js.Array[typings.sdp.mod.SDPEncodingParameters] = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpEncodingParameters")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.sdp.mod.SDPEncodingParameters]]
+inline def parseRtpEncodingParameters(mediaSection: SDPSection): js.Array[SDPEncodingParameters] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpEncodingParameters")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[js.Array[SDPEncodingParameters]]
 
-inline def parseRtpMap(line: typings.sdp.mod.SDPLine): typings.sdp.mod.SDPCodecParameters = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpMap")(line.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPCodecParameters]
+inline def parseRtpMap(line: SDPLine): SDPCodecParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpMap")(line.asInstanceOf[js.Any]).asInstanceOf[SDPCodecParameters]
 
-inline def parseRtpParameters(mediaSection: typings.sdp.mod.SDPSection): typings.sdp.mod.SDPRtpCapabilities = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpParameters")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPRtpCapabilities]
+inline def parseRtpParameters(mediaSection: SDPSection): SDPRtpCapabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpParameters")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[SDPRtpCapabilities]
 
-inline def parseSctpDescription(mediaSection: typings.sdp.mod.SDPSection): typings.sdp.mod.SDPSctpDescription = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseSctpDescription")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPSctpDescription]
+inline def parseSctpDescription(mediaSection: SDPSection): SDPSctpDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSctpDescription")(mediaSection.asInstanceOf[js.Any]).asInstanceOf[SDPSctpDescription]
 
-inline def parseSsrcGroup(line: typings.sdp.mod.SDPLine): typings.sdp.mod.SDPMediaSourceGroup = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseSsrcGroup")(line.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPMediaSourceGroup]
+inline def parseSsrcGroup(line: SDPLine): SDPMediaSourceGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSsrcGroup")(line.asInstanceOf[js.Any]).asInstanceOf[SDPMediaSourceGroup]
 
-inline def parseSsrcMedia(line: typings.sdp.mod.SDPLine): typings.sdp.mod.SDPMediaSource = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseSsrcMedia")(line.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPMediaSource]
+inline def parseSsrcMedia(line: SDPLine): SDPMediaSource = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSsrcMedia")(line.asInstanceOf[js.Any]).asInstanceOf[SDPMediaSource]
 
-inline def splitLines(blob: typings.sdp.mod.SDPBlob): js.Array[typings.sdp.mod.SDPLine] = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("splitLines")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.sdp.mod.SDPLine]]
+inline def splitLines(blob: SDPBlob): js.Array[SDPLine] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitLines")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Array[SDPLine]]
 
-inline def splitSections(blob: typings.sdp.mod.SDPBlob): js.Array[typings.sdp.mod.SDPSection] = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("splitSections")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.sdp.mod.SDPSection]]
+inline def splitSections(blob: SDPBlob): js.Array[SDPSection] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitSections")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Array[SDPSection]]
 
-inline def writeCandidate(candidate: typings.sdp.mod.SDPIceCandidate): typings.sdp.mod.SDPLine = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeCandidate")(candidate.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPLine]
+inline def writeCandidate(candidate: SDPIceCandidate): SDPLine = ^.asInstanceOf[js.Dynamic].applyDynamic("writeCandidate")(candidate.asInstanceOf[js.Any]).asInstanceOf[SDPLine]
 
-inline def writeDtlsParameters(params: typings.sdp.mod.SDPDtlsParameters, setupType: java.lang.String): typings.sdp.mod.SDPLine = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeDtlsParameters")(params.asInstanceOf[js.Any], setupType.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPLine]
+inline def writeDtlsParameters(params: SDPDtlsParameters, setupType: String): SDPLine = (^.asInstanceOf[js.Dynamic].applyDynamic("writeDtlsParameters")(params.asInstanceOf[js.Any], setupType.asInstanceOf[js.Any])).asInstanceOf[SDPLine]
 
-inline def writeExtmap(headerExtension: typings.sdp.mod.SDPHeaderExtension): typings.sdp.mod.SDPLine = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeExtmap")(headerExtension.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPLine]
+inline def writeExtmap(headerExtension: SDPHeaderExtension): SDPLine = ^.asInstanceOf[js.Dynamic].applyDynamic("writeExtmap")(headerExtension.asInstanceOf[js.Any]).asInstanceOf[SDPLine]
 
-inline def writeFmtp(codec: typings.sdp.mod.SDPCodec): typings.sdp.mod.SDPLine = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFmtp")(codec.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPLine]
+inline def writeFmtp(codec: SDPCodec): SDPLine = ^.asInstanceOf[js.Dynamic].applyDynamic("writeFmtp")(codec.asInstanceOf[js.Any]).asInstanceOf[SDPLine]
 
-inline def writeIceParameters(params: typings.sdp.mod.SDPIceParameters): typings.sdp.mod.SDPLine = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeIceParameters")(params.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPLine]
+inline def writeIceParameters(params: SDPIceParameters): SDPLine = ^.asInstanceOf[js.Dynamic].applyDynamic("writeIceParameters")(params.asInstanceOf[js.Any]).asInstanceOf[SDPLine]
 
-inline def writeRtcpFb(codec: typings.sdp.mod.SDPCodec): js.Array[typings.sdp.mod.SDPLine] = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeRtcpFb")(codec.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.sdp.mod.SDPLine]]
+inline def writeRtcpFb(codec: SDPCodec): js.Array[SDPLine] = ^.asInstanceOf[js.Dynamic].applyDynamic("writeRtcpFb")(codec.asInstanceOf[js.Any]).asInstanceOf[js.Array[SDPLine]]
 
-inline def writeRtcpParameters(params: typings.sdp.mod.SDPRtcpParameters): typings.sdp.mod.SDPLine = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeRtcpParameters")(params.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPLine]
+inline def writeRtcpParameters(params: SDPRtcpParameters): SDPLine = ^.asInstanceOf[js.Dynamic].applyDynamic("writeRtcpParameters")(params.asInstanceOf[js.Any]).asInstanceOf[SDPLine]
 
-inline def writeRtpDescription(kind: java.lang.String, caps: typings.sdp.mod.SDPRtpCapabilities): typings.sdp.mod.SDPSection = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeRtpDescription")(kind.asInstanceOf[js.Any], caps.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPSection]
+inline def writeRtpDescription(kind: String, caps: SDPRtpCapabilities): SDPSection = (^.asInstanceOf[js.Dynamic].applyDynamic("writeRtpDescription")(kind.asInstanceOf[js.Any], caps.asInstanceOf[js.Any])).asInstanceOf[SDPSection]
 
-inline def writeRtpMap(codec: typings.sdp.mod.SDPCodecParameters): typings.sdp.mod.SDPLine = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeRtpMap")(codec.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPLine]
+inline def writeRtpMap(codec: SDPCodecParameters): SDPLine = ^.asInstanceOf[js.Dynamic].applyDynamic("writeRtpMap")(codec.asInstanceOf[js.Any]).asInstanceOf[SDPLine]
 
-inline def writeSctpDescription(mediaSection: typings.sdp.mod.SDPMLine, desc: typings.sdp.mod.SDPSctpDescription): typings.sdp.mod.SDPSection = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSctpDescription")(mediaSection.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPSection]
+inline def writeSctpDescription(mediaSection: SDPMLine, desc: SDPSctpDescription): SDPSection = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSctpDescription")(mediaSection.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[SDPSection]
 
-inline def writeSessionBoilerplate(): typings.sdp.mod.SDPBlob = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")().asInstanceOf[typings.sdp.mod.SDPBlob]
-inline def writeSessionBoilerplate(sessId: java.lang.String): typings.sdp.mod.SDPBlob = typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any]).asInstanceOf[typings.sdp.mod.SDPBlob]
-inline def writeSessionBoilerplate(sessId: java.lang.String, sessVer: scala.Double): typings.sdp.mod.SDPBlob = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPBlob]
-inline def writeSessionBoilerplate(sessId: java.lang.String, sessVer: scala.Double, sessUser: java.lang.String): typings.sdp.mod.SDPBlob = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any], sessUser.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPBlob]
-inline def writeSessionBoilerplate(sessId: java.lang.String, sessVer: scala.Unit, sessUser: java.lang.String): typings.sdp.mod.SDPBlob = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any], sessUser.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPBlob]
-inline def writeSessionBoilerplate(sessId: scala.Unit, sessVer: scala.Double): typings.sdp.mod.SDPBlob = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPBlob]
-inline def writeSessionBoilerplate(sessId: scala.Unit, sessVer: scala.Double, sessUser: java.lang.String): typings.sdp.mod.SDPBlob = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any], sessUser.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPBlob]
-inline def writeSessionBoilerplate(sessId: scala.Unit, sessVer: scala.Unit, sessUser: java.lang.String): typings.sdp.mod.SDPBlob = (typings.sdp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any], sessUser.asInstanceOf[js.Any])).asInstanceOf[typings.sdp.mod.SDPBlob]
+inline def writeSessionBoilerplate(): SDPBlob = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")().asInstanceOf[SDPBlob]
+inline def writeSessionBoilerplate(sessId: String): SDPBlob = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any]).asInstanceOf[SDPBlob]
+inline def writeSessionBoilerplate(sessId: String, sessVer: Double): SDPBlob = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any])).asInstanceOf[SDPBlob]
+inline def writeSessionBoilerplate(sessId: String, sessVer: Double, sessUser: String): SDPBlob = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any], sessUser.asInstanceOf[js.Any])).asInstanceOf[SDPBlob]
+inline def writeSessionBoilerplate(sessId: String, sessVer: Unit, sessUser: String): SDPBlob = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any], sessUser.asInstanceOf[js.Any])).asInstanceOf[SDPBlob]
+inline def writeSessionBoilerplate(sessId: Unit, sessVer: Double): SDPBlob = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any])).asInstanceOf[SDPBlob]
+inline def writeSessionBoilerplate(sessId: Unit, sessVer: Double, sessUser: String): SDPBlob = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any], sessUser.asInstanceOf[js.Any])).asInstanceOf[SDPBlob]
+inline def writeSessionBoilerplate(sessId: Unit, sessVer: Unit, sessUser: String): SDPBlob = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSessionBoilerplate")(sessId.asInstanceOf[js.Any], sessVer.asInstanceOf[js.Any], sessUser.asInstanceOf[js.Any])).asInstanceOf[SDPBlob]
 
-type SDPBlob = java.lang.String
+type SDPBlob = String
 
-type SDPCodecAdditionalParameters = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type SDPCodecAdditionalParameters = StringDictionary[String]
 
-type SDPLine = java.lang.String
+type SDPLine = String
 
-type SDPSection = java.lang.String
+type SDPSection = String

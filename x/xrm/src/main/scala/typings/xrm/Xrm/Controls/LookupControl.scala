@@ -1,6 +1,7 @@
 package typings.xrm.Xrm.Controls
 
 import typings.xrm.Xrm.Events.ContextSensitiveHandler
+import typings.xrm.Xrm.Events.LookupTagClickHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,6 +54,12 @@ trait LookupControl
   ): Unit = js.native
   
   /**
+    * Adds an event handler to the "lookup tag click" event.
+    * @param handler The function to add to the OnLookupTagClick event.
+    */
+  def addOnLookupTagClick(handler: LookupTagClickHandler): Unit = js.native
+  
+  /**
     * Adds a handler to the "pre search" event of the Lookup control.
     * @param handler The handler.
     */
@@ -69,6 +76,12 @@ trait LookupControl
     * Gets the types of entities allowed in the lookup control.
     */
   def getEntityTypes(): js.Array[String] = js.native
+  
+  /**
+    * Removes the handler from the "lookup tag click" event.
+    * @param handler The function to be removed from the OnLookupTagClick event.
+    */
+  def removeOnLookupTagClick(handler: LookupTagClickHandler): Unit = js.native
   
   /**
     * Removes the handler from the "pre search" event of the Lookup control.

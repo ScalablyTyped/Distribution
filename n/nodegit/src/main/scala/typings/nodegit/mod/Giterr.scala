@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Giterr")
 @js.native
-class Giterr ()
+open class Giterr ()
   extends typings.nodegit.gitErrMod.Giterr
 /* static members */
 object Giterr {

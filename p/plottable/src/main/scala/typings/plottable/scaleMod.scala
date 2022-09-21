@@ -15,18 +15,18 @@ object scaleMod {
     *
     * @constructor
     */
-  class Scale[D, R] () extends StObject {
+  open class Scale[D, R] () extends StObject {
     
-    /* private */ var _autoDomainAutomatically: js.Any = js.native
+    /* private */ var _autoDomainAutomatically: Any = js.native
     
     /* protected */ def _backingScaleDomain(): js.Array[D] = js.native
     /* protected */ def _backingScaleDomain(values: js.Array[D]): this.type = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
     /* protected */ def _dispatchUpdate(): Unit = js.native
     
-    /* private */ var _domainModificationInProgress: js.Any = js.native
+    /* private */ var _domainModificationInProgress: Any = js.native
     
     /* protected */ def _getAllIncludedValues(): js.Array[D] = js.native
     /* protected */ def _getAllIncludedValues(ignoreAttachState: Boolean): js.Array[D] = js.native
@@ -37,13 +37,13 @@ object scaleMod {
     
     /* protected */ def _getRange(): js.Array[R] = js.native
     
-    /* private */ var _includedValuesProviders: js.Any = js.native
+    /* private */ var _includedValuesProviders: Any = js.native
     
     /* protected */ def _setDomain(values: js.Array[D]): Unit = js.native
     
     /* protected */ def _setRange(values: js.Array[R]): Unit = js.native
     
-    /* private */ var _updateId: js.Any = js.native
+    /* private */ var _updateId: Any = js.native
     
     /**
       * Adds an IncludedValuesProvider to the Scale.
@@ -143,7 +143,7 @@ object scaleMod {
     def updateId(): Double = js.native
   }
   
-  type IScaleCallback[S /* <: Scale[js.Any, js.Any] */] = js.Function1[/* scale */ S, js.Any]
+  type IScaleCallback[S /* <: Scale[Any, Any] */] = js.Function1[/* scale */ S, Any]
   
   @js.native
   trait TransformableScale[D, R]

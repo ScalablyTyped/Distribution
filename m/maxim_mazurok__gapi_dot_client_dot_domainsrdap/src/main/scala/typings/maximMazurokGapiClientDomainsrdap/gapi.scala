@@ -55,7 +55,7 @@ object gapi {
                 js.Array[
                   /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[Any]
                 ]
               ] = js.undefined
       }
@@ -80,7 +80,7 @@ object gapi {
             value: js.Array[
                       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[Any]
                     ]
           ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
           
@@ -89,8 +89,8 @@ object gapi {
           inline def setExtensionsVarargs(
             value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[js.Any])*
-          ): Self = StObject.set(x, "extensions", js.Array(value :_*))
+            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[Any])*
+          ): Self = StObject.set(x, "extensions", js.Array(value*))
         }
       }
       
@@ -202,13 +202,13 @@ object gapi {
           
           inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+          inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value*))
           
           inline def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
           
           inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
           
-          inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+          inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value*))
           
           inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
@@ -256,7 +256,7 @@ object gapi {
           
           inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+          inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value*))
           
           inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
           
@@ -274,13 +274,13 @@ object gapi {
           
           inline def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
           
-          inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
+          inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value*))
           
           inline def setRdapConformance(value: js.Array[String]): Self = StObject.set(x, "rdapConformance", value.asInstanceOf[js.Any])
           
           inline def setRdapConformanceUndefined: Self = StObject.set(x, "rdapConformance", js.undefined)
           
-          inline def setRdapConformanceVarargs(value: String*): Self = StObject.set(x, "rdapConformance", js.Array(value :_*))
+          inline def setRdapConformanceVarargs(value: String*): Self = StObject.set(x, "rdapConformance", js.Array(value*))
           
           inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           

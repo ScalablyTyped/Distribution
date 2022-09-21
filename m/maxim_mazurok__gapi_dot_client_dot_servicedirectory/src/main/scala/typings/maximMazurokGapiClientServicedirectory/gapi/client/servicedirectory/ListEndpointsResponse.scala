@@ -25,7 +25,7 @@ object ListEndpointsResponse {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_storagetransfer
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220808
 
 ## Library description:
 TypeScript typings for Storage Transfer API v1
@@ -10,10 +10,10 @@ TypeScript typings for Storage Transfer API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.storagetransfer |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 1129 |
-| # stars            | 0 |
+| # releases         | 86 |
+| # dependents       | 0.0 |
+| # downloads        | 1075.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

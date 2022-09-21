@@ -33,7 +33,7 @@ object WordNetLookupResults {
     
     inline def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
-    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value*))
     
     inline def setSynsetOffset(value: Double): Self = StObject.set(x, "synsetOffset", value.asInstanceOf[js.Any])
   }

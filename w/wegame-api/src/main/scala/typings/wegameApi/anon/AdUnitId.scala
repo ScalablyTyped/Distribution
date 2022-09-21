@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdUnitId extends StObject {
   
   /**
-    * 广告单元 id
+    * 推荐单元 id
     */
   var adUnitId: String
 }

@@ -29,7 +29,7 @@ object DrawerHeaderAccountProps {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: typings.reactNativeMaterialUi.anon.Avatar*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: typings.reactNativeMaterialUi.anon.Avatar*): Self = StObject.set(x, "accounts", js.Array(value*))
     
     inline def setAvatar(value: Element): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

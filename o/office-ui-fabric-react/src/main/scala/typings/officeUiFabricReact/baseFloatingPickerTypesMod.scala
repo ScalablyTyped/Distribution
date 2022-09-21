@@ -38,13 +38,13 @@ object baseFloatingPickerTypesMod {
     def showPicker(updateValue: Boolean): Unit = js.native
     
     /** Gets the suggestions */
-    var suggestions: js.Array[js.Any] = js.native
+    var suggestions: js.Array[Any] = js.native
   }
   
   @js.native
   trait IBaseFloatingPickerProps[T]
     extends StObject
-       with ClassAttributes[js.Any] {
+       with ClassAttributes[Any] {
     
     /**
       * Width for the suggestions callout
@@ -195,13 +195,13 @@ object baseFloatingPickerTypesMod {
       
       inline def setFooterItemsPropsUndefined: Self = StObject.set(x, "footerItemsProps", js.undefined)
       
-      inline def setFooterItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = StObject.set(x, "footerItemsProps", js.Array(value :_*))
+      inline def setFooterItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = StObject.set(x, "footerItemsProps", js.Array(value*))
       
       inline def setHeaderItemsProps(value: js.Array[ISuggestionsHeaderFooterProps]): Self = StObject.set(x, "headerItemsProps", value.asInstanceOf[js.Any])
       
       inline def setHeaderItemsPropsUndefined: Self = StObject.set(x, "headerItemsProps", js.undefined)
       
-      inline def setHeaderItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = StObject.set(x, "headerItemsProps", js.Array(value :_*))
+      inline def setHeaderItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = StObject.set(x, "headerItemsProps", js.Array(value*))
       
       inline def setShouldSelectFirstItem(value: () => Boolean): Self = StObject.set(x, "shouldSelectFirstItem", js.Any.fromFunction0(value))
       

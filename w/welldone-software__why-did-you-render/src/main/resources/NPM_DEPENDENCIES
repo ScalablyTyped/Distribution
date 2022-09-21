@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@welldone-software/why-did-you-render" : "6.0.0-rc.1"
+      "@welldone-software/why-did-you-render" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@welldone-software/why-did-you-render" : "6.0.0-rc.1"
+      "@welldone-software/why-did-you-render" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

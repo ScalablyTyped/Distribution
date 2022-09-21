@@ -39,6 +39,6 @@ object Symbol3DProperties {
     
     inline def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
     
-    inline def setSymbolLayersVarargs(value: Symbol3DLayerProperties*): Self = StObject.set(x, "symbolLayers", js.Array(value :_*))
+    inline def setSymbolLayersVarargs(value: Symbol3DLayerProperties*): Self = StObject.set(x, "symbolLayers", js.Array(value*))
   }
 }

@@ -1,19 +1,19 @@
 
 # Scala.js typings for dom-accessibility-api
 
-Typings are for version 0.5.4
+Typings are for version 0.5.14
 
 ## Library description:
-[![npm version](https://badge.fury.io/js/dom-accessibility-api.svg)](https://badge.fury.io/js/dom-accessibility-api) [![Build Status](https://dev.azure.com/silbermannsebastian/dom-accessibility-api/_apis/build/status/eps1lon.dom-accessibility-api?branchNa
+Implements https://w3c.github.io/accname/
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | dom-accessibility-api |
 | Keywords           | accessibility, ARIA, accname |
-| # releases         | 16 |
-| # dependents       | 2 |
-| # downloads        | 45904504 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1611696E7 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/eps1lon/dom-accessibility-api#readme)

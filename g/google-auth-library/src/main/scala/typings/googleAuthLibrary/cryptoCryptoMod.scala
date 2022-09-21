@@ -1,6 +1,6 @@
 package typings.googleAuthLibrary
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +12,8 @@ object cryptoCryptoMod {
   val ^ : js.Any = js.native
   
   inline def createCrypto(): Crypto = ^.asInstanceOf[js.Dynamic].applyDynamic("createCrypto")().asInstanceOf[Crypto]
+  
+  inline def fromArrayBufferToHex(arrayBuffer: js.typedarray.ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBufferToHex")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def hasBrowserCrypto(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBrowserCrypto")().asInstanceOf[Boolean]
   
@@ -26,10 +28,29 @@ object cryptoCryptoMod {
     
     def sha256DigestBase64(str: String): js.Promise[String] = js.native
     
+    /**
+      * Computes the SHA-256 hash of the provided string.
+      * @param str The plain text string to hash.
+      * @return A promise that resolves with the SHA-256 hash of the provided
+      *   string in hexadecimal encoding.
+      */
+    def sha256DigestHex(str: String): js.Promise[String] = js.native
+    
     def sign(privateKey: String, data: String): js.Promise[String] = js.native
     def sign(privateKey: String, data: Buffer): js.Promise[String] = js.native
     def sign(privateKey: JwkCertificate, data: String): js.Promise[String] = js.native
     def sign(privateKey: JwkCertificate, data: Buffer): js.Promise[String] = js.native
+    
+    /**
+      * Computes the HMAC hash of a message using the provided crypto key and the
+      * SHA-256 algorithm.
+      * @param key The secret crypto key in utf-8 or ArrayBuffer format.
+      * @param msg The plain text message.
+      * @return A promise that resolves with the HMAC-SHA256 hash in ArrayBuffer
+      *   format.
+      */
+    def signWithHmacSha256(key: String, msg: String): js.Promise[js.typedarray.ArrayBuffer] = js.native
+    def signWithHmacSha256(key: js.typedarray.ArrayBuffer, msg: String): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
     def verify(pubkey: String, data: String, signature: String): js.Promise[Boolean] = js.native
     def verify(pubkey: String, data: Buffer, signature: String): js.Promise[Boolean] = js.native

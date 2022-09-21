@@ -1,195 +1,136 @@
 package typings.angularCommon.mod
 
+import typings.angularCommon.angularCommonStrings.ltr
+import typings.angularCommon.angularCommonStrings.narrow
+import typings.angularCommon.angularCommonStrings.rtl
+import typings.angularCommon.angularCommonStrings.wide
+import typings.angularCommon.anon.EnsurePreconnect
+import typings.angularCommon.mod.^
+import typings.angularCore.mod.InjectionToken
+import typings.angularCore.mod.Provider
+import typings.angularCore.mod.Version
+import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def APP_BASE_HREF: typings.angularCore.mod.InjectionToken[java.lang.String] = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("APP_BASE_HREF").asInstanceOf[typings.angularCore.mod.InjectionToken[java.lang.String]]
+inline def APP_BASE_HREF: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_BASE_HREF").asInstanceOf[InjectionToken[String]]
 
-inline def DOCUMENT: typings.angularCore.mod.InjectionToken[typings.std.Document] = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DOCUMENT").asInstanceOf[typings.angularCore.mod.InjectionToken[typings.std.Document]]
+inline def DATE_PIPE_DEFAULT_TIMEZONE: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("DATE_PIPE_DEFAULT_TIMEZONE").asInstanceOf[InjectionToken[String]]
 
-inline def LOCATION_INITIALIZED: typings.angularCore.mod.InjectionToken[js.Promise[js.Any]] = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LOCATION_INITIALIZED").asInstanceOf[typings.angularCore.mod.InjectionToken[js.Promise[js.Any]]]
+inline def DOCUMENT: InjectionToken[Document] = ^.asInstanceOf[js.Dynamic].selectDynamic("DOCUMENT").asInstanceOf[InjectionToken[Document]]
 
-inline def VERSION: typings.angularCore.mod.Version = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[typings.angularCore.mod.Version]
+inline def IMAGE_LOADER: InjectionToken[ImageLoader] = ^.asInstanceOf[js.Dynamic].selectDynamic("IMAGE_LOADER").asInstanceOf[InjectionToken[ImageLoader]]
 
-inline def formatCurrency(value: scala.Double, locale: java.lang.String, currency: java.lang.String): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatCurrency")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], currency.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatCurrency(
-  value: scala.Double,
-  locale: java.lang.String,
-  currency: java.lang.String,
-  currencyCode: java.lang.String
-): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatCurrency")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatCurrency(
-  value: scala.Double,
-  locale: java.lang.String,
-  currency: java.lang.String,
-  currencyCode: java.lang.String,
-  digitsInfo: java.lang.String
-): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatCurrency")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any], digitsInfo.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatCurrency(
-  value: scala.Double,
-  locale: java.lang.String,
-  currency: java.lang.String,
-  currencyCode: scala.Unit,
-  digitsInfo: java.lang.String
-): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatCurrency")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any], digitsInfo.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def LOCATION_INITIALIZED: InjectionToken[js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("LOCATION_INITIALIZED").asInstanceOf[InjectionToken[js.Promise[Any]]]
 
-inline def formatDate(value: java.lang.String, format: java.lang.String, locale: java.lang.String): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatDate(
-  value: java.lang.String,
-  format: java.lang.String,
-  locale: java.lang.String,
-  timezone: java.lang.String
-): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatDate(value: scala.Double, format: java.lang.String, locale: java.lang.String): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatDate(
-  value: scala.Double,
-  format: java.lang.String,
-  locale: java.lang.String,
-  timezone: java.lang.String
-): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatDate(value: typings.std.Date, format: java.lang.String, locale: java.lang.String): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatDate(
-  value: typings.std.Date,
-  format: java.lang.String,
-  locale: java.lang.String,
-  timezone: java.lang.String
-): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def PRECONNECT_CHECK_BLOCKLIST: InjectionToken[js.Array[String | js.Array[String]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("PRECONNECT_CHECK_BLOCKLIST").asInstanceOf[InjectionToken[js.Array[String | js.Array[String]]]]
 
-inline def formatNumber(value: scala.Double, locale: java.lang.String): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatNumber(value: scala.Double, locale: java.lang.String, digitsInfo: java.lang.String): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], digitsInfo.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def VERSION: Version = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[Version]
 
-inline def formatPercent(value: scala.Double, locale: java.lang.String): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatPercent")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def formatPercent(value: scala.Double, locale: java.lang.String, digitsInfo: java.lang.String): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatPercent")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], digitsInfo.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def formatCurrency(value: Double, locale: String, currency: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatCurrency")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], currency.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatCurrency(value: Double, locale: String, currency: String, currencyCode: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatCurrency")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatCurrency(value: Double, locale: String, currency: String, currencyCode: String, digitsInfo: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatCurrency")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any], digitsInfo.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatCurrency(value: Double, locale: String, currency: String, currencyCode: Unit, digitsInfo: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatCurrency")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any], digitsInfo.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getCurrencySymbol_narrow(code: java.lang.String, format: typings.angularCommon.angularCommonStrings.narrow): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencySymbol")(code.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getCurrencySymbol_narrow(
-  code: java.lang.String,
-  format: typings.angularCommon.angularCommonStrings.narrow,
-  locale: java.lang.String
-): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencySymbol")(code.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def formatDate(value: String, format: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatDate(value: String, format: String, locale: String, timezone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatDate(value: js.Date, format: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatDate(value: js.Date, format: String, locale: String, timezone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatDate(value: Double, format: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatDate(value: Double, format: String, locale: String, timezone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getCurrencySymbol_wide(code: java.lang.String, format: typings.angularCommon.angularCommonStrings.wide): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencySymbol")(code.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getCurrencySymbol_wide(
-  code: java.lang.String,
-  format: typings.angularCommon.angularCommonStrings.wide,
-  locale: java.lang.String
-): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencySymbol")(code.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def formatNumber(value: Double, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatNumber(value: Double, locale: String, digitsInfo: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], digitsInfo.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getLocaleCurrencyCode(locale: java.lang.String): java.lang.String | scala.Null = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleCurrencyCode")(locale.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | scala.Null]
+inline def formatPercent(value: Double, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPercent")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def formatPercent(value: Double, locale: String, digitsInfo: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPercent")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], digitsInfo.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getLocaleCurrencyName(locale: java.lang.String): java.lang.String | scala.Null = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleCurrencyName")(locale.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | scala.Null]
+inline def getCurrencySymbol(code: String, format: wide | narrow): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencySymbol")(code.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getCurrencySymbol(code: String, format: wide | narrow, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrencySymbol")(code.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getLocaleCurrencySymbol(locale: java.lang.String): java.lang.String | scala.Null = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleCurrencySymbol")(locale.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | scala.Null]
+inline def getLocaleCurrencyCode(locale: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleCurrencyCode")(locale.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 
-inline def getLocaleDateFormat(locale: java.lang.String, width: typings.angularCommon.mod.FormatWidth): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDateFormat")(locale.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def getLocaleCurrencyName(locale: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleCurrencyName")(locale.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 
-inline def getLocaleDateTimeFormat(locale: java.lang.String, width: typings.angularCommon.mod.FormatWidth): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDateTimeFormat")(locale.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def getLocaleCurrencySymbol(locale: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleCurrencySymbol")(locale.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 
-inline def getLocaleDayNames(
-  locale: java.lang.String,
-  formStyle: typings.angularCommon.mod.FormStyle,
-  width: typings.angularCommon.mod.TranslationWidth
-): js.Array[java.lang.String] = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDayNames")(locale.asInstanceOf[js.Any], formStyle.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def getLocaleDateFormat(locale: String, width: FormatWidth): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDateFormat")(locale.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getLocaleDayPeriods(
-  locale: java.lang.String,
-  formStyle: typings.angularCommon.mod.FormStyle,
-  width: typings.angularCommon.mod.TranslationWidth
-): js.Tuple2[java.lang.String, java.lang.String] = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDayPeriods")(locale.asInstanceOf[js.Any], formStyle.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[java.lang.String, java.lang.String]]
+inline def getLocaleDateTimeFormat(locale: String, width: FormatWidth): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDateTimeFormat")(locale.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getLocaleDirection(locale: java.lang.String): typings.angularCommon.angularCommonStrings.ltr | typings.angularCommon.angularCommonStrings.rtl = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDirection")(locale.asInstanceOf[js.Any]).asInstanceOf[typings.angularCommon.angularCommonStrings.ltr | typings.angularCommon.angularCommonStrings.rtl]
+inline def getLocaleDayNames(locale: String, formStyle: FormStyle, width: TranslationWidth): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDayNames")(locale.asInstanceOf[js.Any], formStyle.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 
-inline def getLocaleEraNames(locale: java.lang.String, width: typings.angularCommon.mod.TranslationWidth): js.Tuple2[java.lang.String, java.lang.String] = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleEraNames")(locale.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[java.lang.String, java.lang.String]]
+inline def getLocaleDayPeriods(locale: String, formStyle: FormStyle, width: TranslationWidth): js.Tuple2[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDayPeriods")(locale.asInstanceOf[js.Any], formStyle.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, String]]
 
-inline def getLocaleExtraDayPeriodRules(locale: java.lang.String): js.Array[
-typings.angularCommon.mod.Time | (js.Tuple2[typings.angularCommon.mod.Time, typings.angularCommon.mod.Time])] = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleExtraDayPeriodRules")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-typings.angularCommon.mod.Time | (js.Tuple2[typings.angularCommon.mod.Time, typings.angularCommon.mod.Time])]]
+inline def getLocaleDirection(locale: String): ltr | rtl = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDirection")(locale.asInstanceOf[js.Any]).asInstanceOf[ltr | rtl]
 
-inline def getLocaleExtraDayPeriods(
-  locale: java.lang.String,
-  formStyle: typings.angularCommon.mod.FormStyle,
-  width: typings.angularCommon.mod.TranslationWidth
-): js.Array[java.lang.String] = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleExtraDayPeriods")(locale.asInstanceOf[js.Any], formStyle.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def getLocaleEraNames(locale: String, width: TranslationWidth): js.Tuple2[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleEraNames")(locale.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, String]]
 
-inline def getLocaleFirstDayOfWeek(locale: java.lang.String): typings.angularCommon.mod.WeekDay = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleFirstDayOfWeek")(locale.asInstanceOf[js.Any]).asInstanceOf[typings.angularCommon.mod.WeekDay]
+inline def getLocaleExtraDayPeriodRules(locale: String): js.Array[Time | (js.Tuple2[Time, Time])] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleExtraDayPeriodRules")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Time | (js.Tuple2[Time, Time])]]
 
-inline def getLocaleId(locale: java.lang.String): java.lang.String = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleId")(locale.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getLocaleExtraDayPeriods(locale: String, formStyle: FormStyle, width: TranslationWidth): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleExtraDayPeriods")(locale.asInstanceOf[js.Any], formStyle.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 
-inline def getLocaleMonthNames(
-  locale: java.lang.String,
-  formStyle: typings.angularCommon.mod.FormStyle,
-  width: typings.angularCommon.mod.TranslationWidth
-): js.Array[java.lang.String] = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleMonthNames")(locale.asInstanceOf[js.Any], formStyle.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def getLocaleFirstDayOfWeek(locale: String): WeekDay = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleFirstDayOfWeek")(locale.asInstanceOf[js.Any]).asInstanceOf[WeekDay]
 
-inline def getLocaleNumberFormat(locale: java.lang.String, `type`: typings.angularCommon.mod.NumberFormatStyle): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleNumberFormat")(locale.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def getLocaleId(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleId")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getLocaleNumberSymbol(locale: java.lang.String, symbol: typings.angularCommon.mod.NumberSymbol): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleNumberSymbol")(locale.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def getLocaleMonthNames(locale: String, formStyle: FormStyle, width: TranslationWidth): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleMonthNames")(locale.asInstanceOf[js.Any], formStyle.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 
-inline def getLocalePluralCase(locale: java.lang.String): js.Function1[/* value */ scala.Double, typings.angularCommon.mod.Plural] = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocalePluralCase")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ scala.Double, typings.angularCommon.mod.Plural]]
+inline def getLocaleNumberFormat(locale: String, `type`: NumberFormatStyle): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleNumberFormat")(locale.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getLocaleTimeFormat(locale: java.lang.String, width: typings.angularCommon.mod.FormatWidth): java.lang.String = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleTimeFormat")(locale.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def getLocaleNumberSymbol(locale: String, symbol: NumberSymbol): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleNumberSymbol")(locale.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getLocaleWeekEndRange(locale: java.lang.String): js.Tuple2[typings.angularCommon.mod.WeekDay, typings.angularCommon.mod.WeekDay] = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleWeekEndRange")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[typings.angularCommon.mod.WeekDay, typings.angularCommon.mod.WeekDay]]
+inline def getLocalePluralCase(locale: String): js.Function1[/* value */ Double, Plural] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalePluralCase")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ Double, Plural]]
 
-inline def getNumberOfCurrencyDigits(code: java.lang.String): scala.Double = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNumberOfCurrencyDigits")(code.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def getLocaleTimeFormat(locale: String, width: FormatWidth): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleTimeFormat")(locale.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def isPlatformBrowser(platformId: js.Object): scala.Boolean = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isPlatformBrowser")(platformId.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def getLocaleWeekEndRange(locale: String): js.Tuple2[WeekDay, WeekDay] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleWeekEndRange")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[WeekDay, WeekDay]]
 
-inline def isPlatformServer(platformId: js.Object): scala.Boolean = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isPlatformServer")(platformId.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def getNumberOfCurrencyDigits(code: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumberOfCurrencyDigits")(code.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def isPlatformWorkerApp(platformId: js.Object): scala.Boolean = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isPlatformWorkerApp")(platformId.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isPlatformBrowser(platformId: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlatformBrowser")(platformId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def isPlatformWorkerUi(platformId: js.Object): scala.Boolean = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isPlatformWorkerUi")(platformId.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isPlatformServer(platformId: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlatformServer")(platformId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def registerLocaleData(data: js.Any): scala.Unit = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def registerLocaleData(data: js.Any, localeId: java.lang.String): scala.Unit = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def registerLocaleData(data: js.Any, localeId: java.lang.String, extraData: js.Any): scala.Unit = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def registerLocaleData(data: js.Any, localeId: js.Any): scala.Unit = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def registerLocaleData(data: js.Any, localeId: js.Any, extraData: js.Any): scala.Unit = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def registerLocaleData(data: js.Any, localeId: scala.Unit, extraData: js.Any): scala.Unit = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def isPlatformWorkerApp(platformId: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlatformWorkerApp")(platformId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def ɵPLATFORMBROWSERID: /* "browser" */ java.lang.String = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PLATFORM_BROWSER_ID").asInstanceOf[/* "browser" */ java.lang.String]
+inline def isPlatformWorkerUi(platformId: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlatformWorkerUi")(platformId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def ɵPLATFORMSERVERID: /* "server" */ java.lang.String = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PLATFORM_SERVER_ID").asInstanceOf[/* "server" */ java.lang.String]
+inline def provideCloudflareLoader(path: String): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideCloudflareLoader")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
+inline def provideCloudflareLoader(path: String, options: EnsurePreconnect): js.Array[Provider] = (^.asInstanceOf[js.Dynamic].applyDynamic("provideCloudflareLoader")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Provider]]
 
-inline def ɵPLATFORMWORKERAPPID: /* "browserWorkerApp" */ java.lang.String = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PLATFORM_WORKER_APP_ID").asInstanceOf[/* "browserWorkerApp" */ java.lang.String]
+inline def provideCloudinaryLoader(path: String): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideCloudinaryLoader")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
+inline def provideCloudinaryLoader(path: String, options: EnsurePreconnect): js.Array[Provider] = (^.asInstanceOf[js.Dynamic].applyDynamic("provideCloudinaryLoader")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Provider]]
 
-inline def ɵPLATFORMWORKERUIID: /* "browserWorkerUi" */ java.lang.String = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PLATFORM_WORKER_UI_ID").asInstanceOf[/* "browserWorkerUi" */ java.lang.String]
+inline def provideImageKitLoader(path: String): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideImageKitLoader")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
+inline def provideImageKitLoader(path: String, options: EnsurePreconnect): js.Array[Provider] = (^.asInstanceOf[js.Dynamic].applyDynamic("provideImageKitLoader")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Provider]]
 
-inline def ɵangularPackagesCommonCommonA(): typings.angularCommon.mod.ɵBrowserPlatformLocation = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_common_a")().asInstanceOf[typings.angularCommon.mod.ɵBrowserPlatformLocation]
+inline def provideImgixLoader(path: String): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideImgixLoader")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
+inline def provideImgixLoader(path: String, options: EnsurePreconnect): js.Array[Provider] = (^.asInstanceOf[js.Dynamic].applyDynamic("provideImgixLoader")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Provider]]
 
-inline def ɵangularPackagesCommonCommonB(): typings.angularCommon.mod.ɵBrowserPlatformLocation = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_common_b")().asInstanceOf[typings.angularCommon.mod.ɵBrowserPlatformLocation]
+inline def registerLocaleData(data: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def registerLocaleData(data: Any, localeId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerLocaleData(data: Any, localeId: String, extraData: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerLocaleData(data: Any, localeId: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerLocaleData(data: Any, localeId: Any, extraData: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerLocaleData(data: Any, localeId: Unit, extraData: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵangularPackagesCommonCommonC(): typings.angularCommon.mod.Location = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_common_c")().asInstanceOf[typings.angularCommon.mod.Location]
+inline def ɵPLATFORMBROWSERID: /* "browser" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PLATFORM_BROWSER_ID").asInstanceOf[/* "browser" */ String]
 
-inline def ɵangularPackagesCommonCommonD(platformLocation: typings.angularCommon.mod.PlatformLocation): typings.angularCommon.mod.PathLocationStrategy = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_common_d")(platformLocation.asInstanceOf[js.Any]).asInstanceOf[typings.angularCommon.mod.PathLocationStrategy]
+inline def ɵPLATFORMSERVERID: /* "server" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PLATFORM_SERVER_ID").asInstanceOf[/* "server" */ String]
 
-inline def ɵangularPackagesCommonCommonE: js.Array[typings.angularCore.mod.Provider] = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275angular_packages_common_common_e").asInstanceOf[js.Array[typings.angularCore.mod.Provider]]
+inline def ɵPLATFORMWORKERAPPID: /* "browserWorkerApp" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PLATFORM_WORKER_APP_ID").asInstanceOf[/* "browserWorkerApp" */ String]
 
-inline def ɵangularPackagesCommonCommonF: js.Array[
-(org.scalablytyped.runtime.Instantiable1[
-  (/* _ref */ typings.angularCore.mod.ChangeDetectorRef) | (/* differs */ typings.angularCore.mod.KeyValueDiffers) | (/* _localization */ typings.angularCommon.mod.NgLocalization) | (/* _locale */ java.lang.String), 
-  typings.angularCommon.mod.AsyncPipe | typings.angularCommon.mod.DatePipe | typings.angularCommon.mod.DecimalPipe | typings.angularCommon.mod.I18nPluralPipe | typings.angularCommon.mod.KeyValuePipe | typings.angularCommon.mod.PercentPipe
-]) | (org.scalablytyped.runtime.Instantiable0[typings.angularCommon.mod.I18nSelectPipe | typings.angularCommon.mod.SlicePipe]) | (org.scalablytyped.runtime.Instantiable2[
-  /* _locale */ java.lang.String, 
-  /* _defaultCurrencyCode */ js.UndefOr[java.lang.String], 
-  typings.angularCommon.mod.CurrencyPipe
-])] = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275angular_packages_common_common_f").asInstanceOf[js.Array[
-(org.scalablytyped.runtime.Instantiable1[
-  (/* _ref */ typings.angularCore.mod.ChangeDetectorRef) | (/* differs */ typings.angularCore.mod.KeyValueDiffers) | (/* _localization */ typings.angularCommon.mod.NgLocalization) | (/* _locale */ java.lang.String), 
-  typings.angularCommon.mod.AsyncPipe | typings.angularCommon.mod.DatePipe | typings.angularCommon.mod.DecimalPipe | typings.angularCommon.mod.I18nPluralPipe | typings.angularCommon.mod.KeyValuePipe | typings.angularCommon.mod.PercentPipe
-]) | (org.scalablytyped.runtime.Instantiable0[typings.angularCommon.mod.I18nSelectPipe | typings.angularCommon.mod.SlicePipe]) | (org.scalablytyped.runtime.Instantiable2[
-  /* _locale */ java.lang.String, 
-  /* _defaultCurrencyCode */ js.UndefOr[java.lang.String], 
-  typings.angularCommon.mod.CurrencyPipe
-])]]
+inline def ɵPLATFORMWORKERUIID: /* "browserWorkerUi" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PLATFORM_WORKER_UI_ID").asInstanceOf[/* "browserWorkerUi" */ String]
 
-inline def ɵgetDOM(): typings.angularCommon.mod.ɵDomAdapter = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDOM")().asInstanceOf[typings.angularCommon.mod.ɵDomAdapter]
+inline def ɵgetDOM(): ɵDomAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDOM")().asInstanceOf[ɵDomAdapter]
 
-inline def ɵparseCookieValue(cookieStr: java.lang.String, name: java.lang.String): java.lang.String | scala.Null = (typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275parseCookieValue")(cookieStr.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | scala.Null]
+inline def ɵparseCookieValue(cookieStr: String, name: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275parseCookieValue")(cookieStr.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 
-inline def ɵsetRootDomAdapter(adapter: typings.angularCommon.mod.ɵDomAdapter): scala.Unit = typings.angularCommon.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setRootDomAdapter")(adapter.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵsetRootDomAdapter(adapter: ɵDomAdapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setRootDomAdapter")(adapter.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-type LocationChangeListener = js.Function1[/* event */ typings.angularCommon.mod.LocationChangeEvent, js.Any]
+type ImageLoader = js.Function1[/* config */ ImageLoaderConfig, String]
+
+type LocationChangeListener = js.Function1[/* event */ LocationChangeEvent, Any]

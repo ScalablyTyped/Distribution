@@ -26,7 +26,7 @@ object DataItem {
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    inline def setComponentsVarargs(value: DataItem*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: DataItem*): Self = StObject.set(x, "components", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "Vector")
 @js.native
-class Vector () extends StObject {
+open class Vector () extends StObject {
   def this(position: VectorOptions) = this()
   
   /**

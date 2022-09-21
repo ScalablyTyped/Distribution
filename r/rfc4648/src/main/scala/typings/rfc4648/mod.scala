@@ -4,7 +4,6 @@ import typings.rfc4648.codecMod.Encoding
 import typings.rfc4648.codecMod.ParseOptions
 import typings.rfc4648.codecMod.StringifyOptions
 import typings.std.ArrayLike
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +16,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def parse(string: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    inline def parse(string: String, opts: ParseOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
     inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -30,8 +29,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def parse(string: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    inline def parse(string: String, opts: ParseOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
     inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -43,8 +42,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def parse(string: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    inline def parse(string: String, opts: ParseOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
     inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -56,8 +55,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def parse(string: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    inline def parse(string: String, opts: ParseOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
     inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -69,8 +68,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def parse(string: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    inline def parse(string: String, opts: ParseOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
     inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -88,16 +87,16 @@ object mod {
         /* string */ String, 
         /* encoding */ Encoding, 
         /* opts */ js.UndefOr[ParseOptions], 
-        Uint8Array
+        js.typedarray.Uint8Array
       ] = js.native
-    inline def parse(string: String, encoding: Encoding): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-    inline def parse(string: String, encoding: Encoding, opts: ParseOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def parse(string: String, encoding: Encoding): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, encoding: Encoding, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     inline def parse_=(
       x: js.Function3[
           /* string */ String, 
           /* encoding */ Encoding, 
           /* opts */ js.UndefOr[ParseOptions], 
-          Uint8Array
+          js.typedarray.Uint8Array
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
     

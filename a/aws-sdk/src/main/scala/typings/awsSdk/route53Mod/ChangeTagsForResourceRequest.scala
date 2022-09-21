@@ -39,13 +39,13 @@ object ChangeTagsForResourceRequest {
     
     inline def setAddTagsUndefined: Self = StObject.set(x, "AddTags", js.undefined)
     
-    inline def setAddTagsVarargs(value: Tag*): Self = StObject.set(x, "AddTags", js.Array(value :_*))
+    inline def setAddTagsVarargs(value: Tag*): Self = StObject.set(x, "AddTags", js.Array(value*))
     
     inline def setRemoveTagKeys(value: TagKeyList): Self = StObject.set(x, "RemoveTagKeys", value.asInstanceOf[js.Any])
     
     inline def setRemoveTagKeysUndefined: Self = StObject.set(x, "RemoveTagKeys", js.undefined)
     
-    inline def setRemoveTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "RemoveTagKeys", js.Array(value :_*))
+    inline def setRemoveTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "RemoveTagKeys", js.Array(value*))
     
     inline def setResourceId(value: TagResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

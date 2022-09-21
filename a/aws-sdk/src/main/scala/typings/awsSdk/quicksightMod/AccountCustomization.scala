@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccountCustomization extends StObject {
   
   /**
-    * The default theme for this QuickSight subscription.
+    * The default email customization template.
+    */
+  var DefaultEmailCustomizationTemplate: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * The default theme for this Amazon QuickSight subscription.
     */
   var DefaultTheme: js.UndefOr[Arn] = js.undefined
 }
@@ -19,6 +24,10 @@ object AccountCustomization {
   }
   
   extension [Self <: AccountCustomization](x: Self) {
+    
+    inline def setDefaultEmailCustomizationTemplate(value: Arn): Self = StObject.set(x, "DefaultEmailCustomizationTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultEmailCustomizationTemplateUndefined: Self = StObject.set(x, "DefaultEmailCustomizationTemplate", js.undefined)
     
     inline def setDefaultTheme(value: Arn): Self = StObject.set(x, "DefaultTheme", value.asInstanceOf[js.Any])
     

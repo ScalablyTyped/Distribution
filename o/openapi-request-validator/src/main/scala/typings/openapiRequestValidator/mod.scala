@@ -1,17 +1,19 @@
 package typings.openapiRequestValidator
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ajv.mod.ErrorObject
-import typings.ajv.mod.FormatDefinition
-import typings.ajv.mod.FormatValidator
-import typings.ajv.mod.KeywordDefinition
+import typings.ajv.coreMod.Options
+import typings.ajv.distTypesMod.ErrorObject
+import typings.ajv.distTypesMod.Format
+import typings.ajv.distTypesMod.FormatDefinition
+import typings.ajv.distTypesMod.KeywordDefinition
 import typings.openapiTypes.mod.IJsonSchema
 import typings.openapiTypes.mod.OpenAPI.Parameters
 import typings.openapiTypes.mod.OpenAPI.Request
 import typings.openapiTypes.mod.OpenAPIV2.Parameter
-import typings.openapiTypes.mod.OpenAPIV3.ParameterObject
-import typings.openapiTypes.mod.OpenAPIV3.ReferenceObject
 import typings.openapiTypes.mod.OpenAPIV3.RequestBodyObject
+import typings.openapiTypes.mod.OpenAPIV31.ParameterObject
+import typings.openapiTypes.mod.OpenAPIV31.ReferenceObject
+import typings.std.Record
 import typings.tsLog.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,70 +23,76 @@ object mod {
   
   @JSImport("openapi-request-validator", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with OpenAPIRequestValidator {
     def this(args: OpenAPIRequestValidatorArgs) = this()
     
     /* private */ /* CompleteClass */
-    var bodySchema: js.Any = js.native
+    var addSchemaProperties: Any = js.native
     
     /* private */ /* CompleteClass */
-    var errorMapper: js.Any = js.native
+    var bodySchema: Any = js.native
     
     /* private */ /* CompleteClass */
-    var isBodyRequired: js.Any = js.native
+    var enableHeadersLowercase: Any = js.native
     
     /* private */ /* CompleteClass */
-    var logger: js.Any = js.native
+    var errorMapper: Any = js.native
     
     /* private */ /* CompleteClass */
-    var loggingKey: js.Any = js.native
+    var isBodyRequired: Any = js.native
     
     /* private */ /* CompleteClass */
-    var requestBody: js.Any = js.native
+    var logger: Any = js.native
     
     /* private */ /* CompleteClass */
-    var requestBodyValidators: js.Any = js.native
+    var loggingKey: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var requestBody: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var requestBodyValidators: Any = js.native
     
     /* CompleteClass */
-    override def validate(request: js.Any): Unit = js.native
+    override def validate(request: Any): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var validateBody: js.Any = js.native
+    var validateBody: Any = js.native
     
     /* private */ /* CompleteClass */
-    var validateFormData: js.Any = js.native
+    var validateFormData: Any = js.native
     
     /* private */ /* CompleteClass */
-    var validateHeaders: js.Any = js.native
+    var validateHeaders: Any = js.native
     
     /* private */ /* CompleteClass */
-    var validatePath: js.Any = js.native
+    var validatePath: Any = js.native
     
     /* private */ /* CompleteClass */
-    var validateQuery: js.Any = js.native
+    var validateQuery: Any = js.native
     
     /* CompleteClass */
-    override def validateRequest(request: js.Any): js.Any = js.native
+    override def validateRequest(request: Any): Any = js.native
     /* CompleteClass */
-    override def validateRequest(request: Request): js.Any = js.native
+    override def validateRequest(request: Request): Any = js.native
   }
   
   trait IOpenAPIRequestValidator extends StObject {
     
-    def validateRequest(request: Request): js.Any
+    def validateRequest(request: Request): Any
   }
   object IOpenAPIRequestValidator {
     
-    inline def apply(validateRequest: Request => js.Any): IOpenAPIRequestValidator = {
+    inline def apply(validateRequest: Request => Any): IOpenAPIRequestValidator = {
       val __obj = js.Dynamic.literal(validateRequest = js.Any.fromFunction1(validateRequest))
       __obj.asInstanceOf[IOpenAPIRequestValidator]
     }
     
     extension [Self <: IOpenAPIRequestValidator](x: Self) {
       
-      inline def setValidateRequest(value: Request => js.Any): Self = StObject.set(x, "validateRequest", js.Any.fromFunction1(value))
+      inline def setValidateRequest(value: Request => Any): Self = StObject.set(x, "validateRequest", js.Any.fromFunction1(value))
     }
   }
   
@@ -92,101 +100,117 @@ object mod {
     extends StObject
        with IOpenAPIRequestValidator {
     
-    /* private */ var bodySchema: js.Any
+    /* private */ var addSchemaProperties: Any
     
-    /* private */ var errorMapper: js.Any
+    /* private */ var bodySchema: Any
     
-    /* private */ var isBodyRequired: js.Any
+    /* private */ var enableHeadersLowercase: Any
     
-    /* private */ var logger: js.Any
+    /* private */ var errorMapper: Any
     
-    /* private */ var loggingKey: js.Any
+    /* private */ var isBodyRequired: Any
     
-    /* private */ var requestBody: js.Any
+    /* private */ var logger: Any
     
-    /* private */ var requestBodyValidators: js.Any
+    /* private */ var loggingKey: Any
     
-    def validate(request: js.Any): Unit
+    /* private */ var requestBody: Any
     
-    /* private */ var validateBody: js.Any
+    /* private */ var requestBodyValidators: Any
     
-    /* private */ var validateFormData: js.Any
+    def validate(request: Any): Unit
     
-    /* private */ var validateHeaders: js.Any
+    /* private */ var validateBody: Any
     
-    /* private */ var validatePath: js.Any
+    /* private */ var validateFormData: Any
     
-    /* private */ var validateQuery: js.Any
+    /* private */ var validateHeaders: Any
     
-    def validateRequest(request: js.Any): js.Any
+    /* private */ var validatePath: Any
+    
+    /* private */ var validateQuery: Any
+    
+    def validateRequest(request: Any): Any
   }
   object OpenAPIRequestValidator {
     
     inline def apply(
-      bodySchema: js.Any,
-      errorMapper: js.Any,
-      isBodyRequired: js.Any,
-      logger: js.Any,
-      loggingKey: js.Any,
-      requestBody: js.Any,
-      requestBodyValidators: js.Any,
-      validate: js.Any => Unit,
-      validateBody: js.Any,
-      validateFormData: js.Any,
-      validateHeaders: js.Any,
-      validatePath: js.Any,
-      validateQuery: js.Any,
-      validateRequest: js.Any => js.Any
+      addSchemaProperties: Any,
+      bodySchema: Any,
+      enableHeadersLowercase: Any,
+      errorMapper: Any,
+      isBodyRequired: Any,
+      logger: Any,
+      loggingKey: Any,
+      requestBody: Any,
+      requestBodyValidators: Any,
+      validate: Any => Unit,
+      validateBody: Any,
+      validateFormData: Any,
+      validateHeaders: Any,
+      validatePath: Any,
+      validateQuery: Any,
+      validateRequest: Any => Any
     ): OpenAPIRequestValidator = {
-      val __obj = js.Dynamic.literal(bodySchema = bodySchema.asInstanceOf[js.Any], errorMapper = errorMapper.asInstanceOf[js.Any], isBodyRequired = isBodyRequired.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], loggingKey = loggingKey.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], requestBodyValidators = requestBodyValidators.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate), validateBody = validateBody.asInstanceOf[js.Any], validateFormData = validateFormData.asInstanceOf[js.Any], validateHeaders = validateHeaders.asInstanceOf[js.Any], validatePath = validatePath.asInstanceOf[js.Any], validateQuery = validateQuery.asInstanceOf[js.Any], validateRequest = js.Any.fromFunction1(validateRequest))
+      val __obj = js.Dynamic.literal(addSchemaProperties = addSchemaProperties.asInstanceOf[js.Any], bodySchema = bodySchema.asInstanceOf[js.Any], enableHeadersLowercase = enableHeadersLowercase.asInstanceOf[js.Any], errorMapper = errorMapper.asInstanceOf[js.Any], isBodyRequired = isBodyRequired.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], loggingKey = loggingKey.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], requestBodyValidators = requestBodyValidators.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate), validateBody = validateBody.asInstanceOf[js.Any], validateFormData = validateFormData.asInstanceOf[js.Any], validateHeaders = validateHeaders.asInstanceOf[js.Any], validatePath = validatePath.asInstanceOf[js.Any], validateQuery = validateQuery.asInstanceOf[js.Any], validateRequest = js.Any.fromFunction1(validateRequest))
       __obj.asInstanceOf[OpenAPIRequestValidator]
     }
     
     extension [Self <: OpenAPIRequestValidator](x: Self) {
       
-      inline def setBodySchema(value: js.Any): Self = StObject.set(x, "bodySchema", value.asInstanceOf[js.Any])
+      inline def setAddSchemaProperties(value: Any): Self = StObject.set(x, "addSchemaProperties", value.asInstanceOf[js.Any])
       
-      inline def setErrorMapper(value: js.Any): Self = StObject.set(x, "errorMapper", value.asInstanceOf[js.Any])
+      inline def setBodySchema(value: Any): Self = StObject.set(x, "bodySchema", value.asInstanceOf[js.Any])
       
-      inline def setIsBodyRequired(value: js.Any): Self = StObject.set(x, "isBodyRequired", value.asInstanceOf[js.Any])
+      inline def setEnableHeadersLowercase(value: Any): Self = StObject.set(x, "enableHeadersLowercase", value.asInstanceOf[js.Any])
       
-      inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setErrorMapper(value: Any): Self = StObject.set(x, "errorMapper", value.asInstanceOf[js.Any])
       
-      inline def setLoggingKey(value: js.Any): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
+      inline def setIsBodyRequired(value: Any): Self = StObject.set(x, "isBodyRequired", value.asInstanceOf[js.Any])
       
-      inline def setRequestBody(value: js.Any): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      inline def setRequestBodyValidators(value: js.Any): Self = StObject.set(x, "requestBodyValidators", value.asInstanceOf[js.Any])
+      inline def setLoggingKey(value: Any): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
       
-      inline def setValidate(value: js.Any => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setRequestBody(value: Any): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
       
-      inline def setValidateBody(value: js.Any): Self = StObject.set(x, "validateBody", value.asInstanceOf[js.Any])
+      inline def setRequestBodyValidators(value: Any): Self = StObject.set(x, "requestBodyValidators", value.asInstanceOf[js.Any])
       
-      inline def setValidateFormData(value: js.Any): Self = StObject.set(x, "validateFormData", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Any => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      inline def setValidateHeaders(value: js.Any): Self = StObject.set(x, "validateHeaders", value.asInstanceOf[js.Any])
+      inline def setValidateBody(value: Any): Self = StObject.set(x, "validateBody", value.asInstanceOf[js.Any])
       
-      inline def setValidatePath(value: js.Any): Self = StObject.set(x, "validatePath", value.asInstanceOf[js.Any])
+      inline def setValidateFormData(value: Any): Self = StObject.set(x, "validateFormData", value.asInstanceOf[js.Any])
       
-      inline def setValidateQuery(value: js.Any): Self = StObject.set(x, "validateQuery", value.asInstanceOf[js.Any])
+      inline def setValidateHeaders(value: Any): Self = StObject.set(x, "validateHeaders", value.asInstanceOf[js.Any])
       
-      inline def setValidateRequest(value: js.Any => js.Any): Self = StObject.set(x, "validateRequest", js.Any.fromFunction1(value))
+      inline def setValidatePath(value: Any): Self = StObject.set(x, "validatePath", value.asInstanceOf[js.Any])
+      
+      inline def setValidateQuery(value: Any): Self = StObject.set(x, "validateQuery", value.asInstanceOf[js.Any])
+      
+      inline def setValidateRequest(value: Any => Any): Self = StObject.set(x, "validateRequest", js.Any.fromFunction1(value))
     }
   }
   
   trait OpenAPIRequestValidatorArgs extends StObject {
     
+    var additionalQueryProperties: js.UndefOr[Boolean] = js.undefined
+    
+    var ajvOptions: js.UndefOr[Options] = js.undefined
+    
     var componentSchemas: js.UndefOr[js.Array[IJsonSchema]] = js.undefined
     
-    var customFormats: js.UndefOr[StringDictionary[FormatValidator | FormatDefinition]] = js.undefined
+    var customFormats: js.UndefOr[StringDictionary[Format | (FormatDefinition[String | Double])]] = js.undefined
     
     var customKeywords: js.UndefOr[StringDictionary[KeywordDefinition]] = js.undefined
+    
+    var enableHeadersLowercase: js.UndefOr[Boolean] = js.undefined
     
     var errorTransformer: js.UndefOr[
         js.Function2[
           /* openAPIResponseValidatorValidationError */ OpenAPIRequestValidatorError, 
-          /* ajvError */ ErrorObject, 
-          js.Any
+          /* ajvError */ ErrorObject[String, Record[String, Any], Any], 
+          Any
         ]
       ] = js.undefined
     
@@ -211,13 +235,21 @@ object mod {
     
     extension [Self <: OpenAPIRequestValidatorArgs](x: Self) {
       
+      inline def setAdditionalQueryProperties(value: Boolean): Self = StObject.set(x, "additionalQueryProperties", value.asInstanceOf[js.Any])
+      
+      inline def setAdditionalQueryPropertiesUndefined: Self = StObject.set(x, "additionalQueryProperties", js.undefined)
+      
+      inline def setAjvOptions(value: Options): Self = StObject.set(x, "ajvOptions", value.asInstanceOf[js.Any])
+      
+      inline def setAjvOptionsUndefined: Self = StObject.set(x, "ajvOptions", js.undefined)
+      
       inline def setComponentSchemas(value: js.Array[IJsonSchema]): Self = StObject.set(x, "componentSchemas", value.asInstanceOf[js.Any])
       
       inline def setComponentSchemasUndefined: Self = StObject.set(x, "componentSchemas", js.undefined)
       
-      inline def setComponentSchemasVarargs(value: IJsonSchema*): Self = StObject.set(x, "componentSchemas", js.Array(value :_*))
+      inline def setComponentSchemasVarargs(value: IJsonSchema*): Self = StObject.set(x, "componentSchemas", js.Array(value*))
       
-      inline def setCustomFormats(value: StringDictionary[FormatValidator | FormatDefinition]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
+      inline def setCustomFormats(value: StringDictionary[Format | (FormatDefinition[String | Double])]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
       
       inline def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
       
@@ -225,8 +257,12 @@ object mod {
       
       inline def setCustomKeywordsUndefined: Self = StObject.set(x, "customKeywords", js.undefined)
       
+      inline def setEnableHeadersLowercase(value: Boolean): Self = StObject.set(x, "enableHeadersLowercase", value.asInstanceOf[js.Any])
+      
+      inline def setEnableHeadersLowercaseUndefined: Self = StObject.set(x, "enableHeadersLowercase", js.undefined)
+      
       inline def setErrorTransformer(
-        value: (/* openAPIResponseValidatorValidationError */ OpenAPIRequestValidatorError, /* ajvError */ ErrorObject) => js.Any
+        value: (/* openAPIResponseValidatorValidationError */ OpenAPIRequestValidatorError, /* ajvError */ ErrorObject[String, Record[String, Any], Any]) => Any
       ): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction2(value))
       
       inline def setErrorTransformerUndefined: Self = StObject.set(x, "errorTransformer", js.undefined)
@@ -248,8 +284,8 @@ object mod {
       inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
       inline def setParametersVarargs(
-        value: (Parameter | ParameterObject | ReferenceObject | typings.openapiTypes.mod.OpenAPIV2.ReferenceObject)*
-      ): Self = StObject.set(x, "parameters", js.Array(value :_*))
+        value: (Parameter | ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject | ReferenceObject | typings.openapiTypes.mod.OpenAPIV3.ReferenceObject | typings.openapiTypes.mod.OpenAPIV2.ReferenceObject)*
+      ): Self = StObject.set(x, "parameters", js.Array(value*))
       
       inline def setRequestBody(value: RequestBodyObject): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
       
@@ -259,7 +295,7 @@ object mod {
       
       inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
       
-      inline def setSchemasVarargs(value: IJsonSchema*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+      inline def setSchemasVarargs(value: IJsonSchema*): Self = StObject.set(x, "schemas", js.Array(value*))
     }
   }
   
@@ -273,7 +309,7 @@ object mod {
     
     var path: js.UndefOr[String] = js.undefined
     
-    var schema: js.UndefOr[js.Any] = js.undefined
+    var schema: js.UndefOr[Any] = js.undefined
   }
   object OpenAPIRequestValidatorError {
     
@@ -296,7 +332,7 @@ object mod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     }

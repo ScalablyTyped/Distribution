@@ -66,25 +66,25 @@ trait Tooltip extends StObject {
     * Raised just before the Tooltip is hidden.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeclose(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onbeforeclose(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised just before the Tooltip appears.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeopen(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onbeforeopen(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the Tooltip is no longer displayed.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onclosed(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onclosed(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the Tooltip is shown.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onopened(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onopened(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Shows the Tooltip.

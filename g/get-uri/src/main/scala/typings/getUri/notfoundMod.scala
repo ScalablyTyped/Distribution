@@ -9,7 +9,7 @@ object notfoundMod {
   
   @JSImport("get-uri/dist/notfound", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with NotFoundError {
     def this(message: String) = this()
@@ -17,9 +17,11 @@ object notfoundMod {
     /* CompleteClass */
     var code: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

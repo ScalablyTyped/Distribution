@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("AMap.ImageLayer")
 @js.native
-class ImageLayer ()
+open class ImageLayer ()
   extends StObject
      with typings.amapJsApi.AMap.ImageLayer

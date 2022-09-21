@@ -39,7 +39,7 @@ object ListCertificatesRequest {
     
     inline def setCertificateStatusesUndefined: Self = StObject.set(x, "CertificateStatuses", js.undefined)
     
-    inline def setCertificateStatusesVarargs(value: CertificateStatus*): Self = StObject.set(x, "CertificateStatuses", js.Array(value :_*))
+    inline def setCertificateStatusesVarargs(value: CertificateStatus*): Self = StObject.set(x, "CertificateStatuses", js.Array(value*))
     
     inline def setIncludes(value: Filters): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
     

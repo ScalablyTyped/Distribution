@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "VirtualizedComboBox")
 @js.native
-class VirtualizedComboBox protected ()
+open class VirtualizedComboBox protected ()
   extends typings.officeUiFabricReact.libComboBoxMod.VirtualizedComboBox {
   def this(props: IComboBoxProps) = this()
 }

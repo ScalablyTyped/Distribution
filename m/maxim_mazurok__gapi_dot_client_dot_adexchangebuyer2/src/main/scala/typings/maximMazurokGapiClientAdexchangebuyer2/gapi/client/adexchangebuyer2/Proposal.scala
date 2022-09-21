@@ -61,6 +61,9 @@ trait Proposal extends StObject {
   /** Output only. Contact information for the seller. */
   var sellerContacts: js.UndefOr[js.Array[ContactInformation]] = js.undefined
   
+  /** Output only. The terms and conditions set by the publisher for this proposal. */
+  var termsAndConditions: js.UndefOr[String] = js.undefined
+  
   /** Output only. The time when the proposal was last revised. */
   var updateTime: js.UndefOr[String] = js.undefined
 }
@@ -83,7 +86,7 @@ object Proposal {
     
     inline def setBuyerContactsUndefined: Self = StObject.set(x, "buyerContacts", js.undefined)
     
-    inline def setBuyerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "buyerContacts", js.Array(value :_*))
+    inline def setBuyerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "buyerContacts", js.Array(value*))
     
     inline def setBuyerPrivateData(value: PrivateData): Self = StObject.set(x, "buyerPrivateData", value.asInstanceOf[js.Any])
     
@@ -95,7 +98,7 @@ object Proposal {
     
     inline def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
-    inline def setDealsVarargs(value: Deal*): Self = StObject.set(x, "deals", js.Array(value :_*))
+    inline def setDealsVarargs(value: Deal*): Self = StObject.set(x, "deals", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -117,7 +120,7 @@ object Proposal {
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value*))
     
     inline def setOriginatorRole(value: String): Self = StObject.set(x, "originatorRole", value.asInstanceOf[js.Any])
     
@@ -145,9 +148,13 @@ object Proposal {
     
     inline def setSellerContactsUndefined: Self = StObject.set(x, "sellerContacts", js.undefined)
     
-    inline def setSellerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "sellerContacts", js.Array(value :_*))
+    inline def setSellerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "sellerContacts", js.Array(value*))
     
     inline def setSellerUndefined: Self = StObject.set(x, "seller", js.undefined)
+    
+    inline def setTermsAndConditions(value: String): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
+    
+    inline def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

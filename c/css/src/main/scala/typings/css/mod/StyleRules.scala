@@ -25,10 +25,10 @@ object StyleRules {
     
     inline def setParsingErrorsUndefined: Self = StObject.set(x, "parsingErrors", js.undefined)
     
-    inline def setParsingErrorsVarargs(value: ParserError*): Self = StObject.set(x, "parsingErrors", js.Array(value :_*))
+    inline def setParsingErrorsVarargs(value: ParserError*): Self = StObject.set(x, "parsingErrors", js.Array(value*))
     
     inline def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

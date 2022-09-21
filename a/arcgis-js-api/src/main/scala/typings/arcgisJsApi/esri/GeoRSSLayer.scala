@@ -1,6 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`geo-rss`
+import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +15,23 @@ trait GeoRSSLayer
      with BlendLayer {
   
   /**
+    * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#legendEnabled)
+    */
+  var legendEnabled: Boolean = js.native
+  
+  /**
     * Symbol used to represent line features from the GeoRSS feed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#lineSymbol)
     */
   var lineSymbol: SimpleLineSymbol = js.native
+  
+  @JSName("on")
+  def on_refresh(name: refresh, eventHandler: GeoRSSLayerRefreshEventHandler): IHandle = js.native
   
   /**
     * Symbol used to represent point features from the GeoRSS feed.
@@ -32,6 +46,22 @@ trait GeoRSSLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#polygonSymbol)
     */
   var polygonSymbol: SimpleFillSymbol = js.native
+  
+  /**
+    * Fetches all the data for the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#refresh)
+    */
+  def refresh(): scala.Unit = js.native
+  
+  /**
+    * Refresh interval of the layer in minutes.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#refreshInterval)
+    */
+  var refreshInterval: Double = js.native
   
   @JSName("type")
   val type_GeoRSSLayer: `geo-rss` = js.native

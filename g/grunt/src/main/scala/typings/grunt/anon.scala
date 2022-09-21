@@ -8,15 +8,15 @@ object anon {
   
   trait Custom extends StObject {
     
-    var custom: js.UndefOr[js.Any] = js.undefined
+    var custom: js.UndefOr[Any] = js.undefined
     
     var cwd: js.UndefOr[java.lang.String] = js.undefined
     
     var detached: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[js.Any] = js.undefined
+    var env: js.UndefOr[Any] = js.undefined
     
-    var stdio: js.UndefOr[js.Any] = js.undefined
+    var stdio: js.UndefOr[Any] = js.undefined
   }
   object Custom {
     
@@ -27,7 +27,7 @@ object anon {
     
     extension [Self <: Custom](x: Self) {
       
-      inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
@@ -39,11 +39,11 @@ object anon {
       
       inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      inline def setStdio(value: js.Any): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+      inline def setStdio(value: Any): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
       inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     }

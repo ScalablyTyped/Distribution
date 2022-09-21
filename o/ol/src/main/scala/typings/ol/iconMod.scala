@@ -14,7 +14,7 @@ object iconMod {
   
   @JSImport("ol/style/Icon", JSImport.Default)
   @js.native
-  class default () extends Icon {
+  open class default () extends Icon {
     def this(opt_options: Options) = this()
   }
   
@@ -56,7 +56,7 @@ object iconMod {
     
     var color: js.UndefOr[Color | String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var displacement: js.UndefOr[js.Array[Double]] = js.undefined
     
@@ -97,7 +97,7 @@ object iconMod {
       
       inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      inline def setAnchorVarargs(value: Double*): Self = StObject.set(x, "anchor", js.Array(value :_*))
+      inline def setAnchorVarargs(value: Double*): Self = StObject.set(x, "anchor", js.Array(value*))
       
       inline def setAnchorXUnits(value: IconAnchorUnits): Self = StObject.set(x, "anchorXUnits", value.asInstanceOf[js.Any])
       
@@ -111,9 +111,11 @@ object iconMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -121,7 +123,7 @@ object iconMod {
       
       inline def setDisplacementUndefined: Self = StObject.set(x, "displacement", js.undefined)
       
-      inline def setDisplacementVarargs(value: Double*): Self = StObject.set(x, "displacement", js.Array(value :_*))
+      inline def setDisplacementVarargs(value: Double*): Self = StObject.set(x, "displacement", js.Array(value*))
       
       inline def setImg(value: HTMLImageElement | HTMLCanvasElement): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,7 @@ object iconMod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

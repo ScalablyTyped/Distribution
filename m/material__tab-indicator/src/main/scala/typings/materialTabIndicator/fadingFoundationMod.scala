@@ -10,13 +10,13 @@ object fadingFoundationMod {
   
   @JSImport("@material/tab-indicator/fading-foundation", JSImport.Default)
   @js.native
-  class default () extends MDCFadingTabIndicatorFoundation {
+  open class default () extends MDCFadingTabIndicatorFoundation {
     def this(adapter: PartialMDCTabIndicatorAda) = this()
   }
   
   @JSImport("@material/tab-indicator/fading-foundation", "MDCFadingTabIndicatorFoundation")
   @js.native
-  class MDCFadingTabIndicatorFoundation () extends MDCTabIndicatorFoundation {
+  open class MDCFadingTabIndicatorFoundation () extends MDCTabIndicatorFoundation {
     def this(adapter: PartialMDCTabIndicatorAda) = this()
   }
 }

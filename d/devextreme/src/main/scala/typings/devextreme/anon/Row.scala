@@ -1,69 +1,35 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid
-import typings.devextreme.mod.DevExpress.ui.dxDataGridColumn
-import typings.devextreme.mod.DevExpress.ui.dxDataGridRowObject
+import typings.devextreme.mod.DevExpress.ui.dxTreeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Row extends StObject {
+trait Row[TRowData, TKey] extends StObject {
   
-  var cellElement: js.UndefOr[dxElement] = js.undefined
+  val column: typings.devextreme.mod.DevExpress.ui.dxTreeList.Column[TRowData, TKey]
   
-  var column: js.UndefOr[dxDataGridColumn] = js.undefined
+  val component: dxTreeList[TRowData, TKey]
   
-  var columnIndex: js.UndefOr[Double] = js.undefined
-  
-  var component: js.UndefOr[dxDataGrid] = js.undefined
-  
-  var element: js.UndefOr[dxElement] = js.undefined
-  
-  var model: js.UndefOr[js.Any] = js.undefined
-  
-  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
-  
-  var rowIndex: js.UndefOr[Double] = js.undefined
+  val row: js.UndefOr[typings.devextreme.mod.DevExpress.ui.dxTreeList.Row[TRowData, TKey]] = js.undefined
 }
 object Row {
   
-  inline def apply(): Row = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Row]
+  inline def apply[TRowData, TKey](
+    column: typings.devextreme.mod.DevExpress.ui.dxTreeList.Column[TRowData, TKey],
+    component: dxTreeList[TRowData, TKey]
+  ): Row[TRowData, TKey] = {
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Row[TRowData, TKey]]
   }
   
-  extension [Self <: Row](x: Self) {
+  extension [Self <: Row[?, ?], TRowData, TKey](x: Self & (Row[TRowData, TKey])) {
     
-    inline def setCellElement(value: dxElement): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
+    inline def setColumn(value: typings.devextreme.mod.DevExpress.ui.dxTreeList.Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    inline def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
+    inline def setComponent(value: dxTreeList[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    inline def setColumn(value: dxDataGridColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-    
-    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
-    
-    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
-    
-    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
-    
-    inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-    
-    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
-    
-    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-    
-    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
-    
-    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
-    
-    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
-    
-    inline def setRow(value: dxDataGridRowObject): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
-    
-    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
-    
-    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRow(value: typings.devextreme.mod.DevExpress.ui.dxTreeList.Row[TRowData, TKey]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }

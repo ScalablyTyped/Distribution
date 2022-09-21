@@ -43,8 +43,8 @@ object Endpoint {
     anchor: Anchor,
     connectorSelector: () => Connection,
     getElement: () => Element,
-    getParameter: String => js.Any,
-    getParameters: () => Record[String, js.Any],
+    getParameter: String => Any,
+    getParameters: () => Record[String, Any],
     id: String,
     isEnabled: () => Boolean,
     maxConnections: Double,
@@ -53,8 +53,8 @@ object Endpoint {
     setEnabled: Boolean => Unit,
     setEndpoint: EndpointSpec => Unit,
     setHover: Boolean => Unit,
-    setParameter: (String, js.Any) => Unit,
-    setParameters: Record[String, js.Any] => Unit,
+    setParameter: (String, Any) => Unit,
+    setParameters: Record[String, Any] => Unit,
     `type`: EndpointId
   ): Endpoint = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], connectorSelector = js.Any.fromFunction0(connectorSelector), getElement = js.Any.fromFunction0(getElement), getParameter = js.Any.fromFunction1(getParameter), getParameters = js.Any.fromFunction0(getParameters), id = id.asInstanceOf[js.Any], isEnabled = js.Any.fromFunction0(isEnabled), maxConnections = maxConnections.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], setElement = js.Any.fromFunction1(setElement), setEnabled = js.Any.fromFunction1(setEnabled), setEndpoint = js.Any.fromFunction1(setEndpoint), setHover = js.Any.fromFunction1(setHover), setParameter = js.Any.fromFunction2(setParameter), setParameters = js.Any.fromFunction1(setParameters))
@@ -70,7 +70,7 @@ object Endpoint {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value*))
     
     inline def setConnectorSelector(value: () => Connection): Self = StObject.set(x, "connectorSelector", js.Any.fromFunction0(value))
     

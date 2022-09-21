@@ -22,7 +22,7 @@ trait IMarkers
   var getMarkerBBoxFor: js.UndefOr[
     js.Function3[
       /* category */ js.UndefOr[String], 
-      /* index */ js.UndefOr[js.Any], 
+      /* index */ js.UndefOr[Any], 
       /* isWithoutTransform */ js.UndefOr[Boolean], 
       Unit
     ]
@@ -38,8 +38,8 @@ trait IMarkers
   var putMarkerFor: js.UndefOr[
     js.Function5[
       /* category */ js.UndefOr[String], 
-      /* markerAttr */ js.UndefOr[js.Any], 
-      /* index */ js.UndefOr[js.Any], 
+      /* markerAttr */ js.UndefOr[Any], 
+      /* index */ js.UndefOr[Any], 
       /* canonical */ js.UndefOr[Boolean], 
       /* keepRevision */ js.UndefOr[Boolean], 
       Unit
@@ -55,10 +55,10 @@ trait IMarkers
   @JSName("render")
   var render_IMarkers: js.UndefOr[
     js.Function3[
-      /* surface */ js.UndefOr[js.Any], 
-      /* ctx */ js.UndefOr[js.Any], 
-      /* clipRegion */ js.UndefOr[js.Any], 
-      js.Any
+      /* surface */ js.UndefOr[Any], 
+      /* ctx */ js.UndefOr[Any], 
+      /* clipRegion */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
 }
@@ -76,19 +76,19 @@ object IMarkers {
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     inline def setGetMarkerBBoxFor(
-      value: (/* category */ js.UndefOr[String], /* index */ js.UndefOr[js.Any], /* isWithoutTransform */ js.UndefOr[Boolean]) => Unit
+      value: (/* category */ js.UndefOr[String], /* index */ js.UndefOr[Any], /* isWithoutTransform */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "getMarkerBBoxFor", js.Any.fromFunction3(value))
     
     inline def setGetMarkerBBoxForUndefined: Self = StObject.set(x, "getMarkerBBoxFor", js.undefined)
     
     inline def setPutMarkerFor(
-      value: (/* category */ js.UndefOr[String], /* markerAttr */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], /* canonical */ js.UndefOr[Boolean], /* keepRevision */ js.UndefOr[Boolean]) => Unit
+      value: (/* category */ js.UndefOr[String], /* markerAttr */ js.UndefOr[Any], /* index */ js.UndefOr[Any], /* canonical */ js.UndefOr[Boolean], /* keepRevision */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "putMarkerFor", js.Any.fromFunction5(value))
     
     inline def setPutMarkerForUndefined: Self = StObject.set(x, "putMarkerFor", js.undefined)
     
     inline def setRender(
-      value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
+      value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

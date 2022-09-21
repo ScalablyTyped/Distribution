@@ -29,7 +29,7 @@ object AdminListUserAuthEventsResponse {
     
     inline def setAuthEventsUndefined: Self = StObject.set(x, "AuthEvents", js.undefined)
     
-    inline def setAuthEventsVarargs(value: AuthEventType*): Self = StObject.set(x, "AuthEvents", js.Array(value :_*))
+    inline def setAuthEventsVarargs(value: AuthEventType*): Self = StObject.set(x, "AuthEvents", js.Array(value*))
     
     inline def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

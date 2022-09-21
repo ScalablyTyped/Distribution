@@ -65,7 +65,7 @@ object tagGroupMod {
   
   @JSImport("rbx/elements/tag/tag-group", "TagGroup")
   @js.native
-  val TagGroup: ForwardRefAsExoticComponent[TagGroupProps, ElementType[js.Any]] = js.native
+  val TagGroup: ForwardRefAsExoticComponent[TagGroupProps, ElementType[Any]] = js.native
   
   trait TagGroupModifierProps extends StObject {
     

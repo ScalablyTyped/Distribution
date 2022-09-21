@@ -2,7 +2,6 @@ package typings.globPromise
 
 import typings.glob.mod.IGlob
 import typings.glob.mod.IOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +18,11 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(pattern: String, cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]): IGlob = js.native
+    def apply(pattern: String, cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]): IGlob = js.native
     def apply(
       pattern: String,
       options: IOptions,
-      cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]
     ): IGlob = js.native
   }
   

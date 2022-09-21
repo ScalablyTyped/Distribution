@@ -11,14 +11,14 @@ trait XAccessibleGetAccFlowTo
   extends StObject
      with XInterface {
   
-  def getAccFlowTo(aXShape: js.Any, nType: Double): SafeArray[js.Any]
+  def getAccFlowTo(aXShape: Any, nType: Double): SafeArray[Any]
 }
 object XAccessibleGetAccFlowTo {
   
   inline def apply(
     acquire: () => Unit,
-    getAccFlowTo: (js.Any, Double) => SafeArray[js.Any],
-    queryInterface: `type` => js.Any,
+    getAccFlowTo: (Any, Double) => SafeArray[Any],
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessibleGetAccFlowTo = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAccFlowTo = js.Any.fromFunction2(getAccFlowTo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -27,6 +27,6 @@ object XAccessibleGetAccFlowTo {
   
   extension [Self <: XAccessibleGetAccFlowTo](x: Self) {
     
-    inline def setGetAccFlowTo(value: (js.Any, Double) => SafeArray[js.Any]): Self = StObject.set(x, "getAccFlowTo", js.Any.fromFunction2(value))
+    inline def setGetAccFlowTo(value: (Any, Double) => SafeArray[Any]): Self = StObject.set(x, "getAccFlowTo", js.Any.fromFunction2(value))
   }
 }

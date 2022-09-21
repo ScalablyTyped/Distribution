@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("bounce.js", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Bounce
   object default {

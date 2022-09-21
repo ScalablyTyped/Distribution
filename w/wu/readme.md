@@ -11,9 +11,9 @@ Combinators for ECMAScript 6 iterators.
 | Full name          | wu |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 49621 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 11361.0 |
+| # stars            | 867.0 |
 
 ## Links
 - [Homepage](https://github.com/fitzgen/wu.js)

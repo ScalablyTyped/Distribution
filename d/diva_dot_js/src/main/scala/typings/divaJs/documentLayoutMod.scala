@@ -15,7 +15,7 @@ object documentLayoutMod {
   
   @JSImport("diva.js/document-layout", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with DocumentLayout {
     def this(config: RendererConfig, zoomLevel: Double) = this()
@@ -89,7 +89,7 @@ object documentLayoutMod {
       
       inline def setPageGroups(value: js.Array[PageGroup]): Self = StObject.set(x, "pageGroups", value.asInstanceOf[js.Any])
       
-      inline def setPageGroupsVarargs(value: PageGroup*): Self = StObject.set(x, "pageGroups", js.Array(value :_*))
+      inline def setPageGroupsVarargs(value: PageGroup*): Self = StObject.set(x, "pageGroups", js.Array(value*))
     }
   }
 }

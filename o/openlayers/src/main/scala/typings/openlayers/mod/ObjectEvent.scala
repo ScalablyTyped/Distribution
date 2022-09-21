@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "ObjectEvent")
 @js.native
-class ObjectEvent protected () extends Event {
+open class ObjectEvent protected () extends Event {
   /**
     * @classdesc
     * Events emitted by {@link ol.Object} instances are instances of this type.
@@ -16,7 +16,7 @@ class ObjectEvent protected () extends Event {
     * @param key The property name.
     * @param oldValue The old value for `key`.
     */
-  def this(`type`: String, key: String, oldValue: js.Any) = this()
+  def this(`type`: String, key: String, oldValue: Any) = this()
   
   /**
     * The name of the property whose value is changing.
@@ -29,5 +29,5 @@ class ObjectEvent protected () extends Event {
     * `e` is the event object.
     * @api stable
     */
-  var oldValue: js.Any = js.native
+  var oldValue: Any = js.native
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViolationDetail extends StObject {
   
   /**
-    * The AWS account that the violation details were requested for.
+    * The Amazon Web Services account that the violation details were requested for.
     */
   var MemberAccount: AWSAccountId
   
   /**
-    * The ID of the AWS Firewall Manager policy that the violation details were requested for.
+    * The ID of the Firewall Manager policy that the violation details were requested for.
     */
   var PolicyId: typings.awsSdk.fmsMod.PolicyId
   
@@ -70,12 +70,12 @@ object ViolationDetail {
     
     inline def setResourceTagsUndefined: Self = StObject.set(x, "ResourceTags", js.undefined)
     
-    inline def setResourceTagsVarargs(value: Tag*): Self = StObject.set(x, "ResourceTags", js.Array(value :_*))
+    inline def setResourceTagsVarargs(value: Tag*): Self = StObject.set(x, "ResourceTags", js.Array(value*))
     
     inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     inline def setResourceViolations(value: ResourceViolations): Self = StObject.set(x, "ResourceViolations", value.asInstanceOf[js.Any])
     
-    inline def setResourceViolationsVarargs(value: ResourceViolation*): Self = StObject.set(x, "ResourceViolations", js.Array(value :_*))
+    inline def setResourceViolationsVarargs(value: ResourceViolation*): Self = StObject.set(x, "ResourceViolations", js.Array(value*))
   }
 }

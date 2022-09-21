@@ -24,14 +24,14 @@ trait MapsforgeCachePlugin extends StObject {
     * @param success Success callback. Gets the tile path.
     * @param error Error callback
     */
-  def getTile(args: js.Array[js.Any]): Unit = js.native
-  def getTile(args: js.Array[js.Any], success: js.Function1[/* tilePath */ String, Unit]): Unit = js.native
+  def getTile(args: js.Array[Any]): Unit = js.native
+  def getTile(args: js.Array[Any], success: js.Function1[/* tilePath */ String, Unit]): Unit = js.native
   def getTile(
-    args: js.Array[js.Any],
+    args: js.Array[Any],
     success: js.Function1[/* tilePath */ String, Unit],
     error: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
-  def getTile(args: js.Array[js.Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def getTile(args: js.Array[Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * You should call this method before any other one, and provide it with the absolute map file path.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientChartDesignerMenuAction")
 @js.native
-class ASPxClientChartDesignerMenuAction ()
+open class ASPxClientChartDesignerMenuAction ()
   extends StObject
      with typings.devexpressWeb.ASPxClientChartDesignerMenuAction {
   

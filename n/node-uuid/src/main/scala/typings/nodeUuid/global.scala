@@ -1,6 +1,6 @@
 package typings.nodeUuid
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeUuid.mod.UUIDOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

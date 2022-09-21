@@ -1,6 +1,7 @@
 package typings.reactNavigationCore
 
 import typings.reactNavigationCore.anon.GetCurrentOptions
+import typings.reactNavigationCore.typesMod.Keyof
 import typings.reactNavigationCore.typesMod.NavigationProp
 import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
@@ -21,7 +22,14 @@ object useOptionsGettersMod {
     var key: js.UndefOr[String] = js.undefined
     
     var navigation: js.UndefOr[
-        NavigationProp[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object]
+        NavigationProp[
+          ParamListBase, 
+          Keyof[ParamListBase], 
+          Unit, 
+          NavigationState[ParamListBase], 
+          js.Object, 
+          js.Object
+        ]
       ] = js.undefined
     
     var options: js.UndefOr[js.Object] = js.undefined
@@ -39,7 +47,16 @@ object useOptionsGettersMod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setNavigation(value: NavigationProp[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(
+        value: NavigationProp[
+              ParamListBase, 
+              Keyof[ParamListBase], 
+              Unit, 
+              NavigationState[ParamListBase], 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
       inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
       

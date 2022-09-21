@@ -1,13 +1,9 @@
 package typings.devextreme.mod.default
 
-import typings.devextreme.mod.DevExpress.fileManagement.CustomFileSystemProviderOptions
+import typings.devextreme.mod.DevExpress.core.utils.DxPromise
+import typings.devextreme.mod.DevExpress.fileManagement.CustomFileSystemProvider.Options
 import typings.devextreme.mod.DevExpress.fileManagement.FileSystemProviderBaseOptions
-import typings.devextreme.mod.DevExpress.fileManagement.ObjectFileSystemProviderOptions
-import typings.devextreme.mod.DevExpress.fileManagement.RemoteFileSystemProviderOptions
 import typings.devextreme.mod.DevExpress.fileManagement.UploadInfo
-import typings.devextreme.mod.global.JQueryPromise
-import typings.devextreme.mod.global.Promise
-import typings.std.Date
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,154 +13,178 @@ object fileManagement {
   
   @JSImport("devextreme", "default.fileManagement.CustomFileSystemProvider")
   @js.native
-  class CustomFileSystemProvider ()
+  open class CustomFileSystemProvider ()
     extends StObject
        with typings.devextreme.mod.DevExpress.fileManagement.FileSystemProviderBase {
-    def this(options: CustomFileSystemProviderOptions) = this()
+    def this(options: Options) = this()
     
     /**
-      * [descr:FileSystemProviderBase.abortFileUpload()]
+      * Cancels the file upload.
       */
     /* CompleteClass */
     override def abortFileUpload(
       fileData: File,
       uploadInfo: UploadInfo,
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    ): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.copyItems()]
+      * Copies files or directories.
       */
     /* CompleteClass */
     override def copyItems(
       items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem],
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    ): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.createDirectory()]
+      * Creates a directory.
       */
     /* CompleteClass */
-    override def createDirectory(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, name: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def createDirectory(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, name: String): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.deleteItems()]
+      * Deletes files or directories.
       */
     /* CompleteClass */
-    override def deleteItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    override def deleteItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.downloadItems()]
+      * Downloads files.
       */
     /* CompleteClass */
     override def downloadItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Unit = js.native
     
     /**
-      * [descr:FileSystemProviderBase.getItems()]
+      * Gets file system items.
       */
     /* CompleteClass */
-    override def getItems(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem): Promise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] & JQueryPromise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] = js.native
+    override def getItems(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem): DxPromise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.getItemsContent()]
+      * Gets items content.
       */
     /* CompleteClass */
-    override def getItemsContent(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def getItemsContent(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.moveItems()]
+      * Moves files and directories.
       */
     /* CompleteClass */
     override def moveItems(
       items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem],
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    ): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.renameItem()]
+      * Renames a file or directory.
       */
     /* CompleteClass */
-    override def renameItem(item: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, newName: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def renameItem(item: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, newName: String): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.uploadFileChunk()]
+      * Uploads a file in chunks.
       */
     /* CompleteClass */
     override def uploadFileChunk(
       fileData: File,
       uploadInfo: UploadInfo,
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    ): DxPromise[Any] = js.native
+  }
+  
+  @JSImport("devextreme", "default.fileManagement.FileSystemError")
+  @js.native
+  open class FileSystemError ()
+    extends StObject
+       with typings.devextreme.mod.DevExpress.fileManagement.FileSystemError {
+    def this(errorCode: Double) = this()
+    def this(errorCode: Double, fileSystemItem: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem) = this()
+    def this(errorCode: Unit, fileSystemItem: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem) = this()
+    def this(errorCode: Double, fileSystemItem: Unit, errorText: String) = this()
+    def this(
+      errorCode: Double,
+      fileSystemItem: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem,
+      errorText: String
+    ) = this()
+    def this(errorCode: Unit, fileSystemItem: Unit, errorText: String) = this()
+    def this(
+      errorCode: Unit,
+      fileSystemItem: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem,
+      errorText: String
+    ) = this()
   }
   
   @JSImport("devextreme", "default.fileManagement.FileSystemItem")
   @js.native
-  class FileSystemItem ()
+  open class FileSystemItem protected ()
     extends StObject
        with typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem {
+    def this(path: String, isDirectory: Boolean) = this()
+    def this(path: String, isDirectory: Boolean, pathKeys: js.Array[String]) = this()
     
     /**
-      * [descr:FileSystemItem.dataItem]
+      * The file system data object that stores information about the file system item (name, size, modification date, etc.).
       */
     /* CompleteClass */
-    var dataItem: js.Any = js.native
+    var dataItem: Any = js.native
     
     /**
-      * [descr:FileSystemItem.dateModified]
+      * A timestamp that indicates when the file system item was last modified.
       */
     /* CompleteClass */
-    var dateModified: Date = js.native
+    var dateModified: js.Date = js.native
     
     /**
-      * [descr:FileSystemItem.getFileExtension()]
+      * Gets a file&apos;s extension.
       */
     /* CompleteClass */
     override def getFileExtension(): String = js.native
     
     /**
-      * [descr:FileSystemItem.hasSubDirectories]
+      * Specifies whether a directory has subdirectories.
       */
     /* CompleteClass */
     var hasSubDirectories: Boolean = js.native
     
     /**
-      * [descr:FileSystemItem.isDirectory]
+      * Specifies whether the file system item is a directory.
       */
     /* CompleteClass */
     var isDirectory: Boolean = js.native
     
     /**
-      * [descr:FileSystemItem.key]
+      * The file system item&apos;s key.
       */
     /* CompleteClass */
     var key: String = js.native
     
     /**
-      * [descr:FileSystemItem.name]
+      * The file system item&apos;s name.
       */
     /* CompleteClass */
     var name: String = js.native
     
     /**
-      * [descr:FileSystemItem.path]
+      * The file system item&apos;s path.
       */
     /* CompleteClass */
     var path: String = js.native
     
     /**
-      * [descr:FileSystemItem.pathKeys]
+      * The file system item&apos;s path specified in keys.
       */
     /* CompleteClass */
     var pathKeys: js.Array[String] = js.native
     
     /**
-      * [descr:FileSystemItem.size]
+      * The file system item&apos;s size (in bytes).
       */
     /* CompleteClass */
     var size: Double = js.native
     
     /**
-      * [descr:FileSystemItem.thumbnail]
+      * An icon (URL) to be used as the file system item&apos;s thumbnail.
       */
     /* CompleteClass */
     var thumbnail: String = js.native
@@ -172,247 +192,247 @@ object fileManagement {
   
   @JSImport("devextreme", "default.fileManagement.FileSystemProviderBase")
   @js.native
-  class FileSystemProviderBase ()
+  open class FileSystemProviderBase ()
     extends StObject
        with typings.devextreme.mod.DevExpress.fileManagement.FileSystemProviderBase {
     def this(options: FileSystemProviderBaseOptions[typings.devextreme.mod.DevExpress.fileManagement.FileSystemProviderBase]) = this()
     
     /**
-      * [descr:FileSystemProviderBase.abortFileUpload()]
+      * Cancels the file upload.
       */
     /* CompleteClass */
     override def abortFileUpload(
       fileData: File,
       uploadInfo: UploadInfo,
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    ): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.copyItems()]
+      * Copies files or directories.
       */
     /* CompleteClass */
     override def copyItems(
       items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem],
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    ): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.createDirectory()]
+      * Creates a directory.
       */
     /* CompleteClass */
-    override def createDirectory(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, name: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def createDirectory(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, name: String): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.deleteItems()]
+      * Deletes files or directories.
       */
     /* CompleteClass */
-    override def deleteItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    override def deleteItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.downloadItems()]
+      * Downloads files.
       */
     /* CompleteClass */
     override def downloadItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Unit = js.native
     
     /**
-      * [descr:FileSystemProviderBase.getItems()]
+      * Gets file system items.
       */
     /* CompleteClass */
-    override def getItems(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem): Promise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] & JQueryPromise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] = js.native
+    override def getItems(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem): DxPromise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.getItemsContent()]
+      * Gets items content.
       */
     /* CompleteClass */
-    override def getItemsContent(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def getItemsContent(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.moveItems()]
+      * Moves files and directories.
       */
     /* CompleteClass */
     override def moveItems(
       items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem],
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    ): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.renameItem()]
+      * Renames a file or directory.
       */
     /* CompleteClass */
-    override def renameItem(item: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, newName: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def renameItem(item: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, newName: String): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.uploadFileChunk()]
+      * Uploads a file in chunks.
       */
     /* CompleteClass */
     override def uploadFileChunk(
       fileData: File,
       uploadInfo: UploadInfo,
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    ): DxPromise[Any] = js.native
   }
   
   @JSImport("devextreme", "default.fileManagement.ObjectFileSystemProvider")
   @js.native
-  class ObjectFileSystemProvider ()
+  open class ObjectFileSystemProvider ()
     extends StObject
        with typings.devextreme.mod.DevExpress.fileManagement.FileSystemProviderBase {
-    def this(options: ObjectFileSystemProviderOptions) = this()
+    def this(options: typings.devextreme.mod.DevExpress.fileManagement.ObjectFileSystemProvider.Options) = this()
     
     /**
-      * [descr:FileSystemProviderBase.abortFileUpload()]
+      * Cancels the file upload.
       */
     /* CompleteClass */
     override def abortFileUpload(
       fileData: File,
       uploadInfo: UploadInfo,
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    ): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.copyItems()]
+      * Copies files or directories.
       */
     /* CompleteClass */
     override def copyItems(
       items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem],
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    ): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.createDirectory()]
+      * Creates a directory.
       */
     /* CompleteClass */
-    override def createDirectory(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, name: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def createDirectory(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, name: String): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.deleteItems()]
+      * Deletes files or directories.
       */
     /* CompleteClass */
-    override def deleteItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    override def deleteItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.downloadItems()]
+      * Downloads files.
       */
     /* CompleteClass */
     override def downloadItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Unit = js.native
     
     /**
-      * [descr:FileSystemProviderBase.getItems()]
+      * Gets file system items.
       */
     /* CompleteClass */
-    override def getItems(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem): Promise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] & JQueryPromise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] = js.native
+    override def getItems(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem): DxPromise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.getItemsContent()]
+      * Gets items content.
       */
     /* CompleteClass */
-    override def getItemsContent(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def getItemsContent(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.moveItems()]
+      * Moves files and directories.
       */
     /* CompleteClass */
     override def moveItems(
       items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem],
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    ): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.renameItem()]
+      * Renames a file or directory.
       */
     /* CompleteClass */
-    override def renameItem(item: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, newName: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def renameItem(item: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, newName: String): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.uploadFileChunk()]
+      * Uploads a file in chunks.
       */
     /* CompleteClass */
     override def uploadFileChunk(
       fileData: File,
       uploadInfo: UploadInfo,
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    ): DxPromise[Any] = js.native
   }
   
   @JSImport("devextreme", "default.fileManagement.RemoteFileSystemProvider")
   @js.native
-  class RemoteFileSystemProvider ()
+  open class RemoteFileSystemProvider ()
     extends StObject
        with typings.devextreme.mod.DevExpress.fileManagement.FileSystemProviderBase {
-    def this(options: RemoteFileSystemProviderOptions) = this()
+    def this(options: typings.devextreme.mod.DevExpress.fileManagement.RemoteFileSystemProvider.Options) = this()
     
     /**
-      * [descr:FileSystemProviderBase.abortFileUpload()]
+      * Cancels the file upload.
       */
     /* CompleteClass */
     override def abortFileUpload(
       fileData: File,
       uploadInfo: UploadInfo,
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    ): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.copyItems()]
+      * Copies files or directories.
       */
     /* CompleteClass */
     override def copyItems(
       items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem],
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    ): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.createDirectory()]
+      * Creates a directory.
       */
     /* CompleteClass */
-    override def createDirectory(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, name: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def createDirectory(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, name: String): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.deleteItems()]
+      * Deletes files or directories.
       */
     /* CompleteClass */
-    override def deleteItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    override def deleteItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.downloadItems()]
+      * Downloads files.
       */
     /* CompleteClass */
     override def downloadItems(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Unit = js.native
     
     /**
-      * [descr:FileSystemProviderBase.getItems()]
+      * Gets file system items.
       */
     /* CompleteClass */
-    override def getItems(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem): Promise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] & JQueryPromise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] = js.native
+    override def getItems(parentDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem): DxPromise[js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.getItemsContent()]
+      * Gets items content.
       */
     /* CompleteClass */
-    override def getItemsContent(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def getItemsContent(items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.moveItems()]
+      * Moves files and directories.
       */
     /* CompleteClass */
     override def moveItems(
       items: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem],
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): js.Array[Promise[js.Any] | JQueryPromise[js.Any]] = js.native
+    ): js.Array[DxPromise[Any]] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.renameItem()]
+      * Renames a file or directory.
       */
     /* CompleteClass */
-    override def renameItem(item: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, newName: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    override def renameItem(item: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem, newName: String): DxPromise[Any] = js.native
     
     /**
-      * [descr:FileSystemProviderBase.uploadFileChunk()]
+      * Uploads a file in chunks.
       */
     /* CompleteClass */
     override def uploadFileChunk(
       fileData: File,
       uploadInfo: UploadInfo,
       destinationDirectory: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
-    ): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    ): DxPromise[Any] = js.native
   }
 }

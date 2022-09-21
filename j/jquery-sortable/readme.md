@@ -10,15 +10,12 @@ jquery plugin for sortable, nestable lists
 | ------------------ | :-------------: |
 | Full name          | jquery-sortable |
 | Keywords           | sortable, sort, sorting, drag, dragging |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 150079 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13287.333333333334 |
+| # stars            | 1514.0 |
 
 ## Links
-- [Homepage](https://github.com/johnny/jquery-sortable)
-- [Bugs](https://github.com/johnny/jquery-sortable/issues)
-- [Repository](https://github.com/johnny/jquery-sortable)
 - [Npm](https://www.npmjs.com/package/jquery-sortable)
     
 

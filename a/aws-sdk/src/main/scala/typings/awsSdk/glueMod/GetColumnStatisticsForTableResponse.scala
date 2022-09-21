@@ -29,12 +29,12 @@ object GetColumnStatisticsForTableResponse {
     
     inline def setColumnStatisticsListUndefined: Self = StObject.set(x, "ColumnStatisticsList", js.undefined)
     
-    inline def setColumnStatisticsListVarargs(value: ColumnStatistics*): Self = StObject.set(x, "ColumnStatisticsList", js.Array(value :_*))
+    inline def setColumnStatisticsListVarargs(value: ColumnStatistics*): Self = StObject.set(x, "ColumnStatisticsList", js.Array(value*))
     
     inline def setErrors(value: ColumnErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: ColumnError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ColumnError*): Self = StObject.set(x, "Errors", js.Array(value*))
   }
 }

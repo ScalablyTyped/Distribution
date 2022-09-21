@@ -19,7 +19,7 @@ trait Recommendation extends StObject {
   /**
     * End time of the profile that was used by this analysis. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
     */
-  var endTime: Timestamp
+  var endTime: js.Date
   
   /**
     * The pattern that analysis recognized in the profile to make this recommendation.
@@ -29,7 +29,7 @@ trait Recommendation extends StObject {
   /**
     * The start time of the profile that was used by this analysis. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
     */
-  var startTime: Timestamp
+  var startTime: js.Date
   
   /**
     * List of the matches with most impact. 
@@ -41,9 +41,9 @@ object Recommendation {
   inline def apply(
     allMatchesCount: Integer,
     allMatchesSum: Double,
-    endTime: Timestamp,
+    endTime: js.Date,
     pattern: Pattern,
-    startTime: Timestamp,
+    startTime: js.Date,
     topMatches: Matches
   ): Recommendation = {
     val __obj = js.Dynamic.literal(allMatchesCount = allMatchesCount.asInstanceOf[js.Any], allMatchesSum = allMatchesSum.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], topMatches = topMatches.asInstanceOf[js.Any])
@@ -56,14 +56,14 @@ object Recommendation {
     
     inline def setAllMatchesSum(value: Double): Self = StObject.set(x, "allMatchesSum", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setTopMatches(value: Matches): Self = StObject.set(x, "topMatches", value.asInstanceOf[js.Any])
     
-    inline def setTopMatchesVarargs(value: Match*): Self = StObject.set(x, "topMatches", js.Array(value :_*))
+    inline def setTopMatchesVarargs(value: Match*): Self = StObject.set(x, "topMatches", js.Array(value*))
   }
 }

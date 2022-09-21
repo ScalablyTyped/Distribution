@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CameraInputsManager[TCamera /* <: Camera */] extends StObject {
   
-  /* private */ var _addCheckInputs: js.Any = js.native
+  /* private */ var _addCheckInputs: Any = js.native
   
   /**
     * Add an input method to a camera
@@ -18,7 +18,6 @@ trait CameraInputsManager[TCamera /* <: Camera */] extends StObject {
   
   /**
     * Attach the current manager inputs controls to a specific dom element to listen the events from.
-    * @param element Defines the dom element to collect the events from
     * @param noPreventDefault Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
     */
   def attachElement(): Unit = js.native
@@ -31,7 +30,7 @@ trait CameraInputsManager[TCamera /* <: Camera */] extends StObject {
   def attachInput(input: ICameraInput[TCamera]): Unit = js.native
   
   /**
-    * Defines the list of inputs attahed to the camera.
+    * Defines the list of inputs attached to the camera.
     */
   var attached: CameraInputsMap[TCamera] = js.native
   
@@ -59,7 +58,6 @@ trait CameraInputsManager[TCamera /* <: Camera */] extends StObject {
   
   /**
     * Detach the current manager inputs controls from a specific dom element.
-    * @param element Defines the dom element to collect the events from
     * @param disconnect Defines whether the input should be removed from the current list of attached inputs
     */
   def detachElement(): Unit = js.native
@@ -75,7 +73,7 @@ trait CameraInputsManager[TCamera /* <: Camera */] extends StObject {
     * and states associated to a camera.
     * @param parsedCamera Defines the JSON to parse
     */
-  def parse(parsedCamera: js.Any): Unit = js.native
+  def parse(parsedCamera: Any): Unit = js.native
   
   /**
     * Rebuild the dynamic inputCheck function from the current list of
@@ -103,5 +101,5 @@ trait CameraInputsManager[TCamera /* <: Camera */] extends StObject {
     * the input associated to the camera will be identical to the current ones
     * @param serializedCamera Defines the camera serialization JSON the input serialization should write to
     */
-  def serialize(serializedCamera: js.Any): Unit = js.native
+  def serialize(serializedCamera: Any): Unit = js.native
 }

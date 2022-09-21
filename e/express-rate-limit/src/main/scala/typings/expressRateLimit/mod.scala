@@ -4,167 +4,425 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.expressRateLimit.anon.PartialOptions
+import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.RequestHandler
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.timersMod.global.NodeJS.Timer
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): RateLimit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RateLimit]
-  inline def apply(options: Options): RateLimit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RateLimit]
-  
   @JSImport("express-rate-limit", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  type MaxValueFn = js.Function0[Double | js.Promise[Double]]
+  inline def default(): RateLimitRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[RateLimitRequestHandler]
+  inline def default(passedOptions: PartialOptions): RateLimitRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(passedOptions.asInstanceOf[js.Any]).asInstanceOf[RateLimitRequestHandler]
   
-  trait Message
+  @JSImport("express-rate-limit", "MemoryStore")
+  @js.native
+  open class MemoryStore ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with Store {
     
-    var message: String
+    /**
+    	 * Method to decrement a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 */
+    /* CompleteClass */
+    override def decrement(key: String): js.Promise[Unit] | Unit = js.native
     
-    var status: Double
+    /**
+    	 * The map that stores the number of hits for each client in memory.
+    	 */
+    var hits: StringDictionary[js.UndefOr[Double]] = js.native
+    
+    /**
+    	 * Method to increment a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 *
+    	 * @returns {IncrementResponse} - The number of hits and reset time for that client.
+    	 */
+    /* CompleteClass */
+    override def increment(key: String): js.Promise[IncrementResponse] | IncrementResponse = js.native
+    
+    /**
+    	 * Method that initializes the store.
+    	 *
+    	 * @param options {Options} - The options used to setup the middleware.
+    	 */
+    @JSName("init")
+    def init_MMemoryStore(options: Options): Unit = js.native
+    
+    /**
+    	 * Reference to the active timer.
+    	 */
+    var interval: js.UndefOr[Timer] = js.native
+    
+    /**
+    	 * Method to reset everyone's hit counter.
+    	 *
+    	 * @public
+    	 */
+    @JSName("resetAll")
+    def resetAll_MMemoryStore(): js.Promise[Unit] = js.native
+    
+    /**
+    	 * Method to reset a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 */
+    /* CompleteClass */
+    override def resetKey(key: String): js.Promise[Unit] | Unit = js.native
+    
+    /**
+    	 * The time at which all hit counts will be reset.
+    	 */
+    var resetTime: js.Date = js.native
+    
+    /**
+    	 * Method to stop the timer (if currently running) and prevent any memory
+    	 * leaks.
+    	 *
+    	 * @public
+    	 */
+    @JSName("shutdown")
+    def shutdown_MMemoryStore(): Unit = js.native
+    
+    /**
+    	 * The duration of time before which all hit counts are reset (in milliseconds).
+    	 */
+    var windowMs: Double = js.native
   }
-  object Message {
+  
+  inline def rateLimit(): RateLimitRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("rateLimit")().asInstanceOf[RateLimitRequestHandler]
+  inline def rateLimit(passedOptions: PartialOptions): RateLimitRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("rateLimit")(passedOptions.asInstanceOf[js.Any]).asInstanceOf[RateLimitRequestHandler]
+  
+  @js.native
+  trait AugmentedRequest
+    extends StObject
+       with Request
+       with /* key */ StringDictionary[RateLimitInfo]
+  
+  type IncrementCallback = js.Function3[
+    /* error */ js.UndefOr[js.Error], 
+    /* totalHits */ Double, 
+    /* resetTime */ js.UndefOr[js.Date], 
+    Unit
+  ]
+  
+  trait IncrementResponse extends StObject {
     
-    inline def apply(message: String, status: Double): Message = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Message]
+    var resetTime: js.UndefOr[js.Date] = js.undefined
+    
+    var totalHits: Double
+  }
+  object IncrementResponse {
+    
+    inline def apply(totalHits: Double): IncrementResponse = {
+      val __obj = js.Dynamic.literal(totalHits = totalHits.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IncrementResponse]
     }
     
-    extension [Self <: Message](x: Self) {
+    extension [Self <: IncrementResponse](x: Self) {
       
-      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setResetTime(value: js.Date): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
       
-      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
+      
+      inline def setTotalHits(value: Double): Self = StObject.set(x, "totalHits", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait LegacyStore extends StObject {
+    
+    /**
+    	 * Method to decrement a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 */
+    def decrement(key: String): Unit
+    
+    /**
+    	 * Method to increment a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 * @param callback {IncrementCallback} - The callback to call once the counter is incremented.
+    	 */
+    def incr(key: String, callback: IncrementCallback): Unit
+    
+    /**
+    	 * Method to reset everyone's hit counter.
+    	 */
+    var resetAll: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+    	 * Method to reset a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 */
+    def resetKey(key: String): Unit
+  }
+  object LegacyStore {
+    
+    inline def apply(decrement: String => Unit, incr: (String, IncrementCallback) => Unit, resetKey: String => Unit): LegacyStore = {
+      val __obj = js.Dynamic.literal(decrement = js.Any.fromFunction1(decrement), incr = js.Any.fromFunction2(incr), resetKey = js.Any.fromFunction1(resetKey))
+      __obj.asInstanceOf[LegacyStore]
+    }
+    
+    extension [Self <: LegacyStore](x: Self) {
+      
+      inline def setDecrement(value: String => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
+      
+      inline def setIncr(value: (String, IncrementCallback) => Unit): Self = StObject.set(x, "incr", js.Any.fromFunction2(value))
+      
+      inline def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
+      
+      inline def setResetAllUndefined: Self = StObject.set(x, "resetAll", js.undefined)
+      
+      inline def setResetKey(value: String => Unit): Self = StObject.set(x, "resetKey", js.Any.fromFunction1(value))
     }
   }
   
   trait Options extends StObject {
     
     /**
-      * Enable headers conforming to the [ratelimit standardization proposal](https://tools.ietf.org/id/draft-polli-ratelimit-headers-01.html):
-      * `RateLimit-Limit`, `RateLimit-Remaining`, and, if the store supports it, `RateLimit-Reset`. May be used in conjunction with, or instead of the `headers` option.
-      * Behavior and name will likely change in future releases.
-      * @default false
-      */
+    	 * Whether to send `RateLimit-*` headers with the rate limit and the number
+    	 * of requests.
+    	 *
+    	 * @deprecated 6.x - This option was renamed to `standardHeaders`.
+    	 */
     var draft_polli_ratelimit_headers: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The funciton to handle requests once `max` is exceeded. It receives the request and response objects.
-      * The "next" param is available if you need to pass to the next middleware. The `req.rateLimit` object
-      * has `limit`, `current`, and `remaining` number of requests, and if the store provides it, a `resetTime`
-      * Date object.
-      * Default: `(req, res, next) => res.status(options.statusCode).send(options.message)`
-      */
-    var handler: js.UndefOr[
-        js.Function3[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
-          /* next */ NextFunction, 
-          js.Any
-        ]
-      ] = js.undefined
+    	 * Express request handler that sends back a response when a client is
+    	 * rate-limited.
+    	 *
+    	 * By default, sends back the `statusCode` and `message` set via the options.
+    	 */
+    def handler(
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      response: Response_[Any, Record[String, Any]],
+      next: NextFunction,
+      optionsUsed: Options
+    ): Unit
     
     /**
-      * Enable headers for request limit (`X-RateLimit-Limit`) and current usage (`X-RateLimit-Remaining`) on all
-      * responses andtime to wait before retrying (`Retry-After`) when `max` is exceeded. Defaults to `true`.
-      */
+    	 * Whether to send `X-RateLimit-*` headers with the rate limit and the number
+    	 * of requests.
+    	 *
+    	 * @deprecated 6.x - This option was renamed to `legacyHeaders`.
+    	 */
     var headers: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Function used to generate keys. Defaults to using `req.ip`.
-      * Default: `(req, res) => req.ip`
-      */
-    var keyGenerator: js.UndefOr[
-        js.Function2[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
-          String
-        ]
-      ] = js.undefined
+    	 * Method to generate custom identifiers for clients.
+    	 *
+    	 * By default, the client's IP address is used.
+    	 */
+    def keyGenerator(
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      response: Response_[Any, Record[String, Any]]
+    ): String | js.Promise[String]
     
     /**
-      * Max number of connections during `windowMs` before sending a 429 response. May be a number, or
-      * a function that returns a number or a promise. If `max` is a function, it will be called with `req` and `res` params.
-      * Set to `0` to disable.
-      * @default 5
-      */
-    var max: js.UndefOr[Double | MaxValueFn] = js.undefined
+    	 * Whether to send `X-RateLimit-*` headers with the rate limit and the number
+    	 * of requests.
+    	 *
+    	 * Defaults to `true` (for backward compatibility).
+    	 */
+    val legacyHeaders: Boolean
     
     /**
-      * Error message sent to user when `max` is exceeded. May be a `string`, JSON object, or any other value
-      * that Express's `req.send()` supports. Defaults to `'Too many requests, please try again later.'`.
-      */
-    var message: js.UndefOr[String | Buffer | Message] = js.undefined
+    	 * The maximum number of connections to allow during the `window` before
+    	 * rate limiting the client.
+    	 *
+    	 * Can be the limit itself as a number or express middleware that parses
+    	 * the request and then figures out the limit.
+    	 *
+    	 * Defaults to `5`.
+    	 */
+    val max: Double | ValueDeterminingMiddleware[Double]
     
     /**
-      * Function that is called the first time `max` is exceeded. The `req.rateLimit` object has `limit`, `current`,
-      * and `remaining` number of requests and, if the store provides it, a `resetTime` Date object. Default is
-      * an empty function.
-      * Default: `(req, res, opts) => {}`
-      */
-    var onLimitReached: js.UndefOr[
-        js.Function3[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
-          /* optionsUsed */ this.type, 
-          Unit
-        ]
-      ] = js.undefined
+    	 * The response body to send back when a client is rate limited.
+    	 *
+    	 * Defaults to `'Too many requests, please try again later.'`
+    	 */
+    val message: Any | ValueDeterminingMiddleware[Any]
     
     /**
-      * Function used to skip requests. Returning `true` from the function will skip limiting for that request. Defaults to
-      * always `false` (count all requests).
-      * Default: `(req, res) => false`
-      */
-    var skip: js.UndefOr[
-        js.Function2[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
-          Boolean
-        ]
-      ] = js.undefined
+    	 * Express request handler that sends back a response when a client has
+    	 * reached their rate limit, and will be rate limited on their next request.
+    	 *
+    	 * @deprecated 6.x - Please use a custom `handler` that checks the number of
+    	 * hits instead.
+    	 */
+    def onLimitReached(
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      response: Response_[Any, Record[String, Any]],
+      optionsUsed: Options
+    ): Unit
     
     /**
-      * When set to `true`, failed requests (status >= 400, request canceled or errored) won't be counted. Defaults to `false`.
-      */
-    var skipFailedRequests: js.UndefOr[Boolean] = js.undefined
+    	 * The name of the property on the request object to store the rate limit info.
+    	 *
+    	 * Defaults to `rateLimit`.
+    	 */
+    val requestPropertyName: String
     
     /**
-      * When set to `true`, successful requests (status < 400) won't be counted. Defaults to `false`.
-      */
-    var skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined
+    	 * Method to determine whether or not the request counts as 'succesful'. Used
+    	 * when either `skipSuccessfulRequests` or `skipFailedRequests` is set to true.
+    	 *
+    	 * By default, requests with a response status code less than 400 are considered
+    	 * successful.
+    	 */
+    def requestWasSuccessful(
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      response: Response_[Any, Record[String, Any]]
+    ): Boolean | js.Promise[Boolean]
     
     /**
-      * HTTP status code returned when `max` is exceeded. Defaults to `429`.
-      */
-    var statusCode: js.UndefOr[Double] = js.undefined
+    	 * Method (in the form of middleware) to determine whether or not this request
+    	 * counts towards a client's quota.
+    	 *
+    	 * By default, skips no requests.
+    	 */
+    def skip(
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      response: Response_[Any, Record[String, Any]]
+    ): Boolean | js.Promise[Boolean]
     
     /**
-      * The storage to use when persisting rate limit attempts.
-      */
-    var store: js.UndefOr[Store] = js.undefined
+    	 * If `true`, the library will (by default) skip all requests that have a 4XX
+    	 * or 5XX status.
+    	 *
+    	 * Defaults to `false`.
+    	 */
+    val skipFailedRequests: Boolean
     
     /**
-      * Timeframe for which requests are checked/remembered. Also used in the Retry-After header when the limit is reached.
-      * Note: with non-default stores, you may need to configure this value twice, once here and once on the store.
-      * In some cases the units also differ (e.g. seconds vs miliseconds)
-      * @default 60000
-      */
-    var windowMs: js.UndefOr[Double] = js.undefined
+    	 * If `true`, the library will (by default) skip all requests that have a
+    	 * status code less than 400.
+    	 *
+    	 * Defaults to `false`.
+    	 */
+    val skipSuccessfulRequests: Boolean
+    
+    /**
+    	 * Whether to enable support for the standardized rate limit headers (`RateLimit-*`).
+    	 *
+    	 * Defaults to `false` (for backward compatibility, but its use is recommended).
+    	 */
+    val standardHeaders: Boolean
+    
+    /**
+    	 * The HTTP status code to send back when a client is rate limited.
+    	 *
+    	 * Defaults to `HTTP 429 Too Many Requests` (RFC 6585).
+    	 */
+    val statusCode: Double
+    
+    /**
+    	 * The `Store` to use to store the hit count for each client.
+    	 *
+    	 * By default, the built-in `MemoryStore` will be used.
+    	 */
+    var store: Store | LegacyStore
+    
+    /**
+    	 * How long we should remember the requests.
+    	 *
+    	 * Defaults to `60000` ms (= 1 minute).
+    	 */
+    val windowMs: Double
   }
   object Options {
     
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(
+      handler: (Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], Response_[Any, Record[String, Any]], NextFunction, Options) => Unit,
+      keyGenerator: (Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], Response_[Any, Record[String, Any]]) => String | js.Promise[String],
+      legacyHeaders: Boolean,
+      max: Double | ValueDeterminingMiddleware[Double],
+      message: Any | ValueDeterminingMiddleware[Any],
+      onLimitReached: (Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], Response_[Any, Record[String, Any]], Options) => Unit,
+      requestPropertyName: String,
+      requestWasSuccessful: (Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], Response_[Any, Record[String, Any]]) => Boolean | js.Promise[Boolean],
+      skip: (Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], Response_[Any, Record[String, Any]]) => Boolean | js.Promise[Boolean],
+      skipFailedRequests: Boolean,
+      skipSuccessfulRequests: Boolean,
+      standardHeaders: Boolean,
+      statusCode: Double,
+      store: Store | LegacyStore,
+      windowMs: Double
+    ): Options = {
+      val __obj = js.Dynamic.literal(handler = js.Any.fromFunction4(handler), keyGenerator = js.Any.fromFunction2(keyGenerator), legacyHeaders = legacyHeaders.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], onLimitReached = js.Any.fromFunction3(onLimitReached), requestPropertyName = requestPropertyName.asInstanceOf[js.Any], requestWasSuccessful = js.Any.fromFunction2(requestWasSuccessful), skip = js.Any.fromFunction2(skip), skipFailedRequests = skipFailedRequests.asInstanceOf[js.Any], skipSuccessfulRequests = skipSuccessfulRequests.asInstanceOf[js.Any], standardHeaders = standardHeaders.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], windowMs = windowMs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
@@ -175,73 +433,114 @@ object mod {
       inline def setDraft_polli_ratelimit_headersUndefined: Self = StObject.set(x, "draft_polli_ratelimit_headers", js.undefined)
       
       inline def setHandler(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => js.Any
-      ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
-      
-      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+        value: (Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], Response_[Any, Record[String, Any]], NextFunction, Options) => Unit
+      ): Self = StObject.set(x, "handler", js.Any.fromFunction4(value))
       
       inline def setHeaders(value: Boolean): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       inline def setKeyGenerator(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
+        value: (Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], Response_[Any, Record[String, Any]]) => String | js.Promise[String]
       ): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction2(value))
       
-      inline def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
+      inline def setLegacyHeaders(value: Boolean): Self = StObject.set(x, "legacyHeaders", value.asInstanceOf[js.Any])
       
-      inline def setMax(value: Double | MaxValueFn): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double | ValueDeterminingMiddleware[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      inline def setMaxFunction0(value: () => Double | js.Promise[Double]): Self = StObject.set(x, "max", js.Any.fromFunction0(value))
+      inline def setMaxFunction2(
+        value: (/* request */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* response */ Response_[Any, Record[String, Any]]) => Double | js.Promise[Double]
+      ): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
       
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMessage(value: Any | ValueDeterminingMiddleware[Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setMessage(value: String | Buffer | Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageFunction2(
+        value: (/* request */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* response */ Response_[Any, Record[String, Any]]) => Any | js.Promise[Any]
+      ): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
       
       inline def setOnLimitReached(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], Options) => Unit
+        value: (Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], Response_[Any, Record[String, Any]], Options) => Unit
       ): Self = StObject.set(x, "onLimitReached", js.Any.fromFunction3(value))
       
-      inline def setOnLimitReachedUndefined: Self = StObject.set(x, "onLimitReached", js.undefined)
+      inline def setRequestPropertyName(value: String): Self = StObject.set(x, "requestPropertyName", value.asInstanceOf[js.Any])
+      
+      inline def setRequestWasSuccessful(
+        value: (Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], Response_[Any, Record[String, Any]]) => Boolean | js.Promise[Boolean]
+      ): Self = StObject.set(x, "requestWasSuccessful", js.Any.fromFunction2(value))
       
       inline def setSkip(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
+        value: (Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], Response_[Any, Record[String, Any]]) => Boolean | js.Promise[Boolean]
       ): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
       inline def setSkipFailedRequests(value: Boolean): Self = StObject.set(x, "skipFailedRequests", value.asInstanceOf[js.Any])
       
-      inline def setSkipFailedRequestsUndefined: Self = StObject.set(x, "skipFailedRequests", js.undefined)
-      
       inline def setSkipSuccessfulRequests(value: Boolean): Self = StObject.set(x, "skipSuccessfulRequests", value.asInstanceOf[js.Any])
       
-      inline def setSkipSuccessfulRequestsUndefined: Self = StObject.set(x, "skipSuccessfulRequests", js.undefined)
-      
-      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setStandardHeaders(value: Boolean): Self = StObject.set(x, "standardHeaders", value.asInstanceOf[js.Any])
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
-      
-      inline def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
-      
-      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStore(value: Store | LegacyStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
       inline def setWindowMs(value: Double): Self = StObject.set(x, "windowMs", value.asInstanceOf[js.Any])
-      
-      inline def setWindowMsUndefined: Self = StObject.set(x, "windowMs", js.undefined)
     }
   }
   
-  @js.native
-  trait RateLimit
-    extends RequestHandler[ParamsDictionary, js.Any, js.Any, Query] {
-    
-    def resetIp(key: String): Unit = js.native
-    
-    def resetKey(key: String): Unit = js.native
-  }
+  type RateLimitExceededEventHandler = js.Function4[
+    /* request */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* response */ Response_[Any, Record[String, Any]], 
+    /* next */ NextFunction, 
+    /* optionsUsed */ Options, 
+    Unit
+  ]
   
   trait RateLimitInfo extends StObject {
     
@@ -251,7 +550,7 @@ object mod {
     
     val remaining: Double
     
-    val resetTime: js.UndefOr[Date] = js.undefined
+    val resetTime: js.UndefOr[js.Date] = js.undefined
   }
   object RateLimitInfo {
     
@@ -268,78 +567,121 @@ object mod {
       
       inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
       
-      inline def setResetTime(value: Date): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
+      inline def setResetTime(value: js.Date): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
       
       inline def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
     }
   }
   
+  type RateLimitReachedEventHandler = js.Function3[
+    /* request */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* response */ Response_[Any, Record[String, Any]], 
+    /* optionsUsed */ Options, 
+    Unit
+  ]
+  
+  @js.native
+  trait RateLimitRequestHandler extends RequestHandler {
+    
+    /**
+    	 * Method to reset a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 */
+    def resetKey(key: String): Unit = js.native
+  }
+  
   trait Store extends StObject {
     
-    def decrement(key: String): Unit
+    /**
+    	 * Method to decrement a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 */
+    def decrement(key: String): js.Promise[Unit] | Unit
     
-    def incr(key: String, cb: StoreIncrementCallback): Unit
+    /**
+    	 * Method to increment a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 *
+    	 * @returns {IncrementResponse} - The number of hits and reset time for that client.
+    	 */
+    def increment(key: String): js.Promise[IncrementResponse] | IncrementResponse
     
-    def resetAll(): Unit
+    /**
+    	 * Method that initializes the store, and has access to the options passed to
+    	 * the middleware too.
+    	 *
+    	 * @param options {Options} - The options used to setup the middleware.
+    	 */
+    var init: js.UndefOr[js.Function1[/* options */ Options, Unit]] = js.undefined
     
-    def resetKey(key: String): Unit
+    /**
+    	 * Method to reset everyone's hit counter.
+    	 */
+    var resetAll: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
+    
+    /**
+    	 * Method to reset a client's hit counter.
+    	 *
+    	 * @param key {string} - The identifier for a client.
+    	 */
+    def resetKey(key: String): js.Promise[Unit] | Unit
+    
+    /**
+    	 * Method to shutdown the store, stop timers, and release all resources.
+    	 */
+    var shutdown: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
   }
   object Store {
     
     inline def apply(
-      decrement: String => Unit,
-      incr: (String, StoreIncrementCallback) => Unit,
-      resetAll: () => Unit,
-      resetKey: String => Unit
+      decrement: String => js.Promise[Unit] | Unit,
+      increment: String => js.Promise[IncrementResponse] | IncrementResponse,
+      resetKey: String => js.Promise[Unit] | Unit
     ): Store = {
-      val __obj = js.Dynamic.literal(decrement = js.Any.fromFunction1(decrement), incr = js.Any.fromFunction2(incr), resetAll = js.Any.fromFunction0(resetAll), resetKey = js.Any.fromFunction1(resetKey))
+      val __obj = js.Dynamic.literal(decrement = js.Any.fromFunction1(decrement), increment = js.Any.fromFunction1(increment), resetKey = js.Any.fromFunction1(resetKey))
       __obj.asInstanceOf[Store]
     }
     
     extension [Self <: Store](x: Self) {
       
-      inline def setDecrement(value: String => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
+      inline def setDecrement(value: String => js.Promise[Unit] | Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
       
-      inline def setIncr(value: (String, StoreIncrementCallback) => Unit): Self = StObject.set(x, "incr", js.Any.fromFunction2(value))
+      inline def setIncrement(value: String => js.Promise[IncrementResponse] | IncrementResponse): Self = StObject.set(x, "increment", js.Any.fromFunction1(value))
       
-      inline def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
+      inline def setInit(value: /* options */ Options => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      inline def setResetKey(value: String => Unit): Self = StObject.set(x, "resetKey", js.Any.fromFunction1(value))
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      
+      inline def setResetAll(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
+      
+      inline def setResetAllUndefined: Self = StObject.set(x, "resetAll", js.undefined)
+      
+      inline def setResetKey(value: String => js.Promise[Unit] | Unit): Self = StObject.set(x, "resetKey", js.Any.fromFunction1(value))
+      
+      inline def setShutdown(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
+      
+      inline def setShutdownUndefined: Self = StObject.set(x, "shutdown", js.undefined)
     }
   }
   
-  type StoreIncrementCallback = js.Function3[
-    /* err */ js.UndefOr[js.Object], 
-    /* hits */ js.UndefOr[Double], 
-    /* resetTime */ js.UndefOr[Date], 
-    Unit
+  type ValueDeterminingMiddleware[T] = js.Function2[
+    /* request */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* response */ Response_[Any, Record[String, Any]], 
+    T | js.Promise[T]
   ]
-  
-  object global {
-    
-    object Express {
-      
-      trait Request extends StObject {
-        
-        /**
-          * property is added to all requests with the limit, current,
-          * and remaining number of requests and, if the store provides it, a resetTime Date object.
-          * These may be used in your application code to take additional actions or inform the user of their status
-          */
-        var rateLimit: RateLimitInfo
-      }
-      object Request {
-        
-        inline def apply(rateLimit: RateLimitInfo): Request = {
-          val __obj = js.Dynamic.literal(rateLimit = rateLimit.asInstanceOf[js.Any])
-          __obj.asInstanceOf[Request]
-        }
-        
-        extension [Self <: Request](x: Self) {
-          
-          inline def setRateLimit(value: RateLimitInfo): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
-        }
-      }
-    }
-  }
 }

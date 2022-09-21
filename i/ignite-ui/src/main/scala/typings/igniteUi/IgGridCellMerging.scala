@@ -11,7 +11,7 @@ trait IgGridCellMerging
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var cellsMerged: js.UndefOr[CellsMergedEvent] = js.undefined
   
@@ -41,7 +41,7 @@ trait IgGridCellMerging
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Defines when merging should be applied.
@@ -58,7 +58,7 @@ trait IgGridCellMerging
     * Defines the whether the rows will be merged or not.
     *
     */
-  var mergeRows: js.UndefOr[js.Any] = js.undefined
+  var mergeRows: js.UndefOr[Any] = js.undefined
   
   /**
     * Defines the rules merging is based on.
@@ -117,7 +117,7 @@ object IgGridCellMerging {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridCellMergingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridCellMergingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
@@ -127,7 +127,7 @@ object IgGridCellMerging {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -135,7 +135,7 @@ object IgGridCellMerging {
     
     inline def setMergeOnUndefined: Self = StObject.set(x, "mergeOn", js.undefined)
     
-    inline def setMergeRows(value: js.Any): Self = StObject.set(x, "mergeRows", value.asInstanceOf[js.Any])
+    inline def setMergeRows(value: Any): Self = StObject.set(x, "mergeRows", value.asInstanceOf[js.Any])
     
     inline def setMergeRowsUndefined: Self = StObject.set(x, "mergeRows", js.undefined)
     

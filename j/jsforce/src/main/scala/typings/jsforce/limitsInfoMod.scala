@@ -86,6 +86,23 @@ object limitsInfoMod {
     }
   }
   
+  trait LimitInfo extends StObject {
+    
+    var apiUsage: typings.jsforce.anon.Limit
+  }
+  object LimitInfo {
+    
+    inline def apply(apiUsage: typings.jsforce.anon.Limit): LimitInfo = {
+      val __obj = js.Dynamic.literal(apiUsage = apiUsage.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LimitInfo]
+    }
+    
+    extension [Self <: LimitInfo](x: Self) {
+      
+      inline def setApiUsage(value: typings.jsforce.anon.Limit): Self = StObject.set(x, "apiUsage", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait LimitsInfo extends StObject {
     
     var ConcurrentAsyncGetReportInstances: Limit

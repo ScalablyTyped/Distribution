@@ -54,7 +54,7 @@ object Pattern {
     
     inline def setCountersToAggregateUndefined: Self = StObject.set(x, "countersToAggregate", js.undefined)
     
-    inline def setCountersToAggregateVarargs(value: String*): Self = StObject.set(x, "countersToAggregate", js.Array(value :_*))
+    inline def setCountersToAggregateVarargs(value: String*): Self = StObject.set(x, "countersToAggregate", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object Pattern {
     
     inline def setTargetFramesUndefined: Self = StObject.set(x, "targetFrames", js.undefined)
     
-    inline def setTargetFramesVarargs(value: TargetFrame*): Self = StObject.set(x, "targetFrames", js.Array(value :_*))
+    inline def setTargetFramesVarargs(value: TargetFrame*): Self = StObject.set(x, "targetFrames", js.Array(value*))
     
     inline def setThresholdPercent(value: Percentage): Self = StObject.set(x, "thresholdPercent", value.asInstanceOf[js.Any])
     

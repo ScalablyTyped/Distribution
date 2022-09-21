@@ -11,7 +11,7 @@ trait RenderContextFieldInForm
   
   var CurrentFieldSchema: FieldSchemaInForm
   
-  var CurrentFieldValue: js.Any
+  var CurrentFieldValue: Any
   
   var CurrentGroup: Group
   
@@ -23,7 +23,7 @@ object RenderContextFieldInForm {
   
   inline def apply(
     CurrentFieldSchema: FieldSchemaInForm,
-    CurrentFieldValue: js.Any,
+    CurrentFieldValue: Any,
     CurrentGroup: Group,
     CurrentGroupIdx: Double,
     CurrentItem: Item,
@@ -42,7 +42,7 @@ object RenderContextFieldInForm {
     
     inline def setCurrentFieldSchema(value: FieldSchemaInForm): Self = StObject.set(x, "CurrentFieldSchema", value.asInstanceOf[js.Any])
     
-    inline def setCurrentFieldValue(value: js.Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
+    inline def setCurrentFieldValue(value: Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
     
     inline def setCurrentGroup(value: Group): Self = StObject.set(x, "CurrentGroup", value.asInstanceOf[js.Any])
     
@@ -50,6 +50,6 @@ object RenderContextFieldInForm {
     
     inline def setCurrentItems(value: js.Array[Item]): Self = StObject.set(x, "CurrentItems", value.asInstanceOf[js.Any])
     
-    inline def setCurrentItemsVarargs(value: Item*): Self = StObject.set(x, "CurrentItems", js.Array(value :_*))
+    inline def setCurrentItemsVarargs(value: Item*): Self = StObject.set(x, "CurrentItems", js.Array(value*))
   }
 }

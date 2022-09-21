@@ -10,7 +10,7 @@ object featureFileParserMod {
   
   @JSImport("yadda/lib/parsers/FeatureFileParser", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with FeatureFileParser {
     def this(language: typings.yadda.languageMod.^[Library]) = this()

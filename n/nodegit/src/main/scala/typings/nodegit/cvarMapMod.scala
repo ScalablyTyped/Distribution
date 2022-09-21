@@ -8,7 +8,7 @@ object cvarMapMod {
   
   @JSImport("nodegit/cvar-map", "CvarMap")
   @js.native
-  class CvarMap () extends StObject {
+  open class CvarMap () extends StObject {
     
     var cvarType: Double = js.native
     

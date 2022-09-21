@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.GSSolver")
 @js.native
-class GSSolver ()
+open class GSSolver ()
   extends typings.p2.mod.GSSolver {
   def this(options: GSSolverOptions) = this()
 }

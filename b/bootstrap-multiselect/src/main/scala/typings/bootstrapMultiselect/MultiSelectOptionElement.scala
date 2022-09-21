@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MultiSelectOptionElement extends StObject {
   
-  var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var attributes: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var children: js.UndefOr[js.Array[MultiSelectOptionElement]] = js.undefined
   
@@ -30,7 +30,7 @@ object MultiSelectOptionElement {
   
   extension [Self <: MultiSelectOptionElement](x: Self) {
     
-    inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
@@ -38,7 +38,7 @@ object MultiSelectOptionElement {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: MultiSelectOptionElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: MultiSelectOptionElement*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

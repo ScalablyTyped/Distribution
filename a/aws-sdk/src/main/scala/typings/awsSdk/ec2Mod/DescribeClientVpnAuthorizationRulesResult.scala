@@ -29,7 +29,7 @@ object DescribeClientVpnAuthorizationRulesResult {
     
     inline def setAuthorizationRulesUndefined: Self = StObject.set(x, "AuthorizationRules", js.undefined)
     
-    inline def setAuthorizationRulesVarargs(value: AuthorizationRule*): Self = StObject.set(x, "AuthorizationRules", js.Array(value :_*))
+    inline def setAuthorizationRulesVarargs(value: AuthorizationRule*): Self = StObject.set(x, "AuthorizationRules", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Replacement")
 @js.native
-/* private */ class Replacement ()
+/* private */ open class Replacement ()
   extends StObject
      with typings.activexWord.Word.Replacement {
   
@@ -42,10 +42,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  var Style: js.Any = js.native
+  var Style: Any = js.native
   
   /* CompleteClass */
   var Text: String = js.native

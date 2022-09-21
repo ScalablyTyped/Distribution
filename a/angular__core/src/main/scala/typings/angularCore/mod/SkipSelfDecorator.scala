@@ -29,5 +29,5 @@ trait SkipSelfDecorator
     * @see `Optional`
     *
     */
-  def apply(): js.Any = js.native
+  def apply(): Any = js.native
 }

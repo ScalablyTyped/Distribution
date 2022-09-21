@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Readonly<@uifabric/utilities.@uifabric/utilities/lib/customizations/Customizer.types.ICustomizerProps> */
 trait ReadonlyICustomizerProps extends StObject {
   
-  val componentRef: js.UndefOr[IRefObject[js.Any]] = js.undefined
+  val componentRef: js.UndefOr[IRefObject[Any]] = js.undefined
   
   val contextTransform: js.UndefOr[js.Function1[/* context */ ReadonlyICustomizerContex, ICustomizerContext]] = js.undefined
   
@@ -29,9 +29,9 @@ object ReadonlyICustomizerProps {
   
   extension [Self <: ReadonlyICustomizerProps](x: Self) {
     
-    inline def setComponentRef(value: IRefObject[js.Any]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+    inline def setComponentRef(value: IRefObject[Any]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     
-    inline def setComponentRefFunction1(value: /* ref */ js.Any | Null => scala.Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+    inline def setComponentRefFunction1(value: /* ref */ Any | Null => scala.Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
     inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     

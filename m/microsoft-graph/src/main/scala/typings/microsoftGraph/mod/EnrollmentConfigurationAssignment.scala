@@ -8,7 +8,7 @@ trait EnrollmentConfigurationAssignment
   extends StObject
      with Entity {
   
-  // Not yet documented
+  // Represents an assignment to managed devices in the tenant
   var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.undefined
 }
 object EnrollmentConfigurationAssignment {

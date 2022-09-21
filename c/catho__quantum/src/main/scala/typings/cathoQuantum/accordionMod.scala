@@ -11,10 +11,10 @@ object accordionMod {
   
   @JSImport("@catho/quantum/Accordion", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[AccordionProps, js.Object, js.Any]
+  open class default ()
+    extends Component[AccordionProps, js.Object, Any]
   
-  type Accordion = Component[AccordionProps, js.Object, js.Any]
+  type Accordion = Component[AccordionProps, js.Object, Any]
   
   trait AccordionProps extends StObject {
     
@@ -35,7 +35,7 @@ object accordionMod {
       
       inline def setItems(value: js.Array[Content]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: Content*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Content*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setKeepOnlyOneOpen(value: Boolean): Self = StObject.set(x, "keepOnlyOneOpen", value.asInstanceOf[js.Any])
       

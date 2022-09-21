@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "wix-design-systems-providers" : "1.11.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "wix-design-systems-providers" : "1.11.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

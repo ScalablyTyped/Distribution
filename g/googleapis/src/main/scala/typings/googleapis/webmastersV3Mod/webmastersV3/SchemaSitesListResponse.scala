@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List of sites with access level information.
-  */
 trait SchemaSitesListResponse extends StObject {
   
   /**
-    * Contains permission level information about a Search Console site. For
-    * more information, see Permissions in Search Console.
+    * Contains permission level information about a Search Console site. For more information, see Permissions in Search Console.
     */
   var siteEntry: js.UndefOr[js.Array[SchemaWmxSite]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaSitesListResponse {
     
     inline def setSiteEntryUndefined: Self = StObject.set(x, "siteEntry", js.undefined)
     
-    inline def setSiteEntryVarargs(value: SchemaWmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value :_*))
+    inline def setSiteEntryVarargs(value: SchemaWmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value*))
   }
 }

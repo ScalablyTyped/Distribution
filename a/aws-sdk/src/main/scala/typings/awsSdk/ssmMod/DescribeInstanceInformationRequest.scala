@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeInstanceInformationRequest extends StObject {
   
   /**
-    * One or more filters. Use a filter to return a more specific list of instances. You can filter based on tags applied to EC2 instances. Use this Filters data type instead of InstanceInformationFilterList, which is deprecated.
+    * One or more filters. Use a filter to return a more specific list of managed nodes. You can filter based on tags applied to your managed nodes. Use this Filters data type instead of InstanceInformationFilterList, which is deprecated.
     */
   var Filters: js.UndefOr[InstanceInformationStringFilterList] = js.undefined
   
   /**
-    * This is a legacy method. We recommend that you don't use this method. Instead, use the Filters data type. Filters enables you to return instance information by filtering based on tags applied to managed instances.  Attempting to use InstanceInformationFilterList and Filters leads to an exception error.  
+    * This is a legacy method. We recommend that you don't use this method. Instead, use the Filters data type. Filters enables you to return node information by filtering based on tags applied to managed nodes.  Attempting to use InstanceInformationFilterList and Filters leads to an exception error.  
     */
   var InstanceInformationFilterList: js.UndefOr[typings.awsSdk.ssmMod.InstanceInformationFilterList] = js.undefined
   
@@ -39,13 +39,13 @@ object DescribeInstanceInformationRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: InstanceInformationStringFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: InstanceInformationStringFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setInstanceInformationFilterList(value: InstanceInformationFilterList): Self = StObject.set(x, "InstanceInformationFilterList", value.asInstanceOf[js.Any])
     
     inline def setInstanceInformationFilterListUndefined: Self = StObject.set(x, "InstanceInformationFilterList", js.undefined)
     
-    inline def setInstanceInformationFilterListVarargs(value: InstanceInformationFilter*): Self = StObject.set(x, "InstanceInformationFilterList", js.Array(value :_*))
+    inline def setInstanceInformationFilterListVarargs(value: InstanceInformationFilter*): Self = StObject.set(x, "InstanceInformationFilterList", js.Array(value*))
     
     inline def setMaxResults(value: MaxResultsEC2Compatible): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

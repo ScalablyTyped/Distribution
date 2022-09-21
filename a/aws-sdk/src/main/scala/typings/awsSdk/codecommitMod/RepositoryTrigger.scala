@@ -44,7 +44,7 @@ object RepositoryTrigger {
     
     inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
     
-    inline def setBranchesVarargs(value: BranchName*): Self = StObject.set(x, "branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: BranchName*): Self = StObject.set(x, "branches", js.Array(value*))
     
     inline def setCustomData(value: RepositoryTriggerCustomData): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object RepositoryTrigger {
     
     inline def setEvents(value: RepositoryTriggerEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: RepositoryTriggerEventEnum*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: RepositoryTriggerEventEnum*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setName(value: RepositoryTriggerName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

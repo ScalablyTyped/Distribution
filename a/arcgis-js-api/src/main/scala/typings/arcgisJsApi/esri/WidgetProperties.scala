@@ -27,6 +27,15 @@ trait WidgetProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#label)
     */
   var label: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates whether the widget is visible.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#visible)
+    */
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object WidgetProperties {
   
@@ -48,5 +57,9 @@ object WidgetProperties {
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

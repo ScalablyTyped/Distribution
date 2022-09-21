@@ -10,7 +10,7 @@ object panelMod {
   
   @JSImport("@wordpress/customize-browser/Panel", "Panel")
   @js.native
-  class Panel protected () extends Container {
+  open class Panel protected () extends Container {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

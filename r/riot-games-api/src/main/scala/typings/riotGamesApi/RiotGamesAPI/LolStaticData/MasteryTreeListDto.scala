@@ -19,6 +19,6 @@ object MasteryTreeListDto {
     
     inline def setMasteryTreeItems(value: js.Array[MasteryTreeItemDto]): Self = StObject.set(x, "masteryTreeItems", value.asInstanceOf[js.Any])
     
-    inline def setMasteryTreeItemsVarargs(value: MasteryTreeItemDto*): Self = StObject.set(x, "masteryTreeItems", js.Array(value :_*))
+    inline def setMasteryTreeItemsVarargs(value: MasteryTreeItemDto*): Self = StObject.set(x, "masteryTreeItems", js.Array(value*))
   }
 }

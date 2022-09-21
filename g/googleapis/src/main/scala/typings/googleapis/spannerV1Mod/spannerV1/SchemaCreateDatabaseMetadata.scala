@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata type for the operation returned by CreateDatabase.
-  */
 trait SchemaCreateDatabaseMetadata extends StObject {
   
   /**
     * The database being created.
     */
-  var database: js.UndefOr[String] = js.undefined
+  var database: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCreateDatabaseMetadata {
   
@@ -24,6 +21,8 @@ object SchemaCreateDatabaseMetadata {
   extension [Self <: SchemaCreateDatabaseMetadata](x: Self) {
     
     inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseNull: Self = StObject.set(x, "database", null)
     
     inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
   }

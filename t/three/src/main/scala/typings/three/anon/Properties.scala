@@ -8,11 +8,11 @@ trait Properties extends StObject {
   
   var properties: Color
   
-  var value: js.Array[js.Any]
+  var value: js.Array[Any]
 }
 object Properties {
   
-  inline def apply(properties: Color, value: js.Array[js.Any]): Properties = {
+  inline def apply(properties: Color, value: js.Array[Any]): Properties = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }
@@ -21,8 +21,8 @@ object Properties {
     
     inline def setProperties(value: Color): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

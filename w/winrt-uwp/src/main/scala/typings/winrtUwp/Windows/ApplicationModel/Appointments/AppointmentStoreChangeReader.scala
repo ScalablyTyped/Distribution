@@ -22,14 +22,14 @@ trait AppointmentStoreChangeReader extends StObject {
     * Returns a list of the changes that have occurred in the appointment store that have not yet been accepted by the calling app.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
 }
 object AppointmentStoreChangeReader {
   
   inline def apply(
     acceptChanges: () => Unit,
     acceptChangesThrough: AppointmentStoreChange => Unit,
-    readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+    readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]]
   ): AppointmentStoreChangeReader = {
     val __obj = js.Dynamic.literal(acceptChanges = js.Any.fromFunction0(acceptChanges), acceptChangesThrough = js.Any.fromFunction1(acceptChangesThrough), readBatchAsync = js.Any.fromFunction0(readBatchAsync))
     __obj.asInstanceOf[AppointmentStoreChangeReader]
@@ -41,6 +41,6 @@ object AppointmentStoreChangeReader {
     
     inline def setAcceptChangesThrough(value: AppointmentStoreChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
     
-    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
+    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigqueryreservation.anon
 
-import typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryreservation.MergeCapacityCommitmentsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,13 @@ trait Key extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Parent resource that identifies admin project and location e.g., `projects/myproject/locations/us` */
+  /** The maximum number of items to return per page. */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /** The next_page_token value returned from a previous List request, if any. */
+  var pageToken: js.UndefOr[String] = js.undefined
+  
+  /** Required. The parent resource name containing project and location, e.g.: `projects/myproject/locations/US` */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -37,9 +42,6 @@ trait Key extends StObject {
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Request body */
-  var resource: MergeCapacityCommitmentsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +51,8 @@ trait Key extends StObject {
 }
 object Key {
   
-  inline def apply(parent: String, resource: MergeCapacityCommitmentsRequest): Key = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(parent: String): Key = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -84,6 +86,14 @@ object Key {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
@@ -93,8 +103,6 @@ object Key {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: MergeCapacityCommitmentsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

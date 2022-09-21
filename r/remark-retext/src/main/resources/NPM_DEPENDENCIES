@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "remark-retext" : "5.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "remark-retext" : "5.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

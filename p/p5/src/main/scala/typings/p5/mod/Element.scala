@@ -1,6 +1,5 @@
 package typings.p5.mod
 
-import typings.p5.anon.X
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -96,7 +95,7 @@ trait Element extends StObject {
     *   passed instead, the previously firing function
     *   will no longer fire.
     */
-  def doubleClicked(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def doubleClicked(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def doubleClicked(fxn: Boolean): Element = js.native
   
   /**
@@ -110,7 +109,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def dragLeave(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def dragLeave(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def dragLeave(fxn: Boolean): Element = js.native
   
   /**
@@ -124,7 +123,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def dragOver(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def dragOver(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def dragOver(fxn: Boolean): Element = js.native
   
   /**
@@ -147,17 +146,14 @@ trait Element extends StObject {
     *   are dropped with the drop event.
     *   @chainable
     */
-  def drop(callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
-  def drop(
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    fxn: js.Function1[/* repeated */ js.Any, js.Any]
-  ): Element = js.native
+  def drop(callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
+  def drop(callback: js.Function1[/* repeated */ Any, Any], fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   
   /**
     *   Underlying HTML element. All normal HTML methods
     *   can be called on this.
     */
-  var elt: js.Any = js.native
+  var elt: Any = js.native
   
   /**
     *   Checks if specified class already set to element
@@ -229,7 +225,7 @@ trait Element extends StObject {
     *   a mouse button is pressed and released over the
     *   element. Some mobile browsers may also trigger
     *   this event on a touch screen, if the user performs
-    *   a quick tap. This can be used to attach element
+    *   a quick tap.This can be used to attach element
     *   specific event listeners.
     *   @param fxn function to be fired when mouse is
     *   clicked over the element. if false is passed
@@ -237,7 +233,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def mouseClicked(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def mouseClicked(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseClicked(fxn: Boolean): Element = js.native
   
   /**
@@ -249,7 +245,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def mouseMoved(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def mouseMoved(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseMoved(fxn: Boolean): Element = js.native
   
   /**
@@ -262,7 +258,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def mouseOut(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def mouseOut(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseOut(fxn: Boolean): Element = js.native
   
   /**
@@ -275,7 +271,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def mouseOver(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def mouseOver(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseOver(fxn: Boolean): Element = js.native
   
   /**
@@ -291,11 +287,11 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def mousePressed(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def mousePressed(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mousePressed(fxn: Boolean): Element = js.native
   
   /**
-    *   The .mouseReleased() function is called once after
+    *   The mouseReleased() function is called once after
     *   every time a mouse button is released over the
     *   element. Some mobile browsers may also trigger
     *   this event on a touch screen, if the user performs
@@ -307,14 +303,14 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def mouseReleased(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def mouseReleased(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseReleased(fxn: Boolean): Element = js.native
   
   /**
-    *   The .mouseWheel() function is called once after
+    *   The mouseWheel() function is called once after
     *   every time a mouse wheel is scrolled over the
     *   element. This can be used to attach element
-    *   specific event listeners.  The function accepts a
+    *   specific event listeners. The function accepts a
     *   callback function as argument which will be
     *   executed when the wheel event is triggered on the
     *   element, the callback function is passed one
@@ -325,7 +321,6 @@ trait Element extends StObject {
     *   event.deltaY except it reads the horizontal wheel
     *   scroll of the mouse wheel.
     *
-    *
     *   On OS X with "natural" scrolling enabled, the
     *   event.deltaY values are reversed.
     *   @param fxn function to be fired when mouse is
@@ -334,7 +329,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def mouseWheel(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def mouseWheel(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseWheel(fxn: Boolean): Element = js.native
   
   /**
@@ -343,11 +338,7 @@ trait Element extends StObject {
     *   Accepts either a string ID, DOM node, or
     *   p5.Element. If no arguments given, parent node is
     *   returned. For more ways to position the canvas,
-    *   see the  positioning the canvas wiki page. All
-    *   above examples except for the first one require
-    *   the inclusion of the p5.dom library in your
-    *   index.html. See the using a library section for
-    *   information on how to include this library.
+    *   see the  positioning the canvas wiki page.
     */
   def parent(): Element = js.native
   /**
@@ -356,11 +347,7 @@ trait Element extends StObject {
     *   Accepts either a string ID, DOM node, or
     *   p5.Element. If no arguments given, parent node is
     *   returned. For more ways to position the canvas,
-    *   see the  positioning the canvas wiki page. All
-    *   above examples except for the first one require
-    *   the inclusion of the p5.dom library in your
-    *   index.html. See the using a library section for
-    *   information on how to include this library.
+    *   see the  positioning the canvas wiki page.
     *   @param parent the ID, DOM node, or p5.Element of
     *   desired parent element
     *   @chainable
@@ -370,35 +357,56 @@ trait Element extends StObject {
   def parent(parent: Element): Element = js.native
   
   /**
-    *   Sets the position of the element relative to (0,
-    *   0) of the window. Essentially, sets
-    *   position:absolute and left and top properties of
-    *   style. If no arguments given returns the x and y
-    *   position of the element in an object.
-    *   @return the x and y position of the element in an
-    *   object
+    *   Sets the position of the element. If no position
+    *   type argument is given, the position will be
+    *   relative to (0, 0) of the window. Essentially,
+    *   this sets position:absolute and left and top
+    *   properties of style. If an optional third argument
+    *   specifying position type is given, the x and y
+    *   coordinates will be interpreted based on the
+    *   positioning scheme. If no arguments given, the
+    *   function returns the x and y position of the
+    *   element. found documentation on how to be more
+    *   specific with object type
+    *   https://stackoverflow.com/questions/14714314/how-do-i-comment-object-literals-in-yuidoc
+    *   @return object of form { x: 0, y: 0 } containing
+    *   the position of the element in an object
     */
-  def position(): X = js.native
+  def position(): js.Object = js.native
   def position(x: Double): Element = js.native
   def position(x: Double, y: Double): Element = js.native
+  def position(x: Double, y: Double, positionType: String): Element = js.native
+  def position(x: Double, y: Unit, positionType: String): Element = js.native
   def position(x: Unit, y: Double): Element = js.native
+  def position(x: Unit, y: Double, positionType: String): Element = js.native
+  def position(x: Unit, y: Unit, positionType: String): Element = js.native
   /**
-    *   Sets the position of the element relative to (0,
-    *   0) of the window. Essentially, sets
-    *   position:absolute and left and top properties of
-    *   style. If no arguments given returns the x and y
-    *   position of the element in an object.
+    *   Sets the position of the element. If no position
+    *   type argument is given, the position will be
+    *   relative to (0, 0) of the window. Essentially,
+    *   this sets position:absolute and left and top
+    *   properties of style. If an optional third argument
+    *   specifying position type is given, the x and y
+    *   coordinates will be interpreted based on the
+    *   positioning scheme. If no arguments given, the
+    *   function returns the x and y position of the
+    *   element. found documentation on how to be more
+    *   specific with object type
+    *   https://stackoverflow.com/questions/14714314/how-do-i-comment-object-literals-in-yuidoc
     *   @param [x] x-position relative to upper left of
-    *   window
+    *   window (optional)
     *   @param [y] y-position relative to upper left of
-    *   window
+    *   window (optional)
+    *   @param [positionType] it can be static, fixed,
+    *   relative, sticky, initial or inherit (optional)
     *   @chainable
     */
   @JSName("position")
   def position_Element(): Element = js.native
   
   /**
-    *   Removes the element and deregisters all listeners.
+    *   Removes the element, stops all media streams, and
+    *   deregisters all listeners.
     */
   def remove(): Unit = js.native
   
@@ -481,7 +489,6 @@ trait Element extends StObject {
     *   @chainable
     */
   def style(property: String, value: String): Element = js.native
-  def style(property: String, value: Double): Element = js.native
   def style(property: String, value: Color): Element = js.native
   
   /**
@@ -500,7 +507,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def touchEnded(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def touchEnded(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def touchEnded(fxn: Boolean): Element = js.native
   
   /**
@@ -512,7 +519,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def touchMoved(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def touchMoved(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def touchMoved(fxn: Boolean): Element = js.native
   
   /**
@@ -525,7 +532,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def touchStarted(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def touchStarted(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def touchStarted(fxn: Boolean): Element = js.native
   
   /**

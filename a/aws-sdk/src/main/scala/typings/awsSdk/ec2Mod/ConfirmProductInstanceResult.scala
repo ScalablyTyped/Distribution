@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfirmProductInstanceResult extends StObject {
   
   /**
-    * The AWS account ID of the instance owner. This is only present if the product code is attached to the instance.
+    * The Amazon Web Services account ID of the instance owner. This is only present if the product code is attached to the instance.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   

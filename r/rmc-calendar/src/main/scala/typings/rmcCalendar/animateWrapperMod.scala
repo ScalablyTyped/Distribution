@@ -9,7 +9,7 @@ object animateWrapperMod {
   
   @JSImport("rmc-calendar/lib/calendar/AnimateWrapper", JSImport.Default)
   @js.native
-  class default () extends AnimateWrapper
+  open class default () extends AnimateWrapper
   /* static members */
   object default {
     
@@ -25,7 +25,7 @@ object animateWrapperMod {
   
   @js.native
   trait AnimateWrapper
-    extends PureComponent[PropsType, js.Object, js.Any]
+    extends PureComponent[PropsType, js.Object, Any]
   
   trait PropsType extends StObject {
     

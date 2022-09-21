@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAccessPointResult extends StObject {
   
   /**
+    * The ARN of the access point.
+    */
+  var AccessPointArn: js.UndefOr[S3AccessPointArn] = js.undefined
+  
+  /**
+    * The name or alias of the access point.
+    */
+  var Alias: js.UndefOr[typings.awsSdk.s3controlMod.Alias] = js.undefined
+  
+  /**
     * The name of the bucket associated with the specified access point.
     */
   var Bucket: js.UndefOr[BucketName] = js.undefined
@@ -14,7 +24,12 @@ trait GetAccessPointResult extends StObject {
   /**
     * The date and time when the specified access point was created.
     */
-  var CreationDate: js.UndefOr[typings.awsSdk.s3controlMod.CreationDate] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The VPC endpoint for the access point.
+    */
+  var Endpoints: js.UndefOr[typings.awsSdk.s3controlMod.Endpoints] = js.undefined
   
   /**
     * The name of the specified access point.
@@ -29,7 +44,7 @@ trait GetAccessPointResult extends StObject {
   var PublicAccessBlockConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.PublicAccessBlockConfiguration] = js.undefined
   
   /**
-    * Contains the virtual private cloud (VPC) configuration for the specified access point.
+    * Contains the virtual private cloud (VPC) configuration for the specified access point.  This element is empty if this access point is an Amazon S3 on Outposts access point that is used by other Amazon Web Services. 
     */
   var VpcConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.VpcConfiguration] = js.undefined
 }
@@ -42,13 +57,25 @@ object GetAccessPointResult {
   
   extension [Self <: GetAccessPointResult](x: Self) {
     
+    inline def setAccessPointArn(value: S3AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
+    
+    inline def setAccessPointArnUndefined: Self = StObject.set(x, "AccessPointArn", js.undefined)
+    
+    inline def setAlias(value: Alias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
+    
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    
+    inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
     inline def setName(value: AccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

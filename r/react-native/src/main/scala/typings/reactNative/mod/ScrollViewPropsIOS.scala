@@ -39,6 +39,18 @@ trait ScrollViewPropsIOS extends StObject {
   
   // true
   /**
+    * Controls whether the ScrollView should automatically adjust its contentInset and
+    * scrollViewInsets when the Keyboard changes its size. The default value is false.
+    */
+  var automaticallyAdjustKeyboardInsets: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether iOS should automatically adjust the scroll indicator
+    * insets. The default value is true. Available on iOS 13 and later.
+    */
+  var automaticallyAdjustsScrollIndicatorInsets: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * When true the scroll view bounces when it reaches the end of the
     * content if the content is larger then the scroll view along the axis of
     * the scroll direction. When false it disables all bouncing even if
@@ -85,7 +97,7 @@ trait ScrollViewPropsIOS extends StObject {
     * Used to manually set the starting scroll offset.
     * The default value is {x: 0, y: 0}
     */
-  var contentOffset: js.UndefOr[PointPropType] = js.undefined
+  var contentOffset: js.UndefOr[PointProp] = js.undefined
   
   /**
     * When true the ScrollView will try to lock to only vertical or horizontal
@@ -155,9 +167,9 @@ trait ScrollViewPropsIOS extends StObject {
   var pinchGestureEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * This controls how often the scroll event will be fired while scrolling (in events per seconds).
-    * A higher number yields better accuracy for code that is tracking the scroll position,
-    * but can lead to scroll performance problems due to the volume of information being send over the bridge.
+    * This controls how often the scroll event will be fired while scrolling (as a time interval in ms).
+    * A lower number yields better accuracy for code that is tracking the scroll position,
+    * but can lead to scroll performance problems due to the volume of information being sent over the bridge.
     * The default value is zero, which means the scroll event will be sent only once each time the view is scrolled.
     */
   var scrollEventThrottle: js.UndefOr[Double] = js.undefined
@@ -218,6 +230,14 @@ object ScrollViewPropsIOS {
     
     inline def setAutomaticallyAdjustContentInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustContentInsets", js.undefined)
     
+    inline def setAutomaticallyAdjustKeyboardInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustKeyboardInsets", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticallyAdjustKeyboardInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustKeyboardInsets", js.undefined)
+    
+    inline def setAutomaticallyAdjustsScrollIndicatorInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustsScrollIndicatorInsets", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticallyAdjustsScrollIndicatorInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustsScrollIndicatorInsets", js.undefined)
+    
     inline def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
     
     inline def setBouncesUndefined: Self = StObject.set(x, "bounces", js.undefined)
@@ -242,7 +262,7 @@ object ScrollViewPropsIOS {
     
     inline def setContentInsetUndefined: Self = StObject.set(x, "contentInset", js.undefined)
     
-    inline def setContentOffset(value: PointPropType): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
+    inline def setContentOffset(value: PointProp): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
     
     inline def setContentOffsetUndefined: Self = StObject.set(x, "contentOffset", js.undefined)
     

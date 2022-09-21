@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.HTTPToHTTPS")
 @js.native
-class HTTPToHTTPS () extends Abstract
+open class HTTPToHTTPS () extends Abstract

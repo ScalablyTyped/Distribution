@@ -1,5 +1,6 @@
 package typings.babylonjs.xRIndexMod
 
+import typings.babylonjs.anon.Filename
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMotionControllerLayout
@@ -19,6 +20,7 @@ abstract class WebXRAbstractMotionController protected ()
     * @param gamepadObject The gamepad object correlating to this controller
     * @param handedness handedness (left/right/none) of this controller
     * @param _doNotLoadControllerMesh set this flag to ignore the mesh loading
+    * @param _controllerCache a cache holding controller models already loaded in this session
     */
   def this(
     scene: Scene,
@@ -43,6 +45,43 @@ abstract class WebXRAbstractMotionController protected ()
     * handedness (left/right/none) of this controller
     */
   handedness: MotionControllerHandedness,
-    _doNotLoadControllerMesh: Boolean
+    /**
+    * @hidden
+    */
+  _doNotLoadControllerMesh: Boolean
+  ) = this()
+  def this(
+    scene: Scene,
+    layout: IMotionControllerLayout,
+    /**
+    * The gamepad object correlating to this controller
+    */
+  gamepadObject: IMinimalMotionControllerObject,
+    /**
+    * handedness (left/right/none) of this controller
+    */
+  handedness: MotionControllerHandedness,
+    /**
+    * @hidden
+    */
+  _doNotLoadControllerMesh: Boolean,
+    _controllerCache: js.Array[Filename]
+  ) = this()
+  def this(
+    scene: Scene,
+    layout: IMotionControllerLayout,
+    /**
+    * The gamepad object correlating to this controller
+    */
+  gamepadObject: IMinimalMotionControllerObject,
+    /**
+    * handedness (left/right/none) of this controller
+    */
+  handedness: MotionControllerHandedness,
+    /**
+    * @hidden
+    */
+  _doNotLoadControllerMesh: Unit,
+    _controllerCache: js.Array[Filename]
   ) = this()
 }

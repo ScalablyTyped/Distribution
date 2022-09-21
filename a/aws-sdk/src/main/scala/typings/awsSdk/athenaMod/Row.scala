@@ -24,6 +24,6 @@ object Row {
     
     inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
-    inline def setDataVarargs(value: Datum*): Self = StObject.set(x, "Data", js.Array(value :_*))
+    inline def setDataVarargs(value: Datum*): Self = StObject.set(x, "Data", js.Array(value*))
   }
 }

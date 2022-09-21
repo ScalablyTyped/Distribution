@@ -15,7 +15,7 @@ trait OrderField extends StObject {
   /* private */ @JSName("Outlook.OrderField_typekey")
   var OutlookDotOrderField_typekey: OrderField
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -28,7 +28,7 @@ object OrderField {
     Class: OlObjectClass,
     IsDescending: Boolean,
     OutlookDotOrderField_typekey: OrderField,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     ViewXMLSchemaName: String
   ): OrderField = {
@@ -47,7 +47,7 @@ object OrderField {
     
     inline def setOutlookDotOrderField_typekey(value: OrderField): Self = StObject.set(x, "Outlook.OrderField_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

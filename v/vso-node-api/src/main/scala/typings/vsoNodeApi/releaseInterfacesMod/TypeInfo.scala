@@ -49,8 +49,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.AgentArtifactDefinition")
   @js.native
-  def AgentArtifactDefinition: js.Any = js.native
-  inline def AgentArtifactDefinition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgentArtifactDefinition")(x.asInstanceOf[js.Any])
+  def AgentArtifactDefinition: Any = js.native
+  inline def AgentArtifactDefinition_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgentArtifactDefinition")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.AgentArtifactType")
   @js.native
@@ -59,13 +59,13 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.AgentBasedDeployPhase")
   @js.native
-  def AgentBasedDeployPhase: js.Any = js.native
-  inline def AgentBasedDeployPhase_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgentBasedDeployPhase")(x.asInstanceOf[js.Any])
+  def AgentBasedDeployPhase: Any = js.native
+  inline def AgentBasedDeployPhase_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgentBasedDeployPhase")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.AgentDeploymentInput")
   @js.native
-  def AgentDeploymentInput: js.Any = js.native
-  inline def AgentDeploymentInput_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgentDeploymentInput")(x.asInstanceOf[js.Any])
+  def AgentDeploymentInput: Any = js.native
+  inline def AgentDeploymentInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgentDeploymentInput")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ApprovalExecutionOrder")
   @js.native
@@ -79,8 +79,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ApprovalOptions")
   @js.native
-  def ApprovalOptions: js.Any = js.native
-  inline def ApprovalOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApprovalOptions")(x.asInstanceOf[js.Any])
+  def ApprovalOptions: Any = js.native
+  inline def ApprovalOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApprovalOptions")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ApprovalStatus")
   @js.native
@@ -94,18 +94,18 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ArtifactContributionDefinition")
   @js.native
-  def ArtifactContributionDefinition: js.Any = js.native
-  inline def ArtifactContributionDefinition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArtifactContributionDefinition")(x.asInstanceOf[js.Any])
+  def ArtifactContributionDefinition: Any = js.native
+  inline def ArtifactContributionDefinition_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArtifactContributionDefinition")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ArtifactSourceTrigger")
   @js.native
-  def ArtifactSourceTrigger: js.Any = js.native
-  inline def ArtifactSourceTrigger_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArtifactSourceTrigger")(x.asInstanceOf[js.Any])
+  def ArtifactSourceTrigger: Any = js.native
+  inline def ArtifactSourceTrigger_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArtifactSourceTrigger")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ArtifactTypeDefinition")
   @js.native
-  def ArtifactTypeDefinition: js.Any = js.native
-  inline def ArtifactTypeDefinition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArtifactTypeDefinition")(x.asInstanceOf[js.Any])
+  def ArtifactTypeDefinition: Any = js.native
+  inline def ArtifactTypeDefinition_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArtifactTypeDefinition")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.AuditAction")
   @js.native
@@ -119,48 +119,48 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.AutoTriggerIssue")
   @js.native
-  def AutoTriggerIssue: js.Any = js.native
-  inline def AutoTriggerIssue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutoTriggerIssue")(x.asInstanceOf[js.Any])
+  def AutoTriggerIssue: Any = js.native
+  inline def AutoTriggerIssue_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutoTriggerIssue")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.AzureKeyVaultVariableGroupProviderData")
   @js.native
-  def AzureKeyVaultVariableGroupProviderData: js.Any = js.native
-  inline def AzureKeyVaultVariableGroupProviderData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AzureKeyVaultVariableGroupProviderData")(x.asInstanceOf[js.Any])
+  def AzureKeyVaultVariableGroupProviderData: Any = js.native
+  inline def AzureKeyVaultVariableGroupProviderData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AzureKeyVaultVariableGroupProviderData")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.AzureKeyVaultVariableValue")
   @js.native
-  def AzureKeyVaultVariableValue: js.Any = js.native
-  inline def AzureKeyVaultVariableValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AzureKeyVaultVariableValue")(x.asInstanceOf[js.Any])
+  def AzureKeyVaultVariableValue: Any = js.native
+  inline def AzureKeyVaultVariableValue_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AzureKeyVaultVariableValue")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.Change")
   @js.native
-  def Change: js.Any = js.native
-  inline def Change_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Change")(x.asInstanceOf[js.Any])
+  def Change: Any = js.native
+  inline def Change_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Change")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.Condition")
   @js.native
-  def Condition: js.Any = js.native
+  def Condition: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ConditionType")
   @js.native
   def ConditionType: EnumValuesArtifact = js.native
   inline def ConditionType_=(x: EnumValuesArtifact): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConditionType")(x.asInstanceOf[js.Any])
   
-  inline def Condition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Condition")(x.asInstanceOf[js.Any])
+  inline def Condition_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Condition")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ContainerImageTrigger")
   @js.native
-  def ContainerImageTrigger: js.Any = js.native
-  inline def ContainerImageTrigger_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContainerImageTrigger")(x.asInstanceOf[js.Any])
+  def ContainerImageTrigger: Any = js.native
+  inline def ContainerImageTrigger_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContainerImageTrigger")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ContinuousDeploymentTriggerIssue")
   @js.native
-  def ContinuousDeploymentTriggerIssue: js.Any = js.native
-  inline def ContinuousDeploymentTriggerIssue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContinuousDeploymentTriggerIssue")(x.asInstanceOf[js.Any])
+  def ContinuousDeploymentTriggerIssue: Any = js.native
+  inline def ContinuousDeploymentTriggerIssue_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContinuousDeploymentTriggerIssue")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeployPhase")
   @js.native
-  def DeployPhase: js.Any = js.native
+  def DeployPhase: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeployPhaseStatus")
   @js.native
@@ -172,31 +172,31 @@ object TypeInfo {
   def DeployPhaseTypes: EnumValuesAgentBasedDeployment = js.native
   inline def DeployPhaseTypes_=(x: EnumValuesAgentBasedDeployment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeployPhaseTypes")(x.asInstanceOf[js.Any])
   
-  inline def DeployPhase_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeployPhase")(x.asInstanceOf[js.Any])
+  inline def DeployPhase_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeployPhase")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.Deployment")
   @js.native
-  def Deployment: js.Any = js.native
+  def Deployment: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentApprovalCompletedEvent")
   @js.native
-  def DeploymentApprovalCompletedEvent: js.Any = js.native
-  inline def DeploymentApprovalCompletedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentApprovalCompletedEvent")(x.asInstanceOf[js.Any])
+  def DeploymentApprovalCompletedEvent: Any = js.native
+  inline def DeploymentApprovalCompletedEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentApprovalCompletedEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentApprovalPendingEvent")
   @js.native
-  def DeploymentApprovalPendingEvent: js.Any = js.native
-  inline def DeploymentApprovalPendingEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentApprovalPendingEvent")(x.asInstanceOf[js.Any])
+  def DeploymentApprovalPendingEvent: Any = js.native
+  inline def DeploymentApprovalPendingEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentApprovalPendingEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentAttempt")
   @js.native
-  def DeploymentAttempt: js.Any = js.native
-  inline def DeploymentAttempt_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentAttempt")(x.asInstanceOf[js.Any])
+  def DeploymentAttempt: Any = js.native
+  inline def DeploymentAttempt_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentAttempt")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentAuthorizationInfo")
   @js.native
-  def DeploymentAuthorizationInfo: js.Any = js.native
-  inline def DeploymentAuthorizationInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentAuthorizationInfo")(x.asInstanceOf[js.Any])
+  def DeploymentAuthorizationInfo: Any = js.native
+  inline def DeploymentAuthorizationInfo_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentAuthorizationInfo")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentAuthorizationOwner")
   @js.native
@@ -205,8 +205,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentCompletedEvent")
   @js.native
-  def DeploymentCompletedEvent: js.Any = js.native
-  inline def DeploymentCompletedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentCompletedEvent")(x.asInstanceOf[js.Any])
+  def DeploymentCompletedEvent: Any = js.native
+  inline def DeploymentCompletedEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentCompletedEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentExpands")
   @js.native
@@ -215,13 +215,13 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentJob")
   @js.native
-  def DeploymentJob: js.Any = js.native
-  inline def DeploymentJob_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentJob")(x.asInstanceOf[js.Any])
+  def DeploymentJob: Any = js.native
+  inline def DeploymentJob_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentJob")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentManualInterventionPendingEvent")
   @js.native
-  def DeploymentManualInterventionPendingEvent: js.Any = js.native
-  inline def DeploymentManualInterventionPendingEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentManualInterventionPendingEvent")(x.asInstanceOf[js.Any])
+  def DeploymentManualInterventionPendingEvent: Any = js.native
+  inline def DeploymentManualInterventionPendingEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentManualInterventionPendingEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentOperationStatus")
   @js.native
@@ -230,8 +230,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentQueryParameters")
   @js.native
-  def DeploymentQueryParameters: js.Any = js.native
-  inline def DeploymentQueryParameters_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentQueryParameters")(x.asInstanceOf[js.Any])
+  def DeploymentQueryParameters: Any = js.native
+  inline def DeploymentQueryParameters_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentQueryParameters")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentReason")
   @js.native
@@ -240,15 +240,15 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentStartedEvent")
   @js.native
-  def DeploymentStartedEvent: js.Any = js.native
-  inline def DeploymentStartedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentStartedEvent")(x.asInstanceOf[js.Any])
+  def DeploymentStartedEvent: Any = js.native
+  inline def DeploymentStartedEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentStartedEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentStatus")
   @js.native
   def DeploymentStatus: EnumValuesNotDeployed = js.native
   inline def DeploymentStatus_=(x: EnumValuesNotDeployed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeploymentStatus")(x.asInstanceOf[js.Any])
   
-  inline def Deployment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Deployment")(x.asInstanceOf[js.Any])
+  inline def Deployment_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Deployment")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.DeploymentsQueryType")
   @js.native
@@ -262,19 +262,19 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ExecutionInput")
   @js.native
-  def ExecutionInput: js.Any = js.native
-  inline def ExecutionInput_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionInput")(x.asInstanceOf[js.Any])
+  def ExecutionInput: Any = js.native
+  inline def ExecutionInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionInput")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.Folder")
   @js.native
-  def Folder: js.Any = js.native
+  def Folder: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.FolderPathQueryOrder")
   @js.native
   def FolderPathQueryOrder: EnumValuesDescending = js.native
   inline def FolderPathQueryOrder_=(x: EnumValuesDescending): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FolderPathQueryOrder")(x.asInstanceOf[js.Any])
   
-  inline def Folder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Folder")(x.asInstanceOf[js.Any])
+  inline def Folder_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Folder")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.GateStatus")
   @js.native
@@ -288,13 +288,13 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.MachineGroupBasedDeployPhase")
   @js.native
-  def MachineGroupBasedDeployPhase: js.Any = js.native
-  inline def MachineGroupBasedDeployPhase_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MachineGroupBasedDeployPhase")(x.asInstanceOf[js.Any])
+  def MachineGroupBasedDeployPhase: Any = js.native
+  inline def MachineGroupBasedDeployPhase_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MachineGroupBasedDeployPhase")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.MailMessage")
   @js.native
-  def MailMessage: js.Any = js.native
-  inline def MailMessage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MailMessage")(x.asInstanceOf[js.Any])
+  def MailMessage: Any = js.native
+  inline def MailMessage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MailMessage")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.MailSectionType")
   @js.native
@@ -303,7 +303,7 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ManualIntervention")
   @js.native
-  def ManualIntervention: js.Any = js.native
+  def ManualIntervention: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ManualInterventionStatus")
   @js.native
@@ -312,30 +312,30 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ManualInterventionUpdateMetadata")
   @js.native
-  def ManualInterventionUpdateMetadata: js.Any = js.native
-  inline def ManualInterventionUpdateMetadata_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ManualInterventionUpdateMetadata")(x.asInstanceOf[js.Any])
+  def ManualInterventionUpdateMetadata: Any = js.native
+  inline def ManualInterventionUpdateMetadata_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ManualInterventionUpdateMetadata")(x.asInstanceOf[js.Any])
   
-  inline def ManualIntervention_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ManualIntervention")(x.asInstanceOf[js.Any])
+  inline def ManualIntervention_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ManualIntervention")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.MultiConfigInput")
   @js.native
-  def MultiConfigInput: js.Any = js.native
-  inline def MultiConfigInput_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiConfigInput")(x.asInstanceOf[js.Any])
+  def MultiConfigInput: Any = js.native
+  inline def MultiConfigInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiConfigInput")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.MultiMachineInput")
   @js.native
-  def MultiMachineInput: js.Any = js.native
-  inline def MultiMachineInput_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiMachineInput")(x.asInstanceOf[js.Any])
+  def MultiMachineInput: Any = js.native
+  inline def MultiMachineInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiMachineInput")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.PackageTrigger")
   @js.native
-  def PackageTrigger: js.Any = js.native
-  inline def PackageTrigger_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PackageTrigger")(x.asInstanceOf[js.Any])
+  def PackageTrigger: Any = js.native
+  inline def PackageTrigger_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PackageTrigger")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ParallelExecutionInputBase")
   @js.native
-  def ParallelExecutionInputBase: js.Any = js.native
-  inline def ParallelExecutionInputBase_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParallelExecutionInputBase")(x.asInstanceOf[js.Any])
+  def ParallelExecutionInputBase: Any = js.native
+  inline def ParallelExecutionInputBase_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParallelExecutionInputBase")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ParallelExecutionTypes")
   @js.native
@@ -344,80 +344,80 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.PipelineProcess")
   @js.native
-  def PipelineProcess: js.Any = js.native
+  def PipelineProcess: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.PipelineProcessTypes")
   @js.native
   def PipelineProcessTypes: EnumValuesDesigner = js.native
   inline def PipelineProcessTypes_=(x: EnumValuesDesigner): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PipelineProcessTypes")(x.asInstanceOf[js.Any])
   
-  inline def PipelineProcess_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PipelineProcess")(x.asInstanceOf[js.Any])
+  inline def PipelineProcess_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PipelineProcess")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.PropertySelector")
   @js.native
-  def PropertySelector: js.Any = js.native
+  def PropertySelector: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.PropertySelectorType")
   @js.native
   def PropertySelectorType: EnumValuesExclusion = js.native
   inline def PropertySelectorType_=(x: EnumValuesExclusion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PropertySelectorType")(x.asInstanceOf[js.Any])
   
-  inline def PropertySelector_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PropertySelector")(x.asInstanceOf[js.Any])
+  inline def PropertySelector_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PropertySelector")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.Release")
   @js.native
-  def Release: js.Any = js.native
+  def Release: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseAbandonedEvent")
   @js.native
-  def ReleaseAbandonedEvent: js.Any = js.native
-  inline def ReleaseAbandonedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseAbandonedEvent")(x.asInstanceOf[js.Any])
+  def ReleaseAbandonedEvent: Any = js.native
+  inline def ReleaseAbandonedEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseAbandonedEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseApproval")
   @js.native
-  def ReleaseApproval: js.Any = js.native
+  def ReleaseApproval: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseApprovalHistory")
   @js.native
-  def ReleaseApprovalHistory: js.Any = js.native
-  inline def ReleaseApprovalHistory_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseApprovalHistory")(x.asInstanceOf[js.Any])
+  def ReleaseApprovalHistory: Any = js.native
+  inline def ReleaseApprovalHistory_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseApprovalHistory")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseApprovalPendingEvent")
   @js.native
-  def ReleaseApprovalPendingEvent: js.Any = js.native
-  inline def ReleaseApprovalPendingEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseApprovalPendingEvent")(x.asInstanceOf[js.Any])
+  def ReleaseApprovalPendingEvent: Any = js.native
+  inline def ReleaseApprovalPendingEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseApprovalPendingEvent")(x.asInstanceOf[js.Any])
   
-  inline def ReleaseApproval_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseApproval")(x.asInstanceOf[js.Any])
+  inline def ReleaseApproval_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseApproval")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseCondition")
   @js.native
-  def ReleaseCondition: js.Any = js.native
-  inline def ReleaseCondition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseCondition")(x.asInstanceOf[js.Any])
+  def ReleaseCondition: Any = js.native
+  inline def ReleaseCondition_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseCondition")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseCreatedEvent")
   @js.native
-  def ReleaseCreatedEvent: js.Any = js.native
-  inline def ReleaseCreatedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseCreatedEvent")(x.asInstanceOf[js.Any])
+  def ReleaseCreatedEvent: Any = js.native
+  inline def ReleaseCreatedEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseCreatedEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseDefinition")
   @js.native
-  def ReleaseDefinition: js.Any = js.native
+  def ReleaseDefinition: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseDefinitionApprovals")
   @js.native
-  def ReleaseDefinitionApprovals: js.Any = js.native
-  inline def ReleaseDefinitionApprovals_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionApprovals")(x.asInstanceOf[js.Any])
+  def ReleaseDefinitionApprovals: Any = js.native
+  inline def ReleaseDefinitionApprovals_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionApprovals")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseDefinitionEnvironment")
   @js.native
-  def ReleaseDefinitionEnvironment: js.Any = js.native
+  def ReleaseDefinitionEnvironment: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseDefinitionEnvironmentTemplate")
   @js.native
-  def ReleaseDefinitionEnvironmentTemplate: js.Any = js.native
-  inline def ReleaseDefinitionEnvironmentTemplate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionEnvironmentTemplate")(x.asInstanceOf[js.Any])
+  def ReleaseDefinitionEnvironmentTemplate: Any = js.native
+  inline def ReleaseDefinitionEnvironmentTemplate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionEnvironmentTemplate")(x.asInstanceOf[js.Any])
   
-  inline def ReleaseDefinitionEnvironment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionEnvironment")(x.asInstanceOf[js.Any])
+  inline def ReleaseDefinitionEnvironment_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionEnvironment")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseDefinitionExpands")
   @js.native
@@ -431,8 +431,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseDefinitionRevision")
   @js.native
-  def ReleaseDefinitionRevision: js.Any = js.native
-  inline def ReleaseDefinitionRevision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionRevision")(x.asInstanceOf[js.Any])
+  def ReleaseDefinitionRevision: Any = js.native
+  inline def ReleaseDefinitionRevision_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionRevision")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseDefinitionSource")
   @js.native
@@ -441,31 +441,31 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseDefinitionSummary")
   @js.native
-  def ReleaseDefinitionSummary: js.Any = js.native
-  inline def ReleaseDefinitionSummary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionSummary")(x.asInstanceOf[js.Any])
+  def ReleaseDefinitionSummary: Any = js.native
+  inline def ReleaseDefinitionSummary_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinitionSummary")(x.asInstanceOf[js.Any])
   
-  inline def ReleaseDefinition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinition")(x.asInstanceOf[js.Any])
+  inline def ReleaseDefinition_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDefinition")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseDeployPhase")
   @js.native
-  def ReleaseDeployPhase: js.Any = js.native
-  inline def ReleaseDeployPhase_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDeployPhase")(x.asInstanceOf[js.Any])
+  def ReleaseDeployPhase: Any = js.native
+  inline def ReleaseDeployPhase_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseDeployPhase")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseEnvironment")
   @js.native
-  def ReleaseEnvironment: js.Any = js.native
+  def ReleaseEnvironment: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseEnvironmentCompletedEvent")
   @js.native
-  def ReleaseEnvironmentCompletedEvent: js.Any = js.native
-  inline def ReleaseEnvironmentCompletedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseEnvironmentCompletedEvent")(x.asInstanceOf[js.Any])
+  def ReleaseEnvironmentCompletedEvent: Any = js.native
+  inline def ReleaseEnvironmentCompletedEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseEnvironmentCompletedEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseEnvironmentUpdateMetadata")
   @js.native
-  def ReleaseEnvironmentUpdateMetadata: js.Any = js.native
-  inline def ReleaseEnvironmentUpdateMetadata_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseEnvironmentUpdateMetadata")(x.asInstanceOf[js.Any])
+  def ReleaseEnvironmentUpdateMetadata: Any = js.native
+  inline def ReleaseEnvironmentUpdateMetadata_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseEnvironmentUpdateMetadata")(x.asInstanceOf[js.Any])
   
-  inline def ReleaseEnvironment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseEnvironment")(x.asInstanceOf[js.Any])
+  inline def ReleaseEnvironment_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseEnvironment")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseExpands")
   @js.native
@@ -474,8 +474,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseGates")
   @js.native
-  def ReleaseGates: js.Any = js.native
-  inline def ReleaseGates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseGates")(x.asInstanceOf[js.Any])
+  def ReleaseGates: Any = js.native
+  inline def ReleaseGates_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseGates")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseQueryOrder")
   @js.native
@@ -489,23 +489,23 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseReference")
   @js.native
-  def ReleaseReference: js.Any = js.native
-  inline def ReleaseReference_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseReference")(x.asInstanceOf[js.Any])
+  def ReleaseReference: Any = js.native
+  inline def ReleaseReference_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseReference")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseRevision")
   @js.native
-  def ReleaseRevision: js.Any = js.native
-  inline def ReleaseRevision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseRevision")(x.asInstanceOf[js.Any])
+  def ReleaseRevision: Any = js.native
+  inline def ReleaseRevision_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseRevision")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseSchedule")
   @js.native
-  def ReleaseSchedule: js.Any = js.native
-  inline def ReleaseSchedule_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseSchedule")(x.asInstanceOf[js.Any])
+  def ReleaseSchedule: Any = js.native
+  inline def ReleaseSchedule_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseSchedule")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseStartMetadata")
   @js.native
-  def ReleaseStartMetadata: js.Any = js.native
-  inline def ReleaseStartMetadata_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseStartMetadata")(x.asInstanceOf[js.Any])
+  def ReleaseStartMetadata: Any = js.native
+  inline def ReleaseStartMetadata_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseStartMetadata")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseStatus")
   @js.native
@@ -514,24 +514,24 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseTask")
   @js.native
-  def ReleaseTask: js.Any = js.native
+  def ReleaseTask: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseTaskAttachment")
   @js.native
-  def ReleaseTaskAttachment: js.Any = js.native
-  inline def ReleaseTaskAttachment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseTaskAttachment")(x.asInstanceOf[js.Any])
+  def ReleaseTaskAttachment: Any = js.native
+  inline def ReleaseTaskAttachment_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseTaskAttachment")(x.asInstanceOf[js.Any])
   
-  inline def ReleaseTask_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseTask")(x.asInstanceOf[js.Any])
+  inline def ReleaseTask_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseTask")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseTasksUpdatedEvent")
   @js.native
-  def ReleaseTasksUpdatedEvent: js.Any = js.native
-  inline def ReleaseTasksUpdatedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseTasksUpdatedEvent")(x.asInstanceOf[js.Any])
+  def ReleaseTasksUpdatedEvent: Any = js.native
+  inline def ReleaseTasksUpdatedEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseTasksUpdatedEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseTriggerBase")
   @js.native
-  def ReleaseTriggerBase: js.Any = js.native
-  inline def ReleaseTriggerBase_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseTriggerBase")(x.asInstanceOf[js.Any])
+  def ReleaseTriggerBase: Any = js.native
+  inline def ReleaseTriggerBase_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseTriggerBase")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseTriggerType")
   @js.native
@@ -540,20 +540,20 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseUpdateMetadata")
   @js.native
-  def ReleaseUpdateMetadata: js.Any = js.native
-  inline def ReleaseUpdateMetadata_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseUpdateMetadata")(x.asInstanceOf[js.Any])
+  def ReleaseUpdateMetadata: Any = js.native
+  inline def ReleaseUpdateMetadata_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseUpdateMetadata")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ReleaseUpdatedEvent")
   @js.native
-  def ReleaseUpdatedEvent: js.Any = js.native
-  inline def ReleaseUpdatedEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseUpdatedEvent")(x.asInstanceOf[js.Any])
+  def ReleaseUpdatedEvent: Any = js.native
+  inline def ReleaseUpdatedEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReleaseUpdatedEvent")(x.asInstanceOf[js.Any])
   
-  inline def Release_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Release")(x.asInstanceOf[js.Any])
+  inline def Release_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Release")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.RunOnServerDeployPhase")
   @js.native
-  def RunOnServerDeployPhase: js.Any = js.native
-  inline def RunOnServerDeployPhase_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RunOnServerDeployPhase")(x.asInstanceOf[js.Any])
+  def RunOnServerDeployPhase: Any = js.native
+  inline def RunOnServerDeployPhase_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RunOnServerDeployPhase")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ScheduleDays")
   @js.native
@@ -562,8 +562,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ScheduledReleaseTrigger")
   @js.native
-  def ScheduledReleaseTrigger: js.Any = js.native
-  inline def ScheduledReleaseTrigger_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScheduledReleaseTrigger")(x.asInstanceOf[js.Any])
+  def ScheduledReleaseTrigger: Any = js.native
+  inline def ScheduledReleaseTrigger_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScheduledReleaseTrigger")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.SenderType")
   @js.native
@@ -572,18 +572,18 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.ServerDeploymentInput")
   @js.native
-  def ServerDeploymentInput: js.Any = js.native
-  inline def ServerDeploymentInput_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServerDeploymentInput")(x.asInstanceOf[js.Any])
+  def ServerDeploymentInput: Any = js.native
+  inline def ServerDeploymentInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServerDeploymentInput")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.SourceRepoTrigger")
   @js.native
-  def SourceRepoTrigger: js.Any = js.native
-  inline def SourceRepoTrigger_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SourceRepoTrigger")(x.asInstanceOf[js.Any])
+  def SourceRepoTrigger: Any = js.native
+  inline def SourceRepoTrigger_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SourceRepoTrigger")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.SummaryMailSection")
   @js.native
-  def SummaryMailSection: js.Any = js.native
-  inline def SummaryMailSection_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SummaryMailSection")(x.asInstanceOf[js.Any])
+  def SummaryMailSection: Any = js.native
+  inline def SummaryMailSection_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SummaryMailSection")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.TaskStatus")
   @js.native
@@ -592,12 +592,12 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.VariableGroup")
   @js.native
-  def VariableGroup: js.Any = js.native
+  def VariableGroup: Any = js.native
   
   @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "TypeInfo.VariableGroupActionFilter")
   @js.native
   def VariableGroupActionFilter: EnumValuesManage = js.native
   inline def VariableGroupActionFilter_=(x: EnumValuesManage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VariableGroupActionFilter")(x.asInstanceOf[js.Any])
   
-  inline def VariableGroup_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VariableGroup")(x.asInstanceOf[js.Any])
+  inline def VariableGroup_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VariableGroup")(x.asInstanceOf[js.Any])
 }

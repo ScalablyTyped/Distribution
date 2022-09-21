@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "StaticHTTPTunnel")
 @js.native
-class StaticHTTPTunnel protected ()
+open class StaticHTTPTunnel protected ()
   extends typings.guacamoleClient.staticHTTPTunnelMod.StaticHTTPTunnel {
   /**
     * @param url The URL of a Guacamole protocol dump.

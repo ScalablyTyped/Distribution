@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientNavBarGroupCancelEventArgs")
 @js.native
-class ASPxClientNavBarGroupCancelEventArgs protected ()
+open class ASPxClientNavBarGroupCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientNavBarGroupCancelEventArgs {
   /**

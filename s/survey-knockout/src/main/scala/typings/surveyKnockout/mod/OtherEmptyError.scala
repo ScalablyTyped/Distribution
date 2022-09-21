@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "OtherEmptyError")
 @js.native
-class OtherEmptyError protected () extends SurveyError {
+open class OtherEmptyError protected () extends SurveyError {
   def this(text: String) = this()
   def this(text: String, errorOwner: ISurveyErrorOwner) = this()
 }

@@ -1,11 +1,11 @@
 package typings.rdfjsSerializerJsonld
 
 import typings.node.eventsMod.EventEmitter
-import typings.rdfJs.mod.BaseQuad
-import typings.rdfJs.mod.Sink
-import typings.rdfJs.mod.Stream
 import typings.rdfjsSerializerJsonld.rdfjsSerializerJsonldStrings.`object`
 import typings.rdfjsSerializerJsonld.rdfjsSerializerJsonldStrings.string
+import typings.rdfjsTypes.dataModelMod.BaseQuad
+import typings.rdfjsTypes.streamMod.Sink
+import typings.rdfjsTypes.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("@rdfjs/serializer-jsonld", JSImport.Namespace)
   @js.native
-  class ^[Q /* <: BaseQuad */] ()
+  open class ^[Q /* <: BaseQuad */] ()
     extends StObject
        with Serializer[Q] {
     def this(options: SerializerOptions) = this()

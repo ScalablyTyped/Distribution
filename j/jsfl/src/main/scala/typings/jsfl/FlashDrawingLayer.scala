@@ -39,7 +39,7 @@ trait FlashDrawingLayer extends StObject {
   def newPath(): Unit = js.native
   
   /// Sets the color of subsequently drawn data.
-  def setColor(color: js.Any): Unit = js.native
+  def setColor(color: Any): Unit = js.native
   
   /// This method is not available.
   def setFill(): Unit = js.native

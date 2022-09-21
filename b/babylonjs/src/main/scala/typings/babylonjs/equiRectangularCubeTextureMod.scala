@@ -11,7 +11,7 @@ object equiRectangularCubeTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/equiRectangularCubeTexture", "EquiRectangularCubeTexture")
   @js.native
-  class EquiRectangularCubeTexture protected () extends BaseTexture {
+  open class EquiRectangularCubeTexture protected () extends BaseTexture {
     /**
       * Instantiates an EquiRectangularCubeTexture from the following parameters.
       * @param url The location of the image
@@ -67,7 +67,7 @@ object equiRectangularCubeTextureMod {
       gammaSpace: Boolean,
       onLoad: Unit,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -78,7 +78,7 @@ object equiRectangularCubeTextureMod {
       gammaSpace: Boolean,
       onLoad: Nullable[js.Function0[Unit]],
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -89,7 +89,7 @@ object equiRectangularCubeTextureMod {
       gammaSpace: Unit,
       onLoad: Unit,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -100,7 +100,7 @@ object equiRectangularCubeTextureMod {
       gammaSpace: Unit,
       onLoad: Nullable[js.Function0[Unit]],
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -111,7 +111,7 @@ object equiRectangularCubeTextureMod {
       gammaSpace: Boolean,
       onLoad: Unit,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -122,7 +122,7 @@ object equiRectangularCubeTextureMod {
       gammaSpace: Boolean,
       onLoad: Nullable[js.Function0[Unit]],
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -133,7 +133,7 @@ object equiRectangularCubeTextureMod {
       gammaSpace: Unit,
       onLoad: Unit,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -144,44 +144,46 @@ object equiRectangularCubeTextureMod {
       gammaSpace: Unit,
       onLoad: Nullable[js.Function0[Unit]],
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     
     /** The buffer of the image. */
-    /* private */ var _buffer: js.Any = js.native
-    
-    /** The height of the input image. */
-    /* private */ var _height: js.Any = js.native
-    
-    /* private */ var _noMipmap: js.Any = js.native
-    
-    /* private */ var _onError: js.Any = js.native
-    
-    /* private */ var _onLoad: js.Any = js.native
-    
-    /** The size of the cubemap. */
-    /* private */ var _size: js.Any = js.native
-    
-    /** The width of the input image. */
-    /* private */ var _width: js.Any = js.native
+    /* private */ var _buffer: Any = js.native
     
     /**
       * Convert the ArrayBuffer into a Float32Array and drop the transparency channel.
       * @param buffer The ArrayBuffer that should be converted.
       * @returns The buffer as Float32Array.
       */
-    /* private */ var getFloat32ArrayFromArrayBuffer: js.Any = js.native
+    /* private */ var _getFloat32ArrayFromArrayBuffer: Any = js.native
+    
+    /** The height of the input image. */
+    /* private */ var _height: Any = js.native
     
     /**
       * Load the image data, by putting the image on a canvas and extracting its buffer.
+      * @param loadTextureCallback
+      * @param onError
       */
-    /* private */ var loadImage: js.Any = js.native
+    /* private */ var _loadImage: Any = js.native
     
     /**
       * Convert the image buffer into a cubemap and create a CubeTexture.
       */
-    /* private */ var loadTexture: js.Any = js.native
+    /* private */ var _loadTexture: Any = js.native
+    
+    /* private */ var _noMipmap: Any = js.native
+    
+    /* private */ var _onError: Any = js.native
+    
+    /* private */ var _onLoad: Any = js.native
+    
+    /** The size of the cubemap. */
+    /* private */ var _size: Any = js.native
+    
+    /** The width of the input image. */
+    /* private */ var _width: Any = js.native
     
     /** The URL to the image. */
     var url: String = js.native
@@ -196,7 +198,7 @@ object equiRectangularCubeTextureMod {
     /** The six faces of the cube. */
     @JSImport("babylonjs/Materials/Textures/equiRectangularCubeTexture", "EquiRectangularCubeTexture._FacesMapping")
     @js.native
-    def _FacesMapping: js.Any = js.native
-    inline def _FacesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
+    def _FacesMapping: Any = js.native
+    inline def _FacesMapping_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
   }
 }

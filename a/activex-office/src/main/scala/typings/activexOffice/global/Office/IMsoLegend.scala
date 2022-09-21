@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoLegend")
 @js.native
-/* private */ class IMsoLegend ()
+/* private */ open class IMsoLegend ()
   extends StObject
      with typings.activexOffice.Office.IMsoLegend

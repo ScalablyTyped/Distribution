@@ -7,7 +7,6 @@ import typings.angularWebsocket.angularWebsocketStrings.blob
 import typings.std.CloseEvent
 import typings.std.Event
 import typings.std.MessageEvent
-import typings.std.RegExp
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -89,9 +88,9 @@ object mod {
           * @param event event object
           * @returns this instance, for method chaining
           */
-        def onMessage(callback: js.Function1[/* event */ MessageEvent[js.Any], Unit]): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocket = js.native
+        def onMessage(callback: js.Function1[/* event */ MessageEvent[Any], Unit]): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocket = js.native
         def onMessage(
-          callback: js.Function1[/* event */ MessageEvent[js.Any], Unit],
+          callback: js.Function1[/* event */ MessageEvent[Any], Unit],
           options: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions
         ): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocket = js.native
         
@@ -127,8 +126,8 @@ object mod {
           *
           * @param data data to send, if this is an object, it will be stringified before sending
           */
-        def send(data: String): IPromise[js.Any] = js.native
-        def send(data: js.Object): IPromise[js.Any] = js.native
+        def send(data: String): IPromise[Any] = js.native
+        def send(data: js.Object): IPromise[Any] = js.native
         
         /**
           * Queue of send calls to be made on socket when socket is able to receive data.
@@ -204,13 +203,13 @@ object mod {
         
         var autoApply: Boolean
         
-        def fn(evt: MessageEvent[js.Any]): Unit
+        def fn(evt: MessageEvent[Any]): Unit
         
-        var pattern: js.UndefOr[String | RegExp] = js.undefined
+        var pattern: js.UndefOr[String | js.RegExp] = js.undefined
       }
       object IWebSocketMessageHandler {
         
-        inline def apply(autoApply: Boolean, fn: MessageEvent[js.Any] => Unit): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler = {
+        inline def apply(autoApply: Boolean, fn: MessageEvent[Any] => Unit): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler = {
           val __obj = js.Dynamic.literal(autoApply = autoApply.asInstanceOf[js.Any], fn = js.Any.fromFunction1(fn))
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler]
         }
@@ -219,9 +218,9 @@ object mod {
           
           inline def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
           
-          inline def setFn(value: MessageEvent[js.Any] => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+          inline def setFn(value: MessageEvent[Any] => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
           
-          inline def setPattern(value: String | RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+          inline def setPattern(value: String | js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
           
           inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
         }
@@ -237,7 +236,7 @@ object mod {
           * If specified, only messages that match the filter will cause the message event
           * to be fired.
           */
-        var filter: js.UndefOr[String | RegExp] = js.undefined
+        var filter: js.UndefOr[String | js.RegExp] = js.undefined
       }
       object IWebSocketMessageOptions {
         
@@ -252,7 +251,7 @@ object mod {
           
           inline def setAutoApplyUndefined: Self = StObject.set(x, "autoApply", js.undefined)
           
-          inline def setFilter(value: String | RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+          inline def setFilter(value: String | js.RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
           
           inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         }
@@ -280,11 +279,11 @@ object mod {
         
         var defered: IPromise[Unit]
         
-        var message: js.Any
+        var message: Any
       }
       object IWebSocketQueueItem {
         
-        inline def apply(defered: IPromise[Unit], message: js.Any): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem = {
+        inline def apply(defered: IPromise[Unit], message: Any): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem = {
           val __obj = js.Dynamic.literal(defered = defered.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem]
         }
@@ -293,7 +292,7 @@ object mod {
           
           inline def setDefered(value: IPromise[Unit]): Self = StObject.set(x, "defered", value.asInstanceOf[js.Any])
           
-          inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+          inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         }
       }
     }

@@ -8,5 +8,5 @@ object sendUsersMessageResponseMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_SendUsersMessageResponse", "_SendUsersMessageResponse")
   @js.native
-  val SendUsersMessageResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SendUsersMessageResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -70,7 +70,7 @@ object EmailMessage {
     
     inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
-    inline def setReplyToAddressesVarargs(value: string*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+    inline def setReplyToAddressesVarargs(value: string*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value*))
     
     inline def setSimpleEmail(value: SimpleEmail): Self = StObject.set(x, "SimpleEmail", value.asInstanceOf[js.Any])
     

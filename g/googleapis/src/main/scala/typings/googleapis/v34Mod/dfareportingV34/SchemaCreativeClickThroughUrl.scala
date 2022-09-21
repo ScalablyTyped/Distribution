@@ -1,0 +1,51 @@
+package typings.googleapis.v34Mod.dfareportingV34
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaCreativeClickThroughUrl extends StObject {
+  
+  /**
+    * Read-only convenience field representing the actual URL that will be used for this click-through. The URL is computed as follows: - If landingPageId is specified then that landing page's URL is assigned to this field. - Otherwise, the customClickThroughUrl is assigned to this field.
+    */
+  var computedClickThroughUrl: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Custom click-through URL. Applicable if the landingPageId field is left unset.
+    */
+  var customClickThroughUrl: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * ID of the landing page for the click-through URL.
+    */
+  var landingPageId: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaCreativeClickThroughUrl {
+  
+  inline def apply(): SchemaCreativeClickThroughUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaCreativeClickThroughUrl]
+  }
+  
+  extension [Self <: SchemaCreativeClickThroughUrl](x: Self) {
+    
+    inline def setComputedClickThroughUrl(value: String): Self = StObject.set(x, "computedClickThroughUrl", value.asInstanceOf[js.Any])
+    
+    inline def setComputedClickThroughUrlNull: Self = StObject.set(x, "computedClickThroughUrl", null)
+    
+    inline def setComputedClickThroughUrlUndefined: Self = StObject.set(x, "computedClickThroughUrl", js.undefined)
+    
+    inline def setCustomClickThroughUrl(value: String): Self = StObject.set(x, "customClickThroughUrl", value.asInstanceOf[js.Any])
+    
+    inline def setCustomClickThroughUrlNull: Self = StObject.set(x, "customClickThroughUrl", null)
+    
+    inline def setCustomClickThroughUrlUndefined: Self = StObject.set(x, "customClickThroughUrl", js.undefined)
+    
+    inline def setLandingPageId(value: String): Self = StObject.set(x, "landingPageId", value.asInstanceOf[js.Any])
+    
+    inline def setLandingPageIdNull: Self = StObject.set(x, "landingPageId", null)
+    
+    inline def setLandingPageIdUndefined: Self = StObject.set(x, "landingPageId", js.undefined)
+  }
+}

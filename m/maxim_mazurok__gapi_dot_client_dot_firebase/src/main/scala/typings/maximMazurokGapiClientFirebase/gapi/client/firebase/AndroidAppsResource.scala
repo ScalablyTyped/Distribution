@@ -7,6 +7,7 @@ import typings.maximMazurokGapiClientFirebase.anon.Key
 import typings.maximMazurokGapiClientFirebase.anon.Name
 import typings.maximMazurokGapiClientFirebase.anon.Oauthtoken
 import typings.maximMazurokGapiClientFirebase.anon.PrettyPrint
+import typings.maximMazurokGapiClientFirebase.anon.QuotaUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,6 +40,10 @@ trait AndroidAppsResource extends StObject {
   /** Updates the attributes of the specified AndroidApp. */
   def patch(request: Name): Request[AndroidApp] = js.native
   def patch(request: PrettyPrint, body: AndroidApp): Request[AndroidApp] = js.native
+  
+  def remove(request: Alt, body: RemoveAndroidAppRequest): Request[Operation] = js.native
+  /** Removes the specified AndroidApp from the project. */
+  def remove(request: QuotaUser): Request[Operation] = js.native
   
   var sha: ShaResource = js.native
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("web3-core", "HttpProvider")
 @js.native
-class HttpProvider protected ()
+open class HttpProvider protected ()
   extends HttpProviderBase
      with _provider {
   def this(host: String) = this()

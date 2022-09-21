@@ -1,6 +1,6 @@
 package typings.reactFoundation
 
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
 import typings.reactFoundation.accordionMod.AccordianContentProps
 import typings.reactFoundation.accordionMod.AccordianItemProps
@@ -72,19 +72,19 @@ object mod {
   
   @JSImport("react-foundation", "Accordion")
   @js.native
-  val Accordion: StatelessComponent[AccordianProps] = js.native
+  val Accordion: FunctionComponent[AccordianProps] = js.native
   
   @JSImport("react-foundation", "AccordionContent")
   @js.native
-  val AccordionContent: StatelessComponent[AccordianContentProps] = js.native
+  val AccordionContent: FunctionComponent[AccordianContentProps] = js.native
   
   @JSImport("react-foundation", "AccordionItem")
   @js.native
-  val AccordionItem: StatelessComponent[AccordianItemProps] = js.native
+  val AccordionItem: FunctionComponent[AccordianItemProps] = js.native
   
   @JSImport("react-foundation", "AccordionTitle")
   @js.native
-  val AccordionTitle: StatelessComponent[AccordionTitleProps] = js.native
+  val AccordionTitle: FunctionComponent[AccordionTitleProps] = js.native
   
   object Alignments {
     
@@ -135,19 +135,19 @@ object mod {
   
   @JSImport("react-foundation", "Badge")
   @js.native
-  val Badge: StatelessComponent[BadgeProps] = js.native
+  val Badge: FunctionComponent[BadgeProps] = js.native
   
   @JSImport("react-foundation", "Block")
   @js.native
-  val Block: StatelessComponent[BlockProps] = js.native
+  val Block: FunctionComponent[BlockProps] = js.native
   
   @JSImport("react-foundation", "BreadcrumbItem")
   @js.native
-  val BreadcrumbItem: StatelessComponent[BreadcrumbItemProps] = js.native
+  val BreadcrumbItem: FunctionComponent[BreadcrumbItemProps] = js.native
   
   @JSImport("react-foundation", "Breadcrumbs")
   @js.native
-  val Breadcrumbs: StatelessComponent[BreadcrumbsProps] = js.native
+  val Breadcrumbs: FunctionComponent[BreadcrumbsProps] = js.native
   
   object Breakpoints {
     
@@ -183,23 +183,23 @@ object mod {
   
   @JSImport("react-foundation", "Button")
   @js.native
-  val Button: StatelessComponent[ButtonProps] = js.native
+  val Button: FunctionComponent[ButtonProps] = js.native
   
   @JSImport("react-foundation", "ButtonGroup")
   @js.native
-  val ButtonGroup: StatelessComponent[ButtonGroupProps] = js.native
+  val ButtonGroup: FunctionComponent[ButtonGroupProps] = js.native
   
   @JSImport("react-foundation", "Callout")
   @js.native
-  val Callout: StatelessComponent[CalloutProps] = js.native
+  val Callout: FunctionComponent[CalloutProps] = js.native
   
   @JSImport("react-foundation", "Cell")
   @js.native
-  val Cell: StatelessComponent[CellProps] = js.native
+  val Cell: FunctionComponent[CellProps] = js.native
   
   @JSImport("react-foundation", "CloseButton")
   @js.native
-  val CloseButton: StatelessComponent[CloseButtonProps] = js.native
+  val CloseButton: FunctionComponent[CloseButtonProps] = js.native
   
   object Colors {
     
@@ -240,7 +240,7 @@ object mod {
   
   @JSImport("react-foundation", "Column")
   @js.native
-  val Column: StatelessComponent[ColumnProps] = js.native
+  val Column: FunctionComponent[ColumnProps] = js.native
   
   object ExtendedBreakpoints {
     
@@ -281,7 +281,7 @@ object mod {
   
   @JSImport("react-foundation", "FlexVideo")
   @js.native
-  val FlexVideo: StatelessComponent[FlexVideoProps] = js.native
+  val FlexVideo: FunctionComponent[FlexVideoProps] = js.native
   
   object FloatTypes {
     
@@ -307,11 +307,11 @@ object mod {
   
   @JSImport("react-foundation", "Grid")
   @js.native
-  val Grid: StatelessComponent[GridProps] = js.native
+  val Grid: FunctionComponent[GridProps] = js.native
   
   @JSImport("react-foundation", "GridContainer")
   @js.native
-  val GridContainer: StatelessComponent[GridContainerProps] = js.native
+  val GridContainer: FunctionComponent[GridContainerProps] = js.native
   
   object GutterTypes {
     
@@ -332,11 +332,11 @@ object mod {
   
   @JSImport("react-foundation", "Icon")
   @js.native
-  val Icon: StatelessComponent[IconProps] = js.native
+  val Icon: FunctionComponent[IconProps] = js.native
   
   @JSImport("react-foundation", "Inline")
   @js.native
-  val Inline: StatelessComponent[InlineProps] = js.native
+  val Inline: FunctionComponent[InlineProps] = js.native
   
   object InputTypes {
     
@@ -357,77 +357,77 @@ object mod {
   
   @JSImport("react-foundation", "Label")
   @js.native
-  val Label: StatelessComponent[LabelProps] = js.native
+  val Label: FunctionComponent[LabelProps] = js.native
   
   @JSImport("react-foundation", "Link")
   @js.native
-  val Link: StatelessComponent[LinkProps] = js.native
+  val Link: FunctionComponent[LinkProps] = js.native
   
   @JSImport("react-foundation", "MediaObject")
   @js.native
-  val MediaObject: StatelessComponent[MediaObjectProps] = js.native
+  val MediaObject: FunctionComponent[MediaObjectProps] = js.native
   
   @JSImport("react-foundation", "MediaObjectSection")
   @js.native
-  val MediaObjectSection: StatelessComponent[MediaObjectSectionProps] = js.native
+  val MediaObjectSection: FunctionComponent[MediaObjectSectionProps] = js.native
   
   @JSImport("react-foundation", "Menu")
   @js.native
-  val Menu: StatelessComponent[MenuProps] = js.native
+  val Menu: FunctionComponent[MenuProps] = js.native
   
   @JSImport("react-foundation", "MenuIcon")
   @js.native
-  val MenuIcon: StatelessComponent[MenuIconProps] = js.native
+  val MenuIcon: FunctionComponent[MenuIconProps] = js.native
   
   @JSImport("react-foundation", "MenuItem")
   @js.native
-  val MenuItem: StatelessComponent[MenuItemProps] = js.native
+  val MenuItem: FunctionComponent[MenuItemProps] = js.native
   
   inline def MenuText(props: MenuItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuText")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-foundation", "NativeProgress")
   @js.native
-  val NativeProgress: StatelessComponent[NativeProgressProps] = js.native
+  val NativeProgress: FunctionComponent[NativeProgressProps] = js.native
   
   @JSImport("react-foundation", "Pagination")
   @js.native
-  val Pagination: StatelessComponent[PaginationProps] = js.native
+  val Pagination: FunctionComponent[PaginationProps] = js.native
   
   @JSImport("react-foundation", "PaginationEllipsis")
   @js.native
-  val PaginationEllipsis: StatelessComponent[PaginationItemProps] = js.native
+  val PaginationEllipsis: FunctionComponent[PaginationItemProps] = js.native
   
   @JSImport("react-foundation", "PaginationItem")
   @js.native
-  val PaginationItem: StatelessComponent[PaginationItemProps] = js.native
+  val PaginationItem: FunctionComponent[PaginationItemProps] = js.native
   
   @JSImport("react-foundation", "PaginationNext")
   @js.native
-  val PaginationNext: StatelessComponent[PaginationItemProps] = js.native
+  val PaginationNext: FunctionComponent[PaginationItemProps] = js.native
   
   @JSImport("react-foundation", "PaginationPrevious")
   @js.native
-  val PaginationPrevious: StatelessComponent[PaginationItemProps] = js.native
+  val PaginationPrevious: FunctionComponent[PaginationItemProps] = js.native
   
   @JSImport("react-foundation", "Progress")
   @js.native
-  val Progress: StatelessComponent[typings.reactFoundation.progressBarMod.PaginationProps] = js.native
+  val Progress: FunctionComponent[typings.reactFoundation.progressBarMod.PaginationProps] = js.native
   
   @JSImport("react-foundation", "ProgressMeter")
   @js.native
-  val ProgressMeter: StatelessComponent[ProgressMeterProps] = js.native
+  val ProgressMeter: FunctionComponent[ProgressMeterProps] = js.native
   
   @JSImport("react-foundation", "ProgressMeterText")
   @js.native
-  val ProgressMeterText: StatelessComponent[ProgressMeterTextProps] = js.native
+  val ProgressMeterText: FunctionComponent[ProgressMeterTextProps] = js.native
   
   @JSImport("react-foundation", "ProgressMeterWithText")
   @js.native
-  val ProgressMeterWithText: StatelessComponent[ProgressMeterWithTextProps] = js.native
+  val ProgressMeterWithText: FunctionComponent[ProgressMeterWithTextProps] = js.native
   
   @JSImport("react-foundation", "ResponsiveNavigation")
   @js.native
-  class ResponsiveNavigation ()
+  open class ResponsiveNavigation ()
     extends typings.reactFoundation.responsiveMod.ResponsiveNavigation
   /* static members */
   object ResponsiveNavigation {
@@ -449,11 +449,11 @@ object mod {
   
   @JSImport("react-foundation", "Reveal")
   @js.native
-  val Reveal: StatelessComponent[typings.reactFoundation.revealMod.PaginationProps] = js.native
+  val Reveal: FunctionComponent[typings.reactFoundation.revealMod.PaginationProps] = js.native
   
   @JSImport("react-foundation", "Row")
   @js.native
-  val Row: StatelessComponent[RowProps] = js.native
+  val Row: FunctionComponent[RowProps] = js.native
   
   object Sizes {
     
@@ -479,16 +479,16 @@ object mod {
   
   @JSImport("react-foundation", "Slider")
   @js.native
-  class Slider ()
+  open class Slider ()
     extends typings.reactFoundation.sliderMod.Slider
   
   @JSImport("react-foundation", "SliderFill")
   @js.native
-  val SliderFill: StatelessComponent[SliderFillProps] = js.native
+  val SliderFill: FunctionComponent[SliderFillProps] = js.native
   
   @JSImport("react-foundation", "SliderHandle")
   @js.native
-  val SliderHandle: StatelessComponent[SliderHandleProps] = js.native
+  val SliderHandle: FunctionComponent[SliderHandleProps] = js.native
   
   object SpaceControls {
     
@@ -514,74 +514,74 @@ object mod {
   
   @JSImport("react-foundation", "Switch")
   @js.native
-  val Switch: StatelessComponent[SwitchProps] = js.native
+  val Switch: FunctionComponent[SwitchProps] = js.native
   
   @JSImport("react-foundation", "SwitchActive")
   @js.native
-  val SwitchActive: StatelessComponent[SwitchActiveProps] = js.native
+  val SwitchActive: FunctionComponent[SwitchActiveProps] = js.native
   
   @JSImport("react-foundation", "SwitchInactive")
   @js.native
-  val SwitchInactive: StatelessComponent[SwitchInactiveProps] = js.native
+  val SwitchInactive: FunctionComponent[SwitchInactiveProps] = js.native
   
   @JSImport("react-foundation", "SwitchInput")
   @js.native
-  val SwitchInput: StatelessComponent[SwitchInputProps] = js.native
+  val SwitchInput: FunctionComponent[SwitchInputProps] = js.native
   
   @JSImport("react-foundation", "SwitchPaddle")
   @js.native
-  val SwitchPaddle: StatelessComponent[SwitchPaddleProps] = js.native
+  val SwitchPaddle: FunctionComponent[SwitchPaddleProps] = js.native
   
   @JSImport("react-foundation", "TabItem")
   @js.native
-  val TabItem: StatelessComponent[TabItemProps] = js.native
+  val TabItem: FunctionComponent[TabItemProps] = js.native
   
   @JSImport("react-foundation", "TabPanel")
   @js.native
-  val TabPanel: StatelessComponent[TabPanelProps] = js.native
+  val TabPanel: FunctionComponent[TabPanelProps] = js.native
   
   @JSImport("react-foundation", "Tabs")
   @js.native
-  val Tabs: StatelessComponent[TabsProps] = js.native
+  val Tabs: FunctionComponent[TabsProps] = js.native
   
   @JSImport("react-foundation", "TabsContent")
   @js.native
-  val TabsContent: StatelessComponent[TabsContentProps] = js.native
+  val TabsContent: FunctionComponent[TabsContentProps] = js.native
   
   @JSImport("react-foundation", "Thumbnail")
   @js.native
-  val Thumbnail: StatelessComponent[ThumbnailProps] = js.native
+  val Thumbnail: FunctionComponent[ThumbnailProps] = js.native
   
   @JSImport("react-foundation", "ThumbnailLink")
   @js.native
-  val ThumbnailLink: StatelessComponent[ThumbnailProps] = js.native
+  val ThumbnailLink: FunctionComponent[ThumbnailProps] = js.native
   
   @JSImport("react-foundation", "TitleBar")
   @js.native
-  val TitleBar: StatelessComponent[TitleBarProps] = js.native
+  val TitleBar: FunctionComponent[TitleBarProps] = js.native
   
   @JSImport("react-foundation", "TitleBarTitle")
   @js.native
-  val TitleBarTitle: StatelessComponent[TitleBarTitleProps] = js.native
+  val TitleBarTitle: FunctionComponent[TitleBarTitleProps] = js.native
   
   @JSImport("react-foundation", "TopBar")
   @js.native
-  val TopBar: StatelessComponent[TopBarProps] = js.native
+  val TopBar: FunctionComponent[TopBarProps] = js.native
   
   @JSImport("react-foundation", "TopBarLeft")
   @js.native
-  val TopBarLeft: StatelessComponent[TopBarProps] = js.native
+  val TopBarLeft: FunctionComponent[TopBarProps] = js.native
   
   @JSImport("react-foundation", "TopBarRight")
   @js.native
-  val TopBarRight: StatelessComponent[TopBarProps] = js.native
+  val TopBarRight: FunctionComponent[TopBarProps] = js.native
   
   @JSImport("react-foundation", "TopBarTitle")
   @js.native
-  val TopBarTitle: StatelessComponent[TopBarProps] = js.native
+  val TopBarTitle: FunctionComponent[TopBarProps] = js.native
   
   @JSImport("react-foundation", "TwoHandleSlider")
   @js.native
-  class TwoHandleSlider ()
+  open class TwoHandleSlider ()
     extends typings.reactFoundation.sliderMod.TwoHandleSlider
 }

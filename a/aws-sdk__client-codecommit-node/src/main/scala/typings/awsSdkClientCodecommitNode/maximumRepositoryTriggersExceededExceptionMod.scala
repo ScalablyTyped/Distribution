@@ -8,5 +8,5 @@ object maximumRepositoryTriggersExceededExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/MaximumRepositoryTriggersExceededException", "MaximumRepositoryTriggersExceededException")
   @js.native
-  val MaximumRepositoryTriggersExceededException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MaximumRepositoryTriggersExceededException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

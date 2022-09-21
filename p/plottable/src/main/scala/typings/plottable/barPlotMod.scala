@@ -1,12 +1,13 @@
 package typings.plottable
 
-import typings.plottable.anon.Y
+import typings.plottable.anon.PickDOMRectxywidthheight
 import typings.plottable.commonsMod.ITransformableAccessorScaleBinding
 import typings.plottable.datasetMod.Dataset
 import typings.plottable.drawersMod.ProxyDrawer
 import typings.plottable.formattersMod.DatumFormatter
 import typings.plottable.interfacesMod.AttributeToProjector
 import typings.plottable.interfacesMod.IAccessor
+import typings.plottable.labelMod.LabelFontSizePx
 import typings.plottable.plottableStrings.end
 import typings.plottable.plottableStrings.horizontal
 import typings.plottable.plottableStrings.middle
@@ -28,51 +29,38 @@ object barPlotMod {
     * @constructor
     * @param {string} [orientation="vertical"] One of "vertical"/"horizontal".
     */
-  class Bar[X, Y] () extends XYPlot[X, Y] {
+  open class Bar[X, Y] () extends XYPlot[X, Y] {
     def this(orientation: BarOrientation) = this()
     
-    /* private */ var _barAlignment: js.Any = js.native
+    /* private */ var _barAlignment: Any = js.native
     
-    /* private */ def _barPixelThickness(): js.Any = js.native
+    /* private */ var _barPixelThickness: Any = js.native
     
-    /* private */ var _baseline: js.Any = js.native
+    /* private */ var _baseline: Any = js.native
     
-    /* private */ var _baselineValue: js.Any = js.native
+    /* private */ var _baselineValue: Any = js.native
     
-    /* private */ var _baselineValueProvider: js.Any = js.native
+    /* private */ var _baselineValueProvider: Any = js.native
     
-    /* private */ def _calculateLabelProperties(
-      barCoordinates: js.Any,
-      barDimensions: js.Any,
-      measurement: js.Any,
-      showLabelOnBar: js.Any,
-      aboveOrLeftOfBaseline: js.Any
-    ): js.Any = js.native
+    /* private */ var _calculateLabelProperties: Any = js.native
     
-    /* private */ var _computeBarPixelThickness: js.Any = js.native
+    /* private */ var _computeBarPixelThickness: Any = js.native
     
     /* protected */ def _createDrawer(): ProxyDrawer = js.native
     
-    /* private */ def _createLabelContainer(
-      labelArea: js.Any,
-      labelContainerOrigin: js.Any,
-      labelOrigin: js.Any,
-      measurement: js.Any,
-      showLabelOnBar: js.Any,
-      color: js.Any
-    ): js.Any = js.native
+    /* private */ var _createLabelContainer: Any = js.native
     
-    /* private */ def _drawLabel(datum: js.Any, index: js.Any, dataset: js.Any, attrToProjector: js.Any): js.Any = js.native
+    /* private */ var _drawLabel: Any = js.native
     
     /* protected */ def _drawLabels(): Unit = js.native
     
-    /* private */ def _entitiesIntersecting(xValOrRange: js.Any, yValOrRange: js.Any): js.Any = js.native
+    /* private */ var _entitiesIntersecting: Any = js.native
     
     /**
       * Whether all the bars in this barPlot have the same pixel thickness.
       * If so, use the _barPixelThickness property to access the thickness.
       */
-    /* private */ var _fixedBarPixelThickness: js.Any = js.native
+    /* private */ var _fixedBarPixelThickness: Any = js.native
     
     /**
       * Return the <rect>'s x or y attr value given the position and thickness of
@@ -80,44 +68,46 @@ object barPlotMod {
       */
     /* protected */ def _getPositionAttr(position: Double, thickness: Double): Double = js.native
     
-    /* private */ var _hideBarsIfAnyAreTooWide: js.Any = js.native
+    /* private */ var _hideBarsIfAnyAreTooWide: Any = js.native
     
     /* protected */ def _isDatumOnScreen(
       attrToProjector: AttributeToProjector,
       plotWidth: Double,
       plotHeight: Double,
-      d: js.Any,
+      d: Any,
       i: Double,
       dataset: Dataset
     ): Boolean = js.native
     
     /* protected */ var _isVertical: Boolean = js.native
     
-    /* private */ var _labelConfig: js.Any = js.native
+    /* private */ var _labelConfig: Any = js.native
     
-    /* private */ var _labelFormatter: js.Any = js.native
+    /* protected */ var _labelFontSize: LabelFontSizePx = js.native
     
-    /* private */ var _labelsEnabled: js.Any = js.native
+    /* private */ var _labelFormatter: Any = js.native
     
-    /* private */ var _labelsPosition: js.Any = js.native
+    /* private */ var _labelsEnabled: Any = js.native
+    
+    /* private */ var _labelsPosition: Any = js.native
     
     /**
       * The rectangular bounds of a bar. Note that the x/y coordinates are not the
       * same as the "pixel point" because they are always at the top/left of the
       * bar.
       */
-    /* protected */ def _pixelBounds(datum: js.Any, index: Double, dataset: Dataset): Y = js.native
+    /* protected */ def _pixelBounds(datum: Any, index: Double, dataset: Dataset): PickDOMRectxywidthheight = js.native
     
-    /* private */ def _pixelPointBar(originalPosition: js.Any, scaledBaseline: js.Any, rect: js.Any): js.Any = js.native
+    /* private */ var _pixelPointBar: Any = js.native
     
     /**
       * Labels are "on-bar" by default, but if the bar is not long enough to fit the text,
       * we can try putting the label "off-bar", if there's enough space outside of the bar
       * to fit it.
       */
-    /* private */ def _shouldShowLabelOnBar(barCoordinates: js.Any, barDimensions: js.Any, labelDimensions: js.Any): js.Any = js.native
+    /* private */ var _shouldShowLabelOnBar: Any = js.native
     
-    /* private */ def _updateLengthScale(): js.Any = js.native
+    /* private */ var _updateLengthScale: Any = js.native
     
     /* protected */ def _updateThicknessAttr(): Unit = js.native
     
@@ -183,6 +173,15 @@ object barPlotMod {
     def baselineValue(value: X | Y): this.type = js.native
     
     /**
+      * Get the label font size in px.
+      */
+    def labelFontSize(): LabelFontSizePx = js.native
+    /**
+      * Set the label font size.
+      */
+    def labelFontSize(fontSize: LabelFontSizePx): this.type = js.native
+    
+    /**
       * Gets the Formatter for the labels.
       */
     def labelFormatter(): DatumFormatter = js.native
@@ -217,7 +216,7 @@ object barPlotMod {
       * The binding associated with bar length. Length is the count or value the bar is trying to show.
       * This is the .y() for a vertical plot and .x() for a horizontal plot.
       */
-    /* protected */ def length(): ITransformableAccessorScaleBinding[js.Any, Double] = js.native
+    /* protected */ def length(): ITransformableAccessorScaleBinding[Any, Double] = js.native
     
     /**
       * Gets the orientation of the plot
@@ -230,7 +229,7 @@ object barPlotMod {
       * The binding associated with bar position. Position separates the different bar categories.
       * This is the .x() for a vertical plot and .y() for a horizontal plot.
       */
-    /* protected */ def position(): ITransformableAccessorScaleBinding[js.Any, Double] = js.native
+    /* protected */ def position(): ITransformableAccessorScaleBinding[Any, Double] = js.native
   }
   /* static members */
   object Bar {
@@ -241,13 +240,13 @@ object barPlotMod {
     
     @JSImport("plottable/build/src/plots/barPlot", "Bar._BAR_AREA_CLASS")
     @js.native
-    def _BAR_AREA_CLASS: js.Any = js.native
-    inline def _BAR_AREA_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_AREA_CLASS")(x.asInstanceOf[js.Any])
+    def _BAR_AREA_CLASS: Any = js.native
+    inline def _BAR_AREA_CLASS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_AREA_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/barPlot", "Bar._BAR_END_KEY")
     @js.native
-    def _BAR_END_KEY: js.Any = js.native
-    inline def _BAR_END_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_END_KEY")(x.asInstanceOf[js.Any])
+    def _BAR_END_KEY: Any = js.native
+    inline def _BAR_END_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_END_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/barPlot", "Bar._BAR_GAPLESS_THRESHOLD_PX")
     @js.native
@@ -285,8 +284,8 @@ object barPlotMod {
   }
   
   /* keyof plottable.anon.Middle */ /* Rewritten from type alias, can be one of: 
-    - typings.plottable.plottableStrings.start
     - typings.plottable.plottableStrings.end
+    - typings.plottable.plottableStrings.start
     - typings.plottable.plottableStrings.middle
   */
   trait BarAlignment extends StObject
@@ -335,8 +334,8 @@ object barPlotMod {
   }
   
   /* keyof plottable.anon.End */ /* Rewritten from type alias, can be one of: 
-    - typings.plottable.plottableStrings.start
     - typings.plottable.plottableStrings.end
+    - typings.plottable.plottableStrings.start
     - typings.plottable.plottableStrings.middle
     - typings.plottable.plottableStrings.outside
   */

@@ -39,7 +39,7 @@ object XGeneratedResultSet {
     GeneratedValues: XResultSet,
     acquire: () => Unit,
     getGeneratedValues: () => XResultSet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XGeneratedResultSet = {
     val __obj = js.Dynamic.literal(GeneratedValues = GeneratedValues.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getGeneratedValues = js.Any.fromFunction0(getGeneratedValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

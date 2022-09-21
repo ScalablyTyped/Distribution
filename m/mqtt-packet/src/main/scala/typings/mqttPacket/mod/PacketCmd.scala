@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typings.mqttPacket.mqttPacketStrings.auth
   - typings.mqttPacket.mqttPacketStrings.connack
   - typings.mqttPacket.mqttPacketStrings.connect
   - typings.mqttPacket.mqttPacketStrings.disconnect
@@ -22,6 +23,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait PacketCmd extends StObject
 object PacketCmd {
+  
+  inline def auth: typings.mqttPacket.mqttPacketStrings.auth = "auth".asInstanceOf[typings.mqttPacket.mqttPacketStrings.auth]
   
   inline def connack: typings.mqttPacket.mqttPacketStrings.connack = "connack".asInstanceOf[typings.mqttPacket.mqttPacketStrings.connack]
   

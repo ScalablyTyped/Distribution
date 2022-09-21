@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("NedbLogger")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.nedbLogger.mod.^ {
       def this(path: String) = this()
       def this(path: Filename) = this()

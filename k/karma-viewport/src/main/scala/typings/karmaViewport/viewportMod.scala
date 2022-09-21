@@ -16,7 +16,7 @@ object viewportMod {
   
   @JSImport("karma-viewport/dist/adapter/viewport", "Viewport")
   @js.native
-  class Viewport protected () extends StObject {
+  open class Viewport protected () extends StObject {
     /**
       * Create viewport resizer
       *
@@ -44,7 +44,7 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def between[T /* <: js.Promise[js.Any] */](first: String, last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+    def between[T /* <: js.Promise[Any] */](first: String, last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("between")
     def between_T_Unit[T](first: String, last: String, cb: ViewportCallback[T]): Unit = js.native
     
@@ -70,7 +70,7 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def each[T /* <: js.Promise[js.Any] */](cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+    def each[T /* <: js.Promise[Any] */](cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("each")
     def each_T_Unit[T](cb: ViewportCallback[T]): Unit = js.native
     
@@ -87,7 +87,7 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def from[T /* <: js.Promise[js.Any] */](first: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+    def from[T /* <: js.Promise[Any] */](first: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("from")
     def from_T_Unit[T](first: String, cb: ViewportCallback[T]): Unit = js.native
     
@@ -138,7 +138,7 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def to[T /* <: js.Promise[js.Any] */](last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+    def to[T /* <: js.Promise[Any] */](last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("to")
     def to_T_Unit[T](last: String, cb: ViewportCallback[T]): Unit = js.native
   }
@@ -186,7 +186,7 @@ object viewportMod {
       
       inline def setBreakpoints(value: js.Array[ViewportBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
-      inline def setBreakpointsVarargs(value: ViewportBreakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+      inline def setBreakpointsVarargs(value: ViewportBreakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value*))
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }

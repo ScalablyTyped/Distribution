@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPermissionsRequest extends StObject {
   
   /**
-    * The identifier for the Data Catalog. By default, the account ID. The Data Catalog is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your AWS Lake Formation environment. 
+    * The identifier for the Data Catalog. By default, the account ID. The Data Catalog is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your Lake Formation environment. 
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
+  
+  /**
+    * Indicates that related permissions should be included in the results.
+    */
+  var IncludeRelated: js.UndefOr[TrueFalseString] = js.undefined
   
   /**
     * The maximum number of results to return.
@@ -48,6 +53,10 @@ object ListPermissionsRequest {
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    
+    inline def setIncludeRelated(value: TrueFalseString): Self = StObject.set(x, "IncludeRelated", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeRelatedUndefined: Self = StObject.set(x, "IncludeRelated", js.undefined)
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

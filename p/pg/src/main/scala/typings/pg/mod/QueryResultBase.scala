@@ -27,7 +27,7 @@ object QueryResultBase {
     
     inline def setFields(value: js.Array[FieldDef]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: FieldDef*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldDef*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setOid(value: Double): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
     

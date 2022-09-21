@@ -14,5 +14,7 @@ object urlChunkIteratorMod {
   val ^ : js.Any = js.native
   
   inline def urlChunkIterator(url: RequestInfo): js.Promise[FileChunkIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlChunkIterator")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileChunkIterator]]
+  inline def urlChunkIterator(url: RequestInfo, options: Unit, fetchFunc: js.Function): js.Promise[FileChunkIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("urlChunkIterator")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fetchFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileChunkIterator]]
   inline def urlChunkIterator(url: RequestInfo, options: FileChunkIteratorOptions): js.Promise[FileChunkIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("urlChunkIterator")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileChunkIterator]]
+  inline def urlChunkIterator(url: RequestInfo, options: FileChunkIteratorOptions, fetchFunc: js.Function): js.Promise[FileChunkIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("urlChunkIterator")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fetchFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileChunkIterator]]
 }

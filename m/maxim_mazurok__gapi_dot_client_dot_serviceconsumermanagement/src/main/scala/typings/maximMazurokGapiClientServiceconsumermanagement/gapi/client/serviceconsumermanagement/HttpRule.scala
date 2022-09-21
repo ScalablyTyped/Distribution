@@ -58,7 +58,7 @@ object HttpRule {
     
     inline def setAdditionalBindingsUndefined: Self = StObject.set(x, "additionalBindings", js.undefined)
     
-    inline def setAdditionalBindingsVarargs(value: HttpRule*): Self = StObject.set(x, "additionalBindings", js.Array(value :_*))
+    inline def setAdditionalBindingsVarargs(value: HttpRule*): Self = StObject.set(x, "additionalBindings", js.Array(value*))
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

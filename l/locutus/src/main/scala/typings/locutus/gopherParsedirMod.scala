@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object gopherParsedirMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(dirent: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(dirent.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(dirent: Any): Any = ^.asInstanceOf[js.Dynamic].apply(dirent.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/net-gopher/gopher_parsedir", JSImport.Namespace)
   @js.native

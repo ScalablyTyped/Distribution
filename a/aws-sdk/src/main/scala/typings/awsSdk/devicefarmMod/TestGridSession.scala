@@ -19,12 +19,12 @@ trait TestGridSession extends StObject {
   /**
     * The time that the session was started.
     */
-  var created: js.UndefOr[DateTime] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time the session ended.
     */
-  var ended: js.UndefOr[DateTime] = js.undefined
+  var ended: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A JSON object of options and parameters passed to the Selenium WebDriver.
@@ -53,11 +53,11 @@ object TestGridSession {
     
     inline def setBillingMinutesUndefined: Self = StObject.set(x, "billingMinutes", js.undefined)
     
-    inline def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    inline def setEnded(value: DateTime): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: js.Date): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
     inline def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
     

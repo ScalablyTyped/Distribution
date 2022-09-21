@@ -29,7 +29,7 @@ object DataSourceGroupItem {
     
     inline def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
     
-    inline def setAggregatesVarargs(value: DataSourceGroupItemAggregate*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
+    inline def setAggregatesVarargs(value: DataSourceGroupItemAggregate*): Self = StObject.set(x, "aggregates", js.Array(value*))
     
     inline def setCompare(value: (/* a */ DataSourceGroupCompareItem, /* b */ DataSourceGroupCompareItem) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     

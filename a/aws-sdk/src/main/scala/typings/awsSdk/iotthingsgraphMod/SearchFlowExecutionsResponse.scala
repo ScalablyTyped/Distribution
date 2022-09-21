@@ -33,6 +33,6 @@ object SearchFlowExecutionsResponse {
     
     inline def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
     
-    inline def setSummariesVarargs(value: FlowExecutionSummary*): Self = StObject.set(x, "summaries", js.Array(value :_*))
+    inline def setSummariesVarargs(value: FlowExecutionSummary*): Self = StObject.set(x, "summaries", js.Array(value*))
   }
 }

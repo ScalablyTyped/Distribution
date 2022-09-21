@@ -29,7 +29,7 @@ trait StartSoterAuthenticationOptions extends StObject {
   /**
     * 请求使用的可接受的生物认证方式
     */
-  var requestAuthModes: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var requestAuthModes: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 接口调用成功的回调函数
@@ -61,11 +61,11 @@ object StartSoterAuthenticationOptions {
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    inline def setRequestAuthModes(value: js.Array[js.Any]): Self = StObject.set(x, "requestAuthModes", value.asInstanceOf[js.Any])
+    inline def setRequestAuthModes(value: js.Array[Any]): Self = StObject.set(x, "requestAuthModes", value.asInstanceOf[js.Any])
     
     inline def setRequestAuthModesUndefined: Self = StObject.set(x, "requestAuthModes", js.undefined)
     
-    inline def setRequestAuthModesVarargs(value: js.Any*): Self = StObject.set(x, "requestAuthModes", js.Array(value :_*))
+    inline def setRequestAuthModesVarargs(value: Any*): Self = StObject.set(x, "requestAuthModes", js.Array(value*))
     
     inline def setSuccess(value: /* result */ StartSoterAuthenticationRes => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

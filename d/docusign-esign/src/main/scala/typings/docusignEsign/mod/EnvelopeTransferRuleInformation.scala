@@ -66,7 +66,7 @@ object EnvelopeTransferRuleInformation {
     
     inline def setEnvelopeTransferRulesUndefined: Self = StObject.set(x, "envelopeTransferRules", js.undefined)
     
-    inline def setEnvelopeTransferRulesVarargs(value: (/* This object contains details about an envelope transfer rule. */ EnvelopeTransferRule)*): Self = StObject.set(x, "envelopeTransferRules", js.Array(value :_*))
+    inline def setEnvelopeTransferRulesVarargs(value: (/* This object contains details about an envelope transfer rule. */ EnvelopeTransferRule)*): Self = StObject.set(x, "envelopeTransferRules", js.Array(value*))
     
     inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     

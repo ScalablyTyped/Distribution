@@ -116,7 +116,7 @@ object MatterCollisionPair {
     
     inline def setActiveContacts(value: js.Array[Vector]): Self = StObject.set(x, "activeContacts", value.asInstanceOf[js.Any])
     
-    inline def setActiveContactsVarargs(value: Vector*): Self = StObject.set(x, "activeContacts", js.Array(value :_*))
+    inline def setActiveContactsVarargs(value: Vector*): Self = StObject.set(x, "activeContacts", js.Array(value*))
     
     inline def setBodyA(value: BodyType): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     

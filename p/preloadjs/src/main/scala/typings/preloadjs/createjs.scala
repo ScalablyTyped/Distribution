@@ -25,8 +25,8 @@ object createjs {
     def getLoadedItems(): js.Array[js.Object] = js.native
     
     def getResult(): js.Object = js.native
-    def getResult(value: js.Any): js.Object = js.native
-    def getResult(value: js.Any, rawResult: Boolean): js.Object = js.native
+    def getResult(value: Any): js.Object = js.native
+    def getResult(value: Any, rawResult: Boolean): js.Object = js.native
     def getResult(value: Unit, rawResult: Boolean): js.Object = js.native
     
     def getTag(): js.Object = js.native
@@ -37,7 +37,7 @@ object createjs {
     
     var progress: Double = js.native
     
-    def resultFormatter(): js.Any = js.native
+    def resultFormatter(): Any = js.native
     
     def setTag(tag: js.Object): Unit = js.native
     
@@ -212,7 +212,7 @@ object createjs {
     
     def getItems(loaded: Boolean): js.Array[js.Object] = js.native
     
-    def installPlugin(plugin: js.Any): Unit = js.native
+    def installPlugin(plugin: Any): Unit = js.native
     
     def loadFile(file: String): Unit = js.native
     def loadFile(file: String, loadNow: Boolean): Unit = js.native
@@ -227,10 +227,10 @@ object createjs {
     def loadManifest(manifest: String, loadNow: Boolean): Unit = js.native
     def loadManifest(manifest: String, loadNow: Boolean, basePath: String): Unit = js.native
     def loadManifest(manifest: String, loadNow: Unit, basePath: String): Unit = js.native
-    def loadManifest(manifest: js.Array[js.Any]): Unit = js.native
-    def loadManifest(manifest: js.Array[js.Any], loadNow: Boolean): Unit = js.native
-    def loadManifest(manifest: js.Array[js.Any], loadNow: Boolean, basePath: String): Unit = js.native
-    def loadManifest(manifest: js.Array[js.Any], loadNow: Unit, basePath: String): Unit = js.native
+    def loadManifest(manifest: js.Array[Any]): Unit = js.native
+    def loadManifest(manifest: js.Array[Any], loadNow: Boolean): Unit = js.native
+    def loadManifest(manifest: js.Array[Any], loadNow: Boolean, basePath: String): Unit = js.native
+    def loadManifest(manifest: js.Array[Any], loadNow: Unit, basePath: String): Unit = js.native
     def loadManifest(manifest: js.Object): Unit = js.native
     def loadManifest(manifest: js.Object, loadNow: Boolean): Unit = js.native
     def loadManifest(manifest: js.Object, loadNow: Boolean, basePath: String): Unit = js.native
@@ -244,7 +244,7 @@ object createjs {
     def registerLoader(loader: AbstractLoader): Unit = js.native
     
     def remove(idsOrUrls: String): Unit = js.native
-    def remove(idsOrUrls: js.Array[js.Any]): Unit = js.native
+    def remove(idsOrUrls: js.Array[Any]): Unit = js.native
     
     def removeAll(): Unit = js.native
     

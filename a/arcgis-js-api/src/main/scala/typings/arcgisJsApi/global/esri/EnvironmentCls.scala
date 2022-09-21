@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.Environment")
 @js.native
-class EnvironmentCls ()
+/**
+  * Represents settings that affect the environment in which the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html) is displayed (such as lighting).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html)
+  */
+open class EnvironmentCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Environment {
   def this(properties: EnvironmentProperties) = this()

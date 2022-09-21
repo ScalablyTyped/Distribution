@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-port-reachable" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-port-reachable" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

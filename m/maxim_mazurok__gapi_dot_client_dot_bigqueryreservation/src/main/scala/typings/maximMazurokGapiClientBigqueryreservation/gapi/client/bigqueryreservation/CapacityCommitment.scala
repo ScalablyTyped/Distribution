@@ -15,7 +15,16 @@ trait CapacityCommitment extends StObject {
   /** Output only. For FAILED commitment plan, provides the reason of failure. */
   var failureStatus: js.UndefOr[Status] = js.undefined
   
-  /** Output only. The resource name of the capacity commitment, e.g., `projects/myproject/locations/US/capacityCommitments/123` */
+  /**
+    * Applicable only for commitments located within one of the BigQuery multi-regions (US or EU). If set to true, this commitment is placed in the organization's secondary region which
+    * is designated for disaster recovery purposes. If false, this commitment is placed in the organization's default region.
+    */
+  var multiRegionAuxiliary: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Output only. The resource name of the capacity commitment, e.g., `projects/myproject/locations/US/capacityCommitments/123` The commitment_id must only contain lower case
+    * alphanumeric characters or dashes. It must start with a letter and must not end with a dash. Its maximum length is 64 characters.
+    */
   var name: js.UndefOr[String] = js.undefined
   
   /** Capacity commitment commitment plan. */
@@ -53,6 +62,10 @@ object CapacityCommitment {
     inline def setFailureStatus(value: Status): Self = StObject.set(x, "failureStatus", value.asInstanceOf[js.Any])
     
     inline def setFailureStatusUndefined: Self = StObject.set(x, "failureStatus", js.undefined)
+    
+    inline def setMultiRegionAuxiliary(value: Boolean): Self = StObject.set(x, "multiRegionAuxiliary", value.asInstanceOf[js.Any])
+    
+    inline def setMultiRegionAuxiliaryUndefined: Self = StObject.set(x, "multiRegionAuxiliary", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

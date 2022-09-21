@@ -9,16 +9,16 @@ object suggestionsStoreMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsStore", "SuggestionsStore")
   @js.native
-  class SuggestionsStore[T] () extends StObject {
+  open class SuggestionsStore[T] () extends StObject {
     def this(options: SuggestionsStoreOptions[T]) = this()
     
-    /* private */ var _ensureSuggestionModel: js.Any = js.native
+    /* private */ var _ensureSuggestionModel: Any = js.native
     
-    /* private */ var _isSuggestionModel: js.Any = js.native
+    /* private */ var _isSuggestionModel: Any = js.native
     
     def convertSuggestionsToSuggestionItems(suggestions: js.Array[ISuggestionModel[T] | T]): js.Array[ISuggestionModel[T]] = js.native
     
-    /* private */ var getAriaLabel: js.Any = js.native
+    /* private */ var getAriaLabel: Any = js.native
     
     def getSuggestionAtIndex(index: Double): ISuggestionModel[T] = js.native
     

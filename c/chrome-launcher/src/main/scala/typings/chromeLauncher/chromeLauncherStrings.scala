@@ -1,6 +1,6 @@
 package typings.chromeLauncher
 
-import typings.chromeLauncher.utilsMod.LaunchErrorCodes
+import typings.chromeLauncher.distUtilsMod.LaunchErrorCodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,24 +11,28 @@ object chromeLauncherStrings {
   sealed trait ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY
     extends StObject
        with LaunchErrorCodes
+       with typings.chromeLauncher.utilsMod.LaunchErrorCodes
   inline def ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY: ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY = "ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY".asInstanceOf[ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY]
   
   @js.native
   sealed trait ERR_LAUNCHER_NOT_INSTALLED
     extends StObject
        with LaunchErrorCodes
+       with typings.chromeLauncher.utilsMod.LaunchErrorCodes
   inline def ERR_LAUNCHER_NOT_INSTALLED: ERR_LAUNCHER_NOT_INSTALLED = "ERR_LAUNCHER_NOT_INSTALLED".asInstanceOf[ERR_LAUNCHER_NOT_INSTALLED]
   
   @js.native
   sealed trait ERR_LAUNCHER_PATH_NOT_SET
     extends StObject
        with LaunchErrorCodes
+       with typings.chromeLauncher.utilsMod.LaunchErrorCodes
   inline def ERR_LAUNCHER_PATH_NOT_SET: ERR_LAUNCHER_PATH_NOT_SET = "ERR_LAUNCHER_PATH_NOT_SET".asInstanceOf[ERR_LAUNCHER_PATH_NOT_SET]
   
   @js.native
   sealed trait ERR_LAUNCHER_UNSUPPORTED_PLATFORM
     extends StObject
        with LaunchErrorCodes
+       with typings.chromeLauncher.utilsMod.LaunchErrorCodes
   inline def ERR_LAUNCHER_UNSUPPORTED_PLATFORM: ERR_LAUNCHER_UNSUPPORTED_PLATFORM = "ERR_LAUNCHER_UNSUPPORTED_PLATFORM".asInstanceOf[ERR_LAUNCHER_UNSUPPORTED_PLATFORM]
   
   @js.native

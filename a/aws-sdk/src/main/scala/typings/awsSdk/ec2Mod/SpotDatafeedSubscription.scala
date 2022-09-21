@@ -17,7 +17,7 @@ trait SpotDatafeedSubscription extends StObject {
   var Fault: js.UndefOr[SpotInstanceStateFault] = js.undefined
   
   /**
-    * The AWS account ID of the account.
+    * The Amazon Web Services account ID of the account.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   

@@ -2,6 +2,7 @@ package typings.socketIoFile
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.socketIo.mod.Socket
+import typings.socketIo.typedEventsMod.DefaultEventsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +11,10 @@ object mod {
   
   @JSImport("socket.io-file", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SocketIOFile {
-    def this(socket: Socket, options: Options) = this()
+    def this(socket: Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any], options: Options) = this()
     
     /* CompleteClass */
     override def on(event: String, cb: js.Function1[/* fileInfo */ FileInfo, Unit]): Unit = js.native
@@ -21,7 +22,7 @@ object mod {
   
   trait FileInfo extends StObject {
     
-    var data: js.Array[js.Any]
+    var data: js.Array[Any]
     
     var estimated: Double
     
@@ -44,7 +45,7 @@ object mod {
   object FileInfo {
     
     inline def apply(
-      data: js.Array[js.Any],
+      data: js.Array[Any],
       estimated: Double,
       mime: String,
       name: String,
@@ -61,9 +62,9 @@ object mod {
     
     extension [Self <: FileInfo](x: Self) {
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setEstimated(value: Double): Self = StObject.set(x, "estimated", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,7 @@ object mod {
       
       inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
       
-      inline def setAcceptsVarargs(value: String*): Self = StObject.set(x, "accepts", js.Array(value :_*))
+      inline def setAcceptsVarargs(value: String*): Self = StObject.set(x, "accepts", js.Array(value*))
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       

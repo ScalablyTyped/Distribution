@@ -25,7 +25,7 @@ object GyroAnalogOption {
     
     inline def setPins(value: js.Array[String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
-    inline def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value :_*))
+    inline def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value*))
     
     inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     

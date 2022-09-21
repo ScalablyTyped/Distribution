@@ -1,82 +1,30 @@
 package typings.reactSelect
 
-import typings.react.mod.ComponentType
-import typings.react.mod.ReactNode
-import typings.reactSelect.anon.OnClick
+import typings.react.mod.ReactElement
+import typings.react.mod.global.JSX.Element
 import typings.reactSelect.componentsMultiValueMod.MultiValueProps
-import typings.reactSelect.selectMod.Props
-import typings.reactSelect.transitionsMod.fn
-import typings.reactSelect.typesMod.ActionTypes
-import typings.reactSelect.typesMod.ClassNamesState
-import typings.reactSelect.typesMod.OptionTypeBase
-import typings.reactSelect.typesMod.OptionsType
-import typings.reactSelect.typesMod.ValueType
+import typings.reactSelect.typesMod.GroupBase
+import typings.reactTransitionGroup.transitionMod.TransitionProps
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiValueMod {
   
-  @JSImport("react-select/src/animated/MultiValue", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/animated/MultiValue", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedMultiValueProps[OptionType]]]
+  inline def default(WrappedComponent: MultiValueComponent): js.Function1[
+    /* hasInPropOnExitedProps */ AnimatedMultiValueProps[Any, Boolean, GroupBase[Any]], 
+    Element
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* hasInPropOnExitedProps */ AnimatedMultiValueProps[Any, Boolean, GroupBase[Any]], 
+    Element
+  ]]
   
-  inline def AnimatedMultiValue[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedMultiValue")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedMultiValueProps[OptionType]]]
+  type AnimatedMultiValueProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] = (MultiValueProps[Option, IsMulti, Group]) & Partial[TransitionProps[Unit]]
   
-  /* Inlined {  in :boolean,   onExited :react-select.react-select/src/animated/transitions.fn} & react-select.react-select/src/components/MultiValue.MultiValueProps<OptionType> */
-  @js.native
-  trait AnimatedMultiValueProps[OptionType /* <: OptionTypeBase */] extends StObject {
-    
-    var children: ReactNode = js.native
-    
-    var className: js.UndefOr[String] = js.native
-    
-    def clearValue(): Unit = js.native
-    
-    var components: js.Any = js.native
-    
-    var cropWithEllipsis: Boolean = js.native
-    
-    def cx(): String = js.native
-    def cx(state: Unit, className: String): String = js.native
-    def cx(state: ClassNamesState): String = js.native
-    def cx(state: ClassNamesState, className: String): String = js.native
-    
-    var data: OptionType = js.native
-    
-    /*
-      Get the styles of a particular part of the select. Pass in the name of the
-      property as the first argument, and the current props as the second argument.
-      See the `styles` object for the properties available.
-      */
-    def getStyles(name: String, props: js.Any): js.Object = js.native
-    
-    def getValue(): ValueType[OptionType] = js.native
-    
-    var hasValue: Boolean = js.native
-    
-    var in: Boolean = js.native
-    
-    var innerProps: js.Any = js.native
-    
-    var isDisabled: Boolean = js.native
-    
-    var isFocused: Boolean = js.native
-    
-    var isMulti: Boolean = js.native
-    
-    var onExited: fn = js.native
-    
-    var options: OptionsType[OptionType] = js.native
-    
-    var removeProps: OnClick = js.native
-    
-    def selectOption(option: OptionType): Unit = js.native
-    
-    var selectProps: Props[OptionType] = js.native
-    
-    def setValue(value: ValueType[OptionType], action: ActionTypes): Unit = js.native
-  }
+  type MultiValueComponent = js.Function1[/* props */ MultiValueProps[Any, Boolean, GroupBase[Any]], ReactElement]
 }

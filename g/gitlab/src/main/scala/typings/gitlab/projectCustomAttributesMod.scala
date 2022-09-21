@@ -10,7 +10,7 @@ object projectCustomAttributesMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectCustomAttributes", "ProjectCustomAttributes")
   @js.native
-  class ProjectCustomAttributes protected () extends ResourceCustomAttributes {
+  open class ProjectCustomAttributes protected () extends ResourceCustomAttributes {
     def this(options: BaseServiceOptions) = this()
   }
 }

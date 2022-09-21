@@ -1,6 +1,6 @@
 package typings.trustedTypes
 
-import typings.trustedTypes.mod.FnNames
+import typings.trustedTypes.libMod.FnNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

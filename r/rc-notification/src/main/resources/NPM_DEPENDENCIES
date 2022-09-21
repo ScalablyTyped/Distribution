@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-notification" : "4.5.4"
+      "rc-notification" : "5.0.0-alpha.9"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-notification" : "4.5.4"
+      "rc-notification" : "5.0.0-alpha.9"
     }
   ],
   "compile-devDependencies" : [

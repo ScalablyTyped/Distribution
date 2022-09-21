@@ -16,7 +16,7 @@ object phoneNumberValidateCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/PhoneNumberValidateCommand", "PhoneNumberValidateCommand")
   @js.native
-  class PhoneNumberValidateCommand protected ()
+  open class PhoneNumberValidateCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object phoneNumberValidateCommandMod {
     override val middlewareStack: MiddlewareStack[PhoneNumberValidateInput, PhoneNumberValidateOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[PhoneNumberValidateInput, PhoneNumberValidateOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[PhoneNumberValidateInput, PhoneNumberValidateOutput] = js.native
   }
 }

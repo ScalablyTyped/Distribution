@@ -10,12 +10,12 @@ object pluginLocaleDataMod extends Shortcut {
   
   @JSImport("dayjs/plugin/localeData", JSImport.Namespace)
   @js.native
-  val ^ : PluginFunc[js.Any] = js.native
+  val ^ : PluginFunc[Any] = js.native
   
-  type _To = PluginFunc[js.Any]
+  type _To = PluginFunc[Any]
   
   /* This means you don't have to write `^`, but can instead just say `pluginLocaleDataMod.foo` */
-  override def _to: PluginFunc[js.Any] = ^
+  override def _to: PluginFunc[Any] = ^
   
   /* augmented module */
   object dayjsAugmentingMod {
@@ -57,6 +57,8 @@ object pluginLocaleDataMod extends Shortcut {
       
       def monthsShort(): MonthNames = js.native
       
+      def ordinal(n: Double): String = js.native
+      
       def weekdays(): WeekdayNames = js.native
       
       def weekdaysMin(): WeekdayNames = js.native
@@ -85,6 +87,8 @@ object pluginLocaleDataMod extends Shortcut {
       
       def monthsShort(): MonthNames = js.native
       def monthsShort(instance: Dayjs): MonthNames = js.native
+      
+      def ordinal(n: Double): String = js.native
       
       def weekdays(): WeekdayNames = js.native
       def weekdays(instance: Dayjs): WeekdayNames = js.native

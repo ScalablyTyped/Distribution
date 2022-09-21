@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentAttributeValue extends StObject {
   
   /**
-    * A date expressed as an ISO 8601 string.
+    * A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. For example, 2012-03-25T12:30:10+01:00 is the ISO 8601 date-time format for March 25th 2012 at 12:30PM (plus 10 seconds) in Central European Time.
     */
-  var DateValue: js.UndefOr[Timestamp] = js.undefined
+  var DateValue: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A long integer value.
@@ -35,7 +35,7 @@ object DocumentAttributeValue {
   
   extension [Self <: DocumentAttributeValue](x: Self) {
     
-    inline def setDateValue(value: Timestamp): Self = StObject.set(x, "DateValue", value.asInstanceOf[js.Any])
+    inline def setDateValue(value: js.Date): Self = StObject.set(x, "DateValue", value.asInstanceOf[js.Any])
     
     inline def setDateValueUndefined: Self = StObject.set(x, "DateValue", js.undefined)
     
@@ -47,7 +47,7 @@ object DocumentAttributeValue {
     
     inline def setStringListValueUndefined: Self = StObject.set(x, "StringListValue", js.undefined)
     
-    inline def setStringListValueVarargs(value: String*): Self = StObject.set(x, "StringListValue", js.Array(value :_*))
+    inline def setStringListValueVarargs(value: String*): Self = StObject.set(x, "StringListValue", js.Array(value*))
     
     inline def setStringValue(value: DocumentAttributeStringValue): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
     

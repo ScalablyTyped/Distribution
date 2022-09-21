@@ -41,7 +41,7 @@ object XFixedText {
     acquire: () => Unit,
     getAlignment: () => Double,
     getText: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setAlignment: Double => Unit,
     setText: String => Unit

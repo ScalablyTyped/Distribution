@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mangopay2-nodejs-sdk", "models.PayInPaymentDetailsBankWire")
 @js.native
-class PayInPaymentDetailsBankWire protected () extends PayInPaymentDetails {
-  def this(data: js.Any) = this()
+open class PayInPaymentDetailsBankWire protected () extends PayInPaymentDetails {
+  def this(data: Any) = this()
 }

@@ -39,7 +39,7 @@ object IPagingOptions {
     
     inline def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
     
-    inline def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value :_*))
+    inline def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value*))
     
     inline def setTotalServerItems(value: Double): Self = StObject.set(x, "totalServerItems", value.asInstanceOf[js.Any])
     

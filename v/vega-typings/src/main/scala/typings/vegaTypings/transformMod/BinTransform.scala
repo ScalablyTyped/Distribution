@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BinTransform
   extends StObject
      with BaseBin
-     with _Transforms {
+     with Transforms {
   
   var anchor: js.UndefOr[Double | SignalRef] = js.undefined
   

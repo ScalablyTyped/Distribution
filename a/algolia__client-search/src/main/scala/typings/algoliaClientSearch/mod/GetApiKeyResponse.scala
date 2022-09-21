@@ -12,9 +12,9 @@ trait GetApiKeyResponse extends StObject {
   var acl: js.Array[ApiKeyACLType]
   
   /**
-    * Date of creation.
+    * Date of creation (Unix timestamp).
     */
-  var createdAt: String
+  var createdAt: Double
   
   /**
     * Specify a description of the API key. Used for informative purposes only. It has impact on the functionality of the API key.
@@ -60,13 +60,13 @@ trait GetApiKeyResponse extends StObject {
   var validity: Double
   
   /**
-    * A Unix timestamp used to define the expiration date of the API key.
+    * The api key value
     */
   var value: String
 }
 object GetApiKeyResponse {
   
-  inline def apply(acl: js.Array[ApiKeyACLType], createdAt: String, validity: Double, value: String): GetApiKeyResponse = {
+  inline def apply(acl: js.Array[ApiKeyACLType], createdAt: Double, validity: Double, value: String): GetApiKeyResponse = {
     val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], validity = validity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApiKeyResponse]
   }
@@ -75,9 +75,9 @@ object GetApiKeyResponse {
     
     inline def setAcl(value: js.Array[ApiKeyACLType]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    inline def setAclVarargs(value: ApiKeyACLType*): Self = StObject.set(x, "acl", js.Array(value :_*))
+    inline def setAclVarargs(value: ApiKeyACLType*): Self = StObject.set(x, "acl", js.Array(value*))
     
-    inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object GetApiKeyResponse {
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setMaxHitsPerQuery(value: Double): Self = StObject.set(x, "maxHitsPerQuery", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object GetApiKeyResponse {
     
     inline def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
     
-    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
+    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value*))
     
     inline def setRestrictSources(value: String): Self = StObject.set(x, "restrictSources", value.asInstanceOf[js.Any])
     

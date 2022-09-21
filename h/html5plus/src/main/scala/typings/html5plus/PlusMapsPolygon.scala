@@ -40,7 +40,7 @@ trait PlusMapsPolygon extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  def getPath(): js.Array[js.Any] = js.native
+  def getPath(): js.Array[Any] = js.native
   
   /**
     * 获取多边形边框的颜色
@@ -92,7 +92,7 @@ trait PlusMapsPolygon extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def setPath(): Unit = js.native
-  def setPath(points: js.Array[js.Any]): Unit = js.native
+  def setPath(points: js.Array[Any]): Unit = js.native
   
   /**
     * 设置多边形的颜色

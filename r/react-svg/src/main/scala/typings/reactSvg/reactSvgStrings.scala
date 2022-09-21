@@ -13,4 +13,8 @@ object reactSvgStrings {
   @js.native
   sealed trait span extends StObject
   inline def span: span = "span".asInstanceOf[span]
+  
+  @js.native
+  sealed trait svg extends StObject
+  inline def svg: svg = "svg".asInstanceOf[svg]
 }

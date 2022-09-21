@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaRouterStatus extends StObject {
   
   /**
-    * Best routes for this router&#39;s network.
+    * Best routes for this router's network.
     */
   var bestRoutes: js.UndefOr[js.Array[SchemaRoute]] = js.undefined
   
@@ -23,7 +23,7 @@ trait SchemaRouterStatus extends StObject {
   /**
     * URI of the network to which this router belongs.
     */
-  var network: js.UndefOr[String] = js.undefined
+  var network: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRouterStatus {
   
@@ -40,25 +40,27 @@ object SchemaRouterStatus {
     
     inline def setBestRoutesForRouterUndefined: Self = StObject.set(x, "bestRoutesForRouter", js.undefined)
     
-    inline def setBestRoutesForRouterVarargs(value: SchemaRoute*): Self = StObject.set(x, "bestRoutesForRouter", js.Array(value :_*))
+    inline def setBestRoutesForRouterVarargs(value: SchemaRoute*): Self = StObject.set(x, "bestRoutesForRouter", js.Array(value*))
     
     inline def setBestRoutesUndefined: Self = StObject.set(x, "bestRoutes", js.undefined)
     
-    inline def setBestRoutesVarargs(value: SchemaRoute*): Self = StObject.set(x, "bestRoutes", js.Array(value :_*))
+    inline def setBestRoutesVarargs(value: SchemaRoute*): Self = StObject.set(x, "bestRoutes", js.Array(value*))
     
     inline def setBgpPeerStatus(value: js.Array[SchemaRouterStatusBgpPeerStatus]): Self = StObject.set(x, "bgpPeerStatus", value.asInstanceOf[js.Any])
     
     inline def setBgpPeerStatusUndefined: Self = StObject.set(x, "bgpPeerStatus", js.undefined)
     
-    inline def setBgpPeerStatusVarargs(value: SchemaRouterStatusBgpPeerStatus*): Self = StObject.set(x, "bgpPeerStatus", js.Array(value :_*))
+    inline def setBgpPeerStatusVarargs(value: SchemaRouterStatusBgpPeerStatus*): Self = StObject.set(x, "bgpPeerStatus", js.Array(value*))
     
     inline def setNatStatus(value: js.Array[SchemaRouterStatusNatStatus]): Self = StObject.set(x, "natStatus", value.asInstanceOf[js.Any])
     
     inline def setNatStatusUndefined: Self = StObject.set(x, "natStatus", js.undefined)
     
-    inline def setNatStatusVarargs(value: SchemaRouterStatusNatStatus*): Self = StObject.set(x, "natStatus", js.Array(value :_*))
+    inline def setNatStatusVarargs(value: SchemaRouterStatusNatStatus*): Self = StObject.set(x, "natStatus", js.Array(value*))
     
     inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkNull: Self = StObject.set(x, "network", null)
     
     inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }

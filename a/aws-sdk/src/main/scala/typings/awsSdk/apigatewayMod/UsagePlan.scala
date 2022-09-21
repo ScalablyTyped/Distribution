@@ -32,7 +32,7 @@ trait UsagePlan extends StObject {
   var productCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of permitted requests per a given unit time interval.
+    * The target maximum number of permitted requests per a given unit time interval.
     */
   var quota: js.UndefOr[QuotaSettings] = js.undefined
   
@@ -42,7 +42,7 @@ trait UsagePlan extends StObject {
   var tags: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
-    * The request throttle limits of a usage plan.
+    * A map containing method level throttling information for API stage in a usage plan.
     */
   var throttle: js.UndefOr[ThrottleSettings] = js.undefined
 }
@@ -59,7 +59,7 @@ object UsagePlan {
     
     inline def setApiStagesUndefined: Self = StObject.set(x, "apiStages", js.undefined)
     
-    inline def setApiStagesVarargs(value: ApiStage*): Self = StObject.set(x, "apiStages", js.Array(value :_*))
+    inline def setApiStagesVarargs(value: ApiStage*): Self = StObject.set(x, "apiStages", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

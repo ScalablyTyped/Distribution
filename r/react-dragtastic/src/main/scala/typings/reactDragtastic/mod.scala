@@ -13,50 +13,46 @@ object mod {
   
   @JSImport("react-dragtastic", "DragComponent")
   @js.native
-  class DragComponent protected ()
-    extends Component[DragComponentProps, js.Any, js.Any] {
+  open class DragComponent protected () extends Component[DragComponentProps, Any, Any] {
     def this(props: DragComponentProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DragComponentProps, context: js.Any) = this()
+    def this(props: DragComponentProps, context: Any) = this()
   }
   
   @JSImport("react-dragtastic", "DragState")
   @js.native
-  class DragState protected ()
-    extends Component[DragStateProps, js.Any, js.Any] {
+  open class DragState protected () extends Component[DragStateProps, Any, Any] {
     def this(props: DragStateProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DragStateProps, context: js.Any) = this()
+    def this(props: DragStateProps, context: Any) = this()
   }
   
   @JSImport("react-dragtastic", "Draggable")
   @js.native
-  class Draggable protected ()
-    extends Component[DraggableProps, js.Any, js.Any] {
+  open class Draggable protected () extends Component[DraggableProps, Any, Any] {
     def this(props: DraggableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DraggableProps, context: js.Any) = this()
+    def this(props: DraggableProps, context: Any) = this()
   }
   
   @JSImport("react-dragtastic", "Droppable")
   @js.native
-  class Droppable protected ()
-    extends Component[DroppableProps, js.Any, js.Any] {
+  open class Droppable protected () extends Component[DroppableProps, Any, Any] {
     def this(props: DroppableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DroppableProps, context: js.Any) = this()
+    def this(props: DroppableProps, context: Any) = this()
   }
   
   type Accepts = String | js.Array[String]
@@ -109,7 +105,7 @@ object mod {
       
       inline def setSubscribeToUndefined: Self = StObject.set(x, "subscribeTo", js.undefined)
       
-      inline def setSubscribeToVarargs(value: String*): Self = StObject.set(x, "subscribeTo", js.Array(value :_*))
+      inline def setSubscribeToVarargs(value: String*): Self = StObject.set(x, "subscribeTo", js.Array(value*))
     }
   }
   
@@ -140,7 +136,7 @@ object mod {
       
       inline def setSubscribeToUndefined: Self = StObject.set(x, "subscribeTo", js.undefined)
       
-      inline def setSubscribeToVarargs(value: String*): Self = StObject.set(x, "subscribeTo", js.Array(value :_*))
+      inline def setSubscribeToVarargs(value: String*): Self = StObject.set(x, "subscribeTo", js.Array(value*))
     }
   }
   
@@ -149,7 +145,7 @@ object mod {
     def children(arg: StateisActivebooleanevent): ReactNode
     
     /** Data of any type which will be passed to the onDrop function of any <Droppable/> which accepts this <Draggable/>'s type. */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** An optional int representing the distance in pixels the user's pointer must travel to activate the draggable. Defaults to 8 */
     var delay: js.UndefOr[Double] = js.undefined
@@ -161,10 +157,10 @@ object mod {
     var onDrag: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** A function which will be called when the <Draggable/> zone is deactivated (The user stopped dragging). */
-    var onDragEnd: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
+    var onDragEnd: js.UndefOr[js.Function1[/* data */ Any, Unit]] = js.undefined
     
     /** A function which will be called when the <Draggable/> zone is activated (The user started dragging). */
-    var onDragStart: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
+    var onDragStart: js.UndefOr[js.Function1[/* data */ Any, Unit]] = js.undefined
     
     /**
       * An optional array of strings. For performance reasons you can limit which keys in the dragState your component subscribes to.
@@ -186,7 +182,7 @@ object mod {
       
       inline def setChildren(value: StateisActivebooleanevent => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -200,11 +196,11 @@ object mod {
       
       inline def setOnDrag(value: () => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction0(value))
       
-      inline def setOnDragEnd(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      inline def setOnDragEnd(value: /* data */ Any => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
       inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      inline def setOnDragStart(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* data */ Any => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
@@ -216,7 +212,7 @@ object mod {
       
       inline def setSubscribeToUndefined: Self = StObject.set(x, "subscribeTo", js.undefined)
       
-      inline def setSubscribeToVarargs(value: String*): Self = StObject.set(x, "subscribeTo", js.Array(value :_*))
+      inline def setSubscribeToVarargs(value: String*): Self = StObject.set(x, "subscribeTo", js.Array(value*))
       
       inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -247,7 +243,7 @@ object mod {
     var onDragLeave: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** A function which will be called when a user drops a <DragComponent/> on this <Droppable/> with an accepted type. */
-    var onDrop: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
+    var onDrop: js.UndefOr[js.Function1[/* data */ Any, Unit]] = js.undefined
     
     /**
       * An optional array of strings. For performance reasons you can limit which keys in the dragState your component subscribes to.
@@ -268,7 +264,7 @@ object mod {
       
       inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
       
-      inline def setAcceptsVarargs(value: String*): Self = StObject.set(x, "accepts", js.Array(value :_*))
+      inline def setAcceptsVarargs(value: String*): Self = StObject.set(x, "accepts", js.Array(value*))
       
       inline def setChildren(value: StateisOverbooleanwillAcc => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -284,7 +280,7 @@ object mod {
       
       inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
-      inline def setOnDrop(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+      inline def setOnDrop(value: /* data */ Any => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
       
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
@@ -294,7 +290,7 @@ object mod {
       
       inline def setSubscribeToUndefined: Self = StObject.set(x, "subscribeTo", js.undefined)
       
-      inline def setSubscribeToVarargs(value: String*): Self = StObject.set(x, "subscribeTo", js.Array(value :_*))
+      inline def setSubscribeToVarargs(value: String*): Self = StObject.set(x, "subscribeTo", js.Array(value*))
     }
   }
   
@@ -312,7 +308,7 @@ object mod {
     var currentlyHoveredDroppableId: js.UndefOr[Id] = js.undefined
     
     /** Data from the data property of the <Draggable/> which is currently active. null if not dragging. */
-    var data: js.Any
+    var data: Any
     
     /** A boolean representing whether the user is currently dragging. */
     var isDragging: Boolean
@@ -334,7 +330,7 @@ object mod {
   }
   object State {
     
-    inline def apply(data: js.Any, isDragging: Boolean, startingX: Double, startingY: Double, x: Double, y: Double): State = {
+    inline def apply(data: Any, isDragging: Boolean, startingX: Double, startingY: Double, x: Double, y: Double): State = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], startingX = startingX.asInstanceOf[js.Any], startingY = startingY.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
@@ -349,13 +345,13 @@ object mod {
       
       inline def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
       
-      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
+      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value*))
       
       inline def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
       
       inline def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       

@@ -24,12 +24,12 @@ object TextContentCollection {
     ElementType: `type`,
     acquire: () => Unit,
     addContainerListener: XContainerListener => Unit,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeContainerListener: XContainerListener => Unit
   ): TextContentCollection = {

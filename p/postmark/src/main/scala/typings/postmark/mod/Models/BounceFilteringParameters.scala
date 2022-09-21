@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Models.BounceFilteringParameters")
 @js.native
-class BounceFilteringParameters protected ()
+open class BounceFilteringParameters protected ()
   extends typings.postmark.modelsMod.BounceFilteringParameters {
   def this(
     count: js.UndefOr[Double],

@@ -1,7 +1,9 @@
 package typings.framesync
 
 import typings.framesync.anon.Delta
-import typings.framesync.typesMod.Process
+import typings.framesync.typesMod.CancelSync
+import typings.framesync.typesMod.FlushSync
+import typings.framesync.typesMod.Sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,54 +14,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  object default {
-    
-    @JSImport("framesync", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def postRender(process: Process): Process = ^.asInstanceOf[js.Dynamic].applyDynamic("postRender")(process.asInstanceOf[js.Any]).asInstanceOf[Process]
-    inline def postRender(process: Process, keepAlive: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("postRender")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def postRender(process: Process, keepAlive: Boolean, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("postRender")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def postRender(process: Process, keepAlive: Unit, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("postRender")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-    
-    inline def preRender(process: Process): Process = ^.asInstanceOf[js.Dynamic].applyDynamic("preRender")(process.asInstanceOf[js.Any]).asInstanceOf[Process]
-    inline def preRender(process: Process, keepAlive: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("preRender")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def preRender(process: Process, keepAlive: Boolean, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("preRender")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def preRender(process: Process, keepAlive: Unit, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("preRender")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-    
-    inline def read(process: Process): Process = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(process.asInstanceOf[js.Any]).asInstanceOf[Process]
-    inline def read(process: Process, keepAlive: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def read(process: Process, keepAlive: Boolean, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def read(process: Process, keepAlive: Unit, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-    
-    inline def render(process: Process): Process = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(process.asInstanceOf[js.Any]).asInstanceOf[Process]
-    inline def render(process: Process, keepAlive: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def render(process: Process, keepAlive: Boolean, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def render(process: Process, keepAlive: Unit, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-    
-    inline def update(process: Process): Process = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(process.asInstanceOf[js.Any]).asInstanceOf[Process]
-    inline def update(process: Process, keepAlive: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def update(process: Process, keepAlive: Boolean, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-    inline def update(process: Process, keepAlive: Unit, immediate: Boolean): Process = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(process.asInstanceOf[js.Any], keepAlive.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Process]
-  }
+  @JSImport("framesync", JSImport.Default)
+  @js.native
+  val default: Sync = js.native
   
-  object cancelSync {
-    
-    @JSImport("framesync", "cancelSync")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def postRender(process: Process): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("postRender")(process.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def preRender(process: Process): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preRender")(process.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def read(process: Process): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(process.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def render(process: Process): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(process.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def update(process: Process): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(process.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  }
+  @JSImport("framesync", "cancelSync")
+  @js.native
+  val cancelSync: CancelSync = js.native
+  
+  @JSImport("framesync", "flushSync")
+  @js.native
+  val flushSync: FlushSync = js.native
   
   inline def getFrameData(): Delta = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrameData")().asInstanceOf[Delta]
 }

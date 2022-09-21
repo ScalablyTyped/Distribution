@@ -13,14 +13,14 @@ object mod {
   
   @JSImport("s3-streams", "ReadStream")
   @js.native
-  class ReadStream protected () extends Readable {
+  open class ReadStream protected () extends Readable {
     def this(client: S3, options: GetObjectRequest) = this()
     def this(client: S3, options: GetObjectRequest, streamOptions: StreamOptions) = this()
   }
   
   @JSImport("s3-streams", "WriteStream")
   @js.native
-  class WriteStream protected () extends Writable {
+  open class WriteStream protected () extends Writable {
     def this(client: S3, options: CreateMultipartUploadRequest) = this()
     def this(client: S3, options: CreateMultipartUploadRequest, streamOptions: StreamOptions) = this()
   }

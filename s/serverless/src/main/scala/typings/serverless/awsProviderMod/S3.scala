@@ -12,12 +12,12 @@ trait S3 extends StObject {
   
   var existing: js.UndefOr[Boolean] = js.undefined
   
-  var rules: js.Array[S3Rule]
+  var rules: js.UndefOr[js.Array[S3Rule]] = js.undefined
 }
 object S3 {
   
-  inline def apply(bucket: String, event: String, rules: js.Array[S3Rule]): S3 = {
-    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
+  inline def apply(bucket: String, event: String): S3 = {
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3]
   }
   
@@ -33,6 +33,8 @@ object S3 {
     
     inline def setRules(value: js.Array[S3Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: S3Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    
+    inline def setRulesVarargs(value: S3Rule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

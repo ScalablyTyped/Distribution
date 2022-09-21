@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PrePassConfiguration extends StObject {
+  
+  /* private */ var _lastUpdateFrameId: Any
   
   /**
     * Binds the material data.
@@ -19,10 +20,16 @@ trait PrePassConfiguration extends StObject {
   def bindForSubMesh(effect: Effect, scene: Scene, mesh: Mesh, world: Matrix, isFrozen: Boolean): Unit
   
   /**
+    * Current view projection matrix
+    * Used for computing velocity
+    */
+  var currentViewProjection: Matrix
+  
+  /**
     * Previous bones of meshes carrying this material
     * Used for computing velocity
     */
-  var previousBones: NumberDictionary[Float32Array]
+  var previousBones: NumberDictionary[js.typedarray.Float32Array]
   
   /**
     * Previous view project matrix
@@ -39,12 +46,14 @@ trait PrePassConfiguration extends StObject {
 object PrePassConfiguration {
   
   inline def apply(
+    _lastUpdateFrameId: Any,
     bindForSubMesh: (Effect, Scene, Mesh, Matrix, Boolean) => Unit,
-    previousBones: NumberDictionary[Float32Array],
+    currentViewProjection: Matrix,
+    previousBones: NumberDictionary[js.typedarray.Float32Array],
     previousViewProjection: Matrix,
     previousWorldMatrices: NumberDictionary[Matrix]
   ): PrePassConfiguration = {
-    val __obj = js.Dynamic.literal(bindForSubMesh = js.Any.fromFunction5(bindForSubMesh), previousBones = previousBones.asInstanceOf[js.Any], previousViewProjection = previousViewProjection.asInstanceOf[js.Any], previousWorldMatrices = previousWorldMatrices.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_lastUpdateFrameId = _lastUpdateFrameId.asInstanceOf[js.Any], bindForSubMesh = js.Any.fromFunction5(bindForSubMesh), currentViewProjection = currentViewProjection.asInstanceOf[js.Any], previousBones = previousBones.asInstanceOf[js.Any], previousViewProjection = previousViewProjection.asInstanceOf[js.Any], previousWorldMatrices = previousWorldMatrices.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrePassConfiguration]
   }
   
@@ -52,10 +61,14 @@ object PrePassConfiguration {
     
     inline def setBindForSubMesh(value: (Effect, Scene, Mesh, Matrix, Boolean) => Unit): Self = StObject.set(x, "bindForSubMesh", js.Any.fromFunction5(value))
     
-    inline def setPreviousBones(value: NumberDictionary[Float32Array]): Self = StObject.set(x, "previousBones", value.asInstanceOf[js.Any])
+    inline def setCurrentViewProjection(value: Matrix): Self = StObject.set(x, "currentViewProjection", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousBones(value: NumberDictionary[js.typedarray.Float32Array]): Self = StObject.set(x, "previousBones", value.asInstanceOf[js.Any])
     
     inline def setPreviousViewProjection(value: Matrix): Self = StObject.set(x, "previousViewProjection", value.asInstanceOf[js.Any])
     
     inline def setPreviousWorldMatrices(value: NumberDictionary[Matrix]): Self = StObject.set(x, "previousWorldMatrices", value.asInstanceOf[js.Any])
+    
+    inline def set_lastUpdateFrameId(value: Any): Self = StObject.set(x, "_lastUpdateFrameId", value.asInstanceOf[js.Any])
   }
 }

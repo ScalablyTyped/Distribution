@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FieldOrDatumDef extends StObject {
   
-  var fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+  var fieldOrDatumDef: (TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
   
   var scaleType: typings.vegaLite.scaleMod.ScaleType
   
@@ -25,7 +25,7 @@ trait FieldOrDatumDef extends StObject {
 object FieldOrDatumDef {
   
   inline def apply(
-    fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
+    fieldOrDatumDef: (TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
     scaleType: typings.vegaLite.scaleMod.ScaleType
   ): FieldOrDatumDef = {
     val __obj = js.Dynamic.literal(fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
@@ -35,7 +35,7 @@ object FieldOrDatumDef {
   extension [Self <: FieldOrDatumDef](x: Self) {
     
     inline def setFieldOrDatumDef(
-      value: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+      value: (TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
     
     inline def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
@@ -48,6 +48,6 @@ object FieldOrDatumDef {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of PivotTable styles.
   *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -22,13 +22,14 @@ trait PivotTableStyleCollection
      with ClientObject {
   
   /**
-    * Creates a blank PivotTableStyle with the specified name.
+    * Creates a blank `PivotTableStyle` with the specified name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name The unique name for the new PivotTableStyle. Will throw an invalid argument exception if the name is already in use.
-    * @param makeUniqueName Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.
-    * @returns The newly created PivotTableStyle.
+    * @param name The unique name for the new PivotTable style. Will throw an `InvalidArgument` error if the name is already in use.
+    * @param makeUniqueName Optional. Defaults to `false`. If `true`, will append numbers to the name in order to make it unique, if needed.
+    * @returns The newly created `PivotTableStyle`.
     */
   def add(name: String): PivotTableStyle = js.native
   def add(name: String, makeUniqueName: Boolean): PivotTableStyle = js.native
@@ -40,35 +41,40 @@ trait PivotTableStyleCollection
   /**
     * Gets the number of PivotTable styles in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets the default PivotTableStyle for the parent object's scope.
+    * Gets the default PivotTable style for the parent object's scope.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
-    * @returns The PivotTableStyle object that is the current default PivotTableStyle.
+    * @returns The `PivotTableStyle` object that is the current default PivotTable style.
     */
   def getDefault(): PivotTableStyle = js.native
   
   /**
-    * Gets a PivotTableStyle by name.
+    * Gets a `PivotTableStyle` by name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name Name of the PivotTableStyle to be retrieved.
-    * @returns The PivotTableStyle object whose name matches the input.
+    * @param name Name of the PivotTable style to be retrieved.
+    * @returns The `PivotTableStyle` object whose name matches the input.
     */
   def getItem(name: String): PivotTableStyle = js.native
   
   /**
-    * Gets a PivotTableStyle by name. If the PivotTableStyle does not exist, will return a null object.
+    * Gets a `PivotTableStyle` by name. If the `PivotTableStyle` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name Name of the PivotTableStyle to be retrieved.
-    * @returns The PivotTableStyle object whose name matches the input.
+    * @param name Name of the PivotTable style to be retrieved.
+    * @returns The `PivotTableStyle` object whose name matches the input.
     */
   def getItemOrNullObject(name: String): PivotTableStyle = js.native
   
@@ -88,11 +94,12 @@ trait PivotTableStyleCollection
   
   def setDefault(newDefaultStyle: String): Unit = js.native
   /**
-    * Sets the default PivotTableStyle for use in the parent object's scope.
+    * Sets the default PivotTable style for use in the parent object's scope.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param newDefaultStyle The PivotTableStyle object or name of the PivotTableStyle object that should be the new default.
+    * @param newDefaultStyle The `PivotTableStyle` object, or name of the `PivotTableStyle` object, that should be the new default.
     */
   def setDefault(newDefaultStyle: PivotTableStyle): Unit = js.native
   

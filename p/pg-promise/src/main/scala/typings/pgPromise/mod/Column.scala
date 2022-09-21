@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/helpers.Column.html
 @JSImport("pg-promise", "Column")
 @js.native
-class Column[S] protected () extends StObject {
+open class Column[T] protected ()
+  extends StObject
+     with _QueryColumns[T] {
   def this(col: String) = this()
-  def this(col: IColumnConfig[S]) = this()
+  def this(col: IColumnConfig[T]) = this()
   
   val cast: String = js.native
   
@@ -18,11 +20,11 @@ class Column[S] protected () extends StObject {
   
   val cnd: Boolean = js.native
   
-  val `def`: js.Any = js.native
+  val `def`: Any = js.native
   
   val escapedName: String = js.native
   
-  def init(col: IColumnDescriptor[S]): js.Any = js.native
+  def init(col: IColumnDescriptor[T]): Any = js.native
   
   val mod: FormattingFilter = js.native
   
@@ -31,7 +33,9 @@ class Column[S] protected () extends StObject {
   
   val prop: String = js.native
   
-  def skip(col: IColumnDescriptor[S]): Boolean = js.native
+  def skip(col: IColumnDescriptor[T]): Boolean = js.native
   
   def toString(level: Double): String = js.native
+  
+  val variable: String = js.native
 }

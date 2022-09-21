@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureViewModelProperties extends StObject {
   
   /**
+    * Defines the specific [abilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#Abilities) that the [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) and [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) widgets should use when querying and displaying its content.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#abilities)
+    */
+  var abilities: js.UndefOr[FeatureViewModelAbilities] = js.undefined
+  
+  /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#defaultPopupTemplateEnabled)
     */
@@ -16,6 +27,8 @@ trait FeatureViewModelProperties extends StObject {
   /**
     * The [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) used to represent the feature.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#graphic)
     */
   var graphic: js.UndefOr[GraphicProperties] = js.undefined
@@ -23,12 +36,16 @@ trait FeatureViewModelProperties extends StObject {
   /**
     * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#map)
     */
   var map: js.UndefOr[MapProperties] = js.undefined
   
   /**
     * The spatial reference used for [Arcade](https://developers.arcgis.com/arcade) operations.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#spatialReference)
     */
@@ -39,7 +56,7 @@ trait FeatureViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
 object FeatureViewModelProperties {
   
@@ -49,6 +66,10 @@ object FeatureViewModelProperties {
   }
   
   extension [Self <: FeatureViewModelProperties](x: Self) {
+    
+    inline def setAbilities(value: FeatureViewModelAbilities): Self = StObject.set(x, "abilities", value.asInstanceOf[js.Any])
+    
+    inline def setAbilitiesUndefined: Self = StObject.set(x, "abilities", js.undefined)
     
     inline def setDefaultPopupTemplateEnabled(value: Boolean): Self = StObject.set(x, "defaultPopupTemplateEnabled", value.asInstanceOf[js.Any])
     
@@ -66,7 +87,7 @@ object FeatureViewModelProperties {
     
     inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }

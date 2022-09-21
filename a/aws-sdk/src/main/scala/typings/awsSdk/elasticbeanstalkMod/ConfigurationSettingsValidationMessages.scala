@@ -24,6 +24,6 @@ object ConfigurationSettingsValidationMessages {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
-    inline def setMessagesVarargs(value: ValidationMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: ValidationMessage*): Self = StObject.set(x, "Messages", js.Array(value*))
   }
 }

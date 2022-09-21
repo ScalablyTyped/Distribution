@@ -59,7 +59,7 @@ trait InlineShape extends StObject {
   
   val OWSAnchor: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PictureFormat: typings.activexWord.Word.PictureFormat
   
@@ -122,7 +122,7 @@ object InlineShape {
     LockAspectRatio: MsoTriState,
     OLEFormat: OLEFormat,
     OWSAnchor: Double,
-    Parent: js.Any,
+    Parent: Any,
     PictureFormat: PictureFormat,
     Range: Range,
     Reflection: ReflectionFormat,
@@ -197,7 +197,7 @@ object InlineShape {
     
     inline def setOWSAnchor(value: Double): Self = StObject.set(x, "OWSAnchor", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPictureFormat(value: PictureFormat): Self = StObject.set(x, "PictureFormat", value.asInstanceOf[js.Any])
     

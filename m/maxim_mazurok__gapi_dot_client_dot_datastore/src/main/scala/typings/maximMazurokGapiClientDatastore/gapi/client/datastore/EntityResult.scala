@@ -12,6 +12,9 @@ trait EntityResult extends StObject {
   /** The resulting entity. */
   var entity: js.UndefOr[Entity] = js.undefined
   
+  /** The time at which the entity was last changed. This field is set for `FULL` entity results. If this entity is missing, this field will not be set. */
+  var updateTime: js.UndefOr[String] = js.undefined
+  
   /**
     * The version of the entity, a strictly positive number that monotonically increases with changes to the entity. This field is set for `FULL` entity results. For missing entities in
     * `LookupResponse`, this is the version of the snapshot that was used to look up the entity, and it is always set except for eventually consistent reads.
@@ -34,6 +37,10 @@ object EntityResult {
     inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

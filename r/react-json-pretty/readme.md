@@ -10,10 +10,10 @@ A code formatting tool for raw json data
 | ------------------ | :-------------: |
 | Full name          | react-json-pretty |
 | Keywords           | react, json, format, pretty, react-component |
-| # releases         | 4 |
-| # dependents       | 47 |
-| # downloads        | 1264387 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 210564.0 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://github.com/chenckang/react-json-pretty#readme)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "issue-regex" : "3.1.0"
+      "issue-regex" : "4.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "issue-regex" : "3.1.0"
+      "issue-regex" : "4.1.0"
     }
   ],
   "compile-devDependencies" : [

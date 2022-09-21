@@ -9,7 +9,7 @@ object dataRegionMod {
   
   @JSImport("@antv/component/lib/annotation/data-region", JSImport.Default)
   @js.native
-  class default () extends DataRegionAnnotation
+  open class default () extends DataRegionAnnotation
   
   @js.native
   trait DataRegionAnnotation

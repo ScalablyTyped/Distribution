@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientReminderAlertNotification")
 @js.native
-class ASPxClientReminderAlertNotification ()
+open class ASPxClientReminderAlertNotification ()
   extends StObject
      with typings.devexpressWeb.ASPxClientReminderAlertNotification {
   

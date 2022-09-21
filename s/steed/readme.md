@@ -11,9 +11,9 @@ horsepower for your modules
 | Full name          | steed |
 | Keywords           | control, flow, async, series, parallel |
 | # releases         | 0 |
-| # dependents       | 48 |
-| # downloads        | 1622811 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 996306.3333333334 |
+| # stars            | 152.0 |
 
 ## Links
 - [Homepage](https://github.com/mcollina/steed#readme)

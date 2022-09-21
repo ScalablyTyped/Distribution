@@ -1,7 +1,6 @@
 package typings.reactRouterBootstrap
 
 import org.scalablytyped.runtime.Shortcut
-import typings.history.mod.LocationState
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
@@ -19,15 +18,14 @@ object indexLinkContainerMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-router-bootstrap/lib/IndexLinkContainer", JSImport.Default)
   @js.native
-  class defaultCls protected ()
-    extends Component[NavLinkProps[LocationState], ComponentState, js.Any] {
-    def this(props: NavLinkProps[LocationState]) = this()
-    def this(props: NavLinkProps[LocationState], context: js.Any) = this()
+  open class defaultCls protected () extends Component[NavLinkProps, ComponentState, Any] {
+    def this(props: NavLinkProps) = this()
+    def this(props: NavLinkProps, context: Any) = this()
   }
   
   //IndexLink is removed in react-router, but continues there in react-router-bootstrap for backwards compatibility.
   //Better use <LinkContainer exact/>
-  type IndexLinkContainer = ComponentClass[NavLinkProps[LocationState], ComponentState]
+  type IndexLinkContainer = ComponentClass[NavLinkProps, ComponentState]
   
   type _To = IndexLinkContainer
   

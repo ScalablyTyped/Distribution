@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Configurations extends StObject {
   
   /**
-    * The current configuration of the broker.
+    * The broker's current configuration.
     */
   var Current: js.UndefOr[ConfigurationId] = js.undefined
   
@@ -17,7 +17,7 @@ trait Configurations extends StObject {
   var History: js.UndefOr[listOfConfigurationId] = js.undefined
   
   /**
-    * The pending configuration of the broker.
+    * The broker's pending configuration.
     */
   var Pending: js.UndefOr[ConfigurationId] = js.undefined
 }
@@ -38,7 +38,7 @@ object Configurations {
     
     inline def setHistoryUndefined: Self = StObject.set(x, "History", js.undefined)
     
-    inline def setHistoryVarargs(value: ConfigurationId*): Self = StObject.set(x, "History", js.Array(value :_*))
+    inline def setHistoryVarargs(value: ConfigurationId*): Self = StObject.set(x, "History", js.Array(value*))
     
     inline def setPending(value: ConfigurationId): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     

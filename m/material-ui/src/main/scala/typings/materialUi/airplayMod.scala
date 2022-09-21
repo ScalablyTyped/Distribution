@@ -10,10 +10,10 @@ object airplayMod {
   
   @JSImport("material-ui/svg-icons/av/airplay", JSImport.Default)
   @js.native
-  class default () extends AvAirplay
+  open class default () extends AvAirplay
   
   @JSImport("material-ui/svg-icons/av/airplay", "AvAirplay")
   @js.native
-  class AvAirplay ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvAirplay ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

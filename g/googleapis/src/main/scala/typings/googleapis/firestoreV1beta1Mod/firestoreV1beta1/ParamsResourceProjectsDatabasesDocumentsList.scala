@@ -1,9 +1,5 @@
 package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceProjectsDatabasesDocumentsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The collection ID, relative to `parent`, to list. For example:
-    * `chatrooms` or `messages`.
+    * Required. The collection ID, relative to `parent`, to list. For example: `chatrooms` or `messages`.
     */
   var collectionId: js.UndefOr[String] = js.undefined
   
   /**
-    * The list of field paths in the mask. See Document.fields for a field path
-    * syntax reference.
+    * The list of field paths in the mask. See Document.fields for a field path syntax reference.
     */
   @JSName("mask.fieldPaths")
   var maskDotfieldPaths: js.UndefOr[js.Array[String]] = js.undefined
@@ -41,32 +30,22 @@ trait ParamsResourceProjectsDatabasesDocumentsList
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The `next_page_token` value returned from a previous List request, if
-    * any.
+    * The `next_page_token` value returned from a previous List request, if any.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The parent resource name. In the format:
-    * `projects/{project_id}/databases/{database_id}/documents` or
-    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-    * For example: `projects/my-project/databases/my-database/documents` or
-    * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
+    * Required. The parent resource name. In the format: `projects/{project_id\}/databases/{database_id\}/documents` or `projects/{project_id\}/databases/{database_id\}/documents/{document_path\}`. For example: `projects/my-project/databases/my-database/documents` or `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
     */
   var parent: js.UndefOr[String] = js.undefined
   
   /**
-    * Reads documents as they were at the given time. This may not be older
-    * than 60 seconds.
+    * Reads documents as they were at the given time. This may not be older than 270 seconds.
     */
   var readTime: js.UndefOr[String] = js.undefined
   
   /**
-    * If the list should show missing documents. A missing document is a
-    * document that does not exist but has sub-documents. These documents will
-    * be returned with a key but will not have fields, Document.create_time, or
-    * Document.update_time set.  Requests with `show_missing` may not specify
-    * `where` or `order_by`.
+    * If the list should show missing documents. A missing document is a document that does not exist but has sub-documents. These documents will be returned with a key but will not have fields, Document.create_time, or Document.update_time set. Requests with `show_missing` may not specify `where` or `order_by`.
     */
   var showMissing: js.UndefOr[Boolean] = js.undefined
   
@@ -84,10 +63,6 @@ object ParamsResourceProjectsDatabasesDocumentsList {
   
   extension [Self <: ParamsResourceProjectsDatabasesDocumentsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     
     inline def setCollectionIdUndefined: Self = StObject.set(x, "collectionId", js.undefined)
@@ -96,7 +71,7 @@ object ParamsResourceProjectsDatabasesDocumentsList {
     
     inline def setMaskDotfieldPathsUndefined: Self = StObject.set(x, "mask.fieldPaths", js.undefined)
     
-    inline def setMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "mask.fieldPaths", js.Array(value :_*))
+    inline def setMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "mask.fieldPaths", js.Array(value*))
     
     inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

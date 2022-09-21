@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetMethodRequest extends StObject {
   
   /**
-    * [Required] Specifies the method request's HTTP method type.
+    * Specifies the method request's HTTP method type.
     */
   var httpMethod: String
   
   /**
-    * [Required] The Resource identifier for the Method resource.
+    * The Resource identifier for the Method resource.
     */
   var resourceId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

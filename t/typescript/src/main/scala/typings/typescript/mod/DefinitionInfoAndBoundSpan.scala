@@ -23,7 +23,7 @@ object DefinitionInfoAndBoundSpan {
     
     inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
     
-    inline def setDefinitionsVarargs(value: DefinitionInfo*): Self = StObject.set(x, "definitions", js.Array(value :_*))
+    inline def setDefinitionsVarargs(value: DefinitionInfo*): Self = StObject.set(x, "definitions", js.Array(value*))
     
     inline def setTextSpan(value: TextSpan): Self = StObject.set(x, "textSpan", value.asInstanceOf[js.Any])
   }

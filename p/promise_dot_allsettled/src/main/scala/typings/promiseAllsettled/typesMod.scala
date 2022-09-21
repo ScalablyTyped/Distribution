@@ -11,7 +11,7 @@ object typesMod {
   
   trait PromiseRejection[E]
     extends StObject
-       with PromiseResult[js.Any, E] {
+       with PromiseResult[Any, E] {
     
     var reason: E
     
@@ -34,7 +34,7 @@ object typesMod {
   
   trait PromiseResolution[T]
     extends StObject
-       with PromiseResult[T, js.Any] {
+       with PromiseResult[T, Any] {
     
     var status: fulfilled
     
@@ -73,11 +73,11 @@ object typesMod {
     }
   }
   
-  type PromiseResultTuple[T /* <: Array[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type PromiseResultTuple[T /* <: Array[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: promise.allsettled.promise.allsettled/types.PromiseResult<T[P], unknown>}
     */ typings.promiseAllsettled.promiseAllsettledStrings.PromiseResultTuple & TopLevel[T]
   
-  type PromiseTuple[T /* <: Array[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type PromiseTuple[T /* <: Array[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: std.Promise<T[P]>}
     */ typings.promiseAllsettled.promiseAllsettledStrings.PromiseTuple & TopLevel[T]
 }

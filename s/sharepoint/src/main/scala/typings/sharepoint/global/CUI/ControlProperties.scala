@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("CUI.ControlProperties")
 @js.native
 // QueryCommand: string;
-class ControlProperties ()
+open class ControlProperties ()
   extends StObject
      with typings.sharepoint.CUI.ControlProperties {
   

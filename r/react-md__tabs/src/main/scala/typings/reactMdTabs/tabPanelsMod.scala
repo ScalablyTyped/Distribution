@@ -21,6 +21,8 @@ object tabPanelsMod {
     /**
       * Boolean if this component should no longer automatically reset the scrolling
       * to the top when the panel changes.
+      *
+      * @defaultValue `false`
       */
     var disableScrollFix: js.UndefOr[Boolean] = js.undefined
     
@@ -28,6 +30,8 @@ object tabPanelsMod {
       * Boolean if the swiping transition should be disabled. If you want to add
       * a custom transition, you'll need to wrap the `TabPanel`'s children in a
       * custom component that does appear and exit animations.
+      *
+      * @defaultValue `false`
       */
     var disableTransition: js.UndefOr[Boolean] = js.undefined
     
@@ -37,6 +41,8 @@ object tabPanelsMod {
       * instead of mounting and unmounting when their active state changes. The
       * panels will also be updated to ensure that inactive panels can not be
       * tab focusable.
+      *
+      * @defaultValue `false`
       */
     var persistent: js.UndefOr[Boolean] = js.undefined
   }

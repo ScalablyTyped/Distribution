@@ -1,12 +1,13 @@
 package typings.babylonjs
 
-import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.iparticleemittertypeMod.IParticleEmitterType
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.particleMod.Particle
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import typings.babylonjs.uniformBufferEffectCommonAccessorMod.UniformBufferEffectCommonAccessor
+import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ object coneParticleEmitterMod {
     * @param angle the cone base angle (PI by default)
     * @param directionRandomizer defines how much to randomize the particle direction [0-1] (default is 0)
     */
-  class ConeParticleEmitter ()
+  open class ConeParticleEmitter ()
     extends StObject
        with IParticleEmitterType {
     def this(radius: Double) = this()
@@ -52,13 +53,13 @@ object coneParticleEmitterMod {
     directionRandomizer: Double
     ) = this()
     
-    /* private */ var _angle: js.Any = js.native
+    /* private */ var _angle: Any = js.native
     
-    /* private */ var _buildHeight: js.Any = js.native
+    /* private */ var _buildHeight: Any = js.native
     
-    /* private */ var _height: js.Any = js.native
+    /* private */ var _height: Any = js.native
     
-    /* private */ var _radius: js.Any = js.native
+    /* private */ var _radius: Any = js.native
     
     /**
       * Gets or sets the angle of the emission cone
@@ -68,10 +69,17 @@ object coneParticleEmitterMod {
     
     /**
       * Called by the GPUParticleSystem to setup the update shader
-      * @param effect defines the update shader
+      * @param uboOrEffect defines the update shader
       */
     /* CompleteClass */
-    override def applyToShader(effect: Effect): Unit = js.native
+    override def applyToShader(uboOrEffect: UniformBufferEffectCommonAccessor): Unit = js.native
+    
+    /**
+      * Creates the structure of the ubo for this particle emitter
+      * @param ubo ubo to create the structure for
+      */
+    /* CompleteClass */
+    override def buildUniformLayout(ubo: UniformBuffer): Unit = js.native
     
     /** defines how much to randomize the particle direction [0-1] (default is 0) */
     var directionRandomizer: Double = js.native
@@ -104,14 +112,14 @@ object coneParticleEmitterMod {
       * Parse properties from a JSON object
       * @param serializationObject defines the JSON object
       */
-    def parse(serializationObject: js.Any): Unit = js.native
+    def parse(serializationObject: Any): Unit = js.native
     /**
       * Parse properties from a JSON object
       * @param serializationObject defines the JSON object
       * @param scene defines the hosting scene
       */
     /* CompleteClass */
-    override def parse(serializationObject: js.Any, scene: Nullable[Scene]): Unit = js.native
+    override def parse(serializationObject: Any, scene: Nullable[Scene]): Unit = js.native
     
     /**
       * Gets or sets the radius of the emission cone
@@ -130,7 +138,7 @@ object coneParticleEmitterMod {
       * @returns the JSON object
       */
     /* CompleteClass */
-    override def serialize(): js.Any = js.native
+    override def serialize(): Any = js.native
     
     /**
       * Called by the particle System when the direction is computed for the created particle.
@@ -139,8 +147,23 @@ object coneParticleEmitterMod {
       * @param particle is the particle we are computed the direction for
       * @param isLocal defines if the direction should be set in local space
       */
+    def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
+    /**
+      * Called by the particle System when the direction is computed for the created particle.
+      * @param worldMatrix is the world matrix of the particle system
+      * @param directionToUpdate is the direction vector to update with the result
+      * @param particle is the particle we are computed the direction for
+      * @param isLocal defines if the direction should be set in local space
+      * @param inverseWorldMatrix defines the inverted world matrix to use if isLocal is false
+      */
     /* CompleteClass */
-    override def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
+    override def startDirectionFunction(
+      worldMatrix: Matrix,
+      directionToUpdate: Vector3,
+      particle: Particle,
+      isLocal: Boolean,
+      inverseWorldMatrix: Matrix
+    ): Unit = js.native
     
     /**
       * Called by the particle System when the position is computed for the created particle.

@@ -10,10 +10,10 @@ Listen for changes. Like an event emitter that only emits a single event type. R
 | ------------------ | :-------------: |
 | Full name          | change-emitter |
 | Keywords           | change, event, emitter |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 59259766 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4154593.6666666665 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/acdlite/change-emitter#readme)

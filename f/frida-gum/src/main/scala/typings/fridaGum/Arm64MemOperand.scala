@@ -17,8 +17,8 @@ trait Arm64MemOperand
 }
 object Arm64MemOperand {
   
-  inline def apply(value: Index): Arm64MemOperand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, value: Index): Arm64MemOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[Arm64MemOperand]
   }

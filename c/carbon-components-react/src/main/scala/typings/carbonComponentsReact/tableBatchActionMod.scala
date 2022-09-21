@@ -182,7 +182,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.wbr
 import typings.carbonComponentsReact.carbonComponentsReactStrings.webview
 import typings.carbonComponentsReact.typingsSharedMod.FCReturn
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
-import typings.react.mod.JSXElementConstructor
+import typings.carbonComponentsReact.typingsSharedMod.ReactComponentConstructor
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
@@ -213,7 +213,7 @@ object tableBatchActionMod {
     ]
   ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def default_T_JSXElementConstructorAnyR[T /* <: JSXElementConstructor[js.Any] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

@@ -10,5 +10,5 @@ object operatorMapToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def mapTo[T, R](value: R): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapTo")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def mapTo[T, R](value: R): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapTo")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetEmailIdentityRequest extends StObject {
   
   /**
-    * The email identity that you want to retrieve details for.
+    * The email identity.
     */
   var EmailIdentity: Identity
 }

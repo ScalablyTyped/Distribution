@@ -15,54 +15,57 @@ object groupedListBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupedList.base", "GroupedListBase")
   @js.native
-  class GroupedListBase protected ()
-    extends Component[IGroupedListProps, IGroupedListState, js.Any]
+  open class GroupedListBase protected ()
+    extends Component[IGroupedListProps, IGroupedListState, Any]
        with IGroupedList {
     def this(props: IGroupedListProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _computeIsSomeGroupExpanded: js.Any = js.native
+    /* private */ var _computeIsSomeGroupExpanded: Any = js.native
     
-    /* private */ var _forceListUpdates: js.Any = js.native
+    /* private */ var _forceListUpdates: Any = js.native
     
-    /* private */ var _getDefaultGroupItemLimit: js.Any = js.native
+    /* private */ var _getDefaultGroupItemLimit: Any = js.native
     
-    /* private */ var _getGroupHeight: js.Any = js.native
+    /* private */ var _getGroupHeight: Any = js.native
     
-    /* private */ var _getGroupItemLimit: js.Any = js.native
+    /* private */ var _getGroupItemLimit: Any = js.native
     
-    /* private */ var _getGroupKey: js.Any = js.native
+    /* private */ var _getGroupKey: Any = js.native
     
-    /* private */ var _getGroupNestingDepth: js.Any = js.native
+    /* private */ var _getGroupNestingDepth: Any = js.native
     
-    /* private */ var _getPageHeight: js.Any = js.native
+    /* private */ var _getPageHeight: Any = js.native
     
-    /* private */ var _getPageSpecification: js.Any = js.native
+    /* private */ var _getPageSpecification: Any = js.native
     
-    /* private */ var _isInnerZoneKeystroke: js.Any = js.native
+    /* private */ var _isInnerZoneKeystroke: Any = js.native
     
-    /* private */ var _isSomeGroupExpanded: js.Any = js.native
+    /* private */ var _isSomeGroupExpanded: Any = js.native
     
-    /* private */ var _list: js.Any = js.native
+    /* private */ var _list: Any = js.native
     
-    /* private */ var _onToggleCollapse: js.Any = js.native
+    /* private */ var _onToggleCollapse: Any = js.native
     
-    /* private */ var _onToggleSelectGroup: js.Any = js.native
+    /* private */ var _onToggleSelectGroup: Any = js.native
     
-    /* private */ var _onToggleSummarize: js.Any = js.native
+    /* private */ var _onToggleSummarize: Any = js.native
     
-    /* private */ var _renderGroup: js.Any = js.native
+    /* private */ var _renderGroup: Any = js.native
     
-    /* private */ var _returnOne: js.Any = js.native
+    /* private */ var _returnOne: Any = js.native
     
-    /* private */ var _setGroupsCollapsedState: js.Any = js.native
+    /* private */ var _setGroupsCollapsedState: Any = js.native
     
-    /* private */ var _updateIsSomeGroupExpanded: js.Any = js.native
+    /* private */ var _updateIsSomeGroupExpanded: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MGroupedListBase(): Unit = js.native
     
+    /**
+      * Force the component to update.
+      */
     /* InferMemberOverrides */
     override def forceUpdate(): Unit = js.native
   }
@@ -87,9 +90,9 @@ object groupedListBaseMod {
     
     var groups: js.UndefOr[js.Array[IGroup]] = js.undefined
     
-    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var items: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var listProps: js.UndefOr[IListProps[js.Any]] = js.undefined
+    var listProps: js.UndefOr[IListProps[Any]] = js.undefined
     
     var selectionMode: js.UndefOr[SelectionMode] = js.undefined
   }
@@ -110,15 +113,15 @@ object groupedListBaseMod {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value*))
       
-      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setListProps(value: IListProps[js.Any]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
+      inline def setListProps(value: IListProps[Any]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
       
       inline def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
       

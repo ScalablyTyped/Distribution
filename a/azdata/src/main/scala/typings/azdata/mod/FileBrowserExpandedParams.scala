@@ -33,7 +33,7 @@ object FileBrowserExpandedParams {
     
     inline def setChildren(value: js.Array[FileTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: FileTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: FileTreeNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setExpandPath(value: String): Self = StObject.set(x, "expandPath", value.asInstanceOf[js.Any])
     

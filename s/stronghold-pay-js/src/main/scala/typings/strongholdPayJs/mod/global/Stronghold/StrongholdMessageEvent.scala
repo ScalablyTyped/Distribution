@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StrongholdMessageEvent
   extends StObject
-     with MessageEvent[js.Any] {
+     with MessageEvent[Any] {
   
   @JSName("data")
   var data_StrongholdMessageEvent: Event = js.native

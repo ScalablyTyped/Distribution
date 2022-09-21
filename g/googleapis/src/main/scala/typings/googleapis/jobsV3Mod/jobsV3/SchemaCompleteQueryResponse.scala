@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Output only.  Response of auto-complete query.
-  */
 trait SchemaCompleteQueryResponse extends StObject {
   
   /**
@@ -15,8 +12,7 @@ trait SchemaCompleteQueryResponse extends StObject {
   var completionResults: js.UndefOr[js.Array[SchemaCompletionResult]] = js.undefined
   
   /**
-    * Additional information for the API invocation, such as the request
-    * tracking id.
+    * Additional information for the API invocation, such as the request tracking id.
     */
   var metadata: js.UndefOr[SchemaResponseMetadata] = js.undefined
 }
@@ -33,7 +29,7 @@ object SchemaCompleteQueryResponse {
     
     inline def setCompletionResultsUndefined: Self = StObject.set(x, "completionResults", js.undefined)
     
-    inline def setCompletionResultsVarargs(value: SchemaCompletionResult*): Self = StObject.set(x, "completionResults", js.Array(value :_*))
+    inline def setCompletionResultsVarargs(value: SchemaCompletionResult*): Self = StObject.set(x, "completionResults", js.Array(value*))
     
     inline def setMetadata(value: SchemaResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

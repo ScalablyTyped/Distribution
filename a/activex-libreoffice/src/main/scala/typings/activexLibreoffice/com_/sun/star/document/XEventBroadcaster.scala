@@ -32,7 +32,7 @@ object XEventBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XEventBroadcaster = {

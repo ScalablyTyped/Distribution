@@ -10,15 +10,13 @@ Highly customizable jquery plugin to show toast messages
 | ------------------ | :-------------: |
 | Full name          | jquery-toast-plugin |
 | Keywords           | Toast, Toast plugin, Jquery toast plugin |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 169066 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 24814.666666666668 |
+| # stars            | 1365.0 |
 
 ## Links
 - [Homepage](http://www.kamranahmed.info/toast)
-- [Bugs](https://github.com/kamranahmedse/jquery-toast-plugin/issues)
-- [Repository](https://github.com/kamranahmedse/jquery-toast-plugin)
 - [Npm](https://www.npmjs.com/package/jquery-toast-plugin)
     
 

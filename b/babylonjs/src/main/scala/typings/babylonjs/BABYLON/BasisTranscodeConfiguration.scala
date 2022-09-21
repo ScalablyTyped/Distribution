@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.anon.Etc1
+import typings.babylonjs.anon.Astc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait BasisTranscodeConfiguration extends StObject {
   /**
     * Supported compression formats used to determine the supported output format of the transcoder
     */
-  var supportedCompressionFormats: js.UndefOr[Etc1] = js.undefined
+  var supportedCompressionFormats: js.UndefOr[Astc] = js.undefined
 }
 object BasisTranscodeConfiguration {
   
@@ -39,7 +39,7 @@ object BasisTranscodeConfiguration {
     
     inline def setLoadSingleImageUndefined: Self = StObject.set(x, "loadSingleImage", js.undefined)
     
-    inline def setSupportedCompressionFormats(value: Etc1): Self = StObject.set(x, "supportedCompressionFormats", value.asInstanceOf[js.Any])
+    inline def setSupportedCompressionFormats(value: Astc): Self = StObject.set(x, "supportedCompressionFormats", value.asInstanceOf[js.Any])
     
     inline def setSupportedCompressionFormatsUndefined: Self = StObject.set(x, "supportedCompressionFormats", js.undefined)
   }

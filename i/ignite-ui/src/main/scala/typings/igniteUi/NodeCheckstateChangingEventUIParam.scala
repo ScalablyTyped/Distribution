@@ -9,7 +9,7 @@ trait NodeCheckstateChangingEventUIParam extends StObject {
   /**
     * Gets the collection of all checked nodes before the new state is applied.
     */
-  var currentCheckedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var currentCheckedNodes: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets the current state of the checkbox.
@@ -24,12 +24,12 @@ trait NodeCheckstateChangingEventUIParam extends StObject {
   /**
     * Gets a reference to the node object the checkbox of which is being interacted with.
     */
-  var node: js.UndefOr[js.Any] = js.undefined
+  var node: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the tree.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object NodeCheckstateChangingEventUIParam {
   
@@ -40,11 +40,11 @@ object NodeCheckstateChangingEventUIParam {
   
   extension [Self <: NodeCheckstateChangingEventUIParam](x: Self) {
     
-    inline def setCurrentCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
+    inline def setCurrentCheckedNodes(value: js.Array[Any]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
     
     inline def setCurrentCheckedNodesUndefined: Self = StObject.set(x, "currentCheckedNodes", js.undefined)
     
-    inline def setCurrentCheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "currentCheckedNodes", js.Array(value :_*))
+    inline def setCurrentCheckedNodesVarargs(value: Any*): Self = StObject.set(x, "currentCheckedNodes", js.Array(value*))
     
     inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
@@ -54,11 +54,11 @@ object NodeCheckstateChangingEventUIParam {
     
     inline def setNewStateUndefined: Self = StObject.set(x, "newState", js.undefined)
     
-    inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

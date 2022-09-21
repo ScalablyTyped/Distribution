@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @option {Number} [requestTimeout] Timeout (in milliseconds) to wait for the
   *     request to finish.
   */
-class DispatcherCls ()
+open class DispatcherCls ()
   extends StObject
      with Dispatcher {
   def this(options: DispatcherOptions) = this()

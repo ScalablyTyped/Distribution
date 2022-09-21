@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-busboy
 
-Typings are for version 6.0
+Typings are for version 8.0
 
 ## Library description:
 Busboy for express, mimics the old bodyParser
@@ -10,15 +10,12 @@ Busboy for express, mimics the old bodyParser
 | ------------------ | :-------------: |
 | Full name          | express-busboy |
 | Keywords           | busboy, express, body-parser |
-| # releases         | 2 |
-| # dependents       | 18 |
-| # downloads        | 96933 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 29917.0 |
+| # stars            | 44.0 |
 
 ## Links
-- [Homepage](https://github.com/yahoo/express-busboy)
-- [Bugs](https://github.com/yahoo/express-busboy/issues)
-- [Repository](https://github.com/yahoo/express-busboy)
 - [Npm](https://www.npmjs.com/package/express-busboy)
     
 

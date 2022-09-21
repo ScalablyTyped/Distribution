@@ -8,5 +8,5 @@ object symbolicLinkMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_SymbolicLink", "_SymbolicLink")
   @js.native
-  val SymbolicLink: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SymbolicLink: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

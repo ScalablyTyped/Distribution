@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "BottomNavigationItem")
 @js.native
-class BottomNavigationItem ()
-  extends Component[BottomNavigationItemProps, js.Object, js.Any]
+open class BottomNavigationItem ()
+  extends Component[BottomNavigationItemProps, js.Object, Any]

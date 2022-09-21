@@ -29,12 +29,12 @@ object DeleteProjectResult {
     
     inline def setDeletedResourcesUndefined: Self = StObject.set(x, "deletedResources", js.undefined)
     
-    inline def setDeletedResourcesVarargs(value: Resource*): Self = StObject.set(x, "deletedResources", js.Array(value :_*))
+    inline def setDeletedResourcesVarargs(value: Resource*): Self = StObject.set(x, "deletedResources", js.Array(value*))
     
     inline def setOrphanedResources(value: Resources): Self = StObject.set(x, "orphanedResources", value.asInstanceOf[js.Any])
     
     inline def setOrphanedResourcesUndefined: Self = StObject.set(x, "orphanedResources", js.undefined)
     
-    inline def setOrphanedResourcesVarargs(value: Resource*): Self = StObject.set(x, "orphanedResources", js.Array(value :_*))
+    inline def setOrphanedResourcesVarargs(value: Resource*): Self = StObject.set(x, "orphanedResources", js.Array(value*))
   }
 }

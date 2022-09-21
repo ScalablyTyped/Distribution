@@ -8,7 +8,7 @@ trait CardViewBatchEditStartEditingEventArgs
   extends StObject
      with CancelEventArgs {
   
-  val cardValues: js.Any
+  val cardValues: Any
   
   var focusedColumn: BootstrapCardViewColumn
   
@@ -18,7 +18,7 @@ object CardViewBatchEditStartEditingEventArgs {
   
   inline def apply(
     cancel: Boolean,
-    cardValues: js.Any,
+    cardValues: Any,
     focusedColumn: BootstrapCardViewColumn,
     sender: Control,
     visibleIndex: Double
@@ -29,7 +29,7 @@ object CardViewBatchEditStartEditingEventArgs {
   
   extension [Self <: CardViewBatchEditStartEditingEventArgs](x: Self) {
     
-    inline def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
+    inline def setCardValues(value: Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
     
     inline def setFocusedColumn(value: BootstrapCardViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,6 @@ trait Arm64Writer extends StObject {
     * Puts an AND instruction.
     */
   def putAndRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Double): Unit = js.native
-  def putAndRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Int64): Unit = js.native
   def putAndRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: UInt64): Unit = js.native
   
   /**
@@ -151,10 +150,20 @@ trait Arm64Writer extends StObject {
   def putCallRegWithArguments(reg: Arm64Register, args: js.Array[Arm64CallArgument]): Unit = js.native
   
   /**
+    * Puts a CBNZ instruction.
+    */
+  def putCbnzRegImm(reg: Arm64Register, target: NativePointerValue): Unit = js.native
+  
+  /**
     * Puts a CBNZ instruction referencing `labelId`, defined by a past
     * or future `putLabel()`.
     */
   def putCbnzRegLabel(reg: Arm64Register, labelId: String): Unit = js.native
+  
+  /**
+    * Puts a CBZ instruction.
+    */
+  def putCbzRegImm(reg: Arm64Register, target: NativePointerValue): Unit = js.native
   
   /**
     * Puts a CBZ instruction referencing `labelId`, defined by a past
@@ -218,15 +227,42 @@ trait Arm64Writer extends StObject {
   /**
     * Puts an LDR instruction.
     */
+  def putLdrRegReg(dstReg: Arm64Register, srcReg: Arm64Register): Unit = js.native
+  
+  /**
+    * Puts an LDR instruction.
+    */
   def putLdrRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Double): Unit = js.native
   def putLdrRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Int64): Unit = js.native
   def putLdrRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: UInt64): Unit = js.native
+  
+  /**
+    * Puts an LDR MODE instruction.
+    */
+  def putLdrRegRegOffsetMode(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Double, mode: Arm64IndexMode): Unit = js.native
+  def putLdrRegRegOffsetMode(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Int64, mode: Arm64IndexMode): Unit = js.native
+  def putLdrRegRegOffsetMode(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: UInt64, mode: Arm64IndexMode): Unit = js.native
+  
+  /**
+    * Puts an LDR instruction.
+    */
+  def putLdrRegU32(reg: Arm64Register, `val`: Double): Unit = js.native
+  
+  /**
+    * Puts an LDR instruction.
+    */
+  def putLdrRegU32Ptr(reg: Arm64Register, srcAddress: NativePointerValue): Unit = js.native
   
   /**
     * Puts an LDR instruction.
     */
   def putLdrRegU64(reg: Arm64Register, `val`: Double): Unit = js.native
   def putLdrRegU64(reg: Arm64Register, `val`: UInt64): Unit = js.native
+  
+  /**
+    * Puts an LDR instruction.
+    */
+  def putLdrRegU64Ptr(reg: Arm64Register, srcAddress: NativePointerValue): Unit = js.native
   
   /**
     * Puts the value and updates the LDR instruction
@@ -240,6 +276,16 @@ trait Arm64Writer extends StObject {
   def putLdrswRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Double): Unit = js.native
   def putLdrswRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Int64): Unit = js.native
   def putLdrswRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: UInt64): Unit = js.native
+  
+  /**
+    * Puts a MOV NZCV instruction.
+    */
+  def putMovNzcvReg(reg: Arm64Register): Unit = js.native
+  
+  /**
+    * Puts a MOV NZCV instruction.
+    */
+  def putMovRegNzcv(reg: Arm64Register): Unit = js.native
   
   /**
     * Puts a MOV instruction.
@@ -314,9 +360,21 @@ trait Arm64Writer extends StObject {
   /**
     * Puts a STR instruction.
     */
+  def putStrRegReg(srcReg: Arm64Register, dstReg: Arm64Register): Unit = js.native
+  
+  /**
+    * Puts a STR instruction.
+    */
   def putStrRegRegOffset(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: Double): Unit = js.native
   def putStrRegRegOffset(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: Int64): Unit = js.native
   def putStrRegRegOffset(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: UInt64): Unit = js.native
+  
+  /**
+    * Puts a STR MODE instruction.
+    */
+  def putStrRegRegOffsetMode(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: Double, mode: Arm64IndexMode): Unit = js.native
+  def putStrRegRegOffsetMode(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: Int64, mode: Arm64IndexMode): Unit = js.native
+  def putStrRegRegOffsetMode(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: UInt64, mode: Arm64IndexMode): Unit = js.native
   
   /**
     * Puts a SUB instruction.
@@ -331,10 +389,20 @@ trait Arm64Writer extends StObject {
   def putSubRegRegReg(dstReg: Arm64Register, leftReg: Arm64Register, rightReg: Arm64Register): Unit = js.native
   
   /**
+    * Puts a TBNZ instruction.
+    */
+  def putTbnzRegImmImm(reg: Arm64Register, bit: Double, target: NativePointerValue): Unit = js.native
+  
+  /**
     * Puts a TBNZ instruction referencing `labelId`, defined by a past
     * or future `putLabel()`.
     */
   def putTbnzRegImmLabel(reg: Arm64Register, bit: Double, labelId: String): Unit = js.native
+  
+  /**
+    * Puts a TBZ instruction.
+    */
+  def putTbzRegImmImm(reg: Arm64Register, bit: Double, target: NativePointerValue): Unit = js.native
   
   /**
     * Puts a TBZ instruction referencing `labelId`, defined by a past

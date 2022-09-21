@@ -10,6 +10,11 @@ trait PickingInfo extends StObject {
   /** @hidden */
   var _pickingUnavailable: Boolean = js.native
   
+  /**
+    * The aim-space transform of the input used for picking, if it is an XR input source.
+    */
+  var aimTransform: Nullable[TransformNode] = js.native
+  
   /** (See getTextureCoordinates) The barycentric U coordinate that is used when calculating the texture coordinates of the collision.*/
   var bu: Double = js.native
   
@@ -25,10 +30,10 @@ trait PickingInfo extends StObject {
   var faceId: Double = js.native
   
   /**
-    * Gets the normal correspodning to the face the pick collided with
+    * Gets the normal corresponding to the face the pick collided with
     * @param useWorldCoordinates If the resulting normal should be relative to the world (default: false)
     * @param useVerticesNormals If the vertices normals should be used to calculate the normal instead of the normal map
-    * @returns The normal correspodning to the face the pick collided with
+    * @returns The normal corresponding to the face the pick collided with
     */
   def getNormal(): Nullable[Vector3] = js.native
   def getNormal(useWorldCoordinates: Boolean): Nullable[Vector3] = js.native
@@ -36,10 +41,16 @@ trait PickingInfo extends StObject {
   def getNormal(useWorldCoordinates: Unit, useVerticesNormals: Boolean): Nullable[Vector3] = js.native
   
   /**
-    * Gets the texture coordinates of where the pick occured
-    * @returns the vector containing the coordnates of the texture
+    * Gets the texture coordinates of where the pick occurred
+    * @returns the vector containing the coordinates of the texture
     */
   def getTextureCoordinates(): Nullable[Vector2] = js.native
+  
+  /**
+    * The grip-space transform of the input used for picking, if it is an XR input source.
+    * Some XR sources, such as input coming from head mounted displays, do not have this.
+    */
+  var gripTransform: Nullable[TransformNode] = js.native
   
   /**
     * If the pick collided with an object
@@ -47,7 +58,7 @@ trait PickingInfo extends StObject {
   var hit: Boolean = js.native
   
   /**
-    * If a mesh was used to do the picking (eg. 6dof controller) this will be populated.
+    * If a mesh was used to do the picking (eg. 6dof controller) as a "near interaction", this will be populated.
     */
   var originMesh: Nullable[AbstractMesh] = js.native
   
@@ -75,6 +86,6 @@ trait PickingInfo extends StObject {
   /** Id of the the submesh that was picked */
   var subMeshId: Double = js.native
   
-  /** If we are pikcing a mesh with thin instance, this will give you the picked thin instance */
+  /** If we are picking a mesh with thin instance, this will give you the picked thin instance */
   var thinInstanceIndex: Double = js.native
 }

@@ -2,7 +2,6 @@ package typings.awsSdkClientSqsNode
 
 import typings.awsSdkClientSqsNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesUntagQueueInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -43,11 +42,11 @@ object typesUntagQueueInputMod {
     /**
       * <p>The list of tags to be removed from the specified queue.</p>
       */
-    var TagKeys: js.Array[String] | Iterable[String]
+    var TagKeys: js.Array[String] | js.Iterable[String]
   }
   object UntagQueueInput {
     
-    inline def apply(QueueUrl: String, TagKeys: js.Array[String] | Iterable[String]): UntagQueueInput = {
+    inline def apply(QueueUrl: String, TagKeys: js.Array[String] | js.Iterable[String]): UntagQueueInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[UntagQueueInput]
     }
@@ -59,7 +58,7 @@ object typesUntagQueueInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -70,9 +69,9 @@ object typesUntagQueueInputMod {
       
       inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
       
-      inline def setTagKeys(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+      inline def setTagKeys(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
       
-      inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+      inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value*))
     }
   }
 }

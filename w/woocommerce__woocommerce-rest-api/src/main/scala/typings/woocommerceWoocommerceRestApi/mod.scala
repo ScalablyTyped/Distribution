@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("@woocommerce/woocommerce-rest-api", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with WooCommerceRestApi {
     def this(opt: WooCommerceRestApi) = this()
@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("@woocommerce/woocommerce-rest-api", "OptionsException")
   @js.native
-  class OptionsException protected () extends StObject {
+  open class OptionsException protected () extends StObject {
     /**
       * Constructor.
       */
@@ -39,34 +39,34 @@ object mod {
     /**
       * Get OAuth
       */
-    def _getOAuth(): js.Any = js.native
+    def _getOAuth(): Any = js.native
     
     /**
       * Get URL
       */
-    def _getUrl(endpoint: String, params: js.Any): String = js.native
+    def _getUrl(endpoint: String, params: Any): String = js.native
     
     /**
       * Normalize query string for oAuth
       */
-    def _normalizeQueryString(url: String, params: js.Any): String = js.native
+    def _normalizeQueryString(url: String, params: Any): String = js.native
     
     /**
       * Parse params object.
       */
-    def _parseParamsObject(params: js.Any, query: js.Any): WooCommerceRestApiQuery = js.native
+    def _parseParamsObject(params: Any, query: Any): WooCommerceRestApiQuery = js.native
     
     /**
       * Do requests
       */
-    def _request(method: WooCommerceRestApiMethod, endpoint: String, data: js.Any, params: js.Any): js.Promise[js.Any] = js.native
+    def _request(method: WooCommerceRestApiMethod, endpoint: String, data: Any, params: Any): js.Promise[Any] = js.native
     
     /**
       * Set default options
       */
     def _setDefaultsOptions(opt: WooCommerceRestApiOptions): Unit = js.native
     
-    var axiosConfig: js.Any = js.native
+    var axiosConfig: Any = js.native
     
     var classVersion: String = js.native
     
@@ -77,36 +77,36 @@ object mod {
     /**
       * DELETE requests
       */
-    def delete(endpoint: String): js.Promise[js.Any] = js.native
-    def delete(endpoint: String, params: js.Any): js.Promise[js.Any] = js.native
+    def delete(endpoint: String): js.Promise[Any] = js.native
+    def delete(endpoint: String, params: Any): js.Promise[Any] = js.native
     
     var encoding: WooCommerceRestApiEncoding = js.native
     
     /**
       * GET requests
       */
-    def get(endpoint: String): js.Promise[js.Any] = js.native
-    def get(endpoint: String, params: js.Any): js.Promise[js.Any] = js.native
+    def get(endpoint: String): js.Promise[Any] = js.native
+    def get(endpoint: String, params: Any): js.Promise[Any] = js.native
     
     /**
       * OPTIONS requests
       */
-    def options(endpoint: String): js.Promise[js.Any] = js.native
-    def options(endpoint: String, params: js.Any): js.Promise[js.Any] = js.native
+    def options(endpoint: String): js.Promise[Any] = js.native
+    def options(endpoint: String, params: Any): js.Promise[Any] = js.native
     
     var port: Double = js.native
     
     /**
       * POST requests
       */
-    def post(endpoint: String, data: js.Any): js.Promise[js.Any] = js.native
-    def post(endpoint: String, data: js.Any, params: js.Any): js.Promise[js.Any] = js.native
+    def post(endpoint: String, data: Any): js.Promise[Any] = js.native
+    def post(endpoint: String, data: Any, params: Any): js.Promise[Any] = js.native
     
     /**
       * PUT requests
       */
-    def put(endpoint: String, data: js.Any): js.Promise[js.Any] = js.native
-    def put(endpoint: String, data: js.Any, params: js.Any): js.Promise[js.Any] = js.native
+    def put(endpoint: String, data: Any): js.Promise[Any] = js.native
+    def put(endpoint: String, data: Any, params: Any): js.Promise[Any] = js.native
     
     var queryStringAuth: Boolean = js.native
     
@@ -155,7 +155,7 @@ object mod {
   trait WooCommerceRestApiOptions extends StObject {
     
     /* Define the custom Axios config, also override this library options */
-    var axiosConfig: js.UndefOr[js.Any] = js.undefined
+    var axiosConfig: js.UndefOr[Any] = js.undefined
     
     /* Your API consumer key */
     var consumerKey: String
@@ -193,7 +193,7 @@ object mod {
     
     extension [Self <: WooCommerceRestApiOptions](x: Self) {
       
-      inline def setAxiosConfig(value: js.Any): Self = StObject.set(x, "axiosConfig", value.asInstanceOf[js.Any])
+      inline def setAxiosConfig(value: Any): Self = StObject.set(x, "axiosConfig", value.asInstanceOf[js.Any])
       
       inline def setAxiosConfigUndefined: Self = StObject.set(x, "axiosConfig", js.undefined)
       

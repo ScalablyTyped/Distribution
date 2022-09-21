@@ -39,14 +39,14 @@ object mod {
   
   @JSImport("react-native-awesome-card-io", "CardIOView")
   @js.native
-  class CardIOView protected ()
-    extends Component[CardIOViewProps, js.Object, js.Any] {
+  open class CardIOView protected ()
+    extends Component[CardIOViewProps, js.Object, Any] {
     def this(props: CardIOViewProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CardIOViewProps, context: js.Any) = this()
+    def this(props: CardIOViewProps, context: Any) = this()
   }
   
   trait CardDetails extends StObject {

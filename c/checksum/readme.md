@@ -10,10 +10,10 @@ Checksum utility for node
 | ------------------ | :-------------: |
 | Full name          | checksum |
 | Keywords           | checksum, shasum, hash, sha, sha1, md5 |
-| # releases         | 0 |
-| # dependents       | 110 |
-| # downloads        | 2260234 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 212051.66666666666 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/dshaw/checksum#readme)

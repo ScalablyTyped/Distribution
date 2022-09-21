@@ -10,7 +10,7 @@ object eventErrorMod {
   
   @JSImport("ts3-nodejs-library/lib/exception/EventError", "EventError")
   @js.native
-  class EventError protected ()
+  open class EventError protected ()
     extends StObject
        with Error {
     /**
@@ -21,9 +21,11 @@ object eventErrorMod {
     
     val eventName: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

@@ -14,12 +14,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Context = js.Any
+  type Context = Any
   
   @js.native
   trait Filter extends StObject {
     
-    def apply(input: Context, args: js.Any*): Context = js.native
+    def apply(input: Context, args: Any*): Context = js.native
   }
   
   type Locals = StringDictionary[Filter]
@@ -31,6 +31,8 @@ object mod {
     var context: js.UndefOr[Context] = js.undefined
     
     var data: js.UndefOr[Context] = js.undefined
+    
+    var filters: js.UndefOr[Locals] = js.undefined
     
     var force: js.UndefOr[Boolean] = js.undefined
     
@@ -65,6 +67,10 @@ object mod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
+      inline def setFilters(value: Locals): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
       inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
@@ -91,7 +97,7 @@ object mod {
     }
   }
   
-  type QueryParam = js.Any
+  type QueryParam = Any
   
   trait Result extends StObject {
     
@@ -99,13 +105,13 @@ object mod {
     
     var parents: js.Array[String]
     
-    var references: js.Array[js.Any]
+    var references: js.Array[Any]
     
-    var value: js.Any
+    var value: Any
   }
   object Result {
     
-    inline def apply(key: String, parents: js.Array[String], references: js.Array[js.Any], value: js.Any): Result = {
+    inline def apply(key: String, parents: js.Array[String], references: js.Array[Any], value: Any): Result = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
@@ -116,13 +122,13 @@ object mod {
       
       inline def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value*))
       
-      inline def setReferences(value: js.Array[js.Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: js.Array[Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      inline def setReferencesVarargs(value: js.Any*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: Any*): Self = StObject.set(x, "references", js.Array(value*))
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

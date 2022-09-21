@@ -14,6 +14,8 @@ trait Diagnostic
   
   var relatedInformation: js.UndefOr[js.Array[DiagnosticRelatedInformation]] = js.undefined
   
+  var reportsDeprecated: js.UndefOr[js.Object] = js.undefined
+  
   /** May store more in future. For now, this will simply be `true` to indicate when a diagnostic is an unused-identifier diagnostic. */
   var reportsUnnecessary: js.UndefOr[js.Object] = js.undefined
   
@@ -21,13 +23,8 @@ trait Diagnostic
 }
 object Diagnostic {
   
-  inline def apply(
-    category: `0` | `1` | `2` | `3`,
-    code: Double,
-    file: Unit,
-    messageText: String | DiagnosticMessageChain
-  ): Diagnostic = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
+  inline def apply(category: `0` | `1` | `2` | `3`, code: Double, messageText: String | DiagnosticMessageChain): Diagnostic = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostic]
   }
   
@@ -37,7 +34,11 @@ object Diagnostic {
     
     inline def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
     
-    inline def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value :_*))
+    inline def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value*))
+    
+    inline def setReportsDeprecated(value: js.Object): Self = StObject.set(x, "reportsDeprecated", value.asInstanceOf[js.Any])
+    
+    inline def setReportsDeprecatedUndefined: Self = StObject.set(x, "reportsDeprecated", js.undefined)
     
     inline def setReportsUnnecessary(value: js.Object): Self = StObject.set(x, "reportsUnnecessary", value.asInstanceOf[js.Any])
     

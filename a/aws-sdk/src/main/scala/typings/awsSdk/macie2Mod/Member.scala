@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Member extends StObject {
   
   /**
-    * The AWS account ID for the account.
+    * The Amazon Web Services account ID for the account.
     */
   var accountId: js.UndefOr[string] = js.undefined
+  
+  /**
+    * The Amazon Web Services account ID for the administrator account.
+    */
+  var administratorAccountId: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the account.
@@ -22,29 +27,29 @@ trait Member extends StObject {
   var email: js.UndefOr[string] = js.undefined
   
   /**
-    * The date and time, in UTC and extended ISO 8601 format, when an Amazon Macie membership invitation was last sent to the account. This value is null if a Macie invitation hasn't been sent to the account.
+    * The date and time, in UTC and extended ISO 8601 format, when an Amazon Macie membership invitation was last sent to the account. This value is null if an invitation hasn't been sent to the account.
     */
-  var invitedAt: js.UndefOr[timestampIso8601] = js.undefined
+  var invitedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS account ID for the master account.
+    * (Deprecated) The Amazon Web Services account ID for the administrator account. This property has been replaced by the administratorAccountId property and is retained only for backward compatibility.
     */
   var masterAccountId: js.UndefOr[string] = js.undefined
   
   /**
-    * The current status of the relationship between the account and the master account.
+    * The current status of the relationship between the account and the administrator account.
     */
   var relationshipStatus: js.UndefOr[RelationshipStatus] = js.undefined
   
   /**
-    * A map of key-value pairs that identifies the tags (keys and values) that are associated with the account in Amazon Macie.
+    * A map of key-value pairs that specifies which tags (keys and values) are associated with the account in Amazon Macie.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The date and time, in UTC and extended ISO 8601 format, of the most recent change to the status of the relationship between the account and the master account.
+    * The date and time, in UTC and extended ISO 8601 format, of the most recent change to the status of the relationship between the account and the administrator account.
     */
-  var updatedAt: js.UndefOr[timestampIso8601] = js.undefined
+  var updatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object Member {
   
@@ -59,6 +64,10 @@ object Member {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
+    inline def setAdministratorAccountId(value: string): Self = StObject.set(x, "administratorAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setAdministratorAccountIdUndefined: Self = StObject.set(x, "administratorAccountId", js.undefined)
+    
     inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
@@ -67,7 +76,7 @@ object Member {
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    inline def setInvitedAt(value: timestampIso8601): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
+    inline def setInvitedAt(value: js.Date): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
     
     inline def setInvitedAtUndefined: Self = StObject.set(x, "invitedAt", js.undefined)
     
@@ -83,7 +92,7 @@ object Member {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setUpdatedAt(value: timestampIso8601): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }

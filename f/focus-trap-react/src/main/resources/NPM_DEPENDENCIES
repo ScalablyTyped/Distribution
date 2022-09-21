@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "focus-trap-react" : "6.0.0"
+      "focus-trap-react" : "10.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "focus-trap-react" : "6.0.0"
+      "focus-trap-react" : "10.0.0"
     }
   ],
   "compile-devDependencies" : [

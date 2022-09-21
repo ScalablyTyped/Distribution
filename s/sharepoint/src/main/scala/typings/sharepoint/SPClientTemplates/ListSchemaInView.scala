@@ -27,7 +27,7 @@ trait ListSchemaInView
   /** If in grid mode (context.inGridMode == true), cast to FieldSchema_InForm[], otherwise cast to FieldSchema_InView[] */
   var FieldSortParam: String
   
-  var Filter: js.Any
+  var Filter: Any
   
   /** Either "0" or "1" */
   var ForceCheckout: String
@@ -98,7 +98,7 @@ trait ListSchemaInView
   var UserDispUrl: String
   
   // number
-  var UserVanilla: js.Any
+  var UserVanilla: Any
   
   // number
   var Userid: String
@@ -128,7 +128,7 @@ object ListSchemaInView {
     EffectivePresenceEnabled: String,
     Field: js.Array[FieldSchema],
     FieldSortParam: String,
-    Filter: js.Any,
+    Filter: Any,
     ForceCheckout: String,
     HasTitle: String,
     HttpVDir: String,
@@ -154,7 +154,7 @@ object ListSchemaInView {
     UIVersion: String,
     UseParentHierarchy: String,
     UserDispUrl: String,
-    UserVanilla: js.Any,
+    UserVanilla: Any,
     Userid: String,
     View: String,
     ViewSelectorPivotMenuOptions: String,
@@ -180,7 +180,7 @@ object ListSchemaInView {
     
     inline def setFieldSortParam(value: String): Self = StObject.set(x, "FieldSortParam", value.asInstanceOf[js.Any])
     
-    inline def setFilter(value: js.Any): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     inline def setForceCheckout(value: String): Self = StObject.set(x, "ForceCheckout", value.asInstanceOf[js.Any])
     
@@ -236,7 +236,7 @@ object ListSchemaInView {
     
     inline def setUserDispUrl(value: String): Self = StObject.set(x, "UserDispUrl", value.asInstanceOf[js.Any])
     
-    inline def setUserVanilla(value: js.Any): Self = StObject.set(x, "UserVanilla", value.asInstanceOf[js.Any])
+    inline def setUserVanilla(value: Any): Self = StObject.set(x, "UserVanilla", value.asInstanceOf[js.Any])
     
     inline def setUserid(value: String): Self = StObject.set(x, "Userid", value.asInstanceOf[js.Any])
     

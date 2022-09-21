@@ -11,11 +11,11 @@ object anon {
     
     var domain: TypedDataDomain
     
-    var value: js.Any
+    var value: Any
   }
   object Domain {
     
-    inline def apply(domain: TypedDataDomain, value: js.Any): Domain = {
+    inline def apply(domain: TypedDataDomain, value: Any): Domain = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Domain]
     }
@@ -24,7 +24,7 @@ object anon {
       
       inline def setDomain(value: TypedDataDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

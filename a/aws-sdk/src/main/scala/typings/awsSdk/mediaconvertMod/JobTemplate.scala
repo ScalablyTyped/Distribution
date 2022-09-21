@@ -24,7 +24,7 @@ trait JobTemplate extends StObject {
   /**
     * The timestamp in epoch seconds for Job template creation.
     */
-  var CreatedAt: js.UndefOr[timestampUnix] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An optional description you create for each job template.
@@ -39,7 +39,7 @@ trait JobTemplate extends StObject {
   /**
     * The timestamp in epoch seconds when the Job template was last updated.
     */
-  var LastUpdated: js.UndefOr[timestampUnix] = js.undefined
+  var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A name you create for each job template. Each name must be unique within your account.
@@ -92,7 +92,7 @@ object JobTemplate {
     
     inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
-    inline def setCreatedAt(value: timestampUnix): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -104,9 +104,9 @@ object JobTemplate {
     
     inline def setHopDestinationsUndefined: Self = StObject.set(x, "HopDestinations", js.undefined)
     
-    inline def setHopDestinationsVarargs(value: HopDestination*): Self = StObject.set(x, "HopDestinations", js.Array(value :_*))
+    inline def setHopDestinationsVarargs(value: HopDestination*): Self = StObject.set(x, "HopDestinations", js.Array(value*))
     
-    inline def setLastUpdated(value: timestampUnix): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     

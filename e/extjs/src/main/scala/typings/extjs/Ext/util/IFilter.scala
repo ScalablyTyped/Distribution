@@ -22,7 +22,7 @@ trait IFilter
   var exactMatch: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var filterFn: js.UndefOr[js.Any] = js.undefined
+  var filterFn: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var id: js.UndefOr[String] = js.undefined
@@ -39,15 +39,15 @@ trait IFilter
   /** [Method] Changes the filtering function which this Filter uses to choose items to include
     * @param filterFn Function A function which returns true or false to either include or exclude the passed object.
     */
-  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Changes the value that this filter tests its configured  link cfg property with
     * @param value Mixed The new value to compare the property with.
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Mixed) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object IFilter {
   
@@ -74,7 +74,7 @@ object IFilter {
     
     inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
-    inline def setFilterFn(value: js.Any): Self = StObject.set(x, "filterFn", value.asInstanceOf[js.Any])
+    inline def setFilterFn(value: Any): Self = StObject.set(x, "filterFn", value.asInstanceOf[js.Any])
     
     inline def setFilterFnUndefined: Self = StObject.set(x, "filterFn", js.undefined)
     
@@ -94,15 +94,15 @@ object IFilter {
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    inline def setSetFilterFn(value: /* filterFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFilterFn", js.Any.fromFunction1(value))
+    inline def setSetFilterFn(value: /* filterFn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setFilterFn", js.Any.fromFunction1(value))
     
     inline def setSetFilterFnUndefined: Self = StObject.set(x, "setFilterFn", js.undefined)
     
-    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

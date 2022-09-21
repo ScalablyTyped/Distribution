@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-imgix", "Picture")
 @js.native
-class Picture protected ()
-  extends Component[PropsWithChildren[CommonProps], js.Object, js.Any] {
+open class Picture protected ()
+  extends Component[PropsWithChildren[CommonProps], js.Object, Any] {
   def this(props: PropsWithChildren[CommonProps]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: PropsWithChildren[CommonProps], context: js.Any) = this()
+  def this(props: PropsWithChildren[CommonProps], context: Any) = this()
 }

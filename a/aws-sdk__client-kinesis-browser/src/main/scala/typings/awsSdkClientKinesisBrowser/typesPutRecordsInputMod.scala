@@ -3,7 +3,6 @@ package typings.awsSdkClientKinesisBrowser
 import typings.awsSdkClientKinesisBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientKinesisBrowser.typesPutRecordsRequestEntryMod.PutRecordsRequestEntry
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesPutRecordsInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -39,7 +38,7 @@ object typesPutRecordsInputMod {
     /**
       * <p>The records associated with the request.</p>
       */
-    var Records: js.Array[PutRecordsRequestEntry] | Iterable[PutRecordsRequestEntry]
+    var Records: js.Array[PutRecordsRequestEntry] | js.Iterable[PutRecordsRequestEntry]
     
     /**
       * <p>The stream name associated with the request.</p>
@@ -48,7 +47,10 @@ object typesPutRecordsInputMod {
   }
   object PutRecordsInput {
     
-    inline def apply(Records: js.Array[PutRecordsRequestEntry] | Iterable[PutRecordsRequestEntry], StreamName: String): PutRecordsInput = {
+    inline def apply(
+      Records: js.Array[PutRecordsRequestEntry] | js.Iterable[PutRecordsRequestEntry],
+      StreamName: String
+    ): PutRecordsInput = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutRecordsInput]
     }
@@ -60,7 +62,7 @@ object typesPutRecordsInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -69,9 +71,9 @@ object typesPutRecordsInputMod {
       
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      inline def setRecords(value: js.Array[PutRecordsRequestEntry] | Iterable[PutRecordsRequestEntry]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[PutRecordsRequestEntry] | js.Iterable[PutRecordsRequestEntry]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: PutRecordsRequestEntry*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: PutRecordsRequestEntry*): Self = StObject.set(x, "Records", js.Array(value*))
       
       inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     }

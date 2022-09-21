@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTouchUIOptions")
 @js.native
-class ASPxClientTouchUIOptions ()
+open class ASPxClientTouchUIOptions ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTouchUIOptions {
   

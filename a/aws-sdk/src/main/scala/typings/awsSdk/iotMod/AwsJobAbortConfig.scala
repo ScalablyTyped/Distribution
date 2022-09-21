@@ -22,6 +22,6 @@ object AwsJobAbortConfig {
     
     inline def setAbortCriteriaList(value: AwsJobAbortCriteriaList): Self = StObject.set(x, "abortCriteriaList", value.asInstanceOf[js.Any])
     
-    inline def setAbortCriteriaListVarargs(value: AwsJobAbortCriteria*): Self = StObject.set(x, "abortCriteriaList", js.Array(value :_*))
+    inline def setAbortCriteriaListVarargs(value: AwsJobAbortCriteria*): Self = StObject.set(x, "abortCriteriaList", js.Array(value*))
   }
 }

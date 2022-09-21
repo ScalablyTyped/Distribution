@@ -1,31 +1,29 @@
 package typings.antDesignIconsVue
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIconsVue.antdIconMod.AntdIconProps
+import typings.vueRuntimeCore.mod.FunctionalComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object borderOutlinedMod {
+object borderOutlinedMod extends Shortcut {
   
-  object default {
+  @JSImport("@ant-design/icons-vue/lib/icons/BorderOutlined", JSImport.Default)
+  @js.native
+  val default: BorderOutlinedIconType = js.native
+  
+  @js.native
+  trait BorderOutlinedIconType
+    extends StObject
+       with FunctionalComponent[AntdIconProps, js.Object] {
     
-    inline def apply(
-      props: AntdIconProps,
-      context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/BorderOutlined", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/BorderOutlined", "default.displayName")
-    @js.native
-    def displayName: String = js.native
-    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/BorderOutlined", "default.inheritAttrs")
-    @js.native
-    def inheritAttrs: Boolean = js.native
-    inline def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
+    @JSName("displayName")
+    var displayName_BorderOutlinedIconType: String = js.native
   }
+  
+  type _To = BorderOutlinedIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `borderOutlinedMod.foo` */
+  override def _to: BorderOutlinedIconType = default
 }

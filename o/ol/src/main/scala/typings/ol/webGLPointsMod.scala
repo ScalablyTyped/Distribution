@@ -14,7 +14,7 @@ object webGLPointsMod {
   
   @JSImport("ol/layer/WebGLPoints", JSImport.Default)
   @js.native
-  class default protected () extends WebGLPointsLayer {
+  open class default protected () extends WebGLPointsLayer {
     def this(options: Options) = this()
   }
   

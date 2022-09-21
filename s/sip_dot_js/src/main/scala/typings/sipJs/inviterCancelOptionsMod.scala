@@ -27,7 +27,7 @@ object inviterCancelOptionsMod {
       
       inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value*))
       
       inline def setReasonPhrase(value: String): Self = StObject.set(x, "reasonPhrase", value.asInstanceOf[js.Any])
       

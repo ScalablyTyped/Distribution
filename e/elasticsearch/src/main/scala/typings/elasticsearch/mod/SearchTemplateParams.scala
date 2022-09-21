@@ -54,7 +54,7 @@ object SearchTemplateParams {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object SearchTemplateParams {
     
     inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
     
-    inline def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value :_*))
+    inline def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value*))
     
     inline def setScroll(value: TimeSpan): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
@@ -76,6 +76,6 @@ object SearchTemplateParams {
     
     inline def setType(value: NameList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

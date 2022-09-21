@@ -9,14 +9,16 @@ object warningMod {
   
   @JSImport("stream-mock/lib/helpers/Warning", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Warning {
     def this(msg: String, name: WARNING_TYPES, code: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

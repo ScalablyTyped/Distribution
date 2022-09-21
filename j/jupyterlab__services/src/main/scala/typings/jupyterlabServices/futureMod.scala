@@ -5,14 +5,12 @@ import typings.jupyterlabServices.kernelKernelMod.IKernelConnection
 import typings.jupyterlabServices.messagesMod.ControlMessageType
 import typings.jupyterlabServices.messagesMod.IControlMessage
 import typings.jupyterlabServices.messagesMod.IIOPubMessage
-import typings.jupyterlabServices.messagesMod.IInputReply
 import typings.jupyterlabServices.messagesMod.IMessage
 import typings.jupyterlabServices.messagesMod.IOPubMessageType
 import typings.jupyterlabServices.messagesMod.IShellControlMessage
 import typings.jupyterlabServices.messagesMod.IShellMessage
 import typings.jupyterlabServices.messagesMod.IStdinMessage
 import typings.jupyterlabServices.messagesMod.MessageType
-import typings.jupyterlabServices.messagesMod.ReplyContent
 import typings.jupyterlabServices.messagesMod.ShellMessageType
 import typings.jupyterlabServices.messagesMod.StdinMessageType
 import typings.luminoDisposable.mod.DisposableDelegate
@@ -24,7 +22,7 @@ object futureMod {
   
   @JSImport("@jupyterlab/services/lib/kernel/future", "KernelControlFutureHandler")
   @js.native
-  class KernelControlFutureHandler[REQUEST /* <: IControlMessage[ControlMessageType] */, REPLY /* <: IControlMessage[ControlMessageType] */] protected () extends KernelFutureHandler[REQUEST, REPLY] {
+  open class KernelControlFutureHandler[REQUEST /* <: IControlMessage[ControlMessageType] */, REPLY /* <: IControlMessage[ControlMessageType] */] protected () extends KernelFutureHandler[REQUEST, REPLY] {
     /**
       * Construct a new KernelFutureHandler.
       */
@@ -53,43 +51,43 @@ object futureMod {
       kernel: IKernelConnection
     ) = this()
     
-    /* private */ var _disposeOnDone: js.Any = js.native
+    /* private */ var _disposeOnDone: Any = js.native
     
-    /* private */ var _done: js.Any = js.native
+    /* private */ var _done: Any = js.native
     
-    /* private */ var _handleDone: js.Any = js.native
+    /* private */ var _handleDone: Any = js.native
     
-    /* private */ var _handleIOPub: js.Any = js.native
+    /* private */ var _handleIOPub: Any = js.native
     
-    /* private */ var _handleReply: js.Any = js.native
+    /* private */ var _handleReply: Any = js.native
     
-    /* private */ var _handleStdin: js.Any = js.native
+    /* private */ var _handleStdin: Any = js.native
     
-    /* private */ var _hooks: js.Any = js.native
+    /* private */ var _hooks: Any = js.native
     
-    /* private */ var _iopub: js.Any = js.native
+    /* private */ var _iopub: Any = js.native
     
-    /* private */ var _kernel: js.Any = js.native
+    /* private */ var _kernel: Any = js.native
     
-    /* private */ var _msg: js.Any = js.native
+    /* private */ var _msg: Any = js.native
     
-    /* private */ var _reply: js.Any = js.native
+    /* private */ var _reply: Any = js.native
     
-    /* private */ var _replyMsg: js.Any = js.native
+    /* private */ var _replyMsg: Any = js.native
     
     /**
       * Set the given future flag.
       */
-    /* private */ var _setFlag: js.Any = js.native
+    /* private */ var _setFlag: Any = js.native
     
-    /* private */ var _status: js.Any = js.native
+    /* private */ var _status: Any = js.native
     
-    /* private */ var _stdin: js.Any = js.native
+    /* private */ var _stdin: Any = js.native
     
     /**
       * Test whether the given future flag is set.
       */
-    /* private */ var _testFlag: js.Any = js.native
+    /* private */ var _testFlag: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -106,17 +104,6 @@ object futureMod {
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     
-    /**
-      * A promise that resolves when the future is done.
-      *
-      * #### Notes
-      * The future is done when there are no more responses expected from the
-      * kernel.
-      *
-      * The `done` promise resolves to the reply message.
-      */
-    /* CompleteClass */
-    override val done: js.Promise[REPLY] = js.native
     /**
       * A promise that resolves when the future is done.
       */
@@ -138,11 +125,6 @@ object futureMod {
     override val isDisposed: Boolean = js.native
     
     /**
-      * The original outgoing message.
-      */
-    /* CompleteClass */
-    override val msg: REQUEST = js.native
-    /**
       * Get the original outgoing message.
       */
     @JSName("msg")
@@ -153,15 +135,6 @@ object futureMod {
       */
     def onIOPub: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | js.Thenable[Unit]] = js.native
     /**
-      * The iopub handler for the kernel future.
-      *
-      * #### Notes
-      * If the handler returns a promise, all kernel message processing pauses
-      * until the promise is resolved.
-      */
-    /* CompleteClass */
-    override def onIOPub(msg: IIOPubMessage[IOPubMessageType]): Unit | js.Thenable[Unit] = js.native
-    /**
       * Set the iopub handler.
       */
     def onIOPub_=(cb: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | js.Thenable[Unit]]): Unit = js.native
@@ -170,17 +143,6 @@ object futureMod {
       * Get the reply handler.
       */
     def onReply: js.Function1[/* msg */ REPLY, Unit | js.Thenable[Unit]] = js.native
-    /**
-      * The reply handler for the kernel future.
-      *
-      * #### Notes
-      * If the handler returns a promise, all kernel message processing pauses
-      * until the promise is resolved. If there is a reply message, the future
-      * `done` promise also resolves to the reply message after this handler has
-      * been called.
-      */
-    /* CompleteClass */
-    override def onReply(msg: REPLY): Unit | js.Thenable[Unit] = js.native
     /**
       * Set the reply handler.
       */
@@ -191,62 +153,14 @@ object futureMod {
       */
     def onStdin: js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | js.Thenable[Unit]] = js.native
     /**
-      * The stdin handler for the kernel future.
-      *
-      * #### Notes
-      * If the handler returns a promise, all kernel message processing pauses
-      * until the promise is resolved.
-      */
-    /* CompleteClass */
-    override def onStdin(msg: IStdinMessage[StdinMessageType]): Unit | js.Thenable[Unit] = js.native
-    /**
       * Set the stdin handler.
       */
     def onStdin_=(cb: js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | js.Thenable[Unit]]): Unit = js.native
-    
-    /**
-      * Register hook for IOPub messages.
-      *
-      * @param hook - The callback invoked for an IOPub message.
-      *
-      * #### Notes
-      * The IOPub hook system allows you to preempt the handlers for IOPub
-      * messages handled by the future.
-      *
-      * The most recently registered hook is run first. A hook can return a
-      * boolean or a promise to a boolean, in which case all kernel message
-      * processing pauses until the promise is fulfilled. If a hook return value
-      * resolves to false, any later hooks will not run and the function will
-      * return a promise resolving to false. If a hook throws an error, the error
-      * is logged to the console and the next hook is run. If a hook is
-      * registered during the hook processing, it will not run until the next
-      * message. If a hook is removed during the hook processing, it will be
-      * deactivated immediately.
-      */
-    /* CompleteClass */
-    override def registerMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit = js.native
-    
-    /**
-      * Remove a hook for IOPub messages.
-      *
-      * @param hook - The hook to remove.
-      *
-      * #### Notes
-      * If a hook is removed during the hook processing, it will be deactivated immediately.
-      */
-    /* CompleteClass */
-    override def removeMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit = js.native
-    
-    /**
-      * Send an `input_reply` message.
-      */
-    /* CompleteClass */
-    override def sendInputReply(content: ReplyContent[IInputReply]): Unit = js.native
   }
   
   @JSImport("@jupyterlab/services/lib/kernel/future", "KernelShellFutureHandler")
   @js.native
-  class KernelShellFutureHandler[REQUEST /* <: IShellMessage[ShellMessageType] */, REPLY /* <: IShellMessage[ShellMessageType] */] protected () extends KernelFutureHandler[REQUEST, REPLY] {
+  open class KernelShellFutureHandler[REQUEST /* <: IShellMessage[ShellMessageType] */, REPLY /* <: IShellMessage[ShellMessageType] */] protected () extends KernelFutureHandler[REQUEST, REPLY] {
     /**
       * Construct a new KernelFutureHandler.
       */

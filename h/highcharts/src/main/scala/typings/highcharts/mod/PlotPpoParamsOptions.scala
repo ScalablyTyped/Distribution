@@ -11,11 +11,13 @@ trait PlotPpoParamsOptions extends StObject {
     * example using OHLC data, index=2 means the indicator will be calculated
     * using Low values.
     *
-    * By default index value used to be set to 0. Since Highstock 7 by default
-    * index is set to 3 which means that the ema indicator will be calculated
-    * using Close values.
+    * By default index value used to be set to 0. Since Highcharts Stock 7 by
+    * default index is set to 3 which means that the ema indicator will be
+    * calculated using Close values.
     */
   var index: js.UndefOr[Double] = js.undefined
+  
+  var period: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Periods for Percentage Price Oscillator calculations.
@@ -35,10 +37,14 @@ object PlotPpoParamsOptions {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
+    inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    
     inline def setPeriods(value: js.Array[Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
     inline def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
     
-    inline def setPeriodsVarargs(value: Double*): Self = StObject.set(x, "periods", js.Array(value :_*))
+    inline def setPeriodsVarargs(value: Double*): Self = StObject.set(x, "periods", js.Array(value*))
   }
 }

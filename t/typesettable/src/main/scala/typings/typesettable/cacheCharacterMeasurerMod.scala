@@ -12,7 +12,7 @@ object cacheCharacterMeasurerMod {
   
   @JSImport("typesettable/build/src/measurers/cacheCharacterMeasurer", "CacheCharacterMeasurer")
   @js.native
-  class CacheCharacterMeasurer protected () extends CharacterMeasurer {
+  open class CacheCharacterMeasurer protected () extends CharacterMeasurer {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()
     def this(ruler: IRuler, useGuards: Boolean) = this()
@@ -20,7 +20,7 @@ object cacheCharacterMeasurerMod {
     
     def _measureCharacterNotFromCache(c: String): IDimensions = js.native
     
-    /* private */ var cache: js.Any = js.native
+    /* private */ var cache: Any = js.native
     
     def reset(): Unit = js.native
   }

@@ -9,12 +9,12 @@ trait GetImportJobResponse extends StObject {
   /**
     * The time stamp of when the import job was completed.
     */
-  var CompletedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CompletedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time stamp of when the import job was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of records that failed processing because of invalid input or other reasons.
@@ -60,11 +60,11 @@ object GetImportJobResponse {
   
   extension [Self <: GetImportJobResponse](x: Self) {
     
-    inline def setCompletedTimestamp(value: Timestamp): Self = StObject.set(x, "CompletedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCompletedTimestamp(value: js.Date): Self = StObject.set(x, "CompletedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCompletedTimestampUndefined: Self = StObject.set(x, "CompletedTimestamp", js.undefined)
     
-    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     

@@ -1,7 +1,6 @@
 package typings.gulpWatch
 
 import typings.gulpWatch.anon.Fileeventaddchangeunlink
-import typings.node.NodeJS.ReadWriteStream
 import typings.vinylFs.mod.SrcOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,7 +52,7 @@ object mod {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setIgnoreInitial(value: Boolean): Self = StObject.set(x, "ignoreInitial", value.asInstanceOf[js.Any])
       
@@ -73,17 +72,16 @@ object mod {
     }
   }
   
-  @js.native
-  trait IWatchStream
-    extends StObject
-       with ReadWriteStream {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ @js.native
+  trait IWatchStream extends StObject {
     
-    def add(path: String): ReadWriteStream = js.native
-    def add(path: js.Array[String]): ReadWriteStream = js.native
+    def add(path: String): Any = js.native
+    def add(path: js.Array[String]): Any = js.native
     
-    def close(): ReadWriteStream = js.native
+    def close(): Any = js.native
     
-    def unwatch(path: String): ReadWriteStream = js.native
-    def unwatch(path: js.Array[String]): ReadWriteStream = js.native
+    def unwatch(path: String): Any = js.native
+    def unwatch(path: js.Array[String]): Any = js.native
   }
 }

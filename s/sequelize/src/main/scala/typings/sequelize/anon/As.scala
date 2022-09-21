@@ -9,11 +9,11 @@ trait As extends StObject {
   
   var as: js.UndefOr[String] = js.undefined
   
-  var model: Model[js.Any, js.Any, js.Any]
+  var model: Model[Any, Any, Any]
 }
 object As {
   
-  inline def apply(model: Model[js.Any, js.Any, js.Any]): As = {
+  inline def apply(model: Model[Any, Any, Any]): As = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[As]
   }
@@ -24,6 +24,6 @@ object As {
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    inline def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model[Any, Any, Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

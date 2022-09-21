@@ -8,7 +8,7 @@ object coreMod {
   
   @JSImport("famous/core", "Clock")
   @js.native
-  class Clock () extends StObject {
+  open class Clock () extends StObject {
     
     def setTimeout(callback: js.Function): Unit = js.native
     def setTimeout(callback: js.Function, delay: Double): Unit = js.native
@@ -16,7 +16,7 @@ object coreMod {
   
   @JSImport("famous/core", "Dispatch")
   @js.native
-  class Dispatch () extends StObject
+  open class Dispatch () extends StObject
   /* static members */
   object Dispatch {
     
@@ -24,12 +24,12 @@ object coreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def dispatchUIEvent(path: String, event: String, payload: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(path.asInstanceOf[js.Any], event.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def dispatchUIEvent(path: String, event: String, payload: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(path.asInstanceOf[js.Any], event.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("famous/core", "FamousEngine")
   @js.native
-  class FamousEngine () extends StObject {
+  open class FamousEngine () extends StObject {
     
     def createScene(): Scene = js.native
   }
@@ -55,19 +55,19 @@ object coreMod {
   
   @JSImport("famous/core", "Node")
   @js.native
-  class Node () extends StObject {
+  open class Node () extends StObject {
     
     def addChild(): Node = js.native
     def addChild(node: Node): Node = js.native
     
-    def addComponent(component: js.Any): Double = js.native
+    def addComponent(component: Any): Double = js.native
     
     def addUIEvent(eventName: String): Unit = js.native
     
     def dismount(): Unit = js.native
     
-    def emit(event: js.Any): Unit = js.native
-    def emit(event: js.Any, payload: js.Any): Unit = js.native
+    def emit(event: Any): Unit = js.native
+    def emit(event: Any, payload: Any): Unit = js.native
     
     def getAbsoluteSize(): js.Array[Double] = js.native
     
@@ -75,9 +75,9 @@ object coreMod {
     
     def getChildren(): js.Array[Node] = js.native
     
-    def getComponent(index: Double): js.Any = js.native
+    def getComponent(index: Double): Any = js.native
     
-    def getComponents(): js.Array[js.Any] = js.native
+    def getComponents(): js.Array[Any] = js.native
     
     def getDifferentialSize(): js.Array[Double] = js.native
     
@@ -264,11 +264,11 @@ object coreMod {
   
   @JSImport("famous/core", "Scene")
   @js.native
-  class Scene () extends Node
+  open class Scene () extends Node
   
   @JSImport("famous/core", "Size")
   @js.native
-  class Size () extends StObject
+  open class Size () extends StObject
   /* static members */
   object Size {
     
@@ -299,7 +299,7 @@ object coreMod {
   
   @JSImport("famous/core", "SizeSystem")
   @js.native
-  class SizeSystem () extends StObject
+  open class SizeSystem () extends StObject
   /* static members */
   object SizeSystem {
     
@@ -312,7 +312,7 @@ object coreMod {
   
   @JSImport("famous/core", "TransformSystem")
   @js.native
-  class TransformSystem () extends StObject
+  open class TransformSystem () extends StObject
   /* static members */
   object TransformSystem {
     

@@ -32,18 +32,18 @@ object mod {
     /**
       * Same as `opts.locals`.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * Locals to compile the Pug with. You can also provide locals through the `data` field of the file object,
       * e.g. with [`gulp-data`](https://npmjs.com/gulp-data). They will be merged with `opts.locals`.
       */
-    var locals: js.UndefOr[js.Any] = js.undefined
+    var locals: js.UndefOr[Any] = js.undefined
     
     /**
       * A custom instance of Pug for `gulp-pug` to use.
       */
-    var pug: js.UndefOr[js.Any] = js.undefined
+    var pug: js.UndefOr[Any] = js.undefined
     
     /**
       * Display name of file from stream that is being compiled.
@@ -63,15 +63,15 @@ object mod {
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setLocals(value: js.Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
       inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
-      inline def setPug(value: js.Any): Self = StObject.set(x, "pug", value.asInstanceOf[js.Any])
+      inline def setPug(value: Any): Self = StObject.set(x, "pug", value.asInstanceOf[js.Any])
       
       inline def setPugUndefined: Self = StObject.set(x, "pug", js.undefined)
       

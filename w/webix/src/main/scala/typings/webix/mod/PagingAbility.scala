@@ -8,7 +8,7 @@ trait PagingAbility extends StObject {
   
   def getPage(): Double
   
-  def getPager(): js.Any
+  def getPager(): Any
   
   def setPage(page: Double): Unit
 }
@@ -22,7 +22,7 @@ object PagingAbility {
     
     inline def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
     
-    inline def setGetPager(value: () => js.Any): Self = StObject.set(x, "getPager", js.Any.fromFunction0(value))
+    inline def setGetPager(value: () => Any): Self = StObject.set(x, "getPager", js.Any.fromFunction0(value))
     
     inline def setSetPage(value: Double => Unit): Self = StObject.set(x, "setPage", js.Any.fromFunction1(value))
   }

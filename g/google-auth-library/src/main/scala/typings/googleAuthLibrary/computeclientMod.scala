@@ -17,7 +17,7 @@ object computeclientMod {
     * Retrieve access token from the metadata server.
     * See: https://developers.google.com/compute/docs/authentication
     */
-  class Compute () extends OAuth2Client {
+  open class Compute () extends OAuth2Client {
     def this(options: ComputeOptions) = this()
     
     /**
@@ -28,9 +28,9 @@ object computeclientMod {
     
     var scopes: js.Array[String] = js.native
     
-    /* private */ var serviceAccountEmail: js.Any = js.native
+    /* private */ var serviceAccountEmail: Any = js.native
     
-    /* protected */ def wrapError(e: GaxiosError[js.Any]): Unit = js.native
+    /* protected */ def wrapError(e: GaxiosError[Any]): Unit = js.native
   }
   
   trait ComputeOptions
@@ -63,7 +63,7 @@ object computeclientMod {
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
       

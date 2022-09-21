@@ -12,7 +12,7 @@ object pluginsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def casper(yadda: typings.yadda.yaddaMod.^, casper: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def casper(yadda: typings.yadda.yaddaMod.^, casper: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("yadda/lib/plugins", "jasmine")
   @js.native

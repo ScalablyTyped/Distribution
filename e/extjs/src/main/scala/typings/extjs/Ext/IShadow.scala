@@ -49,7 +49,7 @@ trait IShadow
   /** [Method] Displays the shadow under the target element
     * @param targetEl String/HTMLElement/Ext.Element The id or element under which the shadow should display
     */
-  var show: js.UndefOr[js.Function1[/* targetEl */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var show: js.UndefOr[js.Function1[/* targetEl */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IShadow {
   
@@ -90,7 +90,7 @@ object IShadow {
     
     inline def setSetZIndexUndefined: Self = StObject.set(x, "setZIndex", js.undefined)
     
-    inline def setShow(value: /* targetEl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: /* targetEl */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }

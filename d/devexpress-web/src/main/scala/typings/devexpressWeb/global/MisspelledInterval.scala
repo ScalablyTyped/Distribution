@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MisspelledInterval")
 @js.native
-class MisspelledInterval ()
+open class MisspelledInterval ()
   extends StObject
      with typings.devexpressWeb.MisspelledInterval {
   

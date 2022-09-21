@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CircuitBreakers extends StObject {
   
-  /** The maximum number of connections to the backend service. If not specified, there is no limit. */
+  /** Not supported when the backend service is referenced by a URL map that is bound to target gRPC proxy that has validateForProxyless field set to true. */
   var maxConnections: js.UndefOr[Double] = js.undefined
   
-  /** The maximum number of pending requests allowed to the backend service. If not specified, there is no limit. */
+  /** Not supported when the backend service is referenced by a URL map that is bound to target gRPC proxy that has validateForProxyless field set to true. */
   var maxPendingRequests: js.UndefOr[Double] = js.undefined
   
   /** The maximum number of parallel requests that allowed to the backend service. If not specified, there is no limit. */
   var maxRequests: js.UndefOr[Double] = js.undefined
   
-  /**
-    * Maximum requests for a single connection to the backend service. This parameter is respected by both the HTTP/1.1 and HTTP/2 implementations. If not specified, there is no limit.
-    * Setting this parameter to 1 will effectively disable keep alive.
-    */
+  /** Not supported when the backend service is referenced by a URL map that is bound to target gRPC proxy that has validateForProxyless field set to true. */
   var maxRequestsPerConnection: js.UndefOr[Double] = js.undefined
   
-  /** The maximum number of parallel retries allowed to the backend cluster. If not specified, the default is 1. */
+  /** Not supported when the backend service is referenced by a URL map that is bound to target gRPC proxy that has validateForProxyless field set to true. */
   var maxRetries: js.UndefOr[Double] = js.undefined
 }
 object CircuitBreakers {

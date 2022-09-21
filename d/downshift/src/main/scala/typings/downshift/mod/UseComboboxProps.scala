@@ -167,7 +167,7 @@ object UseComboboxProps {
     
     inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
     

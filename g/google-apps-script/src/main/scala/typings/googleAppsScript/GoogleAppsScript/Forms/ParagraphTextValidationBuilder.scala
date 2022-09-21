@@ -12,10 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var paragraphTextItem = form.addParagraphTextItem().setTitle('Describe yourself:');
   *     var paragraphtextValidation = FormApp.createParagraphTextValidation()
   *       .setHelpText(“Answer must be more than 100 characters.”)
-  *       .requireTextLengthGreatherThan(100);
+  *       .requireTextLengthLessThanOrEqualTo(100)
+  *       .build();
   *     paragraphTextItem.setValidation(paragraphtextValidation);
   */
 trait ParagraphTextValidationBuilder extends StObject {
+  
+  def build(): ParagraphTextValidation
   
   def requireTextContainsPattern(pattern: String): ParagraphTextValidationBuilder
   
@@ -32,6 +35,7 @@ trait ParagraphTextValidationBuilder extends StObject {
 object ParagraphTextValidationBuilder {
   
   inline def apply(
+    build: () => ParagraphTextValidation,
     requireTextContainsPattern: String => ParagraphTextValidationBuilder,
     requireTextDoesNotContainPattern: String => ParagraphTextValidationBuilder,
     requireTextDoesNotMatchPattern: String => ParagraphTextValidationBuilder,
@@ -39,11 +43,13 @@ object ParagraphTextValidationBuilder {
     requireTextLengthLessThanOrEqualTo: Integer => ParagraphTextValidationBuilder,
     requireTextMatchesPattern: String => ParagraphTextValidationBuilder
   ): ParagraphTextValidationBuilder = {
-    val __obj = js.Dynamic.literal(requireTextContainsPattern = js.Any.fromFunction1(requireTextContainsPattern), requireTextDoesNotContainPattern = js.Any.fromFunction1(requireTextDoesNotContainPattern), requireTextDoesNotMatchPattern = js.Any.fromFunction1(requireTextDoesNotMatchPattern), requireTextLengthGreaterThanOrEqualTo = js.Any.fromFunction1(requireTextLengthGreaterThanOrEqualTo), requireTextLengthLessThanOrEqualTo = js.Any.fromFunction1(requireTextLengthLessThanOrEqualTo), requireTextMatchesPattern = js.Any.fromFunction1(requireTextMatchesPattern))
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireTextContainsPattern = js.Any.fromFunction1(requireTextContainsPattern), requireTextDoesNotContainPattern = js.Any.fromFunction1(requireTextDoesNotContainPattern), requireTextDoesNotMatchPattern = js.Any.fromFunction1(requireTextDoesNotMatchPattern), requireTextLengthGreaterThanOrEqualTo = js.Any.fromFunction1(requireTextLengthGreaterThanOrEqualTo), requireTextLengthLessThanOrEqualTo = js.Any.fromFunction1(requireTextLengthLessThanOrEqualTo), requireTextMatchesPattern = js.Any.fromFunction1(requireTextMatchesPattern))
     __obj.asInstanceOf[ParagraphTextValidationBuilder]
   }
   
   extension [Self <: ParagraphTextValidationBuilder](x: Self) {
+    
+    inline def setBuild(value: () => ParagraphTextValidation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     inline def setRequireTextContainsPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextContainsPattern", js.Any.fromFunction1(value))
     

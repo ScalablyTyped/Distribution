@@ -10,10 +10,10 @@ Super-efficient module to parse and check if an IP address is in a CIDR block. I
 | ------------------ | :-------------: |
 | Full name          | ipcheck |
 | Keywords           | ip, ipv6, ipv4, cidr |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 118941 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15859.333333333334 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/gosquared/ipcheck)

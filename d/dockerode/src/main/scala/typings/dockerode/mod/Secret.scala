@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dockerode", "Secret")
 @js.native
-class Secret protected ()
+open class Secret protected ()
   extends StObject
      with Meta {
-  def this(modem: js.Any, id: String) = this()
+  def this(modem: Any, id: String) = this()
   
   var ID: String = js.native
   
@@ -19,16 +19,18 @@ class Secret protected ()
   
   def inspect(): js.Promise[Secret] = js.native
   def inspect(callback: Callback[Secret]): Unit = js.native
+  def inspect(options: js.Object): js.Promise[Secret] = js.native
+  def inspect(options: js.Object, callback: Callback[Secret]): Unit = js.native
   
-  var modem: js.Any = js.native
+  var modem: Any = js.native
   
-  def remove(): js.Promise[js.Any] = js.native
-  def remove(callback: Callback[js.Any]): Unit = js.native
-  def remove(options: js.Object): js.Promise[js.Any] = js.native
-  def remove(options: js.Object, callback: Callback[js.Any]): Unit = js.native
+  def remove(): js.Promise[Any] = js.native
+  def remove(callback: Callback[Any]): Unit = js.native
+  def remove(options: js.Object): js.Promise[Any] = js.native
+  def remove(options: js.Object, callback: Callback[Any]): Unit = js.native
   
-  def update(): js.Promise[js.Any] = js.native
-  def update(callback: Callback[js.Any]): Unit = js.native
-  def update(options: js.Object): js.Promise[js.Any] = js.native
-  def update(options: js.Object, callback: Callback[js.Any]): Unit = js.native
+  def update(): js.Promise[Any] = js.native
+  def update(callback: Callback[Any]): Unit = js.native
+  def update(options: js.Object): js.Promise[Any] = js.native
+  def update(options: js.Object, callback: Callback[Any]): Unit = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartDBInstanceMessage extends StObject {
   
   /**
-    *  The user-supplied instance identifier. 
+    * The user-supplied instance identifier.
     */
   var DBInstanceIdentifier: String
 }

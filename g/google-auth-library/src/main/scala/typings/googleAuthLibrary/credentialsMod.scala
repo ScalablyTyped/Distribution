@@ -175,6 +175,45 @@ object credentialsMod {
     }
   }
   
+  trait ImpersonatedJWTInput extends StObject {
+    
+    var delegates: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var service_account_impersonation_url: js.UndefOr[String] = js.undefined
+    
+    var source_credentials: js.UndefOr[JWTInput] = js.undefined
+    
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object ImpersonatedJWTInput {
+    
+    inline def apply(): ImpersonatedJWTInput = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ImpersonatedJWTInput]
+    }
+    
+    extension [Self <: ImpersonatedJWTInput](x: Self) {
+      
+      inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+      
+      inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+      
+      inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value*))
+      
+      inline def setService_account_impersonation_url(value: String): Self = StObject.set(x, "service_account_impersonation_url", value.asInstanceOf[js.Any])
+      
+      inline def setService_account_impersonation_urlUndefined: Self = StObject.set(x, "service_account_impersonation_url", js.undefined)
+      
+      inline def setSource_credentials(value: JWTInput): Self = StObject.set(x, "source_credentials", value.asInstanceOf[js.Any])
+      
+      inline def setSource_credentialsUndefined: Self = StObject.set(x, "source_credentials", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
   trait JWTInput extends StObject {
     
     var client_email: js.UndefOr[String] = js.undefined

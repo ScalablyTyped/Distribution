@@ -10,17 +10,17 @@ object lineCurve3Mod {
   
   @JSImport("three/src/extras/curves/LineCurve3", "LineCurve3")
   @js.native
-  class LineCurve3 protected () extends Curve[Vector3] {
+  open class LineCurve3 protected () extends Curve[Vector3] {
     def this(v1: Vector3, v2: Vector3) = this()
     
     /**
-    	 * @default new THREE.Vector3()
-    	 */
+      * @default new THREE.Vector3()
+      */
     var v1: Vector3 = js.native
     
     /**
-    	 * @default new THREE.Vector3()
-    	 */
+      * @default new THREE.Vector3()
+      */
     var v2: Vector3 = js.native
   }
 }

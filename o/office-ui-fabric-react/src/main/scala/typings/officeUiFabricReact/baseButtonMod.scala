@@ -12,118 +12,120 @@ object baseButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton", "BaseButton")
   @js.native
-  class BaseButton protected ()
-    extends Component[IBaseButtonProps, IBaseButtonState, js.Any]
+  open class BaseButton protected ()
+    extends Component[IBaseButtonProps, IBaseButtonState, Any]
        with IButton {
     def this(props: IBaseButtonProps) = this()
     
-    /* private */ var _ariaDescriptionId: js.Any = js.native
+    /* private */ var _ariaDescriptionId: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _buttonElement: js.Any = js.native
+    /* private */ var _buttonElement: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _descriptionId: js.Any = js.native
+    /* private */ var _descriptionId: Any = js.native
     
-    /* private */ var _dismissMenu: js.Any = js.native
+    /* private */ var _dismissMenu: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _getMemoizedMenuButtonKeytipProps: js.Any = js.native
+    /* private */ var _getMemoizedMenuButtonKeytipProps: Any = js.native
     
-    /* private */ var _handleTouchAndPointerEvent: js.Any = js.native
+    /* private */ var _getMenuProps: Any = js.native
     
-    /* private */ var _hasText: js.Any = js.native
+    /* private */ var _handleTouchAndPointerEvent: Any = js.native
     
-    /* private */ val _isSplitButton: js.Any = js.native
+    /* private */ var _hasText: Any = js.native
+    
+    /* private */ val _isSplitButton: Any = js.native
     
     /**
       * Returns if the user hits a valid keyboard key to open the menu
       * @param ev - the keyboard event
       * @returns True if user clicks on custom trigger key if enabled or alt + down arrow if not. False otherwise.
       */
-    /* private */ var _isValidMenuOpenKey: js.Any = js.native
+    /* private */ var _isValidMenuOpenKey: Any = js.native
     
-    /* private */ var _labelId: js.Any = js.native
+    /* private */ var _labelId: Any = js.native
     
-    /* private */ var _lastTouchTimeoutId: js.Any = js.native
+    /* private */ var _lastTouchTimeoutId: Any = js.native
     
-    /* private */ var _menuShouldFocusOnContainer: js.Any = js.native
+    /* private */ var _menuShouldFocusOnContainer: Any = js.native
     
-    /* private */ var _menuShouldFocusOnMount: js.Any = js.native
+    /* private */ var _menuShouldFocusOnMount: Any = js.native
     
-    /* private */ var _mergedRef: js.Any = js.native
+    /* private */ var _mergedRef: Any = js.native
     
-    /* private */ var _onClick: js.Any = js.native
+    /* private */ var _onClick: Any = js.native
     
-    /* private */ var _onDismissMenu: js.Any = js.native
+    /* private */ var _onDismissMenu: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _onKeyPress: js.Any = js.native
+    /* private */ var _onKeyPress: Any = js.native
     
-    /* private */ var _onKeyUp: js.Any = js.native
+    /* private */ var _onKeyUp: Any = js.native
     
-    /* private */ var _onMenuClick: js.Any = js.native
+    /* private */ var _onMenuClick: Any = js.native
     
-    /* private */ var _onMenuKeyDown: js.Any = js.native
+    /* private */ var _onMenuKeyDown: Any = js.native
     
-    /* private */ var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: Any = js.native
     
-    /* private */ var _onMouseUp: js.Any = js.native
+    /* private */ var _onMouseUp: Any = js.native
     
-    /* private */ var _onPointerDown: js.Any = js.native
+    /* private */ var _onPointerDown: Any = js.native
     
-    /* private */ var _onRenderAriaDescription: js.Any = js.native
+    /* private */ var _onRenderAriaDescription: Any = js.native
     
-    /* private */ var _onRenderChildren: js.Any = js.native
+    /* private */ var _onRenderChildren: Any = js.native
     
-    /* private */ var _onRenderContent: js.Any = js.native
+    /* private */ var _onRenderContent: Any = js.native
     
-    /* private */ var _onRenderDescription: js.Any = js.native
+    /* private */ var _onRenderDescription: Any = js.native
     
-    /* private */ var _onRenderIcon: js.Any = js.native
+    /* private */ var _onRenderIcon: Any = js.native
     
-    /* private */ var _onRenderMenu: js.Any = js.native
+    /* private */ var _onRenderMenu: Any = js.native
     
-    /* private */ var _onRenderMenuIcon: js.Any = js.native
+    /* private */ var _onRenderMenuIcon: Any = js.native
     
-    /* private */ var _onRenderSplitButtonContent: js.Any = js.native
+    /* private */ var _onRenderSplitButtonContent: Any = js.native
     
-    /* private */ var _onRenderSplitButtonDivider: js.Any = js.native
+    /* private */ var _onRenderSplitButtonDivider: Any = js.native
     
-    /* private */ var _onRenderSplitButtonMenuButton: js.Any = js.native
+    /* private */ var _onRenderSplitButtonMenuButton: Any = js.native
     
-    /* private */ var _onRenderText: js.Any = js.native
+    /* private */ var _onRenderText: Any = js.native
     
-    /* private */ var _onRenderTextContents: js.Any = js.native
+    /* private */ var _onRenderTextContents: Any = js.native
     
-    /* private */ var _onSplitButtonContainerKeyDown: js.Any = js.native
+    /* private */ var _onSplitButtonContainerKeyDown: Any = js.native
     
-    /* private */ var _onSplitButtonPrimaryClick: js.Any = js.native
+    /* private */ var _onSplitButtonPrimaryClick: Any = js.native
     
-    /* private */ var _onSplitContainerFocusCapture: js.Any = js.native
+    /* private */ var _onSplitContainerFocusCapture: Any = js.native
     
-    /* private */ var _onToggleMenu: js.Any = js.native
+    /* private */ var _onToggleMenu: Any = js.native
     
-    /* private */ var _onTouchStart: js.Any = js.native
+    /* private */ var _onTouchStart: Any = js.native
     
-    /* private */ var _openMenu: js.Any = js.native
+    /* private */ var _openMenu: Any = js.native
     
-    /* private */ var _processingTouch: js.Any = js.native
+    /* private */ var _processingTouch: Any = js.native
     
-    /* private */ var _renderedVisibleMenu: js.Any = js.native
+    /* private */ var _renderedVisibleMenu: Any = js.native
     
     /**
       * Method to help determine if the menu's component tree should
       * be rendered. It takes into account whether the menu is expanded,
       * whether it is a persisted menu and whether it has been shown to the user.
       */
-    /* private */ var _shouldRenderMenu: js.Any = js.native
+    /* private */ var _shouldRenderMenu: Any = js.native
     
-    /* private */ var _splitButtonContainer: js.Any = js.native
+    /* private */ var _splitButtonContainer: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MBaseButton(): Unit = js.native

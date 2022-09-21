@@ -14,13 +14,13 @@ trait ISurface
   var add: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var background: js.UndefOr[js.Any] = js.undefined
+  var background: js.UndefOr[Any] = js.undefined
   
   /** [Method] Empty the surface content without touching the sprites */
   var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Object) */
-  var devicePixelRatio: js.UndefOr[js.Any] = js.undefined
+  var devicePixelRatio: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var dirty: js.UndefOr[Boolean] = js.undefined
@@ -31,17 +31,13 @@ trait ISurface
     * @returns Object
     */
   var getBBox: js.UndefOr[
-    js.Function2[
-      /* sprite */ js.UndefOr[ISprite], 
-      /* isWithoutTransform */ js.UndefOr[Boolean], 
-      js.Any
-    ]
+    js.Function2[/* sprite */ js.UndefOr[ISprite], /* isWithoutTransform */ js.UndefOr[Boolean], Any]
   ] = js.undefined
   
   /** [Method] Returns the value of background
     * @returns Object
     */
-  var getBackground: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getBackground: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns true if the surface is dirty
     * @returns Boolean 'true' if the surface is dirty
@@ -112,7 +108,7 @@ trait ISurface
   /** [Method] Sets the value of background
     * @param background Object The new value.
     */
-  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of groups
     * @param groups Array The new value.
@@ -147,7 +143,7 @@ object ISurface {
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    inline def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
@@ -155,7 +151,7 @@ object ISurface {
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    inline def setDevicePixelRatio(value: js.Any): Self = StObject.set(x, "devicePixelRatio", value.asInstanceOf[js.Any])
+    inline def setDevicePixelRatio(value: Any): Self = StObject.set(x, "devicePixelRatio", value.asInstanceOf[js.Any])
     
     inline def setDevicePixelRatioUndefined: Self = StObject.set(x, "devicePixelRatio", js.undefined)
     
@@ -163,11 +159,11 @@ object ISurface {
     
     inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
     
-    inline def setGetBBox(value: (/* sprite */ js.UndefOr[ISprite], /* isWithoutTransform */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBBox", js.Any.fromFunction2(value))
+    inline def setGetBBox(value: (/* sprite */ js.UndefOr[ISprite], /* isWithoutTransform */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "getBBox", js.Any.fromFunction2(value))
     
     inline def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
     
-    inline def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
+    inline def setGetBackground(value: () => Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
     
     inline def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
     
@@ -231,7 +227,7 @@ object ISurface {
     
     inline def setRoundPixelUndefined: Self = StObject.set(x, "roundPixel", js.undefined)
     
-    inline def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
+    inline def setSetBackground(value: /* background */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
     
     inline def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
     

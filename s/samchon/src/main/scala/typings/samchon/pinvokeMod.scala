@@ -11,7 +11,7 @@ object pinvokeMod {
   
   @JSImport("samchon/templates/slave/PInvoke", "PInvoke")
   @js.native
-  class PInvoke protected () extends Invoke {
+  open class PInvoke protected () extends Invoke {
     /**
       * Initializer Constructor.
       *
@@ -36,7 +36,7 @@ object pinvokeMod {
     /**
       * @hidden
       */
-    /* private */ var history_ : js.Any = js.native
+    /* private */ var history_ : Any = js.native
     
     /**
       * Hold reporting completion to master.
@@ -46,7 +46,7 @@ object pinvokeMod {
     /**
       * @hidden
       */
-    /* private */ var hold_ : js.Any = js.native
+    /* private */ var hold_ : Any = js.native
     
     /**
       * Is the reporting hold?
@@ -56,6 +56,6 @@ object pinvokeMod {
     /**
       * @hidden
       */
-    /* private */ var slave_system_ : js.Any = js.native
+    /* private */ var slave_system_ : Any = js.native
   }
 }

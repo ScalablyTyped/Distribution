@@ -1,5 +1,10 @@
 package typings.firebaseDatabase
 
+import typings.firebaseDatabase.firebaseDatabaseStrings.child_added
+import typings.firebaseDatabase.firebaseDatabaseStrings.child_changed
+import typings.firebaseDatabase.firebaseDatabaseStrings.child_moved
+import typings.firebaseDatabase.firebaseDatabaseStrings.child_removed
+import typings.firebaseDatabase.firebaseDatabaseStrings.value
 import typings.firebaseDatabase.nodeMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,98 +12,90 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object changeMod {
   
-  @JSImport("@firebase/database/dist/src/core/view/Change", "Change")
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/Change", JSImport.Namespace)
   @js.native
-  class Change protected () extends StObject {
-    def this(`type`: String, snapshotNode: Node) = this()
-    def this(`type`: String, snapshotNode: Node, childName: String) = this()
-    def this(`type`: String, snapshotNode: Node, childName: String, oldSnap: Node) = this()
-    def this(`type`: String, snapshotNode: Node, childName: Unit, oldSnap: Node) = this()
-    def this(`type`: String, snapshotNode: Node, childName: String, oldSnap: Unit, prevName: String) = this()
-    def this(`type`: String, snapshotNode: Node, childName: String, oldSnap: Node, prevName: String) = this()
-    def this(`type`: String, snapshotNode: Node, childName: Unit, oldSnap: Unit, prevName: String) = this()
-    def this(`type`: String, snapshotNode: Node, childName: Unit, oldSnap: Node, prevName: String) = this()
+  val ^ : js.Any = js.native
+  
+  inline def changeChildAdded(childName: String, snapshotNode: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("changeChildAdded")(childName.asInstanceOf[js.Any], snapshotNode.asInstanceOf[js.Any])).asInstanceOf[Change]
+  
+  inline def changeChildChanged(childName: String, snapshotNode: Node, oldSnap: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("changeChildChanged")(childName.asInstanceOf[js.Any], snapshotNode.asInstanceOf[js.Any], oldSnap.asInstanceOf[js.Any])).asInstanceOf[Change]
+  
+  inline def changeChildMoved(childName: String, snapshotNode: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("changeChildMoved")(childName.asInstanceOf[js.Any], snapshotNode.asInstanceOf[js.Any])).asInstanceOf[Change]
+  
+  inline def changeChildRemoved(childName: String, snapshotNode: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("changeChildRemoved")(childName.asInstanceOf[js.Any], snapshotNode.asInstanceOf[js.Any])).asInstanceOf[Change]
+  
+  inline def changeValue(snapshotNode: Node): Change = ^.asInstanceOf[js.Dynamic].applyDynamic("changeValue")(snapshotNode.asInstanceOf[js.Any]).asInstanceOf[Change]
+  
+  trait Change extends StObject {
     
-    var childName: js.UndefOr[String] = js.native
+    /** @param childName - The name for this child, if it's a child even */
+    var childName: js.UndefOr[String] = js.undefined
     
-    var oldSnap: js.UndefOr[Node] = js.native
+    /** @param oldSnap - Used for intermediate processing of child changed events */
+    var oldSnap: js.UndefOr[Node] = js.undefined
     
-    var prevName: js.UndefOr[String | Null] = js.native
+    /**  * @param prevName - The name for the previous child, if applicable */
+    var prevName: js.UndefOr[String | Null] = js.undefined
     
-    var snapshotNode: Node = js.native
+    /** @param snapshotNode - The data */
+    var snapshotNode: Node
     
-    var `type`: String = js.native
+    /** @param type - The event type */
+    var `type`: ChangeType
   }
-  /* static members */
   object Change {
     
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change")
-    @js.native
-    val ^ : js.Any = js.native
+    inline def apply(snapshotNode: Node, `type`: ChangeType): Change = {
+      val __obj = js.Dynamic.literal(snapshotNode = snapshotNode.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Change]
+    }
+    
+    extension [Self <: Change](x: Self) {
+      
+      inline def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
+      
+      inline def setChildNameUndefined: Self = StObject.set(x, "childName", js.undefined)
+      
+      inline def setOldSnap(value: Node): Self = StObject.set(x, "oldSnap", value.asInstanceOf[js.Any])
+      
+      inline def setOldSnapUndefined: Self = StObject.set(x, "oldSnap", js.undefined)
+      
+      inline def setPrevName(value: String): Self = StObject.set(x, "prevName", value.asInstanceOf[js.Any])
+      
+      inline def setPrevNameNull: Self = StObject.set(x, "prevName", null)
+      
+      inline def setPrevNameUndefined: Self = StObject.set(x, "prevName", js.undefined)
+      
+      inline def setSnapshotNode(value: Node): Self = StObject.set(x, "snapshotNode", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: ChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebaseDatabase.firebaseDatabaseStrings.child_added
+    - typings.firebaseDatabase.firebaseDatabaseStrings.child_removed
+    - typings.firebaseDatabase.firebaseDatabaseStrings.child_changed
+    - typings.firebaseDatabase.firebaseDatabaseStrings.child_moved
+    - typings.firebaseDatabase.firebaseDatabaseStrings.value
+  */
+  trait ChangeType extends StObject
+  object ChangeType {
     
     /** Event type for a child added */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.CHILD_ADDED")
-    @js.native
-    def CHILD_ADDED: String = js.native
-    inline def CHILD_ADDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHILD_ADDED")(x.asInstanceOf[js.Any])
+    inline def CHILD_ADDED: child_added = "child_added".asInstanceOf[child_added]
     
     /** Event type for a child changed */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.CHILD_CHANGED")
-    @js.native
-    def CHILD_CHANGED: String = js.native
-    inline def CHILD_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHILD_CHANGED")(x.asInstanceOf[js.Any])
+    inline def CHILD_CHANGED: child_changed = "child_changed".asInstanceOf[child_changed]
     
     /** Event type for a child moved */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.CHILD_MOVED")
-    @js.native
-    def CHILD_MOVED: String = js.native
-    inline def CHILD_MOVED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHILD_MOVED")(x.asInstanceOf[js.Any])
+    inline def CHILD_MOVED: child_moved = "child_moved".asInstanceOf[child_moved]
     
     /** Event type for a child removed */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.CHILD_REMOVED")
-    @js.native
-    def CHILD_REMOVED: String = js.native
-    inline def CHILD_REMOVED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHILD_REMOVED")(x.asInstanceOf[js.Any])
+    inline def CHILD_REMOVED: child_removed = "child_removed".asInstanceOf[child_removed]
     
     /** Event type for a value change */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.VALUE")
-    @js.native
-    def VALUE: String = js.native
-    inline def VALUE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE")(x.asInstanceOf[js.Any])
-    
-    /**
-      * @param {string} childKey
-      * @param {!Node} snapshot
-      * @return {!Change}
-      */
-    inline def childAddedChange(childKey: String, snapshot: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("childAddedChange")(childKey.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Change]
-    
-    /**
-      * @param {string} childKey
-      * @param {!Node} newSnapshot
-      * @param {!Node} oldSnapshot
-      * @return {!Change}
-      */
-    inline def childChangedChange(childKey: String, newSnapshot: Node, oldSnapshot: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("childChangedChange")(childKey.asInstanceOf[js.Any], newSnapshot.asInstanceOf[js.Any], oldSnapshot.asInstanceOf[js.Any])).asInstanceOf[Change]
-    
-    /**
-      * @param {string} childKey
-      * @param {!Node} snapshot
-      * @return {!Change}
-      */
-    inline def childMovedChange(childKey: String, snapshot: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("childMovedChange")(childKey.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Change]
-    
-    /**
-      * @param {string} childKey
-      * @param {!Node} snapshot
-      * @return {!Change}
-      */
-    inline def childRemovedChange(childKey: String, snapshot: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("childRemovedChange")(childKey.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Change]
-    
-    /**
-      * @param {!Node} snapshot
-      * @return {!Change}
-      */
-    inline def valueChange(snapshot: Node): Change = ^.asInstanceOf[js.Dynamic].applyDynamic("valueChange")(snapshot.asInstanceOf[js.Any]).asInstanceOf[Change]
+    inline def VALUE: value = "value".asInstanceOf[value]
   }
 }

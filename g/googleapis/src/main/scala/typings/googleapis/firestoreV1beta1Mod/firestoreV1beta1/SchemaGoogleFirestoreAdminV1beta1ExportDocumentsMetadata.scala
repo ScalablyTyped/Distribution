@@ -4,31 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata for ExportDocuments operations.
-  */
 trait SchemaGoogleFirestoreAdminV1beta1ExportDocumentsMetadata extends StObject {
   
   /**
     * Which collection ids are being exported.
     */
-  var collectionIds: js.UndefOr[js.Array[String]] = js.undefined
+  var collectionIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The time the operation ended, either successfully or otherwise. Unset if
-    * the operation is still active.
+    * The time the operation ended, either successfully or otherwise. Unset if the operation is still active.
     */
-  var endTime: js.UndefOr[String] = js.undefined
+  var endTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The state of the export operation.
     */
-  var operationState: js.UndefOr[String] = js.undefined
+  var operationState: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Where the entities are being exported to.
     */
-  var outputUriPrefix: js.UndefOr[String] = js.undefined
+  var outputUriPrefix: js.UndefOr[String | Null] = js.undefined
   
   /**
     * An estimate of the number of bytes processed.
@@ -43,7 +39,7 @@ trait SchemaGoogleFirestoreAdminV1beta1ExportDocumentsMetadata extends StObject 
   /**
     * The time that work began on the operation.
     */
-  var startTime: js.UndefOr[String] = js.undefined
+  var startTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta1ExportDocumentsMetadata {
   
@@ -56,19 +52,27 @@ object SchemaGoogleFirestoreAdminV1beta1ExportDocumentsMetadata {
     
     inline def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
     
+    inline def setCollectionIdsNull: Self = StObject.set(x, "collectionIds", null)
+    
     inline def setCollectionIdsUndefined: Self = StObject.set(x, "collectionIds", js.undefined)
     
-    inline def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value :_*))
+    inline def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value*))
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimeNull: Self = StObject.set(x, "endTime", null)
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     inline def setOperationState(value: String): Self = StObject.set(x, "operationState", value.asInstanceOf[js.Any])
     
+    inline def setOperationStateNull: Self = StObject.set(x, "operationState", null)
+    
     inline def setOperationStateUndefined: Self = StObject.set(x, "operationState", js.undefined)
     
     inline def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUriPrefixNull: Self = StObject.set(x, "outputUriPrefix", null)
     
     inline def setOutputUriPrefixUndefined: Self = StObject.set(x, "outputUriPrefix", js.undefined)
     
@@ -81,6 +85,8 @@ object SchemaGoogleFirestoreAdminV1beta1ExportDocumentsMetadata {
     inline def setProgressDocumentsUndefined: Self = StObject.set(x, "progressDocuments", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeNull: Self = StObject.set(x, "startTime", null)
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }

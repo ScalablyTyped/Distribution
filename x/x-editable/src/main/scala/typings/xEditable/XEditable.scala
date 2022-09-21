@@ -14,15 +14,15 @@ trait XEditable extends StObject {
   
   def enable(): Unit
   
-  def getValue(isSingle: Boolean): js.Any
+  def getValue(isSingle: Boolean): Any
   
   def hide(): Unit
   
-  def option(key: js.Any, value: js.Any): Unit
+  def option(key: Any, value: Any): Unit
   
   var options: XEditableOptions
   
-  def setValue(value: js.Any, convertStr: Boolean): Unit
+  def setValue(value: Any, convertStr: Boolean): Unit
   
   def show(closeAll: Boolean): Unit
   
@@ -41,11 +41,11 @@ object XEditable {
     destroy: () => Unit,
     disable: () => Unit,
     enable: () => Unit,
-    getValue: Boolean => js.Any,
+    getValue: Boolean => Any,
     hide: () => Unit,
-    option: (js.Any, js.Any) => Unit,
+    option: (Any, Any) => Unit,
     options: XEditableOptions,
-    setValue: (js.Any, Boolean) => Unit,
+    setValue: (Any, Boolean) => Unit,
     show: Boolean => Unit,
     submit: XEditableSubmitOptions => Unit,
     toggle: Boolean => Unit,
@@ -66,15 +66,15 @@ object XEditable {
     
     inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    inline def setGetValue(value: Boolean => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: Boolean => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    inline def setOption(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
+    inline def setOption(value: (Any, Any) => Unit): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
     
     inline def setOptions(value: XEditableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setSetValue(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (Any, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
     
     inline def setShow(value: Boolean => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     

@@ -9,7 +9,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("DOMMatrix")
   @js.native
-  class DOMMatrix ()
+  open class DOMMatrix ()
     extends StObject
        with typings.geometryDom.GeometryDom.DOMMatrix {
     def this(array: js.Array[Double]) = this()
@@ -21,7 +21,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("DOMMatrixReadOnly")
   @js.native
-  class DOMMatrixReadOnly protected ()
+  open class DOMMatrixReadOnly protected ()
     extends StObject
        with typings.geometryDom.GeometryDom.DOMMatrixReadOnly {
     def this(numberSequence: js.Array[Double]) = this()
@@ -30,7 +30,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("DOMPoint")
   @js.native
-  class DOMPoint ()
+  open class DOMPoint ()
     extends StObject
        with typings.geometryDom.GeometryDom.DOMPoint {
     def this(x: Double) = this()
@@ -84,7 +84,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("DOMPointReadOnly")
   @js.native
-  class DOMPointReadOnly protected ()
+  open class DOMPointReadOnly protected ()
     extends StObject
        with typings.geometryDom.GeometryDom.DOMPointReadOnly {
     def this(x: Double, y: Double, z: Double, w: Double) = this()
@@ -124,7 +124,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("DOMQuad")
   @js.native
-  class DOMQuad ()
+  open class DOMQuad ()
     extends StObject
        with typings.geometryDom.GeometryDom.DOMQuad {
     def this(p1: DOMPointInit) = this()
@@ -178,7 +178,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("DOMRect")
   @js.native
-  class DOMRect protected ()
+  open class DOMRect protected ()
     extends StObject
        with typings.geometryDom.GeometryDom.DOMRect {
     def this(x: Double, y: Double, width: Double, height: Double) = this()
@@ -235,7 +235,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("DOMRectReadOnly")
   @js.native
-  class DOMRectReadOnly protected ()
+  open class DOMRectReadOnly protected ()
     extends StObject
        with typings.geometryDom.GeometryDom.DOMRectReadOnly {
     def this(x: Double, y: Double, width: Double, height: Double) = this()

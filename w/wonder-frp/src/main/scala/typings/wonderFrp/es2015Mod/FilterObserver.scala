@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "FilterObserver")
 @js.native
-class FilterObserver protected ()
+open class FilterObserver protected ()
   extends typings.wonderFrp.observerFilterObserverMod.FilterObserver {
   def this(
     prevObserver: IObserver,
-    predicate: js.Function1[/* value */ js.Any, Boolean],
+    predicate: js.Function1[/* value */ Any, Boolean],
     source: typings.wonderFrp.coreStreamMod.Stream
   ) = this()
 }
@@ -25,7 +25,7 @@ object FilterObserver {
   inline def create(
     prevObserver: IObserver,
     predicate: js.Function3[
-      /* value */ js.Any, 
+      /* value */ Any, 
       /* index */ js.UndefOr[Double], 
       /* source */ js.UndefOr[typings.wonderFrp.coreStreamMod.Stream], 
       Boolean

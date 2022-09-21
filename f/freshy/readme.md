@@ -10,15 +10,12 @@ A node module (un|re)loader.
 | ------------------ | :-------------: |
 | Full name          | freshy |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 116550 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5859.0 |
+| # stars            | 15.0 |
 
 ## Links
-- [Homepage](https://github.com/totherik/freshy#readme)
-- [Bugs](https://github.com/totherik/freshy/issues)
-- [Repository](https://github.com/totherik/freshy)
 - [Npm](https://www.npmjs.com/package/freshy)
     
 

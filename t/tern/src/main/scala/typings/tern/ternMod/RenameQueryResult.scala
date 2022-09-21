@@ -20,6 +20,6 @@ object RenameQueryResult {
     
     inline def setChanges(value: js.Array[typings.tern.anon.File]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: typings.tern.anon.File*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: typings.tern.anon.File*): Self = StObject.set(x, "changes", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMKeyboardEvent")
 @js.native
-/* private */ class DOMKeyboardEvent ()
+/* private */ open class DOMKeyboardEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMKeyboardEvent {
   
@@ -49,7 +49,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def getModifierState(keyArg: String): Boolean = js.native
   
   /* CompleteClass */
-  override val ie9_char: js.Any = js.native
+  override val ie9_char: Any = js.native
   
   /* CompleteClass */
   override def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit = js.native
@@ -116,7 +116,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val `type`: String = js.native
   
   /* CompleteClass */
-  override def view(pvarIndex: js.Any): js.Any = js.native
+  override def view(pvarIndex: Any): Any = js.native
   /* CompleteClass */
   @JSName("view")
   override val view_Original: IHTMLWindow2 = js.native

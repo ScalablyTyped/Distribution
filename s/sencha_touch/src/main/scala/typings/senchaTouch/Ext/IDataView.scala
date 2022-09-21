@@ -39,12 +39,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param records Number/Array/Ext.data.Model The record(s) to deselect. Can also be a number to reference by index.
     * @param suppressEvent Boolean If true the deselect event will not be fired.
     */
-  var deselect: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[Boolean], Unit]] = js.undefined
+  var deselect: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Deselects all records
     * @param supress Object
     */
-  var deselectAll: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  var deselectAll: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var deselectOnContainerClick: js.UndefOr[Boolean] = js.undefined
@@ -56,14 +56,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param records Ext.data.Model/Number An array of records or an index.
     * @param suppressEvent Boolean Set to false to not fire a deselect event.
     */
-  var doDeselect: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[Boolean], Unit]] = js.undefined
+  var doDeselect: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Selects a record instance by record instance or index
     * @param records Ext.data.Model/Number An array of records or an index.
     * @param keepExisting Boolean
     * @param suppressEvent Boolean Set to false to not fire a select event.
     */
-  var doSelect: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]] = js.undefined
+  var doSelect: js.UndefOr[js.Function3[js.UndefOr[Any], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var emptyText: js.UndefOr[java.lang.String] = js.undefined
@@ -113,13 +113,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the value of inline
     * @returns Boolean/Object
     */
-  var getInline: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getInline: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns an item at the specified index
     * @param index Number Index of the item.
     * @returns Ext.dom.Element/Ext.dataview.component.DataItem item Item at the specified index.
     */
-  var getItemAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+  var getItemAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Returns the value of itemCls
     * @returns String
@@ -129,7 +129,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the value of itemConfig
     * @returns Object
     */
-  var getItemConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getItemConfig: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns an index for the specified item
     * @param item Number The item to locate.
@@ -140,7 +140,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the value of itemTpl
     * @returns String/String[]/Ext.XTemplate
     */
-  var getItemTpl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getItemTpl: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the array of previously selected items
     * @returns Array The previous selection.
@@ -150,7 +150,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the value of loadingText
     * @returns String/Boolean
     */
-  var getLoadingText: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getLoadingText: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of maxItemCache
     * @returns Number
@@ -215,7 +215,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the value of store
     * @returns Ext.data.Store/Object
     */
-  var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getStore: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of triggerCtEvent
     * @returns String
@@ -235,7 +235,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns an array of the current items in the DataView
     * @returns Ext.dom.Element[]/Ext.dataview.component.DataItem[] Array of Items.
     */
-  var getViewItems: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getViewItems: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Method called when the Store s Reader throws an exception */
   var handleException: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -249,7 +249,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var indexOf: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var `inline`: js.UndefOr[js.Any] = js.undefined
+  var `inline`: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns true if the Selectable is currently locked
     * @returns Boolean True if currently locked
@@ -260,22 +260,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param record Ext.data.Model/Number The record or index of the record to check.
     * @returns Boolean
     */
-  var isSelected: js.UndefOr[js.Function1[js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isSelected: js.UndefOr[js.Function1[js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Config Option] (String) */
   var itemCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Object) */
-  var itemConfig: js.UndefOr[js.Any] = js.undefined
+  var itemConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var itemSelector: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/String[]/Ext.XTemplate) */
-  var itemTpl: js.UndefOr[js.Any] = js.undefined
+  var itemTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Boolean) */
-  var loadingText: js.UndefOr[js.Any] = js.undefined
+  var loadingText: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var locked: js.UndefOr[Boolean] = js.undefined
@@ -300,10 +300,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var prepareData: js.UndefOr[
     js.Function3[
-      /* data */ js.UndefOr[js.Any], 
+      /* data */ js.UndefOr[Any], 
       /* index */ js.UndefOr[Double], 
       /* record */ js.UndefOr[IModel], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -327,7 +327,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param keepExisting Boolean If true, the existing selection will be added to (if not, the old selection is replaced).
     * @param suppressEvent Boolean If true, the select event will not be fired.
     */
-  var select: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]] = js.undefined
+  var select: js.UndefOr[js.Function3[js.UndefOr[Any], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Selects all records
     * @param silent Boolean true to suppress all select events.
@@ -381,7 +381,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Sets the value of inline
     * @param inline Boolean/Object The new value.
     */
-  var setInline: js.UndefOr[js.Function1[/* inline */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setInline: js.UndefOr[js.Function1[/* inline */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of itemCls
     * @param itemCls String The new value.
@@ -391,12 +391,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Sets the value of itemConfig
     * @param itemConfig Object The new value.
     */
-  var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of itemTpl
     * @param itemTpl String/String[]/Ext.XTemplate The new value.
     */
-  var setItemTpl: js.UndefOr[js.Function1[/* itemTpl */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setItemTpl: js.UndefOr[js.Function1[/* itemTpl */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This was an internal function accidentally exposed in 1 x and now deprecated  */
   var setLastFocused: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -404,7 +404,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Sets the value of loadingText
     * @param loadingText String/Boolean The new value.
     */
-  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of maxItemCache
     * @param maxItemCache Number The new value.
@@ -439,7 +439,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Sets the value of store
     * @param store Ext.data.Store/Object The new value.
     */
-  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of triggerCtEvent
     * @param triggerCtEvent String The new value.
@@ -463,7 +463,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var singleSelect: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.data.Store/Object) */
-  var store: js.UndefOr[js.Any] = js.undefined
+  var store: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var trackOver: js.UndefOr[Boolean] = js.undefined
@@ -520,9 +520,9 @@ object IDataView {
     
     inline def setDeferEmptyTextUndefined: Self = StObject.set(x, "deferEmptyText", js.undefined)
     
-    inline def setDeselect(value: (js.UndefOr[js.Any], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
+    inline def setDeselect(value: (js.UndefOr[Any], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
     
-    inline def setDeselectAll(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction1(value))
+    inline def setDeselectAll(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction1(value))
     
     inline def setDeselectAllUndefined: Self = StObject.set(x, "deselectAll", js.undefined)
     
@@ -536,11 +536,11 @@ object IDataView {
     
     inline def setDisableSelectionUndefined: Self = StObject.set(x, "disableSelection", js.undefined)
     
-    inline def setDoDeselect(value: (js.UndefOr[js.Any], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doDeselect", js.Any.fromFunction2(value))
+    inline def setDoDeselect(value: (js.UndefOr[Any], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doDeselect", js.Any.fromFunction2(value))
     
     inline def setDoDeselectUndefined: Self = StObject.set(x, "doDeselect", js.undefined)
     
-    inline def setDoSelect(value: (js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doSelect", js.Any.fromFunction3(value))
+    inline def setDoSelect(value: (js.UndefOr[Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doSelect", js.Any.fromFunction3(value))
     
     inline def setDoSelectUndefined: Self = StObject.set(x, "doSelect", js.undefined)
     
@@ -584,11 +584,11 @@ object IDataView {
     
     inline def setGetEmptyTextUndefined: Self = StObject.set(x, "getEmptyText", js.undefined)
     
-    inline def setGetInline(value: () => js.Any): Self = StObject.set(x, "getInline", js.Any.fromFunction0(value))
+    inline def setGetInline(value: () => Any): Self = StObject.set(x, "getInline", js.Any.fromFunction0(value))
     
     inline def setGetInlineUndefined: Self = StObject.set(x, "getInline", js.undefined)
     
-    inline def setGetItemAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getItemAt", js.Any.fromFunction1(value))
+    inline def setGetItemAt(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "getItemAt", js.Any.fromFunction1(value))
     
     inline def setGetItemAtUndefined: Self = StObject.set(x, "getItemAt", js.undefined)
     
@@ -596,7 +596,7 @@ object IDataView {
     
     inline def setGetItemClsUndefined: Self = StObject.set(x, "getItemCls", js.undefined)
     
-    inline def setGetItemConfig(value: () => js.Any): Self = StObject.set(x, "getItemConfig", js.Any.fromFunction0(value))
+    inline def setGetItemConfig(value: () => Any): Self = StObject.set(x, "getItemConfig", js.Any.fromFunction0(value))
     
     inline def setGetItemConfigUndefined: Self = StObject.set(x, "getItemConfig", js.undefined)
     
@@ -604,7 +604,7 @@ object IDataView {
     
     inline def setGetItemIndexUndefined: Self = StObject.set(x, "getItemIndex", js.undefined)
     
-    inline def setGetItemTpl(value: () => js.Any): Self = StObject.set(x, "getItemTpl", js.Any.fromFunction0(value))
+    inline def setGetItemTpl(value: () => Any): Self = StObject.set(x, "getItemTpl", js.Any.fromFunction0(value))
     
     inline def setGetItemTplUndefined: Self = StObject.set(x, "getItemTpl", js.undefined)
     
@@ -612,7 +612,7 @@ object IDataView {
     
     inline def setGetLastSelectedUndefined: Self = StObject.set(x, "getLastSelected", js.undefined)
     
-    inline def setGetLoadingText(value: () => js.Any): Self = StObject.set(x, "getLoadingText", js.Any.fromFunction0(value))
+    inline def setGetLoadingText(value: () => Any): Self = StObject.set(x, "getLoadingText", js.Any.fromFunction0(value))
     
     inline def setGetLoadingTextUndefined: Self = StObject.set(x, "getLoadingText", js.undefined)
     
@@ -672,7 +672,7 @@ object IDataView {
     
     inline def setGetSelectionUndefined: Self = StObject.set(x, "getSelection", js.undefined)
     
-    inline def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+    inline def setGetStore(value: () => Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
@@ -688,7 +688,7 @@ object IDataView {
     
     inline def setGetUseComponentsUndefined: Self = StObject.set(x, "getUseComponents", js.undefined)
     
-    inline def setGetViewItems(value: () => js.Any): Self = StObject.set(x, "getViewItems", js.Any.fromFunction0(value))
+    inline def setGetViewItems(value: () => Any): Self = StObject.set(x, "getViewItems", js.Any.fromFunction0(value))
     
     inline def setGetViewItemsUndefined: Self = StObject.set(x, "getViewItems", js.undefined)
     
@@ -704,7 +704,7 @@ object IDataView {
     
     inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
-    inline def setInline(value: js.Any): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: Any): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
@@ -712,7 +712,7 @@ object IDataView {
     
     inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
     
-    inline def setIsSelected(value: js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
+    inline def setIsSelected(value: js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
     
     inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
     
@@ -720,7 +720,7 @@ object IDataView {
     
     inline def setItemClsUndefined: Self = StObject.set(x, "itemCls", js.undefined)
     
-    inline def setItemConfig(value: js.Any): Self = StObject.set(x, "itemConfig", value.asInstanceOf[js.Any])
+    inline def setItemConfig(value: Any): Self = StObject.set(x, "itemConfig", value.asInstanceOf[js.Any])
     
     inline def setItemConfigUndefined: Self = StObject.set(x, "itemConfig", js.undefined)
     
@@ -728,11 +728,11 @@ object IDataView {
     
     inline def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
     
-    inline def setItemTpl(value: js.Any): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
+    inline def setItemTpl(value: Any): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
     
     inline def setItemTplUndefined: Self = StObject.set(x, "itemTpl", js.undefined)
     
-    inline def setLoadingText(value: js.Any): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
+    inline def setLoadingText(value: Any): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
     
     inline def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
     
@@ -757,7 +757,7 @@ object IDataView {
     inline def setOverItemClsUndefined: Self = StObject.set(x, "overItemCls", js.undefined)
     
     inline def setPrepareData(
-      value: (/* data */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* record */ js.UndefOr[IModel]) => js.Any
+      value: (/* data */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* record */ js.UndefOr[IModel]) => Any
     ): Self = StObject.set(x, "prepareData", js.Any.fromFunction3(value))
     
     inline def setPrepareDataUndefined: Self = StObject.set(x, "prepareData", js.undefined)
@@ -782,7 +782,7 @@ object IDataView {
     
     inline def setScrollToTopOnRefreshUndefined: Self = StObject.set(x, "scrollToTopOnRefresh", js.undefined)
     
-    inline def setSelect(value: (js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
+    inline def setSelect(value: (js.UndefOr[Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
     
     inline def setSelectAll(value: js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction1(value))
     
@@ -826,7 +826,7 @@ object IDataView {
     
     inline def setSetEmptyTextUndefined: Self = StObject.set(x, "setEmptyText", js.undefined)
     
-    inline def setSetInline(value: /* inline */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInline", js.Any.fromFunction1(value))
+    inline def setSetInline(value: /* inline */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInline", js.Any.fromFunction1(value))
     
     inline def setSetInlineUndefined: Self = StObject.set(x, "setInline", js.undefined)
     
@@ -834,11 +834,11 @@ object IDataView {
     
     inline def setSetItemClsUndefined: Self = StObject.set(x, "setItemCls", js.undefined)
     
-    inline def setSetItemConfig(value: /* itemConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1(value))
+    inline def setSetItemConfig(value: /* itemConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1(value))
     
     inline def setSetItemConfigUndefined: Self = StObject.set(x, "setItemConfig", js.undefined)
     
-    inline def setSetItemTpl(value: /* itemTpl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemTpl", js.Any.fromFunction1(value))
+    inline def setSetItemTpl(value: /* itemTpl */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItemTpl", js.Any.fromFunction1(value))
     
     inline def setSetItemTplUndefined: Self = StObject.set(x, "setItemTpl", js.undefined)
     
@@ -846,7 +846,7 @@ object IDataView {
     
     inline def setSetLastFocusedUndefined: Self = StObject.set(x, "setLastFocused", js.undefined)
     
-    inline def setSetLoadingText(value: /* loadingText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLoadingText", js.Any.fromFunction1(value))
+    inline def setSetLoadingText(value: /* loadingText */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLoadingText", js.Any.fromFunction1(value))
     
     inline def setSetLoadingTextUndefined: Self = StObject.set(x, "setLoadingText", js.undefined)
     
@@ -874,7 +874,7 @@ object IDataView {
     
     inline def setSetSelectedClsUndefined: Self = StObject.set(x, "setSelectedCls", js.undefined)
     
-    inline def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
+    inline def setSetStore(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
     
     inline def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
     
@@ -898,7 +898,7 @@ object IDataView {
     
     inline def setSingleSelectUndefined: Self = StObject.set(x, "singleSelect", js.undefined)
     
-    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     

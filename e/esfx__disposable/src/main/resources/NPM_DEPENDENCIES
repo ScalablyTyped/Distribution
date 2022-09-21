@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@esfx/disposable" : "1.0.0-pre.13"
+      "@esfx/disposable" : "1.0.0-pre.41"
     }
   ],
   "test-dependencies" : [
     {
-      "@esfx/disposable" : "1.0.0-pre.13"
+      "@esfx/disposable" : "1.0.0-pre.41"
     }
   ],
   "compile-devDependencies" : [

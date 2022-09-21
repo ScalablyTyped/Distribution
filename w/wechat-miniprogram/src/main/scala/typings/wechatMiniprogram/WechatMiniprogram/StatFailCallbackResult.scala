@@ -10,7 +10,8 @@ trait StatFailCallbackResult extends StObject {
     *
     * 可选值：
     * - 'fail permission denied, open ${path}': 指定的 path 路径没有读权限;
-    * - 'fail no such file or directory ${path}': 文件不存在; */
+    * - 'fail no such file or directory ${path}': 文件不存在;
+    * - 'fail sdcard not mounted': Android sdcard 挂载失败; */
   var errMsg: String
 }
 object StatFailCallbackResult {

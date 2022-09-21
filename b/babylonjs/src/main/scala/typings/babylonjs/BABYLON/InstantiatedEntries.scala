@@ -36,14 +36,14 @@ object InstantiatedEntries {
     
     inline def setAnimationGroups(value: js.Array[AnimationGroup]): Self = StObject.set(x, "animationGroups", value.asInstanceOf[js.Any])
     
-    inline def setAnimationGroupsVarargs(value: AnimationGroup*): Self = StObject.set(x, "animationGroups", js.Array(value :_*))
+    inline def setAnimationGroupsVarargs(value: AnimationGroup*): Self = StObject.set(x, "animationGroups", js.Array(value*))
     
     inline def setRootNodes(value: js.Array[TransformNode]): Self = StObject.set(x, "rootNodes", value.asInstanceOf[js.Any])
     
-    inline def setRootNodesVarargs(value: TransformNode*): Self = StObject.set(x, "rootNodes", js.Array(value :_*))
+    inline def setRootNodesVarargs(value: TransformNode*): Self = StObject.set(x, "rootNodes", js.Array(value*))
     
     inline def setSkeletons(value: js.Array[Skeleton]): Self = StObject.set(x, "skeletons", value.asInstanceOf[js.Any])
     
-    inline def setSkeletonsVarargs(value: Skeleton*): Self = StObject.set(x, "skeletons", js.Array(value :_*))
+    inline def setSkeletonsVarargs(value: Skeleton*): Self = StObject.set(x, "skeletons", js.Array(value*))
   }
 }

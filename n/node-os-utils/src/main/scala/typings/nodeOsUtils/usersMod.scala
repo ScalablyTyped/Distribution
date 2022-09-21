@@ -8,7 +8,7 @@ object usersMod {
   
   @JSImport("node-os-utils/lib/users", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Users {
     

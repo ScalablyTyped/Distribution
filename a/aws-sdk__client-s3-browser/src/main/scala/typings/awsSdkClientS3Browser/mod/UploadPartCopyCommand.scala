@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-browser", "UploadPartCopyCommand")
 @js.native
-class UploadPartCopyCommand protected ()
+open class UploadPartCopyCommand protected ()
   extends typings.awsSdkClientS3Browser.uploadPartCopyCommandMod.UploadPartCopyCommand {
   def this(input: UploadPartCopyInput) = this()
 }

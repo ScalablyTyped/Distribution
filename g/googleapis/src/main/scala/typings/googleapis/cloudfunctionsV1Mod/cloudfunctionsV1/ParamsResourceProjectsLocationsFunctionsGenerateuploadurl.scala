@@ -1,9 +1,5 @@
 package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceProjectsLocationsFunctionsGenerateuploadurl
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The project and location in which the Google Cloud Storage signed URL
-    * should be generated, specified in the format `projects/x/locations/x`.
+    * The project and location in which the Google Cloud Storage signed URL should be generated, specified in the format `projects/x/locations/x`.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -36,10 +26,6 @@ object ParamsResourceProjectsLocationsFunctionsGenerateuploadurl {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsFunctionsGenerateuploadurl](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

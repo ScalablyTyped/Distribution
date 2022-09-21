@@ -1,7 +1,7 @@
 package typings.appBuilderLib
 
 import typings.appBuilderLib.appBuilderLibStrings.sha1
-import typings.appBuilderLib.appBuilderLibStrings.sha256
+import typings.appBuilderLib.appBuilderLibStrings.sha256_
 import typings.appBuilderLib.coreMod.TargetConfigType
 import typings.appBuilderLib.coreMod.TargetConfiguration
 import typings.appBuilderLib.platformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
@@ -56,7 +56,7 @@ object winOptionsMod {
     val certificateSha1: js.UndefOr[String | Null] = js.undefined
     
     /**
-      * The name of the subject of the signing certificate. Required only for EV Code Signing and works only on Windows (or on macOS if [Parallels Desktop](https://www.parallels.com/products/desktop/) Windows 10 virtual machines exits).
+      * The name of the subject of the signing certificate, which is often labeled with the field name `issued to`. Required only for EV Code Signing and works only on Windows (or on macOS if [Parallels Desktop](https://www.parallels.com/products/desktop/) Windows 10 virtual machines exits).
       */
     val certificateSubjectName: js.UndefOr[String | Null] = js.undefined
     
@@ -106,7 +106,7 @@ object winOptionsMod {
       * Array of signing algorithms used. For AppX `sha256` is always used.
       * @default ['sha1', 'sha256']
       */
-    val signingHashAlgorithms: js.UndefOr[(js.Array[sha1 | sha256]) | Null] = js.undefined
+    val signingHashAlgorithms: js.UndefOr[(js.Array[sha1 | sha256_]) | Null] = js.undefined
     
     /**
       * The target package type: list of `nsis`, `nsis-web` (Web installer), `portable` ([portable](/configuration/nsis#portable) app without installation), `appx`, `msi`, `squirrel`, `7z`, `zip`, `tar.xz`, `tar.lz`, `tar.gz`, `tar.bz2`, `dir`.
@@ -184,7 +184,7 @@ object winOptionsMod {
       
       inline def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
       
-      inline def setPublisherNameVarargs(value: String*): Self = StObject.set(x, "publisherName", js.Array(value :_*))
+      inline def setPublisherNameVarargs(value: String*): Self = StObject.set(x, "publisherName", js.Array(value*))
       
       inline def setRequestedExecutionLevel(value: RequestedExecutionLevel): Self = StObject.set(x, "requestedExecutionLevel", value.asInstanceOf[js.Any])
       
@@ -209,20 +209,20 @@ object winOptionsMod {
       inline def setSignDllsUndefined: Self = StObject.set(x, "signDlls", js.undefined)
       
       inline def setSignFunction2(
-        value: (/* configuration */ CustomWindowsSignTaskConfiguration, /* packager */ js.UndefOr[WinPackager]) => js.Promise[js.Any]
+        value: (/* configuration */ CustomWindowsSignTaskConfiguration, /* packager */ js.UndefOr[WinPackager]) => js.Promise[Any]
       ): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
       
       inline def setSignNull: Self = StObject.set(x, "sign", null)
       
       inline def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
       
-      inline def setSigningHashAlgorithms(value: js.Array[sha1 | sha256]): Self = StObject.set(x, "signingHashAlgorithms", value.asInstanceOf[js.Any])
+      inline def setSigningHashAlgorithms(value: js.Array[sha1 | sha256_]): Self = StObject.set(x, "signingHashAlgorithms", value.asInstanceOf[js.Any])
       
       inline def setSigningHashAlgorithmsNull: Self = StObject.set(x, "signingHashAlgorithms", null)
       
       inline def setSigningHashAlgorithmsUndefined: Self = StObject.set(x, "signingHashAlgorithms", js.undefined)
       
-      inline def setSigningHashAlgorithmsVarargs(value: (sha1 | sha256)*): Self = StObject.set(x, "signingHashAlgorithms", js.Array(value :_*))
+      inline def setSigningHashAlgorithmsVarargs(value: (sha1 | sha256_)*): Self = StObject.set(x, "signingHashAlgorithms", js.Array(value*))
       
       inline def setTarget(value: TargetConfigType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -230,7 +230,7 @@ object winOptionsMod {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTargetVarargs(value: (String | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: (String | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value*))
       
       inline def setTimeStampServer(value: String): Self = StObject.set(x, "timeStampServer", value.asInstanceOf[js.Any])
       

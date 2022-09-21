@@ -28,13 +28,13 @@ object DataProviderOperationEventDetail {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setIndexes(value: js.Array[Double]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: Double*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: Double*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setKeys(value: Set[K]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
@@ -42,6 +42,6 @@ object DataProviderOperationEventDetail {
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setMetadataVarargs(value: ItemMetadata[K]*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: ItemMetadata[K]*): Self = StObject.set(x, "metadata", js.Array(value*))
   }
 }

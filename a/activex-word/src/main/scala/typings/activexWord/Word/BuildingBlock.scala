@@ -22,13 +22,13 @@ trait BuildingBlock extends StObject {
   val Index: Double = js.native
   
   def Insert(Where: Range): Range = js.native
-  def Insert(Where: Range, RichText: js.Any): Range = js.native
+  def Insert(Where: Range, RichText: Any): Range = js.native
   
   var InsertOptions: Double = js.native
   
   var Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Type: BuildingBlockType = js.native
   

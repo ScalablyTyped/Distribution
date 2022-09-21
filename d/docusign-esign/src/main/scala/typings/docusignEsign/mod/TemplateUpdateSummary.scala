@@ -96,7 +96,7 @@ object TemplateUpdateSummary {
     
     inline def setListCustomFieldUpdateResultsVarargs(
       value: (/* This object represents a list custom field from which envelope creators and senders can select custom data. */ ListCustomField)*
-    ): Self = StObject.set(x, "listCustomFieldUpdateResults", js.Array(value :_*))
+    ): Self = StObject.set(x, "listCustomFieldUpdateResults", js.Array(value*))
     
     inline def setLockInformation(value: /* This section provides information about envelope locks. */ EnvelopeLocks): Self = StObject.set(x, "lockInformation", value.asInstanceOf[js.Any])
     
@@ -116,7 +116,7 @@ object TemplateUpdateSummary {
     
     inline def setRecipientUpdateResultsVarargs(
       value: (/* The recipient details that are returned after you update the recipient. */ RecipientUpdateResponse)*
-    ): Self = StObject.set(x, "recipientUpdateResults", js.Array(value :_*))
+    ): Self = StObject.set(x, "recipientUpdateResults", js.Array(value*))
     
     inline def setTabUpdateResults(value: EnvelopeRecipientTabs): Self = StObject.set(x, "tabUpdateResults", value.asInstanceOf[js.Any])
     
@@ -132,6 +132,6 @@ object TemplateUpdateSummary {
     
     inline def setTextCustomFieldUpdateResultsVarargs(
       value: (/* This object represents a free text custom field where envelope creators and senders can enter custom data. */ TextCustomField)*
-    ): Self = StObject.set(x, "textCustomFieldUpdateResults", js.Array(value :_*))
+    ): Self = StObject.set(x, "textCustomFieldUpdateResults", js.Array(value*))
   }
 }

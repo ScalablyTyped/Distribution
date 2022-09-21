@@ -1,7 +1,9 @@
 package typings.mz.anon
 
+import typings.node.nodeUrlMod.URL
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  encoding :string | null | undefined} & node.child_process.ExecOptions */
 trait encodingstringnullundefin extends StObject {
   
-  var cwd: js.UndefOr[String] = js.undefined
+  var cwd: js.UndefOr[String | URL] = js.undefined
   
   var encoding: js.UndefOr[String | Null] = js.undefined
   
@@ -22,6 +24,8 @@ trait encodingstringnullundefin extends StObject {
   var maxBuffer: js.UndefOr[Double] = js.undefined
   
   var shell: js.UndefOr[String] = js.undefined
+  
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * @default 0
@@ -44,7 +48,7 @@ object encodingstringnullundefin {
   
   extension [Self <: encodingstringnullundefin](x: Self) {
     
-    inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
     inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
@@ -73,6 +77,10 @@ object encodingstringnullundefin {
     inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
     inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

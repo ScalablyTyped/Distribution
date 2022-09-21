@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Revwalk")
 @js.native
-class Revwalk ()
+open class Revwalk ()
   extends typings.nodegit.revWalkMod.Revwalk
 /* static members */
 object Revwalk {

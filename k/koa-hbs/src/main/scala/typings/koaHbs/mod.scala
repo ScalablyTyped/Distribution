@@ -21,7 +21,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("koa-hbs", "SafeString")
   @js.native
-  class SafeString protected ()
+  open class SafeString protected ()
     extends typings.handlebars.mod.SafeString {
     def this(str: String) = this()
   }
@@ -32,7 +32,7 @@ object mod extends Shortcut {
     
     var Utils: TypeofUtils
     
-    def middleware(opts: Middleware): js.Any
+    def middleware(opts: Middleware): Any
     
     def registerHelper(name: String, fn: HelperDelegate): Unit
     def registerHelper(name: HelperDeclareSpec): Unit
@@ -44,7 +44,7 @@ object mod extends Shortcut {
     inline def apply(
       SafeString: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString],
       Utils: TypeofUtils,
-      middleware: Middleware => js.Any,
+      middleware: Middleware => Any,
       registerHelper: FnCall
     ): Hbs = {
       val __obj = js.Dynamic.literal(SafeString = SafeString.asInstanceOf[js.Any], Utils = Utils.asInstanceOf[js.Any], middleware = js.Any.fromFunction1(middleware), registerHelper = registerHelper.asInstanceOf[js.Any])
@@ -53,7 +53,7 @@ object mod extends Shortcut {
     
     extension [Self <: Hbs](x: Self) {
       
-      inline def setMiddleware(value: Middleware => js.Any): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
+      inline def setMiddleware(value: Middleware => Any): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
       
       inline def setRegisterHelper(value: FnCall): Self = StObject.set(x, "registerHelper", value.asInstanceOf[js.Any])
       
@@ -125,7 +125,7 @@ object mod extends Shortcut {
         
         inline def setPartialsPathUndefined: Self = StObject.set(x, "partialsPath", js.undefined)
         
-        inline def setPartialsPathVarargs(value: String*): Self = StObject.set(x, "partialsPath", js.Array(value :_*))
+        inline def setPartialsPathVarargs(value: String*): Self = StObject.set(x, "partialsPath", js.Array(value*))
         
         inline def setTemplateOptions(value: js.Object): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
         
@@ -133,7 +133,7 @@ object mod extends Shortcut {
         
         inline def setViewPath(value: js.Array[String] | String): Self = StObject.set(x, "viewPath", value.asInstanceOf[js.Any])
         
-        inline def setViewPathVarargs(value: String*): Self = StObject.set(x, "viewPath", js.Array(value :_*))
+        inline def setViewPathVarargs(value: String*): Self = StObject.set(x, "viewPath", js.Array(value*))
       }
     }
   }
@@ -150,7 +150,7 @@ object mod extends Shortcut {
     trait Context extends StObject {
       
       def render(tpl: String): js.Promise[Unit] = js.native
-      def render(tpl: String, locals: StringDictionary[js.Any]): js.Promise[Unit] = js.native
+      def render(tpl: String, locals: StringDictionary[Any]): js.Promise[Unit] = js.native
     }
   }
 }

@@ -45,7 +45,7 @@ trait RuleActions extends StObject {
   /* private */ @JSName("Outlook.RuleActions_typekey")
   var OutlookDotRuleActions_typekey: RuleActions
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PlaySound: PlaySoundRuleAction
   
@@ -77,7 +77,7 @@ object RuleActions {
     NotifyDelivery: RuleAction,
     NotifyRead: RuleAction,
     OutlookDotRuleActions_typekey: RuleActions,
-    Parent: js.Any,
+    Parent: Any,
     PlaySound: PlaySoundRuleAction,
     Redirect: SendRuleAction,
     Session: NameSpace,
@@ -128,7 +128,7 @@ object RuleActions {
     
     inline def setOutlookDotRuleActions_typekey(value: RuleActions): Self = StObject.set(x, "Outlook.RuleActions_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPlaySound(value: PlaySoundRuleAction): Self = StObject.set(x, "PlaySound", value.asInstanceOf[js.Any])
     

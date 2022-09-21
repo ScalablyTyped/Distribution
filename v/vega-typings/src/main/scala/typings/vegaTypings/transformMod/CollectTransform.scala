@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CollectTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var sort: Compare
   

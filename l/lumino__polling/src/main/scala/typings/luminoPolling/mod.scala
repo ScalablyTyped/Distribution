@@ -13,8 +13,8 @@ object mod {
   
   @JSImport("@lumino/polling", "Debouncer")
   @js.native
-  class Debouncer[T, U] protected ()
-    extends typings.luminoPolling.ratelimiterMod.Debouncer[T, U] {
+  open class Debouncer[T, U, V /* <: js.Array[Any] */] protected ()
+    extends typings.luminoPolling.ratelimiterMod.Debouncer[T, U, V] {
     /**
       * Instantiate a rate limiter.
       *
@@ -22,13 +22,13 @@ object mod {
       *
       * @param limit - The rate limit; defaults to 500ms.
       */
-    def this(fn: js.Function0[T | js.Promise[T]]) = this()
-    def this(fn: js.Function0[T | js.Promise[T]], limit: Double) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]]) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]], limit: Double) = this()
   }
   
   @JSImport("@lumino/polling", "Poll")
   @js.native
-  class Poll[T, U, V /* <: String */] protected ()
+  open class Poll[T, U, V /* <: String */] protected ()
     extends typings.luminoPolling.pollMod.Poll[T, U, V] {
     /**
       * Instantiate a new poll with exponential backoff in case of failure.
@@ -66,8 +66,8 @@ object mod {
   
   @JSImport("@lumino/polling", "RateLimiter")
   @js.native
-  abstract class RateLimiter[T, U] protected ()
-    extends typings.luminoPolling.ratelimiterMod.RateLimiter[T, U] {
+  abstract class RateLimiter[T, U, V /* <: js.Array[Any] */] protected ()
+    extends typings.luminoPolling.ratelimiterMod.RateLimiter[T, U, V] {
     /**
       * Instantiate a rate limiter.
       *
@@ -75,14 +75,14 @@ object mod {
       *
       * @param limit - The rate limit; defaults to 500ms.
       */
-    def this(fn: js.Function0[T | js.Promise[T]]) = this()
-    def this(fn: js.Function0[T | js.Promise[T]], limit: Double) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]]) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]], limit: Double) = this()
   }
   
   @JSImport("@lumino/polling", "Throttler")
   @js.native
-  class Throttler[T, U] protected ()
-    extends typings.luminoPolling.ratelimiterMod.Throttler[T, U] {
+  open class Throttler[T, U, V /* <: js.Array[Any] */] protected ()
+    extends typings.luminoPolling.ratelimiterMod.Throttler[T, U, V] {
     /**
       * Instantiate a throttler.
       *
@@ -93,10 +93,10 @@ object mod {
       * #### Notes
       * The `edge` defaults to `leading`; the `limit` defaults to `500`.
       */
-    def this(fn: js.Function0[T | js.Promise[T]]) = this()
-    def this(fn: js.Function0[T | js.Promise[T]], options: Double) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]]) = this()
+    def this(fn: js.Function1[/* args */ V, T | js.Promise[T]], options: Double) = this()
     def this(
-      fn: js.Function0[T | js.Promise[T]],
+      fn: js.Function1[/* args */ V, T | js.Promise[T]],
       options: typings.luminoPolling.ratelimiterMod.Throttler.IOptions
     ) = this()
   }
@@ -305,14 +305,16 @@ object mod {
     trait _Phase[T /* <: String */] extends StObject
   }
   
-  trait IRateLimiter[T, U]
+  trait IRateLimiter[T, U, V /* <: js.Array[Any] */]
     extends StObject
        with IDisposable {
     
     /**
       * Invoke the rate limited function.
       */
-    def invoke(): js.Promise[T]
+    def invoke(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type V is not an array type */ args: V
+    ): js.Promise[T]
     
     /**
       * The rate limit in milliseconds.
@@ -326,20 +328,20 @@ object mod {
   }
   object IRateLimiter {
     
-    inline def apply[T, U](
+    inline def apply[T, U, V /* <: js.Array[Any] */](
       dispose: () => Unit,
-      invoke: () => js.Promise[T],
+      invoke: V => js.Promise[T],
       isDisposed: Boolean,
       limit: Double,
       stop: () => js.Promise[Unit]
-    ): IRateLimiter[T, U] = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), invoke = js.Any.fromFunction0(invoke), isDisposed = isDisposed.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
-      __obj.asInstanceOf[IRateLimiter[T, U]]
+    ): IRateLimiter[T, U, V] = {
+      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), invoke = js.Any.fromFunction1(invoke), isDisposed = isDisposed.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
+      __obj.asInstanceOf[IRateLimiter[T, U, V]]
     }
     
-    extension [Self <: IRateLimiter[?, ?], T, U](x: Self & (IRateLimiter[T, U])) {
+    extension [Self <: IRateLimiter[?, ?, ?], T, U, V /* <: js.Array[Any] */](x: Self & (IRateLimiter[T, U, V])) {
       
-      inline def setInvoke(value: () => js.Promise[T]): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
+      inline def setInvoke(value: V => js.Promise[T]): Self = StObject.set(x, "invoke", js.Any.fromFunction1(value))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

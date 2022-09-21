@@ -9,11 +9,11 @@ object knockoutCustomAttributeMod {
   
   @JSImport("aurelia-knockout/dist/commonjs/knockout-custom-attribute", "KnockoutCustomAttribute")
   @js.native
-  class KnockoutCustomAttribute protected () extends StObject {
+  open class KnockoutCustomAttribute protected () extends StObject {
     def this(element: Element) = this()
     
     /** internal: do not use */
-    def bind(executionContext: js.Any): Unit = js.native
+    def bind(executionContext: Any): Unit = js.native
     
     var element: Element = js.native
     

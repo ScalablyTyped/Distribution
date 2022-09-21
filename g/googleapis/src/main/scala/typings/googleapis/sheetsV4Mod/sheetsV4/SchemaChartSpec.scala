@@ -4,25 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The specifications of a chart.
-  */
 trait SchemaChartSpec extends StObject {
   
   /**
-    * The alternative text that describes the chart.  This is often used for
-    * accessibility.
+    * The alternative text that describes the chart. This is often used for accessibility.
     */
-  var altText: js.UndefOr[String] = js.undefined
+  var altText: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The background color of the entire chart. Not applicable to Org charts.
+    * The background color of the entire chart. Not applicable to Org charts. Deprecated: Use background_color_style.
     */
   var backgroundColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
-    * A basic chart specification, can be one of many kinds of charts. See
-    * BasicChartType for the list of all charts this supports.
+    * The background color of the entire chart. Not applicable to Org charts. If background_color is also set, this field takes precedence.
+    */
+  var backgroundColorStyle: js.UndefOr[SchemaColorStyle] = js.undefined
+  
+  /**
+    * A basic chart specification, can be one of many kinds of charts. See BasicChartType for the list of all charts this supports.
     */
   var basicChart: js.UndefOr[SchemaBasicChartSpec] = js.undefined
   
@@ -37,16 +37,24 @@ trait SchemaChartSpec extends StObject {
   var candlestickChart: js.UndefOr[SchemaCandlestickChartSpec] = js.undefined
   
   /**
-    * The name of the font to use by default for all chart text (e.g. title,
-    * axis labels, legend).  If a font is specified for a specific part of the
-    * chart it will override this font name.
+    * If present, the field contains data source chart specific properties.
     */
-  var fontName: js.UndefOr[String] = js.undefined
+  var dataSourceChartProperties: js.UndefOr[SchemaDataSourceChartProperties] = js.undefined
+  
+  /**
+    * The filters applied to the source data of the chart. Only supported for data source charts.
+    */
+  var filterSpecs: js.UndefOr[js.Array[SchemaFilterSpec]] = js.undefined
+  
+  /**
+    * The name of the font to use by default for all chart text (e.g. title, axis labels, legend). If a font is specified for a specific part of the chart it will override this font name.
+    */
+  var fontName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Determines how the charts will use hidden rows or columns.
     */
-  var hiddenDimensionStrategy: js.UndefOr[String] = js.undefined
+  var hiddenDimensionStrategy: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A histogram chart specification.
@@ -54,11 +62,9 @@ trait SchemaChartSpec extends StObject {
   var histogramChart: js.UndefOr[SchemaHistogramChartSpec] = js.undefined
   
   /**
-    * True to make a chart fill the entire space in which it&#39;s rendered
-    * with minimum padding.  False to use the default padding. (Not applicable
-    * to Geo and Org charts.)
+    * True to make a chart fill the entire space in which it's rendered with minimum padding. False to use the default padding. (Not applicable to Geo and Org charts.)
     */
-  var maximized: js.UndefOr[Boolean] = js.undefined
+  var maximized: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * An org chart specification.
@@ -71,12 +77,22 @@ trait SchemaChartSpec extends StObject {
   var pieChart: js.UndefOr[SchemaPieChartSpec] = js.undefined
   
   /**
-    * The subtitle of the chart.
+    * A scorecard chart specification.
     */
-  var subtitle: js.UndefOr[String] = js.undefined
+  var scorecardChart: js.UndefOr[SchemaScorecardChartSpec] = js.undefined
   
   /**
-    * The subtitle text format. Strikethrough and underline are not supported.
+    * The order to sort the chart data by. Only a single sort spec is supported. Only supported for data source charts.
+    */
+  var sortSpecs: js.UndefOr[js.Array[SchemaSortSpec]] = js.undefined
+  
+  /**
+    * The subtitle of the chart.
+    */
+  var subtitle: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The subtitle text format. Strikethrough, underline, and link are not supported.
     */
   var subtitleTextFormat: js.UndefOr[SchemaTextFormat] = js.undefined
   
@@ -88,10 +104,10 @@ trait SchemaChartSpec extends StObject {
   /**
     * The title of the chart.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The title text format. Strikethrough and underline are not supported.
+    * The title text format. Strikethrough, underline, and link are not supported.
     */
   var titleTextFormat: js.UndefOr[SchemaTextFormat] = js.undefined
   
@@ -121,9 +137,15 @@ object SchemaChartSpec {
     
     inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     
+    inline def setAltTextNull: Self = StObject.set(x, "altText", null)
+    
     inline def setAltTextUndefined: Self = StObject.set(x, "altText", js.undefined)
     
     inline def setBackgroundColor(value: SchemaColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorStyle(value: SchemaColorStyle): Self = StObject.set(x, "backgroundColorStyle", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorStyleUndefined: Self = StObject.set(x, "backgroundColorStyle", js.undefined)
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
@@ -139,11 +161,25 @@ object SchemaChartSpec {
     
     inline def setCandlestickChartUndefined: Self = StObject.set(x, "candlestickChart", js.undefined)
     
+    inline def setDataSourceChartProperties(value: SchemaDataSourceChartProperties): Self = StObject.set(x, "dataSourceChartProperties", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceChartPropertiesUndefined: Self = StObject.set(x, "dataSourceChartProperties", js.undefined)
+    
+    inline def setFilterSpecs(value: js.Array[SchemaFilterSpec]): Self = StObject.set(x, "filterSpecs", value.asInstanceOf[js.Any])
+    
+    inline def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
+    
+    inline def setFilterSpecsVarargs(value: SchemaFilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value*))
+    
     inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    
+    inline def setFontNameNull: Self = StObject.set(x, "fontName", null)
     
     inline def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
     
     inline def setHiddenDimensionStrategy(value: String): Self = StObject.set(x, "hiddenDimensionStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenDimensionStrategyNull: Self = StObject.set(x, "hiddenDimensionStrategy", null)
     
     inline def setHiddenDimensionStrategyUndefined: Self = StObject.set(x, "hiddenDimensionStrategy", js.undefined)
     
@@ -152,6 +188,8 @@ object SchemaChartSpec {
     inline def setHistogramChartUndefined: Self = StObject.set(x, "histogramChart", js.undefined)
     
     inline def setMaximized(value: Boolean): Self = StObject.set(x, "maximized", value.asInstanceOf[js.Any])
+    
+    inline def setMaximizedNull: Self = StObject.set(x, "maximized", null)
     
     inline def setMaximizedUndefined: Self = StObject.set(x, "maximized", js.undefined)
     
@@ -163,7 +201,19 @@ object SchemaChartSpec {
     
     inline def setPieChartUndefined: Self = StObject.set(x, "pieChart", js.undefined)
     
+    inline def setScorecardChart(value: SchemaScorecardChartSpec): Self = StObject.set(x, "scorecardChart", value.asInstanceOf[js.Any])
+    
+    inline def setScorecardChartUndefined: Self = StObject.set(x, "scorecardChart", js.undefined)
+    
+    inline def setSortSpecs(value: js.Array[SchemaSortSpec]): Self = StObject.set(x, "sortSpecs", value.asInstanceOf[js.Any])
+    
+    inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
+    
+    inline def setSortSpecsVarargs(value: SchemaSortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
+    
     inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
     
     inline def setSubtitleTextFormat(value: SchemaTextFormat): Self = StObject.set(x, "subtitleTextFormat", value.asInstanceOf[js.Any])
     
@@ -176,6 +226,8 @@ object SchemaChartSpec {
     inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleTextFormat(value: SchemaTextFormat): Self = StObject.set(x, "titleTextFormat", value.asInstanceOf[js.Any])
     

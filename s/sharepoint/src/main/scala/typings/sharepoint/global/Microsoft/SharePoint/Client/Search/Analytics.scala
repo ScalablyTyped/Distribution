@@ -9,13 +9,13 @@ object Analytics {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Analytics.AnalyticsItemData")
   @js.native
-  class AnalyticsItemData ()
+  open class AnalyticsItemData ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Analytics.AnalyticsItemData
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Analytics.UsageAnalytics")
   @js.native
-  class UsageAnalytics ()
+  open class UsageAnalytics ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Analytics.UsageAnalytics
 }

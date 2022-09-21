@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "load-json-file" : "6.2.0"
+      "load-json-file" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "load-json-file" : "6.2.0"
+      "load-json-file" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

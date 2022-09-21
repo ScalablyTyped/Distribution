@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PlayToConnection extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(`type`: error, listener: TypedEventHandler[PlayToConnection, PlayToConnectionErrorEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -46,7 +46,7 @@ trait PlayToConnection extends StObject {
   @JSName("ontransferred")
   var ontransferred_Original: TypedEventHandler[PlayToConnection, PlayToConnectionTransferredEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(`type`: error, listener: TypedEventHandler[PlayToConnection, PlayToConnectionErrorEventArgs]): Unit = js.native
   @JSName("removeEventListener")

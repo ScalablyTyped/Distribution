@@ -9,7 +9,7 @@ trait DescribeProtectedResourceOutput extends StObject {
   /**
     * The date and time that a resource was last backed up, in Unix format and Coordinated Universal Time (UTC). The value of LastBackupTime is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var LastBackupTime: js.UndefOr[timestamp] = js.undefined
+  var LastBackupTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An ARN that uniquely identifies a resource. The format of the ARN depends on the resource type.
@@ -17,7 +17,7 @@ trait DescribeProtectedResourceOutput extends StObject {
   var ResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The type of AWS resource saved as a recovery point; for example, an EBS volume or an Amazon RDS database.
+    * The type of Amazon Web Services resource saved as a recovery point; for example, an Amazon EBS volume or an Amazon RDS database.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.undefined
 }
@@ -30,7 +30,7 @@ object DescribeProtectedResourceOutput {
   
   extension [Self <: DescribeProtectedResourceOutput](x: Self) {
     
-    inline def setLastBackupTime(value: timestamp): Self = StObject.set(x, "LastBackupTime", value.asInstanceOf[js.Any])
+    inline def setLastBackupTime(value: js.Date): Self = StObject.set(x, "LastBackupTime", value.asInstanceOf[js.Any])
     
     inline def setLastBackupTimeUndefined: Self = StObject.set(x, "LastBackupTime", js.undefined)
     

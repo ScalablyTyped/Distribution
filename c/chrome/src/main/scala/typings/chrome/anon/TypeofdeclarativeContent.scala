@@ -6,6 +6,7 @@ import typings.chrome.chrome.declarativeContent.PageChangedEvent
 import typings.chrome.chrome.declarativeContent.PageStateMatcher
 import typings.chrome.chrome.declarativeContent.PageStateMatcherProperties
 import typings.chrome.chrome.declarativeContent.SetIcon
+import typings.chrome.chrome.declarativeContent.ShowAction
 import typings.chrome.chrome.declarativeContent.ShowPageAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,6 +26,8 @@ trait TypeofdeclarativeContent extends StObject {
     typings.chrome.chrome.declarativeContent.SetIcon
   ]
   
+  var ShowAction: Instantiable0[typings.chrome.chrome.declarativeContent.ShowAction]
+  
   var ShowPageAction: Instantiable0[typings.chrome.chrome.declarativeContent.ShowPageAction]
   
   var onPageChanged: PageChangedEvent
@@ -35,10 +38,11 @@ object TypeofdeclarativeContent {
     PageStateMatcher: Instantiable1[/* options */ PageStateMatcherProperties, PageStateMatcher],
     PageStateMatcherProperties: Instantiable0[PageStateMatcherProperties],
     SetIcon: Instantiable1[/* options */ js.UndefOr[ImageData], SetIcon],
+    ShowAction: Instantiable0[ShowAction],
     ShowPageAction: Instantiable0[ShowPageAction],
     onPageChanged: PageChangedEvent
   ): TypeofdeclarativeContent = {
-    val __obj = js.Dynamic.literal(PageStateMatcher = PageStateMatcher.asInstanceOf[js.Any], PageStateMatcherProperties = PageStateMatcherProperties.asInstanceOf[js.Any], SetIcon = SetIcon.asInstanceOf[js.Any], ShowPageAction = ShowPageAction.asInstanceOf[js.Any], onPageChanged = onPageChanged.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(PageStateMatcher = PageStateMatcher.asInstanceOf[js.Any], PageStateMatcherProperties = PageStateMatcherProperties.asInstanceOf[js.Any], SetIcon = SetIcon.asInstanceOf[js.Any], ShowAction = ShowAction.asInstanceOf[js.Any], ShowPageAction = ShowPageAction.asInstanceOf[js.Any], onPageChanged = onPageChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofdeclarativeContent]
   }
   
@@ -51,6 +55,8 @@ object TypeofdeclarativeContent {
     inline def setPageStateMatcherProperties(value: Instantiable0[PageStateMatcherProperties]): Self = StObject.set(x, "PageStateMatcherProperties", value.asInstanceOf[js.Any])
     
     inline def setSetIcon(value: Instantiable1[/* options */ js.UndefOr[ImageData], SetIcon]): Self = StObject.set(x, "SetIcon", value.asInstanceOf[js.Any])
+    
+    inline def setShowAction(value: Instantiable0[ShowAction]): Self = StObject.set(x, "ShowAction", value.asInstanceOf[js.Any])
     
     inline def setShowPageAction(value: Instantiable0[ShowPageAction]): Self = StObject.set(x, "ShowPageAction", value.asInstanceOf[js.Any])
   }

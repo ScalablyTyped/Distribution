@@ -1,7 +1,7 @@
 
 # Scala.js typings for hdr-histogram-js
 
-Typings are for version 1.2.0
+Typings are for version 3.0.0
 
 ## Library description:
 TypeScript port of HdrHistogram
@@ -10,10 +10,10 @@ TypeScript port of HdrHistogram
 | ------------------ | :-------------: |
 | Full name          | hdr-histogram-js |
 | Keywords           | hdr-histogram, hdr-histogram-js, percentiles, monitoring, latency, performance |
-| # releases         | 11 |
-| # dependents       | 18 |
-| # downloads        | 15133976 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 6624243.666666667 |
+| # stars            | 101.0 |
 
 ## Links
 - [Homepage](https://github.com/HdrHistogram/HdrHistogramJS#readme)

@@ -35,7 +35,7 @@ object IStaticViewConfig {
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: js.Function*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: js.Function*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
     inline def setTemplate(value: String | HTMLTemplateElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }

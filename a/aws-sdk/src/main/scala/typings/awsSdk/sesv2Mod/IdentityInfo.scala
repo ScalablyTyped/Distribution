@@ -12,7 +12,7 @@ trait IdentityInfo extends StObject {
   var IdentityName: js.UndefOr[Identity] = js.undefined
   
   /**
-    * The email identity type. The identity type can be one of the following:    EMAIL_ADDRESS – The identity is an email address.    DOMAIN – The identity is a domain.    MANAGED_DOMAIN – The identity is a domain that is managed by AWS.  
+    * The email identity type. Note: the MANAGED_DOMAIN type is not supported for email identity types.
     */
   var IdentityType: js.UndefOr[typings.awsSdk.sesv2Mod.IdentityType] = js.undefined
   

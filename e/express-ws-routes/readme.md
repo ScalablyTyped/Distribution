@@ -10,10 +10,10 @@ Handle WebSocket connections using express routes.
 | ------------------ | :-------------: |
 | Full name          | express-ws-routes |
 | Keywords           | express, ws, websocket |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 4314 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 739.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/amekkawi/express-ws-routes)

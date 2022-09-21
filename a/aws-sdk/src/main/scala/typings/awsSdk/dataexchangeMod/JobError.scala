@@ -11,6 +11,9 @@ trait JobError extends StObject {
     */
   var Code: typings.awsSdk.dataexchangeMod.Code
   
+  /**
+    * The details about the job error.
+    */
   var Details: js.UndefOr[typings.awsSdk.dataexchangeMod.Details] = js.undefined
   
   /**

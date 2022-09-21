@@ -12,12 +12,12 @@ trait DescribeLocalGatewaysRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * One or more filters.
+    * One or more filters.    local-gateway-id - The ID of a local gateway.    outpost-arn - The Amazon Resource Name (ARN) of the Outpost.    owner-id - The ID of the Amazon Web Services account that owns the local gateway.    state - The state of the association.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * One or more filters.    local-gateway-id - The ID of a local gateway.    local-gateway-route-table-id - The ID of the local gateway route table.    local-gateway-route-table-virtual-interface-group-association-id - The ID of the association.    local-gateway-route-table-virtual-interface-group-id - The ID of the virtual interface group.    outpost-arn - The Amazon Resource Name (ARN) of the Outpost.    state - The state of the association.  
+    * The IDs of the local gateways.
     */
   var LocalGatewayIds: js.UndefOr[LocalGatewayIdSet] = js.undefined
   
@@ -48,13 +48,13 @@ object DescribeLocalGatewaysRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setLocalGatewayIds(value: LocalGatewayIdSet): Self = StObject.set(x, "LocalGatewayIds", value.asInstanceOf[js.Any])
     
     inline def setLocalGatewayIdsUndefined: Self = StObject.set(x, "LocalGatewayIds", js.undefined)
     
-    inline def setLocalGatewayIdsVarargs(value: LocalGatewayId*): Self = StObject.set(x, "LocalGatewayIds", js.Array(value :_*))
+    inline def setLocalGatewayIdsVarargs(value: LocalGatewayId*): Self = StObject.set(x, "LocalGatewayIds", js.Array(value*))
     
     inline def setMaxResults(value: LocalGatewayMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

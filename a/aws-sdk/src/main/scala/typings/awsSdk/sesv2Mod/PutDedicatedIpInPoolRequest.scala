@@ -12,7 +12,7 @@ trait PutDedicatedIpInPoolRequest extends StObject {
   var DestinationPoolName: PoolName
   
   /**
-    * The IP address that you want to move to the dedicated IP pool. The value you specify has to be a dedicated IP address that's associated with your AWS account.
+    * The IP address that you want to move to the dedicated IP pool. The value you specify has to be a dedicated IP address that's associated with your Amazon Web Services account.
     */
   var Ip: typings.awsSdk.sesv2Mod.Ip
 }

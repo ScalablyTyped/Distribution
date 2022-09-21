@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object scrollStateMod {
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-state", "ScrollState")
+  @JSImport("ngx-infinite-scroll/lib/services/scroll-state", "ScrollState")
   @js.native
-  class ScrollState protected ()
+  open class ScrollState protected ()
     extends StObject
        with IScrollState {
     def this(hasTotalToScroll: TotalToScroll) = this()
     
-    def isTriggeredScroll(totalToScroll: js.Any, isScrollingDown: Boolean): Boolean = js.native
+    def isTriggeredScroll(totalToScroll: Any, isScrollingDown: Boolean): Boolean = js.native
     
     /* CompleteClass */
     var lastScrollPosition: Double = js.native
@@ -36,6 +36,6 @@ object scrollStateMod {
     
     def updateTotalToScroll(totalToScroll: Double): Unit = js.native
     
-    def updateTriggeredFlag(scroll: js.Any, isScrollingDown: Boolean): Unit = js.native
+    def updateTriggeredFlag(scroll: Any, isScrollingDown: Boolean): Unit = js.native
   }
 }

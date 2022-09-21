@@ -14,7 +14,7 @@ object slider {
     var allowThumbsOverlapping: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var animation: js.UndefOr[js.Any] = js.undefined
+    var animation: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var animationDuration: js.UndefOr[Boolean] = js.undefined
@@ -33,7 +33,7 @@ object slider {
     /** [Method] Returns the value of animation
       * @returns Boolean/Object
       */
-    var getAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of increment
       * @returns Number
@@ -64,7 +64,7 @@ object slider {
     /** [Method] Returns the value of thumbConfig
       * @returns Object
       */
-    var getThumbConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getThumbConfig: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the Thumb instances bound to this Slider
       * @returns Ext.slider.Thumb[] The thumb instances
@@ -74,12 +74,12 @@ object slider {
     /** [Method] Returns the value of value
       * @returns Number/Number[]
       */
-    var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Convenience method
       * @returns Object
       */
-    var getValues: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getValues: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Number) */
     var increment: js.UndefOr[Double] = js.undefined
@@ -101,7 +101,7 @@ object slider {
     /** [Method] Sets the value of animation
       * @param animation Boolean/Object The new value.
       */
-    var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of increment
       * @param increment Number The new value.
@@ -126,34 +126,34 @@ object slider {
     /** [Method] Sets the value of thumbConfig
       * @param thumbConfig Object The new value.
       */
-    var setThumbConfig: js.UndefOr[js.Function1[/* thumbConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setThumbConfig: js.UndefOr[js.Function1[/* thumbConfig */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of value
       * @param value Number/Number[] The new value.
       */
-    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Convenience method
       * @param value Object
       */
-    var setValues: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setValues: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var thumbConfig: js.UndefOr[js.Any] = js.undefined
+    var thumbConfig: js.UndefOr[Any] = js.undefined
     
     /** [Method] Updates the sliders thumbs with their new value s
       * @param newValue Object
       * @param oldValue Object
       */
     var updateValue: js.UndefOr[
-        js.Function2[/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* newValue */ js.UndefOr[Any], /* oldValue */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Config Option] (Number/Number[]) */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number/Number[]) */
-    var values: js.UndefOr[js.Any] = js.undefined
+    var values: js.UndefOr[Any] = js.undefined
   }
   object ISlider {
     
@@ -168,7 +168,7 @@ object slider {
       
       inline def setAllowThumbsOverlappingUndefined: Self = StObject.set(x, "allowThumbsOverlapping", js.undefined)
       
-      inline def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationDuration(value: Boolean): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -184,7 +184,7 @@ object slider {
       
       inline def setGetAllowThumbsOverlappingUndefined: Self = StObject.set(x, "getAllowThumbsOverlapping", js.undefined)
       
-      inline def setGetAnimation(value: () => js.Any): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
+      inline def setGetAnimation(value: () => Any): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
       
       inline def setGetAnimationUndefined: Self = StObject.set(x, "getAnimation", js.undefined)
       
@@ -206,7 +206,7 @@ object slider {
       
       inline def setGetThumb(value: /* index */ js.UndefOr[Double] => IThumb): Self = StObject.set(x, "getThumb", js.Any.fromFunction1(value))
       
-      inline def setGetThumbConfig(value: () => js.Any): Self = StObject.set(x, "getThumbConfig", js.Any.fromFunction0(value))
+      inline def setGetThumbConfig(value: () => Any): Self = StObject.set(x, "getThumbConfig", js.Any.fromFunction0(value))
       
       inline def setGetThumbConfigUndefined: Self = StObject.set(x, "getThumbConfig", js.undefined)
       
@@ -216,11 +216,11 @@ object slider {
       
       inline def setGetThumbsUndefined: Self = StObject.set(x, "getThumbs", js.undefined)
       
-      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
       inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
-      inline def setGetValues(value: () => js.Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
       
       inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
       
@@ -244,7 +244,7 @@ object slider {
       
       inline def setSetAllowThumbsOverlappingUndefined: Self = StObject.set(x, "setAllowThumbsOverlapping", js.undefined)
       
-      inline def setSetAnimation(value: /* animation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1(value))
+      inline def setSetAnimation(value: /* animation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1(value))
       
       inline def setSetAnimationUndefined: Self = StObject.set(x, "setAnimation", js.undefined)
       
@@ -264,31 +264,31 @@ object slider {
       
       inline def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
       
-      inline def setSetThumbConfig(value: /* thumbConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setThumbConfig", js.Any.fromFunction1(value))
+      inline def setSetThumbConfig(value: /* thumbConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setThumbConfig", js.Any.fromFunction1(value))
       
       inline def setSetThumbConfigUndefined: Self = StObject.set(x, "setThumbConfig", js.undefined)
       
-      inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       
       inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
       
-      inline def setSetValues(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
+      inline def setSetValues(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
       
       inline def setSetValuesUndefined: Self = StObject.set(x, "setValues", js.undefined)
       
-      inline def setThumbConfig(value: js.Any): Self = StObject.set(x, "thumbConfig", value.asInstanceOf[js.Any])
+      inline def setThumbConfig(value: Any): Self = StObject.set(x, "thumbConfig", value.asInstanceOf[js.Any])
       
       inline def setThumbConfigUndefined: Self = StObject.set(x, "thumbConfig", js.undefined)
       
-      inline def setUpdateValue(value: (/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction2(value))
+      inline def setUpdateValue(value: (/* newValue */ js.UndefOr[Any], /* oldValue */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction2(value))
       
       inline def setUpdateValueUndefined: Self = StObject.set(x, "updateValue", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
@@ -299,12 +299,12 @@ object slider {
        with IComponent {
     
     /** [Config Option] (Object) */
-    var draggable: js.UndefOr[js.Any] = js.undefined
+    var draggable: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of draggable
       * @returns Object
       */
-    var getDraggable: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getDraggable: js.UndefOr[js.Function0[Any]] = js.undefined
   }
   object IThumb {
     
@@ -315,11 +315,11 @@ object slider {
     
     extension [Self <: IThumb](x: Self) {
       
-      inline def setDraggable(value: js.Any): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Any): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setGetDraggable(value: () => js.Any): Self = StObject.set(x, "getDraggable", js.Any.fromFunction0(value))
+      inline def setGetDraggable(value: () => Any): Self = StObject.set(x, "getDraggable", js.Any.fromFunction0(value))
       
       inline def setGetDraggableUndefined: Self = StObject.set(x, "getDraggable", js.undefined)
     }
@@ -367,7 +367,7 @@ object slider {
       */
     @JSName("setValue")
     var setValue_IToggle: js.UndefOr[
-        js.Function2[/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* newValue */ js.UndefOr[Any], /* oldValue */ js.UndefOr[Any], Unit]
       ] = js.undefined
   }
   object IToggle {
@@ -407,7 +407,7 @@ object slider {
       
       inline def setSetMinValueClsUndefined: Self = StObject.set(x, "setMinValueCls", js.undefined)
       
-      inline def setSetValue(value: (/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+      inline def setSetValue(value: (/* newValue */ js.UndefOr[Any], /* oldValue */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       
       inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     }

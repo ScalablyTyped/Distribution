@@ -42,13 +42,13 @@ object SearchEntitiesRequest {
     
     inline def setEntityTypes(value: EntityTypes): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
-    inline def setEntityTypesVarargs(value: EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value*))
     
     inline def setFilters(value: EntityFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: EntityFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: EntityFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

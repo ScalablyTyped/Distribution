@@ -33,7 +33,7 @@ object SmartHomeV1SyncPayload {
     
     inline def setDevices(value: js.Array[SmartHomeV1SyncDevices]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    inline def setDevicesVarargs(value: SmartHomeV1SyncDevices*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: SmartHomeV1SyncDevices*): Self = StObject.set(x, "devices", js.Array(value*))
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

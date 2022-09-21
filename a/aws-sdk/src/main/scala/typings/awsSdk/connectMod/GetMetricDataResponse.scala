@@ -29,7 +29,7 @@ object GetMetricDataResponse {
     
     inline def setMetricResultsUndefined: Self = StObject.set(x, "MetricResults", js.undefined)
     
-    inline def setMetricResultsVarargs(value: HistoricalMetricResult*): Self = StObject.set(x, "MetricResults", js.Array(value :_*))
+    inline def setMetricResultsVarargs(value: HistoricalMetricResult*): Self = StObject.set(x, "MetricResults", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

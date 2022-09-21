@@ -286,7 +286,7 @@ trait FancyBoxInstanceMethods extends StObject {
     * @param obj
     * @param str
     */
-  def translate(obj: js.Any, str: String): String = js.native
+  def translate(obj: Any, str: String): String = js.native
   
   /**
     * Call callback and trigger an event
@@ -299,7 +299,7 @@ trait FancyBoxInstanceMethods extends StObject {
     * Update content size and position for all slides
     * @param e
     */
-  def update(e: js.Any): Unit = js.native
+  def update(e: Any): Unit = js.native
   
   /**
     * Update infobar values, navigation button states and reveal caption
@@ -319,5 +319,5 @@ trait FancyBoxInstanceMethods extends StObject {
     * @param e
     */
   def updateSlide(slide: FancyBoxSlide): Unit = js.native
-  def updateSlide(slide: FancyBoxSlide, e: js.Any): Unit = js.native
+  def updateSlide(slide: FancyBoxSlide, e: Any): Unit = js.native
 }

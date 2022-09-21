@@ -38,7 +38,7 @@ object FreeBusyQueryParameters {
     
     inline def setItems(value: js.Array[Id]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Id*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Id*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setTimeMax(value: datetime): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
     

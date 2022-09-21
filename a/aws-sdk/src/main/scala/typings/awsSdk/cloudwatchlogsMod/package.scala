@@ -1,52 +1,59 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccessPolicy = java.lang.String
+type AccessPolicy = String
 
-type Arn = java.lang.String
+type Arn = String
 
-type Days = scala.Double
+type Days = Double
 
-type DefaultValue = scala.Double
+type DefaultValue = Double
 
-type Descending = scala.Boolean
+type Descending = Boolean
 
-type DescribeLimit = scala.Double
+type DescribeLimit = Double
 
-type DescribeQueriesMaxResults = scala.Double
+type DescribeQueriesMaxResults = Double
 
-type DestinationArn = java.lang.String
+type DestinationArn = String
 
-type DestinationName = java.lang.String
+type DestinationName = String
 
-type Destinations = js.Array[typings.awsSdk.cloudwatchlogsMod.Destination]
+type Destinations = js.Array[Destination]
+
+type Dimensions = StringDictionary[DimensionsValue]
+
+type DimensionsKey = String
+
+type DimensionsValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Random_
   - typings.awsSdk.awsSdkStrings.ByLogStream
   - java.lang.String
 */
-type Distribution = typings.awsSdk.cloudwatchlogsMod._Distribution | java.lang.String
+type Distribution = _Distribution | String
 
-type EventId = java.lang.String
+type EventId = String
 
-type EventMessage = java.lang.String
+type EventMessage = String
 
-type EventNumber = scala.Double
+type EventNumber = Double
 
-type EventsLimit = scala.Double
+type EventsLimit = Double
 
-type ExportDestinationBucket = java.lang.String
+type ExportDestinationBucket = String
 
-type ExportDestinationPrefix = java.lang.String
+type ExportDestinationPrefix = String
 
-type ExportTaskId = java.lang.String
+type ExportTaskId = String
 
-type ExportTaskName = java.lang.String
+type ExportTaskName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CANCELLED
@@ -57,94 +64,96 @@ type ExportTaskName = java.lang.String
   - typings.awsSdk.awsSdkStrings.RUNNING
   - java.lang.String
 */
-type ExportTaskStatusCode = typings.awsSdk.cloudwatchlogsMod._ExportTaskStatusCode | java.lang.String
+type ExportTaskStatusCode = _ExportTaskStatusCode | String
 
-type ExportTaskStatusMessage = java.lang.String
+type ExportTaskStatusMessage = String
 
-type ExportTasks = js.Array[typings.awsSdk.cloudwatchlogsMod.ExportTask]
+type ExportTasks = js.Array[ExportTask]
 
-type ExtractedValues = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cloudwatchlogsMod.Value]
+type ExtractedValues = StringDictionary[Value]
 
-type Field = java.lang.String
+type Field = String
 
-type FilterCount = scala.Double
+type FilterCount = Double
 
-type FilterName = java.lang.String
+type FilterName = String
 
-type FilterPattern = java.lang.String
+type FilterPattern = String
 
-type FilteredLogEvents = js.Array[typings.awsSdk.cloudwatchlogsMod.FilteredLogEvent]
+type FilteredLogEvents = js.Array[FilteredLogEvent]
 
-type InputLogEvents = js.Array[typings.awsSdk.cloudwatchlogsMod.InputLogEvent]
+type ForceUpdate = Boolean
 
-type InputLogStreamNames = js.Array[typings.awsSdk.cloudwatchlogsMod.LogStreamName]
+type InputLogEvents = js.Array[InputLogEvent]
 
-type Interleaved = scala.Boolean
+type InputLogStreamNames = js.Array[LogStreamName]
 
-type KmsKeyId = java.lang.String
+type Interleaved = Boolean
 
-type LogEventIndex = scala.Double
+type KmsKeyId = String
 
-type LogGroupFieldList = js.Array[typings.awsSdk.cloudwatchlogsMod.LogGroupField]
+type LogEventIndex = Double
 
-type LogGroupName = java.lang.String
+type LogGroupFieldList = js.Array[LogGroupField]
 
-type LogGroupNames = js.Array[typings.awsSdk.cloudwatchlogsMod.LogGroupName]
+type LogGroupName = String
 
-type LogGroups = js.Array[typings.awsSdk.cloudwatchlogsMod.LogGroup]
+type LogGroupNames = js.Array[LogGroupName]
 
-type LogRecord = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cloudwatchlogsMod.Value]
+type LogGroups = js.Array[LogGroup]
 
-type LogRecordPointer = java.lang.String
+type LogRecord = StringDictionary[Value]
 
-type LogStreamName = java.lang.String
+type LogRecordPointer = String
 
-type LogStreamSearchedCompletely = scala.Boolean
+type LogStreamName = String
 
-type LogStreams = js.Array[typings.awsSdk.cloudwatchlogsMod.LogStream]
+type LogStreamSearchedCompletely = Boolean
 
-type MetricFilterMatches = js.Array[typings.awsSdk.cloudwatchlogsMod.MetricFilterMatchRecord]
+type LogStreams = js.Array[LogStream]
 
-type MetricFilters = js.Array[typings.awsSdk.cloudwatchlogsMod.MetricFilter]
+type MetricFilterMatches = js.Array[MetricFilterMatchRecord]
 
-type MetricName = java.lang.String
+type MetricFilters = js.Array[MetricFilter]
 
-type MetricNamespace = java.lang.String
+type MetricName = String
 
-type MetricTransformations = js.Array[typings.awsSdk.cloudwatchlogsMod.MetricTransformation]
+type MetricNamespace = String
 
-type MetricValue = java.lang.String
+type MetricTransformations = js.Array[MetricTransformation]
 
-type NextToken = java.lang.String
+type MetricValue = String
+
+type NextToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LogStreamName
   - typings.awsSdk.awsSdkStrings.LastEventTime
   - java.lang.String
 */
-type OrderBy = typings.awsSdk.cloudwatchlogsMod._OrderBy | java.lang.String
+type OrderBy = _OrderBy | String
 
-type OutputLogEvents = js.Array[typings.awsSdk.cloudwatchlogsMod.OutputLogEvent]
+type OutputLogEvents = js.Array[OutputLogEvent]
 
-type Percentage = scala.Double
+type Percentage = Double
 
-type PolicyDocument = java.lang.String
+type PolicyDocument = String
 
-type PolicyName = java.lang.String
+type PolicyName = String
 
-type QueryDefinitionList = js.Array[typings.awsSdk.cloudwatchlogsMod.QueryDefinition]
+type QueryDefinitionList = js.Array[QueryDefinition]
 
-type QueryDefinitionName = java.lang.String
+type QueryDefinitionName = String
 
-type QueryDefinitionString = java.lang.String
+type QueryDefinitionString = String
 
-type QueryId = java.lang.String
+type QueryId = String
 
-type QueryInfoList = js.Array[typings.awsSdk.cloudwatchlogsMod.QueryInfo]
+type QueryInfoList = js.Array[QueryInfo]
 
-type QueryListMaxResults = scala.Double
+type QueryListMaxResults = Double
 
-type QueryResults = js.Array[typings.awsSdk.cloudwatchlogsMod.ResultRows]
+type QueryResults = js.Array[ResultRows]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Scheduled_
@@ -152,53 +161,87 @@ type QueryResults = js.Array[typings.awsSdk.cloudwatchlogsMod.ResultRows]
   - typings.awsSdk.awsSdkStrings.Complete_
   - typings.awsSdk.awsSdkStrings.Failed_
   - typings.awsSdk.awsSdkStrings.Cancelled_
+  - typings.awsSdk.awsSdkStrings.Timeout_
+  - typings.awsSdk.awsSdkStrings.Unknown_
   - java.lang.String
 */
-type QueryStatus = typings.awsSdk.cloudwatchlogsMod._QueryStatus | java.lang.String
+type QueryStatus = _QueryStatus | String
 
-type QueryString = java.lang.String
+type QueryString = String
 
-type ResourcePolicies = js.Array[typings.awsSdk.cloudwatchlogsMod.ResourcePolicy]
+type ResourcePolicies = js.Array[ResourcePolicy]
 
-type ResultRows = js.Array[typings.awsSdk.cloudwatchlogsMod.ResultField]
+type ResultRows = js.Array[ResultField]
 
-type RoleArn = java.lang.String
+type RoleArn = String
 
-type SearchedLogStreams = js.Array[typings.awsSdk.cloudwatchlogsMod.SearchedLogStream]
+type SearchedLogStreams = js.Array[SearchedLogStream]
 
-type SequenceToken = java.lang.String
+type SequenceToken = String
 
-type StartFromHead = scala.Boolean
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Seconds_
+  - typings.awsSdk.awsSdkStrings.Microseconds_
+  - typings.awsSdk.awsSdkStrings.Milliseconds_
+  - typings.awsSdk.awsSdkStrings.Bytes_
+  - typings.awsSdk.awsSdkStrings.Kilobytes
+  - typings.awsSdk.awsSdkStrings.Megabytes
+  - typings.awsSdk.awsSdkStrings.Gigabytes
+  - typings.awsSdk.awsSdkStrings.Terabytes_
+  - typings.awsSdk.awsSdkStrings.Bits_
+  - typings.awsSdk.awsSdkStrings.Kilobits
+  - typings.awsSdk.awsSdkStrings.Megabits
+  - typings.awsSdk.awsSdkStrings.Gigabits
+  - typings.awsSdk.awsSdkStrings.Terabits
+  - typings.awsSdk.awsSdkStrings.Percent_
+  - typings.awsSdk.awsSdkStrings.Count_
+  - typings.awsSdk.awsSdkStrings.BytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.KilobytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.MegabytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.GigabytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.TerabytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.BitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.KilobitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.MegabitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.GigabitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.TerabitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.CountSlashSecond
+  - typings.awsSdk.awsSdkStrings.None_
+  - java.lang.String
+*/
+type StandardUnit = _StandardUnit | String
 
-type StatsValue = scala.Double
+type StartFromHead = Boolean
 
-type StoredBytes = scala.Double
+type StatsValue = Double
 
-type SubscriptionFilters = js.Array[typings.awsSdk.cloudwatchlogsMod.SubscriptionFilter]
+type StoredBytes = Double
 
-type Success = scala.Boolean
+type SubscriptionFilters = js.Array[SubscriptionFilter]
 
-type TagKey = java.lang.String
+type Success = Boolean
 
-type TagList = js.Array[typings.awsSdk.cloudwatchlogsMod.TagKey]
+type TagKey = String
 
-type TagValue = java.lang.String
+type TagList = js.Array[TagKey]
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cloudwatchlogsMod.TagValue]
+type TagValue = String
 
-type TargetArn = java.lang.String
+type Tags = StringDictionary[TagValue]
 
-type TestEventMessages = js.Array[typings.awsSdk.cloudwatchlogsMod.EventMessage]
+type TargetArn = String
 
-type Timestamp = scala.Double
+type TestEventMessages = js.Array[EventMessage]
 
-type Token = java.lang.String
+type Timestamp = Double
 
-type Value = java.lang.String
+type Token = String
+
+type Value = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2014-03-28`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.cloudwatchlogsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

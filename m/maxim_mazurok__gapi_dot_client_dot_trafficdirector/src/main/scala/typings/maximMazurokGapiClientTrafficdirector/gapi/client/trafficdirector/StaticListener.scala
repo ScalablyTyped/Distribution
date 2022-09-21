@@ -14,7 +14,7 @@ trait StaticListener extends StObject {
   var listener: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener & TopLevel[Any]
   ] = js.undefined
 }
 object StaticListener {
@@ -33,7 +33,7 @@ object StaticListener {
     inline def setListener(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener & TopLevel[Any]
     ): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)

@@ -9,5 +9,5 @@ object mod {
   
   @JSImport("react-cartographer", "Map")
   @js.native
-  class Map () extends default
+  open class Map () extends default
 }

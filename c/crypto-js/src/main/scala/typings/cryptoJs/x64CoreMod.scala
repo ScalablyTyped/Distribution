@@ -346,6 +346,13 @@ object x64CoreMod {
     val Base64: Encoder = js.native
     
     /**
+      * Base64url encoding strategy.
+      */
+    @JSImport("crypto-js/x64-core", "enc.Base64url")
+    @js.native
+    val Base64url: Encoder = js.native
+    
+    /**
       * Hex encoding strategy.
       */
     @JSImport("crypto-js/x64-core", "enc.Hex")
@@ -452,7 +459,7 @@ object x64CoreMod {
         *
         *     var instance = MyType.create();
         */
-      inline def create(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def create(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
       
       /**
         * Creates a new object that inherits from this object.
@@ -470,7 +477,7 @@ object x64CoreMod {
         *         }
         *     });
         */
-      inline def extend(overrides: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(overrides.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def extend(overrides: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(overrides.asInstanceOf[js.Any]).asInstanceOf[Any]
       
       /**
         * Copies properties into this object.
@@ -483,7 +490,7 @@ object x64CoreMod {
         *         field: 'value'
         *     });
         */
-      inline def mixIn(properties: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixIn")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def mixIn(properties: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixIn")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
     }
     
     /**
@@ -491,11 +498,11 @@ object x64CoreMod {
       */
     @JSImport("crypto-js/x64-core", "lib.BlockCipherMode")
     @js.native
-    val BlockCipherMode: js.Any = js.native
+    val BlockCipherMode: Any = js.native
     
     @JSImport("crypto-js/x64-core", "lib.BufferedBlockAlgorithm")
     @js.native
-    val BufferedBlockAlgorithm: js.Any = js.native
+    val BufferedBlockAlgorithm: Any = js.native
     
     object Cipher {
       

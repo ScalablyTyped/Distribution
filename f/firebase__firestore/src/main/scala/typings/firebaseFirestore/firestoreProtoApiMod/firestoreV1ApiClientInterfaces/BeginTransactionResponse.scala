@@ -1,19 +1,24 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BeginTransactionResponse extends js.Object {
+trait BeginTransactionResponse extends StObject {
+  
   var transaction: js.UndefOr[String] = js.undefined
 }
-
 object BeginTransactionResponse {
-  @scala.inline
-  def apply(transaction: String = null): BeginTransactionResponse = {
+  
+  inline def apply(): BeginTransactionResponse = {
     val __obj = js.Dynamic.literal()
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeginTransactionResponse]
   }
+  
+  extension [Self <: BeginTransactionResponse](x: Self) {
+    
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+  }
 }
-

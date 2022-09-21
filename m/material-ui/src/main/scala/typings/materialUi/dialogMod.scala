@@ -10,10 +10,10 @@ object dialogMod {
   
   @JSImport("material-ui/Dialog", JSImport.Default)
   @js.native
-  class default () extends Dialog
+  open class default () extends Dialog
   
   @JSImport("material-ui/Dialog", "Dialog")
   @js.native
-  class Dialog ()
-    extends Component[DialogProps, js.Object, js.Any]
+  open class Dialog ()
+    extends Component[DialogProps, js.Object, Any]
 }

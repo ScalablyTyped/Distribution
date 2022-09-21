@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Query")
 @js.native
-class Query ()
+open class Query ()
   extends StObject
      with typings.ejWebAll.ej.Query
 object Query {
@@ -16,7 +16,7 @@ object Query {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def extend(prototype: js.Any): typings.ejWebAll.ej.Query = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(prototype.asInstanceOf[js.Any]).asInstanceOf[typings.ejWebAll.ej.Query]
+  inline def extend(prototype: Any): typings.ejWebAll.ej.Query = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(prototype.asInstanceOf[js.Any]).asInstanceOf[typings.ejWebAll.ej.Query]
   
   /* static member */
   @JSGlobal("ej.Query.fn")

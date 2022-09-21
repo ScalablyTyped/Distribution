@@ -10,10 +10,10 @@ object deviceHubMod {
   
   @JSImport("material-ui/svg-icons/hardware/device-hub", JSImport.Default)
   @js.native
-  class default () extends HardwareDeviceHub
+  open class default () extends HardwareDeviceHub
   
   @JSImport("material-ui/svg-icons/hardware/device-hub", "HardwareDeviceHub")
   @js.native
-  class HardwareDeviceHub ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareDeviceHub ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -51,6 +51,6 @@ object GetBucketWebsiteOutput {
     
     inline def setRoutingRulesUndefined: Self = StObject.set(x, "RoutingRules", js.undefined)
     
-    inline def setRoutingRulesVarargs(value: RoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value :_*))
+    inline def setRoutingRulesVarargs(value: RoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value*))
   }
 }

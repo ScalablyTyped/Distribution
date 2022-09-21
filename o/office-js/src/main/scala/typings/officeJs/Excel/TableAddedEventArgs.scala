@@ -8,41 +8,41 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the table that raised the added event.
   *
-  * Provides information about the table that raised the OnAdded event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait TableAddedEventArgs extends StObject {
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the ID of the table that is added.
     *
-    * Gets the id of the table that is added.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tableId: String
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: TableAdded
   
   /**
+    * Gets the ID of the worksheet in which the table is added.
     *
-    * Gets the id of the worksheet in which the table is added.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var worksheetId: String

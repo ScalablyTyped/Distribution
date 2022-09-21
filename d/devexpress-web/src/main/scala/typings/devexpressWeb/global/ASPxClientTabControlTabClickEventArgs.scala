@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTabControlTabClickEventArgs")
 @js.native
-class ASPxClientTabControlTabClickEventArgs protected ()
+open class ASPxClientTabControlTabClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTabControlTabClickEventArgs {
   /**
@@ -22,8 +22,8 @@ class ASPxClientTabControlTabClickEventArgs protected ()
   def this(
     processOnServer: Boolean,
     tab: typings.devexpressWeb.ASPxClientTab,
-    htmlElement: js.Any,
-    htmlEvent: js.Any
+    htmlElement: Any,
+    htmlEvent: Any
   ) = this()
   
   /**
@@ -36,13 +36,13 @@ class ASPxClientTabControlTabClickEventArgs protected ()
     * Gets the HTML object that contains the processed tab.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets or sets a value that specifies whether the event should be finally processed on the server side.

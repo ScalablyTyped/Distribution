@@ -13,34 +13,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IBindablePropertyConfig
   extends StObject
-     with // For compatibility and future extension
-/* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var attribute: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of a view model method to invoke when the property is updated.
-    */
+  	 * The name of a view model method to invoke when the property is updated.
+  	 */
   var changeHandler: js.UndefOr[String] = js.undefined
   
   /**
-    * The default binding mode of the property. If given string, will use to lookup
-    */
+  	 * The default binding mode of the property. If given string, will use to lookup
+  	 */
   var defaultBindingMode: js.UndefOr[bindingMode | oneTime | oneWay | twoWay | fromView | toView] = js.undefined
   
   /**
-    * A default value for the property.
-    */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  	 * A default value for the property.
+  	 */
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   /**
-    * The name of the property.
-    */
+  	* The name of the property.
+  	*/
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Designates the property as the default bindable property among all the other bindable properties when used in a custom attribute with multiple bindable properties.
-    */
+  	 * Designates the property as the default bindable property among all the other bindable properties when used in a custom attribute with multiple bindable properties.
+  	 */
   var primaryProperty: js.UndefOr[Boolean] = js.undefined
 }
 object IBindablePropertyConfig {
@@ -64,7 +63,7 @@ object IBindablePropertyConfig {
     
     inline def setDefaultBindingModeUndefined: Self = StObject.set(x, "defaultBindingMode", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     

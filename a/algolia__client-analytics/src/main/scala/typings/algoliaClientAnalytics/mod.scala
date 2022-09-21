@@ -106,7 +106,7 @@ object mod {
       
       inline def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
       
-      inline def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
+      inline def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value*))
     }
   }
   
@@ -326,7 +326,7 @@ object mod {
       
       inline def setVariants(value: js.Array[VariantResponse]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
       
-      inline def setVariantsVarargs(value: VariantResponse*): Self = StObject.set(x, "variants", js.Array(value :_*))
+      inline def setVariantsVarargs(value: VariantResponse*): Self = StObject.set(x, "variants", js.Array(value*))
     }
   }
   
@@ -391,7 +391,7 @@ object mod {
       
       inline def setAbtestsNull: Self = StObject.set(x, "abtests", null)
       
-      inline def setAbtestsVarargs(value: GetABTestResponse*): Self = StObject.set(x, "abtests", js.Array(value :_*))
+      inline def setAbtestsVarargs(value: GetABTestResponse*): Self = StObject.set(x, "abtests", js.Array(value*))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

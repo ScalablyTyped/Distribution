@@ -10,10 +10,10 @@ A powerful tooltip and menu component library for react.
 | ------------------ | :-------------: |
 | Full name          | react-power-tooltip |
 | Keywords           | tooltip, notification, menu, react, react-component |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 29878 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8491.666666666666 |
+| # stars            | 139.0 |
 
 ## Links
 - [Homepage](https://justinrhodes1.github.io/react-power-tooltip/)

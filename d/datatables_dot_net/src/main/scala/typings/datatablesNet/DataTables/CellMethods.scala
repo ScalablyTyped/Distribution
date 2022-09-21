@@ -14,13 +14,13 @@ trait CellMethods
   /**
     * Get data for the selected cell
     */
-  def data(): js.Any = js.native
+  def data(): Any = js.native
   /**
     * Get data for the selected cell
     *
     * @param data Value to assign to the data for the cell
     */
-  def data(data: js.Any): Api = js.native
+  def data(data: Any): Api = js.native
   
   /**
     * Get index information about the selected cell

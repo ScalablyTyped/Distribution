@@ -1,11 +1,12 @@
 package typings.blueprintjsCore
 
-import typings.blueprintjsCore.anon.PartialICollapsibleListPr
+import typings.blueprintjsCore.anon.PartialCollapsibleListPro
 import typings.blueprintjsCore.boundaryMod.Boundary
-import typings.blueprintjsCore.menuItemMod.IMenuItemProps
+import typings.blueprintjsCore.menuItemMod.MenuItemProps
 import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,16 +16,16 @@ object collapsibleListMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/collapsible-list/collapsibleList", "CollapsibleList")
   @js.native
-  class CollapsibleList protected ()
-    extends Component[ICollapsibleListProps, js.Object, js.Any] {
-    def this(props: ICollapsibleListProps) = this()
+  open class CollapsibleList protected ()
+    extends Component[CollapsibleListProps, js.Object, Any] {
+    def this(props: CollapsibleListProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ICollapsibleListProps, context: js.Any) = this()
+    def this(props: CollapsibleListProps, context: Any) = this()
     
-    /* private */ var partitionChildren: js.Any = js.native
+    /* private */ var partitionChildren: Any = js.native
   }
   /* static members */
   object CollapsibleList {
@@ -35,8 +36,8 @@ object collapsibleListMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/collapsible-list/collapsibleList", "CollapsibleList.defaultProps")
     @js.native
-    def defaultProps: PartialICollapsibleListPr = js.native
-    inline def defaultProps_=(x: PartialICollapsibleListPr): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialCollapsibleListPro = js.native
+    inline def defaultProps_=(x: PartialCollapsibleListPro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/collapsible-list/collapsibleList", "CollapsibleList.displayName")
     @js.native
@@ -44,12 +45,18 @@ object collapsibleListMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  type CollapsibleListProps = ICollapsibleListProps
+  
   trait ICollapsibleListProps
     extends StObject
        with IProps {
     
+    /** Contents to collapse. */
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Which direction the items should collapse from: start or end of the children.
+      *
       * @default Boundary.START
       */
     var collapseFrom: js.UndefOr[Boundary] = js.undefined
@@ -71,6 +78,7 @@ object collapsibleListMod {
     
     /**
       * Exact number of visible items.
+      *
       * @default 3
       */
     var visibleItemCount: js.UndefOr[Double] = js.undefined
@@ -79,16 +87,20 @@ object collapsibleListMod {
       * Callback invoked to render each visible item. The item will be wrapped in an `li` with
       * the optional `visibleItemClassName` prop.
       */
-    def visibleItemRenderer(props: IMenuItemProps, index: Double): Element
+    def visibleItemRenderer(props: MenuItemProps, index: Double): Element
   }
   object ICollapsibleListProps {
     
-    inline def apply(dropdownTarget: Element, visibleItemRenderer: (IMenuItemProps, Double) => Element): ICollapsibleListProps = {
+    inline def apply(dropdownTarget: Element, visibleItemRenderer: (MenuItemProps, Double) => Element): ICollapsibleListProps = {
       val __obj = js.Dynamic.literal(dropdownTarget = dropdownTarget.asInstanceOf[js.Any], visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))
       __obj.asInstanceOf[ICollapsibleListProps]
     }
     
     extension [Self <: ICollapsibleListProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCollapseFrom(value: Boundary): Self = StObject.set(x, "collapseFrom", value.asInstanceOf[js.Any])
       
@@ -108,7 +120,7 @@ object collapsibleListMod {
       
       inline def setVisibleItemCountUndefined: Self = StObject.set(x, "visibleItemCount", js.undefined)
       
-      inline def setVisibleItemRenderer(value: (IMenuItemProps, Double) => Element): Self = StObject.set(x, "visibleItemRenderer", js.Any.fromFunction2(value))
+      inline def setVisibleItemRenderer(value: (MenuItemProps, Double) => Element): Self = StObject.set(x, "visibleItemRenderer", js.Any.fromFunction2(value))
     }
   }
 }

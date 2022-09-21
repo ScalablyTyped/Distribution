@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFileManagerErrorConsts")
 @js.native
-class ASPxClientFileManagerErrorConsts ()
+open class ASPxClientFileManagerErrorConsts ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFileManagerErrorConsts
 object ASPxClientFileManagerErrorConsts {

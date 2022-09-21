@@ -1,6 +1,5 @@
 package typings.xhrMock
 
-import typings.std.Error
 import typings.xhrMock.mockRequestMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,5 +12,5 @@ object formatErrorMod {
   val ^ : js.Any = js.native
   
   inline def formatError(msg: String, req: default): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(msg.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def formatError(msg: String, req: default, err: Error): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(msg.asInstanceOf[js.Any], req.asInstanceOf[js.Any], err.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatError(msg: String, req: default, err: js.Error): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(msg.asInstanceOf[js.Any], req.asInstanceOf[js.Any], err.asInstanceOf[js.Any])).asInstanceOf[String]
 }

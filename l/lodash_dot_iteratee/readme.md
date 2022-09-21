@@ -10,10 +10,10 @@ The lodash method `_.iteratee` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.iteratee |
 | Keywords           | lodash-modularized, iteratee |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 3410913 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 184051.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

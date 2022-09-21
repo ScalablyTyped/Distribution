@@ -6,10 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "UnaryOperand")
 @js.native
-class UnaryOperand protected () extends Operand {
+open class UnaryOperand protected () extends Operand {
   def this(expressionValue: Operand, operatorName: String) = this()
   
-  val expression: Operand = js.native
+  var consumer: Any = js.native
   
-  val operator: String = js.native
+  def expression: Operand = js.native
+  
+  def operator: String = js.native
 }

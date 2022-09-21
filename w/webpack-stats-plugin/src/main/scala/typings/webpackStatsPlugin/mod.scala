@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("webpack-stats-plugin", "StatsWriterPlugin")
   @js.native
-  class StatsWriterPlugin () extends ^ {
+  open class StatsWriterPlugin () extends ^ {
     def this(opts: Options) = this()
   }
 }

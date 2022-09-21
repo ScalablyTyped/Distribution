@@ -69,7 +69,7 @@ object PartialPkgManagerOptions {
     
     inline def setScriptArgsUndefined: Self = StObject.set(x, "scriptArgs", js.undefined)
     
-    inline def setScriptArgsVarargs(value: String*): Self = StObject.set(x, "scriptArgs", js.Array(value :_*))
+    inline def setScriptArgsVarargs(value: String*): Self = StObject.set(x, "scriptArgs", js.Array(value*))
     
     inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
   }

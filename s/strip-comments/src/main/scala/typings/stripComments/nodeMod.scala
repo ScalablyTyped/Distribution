@@ -8,7 +8,7 @@ object nodeMod {
   
   @JSImport("strip-comments/lib/Node", "Block")
   @js.native
-  class Block protected () extends Node {
+  open class Block protected () extends Node {
     def this(node: Node) = this()
     
     def push(node: Node): Unit = js.native
@@ -16,14 +16,14 @@ object nodeMod {
   
   @JSImport("strip-comments/lib/Node", "Node")
   @js.native
-  class Node protected () extends StObject {
+  open class Node protected () extends StObject {
     def this(node: Node) = this()
     
     var `match`: Boolean = js.native
     
     var newline: String = js.native
     
-    var nodes: js.Array[js.Any] = js.native
+    var nodes: js.Array[Any] = js.native
     
     val `protected`: Boolean = js.native
     

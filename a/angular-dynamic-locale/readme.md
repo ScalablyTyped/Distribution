@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-dynamic-locale
 
-Typings are for version 0.1.37
+Typings are for version 0.1.38
 
 ## Library description:
 A minimal module that adds the ability to dynamically change the locale
@@ -10,10 +10,10 @@ A minimal module that adds the ability to dynamically change the locale
 | ------------------ | :-------------: |
 | Full name          | angular-dynamic-locale |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 1200500 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 240394.33333333334 |
+| # stars            | 324.0 |
 
 ## Links
 - [Homepage](https://github.com/lgalfaso/angular-dynamic-locale#readme)

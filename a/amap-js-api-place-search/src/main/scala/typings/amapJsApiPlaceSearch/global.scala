@@ -15,7 +15,7 @@ object global {
       * 地点搜索服务
       * @param options 选项
       */
-    class PlaceSearch ()
+    open class PlaceSearch ()
       extends StObject
          with typings.amapJsApiPlaceSearch.AMap.PlaceSearch {
       def this(options: Options) = this()

@@ -23,14 +23,14 @@ object IQD {
     
     inline def setIQD(value: js.Array[String]): Self = StObject.set(x, "IQD", value.asInstanceOf[js.Any])
     
-    inline def setIQDVarargs(value: String*): Self = StObject.set(x, "IQD", js.Array(value :_*))
+    inline def setIQDVarargs(value: String*): Self = StObject.set(x, "IQD", js.Array(value*))
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
   }
 }

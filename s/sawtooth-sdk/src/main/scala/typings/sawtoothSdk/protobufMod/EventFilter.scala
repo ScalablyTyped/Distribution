@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.EventFilter.FilterType
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new EventFilter.
   * @param [properties] Properties to set
   */
-class EventFilter ()
+open class EventFilter ()
   extends StObject
      with IEventFilter {
   def this(properties: IEventFilter) = this()
@@ -37,7 +36,7 @@ class EventFilter ()
     * Converts this EventFilter to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object EventFilter {
@@ -95,6 +94,8 @@ object EventFilter {
   inline def create(): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EventFilter]
   inline def create(properties: IEventFilter): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[EventFilter]
   
+  inline def decode(reader: js.typedarray.Uint8Array): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EventFilter]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): EventFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EventFilter]
   /**
     * Decodes an EventFilter message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -105,9 +106,8 @@ object EventFilter {
     */
   inline def decode(reader: Reader): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EventFilter]
   inline def decode(reader: Reader, length: Double): EventFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EventFilter]
-  inline def decode(reader: Uint8Array): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EventFilter]
-  inline def decode(reader: Uint8Array, length: Double): EventFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EventFilter]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EventFilter]
   /**
     * Decodes an EventFilter message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -116,7 +116,6 @@ object EventFilter {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EventFilter]
-  inline def decodeDelimited(reader: Uint8Array): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EventFilter]
   
   /**
     * Encodes the specified EventFilter message. Does not implicitly {@link EventFilter.verify|verify} messages.
@@ -141,7 +140,7 @@ object EventFilter {
     * @param object Plain object
     * @returns EventFilter
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EventFilter]
+  inline def fromObject(`object`: StringDictionary[Any]): EventFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EventFilter]
   
   /**
     * Creates a plain object from an EventFilter message. Also converts values to other types if specified.
@@ -149,13 +148,13 @@ object EventFilter {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: EventFilter): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: EventFilter, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: EventFilter): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: EventFilter, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an EventFilter message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

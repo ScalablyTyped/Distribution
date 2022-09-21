@@ -143,7 +143,7 @@ object stringMod {
         
         inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
         
-        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value*))
         
         inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       }

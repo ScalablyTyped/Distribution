@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientActionAvailabilityChangedEventArgs")
 @js.native
-class ASPxClientActionAvailabilityChangedEventArgs ()
+open class ASPxClientActionAvailabilityChangedEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientActionAvailabilityChangedEventArgs {
   

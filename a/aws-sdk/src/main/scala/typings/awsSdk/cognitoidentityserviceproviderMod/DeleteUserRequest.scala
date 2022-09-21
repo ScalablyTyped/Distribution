@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteUserRequest extends StObject {
   
   /**
-    * The access token from a request to delete a user.
+    * A valid access token that Amazon Cognito issued to the user whose user profile you want to delete.
     */
   var AccessToken: TokenModelType
 }

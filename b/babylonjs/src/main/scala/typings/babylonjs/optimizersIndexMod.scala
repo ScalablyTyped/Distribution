@@ -8,6 +8,6 @@ object optimizersIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Optimizers/index", "NodeMaterialOptimizer")
   @js.native
-  class NodeMaterialOptimizer ()
+  open class NodeMaterialOptimizer ()
     extends typings.babylonjs.nodeMaterialOptimizerMod.NodeMaterialOptimizer
 }

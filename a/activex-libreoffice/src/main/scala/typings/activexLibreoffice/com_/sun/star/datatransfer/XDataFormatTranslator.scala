@@ -21,22 +21,22 @@ trait XDataFormatTranslator
     * @param aSysDataType A system dependent data type. If aSysDataType is empty so is the returned {@link DataFlavor} .
     * @returns A {@link DataFlavor} for the given system dependent data transfer type. If there is no appropriate mapping for a system dependent data type, the
     */
-  def getDataFlavorFromSystemDataType(aSysDataType: js.Any): DataFlavor
+  def getDataFlavorFromSystemDataType(aSysDataType: Any): DataFlavor
   
   /**
     * Converts a {@link DataFlavor} to system dependent data type.
     * @param aDataFlavor Describes the format for which a system dependent data types is requested.
     * @returns A system dependent data transfer type for the given {@link DataFlavor} if there is one available. If the is no system dependent data type for a g
     */
-  def getSystemDataTypeFromDataFlavor(aDataFlavor: DataFlavor): js.Any
+  def getSystemDataTypeFromDataFlavor(aDataFlavor: DataFlavor): Any
 }
 object XDataFormatTranslator {
   
   inline def apply(
     acquire: () => Unit,
-    getDataFlavorFromSystemDataType: js.Any => DataFlavor,
-    getSystemDataTypeFromDataFlavor: DataFlavor => js.Any,
-    queryInterface: `type` => js.Any,
+    getDataFlavorFromSystemDataType: Any => DataFlavor,
+    getSystemDataTypeFromDataFlavor: DataFlavor => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataFormatTranslator = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDataFlavorFromSystemDataType = js.Any.fromFunction1(getDataFlavorFromSystemDataType), getSystemDataTypeFromDataFlavor = js.Any.fromFunction1(getSystemDataTypeFromDataFlavor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -45,8 +45,8 @@ object XDataFormatTranslator {
   
   extension [Self <: XDataFormatTranslator](x: Self) {
     
-    inline def setGetDataFlavorFromSystemDataType(value: js.Any => DataFlavor): Self = StObject.set(x, "getDataFlavorFromSystemDataType", js.Any.fromFunction1(value))
+    inline def setGetDataFlavorFromSystemDataType(value: Any => DataFlavor): Self = StObject.set(x, "getDataFlavorFromSystemDataType", js.Any.fromFunction1(value))
     
-    inline def setGetSystemDataTypeFromDataFlavor(value: DataFlavor => js.Any): Self = StObject.set(x, "getSystemDataTypeFromDataFlavor", js.Any.fromFunction1(value))
+    inline def setGetSystemDataTypeFromDataFlavor(value: DataFlavor => Any): Self = StObject.set(x, "getSystemDataTypeFromDataFlavor", js.Any.fromFunction1(value))
   }
 }

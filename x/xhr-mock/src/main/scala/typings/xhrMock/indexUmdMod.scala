@@ -18,7 +18,7 @@ object indexUmdMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("xhr-mock/lib/index.umd", "default.RealXMLHttpRequest")
     @js.native
-    class RealXMLHttpRequest ()
+    open class RealXMLHttpRequest ()
       extends StObject
          with XMLHttpRequest
     

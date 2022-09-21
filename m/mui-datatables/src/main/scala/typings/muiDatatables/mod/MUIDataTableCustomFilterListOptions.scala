@@ -12,7 +12,7 @@ trait MUIDataTableCustomFilterListOptions extends StObject {
     *
     * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/customize-filter/index.js)
     */
-  var render: js.UndefOr[js.Function1[/* value */ js.Any, ReactNode]] = js.undefined
+  var render: js.UndefOr[js.Function1[/* value */ Any, ReactNode]] = js.undefined
   
   /**
     * Function that returns a filterList allowing for custom filter updates
@@ -38,7 +38,7 @@ object MUIDataTableCustomFilterListOptions {
   
   extension [Self <: MUIDataTableCustomFilterListOptions](x: Self) {
     
-    inline def setRender(value: /* value */ js.Any => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* value */ Any => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     

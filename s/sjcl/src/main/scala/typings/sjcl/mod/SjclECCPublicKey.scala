@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sjcl", "SjclECCPublicKey")
 @js.native
-class SjclECCPublicKey () extends StObject {
+open class SjclECCPublicKey () extends StObject {
   
   def get(): SjclECCPublicKeyData = js.native
   

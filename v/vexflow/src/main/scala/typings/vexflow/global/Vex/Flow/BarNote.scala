@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.BarNote")
 @js.native
-class BarNote ()
+open class BarNote ()
   extends StObject
      with typings.vexflow.Vex.Flow.BarNote {
   

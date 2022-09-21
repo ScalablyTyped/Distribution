@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "AnaglyphFreeCamera")
 @js.native
-class AnaglyphFreeCamera protected ()
+open class AnaglyphFreeCamera protected ()
   extends typings.babylonjs.indexMod.AnaglyphFreeCamera {
   /**
     * Creates a new AnaglyphFreeCamera
@@ -15,6 +15,7 @@ class AnaglyphFreeCamera protected ()
     * @param interaxialDistance defines distance between each color axis
     * @param scene defines the hosting scene
     */
+  def this(name: String, position: typings.babylonjs.mathVectorMod.Vector3, interaxialDistance: Double) = this()
   def this(
     name: String,
     position: typings.babylonjs.mathVectorMod.Vector3,

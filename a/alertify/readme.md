@@ -10,13 +10,12 @@ An unobtrusive customizable JavaScript notification system
 | ------------------ | :-------------: |
 | Full name          | alertify |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 31207 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2134.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](http://fabien-d.github.com/alertify.js/)
 - [Npm](https://www.npmjs.com/package/alertify)
     
 

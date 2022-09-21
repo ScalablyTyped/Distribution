@@ -11,10 +11,10 @@ object elementMod {
   
   @JSImport("react-scroll/modules/components/Element", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ElementProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ElementProps, js.Object, Any]
   
-  type Element = Component[ElementProps, js.Object, js.Any]
+  type Element = Component[ElementProps, js.Object, Any]
   
   trait ElementProps
     extends StObject

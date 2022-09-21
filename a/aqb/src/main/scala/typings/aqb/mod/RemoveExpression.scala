@@ -11,15 +11,15 @@ trait RemoveExpression
      with PartialStatement
      with Instantiable4[
       /* prev */ PartialStatement, 
-      /* expr */ js.Any, 
-      /* collection */ js.Any, 
-      /* options */ js.Any, 
+      /* expr */ Any, 
+      /* collection */ Any, 
+      /* options */ Any, 
       PartialStatement
     ] {
   
-  def options(newOpts: js.Any): RemoveExpression = js.native
+  def options(newOpts: Any): RemoveExpression = js.native
   
-  def returnOld(x: js.Any): ReturnExpression = js.native
+  def returnOld(x: Any): ReturnExpression = js.native
   
   def toAQL(): String = js.native
 }

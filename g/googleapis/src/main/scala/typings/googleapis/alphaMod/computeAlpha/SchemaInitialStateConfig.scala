@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Initial State for shielded instance, these are public keys which are safe
-  * to store in public
-  */
 trait SchemaInitialStateConfig extends StObject {
   
   /**
@@ -43,19 +39,19 @@ object SchemaInitialStateConfig {
     
     inline def setDbsUndefined: Self = StObject.set(x, "dbs", js.undefined)
     
-    inline def setDbsVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "dbs", js.Array(value :_*))
+    inline def setDbsVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "dbs", js.Array(value*))
     
     inline def setDbxs(value: js.Array[SchemaFileContentBuffer]): Self = StObject.set(x, "dbxs", value.asInstanceOf[js.Any])
     
     inline def setDbxsUndefined: Self = StObject.set(x, "dbxs", js.undefined)
     
-    inline def setDbxsVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "dbxs", js.Array(value :_*))
+    inline def setDbxsVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "dbxs", js.Array(value*))
     
     inline def setKeks(value: js.Array[SchemaFileContentBuffer]): Self = StObject.set(x, "keks", value.asInstanceOf[js.Any])
     
     inline def setKeksUndefined: Self = StObject.set(x, "keks", js.undefined)
     
-    inline def setKeksVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "keks", js.Array(value :_*))
+    inline def setKeksVarargs(value: SchemaFileContentBuffer*): Self = StObject.set(x, "keks", js.Array(value*))
     
     inline def setPk(value: SchemaFileContentBuffer): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     

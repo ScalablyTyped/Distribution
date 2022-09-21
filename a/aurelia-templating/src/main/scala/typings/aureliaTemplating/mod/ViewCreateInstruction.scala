@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewCreateInstruction extends StObject {
   
   /**
-    * Indicates that the view is being created by enhancing existing DOM.
-    */
+  	* Indicates that the view is being created by enhancing existing DOM.
+  	*/
   var enhance: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies a key/value lookup of part replacements for the view being created.
-    */
+  	* Specifies a key/value lookup of part replacements for the view being created.
+  	*/
   var partReplacements: js.UndefOr[js.Object] = js.undefined
 }
 object ViewCreateInstruction {

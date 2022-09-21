@@ -19,7 +19,7 @@ trait DescribeInstancesHealthResult extends StObject {
   /**
     * The date and time that the health information was retrieved.
     */
-  var RefreshedAt: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RefreshedAt] = js.undefined
+  var RefreshedAt: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeInstancesHealthResult {
   
@@ -34,13 +34,13 @@ object DescribeInstancesHealthResult {
     
     inline def setInstanceHealthListUndefined: Self = StObject.set(x, "InstanceHealthList", js.undefined)
     
-    inline def setInstanceHealthListVarargs(value: SingleInstanceHealth*): Self = StObject.set(x, "InstanceHealthList", js.Array(value :_*))
+    inline def setInstanceHealthListVarargs(value: SingleInstanceHealth*): Self = StObject.set(x, "InstanceHealthList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setRefreshedAt(value: RefreshedAt): Self = StObject.set(x, "RefreshedAt", value.asInstanceOf[js.Any])
+    inline def setRefreshedAt(value: js.Date): Self = StObject.set(x, "RefreshedAt", value.asInstanceOf[js.Any])
     
     inline def setRefreshedAtUndefined: Self = StObject.set(x, "RefreshedAt", js.undefined)
   }

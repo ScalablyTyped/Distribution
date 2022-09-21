@@ -25,12 +25,12 @@ object ZoneBoundary {
     
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    inline def setConditionVarargs(value: Condition*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: Condition*): Self = StObject.set(x, "condition", js.Array(value*))
     
     inline def setCustomEvaluationTriggerId(value: js.Array[String]): Self = StObject.set(x, "customEvaluationTriggerId", value.asInstanceOf[js.Any])
     
     inline def setCustomEvaluationTriggerIdUndefined: Self = StObject.set(x, "customEvaluationTriggerId", js.undefined)
     
-    inline def setCustomEvaluationTriggerIdVarargs(value: String*): Self = StObject.set(x, "customEvaluationTriggerId", js.Array(value :_*))
+    inline def setCustomEvaluationTriggerIdVarargs(value: String*): Self = StObject.set(x, "customEvaluationTriggerId", js.Array(value*))
   }
 }

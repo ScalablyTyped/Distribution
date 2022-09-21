@@ -11,7 +11,7 @@ object uploadMod {
   
   @JSImport("rc-upload/es/Upload", JSImport.Default)
   @js.native
-  class default () extends Upload
+  open class default () extends Upload
   object default {
     
     /* static member */
@@ -23,8 +23,8 @@ object uploadMod {
       
       @JSImport("rc-upload/es/Upload", "default.defaultProps.beforeUpload")
       @js.native
-      def beforeUpload: js.Any = js.native
-      inline def beforeUpload_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUpload")(x.asInstanceOf[js.Any])
+      def beforeUpload: Any = js.native
+      inline def beforeUpload_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUpload")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-upload/es/Upload", "default.defaultProps.component")
       @js.native
@@ -33,8 +33,8 @@ object uploadMod {
       
       @JSImport("rc-upload/es/Upload", "default.defaultProps.customRequest")
       @js.native
-      def customRequest: js.Any = js.native
-      inline def customRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customRequest")(x.asInstanceOf[js.Any])
+      def customRequest: Any = js.native
+      inline def customRequest_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customRequest")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-upload/es/Upload", "default.defaultProps.multipart")
       @js.native
@@ -85,12 +85,12 @@ object uploadMod {
   
   @js.native
   trait Upload
-    extends Component[UploadProps, js.Object, js.Any] {
+    extends Component[UploadProps, js.Object, Any] {
     
     def abort(file: RcFile): Unit = js.native
     
     def saveUploader(node: typings.rcUpload.ajaxUploaderMod.default): Unit = js.native
     
-    /* private */ var uploader: js.Any = js.native
+    /* private */ var uploader: Any = js.native
   }
 }

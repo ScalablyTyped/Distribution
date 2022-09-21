@@ -12,7 +12,7 @@ trait Sunburst
      with Nvd3Element {
   
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
-  def color(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native
+  def color(func: js.Function2[/* d */ Any, /* i */ Double, String]): this.type = js.native
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
   def color(value: js.Array[String]): this.type = js.native
   
@@ -21,7 +21,7 @@ trait Sunburst
   /*The height the graph or component created inside the SVG should be made.*/
   def height(value: Double): this.type = js.native
   
-  def id(): js.Any = js.native
+  def id(): Any = js.native
   def id(value: String): this.type = js.native
   def id(value: Double): this.type = js.native
   

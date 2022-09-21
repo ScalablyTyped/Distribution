@@ -10,7 +10,7 @@ trait RefreshAccessTokenResponse extends StObject {
   
   var credentials: Credentials
   
-  var res: GaxiosResponse[js.Any] | Null
+  var res: GaxiosResponse[Any] | Null
 }
 object RefreshAccessTokenResponse {
   
@@ -23,7 +23,7 @@ object RefreshAccessTokenResponse {
     
     inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    inline def setRes(value: GaxiosResponse[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: GaxiosResponse[Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     inline def setResNull: Self = StObject.set(x, "res", null)
   }

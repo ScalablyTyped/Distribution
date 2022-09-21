@@ -10,10 +10,10 @@ Pop up made easy
 | ------------------ | :-------------: |
 | Full name          | popcorn |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 261 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 24.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/popcorn)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenFindAndReplaceDialogCommand")
 @js.native
-class OpenFindAndReplaceDialogCommand ()
+open class OpenFindAndReplaceDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenFindAndReplaceDialogCommand {
   

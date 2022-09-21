@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("resumablejs", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with typings.resumablejs.Resumable.Resumable {
     def this(options: ConfigurationHash) = this()

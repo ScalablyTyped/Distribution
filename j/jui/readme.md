@@ -10,10 +10,10 @@ JUI provide all kinds of UI components that are used in web pages. However, char
 | ------------------ | :-------------: |
 | Full name          | jui |
 | Keywords           | HTML5, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development, free, MIT |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 731 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 89.0 |
+| # stars            | 399.0 |
 
 ## Links
 - [Homepage](https://github.com/juijs/jui#readme)

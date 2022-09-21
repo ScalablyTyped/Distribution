@@ -27,10 +27,9 @@ object ratingRatingMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Rating/Rating", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[RatingProps, ComponentState, js.Any] {
+  open class default protected () extends Component[RatingProps, ComponentState, Any] {
     def this(props: RatingProps) = this()
-    def this(props: RatingProps, context: js.Any) = this()
+    def this(props: RatingProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -41,10 +40,9 @@ object ratingRatingMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Rating/Rating", "default.Icon")
     @js.native
-    class Icon protected ()
-      extends Component[RatingIconProps, ComponentState, js.Any] {
+    open class Icon protected () extends Component[RatingIconProps, ComponentState, Any] {
       def this(props: RatingIconProps) = this()
-      def this(props: RatingIconProps, context: js.Any) = this()
+      def this(props: RatingIconProps, context: Any) = this()
     }
     
     type _To = RatingComponent
@@ -64,7 +62,7 @@ object ratingRatingMod {
   trait RatingProps
     extends StObject
        with StrictRatingProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object RatingProps {
     
     inline def apply(): RatingProps = {
@@ -76,7 +74,7 @@ object ratingRatingMod {
   trait StrictRatingProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Additional classes. */
     var className: js.UndefOr[String] = js.undefined
@@ -129,7 +127,7 @@ object ratingRatingMod {
     
     extension [Self <: StrictRatingProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

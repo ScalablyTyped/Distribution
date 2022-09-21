@@ -35,7 +35,7 @@ object mod {
         
         var loadOnFocus: js.UndefOr[Boolean] = js.undefined
         
-        var matchClass: js.UndefOr[js.Any] = js.undefined
+        var matchClass: js.UndefOr[Any] = js.undefined
         
         var maxResultsToShow: js.UndefOr[Double | Boolean] = js.undefined
         
@@ -43,7 +43,7 @@ object mod {
         
         var selectFirstMatch: js.UndefOr[Boolean] = js.undefined
         
-        var source: js.UndefOr[js.Any] = js.undefined
+        var source: js.UndefOr[Any] = js.undefined
         
         var template: js.UndefOr[String | Boolean] = js.undefined
       }
@@ -80,7 +80,7 @@ object mod {
           
           inline def setLoadOnFocusUndefined: Self = StObject.set(x, "loadOnFocus", js.undefined)
           
-          inline def setMatchClass(value: js.Any): Self = StObject.set(x, "matchClass", value.asInstanceOf[js.Any])
+          inline def setMatchClass(value: Any): Self = StObject.set(x, "matchClass", value.asInstanceOf[js.Any])
           
           inline def setMatchClassUndefined: Self = StObject.set(x, "matchClass", js.undefined)
           
@@ -96,7 +96,7 @@ object mod {
           
           inline def setSelectFirstMatchUndefined: Self = StObject.set(x, "selectFirstMatch", js.undefined)
           
-          inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+          inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
           
           inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
           
@@ -111,22 +111,22 @@ object mod {
         extends StObject
            with IServiceProvider {
         
-        def setActiveInterpolation(directive: String, options: IAutocompleteParams): js.Any = js.native
+        def setActiveInterpolation(directive: String, options: IAutocompleteParams): Any = js.native
         /**
           * Sets active interpolation for a set of options.
           */
-        def setActiveInterpolation(directive: String, options: ITagsInputParams): js.Any = js.native
+        def setActiveInterpolation(directive: String, options: ITagsInputParams): Any = js.native
         
-        def setDefaults(directive: String, defaults: IAutocompleteParams): js.Any = js.native
+        def setDefaults(directive: String, defaults: IAutocompleteParams): Any = js.native
         /**
           * Sets the default configuration option for a directive.
           */
-        def setDefaults(directive: String, defaults: ITagsInputParams): js.Any = js.native
+        def setDefaults(directive: String, defaults: ITagsInputParams): Any = js.native
         
         /**
           * Sets the threshold used by the tagsInput directive to re-size the inner input field element based on its contents.
           */
-        def setTextAutosizeThreshold(threshold: Double): js.Any = js.native
+        def setTextAutosizeThreshold(threshold: Double): Any = js.native
       }
       
       trait TagsInputParams extends StObject {
@@ -163,17 +163,17 @@ object mod {
         
         var ngModel: js.UndefOr[String] = js.undefined
         
-        var onInvalidTag: js.UndefOr[js.Any] = js.undefined
+        var onInvalidTag: js.UndefOr[Any] = js.undefined
         
-        var onTagAdded: js.UndefOr[js.Any] = js.undefined
+        var onTagAdded: js.UndefOr[Any] = js.undefined
         
-        var onTagAdding: js.UndefOr[js.Any] = js.undefined
+        var onTagAdding: js.UndefOr[Any] = js.undefined
         
-        var onTagClicked: js.UndefOr[js.Any] = js.undefined
+        var onTagClicked: js.UndefOr[Any] = js.undefined
         
-        var onTagRemoved: js.UndefOr[js.Any] = js.undefined
+        var onTagRemoved: js.UndefOr[Any] = js.undefined
         
-        var onTagRemoving: js.UndefOr[js.Any] = js.undefined
+        var onTagRemoving: js.UndefOr[Any] = js.undefined
         
         var pasteSplitPattern: js.UndefOr[String | Boolean] = js.undefined
         
@@ -187,7 +187,7 @@ object mod {
         
         var tabindex: js.UndefOr[Double | Boolean] = js.undefined
         
-        var tagClass: js.UndefOr[js.Any] = js.undefined
+        var tagClass: js.UndefOr[Any] = js.undefined
         
         var template: js.UndefOr[String | Boolean] = js.undefined
         
@@ -272,27 +272,27 @@ object mod {
           
           inline def setNgModelUndefined: Self = StObject.set(x, "ngModel", js.undefined)
           
-          inline def setOnInvalidTag(value: js.Any): Self = StObject.set(x, "onInvalidTag", value.asInstanceOf[js.Any])
+          inline def setOnInvalidTag(value: Any): Self = StObject.set(x, "onInvalidTag", value.asInstanceOf[js.Any])
           
           inline def setOnInvalidTagUndefined: Self = StObject.set(x, "onInvalidTag", js.undefined)
           
-          inline def setOnTagAdded(value: js.Any): Self = StObject.set(x, "onTagAdded", value.asInstanceOf[js.Any])
+          inline def setOnTagAdded(value: Any): Self = StObject.set(x, "onTagAdded", value.asInstanceOf[js.Any])
           
           inline def setOnTagAddedUndefined: Self = StObject.set(x, "onTagAdded", js.undefined)
           
-          inline def setOnTagAdding(value: js.Any): Self = StObject.set(x, "onTagAdding", value.asInstanceOf[js.Any])
+          inline def setOnTagAdding(value: Any): Self = StObject.set(x, "onTagAdding", value.asInstanceOf[js.Any])
           
           inline def setOnTagAddingUndefined: Self = StObject.set(x, "onTagAdding", js.undefined)
           
-          inline def setOnTagClicked(value: js.Any): Self = StObject.set(x, "onTagClicked", value.asInstanceOf[js.Any])
+          inline def setOnTagClicked(value: Any): Self = StObject.set(x, "onTagClicked", value.asInstanceOf[js.Any])
           
           inline def setOnTagClickedUndefined: Self = StObject.set(x, "onTagClicked", js.undefined)
           
-          inline def setOnTagRemoved(value: js.Any): Self = StObject.set(x, "onTagRemoved", value.asInstanceOf[js.Any])
+          inline def setOnTagRemoved(value: Any): Self = StObject.set(x, "onTagRemoved", value.asInstanceOf[js.Any])
           
           inline def setOnTagRemovedUndefined: Self = StObject.set(x, "onTagRemoved", js.undefined)
           
-          inline def setOnTagRemoving(value: js.Any): Self = StObject.set(x, "onTagRemoving", value.asInstanceOf[js.Any])
+          inline def setOnTagRemoving(value: Any): Self = StObject.set(x, "onTagRemoving", value.asInstanceOf[js.Any])
           
           inline def setOnTagRemovingUndefined: Self = StObject.set(x, "onTagRemoving", js.undefined)
           
@@ -320,7 +320,7 @@ object mod {
           
           inline def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
           
-          inline def setTagClass(value: js.Any): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
+          inline def setTagClass(value: Any): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
           
           inline def setTagClassUndefined: Self = StObject.set(x, "tagClass", js.undefined)
           

@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IteratorYieldResult[TYield]
   extends StObject
-     with IteratorResult[TYield, js.Any] {
+     with IteratorResult[TYield, Any] {
   
+  /* standard es2015.iterable */
   var done: js.UndefOr[`false`] = js.undefined
   
+  /* standard es2015.iterable */
   var value: TYield
 }
 object IteratorYieldResult {

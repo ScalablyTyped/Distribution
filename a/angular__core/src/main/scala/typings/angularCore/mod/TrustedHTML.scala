@@ -15,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * will keep Angular's public API surface free of references to Trusted Types.
   * For internal and semi-private APIs that need to reference Trusted Types, the
   * minimal type definitions for the Trusted Types API provided by this module
-  * should be used instead.
+  * should be used instead. They are marked as "declare" to prevent them from
+  * being renamed by compiler optimization.
   *
   * Adapted from
   * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/trusted-types/index.d.ts

@@ -32,7 +32,7 @@ object SnippetOptions {
     
     inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
-    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
     
     inline def setRule(value: Fn): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
@@ -42,6 +42,6 @@ object SnippetOptions {
     
     inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
-    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
   }
 }

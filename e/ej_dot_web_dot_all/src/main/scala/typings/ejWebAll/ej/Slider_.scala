@@ -236,7 +236,7 @@ object Slider_ {
     /** Specifies the HTML Attributes of the ejSlider.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the incremental step value of the slider.
       * @Default {1}
@@ -331,7 +331,7 @@ object Slider_ {
     /** Specifies the values of the range slider. But it's not applicable for default and minRange sliders. we can use value property for default and minRange sliders.
       * @Default {[minValue,maxValue]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the width of the slider.
       * @Default {100%}
@@ -391,7 +391,7 @@ object Slider_ {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -471,11 +471,11 @@ object Slider_ {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
       
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -491,7 +491,7 @@ object Slider_ {
     
     /** returns the current Li element
       */
-    var tick: js.UndefOr[js.Any] = js.undefined
+    var tick: js.UndefOr[Any] = js.undefined
     
     /** returns slider tick value
       */
@@ -514,7 +514,7 @@ object Slider_ {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setTick(value: js.Any): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+      inline def setTick(value: Any): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
       
       inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
       

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +32,7 @@ trait Geocoordinate extends StObject {
   var positionSource: PositionSource
   
   /** Gets the time at which the associated Geocoordinate position was calculated. */
-  var positionSourceTimestamp: Date
+  var positionSourceTimestamp: js.Date
   
   /** Gets information about the satellites used to obtain a Geocoordinate. */
   var satelliteData: GeocoordinateSatelliteData
@@ -42,7 +41,7 @@ trait Geocoordinate extends StObject {
   var speed: Double
   
   /** The system time at which the location was determined. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object Geocoordinate {
   
@@ -55,10 +54,10 @@ object Geocoordinate {
     longitude: Double,
     point: Geopoint,
     positionSource: PositionSource,
-    positionSourceTimestamp: Date,
+    positionSourceTimestamp: js.Date,
     satelliteData: GeocoordinateSatelliteData,
     speed: Double,
-    timestamp: Date
+    timestamp: js.Date
   ): Geocoordinate = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], altitude = altitude.asInstanceOf[js.Any], altitudeAccuracy = altitudeAccuracy.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], positionSource = positionSource.asInstanceOf[js.Any], positionSourceTimestamp = positionSourceTimestamp.asInstanceOf[js.Any], satelliteData = satelliteData.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geocoordinate]
@@ -82,12 +81,12 @@ object Geocoordinate {
     
     inline def setPositionSource(value: PositionSource): Self = StObject.set(x, "positionSource", value.asInstanceOf[js.Any])
     
-    inline def setPositionSourceTimestamp(value: Date): Self = StObject.set(x, "positionSourceTimestamp", value.asInstanceOf[js.Any])
+    inline def setPositionSourceTimestamp(value: js.Date): Self = StObject.set(x, "positionSourceTimestamp", value.asInstanceOf[js.Any])
     
     inline def setSatelliteData(value: GeocoordinateSatelliteData): Self = StObject.set(x, "satelliteData", value.asInstanceOf[js.Any])
     
     inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

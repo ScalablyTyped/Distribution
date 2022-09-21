@@ -33,6 +33,6 @@ object GetRelationalDatabaseSnapshotsResult {
     
     inline def setRelationalDatabaseSnapshotsUndefined: Self = StObject.set(x, "relationalDatabaseSnapshots", js.undefined)
     
-    inline def setRelationalDatabaseSnapshotsVarargs(value: RelationalDatabaseSnapshot*): Self = StObject.set(x, "relationalDatabaseSnapshots", js.Array(value :_*))
+    inline def setRelationalDatabaseSnapshotsVarargs(value: RelationalDatabaseSnapshot*): Self = StObject.set(x, "relationalDatabaseSnapshots", js.Array(value*))
   }
 }

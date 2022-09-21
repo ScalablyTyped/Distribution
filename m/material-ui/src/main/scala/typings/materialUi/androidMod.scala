@@ -10,10 +10,10 @@ object androidMod {
   
   @JSImport("material-ui/svg-icons/action/android", JSImport.Default)
   @js.native
-  class default () extends ActionAndroid
+  open class default () extends ActionAndroid
   
   @JSImport("material-ui/svg-icons/action/android", "ActionAndroid")
   @js.native
-  class ActionAndroid ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAndroid ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

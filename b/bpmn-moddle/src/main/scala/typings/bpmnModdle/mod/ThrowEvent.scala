@@ -47,19 +47,19 @@ object ThrowEvent {
     
     inline def setDataInputAssociations(value: js.Array[DataInputAssociation]): Self = StObject.set(x, "dataInputAssociations", value.asInstanceOf[js.Any])
     
-    inline def setDataInputAssociationsVarargs(value: DataInputAssociation*): Self = StObject.set(x, "dataInputAssociations", js.Array(value :_*))
+    inline def setDataInputAssociationsVarargs(value: DataInputAssociation*): Self = StObject.set(x, "dataInputAssociations", js.Array(value*))
     
     inline def setDataInputs(value: js.Array[DataInput]): Self = StObject.set(x, "dataInputs", value.asInstanceOf[js.Any])
     
-    inline def setDataInputsVarargs(value: DataInput*): Self = StObject.set(x, "dataInputs", js.Array(value :_*))
+    inline def setDataInputsVarargs(value: DataInput*): Self = StObject.set(x, "dataInputs", js.Array(value*))
     
     inline def setEventDefinitionRef(value: js.Array[EventDefinition]): Self = StObject.set(x, "eventDefinitionRef", value.asInstanceOf[js.Any])
     
-    inline def setEventDefinitionRefVarargs(value: EventDefinition*): Self = StObject.set(x, "eventDefinitionRef", js.Array(value :_*))
+    inline def setEventDefinitionRefVarargs(value: EventDefinition*): Self = StObject.set(x, "eventDefinitionRef", js.Array(value*))
     
     inline def setEventDefinitions(value: js.Array[EventDefinition]): Self = StObject.set(x, "eventDefinitions", value.asInstanceOf[js.Any])
     
-    inline def setEventDefinitionsVarargs(value: EventDefinition*): Self = StObject.set(x, "eventDefinitions", js.Array(value :_*))
+    inline def setEventDefinitionsVarargs(value: EventDefinition*): Self = StObject.set(x, "eventDefinitions", js.Array(value*))
     
     inline def setInputSet(value: InputSet): Self = StObject.set(x, "inputSet", value.asInstanceOf[js.Any])
   }

@@ -1,0 +1,92 @@
+package typings.schematicsAngular.typescriptMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.AbstractKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.AnyKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.AsKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.AssertsKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.AssertKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.AsyncKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.AwaitKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.BigIntKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.BooleanKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.BreakKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.CaseKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.CatchKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ClassKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ConstKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ConstructorKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ContinueKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.DebuggerKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.DeclareKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.DefaultKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.DeleteKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.DoKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ElseKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.EnumKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ExportKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ExtendsKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.FalseKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.FinallyKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ForKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.FromKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.FunctionKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.GetKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.GlobalKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.IfKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ImplementsKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ImportKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.InferKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.InKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.InstanceOfKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.InterfaceKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.IntrinsicKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.IsKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.KeyOfKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.LetKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ModuleKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.NamespaceKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.NeverKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.NewKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.NullKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.NumberKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ObjectKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.OfKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.PackageKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.PrivateKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ProtectedKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.PublicKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ReadonlyKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.OutKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.OverrideKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.RequireKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ReturnKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.SetKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.StaticKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.StringKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.SuperKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.SwitchKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.SymbolKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ThisKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.ThrowKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.TrueKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.TryKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.TypeKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.TypeOfKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.UndefinedKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.UniqueKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.UnknownKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.VarKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.VoidKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.WhileKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.WithKeyword
+  - typings.schematicsAngular.typescriptMod.SyntaxKind.YieldKeyword
+*/
+trait KeywordSyntaxKind
+  extends StObject
+     with JSDocSyntaxKind
+     with TokenSyntaxKind

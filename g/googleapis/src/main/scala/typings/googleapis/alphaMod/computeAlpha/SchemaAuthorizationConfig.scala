@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Authorization configuration provides service-level and method-level access
-  * control for a service.
-  */
 trait SchemaAuthorizationConfig extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaAuthorizationConfig {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: SchemaRbacPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: SchemaRbacPolicy*): Self = StObject.set(x, "policies", js.Array(value*))
   }
 }

@@ -41,6 +41,6 @@ object IosNetworkUsageRule {
     
     inline def setManagedAppsUndefined: Self = StObject.set(x, "managedApps", js.undefined)
     
-    inline def setManagedAppsVarargs(value: AppListItem*): Self = StObject.set(x, "managedApps", js.Array(value :_*))
+    inline def setManagedAppsVarargs(value: AppListItem*): Self = StObject.set(x, "managedApps", js.Array(value*))
   }
 }

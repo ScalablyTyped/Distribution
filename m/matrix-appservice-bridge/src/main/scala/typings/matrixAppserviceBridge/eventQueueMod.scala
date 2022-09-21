@@ -5,7 +5,6 @@ import typings.matrixAppserviceBridge.anon.`0`
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.none
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.per_room
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.single
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,10 +14,8 @@ object eventQueueMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/event-queue", "EventQueue")
   @js.native
-  class EventQueue protected () extends StObject {
-    def this(`type`: none, consumeFn: ConsumeCallback) = this()
-    def this(`type`: per_room, consumeFn: ConsumeCallback) = this()
-    def this(`type`: single, consumeFn: ConsumeCallback) = this()
+  open class EventQueue protected () extends StObject {
+    def this(`type`: none | single | per_room, consumeFn: ConsumeCallback) = this()
     
     /**
       * Starts consuming the queue.
@@ -27,12 +24,12 @@ object eventQueueMod {
       */
     def consume(): Unit = js.native
     
-    /* protected */ def consumeFn(error: Null, event: js.Any): Unit = js.native
-    /* protected */ def consumeFn(error: Error, event: js.Any): Unit = js.native
+    /* protected */ def consumeFn(error: js.Error, event: Any): Unit = js.native
+    /* protected */ def consumeFn(error: Null, event: Any): Unit = js.native
     /* protected */ @JSName("consumeFn")
     var consumeFn_Original: ConsumeCallback = js.native
     
-    /* private */ var getQueue: js.Any = js.native
+    /* private */ var getQueue: Any = js.native
     
     /**
       * Push the event and its related data to the queue.
@@ -50,11 +47,11 @@ object eventQueueMod {
       * @param {consumeCallback} consumeFn Function which is called when an event
       *     is consumed.
       */
-    /* private */ var queues: js.Any = js.native
+    /* private */ var queues: Any = js.native
     
-    /* private */ var takeNext: js.Any = js.native
+    /* private */ var takeNext: Any = js.native
     
-    /* private */ var `type`: js.Any = js.native
+    /* private */ var `type`: Any = js.native
   }
   /* static members */
   object EventQueue {
@@ -76,25 +73,25 @@ object eventQueueMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/event-queue", "EventQueueNone")
   @js.native
-  class EventQueueNone protected () extends EventQueue {
+  open class EventQueueNone protected () extends EventQueue {
     def this(consumeFn: ConsumeCallback) = this()
     
-    def push(event: js.Any, dataReady: DataReady): Unit = js.native
+    def push(event: Any, dataReady: DataReady): Unit = js.native
   }
   
   @JSImport("matrix-appservice-bridge/lib/components/event-queue", "EventQueuePerRoom")
   @js.native
-  class EventQueuePerRoom protected () extends EventQueue {
+  open class EventQueuePerRoom protected () extends EventQueue {
     def this(consumeFn: ConsumeCallback) = this()
   }
   
   @JSImport("matrix-appservice-bridge/lib/components/event-queue", "EventQueueSingle")
   @js.native
-  class EventQueueSingle protected () extends EventQueue {
+  open class EventQueueSingle protected () extends EventQueue {
     def this(consumeFn: ConsumeCallback) = this()
   }
   
-  type ConsumeCallback = js.Function2[/* error */ Error | Null, /* event */ js.Any, Unit]
+  type ConsumeCallback = js.Function2[/* error */ js.Error | Null, /* event */ Any, Unit]
   
-  type DataReady = js.Promise[Record[String, js.Any]]
+  type DataReady = js.Promise[Record[String, Any]]
 }

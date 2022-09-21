@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.ViewObject")
 @js.native
-/* private */ class ViewObject ()
+/* private */ open class ViewObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.ViewObject

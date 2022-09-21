@@ -10,10 +10,10 @@ Asynchronous templates for the browser and server (LinkedIn fork)
 | ------------------ | :-------------: |
 | Full name          | dustjs-linkedin |
 | Keywords           | templates, views, dust, dustjs, dust.js, linkedin |
-| # releases         | 0 |
-| # dependents       | 202 |
-| # downloads        | 975037 |
-| # stars            | 16 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 79984.33333333333 |
+| # stars            | 2908.0 |
 
 ## Links
 - [Homepage](http://dustjs.com/)

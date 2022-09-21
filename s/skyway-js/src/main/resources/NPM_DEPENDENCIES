@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "skyway-js" : "4.4.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "skyway-js" : "4.4.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

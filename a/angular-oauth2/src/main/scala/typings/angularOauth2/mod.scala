@@ -35,19 +35,19 @@ object mod {
     trait OAuth extends StObject {
       
       def getAccessToken(data: Data): IPromise[String] = js.native
-      def getAccessToken(data: Data, options: js.Any): IPromise[String] = js.native
+      def getAccessToken(data: Data, options: Any): IPromise[String] = js.native
       
       def getRefreshToken(): IPromise[String] = js.native
-      def getRefreshToken(data: Unit, options: js.Any): IPromise[String] = js.native
+      def getRefreshToken(data: Unit, options: Any): IPromise[String] = js.native
       def getRefreshToken(data: Data): IPromise[String] = js.native
-      def getRefreshToken(data: Data, options: js.Any): IPromise[String] = js.native
+      def getRefreshToken(data: Data, options: Any): IPromise[String] = js.native
       
       def isAuthenticated(): Boolean = js.native
       
       def revokeToken(): IPromise[String] = js.native
-      def revokeToken(data: Unit, options: js.Any): IPromise[String] = js.native
+      def revokeToken(data: Unit, options: Any): IPromise[String] = js.native
       def revokeToken(data: Data): IPromise[String] = js.native
-      def revokeToken(data: Data, options: js.Any): IPromise[String] = js.native
+      def revokeToken(data: Data, options: Any): IPromise[String] = js.native
     }
     
     trait OAuthConfig extends StObject {
@@ -110,11 +110,11 @@ object mod {
       
       var name: String
       
-      var options: js.Any
+      var options: Any
     }
     object OAuthTokenConfig {
       
-      inline def apply(name: String, options: js.Any): OAuthTokenConfig = {
+      inline def apply(name: String, options: Any): OAuthTokenConfig = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[OAuthTokenConfig]
       }
@@ -123,7 +123,7 @@ object mod {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       }
     }
     

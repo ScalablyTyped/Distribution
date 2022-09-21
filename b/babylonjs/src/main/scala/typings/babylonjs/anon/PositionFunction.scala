@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PositionFunction extends StObject {
   
-  var positionFunction: js.UndefOr[js.Any] = js.undefined
+  var positionFunction: js.UndefOr[Any] = js.undefined
   
-  var storage: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var storage: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var vertexFunction: js.UndefOr[js.Any] = js.undefined
+  var vertexFunction: js.UndefOr[Any] = js.undefined
 }
 object PositionFunction {
   
@@ -21,17 +21,17 @@ object PositionFunction {
   
   extension [Self <: PositionFunction](x: Self) {
     
-    inline def setPositionFunction(value: js.Any): Self = StObject.set(x, "positionFunction", value.asInstanceOf[js.Any])
+    inline def setPositionFunction(value: Any): Self = StObject.set(x, "positionFunction", value.asInstanceOf[js.Any])
     
     inline def setPositionFunctionUndefined: Self = StObject.set(x, "positionFunction", js.undefined)
     
-    inline def setStorage(value: js.Array[js.Any]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: js.Array[Any]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     
-    inline def setStorageVarargs(value: js.Any*): Self = StObject.set(x, "storage", js.Array(value :_*))
+    inline def setStorageVarargs(value: Any*): Self = StObject.set(x, "storage", js.Array(value*))
     
-    inline def setVertexFunction(value: js.Any): Self = StObject.set(x, "vertexFunction", value.asInstanceOf[js.Any])
+    inline def setVertexFunction(value: Any): Self = StObject.set(x, "vertexFunction", value.asInstanceOf[js.Any])
     
     inline def setVertexFunctionUndefined: Self = StObject.set(x, "vertexFunction", js.undefined)
   }

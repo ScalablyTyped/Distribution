@@ -10,10 +10,10 @@ Environment agnostic event emitter
 | ------------------ | :-------------: |
 | Full name          | event-emitter |
 | Keywords           | event, events, trigger, observer, listener, emitter, pubsub |
-| # releases         | 0 |
-| # dependents       | 366 |
-| # downloads        | 163731421 |
-| # stars            | 27 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1878384333333332E7 |
+| # stars            | 218.0 |
 
 ## Links
 - [Homepage](https://github.com/medikoo/event-emitter#readme)

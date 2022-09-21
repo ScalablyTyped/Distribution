@@ -9,7 +9,7 @@ trait OnenoteResource
      with OnenoteEntityBaseModel {
   
   // The content stream
-  var content: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var content: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // The URL for downloading the content
   var contentUrl: js.UndefOr[NullableOption[String]] = js.undefined
@@ -23,7 +23,7 @@ object OnenoteResource {
   
   extension [Self <: OnenoteResource](x: Self) {
     
-    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentNull: Self = StObject.set(x, "content", null)
     

@@ -29,7 +29,7 @@ object ListBootstrapActionsOutput {
     
     inline def setBootstrapActionsUndefined: Self = StObject.set(x, "BootstrapActions", js.undefined)
     
-    inline def setBootstrapActionsVarargs(value: Command*): Self = StObject.set(x, "BootstrapActions", js.Array(value :_*))
+    inline def setBootstrapActionsVarargs(value: Command*): Self = StObject.set(x, "BootstrapActions", js.Array(value*))
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

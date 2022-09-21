@@ -22,7 +22,7 @@ trait UploadLayerPartRequest extends StObject {
   var partLastByte: PartSize
   
   /**
-    * The AWS account ID associated with the registry to which you are uploading layer parts. If you do not specify a registry, the default registry is assumed.
+    * The Amazon Web Services account ID associated with the registry to which you are uploading layer parts. If you do not specify a registry, the default registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   

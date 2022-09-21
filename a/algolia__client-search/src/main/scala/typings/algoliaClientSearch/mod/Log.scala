@@ -117,7 +117,7 @@ object Log {
     
     inline def setInner_queries(value: js.Array[Indexname]): Self = StObject.set(x, "inner_queries", value.asInstanceOf[js.Any])
     
-    inline def setInner_queriesVarargs(value: Indexname*): Self = StObject.set(x, "inner_queries", js.Array(value :_*))
+    inline def setInner_queriesVarargs(value: Indexname*): Self = StObject.set(x, "inner_queries", js.Array(value*))
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     

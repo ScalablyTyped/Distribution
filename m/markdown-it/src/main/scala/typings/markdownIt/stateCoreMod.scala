@@ -11,10 +11,10 @@ object stateCoreMod {
   
   @JSImport("markdown-it/lib/rules_core/state_core", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with StateCore {
-    def this(src: String, md: MarkdownIt, env: js.Any) = this()
+    def this(src: String, md: MarkdownIt, env: Any) = this()
     
     /* CompleteClass */
     var Token: Instantiable3[
@@ -25,7 +25,7 @@ object stateCoreMod {
       ] = js.native
     
     /* CompleteClass */
-    var env: js.Any = js.native
+    var env: Any = js.native
     
     /* CompleteClass */
     var inlineMode: Boolean = js.native
@@ -52,7 +52,7 @@ object stateCoreMod {
         typings.markdownIt.tokenMod.^
       ]
     
-    var env: js.Any
+    var env: Any
     
     var inlineMode: Boolean
     
@@ -74,7 +74,7 @@ object stateCoreMod {
           /* nesting */ Nesting, 
           typings.markdownIt.tokenMod.^
         ],
-      env: js.Any,
+      env: Any,
       inlineMode: Boolean,
       md: MarkdownIt,
       src: String,
@@ -86,7 +86,7 @@ object stateCoreMod {
     
     extension [Self <: StateCore](x: Self) {
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setInlineMode(value: Boolean): Self = StObject.set(x, "inlineMode", value.asInstanceOf[js.Any])
       
@@ -105,7 +105,7 @@ object stateCoreMod {
       
       inline def setTokens(value: js.Array[typings.markdownIt.tokenMod.^]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      inline def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value*))
     }
   }
 }

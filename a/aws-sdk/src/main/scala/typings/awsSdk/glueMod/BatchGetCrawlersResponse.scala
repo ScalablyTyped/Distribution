@@ -31,10 +31,10 @@ object BatchGetCrawlersResponse {
     
     inline def setCrawlersNotFoundUndefined: Self = StObject.set(x, "CrawlersNotFound", js.undefined)
     
-    inline def setCrawlersNotFoundVarargs(value: NameString*): Self = StObject.set(x, "CrawlersNotFound", js.Array(value :_*))
+    inline def setCrawlersNotFoundVarargs(value: NameString*): Self = StObject.set(x, "CrawlersNotFound", js.Array(value*))
     
     inline def setCrawlersUndefined: Self = StObject.set(x, "Crawlers", js.undefined)
     
-    inline def setCrawlersVarargs(value: Crawler*): Self = StObject.set(x, "Crawlers", js.Array(value :_*))
+    inline def setCrawlersVarargs(value: Crawler*): Self = StObject.set(x, "Crawlers", js.Array(value*))
   }
 }

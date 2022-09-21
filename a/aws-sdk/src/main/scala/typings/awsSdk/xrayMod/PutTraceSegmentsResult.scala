@@ -24,6 +24,6 @@ object PutTraceSegmentsResult {
     
     inline def setUnprocessedTraceSegmentsUndefined: Self = StObject.set(x, "UnprocessedTraceSegments", js.undefined)
     
-    inline def setUnprocessedTraceSegmentsVarargs(value: UnprocessedTraceSegment*): Self = StObject.set(x, "UnprocessedTraceSegments", js.Array(value :_*))
+    inline def setUnprocessedTraceSegmentsVarargs(value: UnprocessedTraceSegment*): Self = StObject.set(x, "UnprocessedTraceSegments", js.Array(value*))
   }
 }

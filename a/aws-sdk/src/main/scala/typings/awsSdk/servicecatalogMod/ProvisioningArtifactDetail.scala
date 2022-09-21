@@ -14,7 +14,7 @@ trait ProvisioningArtifactDetail extends StObject {
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[CreationTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the provisioning artifact.
@@ -37,7 +37,7 @@ trait ProvisioningArtifactDetail extends StObject {
   var Name: js.UndefOr[ProvisioningArtifactName] = js.undefined
   
   /**
-    * The type of provisioning artifact.    CLOUD_FORMATION_TEMPLATE - AWS CloudFormation template    MARKETPLACE_AMI - AWS Marketplace AMI    MARKETPLACE_CAR - AWS Marketplace Clusters and AWS Resources  
+    * The type of provisioning artifact.    CLOUD_FORMATION_TEMPLATE - CloudFormation template    MARKETPLACE_AMI - Amazon Web Services Marketplace AMI    MARKETPLACE_CAR - Amazon Web Services Marketplace Clusters and Amazon Web Services Resources  
     */
   var Type: js.UndefOr[ProvisioningArtifactType] = js.undefined
 }
@@ -54,7 +54,7 @@ object ProvisioningArtifactDetail {
     
     inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
-    inline def setCreatedTime(value: CreationTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

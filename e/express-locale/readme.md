@@ -10,10 +10,10 @@ Express middleware to determine locale
 | ------------------ | :-------------: |
 | Full name          | express-locale |
 | Keywords           | locale, express, i18n, l10n, culture |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 561890 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 26253.333333333332 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/smhg/express-locale#readme)

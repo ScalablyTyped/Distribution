@@ -24,7 +24,7 @@ object XPropertyMatcherFactory {
   inline def apply(
     acquire: () => Unit,
     createPropertyMatcher: SeqEquiv[SearchCriterium] => XPropertyMatcher,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPropertyMatcherFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createPropertyMatcher = js.Any.fromFunction1(createPropertyMatcher), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

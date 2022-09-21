@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.anon
 
-import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.GoogleAnalyticsAdminV1alphaGoogleAdsLink
+import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.GoogleAnalyticsAdminV1alphaArchiveCustomDimensionRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait KeyName extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. Format: properties/{propertyId}/googleAdsLinks/{googleAdsLinkId} Note: googleAdsLinkId is not the Google Ads customer ID. */
+  /** Required. The name of the CustomDimension to archive. Example format: properties/1234/customDimensions/5678 */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,10 +39,7 @@ trait KeyName extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleAnalyticsAdminV1alphaGoogleAdsLink
-  
-  /** The list of fields to be updated. Omitted fields will not be updated. */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var resource: GoogleAnalyticsAdminV1alphaArchiveCustomDimensionRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +49,7 @@ trait KeyName extends StObject {
 }
 object KeyName {
   
-  inline def apply(name: String, resource: GoogleAnalyticsAdminV1alphaGoogleAdsLink): KeyName = {
+  inline def apply(name: String, resource: GoogleAnalyticsAdminV1alphaArchiveCustomDimensionRequest): KeyName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyName]
   }
@@ -97,11 +94,7 @@ object KeyName {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleAnalyticsAdminV1alphaGoogleAdsLink): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setResource(value: GoogleAnalyticsAdminV1alphaArchiveCustomDimensionRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

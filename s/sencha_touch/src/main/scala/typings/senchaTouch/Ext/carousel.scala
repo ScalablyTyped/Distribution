@@ -21,7 +21,7 @@ object carousel {
     /** [Method] Returns the value of animation
       * @returns Object
       */
-    var getAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of bufferSize
       * @returns Number
@@ -41,17 +41,17 @@ object carousel {
     /** [Method] Returns the value of indicator
       * @returns any
       */
-    var getIndicator: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getIndicator: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of itemConfig
       * @returns Object
       */
-    var getItemConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getItemConfig: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of itemLength
       * @returns Object
       */
-    var getItemLength: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getItemLength: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var indicator: js.UndefOr[Boolean] = js.undefined
@@ -84,7 +84,7 @@ object carousel {
     /** [Method] Sets the value of animation
       * @param animation Object The new value.
       */
-    var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of bufferSize
       * @param bufferSize Number The new value.
@@ -109,12 +109,12 @@ object carousel {
     /** [Method] Sets the value of itemConfig
       * @param itemConfig Object The new value.
       */
-    var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of itemLength
       * @param itemLength Object The new value.
       */
-    var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ICarousel {
     
@@ -133,7 +133,7 @@ object carousel {
       
       inline def setGetActiveIndexUndefined: Self = StObject.set(x, "getActiveIndex", js.undefined)
       
-      inline def setGetAnimation(value: () => js.Any): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
+      inline def setGetAnimation(value: () => Any): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
       
       inline def setGetAnimationUndefined: Self = StObject.set(x, "getAnimation", js.undefined)
       
@@ -149,15 +149,15 @@ object carousel {
       
       inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
       
-      inline def setGetIndicator(value: () => js.Any): Self = StObject.set(x, "getIndicator", js.Any.fromFunction0(value))
+      inline def setGetIndicator(value: () => Any): Self = StObject.set(x, "getIndicator", js.Any.fromFunction0(value))
       
       inline def setGetIndicatorUndefined: Self = StObject.set(x, "getIndicator", js.undefined)
       
-      inline def setGetItemConfig(value: () => js.Any): Self = StObject.set(x, "getItemConfig", js.Any.fromFunction0(value))
+      inline def setGetItemConfig(value: () => Any): Self = StObject.set(x, "getItemConfig", js.Any.fromFunction0(value))
       
       inline def setGetItemConfigUndefined: Self = StObject.set(x, "getItemConfig", js.undefined)
       
-      inline def setGetItemLength(value: () => js.Any): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
+      inline def setGetItemLength(value: () => Any): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
       
       inline def setGetItemLengthUndefined: Self = StObject.set(x, "getItemLength", js.undefined)
       
@@ -185,7 +185,7 @@ object carousel {
       
       inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
       
-      inline def setSetAnimation(value: /* animation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1(value))
+      inline def setSetAnimation(value: /* animation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1(value))
       
       inline def setSetAnimationUndefined: Self = StObject.set(x, "setAnimation", js.undefined)
       
@@ -205,11 +205,11 @@ object carousel {
       
       inline def setSetIndicatorUndefined: Self = StObject.set(x, "setIndicator", js.undefined)
       
-      inline def setSetItemConfig(value: /* itemConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1(value))
+      inline def setSetItemConfig(value: /* itemConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1(value))
       
       inline def setSetItemConfigUndefined: Self = StObject.set(x, "setItemConfig", js.undefined)
       
-      inline def setSetItemLength(value: /* itemLength */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemLength", js.Any.fromFunction1(value))
+      inline def setSetItemLength(value: /* itemLength */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItemLength", js.Any.fromFunction1(value))
       
       inline def setSetItemLengthUndefined: Self = StObject.set(x, "setItemLength", js.undefined)
     }
@@ -255,28 +255,28 @@ object carousel {
     /** [Method] Returns the value of innerItemConfig
       * @returns Object
       */
-    var getInnerItemConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getInnerItemConfig: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of maxItemIndex
       * @returns Object
       */
-    var getMaxItemIndex: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getMaxItemIndex: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of indicator
       * @param indicator Object The new value.
       */
     @JSName("setIndicator")
-    var setIndicator_IInfinite: js.UndefOr[js.Function1[/* indicator */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setIndicator_IInfinite: js.UndefOr[js.Function1[/* indicator */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of innerItemConfig
       * @param innerItemConfig Object The new value.
       */
-    var setInnerItemConfig: js.UndefOr[js.Function1[/* innerItemConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setInnerItemConfig: js.UndefOr[js.Function1[/* innerItemConfig */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxItemIndex
       * @param maxItemIndex Object The new value.
       */
-    var setMaxItemIndex: js.UndefOr[js.Function1[/* maxItemIndex */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setMaxItemIndex: js.UndefOr[js.Function1[/* maxItemIndex */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IInfinite {
     
@@ -287,23 +287,23 @@ object carousel {
     
     extension [Self <: IInfinite](x: Self) {
       
-      inline def setGetInnerItemConfig(value: () => js.Any): Self = StObject.set(x, "getInnerItemConfig", js.Any.fromFunction0(value))
+      inline def setGetInnerItemConfig(value: () => Any): Self = StObject.set(x, "getInnerItemConfig", js.Any.fromFunction0(value))
       
       inline def setGetInnerItemConfigUndefined: Self = StObject.set(x, "getInnerItemConfig", js.undefined)
       
-      inline def setGetMaxItemIndex(value: () => js.Any): Self = StObject.set(x, "getMaxItemIndex", js.Any.fromFunction0(value))
+      inline def setGetMaxItemIndex(value: () => Any): Self = StObject.set(x, "getMaxItemIndex", js.Any.fromFunction0(value))
       
       inline def setGetMaxItemIndexUndefined: Self = StObject.set(x, "getMaxItemIndex", js.undefined)
       
-      inline def setSetIndicator(value: /* indicator */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIndicator", js.Any.fromFunction1(value))
+      inline def setSetIndicator(value: /* indicator */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setIndicator", js.Any.fromFunction1(value))
       
       inline def setSetIndicatorUndefined: Self = StObject.set(x, "setIndicator", js.undefined)
       
-      inline def setSetInnerItemConfig(value: /* innerItemConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInnerItemConfig", js.Any.fromFunction1(value))
+      inline def setSetInnerItemConfig(value: /* innerItemConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInnerItemConfig", js.Any.fromFunction1(value))
       
       inline def setSetInnerItemConfigUndefined: Self = StObject.set(x, "setInnerItemConfig", js.undefined)
       
-      inline def setSetMaxItemIndex(value: /* maxItemIndex */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxItemIndex", js.Any.fromFunction1(value))
+      inline def setSetMaxItemIndex(value: /* maxItemIndex */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMaxItemIndex", js.Any.fromFunction1(value))
       
       inline def setSetMaxItemIndexUndefined: Self = StObject.set(x, "setMaxItemIndex", js.undefined)
     }

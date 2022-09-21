@@ -10,13 +10,13 @@ trait IgButton
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var centerLabel: js.UndefOr[Boolean] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
-  var height: js.UndefOr[js.Any] = js.undefined
+  var height: js.UndefOr[Any] = js.undefined
   
   var icons: js.UndefOr[IgButtonIcons] = js.undefined
   
@@ -28,7 +28,7 @@ trait IgButton
   
   var title: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[Any] = js.undefined
 }
 object IgButton {
   
@@ -43,11 +43,11 @@ object IgButton {
     
     inline def setCenterLabelUndefined: Self = StObject.set(x, "centerLabel", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -71,7 +71,7 @@ object IgButton {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

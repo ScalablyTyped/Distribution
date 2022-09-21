@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "decache" : "4.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "decache" : "4.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

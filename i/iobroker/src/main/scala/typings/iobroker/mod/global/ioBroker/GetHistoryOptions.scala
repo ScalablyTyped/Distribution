@@ -33,7 +33,7 @@ trait GetHistoryOptions extends StObject {
   
   var q: js.UndefOr[Boolean] = js.undefined
   
-  var sessionId: js.UndefOr[js.Any] = js.undefined
+  var sessionId: js.UndefOr[Any] = js.undefined
   
   var start: js.UndefOr[Double] = js.undefined
   
@@ -88,7 +88,7 @@ object GetHistoryOptions {
     
     inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
-    inline def setSessionId(value: js.Any): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: Any): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     

@@ -118,7 +118,7 @@ object UserProfile {
       * Returns an iterator for the items in the collection.
       * @return The iterator.
       */
-    def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
+    def first(): IIterator[IKeyValuePair[Any, Any]]
     
     /**
       * Determines whether the map view contains the specified key.
@@ -132,7 +132,7 @@ object UserProfile {
       * @param key The key to locate in the map view.
       * @return The item associated with the specified key.
       */
-    def lookup(key: String): js.Any
+    def lookup(key: String): Any
     
     /** Returns the number of elements in the map. */
     var size: Double
@@ -145,9 +145,9 @@ object UserProfile {
   object FirstSignInSettings {
     
     inline def apply(
-      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+      first: () => IIterator[IKeyValuePair[Any, Any]],
       hasKey: String => Boolean,
-      lookup: String => js.Any,
+      lookup: String => Any,
       size: Double,
       split: () => Second
     ): FirstSignInSettings = {
@@ -157,11 +157,11 @@ object UserProfile {
     
     extension [Self <: FirstSignInSettings](x: Self) {
       
-      inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
       inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
-      inline def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: String => Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

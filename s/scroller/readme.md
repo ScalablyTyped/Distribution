@@ -11,9 +11,9 @@ Accelerated panning and zooming for HTML and Canvas
 | Full name          | scroller |
 | Keywords           | Scrolling, Scroll, Scroller, Touch |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 22077 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 10263.666666666666 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/popham/scroller)

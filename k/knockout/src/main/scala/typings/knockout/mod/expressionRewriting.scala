@@ -17,7 +17,7 @@ object expressionRewriting {
   
   @JSImport("knockout", "expressionRewriting.bindingRewriteValidators")
   @js.native
-  val bindingRewriteValidators: js.Array[js.Any] = js.native
+  val bindingRewriteValidators: js.Array[Any] = js.native
   
   inline def parseObjectLiteral(objectLiteralString: String): js.Array[KeyValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseObjectLiteral")(objectLiteralString.asInstanceOf[js.Any]).asInstanceOf[js.Array[KeyValue]]
   

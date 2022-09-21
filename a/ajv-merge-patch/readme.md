@@ -10,15 +10,15 @@ $merge and $patch keywords for Ajv JSON-Schema validator to extend schemas
 | ------------------ | :-------------: |
 | Full name          | ajv-merge-patch |
 | Keywords           | JSON, schema, validator, validation, jsonschema, json-schema, json-schema-validator, json-schema-validation, $merge, $patch, keyword |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 1349151 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 237389.33333333334 |
+| # stars            | 43.0 |
 
 ## Links
-- [Homepage](https://github.com/epoberezkin/ajv-merge-patch#readme)
-- [Bugs](https://github.com/epoberezkin/ajv-merge-patch/issues)
-- [Repository](https://github.com/epoberezkin/ajv-merge-patch)
+- [Homepage](https://github.com/ajv-validator/ajv-merge-patch#readme)
+- [Bugs](https://github.com/ajv-validator/ajv-merge-patch/issues)
+- [Repository](https://github.com/ajv-validator/ajv-merge-patch)
 - [Npm](https://www.npmjs.com/package/ajv-merge-patch)
     
 

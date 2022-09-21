@@ -13,23 +13,23 @@ object baseRequestOptionsMod {
   
   @JSImport("@angular/http/src/base_request_options", "BaseRequestOptions")
   @js.native
-  class BaseRequestOptions () extends RequestOptions
+  open class BaseRequestOptions () extends RequestOptions
   
   @JSImport("@angular/http/src/base_request_options", "RequestOptions")
   @js.native
-  class RequestOptions () extends StObject {
+  open class RequestOptions () extends StObject {
     def this(opts: RequestOptionsArgs) = this()
     
-    /* private */ var _appendParam: js.Any = js.native
+    /* private */ var _appendParam: Any = js.native
     
-    /* private */ var _mergeSearchParams: js.Any = js.native
+    /* private */ var _mergeSearchParams: Any = js.native
     
-    /* private */ var _parseParams: js.Any = js.native
+    /* private */ var _parseParams: Any = js.native
     
     /**
       * Body to be used when creating a {@link Request}.
       */
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     /**
       * {@link Headers} to be attached to a {@link Request}.

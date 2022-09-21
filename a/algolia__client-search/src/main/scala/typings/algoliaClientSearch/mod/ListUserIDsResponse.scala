@@ -22,6 +22,6 @@ object ListUserIDsResponse {
     
     inline def setUserIDs(value: js.Array[UserIDResponse]): Self = StObject.set(x, "userIDs", value.asInstanceOf[js.Any])
     
-    inline def setUserIDsVarargs(value: UserIDResponse*): Self = StObject.set(x, "userIDs", js.Array(value :_*))
+    inline def setUserIDsVarargs(value: UserIDResponse*): Self = StObject.set(x, "userIDs", js.Array(value*))
   }
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextEditorVisibleRangesChangeEvent extends StObject {
   
   /**
-    * The [text editor](#TextEditor) for which the visible ranges have changed.
+    * The {@link TextEditor text editor} for which the visible ranges have changed.
     */
   val textEditor: TextEditor
   
   /**
-    * The new value for the [text editor's visible ranges](#TextEditor.visibleRanges).
+    * The new value for the {@link TextEditor.visibleRanges text editor's visible ranges}.
     */
   val visibleRanges: js.Array[Range]
 }
@@ -29,6 +29,6 @@ object TextEditorVisibleRangesChangeEvent {
     
     inline def setVisibleRanges(value: js.Array[Range]): Self = StObject.set(x, "visibleRanges", value.asInstanceOf[js.Any])
     
-    inline def setVisibleRangesVarargs(value: Range*): Self = StObject.set(x, "visibleRanges", js.Array(value :_*))
+    inline def setVisibleRangesVarargs(value: Range*): Self = StObject.set(x, "visibleRanges", js.Array(value*))
   }
 }

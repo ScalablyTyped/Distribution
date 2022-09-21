@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You probably don't want to call this constructor, because this class does not support links (relationships between nodes) or groups (nodes and links and subgraphs as nodes): instead, create instances of a subclass such as GraphLinksModel or TreeModel.
   * @param {Array<Object>=} nodedataarray an optional Array containing JavaScript objects to be represented by Parts.
   */
-class Model () extends StObject {
+open class Model () extends StObject {
   def this(nodedataarray: js.Array[js.Object]) = this()
   
   /**
@@ -26,7 +26,7 @@ class Model () extends StObject {
     * @param {Array<*>} arr an Array that is the value of some Panel's Panel.itemArray.
     * @param {*} val the new value to be pushed onto the array.
     */
-  def addArrayItem(arr: js.Array[js.Any], `val`: js.Any): Unit = js.native
+  def addArrayItem(arr: js.Array[Any], `val`: Any): Unit = js.native
   
   /**
     * Register an event handler that is called when there is a ChangedEvent for a modification of the Diagram, a Layer, or a GraphObject.
@@ -131,7 +131,7 @@ class Model () extends StObject {
     * The return value will be an Object or null.
     * @param {*} key a string or a number.
     */
-  def findNodeDataForKey(key: Key): js.Any = js.native
+  def findNodeDataForKey(key: Key): Any = js.native
   
   /**
     * Find the category of a given node data, a string naming the node template
@@ -158,7 +158,7 @@ class Model () extends StObject {
     * @param {number} idx the zero-based array index where the new value will be inserted; use -1 to push the new value on the end of the array.
     * @param {*} val the new value to be inserted into the array.
     */
-  def insertArrayItem(arr: js.Array[js.Any], idx: Double, `val`: js.Any): Unit = js.native
+  def insertArrayItem(arr: js.Array[Any], idx: Double, `val`: Any): Unit = js.native
   
   /**Gets or sets whether this model may be modified, such as adding nodes; by default this value is false.*/
   var isReadOnly: Boolean = js.native
@@ -182,7 +182,7 @@ class Model () extends StObject {
   def makeUniqueKeyFunction(model: Model, obj: js.Object): Key = js.native
   
   /**Gets a JavaScript Object that can hold programmer-defined property values for the model as a whole, rather than just for one node or one link; by default this is an object with no properties. The value must be an Object.*/
-  var modelData: js.Any = js.native
+  var modelData: Any = js.native
   
   /**Gets or sets the name of this model; the initial name is an empty string.*/
   var name: String = js.native
@@ -207,32 +207,32 @@ class Model () extends StObject {
     * @param {*=} oldparam an optional value that helps describe the older value.
     * @param {*=} newparam an optional value that helps describe the newer value.
     */
-  def raiseChangedEvent(change: EnumValue, propertyname: PropertyAccessor, obj: js.Object, oldval: js.Any, newval: js.Any): Unit = js.native
+  def raiseChangedEvent(change: EnumValue, propertyname: PropertyAccessor, obj: js.Object, oldval: Any, newval: Any): Unit = js.native
   def raiseChangedEvent(
     change: EnumValue,
     propertyname: PropertyAccessor,
     obj: js.Object,
-    oldval: js.Any,
-    newval: js.Any,
-    oldparam: js.Any
+    oldval: Any,
+    newval: Any,
+    oldparam: Any
   ): Unit = js.native
   def raiseChangedEvent(
     change: EnumValue,
     propertyname: PropertyAccessor,
     obj: js.Object,
-    oldval: js.Any,
-    newval: js.Any,
-    oldparam: js.Any,
-    newparam: js.Any
+    oldval: Any,
+    newval: Any,
+    oldparam: Any,
+    newparam: Any
   ): Unit = js.native
   def raiseChangedEvent(
     change: EnumValue,
     propertyname: PropertyAccessor,
     obj: js.Object,
-    oldval: js.Any,
-    newval: js.Any,
+    oldval: Any,
+    newval: Any,
     oldparam: Unit,
-    newparam: js.Any
+    newparam: Any
   ): Unit = js.native
   
   /**
@@ -247,23 +247,23 @@ class Model () extends StObject {
     * @param {*=} oldparam an optional value additionally describing the old value.
     * @param {*=} newparam an optional value additionally describing the new value.
     */
-  def raiseDataChanged(data: js.Object, propertyname: PropertyAccessor, oldval: js.Any, newval: js.Any): Unit = js.native
-  def raiseDataChanged(data: js.Object, propertyname: PropertyAccessor, oldval: js.Any, newval: js.Any, oldparam: js.Any): Unit = js.native
+  def raiseDataChanged(data: js.Object, propertyname: PropertyAccessor, oldval: Any, newval: Any): Unit = js.native
+  def raiseDataChanged(data: js.Object, propertyname: PropertyAccessor, oldval: Any, newval: Any, oldparam: Any): Unit = js.native
   def raiseDataChanged(
     data: js.Object,
     propertyname: PropertyAccessor,
-    oldval: js.Any,
-    newval: js.Any,
-    oldparam: js.Any,
-    newparam: js.Any
+    oldval: Any,
+    newval: Any,
+    oldparam: Any,
+    newparam: Any
   ): Unit = js.native
   def raiseDataChanged(
     data: js.Object,
     propertyname: PropertyAccessor,
-    oldval: js.Any,
-    newval: js.Any,
+    oldval: Any,
+    newval: Any,
     oldparam: Unit,
-    newparam: js.Any
+    newparam: Any
   ): Unit = js.native
   
   /**
@@ -278,8 +278,8 @@ class Model () extends StObject {
     * @param {number=} idx the zero-based array index of the data item to be removed from the array;
     *   if not supplied it will remove the last item of the array.
     */
-  def removeArrayItem(arr: js.Array[js.Any]): Unit = js.native
-  def removeArrayItem(arr: js.Array[js.Any], idx: Double): Unit = js.native
+  def removeArrayItem(arr: js.Array[Any]): Unit = js.native
+  def removeArrayItem(arr: js.Array[Any], idx: Double): Unit = js.native
   
   /**
     * Unregister an event handler listener.
@@ -336,7 +336,7 @@ class Model () extends StObject {
     * @param {string} propname a string that is not null or the empty string.
     * @param {*} val the new value for the property.
     */
-  def setDataProperty(data: js.Object, propname: String, `val`: js.Any): Unit = js.native
+  def setDataProperty(data: js.Object, propname: String, `val`: Any): Unit = js.native
   
   /**
     * Change the unique key of a given node data that is already in this model.

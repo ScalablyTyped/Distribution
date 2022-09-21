@@ -25,18 +25,18 @@ object FilterId {
     
     inline def setFilterExtensionTypeUndefined: Self = StObject.set(x, "filterExtensionType", js.undefined)
     
-    inline def setFilterExtensionTypeVarargs(value: String*): Self = StObject.set(x, "filterExtensionType", js.Array(value :_*))
+    inline def setFilterExtensionTypeVarargs(value: String*): Self = StObject.set(x, "filterExtensionType", js.Array(value*))
     
     inline def setFilterId(value: js.Array[String]): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
     
     inline def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
     
-    inline def setFilterIdVarargs(value: String*): Self = StObject.set(x, "filterId", js.Array(value :_*))
+    inline def setFilterIdVarargs(value: String*): Self = StObject.set(x, "filterId", js.Array(value*))
     
     inline def setFilterType(value: js.Array[String]): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
-    inline def setFilterTypeVarargs(value: String*): Self = StObject.set(x, "filterType", js.Array(value :_*))
+    inline def setFilterTypeVarargs(value: String*): Self = StObject.set(x, "filterType", js.Array(value*))
   }
 }

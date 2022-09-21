@@ -9,7 +9,6 @@ import typings.ejs.anon.Optionsasynctrue
 import typings.ejs.anon.Optionsasynctrueclientfal
 import typings.ejs.anon.Optionsasynctrueclienttru
 import typings.ejs.anon.ToString
-import typings.std.Error
 import typings.std.PromiseConstructorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +22,7 @@ object mod {
   
   @JSImport("ejs", "Template")
   @js.native
-  class Template protected () extends StObject {
+  open class Template protected () extends StObject {
     def this(text: String) = this()
     def this(text: String, opts: Options) = this()
     
@@ -119,7 +118,7 @@ object mod {
   inline def delimiter_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delimiter")(x.asInstanceOf[js.Any])
   
   inline def escapeXML(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")().asInstanceOf[String]
-  inline def escapeXML(markup: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")(markup.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeXML(markup: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")(markup.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ejs", "fileLoader")
   @js.native
@@ -232,11 +231,31 @@ object mod {
     String
   ]
   
-  type Data = StringDictionary[js.Any]
+  type Data = StringDictionary[Any]
   
-  type EscapeCallback = js.Function1[/* markup */ js.UndefOr[js.Any], String]
+  type EscapeCallback = js.Function1[/* markup */ js.UndefOr[Any], String]
   
   type IncludeCallback = js.Function2[/* path */ String, /* data */ js.UndefOr[Data], String]
+  
+  type IncluderCallback = js.Function2[/* originalPath */ String, /* parsedPath */ String, IncluderResult]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.ejs.anon.Filename
+    - typings.ejs.anon.Template
+  */
+  trait IncluderResult extends StObject
+  object IncluderResult {
+    
+    inline def Filename(filename: String): typings.ejs.anon.Filename = {
+      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.ejs.anon.Filename]
+    }
+    
+    inline def Template(template: String): typings.ejs.anon.Template = {
+      val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.ejs.anon.Template]
+    }
+  }
   
   trait Options extends StObject {
     
@@ -307,7 +326,7 @@ object mod {
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
@@ -345,6 +364,11 @@ object mod {
       * @default undefined
       */
     var filename: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Custom function to handle EJS includes
+      */
+    var includer: js.UndefOr[IncluderCallback] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
@@ -390,6 +414,11 @@ object mod {
       * @default false
       */
     var strict: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * An array of paths to use when resolving includes with relative paths
+      */
+    var views: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -424,7 +453,7 @@ object mod {
       
       inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -440,15 +469,19 @@ object mod {
       
       inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value*))
       
-      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setIncluder(value: (/* originalPath */ String, /* parsedPath */ String) => IncluderResult): Self = StObject.set(x, "includer", js.Any.fromFunction2(value))
+      
+      inline def setIncluderUndefined: Self = StObject.set(x, "includer", js.undefined)
       
       inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
@@ -474,16 +507,22 @@ object mod {
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
+      inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
+      
       inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
       inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
     }
   }
   
-  type RenderFileCallback[T] = js.Function2[/* err */ Error | Null, /* str */ String, T]
+  type RenderFileCallback[T] = js.Function2[/* err */ js.Error | Null, /* str */ String, T]
   
   type RethrowCallback = js.Function5[
-    /* err */ Error, 
+    /* err */ js.Error, 
     /* str */ String, 
     /* filename */ js.UndefOr[String | Null], 
     /* lineno */ Double, 

@@ -13,7 +13,7 @@ object processCredentialsMod {
   /**
     * Creates a new ProcessCredentials object.
     */
-  class ProcessCredentials () extends Credentials {
+  open class ProcessCredentials () extends Credentials {
     def this(options: ProcessCredentialsOptions) = this()
   }
   

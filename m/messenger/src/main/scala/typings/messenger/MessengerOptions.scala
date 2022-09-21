@@ -60,7 +60,7 @@ object MessengerOptions {
     
     inline def setParentLocationsUndefined: Self = StObject.set(x, "parentLocations", js.undefined)
     
-    inline def setParentLocationsVarargs(value: String*): Self = StObject.set(x, "parentLocations", js.Array(value :_*))
+    inline def setParentLocationsVarargs(value: String*): Self = StObject.set(x, "parentLocations", js.Array(value*))
     
     inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     

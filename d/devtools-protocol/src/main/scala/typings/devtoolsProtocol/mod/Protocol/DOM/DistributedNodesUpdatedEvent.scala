@@ -12,7 +12,7 @@ trait DistributedNodesUpdatedEvent extends StObject {
   var distributedNodes: js.Array[BackendNode]
   
   /**
-    * Insertion point where distrubuted nodes were updated.
+    * Insertion point where distributed nodes were updated.
     */
   var insertionPointId: NodeId
 }
@@ -27,7 +27,7 @@ object DistributedNodesUpdatedEvent {
     
     inline def setDistributedNodes(value: js.Array[BackendNode]): Self = StObject.set(x, "distributedNodes", value.asInstanceOf[js.Any])
     
-    inline def setDistributedNodesVarargs(value: BackendNode*): Self = StObject.set(x, "distributedNodes", js.Array(value :_*))
+    inline def setDistributedNodesVarargs(value: BackendNode*): Self = StObject.set(x, "distributedNodes", js.Array(value*))
     
     inline def setInsertionPointId(value: NodeId): Self = StObject.set(x, "insertionPointId", value.asInstanceOf[js.Any])
   }

@@ -9,5 +9,5 @@ object headManagerContextMod {
   
   @JSImport("next-server/dist/lib/head-manager-context", "HeadManagerContext")
   @js.native
-  val HeadManagerContext: Context[js.Any] = js.native
+  val HeadManagerContext: Context[Any] = js.native
 }

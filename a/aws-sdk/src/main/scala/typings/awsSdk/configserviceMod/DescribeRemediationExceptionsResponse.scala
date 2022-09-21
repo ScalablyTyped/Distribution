@@ -33,6 +33,6 @@ object DescribeRemediationExceptionsResponse {
     
     inline def setRemediationExceptionsUndefined: Self = StObject.set(x, "RemediationExceptions", js.undefined)
     
-    inline def setRemediationExceptionsVarargs(value: RemediationException*): Self = StObject.set(x, "RemediationExceptions", js.Array(value :_*))
+    inline def setRemediationExceptionsVarargs(value: RemediationException*): Self = StObject.set(x, "RemediationExceptions", js.Array(value*))
   }
 }

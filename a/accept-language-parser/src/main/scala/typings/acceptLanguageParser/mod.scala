@@ -10,6 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def parse(): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[js.Array[Language]]
   inline def parse(acceptLanguage: String): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(acceptLanguage.asInstanceOf[js.Any]).asInstanceOf[js.Array[Language]]
   
   inline def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: String): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any])).asInstanceOf[T | Null]

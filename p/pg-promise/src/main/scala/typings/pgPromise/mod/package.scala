@@ -1,5 +1,8 @@
 package typings.pgPromise.mod
 
+import typings.pgMinify.mod.IMinifyOptions
+import typings.pgPromise.mod.^
+import typings.pgPromise.pgSubsetMod.IClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,18 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 // Default library interface (before initialization)
 // API: http://vitaly-t.github.io/pg-promise/module-pg-promise.html
-inline def apply[Ext, C /* <: typings.pgPromise.pgSubsetMod.IClient */](): typings.pgPromise.mod.IMain[Ext, C] = typings.pgPromise.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.pgPromise.mod.IMain[Ext, C]]
-inline def apply[Ext, C /* <: typings.pgPromise.pgSubsetMod.IClient */](options: typings.pgPromise.mod.IInitOptions[Ext, C]): typings.pgPromise.mod.IMain[Ext, C] = typings.pgPromise.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.pgPromise.mod.IMain[Ext, C]]
+inline def apply[Ext, C /* <: IClient */](): IMain[Ext, C] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[IMain[Ext, C]]
+inline def apply[Ext, C /* <: IClient */](options: IInitOptions[Ext, C]): IMain[Ext, C] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[IMain[Ext, C]]
 
-inline def as: typings.pgPromise.mod.IFormatting = typings.pgPromise.mod.^.asInstanceOf[js.Dynamic].selectDynamic("as").asInstanceOf[typings.pgPromise.mod.IFormatting]
+inline def as: IFormatting = ^.asInstanceOf[js.Dynamic].selectDynamic("as").asInstanceOf[IFormatting]
 
-inline def minify(sql: java.lang.String): java.lang.String = typings.pgPromise.mod.^.asInstanceOf[js.Dynamic].applyDynamic("minify")(sql.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def minify(sql: java.lang.String, options: typings.pgMinify.mod.IMinifyOptions): java.lang.String = (typings.pgPromise.mod.^.asInstanceOf[js.Dynamic].applyDynamic("minify")(sql.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def minify(sql: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(sql.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def minify(sql: String, options: IMinifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("minify")(sql.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def utils: typings.pgPromise.mod.IUtils = typings.pgPromise.mod.^.asInstanceOf[js.Dynamic].selectDynamic("utils").asInstanceOf[typings.pgPromise.mod.IUtils]
+inline def utils: IUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("utils").asInstanceOf[IUtils]
 
-type QueryColumns = typings.pgPromise.mod.Column[js.Any] | typings.pgPromise.mod.ColumnSet[js.Any] | (js.Array[
-java.lang.String | typings.pgPromise.mod.IColumnConfig[js.Any] | typings.pgPromise.mod.Column[js.Any]])
+/* Rewritten from type alias, can be one of: 
+  - typings.pgPromise.mod.Column[T]
+  - typings.pgPromise.mod.ColumnSet[T]
+  - js.Array[
+java.lang.String | typings.pgPromise.mod.IColumnConfig[T] | typings.pgPromise.mod.Column[T]]
+*/
+type QueryColumns[T] = _QueryColumns[T] | (js.Array[String | IColumnConfig[T] | Column[T]])
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
@@ -27,14 +35,10 @@ java.lang.String | typings.pgPromise.mod.IColumnConfig[js.Any] | typings.pgPromi
   - typings.pgPromise.mod.IParameterizedQuery
   - typings.pgPromise.mod.PreparedStatement
   - typings.pgPromise.mod.ParameterizedQuery
-  - js.Function1[
-/ * values * / js.UndefOr[js.Any], 
-/ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias pg-promise.pg-promise.QueryParam * / js.Object]
+  - js.Function1[/ * values * / js.UndefOr[scala.Any], scala.Any]
 */
-type QueryParam = typings.pgPromise.mod._QueryParam | (js.Function1[
-/* values */ js.UndefOr[js.Any], 
-/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias pg-promise.pg-promise.QueryParam */ js.Object]) | java.lang.String
+type QueryParam = _QueryParam | (js.Function1[/* values */ js.UndefOr[Any], Any]) | String
 
-type ValidSchema = java.lang.String | js.Array[java.lang.String] | scala.Null | scala.Unit
+type ValidSchema = String | js.Array[String] | Null | Unit
 
 type XPromise[T] = js.Promise[T]

@@ -1886,7 +1886,7 @@ object iconMod extends Shortcut {
   
   trait IconProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "process-exists" : "4.0.0"
+      "process-exists" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "process-exists" : "4.0.0"
+      "process-exists" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

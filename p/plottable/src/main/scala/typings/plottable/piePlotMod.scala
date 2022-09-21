@@ -22,33 +22,33 @@ object piePlotMod {
   /**
     * @constructor
     */
-  class Pie () extends Plot {
+  open class Pie () extends Plot {
     
     /* protected */ def _createDrawer(): ProxyDrawer = js.native
     
-    /* private */ def _drawLabels(): js.Any = js.native
+    /* private */ var _drawLabels: Any = js.native
     
-    /* private */ var _endAngle: js.Any = js.native
+    /* private */ var _endAngle: Any = js.native
     
-    /* private */ var _endAngles: js.Any = js.native
+    /* private */ var _endAngles: Any = js.native
     
-    /* private */ def _generateStrokeDrawSteps(): js.Any = js.native
+    /* private */ var _generateStrokeDrawSteps: Any = js.native
     
-    /* private */ var _labelFormatter: js.Any = js.native
+    /* private */ var _labelFormatter: Any = js.native
     
-    /* private */ var _labelsEnabled: js.Any = js.native
+    /* private */ var _labelsEnabled: Any = js.native
     
-    /* private */ def _pieCenter(): js.Any = js.native
+    /* private */ var _pieCenter: Any = js.native
     
-    /* private */ def _sliceIndexForPoint(p: js.Any): js.Any = js.native
+    /* private */ var _sliceIndexForPoint: Any = js.native
     
-    /* private */ var _startAngle: js.Any = js.native
+    /* private */ var _startAngle: Any = js.native
     
-    /* private */ var _startAngles: js.Any = js.native
+    /* private */ var _startAngles: Any = js.native
     
-    /* private */ var _strokeDrawers: js.Any = js.native
+    /* private */ var _strokeDrawers: Any = js.native
     
-    /* private */ def _updatePieAngles(): js.Any = js.native
+    /* private */ var _updatePieAngles: Any = js.native
     
     /**
       * Gets the end angle of the Pie Plot.
@@ -70,8 +70,8 @@ object piePlotMod {
       * @param {number|Accessor<number>} innerRadius
       * @returns {Pie} The calling Pie Plot.
       */
-    def innerRadius(innerRadius: Double): js.Any = js.native
-    def innerRadius(innerRadius: IAccessor[Double]): js.Any = js.native
+    def innerRadius(innerRadius: Double): Any = js.native
+    def innerRadius(innerRadius: IAccessor[Double]): Any = js.native
     /**
       * Gets the AccessorScaleBinding for the inner radius.
       */
@@ -84,8 +84,8 @@ object piePlotMod {
       * @param {Scale<R, number>} scale
       * @returns {Pie} The calling Pie Plot.
       */
-    def innerRadius[R](innerRadius: R, scale: Scale[R, Double]): js.Any = js.native
-    def innerRadius[R](innerRadius: IAccessor[R], scale: Scale[R, Double]): js.Any = js.native
+    def innerRadius[R](innerRadius: R, scale: Scale[R, Double]): Any = js.native
+    def innerRadius[R](innerRadius: IAccessor[R], scale: Scale[R, Double]): Any = js.native
     
     /**
       * Gets the Formatter for the labels.
@@ -184,27 +184,27 @@ object piePlotMod {
     
     @JSImport("plottable/build/src/plots/piePlot", "Pie._INNER_RADIUS_KEY")
     @js.native
-    def _INNER_RADIUS_KEY: js.Any = js.native
-    inline def _INNER_RADIUS_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_INNER_RADIUS_KEY")(x.asInstanceOf[js.Any])
+    def _INNER_RADIUS_KEY: Any = js.native
+    inline def _INNER_RADIUS_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_INNER_RADIUS_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/piePlot", "Pie._OUTER_RADIUS_KEY")
     @js.native
-    def _OUTER_RADIUS_KEY: js.Any = js.native
-    inline def _OUTER_RADIUS_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OUTER_RADIUS_KEY")(x.asInstanceOf[js.Any])
+    def _OUTER_RADIUS_KEY: Any = js.native
+    inline def _OUTER_RADIUS_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OUTER_RADIUS_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/piePlot", "Pie._SECTOR_VALUE_KEY")
     @js.native
-    def _SECTOR_VALUE_KEY: js.Any = js.native
-    inline def _SECTOR_VALUE_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SECTOR_VALUE_KEY")(x.asInstanceOf[js.Any])
+    def _SECTOR_VALUE_KEY: Any = js.native
+    inline def _SECTOR_VALUE_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SECTOR_VALUE_KEY")(x.asInstanceOf[js.Any])
     
-    inline def _isValidData(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isValidData")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def _isValidData(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isValidData")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   trait IPiePlotEntity
     extends StObject
        with IPlotEntity {
     
-    var strokeSelection: SimpleSelection[js.Any]
+    var strokeSelection: SimpleSelection[Any]
   }
   object IPiePlotEntity {
     
@@ -213,11 +213,11 @@ object piePlotMod {
       component: Plot,
       dataset: Dataset,
       datasetIndex: Double,
-      datum: js.Any,
+      datum: Any,
       index: Double,
       position: Point,
-      selection: SimpleSelection[js.Any],
-      strokeSelection: SimpleSelection[js.Any]
+      selection: SimpleSelection[Any],
+      strokeSelection: SimpleSelection[Any]
     ): IPiePlotEntity = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], datasetIndex = datasetIndex.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], strokeSelection = strokeSelection.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPiePlotEntity]
@@ -225,7 +225,7 @@ object piePlotMod {
     
     extension [Self <: IPiePlotEntity](x: Self) {
       
-      inline def setStrokeSelection(value: SimpleSelection[js.Any]): Self = StObject.set(x, "strokeSelection", value.asInstanceOf[js.Any])
+      inline def setStrokeSelection(value: SimpleSelection[Any]): Self = StObject.set(x, "strokeSelection", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,17 +17,17 @@ trait WrappedTargetRuntimeException
      with Exception {
   
   /** The exception is thrown by the target. */
-  var TargetException: js.Any
+  var TargetException: Any
 }
 object WrappedTargetRuntimeException {
   
-  inline def apply(Context: XInterface, Message: String, TargetException: js.Any): WrappedTargetRuntimeException = {
+  inline def apply(Context: XInterface, Message: String, TargetException: Any): WrappedTargetRuntimeException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], TargetException = TargetException.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappedTargetRuntimeException]
   }
   
   extension [Self <: WrappedTargetRuntimeException](x: Self) {
     
-    inline def setTargetException(value: js.Any): Self = StObject.set(x, "TargetException", value.asInstanceOf[js.Any])
+    inline def setTargetException(value: Any): Self = StObject.set(x, "TargetException", value.asInstanceOf[js.Any])
   }
 }

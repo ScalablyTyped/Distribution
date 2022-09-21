@@ -1,5 +1,6 @@
 package typings.antvPathUtil
 
+import typings.antvPathUtil.typesMod.PathCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,16 @@ object catmullRom2BezierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(crp: js.Array[Double]): js.Array[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.Any]]]
-  inline def default(crp: js.Array[Double], z: Boolean): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
+  /**
+    * create bezier spline from catmull rom spline
+    * @param {Array} crp Catmull Rom Points
+    * @param {boolean} z Spline is loop
+    * @param {Array} constraint Constraint
+    */
+  inline def default(crp: js.Array[Double]): js.Array[PathCommand] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any]).asInstanceOf[js.Array[PathCommand]]
+  inline def default(crp: js.Array[Double], z: Boolean): js.Array[PathCommand] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[js.Array[PathCommand]]
+  inline def default(crp: js.Array[Double], z: Boolean, constraint: js.Array[Pos]): js.Array[PathCommand] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any], z.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[js.Array[PathCommand]]
+  inline def default(crp: js.Array[Double], z: Unit, constraint: js.Array[Pos]): js.Array[PathCommand] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any], z.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[js.Array[PathCommand]]
+  
+  type Pos = js.Tuple2[Double, Double]
 }

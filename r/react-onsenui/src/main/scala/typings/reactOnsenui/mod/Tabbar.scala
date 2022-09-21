@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Tabbar")
 @js.native
-class Tabbar protected ()
-  extends Component[IgnoreEdgeWidth, js.Any] {
+open class Tabbar protected () extends Component[IgnoreEdgeWidth, Any] {
   def this(props: HTMLAttributesidclassName & IgnoreEdgeWidth) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & IgnoreEdgeWidth, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & IgnoreEdgeWidth, context: Any) = this()
 }

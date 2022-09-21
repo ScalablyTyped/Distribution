@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.SizeMeasurement")
 @js.native
-/* private */ class SizeMeasurement_ ()
+/**
+  * Allows to measure Text.
+  */
+/* private */ open class SizeMeasurement_ ()
   extends typings.tabris.mod.SizeMeasurement_

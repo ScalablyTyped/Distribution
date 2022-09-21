@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "PaymentRefund")
 @js.native
-class PaymentRefund () extends StObject {
+open class PaymentRefund () extends StObject {
   
   /**
     * The amount of money refunded, specified in the smallest denomination of the applicable currency.

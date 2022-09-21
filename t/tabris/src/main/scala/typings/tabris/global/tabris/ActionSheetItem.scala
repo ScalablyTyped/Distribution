@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.ActionSheetItem")
 @js.native
-class ActionSheetItem ()
+/**
+  * Describes an entry in an [`ActionSheet`](./ActionSheet.md).
+  */
+open class ActionSheetItem ()
   extends typings.tabris.mod.ActionSheetItem {
   def this(properties: typings.tabris.anon.Image) = this()
 }

@@ -79,7 +79,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.LiveQuerySubscription")
 @js.native
-class LiveQuerySubscription protected () extends EventEmitter {
+open class LiveQuerySubscription protected () extends EventEmitter {
   /**
     * Creates an instance of LiveQuerySubscription.
     *
@@ -90,20 +90,10 @@ class LiveQuerySubscription protected () extends EventEmitter {
   def this(id: String, query: String) = this()
   def this(id: String, query: String, sessionToken: String) = this()
   
-  @JSName("on")
-  def on_close(event: close, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
-  @JSName("on")
-  def on_create(event: create, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
-  @JSName("on")
-  def on_delete(event: delete, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
-  @JSName("on")
-  def on_enter(event: enter, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
-  @JSName("on")
-  def on_leave(event: leave, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
-  @JSName("on")
-  def on_open(event: open, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
-  @JSName("on")
-  def on_update(event: update, listener: js.Function1[/* object */ Object[Attributes], Unit]): this.type = js.native
+  def on(
+    event: open | create | update | enter | leave | delete | close,
+    listener: js.Function1[/* object */ Object[Attributes], Unit]
+  ): this.type = js.native
   
   /**
     * Closes the subscription.

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html)
   */
-class BasemapToggleCls ()
+open class BasemapToggleCls ()
   extends StObject
      with typings.arcgisJsApi.esri.BasemapToggle {
   def this(properties: BasemapToggleProperties) = this()

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.node.nodeStrings.rsa
+  - typings.node.nodeStrings.`rsa-pss`
   - typings.node.nodeStrings.dsa
   - typings.node.nodeStrings.ec
   - typings.node.nodeStrings.ed25519
@@ -25,6 +26,8 @@ object KeyType {
   inline def ed448: typings.node.nodeStrings.ed448 = "ed448".asInstanceOf[typings.node.nodeStrings.ed448]
   
   inline def rsa: typings.node.nodeStrings.rsa = "rsa".asInstanceOf[typings.node.nodeStrings.rsa]
+  
+  inline def `rsa-pss`: typings.node.nodeStrings.`rsa-pss` = "rsa-pss".asInstanceOf[typings.node.nodeStrings.`rsa-pss`]
   
   inline def x25519: typings.node.nodeStrings.x25519 = "x25519".asInstanceOf[typings.node.nodeStrings.x25519]
   

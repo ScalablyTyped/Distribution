@@ -2,7 +2,6 @@ package typings.openpgp.anon
 
 import typings.openpgp.mod.NodeStream
 import typings.openpgp.mod.ReadableStream
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined openpgp.openpgp.DecryptResult & {  data :std.Uint8Array | openpgp.openpgp.ReadableStream<std.Uint8Array> | openpgp.openpgp.NodeStream} */
 trait DecryptResultdataUint8Arr extends StObject {
   
-  var data: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) & (Uint8Array | ReadableStream[Uint8Array] | NodeStream)
+  var data: (String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array) & (js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] | NodeStream)
   
   var filename: String
   
@@ -19,7 +18,7 @@ trait DecryptResultdataUint8Arr extends StObject {
 object DecryptResultdataUint8Arr {
   
   inline def apply(
-    data: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) & (Uint8Array | ReadableStream[Uint8Array] | NodeStream),
+    data: (String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array) & (js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] | NodeStream),
     filename: String,
     signatures: js.Array[Valid]
   ): DecryptResultdataUint8Arr = {
@@ -30,13 +29,13 @@ object DecryptResultdataUint8Arr {
   extension [Self <: DecryptResultdataUint8Arr](x: Self) {
     
     inline def setData(
-      value: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) & (Uint8Array | ReadableStream[Uint8Array] | NodeStream)
+      value: (String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array) & (js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] | NodeStream)
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     inline def setSignatures(value: js.Array[Valid]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    inline def setSignaturesVarargs(value: Valid*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: Valid*): Self = StObject.set(x, "signatures", js.Array(value*))
   }
 }

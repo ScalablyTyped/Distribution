@@ -14,7 +14,7 @@ object tokenFileWebIdentityCredentialsMod {
     * Creates a new credentials object with optional configuraion.
     * @param {Object} clientConfig - a map of configuration options to pass to the underlying STS client.
     */
-  class TokenFileWebIdentityCredentials () extends Credentials {
+  open class TokenFileWebIdentityCredentials () extends Credentials {
     def this(clientConfig: ConfigurationOptions) = this()
   }
 }

@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_ZipFile")
 @js.native
-class ClassZipFile ()
+open class ClassZipFile ()
   extends StObject
      with typings.fibjs.ClassZipFile

@@ -11,10 +11,10 @@ Augmented Reality Wikitude SDK Plugin
 | ------------------ | :-------------: |
 | Full name          | com.wikitude.phonegap.wikitudeplugin |
 | Keywords           | AR, augmented reality, Wikitude, image recognition, object recognition, markerless tracking, cloud recognition, ecosystem:cordova, cordova-android, cordova-ios |
-| # releases         | 12 |
-| # dependents       | 0 |
-| # downloads        | 7450 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 197.0 |
+| # stars            | 200.0 |
 
 ## Links
 - [Homepage](https://github.com/Wikitude/wikitude-phonegap#readme)

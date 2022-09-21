@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardExportPageLayout")
 @js.native
-class DashboardExportPageLayout ()
+open class DashboardExportPageLayout ()
   extends StObject
      with typings.devexpressWeb.DashboardExportPageLayout
 object DashboardExportPageLayout {

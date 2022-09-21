@@ -11,7 +11,7 @@ trait IgGridColumnFixing
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event which is fired when column fixing operation is finished
@@ -161,7 +161,7 @@ object IgGridColumnFixing {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridColumnFixingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridColumnFixingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setColumnUnfixed(value: (/* event */ Event, /* ui */ ColumnUnfixedEventUIParam) => Unit): Self = StObject.set(x, "columnUnfixed", js.Any.fromFunction2(value))
     

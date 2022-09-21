@@ -17,7 +17,7 @@ trait ClassChain
     * 
     * 
     */
-  def append(hdlrs: js.Array[js.Any]): Unit = js.native
+  def append(hdlrs: js.Array[Any]): Unit = js.native
   /**
     * 
     * @brief 添加处理器

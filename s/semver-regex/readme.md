@@ -1,7 +1,7 @@
 
 # Scala.js typings for semver-regex
 
-Typings are for version 3.1.1
+Typings are for version 4.0.5
 
 ## Library description:
 Regular expression for matching semver versions
@@ -10,10 +10,10 @@ Regular expression for matching semver versions
 | ------------------ | :-------------: |
 | Full name          | semver-regex |
 | Keywords           | semver, version, versions, regex, regexp, match, matching, semantic |
-| # releases         | 5 |
-| # dependents       | 125 |
-| # downloads        | 151382834 |
-| # stars            | 2 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7025940666666668E7 |
+| # stars            | 139.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/semver-regex#readme)

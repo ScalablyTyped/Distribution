@@ -25,7 +25,7 @@ object GoogleCloudDatalabelingV1beta1ListFeedbackMessagesResponse {
     
     inline def setFeedbackMessagesUndefined: Self = StObject.set(x, "feedbackMessages", js.undefined)
     
-    inline def setFeedbackMessagesVarargs(value: GoogleCloudDatalabelingV1beta1FeedbackMessage*): Self = StObject.set(x, "feedbackMessages", js.Array(value :_*))
+    inline def setFeedbackMessagesVarargs(value: GoogleCloudDatalabelingV1beta1FeedbackMessage*): Self = StObject.set(x, "feedbackMessages", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,9 +1,8 @@
 package typings.googleCloudStorage
 
-import typings.googleCloudCommon.mod.ServiceObject
-import typings.googleCloudCommon.serviceObjectMod.Metadata
+import typings.googleCloudStorage.nodejsCommonMod.ServiceObject
+import typings.googleCloudStorage.serviceObjectMod.Metadata
 import typings.googleCloudStorage.storageMod.Storage
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object channelMod {
   /**
     * Create a channel object to interact with a Cloud Storage channel.
     *
-    * @see [Object Change Notification]{@link https://cloud.google.com/storage/docs/object-change-notification}
+    * See {@link https://cloud.google.com/storage/docs/object-change-notification| Object Change Notification}
     *
     * @class
     *
@@ -21,19 +20,20 @@ object channelMod {
     * @param {string} resourceId The resource ID of the channel.
     *
     * @example
+    * ```
     * const {Storage} = require('@google-cloud/storage');
     * const storage = new Storage();
     * const channel = storage.channel('id', 'resource-id');
+    * ```
     */
   @JSImport("@google-cloud/storage/build/src/channel", "Channel")
   @js.native
-  class Channel protected ()
-    extends ServiceObject[js.Any] {
+  open class Channel protected () extends ServiceObject[Any] {
     def this(storage: Storage, id: String, resourceId: String) = this()
     
     def stop(): js.Promise[Metadata] = js.native
     def stop(callback: StopCallback): Unit = js.native
   }
   
-  type StopCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
+  type StopCallback = js.Function2[/* err */ js.Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
 }

@@ -29,7 +29,7 @@ trait MenuItem extends StObject {
   
   var OnAction: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var StatusBar: String
 }
@@ -47,7 +47,7 @@ object MenuItem {
     HelpFile: String,
     Index: Double,
     OnAction: String,
-    Parent: js.Any,
+    Parent: Any,
     StatusBar: String
   ): MenuItem = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Caption = Caption.asInstanceOf[js.Any], Checked = Checked.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Enabled = Enabled.asInstanceOf[js.Any], HelpContextID = HelpContextID.asInstanceOf[js.Any], HelpFile = HelpFile.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], OnAction = OnAction.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], StatusBar = StatusBar.asInstanceOf[js.Any])
@@ -79,7 +79,7 @@ object MenuItem {
     
     inline def setOnAction(value: String): Self = StObject.set(x, "OnAction", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setStatusBar(value: String): Self = StObject.set(x, "StatusBar", value.asInstanceOf[js.Any])
   }

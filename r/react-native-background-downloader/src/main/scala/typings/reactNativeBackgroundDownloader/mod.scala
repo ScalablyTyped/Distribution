@@ -112,7 +112,7 @@ object mod extends Shortcut {
   @js.native
   val setHeaders: SetHeaders_ = js.native
   
-  type BeginHandler = js.Function1[/* expectedBytes */ Double, js.Any]
+  type BeginHandler = js.Function1[/* expectedBytes */ Double, Any]
   
   type CheckForExistingDownloads_ = js.Function0[js.Promise[js.Array[DownloadTask]]]
   
@@ -133,7 +133,7 @@ object mod extends Shortcut {
     }
   }
   
-  type DoneHandler = js.Function0[js.Any]
+  type DoneHandler = js.Function0[Any]
   
   type DownloadHeaders = StringDictionary[String | Null]
   
@@ -170,19 +170,19 @@ object mod extends Shortcut {
   
   trait DownloadTask extends StObject {
     
-    def _beginHandler(expectedBytes: Double): js.Any
+    def _beginHandler(expectedBytes: Double): Any
     @JSName("_beginHandler")
     var _beginHandler_Original: BeginHandler
     
-    def _doneHandler(): js.Any
+    def _doneHandler(): Any
     @JSName("_doneHandler")
     var _doneHandler_Original: DoneHandler
     
-    def _errorHandler(error: js.Any, errorCode: js.Any): js.Any
+    def _errorHandler(error: Any, errorCode: Any): Any
     @JSName("_errorHandler")
     var _errorHandler_Original: ErrorHandler
     
-    def _progressHandler(percent: Double, bytesWritten: Double, totalBytes: Double): js.Any
+    def _progressHandler(percent: Double, bytesWritten: Double, totalBytes: Double): Any
     @JSName("_progressHandler")
     var _progressHandler_Original: ProgressHandler
     
@@ -196,38 +196,38 @@ object mod extends Shortcut {
     
     var id: String
     
-    def pause(): js.Any
+    def pause(): Any
     
     var percent: Double
     
     def progress(handler: ProgressHandler): DownloadTask
     
-    def resume(): js.Any
+    def resume(): Any
     
     var state: DownloadTaskState
     
-    def stop(): js.Any
+    def stop(): Any
     
     var totalBytes: Double
   }
   object DownloadTask {
     
     inline def apply(
-      _beginHandler: /* expectedBytes */ Double => js.Any,
-      _doneHandler: () => js.Any,
-      _errorHandler: (/* error */ js.Any, /* errorCode */ js.Any) => js.Any,
-      _progressHandler: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => js.Any,
+      _beginHandler: /* expectedBytes */ Double => Any,
+      _doneHandler: () => Any,
+      _errorHandler: (/* error */ Any, /* errorCode */ Any) => Any,
+      _progressHandler: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => Any,
       begin: BeginHandler => DownloadTask,
       bytesWritten: Double,
       done: DoneHandler => DownloadTask,
       error: ErrorHandler => DownloadTask,
       id: String,
-      pause: () => js.Any,
+      pause: () => Any,
       percent: Double,
       progress: ProgressHandler => DownloadTask,
-      resume: () => js.Any,
+      resume: () => Any,
       state: DownloadTaskState,
-      stop: () => js.Any,
+      stop: () => Any,
       totalBytes: Double
     ): DownloadTask = {
       val __obj = js.Dynamic.literal(_beginHandler = js.Any.fromFunction1(_beginHandler), _doneHandler = js.Any.fromFunction0(_doneHandler), _errorHandler = js.Any.fromFunction2(_errorHandler), _progressHandler = js.Any.fromFunction3(_progressHandler), begin = js.Any.fromFunction1(begin), bytesWritten = bytesWritten.asInstanceOf[js.Any], done = js.Any.fromFunction1(done), error = js.Any.fromFunction1(error), id = id.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), percent = percent.asInstanceOf[js.Any], progress = js.Any.fromFunction1(progress), resume = js.Any.fromFunction0(resume), state = state.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop), totalBytes = totalBytes.asInstanceOf[js.Any])
@@ -246,35 +246,35 @@ object mod extends Shortcut {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
       inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
       inline def setProgress(value: ProgressHandler => DownloadTask): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
       
-      inline def setResume(value: () => js.Any): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      inline def setResume(value: () => Any): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
       
       inline def setState(value: DownloadTaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      inline def setStop(value: () => js.Any): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Any): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
       inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
-      inline def set_beginHandler(value: /* expectedBytes */ Double => js.Any): Self = StObject.set(x, "_beginHandler", js.Any.fromFunction1(value))
+      inline def set_beginHandler(value: /* expectedBytes */ Double => Any): Self = StObject.set(x, "_beginHandler", js.Any.fromFunction1(value))
       
-      inline def set_doneHandler(value: () => js.Any): Self = StObject.set(x, "_doneHandler", js.Any.fromFunction0(value))
+      inline def set_doneHandler(value: () => Any): Self = StObject.set(x, "_doneHandler", js.Any.fromFunction0(value))
       
-      inline def set_errorHandler(value: (/* error */ js.Any, /* errorCode */ js.Any) => js.Any): Self = StObject.set(x, "_errorHandler", js.Any.fromFunction2(value))
+      inline def set_errorHandler(value: (/* error */ Any, /* errorCode */ Any) => Any): Self = StObject.set(x, "_errorHandler", js.Any.fromFunction2(value))
       
-      inline def set_progressHandler(value: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => js.Any): Self = StObject.set(x, "_progressHandler", js.Any.fromFunction3(value))
+      inline def set_progressHandler(value: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => Any): Self = StObject.set(x, "_progressHandler", js.Any.fromFunction3(value))
     }
   }
   
   type Download_ = js.Function1[/* options */ DownloadOption, DownloadTask]
   
-  type ErrorHandler = js.Function2[/* error */ js.Any, /* errorCode */ js.Any, js.Any]
+  type ErrorHandler = js.Function2[/* error */ Any, /* errorCode */ Any, Any]
   
-  type ProgressHandler = js.Function3[/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double, js.Any]
+  type ProgressHandler = js.Function3[/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double, Any]
   
   trait RNBackgroundDownloader extends StObject {
     

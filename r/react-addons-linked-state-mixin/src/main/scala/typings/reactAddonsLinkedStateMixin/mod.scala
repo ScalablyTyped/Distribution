@@ -14,20 +14,20 @@ object mod extends Shortcut {
   
   trait LinkedStateMixin
     extends StObject
-       with Mixin[js.Any, js.Any] {
+       with Mixin[Any, Any] {
     
     def linkState[T](key: String): ReactLink[T]
   }
   object LinkedStateMixin {
     
-    inline def apply(linkState: String => ReactLink[js.Any]): LinkedStateMixin = {
+    inline def apply(linkState: String => ReactLink[Any]): LinkedStateMixin = {
       val __obj = js.Dynamic.literal(linkState = js.Any.fromFunction1(linkState))
       __obj.asInstanceOf[LinkedStateMixin]
     }
     
     extension [Self <: LinkedStateMixin](x: Self) {
       
-      inline def setLinkState(value: String => ReactLink[js.Any]): Self = StObject.set(x, "linkState", js.Any.fromFunction1(value))
+      inline def setLinkState(value: String => ReactLink[Any]): Self = StObject.set(x, "linkState", js.Any.fromFunction1(value))
     }
   }
   

@@ -29,7 +29,7 @@ object CookieObject {
     
     inline def setCookiesAllowListUndefined: Self = StObject.set(x, "cookiesAllowList", js.undefined)
     
-    inline def setCookiesAllowListVarargs(value: String*): Self = StObject.set(x, "cookiesAllowList", js.Array(value :_*))
+    inline def setCookiesAllowListVarargs(value: String*): Self = StObject.set(x, "cookiesAllowList", js.Array(value*))
     
     inline def setOption(value: ForwardValues): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     

@@ -1,11 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.rendering
 
+import typings.activexLibreoffice.LibreOffice.SeqEquiv
+import typings.activexLibreoffice.com_.sun.star.lang.XMultiComponentFactory
+import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Canvas = typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
+type Canvas = XCanvas
 
 /**
   * The {@link CanvasFactory} is used to create the {@link Canvas} objects, evaluating the user's configuration preferences from
@@ -18,11 +21,11 @@ type Canvas = typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
   * empty string as service specifier (default). If you want to manually override the configured service list, you can pass a service name to try first.
   * @since OOo 2.0
   */
-type CanvasFactory = typings.activexLibreoffice.com_.sun.star.lang.XMultiComponentFactory
+type CanvasFactory = XMultiComponentFactory
 
-type Color = typings.activexLibreoffice.LibreOffice.SeqEquiv[typings.activexLibreoffice.com_.sun.star.rendering.ColorComponent]
+type Color = SeqEquiv[ColorComponent]
 
-type ColorComponent = scala.Double
+type ColorComponent = Double
 
 /**
   * This exception indicates an invalid volatile bitmap content.
@@ -30,4 +33,4 @@ type ColorComponent = scala.Double
   * When accessing or rendering {@link XVolatileBitmap} data, that has been invalidated by the system, this exception will be thrown.
   * @since OOo 2.0
   */
-type VolatileContentDestroyedException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type VolatileContentDestroyedException = Exception

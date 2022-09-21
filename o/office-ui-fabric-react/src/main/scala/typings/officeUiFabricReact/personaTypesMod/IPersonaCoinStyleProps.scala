@@ -24,7 +24,7 @@ trait IPersonaCoinStyleProps extends StObject {
   
   /**
     * Decides the size of the control.
-    * @defaultvalue PersonaSize.size48
+    * @default PersonaSize.size48
     */
   var size: js.UndefOr[PersonaSize] = js.undefined
   

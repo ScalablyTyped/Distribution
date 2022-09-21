@@ -14,11 +14,15 @@ trait ParagraphStyle extends StObject {
   
   var maxLines: js.UndefOr[Double] = js.undefined
   
+  var replaceTabCharacters: js.UndefOr[Boolean] = js.undefined
+  
   var strutStyle: js.UndefOr[StrutStyle] = js.undefined
   
   var textAlign: js.UndefOr[TextAlign] = js.undefined
   
   var textDirection: js.UndefOr[TextDirection] = js.undefined
+  
+  var textHeightBehavior: js.UndefOr[TextHeightBehavior] = js.undefined
   
   var textStyle: js.UndefOr[TextStyle] = js.undefined
 }
@@ -47,6 +51,10 @@ object ParagraphStyle {
     
     inline def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
     
+    inline def setReplaceTabCharacters(value: Boolean): Self = StObject.set(x, "replaceTabCharacters", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceTabCharactersUndefined: Self = StObject.set(x, "replaceTabCharacters", js.undefined)
+    
     inline def setStrutStyle(value: StrutStyle): Self = StObject.set(x, "strutStyle", value.asInstanceOf[js.Any])
     
     inline def setStrutStyleUndefined: Self = StObject.set(x, "strutStyle", js.undefined)
@@ -58,6 +66,10 @@ object ParagraphStyle {
     inline def setTextDirection(value: TextDirection): Self = StObject.set(x, "textDirection", value.asInstanceOf[js.Any])
     
     inline def setTextDirectionUndefined: Self = StObject.set(x, "textDirection", js.undefined)
+    
+    inline def setTextHeightBehavior(value: TextHeightBehavior): Self = StObject.set(x, "textHeightBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setTextHeightBehaviorUndefined: Self = StObject.set(x, "textHeightBehavior", js.undefined)
     
     inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     

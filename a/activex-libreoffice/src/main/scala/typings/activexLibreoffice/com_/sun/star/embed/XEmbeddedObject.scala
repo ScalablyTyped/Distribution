@@ -164,7 +164,7 @@ object XEmbeddedObject {
     getStatus: Double => Double,
     getSupportedVerbs: () => SafeArray[VerbDescriptor],
     getVisualAreaSize: Double => Size,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeCloseListener: XCloseListener => Unit,
     removeEventListener: XEventListener => Unit,

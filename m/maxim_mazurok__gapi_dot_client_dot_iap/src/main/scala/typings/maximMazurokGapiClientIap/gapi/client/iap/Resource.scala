@@ -17,7 +17,7 @@ trait Resource extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientIap.maximMazurokGapiClientIapStrings.Resource & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientIap.maximMazurokGapiClientIapStrings.Resource & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -54,7 +54,7 @@ object Resource {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientIap.maximMazurokGapiClientIapStrings.Resource & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientIap.maximMazurokGapiClientIapStrings.Resource & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

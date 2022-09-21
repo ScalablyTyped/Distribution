@@ -9,12 +9,12 @@ trait GetMaintenanceWindowExecutionResult extends StObject {
   /**
     * The time the maintenance window finished running.
     */
-  var EndTime: js.UndefOr[DateTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time the maintenance window started running.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the maintenance window execution.
@@ -22,7 +22,7 @@ trait GetMaintenanceWindowExecutionResult extends StObject {
   var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.undefined
   
   /**
-    * The details explaining the Status. Only available for certain status values.
+    * The details explaining the status. Not available for all status values.
     */
   var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
   
@@ -45,11 +45,11 @@ object GetMaintenanceWindowExecutionResult {
   
   extension [Self <: GetMaintenanceWindowExecutionResult](x: Self) {
     
-    inline def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -65,7 +65,7 @@ object GetMaintenanceWindowExecutionResult {
     
     inline def setTaskIdsUndefined: Self = StObject.set(x, "TaskIds", js.undefined)
     
-    inline def setTaskIdsVarargs(value: MaintenanceWindowExecutionTaskId*): Self = StObject.set(x, "TaskIds", js.Array(value :_*))
+    inline def setTaskIdsVarargs(value: MaintenanceWindowExecutionTaskId*): Self = StObject.set(x, "TaskIds", js.Array(value*))
     
     inline def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
     

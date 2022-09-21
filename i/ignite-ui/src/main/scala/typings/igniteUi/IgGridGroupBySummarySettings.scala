@@ -10,7 +10,7 @@ trait IgGridGroupBySummarySettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the delimiter for multiple summaries.

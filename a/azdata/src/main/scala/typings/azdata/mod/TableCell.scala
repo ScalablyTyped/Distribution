@@ -10,11 +10,11 @@ trait TableCell extends StObject {
   
   var row: Double
   
-  var value: js.Any
+  var value: Any
 }
 object TableCell {
   
-  inline def apply(column: Double, row: Double, value: js.Any): TableCell = {
+  inline def apply(column: Double, row: Double, value: Any): TableCell = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCell]
   }
@@ -25,6 +25,6 @@ object TableCell {
     
     inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

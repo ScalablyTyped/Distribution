@@ -260,7 +260,7 @@ object publicInterfacesMod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: ISelectOption*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: ISelectOption*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFilter(value: IColumnField[IFilterTemplateDefMap]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -377,7 +377,7 @@ object publicInterfacesMod {
       
       inline def setFilterDataUndefined: Self = StObject.set(x, "filterData", js.undefined)
       
-      inline def setFilterDataVarargs(value: ISelectOption*): Self = StObject.set(x, "filterData", js.Array(value :_*))
+      inline def setFilterDataVarargs(value: ISelectOption*): Self = StObject.set(x, "filterData", js.Array(value*))
       
       inline def setFilterFunction1(value: /* context */ ColumnFieldContext => IFilterTemplateDefMap): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -548,9 +548,9 @@ object publicInterfacesMod {
       $addClass: String => Unit,
       $attr: js.Object,
       $normalize: String => String,
-      $observe: (String, js.Function1[/* value */ js.UndefOr[js.Any], js.Any]) => Function,
+      $observe: (String, js.Function1[/* value */ js.UndefOr[Any], Any]) => Function,
       $removeClass: String => Unit,
-      $set: (String, js.Any) => Unit,
+      $set: (String, Any) => Unit,
       $updateClass: (String, String) => Unit
     ): ITableInputAttributes = {
       val __obj = js.Dynamic.literal($addClass = js.Any.fromFunction1($addClass), $attr = $attr.asInstanceOf[js.Any], $normalize = js.Any.fromFunction1($normalize), $observe = js.Any.fromFunction2($observe), $removeClass = js.Any.fromFunction1($removeClass), $set = js.Any.fromFunction2($set), $updateClass = js.Any.fromFunction2($updateClass))

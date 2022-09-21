@@ -1,9 +1,5 @@
 package typings.googleapis.scriptV1Mod.scriptV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceProcessesListscriptprocesses
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The maximum number of returned processes per page of results. Defaults
-    * to 50.
+    * The maximum number of returned processes per page of results. Defaults to 50.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The token for continuing a previous list request on the next page. This
-    * should be set to the value of `nextPageToken` from a previous response.
+    * The token for continuing a previous list request on the next page. This should be set to the value of `nextPageToken` from a previous response.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -35,50 +24,43 @@ trait ParamsResourceProcessesListscriptprocesses
   var scriptId: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional field used to limit returned processes to those originating from
-    * projects with a specific deployment ID.
+    * Optional field used to limit returned processes to those originating from projects with a specific deployment ID.
     */
   @JSName("scriptProcessFilter.deploymentId")
   var scriptProcessFilterDotdeploymentId: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional field used to limit returned processes to those that completed
-    * on or before the given timestamp.
+    * Optional field used to limit returned processes to those that completed on or before the given timestamp.
     */
   @JSName("scriptProcessFilter.endTime")
   var scriptProcessFilterDotendTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional field used to limit returned processes to those originating from
-    * a script function with the given function name.
+    * Optional field used to limit returned processes to those originating from a script function with the given function name.
     */
   @JSName("scriptProcessFilter.functionName")
   var scriptProcessFilterDotfunctionName: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional field used to limit returned processes to those that were
-    * started on or after the given timestamp.
+    * Optional field used to limit returned processes to those that were started on or after the given timestamp.
     */
   @JSName("scriptProcessFilter.startTime")
   var scriptProcessFilterDotstartTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional field used to limit returned processes to those having one of
-    * the specified process statuses.
+    * Optional field used to limit returned processes to those having one of the specified process statuses.
     */
   @JSName("scriptProcessFilter.statuses")
   var scriptProcessFilterDotstatuses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Optional field used to limit returned processes to those having one of
-    * the specified process types.
+    * Optional field used to limit returned processes to those having one of the specified process types.
     */
   @JSName("scriptProcessFilter.types")
   var scriptProcessFilterDottypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Optional field used to limit returned processes to those having one of
-    * the specified user access levels.
+    * Optional field used to limit returned processes to those having one of the specified user access levels.
     */
   @JSName("scriptProcessFilter.userAccessLevels")
   var scriptProcessFilterDotuserAccessLevels: js.UndefOr[js.Array[String]] = js.undefined
@@ -91,10 +73,6 @@ object ParamsResourceProcessesListscriptprocesses {
   }
   
   extension [Self <: ParamsResourceProcessesListscriptprocesses](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
@@ -128,18 +106,18 @@ object ParamsResourceProcessesListscriptprocesses {
     
     inline def setScriptProcessFilterDotstatusesUndefined: Self = StObject.set(x, "scriptProcessFilter.statuses", js.undefined)
     
-    inline def setScriptProcessFilterDotstatusesVarargs(value: String*): Self = StObject.set(x, "scriptProcessFilter.statuses", js.Array(value :_*))
+    inline def setScriptProcessFilterDotstatusesVarargs(value: String*): Self = StObject.set(x, "scriptProcessFilter.statuses", js.Array(value*))
     
     inline def setScriptProcessFilterDottypes(value: js.Array[String]): Self = StObject.set(x, "scriptProcessFilter.types", value.asInstanceOf[js.Any])
     
     inline def setScriptProcessFilterDottypesUndefined: Self = StObject.set(x, "scriptProcessFilter.types", js.undefined)
     
-    inline def setScriptProcessFilterDottypesVarargs(value: String*): Self = StObject.set(x, "scriptProcessFilter.types", js.Array(value :_*))
+    inline def setScriptProcessFilterDottypesVarargs(value: String*): Self = StObject.set(x, "scriptProcessFilter.types", js.Array(value*))
     
     inline def setScriptProcessFilterDotuserAccessLevels(value: js.Array[String]): Self = StObject.set(x, "scriptProcessFilter.userAccessLevels", value.asInstanceOf[js.Any])
     
     inline def setScriptProcessFilterDotuserAccessLevelsUndefined: Self = StObject.set(x, "scriptProcessFilter.userAccessLevels", js.undefined)
     
-    inline def setScriptProcessFilterDotuserAccessLevelsVarargs(value: String*): Self = StObject.set(x, "scriptProcessFilter.userAccessLevels", js.Array(value :_*))
+    inline def setScriptProcessFilterDotuserAccessLevelsVarargs(value: String*): Self = StObject.set(x, "scriptProcessFilter.userAccessLevels", js.Array(value*))
   }
 }

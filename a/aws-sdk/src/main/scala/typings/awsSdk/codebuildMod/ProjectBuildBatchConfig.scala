@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProjectBuildBatchConfig extends StObject {
   
   /**
+    * Specifies how build status reports are sent to the source provider for the batch build. This property is only used when the source provider for your project is Bitbucket, GitHub, or GitHub Enterprise, and your project is configured to report build statuses to the source provider.  REPORT_AGGREGATED_BATCH  (Default) Aggregate all of the build statuses into a single status report.  REPORT_INDIVIDUAL_BUILDS  Send a separate status report for each individual build.  
+    */
+  var batchReportMode: js.UndefOr[BatchReportModeType] = js.undefined
+  
+  /**
     * Specifies if the build artifacts for the batch build should be combined into a single artifact location.
     */
   var combineArtifacts: js.UndefOr[WrapperBoolean] = js.undefined
@@ -34,6 +39,10 @@ object ProjectBuildBatchConfig {
   }
   
   extension [Self <: ProjectBuildBatchConfig](x: Self) {
+    
+    inline def setBatchReportMode(value: BatchReportModeType): Self = StObject.set(x, "batchReportMode", value.asInstanceOf[js.Any])
+    
+    inline def setBatchReportModeUndefined: Self = StObject.set(x, "batchReportMode", js.undefined)
     
     inline def setCombineArtifacts(value: WrapperBoolean): Self = StObject.set(x, "combineArtifacts", value.asInstanceOf[js.Any])
     

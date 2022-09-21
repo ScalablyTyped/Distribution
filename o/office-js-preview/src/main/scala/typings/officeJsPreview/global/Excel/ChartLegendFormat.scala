@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties of a chart legend.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartLegendFormat")
 @js.native
-class ChartLegendFormat ()
+open class ChartLegendFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartLegendFormat {
   

@@ -5,7 +5,6 @@ import typings.awsSdkClientPinpointBrowser.typesDirectMessageConfigurationMod.Di
 import typings.awsSdkClientPinpointBrowser.typesDirectMessageConfigurationMod.UnmarshalledDirectMessageConfiguration
 import typings.awsSdkClientPinpointBrowser.typesEndpointSendConfigurationMod.EndpointSendConfiguration
 import typings.awsSdkClientPinpointBrowser.typesEndpointSendConfigurationMod.UnmarshalledEndpointSendConfiguration
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object typesSendUsersMessageRequestMod {
     /**
       * A map of custom attribute-value pairs. Amazon Pinpoint adds these attributes to the data.pinpoint object in the body of the push notification payload. Amazon Pinpoint also provides these attributes in the events that it generates for users-messages deliveries.
       */
-    var Context: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Context: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * Message definitions for the default message and any messages that are tailored for specific channels.
@@ -33,7 +32,7 @@ object typesSendUsersMessageRequestMod {
       * A map that associates user IDs with EndpointSendConfiguration objects. Within an EndpointSendConfiguration object, you can tailor the message for a user by specifying message overrides or substitutions.
       */
     var Users: js.UndefOr[
-        StringDictionary[EndpointSendConfiguration] | (Iterable[js.Tuple2[String, EndpointSendConfiguration]])
+        StringDictionary[EndpointSendConfiguration] | (js.Iterable[js.Tuple2[String, EndpointSendConfiguration]])
       ] = js.undefined
   }
   object SendUsersMessageRequest {
@@ -45,7 +44,7 @@ object typesSendUsersMessageRequestMod {
     
     extension [Self <: SendUsersMessageRequest](x: Self) {
       
-      inline def setContext(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
       
@@ -58,7 +57,7 @@ object typesSendUsersMessageRequestMod {
       inline def setTraceIdUndefined: Self = StObject.set(x, "TraceId", js.undefined)
       
       inline def setUsers(
-        value: StringDictionary[EndpointSendConfiguration] | (Iterable[js.Tuple2[String, EndpointSendConfiguration]])
+        value: StringDictionary[EndpointSendConfiguration] | (js.Iterable[js.Tuple2[String, EndpointSendConfiguration]])
       ): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
       
       inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)

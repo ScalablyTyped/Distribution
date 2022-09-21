@@ -1,7 +1,7 @@
 name := "sbt-ScalablyTyped"
 organization := "org.scalablytyped"
-version := "202205310153"
+version := "202209210838"
 sbtPlugin := true
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 publishMavenStyle := true
-crossSbtVersions := Vector("0.13.16", "1.5.2")
+crossSbtVersions := Vector("0.13.16", "1.7.1")

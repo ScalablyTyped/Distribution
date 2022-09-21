@@ -32,7 +32,7 @@ trait AutoCorrect extends StObject {
   /* private */ @JSName("Excel.AutoCorrect_typekey")
   var ExcelDotAutoCorrect_typekey: AutoCorrect
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ReplaceText: Boolean
   
@@ -54,7 +54,7 @@ object AutoCorrect {
     DeleteReplacement: String => String,
     DisplayAutoCorrectOptions: Boolean,
     ExcelDotAutoCorrect_typekey: AutoCorrect,
-    Parent: js.Any,
+    Parent: Any,
     ReplaceText: Boolean,
     ReplacementList: Double => SafeArray[String],
     TwoInitialCapitals: Boolean
@@ -88,7 +88,7 @@ object AutoCorrect {
     
     inline def setExcelDotAutoCorrect_typekey(value: AutoCorrect): Self = StObject.set(x, "Excel.AutoCorrect_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReplaceText(value: Boolean): Self = StObject.set(x, "ReplaceText", value.asInstanceOf[js.Any])
     

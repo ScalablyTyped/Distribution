@@ -12,5 +12,5 @@ trait ODataV4Adaptor
   @JSName("options")
   var options_ODataV4Adaptor: ODataAdaptorOptions = js.native
   
-  def processQuery(ds: js.Any, query: Query): typings.ejWebAll.anon.ContentType = js.native
+  def processQuery(ds: Any, query: Query): typings.ejWebAll.anon.ContentType = js.native
 }

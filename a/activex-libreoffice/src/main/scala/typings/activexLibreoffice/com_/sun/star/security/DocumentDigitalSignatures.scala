@@ -44,7 +44,7 @@ object DocumentDigitalSignatures {
     isAuthorTrusted: XCertificate => Boolean,
     isLocationTrusted: String => Boolean,
     manageTrustedSources: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     showCertificate: XCertificate => Unit,
     showDocumentContentSignatures: (XStorage, XInputStream) => Unit,

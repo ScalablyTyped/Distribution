@@ -25,7 +25,7 @@ object IScene {
     
     inline def setLights(value: js.Array[Double]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
-    inline def setLightsVarargs(value: Double*): Self = StObject.set(x, "lights", js.Array(value :_*))
+    inline def setLightsVarargs(value: Double*): Self = StObject.set(x, "lights", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,7 @@ object ReturnTypeGetFrameOwnerResponse {
     
     inline def setParamsType(value: js.Array[GetFrameOwnerRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetFrameOwnerRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetFrameOwnerRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetFrameOwnerResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

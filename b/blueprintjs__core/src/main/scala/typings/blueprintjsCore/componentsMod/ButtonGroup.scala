@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.buttonGroupMod.IButtonGroupProps
+import typings.blueprintjsCore.buttonGroupMod.ButtonGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "ButtonGroup")
 @js.native
-class ButtonGroup protected ()
+open class ButtonGroup protected ()
   extends typings.blueprintjsCore.buttonGroupMod.ButtonGroup {
-  def this(props: IButtonGroupProps) = this()
-  def this(props: IButtonGroupProps, context: js.Any) = this()
+  def this(props: ButtonGroupProps) = this()
+  def this(props: ButtonGroupProps, context: Any) = this()
 }
 /* static members */
 object ButtonGroup {

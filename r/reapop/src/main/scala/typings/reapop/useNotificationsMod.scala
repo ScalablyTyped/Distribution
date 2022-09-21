@@ -1,6 +1,6 @@
 package typings.reapop
 
-import typings.reapop.anon.DismissNotification
+import typings.reapop.reapopNotificationsContextMod.NotificationsContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +11,5 @@ object useNotificationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useNotifications(): DismissNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotifications")().asInstanceOf[DismissNotification]
+  inline def useNotifications(): NotificationsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotifications")().asInstanceOf[NotificationsContext]
 }

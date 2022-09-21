@@ -33,14 +33,14 @@ object AbstractScene {
   inline def AddParser(name: String, parser: BabylonFileParser): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddParser")(name.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * Gets an individual parser from the list of avaialble ones
+    * Gets an individual parser from the list of available ones
     * @param name Defines the name of the parser
     * @returns the requested parser or null
     */
   inline def GetIndividualParser(name: String): Nullable[IndividualBabylonFileParser] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetIndividualParser")(name.asInstanceOf[js.Any]).asInstanceOf[Nullable[IndividualBabylonFileParser]]
   
   /**
-    * Gets a general parser from the list of avaialble ones
+    * Gets a general parser from the list of available ones
     * @param name Defines the name of the parser
     * @returns the requested parser or null
     */
@@ -54,7 +54,7 @@ object AbstractScene {
     * @param rootUrl Defines the root url of the data
     */
   inline def Parse(
-    jsonData: js.Any,
+    jsonData: Any,
     scene: typings.babylonjs.sceneMod.Scene,
     container: typings.babylonjs.assetContainerMod.AssetContainer,
     rootUrl: String
@@ -65,14 +65,14 @@ object AbstractScene {
     */
   @JSImport("babylonjs/Legacy/legacy", "AbstractScene._BabylonFileParsers")
   @js.native
-  def _BabylonFileParsers: js.Any = js.native
-  inline def _BabylonFileParsers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BabylonFileParsers")(x.asInstanceOf[js.Any])
+  def _BabylonFileParsers: Any = js.native
+  inline def _BabylonFileParsers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BabylonFileParsers")(x.asInstanceOf[js.Any])
   
   /**
     * Stores the list of available individual parsers in the application.
     */
   @JSImport("babylonjs/Legacy/legacy", "AbstractScene._IndividualBabylonFileParsers")
   @js.native
-  def _IndividualBabylonFileParsers: js.Any = js.native
-  inline def _IndividualBabylonFileParsers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IndividualBabylonFileParsers")(x.asInstanceOf[js.Any])
+  def _IndividualBabylonFileParsers: Any = js.native
+  inline def _IndividualBabylonFileParsers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IndividualBabylonFileParsers")(x.asInstanceOf[js.Any])
 }

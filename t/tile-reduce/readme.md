@@ -11,9 +11,9 @@ vector tile mapreduce
 | Full name          | tile-reduce |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 868 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 141.66666666666666 |
+| # stars            | 174.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/tile-reduce)

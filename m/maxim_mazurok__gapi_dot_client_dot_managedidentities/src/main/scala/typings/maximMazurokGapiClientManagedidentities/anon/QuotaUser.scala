@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientManagedidentities.anon
 
-import typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities.ResetAdminPasswordRequest
+import typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities.DetachTrustRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait QuotaUser extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The domain resource name using the form: `projects/{project_id}/locations/global/domains/{domain_name}` */
+  /** Required. The resource domain name, project name, and location using the form: `projects/{project_id}/locations/global/domains/{domain_name}` */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait QuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ResetAdminPasswordRequest
+  var resource: DetachTrustRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(name: String, resource: ResetAdminPasswordRequest): QuotaUser = {
+  inline def apply(name: String, resource: DetachTrustRequest): QuotaUser = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
@@ -94,7 +94,7 @@ object QuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ResetAdminPasswordRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: DetachTrustRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

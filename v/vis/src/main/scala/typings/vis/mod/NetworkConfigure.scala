@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetworkConfigure extends StObject {
   
   // please note, filter could be also a function. This case is not represented here
-  var container: js.UndefOr[js.Any] = js.undefined
+  var container: js.UndefOr[Any] = js.undefined
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
@@ -24,7 +24,7 @@ object NetworkConfigure {
   
   extension [Self <: NetworkConfigure](x: Self) {
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -36,7 +36,7 @@ object NetworkConfigure {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setShowButton(value: Boolean): Self = StObject.set(x, "showButton", value.asInstanceOf[js.Any])
     

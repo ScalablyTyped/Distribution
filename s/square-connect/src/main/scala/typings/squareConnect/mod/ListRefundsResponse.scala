@@ -1,13 +1,12 @@
 package typings.squareConnect.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListRefundsResponse")
 @js.native
-class ListRefundsResponse () extends StObject {
+open class ListRefundsResponse () extends StObject {
   
   /**
     * A pagination cursor for retrieving the next set of results, if any remain.
@@ -19,7 +18,7 @@ class ListRefundsResponse () extends StObject {
   /**
     * Any errors that occurred during the request.
     */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[js.Error]] = js.native
   
   /**
     * An array of refunds that match your query.

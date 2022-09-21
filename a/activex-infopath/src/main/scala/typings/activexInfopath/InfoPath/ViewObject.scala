@@ -13,16 +13,16 @@ trait ViewObject extends StObject {
   def EnableAutoUpdate(): Unit = js.native
   
   def ExecuteAction(bstrAction: String): Unit = js.native
-  def ExecuteAction(bstrAction: String, varXmlToEdit: js.Any): Unit = js.native
+  def ExecuteAction(bstrAction: String, varXmlToEdit: Any): Unit = js.native
   
   def Export(bstrURL: String, bstrFormat: String): Unit = js.native
   
   def ForceUpdate(): Unit = js.native
   
   def GetContextNodes(): XMLNodesCollection = js.native
-  def GetContextNodes(varNode: js.Any): XMLNodesCollection = js.native
-  def GetContextNodes(varNode: js.Any, varViewContext: js.Any): XMLNodesCollection = js.native
-  def GetContextNodes(varNode: Unit, varViewContext: js.Any): XMLNodesCollection = js.native
+  def GetContextNodes(varNode: Any): XMLNodesCollection = js.native
+  def GetContextNodes(varNode: Any, varViewContext: Any): XMLNodesCollection = js.native
+  def GetContextNodes(varNode: Unit, varViewContext: Any): XMLNodesCollection = js.native
   
   def GetSelectedNodes(): XMLNodesCollection = js.native
   
@@ -32,12 +32,12 @@ trait ViewObject extends StObject {
   val Name: String = js.native
   
   def SelectNodes(pxnStartNode: IXMLDOMNode): Unit = js.native
-  def SelectNodes(pxnStartNode: IXMLDOMNode, varEndNode: js.Any): Unit = js.native
-  def SelectNodes(pxnStartNode: IXMLDOMNode, varEndNode: js.Any, varViewContext: js.Any): Unit = js.native
-  def SelectNodes(pxnStartNode: IXMLDOMNode, varEndNode: Unit, varViewContext: js.Any): Unit = js.native
+  def SelectNodes(pxnStartNode: IXMLDOMNode, varEndNode: Any): Unit = js.native
+  def SelectNodes(pxnStartNode: IXMLDOMNode, varEndNode: Any, varViewContext: Any): Unit = js.native
+  def SelectNodes(pxnStartNode: IXMLDOMNode, varEndNode: Unit, varViewContext: Any): Unit = js.native
   
   def SelectText(pxnField: IXMLDOMNode): Unit = js.native
-  def SelectText(pxnField: IXMLDOMNode, varViewContext: js.Any): Unit = js.native
+  def SelectText(pxnField: IXMLDOMNode, varViewContext: Any): Unit = js.native
   
   def SwitchView(bstrName: String): Unit = js.native
   

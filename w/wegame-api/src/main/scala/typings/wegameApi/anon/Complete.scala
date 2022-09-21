@@ -19,7 +19,7 @@ trait Complete extends StObject {
   /**
     * HTTP 请求中其他额外的 form data
     */
-  var formData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var formData: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * HTTP 请求 Header，Header 中不能设置 Referer
@@ -57,7 +57,7 @@ object Complete {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    inline def setFormData(value: StringDictionary[js.Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: StringDictionary[Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     

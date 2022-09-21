@@ -11,7 +11,7 @@ trait TabStops2 extends StObject {
   
   def Add(Type: MsoTabStopType, Position: Double): TabStop2 = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -21,5 +21,5 @@ trait TabStops2 extends StObject {
   
   def Item(Index: Double): TabStop2 = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

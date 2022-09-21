@@ -13,24 +13,36 @@ object ShadowMode extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ShadowMode & Double] = js.native
   
+  /**
+    * The object casts shadows only.
+    */
   @js.native
   sealed trait CAST_ONLY
     extends StObject
        with ShadowMode
-  /* 0 */ val CAST_ONLY: typings.cesium.mod.ShadowMode.CAST_ONLY & Double = js.native
+  /* 2 */ val CAST_ONLY: typings.cesium.mod.ShadowMode.CAST_ONLY & Double = js.native
   
+  /**
+    * The object does not cast or receive shadows.
+    */
   @js.native
   sealed trait DISABLED
     extends StObject
        with ShadowMode
-  /* 1 */ val DISABLED: typings.cesium.mod.ShadowMode.DISABLED & Double = js.native
+  /* 0 */ val DISABLED: typings.cesium.mod.ShadowMode.DISABLED & Double = js.native
   
+  /**
+    * The object casts and receives shadows.
+    */
   @js.native
   sealed trait ENABLED
     extends StObject
        with ShadowMode
-  /* 2 */ val ENABLED: typings.cesium.mod.ShadowMode.ENABLED & Double = js.native
+  /* 1 */ val ENABLED: typings.cesium.mod.ShadowMode.ENABLED & Double = js.native
   
+  /**
+    * The object receives shadows only.
+    */
   @js.native
   sealed trait RECEIVE_ONLY
     extends StObject

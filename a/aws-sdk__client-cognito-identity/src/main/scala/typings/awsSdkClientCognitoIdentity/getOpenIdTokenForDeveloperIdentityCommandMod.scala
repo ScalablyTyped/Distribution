@@ -18,20 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getOpenIdTokenForDeveloperIdentityCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/GetOpenIdTokenForDeveloperIdentityCommand", "GetOpenIdTokenForDeveloperIdentityCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/GetOpenIdTokenForDeveloperIdentityCommand", "GetOpenIdTokenForDeveloperIdentityCommand")
   @js.native
-  class GetOpenIdTokenForDeveloperIdentityCommand protected ()
-    extends Command[
+  open class GetOpenIdTokenForDeveloperIdentityCommand protected () extends Command[
           GetOpenIdTokenForDeveloperIdentityCommandInput, 
           GetOpenIdTokenForDeveloperIdentityCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: GetOpenIdTokenForDeveloperIdentityCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -48,7 +50,7 @@ object getOpenIdTokenForDeveloperIdentityCommandMod {
         GetOpenIdTokenForDeveloperIdentityCommandOutput
       ] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type GetOpenIdTokenForDeveloperIdentityCommandInput = GetOpenIdTokenForDeveloperIdentityInput

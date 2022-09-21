@@ -28,13 +28,13 @@ object mod extends Shortcut {
     
     trait Plugin extends StObject {
       
-      def assert(`object`: js.Any, expected: js.Any): Boolean
+      def assert(`object`: Any, expected: Any): Boolean
       
-      def `match`(`object`: js.Any, expected: js.Any): Boolean
+      def `match`(`object`: Any, expected: Any): Boolean
     }
     object Plugin {
       
-      inline def apply(assert: (js.Any, js.Any) => Boolean, `match`: (js.Any, js.Any) => Boolean): Plugin = {
+      inline def apply(assert: (Any, Any) => Boolean, `match`: (Any, Any) => Boolean): Plugin = {
         val __obj = js.Dynamic.literal(assert = js.Any.fromFunction2(assert))
         __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
         __obj.asInstanceOf[Plugin]
@@ -42,9 +42,9 @@ object mod extends Shortcut {
       
       extension [Self <: Plugin](x: Self) {
         
-        inline def setAssert(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction2(value))
+        inline def setAssert(value: (Any, Any) => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction2(value))
         
-        inline def setMatch(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
+        inline def setMatch(value: (Any, Any) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
       }
     }
   }
@@ -65,7 +65,7 @@ object mod extends Shortcut {
            with NumericComparison
            with TypeComparison {
         
-        def like(expected: js.Any): Unit = js.native
+        def like(expected: Any): Unit = js.native
       }
     }
   }

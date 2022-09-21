@@ -12,7 +12,7 @@ trait XMLSchemaCache60 extends StObject {
   def apply(index: Double): String = js.native
   
   /** add a new schema */
-  def add(namespaceURI: String, var_1: js.Any): Unit = js.native
+  def add(namespaceURI: String, var_1: Any): Unit = js.native
   
   /** copy & merge other collection into this one */
   def addCollection(otherCollection: IXMLDOMSchemaCollection): Unit = js.native

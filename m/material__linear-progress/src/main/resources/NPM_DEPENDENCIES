@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/linear-progress" : "8.0.0"
+      "@material/linear-progress" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/linear-progress" : "8.0.0"
+      "@material/linear-progress" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

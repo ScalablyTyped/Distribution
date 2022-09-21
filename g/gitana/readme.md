@@ -10,10 +10,10 @@ Cloud CMS Gitana Driver for Node JS
 | ------------------ | :-------------: |
 | Full name          | gitana |
 | Keywords           | gitana, cloudcms, cms, content, json, rest, mobile, content management, javascript |
-| # releases         | 28 |
-| # dependents       | 8 |
-| # downloads        | 15797 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1130.6666666666667 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/gitana/gitana-node-js#readme)

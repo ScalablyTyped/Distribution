@@ -62,7 +62,7 @@ trait JStorageStatic extends StObject {
     * @param key Key name
     * @param callback Function to run when the key changes
     */
-  def listenKeyChange(key: String, callback: js.Function2[/* key */ String, /* value */ js.Any, Unit]): Unit = js.native
+  def listenKeyChange(key: String, callback: js.Function2[/* key */ String, /* value */ Any, Unit]): Unit = js.native
   /**
     * Register change listeners
     *
@@ -78,7 +78,7 @@ trait JStorageStatic extends StObject {
     * @param channel Channel name
     * @param payload Payload to deliver
     */
-  def publish(channel: String, payload: js.Any): Unit = js.native
+  def publish(channel: String, payload: Any): Unit = js.native
   
   /**
     * Reloads the data from browser storage
@@ -145,7 +145,7 @@ trait JStorageStatic extends StObject {
     * @param channel Channel name
     * @param callback Function to run when the something is published to the channel
     */
-  def subscribe(channel: String, callback: js.Function2[/* channel */ String, /* value */ js.Any, Unit]): Unit = js.native
+  def subscribe(channel: String, callback: js.Function2[/* channel */ String, /* value */ Any, Unit]): Unit = js.native
   /**
     * Subscribe to a Publish/Subscribe event stream
     *

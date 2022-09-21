@@ -2,10 +2,10 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.react.mod.TdHTMLAttributes
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
@@ -24,7 +24,7 @@ object tableCellMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableCell", JSImport.Default)
   @js.native
-  val default: StatelessComponent[TableCellProps] = js.native
+  val default: FC[TableCellProps] = js.native
   
   trait StrictTableCellProps
     extends StObject
@@ -34,7 +34,7 @@ object tableCellMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A table can be collapsing, taking up only as much space as its rows. */
     var collapsing: js.UndefOr[Boolean] = js.undefined
@@ -89,7 +89,7 @@ object tableCellMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -153,8 +153,8 @@ object tableCellMod extends Shortcut {
   
   type TableCellProps = StrictTableCellProps
   
-  type _To = StatelessComponent[TableCellProps]
+  type _To = FC[TableCellProps]
   
   /* This means you don't have to write `default`, but can instead just say `tableCellMod.foo` */
-  override def _to: StatelessComponent[TableCellProps] = default
+  override def _to: FC[TableCellProps] = default
 }

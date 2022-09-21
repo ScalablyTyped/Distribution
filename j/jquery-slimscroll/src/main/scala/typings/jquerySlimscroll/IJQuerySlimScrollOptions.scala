@@ -109,7 +109,7 @@ trait IJQuerySlimScrollOptions extends StObject {
   /**
     * default scroll position on load - top / bottom / $('selector')
     */
-  var start: js.UndefOr[js.Any] = js.undefined
+  var start: js.UndefOr[Any] = js.undefined
   
   /**
     * scroll amount applied when user is using gestures
@@ -220,7 +220,7 @@ object IJQuerySlimScrollOptions {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     

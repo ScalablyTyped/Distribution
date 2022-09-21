@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "convert-to-spaces" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "convert-to-spaces" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

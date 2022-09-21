@@ -10,5 +10,6 @@ trait OfflineAudioCompletionEvent
   extends StObject
      with Event {
   
+  /* standard dom */
   val renderedBuffer: AudioBuffer = js.native
 }

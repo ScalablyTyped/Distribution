@@ -15,6 +15,11 @@ trait DOMContainerConfig extends StObject {
     * Should the game create a div element to act as a DOM Container? Only enable if you're using DOM Element objects. You must provide a parent object if you use this feature.
     */
   var createContainer: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The default `pointerEvents` attribute set on the DOM Container.
+    */
+  var pointerEvents: js.UndefOr[String] = js.undefined
 }
 object DOMContainerConfig {
   
@@ -32,5 +37,9 @@ object DOMContainerConfig {
     inline def setCreateContainer(value: Boolean): Self = StObject.set(x, "createContainer", value.asInstanceOf[js.Any])
     
     inline def setCreateContainerUndefined: Self = StObject.set(x, "createContainer", js.undefined)
+    
+    inline def setPointerEvents(value: String): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
   }
 }

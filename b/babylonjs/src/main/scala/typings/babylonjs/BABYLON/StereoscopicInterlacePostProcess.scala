@@ -9,7 +9,7 @@ trait StereoscopicInterlacePostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _passedProcess: js.Any = js.native
+  /* private */ var _passedProcess: Any = js.native
   
-  /* private */ var _stepSize: js.Any = js.native
+  /* private */ var _stepSize: Any = js.native
 }

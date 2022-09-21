@@ -1,6 +1,7 @@
 
 # Scala.js typings for git-config
 
+Typings are for version 0.0
 
 ## Library description:
 A simple way to extract out all the contents of a .gitconfig file and return as JSON
@@ -9,15 +10,12 @@ A simple way to extract out all the contents of a .gitconfig file and return as 
 | ------------------ | :-------------: |
 | Full name          | git-config |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 144 |
-| # downloads        | 424726 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 79404.66666666667 |
+| # stars            | 24.0 |
 
 ## Links
-- [Homepage](https://github.com/eugeneware/git-config)
-- [Bugs](https://github.com/eugeneware/git-config/issues)
-- [Repository](https://github.com/eugeneware/git-config)
 - [Npm](https://www.npmjs.com/package/git-config)
     
 

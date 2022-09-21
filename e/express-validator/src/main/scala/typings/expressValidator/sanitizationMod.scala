@@ -13,21 +13,21 @@ object sanitizationMod {
   
   @JSImport("express-validator/src/context-items/sanitization", "Sanitization")
   @js.native
-  class Sanitization protected ()
+  open class Sanitization protected ()
     extends StObject
        with ContextItem {
     def this(sanitizer: CustomSanitizer, custom: Boolean) = this()
     def this(sanitizer: StandardSanitizer, custom: Boolean) = this()
-    def this(sanitizer: CustomSanitizer, custom: Boolean, options: js.Array[js.Any]) = this()
-    def this(sanitizer: StandardSanitizer, custom: Boolean, options: js.Array[js.Any]) = this()
+    def this(sanitizer: CustomSanitizer, custom: Boolean, options: js.Array[Any]) = this()
+    def this(sanitizer: StandardSanitizer, custom: Boolean, options: js.Array[Any]) = this()
     
-    /* private */ val custom: js.Any = js.native
+    /* private */ val custom: Any = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val options: Any = js.native
     
     /* CompleteClass */
-    override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
+    override def run(context: Context, value: Any, meta: Meta): js.Promise[Unit] = js.native
     
-    /* private */ val sanitizer: js.Any = js.native
+    /* private */ val sanitizer: Any = js.native
   }
 }

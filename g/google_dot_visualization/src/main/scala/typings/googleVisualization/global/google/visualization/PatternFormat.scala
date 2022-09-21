@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.PatternFormat")
 @js.native
-class PatternFormat protected ()
+open class PatternFormat protected ()
   extends StObject
      with typings.googleVisualization.google.visualization.PatternFormat {
   /**

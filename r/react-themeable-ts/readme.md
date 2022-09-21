@@ -11,9 +11,9 @@ Handle classname and style props in React
 | Full name          | react-themeable-ts |
 | Keywords           | typescript, react, style, classname |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 319 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 54.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/beckend/react-themeable-ts#readme)

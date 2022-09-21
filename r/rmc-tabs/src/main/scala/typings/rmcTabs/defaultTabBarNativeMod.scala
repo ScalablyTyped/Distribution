@@ -15,42 +15,41 @@ object defaultTabBarNativeMod {
   
   @JSImport("rmc-tabs/lib/DefaultTabBar.native", "DefaultTabBar")
   @js.native
-  class DefaultTabBar protected ()
-    extends PureComponent[PropsType, StateType, js.Any] {
+  open class DefaultTabBar protected () extends PureComponent[PropsType, StateType, Any] {
     def this(props: PropsType) = this()
     
-    var _containerMeasurements: js.Any = js.native
+    var _containerMeasurements: Any = js.native
     
     var _scrollView: ScrollView = js.native
     
-    var _tabContainerMeasurements: js.Any = js.native
+    var _tabContainerMeasurements: Any = js.native
     
-    var _tabsMeasurements: js.Array[js.Any] = js.native
+    var _tabsMeasurements: js.Array[Any] = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDefaultTabBar(): Unit = js.native
     
-    def measureTab(page: Double, event: js.Any): Unit = js.native
+    def measureTab(page: Double, event: Any): Unit = js.native
     
-    def necessarilyMeasurementsCompleted(position: Double, isLastTab: Boolean): js.Any = js.native
+    def necessarilyMeasurementsCompleted(position: Double, isLastTab: Boolean): Any = js.native
     
     def onContainerLayout(
-      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.LayoutChangeEvent */ js.Any
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.LayoutChangeEvent */ Any
     ): Unit = js.native
     
     def onPress(index: Double): Unit = js.native
     
     def onTabContainerLayout(
-      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.LayoutChangeEvent */ js.Any
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.LayoutChangeEvent */ Any
     ): Unit = js.native
     
-    def renderTab(tab: TabData, index: Double, width: Double, onLayoutHandler: js.Any): Element = js.native
+    def renderTab(tab: TabData, index: Double, width: Double, onLayoutHandler: Any): Element = js.native
     
     def updateTabPanel(position: Double, pageOffset: Double): Unit = js.native
     
     def updateTabUnderline(position: Double, pageOffset: Double, tabCount: Double): Unit = js.native
     
-    def updateView(offset: js.Any): Unit = js.native
+    def updateView(offset: Any): Unit = js.native
   }
   /* static members */
   object DefaultTabBar {
@@ -74,16 +73,16 @@ object defaultTabBarNativeMod {
     
     var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.undefined
     
-    var scrollValue: js.UndefOr[js.Any] = js.undefined
+    var scrollValue: js.UndefOr[Any] = js.undefined
     
     var styles: js.UndefOr[TabBar] = js.undefined
     
     var tabStyle: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ Any
       ] = js.undefined
     
     var tabsContainerStyle: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ Any
       ] = js.undefined
   }
   object PropsType {
@@ -109,7 +108,7 @@ object defaultTabBarNativeMod {
       
       inline def setKeyboardShouldPersistTapsUndefined: Self = StObject.set(x, "keyboardShouldPersistTaps", js.undefined)
       
-      inline def setScrollValue(value: js.Any): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
+      inline def setScrollValue(value: Any): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
       
       inline def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
       
@@ -118,13 +117,13 @@ object defaultTabBarNativeMod {
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
       inline def setTabStyle(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ Any
       ): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
       
       inline def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
       
       inline def setTabsContainerStyle(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ Any
       ): Self = StObject.set(x, "tabsContainerStyle", value.asInstanceOf[js.Any])
       
       inline def setTabsContainerStyleUndefined: Self = StObject.set(x, "tabsContainerStyle", js.undefined)

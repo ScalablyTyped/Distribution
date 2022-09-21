@@ -13,6 +13,7 @@ import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,14 +23,16 @@ object tagMod {
   
   @JSImport("@catho/quantum/Tag", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TagProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TagProps, js.Object, Any]
   
-  type Tag = Component[TagProps, js.Object, js.Any]
+  type Tag = Component[TagProps, js.Object, Any]
   
   trait TagProps extends StObject {
     
     var bold: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
     var inverted: js.UndefOr[Boolean] = js.undefined
     
@@ -57,6 +60,12 @@ object tagMod {
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
       inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+      
+      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       

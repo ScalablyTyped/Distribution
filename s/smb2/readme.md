@@ -10,10 +10,10 @@ SMB2 Client
 | ------------------ | :-------------: |
 | Full name          | smb2 |
 | Keywords           | SMB, SMB2, SMB3, NTLM, CIFS, Samba |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 230320 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 35755.333333333336 |
+| # stars            | 112.0 |
 
 ## Links
 - [Homepage](https://github.com/bchelli/node-smb2)

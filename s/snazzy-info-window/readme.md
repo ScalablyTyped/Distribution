@@ -11,14 +11,11 @@ Customizable info windows using the Google Maps JavaScript API.
 | Full name          | snazzy-info-window |
 | Keywords           | snazzy-maps, google-maps, snazzy, google, maps, info, window |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 473871 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 45676.333333333336 |
+| # stars            | 578.0 |
 
 ## Links
-- [Homepage](https://github.com/atmist/snazzy-info-window)
-- [Bugs](https://github.com/atmist/snazzy-info-window/issues)
-- [Repository](https://github.com/atmist/snazzy-info-window)
 - [Npm](https://www.npmjs.com/package/snazzy-info-window)
     
 

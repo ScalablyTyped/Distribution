@@ -1,7 +1,7 @@
 
 # Scala.js typings for slash
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Convert Windows backslash paths to slash paths
@@ -10,10 +10,10 @@ Convert Windows backslash paths to slash paths
 | ------------------ | :-------------: |
 | Full name          | slash |
 | Keywords           | path, seperator, slash, backslash, windows, convert |
-| # releases         | 2 |
-| # dependents       | 979 |
-| # downloads        | 1008631546 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9308491766666666E8 |
+| # stars            | 269.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/slash#readme)

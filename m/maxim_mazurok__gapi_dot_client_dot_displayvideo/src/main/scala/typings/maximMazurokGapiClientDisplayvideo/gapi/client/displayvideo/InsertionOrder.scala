@@ -12,6 +12,9 @@ trait InsertionOrder extends StObject {
   /** The bidding strategy of the insertion order. By default, fixed_bid is set. */
   var bidStrategy: js.UndefOr[BiddingStrategy] = js.undefined
   
+  /** Immutable. The billable outcome of the insertion order. */
+  var billableOutcome: js.UndefOr[String] = js.undefined
+  
   /** Required. The budget allocation settings of the insertion order. */
   var budget: js.UndefOr[InsertionOrderBudget] = js.undefined
   
@@ -34,6 +37,9 @@ trait InsertionOrder extends StObject {
   /** Output only. The unique ID of the insertion order. Assigned by the system. */
   var insertionOrderId: js.UndefOr[String] = js.undefined
   
+  /** The type of insertion order. If this field is unspecified in creation, the value defaults to `RTB`. */
+  var insertionOrderType: js.UndefOr[String] = js.undefined
+  
   /** Additional integration details of the insertion order. */
   var integrationDetails: js.UndefOr[IntegrationDetails] = js.undefined
   
@@ -51,6 +57,9 @@ trait InsertionOrder extends StObject {
   
   /** Required. Performance goal of the insertion order. */
   var performanceGoal: js.UndefOr[PerformanceGoal] = js.undefined
+  
+  /** Output only. The reservation type of the insertion order. */
+  var reservationType: js.UndefOr[String] = js.undefined
   
   /** Output only. The timestamp when the insertion order was last updated. Assigned by the system. */
   var updateTime: js.UndefOr[String] = js.undefined
@@ -71,6 +80,10 @@ object InsertionOrder {
     inline def setBidStrategy(value: BiddingStrategy): Self = StObject.set(x, "bidStrategy", value.asInstanceOf[js.Any])
     
     inline def setBidStrategyUndefined: Self = StObject.set(x, "bidStrategy", js.undefined)
+    
+    inline def setBillableOutcome(value: String): Self = StObject.set(x, "billableOutcome", value.asInstanceOf[js.Any])
+    
+    inline def setBillableOutcomeUndefined: Self = StObject.set(x, "billableOutcome", js.undefined)
     
     inline def setBudget(value: InsertionOrderBudget): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
     
@@ -96,6 +109,10 @@ object InsertionOrder {
     
     inline def setInsertionOrderIdUndefined: Self = StObject.set(x, "insertionOrderId", js.undefined)
     
+    inline def setInsertionOrderType(value: String): Self = StObject.set(x, "insertionOrderType", value.asInstanceOf[js.Any])
+    
+    inline def setInsertionOrderTypeUndefined: Self = StObject.set(x, "insertionOrderType", js.undefined)
+    
     inline def setIntegrationDetails(value: IntegrationDetails): Self = StObject.set(x, "integrationDetails", value.asInstanceOf[js.Any])
     
     inline def setIntegrationDetailsUndefined: Self = StObject.set(x, "integrationDetails", js.undefined)
@@ -112,11 +129,15 @@ object InsertionOrder {
     
     inline def setPartnerCostsUndefined: Self = StObject.set(x, "partnerCosts", js.undefined)
     
-    inline def setPartnerCostsVarargs(value: PartnerCost*): Self = StObject.set(x, "partnerCosts", js.Array(value :_*))
+    inline def setPartnerCostsVarargs(value: PartnerCost*): Self = StObject.set(x, "partnerCosts", js.Array(value*))
     
     inline def setPerformanceGoal(value: PerformanceGoal): Self = StObject.set(x, "performanceGoal", value.asInstanceOf[js.Any])
     
     inline def setPerformanceGoalUndefined: Self = StObject.set(x, "performanceGoal", js.undefined)
+    
+    inline def setReservationType(value: String): Self = StObject.set(x, "reservationType", value.asInstanceOf[js.Any])
+    
+    inline def setReservationTypeUndefined: Self = StObject.set(x, "reservationType", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Devices.Sms.CellularClass
 import typings.winrtUwp.Windows.Devices.Sms.ISmsBinaryMessage
 import typings.winrtUwp.Windows.Devices.Sms.ISmsMessage
@@ -237,11 +236,11 @@ object Sms {
     
     /** Specifies whether the asynchronous message retrieval operation has completed or not. */
     /* CompleteClass */
-    override def completed(asyncInfo: IAsyncOperationWithProgress[IVectorView[js.Any], Double], asyncStatus: AsyncStatus): Unit = js.native
+    override def completed(asyncInfo: IAsyncOperationWithProgress[IVectorView[Any], Double], asyncStatus: AsyncStatus): Unit = js.native
     /** Specifies whether the asynchronous message retrieval operation has completed or not. */
     /* CompleteClass */
     @JSName("completed")
-    var completed_Original: AsyncOperationWithProgressCompletedHandler[IVectorView[js.Any], Double] = js.native
+    var completed_Original: AsyncOperationWithProgressCompletedHandler[IVectorView[Any], Double] = js.native
     
     /** Specifies the error code for the asynchronous message operation. */
     /* CompleteClass */
@@ -260,11 +259,11 @@ object Sms {
     
     /** Specifies the progress status of the asynchronous message operation. */
     /* CompleteClass */
-    override def progress(asyncInfo: IAsyncOperationWithProgress[IVectorView[js.Any], Double], progressInfo: Double): Unit = js.native
+    override def progress(asyncInfo: IAsyncOperationWithProgress[IVectorView[Any], Double], progressInfo: Double): Unit = js.native
     /** Specifies the progress status of the asynchronous message operation. */
     /* CompleteClass */
     @JSName("progress")
-    var progress_Original: AsyncOperationProgressHandler[IVectorView[js.Any], Double] = js.native
+    var progress_Original: AsyncOperationProgressHandler[IVectorView[Any], Double] = js.native
     
     /** Specifies the status of the asynchronous message operations. */
     /* CompleteClass */
@@ -315,7 +314,7 @@ object Sms {
   @JSGlobal("Windows.Devices.Sms.SmsAppMessage")
   @js.native
   /** Constructor. Used to create an SmsAppMessage prior to sending it. */
-  class SmsAppMessage ()
+  open class SmsAppMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsAppMessage {
     
@@ -381,7 +380,7 @@ object Sms {
     
     /** The timestamp of the message. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
     
     /** The telephone number of the recipient of this message. */
     /* CompleteClass */
@@ -392,7 +391,7 @@ object Sms {
   @JSGlobal("Windows.Devices.Sms.SmsBinaryMessage")
   @js.native
   /** Creates an instance of the SmsBinaryMessage class. */
-  class SmsBinaryMessage ()
+  open class SmsBinaryMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsBinaryMessage {
     
@@ -480,7 +479,7 @@ object Sms {
     
     /** Gets the timestamp of the broadcast SMS message. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
     
     /** Gets the recipient phone number of the broadcast SMS message. */
     /* CompleteClass */
@@ -672,7 +671,7 @@ object Sms {
       * @return Returns a new message operation object that is used to start and track the asynchronous operation.
       */
     /* CompleteClass */
-    override def getMessagesAsync(messageFilter: SmsMessageFilter): IPromiseWithIAsyncOperationWithProgress[IVectorView[js.Any], Double] = js.native
+    override def getMessagesAsync(messageFilter: SmsMessageFilter): IPromiseWithIAsyncOperationWithProgress[IVectorView[Any], Double] = js.native
     
     /** Indicates the maximum number of messages that can be stored in the device store. The client can use this value to determine how to maintain enough space in the device store to receive new messages from the network. */
     /* CompleteClass */
@@ -755,7 +754,7 @@ object Sms {
   /** Describes an SMS filtering rule. */
   @JSGlobal("Windows.Devices.Sms.SmsFilterRule")
   @js.native
-  class SmsFilterRule protected ()
+  open class SmsFilterRule protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsFilterRule {
     /**
@@ -820,7 +819,7 @@ object Sms {
   /** A collection of SmsFilterRule instances. */
   @JSGlobal("Windows.Devices.Sms.SmsFilterRules")
   @js.native
-  class SmsFilterRules protected ()
+  open class SmsFilterRules protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsFilterRules {
     /**
@@ -1121,7 +1120,7 @@ object Sms {
     
     /** The discharge time of the status message. */
     /* CompleteClass */
-    var dischargeTime: Date = js.native
+    var dischargeTime: js.Date = js.native
     
     /** Gets the phone number that sent the status message. */
     /* CompleteClass */
@@ -1141,7 +1140,7 @@ object Sms {
     
     /** Gets the service center timestamp of the status message. */
     /* CompleteClass */
-    var serviceCenterTimestamp: Date = js.native
+    var serviceCenterTimestamp: js.Date = js.native
     
     /** Gets the ICCID (Integrated Circuit Card Identifier) of the SIM that received the message. */
     /* CompleteClass */
@@ -1160,7 +1159,7 @@ object Sms {
   @JSGlobal("Windows.Devices.Sms.SmsTextMessage")
   @js.native
   /** Creates an instance of the SmsTextMessage class. */
-  class SmsTextMessage ()
+  open class SmsTextMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage {
     
@@ -1198,7 +1197,7 @@ object Sms {
     
     /** Indicates the timestamp of the message. It is determined locally for a constructed message instance or from the service center timestamp of a received message. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
     
     /** Indicates the recipient phone number of this message. */
     /* CompleteClass */
@@ -1240,7 +1239,7 @@ object Sms {
   @JSGlobal("Windows.Devices.Sms.SmsTextMessage2")
   @js.native
   /** Constructs a new, default instance of this class. */
-  class SmsTextMessage2 ()
+  open class SmsTextMessage2 ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage2 {
     
@@ -1298,7 +1297,7 @@ object Sms {
     
     /** The timestamp of this message. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
     
     /** Gets or sets the recipient phone number for the message. */
     /* CompleteClass */
@@ -1342,7 +1341,7 @@ object Sms {
     
     /** The timestamp of the message. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
     
     /** The phone number the message was sent to. */
     /* CompleteClass */
@@ -1398,7 +1397,7 @@ object Sms {
     
     /** Gets the timestamp of the SmsWapMessage . */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
     
     /** Gets the recipient phone number of this SmsWapMessage . */
     /* CompleteClass */

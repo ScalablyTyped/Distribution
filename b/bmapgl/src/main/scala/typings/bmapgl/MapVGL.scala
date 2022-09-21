@@ -15,11 +15,11 @@ object MapVGL {
   
   trait GeoJSON
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var geometry: Coordinates
     
-    var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var properties: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object GeoJSON {
     
@@ -32,7 +32,7 @@ object MapVGL {
       
       inline def setGeometry(value: Coordinates): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     }
@@ -84,7 +84,7 @@ object MapVGL {
   
   trait LayerOptions
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var data: js.UndefOr[js.Array[GeoJSON]] = js.undefined
     
@@ -103,7 +103,7 @@ object MapVGL {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: GeoJSON*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: GeoJSON*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
@@ -171,7 +171,7 @@ object MapVGL {
       
       inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
       
-      inline def setEffectsVarargs(value: Effects*): Self = StObject.set(x, "effects", js.Array(value :_*))
+      inline def setEffectsVarargs(value: Effects*): Self = StObject.set(x, "effects", js.Array(value*))
       
       inline def setMap(value: js.Object): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

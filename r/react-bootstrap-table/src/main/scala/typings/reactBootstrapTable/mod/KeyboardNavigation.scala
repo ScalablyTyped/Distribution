@@ -15,12 +15,12 @@ trait KeyboardNavigation extends StObject {
   /**
     * Return a style object which will be applied on the navigating cell.
     */
-  var customStyle: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, CSSProperties]] = js.undefined
+  var customStyle: js.UndefOr[js.Function2[/* cell */ Any, /* row */ Any, CSSProperties]] = js.undefined
   
   /**
     * Return a style object which will be applied on the both of navigating and editing cell.
     */
-  var customStyleOnEditCell: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, CSSProperties]] = js.undefined
+  var customStyleOnEditCell: js.UndefOr[js.Function2[/* cell */ Any, /* row */ Any, CSSProperties]] = js.undefined
   
   /**
     * When set to true, pressing ENTER will begin to edit the cell if cellEdit is also enabled.
@@ -50,9 +50,9 @@ object KeyboardNavigation {
     
     inline def setClickToNavUndefined: Self = StObject.set(x, "clickToNav", js.undefined)
     
-    inline def setCustomStyle(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = StObject.set(x, "customStyle", js.Any.fromFunction2(value))
+    inline def setCustomStyle(value: (/* cell */ Any, /* row */ Any) => CSSProperties): Self = StObject.set(x, "customStyle", js.Any.fromFunction2(value))
     
-    inline def setCustomStyleOnEditCell(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = StObject.set(x, "customStyleOnEditCell", js.Any.fromFunction2(value))
+    inline def setCustomStyleOnEditCell(value: (/* cell */ Any, /* row */ Any) => CSSProperties): Self = StObject.set(x, "customStyleOnEditCell", js.Any.fromFunction2(value))
     
     inline def setCustomStyleOnEditCellUndefined: Self = StObject.set(x, "customStyleOnEditCell", js.undefined)
     

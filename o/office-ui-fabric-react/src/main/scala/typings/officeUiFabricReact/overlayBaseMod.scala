@@ -10,11 +10,11 @@ object overlayBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Overlay/Overlay.base", "OverlayBase")
   @js.native
-  class OverlayBase protected ()
-    extends Component[IOverlayProps, js.Object, js.Any] {
+  open class OverlayBase protected ()
+    extends Component[IOverlayProps, js.Object, Any] {
     def this(props: IOverlayProps) = this()
     
-    /* private */ var _allowTouchBodyScroll: js.Any = js.native
+    /* private */ var _allowTouchBodyScroll: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MOverlayBase(): Unit = js.native

@@ -34,6 +34,6 @@ object Homepage {
     
     inline def setStartup_pagesUndefined: Self = StObject.set(x, "startup_pages", js.undefined)
     
-    inline def setStartup_pagesVarargs(value: String*): Self = StObject.set(x, "startup_pages", js.Array(value :_*))
+    inline def setStartup_pagesVarargs(value: String*): Self = StObject.set(x, "startup_pages", js.Array(value*))
   }
 }

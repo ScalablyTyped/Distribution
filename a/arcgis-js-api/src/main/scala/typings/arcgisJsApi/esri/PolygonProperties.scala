@@ -50,6 +50,6 @@ object PolygonProperties {
     
     inline def setRingsUndefined: Self = StObject.set(x, "rings", js.undefined)
     
-    inline def setRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "rings", js.Array(value :_*))
+    inline def setRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "rings", js.Array(value*))
   }
 }

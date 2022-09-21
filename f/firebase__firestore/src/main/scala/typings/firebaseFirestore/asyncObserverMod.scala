@@ -1,25 +1,44 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.errorMod.FirestoreError
 import typings.firebaseFirestore.eventManagerMod.Observer
+import typings.firebaseFirestore.miscMod.EventHandler
+import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/util/async_observer", JSImport.Namespace)
-@js.native
-object asyncObserverMod extends js.Object {
+object asyncObserverMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/util/async_observer", "AsyncObserver")
   @js.native
-  class AsyncObserver[T] protected () extends Observer[T] {
-    def this(observer: Observer[T]) = this()
+  open class AsyncObserver[T] protected ()
+    extends StObject
+       with Observer[T] {
+    def this(observer: Partial[Observer[T]]) = this()
+    
+    /* CompleteClass */
+    override def error(value: FirestoreError): Unit = js.native
+    /* CompleteClass */
+    @JSName("error")
+    var error_Original: EventHandler[FirestoreError] = js.native
+    
+    def mute(): Unit = js.native
+    
     /**
       * When set to true, will not raise future events. Necessary to deal with
       * async detachment of listener.
       */
-    var muted: js.Any = js.native
-    var observer: js.Any = js.native
-    var scheduleEvent: js.Any = js.native
-    def mute(): Unit = js.native
+    /* private */ var muted: Any = js.native
+    
+    /* CompleteClass */
+    override def next(value: T): Unit = js.native
+    /* CompleteClass */
+    @JSName("next")
+    var next_Original: EventHandler[T] = js.native
+    
+    /* private */ var observer: Any = js.native
+    
+    /* private */ var scheduleEvent: Any = js.native
   }
-  
 }
-

@@ -10,10 +10,10 @@ A lightweight library that provides tools for organizing asynchronous code
 | ------------------ | :-------------: |
 | Full name          | rsvp |
 | Keywords           | futures, promises |
-| # releases         | 2 |
-| # dependents       | 837 |
-| # downloads        | 418849627 |
-| # stars            | 17 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4.4784341666666664E7 |
+| # stars            | 3634.0 |
 
 ## Links
 - [Homepage](https://github.com/tildeio/rsvp.js)

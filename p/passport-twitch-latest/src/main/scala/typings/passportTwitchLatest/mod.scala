@@ -1,17 +1,15 @@
 package typings.passportTwitchLatest
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.passportOauth2.mod.StateStore
 import typings.passportOauth2.mod.VerifyCallback
 import typings.passportOauth2.mod.^
 import typings.passportTwitchLatest.passportTwitchLatestBooleans.`false`
 import typings.passportTwitchLatest.passportTwitchLatestBooleans.`true`
-import typings.std.Error
 import typings.std.Omit
 import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +18,7 @@ object mod {
   
   @JSImport("passport-twitch-latest", "OAuth2Strategy")
   @js.native
-  class OAuth2Strategy protected () extends Strategy {
+  open class OAuth2Strategy protected () extends Strategy {
     // Disabling this tslint rule as unifying the signatures makes the callback function default to inferring the
     // longest callback which breaks the example config. See: https://github.com/Microsoft/TypeScript/issues/16867
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
@@ -33,7 +31,7 @@ object mod {
   
   @JSImport("passport-twitch-latest", "Strategy")
   @js.native
-  class Strategy protected () extends ^ {
+  open class Strategy protected () extends ^ {
     // Disabling this tslint rule as unifying the signatures makes the callback function default to inferring the
     // longest callback which breaks the example config. See: https://github.com/Microsoft/TypeScript/issues/16867
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
@@ -43,29 +41,42 @@ object mod {
     // tslint:disable-next-line unified-signatures
     def this(options: StrategyOptions, verify: VerifyFunctionWithResults) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: AuthenticateOptions): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: AuthenticateOptions
+    ): Unit = js.native
     
     def authorize(strategy: String): AuthenticateRet = js.native
-    def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthenticateRet = js.native
+    def authorize(strategy: String, callback: js.Function1[/* repeated */ Any, Any]): AuthenticateRet = js.native
     def authorize(strategy: String, options: AuthenticateOptions): AuthenticateRet = js.native
-    def authorize(
-      strategy: String,
-      options: AuthenticateOptions,
-      callback: js.Function1[/* repeated */ js.Any, js.Any]
-    ): AuthenticateRet = js.native
+    def authorize(strategy: String, options: AuthenticateOptions, callback: js.Function1[/* repeated */ Any, Any]): AuthenticateRet = js.native
     def authorize(strategy: js.Array[String]): AuthenticateRet = js.native
-    def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthenticateRet = js.native
+    def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ Any, Any]): AuthenticateRet = js.native
     def authorize(strategy: js.Array[String], options: AuthenticateOptions): AuthenticateRet = js.native
     def authorize(
       strategy: js.Array[String],
       options: AuthenticateOptions,
-      callback: js.Function1[/* repeated */ js.Any, js.Any]
+      callback: js.Function1[/* repeated */ Any, Any]
     ): AuthenticateRet = js.native
     
     def userProfile(
       accessToken: String,
-      done: js.Function2[/* err */ js.UndefOr[Error | Null], /* profile */ js.UndefOr[TwitchProfile], Unit]
+      done: js.Function2[/* err */ js.UndefOr[js.Error | Null], /* profile */ js.UndefOr[TwitchProfile], Unit]
     ): Unit = js.native
   }
   
@@ -128,7 +139,7 @@ object mod {
     
     var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.undefined
+    var proxy: js.UndefOr[Any] = js.undefined
     
     var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -136,9 +147,9 @@ object mod {
     
     var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
+    var skipUserProfile: js.UndefOr[Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var store: js.UndefOr[StateStore] = js.undefined
     
@@ -177,7 +188,7 @@ object mod {
       
       inline def setPkceUndefined: Self = StObject.set(x, "pkce", js.undefined)
       
-      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
@@ -189,17 +200,17 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setSkipUserProfile(value: js.Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
+      inline def setSkipUserProfile(value: Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
       
       inline def setSkipUserProfileUndefined: Self = StObject.set(x, "skipUserProfile", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
@@ -230,7 +241,7 @@ object mod {
     
     var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.undefined
+    var proxy: js.UndefOr[Any] = js.undefined
     
     var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -238,9 +249,9 @@ object mod {
     
     var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
+    var skipUserProfile: js.UndefOr[Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var store: js.UndefOr[StateStore] = js.undefined
     
@@ -281,7 +292,7 @@ object mod {
       
       inline def setPkceUndefined: Self = StObject.set(x, "pkce", js.undefined)
       
-      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
@@ -293,17 +304,17 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setSkipUserProfile(value: js.Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
+      inline def setSkipUserProfile(value: Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
       
       inline def setSkipUserProfileUndefined: Self = StObject.set(x, "skipUserProfile", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
@@ -391,7 +402,13 @@ object mod {
   ]
   
   type VerifyFunctionWithRequest = js.Function5[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* profile */ TwitchProfile, 
@@ -400,10 +417,16 @@ object mod {
   ]
   
   type VerifyFunctionWithRequestResults = js.Function6[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
-    /* results */ js.Any, 
+    /* results */ Any, 
     /* profile */ TwitchProfile, 
     /* verified */ VerifyCallback, 
     Unit
@@ -412,7 +435,7 @@ object mod {
   type VerifyFunctionWithResults = js.Function5[
     /* accessToken */ String, 
     /* refreshToken */ String, 
-    /* results */ js.Any, 
+    /* results */ Any, 
     /* profile */ TwitchProfile, 
     /* verified */ VerifyCallback, 
     Unit

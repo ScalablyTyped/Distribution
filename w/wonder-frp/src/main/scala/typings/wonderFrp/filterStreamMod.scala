@@ -12,40 +12,40 @@ object filterStreamMod {
   
   @JSImport("wonder-frp/dist/commonjs/stream/FilterStream", "FilterStream")
   @js.native
-  class FilterStream protected () extends BaseStream {
+  open class FilterStream protected () extends BaseStream {
     def this(
       source: Stream,
       predicate: js.Function3[
-            /* value */ js.Any, 
+            /* value */ Any, 
             /* index */ js.UndefOr[Double], 
             /* source */ js.UndefOr[Stream], 
             Boolean
           ],
-      thisArg: js.Any
+      thisArg: Any
     ) = this()
     
-    /* private */ def _innerPredicate(predicate: js.Any, self: js.Any): js.Any = js.native
+    /* private */ def _innerPredicate(predicate: Any, self: Any): Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /* protected */ def createObserver(observer: IObserver): Observer = js.native
     
-    /* protected */ def createStreamForInternalFilter(source: Stream, innerPredicate: js.Any, thisArg: js.Any): Stream = js.native
+    /* protected */ def createStreamForInternalFilter(source: Stream, innerPredicate: Any, thisArg: Any): Stream = js.native
     
     def internalFilter(
       predicate: js.Function3[
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* index */ js.UndefOr[Double], 
           /* source */ js.UndefOr[Stream], 
           Boolean
         ],
-      thisArg: js.Any
+      thisArg: Any
     ): Stream = js.native
     
-    def predicate(value: js.Any): Boolean = js.native
-    def predicate(value: js.Any, index: Double): Boolean = js.native
-    def predicate(value: js.Any, index: Double, source: Stream): Boolean = js.native
-    def predicate(value: js.Any, index: Unit, source: Stream): Boolean = js.native
+    def predicate(value: Any): Boolean = js.native
+    def predicate(value: Any, index: Double): Boolean = js.native
+    def predicate(value: Any, index: Double, source: Stream): Boolean = js.native
+    def predicate(value: Any, index: Unit, source: Stream): Boolean = js.native
   }
   /* static members */
   object FilterStream {
@@ -57,12 +57,12 @@ object filterStreamMod {
     inline def create(
       source: Stream,
       predicate: js.Function3[
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* index */ js.UndefOr[Double], 
           /* source */ js.UndefOr[Stream], 
           Boolean
         ],
-      thisArg: js.Any
+      thisArg: Any
     ): FilterStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[FilterStream]
   }
 }

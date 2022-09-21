@@ -74,6 +74,17 @@ trait YAxisScrollbarOptions extends StObject {
   var minWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highstock) Defines the position of the scrollbar. By default, it is
+    * positioned on the opposite of the main axis (right side of the chart).
+    * However, in the case of RTL languages could be set to `false` which
+    * positions the scrollbar on the left.
+    *
+    * Works only for vertical axes. This means yAxis in a non-inverted chart
+    * and xAxis in the inverted.
+    */
+  var opposite: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highstock) The color of the small rifles in the middle of the scrollbar.
     */
   var rifleColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
@@ -176,6 +187,10 @@ object YAxisScrollbarOptions {
     inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setOpposite(value: Boolean): Self = StObject.set(x, "opposite", value.asInstanceOf[js.Any])
+    
+    inline def setOppositeUndefined: Self = StObject.set(x, "opposite", js.undefined)
     
     inline def setRifleColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "rifleColor", value.asInstanceOf[js.Any])
     

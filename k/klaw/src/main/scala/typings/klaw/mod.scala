@@ -8,7 +8,8 @@ import typings.klaw.klawStrings.readable
 import typings.node.fsMod.Stats
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
-import typings.std.Error
+import typings.std.AsyncIterable
+import typings.std.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,7 +80,7 @@ object mod {
     // fs or mock-fs
     var filter: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.undefined
     
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     var pathSorter: js.UndefOr[js.Function2[/* pathA */ String, /* pathB */ String, Double]] = js.undefined
     
@@ -104,7 +105,7 @@ object mod {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
@@ -135,7 +136,11 @@ object mod {
   }
   
   @js.native
-  trait Walker extends Readable {
+  trait Walker
+    extends Readable
+       with AsyncIterable[Item] {
+    
+    def apply(): AsyncIterableIterator[Item] = js.native
     
     def on(event: Event, listener: js.Function): this.type = js.native
     @JSName("on")
@@ -145,7 +150,7 @@ object mod {
     @JSName("on")
     def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   }

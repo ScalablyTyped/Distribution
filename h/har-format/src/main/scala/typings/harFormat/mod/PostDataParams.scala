@@ -27,6 +27,6 @@ object PostDataParams {
     
     inline def setParams(value: js.Array[Param]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: Param*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Param*): Self = StObject.set(x, "params", js.Array(value*))
   }
 }

@@ -1,7 +1,6 @@
 package typings.katex
 
 import typings.katex.mod.KatexOptions
-import typings.std.Error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,15 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object autoRenderMod {
   
-  @JSImport("katex/dist/contrib/auto-render", JSImport.Namespace)
+  @JSImport("katex/contrib/auto-render", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Auto-render TeX expressions in HTML element
-    * @param elem HTML element to auto-render
-    * @param options Render options
-    */
   inline def default(elem: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def default(elem: HTMLElement, options: RenderMathInElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -53,7 +47,7 @@ object autoRenderMod {
       *
       * @default console.error
       */
-    var errorCallback: js.UndefOr[js.Function2[/* msg */ String, /* err */ Error, Unit]] = js.undefined
+    var errorCallback: js.UndefOr[js.Function2[/* msg */ String, /* err */ js.Error, Unit]] = js.undefined
     
     /**
       * A list of DOM node class names to ignore when recursing through
@@ -69,7 +63,7 @@ object autoRenderMod {
       */
     var ignoredTags: js.UndefOr[
         js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any
         ]
       ] = js.undefined
   }
@@ -86,9 +80,9 @@ object autoRenderMod {
       
       inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      inline def setDelimitersVarargs(value: RenderMathInElementSpecificOptionsDelimiters*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: RenderMathInElementSpecificOptionsDelimiters*): Self = StObject.set(x, "delimiters", js.Array(value*))
       
-      inline def setErrorCallback(value: (/* msg */ String, /* err */ Error) => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction2(value))
+      inline def setErrorCallback(value: (/* msg */ String, /* err */ js.Error) => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction2(value))
       
       inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
       
@@ -96,19 +90,17 @@ object autoRenderMod {
       
       inline def setIgnoredClassesUndefined: Self = StObject.set(x, "ignoredClasses", js.undefined)
       
-      inline def setIgnoredClassesVarargs(value: String*): Self = StObject.set(x, "ignoredClasses", js.Array(value :_*))
+      inline def setIgnoredClassesVarargs(value: String*): Self = StObject.set(x, "ignoredClasses", js.Array(value*))
       
       inline def setIgnoredTags(
         value: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any
             ]
       ): Self = StObject.set(x, "ignoredTags", value.asInstanceOf[js.Any])
       
       inline def setIgnoredTagsUndefined: Self = StObject.set(x, "ignoredTags", js.undefined)
       
-      inline def setIgnoredTagsVarargs(
-        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any)*
-      ): Self = StObject.set(x, "ignoredTags", js.Array(value :_*))
+      inline def setIgnoredTagsVarargs(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any)*): Self = StObject.set(x, "ignoredTags", js.Array(value*))
     }
   }
   

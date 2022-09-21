@@ -147,7 +147,7 @@ object configMod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setSrcVarargs(value: (String | IPlayableSource)*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: (String | IPlayableSource)*): Self = StObject.set(x, "src", js.Array(value*))
       
       inline def setTexts(value: ITextMapConfig): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
       

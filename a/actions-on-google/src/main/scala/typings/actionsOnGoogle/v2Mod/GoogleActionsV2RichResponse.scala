@@ -50,7 +50,7 @@ object GoogleActionsV2RichResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: GoogleActionsV2RichResponseItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GoogleActionsV2RichResponseItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLinkOutSuggestion(value: GoogleActionsV2UiElementsLinkOutSuggestion): Self = StObject.set(x, "linkOutSuggestion", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object GoogleActionsV2RichResponse {
     
     inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    inline def setSuggestionsVarargs(value: GoogleActionsV2UiElementsSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: GoogleActionsV2UiElementsSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value*))
   }
 }

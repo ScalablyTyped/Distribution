@@ -73,20 +73,20 @@ object anon {
     extends StObject
        with ConnectionStatus {
     
-    var error: typings.std.Error
+    var error: js.Error
     
     var kind: ERROR
   }
   object Error {
     
-    inline def apply(error: typings.std.Error): Error = {
+    inline def apply(error: js.Error): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], kind = "ERROR")
       __obj.asInstanceOf[Error]
     }
     
     extension [Self <: Error](x: Self) {
       
-      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setKind(value: ERROR): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }

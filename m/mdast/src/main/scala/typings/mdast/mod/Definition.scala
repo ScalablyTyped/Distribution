@@ -1,6 +1,7 @@
 package typings.mdast.mod
 
 import typings.mdast.mdastStrings.definition
+import typings.unist.mod.Data
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,10 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Definition
   extends StObject
-     with Node
+     with Node[Data]
      with Association
-     with Resource
-     with DefinitionContent {
+     with Resource {
   
   @JSName("type")
   var type_Definition: definition

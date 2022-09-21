@@ -1,7 +1,7 @@
 
 # Scala.js typings for htmlbars-inline-precompile
 
-Typings are for version 1.0
+Typings are for version 3.0
 
 
 

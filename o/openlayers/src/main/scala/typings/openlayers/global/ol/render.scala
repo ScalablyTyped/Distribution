@@ -27,7 +27,7 @@ object render {
     */
   @JSGlobal("ol.render.Event")
   @js.native
-  class Event protected ()
+  open class Event protected ()
     extends typings.openlayers.mod.render.Event {
     /**
       * @param type Type.
@@ -73,56 +73,56 @@ object render {
       opt_vectorContext: Unit,
       opt_frameState: Unit,
       opt_context: Unit,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: Unit,
       opt_frameState: Unit,
       opt_context: CanvasRenderingContext2D,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: Unit,
       opt_frameState: FrameState,
       opt_context: Unit,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: Unit,
       opt_frameState: FrameState,
       opt_context: CanvasRenderingContext2D,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: typings.openlayers.mod.render.VectorContext,
       opt_frameState: Unit,
       opt_context: Unit,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: typings.openlayers.mod.render.VectorContext,
       opt_frameState: Unit,
       opt_context: CanvasRenderingContext2D,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: typings.openlayers.mod.render.VectorContext,
       opt_frameState: FrameState,
       opt_context: Unit,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: typings.openlayers.mod.render.VectorContext,
       opt_frameState: FrameState,
       opt_context: CanvasRenderingContext2D,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
   }
   
@@ -139,7 +139,7 @@ object render {
     */
   @JSGlobal("ol.render.Feature")
   @js.native
-  class Feature protected ()
+  open class Feature protected ()
     extends typings.openlayers.mod.render.Feature {
     /**
       * Lightweight, read-only, {@link ol.Feature} and {@link ol.geom.Geometry} like
@@ -156,7 +156,7 @@ object render {
       `type`: GeometryType,
       flatCoordinates: js.Array[Double],
       ends: js.Array[js.Array[Double] | Double],
-      properties: StringDictionary[js.Any]
+      properties: StringDictionary[Any]
     ) = this()
   }
   
@@ -175,7 +175,7 @@ object render {
     * @struct
     * @api
     */
-  class VectorContext ()
+  open class VectorContext ()
     extends typings.openlayers.mod.render.VectorContext
   
   object canvas {
@@ -198,7 +198,7 @@ object render {
       */
     @JSGlobal("ol.render.canvas.Immediate")
     @js.native
-    class Immediate protected ()
+    open class Immediate protected ()
       extends typings.openlayers.mod.render.canvas.Immediate {
       /**
         * @classdesc
@@ -220,7 +220,7 @@ object render {
         context: CanvasRenderingContext2D,
         pixelRatio: Double,
         extent: Extent_,
-        transform: js.Any,
+        transform: Any,
         viewRotation: Double
       ) = this()
     }

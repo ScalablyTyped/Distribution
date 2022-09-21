@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "Polygon")
 @js.native
-class Polygon () extends Shape {
+open class Polygon () extends Shape {
   def this(options: PolygonOptions) = this()
   
   def copy(options: PolygonOptions): Polygon = js.native

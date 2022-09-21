@@ -11,9 +11,9 @@ http proxy middleware for express
 | Full name          | express-http-proxy |
 | Keywords           | express-http-proxy |
 | # releases         | 4 |
-| # dependents       | 343 |
-| # downloads        | 7931090 |
-| # stars            | 40 |
+| # dependents       | 0.0 |
+| # downloads        | 1169554.3333333333 |
+| # stars            | 1091.0 |
 
 ## Links
 - [Homepage](https://github.com/villadora/express-http-proxy#readme)

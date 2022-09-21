@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab/dist/types/core/services", "GroupLabels")
 @js.native
-class GroupLabels protected ()
+open class GroupLabels protected ()
   extends typings.gitlab.groupLabelsMod.GroupLabels {
   def this(options: BaseServiceOptions) = this()
 }

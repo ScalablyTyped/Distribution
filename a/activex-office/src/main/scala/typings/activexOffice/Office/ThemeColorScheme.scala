@@ -9,7 +9,7 @@ trait ThemeColorScheme extends StObject {
   
   def apply(Index: MsoThemeColorSchemeIndex): ThemeColor = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def Colors(Index: MsoThemeColorSchemeIndex): ThemeColor = js.native
   
@@ -21,7 +21,7 @@ trait ThemeColorScheme extends StObject {
   
   def Load(FileName: String): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Save(FileName: String): Unit = js.native
 }

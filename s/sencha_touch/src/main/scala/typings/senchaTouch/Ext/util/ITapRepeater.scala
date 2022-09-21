@@ -21,7 +21,7 @@ trait ITapRepeater
   /** [Method] Returns the value of el
     * @returns Object
     */
-  var getEl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getEl: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of interval
     * @returns Number
@@ -31,7 +31,7 @@ trait ITapRepeater
   /** [Method] Returns the value of pressCls
     * @returns Object
     */
-  var getPressCls: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getPressCls: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of preventDefault
     * @returns Boolean
@@ -56,8 +56,8 @@ trait ITapRepeater
   @JSName("relayEvents")
   var relayEvents_ITapRepeater: js.UndefOr[
     js.Function2[
-      /* object */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[js.Any], 
+      /* object */ js.UndefOr[Any], 
+      /* events */ js.UndefOr[Any], 
       typings.senchaTouch.Ext.mixin.IObservable
     ]
   ] = js.undefined
@@ -75,7 +75,7 @@ trait ITapRepeater
   /** [Method] Sets the value of el
     * @param el Object The new value.
     */
-  var setEl: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setEl: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of interval
     * @param interval Number The new value.
@@ -85,7 +85,7 @@ trait ITapRepeater
   /** [Method] Sets the value of pressCls
     * @param pressCls Object The new value.
     */
-  var setPressCls: js.UndefOr[js.Function1[/* pressCls */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setPressCls: js.UndefOr[js.Function1[/* pressCls */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of preventDefault
     * @param preventDefault Boolean The new value.
@@ -119,7 +119,7 @@ object ITapRepeater {
     
     inline def setGetDelayUndefined: Self = StObject.set(x, "getDelay", js.undefined)
     
-    inline def setGetEl(value: () => js.Any): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
+    inline def setGetEl(value: () => Any): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
     
     inline def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
@@ -127,7 +127,7 @@ object ITapRepeater {
     
     inline def setGetIntervalUndefined: Self = StObject.set(x, "getInterval", js.undefined)
     
-    inline def setGetPressCls(value: () => js.Any): Self = StObject.set(x, "getPressCls", js.Any.fromFunction0(value))
+    inline def setGetPressCls(value: () => Any): Self = StObject.set(x, "getPressCls", js.Any.fromFunction0(value))
     
     inline def setGetPressClsUndefined: Self = StObject.set(x, "getPressCls", js.undefined)
     
@@ -144,7 +144,7 @@ object ITapRepeater {
     inline def setGetTimerUndefined: Self = StObject.set(x, "getTimer", js.undefined)
     
     inline def setRelayEvents(
-      value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.mixin.IObservable
+      value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => typings.senchaTouch.Ext.mixin.IObservable
     ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
@@ -157,7 +157,7 @@ object ITapRepeater {
     
     inline def setSetDelayUndefined: Self = StObject.set(x, "setDelay", js.undefined)
     
-    inline def setSetEl(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEl", js.Any.fromFunction1(value))
+    inline def setSetEl(value: /* el */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setEl", js.Any.fromFunction1(value))
     
     inline def setSetElUndefined: Self = StObject.set(x, "setEl", js.undefined)
     
@@ -165,7 +165,7 @@ object ITapRepeater {
     
     inline def setSetIntervalUndefined: Self = StObject.set(x, "setInterval", js.undefined)
     
-    inline def setSetPressCls(value: /* pressCls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPressCls", js.Any.fromFunction1(value))
+    inline def setSetPressCls(value: /* pressCls */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPressCls", js.Any.fromFunction1(value))
     
     inline def setSetPressClsUndefined: Self = StObject.set(x, "setPressCls", js.undefined)
     

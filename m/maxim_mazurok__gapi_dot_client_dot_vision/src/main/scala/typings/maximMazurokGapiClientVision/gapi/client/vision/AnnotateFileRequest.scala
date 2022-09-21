@@ -35,7 +35,7 @@ object AnnotateFileRequest {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setImageContext(value: ImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
     
@@ -49,6 +49,6 @@ object AnnotateFileRequest {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value*))
   }
 }

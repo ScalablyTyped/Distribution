@@ -52,13 +52,13 @@ object Participant {
     
     inline def setMasteries(value: js.Array[Mastery]): Self = StObject.set(x, "masteries", value.asInstanceOf[js.Any])
     
-    inline def setMasteriesVarargs(value: Mastery*): Self = StObject.set(x, "masteries", js.Array(value :_*))
+    inline def setMasteriesVarargs(value: Mastery*): Self = StObject.set(x, "masteries", js.Array(value*))
     
     inline def setParticipantId(value: Double): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
     inline def setRunes(value: js.Array[Rune]): Self = StObject.set(x, "runes", value.asInstanceOf[js.Any])
     
-    inline def setRunesVarargs(value: Rune*): Self = StObject.set(x, "runes", js.Array(value :_*))
+    inline def setRunesVarargs(value: Rune*): Self = StObject.set(x, "runes", js.Array(value*))
     
     inline def setSpell1Id(value: Double): Self = StObject.set(x, "spell1Id", value.asInstanceOf[js.Any])
     

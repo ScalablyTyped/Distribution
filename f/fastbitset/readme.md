@@ -10,15 +10,12 @@ Speed-optimized BitSet implementation for modern browsers and JavaScript engines
 | ------------------ | :-------------: |
 | Full name          | fastbitset |
 | Keywords           | bitmap, bitset, performance |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 4502 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3489.3333333333335 |
+| # stars            | 132.0 |
 
 ## Links
-- [Homepage](https://github.com/lemire/FastBitSet.js#readme)
-- [Bugs](https://github.com/lemire/FastBitSet.js/issues)
-- [Repository](https://github.com/lemire/FastBitSet.js)
 - [Npm](https://www.npmjs.com/package/fastbitset)
     
 

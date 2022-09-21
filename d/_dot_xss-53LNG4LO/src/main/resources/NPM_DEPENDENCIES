@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".xss-53LNG4LO" : "1.0.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".xss-53LNG4LO" : "1.0.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

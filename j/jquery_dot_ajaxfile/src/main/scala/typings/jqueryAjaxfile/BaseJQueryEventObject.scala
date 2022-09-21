@@ -14,7 +14,7 @@ trait BaseJQueryEventObject
   extends StObject
      with Event {
   
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   var delegateTarget: Element = js.native
   
@@ -36,7 +36,7 @@ trait BaseJQueryEventObject
   
   var relatedTarget: Element = js.native
   
-  var result: js.Any = js.native
+  var result: Any = js.native
   
   @JSName("target")
   var target_BaseJQueryEventObject: Element = js.native

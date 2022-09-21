@@ -15,6 +15,11 @@ trait VirtualGatewayListenerTls extends StObject {
     * Specify one of the following modes.    STRICT – Listener only accepts connections with TLS enabled.     PERMISSIVE – Listener accepts connections with or without TLS enabled.    DISABLED – Listener only accepts connections without TLS.   
     */
   var mode: VirtualGatewayListenerTlsMode
+  
+  /**
+    * A reference to an object that represents a virtual gateway's listener's Transport Layer Security (TLS) validation context.
+    */
+  var validation: js.UndefOr[VirtualGatewayListenerTlsValidationContext] = js.undefined
 }
 object VirtualGatewayListenerTls {
   
@@ -28,5 +33,9 @@ object VirtualGatewayListenerTls {
     inline def setCertificate(value: VirtualGatewayListenerTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     inline def setMode(value: VirtualGatewayListenerTlsMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setValidation(value: VirtualGatewayListenerTlsValidationContext): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

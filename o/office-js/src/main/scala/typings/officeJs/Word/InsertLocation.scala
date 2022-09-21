@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait InsertLocation extends StObject
 /**
-  *
   * The insertion location types.
   *
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.1]
+  *
+  * To be used with an API call, such as `obj.insertSomething(newStuff, location);`.
+  * If the location is "Before" or "After", the new content will be outside of the modified object.
+  * If the location is "Start" or "End", the new content will be included as part of the modified object.
   */
 @JSGlobal("Word.InsertLocation")
 @js.native
@@ -18,7 +22,8 @@ object InsertLocation extends StObject {
   
   /**
     * Add content after the contents of the calling object.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait after
@@ -27,7 +32,8 @@ object InsertLocation extends StObject {
   
   /**
     * Add content before the contents of the calling object.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait before
@@ -36,7 +42,8 @@ object InsertLocation extends StObject {
   
   /**
     * Append content to the contents of the calling object.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait end
@@ -45,7 +52,8 @@ object InsertLocation extends StObject {
   
   /**
     * Replace the contents of the current object.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait replace
@@ -54,7 +62,8 @@ object InsertLocation extends StObject {
   
   /**
     * Prepend content to the contents of the calling object.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait start

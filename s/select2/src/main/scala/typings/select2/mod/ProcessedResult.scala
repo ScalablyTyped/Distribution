@@ -26,6 +26,6 @@ object ProcessedResult {
     
     inline def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

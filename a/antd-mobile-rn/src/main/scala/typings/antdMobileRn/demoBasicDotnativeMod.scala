@@ -9,9 +9,8 @@ object demoBasicDotnativeMod {
   
   @JSImport("antd-mobile-rn/lib/badge/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends BasicTagExample
+  open class default () extends BasicTagExample
   
   @js.native
-  trait BasicTagExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicTagExample extends Component[Any, Any, Any]
 }

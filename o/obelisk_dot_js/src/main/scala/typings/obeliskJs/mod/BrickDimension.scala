@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "BrickDimension")
 @js.native
-class BrickDimension () extends AbstractDimension {
+open class BrickDimension () extends AbstractDimension {
   def this(xAxis: Double) = this()
   def this(xAxis: Double, yAxis: Double) = this()
   def this(xAxis: Unit, yAxis: Double) = this()

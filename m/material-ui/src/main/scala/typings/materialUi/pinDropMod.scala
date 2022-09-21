@@ -10,10 +10,10 @@ object pinDropMod {
   
   @JSImport("material-ui/svg-icons/maps/pin-drop", JSImport.Default)
   @js.native
-  class default () extends MapsPinDrop
+  open class default () extends MapsPinDrop
   
   @JSImport("material-ui/svg-icons/maps/pin-drop", "MapsPinDrop")
   @js.native
-  class MapsPinDrop ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsPinDrop ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

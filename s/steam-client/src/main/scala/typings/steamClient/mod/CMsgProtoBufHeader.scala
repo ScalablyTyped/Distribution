@@ -81,7 +81,7 @@ object CMsgProtoBufHeader {
     
     inline def setForward_to_sysidUndefined: Self = StObject.set(x, "forward_to_sysid", js.undefined)
     
-    inline def setForward_to_sysidVarargs(value: Double*): Self = StObject.set(x, "forward_to_sysid", js.Array(value :_*))
+    inline def setForward_to_sysidVarargs(value: Double*): Self = StObject.set(x, "forward_to_sysid", js.Array(value*))
     
     inline def setIp(value: Double): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     

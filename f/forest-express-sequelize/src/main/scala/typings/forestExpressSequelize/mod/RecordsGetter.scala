@@ -1,18 +1,25 @@
 package typings.forestExpressSequelize.mod
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forest-express-sequelize", "RecordsGetter")
 @js.native
-class RecordsGetter protected () extends AbstractRecordTool {
+open class RecordsGetter protected () extends AbstractRecordTool {
   def this(model: js.Object) = this()
   
   def getAll(params: Params): js.Promise[js.Array[js.Object]] = js.native
   
-  def getIdsFromRequest(request: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Promise[js.Array[String]] = js.native
+  def getIdsFromRequest(
+    request: Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ): js.Promise[js.Array[String]] = js.native
 }

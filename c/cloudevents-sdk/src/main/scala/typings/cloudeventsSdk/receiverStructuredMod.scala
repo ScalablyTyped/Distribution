@@ -22,7 +22,7 @@ object receiverStructuredMod {
     *
     * @param {string} version the Cloud Events specification version. Default: 1.0.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with StructuredHTTPReceiver {
     def this(version: String) = this()

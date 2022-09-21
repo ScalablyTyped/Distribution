@@ -11,14 +11,11 @@ Generate one or more common English words
 | Full name          | random-words |
 | Keywords           | random, words, words, word, generator, sample, text |
 | # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 1148658 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 152735.33333333334 |
+| # stars            | 184.0 |
 
 ## Links
-- [Homepage](https://github.com/punkave/random-words#readme)
-- [Bugs](https://github.com/punkave/random-words/issues)
-- [Repository](https://github.com/punkave/random-words)
 - [Npm](https://www.npmjs.com/package/random-words)
     
 

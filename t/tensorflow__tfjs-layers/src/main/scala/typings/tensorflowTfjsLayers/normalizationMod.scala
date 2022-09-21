@@ -22,42 +22,42 @@ object normalizationMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "BatchNormalization")
   @js.native
-  class BatchNormalization_ () extends Layer {
+  open class BatchNormalization_ () extends Layer {
     def this(args: BatchNormalizationLayerArgs) = this()
     
-    /* private */ val axis: js.Any = js.native
+    /* private */ val axis: Any = js.native
     
-    /* private */ var beta: js.Any = js.native
+    /* private */ var beta: Any = js.native
     
-    /* private */ val betaConstraint: js.Any = js.native
+    /* private */ val betaConstraint: Any = js.native
     
-    /* private */ val betaInitializer: js.Any = js.native
+    /* private */ val betaInitializer: Any = js.native
     
-    /* private */ val betaRegularizer: js.Any = js.native
+    /* private */ val betaRegularizer: Any = js.native
     
-    /* private */ val center: js.Any = js.native
+    /* private */ val center: Any = js.native
     
-    /* private */ val epsilon: js.Any = js.native
+    /* private */ val epsilon: Any = js.native
     
-    /* private */ var gamma: js.Any = js.native
+    /* private */ var gamma: Any = js.native
     
-    /* private */ val gammaConstraint: js.Any = js.native
+    /* private */ val gammaConstraint: Any = js.native
     
-    /* private */ val gammaInitializer: js.Any = js.native
+    /* private */ val gammaInitializer: Any = js.native
     
-    /* private */ val gammaRegularizer: js.Any = js.native
+    /* private */ val gammaRegularizer: Any = js.native
     
-    /* private */ val momentum: js.Any = js.native
+    /* private */ val momentum: Any = js.native
     
-    /* private */ var movingMean: js.Any = js.native
+    /* private */ var movingMean: Any = js.native
     
-    /* private */ val movingMeanInitializer: js.Any = js.native
+    /* private */ val movingMeanInitializer: Any = js.native
     
-    /* private */ var movingVariance: js.Any = js.native
+    /* private */ var movingVariance: Any = js.native
     
-    /* private */ val movingVarianceInitializer: js.Any = js.native
+    /* private */ val movingVarianceInitializer: Any = js.native
     
-    /* private */ val scale: js.Any = js.native
+    /* private */ val scale: Any = js.native
   }
   /* static members */
   object BatchNormalization_ {
@@ -75,12 +75,12 @@ object normalizationMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "LayerNormalization")
   @js.native
-  class LayerNormalization () extends Layer {
+  open class LayerNormalization () extends Layer {
     def this(args: LayerNormalizationLayerArgs) = this()
     
-    /* private */ var axis: js.Any = js.native
+    /* private */ var axis: Any = js.native
     
-    /* private */ var beta: js.Any = js.native
+    /* private */ var beta: Any = js.native
     
     val betaInitializer: Initializer = js.native
     
@@ -90,7 +90,7 @@ object normalizationMod {
     
     val epsilon: Double = js.native
     
-    /* private */ var gamma: js.Any = js.native
+    /* private */ var gamma: Any = js.native
     
     val gammaInitializer: Initializer = js.native
     
@@ -374,7 +374,7 @@ object normalizationMod {
       
       inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      inline def setAxisVarargs(value: Double*): Self = StObject.set(x, "axis", js.Array(value :_*))
+      inline def setAxisVarargs(value: Double*): Self = StObject.set(x, "axis", js.Array(value*))
       
       inline def setBetaInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "betaInitializer", value.asInstanceOf[js.Any])
       

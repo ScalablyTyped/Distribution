@@ -29,6 +29,6 @@ object ListPhotosResponse {
     
     inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
     
-    inline def setPhotosVarargs(value: Photo*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: Photo*): Self = StObject.set(x, "photos", js.Array(value*))
   }
 }

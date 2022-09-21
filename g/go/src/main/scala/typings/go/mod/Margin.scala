@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * If zero arguments are supplied, zero is used for all four sides.
   */
-class Margin () extends StObject {
+open class Margin () extends StObject {
   /**
     * If one argument is supplied, that number is used for all four sides.
     * @param {number} m the margin for all four sides.

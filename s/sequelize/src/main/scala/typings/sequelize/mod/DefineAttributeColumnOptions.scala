@@ -28,7 +28,7 @@ trait DefineAttributeColumnOptions
     * Provide a custom getter for this column. Use `this.getDataValue(String)` to manipulate the underlying
     * values.
     */
-  var get: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var get: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /**
     * What should happen when the referenced key is deleted. One of CASCADE, RESTRICT, SET DEFAULT, SET NULL or
@@ -56,7 +56,7 @@ trait DefineAttributeColumnOptions
     * Provide a custom setter for this column. Use `this.setDataValue(String, Value)` to manipulate the
     * underlying values.
     */
-  var set: js.UndefOr[js.Function1[/* val */ js.Any, Unit]] = js.undefined
+  var set: js.UndefOr[js.Function1[/* val */ Any, Unit]] = js.undefined
   
   /**
     * A string or a data type
@@ -113,7 +113,7 @@ object DefineAttributeColumnOptions {
     
     inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
@@ -133,7 +133,7 @@ object DefineAttributeColumnOptions {
     
     inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
     
-    inline def setSet(value: /* val */ js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: /* val */ Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
@@ -151,6 +151,6 @@ object DefineAttributeColumnOptions {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

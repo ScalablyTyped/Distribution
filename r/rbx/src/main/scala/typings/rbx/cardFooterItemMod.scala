@@ -54,7 +54,7 @@ object cardFooterItemMod {
   
   @JSImport("rbx/components/card/card-footer-item", "CardFooterItem")
   @js.native
-  val CardFooterItem: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val CardFooterItem: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait CardFooterItemProps extends StObject {

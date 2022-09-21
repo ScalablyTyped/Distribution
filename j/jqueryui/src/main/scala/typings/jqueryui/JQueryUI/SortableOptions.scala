@@ -11,25 +11,25 @@ trait SortableOptions
   extends StObject
      with SortableEvents {
   
-  var appendTo: js.UndefOr[js.Any] = js.undefined
+  var appendTo: js.UndefOr[Any] = js.undefined
   
   // jQuery, Element, Selector or string
   var attribute: js.UndefOr[String] = js.undefined
   
   var axis: js.UndefOr[String] = js.undefined
   
-  var cancel: js.UndefOr[js.Any] = js.undefined
+  var cancel: js.UndefOr[Any] = js.undefined
   
   // Selector
-  var connectWith: js.UndefOr[js.Any] = js.undefined
+  var connectWith: js.UndefOr[Any] = js.undefined
   
   // Selector
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var containment: js.UndefOr[Any] = js.undefined
   
   // Element, Selector or string
   var cursor: js.UndefOr[String] = js.undefined
   
-  var cursorAt: js.UndefOr[js.Any] = js.undefined
+  var cursorAt: js.UndefOr[Any] = js.undefined
   
   var delay: js.UndefOr[Double] = js.undefined
   
@@ -45,21 +45,21 @@ trait SortableOptions
   
   var grid: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var handle: js.UndefOr[js.Any] = js.undefined
+  var handle: js.UndefOr[Any] = js.undefined
   
   var helper: js.UndefOr[
     String | (js.Function2[/* event */ JQueryEventObject, /* element */ Sortable, Element])
   ] = js.undefined
   
   // Selector or Element
-  var items: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[Any] = js.undefined
   
   // Selector
   var opacity: js.UndefOr[Double] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
-  var revert: js.UndefOr[js.Any] = js.undefined
+  var revert: js.UndefOr[Any] = js.undefined
   
   // boolean or number
   var scroll: js.UndefOr[Boolean] = js.undefined
@@ -81,7 +81,7 @@ object SortableOptions {
   
   extension [Self <: SortableOptions](x: Self) {
     
-    inline def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
     inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
@@ -93,21 +93,21 @@ object SortableOptions {
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    inline def setCancel(value: js.Any): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Any): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    inline def setConnectWith(value: js.Any): Self = StObject.set(x, "connectWith", value.asInstanceOf[js.Any])
+    inline def setConnectWith(value: Any): Self = StObject.set(x, "connectWith", value.asInstanceOf[js.Any])
     
     inline def setConnectWithUndefined: Self = StObject.set(x, "connectWith", js.undefined)
     
-    inline def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    inline def setCursorAt(value: js.Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
+    inline def setCursorAt(value: Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
     
     inline def setCursorAtUndefined: Self = StObject.set(x, "cursorAt", js.undefined)
     
@@ -141,9 +141,9 @@ object SortableOptions {
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value :_*))
+    inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value*))
     
-    inline def setHandle(value: js.Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
@@ -153,7 +153,7 @@ object SortableOptions {
     
     inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
@@ -165,7 +165,7 @@ object SortableOptions {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setRevert(value: js.Any): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+    inline def setRevert(value: Any): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
     
     inline def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
     

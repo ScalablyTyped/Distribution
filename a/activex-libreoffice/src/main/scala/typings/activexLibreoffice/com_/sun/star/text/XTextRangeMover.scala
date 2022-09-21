@@ -24,7 +24,7 @@ object XTextRangeMover {
   inline def apply(
     acquire: () => Unit,
     moveTextRange: (XTextRange, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextRangeMover = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), moveTextRange = js.Any.fromFunction2(moveTextRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

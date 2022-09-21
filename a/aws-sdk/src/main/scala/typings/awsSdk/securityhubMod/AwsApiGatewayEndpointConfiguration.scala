@@ -24,6 +24,6 @@ object AwsApiGatewayEndpointConfiguration {
     
     inline def setTypesUndefined: Self = StObject.set(x, "Types", js.undefined)
     
-    inline def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value :_*))
+    inline def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value*))
   }
 }

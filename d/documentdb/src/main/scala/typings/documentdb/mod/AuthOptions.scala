@@ -33,7 +33,7 @@ object AuthOptions {
     
     inline def setPermissionFeedUndefined: Self = StObject.set(x, "permissionFeed", js.undefined)
     
-    inline def setPermissionFeedVarargs(value: Permission*): Self = StObject.set(x, "permissionFeed", js.Array(value :_*))
+    inline def setPermissionFeedVarargs(value: Permission*): Self = StObject.set(x, "permissionFeed", js.Array(value*))
     
     inline def setResourceTokens(value: StringDictionary[String]): Self = StObject.set(x, "resourceTokens", value.asInstanceOf[js.Any])
     

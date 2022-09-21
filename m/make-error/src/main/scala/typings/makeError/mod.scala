@@ -14,12 +14,12 @@ object mod {
   /**
     * Set the constructor prototype to `BaseError`.
     */
-  inline def apply[T /* <: Error */](super_ : Instantiable[T]): Constructor[T & BaseError] = ^.asInstanceOf[js.Dynamic].apply(super_.asInstanceOf[js.Any]).asInstanceOf[Constructor[T & BaseError]]
+  inline def apply[T /* <: js.Error */](super_ : Instantiable[T]): Constructor[T & BaseError] = ^.asInstanceOf[js.Dynamic].apply(super_.asInstanceOf[js.Any]).asInstanceOf[Constructor[T & BaseError]]
   /**
     * Create a specialized error instance.
     */
-  inline def apply[T /* <: Error */, K](name: String, super_ : K): K & SpecializedConstructor[T] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], super_.asInstanceOf[js.Any])).asInstanceOf[K & SpecializedConstructor[T]]
-  inline def apply[T /* <: Error */, K](name: js.Function, super_ : K): K & SpecializedConstructor[T] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], super_.asInstanceOf[js.Any])).asInstanceOf[K & SpecializedConstructor[T]]
+  inline def apply[T /* <: js.Error */, K](name: String, super_ : K): K & SpecializedConstructor[T] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], super_.asInstanceOf[js.Any])).asInstanceOf[K & SpecializedConstructor[T]]
+  inline def apply[T /* <: js.Error */, K](name: js.Function, super_ : K): K & SpecializedConstructor[T] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], super_.asInstanceOf[js.Any])).asInstanceOf[K & SpecializedConstructor[T]]
   
   @JSImport("make-error", JSImport.Namespace)
   @js.native
@@ -27,14 +27,16 @@ object mod {
   
   @JSImport("make-error", "BaseError")
   @js.native
-  class BaseError ()
+  open class BaseError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -48,23 +50,23 @@ object mod {
        with Instantiable0[T]
        with Instantiable1[/* message */ String, T] {
     
-    var super_ : js.Any = js.native
+    var super_ : Any = js.native
   }
   
   trait SpecializedConstructor[T] extends StObject {
     
-    var super_ : js.Any
+    var super_ : Any
   }
   object SpecializedConstructor {
     
-    inline def apply[T](super_ : js.Any): SpecializedConstructor[T] = {
+    inline def apply[T](super_ : Any): SpecializedConstructor[T] = {
       val __obj = js.Dynamic.literal(super_ = super_.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpecializedConstructor[T]]
     }
     
     extension [Self <: SpecializedConstructor[?], T](x: Self & SpecializedConstructor[T]) {
       
-      inline def setSuper_(value: js.Any): Self = StObject.set(x, "super_", value.asInstanceOf[js.Any])
+      inline def setSuper_(value: Any): Self = StObject.set(x, "super_", value.asInstanceOf[js.Any])
     }
   }
 }

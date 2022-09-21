@@ -1,29 +1,28 @@
 package typings.angularRouter.mod
 
 import typings.angularCore.mod.Type
-import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "ActivatedRoute")
 @js.native
-class ActivatedRoute () extends StObject {
+open class ActivatedRoute () extends StObject {
   
   /** The children of this route in the router state tree. */
   def children: js.Array[ActivatedRoute] = js.native
   
   /** The component of the route, a constant. */
-  var component: Type[js.Any] | String | Null = js.native
+  var component: Type[Any] | Null = js.native
   
   /** An observable of the static and resolved data of this route. */
-  var data: Observable_[Data] = js.native
+  var data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Data> */ Any = js.native
   
   /** The first child of this route in the router state tree. */
   def firstChild: ActivatedRoute | Null = js.native
   
   /** An observable of the URL fragment shared by all the routes. */
-  var fragment: Observable_[String] = js.native
+  var fragment: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<string | null> */ Any = js.native
   
   /** The outlet name of the route, a constant. */
   var outlet: String = js.native
@@ -33,10 +32,10 @@ class ActivatedRoute () extends StObject {
     * specific to the route.
     * The map supports retrieving single and multiple values from the same parameter.
     */
-  def paramMap: Observable_[ParamMap] = js.native
+  def paramMap: Any = js.native
   
   /** An observable of the matrix parameters scoped to this route. */
-  var params: Observable_[Params] = js.native
+  var params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Params> */ Any = js.native
   
   /** The parent of this route in the router state tree. */
   def parent: ActivatedRoute | Null = js.native
@@ -48,10 +47,10 @@ class ActivatedRoute () extends StObject {
     * An Observable that contains a map of the query parameters available to all routes.
     * The map supports retrieving single and multiple values from the query parameter.
     */
-  def queryParamMap: Observable_[ParamMap] = js.native
+  def queryParamMap: Any = js.native
   
   /** An observable of the query parameters shared by all the routes. */
-  var queryParams: Observable_[Params] = js.native
+  var queryParams: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Params> */ Any = js.native
   
   /** The root of the router state. */
   def root: ActivatedRoute = js.native
@@ -62,6 +61,9 @@ class ActivatedRoute () extends StObject {
   /** The current snapshot of this route */
   var snapshot: ActivatedRouteSnapshot = js.native
   
+  /** An Observable of the resolved route title */
+  val title: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<string | undefined> */ Any = js.native
+  
   /** An observable of the URL segments matched by this route. */
-  var url: Observable_[js.Array[UrlSegment]] = js.native
+  var url: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Array<UrlSegment>> */ Any = js.native
 }

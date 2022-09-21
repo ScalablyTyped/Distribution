@@ -11,9 +11,9 @@ node style hmacs in the browser
 | Full name          | create-hmac |
 | Keywords           | crypto, hmac |
 | # releases         | 1 |
-| # dependents       | 439 |
-| # downloads        | 407741152 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5.0115029333333336E7 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-browserify/createHmac)

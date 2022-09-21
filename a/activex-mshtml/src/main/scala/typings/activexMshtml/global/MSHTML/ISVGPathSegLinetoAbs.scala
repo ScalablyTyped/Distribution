@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ISVGPathSegLinetoAbs")
 @js.native
-/* private */ class ISVGPathSegLinetoAbs ()
+/* private */ open class ISVGPathSegLinetoAbs ()
   extends StObject
      with typings.activexMshtml.MSHTML.ISVGPathSegLinetoAbs {
   

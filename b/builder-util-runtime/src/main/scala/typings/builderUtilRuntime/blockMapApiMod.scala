@@ -25,7 +25,7 @@ object blockMapApiMod {
       
       inline def setFiles(value: js.Array[BlockMapFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: BlockMapFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: BlockMapFile*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setVersion(value: `1` | `2`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -71,11 +71,11 @@ object blockMapApiMod {
       
       inline def setChecksums(value: js.Array[String]): Self = StObject.set(x, "checksums", value.asInstanceOf[js.Any])
       
-      inline def setChecksumsVarargs(value: String*): Self = StObject.set(x, "checksums", js.Array(value :_*))
+      inline def setChecksumsVarargs(value: String*): Self = StObject.set(x, "checksums", js.Array(value*))
       
       inline def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value*))
     }
   }
 }

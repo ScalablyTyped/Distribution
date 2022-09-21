@@ -57,7 +57,7 @@ object XOutParameters {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerNumericOutParameter: (Double, Double, Double) => Unit,
     registerOutParameter: (Double, Double, String) => Unit,
     release: () => Unit

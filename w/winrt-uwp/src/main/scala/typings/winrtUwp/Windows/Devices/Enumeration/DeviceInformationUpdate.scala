@@ -15,11 +15,11 @@ trait DeviceInformationUpdate extends StObject {
   var kind: DeviceInformationKind
   
   /** The changed properties in a update to a DeviceInformation object. */
-  var properties: IMapView[String, js.Any]
+  var properties: IMapView[String, Any]
 }
 object DeviceInformationUpdate {
   
-  inline def apply(id: String, kind: DeviceInformationKind, properties: IMapView[String, js.Any]): DeviceInformationUpdate = {
+  inline def apply(id: String, kind: DeviceInformationKind, properties: IMapView[String, Any]): DeviceInformationUpdate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceInformationUpdate]
   }
@@ -30,6 +30,6 @@ object DeviceInformationUpdate {
     
     inline def setKind(value: DeviceInformationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

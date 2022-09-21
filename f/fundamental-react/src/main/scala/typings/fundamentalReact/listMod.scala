@@ -1,5 +1,6 @@
 package typings.fundamentalReact
 
+import typings.fundamentalReact.anon.FunctionComponentListByli
 import typings.fundamentalReact.anon.FunctionComponentListFoot
 import typings.fundamentalReact.anon.FunctionComponentListHead
 import typings.fundamentalReact.anon.FunctionComponentListIcon
@@ -16,8 +17,8 @@ import typings.fundamentalReact.fundamentalReactNumbers.`6`
 import typings.fundamentalReact.fundamentalReactStrings.List
 import typings.fundamentalReact.iconMod.IconGlyph
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.ValidationMap
@@ -31,15 +32,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listMod {
   
-  /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListProps> & {  displayName :'List',   Footer :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListFooterProps> & {  displayName :'List.Footer'},   Header :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListHeaderProps> & {  displayName :'List.Header'},   Selection :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListSelectionProps> & {  displayName :'List.Selection'},   Icon :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListIconProps> & {  displayName :'List.Icon'},   Item :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListItemProps> & {  displayName :'List.Item'},   Text :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListTextProps> & {  displayName :'List.Text'}} */
+  /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListProps> & {  displayName :'List',   Footer :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListFooterProps> & {  displayName :'List.Footer'},   Header :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListHeaderProps> & {  displayName :'List.Header'},   Selection :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListSelectionProps> & {  displayName :'List.Selection'},   Icon :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListIconProps> & {  displayName :'List.Icon'},   Item :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListItemProps> & {  displayName :'List.Item'},   Text :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListTextProps> & {  displayName :'List.Text'},   Byline :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListBylineProps> & {  displayName :'List.Byline'}} */
   object default {
     
-    inline def apply(props: PropsWithChildren[ListProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[ListProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ListProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ListProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/List/List", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("fundamental-react/lib/List/List", "default.Byline")
+    @js.native
+    def Byline: FunctionComponentListByli = js.native
+    inline def Byline_=(x: FunctionComponentListByli): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Byline")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/List/List", "default.Footer")
     @js.native
@@ -73,8 +79,8 @@ object listMod {
     
     @JSImport("fundamental-react/lib/List/List", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/List/List", "default.defaultProps")
     @js.native
@@ -92,7 +98,46 @@ object listMod {
     inline def propTypes_=(x: js.UndefOr[WeakValidationMapListProp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
+  trait ListBylineProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
+    
+    var cssNamespace: js.UndefOr[String] = js.undefined
+    
+    var twoColumns: js.UndefOr[Boolean] = js.undefined
+  }
+  object ListBylineProps {
+    
+    inline def apply(): ListBylineProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBylineProps]
+    }
+    
+    extension [Self <: ListBylineProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setCssNamespace(value: String): Self = StObject.set(x, "cssNamespace", value.asInstanceOf[js.Any])
+      
+      inline def setCssNamespaceUndefined: Self = StObject.set(x, "cssNamespace", js.undefined)
+      
+      inline def setTwoColumns(value: Boolean): Self = StObject.set(x, "twoColumns", value.asInstanceOf[js.Any])
+      
+      inline def setTwoColumnsUndefined: Self = StObject.set(x, "twoColumns", js.undefined)
+    }
+  }
+  
   trait ListFooterProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
   }
@@ -105,6 +150,10 @@ object listMod {
     
     extension [Self <: ListFooterProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -112,6 +161,8 @@ object listMod {
   }
   
   trait ListHeaderProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
   }
@@ -123,6 +174,10 @@ object listMod {
     }
     
     extension [Self <: ListHeaderProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -150,9 +205,11 @@ object listMod {
   
   trait ListItemProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onClick: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var selected: js.UndefOr[Boolean] = js.undefined
   }
@@ -165,11 +222,15 @@ object listMod {
     
     extension [Self <: ListItemProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -188,6 +249,8 @@ object listMod {
     var disableStyles: js.UndefOr[Boolean] = js.undefined
     
     var footer: js.UndefOr[String | Element] = js.undefined
+    
+    var hasByline: js.UndefOr[Boolean] = js.undefined
     
     var header: js.UndefOr[String | Element] = js.undefined
     
@@ -223,6 +286,10 @@ object listMod {
       inline def setFooter(value: String | Element): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
       inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      
+      inline def setHasByline(value: Boolean): Self = StObject.set(x, "hasByline", value.asInstanceOf[js.Any])
+      
+      inline def setHasBylineUndefined: Self = StObject.set(x, "hasByline", js.undefined)
       
       inline def setHeader(value: String | Element): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -301,6 +368,8 @@ object listMod {
   
   trait ListTextProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var noWrap: js.UndefOr[Boolean] = js.undefined
@@ -315,6 +384,10 @@ object listMod {
     }
     
     extension [Self <: ListTextProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

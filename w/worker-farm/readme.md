@@ -10,10 +10,10 @@ Distribute processing tasks to child processes with an über-simple API and bake
 | ------------------ | :-------------: |
 | Full name          | worker-farm |
 | Keywords           | worker, child, processing, farm |
-| # releases         | 2 |
-| # dependents       | 186 |
-| # downloads        | 458577196 |
-| # stars            | 36 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1029870333333336E7 |
+| # stars            | 1705.0 |
 
 ## Links
 - [Homepage](https://github.com/rvagg/node-worker-farm)

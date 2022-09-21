@@ -42,7 +42,7 @@ trait ASPxClientWebChartControl
   /**
     * Gets the main DOM (Document Object Model) element on a Web Page representing this ASPxClientWebChartControl object.
     */
-  def GetMainDOMElement(): js.Any = js.native
+  def GetMainDOMElement(): Any = js.native
   
   /**
     * Returns the printing options of the chart control.

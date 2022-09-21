@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.SimpleTextMarkerTemplate")
 @js.native
-class SimpleTextMarkerTemplate protected ()
+open class SimpleTextMarkerTemplate protected ()
   extends StObject
      with typings.igniteUi.Infragistics.SimpleTextMarkerTemplate {
   def this(requireThis: Boolean) = this()

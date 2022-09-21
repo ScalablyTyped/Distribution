@@ -18,24 +18,24 @@ trait Pane extends StObject {
   
   val Index: Double = js.native
   
-  def LargeScroll(): js.Any = js.native
-  def LargeScroll(Down: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Unit, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Double, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def LargeScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def LargeScroll(): Any = js.native
+  def LargeScroll(Down: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PointsToScreenPixelsX(Points: Double): Double = js.native
   
@@ -48,22 +48,22 @@ trait Pane extends StObject {
   
   var ScrollRow: Double = js.native
   
-  def SmallScroll(): js.Any = js.native
-  def SmallScroll(Down: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Unit, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Double, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): js.Any = js.native
-  def SmallScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): js.Any = js.native
+  def SmallScroll(): Any = js.native
+  def SmallScroll(Down: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
   
   def VisibleRange(Address: String): Range = js.native
   def VisibleRange(RowIndex: Double): Range = js.native

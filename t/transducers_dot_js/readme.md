@@ -10,10 +10,10 @@ A small library for generalized transformation of data. This provides a bunch of
 | ------------------ | :-------------: |
 | Full name          | transducers.js |
 | Keywords           | browser, client, functional, util |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 86852 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4120.333333333333 |
+| # stars            | 1718.0 |
 
 ## Links
 - [Homepage](https://github.com/jlongster/transducers.js)

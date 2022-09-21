@@ -27,7 +27,7 @@ trait ModifyVpnConnectionRequest extends StObject {
   var VpnConnectionId: typings.awsSdk.ec2Mod.VpnConnectionId
   
   /**
-    * The ID of the virtual private gateway at the AWS side of the VPN connection.
+    * The ID of the virtual private gateway at the Amazon Web Services side of the VPN connection.
     */
   var VpnGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.VpnGatewayId] = js.undefined
 }

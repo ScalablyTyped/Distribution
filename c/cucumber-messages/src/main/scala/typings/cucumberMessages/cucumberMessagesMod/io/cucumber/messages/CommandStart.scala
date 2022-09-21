@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CommandStart.
   * @param [properties] Properties to set
   */
-class CommandStart ()
+open class CommandStart ()
   extends StObject
      with ICommandStart {
   def this(properties: ICommandStart) = this()
@@ -29,7 +28,7 @@ class CommandStart ()
     * Converts this CommandStart to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object CommandStart {
   
@@ -46,6 +45,8 @@ object CommandStart {
   inline def create(): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandStart]
   inline def create(properties: ICommandStart): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandStart]
   
+  inline def decode(reader: js.typedarray.Uint8Array): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandStart]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): CommandStart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandStart]
   /**
     * Decodes a CommandStart message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object CommandStart {
   /* static member */
   inline def decode(reader: Reader): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandStart]
   inline def decode(reader: Reader, length: Double): CommandStart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandStart]
-  inline def decode(reader: Uint8Array): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandStart]
-  inline def decode(reader: Uint8Array, length: Double): CommandStart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandStart]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandStart]
   /**
     * Decodes a CommandStart message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object CommandStart {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandStart]
-  inline def decodeDelimited(reader: Uint8Array): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandStart]
   
   /**
     * Encodes the specified CommandStart message. Does not implicitly {@link io.cucumber.messages.CommandStart.verify|verify} messages.
@@ -97,7 +96,7 @@ object CommandStart {
     * @returns CommandStart
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandStart]
+  inline def fromObject(`object`: StringDictionary[Any]): CommandStart = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandStart]
   
   /**
     * Creates a plain object from a CommandStart message. Also converts values to other types if specified.
@@ -106,8 +105,8 @@ object CommandStart {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: CommandStart): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: CommandStart, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: CommandStart): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: CommandStart, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a CommandStart message.
@@ -115,5 +114,5 @@ object CommandStart {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

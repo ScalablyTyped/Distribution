@@ -14,7 +14,7 @@ trait DragOver extends StObject {
   
   var dragOverGapTop: Boolean
   
-  var eventKey: String | Double
+  var eventKey: typings.rcTree.interfaceMod.Key
   
   var expanded: Boolean
   
@@ -35,7 +35,7 @@ object DragOver {
     dragOver: Boolean,
     dragOverGapBottom: Boolean,
     dragOverGapTop: Boolean,
-    eventKey: String | Double,
+    eventKey: typings.rcTree.interfaceMod.Key,
     expanded: Boolean,
     halfChecked: Boolean,
     loaded: Boolean,
@@ -57,7 +57,7 @@ object DragOver {
     
     inline def setDragOverGapTop(value: Boolean): Self = StObject.set(x, "dragOverGapTop", value.asInstanceOf[js.Any])
     
-    inline def setEventKey(value: String | Double): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+    inline def setEventKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     

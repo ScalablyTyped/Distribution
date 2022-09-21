@@ -5,8 +5,7 @@ import typings.commonErrors.anon.Args
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "AlreadyInUseError")
   @js.native
-  class AlreadyInUseError protected () extends StObject {
+  open class AlreadyInUseError protected () extends StObject {
     /**
       * @param entityName the entity that owns the protected resource
       * @param args       the fields or attributes that are already in use
@@ -31,7 +30,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "ArgumentError")
   @js.native
-  class ArgumentError protected () extends StObject {
+  open class ArgumentError protected () extends StObject {
     /**
       * @param argumentName the name of the argument that has a problem
       * @param inner_error  the Error instance that caused the current error.
@@ -43,7 +42,7 @@ object mod {
   
   @JSImport("common-errors", "ArgumentNullError")
   @js.native
-  class ArgumentNullError protected () extends ArgumentError {
+  open class ArgumentNullError protected () extends ArgumentError {
     /**
       * @param argumentName the name of the argument that is null
       * @param inner_error  the Error instance that caused the current error.
@@ -56,7 +55,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "AuthenticationRequiredError")
   @js.native
-  class AuthenticationRequiredError protected () extends StObject {
+  open class AuthenticationRequiredError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -69,7 +68,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "ConnectionError")
   @js.native
-  class ConnectionError protected () extends StObject {
+  open class ConnectionError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -82,7 +81,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "Error")
   @js.native
-  class Error protected () extends StObject {
+  open class Error protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -95,7 +94,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "HttpStatusError")
   @js.native
-  class HttpStatusError protected () extends StObject {
+  open class HttpStatusError protected () extends StObject {
     /**
       * @param err any instanceof Error
       * @param req the request object
@@ -110,7 +109,16 @@ object mod {
       * @param message     any message
       */
     def this(status_code: Double) = this()
-    def this(err: Error, req: Request_[ParamsDictionary, js.Any, js.Any, Query]) = this()
+    def this(
+      err: Error,
+      req: Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ]
+    ) = this()
     def this(status_code: Double, message: String) = this()
     
     /**
@@ -122,7 +130,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "InvalidOperationError")
   @js.native
-  class InvalidOperationError protected () extends StObject {
+  open class InvalidOperationError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -135,7 +143,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "NotFoundError")
   @js.native
-  class NotFoundError protected () extends StObject {
+  open class NotFoundError protected () extends StObject {
     /**
       * @param entity_name a description for what was not found
       * @param inner_error the Error instance that caused the current error.
@@ -148,7 +156,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "NotImplementedError")
   @js.native
-  class NotImplementedError protected () extends StObject {
+  open class NotImplementedError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -161,7 +169,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "NotPermittedError")
   @js.native
-  class NotPermittedError protected () extends StObject {
+  open class NotPermittedError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -174,7 +182,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "NotSupportedError")
   @js.native
-  class NotSupportedError protected () extends StObject {
+  open class NotSupportedError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -187,7 +195,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "OutOfMemoryError")
   @js.native
-  class OutOfMemoryError protected () extends StObject {
+  open class OutOfMemoryError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -200,7 +208,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.RangeError * / any */ @JSImport("common-errors", "RangeError")
   @js.native
-  class RangeError protected () extends StObject {
+  open class RangeError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -213,7 +221,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.ReferenceError * / any */ @JSImport("common-errors", "ReferenceError")
   @js.native
-  class ReferenceError protected () extends StObject {
+  open class ReferenceError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -226,7 +234,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "SocketError")
   @js.native
-  class SocketError protected () extends StObject {
+  open class SocketError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -239,7 +247,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "StackOverflowError")
   @js.native
-  class StackOverflowError protected () extends StObject {
+  open class StackOverflowError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -252,7 +260,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.SyntaxError * / any */ @JSImport("common-errors", "SyntaxError")
   @js.native
-  class SyntaxError protected () extends StObject {
+  open class SyntaxError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -265,7 +273,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "TimeoutError")
   @js.native
-  class TimeoutError protected () extends StObject {
+  open class TimeoutError protected () extends StObject {
     /**
       * @param time        a time duration
       * @param inner_error the Error instance that caused the current error.
@@ -278,7 +286,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.TypeError * / any */ @JSImport("common-errors", "TypeError")
   @js.native
-  class TypeError protected () extends StObject {
+  open class TypeError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -291,7 +299,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.URIError * / any */ @JSImport("common-errors", "URIError")
   @js.native
-  class URIError protected () extends StObject {
+  open class URIError protected () extends StObject {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current error.
@@ -304,7 +312,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "ValidationError")
   @js.native
-  class ValidationError protected () extends StObject {
+  open class ValidationError protected () extends StObject {
     /**
       * @param message any message
       * @param code    an optional error code
@@ -336,7 +344,7 @@ object mod {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "data.DataError")
     @js.native
-    class DataError protected () extends StObject {
+    open class DataError protected () extends StObject {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -353,7 +361,7 @@ object mod {
       */
     @JSImport("common-errors", "data.MemcachedError")
     @js.native
-    class MemcachedError protected () extends DataError {
+    open class MemcachedError protected () extends DataError {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -370,7 +378,7 @@ object mod {
       */
     @JSImport("common-errors", "data.MongoDBError")
     @js.native
-    class MongoDBError protected () extends DataError {
+    open class MongoDBError protected () extends DataError {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -387,7 +395,7 @@ object mod {
       */
     @JSImport("common-errors", "data.RedisError")
     @js.native
-    class RedisError protected () extends DataError {
+    open class RedisError protected () extends DataError {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -404,7 +412,7 @@ object mod {
       */
     @JSImport("common-errors", "data.RollbackError")
     @js.native
-    class RollbackError protected () extends DataError {
+    open class RollbackError protected () extends DataError {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -421,7 +429,7 @@ object mod {
       */
     @JSImport("common-errors", "data.SQLError")
     @js.native
-    class SQLError protected () extends DataError {
+    open class SQLError protected () extends DataError {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -438,7 +446,7 @@ object mod {
       */
     @JSImport("common-errors", "data.TransactionError")
     @js.native
-    class TransactionError protected () extends DataError {
+    open class TransactionError protected () extends DataError {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -483,7 +491,7 @@ object mod {
       */
     @JSImport("common-errors", "io.DirectoryNotFoundError")
     @js.native
-    class DirectoryNotFoundError protected () extends IOError {
+    open class DirectoryNotFoundError protected () extends IOError {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -501,7 +509,7 @@ object mod {
       */
     @JSImport("common-errors", "io.DriveNotFoundError")
     @js.native
-    class DriveNotFoundError protected () extends IOError {
+    open class DriveNotFoundError protected () extends IOError {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -518,7 +526,7 @@ object mod {
       */
     @JSImport("common-errors", "io.EndOfStreamError")
     @js.native
-    class EndOfStreamError protected () extends IOError {
+    open class EndOfStreamError protected () extends IOError {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -535,7 +543,7 @@ object mod {
       */
     @JSImport("common-errors", "io.FileLoadError")
     @js.native
-    class FileLoadError protected () extends IOError {
+    open class FileLoadError protected () extends IOError {
       /**
         * @param file_name   any message
         * @param inner_error the Error instance that caused the current
@@ -553,7 +561,7 @@ object mod {
       */
     @JSImport("common-errors", "io.FileNotFoundError")
     @js.native
-    class FileNotFoundError protected () extends IOError {
+    open class FileNotFoundError protected () extends IOError {
       /**
         * @param file_name   any message
         * @param inner_error the Error instance that caused the current
@@ -572,7 +580,7 @@ object mod {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "io.IOError")
     @js.native
-    class IOError protected () extends StObject {
+    open class IOError protected () extends StObject {
       /**
         * @param message     any message
         * @param inner_error the Error instance that caused the current
@@ -586,7 +594,7 @@ object mod {
   inline def log(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
   inline def log(err: Error, message: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(err.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  inline def logError(err: Error, cb: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(err.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logError(err: Error, cb: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(err.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object middleware {
     
@@ -602,8 +610,14 @@ object mod {
     inline def crashProtector(
       errorHandler: js.Function3[
           /* err */ Error, 
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* res */ Response_[Any, Record[String, Any]], 
           Unit
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crashProtector")(errorHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -614,8 +628,14 @@ object mod {
       */
     inline def errorHandler(
       err: Error,
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response_[js.Any],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]],
       next: NextFunction
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(err.asInstanceOf[js.Any], req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
@@ -625,7 +645,7 @@ object mod {
   @js.native
   trait ErrorConstructor
     extends StObject
-       with Instantiable1[/* params (repeated) */ js.Any, Error]
+       with Instantiable1[/* params (repeated) */ Any, Error]
   
   type GenerateMessageMethod = js.Function0[String]
 }

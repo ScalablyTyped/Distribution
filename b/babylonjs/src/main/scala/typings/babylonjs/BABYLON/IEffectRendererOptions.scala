@@ -29,12 +29,12 @@ object IEffectRendererOptions {
     
     inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value*))
     
     inline def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
-    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value*))
   }
 }

@@ -12,13 +12,13 @@ trait DefaultCfg extends StObject {
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
-  var end: js.Any
+  var end: Any
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -36,9 +36,9 @@ trait DefaultCfg extends StObject {
   
   var offsetY: Double
   
-  var src: js.Any
+  var src: Any
   
-  var start: js.Any
+  var start: Any
   
   var `type`: String
   
@@ -52,10 +52,10 @@ object DefaultCfg {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    container: js.Any,
-    end: js.Any,
-    events: js.Any,
-    group: js.Any,
+    container: Any,
+    end: Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -64,8 +64,8 @@ object DefaultCfg {
     name: String,
     offsetX: Double,
     offsetY: Double,
-    src: js.Any,
-    start: js.Any,
+    src: Any,
+    start: Any,
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean
@@ -83,13 +83,13 @@ object DefaultCfg {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -107,9 +107,9 @@ object DefaultCfg {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setSrc(value: js.Any): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: Any): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

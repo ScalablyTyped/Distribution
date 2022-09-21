@@ -1,26 +1,8 @@
 
 # Scala.js typings for expo-constants
 
-Typings are for version 9.2.0
+Typings are for version 13.2.4
 
-## Library description:
-Provides system information that remains constant throughout the lifetime of your app.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | expo-constants |
-| Keywords           | react-native, expo, constants |
-| # releases         | 21 |
-| # dependents       | 9 |
-| # downloads        | 830234 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://docs.expo.io/versions/latest/sdk/constants/)
-- [Bugs](https://github.com/expo/expo/issues)
-- [Repository](https://github.com/expo/expo)
-- [Npm](https://www.npmjs.com/package/expo-constants)
-    
 
 
 ## Note

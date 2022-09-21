@@ -10,10 +10,10 @@ object workMod {
   
   @JSImport("material-ui/svg-icons/action/work", JSImport.Default)
   @js.native
-  class default () extends ActionWork
+  open class default () extends ActionWork
   
   @JSImport("material-ui/svg-icons/action/work", "ActionWork")
   @js.native
-  class ActionWork ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionWork ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

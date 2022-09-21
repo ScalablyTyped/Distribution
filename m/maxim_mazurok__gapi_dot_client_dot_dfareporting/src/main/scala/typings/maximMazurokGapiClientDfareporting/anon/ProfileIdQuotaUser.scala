@@ -23,9 +23,6 @@ trait ProfileIdQuotaUser extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** CreativeField ID. */
-  var id: String
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
@@ -52,8 +49,8 @@ trait ProfileIdQuotaUser extends StObject {
 }
 object ProfileIdQuotaUser {
   
-  inline def apply(id: String, profileId: String, resource: CreativeField): ProfileIdQuotaUser = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], profileId = profileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(profileId: String, resource: CreativeField): ProfileIdQuotaUser = {
+    val __obj = js.Dynamic.literal(profileId = profileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileIdQuotaUser]
   }
   
@@ -78,8 +75,6 @@ object ProfileIdQuotaUser {
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -31,6 +31,6 @@ object ProofSchemaPredicate {
     
     inline def setRestrictions(value: js.Array[Restriction]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
-    inline def setRestrictionsVarargs(value: Restriction*): Self = StObject.set(x, "restrictions", js.Array(value :_*))
+    inline def setRestrictionsVarargs(value: Restriction*): Self = StObject.set(x, "restrictions", js.Array(value*))
   }
 }

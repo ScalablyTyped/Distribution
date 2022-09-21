@@ -20,6 +20,11 @@ trait GatewayRouteSpec extends StObject {
     * An object that represents the specification of an HTTP gateway route.
     */
   var httpRoute: js.UndefOr[HttpGatewayRoute] = js.undefined
+  
+  /**
+    * The ordering of the gateway routes spec.
+    */
+  var priority: js.UndefOr[GatewayRoutePriority] = js.undefined
 }
 object GatewayRouteSpec {
   
@@ -41,5 +46,9 @@ object GatewayRouteSpec {
     inline def setHttpRoute(value: HttpGatewayRoute): Self = StObject.set(x, "httpRoute", value.asInstanceOf[js.Any])
     
     inline def setHttpRouteUndefined: Self = StObject.set(x, "httpRoute", js.undefined)
+    
+    inline def setPriority(value: GatewayRoutePriority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

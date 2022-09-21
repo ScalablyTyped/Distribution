@@ -2,7 +2,6 @@ package typings.angularStrap.mgcrea.ngStrap
 
 import typings.angular.mod.IAugmentedJQuery
 import typings.angularStrap.anon.Hide
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +25,33 @@ object datepicker {
     def select(dateConstructorArg: js.Array[Double], keep: Boolean): Unit = js.native
     def select(dateConstructorArg: Double, keep: Boolean): Unit = js.native
     
-    def setMode(mode: js.Any): Unit = js.native
+    def setMode(mode: Any): Unit = js.native
     
     def show(): Unit = js.native
     
-    def update(date: Date): Unit = js.native
+    def update(date: js.Date): Unit = js.native
     
     def updateDisabledDates(dateRanges: js.Array[IDatepickerDateRange]): Unit = js.native
   }
   
   trait IDatepickerDateRange extends StObject {
     
-    var end: Date
+    var end: js.Date
     
-    var start: Date
+    var start: js.Date
   }
   object IDatepickerDateRange {
     
-    inline def apply(end: Date, start: Date): IDatepickerDateRange = {
+    inline def apply(end: js.Date, start: js.Date): IDatepickerDateRange = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDatepickerDateRange]
     }
     
     extension [Self <: IDatepickerDateRange](x: Self) {
       
-      inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,9 +79,9 @@ object datepicker {
     
     var iconRight: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     var minView: js.UndefOr[Double] = js.undefined
     
@@ -98,7 +97,7 @@ object datepicker {
     
     var placement: js.UndefOr[String] = js.undefined
     
-    var startDate: js.UndefOr[Date] = js.undefined
+    var startDate: js.UndefOr[js.Date] = js.undefined
     
     var startView: js.UndefOr[Double] = js.undefined
     
@@ -153,7 +152,7 @@ object datepicker {
       
       inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
       
-      inline def setDisabledDatesVarargs(value: IDatepickerDateRange*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
+      inline def setDisabledDatesVarargs(value: IDatepickerDateRange*): Self = StObject.set(x, "disabledDates", js.Array(value*))
       
       inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -167,11 +166,11 @@ object datepicker {
       
       inline def setIconRightUndefined: Self = StObject.set(x, "iconRight", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -203,7 +202,7 @@ object datepicker {
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
@@ -252,7 +251,7 @@ object datepicker {
   
   type IDatepickerService = js.Function3[
     /* element */ IAugmentedJQuery, 
-    /* controller */ js.Any, 
+    /* controller */ Any, 
     /* config */ js.UndefOr[IDatepickerOptions], 
     IDatepicker
   ]

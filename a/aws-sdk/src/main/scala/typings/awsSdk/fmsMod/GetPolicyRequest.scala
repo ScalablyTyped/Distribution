@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPolicyRequest extends StObject {
   
   /**
-    * The ID of the AWS Firewall Manager policy that you want the details for.
+    * The ID of the Firewall Manager policy that you want the details for.
     */
   var PolicyId: typings.awsSdk.fmsMod.PolicyId
 }

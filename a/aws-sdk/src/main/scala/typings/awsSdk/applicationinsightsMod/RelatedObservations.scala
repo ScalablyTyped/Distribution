@@ -24,6 +24,6 @@ object RelatedObservations {
     
     inline def setObservationListUndefined: Self = StObject.set(x, "ObservationList", js.undefined)
     
-    inline def setObservationListVarargs(value: Observation*): Self = StObject.set(x, "ObservationList", js.Array(value :_*))
+    inline def setObservationListVarargs(value: Observation*): Self = StObject.set(x, "ObservationList", js.Array(value*))
   }
 }

@@ -12,14 +12,14 @@ object gradientBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/gradientBlock", "GradientBlock")
   @js.native
-  class GradientBlock protected () extends NodeMaterialBlock {
+  open class GradientBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new GradientBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
     
-    /* private */ var _writeColorConstant: js.Any = js.native
+    /* private */ var _writeColorConstant: Any = js.native
     
     /**
       * Gets or sets the list of color steps
@@ -45,7 +45,7 @@ object gradientBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/gradientBlock", "GradientBlockColorStep")
   @js.native
-  class GradientBlockColorStep protected () extends StObject {
+  open class GradientBlockColorStep protected () extends StObject {
     /**
       * Creates a new GradientBlockColorStep
       * @param step defines a value indicating which step this color is associated with (between 0 and 1)
@@ -53,9 +53,9 @@ object gradientBlockMod {
       */
     def this(step: Double, color: Color3) = this()
     
-    /* private */ var _color: js.Any = js.native
+    /* private */ var _color: Any = js.native
     
-    /* private */ var _step: js.Any = js.native
+    /* private */ var _step: Any = js.native
     
     /**
       * Gets the color associated with this step

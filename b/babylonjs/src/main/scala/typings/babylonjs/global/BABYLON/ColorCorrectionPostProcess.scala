@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ColorCorrectionPostProcess")
 @js.native
-class ColorCorrectionPostProcess protected ()
+open class ColorCorrectionPostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ColorCorrectionPostProcess {
   def this(name: String, colorTableUrl: String, options: Double, camera: typings.babylonjs.BABYLON.Camera) = this()
@@ -144,9 +144,15 @@ object ColorCorrectionPostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String

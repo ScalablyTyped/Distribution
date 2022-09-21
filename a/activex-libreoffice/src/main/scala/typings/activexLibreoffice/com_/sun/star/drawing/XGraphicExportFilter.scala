@@ -26,7 +26,7 @@ object XGraphicExportFilter {
     cancel: () => Unit,
     filter: SeqEquiv[PropertyValue] => Boolean,
     getSupportedMimeTypeNames: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setSourceDocument: XComponent => Unit,
     supportsMimeType: String => Boolean

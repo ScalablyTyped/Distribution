@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlexLayout extends StObject {
   
   @JSName("$getSize")
-  var $getSize: js.Array[js.Any]
+  var $getSize: js.Array[Any]
   
   def render(): Unit
 }
@@ -19,9 +19,9 @@ object FlexLayout {
   
   extension [Self <: FlexLayout](x: Self) {
     
-    inline def set$getSize(value: js.Array[js.Any]): Self = StObject.set(x, "$getSize", value.asInstanceOf[js.Any])
+    inline def set$getSize(value: js.Array[Any]): Self = StObject.set(x, "$getSize", value.asInstanceOf[js.Any])
     
-    inline def set$getSizeVarargs(value: js.Any*): Self = StObject.set(x, "$getSize", js.Array(value :_*))
+    inline def set$getSizeVarargs(value: Any*): Self = StObject.set(x, "$getSize", js.Array(value*))
     
     inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
   }

@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.estree.mod.Node because Already inherited
-- typings.estree.mod.Expression because Already inherited */ trait NewExpression
+trait NewExpression
   extends StObject
      with BaseCallExpression
      with CallExpression {

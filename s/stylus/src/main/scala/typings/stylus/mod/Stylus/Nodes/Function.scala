@@ -9,7 +9,7 @@ trait Function
   extends StObject
      with Node {
   
-  var body: Block = js.native
+  var block: Block = js.native
   
   var name: java.lang.String = js.native
   

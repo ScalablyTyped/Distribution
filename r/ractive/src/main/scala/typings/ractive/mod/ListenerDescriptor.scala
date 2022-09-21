@@ -9,7 +9,7 @@ trait ListenerDescriptor[T /* <: Ractive[T] */] extends StObject {
   /**
   	 * The callback to call when the event is fired.
   	 */
-  def handler(ctx: ContextHelper, args: js.Any*): Boolean | Unit | js.Promise[js.Any]
+  def handler(ctx: ListenerContextHelper, args: Any*): Boolean | Unit | js.Promise[Any]
   /**
   	 * The callback to call when the event is fired.
   	 */

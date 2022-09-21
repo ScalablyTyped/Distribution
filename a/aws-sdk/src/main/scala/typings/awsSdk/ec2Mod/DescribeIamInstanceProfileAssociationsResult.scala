@@ -29,7 +29,7 @@ object DescribeIamInstanceProfileAssociationsResult {
     
     inline def setIamInstanceProfileAssociationsUndefined: Self = StObject.set(x, "IamInstanceProfileAssociations", js.undefined)
     
-    inline def setIamInstanceProfileAssociationsVarargs(value: IamInstanceProfileAssociation*): Self = StObject.set(x, "IamInstanceProfileAssociations", js.Array(value :_*))
+    inline def setIamInstanceProfileAssociationsVarargs(value: IamInstanceProfileAssociation*): Self = StObject.set(x, "IamInstanceProfileAssociations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

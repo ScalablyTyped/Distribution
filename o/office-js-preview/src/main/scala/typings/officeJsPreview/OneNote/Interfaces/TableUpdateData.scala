@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the Table object, for use in "table.set({ ... })". */
+/** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
 trait TableUpdateData extends StObject {
   
   /**
-    *
     * Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var borderVisible: js.UndefOr[Boolean] = js.undefined

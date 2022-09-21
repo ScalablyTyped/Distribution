@@ -36,6 +36,6 @@ object BarDatasetConfig {
     
     inline def setStackLabelsUndefined: Self = StObject.set(x, "stackLabels", js.undefined)
     
-    inline def setStackLabelsVarargs(value: String*): Self = StObject.set(x, "stackLabels", js.Array(value :_*))
+    inline def setStackLabelsVarargs(value: String*): Self = StObject.set(x, "stackLabels", js.Array(value*))
   }
 }

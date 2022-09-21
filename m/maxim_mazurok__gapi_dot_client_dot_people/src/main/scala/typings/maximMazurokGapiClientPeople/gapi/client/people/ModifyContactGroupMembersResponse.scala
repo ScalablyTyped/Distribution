@@ -25,12 +25,12 @@ object ModifyContactGroupMembersResponse {
     
     inline def setCanNotRemoveLastContactGroupResourceNamesUndefined: Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", js.undefined)
     
-    inline def setCanNotRemoveLastContactGroupResourceNamesVarargs(value: String*): Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", js.Array(value :_*))
+    inline def setCanNotRemoveLastContactGroupResourceNamesVarargs(value: String*): Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", js.Array(value*))
     
     inline def setNotFoundResourceNames(value: js.Array[String]): Self = StObject.set(x, "notFoundResourceNames", value.asInstanceOf[js.Any])
     
     inline def setNotFoundResourceNamesUndefined: Self = StObject.set(x, "notFoundResourceNames", js.undefined)
     
-    inline def setNotFoundResourceNamesVarargs(value: String*): Self = StObject.set(x, "notFoundResourceNames", js.Array(value :_*))
+    inline def setNotFoundResourceNamesVarargs(value: String*): Self = StObject.set(x, "notFoundResourceNames", js.Array(value*))
   }
 }

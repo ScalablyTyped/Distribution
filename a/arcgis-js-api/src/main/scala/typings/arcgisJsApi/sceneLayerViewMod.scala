@@ -22,7 +22,7 @@ object sceneLayerViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with SceneLayerView {
     def this(properties: SceneLayerViewProperties) = this()

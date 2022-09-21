@@ -23,7 +23,7 @@ object DataSource {
     
     inline def setDataSource(value: js.Array[scala.Nothing]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    inline def setDataSourceVarargs(value: scala.Nothing*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: scala.Nothing*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
     

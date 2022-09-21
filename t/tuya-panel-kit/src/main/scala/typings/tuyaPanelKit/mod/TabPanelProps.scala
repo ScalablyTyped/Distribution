@@ -9,6 +9,16 @@ trait TabPanelProps
   extends StObject
      with ViewProps {
   
+  /**
+    * @language zh-CN
+    * @description 背景色
+    * @defaultValue 'transparent'
+    */
+  /**
+    * @language en-US
+    * @description Background color
+    * @defaultValue 'transparent'
+    */
   var background: js.UndefOr[String] = js.undefined
 }
 object TabPanelProps {

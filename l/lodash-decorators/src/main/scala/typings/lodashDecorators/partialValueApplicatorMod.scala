@@ -9,5 +9,5 @@ object partialValueApplicatorMod {
   
   @JSImport("lodash-decorators/applicators/PartialValueApplicator", "PartialValueApplicator")
   @js.native
-  class PartialValueApplicator () extends Applicator
+  open class PartialValueApplicator () extends Applicator
 }

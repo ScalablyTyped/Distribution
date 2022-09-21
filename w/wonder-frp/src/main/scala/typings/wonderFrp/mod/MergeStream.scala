@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "MergeStream")
 @js.native
-class MergeStream protected ()
+open class MergeStream protected ()
   extends typings.wonderFrp.mergeStreamMod.MergeStream {
   def this(source: typings.wonderFrp.streamMod.Stream, maxConcurrent: Double) = this()
 }

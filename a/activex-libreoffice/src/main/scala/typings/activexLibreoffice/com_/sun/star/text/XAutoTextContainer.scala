@@ -33,13 +33,13 @@ object XAutoTextContainer {
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
     insertNewByName: String => XAutoTextGroup,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByName: String => Unit
   ): XAutoTextContainer = {

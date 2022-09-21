@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FullPageJsMethods extends StObject {
   
-  def apply(): js.Any = js.native
-  def apply(options: FullPageJsOptions): js.Any = js.native
+  def apply(): Any = js.native
+  def apply(options: FullPageJsOptions): Any = js.native
   
   /**
     * Destroys the plugin events and optionally its HTML markup and styles.

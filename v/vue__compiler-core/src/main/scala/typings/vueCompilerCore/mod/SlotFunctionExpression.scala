@@ -23,6 +23,6 @@ object SlotFunctionExpression {
     
     inline def setReturns(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
-    inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value :_*))
+    inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value*))
   }
 }

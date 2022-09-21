@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "LineDashedMaterial")
 @js.native
-class LineDashedMaterial ()
-  extends typings.three.materialsMod.LineDashedMaterial {
+open class LineDashedMaterial ()
+  extends typings.three.threeMod.LineDashedMaterial {
   def this(parameters: LineDashedMaterialParameters) = this()
 }

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for the PublishBatch method.
-  */
 trait SchemaPublishBatchRequest extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaPublishBatchRequest extends StObject {
   /**
     * The messages in the request will be published on this topic.
     */
-  var topic: js.UndefOr[String] = js.undefined
+  var topic: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPublishBatchRequest {
   
@@ -32,9 +29,11 @@ object SchemaPublishBatchRequest {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: SchemaPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: SchemaPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    
+    inline def setTopicNull: Self = StObject.set(x, "topic", null)
     
     inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }

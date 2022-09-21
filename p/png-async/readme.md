@@ -10,10 +10,10 @@ A simple and non-blocking PNG encoder / decoder.
 | ------------------ | :-------------: |
 | Full name          | png-async |
 | Keywords           | png, stream, async, non-blocking |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 992463 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 901059.3333333334 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/kanreisa/node-png-async)

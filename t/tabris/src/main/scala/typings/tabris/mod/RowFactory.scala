@@ -10,5 +10,5 @@ trait RowFactory
   extends Factory[
       RowConstructor, 
       InstanceType[RowConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[RowConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

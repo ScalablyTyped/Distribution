@@ -23,8 +23,8 @@ object mod {
   
   @JSImport("react-dynamic-number", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DynamicNumberProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DynamicNumberProps, js.Object, Any]
   
   type BaseInputProps = Partial[
     Omit[
@@ -33,7 +33,7 @@ object mod {
     ]
   ]
   
-  type DynamicNumber = Component[DynamicNumberProps, js.Object, js.Any]
+  type DynamicNumber = Component[DynamicNumberProps, js.Object, Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in keyof react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'> ]:? react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'>[P]} */ trait DynamicNumberProps extends StObject {

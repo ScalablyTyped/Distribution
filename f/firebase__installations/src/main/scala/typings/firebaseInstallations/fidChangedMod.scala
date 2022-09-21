@@ -1,6 +1,6 @@
 package typings.firebaseInstallations
 
-import typings.firebaseInstallations.appConfigMod.AppConfig
+import typings.firebaseInstallations.installationImplMod.AppConfig
 import typings.firebaseInstallations.onIdChangeMod.IdChangeCallbackFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fidChangedMod {
   
-  @JSImport("@firebase/installations/dist/src/helpers/fid-changed", JSImport.Namespace)
+  @JSImport("@firebase/installations/dist/esm/src/helpers/fid-changed", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

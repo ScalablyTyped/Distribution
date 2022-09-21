@@ -72,6 +72,12 @@ object xlsxStrings {
   inline def d: d = "d".asInstanceOf[d]
   
   @js.native
+  sealed trait dbf
+    extends StObject
+       with BookType
+  inline def dbf: dbf = "dbf".asInstanceOf[dbf]
+  
+  @js.native
   sealed trait dif
     extends StObject
        with BookType
@@ -140,6 +146,12 @@ object xlsxStrings {
     extends StObject
        with SheetType
   inline def sheet: sheet = "sheet".asInstanceOf[sheet]
+  
+  @js.native
+  sealed trait slk
+    extends StObject
+       with BookType
+  inline def slk: slk = "slk".asInstanceOf[slk]
   
   @js.native
   sealed trait string extends StObject

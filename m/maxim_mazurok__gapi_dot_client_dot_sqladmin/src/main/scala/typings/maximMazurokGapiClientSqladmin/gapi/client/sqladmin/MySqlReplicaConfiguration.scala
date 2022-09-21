@@ -24,7 +24,7 @@ trait MySqlReplicaConfiguration extends StObject {
     */
   var dumpFilePath: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#mysqlReplicaConfiguration*. */
+  /** This is always `sql#mysqlReplicaConfiguration`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Interval in milliseconds between replication heartbeats. */

@@ -10,7 +10,7 @@ object htmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createWriter(writer: js.Any): AsyncStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any]).asInstanceOf[AsyncStream]
+  inline def createWriter(writer: Any): AsyncStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any]).asInstanceOf[AsyncStream]
   
   inline def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
   

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Jumbotron")
 @js.native
-class Jumbotron ()
+open class Jumbotron ()
   extends typings.reactBootstrap.libMod.Jumbotron

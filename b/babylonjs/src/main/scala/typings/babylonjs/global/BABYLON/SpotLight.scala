@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SpotLight")
 @js.native
-class SpotLight protected ()
+open class SpotLight protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SpotLight {
   /**
@@ -54,6 +54,20 @@ class SpotLight protected ()
     */
   /* CompleteClass */
   override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
+  
+  /**
+    * Defines the rendering priority of the lights. It can help in case of fallback or number of lights
+    * exceeding the number allowed of the materials.
+    */
+  /* CompleteClass */
+  var renderPriority: Double = js.native
+  
+  /**
+    * Gets or sets whether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
+    * the current shadow generator.
+    */
+  /* CompleteClass */
+  var shadowEnabled: Boolean = js.native
 }
 /* static members */
 object SpotLight {
@@ -64,11 +78,11 @@ object SpotLight {
   
   @JSGlobal("BABYLON.SpotLight._IsProceduralTexture")
   @js.native
-  def _IsProceduralTexture: js.Any = js.native
-  inline def _IsProceduralTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
+  def _IsProceduralTexture: Any = js.native
+  inline def _IsProceduralTexture_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.SpotLight._IsTexture")
   @js.native
-  def _IsTexture: js.Any = js.native
-  inline def _IsTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
+  def _IsTexture: Any = js.native
+  inline def _IsTexture_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
 }

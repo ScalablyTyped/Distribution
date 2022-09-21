@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab", "GroupAccessRequests")
 @js.native
-class GroupAccessRequests protected ()
+open class GroupAccessRequests protected ()
   extends typings.gitlab.servicesMod.GroupAccessRequests {
   def this(options: BaseServiceOptions) = this()
 }

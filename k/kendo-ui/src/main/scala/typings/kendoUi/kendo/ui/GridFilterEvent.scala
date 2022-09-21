@@ -10,7 +10,7 @@ trait GridFilterEvent
   
   var field: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[js.Any] = js.undefined
+  var filter: js.UndefOr[Any] = js.undefined
 }
 object GridFilterEvent {
   
@@ -25,7 +25,7 @@ object GridFilterEvent {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }

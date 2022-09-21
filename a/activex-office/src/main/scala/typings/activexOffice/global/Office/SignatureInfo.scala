@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SignatureInfo")
 @js.native
-/* private */ class SignatureInfo ()
+/* private */ open class SignatureInfo ()
   extends StObject
      with typings.activexOffice.Office.SignatureInfo {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val CertificateVerificationResults: typings.activexOffice.Office.CertificateVerificationResults = js.native
@@ -26,10 +26,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override def GetCertificateDetail(certdet: CertificateDetail): js.Any = js.native
+  override def GetCertificateDetail(certdet: CertificateDetail): Any = js.native
   
   /* CompleteClass */
-  override def GetSignatureDetail(sigdet: SignatureDetail): js.Any = js.native
+  override def GetSignatureDetail(sigdet: SignatureDetail): Any = js.native
   
   /* CompleteClass */
   override val IsCertificateExpired: Boolean = js.native
@@ -54,10 +54,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def SelectCertificateDetailByThumbprint(bstrThumbprint: String): Unit = js.native
   
   /* CompleteClass */
-  override def SelectSignatureCertificate(ParentWindow: js.Any): Unit = js.native
+  override def SelectSignatureCertificate(ParentWindow: Any): Unit = js.native
   
   /* CompleteClass */
-  override def ShowSignatureCertificate(ParentWindow: js.Any): Unit = js.native
+  override def ShowSignatureCertificate(ParentWindow: Any): Unit = js.native
   
   /* CompleteClass */
   var SignatureComment: String = js.native

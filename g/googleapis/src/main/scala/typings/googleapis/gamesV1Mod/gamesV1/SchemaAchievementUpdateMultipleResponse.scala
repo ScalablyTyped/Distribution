@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for an achievement unlock response.
-  */
 trait SchemaAchievementUpdateMultipleResponse extends StObject {
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#achievementUpdateListResponse.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#achievementUpdateMultipleResponse`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The updated state of the achievements.
@@ -31,12 +27,14 @@ object SchemaAchievementUpdateMultipleResponse {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setUpdatedAchievements(value: js.Array[SchemaAchievementUpdateResponse]): Self = StObject.set(x, "updatedAchievements", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAchievementsUndefined: Self = StObject.set(x, "updatedAchievements", js.undefined)
     
-    inline def setUpdatedAchievementsVarargs(value: SchemaAchievementUpdateResponse*): Self = StObject.set(x, "updatedAchievements", js.Array(value :_*))
+    inline def setUpdatedAchievementsVarargs(value: SchemaAchievementUpdateResponse*): Self = StObject.set(x, "updatedAchievements", js.Array(value*))
   }
 }

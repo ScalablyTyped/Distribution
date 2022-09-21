@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.DiscreteInterpolant")
 @js.native
-class DiscreteInterpolant protected ()
+open class DiscreteInterpolant protected ()
   extends typings.three.mod.DiscreteInterpolant {
-  def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double) = this()
+  def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double) = this()
 }

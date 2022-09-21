@@ -27,6 +27,6 @@ object DatabaseFileInfo {
     
     inline def setProperties(value: js.Array[LocalizedPropertyInfo]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: LocalizedPropertyInfo*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: LocalizedPropertyInfo*): Self = StObject.set(x, "properties", js.Array(value*))
   }
 }

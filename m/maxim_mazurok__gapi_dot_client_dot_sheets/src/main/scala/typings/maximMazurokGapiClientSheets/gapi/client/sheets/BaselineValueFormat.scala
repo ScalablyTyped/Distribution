@@ -12,7 +12,7 @@ trait BaselineValueFormat extends StObject {
   /** Description which is appended after the baseline value. This field is optional. */
   var description: js.UndefOr[String] = js.undefined
   
-  /** Color to be used, in case baseline value represents a negative change for key value. This field is optional. */
+  /** Color to be used, in case baseline value represents a negative change for key value. This field is optional. Deprecated: Use negative_color_style. */
   var negativeColor: js.UndefOr[Color] = js.undefined
   
   /** Color to be used, in case baseline value represents a negative change for key value. This field is optional. If negative_color is also set, this field takes precedence. */
@@ -21,13 +21,13 @@ trait BaselineValueFormat extends StObject {
   /** Specifies the horizontal text positioning of baseline value. This field is optional. If not specified, default positioning is used. */
   var position: js.UndefOr[TextPosition] = js.undefined
   
-  /** Color to be used, in case baseline value represents a positive change for key value. This field is optional. */
+  /** Color to be used, in case baseline value represents a positive change for key value. This field is optional. Deprecated: Use positive_color_style. */
   var positiveColor: js.UndefOr[Color] = js.undefined
   
   /** Color to be used, in case baseline value represents a positive change for key value. This field is optional. If positive_color is also set, this field takes precedence. */
   var positiveColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
-  /** Text formatting options for baseline value. */
+  /** Text formatting options for baseline value. The link field is not supported. */
   var textFormat: js.UndefOr[TextFormat] = js.undefined
 }
 object BaselineValueFormat {

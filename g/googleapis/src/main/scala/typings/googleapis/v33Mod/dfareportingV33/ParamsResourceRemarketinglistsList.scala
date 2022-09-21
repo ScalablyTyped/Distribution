@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,11 +19,6 @@ trait ParamsResourceRemarketinglistsList
   var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Select only remarketing lists that have this floodlight activity ID.
     */
   var floodlightActivityId: js.UndefOr[String] = js.undefined
@@ -38,13 +29,7 @@ trait ParamsResourceRemarketinglistsList
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Allows searching for objects by name or ID. Wildcards (*) are allowed.
-    * For example, "remarketing list*2015" will return objects with names like
-    * "remarketing list June 2015", "remarketing list April 2015", or simply
-    * "remarketing list 2015". Most of the searches also add wildcards
-    * implicitly at the start and the end of the search string. For example, a
-    * search string of "remarketing list" will match objects with name "my
-    * remarketing list", "remarketing list 2015", or simply "remarketing list".
+    * Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "remarketing list*2015" will return objects with names like "remarketing list June 2015", "remarketing list April 2015", or simply "remarketing list 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "remarketing list" will match objects with name "my remarketing list", "remarketing list 2015", or simply "remarketing list".
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -84,10 +69,6 @@ object ParamsResourceRemarketinglistsList {
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     

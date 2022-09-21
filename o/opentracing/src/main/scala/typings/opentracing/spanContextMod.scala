@@ -8,11 +8,11 @@ object spanContextMod {
   
   @JSImport("opentracing/lib/span_context", JSImport.Default)
   @js.native
-  class default () extends SpanContext
+  open class default () extends SpanContext
   
   @JSImport("opentracing/lib/span_context", "SpanContext")
   @js.native
-  class SpanContext () extends StObject {
+  open class SpanContext () extends StObject {
     
     /**
       * Returns a string representation of the implementation internal span ID.

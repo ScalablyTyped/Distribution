@@ -35,7 +35,7 @@ trait JQuery extends StObject {
     * @return {Mixed}
     */
   def jstree(): JSTree = js.native
-  def jstree(args: js.Any*): js.Any = js.native
+  def jstree(args: Any*): Any = js.native
   def jstree(arg: Boolean): JSTree = js.native
   def jstree(options: JSTreeStaticDefaults): JSTree = js.native
 }

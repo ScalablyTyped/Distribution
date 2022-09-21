@@ -23,7 +23,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def __(key: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def __(key: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__")(key.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     inline def __(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def __(key: String, params: GetTranslationParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def __(namespace: String, key: String, params: GetTranslationParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(namespace.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -37,24 +37,24 @@ object mod {
     inline def addTranslations(locale: String, translationsMap: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTranslations")(locale.asInstanceOf[js.Any], translationsMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     // component functions
-    inline def createComponent(): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")().asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Unit, locale: String): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Unit, locale: String, reactjs: Unit, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Unit, locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Unit, locale: String, reactjs: ReactInstance, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Unit, locale: Unit, reactjs: Unit, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Unit, locale: Unit, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Unit, locale: Unit, reactjs: ReactInstance, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Translator): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any]).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Translator, locale: String): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Translator, locale: String, reactjs: Unit, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Translator, locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Translator, locale: String, reactjs: ReactInstance, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Translator, locale: Unit, reactjs: Unit, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Translator, locale: Unit, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
-    inline def createComponent(translator: Translator, locale: Unit, reactjs: ReactInstance, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, js.Any]]]
+    inline def createComponent(): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")().asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Unit, locale: String): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Unit, locale: String, reactjs: Unit, `type`: Any): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Unit, locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Unit, locale: String, reactjs: ReactInstance, `type`: Any): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Unit, locale: Unit, reactjs: Unit, `type`: Any): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Unit, locale: Unit, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Unit, locale: Unit, reactjs: ReactInstance, `type`: Any): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Translator): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any]).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Translator, locale: String): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Translator, locale: String, reactjs: Unit, `type`: Any): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Translator, locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Translator, locale: String, reactjs: ReactInstance, `type`: Any): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Translator, locale: Unit, reactjs: Unit, `type`: Any): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Translator, locale: Unit, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
+    inline def createComponent(translator: Translator, locale: Unit, reactjs: ReactInstance, `type`: Any): Instantiable0[Component[ReactComponentProps, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(translator.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], reactjs.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[ReactComponentProps, js.Object, Any]]]
     
-    inline def createReactiveTranslator(namespace: String, locale: String): Instantiable0[Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReactiveTranslator")(namespace.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[js.Object, js.Object, js.Any]]]
+    inline def createReactiveTranslator(namespace: String, locale: String): Instantiable0[Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReactiveTranslator")(namespace.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[Component[js.Object, js.Object, Any]]]
     
     // translator functions
     inline def createTranslator(namespace: String): Translator = ^.asInstanceOf[js.Dynamic].applyDynamic("createTranslator")(namespace.asInstanceOf[js.Any]).asInstanceOf[Translator]
@@ -79,16 +79,11 @@ object mod {
     inline def getLanguageNativeName(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageNativeName")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def getLanguages(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")().asInstanceOf[js.Array[String]]
-    
-    inline def getLanguages_code(`type`: code): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    
-    inline def getLanguages_name(`type`: name): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    
-    inline def getLanguages_nativeNames(`type`: nativeNames): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getLanguages(`type`: code | name | nativeNames): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     inline def getLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocale")().asInstanceOf[String]
     
-    inline def getTranslation(key: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getTranslation(key: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(key.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     inline def getTranslation(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def getTranslation(key: String, params: GetTranslationParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def getTranslation(namespace: String, key: String, params: GetTranslationParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(namespace.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -168,7 +163,7 @@ object mod {
   
   trait GetTranslationParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var _locale: js.UndefOr[String] = js.undefined
     
@@ -281,7 +276,7 @@ object mod {
     
     var _namespace: js.UndefOr[String] = js.undefined
     
-    var _props: js.UndefOr[HTMLAttributes[Component[js.Object, js.Object, js.Any]]] = js.undefined
+    var _props: js.UndefOr[HTMLAttributes[Component[js.Object, js.Object, Any]]] = js.undefined
     
     var _tagType: js.UndefOr[String] = js.undefined
     
@@ -308,7 +303,7 @@ object mod {
       
       inline def set_namespaceUndefined: Self = StObject.set(x, "_namespace", js.undefined)
       
-      inline def set_props(value: HTMLAttributes[Component[js.Object, js.Object, js.Any]]): Self = StObject.set(x, "_props", value.asInstanceOf[js.Any])
+      inline def set_props(value: HTMLAttributes[Component[js.Object, js.Object, Any]]): Self = StObject.set(x, "_props", value.asInstanceOf[js.Any])
       
       inline def set_propsUndefined: Self = StObject.set(x, "_props", js.undefined)
       
@@ -320,7 +315,7 @@ object mod {
       
       inline def set_translatePropsUndefined: Self = StObject.set(x, "_translateProps", js.undefined)
       
-      inline def set_translatePropsVarargs(value: String*): Self = StObject.set(x, "_translateProps", js.Array(value :_*))
+      inline def set_translatePropsVarargs(value: String*): Self = StObject.set(x, "_translateProps", js.Array(value*))
     }
   }
   
@@ -352,7 +347,7 @@ object mod {
   @js.native
   trait Translator extends StObject {
     
-    def apply(args: js.Any*): String = js.native
+    def apply(args: Any*): String = js.native
   }
   
   type i18nLocaleEntry = js.Tuple8[

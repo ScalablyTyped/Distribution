@@ -27,9 +27,14 @@ trait BGPPeer extends StObject {
   var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   
   /**
-    * The Direct Connect endpoint on which the BGP peer terminates.
+    * The Direct Connect endpoint that terminates the BGP peer.
     */
   var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.undefined
+  
+  /**
+    * The Direct Connect endpoint that terminates the logical connection. This device might be different than the device that terminates the physical connection.
+    */
+  var awsLogicalDeviceId: js.UndefOr[AwsLogicalDeviceId] = js.undefined
   
   /**
     * The ID of the BGP peer.
@@ -79,6 +84,10 @@ object BGPPeer {
     inline def setAwsDeviceV2(value: AwsDeviceV2): Self = StObject.set(x, "awsDeviceV2", value.asInstanceOf[js.Any])
     
     inline def setAwsDeviceV2Undefined: Self = StObject.set(x, "awsDeviceV2", js.undefined)
+    
+    inline def setAwsLogicalDeviceId(value: AwsLogicalDeviceId): Self = StObject.set(x, "awsLogicalDeviceId", value.asInstanceOf[js.Any])
+    
+    inline def setAwsLogicalDeviceIdUndefined: Self = StObject.set(x, "awsLogicalDeviceId", js.undefined)
     
     inline def setBgpPeerId(value: BGPPeerId): Self = StObject.set(x, "bgpPeerId", value.asInstanceOf[js.Any])
     

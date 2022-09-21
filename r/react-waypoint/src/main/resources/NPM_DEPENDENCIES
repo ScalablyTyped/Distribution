@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-waypoint" : "9.0.3"
+      "react-waypoint" : "10.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-waypoint" : "9.0.3"
+      "react-waypoint" : "10.3.0"
     }
   ],
   "compile-devDependencies" : [

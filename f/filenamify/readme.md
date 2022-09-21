@@ -1,7 +1,7 @@
 
 # Scala.js typings for filenamify
 
-Typings are for version 4.2.0
+Typings are for version 5.1.1
 
 ## Library description:
 Convert a string to a valid safe filename
@@ -10,10 +10,10 @@ Convert a string to a valid safe filename
 | ------------------ | :-------------: |
 | Full name          | filenamify |
 | Keywords           | filename, safe, sanitize, file, name, string, path, filepath, convert, valid, dirname |
-| # releases         | 3 |
-| # dependents       | 152 |
-| # downloads        | 89859286 |
-| # stars            | 1 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4986007E7 |
+| # stars            | 404.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/filenamify#readme)

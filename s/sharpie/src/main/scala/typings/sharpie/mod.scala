@@ -1,10 +1,8 @@
 package typings.sharpie
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.RequestHandler
-import typings.node.Buffer
-import typings.qs.mod.ParsedQs
+import typings.node.bufferMod.global.Buffer
 import typings.sharp.mod.Sharp
 import typings.sharp.mod.SharpOptions
 import typings.sharpie.anon.Assignment
@@ -19,7 +17,7 @@ object mod {
   /**
     * A simple express middleware for resizing images using sharp and pipes.
     */
-  inline def apply(defaults: SharpieOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  inline def apply(defaults: SharpieOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
   @JSImport("sharpie", JSImport.Namespace)
   @js.native
@@ -32,6 +30,24 @@ object mod {
   inline def sharp(): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")().asInstanceOf[Sharp]
   inline def sharp(input: String): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
   inline def sharp(input: String, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Float32Array): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Float32Array, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Float64Array): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Float64Array, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Int16Array): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Int16Array, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Int32Array): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Int32Array, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Int8Array): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Int8Array, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Uint16Array): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Uint16Array, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Uint32Array): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Uint32Array, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Uint8Array): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Uint8Array, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Uint8ClampedArray): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  inline def sharp(input: js.typedarray.Uint8ClampedArray, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
   inline def sharp(input: Unit, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
   inline def sharp(input: Buffer): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
   inline def sharp(input: Buffer, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
@@ -150,7 +166,7 @@ object mod {
       
       inline def setHostnamesUndefined: Self = StObject.set(x, "hostnames", js.undefined)
       
-      inline def setHostnamesVarargs(value: String*): Self = StObject.set(x, "hostnames", js.Array(value :_*))
+      inline def setHostnamesVarargs(value: String*): Self = StObject.set(x, "hostnames", js.Array(value*))
       
       inline def setIm(value: String): Self = StObject.set(x, "im", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,7 @@ trait IServerProxy
   ] = js.undefined
   
   /** [Config Option] (Object) */
-  var api: js.UndefOr[js.Any] = js.undefined
+  var api: js.UndefOr[Any] = js.undefined
   
   /** [Method] Creates and returns an Ext data Request object based on the options passed by the Store that this Proxy is attached to
     * @param operation Ext.data.Operation The Operation object to execute
@@ -50,8 +50,8 @@ trait IServerProxy
   var doRequest: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -72,7 +72,7 @@ trait IServerProxy
   var encodeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], String]] = js.undefined
   
   /** [Config Option] (Object) */
-  var extraParams: js.UndefOr[js.Any] = js.undefined
+  var extraParams: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var filterParam: js.UndefOr[String] = js.undefined
@@ -80,7 +80,7 @@ trait IServerProxy
   /** [Method] Returns the value of api
     * @returns Object
     */
-  var getApi: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getApi: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of cacheString
     * @returns String
@@ -100,7 +100,7 @@ trait IServerProxy
   /** [Method] Returns the value of extraParams
     * @returns Object
     */
-  var getExtraParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getExtraParams: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of filterParam
     * @returns String
@@ -172,9 +172,9 @@ trait IServerProxy
       /* success */ js.UndefOr[Boolean], 
       /* operation */ js.UndefOr[IOperation], 
       /* request */ js.UndefOr[IRequest], 
-      /* response */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* response */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -186,7 +186,7 @@ trait IServerProxy
   /** [Method] Sets the value of api
     * @param api Object The new value.
     */
-  var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of cacheString
     * @param cacheString String The new value.
@@ -207,14 +207,12 @@ trait IServerProxy
     * @param name String The key for the new value
     * @param value Object The value
     */
-  var setExtraParam: js.UndefOr[
-    js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var setExtraParam: js.UndefOr[js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of extraParams
     * @param extraParams Object The new value.
     */
-  var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of filterParam
     * @param filterParam String The new value.
@@ -298,7 +296,7 @@ object IServerProxy {
     
     inline def setAfterRequestUndefined: Self = StObject.set(x, "afterRequest", js.undefined)
     
-    inline def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
@@ -323,7 +321,7 @@ object IServerProxy {
     inline def setDirectionParamUndefined: Self = StObject.set(x, "directionParam", js.undefined)
     
     inline def setDoRequest(
-      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
     
     inline def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
@@ -340,7 +338,7 @@ object IServerProxy {
     
     inline def setEncodeSortersUndefined: Self = StObject.set(x, "encodeSorters", js.undefined)
     
-    inline def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
+    inline def setExtraParams(value: Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
     
     inline def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
     
@@ -348,7 +346,7 @@ object IServerProxy {
     
     inline def setFilterParamUndefined: Self = StObject.set(x, "filterParam", js.undefined)
     
-    inline def setGetApi(value: () => js.Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
+    inline def setGetApi(value: () => Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
     
     inline def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
     
@@ -364,7 +362,7 @@ object IServerProxy {
     
     inline def setGetEnablePagingParamsUndefined: Self = StObject.set(x, "getEnablePagingParams", js.undefined)
     
-    inline def setGetExtraParams(value: () => js.Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
+    inline def setGetExtraParams(value: () => Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
     
     inline def setGetExtraParamsUndefined: Self = StObject.set(x, "getExtraParams", js.undefined)
     
@@ -421,7 +419,7 @@ object IServerProxy {
     inline def setPageParamUndefined: Self = StObject.set(x, "pageParam", js.undefined)
     
     inline def setProcessResponse(
-      value: (/* success */ js.UndefOr[Boolean], /* operation */ js.UndefOr[IOperation], /* request */ js.UndefOr[IRequest], /* response */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* success */ js.UndefOr[Boolean], /* operation */ js.UndefOr[IOperation], /* request */ js.UndefOr[IRequest], /* response */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "processResponse", js.Any.fromFunction6(value))
     
     inline def setProcessResponseUndefined: Self = StObject.set(x, "processResponse", js.undefined)
@@ -430,7 +428,7 @@ object IServerProxy {
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    inline def setSetApi(value: /* api */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setApi", js.Any.fromFunction1(value))
+    inline def setSetApi(value: /* api */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setApi", js.Any.fromFunction1(value))
     
     inline def setSetApiUndefined: Self = StObject.set(x, "setApi", js.undefined)
     
@@ -446,11 +444,11 @@ object IServerProxy {
     
     inline def setSetEnablePagingParamsUndefined: Self = StObject.set(x, "setEnablePagingParams", js.undefined)
     
-    inline def setSetExtraParam(value: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setExtraParam", js.Any.fromFunction2(value))
+    inline def setSetExtraParam(value: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setExtraParam", js.Any.fromFunction2(value))
     
     inline def setSetExtraParamUndefined: Self = StObject.set(x, "setExtraParam", js.undefined)
     
-    inline def setSetExtraParams(value: /* extraParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
+    inline def setSetExtraParams(value: /* extraParams */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
     
     inline def setSetExtraParamsUndefined: Self = StObject.set(x, "setExtraParams", js.undefined)
     

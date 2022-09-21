@@ -46,12 +46,12 @@ trait PhysicsImpostorParameters extends StObject {
   /**
     * The native options of the physics imposter
     */
-  var nativeOptions: js.UndefOr[js.Any] = js.undefined
+  var nativeOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * The path for a rope based on an extrusion
     */
-  var path: js.UndefOr[js.Any] = js.undefined
+  var path: js.UndefOr[Any] = js.undefined
   
   /**
     * The number of iterations used in maintaining consistent vertex positions, soft object only
@@ -71,7 +71,7 @@ trait PhysicsImpostorParameters extends StObject {
   /**
     * The shape of an extrusion used for a rope based on an extrusion
     */
-  var shape: js.UndefOr[js.Any] = js.undefined
+  var shape: js.UndefOr[Any] = js.undefined
   
   /**
     * The stiffness the physics imposter, soft object only
@@ -118,11 +118,11 @@ object PhysicsImpostorParameters {
     
     inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     
-    inline def setNativeOptions(value: js.Any): Self = StObject.set(x, "nativeOptions", value.asInstanceOf[js.Any])
+    inline def setNativeOptions(value: Any): Self = StObject.set(x, "nativeOptions", value.asInstanceOf[js.Any])
     
     inline def setNativeOptionsUndefined: Self = StObject.set(x, "nativeOptions", js.undefined)
     
-    inline def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
@@ -138,7 +138,7 @@ object PhysicsImpostorParameters {
     
     inline def setRestitutionUndefined: Self = StObject.set(x, "restitution", js.undefined)
     
-    inline def setShape(value: js.Any): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Any): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     

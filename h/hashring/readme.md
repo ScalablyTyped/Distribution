@@ -10,10 +10,10 @@ A consistent hashring compatible with ketama hashing and python's hash_ring
 | ------------------ | :-------------: |
 | Full name          | hashring |
 | Keywords           | hashring, hash ring, hashing, hashvalue, ketama, hash_ring, hash, consistent hashing, libketama |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 5075606 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 488721.6666666667 |
+| # stars            | 334.0 |
 
 ## Links
 - [Homepage](http://github.com/3rd-Eden/node-hashring/)

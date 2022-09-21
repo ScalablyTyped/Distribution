@@ -12,12 +12,12 @@ trait CreatePortfolioShareInput extends StObject {
   var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
-    * The AWS account ID. For example, 123456789012.
+    * The Amazon Web Services account ID. For example, 123456789012.
     */
   var AccountId: js.UndefOr[typings.awsSdk.servicecatalogMod.AccountId] = js.undefined
   
   /**
-    * The organization node to whom you are going to share. If OrganizationNode is passed in, PortfolioShare will be created for the node an ListOrganizationPortfolioAccessd its children (when applies), and a PortfolioShareToken will be returned in the output in order for the administrator to monitor the status of the PortfolioShare creation process.
+    * The organization node to whom you are going to share. When you pass OrganizationNode, it creates PortfolioShare for all of the Amazon Web Services accounts that are associated to the OrganizationNode. The output returns a PortfolioShareToken, which enables the administrator to monitor the status of the PortfolioShare creation process.
     */
   var OrganizationNode: js.UndefOr[typings.awsSdk.servicecatalogMod.OrganizationNode] = js.undefined
   
@@ -25,6 +25,11 @@ trait CreatePortfolioShareInput extends StObject {
     * The portfolio identifier.
     */
   var PortfolioId: Id
+  
+  /**
+    * Enables or disables TagOptions  sharing when creating the portfolio share. If this flag is not provided, TagOptions sharing is disabled.
+    */
+  var ShareTagOptions: js.UndefOr[Boolean] = js.undefined
 }
 object CreatePortfolioShareInput {
   
@@ -48,5 +53,9 @@ object CreatePortfolioShareInput {
     inline def setOrganizationNodeUndefined: Self = StObject.set(x, "OrganizationNode", js.undefined)
     
     inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
+    
+    inline def setShareTagOptions(value: Boolean): Self = StObject.set(x, "ShareTagOptions", value.asInstanceOf[js.Any])
+    
+    inline def setShareTagOptionsUndefined: Self = StObject.set(x, "ShareTagOptions", js.undefined)
   }
 }

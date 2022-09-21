@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsCore.anon
 
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
@@ -8,15 +7,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait A[T /* <: Tensor[Rank] */] extends StObject {
+trait A extends StObject {
   
-  var a: T | TensorLike
+  var a: Tensor[Rank] | TensorLike
   
   var activation: js.UndefOr[typings.tensorflowTfjsCore.fusedTypesMod.Activation] = js.undefined
   
-  var b: T | TensorLike
+  var b: Tensor[Rank] | TensorLike
   
   var bias: js.UndefOr[Tensor[Rank] | TensorLike] = js.undefined
+  
+  var leakyreluAlpha: js.UndefOr[Double] = js.undefined
   
   var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.undefined
   
@@ -26,30 +27,34 @@ trait A[T /* <: Tensor[Rank] */] extends StObject {
 }
 object A {
   
-  inline def apply[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): A[T] = {
+  inline def apply(a: Tensor[Rank] | TensorLike, b: Tensor[Rank] | TensorLike): A = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any])
-    __obj.asInstanceOf[A[T]]
+    __obj.asInstanceOf[A]
   }
   
-  extension [Self <: A[?], T /* <: Tensor[Rank] */](x: Self & A[T]) {
+  extension [Self <: A](x: Self) {
     
-    inline def setA(value: T | TensorLike): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: Tensor[Rank] | TensorLike): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    inline def setAVarargs(value: Uint8Array*): Self = StObject.set(x, "a", js.Array(value :_*))
+    inline def setAVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "a", js.Array(value*))
     
     inline def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
     inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     
-    inline def setB(value: T | TensorLike): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Tensor[Rank] | TensorLike): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    inline def setBVarargs(value: Uint8Array*): Self = StObject.set(x, "b", js.Array(value :_*))
+    inline def setBVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "b", js.Array(value*))
     
     inline def setBias(value: Tensor[Rank] | TensorLike): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
     inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
-    inline def setBiasVarargs(value: Uint8Array*): Self = StObject.set(x, "bias", js.Array(value :_*))
+    inline def setBiasVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "bias", js.Array(value*))
+    
+    inline def setLeakyreluAlpha(value: Double): Self = StObject.set(x, "leakyreluAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setLeakyreluAlphaUndefined: Self = StObject.set(x, "leakyreluAlpha", js.undefined)
     
     inline def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
     

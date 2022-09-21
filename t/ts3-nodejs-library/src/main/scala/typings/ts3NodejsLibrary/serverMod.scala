@@ -11,7 +11,7 @@ object serverMod {
   
   @JSImport("ts3-nodejs-library/lib/node/Server", "TeamSpeakServer")
   @js.native
-  class TeamSpeakServer protected () extends Abstract[ServerEntry] {
+  open class TeamSpeakServer protected () extends Abstract[ServerEntry] {
     def this(parent: TeamSpeak, list: ServerEntry) = this()
     
     def autostart: Double = js.native
@@ -19,7 +19,7 @@ object serverMod {
     def clientsonline: Double = js.native
     
     /** deletes the server */
-    def del(): js.Promise[js.Array[js.Any]] = js.native
+    def del(): js.Promise[js.Array[Any]] = js.native
     
     def id: String = js.native
     
@@ -37,7 +37,7 @@ object serverMod {
       * Starts the virtual server.
       * Depending on your permissions, you're able to start either your own virtual server only or all virtual servers in the server instance.
       */
-    def start(): js.Promise[js.Array[js.Any]] = js.native
+    def start(): js.Promise[js.Array[Any]] = js.native
     
     def status: String = js.native
     
@@ -46,8 +46,8 @@ object serverMod {
       * Depending on your permissions, you're able to stop either your own virtual server only or all virtual servers in the server instance.
       * @param msg specifies a text message that is sent to the clients before the client disconnects (requires TeamSpeak Server 3.2.0 or newer).
       */
-    def stop(): js.Promise[js.Array[js.Any]] = js.native
-    def stop(msg: String): js.Promise[js.Array[js.Any]] = js.native
+    def stop(): js.Promise[js.Array[Any]] = js.native
+    def stop(msg: String): js.Promise[js.Array[Any]] = js.native
     
     def uniqueIdentifier: String = js.native
     
@@ -57,8 +57,8 @@ object serverMod {
       * selects a virtual server
       * @param client_nickname sets the nickname when selecting a server
       */
-    def use(): js.Promise[js.Array[js.Any]] = js.native
-    def use(clientNickname: String): js.Promise[js.Array[js.Any]] = js.native
+    def use(): js.Promise[js.Array[Any]] = js.native
+    def use(clientNickname: String): js.Promise[js.Array[Any]] = js.native
   }
   /* static members */
   object TeamSpeakServer {

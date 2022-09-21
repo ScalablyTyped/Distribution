@@ -10,37 +10,37 @@ trait ConfigOptions extends StObject {
   
   var apiVersion: js.UndefOr[String] = js.undefined
   
-  var connectionClass: js.UndefOr[String | (Instantiable2[/* host */ js.Any, /* config */ js.Any, ^])] = js.undefined
+  var connectionClass: js.UndefOr[String | (Instantiable2[/* host */ Any, /* config */ Any, ^])] = js.undefined
   
-  var createNodeAgent: js.UndefOr[js.Any] = js.undefined
+  var createNodeAgent: js.UndefOr[Any] = js.undefined
   
   var deadTimeout: js.UndefOr[Double] = js.undefined
   
   var defer: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var host: js.UndefOr[js.Any] = js.undefined
+  var host: js.UndefOr[Any] = js.undefined
   
-  var hosts: js.UndefOr[js.Any] = js.undefined
+  var hosts: js.UndefOr[Any] = js.undefined
   
   var httpAuth: js.UndefOr[String] = js.undefined
   
   var keepAlive: js.UndefOr[Boolean] = js.undefined
   
-  var log: js.UndefOr[js.Any] = js.undefined
+  var log: js.UndefOr[Any] = js.undefined
   
   var maxRetries: js.UndefOr[Double] = js.undefined
   
   var maxSockets: js.UndefOr[Double] = js.undefined
   
-  var nodesToHostCallback: js.UndefOr[js.Any] = js.undefined
+  var nodesToHostCallback: js.UndefOr[Any] = js.undefined
   
   var pingTimeout: js.UndefOr[Double] = js.undefined
   
-  var plugins: js.UndefOr[js.Any] = js.undefined
+  var plugins: js.UndefOr[Any] = js.undefined
   
   var requestTimeout: js.UndefOr[Double] = js.undefined
   
-  var selector: js.UndefOr[js.Any] = js.undefined
+  var selector: js.UndefOr[Any] = js.undefined
   
   var sniffInterval: js.UndefOr[Double] = js.undefined
   
@@ -67,11 +67,11 @@ object ConfigOptions {
     
     inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    inline def setConnectionClass(value: String | (Instantiable2[/* host */ js.Any, /* config */ js.Any, ^])): Self = StObject.set(x, "connectionClass", value.asInstanceOf[js.Any])
+    inline def setConnectionClass(value: String | (Instantiable2[/* host */ Any, /* config */ Any, ^])): Self = StObject.set(x, "connectionClass", value.asInstanceOf[js.Any])
     
     inline def setConnectionClassUndefined: Self = StObject.set(x, "connectionClass", js.undefined)
     
-    inline def setCreateNodeAgent(value: js.Any): Self = StObject.set(x, "createNodeAgent", value.asInstanceOf[js.Any])
+    inline def setCreateNodeAgent(value: Any): Self = StObject.set(x, "createNodeAgent", value.asInstanceOf[js.Any])
     
     inline def setCreateNodeAgentUndefined: Self = StObject.set(x, "createNodeAgent", js.undefined)
     
@@ -83,11 +83,11 @@ object ConfigOptions {
     
     inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
-    inline def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setHosts(value: js.Any): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+    inline def setHosts(value: Any): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
     inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
     
@@ -99,7 +99,7 @@ object ConfigOptions {
     
     inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
-    inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
@@ -111,7 +111,7 @@ object ConfigOptions {
     
     inline def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
     
-    inline def setNodesToHostCallback(value: js.Any): Self = StObject.set(x, "nodesToHostCallback", value.asInstanceOf[js.Any])
+    inline def setNodesToHostCallback(value: Any): Self = StObject.set(x, "nodesToHostCallback", value.asInstanceOf[js.Any])
     
     inline def setNodesToHostCallbackUndefined: Self = StObject.set(x, "nodesToHostCallback", js.undefined)
     
@@ -119,7 +119,7 @@ object ConfigOptions {
     
     inline def setPingTimeoutUndefined: Self = StObject.set(x, "pingTimeout", js.undefined)
     
-    inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
@@ -127,7 +127,7 @@ object ConfigOptions {
     
     inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
     
-    inline def setSelector(value: js.Any): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: Any): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     

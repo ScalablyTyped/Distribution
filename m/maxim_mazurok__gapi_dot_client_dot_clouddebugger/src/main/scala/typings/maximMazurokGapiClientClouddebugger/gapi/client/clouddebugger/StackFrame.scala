@@ -31,7 +31,7 @@ object StackFrame {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: Variable*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Variable*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
@@ -41,7 +41,7 @@ object StackFrame {
     
     inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
-    inline def setLocalsVarargs(value: Variable*): Self = StObject.set(x, "locals", js.Array(value :_*))
+    inline def setLocalsVarargs(value: Variable*): Self = StObject.set(x, "locals", js.Array(value*))
     
     inline def setLocation(value: SourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

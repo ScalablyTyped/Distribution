@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.TickerEvent")
 @js.native
-class TickerEvent ()
+open class TickerEvent ()
   extends StObject
      with typings.easeljs.createjs.TickerEvent {
   

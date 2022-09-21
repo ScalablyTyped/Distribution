@@ -36,6 +36,6 @@ object TimeEvents {
     
     inline def setTimeEventUndefined: Self = StObject.set(x, "timeEvent", js.undefined)
     
-    inline def setTimeEventVarargs(value: TimeEvent*): Self = StObject.set(x, "timeEvent", js.Array(value :_*))
+    inline def setTimeEventVarargs(value: TimeEvent*): Self = StObject.set(x, "timeEvent", js.Array(value*))
   }
 }

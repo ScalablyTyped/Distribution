@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TokenValidityUnitsType extends StObject {
   
   /**
-    *  A time unit in “seconds”, “minutes”, “hours” or “days” for the value in AccessTokenValidity, defaults to hours.
+    *  A time unit of seconds, minutes, hours, or days for the value that you set in the AccessTokenValidity parameter. The default AccessTokenValidity time unit is hours.
     */
   var AccessToken: js.UndefOr[TimeUnitsType] = js.undefined
   
   /**
-    * A time unit in “seconds”, “minutes”, “hours” or “days” for the value in IdTokenValidity, defaults to hours.
+    * A time unit of seconds, minutes, hours, or days for the value that you set in the IdTokenValidity parameter. The default IdTokenValidity time unit is hours.
     */
   var IdToken: js.UndefOr[TimeUnitsType] = js.undefined
   
   /**
-    * A time unit in “seconds”, “minutes”, “hours” or “days” for the value in RefreshTokenValidity, defaults to days.
+    * A time unit of seconds, minutes, hours, or days for the value that you set in the RefreshTokenValidity parameter. The default RefreshTokenValidity time unit is days.
     */
   var RefreshToken: js.UndefOr[TimeUnitsType] = js.undefined
 }

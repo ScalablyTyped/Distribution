@@ -4,29 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "inkAnalysisLine.toJSON()". */
+/** An interface describing the data returned by calling `inkAnalysisLine.toJSON()`. */
 trait InkAnalysisLineData extends StObject {
   
   /**
-    *
     * Gets the ID of the InkAnalysisLine object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Reference to the parent InkAnalysisParagraph. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var paragraph: js.UndefOr[InkAnalysisParagraphData] = js.undefined
   
   /**
-    *
     * Gets the ink analysis words in this ink analysis line. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var words: js.UndefOr[js.Array[InkAnalysisWordData]] = js.undefined
@@ -52,6 +52,6 @@ object InkAnalysisLineData {
     
     inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    inline def setWordsVarargs(value: InkAnalysisWordData*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: InkAnalysisWordData*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

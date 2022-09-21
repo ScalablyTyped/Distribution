@@ -20,6 +20,11 @@ trait DescribeProductAsAdminInput extends StObject {
     * The product name.
     */
   var Name: js.UndefOr[ProductViewName] = js.undefined
+  
+  /**
+    * The unique identifier of the shared portfolio that the specified product is associated with. You can provide this parameter to retrieve the shared TagOptions associated with the product. If this parameter is provided and if TagOptions sharing is enabled in the portfolio share, the API returns both local and shared TagOptions associated with the product. Otherwise only local TagOptions will be returned. 
+    */
+  var SourcePortfolioId: js.UndefOr[Id] = js.undefined
 }
 object DescribeProductAsAdminInput {
   
@@ -41,5 +46,9 @@ object DescribeProductAsAdminInput {
     inline def setName(value: ProductViewName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setSourcePortfolioId(value: Id): Self = StObject.set(x, "SourcePortfolioId", value.asInstanceOf[js.Any])
+    
+    inline def setSourcePortfolioIdUndefined: Self = StObject.set(x, "SourcePortfolioId", js.undefined)
   }
 }

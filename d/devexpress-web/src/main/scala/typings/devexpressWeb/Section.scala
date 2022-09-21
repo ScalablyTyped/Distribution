@@ -51,11 +51,11 @@ object Section {
     
     inline def setFooters(value: js.Array[HeaderFooter]): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
     
-    inline def setFootersVarargs(value: HeaderFooter*): Self = StObject.set(x, "footers", js.Array(value :_*))
+    inline def setFootersVarargs(value: HeaderFooter*): Self = StObject.set(x, "footers", js.Array(value*))
     
     inline def setHeaders(value: js.Array[HeaderFooter]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: HeaderFooter*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: HeaderFooter*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

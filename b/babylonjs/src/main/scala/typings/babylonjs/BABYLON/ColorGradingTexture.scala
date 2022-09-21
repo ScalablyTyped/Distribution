@@ -9,24 +9,24 @@ trait ColorGradingTexture
   extends StObject
      with BaseTexture {
   
-  /* private */ var _onLoad: js.Any = js.native
-  
-  /* private */ var _textureMatrix: js.Any = js.native
-  
-  /**
-    * Fires the onload event from the constructor if requested.
-    */
-  /* private */ var _triggerOnLoad: js.Any = js.native
-  
   /**
     * Occurs when the file being loaded is a .3dl LUT file.
     */
-  /* private */ var load3dlTexture: js.Any = js.native
+  /* private */ var _load3dlTexture: Any = js.native
   
   /**
     * Starts the loading process of the texture.
     */
-  /* private */ var loadTexture: js.Any = js.native
+  /* private */ var _loadTexture: Any = js.native
+  
+  /* private */ var _onLoad: Any = js.native
+  
+  /* private */ var _textureMatrix: Any = js.native
+  
+  /**
+    * Fires the onload event from the constructor if requested.
+    */
+  /* private */ var _triggerOnLoad: Any = js.native
   
   /**
     * The texture URL.

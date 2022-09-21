@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.std.EventInit
 import typings.std.EventTarget
 import typings.std.Map
-import typings.std.Uint8Array
 import typings.webmidi.webmidiStrings.input
 import typings.webmidi.webmidiStrings.midimessage
 import typings.webmidi.webmidiStrings.output
@@ -24,18 +23,18 @@ object WebMidi {
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any]
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -103,18 +102,18 @@ object WebMidi {
     @JSName("addEventListener")
     def addEventListener_midimessage(
       `type`: midimessage,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, js.Any]
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_midimessage(
       `type`: midimessage,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_midimessage(
       `type`: midimessage,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -138,7 +137,7 @@ object WebMidi {
     /**
       * A Uint8Array containing the MIDI data bytes of a single MIDI message.
       */
-    var data: Uint8Array = js.native
+    var data: js.typedarray.Uint8Array = js.native
     
     /**
       * A timestamp specifying when the event occurred.
@@ -153,7 +152,7 @@ object WebMidi {
     /**
       * A Uint8Array containing the MIDI data bytes of a single MIDI message.
       */
-    var data: Uint8Array
+    var data: js.typedarray.Uint8Array
     
     /**
       * A timestamp specifying when the event occurred.
@@ -162,14 +161,14 @@ object WebMidi {
   }
   object MIDIMessageEventInit {
     
-    inline def apply(data: Uint8Array, receivedTime: Double): MIDIMessageEventInit = {
+    inline def apply(data: js.typedarray.Uint8Array, receivedTime: Double): MIDIMessageEventInit = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], receivedTime = receivedTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[MIDIMessageEventInit]
     }
     
     extension [Self <: MIDIMessageEventInit](x: Self) {
       
-      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setReceivedTime(value: Double): Self = StObject.set(x, "receivedTime", value.asInstanceOf[js.Any])
     }
@@ -218,8 +217,8 @@ object WebMidi {
       */
     def send(data: js.Array[Double]): Unit = js.native
     def send(data: js.Array[Double], timestamp: Double): Unit = js.native
-    def send(data: Uint8Array): Unit = js.native
-    def send(data: Uint8Array, timestamp: Double): Unit = js.native
+    def send(data: js.typedarray.Uint8Array): Unit = js.native
+    def send(data: js.typedarray.Uint8Array, timestamp: Double): Unit = js.native
     
     @JSName("type")
     var type_MIDIOutput: output = js.native
@@ -239,18 +238,18 @@ object WebMidi {
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any]
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     

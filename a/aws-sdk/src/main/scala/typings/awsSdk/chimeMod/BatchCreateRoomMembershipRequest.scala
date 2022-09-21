@@ -34,7 +34,7 @@ object BatchCreateRoomMembershipRequest {
     
     inline def setMembershipItemList(value: MembershipItemList): Self = StObject.set(x, "MembershipItemList", value.asInstanceOf[js.Any])
     
-    inline def setMembershipItemListVarargs(value: MembershipItem*): Self = StObject.set(x, "MembershipItemList", js.Array(value :_*))
+    inline def setMembershipItemListVarargs(value: MembershipItem*): Self = StObject.set(x, "MembershipItemList", js.Array(value*))
     
     inline def setRoomId(value: NonEmptyString): Self = StObject.set(x, "RoomId", value.asInstanceOf[js.Any])
   }

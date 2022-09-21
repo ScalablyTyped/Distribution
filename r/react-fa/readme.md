@@ -10,10 +10,10 @@ Font Awesome icons as React components
 | ------------------ | :-------------: |
 | Full name          | react-fa |
 | Keywords           | react, react-component, font-awesome, icons |
-| # releases         | 1 |
-| # dependents       | 33 |
-| # downloads        | 336310 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 27658.0 |
+| # stars            | 499.0 |
 
 ## Links
 - [Homepage](http://andreypopp.github.io/react-fa/)

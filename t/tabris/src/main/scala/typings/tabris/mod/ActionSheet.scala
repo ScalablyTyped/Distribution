@@ -1,7 +1,7 @@
 package typings.tabris.mod
 
 import typings.tabris.anon.OmitActionSheetset
-import typings.tabris.anon.`16`
+import typings.tabris.anon.`13`
 import typings.tabris.tabrisStrings.actions
 import typings.tabris.tabrisStrings.message
 import typings.tabris.tabrisStrings.set
@@ -12,7 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "ActionSheet")
 @js.native
-class ActionSheet () extends Popup {
+/**
+  * A pop up dialog that offers a selection. Is automatically disposed when closed.
+  * 
+  * This constructor can be called as a factory, without "new". Doing so allows passing an attributes
+  * object which may include (in addition to the properties) children, event listeners and layout
+  * shorthands.
+  */
+open class ActionSheet () extends Popup {
   def this(properties: Properties[ActionSheet, OmitActionSheetset]) = this()
   
   /**
@@ -25,7 +32,7 @@ class ActionSheet () extends Popup {
     * @constant
     */
   @JSName("jsxAttributes")
-  val jsxAttributes_ActionSheet: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `16` = js.native
+  val jsxAttributes_ActionSheet: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `13` = js.native
   
   /**
     * A descriptive message for the available actions.

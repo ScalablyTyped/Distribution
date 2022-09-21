@@ -48,7 +48,7 @@ object ImportInstanceRequest {
     
     inline def setDiskImagesUndefined: Self = StObject.set(x, "DiskImages", js.undefined)
     
-    inline def setDiskImagesVarargs(value: DiskImage*): Self = StObject.set(x, "DiskImages", js.Array(value :_*))
+    inline def setDiskImagesVarargs(value: DiskImage*): Self = StObject.set(x, "DiskImages", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

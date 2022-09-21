@@ -5,6 +5,7 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactNavigationCore.typesMod.NavigationContainerProps
 import typings.reactNavigationCore.typesMod.NavigationContainerRef
+import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +23,10 @@ object baseNavigationContainerMod extends Shortcut {
     */
   @JSImport("@react-navigation/core/lib/typescript/src/BaseNavigationContainer", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef]] = js.native
+  val default: ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef[ParamListBase]]] = js.native
   
-  type _To = ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef]]
+  type _To = ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef[ParamListBase]]]
   
   /* This means you don't have to write `default`, but can instead just say `baseNavigationContainerMod.foo` */
-  override def _to: ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef]] = default
+  override def _to: ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef[ParamListBase]]] = default
 }

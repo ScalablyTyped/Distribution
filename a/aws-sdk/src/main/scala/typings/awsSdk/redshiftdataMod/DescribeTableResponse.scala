@@ -34,7 +34,7 @@ object DescribeTableResponse {
     
     inline def setColumnListUndefined: Self = StObject.set(x, "ColumnList", js.undefined)
     
-    inline def setColumnListVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnList", js.Array(value :_*))
+    inline def setColumnListVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

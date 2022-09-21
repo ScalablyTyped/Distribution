@@ -1,7 +1,7 @@
 package typings.reactJsonschemaForm.mod
 
 import typings.jsonSchema.mod.JSONSchema6
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.reactJsonschemaForm.anon.Children
 import typings.reactJsonschemaForm.anon.Definitions
 import typings.reactJsonschemaForm.anon.Description
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ArrayFieldTemplateProps[T] extends StObject {
   
-  var DescriptionField: StatelessComponent[Description]
+  var DescriptionField: FunctionComponent[Description]
   
-  var TitleField: StatelessComponent[Id]
+  var TitleField: FunctionComponent[Id]
   
   var canAdd: Boolean
   
@@ -22,15 +22,15 @@ trait ArrayFieldTemplateProps[T] extends StObject {
   
   var disabled: Boolean
   
-  var formContext: js.Any
+  var formContext: Any
   
   var formData: T
   
-  var idSchema: IdSchema[js.Any]
+  var idSchema: IdSchema[Any]
   
   var items: js.Array[Children]
   
-  def onAddClick(event: js.Any): js.Function1[/* event */ js.Any, Unit]
+  def onAddClick(event: Any): js.Function1[/* event */ Any, Unit]
   
   var readonly: Boolean
   
@@ -47,16 +47,16 @@ trait ArrayFieldTemplateProps[T] extends StObject {
 object ArrayFieldTemplateProps {
   
   inline def apply[T](
-    DescriptionField: StatelessComponent[Description],
-    TitleField: StatelessComponent[Id],
+    DescriptionField: FunctionComponent[Description],
+    TitleField: FunctionComponent[Id],
     canAdd: Boolean,
     className: String,
     disabled: Boolean,
-    formContext: js.Any,
+    formContext: Any,
     formData: T,
-    idSchema: IdSchema[js.Any],
+    idSchema: IdSchema[Any],
     items: js.Array[Children],
-    onAddClick: js.Any => js.Function1[/* event */ js.Any, Unit],
+    onAddClick: Any => js.Function1[/* event */ Any, Unit],
     readonly: Boolean,
     registry: Definitions,
     required: Boolean,
@@ -74,21 +74,21 @@ object ArrayFieldTemplateProps {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionField(value: StatelessComponent[Description]): Self = StObject.set(x, "DescriptionField", value.asInstanceOf[js.Any])
+    inline def setDescriptionField(value: FunctionComponent[Description]): Self = StObject.set(x, "DescriptionField", value.asInstanceOf[js.Any])
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+    inline def setFormContext(value: Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
     inline def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    inline def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+    inline def setIdSchema(value: IdSchema[Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     
     inline def setItems(value: js.Array[Children]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Children*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Children*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setOnAddClick(value: js.Any => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onAddClick", js.Any.fromFunction1(value))
+    inline def setOnAddClick(value: Any => js.Function1[/* event */ Any, Unit]): Self = StObject.set(x, "onAddClick", js.Any.fromFunction1(value))
     
     inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
@@ -100,7 +100,7 @@ object ArrayFieldTemplateProps {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setTitleField(value: StatelessComponent[Id]): Self = StObject.set(x, "TitleField", value.asInstanceOf[js.Any])
+    inline def setTitleField(value: FunctionComponent[Id]): Self = StObject.set(x, "TitleField", value.asInstanceOf[js.Any])
     
     inline def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
   }

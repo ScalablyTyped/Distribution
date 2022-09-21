@@ -47,7 +47,7 @@ object TypeaheadState {
     
     inline def setSelected(value: js.Array[T]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    inline def setSelectedVarargs(value: T*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: T*): Self = StObject.set(x, "selected", js.Array(value*))
     
     inline def setShowMenu(value: Boolean): Self = StObject.set(x, "showMenu", value.asInstanceOf[js.Any])
     

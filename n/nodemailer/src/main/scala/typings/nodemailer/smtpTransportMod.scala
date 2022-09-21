@@ -3,6 +3,7 @@ package typings.nodemailer
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import typings.node.tlsMod.ConnectionOptions
+import typings.nodemailer.mailerMod.Address
 import typings.nodemailer.mimeNodeMod.Envelope
 import typings.nodemailer.mod.Transport
 import typings.nodemailer.mod.TransportOptions
@@ -19,7 +20,6 @@ import typings.nodemailer.smtpConnectionMod.Credentials
 import typings.nodemailer.smtpConnectionMod.CustomAuthenticationHandlers
 import typings.nodemailer.smtpConnectionMod.DSNOptions
 import typings.nodemailer.smtpConnectionMod.ms
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,7 @@ object smtpTransportMod {
   
   @JSImport("nodemailer/lib/smtp-transport", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SMTPTransport {
+  open class ^ protected () extends SMTPTransport {
     def this(options: String) = this()
     def this(options: Options) = this()
     
@@ -37,13 +37,13 @@ object smtpTransportMod {
     
     /* CompleteClass */
     override def send(
-      mail: typings.nodemailer.mailMessageMod.^,
-      callback: js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]
+      mail: typings.nodemailer.mailMessageMod.^[SentMessageInfo],
+      callback: js.Function2[/* err */ js.Error | Null, SentMessageInfo, Unit]
     ): Unit = js.native
     
     /* CompleteClass */
     var verify: (js.UndefOr[
-        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+        js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
       ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
     
     /* CompleteClass */
@@ -208,7 +208,7 @@ object smtpTransportMod {
     var getSocket: js.UndefOr[
         js.Function2[
           /* options */ this.type, 
-          /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit], 
+          /* callback */ js.Function2[/* err */ js.Error | Null, /* socketOptions */ Any, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -290,7 +290,7 @@ object smtpTransportMod {
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
       inline def setGetSocket(
-        value: (Options, /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit]) => Unit
+        value: (Options, /* callback */ js.Function2[/* err */ js.Error | Null, /* socketOptions */ Any, Unit]) => Unit
       ): Self = StObject.set(x, "getSocket", js.Any.fromFunction2(value))
       
       inline def setGetSocketUndefined: Self = StObject.set(x, "getSocket", js.undefined)
@@ -364,12 +364,12 @@ object smtpTransportMod {
   @js.native
   trait SMTPTransport
     extends EventEmitter
-       with Transport {
+       with Transport[SentMessageInfo] {
     
     @JSName("addListener")
     def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     var auth: AuthenticationType = js.native
     
@@ -380,7 +380,7 @@ object smtpTransportMod {
     @JSName("emit")
     def emit_close(event: close): Boolean = js.native
     @JSName("emit")
-    def emit_error(event: error, error: Error): Boolean = js.native
+    def emit_error(event: error, error: js.Error): Boolean = js.native
     
     def getAuth(authOpts: typings.nodemailer.smtpConnectionMod.AuthenticationTypeLogin): AuthenticationType = js.native
     def getAuth(authOpts: typings.nodemailer.smtpConnectionMod.AuthenticationTypeOAuth2): AuthenticationType = js.native
@@ -388,68 +388,97 @@ object smtpTransportMod {
     /** Placeholder function for creating proxy sockets. This method immediatelly returns without a socket */
     def getSocket(
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* socketOptions */ js.Object, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* socketOptions */ js.Object, Unit]
     ): Unit = js.native
     
     @JSName("listeners")
     def listeners_close(event: close): js.Array[js.Function0[Unit]] = js.native
     @JSName("listeners")
-    def listeners_error(event: error): js.Array[js.Function1[/* err */ Error, Unit]] = js.native
+    def listeners_error(event: error): js.Array[js.Function1[/* err */ js.Error, Unit]] = js.native
     
     var logger: Logger = js.native
     
     @JSName("mailer")
-    var mailer_SMTPTransport: typings.nodemailer.mailerMod.^ = js.native
+    var mailer_SMTPTransport: typings.nodemailer.mailerMod.^[SentMessageInfo] = js.native
     
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("once")
     def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     var options: Options = js.native
     
     @JSName("prependListener")
     def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
     def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("verify")
     def verify_MSMTPTransport(): js.Promise[`true`] = js.native
     /** Verifies SMTP configuration */
     @JSName("verify")
-    def verify_true(callback: js.Function2[/* err */ Error | Null, `true`, Unit]): Unit = js.native
+    def verify_true(callback: js.Function2[/* err */ js.Error | Null, `true`, Unit]): Unit = js.native
   }
   
   trait SentMessageInfo extends StObject {
+    
+    var accepted: js.Array[String | Address]
     
     /** includes the envelope object for the message */
     var envelope: Envelope
     
     /** most transports should return the final Message-Id value used with this property */
     var messageId: String
+    
+    var pending: js.Array[String | Address]
+    
+    var rejected: js.Array[String | Address]
+    
+    var response: String
   }
   object SentMessageInfo {
     
-    inline def apply(envelope: Envelope, messageId: String): SentMessageInfo = {
-      val __obj = js.Dynamic.literal(envelope = envelope.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any])
+    inline def apply(
+      accepted: js.Array[String | Address],
+      envelope: Envelope,
+      messageId: String,
+      pending: js.Array[String | Address],
+      rejected: js.Array[String | Address],
+      response: String
+    ): SentMessageInfo = {
+      val __obj = js.Dynamic.literal(accepted = accepted.asInstanceOf[js.Any], envelope = envelope.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[SentMessageInfo]
     }
     
     extension [Self <: SentMessageInfo](x: Self) {
       
+      inline def setAccepted(value: js.Array[String | Address]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
+      
+      inline def setAcceptedVarargs(value: (String | Address)*): Self = StObject.set(x, "accepted", js.Array(value*))
+      
       inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
       inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      
+      inline def setPending(value: js.Array[String | Address]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      
+      inline def setPendingVarargs(value: (String | Address)*): Self = StObject.set(x, "pending", js.Array(value*))
+      
+      inline def setRejected(value: js.Array[String | Address]): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+      
+      inline def setRejectedVarargs(value: (String | Address)*): Self = StObject.set(x, "rejected", js.Array(value*))
+      
+      inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

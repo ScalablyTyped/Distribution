@@ -24,6 +24,6 @@ object ShapeEncodeEntry {
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    inline def setShapeVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "shape", js.Array(value*))
   }
 }

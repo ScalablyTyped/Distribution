@@ -34,7 +34,7 @@ object GoogleCloudDatalabelingV1beta1Example {
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: GoogleCloudDatalabelingV1beta1Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: GoogleCloudDatalabelingV1beta1Annotation*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setImagePayload(value: GoogleCloudDatalabelingV1beta1ImagePayload): Self = StObject.set(x, "imagePayload", value.asInstanceOf[js.Any])
     

@@ -33,6 +33,6 @@ object FieldInputValues {
     
     inline def setOperators(value: js.Array[Double]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
-    inline def setOperatorsVarargs(value: Double*): Self = StObject.set(x, "operators", js.Array(value :_*))
+    inline def setOperatorsVarargs(value: Double*): Self = StObject.set(x, "operators", js.Array(value*))
   }
 }

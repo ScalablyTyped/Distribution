@@ -8,18 +8,18 @@ object anon {
   
   trait AttributeGroups extends StObject {
     
-    var attributeGroups: js.Any
+    var attributeGroups: Any
   }
   object AttributeGroups {
     
-    inline def apply(attributeGroups: js.Any): AttributeGroups = {
+    inline def apply(attributeGroups: Any): AttributeGroups = {
       val __obj = js.Dynamic.literal(attributeGroups = attributeGroups.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeGroups]
     }
     
     extension [Self <: AttributeGroups](x: Self) {
       
-      inline def setAttributeGroups(value: js.Any): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
+      inline def setAttributeGroups(value: Any): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
     }
   }
   

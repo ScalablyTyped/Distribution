@@ -228,6 +228,8 @@ object mod {
     
     var autoInPlace: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var inPlaceMinBreakpoint: js.UndefOr[Double] = js.undefined
@@ -246,6 +248,10 @@ object mod {
       inline def setAutoInPlace(value: Boolean): Self = StObject.set(x, "autoInPlace", value.asInstanceOf[js.Any])
       
       inline def setAutoInPlaceUndefined: Self = StObject.set(x, "autoInPlace", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

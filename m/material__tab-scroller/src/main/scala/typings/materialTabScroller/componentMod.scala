@@ -1,8 +1,8 @@
 package typings.materialTabScroller
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialTabScroller.foundationMod.MDCTabScrollerFoundation
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,13 @@ object componentMod {
   
   @JSImport("@material/tab-scroller/component", "MDCTabScroller")
   @js.native
-  class MDCTabScroller protected () extends MDCComponent[MDCTabScrollerFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCTabScrollerFoundation, args: js.Any*) = this()
+  open class MDCTabScroller protected () extends MDCComponent[MDCTabScrollerFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCTabScrollerFoundation, args: Any*) = this()
+    
+    /* private */ var area: Any = js.native
+    
+    /* private */ var content: Any = js.native
     
     /**
       * Returns the width of the scroll content
@@ -24,6 +28,10 @@ object componentMod {
       * Returns the current visual scroll position
       */
     def getScrollPosition(): Double = js.native
+    
+    /* private */ var handleInteraction: Any = js.native
+    
+    /* private */ var handleTransitionEnd: Any = js.native
     
     /**
       * Increments the scroll value by the given amount
@@ -46,11 +54,11 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCTabScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabScroller]
+    inline def attachTo(root: typings.std.Element): MDCTabScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabScroller]
   }
   
   type MDCTabScrollerFactory = js.Function2[
-    /* el */ Element, 
+    /* el */ typings.std.Element, 
     /* foundation */ js.UndefOr[MDCTabScrollerFoundation], 
     MDCTabScroller
   ]

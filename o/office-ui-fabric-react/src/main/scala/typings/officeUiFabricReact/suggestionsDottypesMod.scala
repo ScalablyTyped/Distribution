@@ -59,7 +59,7 @@ object suggestionsDottypesMod {
   @js.native
   trait ISuggestionsCoreProps[T]
     extends StObject
-       with ClassAttributes[js.Any] {
+       with ClassAttributes[Any] {
     
     /**
       * Gets the component ref.
@@ -77,12 +77,12 @@ object suggestionsDottypesMod {
       * What should occur when a suggestion is clicked
       */
     def onSuggestionClick(): Unit = js.native
-    def onSuggestionClick(ev: Unit, item: js.Any): Unit = js.native
-    def onSuggestionClick(ev: Unit, item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: Any): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: Any, index: Double): Unit = js.native
     def onSuggestionClick(ev: Unit, item: Unit, index: Double): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
-    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any): Unit = js.native
-    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: Any): Unit = js.native
+    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: Any, index: Double): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: Unit, index: Double): Unit = js.native
     
     /**

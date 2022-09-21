@@ -19,11 +19,11 @@ trait ExistingProvider
   /**
     * An injection token. Typically an instance of `Type` or `InjectionToken`, but can be `any`.
     */
-  var provide: js.Any
+  var provide: Any
 }
 object ExistingProvider {
   
-  inline def apply(provide: js.Any, useExisting: js.Any): ExistingProvider = {
+  inline def apply(provide: Any, useExisting: Any): ExistingProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useExisting = useExisting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistingProvider]
   }
@@ -34,6 +34,6 @@ object ExistingProvider {
     
     inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    inline def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+    inline def setProvide(value: Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
   }
 }

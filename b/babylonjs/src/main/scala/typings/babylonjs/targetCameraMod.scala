@@ -15,7 +15,7 @@ object targetCameraMod {
   
   @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera")
   @js.native
-  class TargetCamera protected () extends Camera {
+  open class TargetCamera protected () extends Camera {
     /**
       * Instantiates a target camera that takes a mesh or position as a target and continues to look at it while it moves.
       * This is the base of the follow, arc rotate cameras and Free camera
@@ -23,14 +23,16 @@ object targetCameraMod {
       * @param name Defines the name of the camera in the scene
       * @param position Defines the start position of the camera in the scene
       * @param scene Defines the scene the camera belongs to
-      * @param setActiveOnSceneIfNoneActive Defines wheter the camera should be marked as active if not other active cameras have been defined
+      * @param setActiveOnSceneIfNoneActive Defines whether the camera should be marked as active if not other active cameras have been defined
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
+    def this(name: String, position: Vector3, scene: Unit, setActiveOnSceneIfNoneActive: Boolean) = this()
     def this(name: String, position: Vector3, scene: Scene, setActiveOnSceneIfNoneActive: Boolean) = this()
     
-    /* private */ var _cachedQuaternionRotationZ: js.Any = js.native
+    /* private */ var _cachedQuaternionRotationZ: Any = js.native
     
-    /* private */ var _cachedRotationZ: js.Any = js.native
+    /* private */ var _cachedRotationZ: Any = js.native
     
     /** @hidden */
     var _camMatrix: Matrix = js.native
@@ -52,12 +54,12 @@ object targetCameraMod {
     /** @hidden */
     def _decideIfNeedsToMove(): Boolean = js.native
     
-    /* private */ var _defaultUp: js.Any = js.native
+    /* private */ var _defaultUp: Any = js.native
     
     /** @hidden */
     def _getLockedTargetPosition(): Nullable[Vector3] = js.native
     
-    /* private */ var _getRigCamPositionAndTarget: js.Any = js.native
+    /* private */ var _getRigCamPositionAndTarget: Any = js.native
     
     /** @hidden */
     var _initialFocalDistance: Double = js.native
@@ -72,19 +74,19 @@ object targetCameraMod {
       * Update the up vector to apply the rotation of the camera (So if you changed the camera rotation.z this will let you update the up vector as well)
       * @returns the current camera
       */
-    /* private */ var _rotateUpVectorWithCameraRotationMatrix: js.Any = js.native
+    /* private */ var _rotateUpVectorWithCameraRotationMatrix: Any = js.native
     
-    /* private */ var _storedPosition: js.Any = js.native
+    /* private */ var _storedPosition: Any = js.native
     
-    /* private */ var _storedRotation: js.Any = js.native
+    /* private */ var _storedRotation: Any = js.native
     
-    /* private */ var _storedRotationQuaternion: js.Any = js.native
+    /* private */ var _storedRotationQuaternion: Any = js.native
     
-    /* private */ var _tmpQuaternion: js.Any = js.native
+    /* private */ var _tmpQuaternion: Any = js.native
     
-    /* private */ var _tmpTargetVector: js.Any = js.native
+    /* private */ var _tmpTargetVector: Any = js.native
     
-    /* private */ var _tmpUpVector: js.Any = js.native
+    /* private */ var _tmpUpVector: Any = js.native
     
     /** @hidden */
     var _transformedReferencePoint: Vector3 = js.native
@@ -134,8 +136,9 @@ object targetCameraMod {
     
     /**
       * Define the current target of the camera as an object or a position.
+      * Please note that locking a target will disable panning.
       */
-    var lockedTarget: js.Any = js.native
+    var lockedTarget: Any = js.native
     
     /**
       * Add constraint to the camera to prevent it to move freely in all directions and
@@ -155,7 +158,7 @@ object targetCameraMod {
     
     /**
       * Defines the target the camera should look at.
-      * @param target Defines the new target as a Vector or a mesh
+      * @param target Defines the new target as a Vector
       */
     def setTarget(target: Vector3): Unit = js.native
     
@@ -185,17 +188,17 @@ object targetCameraMod {
     
     @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera._RigCamTransformMatrix")
     @js.native
-    def _RigCamTransformMatrix: js.Any = js.native
-    inline def _RigCamTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RigCamTransformMatrix")(x.asInstanceOf[js.Any])
+    def _RigCamTransformMatrix: Any = js.native
+    inline def _RigCamTransformMatrix_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RigCamTransformMatrix")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera._TargetFocalPoint")
     @js.native
-    def _TargetFocalPoint: js.Any = js.native
-    inline def _TargetFocalPoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetFocalPoint")(x.asInstanceOf[js.Any])
+    def _TargetFocalPoint: Any = js.native
+    inline def _TargetFocalPoint_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetFocalPoint")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera._TargetTransformMatrix")
     @js.native
-    def _TargetTransformMatrix: js.Any = js.native
-    inline def _TargetTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetTransformMatrix")(x.asInstanceOf[js.Any])
+    def _TargetTransformMatrix: Any = js.native
+    inline def _TargetTransformMatrix_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetTransformMatrix")(x.asInstanceOf[js.Any])
   }
 }

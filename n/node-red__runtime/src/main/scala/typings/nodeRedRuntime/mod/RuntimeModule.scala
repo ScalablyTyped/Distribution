@@ -1,15 +1,15 @@
 package typings.nodeRedRuntime.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.express.mod.Express
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
+import typings.expressServeStaticCore.mod.Application
 import typings.node.eventsMod.EventEmitter
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import typings.node.httpsMod.Server
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
+import typings.nodeRedUtil.mod.Hooks
 import typings.nodeRedUtil.mod.Util
-import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,25 +27,13 @@ trait RuntimeModule extends StObject {
   
   var flows: FlowsModule
   
-  /**
-    * Express instance itself is a request handler, which could be invoked without
-    * third argument.
-    */
-  def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-  def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-  def httpAdmin(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-  def httpAdmin(req: IncomingMessage, res: ServerResponse): js.Any
+  var hooks: Hooks
+  
+  def httpAdmin(): Application
   @JSName("httpAdmin")
   val httpAdmin_Original: Express
   
-  /**
-    * Express instance itself is a request handler, which could be invoked without
-    * third argument.
-    */
-  def httpNode(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-  def httpNode(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-  def httpNode(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-  def httpNode(req: IncomingMessage, res: ServerResponse): js.Any
+  def httpNode(): Application
   @JSName("httpNode")
   val httpNode_Original: Express
   
@@ -57,8 +45,14 @@ trait RuntimeModule extends StObject {
     */
   def init(
     userSettings: LocalSettings,
-    httpServer: Server,
-    _adminApi: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorAPIModule */ js.Any
+    httpServer: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ],
+    _adminApi: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorAPIModule */ Any
   ): Unit
   
   /**
@@ -72,7 +66,13 @@ trait RuntimeModule extends StObject {
   
   var projects: ProjectsModule
   
-  val server: Server
+  val server: Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[typings.node.httpMod.IncomingMessage]
+    ]
+  ]
   
   var settings: SettingsModule
   
@@ -104,14 +104,27 @@ object RuntimeModule {
     context: ContextModule,
     events: EventEmitter,
     flows: FlowsModule,
+    hooks: Hooks,
     httpAdmin: Express,
     httpNode: Express,
-    init: (LocalSettings, Server, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorAPIModule */ js.Any) => Unit,
+    init: (LocalSettings, Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorAPIModule */ Any) => Unit,
     isStarted: () => js.Promise[Boolean],
     library: LibraryModule,
     nodes: NodesModule,
     projects: ProjectsModule,
-    server: Server,
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ],
     settings: SettingsModule,
     start: () => js.Promise[Unit],
     stop: () => js.Promise[Unit],
@@ -119,7 +132,7 @@ object RuntimeModule {
     util: Util,
     version: () => js.Promise[String]
   ): RuntimeModule = {
-    val __obj = js.Dynamic.literal(comms = comms.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], flows = flows.asInstanceOf[js.Any], httpAdmin = httpAdmin.asInstanceOf[js.Any], httpNode = httpNode.asInstanceOf[js.Any], init = js.Any.fromFunction3(init), isStarted = js.Any.fromFunction0(isStarted), library = library.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), storage = storage.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any], version = js.Any.fromFunction0(version))
+    val __obj = js.Dynamic.literal(comms = comms.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], flows = flows.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], httpAdmin = httpAdmin.asInstanceOf[js.Any], httpNode = httpNode.asInstanceOf[js.Any], init = js.Any.fromFunction3(init), isStarted = js.Any.fromFunction0(isStarted), library = library.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), storage = storage.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any], version = js.Any.fromFunction0(version))
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeModule]
   }
@@ -134,12 +147,20 @@ object RuntimeModule {
     
     inline def setFlows(value: FlowsModule): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
+    inline def setHooks(value: Hooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    
     inline def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
     
     inline def setHttpNode(value: Express): Self = StObject.set(x, "httpNode", value.asInstanceOf[js.Any])
     
     inline def setInit(
-      value: (LocalSettings, Server, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorAPIModule */ js.Any) => Unit
+      value: (LocalSettings, Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorAPIModule */ Any) => Unit
     ): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     inline def setIsStarted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isStarted", js.Any.fromFunction0(value))
@@ -150,7 +171,15 @@ object RuntimeModule {
     
     inline def setProjects(value: ProjectsModule): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(
+      value: Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     inline def setSettings(value: SettingsModule): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

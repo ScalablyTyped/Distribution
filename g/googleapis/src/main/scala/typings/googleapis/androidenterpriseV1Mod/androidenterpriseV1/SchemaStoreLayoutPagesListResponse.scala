@@ -4,16 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The store page resources for the enterprise.
-  */
 trait SchemaStoreLayoutPagesListResponse extends StObject {
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#storeLayoutPagesListResponse&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A store page of an enterprise.
@@ -29,14 +20,10 @@ object SchemaStoreLayoutPagesListResponse {
   
   extension [Self <: SchemaStoreLayoutPagesListResponse](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setPage(value: js.Array[SchemaStorePage]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    inline def setPageVarargs(value: SchemaStorePage*): Self = StObject.set(x, "page", js.Array(value :_*))
+    inline def setPageVarargs(value: SchemaStorePage*): Self = StObject.set(x, "page", js.Array(value*))
   }
 }

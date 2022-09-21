@@ -2,7 +2,7 @@ package typings.ledgerhqHwTransport
 
 import typings.ledgerhqHwTransport.ledgerhqHwTransportStrings.add
 import typings.ledgerhqHwTransport.ledgerhqHwTransportStrings.remove
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("@ledgerhq/hw-transport", JSImport.Default)
   @js.native
-  class default[TDescriptor /* <: Descriptor */] ()
+  open class default[TDescriptor /* <: Descriptor */] ()
     extends StObject
        with Transport[TDescriptor]
   object default {
@@ -42,20 +42,20 @@ object mod {
     /* static member */
     inline def open(descriptor: Descriptor): js.Promise[
         Transport[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(descriptor.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
         Transport[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ Any
         ]
       ]]
     inline def open(descriptor: Descriptor, timeout: Double): js.Promise[
         Transport[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ Any
         ]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(descriptor.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
         Transport[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ Any
         ]
       ]]
   }
@@ -92,30 +92,30 @@ object mod {
     }
   }
   
-  type Device = js.Any
+  type Device = Any
   
   trait Observer[Ev] extends StObject {
     
-    def complete(): js.Any
+    def complete(): Any
     
-    def error(e: js.Any): js.Any
+    def error(e: Any): Any
     
-    def next(event: Ev): js.Any
+    def next(event: Ev): Any
   }
   object Observer {
     
-    inline def apply[Ev](complete: () => js.Any, error: js.Any => js.Any, next: Ev => js.Any): Observer[Ev] = {
+    inline def apply[Ev](complete: () => Any, error: Any => Any, next: Ev => Any): Observer[Ev] = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Observer[Ev]]
     }
     
     extension [Self <: Observer[?], Ev](x: Self & Observer[Ev]) {
       
-      inline def setComplete(value: () => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      inline def setError(value: js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: Any => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      inline def setNext(value: Ev => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: Ev => Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -141,13 +141,13 @@ object mod {
     
     def close(): js.Promise[Unit] = js.native
     
-    def decorateAppAPIMethods(self: js.Any, methods: js.Array[String], scrambleKey: String): Unit = js.native
+    def decorateAppAPIMethods(self: Any, methods: js.Array[String], scrambleKey: String): Unit = js.native
     
     def exchange(apdu: Buffer): js.Promise[Buffer] = js.native
     
-    def off(eventName: String, cb: js.Any): Unit = js.native
+    def off(eventName: String, cb: Any): Unit = js.native
     
-    def on(eventName: String, cb: js.Any): Unit = js.native
+    def on(eventName: String, cb: Any): Unit = js.native
     
     /**
       * A wrapper around exchange to simplify work of the implementation.

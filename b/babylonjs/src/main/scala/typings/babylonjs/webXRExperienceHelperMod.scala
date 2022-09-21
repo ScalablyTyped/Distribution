@@ -18,21 +18,29 @@ object webXRExperienceHelperMod {
   @js.native
   /**
     * Creates a WebXRExperienceHelper
-    * @param scene The scene the helper should be created in
+    * @param _scene The scene the helper should be created in
     */
-  /* private */ class WebXRExperienceHelper ()
+  /* private */ open class WebXRExperienceHelper ()
     extends StObject
        with IDisposable {
     
-    /* private */ var _nonVRCamera: js.Any = js.native
+    /* private */ var _attachedToElement: Any = js.native
     
-    /* private */ var _nonXRToXRCamera: js.Any = js.native
+    /* private */ var _nonVRCamera: Any = js.native
     
-    /* private */ var _originalSceneAutoClear: js.Any = js.native
+    /* private */ var _nonXRToXRCamera: Any = js.native
     
-    /* private */ var _setState: js.Any = js.native
+    /* private */ var _originalSceneAutoClear: Any = js.native
     
-    /* private */ var _supported: js.Any = js.native
+    /* private */ var _scene: Any = js.native
+    
+    /* private */ var _setState: Any = js.native
+    
+    /* private */ var _spectatorCamera: Any = js.native
+    
+    /* private */ var _spectatorMode: Any = js.native
+    
+    /* private */ var _supported: Any = js.native
     
     /**
       * Camera used to render xr content
@@ -44,6 +52,15 @@ object webXRExperienceHelperMod {
       */
     /* CompleteClass */
     override def dispose(): Unit = js.native
+    
+    /**
+      * Enable spectator mode for desktop VR experiences.
+      * When spectator mode is enabled a camera will be attached to the desktop canvas and will
+      * display the first rig camera's view on the desktop canvas.
+      * Please note that this will degrade performance, as it requires another camera render.
+      * It is also not recommended to enable this in devices like the quest, as it brings no benefit there.
+      */
+    def enableSpectatorMode(): Unit = js.native
     
     /**
       * Enters XR mode (This must be done within a user interaction in most browsers eg. button click)
@@ -94,8 +111,6 @@ object webXRExperienceHelperMod {
       * Fires when the state of the experience helper has changed
       */
     var onStateChangedObservable: Observable[WebXRState] = js.native
-    
-    /* private */ var scene: js.Any = js.native
     
     /** Session manager used to keep track of xr session */
     var sessionManager: WebXRSessionManager = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSchedulerCellClickEventArgs")
 @js.native
-class ASPxClientSchedulerCellClickEventArgs ()
+open class ASPxClientSchedulerCellClickEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSchedulerCellClickEventArgs {
   
@@ -17,7 +17,7 @@ class ASPxClientSchedulerCellClickEventArgs ()
     * Gets the HTML element that the event was triggered on.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
   
   /**
     * Gets the time interval of the time cells related to the event.

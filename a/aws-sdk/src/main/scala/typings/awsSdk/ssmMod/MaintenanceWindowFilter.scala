@@ -33,6 +33,6 @@ object MaintenanceWindowFilter {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: MaintenanceWindowFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: MaintenanceWindowFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

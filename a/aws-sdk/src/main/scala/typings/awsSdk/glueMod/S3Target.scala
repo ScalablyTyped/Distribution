@@ -12,6 +12,16 @@ trait S3Target extends StObject {
   var ConnectionName: js.UndefOr[typings.awsSdk.glueMod.ConnectionName] = js.undefined
   
   /**
+    * A valid Amazon dead-letter SQS ARN. For example, arn:aws:sqs:region:account:deadLetterQueue.
+    */
+  var DlqEventQueueArn: js.UndefOr[EventQueueArn] = js.undefined
+  
+  /**
+    * A valid Amazon SQS ARN. For example, arn:aws:sqs:region:account:sqs.
+    */
+  var EventQueueArn: js.UndefOr[typings.awsSdk.glueMod.EventQueueArn] = js.undefined
+  
+  /**
     * A list of glob patterns used to exclude from the crawl. For more information, see Catalog Tables with a Crawler.
     */
   var Exclusions: js.UndefOr[PathList] = js.undefined
@@ -20,6 +30,11 @@ trait S3Target extends StObject {
     * The path to the Amazon S3 target.
     */
   var Path: js.UndefOr[typings.awsSdk.glueMod.Path] = js.undefined
+  
+  /**
+    * Sets the number of files in each leaf folder to be crawled when crawling sample files in a dataset. If not set, all the files are crawled. A valid value is an integer between 1 and 249.
+    */
+  var SampleSize: js.UndefOr[NullableInteger] = js.undefined
 }
 object S3Target {
   
@@ -34,14 +49,26 @@ object S3Target {
     
     inline def setConnectionNameUndefined: Self = StObject.set(x, "ConnectionName", js.undefined)
     
+    inline def setDlqEventQueueArn(value: EventQueueArn): Self = StObject.set(x, "DlqEventQueueArn", value.asInstanceOf[js.Any])
+    
+    inline def setDlqEventQueueArnUndefined: Self = StObject.set(x, "DlqEventQueueArn", js.undefined)
+    
+    inline def setEventQueueArn(value: EventQueueArn): Self = StObject.set(x, "EventQueueArn", value.asInstanceOf[js.Any])
+    
+    inline def setEventQueueArnUndefined: Self = StObject.set(x, "EventQueueArn", js.undefined)
+    
     inline def setExclusions(value: PathList): Self = StObject.set(x, "Exclusions", value.asInstanceOf[js.Any])
     
     inline def setExclusionsUndefined: Self = StObject.set(x, "Exclusions", js.undefined)
     
-    inline def setExclusionsVarargs(value: Path*): Self = StObject.set(x, "Exclusions", js.Array(value :_*))
+    inline def setExclusionsVarargs(value: Path*): Self = StObject.set(x, "Exclusions", js.Array(value*))
     
     inline def setPath(value: Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    
+    inline def setSampleSize(value: NullableInteger): Self = StObject.set(x, "SampleSize", value.asInstanceOf[js.Any])
+    
+    inline def setSampleSizeUndefined: Self = StObject.set(x, "SampleSize", js.undefined)
   }
 }

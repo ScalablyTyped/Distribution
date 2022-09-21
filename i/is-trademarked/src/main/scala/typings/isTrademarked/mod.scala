@@ -1,7 +1,6 @@
 package typings.isTrademarked
 
 import typings.isTrademarked.isTrademarkedBooleans.`false`
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +37,7 @@ object mod {
     
     var description: String
     
-    var reg: Date
+    var reg: js.Date
     
     var serviceCode: String
     
@@ -48,7 +47,7 @@ object mod {
   }
   object TrademarkedData {
     
-    inline def apply(description: String, reg: Date, serviceCode: String, sn: String, wordmark: String): TrademarkedData = {
+    inline def apply(description: String, reg: js.Date, serviceCode: String, sn: String, wordmark: String): TrademarkedData = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], reg = reg.asInstanceOf[js.Any], serviceCode = serviceCode.asInstanceOf[js.Any], sn = sn.asInstanceOf[js.Any], wordmark = wordmark.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrademarkedData]
     }
@@ -57,7 +56,7 @@ object mod {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      inline def setReg(value: Date): Self = StObject.set(x, "reg", value.asInstanceOf[js.Any])
+      inline def setReg(value: js.Date): Self = StObject.set(x, "reg", value.asInstanceOf[js.Any])
       
       inline def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
       

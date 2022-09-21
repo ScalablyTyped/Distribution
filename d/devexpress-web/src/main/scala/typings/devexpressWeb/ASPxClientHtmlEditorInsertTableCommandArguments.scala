@@ -37,7 +37,7 @@ object ASPxClientHtmlEditorInsertTableCommandArguments {
     headers: String,
     isEqualColumnWidth: Boolean,
     rows: Double,
-    selectedElement: js.Any,
+    selectedElement: Any,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
     summary: String
   ): ASPxClientHtmlEditorInsertTableCommandArguments = {

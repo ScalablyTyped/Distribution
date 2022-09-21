@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".nanoid-Dv9xcG2u" : "3.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".nanoid-Dv9xcG2u" : "3.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

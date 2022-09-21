@@ -1,30 +1,43 @@
 package typings.reactNativeElements.anon
 
-import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.Instantiable1
+import typings.react.mod.ReactElement
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.ElementObject
-import typings.reactNativeElements.mod.InnerBorderStyleProperty
-import typings.reactNativeElements.mod.RecursivePartial
+import typings.reactNativeElements.reactNativeElementsStrings.Component
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.ButtonGroupProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/buttons/ButtonGroup.ButtonGroupProps>> */
 trait RecursivePartialPartialBuActiveOpacity extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[js.Any]]]] = js.undefined
+  var Component: js.UndefOr[
+    RecursivePartial[
+      js.UndefOr[
+        TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          typings.react.mod.Component[
+            typings.reactNativeElements.reactNativeElementsStrings.Component, 
+            js.Object, 
+            js.Object
+          ]
+        ])
+      ]
+    ]
+  ] = js.undefined
   
   var activeOpacity: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
+  
+  var button: js.UndefOr[RecursivePartial[js.UndefOr[js.Object]]] = js.undefined
   
   var buttonContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
   var buttonStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var buttons: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[ElementObject | String]]]] = js.undefined
-  
-  var containerBorderRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
+  var buttons: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[String | ReactElement]]]] = js.undefined
   
   var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
@@ -38,11 +51,11 @@ trait RecursivePartialPartialBuActiveOpacity extends StObject {
   
   var disabledTextStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var innerBorderStyle: js.UndefOr[RecursivePartial[js.UndefOr[InnerBorderStyleProperty]]] = js.undefined
+  var innerBorderStyle: js.UndefOr[RecursivePartial[js.UndefOr[Color]]] = js.undefined
   
   var onHideUnderlay: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]]]] = js.undefined
+  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* repeated */ Any, Unit]]]] = js.undefined
   
   var onShowUnderlay: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
@@ -77,6 +90,8 @@ object RecursivePartialPartialBuActiveOpacity {
     
     inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
+    inline def setButton(value: RecursivePartial[js.UndefOr[js.Object]]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    
     inline def setButtonContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "buttonContainerStyle", value.asInstanceOf[js.Any])
     
     inline def setButtonContainerStyleUndefined: Self = StObject.set(x, "buttonContainerStyle", js.undefined)
@@ -85,17 +100,24 @@ object RecursivePartialPartialBuActiveOpacity {
     
     inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
-    inline def setButtons(value: RecursivePartial[js.UndefOr[js.Array[ElementObject | String]]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    
+    inline def setButtons(value: RecursivePartial[js.UndefOr[js.Array[String | ReactElement]]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setComponent(value: RecursivePartial[js.UndefOr[ComponentType[js.Any]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(
+      value: RecursivePartial[
+          js.UndefOr[
+            TypeofComponent & (Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+              typings.react.mod.Component[Component, js.Object, js.Object]
+            ])
+          ]
+        ]
+    ): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
-    
-    inline def setContainerBorderRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "containerBorderRadius", value.asInstanceOf[js.Any])
-    
-    inline def setContainerBorderRadiusUndefined: Self = StObject.set(x, "containerBorderRadius", js.undefined)
     
     inline def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
@@ -121,7 +143,7 @@ object RecursivePartialPartialBuActiveOpacity {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setInnerBorderStyle(value: RecursivePartial[js.UndefOr[InnerBorderStyleProperty]]): Self = StObject.set(x, "innerBorderStyle", value.asInstanceOf[js.Any])
+    inline def setInnerBorderStyle(value: RecursivePartial[js.UndefOr[Color]]): Self = StObject.set(x, "innerBorderStyle", value.asInstanceOf[js.Any])
     
     inline def setInnerBorderStyleUndefined: Self = StObject.set(x, "innerBorderStyle", js.undefined)
     
@@ -129,7 +151,7 @@ object RecursivePartialPartialBuActiveOpacity {
     
     inline def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
     
-    inline def setOnPress(value: RecursivePartial[js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
+    inline def setOnPress(value: RecursivePartial[js.UndefOr[js.Function1[/* repeated */ Any, Unit]]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
     
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     

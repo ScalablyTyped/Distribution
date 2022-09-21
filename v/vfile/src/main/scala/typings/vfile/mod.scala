@@ -1,283 +1,50 @@
 package typings.vfile
 
-import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Uint8Array
-import typings.unist.mod.Node
-import typings.unist.mod.Point
-import typings.unist.mod.Position
-import typings.vfileMessage.mod.VFileMessage
+import typings.node.bufferMod.global.Buffer
+import typings.std.Record
+import typings.vfile.libMod.Compatible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("vfile", JSImport.Namespace)
+  @JSImport("vfile", "VFile")
   @js.native
-  val ^ : js.Object & VFile = js.native
-  
   /**
-    * Encodings supported by the buffer class
+    * Create a new virtual file.
     *
-    * @remarks
-    * This is a copy of the typing from Node, copied to prevent Node globals from being needed.
-    * Copied from https://github.com/DefinitelyTyped/DefinitelyTyped/blob/a2bc1d868d81733a8969236655fa600bd3651a7b/types/node/globals.d.ts#L174
+    * If `options` is `string` or `Buffer`, it’s treated as `{value: options}`.
+    * If `options` is a `URL`, it’s treated as `{path: options}`.
+    * If `options` is a `VFile`, shallow copies its data over to the new file.
+    * All fields in `options` are set on the newly created `VFile`.
+    *
+    * Path related fields are set in the following order (least specific to
+    * most specific): `history`, `path`, `basename`, `stem`, `extname`,
+    * `dirname`.
+    *
+    * It’s not possible to set either `dirname` or `extname` without setting
+    * either `history`, `path`, `basename`, or `stem` as well.
+    *
+    * @param {Compatible} [value]
     */
-  /* Rewritten from type alias, can be one of: 
-    - typings.vfile.vfileStrings.ascii
-    - typings.vfile.vfileStrings.utf8
-    - typings.vfile.vfileStrings.`utf-8`
-    - typings.vfile.vfileStrings.utf16le
-    - typings.vfile.vfileStrings.ucs2
-    - typings.vfile.vfileStrings.`ucs-2`
-    - typings.vfile.vfileStrings.base64
-    - typings.vfile.vfileStrings.latin1
-    - typings.vfile.vfileStrings.binary
-    - typings.vfile.vfileStrings.hex
-  */
-  trait BufferEncoding extends StObject
-  object BufferEncoding {
-    
-    inline def ascii: typings.vfile.vfileStrings.ascii = "ascii".asInstanceOf[typings.vfile.vfileStrings.ascii]
-    
-    inline def base64: typings.vfile.vfileStrings.base64 = "base64".asInstanceOf[typings.vfile.vfileStrings.base64]
-    
-    inline def binary: typings.vfile.vfileStrings.binary = "binary".asInstanceOf[typings.vfile.vfileStrings.binary]
-    
-    inline def hex: typings.vfile.vfileStrings.hex = "hex".asInstanceOf[typings.vfile.vfileStrings.hex]
-    
-    inline def latin1: typings.vfile.vfileStrings.latin1 = "latin1".asInstanceOf[typings.vfile.vfileStrings.latin1]
-    
-    inline def `ucs-2`: typings.vfile.vfileStrings.`ucs-2` = "ucs-2".asInstanceOf[typings.vfile.vfileStrings.`ucs-2`]
-    
-    inline def ucs2: typings.vfile.vfileStrings.ucs2 = "ucs2".asInstanceOf[typings.vfile.vfileStrings.ucs2]
-    
-    inline def `utf-8`: typings.vfile.vfileStrings.`utf-8` = "utf-8".asInstanceOf[typings.vfile.vfileStrings.`utf-8`]
-    
-    inline def utf16le: typings.vfile.vfileStrings.utf16le = "utf16le".asInstanceOf[typings.vfile.vfileStrings.utf16le]
-    
-    inline def utf8: typings.vfile.vfileStrings.utf8 = "utf8".asInstanceOf[typings.vfile.vfileStrings.utf8]
+  open class VFile ()
+    extends typings.vfile.libMod.VFile {
+    def this(value: Compatible) = this()
   }
   
-  type Settings = StringDictionary[js.Any]
+  type Data = (Record[String, Any]) & js.Object
   
-  @js.native
-  trait VFile
-    extends StObject
-       with /* key */ StringDictionary[js.Any]
-       with _VFileCompatible {
-    
-    /**
-      * Create a new virtual file. If `options` is `string` or `Buffer`, treats it as `{contents: options}`.
-      * If `options` is a `VFile`, returns it. All other options are set on the newly created `vfile`.
-      *
-      * Path related properties are set in the following order (least specific to most specific): `history`, `path`, `basename`, `stem`, `extname`, `dirname`.
-      *
-      * It’s not possible to set either `dirname` or `extname` without setting either `history`, `path`, `basename`, or `stem` as well.
-      *
-      * @param options If `options` is `string` or `Buffer`, treats it as `{contents: options}`. If `options` is a `VFile`, returns it. All other options are set on the newly created `vfile`.
-      */
-    def apply[F /* <: VFile */](): F = js.native
-    def apply[F /* <: VFile */](input: F | VFileContents): F = js.native
-    def apply[F /* <: VFile */](input: VFileOptions): F = js.native
-    
-    /**
-      * Current name (including extension) of `vfile`.
-      * Cannot contain path separators.
-      * Cannot be nullified either (use `file.path = file.dirname` instead).
-      */
-    var basename: js.UndefOr[String] = js.native
-    
-    /**
-      * Raw value.
-      */
-    var contents: VFileContents = js.native
-    
-    /**
-      * Base of `path`.
-      * Defaults to `process.cwd()`.
-      */
-    var cwd: String = js.native
-    
-    /**
-      * Place to store custom information.
-      * It's OK to store custom data directly on the `vfile`, moving it to `data` gives a little more privacy.
-      */
-    var data: js.Any = js.native
-    
-    /**
-      * Path to parent directory of `vfile`.
-      * Cannot be set if there's no `path` yet.
-      */
-    var dirname: js.UndefOr[String] = js.native
-    
-    /**
-      * Extension (with dot) of `vfile`.
-      * Cannot be set if there's no `path` yet and cannot contain path separators.
-      */
-    var extname: js.UndefOr[String] = js.native
-    
-    /**
-      * Associates a fatal message with the file, then immediately throws it.
-      * Note: fatal errors mean a file is no longer processable.
-      * Calls `message()` internally.
-      * @param reason Reason for message. Uses the stack and message of the error if given.
-      * @param position Place at which the message occurred in `vfile`.
-      * @param ruleId Category of message.
-      */
-    def fail(reason: String): scala.Nothing = js.native
-    def fail(reason: String, position: Unit, ruleId: String): scala.Nothing = js.native
-    def fail(reason: String, position: Node): scala.Nothing = js.native
-    def fail(reason: String, position: Node, ruleId: String): scala.Nothing = js.native
-    def fail(reason: String, position: Point): scala.Nothing = js.native
-    def fail(reason: String, position: Point, ruleId: String): scala.Nothing = js.native
-    def fail(reason: String, position: Position): scala.Nothing = js.native
-    def fail(reason: String, position: Position, ruleId: String): scala.Nothing = js.native
-    
-    /**
-      * List of file-paths the file moved between.
-      */
-    var history: js.Array[String] = js.native
-    
-    /**
-      * Associates an informational message with the file, where `fatal` is set to `null`.
-      * Calls `message()` internally.
-      * @param reason Reason for message. Uses the stack and message of the error if given.
-      * @param position Place at which the message occurred in `vfile`.
-      * @param ruleId Category of message.
-      */
-    def info(reason: String): VFileMessage = js.native
-    def info(reason: String, position: Unit, ruleId: String): VFileMessage = js.native
-    def info(reason: String, position: Node): VFileMessage = js.native
-    def info(reason: String, position: Node, ruleId: String): VFileMessage = js.native
-    def info(reason: String, position: Point): VFileMessage = js.native
-    def info(reason: String, position: Point, ruleId: String): VFileMessage = js.native
-    def info(reason: String, position: Position): VFileMessage = js.native
-    def info(reason: String, position: Position, ruleId: String): VFileMessage = js.native
-    
-    /**
-      * Associates a message with the file for `reason` at `position`.
-      * When an error is passed in as `reason`, copies the stack.
-      * Each message has a `fatal` property which by default is set to `false` (ie. `warning`).
-      * @param reason Reason for message. Uses the stack and message of the error if given.
-      * @param position Place at which the message occurred in `vfile`.
-      * @param ruleId Category of message.
-      */
-    def message(reason: String): VFileMessage = js.native
-    def message(reason: String, position: Unit, ruleId: String): VFileMessage = js.native
-    def message(reason: String, position: Node): VFileMessage = js.native
-    def message(reason: String, position: Node, ruleId: String): VFileMessage = js.native
-    def message(reason: String, position: Point): VFileMessage = js.native
-    def message(reason: String, position: Point, ruleId: String): VFileMessage = js.native
-    def message(reason: String, position: Position): VFileMessage = js.native
-    def message(reason: String, position: Position, ruleId: String): VFileMessage = js.native
-    
-    /**
-      * List of messages associated with the file.
-      */
-    var messages: js.Array[VFileMessage] = js.native
-    
-    /**
-      * Path of `vfile`.
-      * Cannot be nullified.
-      */
-    var path: js.UndefOr[String] = js.native
-    
-    /**
-      * Name (without extension) of `vfile`.
-      * Cannot be nullified, and cannot contain path separators.
-      */
-    var stem: js.UndefOr[String] = js.native
-    
-    def toString(encoding: BufferEncoding): String = js.native
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.vfile.mod.VFile
-    - typings.vfile.mod.VFileOptions
-    - typings.vfile.mod.VFileContents
-  */
-  type VFileCompatible = _VFileCompatible | VFileContents
+  trait DataMap extends StObject
   
   /**
-    * VFileContents can either be text, or a Buffer like structure
-    * @remarks
-    * This does not directly use type `Buffer, because it can also be used in a browser context.
-    * Instead this leverages `Uint8Array` which is the base type for `Buffer`, and a native JavaScript construct.
+    * This is the same as `Buffer` if node types are included, `never` otherwise.
     */
-  type VFileContents = String | Uint8Array
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment, @typescript-eslint/prefer-ts-expect-error
+  // @ts-ignore It’s important to preserve this ignore statement. This makes sure
+  // it works both with and without node types.
+  // eslint-disable-next-line n/prefer-global/buffer
+  type MaybeBuffer = Buffer
   
-  trait VFileOptions
-    extends StObject
-       with /* key */ StringDictionary[js.Any]
-       with _VFileCompatible {
-    
-    var basename: js.UndefOr[String] = js.undefined
-    
-    var contents: js.UndefOr[VFileContents] = js.undefined
-    
-    var cwd: js.UndefOr[String] = js.undefined
-    
-    var data: js.UndefOr[js.Any] = js.undefined
-    
-    var dirname: js.UndefOr[String] = js.undefined
-    
-    var extname: js.UndefOr[String] = js.undefined
-    
-    var path: js.UndefOr[String] = js.undefined
-    
-    var stem: js.UndefOr[String] = js.undefined
-  }
-  object VFileOptions {
-    
-    inline def apply(): VFileOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[VFileOptions]
-    }
-    
-    extension [Self <: VFileOptions](x: Self) {
-      
-      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
-      
-      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
-      
-      inline def setContents(value: VFileContents): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
-      
-      inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
-      
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-      
-      inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
-      
-      inline def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
-      
-      inline def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
-      
-      inline def setExtnameUndefined: Self = StObject.set(x, "extname", js.undefined)
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setStem(value: String): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
-      
-      inline def setStemUndefined: Self = StObject.set(x, "stem", js.undefined)
-    }
-  }
-  
-  type VFileReporter[T] = js.Function2[/* files */ js.Array[VFile], /* options */ T, String]
-  
-  type _To = js.Object & VFile
-  
-  trait _VFileCompatible extends StObject
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & VFile = ^
+  type Value = String | MaybeBuffer
 }

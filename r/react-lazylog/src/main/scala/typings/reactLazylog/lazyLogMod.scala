@@ -17,13 +17,13 @@ object lazyLogMod {
   
   @JSImport("react-lazylog/build/LazyLog", JSImport.Default)
   @js.native
-  class default protected () extends LazyLog {
+  open class default protected () extends LazyLog {
     def this(props: LazyLogProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LazyLogProps, context: js.Any) = this()
+    def this(props: LazyLogProps, context: Any) = this()
   }
   /* static members */
   object default {
@@ -40,14 +40,14 @@ object lazyLogMod {
   
   @JSImport("react-lazylog/build/LazyLog", "LazyLog")
   @js.native
-  class LazyLog protected ()
-    extends Component[LazyLogProps, js.Object, js.Any] {
+  open class LazyLog protected ()
+    extends Component[LazyLogProps, js.Object, Any] {
     def this(props: LazyLogProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LazyLogProps, context: js.Any) = this()
+    def this(props: LazyLogProps, context: Any) = this()
   }
   /* static members */
   object LazyLog {
@@ -86,13 +86,13 @@ object lazyLogMod {
     
     var lineClassName: js.UndefOr[String] = js.undefined
     
-    var loadingComponent: js.UndefOr[js.Any] = js.undefined
+    var loadingComponent: js.UndefOr[Any] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ js.Any, js.Any]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ Any, Any]] = js.undefined
     
-    var onHighlight: js.UndefOr[js.Function1[/* range */ Range, js.Any]] = js.undefined
+    var onHighlight: js.UndefOr[js.Function1[/* range */ Range, Any]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onLoad: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var overscanRowCount: js.UndefOr[Double] = js.undefined
     
@@ -165,25 +165,25 @@ object lazyLogMod {
       
       inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      inline def setHighlightVarargs(value: Double*): Self = StObject.set(x, "highlight", js.Array(value :_*))
+      inline def setHighlightVarargs(value: Double*): Self = StObject.set(x, "highlight", js.Array(value*))
       
       inline def setLineClassName(value: String): Self = StObject.set(x, "lineClassName", value.asInstanceOf[js.Any])
       
       inline def setLineClassNameUndefined: Self = StObject.set(x, "lineClassName", js.undefined)
       
-      inline def setLoadingComponent(value: js.Any): Self = StObject.set(x, "loadingComponent", value.asInstanceOf[js.Any])
+      inline def setLoadingComponent(value: Any): Self = StObject.set(x, "loadingComponent", value.asInstanceOf[js.Any])
       
       inline def setLoadingComponentUndefined: Self = StObject.set(x, "loadingComponent", js.undefined)
       
-      inline def setOnError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Any => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnHighlight(value: /* range */ Range => js.Any): Self = StObject.set(x, "onHighlight", js.Any.fromFunction1(value))
+      inline def setOnHighlight(value: /* range */ Range => Any): Self = StObject.set(x, "onHighlight", js.Any.fromFunction1(value))
       
       inline def setOnHighlightUndefined: Self = StObject.set(x, "onHighlight", js.undefined)
       
-      inline def setOnLoad(value: () => js.Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
@@ -233,7 +233,7 @@ object lazyLogMod {
   
   trait WebsocketOptions extends StObject {
     
-    var formatMessage: js.UndefOr[js.Function1[/* message */ js.Any, String]] = js.undefined
+    var formatMessage: js.UndefOr[js.Function1[/* message */ Any, String]] = js.undefined
     
     var onClose: js.UndefOr[js.Function1[/* e */ CloseEvent, Unit]] = js.undefined
     
@@ -250,7 +250,7 @@ object lazyLogMod {
     
     extension [Self <: WebsocketOptions](x: Self) {
       
-      inline def setFormatMessage(value: /* message */ js.Any => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
+      inline def setFormatMessage(value: /* message */ Any => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
       
       inline def setFormatMessageUndefined: Self = StObject.set(x, "formatMessage", js.undefined)
       

@@ -22,8 +22,8 @@ object firewallHelperMod {
       * @param overwrite Overwrite existing rule.
       * @return A promise that resolves when the rule is created.
       */
-    inline def addFirewallRule(name: String, port: Double): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addFirewallRule")(name.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-    inline def addFirewallRule(name: String, port: Double, overwrite: Boolean): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addFirewallRule")(name.asInstanceOf[js.Any], port.asInstanceOf[js.Any], overwrite.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+    inline def addFirewallRule(name: String, port: Double): Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addFirewallRule")(name.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Promise[Any]]
+    inline def addFirewallRule(name: String, port: Double, overwrite: Boolean): Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addFirewallRule")(name.asInstanceOf[js.Any], port.asInstanceOf[js.Any], overwrite.asInstanceOf[js.Any])).asInstanceOf[Promise[Any]]
     
     /**
       * Removes a firewall rule.
@@ -32,6 +32,6 @@ object firewallHelperMod {
       * @param name The name of the rule.
       * @return A promise that resolves when the rule is removed.
       */
-    inline def removeFirewallRule(name: String): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFirewallRule")(name.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+    inline def removeFirewallRule(name: String): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFirewallRule")(name.asInstanceOf[js.Any]).asInstanceOf[Promise[Any]]
   }
 }

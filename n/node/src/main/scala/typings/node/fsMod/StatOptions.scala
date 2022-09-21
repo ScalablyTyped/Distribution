@@ -6,17 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StatOptions extends StObject {
   
-  var bigint: Boolean
+  var bigint: js.UndefOr[Boolean] = js.undefined
 }
 object StatOptions {
   
-  inline def apply(bigint: Boolean): StatOptions = {
-    val __obj = js.Dynamic.literal(bigint = bigint.asInstanceOf[js.Any])
+  inline def apply(): StatOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatOptions]
   }
   
   extension [Self <: StatOptions](x: Self) {
     
     inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+    
+    inline def setBigintUndefined: Self = StObject.set(x, "bigint", js.undefined)
   }
 }

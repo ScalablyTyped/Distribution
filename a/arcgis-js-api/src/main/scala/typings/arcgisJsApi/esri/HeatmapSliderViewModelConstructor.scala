@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HeatmapSliderViewModelConstructor
   extends StObject
-     with Instantiable0[HeatmapSliderViewModel]
+     with /**
+  * Provides the logic for the [HeatmapSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider-HeatmapSliderViewModel.html)
+  */
+Instantiable0[HeatmapSliderViewModel]
      with Instantiable1[/* properties */ HeatmapSliderViewModelProperties, HeatmapSliderViewModel]

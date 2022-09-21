@@ -1,5 +1,11 @@
 package typings.mocha.global
 
+import typings.mocha.BrowserMocha
+import typings.mocha.Mocha.HookFunction
+import typings.mocha.Mocha.PendingSuiteFunction
+import typings.mocha.Mocha.PendingTestFunction
+import typings.mocha.Mocha.SuiteFunction
+import typings.mocha.Mocha.TestFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see https://mochajs.org/api/global.html#after
   */
-inline def after: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDynamic("after").asInstanceOf[typings.mocha.Mocha.HookFunction]
+inline def after: HookFunction = js.Dynamic.global.selectDynamic("after").asInstanceOf[HookFunction]
 
 /**
   * Execute after each test case.
@@ -21,10 +27,10 @@ inline def after: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDyn
   *
   * @see https://mochajs.org/api/global.html#afterEach
   */
-inline def afterEach: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDynamic("afterEach").asInstanceOf[typings.mocha.Mocha.HookFunction]
-inline def afterEach_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dynamic.global.updateDynamic("afterEach")(x.asInstanceOf[js.Any])
+inline def afterEach: HookFunction = js.Dynamic.global.selectDynamic("afterEach").asInstanceOf[HookFunction]
+inline def afterEach_=(x: HookFunction): Unit = js.Dynamic.global.updateDynamic("afterEach")(x.asInstanceOf[js.Any])
 
-inline def after_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dynamic.global.updateDynamic("after")(x.asInstanceOf[js.Any])
+inline def after_=(x: HookFunction): Unit = js.Dynamic.global.updateDynamic("after")(x.asInstanceOf[js.Any])
 
 /**
   * Execute before running tests.
@@ -33,7 +39,7 @@ inline def after_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dynamic
   *
   * @see https://mochajs.org/api/global.html#before
   */
-inline def before: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDynamic("before").asInstanceOf[typings.mocha.Mocha.HookFunction]
+inline def before: HookFunction = js.Dynamic.global.selectDynamic("before").asInstanceOf[HookFunction]
 
 /**
   * Execute before each test case.
@@ -42,34 +48,34 @@ inline def before: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDy
   *
   * @see https://mochajs.org/api/global.html#beforeEach
   */
-inline def beforeEach: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDynamic("beforeEach").asInstanceOf[typings.mocha.Mocha.HookFunction]
-inline def beforeEach_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dynamic.global.updateDynamic("beforeEach")(x.asInstanceOf[js.Any])
+inline def beforeEach: HookFunction = js.Dynamic.global.selectDynamic("beforeEach").asInstanceOf[HookFunction]
+inline def beforeEach_=(x: HookFunction): Unit = js.Dynamic.global.updateDynamic("beforeEach")(x.asInstanceOf[js.Any])
 
-inline def before_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dynamic.global.updateDynamic("before")(x.asInstanceOf[js.Any])
-
-/**
-  * Describe a "suite" containing nested suites and tests.
-  *
-  * - _Only available when invoked via the mocha CLI._
-  */
-inline def context: typings.mocha.Mocha.SuiteFunction = js.Dynamic.global.selectDynamic("context").asInstanceOf[typings.mocha.Mocha.SuiteFunction]
-inline def context_=(x: typings.mocha.Mocha.SuiteFunction): scala.Unit = js.Dynamic.global.updateDynamic("context")(x.asInstanceOf[js.Any])
+inline def before_=(x: HookFunction): Unit = js.Dynamic.global.updateDynamic("before")(x.asInstanceOf[js.Any])
 
 /**
   * Describe a "suite" containing nested suites and tests.
   *
   * - _Only available when invoked via the mocha CLI._
   */
-inline def describe: typings.mocha.Mocha.SuiteFunction = js.Dynamic.global.selectDynamic("describe").asInstanceOf[typings.mocha.Mocha.SuiteFunction]
-inline def describe_=(x: typings.mocha.Mocha.SuiteFunction): scala.Unit = js.Dynamic.global.updateDynamic("describe")(x.asInstanceOf[js.Any])
+inline def context: SuiteFunction = js.Dynamic.global.selectDynamic("context").asInstanceOf[SuiteFunction]
+inline def context_=(x: SuiteFunction): Unit = js.Dynamic.global.updateDynamic("context")(x.asInstanceOf[js.Any])
+
+/**
+  * Describe a "suite" containing nested suites and tests.
+  *
+  * - _Only available when invoked via the mocha CLI._
+  */
+inline def describe: SuiteFunction = js.Dynamic.global.selectDynamic("describe").asInstanceOf[SuiteFunction]
+inline def describe_=(x: SuiteFunction): Unit = js.Dynamic.global.updateDynamic("describe")(x.asInstanceOf[js.Any])
 
 /**
   * Describes a test case.
   *
   * - _Only available when invoked via the mocha CLI._
   */
-inline def it: typings.mocha.Mocha.TestFunction = js.Dynamic.global.selectDynamic("it").asInstanceOf[typings.mocha.Mocha.TestFunction]
-inline def it_=(x: typings.mocha.Mocha.TestFunction): scala.Unit = js.Dynamic.global.updateDynamic("it")(x.asInstanceOf[js.Any])
+inline def it: TestFunction = js.Dynamic.global.selectDynamic("it").asInstanceOf[TestFunction]
+inline def it_=(x: TestFunction): Unit = js.Dynamic.global.updateDynamic("it")(x.asInstanceOf[js.Any])
 
 // #endregion Reporter augmentations
 // #region Browser augmentations
@@ -78,7 +84,7 @@ inline def it_=(x: typings.mocha.Mocha.TestFunction): scala.Unit = js.Dynamic.gl
   *
   * - _Only supported in the browser._
   */
-inline def mocha: typings.mocha.BrowserMocha = js.Dynamic.global.selectDynamic("mocha").asInstanceOf[typings.mocha.BrowserMocha]
+inline def mocha: BrowserMocha = js.Dynamic.global.selectDynamic("mocha").asInstanceOf[BrowserMocha]
 
 // #region Test interface augmentations
 /**
@@ -89,7 +95,7 @@ inline def mocha: typings.mocha.BrowserMocha = js.Dynamic.global.selectDynamic("
   *
   * @see https://mochajs.org/api/global.html#runWithSuite
   */
-inline def run(): scala.Unit = js.Dynamic.global.applyDynamic("run")().asInstanceOf[scala.Unit]
+inline def run(): Unit = js.Dynamic.global.applyDynamic("run")().asInstanceOf[Unit]
 
 /**
   * Execute before each test case.
@@ -98,23 +104,23 @@ inline def run(): scala.Unit = js.Dynamic.global.applyDynamic("run")().asInstanc
   *
   * @see https://mochajs.org/api/global.html#beforeEach
   */
-inline def setup: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDynamic("setup").asInstanceOf[typings.mocha.Mocha.HookFunction]
-inline def setup_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dynamic.global.updateDynamic("setup")(x.asInstanceOf[js.Any])
+inline def setup: HookFunction = js.Dynamic.global.selectDynamic("setup").asInstanceOf[HookFunction]
+inline def setup_=(x: HookFunction): Unit = js.Dynamic.global.updateDynamic("setup")(x.asInstanceOf[js.Any])
 
 /**
   * Describes a test case.
   *
   * - _Only available when invoked via the mocha CLI._
   */
-inline def specify: typings.mocha.Mocha.TestFunction = js.Dynamic.global.selectDynamic("specify").asInstanceOf[typings.mocha.Mocha.TestFunction]
-inline def specify_=(x: typings.mocha.Mocha.TestFunction): scala.Unit = js.Dynamic.global.updateDynamic("specify")(x.asInstanceOf[js.Any])
+inline def specify: TestFunction = js.Dynamic.global.selectDynamic("specify").asInstanceOf[TestFunction]
+inline def specify_=(x: TestFunction): Unit = js.Dynamic.global.updateDynamic("specify")(x.asInstanceOf[js.Any])
 
 /**
   * Describe a "suite" containing nested suites and tests.
   *
   * - _Only available when invoked via the mocha CLI._
   */
-inline def suite: typings.mocha.Mocha.SuiteFunction = js.Dynamic.global.selectDynamic("suite").asInstanceOf[typings.mocha.Mocha.SuiteFunction]
+inline def suite: SuiteFunction = js.Dynamic.global.selectDynamic("suite").asInstanceOf[SuiteFunction]
 
 /**
   * Execute before running tests.
@@ -123,8 +129,8 @@ inline def suite: typings.mocha.Mocha.SuiteFunction = js.Dynamic.global.selectDy
   *
   * @see https://mochajs.org/api/global.html#before
   */
-inline def suiteSetup: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDynamic("suiteSetup").asInstanceOf[typings.mocha.Mocha.HookFunction]
-inline def suiteSetup_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dynamic.global.updateDynamic("suiteSetup")(x.asInstanceOf[js.Any])
+inline def suiteSetup: HookFunction = js.Dynamic.global.selectDynamic("suiteSetup").asInstanceOf[HookFunction]
+inline def suiteSetup_=(x: HookFunction): Unit = js.Dynamic.global.updateDynamic("suiteSetup")(x.asInstanceOf[js.Any])
 
 /**
   * Execute after running tests.
@@ -133,10 +139,10 @@ inline def suiteSetup_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dy
   *
   * @see https://mochajs.org/api/global.html#after
   */
-inline def suiteTeardown: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDynamic("suiteTeardown").asInstanceOf[typings.mocha.Mocha.HookFunction]
-inline def suiteTeardown_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dynamic.global.updateDynamic("suiteTeardown")(x.asInstanceOf[js.Any])
+inline def suiteTeardown: HookFunction = js.Dynamic.global.selectDynamic("suiteTeardown").asInstanceOf[HookFunction]
+inline def suiteTeardown_=(x: HookFunction): Unit = js.Dynamic.global.updateDynamic("suiteTeardown")(x.asInstanceOf[js.Any])
 
-inline def suite_=(x: typings.mocha.Mocha.SuiteFunction): scala.Unit = js.Dynamic.global.updateDynamic("suite")(x.asInstanceOf[js.Any])
+inline def suite_=(x: SuiteFunction): Unit = js.Dynamic.global.updateDynamic("suite")(x.asInstanceOf[js.Any])
 
 /**
   * Execute after each test case.
@@ -145,45 +151,45 @@ inline def suite_=(x: typings.mocha.Mocha.SuiteFunction): scala.Unit = js.Dynami
   *
   * @see https://mochajs.org/api/global.html#afterEach
   */
-inline def teardown: typings.mocha.Mocha.HookFunction = js.Dynamic.global.selectDynamic("teardown").asInstanceOf[typings.mocha.Mocha.HookFunction]
-inline def teardown_=(x: typings.mocha.Mocha.HookFunction): scala.Unit = js.Dynamic.global.updateDynamic("teardown")(x.asInstanceOf[js.Any])
+inline def teardown: HookFunction = js.Dynamic.global.selectDynamic("teardown").asInstanceOf[HookFunction]
+inline def teardown_=(x: HookFunction): Unit = js.Dynamic.global.updateDynamic("teardown")(x.asInstanceOf[js.Any])
 
 /**
   * Describes a test case.
   *
   * - _Only available when invoked via the mocha CLI._
   */
-inline def test: typings.mocha.Mocha.TestFunction = js.Dynamic.global.selectDynamic("test").asInstanceOf[typings.mocha.Mocha.TestFunction]
-inline def test_=(x: typings.mocha.Mocha.TestFunction): scala.Unit = js.Dynamic.global.updateDynamic("test")(x.asInstanceOf[js.Any])
+inline def test: TestFunction = js.Dynamic.global.selectDynamic("test").asInstanceOf[TestFunction]
+inline def test_=(x: TestFunction): Unit = js.Dynamic.global.updateDynamic("test")(x.asInstanceOf[js.Any])
 
 /**
   * Pending suite.
   *
   * - _Only available when invoked via the mocha CLI._
   */
-inline def xcontext: typings.mocha.Mocha.PendingSuiteFunction = js.Dynamic.global.selectDynamic("xcontext").asInstanceOf[typings.mocha.Mocha.PendingSuiteFunction]
-inline def xcontext_=(x: typings.mocha.Mocha.PendingSuiteFunction): scala.Unit = js.Dynamic.global.updateDynamic("xcontext")(x.asInstanceOf[js.Any])
+inline def xcontext: PendingSuiteFunction = js.Dynamic.global.selectDynamic("xcontext").asInstanceOf[PendingSuiteFunction]
+inline def xcontext_=(x: PendingSuiteFunction): Unit = js.Dynamic.global.updateDynamic("xcontext")(x.asInstanceOf[js.Any])
 
 /**
   * Pending suite.
   *
   * - _Only available when invoked via the mocha CLI._
   */
-inline def xdescribe: typings.mocha.Mocha.PendingSuiteFunction = js.Dynamic.global.selectDynamic("xdescribe").asInstanceOf[typings.mocha.Mocha.PendingSuiteFunction]
-inline def xdescribe_=(x: typings.mocha.Mocha.PendingSuiteFunction): scala.Unit = js.Dynamic.global.updateDynamic("xdescribe")(x.asInstanceOf[js.Any])
+inline def xdescribe: PendingSuiteFunction = js.Dynamic.global.selectDynamic("xdescribe").asInstanceOf[PendingSuiteFunction]
+inline def xdescribe_=(x: PendingSuiteFunction): Unit = js.Dynamic.global.updateDynamic("xdescribe")(x.asInstanceOf[js.Any])
 
 /**
   * Describes a pending test case.
   *
   * - _Only available when invoked via the mocha CLI._
   */
-inline def xit: typings.mocha.Mocha.PendingTestFunction = js.Dynamic.global.selectDynamic("xit").asInstanceOf[typings.mocha.Mocha.PendingTestFunction]
-inline def xit_=(x: typings.mocha.Mocha.PendingTestFunction): scala.Unit = js.Dynamic.global.updateDynamic("xit")(x.asInstanceOf[js.Any])
+inline def xit: PendingTestFunction = js.Dynamic.global.selectDynamic("xit").asInstanceOf[PendingTestFunction]
+inline def xit_=(x: PendingTestFunction): Unit = js.Dynamic.global.updateDynamic("xit")(x.asInstanceOf[js.Any])
 
 /**
   * Describes a pending test case.
   *
   * - _Only available when invoked via the mocha CLI._
   */
-inline def xspecify: typings.mocha.Mocha.PendingTestFunction = js.Dynamic.global.selectDynamic("xspecify").asInstanceOf[typings.mocha.Mocha.PendingTestFunction]
-inline def xspecify_=(x: typings.mocha.Mocha.PendingTestFunction): scala.Unit = js.Dynamic.global.updateDynamic("xspecify")(x.asInstanceOf[js.Any])
+inline def xspecify: PendingTestFunction = js.Dynamic.global.selectDynamic("xspecify").asInstanceOf[PendingTestFunction]
+inline def xspecify_=(x: PendingTestFunction): Unit = js.Dynamic.global.updateDynamic("xspecify")(x.asInstanceOf[js.Any])

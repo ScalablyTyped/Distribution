@@ -20,6 +20,8 @@ trait Signature extends StObject {
   
   def getReturnType(): Type = js.native
   
+  def getTypeParameterAtPosition(pos: Double): Type = js.native
+  
   def getTypeParameters(): js.UndefOr[js.Array[TypeParameter]] = js.native
   
   var parameters: js.Array[Symbol] = js.native

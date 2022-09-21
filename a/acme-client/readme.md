@@ -1,7 +1,7 @@
 
 # Scala.js typings for acme-client
 
-Typings are for version 4.1.2
+Typings are for version 5.0.0
 
 ## Library description:
 Simple and unopinionated ACME client
@@ -11,9 +11,9 @@ Simple and unopinionated ACME client
 | Full name          | acme-client |
 | Keywords           | acme, client, lets, encrypt, acmev2, boulder |
 | # releases         | 14 |
-| # dependents       | 21 |
-| # downloads        | 61177 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 10446.0 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/publishlab/node-acme-client)

@@ -27,7 +27,7 @@ object setMod {
     * is not appropriate, a custom function which receives an object and returns a
     * unique string must be provided.
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with Set[T] {
     def this(toStringFunction: js.Function1[/* item */ T, String]) = this()
@@ -61,7 +61,7 @@ object setMod {
       * @protected
       */
     /* protected */ /* CompleteClass */
-    var dictionary: typings.typescriptCollections.dictionaryMod.default[T, js.Any] = js.native
+    var dictionary: typings.typescriptCollections.dictionaryMod.default[T, Any] = js.native
     
     /**
       * Performs a difference between this and another set.
@@ -161,7 +161,7 @@ object setMod {
       * @type {Object}
       * @protected
       */
-    /* protected */ var dictionary: typings.typescriptCollections.dictionaryMod.default[T, js.Any]
+    /* protected */ var dictionary: typings.typescriptCollections.dictionaryMod.default[T, Any]
     
     /**
       * Performs a difference between this and another set.
@@ -230,7 +230,7 @@ object setMod {
       add: T => Boolean,
       clear: () => Unit,
       contains: T => Boolean,
-      dictionary: typings.typescriptCollections.dictionaryMod.default[T, js.Any],
+      dictionary: typings.typescriptCollections.dictionaryMod.default[T, Any],
       difference: Set[T] => Unit,
       forEach: ILoopFunction[T] => Unit,
       intersection: Set[T] => Unit,
@@ -253,7 +253,7 @@ object setMod {
       
       inline def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      inline def setDictionary(value: typings.typescriptCollections.dictionaryMod.default[T, js.Any]): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+      inline def setDictionary(value: typings.typescriptCollections.dictionaryMod.default[T, Any]): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       
       inline def setDifference(value: Set[T] => Unit): Self = StObject.set(x, "difference", js.Any.fromFunction1(value))
       

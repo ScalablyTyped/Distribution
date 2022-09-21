@@ -11,21 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewChildDecorator
   extends StObject
      with Instantiable1[
-      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
+      (/* selector */ js.Function) | (/* selector */ ProviderToken[Any]) | (/* selector */ String), 
       typings.angularCore.mod.ViewChild
     ]
      with Instantiable2[
-      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
+      (/* selector */ js.Function) | (/* selector */ ProviderToken[Any]) | (/* selector */ String), 
       /* opts */ Read, 
       typings.angularCore.mod.ViewChild
     ] {
   
-  def apply(selector: String): js.Any = js.native
-  def apply(selector: String, opts: Read): js.Any = js.native
-  def apply(selector: js.Function): js.Any = js.native
-  def apply(selector: js.Function, opts: Read): js.Any = js.native
-  def apply(selector: InjectionToken[js.Any]): js.Any = js.native
-  def apply(selector: InjectionToken[js.Any], opts: Read): js.Any = js.native
+  def apply(selector: String): Any = js.native
+  def apply(selector: String, opts: Read): Any = js.native
+  def apply(selector: js.Function): Any = js.native
+  def apply(selector: js.Function, opts: Read): Any = js.native
   /**
     * @description
     * Property decorator that configures a view query.
@@ -54,6 +52,13 @@ trait ViewChildDecorator
     *   * A `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef)
     * template;`)
     *
+    * The following values are supported by `read`:
+    *   * Any class with the `@Component` or `@Directive` decorator
+    *   * Any provider defined on the injector of the component that is matched by the `selector` of
+    * this query
+    *   * Any provider defined through a string token (e.g. `{provide: 'token', useValue: 'val'}`)
+    *   * `TemplateRef`, `ElementRef`, and `ViewContainerRef`
+    *
     * @usageNotes
     *
     * {@example core/di/ts/viewChild/view_child_example.ts region='Component'}
@@ -64,6 +69,6 @@ trait ViewChildDecorator
     *
     * @Annotation
     */
-  def apply(selector: Type[js.Any]): js.Any = js.native
-  def apply(selector: Type[js.Any], opts: Read): js.Any = js.native
+  def apply(selector: ProviderToken[Any]): Any = js.native
+  def apply(selector: ProviderToken[Any], opts: Read): Any = js.native
 }

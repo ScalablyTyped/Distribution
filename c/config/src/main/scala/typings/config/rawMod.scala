@@ -12,7 +12,7 @@ object rawMod {
   
   @JSImport("config/raw", "RawConfig")
   @js.native
-  class RawConfig[T] protected () extends StObject {
+  open class RawConfig[T] protected () extends StObject {
     def this(rawObj: T) = this()
     
     def resolve(): T = js.native

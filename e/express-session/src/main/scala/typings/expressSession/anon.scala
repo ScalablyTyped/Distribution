@@ -21,7 +21,7 @@ object anon {
     var cookie: Cookie & js.UndefOr[Cookie] = js.native
     
     /** Destroys the session and will unset the `req.session` property. Once complete, the `callback` will be invoked. */
-    def destroy(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def destroy(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /**
       * Each session has a unique ID associated with it.
@@ -31,10 +31,10 @@ object anon {
     var id: String = js.native
     
     /** To regenerate the session simply invoke the method. Once complete, a new SID and `Session` instance will be initialized at `req.session` and the `callback` will be invoked. */
-    def regenerate(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def regenerate(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /** Reloads the session data from the store and re-populates the `req.session` object. Once complete, the `callback` will be invoked. */
-    def reload(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def reload(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /**
       * Resets the cookie's `maxAge` to `originalMaxAge`
@@ -52,7 +52,7 @@ object anon {
       * There are some cases where it is useful to call this method, for example: redirects, long-lived requests or in WebSockets.
       */
     def save(): this.type = js.native
-    def save(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def save(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /** Updates the `maxAge` property. Typically this is not necessary to call, as the session middleware does this for you. */
     def touch(): this.type = js.native

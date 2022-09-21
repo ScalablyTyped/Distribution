@@ -10,7 +10,7 @@ trait DataSchemaSchema
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * This is the property (xpath) in the data source where the child records of a record are located. Used in XML binding.

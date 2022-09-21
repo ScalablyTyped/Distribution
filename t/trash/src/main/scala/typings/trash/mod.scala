@@ -6,32 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Move files and folders to the trash.
-  @param input - Accepts paths and [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
-  @example
-  ```
-  import trash = require('trash');
-  (async () => {
-  	await trash(['*.png', '!rainbow.png']);
-  })();
-  ```
-  */
-  inline def apply(input: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def apply(input: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def apply(input: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def apply(input: js.Array[String], options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
   @JSImport("trash", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(input: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(input: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(input: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(input: js.Array[String], options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait Options extends StObject {
     
     /**
-    		Enable globbing when matching file paths.
-    		@default true
-    		*/
+    	Enable globbing when matching file paths.
+    	@default true
+    	*/
     val glob: js.UndefOr[Boolean] = js.undefined
   }
   object Options {

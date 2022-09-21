@@ -17,7 +17,7 @@ trait CreateApiKeyRequest extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The time from creation time after which the API key expires. The date is represented as seconds since the epoch, rounded down to the nearest hour. The default value for this parameter is 7 days from creation time. For more information, see .
+    * From the creation time, the time after which the API key expires. The date is represented as seconds since the epoch, rounded down to the nearest hour. The default value for this parameter is 7 days from creation time. For more information, see .
     */
   var expires: js.UndefOr[Long] = js.undefined
 }

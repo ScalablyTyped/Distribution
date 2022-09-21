@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.EnhancedButton")
 @js.native
-class EnhancedButton ()
-  extends Component[EnhancedButtonProps, js.Object, js.Any]
+open class EnhancedButton ()
+  extends Component[EnhancedButtonProps, js.Object, Any]

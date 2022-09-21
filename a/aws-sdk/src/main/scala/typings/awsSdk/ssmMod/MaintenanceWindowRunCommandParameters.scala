@@ -24,17 +24,17 @@ trait MaintenanceWindowRunCommandParameters extends StObject {
   var DocumentHashType: js.UndefOr[typings.awsSdk.ssmMod.DocumentHashType] = js.undefined
   
   /**
-    * The SSM document version to use in the request. You can specify $DEFAULT, $LATEST, or a specific version number. If you run commands by using the AWS CLI, then you must escape the first two options by using a backslash. If you specify a version number, then you don't need to use the backslash. For example: --document-version "\$DEFAULT" --document-version "\$LATEST" --document-version "3"
+    * The Amazon Web Services Systems Manager document (SSM document) version to use in the request. You can specify $DEFAULT, $LATEST, or a specific version number. If you run commands by using the Amazon Web Services CLI, then you must escape the first two options by using a backslash. If you specify a version number, then you don't need to use the backslash. For example:  --document-version "\$DEFAULT"   --document-version "\$LATEST"   --document-version "3" 
     */
   var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
-    * Configurations for sending notifications about command status changes on a per-instance basis.
+    * Configurations for sending notifications about command status changes on a per-managed node basis.
     */
   var NotificationConfig: js.UndefOr[typings.awsSdk.ssmMod.NotificationConfig] = js.undefined
   
   /**
-    * The name of the S3 bucket.
+    * The name of the Amazon Simple Storage Service (Amazon S3) bucket.
     */
   var OutputS3BucketName: js.UndefOr[S3BucketName] = js.undefined
   
@@ -49,12 +49,12 @@ trait MaintenanceWindowRunCommandParameters extends StObject {
   var Parameters: js.UndefOr[typings.awsSdk.ssmMod.Parameters] = js.undefined
   
   /**
-    * The ARN of the IAM service role to use to publish Amazon Simple Notification Service (Amazon SNS) notifications for maintenance window Run Command tasks.
+    * The Amazon Resource Name (ARN) of the Identity and Access Management (IAM) service role to use to publish Amazon Simple Notification Service (Amazon SNS) notifications for maintenance window Run Command tasks.
     */
   var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
   
   /**
-    * If this time is reached and the command has not already started running, it doesn't run.
+    * If this time is reached and the command hasn't already started running, it doesn't run.
     */
   var TimeoutSeconds: js.UndefOr[typings.awsSdk.ssmMod.TimeoutSeconds] = js.undefined
 }

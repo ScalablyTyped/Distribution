@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Material")
 @js.native
-class Material () extends StObject {
+open class Material () extends StObject {
   def this(color: Color) = this()
   def this(color: Unit, options: MaterialOptions) = this()
   def this(color: Color, options: MaterialOptions) = this()

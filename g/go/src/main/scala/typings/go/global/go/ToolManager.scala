@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the Diagram.toolManager, which you can modify.
   */
-class ToolManager ()
+open class ToolManager ()
   extends typings.go.mod.ToolManager
 object ToolManager {
   

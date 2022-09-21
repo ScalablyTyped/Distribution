@@ -4,6 +4,7 @@ import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.pbrBaseSimpleMaterialMod.PBRBaseSimpleMaterial
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +13,14 @@ object pbrMetallicRoughnessMaterialMod {
   
   @JSImport("babylonjs/Materials/PBR/pbrMetallicRoughnessMaterial", "PBRMetallicRoughnessMaterial")
   @js.native
-  class PBRMetallicRoughnessMaterial protected () extends PBRBaseSimpleMaterial {
+  open class PBRMetallicRoughnessMaterial protected () extends PBRBaseSimpleMaterial {
     /**
       * Instantiates a new PBRMetalRoughnessMaterial instance.
       *
       * @param name The material name
       * @param scene The scene the material will be use in.
       */
+    def this(name: String) = this()
     def this(name: String, scene: Scene) = this()
     
     /**
@@ -33,7 +35,7 @@ object pbrMetallicRoughnessMaterialMod {
       * Base texture of the metallic workflow. It contains both the baseColor information in RGB as
       * well as opacity information in the alpha channel.
       */
-    var baseTexture: BaseTexture = js.native
+    var baseTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Specifies the metallic scalar value of the material.
@@ -45,7 +47,7 @@ object pbrMetallicRoughnessMaterialMod {
       * Texture containing both the metallic value in the B channel and the
       * roughness value in the G channel to keep better precision.
       */
-    var metallicRoughnessTexture: BaseTexture = js.native
+    var metallicRoughnessTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Specifies the roughness scalar value of the material.
@@ -61,8 +63,11 @@ object pbrMetallicRoughnessMaterialMod {
     val ^ : js.Any = js.native
     
     /**
-      * Parses a JSON object correponding to the serialize function.
+      * Parses a JSON object corresponding to the serialize function.
+      * @param source
+      * @param scene
+      * @param rootUrl
       */
-    inline def Parse(source: js.Any, scene: Scene, rootUrl: String): PBRMetallicRoughnessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[PBRMetallicRoughnessMaterial]
+    inline def Parse(source: Any, scene: Scene, rootUrl: String): PBRMetallicRoughnessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[PBRMetallicRoughnessMaterial]
   }
 }

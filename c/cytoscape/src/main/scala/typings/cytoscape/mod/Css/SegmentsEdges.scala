@@ -28,21 +28,21 @@ trait SegmentsEdges extends StObject {
   /**
     * A series of values that specify for each segment point the distance perpendicular to a line formed from source to target, e.g. -20 20 - 20.
     */
-  var `segment-distances`: PropertyValueEdge[String]
+  var `segment-distances`: PropertyValueEdge[Double | js.Array[Double] | String]
   
   /**
     * A series of values that weights segment points along a line from source to target,
     * e.g. 0.25 0.5 0.75.A value usually ranges on [0, 1],
     * with 0 towards the source node and 1 towards the target node — but larger or smaller values can also be used.
     */
-  var `segment-weights`: PropertyValueEdge[String]
+  var `segment-weights`: PropertyValueEdge[Double | js.Array[Double] | String]
 }
 object SegmentsEdges {
   
   inline def apply(
     `edge-distances`: PropertyValueEdge[intersection | `node-position`],
-    `segment-distances`: PropertyValueEdge[String],
-    `segment-weights`: PropertyValueEdge[String]
+    `segment-distances`: PropertyValueEdge[Double | js.Array[Double] | String],
+    `segment-weights`: PropertyValueEdge[Double | js.Array[Double] | String]
   ): SegmentsEdges = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("edge-distances")(`edge-distances`.asInstanceOf[js.Any])
@@ -57,12 +57,16 @@ object SegmentsEdges {
     
     inline def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = StObject.set(x, "edge-distances", js.Any.fromFunction1(value))
     
-    inline def `setSegment-distances`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-distances", value.asInstanceOf[js.Any])
+    inline def `setSegment-distances`(value: PropertyValueEdge[Double | js.Array[Double] | String]): Self = StObject.set(x, "segment-distances", value.asInstanceOf[js.Any])
     
-    inline def `setSegment-distancesFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-distances", js.Any.fromFunction1(value))
+    inline def `setSegment-distancesFunction1`(value: EdgeSingular => Double | js.Array[Double] | String): Self = StObject.set(x, "segment-distances", js.Any.fromFunction1(value))
     
-    inline def `setSegment-weights`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-weights", value.asInstanceOf[js.Any])
+    inline def `setSegment-distancesVarargs`(value: Double*): Self = StObject.set(x, "segment-distances", js.Array(value*))
     
-    inline def `setSegment-weightsFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-weights", js.Any.fromFunction1(value))
+    inline def `setSegment-weights`(value: PropertyValueEdge[Double | js.Array[Double] | String]): Self = StObject.set(x, "segment-weights", value.asInstanceOf[js.Any])
+    
+    inline def `setSegment-weightsFunction1`(value: EdgeSingular => Double | js.Array[Double] | String): Self = StObject.set(x, "segment-weights", js.Any.fromFunction1(value))
+    
+    inline def `setSegment-weightsVarargs`(value: Double*): Self = StObject.set(x, "segment-weights", js.Array(value*))
   }
 }

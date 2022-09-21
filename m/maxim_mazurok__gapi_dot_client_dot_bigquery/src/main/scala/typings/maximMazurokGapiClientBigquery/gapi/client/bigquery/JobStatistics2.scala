@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JobStatistics2 extends StObject {
   
+  /** BI Engine specific Statistics. [Output-only] BI Engine specific Statistics. */
+  var biEngineStatistics: js.UndefOr[BiEngineStatistics] = js.undefined
+  
   /** [Output-only] Billing tier for the job. */
   var billingTier: js.UndefOr[Double] = js.undefined
   
@@ -16,12 +19,18 @@ trait JobStatistics2 extends StObject {
   /** [Output-only] [Preview] The number of row access policies affected by a DDL statement. Present only for DROP ALL ROW ACCESS POLICIES queries. */
   var ddlAffectedRowAccessPolicyCount: js.UndefOr[String] = js.undefined
   
+  /** [Output-only] The DDL destination table. Present only for ALTER TABLE RENAME TO queries. Note that ddl_target_table is used just for its type information. */
+  var ddlDestinationTable: js.UndefOr[TableReference] = js.undefined
+  
   /**
     * The DDL operation performed, possibly dependent on the pre-existence of the DDL target. Possible values (new values might be added in the future): "CREATE": The query created the
     * DDL target. "SKIP": No-op. Example cases: the query is CREATE TABLE IF NOT EXISTS while the table already exists, or the query is DROP TABLE IF EXISTS while the table does not
     * exist. "REPLACE": The query replaced the DDL target. Example case: the query is CREATE OR REPLACE TABLE, and the table already exists. "DROP": The query deleted the DDL target.
     */
   var ddlOperationPerformed: js.UndefOr[String] = js.undefined
+  
+  /** [Output-only] The DDL target dataset. Present only for CREATE/ALTER/DROP SCHEMA queries. */
+  var ddlTargetDataset: js.UndefOr[DatasetReference] = js.undefined
   
   /** The DDL target routine. Present only for CREATE/DROP FUNCTION/PROCEDURE queries. */
   var ddlTargetRoutine: js.UndefOr[RoutineReference] = js.undefined
@@ -32,8 +41,14 @@ trait JobStatistics2 extends StObject {
   /** [Output-only] The DDL target table. Present only for CREATE/DROP TABLE/VIEW and DROP ALL ROW ACCESS POLICIES queries. */
   var ddlTargetTable: js.UndefOr[TableReference] = js.undefined
   
+  /** [Output-only] Detailed statistics for DML statements Present only for DML statements INSERT, UPDATE, DELETE or TRUNCATE. */
+  var dmlStats: js.UndefOr[DmlStatistics] = js.undefined
+  
   /** [Output-only] The original estimate of bytes processed for the job. */
   var estimatedBytesProcessed: js.UndefOr[String] = js.undefined
+  
+  /** [Output-only] Statistics of a BigQuery ML training job. */
+  var mlStatistics: js.UndefOr[MlStatistics] = js.undefined
   
   /** [Output-only, Beta] Information about create model query job progress. */
   var modelTraining: js.UndefOr[BigQueryModelTraining] = js.undefined
@@ -61,6 +76,9 @@ trait JobStatistics2 extends StObject {
   
   /** [Output-only] The schema of the results. Present only for successful dry run of non-legacy SQL queries. */
   var schema: js.UndefOr[TableSchema] = js.undefined
+  
+  /** [Output-only] Search query specific statistics. */
+  var searchStatistics: js.UndefOr[SearchStatistics] = js.undefined
   
   /**
     * The type of query statement, if valid. Possible values (new values might be added in the future): "SELECT": SELECT query. "INSERT": INSERT query; see
@@ -107,6 +125,10 @@ object JobStatistics2 {
   
   extension [Self <: JobStatistics2](x: Self) {
     
+    inline def setBiEngineStatistics(value: BiEngineStatistics): Self = StObject.set(x, "biEngineStatistics", value.asInstanceOf[js.Any])
+    
+    inline def setBiEngineStatisticsUndefined: Self = StObject.set(x, "biEngineStatistics", js.undefined)
+    
     inline def setBillingTier(value: Double): Self = StObject.set(x, "billingTier", value.asInstanceOf[js.Any])
     
     inline def setBillingTierUndefined: Self = StObject.set(x, "billingTier", js.undefined)
@@ -119,9 +141,17 @@ object JobStatistics2 {
     
     inline def setDdlAffectedRowAccessPolicyCountUndefined: Self = StObject.set(x, "ddlAffectedRowAccessPolicyCount", js.undefined)
     
+    inline def setDdlDestinationTable(value: TableReference): Self = StObject.set(x, "ddlDestinationTable", value.asInstanceOf[js.Any])
+    
+    inline def setDdlDestinationTableUndefined: Self = StObject.set(x, "ddlDestinationTable", js.undefined)
+    
     inline def setDdlOperationPerformed(value: String): Self = StObject.set(x, "ddlOperationPerformed", value.asInstanceOf[js.Any])
     
     inline def setDdlOperationPerformedUndefined: Self = StObject.set(x, "ddlOperationPerformed", js.undefined)
+    
+    inline def setDdlTargetDataset(value: DatasetReference): Self = StObject.set(x, "ddlTargetDataset", value.asInstanceOf[js.Any])
+    
+    inline def setDdlTargetDatasetUndefined: Self = StObject.set(x, "ddlTargetDataset", js.undefined)
     
     inline def setDdlTargetRoutine(value: RoutineReference): Self = StObject.set(x, "ddlTargetRoutine", value.asInstanceOf[js.Any])
     
@@ -135,9 +165,17 @@ object JobStatistics2 {
     
     inline def setDdlTargetTableUndefined: Self = StObject.set(x, "ddlTargetTable", js.undefined)
     
+    inline def setDmlStats(value: DmlStatistics): Self = StObject.set(x, "dmlStats", value.asInstanceOf[js.Any])
+    
+    inline def setDmlStatsUndefined: Self = StObject.set(x, "dmlStats", js.undefined)
+    
     inline def setEstimatedBytesProcessed(value: String): Self = StObject.set(x, "estimatedBytesProcessed", value.asInstanceOf[js.Any])
     
     inline def setEstimatedBytesProcessedUndefined: Self = StObject.set(x, "estimatedBytesProcessed", js.undefined)
+    
+    inline def setMlStatistics(value: MlStatistics): Self = StObject.set(x, "mlStatistics", value.asInstanceOf[js.Any])
+    
+    inline def setMlStatisticsUndefined: Self = StObject.set(x, "mlStatistics", js.undefined)
     
     inline def setModelTraining(value: BigQueryModelTraining): Self = StObject.set(x, "modelTraining", value.asInstanceOf[js.Any])
     
@@ -159,29 +197,33 @@ object JobStatistics2 {
     
     inline def setQueryPlanUndefined: Self = StObject.set(x, "queryPlan", js.undefined)
     
-    inline def setQueryPlanVarargs(value: ExplainQueryStage*): Self = StObject.set(x, "queryPlan", js.Array(value :_*))
+    inline def setQueryPlanVarargs(value: ExplainQueryStage*): Self = StObject.set(x, "queryPlan", js.Array(value*))
     
     inline def setReferencedRoutines(value: js.Array[RoutineReference]): Self = StObject.set(x, "referencedRoutines", value.asInstanceOf[js.Any])
     
     inline def setReferencedRoutinesUndefined: Self = StObject.set(x, "referencedRoutines", js.undefined)
     
-    inline def setReferencedRoutinesVarargs(value: RoutineReference*): Self = StObject.set(x, "referencedRoutines", js.Array(value :_*))
+    inline def setReferencedRoutinesVarargs(value: RoutineReference*): Self = StObject.set(x, "referencedRoutines", js.Array(value*))
     
     inline def setReferencedTables(value: js.Array[TableReference]): Self = StObject.set(x, "referencedTables", value.asInstanceOf[js.Any])
     
     inline def setReferencedTablesUndefined: Self = StObject.set(x, "referencedTables", js.undefined)
     
-    inline def setReferencedTablesVarargs(value: TableReference*): Self = StObject.set(x, "referencedTables", js.Array(value :_*))
+    inline def setReferencedTablesVarargs(value: TableReference*): Self = StObject.set(x, "referencedTables", js.Array(value*))
     
     inline def setReservationUsage(value: js.Array[Name]): Self = StObject.set(x, "reservationUsage", value.asInstanceOf[js.Any])
     
     inline def setReservationUsageUndefined: Self = StObject.set(x, "reservationUsage", js.undefined)
     
-    inline def setReservationUsageVarargs(value: Name*): Self = StObject.set(x, "reservationUsage", js.Array(value :_*))
+    inline def setReservationUsageVarargs(value: Name*): Self = StObject.set(x, "reservationUsage", js.Array(value*))
     
     inline def setSchema(value: TableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    
+    inline def setSearchStatistics(value: SearchStatistics): Self = StObject.set(x, "searchStatistics", value.asInstanceOf[js.Any])
+    
+    inline def setSearchStatisticsUndefined: Self = StObject.set(x, "searchStatistics", js.undefined)
     
     inline def setStatementType(value: String): Self = StObject.set(x, "statementType", value.asInstanceOf[js.Any])
     
@@ -191,7 +233,7 @@ object JobStatistics2 {
     
     inline def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
     
-    inline def setTimelineVarargs(value: QueryTimelineSample*): Self = StObject.set(x, "timeline", js.Array(value :_*))
+    inline def setTimelineVarargs(value: QueryTimelineSample*): Self = StObject.set(x, "timeline", js.Array(value*))
     
     inline def setTotalBytesBilled(value: String): Self = StObject.set(x, "totalBytesBilled", value.asInstanceOf[js.Any])
     
@@ -217,6 +259,6 @@ object JobStatistics2 {
     
     inline def setUndeclaredQueryParametersUndefined: Self = StObject.set(x, "undeclaredQueryParameters", js.undefined)
     
-    inline def setUndeclaredQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "undeclaredQueryParameters", js.Array(value :_*))
+    inline def setUndeclaredQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "undeclaredQueryParameters", js.Array(value*))
   }
 }

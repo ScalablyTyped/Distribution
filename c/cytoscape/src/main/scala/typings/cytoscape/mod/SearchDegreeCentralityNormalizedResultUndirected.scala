@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchDegreeCentralityNormalizedResultUndirected extends StObject {
   
   /** the normalised degree centrality of the specified node */
-  def degree(node: NodeSingular): js.Any
+  def degree(node: NodeSingular): Any
 }
 object SearchDegreeCentralityNormalizedResultUndirected {
   
-  inline def apply(degree: NodeSingular => js.Any): SearchDegreeCentralityNormalizedResultUndirected = {
+  inline def apply(degree: NodeSingular => Any): SearchDegreeCentralityNormalizedResultUndirected = {
     val __obj = js.Dynamic.literal(degree = js.Any.fromFunction1(degree))
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedResultUndirected]
   }
   
   extension [Self <: SearchDegreeCentralityNormalizedResultUndirected](x: Self) {
     
-    inline def setDegree(value: NodeSingular => js.Any): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
+    inline def setDegree(value: NodeSingular => Any): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
   }
 }

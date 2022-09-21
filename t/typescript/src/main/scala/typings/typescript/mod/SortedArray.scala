@@ -11,5 +11,5 @@ trait SortedArray[T]
      with Array[T] {
   
   @JSName(" __sortedArrayBrand")
-  var Space__sortedArrayBrand: js.Any = js.native
+  var Space__sortedArrayBrand: Any = js.native
 }

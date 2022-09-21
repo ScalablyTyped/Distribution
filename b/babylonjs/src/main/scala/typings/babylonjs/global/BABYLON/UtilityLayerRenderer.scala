@@ -1,12 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.UtilityLayerRenderer")
 @js.native
-class UtilityLayerRenderer protected ()
+open class UtilityLayerRenderer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.UtilityLayerRenderer {
   /**
@@ -35,13 +36,22 @@ object UtilityLayerRenderer {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * Creates an utility layer, and set it as a default utility layer
+    * @param scene associated scene
+    * @hidden
+    */
+  inline def _CreateDefaultUtilityLayerFromScene(scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.UtilityLayerRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultUtilityLayerFromScene")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.UtilityLayerRenderer]
+  
+  /** @hidden */
   @JSGlobal("BABYLON.UtilityLayerRenderer._DefaultKeepDepthUtilityLayer")
   @js.native
-  def _DefaultKeepDepthUtilityLayer: js.Any = js.native
-  inline def _DefaultKeepDepthUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
+  def _DefaultKeepDepthUtilityLayer: Nullable[typings.babylonjs.BABYLON.UtilityLayerRenderer] = js.native
+  inline def _DefaultKeepDepthUtilityLayer_=(x: Nullable[typings.babylonjs.BABYLON.UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
   
+  /** @hidden */
   @JSGlobal("BABYLON.UtilityLayerRenderer._DefaultUtilityLayer")
   @js.native
-  def _DefaultUtilityLayer: js.Any = js.native
-  inline def _DefaultUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
+  def _DefaultUtilityLayer: Nullable[typings.babylonjs.BABYLON.UtilityLayerRenderer] = js.native
+  inline def _DefaultUtilityLayer_=(x: Nullable[typings.babylonjs.BABYLON.UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
 }

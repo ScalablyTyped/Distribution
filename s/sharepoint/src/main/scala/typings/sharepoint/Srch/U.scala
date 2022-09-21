@@ -35,13 +35,13 @@ object U {
     
     var progress: Double
     
-    var scriptsToLoad: js.Any
+    var scriptsToLoad: Any
     
-    var timeoutHandle: js.Any
+    var timeoutHandle: Any
   }
   object LoadScriptsState {
     
-    inline def apply(progress: Double, scriptsToLoad: js.Any, timeoutHandle: js.Any): LoadScriptsState = {
+    inline def apply(progress: Double, scriptsToLoad: Any, timeoutHandle: Any): LoadScriptsState = {
       val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], scriptsToLoad = scriptsToLoad.asInstanceOf[js.Any], timeoutHandle = timeoutHandle.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadScriptsState]
     }
@@ -50,9 +50,9 @@ object U {
       
       inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      inline def setScriptsToLoad(value: js.Any): Self = StObject.set(x, "scriptsToLoad", value.asInstanceOf[js.Any])
+      inline def setScriptsToLoad(value: Any): Self = StObject.set(x, "scriptsToLoad", value.asInstanceOf[js.Any])
       
-      inline def setTimeoutHandle(value: js.Any): Self = StObject.set(x, "timeoutHandle", value.asInstanceOf[js.Any])
+      inline def setTimeoutHandle(value: Any): Self = StObject.set(x, "timeoutHandle", value.asInstanceOf[js.Any])
     }
   }
   

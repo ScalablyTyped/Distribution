@@ -1,6 +1,5 @@
 package typings.pgPromise.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,14 +11,14 @@ trait ITaskContext extends StObject {
   val connected: Boolean
   
   // these are set in the beginning of each task/transaction:
-  val context: js.Any
+  val context: Any
   
-  val dc: js.Any
+  val dc: Any
   
   val duration: js.UndefOr[Double] = js.undefined
   
   // these are set at the end of each task/transaction:
-  val finish: js.UndefOr[Date] = js.undefined
+  val finish: js.UndefOr[js.Date] = js.undefined
   
   val inTransaction: Boolean
   
@@ -29,17 +28,17 @@ trait ITaskContext extends StObject {
   
   val parent: ITaskContext | Null
   
-  val result: js.UndefOr[js.Any] = js.undefined
+  val result: js.UndefOr[Any] = js.undefined
   
   // Version of PostgreSQL Server to which we are connected;
   // This property is not available with Native Bindings!
   val serverVersion: String
   
-  val start: Date
+  val start: js.Date
   
   val success: js.UndefOr[Boolean] = js.undefined
   
-  val tag: js.Any
+  val tag: Any
   
   // this exists only inside transactions (isTX = true):
   val txLevel: js.UndefOr[Double] = js.undefined
@@ -50,14 +49,14 @@ object ITaskContext {
   
   inline def apply(
     connected: Boolean,
-    context: js.Any,
-    dc: js.Any,
+    context: Any,
+    dc: Any,
     inTransaction: Boolean,
     isTX: Boolean,
     level: Double,
     serverVersion: String,
-    start: Date,
-    tag: js.Any,
+    start: js.Date,
+    tag: Any,
     useCount: Double
   ): ITaskContext = {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], dc = dc.asInstanceOf[js.Any], inTransaction = inTransaction.asInstanceOf[js.Any], isTX = isTX.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], serverVersion = serverVersion.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], useCount = useCount.asInstanceOf[js.Any], parent = null)
@@ -68,15 +67,15 @@ object ITaskContext {
     
     inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setDc(value: js.Any): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
+    inline def setDc(value: Any): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setFinish(value: Date): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
+    inline def setFinish(value: js.Date): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
     
     inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
     
@@ -90,19 +89,19 @@ object ITaskContext {
     
     inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     inline def setServerVersion(value: String): Self = StObject.set(x, "serverVersion", value.asInstanceOf[js.Any])
     
-    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     inline def setTxLevel(value: Double): Self = StObject.set(x, "txLevel", value.asInstanceOf[js.Any])
     

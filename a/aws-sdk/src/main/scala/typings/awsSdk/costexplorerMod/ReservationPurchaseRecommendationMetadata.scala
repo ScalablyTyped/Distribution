@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReservationPurchaseRecommendationMetadata extends StObject {
   
   /**
-    * The timestamp for when AWS made this recommendation.
+    * The timestamp for when Amazon Web Services made this recommendation.
     */
   var GenerationTimestamp: js.UndefOr[GenericString] = js.undefined
   

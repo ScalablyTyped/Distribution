@@ -1,14 +1,10 @@
 package typings.i18nextXhrBackend
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.i18next.i18nextStrings.`3rdParty`
 import typings.i18next.i18nextStrings.backend
-import typings.i18next.i18nextStrings.i18nFormat
-import typings.i18next.i18nextStrings.languageDetector
-import typings.i18next.i18nextStrings.logger
-import typings.i18next.i18nextStrings.postProcessor
 import typings.i18next.mod.BackendModule
 import typings.i18next.mod.InitOptions
+import typings.i18next.mod.ModuleType
 import typings.i18next.mod.ReadCallback
 import typings.i18next.mod.Services
 import typings.std.XMLHttpRequest
@@ -20,16 +16,12 @@ object mod {
   
   @JSImport("i18next-xhr-backend", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with I18NextXhrBackend {
-    def this(services: js.Any) = this()
-    def this(services: js.Any, options: BackendOptions) = this()
+    def this(services: Any) = this()
+    def this(services: Any, options: BackendOptions) = this()
     def this(services: Unit, options: BackendOptions) = this()
-    
-    /** Save the missing translation */
-    /* CompleteClass */
-    override def create(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
     
     /* CompleteClass */
     override def init(services: Services, backendOptions: BackendOptions, i18nextOptions: InitOptions): Unit = js.native
@@ -38,7 +30,7 @@ object mod {
     override def read(language: String, namespace: String, callback: ReadCallback): Unit = js.native
     
     /* CompleteClass */
-    var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty` = js.native
+    var `type`: ModuleType = js.native
     /* CompleteClass */
     @JSName("type")
     var type_BackendModule: backend = js.native
@@ -108,7 +100,7 @@ object mod {
           /* namespace */ String, 
           /* key */ String, 
           /* fallbackValue */ js.UndefOr[String], 
-          StringDictionary[js.Any]
+          StringDictionary[Any]
         ]
       ] = js.undefined
     
@@ -162,7 +154,7 @@ object mod {
       inline def setParse(value: /* data */ String => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       inline def setParsePayload(
-        value: (/* namespace */ String, /* key */ String, /* fallbackValue */ js.UndefOr[String]) => StringDictionary[js.Any]
+        value: (/* namespace */ String, /* key */ String, /* fallbackValue */ js.UndefOr[String]) => StringDictionary[Any]
       ): Self = StObject.set(x, "parsePayload", js.Any.fromFunction3(value))
       
       inline def setParsePayloadUndefined: Self = StObject.set(x, "parsePayload", js.undefined)
@@ -184,11 +176,14 @@ object mod {
     extends StObject
        with BackendModule[BackendOptions] {
     
-    def create(languages: String, namespace: String, key: String, fallbackValue: String): Unit = js.native
+    @JSName("create")
+    def create_MI18NextXhrBackend(languages: String, namespace: String, key: String, fallbackValue: String): Unit = js.native
+    @JSName("create")
+    def create_MI18NextXhrBackend(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
     
     def init(): Unit = js.native
-    def init(services: js.Any): Unit = js.native
-    def init(services: js.Any, options: BackendOptions): Unit = js.native
+    def init(services: Any): Unit = js.native
+    def init(services: Any, options: BackendOptions): Unit = js.native
     def init(services: Unit, options: BackendOptions): Unit = js.native
     
     def loadUrl(url: String, callback: ReadCallback): Unit = js.native
@@ -198,7 +193,7 @@ object mod {
     @JSName("readMulti")
     def readMulti_MI18NextXhrBackend(languages: js.Array[String], namespaces: js.Array[String], callback: ReadCallback): Unit = js.native
     
-    var services: js.Any = js.native
+    var services: Any = js.native
     
     @JSName("type")
     var type_I18NextXhrBackend: typings.i18nextXhrBackend.i18nextXhrBackendStrings.backend = js.native

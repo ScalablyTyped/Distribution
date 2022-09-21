@@ -14,7 +14,7 @@ object resourceVariablesMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceVariables", "ResourceVariables")
   @js.native
-  class ResourceVariables protected () extends BaseService {
+  open class ResourceVariables protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()
     
     def all(resourceId: String): js.Promise[js.Array[ResourceVariableSchema]] = js.native

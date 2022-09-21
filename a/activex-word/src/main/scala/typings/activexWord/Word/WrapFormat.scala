@@ -20,7 +20,7 @@ trait WrapFormat extends StObject {
   
   var DistanceTop: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Side: WdWrapSideType
   
@@ -39,7 +39,7 @@ object WrapFormat {
     DistanceLeft: Double,
     DistanceRight: Double,
     DistanceTop: Double,
-    Parent: js.Any,
+    Parent: Any,
     Side: WdWrapSideType,
     Type: WdWrapType,
     WordDotWrapFormat_typekey: WrapFormat
@@ -65,7 +65,7 @@ object WrapFormat {
     
     inline def setDistanceTop(value: Double): Self = StObject.set(x, "DistanceTop", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSide(value: WdWrapSideType): Self = StObject.set(x, "Side", value.asInstanceOf[js.Any])
     

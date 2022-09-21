@@ -15,7 +15,7 @@ object formLegendMod extends Shortcut {
   
   trait FormLegendProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     

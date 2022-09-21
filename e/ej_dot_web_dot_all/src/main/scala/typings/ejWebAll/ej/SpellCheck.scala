@@ -13,7 +13,7 @@ trait SpellCheck
     * @param {string} Word to add into the dictionary file
     * @returns {any}
     */
-  def addToDictionary(customWord: String): js.Any = js.native
+  def addToDictionary(customWord: String): Any = js.native
   
   /** To change the error word once from the given input sentence.
     * @param {string} Error word to change from the target content
@@ -22,7 +22,7 @@ trait SpellCheck
     * @param {number} Index of the error word present in the target content
     * @returns {any}
     */
-  def change(word: String, targetSentence: String, changeWord: String, index: Double): js.Any = js.native
+  def change(word: String, targetSentence: String, changeWord: String, index: Double): Any = js.native
   
   /** To change all the error word occurrences from the given input sentence.
     * @param {string} Error word to change from the target content
@@ -30,7 +30,7 @@ trait SpellCheck
     * @param {string} Word to replace with the error word
     * @returns {any}
     */
-  def changeAll(word: String, targetSentence: String, changeWord: String): js.Any = js.native
+  def changeAll(word: String, targetSentence: String, changeWord: String): Any = js.native
   
   var defaults: Model = js.native
   
@@ -38,7 +38,7 @@ trait SpellCheck
     * @param {string} Error word to get the suggestions
     * @returns {any}
     */
-  def getSuggestionWords(errorWord: String): js.Any = js.native
+  def getSuggestionWords(errorWord: String): Any = js.native
   
   /** To ignore the error word once from the given input sentence.
     * @param {string} Error word to ignore from the target content
@@ -46,14 +46,14 @@ trait SpellCheck
     * @param {number} Index of the error word present in the target content
     * @returns {any}
     */
-  def ignore(word: String, targetSentence: String, index: Double): js.Any = js.native
+  def ignore(word: String, targetSentence: String, index: Double): Any = js.native
   
   /** To ignore all the error word occurrences from the given input sentence.
     * @param {string} Error word to ignore from the target content
     * @param {string} Content to perform the ignore all operation
     * @returns {any}
     */
-  def ignoreAll(word: String, targetSentence: String): js.Any = js.native
+  def ignoreAll(word: String, targetSentence: String): Any = js.native
   
   @JSName("model")
   var model_SpellCheck: Model = js.native
@@ -68,7 +68,7 @@ trait SpellCheck
     * @param {string} Class name that contains style value to highlight the error word
     * @returns {any}
     */
-  def spellCheck(targetSentence: String, misspellWordCss: String): js.Any = js.native
+  def spellCheck(targetSentence: String, misspellWordCss: String): Any = js.native
   
   /** Highlighting the error word in the target area itself and correct the spelling using the context menu.
     * @returns {void}
@@ -199,7 +199,7 @@ object SpellCheck {
     
     /** Returns the error word details of the given input.
       */
-    var errorWordDetails: js.UndefOr[js.Any] = js.undefined
+    var errorWordDetails: js.UndefOr[Any] = js.undefined
     
     /** Returns the SpellCheck model.
       */
@@ -230,7 +230,7 @@ object SpellCheck {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setErrorWordDetails(value: js.Any): Self = StObject.set(x, "errorWordDetails", value.asInstanceOf[js.Any])
+      inline def setErrorWordDetails(value: Any): Self = StObject.set(x, "errorWordDetails", value.asInstanceOf[js.Any])
       
       inline def setErrorWordDetailsUndefined: Self = StObject.set(x, "errorWordDetails", js.undefined)
       
@@ -385,7 +385,7 @@ object SpellCheck {
       * grouped under this menu collection.
       * @Default {{% highlight javascript %}[{ id: IgnoreAll, text: Ignore All },{ id: AddToDictionary, text: Add To Dictionary }]{% endhighlight %}}
       */
-    var menuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var menuItems: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object ContextMenuSettings {
     
@@ -400,11 +400,11 @@ object SpellCheck {
       
       inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      inline def setMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      inline def setMenuItems(value: js.Array[Any]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
       inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
       
-      inline def setMenuItemsVarargs(value: js.Any*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
+      inline def setMenuItemsVarargs(value: Any*): Self = StObject.set(x, "menuItems", js.Array(value*))
     }
   }
   
@@ -477,7 +477,7 @@ object SpellCheck {
     
     /** Returns the spell check window details.
       */
-    var spellCheckDialog: js.UndefOr[js.Any] = js.undefined
+    var spellCheckDialog: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -504,7 +504,7 @@ object SpellCheck {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setSpellCheckDialog(value: js.Any): Self = StObject.set(x, "spellCheckDialog", value.asInstanceOf[js.Any])
+      inline def setSpellCheckDialog(value: Any): Self = StObject.set(x, "spellCheckDialog", value.asInstanceOf[js.Any])
       
       inline def setSpellCheckDialogUndefined: Self = StObject.set(x, "spellCheckDialog", js.undefined)
       
@@ -795,7 +795,7 @@ object SpellCheck {
     /** To ignore the words from the error word consideration.
       * @Default {[]}
       */
-    var ignoreWords: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var ignoreWords: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** When set to true, allows the spellcheck to render based upon screen size.
       * @Default {true}
@@ -906,11 +906,11 @@ object SpellCheck {
       
       inline def setIgnoreSettingsUndefined: Self = StObject.set(x, "ignoreSettings", js.undefined)
       
-      inline def setIgnoreWords(value: js.Array[js.Any]): Self = StObject.set(x, "ignoreWords", value.asInstanceOf[js.Any])
+      inline def setIgnoreWords(value: js.Array[Any]): Self = StObject.set(x, "ignoreWords", value.asInstanceOf[js.Any])
       
       inline def setIgnoreWordsUndefined: Self = StObject.set(x, "ignoreWords", js.undefined)
       
-      inline def setIgnoreWordsVarargs(value: js.Any*): Self = StObject.set(x, "ignoreWords", js.Array(value :_*))
+      inline def setIgnoreWordsVarargs(value: Any*): Self = StObject.set(x, "ignoreWords", js.Array(value*))
       
       inline def setIsResponsive(value: Boolean): Self = StObject.set(x, "isResponsive", value.asInstanceOf[js.Any])
       
@@ -950,7 +950,7 @@ object SpellCheck {
     
     /** Returns the error words details.
       */
-    var errorWords: js.UndefOr[js.Any] = js.undefined
+    var errorWords: js.UndefOr[Any] = js.undefined
     
     /** Returns the SpellCheck model.
       */
@@ -981,7 +981,7 @@ object SpellCheck {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setErrorWords(value: js.Any): Self = StObject.set(x, "errorWords", value.asInstanceOf[js.Any])
+      inline def setErrorWords(value: Any): Self = StObject.set(x, "errorWords", value.asInstanceOf[js.Any])
       
       inline def setErrorWordsUndefined: Self = StObject.set(x, "errorWords", js.undefined)
       
@@ -1011,7 +1011,7 @@ object SpellCheck {
     
     /** Returns the current target element value.
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the SpellCheck model.
       */
@@ -1019,7 +1019,7 @@ object SpellCheck {
     
     /** Returns the previous target element value.
       */
-    var previousElement: js.UndefOr[js.Any] = js.undefined
+    var previousElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the target html value.
       */
@@ -1042,7 +1042,7 @@ object SpellCheck {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
@@ -1050,7 +1050,7 @@ object SpellCheck {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousElement(value: js.Any): Self = StObject.set(x, "previousElement", value.asInstanceOf[js.Any])
+      inline def setPreviousElement(value: Any): Self = StObject.set(x, "previousElement", value.asInstanceOf[js.Any])
       
       inline def setPreviousElementUndefined: Self = StObject.set(x, "previousElement", js.undefined)
       

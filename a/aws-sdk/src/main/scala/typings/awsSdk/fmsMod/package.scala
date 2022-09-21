@@ -1,11 +1,13 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.PALO_ALTO_NETWORKS_CLOUD_NGFW
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AWSAccountId = java.lang.String
+type AWSAccountId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.READY
@@ -15,32 +17,36 @@ type AWSAccountId = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type AccountRoleStatus = typings.awsSdk.fmsMod._AccountRoleStatus | java.lang.String
+type AccountRoleStatus = _AccountRoleStatus | String
 
-type AppsList = js.Array[typings.awsSdk.fmsMod.App]
+type AppsList = js.Array[App]
 
-type AppsListsData = js.Array[typings.awsSdk.fmsMod.AppsListDataSummary]
+type AppsListsData = js.Array[AppsListDataSummary]
 
-type AwsEc2NetworkInterfaceViolations = js.Array[typings.awsSdk.fmsMod.AwsEc2NetworkInterfaceViolation]
+type AwsEc2NetworkInterfaceViolations = js.Array[AwsEc2NetworkInterfaceViolation]
+
+type BasicInteger = Double
 
 type Boolean = scala.Boolean
 
-type CIDR = java.lang.String
+type CIDR = String
 
-type ComplianceViolators = js.Array[typings.awsSdk.fmsMod.ComplianceViolator]
+type ComplianceViolatorMetadata = StringDictionary[LengthBoundedString]
 
-type CustomerPolicyScopeId = java.lang.String
+type ComplianceViolators = js.Array[ComplianceViolator]
 
-type CustomerPolicyScopeIdList = js.Array[typings.awsSdk.fmsMod.CustomerPolicyScopeId]
+type CustomerPolicyScopeId = String
+
+type CustomerPolicyScopeIdList = js.Array[CustomerPolicyScopeId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACCOUNT
   - typings.awsSdk.awsSdkStrings.ORG_UNIT
   - java.lang.String
 */
-type CustomerPolicyScopeIdType = typings.awsSdk.fmsMod._CustomerPolicyScopeIdType | java.lang.String
+type CustomerPolicyScopeIdType = _CustomerPolicyScopeIdType | String
 
-type CustomerPolicyScopeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.fmsMod.CustomerPolicyScopeIdList]
+type CustomerPolicyScopeMap = StringDictionary[CustomerPolicyScopeIdList]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWSCONFIG
@@ -49,99 +55,149 @@ type CustomerPolicyScopeMap = org.scalablytyped.runtime.StringDictionary[typings
   - typings.awsSdk.awsSdkStrings.AWSVPC
   - java.lang.String
 */
-type DependentServiceName = typings.awsSdk.fmsMod._DependentServiceName | java.lang.String
+type DependentServiceName = _DependentServiceName | String
 
-type DetailedInfo = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IPV4
+  - typings.awsSdk.awsSdkStrings.IPV6
+  - typings.awsSdk.awsSdkStrings.PREFIX_LIST
+  - java.lang.String
+*/
+type DestinationType = _DestinationType | String
 
-type EvaluationResults = js.Array[typings.awsSdk.fmsMod.EvaluationResult]
+type DetailedInfo = String
 
-type IPPortNumber = scala.Double
+type DnsRuleGroupPriorities = js.Array[DnsRuleGroupPriority]
 
-type IssueInfoMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.fmsMod.DetailedInfo]
+type DnsRuleGroupPriority = Double
 
-type LengthBoundedString = java.lang.String
+type EvaluationResults = js.Array[EvaluationResult]
 
-type ListId = java.lang.String
+type ExpectedRoutes = js.Array[ExpectedRoute]
 
-type ManagedServiceData = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CENTRALIZED
+  - typings.awsSdk.awsSdkStrings.DISTRIBUTED
+  - java.lang.String
+*/
+type FirewallDeploymentModel = _FirewallDeploymentModel | String
 
-type MemberAccounts = js.Array[typings.awsSdk.fmsMod.AWSAccountId]
+type FirewallPolicyId = String
 
-type NetworkFirewallAction = java.lang.String
+type FirewallPolicyName = String
 
-type NetworkFirewallActionList = js.Array[typings.awsSdk.fmsMod.NetworkFirewallAction]
+type IPPortNumber = Double
 
-type NetworkFirewallResourceName = java.lang.String
+type IssueInfoMap = StringDictionary[DetailedInfo]
 
-type PaginationMaxResults = scala.Double
+type LengthBoundedString = String
 
-type PaginationToken = java.lang.String
+type LengthBoundedStringList = js.Array[LengthBoundedString]
 
-type PartialMatches = js.Array[typings.awsSdk.fmsMod.PartialMatch]
+type ListId = String
 
-type PolicyComplianceStatusList = js.Array[typings.awsSdk.fmsMod.PolicyComplianceStatus]
+type ManagedServiceData = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NO_SUBSCRIPTION
+  - typings.awsSdk.awsSdkStrings.NOT_COMPLETE
+  - typings.awsSdk.awsSdkStrings.COMPLETE
+  - java.lang.String
+*/
+type MarketplaceSubscriptionOnboardingStatus = _MarketplaceSubscriptionOnboardingStatus | String
+
+type MemberAccounts = js.Array[AWSAccountId]
+
+type NetworkFirewallAction = String
+
+type NetworkFirewallActionList = js.Array[NetworkFirewallAction]
+
+type NetworkFirewallResourceName = String
+
+type OrderedRemediationActions = js.Array[RemediationActionWithOrder]
+
+type PaginationMaxResults = Double
+
+type PaginationToken = String
+
+type PartialMatches = js.Array[PartialMatch]
+
+type PolicyComplianceStatusList = js.Array[PolicyComplianceStatus]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLIANT
   - typings.awsSdk.awsSdkStrings.NON_COMPLIANT
   - java.lang.String
 */
-type PolicyComplianceStatusType = typings.awsSdk.fmsMod._PolicyComplianceStatusType | java.lang.String
+type PolicyComplianceStatusType = _PolicyComplianceStatusType | String
 
-type PolicyId = java.lang.String
+type PolicyId = String
 
-type PolicySummaryList = js.Array[typings.awsSdk.fmsMod.PolicySummary]
+type PolicySummaryList = js.Array[PolicySummary]
 
-type PolicyUpdateToken = java.lang.String
+type PolicyUpdateToken = String
 
-type PreviousAppsList = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.fmsMod.AppsList]
+type PossibleRemediationActionList = js.Array[PossibleRemediationAction]
 
-type PreviousListVersion = java.lang.String
+type PreviousAppsList = StringDictionary[AppsList]
 
-type PreviousProtocolsList = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.fmsMod.ProtocolsList]
+type PreviousListVersion = String
 
-type ProtectionData = java.lang.String
+type PreviousProtocolsList = StringDictionary[ProtocolsList]
 
-type Protocol = java.lang.String
+type PriorityNumber = Double
 
-type ProtocolsList = js.Array[typings.awsSdk.fmsMod.Protocol]
+type ProtectionData = String
 
-type ProtocolsListsData = js.Array[typings.awsSdk.fmsMod.ProtocolsListDataSummary]
+type Protocol = String
 
-type ReferenceRule = java.lang.String
+type ProtocolsList = js.Array[Protocol]
 
-type RemediationActionDescription = java.lang.String
+type ProtocolsListsData = js.Array[ProtocolsListDataSummary]
+
+type ReferenceRule = String
+
+type RemediationActionDescription = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REMOVE
   - typings.awsSdk.awsSdkStrings.MODIFY
   - java.lang.String
 */
-type RemediationActionType = typings.awsSdk.fmsMod._RemediationActionType | java.lang.String
+type RemediationActionType = _RemediationActionType | String
 
-type ResourceArn = java.lang.String
+type ResourceArn = String
 
-type ResourceCount = scala.Double
+type ResourceCount = Double
 
-type ResourceId = java.lang.String
+type ResourceId = String
 
-type ResourceIdList = js.Array[typings.awsSdk.fmsMod.ResourceId]
+type ResourceIdList = js.Array[ResourceId]
 
-type ResourceName = java.lang.String
+type ResourceName = String
 
-type ResourceTagKey = java.lang.String
+type ResourceTagKey = String
 
-type ResourceTagValue = java.lang.String
+type ResourceTagValue = String
 
-type ResourceTags = js.Array[typings.awsSdk.fmsMod.ResourceTag]
+type ResourceTags = js.Array[ResourceTag]
 
-type ResourceType = java.lang.String
+type ResourceType = String
 
-type ResourceTypeList = js.Array[typings.awsSdk.fmsMod.ResourceType]
+type ResourceTypeList = js.Array[ResourceType]
 
-type ResourceViolations = js.Array[typings.awsSdk.fmsMod.ResourceViolation]
+type ResourceViolations = js.Array[ResourceViolation]
 
-type SecurityGroupRemediationActions = js.Array[typings.awsSdk.fmsMod.SecurityGroupRemediationAction]
+type Routes = js.Array[Route]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STRICT_ORDER
+  - typings.awsSdk.awsSdkStrings.DEFAULT_ACTION_ORDER
+  - java.lang.String
+*/
+type RuleOrder = _RuleOrder | String
+
+type SecurityGroupRemediationActions = js.Array[SecurityGroupRemediationAction]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WAF
@@ -151,31 +207,62 @@ type SecurityGroupRemediationActions = js.Array[typings.awsSdk.fmsMod.SecurityGr
   - typings.awsSdk.awsSdkStrings.SECURITY_GROUPS_CONTENT_AUDIT
   - typings.awsSdk.awsSdkStrings.SECURITY_GROUPS_USAGE_AUDIT
   - typings.awsSdk.awsSdkStrings.NETWORK_FIREWALL
+  - typings.awsSdk.awsSdkStrings.DNS_FIREWALL
+  - typings.awsSdk.awsSdkStrings.THIRD_PARTY_FIREWALL
   - java.lang.String
 */
-type SecurityServiceType = typings.awsSdk.fmsMod._SecurityServiceType | java.lang.String
+type SecurityServiceType = _SecurityServiceType | String
 
-type StatefulRuleGroupList = js.Array[typings.awsSdk.fmsMod.StatefulRuleGroup]
+type StatefulRuleGroupList = js.Array[StatefulRuleGroup]
 
-type StatelessRuleGroupList = js.Array[typings.awsSdk.fmsMod.StatelessRuleGroup]
+type StatelessRuleGroupList = js.Array[StatelessRuleGroup]
 
-type StatelessRuleGroupPriority = scala.Double
+type StatelessRuleGroupPriority = Double
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.fmsMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.fmsMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TargetViolationReason = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GATEWAY
+  - typings.awsSdk.awsSdkStrings.CARRIER_GATEWAY
+  - typings.awsSdk.awsSdkStrings.INSTANCE
+  - typings.awsSdk.awsSdkStrings.LOCAL_GATEWAY
+  - typings.awsSdk.awsSdkStrings.NAT_GATEWAY
+  - typings.awsSdk.awsSdkStrings.NETWORK_INTERFACE
+  - typings.awsSdk.awsSdkStrings.VPC_ENDPOINT
+  - typings.awsSdk.awsSdkStrings.VPC_PEERING_CONNECTION
+  - typings.awsSdk.awsSdkStrings.EGRESS_ONLY_INTERNET_GATEWAY
+  - typings.awsSdk.awsSdkStrings.TRANSIT_GATEWAY
+  - java.lang.String
+*/
+type TargetType = _TargetType | String
 
-type TargetViolationReasons = js.Array[typings.awsSdk.fmsMod.TargetViolationReason]
+type TargetViolationReason = String
 
-type TimeStamp = typings.std.Date
+type TargetViolationReasons = js.Array[TargetViolationReason]
 
-type UpdateToken = java.lang.String
+type ThirdPartyFirewall = PALO_ALTO_NETWORKS_CLOUD_NGFW | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ONBOARDING
+  - typings.awsSdk.awsSdkStrings.ONBOARD_COMPLETE
+  - typings.awsSdk.awsSdkStrings.OFFBOARDING
+  - typings.awsSdk.awsSdkStrings.OFFBOARD_COMPLETE
+  - typings.awsSdk.awsSdkStrings.NOT_EXIST
+  - java.lang.String
+*/
+type ThirdPartyFirewallAssociationStatus = _ThirdPartyFirewallAssociationStatus | String
+
+type ThirdPartyFirewallFirewallPolicies = js.Array[ThirdPartyFirewallFirewallPolicy]
+
+type TimeStamp = js.Date
+
+type UpdateToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WEB_ACL_MISSING_RULE_GROUP
@@ -187,19 +274,34 @@ type UpdateToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.RESOURCE_VIOLATES_AUDIT_SECURITY_GROUP
   - typings.awsSdk.awsSdkStrings.SECURITY_GROUP_UNUSED
   - typings.awsSdk.awsSdkStrings.SECURITY_GROUP_REDUNDANT
+  - typings.awsSdk.awsSdkStrings.FMS_CREATED_SECURITY_GROUP_EDITED
   - typings.awsSdk.awsSdkStrings.MISSING_FIREWALL
   - typings.awsSdk.awsSdkStrings.MISSING_FIREWALL_SUBNET_IN_AZ
   - typings.awsSdk.awsSdkStrings.MISSING_EXPECTED_ROUTE_TABLE
   - typings.awsSdk.awsSdkStrings.NETWORK_FIREWALL_POLICY_MODIFIED
+  - typings.awsSdk.awsSdkStrings.FIREWALL_SUBNET_IS_OUT_OF_SCOPE
+  - typings.awsSdk.awsSdkStrings.INTERNET_GATEWAY_MISSING_EXPECTED_ROUTE
+  - typings.awsSdk.awsSdkStrings.FIREWALL_SUBNET_MISSING_EXPECTED_ROUTE
+  - typings.awsSdk.awsSdkStrings.UNEXPECTED_FIREWALL_ROUTES
+  - typings.awsSdk.awsSdkStrings.UNEXPECTED_TARGET_GATEWAY_ROUTES
+  - typings.awsSdk.awsSdkStrings.TRAFFIC_INSPECTION_CROSSES_AZ_BOUNDARY
+  - typings.awsSdk.awsSdkStrings.INVALID_ROUTE_CONFIGURATION
+  - typings.awsSdk.awsSdkStrings.MISSING_TARGET_GATEWAY
+  - typings.awsSdk.awsSdkStrings.INTERNET_TRAFFIC_NOT_INSPECTED
+  - typings.awsSdk.awsSdkStrings.BLACK_HOLE_ROUTE_DETECTED
+  - typings.awsSdk.awsSdkStrings.BLACK_HOLE_ROUTE_DETECTED_IN_FIREWALL_SUBNET
+  - typings.awsSdk.awsSdkStrings.RESOURCE_MISSING_DNS_FIREWALL
+  - typings.awsSdk.awsSdkStrings.ROUTE_HAS_OUT_OF_SCOPE_ENDPOINT
+  - typings.awsSdk.awsSdkStrings.FIREWALL_SUBNET_MISSING_VPCE_ENDPOINT
   - java.lang.String
 */
-type ViolationReason = typings.awsSdk.fmsMod._ViolationReason | java.lang.String
+type ViolationReason = _ViolationReason | String
 
-type ViolationTarget = java.lang.String
+type ViolationTarget = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-01-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.fmsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -8,11 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TabProps extends StObject {
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var label: js.UndefOr[ReactNode] = js.undefined
   
   var onActive: js.UndefOr[js.Function1[/* tab */ default, Unit]] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object TabProps {
   
@@ -23,6 +25,10 @@ object TabProps {
   
   extension [Self <: TabProps](x: Self) {
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
@@ -31,7 +37,7 @@ object TabProps {
     
     inline def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

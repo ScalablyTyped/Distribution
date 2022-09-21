@@ -18,9 +18,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the conditional formats that are overlap the range.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -31,38 +31,28 @@ trait ConditionalFormatCollection
   /**
     * Adds a new conditional format to the collection at the first/top priority.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     *
-    * @param type The type of conditional format being added. See Excel.ConditionalFormatType for details.
+    * @param type The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
     */
-  def add(`type`: ConditionalFormatType): ConditionalFormat = js.native
-  @JSName("add")
-  def add_CellValue(`type`: CellValue): ConditionalFormat = js.native
-  @JSName("add")
-  def add_ColorScale(`type`: ColorScale): ConditionalFormat = js.native
-  @JSName("add")
-  def add_ContainsText(`type`: ContainsText): ConditionalFormat = js.native
+  def add(
+    `type`: Custom | DataBar | ColorScale | typings.officeJs.officeJsStrings.IconSet | TopBottom | PresetCriteria | ContainsText | CellValue
+  ): ConditionalFormat = js.native
   /**
     * Adds a new conditional format to the collection at the first/top priority.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     *
-    * @param type The type of conditional format being added. See Excel.ConditionalFormatType for details.
+    * @param type The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
     */
-  @JSName("add")
-  def add_Custom(`type`: Custom): ConditionalFormat = js.native
-  @JSName("add")
-  def add_DataBar(`type`: DataBar): ConditionalFormat = js.native
-  @JSName("add")
-  def add_IconSet(`type`: typings.officeJs.officeJsStrings.IconSet): ConditionalFormat = js.native
-  @JSName("add")
-  def add_PresetCriteria(`type`: PresetCriteria): ConditionalFormat = js.native
-  @JSName("add")
-  def add_TopBottom(`type`: TopBottom): ConditionalFormat = js.native
+  def add(`type`: ConditionalFormatType): ConditionalFormat = js.native
   
   /**
     * Clears all conditional formats active on the current specified range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   def clearAll(): Unit = js.native
@@ -74,6 +64,7 @@ trait ConditionalFormatCollection
   /**
     * Returns the number of conditional formats in the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -81,21 +72,35 @@ trait ConditionalFormatCollection
   /**
     * Returns a conditional format for the given ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     *
-    * @param id The id of the conditional format.
-    * @returns Conditional Format object.
+    * @param id The ID of the conditional format.
+    * @returns Conditional format object.
     */
   def getItem(id: String): ConditionalFormat = js.native
   
   /**
     * Returns a conditional format at the given index.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     *
     * @param index Index of the conditional formats to be retrieved.
     */
   def getItemAt(index: Double): ConditionalFormat = js.native
+  
+  /**
+    * Returns a conditional format identified by its ID.
+    If the conditional format object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.14]
+    *
+    * @param id The ID of the conditional format.
+    */
+  def getItemOrNullObject(id: String): ConditionalFormat = js.native
   
   /** Gets the loaded child items in this collection. */
   val items: js.Array[ConditionalFormat] = js.native

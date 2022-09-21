@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFontSizeCommand")
 @js.native
-class ChangeFontSizeCommand ()
+open class ChangeFontSizeCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFontSizeCommand {
   

@@ -15,12 +15,12 @@ object numberMod {
     * @template TQuestion
     * The options for the question.
     */
-  @JSImport("inquirer/lib/prompts/number", JSImport.Namespace)
+  @JSImport("inquirer/lib/prompts/number", JSImport.Default)
   @js.native
-  class ^[TQuestion /* <: Question */] protected ()
-    extends typings.inquirer.inputMod.^[TQuestion] {
+  open class default[TQuestion /* <: Question */] protected ()
+    extends typings.inquirer.inputMod.default[TQuestion] {
     /**
-      * Initializes a new instance of the `NumberPrompt<T>` class.
+      * Initializes a new instance of the {@link NumberPrompt `NumberPrompt<TQuestion>`} class.
       *
       * @param question
       * The question to prompt the user to answer.
@@ -40,10 +40,10 @@ object numberMod {
     * @template TQuestion
     * The options for the question.
     */
-  type NumberPrompt[TQuestion /* <: Question */] = typings.inquirer.inputMod.^[TQuestion]
+  type NumberPrompt[TQuestion /* <: Question */] = typings.inquirer.inputMod.default[TQuestion]
   
   /**
-    * The question for the `NumberPrompt<T>`.
+    * The question for the {@link NumberPrompt `NumberPrompt<TQuestion>`}.
     */
   type Question = NumberQuestionOptions[Answers]
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "easy-table" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "easy-table" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

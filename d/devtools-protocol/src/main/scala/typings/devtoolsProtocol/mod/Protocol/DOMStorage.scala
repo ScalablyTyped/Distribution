@@ -147,7 +147,7 @@ object DOMStorage {
       
       inline def setEntries(value: js.Array[Item]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: Item*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: Item*): Self = StObject.set(x, "entries", js.Array(value*))
     }
   }
   
@@ -173,6 +173,8 @@ object DOMStorage {
       inline def setStorageId(value: StorageId): Self = StObject.set(x, "storageId", value.asInstanceOf[js.Any])
     }
   }
+  
+  type SerializedStorageKey = String
   
   trait SetDOMStorageItemRequest extends StObject {
     
@@ -209,12 +211,17 @@ object DOMStorage {
     /**
       * Security origin for the storage.
       */
-    var securityOrigin: String
+    var securityOrigin: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Represents a key by which DOM Storage keys its CachedStorageAreas
+      */
+    var storageKey: js.UndefOr[SerializedStorageKey] = js.undefined
   }
   object StorageId {
     
-    inline def apply(isLocalStorage: Boolean, securityOrigin: String): StorageId = {
-      val __obj = js.Dynamic.literal(isLocalStorage = isLocalStorage.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any])
+    inline def apply(isLocalStorage: Boolean): StorageId = {
+      val __obj = js.Dynamic.literal(isLocalStorage = isLocalStorage.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageId]
     }
     
@@ -223,6 +230,12 @@ object DOMStorage {
       inline def setIsLocalStorage(value: Boolean): Self = StObject.set(x, "isLocalStorage", value.asInstanceOf[js.Any])
       
       inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setSecurityOriginUndefined: Self = StObject.set(x, "securityOrigin", js.undefined)
+      
+      inline def setStorageKey(value: SerializedStorageKey): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+      
+      inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
     }
   }
 }

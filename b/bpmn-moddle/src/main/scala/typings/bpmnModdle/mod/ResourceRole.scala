@@ -39,7 +39,7 @@ object ResourceRole {
     
     inline def setResourceParameterBindings(value: js.Array[ResourceParameterBinding]): Self = StObject.set(x, "ResourceParameterBindings", value.asInstanceOf[js.Any])
     
-    inline def setResourceParameterBindingsVarargs(value: ResourceParameterBinding*): Self = StObject.set(x, "ResourceParameterBindings", js.Array(value :_*))
+    inline def setResourceParameterBindingsVarargs(value: ResourceParameterBinding*): Self = StObject.set(x, "ResourceParameterBindings", js.Array(value*))
     
     inline def setResourceRef(value: Resource): Self = StObject.set(x, "resourceRef", value.asInstanceOf[js.Any])
   }

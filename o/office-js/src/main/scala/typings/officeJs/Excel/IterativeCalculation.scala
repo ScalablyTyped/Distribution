@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the iterative calculation settings.
   *
-  * Represents the Iterative Calculation settings.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -26,9 +26,9 @@ trait IterativeCalculation
   var context_IterativeCalculation: RequestContext = js.native
   
   /**
-    *
     * True if Excel will use iteration to resolve circular references.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var enabled: Boolean = js.native
@@ -45,29 +45,23 @@ trait IterativeCalculation
   def load(propertyNames: js.Array[String]): IterativeCalculation = js.native
   
   /**
-    *
     * Specifies the maximum amount of change between each iteration as Excel resolves circular references.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var maxChange: Double = js.native
   
   /**
-    *
     * Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var maxIteration: Double = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.IterativeCalculation): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

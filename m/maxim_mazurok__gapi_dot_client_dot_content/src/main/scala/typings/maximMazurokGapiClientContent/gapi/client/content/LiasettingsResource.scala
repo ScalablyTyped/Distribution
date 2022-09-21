@@ -1,15 +1,15 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientContent.anon.AccesstokenAccountIdAlt
+import typings.maximMazurokGapiClientContent.anon.AccountIdAlt
 import typings.maximMazurokGapiClientContent.anon.CallbackCountry
-import typings.maximMazurokGapiClientContent.anon.CallbackFields
+import typings.maximMazurokGapiClientContent.anon.CallbackFieldsKey
 import typings.maximMazurokGapiClientContent.anon.ContactEmail
 import typings.maximMazurokGapiClientContent.anon.GmbEmail
-import typings.maximMazurokGapiClientContent.anon.Key
-import typings.maximMazurokGapiClientContent.anon.MerchantIdOauthtoken
-import typings.maximMazurokGapiClientContent.anon.OauthtokenPrettyPrint
+import typings.maximMazurokGapiClientContent.anon.PageToken
 import typings.maximMazurokGapiClientContent.anon.PosDataProviderId
-import typings.maximMazurokGapiClientContent.anon.Uploadprotocol
+import typings.maximMazurokGapiClientContent.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,27 +17,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LiasettingsResource extends StObject {
   
-  def custombatch(request: Key, body: LiasettingsCustomBatchRequest): Request[LiasettingsCustomBatchResponse] = js.native
   /** Retrieves and/or updates the LIA settings of multiple accounts in a single request. */
-  def custombatch(request: OauthtokenPrettyPrint): Request[LiasettingsCustomBatchResponse] = js.native
+  def custombatch(request: CallbackFieldsKey): Request[LiasettingsCustomBatchResponse] = js.native
+  def custombatch(request: UploadType, body: LiasettingsCustomBatchRequest): Request[LiasettingsCustomBatchResponse] = js.native
   
   /** Retrieves the LIA settings of the account. */
   def get(): Request[LiaSettings] = js.native
-  def get(request: Uploadprotocol): Request[LiaSettings] = js.native
+  def get(request: AccountIdAlt): Request[LiaSettings] = js.native
   
-  /** Retrieves the list of accessible Google My Business accounts. */
+  /** Retrieves the list of accessible Business Profiles. */
   def getaccessiblegmbaccounts(): Request[LiasettingsGetAccessibleGmbAccountsResponse] = js.native
-  def getaccessiblegmbaccounts(request: Uploadprotocol): Request[LiasettingsGetAccessibleGmbAccountsResponse] = js.native
+  def getaccessiblegmbaccounts(request: AccountIdAlt): Request[LiasettingsGetAccessibleGmbAccountsResponse] = js.native
   
   /** Lists the LIA settings of the sub-accounts in your Merchant Center account. */
   def list(): Request[LiasettingsListResponse] = js.native
-  def list(request: CallbackFields): Request[LiasettingsListResponse] = js.native
+  def list(request: PageToken): Request[LiasettingsListResponse] = js.native
   
   /** Retrieves the list of POS data providers that have active settings for the all eiligible countries. */
   def listposdataproviders(): Request[LiasettingsListPosDataProvidersResponse] = js.native
-  def listposdataproviders(request: Key): Request[LiasettingsListPosDataProvidersResponse] = js.native
+  def listposdataproviders(request: UploadType): Request[LiasettingsListPosDataProvidersResponse] = js.native
   
-  /** Requests access to a specified Google My Business account. */
+  /** Requests access to a specified Business Profile. */
   def requestgmbaccess(): Request[LiasettingsRequestGmbAccessResponse] = js.native
   def requestgmbaccess(request: GmbEmail): Request[LiasettingsRequestGmbAccessResponse] = js.native
   
@@ -54,6 +54,6 @@ trait LiasettingsResource extends StObject {
   def setposdataprovider(request: PosDataProviderId): Request[LiasettingsSetPosDataProviderResponse] = js.native
   
   /** Updates the LIA settings of the account. Any fields that are not provided are deleted from the resource. */
-  def update(request: MerchantIdOauthtoken): Request[LiaSettings] = js.native
-  def update(request: Uploadprotocol, body: LiaSettings): Request[LiaSettings] = js.native
+  def update(request: AccesstokenAccountIdAlt): Request[LiaSettings] = js.native
+  def update(request: AccountIdAlt, body: LiaSettings): Request[LiaSettings] = js.native
 }

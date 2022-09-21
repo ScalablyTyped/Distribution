@@ -15,18 +15,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def closeHistory[S /* <: Schema[js.Any, js.Any] */](tr: Transaction[S]): Transaction[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeHistory")(tr.asInstanceOf[js.Any]).asInstanceOf[Transaction[S]]
+  inline def closeHistory[S /* <: Schema[Any, Any] */](tr: Transaction): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("closeHistory")(tr.asInstanceOf[js.Any]).asInstanceOf[Transaction]
   
-  inline def history(): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("history")().asInstanceOf[Plugin[js.Any, js.Any]]
-  inline def history(config: Depth): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("history")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
+  inline def history(): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("history")().asInstanceOf[Plugin[Any]]
+  inline def history(config: Depth): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("history")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[Any]]
   
-  inline def redo[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("redo")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def redo[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("redo")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def redo[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("redo")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def redo[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("redo")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def redoDepth(state: EditorState[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("redoDepth")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def redoDepth(state: EditorState): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("redoDepth")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def undo[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("undo")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def undo[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("undo")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def undo[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("undo")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def undo[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("undo")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def undoDepth(state: EditorState[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("undoDepth")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def undoDepth(state: EditorState): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("undoDepth")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

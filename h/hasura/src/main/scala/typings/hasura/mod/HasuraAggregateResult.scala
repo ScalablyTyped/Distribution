@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HasuraAggregateResult[T /* <: Record[String, js.Any] */] extends StObject {
+trait HasuraAggregateResult[T /* <: Record[String, Any] */] extends StObject {
   
   var aggregate: js.UndefOr[AggregateResult[T]] = js.undefined
   
@@ -13,12 +13,12 @@ trait HasuraAggregateResult[T /* <: Record[String, js.Any] */] extends StObject 
 }
 object HasuraAggregateResult {
   
-  inline def apply[T /* <: Record[String, js.Any] */](): HasuraAggregateResult[T] = {
+  inline def apply[T /* <: Record[String, Any] */](): HasuraAggregateResult[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HasuraAggregateResult[T]]
   }
   
-  extension [Self <: HasuraAggregateResult[?], T /* <: Record[String, js.Any] */](x: Self & HasuraAggregateResult[T]) {
+  extension [Self <: HasuraAggregateResult[?], T /* <: Record[String, Any] */](x: Self & HasuraAggregateResult[T]) {
     
     inline def setAggregate(value: AggregateResult[T]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
@@ -28,6 +28,6 @@ object HasuraAggregateResult {
     
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    inline def setNodesVarargs(value: HasuraDataItem[T]*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: HasuraDataItem[T]*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

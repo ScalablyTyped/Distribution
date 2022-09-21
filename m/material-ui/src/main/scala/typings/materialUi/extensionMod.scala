@@ -10,10 +10,10 @@ object extensionMod {
   
   @JSImport("material-ui/svg-icons/action/extension", JSImport.Default)
   @js.native
-  class default () extends ActionExtension
+  open class default () extends ActionExtension
   
   @JSImport("material-ui/svg-icons/action/extension", "ActionExtension")
   @js.native
-  class ActionExtension ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionExtension ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

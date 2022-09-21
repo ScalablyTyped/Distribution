@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaListMembershipsResponse extends StObject {
   
   /**
-    * List of Memberships
+    * The `Membership`s under the specified `parent`.
     */
   var memberships: js.UndefOr[js.Array[SchemaMembership]] = js.undefined
   
   /**
-    * Token to retrieve the next page of results, or empty if there are no more
-    * results available for listing.
+    * A continuation token to retrieve the next page of results, or empty if there are no more results available.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListMembershipsResponse {
   
@@ -30,9 +29,11 @@ object SchemaListMembershipsResponse {
     
     inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
-    inline def setMembershipsVarargs(value: SchemaMembership*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: SchemaMembership*): Self = StObject.set(x, "memberships", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

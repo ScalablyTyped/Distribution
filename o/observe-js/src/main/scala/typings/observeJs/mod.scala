@@ -30,14 +30,14 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "ArrayObserver")
   @js.native
-  class ArrayObserver protected ()
+  open class ArrayObserver protected ()
     extends StObject
        with ArrayObserverInstance {
     /**
       * Constructor
       * @param receiver the target for observation
       */
-    def this(receiver: js.Array[js.Any]) = this()
+    def this(receiver: js.Array[Any]) = this()
   }
   /**
     * ArrayObserver observes the index-positions of an Array and reports changes as the minimal set of "splices" which would have had the same effect.
@@ -54,7 +54,7 @@ object mod {
   /**
     * Constructor
     */
-  class CompoundObserver ()
+  open class CompoundObserver ()
     extends StObject
        with CompoundObserverInstance
   /**
@@ -69,14 +69,14 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "ObjectObserver")
   @js.native
-  class ObjectObserver protected ()
+  open class ObjectObserver protected ()
     extends StObject
        with ObjectObserverInstance {
     /**
       * Constructor
       * @param receiver the target for observation
       */
-    def this(receiver: js.Any) = this()
+    def this(receiver: Any) = this()
   }
   /**
     * Observes the set of own-properties of an object and their values
@@ -90,7 +90,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "ObserverTransform")
   @js.native
-  class ObserverTransform protected ()
+  open class ObserverTransform protected ()
     extends StObject
        with ObserverTransformInstance {
     /**
@@ -98,7 +98,7 @@ object mod {
       * @param observer the observer to transform
       * @param valueFn function that gets invoked with all observed values. May return a single new value.
       */
-    def this(observer: Observable, valueFn: js.Function1[/* values */ js.Array[js.Any], js.Any]) = this()
+    def this(observer: Observable, valueFn: js.Function1[/* values */ js.Array[Any], Any]) = this()
     /**
       * Constructor
       * @param observer the observer to transform
@@ -107,8 +107,8 @@ object mod {
       */
     def this(
       observer: Observable,
-      getValue: js.Function1[/* value */ js.Any, js.Any],
-      setValue: js.Function1[/* value */ js.Any, js.Any]
+      getValue: js.Function1[/* value */ Any, Any],
+      setValue: js.Function1[/* value */ Any, Any]
     ) = this()
   }
   /**
@@ -127,7 +127,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "PathObserver")
   @js.native
-  class PathObserver protected ()
+  open class PathObserver protected ()
     extends StObject
        with PathObserverInstance {
     /**
@@ -136,8 +136,8 @@ object mod {
       * @param path specifies the paht to observe. If path === '' the receiver itself gets observed.
       * @param defaultValue the defaultValue
       */
-    def this(receiver: js.Any, path: String) = this()
-    def this(receiver: js.Any, path: String, defaultValue: js.Any) = this()
+    def this(receiver: Any, path: String) = this()
+    def this(receiver: Any, path: String, defaultValue: Any) = this()
   }
   /**
     * Observes a "value-at-a-path" from a given object:
@@ -164,7 +164,7 @@ object mod {
       * Constructor
       * @param receiver the target for observation
       */
-    Instantiable1[/* receiver */ js.Array[js.Any], ArrayObserverInstance] {
+    Instantiable1[/* receiver */ js.Array[Any], ArrayObserverInstance] {
       
       /**
         * transforms a copy of an old state of an array into a copy of its current state.
@@ -172,7 +172,7 @@ object mod {
         * @param current array of current state
         * @param splices  splices to apply
         */
-      def applySplices(previous: js.Array[js.Any], current: js.Array[js.Any], splices: js.Array[splice]): Unit = js.native
+      def applySplices(previous: js.Array[Any], current: js.Array[Any], splices: js.Array[splice]): Unit = js.native
     }
     
     @js.native
@@ -190,7 +190,7 @@ object mod {
         * @param receiver the target for observation
         * @param path specifies the paht to observe. If path === '' the receiver itself gets observed.
         */
-      def addPath(receiver: js.Any, path: String): Unit = js.native
+      def addPath(receiver: Any, path: String): Unit = js.native
     }
     
     /*----------------------
@@ -214,8 +214,8 @@ object mod {
               /* added */ Properties, 
               /* removed */ Properties, 
               /* changed */ Properties, 
-              /* getOldValueFn */ js.Function1[/* property */ String, js.Any], 
-              js.Any
+              /* getOldValueFn */ js.Function1[/* property */ String, Any], 
+              Any
             ]
       ): Unit = js.native
     }
@@ -227,7 +227,7 @@ object mod {
       * Constructor
       * @param receiver the target for observation
       */
-    Instantiable1[/* receiver */ js.Any, ObjectObserverInstance]
+    Instantiable1[/* receiver */ Any, ObjectObserverInstance]
     
     /*----------------------
       Observable
@@ -255,8 +255,8 @@ object mod {
         * @param onChange the function that gets invoked if a change is detected
         * @param the target of observation
         */
-      def open(onChange: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, js.Any]): Unit = js.native
-      def open(onChange: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, js.Any], receiver: js.Any): Unit = js.native
+      def open(onChange: js.Function2[/* newValue */ Any, /* oldValue */ Any, Any]): Unit = js.native
+      def open(onChange: js.Function2[/* newValue */ Any, /* oldValue */ Any, Any], receiver: Any): Unit = js.native
     }
     
     @js.native
@@ -268,7 +268,7 @@ object mod {
         * sets the observed value without notifying about the change.
         * @param value the value to set
         */
-      def setValue(value: js.Any): Unit = js.native
+      def setValue(value: Any): Unit = js.native
     }
     
     /*----------------------
@@ -285,8 +285,8 @@ object mod {
       */
     Instantiable3[
               /* observer */ Observable, 
-              /* getValue */ js.Function1[/* value */ js.Any, js.Any], 
-              /* setValue */ js.Function1[/* value */ js.Any, js.Any], 
+              /* getValue */ js.Function1[/* value */ Any, Any], 
+              /* setValue */ js.Function1[/* value */ Any, Any], 
               ObserverTransformInstance
             ]
          with /**
@@ -296,7 +296,7 @@ object mod {
       */
     Instantiable2[
               /* observer */ Observable, 
-              /* valueFn */ js.Function1[/* values */ js.Array[js.Any], js.Any], 
+              /* valueFn */ js.Function1[/* values */ js.Array[Any], Any], 
               ObserverTransformInstance
             ]
     
@@ -310,18 +310,18 @@ object mod {
         * a compiled getter will be used for better performance. Like PathObserver above, undefined
         * is returned unless you provide an overriding defaultValue.
         */
-      def getValueFrom(`object`: js.Any, defaultValue: js.Any): js.Any
+      def getValueFrom(`object`: Any, defaultValue: Any): Any
     }
     object Path {
       
-      inline def apply(getValueFrom: (js.Any, js.Any) => js.Any): Path = {
+      inline def apply(getValueFrom: (Any, Any) => Any): Path = {
         val __obj = js.Dynamic.literal(getValueFrom = js.Any.fromFunction2(getValueFrom))
         __obj.asInstanceOf[Path]
       }
       
       extension [Self <: Path](x: Self) {
         
-        inline def setGetValueFrom(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getValueFrom", js.Any.fromFunction2(value))
+        inline def setGetValueFrom(value: (Any, Any) => Any): Self = StObject.set(x, "getValueFrom", js.Any.fromFunction2(value))
       }
     }
     
@@ -334,7 +334,7 @@ object mod {
         * sets the observed value without notifying about the change.
         * @param value the value to set
         */
-      def setValue(value: js.Any): Unit = js.native
+      def setValue(value: Any): Unit = js.native
     }
     
     /*----------------------
@@ -349,18 +349,13 @@ object mod {
       * @param path specifies the paht to observe. If path === '' the receiver itself gets observed.
       * @param defaultValue the defaultValue
       */
-    Instantiable2[/* receiver */ js.Any, /* path */ String, PathObserverInstance]
-         with Instantiable3[
-              /* receiver */ js.Any, 
-              /* path */ String, 
-              /* defaultValue */ js.Any, 
-              PathObserverInstance
-            ]
+    Instantiable2[/* receiver */ Any, /* path */ String, PathObserverInstance]
+         with Instantiable3[/* receiver */ Any, /* path */ String, /* defaultValue */ Any, PathObserverInstance]
     
     /*----------------------
       ObjectObserver
       ----------------------*/
-    type Properties = StringDictionary[js.Any]
+    type Properties = StringDictionary[Any]
     
     /*----------------------
       ArrayObserver
@@ -380,11 +375,11 @@ object mod {
       /**
         * an array of values representing the sequence of removed elements
         */
-      var removed: js.Array[js.Any]
+      var removed: js.Array[Any]
     }
     object splice {
       
-      inline def apply(addedCount: Double, index: Double, removed: js.Array[js.Any]): splice = {
+      inline def apply(addedCount: Double, index: Double, removed: js.Array[Any]): splice = {
         val __obj = js.Dynamic.literal(addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
         __obj.asInstanceOf[splice]
       }
@@ -395,9 +390,9 @@ object mod {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        inline def setRemoved(value: js.Array[js.Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+        inline def setRemoved(value: js.Array[Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
         
-        inline def setRemovedVarargs(value: js.Any*): Self = StObject.set(x, "removed", js.Array(value :_*))
+        inline def setRemovedVarargs(value: Any*): Self = StObject.set(x, "removed", js.Array(value*))
       }
     }
   }

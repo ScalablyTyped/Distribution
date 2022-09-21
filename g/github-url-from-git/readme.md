@@ -10,10 +10,10 @@ Parse a github git url and return the github repo url
 | ------------------ | :-------------: |
 | Full name          | github-url-from-git |
 | Keywords           | github, git, url, parser |
-| # releases         | 0 |
-| # dependents       | 127 |
-| # downloads        | 5853914 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 940414.6666666666 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/node-github-url-from-git#readme)

@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object addItemMediumMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/AddItemMedium", JSImport.Default)
   @js.native
-  val default: SFC[AddItemMediumProps] = js.native
+  val default: FC[AddItemMediumProps] = js.native
   
   trait AddItemMediumProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object AddItemMediumProps {
     
@@ -29,14 +29,14 @@ object addItemMediumMod extends Shortcut {
     
     extension [Self <: AddItemMediumProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[AddItemMediumProps]
+  type _To = FC[AddItemMediumProps]
   
   /* This means you don't have to write `default`, but can instead just say `addItemMediumMod.foo` */
-  override def _to: SFC[AddItemMediumProps] = default
+  override def _to: FC[AddItemMediumProps] = default
 }

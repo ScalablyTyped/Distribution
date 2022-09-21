@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "Vector3")
 @js.native
-class Vector3 ()
+open class Vector3 ()
   extends typings.wonderJs.vector3Mod.Vector3 {
   def this(x: Double, y: Double, z: Double) = this()
 }
@@ -22,16 +22,16 @@ object Vector3 {
   
   @JSImport("wonder.js/dist/es2015", "Vector3.forward")
   @js.native
-  def forward: js.Any = js.native
-  inline def forward_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forward")(x.asInstanceOf[js.Any])
+  def forward: Any = js.native
+  inline def forward_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forward")(x.asInstanceOf[js.Any])
   
   @JSImport("wonder.js/dist/es2015", "Vector3.right")
   @js.native
-  def right: js.Any = js.native
-  inline def right_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+  def right: Any = js.native
+  inline def right_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
   
   @JSImport("wonder.js/dist/es2015", "Vector3.up")
   @js.native
-  def up: js.Any = js.native
-  inline def up_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("up")(x.asInstanceOf[js.Any])
+  def up: Any = js.native
+  inline def up_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("up")(x.asInstanceOf[js.Any])
 }

@@ -37,7 +37,7 @@ object IndicesUpgradeParams {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setOnlyAncientSegments(value: Boolean): Self = StObject.set(x, "onlyAncientSegments", value.asInstanceOf[js.Any])
     

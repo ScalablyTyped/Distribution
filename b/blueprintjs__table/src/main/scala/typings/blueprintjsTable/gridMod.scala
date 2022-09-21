@@ -1,6 +1,6 @@
 package typings.blueprintjsTable
 
-import typings.blueprintjsTable.esmRegionsMod.IRegion
+import typings.blueprintjsTable.esmRegionsMod.Region
 import typings.blueprintjsTable.rectMod.Rect
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ object gridMod {
   
   @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid")
   @js.native
-  class Grid protected () extends StObject {
+  open class Grid protected () extends StObject {
     /**
       * This constructor accumulates the heights and widths in `O(n)`, saving
       * time in later calculations.
@@ -53,13 +53,13 @@ object gridMod {
       ghostWidth: Double
     ) = this()
     
-    /* private */ var bleed: js.Any = js.native
+    /* private */ var bleed: Any = js.native
     
-    /* private */ var columnWidths: js.Any = js.native
+    /* private */ var columnWidths: Any = js.native
     
-    /* private */ var cumulativeColumnWidths: js.Any = js.native
+    /* private */ var cumulativeColumnWidths: Any = js.native
     
-    /* private */ var cumulativeRowHeights: js.Any = js.native
+    /* private */ var cumulativeRowHeights: Any = js.native
     
     /**
       * Returns the `Rect` bounds of a cell in scrollpane client space.
@@ -78,10 +78,10 @@ object gridMod {
       * Returns the start and end indices of columns that intersect with the
       * given `Rect` argument.
       */
-    def getColumnIndicesInRect(rect: Rect): IColumnIndices = js.native
-    def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean): IColumnIndices = js.native
-    def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean, limit: Double): IColumnIndices = js.native
-    def getColumnIndicesInRect(rect: Rect, includeGhostCells: Unit, limit: Double): IColumnIndices = js.native
+    def getColumnIndicesInRect(rect: Rect): ColumnIndices = js.native
+    def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean): ColumnIndices = js.native
+    def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean, limit: Double): ColumnIndices = js.native
+    def getColumnIndicesInRect(rect: Rect, includeGhostCells: Unit, limit: Double): ColumnIndices = js.native
     
     /**
       * Returns the `Rect` with the base coordinate and width of the specified column.
@@ -112,23 +112,20 @@ object gridMod {
       */
     def getHeight(): Double = js.native
     
-    /* private */ var getIndicesInInterval: js.Any = js.native
+    /* private */ var getIndicesInInterval: Any = js.native
     
     /**
       * Returns the `Rect` bounds of entire grid
       */
     def getRect(): Rect = js.native
     
-    def getRegionStyle(region: IRegion): CSSProperties = js.native
+    def getRegionStyle(region: Region): CSSProperties = js.native
     
     /**
       * Returns the start and end indices of rows that intersect with the given
       * `Rect` argument.
       */
-    def getRowIndicesInRect(rect: Rect): IRowIndices = js.native
-    def getRowIndicesInRect(rect: Rect, includeGhostCells: Boolean): IRowIndices = js.native
-    def getRowIndicesInRect(rect: Rect, includeGhostCells: Boolean, limit: Double): IRowIndices = js.native
-    def getRowIndicesInRect(rect: Rect, includeGhostCells: Unit, limit: Double): IRowIndices = js.native
+    def getRowIndicesInRect(options: GetRowIndicesInRectOptions): RowIndices = js.native
     
     /**
       * Returns the `Rect` with the base coordinate and height of the specified row.
@@ -140,9 +137,9 @@ object gridMod {
       */
     def getWidth(): Double = js.native
     
-    /* private */ var ghostHeight: js.Any = js.native
+    /* private */ var ghostHeight: Any = js.native
     
-    /* private */ var ghostWidth: js.Any = js.native
+    /* private */ var ghostWidth: Any = js.native
     
     def isGhostColumn(columnIndex: Double): Boolean = js.native
     
@@ -178,7 +175,7 @@ object gridMod {
     
     var numRows: Double = js.native
     
-    /* private */ var rowHeights: js.Any = js.native
+    /* private */ var rowHeights: Any = js.native
   }
   /* static members */
   object Grid {
@@ -211,24 +208,32 @@ object gridMod {
     @js.native
     def DEFAULT_MAX_ROWS: Double = js.native
     inline def DEFAULT_MAX_ROWS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAX_ROWS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid.MIN_COLUMN_HEADER_HEIGHT")
+    @js.native
+    def MIN_COLUMN_HEADER_HEIGHT: Double = js.native
+    inline def MIN_COLUMN_HEADER_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_COLUMN_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid.MIN_ROW_HEADER_WIDTH")
+    @js.native
+    def MIN_ROW_HEADER_WIDTH: Double = js.native
+    inline def MIN_ROW_HEADER_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_ROW_HEADER_WIDTH")(x.asInstanceOf[js.Any])
   }
   
-  type ICellMapper[T] = js.Function2[/* rowIndex */ Double, /* columnIndex */ Double, T]
-  
-  trait IColumnIndices extends StObject {
+  trait ColumnIndices extends StObject {
     
     var columnIndexEnd: Double
     
     var columnIndexStart: Double
   }
-  object IColumnIndices {
+  object ColumnIndices {
     
-    inline def apply(columnIndexEnd: Double, columnIndexStart: Double): IColumnIndices = {
+    inline def apply(columnIndexEnd: Double, columnIndexStart: Double): ColumnIndices = {
       val __obj = js.Dynamic.literal(columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IColumnIndices]
+      __obj.asInstanceOf[ColumnIndices]
     }
     
-    extension [Self <: IColumnIndices](x: Self) {
+    extension [Self <: ColumnIndices](x: Self) {
       
       inline def setColumnIndexEnd(value: Double): Self = StObject.set(x, "columnIndexEnd", value.asInstanceOf[js.Any])
       
@@ -236,28 +241,68 @@ object gridMod {
     }
   }
   
+  trait GetRowIndicesInRectOptions extends StObject {
+    
+    /**
+      * height to subtract from the rect height, as rows hidden behind the columnHeader should not be returned.
+      */
+    var columnHeaderHeight: js.UndefOr[Double] = js.undefined
+    
+    var includeGhostCells: js.UndefOr[Boolean] = js.undefined
+    
+    var limit: js.UndefOr[Double] = js.undefined
+    
+    var rect: Rect
+  }
+  object GetRowIndicesInRectOptions {
+    
+    inline def apply(rect: Rect): GetRowIndicesInRectOptions = {
+      val __obj = js.Dynamic.literal(rect = rect.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetRowIndicesInRectOptions]
+    }
+    
+    extension [Self <: GetRowIndicesInRectOptions](x: Self) {
+      
+      inline def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "columnHeaderHeight", value.asInstanceOf[js.Any])
+      
+      inline def setColumnHeaderHeightUndefined: Self = StObject.set(x, "columnHeaderHeight", js.undefined)
+      
+      inline def setIncludeGhostCells(value: Boolean): Self = StObject.set(x, "includeGhostCells", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeGhostCellsUndefined: Self = StObject.set(x, "includeGhostCells", js.undefined)
+      
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      
+      inline def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ICellMapper[T] = js.Function2[/* rowIndex */ Double, /* columnIndex */ Double, T]
+  
   type IColumnMapper[T] = js.Function1[/* columnIndex */ Double, T]
   
-  trait IRowIndices extends StObject {
+  type IRowMapper[T] = js.Function1[/* rowIndex */ Double, T]
+  
+  trait RowIndices extends StObject {
     
     var rowIndexEnd: Double
     
     var rowIndexStart: Double
   }
-  object IRowIndices {
+  object RowIndices {
     
-    inline def apply(rowIndexEnd: Double, rowIndexStart: Double): IRowIndices = {
+    inline def apply(rowIndexEnd: Double, rowIndexStart: Double): RowIndices = {
       val __obj = js.Dynamic.literal(rowIndexEnd = rowIndexEnd.asInstanceOf[js.Any], rowIndexStart = rowIndexStart.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IRowIndices]
+      __obj.asInstanceOf[RowIndices]
     }
     
-    extension [Self <: IRowIndices](x: Self) {
+    extension [Self <: RowIndices](x: Self) {
       
       inline def setRowIndexEnd(value: Double): Self = StObject.set(x, "rowIndexEnd", value.asInstanceOf[js.Any])
       
       inline def setRowIndexStart(value: Double): Self = StObject.set(x, "rowIndexStart", value.asInstanceOf[js.Any])
     }
   }
-  
-  type IRowMapper[T] = js.Function1[/* rowIndex */ Double, T]
 }

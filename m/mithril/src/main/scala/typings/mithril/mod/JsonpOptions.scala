@@ -12,7 +12,7 @@ trait JsonpOptions extends StObject {
   var background: js.UndefOr[Boolean] = js.undefined
   
   /** The data to be serialized into the request body. */
-  var body: js.UndefOr[js.Any] = js.undefined
+  var body: js.UndefOr[Any] = js.undefined
   
   /** The name of the querystring parameter name that specifies the callback name. */
   var callbackKey: js.UndefOr[String] = js.undefined
@@ -21,10 +21,10 @@ trait JsonpOptions extends StObject {
   var callbackName: js.UndefOr[String] = js.undefined
   
   /** The data to be interpolated into the URL and serialized into the querystring. */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /** A constructor to be applied to each object in the response. */
-  var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
+  var `type`: js.UndefOr[Instantiable1[/* o */ Any, Any]] = js.undefined
 }
 object JsonpOptions {
   
@@ -39,7 +39,7 @@ object JsonpOptions {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -51,11 +51,11 @@ object JsonpOptions {
     
     inline def setCallbackNameUndefined: Self = StObject.set(x, "callbackName", js.undefined)
     
-    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setType(value: Instantiable1[/* o */ js.Any, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Instantiable1[/* o */ Any, Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

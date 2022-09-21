@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object yearinfoMod {
   
-  @JSImport("rrule/dist/esm/src/iterinfo/yearinfo", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/iterinfo/yearinfo", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -58,31 +58,31 @@ object yearinfoMod {
       
       inline def setMdaymask(value: js.Array[Double]): Self = StObject.set(x, "mdaymask", value.asInstanceOf[js.Any])
       
-      inline def setMdaymaskVarargs(value: Double*): Self = StObject.set(x, "mdaymask", js.Array(value :_*))
+      inline def setMdaymaskVarargs(value: Double*): Self = StObject.set(x, "mdaymask", js.Array(value*))
       
       inline def setMmask(value: js.Array[Double]): Self = StObject.set(x, "mmask", value.asInstanceOf[js.Any])
       
-      inline def setMmaskVarargs(value: Double*): Self = StObject.set(x, "mmask", js.Array(value :_*))
+      inline def setMmaskVarargs(value: Double*): Self = StObject.set(x, "mmask", js.Array(value*))
       
       inline def setMrange(value: js.Array[Double]): Self = StObject.set(x, "mrange", value.asInstanceOf[js.Any])
       
-      inline def setMrangeVarargs(value: Double*): Self = StObject.set(x, "mrange", js.Array(value :_*))
+      inline def setMrangeVarargs(value: Double*): Self = StObject.set(x, "mrange", js.Array(value*))
       
       inline def setNextyearlen(value: `365` | `366`): Self = StObject.set(x, "nextyearlen", value.asInstanceOf[js.Any])
       
       inline def setNmdaymask(value: js.Array[Double]): Self = StObject.set(x, "nmdaymask", value.asInstanceOf[js.Any])
       
-      inline def setNmdaymaskVarargs(value: Double*): Self = StObject.set(x, "nmdaymask", js.Array(value :_*))
+      inline def setNmdaymaskVarargs(value: Double*): Self = StObject.set(x, "nmdaymask", js.Array(value*))
       
       inline def setWdaymask(value: js.Array[Double]): Self = StObject.set(x, "wdaymask", value.asInstanceOf[js.Any])
       
-      inline def setWdaymaskVarargs(value: Double*): Self = StObject.set(x, "wdaymask", js.Array(value :_*))
+      inline def setWdaymaskVarargs(value: Double*): Self = StObject.set(x, "wdaymask", js.Array(value*))
       
       inline def setWnomask(value: js.Array[Double]): Self = StObject.set(x, "wnomask", value.asInstanceOf[js.Any])
       
       inline def setWnomaskNull: Self = StObject.set(x, "wnomask", null)
       
-      inline def setWnomaskVarargs(value: Double*): Self = StObject.set(x, "wnomask", js.Array(value :_*))
+      inline def setWnomaskVarargs(value: Double*): Self = StObject.set(x, "wnomask", js.Array(value*))
       
       inline def setYearlen(value: `365` | `366`): Self = StObject.set(x, "yearlen", value.asInstanceOf[js.Any])
       

@@ -6,34 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "StringLiteral")
 @js.native
-class StringLiteral protected ()
+open class StringLiteral protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.StringLiteral {
   def this(_text: String, _valueText: String) = this()
   
   /* private */ /* CompleteClass */
-  var _astID: js.Any = js.native
+  var _astID: Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _postComments: js.Any = js.native
+  var _postComments: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _preComments: js.Any = js.native
+  var _preComments: Any = js.native
   
   /* CompleteClass */
   var _start: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _text: js.Any = js.native
+  var _text: Any = js.native
   
   /* CompleteClass */
   var _trailingTriviaWidth: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _valueText: js.Any = js.native
+  var _valueText: Any = js.native
   
   /* CompleteClass */
   override def end(): Double = js.native

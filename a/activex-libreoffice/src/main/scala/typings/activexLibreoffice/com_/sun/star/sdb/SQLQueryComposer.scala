@@ -42,7 +42,7 @@ object SQLQueryComposer {
     getQuery: () => String,
     getStructuredFilter: () => SafeArray[SafeArray[PropertyValue]],
     getTables: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFilter: String => Unit,
     setOrder: String => Unit,

@@ -34,7 +34,7 @@ object tableMod {
     *                                                 map.
     * @param   [userOpts.fields=DefaultTableOpts.fields] - mapping of field key to {@link Field} object
     */
-  class Table[MClass /* <: Instantiable0[AnyModel] */] () extends StObject {
+  open class Table[MClass /* <: Instantiable0[AnyModel] */] () extends StObject {
     def this(userOpts: ModelTableOpts[MClass]) = this()
     
     def getEmptyState(): TableState[MClass] = js.native
@@ -105,7 +105,7 @@ object tableMod {
   
   type TableIndexes[MClass /* <: Instantiable0[AnyModel] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in redux-orm.redux-orm/Model.FieldSpecKeys<std.InstanceType<MClass>, redux-orm.redux-orm.OneToOne | redux-orm.redux-orm.ForeignKey> ]: string}
-    */ typings.reduxOrm.reduxOrmStrings.TableIndexes & TopLevel[js.Any]
+    */ typings.reduxOrm.reduxOrmStrings.TableIndexes & TopLevel[Any]
   
   trait TableOpts extends StObject {
     

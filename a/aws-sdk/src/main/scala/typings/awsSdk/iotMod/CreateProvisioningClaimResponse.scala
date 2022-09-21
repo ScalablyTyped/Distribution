@@ -19,7 +19,7 @@ trait CreateProvisioningClaimResponse extends StObject {
   /**
     * The provisioning claim expiration time.
     */
-  var expiration: js.UndefOr[DateType] = js.undefined
+  var expiration: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The provisioning claim key pair.
@@ -43,7 +43,7 @@ object CreateProvisioningClaimResponse {
     
     inline def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
     
-    inline def setExpiration(value: DateType): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: js.Date): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     

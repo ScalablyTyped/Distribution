@@ -148,7 +148,7 @@ object WindowsInformationProtection {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: TargetedManagedAppPolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: TargetedManagedAppPolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
     
     inline def setAzureRightsManagementServicesAllowed(value: Boolean): Self = StObject.set(x, "azureRightsManagementServicesAllowed", value.asInstanceOf[js.Any])
     
@@ -180,7 +180,7 @@ object WindowsInformationProtection {
     
     inline def setEnterpriseIPRangesUndefined: Self = StObject.set(x, "enterpriseIPRanges", js.undefined)
     
-    inline def setEnterpriseIPRangesVarargs(value: WindowsInformationProtectionIPRangeCollection*): Self = StObject.set(x, "enterpriseIPRanges", js.Array(value :_*))
+    inline def setEnterpriseIPRangesVarargs(value: WindowsInformationProtectionIPRangeCollection*): Self = StObject.set(x, "enterpriseIPRanges", js.Array(value*))
     
     inline def setEnterpriseInternalProxyServers(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseInternalProxyServers", value.asInstanceOf[js.Any])
     
@@ -188,7 +188,7 @@ object WindowsInformationProtection {
     
     inline def setEnterpriseInternalProxyServersUndefined: Self = StObject.set(x, "enterpriseInternalProxyServers", js.undefined)
     
-    inline def setEnterpriseInternalProxyServersVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseInternalProxyServers", js.Array(value :_*))
+    inline def setEnterpriseInternalProxyServersVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseInternalProxyServers", js.Array(value*))
     
     inline def setEnterpriseNetworkDomainNames(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseNetworkDomainNames", value.asInstanceOf[js.Any])
     
@@ -196,7 +196,7 @@ object WindowsInformationProtection {
     
     inline def setEnterpriseNetworkDomainNamesUndefined: Self = StObject.set(x, "enterpriseNetworkDomainNames", js.undefined)
     
-    inline def setEnterpriseNetworkDomainNamesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseNetworkDomainNames", js.Array(value :_*))
+    inline def setEnterpriseNetworkDomainNamesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseNetworkDomainNames", js.Array(value*))
     
     inline def setEnterpriseProtectedDomainNames(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseProtectedDomainNames", value.asInstanceOf[js.Any])
     
@@ -204,7 +204,7 @@ object WindowsInformationProtection {
     
     inline def setEnterpriseProtectedDomainNamesUndefined: Self = StObject.set(x, "enterpriseProtectedDomainNames", js.undefined)
     
-    inline def setEnterpriseProtectedDomainNamesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseProtectedDomainNames", js.Array(value :_*))
+    inline def setEnterpriseProtectedDomainNamesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseProtectedDomainNames", js.Array(value*))
     
     inline def setEnterpriseProxiedDomains(value: NullableOption[js.Array[WindowsInformationProtectionProxiedDomainCollection]]): Self = StObject.set(x, "enterpriseProxiedDomains", value.asInstanceOf[js.Any])
     
@@ -212,7 +212,7 @@ object WindowsInformationProtection {
     
     inline def setEnterpriseProxiedDomainsUndefined: Self = StObject.set(x, "enterpriseProxiedDomains", js.undefined)
     
-    inline def setEnterpriseProxiedDomainsVarargs(value: WindowsInformationProtectionProxiedDomainCollection*): Self = StObject.set(x, "enterpriseProxiedDomains", js.Array(value :_*))
+    inline def setEnterpriseProxiedDomainsVarargs(value: WindowsInformationProtectionProxiedDomainCollection*): Self = StObject.set(x, "enterpriseProxiedDomains", js.Array(value*))
     
     inline def setEnterpriseProxyServers(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseProxyServers", value.asInstanceOf[js.Any])
     
@@ -224,7 +224,7 @@ object WindowsInformationProtection {
     
     inline def setEnterpriseProxyServersUndefined: Self = StObject.set(x, "enterpriseProxyServers", js.undefined)
     
-    inline def setEnterpriseProxyServersVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseProxyServers", js.Array(value :_*))
+    inline def setEnterpriseProxyServersVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseProxyServers", js.Array(value*))
     
     inline def setExemptAppLockerFiles(value: NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]): Self = StObject.set(x, "exemptAppLockerFiles", value.asInstanceOf[js.Any])
     
@@ -232,7 +232,7 @@ object WindowsInformationProtection {
     
     inline def setExemptAppLockerFilesUndefined: Self = StObject.set(x, "exemptAppLockerFiles", js.undefined)
     
-    inline def setExemptAppLockerFilesVarargs(value: WindowsInformationProtectionAppLockerFile*): Self = StObject.set(x, "exemptAppLockerFiles", js.Array(value :_*))
+    inline def setExemptAppLockerFilesVarargs(value: WindowsInformationProtectionAppLockerFile*): Self = StObject.set(x, "exemptAppLockerFiles", js.Array(value*))
     
     inline def setExemptApps(value: NullableOption[js.Array[WindowsInformationProtectionApp]]): Self = StObject.set(x, "exemptApps", value.asInstanceOf[js.Any])
     
@@ -240,7 +240,7 @@ object WindowsInformationProtection {
     
     inline def setExemptAppsUndefined: Self = StObject.set(x, "exemptApps", js.undefined)
     
-    inline def setExemptAppsVarargs(value: WindowsInformationProtectionApp*): Self = StObject.set(x, "exemptApps", js.Array(value :_*))
+    inline def setExemptAppsVarargs(value: WindowsInformationProtectionApp*): Self = StObject.set(x, "exemptApps", js.Array(value*))
     
     inline def setIconsVisible(value: Boolean): Self = StObject.set(x, "iconsVisible", value.asInstanceOf[js.Any])
     
@@ -260,7 +260,7 @@ object WindowsInformationProtection {
     
     inline def setNeutralDomainResourcesUndefined: Self = StObject.set(x, "neutralDomainResources", js.undefined)
     
-    inline def setNeutralDomainResourcesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "neutralDomainResources", js.Array(value :_*))
+    inline def setNeutralDomainResourcesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "neutralDomainResources", js.Array(value*))
     
     inline def setProtectedAppLockerFiles(value: NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]): Self = StObject.set(x, "protectedAppLockerFiles", value.asInstanceOf[js.Any])
     
@@ -268,7 +268,7 @@ object WindowsInformationProtection {
     
     inline def setProtectedAppLockerFilesUndefined: Self = StObject.set(x, "protectedAppLockerFiles", js.undefined)
     
-    inline def setProtectedAppLockerFilesVarargs(value: WindowsInformationProtectionAppLockerFile*): Self = StObject.set(x, "protectedAppLockerFiles", js.Array(value :_*))
+    inline def setProtectedAppLockerFilesVarargs(value: WindowsInformationProtectionAppLockerFile*): Self = StObject.set(x, "protectedAppLockerFiles", js.Array(value*))
     
     inline def setProtectedApps(value: NullableOption[js.Array[WindowsInformationProtectionApp]]): Self = StObject.set(x, "protectedApps", value.asInstanceOf[js.Any])
     
@@ -276,7 +276,7 @@ object WindowsInformationProtection {
     
     inline def setProtectedAppsUndefined: Self = StObject.set(x, "protectedApps", js.undefined)
     
-    inline def setProtectedAppsVarargs(value: WindowsInformationProtectionApp*): Self = StObject.set(x, "protectedApps", js.Array(value :_*))
+    inline def setProtectedAppsVarargs(value: WindowsInformationProtectionApp*): Self = StObject.set(x, "protectedApps", js.Array(value*))
     
     inline def setProtectionUnderLockConfigRequired(value: Boolean): Self = StObject.set(x, "protectionUnderLockConfigRequired", value.asInstanceOf[js.Any])
     
@@ -298,6 +298,6 @@ object WindowsInformationProtection {
     
     inline def setSmbAutoEncryptedFileExtensionsUndefined: Self = StObject.set(x, "smbAutoEncryptedFileExtensions", js.undefined)
     
-    inline def setSmbAutoEncryptedFileExtensionsVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "smbAutoEncryptedFileExtensions", js.Array(value :_*))
+    inline def setSmbAutoEncryptedFileExtensionsVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "smbAutoEncryptedFileExtensions", js.Array(value*))
   }
 }

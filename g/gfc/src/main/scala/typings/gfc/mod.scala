@@ -4,8 +4,8 @@ import typings.gfc.anon.Contents
 import typings.gfc.anon.Stderr
 import typings.gfc.gfcBooleans.`false`
 import typings.gfc.gfcStrings.buffer
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.childProcessMod.ExecException
 import typings.node.childProcessMod.ExecOptions
 import typings.node.childProcessMod.ExecSyncOptions

@@ -34,7 +34,7 @@ trait MetricDatapoint extends StObject {
   /**
     * The timestamp (e.g., 1479816991.349).
     */
-  var timestamp: js.UndefOr[typings.awsSdk.lightsailMod.timestamp] = js.undefined
+  var timestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unit. 
@@ -70,7 +70,7 @@ object MetricDatapoint {
     
     inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
     
-    inline def setTimestamp(value: timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     

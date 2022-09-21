@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "Marker")
 @js.native
-class Marker protected () extends DraggableControl[MarkerProps] {
+open class Marker protected () extends DraggableControl[MarkerProps] {
   def this(props: MarkerProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MarkerProps, context: js.Any) = this()
+  def this(props: MarkerProps, context: Any) = this()
 }

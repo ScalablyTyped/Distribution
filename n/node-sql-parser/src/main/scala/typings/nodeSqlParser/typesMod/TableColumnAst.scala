@@ -23,14 +23,14 @@ object TableColumnAst {
     
     inline def setAst(value: js.Array[AST] | AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    inline def setAstVarargs(value: AST*): Self = StObject.set(x, "ast", js.Array(value :_*))
+    inline def setAstVarargs(value: AST*): Self = StObject.set(x, "ast", js.Array(value*))
     
     inline def setColumnList(value: js.Array[String]): Self = StObject.set(x, "columnList", value.asInstanceOf[js.Any])
     
-    inline def setColumnListVarargs(value: String*): Self = StObject.set(x, "columnList", js.Array(value :_*))
+    inline def setColumnListVarargs(value: String*): Self = StObject.set(x, "columnList", js.Array(value*))
     
     inline def setTableList(value: js.Array[String]): Self = StObject.set(x, "tableList", value.asInstanceOf[js.Any])
     
-    inline def setTableListVarargs(value: String*): Self = StObject.set(x, "tableList", js.Array(value :_*))
+    inline def setTableListVarargs(value: String*): Self = StObject.set(x, "tableList", js.Array(value*))
   }
 }

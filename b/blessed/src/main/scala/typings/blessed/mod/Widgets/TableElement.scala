@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.TableElement")
 @js.native
-class TableElement protected () extends BoxElement {
+open class TableElement protected () extends BoxElement {
   def this(opts: TableOptions) = this()
   
   @JSName("options")

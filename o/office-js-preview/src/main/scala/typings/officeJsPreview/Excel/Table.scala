@@ -12,10 +12,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an Excel table.
   To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -24,9 +24,9 @@ trait Table
      with ClientObject {
   
   /**
+    * Represents the `AutoFilter` object of the table.
     *
-    * Represents the AutoFilter object of the table.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val autoFilter: AutoFilter = js.native
@@ -34,6 +34,7 @@ trait Table
   /**
     * Clears all the filters currently applied on the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def clearFilters(): Unit = js.native
@@ -41,15 +42,16 @@ trait Table
   /**
     * Changes the table to use the default table style.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   def clearStyle(): Unit = js.native
   
   /**
-    *
     * Represents a collection of all the columns in the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val columns: TableColumnCollection = js.native
@@ -61,6 +63,7 @@ trait Table
   /**
     * Converts the table into a normal range of cells. All data is preserved.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def convertToRange(): Range = js.native
@@ -68,6 +71,7 @@ trait Table
   /**
     * Deletes the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def delete(): Unit = js.native
@@ -75,13 +79,15 @@ trait Table
   /**
     * Gets the range object associated with the data body of the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getDataBodyRange(): Range = js.native
   
   /**
-    * Gets the range object associated with header row of the table.
+    * Gets the range object associated with the header row of the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getHeaderRowRange(): Range = js.native
@@ -89,45 +95,47 @@ trait Table
   /**
     * Gets the range object associated with the entire table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getRange(): Range = js.native
   
   /**
-    * Gets the range object associated with totals row of the table.
+    * Gets the range object associated with the totals row of the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getTotalRowRange(): Range = js.native
   
   /**
-    *
     * Specifies if the first column contains special formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var highlightFirstColumn: Boolean = js.native
   
   /**
-    *
     * Specifies if the last column contains special formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var highlightLastColumn: Boolean = js.native
   
   /**
-    *
     * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val id: String = js.native
   
   /**
+    * Returns a numeric ID.
     *
-    * Returns a numeric id.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val legacyId: String = js.native
@@ -144,19 +152,19 @@ trait Table
   def load(propertyNames: js.Array[String]): Table = js.native
   
   /**
-    *
     * Name of the table.
     
-    The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+    The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: String = js.native
   
   /**
-    *
     * Occurs when data in cells changes on a specific table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @eventproperty
@@ -164,9 +172,9 @@ trait Table
   val onChanged: EventHandlers[TableChangedEventArgs] = js.native
   
   /**
+    * Occurs when a filter is applied on a specific table.
     *
-    * Occurs when filter is applied on a specific table.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
     * @eventproperty
@@ -175,9 +183,9 @@ trait Table
   val onFiltered: EventHandlers[TableFilteredEventArgs] = js.native
   
   /**
-    *
     * Occurs when the selection changes on a specific table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @eventproperty
@@ -187,26 +195,32 @@ trait Table
   /**
     * Reapplies all the filters currently on the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def reapplyFilters(): Unit = js.native
   
+  def resize(newRange: String): Unit = js.native
   /**
+    * Resize the table to the new range. The new range must overlap with the original table range and the headers (or the top of the table) must be in the same row.
     *
+    * @remarks
+    * [Api set: ExcelApi 1.13]
+    *
+    * @param newRange The range object or range address that will be used to determine the new size of the table.
+    */
+  def resize(newRange: Range): Unit = js.native
+  
+  /**
     * Represents a collection of all the rows in the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val rows: TableRowCollection = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.Table): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -218,6 +232,7 @@ trait Table
   /**
     * Sets the style applied to the table.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
@@ -228,65 +243,65 @@ trait Table
   def setStyle(style: TableStyle): Unit = js.native
   
   /**
+    * Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones, to make reading the table easier.
     *
-    * Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var showBandedColumns: Boolean = js.native
   
   /**
+    * Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones, to make reading the table easier.
     *
-    * Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var showBandedRows: Boolean = js.native
   
   /**
-    *
     * Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var showFilterButton: Boolean = js.native
   
   /**
-    *
     * Specifies if the header row is visible. This value can be set to show or remove the header row.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showHeaders: Boolean = js.native
   
   /**
-    *
     * Specifies if the total row is visible. This value can be set to show or remove the total row.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showTotals: Boolean = js.native
   
   /**
-    *
     * Represents the sorting for the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val sort: TableSort = js.native
   
   /**
+    * Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
     *
-    * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var style: String = js.native
   
   /**
+    * The style applied to the table.
     *
-    * The style applied to the Table.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
@@ -299,9 +314,9 @@ trait Table
   def toJSON(): TableData = js.native
   
   /**
-    *
     * The worksheet containing the current table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val worksheet: Worksheet = js.native

@@ -1,6 +1,5 @@
 package typings.swToolbox
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,5 +129,5 @@ object mod {
     def put(urlPattern: URLPattern, handler: Handler, options: Options_): Unit = js.native
   }
   
-  type URLPattern = String | RegExp
+  type URLPattern = String | js.RegExp
 }

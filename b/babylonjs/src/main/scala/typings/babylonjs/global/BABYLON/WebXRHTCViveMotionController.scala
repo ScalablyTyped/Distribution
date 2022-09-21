@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRHTCViveMotionController")
 @js.native
-class WebXRHTCViveMotionController protected ()
+open class WebXRHTCViveMotionController protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRHTCViveMotionController {
   /**

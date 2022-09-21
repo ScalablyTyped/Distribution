@@ -20,7 +20,7 @@ trait Inputs extends StObject {
     * @todo Find out how this `inputs.page` setting is useful + show an example
     * @default null
     */
-  var page: js.UndefOr[js.Any] = js.undefined
+  var page: js.UndefOr[Any] = js.undefined
   
   /**
     * Text content introducing the pagination
@@ -258,7 +258,7 @@ trait Inputs extends StObject {
     * @default null
     * @see http://www.dynatable.com/#sorting
     */
-  var sorts: js.UndefOr[js.Any] = js.undefined
+  var sorts: js.UndefOr[Any] = js.undefined
 }
 object Inputs {
   
@@ -273,9 +273,9 @@ object Inputs {
     
     inline def setMultisortUndefined: Self = StObject.set(x, "multisort", js.undefined)
     
-    inline def setMultisortVarargs(value: String*): Self = StObject.set(x, "multisort", js.Array(value :_*))
+    inline def setMultisortVarargs(value: String*): Self = StObject.set(x, "multisort", js.Array(value*))
     
-    inline def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     inline def setPageText(value: String): Self = StObject.set(x, "pageText", value.asInstanceOf[js.Any])
     
@@ -299,7 +299,7 @@ object Inputs {
     
     inline def setPaginationGapUndefined: Self = StObject.set(x, "paginationGap", js.undefined)
     
-    inline def setPaginationGapVarargs(value: Double*): Self = StObject.set(x, "paginationGap", js.Array(value :_*))
+    inline def setPaginationGapVarargs(value: Double*): Self = StObject.set(x, "paginationGap", js.Array(value*))
     
     inline def setPaginationLinkClass(value: String): Self = StObject.set(x, "paginationLinkClass", value.asInstanceOf[js.Any])
     
@@ -401,7 +401,7 @@ object Inputs {
     
     inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
-    inline def setSorts(value: js.Any): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
+    inline def setSorts(value: Any): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
     
     inline def setSortsUndefined: Self = StObject.set(x, "sorts", js.undefined)
   }

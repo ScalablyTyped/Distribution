@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("muicss/react", "Textarea")
 @js.native
-class Textarea () extends default
+open class Textarea () extends default

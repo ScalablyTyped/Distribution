@@ -9,6 +9,10 @@ trait TVVIEWERBGEXECUTABLE extends StObject {
   
   /**
     * Whether the application can be executed in the background
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var TV_VIEWER_BG_EXECUTABLE: `0`
 }

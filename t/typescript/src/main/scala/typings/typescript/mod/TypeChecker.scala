@@ -50,7 +50,12 @@ trait TypeChecker extends StObject {
   
   def getFullyQualifiedName(symbol: Symbol): java.lang.String = js.native
   
+  /** Follow a *single* alias to get the immediately aliased symbol. */
+  def getImmediateAliasedSymbol(symbol: Symbol): js.UndefOr[Symbol] = js.native
+  
   def getIndexInfoOfType(`type`: Type, kind: IndexKind): js.UndefOr[IndexInfo] = js.native
+  
+  def getIndexInfosOfType(`type`: Type): js.Array[IndexInfo] = js.native
   
   def getIndexTypeOfType(`type`: Type, kind: IndexKind): js.UndefOr[Type] = js.native
   
@@ -86,6 +91,7 @@ trait TypeChecker extends StObject {
     * The function returns the value (local variable) symbol of an identifier in the short-hand property assignment.
     * This is necessary as an identifier in short-hand property assignment can contains two meaning: property name and property value.
     */
+  def getShorthandAssignmentValueSymbol(): js.UndefOr[Symbol] = js.native
   def getShorthandAssignmentValueSymbol(location: Node): js.UndefOr[Symbol] = js.native
   
   def getSignatureFromDeclaration(declaration: SignatureDeclaration): js.UndefOr[Signature] = js.native
@@ -110,13 +116,15 @@ trait TypeChecker extends StObject {
   
   def getTypeOfSymbolAtLocation(symbol: Symbol, node: Node): Type = js.native
   
+  def getTypePredicateOfSignature(signature: Signature): js.UndefOr[TypePredicate] = js.native
+  
   def getWidenedType(`type`: Type): Type = js.native
   
   /** Note that the resulting nodes cannot be checked. */
-  def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind): js.UndefOr[IndexSignatureDeclaration] = js.native
-  def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[IndexSignatureDeclaration] = js.native
-  def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind, enclosingDeclaration: Node): js.UndefOr[IndexSignatureDeclaration] = js.native
-  def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[IndexSignatureDeclaration] = js.native
+  def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo): js.UndefOr[IndexSignatureDeclaration] = js.native
+  def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, enclosingDeclaration: Unit, flags: NodeBuilderFlags): js.UndefOr[IndexSignatureDeclaration] = js.native
+  def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, enclosingDeclaration: Node): js.UndefOr[IndexSignatureDeclaration] = js.native
+  def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[IndexSignatureDeclaration] = js.native
   
   def isArgumentsSymbol(symbol: Symbol): Boolean = js.native
   

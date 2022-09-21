@@ -4,25 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about operation (or operation stage) progress.
-  */
 trait SchemaOperationProgress extends StObject {
   
   /**
-    * Progress metric bundle, for example:   metrics: [{name: &quot;nodes
-    * done&quot;,     int_value: 15},             {name: &quot;nodes
-    * total&quot;,    int_value: 32}] or   metrics: [{name:
-    * &quot;progress&quot;,       double_value: 0.56},             {name:
-    * &quot;progress scale&quot;, double_value: 1.0}]
+    * Progress metric bundle, for example: metrics: [{name: "nodes done", int_value: 15\}, {name: "nodes total", int_value: 32\}] or metrics: [{name: "progress", double_value: 0.56\}, {name: "progress scale", double_value: 1.0\}]
     */
   var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.undefined
   
   /**
-    * A non-parameterized string describing an operation stage. Unset for
-    * single-stage operations.
+    * A non-parameterized string describing an operation stage. Unset for single-stage operations.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Substages of an operation or a stage.
@@ -32,7 +24,7 @@ trait SchemaOperationProgress extends StObject {
   /**
     * Status of an operation stage. Unset for single-stage operations.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOperationProgress {
   
@@ -47,9 +39,11 @@ object SchemaOperationProgress {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: SchemaMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: SchemaMetric*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -57,9 +51,11 @@ object SchemaOperationProgress {
     
     inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
     
-    inline def setStagesVarargs(value: SchemaOperationProgress*): Self = StObject.set(x, "stages", js.Array(value :_*))
+    inline def setStagesVarargs(value: SchemaOperationProgress*): Self = StObject.set(x, "stages", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

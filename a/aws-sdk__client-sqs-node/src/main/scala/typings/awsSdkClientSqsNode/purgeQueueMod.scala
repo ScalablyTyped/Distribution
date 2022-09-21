@@ -8,5 +8,5 @@ object purgeQueueMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/PurgeQueue", "PurgeQueue")
   @js.native
-  val PurgeQueue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val PurgeQueue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -19,14 +19,9 @@ trait dotDensityCreateRendererParams
   var attributes: js.Array[dotDensityCreateRendererParamsAttributes]
   
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  
-  /**
     * Indicates whether to enable color blending of different colored dots rendered at the same pixel.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
@@ -42,6 +37,8 @@ trait dotDensityCreateRendererParams
   /**
     * Indicates whether to vary the value of each dot by the view's scale.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var dotValueOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
@@ -51,7 +48,7 @@ trait dotDensityCreateRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var layer: FeatureLayer | GeoJSONLayer
+  var layer: FeatureLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
@@ -87,7 +84,7 @@ object dotDensityCreateRendererParams {
     attributes: js.Array[dotDensityCreateRendererParamsAttributes],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | GeoJSONLayer,
+    layer: FeatureLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     view: MapView
   ): dotDensityCreateRendererParams = {
@@ -99,11 +96,7 @@ object dotDensityCreateRendererParams {
     
     inline def setAttributes(value: js.Array[dotDensityCreateRendererParamsAttributes]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setAttributesVarargs(value: dotDensityCreateRendererParamsAttributes*): Self = StObject.set(x, "attributes", js.Array(value :_*))
-    
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setAttributesVarargs(value: dotDensityCreateRendererParamsAttributes*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setDotBlendingEnabled(value: Boolean): Self = StObject.set(x, "dotBlendingEnabled", value.asInstanceOf[js.Any])
     
@@ -117,7 +110,7 @@ object dotDensityCreateRendererParams {
     
     inline def setDotValueOptimizationEnabledUndefined: Self = StObject.set(x, "dotValueOptimizationEnabled", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: dotDensityCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     

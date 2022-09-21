@@ -1,51 +1,57 @@
 package typings.bodyParser
 
+import org.scalablytyped.runtime.Shortcut
 import typings.connect.mod.NextHandleFunction
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
-  
-  // for docs go to https://github.com/expressjs/body-parser/tree/1.19.0#body-parser
-  /** @deprecated */
-  inline def apply(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextHandleFunction]
-  inline def apply(options: OptionsJson & OptionsText & OptionsUrlencoded): NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+object mod extends Shortcut {
   
   @JSImport("body-parser", JSImport.Namespace)
   @js.native
-  val ^ : js.Any = js.native
+  val ^ : BodyParser = js.native
   
-  /**
-    * Returns middleware that only parses json and only looks at requests
-    * where the Content-Type header matches the type option.
-    */
-  inline def json(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[NextHandleFunction]
-  inline def json(options: OptionsJson): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
-  
-  /**
-    * Returns middleware that parses all bodies as a Buffer and only looks at requests
-    * where the Content-Type header matches the type option.
-    */
-  inline def raw(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")().asInstanceOf[NextHandleFunction]
-  inline def raw(options: Options): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
-  
-  /**
-    * Returns middleware that parses all bodies as a string and only looks at requests
-    * where the Content-Type header matches the type option.
-    */
-  inline def text(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[NextHandleFunction]
-  inline def text(options: OptionsText): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
-  
-  /**
-    * Returns middleware that only parses urlencoded bodies and only looks at requests
-    * where the Content-Type header matches the type option
-    */
-  inline def urlencoded(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")().asInstanceOf[NextHandleFunction]
-  inline def urlencoded(options: OptionsUrlencoded): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  @js.native
+  trait BodyParser extends StObject {
+    
+    /**
+      * @deprecated  use individual json/urlencoded middlewares
+      */
+    def apply(): NextHandleFunction = js.native
+    def apply(options: OptionsJson & OptionsText & OptionsUrlencoded): NextHandleFunction = js.native
+    
+    /**
+      * Returns middleware that only parses json and only looks at requests
+      * where the Content-Type header matches the type option.
+      */
+    def json(): NextHandleFunction = js.native
+    def json(options: OptionsJson): NextHandleFunction = js.native
+    
+    /**
+      * Returns middleware that parses all bodies as a Buffer and only looks at requests
+      * where the Content-Type header matches the type option.
+      */
+    def raw(): NextHandleFunction = js.native
+    def raw(options: Options): NextHandleFunction = js.native
+    
+    /**
+      * Returns middleware that parses all bodies as a string and only looks at requests
+      * where the Content-Type header matches the type option.
+      */
+    def text(): NextHandleFunction = js.native
+    def text(options: OptionsText): NextHandleFunction = js.native
+    
+    /**
+      * Returns middleware that only parses urlencoded bodies and only looks at requests
+      * where the Content-Type header matches the type option
+      */
+    def urlencoded(): NextHandleFunction = js.native
+    def urlencoded(options: OptionsUrlencoded): NextHandleFunction = js.native
+  }
   
   trait Options extends StObject {
     
@@ -62,7 +68,7 @@ object mod {
     /**
       * The type option is used to determine what media type the middleware will parse
       */
-    var `type`: js.UndefOr[String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, js.Any])] = js.undefined
+    var `type`: js.UndefOr[String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, Any])] = js.undefined
     
     /**
       * The verify option, if supplied, is called as verify(req, res, buf, encoding),
@@ -71,7 +77,7 @@ object mod {
     var verify: js.UndefOr[
         js.Function4[
           /* req */ IncomingMessage, 
-          /* res */ ServerResponse, 
+          /* res */ ServerResponse[IncomingMessage], 
           /* buf */ Buffer, 
           /* encoding */ String, 
           Unit
@@ -95,16 +101,16 @@ object mod {
       
       inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      inline def setType(value: String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setTypeFunction1(value: /* req */ IncomingMessage => js.Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setTypeFunction1(value: /* req */ IncomingMessage => Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setVerify(
-        value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* buf */ Buffer, /* encoding */ String) => Unit
+        value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* buf */ Buffer, /* encoding */ String) => Unit
       ): Self = StObject.set(x, "verify", js.Any.fromFunction4(value))
       
       inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
@@ -119,7 +125,7 @@ object mod {
       *
       * The reviver option is passed directly to JSON.parse as the second argument.
       */
-    var reviver: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
+    var reviver: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
     
     /**
       * When set to `true`, will only accept arrays and objects;
@@ -136,7 +142,7 @@ object mod {
     
     extension [Self <: OptionsJson](x: Self) {
       
-      inline def setReviver(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      inline def setReviver(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
       
       inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
       
@@ -207,4 +213,9 @@ object mod {
       inline def setParameterLimitUndefined: Self = StObject.set(x, "parameterLimit", js.undefined)
     }
   }
+  
+  type _To = BodyParser
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: BodyParser = ^
 }

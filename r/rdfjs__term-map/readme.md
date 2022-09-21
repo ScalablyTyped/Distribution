@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdfjs__term-map
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Map for RDF/JS Terms keys
@@ -10,10 +10,10 @@ Map for RDF/JS Terms keys
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/term-map |
 | Keywords           | map, rdf, rdfjs, term |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 21993 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 35643.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/term-map)

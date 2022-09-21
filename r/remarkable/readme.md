@@ -10,10 +10,10 @@ Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins
 | ------------------ | :-------------: |
 | Full name          | remarkable |
 | Keywords           | commonmark, markdown, md, parse, parser, process, remarkable, render, renderer, text |
-| # releases         | 6 |
-| # dependents       | 283 |
-| # downloads        | 14277210 |
-| # stars            | 22 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2369549.6666666665 |
+| # stars            | 5361.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/remarkable)

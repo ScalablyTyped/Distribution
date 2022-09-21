@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EC2InstanceCounts extends StObject {
   
   /**
-    * Actual number of active instances in the fleet.
+    * Actual number of instances that are ready to host game sessions.
     */
   var ACTIVE: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * Ideal number of active instances in the fleet.
+    * Ideal number of active instances. GameLift will always try to maintain the desired number of instances. Capacity is scaled up or down by changing the desired instances. 
     */
   var DESIRED: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * Number of active instances in the fleet that are not currently hosting a game session.
+    * Number of active instances that are not currently hosting a game session.
     */
   var IDLE: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * The maximum value allowed for the fleet's instance count.
+    * The maximum instance count value allowed.
     */
   var MAXIMUM: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * The minimum value allowed for the fleet's instance count.
+    * The minimum instance count value allowed.
     */
   var MINIMUM: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * Number of instances in the fleet that are starting but not yet active.
+    * Number of instances that are starting but not yet active.
     */
   var PENDING: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * Number of instances in the fleet that are no longer active but haven't yet been terminated.
+    * Number of instances that are no longer active but haven't yet been terminated.
     */
   var TERMINATING: js.UndefOr[WholeNumber] = js.undefined
 }

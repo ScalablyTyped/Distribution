@@ -11,9 +11,9 @@ Lightweight library with virtual time functions for composing asynchronous and e
 | Full name          | rx-lite-virtualtime |
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 8378 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 126.66666666666667 |
+| # stars            | 19624.0 |
 
 ## Links
 - [Homepage](https://github.com/Reactive-Extensions/RxJS)

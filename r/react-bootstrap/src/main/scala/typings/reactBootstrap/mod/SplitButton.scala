@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "SplitButton")
 @js.native
-class SplitButton ()
+open class SplitButton ()
   extends typings.reactBootstrap.libMod.SplitButton

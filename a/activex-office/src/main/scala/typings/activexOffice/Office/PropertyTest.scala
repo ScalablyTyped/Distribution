@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PropertyTest extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Condition: MsoCondition
   
@@ -19,21 +19,21 @@ trait PropertyTest extends StObject {
   /* private */ @JSName("Office.PropertyTest_typekey")
   var OfficeDotPropertyTest_typekey: PropertyTest
   
-  val SecondValue: js.Any
+  val SecondValue: Any
   
-  val Value: js.Any
+  val Value: Any
 }
 object PropertyTest {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Condition: MsoCondition,
     Connector: MsoConnector,
     Creator: Double,
     Name: String,
     OfficeDotPropertyTest_typekey: PropertyTest,
-    SecondValue: js.Any,
-    Value: js.Any
+    SecondValue: Any,
+    Value: Any
   ): PropertyTest = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Condition = Condition.asInstanceOf[js.Any], Connector = Connector.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SecondValue = SecondValue.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.PropertyTest_typekey")(OfficeDotPropertyTest_typekey.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object PropertyTest {
   
   extension [Self <: PropertyTest](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCondition(value: MsoCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
@@ -54,8 +54,8 @@ object PropertyTest {
     
     inline def setOfficeDotPropertyTest_typekey(value: PropertyTest): Self = StObject.set(x, "Office.PropertyTest_typekey", value.asInstanceOf[js.Any])
     
-    inline def setSecondValue(value: js.Any): Self = StObject.set(x, "SecondValue", value.asInstanceOf[js.Any])
+    inline def setSecondValue(value: Any): Self = StObject.set(x, "SecondValue", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,13 +19,13 @@ trait ASPxClientTimeEdit
   /**
     * Gets the date that is the editor's value.
     */
-  def GetDate(): Date
+  def GetDate(): js.Date
   
   /**
     * Specifies the date for the editor.
     * @param date A DateTime object that is the date.
     */
-  def SetDate(date: Date): Unit
+  def SetDate(date: js.Date): Unit
 }
 object ASPxClientTimeEdit {
   
@@ -35,22 +34,22 @@ object ASPxClientTimeEdit {
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],
     DateChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]],
     Focus: () => Unit,
-    GetButton: Double => js.Any,
+    GetButton: Double => Any,
     GetButtonVisible: Double => Boolean,
     GetCaption: () => String,
     GetCaretPosition: () => Double,
     GetClientVisible: () => Boolean,
-    GetDate: () => Date,
+    GetDate: () => js.Date,
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetReadOnly: () => Boolean,
     GetText: () => String,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
@@ -66,7 +65,7 @@ object ASPxClientTimeEdit {
     SetCaption: String => Unit,
     SetCaretPosition: Double => Unit,
     SetClientVisible: Boolean => Unit,
-    SetDate: Date => Unit,
+    SetDate: js.Date => Unit,
     SetEnabled: Boolean => Unit,
     SetErrorText: String => Unit,
     SetHeight: Double => Unit,
@@ -74,7 +73,7 @@ object ASPxClientTimeEdit {
     SetReadOnly: Boolean => Unit,
     SetSelection: (Double, Double, Boolean) => Unit,
     SetText: String => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     TextChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEditBase]],
@@ -92,8 +91,8 @@ object ASPxClientTimeEdit {
     
     inline def setDateChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]]): Self = StObject.set(x, "DateChanged", value.asInstanceOf[js.Any])
     
-    inline def setGetDate(value: () => Date): Self = StObject.set(x, "GetDate", js.Any.fromFunction0(value))
+    inline def setGetDate(value: () => js.Date): Self = StObject.set(x, "GetDate", js.Any.fromFunction0(value))
     
-    inline def setSetDate(value: Date => Unit): Self = StObject.set(x, "SetDate", js.Any.fromFunction1(value))
+    inline def setSetDate(value: js.Date => Unit): Self = StObject.set(x, "SetDate", js.Any.fromFunction1(value))
   }
 }

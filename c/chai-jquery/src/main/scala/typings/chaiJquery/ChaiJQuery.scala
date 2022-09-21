@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChaiJQuery
   extends StObject
      with /* index */ NumberDictionary[HTMLElement]
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ StringDictionary[Any] {
   
   /**
     * Add elements to the set of matched elements.
@@ -75,17 +75,17 @@ trait ChaiJQuery
     */
   def addClass(func: js.Function2[/* index */ Double, /* className */ String, String]): ChaiJQuery = js.native
   
-  def after(content1: String, content2: js.Any*): ChaiJQuery = js.native
-  def after(content1: js.Array[js.Any], content2: js.Any*): ChaiJQuery = js.native
+  def after(content1: String, content2: Any*): ChaiJQuery = js.native
+  def after(content1: js.Array[Any], content2: Any*): ChaiJQuery = js.native
   /**
     * Insert content, specified by the parameter, after each element in the set of matched elements.
     *
     * param content1 HTML string, DOM element, array of elements, or jQuery object to insert after each element in the set of matched elements.
     * param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert after each element in the set of matched elements.
     */
-  def after(content1: JQuery[HTMLElement], content2: js.Any*): ChaiJQuery = js.native
-  def after(content1: Element, content2: js.Any*): ChaiJQuery = js.native
-  def after(content1: Text, content2: js.Any*): ChaiJQuery = js.native
+  def after(content1: JQuery[HTMLElement], content2: Any*): ChaiJQuery = js.native
+  def after(content1: Element, content2: Any*): ChaiJQuery = js.native
+  def after(content1: Text, content2: Any*): ChaiJQuery = js.native
   /**
     * Insert content, specified by the parameter, after each element in the set of matched elements.
     *
@@ -102,8 +102,8 @@ trait ChaiJQuery
     handler: js.Function3[
       /* event */ JQueryEventObject, 
       /* XMLHttpRequest */ XMLHttpRequest, 
-      /* ajaxOptions */ js.Any, 
-      js.Any
+      /* ajaxOptions */ Any, 
+      Any
     ]
   ): ChaiJQuery = js.native
   
@@ -117,8 +117,8 @@ trait ChaiJQuery
       /* event */ JQueryEventObject, 
       /* jqXHR */ JQueryXHR, 
       /* ajaxSettings */ JQueryAjaxSettings, 
-      /* thrownError */ js.Any, 
-      js.Any
+      /* thrownError */ Any, 
+      Any
     ]
   ): ChaiJQuery = js.native
   
@@ -132,7 +132,7 @@ trait ChaiJQuery
       /* event */ JQueryEventObject, 
       /* jqXHR */ JQueryXHR, 
       /* ajaxOptions */ JQueryAjaxSettings, 
-      js.Any
+      Any
     ]
   ): ChaiJQuery = js.native
   
@@ -141,14 +141,14 @@ trait ChaiJQuery
     *
     * @param handler The function to be invoked.
     */
-  def ajaxStart(handler: js.Function0[js.Any]): ChaiJQuery = js.native
+  def ajaxStart(handler: js.Function0[Any]): ChaiJQuery = js.native
   
   /**
     * Register a handler to be called when all Ajax requests have completed. This is an Ajax Event.
     *
     * @param handler The function to be invoked.
     */
-  def ajaxStop(handler: js.Function0[js.Any]): ChaiJQuery = js.native
+  def ajaxStop(handler: js.Function0[Any]): ChaiJQuery = js.native
   
   /**
     * Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.
@@ -160,7 +160,7 @@ trait ChaiJQuery
       /* event */ JQueryEventObject, 
       /* XMLHttpRequest */ XMLHttpRequest, 
       /* ajaxOptions */ JQueryAjaxSettings, 
-      js.Any
+      Any
     ]
   ): ChaiJQuery = js.native
   
@@ -194,17 +194,17 @@ trait ChaiJQuery
     */
   def animate(properties: js.Object, options: JQueryAnimationOptions): ChaiJQuery = js.native
   
-  def append(content1: String, content2: js.Any*): ChaiJQuery = js.native
-  def append(content1: js.Array[js.Any], content2: js.Any*): ChaiJQuery = js.native
+  def append(content1: String, content2: Any*): ChaiJQuery = js.native
+  def append(content1: js.Array[Any], content2: Any*): ChaiJQuery = js.native
   /**
     * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
     *
     * param content1 DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.
     * param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.
     */
-  def append(content1: JQuery[HTMLElement], content2: js.Any*): ChaiJQuery = js.native
-  def append(content1: Element, content2: js.Any*): ChaiJQuery = js.native
-  def append(content1: Text, content2: js.Any*): ChaiJQuery = js.native
+  def append(content1: JQuery[HTMLElement], content2: Any*): ChaiJQuery = js.native
+  def append(content1: Element, content2: Any*): ChaiJQuery = js.native
+  def append(content1: Text, content2: Any*): ChaiJQuery = js.native
   /**
     * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
     *
@@ -213,7 +213,7 @@ trait ChaiJQuery
   def append(func: js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]]): ChaiJQuery = js.native
   
   def appendTo(target: String): ChaiJQuery = js.native
-  def appendTo(target: js.Array[js.Any]): ChaiJQuery = js.native
+  def appendTo(target: js.Array[Any]): ChaiJQuery = js.native
   /**
     * Insert every element in the set of matched elements to the end of the target.
     *
@@ -250,17 +250,17 @@ trait ChaiJQuery
     */
   def attr(attributes: js.Object): ChaiJQuery = js.native
   
-  def before(content1: String, content2: js.Any*): ChaiJQuery = js.native
-  def before(content1: js.Array[js.Any], content2: js.Any*): ChaiJQuery = js.native
+  def before(content1: String, content2: Any*): ChaiJQuery = js.native
+  def before(content1: js.Array[Any], content2: Any*): ChaiJQuery = js.native
   /**
     * Insert content, specified by the parameter, before each element in the set of matched elements.
     *
     * param content1 HTML string, DOM element, array of elements, or jQuery object to insert before each element in the set of matched elements.
     * param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert before each element in the set of matched elements.
     */
-  def before(content1: JQuery[HTMLElement], content2: js.Any*): ChaiJQuery = js.native
-  def before(content1: Element, content2: js.Any*): ChaiJQuery = js.native
-  def before(content1: Text, content2: js.Any*): ChaiJQuery = js.native
+  def before(content1: JQuery[HTMLElement], content2: Any*): ChaiJQuery = js.native
+  def before(content1: Element, content2: Any*): ChaiJQuery = js.native
+  def before(content1: Text, content2: Any*): ChaiJQuery = js.native
   /**
     * Insert content, specified by the parameter, before each element in the set of matched elements.
     *
@@ -275,11 +275,7 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def bind(
-    eventType: String,
-    eventData: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
-  ): ChaiJQuery = js.native
+  def bind(eventType: String, eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Attach a handler to an event for the elements.
     *
@@ -287,14 +283,14 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param preventBubble Setting the third argument to false will attach a function that prevents the default action from occurring and stops the event from bubbling. The default is true.
     */
-  def bind(eventType: String, eventData: js.Any, preventBubble: Boolean): ChaiJQuery = js.native
+  def bind(eventType: String, eventData: Any, preventBubble: Boolean): ChaiJQuery = js.native
   /**
     * Attach a handler to an event for the elements.
     *
     * @param eventType A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
     * @param handler A function to execute each time the event is triggered.
     */
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Attach a handler to an event for the elements.
     *
@@ -307,35 +303,35 @@ trait ChaiJQuery
     *
     * @param events An object containing one or more DOM event types and functions to execute for them.
     */
-  def bind(events: js.Any): ChaiJQuery = js.native
+  def bind(events: Any): ChaiJQuery = js.native
   
   /**
     * Trigger the "blur" event on an element
     */
   def blur(): ChaiJQuery = js.native
-  def blur(eventData: js.Any): ChaiJQuery = js.native
-  def blur(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
-  def blur(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def blur(eventData: Any): ChaiJQuery = js.native
+  def blur(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def blur(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "blur" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def blur(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def blur(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "change" event on an element.
     */
   def change(): ChaiJQuery = js.native
-  def change(eventData: js.Any): ChaiJQuery = js.native
-  def change(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
-  def change(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def change(eventData: Any): ChaiJQuery = js.native
+  def change(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def change(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "change" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def change(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def change(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Get the children of each element in the set of matched elements, optionally filtered by a selector.
@@ -357,15 +353,15 @@ trait ChaiJQuery
     * Trigger the "click" event on an element.
     */
   def click(): ChaiJQuery = js.native
-  def click(eventData: js.Any): ChaiJQuery = js.native
-  def click(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
-  def click(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def click(eventData: Any): ChaiJQuery = js.native
+  def click(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def click(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "click" JavaScript event
     *
     * @param eventData An object containing data that will be passed to the event handler.
     */
-  def click(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def click(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   def clone(withDataAndEvents: Boolean): ChaiJQuery = js.native
   def clone(withDataAndEvents: Boolean, deepWithDataAndEvents: Boolean): ChaiJQuery = js.native
@@ -396,8 +392,8 @@ trait ChaiJQuery
     * @param selectors An array or string containing a selector expression to match elements against (can also be a jQuery object).
     * @param context A DOM element within which a matching element may be found. If no context is passed in then the context of the jQuery set will be used instead.
     */
-  def closest(selectors: js.Any): js.Array[js.Any] = js.native
-  def closest(selectors: js.Any, context: Element): js.Array[js.Any] = js.native
+  def closest(selectors: Any): js.Array[Any] = js.native
+  def closest(selectors: Any, context: Element): js.Array[Any] = js.native
   
   /**
     * Get the children of each element in the set of matched elements, including text and comment nodes.
@@ -440,40 +436,40 @@ trait ChaiJQuery
   /**
     * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
     */
-  def data(): js.Any = js.native
+  def data(): Any = js.native
   /**
     * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
     *
     * @param key Name of the data stored.
     */
-  def data(key: String): js.Any = js.native
+  def data(key: String): Any = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     *
     * @param key A string naming the piece of data to set.
     * @param value The new data value; it can be any Javascript type including Array or Object.
     */
-  def data(key: String, value: js.Any): ChaiJQuery = js.native
+  def data(key: String, value: Any): ChaiJQuery = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     *
     * @param obj An object of key-value pairs of data to update.
     */
-  def data(obj: StringDictionary[js.Any]): ChaiJQuery = js.native
+  def data(obj: StringDictionary[Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "dblclick" event on an element.
     */
   def dblclick(): ChaiJQuery = js.native
-  def dblclick(eventData: js.Any): ChaiJQuery = js.native
-  def dblclick(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
-  def dblclick(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def dblclick(eventData: Any): ChaiJQuery = js.native
+  def dblclick(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def dblclick(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "dblclick" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def dblclick(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def dblclick(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Set a timer to delay execution of subsequent items in the queue.
@@ -485,16 +481,12 @@ trait ChaiJQuery
   def delay(duration: Double, queueName: String): ChaiJQuery = js.native
   
   def delegate(
-    selector: js.Any,
+    selector: Any,
     eventType: String,
-    eventData: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+    eventData: Any,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): ChaiJQuery = js.native
-  def delegate(
-    selector: js.Any,
-    eventType: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
-  ): ChaiJQuery = js.native
+  def delegate(selector: Any, eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Execute the next function on the queue for the matched elements.
@@ -517,7 +509,7 @@ trait ChaiJQuery
     *
     * @param func A function to execute for each matched element.
     */
-  def each(func: js.Function2[/* index */ Double, /* elem */ Element, js.Any]): ChaiJQuery = js.native
+  def each(func: js.Function2[/* index */ Double, /* elem */ Element, Any]): ChaiJQuery = js.native
   
   /**
     * Remove all child nodes of the set of matched elements from the DOM.
@@ -543,13 +535,13 @@ trait ChaiJQuery
     * @param eventData A plain object of data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def error(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def error(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "error" JavaScript event. (DEPRECATED from v1.8)
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def error(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def error(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Display the matched elements by fading them to opaque.
@@ -664,7 +656,7 @@ trait ChaiJQuery
     *
     * @param func A function used as a test for each element in the set. this is the current DOM element.
     */
-  def filter(func: js.Function2[/* index */ Double, /* element */ Element, js.Any]): ChaiJQuery = js.native
+  def filter(func: js.Function2[/* index */ Double, /* element */ Element, Any]): ChaiJQuery = js.native
   /**
     * Reduce the set of matched elements to those that match the selector or pass the function's test.
     *
@@ -714,15 +706,15 @@ trait ChaiJQuery
     * Trigger the "focus" event on an element.
     */
   def focus(): ChaiJQuery = js.native
-  def focus(eventData: js.Any): ChaiJQuery = js.native
-  def focus(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
-  def focus(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def focus(eventData: Any): ChaiJQuery = js.native
+  def focus(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def focus(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "focus" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def focus(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def focus(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Bind an event handler to the "focusin" JavaScript event
@@ -730,13 +722,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def focusin(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def focusin(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "focusin" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def focusin(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def focusin(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Bind an event handler to the "focusout" JavaScript event
@@ -744,18 +736,18 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def focusout(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def focusout(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "focusout" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def focusout(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def focusout(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Retrieve the elements matched by the jQuery object.
     */
-  def get(): js.Array[js.Any] = js.native
+  def get(): js.Array[Any] = js.native
   /**
     * Retrieve one of the elements matched by the jQuery object.
     *
@@ -834,7 +826,7 @@ trait ChaiJQuery
     *
     * @param handlerInOut A function to execute when the mouse pointer enters or leaves the element.
     */
-  def hover(handlerInOut: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def hover(handlerInOut: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
     *
@@ -842,8 +834,8 @@ trait ChaiJQuery
     * @param handlerOut A function to execute when the mouse pointer leaves the element.
     */
   def hover(
-    handlerIn: js.Function1[/* eventObject */ JQueryEventObject, js.Any],
-    handlerOut: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+    handlerIn: js.Function1[/* eventObject */ JQueryEventObject, Any],
+    handlerOut: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): ChaiJQuery = js.native
   
   /**
@@ -901,7 +893,7 @@ trait ChaiJQuery
   def innerWidth(width: Double): ChaiJQuery = js.native
   
   def insertAfter(target: String): ChaiJQuery = js.native
-  def insertAfter(target: js.Array[js.Any]): ChaiJQuery = js.native
+  def insertAfter(target: js.Array[Any]): ChaiJQuery = js.native
   /**
     * Insert every element in the set of matched elements after the target.
     *
@@ -912,7 +904,7 @@ trait ChaiJQuery
   def insertAfter(target: Text): ChaiJQuery = js.native
   
   def insertBefore(target: String): ChaiJQuery = js.native
-  def insertBefore(target: js.Array[js.Any]): ChaiJQuery = js.native
+  def insertBefore(target: js.Array[Any]): ChaiJQuery = js.native
   /**
     * Insert every element in the set of matched elements before the target.
     *
@@ -927,7 +919,7 @@ trait ChaiJQuery
     *
     * @param elements One or more elements to match the current set of elements against.
     */
-  def is(elements: js.Any): Boolean = js.native
+  def is(elements: Any): Boolean = js.native
   /**
     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
     *
@@ -953,43 +945,43 @@ trait ChaiJQuery
     * Trigger the "keydown" event on an element.
     */
   def keydown(): ChaiJQuery = js.native
-  def keydown(eventData: js.Any): ChaiJQuery = js.native
-  def keydown(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): ChaiJQuery = js.native
-  def keydown(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): ChaiJQuery = js.native
+  def keydown(eventData: Any): ChaiJQuery = js.native
+  def keydown(eventData: Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): ChaiJQuery = js.native
+  def keydown(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "keydown" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def keydown(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): ChaiJQuery = js.native
+  def keydown(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "keypress" event on an element.
     */
   def keypress(): ChaiJQuery = js.native
-  def keypress(eventData: js.Any): ChaiJQuery = js.native
-  def keypress(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): ChaiJQuery = js.native
-  def keypress(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): ChaiJQuery = js.native
+  def keypress(eventData: Any): ChaiJQuery = js.native
+  def keypress(eventData: Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): ChaiJQuery = js.native
+  def keypress(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "keypress" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def keypress(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): ChaiJQuery = js.native
+  def keypress(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "keyup" event on an element.
     */
   def keyup(): ChaiJQuery = js.native
-  def keyup(eventData: js.Any): ChaiJQuery = js.native
-  def keyup(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): ChaiJQuery = js.native
-  def keyup(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): ChaiJQuery = js.native
+  def keyup(eventData: Any): ChaiJQuery = js.native
+  def keyup(eventData: Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): ChaiJQuery = js.native
+  def keyup(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "keyup" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def keyup(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): ChaiJQuery = js.native
+  def keyup(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Reduce the set of matched elements to the final one in the set.
@@ -1008,15 +1000,15 @@ trait ChaiJQuery
     * @param handler A function to execute when the event is triggered.
     */
   def load(): ChaiJQuery = js.native
-  def load(eventData: js.Any): ChaiJQuery = js.native
-  def load(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
-  def load(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def load(eventData: Any): ChaiJQuery = js.native
+  def load(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def load(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "load" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def load(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def load(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Load data from the server and place the returned HTML into the matched element.
     *
@@ -1033,7 +1025,7 @@ trait ChaiJQuery
       /* responseText */ String, 
       /* textStatus */ String, 
       /* XMLHttpRequest */ XMLHttpRequest, 
-      js.Any
+      Any
     ]
   ): ChaiJQuery = js.native
   def load(url: String, data: js.Object): ChaiJQuery = js.native
@@ -1044,7 +1036,7 @@ trait ChaiJQuery
       /* responseText */ String, 
       /* textStatus */ String, 
       /* XMLHttpRequest */ XMLHttpRequest, 
-      js.Any
+      Any
     ]
   ): ChaiJQuery = js.native
   def load(
@@ -1054,7 +1046,7 @@ trait ChaiJQuery
       /* responseText */ String, 
       /* textStatus */ String, 
       /* XMLHttpRequest */ XMLHttpRequest, 
-      js.Any
+      Any
     ]
   ): ChaiJQuery = js.native
   
@@ -1063,7 +1055,7 @@ trait ChaiJQuery
     *
     * @param callback A function object that will be invoked for each element in the current set.
     */
-  def map(callback: js.Function2[/* index */ Double, /* domElement */ Element, js.Any]): ChaiJQuery = js.native
+  def map(callback: js.Function2[/* index */ Double, /* domElement */ Element, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "mousedown" event on an element.
@@ -1075,13 +1067,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mousedown(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mousedown(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "mousedown" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mousedown(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mousedown(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "mouseenter" event on an element.
@@ -1093,13 +1085,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseenter(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseenter(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to be fired when the mouse enters an element.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseenter(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseenter(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "mouseleave" event on an element.
@@ -1111,13 +1103,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseleave(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseleave(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to be fired when the mouse leaves an element.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseleave(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseleave(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "mousemove" event on an element.
@@ -1129,13 +1121,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mousemove(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mousemove(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "mousemove" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mousemove(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mousemove(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "mouseout" event on an element.
@@ -1147,13 +1139,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseout(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseout(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "mouseout" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseout(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseout(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "mouseover" event on an element.
@@ -1165,13 +1157,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseover(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseover(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "mouseover" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseover(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseover(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "mouseup" event on an element.
@@ -1183,13 +1175,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseup(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseup(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "mouseup" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseup(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): ChaiJQuery = js.native
+  def mouseup(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
@@ -1265,22 +1257,18 @@ trait ChaiJQuery
     * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
-  def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   def off(events: String, selector: String): ChaiJQuery = js.native
-  def off(
-    events: String,
-    selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
-  ): ChaiJQuery = js.native
-  def off(events: String, selector: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def off(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def off(events: String, selector: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Remove an event handler.
     *
     * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
     * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
     */
-  def off(events: StringDictionary[js.Any]): ChaiJQuery = js.native
-  def off(events: StringDictionary[js.Any], selector: String): ChaiJQuery = js.native
+  def off(events: StringDictionary[Any]): ChaiJQuery = js.native
+  def off(events: StringDictionary[Any], selector: String): ChaiJQuery = js.native
   
   /**
     * Get the current coordinates of the first element in the set of matched elements, relative to the document.
@@ -1313,8 +1301,8 @@ trait ChaiJQuery
     */
   def on(
     events: String,
-    data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    data: Any,
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): ChaiJQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -1324,7 +1312,7 @@ trait ChaiJQuery
     */
   def on(
     events: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): ChaiJQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -1337,8 +1325,8 @@ trait ChaiJQuery
   def on(
     events: String,
     selector: String,
-    data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    data: Any,
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): ChaiJQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -1350,7 +1338,7 @@ trait ChaiJQuery
   def on(
     events: String,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): ChaiJQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -1359,11 +1347,11 @@ trait ChaiJQuery
     * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
     * @param data Data to be passed to the handler in event.data when an event occurs.
     */
-  def on(events: StringDictionary[js.Any]): ChaiJQuery = js.native
-  def on(events: StringDictionary[js.Any], data: js.Any): ChaiJQuery = js.native
-  def on(events: StringDictionary[js.Any], selector: String): ChaiJQuery = js.native
-  def on(events: StringDictionary[js.Any], selector: String, data: js.Any): ChaiJQuery = js.native
-  def on(events: StringDictionary[js.Any], selector: Unit, data: js.Any): ChaiJQuery = js.native
+  def on(events: StringDictionary[Any]): ChaiJQuery = js.native
+  def on(events: StringDictionary[Any], data: Any): ChaiJQuery = js.native
+  def on(events: StringDictionary[Any], selector: String): ChaiJQuery = js.native
+  def on(events: StringDictionary[Any], selector: String, data: Any): ChaiJQuery = js.native
+  def on(events: StringDictionary[Any], selector: Unit, data: Any): ChaiJQuery = js.native
   
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -1372,18 +1360,14 @@ trait ChaiJQuery
     * @param data An object containing data that will be passed to the event handler.
     * @param handler A function to execute at the time the event is triggered.
     */
-  def one(
-    events: String,
-    data: js.Object,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
-  ): ChaiJQuery = js.native
+  def one(events: String, data: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
     * @param events A string containing one or more JavaScript event types, such as "click" or "submit," or custom event names.
     * @param handler A function to execute at the time the event is triggered.
     */
-  def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -1395,8 +1379,8 @@ trait ChaiJQuery
   def one(
     events: String,
     selector: String,
-    data: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+    data: Any,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): ChaiJQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -1405,11 +1389,7 @@ trait ChaiJQuery
     * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
-  def one(
-    events: String,
-    selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
-  ): ChaiJQuery = js.native
+  def one(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -1417,11 +1397,11 @@ trait ChaiJQuery
     * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
     * @param data Data to be passed to the handler in event.data when an event occurs.
     */
-  def one(events: StringDictionary[js.Any]): ChaiJQuery = js.native
-  def one(events: StringDictionary[js.Any], data: js.Any): ChaiJQuery = js.native
-  def one(events: StringDictionary[js.Any], selector: String): ChaiJQuery = js.native
-  def one(events: StringDictionary[js.Any], selector: String, data: js.Any): ChaiJQuery = js.native
-  def one(events: StringDictionary[js.Any], selector: Unit, data: js.Any): ChaiJQuery = js.native
+  def one(events: StringDictionary[Any]): ChaiJQuery = js.native
+  def one(events: StringDictionary[Any], data: Any): ChaiJQuery = js.native
+  def one(events: StringDictionary[Any], selector: String): ChaiJQuery = js.native
+  def one(events: StringDictionary[Any], selector: String, data: Any): ChaiJQuery = js.native
+  def one(events: StringDictionary[Any], selector: Unit, data: Any): ChaiJQuery = js.native
   
   /**
     * Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin. Returns an integer (without "px") representation of the value or null if called on an empty set of elements.
@@ -1489,17 +1469,17 @@ trait ChaiJQuery
     */
   def position(): JQueryCoordinates = js.native
   
-  def prepend(content1: String, content2: js.Any*): ChaiJQuery = js.native
-  def prepend(content1: js.Array[js.Any], content2: js.Any*): ChaiJQuery = js.native
+  def prepend(content1: String, content2: Any*): ChaiJQuery = js.native
+  def prepend(content1: js.Array[Any], content2: Any*): ChaiJQuery = js.native
   /**
     * Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
     *
     * param content1 DOM element, array of elements, HTML string, or jQuery object to insert at the beginning of each element in the set of matched elements.
     * param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the beginning of each element in the set of matched elements.
     */
-  def prepend(content1: JQuery[HTMLElement], content2: js.Any*): ChaiJQuery = js.native
-  def prepend(content1: Element, content2: js.Any*): ChaiJQuery = js.native
-  def prepend(content1: Text, content2: js.Any*): ChaiJQuery = js.native
+  def prepend(content1: JQuery[HTMLElement], content2: Any*): ChaiJQuery = js.native
+  def prepend(content1: Element, content2: Any*): ChaiJQuery = js.native
+  def prepend(content1: Text, content2: Any*): ChaiJQuery = js.native
   /**
     * Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
     *
@@ -1508,7 +1488,7 @@ trait ChaiJQuery
   def prepend(func: js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]]): ChaiJQuery = js.native
   
   def prependTo(target: String): ChaiJQuery = js.native
-  def prependTo(target: js.Array[js.Any]): ChaiJQuery = js.native
+  def prependTo(target: js.Array[Any]): ChaiJQuery = js.native
   /**
     * Insert every element in the set of matched elements to the beginning of the target.
     *
@@ -1554,10 +1534,10 @@ trait ChaiJQuery
     * @param type The type of queue that needs to be observed. (default: fx)
     * @param target Object onto which the promise methods have to be attached
     */
-  def promise(): JQueryPromise[js.Any] = js.native
-  def promise(`type`: String): JQueryPromise[js.Any] = js.native
-  def promise(`type`: String, target: js.Object): JQueryPromise[js.Any] = js.native
-  def promise(`type`: Unit, target: js.Object): JQueryPromise[js.Any] = js.native
+  def promise(): JQueryPromise[Any] = js.native
+  def promise(`type`: String): JQueryPromise[Any] = js.native
+  def promise(`type`: String, target: js.Object): JQueryPromise[Any] = js.native
+  def promise(`type`: Unit, target: js.Object): JQueryPromise[Any] = js.native
   
   /**
     * Set one or more properties for the set of matched elements.
@@ -1575,17 +1555,14 @@ trait ChaiJQuery
     *
     * @param propertyName The name of the property to get.
     */
-  def prop(propertyName: String): js.Any = js.native
+  def prop(propertyName: String): Any = js.native
   /**
     * Set one or more properties for the set of matched elements.
     *
     * @param propertyName The name of the property to set.
     * @param func A function returning the value to set. Receives the index position of the element in the set and the old property value as arguments. Within the function, the keyword this refers to the current element.
     */
-  def prop(
-    propertyName: String,
-    func: js.Function2[/* index */ Double, /* oldPropertyValue */ js.Any, js.Any]
-  ): ChaiJQuery = js.native
+  def prop(propertyName: String, func: js.Function2[/* index */ Double, /* oldPropertyValue */ Any, Any]): ChaiJQuery = js.native
   /**
     * Set one or more properties for the set of matched elements.
     *
@@ -1601,7 +1578,7 @@ trait ChaiJQuery
     *
     * @param elements An array of elements to push onto the stack and make into a new jQuery object.
     */
-  def pushStack(elements: js.Array[js.Any]): ChaiJQuery = js.native
+  def pushStack(elements: js.Array[Any]): ChaiJQuery = js.native
   /**
     * Add a collection of DOM elements onto the jQuery stack.
     *
@@ -1609,14 +1586,14 @@ trait ChaiJQuery
     * @param name The name of a jQuery method that generated the array of elements.
     * @param arguments The arguments that were passed in to the jQuery method (for serialization).
     */
-  def pushStack(elements: js.Array[js.Any], name: String, arguments: js.Array[js.Any]): ChaiJQuery = js.native
+  def pushStack(elements: js.Array[Any], name: String, arguments: js.Array[Any]): ChaiJQuery = js.native
   
   /**
     * Show the queue of functions to be executed on the matched elements.
     *
     * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
     */
-  def queue(): js.Array[js.Any] = js.native
+  def queue(): js.Array[Any] = js.native
   /**
     * Manipulate the queue of functions to be executed, once for each matched element.
     *
@@ -1629,7 +1606,7 @@ trait ChaiJQuery
     * @param newQueue An array of functions to replace the current queue contents.
     */
   def queue(newQueue: js.Array[js.Function]): ChaiJQuery = js.native
-  def queue(queueName: String): js.Array[js.Any] = js.native
+  def queue(queueName: String): js.Array[Any] = js.native
   /**
     * Manipulate the queue of functions to be executed, once for each matched element.
     *
@@ -1702,7 +1679,7 @@ trait ChaiJQuery
   def removeProp(propertyName: String): ChaiJQuery = js.native
   
   def replaceAll(target: String): ChaiJQuery = js.native
-  def replaceAll(target: js.Array[js.Any]): ChaiJQuery = js.native
+  def replaceAll(target: js.Array[Any]): ChaiJQuery = js.native
   /**
     * Replace each target element with the set of matched elements.
     *
@@ -1718,7 +1695,7 @@ trait ChaiJQuery
     */
   def replaceWith(func: js.Function0[Element | JQuery[HTMLElement]]): ChaiJQuery = js.native
   def replaceWith(newContent: String): ChaiJQuery = js.native
-  def replaceWith(newContent: js.Array[js.Any]): ChaiJQuery = js.native
+  def replaceWith(newContent: js.Array[Any]): ChaiJQuery = js.native
   /**
     * Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.
     *
@@ -1738,13 +1715,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def resize(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def resize(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "resize" JavaScript event.
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def resize(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def resize(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Trigger the "scroll" event on an element.
@@ -1756,13 +1733,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def scroll(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def scroll(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "scroll" JavaScript event.
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def scroll(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def scroll(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Get the current horizontal position of the scroll bar for the first element in the set of matched elements or set the horizontal position of the scroll bar for every matched element.
@@ -1796,13 +1773,13 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def select(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def select(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "select" JavaScript event.
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def select(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def select(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * A selector representing selector passed to jQuery(), if any, when creating the original set.
@@ -1974,15 +1951,15 @@ trait ChaiJQuery
     * Trigger the "submit" event on an element.
     */
   def submit(): ChaiJQuery = js.native
-  def submit(eventData: js.Any): ChaiJQuery = js.native
-  def submit(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
-  def submit(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def submit(eventData: Any): ChaiJQuery = js.native
+  def submit(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def submit(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "submit" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def submit(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def submit(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Get the combined text contents of each element in the set of matched elements, including their descendants.
@@ -2006,7 +1983,7 @@ trait ChaiJQuery
   /**
     * Retrieve all the elements contained in the jQuery set, as an array.
     */
-  def toArray(): js.Array[js.Any] = js.native
+  def toArray(): js.Array[Any] = js.native
   
   /**
     * Display or hide the matched elements.
@@ -2076,7 +2053,7 @@ trait ChaiJQuery
     * @param extraParameters Additional parameters to pass along to the event handler.
     */
   def trigger(eventType: String): ChaiJQuery = js.native
-  def trigger(eventType: String, extraParameters: js.Array[js.Any]): ChaiJQuery = js.native
+  def trigger(eventType: String, extraParameters: js.Array[Any]): ChaiJQuery = js.native
   def trigger(eventType: String, extraParameters: js.Object): ChaiJQuery = js.native
   /**
     * Execute all handlers and behaviors attached to the matched elements for the given event type.
@@ -2085,7 +2062,7 @@ trait ChaiJQuery
     * @param extraParameters Additional parameters to pass along to the event handler.
     */
   def trigger(event: JQueryEventObject): ChaiJQuery = js.native
-  def trigger(event: JQueryEventObject, extraParameters: js.Array[js.Any]): ChaiJQuery = js.native
+  def trigger(event: JQueryEventObject, extraParameters: js.Array[Any]): ChaiJQuery = js.native
   def trigger(event: JQueryEventObject, extraParameters: js.Object): ChaiJQuery = js.native
   
   /**
@@ -2094,7 +2071,7 @@ trait ChaiJQuery
     * @param eventType A string containing a JavaScript event type, such as click or submit.
     * @param extraParameters An array of additional parameters to pass along to the event handler.
     */
-  def triggerHandler(eventType: String, extraParameters: js.Any*): js.Object = js.native
+  def triggerHandler(eventType: String, extraParameters: Any*): js.Object = js.native
   
   /**
     * Remove a previously-attached event handler from the elements.
@@ -2111,14 +2088,14 @@ trait ChaiJQuery
     * @param fls Unbinds the corresponding 'return false' function that was bound using .bind( eventType, false ).
     */
   def unbind(eventType: String, fls: Boolean): ChaiJQuery = js.native
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
-  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Remove a previously-attached event handler from the elements.
     *
     * @param evt A JavaScript event object as passed to an event handler.
     */
-  def unbind(evt: js.Any): ChaiJQuery = js.native
+  def unbind(evt: Any): ChaiJQuery = js.native
   
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
@@ -2141,7 +2118,7 @@ trait ChaiJQuery
   def undelegate(
     selector: String,
     eventType: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): ChaiJQuery = js.native
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
@@ -2158,15 +2135,15 @@ trait ChaiJQuery
     * @param handler A function to execute when the event is triggered.
     */
   def unload(): ChaiJQuery = js.native
-  def unload(eventData: js.Any): ChaiJQuery = js.native
-  def unload(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
-  def unload(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def unload(eventData: Any): ChaiJQuery = js.native
+  def unload(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
+  def unload(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   /**
     * Bind an event handler to the "unload" JavaScript event. (DEPRECATED from v1.8)
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def unload(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): ChaiJQuery = js.native
+  def unload(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): ChaiJQuery = js.native
   
   /**
     * Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.
@@ -2176,7 +2153,7 @@ trait ChaiJQuery
   /**
     * Get the current value of the first element in the set of matched elements.
     */
-  def `val`(): js.Any = js.native
+  def `val`(): Any = js.native
   /**
     * Set the value of each element in the set of matched elements.
     *

@@ -8,7 +8,7 @@ object DocumentSet {
   
   @JSGlobal("SP.DocumentSet.DocumentSet")
   @js.native
-  class DocumentSet ()
+  open class DocumentSet ()
     extends StObject
        with typings.sharepoint.SP.ClientObject
   object DocumentSet {

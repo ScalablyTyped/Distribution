@@ -20,12 +20,12 @@ object enigmaJS {
     /**
       * ES6-compatible Promise library.
       */
-    var Promise: js.UndefOr[js.Any] = js.undefined
+    var Promise: js.UndefOr[Any] = js.undefined
     
     /**
       * A function to use when instantiating the WebSocket, mandatory for Node.js.
       */
-    var createSocket: js.UndefOr[js.Any] = js.undefined
+    var createSocket: js.UndefOr[Any] = js.undefined
     
     /**
       * Mixins to extend/augment the QIX Engine API.
@@ -38,7 +38,7 @@ object enigmaJS {
       * An object containing additional JSON-RPC request parameters.
       * protocol.delta :  Set to false to disable the use of the bandwidth-reducing delta protocol.
       */
-    var protocol: js.UndefOr[js.Any] = js.undefined
+    var protocol: js.UndefOr[Any] = js.undefined
     
     /**
       * Interceptors for augmenting requests before they are sent to QIX Engine.
@@ -78,7 +78,7 @@ object enigmaJS {
     
     extension [Self <: IConfig](x: Self) {
       
-      inline def setCreateSocket(value: js.Any): Self = StObject.set(x, "createSocket", value.asInstanceOf[js.Any])
+      inline def setCreateSocket(value: Any): Self = StObject.set(x, "createSocket", value.asInstanceOf[js.Any])
       
       inline def setCreateSocketUndefined: Self = StObject.set(x, "createSocket", js.undefined)
       
@@ -86,13 +86,13 @@ object enigmaJS {
       
       inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      inline def setMixinsVarargs(value: IMixin*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: IMixin*): Self = StObject.set(x, "mixins", js.Array(value*))
       
-      inline def setPromise(value: js.Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
-      inline def setProtocol(value: js.Any): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Any): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
@@ -100,13 +100,13 @@ object enigmaJS {
       
       inline def setRequestInterceptorsUndefined: Self = StObject.set(x, "requestInterceptors", js.undefined)
       
-      inline def setRequestInterceptorsVarargs(value: IRequestInterceptors*): Self = StObject.set(x, "requestInterceptors", js.Array(value :_*))
+      inline def setRequestInterceptorsVarargs(value: IRequestInterceptors*): Self = StObject.set(x, "requestInterceptors", js.Array(value*))
       
       inline def setResponseInterceptors(value: js.Array[IResponseInterceptors]): Self = StObject.set(x, "responseInterceptors", value.asInstanceOf[js.Any])
       
       inline def setResponseInterceptorsUndefined: Self = StObject.set(x, "responseInterceptors", js.undefined)
       
-      inline def setResponseInterceptorsVarargs(value: IResponseInterceptors*): Self = StObject.set(x, "responseInterceptors", js.Array(value :_*))
+      inline def setResponseInterceptorsVarargs(value: IResponseInterceptors*): Self = StObject.set(x, "responseInterceptors", js.Array(value*))
       
       inline def setSchema(value: js.Object): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
@@ -118,53 +118,79 @@ object enigmaJS {
     }
   }
   
-  @js.native
   trait IGeneratedAPI extends StObject {
     
     /**
       * manual emit an events
       * @param event - event that occures
       */
-    @JSName("emit")
-    def emit_changed(event: changed): Unit = js.native
-    @JSName("emit")
-    def emit_closed(event: closed): Unit = js.native
+    def emit(event: changed | closed): Unit
     
     /**
       * Despite the name, this property corresponds to the qInfo.qType property on your generic object's properties object.
       */
-    var genericType: String = js.native
+    var genericType: String
     
     /**
       * This property contains the handle QIX Engine assigned to the API.
       * Used internally in enigma.js for caches and JSON-RPC
       */
-    var handle: Double = js.native
+    var handle: Double
     
     /**
       * This property contains the unique identifier for this API.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * register a function for events
       * @param event - function called if this event occures
       * @param func - function that is called
       */
-    @JSName("on")
-    def on_changed(event: changed, func: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_closed(event: closed, func: js.Function0[Unit]): Unit = js.native
+    def on(event: changed | closed, func: js.Function0[Unit]): Unit
     
     /**
       * This property contains a reference to the session that this API belongs to.
       */
-    var session: ISession = js.native
+    var session: ISession
     
     /**
       * This property contains the schema class name for this API.
       */
-    var `type`: String = js.native
+    var `type`: String
+  }
+  object IGeneratedAPI {
+    
+    inline def apply(
+      emit: changed | closed => Unit,
+      genericType: String,
+      handle: Double,
+      id: String,
+      on: (changed | closed, js.Function0[Unit]) => Unit,
+      session: ISession,
+      `type`: String
+    ): IGeneratedAPI = {
+      val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), genericType = genericType.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], on = js.Any.fromFunction2(on), session = session.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IGeneratedAPI]
+    }
+    
+    extension [Self <: IGeneratedAPI](x: Self) {
+      
+      inline def setEmit(value: changed | closed => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+      
+      inline def setGenericType(value: String): Self = StObject.set(x, "genericType", value.asInstanceOf[js.Any])
+      
+      inline def setHandle(value: Double): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setOn(value: (changed | closed, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      
+      inline def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
   }
   
   trait IMixin extends StObject {
@@ -172,7 +198,7 @@ object enigmaJS {
     /**
       * mixin.extend is an object containing methods to extend the generated API with. These method names cannot already exist or enigma.js will throw an error.
       */
-    var extend: js.UndefOr[js.Any] = js.undefined
+    var extend: js.UndefOr[Any] = js.undefined
     
     def init(args: Api): Unit
     
@@ -182,7 +208,7 @@ object enigmaJS {
       * Be careful when overriding, you may break expected behaviors in other mixins or your application.
       * base is a reference to the previous mixin method, can be used to invoke the mixin chain before this mixin method.
       */
-    var `override`: js.UndefOr[js.Any] = js.undefined
+    var `override`: js.UndefOr[Any] = js.undefined
     
     /**
       * QIX Engine types like for example GenericObject, Doc, GenericBookmark, are supported but also custom GenericObject
@@ -200,19 +226,19 @@ object enigmaJS {
     
     extension [Self <: IMixin](x: Self) {
       
-      inline def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+      inline def setExtend(value: Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
       inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
       
       inline def setInit(value: Api => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      inline def setOverride(value: js.Any): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Any): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
       inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
       
       inline def setTypes(value: js.Array[MixinType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setTypesVarargs(value: MixinType*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: MixinType*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
   
@@ -244,9 +270,7 @@ object enigmaJS {
       * @param request is the JSON-RPC request resulting in this error. You may use .retry() to retry sending it to QIX Engine.
       * @returns request the new request
       */
-    var onFulfilled: js.UndefOr[
-        js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, js.Any]
-      ] = js.undefined
+    var onFulfilled: js.UndefOr[js.Function3[/* session */ ISession, /* request */ Any, /* result */ Any, Any]] = js.undefined
   }
   object IRequestInterceptors {
     
@@ -257,7 +281,7 @@ object enigmaJS {
     
     extension [Self <: IRequestInterceptors](x: Self) {
       
-      inline def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => js.Any): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
+      inline def setOnFulfilled(value: (/* session */ ISession, /* request */ Any, /* result */ Any) => Any): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
       
       inline def setOnFulfilledUndefined: Self = StObject.set(x, "onFulfilled", js.undefined)
     }
@@ -272,7 +296,7 @@ object enigmaJS {
       * @param error is whatever the previous interceptor resolved with.
       */
     var onFulfilled: js.UndefOr[
-        js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, js.Promise[js.Any]]
+        js.Function3[/* session */ ISession, /* request */ Any, /* result */ Any, js.Promise[Any]]
       ] = js.undefined
     
     /**
@@ -282,7 +306,7 @@ object enigmaJS {
       * @param error is whatever the previous interceptor rejected with.
       */
     var onRejected: js.UndefOr[
-        js.Function3[/* session */ ISession, /* request */ js.Any, /* error */ js.Any, js.Promise[js.Any]]
+        js.Function3[/* session */ ISession, /* request */ Any, /* error */ Any, js.Promise[Any]]
       ] = js.undefined
   }
   object IResponseInterceptors {
@@ -294,11 +318,11 @@ object enigmaJS {
     
     extension [Self <: IResponseInterceptors](x: Self) {
       
-      inline def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
+      inline def setOnFulfilled(value: (/* session */ ISession, /* request */ Any, /* result */ Any) => js.Promise[Any]): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
       
       inline def setOnFulfilledUndefined: Self = StObject.set(x, "onFulfilled", js.undefined)
       
-      inline def setOnRejected(value: (/* session */ ISession, /* request */ js.Any, /* error */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "onRejected", js.Any.fromFunction3(value))
+      inline def setOnRejected(value: (/* session */ ISession, /* request */ Any, /* error */ Any) => js.Promise[Any]): Self = StObject.set(x, "onRejected", js.Any.fromFunction3(value))
       
       inline def setOnRejectedUndefined: Self = StObject.set(x, "onRejected", js.undefined)
     }
@@ -314,11 +338,9 @@ object enigmaJS {
       * Note: you need to manually invoke this when you want to close a session and config.suspendOnClose is true.
       * @return Promise.
       */
-    def close(): js.Promise[js.Any] = js.native
+    def close(): js.Promise[Any] = js.native
     
-    def on(event: String, func: js.Any): Unit = js.native
-    @JSName("on")
-    def on_closed(event: closed, func: js.Any): Unit = js.native
+    def on(event: opened | closed | suspended | resumed, func: Any): Unit = js.native
     /**
       * Handle opened state. This event is triggered whenever the websocket is connected and ready for communication.
       *
@@ -337,12 +359,7 @@ object enigmaJS {
       * @param event - Event that triggers the function
       * @param func - Called function
       */
-    @JSName("on")
-    def on_opened(event: opened, func: js.Any): Unit = js.native
-    @JSName("on")
-    def on_resumed(event: resumed, func: js.Any): Unit = js.native
-    @JSName("on")
-    def on_suspended(event: suspended, func: js.Any): Unit = js.native
+    def on(event: String, func: Any): Unit = js.native
     
     /**
       * Establishes the websocket against the configured URL. Eventually resolved with the QIX global interface when the connection has been established.
@@ -359,14 +376,14 @@ object enigmaJS {
       * Note: Eventually resolved when the websocket (and potentially the previously opened document, and generated APIs) has been restored,
       * rejected when it fails any of those steps, or when onlyIfAttached is true and a new QIX Engine session was created.
       */
-    def resume(): js.Promise[js.Any] = js.native
-    def resume(onlyIfAttached: Boolean): js.Promise[js.Any] = js.native
+    def resume(): js.Promise[Any] = js.native
+    def resume(onlyIfAttached: Boolean): js.Promise[Any] = js.native
     
     /**
       * Suspends the enigma.js session by closing the websocket and rejecting all method calls until it has been resumed again.
       * @return Promise.
       */
-    def suspend(): js.Promise[js.Any] = js.native
+    def suspend(): js.Promise[Any] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

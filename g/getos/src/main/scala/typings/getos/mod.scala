@@ -9,14 +9,13 @@ import typings.getos.getosStrings.linux
 import typings.getos.getosStrings.openbsd
 import typings.getos.getosStrings.sunos
 import typings.getos.getosStrings.win32
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(cb: js.Function2[/* error */ Error | Null, /* os */ Os, Unit]): String = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(cb: js.Function2[/* error */ js.Error | Null, /* os */ Os, Unit]): String = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("getos", JSImport.Namespace)
   @js.native

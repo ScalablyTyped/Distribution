@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MapPolyStyle extends StObject {
   
   /**
-    * Fill color in the following format: #ffffff (hex triplet). Default is #ffffff.
+    * Fill color in the following format: #ffffff (hex triplet). Default is undefined (no fill).
     */
   var fill: js.UndefOr[String] = js.undefined
   
@@ -25,7 +25,7 @@ trait MapPolyStyle extends StObject {
   var opacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * Stroke color in the following format: #ffffff (hex triplet). Default is undefined (no stroke).
+    * Stroke color in the following format: #ffffff (hex triplet). Default is #ffffff.
     */
   var stroke: js.UndefOr[String] = js.undefined
   

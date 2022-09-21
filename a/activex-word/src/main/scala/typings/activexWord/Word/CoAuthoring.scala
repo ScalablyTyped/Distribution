@@ -22,7 +22,7 @@ trait CoAuthoring extends StObject {
   
   val Me: CoAuthor
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PendingUpdates: Boolean
   
@@ -42,7 +42,7 @@ object CoAuthoring {
     Creator: Double,
     Locks: CoAuthLocks,
     Me: CoAuthor,
-    Parent: js.Any,
+    Parent: Any,
     PendingUpdates: Boolean,
     Updates: CoAuthUpdates,
     WordDotCoAuthoring_typekey: CoAuthoring
@@ -70,7 +70,7 @@ object CoAuthoring {
     
     inline def setMe(value: CoAuthor): Self = StObject.set(x, "Me", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPendingUpdates(value: Boolean): Self = StObject.set(x, "PendingUpdates", value.asInstanceOf[js.Any])
     

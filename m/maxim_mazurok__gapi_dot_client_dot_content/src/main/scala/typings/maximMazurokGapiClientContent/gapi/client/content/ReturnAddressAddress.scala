@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReturnAddressAddress extends StObject {
   
-  /** CLDR country code (e.g. "US"). */
+  /** CLDR country code (for example, "US"). */
   var country: js.UndefOr[String] = js.undefined
   
-  /** City, town or commune. May also include dependent localities or sublocalities (e.g. neighborhoods or suburbs). */
+  /** City, town or commune. May also include dependent localities or sublocalities (for example, neighborhoods or suburbs). */
   var locality: js.UndefOr[String] = js.undefined
   
-  /** Postal code or ZIP (e.g. "94043"). */
+  /** Postal code or ZIP (for example, "94043"). */
   var postalCode: js.UndefOr[String] = js.undefined
   
   /** Name of the recipient to address returns to. */
@@ -57,6 +57,6 @@ object ReturnAddressAddress {
     
     inline def setStreetAddressUndefined: Self = StObject.set(x, "streetAddress", js.undefined)
     
-    inline def setStreetAddressVarargs(value: String*): Self = StObject.set(x, "streetAddress", js.Array(value :_*))
+    inline def setStreetAddressVarargs(value: String*): Self = StObject.set(x, "streetAddress", js.Array(value*))
   }
 }

@@ -9,8 +9,8 @@ object argsToMatchersValidatorMod {
   
   @JSImport("ts-mockito/lib/matcher/ArgsToMatchersValidator", "ArgsToMatchersValidator")
   @js.native
-  class ArgsToMatchersValidator () extends StObject {
+  open class ArgsToMatchersValidator () extends StObject {
     
-    def validate(matchers: js.Array[Matcher], args: js.Array[js.Any]): Boolean = js.native
+    def validate(matchers: js.Array[Matcher], args: js.Array[Any]): Boolean = js.native
   }
 }

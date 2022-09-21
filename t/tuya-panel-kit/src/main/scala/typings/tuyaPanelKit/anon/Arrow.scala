@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Arrow extends StObject {
   
-  var Action: js.UndefOr[js.Any] = js.undefined
+  var Action: js.UndefOr[Any] = js.undefined
   
   var arrow: js.UndefOr[Boolean] = js.undefined
   
@@ -35,7 +35,7 @@ object Arrow {
   
   extension [Self <: Arrow](x: Self) {
     
-    inline def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     

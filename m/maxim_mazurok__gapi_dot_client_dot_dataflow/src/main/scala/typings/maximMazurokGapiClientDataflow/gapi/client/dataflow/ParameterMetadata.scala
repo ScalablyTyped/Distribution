@@ -1,10 +1,18 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ParameterMetadata extends StObject {
+  
+  /** Optional. Additional metadata for describing this parameter. */
+  var customMetadata: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ParameterMetadata & TopLevel[Any]
+  ] = js.undefined
   
   /** Required. The help text to display for the parameter. */
   var helpText: js.UndefOr[String] = js.undefined
@@ -33,6 +41,14 @@ object ParameterMetadata {
   
   extension [Self <: ParameterMetadata](x: Self) {
     
+    inline def setCustomMetadata(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ParameterMetadata & TopLevel[Any]
+    ): Self = StObject.set(x, "customMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
+    
     inline def setHelpText(value: String): Self = StObject.set(x, "helpText", value.asInstanceOf[js.Any])
     
     inline def setHelpTextUndefined: Self = StObject.set(x, "helpText", js.undefined)
@@ -57,6 +73,6 @@ object ParameterMetadata {
     
     inline def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
     
-    inline def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
+    inline def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value*))
   }
 }

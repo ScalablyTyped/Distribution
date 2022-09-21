@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("scoped-http-client", "ScopedClient")
   @js.native
-  class ScopedClient protected () extends StObject {
+  open class ScopedClient protected () extends StObject {
     def this(url: String, options: Options) = this()
     
     def auth(): ScopedClient = js.native
@@ -51,7 +51,7 @@ object mod {
     
     def header(name: String, value: String): ScopedClient = js.native
     
-    def headers(h: js.Any): ScopedClient = js.native
+    def headers(h: Any): ScopedClient = js.native
     
     def host(h: String): ScopedClient = js.native
     
@@ -79,8 +79,8 @@ object mod {
     def put(reqBody: String): ResponseCallback = js.native
     def put(reqBody: String, callback: RequestCallback): ResponseCallback = js.native
     
-    def query(key: js.Any): ScopedClient = js.native
-    def query(key: js.Any, value: js.Any): ScopedClient = js.native
+    def query(key: Any): ScopedClient = js.native
+    def query(key: Any, value: Any): ScopedClient = js.native
     
     def request(method: String): ResponseCallback = js.native
     def request(method: String, callback: RequestCallback): ResponseCallback = js.native
@@ -95,7 +95,7 @@ object mod {
     def scope(url: String, options: Options): ScopedClient = js.native
     def scope(url: String, options: Options, callback: ScopeCallback): ScopedClient = js.native
     
-    def timeout(time: js.Any): ScopedClient = js.native
+    def timeout(time: Any): ScopedClient = js.native
   }
   
   inline def create(): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ScopedClient]
@@ -118,9 +118,9 @@ object mod {
     
     var pathname: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
-    var slashes: js.UndefOr[js.Any] = js.undefined
+    var slashes: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -151,21 +151,21 @@ object mod {
       
       inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setSlashes(value: js.Any): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
+      inline def setSlashes(value: Any): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
       
       inline def setSlashesUndefined: Self = StObject.set(x, "slashes", js.undefined)
     }
   }
   
-  type RequestCallback = js.Function2[/* err */ js.Any, /* request */ ClientRequest, Unit]
+  type RequestCallback = js.Function2[/* err */ Any, /* request */ ClientRequest, Unit]
   
   type ResponseCallback = js.Function1[
     /* cb */ js.UndefOr[
-      js.Function3[/* err */ js.Any, /* response */ IncomingMessage, /* body */ String, Unit]
+      js.Function3[/* err */ Any, /* response */ IncomingMessage, /* body */ String, Unit]
     ], 
     ScopedClient
   ]

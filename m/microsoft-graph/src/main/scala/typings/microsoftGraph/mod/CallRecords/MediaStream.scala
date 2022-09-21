@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaStream extends StObject {
   
   /**
+    * Codec name used to encode audio for transmission on the network. Possible values are: unknown, invalid, cn, pcma, pcmu,
+    * amrWide, g722, g7221, g7221c, g729, multiChannelAudio, muchv2, opus, satin, satinFullband, rtAudio8, rtAudio16, silk,
+    * silkNarrow, silkWide, siren, xmsRTA, unknownFutureValue.
+    */
+  var audioCodec: js.UndefOr[NullableOption[AudioCodec]] = js.undefined
+  
+  /**
     * Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted
     * the quality of received audio.
     */
@@ -60,7 +67,7 @@ trait MediaStream extends StObject {
   
   /**
     * UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and
-    * is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -105,7 +112,7 @@ trait MediaStream extends StObject {
   
   /**
     * UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format
-    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -114,6 +121,12 @@ trait MediaStream extends StObject {
   
   // Unique identifier for the stream.
   var streamId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * Codec name used to encode video for transmission on the network. Possible values are: unknown, invalid, av1, h263,
+    * h264, h264s, h264uc, h265, rtvc1, rtVideo, xrtvc1, unknownFutureValue.
+    */
+  var videoCodec: js.UndefOr[NullableOption[VideoCodec]] = js.undefined
   
   /**
     * True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false
@@ -129,6 +142,12 @@ object MediaStream {
   }
   
   extension [Self <: MediaStream](x: Self) {
+    
+    inline def setAudioCodec(value: NullableOption[AudioCodec]): Self = StObject.set(x, "audioCodec", value.asInstanceOf[js.Any])
+    
+    inline def setAudioCodecNull: Self = StObject.set(x, "audioCodec", null)
+    
+    inline def setAudioCodecUndefined: Self = StObject.set(x, "audioCodec", js.undefined)
     
     inline def setAverageAudioDegradation(value: NullableOption[Double]): Self = StObject.set(x, "averageAudioDegradation", value.asInstanceOf[js.Any])
     
@@ -271,6 +290,12 @@ object MediaStream {
     inline def setStreamIdNull: Self = StObject.set(x, "streamId", null)
     
     inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
+    
+    inline def setVideoCodec(value: NullableOption[VideoCodec]): Self = StObject.set(x, "videoCodec", value.asInstanceOf[js.Any])
+    
+    inline def setVideoCodecNull: Self = StObject.set(x, "videoCodec", null)
+    
+    inline def setVideoCodecUndefined: Self = StObject.set(x, "videoCodec", js.undefined)
     
     inline def setWasMediaBypassed(value: NullableOption[Boolean]): Self = StObject.set(x, "wasMediaBypassed", value.asInstanceOf[js.Any])
     

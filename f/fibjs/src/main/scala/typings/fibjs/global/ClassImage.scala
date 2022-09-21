@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_Image")
 @js.native
-class ClassImage ()
+open class ClassImage ()
   extends StObject
      with typings.fibjs.ClassImage

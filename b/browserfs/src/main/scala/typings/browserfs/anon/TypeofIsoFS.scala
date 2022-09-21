@@ -8,7 +8,7 @@ import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.isoFSMod.IsoFS
 import typings.browserfs.isoFSMod.IsoFSOptions
 import typings.browserfs.isoFSMod.default
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

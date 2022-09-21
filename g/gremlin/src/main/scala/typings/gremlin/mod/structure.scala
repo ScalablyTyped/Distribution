@@ -14,14 +14,14 @@ object structure {
   
   @JSImport("gremlin", "structure.Edge")
   @js.native
-  class Edge protected () extends Element {
+  open class Edge protected () extends Element {
     def this(id: Double, outV: Vertex, label: String, inV: Vertex) = this()
     def this(id: Double, outV: Vertex, label: String, inV: Vertex, properties: js.Array[Property]) = this()
   }
   
   @JSImport("gremlin", "structure.Element")
   @js.native
-  class Element protected () extends StObject {
+  open class Element protected () extends StObject {
     def this(id: Double, label: String) = this()
     
     def equals(other: Element): Boolean = js.native
@@ -29,64 +29,67 @@ object structure {
   
   @JSImport("gremlin", "structure.Graph")
   @js.native
-  class Graph () extends StObject {
+  open class Graph () extends StObject {
     
     def traversal(): GraphTraversalSource[GraphTraversal] = js.native
   }
   
-  @JSImport("gremlin", "structure.GraphSONReader")
-  @js.native
-  class GraphSONReader () extends StObject {
-    def this(options: js.Any) = this()
-    
-    def read(obj: js.Any): js.Any = js.native
-  }
-  
-  @JSImport("gremlin", "structure.GraphSONWriter")
-  @js.native
-  class GraphSONWriter () extends StObject {
-    def this(options: js.Any) = this()
-    
-    def adaptObject(value: js.Any): js.Any = js.native
-    
-    def write(obj: js.Any): String = js.native
-  }
-  
   @JSImport("gremlin", "structure.Long")
   @js.native
-  class Long protected () extends StObject {
+  open class Long protected () extends StObject {
     def this(value: String) = this()
     def this(value: Double) = this()
   }
   
   @JSImport("gremlin", "structure.Path")
   @js.native
-  class Path protected () extends StObject {
-    def this(labels: js.Array[String], objects: js.Array[js.Any]) = this()
+  open class Path protected () extends StObject {
+    def this(labels: js.Array[String], objects: js.Array[Any]) = this()
     
     def equals(other: Path): Boolean = js.native
   }
   
   @JSImport("gremlin", "structure.Property")
   @js.native
-  class Property protected () extends StObject {
-    def this(key: String, value: js.Any) = this()
+  open class Property protected () extends StObject {
+    def this(key: String, value: Any) = this()
     
     def equals(other: Property): Boolean = js.native
   }
   
   @JSImport("gremlin", "structure.Vertex")
   @js.native
-  class Vertex protected () extends Element {
+  open class Vertex protected () extends Element {
     def this(id: Double, label: String) = this()
     def this(id: Double, label: String, properties: js.Array[VertexProperty]) = this()
   }
   
   @JSImport("gremlin", "structure.VertexProperty")
   @js.native
-  class VertexProperty protected () extends Element {
-    def this(id: Double, label: String, value: js.Any) = this()
-    def this(id: Double, label: String, value: js.Any, properties: js.Array[Property]) = this()
+  open class VertexProperty protected () extends Element {
+    def this(id: Double, label: String, value: Any) = this()
+    def this(id: Double, label: String, value: Any, properties: js.Array[Property]) = this()
+  }
+  
+  object io {
+    
+    @JSImport("gremlin", "structure.io.GraphSONReader")
+    @js.native
+    open class GraphSONReader () extends StObject {
+      def this(options: Any) = this()
+      
+      def read(obj: Any): Any = js.native
+    }
+    
+    @JSImport("gremlin", "structure.io.GraphSONWriter")
+    @js.native
+    open class GraphSONWriter () extends StObject {
+      def this(options: Any) = this()
+      
+      def adaptObject(value: Any): Any = js.native
+      
+      def write(obj: Any): String = js.native
+    }
   }
   
   inline def toLong(value: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(value.asInstanceOf[js.Any]).asInstanceOf[Long]

@@ -7,14 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "PlaneRotationGizmo")
 @js.native
-class PlaneRotationGizmo protected ()
+open class PlaneRotationGizmo protected ()
   extends typings.babylonjs.legacyMod.PlaneRotationGizmo {
   /**
     * Creates a PlaneRotationGizmo
-    * @param gizmoLayer The utility layer the gizmo will be added to
     * @param planeNormal The normal of the plane which the gizmo will be able to rotate on
     * @param color The color of the gizmo
+    * @param gizmoLayer The utility layer the gizmo will be added to
     * @param tessellation Amount of tessellation to be used when creating rotation circles
+    * @param parent
     * @param useEulerRotation Use and update Euler angle instead of quaternion
     * @param thickness display gizmo axis thickness
     */
@@ -35,8 +36,22 @@ object PlaneRotationGizmo {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("babylonjs", "PlaneRotationGizmo._CircleConstants")
+  /**
+    * The maximum angle between the camera and the rotation allowed for interaction
+    * If a rotation plane appears 'flat', a lower value allows interaction.
+    */
+  @JSImport("babylonjs", "PlaneRotationGizmo.MaxDragAngle")
   @js.native
-  def _CircleConstants: js.Any = js.native
-  inline def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
+  def MaxDragAngle: Double = js.native
+  inline def MaxDragAngle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxDragAngle")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs", "PlaneRotationGizmo._RotationGizmoFragmentShader")
+  @js.native
+  def _RotationGizmoFragmentShader: String = js.native
+  inline def _RotationGizmoFragmentShader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RotationGizmoFragmentShader")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs", "PlaneRotationGizmo._RotationGizmoVertexShader")
+  @js.native
+  def _RotationGizmoVertexShader: String = js.native
+  inline def _RotationGizmoVertexShader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RotationGizmoVertexShader")(x.asInstanceOf[js.Any])
 }

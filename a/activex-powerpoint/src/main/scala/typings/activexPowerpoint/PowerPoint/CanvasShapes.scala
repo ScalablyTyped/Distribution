@@ -18,7 +18,7 @@ trait CanvasShapes extends StObject {
   
   def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
   
-  def AddCurve(SafeArrayOfPoints: js.Any): Shape = js.native
+  def AddCurve(SafeArrayOfPoints: Any): Shape = js.native
   
   def AddLabel(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   
@@ -62,7 +62,7 @@ trait CanvasShapes extends StObject {
     Height: Double
   ): Shape = js.native
   
-  def AddPolyline(SafeArrayOfPoints: js.Any): Shape = js.native
+  def AddPolyline(SafeArrayOfPoints: Any): Shape = js.native
   
   def AddShape(Type: MsoAutoShapeType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   
@@ -79,7 +79,7 @@ trait CanvasShapes extends StObject {
   
   def AddTextbox(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Background: Shape = js.native
   
@@ -89,14 +89,14 @@ trait CanvasShapes extends StObject {
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): Shape = js.native
+  def Item(Index: Any): Shape = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.CanvasShapes_typekey")
   var PowerPointDotCanvasShapes_typekey: CanvasShapes = js.native
   
-  def Range(Index: js.Any): ShapeRange = js.native
+  def Range(Index: Any): ShapeRange = js.native
   
   def SelectAll(): Unit = js.native
 }

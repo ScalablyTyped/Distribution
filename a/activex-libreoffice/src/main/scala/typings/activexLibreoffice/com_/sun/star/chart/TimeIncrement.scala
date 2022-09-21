@@ -14,33 +14,33 @@ trait TimeIncrement extends StObject {
     * if the any contains a struct of type {@link com.sun.star.chart.TimeInterval} this is used as a fixed distance value for the major tickmarks.
     * Otherwise, if the any is empty or contains an incompatible type, the distance between major tickmarks is calculated automatically by the application.
     */
-  var MajorTimeInterval: js.Any
+  var MajorTimeInterval: Any
   
   /**
     * if the any contains a struct of type {@link com.sun.star.chart.TimeInterval} this is used as a fixed distance value for the minor tickmarks.
     * Otherwise, if the any is empty or contains an incompatible type, the distance between minor tickmarks is calculated automatically by the application.
     */
-  var MinorTimeInterval: js.Any
+  var MinorTimeInterval: Any
   
   /**
     * if the any contains a constant of type {@link com.sun.star.chart.TimeUnit} this is the smallest time unit that is displayed on the date-time axis.
     * Otherwise, if the any is empty or contains an incompatible type, the resolution is chosen automatically by the application.
     */
-  var TimeResolution: js.Any
+  var TimeResolution: Any
 }
 object TimeIncrement {
   
-  inline def apply(MajorTimeInterval: js.Any, MinorTimeInterval: js.Any, TimeResolution: js.Any): TimeIncrement = {
+  inline def apply(MajorTimeInterval: Any, MinorTimeInterval: Any, TimeResolution: Any): TimeIncrement = {
     val __obj = js.Dynamic.literal(MajorTimeInterval = MajorTimeInterval.asInstanceOf[js.Any], MinorTimeInterval = MinorTimeInterval.asInstanceOf[js.Any], TimeResolution = TimeResolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeIncrement]
   }
   
   extension [Self <: TimeIncrement](x: Self) {
     
-    inline def setMajorTimeInterval(value: js.Any): Self = StObject.set(x, "MajorTimeInterval", value.asInstanceOf[js.Any])
+    inline def setMajorTimeInterval(value: Any): Self = StObject.set(x, "MajorTimeInterval", value.asInstanceOf[js.Any])
     
-    inline def setMinorTimeInterval(value: js.Any): Self = StObject.set(x, "MinorTimeInterval", value.asInstanceOf[js.Any])
+    inline def setMinorTimeInterval(value: Any): Self = StObject.set(x, "MinorTimeInterval", value.asInstanceOf[js.Any])
     
-    inline def setTimeResolution(value: js.Any): Self = StObject.set(x, "TimeResolution", value.asInstanceOf[js.Any])
+    inline def setTimeResolution(value: Any): Self = StObject.set(x, "TimeResolution", value.asInstanceOf[js.Any])
   }
 }

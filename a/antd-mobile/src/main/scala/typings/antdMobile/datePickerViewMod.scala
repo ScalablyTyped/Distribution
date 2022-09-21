@@ -1,32 +1,20 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.AntLocale
-import typings.antdMobile.anon.Extra
+import org.scalablytyped.runtime.Shortcut
+import typings.antdMobile.datePickerViewDatePickerViewMod.DatePickerViewProps
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object datePickerViewMod {
+object datePickerViewMod extends Shortcut {
   
-  @JSImport("antd-mobile/lib/date-picker-view", JSImport.Default)
+  @JSImport("antd-mobile/es/components/date-picker-view", JSImport.Default)
   @js.native
-  class default ()
-    extends typings.antdMobile.datePickerViewDatePickerViewMod.default
-  /* static members */
-  object default {
-    
-    @JSImport("antd-mobile/lib/date-picker-view", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd-mobile/lib/date-picker-view", "default.contextTypes")
-    @js.native
-    def contextTypes: AntLocale = js.native
-    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
-    
-    @JSImport("antd-mobile/lib/date-picker-view", "default.defaultProps")
-    @js.native
-    def defaultProps: Extra = js.native
-    inline def defaultProps_=(x: Extra): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val default: FC[DatePickerViewProps] = js.native
+  
+  type _To = FC[DatePickerViewProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `datePickerViewMod.foo` */
+  override def _to: FC[DatePickerViewProps] = default
 }

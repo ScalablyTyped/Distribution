@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLScreen")
 @js.native
-/* private */ class HTMLScreen ()
+/* private */ open class HTMLScreen ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLScreen {
   
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val colorDepth: Double = js.native
   
   /* CompleteClass */
-  override val constructor: js.Any = js.native
+  override val constructor: Any = js.native
   
   /* CompleteClass */
   override val deviceXDPI: Double = js.native

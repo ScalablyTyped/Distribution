@@ -38,7 +38,7 @@ object XStateChangeListener {
     acquire: () => Unit,
     changingState: (EventObject, Double, Double) => Unit,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     stateChanged: (EventObject, Double, Double) => Unit
   ): XStateChangeListener = {

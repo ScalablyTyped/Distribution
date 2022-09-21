@@ -12,7 +12,7 @@ object characterMeasurerMod {
   
   @JSImport("typesettable/build/src/measurers/characterMeasurer", "CharacterMeasurer")
   @js.native
-  class CharacterMeasurer protected () extends Measurer {
+  open class CharacterMeasurer protected () extends Measurer {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()
     def this(ruler: IRuler, useGuards: Boolean) = this()

@@ -33,7 +33,7 @@ object XStorable2 {
     getLocation: () => String,
     hasLocation: () => Boolean,
     isReadonly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     store: () => Unit,
     storeAsURL: (String, SeqEquiv[PropertyValue]) => Unit,

@@ -47,7 +47,7 @@ object ientityMod {
       * }
       * </code>
       */
-    def key(): js.Any
+    def key(): Any
     
     /**
       * Get a XML object represents the Entity.
@@ -89,7 +89,7 @@ object ientityMod {
   }
   object IEntity {
     
-    inline def apply(TAG: () => String, construct: XML => Unit, key: () => js.Any, toXML: () => XML): IEntity = {
+    inline def apply(TAG: () => String, construct: XML => Unit, key: () => Any, toXML: () => XML): IEntity = {
       val __obj = js.Dynamic.literal(TAG = js.Any.fromFunction0(TAG), construct = js.Any.fromFunction1(construct), key = js.Any.fromFunction0(key), toXML = js.Any.fromFunction0(toXML))
       __obj.asInstanceOf[IEntity]
     }
@@ -98,15 +98,15 @@ object ientityMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def construct(entity: IEntity, xml: XML, prohibited_names: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(entity.asInstanceOf[js.Any], xml.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def construct(entity: IEntity, xml: XML, prohibited_names: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")((List(entity.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
     
-    inline def toXML(entity: IEntity, prohibited_names: String*): XML = (^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(entity.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[XML]
+    inline def toXML(entity: IEntity, prohibited_names: String*): XML = ^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(List(entity.asInstanceOf[js.Any]).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[XML]
     
     extension [Self <: IEntity](x: Self) {
       
       inline def setConstruct(value: XML => Unit): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
       
-      inline def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
+      inline def setKey(value: () => Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
       
       inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
       

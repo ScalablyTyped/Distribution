@@ -10,7 +10,7 @@ trait TabStop extends StObject {
   
   def Clear(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -24,7 +24,7 @@ object TabStop {
   inline def apply(
     Application: Application,
     Clear: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     PowerPointDotTabStop_typekey: TabStop,
     Type: PpTabStopType
@@ -40,7 +40,7 @@ object TabStop {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object phoneInTalkMod {
   
   @JSImport("material-ui/svg-icons/notification/phone-in-talk", JSImport.Default)
   @js.native
-  class default () extends NotificationPhoneInTalk
+  open class default () extends NotificationPhoneInTalk
   
   @JSImport("material-ui/svg-icons/notification/phone-in-talk", "NotificationPhoneInTalk")
   @js.native
-  class NotificationPhoneInTalk ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationPhoneInTalk ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

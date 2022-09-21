@@ -10,15 +10,13 @@ JavaScript library for quantity calculation and unit conversion
 | ------------------ | :-------------: |
 | Full name          | js-quantities |
 | Keywords           | conversion, convert, imperial, measure, measurement, metric, parse, parser, physical, quantity, quantities, temperature, unit, units |
-| # releases         | 4 |
-| # dependents       | 23 |
-| # downloads        | 481110 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 89182.33333333333 |
+| # stars            | 369.0 |
 
 ## Links
 - [Homepage](http://gentooboontoo.github.io/js-quantities/)
-- [Bugs](https://github.com/gentooboontoo/js-quantities/issues)
-- [Repository](https://github.com/gentooboontoo/js-quantities)
 - [Npm](https://www.npmjs.com/package/js-quantities)
     
 

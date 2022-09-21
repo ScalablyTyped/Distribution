@@ -11,7 +11,7 @@ object desktopMod {
   
   @JSImport("playable/dist/src/modules/full-screen-manager/desktop", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with DesktopFullScreen {
     def this(elem: HTMLElement, callback: EventListener) = this()
@@ -41,21 +41,21 @@ object desktopMod {
        with IFullScreenHelper {
     
     /* private */ @JSName("_$elem")
-    var _$elem: js.Any = js.native
+    var _$elem: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callback: js.Any = js.native
+    /* private */ var _callback: Any = js.native
     
-    /* private */ var _fullscreenFn: js.Any = js.native
+    /* private */ var _fullscreenFn: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     @JSName("isAPIExist")
     def isAPIExist_MDesktopFullScreen: Boolean = js.native
     
     @JSName("isEnabled")
-    def isEnabled_MDesktopFullScreen: js.Any = js.native
+    def isEnabled_MDesktopFullScreen: Any = js.native
     
     @JSName("isInFullScreen")
     def isInFullScreen_MDesktopFullScreen: Boolean = js.native

@@ -7,7 +7,6 @@ import typings.reactHtml5CameraPhoto.reactHtml5CameraPhotoStrings.environment
 import typings.reactHtml5CameraPhoto.reactHtml5CameraPhotoStrings.jpg
 import typings.reactHtml5CameraPhoto.reactHtml5CameraPhotoStrings.png
 import typings.reactHtml5CameraPhoto.reactHtml5CameraPhotoStrings.user
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,7 +90,7 @@ object mod extends Shortcut {
       * Callback called with the error object as parameter when error occur while opening the camera. Often the permission.
       * @param error The error information.
       */
-    var onCameraError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var onCameraError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     /**
       * Callback called when the camera is started.
@@ -170,7 +169,7 @@ object mod extends Shortcut {
       
       inline def setIsSilentModeUndefined: Self = StObject.set(x, "isSilentMode", js.undefined)
       
-      inline def setOnCameraError(value: /* error */ Error => Unit): Self = StObject.set(x, "onCameraError", js.Any.fromFunction1(value))
+      inline def setOnCameraError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onCameraError", js.Any.fromFunction1(value))
       
       inline def setOnCameraErrorUndefined: Self = StObject.set(x, "onCameraError", js.undefined)
       

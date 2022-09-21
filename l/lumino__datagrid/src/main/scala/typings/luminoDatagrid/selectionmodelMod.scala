@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object selectionmodelMod {
   
-  @JSImport("@lumino/datagrid/lib/selectionmodel", "SelectionModel")
+  @JSImport("@lumino/datagrid/types/selectionmodel", "SelectionModel")
   @js.native
   abstract class SelectionModel protected () extends StObject {
     /**
@@ -25,9 +25,9 @@ object selectionmodelMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
-    /* private */ var _selectionMode: js.Any = js.native
+    /* private */ var _selectionMode: Any = js.native
     
     /**
       * A signal emitted when the selection model has changed.

@@ -19,12 +19,6 @@ trait LoginButtonProps extends StObject {
   var loginBehaviorAndroid: js.UndefOr[LoginBehaviorAndroid] = js.undefined
   
   /**
-    * The behavior to use when attempting a login.
-    * @platform ios
-    */
-  var loginBehaviorIOS: js.UndefOr[LoginBehaviorIOS] = js.undefined
-  
-  /**
     * The callback invoked upon error/completion of a login request.
     */
   var onLoginFinished: js.UndefOr[js.Function2[/* error */ js.Object, /* result */ LoginResult, Unit]] = js.undefined
@@ -68,10 +62,6 @@ object LoginButtonProps {
     
     inline def setLoginBehaviorAndroidUndefined: Self = StObject.set(x, "loginBehaviorAndroid", js.undefined)
     
-    inline def setLoginBehaviorIOS(value: LoginBehaviorIOS): Self = StObject.set(x, "loginBehaviorIOS", value.asInstanceOf[js.Any])
-    
-    inline def setLoginBehaviorIOSUndefined: Self = StObject.set(x, "loginBehaviorIOS", js.undefined)
-    
     inline def setOnLoginFinished(value: (/* error */ js.Object, /* result */ LoginResult) => Unit): Self = StObject.set(x, "onLoginFinished", js.Any.fromFunction2(value))
     
     inline def setOnLoginFinishedUndefined: Self = StObject.set(x, "onLoginFinished", js.undefined)
@@ -84,7 +74,7 @@ object LoginButtonProps {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

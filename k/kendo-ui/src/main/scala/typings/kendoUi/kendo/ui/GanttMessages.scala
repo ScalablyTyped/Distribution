@@ -26,6 +26,8 @@ trait GanttMessages extends StObject {
   
   var save: js.UndefOr[String] = js.undefined
   
+  var selectView: js.UndefOr[String] = js.undefined
+  
   var views: js.UndefOr[GanttMessagesViews] = js.undefined
 }
 object GanttMessages {
@@ -76,6 +78,10 @@ object GanttMessages {
     inline def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    
+    inline def setSelectView(value: String): Self = StObject.set(x, "selectView", value.asInstanceOf[js.Any])
+    
+    inline def setSelectViewUndefined: Self = StObject.set(x, "selectView", js.undefined)
     
     inline def setViews(value: GanttMessagesViews): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,7 @@ object BundleDetails {
     
     inline def setAvailablePlatformsUndefined: Self = StObject.set(x, "availablePlatforms", js.undefined)
     
-    inline def setAvailablePlatformsVarargs(value: Platform*): Self = StObject.set(x, "availablePlatforms", js.Array(value :_*))
+    inline def setAvailablePlatformsVarargs(value: Platform*): Self = StObject.set(x, "availablePlatforms", js.Array(value*))
     
     inline def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     

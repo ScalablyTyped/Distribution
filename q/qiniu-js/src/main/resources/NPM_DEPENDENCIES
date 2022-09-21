@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "qiniu-js" : "3.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "qiniu-js" : "3.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

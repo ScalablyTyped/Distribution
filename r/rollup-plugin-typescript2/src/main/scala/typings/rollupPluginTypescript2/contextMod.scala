@@ -1,22 +1,37 @@
 package typings.rollupPluginTypescript2
 
+import typings.rollup.mod.PluginContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
   
-  @JSImport("rollup-plugin-typescript2/dist/context", "ConsoleContext")
+  @JSImport("rollup-plugin-typescript2/dist/context", "RollupContext")
   @js.native
-  class ConsoleContext protected ()
-    extends StObject
-       with IContext {
-    def this(verbosity: VerbosityLevel) = this()
-    def this(verbosity: VerbosityLevel, prefix: String) = this()
+  open class RollupContext protected () extends StObject {
+    def this(verbosity: VerbosityLevel, bail: Boolean, context: PluginContext) = this()
+    def this(verbosity: VerbosityLevel, bail: Boolean, context: PluginContext, prefix: String) = this()
     
-    /* private */ var prefix: js.Any = js.native
+    /* private */ var bail: Any = js.native
     
-    /* private */ var verbosity: js.Any = js.native
+    /* private */ var context: Any = js.native
+    
+    def debug(message: String): Unit = js.native
+    def debug(message: js.Function0[String]): Unit = js.native
+    
+    def error(message: String): Unit | scala.Nothing = js.native
+    def error(message: js.Function0[String]): Unit | scala.Nothing = js.native
+    
+    def info(message: String): Unit = js.native
+    def info(message: js.Function0[String]): Unit = js.native
+    
+    /* private */ var prefix: Any = js.native
+    
+    /* private */ var verbosity: Any = js.native
+    
+    def warn(message: String): Unit = js.native
+    def warn(message: js.Function0[String]): Unit = js.native
   }
   
   @js.native
@@ -51,21 +66,5 @@ object contextMod {
       extends StObject
          with VerbosityLevel
     /* 1 */ val Warning: typings.rollupPluginTypescript2.contextMod.VerbosityLevel.Warning & Double = js.native
-  }
-  
-  @js.native
-  trait IContext extends StObject {
-    
-    def debug(message: String): Unit = js.native
-    def debug(message: js.Function0[String]): Unit = js.native
-    
-    def error(message: String): Unit = js.native
-    def error(message: js.Function0[String]): Unit = js.native
-    
-    def info(message: String): Unit = js.native
-    def info(message: js.Function0[String]): Unit = js.native
-    
-    def warn(message: String): Unit = js.native
-    def warn(message: js.Function0[String]): Unit = js.native
   }
 }

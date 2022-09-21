@@ -12,7 +12,7 @@ trait CustomizedMetricSpecification extends StObject {
   var Dimensions: js.UndefOr[MetricDimensions] = js.undefined
   
   /**
-    * The name of the metric.
+    * The name of the metric. To get the exact metric name, namespace, and dimensions, inspect the Metric object that is returned by a call to ListMetrics.
     */
   var MetricName: typings.awsSdk.autoscalingMod.MetricName
   
@@ -27,7 +27,7 @@ trait CustomizedMetricSpecification extends StObject {
   var Statistic: MetricStatistic
   
   /**
-    * The unit of the metric.
+    * The unit of the metric. For a complete list of the units that CloudWatch supports, see the MetricDatum data type in the Amazon CloudWatch API Reference.
     */
   var Unit: js.UndefOr[MetricUnit] = js.undefined
 }
@@ -44,7 +44,7 @@ object CustomizedMetricSpecification {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: MetricDimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: MetricDimension*): Self = StObject.set(x, "Dimensions", js.Array(value*))
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

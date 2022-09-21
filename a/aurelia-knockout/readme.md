@@ -1,7 +1,7 @@
 
 # Scala.js typings for aurelia-knockout
 
-Typings are for version 2.4.0
+Typings are for version 2.4.2
 
 ## Library description:
 A Knockout plugin for Aurelia.
@@ -10,10 +10,10 @@ A Knockout plugin for Aurelia.
 | ------------------ | :-------------: |
 | Full name          | aurelia-knockout |
 | Keywords           | aurelia, binding, databinding, knockout |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 3216 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 119.66666666666667 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/aurelia-contrib/aurelia-knockout)

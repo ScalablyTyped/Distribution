@@ -1,6 +1,5 @@
 package typings.ultraStrftime
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(fmt: String): String = ^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(fmt: String, d: js.Date): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, d: js.Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, d: js.Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, d: js.Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(fmt: String, d: Unit, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(fmt: String, d: Unit, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(fmt: String, d: Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(fmt: String, d: Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(fmt: String, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(fmt: String, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(fmt: String, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -26,24 +25,24 @@ object mod {
   inline def localizedStrftime(locale: Locale): StrftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("localizedStrftime")(locale.asInstanceOf[js.Any]).asInstanceOf[StrftimeFunction]
   
   inline def strftime(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def strftime(fmt: String, d: js.Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, d: js.Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, d: js.Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, d: js.Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def strftime(fmt: String, d: Unit, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def strftime(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def strftime(fmt: String, d: Unit, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def strftime(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def strftime(fmt: String, d: Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def strftime(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def strftime(fmt: String, d: Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def strftime(fmt: String, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def strftime(fmt: String, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def strftime(fmt: String, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def strftimeTZ(fmt: String, d: Date, locale: Locale, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def strftimeTZ(fmt: String, d: Date, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftimeTZ(fmt: String, d: js.Date, locale: Locale, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftimeTZ(fmt: String, d: js.Date, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def strftimeUTC(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def strftimeUTC(fmt: String, d: js.Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftimeUTC(fmt: String, d: js.Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def strftimeUTC(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def strftimeUTC(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def strftimeUTC(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Locale extends StObject {
     
@@ -88,23 +87,23 @@ object mod {
       
       inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value*))
       
       inline def setFormats(value: LocaleFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
       inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setPM(value: String): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
       
       inline def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
       
-      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
+      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value*))
       
       inline def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
       
-      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value*))
     }
   }
   
@@ -187,5 +186,10 @@ object mod {
     }
   }
   
-  type StrftimeFunction = js.Function3[/* fmt */ String, /* d */ js.UndefOr[Date], /* options */ js.UndefOr[Options], String]
+  type StrftimeFunction = js.Function3[
+    /* fmt */ String, 
+    /* d */ js.UndefOr[js.Date], 
+    /* options */ js.UndefOr[Options], 
+    String
+  ]
 }

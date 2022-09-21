@@ -63,7 +63,7 @@ object mod {
       
       inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
       
-      inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+      inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value*))
       
       inline def setOutsideClickIgnoreClass(value: String): Self = StObject.set(x, "outsideClickIgnoreClass", value.asInstanceOf[js.Any])
       
@@ -90,7 +90,7 @@ object mod {
     
     var excludeScrollbar: js.UndefOr[Boolean] = js.undefined
     
-    var handleClickOutside: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+    var handleClickOutside: js.UndefOr[MouseEventHandler[Any]] = js.undefined
   }
   object ConfigObject {
     
@@ -105,7 +105,7 @@ object mod {
       
       inline def setExcludeScrollbarUndefined: Self = StObject.set(x, "excludeScrollbar", js.undefined)
       
-      inline def setHandleClickOutside(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
+      inline def setHandleClickOutside(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
       
       inline def setHandleClickOutsideUndefined: Self = StObject.set(x, "handleClickOutside", js.undefined)
     }
@@ -151,7 +151,7 @@ object mod {
   
   type OnClickOutProps[P] = WithoutInjectedClickOutProps[P] & AdditionalProps
   
-  type PropsOf[T] = js.Any
+  type PropsOf[T] = Any
   
   type WithoutInjectedClickOutProps[P] = Pick[
     P, 
@@ -168,7 +168,7 @@ object mod {
   
   @js.native
   trait WrapperInstance[P, C]
-    extends Component[OnClickOutProps[LibraryManagedAttributes[C, P]], js.Object, js.Any] {
+    extends Component[OnClickOutProps[LibraryManagedAttributes[C, P]], js.Object, Any] {
     
     def getInstance(): InstanceType[C] = js.native
   }

@@ -32,6 +32,6 @@ object ArtifactSourceTrigger {
     
     inline def setTriggerConditions(value: js.Array[ArtifactFilter]): Self = StObject.set(x, "triggerConditions", value.asInstanceOf[js.Any])
     
-    inline def setTriggerConditionsVarargs(value: ArtifactFilter*): Self = StObject.set(x, "triggerConditions", js.Array(value :_*))
+    inline def setTriggerConditionsVarargs(value: ArtifactFilter*): Self = StObject.set(x, "triggerConditions", js.Array(value*))
   }
 }

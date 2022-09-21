@@ -1,6 +1,7 @@
 package typings.rcMentions
 
-import typings.rcMentions.anon.PartialMentionsState
+import typings.rcMentions.anon.PartialMentionsPropsRefAt
+import typings.rcMentions.anon.WeakValidationMapMentions
 import typings.rcMentions.optionMod.OptionProps
 import typings.rcMentions.rcMentionsBooleans.`false`
 import typings.rcMentions.rcMentionsStrings.`additions removals`
@@ -58,16 +59,16 @@ import typings.rcTextarea.resizableTextAreaMod.AutoSizeType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
-import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
-import typings.react.mod.Component
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
+import typings.react.mod.FC
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -80,9 +81,10 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod.SFC
+import typings.react.mod.RefAttributes
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -92,82 +94,55 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
-import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
+import typings.std.VoidFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mentionsMod {
   
-  @JSImport("rc-mentions/es/Mentions", JSImport.Default)
-  @js.native
-  class default protected () extends Mentions {
-    def this(props: MentionsProps) = this()
-  }
+  /* Inlined react.react.ForwardRefExoticComponent<rc-mentions.rc-mentions/es/Mentions.MentionsProps & react.react.RefAttributes<rc-mentions.rc-mentions/es/Mentions.MentionsRef>> & {  Option :react.react.FC<rc-mentions.rc-mentions/es/Option.OptionProps>} */
   object default {
+    
+    /**
+      * **NOTE**: Exotic components are not callable.
+      */
+    inline def apply(props: MentionsProps & RefAttributes[MentionsRef]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("rc-mentions/es/Mentions", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    /* static member */
     @JSImport("rc-mentions/es/Mentions", "default.Option")
     @js.native
-    def Option: SFC[OptionProps] = js.native
-    inline def Option_=(x: SFC[OptionProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
+    def Option: FC[OptionProps] = js.native
+    inline def Option_=(x: FC[OptionProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
     
-    /* static member */
-    object defaultProps {
-      
-      @JSImport("rc-mentions/es/Mentions", "default.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("rc-mentions/es/Mentions", "default.defaultProps.filterOption")
-      @js.native
-      def filterOption: js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean] = js.native
-      inline def filterOption_=(x: js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filterOption")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-mentions/es/Mentions", "default.defaultProps.notFoundContent")
-      @js.native
-      def notFoundContent: String = js.native
-      inline def notFoundContent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notFoundContent")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-mentions/es/Mentions", "default.defaultProps.prefix")
-      @js.native
-      def prefix: String = js.native
-      
-      @JSImport("rc-mentions/es/Mentions", "default.defaultProps.prefixCls")
-      @js.native
-      def prefixCls: String = js.native
-      inline def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
-      
-      inline def prefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-mentions/es/Mentions", "default.defaultProps.rows")
-      @js.native
-      def rows: Double = js.native
-      inline def rows_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rows")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-mentions/es/Mentions", "default.defaultProps.split")
-      @js.native
-      def split: String = js.native
-      inline def split_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("split")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-mentions/es/Mentions", "default.defaultProps.validateSearch")
-      @js.native
-      def validateSearch: js.Function2[/* text */ String, /* props */ MentionsProps, Boolean] = js.native
-      inline def validateSearch_=(x: js.Function2[/* text */ String, /* props */ MentionsProps, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateSearch")(x.asInstanceOf[js.Any])
-    }
+    @JSImport("rc-mentions/es/Mentions", "default.defaultProps")
+    @js.native
+    def defaultProps: js.UndefOr[PartialMentionsPropsRefAt] = js.native
+    inline def defaultProps_=(x: js.UndefOr[PartialMentionsPropsRefAt]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    /* static member */
-    inline def getDerivedStateFromProps(props: MentionsProps, prevState: MentionsState): PartialMentionsState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialMentionsState]
+    @JSImport("rc-mentions/es/Mentions", "default.displayName")
+    @js.native
+    def displayName: js.UndefOr[String] = js.native
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-mentions/es/Mentions", "default.propTypes")
+    @js.native
+    def propTypes: js.UndefOr[WeakValidationMapMentions] = js.native
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapMentions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-mentions/es/Mentions", "default.$$typeof")
+    @js.native
+    val typeof: js.Symbol = js.native
   }
   
-  /* Inlined rc-mentions.rc-mentions/es/util.Omit<rc-textarea.rc-textarea.TextAreaProps, 'prefix' | 'onChange' | 'onSelect'> */
+  /* Inlined std.Omit<rc-textarea.rc-textarea.TextAreaProps, 'prefix' | 'onChange' | 'onSelect'> */
   trait BaseTextareaAttrs extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -176,11 +151,11 @@ object mentionsMod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -198,21 +173,21 @@ object mentionsMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -226,11 +201,11 @@ object mentionsMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -242,13 +217,13 @@ object mentionsMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -258,7 +233,7 @@ object mentionsMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -318,7 +293,7 @@ object mentionsMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -516,7 +491,7 @@ object mentionsMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rows: js.UndefOr[Double] = js.undefined
     
@@ -569,7 +544,7 @@ object mentionsMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -577,7 +552,7 @@ object mentionsMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -613,7 +588,7 @@ object mentionsMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -625,7 +600,7 @@ object mentionsMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -633,7 +608,7 @@ object mentionsMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -641,7 +616,7 @@ object mentionsMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -669,15 +644,15 @@ object mentionsMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -701,7 +676,7 @@ object mentionsMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -711,7 +686,7 @@ object mentionsMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -731,7 +706,7 @@ object mentionsMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -823,7 +798,7 @@ object mentionsMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -853,7 +828,7 @@ object mentionsMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -925,7 +900,7 @@ object mentionsMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLTextAreaElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1021,7 +996,7 @@ object mentionsMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLTextAreaElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1249,7 +1224,7 @@ object mentionsMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1305,7 +1280,7 @@ object mentionsMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
@@ -1329,76 +1304,6 @@ object mentionsMod {
     inline def rtl: typings.rcMentions.rcMentionsStrings.rtl = "rtl".asInstanceOf[typings.rcMentions.rcMentionsStrings.rtl]
   }
   
-  @js.native
-  trait Mentions
-    extends Component[MentionsProps, MentionsState, js.Any] {
-    
-    def blur(): Unit = js.native
-    
-    @JSName("componentDidUpdate")
-    def componentDidUpdate_MMentions(): Unit = js.native
-    
-    def focus(): Unit = js.native
-    
-    var focusId: js.UndefOr[Double] = js.native
-    
-    def getOptions(): js.Array[OptionProps] = js.native
-    def getOptions(measureText: String): js.Array[OptionProps] = js.native
-    
-    var measure: js.UndefOr[HTMLDivElement] = js.native
-    
-    def onBlur(): Unit = js.native
-    def onBlur(event: FocusEvent[HTMLTextAreaElement]): Unit = js.native
-    
-    var onChange: ChangeEventHandler[HTMLTextAreaElement] = js.native
-    
-    def onDropdownBlur(): Unit = js.native
-    
-    def onDropdownFocus(): Unit = js.native
-    
-    def onFocus(): Unit = js.native
-    def onFocus(event: FocusEvent[HTMLTextAreaElement]): Unit = js.native
-    
-    var onInputBlur: FocusEventHandler[HTMLTextAreaElement] = js.native
-    
-    var onInputFocus: FocusEventHandler[HTMLTextAreaElement] = js.native
-    
-    var onKeyDown: KeyboardEventHandler[HTMLTextAreaElement] = js.native
-    
-    /**
-      * When to start measure:
-      * 1. When user press `prefix`
-      * 2. When measureText !== prevMeasureText
-      *  - If measure hit
-      *  - If measuring
-      *
-      * When to stop measure:
-      * 1. Selection is out of range
-      * 2. Contains `space`
-      * 3. ESC or select one
-      */
-    var onKeyUp: KeyboardEventHandler[HTMLTextAreaElement] = js.native
-    
-    var onPressEnter: KeyboardEventHandler[HTMLTextAreaElement] = js.native
-    
-    def selectOption(option: OptionProps): Unit = js.native
-    
-    def setActiveIndex(activeIndex: Double): Unit = js.native
-    
-    def setMeasureRef(element: HTMLDivElement): Unit = js.native
-    
-    def setTextAreaRef(element: typings.rcTextarea.mod.default): Unit = js.native
-    
-    def startMeasure(measureText: String, measurePrefix: String, measureLocation: Double): Unit = js.native
-    
-    def stopMeasure(): Unit = js.native
-    def stopMeasure(callback: js.Function0[Unit]): Unit = js.native
-    
-    var textarea: js.UndefOr[HTMLTextAreaElement] = js.native
-    
-    def triggerChange(value: String): Unit = js.native
-  }
-  
   trait MentionsProps
     extends StObject
        with BaseTextareaAttrs {
@@ -1407,6 +1312,8 @@ object mentionsMod {
     var defaultValue_MentionsProps: js.UndefOr[String] = js.undefined
     
     var direction: js.UndefOr[Direction] = js.undefined
+    
+    var dropdownClassName: js.UndefOr[String] = js.undefined
     
     var filterOption: js.UndefOr[
         `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])
@@ -1421,6 +1328,9 @@ object mentionsMod {
     var onSearch: js.UndefOr[js.Function2[/* text */ String, /* prefix */ String, Unit]] = js.undefined
     
     var onSelect: js.UndefOr[js.Function2[/* option */ OptionProps, /* prefix */ String, Unit]] = js.undefined
+    
+    /** @private Testing usage. Do not use in prod. It will not work as your expect. */
+    var open: js.UndefOr[Boolean] = js.undefined
     
     var placement: js.UndefOr[Placement] = js.undefined
     
@@ -1452,6 +1362,10 @@ object mentionsMod {
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
+      inline def setDropdownClassName(value: String): Self = StObject.set(x, "dropdownClassName", value.asInstanceOf[js.Any])
+      
+      inline def setDropdownClassNameUndefined: Self = StObject.set(x, "dropdownClassName", js.undefined)
+      
       inline def setFilterOption(value: `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
       
       inline def setFilterOptionFunction2(value: (/* input */ String, /* hasValue */ OptionProps) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
@@ -1478,6 +1392,10 @@ object mentionsMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
@@ -1486,7 +1404,7 @@ object mentionsMod {
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      inline def setPrefixVarargs(value: String*): Self = StObject.set(x, "prefix", js.Array(value :_*))
+      inline def setPrefixVarargs(value: String*): Self = StObject.set(x, "prefix", js.Array(value*))
       
       inline def setSplit(value: String): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
@@ -1506,53 +1424,31 @@ object mentionsMod {
     }
   }
   
-  trait MentionsState extends StObject {
+  trait MentionsRef extends StObject {
     
-    var activeIndex: Double
+    var blur: VoidFunction
     
-    var isFocus: Boolean
+    var focus: VoidFunction
     
-    var measureLocation: Double
-    
-    var measurePrefix: String
-    
-    var measureText: String | Null
-    
-    var measuring: Boolean
-    
-    var value: String
+    /** @deprecated It may not work as expected */
+    var textarea: HTMLTextAreaElement | Null
   }
-  object MentionsState {
+  object MentionsRef {
     
-    inline def apply(
-      activeIndex: Double,
-      isFocus: Boolean,
-      measureLocation: Double,
-      measurePrefix: String,
-      measuring: Boolean,
-      value: String
-    ): MentionsState = {
-      val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], isFocus = isFocus.asInstanceOf[js.Any], measureLocation = measureLocation.asInstanceOf[js.Any], measurePrefix = measurePrefix.asInstanceOf[js.Any], measuring = measuring.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], measureText = null)
-      __obj.asInstanceOf[MentionsState]
+    inline def apply(blur: () => Unit, focus: () => Unit): MentionsRef = {
+      val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), textarea = null)
+      __obj.asInstanceOf[MentionsRef]
     }
     
-    extension [Self <: MentionsState](x: Self) {
+    extension [Self <: MentionsRef](x: Self) {
       
-      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      inline def setIsFocus(value: Boolean): Self = StObject.set(x, "isFocus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      inline def setMeasureLocation(value: Double): Self = StObject.set(x, "measureLocation", value.asInstanceOf[js.Any])
+      inline def setTextarea(value: HTMLTextAreaElement): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
       
-      inline def setMeasurePrefix(value: String): Self = StObject.set(x, "measurePrefix", value.asInstanceOf[js.Any])
-      
-      inline def setMeasureText(value: String): Self = StObject.set(x, "measureText", value.asInstanceOf[js.Any])
-      
-      inline def setMeasureTextNull: Self = StObject.set(x, "measureText", null)
-      
-      inline def setMeasuring(value: Boolean): Self = StObject.set(x, "measuring", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setTextareaNull: Self = StObject.set(x, "textarea", null)
     }
   }
   

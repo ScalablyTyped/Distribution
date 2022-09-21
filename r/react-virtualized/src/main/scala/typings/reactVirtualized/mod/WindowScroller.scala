@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "WindowScroller")
 @js.native
-class WindowScroller protected ()
+open class WindowScroller protected ()
   extends typings.reactVirtualized.esWindowScrollerMod.WindowScroller {
   def this(props: WindowScrollerProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: WindowScrollerProps, context: js.Any) = this()
+  def this(props: WindowScrollerProps, context: Any) = this()
 }
 /* static members */
 object WindowScroller {

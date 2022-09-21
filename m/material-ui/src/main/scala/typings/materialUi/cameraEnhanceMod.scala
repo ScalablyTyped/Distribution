@@ -10,10 +10,10 @@ object cameraEnhanceMod {
   
   @JSImport("material-ui/svg-icons/action/camera-enhance", JSImport.Default)
   @js.native
-  class default () extends ActionCameraEnhance
+  open class default () extends ActionCameraEnhance
   
   @JSImport("material-ui/svg-icons/action/camera-enhance", "ActionCameraEnhance")
   @js.native
-  class ActionCameraEnhance ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionCameraEnhance ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

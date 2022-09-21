@@ -32,7 +32,7 @@ object GmeConfig {
   val ^ : js.Any = js.native
   @JSGlobal("GmeConfig.GmeConfig")
   @js.native
-  class GmeConfig ()
+  open class GmeConfig ()
     extends StObject
        with typings.webgme.GmeConfig.GmeConfig {
     
@@ -103,7 +103,7 @@ object GmeConfig {
       * @memberOf GmeConfig
       */
     /* CompleteClass */
-    override def serialize(): js.Any = js.native
+    override def serialize(): Any = js.native
     
     /** Server related settings. */
     /* CompleteClass */
@@ -127,7 +127,7 @@ object GmeConfig {
   
   @JSGlobal("GmeConfig.PluginConfig")
   @js.native
-  class PluginConfig ()
+  open class PluginConfig ()
     extends StObject
        with typings.webgme.GmeConfig.PluginConfig {
     
@@ -198,7 +198,7 @@ object GmeConfig {
       * @memberOf GmeConfig
       */
     /* CompleteClass */
-    override def serialize(): js.Any = js.native
+    override def serialize(): Any = js.native
     
     /** Server related settings. */
     /* CompleteClass */

@@ -22,9 +22,9 @@ trait User extends StObject {
     * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification.
     */
   @JSName("GetPermissions")
-  def GetPermissions_1(Name: String, ObjectType: `-1`, ObjectTypeId: js.Any): RightsEnum = js.native
+  def GetPermissions_1(Name: String, ObjectType: `-1`, ObjectTypeId: Any): RightsEnum = js.native
   @JSName("GetPermissions")
-  def GetPermissions_1(Name: Null, ObjectType: `-1`, ObjectTypeId: js.Any): RightsEnum = js.native
+  def GetPermissions_1(Name: Null, ObjectType: `-1`, ObjectTypeId: Any): RightsEnum = js.native
   
   def Groups(Item: String): Group = js.native
   def Groups(Item: Double): Group = js.native
@@ -60,6 +60,6 @@ trait User extends StObject {
     Action: ActionEnum,
     Rights: RightsEnum,
     Inherit: InheritTypeEnum,
-    ObjectTypeId: js.Any
+    ObjectTypeId: Any
   ): Unit = js.native
 }

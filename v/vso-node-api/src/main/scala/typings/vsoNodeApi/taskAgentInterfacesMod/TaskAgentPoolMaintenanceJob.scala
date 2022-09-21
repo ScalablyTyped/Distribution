@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +20,7 @@ trait TaskAgentPoolMaintenanceJob extends StObject {
   /**
     * Time that the maintenance job was completed
     */
-  var finishTime: Date
+  var finishTime: js.Date
   
   /**
     * Id of the maintenance job
@@ -46,7 +45,7 @@ trait TaskAgentPoolMaintenanceJob extends StObject {
   /**
     * Time that the maintenance job was queued
     */
-  var queueTime: Date
+  var queueTime: js.Date
   
   /**
     * The identity that queued the maintenance job
@@ -61,7 +60,7 @@ trait TaskAgentPoolMaintenanceJob extends StObject {
   /**
     * Time that the maintenance job was started
     */
-  var startTime: Date
+  var startTime: js.Date
   
   /**
     * Status of the maintenance job
@@ -80,15 +79,15 @@ object TaskAgentPoolMaintenanceJob {
   inline def apply(
     definitionId: Double,
     errorCount: Double,
-    finishTime: Date,
+    finishTime: js.Date,
     jobId: Double,
     logsDownloadUrl: String,
     orchestrationId: String,
     pool: TaskAgentPoolReference,
-    queueTime: Date,
+    queueTime: js.Date,
     requestedBy: IdentityRef,
     result: TaskAgentPoolMaintenanceJobResult,
-    startTime: Date,
+    startTime: js.Date,
     status: TaskAgentPoolMaintenanceJobStatus,
     targetAgents: js.Array[TaskAgentReference],
     warningCount: Double
@@ -103,7 +102,7 @@ object TaskAgentPoolMaintenanceJob {
     
     inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: js.Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     inline def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
@@ -113,19 +112,19 @@ object TaskAgentPoolMaintenanceJob {
     
     inline def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    inline def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
+    inline def setQueueTime(value: js.Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
     inline def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
     inline def setResult(value: TaskAgentPoolMaintenanceJobResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: TaskAgentPoolMaintenanceJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setTargetAgents(value: js.Array[TaskAgentReference]): Self = StObject.set(x, "targetAgents", value.asInstanceOf[js.Any])
     
-    inline def setTargetAgentsVarargs(value: TaskAgentReference*): Self = StObject.set(x, "targetAgents", js.Array(value :_*))
+    inline def setTargetAgentsVarargs(value: TaskAgentReference*): Self = StObject.set(x, "targetAgents", js.Array(value*))
     
     inline def setWarningCount(value: Double): Self = StObject.set(x, "warningCount", value.asInstanceOf[js.Any])
   }

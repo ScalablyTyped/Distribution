@@ -27,7 +27,7 @@ object XLayer {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readData: XLayerHandler => Unit,
     release: () => Unit
   ): XLayer = {

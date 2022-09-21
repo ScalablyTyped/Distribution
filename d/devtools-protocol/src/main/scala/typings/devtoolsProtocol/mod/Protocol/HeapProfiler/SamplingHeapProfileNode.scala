@@ -41,7 +41,7 @@ object SamplingHeapProfileNode {
     
     inline def setChildren(value: js.Array[SamplingHeapProfileNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: SamplingHeapProfileNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: SamplingHeapProfileNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

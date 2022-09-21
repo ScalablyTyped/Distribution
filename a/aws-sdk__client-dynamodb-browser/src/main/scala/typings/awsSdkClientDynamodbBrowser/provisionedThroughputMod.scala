@@ -8,5 +8,5 @@ object provisionedThroughputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_ProvisionedThroughput", "_ProvisionedThroughput")
   @js.native
-  val ProvisionedThroughput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ProvisionedThroughput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

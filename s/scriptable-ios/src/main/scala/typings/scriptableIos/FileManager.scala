@@ -1,7 +1,6 @@
 package typings.scriptableIos
 
 import typings.scriptableIos.FileManager.AllFileBookmarks
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ trait FileManager extends StObject {
   /**
     * _Reads all file bookmarks created in settings._
     *
-    * File bookmarks are used to bookmark a file or a folder and read or written to it later. File bookmarks are created from Scriptables settings.
+    * File bookmarks are used to bookmark a file or a folder to read from it or write to it later. File bookmarks are created from Scriptables settings.
     *
     * This function returns all file bookmarks as an array of objects that take the following form.
     *
@@ -136,7 +135,7 @@ trait FileManager extends StObject {
     * @param filePath - Path of file.
     * @see https://docs.scriptable.app/filemanager/#-creationdate
     */
-  def creationDate(filePath: String): Date = js.native
+  def creationDate(filePath: String): js.Date = js.native
   
   /**
     * _Path of documents directory._
@@ -256,7 +255,7 @@ trait FileManager extends StObject {
   /**
     * _Lists content of directory._
     *
-    * Lists all the contents in the specified directory. The returned array contains file paths to all files in the directory.
+    * Lists all the contents in the specified directory. The returned array contains filenames of all files and directories in the specified directory.
     * @param directoryPath - Path to directory.
     * @see https://docs.scriptable.app/filemanager/#-listcontents
     */
@@ -269,7 +268,7 @@ trait FileManager extends StObject {
     * @param filePath - Path of file.
     * @see https://docs.scriptable.app/filemanager/#-modificationdate
     */
-  def modificationDate(filePath: String): Date = js.native
+  def modificationDate(filePath: String): js.Date = js.native
   
   /**
     * _Moves a file._

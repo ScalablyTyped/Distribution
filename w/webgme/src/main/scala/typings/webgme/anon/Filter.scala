@@ -20,6 +20,6 @@ object Filter {
     
     inline def setFilter(value: js.Array[Path]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setFilterVarargs(value: Path*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Path*): Self = StObject.set(x, "filter", js.Array(value*))
   }
 }

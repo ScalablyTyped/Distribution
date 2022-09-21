@@ -1,7 +1,7 @@
 
 # Scala.js typings for lokijs
 
-Typings are for version v1.5.3
+Typings are for version v1.5.9
 
 ## Library description:
 Fast document oriented javascript in-memory database
@@ -10,10 +10,10 @@ Fast document oriented javascript in-memory database
 | ------------------ | :-------------: |
 | Full name          | lokijs |
 | Keywords           | javascript, document-oriented, mmdb, json, nosql, lokijs, in-memory, indexeddb |
-| # releases         | 7 |
-| # dependents       | 254 |
-| # downloads        | 12352042 |
-| # stars            | 31 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 724810.0 |
+| # stars            | 6216.0 |
 
 ## Links
 - [Homepage](https://techfort.github.io/LokiJS/)

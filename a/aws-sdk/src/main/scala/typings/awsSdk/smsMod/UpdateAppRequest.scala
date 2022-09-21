@@ -22,7 +22,7 @@ trait UpdateAppRequest extends StObject {
   var name: js.UndefOr[AppName] = js.undefined
   
   /**
-    * The name of the service role in the customer's account used by AWS SMS.
+    * The name of the service role in the customer's account used by Server Migration Service.
     */
   var roleName: js.UndefOr[RoleName] = js.undefined
   
@@ -65,12 +65,12 @@ object UpdateAppRequest {
     
     inline def setServerGroupsUndefined: Self = StObject.set(x, "serverGroups", js.undefined)
     
-    inline def setServerGroupsVarargs(value: ServerGroup*): Self = StObject.set(x, "serverGroups", js.Array(value :_*))
+    inline def setServerGroupsVarargs(value: ServerGroup*): Self = StObject.set(x, "serverGroups", js.Array(value*))
     
     inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "AbsoluteSourceSpan")
 @js.native
-class AbsoluteSourceSpan protected ()
-  extends typings.angularCompiler.compilerMod.AbsoluteSourceSpan {
+open class AbsoluteSourceSpan protected () extends StObject {
   def this(start: Double, end: Double) = this()
+  
+  val end: Double = js.native
+  
+  val start: Double = js.native
 }

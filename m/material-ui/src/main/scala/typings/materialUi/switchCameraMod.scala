@@ -10,10 +10,10 @@ object switchCameraMod {
   
   @JSImport("material-ui/svg-icons/image/switch-camera", JSImport.Default)
   @js.native
-  class default () extends ImageSwitchCamera
+  open class default () extends ImageSwitchCamera
   
   @JSImport("material-ui/svg-icons/image/switch-camera", "ImageSwitchCamera")
   @js.native
-  class ImageSwitchCamera ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageSwitchCamera ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

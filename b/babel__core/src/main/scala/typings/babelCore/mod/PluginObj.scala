@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PluginObj[S] extends StObject {
   
-  var inherits: js.UndefOr[js.Any] = js.undefined
+  var inherits: js.UndefOr[Any] = js.undefined
   
-  var manipulateOptions: js.UndefOr[js.Function2[/* opts */ js.Any, /* parserOpts */ js.Any, Unit]] = js.undefined
+  var manipulateOptions: js.UndefOr[js.Function2[/* opts */ Any, /* parserOpts */ Any, Unit]] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -28,11 +28,11 @@ object PluginObj {
   
   extension [Self <: PluginObj[?], S](x: Self & PluginObj[S]) {
     
-    inline def setInherits(value: js.Any): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
+    inline def setInherits(value: Any): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     
     inline def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
     
-    inline def setManipulateOptions(value: (/* opts */ js.Any, /* parserOpts */ js.Any) => Unit): Self = StObject.set(x, "manipulateOptions", js.Any.fromFunction2(value))
+    inline def setManipulateOptions(value: (/* opts */ Any, /* parserOpts */ Any) => Unit): Self = StObject.set(x, "manipulateOptions", js.Any.fromFunction2(value))
     
     inline def setManipulateOptionsUndefined: Self = StObject.set(x, "manipulateOptions", js.undefined)
     

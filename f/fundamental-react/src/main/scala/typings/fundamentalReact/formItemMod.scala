@@ -15,7 +15,7 @@ object formItemMod extends Shortcut {
   
   trait FormItemProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     

@@ -29,7 +29,7 @@ object ClusterVersionsMessage {
     
     inline def setClusterVersionsUndefined: Self = StObject.set(x, "ClusterVersions", js.undefined)
     
-    inline def setClusterVersionsVarargs(value: ClusterVersion*): Self = StObject.set(x, "ClusterVersions", js.Array(value :_*))
+    inline def setClusterVersionsVarargs(value: ClusterVersion*): Self = StObject.set(x, "ClusterVersions", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

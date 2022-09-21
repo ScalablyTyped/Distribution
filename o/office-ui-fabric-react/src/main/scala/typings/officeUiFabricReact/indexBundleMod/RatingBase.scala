@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "RatingBase")
 @js.native
-class RatingBase protected ()
+open class RatingBase protected ()
   extends typings.officeUiFabricReact.mod.RatingBase {
   def this(props: IRatingProps) = this()
 }

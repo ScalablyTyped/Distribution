@@ -13,7 +13,7 @@ object mod {
   /**
     * @param allowLocal   Should local addresses be considered valid? default = false
     */
-  class DomainValidator () extends StObject {
+  open class DomainValidator () extends StObject {
     def this(hasAllowLocal: AllowLocalBoolean) = this()
     
     def extractTld(domain: String): String | Null = js.native
@@ -35,7 +35,7 @@ object mod {
     * @param allowLocal   Should local addresses be considered valid? default = false
     * @param allowTld     Should TLDs be allowed? default = false
     */
-  class EmailValidator () extends StObject {
+  open class EmailValidator () extends StObject {
     def this(hasAllowLocalAllowTld: AllowLocal) = this()
     
     def isValid(email: String): Boolean = js.native

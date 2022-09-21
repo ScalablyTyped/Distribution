@@ -10,10 +10,10 @@ node bindings to the Gamepad library
 | ------------------ | :-------------: |
 | Full name          | gamepad |
 | Keywords           | gamepad, joystick |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 2127 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 154.33333333333334 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/creationix/node-gamepad)

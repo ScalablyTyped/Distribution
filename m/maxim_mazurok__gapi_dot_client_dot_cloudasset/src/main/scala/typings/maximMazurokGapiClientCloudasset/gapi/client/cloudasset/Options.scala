@@ -13,14 +13,16 @@ trait Options extends StObject {
     * account SA has permission P to a GCP folder F, then user A potentially has access to the GCP folder F. And those advanced analysis results will be included in
     * AnalyzeIamPolicyResponse.service_account_impersonation_analysis. Another example, if the request analyzes for who has permission P to a GCP folder F, and there's an IAM policy
     * states user A has iam.serviceAccounts.actAs permission to a service account SA, and there's another IAM policy states service account SA has permission P to the GCP folder F, then
-    * user A potentially has access to the GCP folder F. And those advanced analysis results will be included in AnalyzeIamPolicyResponse.service_account_impersonation_analysis. Default
-    * is false.
+    * user A potentially has access to the GCP folder F. And those advanced analysis results will be included in AnalyzeIamPolicyResponse.service_account_impersonation_analysis. Only the
+    * following permissions are considered in this analysis: * `iam.serviceAccounts.actAs` * `iam.serviceAccounts.signBlob` * `iam.serviceAccounts.signJwt` *
+    * `iam.serviceAccounts.getAccessToken` * `iam.serviceAccounts.getOpenIdToken` * `iam.serviceAccounts.implicitDelegation` Default is false.
     */
   var analyzeServiceAccountImpersonation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. If true, the identities section of the result will expand any Google groups appearing in an IAM policy binding. If IamPolicyAnalysisQuery.identity_selector is specified,
-    * the identity in the result will be determined by the selector, and this flag is not allowed to set. Default is false.
+    * the identity in the result will be determined by the selector, and this flag is not allowed to set. If true, the default max expansion per group is 1000 for
+    * AssetService.AnalyzeIamPolicy][]. Default is false.
     */
   var expandGroups: js.UndefOr[Boolean] = js.undefined
   
@@ -30,7 +32,8 @@ trait Options extends StObject {
     * folder, the results will also include resources in that folder with permission P. If true and IamPolicyAnalysisQuery.resource_selector is specified, the resource section of the
     * result will expand the specified resource to include resources lower in the resource hierarchy. Only project or lower resources are supported. Folder and organization resource
     * cannot be used together with this option. For example, if the request analyzes for which users have permission P on a GCP project with this option enabled, the results will include
-    * all users who have permission P on that project or any lower resource. Default is false.
+    * all users who have permission P on that project or any lower resource. If true, the default max expansion per resource is 1000 for AssetService.AnalyzeIamPolicy][] and 100000 for
+    * AssetService.AnalyzeIamPolicyLongrunning][]. Default is false.
     */
   var expandResources: js.UndefOr[Boolean] = js.undefined
   
@@ -40,10 +43,10 @@ trait Options extends StObject {
     */
   var expandRoles: js.UndefOr[Boolean] = js.undefined
   
-  /** Optional. If true, the result will output group identity edges, starting from the binding's group members, to any expanded identities. Default is false. */
+  /** Optional. If true, the result will output the relevant membership relationships between groups and other groups, and between groups and principals. Default is false. */
   var outputGroupEdges: js.UndefOr[Boolean] = js.undefined
   
-  /** Optional. If true, the result will output resource edges, starting from the policy attached resource, to any expanded resources. Default is false. */
+  /** Optional. If true, the result will output the relevant parent/child relationships between resources. Default is false. */
   var outputResourceEdges: js.UndefOr[Boolean] = js.undefined
 }
 object Options {

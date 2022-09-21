@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("lyric-parser", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Lyric {
     def this(lrc: String, handler: js.Function1[/* params */ LineNum, Unit]) = this()

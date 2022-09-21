@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "InputItem")
 @js.native
-class InputItem () extends default
+open class InputItem () extends default
 /* static members */
 object InputItem {
   

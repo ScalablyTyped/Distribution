@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A metric value representing a distribution.
-  */
 trait SchemaDistributionUpdate extends StObject {
   
   /**
@@ -30,15 +27,14 @@ trait SchemaDistributionUpdate extends StObject {
   var min: js.UndefOr[SchemaSplitInt64] = js.undefined
   
   /**
-    * Use an int64 since we&#39;d prefer the added precision. If overflow is a
-    * common problem we can detect it and use an additional int64 or a double.
+    * Use an int64 since we'd prefer the added precision. If overflow is a common problem we can detect it and use an additional int64 or a double.
     */
   var sum: js.UndefOr[SchemaSplitInt64] = js.undefined
   
   /**
     * Use a double since the sum of squares is likely to overflow int64.
     */
-  var sumOfSquares: js.UndefOr[Double] = js.undefined
+  var sumOfSquares: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaDistributionUpdate {
   
@@ -68,6 +64,8 @@ object SchemaDistributionUpdate {
     inline def setSum(value: SchemaSplitInt64): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     inline def setSumOfSquares(value: Double): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
+    
+    inline def setSumOfSquaresNull: Self = StObject.set(x, "sumOfSquares", null)
     
     inline def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
     

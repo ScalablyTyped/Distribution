@@ -43,14 +43,14 @@ object XPresentation2 {
     end: () => Unit,
     getController: () => XSlideShowController,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     isRunning: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     rehearseTimings: () => Unit,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    setPropertyValue: (String, js.Any) => Unit,
+    setPropertyValue: (String, Any) => Unit,
     start: () => Unit,
     startWithArguments: SeqEquiv[PropertyValue] => Unit
   ): XPresentation2 = {

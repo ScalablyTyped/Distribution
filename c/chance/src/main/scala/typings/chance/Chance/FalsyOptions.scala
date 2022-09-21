@@ -19,6 +19,6 @@ object FalsyOptions {
     
     inline def setPool(value: js.Array[FalsyType]): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    inline def setPoolVarargs(value: FalsyType*): Self = StObject.set(x, "pool", js.Array(value :_*))
+    inline def setPoolVarargs(value: FalsyType*): Self = StObject.set(x, "pool", js.Array(value*))
   }
 }

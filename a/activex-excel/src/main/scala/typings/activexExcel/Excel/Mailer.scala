@@ -10,18 +10,18 @@ trait Mailer extends StObject {
   
   val Application: typings.activexExcel.Excel.Application
   
-  var BCCRecipients: js.Any
+  var BCCRecipients: Any
   
-  var CCRecipients: js.Any
+  var CCRecipients: Any
   
   val Creator: XlCreator
   
-  var Enclosures: js.Any
+  var Enclosures: Any
   
   /* private */ @JSName("Excel.Mailer_typekey")
   var ExcelDotMailer_typekey: Mailer
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Received: Boolean
   
@@ -31,26 +31,26 @@ trait Mailer extends StObject {
   
   var Subject: String
   
-  var ToRecipients: js.Any
+  var ToRecipients: Any
   
-  var WhichAddress: js.Any
+  var WhichAddress: Any
 }
 object Mailer {
   
   inline def apply(
     Application: Application,
-    BCCRecipients: js.Any,
-    CCRecipients: js.Any,
+    BCCRecipients: Any,
+    CCRecipients: Any,
     Creator: XlCreator,
-    Enclosures: js.Any,
+    Enclosures: Any,
     ExcelDotMailer_typekey: Mailer,
-    Parent: js.Any,
+    Parent: Any,
     Received: Boolean,
     SendDateTime: VarDate,
     Sender: String,
     Subject: String,
-    ToRecipients: js.Any,
-    WhichAddress: js.Any
+    ToRecipients: Any,
+    WhichAddress: Any
   ): Mailer = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], BCCRecipients = BCCRecipients.asInstanceOf[js.Any], CCRecipients = CCRecipients.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Enclosures = Enclosures.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Received = Received.asInstanceOf[js.Any], SendDateTime = SendDateTime.asInstanceOf[js.Any], Sender = Sender.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], ToRecipients = ToRecipients.asInstanceOf[js.Any], WhichAddress = WhichAddress.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.Mailer_typekey")(ExcelDotMailer_typekey.asInstanceOf[js.Any])
@@ -61,17 +61,17 @@ object Mailer {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setBCCRecipients(value: js.Any): Self = StObject.set(x, "BCCRecipients", value.asInstanceOf[js.Any])
+    inline def setBCCRecipients(value: Any): Self = StObject.set(x, "BCCRecipients", value.asInstanceOf[js.Any])
     
-    inline def setCCRecipients(value: js.Any): Self = StObject.set(x, "CCRecipients", value.asInstanceOf[js.Any])
+    inline def setCCRecipients(value: Any): Self = StObject.set(x, "CCRecipients", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setEnclosures(value: js.Any): Self = StObject.set(x, "Enclosures", value.asInstanceOf[js.Any])
+    inline def setEnclosures(value: Any): Self = StObject.set(x, "Enclosures", value.asInstanceOf[js.Any])
     
     inline def setExcelDotMailer_typekey(value: Mailer): Self = StObject.set(x, "Excel.Mailer_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReceived(value: Boolean): Self = StObject.set(x, "Received", value.asInstanceOf[js.Any])
     
@@ -81,8 +81,8 @@ object Mailer {
     
     inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    inline def setToRecipients(value: js.Any): Self = StObject.set(x, "ToRecipients", value.asInstanceOf[js.Any])
+    inline def setToRecipients(value: Any): Self = StObject.set(x, "ToRecipients", value.asInstanceOf[js.Any])
     
-    inline def setWhichAddress(value: js.Any): Self = StObject.set(x, "WhichAddress", value.asInstanceOf[js.Any])
+    inline def setWhichAddress(value: Any): Self = StObject.set(x, "WhichAddress", value.asInstanceOf[js.Any])
   }
 }

@@ -9,7 +9,7 @@ object clipboardEventsMod {
   
   @JSImport("babylonjs/Events/clipboardEvents", "ClipboardEventTypes")
   @js.native
-  class ClipboardEventTypes () extends StObject
+  open class ClipboardEventTypes () extends StObject
   /* static members */
   object ClipboardEventTypes {
     
@@ -37,7 +37,7 @@ object clipboardEventsMod {
   
   @JSImport("babylonjs/Events/clipboardEvents", "ClipboardInfo")
   @js.native
-  class ClipboardInfo protected () extends StObject {
+  open class ClipboardInfo protected () extends StObject {
     /**
       *Creates an instance of ClipboardInfo.
       * @param type Defines the type of event (BABYLON.ClipboardEventTypes)
@@ -74,7 +74,7 @@ object clipboardEventsMod {
     /**
       *  Get the clipboard event's type from the keycode.
       * @param keyCode Defines the keyCode for the current keyboard event.
-      * @return {number}
+      * @returns {number}
       */
     inline def GetTypeFromCharacter(keyCode: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTypeFromCharacter")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Double]
   }

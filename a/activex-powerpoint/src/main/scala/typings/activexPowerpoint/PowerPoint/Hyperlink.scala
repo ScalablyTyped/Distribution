@@ -22,7 +22,7 @@ trait Hyperlink extends StObject {
   
   def Follow(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Hyperlink_typekey")
   var PowerPointDotHyperlink_typekey: Hyperlink
@@ -47,7 +47,7 @@ object Hyperlink {
     Delete: () => Unit,
     EmailSubject: String,
     Follow: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotHyperlink_typekey: Hyperlink,
     ScreenTip: String,
     ShowAndReturn: MsoTriState,
@@ -76,7 +76,7 @@ object Hyperlink {
     
     inline def setFollow(value: () => Unit): Self = StObject.set(x, "Follow", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotHyperlink_typekey(value: Hyperlink): Self = StObject.set(x, "PowerPoint.Hyperlink_typekey", value.asInstanceOf[js.Any])
     

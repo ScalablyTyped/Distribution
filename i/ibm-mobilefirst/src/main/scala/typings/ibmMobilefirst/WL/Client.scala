@@ -9,9 +9,9 @@ object Client {
   
   trait AbstractChallengeHandler extends StObject {
     
-    def handleChallenge(challenge: js.Any): Boolean
+    def handleChallenge(challenge: Any): Boolean
     
-    def isCustomResponse(transport: js.Any): Boolean
+    def isCustomResponse(transport: Any): Boolean
     
     def submitAdapterAuthentication(invocationData: ChallengehandlerInvocationData, options: ChallengeHandlerAuthenticationOptions): Unit
     
@@ -20,7 +20,7 @@ object Client {
     def submitLoginForm(
       reqURL: String,
       options: ChallengeHandlerSubmitLoginFormOptions,
-      submitLoginFormCallback: js.Function1[/* transport */ js.Any, Unit]
+      submitLoginFormCallback: js.Function1[/* transport */ Any, Unit]
     ): Unit
     
     def submitSuccess(): Unit
@@ -28,11 +28,11 @@ object Client {
   object AbstractChallengeHandler {
     
     inline def apply(
-      handleChallenge: js.Any => Boolean,
-      isCustomResponse: js.Any => Boolean,
+      handleChallenge: Any => Boolean,
+      isCustomResponse: Any => Boolean,
       submitAdapterAuthentication: (ChallengehandlerInvocationData, ChallengeHandlerAuthenticationOptions) => Unit,
       submitFailure: String => Unit,
-      submitLoginForm: (String, ChallengeHandlerSubmitLoginFormOptions, js.Function1[/* transport */ js.Any, Unit]) => Unit,
+      submitLoginForm: (String, ChallengeHandlerSubmitLoginFormOptions, js.Function1[/* transport */ Any, Unit]) => Unit,
       submitSuccess: () => Unit
     ): AbstractChallengeHandler = {
       val __obj = js.Dynamic.literal(handleChallenge = js.Any.fromFunction1(handleChallenge), isCustomResponse = js.Any.fromFunction1(isCustomResponse), submitAdapterAuthentication = js.Any.fromFunction2(submitAdapterAuthentication), submitFailure = js.Any.fromFunction1(submitFailure), submitLoginForm = js.Any.fromFunction3(submitLoginForm), submitSuccess = js.Any.fromFunction0(submitSuccess))
@@ -41,16 +41,16 @@ object Client {
     
     extension [Self <: AbstractChallengeHandler](x: Self) {
       
-      inline def setHandleChallenge(value: js.Any => Boolean): Self = StObject.set(x, "handleChallenge", js.Any.fromFunction1(value))
+      inline def setHandleChallenge(value: Any => Boolean): Self = StObject.set(x, "handleChallenge", js.Any.fromFunction1(value))
       
-      inline def setIsCustomResponse(value: js.Any => Boolean): Self = StObject.set(x, "isCustomResponse", js.Any.fromFunction1(value))
+      inline def setIsCustomResponse(value: Any => Boolean): Self = StObject.set(x, "isCustomResponse", js.Any.fromFunction1(value))
       
       inline def setSubmitAdapterAuthentication(value: (ChallengehandlerInvocationData, ChallengeHandlerAuthenticationOptions) => Unit): Self = StObject.set(x, "submitAdapterAuthentication", js.Any.fromFunction2(value))
       
       inline def setSubmitFailure(value: String => Unit): Self = StObject.set(x, "submitFailure", js.Any.fromFunction1(value))
       
       inline def setSubmitLoginForm(
-        value: (String, ChallengeHandlerSubmitLoginFormOptions, js.Function1[/* transport */ js.Any, Unit]) => Unit
+        value: (String, ChallengeHandlerSubmitLoginFormOptions, js.Function1[/* transport */ Any, Unit]) => Unit
       ): Self = StObject.set(x, "submitLoginForm", js.Any.fromFunction3(value))
       
       inline def setSubmitSuccess(value: () => Unit): Self = StObject.set(x, "submitSuccess", js.Any.fromFunction0(value))
@@ -94,13 +94,13 @@ object Client {
     
     var adapter: String
     
-    var parameters: js.Array[js.Any]
+    var parameters: js.Array[Any]
     
     var procedure: String
   }
   object ChallengehandlerInvocationData {
     
-    inline def apply(adapter: String, parameters: js.Array[js.Any], procedure: String): ChallengehandlerInvocationData = {
+    inline def apply(adapter: String, parameters: js.Array[Any], procedure: String): ChallengehandlerInvocationData = {
       val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChallengehandlerInvocationData]
     }
@@ -109,9 +109,9 @@ object Client {
       
       inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      inline def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      inline def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: Any*): Self = StObject.set(x, "parameters", js.Array(value*))
       
       inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     }
@@ -202,7 +202,7 @@ object Client {
     
     var onErrorRemoteDisableDenial: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
-    def onGetCustomDeviceProvisioningProperties(resumeDeviceProvisioningProcess: js.Function1[/* data */ js.Any, Unit]): Unit
+    def onGetCustomDeviceProvisioningProperties(resumeDeviceProvisioningProcess: js.Function1[/* data */ Any, Unit]): Unit
     
     var onRequestTimeout: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
@@ -218,7 +218,7 @@ object Client {
   }
   object InitOptions {
     
-    inline def apply(onGetCustomDeviceProvisioningProperties: js.Function1[/* data */ js.Any, Unit] => Unit): InitOptions = {
+    inline def apply(onGetCustomDeviceProvisioningProperties: js.Function1[/* data */ Any, Unit] => Unit): InitOptions = {
       val __obj = js.Dynamic.literal(onGetCustomDeviceProvisioningProperties = js.Any.fromFunction1(onGetCustomDeviceProvisioningProperties))
       __obj.asInstanceOf[InitOptions]
     }
@@ -265,7 +265,7 @@ object Client {
       
       inline def setOnErrorRemoteDisableDenialUndefined: Self = StObject.set(x, "onErrorRemoteDisableDenial", js.undefined)
       
-      inline def setOnGetCustomDeviceProvisioningProperties(value: js.Function1[/* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "onGetCustomDeviceProvisioningProperties", js.Any.fromFunction1(value))
+      inline def setOnGetCustomDeviceProvisioningProperties(value: js.Function1[/* data */ Any, Unit] => Unit): Self = StObject.set(x, "onGetCustomDeviceProvisioningProperties", js.Any.fromFunction1(value))
       
       inline def setOnRequestTimeout(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onRequestTimeout", js.Any.fromFunction1(value))
       
@@ -299,7 +299,7 @@ object Client {
     
     var compressResponse: js.UndefOr[Boolean] = js.undefined
     
-    var parameters: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var parameters: js.UndefOr[js.Array[Any]] = js.undefined
     
     var procedure: String
   }
@@ -318,11 +318,11 @@ object Client {
       
       inline def setCompressResponseUndefined: Self = StObject.set(x, "compressResponse", js.undefined)
       
-      inline def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      inline def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: Any*): Self = StObject.set(x, "parameters", js.Array(value*))
       
       inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     }
@@ -371,7 +371,7 @@ object Client {
       
       inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
     }
@@ -383,18 +383,18 @@ object Client {
     
     var invocationResult: js.UndefOr[ProcedureInvocationResult] = js.undefined
     
-    var parameters: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var parameters: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object ProcedureResponse {
     
     inline def apply(
       errorCode: Double,
       errorMsg: String,
-      headerJSON: StringDictionary[js.Any],
-      invocationContext: js.Any,
+      headerJSON: StringDictionary[Any],
+      invocationContext: Any,
       readyState: Double,
-      request: js.Any,
-      responseJSON: StringDictionary[js.Any],
+      request: Any,
+      responseJSON: StringDictionary[Any],
       responseText: String,
       responseXML: String,
       status: Double,
@@ -410,11 +410,11 @@ object Client {
       
       inline def setInvocationResultUndefined: Self = StObject.set(x, "invocationResult", js.undefined)
       
-      inline def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      inline def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: Any*): Self = StObject.set(x, "parameters", js.Array(value*))
     }
   }
   

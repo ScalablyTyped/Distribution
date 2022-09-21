@@ -7,12 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceResponse extends StObject {
   
   /**
-    * A comma-separated list of tag key:value pairs. For example: 
-    {
-    "Key1": "Value1",
-    "Key2": "Value2"
-    }
-    
+    * A comma-separated list of tag key:value pairs.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
 }

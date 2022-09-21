@@ -26,14 +26,14 @@ trait XInitialization
     *
     * It should be called directly after the object is created.
     */
-  def initialize(aArguments: SeqEquiv[js.Any]): Unit
+  def initialize(aArguments: SeqEquiv[Any]): Unit
 }
 object XInitialization {
   
   inline def apply(
     acquire: () => Unit,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XInitialization = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -42,6 +42,6 @@ object XInitialization {
   
   extension [Self <: XInitialization](x: Self) {
     
-    inline def setInitialize(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: SeqEquiv[Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
   }
 }

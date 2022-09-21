@@ -8,7 +8,7 @@ object inboundRuleMod {
   
   @JSImport("postmark/dist/client/models/triggers/InboundRule", "CreateInboundRuleRequest")
   @js.native
-  class CreateInboundRuleRequest protected () extends StObject {
+  open class CreateInboundRuleRequest protected () extends StObject {
     def this(Rule: String) = this()
     
     var Rule: String = js.native
@@ -52,7 +52,7 @@ object inboundRuleMod {
       
       inline def setInboundRules(value: js.Array[InboundRule]): Self = StObject.set(x, "InboundRules", value.asInstanceOf[js.Any])
       
-      inline def setInboundRulesVarargs(value: InboundRule*): Self = StObject.set(x, "InboundRules", js.Array(value :_*))
+      inline def setInboundRulesVarargs(value: InboundRule*): Self = StObject.set(x, "InboundRules", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }

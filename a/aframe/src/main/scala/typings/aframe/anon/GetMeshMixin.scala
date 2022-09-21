@@ -12,13 +12,13 @@ trait GetMeshMixin extends StObject {
   
   def getMeshMixin(): DefaultComponents
   
-  var primitives: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]]
+  var primitives: ObjectMap[Entity[ObjectMap[Component[Any, System[Any]]]]]
 }
 object GetMeshMixin {
   
   inline def apply(
     getMeshMixin: () => DefaultComponents,
-    primitives: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]]
+    primitives: ObjectMap[Entity[ObjectMap[Component[Any, System[Any]]]]]
   ): GetMeshMixin = {
     val __obj = js.Dynamic.literal(getMeshMixin = js.Any.fromFunction0(getMeshMixin), primitives = primitives.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMeshMixin]
@@ -28,6 +28,6 @@ object GetMeshMixin {
     
     inline def setGetMeshMixin(value: () => DefaultComponents): Self = StObject.set(x, "getMeshMixin", js.Any.fromFunction0(value))
     
-    inline def setPrimitives(value: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]]): Self = StObject.set(x, "primitives", value.asInstanceOf[js.Any])
+    inline def setPrimitives(value: ObjectMap[Entity[ObjectMap[Component[Any, System[Any]]]]]): Self = StObject.set(x, "primitives", value.asInstanceOf[js.Any])
   }
 }

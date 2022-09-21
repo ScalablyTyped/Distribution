@@ -10,10 +10,10 @@ A PNG decoder fully written in JavaScript
 | ------------------ | :-------------: |
 | Full name          | png.js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 160799 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14154.333333333334 |
+| # stars            | 159.0 |
 
 ## Links
 - [Homepage](https://github.com/arian/pngjs)

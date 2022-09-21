@@ -1,8 +1,6 @@
 package typings.tensorflowTfjsCore
 
-import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
-import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +17,7 @@ object nonMaxSuppressionImplMod {
     maxOutputSize: Double,
     iouThreshold: Double,
     scoreThreshold: Double
-  ): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV3Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  ): NonMaxSuppressionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV3Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[NonMaxSuppressionResult]
   
   inline def nonMaxSuppressionV4Impl(
     boxes: TypedArray,
@@ -28,7 +26,7 @@ object nonMaxSuppressionImplMod {
     iouThreshold: Double,
     scoreThreshold: Double,
     padToMaxOutputSize: Boolean
-  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV4Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  ): NonMaxSuppressionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV4Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[NonMaxSuppressionResult]
   
   inline def nonMaxSuppressionV5Impl(
     boxes: TypedArray,
@@ -37,5 +35,38 @@ object nonMaxSuppressionImplMod {
     iouThreshold: Double,
     scoreThreshold: Double,
     softNmsSigma: Double
-  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV5Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], softNmsSigma.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  ): NonMaxSuppressionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV5Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], softNmsSigma.asInstanceOf[js.Any])).asInstanceOf[NonMaxSuppressionResult]
+  
+  trait NonMaxSuppressionResult extends StObject {
+    
+    var selectedIndices: js.Array[Double]
+    
+    var selectedScores: js.UndefOr[js.Array[Double]] = js.undefined
+    
+    var validOutputs: js.UndefOr[Double] = js.undefined
+  }
+  object NonMaxSuppressionResult {
+    
+    inline def apply(selectedIndices: js.Array[Double]): NonMaxSuppressionResult = {
+      val __obj = js.Dynamic.literal(selectedIndices = selectedIndices.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NonMaxSuppressionResult]
+    }
+    
+    extension [Self <: NonMaxSuppressionResult](x: Self) {
+      
+      inline def setSelectedIndices(value: js.Array[Double]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedIndicesVarargs(value: Double*): Self = StObject.set(x, "selectedIndices", js.Array(value*))
+      
+      inline def setSelectedScores(value: js.Array[Double]): Self = StObject.set(x, "selectedScores", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedScoresUndefined: Self = StObject.set(x, "selectedScores", js.undefined)
+      
+      inline def setSelectedScoresVarargs(value: Double*): Self = StObject.set(x, "selectedScores", js.Array(value*))
+      
+      inline def setValidOutputs(value: Double): Self = StObject.set(x, "validOutputs", value.asInstanceOf[js.Any])
+      
+      inline def setValidOutputsUndefined: Self = StObject.set(x, "validOutputs", js.undefined)
+    }
+  }
 }

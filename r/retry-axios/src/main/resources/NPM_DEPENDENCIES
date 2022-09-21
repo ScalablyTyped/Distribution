@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "retry-axios" : "0.3.2"
+      "retry-axios" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "retry-axios" : "0.3.2"
+      "retry-axios" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

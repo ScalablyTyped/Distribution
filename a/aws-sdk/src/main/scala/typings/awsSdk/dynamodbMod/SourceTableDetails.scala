@@ -34,7 +34,7 @@ trait SourceTableDetails extends StObject {
   /**
     * Time when the source table was created. 
     */
-  var TableCreationDateTime: typings.awsSdk.dynamodbMod.TableCreationDateTime
+  var TableCreationDateTime: js.Date
   
   /**
     * Unique identifier for the table for which the backup was created. 
@@ -56,7 +56,7 @@ object SourceTableDetails {
   inline def apply(
     KeySchema: KeySchema,
     ProvisionedThroughput: ProvisionedThroughput,
-    TableCreationDateTime: TableCreationDateTime,
+    TableCreationDateTime: js.Date,
     TableId: TableId,
     TableName: TableName
   ): SourceTableDetails = {
@@ -76,7 +76,7 @@ object SourceTableDetails {
     
     inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
-    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
     
     inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
@@ -84,7 +84,7 @@ object SourceTableDetails {
     
     inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
     
-    inline def setTableCreationDateTime(value: TableCreationDateTime): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
+    inline def setTableCreationDateTime(value: js.Date): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
     
     inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
     

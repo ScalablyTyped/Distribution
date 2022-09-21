@@ -1,7 +1,7 @@
 
 # Scala.js typings for nanoid-dictionary
 
-Typings are for version 4.1
+Typings are for version 4.2
 
 ## Library description:
 Predefined character sets to use with nanoid
@@ -10,10 +10,10 @@ Predefined character sets to use with nanoid
 | ------------------ | :-------------: |
 | Full name          | nanoid-dictionary |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 151705 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 129672.0 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/CyberAP/nanoid-dictionary#readme)

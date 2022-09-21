@@ -1,60 +1,37 @@
 package typings.waitForLocalhost
 
+import typings.waitForLocalhost.anon.IpVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  	Wait for localhost to be ready.
-  	@example
-  	```
-  	import waitForLocalhost = require('wait-for-localhost');
-  	(async () => {
-  		await waitForLocalhost({port: 8080});
-  		console.log('Server is ready');
-  	})();
-  	```
-  	 */
-  inline def apply(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Unit]]
-  inline def apply(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  
   @JSImport("wait-for-localhost", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function waitForLocalhost(
-  // 	options?: waitForLocalhost.Options
-  // ): Promise<void>;
-  // export = waitForLocalhost;
-  @JSImport("wait-for-localhost", "default")
-  @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof waitForLocalhost */ js.Any = js.native
-  inline def default_=(
-    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof waitForLocalhost */ js.Any
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(): js.Promise[IpVersion] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[IpVersion]]
+  inline def default(options: Options): js.Promise[IpVersion] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IpVersion]]
   
   trait Options extends StObject {
     
     /**
-    		Use a custom path.
-    		
-    		For example, `/health` for a health-check endpoint.
-    		@default '/'
-    		*/
+    	Use a custom path.
+    	For example, `/health` for a health-check endpoint.
+    	@default '/'
+    	*/
     var path: js.UndefOr[String] = js.undefined
     
     /**
-    		@default 80
-    		*/
+    	@default 80
+    	*/
     var port: js.UndefOr[Double] = js.undefined
     
     /**
-    		Use the `GET` HTTP-method instead of `HEAD` to check if the server is running.
-    		@default false
-    		*/
+    	Use the `GET` HTTP-method instead of `HEAD` to check if the server is running.
+    	@default false
+    	*/
     var useGet: js.UndefOr[Boolean] = js.undefined
   }
   object Options {

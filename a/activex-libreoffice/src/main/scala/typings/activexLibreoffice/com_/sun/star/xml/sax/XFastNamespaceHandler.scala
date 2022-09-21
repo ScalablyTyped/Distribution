@@ -20,7 +20,7 @@ object XFastNamespaceHandler {
   inline def apply(
     acquire: () => Unit,
     getNamespaceURI: String => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerNamespace: (String, String) => Unit,
     release: () => Unit
   ): XFastNamespaceHandler = {

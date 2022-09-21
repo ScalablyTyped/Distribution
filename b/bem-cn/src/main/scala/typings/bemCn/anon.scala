@@ -1,6 +1,5 @@
 package typings.bemCn
 
-import typings.bemCn.mod._BemMix
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -52,7 +51,5 @@ object anon {
     }
   }
   
-  trait ToString
-    extends StObject
-       with _BemMix
+  trait ToString extends StObject
 }

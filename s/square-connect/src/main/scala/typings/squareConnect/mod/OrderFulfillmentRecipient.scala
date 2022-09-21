@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderFulfillmentRecipient")
 @js.native
-class OrderFulfillmentRecipient () extends StObject {
+open class OrderFulfillmentRecipient () extends StObject {
   
   /**
     * The address of the fulfillment recipient.

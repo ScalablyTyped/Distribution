@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewBatchEditCardValidatingEventArgs")
 @js.native
-class ASPxClientCardViewBatchEditCardValidatingEventArgs protected ()
+open class ASPxClientCardViewBatchEditCardValidatingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewBatchEditCardValidatingEventArgs {
   /**
@@ -17,13 +17,13 @@ class ASPxClientCardViewBatchEditCardValidatingEventArgs protected ()
     * @param visibleIndex An integer value that specifies the processed card's visible index.
     * @param validationInfo An object containing validation information.
     */
-  def this(visibleIndex: Double, validationInfo: js.Any) = this()
+  def this(visibleIndex: Double, validationInfo: Any) = this()
   
   /**
     * Provides validation information of a card currently being validated.
     */
   /* CompleteClass */
-  var validationInfo: js.Any = js.native
+  var validationInfo: Any = js.native
   
   /**
     * Gets the processed card's visible index.

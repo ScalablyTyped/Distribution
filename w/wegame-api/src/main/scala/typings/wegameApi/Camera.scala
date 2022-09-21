@@ -92,12 +92,7 @@ trait Camera extends StObject {
     * @param quality 图片质量
     */
   def takePhoto(): js.Promise[Height] = js.native
-  @JSName("takePhoto")
-  def takePhoto_high(quality: high): js.Promise[Height] = js.native
-  @JSName("takePhoto")
-  def takePhoto_low(quality: low): js.Promise[Height] = js.native
-  @JSName("takePhoto")
-  def takePhoto_normal(quality: normal): js.Promise[Height] = js.native
+  def takePhoto(quality: high | normal | low): js.Promise[Height] = js.native
   
   /**
     * 相机的宽度

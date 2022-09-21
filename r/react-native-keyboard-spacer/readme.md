@@ -11,9 +11,9 @@ Plug and play react-Native keyboard spacer view.
 | Full name          | react-native-keyboard-spacer |
 | Keywords           | react-component, react-native, ios, keyboard, spacer |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 983344 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 74403.66666666667 |
+| # stars            | 1491.0 |
 
 ## Links
 - [Homepage](https://github.com/Andr3wHur5t/react-native-keyboard-spacer#readme)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateOutputFileStampsProject
   extends StObject
      with InvalidatedProjectBase
-     with InvalidatedProject[js.Any] {
+     with InvalidatedProject[Any] {
   
   @JSName("kind")
   val kind_UpdateOutputFileStampsProject: UpdateOutputFileStamps = js.native

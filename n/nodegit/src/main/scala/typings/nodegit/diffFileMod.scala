@@ -9,7 +9,7 @@ object diffFileMod {
   
   @JSImport("nodegit/diff-file", "DiffFile")
   @js.native
-  class DiffFile () extends StObject {
+  open class DiffFile () extends StObject {
     
     /**
       * Returns the file's flags

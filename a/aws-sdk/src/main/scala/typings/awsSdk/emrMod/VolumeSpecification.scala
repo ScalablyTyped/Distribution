@@ -17,7 +17,12 @@ trait VolumeSpecification extends StObject {
   var SizeInGB: Integer
   
   /**
-    * The volume type. Volume types supported are gp2, io1, standard.
+    * The throughput, in mebibyte per second (MiB/s). This optional parameter can be a number from 125 - 1000 and is valid only for gp3 volumes.
+    */
+  var Throughput: js.UndefOr[ThroughputVal] = js.undefined
+  
+  /**
+    * The volume type. Volume types supported are gp2, io1, and standard.
     */
   var VolumeType: String
 }
@@ -35,6 +40,10 @@ object VolumeSpecification {
     inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
     inline def setSizeInGB(value: Integer): Self = StObject.set(x, "SizeInGB", value.asInstanceOf[js.Any])
+    
+    inline def setThroughput(value: ThroughputVal): Self = StObject.set(x, "Throughput", value.asInstanceOf[js.Any])
+    
+    inline def setThroughputUndefined: Self = StObject.set(x, "Throughput", js.undefined)
     
     inline def setVolumeType(value: String): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
   }

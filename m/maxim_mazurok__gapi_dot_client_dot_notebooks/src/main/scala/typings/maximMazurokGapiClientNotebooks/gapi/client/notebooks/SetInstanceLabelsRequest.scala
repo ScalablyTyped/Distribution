@@ -11,7 +11,7 @@ trait SetInstanceLabelsRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.SetInstanceLabelsRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.SetInstanceLabelsRequest & TopLevel[Any]
   ] = js.undefined
 }
 object SetInstanceLabelsRequest {
@@ -26,7 +26,7 @@ object SetInstanceLabelsRequest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.SetInstanceLabelsRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.SetInstanceLabelsRequest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

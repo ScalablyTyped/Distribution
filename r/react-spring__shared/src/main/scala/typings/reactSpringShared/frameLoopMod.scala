@@ -1,50 +1,39 @@
 package typings.reactSpringShared
 
-import typings.reactSpringShared.typesMod.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object frameLoopMod {
   
-  @JSImport("@react-spring/shared/cjs/FrameLoop", "FrameLoop")
-  @js.native
-  class FrameLoop () extends StObject {
-    def this(raf: RequestFrameFn) = this()
+  object frameLoop {
     
-    /* protected */ var _animations: js.Array[OpaqueAnimation] = js.native
+    @JSImport("@react-spring/shared/dist/declarations/src/FrameLoop", "frameLoop")
+    @js.native
+    val ^ : js.Any = js.native
     
-    /* protected */ def _dispose(): Unit = js.native
-    
-    /**
-      * Advance the animations to the current time.
-      */
-    def advance(): Unit = js.native
+    /** Advance all animations by the given time. */
+    @JSImport("@react-spring/shared/dist/declarations/src/FrameLoop", "frameLoop.advance")
+    @js.native
+    def advance: js.Function1[/* dt */ Double, Boolean] = js.native
+    inline def advance_=(x: js.Function1[/* dt */ Double, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("advance")(x.asInstanceOf[js.Any])
     
     /**
-      * Execute a function once after all animations have updated.
-      */
-    def onFrame(cb: FrameRequestCallback): Unit = js.native
-    
-    /**
-      * Execute a function once at the very end of the current frame.
+      * Clear all animations. For testing purposes.
       *
-      * Only call this within an `onFrame` callback.
+      * ☠️ Never call this from within the frameloop.
       */
-    def onWrite(cb: FrameRequestCallback): Unit = js.native
+    inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
-    /**
-      * Invoke the given `handler` on the soonest frame after the given
-      * `ms` delay is completed. When the delay is `<= 0`, the handler is
-      * invoked immediately.
-      */
-    def setTimeout(handler: js.Function0[Unit], ms: Double): Timeout = js.native
+    @JSImport("@react-spring/shared/dist/declarations/src/FrameLoop", "frameLoop.idle")
+    @js.native
+    val idle: Boolean = js.native
     
-    /**
-      * Start a new animation, or reorder an active animation in
-      * the animations array in response to a priority change.
-      */
-    def start(animation: OpaqueAnimation): Unit = js.native
+    /** Call this when an animation's priority changes. */
+    inline def sort(animation: OpaqueAnimation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(animation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /** Advance the given animation on every frame until idle. */
+    inline def start(animation: OpaqueAnimation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(animation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait OpaqueAnimation extends StObject {
@@ -69,33 +58,6 @@ object frameLoopMod {
       inline def setIdle(value: Boolean): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type RequestFrameFn = js.Function1[/* cb */ FrameRequestCallback, Double | Unit]
-  
-  trait Timeout extends StObject {
-    
-    def cancel(): Unit
-    
-    def handler(): Unit
-    
-    var time: Double
-  }
-  object Timeout {
-    
-    inline def apply(cancel: () => Unit, handler: () => Unit, time: Double): Timeout = {
-      val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), handler = js.Any.fromFunction0(handler), time = time.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Timeout]
-    }
-    
-    extension [Self <: Timeout](x: Self) {
-      
-      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
-      
-      inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
-      
-      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VideoPreprocessor extends StObject {
   
   /**
-    * Enable the Color corrector (ColorCorrector) feature if necessary. Enable or disable this feature for each output individually. This setting is disabled by default.
+    * Use these settings to convert the color space or to modify properties such as hue and contrast for this output. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/converting-the-color-space.html.
     */
   var ColorCorrector: js.UndefOr[typings.awsSdk.mediaconvertMod.ColorCorrector] = js.undefined
   
   /**
-    * Use Deinterlacer (Deinterlacer) to produce smoother motion and a clearer picture.
+    * Use the deinterlacer to produce smoother motion and a clearer picture. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-scan-type.html.
     */
   var Deinterlacer: js.UndefOr[typings.awsSdk.mediaconvertMod.Deinterlacer] = js.undefined
   
@@ -20,6 +20,11 @@ trait VideoPreprocessor extends StObject {
     * Enable Dolby Vision feature to produce Dolby Vision compatible video output.
     */
   var DolbyVision: js.UndefOr[typings.awsSdk.mediaconvertMod.DolbyVision] = js.undefined
+  
+  /**
+    * Enable HDR10+ analyis and metadata injection. Compatible with HEVC only.
+    */
+  var Hdr10Plus: js.UndefOr[typings.awsSdk.mediaconvertMod.Hdr10Plus] = js.undefined
   
   /**
     * Enable the Image inserter (ImageInserter) feature to include a graphic overlay on your video. Enable or disable this feature for each output individually. This setting is disabled by default.
@@ -37,7 +42,7 @@ trait VideoPreprocessor extends StObject {
   var PartnerWatermarking: js.UndefOr[typings.awsSdk.mediaconvertMod.PartnerWatermarking] = js.undefined
   
   /**
-    * Timecode burn-in (TimecodeBurnIn)--Burns the output timecode and specified prefix into the output.
+    * Settings for burning the output timecode and specified prefix into the output.
     */
   var TimecodeBurnin: js.UndefOr[typings.awsSdk.mediaconvertMod.TimecodeBurnin] = js.undefined
 }
@@ -61,6 +66,10 @@ object VideoPreprocessor {
     inline def setDolbyVision(value: DolbyVision): Self = StObject.set(x, "DolbyVision", value.asInstanceOf[js.Any])
     
     inline def setDolbyVisionUndefined: Self = StObject.set(x, "DolbyVision", js.undefined)
+    
+    inline def setHdr10Plus(value: Hdr10Plus): Self = StObject.set(x, "Hdr10Plus", value.asInstanceOf[js.Any])
+    
+    inline def setHdr10PlusUndefined: Self = StObject.set(x, "Hdr10Plus", js.undefined)
     
     inline def setImageInserter(value: ImageInserter): Self = StObject.set(x, "ImageInserter", value.asInstanceOf[js.Any])
     

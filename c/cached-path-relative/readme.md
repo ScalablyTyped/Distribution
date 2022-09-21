@@ -10,15 +10,12 @@ Memoize the results of the path.relative function
 | ------------------ | :-------------: |
 | Full name          | cached-path-relative |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 78 |
-| # downloads        | 34978495 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5993720.0 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/ashaffer/cached-path-relative#readme)
-- [Bugs](https://github.com/ashaffer/cached-path-relative/issues)
-- [Repository](https://github.com/ashaffer/cached-path-relative)
 - [Npm](https://www.npmjs.com/package/cached-path-relative)
     
 

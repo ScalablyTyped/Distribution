@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.driveactivity" : "2.0.20201118"
+      "@maxim_mazurok/gapi.client.driveactivity" : "2.0.20220810"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.driveactivity" : "2.0.20201118"
+      "@maxim_mazurok/gapi.client.driveactivity" : "2.0.20220810"
     }
   ],
   "compile-devDependencies" : [

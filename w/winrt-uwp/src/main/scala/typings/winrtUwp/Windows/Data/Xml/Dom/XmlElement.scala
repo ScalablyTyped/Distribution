@@ -43,7 +43,7 @@ trait XmlElement extends StObject {
     * @param localName The name of the attribute without the namespace prefix.
     * @return The string value of the attribute.
     */
-  def getAttributeNS(namespaceUri: js.Any, localName: String): String
+  def getAttributeNS(namespaceUri: Any, localName: String): String
   
   /**
     * Returns the attribute node.
@@ -58,7 +58,7 @@ trait XmlElement extends StObject {
     * @param localName The name of the attribute without the namespace prefix.
     * @return The returned attribute pointer.
     */
-  def getAttributeNodeNS(namespaceUri: js.Any, localName: String): XmlAttribute
+  def getAttributeNodeNS(namespaceUri: Any, localName: String): XmlAttribute
   
   /**
     * Returns a list of all descendant elements that match the supplied name.
@@ -94,10 +94,10 @@ trait XmlElement extends StObject {
   var lastChild: IXmlNode
   
   /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
-  var localName: js.Any
+  var localName: Any
   
   /** Returns the Uniform Resource Identifier (URI) for the namespace. */
-  var namespaceUri: js.Any
+  var namespaceUri: Any
   
   /** Gets the next sibling of the node in the parent's child list. */
   var nextSibling: IXmlNode
@@ -109,7 +109,7 @@ trait XmlElement extends StObject {
   var nodeType: NodeType
   
   /** Gets or sets the text associated with the node. */
-  var nodeValue: js.Any
+  var nodeValue: Any
   
   /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
   def normalize(): Unit
@@ -121,7 +121,7 @@ trait XmlElement extends StObject {
   var parentNode: IXmlNode
   
   /** Gets or sets the namespace prefix. */
-  var prefix: js.Any
+  var prefix: Any
   
   /** Gets the previous sibling of the node in the parent's child list. */
   var previousSibling: IXmlNode
@@ -137,7 +137,7 @@ trait XmlElement extends StObject {
     * @param namespaceUri The namespace of attribute to be removed.
     * @param localName The name of the attribute without the namespace prefix.
     */
-  def removeAttributeNS(namespaceUri: js.Any, localName: String): Unit
+  def removeAttributeNS(namespaceUri: Any, localName: String): Unit
   
   /**
     * Removes the specified attribute from this element.
@@ -174,7 +174,7 @@ trait XmlElement extends StObject {
     * @param namespaces Contains a string that specifies namespaces for use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
     */
-  def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList
+  def selectNodesNS(xpath: String, namespaces: Any): XmlNodeList
   
   /**
     * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -189,7 +189,7 @@ trait XmlElement extends StObject {
     * @param namespaces Contains a string that specifies the namespaces to use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
     */
-  def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode
+  def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode
   
   /**
     * Sets the value of the named attribute.
@@ -204,7 +204,7 @@ trait XmlElement extends StObject {
     * @param qualifiedName The name of the attribute being set.
     * @param value The new value for the attribute.
     */
-  def setAttributeNS(namespaceUri: js.Any, qualifiedName: String, value: String): Unit
+  def setAttributeNS(namespaceUri: Any, qualifiedName: String, value: String): Unit
   
   /**
     * Sets or updates the supplied attribute node on this element.
@@ -232,37 +232,37 @@ object XmlElement {
     cloneNode: Boolean => IXmlNode,
     firstChild: IXmlNode,
     getAttribute: String => String,
-    getAttributeNS: (js.Any, String) => String,
+    getAttributeNS: (Any, String) => String,
     getAttributeNode: String => XmlAttribute,
-    getAttributeNodeNS: (js.Any, String) => XmlAttribute,
+    getAttributeNodeNS: (Any, String) => XmlAttribute,
     getElementsByTagName: String => XmlNodeList,
     getXml: () => String,
     hasChildNodes: () => Boolean,
     innerText: String,
     insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
     lastChild: IXmlNode,
-    localName: js.Any,
-    namespaceUri: js.Any,
+    localName: Any,
+    namespaceUri: Any,
     nextSibling: IXmlNode,
     nodeName: String,
     nodeType: NodeType,
-    nodeValue: js.Any,
+    nodeValue: Any,
     normalize: () => Unit,
     ownerDocument: XmlDocument,
     parentNode: IXmlNode,
-    prefix: js.Any,
+    prefix: Any,
     previousSibling: IXmlNode,
     removeAttribute: String => Unit,
-    removeAttributeNS: (js.Any, String) => Unit,
+    removeAttributeNS: (Any, String) => Unit,
     removeAttributeNode: XmlAttribute => XmlAttribute,
     removeChild: IXmlNode => IXmlNode,
     replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
     selectNodes: String => XmlNodeList,
-    selectNodesNS: (String, js.Any) => XmlNodeList,
+    selectNodesNS: (String, Any) => XmlNodeList,
     selectSingleNode: String => IXmlNode,
-    selectSingleNodeNS: (String, js.Any) => IXmlNode,
+    selectSingleNodeNS: (String, Any) => IXmlNode,
     setAttribute: (String, String) => Unit,
-    setAttributeNS: (js.Any, String, String) => Unit,
+    setAttributeNS: (Any, String, String) => Unit,
     setAttributeNode: XmlAttribute => XmlAttribute,
     setAttributeNodeNS: XmlAttribute => XmlAttribute,
     tagName: String
@@ -285,11 +285,11 @@ object XmlElement {
     
     inline def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
-    inline def setGetAttributeNS(value: (js.Any, String) => String): Self = StObject.set(x, "getAttributeNS", js.Any.fromFunction2(value))
+    inline def setGetAttributeNS(value: (Any, String) => String): Self = StObject.set(x, "getAttributeNS", js.Any.fromFunction2(value))
     
     inline def setGetAttributeNode(value: String => XmlAttribute): Self = StObject.set(x, "getAttributeNode", js.Any.fromFunction1(value))
     
-    inline def setGetAttributeNodeNS(value: (js.Any, String) => XmlAttribute): Self = StObject.set(x, "getAttributeNodeNS", js.Any.fromFunction2(value))
+    inline def setGetAttributeNodeNS(value: (Any, String) => XmlAttribute): Self = StObject.set(x, "getAttributeNodeNS", js.Any.fromFunction2(value))
     
     inline def setGetElementsByTagName(value: String => XmlNodeList): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
     
@@ -303,9 +303,9 @@ object XmlElement {
     
     inline def setLastChild(value: IXmlNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
-    inline def setLocalName(value: js.Any): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+    inline def setLocalName(value: Any): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
-    inline def setNamespaceUri(value: js.Any): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
+    inline def setNamespaceUri(value: Any): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
     
     inline def setNextSibling(value: IXmlNode): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
@@ -313,7 +313,7 @@ object XmlElement {
     
     inline def setNodeType(value: NodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    inline def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
@@ -321,13 +321,13 @@ object XmlElement {
     
     inline def setParentNode(value: IXmlNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    inline def setPrefix(value: js.Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     inline def setPreviousSibling(value: IXmlNode): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
     inline def setRemoveAttribute(value: String => Unit): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
     
-    inline def setRemoveAttributeNS(value: (js.Any, String) => Unit): Self = StObject.set(x, "removeAttributeNS", js.Any.fromFunction2(value))
+    inline def setRemoveAttributeNS(value: (Any, String) => Unit): Self = StObject.set(x, "removeAttributeNS", js.Any.fromFunction2(value))
     
     inline def setRemoveAttributeNode(value: XmlAttribute => XmlAttribute): Self = StObject.set(x, "removeAttributeNode", js.Any.fromFunction1(value))
     
@@ -337,15 +337,15 @@ object XmlElement {
     
     inline def setSelectNodes(value: String => XmlNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
     
-    inline def setSelectNodesNS(value: (String, js.Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
+    inline def setSelectNodesNS(value: (String, Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
     
     inline def setSelectSingleNode(value: String => IXmlNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
     
-    inline def setSelectSingleNodeNS(value: (String, js.Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
+    inline def setSelectSingleNodeNS(value: (String, Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
     
     inline def setSetAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
     
-    inline def setSetAttributeNS(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "setAttributeNS", js.Any.fromFunction3(value))
+    inline def setSetAttributeNS(value: (Any, String, String) => Unit): Self = StObject.set(x, "setAttributeNS", js.Any.fromFunction3(value))
     
     inline def setSetAttributeNode(value: XmlAttribute => XmlAttribute): Self = StObject.set(x, "setAttributeNode", js.Any.fromFunction1(value))
     

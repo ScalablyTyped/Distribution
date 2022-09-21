@@ -1,7 +1,6 @@
 package typings.firebaseInstallations
 
-import typings.firebaseAppTypes.privateMod.FirebaseNamespace
-import typings.firebaseInstallationsTypes.mod.FirebaseInstallations
+import typings.firebaseApp.mod.FirebaseApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,35 +11,39 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def registerInstallations(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInstallations")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deleteInstallations(installations: Installations): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteInstallations")(installations.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  /**
-    * Define extension behavior of `registerInstallations`
-    */
-  object firebaseAppTypesAugmentingMod {
+  inline def getId(installations: Installations): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(installations.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
+  inline def getInstallations(): Installations = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[Installations]
+  inline def getInstallations(app: FirebaseApp): Installations = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")(app.asInstanceOf[js.Any]).asInstanceOf[Installations]
+  
+  inline def getToken(installations: Installations): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(installations.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getToken(installations: Installations, forceRefresh: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(installations.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
+  inline def onIdChange(installations: Installations, callback: IdChangeCallbackFn): IdChangeUnsubscribeFn = (^.asInstanceOf[js.Dynamic].applyDynamic("onIdChange")(installations.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IdChangeUnsubscribeFn]
+  
+  type IdChangeCallbackFn = js.Function1[/* installationId */ String, Unit]
+  
+  type IdChangeUnsubscribeFn = js.Function0[Unit]
+  
+  trait Installations extends StObject {
     
-    trait FirebaseApp extends StObject {
-      
-      def installations(): FirebaseInstallations
-    }
-    object FirebaseApp {
-      
-      inline def apply(installations: () => FirebaseInstallations): FirebaseApp = {
-        val __obj = js.Dynamic.literal(installations = js.Any.fromFunction0(installations))
-        __obj.asInstanceOf[FirebaseApp]
-      }
-      
-      extension [Self <: FirebaseApp](x: Self) {
-        
-        inline def setInstallations(value: () => FirebaseInstallations): Self = StObject.set(x, "installations", js.Any.fromFunction0(value))
-      }
+    /**
+      * The {@link @firebase/app#FirebaseApp} this `Installations` instance is associated with.
+      */
+    var app: FirebaseApp
+  }
+  object Installations {
+    
+    inline def apply(app: FirebaseApp): Installations = {
+      val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Installations]
     }
     
-    @js.native
-    trait FirebaseNamespace extends StObject {
+    extension [Self <: Installations](x: Self) {
       
-      def installations(): FirebaseInstallations = js.native
-      def installations(app: FirebaseApp): FirebaseInstallations = js.native
+      inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     }
   }
 }

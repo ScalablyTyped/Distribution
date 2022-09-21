@@ -29,6 +29,6 @@ object ListTopicResponse {
     
     inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
-    inline def setTopicVarargs(value: Topic*): Self = StObject.set(x, "topic", js.Array(value :_*))
+    inline def setTopicVarargs(value: Topic*): Self = StObject.set(x, "topic", js.Array(value*))
   }
 }

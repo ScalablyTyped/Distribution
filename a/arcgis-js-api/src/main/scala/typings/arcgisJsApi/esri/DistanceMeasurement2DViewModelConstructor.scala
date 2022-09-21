@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DistanceMeasurement2DViewModelConstructor
   extends StObject
-     with Instantiable0[DistanceMeasurement2DViewModel]
+     with /**
+  * Provides the logic for the [DistanceMeasurement2D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html)
+  */
+Instantiable0[DistanceMeasurement2DViewModel]
      with Instantiable1[
       /* properties */ DistanceMeasurement2DViewModelProperties, 
       DistanceMeasurement2DViewModel

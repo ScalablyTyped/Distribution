@@ -9,7 +9,7 @@ trait Invalidation extends StObject {
   /**
     * The date and time the invalidation request was first made. 
     */
-  var CreateTime: timestamp
+  var CreateTime: js.Date
   
   /**
     * The identifier for the invalidation request. For example: IDFDVBD632BHDS5.
@@ -28,14 +28,14 @@ trait Invalidation extends StObject {
 }
 object Invalidation {
   
-  inline def apply(CreateTime: timestamp, Id: String, InvalidationBatch: InvalidationBatch, Status: String): Invalidation = {
+  inline def apply(CreateTime: js.Date, Id: String, InvalidationBatch: InvalidationBatch, Status: String): Invalidation = {
     val __obj = js.Dynamic.literal(CreateTime = CreateTime.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InvalidationBatch = InvalidationBatch.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invalidation]
   }
   
   extension [Self <: Invalidation](x: Self) {
     
-    inline def setCreateTime(value: timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

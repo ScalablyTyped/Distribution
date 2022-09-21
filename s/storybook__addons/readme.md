@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addons
 
-Typings are for version 6.1.2
+Typings are for version 6.5.12
 
 ## Library description:
 Storybook addons store
@@ -10,13 +10,13 @@ Storybook addons store
 | ------------------ | :-------------: |
 | Full name          | @storybook/addons |
 | Keywords           | storybook |
-| # releases         | 557 |
-| # dependents       | 393 |
-| # downloads        | 126026624 |
-| # stars            | 0 |
+| # releases         | 478 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9101931E7 |
+| # stars            | 73947.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/lib/addons)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/addons)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddons)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CardExe
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   // 仅自定义 code 模式的卡券须填写，非自定义 code 模式卡券不可填写，详情
   var code: js.UndefOr[String] = js.undefined

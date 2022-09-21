@@ -10,10 +10,10 @@ ChromeDriver for Selenium
 | ------------------ | :-------------: |
 | Full name          | chromedriver |
 | Keywords           | chromedriver, selenium |
-| # releases         | 34 |
-| # dependents       | 265 |
-| # downloads        | 24680910 |
-| # stars            | 39 |
+| # releases         | 39 |
+| # dependents       | 0.0 |
+| # downloads        | 2492658.3333333335 |
+| # stars            | 426.0 |
 
 ## Links
 - [Homepage](https://github.com/giggio/node-chromedriver)

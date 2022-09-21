@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.Skin")
 @js.native
-class Skin protected ()
+open class Skin protected ()
   extends StObject
      with typings.phaser.spine.Skin {
   def this(name: String) = this()

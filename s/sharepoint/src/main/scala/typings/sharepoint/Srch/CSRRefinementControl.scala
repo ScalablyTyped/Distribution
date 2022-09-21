@@ -27,8 +27,8 @@ trait CSRRefinementControl
 object CSRRefinementControl {
   
   inline def apply(
-    alternateRenderContext: js.Any,
-    alternateRenderer: js.Any,
+    alternateRenderContext: Any,
+    alternateRenderer: Any,
     containerId: String,
     countDisplay: String,
     csr_displayTitle: String,
@@ -56,7 +56,7 @@ object CSRRefinementControl {
     
     inline def setCsr_filters(value: js.Array[CSRFilter]): Self = StObject.set(x, "csr_filters", value.asInstanceOf[js.Any])
     
-    inline def setCsr_filtersVarargs(value: CSRFilter*): Self = StObject.set(x, "csr_filters", js.Array(value :_*))
+    inline def setCsr_filtersVarargs(value: CSRFilter*): Self = StObject.set(x, "csr_filters", js.Array(value*))
     
     inline def setCsr_isExpanded(value: String): Self = StObject.set(x, "csr_isExpanded", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait ListSharedProjectsOutput extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    *  The list of ARNs for the build projects shared with the current AWS account or user. 
+    *  The list of ARNs for the build projects shared with the current Amazon Web Services account or user. 
     */
   var projects: js.UndefOr[ProjectArns] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListSharedProjectsOutput {
     
     inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
-    inline def setProjectsVarargs(value: NonEmptyString*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: NonEmptyString*): Self = StObject.set(x, "projects", js.Array(value*))
   }
 }

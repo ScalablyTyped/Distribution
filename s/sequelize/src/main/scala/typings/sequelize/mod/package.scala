@@ -1,16 +1,34 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.node.bufferMod.global.Buffer
+import typings.sequelize.anon.As
+import typings.sequelize.anon.Through
+import typings.sequelize.sequelizeStrings.DEFERRED
+import typings.sequelize.sequelizeStrings.EXCLUSIVE
+import typings.sequelize.sequelizeStrings.IMMEDIATE
+import typings.sequelize.sequelizeStrings.SERIALIZABLE
+import typings.sequelize.sequelizeStrings.SHARE
+import typings.sequelize.sequelizeStrings.UPDATE
+import typings.sequelize.sequelizeStrings.`KEY SHARE`
+import typings.sequelize.sequelizeStrings.`NO KEY UPDATE`
+import typings.sequelize.sequelizeStrings.`READ COMMITTED`
+import typings.sequelize.sequelizeStrings.`READ UNCOMMITTED`
+import typings.sequelize.sequelizeStrings.`REPEATABLE READ`
+import typings.std.Exclude
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AnyFindOptions = typings.sequelize.mod.FindOptions[js.Any]
+type AnyFindOptions = FindOptions[Any]
 
 /**
   * A hash of attributes to describe your search, accepting any field names. See `WhereOptions` for details.
   */
-type AnyWhereOptions = org.scalablytyped.runtime.StringDictionary[js.Array[typings.sequelize.mod.WhereOptions[js.Any]] | js.Object]
+type AnyWhereOptions = StringDictionary[js.Array[WhereOptions[Any]] | js.Object | Null]
 
 /**
   * Options for Association Scope
@@ -20,7 +38,7 @@ type AnyWhereOptions = org.scalablytyped.runtime.StringDictionary[js.Array[typin
 type AssociationScope = /**
   * The name of the column that will be used for the associated scope and it's value
   */
-org.scalablytyped.runtime.StringDictionary[js.Any]
+StringDictionary[Any]
 
 /**
   * The createAssociation mixin applied to models with belongsTo.
@@ -43,7 +61,7 @@ org.scalablytyped.runtime.StringDictionary[js.Any]
 type BelongsToCreateAssociationMixin[TAttributes, TInstance] = js.Function2[
 /* values */ js.UndefOr[TAttributes], 
 /* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToCreateAssociationMixinOptions | typings.sequelize.mod.CreateOptions | typings.sequelize.mod.BelongsToSetAssociationMixinOptions
+  BelongsToCreateAssociationMixinOptions | CreateOptions | BelongsToSetAssociationMixinOptions
 ], 
 typings.bluebird.mod.^[TInstance]]
 
@@ -66,8 +84,8 @@ typings.bluebird.mod.^[TInstance]]
   * @see Instance
   */
 type BelongsToGetAssociationMixin[TInstance] = js.Function1[
-/* options */ js.UndefOr[typings.sequelize.mod.BelongsToGetAssociationMixinOptions], 
-typings.bluebird.mod.^[TInstance | scala.Null]]
+/* options */ js.UndefOr[BelongsToGetAssociationMixinOptions], 
+typings.bluebird.mod.^[TInstance | Null]]
 
 /**
   * The addAssociation mixin applied to models with belongsToMany.
@@ -97,9 +115,9 @@ typings.bluebird.mod.^[TInstance | scala.Null]]
 type BelongsToManyAddAssociationMixin[TInstance, TInstancePrimaryKey, TJoinTableAttributes] = js.Function2[
 /* newAssociation */ js.UndefOr[TInstance | TInstancePrimaryKey], 
 /* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToManyAddAssociationMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.BulkCreateOptions | typings.sequelize.mod.InstanceUpdateOptions | typings.sequelize.mod.InstanceDestroyOptions | typings.sequelize.anon.Through[TJoinTableAttributes]
+  BelongsToManyAddAssociationMixinOptions | AnyFindOptions | BulkCreateOptions | InstanceUpdateOptions | InstanceDestroyOptions | Through[TJoinTableAttributes]
 ], 
-typings.bluebird.mod.^[scala.Unit]]
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The addAssociations mixin applied to models with belongsToMany.
@@ -129,9 +147,9 @@ typings.bluebird.mod.^[scala.Unit]]
 type BelongsToManyAddAssociationsMixin[TInstance, TInstancePrimaryKey, TJoinTableAttributes] = js.Function2[
 /* newAssociations */ js.UndefOr[js.Array[TInstance | TInstancePrimaryKey]], 
 /* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToManyAddAssociationsMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.BulkCreateOptions | typings.sequelize.mod.InstanceUpdateOptions | typings.sequelize.mod.InstanceDestroyOptions | typings.sequelize.anon.Through[TJoinTableAttributes]
+  BelongsToManyAddAssociationsMixinOptions | AnyFindOptions | BulkCreateOptions | InstanceUpdateOptions | InstanceDestroyOptions | Through[TJoinTableAttributes]
 ], 
-typings.bluebird.mod.^[scala.Unit]]
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The countAssociations mixin applied to models with belongsToMany.
@@ -159,8 +177,8 @@ typings.bluebird.mod.^[scala.Unit]]
   * @see Instance
   */
 type BelongsToManyCountAssociationsMixin = js.Function1[
-/* options */ js.UndefOr[typings.sequelize.mod.BelongsToManyCountAssociationsMixinOptions], 
-typings.bluebird.mod.^[scala.Double]]
+/* options */ js.UndefOr[BelongsToManyCountAssociationsMixinOptions], 
+typings.bluebird.mod.^[Double]]
 
 /**
   * The createAssociation mixin applied to models with belongsToMany.
@@ -190,7 +208,7 @@ typings.bluebird.mod.^[scala.Double]]
 type BelongsToManyCreateAssociationMixin[TAttributes, TInstance, TJoinTableAttributes] = js.Function2[
 /* values */ js.UndefOr[TAttributes], 
 /* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToManyCreateAssociationMixinOptions | typings.sequelize.mod.CreateOptions | typings.sequelize.anon.Through[TJoinTableAttributes]
+  BelongsToManyCreateAssociationMixinOptions | CreateOptions | Through[TJoinTableAttributes]
 ], 
 typings.bluebird.mod.^[TInstance]]
 
@@ -220,7 +238,7 @@ typings.bluebird.mod.^[TInstance]]
   * @see Instance
   */
 type BelongsToManyGetAssociationsMixin[TInstance] = js.Function1[
-/* options */ js.UndefOr[typings.sequelize.mod.BelongsToManyGetAssociationsMixinOptions], 
+/* options */ js.UndefOr[BelongsToManyGetAssociationsMixinOptions], 
 typings.bluebird.mod.^[js.Array[TInstance]]]
 
 /**
@@ -251,9 +269,9 @@ typings.bluebird.mod.^[js.Array[TInstance]]]
 type BelongsToManyHasAssociationMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* target */ TInstance | TInstancePrimaryKey, 
 /* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToManyHasAssociationMixinOptions | typings.sequelize.mod.BelongsToManyGetAssociationsMixinOptions
+  BelongsToManyHasAssociationMixinOptions | BelongsToManyGetAssociationsMixinOptions
 ], 
-typings.bluebird.mod.^[scala.Boolean]]
+typings.bluebird.mod.^[Boolean]]
 
 /**
   * The removeAssociations mixin applied to models with belongsToMany.
@@ -283,9 +301,9 @@ typings.bluebird.mod.^[scala.Boolean]]
 type BelongsToManyHasAssociationsMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* targets */ js.Array[TInstance | TInstancePrimaryKey], 
 /* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToManyHasAssociationsMixinOptions | typings.sequelize.mod.BelongsToManyGetAssociationsMixinOptions
+  BelongsToManyHasAssociationsMixinOptions | BelongsToManyGetAssociationsMixinOptions
 ], 
-typings.bluebird.mod.^[scala.Boolean]]
+typings.bluebird.mod.^[Boolean]]
 
 /**
   * The removeAssociation mixin applied to models with belongsToMany.
@@ -314,10 +332,8 @@ typings.bluebird.mod.^[scala.Boolean]]
   */
 type BelongsToManyRemoveAssociationMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* oldAssociated */ js.UndefOr[TInstance | TInstancePrimaryKey], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToManyRemoveAssociationMixinOptions | typings.sequelize.mod.InstanceDestroyOptions
-], 
-typings.bluebird.mod.^[scala.Unit]]
+/* options */ js.UndefOr[BelongsToManyRemoveAssociationMixinOptions | InstanceDestroyOptions], 
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The removeAssociations mixin applied to models with belongsToMany.
@@ -346,10 +362,8 @@ typings.bluebird.mod.^[scala.Unit]]
   */
 type BelongsToManyRemoveAssociationsMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* oldAssociateds */ js.UndefOr[js.Array[TInstance | TInstancePrimaryKey]], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToManyRemoveAssociationsMixinOptions | typings.sequelize.mod.InstanceDestroyOptions
-], 
-typings.bluebird.mod.^[scala.Unit]]
+/* options */ js.UndefOr[BelongsToManyRemoveAssociationsMixinOptions | InstanceDestroyOptions], 
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The setAssociations mixin applied to models with belongsToMany.
@@ -379,9 +393,9 @@ typings.bluebird.mod.^[scala.Unit]]
 type BelongsToManySetAssociationsMixin[TInstance, TInstancePrimaryKey, TJoinTableAttributes] = js.Function2[
 /* newAssociations */ js.UndefOr[js.Array[TInstance | TInstancePrimaryKey]], 
 /* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToManySetAssociationsMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.BulkCreateOptions | typings.sequelize.mod.InstanceUpdateOptions | typings.sequelize.mod.InstanceDestroyOptions | typings.sequelize.anon.Through[TJoinTableAttributes]
+  BelongsToManySetAssociationsMixinOptions | AnyFindOptions | BulkCreateOptions | InstanceUpdateOptions | InstanceDestroyOptions | Through[TJoinTableAttributes]
 ], 
-typings.bluebird.mod.^[scala.Unit]]
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The setAssociation mixin applied to models with belongsTo.
@@ -403,24 +417,22 @@ typings.bluebird.mod.^[scala.Unit]]
   */
 type BelongsToSetAssociationMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* newAssociation */ js.UndefOr[TInstance | TInstancePrimaryKey], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.BelongsToSetAssociationMixinOptions | typings.sequelize.mod.InstanceSaveOptions
-], 
-typings.bluebird.mod.^[scala.Unit]]
+/* options */ js.UndefOr[BelongsToSetAssociationMixinOptions | InstanceSaveOptions], 
+typings.bluebird.mod.^[Unit]]
 
-type DataTypeBoolean = typings.sequelize.mod.DataTypeAbstract
+type DataTypeBoolean = DataTypeAbstract
 
-type DataTypeDateOnly = typings.sequelize.mod.DataTypeAbstract
+type DataTypeDateOnly = DataTypeAbstract
 
-type DataTypeHStore = typings.sequelize.mod.DataTypeAbstract
+type DataTypeHStore = DataTypeAbstract
 
-type DataTypeJSONB = typings.sequelize.mod.DataTypeAbstract
+type DataTypeJSONB = DataTypeAbstract
 
-type DataTypeJSONType = typings.sequelize.mod.DataTypeAbstract
+type DataTypeJSONType = DataTypeAbstract
 
-type DataTypeNow = typings.sequelize.mod.DataTypeAbstract
+type DataTypeNow = DataTypeAbstract
 
-type DataTypeTime = typings.sequelize.mod.DataTypeAbstract
+type DataTypeTime = DataTypeAbstract
 
 /**
   * Interface for Attributes provided for a column
@@ -430,15 +442,14 @@ type DataTypeTime = typings.sequelize.mod.DataTypeAbstract
 type DefineAttributes = /**
   * The description of a database column
   */
-org.scalablytyped.runtime.StringDictionary[
-java.lang.String | typings.sequelize.mod.DataTypeAbstract | typings.sequelize.mod.DefineAttributeColumnOptions]
+StringDictionary[String | DataTypeAbstract | DefineAttributeColumnOptions]
 
 /**
   * Interface for getterMethods in DefineOptions
   *
   * @see DefineOptions
   */
-type DefineGetterMethodsOptions = org.scalablytyped.runtime.StringDictionary[js.Function0[js.Any]]
+type DefineGetterMethodsOptions = StringDictionary[js.Function0[Any]]
 
 /**
   * Interface for Attributes provided for a column
@@ -447,7 +458,7 @@ type DefineGetterMethodsOptions = org.scalablytyped.runtime.StringDictionary[js.
   */
 type DefineModelAttributes[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof T ]: string | sequelize.sequelize.DataTypeAbstract | sequelize.sequelize.DefineAttributeColumnOptions}
-  */ typings.sequelize.sequelizeStrings.DefineModelAttributes & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.sequelize.sequelizeStrings.DefineModelAttributes & TopLevel[Any]
 
 /**
   * Interface for Define Scope Options
@@ -457,34 +468,29 @@ type DefineModelAttributes[T] = /* import warning: importer.ImportType#apply c U
 type DefineScopeOptions = /**
   * Name of the scope and it's query
   */
-org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.AnyFindOptions | js.Function]
+StringDictionary[AnyFindOptions | js.Function]
 
 /**
   * Interface for setterMethods in DefineOptions
   *
   * @see DefineOptions
   */
-type DefineSetterMethodsOptions = org.scalablytyped.runtime.StringDictionary[js.Function1[/* val */ js.Any, scala.Unit]]
+type DefineSetterMethodsOptions = StringDictionary[js.Function1[/* val */ Any, Unit]]
 
 /**
   * Shortcut for types used in FindOptions.attributes
   */
-type FindOptionsAttributesArray = js.Array[
-java.lang.String | typings.sequelize.mod.literal | (js.Tuple2[
-  java.lang.String | typings.sequelize.mod.cast | typings.sequelize.mod.fn | typings.sequelize.mod.literal, 
-  java.lang.String
-]) | typings.sequelize.mod.fn | typings.sequelize.mod.cast]
+type FindOptionsAttributesArray = js.Array[String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast]
 
 /**
   * Shortcut for order type in FindOptions.attributes
   */
-type FindOptionsOrderArray = js.Array[
-java.lang.String | scala.Double | (typings.sequelize.mod.Model[js.Any, js.Any, js.Any]) | typings.sequelize.anon.As | typings.sequelize.mod.fn]
+type FindOptionsOrderArray = js.Array[String | Double | (Model[Any, Any, Any]) | As | fn]
 
 /**
   * GetTableName Options
   */
-type GetTableNameOptions = typings.sequelize.mod.LoggingOptions
+type GetTableNameOptions = LoggingOptions
 
 /**
   * The addAssociation mixin applied to models with hasMany.
@@ -513,10 +519,8 @@ type GetTableNameOptions = typings.sequelize.mod.LoggingOptions
   */
 type HasManyAddAssociationMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* newAssociation */ js.UndefOr[TInstance | TInstancePrimaryKey], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.HasManyAddAssociationMixinOptions | typings.sequelize.mod.InstanceUpdateOptions
-], 
-typings.bluebird.mod.^[scala.Unit]]
+/* options */ js.UndefOr[HasManyAddAssociationMixinOptions | InstanceUpdateOptions], 
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The addAssociations mixin applied to models with hasMany.
@@ -545,10 +549,8 @@ typings.bluebird.mod.^[scala.Unit]]
   */
 type HasManyAddAssociationsMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* newAssociations */ js.UndefOr[js.Array[TInstance | TInstancePrimaryKey]], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.HasManyAddAssociationsMixinOptions | typings.sequelize.mod.InstanceUpdateOptions
-], 
-typings.bluebird.mod.^[scala.Unit]]
+/* options */ js.UndefOr[HasManyAddAssociationsMixinOptions | InstanceUpdateOptions], 
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The countAssociations mixin applied to models with hasMany.
@@ -576,8 +578,8 @@ typings.bluebird.mod.^[scala.Unit]]
   * @see Instance
   */
 type HasManyCountAssociationsMixin = js.Function1[
-/* options */ js.UndefOr[typings.sequelize.mod.HasManyCountAssociationsMixinOptions], 
-typings.bluebird.mod.^[scala.Double]]
+/* options */ js.UndefOr[HasManyCountAssociationsMixinOptions], 
+typings.bluebird.mod.^[Double]]
 
 /**
   * The createAssociation mixin applied to models with hasMany.
@@ -606,9 +608,7 @@ typings.bluebird.mod.^[scala.Double]]
   */
 type HasManyCreateAssociationMixin[TAttributes, TInstance] = js.Function2[
 /* values */ js.UndefOr[TAttributes], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.HasManyCreateAssociationMixinOptions | typings.sequelize.mod.CreateOptions
-], 
+/* options */ js.UndefOr[HasManyCreateAssociationMixinOptions | CreateOptions], 
 typings.bluebird.mod.^[TInstance]]
 
 /**
@@ -637,7 +637,7 @@ typings.bluebird.mod.^[TInstance]]
   * @see Instance
   */
 type HasManyGetAssociationsMixin[TInstance] = js.Function1[
-/* options */ js.UndefOr[typings.sequelize.mod.HasManyGetAssociationsMixinOptions], 
+/* options */ js.UndefOr[HasManyGetAssociationsMixinOptions], 
 typings.bluebird.mod.^[js.Array[TInstance]]]
 
 /**
@@ -667,10 +667,8 @@ typings.bluebird.mod.^[js.Array[TInstance]]]
   */
 type HasManyHasAssociationMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* target */ TInstance | TInstancePrimaryKey, 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.HasManyHasAssociationMixinOptions | typings.sequelize.mod.HasManyGetAssociationsMixinOptions
-], 
-typings.bluebird.mod.^[scala.Boolean]]
+/* options */ js.UndefOr[HasManyHasAssociationMixinOptions | HasManyGetAssociationsMixinOptions], 
+typings.bluebird.mod.^[Boolean]]
 
 /**
   * The removeAssociations mixin applied to models with hasMany.
@@ -699,10 +697,8 @@ typings.bluebird.mod.^[scala.Boolean]]
   */
 type HasManyHasAssociationsMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* targets */ js.Array[TInstance | TInstancePrimaryKey], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.HasManyHasAssociationsMixinOptions | typings.sequelize.mod.HasManyGetAssociationsMixinOptions
-], 
-typings.bluebird.mod.^[scala.Boolean]]
+/* options */ js.UndefOr[HasManyHasAssociationsMixinOptions | HasManyGetAssociationsMixinOptions], 
+typings.bluebird.mod.^[Boolean]]
 
 /**
   * The removeAssociation mixin applied to models with hasMany.
@@ -731,10 +727,8 @@ typings.bluebird.mod.^[scala.Boolean]]
   */
 type HasManyRemoveAssociationMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* oldAssociated */ js.UndefOr[TInstance | TInstancePrimaryKey], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.HasManyRemoveAssociationMixinOptions | typings.sequelize.mod.InstanceUpdateOptions
-], 
-typings.bluebird.mod.^[scala.Unit]]
+/* options */ js.UndefOr[HasManyRemoveAssociationMixinOptions | InstanceUpdateOptions], 
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The removeAssociations mixin applied to models with hasMany.
@@ -763,10 +757,8 @@ typings.bluebird.mod.^[scala.Unit]]
   */
 type HasManyRemoveAssociationsMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* oldAssociateds */ js.UndefOr[js.Array[TInstance | TInstancePrimaryKey]], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.HasManyRemoveAssociationsMixinOptions | typings.sequelize.mod.InstanceUpdateOptions
-], 
-typings.bluebird.mod.^[scala.Unit]]
+/* options */ js.UndefOr[HasManyRemoveAssociationsMixinOptions | InstanceUpdateOptions], 
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The setAssociations mixin applied to models with hasMany.
@@ -795,10 +787,8 @@ typings.bluebird.mod.^[scala.Unit]]
   */
 type HasManySetAssociationsMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* newAssociations */ js.UndefOr[js.Array[TInstance | TInstancePrimaryKey]], 
-/* options */ js.UndefOr[
-  typings.sequelize.mod.HasManySetAssociationsMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.InstanceUpdateOptions
-], 
-typings.bluebird.mod.^[scala.Unit]]
+/* options */ js.UndefOr[HasManySetAssociationsMixinOptions | AnyFindOptions | InstanceUpdateOptions], 
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The createAssociation mixin applied to models with hasOne.
@@ -821,9 +811,9 @@ typings.bluebird.mod.^[scala.Unit]]
 type HasOneCreateAssociationMixin[TAttributes] = js.Function2[
 /* values */ js.UndefOr[TAttributes], 
 /* options */ js.UndefOr[
-  typings.sequelize.mod.HasOneCreateAssociationMixinOptions | typings.sequelize.mod.HasOneSetAssociationMixinOptions | typings.sequelize.mod.CreateOptions
+  HasOneCreateAssociationMixinOptions | HasOneSetAssociationMixinOptions | CreateOptions
 ], 
-typings.bluebird.mod.^[scala.Unit]]
+typings.bluebird.mod.^[Unit]]
 
 /**
   * The getAssociation mixin applied to models with hasOne.
@@ -844,8 +834,8 @@ typings.bluebird.mod.^[scala.Unit]]
   * @see Instance
   */
 type HasOneGetAssociationMixin[TInstance] = js.Function1[
-/* options */ js.UndefOr[typings.sequelize.mod.HasOneGetAssociationMixinOptions], 
-typings.bluebird.mod.^[TInstance | scala.Null]]
+/* options */ js.UndefOr[HasOneGetAssociationMixinOptions], 
+typings.bluebird.mod.^[TInstance | Null]]
 
 /**
   * The setAssociation mixin applied to models with hasOne.
@@ -868,18 +858,18 @@ typings.bluebird.mod.^[TInstance | scala.Null]]
 type HasOneSetAssociationMixin[TInstance, TInstancePrimaryKey] = js.Function2[
 /* newAssociation */ js.UndefOr[TInstance | TInstancePrimaryKey], 
 /* options */ js.UndefOr[
-  typings.sequelize.mod.HasOneSetAssociationMixinOptions | typings.sequelize.mod.HasOneGetAssociationMixinOptions | typings.sequelize.mod.InstanceSaveOptions
+  HasOneSetAssociationMixinOptions | HasOneGetAssociationMixinOptions | InstanceSaveOptions
 ], 
-typings.bluebird.mod.^[scala.Unit]]
+typings.bluebird.mod.^[Unit]]
 
 /**
   * Models contains Model instances associated to their name
   */
-type Models = org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.Model[js.Any, js.Any, js.Any]]
+type Models = StringDictionary[Model[Any, Any, Any]]
 
-type ModelsHashInterface = org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.Model[js.Any, js.Any, js.Any]]
+type ModelsHashInterface = StringDictionary[Model[Any, Any, Any]]
 
-type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 
 /**
   * A hash of attributes to describe your search. See above for examples.
@@ -887,36 +877,36 @@ type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, ty
   * We did put Object in the end, because there where query might be a JSON Blob. It cripples a bit the
   * typesafety, but there is no way to pass the tests if we just remove it.
   */
-type Primitives = java.lang.String | scala.Double | scala.Boolean | typings.node.Buffer
+type Primitives = String | Double | Boolean | Buffer
 
-type TransactionIsolationLevel = typings.sequelize.mod.TransactionIsolationLevelReadUncommitted | typings.sequelize.mod.TransactionIsolationLevelReadCommitted | typings.sequelize.mod.TransactionIsolationLevelRepeatableRead | typings.sequelize.mod.TransactionIsolationLevelSerializable
+type TransactionIsolationLevel = TransactionIsolationLevelReadUncommitted | TransactionIsolationLevelReadCommitted | TransactionIsolationLevelRepeatableRead | TransactionIsolationLevelSerializable
 
-type TransactionIsolationLevelReadCommitted = typings.sequelize.sequelizeStrings.`READ COMMITTED`
+type TransactionIsolationLevelReadCommitted = `READ COMMITTED`
 
-type TransactionIsolationLevelReadUncommitted = typings.sequelize.sequelizeStrings.`READ UNCOMMITTED`
+type TransactionIsolationLevelReadUncommitted = `READ UNCOMMITTED`
 
-type TransactionIsolationLevelRepeatableRead = typings.sequelize.sequelizeStrings.`REPEATABLE READ`
+type TransactionIsolationLevelRepeatableRead = `REPEATABLE READ`
 
-type TransactionIsolationLevelSerializable = typings.sequelize.sequelizeStrings.SERIALIZABLE
+type TransactionIsolationLevelSerializable = SERIALIZABLE
 
-type TransactionLockLevel = typings.sequelize.mod.TransactionLockLevelUpdate | typings.sequelize.mod.TransactionLockLevelShare | typings.sequelize.mod.TransactionLockLevelKeyShare | typings.sequelize.mod.TransactionLockLevelNoKeyUpdate
+type TransactionLockLevel = TransactionLockLevelUpdate | TransactionLockLevelShare | TransactionLockLevelKeyShare | TransactionLockLevelNoKeyUpdate
 
-type TransactionLockLevelKeyShare = typings.sequelize.sequelizeStrings.`KEY SHARE`
+type TransactionLockLevelKeyShare = `KEY SHARE`
 
-type TransactionLockLevelNoKeyUpdate = typings.sequelize.sequelizeStrings.`NO KEY UPDATE`
+type TransactionLockLevelNoKeyUpdate = `NO KEY UPDATE`
 
-type TransactionLockLevelShare = typings.sequelize.sequelizeStrings.SHARE
+type TransactionLockLevelShare = SHARE
 
-type TransactionLockLevelUpdate = typings.sequelize.sequelizeStrings.UPDATE
+type TransactionLockLevelUpdate = UPDATE
 
-type TransactionType = typings.sequelize.mod.TransactionTypeDeferred | typings.sequelize.mod.TransactionTypeImmediate | typings.sequelize.mod.TransactionTypeExclusive
+type TransactionType = TransactionTypeDeferred | TransactionTypeImmediate | TransactionTypeExclusive
 
-type TransactionTypeDeferred = typings.sequelize.sequelizeStrings.DEFERRED
+type TransactionTypeDeferred = DEFERRED
 
-type TransactionTypeExclusive = typings.sequelize.sequelizeStrings.EXCLUSIVE
+type TransactionTypeExclusive = EXCLUSIVE
 
-type TransactionTypeImmediate = typings.sequelize.sequelizeStrings.IMMEDIATE
+type TransactionTypeImmediate = IMMEDIATE
 
 type WhereOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | T[P] extends sequelize.sequelize.Primitives? null : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias sequelize.sequelize.WhereOptions<T[P]> * / object | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
-  */ typings.sequelize.sequelizeStrings.WhereOptions & org.scalablytyped.runtime.TopLevel[T]
+{[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | T[P] extends sequelize.sequelize.Primitives? null : sequelize.sequelize.WhereOptions<T[P]> | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
+  */ typings.sequelize.sequelizeStrings.WhereOptions & TopLevel[Any]

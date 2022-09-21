@@ -10,7 +10,7 @@ object pbrIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "AnisotropyBlock")
   @js.native
-  class AnisotropyBlock protected ()
+  open class AnisotropyBlock protected ()
     extends typings.babylonjs.anisotropyBlockMod.AnisotropyBlock {
     /**
       * Create a new AnisotropyBlock
@@ -21,7 +21,7 @@ object pbrIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "ClearCoatBlock")
   @js.native
-  class ClearCoatBlock protected ()
+  open class ClearCoatBlock protected ()
     extends typings.babylonjs.clearCoatBlockMod.ClearCoatBlock {
     /**
       * Create a new ClearCoatBlock
@@ -60,7 +60,7 @@ object pbrIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "PBRMetallicRoughnessBlock")
   @js.native
-  class PBRMetallicRoughnessBlock protected ()
+  open class PBRMetallicRoughnessBlock protected ()
     extends typings.babylonjs.pbrMetallicRoughnessBlockMod.PBRMetallicRoughnessBlock {
     /**
       * Create a new ReflectionBlock
@@ -71,7 +71,7 @@ object pbrIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "ReflectionBlock")
   @js.native
-  class ReflectionBlock protected ()
+  open class ReflectionBlock protected ()
     extends typings.babylonjs.reflectionBlockMod.ReflectionBlock {
     /**
       * Create a new ReflectionBlock
@@ -82,7 +82,7 @@ object pbrIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "RefractionBlock")
   @js.native
-  class RefractionBlock protected ()
+  open class RefractionBlock protected ()
     extends typings.babylonjs.refractionBlockMod.RefractionBlock {
     /**
       * Create a new RefractionBlock
@@ -93,7 +93,7 @@ object pbrIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "SheenBlock")
   @js.native
-  class SheenBlock protected ()
+  open class SheenBlock protected ()
     extends typings.babylonjs.sheenBlockMod.SheenBlock {
     /**
       * Create a new SheenBlock
@@ -104,7 +104,7 @@ object pbrIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "SubSurfaceBlock")
   @js.native
-  class SubSurfaceBlock protected ()
+  open class SubSurfaceBlock protected ()
     extends typings.babylonjs.subSurfaceBlockMod.SubSurfaceBlock {
     /**
       * Create a new SubSurfaceBlock

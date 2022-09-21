@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of table styles.
   *
-  * Represents a collection of TableStyles.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.TableStyleCollection")
 @js.native
-class TableStyleCollection ()
+open class TableStyleCollection ()
   extends StObject
      with typings.officeJs.Excel.TableStyleCollection {
   

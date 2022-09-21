@@ -1,6 +1,5 @@
 package typings.bech32
 
-import typings.bech32.anon.Prefix
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,24 +7,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("bech32", JSImport.Namespace)
+  @JSImport("bech32", "bech32")
   @js.native
-  val ^ : js.Any = js.native
+  val bech32: BechLib = js.native
   
-  inline def decode(str: String): Prefix = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[Prefix]
-  inline def decode(str: String, limit: Double): Prefix = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Prefix]
+  @JSImport("bech32", "bech32m")
+  @js.native
+  val bech32m: BechLib = js.native
   
-  inline def decodeUnsafe(str: String): js.UndefOr[Prefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeUnsafe")(str.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Prefix]]
-  inline def decodeUnsafe(str: String, limit: Double): js.UndefOr[Prefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeUnsafe")(str.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Prefix]]
+  @js.native
+  trait BechLib extends StObject {
+    
+    def decode(str: String): Decoded = js.native
+    def decode(str: String, LIMIT: Double): Decoded = js.native
+    
+    def decodeUnsafe(str: String): js.UndefOr[Decoded] = js.native
+    def decodeUnsafe(str: String, LIMIT: Double): js.UndefOr[Decoded] = js.native
+    
+    def encode(prefix: String, words: ArrayLike[Double]): String = js.native
+    def encode(prefix: String, words: ArrayLike[Double], LIMIT: Double): String = js.native
+    
+    def fromWords(words: ArrayLike[Double]): js.Array[Double] = js.native
+    
+    def fromWordsUnsafe(words: ArrayLike[Double]): js.UndefOr[js.Array[Double]] = js.native
+    @JSName("fromWordsUnsafe")
+    var fromWordsUnsafe_Original: js.Function1[/* words */ ArrayLike[Double], js.UndefOr[js.Array[Double]]] = js.native
+    
+    @JSName("fromWords")
+    var fromWords_Original: js.Function1[/* words */ ArrayLike[Double], js.Array[Double]] = js.native
+    
+    def toWords(bytes: ArrayLike[Double]): js.Array[Double] = js.native
+    @JSName("toWords")
+    var toWords_Original: js.Function1[/* bytes */ ArrayLike[Double], js.Array[Double]] = js.native
+  }
   
-  inline def encode(prefix: String, words: js.Array[Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(prefix.asInstanceOf[js.Any], words.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encode(prefix: String, words: js.Array[Double], limit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(prefix.asInstanceOf[js.Any], words.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def fromWords(words: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWords")(words.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  
-  inline def fromWordsUnsafe(words: js.Array[Double]): js.UndefOr[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWordsUnsafe")(words.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Double]]]
-  
-  inline def toWords(bytes: ArrayLike[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toWords")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  
-  inline def toWordsUnsafe(bytes: ArrayLike[Double]): js.UndefOr[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toWordsUnsafe")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Double]]]
+  trait Decoded extends StObject {
+    
+    var prefix: String
+    
+    var words: js.Array[Double]
+  }
+  object Decoded {
+    
+    inline def apply(prefix: String, words: js.Array[Double]): Decoded = {
+      val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Decoded]
+    }
+    
+    extension [Self <: Decoded](x: Self) {
+      
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      inline def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      
+      inline def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value*))
+    }
+  }
 }

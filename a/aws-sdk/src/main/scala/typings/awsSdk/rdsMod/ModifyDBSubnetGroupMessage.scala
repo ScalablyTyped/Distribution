@@ -12,7 +12,7 @@ trait ModifyDBSubnetGroupMessage extends StObject {
   var DBSubnetGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
-    * The name for the DB subnet group. This value is stored as a lowercase string. You can't modify the default subnet group.  Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
+    * The name for the DB subnet group. This value is stored as a lowercase string. You can't modify the default subnet group. Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mydbsubnetgroup 
     */
   var DBSubnetGroupName: String
   
@@ -38,6 +38,6 @@ object ModifyDBSubnetGroupMessage {
     
     inline def setSubnetIds(value: SubnetIdentifierList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
   }
 }

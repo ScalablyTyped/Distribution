@@ -35,9 +35,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def add(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def add(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    inline def add_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add_")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def add_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add_")(List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
     
     inline def fromString(str: String): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.colorMod.Color]
     
@@ -57,9 +57,9 @@ object mod {
     @js.native
     val lerpHSL: /* import warning: importer.ImportType#apply Failed type conversion: typeof interpolateHSL */ js.Any = js.native
     
-    inline def multiply(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def multiply(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    inline def multiply_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply_")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def multiply_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply_")(List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
     
     inline def randomize(color: typings.rotJs.colorMod.Color, diff: Double): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
     inline def randomize(color: typings.rotJs.colorMod.Color, diff: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
@@ -98,7 +98,7 @@ object mod {
   
   @JSImport("rot-js", "Display")
   @js.native
-  class Display () extends default {
+  open class Display () extends default {
     def this(options: PartialDisplayOptions) = this()
   }
   /* static members */
@@ -137,9 +137,9 @@ object mod {
   
   @JSImport("rot-js", "Engine")
   @js.native
-  class Engine protected ()
+  open class Engine protected ()
     extends typings.rotJs.engineMod.default {
-    def this(scheduler: typings.rotJs.schedulerSchedulerMod.default[js.Any]) = this()
+    def this(scheduler: typings.rotJs.schedulerSchedulerMod.default[Any]) = this()
   }
   
   @JSImport("rot-js", "EventQueue")
@@ -147,7 +147,7 @@ object mod {
   /**
     * @class Generic event queue: stores events and retrieves them based on their time
     */
-  class EventQueue[T] ()
+  open class EventQueue[T] ()
     extends typings.rotJs.eventqueueMod.default[T]
   
   object FOV {
@@ -159,7 +159,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "FOV.DiscreteShadowcasting")
     @js.native
-    class DiscreteShadowcasting ()
+    open class DiscreteShadowcasting ()
       extends typings.rotJs.discreteShadowcastingMod.default
     @JSImport("rot-js", "FOV.DiscreteShadowcasting")
     @js.native
@@ -169,7 +169,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "FOV.PreciseShadowcasting")
     @js.native
-    class PreciseShadowcasting ()
+    open class PreciseShadowcasting ()
       extends typings.rotJs.preciseShadowcastingMod.default
     @JSImport("rot-js", "FOV.PreciseShadowcasting")
     @js.native
@@ -179,7 +179,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "FOV.RecursiveShadowcasting")
     @js.native
-    class RecursiveShadowcasting ()
+    open class RecursiveShadowcasting ()
       extends typings.rotJs.recursiveShadowcastingMod.default
     @JSImport("rot-js", "FOV.RecursiveShadowcasting")
     @js.native
@@ -1145,7 +1145,7 @@ object mod {
   
   @JSImport("rot-js", "Lighting")
   @js.native
-  class Lighting protected ()
+  open class Lighting protected ()
     extends typings.rotJs.lightingMod.default {
     def this(reflectivityCallback: ReflectivityCallback) = this()
     def this(reflectivityCallback: ReflectivityCallback, options: PartialOptionsEmissionThreshold) = this()
@@ -1160,7 +1160,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.Arena")
     @js.native
-    class Arena ()
+    open class Arena ()
       extends typings.rotJs.arenaMod.default
     @JSImport("rot-js", "Map.Arena")
     @js.native
@@ -1170,7 +1170,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.Cellular")
     @js.native
-    class Cellular protected ()
+    open class Cellular protected ()
       extends typings.rotJs.cellularMod.default {
       def this(width: Double, height: Double) = this()
       def this(width: Double, height: Double, options: PartialOptionsBorn) = this()
@@ -1195,7 +1195,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.Digger")
     @js.native
-    class Digger protected ()
+    open class Digger protected ()
       extends typings.rotJs.diggerMod.default {
       def this(width: Double, height: Double) = this()
       def this(width: Double, height: Double, options: PartialOptionsCorridorLength) = this()
@@ -1220,7 +1220,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.DividedMaze")
     @js.native
-    class DividedMaze ()
+    open class DividedMaze ()
       extends typings.rotJs.dividedmazeMod.default
     @JSImport("rot-js", "Map.DividedMaze")
     @js.native
@@ -1230,7 +1230,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.EllerMaze")
     @js.native
-    class EllerMaze ()
+    open class EllerMaze ()
       extends typings.rotJs.ellermazeMod.default
     @JSImport("rot-js", "Map.EllerMaze")
     @js.native
@@ -1240,7 +1240,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.IceyMaze")
     @js.native
-    class IceyMaze protected ()
+    open class IceyMaze protected ()
       extends typings.rotJs.iceymazeMod.default {
       def this(width: Double, height: Double) = this()
       def this(width: Double, height: Double, regularity: Double) = this()
@@ -1265,7 +1265,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.Rogue")
     @js.native
-    class Rogue protected ()
+    open class Rogue protected ()
       extends typings.rotJs.rogueMod.default {
       def this(width: Double, height: Double, options: PartialOptionsCellHeight) = this()
     }
@@ -1289,7 +1289,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.Uniform")
     @js.native
-    class Uniform protected ()
+    open class Uniform protected ()
       extends typings.rotJs.uniformMod.default {
       def this(width: Double, height: Double, options: PartialOptionsRoomDugPercentage) = this()
     }
@@ -1323,7 +1323,7 @@ object mod {
     /**
       * @param gradients Random gradients
       */
-    class Simplex ()
+    open class Simplex ()
       extends typings.rotJs.simplexMod.default {
       def this(gradients: Double) = this()
     }
@@ -1342,7 +1342,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Path.AStar")
     @js.native
-    class AStar protected ()
+    open class AStar protected ()
       extends typings.rotJs.astarMod.default {
       def this(toX: Double, toY: Double, passableCallback: PassableCallback) = this()
       def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
@@ -1369,7 +1369,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Path.Dijkstra")
     @js.native
-    class Dijkstra protected ()
+    open class Dijkstra protected ()
       extends typings.rotJs.dijkstraMod.default {
       def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
     }
@@ -1406,7 +1406,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Scheduler.Action")
     @js.native
-    class Action[T] ()
+    open class Action[T] ()
       extends typings.rotJs.actionMod.default[T]
     @JSImport("rot-js", "Scheduler.Action")
     @js.native
@@ -1416,7 +1416,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Scheduler.Simple")
     @js.native
-    class Simple[T] ()
+    open class Simple[T] ()
       extends typings.rotJs.simpleMod.default[T]
     @JSImport("rot-js", "Scheduler.Simple")
     @js.native
@@ -1426,7 +1426,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Scheduler.Speed")
     @js.native
-    class Speed[T /* <: SpeedActor */] ()
+    open class Speed[T /* <: SpeedActor */] ()
       extends typings.rotJs.speedMod.default[T]
     @JSImport("rot-js", "Scheduler.Speed")
     @js.native
@@ -1436,7 +1436,7 @@ object mod {
   
   @JSImport("rot-js", "StringGenerator")
   @js.native
-  class StringGenerator protected ()
+  open class StringGenerator protected ()
     extends typings.rotJs.stringgeneratorMod.default {
     def this(options: PartialOptionsOrder) = this()
   }
@@ -1465,7 +1465,7 @@ object mod {
     
     inline def measure(str: String, maxWidth: Double): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")(str.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[Height]
     
-    inline def tokenize(str: String, maxWidth: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(str.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def tokenize(str: String, maxWidth: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(str.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   }
   
   object Util {
@@ -1481,7 +1481,7 @@ object mod {
     inline def clamp(`val`: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def clamp(`val`: Double, min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def format(template: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(template: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     inline def mod(x: Double, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   }

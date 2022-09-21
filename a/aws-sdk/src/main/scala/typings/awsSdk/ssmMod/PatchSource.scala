@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PatchSource extends StObject {
   
   /**
-    * The value of the yum repo configuration. For example:  [main]   cachedir=/var/cache/yum/$basesearch$releasever   keepcache=0   debuglevel=2 
+    * The value of the yum repo configuration. For example:  [main]   name=MyCustomRepository   baseurl=https://my-custom-repository   enabled=1   For information about other options available for your yum repository configuration, see dnf.conf(5). 
     */
   var Configuration: PatchSourceConfiguration
   
@@ -36,6 +36,6 @@ object PatchSource {
     
     inline def setProducts(value: PatchSourceProductList): Self = StObject.set(x, "Products", value.asInstanceOf[js.Any])
     
-    inline def setProductsVarargs(value: PatchSourceProduct*): Self = StObject.set(x, "Products", js.Array(value :_*))
+    inline def setProductsVarargs(value: PatchSourceProduct*): Self = StObject.set(x, "Products", js.Array(value*))
   }
 }

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "ItemsApi")
 @js.native
-class ItemsApi () extends StObject {
+open class ItemsApi () extends StObject {
+  def this(apiClient: Any) = this()
   
   /**
     * Returns a resource item by ID for any item within a given project. Resource items represent word documents, fusion design files, drawings, spreadsheets, etc.

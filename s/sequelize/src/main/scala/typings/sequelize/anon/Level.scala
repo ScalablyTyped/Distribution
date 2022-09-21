@@ -10,11 +10,11 @@ trait Level extends StObject {
   
   var level: TransactionLockLevel
   
-  var of: Model[js.Any, js.Any, js.Any]
+  var of: Model[Any, Any, Any]
 }
 object Level {
   
-  inline def apply(level: TransactionLockLevel, of: Model[js.Any, js.Any, js.Any]): Level = {
+  inline def apply(level: TransactionLockLevel, of: Model[Any, Any, Any]): Level = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], of = of.asInstanceOf[js.Any])
     __obj.asInstanceOf[Level]
   }
@@ -23,6 +23,6 @@ object Level {
     
     inline def setLevel(value: TransactionLockLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setOf(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+    inline def setOf(value: Model[Any, Any, Any]): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
   }
 }

@@ -25,12 +25,12 @@ object Row {
     
     inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
-    inline def setDimensionValuesVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+    inline def setDimensionValuesVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value*))
     
     inline def setMetricValues(value: js.Array[MetricValue]): Self = StObject.set(x, "metricValues", value.asInstanceOf[js.Any])
     
     inline def setMetricValuesUndefined: Self = StObject.set(x, "metricValues", js.undefined)
     
-    inline def setMetricValuesVarargs(value: MetricValue*): Self = StObject.set(x, "metricValues", js.Array(value :_*))
+    inline def setMetricValuesVarargs(value: MetricValue*): Self = StObject.set(x, "metricValues", js.Array(value*))
   }
 }

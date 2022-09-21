@@ -10,7 +10,7 @@ object smoothStepBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/smoothStepBlock", "SmoothStepBlock")
   @js.native
-  class SmoothStepBlock protected () extends NodeMaterialBlock {
+  open class SmoothStepBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new SmoothStepBlock
       * @param name defines the block name

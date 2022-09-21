@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("masonry-layout", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Masonry {
     def this(options: Options) = this()
@@ -19,7 +19,7 @@ object mod {
     def this(selector: Element, options: Options) = this()
     
     /* CompleteClass */
-    var masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]]) = js.native
+    var masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]]) = js.native
   }
   
   trait HiddenOrVisibleStyleOption extends StObject {
@@ -49,48 +49,46 @@ object mod {
   
   trait Masonry extends StObject {
     
-    var addItems: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
+    var addItems: js.UndefOr[js.Function1[/* elements */ js.Array[Any], Unit]] = js.undefined
     
     // add and remove items
-    var appended: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
+    var appended: js.UndefOr[js.Function1[/* elements */ js.Array[Any], Unit]] = js.undefined
     
     var data: js.UndefOr[js.Function1[/* element */ Element, this.type]] = js.undefined
     
     var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var getItemElements: js.UndefOr[js.Function0[js.Array[js.Any]]] = js.undefined
+    var getItemElements: js.UndefOr[js.Function0[js.Array[Any]]] = js.undefined
     
     // layout
     var layout: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var layoutItems: js.UndefOr[
-        js.Function2[/* items */ js.Array[js.Any], /* isStill */ js.UndefOr[Boolean], Unit]
-      ] = js.undefined
+    var layoutItems: js.UndefOr[js.Function2[/* items */ js.Array[Any], /* isStill */ js.UndefOr[Boolean], Unit]] = js.undefined
     
-    var masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]])
+    var masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]])
     
-    var off: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]] = js.undefined
+    var off: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]] = js.undefined
     
     // events
-    var on: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]] = js.undefined
+    var on: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]] = js.undefined
     
-    var once: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]] = js.undefined
+    var once: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]] = js.undefined
     
-    var prepended: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
+    var prepended: js.UndefOr[js.Function1[/* elements */ js.Array[Any], Unit]] = js.undefined
     
     // utilities
     var reloadItems: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var remove: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
+    var remove: js.UndefOr[js.Function1[/* elements */ js.Array[Any], Unit]] = js.undefined
     
-    var stamp: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
+    var stamp: js.UndefOr[js.Function1[/* elements */ js.Array[Any], Unit]] = js.undefined
     
-    var unstamp: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
+    var unstamp: js.UndefOr[js.Function1[/* elements */ js.Array[Any], Unit]] = js.undefined
   }
   object Masonry {
     
     inline def apply(
-      masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]])
+      masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]])
     ): Masonry = {
       val __obj = js.Dynamic.literal(masonry = masonry.asInstanceOf[js.Any])
       __obj.asInstanceOf[Masonry]
@@ -98,11 +96,11 @@ object mod {
     
     extension [Self <: Masonry](x: Self) {
       
-      inline def setAddItems(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
+      inline def setAddItems(value: /* elements */ js.Array[Any] => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
       
       inline def setAddItemsUndefined: Self = StObject.set(x, "addItems", js.undefined)
       
-      inline def setAppended(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "appended", js.Any.fromFunction1(value))
+      inline def setAppended(value: /* elements */ js.Array[Any] => Unit): Self = StObject.set(x, "appended", js.Any.fromFunction1(value))
       
       inline def setAppendedUndefined: Self = StObject.set(x, "appended", js.undefined)
       
@@ -114,35 +112,35 @@ object mod {
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setGetItemElements(value: () => js.Array[js.Any]): Self = StObject.set(x, "getItemElements", js.Any.fromFunction0(value))
+      inline def setGetItemElements(value: () => js.Array[Any]): Self = StObject.set(x, "getItemElements", js.Any.fromFunction0(value))
       
       inline def setGetItemElementsUndefined: Self = StObject.set(x, "getItemElements", js.undefined)
       
       inline def setLayout(value: () => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction0(value))
       
-      inline def setLayoutItems(value: (/* items */ js.Array[js.Any], /* isStill */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "layoutItems", js.Any.fromFunction2(value))
+      inline def setLayoutItems(value: (/* items */ js.Array[Any], /* isStill */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "layoutItems", js.Any.fromFunction2(value))
       
       inline def setLayoutItemsUndefined: Self = StObject.set(x, "layoutItems", js.undefined)
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
       inline def setMasonry(
-        value: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]])
+        value: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]])
       ): Self = StObject.set(x, "masonry", value.asInstanceOf[js.Any])
       
-      inline def setOff(value: (/* eventName */ String, /* listener */ js.Any) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (/* eventName */ String, /* listener */ Any) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
       inline def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
       
-      inline def setOn(value: (/* eventName */ String, /* listener */ js.Any) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (/* eventName */ String, /* listener */ Any) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      inline def setOnce(value: (/* eventName */ String, /* listener */ js.Any) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (/* eventName */ String, /* listener */ Any) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
       inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
       
-      inline def setPrepended(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "prepended", js.Any.fromFunction1(value))
+      inline def setPrepended(value: /* elements */ js.Array[Any] => Unit): Self = StObject.set(x, "prepended", js.Any.fromFunction1(value))
       
       inline def setPrependedUndefined: Self = StObject.set(x, "prepended", js.undefined)
       
@@ -150,15 +148,15 @@ object mod {
       
       inline def setReloadItemsUndefined: Self = StObject.set(x, "reloadItems", js.undefined)
       
-      inline def setRemove(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: /* elements */ js.Array[Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
       inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      inline def setStamp(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "stamp", js.Any.fromFunction1(value))
+      inline def setStamp(value: /* elements */ js.Array[Any] => Unit): Self = StObject.set(x, "stamp", js.Any.fromFunction1(value))
       
       inline def setStampUndefined: Self = StObject.set(x, "stamp", js.undefined)
       
-      inline def setUnstamp(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "unstamp", js.Any.fromFunction1(value))
+      inline def setUnstamp(value: /* elements */ js.Array[Any] => Unit): Self = StObject.set(x, "unstamp", js.Any.fromFunction1(value))
       
       inline def setUnstampUndefined: Self = StObject.set(x, "unstamp", js.undefined)
     }
@@ -166,14 +164,14 @@ object mod {
   
   trait Options extends StObject {
     
-    var columnWidth: js.UndefOr[js.Any] = js.undefined
+    var columnWidth: js.UndefOr[Any] = js.undefined
     
     // setup
     var containerStyle: js.UndefOr[js.Object] = js.undefined
     
     var fitWidth: js.UndefOr[Boolean] = js.undefined
     
-    var gutter: js.UndefOr[js.Any] = js.undefined
+    var gutter: js.UndefOr[Any] = js.undefined
     
     var hiddenStyle: js.UndefOr[HiddenOrVisibleStyleOption] = js.undefined
     
@@ -196,7 +194,7 @@ object mod {
     
     var stamp: js.UndefOr[String] = js.undefined
     
-    var transitionDuration: js.UndefOr[js.Any] = js.undefined
+    var transitionDuration: js.UndefOr[Any] = js.undefined
     
     var visibleStyle: js.UndefOr[HiddenOrVisibleStyleOption] = js.undefined
   }
@@ -209,7 +207,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setColumnWidth(value: js.Any): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: Any): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
       inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
@@ -221,7 +219,7 @@ object mod {
       
       inline def setFitWidthUndefined: Self = StObject.set(x, "fitWidth", js.undefined)
       
-      inline def setGutter(value: js.Any): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Any): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
       inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
@@ -265,7 +263,7 @@ object mod {
       
       inline def setStampUndefined: Self = StObject.set(x, "stamp", js.undefined)
       
-      inline def setTransitionDuration(value: js.Any): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Any): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
       inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
@@ -282,6 +280,12 @@ object mod {
       
       def masonry(): JQuery = js.native
       def masonry(options: Options): JQuery = js.native
+      def masonry(selector: String): JQuery = js.native
+      def masonry(selector: String, options: Options): JQuery = js.native
+      def masonry(selector: String, options: JQuery): JQuery = js.native
+      def masonry(selector: Element): JQuery = js.native
+      def masonry(selector: Element, options: Options): JQuery = js.native
+      def masonry(selector: Element, options: JQuery): JQuery = js.native
     }
   }
 }

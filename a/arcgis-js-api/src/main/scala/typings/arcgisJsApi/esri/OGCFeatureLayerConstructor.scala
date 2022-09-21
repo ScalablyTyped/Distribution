@@ -15,4 +15,7 @@ trait OGCFeatureLayerConstructor
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html)
   */
 Instantiable0[OGCFeatureLayer]
-     with Instantiable1[/* properties */ OGCFeatureLayerProperties, OGCFeatureLayer]
+     with Instantiable1[/* properties */ OGCFeatureLayerProperties, OGCFeatureLayer] {
+  
+  def fromJSON(json: Any): OGCFeatureLayer = js.native
+}

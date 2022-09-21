@@ -1,13 +1,12 @@
 package typings.uws
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
-import typings.std.ArrayBuffer
-import typings.std.Error
 import typings.uws.anon.Binary
 import typings.uws.anon.BinaryBoolean
 import typings.uws.anon.Code
@@ -33,7 +32,7 @@ object mod {
   
   @JSImport("uws", JSImport.Namespace)
   @js.native
-  class ^ protected () extends WebSocket {
+  open class ^ protected () extends WebSocket {
     def this(address: String) = this()
     def this(address: String, options: IClientOptions) = this()
     def this(address: String, protocols: String) = this()
@@ -72,7 +71,7 @@ object mod {
   
   @JSImport("uws", "Server")
   @js.native
-  class Server () extends EventEmitter {
+  open class Server () extends EventEmitter {
     def this(options: IServerOptions) = this()
     def this(options: Unit, callback: js.Function) = this()
     def this(options: IServerOptions, callback: js.Function) = this()
@@ -80,19 +79,19 @@ object mod {
     @JSName("addListener")
     def addListener_connection(event: connection, cb: js.Function1[/* client */ WebSocket, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_headers(event: headers, cb: js.Function1[/* headers */ js.Array[String], Unit]): this.type = js.native
     
     var clients: js.Array[WebSocket] = js.native
     
     def close(): Unit = js.native
-    def close(cb: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def close(cb: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
     
     def handleUpgrade(
       request: IncomingMessage,
       socket: Socket,
-      upgradeHead: ArrayBuffer,
+      upgradeHead: js.typedarray.ArrayBuffer,
       callback: js.Function1[/* client */ WebSocket, Unit]
     ): Unit = js.native
     
@@ -100,7 +99,7 @@ object mod {
     def on_connection(event: connection, cb: js.ThisFunction1[/* this */ WebSocket, /* client */ WebSocket, Unit]): this.type = js.native
     // Events
     @JSName("on")
-    def on_error(event: error, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_headers(event: headers, cb: js.Function1[/* headers */ js.Array[String], Unit]): this.type = js.native
     
@@ -128,9 +127,9 @@ object mod {
     
     var agent: js.UndefOr[Agent] = js.undefined
     
-    var ca: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var ca: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var cert: js.UndefOr[js.Any] = js.undefined
+    var cert: js.UndefOr[Any] = js.undefined
     
     var ciphers: js.UndefOr[String] = js.undefined
     
@@ -138,17 +137,17 @@ object mod {
     
     var host: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[js.Any] = js.undefined
+    var key: js.UndefOr[Any] = js.undefined
     
     var origin: js.UndefOr[String] = js.undefined
     
     var passphrase: js.UndefOr[String] = js.undefined
     
-    var pfx: js.UndefOr[js.Any] = js.undefined
+    var pfx: js.UndefOr[Any] = js.undefined
     
     var protocol: js.UndefOr[String] = js.undefined
     
-    var protocolVersion: js.UndefOr[js.Any] = js.undefined
+    var protocolVersion: js.UndefOr[Any] = js.undefined
     
     var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
@@ -165,13 +164,13 @@ object mod {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setCa(value: js.Array[js.Any]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: js.Array[Any]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: js.Any*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: Any*): Self = StObject.set(x, "ca", js.Array(value*))
       
-      inline def setCert(value: js.Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
@@ -187,7 +186,7 @@ object mod {
       
       inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
@@ -199,7 +198,7 @@ object mod {
       
       inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
       
-      inline def setPfx(value: js.Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
@@ -207,7 +206,7 @@ object mod {
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      inline def setProtocolVersion(value: js.Any): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
+      inline def setProtocolVersion(value: Any): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
       
       inline def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
       
@@ -266,7 +265,7 @@ object mod {
     
     var disableHixie: js.UndefOr[Boolean] = js.undefined
     
-    var handleProtocols: js.UndefOr[js.Any] = js.undefined
+    var handleProtocols: js.UndefOr[Any] = js.undefined
     
     var host: js.UndefOr[String] = js.undefined
     
@@ -278,7 +277,24 @@ object mod {
     
     var port: js.UndefOr[Double] = js.undefined
     
-    var server: js.UndefOr[typings.node.httpMod.Server | typings.node.httpsMod.Server] = js.undefined
+    var server: js.UndefOr[
+        (typings.node.httpMod.Server[
+          Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[
+            /* socket */ typings.node.nodeNetMod.Socket, 
+            typings.node.nodeHttpMod.IncomingMessage
+          ], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+      ] = js.undefined
     
     var verifyClient: js.UndefOr[VerifyClientCallbackAsync | VerifyClientCallbackSync] = js.undefined
   }
@@ -299,7 +315,7 @@ object mod {
       
       inline def setDisableHixieUndefined: Self = StObject.set(x, "disableHixie", js.undefined)
       
-      inline def setHandleProtocols(value: js.Any): Self = StObject.set(x, "handleProtocols", value.asInstanceOf[js.Any])
+      inline def setHandleProtocols(value: Any): Self = StObject.set(x, "handleProtocols", value.asInstanceOf[js.Any])
       
       inline def setHandleProtocolsUndefined: Self = StObject.set(x, "handleProtocols", js.undefined)
       
@@ -323,7 +339,24 @@ object mod {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      inline def setServer(value: typings.node.httpMod.Server | typings.node.httpsMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(
+        value: (typings.node.httpMod.Server[
+              Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[IncomingMessage]
+              ]
+            ]) | (typings.node.httpsMod.Server[
+              Instantiable1[
+                /* socket */ typings.node.nodeNetMod.Socket, 
+                typings.node.nodeHttpMod.IncomingMessage
+              ], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+              ]
+            ])
+      ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
       inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
       
@@ -340,15 +373,29 @@ object mod {
   @js.native
   trait UwsHttp extends StObject {
     
-    def createServer(): typings.node.httpMod.Server = js.native
-    def createServer(requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]): typings.node.httpMod.Server = js.native
+    def createServer(): typings.node.httpMod.Server[
+        Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def createServer(
+      requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse[IncomingMessage], Unit]
+    ): typings.node.httpMod.Server[
+        Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
     
     // any to avoid express definitions
-    def getExpressApp(express: js.Any): js.Any = js.native
+    def getExpressApp(express: Any): Any = js.native
     
     def getRequestPrototype(): IncomingMessage = js.native
     
-    def getResponsePrototype(): ServerResponse = js.native
+    def getResponsePrototype(): ServerResponse[IncomingMessage] = js.native
   }
   
   type VerifyClientCallbackAsync = js.Function2[/* info */ Origin, /* callback */ js.Function1[/* res */ Boolean, Unit], Unit]
@@ -367,7 +414,7 @@ object mod {
     var OPEN: Double = js.native
     
     def addEventListener(method: String): Unit = js.native
-    def addEventListener(method: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def addEventListener(method: String, listener: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_close(method: close): Unit = js.native
     @JSName("addEventListener")
@@ -375,7 +422,7 @@ object mod {
     @JSName("addEventListener")
     def addEventListener_error(method: error): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_error(method: error, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def addEventListener_error(method: error, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     // HTML5 WebSocket events
     @JSName("addEventListener")
     def addEventListener_message(method: message): Unit = js.native
@@ -389,24 +436,24 @@ object mod {
     @JSName("addListener")
     def addListener_close(event: close, cb: js.Function2[/* code */ Double, /* message */ String, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_message(event: message, cb: js.Function2[/* data */ js.Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
+    def addListener_message(event: message, cb: js.Function2[/* data */ Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_open(event: open, cb: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_ping(event: ping, cb: js.Function2[/* data */ js.Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
+    def addListener_ping(event: ping, cb: js.Function2[/* data */ Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_pong(event: pong, cb: js.Function2[/* data */ js.Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
+    def addListener_pong(event: pong, cb: js.Function2[/* data */ Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
     
     var bytesReceived: Double = js.native
     
     def close(): Unit = js.native
     def close(code: Double): Unit = js.native
-    def close(code: Double, data: js.Any): Unit = js.native
-    def close(code: Unit, data: js.Any): Unit = js.native
+    def close(code: Double, data: Any): Unit = js.native
+    def close(code: Unit, data: Any): Unit = js.native
     
-    def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
+    def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_close(
       event: close,
@@ -414,28 +461,28 @@ object mod {
     ): this.type = js.native
     // Events
     @JSName("on")
-    def on_error(event: error, cb: js.ThisFunction1[/* this */ this.type, /* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, cb: js.ThisFunction1[/* this */ this.type, /* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_message(
       event: message,
-      cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ BinaryBoolean, Unit]
+      cb: js.ThisFunction2[/* this */ this.type, /* data */ Any, /* flags */ BinaryBoolean, Unit]
     ): this.type = js.native
     @JSName("on")
     def on_open(event: open, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
     @JSName("on")
     def on_ping(
       event: ping,
-      cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ BinaryBoolean, Unit]
+      cb: js.ThisFunction2[/* this */ this.type, /* data */ Any, /* flags */ BinaryBoolean, Unit]
     ): this.type = js.native
     @JSName("on")
     def on_pong(
       event: pong,
-      cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ BinaryBoolean, Unit]
+      cb: js.ThisFunction2[/* this */ this.type, /* data */ Any, /* flags */ BinaryBoolean, Unit]
     ): this.type = js.native
     
     def onclose(event: Code): Unit = js.native
     
-    def onerror(err: Error): Unit = js.native
+    def onerror(err: js.Error): Unit = js.native
     
     def onmessage(event: Data): Unit = js.native
     
@@ -444,19 +491,19 @@ object mod {
     def pause(): Unit = js.native
     
     def ping(): Unit = js.native
-    def ping(data: js.Any): Unit = js.native
-    def ping(data: js.Any, options: Unit, dontFail: Boolean): Unit = js.native
-    def ping(data: js.Any, options: Binary): Unit = js.native
-    def ping(data: js.Any, options: Binary, dontFail: Boolean): Unit = js.native
+    def ping(data: Any): Unit = js.native
+    def ping(data: Any, options: Unit, dontFail: Boolean): Unit = js.native
+    def ping(data: Any, options: Binary): Unit = js.native
+    def ping(data: Any, options: Binary, dontFail: Boolean): Unit = js.native
     def ping(data: Unit, options: Unit, dontFail: Boolean): Unit = js.native
     def ping(data: Unit, options: Binary): Unit = js.native
     def ping(data: Unit, options: Binary, dontFail: Boolean): Unit = js.native
     
     def pong(): Unit = js.native
-    def pong(data: js.Any): Unit = js.native
-    def pong(data: js.Any, options: Unit, dontFail: Boolean): Unit = js.native
-    def pong(data: js.Any, options: Binary): Unit = js.native
-    def pong(data: js.Any, options: Binary, dontFail: Boolean): Unit = js.native
+    def pong(data: Any): Unit = js.native
+    def pong(data: Any, options: Unit, dontFail: Boolean): Unit = js.native
+    def pong(data: Any, options: Binary): Unit = js.native
+    def pong(data: Any, options: Binary, dontFail: Boolean): Unit = js.native
     def pong(data: Unit, options: Unit, dontFail: Boolean): Unit = js.native
     def pong(data: Unit, options: Binary): Unit = js.native
     def pong(data: Unit, options: Binary, dontFail: Boolean): Unit = js.native
@@ -469,17 +516,17 @@ object mod {
     
     def resume(): Unit = js.native
     
-    def send(data: js.Any): Unit = js.native
-    def send(data: js.Any, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    def send(data: js.Any, options: Binary): Unit = js.native
-    def send(data: js.Any, options: Binary, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def send(data: Any): Unit = js.native
+    def send(data: Any, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def send(data: Any, options: Binary): Unit = js.native
+    def send(data: Any, options: Binary, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     def stream(): Unit = js.native
-    def stream(cb: js.Function2[/* err */ Error, /* final */ Boolean, Unit]): Unit = js.native
+    def stream(cb: js.Function2[/* err */ js.Error, /* final */ Boolean, Unit]): Unit = js.native
     def stream(options: Binary): Unit = js.native
-    def stream(options: Binary, cb: js.Function2[/* err */ Error, /* final */ Boolean, Unit]): Unit = js.native
+    def stream(options: Binary, cb: js.Function2[/* err */ js.Error, /* final */ Boolean, Unit]): Unit = js.native
     
-    var supports: js.Any = js.native
+    var supports: Any = js.native
     
     def terminate(): Unit = js.native
     

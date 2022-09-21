@@ -7,7 +7,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryEventObject
 import typings.jquery.JQueryPromise
 import typings.std.HTMLElement
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,21 +15,21 @@ object Featherlight {
   
   trait Config extends StObject {
     
-    var afterClose: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
+    var afterClose: js.UndefOr[js.Function1[/* event */ JQueryEventObject, Any]] = js.undefined
     
-    var afterContent: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
+    var afterContent: js.UndefOr[js.Function1[/* event */ JQueryEventObject, Any]] = js.undefined
     
-    var afterOpen: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
+    var afterOpen: js.UndefOr[js.Function1[/* event */ JQueryEventObject, Any]] = js.undefined
     
     var ajax: js.UndefOr[String] = js.undefined
     
     var background: js.UndefOr[String] = js.undefined
     
-    var beforeClose: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
+    var beforeClose: js.UndefOr[js.Function1[/* event */ JQueryEventObject, Any]] = js.undefined
     
-    var beforeContent: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
+    var beforeContent: js.UndefOr[js.Function1[/* event */ JQueryEventObject, Any]] = js.undefined
     
-    var beforeOpen: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
+    var beforeOpen: js.UndefOr[js.Function1[/* event */ JQueryEventObject, Any]] = js.undefined
     
     var closeIcon: js.UndefOr[String] = js.undefined
     
@@ -42,7 +41,7 @@ object Featherlight {
     
     var closeTrigger: js.UndefOr[String] = js.undefined
     
-    var contentFilters: js.UndefOr[js.Any] = js.undefined
+    var contentFilters: js.UndefOr[Any] = js.undefined
     
     var filter: js.UndefOr[String] = js.undefined
     
@@ -56,9 +55,9 @@ object Featherlight {
     
     var namespace: js.UndefOr[String] = js.undefined
     
-    var onKeyUp: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
+    var onKeyUp: js.UndefOr[js.Function1[/* event */ JQueryEventObject, Any]] = js.undefined
     
-    var onResize: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
+    var onResize: js.UndefOr[js.Function1[/* event */ JQueryEventObject, Any]] = js.undefined
     
     var openSpeed: js.UndefOr[Double | String] = js.undefined
     
@@ -89,15 +88,15 @@ object Featherlight {
     
     extension [Self <: Config](x: Self) {
       
-      inline def setAfterClose(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
+      inline def setAfterClose(value: /* event */ JQueryEventObject => Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      inline def setAfterContent(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterContent", js.Any.fromFunction1(value))
+      inline def setAfterContent(value: /* event */ JQueryEventObject => Any): Self = StObject.set(x, "afterContent", js.Any.fromFunction1(value))
       
       inline def setAfterContentUndefined: Self = StObject.set(x, "afterContent", js.undefined)
       
-      inline def setAfterOpen(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      inline def setAfterOpen(value: /* event */ JQueryEventObject => Any): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
       inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
@@ -109,15 +108,15 @@ object Featherlight {
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      inline def setBeforeClose(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+      inline def setBeforeClose(value: /* event */ JQueryEventObject => Any): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
       
       inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      inline def setBeforeContent(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeContent", js.Any.fromFunction1(value))
+      inline def setBeforeContent(value: /* event */ JQueryEventObject => Any): Self = StObject.set(x, "beforeContent", js.Any.fromFunction1(value))
       
       inline def setBeforeContentUndefined: Self = StObject.set(x, "beforeContent", js.undefined)
       
-      inline def setBeforeOpen(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(value: /* event */ JQueryEventObject => Any): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
@@ -141,7 +140,7 @@ object Featherlight {
       
       inline def setCloseTriggerUndefined: Self = StObject.set(x, "closeTrigger", js.undefined)
       
-      inline def setContentFilters(value: js.Any): Self = StObject.set(x, "contentFilters", value.asInstanceOf[js.Any])
+      inline def setContentFilters(value: Any): Self = StObject.set(x, "contentFilters", value.asInstanceOf[js.Any])
       
       inline def setContentFiltersUndefined: Self = StObject.set(x, "contentFilters", js.undefined)
       
@@ -169,11 +168,11 @@ object Featherlight {
       
       inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      inline def setOnKeyUp(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: /* event */ JQueryEventObject => Any): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
       inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      inline def setOnResize(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* event */ JQueryEventObject => Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
       inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
@@ -223,7 +222,7 @@ object Featherlight {
     
     var process: js.UndefOr[js.Function1[/* data */ JQuery | String, JQuery | JQueryPromise[JQuery]]] = js.undefined
     
-    var regex: js.UndefOr[RegExp] = js.undefined
+    var regex: js.UndefOr[js.RegExp] = js.undefined
     
     var test: js.UndefOr[js.Function1[/* data */ JQuery | String, Boolean]] = js.undefined
   }
@@ -240,7 +239,7 @@ object Featherlight {
       
       inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
@@ -322,7 +321,7 @@ object Featherlight {
     
     var defaults: Config = js.native
     
-    def extend(child: js.Any, defaults: js.Any): js.Any = js.native
+    def extend(child: Any, defaults: Any): Any = js.native
     
     var functionAttributes: js.Array[String] = js.native
     
@@ -330,7 +329,7 @@ object Featherlight {
     
     def opened(): js.Array[typings.featherlight.Featherlight.Featherlight] = js.native
     
-    def readElementConfig(element: HTMLElement, namespace: String): js.Any = js.native
+    def readElementConfig(element: HTMLElement, namespace: String): Any = js.native
   }
   
   @js.native

@@ -13,7 +13,7 @@ object parserMod {
   
   @JSImport("regexpp/parser", "RegExpParser")
   @js.native
-  class RegExpParser () extends StObject {
+  open class RegExpParser () extends StObject {
     def this(options: Options) = this()
     
     def parseFlags(source: String): Flags = js.native

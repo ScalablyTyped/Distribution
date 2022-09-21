@@ -2,9 +2,9 @@ package typings.firebaseInstallations
 
 import typings.firebaseInstallations.anon.Code
 import typings.firebaseInstallations.apiResponseMod.GenerateAuthTokenResponse
-import typings.firebaseInstallations.appConfigMod.AppConfig
 import typings.firebaseInstallations.installationEntryMod.CompletedAuthToken
 import typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry
+import typings.firebaseInstallations.installationImplMod.AppConfig
 import typings.firebaseUtil.mod.FirebaseError
 import typings.std.Headers
 import typings.std.Response
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object commonMod {
   
-  @JSImport("@firebase/installations/dist/src/api/common", JSImport.Namespace)
+  @JSImport("@firebase/installations/dist/esm/src/functions/common", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

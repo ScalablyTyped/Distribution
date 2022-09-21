@@ -18,7 +18,7 @@ object shellMod {
   
   @JSImport("ionic/lib/shell", "Shell")
   @js.native
-  class Shell protected ()
+  open class Shell protected ()
     extends StObject
        with IShell {
     def this(e: ShellDeps) = this()

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vlq" : "1.0.1"
+      "vlq" : "2.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "vlq" : "1.0.1"
+      "vlq" : "2.0.4"
     }
   ],
   "compile-devDependencies" : [

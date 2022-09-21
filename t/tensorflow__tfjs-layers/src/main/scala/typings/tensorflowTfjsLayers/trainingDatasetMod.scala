@@ -23,10 +23,10 @@ object trainingDatasetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def evaluateDataset[T](model: js.Any, dataset: Dataset[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
-  inline def evaluateDataset[T](model: js.Any, dataset: LazyIterator[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
+  inline def evaluateDataset[T](model: Any, dataset: Dataset[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
+  inline def evaluateDataset[T](model: Any, dataset: LazyIterator[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
   
-  inline def fitDataset[T](model: js.Any, dataset: Dataset[T], args: ModelFitDatasetArgs[T]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitDataset[T](model: Any, dataset: Dataset[T], args: ModelFitDatasetArgs[T]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
   
   trait FitDatasetElement extends StObject {
     
@@ -45,11 +45,11 @@ object trainingDatasetMod {
       
       inline def setXs(value: TensorOrArrayOrMap): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
-      inline def setXsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "xs", js.Array(value :_*))
+      inline def setXsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "xs", js.Array(value*))
       
       inline def setYs(value: TensorOrArrayOrMap): Self = StObject.set(x, "ys", value.asInstanceOf[js.Any])
       
-      inline def setYsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "ys", js.Array(value :_*))
+      inline def setYsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "ys", js.Array(value*))
     }
   }
   
@@ -237,13 +237,13 @@ object trainingDatasetMod {
       
       inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
-      inline def setCallbacksVarargs(value: (BaseCallback | CustomCallbackArgs)*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+      inline def setCallbacksVarargs(value: (BaseCallback | CustomCallbackArgs)*): Self = StObject.set(x, "callbacks", js.Array(value*))
       
       inline def setClassWeight(value: ClassWeight | js.Array[ClassWeight] | ClassWeightMap): Self = StObject.set(x, "classWeight", value.asInstanceOf[js.Any])
       
       inline def setClassWeightUndefined: Self = StObject.set(x, "classWeight", js.undefined)
       
-      inline def setClassWeightVarargs(value: ClassWeight*): Self = StObject.set(x, "classWeight", js.Array(value :_*))
+      inline def setClassWeightVarargs(value: ClassWeight*): Self = StObject.set(x, "classWeight", js.Array(value*))
       
       inline def setEpochs(value: Double): Self = StObject.set(x, "epochs", value.asInstanceOf[js.Any])
       

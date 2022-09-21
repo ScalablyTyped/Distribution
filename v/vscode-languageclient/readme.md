@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-languageclient
 
-Typings are for version 6.1.3
+Typings are for version 8.0.2
 
 ## Library description:
 VSCode Language client implementation
@@ -10,10 +10,10 @@ VSCode Language client implementation
 | ------------------ | :-------------: |
 | Full name          | vscode-languageclient |
 | Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 67 |
-| # downloads        | 2152764 |
-| # stars            | 0 |
+| # releases         | 40 |
+| # dependents       | 0.0 |
+| # downloads        | 538933.3333333334 |
+| # stars            | 1042.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/vscode-languageserver-node#readme)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.MergeMeshesOptimization")
 @js.native
-class MergeMeshesOptimization ()
+open class MergeMeshesOptimization ()
   extends StObject
      with typings.babylonjs.BABYLON.MergeMeshesOptimization {
   
@@ -42,6 +42,6 @@ object MergeMeshesOptimization {
   
   @JSGlobal("BABYLON.MergeMeshesOptimization._UpdateSelectionTree")
   @js.native
-  def _UpdateSelectionTree: js.Any = js.native
-  inline def _UpdateSelectionTree_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
+  def _UpdateSelectionTree: Any = js.native
+  inline def _UpdateSelectionTree_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
 }

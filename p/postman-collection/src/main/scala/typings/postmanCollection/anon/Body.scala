@@ -1,15 +1,14 @@
 package typings.postmanCollection.anon
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.postmanCollection.mod.HeaderDefinition
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Body extends StObject {
   
-  var body: String | Buffer | Uint8Array
+  var body: String | Buffer | js.typedarray.Uint8Array
   
   var elapsedTime: Double
   
@@ -21,14 +20,14 @@ trait Body extends StObject {
 }
 object Body {
   
-  inline def apply(body: String | Buffer | Uint8Array, elapsedTime: Double, statusCode: Double): Body = {
+  inline def apply(body: String | Buffer | js.typedarray.Uint8Array, elapsedTime: Double, statusCode: Double): Body = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Body]
   }
   
   extension [Self <: Body](x: Self) {
     
-    inline def setBody(value: String | Buffer | Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String | Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
@@ -36,7 +35,7 @@ object Body {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: HeaderDefinition*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: HeaderDefinition*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

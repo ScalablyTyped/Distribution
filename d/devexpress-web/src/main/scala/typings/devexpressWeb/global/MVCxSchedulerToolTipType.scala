@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MVCxSchedulerToolTipType")
 @js.native
-class MVCxSchedulerToolTipType ()
+open class MVCxSchedulerToolTipType ()
   extends StObject
      with typings.devexpressWeb.MVCxSchedulerToolTipType
 object MVCxSchedulerToolTipType {

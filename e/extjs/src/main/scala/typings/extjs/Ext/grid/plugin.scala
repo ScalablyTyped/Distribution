@@ -17,7 +17,7 @@ object plugin {
       * @param grid Object
       */
     @JSName("init")
-    var init_IBufferedRenderer: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var init_IBufferedRenderer: js.UndefOr[js.Function1[/* grid */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
     var leadingBufferZone: js.UndefOr[Double] = js.undefined
@@ -41,8 +41,8 @@ object plugin {
         js.Function4[
           /* recordIdx */ js.UndefOr[Double], 
           /* doSelect */ js.UndefOr[Boolean], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -68,7 +68,7 @@ object plugin {
     
     extension [Self <: IBufferedRenderer](x: Self) {
       
-      inline def setInit(value: /* grid */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* grid */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
@@ -89,7 +89,7 @@ object plugin {
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
       inline def setScrollTo(
-        value: (/* recordIdx */ js.UndefOr[Double], /* doSelect */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* recordIdx */ js.UndefOr[Double], /* doSelect */ js.UndefOr[Boolean], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "scrollTo", js.Any.fromFunction4(value))
       
       inline def setScrollToLoadBuffer(value: Double): Self = StObject.set(x, "scrollToLoadBuffer", value.asInstanceOf[js.Any])
@@ -119,7 +119,7 @@ object plugin {
     /** [Method] Starts editing by position row column
       * @param position Object A position with keys of row and column.
       */
-    var startEditByPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var startEditByPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Starts editing the specified record using the specified Column definition to define which field is being edited
       * @param record Ext.data.Model/Number The Store data record which backs the row to be edited, or index of the record.
@@ -128,7 +128,7 @@ object plugin {
       */
     @JSName("startEdit")
     var startEdit_ICellEditing: js.UndefOr[
-        js.Function2[/* record */ js.UndefOr[js.Any], /* columnHeader */ js.UndefOr[js.Any], Boolean]
+        js.Function2[/* record */ js.UndefOr[Any], /* columnHeader */ js.UndefOr[Any], Boolean]
       ] = js.undefined
   }
   object ICellEditing {
@@ -140,9 +140,9 @@ object plugin {
     
     extension [Self <: ICellEditing](x: Self) {
       
-      inline def setStartEdit(value: (/* record */ js.UndefOr[js.Any], /* columnHeader */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
+      inline def setStartEdit(value: (/* record */ js.UndefOr[Any], /* columnHeader */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
       
-      inline def setStartEditByPosition(value: /* position */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "startEditByPosition", js.Any.fromFunction1(value))
+      inline def setStartEditByPosition(value: /* position */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "startEditByPosition", js.Any.fromFunction1(value))
       
       inline def setStartEditByPositionUndefined: Self = StObject.set(x, "startEditByPosition", js.undefined)
       
@@ -155,7 +155,7 @@ object plugin {
        with IAbstractPlugin {
     
     /** [Config Option] (Object/Boolean) */
-    var containerScroll: js.UndefOr[js.Any] = js.undefined
+    var containerScroll: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var ddGroup: js.UndefOr[String] = js.undefined
@@ -179,7 +179,7 @@ object plugin {
       * @param view Object
       */
     @JSName("init")
-    var init_IDragDrop: js.UndefOr[js.Function1[/* view */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var init_IDragDrop: js.UndefOr[js.Function1[/* view */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IDragDrop {
     
@@ -190,7 +190,7 @@ object plugin {
     
     extension [Self <: IDragDrop](x: Self) {
       
-      inline def setContainerScroll(value: js.Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
+      inline def setContainerScroll(value: Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
       
       inline def setContainerScrollUndefined: Self = StObject.set(x, "containerScroll", js.undefined)
       
@@ -218,7 +218,7 @@ object plugin {
       
       inline def setEnableDropUndefined: Self = StObject.set(x, "enableDrop", js.undefined)
       
-      inline def setInit(value: /* view */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* view */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     }
@@ -234,7 +234,7 @@ object plugin {
     /** [Method] Adds the specified events to the list of events which this Observable may fire
       * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
       */
-    var addEvents: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+    var addEvents: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Appends an event handler to this object
       * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -244,7 +244,7 @@ object plugin {
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
     var addListener: js.UndefOr[
-        js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any]
+        js.Function4[js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], Any]
       ] = js.undefined
     
     /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
@@ -256,14 +256,7 @@ object plugin {
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
     var addManagedListener: js.UndefOr[
-        js.Function5[
-          js.UndefOr[js.Any], 
-          js.UndefOr[js.Any], 
-          js.UndefOr[js.Any], 
-          js.UndefOr[js.Any], 
-          js.UndefOr[js.Any], 
-          js.Any
-        ]
+        js.Function5[js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], Any]
       ] = js.undefined
     
     /** [Method] Cancels any active edit that is in progress  */
@@ -287,14 +280,14 @@ object plugin {
     /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
       * @param eventNames String/String[] The event name to bubble, or an Array of event names.
       */
-    var enableBubble: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+    var enableBubble: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
       * @param eventName String The name of the event to fire.
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
       */
-    var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
+    var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ Any, Boolean]] = js.undefined
     
     /** [Method] Fires the specified event with the passed parameter list
       * @param eventName String The name of the event to fire.
@@ -310,13 +303,13 @@ object plugin {
     var hasListener: js.UndefOr[js.Function1[js.UndefOr[String], Boolean]] = js.undefined
     
     /** [Property] (Object) */
-    var hasListeners: js.UndefOr[js.Any] = js.undefined
+    var hasListeners: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Boolean) */
     var isObservable: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var listeners: js.UndefOr[js.Any] = js.undefined
+    var listeners: js.UndefOr[Any] = js.undefined
     
     /** [Method] Shorthand for addManagedListener
       * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
@@ -327,14 +320,7 @@ object plugin {
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
     var mon: js.UndefOr[
-        js.Function5[
-          js.UndefOr[js.Any], 
-          js.UndefOr[js.Any], 
-          js.UndefOr[js.Any], 
-          js.UndefOr[js.Any], 
-          js.UndefOr[js.Any], 
-          js.Any
-        ]
+        js.Function5[js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], Any]
       ] = js.undefined
     
     /** [Method] Shorthand for removeManagedListener
@@ -344,7 +330,7 @@ object plugin {
       * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
       */
     var mun: js.UndefOr[
-        js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
+        js.Function4[js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Method] Shorthand for addListener
@@ -355,7 +341,7 @@ object plugin {
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
     var on: js.UndefOr[
-        js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any]
+        js.Function4[js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], Any]
       ] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
@@ -364,14 +350,14 @@ object plugin {
       * @param prefix String A common prefix to prepend to the event names. For example: this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Now the grid will forward 'load' and 'clear' events of store as 'storeload' and 'storeclear'.
       * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
       */
-    var relayEvents: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String], js.Any]] = js.undefined
+    var relayEvents: js.UndefOr[js.Function3[js.UndefOr[Any], js.UndefOr[Array], js.UndefOr[String], Any]] = js.undefined
     
     /** [Method] Removes an event handler
       * @param eventName String The type of event the handler was associated with.
       * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
       * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
       */
-    var removeListener: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.undefined
+    var removeListener: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[Any], js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Removes listeners that were added by the mon method
       * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
@@ -380,13 +366,13 @@ object plugin {
       * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
       */
     var removeManagedListener: js.UndefOr[
-        js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
+        js.Function4[js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Method] Resumes firing of the named event s
       * @param eventName String... Multiple event names to resume.
       */
-    var resumeEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var resumeEvent: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     /** [Method] Resumes firing events see suspendEvents */
     var resumeEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -396,13 +382,13 @@ object plugin {
       * @param columnHeader Ext.grid.column.Column/Number The Column object defining the column to be edited, or index of the column.
       */
     var startEdit: js.UndefOr[
-        js.Function2[/* record */ js.UndefOr[js.Any], /* columnHeader */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* record */ js.UndefOr[Any], /* columnHeader */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Method] Suspends firing of the named event s
       * @param eventName String... Multiple event names to suspend.
       */
-    var suspendEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var suspendEvent: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     /** [Method] Suspends the firing of all events
       * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
@@ -417,7 +403,7 @@ object plugin {
       * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
       * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
       */
-    var un: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.undefined
+    var un: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[Any], js.UndefOr[Any], Unit]] = js.undefined
   }
   object IEditing {
     
@@ -428,16 +414,16 @@ object plugin {
     
     extension [Self <: IEditing](x: Self) {
       
-      inline def setAddEvents(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
+      inline def setAddEvents(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
       
       inline def setAddEventsUndefined: Self = StObject.set(x, "addEvents", js.undefined)
       
-      inline def setAddListener(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
+      inline def setAddListener(value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Any): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
       
       inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
       
       inline def setAddManagedListener(
-        value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any
+        value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "addManagedListener", js.Any.fromFunction5(value))
       
       inline def setAddManagedListenerUndefined: Self = StObject.set(x, "addManagedListener", js.undefined)
@@ -466,11 +452,11 @@ object plugin {
       
       inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
       
-      inline def setEnableBubble(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
+      inline def setEnableBubble(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
       
       inline def setEnableBubbleUndefined: Self = StObject.set(x, "enableBubble", js.undefined)
       
-      inline def setFireEvent(value: (/* eventName */ String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
+      inline def setFireEvent(value: (/* eventName */ String, /* repeated */ Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
       
       inline def setFireEventArgs(value: (js.UndefOr[String], js.UndefOr[Array]) => Boolean): Self = StObject.set(x, "fireEventArgs", js.Any.fromFunction2(value))
       
@@ -482,7 +468,7 @@ object plugin {
       
       inline def setHasListenerUndefined: Self = StObject.set(x, "hasListener", js.undefined)
       
-      inline def setHasListeners(value: js.Any): Self = StObject.set(x, "hasListeners", value.asInstanceOf[js.Any])
+      inline def setHasListeners(value: Any): Self = StObject.set(x, "hasListeners", value.asInstanceOf[js.Any])
       
       inline def setHasListenersUndefined: Self = StObject.set(x, "hasListeners", js.undefined)
       
@@ -490,37 +476,37 @@ object plugin {
       
       inline def setIsObservableUndefined: Self = StObject.set(x, "isObservable", js.undefined)
       
-      inline def setListeners(value: js.Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
       inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
       inline def setMon(
-        value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any
+        value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "mon", js.Any.fromFunction5(value))
       
       inline def setMonUndefined: Self = StObject.set(x, "mon", js.undefined)
       
-      inline def setMun(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "mun", js.Any.fromFunction4(value))
+      inline def setMun(value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Unit): Self = StObject.set(x, "mun", js.Any.fromFunction4(value))
       
       inline def setMunUndefined: Self = StObject.set(x, "mun", js.undefined)
       
-      inline def setOn(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
+      inline def setOn(value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Any): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
       
       inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      inline def setRelayEvents(value: (js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String]) => js.Any): Self = StObject.set(x, "relayEvents", js.Any.fromFunction3(value))
+      inline def setRelayEvents(value: (js.UndefOr[Any], js.UndefOr[Array], js.UndefOr[String]) => Any): Self = StObject.set(x, "relayEvents", js.Any.fromFunction3(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
-      inline def setRemoveListener(value: (js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
+      inline def setRemoveListener(value: (js.UndefOr[String], js.UndefOr[Any], js.UndefOr[Any]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
       
       inline def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
       
-      inline def setRemoveManagedListener(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "removeManagedListener", js.Any.fromFunction4(value))
+      inline def setRemoveManagedListener(value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Unit): Self = StObject.set(x, "removeManagedListener", js.Any.fromFunction4(value))
       
       inline def setRemoveManagedListenerUndefined: Self = StObject.set(x, "removeManagedListener", js.undefined)
       
-      inline def setResumeEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "resumeEvent", js.Any.fromFunction1(value))
+      inline def setResumeEvent(value: /* repeated */ Any => Unit): Self = StObject.set(x, "resumeEvent", js.Any.fromFunction1(value))
       
       inline def setResumeEventUndefined: Self = StObject.set(x, "resumeEvent", js.undefined)
       
@@ -528,11 +514,11 @@ object plugin {
       
       inline def setResumeEventsUndefined: Self = StObject.set(x, "resumeEvents", js.undefined)
       
-      inline def setStartEdit(value: (/* record */ js.UndefOr[js.Any], /* columnHeader */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
+      inline def setStartEdit(value: (/* record */ js.UndefOr[Any], /* columnHeader */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
       
       inline def setStartEditUndefined: Self = StObject.set(x, "startEdit", js.undefined)
       
-      inline def setSuspendEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "suspendEvent", js.Any.fromFunction1(value))
+      inline def setSuspendEvent(value: /* repeated */ Any => Unit): Self = StObject.set(x, "suspendEvent", js.Any.fromFunction1(value))
       
       inline def setSuspendEventUndefined: Self = StObject.set(x, "suspendEvent", js.undefined)
       
@@ -544,7 +530,7 @@ object plugin {
       
       inline def setTriggerEventUndefined: Self = StObject.set(x, "triggerEvent", js.undefined)
       
-      inline def setUn(value: (js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
+      inline def setUn(value: (js.UndefOr[String], js.UndefOr[Any], js.UndefOr[Any]) => Unit): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
       
       inline def setUnUndefined: Self = StObject.set(x, "un", js.undefined)
     }
@@ -558,7 +544,7 @@ object plugin {
       * @param headerCt Object
       */
     @JSName("init")
-    var init_IHeaderReorderer: js.UndefOr[js.Function1[/* headerCt */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var init_IHeaderReorderer: js.UndefOr[js.Function1[/* headerCt */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IHeaderReorderer {
     
@@ -569,7 +555,7 @@ object plugin {
     
     extension [Self <: IHeaderReorderer](x: Self) {
       
-      inline def setInit(value: /* headerCt */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* headerCt */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     }
@@ -591,7 +577,7 @@ object plugin {
       * @param headerCt Object
       */
     @JSName("init")
-    var init_IHeaderResizer: js.UndefOr[js.Function1[/* headerCt */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var init_IHeaderResizer: js.UndefOr[js.Function1[/* headerCt */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of dynamic
       * @param dynamic Boolean
@@ -615,7 +601,7 @@ object plugin {
       
       inline def setGetDynamicUndefined: Self = StObject.set(x, "getDynamic", js.undefined)
       
-      inline def setInit(value: /* headerCt */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* headerCt */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
@@ -689,7 +675,7 @@ object plugin {
       * @param grid Object
       */
     @JSName("init")
-    var init_IRowExpander: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var init_IRowExpander: js.UndefOr[js.Function1[/* grid */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var selectRowOnExpand: js.UndefOr[Boolean] = js.undefined
@@ -711,7 +697,7 @@ object plugin {
       
       inline def setExpandOnEnterUndefined: Self = StObject.set(x, "expandOnEnter", js.undefined)
       
-      inline def setInit(value: /* grid */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* grid */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       

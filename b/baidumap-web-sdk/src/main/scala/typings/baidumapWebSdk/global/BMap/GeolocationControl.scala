@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.GeolocationControl")
 @js.native
-class GeolocationControl ()
+open class GeolocationControl ()
   extends StObject
      with typings.baidumapWebSdk.BMap.Control {
   def this(opts: GeolocationControlOptions) = this()

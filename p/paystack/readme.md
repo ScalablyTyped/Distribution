@@ -10,10 +10,10 @@ Paystack API wrapper
 | ------------------ | :-------------: |
 | Full name          | paystack |
 | Keywords           | payment, API, naira, paystack |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 61539 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3841.0 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/kehers/paystack)

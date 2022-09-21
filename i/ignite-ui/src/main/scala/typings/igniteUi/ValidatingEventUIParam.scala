@@ -9,17 +9,17 @@ trait ValidatingEventUIParam extends StObject {
   /**
     * Populated with options for the specific field in the collection or null.
     */
-  var fieldOptions: js.UndefOr[js.Any] = js.undefined
+  var fieldOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to the igValidator widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the current value in target.
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object ValidatingEventUIParam {
   
@@ -30,15 +30,15 @@ object ValidatingEventUIParam {
   
   extension [Self <: ValidatingEventUIParam](x: Self) {
     
-    inline def setFieldOptions(value: js.Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
+    inline def setFieldOptions(value: Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
     
     inline def setFieldOptionsUndefined: Self = StObject.set(x, "fieldOptions", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

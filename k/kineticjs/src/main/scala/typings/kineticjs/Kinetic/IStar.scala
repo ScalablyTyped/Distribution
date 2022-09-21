@@ -15,9 +15,9 @@ trait IStar
   
   def getOuterRadius(): Double = js.native
   
-  def setInnerRadius(radius: Double): js.Any = js.native
+  def setInnerRadius(radius: Double): Any = js.native
   
-  def setNumPoints(points: Double): js.Any = js.native
+  def setNumPoints(points: Double): Any = js.native
   
-  def setOuterRadius(radius: Double): js.Any = js.native
+  def setOuterRadius(radius: Double): Any = js.native
 }

@@ -17,7 +17,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("FirebaseClient")
     @js.native
-    class Class protected ()
+    open class Class protected ()
       extends StObject
          with typings.firebaseClient.mod.FirebaseClient {
       /**

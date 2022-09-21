@@ -23,7 +23,7 @@ object ReturnTypeRequestDatabaseResponse {
     
     inline def setParamsType(value: js.Array[RequestDatabaseRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: RequestDatabaseRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: RequestDatabaseRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: RequestDatabaseResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

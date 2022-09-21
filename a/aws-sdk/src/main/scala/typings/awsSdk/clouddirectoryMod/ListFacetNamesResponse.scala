@@ -29,7 +29,7 @@ object ListFacetNamesResponse {
     
     inline def setFacetNamesUndefined: Self = StObject.set(x, "FacetNames", js.undefined)
     
-    inline def setFacetNamesVarargs(value: FacetName*): Self = StObject.set(x, "FacetNames", js.Array(value :_*))
+    inline def setFacetNamesVarargs(value: FacetName*): Self = StObject.set(x, "FacetNames", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

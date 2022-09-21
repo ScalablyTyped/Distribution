@@ -26,7 +26,7 @@ object MachineTypesScopedList {
     
     inline def setMachineTypesUndefined: Self = StObject.set(x, "machineTypes", js.undefined)
     
-    inline def setMachineTypesVarargs(value: MachineType*): Self = StObject.set(x, "machineTypes", js.Array(value :_*))
+    inline def setMachineTypesVarargs(value: MachineType*): Self = StObject.set(x, "machineTypes", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

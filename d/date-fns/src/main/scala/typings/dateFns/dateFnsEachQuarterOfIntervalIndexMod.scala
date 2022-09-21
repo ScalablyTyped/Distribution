@@ -1,7 +1,6 @@
 package typings.dateFns
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,11 @@ object dateFnsEachQuarterOfIntervalIndexMod {
     
     @JSImport("date-fns/fp/eachQuarterOfInterval/index", JSImport.Default)
     @js.native
-    val ^ : CurriedFn1[Interval, js.Array[Date]] = js.native
+    val ^ : CurriedFn1[Interval, js.Array[js.Date]] = js.native
     
-    type _To = CurriedFn1[Interval, js.Array[Date]]
+    type _To = CurriedFn1[Interval, js.Array[js.Date]]
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn1[Interval, js.Array[Date]] = ^
+    override def _to: CurriedFn1[Interval, js.Array[js.Date]] = ^
   }
 }

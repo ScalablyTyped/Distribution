@@ -96,7 +96,7 @@ object loader {
     inline def apply(
       acquire: () => Unit,
       activate: (String, String, String, XRegistryKey) => XInterface,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       writeRegistryInfo: (XRegistryKey, String, String) => Boolean
     ): XImplementationLoader = {

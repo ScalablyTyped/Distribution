@@ -31,6 +31,6 @@ object SearchQuantumTasksResponse {
     
     inline def setQuantumTasks(value: QuantumTaskSummaryList): Self = StObject.set(x, "quantumTasks", value.asInstanceOf[js.Any])
     
-    inline def setQuantumTasksVarargs(value: QuantumTaskSummary*): Self = StObject.set(x, "quantumTasks", js.Array(value :_*))
+    inline def setQuantumTasksVarargs(value: QuantumTaskSummary*): Self = StObject.set(x, "quantumTasks", js.Array(value*))
   }
 }

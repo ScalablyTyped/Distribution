@@ -10,15 +10,12 @@ deep equals assertions with tolerance for chai
 | ------------------ | :-------------: |
 | Full name          | chai-roughly |
 | Keywords           | assertions, testing, chai, chai-plugin, numbers, deep-eql, tolerance |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 90025 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8079.0 |
+| # stars            | 11.0 |
 
 ## Links
-- [Homepage](https://github.com/Turbo87/chai-roughly#readme)
-- [Bugs](https://github.com/Turbo87/chai-roughly/issues)
-- [Repository](https://github.com/Turbo87/chai-roughly)
 - [Npm](https://www.npmjs.com/package/chai-roughly)
     
 

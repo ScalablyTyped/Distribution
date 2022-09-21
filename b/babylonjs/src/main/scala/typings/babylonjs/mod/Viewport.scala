@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "Viewport")
 @js.native
-class Viewport protected ()
+open class Viewport protected ()
   extends typings.babylonjs.legacyMod.Viewport {
   /**
     * Creates a Viewport object located at (x, y) and sized (width, height)

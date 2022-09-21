@@ -1,7 +1,6 @@
 package typings.xxhashjs
 
-import typings.node.Buffer
-import typings.std.ArrayBuffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,8 +20,8 @@ object mod {
     
     def apply(): HashObject = js.native
     def apply(data: String, seed: Double): UINT = js.native
+    def apply(data: js.typedarray.ArrayBuffer, seed: Double): UINT = js.native
     def apply(data: Buffer, seed: Double): UINT = js.native
-    def apply(data: ArrayBuffer, seed: Double): UINT = js.native
     def apply(seed: Double): HashObject = js.native
   }
   
@@ -34,8 +33,8 @@ object mod {
     def init(seed: Double): this.type = js.native
     
     def update(data: String): this.type = js.native
+    def update(data: js.typedarray.ArrayBuffer): this.type = js.native
     def update(data: Buffer): this.type = js.native
-    def update(data: ArrayBuffer): this.type = js.native
   }
   
   @js.native

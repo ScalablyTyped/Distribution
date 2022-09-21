@@ -1,32 +1,36 @@
 package typings.angularCompiler.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompiler.i18nAstMod.Message
-import typings.angularCompiler.i18nAstMod.Node
-import typings.angularCompiler.r3AstMod.BoundText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "TmplAstIcu")
 @js.native
-class TmplAstIcu protected ()
-  extends typings.angularCompiler.compilerMod.TmplAstIcu {
+open class TmplAstIcu protected ()
+  extends StObject
+     with TmplAstNode {
   def this(
-    vars: StringDictionary[BoundText],
-    placeholders: StringDictionary[typings.angularCompiler.r3AstMod.Text | BoundText],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    vars: StringDictionary[TmplAstBoundText],
+    placeholders: StringDictionary[TmplAstText | TmplAstBoundText],
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    vars: StringDictionary[BoundText],
-    placeholders: StringDictionary[typings.angularCompiler.r3AstMod.Text | BoundText],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Message
+    vars: StringDictionary[TmplAstBoundText],
+    placeholders: StringDictionary[TmplAstText | TmplAstBoundText],
+    sourceSpan: ParseSourceSpan,
+    i18n: I18nMeta2
   ) = this()
-  def this(
-    vars: StringDictionary[BoundText],
-    placeholders: StringDictionary[typings.angularCompiler.r3AstMod.Text | BoundText],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Node
-  ) = this()
+  
+  var i18n: js.UndefOr[I18nMeta2] = js.native
+  
+  var placeholders: StringDictionary[TmplAstText | TmplAstBoundText] = js.native
+  
+  /* CompleteClass */
+  var sourceSpan: ParseSourceSpan = js.native
+  
+  var vars: StringDictionary[TmplAstBoundText] = js.native
+  
+  /* CompleteClass */
+  override def visit[Result](visitor: Visitor3[Result]): Result = js.native
 }

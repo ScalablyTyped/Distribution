@@ -35,7 +35,7 @@ object XRubySelection {
   inline def apply(
     acquire: () => Unit,
     getRubyList: Boolean => SafeArray[PropertyValues],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setRubyList: (SeqEquiv[PropertyValues], Boolean) => Unit
   ): XRubySelection = {

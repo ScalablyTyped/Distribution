@@ -11,7 +11,7 @@ trait StatefulPolicyPreservedState extends StObject {
   var disks: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.StatefulPolicyPreservedStateDiskDevice}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.StatefulPolicyPreservedState & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.StatefulPolicyPreservedState & TopLevel[Any]
   ] = js.undefined
 }
 object StatefulPolicyPreservedState {
@@ -26,7 +26,7 @@ object StatefulPolicyPreservedState {
     inline def setDisks(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.StatefulPolicyPreservedStateDiskDevice}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.StatefulPolicyPreservedState & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.StatefulPolicyPreservedState & TopLevel[Any]
     ): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)

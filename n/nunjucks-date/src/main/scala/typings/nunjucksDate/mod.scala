@@ -10,8 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def install(env: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(env.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def install(env: js.Any, filterName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(env.asInstanceOf[js.Any], filterName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def install(env: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(env.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(env: Any, filterName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(env.asInstanceOf[js.Any], filterName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setDefaultFormat(formatString: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultFormat")(formatString.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

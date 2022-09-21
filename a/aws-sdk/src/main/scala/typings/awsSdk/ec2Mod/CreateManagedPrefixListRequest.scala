@@ -64,7 +64,7 @@ object CreateManagedPrefixListRequest {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
     
-    inline def setEntriesVarargs(value: AddPrefixListEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: AddPrefixListEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
     
     inline def setMaxEntries(value: Integer): Self = StObject.set(x, "MaxEntries", value.asInstanceOf[js.Any])
     
@@ -74,6 +74,6 @@ object CreateManagedPrefixListRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
   }
 }

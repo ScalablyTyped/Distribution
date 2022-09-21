@@ -12,17 +12,17 @@ object mod {
   
   @JSImport("rsocket-tcp-client", JSImport.Default)
   @js.native
-  class default protected () extends RSocketTcpClient {
+  open class default protected () extends RSocketTcpClient {
     def this(options: TcpSocketConnectOpts) = this()
-    def this(options: TcpSocketConnectOpts, encoders: Encoders[js.Any]) = this()
+    def this(options: TcpSocketConnectOpts, encoders: Encoders[Any]) = this()
   }
   
   @JSImport("rsocket-tcp-client", "RSocketTcpConnection")
   @js.native
-  class RSocketTcpConnection ()
+  open class RSocketTcpConnection ()
     extends typings.rsocketTcpClient.rsockettcpclientMod.RSocketTcpConnection {
     def this(socket: Socket) = this()
-    def this(socket: Unit, encoders: Encoders[js.Any]) = this()
-    def this(socket: Socket, encoders: Encoders[js.Any]) = this()
+    def this(socket: Unit, encoders: Encoders[Any]) = this()
+    def this(socket: Socket, encoders: Encoders[Any]) = this()
   }
 }

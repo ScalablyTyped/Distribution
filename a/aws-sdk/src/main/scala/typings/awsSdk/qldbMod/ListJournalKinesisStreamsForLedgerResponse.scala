@@ -33,6 +33,6 @@ object ListJournalKinesisStreamsForLedgerResponse {
     
     inline def setStreamsUndefined: Self = StObject.set(x, "Streams", js.undefined)
     
-    inline def setStreamsVarargs(value: JournalKinesisStreamDescription*): Self = StObject.set(x, "Streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: JournalKinesisStreamDescription*): Self = StObject.set(x, "Streams", js.Array(value*))
   }
 }

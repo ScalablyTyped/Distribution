@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.InsertionOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait AccesstokenAdvertiserIdAlt extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Immutable. The unique ID of the advertiser that the manual trigger belongs to. */
+  /** Output only. The unique ID of the advertiser the insertion order belongs to. */
   var advertiserId: String
   
   /** Data format for response. */
@@ -37,11 +38,8 @@ trait AccesstokenAdvertiserIdAlt extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the manual trigger. */
-  var triggerId: String
-  
-  /** Required. The mask to control which fields to update. */
-  var updateMask: js.UndefOr[String] = js.undefined
+  /** Request body */
+  var resource: InsertionOrder
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +49,8 @@ trait AccesstokenAdvertiserIdAlt extends StObject {
 }
 object AccesstokenAdvertiserIdAlt {
   
-  inline def apply(advertiserId: String, triggerId: String): AccesstokenAdvertiserIdAlt = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], triggerId = triggerId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, resource: InsertionOrder): AccesstokenAdvertiserIdAlt = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAdvertiserIdAlt]
   }
   
@@ -96,11 +94,7 @@ object AccesstokenAdvertiserIdAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setResource(value: InsertionOrder): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

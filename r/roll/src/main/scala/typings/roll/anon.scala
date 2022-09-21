@@ -30,7 +30,7 @@ object anon {
       
       inline def setTransformations(value: js.Array[RollTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
-      inline def setTransformationsVarargs(value: RollTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      inline def setTransformationsVarargs(value: RollTransformation*): Self = StObject.set(x, "transformations", js.Array(value*))
     }
   }
 }

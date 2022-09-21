@@ -4,7 +4,4 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Service-side response to WorkerMessage reporting resource utilization.
-  */
 trait SchemaResourceUtilizationReportResponse extends StObject

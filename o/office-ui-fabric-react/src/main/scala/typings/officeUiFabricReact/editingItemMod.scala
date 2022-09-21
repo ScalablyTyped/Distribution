@@ -11,27 +11,26 @@ object editingItemMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/Items/EditingItem", "EditingItem")
   @js.native
-  class EditingItem protected ()
-    extends Component[IEditingSelectedPeopleItemProps, IPeoplePickerItemState, js.Any] {
+  open class EditingItem protected () extends Component[IEditingSelectedPeopleItemProps, IPeoplePickerItemState, Any] {
     def this(props: IEditingSelectedPeopleItemProps) = this()
     
-    /* private */ var _editingFloatingPicker: js.Any = js.native
+    /* private */ var _editingFloatingPicker: Any = js.native
     
-    /* private */ var _editingInput: js.Any = js.native
+    /* private */ var _editingInput: Any = js.native
     
-    /* private */ var _onInputBlur: js.Any = js.native
+    /* private */ var _onInputBlur: Any = js.native
     
-    /* private */ var _onInputChange: js.Any = js.native
+    /* private */ var _onInputChange: Any = js.native
     
-    /* private */ var _onInputClick: js.Any = js.native
+    /* private */ var _onInputClick: Any = js.native
     
-    /* private */ var _onInputKeyDown: js.Any = js.native
+    /* private */ var _onInputKeyDown: Any = js.native
     
-    /* private */ var _onSuggestionSelected: js.Any = js.native
+    /* private */ var _onSuggestionSelected: Any = js.native
     
-    /* private */ var _renderEditingSuggestions: js.Any = js.native
+    /* private */ var _renderEditingSuggestions: Any = js.native
     
-    /* private */ var _resolveInputRef: js.Any = js.native
+    /* private */ var _resolveInputRef: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MEditingItem(): Unit = js.native

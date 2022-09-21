@@ -29,7 +29,7 @@ object ListMemberAccountsResponse {
     
     inline def setMemberAccountsUndefined: Self = StObject.set(x, "MemberAccounts", js.undefined)
     
-    inline def setMemberAccountsVarargs(value: AWSAccountId*): Self = StObject.set(x, "MemberAccounts", js.Array(value :_*))
+    inline def setMemberAccountsVarargs(value: AWSAccountId*): Self = StObject.set(x, "MemberAccounts", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

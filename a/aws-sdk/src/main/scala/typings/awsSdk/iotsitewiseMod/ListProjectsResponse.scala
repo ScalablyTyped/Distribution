@@ -31,6 +31,6 @@ object ListProjectsResponse {
     
     inline def setProjectSummaries(value: ProjectSummaries): Self = StObject.set(x, "projectSummaries", value.asInstanceOf[js.Any])
     
-    inline def setProjectSummariesVarargs(value: ProjectSummary*): Self = StObject.set(x, "projectSummaries", js.Array(value :_*))
+    inline def setProjectSummariesVarargs(value: ProjectSummary*): Self = StObject.set(x, "projectSummaries", js.Array(value*))
   }
 }

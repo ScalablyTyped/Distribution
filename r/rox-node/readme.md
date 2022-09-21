@@ -1,7 +1,7 @@
 
 # Scala.js typings for rox-node
 
-Typings are for version 4.8
+Typings are for version 5.0
 
 ## Library description:
 Rollout.io ROX JS SDK Node
@@ -10,10 +10,10 @@ Rollout.io ROX JS SDK Node
 | ------------------ | :-------------: |
 | Full name          | rox-node |
 | Keywords           | feature-flag, feature-flags, rollout, rox, flags, flag, configuration, remote-control, rollout.io |
-| # releases         | 28 |
-| # dependents       | 2 |
-| # downloads        | 381758 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 84107.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://rollout.io)

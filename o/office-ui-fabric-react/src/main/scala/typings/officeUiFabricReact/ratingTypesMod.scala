@@ -3,11 +3,14 @@ package typings.officeUiFabricReact
 import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.react.mod.AllHTMLAttributes
 import typings.react.mod.FocusEvent
+import typings.std.Element
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet
 import typings.uifabricUtilities.createRefMod.IRefObject
+import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,6 +49,13 @@ object ratingTypesMod {
       * Allow the rating value to be set to 0 instead of a minimum of 1.
       */
     var allowZeroStars: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Optional aria-label for rating control.
+      * If rating control is readOnly, it is recommended to provide a getAriaLabel prop instead
+      * since otherwise the current rating value will not be read.
+      */
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Optional label format for a rating star that will be read by screen readers.
@@ -93,13 +103,18 @@ object ratingTypesMod {
       */
     @JSName("onChange")
     var onChange_IRatingProps: js.UndefOr[
-        js.Function2[/* event */ FocusEvent[HTMLElement], /* rating */ js.UndefOr[Double], Unit]
+        js.Function2[/* event */ FocusEvent[HTMLElement, Element], /* rating */ js.UndefOr[Double], Unit]
       ] = js.undefined
     
     /**
       * @deprecated Use `onChange` instead.
       */
     var onChanged: js.UndefOr[js.Function1[/* rating */ Double, Unit]] = js.undefined
+    
+    /**
+      * Optional custom renderer for the star component.
+      */
+    var onRenderStar: js.UndefOr[IRenderFunction[IRatingStarProps]] = js.undefined
     
     /**
       * Selected rating, has to be an integer between min and max
@@ -141,6 +156,8 @@ object ratingTypesMod {
       
       inline def setAllowZeroStarsUndefined: Self = StObject.set(x, "allowZeroStars", js.undefined)
       
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      
       inline def setAriaLabelFormat(value: String): Self = StObject.set(x, "ariaLabelFormat", value.asInstanceOf[js.Any])
       
       inline def setAriaLabelFormatUndefined: Self = StObject.set(x, "ariaLabelFormat", js.undefined)
@@ -148,6 +165,8 @@ object ratingTypesMod {
       inline def setAriaLabelId(value: String): Self = StObject.set(x, "ariaLabelId", value.asInstanceOf[js.Any])
       
       inline def setAriaLabelIdUndefined: Self = StObject.set(x, "ariaLabelId", js.undefined)
+      
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
       inline def setComponentRef(value: IRefObject[IRating]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -171,13 +190,24 @@ object ratingTypesMod {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setOnChange(value: (/* event */ FocusEvent[HTMLElement], /* rating */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* event */ FocusEvent[HTMLElement, Element], /* rating */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnChanged(value: /* rating */ Double => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
       
       inline def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
+      
+      inline def setOnRenderStar(
+        value: (/* props */ js.UndefOr[IRatingStarProps], /* defaultRender */ js.UndefOr[
+              js.Function1[
+                /* props */ js.UndefOr[IRatingStarProps], 
+                typings.react.mod.global.JSX.Element | Null
+              ]
+            ]) => typings.react.mod.global.JSX.Element | Null
+      ): Self = StObject.set(x, "onRenderStar", js.Any.fromFunction2(value))
+      
+      inline def setOnRenderStarUndefined: Self = StObject.set(x, "onRenderStar", js.undefined)
       
       inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
@@ -200,6 +230,41 @@ object ratingTypesMod {
       inline def setUnselectedIcon(value: String): Self = StObject.set(x, "unselectedIcon", value.asInstanceOf[js.Any])
       
       inline def setUnselectedIconUndefined: Self = StObject.set(x, "unselectedIcon", js.undefined)
+    }
+  }
+  
+  trait IRatingStarProps
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
+    
+    var classNames: IProcessedStyleSet[IRatingStyles]
+    
+    var fillPercentage: Double
+    
+    var icon: js.UndefOr[String] = js.undefined
+    
+    var starNum: js.UndefOr[Double] = js.undefined
+  }
+  object IRatingStarProps {
+    
+    inline def apply(classNames: IProcessedStyleSet[IRatingStyles], fillPercentage: Double): IRatingStarProps = {
+      val __obj = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any], fillPercentage = fillPercentage.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IRatingStarProps]
+    }
+    
+    extension [Self <: IRatingStarProps](x: Self) {
+      
+      inline def setClassNames(value: IProcessedStyleSet[IRatingStyles]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      
+      inline def setFillPercentage(value: Double): Self = StObject.set(x, "fillPercentage", value.asInstanceOf[js.Any])
+      
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setStarNum(value: Double): Self = StObject.set(x, "starNum", value.asInstanceOf[js.Any])
+      
+      inline def setStarNumUndefined: Self = StObject.set(x, "starNum", js.undefined)
     }
   }
   

@@ -10,7 +10,7 @@ trait MimeContent extends StObject {
   var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The byte array that contains the actual content.
-  var value: js.UndefOr[NullableOption[Double]] = js.undefined
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object MimeContent {
   
@@ -27,7 +27,7 @@ object MimeContent {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValue(value: NullableOption[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     

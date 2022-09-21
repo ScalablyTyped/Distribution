@@ -12,9 +12,14 @@ trait DescribeAssetModelResponse extends StObject {
   var assetModelArn: ARN
   
   /**
+    * The list of composite asset models for the asset model.
+    */
+  var assetModelCompositeModels: js.UndefOr[AssetModelCompositeModels] = js.undefined
+  
+  /**
     * The date the asset model was created, in Unix epoch time.
     */
-  var assetModelCreationDate: Timestamp
+  var assetModelCreationDate: js.Date
   
   /**
     * The asset model's description.
@@ -34,7 +39,7 @@ trait DescribeAssetModelResponse extends StObject {
   /**
     * The date the asset model was last updated, in Unix epoch time.
     */
-  var assetModelLastUpdateDate: Timestamp
+  var assetModelLastUpdateDate: js.Date
   
   /**
     * The name of the asset model.
@@ -42,7 +47,7 @@ trait DescribeAssetModelResponse extends StObject {
   var assetModelName: Name
   
   /**
-    * The list of asset properties for the asset model.
+    * The list of asset properties for the asset model. This object doesn't include properties that you define in composite models. You can find composite model properties in the assetModelCompositeModels object.
     */
   var assetModelProperties: AssetModelProperties
   
@@ -55,11 +60,11 @@ object DescribeAssetModelResponse {
   
   inline def apply(
     assetModelArn: ARN,
-    assetModelCreationDate: Timestamp,
+    assetModelCreationDate: js.Date,
     assetModelDescription: Description,
     assetModelHierarchies: AssetModelHierarchies,
     assetModelId: ID,
-    assetModelLastUpdateDate: Timestamp,
+    assetModelLastUpdateDate: js.Date,
     assetModelName: Name,
     assetModelProperties: AssetModelProperties,
     assetModelStatus: AssetModelStatus
@@ -72,23 +77,29 @@ object DescribeAssetModelResponse {
     
     inline def setAssetModelArn(value: ARN): Self = StObject.set(x, "assetModelArn", value.asInstanceOf[js.Any])
     
-    inline def setAssetModelCreationDate(value: Timestamp): Self = StObject.set(x, "assetModelCreationDate", value.asInstanceOf[js.Any])
+    inline def setAssetModelCompositeModels(value: AssetModelCompositeModels): Self = StObject.set(x, "assetModelCompositeModels", value.asInstanceOf[js.Any])
+    
+    inline def setAssetModelCompositeModelsUndefined: Self = StObject.set(x, "assetModelCompositeModels", js.undefined)
+    
+    inline def setAssetModelCompositeModelsVarargs(value: AssetModelCompositeModel*): Self = StObject.set(x, "assetModelCompositeModels", js.Array(value*))
+    
+    inline def setAssetModelCreationDate(value: js.Date): Self = StObject.set(x, "assetModelCreationDate", value.asInstanceOf[js.Any])
     
     inline def setAssetModelDescription(value: Description): Self = StObject.set(x, "assetModelDescription", value.asInstanceOf[js.Any])
     
     inline def setAssetModelHierarchies(value: AssetModelHierarchies): Self = StObject.set(x, "assetModelHierarchies", value.asInstanceOf[js.Any])
     
-    inline def setAssetModelHierarchiesVarargs(value: AssetModelHierarchy*): Self = StObject.set(x, "assetModelHierarchies", js.Array(value :_*))
+    inline def setAssetModelHierarchiesVarargs(value: AssetModelHierarchy*): Self = StObject.set(x, "assetModelHierarchies", js.Array(value*))
     
     inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     
-    inline def setAssetModelLastUpdateDate(value: Timestamp): Self = StObject.set(x, "assetModelLastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setAssetModelLastUpdateDate(value: js.Date): Self = StObject.set(x, "assetModelLastUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setAssetModelName(value: Name): Self = StObject.set(x, "assetModelName", value.asInstanceOf[js.Any])
     
     inline def setAssetModelProperties(value: AssetModelProperties): Self = StObject.set(x, "assetModelProperties", value.asInstanceOf[js.Any])
     
-    inline def setAssetModelPropertiesVarargs(value: AssetModelProperty*): Self = StObject.set(x, "assetModelProperties", js.Array(value :_*))
+    inline def setAssetModelPropertiesVarargs(value: AssetModelProperty*): Self = StObject.set(x, "assetModelProperties", js.Array(value*))
     
     inline def setAssetModelStatus(value: AssetModelStatus): Self = StObject.set(x, "assetModelStatus", value.asInstanceOf[js.Any])
   }

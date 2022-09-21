@@ -15,11 +15,11 @@ object confirmMod {
     * @template TQuestion
     * The options for the question.
     */
-  @JSImport("inquirer/lib/prompts/confirm", JSImport.Namespace)
+  @JSImport("inquirer/lib/prompts/confirm", JSImport.Default)
   @js.native
-  class ^[TQuestion /* <: Question */] protected () extends ConfirmPrompt[TQuestion] {
+  open class default[TQuestion /* <: Question */] protected () extends ConfirmPrompt[TQuestion] {
     /**
-      * Initializes a new instance of the `ConfirmPrompt<T>` class.
+      * Initializes a new instance of the {@link ConfirmPrompt `ConfirmPrompt<TQuestion>`} class.
       *
       * @param question
       * The question to prompt the user to answer.
@@ -30,7 +30,7 @@ object confirmMod {
       * @param answers
       * The answer-object.
       */
-    def this(questions: TQuestion, readLine: Interface, answers: Answers) = this()
+    def this(question: TQuestion, readLine: Interface, answers: Answers) = this()
   }
   
   /**
@@ -41,7 +41,7 @@ object confirmMod {
     */
   @js.native
   trait ConfirmPrompt[TQuestion /* <: Question */]
-    extends typings.inquirer.baseMod.^[TQuestion] {
+    extends typings.inquirer.baseMod.default[TQuestion] {
     
     /**
       * Handles the `success`-event of the prompt.
@@ -67,7 +67,7 @@ object confirmMod {
   }
   
   /**
-    * The question-options for the `ConfirmPrompt<T>`.
+    * The question-options for the {@link ConfirmPrompt `ConfirmPrompt<TQuestion>`}.
     */
   type Question = ConfirmQuestionOptions[Answers]
 }

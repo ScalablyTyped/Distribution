@@ -17,13 +17,6 @@ trait TileLayerFetchTileOptions
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#fetchTile)
     */
   var signal: js.UndefOr[AbortSignal] = js.undefined
-  
-  /**
-    * Number to append to the tile request to prevent fetching the tile from the browser cache.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#fetchTile)
-    */
-  var timestamp: js.UndefOr[Boolean] = js.undefined
 }
 object TileLayerFetchTileOptions {
   
@@ -41,9 +34,5 @@ object TileLayerFetchTileOptions {
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
-    
-    inline def setTimestamp(value: Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
-    
-    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

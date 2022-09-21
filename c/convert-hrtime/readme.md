@@ -1,19 +1,19 @@
 
 # Scala.js typings for convert-hrtime
 
-Typings are for version 3.0.0
+Typings are for version 5.0.0
 
 ## Library description:
-Convert the result of `process.hrtime()` to seconds, milliseconds, nanoseconds
+Convert the result of `process.hrtime.bigint()` to seconds, milliseconds, nanoseconds
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | convert-hrtime |
-| Keywords           | process, hrtime, time, highres, perf, performance, bench, benchmark, measure, seconds, milliseconds, nanoseconds |
-| # releases         | 2 |
-| # dependents       | 52 |
-| # downloads        | 19861838 |
-| # stars            | 1 |
+| Keywords           | process, hrtime, time, highres, performance, bench, benchmark, measure, seconds, milliseconds, nanoseconds |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3495082.3333333335 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/convert-hrtime#readme)

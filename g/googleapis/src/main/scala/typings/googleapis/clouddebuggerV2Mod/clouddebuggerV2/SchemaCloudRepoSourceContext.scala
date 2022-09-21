@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A CloudRepoSourceContext denotes a particular revision in a cloud repo (a
-  * repo hosted by the Google Cloud Platform).
-  */
 trait SchemaCloudRepoSourceContext extends StObject {
   
   /**
@@ -18,7 +14,7 @@ trait SchemaCloudRepoSourceContext extends StObject {
   /**
     * The name of an alias (branch, tag, etc.).
     */
-  var aliasName: js.UndefOr[String] = js.undefined
+  var aliasName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the repo.
@@ -28,7 +24,7 @@ trait SchemaCloudRepoSourceContext extends StObject {
   /**
     * A revision ID.
     */
-  var revisionId: js.UndefOr[String] = js.undefined
+  var revisionId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCloudRepoSourceContext {
   
@@ -45,6 +41,8 @@ object SchemaCloudRepoSourceContext {
     
     inline def setAliasName(value: String): Self = StObject.set(x, "aliasName", value.asInstanceOf[js.Any])
     
+    inline def setAliasNameNull: Self = StObject.set(x, "aliasName", null)
+    
     inline def setAliasNameUndefined: Self = StObject.set(x, "aliasName", js.undefined)
     
     inline def setRepoId(value: SchemaRepoId): Self = StObject.set(x, "repoId", value.asInstanceOf[js.Any])
@@ -52,6 +50,8 @@ object SchemaCloudRepoSourceContext {
     inline def setRepoIdUndefined: Self = StObject.set(x, "repoId", js.undefined)
     
     inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    
+    inline def setRevisionIdNull: Self = StObject.set(x, "revisionId", null)
     
     inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }

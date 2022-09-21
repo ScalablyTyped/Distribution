@@ -43,7 +43,7 @@ trait QueryContextType extends StObject {
   var queryInputTime: Double
   
   /** Object used by interceptors to assign interceptor-specific, query-specific context. */
-  var sandbox: Record[String, js.Any]
+  var sandbox: Record[String, Any]
   
   var stackTrace: js.Array[CallSiteType] | Null
   
@@ -61,7 +61,7 @@ object QueryContextType {
     poolId: String,
     queryId: QueryIdType,
     queryInputTime: Double,
-    sandbox: Record[String, js.Any]
+    sandbox: Record[String, Any]
   ): QueryContextType = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], originalQuery = originalQuery.asInstanceOf[js.Any], poolId = poolId.asInstanceOf[js.Any], queryId = queryId.asInstanceOf[js.Any], queryInputTime = queryInputTime.asInstanceOf[js.Any], sandbox = sandbox.asInstanceOf[js.Any], stackTrace = null)
     __obj.asInstanceOf[QueryContextType]
@@ -81,13 +81,13 @@ object QueryContextType {
     
     inline def setQueryInputTime(value: Double): Self = StObject.set(x, "queryInputTime", value.asInstanceOf[js.Any])
     
-    inline def setSandbox(value: Record[String, js.Any]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: Record[String, Any]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     inline def setStackTrace(value: js.Array[CallSiteType]): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
     inline def setStackTraceNull: Self = StObject.set(x, "stackTrace", null)
     
-    inline def setStackTraceVarargs(value: CallSiteType*): Self = StObject.set(x, "stackTrace", js.Array(value :_*))
+    inline def setStackTraceVarargs(value: CallSiteType*): Self = StObject.set(x, "stackTrace", js.Array(value*))
     
     inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     

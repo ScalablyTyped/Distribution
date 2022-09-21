@@ -9,79 +9,85 @@ trait CascadedShadowGenerator
   extends StObject
      with ShadowGenerator {
   
-  /* private */ var _autoCalcDepthBounds: js.Any = js.native
+  /* private */ var _autoCalcDepthBounds: Any = js.native
+  
+  /* protected */ def _bindCustomEffectForRenderSubMeshForShadowMap(subMesh: SubMesh, effect: Effect): Unit = js.native
   
   /* protected */ var _breaksAreDirty: Boolean = js.native
   
-  /* private */ var _cascadeBlendPercentage: js.Any = js.native
+  /* private */ var _cascadeBlendPercentage: Any = js.native
   
-  /* private */ var _cascadeMaxExtents: js.Any = js.native
+  /* private */ var _cascadeMaxExtents: Any = js.native
   
-  /* private */ var _cascadeMinExtents: js.Any = js.native
+  /* private */ var _cascadeMinExtents: Any = js.native
   
-  /* private */ var _cascades: js.Any = js.native
+  /* private */ var _cascades: Any = js.native
   
-  /* private */ var _computeCascadeFrustum: js.Any = js.native
+  /* private */ var _computeCascadeFrustum: Any = js.native
   
-  /* private */ var _computeFrustumInWorldSpace: js.Any = js.native
+  /* private */ var _computeFrustumInWorldSpace: Any = js.native
   
-  /* private */ var _computeMatrices: js.Any = js.native
+  /* private */ var _computeMatrices: Any = js.native
   
   /* protected */ def _computeShadowCastersBoundingInfo(): Unit = js.native
   
-  /* private */ var _currentLayer: js.Any = js.native
+  /* private */ var _currentLayer: Any = js.native
   
   /* protected */ var _debug: Boolean = js.native
   
-  /* private */ var _depthClamp: js.Any = js.native
+  /* private */ var _depthClamp: Any = js.native
   
-  /* private */ var _depthCorrection: js.Any = js.native
+  /* private */ var _depthCorrection: Any = js.native
   
-  /* private */ var _depthReducer: js.Any = js.native
+  /* private */ var _depthReducer: Any = js.native
   
-  /* private */ var _depthRenderer: js.Any = js.native
+  /* private */ var _depthRenderer: Any = js.native
   
-  /* private */ var _freezeShadowCastersBoundingInfo: js.Any = js.native
+  /* private */ var _freezeShadowCastersBoundingInfo: Any = js.native
   
-  /* private */ var _freezeShadowCastersBoundingInfoObservable: js.Any = js.native
+  /* private */ var _freezeShadowCastersBoundingInfoObservable: Any = js.native
   
-  /* private */ var _frustumCenter: js.Any = js.native
+  /* private */ var _frustumCenter: Any = js.native
   
-  /* private */ var _frustumCornersWorldSpace: js.Any = js.native
+  /* private */ var _frustumCornersWorldSpace: Any = js.native
   
-  /* private */ var _frustumLengths: js.Any = js.native
+  /* private */ var _frustumLengths: Any = js.native
   
-  /* private */ var _lambda: js.Any = js.native
+  /* protected */ def _isReadyCustomDefines(defines: Any): Unit = js.native
   
-  /* private */ var _lightSizeUVCorrection: js.Any = js.native
+  /* private */ var _lambda: Any = js.native
+  
+  /* private */ var _lightSizeUVCorrection: Any = js.native
   
   /* protected */ var _maxDistance: Double = js.native
   
   /* protected */ var _minDistance: Double = js.native
   
-  /* private */ var _numCascades: js.Any = js.native
+  /* private */ var _numCascades: Any = js.native
   
-  /* private */ var _projectionMatrices: js.Any = js.native
+  /* private */ var _projectionMatrices: Any = js.native
   
-  /* private */ var _scbiMax: js.Any = js.native
+  /* protected */ def _recreateSceneUBOs(): Unit = js.native
   
-  /* private */ var _scbiMin: js.Any = js.native
+  /* private */ var _scbiMax: Any = js.native
   
-  /* private */ var _shadowCameraPos: js.Any = js.native
+  /* private */ var _scbiMin: Any = js.native
+  
+  /* private */ var _shadowCameraPos: Any = js.native
   
   /* protected */ var _shadowCastersBoundingInfo: BoundingInfo = js.native
   
-  /* private */ var _shadowMaxZ: js.Any = js.native
+  /* private */ var _shadowMaxZ: Any = js.native
   
-  /* private */ var _splitFrustum: js.Any = js.native
+  /* private */ var _splitFrustum: Any = js.native
   
-  /* private */ var _transformMatrices: js.Any = js.native
+  /* private */ var _transformMatrices: Any = js.native
   
-  /* private */ var _transformMatricesAsArray: js.Any = js.native
+  /* private */ var _transformMatricesAsArray: Any = js.native
   
-  /* private */ var _viewMatrices: js.Any = js.native
+  /* private */ var _viewMatrices: Any = js.native
   
-  /* private */ var _viewSpaceFrustumsZ: js.Any = js.native
+  /* private */ var _viewSpaceFrustumsZ: Any = js.native
   
   /**
     * Gets or sets the autoCalcDepthBounds property.

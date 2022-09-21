@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "LocaleProvider")
 @js.native
-class LocaleProvider () extends default
+open class LocaleProvider () extends default
 /* static members */
 object LocaleProvider {
   

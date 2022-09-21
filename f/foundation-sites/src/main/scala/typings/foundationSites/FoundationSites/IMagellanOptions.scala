@@ -12,11 +12,13 @@ trait IMagellanOptions extends StObject {
   
   var animationEasing: js.UndefOr[String] = js.undefined
   
-  var barOffset: js.UndefOr[Double] = js.undefined
-  
   var deepLinking: js.UndefOr[Boolean] = js.undefined
   
+  var offset: js.UndefOr[Double] = js.undefined
+  
   var threshold: js.UndefOr[Double] = js.undefined
+  
+  var updateHistory: js.UndefOr[Boolean] = js.undefined
 }
 object IMagellanOptions {
   
@@ -39,16 +41,20 @@ object IMagellanOptions {
     
     inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
     
-    inline def setBarOffset(value: Double): Self = StObject.set(x, "barOffset", value.asInstanceOf[js.Any])
-    
-    inline def setBarOffsetUndefined: Self = StObject.set(x, "barOffset", js.undefined)
-    
     inline def setDeepLinking(value: Boolean): Self = StObject.set(x, "deepLinking", value.asInstanceOf[js.Any])
     
     inline def setDeepLinkingUndefined: Self = StObject.set(x, "deepLinking", js.undefined)
     
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
     inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    
+    inline def setUpdateHistory(value: Boolean): Self = StObject.set(x, "updateHistory", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateHistoryUndefined: Self = StObject.set(x, "updateHistory", js.undefined)
   }
 }

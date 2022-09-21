@@ -1,8 +1,8 @@
 package typings.winston
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.Agent
+import typings.std.WritableStream
 import typings.winston.anon.Bearer
 import typings.winstonTransport.mod.TransportStreamOptions
 import org.scalablytyped.runtime.StObject
@@ -18,28 +18,28 @@ object transportsMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("winston/lib/winston/transports", "Console")
   @js.native
-  class Console () extends ConsoleTransportInstance {
+  open class Console () extends ConsoleTransportInstance {
     def this(options: ConsoleTransportOptions) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("winston/lib/winston/transports", "File")
   @js.native
-  class File () extends FileTransportInstance {
+  open class File () extends FileTransportInstance {
     def this(options: FileTransportOptions) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("winston/lib/winston/transports", "Http")
   @js.native
-  class Http () extends HttpTransportInstance {
+  open class Http () extends HttpTransportInstance {
     def this(options: HttpTransportOptions) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("winston/lib/winston/transports", "Stream")
   @js.native
-  class Stream () extends StreamTransportInstance {
+  open class Stream () extends StreamTransportInstance {
     def this(options: StreamTransportOptions) = this()
   }
   
@@ -90,7 +90,7 @@ object transportsMod extends Shortcut {
       
       inline def setConsoleWarnLevelsUndefined: Self = StObject.set(x, "consoleWarnLevels", js.undefined)
       
-      inline def setConsoleWarnLevelsVarargs(value: String*): Self = StObject.set(x, "consoleWarnLevels", js.Array(value :_*))
+      inline def setConsoleWarnLevelsVarargs(value: String*): Self = StObject.set(x, "consoleWarnLevels", js.Array(value*))
       
       inline def setDebugStdout(value: Boolean): Self = StObject.set(x, "debugStdout", value.asInstanceOf[js.Any])
       
@@ -104,7 +104,7 @@ object transportsMod extends Shortcut {
       
       inline def setStderrLevelsUndefined: Self = StObject.set(x, "stderrLevels", js.undefined)
       
-      inline def setStderrLevelsVarargs(value: String*): Self = StObject.set(x, "stderrLevels", js.Array(value :_*))
+      inline def setStderrLevelsVarargs(value: String*): Self = StObject.set(x, "stderrLevels", js.Array(value*))
     }
   }
   
@@ -162,7 +162,7 @@ object transportsMod extends Shortcut {
     
     var rotationFormat: js.UndefOr[js.Function] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.undefined
+    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     var tailable: js.UndefOr[Boolean] = js.undefined
     
@@ -205,7 +205,7 @@ object transportsMod extends Shortcut {
       
       inline def setRotationFormatUndefined: Self = StObject.set(x, "rotationFormat", js.undefined)
       
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -257,6 +257,12 @@ object transportsMod extends Shortcut {
     
     var auth: js.UndefOr[Bearer] = js.undefined
     
+    var batch: js.UndefOr[Boolean] = js.undefined
+    
+    var batchCount: js.UndefOr[Double] = js.undefined
+    
+    var batchInterval: js.UndefOr[Double] = js.undefined
+    
     var headers: js.UndefOr[js.Object] = js.undefined
     
     var host: js.UndefOr[String] = js.undefined
@@ -265,7 +271,9 @@ object transportsMod extends Shortcut {
     
     var port: js.UndefOr[Double] = js.undefined
     
-    var ssl: js.UndefOr[js.Any] = js.undefined
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
+    
+    var ssl: js.UndefOr[Any] = js.undefined
   }
   object HttpTransportOptions {
     
@@ -284,6 +292,18 @@ object transportsMod extends Shortcut {
       
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
+      inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+      
+      inline def setBatchCount(value: Double): Self = StObject.set(x, "batchCount", value.asInstanceOf[js.Any])
+      
+      inline def setBatchCountUndefined: Self = StObject.set(x, "batchCount", js.undefined)
+      
+      inline def setBatchInterval(value: Double): Self = StObject.set(x, "batchInterval", value.asInstanceOf[js.Any])
+      
+      inline def setBatchIntervalUndefined: Self = StObject.set(x, "batchInterval", js.undefined)
+      
+      inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+      
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
@@ -300,7 +320,11 @@ object transportsMod extends Shortcut {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      inline def setSsl(value: js.Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      
+      inline def setSsl(value: Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
       inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     }
@@ -330,11 +354,11 @@ object transportsMod extends Shortcut {
     
     var eol: js.UndefOr[String] = js.undefined
     
-    var stream: WritableStream
+    var stream: WritableStream[Any]
   }
   object StreamTransportOptions {
     
-    inline def apply(stream: WritableStream): StreamTransportOptions = {
+    inline def apply(stream: WritableStream[Any]): StreamTransportOptions = {
       val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamTransportOptions]
     }
@@ -345,7 +369,7 @@ object transportsMod extends Shortcut {
       
       inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   

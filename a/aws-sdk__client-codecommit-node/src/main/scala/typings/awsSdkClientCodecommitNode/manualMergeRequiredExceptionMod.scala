@@ -8,5 +8,5 @@ object manualMergeRequiredExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/ManualMergeRequiredException", "ManualMergeRequiredException")
   @js.native
-  val ManualMergeRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ManualMergeRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

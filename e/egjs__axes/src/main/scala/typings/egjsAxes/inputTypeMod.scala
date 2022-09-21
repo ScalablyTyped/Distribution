@@ -2,6 +2,7 @@ package typings.egjsAxes
 
 import typings.egjsAxes.axesMod.AxesOption
 import typings.egjsAxes.axisManagerMod.Axis
+import typings.egjsAxes.typesMod.ActiveEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,106 +10,92 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object inputTypeMod {
   
-  @JSImport("@egjs/axes/inputType/InputType", JSImport.Namespace)
+  @JSImport("@egjs/axes/declaration/inputType/InputType", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@egjs/axes/inputType/InputType", "SUPPORT_TOUCH")
-  @js.native
-  val SUPPORT_TOUCH: Boolean = js.native
-  
-  @JSImport("@egjs/axes/inputType/InputType", "UNIQUEKEY")
-  @js.native
-  val UNIQUEKEY: /* "_EGJS_AXES_INPUTTYPE_" */ String = js.native
-  
-  inline def convertInputType(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")().asInstanceOf[js.Any]
-  inline def convertInputType(inputType: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")(inputType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  inline def createHammer(element: HTMLElement, recognizers: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createHammer")(element.asInstanceOf[js.Any], recognizers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def createHammer(element: HTMLElement, recognizers: js.Any, inputClass: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createHammer")(element.asInstanceOf[js.Any], recognizers.asInstanceOf[js.Any], inputClass.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def convertInputType(): ActiveEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")().asInstanceOf[ActiveEvent]
+  inline def convertInputType(inputType: js.Array[String]): ActiveEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")(inputType.asInstanceOf[js.Any]).asInstanceOf[ActiveEvent]
   
   inline def toAxis(source: js.Array[String], offset: js.Array[Double]): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("toAxis")(source.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Axis]
   
-  trait IInputType extends StObject {
+  trait InputType extends StObject {
     
     var axes: js.Array[String]
     
-    def connect(observer: IInputTypeObserver): IInputType
+    def connect(observer: InputTypeObserver): InputType
     
-    def destroy(): js.Any
+    def destroy(): Any
     
-    var disable: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var disable: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    def disconnect(): js.Any
+    def disconnect(): Any
     
     var element: HTMLElement
     
-    var enable: js.UndefOr[js.Function0[js.Any]] = js.undefined
-    
-    var hammer: js.UndefOr[js.Any] = js.undefined
+    var enable: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var isEnable: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    def mapAxes(axes: js.Array[String]): js.Any
+    def mapAxes(axes: js.Array[String]): Any
   }
-  object IInputType {
+  object InputType {
     
     inline def apply(
       axes: js.Array[String],
-      connect: IInputTypeObserver => IInputType,
-      destroy: () => js.Any,
-      disconnect: () => js.Any,
+      connect: InputTypeObserver => InputType,
+      destroy: () => Any,
+      disconnect: () => Any,
       element: HTMLElement,
-      mapAxes: js.Array[String] => js.Any
-    ): IInputType = {
+      mapAxes: js.Array[String] => Any
+    ): InputType = {
       val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], connect = js.Any.fromFunction1(connect), destroy = js.Any.fromFunction0(destroy), disconnect = js.Any.fromFunction0(disconnect), element = element.asInstanceOf[js.Any], mapAxes = js.Any.fromFunction1(mapAxes))
-      __obj.asInstanceOf[IInputType]
+      __obj.asInstanceOf[InputType]
     }
     
-    extension [Self <: IInputType](x: Self) {
+    extension [Self <: InputType](x: Self) {
       
       inline def setAxes(value: js.Array[String]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      inline def setAxesVarargs(value: String*): Self = StObject.set(x, "axes", js.Array(value :_*))
+      inline def setAxesVarargs(value: String*): Self = StObject.set(x, "axes", js.Array(value*))
       
-      inline def setConnect(value: IInputTypeObserver => IInputType): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+      inline def setConnect(value: InputTypeObserver => InputType): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       
-      inline def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def setDisable(value: () => js.Any): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => Any): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
       inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      inline def setDisconnect(value: () => js.Any): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Any): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      inline def setEnable(value: () => js.Any): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Any): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
       inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
-      
-      inline def setHammer(value: js.Any): Self = StObject.set(x, "hammer", value.asInstanceOf[js.Any])
-      
-      inline def setHammerUndefined: Self = StObject.set(x, "hammer", js.undefined)
       
       inline def setIsEnable(value: () => Boolean): Self = StObject.set(x, "isEnable", js.Any.fromFunction0(value))
       
       inline def setIsEnableUndefined: Self = StObject.set(x, "isEnable", js.undefined)
       
-      inline def setMapAxes(value: js.Array[String] => js.Any): Self = StObject.set(x, "mapAxes", js.Any.fromFunction1(value))
+      inline def setMapAxes(value: js.Array[String] => Any): Self = StObject.set(x, "mapAxes", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
-  trait IInputTypeObserver extends StObject {
+  trait InputTypeObserver extends StObject {
     
-    def change(inputType: IInputType, event: js.Any, offset: Axis): js.Any = js.native
+    def change(inputType: InputType, event: Any, offset: Axis): Any = js.native
+    def change(inputType: InputType, event: Any, offset: Axis, useAnimation: Boolean): Any = js.native
     
-    def hold(inputType: IInputType, event: js.Any): js.Any = js.native
+    def get(inputType: InputType): Axis = js.native
+    
+    def hold(inputType: InputType, event: Any): Any = js.native
     
     var options: AxesOption = js.native
     
-    def release(inputType: IInputType, event: js.Any, offset: Axis): js.Any = js.native
-    def release(inputType: IInputType, event: js.Any, offset: Axis, duration: Double): js.Any = js.native
+    def release(inputType: InputType, event: Any, velocity: js.Array[Double]): Any = js.native
+    def release(inputType: InputType, event: Any, velocity: js.Array[Double], inputDuration: Double): Any = js.native
   }
 }

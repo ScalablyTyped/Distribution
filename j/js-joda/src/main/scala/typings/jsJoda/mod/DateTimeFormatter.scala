@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "DateTimeFormatter")
 @js.native
-/* private */ class DateTimeFormatter () extends StObject {
+/* private */ open class DateTimeFormatter () extends StObject {
   
-  def chronology(): js.Any = js.native
+  def chronology(): Any = js.native
   
-  def decimalStyle(): js.Any = js.native
+  def decimalStyle(): Any = js.native
   
   def format(temporal: TemporalAccessor): String = js.native
   
-  def locale(): js.Any = js.native
+  def locale(): Any = js.native
   
   def parse(text: String, `type`: TemporalQuery): TemporalAccessor = js.native
   
   def parse1(text: String): TemporalAccessor = js.native
   
-  def parse2(text: js.Any, `type`: js.Any): js.Any = js.native
+  def parse2(text: Any, `type`: Any): Any = js.native
   
-  def parseUnresolved(text: js.Any, position: js.Any): js.Any = js.native
+  def parseUnresolved(text: Any, position: Any): Any = js.native
   
-  def withChronology(chrono: js.Any): js.Any = js.native
+  def withChronology(chrono: Any): Any = js.native
   
   def withLocale(locale: Locale): DateTimeFormatter = js.native
   

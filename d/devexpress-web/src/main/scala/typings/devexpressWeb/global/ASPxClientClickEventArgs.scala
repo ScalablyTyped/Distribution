@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientClickEventArgs")
 @js.native
-class ASPxClientClickEventArgs protected ()
+open class ASPxClientClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientClickEventArgs {
   /**
@@ -26,11 +26,11 @@ class ASPxClientClickEventArgs protected ()
     * @param dataIndex An integer value that identifies the data field by its index. This value is assigned to the ASPxClientClickEventArgs.DataIndex property.
     */
   def this(
-    value: js.Any,
+    value: Any,
     columnIndex: Double,
     rowIndex: Double,
-    columnValue: js.Any,
-    rowValue: js.Any,
+    columnValue: Any,
+    rowValue: Any,
     columnFieldName: String,
     rowFieldName: String,
     columnValueType: String,
@@ -54,7 +54,7 @@ class ASPxClientClickEventArgs protected ()
     * Gets a column field value.
     */
   /* CompleteClass */
-  var ColumnValue: js.Any = js.native
+  var ColumnValue: Any = js.native
   
   /**
     * Gets a column value type.
@@ -72,7 +72,7 @@ class ASPxClientClickEventArgs protected ()
     * Provides access to the parameters associated with the ASPxClientPivotGrid.CellClick and ASPxClientPivotGrid.CellDblClick events.
     */
   /* CompleteClass */
-  var HtmlEvent: js.Any = js.native
+  var HtmlEvent: Any = js.native
   
   /**
     * Gets a row field name.
@@ -90,7 +90,7 @@ class ASPxClientClickEventArgs protected ()
     * Gets a row field value.
     */
   /* CompleteClass */
-  var RowValue: js.Any = js.native
+  var RowValue: Any = js.native
   
   /**
     * Gets a row value type.
@@ -102,5 +102,5 @@ class ASPxClientClickEventArgs protected ()
     * Gets the processed cell's value.
     */
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

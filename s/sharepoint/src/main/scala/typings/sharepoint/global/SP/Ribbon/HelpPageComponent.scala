@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.HelpPageComponent")
 @js.native
-class HelpPageComponent ()
+open class HelpPageComponent ()
   extends StObject
      with PageComponent {
   
@@ -24,7 +24,7 @@ class HelpPageComponent ()
   override def getId(): String = js.native
   
   /* CompleteClass */
-  override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+  override def handleCommand(commandId: String, properties: Any, sequenceNumber: Double): Boolean = js.native
   
   /* CompleteClass */
   override def init(): Unit = js.native

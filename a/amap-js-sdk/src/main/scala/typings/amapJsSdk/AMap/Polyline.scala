@@ -10,7 +10,7 @@ trait Polyline
   
   def getBounds(): Bounds
   
-  def getExtData(): js.Any
+  def getExtData(): Any
   
   def getLength(): Double
   
@@ -20,7 +20,7 @@ trait Polyline
   
   def hide(): Unit
   
-  def setExtData(ext: js.Any): Unit
+  def setExtData(ext: Any): Unit
   
   def setMap(map: Map): Unit
   
@@ -34,14 +34,14 @@ object Polyline {
   
   inline def apply(
     getBounds: () => Bounds,
-    getExtData: () => js.Any,
+    getExtData: () => Any,
     getLength: () => Double,
     getOptions: () => PolylineOptions,
     getPath: () => js.Array[LngLat],
     hide: () => Unit,
     off: (String, EventCallback) => Unit,
     on: (String, EventCallback) => Unit,
-    setExtData: js.Any => Unit,
+    setExtData: Any => Unit,
     setMap: Map => Unit,
     setOptions: PolylineOptions => Unit,
     setPath: js.Array[LngLat] => Unit,
@@ -55,7 +55,7 @@ object Polyline {
     
     inline def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
-    inline def setGetExtData(value: () => js.Any): Self = StObject.set(x, "getExtData", js.Any.fromFunction0(value))
+    inline def setGetExtData(value: () => Any): Self = StObject.set(x, "getExtData", js.Any.fromFunction0(value))
     
     inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
@@ -65,7 +65,7 @@ object Polyline {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    inline def setSetExtData(value: js.Any => Unit): Self = StObject.set(x, "setExtData", js.Any.fromFunction1(value))
+    inline def setSetExtData(value: Any => Unit): Self = StObject.set(x, "setExtData", js.Any.fromFunction1(value))
     
     inline def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
     

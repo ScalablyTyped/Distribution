@@ -38,11 +38,11 @@ object Relationship {
     
     inline def setSource(value: js.Array[BaseElement]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setSourceVarargs(value: BaseElement*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: BaseElement*): Self = StObject.set(x, "source", js.Array(value*))
     
     inline def setTarget(value: js.Array[BaseElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTargetVarargs(value: BaseElement*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: BaseElement*): Self = StObject.set(x, "target", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

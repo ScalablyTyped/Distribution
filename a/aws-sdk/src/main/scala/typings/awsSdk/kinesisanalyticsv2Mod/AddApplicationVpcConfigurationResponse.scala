@@ -12,7 +12,7 @@ trait AddApplicationVpcConfigurationResponse extends StObject {
   var ApplicationARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
-    * Provides the current application version. Kinesis Data Analytics updates the ApplicationVersionId each time you update the application. 
+    * Provides the current application version. Kinesis Data Analytics updates the ApplicationVersionId each time you update the application.
     */
   var ApplicationVersionId: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId] = js.undefined
   

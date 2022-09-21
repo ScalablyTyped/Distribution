@@ -2,13 +2,15 @@ package typings.liftoff
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.fined.mod.PathSpec
-import typings.interpret.mod.ExtensionDescriptor
-import typings.interpret.mod.Extensions_
-import typings.liftoff.liftoffStrings.require
-import typings.liftoff.liftoffStrings.requireFail
+import typings.liftoff.liftoffStrings.loaderColonfailure
+import typings.liftoff.liftoffStrings.loaderColonsuccess
+import typings.liftoff.liftoffStrings.preloadColonbefore
+import typings.liftoff.liftoffStrings.preloadColonfailure
+import typings.liftoff.liftoffStrings.preloadColonsuccess
 import typings.liftoff.liftoffStrings.respawn
 import typings.node.eventsMod.EventEmitter
 import typings.node.processMod.global.NodeJS.Process
+import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,180 +22,143 @@ object mod {
   /**
     * Create an instance of Liftoff to invoke your application.
     */
-  class ^ () extends Liftoff {
+  open class ^ () extends Liftoff {
     def this(options: Options) = this()
   }
   
-  trait LaunchOptions extends StObject {
+  trait Events extends StObject {
     
-    var completion: js.UndefOr[String] = js.undefined
+    @JSName("loader:failure")
+    def loaderColonfailure(name: String, err: js.Error): Unit
     
-    /**
-      * Don't search for a config, use the one provided.
-      * **Note**: Liftoff will assume the current working directory is the directory containing the config file
-      * unless an alternate location is explicitly specified using `cwd`.
-      * @default null
-      */
-    var configPath: js.UndefOr[String] = js.undefined
+    @JSName("loader:success")
+    def loaderColonsuccess(name: String, module: Any): Unit
     
-    /**
-      * Change the current working directory for this launch. Relative paths are calculated against `process.cwd()`.
-      * @default process.cwd()
-      */
-    var cwd: js.UndefOr[String] = js.undefined
+    @JSName("preload:before")
+    def preloadColonbefore(name: String): Unit
     
-    /**
-      * Allows you to force node or V8 flags during the launch.
-      * This is useful if you need to make sure certain flags will always be enabled
-      * or if you need to enable flags that don't show up in `opts.v8flags`
-      * (as these flags aren't validated against opts.v8flags).
-      * @default null
-      */
-    var forcedFlags: js.UndefOr[
-        String | js.Array[String] | (js.Function1[/* env */ LiftoffEnv, String | js.Array[String]])
-      ] = js.undefined
+    @JSName("preload:failure")
+    def preloadColonfailure(name: String, err: js.Error): Unit
     
-    /**
-      * A string or array of modules to attempt requiring from the local
-      * working directory before invoking the launch callback.
-      * @default null
-      */
-    var require: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+    @JSName("preload:success")
+    def preloadColonsuccess(name: String, module: Any): Unit
+    
+    def respawn(flags: js.Array[String], child: Process): Unit
   }
-  object LaunchOptions {
+  object Events {
     
-    inline def apply(): LaunchOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[LaunchOptions]
+    inline def apply(
+      loaderColonfailure: (String, js.Error) => Unit,
+      loaderColonsuccess: (String, Any) => Unit,
+      preloadColonbefore: String => Unit,
+      preloadColonfailure: (String, js.Error) => Unit,
+      preloadColonsuccess: (String, Any) => Unit,
+      respawn: (js.Array[String], Process) => Unit
+    ): Events = {
+      val __obj = js.Dynamic.literal(respawn = js.Any.fromFunction2(respawn))
+      __obj.updateDynamic("loader:failure")(js.Any.fromFunction2(loaderColonfailure))
+      __obj.updateDynamic("loader:success")(js.Any.fromFunction2(loaderColonsuccess))
+      __obj.updateDynamic("preload:before")(js.Any.fromFunction1(preloadColonbefore))
+      __obj.updateDynamic("preload:failure")(js.Any.fromFunction2(preloadColonfailure))
+      __obj.updateDynamic("preload:success")(js.Any.fromFunction2(preloadColonsuccess))
+      __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: LaunchOptions](x: Self) {
+    extension [Self <: Events](x: Self) {
       
-      inline def setCompletion(value: String): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+      inline def setLoaderColonfailure(value: (String, js.Error) => Unit): Self = StObject.set(x, "loader:failure", js.Any.fromFunction2(value))
       
-      inline def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
+      inline def setLoaderColonsuccess(value: (String, Any) => Unit): Self = StObject.set(x, "loader:success", js.Any.fromFunction2(value))
       
-      inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
+      inline def setPreloadColonbefore(value: String => Unit): Self = StObject.set(x, "preload:before", js.Any.fromFunction1(value))
       
-      inline def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
+      inline def setPreloadColonfailure(value: (String, js.Error) => Unit): Self = StObject.set(x, "preload:failure", js.Any.fromFunction2(value))
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setPreloadColonsuccess(value: (String, Any) => Unit): Self = StObject.set(x, "preload:success", js.Any.fromFunction2(value))
       
-      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      inline def setForcedFlags(value: String | js.Array[String] | (js.Function1[/* env */ LiftoffEnv, String | js.Array[String]])): Self = StObject.set(x, "forcedFlags", value.asInstanceOf[js.Any])
-      
-      inline def setForcedFlagsFunction1(value: /* env */ LiftoffEnv => String | js.Array[String]): Self = StObject.set(x, "forcedFlags", js.Any.fromFunction1(value))
-      
-      inline def setForcedFlagsUndefined: Self = StObject.set(x, "forcedFlags", js.undefined)
-      
-      inline def setForcedFlagsVarargs(value: String*): Self = StObject.set(x, "forcedFlags", js.Array(value :_*))
-      
-      inline def setRequire(value: String | js.Array[js.Any]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
-      
-      inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
-      
-      inline def setRequireVarargs(value: js.Any*): Self = StObject.set(x, "require", js.Array(value :_*))
+      inline def setRespawn(value: (js.Array[String], Process) => Unit): Self = StObject.set(x, "respawn", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
   trait Liftoff extends EventEmitter {
     
-    @JSName("addListener")
-    def addListener_require(event: require, listener: js.Function2[/* name */ String, /* module */ ExtensionDescriptor, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_requireFail(event: requireFail, listener: js.Function2[/* name */ String, /* err */ js.Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_respawn(event: respawn, listener: js.Function2[/* flags */ js.Array[String], /* child */ Process, Unit]): this.type = js.native
+    def addListener[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](
+      event: TEvent,
+      listener: /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+    ): this.type = js.native
     
-    // tslint:disable-line:ban-types
-    @JSName("emit")
-    def emit_require(event: require, name: String, module: ExtensionDescriptor): Boolean = js.native
-    @JSName("emit")
-    def emit_requireFail(event: requireFail, name: String, err: js.Any): Boolean = js.native
-    @JSName("emit")
-    def emit_respawn(event: respawn, flags: js.Array[String], child: Process): Boolean = js.native
+    def emit[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](
+      event: TEvent,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Liftoff.Events[TEvent]> is not an array type */ args: Parameters[
+          /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+        ]
+    ): Boolean = js.native
     
-    /**
-      * Launches your application with provided options, builds an environment,
-      * and invokes your callback, passing the calculated environment as the first argument.
-      */
-    def launch(opts: LaunchOptions, callback: js.ThisFunction1[/* this */ this.type, /* env */ LiftoffEnv, Unit]): Unit = js.native
+    def execute(
+      env: LiftoffEnv,
+      callback: js.ThisFunction2[/* this */ this.type, /* env */ LiftoffEnv, /* argv */ js.Array[String], Unit]
+    ): Unit = js.native
+    def execute(
+      env: LiftoffEnv,
+      forcedFlags: String,
+      callback: js.ThisFunction2[/* this */ this.type, /* env */ LiftoffEnv, /* argv */ js.Array[String], Unit]
+    ): Unit = js.native
+    def execute(
+      env: LiftoffEnv,
+      forcedFlags: js.Array[String],
+      callback: js.ThisFunction2[/* this */ this.type, /* env */ LiftoffEnv, /* argv */ js.Array[String], Unit]
+    ): Unit = js.native
     
-    @JSName("listenerCount")
-    def listenerCount_require(`type`: require): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_requireFail(`type`: requireFail): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_respawn(`type`: respawn): Double = js.native
+    def listeners[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](event: TEvent): js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+      ] = js.native
     
-    @JSName("listeners")
-    def listeners_require(event: require): js.Array[js.Function] = js.native
-    @JSName("listeners")
-    def listeners_requireFail(event: requireFail): js.Array[js.Function] = js.native
-    @JSName("listeners")
-    def listeners_respawn(event: respawn): js.Array[js.Function] = js.native
+    def off[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](
+      event: TEvent,
+      listener: /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+    ): this.type = js.native
     
-    @JSName("off")
-    def off_require(event: require, listener: js.Function2[/* name */ String, /* module */ ExtensionDescriptor, Unit]): this.type = js.native
-    @JSName("off")
-    def off_requireFail(event: requireFail, listener: js.Function2[/* name */ String, /* err */ js.Any, Unit]): this.type = js.native
-    @JSName("off")
-    def off_respawn(event: respawn, listener: js.Function2[/* flags */ js.Array[String], /* child */ Process, Unit]): this.type = js.native
+    def on[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](
+      event: TEvent,
+      listener: /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+    ): this.type = js.native
     
-    @JSName("on")
-    def on_require(event: require, listener: js.Function2[/* name */ String, /* module */ ExtensionDescriptor, Unit]): this.type = js.native
-    @JSName("on")
-    def on_requireFail(event: requireFail, listener: js.Function2[/* name */ String, /* err */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_respawn(event: respawn, listener: js.Function2[/* flags */ js.Array[String], /* child */ Process, Unit]): this.type = js.native
+    def once[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](
+      event: TEvent,
+      listener: /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+    ): this.type = js.native
     
-    @JSName("once")
-    def once_require(event: require, listener: js.Function2[/* name */ String, /* module */ ExtensionDescriptor, Unit]): this.type = js.native
-    @JSName("once")
-    def once_requireFail(event: requireFail, listener: js.Function2[/* name */ String, /* err */ js.Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_respawn(event: respawn, listener: js.Function2[/* flags */ js.Array[String], /* child */ Process, Unit]): this.type = js.native
+    def prepare(options: PrepareOptions, callback: js.Function1[/* env */ LiftoffEnv, Unit]): Unit = js.native
     
-    @JSName("prependListener")
-    def prependListener_require(event: require, listener: js.Function2[/* name */ String, /* module */ ExtensionDescriptor, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_requireFail(event: requireFail, listener: js.Function2[/* name */ String, /* err */ js.Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_respawn(event: respawn, listener: js.Function2[/* flags */ js.Array[String], /* child */ Process, Unit]): this.type = js.native
+    def prependListener[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](
+      event: TEvent,
+      listener: /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+    ): this.type = js.native
     
-    @JSName("prependOnceListener")
-    def prependOnceListener_require(event: require, listener: js.Function2[/* name */ String, /* module */ ExtensionDescriptor, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_requireFail(event: requireFail, listener: js.Function2[/* name */ String, /* err */ js.Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_respawn(event: respawn, listener: js.Function2[/* flags */ js.Array[String], /* child */ Process, Unit]): this.type = js.native
+    def prependOnceListener[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](
+      event: TEvent,
+      listener: /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+    ): this.type = js.native
     
-    // tslint:disable-line:ban-types
-    @JSName("rawListeners")
-    def rawListeners_require(event: require): js.Array[js.Function] = js.native
-    @JSName("rawListeners")
-    def rawListeners_requireFail(event: requireFail): js.Array[js.Function] = js.native
-    @JSName("rawListeners")
-    def rawListeners_respawn(event: respawn): js.Array[js.Function] = js.native
+    def rawListeners[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](event: TEvent): js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+      ] = js.native
     
-    @JSName("removeAllListeners")
-    def removeAllListeners_require(event: require): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_requireFail(event: requireFail): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_respawn(event: respawn): this.type = js.native
-    
-    @JSName("removeListener")
-    def removeListener_require(event: require, listener: js.Function2[/* name */ String, /* module */ ExtensionDescriptor, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_requireFail(event: requireFail, listener: js.Function2[/* name */ String, /* err */ js.Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_respawn(event: respawn, listener: js.Function2[/* flags */ js.Array[String], /* child */ Process, Unit]): this.type = js.native
+    def removeListener[TEvent /* <: /* keyof liftoff.liftoff.Events */ loaderColonsuccess | preloadColonsuccess | loaderColonfailure | preloadColonfailure | preloadColonbefore | respawn */](
+      event: TEvent,
+      listener: /* import warning: importer.ImportType#apply Failed type conversion: liftoff.liftoff.Events[TEvent] */ js.Any
+    ): this.type = js.native
   }
   
   trait LiftoffEnv extends StObject {
+    
+    var completion: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The paths and contents of the found config files.
+      */
+    var config: StringDictionary[Any]
     
     /**
       * the base directory of your configuration file (if found)
@@ -203,7 +168,7 @@ object mod {
     /**
       * an object of filepaths for each found config file (filepath values will be null if not found)
       */
-    var configFiles: js.UndefOr[StringDictionary[StringDictionary[String | Null]]] = js.undefined
+    var configFiles: StringDictionary[StringDictionary[String | Null]]
     
     /**
       * the config files searched for
@@ -223,7 +188,7 @@ object mod {
     /**
       * the contents of the local module's package.json (if found)
       */
-    var modulePackage: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var modulePackage: StringDictionary[Any]
     
     /**
       * the full path to the local module your project relies on (if found)
@@ -233,16 +198,29 @@ object mod {
     /**
       * an array of modules that liftoff tried to pre-load
       */
-    var require: js.Array[String]
+    var preload: js.Array[String]
   }
   object LiftoffEnv {
     
-    inline def apply(configNameSearch: js.Array[String], cwd: String, require: js.Array[String]): LiftoffEnv = {
-      val __obj = js.Dynamic.literal(configNameSearch = configNameSearch.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], require = require.asInstanceOf[js.Any])
+    inline def apply(
+      config: StringDictionary[Any],
+      configFiles: StringDictionary[StringDictionary[String | Null]],
+      configNameSearch: js.Array[String],
+      cwd: String,
+      modulePackage: StringDictionary[Any],
+      preload: js.Array[String]
+    ): LiftoffEnv = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], configFiles = configFiles.asInstanceOf[js.Any], configNameSearch = configNameSearch.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], modulePackage = modulePackage.asInstanceOf[js.Any], preload = preload.asInstanceOf[js.Any])
       __obj.asInstanceOf[LiftoffEnv]
     }
     
     extension [Self <: LiftoffEnv](x: Self) {
+      
+      inline def setCompletion(value: Boolean): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+      
+      inline def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
+      
+      inline def setConfig(value: StringDictionary[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigBase(value: String): Self = StObject.set(x, "configBase", value.asInstanceOf[js.Any])
       
@@ -250,11 +228,9 @@ object mod {
       
       inline def setConfigFiles(value: StringDictionary[StringDictionary[String | Null]]): Self = StObject.set(x, "configFiles", value.asInstanceOf[js.Any])
       
-      inline def setConfigFilesUndefined: Self = StObject.set(x, "configFiles", js.undefined)
-      
       inline def setConfigNameSearch(value: js.Array[String]): Self = StObject.set(x, "configNameSearch", value.asInstanceOf[js.Any])
       
-      inline def setConfigNameSearchVarargs(value: String*): Self = StObject.set(x, "configNameSearch", js.Array(value :_*))
+      inline def setConfigNameSearchVarargs(value: String*): Self = StObject.set(x, "configNameSearch", js.Array(value*))
       
       inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
       
@@ -262,17 +238,15 @@ object mod {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      inline def setModulePackage(value: StringDictionary[js.Any]): Self = StObject.set(x, "modulePackage", value.asInstanceOf[js.Any])
-      
-      inline def setModulePackageUndefined: Self = StObject.set(x, "modulePackage", js.undefined)
+      inline def setModulePackage(value: StringDictionary[Any]): Self = StObject.set(x, "modulePackage", value.asInstanceOf[js.Any])
       
       inline def setModulePath(value: String): Self = StObject.set(x, "modulePath", value.asInstanceOf[js.Any])
       
       inline def setModulePathUndefined: Self = StObject.set(x, "modulePath", js.undefined)
       
-      inline def setRequire(value: js.Array[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+      inline def setPreload(value: js.Array[String]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
-      inline def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value :_*))
+      inline def setPreloadVarargs(value: String*): Self = StObject.set(x, "preload", js.Array(value*))
     }
   }
   
@@ -282,7 +256,7 @@ object mod {
       * A method to handle bash/zsh/whatever completions.
       * @default null
       */
-    var completions: js.UndefOr[js.Function1[/* completion */ String, js.Any]] = js.undefined
+    var completions: js.UndefOr[js.Function1[/* completion */ String, Any]] = js.undefined
     
     /**
       * An object of configuration files to find. Each property is keyed by the
@@ -304,7 +278,7 @@ object mod {
       * the module name should be specified as the value for the key.
       * @default {".js":null,".json":null}
       */
-    var extensions: js.UndefOr[Extensions_] = js.undefined
+    var extensions: js.UndefOr[String | js.Array[String] | (StringDictionary[String | Null])] = js.undefined
     
     /**
       * Sets which module your application expects to find locally when being run.
@@ -333,7 +307,7 @@ object mod {
       * @default null
       */
     var v8flags: js.UndefOr[
-        js.Array[String] | (js.Function1[/* cb */ js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit], Unit])
+        js.Array[String] | (js.Function1[/* cb */ js.Function2[/* err */ Any, /* flags */ js.Array[String], Unit], Unit])
       ] = js.undefined
   }
   object Options {
@@ -345,7 +319,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCompletions(value: /* completion */ String => js.Any): Self = StObject.set(x, "completions", js.Any.fromFunction1(value))
+      inline def setCompletions(value: /* completion */ String => Any): Self = StObject.set(x, "completions", js.Any.fromFunction1(value))
       
       inline def setCompletionsUndefined: Self = StObject.set(x, "completions", js.undefined)
       
@@ -357,9 +331,11 @@ object mod {
       
       inline def setConfigNameUndefined: Self = StObject.set(x, "configName", js.undefined)
       
-      inline def setExtensions(value: Extensions_): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: String | js.Array[String] | (StringDictionary[String | Null])): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
       
@@ -374,14 +350,68 @@ object mod {
       inline def setProcessTitleUndefined: Self = StObject.set(x, "processTitle", js.undefined)
       
       inline def setV8flags(
-        value: js.Array[String] | (js.Function1[/* cb */ js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit], Unit])
+        value: js.Array[String] | (js.Function1[/* cb */ js.Function2[/* err */ Any, /* flags */ js.Array[String], Unit], Unit])
       ): Self = StObject.set(x, "v8flags", value.asInstanceOf[js.Any])
       
-      inline def setV8flagsFunction1(value: /* cb */ js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "v8flags", js.Any.fromFunction1(value))
+      inline def setV8flagsFunction1(value: /* cb */ js.Function2[/* err */ Any, /* flags */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "v8flags", js.Any.fromFunction1(value))
       
       inline def setV8flagsUndefined: Self = StObject.set(x, "v8flags", js.undefined)
       
-      inline def setV8flagsVarargs(value: String*): Self = StObject.set(x, "v8flags", js.Array(value :_*))
+      inline def setV8flagsVarargs(value: String*): Self = StObject.set(x, "v8flags", js.Array(value*))
+    }
+  }
+  
+  trait PrepareOptions extends StObject {
+    
+    var completion: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Don't search for a config, use the one provided.
+      * **Note**: Liftoff will assume the current working directory is the directory containing the config file
+      * unless an alternate location is explicitly specified using `cwd`.
+      * @default null
+      */
+    var configPath: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Change the current working directory for this launch. Relative paths are calculated against `process.cwd()`.
+      * @default process.cwd()
+      */
+    var cwd: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A string or array of modules to attempt requiring from the local
+      * working directory before invoking the launch callback.
+      * @default null
+      */
+    var preload: js.UndefOr[String | js.Array[Any]] = js.undefined
+  }
+  object PrepareOptions {
+    
+    inline def apply(): PrepareOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PrepareOptions]
+    }
+    
+    extension [Self <: PrepareOptions](x: Self) {
+      
+      inline def setCompletion(value: String): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+      
+      inline def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
+      
+      inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
+      
+      inline def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
+      
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      
+      inline def setPreload(value: String | js.Array[Any]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+      
+      inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+      
+      inline def setPreloadVarargs(value: Any*): Self = StObject.set(x, "preload", js.Array(value*))
     }
   }
 }

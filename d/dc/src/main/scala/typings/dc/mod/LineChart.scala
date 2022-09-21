@@ -15,10 +15,10 @@ trait LineChart
   @JSName("dashStyle")
   var dashStyle_Original: IGetSet[js.Array[Double], LineChart] = js.native
   
-  def defined(): Accessor[js.Any, Boolean] = js.native
-  def defined(t: Accessor[js.Any, Boolean]): LineChart = js.native
+  def defined(): Accessor[Any, Boolean] = js.native
+  def defined(t: Accessor[Any, Boolean]): LineChart = js.native
   @JSName("defined")
-  var defined_Original: IGetSet[Accessor[js.Any, Boolean], LineChart] = js.native
+  var defined_Original: IGetSet[Accessor[Any, Boolean], LineChart] = js.native
   
   def dotRadius(): Double = js.native
   def dotRadius(t: Double): LineChart = js.native

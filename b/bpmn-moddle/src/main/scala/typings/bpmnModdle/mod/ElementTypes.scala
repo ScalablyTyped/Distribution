@@ -451,7 +451,7 @@ trait ElementTypes extends StObject {
   var dcColonPoint: Point
   
   @JSName("dc:Real")
-  var dcColonReal: js.Any
+  var dcColonReal: Any
   
   @JSName("dc:boolean")
   var dcColonboolean: Boolean
@@ -646,7 +646,7 @@ object ElementTypes {
     dcColonBounds: Bounds,
     dcColonFont: Font,
     dcColonPoint: Point,
-    dcColonReal: js.Any,
+    dcColonReal: Any,
     dcColonboolean: Boolean,
     dcColonnumber: Double,
     dcColonstring: String,
@@ -1127,7 +1127,7 @@ object ElementTypes {
     
     inline def setDcColonPoint(value: Point): Self = StObject.set(x, "dc:Point", value.asInstanceOf[js.Any])
     
-    inline def setDcColonReal(value: js.Any): Self = StObject.set(x, "dc:Real", value.asInstanceOf[js.Any])
+    inline def setDcColonReal(value: Any): Self = StObject.set(x, "dc:Real", value.asInstanceOf[js.Any])
     
     inline def setDcColonboolean(value: Boolean): Self = StObject.set(x, "dc:boolean", value.asInstanceOf[js.Any])
     

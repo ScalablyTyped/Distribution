@@ -12,6 +12,9 @@ trait GoogleCloudAssetV1AccessControlList extends StObject {
     */
   var accesses: js.UndefOr[js.Array[GoogleCloudAssetV1Access]] = js.undefined
   
+  /** Condition evaluation for this AccessControlList, if there is a condition defined in the above IAM policy binding. */
+  var conditionEvaluation: js.UndefOr[ConditionEvaluation] = js.undefined
+  
   /**
     * Resource edges of the graph starting from the policy attached resource to any descendant resources. The Edge.source_node contains the full resource name of a parent resource and
     * Edge.target_node contains the full resource name of a child resource. This field is present only if the output_resource_edges option is enabled in request.
@@ -34,18 +37,22 @@ object GoogleCloudAssetV1AccessControlList {
     
     inline def setAccessesUndefined: Self = StObject.set(x, "accesses", js.undefined)
     
-    inline def setAccessesVarargs(value: GoogleCloudAssetV1Access*): Self = StObject.set(x, "accesses", js.Array(value :_*))
+    inline def setAccessesVarargs(value: GoogleCloudAssetV1Access*): Self = StObject.set(x, "accesses", js.Array(value*))
+    
+    inline def setConditionEvaluation(value: ConditionEvaluation): Self = StObject.set(x, "conditionEvaluation", value.asInstanceOf[js.Any])
+    
+    inline def setConditionEvaluationUndefined: Self = StObject.set(x, "conditionEvaluation", js.undefined)
     
     inline def setResourceEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = StObject.set(x, "resourceEdges", value.asInstanceOf[js.Any])
     
     inline def setResourceEdgesUndefined: Self = StObject.set(x, "resourceEdges", js.undefined)
     
-    inline def setResourceEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "resourceEdges", js.Array(value :_*))
+    inline def setResourceEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "resourceEdges", js.Array(value*))
     
     inline def setResources(value: js.Array[GoogleCloudAssetV1Resource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: GoogleCloudAssetV1Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: GoogleCloudAssetV1Resource*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotItem")
 @js.native
-/* private */ class PivotItem ()
+/* private */ open class PivotItem ()
   extends StObject
      with typings.activexExcel.Excel.PivotItem {
   
@@ -94,7 +94,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ShowDetail: Boolean = js.native
   
   /* CompleteClass */
-  override val SourceName: js.Any = js.native
+  override val SourceName: Any = js.native
   
   /* CompleteClass */
   override val SourceNameStandard: String = js.native

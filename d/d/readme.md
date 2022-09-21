@@ -10,10 +10,10 @@ Property descriptor factory
 | ------------------ | :-------------: |
 | Full name          | d |
 | Keywords           | descriptor, es, ecmascript, ecma, property, descriptors, meta, properties |
-| # releases         | 2 |
-| # dependents       | 110 |
-| # downloads        | 394623699 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.2865057666666664E7 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/medikoo/d#readme)

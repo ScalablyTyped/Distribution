@@ -19,26 +19,26 @@ trait Alt extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /**
+    * The optional capacity commitment ID. Capacity commitment name will be generated automatically if this field is empty. This field must only contain lower case alphanumeric
+    * characters or dashes. The first and last character cannot be a dash. Max length is 64 characters. NOTE: this ID won't be kept if the capacity commitment is split or merged.
+    */
+  var capacityCommitmentId: js.UndefOr[String] = js.undefined
+  
+  /** If true, fail the request if another project in the organization has a capacity commitment. */
+  var enforceSingleAdminProjectPerOrg: js.UndefOr[Boolean] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
-  
-  /** The standard list filter. */
-  var filter: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name of the operation's parent resource. */
-  var name: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The standard list page size. */
-  var pageSize: js.UndefOr[Double] = js.undefined
-  
-  /** The standard list page token. */
-  var pageToken: js.UndefOr[String] = js.undefined
+  /** Required. Resource name of the parent reservation. E.g., `projects/myproject/locations/US` */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -54,8 +54,8 @@ trait Alt extends StObject {
 }
 object Alt {
   
-  inline def apply(name: String): Alt = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(parent: String): Alt = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alt]
   }
   
@@ -77,31 +77,27 @@ object Alt {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setCapacityCommitmentId(value: String): Self = StObject.set(x, "capacityCommitmentId", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityCommitmentIdUndefined: Self = StObject.set(x, "capacityCommitmentId", js.undefined)
+    
+    inline def setEnforceSingleAdminProjectPerOrg(value: Boolean): Self = StObject.set(x, "enforceSingleAdminProjectPerOrg", value.asInstanceOf[js.Any])
+    
+    inline def setEnforceSingleAdminProjectPerOrgUndefined: Self = StObject.set(x, "enforceSingleAdminProjectPerOrg", js.undefined)
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-    
-    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
-    
-    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
-    
-    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-    
-    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
-    
-    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

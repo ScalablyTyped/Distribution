@@ -19,7 +19,7 @@ object StartModule {
   inline def apply(
     Frame: XFrame,
     Model: XModel,
-    ViewData: js.Any,
+    ViewData: Any,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     attachFrame: XFrame => Unit,
@@ -28,11 +28,11 @@ object StartModule {
     dispose: () => Unit,
     getFrame: () => XFrame,
     getModel: () => XModel,
-    getViewData: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getViewData: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
-    restoreViewData: js.Any => Unit,
+    restoreViewData: Any => Unit,
     suspend: Boolean => Boolean
   ): StartModule = {
     val __obj = js.Dynamic.literal(Frame = Frame.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), createWithParentWindow = js.Any.fromFunction1(createWithParentWindow), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getViewData = js.Any.fromFunction0(getViewData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), restoreViewData = js.Any.fromFunction1(restoreViewData), suspend = js.Any.fromFunction1(suspend))

@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("dom-parser", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with DomParser {
     
@@ -76,24 +76,24 @@ object mod {
     extends StObject
        with DOMSearchable {
     
-    def getElementsByAttribute(attribute: String): js.Array[Node] | Null
+    def getElementsByAttribute(attr: String, value: String): js.Array[Node] | Null
   }
   object Dom {
     
     inline def apply(
       getElementById: String => Node | Null,
-      getElementsByAttribute: String => js.Array[Node] | Null,
+      getElementsByAttribute: (String, String) => js.Array[Node] | Null,
       getElementsByClassName: String => js.Array[Node] | Null,
       getElementsByName: String => js.Array[Node] | Null,
       getElementsByTagName: String => js.Array[Node] | Null
     ): Dom = {
-      val __obj = js.Dynamic.literal(getElementById = js.Any.fromFunction1(getElementById), getElementsByAttribute = js.Any.fromFunction1(getElementsByAttribute), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getElementsByName = js.Any.fromFunction1(getElementsByName), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName))
+      val __obj = js.Dynamic.literal(getElementById = js.Any.fromFunction1(getElementById), getElementsByAttribute = js.Any.fromFunction2(getElementsByAttribute), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getElementsByName = js.Any.fromFunction1(getElementsByName), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName))
       __obj.asInstanceOf[Dom]
     }
     
     extension [Self <: Dom](x: Self) {
       
-      inline def setGetElementsByAttribute(value: String => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByAttribute", js.Any.fromFunction1(value))
+      inline def setGetElementsByAttribute(value: (String, String) => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByAttribute", js.Any.fromFunction2(value))
     }
   }
   
@@ -164,11 +164,11 @@ object mod {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setChildNodes(value: js.Array[Node]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
-      inline def setChildNodesVarargs(value: Node*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
+      inline def setChildNodesVarargs(value: Node*): Self = StObject.set(x, "childNodes", js.Array(value*))
       
       inline def setFirstChild(value: Node): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
       

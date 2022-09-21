@@ -11,12 +11,10 @@ object fadeMod {
   
   @JSImport("react-bootstrap/lib/Fade", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[FadeProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[FadeProps, js.Object, Any]
   
-  @js.native
-  trait Fade
-    extends Component[FadeProps, js.Object, js.Any]
+  type Fade = Component[FadeProps, js.Object, Any]
   
   trait FadeProps
     extends StObject

@@ -7,9 +7,12 @@ import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectNetworks.typesMod.Network
 import typings.ethersprojectProperties.mod.Description
+import typings.ethersprojectTransactions.anon.Address
+import typings.ethersprojectTransactions.mod.AccessListish
 import typings.ethersprojectTransactions.mod.Transaction
 import typings.ethersprojectWeb.ethersprojectWebStrings.block
 import typings.ethersprojectWeb.mod.OnceBlockable
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +21,7 @@ object mod {
   
   @JSImport("@ethersproject/abstract-provider", "BlockForkEvent")
   @js.native
-  class BlockForkEvent protected () extends ForkEvent {
+  open class BlockForkEvent protected () extends ForkEvent {
     def this(blockHash: String) = this()
     def this(blockHash: String, expiry: Double) = this()
     
@@ -30,11 +33,11 @@ object mod {
   @JSImport("@ethersproject/abstract-provider", "ForkEvent")
   @js.native
   abstract class ForkEvent protected ()
-    extends Description[js.Any]
+    extends Description[Any]
        with _EventType {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: any[K]}
-      */ typings.ethersprojectAbstractProvider.ethersprojectAbstractProviderStrings.ForkEvent & TopLevel[js.Any]) = this()
+      */ typings.ethersprojectAbstractProvider.ethersprojectAbstractProviderStrings.ForkEvent & TopLevel[Any]) = this()
     
     val _isForkEvent: js.UndefOr[Boolean] = js.native
     
@@ -47,7 +50,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isForkEvent(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForkEvent")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean]
+    inline def isForkEvent(value: Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForkEvent")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean]
   }
   
   @JSImport("@ethersproject/abstract-provider", "Provider")
@@ -64,7 +67,7 @@ object mod {
     def call(transaction: DeferrableTransactionRequ, blockTag: js.Promise[BlockTag]): js.Promise[String] = js.native
     def call(transaction: DeferrableTransactionRequ, blockTag: BlockTag): js.Promise[String] = js.native
     
-    def emit(eventName: EventType, args: js.Any*): Boolean = js.native
+    def emit(eventName: EventType, args: Any*): Boolean = js.native
     
     def estimateGas(transaction: DeferrableTransactionRequ): js.Promise[BigNumber] = js.native
     
@@ -91,6 +94,8 @@ object mod {
     def getCode(addressOrName: js.Promise[String]): js.Promise[String] = js.native
     def getCode(addressOrName: js.Promise[String], blockTag: js.Promise[BlockTag]): js.Promise[String] = js.native
     def getCode(addressOrName: js.Promise[String], blockTag: BlockTag): js.Promise[String] = js.native
+    
+    def getFeeData(): js.Promise[FeeData] = js.native
     
     def getGasPrice(): js.Promise[BigNumber] = js.native
     
@@ -132,8 +137,8 @@ object mod {
     def listeners(): js.Array[Listener] = js.native
     def listeners(eventName: EventType): js.Array[Listener] = js.native
     
-    def lookupAddress(address: String): js.Promise[String] = js.native
-    def lookupAddress(address: js.Promise[String]): js.Promise[String] = js.native
+    def lookupAddress(address: String): js.Promise[Null | String] = js.native
+    def lookupAddress(address: js.Promise[String]): js.Promise[Null | String] = js.native
     
     def off(eventName: EventType): Provider = js.native
     def off(eventName: EventType, listener: Listener): Provider = js.native
@@ -150,8 +155,8 @@ object mod {
     
     def removeListener(eventName: EventType, listener: Listener): Provider = js.native
     
-    def resolveName(name: String): js.Promise[String] = js.native
-    def resolveName(name: js.Promise[String]): js.Promise[String] = js.native
+    def resolveName(name: String): js.Promise[Null | String] = js.native
+    def resolveName(name: js.Promise[String]): js.Promise[Null | String] = js.native
     
     def sendTransaction(signedTransaction: String): js.Promise[TransactionResponse] = js.native
     def sendTransaction(signedTransaction: js.Promise[String]): js.Promise[TransactionResponse] = js.native
@@ -168,12 +173,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isProvider(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean]
+    inline def isProvider(value: Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean]
   }
   
   @JSImport("@ethersproject/abstract-provider", "TransactionForkEvent")
   @js.native
-  class TransactionForkEvent protected () extends ForkEvent {
+  open class TransactionForkEvent protected () extends ForkEvent {
     def this(hash: String) = this()
     def this(hash: String, expiry: Double) = this()
     
@@ -184,7 +189,7 @@ object mod {
   
   @JSImport("@ethersproject/abstract-provider", "TransactionOrderForkEvent")
   @js.native
-  class TransactionOrderForkEvent protected () extends ForkEvent {
+  open class TransactionOrderForkEvent protected () extends ForkEvent {
     def this(beforeHash: String, afterHash: String) = this()
     def this(beforeHash: String, afterHash: String, expiry: Double) = this()
     
@@ -202,6 +207,7 @@ object mod {
   object Block {
     
     inline def apply(
+      _difficulty: BigNumber,
       difficulty: Double,
       extraData: String,
       gasLimit: BigNumber,
@@ -214,7 +220,7 @@ object mod {
       timestamp: Double,
       transactions: js.Array[String]
     ): Block = {
-      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_difficulty = _difficulty.asInstanceOf[js.Any], difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Block]
     }
     
@@ -222,7 +228,7 @@ object mod {
       
       inline def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      inline def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value*))
     }
   }
   
@@ -237,6 +243,7 @@ object mod {
   object BlockWithTransactions {
     
     inline def apply(
+      _difficulty: BigNumber,
       difficulty: Double,
       extraData: String,
       gasLimit: BigNumber,
@@ -249,7 +256,7 @@ object mod {
       timestamp: Double,
       transactions: js.Array[TransactionResponse]
     ): BlockWithTransactions = {
-      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_difficulty = _difficulty.asInstanceOf[js.Any], difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockWithTransactions]
     }
     
@@ -257,7 +264,7 @@ object mod {
       
       inline def setTransactions(value: js.Array[TransactionResponse]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      inline def setTransactionsVarargs(value: TransactionResponse*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: TransactionResponse*): Self = StObject.set(x, "transactions", js.Array(value*))
     }
   }
   
@@ -267,7 +274,7 @@ object mod {
     
     var address: js.UndefOr[String] = js.undefined
     
-    var topics: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
+    var topics: js.UndefOr[js.Array[String | js.Array[String] | Null]] = js.undefined
   }
   object EventFilter {
     
@@ -282,11 +289,11 @@ object mod {
       
       inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      inline def setTopics(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: js.Array[String | js.Array[String] | Null]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
       inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
       
-      inline def setTopicsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: (String | js.Array[String] | Null)*): Self = StObject.set(x, "topics", js.Array(value*))
     }
   }
   
@@ -297,6 +304,43 @@ object mod {
     - typings.ethersprojectAbstractProvider.mod.ForkEvent
   */
   type EventType = _EventType | (js.Array[String | js.Array[String]]) | String
+  
+  trait FeeData extends StObject {
+    
+    var gasPrice: Null | BigNumber
+    
+    var lastBaseFeePerGas: Null | BigNumber
+    
+    var maxFeePerGas: Null | BigNumber
+    
+    var maxPriorityFeePerGas: Null | BigNumber
+  }
+  object FeeData {
+    
+    inline def apply(): FeeData = {
+      val __obj = js.Dynamic.literal(gasPrice = null, lastBaseFeePerGas = null, maxFeePerGas = null, maxPriorityFeePerGas = null)
+      __obj.asInstanceOf[FeeData]
+    }
+    
+    extension [Self <: FeeData](x: Self) {
+      
+      inline def setGasPrice(value: BigNumber): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      
+      inline def setGasPriceNull: Self = StObject.set(x, "gasPrice", null)
+      
+      inline def setLastBaseFeePerGas(value: BigNumber): Self = StObject.set(x, "lastBaseFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setLastBaseFeePerGasNull: Self = StObject.set(x, "lastBaseFeePerGas", null)
+      
+      inline def setMaxFeePerGas(value: BigNumber): Self = StObject.set(x, "maxFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setMaxFeePerGasNull: Self = StObject.set(x, "maxFeePerGas", null)
+      
+      inline def setMaxPriorityFeePerGas(value: BigNumber): Self = StObject.set(x, "maxPriorityFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setMaxPriorityFeePerGasNull: Self = StObject.set(x, "maxPriorityFeePerGas", null)
+    }
+  }
   
   trait Filter
     extends StObject
@@ -349,7 +393,7 @@ object mod {
   @js.native
   trait Listener extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   trait Log extends StObject {
@@ -405,7 +449,7 @@ object mod {
       
       inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value*))
       
       inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
       
@@ -427,6 +471,8 @@ object mod {
     
     var cumulativeGasUsed: BigNumber
     
+    var effectiveGasPrice: BigNumber
+    
     var from: String
     
     var gasUsed: BigNumber
@@ -444,6 +490,8 @@ object mod {
     var transactionHash: String
     
     var transactionIndex: Double
+    
+    var `type`: Double
   }
   object TransactionReceipt {
     
@@ -454,15 +502,18 @@ object mod {
       confirmations: Double,
       contractAddress: String,
       cumulativeGasUsed: BigNumber,
+      effectiveGasPrice: BigNumber,
       from: String,
       gasUsed: BigNumber,
       logs: js.Array[Log],
       logsBloom: String,
       to: String,
       transactionHash: String,
-      transactionIndex: Double
+      transactionIndex: Double,
+      `type`: Double
     ): TransactionReceipt = {
-      val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], byzantium = byzantium.asInstanceOf[js.Any], confirmations = confirmations.asInstanceOf[js.Any], contractAddress = contractAddress.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], byzantium = byzantium.asInstanceOf[js.Any], confirmations = confirmations.asInstanceOf[js.Any], contractAddress = contractAddress.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], effectiveGasPrice = effectiveGasPrice.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionReceipt]
     }
     
@@ -480,6 +531,8 @@ object mod {
       
       inline def setCumulativeGasUsed(value: BigNumber): Self = StObject.set(x, "cumulativeGasUsed", value.asInstanceOf[js.Any])
       
+      inline def setEffectiveGasPrice(value: BigNumber): Self = StObject.set(x, "effectiveGasPrice", value.asInstanceOf[js.Any])
+      
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setGasUsed(value: BigNumber): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
@@ -488,7 +541,7 @@ object mod {
       
       inline def setLogsBloom(value: String): Self = StObject.set(x, "logsBloom", value.asInstanceOf[js.Any])
       
-      inline def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
+      inline def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value*))
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -503,12 +556,20 @@ object mod {
       inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
       
       inline def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait TransactionRequest extends StObject {
     
+    var accessList: js.UndefOr[AccessListish] = js.undefined
+    
+    var ccipReadEnabled: js.UndefOr[Boolean] = js.undefined
+    
     var chainId: js.UndefOr[Double] = js.undefined
+    
+    var customData: js.UndefOr[Record[String, Any]] = js.undefined
     
     var data: js.UndefOr[BytesLike] = js.undefined
     
@@ -518,9 +579,15 @@ object mod {
     
     var gasPrice: js.UndefOr[BigNumberish] = js.undefined
     
+    var maxFeePerGas: js.UndefOr[BigNumberish] = js.undefined
+    
+    var maxPriorityFeePerGas: js.UndefOr[BigNumberish] = js.undefined
+    
     var nonce: js.UndefOr[BigNumberish] = js.undefined
     
     var to: js.UndefOr[String] = js.undefined
+    
+    var `type`: js.UndefOr[Double] = js.undefined
     
     var value: js.UndefOr[BigNumberish] = js.undefined
   }
@@ -533,9 +600,23 @@ object mod {
     
     extension [Self <: TransactionRequest](x: Self) {
       
+      inline def setAccessList(value: AccessListish): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
+      
+      inline def setAccessListUndefined: Self = StObject.set(x, "accessList", js.undefined)
+      
+      inline def setAccessListVarargs(value: (Address | (js.Tuple2[String, js.Array[String]]))*): Self = StObject.set(x, "accessList", js.Array(value*))
+      
+      inline def setCcipReadEnabled(value: Boolean): Self = StObject.set(x, "ccipReadEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setCcipReadEnabledUndefined: Self = StObject.set(x, "ccipReadEnabled", js.undefined)
+      
       inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
       inline def setChainIdUndefined: Self = StObject.set(x, "chainId", js.undefined)
+      
+      inline def setCustomData(value: Record[String, Any]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      
+      inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
       inline def setData(value: BytesLike): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -553,6 +634,14 @@ object mod {
       
       inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
+      inline def setMaxFeePerGas(value: BigNumberish): Self = StObject.set(x, "maxFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setMaxFeePerGasUndefined: Self = StObject.set(x, "maxFeePerGas", js.undefined)
+      
+      inline def setMaxPriorityFeePerGas(value: BigNumberish): Self = StObject.set(x, "maxPriorityFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setMaxPriorityFeePerGasUndefined: Self = StObject.set(x, "maxPriorityFeePerGas", js.undefined)
+      
       inline def setNonce(value: BigNumberish): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
       inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
@@ -560,6 +649,10 @@ object mod {
       inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
       inline def setValue(value: BigNumberish): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -593,6 +686,10 @@ object mod {
   
   trait _Block extends StObject {
     
+    var _difficulty: BigNumber
+    
+    var baseFeePerGas: js.UndefOr[Null | BigNumber] = js.undefined
+    
     var difficulty: Double
     
     var extraData: String
@@ -616,6 +713,7 @@ object mod {
   object _Block {
     
     inline def apply(
+      _difficulty: BigNumber,
       difficulty: Double,
       extraData: String,
       gasLimit: BigNumber,
@@ -627,11 +725,17 @@ object mod {
       parentHash: String,
       timestamp: Double
     ): _Block = {
-      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_difficulty = _difficulty.asInstanceOf[js.Any], difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[_Block]
     }
     
     extension [Self <: _Block](x: Self) {
+      
+      inline def setBaseFeePerGas(value: BigNumber): Self = StObject.set(x, "baseFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setBaseFeePerGasNull: Self = StObject.set(x, "baseFeePerGas", null)
+      
+      inline def setBaseFeePerGasUndefined: Self = StObject.set(x, "baseFeePerGas", js.undefined)
       
       inline def setDifficulty(value: Double): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
       
@@ -652,6 +756,8 @@ object mod {
       inline def setParentHash(value: String): Self = StObject.set(x, "parentHash", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      
+      inline def set_difficulty(value: BigNumber): Self = StObject.set(x, "_difficulty", value.asInstanceOf[js.Any])
     }
   }
   

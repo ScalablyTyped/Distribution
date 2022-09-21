@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A person&#39;s read-only membership in a group.
-  */
 trait SchemaMembership extends StObject {
   
   /**
@@ -15,7 +12,7 @@ trait SchemaMembership extends StObject {
   var contactGroupMembership: js.UndefOr[SchemaContactGroupMembership] = js.undefined
   
   /**
-    * The domain membership.
+    * Output only. The domain membership.
     */
   var domainMembership: js.UndefOr[SchemaDomainMembership] = js.undefined
   

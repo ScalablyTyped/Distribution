@@ -2,9 +2,8 @@ package typings.setLink
 
 import org.scalablytyped.runtime.Shortcut
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.setLink.anon.Attach
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +12,30 @@ object mod extends Shortcut {
   
   @JSImport("set-link", JSImport.Namespace)
   @js.native
-  val ^ : (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) & Attach = js.native
+  val ^ : (RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]) & Attach = js.native
   
-  type _To = (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) & Attach
+  type _To = (RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]) & Attach
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) & Attach = ^
+  override def _to: (RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]) & Attach = ^
   
   object expressServeStaticCoreAugmentingMod {
     

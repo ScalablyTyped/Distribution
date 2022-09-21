@@ -34,11 +34,11 @@ object anon {
     
     var value: js.UndefOr[RollupType] = js.undefined
     
-    var values: js.Any
+    var values: Any
   }
   object KeyValue {
     
-    inline def apply[RollupType](key: String, values: js.Any): KeyValue[RollupType] = {
+    inline def apply[RollupType](key: String, values: Any): KeyValue[RollupType] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyValue[RollupType]]
     }
@@ -51,7 +51,7 @@ object anon {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,11 +59,11 @@ object anon {
     
     var key: String
     
-    var value: js.Any
+    var value: Any
   }
   object Value {
     
-    inline def apply(key: String, value: js.Any): Value = {
+    inline def apply(key: String, value: Any): Value = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
@@ -72,7 +72,7 @@ object anon {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,7 +103,7 @@ object anon {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: Datum*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: (Datum | (Values[Datum, RollupType]))*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

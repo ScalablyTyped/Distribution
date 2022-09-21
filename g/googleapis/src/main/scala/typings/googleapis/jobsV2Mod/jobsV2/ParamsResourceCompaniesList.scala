@@ -1,9 +1,5 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,25 +9,17 @@ trait ParamsResourceCompaniesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional.  Set to true if the companies request must have open jobs.
-    * Defaults to false.  If true, at most page_size of companies are fetched,
-    * among which only those with open jobs are returned.
+    * Optional. Set to true if the companies request must have open jobs. Defaults to false. If true, at most page_size of companies are fetched, among which only those with open jobs are returned.
     */
   var mustHaveOpenJobs: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Optional.  The maximum number of companies to be returned, at most 100.
-    * Default is 100 if a non-positive number is provided.
+    * Optional. The maximum number of companies to be returned, at most 100. Default is 100 if a non-positive number is provided.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional.  The starting indicator from which to return results.
+    * Optional. The starting indicator from which to return results.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -43,10 +31,6 @@ object ParamsResourceCompaniesList {
   }
   
   extension [Self <: ParamsResourceCompaniesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setMustHaveOpenJobs(value: Boolean): Self = StObject.set(x, "mustHaveOpenJobs", value.asInstanceOf[js.Any])
     

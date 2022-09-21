@@ -24,6 +24,6 @@ object AreaEncodeEntry {
     
     inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
-    inline def setOrientVarargs(value: (Test & ScaledValueRef[Orientation])*): Self = StObject.set(x, "orient", js.Array(value :_*))
+    inline def setOrientVarargs(value: (Test & ScaledValueRef[Orientation])*): Self = StObject.set(x, "orient", js.Array(value*))
   }
 }

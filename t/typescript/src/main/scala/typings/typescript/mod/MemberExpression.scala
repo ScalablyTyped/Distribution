@@ -9,5 +9,5 @@ trait MemberExpression
   extends StObject
      with LeftHandSideExpression {
   
-  var _memberExpressionBrand: js.Any = js.native
+  var _memberExpressionBrand: Any = js.native
 }

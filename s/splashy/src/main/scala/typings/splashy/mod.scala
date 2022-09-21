@@ -1,6 +1,6 @@
 package typings.splashy
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

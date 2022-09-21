@@ -100,4 +100,7 @@ trait ClickableComponent
     * @listens keydown
     */
   def handleKeyPress(event: Event): Unit = js.native
+  
+  @JSName("options_")
+  var options__ClickableComponent: ClickableComponentOptions = js.native
 }

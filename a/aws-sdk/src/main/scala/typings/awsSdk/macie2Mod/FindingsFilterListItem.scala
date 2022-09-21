@@ -27,7 +27,7 @@ trait FindingsFilterListItem extends StObject {
   var name: js.UndefOr[string] = js.undefined
   
   /**
-    * A map of key-value pairs that identifies the tags (keys and values) that are associated with the filter.
+    * A map of key-value pairs that specifies which tags (keys and values) are associated with the filter.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }

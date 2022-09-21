@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.UserAccess")
 @js.native
-/* private */ class UserAccess ()
+/* private */ open class UserAccess ()
   extends StObject
      with typings.activexExcel.Excel.UserAccess {
   

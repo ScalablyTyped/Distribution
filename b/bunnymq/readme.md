@@ -10,10 +10,10 @@ BunnyMq is a RabbitMq wrapper
 | ------------------ | :-------------: |
 | Full name          | bunnymq |
 | Keywords           | rabbitmq, broker, amqp, taskQueue, message, publish, subscribe |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 33548 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 476.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/dial-once/node-bunnymq#readme)

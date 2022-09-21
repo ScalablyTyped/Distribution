@@ -47,15 +47,15 @@ object wireMod {
     /* 1 */ val OPEN: typings.openfin.wireMod.READY_STATE.OPEN & Double = js.native
   }
   
-  inline def isExistingConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExistingConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean]
+  inline def isExistingConnectConfig(config: Any): /* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExistingConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean]
   
   inline def isExternalConfig(config: ConnectConfig): /* is openfin.openfin/_v2/transport/wire.ExternalConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExternalConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.ExternalConfig */ Boolean]
   
-  inline def isInternalConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternalConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean]
+  inline def isInternalConnectConfig(config: Any): /* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternalConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean]
   
-  inline def isNewConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean]
+  inline def isNewConnectConfig(config: Any): /* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean]
   
-  inline def isPortDiscoveryConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortDiscoveryConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean]
+  inline def isPortDiscoveryConfig(config: Any): /* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortDiscoveryConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean]
   
   trait BaseConfig extends StObject {
     
@@ -65,9 +65,9 @@ object wireMod {
     
     var assetsUrl: js.UndefOr[String] = js.undefined
     
-    var client: js.UndefOr[js.Any] = js.undefined
+    var client: js.UndefOr[Any] = js.undefined
     
-    var customItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var customItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     var devToolsPort: js.UndefOr[Double] = js.undefined
     
@@ -89,7 +89,7 @@ object wireMod {
     
     var services: js.UndefOr[js.Array[ServiceConfig]] = js.undefined
     
-    var startupApp: js.UndefOr[js.Any] = js.undefined
+    var startupApp: js.UndefOr[Any] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
     
@@ -112,21 +112,21 @@ object wireMod {
       
       inline def setAppAssetsUndefined: Self = StObject.set(x, "appAssets", js.undefined)
       
-      inline def setAppAssetsVarargs(value: Alias*): Self = StObject.set(x, "appAssets", js.Array(value :_*))
+      inline def setAppAssetsVarargs(value: Alias*): Self = StObject.set(x, "appAssets", js.Array(value*))
       
       inline def setAssetsUrl(value: String): Self = StObject.set(x, "assetsUrl", value.asInstanceOf[js.Any])
       
       inline def setAssetsUrlUndefined: Self = StObject.set(x, "assetsUrl", js.undefined)
       
-      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      inline def setCustomItems(value: js.Array[js.Any]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
+      inline def setCustomItems(value: js.Array[Any]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
       
       inline def setCustomItemsUndefined: Self = StObject.set(x, "customItems", js.undefined)
       
-      inline def setCustomItemsVarargs(value: js.Any*): Self = StObject.set(x, "customItems", js.Array(value :_*))
+      inline def setCustomItemsVarargs(value: Any*): Self = StObject.set(x, "customItems", js.Array(value*))
       
       inline def setDevToolsPort(value: Double): Self = StObject.set(x, "devToolsPort", value.asInstanceOf[js.Any])
       
@@ -168,9 +168,9 @@ object wireMod {
       
       inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
       
-      inline def setServicesVarargs(value: ServiceConfig*): Self = StObject.set(x, "services", js.Array(value :_*))
+      inline def setServicesVarargs(value: ServiceConfig*): Self = StObject.set(x, "services", js.Array(value*))
       
-      inline def setStartupApp(value: js.Any): Self = StObject.set(x, "startupApp", value.asInstanceOf[js.Any])
+      inline def setStartupApp(value: Any): Self = StObject.set(x, "startupApp", value.asInstanceOf[js.Any])
       
       inline def setStartupAppUndefined: Self = StObject.set(x, "startupApp", js.undefined)
       
@@ -397,11 +397,11 @@ object wireMod {
   @js.native
   trait Wire extends EventEmitter {
     
-    def connect(address: String): js.Promise[js.Any] = js.native
+    def connect(address: String): js.Promise[Any] = js.native
     
-    def connectSync(): js.Any = js.native
+    def connectSync(): Any = js.native
     
-    def send(data: js.Any): js.Promise[js.Any] = js.native
+    def send(data: Any): js.Promise[Any] = js.native
     
     def shutdown(): js.Promise[Unit] = js.native
   }
@@ -409,5 +409,5 @@ object wireMod {
   @js.native
   trait WireConstructor
     extends StObject
-       with Instantiable1[/* onmessage */ js.Function1[/* data */ js.Any, Unit], Wire]
+       with Instantiable1[/* onmessage */ js.Function1[/* data */ Any, Unit], Wire]
 }

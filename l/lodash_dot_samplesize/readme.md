@@ -10,10 +10,10 @@ The lodash method `_.sampleSize` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.samplesize |
 | Keywords           | lodash-modularized, samplesize |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 820075 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 575147.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

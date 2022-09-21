@@ -28,6 +28,10 @@ object spotifyWebPlaybackSdkStrings {
   inline def authentication_error: authentication_error = "authentication_error".asInstanceOf[authentication_error]
   
   @js.native
+  sealed trait autoplay_failed extends StObject
+  inline def autoplay_failed: autoplay_failed = "autoplay_failed".asInstanceOf[autoplay_failed]
+  
+  @js.native
   sealed trait episode extends StObject
   inline def episode: episode = "episode".asInstanceOf[episode]
   

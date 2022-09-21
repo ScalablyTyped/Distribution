@@ -22,6 +22,6 @@ object GooglePrivacyDlpV2Row {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

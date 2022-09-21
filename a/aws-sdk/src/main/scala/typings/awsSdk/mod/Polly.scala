@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Polly ()
+open class Polly ()
   extends typings.awsSdk.allMod.Polly {
   def this(options: ClientConfiguration) = this()
 }
@@ -22,7 +22,7 @@ object Polly {
   /**
     * Creates a presigner object with a set of configuration options.
     */
-  class Presigner ()
+  open class Presigner ()
     extends typings.awsSdk.allMod.Polly.Presigner {
     def this(options: PresignerOptions) = this()
   }

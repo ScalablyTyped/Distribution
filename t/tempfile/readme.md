@@ -1,7 +1,7 @@
 
 # Scala.js typings for tempfile
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Get a random temporary file path
@@ -10,10 +10,10 @@ Get a random temporary file path
 | ------------------ | :-------------: |
 | Full name          | tempfile |
 | Keywords           | temp, temporary, tempfile, file, path, random, uuid |
-| # releases         | 2 |
-| # dependents       | 177 |
-| # downloads        | 79365918 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6452204.666666667 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/tempfile#readme)

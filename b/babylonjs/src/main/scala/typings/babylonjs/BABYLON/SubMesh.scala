@@ -15,25 +15,46 @@ trait SubMesh
     */
   def IsGlobal: Boolean = js.native
   
-  /* private */ var _IsMultiMaterial: js.Any = js.native
-  
   /** @hidden */
   var _alphaIndex: Double = js.native
   
-  /* private */ var _boundingInfo: js.Any = js.native
+  /* private */ var _boundingInfo: Any = js.native
   
-  /** @hidden */
+  /**
+    * @param collider
+    * @hidden
+    */
   def _checkCollision(collider: Collider): Boolean = js.native
   
-  /* private */ var _currentMaterial: js.Any = js.native
+  /* private */ var _currentMaterial: Any = js.native
   
   /** @hidden */
   var _distanceToCamera: Double = js.native
   
   /** @hidden */
-  var _effectOverride: Nullable[Effect] = js.native
+  def _drawWrapper: DrawWrapper = js.native
+  
+  /** @hidden */
+  def _drawWrapperOverride: Nullable[DrawWrapper] = js.native
+  
+  /** @hidden */
+  var _drawWrappers: js.Array[DrawWrapper] = js.native
+  
+  /* private */ var _engine: Any = js.native
   
   /**
+    * @param passId
+    * @param createIfNotExisting
+    * @hidden
+    */
+  def _getDrawWrapper(): js.UndefOr[DrawWrapper] = js.native
+  def _getDrawWrapper(passId: Double): js.UndefOr[DrawWrapper] = js.native
+  def _getDrawWrapper(passId: Double, createIfNotExisting: Boolean): js.UndefOr[DrawWrapper] = js.native
+  def _getDrawWrapper(passId: Unit, createIfNotExisting: Boolean): js.UndefOr[DrawWrapper] = js.native
+  
+  /**
+    * @param indices
+    * @param engine
     * @hidden
     */
   def _getLinesIndexBuffer(indices: IndicesArray, engine: Engine): DataBuffer = js.native
@@ -41,17 +62,49 @@ trait SubMesh
   /** @hidden */
   var _id: Double = js.native
   
-  /** @hidden */
-  /* private */ var _intersectLines: js.Any = js.native
+  /**
+    * @param ray
+    * @param positions
+    * @param indices
+    * @param intersectionThreshold
+    * @param fastCheck
+    * @hidden
+    */
+  /* private */ var _intersectLines: Any = js.native
   
-  /** @hidden */
-  /* private */ var _intersectTriangles: js.Any = js.native
+  /**
+    * @param ray
+    * @param positions
+    * @param indices
+    * @param step
+    * @param checkStopper
+    * @param fastCheck
+    * @param trianglePredicate
+    * @hidden
+    */
+  /* private */ var _intersectTriangles: Any = js.native
   
-  /** @hidden */
-  /* private */ var _intersectUnIndexedLines: js.Any = js.native
+  /**
+    * @param ray
+    * @param positions
+    * @param indices
+    * @param intersectionThreshold
+    * @param fastCheck
+    * @hidden
+    */
+  /* private */ var _intersectUnIndexedLines: Any = js.native
   
-  /** @hidden */
-  /* private */ var _intersectUnIndexedTriangles: js.Any = js.native
+  /**
+    * @param ray
+    * @param positions
+    * @param indices
+    * @param fastCheck
+    * @param trianglePredicate
+    * @hidden
+    */
+  /* private */ var _intersectUnIndexedTriangles: Any = js.native
+  
+  /* private */ var _isMultiMaterial: Any = js.native
   
   /** @hidden */
   var _lastColliderTransformMatrix: Nullable[Matrix] = js.native
@@ -59,26 +112,49 @@ trait SubMesh
   /** @hidden */
   var _lastColliderWorldVertices: Nullable[js.Array[Vector3]] = js.native
   
-  /* private */ var _linesIndexBuffer: js.Any = js.native
+  /* private */ var _linesIndexBuffer: Any = js.native
   
   /** @hidden */
   var _linesIndexCount: Double = js.native
   
-  /** @hidden */
-  var _materialDefines: Nullable[MaterialDefines] = js.native
+  /* private */ var _mainDrawWrapperOverride: Any = js.native
+  
+  /* private */ var _mesh: Any = js.native
   
   /** @hidden */
-  var _materialEffect: Nullable[Effect] = js.native
+  def _projectOnTrianglesToRef(
+    vector: Vector3,
+    positions: js.Array[Vector3],
+    indices: IndicesArray,
+    step: Double,
+    checkStopper: Boolean,
+    ref: Vector3
+  ): Double = js.native
   
-  /* private */ var _mesh: js.Any = js.native
+  /** @hidden */
+  def _projectOnUnIndexedTrianglesToRef(vector: Vector3, positions: js.Array[Vector3], indices: IndicesArray, ref: Vector3): Double = js.native
   
   /** @hidden */
   def _rebuild(): Unit = js.native
   
+  /**
+    * @param passId
+    * @param disposeWrapper
+    * @hidden
+    */
+  def _removeDrawWrapper(passId: Double): Unit = js.native
+  def _removeDrawWrapper(passId: Double, disposeWrapper: Boolean): Unit = js.native
+  
   /** @hidden */
   var _renderId: Double = js.native
   
-  /* private */ var _renderingMesh: js.Any = js.native
+  /* private */ var _renderingMesh: Any = js.native
+  
+  /**
+    * @param wrapper
+    * @hidden
+    */
+  def _setMainDrawWrapperOverride(wrapper: Nullable[DrawWrapper]): Unit = js.native
   
   /** @hidden */
   var _trianglePlanes: js.Array[Plane] = js.native
@@ -105,12 +181,12 @@ trait SubMesh
   def dispose(): Unit = js.native
   
   /**
-    * Gets associated effect
+    * Gets associated (main) effect (possibly the effect override if defined)
     */
   def effect: Nullable[Effect] = js.native
   
   /**
-    * Returns the submesh BoudingInfo object
+    * Returns the submesh BoundingInfo object
     * @returns current bounding info (or mesh's one if the submesh is global)
     */
   def getBoundingInfo(): BoundingInfo = js.native
@@ -129,13 +205,15 @@ trait SubMesh
   
   /**
     * Returns the submesh material
+    * @param getDefaultMaterial Defines whether or not to get the default material if nothing has been defined.
     * @returns null or the current material
     */
   def getMaterial(): Nullable[Material] = js.native
+  def getMaterial(getDefaultMaterial: Boolean): Nullable[Material] = js.native
   
   /**
     * Returns the mesh of the current submesh
-    * @return the parent mesh
+    * @returns the parent mesh
     */
   def getMesh(): AbstractMesh = js.native
   
@@ -196,6 +274,17 @@ trait SubMesh
   var materialIndex: Double = js.native
   
   /**
+    * Projects a point on this submesh and stores the result in "ref"
+    *
+    * @param vector point to project
+    * @param positions defines mesh's positions array
+    * @param indices defines mesh's indices array
+    * @param ref vector that will store the result
+    * @returns distance from the point and the submesh, or -1 if the mesh rendering mode doesn't support projections
+    */
+  def projectToRef(vector: Vector3, positions: js.Array[Vector3], indices: IndicesArray, ref: Vector3): Double = js.native
+  
+  /**
     * Sets a new updated BoundingInfo object to the submesh
     * @param data defines an optional position array to use to determine the bounding info
     * @returns the SubMesh
@@ -211,6 +300,13 @@ trait SubMesh
   def render(enableAlphaMode: Boolean): SubMesh = js.native
   
   /**
+    * Resets the draw wrappers cache
+    * @param passId If provided, releases only the draw wrapper corresponding to this render pass id
+    */
+  def resetDrawCache(): Unit = js.native
+  def resetDrawCache(passId: Double): Unit = js.native
+  
+  /**
     * Sets the submesh BoundingInfo
     * @param boundingInfo defines the new bounding info to use
     * @returns the SubMesh
@@ -221,9 +317,31 @@ trait SubMesh
     * Sets associated effect (effect used to render this submesh)
     * @param effect defines the effect to associate with
     * @param defines defines the set of defines used to compile this effect
+    * @param materialContext material context associated to the effect
+    * @param resetContext true to reset the draw context
     */
   def setEffect(effect: Nullable[Effect]): Unit = js.native
-  def setEffect(effect: Nullable[Effect], defines: Nullable[MaterialDefines]): Unit = js.native
+  def setEffect(effect: Nullable[Effect], defines: Unit, materialContext: Unit, resetContext: Boolean): Unit = js.native
+  def setEffect(effect: Nullable[Effect], defines: Unit, materialContext: IMaterialContext): Unit = js.native
+  def setEffect(effect: Nullable[Effect], defines: Unit, materialContext: IMaterialContext, resetContext: Boolean): Unit = js.native
+  def setEffect(effect: Nullable[Effect], defines: Nullable[String | MaterialDefines]): Unit = js.native
+  def setEffect(
+    effect: Nullable[Effect],
+    defines: Nullable[String | MaterialDefines],
+    materialContext: Unit,
+    resetContext: Boolean
+  ): Unit = js.native
+  def setEffect(
+    effect: Nullable[Effect],
+    defines: Nullable[String | MaterialDefines],
+    materialContext: IMaterialContext
+  ): Unit = js.native
+  def setEffect(
+    effect: Nullable[Effect],
+    defines: Nullable[String | MaterialDefines],
+    materialContext: IMaterialContext,
+    resetContext: Boolean
+  ): Unit = js.native
   
   /**
     * Updates the submesh BoundingInfo

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MVCxClientQueryBuilderSaveCommandExecutedEventArgs")
 @js.native
-class MVCxClientQueryBuilderSaveCommandExecutedEventArgs protected ()
+open class MVCxClientQueryBuilderSaveCommandExecutedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.MVCxClientQueryBuilderSaveCommandExecutedEventArgs {
   /**

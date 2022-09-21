@@ -9,10 +9,10 @@ Logging library that allows for hierarchical loggers, multiple log levels, and f
 | ------------------ | :-------------: |
 | Full name          | logg |
 | Keywords           | log, logging, logger, hierarchical, handler, watcher |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 1472 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 141.0 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/dpup/node-logg)

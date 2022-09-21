@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "LightInformationBlock")
 @js.native
-class LightInformationBlock protected ()
+open class LightInformationBlock protected ()
   extends typings.babylonjs.indexMod.LightInformationBlock {
   /**
     * Creates a new LightInformationBlock

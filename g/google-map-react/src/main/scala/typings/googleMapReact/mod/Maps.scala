@@ -1,139 +1,191 @@
 package typings.googleMapReact.mod
 
+import typings.googleMapReact.anon.ANDROID
+import typings.googleMapReact.anon.APPROXIMATE
+import typings.googleMapReact.anon.BACKWARDCLOSEDARROW
+import typings.googleMapReact.anon.BEST
+import typings.googleMapReact.anon.BESTGUESS
+import typings.googleMapReact.anon.BICYCLING
+import typings.googleMapReact.anon.BOTTOM
+import typings.googleMapReact.anon.BOUNCE
+import typings.googleMapReact.anon.BUS
+import typings.googleMapReact.anon.CENTER_
+import typings.googleMapReact.anon.DEFAULT
+import typings.googleMapReact.anon.DEFAULTNumber
+import typings.googleMapReact.anon.DOCUMENTNOTFOUND
+import typings.googleMapReact.anon.ERROR
+import typings.googleMapReact.anon.ERROROK
+import typings.googleMapReact.anon.FEWERTRANSFERS
+import typings.googleMapReact.anon.HYBRID
+import typings.googleMapReact.anon.IMPERIAL
+import typings.googleMapReact.anon.INVALIDREQUEST
+import typings.googleMapReact.anon.LARGE
+import typings.googleMapReact.anon.MAXDIMENSIONSEXCEEDED
+import typings.googleMapReact.anon.NOTFOUND
+import typings.googleMapReact.anon.OK
+import typings.googleMapReact.anon.OUTDOOR
+import typings.googleMapReact.anon.RASTER
+import typings.googleMapReact.anon.UNKNOWNERROR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Maps extends StObject {
   
-  var Animation: js.Any
+  var Animation: BOUNCE
   
-  var ControlPosition: js.Any
+  var ControlPosition: BOTTOM
   
-  var DirectionsStatus: js.Any
+  var DirectionsStatus: INVALIDREQUEST
   
-  var DirectionsTravelMode: js.Any
+  /** @deprecated - Use `TravelMode` instead */
+  var DirectionsTravelMode: BICYCLING
   
-  var DirectionsUnitSystem: js.Any
+  /** @deprecated - Use `UnitSystem` instead */
+  var DirectionsUnitSystem: IMPERIAL
   
-  var DistanceMatrixElementStatus: js.Any
+  var DistanceMatrixElementStatus: NOTFOUND
   
-  var DistanceMatrixStatus: js.Any
+  var DistanceMatrixStatus: MAXDIMENSIONSEXCEEDED
   
-  var ElevationStatus: js.Any
+  var ElevationStatus: OK
   
-  var GeocoderLocationType: js.Any
+  var GeocoderLocationType: APPROXIMATE
   
-  var GeocoderStatus: js.Any
+  var GeocoderStatus: ERROR
   
-  var KmlLayerStats: js.Any
+  var KmlLayerStatus: DOCUMENTNOTFOUND
   
-  var MapTypeControlStyle: js.Any
+  var MapTypeControlStyle: DEFAULT
   
-  var MapTypeId: js.Any
+  var MapTypeId: HYBRID
   
-  var MaxZoomStatus: js.Any
+  var MaxZoomStatus: ERROROK
   
-  var NavigationControlStyle: js.Any
+  var NavigationControlStyle: ANDROID
   
-  var ScaleControlStyle: js.Any
+  var RenderingType: RASTER
   
-  var StreetViewStatus: js.Any
+  var ScaleControlStyle: DEFAULTNumber
   
-  var StrokePosition: js.Any
+  var StreetViewPreference: BEST
   
-  var SymbolPath: js.Any
+  var StreetViewSource: OUTDOOR
   
-  var TransitMode: js.Any
+  var StreetViewStatus: UNKNOWNERROR
   
-  var TransitRoutePreference: js.Any
+  var StrokePosition: CENTER_
   
-  var TravelMode: js.Any
+  var SymbolPath: BACKWARDCLOSEDARROW
   
-  var UnitSystem: js.Any
+  var TrafficModel: BESTGUESS
   
-  var ZoomControlStyle: js.Any
+  var TransitMode: BUS
+  
+  var TransitRoutePreference: FEWERTRANSFERS
+  
+  var TravelMode: BICYCLING
+  
+  var UnitSystem: IMPERIAL
+  
+  /**
+    * @deprecated - The Zoom control is available in only one style, and
+    * `google.maps.ZoomControlStyle` is therefore no longer available.
+    */
+  var ZoomControlStyle: LARGE
 }
 object Maps {
   
   inline def apply(
-    Animation: js.Any,
-    ControlPosition: js.Any,
-    DirectionsStatus: js.Any,
-    DirectionsTravelMode: js.Any,
-    DirectionsUnitSystem: js.Any,
-    DistanceMatrixElementStatus: js.Any,
-    DistanceMatrixStatus: js.Any,
-    ElevationStatus: js.Any,
-    GeocoderLocationType: js.Any,
-    GeocoderStatus: js.Any,
-    KmlLayerStats: js.Any,
-    MapTypeControlStyle: js.Any,
-    MapTypeId: js.Any,
-    MaxZoomStatus: js.Any,
-    NavigationControlStyle: js.Any,
-    ScaleControlStyle: js.Any,
-    StreetViewStatus: js.Any,
-    StrokePosition: js.Any,
-    SymbolPath: js.Any,
-    TransitMode: js.Any,
-    TransitRoutePreference: js.Any,
-    TravelMode: js.Any,
-    UnitSystem: js.Any,
-    ZoomControlStyle: js.Any
+    Animation: BOUNCE,
+    ControlPosition: BOTTOM,
+    DirectionsStatus: INVALIDREQUEST,
+    DirectionsTravelMode: BICYCLING,
+    DirectionsUnitSystem: IMPERIAL,
+    DistanceMatrixElementStatus: NOTFOUND,
+    DistanceMatrixStatus: MAXDIMENSIONSEXCEEDED,
+    ElevationStatus: OK,
+    GeocoderLocationType: APPROXIMATE,
+    GeocoderStatus: ERROR,
+    KmlLayerStatus: DOCUMENTNOTFOUND,
+    MapTypeControlStyle: DEFAULT,
+    MapTypeId: HYBRID,
+    MaxZoomStatus: ERROROK,
+    NavigationControlStyle: ANDROID,
+    RenderingType: RASTER,
+    ScaleControlStyle: DEFAULTNumber,
+    StreetViewPreference: BEST,
+    StreetViewSource: OUTDOOR,
+    StreetViewStatus: UNKNOWNERROR,
+    StrokePosition: CENTER_,
+    SymbolPath: BACKWARDCLOSEDARROW,
+    TrafficModel: BESTGUESS,
+    TransitMode: BUS,
+    TransitRoutePreference: FEWERTRANSFERS,
+    TravelMode: BICYCLING,
+    UnitSystem: IMPERIAL,
+    ZoomControlStyle: LARGE
   ): Maps = {
-    val __obj = js.Dynamic.literal(Animation = Animation.asInstanceOf[js.Any], ControlPosition = ControlPosition.asInstanceOf[js.Any], DirectionsStatus = DirectionsStatus.asInstanceOf[js.Any], DirectionsTravelMode = DirectionsTravelMode.asInstanceOf[js.Any], DirectionsUnitSystem = DirectionsUnitSystem.asInstanceOf[js.Any], DistanceMatrixElementStatus = DistanceMatrixElementStatus.asInstanceOf[js.Any], DistanceMatrixStatus = DistanceMatrixStatus.asInstanceOf[js.Any], ElevationStatus = ElevationStatus.asInstanceOf[js.Any], GeocoderLocationType = GeocoderLocationType.asInstanceOf[js.Any], GeocoderStatus = GeocoderStatus.asInstanceOf[js.Any], KmlLayerStats = KmlLayerStats.asInstanceOf[js.Any], MapTypeControlStyle = MapTypeControlStyle.asInstanceOf[js.Any], MapTypeId = MapTypeId.asInstanceOf[js.Any], MaxZoomStatus = MaxZoomStatus.asInstanceOf[js.Any], NavigationControlStyle = NavigationControlStyle.asInstanceOf[js.Any], ScaleControlStyle = ScaleControlStyle.asInstanceOf[js.Any], StreetViewStatus = StreetViewStatus.asInstanceOf[js.Any], StrokePosition = StrokePosition.asInstanceOf[js.Any], SymbolPath = SymbolPath.asInstanceOf[js.Any], TransitMode = TransitMode.asInstanceOf[js.Any], TransitRoutePreference = TransitRoutePreference.asInstanceOf[js.Any], TravelMode = TravelMode.asInstanceOf[js.Any], UnitSystem = UnitSystem.asInstanceOf[js.Any], ZoomControlStyle = ZoomControlStyle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Animation = Animation.asInstanceOf[js.Any], ControlPosition = ControlPosition.asInstanceOf[js.Any], DirectionsStatus = DirectionsStatus.asInstanceOf[js.Any], DirectionsTravelMode = DirectionsTravelMode.asInstanceOf[js.Any], DirectionsUnitSystem = DirectionsUnitSystem.asInstanceOf[js.Any], DistanceMatrixElementStatus = DistanceMatrixElementStatus.asInstanceOf[js.Any], DistanceMatrixStatus = DistanceMatrixStatus.asInstanceOf[js.Any], ElevationStatus = ElevationStatus.asInstanceOf[js.Any], GeocoderLocationType = GeocoderLocationType.asInstanceOf[js.Any], GeocoderStatus = GeocoderStatus.asInstanceOf[js.Any], KmlLayerStatus = KmlLayerStatus.asInstanceOf[js.Any], MapTypeControlStyle = MapTypeControlStyle.asInstanceOf[js.Any], MapTypeId = MapTypeId.asInstanceOf[js.Any], MaxZoomStatus = MaxZoomStatus.asInstanceOf[js.Any], NavigationControlStyle = NavigationControlStyle.asInstanceOf[js.Any], RenderingType = RenderingType.asInstanceOf[js.Any], ScaleControlStyle = ScaleControlStyle.asInstanceOf[js.Any], StreetViewPreference = StreetViewPreference.asInstanceOf[js.Any], StreetViewSource = StreetViewSource.asInstanceOf[js.Any], StreetViewStatus = StreetViewStatus.asInstanceOf[js.Any], StrokePosition = StrokePosition.asInstanceOf[js.Any], SymbolPath = SymbolPath.asInstanceOf[js.Any], TrafficModel = TrafficModel.asInstanceOf[js.Any], TransitMode = TransitMode.asInstanceOf[js.Any], TransitRoutePreference = TransitRoutePreference.asInstanceOf[js.Any], TravelMode = TravelMode.asInstanceOf[js.Any], UnitSystem = UnitSystem.asInstanceOf[js.Any], ZoomControlStyle = ZoomControlStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Maps]
   }
   
   extension [Self <: Maps](x: Self) {
     
-    inline def setAnimation(value: js.Any): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: BOUNCE): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     
-    inline def setControlPosition(value: js.Any): Self = StObject.set(x, "ControlPosition", value.asInstanceOf[js.Any])
+    inline def setControlPosition(value: BOTTOM): Self = StObject.set(x, "ControlPosition", value.asInstanceOf[js.Any])
     
-    inline def setDirectionsStatus(value: js.Any): Self = StObject.set(x, "DirectionsStatus", value.asInstanceOf[js.Any])
+    inline def setDirectionsStatus(value: INVALIDREQUEST): Self = StObject.set(x, "DirectionsStatus", value.asInstanceOf[js.Any])
     
-    inline def setDirectionsTravelMode(value: js.Any): Self = StObject.set(x, "DirectionsTravelMode", value.asInstanceOf[js.Any])
+    inline def setDirectionsTravelMode(value: BICYCLING): Self = StObject.set(x, "DirectionsTravelMode", value.asInstanceOf[js.Any])
     
-    inline def setDirectionsUnitSystem(value: js.Any): Self = StObject.set(x, "DirectionsUnitSystem", value.asInstanceOf[js.Any])
+    inline def setDirectionsUnitSystem(value: IMPERIAL): Self = StObject.set(x, "DirectionsUnitSystem", value.asInstanceOf[js.Any])
     
-    inline def setDistanceMatrixElementStatus(value: js.Any): Self = StObject.set(x, "DistanceMatrixElementStatus", value.asInstanceOf[js.Any])
+    inline def setDistanceMatrixElementStatus(value: NOTFOUND): Self = StObject.set(x, "DistanceMatrixElementStatus", value.asInstanceOf[js.Any])
     
-    inline def setDistanceMatrixStatus(value: js.Any): Self = StObject.set(x, "DistanceMatrixStatus", value.asInstanceOf[js.Any])
+    inline def setDistanceMatrixStatus(value: MAXDIMENSIONSEXCEEDED): Self = StObject.set(x, "DistanceMatrixStatus", value.asInstanceOf[js.Any])
     
-    inline def setElevationStatus(value: js.Any): Self = StObject.set(x, "ElevationStatus", value.asInstanceOf[js.Any])
+    inline def setElevationStatus(value: OK): Self = StObject.set(x, "ElevationStatus", value.asInstanceOf[js.Any])
     
-    inline def setGeocoderLocationType(value: js.Any): Self = StObject.set(x, "GeocoderLocationType", value.asInstanceOf[js.Any])
+    inline def setGeocoderLocationType(value: APPROXIMATE): Self = StObject.set(x, "GeocoderLocationType", value.asInstanceOf[js.Any])
     
-    inline def setGeocoderStatus(value: js.Any): Self = StObject.set(x, "GeocoderStatus", value.asInstanceOf[js.Any])
+    inline def setGeocoderStatus(value: ERROR): Self = StObject.set(x, "GeocoderStatus", value.asInstanceOf[js.Any])
     
-    inline def setKmlLayerStats(value: js.Any): Self = StObject.set(x, "KmlLayerStats", value.asInstanceOf[js.Any])
+    inline def setKmlLayerStatus(value: DOCUMENTNOTFOUND): Self = StObject.set(x, "KmlLayerStatus", value.asInstanceOf[js.Any])
     
-    inline def setMapTypeControlStyle(value: js.Any): Self = StObject.set(x, "MapTypeControlStyle", value.asInstanceOf[js.Any])
+    inline def setMapTypeControlStyle(value: DEFAULT): Self = StObject.set(x, "MapTypeControlStyle", value.asInstanceOf[js.Any])
     
-    inline def setMapTypeId(value: js.Any): Self = StObject.set(x, "MapTypeId", value.asInstanceOf[js.Any])
+    inline def setMapTypeId(value: HYBRID): Self = StObject.set(x, "MapTypeId", value.asInstanceOf[js.Any])
     
-    inline def setMaxZoomStatus(value: js.Any): Self = StObject.set(x, "MaxZoomStatus", value.asInstanceOf[js.Any])
+    inline def setMaxZoomStatus(value: ERROROK): Self = StObject.set(x, "MaxZoomStatus", value.asInstanceOf[js.Any])
     
-    inline def setNavigationControlStyle(value: js.Any): Self = StObject.set(x, "NavigationControlStyle", value.asInstanceOf[js.Any])
+    inline def setNavigationControlStyle(value: ANDROID): Self = StObject.set(x, "NavigationControlStyle", value.asInstanceOf[js.Any])
     
-    inline def setScaleControlStyle(value: js.Any): Self = StObject.set(x, "ScaleControlStyle", value.asInstanceOf[js.Any])
+    inline def setRenderingType(value: RASTER): Self = StObject.set(x, "RenderingType", value.asInstanceOf[js.Any])
     
-    inline def setStreetViewStatus(value: js.Any): Self = StObject.set(x, "StreetViewStatus", value.asInstanceOf[js.Any])
+    inline def setScaleControlStyle(value: DEFAULTNumber): Self = StObject.set(x, "ScaleControlStyle", value.asInstanceOf[js.Any])
     
-    inline def setStrokePosition(value: js.Any): Self = StObject.set(x, "StrokePosition", value.asInstanceOf[js.Any])
+    inline def setStreetViewPreference(value: BEST): Self = StObject.set(x, "StreetViewPreference", value.asInstanceOf[js.Any])
     
-    inline def setSymbolPath(value: js.Any): Self = StObject.set(x, "SymbolPath", value.asInstanceOf[js.Any])
+    inline def setStreetViewSource(value: OUTDOOR): Self = StObject.set(x, "StreetViewSource", value.asInstanceOf[js.Any])
     
-    inline def setTransitMode(value: js.Any): Self = StObject.set(x, "TransitMode", value.asInstanceOf[js.Any])
+    inline def setStreetViewStatus(value: UNKNOWNERROR): Self = StObject.set(x, "StreetViewStatus", value.asInstanceOf[js.Any])
     
-    inline def setTransitRoutePreference(value: js.Any): Self = StObject.set(x, "TransitRoutePreference", value.asInstanceOf[js.Any])
+    inline def setStrokePosition(value: CENTER_): Self = StObject.set(x, "StrokePosition", value.asInstanceOf[js.Any])
     
-    inline def setTravelMode(value: js.Any): Self = StObject.set(x, "TravelMode", value.asInstanceOf[js.Any])
+    inline def setSymbolPath(value: BACKWARDCLOSEDARROW): Self = StObject.set(x, "SymbolPath", value.asInstanceOf[js.Any])
     
-    inline def setUnitSystem(value: js.Any): Self = StObject.set(x, "UnitSystem", value.asInstanceOf[js.Any])
+    inline def setTrafficModel(value: BESTGUESS): Self = StObject.set(x, "TrafficModel", value.asInstanceOf[js.Any])
     
-    inline def setZoomControlStyle(value: js.Any): Self = StObject.set(x, "ZoomControlStyle", value.asInstanceOf[js.Any])
+    inline def setTransitMode(value: BUS): Self = StObject.set(x, "TransitMode", value.asInstanceOf[js.Any])
+    
+    inline def setTransitRoutePreference(value: FEWERTRANSFERS): Self = StObject.set(x, "TransitRoutePreference", value.asInstanceOf[js.Any])
+    
+    inline def setTravelMode(value: BICYCLING): Self = StObject.set(x, "TravelMode", value.asInstanceOf[js.Any])
+    
+    inline def setUnitSystem(value: IMPERIAL): Self = StObject.set(x, "UnitSystem", value.asInstanceOf[js.Any])
+    
+    inline def setZoomControlStyle(value: LARGE): Self = StObject.set(x, "ZoomControlStyle", value.asInstanceOf[js.Any])
   }
 }

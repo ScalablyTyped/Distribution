@@ -21,10 +21,10 @@ object MatchResults {
     
     inline def setMatchings(value: js.Array[MatchRoute]): Self = StObject.set(x, "matchings", value.asInstanceOf[js.Any])
     
-    inline def setMatchingsVarargs(value: MatchRoute*): Self = StObject.set(x, "matchings", js.Array(value :_*))
+    inline def setMatchingsVarargs(value: MatchRoute*): Self = StObject.set(x, "matchings", js.Array(value*))
     
     inline def setTracepoints(value: js.Array[MatchWaypoint]): Self = StObject.set(x, "tracepoints", value.asInstanceOf[js.Any])
     
-    inline def setTracepointsVarargs(value: MatchWaypoint*): Self = StObject.set(x, "tracepoints", js.Array(value :_*))
+    inline def setTracepointsVarargs(value: MatchWaypoint*): Self = StObject.set(x, "tracepoints", js.Array(value*))
   }
 }

@@ -8,11 +8,11 @@ trait Physics extends StObject {
   
   var physics: Gravity
   
-  var render: Exposure
+  var render: AmbientBake
 }
 object Physics {
   
-  inline def apply(physics: Gravity, render: Exposure): Physics = {
+  inline def apply(physics: Gravity, render: AmbientBake): Physics = {
     val __obj = js.Dynamic.literal(physics = physics.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
     __obj.asInstanceOf[Physics]
   }
@@ -21,6 +21,6 @@ object Physics {
     
     inline def setPhysics(value: Gravity): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
     
-    inline def setRender(value: Exposure): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: AmbientBake): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
   }
 }

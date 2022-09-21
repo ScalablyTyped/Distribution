@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.mcasConfigured
   - typings.microsoftGraph.microsoftGraphStrings.monitorOnly
   - typings.microsoftGraph.microsoftGraphStrings.blockDownloads
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait CloudAppSecuritySessionControlType extends StObject
 object CloudAppSecuritySessionControlType {
@@ -19,5 +20,5 @@ object CloudAppSecuritySessionControlType {
   
   inline def monitorOnly: typings.microsoftGraph.microsoftGraphStrings.monitorOnly = "monitorOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorOnly]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

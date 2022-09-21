@@ -67,7 +67,7 @@ trait IGridColumnOf[TEntity] extends StObject {
     * Columns will be default be in the body render container
     * if they aren't allocated to one specifically.
     */
-  def getRenderContainer(): js.Any
+  def getRenderContainer(): Any
   
   /** Reference to grid containing the column */
   var grid: IGridInstanceOf[TEntity]
@@ -91,7 +91,7 @@ trait IGridColumnOf[TEntity] extends StObject {
     * @param propName the property name we'd like to set
     * @param defaultValue the value to use if the colDef doesn't provide the setting
     */
-  def setPropertyOrDefault(colDef: IColumnDefOf[TEntity], propName: String, defaultValue: js.Any): Unit
+  def setPropertyOrDefault(colDef: IColumnDefOf[TEntity], propName: String, defaultValue: Any): Unit
   
   /** Makes the column visible by setting colDef.visible = true */
   def showColumn(): Unit
@@ -107,8 +107,8 @@ trait IGridColumnOf[TEntity] extends StObject {
     */
   var sortingAlgorithm: js.UndefOr[
     js.Function5[
-      /* a */ js.Any, 
-      /* b */ js.Any, 
+      /* a */ Any, 
+      /* b */ Any, 
       /* rowA */ IGridRowOf[TEntity], 
       /* rowB */ IGridRowOf[TEntity], 
       /* direction */ String, 
@@ -136,12 +136,12 @@ object IGridColumnOf {
     getAggregationValue: () => String,
     getColClass: Boolean => String,
     getColClassDefinition: () => String,
-    getRenderContainer: () => js.Any,
+    getRenderContainer: () => Any,
     grid: IGridInstanceOf[TEntity],
     hideColumn: () => Unit,
     isPinnedLeft: () => Boolean,
     isPinnedRight: () => Boolean,
-    setPropertyOrDefault: (IColumnDefOf[TEntity], String, js.Any) => Unit,
+    setPropertyOrDefault: (IColumnDefOf[TEntity], String, Any) => Unit,
     showColumn: () => Unit,
     updateColumnDef: (IColumnDefOf[TEntity], Boolean) => Unit,
     width: Double
@@ -174,7 +174,7 @@ object IGridColumnOf {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setGetAggregationText(value: String => Unit): Self = StObject.set(x, "getAggregationText", js.Any.fromFunction1(value))
     
@@ -184,7 +184,7 @@ object IGridColumnOf {
     
     inline def setGetColClassDefinition(value: () => String): Self = StObject.set(x, "getColClassDefinition", js.Any.fromFunction0(value))
     
-    inline def setGetRenderContainer(value: () => js.Any): Self = StObject.set(x, "getRenderContainer", js.Any.fromFunction0(value))
+    inline def setGetRenderContainer(value: () => Any): Self = StObject.set(x, "getRenderContainer", js.Any.fromFunction0(value))
     
     inline def setGrid(value: IGridInstanceOf[TEntity]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
@@ -200,7 +200,7 @@ object IGridColumnOf {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setSetPropertyOrDefault(value: (IColumnDefOf[TEntity], String, js.Any) => Unit): Self = StObject.set(x, "setPropertyOrDefault", js.Any.fromFunction3(value))
+    inline def setSetPropertyOrDefault(value: (IColumnDefOf[TEntity], String, Any) => Unit): Self = StObject.set(x, "setPropertyOrDefault", js.Any.fromFunction3(value))
     
     inline def setShowColumn(value: () => Unit): Self = StObject.set(x, "showColumn", js.Any.fromFunction0(value))
     
@@ -209,7 +209,7 @@ object IGridColumnOf {
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     inline def setSortingAlgorithm(
-      value: (/* a */ js.Any, /* b */ js.Any, /* rowA */ IGridRowOf[TEntity], /* rowB */ IGridRowOf[TEntity], /* direction */ String) => Double
+      value: (/* a */ Any, /* b */ Any, /* rowA */ IGridRowOf[TEntity], /* rowB */ IGridRowOf[TEntity], /* direction */ String) => Double
     ): Self = StObject.set(x, "sortingAlgorithm", js.Any.fromFunction5(value))
     
     inline def setSortingAlgorithmUndefined: Self = StObject.set(x, "sortingAlgorithm", js.undefined)

@@ -16,7 +16,7 @@ trait NewFile extends StObject {
   def Add(FileName: String, Section: MsoFileNewSection, DisplayName: String, Action: MsoFileNewAction): Boolean = js.native
   def Add(FileName: String, Section: MsoFileNewSection, DisplayName: Unit, Action: MsoFileNewAction): Boolean = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Creator: Double = js.native
   

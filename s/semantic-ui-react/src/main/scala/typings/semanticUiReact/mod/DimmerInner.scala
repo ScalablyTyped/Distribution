@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("semantic-ui-react", "DimmerInner")
 @js.native
-class DimmerInner () extends default
+open class DimmerInner () extends default

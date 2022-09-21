@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "MultiLineString")
 @js.native
-class MultiLineString () extends GeometryCollection {
+open class MultiLineString () extends GeometryCollection {
   
   def polygonize(): Polygon = js.native
 }

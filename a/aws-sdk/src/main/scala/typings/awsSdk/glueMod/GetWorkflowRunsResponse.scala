@@ -33,6 +33,6 @@ object GetWorkflowRunsResponse {
     
     inline def setRunsUndefined: Self = StObject.set(x, "Runs", js.undefined)
     
-    inline def setRunsVarargs(value: WorkflowRun*): Self = StObject.set(x, "Runs", js.Array(value :_*))
+    inline def setRunsVarargs(value: WorkflowRun*): Self = StObject.set(x, "Runs", js.Array(value*))
   }
 }

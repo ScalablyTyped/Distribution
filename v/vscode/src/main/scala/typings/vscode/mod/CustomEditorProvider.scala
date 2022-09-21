@@ -14,11 +14,11 @@ trait CustomEditorProvider[T /* <: CustomDocument */]
     *
     * Backups are used for hot exit and to prevent data loss. Your `backup` method should persist the resource in
     * its current state, i.e. with the edits applied. Most commonly this means saving the resource to disk in
-    * the `ExtensionContext.storagePath`. When VS Code reloads and your custom editor is opened for a resource,
+    * the `ExtensionContext.storagePath`. When the editor reloads and your custom editor is opened for a resource,
     * your extension should first check to see if any backups exist for the resource. If there is a backup, your
     * extension should load the file contents from there instead of from the resource in the workspace.
     *
-    * `backup` is triggered approximately one second after the the user stops editing the document. If the user
+    * `backup` is triggered approximately one second after the user stops editing the document. If the user
     * rapidly edits the document, `backup` will not be invoked until the editing stops.
     *
     * `backup` is not invoked when `auto save` is enabled (since auto save already persists the resource).
@@ -28,7 +28,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */]
     * @param cancellation Token that signals the current backup since a new backup is coming in. It is up to your
     * extension to decided how to respond to cancellation. If for example your extension is backing up a large file
     * in an operation that takes time to complete, your extension may decide to finish the ongoing backup rather
-    * than cancelling it to ensure that VS Code has some valid backup.
+    * than cancelling it to ensure that the editor has some valid backup.
     */
   def backupCustomDocument(document: T, context: CustomDocumentBackupContext, cancellation: CancellationToken): Thenable[CustomDocumentBackup]
   
@@ -39,14 +39,14 @@ trait CustomEditorProvider[T /* <: CustomDocument */]
     * anything from changing some text, to cropping an image, to reordering a list. Your extension is free to
     * define what an edit is and what data is stored on each edit.
     *
-    * Firing `onDidChange` causes VS Code to mark the editors as being dirty. This is cleared when the user either
+    * Firing `onDidChange` causes the editors to be marked as being dirty. This is cleared when the user either
     * saves or reverts the file.
     *
     * Editors that support undo/redo must fire a `CustomDocumentEditEvent` whenever an edit happens. This allows
-    * users to undo and redo the edit using VS Code's standard VS Code keyboard shortcuts. VS Code will also mark
+    * users to undo and redo the edit using the editor's standard keyboard shortcuts. The editor will also mark
     * the editor as no longer being dirty if the user undoes all edits to the last saved state.
     *
-    * Editors that support editing but cannot use VS Code's standard undo/redo mechanism must fire a `CustomDocumentContentChangeEvent`.
+    * Editors that support editing but cannot use the editor's standard undo/redo mechanism must fire a `CustomDocumentContentChangeEvent`.
     * The only way for a user to clear the dirty state of an editor that does not support undo/redo is to either
     * `save` or `revert` the file.
     *
@@ -57,8 +57,8 @@ trait CustomEditorProvider[T /* <: CustomDocument */]
   /**
     * Revert a custom document to its last saved state.
     *
-    * This method is invoked by VS Code when the user triggers `File: Revert File` in a custom editor. (Note that
-    * this is only used using VS Code's `File: Revert File` command and not on a `git revert` of the file).
+    * This method is invoked by the editor when the user triggers `File: Revert File` in a custom editor. (Note that
+    * this is only used using the editor's `File: Revert File` command and not on a `git revert` of the file).
     *
     * To implement `revert`, the implementer must make sure all editor instances (webviews) for `document`
     * are displaying the document in the same state is saved in. This usually means reloading the file from the
@@ -74,7 +74,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */]
   /**
     * Save a custom document.
     *
-    * This method is invoked by VS Code when the user saves a custom editor. This can happen when the user
+    * This method is invoked by the editor when the user saves a custom editor. This can happen when the user
     * triggers save while the custom editor is active, by commands such as `save all`, or by auto save if enabled.
     *
     * To implement `save`, the implementer must persist the custom editor. This usually means writing the
@@ -91,7 +91,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */]
   /**
     * Save a custom document to a different location.
     *
-    * This method is invoked by VS Code when the user triggers 'save as' on a custom editor. The implementer must
+    * This method is invoked by the editor when the user triggers 'save as' on a custom editor. The implementer must
     * persist the custom editor to `destination`.
     *
     * When the user accepts save as, the current editor is be replaced by an non-dirty editor for the newly saved file.
@@ -108,7 +108,7 @@ object CustomEditorProvider {
   
   inline def apply[T /* <: CustomDocument */](
     backupCustomDocument: (T, CustomDocumentBackupContext, CancellationToken) => Thenable[CustomDocumentBackup],
-    onDidChangeCustomDocument: (/* listener */ js.Function1[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T], js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
+    onDidChangeCustomDocument: (/* listener */ js.Function1[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T], Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
     openCustomDocument: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T,
     resolveCustomEditor: (T, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit,
     revertCustomDocument: (T, CancellationToken) => Thenable[Unit],
@@ -124,7 +124,7 @@ object CustomEditorProvider {
     inline def setBackupCustomDocument(value: (T, CustomDocumentBackupContext, CancellationToken) => Thenable[CustomDocumentBackup]): Self = StObject.set(x, "backupCustomDocument", js.Any.fromFunction3(value))
     
     inline def setOnDidChangeCustomDocument(
-      value: (/* listener */ js.Function1[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T], js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+      value: (/* listener */ js.Function1[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T], Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = StObject.set(x, "onDidChangeCustomDocument", js.Any.fromFunction3(value))
     
     inline def setRevertCustomDocument(value: (T, CancellationToken) => Thenable[Unit]): Self = StObject.set(x, "revertCustomDocument", js.Any.fromFunction2(value))

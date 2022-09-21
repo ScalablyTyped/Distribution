@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassSocket ()
+open class ClassSocket ()
   extends StObject
      with typings.fibjs.ClassSocket {
   def this(family: Double) = this()

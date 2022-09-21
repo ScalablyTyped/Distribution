@@ -15,9 +15,15 @@ trait CardBuilder extends StObject {
   
   def build(): Card
   
+  def setDisplayStyle(displayStyle: DisplayStyle): CardBuilder
+  
+  def setFixedFooter(fixedFooter: FixedFooter): CardBuilder
+  
   def setHeader(cardHeader: CardHeader): CardBuilder
   
   def setName(name: String): CardBuilder
+  
+  def setPeekCardHeader(peekCardHeader: CardHeader): CardBuilder
 }
 object CardBuilder {
   
@@ -25,10 +31,13 @@ object CardBuilder {
     addCardAction: CardAction => CardBuilder,
     addSection: CardSection => CardBuilder,
     build: () => Card,
+    setDisplayStyle: DisplayStyle => CardBuilder,
+    setFixedFooter: FixedFooter => CardBuilder,
     setHeader: CardHeader => CardBuilder,
-    setName: String => CardBuilder
+    setName: String => CardBuilder,
+    setPeekCardHeader: CardHeader => CardBuilder
   ): CardBuilder = {
-    val __obj = js.Dynamic.literal(addCardAction = js.Any.fromFunction1(addCardAction), addSection = js.Any.fromFunction1(addSection), build = js.Any.fromFunction0(build), setHeader = js.Any.fromFunction1(setHeader), setName = js.Any.fromFunction1(setName))
+    val __obj = js.Dynamic.literal(addCardAction = js.Any.fromFunction1(addCardAction), addSection = js.Any.fromFunction1(addSection), build = js.Any.fromFunction0(build), setDisplayStyle = js.Any.fromFunction1(setDisplayStyle), setFixedFooter = js.Any.fromFunction1(setFixedFooter), setHeader = js.Any.fromFunction1(setHeader), setName = js.Any.fromFunction1(setName), setPeekCardHeader = js.Any.fromFunction1(setPeekCardHeader))
     __obj.asInstanceOf[CardBuilder]
   }
   
@@ -40,8 +49,14 @@ object CardBuilder {
     
     inline def setBuild(value: () => Card): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
+    inline def setSetDisplayStyle(value: DisplayStyle => CardBuilder): Self = StObject.set(x, "setDisplayStyle", js.Any.fromFunction1(value))
+    
+    inline def setSetFixedFooter(value: FixedFooter => CardBuilder): Self = StObject.set(x, "setFixedFooter", js.Any.fromFunction1(value))
+    
     inline def setSetHeader(value: CardHeader => CardBuilder): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
     
     inline def setSetName(value: String => CardBuilder): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    
+    inline def setSetPeekCardHeader(value: CardHeader => CardBuilder): Self = StObject.set(x, "setPeekCardHeader", js.Any.fromFunction1(value))
   }
 }

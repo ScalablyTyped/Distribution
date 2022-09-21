@@ -9,7 +9,7 @@ object rbushMod {
   
   @JSImport("ol/structs/RBush", JSImport.Default)
   @js.native
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with RBush[T] {
     def this(opt_maxEntries: Double) = this()
@@ -25,7 +25,7 @@ object rbushMod {
     
     var minY: Double
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object Entry {
     
@@ -44,7 +44,7 @@ object rbushMod {
       
       inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -65,12 +65,12 @@ object rbushMod {
       * If the callback returns a truthy value, this value is returned without
       * checking the rest of the tree.
       */
-    def forEach(callback: js.Function1[/* p0 */ T, js.Any]): js.Any = js.native
+    def forEach(callback: js.Function1[/* p0 */ T, Any]): Any = js.native
     
     /**
       * Calls a callback function with each value in the provided extent.
       */
-    def forEachInExtent(extent: Extent, callback: js.Function1[/* p0 */ T, js.Any]): js.Any = js.native
+    def forEachInExtent(extent: Extent, callback: js.Function1[/* p0 */ T, Any]): Any = js.native
     
     /**
       * Return all values in the RBush.

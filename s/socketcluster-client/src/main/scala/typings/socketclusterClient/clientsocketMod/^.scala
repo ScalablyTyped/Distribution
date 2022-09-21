@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("socketcluster-client/lib/clientsocket", JSImport.Namespace)
 @js.native
-class ^ protected () extends AGClientSocket {
+open class ^ protected () extends AGClientSocket {
   def this(opts: ClientOptions) = this()
 }

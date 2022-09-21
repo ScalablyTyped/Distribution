@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pathToolsMod {
   
-  @JSImport("@ant-design/pro-layout/lib/utils/pathTools", JSImport.Namespace)
+  @JSImport("@ant-design/pro-layout/es/utils/pathTools", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -16,7 +16,7 @@ object Input {
   @JSGlobal("Windows.Devices.Input.KeyboardCapabilities")
   @js.native
   /** Initializes a new instance of the KeyboardCapabilities class. */
-  class KeyboardCapabilities ()
+  open class KeyboardCapabilities ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Input.KeyboardCapabilities {
     
@@ -29,7 +29,7 @@ object Input {
   @JSGlobal("Windows.Devices.Input.MouseCapabilities")
   @js.native
   /** Initializes a new instance of the MouseCapabilities class. */
-  class MouseCapabilities ()
+  open class MouseCapabilities ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Input.MouseCapabilities {
     
@@ -102,7 +102,7 @@ object Input {
     var maxContacts: Double = js.native
     
     /* CompleteClass */
-    var maxPointersWithZDistance: js.Any = js.native
+    var maxPointersWithZDistance: Any = js.native
     
     /* unmapped type */
     /** Gets the coordinates of the bounding rectangle supported by the input device. */
@@ -162,7 +162,7 @@ object Input {
   @JSGlobal("Windows.Devices.Input.TouchCapabilities")
   @js.native
   /** Initializes a new instance of the TouchCapabilities class. */
-  class TouchCapabilities ()
+  open class TouchCapabilities ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Input.TouchCapabilities {
     

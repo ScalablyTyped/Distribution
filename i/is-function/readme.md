@@ -10,10 +10,10 @@ is that thing a function? Use this module to find out
 | ------------------ | :-------------: |
 | Full name          | is-function |
 | Keywords           | polyfill, is-function, ie6 |
-| # releases         | 2 |
-| # dependents       | 104 |
-| # downloads        | 134351855 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1407576666666668E7 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/grncdr/js-is-function)

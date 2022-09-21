@@ -7,21 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaResourcePolicyWeeklyCycleDayOfWeek extends StObject {
   
   /**
-    * Allows to define schedule that runs specified day of the week.
+    * Defines a schedule that runs on specific days of the week. Specify one or more days. The following options are available: MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY.
     */
-  var day: js.UndefOr[String] = js.undefined
+  var day: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output only] Duration of the time window, automatically chosen to be
-    * smallest possible in the given scenario.
+    * [Output only] Duration of the time window, automatically chosen to be smallest possible in the given scenario.
     */
-  var duration: js.UndefOr[String] = js.undefined
+  var duration: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Time within the window to start the operations. It must be in format
-    * &quot;HH:MM&quot;, where HH : [00-23] and MM : [00-00] GMT.
+    * Time within the window to start the operations. It must be in format "HH:MM", where HH : [00-23] and MM : [00-00] GMT.
     */
-  var startTime: js.UndefOr[String] = js.undefined
+  var startTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaResourcePolicyWeeklyCycleDayOfWeek {
   
@@ -34,13 +32,19 @@ object SchemaResourcePolicyWeeklyCycleDayOfWeek {
     
     inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
+    inline def setDayNull: Self = StObject.set(x, "day", null)
+    
     inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
+    inline def setDurationNull: Self = StObject.set(x, "duration", null)
+    
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeNull: Self = StObject.set(x, "startTime", null)
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }

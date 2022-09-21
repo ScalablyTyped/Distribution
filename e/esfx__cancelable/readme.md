@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__cancelable
 
-Typings are for version 1.0.0-pre.13
+Typings are for version 1.0.0-pre.41
 
 ## Library description:
 A low-level Symbol-based API for defining a common cancellation protocol.
@@ -10,15 +10,12 @@ A low-level Symbol-based API for defining a common cancellation protocol.
 | ------------------ | :-------------: |
 | Full name          | @esfx/cancelable |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 19 |
-| # downloads        | 197801 |
-| # stars            | 0 |
+| # releases         | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 22546.333333333332 |
+| # stars            | 161.0 |
 
 ## Links
-- [Homepage](https://github.com/esfx/esfx#readme)
-- [Bugs](https://github.com/esfx/esfx/issues)
-- [Repository](https://github.com/esfx/esfx)
 - [Npm](https://www.npmjs.com/package/%40esfx%2Fcancelable)
     
 

@@ -33,6 +33,6 @@ object PortProbeAction {
     
     inline def setPortProbeDetailsUndefined: Self = StObject.set(x, "PortProbeDetails", js.undefined)
     
-    inline def setPortProbeDetailsVarargs(value: PortProbeDetail*): Self = StObject.set(x, "PortProbeDetails", js.Array(value :_*))
+    inline def setPortProbeDetailsVarargs(value: PortProbeDetail*): Self = StObject.set(x, "PortProbeDetails", js.Array(value*))
   }
 }

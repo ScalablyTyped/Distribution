@@ -1,24 +1,10 @@
 package typings.nodelibFsScandir
 
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.anon.BaseEncodingOptionswithFi
-import typings.node.anon.BaseEncodingOptionswithFiEncoding
-import typings.node.anon.Encoding
-import typings.node.anon.WithFileTypes
-import typings.node.fsMod.BigIntOptions
-import typings.node.fsMod.BigIntStats
-import typings.node.fsMod.Dirent
-import typings.node.fsMod.PathLike
-import typings.node.fsMod.StatOptions
 import typings.node.fsMod.Stats
-import typings.nodelibFsScandir.anon.FnCall
-import typings.nodelibFsScandir.anon.FnCallPathOptions
 import typings.nodelibFsScandir.anon.PartialFileSystemAdapter
-import typings.nodelibFsScandir.anon.Typeoflstat
-import typings.nodelibFsScandir.anon.Typeofreaddir
-import typings.nodelibFsScandir.anon.Typeofstat
-import typings.nodelibFsScandir.nodelibFsScandirStrings.buffer
+import typings.nodelibFsScandir.anon.WithFileTypes
+import typings.nodelibFsScandir.typesMod.Dirent
+import typings.nodelibFsScandir.typesMod.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,62 +22,76 @@ object fsMod {
   inline def createFileSystemAdapter(): FileSystemAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSystemAdapter")().asInstanceOf[FileSystemAdapter]
   inline def createFileSystemAdapter(fsMethods: PartialFileSystemAdapter): FileSystemAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSystemAdapter")(fsMethods.asInstanceOf[js.Any]).asInstanceOf[FileSystemAdapter]
   
-  trait FileSystemAdapter extends StObject {
+  trait FileSystemAdapter
+    extends StObject
+       with typings.nodelibFsStat.fsMod.FileSystemAdapter {
     
-    var lstat: Typeoflstat
+    def readdir(
+      filepath: String,
+      callback: js.Function2[/* error */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+    ): Unit
+    def readdir(
+      filepath: String,
+      options: WithFileTypes,
+      callback: js.Function2[/* error */ ErrnoException | Null, /* files */ js.Array[Dirent], Unit]
+    ): Unit
     
-    def lstatSync(path: PathLike): Stats
-    @JSName("lstatSync")
-    var lstatSync_Original: js.Function1[/* path */ PathLike, Stats]
-    
-    var readdir: Typeofreaddir
-    
-    def readdirSync(path: PathLike): js.Array[Buffer | String]
-    def readdirSync(path: PathLike, options: BufferEncoding): js.Array[Buffer | String]
-    def readdirSync(path: PathLike, options: BaseEncodingOptionswithFi): js.Array[Buffer | String]
-    def readdirSync(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Array[Dirent]
-    def readdirSync(path: PathLike, options: Encoding): js.Array[Buffer]
-    def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String]
+    def readdirSync(filepath: String): js.Array[String]
+    def readdirSync(filepath: String, options: WithFileTypes): js.Array[Dirent]
     @JSName("readdirSync")
-    var readdirSync_Original: FnCallPathOptions
-    @JSName("readdirSync")
-    def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer]
+    var readdirSync_Original: ReaddirSynchronousMethod
     
-    var stat: Typeofstat
-    
-    def statSync(path: PathLike): Stats
-    def statSync(path: PathLike, options: BigIntOptions): BigIntStats
-    def statSync(path: PathLike, options: StatOptions): Stats | BigIntStats
-    @JSName("statSync")
-    var statSync_Original: FnCall
+    @JSName("readdir")
+    var readdir_Original: ReaddirAsynchronousMethod
   }
   object FileSystemAdapter {
     
     inline def apply(
-      lstat: Typeoflstat,
-      lstatSync: /* path */ PathLike => Stats,
-      readdir: Typeofreaddir,
-      readdirSync: FnCallPathOptions,
-      stat: Typeofstat,
-      statSync: FnCall
+      lstat: (/* path */ String, /* callback */ js.Function2[
+          /* error */ typings.nodelibFsStat.typesMod.ErrnoException | Null, 
+          /* stats */ Stats, 
+          Unit
+        ]) => Unit,
+      lstatSync: /* path */ String => Stats,
+      readdir: ReaddirAsynchronousMethod,
+      readdirSync: ReaddirSynchronousMethod,
+      stat: (/* path */ String, /* callback */ js.Function2[
+          /* error */ typings.nodelibFsStat.typesMod.ErrnoException | Null, 
+          /* stats */ Stats, 
+          Unit
+        ]) => Unit,
+      statSync: /* path */ String => Stats
     ): FileSystemAdapter = {
-      val __obj = js.Dynamic.literal(lstat = lstat.asInstanceOf[js.Any], lstatSync = js.Any.fromFunction1(lstatSync), readdir = readdir.asInstanceOf[js.Any], readdirSync = readdirSync.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any], statSync = statSync.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(lstat = js.Any.fromFunction2(lstat), lstatSync = js.Any.fromFunction1(lstatSync), readdir = readdir.asInstanceOf[js.Any], readdirSync = readdirSync.asInstanceOf[js.Any], stat = js.Any.fromFunction2(stat), statSync = js.Any.fromFunction1(statSync))
       __obj.asInstanceOf[FileSystemAdapter]
     }
     
     extension [Self <: FileSystemAdapter](x: Self) {
       
-      inline def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
+      inline def setReaddir(value: ReaddirAsynchronousMethod): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
       
-      inline def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
-      
-      inline def setReaddir(value: Typeofreaddir): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
-      
-      inline def setReaddirSync(value: FnCallPathOptions): Self = StObject.set(x, "readdirSync", value.asInstanceOf[js.Any])
-      
-      inline def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
-      
-      inline def setStatSync(value: FnCall): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
+      inline def setReaddirSync(value: ReaddirSynchronousMethod): Self = StObject.set(x, "readdirSync", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait ReaddirAsynchronousMethod extends StObject {
+    
+    def apply(
+      filepath: String,
+      callback: js.Function2[/* error */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+    ): Unit = js.native
+    def apply(
+      filepath: String,
+      options: WithFileTypes,
+      callback: js.Function2[/* error */ ErrnoException | Null, /* files */ js.Array[Dirent], Unit]
+    ): Unit = js.native
+  }
+  
+  @js.native
+  trait ReaddirSynchronousMethod extends StObject {
+    
+    def apply(filepath: String): js.Array[String] = js.native
+    def apply(filepath: String, options: WithFileTypes): js.Array[Dirent] = js.native
   }
 }

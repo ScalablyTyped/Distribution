@@ -14,7 +14,7 @@ object mod {
     *
     * @param {string} initialValue Initial value to assign.
     */
-  class default ()
+  open class default ()
     extends StObject
        with TokenList {
     def this(initialValue: String) = this()
@@ -62,7 +62,7 @@ object mod {
     ): Unit = js.native
     def forEach(
       callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], Unit],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
     /**

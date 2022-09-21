@@ -10,10 +10,10 @@ Constant-time comparison algorithm to prevent timing attacks.
 | ------------------ | :-------------: |
 | Full name          | safe-compare |
 | Keywords           | safe-compare, secure-compare, compare, time-equivalent-comparison, time, equivalent, timing, attack, constant-time, constant, time |
-| # releases         | 2 |
-| # dependents       | 27 |
-| # downloads        | 529461 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 221238.66666666666 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/Bruce17/safe-compare#readme)

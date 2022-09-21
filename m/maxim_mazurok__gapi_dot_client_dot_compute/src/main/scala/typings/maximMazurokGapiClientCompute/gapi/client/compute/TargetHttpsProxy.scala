@@ -8,10 +8,8 @@ trait TargetHttpsProxy extends StObject {
   
   /**
     * Optional. A URL referring to a networksecurity.AuthorizationPolicy resource that describes how the proxy should authorize inbound traffic. If left blank, access will not be
-    * restricted by an authorization policy.
-    * Refer to the AuthorizationPolicy resource for additional details.
-    * authorizationPolicy only applies to a global TargetHttpsProxy attached to globalForwardingRules with the loadBalancingScheme set to INTERNAL_SELF_MANAGED.
-    * Note: This field currently has no impact.
+    * restricted by an authorization policy. Refer to the AuthorizationPolicy resource for additional details. authorizationPolicy only applies to a global TargetHttpsProxy attached to
+    * globalForwardingRules with the loadBalancingScheme set to INTERNAL_SELF_MANAGED. Note: This field currently has no impact.
     */
   var authorizationPolicy: js.UndefOr[String] = js.undefined
   
@@ -20,6 +18,13 @@ trait TargetHttpsProxy extends StObject {
   
   /** An optional description of this resource. Provide this property when you create the resource. */
   var description: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking. This field will be ignored when inserting a TargetHttpsProxy.
+    * An up-to-date fingerprint must be provided in order to patch the TargetHttpsProxy; otherwise, the request will fail with error 412 conditionNotMet. To see the latest fingerprint,
+    * make a get() request to retrieve the TargetHttpsProxy.
+    */
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
   var id: js.UndefOr[String] = js.undefined
@@ -35,24 +40,17 @@ trait TargetHttpsProxy extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED.
-    *
-    * When this field is set to true, Envoy proxies set up inbound traffic interception and bind to the IP address and port specified in the forwarding rule. This is generally useful when
-    * using Traffic Director to configure Envoy as a gateway or middle proxy (in other words, not a sidecar proxy). The Envoy proxy listens for inbound requests and handles requests when
-    * it receives them.
-    *
-    * The default is false.
+    * This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED. When this field is set to true, Envoy
+    * proxies set up inbound traffic interception and bind to the IP address and port specified in the forwarding rule. This is generally useful when using Traffic Director to configure
+    * Envoy as a gateway or middle proxy (in other words, not a sidecar proxy). The Envoy proxy listens for inbound requests and handles requests when it receives them. The default is
+    * false.
     */
   var proxyBind: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the QUIC override policy for this TargetHttpsProxy resource. This setting determines whether the load balancer attempts to negotiate QUIC with clients. You can specify
-    * NONE, ENABLE, or DISABLE.
-    * - When quic-override is set to NONE, Google manages whether QUIC is used.
-    * - When quic-override is set to ENABLE, the load balancer uses QUIC when possible.
-    * - When quic-override is set to DISABLE, the load balancer doesn't use QUIC.
-    * - If the quic-override flag is not specified, NONE is implied.
-    * -
+    * NONE, ENABLE, or DISABLE. - When quic-override is set to NONE, Google manages whether QUIC is used. - When quic-override is set to ENABLE, the load balancer uses QUIC when possible.
+    * - When quic-override is set to DISABLE, the load balancer doesn't use QUIC. - If the quic-override flag is not specified, NONE is implied.
     */
   var quicOverride: js.UndefOr[String] = js.undefined
   
@@ -63,16 +61,15 @@ trait TargetHttpsProxy extends StObject {
   var selfLink: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. A URL referring to a networksecurity.ServerTlsPolicy resource that describes how the proxy should authenticate inbound traffic.
-    * serverTlsPolicy only applies to a global TargetHttpsProxy attached to globalForwardingRules with the loadBalancingScheme set to INTERNAL_SELF_MANAGED.
-    * If left blank, communications are not encrypted.
-    * Note: This field currently has no impact.
+    * Optional. A URL referring to a networksecurity.ServerTlsPolicy resource that describes how the proxy should authenticate inbound traffic. serverTlsPolicy only applies to a global
+    * TargetHttpsProxy attached to globalForwardingRules with the loadBalancingScheme set to INTERNAL_SELF_MANAGED. If left blank, communications are not encrypted. Note: This field
+    * currently has no impact.
     */
   var serverTlsPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * URLs to SslCertificate resources that are used to authenticate connections between users and the load balancer. At least one SSL certificate must be specified. Currently, you may
-    * specify up to 15 SSL certificates.
+    * specify up to 15 SSL certificates. sslCertificates do not apply when the load balancing scheme is set to INTERNAL_SELF_MANAGED.
     */
   var sslCertificates: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -81,10 +78,7 @@ trait TargetHttpsProxy extends StObject {
   
   /**
     * A fully-qualified or valid partial URL to the UrlMap resource that defines the mapping from URL to the BackendService. For example, the following are all valid URLs for specifying a
-    * URL map:
-    * - https://www.googleapis.compute/v1/projects/project/global/urlMaps/url-map
-    * - projects/project/global/urlMaps/url-map
-    * - global/urlMaps/url-map
+    * URL map: - https://www.googleapis.compute/v1/projects/project/global/urlMaps/ url-map - projects/project/global/urlMaps/url-map - global/urlMaps/url-map
     */
   var urlMap: js.UndefOr[String] = js.undefined
 }
@@ -108,6 +102,10 @@ object TargetHttpsProxy {
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -145,7 +143,7 @@ object TargetHttpsProxy {
     
     inline def setSslCertificatesUndefined: Self = StObject.set(x, "sslCertificates", js.undefined)
     
-    inline def setSslCertificatesVarargs(value: String*): Self = StObject.set(x, "sslCertificates", js.Array(value :_*))
+    inline def setSslCertificatesVarargs(value: String*): Self = StObject.set(x, "sslCertificates", js.Array(value*))
     
     inline def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
     

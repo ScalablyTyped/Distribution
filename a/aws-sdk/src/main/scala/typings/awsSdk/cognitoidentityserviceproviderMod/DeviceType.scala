@@ -14,7 +14,7 @@ trait DeviceType extends StObject {
   /**
     * The creation date of the device.
     */
-  var DeviceCreateDate: js.UndefOr[DateType] = js.undefined
+  var DeviceCreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The device key.
@@ -22,14 +22,14 @@ trait DeviceType extends StObject {
   var DeviceKey: js.UndefOr[DeviceKeyType] = js.undefined
   
   /**
-    * The date in which the device was last authenticated.
+    * The date when the device was last authenticated.
     */
-  var DeviceLastAuthenticatedDate: js.UndefOr[DateType] = js.undefined
+  var DeviceLastAuthenticatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last modified date of the device.
     */
-  var DeviceLastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var DeviceLastModifiedDate: js.UndefOr[js.Date] = js.undefined
 }
 object DeviceType {
   
@@ -44,9 +44,9 @@ object DeviceType {
     
     inline def setDeviceAttributesUndefined: Self = StObject.set(x, "DeviceAttributes", js.undefined)
     
-    inline def setDeviceAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "DeviceAttributes", js.Array(value :_*))
+    inline def setDeviceAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "DeviceAttributes", js.Array(value*))
     
-    inline def setDeviceCreateDate(value: DateType): Self = StObject.set(x, "DeviceCreateDate", value.asInstanceOf[js.Any])
+    inline def setDeviceCreateDate(value: js.Date): Self = StObject.set(x, "DeviceCreateDate", value.asInstanceOf[js.Any])
     
     inline def setDeviceCreateDateUndefined: Self = StObject.set(x, "DeviceCreateDate", js.undefined)
     
@@ -54,11 +54,11 @@ object DeviceType {
     
     inline def setDeviceKeyUndefined: Self = StObject.set(x, "DeviceKey", js.undefined)
     
-    inline def setDeviceLastAuthenticatedDate(value: DateType): Self = StObject.set(x, "DeviceLastAuthenticatedDate", value.asInstanceOf[js.Any])
+    inline def setDeviceLastAuthenticatedDate(value: js.Date): Self = StObject.set(x, "DeviceLastAuthenticatedDate", value.asInstanceOf[js.Any])
     
     inline def setDeviceLastAuthenticatedDateUndefined: Self = StObject.set(x, "DeviceLastAuthenticatedDate", js.undefined)
     
-    inline def setDeviceLastModifiedDate(value: DateType): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setDeviceLastModifiedDate(value: js.Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setDeviceLastModifiedDateUndefined: Self = StObject.set(x, "DeviceLastModifiedDate", js.undefined)
   }

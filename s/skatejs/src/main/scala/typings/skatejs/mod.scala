@@ -28,7 +28,7 @@ object mod {
   
   @JSImport("skatejs", "CustomElement")
   @js.native
-  class CustomElement ()
+  open class CustomElement ()
     extends typings.skatejs.typesMod.CustomElement
   /* static members */
   object CustomElement {
@@ -40,11 +40,11 @@ object mod {
   
   @JSImport("skatejs", "WithChildren")
   @js.native
-  class WithChildren_ () extends WithChildren
+  open class WithChildren_ () extends WithChildren
   
   @JSImport("skatejs", "WithComponent")
   @js.native
-  class WithComponent_[P, S, C] () extends WithComponent[P, S, C]
+  open class WithComponent_[P, S, C] () extends WithComponent[P, S, C]
   /* static members */
   object WithComponent_ {
     
@@ -55,19 +55,19 @@ object mod {
   
   @JSImport("skatejs", "WithContext")
   @js.native
-  class WithContext_[C] () extends WithContext[C]
+  open class WithContext_[C] () extends WithContext[C]
   
   @JSImport("skatejs", "WithLifecycle")
   @js.native
-  class WithLifecycle_ () extends WithLifecycle
+  open class WithLifecycle_ () extends WithLifecycle
   
   @JSImport("skatejs", "WithRenderer")
   @js.native
-  class WithRenderer_[O] () extends WithRenderer[O]
+  open class WithRenderer_[O] () extends WithRenderer[O]
   
   @JSImport("skatejs", "WithUpdate")
   @js.native
-  class WithUpdate_[P, S] () extends WithUpdate[P, S]
+  open class WithUpdate_[P, S] () extends WithUpdate[P, S]
   
   inline def define[T /* <: HTMLElementClass */](ctor: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(ctor.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -82,8 +82,8 @@ object mod {
   inline def name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")().asInstanceOf[String]
   inline def name(componentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(componentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def prop(): PropertyDecorator & PropOptions[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")().asInstanceOf[PropertyDecorator & PropOptions[js.Any]]
-  inline def prop(ops: PropOptions[js.Any]): PropertyDecorator & PropOptions[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(ops.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator & PropOptions[js.Any]]
+  inline def prop(): PropertyDecorator & PropOptions[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")().asInstanceOf[PropertyDecorator & PropOptions[Any]]
+  inline def prop(ops: PropOptions[Any]): PropertyDecorator & PropOptions[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(ops.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator & PropOptions[Any]]
   
   /* Inlined std.Readonly<{  any :skatejs.skatejs/types.PropOptions<any> & std.PropertyDecorator,   array :skatejs.skatejs/types.PropOptions<std.Array<any>> & std.PropertyDecorator,   boolean :skatejs.skatejs/types.PropOptions<boolean> & std.PropertyDecorator,   number :skatejs.skatejs/types.PropOptions<number> & std.PropertyDecorator,   object :skatejs.skatejs/types.PropOptions<object> & std.PropertyDecorator,   string :skatejs.skatejs/types.PropOptions<string> & std.PropertyDecorator}> */
   object props {

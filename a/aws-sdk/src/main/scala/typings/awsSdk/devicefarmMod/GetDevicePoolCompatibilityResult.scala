@@ -29,12 +29,12 @@ object GetDevicePoolCompatibilityResult {
     
     inline def setCompatibleDevicesUndefined: Self = StObject.set(x, "compatibleDevices", js.undefined)
     
-    inline def setCompatibleDevicesVarargs(value: DevicePoolCompatibilityResult*): Self = StObject.set(x, "compatibleDevices", js.Array(value :_*))
+    inline def setCompatibleDevicesVarargs(value: DevicePoolCompatibilityResult*): Self = StObject.set(x, "compatibleDevices", js.Array(value*))
     
     inline def setIncompatibleDevices(value: DevicePoolCompatibilityResults): Self = StObject.set(x, "incompatibleDevices", value.asInstanceOf[js.Any])
     
     inline def setIncompatibleDevicesUndefined: Self = StObject.set(x, "incompatibleDevices", js.undefined)
     
-    inline def setIncompatibleDevicesVarargs(value: DevicePoolCompatibilityResult*): Self = StObject.set(x, "incompatibleDevices", js.Array(value :_*))
+    inline def setIncompatibleDevicesVarargs(value: DevicePoolCompatibilityResult*): Self = StObject.set(x, "incompatibleDevices", js.Array(value*))
   }
 }

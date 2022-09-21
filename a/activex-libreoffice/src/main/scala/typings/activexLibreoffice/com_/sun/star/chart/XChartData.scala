@@ -55,7 +55,7 @@ object XChartData {
     addChartDataChangeEventListener: XChartDataChangeEventListener => Unit,
     getNotANumber: () => Double,
     isNotANumber: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChartDataChangeEventListener: XChartDataChangeEventListener => Unit
   ): XChartData = {

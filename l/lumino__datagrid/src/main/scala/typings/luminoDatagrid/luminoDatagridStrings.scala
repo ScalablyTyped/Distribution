@@ -1,7 +1,9 @@
 package typings.luminoDatagrid
 
+import typings.luminoDatagrid.basicmousehandlerMod.ResizeHandle
 import typings.luminoDatagrid.celleditorMod.CellDataType
 import typings.luminoDatagrid.celleditorcontrollerMod._EditorOverrideIdentifier
+import typings.luminoDatagrid.datagridMod.DataGrid.ColumnFitType
 import typings.luminoDatagrid.datagridMod.DataGrid.HeaderVisibility
 import typings.luminoDatagrid.datamodelMod.DataModel.CellRegion
 import typings.luminoDatagrid.datamodelMod.DataModel.ColumnRegion
@@ -10,6 +12,7 @@ import typings.luminoDatagrid.notificationMod.Notification.Placement
 import typings.luminoDatagrid.selectionmodelMod.SelectionModel.ClearMode
 import typings.luminoDatagrid.selectionmodelMod.SelectionModel.CursorMoveDirection
 import typings.luminoDatagrid.selectionmodelMod.SelectionModel.SelectionMode
+import typings.luminoDatagrid.textrendererMod.TextRenderer.ElideDirection
 import typings.luminoDatagrid.textrendererMod.TextRenderer.HorizontalAlignment
 import typings.luminoDatagrid.textrendererMod.TextRenderer.VerticalAlignment
 import org.scalablytyped.runtime.StObject
@@ -28,6 +31,7 @@ object luminoDatagridStrings {
   sealed trait all
     extends StObject
        with ClearMode
+       with ColumnFitType
        with HeaderVisibility
   inline def all: all = "all".asInstanceOf[all]
   
@@ -35,6 +39,7 @@ object luminoDatagridStrings {
   sealed trait body
     extends StObject
        with CellRegion
+       with ColumnFitType
        with ColumnRegion
        with RowRegion
   inline def body: body = "body".asInstanceOf[body]
@@ -49,7 +54,9 @@ object luminoDatagridStrings {
   sealed trait bottom
     extends StObject
        with Placement
+       with ResizeHandle
        with VerticalAlignment
+       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.VerticalAlignment
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
@@ -66,7 +73,9 @@ object luminoDatagridStrings {
   sealed trait center
     extends StObject
        with HorizontalAlignment
+       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.HorizontalAlignment
        with VerticalAlignment
+       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.VerticalAlignment
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
@@ -82,6 +91,10 @@ object luminoDatagridStrings {
        with CellRegion
        with RowRegion
   inline def `column-header`: `column-header` = "column-header".asInstanceOf[`column-header`]
+  
+  @js.native
+  sealed trait `column-resize` extends StObject
+  inline def `column-resize`: `column-resize` = "column-resize".asInstanceOf[`column-resize`]
   
   @js.native
   sealed trait `columns-inserted` extends StObject
@@ -132,6 +145,12 @@ object luminoDatagridStrings {
   inline def down: down = "down".asInstanceOf[down]
   
   @js.native
+  sealed trait hyperlink
+    extends StObject
+       with ResizeHandle
+  inline def hyperlink: hyperlink = "hyperlink".asInstanceOf[hyperlink]
+  
+  @js.native
   sealed trait integer
     extends StObject
        with CellDataType
@@ -153,8 +172,12 @@ object luminoDatagridStrings {
   sealed trait left
     extends StObject
        with CursorMoveDirection
+       with ElideDirection
+       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.ElideDirection
        with HorizontalAlignment
+       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.HorizontalAlignment
        with Placement
+       with ResizeHandle
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
@@ -167,6 +190,7 @@ object luminoDatagridStrings {
        with ClearMode
        with CursorMoveDirection
        with HeaderVisibility
+       with ResizeHandle
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -191,8 +215,12 @@ object luminoDatagridStrings {
   sealed trait right
     extends StObject
        with CursorMoveDirection
+       with ElideDirection
+       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.ElideDirection
        with HorizontalAlignment
+       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.HorizontalAlignment
        with Placement
+       with ResizeHandle
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
@@ -206,8 +234,13 @@ object luminoDatagridStrings {
   sealed trait `row-header`
     extends StObject
        with CellRegion
+       with ColumnFitType
        with ColumnRegion
   inline def `row-header`: `row-header` = "row-header".asInstanceOf[`row-header`]
+  
+  @js.native
+  sealed trait `row-resize` extends StObject
+  inline def `row-resize`: `row-resize` = "row-resize".asInstanceOf[`row-resize`]
   
   @js.native
   sealed trait `rows-inserted` extends StObject
@@ -220,6 +253,10 @@ object luminoDatagridStrings {
   @js.native
   sealed trait `rows-removed` extends StObject
   inline def `rows-removed`: `rows-removed` = "rows-removed".asInstanceOf[`rows-removed`]
+  
+  @js.native
+  sealed trait select extends StObject
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
   sealed trait string
@@ -243,7 +280,9 @@ object luminoDatagridStrings {
   sealed trait top
     extends StObject
        with Placement
+       with ResizeHandle
        with VerticalAlignment
+       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.VerticalAlignment
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native

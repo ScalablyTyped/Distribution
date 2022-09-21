@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogIdMapping")
 @js.native
-class CatalogIdMapping () extends StObject {
+open class CatalogIdMapping () extends StObject {
   
   /**
     * The client-supplied temporary `#`-prefixed ID for a new `CatalogObject`.

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.reactNative.mod.Animated.AnimatedInterpolation
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
@@ -16,24 +17,23 @@ import typings.reactNativeTabView.typesMod.NavigationState
 import typings.reactNativeTabView.typesMod.Route
 import typings.reactNativeTabView.typesMod.Scene
 import typings.reactNativeTabView.typesMod.SceneRendererProps
-import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarMod {
   
-  @JSImport("react-native-tab-view/lib/typescript/src/TabBar", JSImport.Default)
+  @JSImport("react-native-tab-view/lib/typescript/TabBar", JSImport.Default)
   @js.native
-  class default[T /* <: Route */] () extends TabBar[T]
+  open class default[T /* <: Route */] () extends TabBar[T]
   /* static members */
   object default {
     
-    @JSImport("react-native-tab-view/lib/typescript/src/TabBar", JSImport.Default)
+    @JSImport("react-native-tab-view/lib/typescript/TabBar", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("react-native-tab-view/lib/typescript/src/TabBar", "default.defaultProps")
+    @JSImport("react-native-tab-view/lib/typescript/TabBar", "default.defaultProps")
     @js.native
     def defaultProps: GetAccessibilityLabel = js.native
     inline def defaultProps_=(x: GetAccessibilityLabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
@@ -103,7 +103,7 @@ object tabBarMod {
       jumpTo: String => Unit,
       layout: Layout,
       navigationState: NavigationState[T],
-      position: Node,
+      position: AnimatedInterpolation[Double | String],
       renderIndicator: typings.reactNativeTabView.tabBarIndicatorMod.Props[T] => ReactNode
     ): Props[T] = {
       val __obj = js.Dynamic.literal(getAccessibilityLabel = js.Any.fromFunction1(getAccessibilityLabel), getAccessible = js.Any.fromFunction1(getAccessible), getLabelText = js.Any.fromFunction1(getLabelText), getTestID = js.Any.fromFunction1(getTestID), jumpTo = js.Any.fromFunction1(jumpTo), layout = layout.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], renderIndicator = js.Any.fromFunction1(renderIndicator))
@@ -232,41 +232,33 @@ object tabBarMod {
   }
   
   @js.native
-  trait TabBar[T /* <: Route */]
-    extends Component[Props[T], State, js.Any] {
-    
-    /* private */ var cancelNextFrameCb: js.Any = js.native
+  trait TabBar[T /* <: Route */] extends Component[Props[T], State, Any] {
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTabBar(prevProps: Props[T], prevState: State): Unit = js.native
     
-    @JSName("componentWillUnmount")
-    def componentWillUnmount_MTabBar(): Unit = js.native
+    /* private */ var getComputedTabWidth: Any = js.native
     
-    /* private */ var getComputedTabWidth: js.Any = js.native
+    /* private */ var getFlattenedTabWidth: Any = js.native
     
-    /* private */ var getFlattenedTabWidth: js.Any = js.native
+    /* private */ var getMaxScrollDistance: Any = js.native
     
-    /* private */ var getMaxScrollDistance: js.Any = js.native
+    /* private */ var getScrollAmount: Any = js.native
     
-    /* private */ var getMemoizedTabWidthGettter: js.Any = js.native
+    /* private */ var getTabBarWidth: Any = js.native
     
-    /* private */ var getScrollAmount: js.Any = js.native
+    /* private */ var getTranslateX: Any = js.native
     
-    /* private */ var getTabBarWidth: js.Any = js.native
+    /* private */ var handleLayout: Any = js.native
     
-    /* private */ var getTranslateX: js.Any = js.native
+    /* private */ var measuredTabWidths: Any = js.native
     
-    /* private */ var handleLayout: js.Any = js.native
+    /* private */ var normalizeScrollValue: Any = js.native
     
-    /* private */ var measuredTabWidths: js.Any = js.native
+    /* private */ var resetScroll: Any = js.native
     
-    /* private */ var normalizeScrollValue: js.Any = js.native
+    /* private */ var scrollAmount: Any = js.native
     
-    /* private */ var resetScroll: js.Any = js.native
-    
-    /* private */ var scrollAmount: js.Any = js.native
-    
-    /* private */ var scrollViewRef: js.Any = js.native
+    /* private */ var scrollViewRef: Any = js.native
   }
 }

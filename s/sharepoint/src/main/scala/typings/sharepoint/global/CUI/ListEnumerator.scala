@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.ListEnumerator")
 @js.native
-class ListEnumerator[T] protected ()
+open class ListEnumerator[T] protected ()
   extends StObject
      with typings.sharepoint.CUI.ListEnumerator[T] {
-  def this(index: js.Any) = this()
+  def this(index: Any) = this()
   
   /* CompleteClass */
   override def get_current(): T = js.native

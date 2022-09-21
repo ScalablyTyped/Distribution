@@ -37,7 +37,7 @@ object PokemonEvolution {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: String*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: String*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setHappiness(value: Boolean): Self = StObject.set(x, "happiness", value.asInstanceOf[js.Any])
     

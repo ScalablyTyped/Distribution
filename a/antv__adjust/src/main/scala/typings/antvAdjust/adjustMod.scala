@@ -2,7 +2,7 @@ package typings.antvAdjust
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.antvAdjust.interfaceMod.AdjustCfg
+import typings.antvAdjust.anon.AdjustCfgdimValuesMapDimV
 import typings.antvAdjust.interfaceMod.Data
 import typings.antvAdjust.interfaceMod.Range
 import org.scalablytyped.runtime.StObject
@@ -16,7 +16,7 @@ object adjustMod {
   abstract class default protected ()
     extends StObject
        with Adjust {
-    def this(cfg: AdjustCfg) = this()
+    def this(cfg: AdjustCfgdimValuesMapDimV) = this()
   }
   
   @js.native
@@ -34,8 +34,14 @@ object adjustMod {
     /** 宽度比例 */
     var columnWidthRatio: Double = js.native
     
+    /** 自定义 offset */
+    var customOffset: (js.Function2[/* data */ Any, /* range */ Any, Double]) | Double = js.native
+    
     /** 用户配置宽度 */
     var defaultSize: Double = js.native
+    
+    /** 用户自定义的dimValuesMap */
+    var dimValuesMap: DimValuesMapType = js.native
     
     /** 指定进行 dodge 的字段 */
     var dodgeBy: String = js.native
@@ -53,7 +59,7 @@ object adjustMod {
       * @param mergedData 数据
       * @return 值的映射
       */
-    /* private */ var getDimValues: js.Any = js.native
+    /* private */ var getDimValues: Any = js.native
     
     /**
       * 对数据进行分组adjustData
@@ -102,7 +108,7 @@ object adjustMod {
     var yField: String = js.native
   }
   
-  type AdjustConstructor = Instantiable1[/* cfg */ js.Any, Adjust]
+  type AdjustConstructor = Instantiable1[/* cfg */ Any, Adjust]
   
   type DimValuesMapType = StringDictionary[js.Array[Double]]
 }

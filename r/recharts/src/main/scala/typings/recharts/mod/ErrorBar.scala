@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "ErrorBar")
 @js.native
-class ErrorBar protected ()
-  extends Component[ErrorBarProps, js.Object, js.Any] {
+open class ErrorBar protected ()
+  extends Component[ErrorBarProps, js.Object, Any] {
   def this(props: ErrorBarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ErrorBarProps, context: js.Any) = this()
+  def this(props: ErrorBarProps, context: Any) = this()
 }

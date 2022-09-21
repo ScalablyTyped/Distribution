@@ -33,6 +33,6 @@ object DescribeDataSourcesOutput {
     
     inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
-    inline def setResultsVarargs(value: DataSource*): Self = StObject.set(x, "Results", js.Array(value :_*))
+    inline def setResultsVarargs(value: DataSource*): Self = StObject.set(x, "Results", js.Array(value*))
   }
 }

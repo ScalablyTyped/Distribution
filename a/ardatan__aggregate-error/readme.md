@@ -3,24 +3,6 @@
 
 Typings are for version 0.0.6
 
-## Library description:
-Create an error from multiple errors
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @ardatan/aggregate-error |
-| Keywords           | aggregate, error, combine, multiple, many, collection, iterable, iterator |
-| # releases         | 8 |
-| # dependents       | 6 |
-| # downloads        | 27126829 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://github.com/sindresorhus/aggregate-error#readme)
-- [Bugs](https://github.com/sindresorhus/aggregate-error/issues)
-- [Repository](https://github.com/sindresorhus/aggregate-error)
-- [Npm](https://www.npmjs.com/package/%40ardatan%2Faggregate-error)
-    
 
 
 ## Note

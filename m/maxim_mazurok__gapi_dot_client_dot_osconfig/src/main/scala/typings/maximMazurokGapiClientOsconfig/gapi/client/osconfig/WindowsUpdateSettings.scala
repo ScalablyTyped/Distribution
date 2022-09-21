@@ -28,18 +28,18 @@ object WindowsUpdateSettings {
     
     inline def setClassificationsUndefined: Self = StObject.set(x, "classifications", js.undefined)
     
-    inline def setClassificationsVarargs(value: String*): Self = StObject.set(x, "classifications", js.Array(value :_*))
+    inline def setClassificationsVarargs(value: String*): Self = StObject.set(x, "classifications", js.Array(value*))
     
     inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
     inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
     
     inline def setExclusivePatches(value: js.Array[String]): Self = StObject.set(x, "exclusivePatches", value.asInstanceOf[js.Any])
     
     inline def setExclusivePatchesUndefined: Self = StObject.set(x, "exclusivePatches", js.undefined)
     
-    inline def setExclusivePatchesVarargs(value: String*): Self = StObject.set(x, "exclusivePatches", js.Array(value :_*))
+    inline def setExclusivePatchesVarargs(value: String*): Self = StObject.set(x, "exclusivePatches", js.Array(value*))
   }
 }

@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for ReportingService.ListReportTypes.
-  */
 trait SchemaListReportTypesResponse extends StObject {
   
   /**
-    * A token to retrieve next page of results. Pass this value in the
-    * ListReportTypesRequest.page_token field in the subsequent call to
-    * `ListReportTypes` method to retrieve the next page of results.
+    * A token to retrieve next page of results. Pass this value in the ListReportTypesRequest.page_token field in the subsequent call to `ListReportTypes` method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of report types.
@@ -32,12 +27,14 @@ object SchemaListReportTypesResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setReportTypes(value: js.Array[SchemaReportType]): Self = StObject.set(x, "reportTypes", value.asInstanceOf[js.Any])
     
     inline def setReportTypesUndefined: Self = StObject.set(x, "reportTypes", js.undefined)
     
-    inline def setReportTypesVarargs(value: SchemaReportType*): Self = StObject.set(x, "reportTypes", js.Array(value :_*))
+    inline def setReportTypesVarargs(value: SchemaReportType*): Self = StObject.set(x, "reportTypes", js.Array(value*))
   }
 }

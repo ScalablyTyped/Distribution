@@ -23,7 +23,7 @@ trait UserSecurityState extends StObject {
   
   /**
     * Time at which the sign-in occurred. The Timestamp type represents date and time information using ISO 8601 format and
-    * is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+    * is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     */
   var logonDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   

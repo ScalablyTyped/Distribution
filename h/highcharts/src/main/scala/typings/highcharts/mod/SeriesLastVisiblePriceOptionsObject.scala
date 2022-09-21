@@ -11,6 +11,12 @@ trait SeriesLastVisiblePriceOptionsObject extends StObject {
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * (Highstock) A label on the axis next to the crosshair.
+    *
+    * In styled mode, the label is styled with the
+    * `.highcharts-crosshair-label` class.
+    */
   var label: js.UndefOr[SeriesLastVisiblePriceLabelOptionsObject] = js.undefined
 }
 object SeriesLastVisiblePriceOptionsObject {

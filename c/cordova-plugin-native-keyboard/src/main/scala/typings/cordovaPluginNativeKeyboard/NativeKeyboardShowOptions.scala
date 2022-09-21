@@ -23,7 +23,7 @@ trait NativeKeyboardShowOptions extends StObject {
   /**
     * DOM element, which should be scrolled automatically
     */
-  var autoscrollElement: js.UndefOr[js.Any] = js.undefined
+  var autoscrollElement: js.UndefOr[Any] = js.undefined
   
   /**
     * The background color of the messenger bar.
@@ -179,7 +179,7 @@ object NativeKeyboardShowOptions {
     
     inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
-    inline def setAutoscrollElement(value: js.Any): Self = StObject.set(x, "autoscrollElement", value.asInstanceOf[js.Any])
+    inline def setAutoscrollElement(value: Any): Self = StObject.set(x, "autoscrollElement", value.asInstanceOf[js.Any])
     
     inline def setAutoscrollElementUndefined: Self = StObject.set(x, "autoscrollElement", js.undefined)
     

@@ -10,10 +10,10 @@ Azure Active Directory (ADAL) support for ReactJS
 | ------------------ | :-------------: |
 | Full name          | react-adal |
 | Keywords           | react, implicit, js, AAD, adal, oauth, oauth2, azure, react-adal, actve, directory, msal |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 659099 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 41604.333333333336 |
+| # stars            | 218.0 |
 
 ## Links
 - [Homepage](https://github.com/salvoravida/react-adal#readme)

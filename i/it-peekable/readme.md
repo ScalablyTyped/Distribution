@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-peekable
 
-Typings are for version 1.0.1
+Typings are for version 1.0.3
 
 ## Library description:
 Allows peeking/pushing an iterable
@@ -10,13 +10,13 @@ Allows peeking/pushing an iterable
 | ------------------ | :-------------: |
 | Full name          | it-peekable |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 272713 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 317859.6666666667 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-peekable#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-peekable)

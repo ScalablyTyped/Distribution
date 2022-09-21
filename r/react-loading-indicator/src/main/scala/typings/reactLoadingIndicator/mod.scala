@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("react-loading-indicator", JSImport.Default)
   @js.native
-  class default ()
-    extends PureComponent[LoadingIndicatorProps, js.Object, js.Any]
+  open class default ()
+    extends PureComponent[LoadingIndicatorProps, js.Object, Any]
   
-  type LoadingIndicator = PureComponent[LoadingIndicatorProps, js.Object, js.Any]
+  type LoadingIndicator = PureComponent[LoadingIndicatorProps, js.Object, Any]
   
   trait LoadingIndicatorColor extends StObject {
     

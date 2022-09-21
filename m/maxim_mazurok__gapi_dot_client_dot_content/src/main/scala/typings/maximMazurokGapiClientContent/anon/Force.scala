@@ -25,7 +25,7 @@ trait Force extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Flag to delete sub-accounts with products. The default value is false. */
+  /** Option to delete sub-accounts with products. The default value is false. */
   var force: js.UndefOr[Boolean] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */

@@ -16,11 +16,11 @@ trait EditorBaseProps extends StObject {
   
   def onCommitCancel(): Unit
   
-  var rowData: js.Any
+  var rowData: Any
   
-  var rowMetaData: js.Any
+  var rowMetaData: Any
   
-  var value: js.Any
+  var value: Any
 }
 object EditorBaseProps {
   
@@ -30,9 +30,9 @@ object EditorBaseProps {
     onBlur: () => Unit,
     onCommit: () => Unit,
     onCommitCancel: () => Unit,
-    rowData: js.Any,
-    rowMetaData: js.Any,
-    value: js.Any
+    rowData: Any,
+    rowMetaData: Any,
+    value: Any
   ): EditorBaseProps = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onCommit = js.Any.fromFunction0(onCommit), onCommitCancel = js.Any.fromFunction0(onCommitCancel), rowData = rowData.asInstanceOf[js.Any], rowMetaData = rowMetaData.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorBaseProps]
@@ -50,10 +50,10 @@ object EditorBaseProps {
     
     inline def setOnCommitCancel(value: () => Unit): Self = StObject.set(x, "onCommitCancel", js.Any.fromFunction0(value))
     
-    inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
-    inline def setRowMetaData(value: js.Any): Self = StObject.set(x, "rowMetaData", value.asInstanceOf[js.Any])
+    inline def setRowMetaData(value: Any): Self = StObject.set(x, "rowMetaData", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

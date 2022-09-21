@@ -16,20 +16,20 @@ trait RoutingSlip extends StObject {
   /* private */ @JSName("Excel.RoutingSlip_typekey")
   var ExcelDotRoutingSlip_typekey: RoutingSlip = js.native
   
-  var Message: js.Any = js.native
+  var Message: Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Recipients(): js.Any = js.native
-  def Recipients(Index: js.Any): js.Any = js.native
+  def Recipients(): Any = js.native
+  def Recipients(Index: Any): Any = js.native
   
-  def Reset(): js.Any = js.native
+  def Reset(): Any = js.native
   
   var ReturnWhenDone: Boolean = js.native
   
   val Status: XlRoutingSlipStatus = js.native
   
-  var Subject: js.Any = js.native
+  var Subject: Any = js.native
   
   var TrackStatus: Boolean = js.native
 }

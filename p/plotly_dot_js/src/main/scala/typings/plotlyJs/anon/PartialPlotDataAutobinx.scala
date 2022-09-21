@@ -1,7 +1,6 @@
 package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.ColorScale
-import typings.plotlyJs.mod.Dash
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.DataTransform
 import typings.plotlyJs.mod.Datum
@@ -11,9 +10,13 @@ import typings.plotlyJs.mod.PlotType
 import typings.plotlyJs.mod.TypedArray
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings._empty
+import typings.plotlyJs.plotlyJsStrings.`ISO-3`
+import typings.plotlyJs.plotlyJsStrings.`USA-states`
 import typings.plotlyJs.plotlyJsStrings.`bottom center`
 import typings.plotlyJs.plotlyJsStrings.`bottom left`
 import typings.plotlyJs.plotlyJsStrings.`bottom right`
+import typings.plotlyJs.plotlyJsStrings.`country names`
+import typings.plotlyJs.plotlyJsStrings.`geojson-id`
 import typings.plotlyJs.plotlyJsStrings.`infer zero`
 import typings.plotlyJs.plotlyJsStrings.`middle center`
 import typings.plotlyJs.plotlyJsStrings.`middle left`
@@ -121,7 +124,6 @@ import typings.plotlyJs.plotlyJsStrings.zPlussignxPlussignyPlussigntext
 import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignx
 import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignxPlussignname
 import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignxPlussigntext
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -133,11 +135,17 @@ trait PartialPlotDataAutobinx
   
   var autobinx: js.UndefOr[Boolean] = js.undefined
   
+  var automargin: js.UndefOr[Boolean] = js.undefined
+  
   var boxmean: js.UndefOr[Boolean | sd] = js.undefined
   
   var boxpoints: js.UndefOr[all | outliers | suspectedoutliers | `false`] = js.undefined
   
   var branchvalues: js.UndefOr[total | remainder] = js.undefined
+  
+  var cliponaxis: js.UndefOr[Boolean] = js.undefined
+  
+  var colorbar: js.UndefOr[PartialColorBarBgcolor] = js.undefined
   
   var colorscale: js.UndefOr[ColorScale] = js.undefined
   
@@ -149,7 +157,7 @@ trait PartialPlotDataAutobinx
   
   var direction: js.UndefOr[clockwise | counterclockwise] = js.undefined
   
-  var domain: js.UndefOr[Partialrowsnumbercolumnsn] = js.undefined
+  var domain: js.UndefOr[Partialrownumbercolumnnum] = js.undefined
   
   var error_x: js.UndefOr[ErrorBar] = js.undefined
   
@@ -158,6 +166,8 @@ trait PartialPlotDataAutobinx
   var fill: js.UndefOr[none | tozeroy | tozerox | tonexty | tonextx | toself | tonext] = js.undefined
   
   var fillcolor: js.UndefOr[String] = js.undefined
+  
+  var fillpattern: js.UndefOr[PartialPattern] = js.undefined
   
   var gauge: js.UndefOr[PartialGaugeAxis] = js.undefined
   
@@ -203,7 +213,7 @@ trait PartialPlotDataAutobinx
   var lineDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
   @JSName("line.dash")
-  var lineDotdash: js.UndefOr[Dash] = js.undefined
+  var lineDotdash: js.UndefOr[typings.plotlyJs.mod.Dash] = js.undefined
   
   @JSName("line.shape")
   var lineDotshape: js.UndefOr[linear | spline | hv | vh | hvh | vhv] = js.undefined
@@ -217,9 +227,13 @@ trait PartialPlotDataAutobinx
   @JSName("line.width")
   var lineDotwidth: js.UndefOr[Double] = js.undefined
   
+  var locationmode: js.UndefOr[`ISO-3` | `USA-states` | (`country names`) | `geojson-id`] = js.undefined
+  
+  var locations: js.UndefOr[js.Array[Datum]] = js.undefined
+  
   var lon: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var marker: js.UndefOr[PartialPlotMarkerAutocolorscale] = js.undefined
+  var marker: js.UndefOr[PartialPlotMarkerAutocolorscale | PartialBoxPlotMarkerColor] = js.undefined
   
   @JSName("marker.color")
   var markerDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
@@ -286,6 +300,8 @@ trait PartialPlotDataAutobinx
   
   var number: js.UndefOr[PartialPlotNumberFont] = js.undefined
   
+  var offset: js.UndefOr[Double] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
   
   var orientation: js.UndefOr[v | h] = js.undefined
@@ -295,6 +311,8 @@ trait PartialPlotDataAutobinx
   var pointpos: js.UndefOr[Double] = js.undefined
   
   var r: js.UndefOr[js.Array[Datum]] = js.undefined
+  
+  var reversescale: js.UndefOr[Boolean] = js.undefined
   
   var rotation: js.UndefOr[Double] = js.undefined
   
@@ -346,7 +364,7 @@ trait PartialPlotDataAutobinx
   
   var xgap: js.UndefOr[Double] = js.undefined
   
-  var xy: js.UndefOr[Float32Array] = js.undefined
+  var xy: js.UndefOr[js.typedarray.Float32Array] = js.undefined
   
   var y: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.undefined
   
@@ -355,6 +373,10 @@ trait PartialPlotDataAutobinx
   var ygap: js.UndefOr[Double] = js.undefined
   
   var z: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.undefined
+  
+  var zmax: js.UndefOr[Double] = js.undefined
+  
+  var zmin: js.UndefOr[Double] = js.undefined
   
   var zsmooth: js.UndefOr[fast | best | `false`] = js.undefined
 }
@@ -371,6 +393,10 @@ object PartialPlotDataAutobinx {
     
     inline def setAutobinxUndefined: Self = StObject.set(x, "autobinx", js.undefined)
     
+    inline def setAutomargin(value: Boolean): Self = StObject.set(x, "automargin", value.asInstanceOf[js.Any])
+    
+    inline def setAutomarginUndefined: Self = StObject.set(x, "automargin", js.undefined)
+    
     inline def setBoxmean(value: Boolean | sd): Self = StObject.set(x, "boxmean", value.asInstanceOf[js.Any])
     
     inline def setBoxmeanUndefined: Self = StObject.set(x, "boxmean", js.undefined)
@@ -383,11 +409,19 @@ object PartialPlotDataAutobinx {
     
     inline def setBranchvaluesUndefined: Self = StObject.set(x, "branchvalues", js.undefined)
     
+    inline def setCliponaxis(value: Boolean): Self = StObject.set(x, "cliponaxis", value.asInstanceOf[js.Any])
+    
+    inline def setCliponaxisUndefined: Self = StObject.set(x, "cliponaxis", js.undefined)
+    
+    inline def setColorbar(value: PartialColorBarBgcolor): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
+    
+    inline def setColorbarUndefined: Self = StObject.set(x, "colorbar", js.undefined)
+    
     inline def setColorscale(value: ColorScale): Self = StObject.set(x, "colorscale", value.asInstanceOf[js.Any])
     
     inline def setColorscaleUndefined: Self = StObject.set(x, "colorscale", js.undefined)
     
-    inline def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "colorscale", js.Array(value :_*))
+    inline def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "colorscale", js.Array(value*))
     
     inline def setConnectgaps(value: Boolean): Self = StObject.set(x, "connectgaps", value.asInstanceOf[js.Any])
     
@@ -397,7 +431,7 @@ object PartialPlotDataAutobinx {
     
     inline def setCustomdataUndefined: Self = StObject.set(x, "customdata", js.undefined)
     
-    inline def setCustomdataVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "customdata", js.Array(value :_*))
+    inline def setCustomdataVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "customdata", js.Array(value*))
     
     inline def setDelta(value: PartialDelta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
@@ -407,7 +441,7 @@ object PartialPlotDataAutobinx {
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setDomain(value: Partialrowsnumbercolumnsn): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: Partialrownumbercolumnnum): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
@@ -426,6 +460,10 @@ object PartialPlotDataAutobinx {
     inline def setFillcolor(value: String): Self = StObject.set(x, "fillcolor", value.asInstanceOf[js.Any])
     
     inline def setFillcolorUndefined: Self = StObject.set(x, "fillcolor", js.undefined)
+    
+    inline def setFillpattern(value: PartialPattern): Self = StObject.set(x, "fillpattern", value.asInstanceOf[js.Any])
+    
+    inline def setFillpatternUndefined: Self = StObject.set(x, "fillpattern", js.undefined)
     
     inline def setGauge(value: PartialGaugeAxis): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
@@ -461,13 +499,13 @@ object PartialPlotDataAutobinx {
     
     inline def setHovertemplateUndefined: Self = StObject.set(x, "hovertemplate", js.undefined)
     
-    inline def setHovertemplateVarargs(value: String*): Self = StObject.set(x, "hovertemplate", js.Array(value :_*))
+    inline def setHovertemplateVarargs(value: String*): Self = StObject.set(x, "hovertemplate", js.Array(value*))
     
     inline def setHovertext(value: String | js.Array[String]): Self = StObject.set(x, "hovertext", value.asInstanceOf[js.Any])
     
     inline def setHovertextUndefined: Self = StObject.set(x, "hovertext", js.undefined)
     
-    inline def setHovertextVarargs(value: String*): Self = StObject.set(x, "hovertext", js.Array(value :_*))
+    inline def setHovertextVarargs(value: String*): Self = StObject.set(x, "hovertext", js.Array(value*))
     
     inline def setI(value: TypedArray): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
@@ -477,7 +515,7 @@ object PartialPlotDataAutobinx {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setJ(value: TypedArray): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
@@ -495,13 +533,13 @@ object PartialPlotDataAutobinx {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: Datum*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: Datum*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLat(value: js.Array[Datum]): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
     inline def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
     
-    inline def setLatVarargs(value: Datum*): Self = StObject.set(x, "lat", js.Array(value :_*))
+    inline def setLatVarargs(value: Datum*): Self = StObject.set(x, "lat", js.Array(value*))
     
     inline def setLegendgroup(value: String): Self = StObject.set(x, "legendgroup", value.asInstanceOf[js.Any])
     
@@ -517,9 +555,9 @@ object PartialPlotDataAutobinx {
     
     inline def setLineDotcolorUndefined: Self = StObject.set(x, "line.color", js.undefined)
     
-    inline def setLineDotcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "line.color", js.Array(value :_*))
+    inline def setLineDotcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "line.color", js.Array(value*))
     
-    inline def setLineDotdash(value: Dash): Self = StObject.set(x, "line.dash", value.asInstanceOf[js.Any])
+    inline def setLineDotdash(value: typings.plotlyJs.mod.Dash): Self = StObject.set(x, "line.dash", value.asInstanceOf[js.Any])
     
     inline def setLineDotdashUndefined: Self = StObject.set(x, "line.dash", js.undefined)
     
@@ -541,19 +579,29 @@ object PartialPlotDataAutobinx {
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
+    inline def setLocationmode(value: `ISO-3` | `USA-states` | (`country names`) | `geojson-id`): Self = StObject.set(x, "locationmode", value.asInstanceOf[js.Any])
+    
+    inline def setLocationmodeUndefined: Self = StObject.set(x, "locationmode", js.undefined)
+    
+    inline def setLocations(value: js.Array[Datum]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    
+    inline def setLocationsVarargs(value: Datum*): Self = StObject.set(x, "locations", js.Array(value*))
+    
     inline def setLon(value: js.Array[Datum]): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
     
     inline def setLonUndefined: Self = StObject.set(x, "lon", js.undefined)
     
-    inline def setLonVarargs(value: Datum*): Self = StObject.set(x, "lon", js.Array(value :_*))
+    inline def setLonVarargs(value: Datum*): Self = StObject.set(x, "lon", js.Array(value*))
     
-    inline def setMarker(value: PartialPlotMarkerAutocolorscale): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PartialPlotMarkerAutocolorscale | PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerDotcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "marker.color", value.asInstanceOf[js.Any])
     
     inline def setMarkerDotcolorUndefined: Self = StObject.set(x, "marker.color", js.undefined)
     
-    inline def setMarkerDotcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "marker.color", js.Array(value :_*))
+    inline def setMarkerDotcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "marker.color", js.Array(value*))
     
     inline def setMarkerDotcolorbar(value: js.Object): Self = StObject.set(x, "marker.colorbar", value.asInstanceOf[js.Any])
     
@@ -563,7 +611,7 @@ object PartialPlotDataAutobinx {
     
     inline def setMarkerDotcolorscaleUndefined: Self = StObject.set(x, "marker.colorscale", js.undefined)
     
-    inline def setMarkerDotcolorscaleVarargs(value: (ColorScale | String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "marker.colorscale", js.Array(value :_*))
+    inline def setMarkerDotcolorscaleVarargs(value: (ColorScale | String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "marker.colorscale", js.Array(value*))
     
     inline def setMarkerDotline(value: PartialScatterMarkerLine): Self = StObject.set(x, "marker.line", value.asInstanceOf[js.Any])
     
@@ -571,13 +619,13 @@ object PartialPlotDataAutobinx {
     
     inline def setMarkerDotlineDotcolorUndefined: Self = StObject.set(x, "marker.line.color", js.undefined)
     
-    inline def setMarkerDotlineDotcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "marker.line.color", js.Array(value :_*))
+    inline def setMarkerDotlineDotcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "marker.line.color", js.Array(value*))
     
     inline def setMarkerDotlineDotcolorscale(value: ColorScale | js.Array[ColorScale]): Self = StObject.set(x, "marker.line.colorscale", value.asInstanceOf[js.Any])
     
     inline def setMarkerDotlineDotcolorscaleUndefined: Self = StObject.set(x, "marker.line.colorscale", js.undefined)
     
-    inline def setMarkerDotlineDotcolorscaleVarargs(value: (ColorScale | String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "marker.line.colorscale", js.Array(value :_*))
+    inline def setMarkerDotlineDotcolorscaleVarargs(value: (ColorScale | String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "marker.line.colorscale", js.Array(value*))
     
     inline def setMarkerDotlineUndefined: Self = StObject.set(x, "marker.line", js.undefined)
     
@@ -589,7 +637,7 @@ object PartialPlotDataAutobinx {
     
     inline def setMarkerDotopacityUndefined: Self = StObject.set(x, "marker.opacity", js.undefined)
     
-    inline def setMarkerDotopacityVarargs(value: Double*): Self = StObject.set(x, "marker.opacity", js.Array(value :_*))
+    inline def setMarkerDotopacityVarargs(value: Double*): Self = StObject.set(x, "marker.opacity", js.Array(value*))
     
     inline def setMarkerDotpadDotb(value: Double): Self = StObject.set(x, "marker.pad.b", value.asInstanceOf[js.Any])
     
@@ -615,7 +663,7 @@ object PartialPlotDataAutobinx {
     
     inline def setMarkerDotsizeUndefined: Self = StObject.set(x, "marker.size", js.undefined)
     
-    inline def setMarkerDotsizeVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "marker.size", js.Array(value :_*))
+    inline def setMarkerDotsizeVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "marker.size", js.Array(value*))
     
     inline def setMarkerDotsizemax(value: Double): Self = StObject.set(x, "marker.sizemax", value.asInstanceOf[js.Any])
     
@@ -637,7 +685,7 @@ object PartialPlotDataAutobinx {
     
     inline def setMarkerDotsymbolUndefined: Self = StObject.set(x, "marker.symbol", js.undefined)
     
-    inline def setMarkerDotsymbolVarargs(value: (Double | MarkerSymbol | String)*): Self = StObject.set(x, "marker.symbol", js.Array(value :_*))
+    inline def setMarkerDotsymbolVarargs(value: (Double | MarkerSymbol | String)*): Self = StObject.set(x, "marker.symbol", js.Array(value*))
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
@@ -655,6 +703,10 @@ object PartialPlotDataAutobinx {
     
     inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -667,7 +719,7 @@ object PartialPlotDataAutobinx {
     
     inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
     
-    inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value*))
     
     inline def setPointpos(value: Double): Self = StObject.set(x, "pointpos", value.asInstanceOf[js.Any])
     
@@ -677,7 +729,11 @@ object PartialPlotDataAutobinx {
     
     inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    inline def setRVarargs(value: Datum*): Self = StObject.set(x, "r", js.Array(value :_*))
+    inline def setRVarargs(value: Datum*): Self = StObject.set(x, "r", js.Array(value*))
+    
+    inline def setReversescale(value: Boolean): Self = StObject.set(x, "reversescale", value.asInstanceOf[js.Any])
+    
+    inline def setReversescaleUndefined: Self = StObject.set(x, "reversescale", js.undefined)
     
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
@@ -687,7 +743,7 @@ object PartialPlotDataAutobinx {
     
     inline def setSelectedpointsUndefined: Self = StObject.set(x, "selectedpoints", js.undefined)
     
-    inline def setSelectedpointsVarargs(value: Datum*): Self = StObject.set(x, "selectedpoints", js.Array(value :_*))
+    inline def setSelectedpointsVarargs(value: Datum*): Self = StObject.set(x, "selectedpoints", js.Array(value*))
     
     inline def setShowlegend(value: Boolean): Self = StObject.set(x, "showlegend", value.asInstanceOf[js.Any])
     
@@ -709,7 +765,7 @@ object PartialPlotDataAutobinx {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
     
     inline def setTextfont(value: PartialFont): Self = StObject.set(x, "textfont", value.asInstanceOf[js.Any])
     
@@ -731,7 +787,7 @@ object PartialPlotDataAutobinx {
     
     inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
-    inline def setThetaVarargs(value: Datum*): Self = StObject.set(x, "theta", js.Array(value :_*))
+    inline def setThetaVarargs(value: Datum*): Self = StObject.set(x, "theta", js.Array(value*))
     
     inline def setTitle(value: PartialDataTitleFont): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
@@ -741,7 +797,7 @@ object PartialPlotDataAutobinx {
     
     inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
     
-    inline def setTransformsVarargs(value: DataTransform*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+    inline def setTransformsVarargs(value: DataTransform*): Self = StObject.set(x, "transforms", js.Array(value*))
     
     inline def setTranspose(value: Boolean): Self = StObject.set(x, "transpose", value.asInstanceOf[js.Any])
     
@@ -759,7 +815,7 @@ object PartialPlotDataAutobinx {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: Datum*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Datum*): Self = StObject.set(x, "values", js.Array(value*))
     
     inline def setVisible(value: Boolean | legendonly): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
@@ -769,13 +825,13 @@ object PartialPlotDataAutobinx {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWidthVarargs(value: Double*): Self = StObject.set(x, "width", js.Array(value :_*))
+    inline def setWidthVarargs(value: Double*): Self = StObject.set(x, "width", js.Array(value*))
     
     inline def setX(value: (js.Array[js.Array[Datum] | Datum]) | TypedArray): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setXVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "x", js.Array(value*))
     
     inline def setXaxis(value: String): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
@@ -789,7 +845,7 @@ object PartialPlotDataAutobinx {
     
     inline def setXgapUndefined: Self = StObject.set(x, "xgap", js.undefined)
     
-    inline def setXy(value: Float32Array): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
+    inline def setXy(value: js.typedarray.Float32Array): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
     
     inline def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
     
@@ -797,7 +853,7 @@ object PartialPlotDataAutobinx {
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    inline def setYVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "y", js.Array(value*))
     
     inline def setYaxis(value: String): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     
@@ -811,7 +867,15 @@ object PartialPlotDataAutobinx {
     
     inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     
-    inline def setZVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "z", js.Array(value :_*))
+    inline def setZVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "z", js.Array(value*))
+    
+    inline def setZmax(value: Double): Self = StObject.set(x, "zmax", value.asInstanceOf[js.Any])
+    
+    inline def setZmaxUndefined: Self = StObject.set(x, "zmax", js.undefined)
+    
+    inline def setZmin(value: Double): Self = StObject.set(x, "zmin", value.asInstanceOf[js.Any])
+    
+    inline def setZminUndefined: Self = StObject.set(x, "zmin", js.undefined)
     
     inline def setZsmooth(value: fast | best | `false`): Self = StObject.set(x, "zsmooth", value.asInstanceOf[js.Any])
     

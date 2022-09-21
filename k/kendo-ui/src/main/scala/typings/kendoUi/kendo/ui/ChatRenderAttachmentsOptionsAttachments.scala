@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChatRenderAttachmentsOptionsAttachments extends StObject {
   
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[Any] = js.undefined
   
   var contentType: js.UndefOr[String] = js.undefined
 }
@@ -19,7 +19,7 @@ object ChatRenderAttachmentsOptionsAttachments {
   
   extension [Self <: ChatRenderAttachmentsOptionsAttachments](x: Self) {
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

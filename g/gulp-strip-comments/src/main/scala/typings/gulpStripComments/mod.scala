@@ -2,8 +2,6 @@ package typings.gulpStripComments
 
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpStripComments.mod.stripComments.Strip
-import typings.node.NodeJS.ReadWriteStream
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,21 +22,21 @@ object mod extends Shortcut {
     @js.native
     trait Strip extends StObject {
       
-      def apply(): ReadWriteStream = js.native
-      def apply(options: StripOptions): ReadWriteStream = js.native
+      def apply(): Any = js.native
+      def apply(options: StripOptions): Any = js.native
       
       def getEOL(): String = js.native
       
-      def html(): ReadWriteStream = js.native
-      def html(options: StripOptions): ReadWriteStream = js.native
+      def html(): Any = js.native
+      def html(options: StripOptions): Any = js.native
       
-      def text(): ReadWriteStream = js.native
-      def text(options: StripOptions): ReadWriteStream = js.native
+      def text(): Any = js.native
+      def text(options: StripOptions): Any = js.native
     }
     
     trait StripOptions extends StObject {
       
-      var ignore: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
+      var ignore: js.UndefOr[js.RegExp | js.Array[js.RegExp]] = js.undefined
       
       var safe: js.UndefOr[Boolean] = js.undefined
       
@@ -55,11 +53,11 @@ object mod extends Shortcut {
       
       extension [Self <: StripOptions](x: Self) {
         
-        inline def setIgnore(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+        inline def setIgnore(value: js.RegExp | js.Array[js.RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setIgnoreVarargs(value: RegExp*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+        inline def setIgnoreVarargs(value: js.RegExp*): Self = StObject.set(x, "ignore", js.Array(value*))
         
         inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
         

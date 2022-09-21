@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SmartFieldOptions extends StObject {
   
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   var description: js.UndefOr[String] = js.undefined
   
@@ -36,7 +36,7 @@ object SmartFieldOptions {
   
   extension [Self <: SmartFieldOptions](x: Self) {
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -48,11 +48,11 @@ object SmartFieldOptions {
     
     inline def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     
-    inline def setEnumsVarargs(value: String*): Self = StObject.set(x, "enums", js.Array(value :_*))
+    inline def setEnumsVarargs(value: String*): Self = StObject.set(x, "enums", js.Array(value*))
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* record */ Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
@@ -64,16 +64,16 @@ object SmartFieldOptions {
     
     inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
-    inline def setSearch(value: (/* query */ js.Any, /* search */ String) => js.Object): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+    inline def setSearch(value: (/* query */ Any, /* search */ String) => js.Object): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
     
     inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    inline def setSet(value: (/* record */ js.Any, /* attributeValue */ js.Any) => js.Object): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (/* record */ Any, /* attributeValue */ Any) => js.Object): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

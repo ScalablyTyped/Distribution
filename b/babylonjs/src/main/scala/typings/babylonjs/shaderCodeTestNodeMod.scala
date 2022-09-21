@@ -10,7 +10,7 @@ object shaderCodeTestNodeMod {
   
   @JSImport("babylonjs/Engines/Processors/shaderCodeTestNode", "ShaderCodeTestNode")
   @js.native
-  class ShaderCodeTestNode () extends ShaderCodeNode {
+  open class ShaderCodeTestNode () extends ShaderCodeNode {
     
     var testExpression: ShaderDefineExpression = js.native
   }

@@ -17,5 +17,5 @@ trait TimeExtentConstructor
 Instantiable0[TimeExtent]
      with Instantiable1[/* properties */ TimeExtentProperties, TimeExtent] {
   
-  def fromJSON(json: js.Any): TimeExtent = js.native
+  def fromJSON(json: Any): TimeExtent = js.native
 }

@@ -10,10 +10,10 @@ Return a data type from a string representing the type
 | ------------------ | :-------------: |
 | Full name          | dtype |
 | Keywords           | ndarray, array, typed |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 4296358 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 673658.6666666666 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/shama/dtype)

@@ -1,9 +1,5 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,44 +9,22 @@ trait ParamsResourceServicesSearch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The maximum number of results returned by this request. Currently, the
-    * default maximum is set to 1000. If `page_size` isn't provided or the size
-    * provided is a number larger than 1000, it's automatically set to 1000.
-    * Optional.
+    * Optional. The maximum number of results returned by this request. Currently, the default maximum is set to 1000. If `page_size` isn't provided or the size provided is a number larger than 1000, it's automatically set to 1000.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The continuation token, which is used to page through large result sets.
-    * To get the next page of results, set this parameter to the value of
-    * `nextPageToken` from the previous response.  Optional.
+    * Optional. The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of `nextPageToken` from the previous response.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Service for which search is performed. services/{service} {service} the
-    * name of a service, for example 'service.googleapis.com'.
+    * Required. Service for which search is performed. services/{service\} {service\} the name of a service, for example 'service.googleapis.com'.
     */
   var parent: js.UndefOr[String] = js.undefined
   
   /**
-    * Set a query `{expression}` for querying tenancy units. Your
-    * `{expression}` must be in the format: `field_name=literal_string`. The
-    * `field_name` is the name of the field you want to compare. Supported
-    * fields are `tenant_resources.tag` and `tenant_resources.resource`.  For
-    * example, to search tenancy units that contain at least one tenant
-    * resource with a given tag 'xyz', use the query
-    * `tenant_resources.tag=xyz`. To search tenancy units that contain at least
-    * one tenant resource with a given resource name 'projects/123456', use the
-    * query `tenant_resources.resource=projects/123456`.  Multiple expressions
-    * can be joined with `AND`s. Tenancy units must match all expressions to be
-    * included in the result set. For example, `tenant_resources.tag=xyz AND
-    * tenant_resources.resource=projects/123456`  Optional.
+    * Optional. Set a query `{expression\}` for querying tenancy units. Your `{expression\}` must be in the format: `field_name=literal_string`. The `field_name` is the name of the field you want to compare. Supported fields are `tenant_resources.tag` and `tenant_resources.resource`. For example, to search tenancy units that contain at least one tenant resource with a given tag 'xyz', use the query `tenant_resources.tag=xyz`. To search tenancy units that contain at least one tenant resource with a given resource name 'projects/123456', use the query `tenant_resources.resource=projects/123456`. Multiple expressions can be joined with `AND`s. Tenancy units must match all expressions to be included in the result set. For example, `tenant_resources.tag=xyz AND tenant_resources.resource=projects/123456`
     */
   var query: js.UndefOr[String] = js.undefined
 }
@@ -62,10 +36,6 @@ object ParamsResourceServicesSearch {
   }
   
   extension [Self <: ParamsResourceServicesSearch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

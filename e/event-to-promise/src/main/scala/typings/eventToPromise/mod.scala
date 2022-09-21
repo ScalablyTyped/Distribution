@@ -16,15 +16,15 @@ object mod {
     * @param options  An `Object` controlling advanced options.
     * @return         The returned promise has a `cancel()` method which can be used to remove the event listeners. Note that the promise will never settled if canceled.
     */
-  inline def apply(emitter: EventSource, event: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def apply(emitter: EventSource, event: String, options: EventToPromiseOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def apply(emitter: EventSource, event: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def apply(emitter: EventSource, event: String, options: EventToPromiseOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   @JSImport("event-to-promise", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def multi(emitter: EventSource, successEvents: js.Array[String]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multi")(emitter.asInstanceOf[js.Any], successEvents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def multi(emitter: EventSource, successEvents: js.Array[String], errorEvents: js.Array[String]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multi")(emitter.asInstanceOf[js.Any], successEvents.asInstanceOf[js.Any], errorEvents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def multi(emitter: EventSource, successEvents: js.Array[String]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multi")(emitter.asInstanceOf[js.Any], successEvents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def multi(emitter: EventSource, successEvents: js.Array[String], errorEvents: js.Array[String]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multi")(emitter.asInstanceOf[js.Any], successEvents.asInstanceOf[js.Any], errorEvents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   type EventSource = EventEmitter | EventTarget
   

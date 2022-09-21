@@ -100,7 +100,7 @@ object Comments {
       
       inline def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
       
-      inline def setUploadsVarargs(value: String*): Self = StObject.set(x, "uploads", js.Array(value :_*))
+      inline def setUploadsVarargs(value: String*): Self = StObject.set(x, "uploads", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -134,15 +134,15 @@ object Comments {
       
       inline def setComments(value: js.Array[typings.nodeZendesk.mod.Requests.Comments.ResponseModel]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      inline def setCommentsVarargs(value: typings.nodeZendesk.mod.Requests.Comments.ResponseModel*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: typings.nodeZendesk.mod.Requests.Comments.ResponseModel*): Self = StObject.set(x, "comments", js.Array(value*))
       
       inline def setOrganizations(value: js.Array[typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
       
-      inline def setOrganizationsVarargs(value: typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel*): Self = StObject.set(x, "organizations", js.Array(value :_*))
+      inline def setOrganizationsVarargs(value: typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel*): Self = StObject.set(x, "organizations", js.Array(value*))
       
       inline def setUsers(value: js.Array[typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
   
@@ -208,7 +208,7 @@ object Comments {
       
       inline def setAttachments(value: js.Array[Model]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      inline def setAttachmentsVarargs(value: Model*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Model*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setAuthor_id(value: ZendeskID): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,7 @@ object IdPath {
     
     inline def setPath(value: String | js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     

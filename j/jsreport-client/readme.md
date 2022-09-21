@@ -10,10 +10,10 @@ jsreport node.js client
 | ------------------ | :-------------: |
 | Full name          | jsreport-client |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 145821 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 11654.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/jsreport/nodejs-client)

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vis", "Network")
 @js.native
-class Network protected () extends StObject {
+open class Network protected () extends StObject {
   /**
     * Creates an instance of Network.
     *
@@ -242,7 +242,7 @@ class Network protected () extends StObject {
     * all differences from the default options caused by users interacting with the configurator.
     *
     */
-  def getOptionsFromConfigurator(): js.Any = js.native
+  def getOptionsFromConfigurator(): Any = js.native
   
   /**
     * Returns the x y positions in canvas space of the nodes with the supplied nodeIds as an object.
@@ -331,7 +331,7 @@ class Network protected () extends StObject {
     * @param [callback] the exact same callback function that was used when calling 'on'
     */
   def off(eventName: NetworkEvents): Unit = js.native
-  def off(eventName: NetworkEvents, callback: js.Function1[/* params */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def off(eventName: NetworkEvents, callback: js.Function1[/* params */ js.UndefOr[Any], Unit]): Unit = js.native
   
   /**
     * Set an event listener.
@@ -340,7 +340,7 @@ class Network protected () extends StObject {
     * @param eventName the name of the event, f.e. 'click'
     * @param callback the callback function that will be raised
     */
-  def on(eventName: NetworkEvents, callback: js.Function1[/* params */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def on(eventName: NetworkEvents, callback: js.Function1[/* params */ js.UndefOr[Any], Unit]): Unit = js.native
   
   /**
     * Set an event listener only once.
@@ -350,7 +350,7 @@ class Network protected () extends StObject {
     * @param eventName the name of the event, f.e. 'click'
     * @param callback the callback function that will be raised once
     */
-  def once(eventName: NetworkEvents, callback: js.Function1[/* params */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def once(eventName: NetworkEvents, callback: js.Function1[/* params */ js.UndefOr[Any], Unit]): Unit = js.native
   
   /**
     * Opens the cluster, releases the contained nodes and edges,

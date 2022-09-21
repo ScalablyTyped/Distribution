@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__adjust
 
-Typings are for version 0.2.3
+Typings are for version 0.2.5
 
 ## Library description:
 The adjust module for G2, F2.
@@ -10,15 +10,12 @@ The adjust module for G2, F2.
 | ------------------ | :-------------: |
 | Full name          | @antv/adjust |
 | Keywords           | antv, adjust, g2, f2 |
-| # releases         | 6 |
-| # dependents       | 9 |
-| # downloads        | 2360455 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 376845.6666666667 |
+| # stars            | 5.0 |
 
 ## Links
-- [Homepage](https://github.com/antvis/adjust#readme)
-- [Bugs](https://github.com/antvis/adjust/issues)
-- [Repository](https://github.com/antvis/adjust)
 - [Npm](https://www.npmjs.com/package/%40antv%2Fadjust)
     
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SetDoubleParagraphSpacingCommand")
 @js.native
-class SetDoubleParagraphSpacingCommand ()
+open class SetDoubleParagraphSpacingCommand ()
   extends StObject
      with typings.devexpressWeb.SetDoubleParagraphSpacingCommand {
   

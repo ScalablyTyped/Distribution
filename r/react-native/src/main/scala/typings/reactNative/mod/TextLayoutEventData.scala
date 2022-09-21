@@ -21,6 +21,6 @@ object TextLayoutEventData {
     
     inline def setLines(value: js.Array[TextLayoutLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    inline def setLinesVarargs(value: TextLayoutLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: TextLayoutLine*): Self = StObject.set(x, "lines", js.Array(value*))
   }
 }

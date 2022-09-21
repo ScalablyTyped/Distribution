@@ -29,7 +29,7 @@ object ListConstraintsForPortfolioOutput {
     
     inline def setConstraintDetailsUndefined: Self = StObject.set(x, "ConstraintDetails", js.undefined)
     
-    inline def setConstraintDetailsVarargs(value: ConstraintDetail*): Self = StObject.set(x, "ConstraintDetails", js.Array(value :_*))
+    inline def setConstraintDetailsVarargs(value: ConstraintDetail*): Self = StObject.set(x, "ConstraintDetails", js.Array(value*))
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

@@ -9,10 +9,10 @@ Asynchronous, buffered, line-by-line file/stream reader
 | ------------------ | :-------------: |
 | Full name          | line-reader |
 | Keywords           | file, line, reader, scanner |
-| # releases         | 0 |
-| # dependents       | 205 |
-| # downloads        | 1640837 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 314525.3333333333 |
+| # stars            | 446.0 |
 
 ## Links
 - [Homepage](https://github.com/nickewing/line-reader#readme)

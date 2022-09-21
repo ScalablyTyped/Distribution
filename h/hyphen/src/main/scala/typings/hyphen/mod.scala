@@ -126,7 +126,7 @@ object mod {
     var hyphenChar: js.UndefOr[String] = js.undefined
     
     /**
-      * The minimum length for a word to get hyphenated. Can't be less than 5.
+      * The minimum length for a word to get hyphenated.
       * @default 5
       */
     var minWordLength: js.UndefOr[Double] = js.undefined
@@ -176,11 +176,11 @@ object mod {
       
       inline def setExceptions(value: js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
       
-      inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
+      inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value*))
       
       inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value*))
     }
   }
 }

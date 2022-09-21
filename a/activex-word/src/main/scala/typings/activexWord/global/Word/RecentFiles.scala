@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.RecentFiles")
 @js.native
-/* private */ class RecentFiles ()
+/* private */ open class RecentFiles ()
   extends StObject
      with typings.activexWord.Word.RecentFiles

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FloatingPictureInfo")
 @js.native
-class FloatingPictureInfo ()
+open class FloatingPictureInfo ()
   extends StObject
      with typings.devexpressWeb.FloatingObjectInfo {
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientChartPrintOptions")
 @js.native
-class ASPxClientChartPrintOptions ()
+open class ASPxClientChartPrintOptions ()
   extends StObject
      with typings.devexpressWeb.ASPxClientChartPrintOptions {
   

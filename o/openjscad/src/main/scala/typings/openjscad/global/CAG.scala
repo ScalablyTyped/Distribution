@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CAG")
 @js.native
-class CAG ()
+open class CAG ()
   extends StObject
      with typings.openjscad.CAG {
   
@@ -31,7 +31,7 @@ object CAG {
   
   @JSGlobal("CAG.Side")
   @js.native
-  class Side protected ()
+  open class Side protected ()
     extends StObject
        with typings.openjscad.CAG.Side {
     def this(vertex0: typings.openjscad.CAG.Vertex, vertex1: typings.openjscad.CAG.Vertex) = this()
@@ -48,7 +48,7 @@ object CAG {
   
   @JSGlobal("CAG.Vertex")
   @js.native
-  class Vertex protected ()
+  open class Vertex protected ()
     extends StObject
        with typings.openjscad.CAG.Vertex {
     def this(pos: Vector2D) = this()
@@ -67,7 +67,7 @@ object CAG {
   inline def circle(options: ICircleOptions): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("circle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   /* static member */
-  inline def fromCompactBinary(bin: js.Any): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompactBinary")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def fromCompactBinary(bin: Any): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompactBinary")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   /* static member */
   inline def fromFakeCSG(csg: typings.openjscad.CSG): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFakeCSG")(csg.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
@@ -83,7 +83,7 @@ object CAG {
   
   @JSGlobal("CAG.fuzzyCAGFactory")
   @js.native
-  class fuzzyCAGFactory ()
+  open class fuzzyCAGFactory ()
     extends StObject
        with typings.openjscad.CAG.fuzzyCAGFactory {
     
@@ -107,5 +107,5 @@ object CAG {
   inline def rectangle(options: IRectangleOptions): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   /* static member */
-  inline def roundedRectangle(options: js.Any): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("roundedRectangle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def roundedRectangle(options: Any): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("roundedRectangle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
 }

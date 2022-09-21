@@ -21,7 +21,7 @@ trait InkRecognizerContainer extends StObject {
     * @param recognitionTarget One of the values from the InkRecognitionTarget enumeration.
     * @return The results of the recognition as a collection of InkRecognitionResult objects.
     */
-  def recognizeAsync(strokeCollection: InkStrokeContainer, recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+  def recognizeAsync(strokeCollection: InkStrokeContainer, recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[Any]]
   
   /**
     * Sets the default InkRecognizer used for handwriting recognition.
@@ -33,7 +33,7 @@ object InkRecognizerContainer {
   
   inline def apply(
     getRecognizers: () => IVectorView[InkRecognizer],
-    recognizeAsync: (InkStrokeContainer, InkRecognitionTarget) => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
+    recognizeAsync: (InkStrokeContainer, InkRecognitionTarget) => IPromiseWithIAsyncOperation[IVectorView[Any]],
     setDefaultRecognizer: InkRecognizer => Unit
   ): InkRecognizerContainer = {
     val __obj = js.Dynamic.literal(getRecognizers = js.Any.fromFunction0(getRecognizers), recognizeAsync = js.Any.fromFunction2(recognizeAsync), setDefaultRecognizer = js.Any.fromFunction1(setDefaultRecognizer))
@@ -44,9 +44,7 @@ object InkRecognizerContainer {
     
     inline def setGetRecognizers(value: () => IVectorView[InkRecognizer]): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
     
-    inline def setRecognizeAsync(
-      value: (InkStrokeContainer, InkRecognitionTarget) => IPromiseWithIAsyncOperation[IVectorView[js.Any]]
-    ): Self = StObject.set(x, "recognizeAsync", js.Any.fromFunction2(value))
+    inline def setRecognizeAsync(value: (InkStrokeContainer, InkRecognitionTarget) => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "recognizeAsync", js.Any.fromFunction2(value))
     
     inline def setSetDefaultRecognizer(value: InkRecognizer => Unit): Self = StObject.set(x, "setDefaultRecognizer", js.Any.fromFunction1(value))
   }

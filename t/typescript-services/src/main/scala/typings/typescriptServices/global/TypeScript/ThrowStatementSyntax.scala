@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.ThrowStatementSyntax")
 @js.native
-class ThrowStatementSyntax protected ()
+open class ThrowStatementSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ThrowStatementSyntax {
   def this(
@@ -23,7 +23,7 @@ class ThrowStatementSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

@@ -11,17 +11,17 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializer * / any */ @JSImport("@aws-sdk/json-builder", "JsonBuilder")
   @js.native
-  class JsonBuilder protected () extends StObject {
+  open class JsonBuilder protected () extends StObject {
     def this(base64Encoder: Encoder, utf8Decoder: Decoder) = this()
     
-    /* private */ val base64Encoder: js.Any = js.native
+    /* private */ val base64Encoder: Any = js.native
     
     def build(
-      hasOperationMemberInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializerBuildOptions */ js.Any
+      hasOperationMemberInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializerBuildOptions */ Any
     ): String = js.native
     
-    /* private */ var format: js.Any = js.native
+    /* private */ var format: Any = js.native
     
-    /* private */ val utf8Decoder: js.Any = js.native
+    /* private */ val utf8Decoder: Any = js.native
   }
 }

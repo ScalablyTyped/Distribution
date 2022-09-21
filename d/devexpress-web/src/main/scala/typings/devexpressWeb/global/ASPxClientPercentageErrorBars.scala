@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientPercentageErrorBars")
 @js.native
-class ASPxClientPercentageErrorBars ()
+open class ASPxClientPercentageErrorBars ()
   extends StObject
      with typings.devexpressWeb.ASPxClientPercentageErrorBars {
   

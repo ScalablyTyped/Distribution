@@ -10,15 +10,12 @@ Select input component for Ink
 | ------------------ | :-------------: |
 | Full name          | ink-select-input |
 | Keywords           | ink, ink-component |
-| # releases         | 10 |
-| # dependents       | 223 |
-| # downloads        | 5806803 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 452243.6666666667 |
+| # stars            | 118.0 |
 
 ## Links
-- [Homepage](https://github.com/vadimdemedes/ink-select-input#readme)
-- [Bugs](https://github.com/vadimdemedes/ink-select-input/issues)
-- [Repository](https://github.com/vadimdemedes/ink-select-input)
 - [Npm](https://www.npmjs.com/package/ink-select-input)
     
 

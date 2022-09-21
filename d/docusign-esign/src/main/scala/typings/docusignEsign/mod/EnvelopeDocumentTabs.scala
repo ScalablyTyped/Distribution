@@ -368,175 +368,175 @@ object EnvelopeDocumentTabs {
     
     inline def setApproveTabsUndefined: Self = StObject.set(x, "approveTabs", js.undefined)
     
-    inline def setApproveTabsVarargs(value: Approve*): Self = StObject.set(x, "approveTabs", js.Array(value :_*))
+    inline def setApproveTabsVarargs(value: Approve*): Self = StObject.set(x, "approveTabs", js.Array(value*))
     
     inline def setCheckboxTabs(value: js.Array[Checkbox]): Self = StObject.set(x, "checkboxTabs", value.asInstanceOf[js.Any])
     
     inline def setCheckboxTabsUndefined: Self = StObject.set(x, "checkboxTabs", js.undefined)
     
-    inline def setCheckboxTabsVarargs(value: Checkbox*): Self = StObject.set(x, "checkboxTabs", js.Array(value :_*))
+    inline def setCheckboxTabsVarargs(value: Checkbox*): Self = StObject.set(x, "checkboxTabs", js.Array(value*))
     
     inline def setCommentThreadTabs(value: js.Array[CommentThread]): Self = StObject.set(x, "commentThreadTabs", value.asInstanceOf[js.Any])
     
     inline def setCommentThreadTabsUndefined: Self = StObject.set(x, "commentThreadTabs", js.undefined)
     
-    inline def setCommentThreadTabsVarargs(value: CommentThread*): Self = StObject.set(x, "commentThreadTabs", js.Array(value :_*))
+    inline def setCommentThreadTabsVarargs(value: CommentThread*): Self = StObject.set(x, "commentThreadTabs", js.Array(value*))
     
     inline def setCompanyTabs(value: js.Array[Company]): Self = StObject.set(x, "companyTabs", value.asInstanceOf[js.Any])
     
     inline def setCompanyTabsUndefined: Self = StObject.set(x, "companyTabs", js.undefined)
     
-    inline def setCompanyTabsVarargs(value: Company*): Self = StObject.set(x, "companyTabs", js.Array(value :_*))
+    inline def setCompanyTabsVarargs(value: Company*): Self = StObject.set(x, "companyTabs", js.Array(value*))
     
     inline def setDateSignedTabs(value: js.Array[DateSigned]): Self = StObject.set(x, "dateSignedTabs", value.asInstanceOf[js.Any])
     
     inline def setDateSignedTabsUndefined: Self = StObject.set(x, "dateSignedTabs", js.undefined)
     
-    inline def setDateSignedTabsVarargs(value: DateSigned*): Self = StObject.set(x, "dateSignedTabs", js.Array(value :_*))
+    inline def setDateSignedTabsVarargs(value: DateSigned*): Self = StObject.set(x, "dateSignedTabs", js.Array(value*))
     
     inline def setDateTabs(value: js.Array[Date]): Self = StObject.set(x, "dateTabs", value.asInstanceOf[js.Any])
     
     inline def setDateTabsUndefined: Self = StObject.set(x, "dateTabs", js.undefined)
     
-    inline def setDateTabsVarargs(value: Date*): Self = StObject.set(x, "dateTabs", js.Array(value :_*))
+    inline def setDateTabsVarargs(value: Date*): Self = StObject.set(x, "dateTabs", js.Array(value*))
     
     inline def setDeclineTabs(value: js.Array[Decline]): Self = StObject.set(x, "declineTabs", value.asInstanceOf[js.Any])
     
     inline def setDeclineTabsUndefined: Self = StObject.set(x, "declineTabs", js.undefined)
     
-    inline def setDeclineTabsVarargs(value: Decline*): Self = StObject.set(x, "declineTabs", js.Array(value :_*))
+    inline def setDeclineTabsVarargs(value: Decline*): Self = StObject.set(x, "declineTabs", js.Array(value*))
     
     inline def setDrawTabs(value: js.Array[Draw]): Self = StObject.set(x, "drawTabs", value.asInstanceOf[js.Any])
     
     inline def setDrawTabsUndefined: Self = StObject.set(x, "drawTabs", js.undefined)
     
-    inline def setDrawTabsVarargs(value: Draw*): Self = StObject.set(x, "drawTabs", js.Array(value :_*))
+    inline def setDrawTabsVarargs(value: Draw*): Self = StObject.set(x, "drawTabs", js.Array(value*))
     
     inline def setEmailAddressTabs(value: js.Array[EmailAddress]): Self = StObject.set(x, "emailAddressTabs", value.asInstanceOf[js.Any])
     
     inline def setEmailAddressTabsUndefined: Self = StObject.set(x, "emailAddressTabs", js.undefined)
     
-    inline def setEmailAddressTabsVarargs(value: EmailAddress*): Self = StObject.set(x, "emailAddressTabs", js.Array(value :_*))
+    inline def setEmailAddressTabsVarargs(value: EmailAddress*): Self = StObject.set(x, "emailAddressTabs", js.Array(value*))
     
     inline def setEmailTabs(value: js.Array[Email]): Self = StObject.set(x, "emailTabs", value.asInstanceOf[js.Any])
     
     inline def setEmailTabsUndefined: Self = StObject.set(x, "emailTabs", js.undefined)
     
-    inline def setEmailTabsVarargs(value: Email*): Self = StObject.set(x, "emailTabs", js.Array(value :_*))
+    inline def setEmailTabsVarargs(value: Email*): Self = StObject.set(x, "emailTabs", js.Array(value*))
     
     inline def setEnvelopeIdTabs(value: js.Array[EnvelopeId]): Self = StObject.set(x, "envelopeIdTabs", value.asInstanceOf[js.Any])
     
     inline def setEnvelopeIdTabsUndefined: Self = StObject.set(x, "envelopeIdTabs", js.undefined)
     
-    inline def setEnvelopeIdTabsVarargs(value: EnvelopeId*): Self = StObject.set(x, "envelopeIdTabs", js.Array(value :_*))
+    inline def setEnvelopeIdTabsVarargs(value: EnvelopeId*): Self = StObject.set(x, "envelopeIdTabs", js.Array(value*))
     
     inline def setFirstNameTabs(value: js.Array[FirstName]): Self = StObject.set(x, "firstNameTabs", value.asInstanceOf[js.Any])
     
     inline def setFirstNameTabsUndefined: Self = StObject.set(x, "firstNameTabs", js.undefined)
     
-    inline def setFirstNameTabsVarargs(value: FirstName*): Self = StObject.set(x, "firstNameTabs", js.Array(value :_*))
+    inline def setFirstNameTabsVarargs(value: FirstName*): Self = StObject.set(x, "firstNameTabs", js.Array(value*))
     
     inline def setFormulaTabs(value: js.Array[FormulaTab]): Self = StObject.set(x, "formulaTabs", value.asInstanceOf[js.Any])
     
     inline def setFormulaTabsUndefined: Self = StObject.set(x, "formulaTabs", js.undefined)
     
-    inline def setFormulaTabsVarargs(value: FormulaTab*): Self = StObject.set(x, "formulaTabs", js.Array(value :_*))
+    inline def setFormulaTabsVarargs(value: FormulaTab*): Self = StObject.set(x, "formulaTabs", js.Array(value*))
     
     inline def setFullNameTabs(value: js.Array[FullName]): Self = StObject.set(x, "fullNameTabs", value.asInstanceOf[js.Any])
     
     inline def setFullNameTabsUndefined: Self = StObject.set(x, "fullNameTabs", js.undefined)
     
-    inline def setFullNameTabsVarargs(value: FullName*): Self = StObject.set(x, "fullNameTabs", js.Array(value :_*))
+    inline def setFullNameTabsVarargs(value: FullName*): Self = StObject.set(x, "fullNameTabs", js.Array(value*))
     
     inline def setInitialHereTabs(value: js.Array[InitialHere]): Self = StObject.set(x, "initialHereTabs", value.asInstanceOf[js.Any])
     
     inline def setInitialHereTabsUndefined: Self = StObject.set(x, "initialHereTabs", js.undefined)
     
-    inline def setInitialHereTabsVarargs(value: InitialHere*): Self = StObject.set(x, "initialHereTabs", js.Array(value :_*))
+    inline def setInitialHereTabsVarargs(value: InitialHere*): Self = StObject.set(x, "initialHereTabs", js.Array(value*))
     
     inline def setLastNameTabs(value: js.Array[LastName]): Self = StObject.set(x, "lastNameTabs", value.asInstanceOf[js.Any])
     
     inline def setLastNameTabsUndefined: Self = StObject.set(x, "lastNameTabs", js.undefined)
     
-    inline def setLastNameTabsVarargs(value: LastName*): Self = StObject.set(x, "lastNameTabs", js.Array(value :_*))
+    inline def setLastNameTabsVarargs(value: LastName*): Self = StObject.set(x, "lastNameTabs", js.Array(value*))
     
     inline def setListTabs(value: js.Array[List]): Self = StObject.set(x, "listTabs", value.asInstanceOf[js.Any])
     
     inline def setListTabsUndefined: Self = StObject.set(x, "listTabs", js.undefined)
     
-    inline def setListTabsVarargs(value: List*): Self = StObject.set(x, "listTabs", js.Array(value :_*))
+    inline def setListTabsVarargs(value: List*): Self = StObject.set(x, "listTabs", js.Array(value*))
     
     inline def setNotarizeTabs(value: js.Array[Notarize]): Self = StObject.set(x, "notarizeTabs", value.asInstanceOf[js.Any])
     
     inline def setNotarizeTabsUndefined: Self = StObject.set(x, "notarizeTabs", js.undefined)
     
-    inline def setNotarizeTabsVarargs(value: Notarize*): Self = StObject.set(x, "notarizeTabs", js.Array(value :_*))
+    inline def setNotarizeTabsVarargs(value: Notarize*): Self = StObject.set(x, "notarizeTabs", js.Array(value*))
     
     inline def setNoteTabs(value: js.Array[Note]): Self = StObject.set(x, "noteTabs", value.asInstanceOf[js.Any])
     
     inline def setNoteTabsUndefined: Self = StObject.set(x, "noteTabs", js.undefined)
     
-    inline def setNoteTabsVarargs(value: Note*): Self = StObject.set(x, "noteTabs", js.Array(value :_*))
+    inline def setNoteTabsVarargs(value: Note*): Self = StObject.set(x, "noteTabs", js.Array(value*))
     
     inline def setNumberTabs(value: js.Array[Number]): Self = StObject.set(x, "numberTabs", value.asInstanceOf[js.Any])
     
     inline def setNumberTabsUndefined: Self = StObject.set(x, "numberTabs", js.undefined)
     
-    inline def setNumberTabsVarargs(value: Number*): Self = StObject.set(x, "numberTabs", js.Array(value :_*))
+    inline def setNumberTabsVarargs(value: Number*): Self = StObject.set(x, "numberTabs", js.Array(value*))
     
     inline def setPolyLineOverlayTabs(value: js.Array[PolyLineOverlay]): Self = StObject.set(x, "polyLineOverlayTabs", value.asInstanceOf[js.Any])
     
     inline def setPolyLineOverlayTabsUndefined: Self = StObject.set(x, "polyLineOverlayTabs", js.undefined)
     
-    inline def setPolyLineOverlayTabsVarargs(value: PolyLineOverlay*): Self = StObject.set(x, "polyLineOverlayTabs", js.Array(value :_*))
+    inline def setPolyLineOverlayTabsVarargs(value: PolyLineOverlay*): Self = StObject.set(x, "polyLineOverlayTabs", js.Array(value*))
     
     inline def setRadioGroupTabs(value: js.Array[RadioGroup]): Self = StObject.set(x, "radioGroupTabs", value.asInstanceOf[js.Any])
     
     inline def setRadioGroupTabsUndefined: Self = StObject.set(x, "radioGroupTabs", js.undefined)
     
-    inline def setRadioGroupTabsVarargs(value: RadioGroup*): Self = StObject.set(x, "radioGroupTabs", js.Array(value :_*))
+    inline def setRadioGroupTabsVarargs(value: RadioGroup*): Self = StObject.set(x, "radioGroupTabs", js.Array(value*))
     
     inline def setSignHereTabs(value: js.Array[SignHere]): Self = StObject.set(x, "signHereTabs", value.asInstanceOf[js.Any])
     
     inline def setSignHereTabsUndefined: Self = StObject.set(x, "signHereTabs", js.undefined)
     
-    inline def setSignHereTabsVarargs(value: SignHere*): Self = StObject.set(x, "signHereTabs", js.Array(value :_*))
+    inline def setSignHereTabsVarargs(value: SignHere*): Self = StObject.set(x, "signHereTabs", js.Array(value*))
     
     inline def setSignerAttachmentTabs(value: js.Array[SignerAttachment]): Self = StObject.set(x, "signerAttachmentTabs", value.asInstanceOf[js.Any])
     
     inline def setSignerAttachmentTabsUndefined: Self = StObject.set(x, "signerAttachmentTabs", js.undefined)
     
-    inline def setSignerAttachmentTabsVarargs(value: SignerAttachment*): Self = StObject.set(x, "signerAttachmentTabs", js.Array(value :_*))
+    inline def setSignerAttachmentTabsVarargs(value: SignerAttachment*): Self = StObject.set(x, "signerAttachmentTabs", js.Array(value*))
     
     inline def setSmartSectionTabs(value: js.Array[SmartSection]): Self = StObject.set(x, "smartSectionTabs", value.asInstanceOf[js.Any])
     
     inline def setSmartSectionTabsUndefined: Self = StObject.set(x, "smartSectionTabs", js.undefined)
     
-    inline def setSmartSectionTabsVarargs(value: SmartSection*): Self = StObject.set(x, "smartSectionTabs", js.Array(value :_*))
+    inline def setSmartSectionTabsVarargs(value: SmartSection*): Self = StObject.set(x, "smartSectionTabs", js.Array(value*))
     
     inline def setSsnTabs(value: js.Array[Ssn]): Self = StObject.set(x, "ssnTabs", value.asInstanceOf[js.Any])
     
     inline def setSsnTabsUndefined: Self = StObject.set(x, "ssnTabs", js.undefined)
     
-    inline def setSsnTabsVarargs(value: Ssn*): Self = StObject.set(x, "ssnTabs", js.Array(value :_*))
+    inline def setSsnTabsVarargs(value: Ssn*): Self = StObject.set(x, "ssnTabs", js.Array(value*))
     
     inline def setTabGroups(value: js.Array[TabGroup]): Self = StObject.set(x, "tabGroups", value.asInstanceOf[js.Any])
     
     inline def setTabGroupsUndefined: Self = StObject.set(x, "tabGroups", js.undefined)
     
-    inline def setTabGroupsVarargs(value: TabGroup*): Self = StObject.set(x, "tabGroups", js.Array(value :_*))
+    inline def setTabGroupsVarargs(value: TabGroup*): Self = StObject.set(x, "tabGroups", js.Array(value*))
     
     inline def setTextTabs(value: js.Array[Text]): Self = StObject.set(x, "textTabs", value.asInstanceOf[js.Any])
     
     inline def setTextTabsUndefined: Self = StObject.set(x, "textTabs", js.undefined)
     
-    inline def setTextTabsVarargs(value: Text*): Self = StObject.set(x, "textTabs", js.Array(value :_*))
+    inline def setTextTabsVarargs(value: Text*): Self = StObject.set(x, "textTabs", js.Array(value*))
     
     inline def setTitleTabs(value: js.Array[Title]): Self = StObject.set(x, "titleTabs", value.asInstanceOf[js.Any])
     
     inline def setTitleTabsUndefined: Self = StObject.set(x, "titleTabs", js.undefined)
     
-    inline def setTitleTabsVarargs(value: Title*): Self = StObject.set(x, "titleTabs", js.Array(value :_*))
+    inline def setTitleTabsVarargs(value: Title*): Self = StObject.set(x, "titleTabs", js.Array(value*))
     
     inline def setViewTabs(
       value: js.Array[
@@ -546,12 +546,12 @@ object EnvelopeDocumentTabs {
     
     inline def setViewTabsUndefined: Self = StObject.set(x, "viewTabs", js.undefined)
     
-    inline def setViewTabsVarargs(value: (/* This tab is used with the Approve tab to handle supplemental documents. */ View)*): Self = StObject.set(x, "viewTabs", js.Array(value :_*))
+    inline def setViewTabsVarargs(value: (/* This tab is used with the Approve tab to handle supplemental documents. */ View)*): Self = StObject.set(x, "viewTabs", js.Array(value*))
     
     inline def setZipTabs(value: js.Array[Zip]): Self = StObject.set(x, "zipTabs", value.asInstanceOf[js.Any])
     
     inline def setZipTabsUndefined: Self = StObject.set(x, "zipTabs", js.undefined)
     
-    inline def setZipTabsVarargs(value: Zip*): Self = StObject.set(x, "zipTabs", js.Array(value :_*))
+    inline def setZipTabsVarargs(value: Zip*): Self = StObject.set(x, "zipTabs", js.Array(value*))
   }
 }

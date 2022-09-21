@@ -10,10 +10,10 @@ Transform an express response (or make until no good)
 | ------------------ | :-------------: |
 | Full name          | express-mung |
 | Keywords           | mung, middleware, transform, response, express |
-| # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 921398 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 144400.0 |
+| # stars            | 102.0 |
 
 ## Links
 - [Homepage](https://github.com/richardschneider/express-mung#readme)

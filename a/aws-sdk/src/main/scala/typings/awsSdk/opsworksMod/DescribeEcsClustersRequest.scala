@@ -39,7 +39,7 @@ object DescribeEcsClustersRequest {
     
     inline def setEcsClusterArnsUndefined: Self = StObject.set(x, "EcsClusterArns", js.undefined)
     
-    inline def setEcsClusterArnsVarargs(value: String*): Self = StObject.set(x, "EcsClusterArns", js.Array(value :_*))
+    inline def setEcsClusterArnsVarargs(value: String*): Self = StObject.set(x, "EcsClusterArns", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

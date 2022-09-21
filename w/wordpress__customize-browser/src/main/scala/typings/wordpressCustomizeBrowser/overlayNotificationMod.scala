@@ -10,7 +10,7 @@ object overlayNotificationMod {
   
   @JSImport("@wordpress/customize-browser/OverlayNotification", "OverlayNotification")
   @js.native
-  class OverlayNotification protected () extends Notification {
+  open class OverlayNotification protected () extends Notification {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

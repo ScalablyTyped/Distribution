@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__progress-indicator
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web interface for Progress Indicators
@@ -10,10 +10,10 @@ The Material Components for the web interface for Progress Indicators
 | ------------------ | :-------------: |
 | Full name          | @material/progress-indicator |
 | Keywords           | - |
-| # releases         | 631 |
-| # dependents       | 2 |
-| # downloads        | 794427 |
-| # stars            | 0 |
+| # releases         | 715 |
+| # dependents       | 0.0 |
+| # downloads        | 187926.33333333334 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

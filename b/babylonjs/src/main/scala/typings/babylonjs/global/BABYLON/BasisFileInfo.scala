@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BABYLON.BasisFileInfo")
 @js.native
-class BasisFileInfo ()
+open class BasisFileInfo ()
   extends StObject
      with typings.babylonjs.BABYLON.BasisFileInfo {
   

@@ -2,8 +2,8 @@ package typings.reactVirtualizedSelect
 
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
 import typings.react.mod.PureComponent
-import typings.react.mod.StatelessComponent
 import typings.react.mod.global.JSX.Element
 import typings.reactVirtualized.esListMod.ListProps
 import typings.reactVirtualizedSelect.anon.Async
@@ -17,8 +17,8 @@ object mod {
   
   @JSImport("react-virtualized-select", JSImport.Default)
   @js.native
-  class default[TValue] ()
-    extends PureComponent[VirtualizedSelectProps[TValue], js.Object, js.Any]
+  open class default[TValue] ()
+    extends PureComponent[VirtualizedSelectProps[TValue], js.Object, Any]
   
   trait AdditionalVirtualizedSelectProps[TValue] extends StObject {
     
@@ -28,7 +28,7 @@ object mod {
     
     var optionRenderer: js.UndefOr[js.Function1[/* options */ VirtualizedOptionRenderOptions[TValue], Element]] = js.undefined
     
-    var selectComponent: js.UndefOr[(ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]] = js.undefined
+    var selectComponent: js.UndefOr[(ComponentClass[Any, ComponentState]) | FunctionComponent[Any]] = js.undefined
   }
   object AdditionalVirtualizedSelectProps {
     
@@ -53,7 +53,7 @@ object mod {
       
       inline def setOptionRendererUndefined: Self = StObject.set(x, "optionRenderer", js.undefined)
       
-      inline def setSelectComponent(value: (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "selectComponent", value.asInstanceOf[js.Any])
+      inline def setSelectComponent(value: (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]): Self = StObject.set(x, "selectComponent", value.asInstanceOf[js.Any])
       
       inline def setSelectComponentUndefined: Self = StObject.set(x, "selectComponent", js.undefined)
     }
@@ -120,7 +120,7 @@ object mod {
       
       inline def setOptions(value: js.Array[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSelectValue(value: T => Unit): Self = StObject.set(x, "selectValue", js.Any.fromFunction1(value))
       
@@ -128,11 +128,11 @@ object mod {
       
       inline def setValueArray(value: js.Array[T]): Self = StObject.set(x, "valueArray", value.asInstanceOf[js.Any])
       
-      inline def setValueArrayVarargs(value: T*): Self = StObject.set(x, "valueArray", js.Array(value :_*))
+      inline def setValueArrayVarargs(value: T*): Self = StObject.set(x, "valueArray", js.Array(value*))
     }
   }
   
-  type VirtualizedSelect[TValue] = PureComponent[VirtualizedSelectProps[TValue], js.Object, js.Any]
+  type VirtualizedSelect[TValue] = PureComponent[VirtualizedSelectProps[TValue], js.Object, Any]
   
-  type VirtualizedSelectProps[TValue] = ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactCreatableSelectProps<TValue> */ js.Any) & AdditionalVirtualizedSelectProps[TValue] & Async) | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactCreatableSelectProps<TValue> */ js.Any) & AdditionalVirtualizedSelectProps[TValue])
+  type VirtualizedSelectProps[TValue] = ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactCreatableSelectProps<TValue> */ Any) & AdditionalVirtualizedSelectProps[TValue] & Async) | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactCreatableSelectProps<TValue> */ Any) & AdditionalVirtualizedSelectProps[TValue])
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_webfonts
 
-Typings are for version 1.0.20201015
+Typings are for version 1.0.20220613
 
 ## Library description:
 TypeScript typings for Web Fonts Developer API v1
@@ -10,10 +10,10 @@ TypeScript typings for Web Fonts Developer API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.webfonts |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 738 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 619.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

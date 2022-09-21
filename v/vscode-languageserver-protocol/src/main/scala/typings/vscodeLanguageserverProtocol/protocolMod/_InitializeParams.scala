@@ -1,10 +1,13 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
 import typings.vscodeLanguageserverProtocol.anon.Name
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.compact
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.messages
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.off
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.verbose
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
+import typings.vscodeLanguageserverTypes.mod.LSPAny
+import typings.vscodeLanguageserverTypes.mod.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,13 +31,28 @@ trait _InitializeParams
   /**
     * User provided initialization options.
     */
-  var initializationOptions: js.UndefOr[js.Any] = js.undefined
+  var initializationOptions: js.UndefOr[LSPAny] = js.undefined
+  
+  /**
+    * The locale the client is currently showing the user interface
+    * in. This must not necessarily be the locale of the operating
+    * system.
+    *
+    * Uses IETF language tags as the value's syntax
+    * (See https://en.wikipedia.org/wiki/IETF_language_tag)
+    *
+    * @since 3.16.0
+    */
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The process Id of the parent process that started
     * the server.
+    *
+    * Is `null` if the process has not been started by another process.
+    * If the parent process is not alive then the server should exit.
     */
-  var processId: Double | Null
+  var processId: integer | Null
   
   /**
     * The rootPath of the workspace. Is null
@@ -56,7 +74,7 @@ trait _InitializeParams
   /**
     * The initial trace setting. If omitted trace is disabled ('off').
     */
-  var trace: js.UndefOr[off | messages | verbose] = js.undefined
+  var trace: js.UndefOr[off | messages | compact | verbose] = js.undefined
 }
 object _InitializeParams {
   
@@ -73,11 +91,15 @@ object _InitializeParams {
     
     inline def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
     
-    inline def setInitializationOptions(value: js.Any): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
+    inline def setInitializationOptions(value: LSPAny): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
     
     inline def setInitializationOptionsUndefined: Self = StObject.set(x, "initializationOptions", js.undefined)
     
-    inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setProcessId(value: integer): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
     inline def setProcessIdNull: Self = StObject.set(x, "processId", null)
     
@@ -91,7 +113,7 @@ object _InitializeParams {
     
     inline def setRootUriNull: Self = StObject.set(x, "rootUri", null)
     
-    inline def setTrace(value: off | messages | verbose): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: off | messages | compact | verbose): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
   }

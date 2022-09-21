@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectVersion extends StObject {
   
   /**
+    * The algorithm that was used to create a checksum of the object.
+    */
+  var ChecksumAlgorithm: js.UndefOr[ChecksumAlgorithmList] = js.undefined
+  
+  /**
     * The entity tag is an MD5 hash of that version of the object.
     */
   var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.undefined
@@ -24,7 +29,7 @@ trait ObjectVersion extends StObject {
   /**
     * Date and time the object was last modified.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies the owner of the object.
@@ -55,6 +60,12 @@ object ObjectVersion {
   
   extension [Self <: ObjectVersion](x: Self) {
     
+    inline def setChecksumAlgorithm(value: ChecksumAlgorithmList): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
+    
+    inline def setChecksumAlgorithmVarargs(value: ChecksumAlgorithm*): Self = StObject.set(x, "ChecksumAlgorithm", js.Array(value*))
+    
     inline def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
@@ -67,7 +78,7 @@ object ObjectVersion {
     
     inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    inline def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     

@@ -10,106 +10,72 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("jsan", "parse")
-  @js.native
-  def parse: js.Function2[
-    /* text */ String, 
-    /* reviver */ js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]], 
-    js.Any
-  ] = js.native
-  inline def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def parse_=(
-    x: js.Function2[
-      /* text */ String, 
-      /* reviver */ js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]], 
-      js.Any
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
+  inline def parse(text: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify: js.Function4[
-    /* value */ js.Any, 
-    /* replacer */ js.UndefOr[
-      js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null]
-    ], 
-    /* space */ js.UndefOr[String | Double], 
-    /* _options */ js.UndefOr[Options | Boolean], 
-    String
-  ] = js.native
-  inline def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null]
+    value: Any,
+    replacer: js.Function2[/* key */ String, /* value */ Any, Any | (js.Array[Double | String]) | Null]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    value: Any,
+    replacer: js.Function2[/* key */ String, /* value */ Any, Any | (js.Array[Double | String]) | Null],
     space: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    value: Any,
+    replacer: js.Function2[/* key */ String, /* value */ Any, Any | (js.Array[Double | String]) | Null],
     space: String,
     _options: Boolean
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    value: Any,
+    replacer: js.Function2[/* key */ String, /* value */ Any, Any | (js.Array[Double | String]) | Null],
     space: String,
     _options: Options
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    value: Any,
+    replacer: js.Function2[/* key */ String, /* value */ Any, Any | (js.Array[Double | String]) | Null],
     space: Double
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    value: Any,
+    replacer: js.Function2[/* key */ String, /* value */ Any, Any | (js.Array[Double | String]) | Null],
     space: Double,
     _options: Boolean
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    value: Any,
+    replacer: js.Function2[/* key */ String, /* value */ Any, Any | (js.Array[Double | String]) | Null],
     space: Double,
     _options: Options
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    value: Any,
+    replacer: js.Function2[/* key */ String, /* value */ Any, Any | (js.Array[Double | String]) | Null],
     space: Unit,
     _options: Boolean
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    value: Any,
+    replacer: js.Function2[/* key */ String, /* value */ Any, Any | (js.Array[Double | String]) | Null],
     space: Unit,
     _options: Options
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: String, _options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: String, _options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: Double, _options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: Double, _options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: Unit, _options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: Unit, _options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify_=(
-    x: js.Function4[
-      /* value */ js.Any, 
-      /* replacer */ js.UndefOr[
-        js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null]
-      ], 
-      /* space */ js.UndefOr[String | Double], 
-      /* _options */ js.UndefOr[Options | Boolean], 
-      String
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
+  inline def stringify(value: Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: String, _options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: String, _options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: Double, _options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: Double, _options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: Unit, _options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: Unit, _options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options extends StObject {
+    
+    var circular: js.UndefOr[Any] = js.undefined
     
     var date: js.UndefOr[Boolean] = js.undefined
     
@@ -141,6 +107,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setCircular(value: Any): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
+      
+      inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
       
       inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

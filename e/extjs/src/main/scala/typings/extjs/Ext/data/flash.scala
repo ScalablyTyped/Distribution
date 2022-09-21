@@ -21,7 +21,7 @@ object flash {
     /** [Method] As in XMLHttpRequest
       * @param header Object
       */
-    var getResponseHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getResponseHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] As in XMLHttpRequest  */
     var onreadystatechange: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -35,11 +35,11 @@ object flash {
       */
     var open: js.UndefOr[
         js.Function5[
-          /* method */ js.UndefOr[js.Any], 
-          /* url */ js.UndefOr[js.Any], 
-          /* async */ js.UndefOr[js.Any], 
-          /* user */ js.UndefOr[js.Any], 
-          /* password */ js.UndefOr[js.Any], 
+          /* method */ js.UndefOr[Any], 
+          /* url */ js.UndefOr[Any], 
+          /* async */ js.UndefOr[Any], 
+          /* user */ js.UndefOr[Any], 
+          /* password */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -47,7 +47,7 @@ object flash {
     /** [Method] As in XMLHttpRequest
       * @param mimeType Object
       */
-    var overrideMimeType: js.UndefOr[js.Function1[/* mimeType */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var overrideMimeType: js.UndefOr[js.Function1[/* mimeType */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Property] (number) */
     var readyState: js.UndefOr[Double] = js.undefined
@@ -64,9 +64,7 @@ object flash {
       * @param header Object
       * @param value Object
       */
-    var setRequestHeader: js.UndefOr[
-        js.Function2[/* header */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var setRequestHeader: js.UndefOr[js.Function2[/* header */ js.UndefOr[Any], /* value */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Property] (number) */
     var status: js.UndefOr[Double] = js.undefined
@@ -91,7 +89,7 @@ object flash {
       
       inline def setGetAllResponseHeadersUndefined: Self = StObject.set(x, "getAllResponseHeaders", js.undefined)
       
-      inline def setGetResponseHeader(value: /* header */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
+      inline def setGetResponseHeader(value: /* header */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
       
       inline def setGetResponseHeaderUndefined: Self = StObject.set(x, "getResponseHeader", js.undefined)
       
@@ -100,12 +98,12 @@ object flash {
       inline def setOnreadystatechangeUndefined: Self = StObject.set(x, "onreadystatechange", js.undefined)
       
       inline def setOpen(
-        value: (/* method */ js.UndefOr[js.Any], /* url */ js.UndefOr[js.Any], /* async */ js.UndefOr[js.Any], /* user */ js.UndefOr[js.Any], /* password */ js.UndefOr[js.Any]) => Unit
+        value: (/* method */ js.UndefOr[Any], /* url */ js.UndefOr[Any], /* async */ js.UndefOr[Any], /* user */ js.UndefOr[Any], /* password */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "open", js.Any.fromFunction5(value))
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      inline def setOverrideMimeType(value: /* mimeType */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "overrideMimeType", js.Any.fromFunction1(value))
+      inline def setOverrideMimeType(value: /* mimeType */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "overrideMimeType", js.Any.fromFunction1(value))
       
       inline def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
       
@@ -121,7 +119,7 @@ object flash {
       
       inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
       
-      inline def setSetRequestHeader(value: (/* header */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
+      inline def setSetRequestHeader(value: (/* header */ js.UndefOr[Any], /* value */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
       
       inline def setSetRequestHeaderUndefined: Self = StObject.set(x, "setRequestHeader", js.undefined)
       

@@ -85,7 +85,7 @@ trait OperationAttributes extends StObject {
   
   var `job-mandatory-attributes`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
     ]
   ] = js.undefined
   
@@ -165,7 +165,7 @@ trait OperationAttributes extends StObject {
   
   var `requested-attributes`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ Any
     ]
   ] = js.undefined
   
@@ -238,7 +238,7 @@ object OperationAttributes {
     
     inline def `setCompression-acceptedUndefined`: Self = StObject.set(x, "compression-accepted", js.undefined)
     
-    inline def `setCompression-acceptedVarargs`(value: Compression*): Self = StObject.set(x, "compression-accepted", js.Array(value :_*))
+    inline def `setCompression-acceptedVarargs`(value: Compression*): Self = StObject.set(x, "compression-accepted", js.Array(value*))
     
     inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
@@ -246,7 +246,7 @@ object OperationAttributes {
     
     inline def `setDestination-accessesUndefined`: Self = StObject.set(x, "destination-accesses", js.undefined)
     
-    inline def `setDestination-accessesVarargs`(value: DestionationAccesses*): Self = StObject.set(x, "destination-accesses", js.Array(value :_*))
+    inline def `setDestination-accessesVarargs`(value: DestionationAccesses*): Self = StObject.set(x, "destination-accesses", js.Array(value*))
     
     inline def `setDetailed-status-message`(value: String): Self = StObject.set(x, "detailed-status-message", value.asInstanceOf[js.Any])
     
@@ -282,7 +282,7 @@ object OperationAttributes {
     
     inline def `setDocument-format-acceptedUndefined`: Self = StObject.set(x, "document-format-accepted", js.undefined)
     
-    inline def `setDocument-format-acceptedVarargs`(value: MimeMediaType*): Self = StObject.set(x, "document-format-accepted", js.Array(value :_*))
+    inline def `setDocument-format-acceptedVarargs`(value: MimeMediaType*): Self = StObject.set(x, "document-format-accepted", js.Array(value*))
     
     inline def `setDocument-format-details`(value: DocumentFormatDetails): Self = StObject.set(x, "document-format-details", value.asInstanceOf[js.Any])
     
@@ -298,7 +298,7 @@ object OperationAttributes {
     
     inline def `setDocument-metadataUndefined`: Self = StObject.set(x, "document-metadata", js.undefined)
     
-    inline def `setDocument-metadataVarargs`(value: String*): Self = StObject.set(x, "document-metadata", js.Array(value :_*))
+    inline def `setDocument-metadataVarargs`(value: String*): Self = StObject.set(x, "document-metadata", js.Array(value*))
     
     inline def `setDocument-name`(value: String): Self = StObject.set(x, "document-name", value.asInstanceOf[js.Any])
     
@@ -336,7 +336,7 @@ object OperationAttributes {
     
     inline def `setIdentify-actionsUndefined`: Self = StObject.set(x, "identify-actions", js.undefined)
     
-    inline def `setIdentify-actionsVarargs`(value: IdentifyActions*): Self = StObject.set(x, "identify-actions", js.Array(value :_*))
+    inline def `setIdentify-actionsVarargs`(value: IdentifyActions*): Self = StObject.set(x, "identify-actions", js.Array(value*))
     
     inline def `setInput-attributes`(value: InputAttributes): Self = StObject.set(x, "input-attributes", value.asInstanceOf[js.Any])
     
@@ -366,7 +366,7 @@ object OperationAttributes {
     
     inline def `setJob-idsUndefined`: Self = StObject.set(x, "job-ids", js.undefined)
     
-    inline def `setJob-idsVarargs`(value: Double*): Self = StObject.set(x, "job-ids", js.Array(value :_*))
+    inline def `setJob-idsVarargs`(value: Double*): Self = StObject.set(x, "job-ids", js.Array(value*))
     
     inline def `setJob-impressions`(value: Double): Self = StObject.set(x, "job-impressions", value.asInstanceOf[js.Any])
     
@@ -386,13 +386,13 @@ object OperationAttributes {
     
     inline def `setJob-mandatory-attributes`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
         ]
     ): Self = StObject.set(x, "job-mandatory-attributes", value.asInstanceOf[js.Any])
     
     inline def `setJob-mandatory-attributesUndefined`: Self = StObject.set(x, "job-mandatory-attributes", js.undefined)
     
-    inline def `setJob-mandatory-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any)*): Self = StObject.set(x, "job-mandatory-attributes", js.Array(value :_*))
+    inline def `setJob-mandatory-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any)*): Self = StObject.set(x, "job-mandatory-attributes", js.Array(value*))
     
     inline def `setJob-media-sheets`(value: Double): Self = StObject.set(x, "job-media-sheets", value.asInstanceOf[js.Any])
     
@@ -436,7 +436,7 @@ object OperationAttributes {
     
     inline def `setJob-state-reasonsUndefined`: Self = StObject.set(x, "job-state-reasons", js.undefined)
     
-    inline def `setJob-state-reasonsVarargs`(value: JobStateReasons*): Self = StObject.set(x, "job-state-reasons", js.Array(value :_*))
+    inline def `setJob-state-reasonsVarargs`(value: JobStateReasons*): Self = StObject.set(x, "job-state-reasons", js.Array(value*))
     
     inline def `setJob-stateUndefined`: Self = StObject.set(x, "job-state", js.undefined)
     
@@ -468,7 +468,7 @@ object OperationAttributes {
     
     inline def `setNotify-printer-idsUndefined`: Self = StObject.set(x, "notify-printer-ids", js.undefined)
     
-    inline def `setNotify-printer-idsVarargs`(value: Double*): Self = StObject.set(x, "notify-printer-ids", js.Array(value :_*))
+    inline def `setNotify-printer-idsVarargs`(value: Double*): Self = StObject.set(x, "notify-printer-ids", js.Array(value*))
     
     inline def `setNotify-resource-id`(value: Double): Self = StObject.set(x, "notify-resource-id", value.asInstanceOf[js.Any])
     
@@ -478,13 +478,13 @@ object OperationAttributes {
     
     inline def `setNotify-sequence-numbersUndefined`: Self = StObject.set(x, "notify-sequence-numbers", js.undefined)
     
-    inline def `setNotify-sequence-numbersVarargs`(value: Double*): Self = StObject.set(x, "notify-sequence-numbers", js.Array(value :_*))
+    inline def `setNotify-sequence-numbersVarargs`(value: Double*): Self = StObject.set(x, "notify-sequence-numbers", js.Array(value*))
     
     inline def `setNotify-subscription-ids`(value: js.Array[Double]): Self = StObject.set(x, "notify-subscription-ids", value.asInstanceOf[js.Any])
     
     inline def `setNotify-subscription-idsUndefined`: Self = StObject.set(x, "notify-subscription-ids", js.undefined)
     
-    inline def `setNotify-subscription-idsVarargs`(value: Double*): Self = StObject.set(x, "notify-subscription-ids", js.Array(value :_*))
+    inline def `setNotify-subscription-idsVarargs`(value: Double*): Self = StObject.set(x, "notify-subscription-ids", js.Array(value*))
     
     inline def `setNotify-wait`(value: Boolean): Self = StObject.set(x, "notify-wait", value.asInstanceOf[js.Any])
     
@@ -502,7 +502,7 @@ object OperationAttributes {
     
     inline def `setOutput-device-job-statesUndefined`: Self = StObject.set(x, "output-device-job-states", js.undefined)
     
-    inline def `setOutput-device-job-statesVarargs`(value: String*): Self = StObject.set(x, "output-device-job-states", js.Array(value :_*))
+    inline def `setOutput-device-job-statesVarargs`(value: String*): Self = StObject.set(x, "output-device-job-states", js.Array(value*))
     
     inline def `setOutput-device-uuid`(value: String): Self = StObject.set(x, "output-device-uuid", value.asInstanceOf[js.Any])
     
@@ -524,7 +524,7 @@ object OperationAttributes {
     
     inline def `setPrinter-idsUndefined`: Self = StObject.set(x, "printer-ids", js.undefined)
     
-    inline def `setPrinter-idsVarargs`(value: Double*): Self = StObject.set(x, "printer-ids", js.Array(value :_*))
+    inline def `setPrinter-idsVarargs`(value: Double*): Self = StObject.set(x, "printer-ids", js.Array(value*))
     
     inline def `setPrinter-location`(value: String): Self = StObject.set(x, "printer-location", value.asInstanceOf[js.Any])
     
@@ -538,7 +538,7 @@ object OperationAttributes {
     
     inline def `setPrinter-service-typeUndefined`: Self = StObject.set(x, "printer-service-type", js.undefined)
     
-    inline def `setPrinter-service-typeVarargs`(value: PrinterServiceType*): Self = StObject.set(x, "printer-service-type", js.Array(value :_*))
+    inline def `setPrinter-service-typeVarargs`(value: PrinterServiceType*): Self = StObject.set(x, "printer-service-type", js.Array(value*))
     
     inline def `setPrinter-up-time`(value: Double): Self = StObject.set(x, "printer-up-time", value.asInstanceOf[js.Any])
     
@@ -552,7 +552,7 @@ object OperationAttributes {
     
     inline def `setPrinter-xri-requestedUndefined`: Self = StObject.set(x, "printer-xri-requested", js.undefined)
     
-    inline def `setPrinter-xri-requestedVarargs`(value: PrinterXri*): Self = StObject.set(x, "printer-xri-requested", js.Array(value :_*))
+    inline def `setPrinter-xri-requestedVarargs`(value: PrinterXri*): Self = StObject.set(x, "printer-xri-requested", js.Array(value*))
     
     inline def `setProfile-uri-actual`(value: String): Self = StObject.set(x, "profile-uri-actual", value.asInstanceOf[js.Any])
     
@@ -560,15 +560,13 @@ object OperationAttributes {
     
     inline def `setRequested-attributes`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ Any
         ]
     ): Self = StObject.set(x, "requested-attributes", value.asInstanceOf[js.Any])
     
     inline def `setRequested-attributesUndefined`: Self = StObject.set(x, "requested-attributes", js.undefined)
     
-    inline def `setRequested-attributesVarargs`(
-      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ js.Any)*
-    ): Self = StObject.set(x, "requested-attributes", js.Array(value :_*))
+    inline def `setRequested-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ Any)*): Self = StObject.set(x, "requested-attributes", js.Array(value*))
     
     inline def `setRequesting-user-name`(value: String): Self = StObject.set(x, "requesting-user-name", value.asInstanceOf[js.Any])
     
@@ -584,7 +582,7 @@ object OperationAttributes {
     
     inline def `setResource-format-acceptedUndefined`: Self = StObject.set(x, "resource-format-accepted", js.undefined)
     
-    inline def `setResource-format-acceptedVarargs`(value: MimeMediaType*): Self = StObject.set(x, "resource-format-accepted", js.Array(value :_*))
+    inline def `setResource-format-acceptedVarargs`(value: MimeMediaType*): Self = StObject.set(x, "resource-format-accepted", js.Array(value*))
     
     inline def `setResource-formatUndefined`: Self = StObject.set(x, "resource-format", js.undefined)
     
@@ -592,7 +590,7 @@ object OperationAttributes {
     
     inline def `setResource-formatsUndefined`: Self = StObject.set(x, "resource-formats", js.undefined)
     
-    inline def `setResource-formatsVarargs`(value: MimeMediaType*): Self = StObject.set(x, "resource-formats", js.Array(value :_*))
+    inline def `setResource-formatsVarargs`(value: MimeMediaType*): Self = StObject.set(x, "resource-formats", js.Array(value*))
     
     inline def `setResource-id`(value: Double): Self = StObject.set(x, "resource-id", value.asInstanceOf[js.Any])
     
@@ -602,7 +600,7 @@ object OperationAttributes {
     
     inline def `setResource-idsUndefined`: Self = StObject.set(x, "resource-ids", js.undefined)
     
-    inline def `setResource-idsVarargs`(value: Double*): Self = StObject.set(x, "resource-ids", js.Array(value :_*))
+    inline def `setResource-idsVarargs`(value: Double*): Self = StObject.set(x, "resource-ids", js.Array(value*))
     
     inline def `setResource-k-octets`(value: Double): Self = StObject.set(x, "resource-k-octets", value.asInstanceOf[js.Any])
     
@@ -620,13 +618,13 @@ object OperationAttributes {
     
     inline def `setResource-signatureUndefined`: Self = StObject.set(x, "resource-signature", js.undefined)
     
-    inline def `setResource-signatureVarargs`(value: String*): Self = StObject.set(x, "resource-signature", js.Array(value :_*))
+    inline def `setResource-signatureVarargs`(value: String*): Self = StObject.set(x, "resource-signature", js.Array(value*))
     
     inline def `setResource-states`(value: js.Array[ResourceState]): Self = StObject.set(x, "resource-states", value.asInstanceOf[js.Any])
     
     inline def `setResource-statesUndefined`: Self = StObject.set(x, "resource-states", js.undefined)
     
-    inline def `setResource-statesVarargs`(value: ResourceState*): Self = StObject.set(x, "resource-states", js.Array(value :_*))
+    inline def `setResource-statesVarargs`(value: ResourceState*): Self = StObject.set(x, "resource-states", js.Array(value*))
     
     inline def `setResource-string-version`(value: String): Self = StObject.set(x, "resource-string-version", value.asInstanceOf[js.Any])
     
@@ -640,7 +638,7 @@ object OperationAttributes {
     
     inline def `setResource-typesUndefined`: Self = StObject.set(x, "resource-types", js.undefined)
     
-    inline def `setResource-typesVarargs`(value: ResourceType*): Self = StObject.set(x, "resource-types", js.Array(value :_*))
+    inline def `setResource-typesVarargs`(value: ResourceType*): Self = StObject.set(x, "resource-types", js.Array(value*))
     
     inline def `setResource-version`(value: String): Self = StObject.set(x, "resource-version", value.asInstanceOf[js.Any])
     

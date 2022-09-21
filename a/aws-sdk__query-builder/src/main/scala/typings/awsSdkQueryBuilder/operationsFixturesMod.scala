@@ -8,5 +8,5 @@ object operationsFixturesMod {
   
   @JSImport("@aws-sdk/query-builder/build/operations.fixtures", "minimalOperation")
   @js.native
-  val minimalOperation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperationModel */ js.Any = js.native
+  val minimalOperation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperationModel */ Any = js.native
 }

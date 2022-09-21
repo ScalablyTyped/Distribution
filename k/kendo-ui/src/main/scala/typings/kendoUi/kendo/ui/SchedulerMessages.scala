@@ -38,7 +38,11 @@ trait SchedulerMessages extends StObject {
   
   var recurrenceMessages: js.UndefOr[SchedulerMessagesRecurrenceMessages] = js.undefined
   
+  var refresh: js.UndefOr[String] = js.undefined
+  
   var save: js.UndefOr[String] = js.undefined
+  
+  var selectView: js.UndefOr[String] = js.undefined
   
   var showFullDay: js.UndefOr[String] = js.undefined
   
@@ -123,9 +127,17 @@ object SchedulerMessages {
     
     inline def setRecurrenceMessagesUndefined: Self = StObject.set(x, "recurrenceMessages", js.undefined)
     
+    inline def setRefresh(value: String): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    
     inline def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    
+    inline def setSelectView(value: String): Self = StObject.set(x, "selectView", value.asInstanceOf[js.Any])
+    
+    inline def setSelectViewUndefined: Self = StObject.set(x, "selectView", js.undefined)
     
     inline def setShowFullDay(value: String): Self = StObject.set(x, "showFullDay", value.asInstanceOf[js.Any])
     

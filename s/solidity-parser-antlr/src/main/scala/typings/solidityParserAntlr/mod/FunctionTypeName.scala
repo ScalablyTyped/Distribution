@@ -38,11 +38,11 @@ object FunctionTypeName {
     
     inline def setParameterTypes(value: js.Array[TypeName]): Self = StObject.set(x, "parameterTypes", value.asInstanceOf[js.Any])
     
-    inline def setParameterTypesVarargs(value: TypeName*): Self = StObject.set(x, "parameterTypes", js.Array(value :_*))
+    inline def setParameterTypesVarargs(value: TypeName*): Self = StObject.set(x, "parameterTypes", js.Array(value*))
     
     inline def setReturnTypes(value: js.Array[TypeName]): Self = StObject.set(x, "returnTypes", value.asInstanceOf[js.Any])
     
-    inline def setReturnTypesVarargs(value: TypeName*): Self = StObject.set(x, "returnTypes", js.Array(value :_*))
+    inline def setReturnTypesVarargs(value: TypeName*): Self = StObject.set(x, "returnTypes", js.Array(value*))
     
     inline def setStateMutability(value: String): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
     

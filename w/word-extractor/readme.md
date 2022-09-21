@@ -1,7 +1,7 @@
 
 # Scala.js typings for word-extractor
 
-Typings are for version 0.3
+Typings are for version 1.0
 
 ## Library description:
 Node.js package to read Word .doc files
@@ -10,10 +10,10 @@ Node.js package to read Word .doc files
 | ------------------ | :-------------: |
 | Full name          | word-extractor |
 | Keywords           | word |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 27217 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 24403.666666666668 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/morungos/node-word-extractor)

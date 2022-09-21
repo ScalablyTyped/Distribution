@@ -24,6 +24,6 @@ object DescribeConditionalForwardersResult {
     
     inline def setConditionalForwardersUndefined: Self = StObject.set(x, "ConditionalForwarders", js.undefined)
     
-    inline def setConditionalForwardersVarargs(value: ConditionalForwarder*): Self = StObject.set(x, "ConditionalForwarders", js.Array(value :_*))
+    inline def setConditionalForwardersVarargs(value: ConditionalForwarder*): Self = StObject.set(x, "ConditionalForwarders", js.Array(value*))
   }
 }

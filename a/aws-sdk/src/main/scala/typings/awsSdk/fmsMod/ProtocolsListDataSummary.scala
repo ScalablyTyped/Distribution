@@ -22,7 +22,7 @@ trait ProtocolsListDataSummary extends StObject {
   var ListName: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * An array of protocols in the AWS Firewall Manager protocols list.
+    * An array of protocols in the Firewall Manager protocols list.
     */
   var ProtocolsList: js.UndefOr[typings.awsSdk.fmsMod.ProtocolsList] = js.undefined
 }
@@ -51,6 +51,6 @@ object ProtocolsListDataSummary {
     
     inline def setProtocolsListUndefined: Self = StObject.set(x, "ProtocolsList", js.undefined)
     
-    inline def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value :_*))
+    inline def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value*))
   }
 }

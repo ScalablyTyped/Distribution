@@ -7,19 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDashboardEmbedUrlRequest extends StObject {
   
   /**
-    * The ID for the AWS account that contains the dashboard that you're embedding.
+    * A list of one or more dashboard IDs that you want anonymous users to have tempporary access to. Currently, the IdentityType parameter must be set to ANONYMOUS because other identity types authenticate as Amazon QuickSight or IAM users. For example, if you set "--dashboard-id dash_id1 --dashboard-id dash_id2 dash_id3 identity-type ANONYMOUS", the session can access all three dashboards.
+    */
+  var AdditionalDashboardIds: js.UndefOr[AdditionalDashboardIdList] = js.undefined
+  
+  /**
+    * The ID for the Amazon Web Services account that contains the dashboard that you're embedding.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * The ID for the dashboard, also added to the IAM policy.
+    * The ID for the dashboard, also added to the Identity and Access Management (IAM) policy.
     */
   var DashboardId: RestrictiveResourceId
   
   /**
     * The authentication method that the user uses to sign in.
     */
-  var IdentityType: typings.awsSdk.quicksightMod.IdentityType
+  var IdentityType: EmbeddingIdentityType
+  
+  /**
+    * The Amazon QuickSight namespace that contains the dashboard IDs in this request. If you're not using a custom namespace, set Namespace = default.
+    */
+  var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.undefined
   
   /**
     * Remove the reset button on the embedded dashboard. The default is FALSE, which enables the reset button.
@@ -32,7 +42,7 @@ trait GetDashboardEmbedUrlRequest extends StObject {
   var SessionLifetimeInMinutes: js.UndefOr[typings.awsSdk.quicksightMod.SessionLifetimeInMinutes] = js.undefined
   
   /**
-    * Adds persistence of state for the user session in an embedded dashboard. Persistence applies to the sheet and the parameter settings. These are control settings that the dashboard subscriber (QuickSight reader) chooses while viewing the dashboard. If this is set to TRUE, the settings are the same when the the subscriber reopens the same dashboard URL. The state is stored in QuickSight, not in a browser cookie. If this is set to FALSE, the state of the user session is not persisted. The default is FALSE.
+    * Adds persistence of state for the user session in an embedded dashboard. Persistence applies to the sheet and the parameter settings. These are control settings that the dashboard subscriber (Amazon QuickSight reader) chooses while viewing the dashboard. If this is set to TRUE, the settings are the same when the subscriber reopens the same dashboard URL. The state is stored in Amazon QuickSight, not in a browser cookie. If this is set to FALSE, the state of the user session is not persisted. The default is FALSE.
     */
   var StatePersistenceEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -48,18 +58,32 @@ trait GetDashboardEmbedUrlRequest extends StObject {
 }
 object GetDashboardEmbedUrlRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId, IdentityType: IdentityType): GetDashboardEmbedUrlRequest = {
+  inline def apply(
+    AwsAccountId: AwsAccountId,
+    DashboardId: RestrictiveResourceId,
+    IdentityType: EmbeddingIdentityType
+  ): GetDashboardEmbedUrlRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], IdentityType = IdentityType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDashboardEmbedUrlRequest]
   }
   
   extension [Self <: GetDashboardEmbedUrlRequest](x: Self) {
     
+    inline def setAdditionalDashboardIds(value: AdditionalDashboardIdList): Self = StObject.set(x, "AdditionalDashboardIds", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalDashboardIdsUndefined: Self = StObject.set(x, "AdditionalDashboardIds", js.undefined)
+    
+    inline def setAdditionalDashboardIdsVarargs(value: RestrictiveResourceId*): Self = StObject.set(x, "AdditionalDashboardIds", js.Array(value*))
+    
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
-    inline def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
+    inline def setIdentityType(value: EmbeddingIdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
+    
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
     inline def setResetDisabled(value: Boolean): Self = StObject.set(x, "ResetDisabled", value.asInstanceOf[js.Any])
     

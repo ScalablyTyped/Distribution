@@ -9,7 +9,7 @@ trait DatabasesListResponse extends StObject {
   /** List of database resources in the instance. */
   var items: js.UndefOr[js.Array[Database]] = js.undefined
   
-  /** This is always *sql#databasesList*. */
+  /** This is always `sql#databasesList`. */
   var kind: js.UndefOr[String] = js.undefined
 }
 object DatabasesListResponse {
@@ -25,7 +25,7 @@ object DatabasesListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Database*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Database*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

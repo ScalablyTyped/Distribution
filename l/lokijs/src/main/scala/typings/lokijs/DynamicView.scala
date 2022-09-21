@@ -21,8 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * mydv.applyFind({ 'doors' : 4 });
   * mydv.applyWhere(function(obj) { return obj.name === 'Toyota'; });
   * var results = mydv.data();
-  *
-  * @implements LokiEventEmitter
   */
 @js.native
 trait DynamicView[E /* <: js.Object */]
@@ -64,9 +62,9 @@ trait DynamicView[E /* <: js.Object */]
     * @param [uid] - Optional: The unique ID of this filter, to reference it in the future.
     * @returns this DynamicView object, for further chain ops.
     */
-  def applyFind(query: js.Any): this.type = js.native
-  def applyFind(query: js.Any, uid: String): this.type = js.native
-  def applyFind(query: js.Any, uid: Double): this.type = js.native
+  def applyFind(query: Any): this.type = js.native
+  def applyFind(query: Any, uid: String): this.type = js.native
+  def applyFind(query: Any, uid: Double): this.type = js.native
   
   /**
     * applySimpleSort() - Used to specify a property used for view translation.
@@ -121,9 +119,9 @@ trait DynamicView[E /* <: js.Object */]
     * @param [uid] - Optional: The unique ID of this filter, to reference it in the future.
     * @returns this DynamicView object, for further chain ops.
     */
-  def applyWhere(fun: js.Function1[/* obj */ js.Any, Boolean]): this.type = js.native
-  def applyWhere(fun: js.Function1[/* obj */ js.Any, Boolean], uid: String): this.type = js.native
-  def applyWhere(fun: js.Function1[/* obj */ js.Any, Boolean], uid: Double): this.type = js.native
+  def applyWhere(fun: js.Function1[/* obj */ Any, Boolean]): this.type = js.native
+  def applyWhere(fun: js.Function1[/* obj */ Any, Boolean], uid: String): this.type = js.native
+  def applyWhere(fun: js.Function1[/* obj */ Any, Boolean], uid: Double): this.type = js.native
   
   /**
     * branchResultset() - Makes a copy of the internal resultset for branched queries.
@@ -134,12 +132,12 @@ trait DynamicView[E /* <: js.Object */]
     * @param [parameters] - optional parameters (if optional transform requires them)
     * @returns A copy of the internal resultset for branched queries.
     */
-  def branchResultset(): Resultset[js.Any] = js.native
-  def branchResultset(transform: String): Resultset[js.Any] = js.native
-  def branchResultset(transform: String, parameters: js.Object): Resultset[js.Any] = js.native
-  def branchResultset(transform: js.Array[String | Transform]): Resultset[js.Any] = js.native
-  def branchResultset(transform: js.Array[String | Transform], parameters: js.Object): Resultset[js.Any] = js.native
-  def branchResultset(transform: Unit, parameters: js.Object): Resultset[js.Any] = js.native
+  def branchResultset(): Resultset[Any] = js.native
+  def branchResultset(transform: String): Resultset[Any] = js.native
+  def branchResultset(transform: String, parameters: js.Object): Resultset[Any] = js.native
+  def branchResultset(transform: js.Array[String | Transform]): Resultset[Any] = js.native
+  def branchResultset(transform: js.Array[String | Transform], parameters: js.Object): Resultset[Any] = js.native
+  def branchResultset(transform: Unit, parameters: js.Object): Resultset[Any] = js.native
   
   var cachedresultset: Resultset[E] | Null = js.native
   

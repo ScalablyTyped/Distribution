@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListenerTlsCertificate extends StObject {
   
   /**
-    * A reference to an object that represents an AWS Certicate Manager (ACM) certificate.
+    * A reference to an object that represents an Certificate Manager certificate.
     */
   var acm: js.UndefOr[ListenerTlsAcmCertificate] = js.undefined
   
@@ -15,6 +15,11 @@ trait ListenerTlsCertificate extends StObject {
     * A reference to an object that represents a local file certificate.
     */
   var file: js.UndefOr[ListenerTlsFileCertificate] = js.undefined
+  
+  /**
+    * A reference to an object that represents a listener's Secret Discovery Service certificate.
+    */
+  var sds: js.UndefOr[ListenerTlsSdsCertificate] = js.undefined
 }
 object ListenerTlsCertificate {
   
@@ -32,5 +37,9 @@ object ListenerTlsCertificate {
     inline def setFile(value: ListenerTlsFileCertificate): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    
+    inline def setSds(value: ListenerTlsSdsCertificate): Self = StObject.set(x, "sds", value.asInstanceOf[js.Any])
+    
+    inline def setSdsUndefined: Self = StObject.set(x, "sds", js.undefined)
   }
 }

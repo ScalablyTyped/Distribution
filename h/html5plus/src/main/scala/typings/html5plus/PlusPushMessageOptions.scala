@@ -2,7 +2,6 @@ package typings.html5plus
 
 import typings.html5plus.html5plusStrings.none
 import typings.html5plus.html5plusStrings.system
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,7 +72,7 @@ trait PlusPushMessageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var when: js.UndefOr[Date] = js.undefined
+  var when: js.UndefOr[js.Date] = js.undefined
 }
 object PlusPushMessageOptions {
   
@@ -108,7 +107,7 @@ object PlusPushMessageOptions {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: js.Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }

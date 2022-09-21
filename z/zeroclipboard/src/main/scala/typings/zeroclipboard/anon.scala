@@ -102,37 +102,37 @@ object anon {
       
       inline def setAftercopyUndefined: Self = StObject.set(x, "aftercopy", js.undefined)
       
-      inline def setAftercopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]*): Self = StObject.set(x, "aftercopy", js.Array(value :_*))
+      inline def setAftercopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]*): Self = StObject.set(x, "aftercopy", js.Array(value*))
       
       inline def setBeforecopy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardBeforeCopyEvent]]): Self = StObject.set(x, "beforecopy", value.asInstanceOf[js.Any])
       
       inline def setBeforecopyUndefined: Self = StObject.set(x, "beforecopy", js.undefined)
       
-      inline def setBeforecopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardBeforeCopyEvent]*): Self = StObject.set(x, "beforecopy", js.Array(value :_*))
+      inline def setBeforecopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardBeforeCopyEvent]*): Self = StObject.set(x, "beforecopy", js.Array(value*))
       
       inline def setCopy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardCopyEvent]]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setCopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardCopyEvent]*): Self = StObject.set(x, "copy", js.Array(value :_*))
+      inline def setCopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardCopyEvent]*): Self = StObject.set(x, "copy", js.Array(value*))
       
       inline def setDestroy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardDestroyEvent]]): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setDestroyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardDestroyEvent]*): Self = StObject.set(x, "destroy", js.Array(value :_*))
+      inline def setDestroyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardDestroyEvent]*): Self = StObject.set(x, "destroy", js.Array(value*))
       
       inline def setError(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setErrorVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]*): Self = StObject.set(x, "error", js.Array(value*))
       
       inline def setReady(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
       inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       
-      inline def setReadyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]*): Self = StObject.set(x, "ready", js.Array(value :_*))
+      inline def setReadyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]*): Self = StObject.set(x, "ready", js.Array(value*))
     }
   }
   

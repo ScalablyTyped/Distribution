@@ -16,7 +16,7 @@ object mathVertexFormatMod {
     * @param normal the normal of the vertex (defaut: 0,1,0)
     * @param uv the uv of the vertex (default: 0,0)
     */
-  class PositionNormalTextureVertex () extends StObject {
+  open class PositionNormalTextureVertex () extends StObject {
     def this(/** the position of the vertex (defaut: 0,0,0) */
     position: Vector3) = this()
     def this(
@@ -81,7 +81,7 @@ object mathVertexFormatMod {
     * @param position the position of the vertex (defaut: 0,0,0)
     * @param normal the normal of the vertex (defaut: 0,1,0)
     */
-  class PositionNormalVertex () extends StObject {
+  open class PositionNormalVertex () extends StObject {
     def this(/** the position of the vertex (defaut: 0,0,0) */
     position: Vector3) = this()
     def this(

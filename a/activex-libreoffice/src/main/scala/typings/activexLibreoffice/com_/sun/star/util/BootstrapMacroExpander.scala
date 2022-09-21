@@ -30,8 +30,8 @@ object BootstrapMacroExpander {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     expandMacros: String => String,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): BootstrapMacroExpander = {

@@ -8,7 +8,7 @@ object panelSettingsMod {
   
   @JSImport("amcharts/PanelSettings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with PanelsSettings {
     
@@ -131,7 +131,7 @@ object panelSettingsMod {
       * Specifies the colors used to tint the background gradient fill of the plot area. String or Array of Strings
       */
     /* CompleteClass */
-    var plotAreaFillColors: js.Any = js.native
+    var plotAreaFillColors: Any = js.native
     
     /**
       * Prefixes which are used to make big numbers shorter: 2M instead of 2000000, etc.
@@ -149,7 +149,7 @@ object panelSettingsMod {
       * ]
       */
     /* CompleteClass */
-    var prefixesOfBigNumbers: js.Array[js.Any] = js.native
+    var prefixesOfBigNumbers: js.Array[Any] = js.native
     
     /**
       * Prefixes which are used to make small numbers shorter: 2μ instead of 0.000002, etc.
@@ -166,7 +166,7 @@ object panelSettingsMod {
       * ]
       */
     /* CompleteClass */
-    var prefixesOfSmallNumbers: js.Array[js.Any] = js.native
+    var prefixesOfSmallNumbers: js.Array[Any] = js.native
     
     /**
       * Specifies whether the animation should be sequenced or all objects should appear at once.
@@ -303,7 +303,7 @@ object panelSettingsMod {
     /**
       * Specifies the colors used to tint the background gradient fill of the plot area. String or Array of Strings
       */
-    var plotAreaFillColors: js.Any
+    var plotAreaFillColors: Any
     
     /**
       * Prefixes which are used to make big numbers shorter: 2M instead of 2000000, etc.
@@ -320,7 +320,7 @@ object panelSettingsMod {
       *     {number:1e+24,prefix:"Y"}
       * ]
       */
-    var prefixesOfBigNumbers: js.Array[js.Any]
+    var prefixesOfBigNumbers: js.Array[Any]
     
     /**
       * Prefixes which are used to make small numbers shorter: 2μ instead of 0.000002, etc.
@@ -336,7 +336,7 @@ object panelSettingsMod {
       *     {number:1e-3, prefix:"m"}
       * ]
       */
-    var prefixesOfSmallNumbers: js.Array[js.Any]
+    var prefixesOfSmallNumbers: js.Array[Any]
     
     /**
       * Specifies whether the animation should be sequenced or all objects should appear at once.
@@ -384,9 +384,9 @@ object panelSettingsMod {
       plotAreaBorderAlpha: Double,
       plotAreaBorderColor: String,
       plotAreaFillAlphas: Double,
-      plotAreaFillColors: js.Any,
-      prefixesOfBigNumbers: js.Array[js.Any],
-      prefixesOfSmallNumbers: js.Array[js.Any],
+      plotAreaFillColors: Any,
+      prefixesOfBigNumbers: js.Array[Any],
+      prefixesOfSmallNumbers: js.Array[Any],
       sequencedAnimation: Boolean,
       startAlpha: Double,
       startDuration: Double,
@@ -433,15 +433,15 @@ object panelSettingsMod {
       
       inline def setPlotAreaFillAlphas(value: Double): Self = StObject.set(x, "plotAreaFillAlphas", value.asInstanceOf[js.Any])
       
-      inline def setPlotAreaFillColors(value: js.Any): Self = StObject.set(x, "plotAreaFillColors", value.asInstanceOf[js.Any])
+      inline def setPlotAreaFillColors(value: Any): Self = StObject.set(x, "plotAreaFillColors", value.asInstanceOf[js.Any])
       
-      inline def setPrefixesOfBigNumbers(value: js.Array[js.Any]): Self = StObject.set(x, "prefixesOfBigNumbers", value.asInstanceOf[js.Any])
+      inline def setPrefixesOfBigNumbers(value: js.Array[Any]): Self = StObject.set(x, "prefixesOfBigNumbers", value.asInstanceOf[js.Any])
       
-      inline def setPrefixesOfBigNumbersVarargs(value: js.Any*): Self = StObject.set(x, "prefixesOfBigNumbers", js.Array(value :_*))
+      inline def setPrefixesOfBigNumbersVarargs(value: Any*): Self = StObject.set(x, "prefixesOfBigNumbers", js.Array(value*))
       
-      inline def setPrefixesOfSmallNumbers(value: js.Array[js.Any]): Self = StObject.set(x, "prefixesOfSmallNumbers", value.asInstanceOf[js.Any])
+      inline def setPrefixesOfSmallNumbers(value: js.Array[Any]): Self = StObject.set(x, "prefixesOfSmallNumbers", value.asInstanceOf[js.Any])
       
-      inline def setPrefixesOfSmallNumbersVarargs(value: js.Any*): Self = StObject.set(x, "prefixesOfSmallNumbers", js.Array(value :_*))
+      inline def setPrefixesOfSmallNumbersVarargs(value: Any*): Self = StObject.set(x, "prefixesOfSmallNumbers", js.Array(value*))
       
       inline def setSequencedAnimation(value: Boolean): Self = StObject.set(x, "sequencedAnimation", value.asInstanceOf[js.Any])
       

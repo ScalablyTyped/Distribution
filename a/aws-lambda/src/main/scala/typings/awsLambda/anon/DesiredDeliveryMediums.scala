@@ -33,7 +33,7 @@ object DesiredDeliveryMediums {
     
     inline def setDesiredDeliveryMediums(value: js.Array[SMS | EMAIL]): Self = StObject.set(x, "desiredDeliveryMediums", value.asInstanceOf[js.Any])
     
-    inline def setDesiredDeliveryMediumsVarargs(value: (SMS | EMAIL)*): Self = StObject.set(x, "desiredDeliveryMediums", js.Array(value :_*))
+    inline def setDesiredDeliveryMediumsVarargs(value: (SMS | EMAIL)*): Self = StObject.set(x, "desiredDeliveryMediums", js.Array(value*))
     
     inline def setFinalUserStatus(value: UserStatus): Self = StObject.set(x, "finalUserStatus", value.asInstanceOf[js.Any])
     

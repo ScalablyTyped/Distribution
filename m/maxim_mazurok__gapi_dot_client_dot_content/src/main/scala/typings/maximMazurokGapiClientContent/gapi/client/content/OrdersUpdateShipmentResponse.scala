@@ -9,7 +9,7 @@ trait OrdersUpdateShipmentResponse extends StObject {
   /** The status of the execution. Acceptable values are: - "`duplicate`" - "`executed`" */
   var executionStatus: js.UndefOr[String] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#ordersUpdateShipmentResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#ordersUpdateShipmentResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object OrdersUpdateShipmentResponse {

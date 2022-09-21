@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@vue/runtime-core" : "3.2.39"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@vue/runtime-core" : "3.2.39"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

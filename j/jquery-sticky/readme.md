@@ -10,15 +10,12 @@ Sticky is a jQuery plugin that gives you the ability to make any element on your
 | ------------------ | :-------------: |
 | Full name          | jquery-sticky |
 | Keywords           | dom, jquery-plugin, ui |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 546568 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17833.0 |
+| # stars            | 3329.0 |
 
 ## Links
-- [Homepage](https://github.com/garand/sticky#readme)
-- [Bugs](https://github.com/garand/sticky/issues)
-- [Repository](https://github.com/garand/sticky)
 - [Npm](https://www.npmjs.com/package/jquery-sticky)
     
 

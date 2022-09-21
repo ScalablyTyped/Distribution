@@ -10,14 +10,14 @@ object map {
   
   @JSGlobal("ymaps.map.Balloon")
   @js.native
-  class Balloon protected ()
+  open class Balloon protected ()
     extends typings.yandexMaps.mod.map.Balloon {
     def this(map: typings.yandexMaps.mod.Map_) = this()
   }
   
   @JSGlobal("ymaps.map.Container")
   @js.native
-  class Container protected ()
+  open class Container protected ()
     extends typings.yandexMaps.mod.map.Container {
     def this(parentElement: String) = this()
     def this(parentElement: HTMLElement) = this()
@@ -25,21 +25,21 @@ object map {
   
   @JSGlobal("ymaps.map.Converter")
   @js.native
-  class Converter protected ()
+  open class Converter protected ()
     extends typings.yandexMaps.mod.map.Converter {
     def this(map: typings.yandexMaps.mod.Map_) = this()
   }
   
   @JSGlobal("ymaps.map.Copyrights")
   @js.native
-  class Copyrights protected ()
+  open class Copyrights protected ()
     extends typings.yandexMaps.mod.map.Copyrights {
     def this(map: typings.yandexMaps.mod.Map_) = this()
   }
   
   @JSGlobal("ymaps.map.GeoObjects")
   @js.native
-  class GeoObjects protected ()
+  open class GeoObjects protected ()
     extends typings.yandexMaps.mod.map.GeoObjects {
     def this(map: typings.yandexMaps.mod.Map_) = this()
     def this(map: typings.yandexMaps.mod.Map_, options: js.Object) = this()
@@ -47,14 +47,14 @@ object map {
   
   @JSGlobal("ymaps.map.Hint")
   @js.native
-  class Hint protected ()
+  open class Hint protected ()
     extends typings.yandexMaps.mod.map.Hint {
     def this(map: typings.yandexMaps.mod.Map_) = this()
   }
   
   @JSGlobal("ymaps.map.ZoomRange")
   @js.native
-  class ZoomRange protected ()
+  open class ZoomRange protected ()
     extends typings.yandexMaps.mod.map.ZoomRange {
     def this(map: typings.yandexMaps.mod.Map_, constraints: js.Array[Double]) = this()
   }
@@ -63,7 +63,7 @@ object map {
     
     @JSGlobal("ymaps.map.action.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends typings.yandexMaps.mod.map.action.Manager {
       def this(map: typings.yandexMaps.mod.Map_) = this()
     }
@@ -73,7 +73,7 @@ object map {
     
     @JSGlobal("ymaps.map.behavior.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends typings.yandexMaps.mod.map.behavior.Manager {
       def this(map: typings.yandexMaps.mod.Map_) = this()
       def this(map: typings.yandexMaps.mod.Map_, behaviors: js.Array[js.Array[String] | String]) = this()
@@ -90,7 +90,7 @@ object map {
     
     @JSGlobal("ymaps.map.layer.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends typings.yandexMaps.mod.map.layer.Manager {
       def this(map: typings.yandexMaps.mod.Map_) = this()
       def this(map: typings.yandexMaps.mod.Map_, options: TrafficImageZIndex) = this()
@@ -101,14 +101,14 @@ object map {
     
     @JSGlobal("ymaps.map.margin.Accessor")
     @js.native
-    class Accessor protected ()
+    open class Accessor protected ()
       extends typings.yandexMaps.mod.map.margin.Accessor {
       def this(screenArea: js.Object) = this()
     }
     
     @JSGlobal("ymaps.map.margin.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends typings.yandexMaps.mod.map.margin.Manager {
       def this(map: typings.yandexMaps.mod.Map_) = this()
     }
@@ -118,7 +118,7 @@ object map {
     
     @JSGlobal("ymaps.map.pane.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends typings.yandexMaps.mod.map.pane.Manager {
       def this(map: typings.yandexMaps.mod.Map_) = this()
     }

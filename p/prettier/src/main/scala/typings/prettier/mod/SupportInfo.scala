@@ -21,10 +21,10 @@ object SupportInfo {
     
     inline def setLanguages(value: js.Array[SupportLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    inline def setLanguagesVarargs(value: SupportLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: SupportLanguage*): Self = StObject.set(x, "languages", js.Array(value*))
     
     inline def setOptions(value: js.Array[SupportOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: SupportOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: SupportOption*): Self = StObject.set(x, "options", js.Array(value*))
   }
 }

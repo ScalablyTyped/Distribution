@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "log4javascript" : "1.4.15"
+      "log4javascript" : "1.4.16"
     }
   ],
   "test-dependencies" : [
     {
-      "log4javascript" : "1.4.15"
+      "log4javascript" : "1.4.16"
     }
   ],
   "compile-devDependencies" : [

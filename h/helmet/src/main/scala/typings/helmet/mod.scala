@@ -1,7 +1,9 @@
 package typings.helmet
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.helmet.anon.ReadonlyContentSecurityPo
+import typings.helmet.anon.ReadonlyCrossOriginEmbedd
+import typings.helmet.anon.ReadonlyCrossOriginOpener
+import typings.helmet.anon.ReadonlyCrossOriginResour
 import typings.helmet.anon.ReadonlyExpectCtOptions
 import typings.helmet.anon.ReadonlyHelmetOptions
 import typings.helmet.anon.ReadonlyReferrerPolicyOpt
@@ -9,10 +11,11 @@ import typings.helmet.anon.ReadonlyStrictTransportSe
 import typings.helmet.anon.ReadonlyXDnsPrefetchContr
 import typings.helmet.anon.ReadonlyXFrameOptionsOpti
 import typings.helmet.anon.ReadonlyXPermittedCrossDo
-import typings.helmet.contentSecurityPolicyMod.ContentSecurityPolicyDirectiveValue
+import typings.helmet.contentSecurityPolicyMod.ContentSecurityPolicy
 import typings.helmet.contentSecurityPolicyMod.ContentSecurityPolicyOptions
+import typings.helmet.crossOriginOpenerPolicyMod.CrossOriginOpenerPolicyOptions
+import typings.helmet.crossOriginResourcePolicyMod.CrossOriginResourcePolicyOptions
 import typings.helmet.expectCtMod.ExpectCtOptions
-import typings.helmet.helmetBooleans.`false`
 import typings.helmet.referrerPolicyMod.ReferrerPolicyOptions
 import typings.helmet.strictTransportSecurityMod.StrictTransportSecurityOptions
 import typings.helmet.xDnsPrefetchControlMod.XDnsPrefetchControlOptions
@@ -20,338 +23,641 @@ import typings.helmet.xFrameOptionsMod.XFrameOptionsOptions
 import typings.helmet.xPermittedCrossDomainPoliciesMod.XPermittedCrossDomainPoliciesOptions
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.std.Error
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): js.Function3[
-    /* req */ IncomingMessage, 
-    /* res */ ServerResponse, 
-    /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
-    Unit
-  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
-    /* req */ IncomingMessage, 
-    /* res */ ServerResponse, 
-    /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
-    Unit
-  ]]
-  inline def apply(options: ReadonlyHelmetOptions): js.Function3[
-    /* req */ IncomingMessage, 
-    /* res */ ServerResponse, 
-    /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
-    Unit
-  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-    /* req */ IncomingMessage, 
-    /* res */ ServerResponse, 
-    /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
-    Unit
-  ]]
-  
-  @JSImport("helmet/dist", JSImport.Namespace)
+  @JSImport("helmet", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  object contentSecurityPolicy {
+  @JSImport("helmet", JSImport.Default)
+  @js.native
+  val default: Helmet = js.native
+  
+  @JSImport("helmet", "contentSecurityPolicy")
+  @js.native
+  val contentSecurityPolicy: ContentSecurityPolicy = js.native
+  
+  inline def crossOriginEmbedderPolicy(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("crossOriginEmbedderPolicy")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  inline def crossOriginEmbedderPolicy(options: ReadonlyCrossOriginEmbedd): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("crossOriginEmbedderPolicy")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def crossOriginOpenerPolicy(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("crossOriginOpenerPolicy")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  inline def crossOriginOpenerPolicy(options: ReadonlyCrossOriginOpener): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("crossOriginOpenerPolicy")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def crossOriginResourcePolicy(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("crossOriginResourcePolicy")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  inline def crossOriginResourcePolicy(options: ReadonlyCrossOriginResour): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("crossOriginResourcePolicy")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def dnsPrefetchControl(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("dnsPrefetchControl")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  inline def dnsPrefetchControl(options: ReadonlyXDnsPrefetchContr): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("dnsPrefetchControl")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def expectCt(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("expectCt")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  inline def expectCt(options: ReadonlyExpectCtOptions): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("expectCt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def frameguard(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("frameguard")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  inline def frameguard(options: ReadonlyXFrameOptionsOpti): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("frameguard")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def hidePoweredBy(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hidePoweredBy")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def hsts(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  inline def hsts(options: ReadonlyStrictTransportSe): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def ieNoOpen(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ieNoOpen")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def noSniff(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("noSniff")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def originAgentCluster(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("originAgentCluster")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def permittedCrossDomainPolicies(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("permittedCrossDomainPolicies")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  inline def permittedCrossDomainPolicies(options: ReadonlyXPermittedCrossDo): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("permittedCrossDomainPolicies")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def referrerPolicy(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("referrerPolicy")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  inline def referrerPolicy(options: ReadonlyReferrerPolicyOpt): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("referrerPolicy")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  inline def xssFilter(): js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssFilter")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  
+  @js.native
+  trait Helmet extends StObject {
     
-    inline def apply(): js.Function3[
+    def apply(): js.Function3[
         /* req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
         Unit
-      ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
+      ] = js.native
+    def apply(options: ReadonlyHelmetOptions): js.Function3[
         /* req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
         Unit
-      ]]
-    inline def apply(options: ReadonlyContentSecurityPo): js.Function3[
-        /* req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
-        Unit
-      ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-        /* req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
-        Unit
-      ]]
+      ] = js.native
     
-    @JSImport("helmet/dist", "contentSecurityPolicy")
-    @js.native
-    val ^ : js.Any = js.native
+    def contentSecurityPolicy(): js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+        Unit
+      ] = js.native
+    def contentSecurityPolicy(options: ReadonlyContentSecurityPo): js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+        Unit
+      ] = js.native
+    @JSName("contentSecurityPolicy")
+    var contentSecurityPolicy_Original: ContentSecurityPolicy = js.native
     
-    inline def getDefaultDirectives(): StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultDirectives")().asInstanceOf[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]]
-    @JSImport("helmet/dist", "contentSecurityPolicy.getDefaultDirectives")
-    @js.native
-    def getDefaultDirectives_FcontentSecurityPolicy: js.Function0[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]] = js.native
+    def crossOriginEmbedderPolicy(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    def crossOriginEmbedderPolicy(options: ReadonlyCrossOriginEmbedd): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("crossOriginEmbedderPolicy")
+    var crossOriginEmbedderPolicy_Original: js.Function1[
+        /* options */ js.UndefOr[ReadonlyCrossOriginEmbedd], 
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
     
-    inline def getDefaultDirectives_FcontentSecurityPolicy_=(x: js.Function0[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultDirectives")(x.asInstanceOf[js.Any])
+    def crossOriginOpenerPolicy(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    def crossOriginOpenerPolicy(options: ReadonlyCrossOriginOpener): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("crossOriginOpenerPolicy")
+    var crossOriginOpenerPolicy_Original: js.Function1[
+        /* options */ js.UndefOr[ReadonlyCrossOriginOpener], 
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def crossOriginResourcePolicy(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    def crossOriginResourcePolicy(options: ReadonlyCrossOriginResour): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("crossOriginResourcePolicy")
+    var crossOriginResourcePolicy_Original: js.Function1[
+        /* options */ js.UndefOr[ReadonlyCrossOriginResour], 
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def dnsPrefetchControl(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    def dnsPrefetchControl(options: ReadonlyXDnsPrefetchContr): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("dnsPrefetchControl")
+    var dnsPrefetchControl_Original: js.Function1[
+        /* options */ js.UndefOr[ReadonlyXDnsPrefetchContr], 
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def expectCt(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    def expectCt(options: ReadonlyExpectCtOptions): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("expectCt")
+    var expectCt_Original: js.Function1[
+        /* options */ js.UndefOr[ReadonlyExpectCtOptions], 
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def frameguard(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    def frameguard(options: ReadonlyXFrameOptionsOpti): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("frameguard")
+    var frameguard_Original: js.Function1[
+        /* options */ js.UndefOr[ReadonlyXFrameOptionsOpti], 
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def hidePoweredBy(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("hidePoweredBy")
+    var hidePoweredBy_Original: js.Function0[
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def hsts(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    def hsts(options: ReadonlyStrictTransportSe): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("hsts")
+    var hsts_Original: js.Function1[
+        /* options */ js.UndefOr[ReadonlyStrictTransportSe], 
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def ieNoOpen(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("ieNoOpen")
+    var ieNoOpen_Original: js.Function0[
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def noSniff(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("noSniff")
+    var noSniff_Original: js.Function0[
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def originAgentCluster(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("originAgentCluster")
+    var originAgentCluster_Original: js.Function0[
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def permittedCrossDomainPolicies(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    def permittedCrossDomainPolicies(options: ReadonlyXPermittedCrossDo): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("permittedCrossDomainPolicies")
+    var permittedCrossDomainPolicies_Original: js.Function1[
+        /* options */ js.UndefOr[ReadonlyXPermittedCrossDo], 
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def referrerPolicy(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    def referrerPolicy(options: ReadonlyReferrerPolicyOpt): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("referrerPolicy")
+    var referrerPolicy_Original: js.Function1[
+        /* options */ js.UndefOr[ReadonlyReferrerPolicyOpt], 
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    def xssFilter(): js.Function3[
+        /* _req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* next */ js.Function0[Unit], 
+        Unit
+      ] = js.native
+    @JSName("xssFilter")
+    var xssFilter_Original: js.Function0[
+        js.Function3[
+          /* _req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          /* next */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.native
   }
-  
-  @JSImport("helmet/dist", "dnsPrefetchControl")
-  @js.native
-  def dnsPrefetchControl: js.Function1[
-    /* options */ js.UndefOr[ReadonlyXDnsPrefetchContr], 
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def dnsPrefetchControl_=(
-    x: js.Function1[
-      /* options */ js.UndefOr[ReadonlyXDnsPrefetchContr], 
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dnsPrefetchControl")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "expectCt")
-  @js.native
-  def expectCt: js.Function1[
-    /* options */ js.UndefOr[ReadonlyExpectCtOptions], 
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def expectCt_=(
-    x: js.Function1[
-      /* options */ js.UndefOr[ReadonlyExpectCtOptions], 
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expectCt")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "featurePolicy")
-  @js.native
-  def featurePolicy: js.Function0[scala.Nothing] = js.native
-  inline def featurePolicy_=(x: js.Function0[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("featurePolicy")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "frameguard")
-  @js.native
-  def frameguard: js.Function1[
-    /* options */ js.UndefOr[ReadonlyXFrameOptionsOpti], 
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def frameguard_=(
-    x: js.Function1[
-      /* options */ js.UndefOr[ReadonlyXFrameOptionsOpti], 
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameguard")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "hidePoweredBy")
-  @js.native
-  def hidePoweredBy: js.Function0[
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def hidePoweredBy_=(
-    x: js.Function0[
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hidePoweredBy")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "hpkp")
-  @js.native
-  def hpkp: js.Function0[scala.Nothing] = js.native
-  inline def hpkp_=(x: js.Function0[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hpkp")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "hsts")
-  @js.native
-  def hsts: js.Function1[
-    /* options */ js.UndefOr[ReadonlyStrictTransportSe], 
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def hsts_=(
-    x: js.Function1[
-      /* options */ js.UndefOr[ReadonlyStrictTransportSe], 
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hsts")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "ieNoOpen")
-  @js.native
-  def ieNoOpen: js.Function0[
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def ieNoOpen_=(
-    x: js.Function0[
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ieNoOpen")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "noCache")
-  @js.native
-  def noCache: js.Function0[scala.Nothing] = js.native
-  inline def noCache_=(x: js.Function0[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noCache")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "noSniff")
-  @js.native
-  def noSniff: js.Function0[
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def noSniff_=(
-    x: js.Function0[
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noSniff")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "permittedCrossDomainPolicies")
-  @js.native
-  def permittedCrossDomainPolicies: js.Function1[
-    /* options */ js.UndefOr[ReadonlyXPermittedCrossDo], 
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def permittedCrossDomainPolicies_=(
-    x: js.Function1[
-      /* options */ js.UndefOr[ReadonlyXPermittedCrossDo], 
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("permittedCrossDomainPolicies")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "referrerPolicy")
-  @js.native
-  def referrerPolicy: js.Function1[
-    /* options */ js.UndefOr[ReadonlyReferrerPolicyOpt], 
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def referrerPolicy_=(
-    x: js.Function1[
-      /* options */ js.UndefOr[ReadonlyReferrerPolicyOpt], 
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("referrerPolicy")(x.asInstanceOf[js.Any])
-  
-  @JSImport("helmet/dist", "xssFilter")
-  @js.native
-  def xssFilter: js.Function0[
-    js.Function3[
-      /* _req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function0[Unit], 
-      Unit
-    ]
-  ] = js.native
-  inline def xssFilter_=(
-    x: js.Function0[
-      js.Function3[
-        /* _req */ IncomingMessage, 
-        /* res */ ServerResponse, 
-        /* next */ js.Function0[Unit], 
-        Unit
-      ]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xssFilter")(x.asInstanceOf[js.Any])
   
   trait HelmetOptions extends StObject {
     
-    var contentSecurityPolicy: js.UndefOr[MiddlewareOption[ContentSecurityPolicyOptions]] = js.undefined
+    var contentSecurityPolicy: js.UndefOr[ContentSecurityPolicyOptions | Boolean] = js.undefined
     
-    var dnsPrefetchControl: js.UndefOr[MiddlewareOption[XDnsPrefetchControlOptions]] = js.undefined
+    var crossOriginEmbedderPolicy: js.UndefOr[Boolean] = js.undefined
     
-    var expectCt: js.UndefOr[MiddlewareOption[ExpectCtOptions]] = js.undefined
+    var crossOriginOpenerPolicy: js.UndefOr[CrossOriginOpenerPolicyOptions | Boolean] = js.undefined
     
-    var frameguard: js.UndefOr[MiddlewareOption[XFrameOptionsOptions]] = js.undefined
+    var crossOriginResourcePolicy: js.UndefOr[CrossOriginResourcePolicyOptions | Boolean] = js.undefined
     
-    var hidePoweredBy: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
+    var dnsPrefetchControl: js.UndefOr[XDnsPrefetchControlOptions | Boolean] = js.undefined
     
-    var hsts: js.UndefOr[MiddlewareOption[StrictTransportSecurityOptions]] = js.undefined
+    var expectCt: js.UndefOr[ExpectCtOptions | Boolean] = js.undefined
     
-    var ieNoOpen: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
+    var frameguard: js.UndefOr[XFrameOptionsOptions | Boolean] = js.undefined
     
-    var noSniff: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
+    var hidePoweredBy: js.UndefOr[Boolean] = js.undefined
     
-    var permittedCrossDomainPolicies: js.UndefOr[MiddlewareOption[XPermittedCrossDomainPoliciesOptions]] = js.undefined
+    var hsts: js.UndefOr[StrictTransportSecurityOptions | Boolean] = js.undefined
     
-    var referrerPolicy: js.UndefOr[MiddlewareOption[ReferrerPolicyOptions]] = js.undefined
+    var ieNoOpen: js.UndefOr[Boolean] = js.undefined
     
-    var xssFilter: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
+    var noSniff: js.UndefOr[Boolean] = js.undefined
+    
+    var originAgentCluster: js.UndefOr[Boolean] = js.undefined
+    
+    var permittedCrossDomainPolicies: js.UndefOr[XPermittedCrossDomainPoliciesOptions | Boolean] = js.undefined
+    
+    var referrerPolicy: js.UndefOr[ReferrerPolicyOptions | Boolean] = js.undefined
+    
+    var xssFilter: js.UndefOr[Boolean] = js.undefined
   }
   object HelmetOptions {
     
@@ -362,51 +668,65 @@ object mod {
     
     extension [Self <: HelmetOptions](x: Self) {
       
-      inline def setContentSecurityPolicy(value: MiddlewareOption[ContentSecurityPolicyOptions]): Self = StObject.set(x, "contentSecurityPolicy", value.asInstanceOf[js.Any])
+      inline def setContentSecurityPolicy(value: ContentSecurityPolicyOptions | Boolean): Self = StObject.set(x, "contentSecurityPolicy", value.asInstanceOf[js.Any])
       
       inline def setContentSecurityPolicyUndefined: Self = StObject.set(x, "contentSecurityPolicy", js.undefined)
       
-      inline def setDnsPrefetchControl(value: MiddlewareOption[XDnsPrefetchControlOptions]): Self = StObject.set(x, "dnsPrefetchControl", value.asInstanceOf[js.Any])
+      inline def setCrossOriginEmbedderPolicy(value: Boolean): Self = StObject.set(x, "crossOriginEmbedderPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginEmbedderPolicyUndefined: Self = StObject.set(x, "crossOriginEmbedderPolicy", js.undefined)
+      
+      inline def setCrossOriginOpenerPolicy(value: CrossOriginOpenerPolicyOptions | Boolean): Self = StObject.set(x, "crossOriginOpenerPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginOpenerPolicyUndefined: Self = StObject.set(x, "crossOriginOpenerPolicy", js.undefined)
+      
+      inline def setCrossOriginResourcePolicy(value: CrossOriginResourcePolicyOptions | Boolean): Self = StObject.set(x, "crossOriginResourcePolicy", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginResourcePolicyUndefined: Self = StObject.set(x, "crossOriginResourcePolicy", js.undefined)
+      
+      inline def setDnsPrefetchControl(value: XDnsPrefetchControlOptions | Boolean): Self = StObject.set(x, "dnsPrefetchControl", value.asInstanceOf[js.Any])
       
       inline def setDnsPrefetchControlUndefined: Self = StObject.set(x, "dnsPrefetchControl", js.undefined)
       
-      inline def setExpectCt(value: MiddlewareOption[ExpectCtOptions]): Self = StObject.set(x, "expectCt", value.asInstanceOf[js.Any])
+      inline def setExpectCt(value: ExpectCtOptions | Boolean): Self = StObject.set(x, "expectCt", value.asInstanceOf[js.Any])
       
       inline def setExpectCtUndefined: Self = StObject.set(x, "expectCt", js.undefined)
       
-      inline def setFrameguard(value: MiddlewareOption[XFrameOptionsOptions]): Self = StObject.set(x, "frameguard", value.asInstanceOf[js.Any])
+      inline def setFrameguard(value: XFrameOptionsOptions | Boolean): Self = StObject.set(x, "frameguard", value.asInstanceOf[js.Any])
       
       inline def setFrameguardUndefined: Self = StObject.set(x, "frameguard", js.undefined)
       
-      inline def setHidePoweredBy(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "hidePoweredBy", value.asInstanceOf[js.Any])
+      inline def setHidePoweredBy(value: Boolean): Self = StObject.set(x, "hidePoweredBy", value.asInstanceOf[js.Any])
       
       inline def setHidePoweredByUndefined: Self = StObject.set(x, "hidePoweredBy", js.undefined)
       
-      inline def setHsts(value: MiddlewareOption[StrictTransportSecurityOptions]): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
+      inline def setHsts(value: StrictTransportSecurityOptions | Boolean): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
       
       inline def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
       
-      inline def setIeNoOpen(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "ieNoOpen", value.asInstanceOf[js.Any])
+      inline def setIeNoOpen(value: Boolean): Self = StObject.set(x, "ieNoOpen", value.asInstanceOf[js.Any])
       
       inline def setIeNoOpenUndefined: Self = StObject.set(x, "ieNoOpen", js.undefined)
       
-      inline def setNoSniff(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "noSniff", value.asInstanceOf[js.Any])
+      inline def setNoSniff(value: Boolean): Self = StObject.set(x, "noSniff", value.asInstanceOf[js.Any])
       
       inline def setNoSniffUndefined: Self = StObject.set(x, "noSniff", js.undefined)
       
-      inline def setPermittedCrossDomainPolicies(value: MiddlewareOption[XPermittedCrossDomainPoliciesOptions]): Self = StObject.set(x, "permittedCrossDomainPolicies", value.asInstanceOf[js.Any])
+      inline def setOriginAgentCluster(value: Boolean): Self = StObject.set(x, "originAgentCluster", value.asInstanceOf[js.Any])
+      
+      inline def setOriginAgentClusterUndefined: Self = StObject.set(x, "originAgentCluster", js.undefined)
+      
+      inline def setPermittedCrossDomainPolicies(value: XPermittedCrossDomainPoliciesOptions | Boolean): Self = StObject.set(x, "permittedCrossDomainPolicies", value.asInstanceOf[js.Any])
       
       inline def setPermittedCrossDomainPoliciesUndefined: Self = StObject.set(x, "permittedCrossDomainPolicies", js.undefined)
       
-      inline def setReferrerPolicy(value: MiddlewareOption[ReferrerPolicyOptions]): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      inline def setReferrerPolicy(value: ReferrerPolicyOptions | Boolean): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
       
       inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
       
-      inline def setXssFilter(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "xssFilter", value.asInstanceOf[js.Any])
+      inline def setXssFilter(value: Boolean): Self = StObject.set(x, "xssFilter", value.asInstanceOf[js.Any])
       
       inline def setXssFilterUndefined: Self = StObject.set(x, "xssFilter", js.undefined)
     }
   }
-  
-  type MiddlewareOption[T] = `false` | T
 }

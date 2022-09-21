@@ -9,7 +9,7 @@ object lrnPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/lrn_packed_gpu", "LRNPackedProgram")
   @js.native
-  class LRNPackedProgram protected ()
+  open class LRNPackedProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(xShape: js.Array[Double], radius: Double, bias: Double, alpha: Double, beta: Double) = this()

@@ -22,6 +22,6 @@ object BatchUpdatePhotosRequest {
     
     inline def setUpdatePhotoRequestsUndefined: Self = StObject.set(x, "updatePhotoRequests", js.undefined)
     
-    inline def setUpdatePhotoRequestsVarargs(value: UpdatePhotoRequest*): Self = StObject.set(x, "updatePhotoRequests", js.Array(value :_*))
+    inline def setUpdatePhotoRequestsVarargs(value: UpdatePhotoRequest*): Self = StObject.set(x, "updatePhotoRequests", js.Array(value*))
   }
 }

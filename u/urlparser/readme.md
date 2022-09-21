@@ -11,9 +11,9 @@ Url parser
 | Full name          | urlparser |
 | Keywords           | url, parse |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 1668 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 218.33333333333334 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/kaerus-component/url#readme)

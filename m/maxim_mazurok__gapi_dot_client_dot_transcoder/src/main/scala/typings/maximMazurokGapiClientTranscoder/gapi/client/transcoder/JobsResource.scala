@@ -2,6 +2,7 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientTranscoder.anon.Accesstoken
+import typings.maximMazurokGapiClientTranscoder.anon.AllowMissing
 import typings.maximMazurokGapiClientTranscoder.anon.Alt
 import typings.maximMazurokGapiClientTranscoder.anon.Callback
 import typings.maximMazurokGapiClientTranscoder.anon.Fields
@@ -18,7 +19,7 @@ trait JobsResource extends StObject {
   
   /** Deletes a job. */
   def delete(): Request[js.Object] = js.native
-  def delete(request: Callback): Request[js.Object] = js.native
+  def delete(request: AllowMissing): Request[js.Object] = js.native
   
   /** Returns the job data. */
   def get(): Request[Job] = js.native

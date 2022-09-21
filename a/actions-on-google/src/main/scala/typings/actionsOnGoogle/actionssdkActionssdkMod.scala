@@ -10,7 +10,6 @@ import typings.actionsOnGoogle.conversationConversationMod.ExceptionHandler
 import typings.actionsOnGoogle.conversationConversationMod.Intent
 import typings.actionsOnGoogle.frameworkFrameworkMod.BuiltinFrameworkMetadata
 import typings.actionsOnGoogle.v2Mod.GoogleRpcStatus
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,7 +92,7 @@ object actionssdkActionssdkMod {
   
   trait ActionsSdkHandlers[TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */] extends StObject {
     
-    def catcher(conv: TConversation, error: Error): js.Promise[js.Any] | js.Any
+    def catcher(conv: TConversation, error: js.Error): js.Promise[Any] | Any
     @JSName("catcher")
     var catcher_Original: ExceptionHandler[TUserStorage, TConversation]
     
@@ -106,7 +105,7 @@ object actionssdkActionssdkMod {
   object ActionsSdkHandlers {
     
     inline def apply[TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */](
-      catcher: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any,
+      catcher: (TConversation, /* error */ js.Error) => js.Promise[Any] | Any,
       intents: ActionSdkIntentHandlers
     ): ActionsSdkHandlers[TConvData, TUserStorage, TConversation] = {
       val __obj = js.Dynamic.literal(catcher = js.Any.fromFunction2(catcher), intents = intents.asInstanceOf[js.Any])
@@ -115,14 +114,14 @@ object actionssdkActionssdkMod {
     
     extension [Self <: ActionsSdkHandlers[?, ?, ?], TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */](x: Self & (ActionsSdkHandlers[TConvData, TUserStorage, TConversation])) {
       
-      inline def setCatcher(value: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
+      inline def setCatcher(value: (TConversation, /* error */ js.Error) => js.Promise[Any] | Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
       
       inline def setFallback(
         value: (ActionsSdkIntentHandler[js.Object, js.Object, ActionsSdkConversation[js.Object, js.Object], Argument]) | String
       ): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       inline def setFallbackFunction4(
-        value: (ActionsSdkConversation[js.Object, js.Object], /* input */ String, Argument, /* status */ js.UndefOr[GoogleRpcStatus]) => js.Promise[js.Any] | js.Any
+        value: (ActionsSdkConversation[js.Object, js.Object], /* input */ String, Argument, /* status */ js.UndefOr[GoogleRpcStatus]) => js.Promise[Any] | Any
       ): Self = StObject.set(x, "fallback", js.Any.fromFunction4(value))
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
@@ -136,7 +135,7 @@ object actionssdkActionssdkMod {
     /* input */ String, 
     /* argument */ TArgument, 
     /* status */ js.UndefOr[GoogleRpcStatus], 
-    js.Promise[js.Any] | js.Any
+    js.Promise[Any] | Any
   ]
   
   type ActionsSdkMiddleware[TConversationPlugin /* <: ActionsSdkConversation[js.Object, js.Object] */] = js.Function2[

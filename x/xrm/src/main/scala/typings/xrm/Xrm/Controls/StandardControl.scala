@@ -36,14 +36,14 @@ trait StandardControl
     * Gets the control's bound attribute.
     * @returns The attribute.
     */
-  def getAttribute(): Attribute = js.native
+  def getAttribute(): Attribute[Any] = js.native
   /**
     * Gets the control's bound attribute.
     * @template T An Attribute type.
     * @returns The attribute.
     */
   @JSName("getAttribute")
-  def getAttribute_T_Attribute_T[T /* <: Attribute */](): T = js.native
+  def getAttribute_T_AttributeAny_T[T /* <: Attribute[Any] */](): T = js.native
   
   /**
     * Sets a control-local notification message.

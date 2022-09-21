@@ -10,15 +10,12 @@ SuperTest + Promises
 | ------------------ | :-------------: |
 | Full name          | promisify-supertest |
 | Keywords           | SuperTest, promise, as, promised, promisify, superagent, test |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2682 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 581.3333333333334 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/ariporad/promisify-supertest#readme)
-- [Bugs](https://github.com/ariporad/promisify-supertest/issues)
-- [Repository](https://github.com/ariporad/promisify-supertest)
 - [Npm](https://www.npmjs.com/package/promisify-supertest)
     
 

@@ -2,7 +2,6 @@ package typings.awsSdkClientKinesisBrowser
 
 import typings.awsSdkClientKinesisBrowser.typesRecordMod.Record
 import typings.awsSdkClientKinesisBrowser.typesRecordMod.UnmarshalledRecord
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,14 +23,14 @@ object typesSubscribeToShardEventMod {
     /**
       * <p/>
       */
-    var Records: js.Array[Record] | Iterable[Record]
+    var Records: js.Array[Record] | js.Iterable[Record]
   }
   object SubscribeToShardEvent {
     
     inline def apply(
       ContinuationSequenceNumber: String,
       MillisBehindLatest: Double,
-      Records: js.Array[Record] | Iterable[Record]
+      Records: js.Array[Record] | js.Iterable[Record]
     ): SubscribeToShardEvent = {
       val __obj = js.Dynamic.literal(ContinuationSequenceNumber = ContinuationSequenceNumber.asInstanceOf[js.Any], MillisBehindLatest = MillisBehindLatest.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscribeToShardEvent]
@@ -43,9 +42,9 @@ object typesSubscribeToShardEventMod {
       
       inline def setMillisBehindLatest(value: Double): Self = StObject.set(x, "MillisBehindLatest", value.asInstanceOf[js.Any])
       
-      inline def setRecords(value: js.Array[Record] | Iterable[Record]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[Record] | js.Iterable[Record]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value*))
     }
   }
   
@@ -74,7 +73,7 @@ object typesSubscribeToShardEventMod {
       
       inline def setRecords(value: js.Array[UnmarshalledRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: UnmarshalledRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: UnmarshalledRecord*): Self = StObject.set(x, "Records", js.Array(value*))
     }
   }
 }

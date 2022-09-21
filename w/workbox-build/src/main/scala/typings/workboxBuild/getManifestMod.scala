@@ -1,7 +1,6 @@
 package typings.workboxBuild
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import typings.workboxBuild.anon.Count
 import typings.workboxBuild.typesMod.ManifestEntry
 import typings.workboxBuild.typesMod.ManifestTransform
@@ -33,7 +32,7 @@ object getManifestMod {
       * you provide a RegExp that will detect that, as it will reduce the bandwidth
       * consumed when precaching.
       */
-    var dontCacheBustURLsMatching: js.UndefOr[RegExp] = js.undefined
+    var dontCacheBustURLsMatching: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * The local directory you wish to match `globPatterns` against. The path is relative to the current directory.
@@ -134,9 +133,9 @@ object getManifestMod {
       
       inline def setAdditionalManifestEntriesUndefined: Self = StObject.set(x, "additionalManifestEntries", js.undefined)
       
-      inline def setAdditionalManifestEntriesVarargs(value: ManifestEntry*): Self = StObject.set(x, "additionalManifestEntries", js.Array(value :_*))
+      inline def setAdditionalManifestEntriesVarargs(value: ManifestEntry*): Self = StObject.set(x, "additionalManifestEntries", js.Array(value*))
       
-      inline def setDontCacheBustURLsMatching(value: RegExp): Self = StObject.set(x, "dontCacheBustURLsMatching", value.asInstanceOf[js.Any])
+      inline def setDontCacheBustURLsMatching(value: js.RegExp): Self = StObject.set(x, "dontCacheBustURLsMatching", value.asInstanceOf[js.Any])
       
       inline def setDontCacheBustURLsMatchingUndefined: Self = StObject.set(x, "dontCacheBustURLsMatching", js.undefined)
       
@@ -150,13 +149,13 @@ object getManifestMod {
       
       inline def setGlobIgnoresUndefined: Self = StObject.set(x, "globIgnores", js.undefined)
       
-      inline def setGlobIgnoresVarargs(value: String*): Self = StObject.set(x, "globIgnores", js.Array(value :_*))
+      inline def setGlobIgnoresVarargs(value: String*): Self = StObject.set(x, "globIgnores", js.Array(value*))
       
       inline def setGlobPatterns(value: js.Array[String]): Self = StObject.set(x, "globPatterns", value.asInstanceOf[js.Any])
       
       inline def setGlobPatternsUndefined: Self = StObject.set(x, "globPatterns", js.undefined)
       
-      inline def setGlobPatternsVarargs(value: String*): Self = StObject.set(x, "globPatterns", js.Array(value :_*))
+      inline def setGlobPatternsVarargs(value: String*): Self = StObject.set(x, "globPatterns", js.Array(value*))
       
       inline def setGlobStrict(value: Boolean): Self = StObject.set(x, "globStrict", value.asInstanceOf[js.Any])
       
@@ -166,7 +165,7 @@ object getManifestMod {
       
       inline def setManifestTransformsUndefined: Self = StObject.set(x, "manifestTransforms", js.undefined)
       
-      inline def setManifestTransformsVarargs(value: ManifestTransform*): Self = StObject.set(x, "manifestTransforms", js.Array(value :_*))
+      inline def setManifestTransformsVarargs(value: ManifestTransform*): Self = StObject.set(x, "manifestTransforms", js.Array(value*))
       
       inline def setMaximumFileSizeToCacheInBytes(value: Double): Self = StObject.set(x, "maximumFileSizeToCacheInBytes", value.asInstanceOf[js.Any])
       

@@ -11,7 +11,7 @@ object radioPropsTypeMod {
     extends StObject
        with RadioPropsType {
     
-    var onClick: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onClick: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var radioProps: js.UndefOr[js.Object] = js.undefined
   }
@@ -24,7 +24,7 @@ object radioPropsTypeMod {
     
     extension [Self <: RadioItemPropsType](x: Self) {
       
-      inline def setOnClick(value: () => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       

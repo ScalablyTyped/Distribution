@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.Supports")
 @js.native
-class Supports ()
+open class Supports ()
   extends StObject
      with typings.extjs.Ext.Supports
 /* static members */
@@ -97,14 +97,14 @@ object Supports {
   /** [Property] (Object) */
   @JSGlobal("Ext.Supports.DisplayChangeInputSelectionBug")
   @js.native
-  def DisplayChangeInputSelectionBug: js.Any = js.native
-  inline def DisplayChangeInputSelectionBug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayChangeInputSelectionBug")(x.asInstanceOf[js.Any])
+  def DisplayChangeInputSelectionBug: Any = js.native
+  inline def DisplayChangeInputSelectionBug_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayChangeInputSelectionBug")(x.asInstanceOf[js.Any])
   
   /** [Property] (Object) */
   @JSGlobal("Ext.Supports.DisplayChangeTextAreaSelectionBug")
   @js.native
-  def DisplayChangeTextAreaSelectionBug: js.Any = js.native
-  inline def DisplayChangeTextAreaSelectionBug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayChangeTextAreaSelectionBug")(x.asInstanceOf[js.Any])
+  def DisplayChangeTextAreaSelectionBug: Any = js.native
+  inline def DisplayChangeTextAreaSelectionBug_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayChangeTextAreaSelectionBug")(x.asInstanceOf[js.Any])
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.Supports.Float")
@@ -133,8 +133,8 @@ object Supports {
   /** [Property] (Object) */
   @JSGlobal("Ext.Supports.LocalStorage")
   @js.native
-  def LocalStorage: js.Any = js.native
-  inline def LocalStorage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocalStorage")(x.asInstanceOf[js.Any])
+  def LocalStorage: Any = js.native
+  inline def LocalStorage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocalStorage")(x.asInstanceOf[js.Any])
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.Supports.MouseEnterLeave")

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDialogflow.anon
 
-import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowV2Fulfillment
+import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3Environment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait KeyName extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The unique identifier of the fulfillment. Format: `projects//agent/fulfillment`. */
+  /** The name of the environment. Format: `projects//locations//agents//environments/`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,9 +39,9 @@ trait KeyName extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleCloudDialogflowV2Fulfillment
+  var resource: GoogleCloudDialogflowCxV3Environment
   
-  /** Required. The mask to control which fields get updated. If the mask is not present, all fields will be updated. */
+  /** Required. The mask to control which fields get updated. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -52,7 +52,7 @@ trait KeyName extends StObject {
 }
 object KeyName {
   
-  inline def apply(name: String, resource: GoogleCloudDialogflowV2Fulfillment): KeyName = {
+  inline def apply(name: String, resource: GoogleCloudDialogflowCxV3Environment): KeyName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyName]
   }
@@ -97,7 +97,7 @@ object KeyName {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleCloudDialogflowV2Fulfillment): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleCloudDialogflowCxV3Environment): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

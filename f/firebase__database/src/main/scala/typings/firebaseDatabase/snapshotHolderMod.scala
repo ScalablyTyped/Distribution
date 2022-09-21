@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object snapshotHolderMod {
   
-  @JSImport("@firebase/database/dist/src/core/SnapshotHolder", "SnapshotHolder")
+  @JSImport("@firebase/database/dist/node-esm/src/core/SnapshotHolder", "SnapshotHolder")
   @js.native
-  class SnapshotHolder () extends StObject {
+  open class SnapshotHolder () extends StObject {
     
     def getNode(path: Path): Node = js.native
     
-    /* private */ var rootNode_ : js.Any = js.native
+    /* private */ var rootNode_ : Any = js.native
     
     def updateSnapshot(path: Path, newSnapshotNode: Node): Unit = js.native
   }

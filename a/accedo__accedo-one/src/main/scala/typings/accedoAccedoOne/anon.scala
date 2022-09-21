@@ -1,7 +1,6 @@
 package typings.accedoAccedoOne
 
 import typings.accedoAccedoOne.mod.AccedoLocale
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,14 +64,14 @@ object anon {
       
       inline def setLocales(value: js.Array[AccedoLocale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      inline def setLocalesVarargs(value: AccedoLocale*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: AccedoLocale*): Self = StObject.set(x, "locales", js.Array(value*))
     }
   }
   
   /* Inlined std.Pick<@accedo/accedo-one.@accedo/accedo-one.AccedoEntryParams, 'preview' | 'at' | 'locale'> */
   trait PickAccedoEntryParamsprev extends StObject {
     
-    var at: js.UndefOr[String | Date] = js.undefined
+    var at: js.UndefOr[String | js.Date] = js.undefined
     
     var locale: js.UndefOr[String] = js.undefined
     
@@ -87,7 +86,7 @@ object anon {
     
     extension [Self <: PickAccedoEntryParamsprev](x: Self) {
       
-      inline def setAt(value: String | Date): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+      inline def setAt(value: String | js.Date): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
       inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
       

@@ -14,12 +14,12 @@ trait FromRssFeedRuleCondition extends StObject {
   
   var Enabled: Boolean
   
-  var FromRssFeed: js.Any
+  var FromRssFeed: Any
   
   /* private */ @JSName("Outlook.FromRssFeedRuleCondition_typekey")
   var OutlookDotFromRssFeedRuleCondition_typekey: FromRssFeedRuleCondition
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -30,9 +30,9 @@ object FromRssFeedRuleCondition {
     Class: OlObjectClass,
     ConditionType: OlRuleConditionType,
     Enabled: Boolean,
-    FromRssFeed: js.Any,
+    FromRssFeed: Any,
     OutlookDotFromRssFeedRuleCondition_typekey: FromRssFeedRuleCondition,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): FromRssFeedRuleCondition = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], ConditionType = ConditionType.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], FromRssFeed = FromRssFeed.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -50,11 +50,11 @@ object FromRssFeedRuleCondition {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    inline def setFromRssFeed(value: js.Any): Self = StObject.set(x, "FromRssFeed", value.asInstanceOf[js.Any])
+    inline def setFromRssFeed(value: Any): Self = StObject.set(x, "FromRssFeed", value.asInstanceOf[js.Any])
     
     inline def setOutlookDotFromRssFeedRuleCondition_typekey(value: FromRssFeedRuleCondition): Self = StObject.set(x, "Outlook.FromRssFeedRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

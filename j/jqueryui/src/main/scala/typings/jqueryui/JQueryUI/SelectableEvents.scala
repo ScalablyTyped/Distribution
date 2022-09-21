@@ -15,9 +15,9 @@ trait SelectableEvents extends StObject {
   
   var selecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selecting, Unit]] = js.undefined
   
-  var start: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.undefined
+  var start: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Any, Unit]] = js.undefined
   
-  var stop: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.undefined
+  var stop: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Any, Unit]] = js.undefined
   
   var unselected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Unselected, Unit]] = js.undefined
   
@@ -40,11 +40,11 @@ object SelectableEvents {
     
     inline def setSelectingUndefined: Self = StObject.set(x, "selecting", js.undefined)
     
-    inline def setStart(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    inline def setStart(value: (/* event */ JQueryEventObject, /* ui */ Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setStop(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
+    inline def setStop(value: (/* event */ JQueryEventObject, /* ui */ Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
     
     inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     

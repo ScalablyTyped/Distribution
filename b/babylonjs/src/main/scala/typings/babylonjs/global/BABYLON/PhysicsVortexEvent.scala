@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BABYLON.PhysicsVortexEvent")
 @js.native
-class PhysicsVortexEvent protected ()
+open class PhysicsVortexEvent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsVortexEvent {
   /**

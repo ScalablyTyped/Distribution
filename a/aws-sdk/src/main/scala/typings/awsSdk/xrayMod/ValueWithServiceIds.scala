@@ -33,6 +33,6 @@ object ValueWithServiceIds {
     
     inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
     
-    inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+    inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
   }
 }

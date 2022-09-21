@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchOrdersDateTimeFilter")
 @js.native
-class SearchOrdersDateTimeFilter () extends StObject {
+open class SearchOrdersDateTimeFilter () extends StObject {
   
   /**
     * Time range for filtering on the `closed_at` timestamp.

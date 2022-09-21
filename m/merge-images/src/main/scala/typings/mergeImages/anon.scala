@@ -1,5 +1,6 @@
 package typings.mergeImages
 
+import typings.mergeImages.mod.Image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ object anon {
     
     var opacity: js.UndefOr[Double] = js.undefined
     
-    var src: String
+    var src: Image
     
     var x: js.UndefOr[Double] = js.undefined
     
@@ -18,7 +19,7 @@ object anon {
   }
   object Opacity {
     
-    inline def apply(src: String): Opacity = {
+    inline def apply(src: Image): Opacity = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[Opacity]
     }
@@ -29,7 +30,7 @@ object anon {
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: Image): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

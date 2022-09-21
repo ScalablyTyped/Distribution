@@ -21,5 +21,5 @@ trait ImportExportSpecifications extends StObject {
   def Item(Index: String): ImportExportSpecification = js.native
   def Item(Index: Double): ImportExportSpecification = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

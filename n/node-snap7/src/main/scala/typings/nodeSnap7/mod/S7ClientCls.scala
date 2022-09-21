@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("node-snap7", "S7Client")
 @js.native
-class S7ClientCls ()
+open class S7ClientCls ()
   extends StObject
      with S7Client

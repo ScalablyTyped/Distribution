@@ -2,8 +2,9 @@ package typings.oboe
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadableStream
-import typings.std.Error
+import typings.oboe.oboeStrings.data
+import typings.oboe.oboeStrings.end
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +15,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : OboeFunction = js.native
   
-  type CallbackSignature = js.Function3[
-    /* node */ js.Any, 
-    /* pathOrHeaders */ js.Any, 
-    /* ancestors */ js.Array[js.Object], 
-    js.Any
-  ]
+  type CallbackSignature = js.Function3[/* node */ Any, /* pathOrHeaders */ Any, /* ancestors */ js.Array[js.Object], Any]
   
   trait FailReason extends StObject {
     
@@ -29,7 +25,7 @@ object mod extends Shortcut {
     
     var statusCode: js.UndefOr[Double] = js.undefined
     
-    var thrown: js.UndefOr[Error] = js.undefined
+    var thrown: js.UndefOr[js.Error] = js.undefined
   }
   object FailReason {
     
@@ -52,7 +48,7 @@ object mod extends Shortcut {
       
       inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      inline def setThrown(value: Error): Self = StObject.set(x, "thrown", value.asInstanceOf[js.Any])
+      inline def setThrown(value: js.Error): Self = StObject.set(x, "thrown", value.asInstanceOf[js.Any])
       
       inline def setThrownUndefined: Self = StObject.set(x, "thrown", js.undefined)
     }
@@ -63,7 +59,10 @@ object mod extends Shortcut {
     
     def abort(): Unit = js.native
     
-    def done(callback: js.Function1[/* result */ js.Any, Unit]): Oboe = js.native
+    def done(callback: js.Function1[/* result */ Any, Unit]): Oboe = js.native
+    
+    def emit(message: data | end): Unit = js.native
+    def emit(message: data | end, data: String): Unit = js.native
     
     def fail(callback: js.Function1[/* result */ FailReason, Unit]): Oboe = js.native
     
@@ -73,7 +72,7 @@ object mod extends Shortcut {
     def on(eventPattern: String, callback: CallbackSignature): Oboe = js.native
     def on(event: String, pattern: String, callback: CallbackSignature): Oboe = js.native
     
-    def path(listeners: js.Any): Oboe = js.native
+    def path(listeners: Any): Oboe = js.native
     def path(pattern: String, callback: CallbackSignature): Oboe = js.native
     
     def removeListener(eventPattern: String, callback: CallbackSignature): Oboe = js.native
@@ -88,8 +87,12 @@ object mod extends Shortcut {
   trait OboeFunction
     extends js.Function {
     
+    // read data from the given Node stream
+    def apply(): Oboe = js.native
+    // simple fetch the url
     def apply(options: Options): Oboe = js.native
-    def apply(stream: ReadableStream): Oboe = js.native
+    // fetch with full parameters
+    def apply(stream: ReadableStream[Any]): Oboe = js.native
     def apply(url: String): Oboe = js.native
     
     var drop: js.Object = js.native
@@ -97,7 +100,7 @@ object mod extends Shortcut {
   
   trait Options extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var cached: js.UndefOr[Boolean] = js.undefined
     
@@ -118,7 +121,7 @@ object mod extends Shortcut {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       

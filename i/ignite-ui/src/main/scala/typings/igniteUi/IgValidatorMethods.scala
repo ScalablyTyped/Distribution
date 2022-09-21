@@ -43,8 +43,8 @@ trait IgValidatorMethods extends StObject {
     *
     * @param field Optional field object, selector or zero-based index for a single field to get error message for.
     */
-  def getErrorMessages(): js.Array[js.Any] = js.native
-  def getErrorMessages(field: js.Object): js.Array[js.Any] = js.native
+  def getErrorMessages(): js.Array[Any] = js.native
+  def getErrorMessages(field: js.Object): js.Array[Any] = js.native
   
   /**
     * Hide any possible message(s) (either messageTarget or igNotifier).

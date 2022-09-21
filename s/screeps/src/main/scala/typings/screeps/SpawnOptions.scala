@@ -44,7 +44,7 @@ object SpawnOptions {
     
     inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
-    inline def setDirectionsVarargs(value: DirectionConstant*): Self = StObject.set(x, "directions", js.Array(value :_*))
+    inline def setDirectionsVarargs(value: DirectionConstant*): Self = StObject.set(x, "directions", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object SpawnOptions {
     
     inline def setEnergyStructuresUndefined: Self = StObject.set(x, "energyStructures", js.undefined)
     
-    inline def setEnergyStructuresVarargs(value: (StructureSpawn | StructureExtension)*): Self = StObject.set(x, "energyStructures", js.Array(value :_*))
+    inline def setEnergyStructuresVarargs(value: (StructureSpawn | StructureExtension)*): Self = StObject.set(x, "energyStructures", js.Array(value*))
     
     inline def setMemory(value: CreepMemory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     

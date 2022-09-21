@@ -10,9 +10,9 @@ object matrixMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def invert(a: js.Array[Double]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def invert(a: js.Array[Double]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
-  inline def multiplyMatrix(a: js.Array[Double], b: js.Array[Double]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyMatrix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def multiplyMatrix(a: js.Array[Double], b: js.Array[Double]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyMatrix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def multiplyVec2(m: js.Array[Double], v: js.Array[Double]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyVec2")(m.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def multiplyVec2(m: js.Array[Double], v: js.Array[Double]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyVec2")(m.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
 }

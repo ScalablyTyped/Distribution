@@ -74,6 +74,30 @@ object Stalker {
   inline def garbageCollect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("garbageCollect")().asInstanceOf[Unit]
   
   /**
+    * Invalidates the current thread's translated code for a given basic block.
+    * Useful when providing a transform callback and wanting to dynamically
+    * adapt the instrumentation for a given basic block. This is much more
+    * efficient than unfollowing and re-following the thread, which would
+    * discard all cached translations and require all encountered basic blocks
+    * to be compiled from scratch.
+    *
+    * @param address Start address of basic block to invalidate.
+    */
+  inline def invalidate(address: NativePointerValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidate")(address.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  /**
+    * Invalidates a specific thread's translated code for a given basic block.
+    * Useful when providing a transform callback and wanting to dynamically
+    * adapt the instrumentation for a given basic block. This is much more
+    * efficient than unfollowing and re-following the thread, which would
+    * discard all cached translations and require all encountered basic blocks
+    * to be compiled from scratch.
+    *
+    * @param threadId Thread that should have some of its code invalidated.
+    * @param address Start address of basic block to invalidate.
+    */
+  inline def invalidate(threadId: ThreadId, address: NativePointerValue): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidate")(threadId.asInstanceOf[js.Any], address.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
     * Parses a binary blob comprised of `Gum.Event` values.
     *
     * @param events Binary blob containing zero or more `Gum.Event` values.

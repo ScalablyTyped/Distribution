@@ -15,22 +15,22 @@ trait ElementJax extends StObject {
   /*Removes the output and then retranslates the input into the internal form and reredners the output again. The
     * callback, if any, is called when the process completes.
     */
-  def Reprocess(callback: js.Any): CallbackObject = js.native
+  def Reprocess(callback: Any): CallbackObject = js.native
   
   /*Removes the output and produces it again (for example, if CSS has changed that would alter the spacing of the
     * mathematics). Note that the internal representation isn’t regenerated; only the output is. The callback, if
     * any, is called when the process completes.
     */
-  def Rerender(callback: js.Any): CallbackObject = js.native
+  def Rerender(callback: Any): CallbackObject = js.native
   
   /*Returns a reference to the original <script> DOM element associated to this element jax.*/
-  def SourceElement(): js.Any = js.native
+  def SourceElement(): Any = js.native
   
   /*Sets the input text for this element to the given text and reprocesses the mathematics. (I.e., updates the
     * equation to the new one given by text). When the processing is complete, the callback, if any, is called.
     */
   def Text(text: String): CallbackObject = js.native
-  def Text(text: String, callback: js.Any): CallbackObject = js.native
+  def Text(text: String, callback: Any): CallbackObject = js.native
   
   /*The directory where the jax files are stored (e.g., "[MathJax]/jax/element/mml").*/
   var directory: String = js.native

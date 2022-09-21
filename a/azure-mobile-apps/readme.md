@@ -10,10 +10,10 @@ Build mobile apps with data storage, push notifications and offline sync in minu
 | ------------------ | :-------------: |
 | Full name          | azure-mobile-apps |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 4663 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 494.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/azure-mobile-apps)

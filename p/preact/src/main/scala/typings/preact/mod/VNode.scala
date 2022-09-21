@@ -5,16 +5,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-//
-// Preact Virtual DOM
-// -----------------------------------
 trait VNode[P] extends StObject {
   
   /**
-  		 * The time that the rendering of this `vnode` was completed. Will only be
-  		 * set when the devtools are attached.
-  		 * Default value: `-1`
-  		 */
+  	 * The time that the rendering of this `vnode` was completed. Will only be
+  	 * set when the devtools are attached.
+  	 * Default value: `-1`
+  	 */
   var endTime: js.UndefOr[Double] = js.undefined
   
   var key: Key
@@ -22,16 +19,16 @@ trait VNode[P] extends StObject {
   var props: P & Children
   
   /**
-  		 * ref is not guaranteed by React.ReactElement, for compatibility reasons
-  		 * with popular react libs we define it as optional too
-  		 */
-  var ref: js.UndefOr[Ref[js.Any] | Null] = js.undefined
+  	 * ref is not guaranteed by React.ReactElement, for compatibility reasons
+  	 * with popular react libs we define it as optional too
+  	 */
+  var ref: js.UndefOr[Ref[Any] | Null] = js.undefined
   
   /**
-  		 * The time this `vnode` started rendering. Will only be set when
-  		 * the devtools are attached.
-  		 * Default value: `0`
-  		 */
+  	 * The time this `vnode` started rendering. Will only be set when
+  	 * the devtools are attached.
+  	 * Default value: `0`
+  	 */
   var startTime: js.UndefOr[Double] = js.undefined
   
   var `type`: ComponentType[P] | String
@@ -54,9 +51,9 @@ object VNode {
     
     inline def setProps(value: P & Children): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     

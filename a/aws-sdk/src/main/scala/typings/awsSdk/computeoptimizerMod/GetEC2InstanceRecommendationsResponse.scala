@@ -34,13 +34,13 @@ object GetEC2InstanceRecommendationsResponse {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: GetRecommendationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: GetRecommendationError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setInstanceRecommendations(value: InstanceRecommendations): Self = StObject.set(x, "instanceRecommendations", value.asInstanceOf[js.Any])
     
     inline def setInstanceRecommendationsUndefined: Self = StObject.set(x, "instanceRecommendations", js.undefined)
     
-    inline def setInstanceRecommendationsVarargs(value: InstanceRecommendation*): Self = StObject.set(x, "instanceRecommendations", js.Array(value :_*))
+    inline def setInstanceRecommendationsVarargs(value: InstanceRecommendation*): Self = StObject.set(x, "instanceRecommendations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

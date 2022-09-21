@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManualSharding extends StObject {
   
   /**
-    * Required. Group of packages, classes, and/or test methods to be run for each shard. When any physical devices are selected, the number of test_targets_for_shard must be >= 1 and <=
-    * 50. When no physical devices are selected, the number must be >= 1 and <= 500.
+    * Required. Group of packages, classes, and/or test methods to be run for each manually-created shard. You must specify at least one shard if this field is present. When you select
+    * one or more physical devices, the number of repeated test_targets_for_shard must be <= 50. When you select one or more ARM virtual devices, it must be <= 50. When you select only
+    * x86 virtual devices, it must be <= 500.
     */
   var testTargetsForShard: js.UndefOr[js.Array[TestTargetsForShard]] = js.undefined
 }
@@ -25,6 +26,6 @@ object ManualSharding {
     
     inline def setTestTargetsForShardUndefined: Self = StObject.set(x, "testTargetsForShard", js.undefined)
     
-    inline def setTestTargetsForShardVarargs(value: TestTargetsForShard*): Self = StObject.set(x, "testTargetsForShard", js.Array(value :_*))
+    inline def setTestTargetsForShardVarargs(value: TestTargetsForShard*): Self = StObject.set(x, "testTargetsForShard", js.Array(value*))
   }
 }

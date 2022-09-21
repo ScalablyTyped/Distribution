@@ -17,7 +17,7 @@ trait InstanceBlockDeviceMapping extends StObject {
   var ebs: js.UndefOr[EbsInstanceBlockDeviceSpecification] = js.undefined
   
   /**
-    * Use to remove a mapping from the parent image.
+    * Use to remove a mapping from the base image.
     */
   var noDevice: js.UndefOr[EmptyString] = js.undefined
   

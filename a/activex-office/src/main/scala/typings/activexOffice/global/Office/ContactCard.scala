@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ContactCard")
 @js.native
-/* private */ class ContactCard ()
+/* private */ open class ContactCard ()
   extends StObject
      with typings.activexOffice.Office.ContactCard

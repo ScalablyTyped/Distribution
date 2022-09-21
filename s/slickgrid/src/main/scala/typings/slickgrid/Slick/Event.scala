@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Event[T] extends StObject {
   
-  def notify(args: T): js.Any = js.native
-  def notify(args: T, e: Unit, scope: js.Any): js.Any = js.native
-  def notify(args: T, e: DOMEvent): js.Any = js.native
-  def notify(args: T, e: DOMEvent, scope: js.Any): js.Any = js.native
-  def notify(args: T, e: EventData): js.Any = js.native
-  def notify(args: T, e: EventData, scope: js.Any): js.Any = js.native
-  def notify(args: Unit, e: Unit, scope: js.Any): js.Any = js.native
-  def notify(args: Unit, e: DOMEvent): js.Any = js.native
-  def notify(args: Unit, e: DOMEvent, scope: js.Any): js.Any = js.native
-  def notify(args: Unit, e: EventData): js.Any = js.native
-  def notify(args: Unit, e: EventData, scope: js.Any): js.Any = js.native
+  def notify(args: T): Any = js.native
+  def notify(args: T, e: Unit, scope: Any): Any = js.native
+  def notify(args: T, e: DOMEvent): Any = js.native
+  def notify(args: T, e: DOMEvent, scope: Any): Any = js.native
+  def notify(args: T, e: EventData): Any = js.native
+  def notify(args: T, e: EventData, scope: Any): Any = js.native
+  def notify(args: Unit, e: Unit, scope: Any): Any = js.native
+  def notify(args: Unit, e: DOMEvent): Any = js.native
+  def notify(args: Unit, e: DOMEvent, scope: Any): Any = js.native
+  def notify(args: Unit, e: EventData): Any = js.native
+  def notify(args: Unit, e: EventData, scope: Any): Any = js.native
   
   /***
     * Adds an event handler to be called when the event is fired.

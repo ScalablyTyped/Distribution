@@ -2,6 +2,7 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.radioInterfaceMod.RadioGroupContextProps
+import typings.antd.radioInterfaceMod.RadioGroupOptionType
 import typings.react.mod.Context
 import typings.react.mod.Provider
 import org.scalablytyped.runtime.StObject
@@ -17,6 +18,14 @@ object radioContextMod extends Shortcut {
   @JSImport("antd/lib/radio/context", "RadioGroupContextProvider")
   @js.native
   val RadioGroupContextProvider: Provider[RadioGroupContextProps | Null] = js.native
+  
+  @JSImport("antd/lib/radio/context", "RadioOptionTypeContext")
+  @js.native
+  val RadioOptionTypeContext: Context[RadioGroupOptionType | Null] = js.native
+  
+  @JSImport("antd/lib/radio/context", "RadioOptionTypeContextProvider")
+  @js.native
+  val RadioOptionTypeContextProvider: Provider[RadioGroupOptionType | Null] = js.native
   
   type _To = Context[RadioGroupContextProps | Null]
   

@@ -4,16 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A test of an Android application that can control an Android component
-  * independently of its normal lifecycle. Android instrumentation tests run an
-  * application APK and test APK inside the same process on a virtual or
-  * physical AndroidDevice.  They also specify a test runner class, such as
-  * com.google.GoogleTestRunner, which can vary on the specific instrumentation
-  * framework chosen.  See
-  * &lt;http://developer.android.com/tools/testing/testing_android.html&gt; for
-  * more information on types of Android tests.
-  */
 trait SchemaAndroidInstrumentationTest extends StObject {
   
   /**
@@ -27,22 +17,19 @@ trait SchemaAndroidInstrumentationTest extends StObject {
   var appBundle: js.UndefOr[SchemaAppBundle] = js.undefined
   
   /**
-    * The java package for the application under test. The default value is
-    * determined by examining the application&#39;s manifest.
+    * The java package for the application under test. The default value is determined by examining the application's manifest.
     */
-  var appPackageId: js.UndefOr[String] = js.undefined
+  var appPackageId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The option of whether running each test within its own invocation of
-    * instrumentation with Android Test Orchestrator or not. ** Orchestrator is
-    * only compatible with AndroidJUnitRunner version 1.0 or higher! **
-    * Orchestrator offers the following benefits:  - No shared state  - Crashes
-    * are isolated  - Logs are scoped per test  See
-    * &lt;https://developer.android.com/training/testing/junit-runner.html#using-android-test-orchestrator&gt;
-    * for more information about Android Test Orchestrator.  If not set, the
-    * test will be run without the orchestrator.
+    * The option of whether running each test within its own invocation of instrumentation with Android Test Orchestrator or not. ** Orchestrator is only compatible with AndroidJUnitRunner version 1.1 or higher! ** Orchestrator offers the following benefits: - No shared state - Crashes are isolated - Logs are scoped per test See for more information about Android Test Orchestrator. If not set, the test will be run without the orchestrator.
     */
-  var orchestratorOption: js.UndefOr[String] = js.undefined
+  var orchestratorOption: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The option to run tests in multiple shards in parallel.
+    */
+  var shardingOption: js.UndefOr[SchemaShardingOption] = js.undefined
   
   /**
     * Required. The APK containing the test code to be executed.
@@ -50,25 +37,19 @@ trait SchemaAndroidInstrumentationTest extends StObject {
   var testApk: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
-    * The java package for the test to be executed. The default value is
-    * determined by examining the application&#39;s manifest.
+    * The java package for the test to be executed. The default value is determined by examining the application's manifest.
     */
-  var testPackageId: js.UndefOr[String] = js.undefined
+  var testPackageId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The InstrumentationTestRunner class. The default value is determined by
-    * examining the application&#39;s manifest.
+    * The InstrumentationTestRunner class. The default value is determined by examining the application's manifest.
     */
-  var testRunnerClass: js.UndefOr[String] = js.undefined
+  var testRunnerClass: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Each target must be fully qualified with the package name or class name,
-    * in one of these formats:  - &quot;package package_name&quot;  -
-    * &quot;class package_name.class_name&quot;  - &quot;class
-    * package_name.class_name#method_name&quot;  If empty, all targets in the
-    * module will be run.
+    * Each target must be fully qualified with the package name or class name, in one of these formats: - "package package_name" - "class package_name.class_name" - "class package_name.class_name#method_name" If empty, all targets in the module will be run.
     */
-  var testTargets: js.UndefOr[js.Array[String]] = js.undefined
+  var testTargets: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaAndroidInstrumentationTest {
   
@@ -89,11 +70,19 @@ object SchemaAndroidInstrumentationTest {
     
     inline def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
     
+    inline def setAppPackageIdNull: Self = StObject.set(x, "appPackageId", null)
+    
     inline def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
     
     inline def setOrchestratorOption(value: String): Self = StObject.set(x, "orchestratorOption", value.asInstanceOf[js.Any])
     
+    inline def setOrchestratorOptionNull: Self = StObject.set(x, "orchestratorOption", null)
+    
     inline def setOrchestratorOptionUndefined: Self = StObject.set(x, "orchestratorOption", js.undefined)
+    
+    inline def setShardingOption(value: SchemaShardingOption): Self = StObject.set(x, "shardingOption", value.asInstanceOf[js.Any])
+    
+    inline def setShardingOptionUndefined: Self = StObject.set(x, "shardingOption", js.undefined)
     
     inline def setTestApk(value: SchemaFileReference): Self = StObject.set(x, "testApk", value.asInstanceOf[js.Any])
     
@@ -101,16 +90,22 @@ object SchemaAndroidInstrumentationTest {
     
     inline def setTestPackageId(value: String): Self = StObject.set(x, "testPackageId", value.asInstanceOf[js.Any])
     
+    inline def setTestPackageIdNull: Self = StObject.set(x, "testPackageId", null)
+    
     inline def setTestPackageIdUndefined: Self = StObject.set(x, "testPackageId", js.undefined)
     
     inline def setTestRunnerClass(value: String): Self = StObject.set(x, "testRunnerClass", value.asInstanceOf[js.Any])
+    
+    inline def setTestRunnerClassNull: Self = StObject.set(x, "testRunnerClass", null)
     
     inline def setTestRunnerClassUndefined: Self = StObject.set(x, "testRunnerClass", js.undefined)
     
     inline def setTestTargets(value: js.Array[String]): Self = StObject.set(x, "testTargets", value.asInstanceOf[js.Any])
     
+    inline def setTestTargetsNull: Self = StObject.set(x, "testTargets", null)
+    
     inline def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
     
-    inline def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
+    inline def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value*))
   }
 }

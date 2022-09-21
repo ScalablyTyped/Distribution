@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.Stem")
 @js.native
-class Stem protected ()
+open class Stem protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Stem {
   def this(options: Stemdirection) = this()

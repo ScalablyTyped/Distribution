@@ -34,7 +34,7 @@ object RelayResponsePayload {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setFieldPayloads(value: js.Array[HandleFieldPayload]): Self = StObject.set(x, "fieldPayloads", value.asInstanceOf[js.Any])
     
@@ -42,7 +42,7 @@ object RelayResponsePayload {
     
     inline def setFieldPayloadsUndefined: Self = StObject.set(x, "fieldPayloads", js.undefined)
     
-    inline def setFieldPayloadsVarargs(value: HandleFieldPayload*): Self = StObject.set(x, "fieldPayloads", js.Array(value :_*))
+    inline def setFieldPayloadsVarargs(value: HandleFieldPayload*): Self = StObject.set(x, "fieldPayloads", js.Array(value*))
     
     inline def setIncrementalPlaceholders(value: js.Array[IncrementalDataPlaceholder]): Self = StObject.set(x, "incrementalPlaceholders", value.asInstanceOf[js.Any])
     
@@ -50,7 +50,7 @@ object RelayResponsePayload {
     
     inline def setIncrementalPlaceholdersUndefined: Self = StObject.set(x, "incrementalPlaceholders", js.undefined)
     
-    inline def setIncrementalPlaceholdersVarargs(value: IncrementalDataPlaceholder*): Self = StObject.set(x, "incrementalPlaceholders", js.Array(value :_*))
+    inline def setIncrementalPlaceholdersVarargs(value: IncrementalDataPlaceholder*): Self = StObject.set(x, "incrementalPlaceholders", js.Array(value*))
     
     inline def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object RelayResponsePayload {
     
     inline def setModuleImportPayloadsUndefined: Self = StObject.set(x, "moduleImportPayloads", js.undefined)
     
-    inline def setModuleImportPayloadsVarargs(value: ModuleImportPayload*): Self = StObject.set(x, "moduleImportPayloads", js.Array(value :_*))
+    inline def setModuleImportPayloadsVarargs(value: ModuleImportPayload*): Self = StObject.set(x, "moduleImportPayloads", js.Array(value*))
     
     inline def setSource(value: MutableRecordSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

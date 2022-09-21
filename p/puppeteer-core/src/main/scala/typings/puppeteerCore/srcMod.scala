@@ -21,7 +21,7 @@ object srcMod {
     var all: EventHandlerMap = js.native
     
     def emit(`type`: Asterisk): Unit = js.native
-    def emit(`type`: Asterisk, event: js.Any): Unit = js.native
+    def emit(`type`: Asterisk, event: Any): Unit = js.native
     def emit[T](`type`: EventType): Unit = js.native
     def emit[T](`type`: EventType, event: T): Unit = js.native
     
@@ -32,7 +32,7 @@ object srcMod {
     def on[T](`type`: EventType, handler: Handler[T]): Unit = js.native
   }
   
-  type EventHandlerList = js.Array[Handler[js.Any]]
+  type EventHandlerList = js.Array[Handler[Any]]
   
   type EventHandlerMap = Map[EventType, EventHandlerList | WildCardEventHandlerList]
   
@@ -42,5 +42,5 @@ object srcMod {
   
   type WildCardEventHandlerList = js.Array[WildcardHandler]
   
-  type WildcardHandler = js.Function2[/* type */ EventType, /* event */ js.UndefOr[js.Any], Unit]
+  type WildcardHandler = js.Function2[/* type */ EventType, /* event */ js.UndefOr[Any], Unit]
 }

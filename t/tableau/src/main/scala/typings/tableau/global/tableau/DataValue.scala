@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.DataValue")
 @js.native
-class DataValue ()
+open class DataValue ()
   extends StObject
      with typings.tableau.tableau.DataValue {
   
@@ -16,5 +16,5 @@ class DataValue ()
   
   /** Contains the raw native value as a JavaScript type, which is one of String, Number, Boolean, or Date */
   /* CompleteClass */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

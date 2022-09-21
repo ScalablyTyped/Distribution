@@ -137,7 +137,7 @@ object ExternalPayment {
   
   trait RequestOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var amount: js.UndefOr[Double] = js.undefined
     

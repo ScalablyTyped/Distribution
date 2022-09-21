@@ -13,7 +13,6 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion
 import typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform
 import typings.carbonComponentsReact.carbonComponentsReactStrings.area
 import typings.carbonComponentsReact.carbonComponentsReactStrings.article
-import typings.carbonComponentsReact.carbonComponentsReactStrings.as
 import typings.carbonComponentsReact.carbonComponentsReactStrings.aside
 import typings.carbonComponentsReact.carbonComponentsReactStrings.audio
 import typings.carbonComponentsReact.carbonComponentsReactStrings.b
@@ -118,6 +117,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.meta
 import typings.carbonComponentsReact.carbonComponentsReactStrings.metadata
 import typings.carbonComponentsReact.carbonComponentsReactStrings.meter
 import typings.carbonComponentsReact.carbonComponentsReactStrings.mpath
+import typings.carbonComponentsReact.carbonComponentsReactStrings.narrow
 import typings.carbonComponentsReact.carbonComponentsReactStrings.nav
 import typings.carbonComponentsReact.carbonComponentsReactStrings.noindex
 import typings.carbonComponentsReact.carbonComponentsReactStrings.noscript
@@ -182,10 +182,12 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.wbr
 import typings.carbonComponentsReact.carbonComponentsReactStrings.webview
 import typings.carbonComponentsReact.typingsSharedMod.FCReturn
 import typings.carbonComponentsReact.typingsSharedMod.JSXIntrinsicElementProps
+import typings.carbonComponentsReact.typingsSharedMod.ReactComponentConstructor
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -198,7 +200,6 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
-import typings.react.mod.JSXElementConstructor
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -230,6 +231,7 @@ import typings.react.reactStrings.search
 import typings.react.reactStrings.tel
 import typings.react.reactStrings.url
 import typings.react.reactStrings.yes
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.Omit
@@ -244,7 +246,7 @@ object rowMod {
   val ^ : js.Any = js.native
   
   inline def default(props: RowDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
-  inline def default[T /* <: JSXElementConstructor[js.Any] */](props: RowCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default[T /* <: ReactComponentConstructor[scala.Nothing] */](props: RowCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_a(props: RowIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -648,7 +650,7 @@ object rowMod {
     }
   }
   
-  type RowCustomComponentProps[C /* <: JSXElementConstructor[js.Any] */] = RowBaseProps & SafeProps[js.Any] & AsC[C]
+  type RowCustomComponentProps[C /* <: ReactComponentConstructor[scala.Nothing] */] = RowBaseProps & SafeProps[Any] & AsC[C]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.react.mod.DOMAttributes because var conflicts: children. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onMouseUp, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onMouseDown, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, onCanPlayThrough, onClick, onLoad, onLoadedMetadata, onSeeked, onChange, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
@@ -695,7 +697,7 @@ object rowMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -803,6 +805,7 @@ object rowMod {
     // Keyboard Events
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
+    /** @deprecated */
     var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
@@ -913,7 +916,7 @@ object rowMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -998,7 +1001,7 @@ object rowMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -1016,7 +1019,7 @@ object rowMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -1076,7 +1079,7 @@ object rowMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1176,7 +1179,7 @@ object rowMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1392,7 +1395,7 @@ object rowMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1446,7 +1449,7 @@ object rowMod {
     }
   }
   
-  type RowIntrinsicProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = RowBaseProps & (SafeProps[JSXIntrinsicElementProps[K, `false`]]) & As[K]
+  type RowIntrinsicProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */] = RowBaseProps & (SafeProps[JSXIntrinsicElementProps[K, `false`]]) & As[K]
   
-  type SafeProps[P] = Omit[P, as | condensed]
+  type SafeProps[P] = Omit[P, condensed | narrow]
 }

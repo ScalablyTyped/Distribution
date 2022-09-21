@@ -1,14 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RawTexture3D")
 @js.native
-class RawTexture3D protected ()
+open class RawTexture3D protected ()
   extends StObject
      with typings.babylonjs.BABYLON.RawTexture3D {
   /**
@@ -25,7 +24,7 @@ class RawTexture3D protected ()
     * @param textureType defines the texture Type (Engine.TEXTURETYPE_UNSIGNED_INT, Engine.TEXTURETYPE_FLOAT...)
     */
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -34,7 +33,7 @@ class RawTexture3D protected ()
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -44,7 +43,7 @@ class RawTexture3D protected ()
     generateMipMaps: Boolean
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -55,7 +54,7 @@ class RawTexture3D protected ()
     invertY: Boolean
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -66,7 +65,7 @@ class RawTexture3D protected ()
     invertY: Boolean
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -78,7 +77,7 @@ class RawTexture3D protected ()
     samplingMode: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -90,7 +89,7 @@ class RawTexture3D protected ()
     samplingMode: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -102,7 +101,7 @@ class RawTexture3D protected ()
     samplingMode: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -114,7 +113,7 @@ class RawTexture3D protected ()
     samplingMode: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -127,7 +126,7 @@ class RawTexture3D protected ()
     textureType: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -140,7 +139,7 @@ class RawTexture3D protected ()
     textureType: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -153,7 +152,7 @@ class RawTexture3D protected ()
     textureType: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -166,7 +165,7 @@ class RawTexture3D protected ()
     textureType: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -179,7 +178,7 @@ class RawTexture3D protected ()
     textureType: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -192,7 +191,7 @@ class RawTexture3D protected ()
     textureType: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,
@@ -205,7 +204,7 @@ class RawTexture3D protected ()
     textureType: Double
   ) = this()
   def this(
-    data: ArrayBufferView,
+    data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
     depth: Double,

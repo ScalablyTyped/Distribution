@@ -8,11 +8,13 @@ trait StockToolsGuiDefinitionsSimpleShapesOptions extends StObject {
   
   var circle: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesCircleOptions] = js.undefined
   
+  var ellipse: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesEllipseOptions] = js.undefined
+  
   /**
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
   
   var label: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesLabelOptions] = js.undefined
   
@@ -31,11 +33,15 @@ object StockToolsGuiDefinitionsSimpleShapesOptions {
     
     inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setEllipse(value: StockToolsGuiDefinitionsSimpleShapesEllipseOptions): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+    
+    inline def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
+    
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLabel(value: StockToolsGuiDefinitionsSimpleShapesLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

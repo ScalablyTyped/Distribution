@@ -8,53 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object limitedFilterMod {
   
-  @JSImport("@firebase/database/dist/src/core/view/filter/LimitedFilter", "LimitedFilter")
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/filter/LimitedFilter", "LimitedFilter")
   @js.native
-  class LimitedFilter protected ()
+  open class LimitedFilter protected ()
     extends StObject
        with NodeFilter {
-    /**
-      * @param {!QueryParams} params
-      */
     def this(params: QueryParams) = this()
     
-    /**
-      * @param {!Node} snap
-      * @param {string} childKey
-      * @param {!Node} childSnap
-      * @param {!CompleteChildSource} source
-      * @param {?ChildChangeAccumulator} changeAccumulator
-      * @return {!Node}
-      * @private
-      */
-    /* private */ var fullLimitUpdateChild_ : js.Any = js.native
+    /* private */ var fullLimitUpdateChild_ : Any = js.native
     
-    /**
-      * @const
-      * @type {!Index}
-      * @private
-      */
-    /* private */ val index_ : js.Any = js.native
+    /* private */ val index_ : Any = js.native
     
-    /**
-      * @const
-      * @type {number}
-      * @private
-      */
-    /* private */ val limit_ : js.Any = js.native
+    /* private */ val limit_ : Any = js.native
     
-    /**
-      * @const
-      * @type {RangedFilter}
-      * @private
-      */
-    /* private */ val rangedFilter_ : js.Any = js.native
+    /* private */ val rangedFilter_ : Any = js.native
     
-    /**
-      * @const
-      * @type {boolean}
-      * @private
-      */
-    /* private */ val reverse_ : js.Any = js.native
+    /* private */ val reverse_ : Any = js.native
   }
 }

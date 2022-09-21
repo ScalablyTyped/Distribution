@@ -58,14 +58,14 @@ object featureManagementInterfacesMod {
     
     @JSImport("vso-node-api/interfaces/FeatureManagementInterfaces", "TypeInfo.ContributedFeatureState")
     @js.native
-    def ContributedFeatureState: js.Any = js.native
+    def ContributedFeatureState: Any = js.native
     
     @JSImport("vso-node-api/interfaces/FeatureManagementInterfaces", "TypeInfo.ContributedFeatureStateQuery")
     @js.native
-    def ContributedFeatureStateQuery: js.Any = js.native
-    inline def ContributedFeatureStateQuery_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureStateQuery")(x.asInstanceOf[js.Any])
+    def ContributedFeatureStateQuery: Any = js.native
+    inline def ContributedFeatureStateQuery_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureStateQuery")(x.asInstanceOf[js.Any])
     
-    inline def ContributedFeatureState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureState")(x.asInstanceOf[js.Any])
+    inline def ContributedFeatureState_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureState")(x.asInstanceOf[js.Any])
   }
   
   trait ContributedFeature extends StObject {
@@ -73,7 +73,7 @@ object featureManagementInterfacesMod {
     /**
       * Named links describing the feature
       */
-    var _links: js.Any
+    var _links: Any
     
     /**
       * If true, the feature is enabled unless overridden at some scope
@@ -118,7 +118,7 @@ object featureManagementInterfacesMod {
   object ContributedFeature {
     
     inline def apply(
-      _links: js.Any,
+      _links: Any,
       defaultState: Boolean,
       defaultValueRules: js.Array[ContributedFeatureValueRule],
       description: String,
@@ -138,7 +138,7 @@ object featureManagementInterfacesMod {
       
       inline def setDefaultValueRules(value: js.Array[ContributedFeatureValueRule]): Self = StObject.set(x, "defaultValueRules", value.asInstanceOf[js.Any])
       
-      inline def setDefaultValueRulesVarargs(value: ContributedFeatureValueRule*): Self = StObject.set(x, "defaultValueRules", js.Array(value :_*))
+      inline def setDefaultValueRulesVarargs(value: ContributedFeatureValueRule*): Self = StObject.set(x, "defaultValueRules", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -148,15 +148,15 @@ object featureManagementInterfacesMod {
       
       inline def setOverrideRules(value: js.Array[ContributedFeatureValueRule]): Self = StObject.set(x, "overrideRules", value.asInstanceOf[js.Any])
       
-      inline def setOverrideRulesVarargs(value: ContributedFeatureValueRule*): Self = StObject.set(x, "overrideRules", js.Array(value :_*))
+      inline def setOverrideRulesVarargs(value: ContributedFeatureValueRule*): Self = StObject.set(x, "overrideRules", js.Array(value*))
       
       inline def setScopes(value: js.Array[ContributedFeatureSettingScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setScopesVarargs(value: ContributedFeatureSettingScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: ContributedFeatureSettingScope*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setServiceInstanceType(value: String): Self = StObject.set(x, "serviceInstanceType", value.asInstanceOf[js.Any])
       
-      inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,7 +273,7 @@ object featureManagementInterfacesMod {
       
       inline def setFeatureIds(value: js.Array[String]): Self = StObject.set(x, "featureIds", value.asInstanceOf[js.Any])
       
-      inline def setFeatureIdsVarargs(value: String*): Self = StObject.set(x, "featureIds", js.Array(value :_*))
+      inline def setFeatureIdsVarargs(value: String*): Self = StObject.set(x, "featureIds", js.Array(value*))
       
       inline def setFeatureStates(value: StringDictionary[ContributedFeatureState]): Self = StObject.set(x, "featureStates", value.asInstanceOf[js.Any])
       
@@ -291,11 +291,11 @@ object featureManagementInterfacesMod {
     /**
       * Properties to feed to the IContributedFeatureValuePlugin
       */
-    var properties: StringDictionary[js.Any]
+    var properties: StringDictionary[Any]
   }
   object ContributedFeatureValueRule {
     
-    inline def apply(name: String, properties: StringDictionary[js.Any]): ContributedFeatureValueRule = {
+    inline def apply(name: String, properties: StringDictionary[Any]): ContributedFeatureValueRule = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContributedFeatureValueRule]
     }
@@ -304,7 +304,7 @@ object featureManagementInterfacesMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
 }

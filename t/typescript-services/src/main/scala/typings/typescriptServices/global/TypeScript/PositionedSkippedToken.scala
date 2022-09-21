@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.PositionedSkippedToken")
 @js.native
-class PositionedSkippedToken protected ()
+open class PositionedSkippedToken protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PositionedSkippedToken {
   def this(
@@ -19,13 +19,13 @@ class PositionedSkippedToken protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _element: js.Any = js.native
+  var _element: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _fullStart: js.Any = js.native
+  var _fullStart: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _parent: js.Any = js.native
+  var _parent: Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): typings.typescriptServices.TypeScript.PositionedElement = js.native

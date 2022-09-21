@@ -51,7 +51,7 @@ object IndexFacesRequest {
     
     inline def setDetectionAttributesUndefined: Self = StObject.set(x, "DetectionAttributes", js.undefined)
     
-    inline def setDetectionAttributesVarargs(value: Attribute*): Self = StObject.set(x, "DetectionAttributes", js.Array(value :_*))
+    inline def setDetectionAttributesVarargs(value: Attribute*): Self = StObject.set(x, "DetectionAttributes", js.Array(value*))
     
     inline def setExternalImageId(value: ExternalImageId): Self = StObject.set(x, "ExternalImageId", value.asInstanceOf[js.Any])
     

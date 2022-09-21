@@ -44,7 +44,7 @@ object Behavior {
     dispose: () => Unit,
     endUpdate: () => Unit,
     get_element: () => HTMLElement,
-    get_events: () => js.Any,
+    get_events: () => Any,
     get_id: () => String,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,

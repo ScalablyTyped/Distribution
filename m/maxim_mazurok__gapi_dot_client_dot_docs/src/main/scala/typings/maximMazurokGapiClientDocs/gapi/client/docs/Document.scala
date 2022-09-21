@@ -20,42 +20,42 @@ trait Document extends StObject {
   var footers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footer}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The footnotes in the document, keyed by footnote ID. */
   var footnotes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footnote}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The headers in the document, keyed by header ID. */
   var headers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Header}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The inline objects in the document, keyed by object ID. */
   var inlineObjects: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.InlineObject}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The lists in the document, keyed by list ID. */
   var lists: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.List}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The named ranges in the document, keyed by name. */
   var namedRanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.NamedRanges}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The named styles of the document. */
@@ -65,15 +65,15 @@ trait Document extends StObject {
   var positionedObjects: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.PositionedObject}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /**
     * Output only. The revision ID of the document. Can be used in update requests to specify which revision of a document to apply updates to and how the request should behave if the
-    * document has been edited since that revision. Only populated if the user has edit access to the document. The format of the revision ID may change over time, so it should be treated
-    * opaquely. A returned revision ID is only guaranteed to be valid for 24 hours after it has been returned and cannot be shared across users. If the revision ID is unchanged between
-    * calls, then the document has not changed. Conversely, a changed ID (for the same document and user) usually means the document has been updated; however, a changed ID can also be
-    * due to internal factors such as ID format changes.
+    * document has been edited since that revision. Only populated if the user has edit access to the document. The revision ID is not a sequential number but an opaque string. The format
+    * of the revision ID might change over time. A returned revision ID is only guaranteed to be valid for 24 hours after it has been returned and cannot be shared across users. If the
+    * revision ID is unchanged between calls, then the document has not changed. Conversely, a changed ID (for the same document and user) usually means the document has been updated.
+    * However, a changed ID can also be due to internal factors such as ID format changes.
     */
   var revisionId: js.UndefOr[String] = js.undefined
   
@@ -81,14 +81,14 @@ trait Document extends StObject {
   var suggestedDocumentStyleChanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedDocumentStyle}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The suggested changes to the named styles of the document, keyed by suggestion ID. */
   var suggestedNamedStylesChanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedNamedStyles}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The suggestions view mode applied to the document. Note: When editing a document, changes must be based on a document with SUGGESTIONS_INLINE. */
@@ -121,7 +121,7 @@ object Document {
     inline def setFooters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footer}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
     
     inline def setFootersUndefined: Self = StObject.set(x, "footers", js.undefined)
@@ -129,7 +129,7 @@ object Document {
     inline def setFootnotes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footnote}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
     
     inline def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
@@ -137,7 +137,7 @@ object Document {
     inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Header}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
@@ -145,7 +145,7 @@ object Document {
     inline def setInlineObjects(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.InlineObject}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "inlineObjects", value.asInstanceOf[js.Any])
     
     inline def setInlineObjectsUndefined: Self = StObject.set(x, "inlineObjects", js.undefined)
@@ -153,7 +153,7 @@ object Document {
     inline def setLists(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.List}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
@@ -161,7 +161,7 @@ object Document {
     inline def setNamedRanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.NamedRanges}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
     inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
@@ -173,7 +173,7 @@ object Document {
     inline def setPositionedObjects(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.PositionedObject}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "positionedObjects", value.asInstanceOf[js.Any])
     
     inline def setPositionedObjectsUndefined: Self = StObject.set(x, "positionedObjects", js.undefined)
@@ -185,7 +185,7 @@ object Document {
     inline def setSuggestedDocumentStyleChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedDocumentStyle}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "suggestedDocumentStyleChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedDocumentStyleChangesUndefined: Self = StObject.set(x, "suggestedDocumentStyleChanges", js.undefined)
@@ -193,7 +193,7 @@ object Document {
     inline def setSuggestedNamedStylesChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedNamedStyles}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "suggestedNamedStylesChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedNamedStylesChangesUndefined: Self = StObject.set(x, "suggestedNamedStylesChanges", js.undefined)

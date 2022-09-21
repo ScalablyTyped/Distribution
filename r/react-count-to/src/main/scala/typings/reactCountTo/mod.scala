@@ -10,8 +10,8 @@ object mod {
   
   @JSImport("react-count-to", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends PureComponent[Props, js.Object, js.Any]
+  open class ^ ()
+    extends PureComponent[Props, js.Object, Any]
   
   trait Props extends StObject {
     
@@ -82,5 +82,5 @@ object mod {
     }
   }
   
-  type ReactCountTo = PureComponent[Props, js.Object, js.Any]
+  type ReactCountTo = PureComponent[Props, js.Object, Any]
 }

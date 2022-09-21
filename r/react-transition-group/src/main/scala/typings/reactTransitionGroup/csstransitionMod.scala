@@ -12,10 +12,10 @@ object csstransitionMod {
   
   @JSImport("react-transition-group/CSSTransition", JSImport.Default)
   @js.native
-  class default[Ref /* <: js.UndefOr[HTMLElement] */] ()
-    extends Component[CSSTransitionProps[Ref], js.Object, js.Any]
+  open class default[Ref /* <: js.UndefOr[HTMLElement] */] ()
+    extends Component[CSSTransitionProps[Ref], js.Object, Any]
   
-  type CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] = Component[CSSTransitionProps[Ref], js.Object, js.Any]
+  type CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] = Component[CSSTransitionProps[Ref], js.Object, Any]
   
   trait CSSTransitionClassNames extends StObject {
     

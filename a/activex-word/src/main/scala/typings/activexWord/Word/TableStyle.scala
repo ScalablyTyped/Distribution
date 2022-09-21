@@ -28,7 +28,7 @@ trait TableStyle extends StObject {
   
   var LeftPadding: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RightPadding: Double
   
@@ -59,7 +59,7 @@ object TableStyle {
     Creator: Double,
     LeftIndent: Double,
     LeftPadding: Double,
-    Parent: js.Any,
+    Parent: Any,
     RightPadding: Double,
     RowStripe: Double,
     Shading: Shading,
@@ -97,7 +97,7 @@ object TableStyle {
     
     inline def setLeftPadding(value: Double): Self = StObject.set(x, "LeftPadding", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRightPadding(value: Double): Self = StObject.set(x, "RightPadding", value.asInstanceOf[js.Any])
     

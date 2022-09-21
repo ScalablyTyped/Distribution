@@ -1,6 +1,7 @@
 package typings.sipJs.anon
 
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StringDictionary
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler
 import typings.sipJs.coreMod.Logger
 import typings.sipJs.coreMod.URI
@@ -30,6 +31,10 @@ trait RequiredUserAgentOptions extends StObject {
   
   var autoStop: Boolean
   
+  var contactName: String
+  
+  var contactParams: StringDictionary[String]
+  
   var delegate: UserAgentDelegate
   
   var displayName: String
@@ -41,8 +46,6 @@ trait RequiredUserAgentOptions extends StObject {
   var hackIpInContact: Boolean | String
   
   var hackViaTcp: Boolean
-  
-  var hackWssInTransport: Boolean
   
   var logBuiltinEnabled: Boolean
   
@@ -63,6 +66,8 @@ trait RequiredUserAgentOptions extends StObject {
   
   var reconnectionDelay: Double
   
+  var sendInitialProvisionalResponse: Boolean
+  
   def sessionDescriptionHandlerFactory(session: Session): SessionDescriptionHandler
   def sessionDescriptionHandlerFactory(session: Session, options: js.Object): SessionDescriptionHandler
   
@@ -79,9 +84,9 @@ trait RequiredUserAgentOptions extends StObject {
   
   var sipjsId: String
   
-  var transportConstructor: Instantiable2[/* logger */ Logger, /* options */ js.Any, Transport]
+  var transportConstructor: Instantiable2[/* logger */ Logger, /* options */ Any, Transport]
   
-  var transportOptions: js.Any
+  var transportOptions: Any
   
   var uri: URI
   
@@ -98,13 +103,14 @@ object RequiredUserAgentOptions {
     authorizationUsername: String,
     autoStart: Boolean,
     autoStop: Boolean,
+    contactName: String,
+    contactParams: StringDictionary[String],
     delegate: UserAgentDelegate,
     displayName: String,
     forceRport: Boolean,
     hackAllowUnregisteredOptionTags: Boolean,
     hackIpInContact: Boolean | String,
     hackViaTcp: Boolean,
-    hackWssInTransport: Boolean,
     logBuiltinEnabled: Boolean,
     logConfiguration: Boolean,
     logConnector: (/* level */ LogLevel, /* category */ String, /* label */ js.UndefOr[String], /* content */ String) => Unit,
@@ -113,19 +119,20 @@ object RequiredUserAgentOptions {
     preloadedRouteSet: js.Array[String],
     reconnectionAttempts: Double,
     reconnectionDelay: Double,
+    sendInitialProvisionalResponse: Boolean,
     sessionDescriptionHandlerFactory: (/* session */ Session, /* options */ js.UndefOr[js.Object]) => SessionDescriptionHandler,
     sessionDescriptionHandlerFactoryOptions: js.Object,
     sipExtension100rel: SIPExtension,
     sipExtensionExtraSupported: js.Array[String],
     sipExtensionReplaces: SIPExtension,
     sipjsId: String,
-    transportConstructor: Instantiable2[/* logger */ Logger, /* options */ js.Any, Transport],
-    transportOptions: js.Any,
+    transportConstructor: Instantiable2[/* logger */ Logger, /* options */ Any, Transport],
+    transportOptions: Any,
     uri: URI,
     userAgentString: String,
     viaHost: String
   ): RequiredUserAgentOptions = {
-    val __obj = js.Dynamic.literal(allowLegacyNotifications = allowLegacyNotifications.asInstanceOf[js.Any], authorizationHa1 = authorizationHa1.asInstanceOf[js.Any], authorizationPassword = authorizationPassword.asInstanceOf[js.Any], authorizationUsername = authorizationUsername.asInstanceOf[js.Any], autoStart = autoStart.asInstanceOf[js.Any], autoStop = autoStop.asInstanceOf[js.Any], delegate = delegate.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], forceRport = forceRport.asInstanceOf[js.Any], hackAllowUnregisteredOptionTags = hackAllowUnregisteredOptionTags.asInstanceOf[js.Any], hackIpInContact = hackIpInContact.asInstanceOf[js.Any], hackViaTcp = hackViaTcp.asInstanceOf[js.Any], hackWssInTransport = hackWssInTransport.asInstanceOf[js.Any], logBuiltinEnabled = logBuiltinEnabled.asInstanceOf[js.Any], logConfiguration = logConfiguration.asInstanceOf[js.Any], logConnector = js.Any.fromFunction4(logConnector), logLevel = logLevel.asInstanceOf[js.Any], noAnswerTimeout = noAnswerTimeout.asInstanceOf[js.Any], preloadedRouteSet = preloadedRouteSet.asInstanceOf[js.Any], reconnectionAttempts = reconnectionAttempts.asInstanceOf[js.Any], reconnectionDelay = reconnectionDelay.asInstanceOf[js.Any], sessionDescriptionHandlerFactory = js.Any.fromFunction2(sessionDescriptionHandlerFactory), sessionDescriptionHandlerFactoryOptions = sessionDescriptionHandlerFactoryOptions.asInstanceOf[js.Any], sipExtension100rel = sipExtension100rel.asInstanceOf[js.Any], sipExtensionExtraSupported = sipExtensionExtraSupported.asInstanceOf[js.Any], sipExtensionReplaces = sipExtensionReplaces.asInstanceOf[js.Any], sipjsId = sipjsId.asInstanceOf[js.Any], transportConstructor = transportConstructor.asInstanceOf[js.Any], transportOptions = transportOptions.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], userAgentString = userAgentString.asInstanceOf[js.Any], viaHost = viaHost.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allowLegacyNotifications = allowLegacyNotifications.asInstanceOf[js.Any], authorizationHa1 = authorizationHa1.asInstanceOf[js.Any], authorizationPassword = authorizationPassword.asInstanceOf[js.Any], authorizationUsername = authorizationUsername.asInstanceOf[js.Any], autoStart = autoStart.asInstanceOf[js.Any], autoStop = autoStop.asInstanceOf[js.Any], contactName = contactName.asInstanceOf[js.Any], contactParams = contactParams.asInstanceOf[js.Any], delegate = delegate.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], forceRport = forceRport.asInstanceOf[js.Any], hackAllowUnregisteredOptionTags = hackAllowUnregisteredOptionTags.asInstanceOf[js.Any], hackIpInContact = hackIpInContact.asInstanceOf[js.Any], hackViaTcp = hackViaTcp.asInstanceOf[js.Any], logBuiltinEnabled = logBuiltinEnabled.asInstanceOf[js.Any], logConfiguration = logConfiguration.asInstanceOf[js.Any], logConnector = js.Any.fromFunction4(logConnector), logLevel = logLevel.asInstanceOf[js.Any], noAnswerTimeout = noAnswerTimeout.asInstanceOf[js.Any], preloadedRouteSet = preloadedRouteSet.asInstanceOf[js.Any], reconnectionAttempts = reconnectionAttempts.asInstanceOf[js.Any], reconnectionDelay = reconnectionDelay.asInstanceOf[js.Any], sendInitialProvisionalResponse = sendInitialProvisionalResponse.asInstanceOf[js.Any], sessionDescriptionHandlerFactory = js.Any.fromFunction2(sessionDescriptionHandlerFactory), sessionDescriptionHandlerFactoryOptions = sessionDescriptionHandlerFactoryOptions.asInstanceOf[js.Any], sipExtension100rel = sipExtension100rel.asInstanceOf[js.Any], sipExtensionExtraSupported = sipExtensionExtraSupported.asInstanceOf[js.Any], sipExtensionReplaces = sipExtensionReplaces.asInstanceOf[js.Any], sipjsId = sipjsId.asInstanceOf[js.Any], transportConstructor = transportConstructor.asInstanceOf[js.Any], transportOptions = transportOptions.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], userAgentString = userAgentString.asInstanceOf[js.Any], viaHost = viaHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredUserAgentOptions]
   }
   
@@ -143,6 +150,10 @@ object RequiredUserAgentOptions {
     
     inline def setAutoStop(value: Boolean): Self = StObject.set(x, "autoStop", value.asInstanceOf[js.Any])
     
+    inline def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
+    
+    inline def setContactParams(value: StringDictionary[String]): Self = StObject.set(x, "contactParams", value.asInstanceOf[js.Any])
+    
     inline def setDelegate(value: UserAgentDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
@@ -154,8 +165,6 @@ object RequiredUserAgentOptions {
     inline def setHackIpInContact(value: Boolean | String): Self = StObject.set(x, "hackIpInContact", value.asInstanceOf[js.Any])
     
     inline def setHackViaTcp(value: Boolean): Self = StObject.set(x, "hackViaTcp", value.asInstanceOf[js.Any])
-    
-    inline def setHackWssInTransport(value: Boolean): Self = StObject.set(x, "hackWssInTransport", value.asInstanceOf[js.Any])
     
     inline def setLogBuiltinEnabled(value: Boolean): Self = StObject.set(x, "logBuiltinEnabled", value.asInstanceOf[js.Any])
     
@@ -171,11 +180,13 @@ object RequiredUserAgentOptions {
     
     inline def setPreloadedRouteSet(value: js.Array[String]): Self = StObject.set(x, "preloadedRouteSet", value.asInstanceOf[js.Any])
     
-    inline def setPreloadedRouteSetVarargs(value: String*): Self = StObject.set(x, "preloadedRouteSet", js.Array(value :_*))
+    inline def setPreloadedRouteSetVarargs(value: String*): Self = StObject.set(x, "preloadedRouteSet", js.Array(value*))
     
     inline def setReconnectionAttempts(value: Double): Self = StObject.set(x, "reconnectionAttempts", value.asInstanceOf[js.Any])
     
     inline def setReconnectionDelay(value: Double): Self = StObject.set(x, "reconnectionDelay", value.asInstanceOf[js.Any])
+    
+    inline def setSendInitialProvisionalResponse(value: Boolean): Self = StObject.set(x, "sendInitialProvisionalResponse", value.asInstanceOf[js.Any])
     
     inline def setSessionDescriptionHandlerFactory(value: (/* session */ Session, /* options */ js.UndefOr[js.Object]) => SessionDescriptionHandler): Self = StObject.set(x, "sessionDescriptionHandlerFactory", js.Any.fromFunction2(value))
     
@@ -185,15 +196,15 @@ object RequiredUserAgentOptions {
     
     inline def setSipExtensionExtraSupported(value: js.Array[String]): Self = StObject.set(x, "sipExtensionExtraSupported", value.asInstanceOf[js.Any])
     
-    inline def setSipExtensionExtraSupportedVarargs(value: String*): Self = StObject.set(x, "sipExtensionExtraSupported", js.Array(value :_*))
+    inline def setSipExtensionExtraSupportedVarargs(value: String*): Self = StObject.set(x, "sipExtensionExtraSupported", js.Array(value*))
     
     inline def setSipExtensionReplaces(value: SIPExtension): Self = StObject.set(x, "sipExtensionReplaces", value.asInstanceOf[js.Any])
     
     inline def setSipjsId(value: String): Self = StObject.set(x, "sipjsId", value.asInstanceOf[js.Any])
     
-    inline def setTransportConstructor(value: Instantiable2[/* logger */ Logger, /* options */ js.Any, Transport]): Self = StObject.set(x, "transportConstructor", value.asInstanceOf[js.Any])
+    inline def setTransportConstructor(value: Instantiable2[/* logger */ Logger, /* options */ Any, Transport]): Self = StObject.set(x, "transportConstructor", value.asInstanceOf[js.Any])
     
-    inline def setTransportOptions(value: js.Any): Self = StObject.set(x, "transportOptions", value.asInstanceOf[js.Any])
+    inline def setTransportOptions(value: Any): Self = StObject.set(x, "transportOptions", value.asInstanceOf[js.Any])
     
     inline def setUri(value: URI): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

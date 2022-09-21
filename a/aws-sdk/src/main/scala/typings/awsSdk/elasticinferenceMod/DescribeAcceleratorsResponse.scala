@@ -29,7 +29,7 @@ object DescribeAcceleratorsResponse {
     
     inline def setAcceleratorSetUndefined: Self = StObject.set(x, "acceleratorSet", js.undefined)
     
-    inline def setAcceleratorSetVarargs(value: ElasticInferenceAccelerator*): Self = StObject.set(x, "acceleratorSet", js.Array(value :_*))
+    inline def setAcceleratorSetVarargs(value: ElasticInferenceAccelerator*): Self = StObject.set(x, "acceleratorSet", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

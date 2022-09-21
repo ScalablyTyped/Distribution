@@ -8,5 +8,5 @@ object notificationConfigurationDeprecatedMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_NotificationConfigurationDeprecated", "_NotificationConfigurationDeprecated")
   @js.native
-  val NotificationConfigurationDeprecated: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val NotificationConfigurationDeprecated: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

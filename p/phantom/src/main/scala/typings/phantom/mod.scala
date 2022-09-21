@@ -97,7 +97,6 @@ import typings.phantom.phantomStrings.viewportSize
 import typings.phantom.phantomStrings.webSecurityEnabled
 import typings.phantom.phantomStrings.windowName
 import typings.phantom.phantomStrings.zoomFactor
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -291,13 +290,13 @@ object mod {
     
     var method: String
     
-    var time: Date
+    var time: js.Date
     
     var url: String
   }
   object IRequestData {
     
-    inline def apply(headers: js.Array[Name], id: Double, method: String, time: Date, url: String): IRequestData = {
+    inline def apply(headers: js.Array[Name], id: Double, method: String, time: js.Date, url: String): IRequestData = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRequestData]
     }
@@ -306,13 +305,13 @@ object mod {
       
       inline def setHeaders(value: js.Array[Name]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: Name*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Name*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -336,7 +335,7 @@ object mod {
     
     var statusText: String
     
-    var time: Date
+    var time: js.Date
     
     var url: String
   }
@@ -351,7 +350,7 @@ object mod {
       stage: start | end,
       status: Double,
       statusText: String,
-      time: Date,
+      time: js.Date,
       url: String
     ): IResponse = {
       val __obj = js.Dynamic.literal(bodySize = bodySize.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], redirectURL = redirectURL.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -366,7 +365,7 @@ object mod {
       
       inline def setHeaders(value: js.Array[Name]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: Name*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Name*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -378,7 +377,7 @@ object mod {
       
       inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -407,7 +406,7 @@ object mod {
     def deleteCookie(cookieName: String): js.Promise[Boolean] = js.native
     
     def evaluate[R](callback: js.Function0[R]): js.Promise[R] = js.native
-    def evaluate[R](callback: js.Function1[/* repeated */ js.Any, R], args: js.Any*): js.Promise[R] = js.native
+    def evaluate[R](callback: js.Function1[/* repeated */ Any, R], args: Any*): js.Promise[R] = js.native
     def evaluate[T, R](callback: js.Function1[/* arg */ T, R], arg: T): js.Promise[R] = js.native
     def evaluate[T1, T2, R](callback: js.Function2[/* arg1 */ T1, /* arg2 */ T2, R], arg1: T1, arg2: T2): js.Promise[R] = js.native
     def evaluate[T1, T2, T3, R](
@@ -421,46 +420,13 @@ object mod {
     
     def injectJs(filename: String): js.Promise[Boolean] = js.native
     
-    @JSName("off")
-    def off_onAlert(event: onAlert): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onCallback(event: onCallback): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onClosing(event: onClosing): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onConfirm(event: onConfirm): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onConsoleMessage(event: onConsoleMessage): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onError(event: onError): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onFilePicker(event: onFilePicker): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onInitialized(event: onInitialized): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onLoadFinished(event: onLoadFinished): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onLoadStarted(event: onLoadStarted): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onNavigationRequested(event: onNavigationRequested): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onPageCreated(event: onPageCreated): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onPrompt(event: onPrompt): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onResourceError(event: onResourceError): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onResourceReceived(event: onResourceReceived): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onResourceRequested(event: onResourceRequested): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onResourceTimeout(event: onResourceTimeout): js.Promise[PageId] = js.native
-    @JSName("off")
-    def off_onUrlChanged(event: onUrlChanged): js.Promise[PageId] = js.native
+    def off(
+      event: onResourceRequested | onLoadFinished | onAlert | onCallback | onClosing | onConfirm | onConsoleMessage | onError | onFilePicker | onInitialized | onLoadStarted | onNavigationRequested | onPageCreated | onPrompt | onResourceError | onResourceReceived | onResourceTimeout | onUrlChanged
+    ): js.Promise[PageId] = js.native
     
     def on(event: onAlert, runOnPhantom: `false`, listener: js.Function1[/* msg */ String, Unit]): js.Promise[PageId] = js.native
-    def on(event: onCallback, runOnPhantom: `false`, listener: js.Function1[/* data */ js.Any, Unit]): js.Promise[PageId] = js.native
-    def on(event: onClosing, runOnPhantom: `false`, listener: js.Function1[/* closingPage */ js.Any, Unit]): js.Promise[PageId] = js.native
+    def on(event: onCallback, runOnPhantom: `false`, listener: js.Function1[/* data */ Any, Unit]): js.Promise[PageId] = js.native
+    def on(event: onClosing, runOnPhantom: `false`, listener: js.Function1[/* closingPage */ Any, Unit]): js.Promise[PageId] = js.native
     def on(event: onConfirm, runOnPhantom: `false`, listener: js.Function1[/* msg */ String, Unit]): js.Promise[PageId] = js.native
     def on(
       event: onConsoleMessage,
@@ -472,7 +438,7 @@ object mod {
       runOnPhantom: `false`,
       listener: js.Function2[/* msg */ String, /* trace */ js.Array[File], Unit]
     ): js.Promise[PageId] = js.native
-    def on(event: onFilePicker, runOnPhantom: `false`, listener: js.Function1[/* oldFile */ js.Any, Unit]): js.Promise[PageId] = js.native
+    def on(event: onFilePicker, runOnPhantom: `false`, listener: js.Function1[/* oldFile */ Any, Unit]): js.Promise[PageId] = js.native
     def on(event: onInitialized, runOnPhantom: `false`, listener: js.Function0[Unit]): js.Promise[PageId] = js.native
     def on(event: onLoadFinished, listener: js.Function1[/* status */ success | fail, Unit]): js.Promise[PageId] = js.native
     def on(
@@ -502,7 +468,7 @@ object mod {
           Unit
         ]
     ): js.Promise[PageId] = js.native
-    def on(event: onPageCreated, runOnPhantom: `false`, listener: js.Function1[/* newPage */ js.Any, Unit]): js.Promise[PageId] = js.native
+    def on(event: onPageCreated, runOnPhantom: `false`, listener: js.Function1[/* newPage */ Any, Unit]): js.Promise[PageId] = js.native
     def on(
       event: onPrompt,
       runOnPhantom: `false`,
@@ -532,9 +498,9 @@ object mod {
     @JSName("on")
     def on_onAlert(event: onAlert, listener: js.Function1[/* msg */ String, Unit]): js.Promise[PageId] = js.native
     @JSName("on")
-    def on_onCallback(event: onCallback, listener: js.Function1[/* data */ js.Any, Unit]): js.Promise[PageId] = js.native
+    def on_onCallback(event: onCallback, listener: js.Function1[/* data */ Any, Unit]): js.Promise[PageId] = js.native
     @JSName("on")
-    def on_onClosing(event: onClosing, listener: js.Function1[/* closingPage */ js.Any, Unit]): js.Promise[PageId] = js.native
+    def on_onClosing(event: onClosing, listener: js.Function1[/* closingPage */ Any, Unit]): js.Promise[PageId] = js.native
     @JSName("on")
     def on_onConfirm(event: onConfirm, listener: js.Function1[/* msg */ String, Unit]): js.Promise[PageId] = js.native
     @JSName("on")
@@ -545,13 +511,13 @@ object mod {
     @JSName("on")
     def on_onError(event: onError, listener: js.Function2[/* msg */ String, /* trace */ js.Array[File], Unit]): js.Promise[PageId] = js.native
     @JSName("on")
-    def on_onFilePicker(event: onFilePicker, listener: js.Function1[/* oldFile */ js.Any, Unit]): js.Promise[PageId] = js.native
+    def on_onFilePicker(event: onFilePicker, listener: js.Function1[/* oldFile */ Any, Unit]): js.Promise[PageId] = js.native
     @JSName("on")
     def on_onInitialized(event: onInitialized, listener: js.Function0[Unit]): js.Promise[PageId] = js.native
     @JSName("on")
     def on_onLoadStarted(event: onLoadStarted, listener: js.Function0[Unit]): js.Promise[PageId] = js.native
     @JSName("on")
-    def on_onPageCreated(event: onPageCreated, listener: js.Function1[/* newPage */ js.Any, Unit]): js.Promise[PageId] = js.native
+    def on_onPageCreated(event: onPageCreated, listener: js.Function1[/* newPage */ Any, Unit]): js.Promise[PageId] = js.native
     @JSName("on")
     def on_onPrompt(event: onPrompt, listener: js.Function2[/* msg */ String, /* defaultVal */ String, Unit]): js.Promise[PageId] = js.native
     @JSName("on")
@@ -571,64 +537,23 @@ object mod {
     def open(url: String): js.Promise[String] = js.native
     def open(url: String, settings: IOpenWebPageSettings): js.Promise[String] = js.native
     
+    def property(
+      key: canGoBack | canGoForward | content | focusedFrameName | frameContent | frameName | framePlainText | frameTitle | framesCount | framesName | libraryPath | navigationLocked | offlineStoragePath | offlineStorageQuota | ownsPages | pages | pagesWindowName | plainText | title | url | windowName | zoomFactor
+    ): js.Promise[String] = js.native
     def property[T](key: String): js.Promise[T] = js.native
     def property[T](key: String, value: T): js.Promise[Unit] = js.native
     @JSName("property")
-    def property_canGoBack(key: canGoBack): js.Promise[Boolean] = js.native
-    @JSName("property")
-    def property_canGoForward(key: canGoForward): js.Promise[Boolean] = js.native
-    @JSName("property")
     def property_clipRect(key: clipRect): js.Promise[Height] = js.native
-    @JSName("property")
-    def property_content(key: content): js.Promise[String] = js.native
     @JSName("property")
     def property_cookies(key: cookies): js.Promise[js.Array[ICookie]] = js.native
     @JSName("property")
     def property_customHeaders(key: customHeaders): js.Promise[StringDictionary[String]] = js.native
     @JSName("property")
-    def property_focusedFrameName(key: focusedFrameName): js.Promise[String] = js.native
-    @JSName("property")
-    def property_frameContent(key: frameContent): js.Promise[String] = js.native
-    @JSName("property")
-    def property_frameName(key: frameName): js.Promise[String] = js.native
-    @JSName("property")
-    def property_framePlainText(key: framePlainText): js.Promise[String] = js.native
-    @JSName("property")
-    def property_frameTitle(key: frameTitle): js.Promise[String] = js.native
-    @JSName("property")
-    def property_framesCount(key: framesCount): js.Promise[Double] = js.native
-    @JSName("property")
-    def property_framesName(key: framesName): js.Promise[js.Array[String]] = js.native
-    @JSName("property")
-    def property_libraryPath(key: libraryPath): js.Promise[String] = js.native
-    @JSName("property")
-    def property_navigationLocked(key: navigationLocked): js.Promise[Boolean] = js.native
-    @JSName("property")
-    def property_offlineStoragePath(key: offlineStoragePath): js.Promise[String] = js.native
-    @JSName("property")
-    def property_offlineStorageQuota(key: offlineStorageQuota): js.Promise[Double] = js.native
-    @JSName("property")
-    def property_ownsPages(key: ownsPages): js.Promise[Boolean] = js.native
-    @JSName("property")
-    def property_pages(key: pages): js.Promise[js.Array[String]] = js.native
-    @JSName("property")
-    def property_pagesWindowName(key: pagesWindowName): js.Promise[js.Array[String]] = js.native
-    @JSName("property")
     def property_paperSize(key: paperSize): js.Promise[IPaperSizeOptions] = js.native
-    @JSName("property")
-    def property_plainText(key: plainText): js.Promise[String] = js.native
     @JSName("property")
     def property_scrollPosition(key: scrollPosition): js.Promise[Left] = js.native
     @JSName("property")
-    def property_title(key: title): js.Promise[String] = js.native
-    @JSName("property")
-    def property_url(key: url): js.Promise[String] = js.native
-    @JSName("property")
     def property_viewportSize(key: viewportSize): js.Promise[Width] = js.native
-    @JSName("property")
-    def property_windowName(key: windowName): js.Promise[String] = js.native
-    @JSName("property")
-    def property_zoomFactor(key: zoomFactor): js.Promise[Double] = js.native
     
     def render(filename: String): js.Promise[Unit] = js.native
     def render(filename: String, options: Format): js.Promise[Unit] = js.native
@@ -650,34 +575,21 @@ object mod {
     
     def setContent(html: String, url: String): js.Promise[String] = js.native
     
+    def setting(
+      key: XSSAuditingEnabled | javascriptEnabled | loadImages | localToRemoteUrlAccessEnabled | password | userAgent | userName | webSecurityEnabled
+    ): js.Promise[Boolean] = js.native
     def setting[T](key: String): js.Promise[T] = js.native
     def setting[T](key: String, value: T): js.Promise[T] = js.native
     @JSName("setting")
-    def setting_XSSAuditingEnabled(key: XSSAuditingEnabled): js.Promise[Boolean] = js.native
-    @JSName("setting")
-    def setting_javascriptEnabled(key: javascriptEnabled): js.Promise[Boolean] = js.native
-    @JSName("setting")
-    def setting_loadImages(key: loadImages): js.Promise[Boolean] = js.native
-    @JSName("setting")
-    def setting_localToRemoteUrlAccessEnabled(key: localToRemoteUrlAccessEnabled): js.Promise[Boolean] = js.native
-    @JSName("setting")
-    def setting_password(key: password): js.Promise[String] = js.native
-    @JSName("setting")
     def setting_resourceTimeout(key: resourceTimeout): js.Promise[Double] = js.native
-    @JSName("setting")
-    def setting_userAgent(key: userAgent): js.Promise[String] = js.native
-    @JSName("setting")
-    def setting_userName(key: userName): js.Promise[String] = js.native
-    @JSName("setting")
-    def setting_webSecurityEnabled(key: webSecurityEnabled): js.Promise[Boolean] = js.native
   }
   
   @js.native
   trait winstonLeveledLogMethod extends StObject {
     
-    def apply(infoObject: js.Any): js.Any = js.native
-    def apply(message: String, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-    def apply(message: String, meta: js.Any*): js.Any = js.native
-    def apply(message: String, meta: js.Any, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
+    def apply(infoObject: Any): Any = js.native
+    def apply(message: String, callback: js.Function1[/* repeated */ Any, Unit]): Any = js.native
+    def apply(message: String, meta: Any*): Any = js.native
+    def apply(message: String, meta: Any, callback: js.Function1[/* repeated */ Any, Unit]): Any = js.native
   }
 }

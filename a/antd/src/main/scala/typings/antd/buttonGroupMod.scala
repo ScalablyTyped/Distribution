@@ -3,7 +3,9 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.configProviderSizeContextMod.SizeType
 import typings.react.mod.CSSProperties
+import typings.react.mod.Context
 import typings.react.mod.FC
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +16,13 @@ object buttonGroupMod extends Shortcut {
   @js.native
   val default: FC[ButtonGroupProps] = js.native
   
+  @JSImport("antd/lib/button/button-group", "GroupSizeContext")
+  @js.native
+  val GroupSizeContext: Context[SizeType] = js.native
+  
   trait ButtonGroupProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -32,6 +40,10 @@ object buttonGroupMod extends Shortcut {
     }
     
     extension [Self <: ButtonGroupProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

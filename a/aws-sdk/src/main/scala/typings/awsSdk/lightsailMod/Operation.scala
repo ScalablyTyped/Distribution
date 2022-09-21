@@ -9,7 +9,7 @@ trait Operation extends StObject {
   /**
     * The timestamp when the operation was initialized (e.g., 1479816991.349).
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The error code.
@@ -32,7 +32,7 @@ trait Operation extends StObject {
   var isTerminal: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The AWS Region and Availability Zone.
+    * The Amazon Web Services Region and Availability Zone.
     */
   var location: js.UndefOr[ResourceLocation] = js.undefined
   
@@ -64,7 +64,7 @@ trait Operation extends StObject {
   /**
     * The timestamp when the status was changed (e.g., 1479816991.349).
     */
-  var statusChangedAt: js.UndefOr[IsoDate] = js.undefined
+  var statusChangedAt: js.UndefOr[js.Date] = js.undefined
 }
 object Operation {
   
@@ -75,7 +75,7 @@ object Operation {
   
   extension [Self <: Operation](x: Self) {
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -117,7 +117,7 @@ object Operation {
     
     inline def setStatus(value: OperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStatusChangedAt(value: IsoDate): Self = StObject.set(x, "statusChangedAt", value.asInstanceOf[js.Any])
+    inline def setStatusChangedAt(value: js.Date): Self = StObject.set(x, "statusChangedAt", value.asInstanceOf[js.Any])
     
     inline def setStatusChangedAtUndefined: Self = StObject.set(x, "statusChangedAt", js.undefined)
     

@@ -12,7 +12,7 @@ trait RepositoryError extends StObject {
   /** Error codes. Matches the definition of HTTP status codes. */
   var httpStatusCode: js.UndefOr[Double] = js.undefined
   
-  /** Type of error. */
+  /** The type of error. */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object RepositoryError {

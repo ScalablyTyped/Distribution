@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A collection of custom XML parts.
   *
+  * @remarks
   * [Api set: ExcelApi 1.5]
   */
 @JSGlobal("Excel.CustomXmlPartCollection")
 @js.native
-class CustomXmlPartCollection ()
+open class CustomXmlPartCollection ()
   extends StObject
      with typings.officeJs.Excel.CustomXmlPartCollection {
   

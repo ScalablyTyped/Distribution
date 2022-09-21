@@ -25,23 +25,23 @@ trait IBarChart
     * @param item Object
     */
   @JSName("highlightItem")
-  var highlightItem_IBarChart: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var highlightItem_IBarChart: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var stacked: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[Any] = js.undefined
   
   /** [Method] Un highlight any existing highlights */
   @JSName("unHighlightItem")
   var unHighlightItem_IBarChart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Number/Object) */
-  var xPadding: js.UndefOr[js.Any] = js.undefined
+  var xPadding: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number/Object) */
-  var yPadding: js.UndefOr[js.Any] = js.undefined
+  var yPadding: js.UndefOr[Any] = js.undefined
 }
 object IBarChart {
   
@@ -68,7 +68,7 @@ object IBarChart {
     
     inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
     
-    inline def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
+    inline def setHighlightItem(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
     
     inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     
@@ -76,7 +76,7 @@ object IBarChart {
     
     inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
@@ -84,11 +84,11 @@ object IBarChart {
     
     inline def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
     
-    inline def setXPadding(value: js.Any): Self = StObject.set(x, "xPadding", value.asInstanceOf[js.Any])
+    inline def setXPadding(value: Any): Self = StObject.set(x, "xPadding", value.asInstanceOf[js.Any])
     
     inline def setXPaddingUndefined: Self = StObject.set(x, "xPadding", js.undefined)
     
-    inline def setYPadding(value: js.Any): Self = StObject.set(x, "yPadding", value.asInstanceOf[js.Any])
+    inline def setYPadding(value: Any): Self = StObject.set(x, "yPadding", value.asInstanceOf[js.Any])
     
     inline def setYPaddingUndefined: Self = StObject.set(x, "yPadding", js.undefined)
   }

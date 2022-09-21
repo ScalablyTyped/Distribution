@@ -73,7 +73,7 @@ object MediaProperties {
     
     inline def setFilterData(value: PropertyValues): Self = StObject.set(x, "FilterData", value.asInstanceOf[js.Any])
     
-    inline def setFilterDataVarargs(value: PropertyValue*): Self = StObject.set(x, "FilterData", js.Array(value :_*))
+    inline def setFilterDataVarargs(value: PropertyValue*): Self = StObject.set(x, "FilterData", js.Array(value*))
     
     inline def setInputStream(value: XInputStream): Self = StObject.set(x, "InputStream", value.asInstanceOf[js.Any])
     

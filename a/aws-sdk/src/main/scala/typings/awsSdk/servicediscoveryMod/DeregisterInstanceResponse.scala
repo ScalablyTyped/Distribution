@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeregisterInstanceResponse extends StObject {
   
   /**
-    * A value that you can use to determine whether the request completed successfully. For more information, see GetOperation.
+    * A value that you can use to determine whether the request completed successfully. To get the status of the operation, see GetOperation.
     */
   var OperationId: js.UndefOr[typings.awsSdk.servicediscoveryMod.OperationId] = js.undefined
 }

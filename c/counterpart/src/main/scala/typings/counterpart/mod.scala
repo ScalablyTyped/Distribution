@@ -1,7 +1,6 @@
 package typings.counterpart
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ object mod extends Shortcut {
     
     def getLocale(): String = js.native
     
-    def localize(date: Date, options: js.Object): String = js.native
+    def localize(date: js.Date, options: js.Object): String = js.native
     
     def offLocaleChange(callback: LocaleChangeHandler): Unit = js.native
     

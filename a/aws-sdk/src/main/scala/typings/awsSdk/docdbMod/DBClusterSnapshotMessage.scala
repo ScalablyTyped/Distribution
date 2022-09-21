@@ -29,7 +29,7 @@ object DBClusterSnapshotMessage {
     
     inline def setDBClusterSnapshotsUndefined: Self = StObject.set(x, "DBClusterSnapshots", js.undefined)
     
-    inline def setDBClusterSnapshotsVarargs(value: DBClusterSnapshot*): Self = StObject.set(x, "DBClusterSnapshots", js.Array(value :_*))
+    inline def setDBClusterSnapshotsVarargs(value: DBClusterSnapshot*): Self = StObject.set(x, "DBClusterSnapshots", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

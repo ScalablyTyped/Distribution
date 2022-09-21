@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object bookmarkFilledMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/BookmarkFilled", JSImport.Default)
   @js.native
-  val default: SFC[BookmarkFilledProps] = js.native
+  val default: FC[BookmarkFilledProps] = js.native
   
   trait BookmarkFilledProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object BookmarkFilledProps {
     
@@ -29,14 +29,14 @@ object bookmarkFilledMod extends Shortcut {
     
     extension [Self <: BookmarkFilledProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[BookmarkFilledProps]
+  type _To = FC[BookmarkFilledProps]
   
   /* This means you don't have to write `default`, but can instead just say `bookmarkFilledMod.foo` */
-  override def _to: SFC[BookmarkFilledProps] = default
+  override def _to: FC[BookmarkFilledProps] = default
 }

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElasticsearchClusterConfig extends StObject {
   
   /**
+    * Specifies the ColdStorageOptions config for Elasticsearch Domain
+    */
+  var ColdStorageOptions: js.UndefOr[typings.awsSdk.esMod.ColdStorageOptions] = js.undefined
+  
+  /**
     * Total number of dedicated master nodes, active and on standby, for the cluster.
     */
   var DedicatedMasterCount: js.UndefOr[IntegerClass] = js.undefined
@@ -64,6 +69,10 @@ object ElasticsearchClusterConfig {
   }
   
   extension [Self <: ElasticsearchClusterConfig](x: Self) {
+    
+    inline def setColdStorageOptions(value: ColdStorageOptions): Self = StObject.set(x, "ColdStorageOptions", value.asInstanceOf[js.Any])
+    
+    inline def setColdStorageOptionsUndefined: Self = StObject.set(x, "ColdStorageOptions", js.undefined)
     
     inline def setDedicatedMasterCount(value: IntegerClass): Self = StObject.set(x, "DedicatedMasterCount", value.asInstanceOf[js.Any])
     

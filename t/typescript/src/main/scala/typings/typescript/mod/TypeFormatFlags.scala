@@ -71,7 +71,7 @@ object TypeFormatFlags extends StObject {
   sealed trait NodeBuilderFlagsMask
     extends StObject
        with TypeFormatFlags
-  /* 814775659 */ val NodeBuilderFlagsMask: typings.typescript.mod.TypeFormatFlags.NodeBuilderFlagsMask & Double = js.native
+  /* 848330091 */ val NodeBuilderFlagsMask: typings.typescript.mod.TypeFormatFlags.NodeBuilderFlagsMask & Double = js.native
   
   @js.native
   sealed trait None
@@ -84,6 +84,12 @@ object TypeFormatFlags extends StObject {
     extends StObject
        with TypeFormatFlags
   /* 8192 */ val OmitParameterModifiers: typings.typescript.mod.TypeFormatFlags.OmitParameterModifiers & Double = js.native
+  
+  @js.native
+  sealed trait OmitThisParameter
+    extends StObject
+       with TypeFormatFlags
+  /* 33554432 */ val OmitThisParameter: typings.typescript.mod.TypeFormatFlags.OmitThisParameter & Double = js.native
   
   @js.native
   sealed trait SuppressAnyReturnType

@@ -33,6 +33,6 @@ object ListRegistriesResponse {
     
     inline def setRegistriesUndefined: Self = StObject.set(x, "Registries", js.undefined)
     
-    inline def setRegistriesVarargs(value: RegistrySummary*): Self = StObject.set(x, "Registries", js.Array(value :_*))
+    inline def setRegistriesVarargs(value: RegistrySummary*): Self = StObject.set(x, "Registries", js.Array(value*))
   }
 }

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The ChangedEvent class constructor produces an empty ChangedEvent object.
   */
-class ChangedEvent () extends StObject {
+open class ChangedEvent () extends StObject {
   
   /**
     * This predicate returns true if you can call redo().
@@ -50,14 +50,14 @@ class ChangedEvent () extends StObject {
     * when implementing a state change as part of an undo or a redo.
     * @param {boolean} undo If true, returns the oldParam, otherwise returns the newParam.
     */
-  def getParam(undo: Boolean): js.Any = js.native
+  def getParam(undo: Boolean): Any = js.native
   
   /**
     * This is a convenient method to get the right value, depending on the value of undo,
     * when implementing a state change as part of an undo or a redo.
     * @param {boolean} undo If true, returns the oldValue, otherwise returns the newValue.
     */
-  def getValue(undo: Boolean): js.Any = js.native
+  def getValue(undo: Boolean): Any = js.native
   
   /**This read-only property is true when this ChangeEvent is of type ChangedEvent.Transaction and represents the end of a transactional change.*/
   var isTransactionFinished: Boolean = js.native
@@ -69,19 +69,19 @@ class ChangedEvent () extends StObject {
   var modelChange: String = js.native
   
   /**Gets or sets an optional value associated with the new value.*/
-  var newParam: js.Any = js.native
+  var newParam: Any = js.native
   
   /**Gets or sets the next or current value that the property has.*/
-  var newValue: js.Any = js.native
+  var newValue: Any = js.native
   
   /**Gets or sets the Object that was modified.*/
-  var `object`: js.Any = js.native
+  var `object`: Any = js.native
   
   /**Gets or sets an optional value associated with the old value.*/
-  var oldParam: js.Any = js.native
+  var oldParam: Any = js.native
   
   /**Gets or sets the previous or old value that the property had.*/
-  var oldValue: js.Any = js.native
+  var oldValue: Any = js.native
   
   /**Gets or sets the name of the property change.*/
   var propertyName: PropertyAccessor = js.native

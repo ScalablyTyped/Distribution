@@ -9,7 +9,7 @@ object focusTrapZoneMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FocusTrapZone", "FocusTrapZone")
   @js.native
-  class FocusTrapZone protected ()
+  open class FocusTrapZone protected ()
     extends typings.officeUiFabricReact.focusTrapZoneFocusTrapZoneMod.FocusTrapZone {
     def this(props: IFocusTrapZoneProps) = this()
   }
@@ -22,7 +22,7 @@ object focusTrapZoneMod {
     
     @JSImport("office-ui-fabric-react/lib/components/FocusTrapZone", "FocusTrapZone._focusStack")
     @js.native
-    def _focusStack: js.Any = js.native
-    inline def _focusStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
+    def _focusStack: Any = js.native
+    inline def _focusStack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
   }
 }

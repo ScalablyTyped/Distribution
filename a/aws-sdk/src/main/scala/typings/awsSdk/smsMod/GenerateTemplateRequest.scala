@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GenerateTemplateRequest extends StObject {
   
   /**
-    * The ID of the application associated with the AWS CloudFormation template.
+    * The ID of the application associated with the CloudFormation template.
     */
   var appId: js.UndefOr[AppId] = js.undefined
   
   /**
-    * The format for generating the AWS CloudFormation template.
+    * The format for generating the CloudFormation template.
     */
   var templateFormat: js.UndefOr[OutputFormat] = js.undefined
 }

@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ trait Arc
   /**
     * The end angle of the arc, in degrees.
     */
-  var endAngle: integer = js.native
+  var endAngle: Double = js.native
   
   /**
     * The number of iterations used when drawing the arc.
@@ -54,7 +53,7 @@ trait Arc
     * This call can be chained.
     * @param value The value to set the ending angle to.
     */
-  def setEndAngle(value: integer): this.type = js.native
+  def setEndAngle(value: Double): this.type = js.native
   
   /**
     * Sets the number of iterations used when drawing the arc.
@@ -77,10 +76,10 @@ trait Arc
     * This call can be chained.
     * @param value The value to set the starting angle to.
     */
-  def setStartAngle(value: integer): this.type = js.native
+  def setStartAngle(value: Double): this.type = js.native
   
   /**
     * The start angle of the arc, in degrees.
     */
-  var startAngle: integer = js.native
+  var startAngle: Double = js.native
 }

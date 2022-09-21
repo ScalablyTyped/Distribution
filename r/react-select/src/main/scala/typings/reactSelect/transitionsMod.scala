@@ -1,90 +1,91 @@
 package typings.reactSelect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.react.mod.ComponentType
-import typings.react.mod.Ref
-import typings.reactSelect.anon.Exited
+import typings.react.mod.ReactNode
+import typings.react.mod.RefObject
+import typings.react.mod.global.JSX.Element
 import typings.reactSelect.reactSelectStrings.auto
+import typings.reactTransitionGroup.transitionMod.ExitHandler
+import typings.reactTransitionGroup.transitionMod.TransitionStatus
+import typings.std.HTMLDivElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionsMod {
   
-  @JSImport("react-select/src/animated/transitions", "Collapse")
+  @JSImport("react-select/dist/declarations/src/animated/transitions", JSImport.Namespace)
   @js.native
-  class Collapse protected ()
-    extends Component[CollapseProps, CollapseState, js.Any] {
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-select/dist/declarations/src/animated/transitions", "Collapse")
+  @js.native
+  open class Collapse protected () extends Component[CollapseProps, CollapseState, Any] {
     def this(props: CollapseProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CollapseProps, context: js.Any) = this()
+    def this(props: CollapseProps, context: Any) = this()
+    
+    @JSName("componentDidMount")
+    def componentDidMount_MCollapse(): Unit = js.native
+    
+    @JSName("componentWillUnmount")
+    def componentWillUnmount_MCollapse(): Unit = js.native
     
     var duration: Double = js.native
     
-    // get base styles
-    def getStyle(width: Width): js.Any = js.native
+    def getStyle(width: Width): CSSProperties = js.native
     
-    // get transition styles
-    def getTransition(state: TransitionState): js.Any = js.native
+    def getTransition(state: TransitionStatus): js.UndefOr[CSSProperties] = js.native
     
-    // width must be calculated; cannot transition from `undefined` to `number`
-    def getWidth(ref: Ref[js.Any]): Unit = js.native
+    var nodeRef: RefObject[HTMLDivElement] = js.native
     
-    var transition: Exited = js.native
+    var rafID: js.UndefOr[Double | Null] = js.native
+    
+    var transition: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in react-transition-group.react-transition-group/Transition.TransitionStatus ]:? react.react.CSSProperties}
+      */ typings.reactSelect.reactSelectStrings.Collapse & TopLevel[Any] = js.native
   }
   
-  @JSImport("react-select/src/animated/transitions", "Fade")
+  inline def Fade[ComponentProps /* <: js.Object */](hasTagDurationInPropOnExitedProps: FadeProps[ComponentProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Fade")(hasTagDurationInPropOnExitedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("react-select/dist/declarations/src/animated/transitions", "collapseDuration")
   @js.native
-  val Fade: ComponentType[FadeProps] = js.native
-  
-  @JSImport("react-select/src/animated/transitions", "collapseDuration")
-  @js.native
-  val collapseDuration: Double = js.native
-  
-  trait BaseTransition extends StObject {
-    
-    /** Whether we are in a transition. */
-    var in: Boolean
-    
-    /** Function to be called once transition finishes. */
-    var onExited: fn
-  }
-  object BaseTransition {
-    
-    inline def apply(in: Boolean, onExited: () => Unit): BaseTransition = {
-      val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], onExited = js.Any.fromFunction0(onExited))
-      __obj.asInstanceOf[BaseTransition]
-    }
-    
-    extension [Self <: BaseTransition](x: Self) {
-      
-      inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
-      
-      inline def setOnExited(value: () => Unit): Self = StObject.set(x, "onExited", js.Any.fromFunction0(value))
-    }
-  }
+  val collapseDuration: /* 260 */ Double = js.native
   
   trait CollapseProps extends StObject {
     
-    var children: js.Any
+    var children: ReactNode
     
-    var in: Boolean
+    var in: js.UndefOr[Boolean] = js.undefined
+    
+    var onExited: js.UndefOr[ExitHandler[js.UndefOr[HTMLElement]]] = js.undefined
   }
   object CollapseProps {
     
-    inline def apply(children: js.Any, in: Boolean): CollapseProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any])
+    inline def apply(): CollapseProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollapseProps]
     }
     
     extension [Self <: CollapseProps](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      
+      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+      
+      inline def setOnExited(value: ExitHandler[js.UndefOr[HTMLElement]]): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+      
+      inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     }
   }
   
@@ -105,42 +106,7 @@ object transitionsMod {
     }
   }
   
-  trait FadeProps
-    extends StObject
-       with BaseTransition {
-    
-    var component: ComponentType[js.Any]
-    
-    var duration: Double
-  }
-  object FadeProps {
-    
-    inline def apply(component: ComponentType[js.Any], duration: Double, in: Boolean, onExited: () => Unit): FadeProps = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], onExited = js.Any.fromFunction0(onExited))
-      __obj.asInstanceOf[FadeProps]
-    }
-    
-    extension [Self <: FadeProps](x: Self) {
-      
-      inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactSelect.reactSelectStrings.exiting
-    - typings.reactSelect.reactSelectStrings.exited
-  */
-  trait TransitionState extends StObject
-  object TransitionState {
-    
-    inline def exited: typings.reactSelect.reactSelectStrings.exited = "exited".asInstanceOf[typings.reactSelect.reactSelectStrings.exited]
-    
-    inline def exiting: typings.reactSelect.reactSelectStrings.exiting = "exiting".asInstanceOf[typings.reactSelect.reactSelectStrings.exiting]
-  }
+  type FadeProps[ComponentProps] = typings.reactSelect.anon.Component[ComponentProps] & ComponentProps
   
   type Width = Double | auto
-  
-  type fn = js.Function0[Unit]
 }

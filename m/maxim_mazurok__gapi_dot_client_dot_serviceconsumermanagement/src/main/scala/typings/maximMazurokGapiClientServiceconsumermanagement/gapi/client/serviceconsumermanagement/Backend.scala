@@ -22,6 +22,6 @@ object Backend {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: BackendRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: BackendRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

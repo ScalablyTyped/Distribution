@@ -8,7 +8,6 @@ import typings.moment.momentStrings.LeftparenthesisRightparenthesis
 import typings.moment.momentStrings.`Leftparenthesis]`
 import typings.moment.momentStrings.`[Rightparenthesis`
 import typings.moment.momentStrings.`[]`
-import typings.std.Date
 import typings.std.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -106,15 +105,19 @@ trait Moment
   def isBefore(inp: MomentInput, granularity: StartOf): Boolean = js.native
   
   def isBetween(a: MomentInput, b: MomentInput): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: Unit, inclusivity: LeftparenthesisRightparenthesis): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: Unit, inclusivity: `Leftparenthesis]`): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: Unit, inclusivity: `[Rightparenthesis`): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: Unit, inclusivity: `[]`): Boolean = js.native
+  def isBetween(
+    a: MomentInput,
+    b: MomentInput,
+    granularity: Unit,
+    inclusivity: LeftparenthesisRightparenthesis | `[Rightparenthesis` | `Leftparenthesis]` | `[]`
+  ): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: LeftparenthesisRightparenthesis): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `Leftparenthesis]`): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `[Rightparenthesis`): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `[]`): Boolean = js.native
+  def isBetween(
+    a: MomentInput,
+    b: MomentInput,
+    granularity: StartOf,
+    inclusivity: LeftparenthesisRightparenthesis | `[Rightparenthesis` | `Leftparenthesis]` | `[]`
+  ): Boolean = js.native
   
   def isDST(): Boolean = js.native
   
@@ -298,9 +301,9 @@ trait Moment
   def to(inp: MomentInput): String = js.native
   def to(inp: MomentInput, suffix: Boolean): String = js.native
   
-  def toArray(): js.Array[Double] = js.native
+  def toArray(): js.Tuple7[Double, Double, Double, Double, Double, Double, Double] = js.native
   
-  def toDate(): Date = js.native
+  def toDate(): js.Date = js.native
   
   def toISOString(): String = js.native
   def toISOString(keepOffset: Boolean): String = js.native

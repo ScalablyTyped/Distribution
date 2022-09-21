@@ -5,7 +5,7 @@ import typings.lzmaNative.lzmaNativeStrings.CONCATENATED
 import typings.lzmaNative.lzmaNativeStrings.TELL_ANY_CHECK
 import typings.lzmaNative.lzmaNativeStrings.TELL_NO_CHECK
 import typings.lzmaNative.lzmaNativeStrings.TELL_UNSUPPORTED_CHECK
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +28,7 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stream.Transform * / any */ @JSImport("lzma-native", "JSLzmaStream")
   @js.native
-  class JSLzmaStream protected () extends StObject {
+  open class JSLzmaStream protected () extends StObject {
     def this(nativeStream: Stream, options: LzmaOptions) = this()
     
     def bufsize(): Double = js.native
@@ -95,13 +95,13 @@ object mod {
   inline def parseFileIndex(options: FileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFileIndex")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def parseFileIndex(
     options: FileOptions,
-    callback: js.Function2[/* err */ js.Any, /* info */ js.UndefOr[StreamInfo], Unit]
+    callback: js.Function2[/* err */ Any, /* info */ js.UndefOr[StreamInfo], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFileIndex")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def parseFileIndexFD(fileDescriptor: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFileIndexFD")(fileDescriptor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def parseFileIndexFD(
     fileDescriptor: Double,
-    callback: js.Function2[/* err */ js.Any, /* info */ js.UndefOr[StreamInfo], Unit]
+    callback: js.Function2[/* err */ Any, /* info */ js.UndefOr[StreamInfo], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFileIndexFD")(fileDescriptor.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def rawDecoderMemusage(preset: Preset): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rawDecoderMemusage")(preset.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -163,13 +163,13 @@ object mod {
     
     var memlimit: js.UndefOr[Double] = js.undefined
     
-    def read(count: Double, offset: Double, cb: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Unit
+    def read(count: Double, offset: Double, cb: js.Function2[/* err */ Any, /* buffer */ Buffer, Unit]): Unit
   }
   object FileOptions {
     
     inline def apply(
       fileSize: Double,
-      read: (Double, Double, js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]) => Unit
+      read: (Double, Double, js.Function2[/* err */ Any, /* buffer */ Buffer, Unit]) => Unit
     ): FileOptions = {
       val __obj = js.Dynamic.literal(fileSize = fileSize.asInstanceOf[js.Any], read = js.Any.fromFunction3(read))
       __obj.asInstanceOf[FileOptions]
@@ -183,7 +183,7 @@ object mod {
       
       inline def setMemlimitUndefined: Self = StObject.set(x, "memlimit", js.undefined)
       
-      inline def setRead(value: (Double, Double, js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
+      inline def setRead(value: (Double, Double, js.Function2[/* err */ Any, /* buffer */ Buffer, Unit]) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     }
   }
   

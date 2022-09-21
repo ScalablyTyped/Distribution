@@ -69,13 +69,13 @@ object CountrySelectJs {
       
       inline def setOnlyCountriesUndefined: Self = StObject.set(x, "onlyCountries", js.undefined)
       
-      inline def setOnlyCountriesVarargs(value: String*): Self = StObject.set(x, "onlyCountries", js.Array(value :_*))
+      inline def setOnlyCountriesVarargs(value: String*): Self = StObject.set(x, "onlyCountries", js.Array(value*))
       
       inline def setPreferredCountries(value: js.Array[String]): Self = StObject.set(x, "preferredCountries", value.asInstanceOf[js.Any])
       
       inline def setPreferredCountriesUndefined: Self = StObject.set(x, "preferredCountries", js.undefined)
       
-      inline def setPreferredCountriesVarargs(value: String*): Self = StObject.set(x, "preferredCountries", js.Array(value :_*))
+      inline def setPreferredCountriesVarargs(value: String*): Self = StObject.set(x, "preferredCountries", js.Array(value*))
       
       inline def setResponsiveDropdown(value: Boolean): Self = StObject.set(x, "responsiveDropdown", value.asInstanceOf[js.Any])
       

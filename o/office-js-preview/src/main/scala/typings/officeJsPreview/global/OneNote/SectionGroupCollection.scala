@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of section groups.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.SectionGroupCollection")
 @js.native
-class SectionGroupCollection ()
+open class SectionGroupCollection ()
   extends StObject
      with typings.officeJsPreview.OneNote.SectionGroupCollection {
   

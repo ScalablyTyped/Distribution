@@ -7,20 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.GeolocationPositioning")
 @js.native
-class GeolocationPositioningCls ()
+open class GeolocationPositioningCls ()
   extends StObject
      with typings.arcgisJsApi.esri.GeolocationPositioning {
   
   /**
     * The HTML5 Geolocation Position options for locating.
     *
+    * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
     */
   /* CompleteClass */
-  var geolocationOptions: js.Any = js.native
+  var geolocationOptions: Any = js.native
   
   /**
     * Indicates whether to navigate the view to the position and scale of the geolocated result.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
     */
@@ -37,6 +41,8 @@ class GeolocationPositioningCls ()
   
   /**
     * The scale to set on the view when navigating to the position of the geolocated result.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
     */

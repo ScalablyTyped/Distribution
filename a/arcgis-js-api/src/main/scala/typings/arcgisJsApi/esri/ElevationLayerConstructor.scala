@@ -17,5 +17,5 @@ trait ElevationLayerConstructor
 Instantiable0[ElevationLayer]
      with Instantiable1[/* properties */ ElevationLayerProperties, ElevationLayer] {
   
-  def fromJSON(json: js.Any): ElevationLayer = js.native
+  def fromJSON(json: Any): ElevationLayer = js.native
 }

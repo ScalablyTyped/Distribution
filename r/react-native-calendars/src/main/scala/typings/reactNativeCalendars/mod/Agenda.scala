@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-calendars", "Agenda")
 @js.native
-class Agenda[TItem] protected ()
-  extends Component[AgendaProps[TItem] & CalendarMarkingProps, js.Object, js.Any] {
+open class Agenda[TItem] protected ()
+  extends Component[AgendaProps[TItem] & CalendarMarkingProps, js.Object, Any] {
   def this(props: AgendaProps[TItem] & CalendarMarkingProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: AgendaProps[TItem] & CalendarMarkingProps, context: js.Any) = this()
+  def this(props: AgendaProps[TItem] & CalendarMarkingProps, context: Any) = this()
 }

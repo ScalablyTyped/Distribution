@@ -24,6 +24,8 @@ trait DISABLED extends StObject {
   
   var TEXTAREA: String
   
+  var WITH_INTERNAL_COUNTER: String
+  
   var WITH_LEADING_ICON: String
   
   var WITH_TRAILING_ICON: String
@@ -40,10 +42,11 @@ object DISABLED {
     OUTLINED: String,
     ROOT: String,
     TEXTAREA: String,
+    WITH_INTERNAL_COUNTER: String,
     WITH_LEADING_ICON: String,
     WITH_TRAILING_ICON: String
   ): DISABLED = {
-    val __obj = js.Dynamic.literal(DISABLED = DISABLED.asInstanceOf[js.Any], FOCUSED = FOCUSED.asInstanceOf[js.Any], HELPER_LINE = HELPER_LINE.asInstanceOf[js.Any], INVALID = INVALID.asInstanceOf[js.Any], LABEL_FLOATING = LABEL_FLOATING.asInstanceOf[js.Any], NO_LABEL = NO_LABEL.asInstanceOf[js.Any], OUTLINED = OUTLINED.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any], TEXTAREA = TEXTAREA.asInstanceOf[js.Any], WITH_LEADING_ICON = WITH_LEADING_ICON.asInstanceOf[js.Any], WITH_TRAILING_ICON = WITH_TRAILING_ICON.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(DISABLED = DISABLED.asInstanceOf[js.Any], FOCUSED = FOCUSED.asInstanceOf[js.Any], HELPER_LINE = HELPER_LINE.asInstanceOf[js.Any], INVALID = INVALID.asInstanceOf[js.Any], LABEL_FLOATING = LABEL_FLOATING.asInstanceOf[js.Any], NO_LABEL = NO_LABEL.asInstanceOf[js.Any], OUTLINED = OUTLINED.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any], TEXTAREA = TEXTAREA.asInstanceOf[js.Any], WITH_INTERNAL_COUNTER = WITH_INTERNAL_COUNTER.asInstanceOf[js.Any], WITH_LEADING_ICON = WITH_LEADING_ICON.asInstanceOf[js.Any], WITH_TRAILING_ICON = WITH_TRAILING_ICON.asInstanceOf[js.Any])
     __obj.asInstanceOf[DISABLED]
   }
   
@@ -66,6 +69,8 @@ object DISABLED {
     inline def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
     
     inline def setTEXTAREA(value: String): Self = StObject.set(x, "TEXTAREA", value.asInstanceOf[js.Any])
+    
+    inline def setWITH_INTERNAL_COUNTER(value: String): Self = StObject.set(x, "WITH_INTERNAL_COUNTER", value.asInstanceOf[js.Any])
     
     inline def setWITH_LEADING_ICON(value: String): Self = StObject.set(x, "WITH_LEADING_ICON", value.asInstanceOf[js.Any])
     

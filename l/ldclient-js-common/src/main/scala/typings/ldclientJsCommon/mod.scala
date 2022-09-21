@@ -3,7 +3,6 @@ package typings.ldclientJsCommon
 import org.scalablytyped.runtime.StringDictionary
 import typings.ldclientJsCommon.anon.Current
 import typings.ldclientJsCommon.ldclientJsCommonStrings.localStorage
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,12 +104,12 @@ object mod {
     def identify(
       user: LDUser,
       hash: String,
-      onDone: js.Function2[/* err */ Error | Null, /* flags */ LDFlagSet | Null, Unit]
+      onDone: js.Function2[/* err */ js.Error | Null, /* flags */ LDFlagSet | Null, Unit]
     ): js.Promise[LDFlagSet] = js.native
     def identify(
       user: LDUser,
       hash: Unit,
-      onDone: js.Function2[/* err */ Error | Null, /* flags */ LDFlagSet | Null, Unit]
+      onDone: js.Function2[/* err */ js.Error | Null, /* flags */ LDFlagSet | Null, Unit]
     ): js.Promise[LDFlagSet] = js.native
     
     /**
@@ -123,8 +122,8 @@ object mod {
       * @param context
       *   The `this` context for the callback, if one was specified for [[on]].
       */
-    def off(key: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    def off(key: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): Unit = js.native
+    def off(key: String, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    def off(key: String, callback: js.Function1[/* repeated */ Any, Unit], context: Any): Unit = js.native
     
     /**
       * Registers an event listener.
@@ -164,8 +163,8 @@ object mod {
       * @param context
       *   The `this` context to use for the callback.
       */
-    def on(key: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    def on(key: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): Unit = js.native
+    def on(key: String, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    def on(key: String, callback: js.Function1[/* repeated */ Any, Unit], context: Any): Unit = js.native
     
     /**
       * Specifies whether or not to open a streaming connection to LaunchDarkly for live flag updates.
@@ -192,7 +191,7 @@ object mod {
       *   Additional information to associate with the event.
       */
     def track(key: String): Unit = js.native
-    def track(key: String, data: js.Any): Unit = js.native
+    def track(key: String, data: Any): Unit = js.native
     
     /**
       * Determines the variation of a feature flag for the current user.
@@ -373,7 +372,7 @@ object mod {
   
   type LDFlagSet = StringDictionary[LDFlagValue]
   
-  type LDFlagValue = js.Any
+  type LDFlagValue = Any
   
   trait LDLogger extends StObject {
     
@@ -596,7 +595,7 @@ object mod {
       
       inline def setPrivateAttributeNamesUndefined: Self = StObject.set(x, "privateAttributeNames", js.undefined)
       
-      inline def setPrivateAttributeNamesVarargs(value: String*): Self = StObject.set(x, "privateAttributeNames", js.Array(value :_*))
+      inline def setPrivateAttributeNamesVarargs(value: String*): Self = StObject.set(x, "privateAttributeNames", js.Array(value*))
       
       inline def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
       
@@ -767,7 +766,7 @@ object mod {
       
       inline def setPrivateAttributeNamesUndefined: Self = StObject.set(x, "privateAttributeNames", js.undefined)
       
-      inline def setPrivateAttributeNamesVarargs(value: String*): Self = StObject.set(x, "privateAttributeNames", js.Array(value :_*))
+      inline def setPrivateAttributeNamesVarargs(value: String*): Self = StObject.set(x, "privateAttributeNames", js.Array(value*))
       
       inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
       

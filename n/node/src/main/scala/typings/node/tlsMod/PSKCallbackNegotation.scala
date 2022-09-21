@@ -1,28 +1,31 @@
 package typings.node.tlsMod
 
-import typings.node.NodeJS.TypedArray
-import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PSKCallbackNegotation extends StObject {
   
-  var identitty: String
+  var identity: String
   
-  var psk: DataView | TypedArray
+  var psk: js.typedarray.DataView | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any)
 }
 object PSKCallbackNegotation {
   
-  inline def apply(identitty: String, psk: DataView | TypedArray): PSKCallbackNegotation = {
-    val __obj = js.Dynamic.literal(identitty = identitty.asInstanceOf[js.Any], psk = psk.asInstanceOf[js.Any])
+  inline def apply(
+    identity: String,
+    psk: js.typedarray.DataView | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any)
+  ): PSKCallbackNegotation = {
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], psk = psk.asInstanceOf[js.Any])
     __obj.asInstanceOf[PSKCallbackNegotation]
   }
   
   extension [Self <: PSKCallbackNegotation](x: Self) {
     
-    inline def setIdentitty(value: String): Self = StObject.set(x, "identitty", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    inline def setPsk(value: DataView | TypedArray): Self = StObject.set(x, "psk", value.asInstanceOf[js.Any])
+    inline def setPsk(
+      value: js.typedarray.DataView | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any)
+    ): Self = StObject.set(x, "psk", value.asInstanceOf[js.Any])
   }
 }

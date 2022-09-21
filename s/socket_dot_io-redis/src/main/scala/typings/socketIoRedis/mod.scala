@@ -1,222 +1,159 @@
 package typings.socketIoRedis
 
-import org.scalablytyped.runtime.Shortcut
-import typings.socketIo.mod.Adapter
-import typings.socketIoRedis.anon.Except
+import typings.socketIoAdapter.mod.Adapter
+import typings.socketIoAdapter.mod.Room
+import typings.socketIoAdapter.mod.SocketId
+import typings.socketIoRedis.anon.PartialRedisAdapterOption
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("socket.io-redis", JSImport.Namespace)
   @js.native
-  val ^ : SocketIORedisStatic = js.native
+  val ^ : js.Any = js.native
   
+  @JSImport("socket.io-redis", "RedisAdapter")
   @js.native
-  trait RedisAdapter
-    extends StObject
-       with Adapter {
+  open class RedisAdapter protected () extends Adapter {
+    /**
+      * Adapter constructor.
+      *
+      * @param nsp - the namespace
+      * @param uri - the url of the Redis server
+      * @param opts - the options for both the Redis adapter and the Redis client
+      *
+      * @public
+      */
+    def this(nsp: Any, uri: String) = this()
+    def this(nsp: Any, uri: String, opts: PartialRedisAdapterOption) = this()
     
     /**
-      * allRooms returns the list of all rooms.
-      * @param {(err: any, rooms: string[]) => void} callback
+      * Gets the list of all rooms (across every node)
+      *
+      * @public
       */
-    def allRooms(callback: js.Function2[/* err */ js.Any, /* rooms */ js.Array[String], Unit]): Unit = js.native
+    def allRooms(): js.Promise[Set[Room]] = js.native
+    
+    /* private */ val channel: Any = js.native
     
     /**
-      * Broadcasts a packet
-      * @param packet The packet to broadcast
-      * @param opts Any options to send along:
-      *    - rooms: An optional list of rooms to broadcast to. If empty, the packet is broadcast to all sockets
-      *    - except: A list of Socket IDs to exclude
-      *    - flags: Any flags that we want to send along ('json', 'volatile', 'broadcast')
-      * @param remote The optional flag, whether the packet came from another node
+      * Get the number of subscribers of the request channel
+      *
+      * @private
       */
-    def broadcast(packet: js.Any, opts: Except): Unit = js.native
-    def broadcast(packet: js.Any, opts: Except, remote: Boolean): Unit = js.native
+    /* private */ var getNumSub: Any = js.native
     
     /**
-      * clientRooms returns the list of rooms the client with the given ID has joined
-      * (even on another node).
-      * @param {string} id
-      * @param {(err: any, rooms: string[]) => void} callback
+      * Called with a subscription message
+      *
+      * @private
       */
-    def clientRooms(id: String, callback: js.Function2[/* err */ js.Any, /* rooms */ js.Array[String], Unit]): Unit = js.native
+    /* private */ var onmessage: Any = js.native
     
     /**
-      * clients returns the list of client IDs connected to rooms across all nodes.
-      * @param {(err?: any, clients: string[]) => void} callback
+      * Called on request from another node
+      *
+      * @private
       */
-    def clients(callback: js.Function2[/* err */ js.Any, /* clients */ js.Array[String], Unit]): Unit = js.native
-    /**
-      * clients returns the list of client IDs connected to rooms across all nodes.
-      * @param {string[]} rooms
-      * @param {(err?: any, clients: string[]) => void} callback
-      */
-    def clients(
-      rooms: js.Array[String],
-      callback: js.Function2[/* err */ js.Any, /* clients */ js.Array[String], Unit]
-    ): Unit = js.native
+    /* private */ var onrequest: Any = js.native
     
     /**
-      * customRequest sends a request to every nodes, that will respond through the
-      * customHook method.
-      * @param {any} data
-      * @param {(err: any, replies: any[]) => void} callback
+      * Called on response from another node
+      *
+      * @private
       */
-    def customRequest(data: js.Any, callback: js.Function2[/* err */ js.Any, /* replies */ js.Array[js.Any], Unit]): Unit = js.native
+    /* private */ var onresponse: Any = js.native
     
-    def delAll(id: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
-    
-    /**
-      * The prefix of pub/sub events
-      */
-    var prefix: String = js.native
+    val pubClient: Any = js.native
     
     /**
-      * Optional, the redis client to publish events on
+      * Makes the socket with the given id to be forcefully disconnected
+      * @param {String} id - socket id
+      * @param {Boolean} close - if `true`, closes the underlying connection
+      *
+      * @public
       */
-    var pubClient: js.UndefOr[js.Any] = js.native
+    def remoteDisconnect(id: SocketId): js.Promise[Unit] = js.native
+    def remoteDisconnect(id: SocketId, close: Boolean): js.Promise[Unit] = js.native
     
     /**
-      * remoteDisconnect makes the socket with the given id to get disconnected.
-      * If close is set to true, it also closes the underlying socket.
-      * The callback will be called once the socket was disconnected, or with an
-      * err argument if the socket was not found.
-      * @param {string} id the socket Id.
-      * @param {boolean} close close the underlying socket
-      * @param {(err: any) => void} callback
+      * Makes the socket with the given id join the room
+      *
+      * @param {String} id - socket id
+      * @param {String} room - room name
+      * @public
       */
-    def remoteDisconnect(id: String, close: Boolean, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def remoteJoin(id: SocketId, room: Room): js.Promise[Unit] = js.native
     
     /**
-      * remoteJoin rakes the socket with the given id join the room.
-      * The callback will be called once the socket has joined the room, or with an
-      * err argument if the socket was not found.
-      * @param {string} id the socket Id.
-      * @param {string} room the room Id.
-      * @param {(err: any) => void} callback
+      * Makes the socket with the given id leave the room
+      *
+      * @param {String} id - socket id
+      * @param {String} room - room name
+      * @public
       */
-    def remoteJoin(id: String, room: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def remoteLeave(id: SocketId, room: Room): js.Promise[Unit] = js.native
     
-    /**
-      * remoteLeave makes the socket with the given id leave the room.
-      * The callback will be called once the socket has left the room, or with an
-      * err argument if the socket was not found.
-      * @param {string} id the socket Id.
-      * @param {string} room the room Id.
-      * @param {(err: any) => void} callback
-      */
-    def remoteLeave(id: String, room: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    /* private */ val requestChannel: Any = js.native
     
-    /**
-      * Optional, the redis client to subscribe to events on
-      */
-    var subClient: js.UndefOr[js.Any] = js.native
+    /* private */ var requests: Any = js.native
     
-    /**
-      * This servers key
-      */
-    var uid: String = js.native
+    val requestsTimeout: Double = js.native
+    
+    /* private */ val responseChannel: Any = js.native
+    
+    val subClient: Any = js.native
+    
+    val uid: Any = js.native
   }
   
-  /**
-    * Options to pass to the redis server when creating it
-    */
-  trait SocketIORedisOptions extends StObject {
+  inline def createAdapter(opts: PartialRedisAdapterOption): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createAdapter(uri: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(uri.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createAdapter(uri: String, opts: PartialRedisAdapterOption): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  trait RedisAdapterOptions extends StObject {
     
     /**
-      * The optional password to connect to redis on
-      */
-    var auth_pass: js.UndefOr[Double | String] = js.undefined
-    
-    /**
-      * The optional host to connect to redis on
-      * @default localhost
-      */
-    var host: js.UndefOr[String] = js.undefined
-    
-    /**
-      * The optional name of the key to pub/sub events on as prefix
+      * the name of the key to pub/sub events on as prefix
       * @default socket.io
       */
-    var key: js.UndefOr[String] = js.undefined
+    var key: String
     
     /**
-      * The optional port to connect to redis on
-      * @default 6379
+      * the redis client to publish events on
       */
-    var port: js.UndefOr[Double] = js.undefined
+    var pubClient: Any
     
     /**
-      * The optional redis client to publish events on
+      * after this timeout the adapter will stop waiting from responses to request
+      * @default 5000
       */
-    var pubClient: js.UndefOr[js.Any] = js.undefined
+    var requestsTimeout: Double
     
     /**
-      * The optional redis client to subscribe to events on
+      * the redis client to subscribe to events on
       */
-    var subClient: js.UndefOr[js.Any] = js.undefined
+    var subClient: Any
   }
-  object SocketIORedisOptions {
+  object RedisAdapterOptions {
     
-    inline def apply(): SocketIORedisOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SocketIORedisOptions]
+    inline def apply(key: String, pubClient: Any, requestsTimeout: Double, subClient: Any): RedisAdapterOptions = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], pubClient = pubClient.asInstanceOf[js.Any], requestsTimeout = requestsTimeout.asInstanceOf[js.Any], subClient = subClient.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RedisAdapterOptions]
     }
     
-    extension [Self <: SocketIORedisOptions](x: Self) {
-      
-      inline def setAuth_pass(value: Double | String): Self = StObject.set(x, "auth_pass", value.asInstanceOf[js.Any])
-      
-      inline def setAuth_passUndefined: Self = StObject.set(x, "auth_pass", js.undefined)
-      
-      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
-      
-      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    extension [Self <: RedisAdapterOptions](x: Self) {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setPubClient(value: Any): Self = StObject.set(x, "pubClient", value.asInstanceOf[js.Any])
       
-      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setRequestsTimeout(value: Double): Self = StObject.set(x, "requestsTimeout", value.asInstanceOf[js.Any])
       
-      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
-      
-      inline def setPubClient(value: js.Any): Self = StObject.set(x, "pubClient", value.asInstanceOf[js.Any])
-      
-      inline def setPubClientUndefined: Self = StObject.set(x, "pubClient", js.undefined)
-      
-      inline def setSubClient(value: js.Any): Self = StObject.set(x, "subClient", value.asInstanceOf[js.Any])
-      
-      inline def setSubClientUndefined: Self = StObject.set(x, "subClient", js.undefined)
+      inline def setSubClient(value: Any): Self = StObject.set(x, "subClient", value.asInstanceOf[js.Any])
     }
   }
-  
-  @js.native
-  trait SocketIORedisStatic extends StObject {
-    
-    /**
-      * Default Redis Adapter constructor
-      */
-    def apply(): RedisAdapter = js.native
-    /**
-      * Creates a new Redis Adapter
-      * @param opts A parameters object
-      */
-    def apply(opts: SocketIORedisOptions): RedisAdapter = js.native
-    /**
-      * Creates a new Redis Adapter
-      * @param uri Is a string like localhost:6379 where your redis server is located.
-      * @param opts An optional parameters object
-      */
-    def apply(uri: String): RedisAdapter = js.native
-    def apply(uri: String, opts: SocketIORedisOptions): RedisAdapter = js.native
-  }
-  
-  type _To = SocketIORedisStatic
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: SocketIORedisStatic = ^
 }

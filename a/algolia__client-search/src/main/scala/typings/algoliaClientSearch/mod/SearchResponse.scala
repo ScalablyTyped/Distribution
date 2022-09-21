@@ -1,6 +1,7 @@
 package typings.algoliaClientSearch.mod
 
 import typings.algoliaClientSearch.anon.Avg
+import typings.algoliaClientSearch.anon.FacetOrdering
 import typings.algoliaClientSearch.anon.Match
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -10,14 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchResponse[TObject] extends StObject {
   
   /**
+    * If a search encounters an index that is being A/B tested, abTestID reports the ongoing A/B test ID.
+    */
+  var abTestID: js.UndefOr[Double] = js.undefined
+  
+  /**
     * In case of AB test, reports the variant ID used. The variant ID is the position in the array of variants (starting at 1).
     */
   var abTestVariantID: js.UndefOr[Double] = js.undefined
   
   /**
+    * The relevancy threshold applied to search in a virtual index.
+    */
+  var appliedRelevancyStrictness: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Rules applied to the query.
     */
-  var appliedRules: js.UndefOr[js.Array[Record[String, js.Any]]] = js.undefined
+  var appliedRules: js.UndefOr[js.Array[Record[String, Any]]] = js.undefined
   
   /**
     * The computed geo location.
@@ -57,7 +68,7 @@ trait SearchResponse[TObject] extends StObject {
   /**
     * Statistics for numerical facets.
     */
-  var facetsStats: js.UndefOr[Record[String, Avg]] = js.undefined
+  var facets_stats: js.UndefOr[Record[String, Avg]] = js.undefined
   
   /**
     * The hits returned by the search.
@@ -105,6 +116,11 @@ trait SearchResponse[TObject] extends StObject {
   var nbPages: Double
   
   /**
+    * Subset of hits selected when relevancyStrictness is applied.
+    */
+  var nbSortedHits: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The offset of the first hit to returned.
     */
   var offset: js.UndefOr[Double] = js.undefined
@@ -148,6 +164,8 @@ trait SearchResponse[TObject] extends StObject {
     */
   var queryID: js.UndefOr[String] = js.undefined
   
+  var renderingContent: js.UndefOr[FacetOrdering] = js.undefined
+  
   /**
     * Actual host name of the server that processed the request.
     *
@@ -158,7 +176,7 @@ trait SearchResponse[TObject] extends StObject {
   /**
     * Custom user data.
     */
-  var userData: js.UndefOr[js.Any] = js.undefined
+  var userData: js.UndefOr[Any] = js.undefined
 }
 object SearchResponse {
   
@@ -179,15 +197,23 @@ object SearchResponse {
   
   extension [Self <: SearchResponse[?], TObject](x: Self & SearchResponse[TObject]) {
     
+    inline def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
+    
+    inline def setAbTestIDUndefined: Self = StObject.set(x, "abTestID", js.undefined)
+    
     inline def setAbTestVariantID(value: Double): Self = StObject.set(x, "abTestVariantID", value.asInstanceOf[js.Any])
     
     inline def setAbTestVariantIDUndefined: Self = StObject.set(x, "abTestVariantID", js.undefined)
     
-    inline def setAppliedRules(value: js.Array[Record[String, js.Any]]): Self = StObject.set(x, "appliedRules", value.asInstanceOf[js.Any])
+    inline def setAppliedRelevancyStrictness(value: Double): Self = StObject.set(x, "appliedRelevancyStrictness", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedRelevancyStrictnessUndefined: Self = StObject.set(x, "appliedRelevancyStrictness", js.undefined)
+    
+    inline def setAppliedRules(value: js.Array[Record[String, Any]]): Self = StObject.set(x, "appliedRules", value.asInstanceOf[js.Any])
     
     inline def setAppliedRulesUndefined: Self = StObject.set(x, "appliedRules", js.undefined)
     
-    inline def setAppliedRulesVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "appliedRules", js.Array(value :_*))
+    inline def setAppliedRulesVarargs(value: (Record[String, Any])*): Self = StObject.set(x, "appliedRules", js.Array(value*))
     
     inline def setAroundLatLng(value: String): Self = StObject.set(x, "aroundLatLng", value.asInstanceOf[js.Any])
     
@@ -209,17 +235,17 @@ object SearchResponse {
     
     inline def setFacets(value: Record[String, Record[String, Double]]): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
     
-    inline def setFacetsStats(value: Record[String, Avg]): Self = StObject.set(x, "facetsStats", value.asInstanceOf[js.Any])
-    
-    inline def setFacetsStatsUndefined: Self = StObject.set(x, "facetsStats", js.undefined)
-    
     inline def setFacetsUndefined: Self = StObject.set(x, "facets", js.undefined)
+    
+    inline def setFacets_stats(value: Record[String, Avg]): Self = StObject.set(x, "facets_stats", value.asInstanceOf[js.Any])
+    
+    inline def setFacets_statsUndefined: Self = StObject.set(x, "facets_stats", js.undefined)
     
     inline def setHits(value: js.Array[Hit[TObject]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
     inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
-    inline def setHitsVarargs(value: Hit[TObject]*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: Hit[TObject]*): Self = StObject.set(x, "hits", js.Array(value*))
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -240,6 +266,10 @@ object SearchResponse {
     inline def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
     
     inline def setNbPages(value: Double): Self = StObject.set(x, "nbPages", value.asInstanceOf[js.Any])
+    
+    inline def setNbSortedHits(value: Double): Self = StObject.set(x, "nbSortedHits", value.asInstanceOf[js.Any])
+    
+    inline def setNbSortedHitsUndefined: Self = StObject.set(x, "nbSortedHits", js.undefined)
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
@@ -265,11 +295,15 @@ object SearchResponse {
     
     inline def setQueryIDUndefined: Self = StObject.set(x, "queryID", js.undefined)
     
+    inline def setRenderingContent(value: FacetOrdering): Self = StObject.set(x, "renderingContent", value.asInstanceOf[js.Any])
+    
+    inline def setRenderingContentUndefined: Self = StObject.set(x, "renderingContent", js.undefined)
+    
     inline def setServerUsed(value: String): Self = StObject.set(x, "serverUsed", value.asInstanceOf[js.Any])
     
     inline def setServerUsedUndefined: Self = StObject.set(x, "serverUsed", js.undefined)
     
-    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }

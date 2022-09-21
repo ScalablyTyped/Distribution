@@ -32,11 +32,11 @@ object mod {
       
       inline def setExports(value: js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
-      inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
+      inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value*))
       
       inline def setReexports(value: js.Array[String]): Self = StObject.set(x, "reexports", value.asInstanceOf[js.Any])
       
-      inline def setReexportsVarargs(value: String*): Self = StObject.set(x, "reexports", js.Array(value :_*))
+      inline def setReexportsVarargs(value: String*): Self = StObject.set(x, "reexports", js.Array(value*))
     }
   }
 }

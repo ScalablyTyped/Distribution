@@ -10,7 +10,7 @@ object deepLinkingMod {
   
   trait ContentItem extends StObject {
     
-    var custom: js.UndefOr[js.Any] = js.undefined
+    var custom: js.UndefOr[Any] = js.undefined
     
     var title: String
     
@@ -28,7 +28,7 @@ object deepLinkingMod {
     
     extension [Self <: ContentItem](x: Self) {
       
-      inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       

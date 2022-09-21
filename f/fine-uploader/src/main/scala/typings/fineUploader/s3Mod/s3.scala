@@ -8,7 +8,6 @@ import typings.fineUploader.coreMod.PromiseOptions
 import typings.fineUploader.coreMod.RequestOptions
 import typings.fineUploader.coreMod.ResumableFileObject
 import typings.fineUploader.mod.UIOptions
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object s3 {
   
   @JSImport("fine-uploader/lib/s3", "s3.FineUploader")
   @js.native
-  class FineUploader ()
+  open class FineUploader ()
     extends typings.fineUploader.mod.FineUploader {
     def this(fineuploaderOptions: S3UIOptions) = this()
     
@@ -43,15 +42,15 @@ object s3 {
       * @param any newAcl : Canned ACL value to be sent with the upload request. Used by S3
       * @param number id : File ID to target the ACL
       */
-    def setAcl(newAcl: js.Any): Unit = js.native
-    def setAcl(newAcl: js.Any, id: Double): Unit = js.native
+    def setAcl(newAcl: Any): Unit = js.native
+    def setAcl(newAcl: Any, id: Double): Unit = js.native
     
     /**
       * Pass new or initial credentials. This is used to support the no-server workflow
       *
       * @param any newCredentials : The new or initial credentials to set for server-less uploads
       */
-    def setCredentials(newCredentials: js.Any): Unit = js.native
+    def setCredentials(newCredentials: Any): Unit = js.native
     
     /**
       * Modify the endpoint that Fine Uploader should POST to when a file has been successfully uploaded to S3
@@ -71,13 +70,13 @@ object s3 {
       * @param object newParams : The additional parameters set for the upload request
       * @param number id : A file id to apply these upload success parameters to
       */
-    def setUploadSuccessParams(newParams: js.Any): Unit = js.native
-    def setUploadSuccessParams(newParams: js.Any, id: Double): Unit = js.native
+    def setUploadSuccessParams(newParams: Any): Unit = js.native
+    def setUploadSuccessParams(newParams: Any, id: Double): Unit = js.native
   }
   
   @JSImport("fine-uploader/lib/s3", "s3.FineUploaderBasic")
   @js.native
-  class FineUploaderBasic ()
+  open class FineUploaderBasic ()
     extends typings.fineUploader.coreMod.FineUploaderBasic {
     def this(fineuploaderOptions: S3CoreOptions) = this()
     
@@ -103,15 +102,15 @@ object s3 {
       * @param any newAcl : Canned ACL value to be sent with the upload request. Used by S3
       * @param number id : File ID to target the ACL
       */
-    def setAcl(newAcl: js.Any): Unit = js.native
-    def setAcl(newAcl: js.Any, id: Double): Unit = js.native
+    def setAcl(newAcl: Any): Unit = js.native
+    def setAcl(newAcl: Any, id: Double): Unit = js.native
     
     /**
       * Pass new or initial credentials. This is used to support the no-server workflow
       *
       * @param any newCredentials : The new or initial credentials to set for server-less uploads
       */
-    def setCredentials(newCredentials: js.Any): Unit = js.native
+    def setCredentials(newCredentials: Any): Unit = js.native
     
     /**
       * Modify the endpoint that Fine Uploader should POST to when a file has been successfully uploaded to S3
@@ -131,8 +130,8 @@ object s3 {
       * @param object newParams : The additional parameters set for the upload request
       * @param number id : A file id to apply these upload success parameters to
       */
-    def setUploadSuccessParams(newParams: js.Any): Unit = js.native
-    def setUploadSuccessParams(newParams: js.Any, id: Double): Unit = js.native
+    def setUploadSuccessParams(newParams: Any): Unit = js.native
+    def setUploadSuccessParams(newParams: Any, id: Double): Unit = js.native
   }
   
   type BucketFunction = js.Function1[/* id */ Double, PromiseOptions | String]
@@ -285,7 +284,7 @@ object s3 {
       *
       * @default `null`
       */
-    var expiration: js.UndefOr[String | Date] = js.undefined
+    var expiration: js.UndefOr[String | js.Date] = js.undefined
     
     /**
       * Temporary secret AWS key
@@ -314,7 +313,7 @@ object s3 {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setExpiration(value: String | Date): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: String | js.Date): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
       inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
@@ -564,7 +563,7 @@ object s3 {
       *
       * @default `{}`
       */
-    var customHeaders: js.UndefOr[js.Any | S3CustomHeaderFunction] = js.undefined
+    var customHeaders: js.UndefOr[Any | S3CustomHeaderFunction] = js.undefined
     
     /**
       * The endpoint that Fine Uploader can use to send policy documents (HTML form uploads) or other strings to sign (REST requests) before sending requests off to S3
@@ -589,7 +588,7 @@ object s3 {
     
     extension [Self <: S3SignatureOptions](x: Self) {
       
-      inline def setCustomHeaders(value: js.Any | S3CustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomHeaders(value: Any | S3CustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
       inline def setCustomHeadersFunction1(value: /* id */ Double => Unit): Self = StObject.set(x, "customHeaders", js.Any.fromFunction1(value))
       
@@ -714,7 +713,7 @@ object s3 {
       *
       * @default `{}`
       */
-    var customHeaders: js.UndefOr[js.Any] = js.undefined
+    var customHeaders: js.UndefOr[Any] = js.undefined
     
     /**
       * An endpoint that Fine Uploader should POST to when a file has been successfully uploaded to S3
@@ -738,7 +737,7 @@ object s3 {
       *
       * @default `{}`
       */
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
   }
   object S3UploadSuccessOptions {
     
@@ -749,7 +748,7 @@ object s3 {
     
     extension [Self <: S3UploadSuccessOptions](x: Self) {
       
-      inline def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomHeaders(value: Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
       inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
@@ -761,7 +760,7 @@ object s3 {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }

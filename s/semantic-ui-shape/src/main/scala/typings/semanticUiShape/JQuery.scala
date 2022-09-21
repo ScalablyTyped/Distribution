@@ -1,9 +1,6 @@
 package typings.semanticUiShape
 
 import typings.semanticUiShape.SemanticUI.Shape
-import typings.semanticUiShape.SemanticUI.Shape.ClassNameSettings
-import typings.semanticUiShape.SemanticUI.Shape.ErrorSettings
-import typings.semanticUiShape.SemanticUI.Shape.SelectorSettings
 import typings.semanticUiShape.SemanticUI.Shape.Translation
 import typings.semanticUiShape.SemanticUI.ShapeSettings
 import typings.semanticUiShape.semanticUiShapeStrings.`flip back`
@@ -20,28 +17,12 @@ import typings.semanticUiShape.semanticUiShapeStrings.`is animating`
 import typings.semanticUiShape.semanticUiShapeStrings.`set default side`
 import typings.semanticUiShape.semanticUiShapeStrings.`set next side`
 import typings.semanticUiShape.semanticUiShapeStrings.`set stage size`
-import typings.semanticUiShape.semanticUiShapeStrings.beforeChange
-import typings.semanticUiShape.semanticUiShapeStrings.className
-import typings.semanticUiShape.semanticUiShapeStrings.debug
 import typings.semanticUiShape.semanticUiShapeStrings.destroy
-import typings.semanticUiShape.semanticUiShapeStrings.duration
-import typings.semanticUiShape.semanticUiShapeStrings.error
-import typings.semanticUiShape.semanticUiShapeStrings.height
-import typings.semanticUiShape.semanticUiShapeStrings.initial
-import typings.semanticUiShape.semanticUiShapeStrings.name
-import typings.semanticUiShape.semanticUiShapeStrings.namespace
-import typings.semanticUiShape.semanticUiShapeStrings.next
-import typings.semanticUiShape.semanticUiShapeStrings.onChange
-import typings.semanticUiShape.semanticUiShapeStrings.performance
 import typings.semanticUiShape.semanticUiShapeStrings.queue
 import typings.semanticUiShape.semanticUiShapeStrings.refresh
 import typings.semanticUiShape.semanticUiShapeStrings.repaint
 import typings.semanticUiShape.semanticUiShapeStrings.reset
-import typings.semanticUiShape.semanticUiShapeStrings.selector
 import typings.semanticUiShape.semanticUiShapeStrings.setting
-import typings.semanticUiShape.semanticUiShapeStrings.silent
-import typings.semanticUiShape.semanticUiShapeStrings.verbose
-import typings.semanticUiShape.semanticUiShapeStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,38 +30,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def shape(): JQuery
-  def shape(behavior: setting, name: beforeChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
-  def shape(behavior: setting, name: beforeChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
-  def shape(behavior: setting, name: className, value: Unit): ClassNameSettings
-  def shape(behavior: setting, name: className, value: ClassNameSettings): JQuery
-  def shape(behavior: setting, name: debug, value: Boolean): JQuery
-  def shape(behavior: setting, name: debug, value: Unit): Boolean
-  def shape(behavior: setting, name: duration, value: Double): JQuery
-  def shape(behavior: setting, name: duration, value: Unit): Double
-  def shape(behavior: setting, name: error, value: Unit): ErrorSettings
-  def shape(behavior: setting, name: error, value: ErrorSettings): JQuery
-  def shape(behavior: setting, name: height, value: Double): JQuery
-  def shape(behavior: setting, name: height, value: Unit): next | initial | Double
-  def shape(behavior: setting, name: height, value: initial): JQuery
-  def shape(behavior: setting, name: height, value: next): JQuery
-  def shape(behavior: setting, name: namespace, value: String): JQuery
-  def shape(behavior: setting, name: namespace, value: Unit): String
-  def shape(behavior: setting, name: name, value: String): JQuery
-  def shape(behavior: setting, name: name, value: Unit): String
-  def shape(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
-  def shape(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
-  def shape(behavior: setting, name: performance, value: Boolean): JQuery
-  def shape(behavior: setting, name: performance, value: Unit): Boolean
-  def shape(behavior: setting, name: selector, value: Unit): SelectorSettings
-  def shape(behavior: setting, name: selector, value: SelectorSettings): JQuery
-  def shape(behavior: setting, name: silent, value: Boolean): JQuery
-  def shape(behavior: setting, name: silent, value: Unit): Boolean
-  def shape(behavior: setting, name: verbose, value: Boolean): JQuery
-  def shape(behavior: setting, name: verbose, value: Unit): Boolean
-  def shape(behavior: setting, name: width, value: Double): JQuery
-  def shape(behavior: setting, name: width, value: Unit): next | initial | Double
-  def shape(behavior: setting, name: width, value: initial): JQuery
-  def shape(behavior: setting, name: width, value: next): JQuery
   def shape(settings: ShapeSettings): JQuery
   @JSName("shape")
   var shape_Original: Shape
@@ -180,6 +129,14 @@ trait JQuery extends StObject {
   def shape_setstagesize(behavior: `set stage size`): JQuery
   @JSName("shape")
   def shape_setting(behavior: setting, value: ShapeSettings): JQuery
+  @JSName("shape")
+  def shape_setting[K /* <: /* keyof semantic-ui-shape.SemanticUI.ShapeSettings */ String */](
+    behavior: setting,
+    name: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-shape.SemanticUI.ShapeSettings._Impl[K] */ js.Any
+  ): JQuery
+  @JSName("shape")
+  def shape_setting[K /* <: /* keyof semantic-ui-shape.SemanticUI.ShapeSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-shape.SemanticUI.ShapeSettings._Impl[K] */ js.Any
 }
 object JQuery {
   

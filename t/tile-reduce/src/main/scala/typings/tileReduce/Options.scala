@@ -11,23 +11,23 @@ trait Options extends StObject {
   
   var bbox: js.UndefOr[BBox] = js.undefined
   
-  var geojson: js.UndefOr[js.Any] = js.undefined
+  var geojson: js.UndefOr[Any] = js.undefined
   
   var log: js.UndefOr[Boolean] = js.undefined
   
   var map: String
   
-  var mapOptions: js.UndefOr[js.Any] = js.undefined
+  var mapOptions: js.UndefOr[Any] = js.undefined
   
   var maxWorkers: js.UndefOr[Double] = js.undefined
   
-  var output: js.UndefOr[js.Any] = js.undefined
+  var output: js.UndefOr[Any] = js.undefined
   
   var sourceCover: js.UndefOr[String] = js.undefined
   
   var sources: js.Array[Source]
   
-  var tileStream: js.UndefOr[js.Any] = js.undefined
+  var tileStream: js.UndefOr[Any] = js.undefined
   
   var tiles: js.UndefOr[js.Array[Tile]] = js.undefined
   
@@ -46,7 +46,7 @@ object Options {
     
     inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
     
-    inline def setGeojson(value: js.Any): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
+    inline def setGeojson(value: Any): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
     
     inline def setGeojsonUndefined: Self = StObject.set(x, "geojson", js.undefined)
     
@@ -56,7 +56,7 @@ object Options {
     
     inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    inline def setMapOptions(value: js.Any): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
+    inline def setMapOptions(value: Any): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
     
     inline def setMapOptionsUndefined: Self = StObject.set(x, "mapOptions", js.undefined)
     
@@ -64,7 +64,7 @@ object Options {
     
     inline def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
     
-    inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
@@ -74,9 +74,9 @@ object Options {
     
     inline def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value*))
     
-    inline def setTileStream(value: js.Any): Self = StObject.set(x, "tileStream", value.asInstanceOf[js.Any])
+    inline def setTileStream(value: Any): Self = StObject.set(x, "tileStream", value.asInstanceOf[js.Any])
     
     inline def setTileStreamUndefined: Self = StObject.set(x, "tileStream", js.undefined)
     
@@ -84,7 +84,7 @@ object Options {
     
     inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
-    inline def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+    inline def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value*))
     
     inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }

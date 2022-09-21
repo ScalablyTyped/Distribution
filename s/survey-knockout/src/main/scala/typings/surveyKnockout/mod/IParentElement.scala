@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IParentElement extends StObject {
   
-  def addElement(element: IElement, index: Double): js.Any
+  def addElement(element: IElement, index: Double): Any
   
   var isReadOnly: Boolean
   
@@ -14,14 +14,14 @@ trait IParentElement extends StObject {
 }
 object IParentElement {
   
-  inline def apply(addElement: (IElement, Double) => js.Any, isReadOnly: Boolean, removeElement: IElement => Boolean): IParentElement = {
+  inline def apply(addElement: (IElement, Double) => Any, isReadOnly: Boolean, removeElement: IElement => Boolean): IParentElement = {
     val __obj = js.Dynamic.literal(addElement = js.Any.fromFunction2(addElement), isReadOnly = isReadOnly.asInstanceOf[js.Any], removeElement = js.Any.fromFunction1(removeElement))
     __obj.asInstanceOf[IParentElement]
   }
   
   extension [Self <: IParentElement](x: Self) {
     
-    inline def setAddElement(value: (IElement, Double) => js.Any): Self = StObject.set(x, "addElement", js.Any.fromFunction2(value))
+    inline def setAddElement(value: (IElement, Double) => Any): Self = StObject.set(x, "addElement", js.Any.fromFunction2(value))
     
     inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     

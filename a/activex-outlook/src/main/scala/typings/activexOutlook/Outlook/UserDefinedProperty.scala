@@ -21,7 +21,7 @@ trait UserDefinedProperty extends StObject {
   /* private */ @JSName("Outlook.UserDefinedProperty_typekey")
   var OutlookDotUserDefinedProperty_typekey: UserDefinedProperty
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -37,7 +37,7 @@ object UserDefinedProperty {
     Formula: String,
     Name: String,
     OutlookDotUserDefinedProperty_typekey: UserDefinedProperty,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Type: OlUserPropertyType
   ): UserDefinedProperty = {
@@ -62,7 +62,7 @@ object UserDefinedProperty {
     
     inline def setOutlookDotUserDefinedProperty_typekey(value: UserDefinedProperty): Self = StObject.set(x, "Outlook.UserDefinedProperty_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ object anon {
     
     var parentName: js.UndefOr[String] = js.undefined
     
-    var visitedObjects: js.UndefOr[js.Any] = js.undefined
+    var visitedObjects: js.UndefOr[Any] = js.undefined
   }
   object Copy {
     
@@ -31,25 +31,25 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setCopyVarargs(value: String*): Self = StObject.set(x, "copy", js.Array(value :_*))
+      inline def setCopyVarargs(value: String*): Self = StObject.set(x, "copy", js.Array(value*))
       
       inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setParentName(value: String): Self = StObject.set(x, "parentName", value.asInstanceOf[js.Any])
       
       inline def setParentNameUndefined: Self = StObject.set(x, "parentName", js.undefined)
       
-      inline def setVisitedObjects(value: js.Any): Self = StObject.set(x, "visitedObjects", value.asInstanceOf[js.Any])
+      inline def setVisitedObjects(value: Any): Self = StObject.set(x, "visitedObjects", value.asInstanceOf[js.Any])
       
       inline def setVisitedObjectsUndefined: Self = StObject.set(x, "visitedObjects", js.undefined)
     }

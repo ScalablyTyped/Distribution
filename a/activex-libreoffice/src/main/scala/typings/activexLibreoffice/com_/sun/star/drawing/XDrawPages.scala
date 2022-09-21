@@ -37,12 +37,12 @@ object XDrawPages {
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
     insertNewByIndex: Double => XDrawPage,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: XDrawPage => Unit
   ): XDrawPages = {

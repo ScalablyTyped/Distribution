@@ -8,7 +8,7 @@ trait StoreJsStorage extends StObject {
   
   def clearAll(): Unit
   
-  def each(callback: js.Function2[/* val */ String, /* key */ String, js.Any]): Unit
+  def each(callback: js.Function2[/* val */ String, /* key */ String, Any]): Unit
   
   var name: String
   
@@ -22,7 +22,7 @@ object StoreJsStorage {
   
   inline def apply(
     clearAll: () => Unit,
-    each: js.Function2[/* val */ String, /* key */ String, js.Any] => Unit,
+    each: js.Function2[/* val */ String, /* key */ String, Any] => Unit,
     name: String,
     read: String => String | Null,
     remove: String => Unit,
@@ -36,7 +36,7 @@ object StoreJsStorage {
     
     inline def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
-    inline def setEach(value: js.Function2[/* val */ String, /* key */ String, js.Any] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+    inline def setEach(value: js.Function2[/* val */ String, /* key */ String, Any] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

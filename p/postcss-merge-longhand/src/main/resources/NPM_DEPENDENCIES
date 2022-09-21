@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-merge-longhand" : "5.1.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-merge-longhand" : "5.1.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

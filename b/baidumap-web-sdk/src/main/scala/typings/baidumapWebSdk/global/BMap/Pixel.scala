@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.Pixel")
 @js.native
-class Pixel protected ()
+open class Pixel protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.Pixel {
   def this(x: Double, y: Double) = this()

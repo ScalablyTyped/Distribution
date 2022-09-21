@@ -9,15 +9,12 @@ Angular.js service providing simple notifications using Bootstrap 3 styles with 
 | ------------------ | :-------------: |
 | Full name          | angular-ui-notification |
 | Keywords           | angular, notification, notify, bootstrap |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 302902 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 23255.666666666668 |
+| # stars            | 543.0 |
 
 ## Links
-- [Homepage](https://github.com/alexcrack/angular-ui-notification)
-- [Bugs](https://github.com/alexcrack/angular-ui-notification/issues)
-- [Repository](https://github.com/alexcrack/angular-ui-notification)
 - [Npm](https://www.npmjs.com/package/angular-ui-notification)
     
 

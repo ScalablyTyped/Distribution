@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.AllJoyn
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Uri
@@ -22,7 +21,7 @@ trait AllJoynAboutDataView extends StObject {
   var appName: String
   
   /** The date of manufacture. */
-  var dateOfManufacture: Date
+  var dateOfManufacture: js.Date
   
   /** The default language of the app. */
   var defaultLanguage: Language
@@ -46,7 +45,7 @@ trait AllJoynAboutDataView extends StObject {
   var modelNumber: String
   
   /** This is a set of fields, where each other named AllJoynAboutDataView property is also accessible. For example, ModelNumber is Properties ["ModelNumber"]. Additionally, this property can be used to get custom properties. */
-  var properties: IMapView[String, js.Any]
+  var properties: IMapView[String, Any]
   
   /** The version number of the app. */
   var softwareVersion: String
@@ -66,7 +65,7 @@ object AllJoynAboutDataView {
     ajSoftwareVersion: String,
     appId: String,
     appName: String,
-    dateOfManufacture: Date,
+    dateOfManufacture: js.Date,
     defaultLanguage: Language,
     description: String,
     deviceId: String,
@@ -74,7 +73,7 @@ object AllJoynAboutDataView {
     hardwareVersion: String,
     manufacturer: String,
     modelNumber: String,
-    properties: IMapView[String, js.Any],
+    properties: IMapView[String, Any],
     softwareVersion: String,
     status: Double,
     supportUrl: Uri,
@@ -92,7 +91,7 @@ object AllJoynAboutDataView {
     
     inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    inline def setDateOfManufacture(value: Date): Self = StObject.set(x, "dateOfManufacture", value.asInstanceOf[js.Any])
+    inline def setDateOfManufacture(value: js.Date): Self = StObject.set(x, "dateOfManufacture", value.asInstanceOf[js.Any])
     
     inline def setDefaultLanguage(value: Language): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
@@ -108,7 +107,7 @@ object AllJoynAboutDataView {
     
     inline def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])
     

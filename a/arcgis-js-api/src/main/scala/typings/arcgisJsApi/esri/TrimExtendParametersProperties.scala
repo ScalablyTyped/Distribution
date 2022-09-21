@@ -15,7 +15,9 @@ trait TrimExtendParametersProperties extends StObject {
   /**
     * A flag used with the `trimExtend` operation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#extendHow)
+    * @default "default-curve-extension"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html#extendHow)
     */
   var extendHow: js.UndefOr[
     `default-curve-extension` | `relocate-ends` | `keep-end-attributes` | `no-end-attributes` | `no-extend-at-from` | `no-extend-at-to`
@@ -24,14 +26,14 @@ trait TrimExtendParametersProperties extends StObject {
   /**
     * The array of polylines to trim or extend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#polylines)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html#polylines)
     */
   var polylines: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
   
   /**
     * A polyline used as a guide for trimming or extending input polylines.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#trimExtendTo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html#trimExtendTo)
     */
   var trimExtendTo: js.UndefOr[PolylineProperties] = js.undefined
 }
@@ -54,7 +56,7 @@ object TrimExtendParametersProperties {
     
     inline def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
-    inline def setPolylinesVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylines", js.Array(value :_*))
+    inline def setPolylinesVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylines", js.Array(value*))
     
     inline def setTrimExtendTo(value: PolylineProperties): Self = StObject.set(x, "trimExtendTo", value.asInstanceOf[js.Any])
     

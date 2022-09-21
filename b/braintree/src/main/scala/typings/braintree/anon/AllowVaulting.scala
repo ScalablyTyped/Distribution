@@ -1,6 +1,5 @@
 package typings.braintree.anon
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait AllowVaulting extends StObject {
   
   var includeBillingPostalCode: js.UndefOr[Boolean] = js.undefined
   
-  var revokeAfter: js.UndefOr[Date] = js.undefined
+  var revokeAfter: js.UndefOr[js.Date] = js.undefined
 }
 object AllowVaulting {
   
@@ -30,7 +29,7 @@ object AllowVaulting {
     
     inline def setIncludeBillingPostalCodeUndefined: Self = StObject.set(x, "includeBillingPostalCode", js.undefined)
     
-    inline def setRevokeAfter(value: Date): Self = StObject.set(x, "revokeAfter", value.asInstanceOf[js.Any])
+    inline def setRevokeAfter(value: js.Date): Self = StObject.set(x, "revokeAfter", value.asInstanceOf[js.Any])
     
     inline def setRevokeAfterUndefined: Self = StObject.set(x, "revokeAfter", js.undefined)
   }

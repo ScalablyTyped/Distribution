@@ -10,7 +10,7 @@ object propTypesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def exclusiveRoles(roles: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exclusiveRoles")(roles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def exclusiveRoles(roles: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exclusiveRoles")(roles.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def requiredRoles(roles: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredRoles")(roles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def requiredRoles(roles: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredRoles")(roles.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
 }

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The intended behavior and status information of a domain.
-  */
 trait SchemaDomain extends StObject {
   
   /**
     * Required. The domain name of the association.
     */
-  var domainName: js.UndefOr[String] = js.undefined
+  var domainName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If set, the domain should redirect with the provided parameters.
@@ -20,25 +17,24 @@ trait SchemaDomain extends StObject {
   var domainRedirect: js.UndefOr[SchemaDomainRedirect] = js.undefined
   
   /**
-    * Output only. Information about the provisioning of certificates and the
-    * health of the DNS resolution for the domain.
+    * Output only. Information about the provisioning of certificates and the health of the DNS resolution for the domain.
     */
   var provisioning: js.UndefOr[SchemaDomainProvisioning] = js.undefined
   
   /**
     * Required. The site name of the association.
     */
-  var site: js.UndefOr[String] = js.undefined
+  var site: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. Additional status of the domain association.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. The time at which the domain was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDomain {
   
@@ -50,6 +46,8 @@ object SchemaDomain {
   extension [Self <: SchemaDomain](x: Self) {
     
     inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    
+    inline def setDomainNameNull: Self = StObject.set(x, "domainName", null)
     
     inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
@@ -63,13 +61,19 @@ object SchemaDomain {
     
     inline def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
+    inline def setSiteNull: Self = StObject.set(x, "site", null)
+    
     inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }

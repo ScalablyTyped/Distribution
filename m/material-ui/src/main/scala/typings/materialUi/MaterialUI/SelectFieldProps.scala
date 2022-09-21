@@ -6,6 +6,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
+import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,6 +16,8 @@ trait SelectFieldProps extends StObject {
   
   // <DropDownMenu/> is the element that get the 'other' properties
   var autoWidth: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   // useful attributes passed to <DropDownMenu/>
   var className: js.UndefOr[String] = js.undefined
@@ -51,7 +54,7 @@ trait SelectFieldProps extends StObject {
   
   var menuItemStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var menuStyle: js.UndefOr[js.Any] = js.undefined
+  var menuStyle: js.UndefOr[Any] = js.undefined
   
   var multiple: js.UndefOr[Boolean] = js.undefined
   
@@ -63,7 +66,7 @@ trait SelectFieldProps extends StObject {
     js.Function3[
       /* e */ SyntheticEvent[js.Object, Event], 
       /* index */ Double, 
-      /* menuItemValue */ js.Any, 
+      /* menuItemValue */ Any, 
       Unit
     ]
   ] = js.undefined
@@ -76,7 +79,7 @@ trait SelectFieldProps extends StObject {
   
   var selectedMenuItemStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var selectionRenderer: js.UndefOr[js.Function1[/* value */ js.Any, ReactNode]] = js.undefined
+  var selectionRenderer: js.UndefOr[js.Function1[/* value */ Any, ReactNode]] = js.undefined
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
@@ -86,7 +89,7 @@ trait SelectFieldProps extends StObject {
   
   var underlineStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object SelectFieldProps {
   
@@ -100,6 +103,10 @@ object SelectFieldProps {
     inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
     inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -169,7 +176,7 @@ object SelectFieldProps {
     
     inline def setMenuItemStyleUndefined: Self = StObject.set(x, "menuItemStyle", js.undefined)
     
-    inline def setMenuStyle(value: js.Any): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
+    inline def setMenuStyle(value: Any): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
     
     inline def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
     
@@ -181,17 +188,17 @@ object SelectFieldProps {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnBlur(value: FocusEvent[js.Object] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: FocusEvent[js.Object, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     inline def setOnChange(
-      value: (/* e */ SyntheticEvent[js.Object, Event], /* index */ Double, /* menuItemValue */ js.Any) => Unit
+      value: (/* e */ SyntheticEvent[js.Object, Event], /* index */ Double, /* menuItemValue */ Any) => Unit
     ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnFocus(value: FocusEvent[js.Object] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: FocusEvent[js.Object, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
@@ -207,7 +214,7 @@ object SelectFieldProps {
     
     inline def setSelectedMenuItemStyleUndefined: Self = StObject.set(x, "selectedMenuItemStyle", js.undefined)
     
-    inline def setSelectionRenderer(value: /* value */ js.Any => ReactNode): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction1(value))
+    inline def setSelectionRenderer(value: /* value */ Any => ReactNode): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction1(value))
     
     inline def setSelectionRendererUndefined: Self = StObject.set(x, "selectionRenderer", js.undefined)
     
@@ -227,7 +234,7 @@ object SelectFieldProps {
     
     inline def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

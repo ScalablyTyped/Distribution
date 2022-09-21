@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "IWebXRControllerPhysicsOptions")
 @js.native
-class IWebXRControllerPhysicsOptions ()
+open class IWebXRControllerPhysicsOptions ()
   extends typings.babylonjs.legacyMod.IWebXRControllerPhysicsOptions

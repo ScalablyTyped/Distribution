@@ -16,10 +16,9 @@ object commentActionMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/views/Comment/CommentAction", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[CommentActionProps, ComponentState, js.Any] {
+  open class default protected () extends Component[CommentActionProps, ComponentState, Any] {
     def this(props: CommentActionProps) = this()
-    def this(props: CommentActionProps, context: js.Any) = this()
+    def this(props: CommentActionProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/views/Comment/CommentAction", JSImport.Default)
   @js.native
@@ -28,7 +27,7 @@ object commentActionMod extends Shortcut {
   trait CommentActionProps
     extends StObject
        with StrictCommentActionProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object CommentActionProps {
     
     inline def apply(): CommentActionProps = {
@@ -43,7 +42,7 @@ object commentActionMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -67,7 +66,7 @@ object commentActionMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

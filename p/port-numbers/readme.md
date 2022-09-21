@@ -10,10 +10,10 @@ Get information on network port numbers and services, based on IANA's public lis
 | ------------------ | :-------------: |
 | Full name          | port-numbers |
 | Keywords           | port, port-numbers, numbers, tcp, udp, network, networking, iana, well-known |
-| # releases         | 30 |
-| # dependents       | 7 |
-| # downloads        | 1555119 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6607.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/silverwind/port-numbers#readme)

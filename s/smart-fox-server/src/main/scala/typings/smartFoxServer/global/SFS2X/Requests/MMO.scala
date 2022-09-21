@@ -13,7 +13,7 @@ object MMO {
   
   @JSGlobal("SFS2X.Requests.MMO.MMORoomSettings")
   @js.native
-  class MMORoomSettings protected ()
+  open class MMORoomSettings protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.MMO.MMORoomSettings {
     /**
@@ -45,7 +45,7 @@ object MMO {
   
   @JSGlobal("SFS2X.Requests.MMO.MapLimits")
   @js.native
-  class MapLimits protected ()
+  open class MapLimits protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.MMO.MapLimits {
     /**
@@ -66,7 +66,7 @@ object MMO {
   
   @JSGlobal("SFS2X.Requests.MMO.SetUserPositionRequest")
   @js.native
-  class SetUserPositionRequest protected ()
+  open class SetUserPositionRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.MMO.SetUserPositionRequest {
     /**

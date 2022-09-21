@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param oscillations Defines the number of oscillations
   * @param springiness Defines the amplitude of the oscillations
   */
-class ElasticEase ()
+open class ElasticEase ()
   extends typings.babylonjs.legacyMod.ElasticEase {
   def this(/** Defines the number of oscillations*/
   oscillations: Double) = this()

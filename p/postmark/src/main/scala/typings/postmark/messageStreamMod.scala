@@ -8,9 +8,23 @@ object messageStreamMod {
   
   @JSImport("postmark/dist/client/models/streams/MessageStream", "CreateMessageStreamRequest")
   @js.native
-  class CreateMessageStreamRequest protected () extends StObject {
+  open class CreateMessageStreamRequest protected () extends StObject {
     def this(id: String, name: String, messageStreamType: String) = this()
     def this(id: String, name: String, messageStreamType: String, description: String) = this()
+    def this(
+      id: String,
+      name: String,
+      messageStreamType: String,
+      description: String,
+      subscriptionManagementConfiguration: SubscriptionManagementConfiguration
+    ) = this()
+    def this(
+      id: String,
+      name: String,
+      messageStreamType: String,
+      description: Unit,
+      subscriptionManagementConfiguration: SubscriptionManagementConfiguration
+    ) = this()
     
     var Description: js.UndefOr[String] = js.native
     
@@ -19,18 +33,70 @@ object messageStreamMod {
     var MessageStreamType: String = js.native
     
     var Name: String = js.native
+    
+    var SubscriptionManagementConfiguration: js.UndefOr[typings.postmark.messageStreamMod.SubscriptionManagementConfiguration] = js.native
+  }
+  
+  @js.native
+  sealed trait UnsubscribeHandlingTypes extends StObject
+  @JSImport("postmark/dist/client/models/streams/MessageStream", "UnsubscribeHandlingTypes")
+  @js.native
+  object UnsubscribeHandlingTypes extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[UnsubscribeHandlingTypes & String] = js.native
+    
+    @js.native
+    sealed trait Custom
+      extends StObject
+         with UnsubscribeHandlingTypes
+    /* "Custom" */ val Custom: typings.postmark.messageStreamMod.UnsubscribeHandlingTypes.Custom & String = js.native
+    
+    @js.native
+    sealed trait None
+      extends StObject
+         with UnsubscribeHandlingTypes
+    /* "None" */ val None: typings.postmark.messageStreamMod.UnsubscribeHandlingTypes.None & String = js.native
+    
+    @js.native
+    sealed trait Postmark
+      extends StObject
+         with UnsubscribeHandlingTypes
+    /* "Postmark" */ val Postmark: typings.postmark.messageStreamMod.UnsubscribeHandlingTypes.Postmark & String = js.native
   }
   
   @JSImport("postmark/dist/client/models/streams/MessageStream", "UpdateMessageStreamRequest")
   @js.native
-  class UpdateMessageStreamRequest () extends StObject {
+  open class UpdateMessageStreamRequest () extends StObject {
     def this(name: String) = this()
     def this(name: String, description: String) = this()
     def this(name: Unit, description: String) = this()
+    def this(
+      name: String,
+      description: String,
+      subscriptionManagementConfiguration: SubscriptionManagementConfiguration
+    ) = this()
+    def this(
+      name: String,
+      description: Unit,
+      subscriptionManagementConfiguration: SubscriptionManagementConfiguration
+    ) = this()
+    def this(
+      name: Unit,
+      description: String,
+      subscriptionManagementConfiguration: SubscriptionManagementConfiguration
+    ) = this()
+    def this(
+      name: Unit,
+      description: Unit,
+      subscriptionManagementConfiguration: SubscriptionManagementConfiguration
+    ) = this()
     
     var Description: js.UndefOr[String] = js.native
     
     var Name: js.UndefOr[String] = js.native
+    
+    var SubscriptionManagementConfiguration: js.UndefOr[typings.postmark.messageStreamMod.SubscriptionManagementConfiguration] = js.native
   }
   
   trait MessageStream extends StObject {
@@ -205,7 +271,7 @@ object messageStreamMod {
       
       inline def setMessageStreams(value: js.Array[MessageStream]): Self = StObject.set(x, "MessageStreams", value.asInstanceOf[js.Any])
       
-      inline def setMessageStreamsVarargs(value: MessageStream*): Self = StObject.set(x, "MessageStreams", js.Array(value :_*))
+      inline def setMessageStreamsVarargs(value: MessageStream*): Self = StObject.set(x, "MessageStreams", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
@@ -213,18 +279,18 @@ object messageStreamMod {
   
   trait SubscriptionManagementConfiguration extends StObject {
     
-    var UnsubscribeHandlingType: String
+    var UnsubscribeHandlingType: UnsubscribeHandlingTypes
   }
   object SubscriptionManagementConfiguration {
     
-    inline def apply(UnsubscribeHandlingType: String): SubscriptionManagementConfiguration = {
+    inline def apply(UnsubscribeHandlingType: UnsubscribeHandlingTypes): SubscriptionManagementConfiguration = {
       val __obj = js.Dynamic.literal(UnsubscribeHandlingType = UnsubscribeHandlingType.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionManagementConfiguration]
     }
     
     extension [Self <: SubscriptionManagementConfiguration](x: Self) {
       
-      inline def setUnsubscribeHandlingType(value: String): Self = StObject.set(x, "UnsubscribeHandlingType", value.asInstanceOf[js.Any])
+      inline def setUnsubscribeHandlingType(value: UnsubscribeHandlingTypes): Self = StObject.set(x, "UnsubscribeHandlingType", value.asInstanceOf[js.Any])
     }
   }
 }

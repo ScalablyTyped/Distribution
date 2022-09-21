@@ -116,7 +116,7 @@ object AllThreadsRelatedToChannelId {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
+    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -144,7 +144,7 @@ object AllThreadsRelatedToChannelId {
     
     inline def setPart(value: String | js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value :_*))
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

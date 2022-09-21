@@ -23,9 +23,9 @@ object mod extends Shortcut {
     
     def and(): SelectStatement = js.native
     def and(column: String): SelectStatement = js.native
-    def and(column: String, value: js.Any): SelectStatement = js.native
-    def and(column: Null, value: js.Any): SelectStatement = js.native
-    def and(column: Unit, value: js.Any): SelectStatement = js.native
+    def and(column: String, value: Any): SelectStatement = js.native
+    def and(column: Null, value: Any): SelectStatement = js.native
+    def and(column: Unit, value: Any): SelectStatement = js.native
     def and(whereExpr: WhereExpression*): SelectStatement = js.native
     
     def from(tbls: String*): DeleteStatement = js.native
@@ -35,9 +35,9 @@ object mod extends Shortcut {
     
     def where(): SelectStatement = js.native
     def where(column: String): SelectStatement = js.native
-    def where(column: String, value: js.Any): SelectStatement = js.native
-    def where(column: Null, value: js.Any): SelectStatement = js.native
-    def where(column: Unit, value: js.Any): SelectStatement = js.native
+    def where(column: String, value: Any): SelectStatement = js.native
+    def where(column: Null, value: Any): SelectStatement = js.native
+    def where(column: Unit, value: Any): SelectStatement = js.native
     def where(whereExpr: WhereExpression*): SelectStatement = js.native
   }
   
@@ -49,14 +49,14 @@ object mod extends Shortcut {
     extends StObject
        with Statement {
     
-    def into(tbl: TableName, columns: js.Any*): InsertStatement = js.native
+    def into(tbl: TableName, columns: Any*): InsertStatement = js.native
     
-    def intoTable(tbl: TableName, columns: js.Any*): InsertStatement = js.native
+    def intoTable(tbl: TableName, columns: Any*): InsertStatement = js.native
     
     def select(columns: (String | SelectStatement)*): SelectStatement = js.native
     def select(columns: js.Array[SelectStatement | String]): SelectStatement = js.native
     
-    def values(values: js.Any*): InsertStatement = js.native
+    def values(values: Any*): InsertStatement = js.native
   }
   
   type OnCriteria = StringDictionary[String]
@@ -69,7 +69,7 @@ object mod extends Shortcut {
     extends StObject
        with Statement {
     
-    def and(options: js.Any*): SelectStatement = js.native
+    def and(options: Any*): SelectStatement = js.native
     
     def as(alias: String): SelectStatement = js.native
     
@@ -255,18 +255,18 @@ object mod extends Shortcut {
     
     def where(): SelectStatement = js.native
     def where(column: String): SelectStatement = js.native
-    def where(column: String, value: js.Any): SelectStatement = js.native
-    def where(column: Null, value: js.Any): SelectStatement = js.native
-    def where(column: Unit, value: js.Any): SelectStatement = js.native
+    def where(column: String, value: Any): SelectStatement = js.native
+    def where(column: Null, value: Any): SelectStatement = js.native
+    def where(column: Unit, value: Any): SelectStatement = js.native
     def where(whereExpr: WhereExpression*): SelectStatement = js.native
   }
   
   @js.native
   trait SqlBricksFn extends StObject {
     
-    def apply(params: js.Any*): js.Any = js.native
+    def apply(params: Any*): Any = js.native
     
-    def _extension(): js.Any = js.native
+    def _extension(): Any = js.native
     
     /**
       * Registers a set of frequently-used table aliases with SQL Bricks.
@@ -295,9 +295,9 @@ object mod extends Shortcut {
       * @param value1
       * @param value2
       */
-    def between(column: String, value1: js.Any, value2: js.Any): WhereExpression = js.native
+    def between(column: String, value1: Any, value2: Any): WhereExpression = js.native
     
-    var conversions: js.Any = js.native
+    var conversions: Any = js.native
     
     /**
       * Returns a new DELETE statement. It can be used with or without the new operator.
@@ -321,74 +321,74 @@ object mod extends Shortcut {
       * @param value column value
       */
     def eq(column: String): WhereBinary = js.native
-    def eq(column: String, value: js.Any): WhereBinary = js.native
+    def eq(column: String, value: Any): WhereBinary = js.native
     def eq(column: SelectStatement): WhereBinary = js.native
-    def eq(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def eq(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def eqAll(column: String): WhereBinary = js.native
-    def eqAll(column: String, value: js.Any): WhereBinary = js.native
+    def eqAll(column: String, value: Any): WhereBinary = js.native
     def eqAll(column: SelectStatement): WhereBinary = js.native
-    def eqAll(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def eqAll(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def eqAny(column: String): WhereBinary = js.native
-    def eqAny(column: String, value: js.Any): WhereBinary = js.native
+    def eqAny(column: String, value: Any): WhereBinary = js.native
     def eqAny(column: SelectStatement): WhereBinary = js.native
-    def eqAny(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def eqAny(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def eqSome(column: String): WhereBinary = js.native
-    def eqSome(column: String, value: js.Any): WhereBinary = js.native
+    def eqSome(column: String, value: Any): WhereBinary = js.native
     def eqSome(column: SelectStatement): WhereBinary = js.native
-    def eqSome(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def eqSome(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def equal(column: String): WhereBinary = js.native
-    def equal(column: String, value: js.Any): WhereBinary = js.native
+    def equal(column: String, value: Any): WhereBinary = js.native
     def equal(column: SelectStatement): WhereBinary = js.native
-    def equal(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def equal(column: SelectStatement, value: Any): WhereBinary = js.native
     
-    def exists(stmt: js.Any): WhereExpression = js.native
+    def exists(stmt: Any): WhereExpression = js.native
     
     def gt(column: String): WhereBinary = js.native
-    def gt(column: String, value: js.Any): WhereBinary = js.native
+    def gt(column: String, value: Any): WhereBinary = js.native
     def gt(column: SelectStatement): WhereBinary = js.native
-    def gt(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def gt(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def gtAll(column: String): WhereBinary = js.native
-    def gtAll(column: String, value: js.Any): WhereBinary = js.native
+    def gtAll(column: String, value: Any): WhereBinary = js.native
     def gtAll(column: SelectStatement): WhereBinary = js.native
-    def gtAll(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def gtAll(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def gtAny(column: String): WhereBinary = js.native
-    def gtAny(column: String, value: js.Any): WhereBinary = js.native
+    def gtAny(column: String, value: Any): WhereBinary = js.native
     def gtAny(column: SelectStatement): WhereBinary = js.native
-    def gtAny(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def gtAny(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def gtSome(column: String): WhereBinary = js.native
-    def gtSome(column: String, value: js.Any): WhereBinary = js.native
+    def gtSome(column: String, value: Any): WhereBinary = js.native
     def gtSome(column: SelectStatement): WhereBinary = js.native
-    def gtSome(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def gtSome(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def gte(column: String): WhereBinary = js.native
-    def gte(column: String, value: js.Any): WhereBinary = js.native
+    def gte(column: String, value: Any): WhereBinary = js.native
     def gte(column: SelectStatement): WhereBinary = js.native
-    def gte(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def gte(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def gteAll(column: String): WhereBinary = js.native
-    def gteAll(column: String, value: js.Any): WhereBinary = js.native
+    def gteAll(column: String, value: Any): WhereBinary = js.native
     def gteAll(column: SelectStatement): WhereBinary = js.native
-    def gteAll(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def gteAll(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def gteAny(column: String): WhereBinary = js.native
-    def gteAny(column: String, value: js.Any): WhereBinary = js.native
+    def gteAny(column: String, value: Any): WhereBinary = js.native
     def gteAny(column: SelectStatement): WhereBinary = js.native
-    def gteAny(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def gteAny(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def gteSome(column: String): WhereBinary = js.native
-    def gteSome(column: String, value: js.Any): WhereBinary = js.native
+    def gteSome(column: String, value: Any): WhereBinary = js.native
     def gteSome(column: SelectStatement): WhereBinary = js.native
-    def gteSome(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def gteSome(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def in(column: String, stmt: SelectStatement): WhereExpression = js.native
-    def in(column: String, values: js.Any*): WhereExpression = js.native
+    def in(column: String, values: Any*): WhereExpression = js.native
     
     /**
       * Returns a new INSERT statement. It can be used with or without the new operator.
@@ -400,8 +400,8 @@ object mod extends Shortcut {
       * insert('person', {'first_name': 'Fred', 'last_name': 'Flintstone'});
       * // INSERT INTO person (first_name, last_name) VALUES ('Fred', 'Flintstone')
       */
-    def insert(tbl: String, values: js.Any*): InsertStatement = js.native
-    def insert(tbl: Unit, values: js.Any*): InsertStatement = js.native
+    def insert(tbl: String, values: Any*): InsertStatement = js.native
+    def insert(tbl: Unit, values: Any*): InsertStatement = js.native
     
     /**
       * Returns a new INSERT statement. It can be used with or without the new operator.
@@ -413,8 +413,8 @@ object mod extends Shortcut {
       * insert('person', {'first_name': 'Fred', 'last_name': 'Flintstone'});
       * // INSERT INTO person (first_name, last_name) VALUES ('Fred', 'Flintstone')
       */
-    def insertInto(tbl: String, values: js.Any*): InsertStatement = js.native
-    def insertInto(tbl: Unit, values: js.Any*): InsertStatement = js.native
+    def insertInto(tbl: String, values: Any*): InsertStatement = js.native
+    def insertInto(tbl: Unit, values: Any*): InsertStatement = js.native
     
     def isNotNull(column: String): WhereExpression = js.native
     
@@ -424,51 +424,51 @@ object mod extends Shortcut {
       * Sets a user-supplied function to automatically generate the .on() criteria for joins whenever it is not supplied explicitly.
       * @param func
       */
-    def joinCriteria(): js.Any = js.native
-    def joinCriteria(func: js.Function1[/* repeated */ js.Any, OnCriteria]): js.Any = js.native
+    def joinCriteria(): Any = js.native
+    def joinCriteria(func: js.Function1[/* repeated */ Any, OnCriteria]): Any = js.native
     
-    def like(column: String, value: js.Any): WhereExpression = js.native
-    def like(column: String, value: js.Any, escapeStr: String): WhereExpression = js.native
+    def like(column: String, value: Any): WhereExpression = js.native
+    def like(column: String, value: Any, escapeStr: String): WhereExpression = js.native
     
     def lt(column: String): WhereBinary = js.native
-    def lt(column: String, value: js.Any): WhereBinary = js.native
+    def lt(column: String, value: Any): WhereBinary = js.native
     def lt(column: SelectStatement): WhereBinary = js.native
-    def lt(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def lt(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def ltAll(column: String): WhereBinary = js.native
-    def ltAll(column: String, value: js.Any): WhereBinary = js.native
+    def ltAll(column: String, value: Any): WhereBinary = js.native
     def ltAll(column: SelectStatement): WhereBinary = js.native
-    def ltAll(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def ltAll(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def ltAny(column: String): WhereBinary = js.native
-    def ltAny(column: String, value: js.Any): WhereBinary = js.native
+    def ltAny(column: String, value: Any): WhereBinary = js.native
     def ltAny(column: SelectStatement): WhereBinary = js.native
-    def ltAny(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def ltAny(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def ltSome(column: String): WhereBinary = js.native
-    def ltSome(column: String, value: js.Any): WhereBinary = js.native
+    def ltSome(column: String, value: Any): WhereBinary = js.native
     def ltSome(column: SelectStatement): WhereBinary = js.native
-    def ltSome(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def ltSome(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def lte(column: String): WhereBinary = js.native
-    def lte(column: String, value: js.Any): WhereBinary = js.native
+    def lte(column: String, value: Any): WhereBinary = js.native
     def lte(column: SelectStatement): WhereBinary = js.native
-    def lte(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def lte(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def lteAll(column: String): WhereBinary = js.native
-    def lteAll(column: String, value: js.Any): WhereBinary = js.native
+    def lteAll(column: String, value: Any): WhereBinary = js.native
     def lteAll(column: SelectStatement): WhereBinary = js.native
-    def lteAll(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def lteAll(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def lteAny(column: String): WhereBinary = js.native
-    def lteAny(column: String, value: js.Any): WhereBinary = js.native
+    def lteAny(column: String, value: Any): WhereBinary = js.native
     def lteAny(column: SelectStatement): WhereBinary = js.native
-    def lteAny(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def lteAny(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def lteSome(column: String): WhereBinary = js.native
-    def lteSome(column: String, value: js.Any): WhereBinary = js.native
+    def lteSome(column: String, value: Any): WhereBinary = js.native
     def lteSome(column: SelectStatement): WhereBinary = js.native
-    def lteSome(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def lteSome(column: SelectStatement, value: Any): WhereBinary = js.native
     
     /**
       * Negates the expression by wrapping it in NOT (...)
@@ -478,24 +478,24 @@ object mod extends Shortcut {
     def not(whereExpr: WhereExpression): WhereGroup = js.native
     
     def notEq(column: String): WhereBinary = js.native
-    def notEq(column: String, value: js.Any): WhereBinary = js.native
+    def notEq(column: String, value: Any): WhereBinary = js.native
     def notEq(column: SelectStatement): WhereBinary = js.native
-    def notEq(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def notEq(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def notEqAll(column: String): WhereBinary = js.native
-    def notEqAll(column: String, value: js.Any): WhereBinary = js.native
+    def notEqAll(column: String, value: Any): WhereBinary = js.native
     def notEqAll(column: SelectStatement): WhereBinary = js.native
-    def notEqAll(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def notEqAll(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def notEqAny(column: String): WhereBinary = js.native
-    def notEqAny(column: String, value: js.Any): WhereBinary = js.native
+    def notEqAny(column: String, value: Any): WhereBinary = js.native
     def notEqAny(column: SelectStatement): WhereBinary = js.native
-    def notEqAny(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def notEqAny(column: SelectStatement, value: Any): WhereBinary = js.native
     
     def notEqSome(column: String): WhereBinary = js.native
-    def notEqSome(column: String, value: js.Any): WhereBinary = js.native
+    def notEqSome(column: String, value: Any): WhereBinary = js.native
     def notEqSome(column: SelectStatement): WhereBinary = js.native
-    def notEqSome(column: SelectStatement, value: js.Any): WhereBinary = js.native
+    def notEqSome(column: SelectStatement, value: Any): WhereBinary = js.native
     
     /**
       * Joins the passed expressions with OR:
@@ -518,25 +518,25 @@ object mod extends Shortcut {
       * @param tbl table name
       * @param values
       */
-    def update(tbl: String, values: js.Any*): UpdateStatement = js.native
+    def update(tbl: String, values: Any*): UpdateStatement = js.native
     
     /**
       * Wraps a value (user-supplied string, number, boolean, etc) so that it can be passed into SQL Bricks
       * anywhere that a column is expected (the left-hand side of WHERE criteria and many other SQL Bricks APIs)
       * @param value value to be wraped
       */
-    def `val`(value: js.Any): js.Any = js.native
+    def `val`(value: Any): Any = js.native
   }
   
   trait SqlBricksParam extends StObject {
     
     var text: String
     
-    var values: js.Array[js.Any]
+    var values: js.Array[Any]
   }
   object SqlBricksParam {
     
-    inline def apply(text: String, values: js.Array[js.Any]): SqlBricksParam = {
+    inline def apply(text: String, values: js.Array[Any]): SqlBricksParam = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[SqlBricksParam]
     }
@@ -545,9 +545,9 @@ object mod extends Shortcut {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -583,20 +583,20 @@ object mod extends Shortcut {
     
     def and(): UpdateStatement = js.native
     def and(column: String): UpdateStatement = js.native
-    def and(column: String, value: js.Any): UpdateStatement = js.native
-    def and(column: Null, value: js.Any): UpdateStatement = js.native
-    def and(column: Unit, value: js.Any): UpdateStatement = js.native
+    def and(column: String, value: Any): UpdateStatement = js.native
+    def and(column: Null, value: Any): UpdateStatement = js.native
+    def and(column: Unit, value: Any): UpdateStatement = js.native
     def and(whereExpr: WhereExpression*): UpdateStatement = js.native
     
-    def set(values: js.Any*): UpdateStatement = js.native
+    def set(values: Any*): UpdateStatement = js.native
     
-    def values(values: js.Any*): UpdateStatement = js.native
+    def values(values: Any*): UpdateStatement = js.native
     
     def where(): UpdateStatement = js.native
     def where(column: String): UpdateStatement = js.native
-    def where(column: String, value: js.Any): UpdateStatement = js.native
-    def where(column: Null, value: js.Any): UpdateStatement = js.native
-    def where(column: Unit, value: js.Any): UpdateStatement = js.native
+    def where(column: String, value: Any): UpdateStatement = js.native
+    def where(column: Null, value: Any): UpdateStatement = js.native
+    def where(column: Unit, value: Any): UpdateStatement = js.native
     def where(whereExpr: WhereExpression*): UpdateStatement = js.native
   }
   
@@ -610,11 +610,11 @@ object mod extends Shortcut {
     
     var quantifier: String
     
-    var `val`: js.Any
+    var `val`: Any
   }
   object WhereBinary {
     
-    inline def apply(col: String | SelectStatement, op: String, quantifier: String, `val`: js.Any): WhereBinary = {
+    inline def apply(col: String | SelectStatement, op: String, quantifier: String, `val`: Any): WhereBinary = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], quantifier = quantifier.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WhereBinary]
@@ -628,7 +628,7 @@ object mod extends Shortcut {
       
       inline def setQuantifier(value: String): Self = StObject.set(x, "quantifier", value.asInstanceOf[js.Any])
       
-      inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
   
@@ -663,7 +663,7 @@ object mod extends Shortcut {
       
       inline def setExpressions(value: js.Array[WhereExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       
-      inline def setExpressionsVarargs(value: WhereExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+      inline def setExpressionsVarargs(value: WhereExpression*): Self = StObject.set(x, "expressions", js.Array(value*))
       
       inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
@@ -671,14 +671,14 @@ object mod extends Shortcut {
     }
   }
   
-  type WhereObject = StringDictionary[js.Any]
+  type WhereObject = StringDictionary[Any]
   
   type _To = SqlBricksFn
   
   trait _WhereExpression extends StObject
   object _WhereExpression {
     
-    inline def WhereBinary(col: String | SelectStatement, op: String, quantifier: String, `val`: js.Any): typings.sqlBricks.mod.WhereBinary = {
+    inline def WhereBinary(col: String | SelectStatement, op: String, quantifier: String, `val`: Any): typings.sqlBricks.mod.WhereBinary = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], quantifier = quantifier.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.sqlBricks.mod.WhereBinary]

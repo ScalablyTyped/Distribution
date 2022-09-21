@@ -1,7 +1,7 @@
 
 # Scala.js typings for sdbm
 
-Typings are for version 1.2.0
+Typings are for version 2.0.0
 
 ## Library description:
 SDBM non-cryptographic hash function
@@ -10,10 +10,10 @@ SDBM non-cryptographic hash function
 | ------------------ | :-------------: |
 | Full name          | sdbm |
 | Keywords           | sdbm, algorithm, hash, hashing, string, function |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 13660 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1400.0 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/sdbm#readme)

@@ -25,6 +25,6 @@ object StackedRNNCellsArgs {
     
     inline def setCells(value: js.Array[RNNCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    inline def setCellsVarargs(value: RNNCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: RNNCell*): Self = StObject.set(x, "cells", js.Array(value*))
   }
 }

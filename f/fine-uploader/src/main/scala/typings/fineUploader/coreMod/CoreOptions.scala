@@ -203,7 +203,7 @@ object CoreOptions {
     
     inline def setExtraButtonsUndefined: Self = StObject.set(x, "extraButtons", js.undefined)
     
-    inline def setExtraButtonsVarargs(value: ExtraButtonsOptions*): Self = StObject.set(x, "extraButtons", js.Array(value :_*))
+    inline def setExtraButtonsVarargs(value: ExtraButtonsOptions*): Self = StObject.set(x, "extraButtons", js.Array(value*))
     
     inline def setForm(value: FormOptions): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

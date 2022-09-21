@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "make-plural" : "7.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "make-plural" : "7.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

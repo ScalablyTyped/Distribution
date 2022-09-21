@@ -15,6 +15,9 @@ trait RunPivotReportResponse extends StObject {
   /** Describes dimension columns. The number of DimensionHeaders and ordering of DimensionHeaders matches the dimensions present in rows. */
   var dimensionHeaders: js.UndefOr[js.Array[DimensionHeader]] = js.undefined
   
+  /** Identifies what kind of resource this message is. This `kind` is always the fixed string "analyticsData#runPivotReport". Useful to distinguish between response types in JSON. */
+  var kind: js.UndefOr[String] = js.undefined
+  
   /** Metadata for the report. */
   var metadata: js.UndefOr[ResponseMetaData] = js.undefined
   
@@ -48,13 +51,17 @@ object RunPivotReportResponse {
     
     inline def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
     
-    inline def setAggregatesVarargs(value: Row*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
+    inline def setAggregatesVarargs(value: Row*): Self = StObject.set(x, "aggregates", js.Array(value*))
     
     inline def setDimensionHeaders(value: js.Array[DimensionHeader]): Self = StObject.set(x, "dimensionHeaders", value.asInstanceOf[js.Any])
     
     inline def setDimensionHeadersUndefined: Self = StObject.set(x, "dimensionHeaders", js.undefined)
     
-    inline def setDimensionHeadersVarargs(value: DimensionHeader*): Self = StObject.set(x, "dimensionHeaders", js.Array(value :_*))
+    inline def setDimensionHeadersVarargs(value: DimensionHeader*): Self = StObject.set(x, "dimensionHeaders", js.Array(value*))
+    
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setMetadata(value: ResponseMetaData): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
@@ -64,13 +71,13 @@ object RunPivotReportResponse {
     
     inline def setMetricHeadersUndefined: Self = StObject.set(x, "metricHeaders", js.undefined)
     
-    inline def setMetricHeadersVarargs(value: MetricHeader*): Self = StObject.set(x, "metricHeaders", js.Array(value :_*))
+    inline def setMetricHeadersVarargs(value: MetricHeader*): Self = StObject.set(x, "metricHeaders", js.Array(value*))
     
     inline def setPivotHeaders(value: js.Array[PivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
     
     inline def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
     
-    inline def setPivotHeadersVarargs(value: PivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
+    inline def setPivotHeadersVarargs(value: PivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value*))
     
     inline def setPropertyQuota(value: PropertyQuota): Self = StObject.set(x, "propertyQuota", value.asInstanceOf[js.Any])
     
@@ -80,6 +87,6 @@ object RunPivotReportResponse {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

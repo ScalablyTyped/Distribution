@@ -11,9 +11,9 @@ trait daterangepickerConfig extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  var attributes: js.UndefOr[Any] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -25,7 +25,7 @@ trait daterangepickerConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -79,7 +79,7 @@ trait daterangepickerConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var pattern: js.UndefOr[js.Any] = js.undefined
+  var pattern: js.UndefOr[Any] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -95,21 +95,23 @@ trait daterangepickerConfig extends StObject {
   
   var required: js.UndefOr[Boolean] = js.undefined
   
+  var separator: js.UndefOr[String] = js.undefined
+  
   var stringResult: js.UndefOr[Boolean] = js.undefined
   
-  var suggest: js.UndefOr[js.Any] = js.undefined
+  var suggest: js.UndefOr[Any] = js.undefined
   
   var timeIcon: js.UndefOr[String] = js.undefined
   
   var timepicker: js.UndefOr[Boolean] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.undefined
+  var tooltip: js.UndefOr[Any] = js.undefined
   
   var validate: js.UndefOr[WebixCallback] = js.undefined
   
   var validateEvent: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -128,11 +130,11 @@ object daterangepickerConfig {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
@@ -156,7 +158,7 @@ object daterangepickerConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -264,7 +266,7 @@ object daterangepickerConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPattern(value: js.Any): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Any): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
@@ -296,11 +298,15 @@ object daterangepickerConfig {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    
     inline def setStringResult(value: Boolean): Self = StObject.set(x, "stringResult", value.asInstanceOf[js.Any])
     
     inline def setStringResultUndefined: Self = StObject.set(x, "stringResult", js.undefined)
     
-    inline def setSuggest(value: js.Any): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
+    inline def setSuggest(value: Any): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
     
     inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
     
@@ -312,7 +318,7 @@ object daterangepickerConfig {
     
     inline def setTimepickerUndefined: Self = StObject.set(x, "timepicker", js.undefined)
     
-    inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
@@ -324,7 +330,7 @@ object daterangepickerConfig {
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

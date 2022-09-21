@@ -1,13 +1,12 @@
 package typings.googleProtobuf.mod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "BinaryDecoder")
 @js.native
-class BinaryDecoder () extends StObject {
+open class BinaryDecoder () extends StObject {
   def this(bytes: ByteSource) = this()
   def this(bytes: Unit, start: Double) = this()
   def this(bytes: ByteSource, start: Double) = this()
@@ -24,7 +23,7 @@ class BinaryDecoder () extends StObject {
   
   def free(): Unit = js.native
   
-  def getBuffer(): Uint8Array = js.native
+  def getBuffer(): js.typedarray.Uint8Array = js.native
   
   def getCursor(): Double = js.native
   
@@ -36,7 +35,7 @@ class BinaryDecoder () extends StObject {
   
   def readBool(): Boolean = js.native
   
-  def readBytes(length: Double): Uint8Array = js.native
+  def readBytes(length: Double): js.typedarray.Uint8Array = js.native
   
   def readDouble(): Double = js.native
   

@@ -1,6 +1,7 @@
 package typings.sipJs.anon
 
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StringDictionary
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler
 import typings.sipJs.coreMod.Logger
 import typings.sipJs.coreMod.URI
@@ -30,6 +31,10 @@ trait PartialUserAgentOptions extends StObject {
   
   var autoStop: js.UndefOr[Boolean] = js.undefined
   
+  var contactName: js.UndefOr[String] = js.undefined
+  
+  var contactParams: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var delegate: js.UndefOr[UserAgentDelegate] = js.undefined
   
   var displayName: js.UndefOr[String] = js.undefined
@@ -41,8 +46,6 @@ trait PartialUserAgentOptions extends StObject {
   var hackIpInContact: js.UndefOr[Boolean | String] = js.undefined
   
   var hackViaTcp: js.UndefOr[Boolean] = js.undefined
-  
-  var hackWssInTransport: js.UndefOr[Boolean] = js.undefined
   
   var logBuiltinEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -60,6 +63,8 @@ trait PartialUserAgentOptions extends StObject {
   
   var reconnectionDelay: js.UndefOr[Double] = js.undefined
   
+  var sendInitialProvisionalResponse: js.UndefOr[Boolean] = js.undefined
+  
   var sessionDescriptionHandlerFactory: js.UndefOr[SessionDescriptionHandlerFactory] = js.undefined
   
   var sessionDescriptionHandlerFactoryOptions: js.UndefOr[js.Object] = js.undefined
@@ -72,9 +77,9 @@ trait PartialUserAgentOptions extends StObject {
   
   var sipjsId: js.UndefOr[String] = js.undefined
   
-  var transportConstructor: js.UndefOr[Instantiable2[/* logger */ Logger, /* options */ js.Any, Transport]] = js.undefined
+  var transportConstructor: js.UndefOr[Instantiable2[/* logger */ Logger, /* options */ Any, Transport]] = js.undefined
   
-  var transportOptions: js.UndefOr[js.Any] = js.undefined
+  var transportOptions: js.UndefOr[Any] = js.undefined
   
   var uri: js.UndefOr[URI] = js.undefined
   
@@ -115,6 +120,14 @@ object PartialUserAgentOptions {
     
     inline def setAutoStopUndefined: Self = StObject.set(x, "autoStop", js.undefined)
     
+    inline def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
+    
+    inline def setContactNameUndefined: Self = StObject.set(x, "contactName", js.undefined)
+    
+    inline def setContactParams(value: StringDictionary[String]): Self = StObject.set(x, "contactParams", value.asInstanceOf[js.Any])
+    
+    inline def setContactParamsUndefined: Self = StObject.set(x, "contactParams", js.undefined)
+    
     inline def setDelegate(value: UserAgentDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
     inline def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
@@ -138,10 +151,6 @@ object PartialUserAgentOptions {
     inline def setHackViaTcp(value: Boolean): Self = StObject.set(x, "hackViaTcp", value.asInstanceOf[js.Any])
     
     inline def setHackViaTcpUndefined: Self = StObject.set(x, "hackViaTcp", js.undefined)
-    
-    inline def setHackWssInTransport(value: Boolean): Self = StObject.set(x, "hackWssInTransport", value.asInstanceOf[js.Any])
-    
-    inline def setHackWssInTransportUndefined: Self = StObject.set(x, "hackWssInTransport", js.undefined)
     
     inline def setLogBuiltinEnabled(value: Boolean): Self = StObject.set(x, "logBuiltinEnabled", value.asInstanceOf[js.Any])
     
@@ -169,7 +178,7 @@ object PartialUserAgentOptions {
     
     inline def setPreloadedRouteSetUndefined: Self = StObject.set(x, "preloadedRouteSet", js.undefined)
     
-    inline def setPreloadedRouteSetVarargs(value: String*): Self = StObject.set(x, "preloadedRouteSet", js.Array(value :_*))
+    inline def setPreloadedRouteSetVarargs(value: String*): Self = StObject.set(x, "preloadedRouteSet", js.Array(value*))
     
     inline def setReconnectionAttempts(value: Double): Self = StObject.set(x, "reconnectionAttempts", value.asInstanceOf[js.Any])
     
@@ -178,6 +187,10 @@ object PartialUserAgentOptions {
     inline def setReconnectionDelay(value: Double): Self = StObject.set(x, "reconnectionDelay", value.asInstanceOf[js.Any])
     
     inline def setReconnectionDelayUndefined: Self = StObject.set(x, "reconnectionDelay", js.undefined)
+    
+    inline def setSendInitialProvisionalResponse(value: Boolean): Self = StObject.set(x, "sendInitialProvisionalResponse", value.asInstanceOf[js.Any])
+    
+    inline def setSendInitialProvisionalResponseUndefined: Self = StObject.set(x, "sendInitialProvisionalResponse", js.undefined)
     
     inline def setSessionDescriptionHandlerFactory(value: (/* session */ Session, /* options */ js.UndefOr[js.Object]) => SessionDescriptionHandler): Self = StObject.set(x, "sessionDescriptionHandlerFactory", js.Any.fromFunction2(value))
     
@@ -195,7 +208,7 @@ object PartialUserAgentOptions {
     
     inline def setSipExtensionExtraSupportedUndefined: Self = StObject.set(x, "sipExtensionExtraSupported", js.undefined)
     
-    inline def setSipExtensionExtraSupportedVarargs(value: String*): Self = StObject.set(x, "sipExtensionExtraSupported", js.Array(value :_*))
+    inline def setSipExtensionExtraSupportedVarargs(value: String*): Self = StObject.set(x, "sipExtensionExtraSupported", js.Array(value*))
     
     inline def setSipExtensionReplaces(value: SIPExtension): Self = StObject.set(x, "sipExtensionReplaces", value.asInstanceOf[js.Any])
     
@@ -205,11 +218,11 @@ object PartialUserAgentOptions {
     
     inline def setSipjsIdUndefined: Self = StObject.set(x, "sipjsId", js.undefined)
     
-    inline def setTransportConstructor(value: Instantiable2[/* logger */ Logger, /* options */ js.Any, Transport]): Self = StObject.set(x, "transportConstructor", value.asInstanceOf[js.Any])
+    inline def setTransportConstructor(value: Instantiable2[/* logger */ Logger, /* options */ Any, Transport]): Self = StObject.set(x, "transportConstructor", value.asInstanceOf[js.Any])
     
     inline def setTransportConstructorUndefined: Self = StObject.set(x, "transportConstructor", js.undefined)
     
-    inline def setTransportOptions(value: js.Any): Self = StObject.set(x, "transportOptions", value.asInstanceOf[js.Any])
+    inline def setTransportOptions(value: Any): Self = StObject.set(x, "transportOptions", value.asInstanceOf[js.Any])
     
     inline def setTransportOptionsUndefined: Self = StObject.set(x, "transportOptions", js.undefined)
     

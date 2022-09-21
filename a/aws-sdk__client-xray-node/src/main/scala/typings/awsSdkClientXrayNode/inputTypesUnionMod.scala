@@ -6,8 +6,6 @@ import typings.awsSdkClientXrayNode.typesSamplingRuleMod.SamplingRule
 import typings.awsSdkClientXrayNode.typesSamplingRuleUpdateMod.SamplingRuleUpdate
 import typings.awsSdkClientXrayNode.typesSamplingStatisticsDocumentMod.SamplingStatisticsDocument
 import typings.awsSdkClientXrayNode.typesTelemetryRecordMod.TelemetryRecord
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +31,7 @@ object inputTypesUnionMod {
   trait InputTypesUnion extends StObject
   object InputTypesUnion {
     
-    inline def BatchGetTracesInput(TraceIds: js.Array[String] | Iterable[String]): typings.awsSdkClientXrayNode.typesBatchGetTracesInputMod.BatchGetTracesInput = {
+    inline def BatchGetTracesInput(TraceIds: js.Array[String] | js.Iterable[String]): typings.awsSdkClientXrayNode.typesBatchGetTracesInputMod.BatchGetTracesInput = {
       val __obj = js.Dynamic.literal(TraceIds = TraceIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesBatchGetTracesInputMod.BatchGetTracesInput]
     }
@@ -64,23 +62,23 @@ object inputTypesUnionMod {
     }
     
     inline def GetSamplingTargetsInput(
-      SamplingStatisticsDocuments: js.Array[SamplingStatisticsDocument] | Iterable[SamplingStatisticsDocument]
+      SamplingStatisticsDocuments: js.Array[SamplingStatisticsDocument] | js.Iterable[SamplingStatisticsDocument]
     ): typings.awsSdkClientXrayNode.typesGetSamplingTargetsInputMod.GetSamplingTargetsInput = {
       val __obj = js.Dynamic.literal(SamplingStatisticsDocuments = SamplingStatisticsDocuments.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesGetSamplingTargetsInputMod.GetSamplingTargetsInput]
     }
     
-    inline def GetServiceGraphInput(EndTime: Date | String | Double, StartTime: Date | String | Double): typings.awsSdkClientXrayNode.typesGetServiceGraphInputMod.GetServiceGraphInput = {
+    inline def GetServiceGraphInput(EndTime: js.Date | String | Double, StartTime: js.Date | String | Double): typings.awsSdkClientXrayNode.typesGetServiceGraphInputMod.GetServiceGraphInput = {
       val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesGetServiceGraphInputMod.GetServiceGraphInput]
     }
     
-    inline def GetTraceGraphInput(TraceIds: js.Array[String] | Iterable[String]): typings.awsSdkClientXrayNode.typesGetTraceGraphInputMod.GetTraceGraphInput = {
+    inline def GetTraceGraphInput(TraceIds: js.Array[String] | js.Iterable[String]): typings.awsSdkClientXrayNode.typesGetTraceGraphInputMod.GetTraceGraphInput = {
       val __obj = js.Dynamic.literal(TraceIds = TraceIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesGetTraceGraphInputMod.GetTraceGraphInput]
     }
     
-    inline def GetTraceSummariesInput(EndTime: Date | String | Double, StartTime: Date | String | Double): typings.awsSdkClientXrayNode.typesGetTraceSummariesInputMod.GetTraceSummariesInput = {
+    inline def GetTraceSummariesInput(EndTime: js.Date | String | Double, StartTime: js.Date | String | Double): typings.awsSdkClientXrayNode.typesGetTraceSummariesInputMod.GetTraceSummariesInput = {
       val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesGetTraceSummariesInputMod.GetTraceSummariesInput]
     }
@@ -90,12 +88,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesPutEncryptionConfigInputMod.PutEncryptionConfigInput]
     }
     
-    inline def PutTelemetryRecordsInput(TelemetryRecords: js.Array[TelemetryRecord] | Iterable[TelemetryRecord]): typings.awsSdkClientXrayNode.typesPutTelemetryRecordsInputMod.PutTelemetryRecordsInput = {
+    inline def PutTelemetryRecordsInput(TelemetryRecords: js.Array[TelemetryRecord] | js.Iterable[TelemetryRecord]): typings.awsSdkClientXrayNode.typesPutTelemetryRecordsInputMod.PutTelemetryRecordsInput = {
       val __obj = js.Dynamic.literal(TelemetryRecords = TelemetryRecords.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesPutTelemetryRecordsInputMod.PutTelemetryRecordsInput]
     }
     
-    inline def PutTraceSegmentsInput(TraceSegmentDocuments: js.Array[String] | Iterable[String]): typings.awsSdkClientXrayNode.typesPutTraceSegmentsInputMod.PutTraceSegmentsInput = {
+    inline def PutTraceSegmentsInput(TraceSegmentDocuments: js.Array[String] | js.Iterable[String]): typings.awsSdkClientXrayNode.typesPutTraceSegmentsInputMod.PutTraceSegmentsInput = {
       val __obj = js.Dynamic.literal(TraceSegmentDocuments = TraceSegmentDocuments.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesPutTraceSegmentsInputMod.PutTraceSegmentsInput]
     }

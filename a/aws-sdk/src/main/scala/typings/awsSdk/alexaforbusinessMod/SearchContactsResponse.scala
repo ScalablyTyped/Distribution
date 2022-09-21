@@ -34,7 +34,7 @@ object SearchContactsResponse {
     
     inline def setContactsUndefined: Self = StObject.set(x, "Contacts", js.undefined)
     
-    inline def setContactsVarargs(value: ContactData*): Self = StObject.set(x, "Contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: ContactData*): Self = StObject.set(x, "Contacts", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

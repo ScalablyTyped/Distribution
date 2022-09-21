@@ -31,7 +31,7 @@ object XElementStackKeeper {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     retrieve: (XDocumentHandler, Boolean) => Unit,
     start: () => Unit,

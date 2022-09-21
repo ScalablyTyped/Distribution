@@ -59,7 +59,7 @@ object PortControl {
       
       inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      inline def setNonceVarargs(value: Double*): Self = StObject.set(x, "nonce", js.Array(value :_*))
+      inline def setNonceVarargs(value: Double*): Self = StObject.set(x, "nonce", js.Array(value*))
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

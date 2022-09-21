@@ -47,7 +47,7 @@ trait PageTokenPrettyPrint extends StObject {
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
-  /** Requested page size. Must be between `1` and `100`. If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value is specified. */
+  /** Requested page size. Must be between `1` and `1000`. If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value is specified. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**

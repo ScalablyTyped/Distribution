@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "Ellipse")
 @js.native
-class Ellipse () extends Shape {
+open class Ellipse () extends Shape {
   def this(options: EllipseOptions) = this()
   
   def copy(options: EllipseOptions): Ellipse = js.native

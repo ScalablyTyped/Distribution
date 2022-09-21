@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object toRadianMod {
   
-  @JSImport("@antv/util/lib/to-radian", JSImport.Namespace)
+  @JSImport("@antv/util/lib/helper/to-radian", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(degree: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(degree.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toRadian(degree: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toRadian")(degree.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

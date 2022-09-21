@@ -15,7 +15,7 @@ trait Query extends StObject {
   def count(options: OQ[ICountDocumentOptions]): Unit = js.native
   def count(options: RQICountDocumentOptions): js.Promise[ICountResult] = js.native
   
-  def field(`object`: Record[String, js.Any]): Query = js.native
+  def field(`object`: Record[String, Any]): Query = js.native
   
   def get(): js.Promise[IQueryResult] = js.native
   def get(options: OQ[IGetDocumentOptions]): Unit = js.native

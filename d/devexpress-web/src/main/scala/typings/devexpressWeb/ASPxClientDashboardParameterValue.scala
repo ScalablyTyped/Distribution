@@ -17,11 +17,11 @@ trait ASPxClientDashboardParameterValue extends StObject {
   /**
     * Returns a parameter value.
     */
-  def GetValue(): js.Any
+  def GetValue(): Any
 }
 object ASPxClientDashboardParameterValue {
   
-  inline def apply(GetDisplayText: () => String, GetValue: () => js.Any): ASPxClientDashboardParameterValue = {
+  inline def apply(GetDisplayText: () => String, GetValue: () => Any): ASPxClientDashboardParameterValue = {
     val __obj = js.Dynamic.literal(GetDisplayText = js.Any.fromFunction0(GetDisplayText), GetValue = js.Any.fromFunction0(GetValue))
     __obj.asInstanceOf[ASPxClientDashboardParameterValue]
   }
@@ -30,6 +30,6 @@ object ASPxClientDashboardParameterValue {
     
     inline def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
   }
 }

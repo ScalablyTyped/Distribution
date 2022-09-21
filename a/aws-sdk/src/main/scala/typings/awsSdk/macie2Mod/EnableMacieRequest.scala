@@ -12,12 +12,12 @@ trait EnableMacieRequest extends StObject {
   var clientToken: js.UndefOr[string] = js.undefined
   
   /**
-    * Specifies how often to publish updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events).
+    * Specifies how often to publish updates to policy findings for the account. This includes publishing updates to Security Hub and Amazon EventBridge (formerly Amazon CloudWatch Events).
     */
   var findingPublishingFrequency: js.UndefOr[FindingPublishingFrequency] = js.undefined
   
   /**
-    * Specifies the status for the account. To enable Amazon Macie and start all Amazon Macie activities for the account, set this value to ENABLED.
+    * Specifies the new status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED.
     */
   var status: js.UndefOr[MacieStatus] = js.undefined
 }

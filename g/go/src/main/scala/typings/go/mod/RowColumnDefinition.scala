@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not need to use this constructor, because calls to Panel.getRowDefinition or Panel.getColumnDefinition will automatically create and remember a RowColumnDefinition for you.
   */
-class RowColumnDefinition () extends StObject {
+open class RowColumnDefinition () extends StObject {
   
   /**This read-only property returns the usable row height or column width, after arrangement, that objects in this row or column can be placed within.*/
   var actual: Double = js.native

@@ -15,15 +15,46 @@ trait CommandBarControls extends StObject {
   def apply(Index: String): CommandBarControl = js.native
   def apply(Index: Double): CommandBarControl = js.native
   
+  def Add(): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Double): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Double, Parameter: Any): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Double, Parameter: Any, Before: Double): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Double, Parameter: Any, Before: Double, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Double, Parameter: Any, Before: Unit, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Double, Parameter: Unit, Before: Double): CommandBarControl = js.native
   def Add(
-    Type: js.UndefOr[`1` | `2` | `3` | `4` | `10`],
-    Id: js.UndefOr[Double],
-    Parameter: js.UndefOr[js.Any],
-    Before: js.UndefOr[Double],
-    Temporary: js.UndefOr[Boolean]
+    Type: `1` | `2` | `3` | `4` | `10`,
+    Id: Double,
+    Parameter: Unit,
+    Before: Double,
+    Temporary: Boolean
   ): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Double, Parameter: Unit, Before: Unit, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Unit, Parameter: Any): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Unit, Parameter: Any, Before: Double): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Unit, Parameter: Any, Before: Double, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Unit, Parameter: Any, Before: Unit, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Unit, Parameter: Unit, Before: Double): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Unit, Parameter: Unit, Before: Double, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: `1` | `2` | `3` | `4` | `10`, Id: Unit, Parameter: Unit, Before: Unit, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Double): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Double, Parameter: Any): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Double, Parameter: Any, Before: Double): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Double, Parameter: Any, Before: Double, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Double, Parameter: Any, Before: Unit, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Double, Parameter: Unit, Before: Double): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Double, Parameter: Unit, Before: Double, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Double, Parameter: Unit, Before: Unit, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Unit, Parameter: Any): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Unit, Parameter: Any, Before: Double): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Unit, Parameter: Any, Before: Double, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Unit, Parameter: Any, Before: Unit, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Unit, Parameter: Unit, Before: Double): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Unit, Parameter: Unit, Before: Double, Temporary: Boolean): CommandBarControl = js.native
+  def Add(Type: Unit, Id: Unit, Parameter: Unit, Before: Unit, Temporary: Boolean): CommandBarControl = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

@@ -33,7 +33,7 @@ object WFSOptions {
     
     inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
     
-    inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
+    inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value*))
     
     inline def setGmlFormat(value: GMLBase): Self = StObject.set(x, "gmlFormat", value.asInstanceOf[js.Any])
     

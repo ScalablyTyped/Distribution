@@ -29,7 +29,7 @@ object ListElasticsearchInstanceTypesResponse {
     
     inline def setElasticsearchInstanceTypesUndefined: Self = StObject.set(x, "ElasticsearchInstanceTypes", js.undefined)
     
-    inline def setElasticsearchInstanceTypesVarargs(value: ESPartitionInstanceType*): Self = StObject.set(x, "ElasticsearchInstanceTypes", js.Array(value :_*))
+    inline def setElasticsearchInstanceTypesVarargs(value: ESPartitionInstanceType*): Self = StObject.set(x, "ElasticsearchInstanceTypes", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

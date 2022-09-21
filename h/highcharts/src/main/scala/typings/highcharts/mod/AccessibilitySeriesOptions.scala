@@ -13,6 +13,29 @@ trait AccessibilitySeriesOptions extends StObject {
   var describeSingleSeries: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Format to use for describing the
+    * data series group to assistive technology - including screen readers.
+    *
+    * The series context and its subproperties are available under the variable
+    * `{series}`, for example `{series.name}` for the series name, and
+    * `{series.points.length}` for the number of data points.
+    *
+    * The chart context and its subproperties are available under the variable
+    * `{chart}`, for example `{chart.series.length}` for the number of series
+    * in the chart.
+    *
+    * `{seriesDescription}` refers to the automatic description of the series
+    * type and number of points added by Highcharts by default.
+    * `{authorDescription}` refers to the description added in
+    * series.description if one is present. `{axisDescription}` refers to the
+    * description added if the chart has multiple X or Y axes.
+    *
+    * Note that if series.descriptionFormatter is declared it will take
+    * precedence, and this option will be overridden.
+    */
+  var descriptionFormat: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Formatter function to use
     * instead of the default for series descriptions. Receives one argument,
     * `series`, referring to the series to describe. Should return a string
@@ -42,6 +65,10 @@ object AccessibilitySeriesOptions {
     inline def setDescribeSingleSeries(value: Boolean): Self = StObject.set(x, "describeSingleSeries", value.asInstanceOf[js.Any])
     
     inline def setDescribeSingleSeriesUndefined: Self = StObject.set(x, "describeSingleSeries", js.undefined)
+    
+    inline def setDescriptionFormat(value: String): Self = StObject.set(x, "descriptionFormat", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionFormatUndefined: Self = StObject.set(x, "descriptionFormat", js.undefined)
     
     inline def setDescriptionFormatter(value: Series => String): Self = StObject.set(x, "descriptionFormatter", js.Any.fromFunction1(value))
     

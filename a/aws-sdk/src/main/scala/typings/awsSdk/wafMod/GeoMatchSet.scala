@@ -32,7 +32,7 @@ object GeoMatchSet {
     
     inline def setGeoMatchConstraints(value: GeoMatchConstraints): Self = StObject.set(x, "GeoMatchConstraints", value.asInstanceOf[js.Any])
     
-    inline def setGeoMatchConstraintsVarargs(value: GeoMatchConstraint*): Self = StObject.set(x, "GeoMatchConstraints", js.Array(value :_*))
+    inline def setGeoMatchConstraintsVarargs(value: GeoMatchConstraint*): Self = StObject.set(x, "GeoMatchConstraints", js.Array(value*))
     
     inline def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
     

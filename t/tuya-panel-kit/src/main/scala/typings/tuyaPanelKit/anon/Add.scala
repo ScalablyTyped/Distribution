@@ -8,7 +8,7 @@ trait Add extends StObject {
   
   def add(value1: Double, value2: Double): Double
   
-  def bytesToHexString(arr: js.Array[js.Any]): String
+  def bytesToHexString(arr: js.Array[Any]): String
   
   def calcPercent(min: Double, max: Double, value: Double, offset: Double): Double
   
@@ -22,9 +22,9 @@ trait Add extends StObject {
   
   def inMaxMin(min: Double, max: Double, value: Double): Double
   
-  def intToHighLow(num: Double): js.Array[js.Any]
+  def intToHighLow(num: Double): js.Array[Any]
   
-  def numToByteNumbers(num: Double, bytes: Double): js.Array[js.Any]
+  def numToByteNumbers(num: Double, bytes: Double): js.Array[Any]
   
   def numToHexString(num: Double, padding: Double): String
   
@@ -46,15 +46,15 @@ object Add {
   
   inline def apply(
     add: (Double, Double) => Double,
-    bytesToHexString: js.Array[js.Any] => String,
+    bytesToHexString: js.Array[Any] => String,
     calcPercent: (Double, Double, Double, Double) => Double,
     calcPosition: (Double, Double, Double, Double, Double) => Double,
     changeBitValue: (Double, Double) => Double,
     getBitValue: (Double, Double) => Double,
     highLowToInt: (Double, Double) => Double,
     inMaxMin: (Double, Double, Double) => Double,
-    intToHighLow: Double => js.Array[js.Any],
-    numToByteNumbers: (Double, Double) => js.Array[js.Any],
+    intToHighLow: Double => js.Array[Any],
+    numToByteNumbers: (Double, Double) => js.Array[Any],
     numToHexString: (Double, Double) => String,
     range: (Double, Double, Double) => js.Array[Double],
     scaleNumber: (Double, Double) => Double,
@@ -72,7 +72,7 @@ object Add {
     
     inline def setAdd(value: (Double, Double) => Double): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    inline def setBytesToHexString(value: js.Array[js.Any] => String): Self = StObject.set(x, "bytesToHexString", js.Any.fromFunction1(value))
+    inline def setBytesToHexString(value: js.Array[Any] => String): Self = StObject.set(x, "bytesToHexString", js.Any.fromFunction1(value))
     
     inline def setCalcPercent(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "calcPercent", js.Any.fromFunction4(value))
     
@@ -86,9 +86,9 @@ object Add {
     
     inline def setInMaxMin(value: (Double, Double, Double) => Double): Self = StObject.set(x, "inMaxMin", js.Any.fromFunction3(value))
     
-    inline def setIntToHighLow(value: Double => js.Array[js.Any]): Self = StObject.set(x, "intToHighLow", js.Any.fromFunction1(value))
+    inline def setIntToHighLow(value: Double => js.Array[Any]): Self = StObject.set(x, "intToHighLow", js.Any.fromFunction1(value))
     
-    inline def setNumToByteNumbers(value: (Double, Double) => js.Array[js.Any]): Self = StObject.set(x, "numToByteNumbers", js.Any.fromFunction2(value))
+    inline def setNumToByteNumbers(value: (Double, Double) => js.Array[Any]): Self = StObject.set(x, "numToByteNumbers", js.Any.fromFunction2(value))
     
     inline def setNumToHexString(value: (Double, Double) => String): Self = StObject.set(x, "numToHexString", js.Any.fromFunction2(value))
     

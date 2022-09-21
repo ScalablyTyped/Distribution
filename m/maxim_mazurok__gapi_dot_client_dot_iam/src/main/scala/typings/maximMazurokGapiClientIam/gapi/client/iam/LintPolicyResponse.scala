@@ -22,6 +22,6 @@ object LintPolicyResponse {
     
     inline def setLintResultsUndefined: Self = StObject.set(x, "lintResults", js.undefined)
     
-    inline def setLintResultsVarargs(value: LintResult*): Self = StObject.set(x, "lintResults", js.Array(value :_*))
+    inline def setLintResultsVarargs(value: LintResult*): Self = StObject.set(x, "lintResults", js.Array(value*))
   }
 }

@@ -1,21 +1,30 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LatLng extends js.Object {
+trait LatLng extends StObject {
+  
   var latitude: js.UndefOr[Double] = js.undefined
+  
   var longitude: js.UndefOr[Double] = js.undefined
 }
-
 object LatLng {
-  @scala.inline
-  def apply(latitude: js.UndefOr[Double] = js.undefined, longitude: js.UndefOr[Double] = js.undefined): LatLng = {
+  
+  inline def apply(): LatLng = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LatLng]
   }
+  
+  extension [Self <: LatLng](x: Self) {
+    
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+  }
 }
-

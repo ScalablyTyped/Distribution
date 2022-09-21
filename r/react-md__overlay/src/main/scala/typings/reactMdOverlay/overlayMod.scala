@@ -4,7 +4,7 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.RefAttributes
 import typings.reactMdPortal.conditionalPortalMod.RenderConditionalPortalProps
-import typings.reactMdTransition.typesMod.OverridableCSSTransitionProps
+import typings.reactMdTransition.typesMod.CSSTransitionComponentProps
 import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
@@ -19,9 +19,9 @@ object overlayMod {
   
   trait OverlayProps
     extends StObject
-       with OverridableCSSTransitionProps
-       with RenderConditionalPortalProps
-       with HTMLAttributes[HTMLSpanElement] {
+       with HTMLAttributes[HTMLSpanElement]
+       with CSSTransitionComponentProps
+       with RenderConditionalPortalProps {
     
     /**
       * Boolean if the overlay should gain the pointer cursor while it's visible.

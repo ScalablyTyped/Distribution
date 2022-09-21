@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Validator[Schema /* <: AnySchema */, Output] extends StObject {
   
-  def apply(input: js.Any): /* is Output */ Boolean = js.native
-  def apply(input: js.Any, options: js.Any): /* is Output */ Boolean = js.native
+  def apply(input: Any): /* is Output */ Boolean = js.native
+  def apply(input: Any, options: Any): /* is Output */ Boolean = js.native
   
   var errors: js.Array[ValidationError] = js.native
   

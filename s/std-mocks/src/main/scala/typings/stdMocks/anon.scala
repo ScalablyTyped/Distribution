@@ -124,7 +124,7 @@ object anon {
       
       inline def setStderr(value: js.Array[String]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      inline def setStderrVarargs(value: String*): Self = StObject.set(x, "stderr", js.Array(value :_*))
+      inline def setStderrVarargs(value: String*): Self = StObject.set(x, "stderr", js.Array(value*))
     }
   }
   
@@ -145,11 +145,11 @@ object anon {
       
       inline def setStderr(value: js.Array[String]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      inline def setStderrVarargs(value: String*): Self = StObject.set(x, "stderr", js.Array(value :_*))
+      inline def setStderrVarargs(value: String*): Self = StObject.set(x, "stderr", js.Array(value*))
       
       inline def setStdout(value: js.Array[String]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      inline def setStdoutVarargs(value: String*): Self = StObject.set(x, "stdout", js.Array(value :_*))
+      inline def setStdoutVarargs(value: String*): Self = StObject.set(x, "stdout", js.Array(value*))
     }
   }
   
@@ -168,7 +168,7 @@ object anon {
       
       inline def setStdout(value: js.Array[String]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      inline def setStdoutVarargs(value: String*): Self = StObject.set(x, "stdout", js.Array(value :_*))
+      inline def setStdoutVarargs(value: String*): Self = StObject.set(x, "stdout", js.Array(value*))
     }
   }
 }

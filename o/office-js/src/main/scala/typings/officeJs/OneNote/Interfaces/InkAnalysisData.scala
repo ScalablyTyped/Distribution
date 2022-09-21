@@ -4,21 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "inkAnalysis.toJSON()". */
+/** An interface describing the data returned by calling `inkAnalysis.toJSON()`. */
 trait InkAnalysisData extends StObject {
   
   /**
-    *
     * Gets the ID of the InkAnalysis object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the parent page object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var page: js.UndefOr[PageData] = js.undefined

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark/dist/client/models", "TemplatedMessage")
 @js.native
-class TemplatedMessage protected ()
+open class TemplatedMessage protected ()
   extends typings.postmark.templateMod.TemplatedMessage {
   def this(
     from: String,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetUserMFAPreferenceRequest extends StObject {
   
   /**
-    * The access token for the user.
+    * A valid access token that Amazon Cognito issued to the user whose MFA preference you want to set.
     */
   var AccessToken: TokenModelType
   
@@ -17,7 +17,7 @@ trait SetUserMFAPreferenceRequest extends StObject {
   var SMSMfaSettings: js.UndefOr[SMSMfaSettingsType] = js.undefined
   
   /**
-    * The time-based one-time password software token MFA settings.
+    * The time-based one-time password (TOTP) software token MFA settings.
     */
   var SoftwareTokenMfaSettings: js.UndefOr[SoftwareTokenMfaSettingsType] = js.undefined
 }

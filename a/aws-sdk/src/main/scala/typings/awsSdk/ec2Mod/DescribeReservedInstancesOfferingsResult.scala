@@ -33,6 +33,6 @@ object DescribeReservedInstancesOfferingsResult {
     
     inline def setReservedInstancesOfferingsUndefined: Self = StObject.set(x, "ReservedInstancesOfferings", js.undefined)
     
-    inline def setReservedInstancesOfferingsVarargs(value: ReservedInstancesOffering*): Self = StObject.set(x, "ReservedInstancesOfferings", js.Array(value :_*))
+    inline def setReservedInstancesOfferingsVarargs(value: ReservedInstancesOffering*): Self = StObject.set(x, "ReservedInstancesOfferings", js.Array(value*))
   }
 }

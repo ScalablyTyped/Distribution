@@ -4,16 +4,16 @@
 Typings are for version 2.1
 
 ## Library description:
-render prismic json fragments in HTML
+Set of helpers to manage Prismic data
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | prismic-dom |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 33 |
-| # downloads        | 1821908 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 407129.6666666667 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/prismicio/prismic-dom#readme)

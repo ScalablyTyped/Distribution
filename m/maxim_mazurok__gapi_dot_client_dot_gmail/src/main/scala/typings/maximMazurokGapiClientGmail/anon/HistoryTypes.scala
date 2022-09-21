@@ -31,7 +31,7 @@ trait HistoryTypes extends StObject {
   /** Only return messages with a label matching the ID. */
   var labelId: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of history records to return. */
+  /** Maximum number of history records to return. This field defaults to 100. The maximum allowed value for this field is 500. */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
@@ -97,7 +97,7 @@ object HistoryTypes {
     
     inline def setHistoryTypesUndefined: Self = StObject.set(x, "historyTypes", js.undefined)
     
-    inline def setHistoryTypesVarargs(value: String*): Self = StObject.set(x, "historyTypes", js.Array(value :_*))
+    inline def setHistoryTypesVarargs(value: String*): Self = StObject.set(x, "historyTypes", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -11,13 +11,12 @@ object androidContainerNativeMod {
   
   @JSImport("antd-mobile-rn/lib/action-sheet/AndroidContainer.native", JSImport.Default)
   @js.native
-  class default protected () extends ActionSheetAndroid {
+  open class default protected () extends ActionSheetAndroid {
     def this(props: ActionSheetNativeProps) = this()
   }
   
   @js.native
-  trait ActionSheetAndroid
-    extends Component[ActionSheetNativeProps, js.Any, js.Any] {
+  trait ActionSheetAndroid extends Component[ActionSheetNativeProps, Any, Any] {
     
     def close(): Unit = js.native
     

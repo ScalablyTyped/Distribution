@@ -10,15 +10,15 @@ Retargets event in a shadow root to react
 | ------------------ | :-------------: |
 | Full name          | react-shadow-dom-retarget-events |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 247211 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51302.333333333336 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/WeltN24/react-shadow-dom-retarget-events#readme)
-- [Bugs](https://github.com/WeltN24/react-shadow-dom-retarget-events/issues)
-- [Repository](https://github.com/WeltN24/react-shadow-dom-retarget-events)
+- [Homepage](https://github.com/LukasBombach/react-shadow-dom-retarget-events#readme)
+- [Bugs](https://github.com/LukasBombach/react-shadow-dom-retarget-events/issues)
+- [Repository](https://github.com/LukasBombach/react-shadow-dom-retarget-events)
 - [Npm](https://www.npmjs.com/package/react-shadow-dom-retarget-events)
     
 

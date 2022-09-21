@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.TextFrame")
 @js.native
-/* private */ class TextFrame ()
+/* private */ open class TextFrame ()
   extends StObject
      with typings.activexExcel.Excel.TextFrame

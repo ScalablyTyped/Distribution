@@ -26,7 +26,7 @@ object InterconnectAttachmentsScopedList {
     
     inline def setInterconnectAttachmentsUndefined: Self = StObject.set(x, "interconnectAttachments", js.undefined)
     
-    inline def setInterconnectAttachmentsVarargs(value: InterconnectAttachment*): Self = StObject.set(x, "interconnectAttachments", js.Array(value :_*))
+    inline def setInterconnectAttachmentsVarargs(value: InterconnectAttachment*): Self = StObject.set(x, "interconnectAttachments", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

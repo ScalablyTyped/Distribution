@@ -31,6 +31,6 @@ object DeleteQueuedReservedInstancesRequest {
     
     inline def setReservedInstancesIds(value: DeleteQueuedReservedInstancesIdList): Self = StObject.set(x, "ReservedInstancesIds", value.asInstanceOf[js.Any])
     
-    inline def setReservedInstancesIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value :_*))
+    inline def setReservedInstancesIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value*))
   }
 }

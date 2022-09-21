@@ -29,7 +29,7 @@ object ListEntitiesDetectionJobsResponse {
     
     inline def setEntitiesDetectionJobPropertiesListUndefined: Self = StObject.set(x, "EntitiesDetectionJobPropertiesList", js.undefined)
     
-    inline def setEntitiesDetectionJobPropertiesListVarargs(value: EntitiesDetectionJobProperties*): Self = StObject.set(x, "EntitiesDetectionJobPropertiesList", js.Array(value :_*))
+    inline def setEntitiesDetectionJobPropertiesListVarargs(value: EntitiesDetectionJobProperties*): Self = StObject.set(x, "EntitiesDetectionJobPropertiesList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

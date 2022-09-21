@@ -2,17 +2,16 @@ package typings.orientjs.mod
 
 import typings.orientjs.anon.Fields
 import typings.orientjs.anon.Force
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "OClassProperty")
 @js.native
-class OClassProperty () extends StObject {
+open class OClassProperty () extends StObject {
   
   def alter(name: String): js.Promise[OClass] = js.native
-  def alter(name: String, setting: js.Any): js.Promise[OClass] = js.native
+  def alter(name: String, setting: Any): js.Promise[OClass] = js.native
   
   var `class`: js.UndefOr[OClass] = js.native
   
@@ -67,7 +66,7 @@ class OClassProperty () extends StObject {
   
   var readonly: js.UndefOr[Boolean] = js.native
   
-  var regexp: js.UndefOr[RegExp | String] = js.native
+  var regexp: js.UndefOr[js.RegExp | String] = js.native
   
   def reload(): js.Promise[OClassProperty] = js.native
   

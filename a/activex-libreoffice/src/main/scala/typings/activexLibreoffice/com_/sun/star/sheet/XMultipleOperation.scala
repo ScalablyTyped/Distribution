@@ -34,7 +34,7 @@ object XMultipleOperation {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTableOperation: (CellRangeAddress, TableOperationMode, CellAddress, CellAddress) => Unit
   ): XMultipleOperation = {

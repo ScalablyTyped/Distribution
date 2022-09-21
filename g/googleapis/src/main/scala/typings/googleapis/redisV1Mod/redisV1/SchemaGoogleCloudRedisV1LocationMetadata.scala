@@ -5,21 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This location metadata represents additional configuration options for a
-  * given location where a Redis instance may be created. All fields are output
-  * only. It is returned as content of the
-  * `google.cloud.location.Location.metadata` field.
-  */
 trait SchemaGoogleCloudRedisV1LocationMetadata extends StObject {
   
   /**
-    * Output only. The set of available zones in the location. The map is keyed
-    * by the lowercase ID of each zone, as defined by GCE. These keys can be
-    * specified in `location_id` or `alternative_location_id` fields when
-    * creating a Redis instance.
+    * Output only. The set of available zones in the location. The map is keyed by the lowercase ID of each zone, as defined by GCE. These keys can be specified in `location_id` or `alternative_location_id` fields when creating a Redis instance.
     */
-  var availableZones: js.UndefOr[StringDictionary[SchemaGoogleCloudRedisV1ZoneMetadata]] = js.undefined
+  var availableZones: js.UndefOr[StringDictionary[SchemaGoogleCloudRedisV1ZoneMetadata] | Null] = js.undefined
 }
 object SchemaGoogleCloudRedisV1LocationMetadata {
   
@@ -31,6 +22,8 @@ object SchemaGoogleCloudRedisV1LocationMetadata {
   extension [Self <: SchemaGoogleCloudRedisV1LocationMetadata](x: Self) {
     
     inline def setAvailableZones(value: StringDictionary[SchemaGoogleCloudRedisV1ZoneMetadata]): Self = StObject.set(x, "availableZones", value.asInstanceOf[js.Any])
+    
+    inline def setAvailableZonesNull: Self = StObject.set(x, "availableZones", null)
     
     inline def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)
   }

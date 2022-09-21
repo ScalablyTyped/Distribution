@@ -17,9 +17,9 @@ object webXRHitTestMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.sceneMod.IDisposable because Already inherited
   - typings.babylonjs.webXRFeaturesManagerMod.IWebXRFeature because Already inherited
-  - typings.babylonjs.webXRHitTestLegacyMod.IWebXRHitTestFeature because var conflicts: attached, dependsOn, disableAutoAttach, isDisposed, xrNativeFeatureName. Inlined onHitTestResultObservable */ @JSImport("babylonjs/XR/features/WebXRHitTest", "WebXRHitTest")
+  - typings.babylonjs.webXRHitTestLegacyMod.IWebXRHitTestFeature because var conflicts: attached, dependsOn, disableAutoAttach, getXRSessionInitExtension, isDisposed, xrNativeFeatureName. Inlined onHitTestResultObservable */ @JSImport("babylonjs/XR/features/WebXRHitTest", "WebXRHitTest")
   @js.native
-  class WebXRHitTest protected () extends WebXRAbstractFeature {
+  open class WebXRHitTest protected () extends WebXRAbstractFeature {
     /**
       * Creates a new instance of the hit test feature
       * @param _xrSessionManager an instance of WebXRSessionManager
@@ -34,17 +34,19 @@ object webXRHitTestMod {
     options: IWebXRHitTestOptions
     ) = this()
     
-    /* private */ var _processWebXRHitTestResult: js.Any = js.native
+    /* private */ var _initHitTestSource: Any = js.native
     
-    /* private */ var _tmpMat: js.Any = js.native
+    /* private */ var _processWebXRHitTestResult: Any = js.native
     
-    /* private */ var _tmpPos: js.Any = js.native
+    /* private */ var _tmpMat: Any = js.native
     
-    /* private */ var _tmpQuat: js.Any = js.native
+    /* private */ var _tmpPos: Any = js.native
     
-    /* private */ var _transientXrHitTestSource: js.Any = js.native
+    /* private */ var _tmpQuat: Any = js.native
     
-    /* private */ var _xrHitTestSource: js.Any = js.native
+    /* private */ var _transientXrHitTestSource: Any = js.native
+    
+    /* private */ var _xrHitTestSource: Any = js.native
     
     /**
       * When set to true, each hit test will have its own position/rotation objects
@@ -52,8 +54,6 @@ object webXRHitTestMod {
       * the developers will clone them or copy them as they see fit.
       */
     var autoCloneTransformation: Boolean = js.native
-    
-    /* private */ var initHitTestSource: js.Any = js.native
     
     /**
       * Triggered when new babylon (transformed) hit test results are available
@@ -177,6 +177,11 @@ object webXRHitTestMod {
     var offsetRay: js.UndefOr[Vector3] = js.undefined
     
     /**
+      * Override the default transient hit test profile (generic-touchscreen).
+      */
+    var transientHitTestProfile: js.UndefOr[String] = js.undefined
+    
+    /**
       * Offset ray for the transient hit test
       */
     var transientOffsetRay: js.UndefOr[Vector3] = js.undefined
@@ -207,11 +212,15 @@ object webXRHitTestMod {
       
       inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
       
-      inline def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+      inline def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value*))
       
       inline def setOffsetRay(value: Vector3): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
       
       inline def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
+      
+      inline def setTransientHitTestProfile(value: String): Self = StObject.set(x, "transientHitTestProfile", value.asInstanceOf[js.Any])
+      
+      inline def setTransientHitTestProfileUndefined: Self = StObject.set(x, "transientHitTestProfile", js.undefined)
       
       inline def setTransientOffsetRay(value: Vector3): Self = StObject.set(x, "transientOffsetRay", value.asInstanceOf[js.Any])
       

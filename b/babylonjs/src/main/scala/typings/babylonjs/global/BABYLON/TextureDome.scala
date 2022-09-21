@@ -3,7 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Behavior
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.HTMLVideoElement
-import typings.babylonjs.anon.AutoPlay
+import typings.babylonjs.anon.ClickToPlay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,50 +18,64 @@ abstract class TextureDome[T /* <: typings.babylonjs.BABYLON.Texture */] protect
     * @param name Element's name, child elements will append suffixes for their own names.
     * @param textureUrlOrElement defines the url(s) or the (video) HTML element to use
     * @param options An object containing optional or exposed sub element properties
+    * @param options.resolution
+    * @param options.clickToPlay
+    * @param options.autoPlay
+    * @param options.loop
+    * @param options.size
+    * @param options.poster
+    * @param options.faceForward
+    * @param options.useDirectMapping
+    * @param options.halfDomeMode
+    * @param options.crossEyeMode
+    * @param options.generateMipMaps
+    * @param options.mesh
+    * @param scene
+    * @param onError
     */
   def this(
     name: String,
     textureUrlOrElement: String,
-    options: AutoPlay,
+    options: ClickToPlay,
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
   def this(
     name: String,
     textureUrlOrElement: js.Array[String],
-    options: AutoPlay,
+    options: ClickToPlay,
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
   def this(
     name: String,
     textureUrlOrElement: HTMLVideoElement,
-    options: AutoPlay,
+    options: ClickToPlay,
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
   def this(
     name: String,
     textureUrlOrElement: String,
-    options: AutoPlay,
+    options: ClickToPlay,
     scene: typings.babylonjs.BABYLON.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
     name: String,
     textureUrlOrElement: js.Array[String],
-    options: AutoPlay,
+    options: ClickToPlay,
     scene: typings.babylonjs.BABYLON.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
     name: String,
     textureUrlOrElement: HTMLVideoElement,
-    options: AutoPlay,
+    options: ClickToPlay,
     scene: typings.babylonjs.BABYLON.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   
@@ -97,19 +111,19 @@ object TextureDome {
     */
   @JSGlobal("BABYLON.TextureDome.MODE_MONOSCOPIC")
   @js.native
-  val MODE_MONOSCOPIC: Double = js.native
+  val MODE_MONOSCOPIC: /* 0 */ Double = js.native
   
   /**
     * Define the source as a Stereoscopic Side by Side panoramic 360/180.
     */
   @JSGlobal("BABYLON.TextureDome.MODE_SIDEBYSIDE")
   @js.native
-  val MODE_SIDEBYSIDE: Double = js.native
+  val MODE_SIDEBYSIDE: /* 2 */ Double = js.native
   
   /**
     * Define the source as a Stereoscopic TopBottom/OverUnder panoramic 360/180.
     */
   @JSGlobal("BABYLON.TextureDome.MODE_TOPBOTTOM")
   @js.native
-  val MODE_TOPBOTTOM: Double = js.native
+  val MODE_TOPBOTTOM: /* 1 */ Double = js.native
 }

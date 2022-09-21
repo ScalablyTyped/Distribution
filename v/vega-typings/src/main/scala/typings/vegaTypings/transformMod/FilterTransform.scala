@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FilterTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var expr: ExprString
   

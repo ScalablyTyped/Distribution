@@ -19,7 +19,7 @@ trait CustomXmlParts extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xml The XML to add to the newly created custom XML part.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -41,7 +41,7 @@ trait CustomXmlParts extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param id The GUID of the custom XML part, including opening and closing braces.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -64,7 +64,7 @@ trait CustomXmlParts extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param ns  The namespace URI.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.

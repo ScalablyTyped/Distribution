@@ -10,10 +10,10 @@ Escrever números por extenso.
 | ------------------ | :-------------: |
 | Full name          | extenso |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 121038 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8352.666666666666 |
+| # stars            | 203.0 |
 
 ## Links
 - [Homepage](https://github.com/theuves/extenso.js#readme)

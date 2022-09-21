@@ -4,7 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.abstractActionManagerMod.AbstractActionManager
 import typings.babylonjs.anon.Actions
 import typings.babylonjs.anon.Ind
-import typings.babylonjs.anon.X
+import typings.babylonjs.anon.Y
+import typings.babylonjs.bakedVertexAnimationManagerMod.IBakedVertexAnimationManager
 import typings.babylonjs.boundingInfoMod.BoundingInfo
 import typings.babylonjs.boundingInfoMod.ICullable
 import typings.babylonjs.cameraMod.Camera
@@ -12,7 +13,7 @@ import typings.babylonjs.colliderMod.Collider
 import typings.babylonjs.edgesRendererMod.EdgesRenderer
 import typings.babylonjs.edgesRendererMod.IEdgesRenderer
 import typings.babylonjs.edgesRendererMod.IEdgesRendererOptions
-import typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage
+import typings.babylonjs.engineQueryMod.OcclusionDataStorage
 import typings.babylonjs.iparticlesystemMod.IParticleSystem
 import typings.babylonjs.lightMod.Light
 import typings.babylonjs.materialMod.Material
@@ -22,8 +23,10 @@ import typings.babylonjs.mathPlaneMod.Plane
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.meshCollisionDataMod.MeshCollisionData
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.meshVertexDataMod.IGetSetVerticesData
+import typings.babylonjs.morphTargetManagerMod.MorphTargetManager
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.observableMod.Observer
@@ -44,7 +47,7 @@ import typings.babylonjs.typesMod.DeepImmutable
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
-import typings.std.Float32Array
+import typings.babylonjs.uniformBufferMod.UniformBuffer
 import typings.std.WebGLQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,7 +57,7 @@ object abstractMeshMod {
   
   @JSImport("babylonjs/Meshes/abstractMesh", "AbstractMesh")
   @js.native
-  class AbstractMesh protected ()
+  open class AbstractMesh protected ()
     extends TransformNode
        with IDisposable
        with ICullable
@@ -73,22 +76,37 @@ object abstractMeshMod {
       */
     var __occlusionDataStorage: OcclusionDataStorage = js.native
     
-    /** @hidden */
+    /**
+      * @param renderId
+      * @param intermediateRendering
+      * @hidden
+      */
     def _activate(renderId: Double, intermediateRendering: Boolean): Boolean = js.native
     
     /** @hidden */
-    var _bonesTransformMatrices: Nullable[Float32Array] = js.native
+    var _bonesTransformMatrices: Nullable[js.typedarray.Float32Array] = js.native
     
-    /** @hidden */
-    var _boundingInfo: Nullable[BoundingInfo] = js.native
+    /* protected */ var _boundingInfo: Nullable[BoundingInfo] = js.native
     
-    /** @hidden */
+    /* protected */ var _boundingInfoIsDirty: Boolean = js.native
+    
+    /* protected */ def _buildUniformLayout(): Unit = js.native
+    
+    /**
+      * @param collider
+      * @hidden
+      */
     def _checkCollision(collider: Collider): AbstractMesh = js.native
     
     /** @hidden */
     def _checkOcclusionQuery(): Boolean = js.native
     
-    /** @hidden */
+    /**
+      * @param subMesh
+      * @param transformMatrix
+      * @param collider
+      * @hidden
+      */
     def _collideForSubMesh(subMesh: SubMesh, transformMatrix: Matrix, collider: Collider): AbstractMesh = js.native
     
     /** @hidden */
@@ -98,19 +116,29 @@ object abstractMeshMod {
     var _edgesRenderer: Nullable[IEdgesRenderer] = js.native
     
     /** @hidden */
-    def _effectiveMesh: AbstractMesh = js.native
-    
-    /** @hidden */
     def _freeze(): Unit = js.native
     
     /** @hidden */
     def _generatePointsArray(): Boolean = js.native
     
-    /** @hidden */
-    def _getPositionData(applySkeleton: Boolean): Nullable[FloatArray] = js.native
+    /**
+      * Internal function to get buffer data and possibly apply morphs and normals
+      * @param applySkeleton
+      * @param applyMorph
+      * @param data
+      * @param kind the kind of data you want. Can be Normal or Position
+      */
+    /* private */ var _getData: Any = js.native
+    
+    /**
+      * @param applySkeleton
+      * @param applyMorph
+      * @hidden
+      */
+    def _getPositionData(applySkeleton: Boolean, applyMorph: Boolean): Nullable[FloatArray] = js.native
     
     /** @hidden */
-    /* private */ var _initFacetData: js.Any = js.native
+    /* private */ var _initFacetData: Any = js.native
     
     /** @hidden */
     var _internalAbstractMeshDataInfo: InternalAbstractMeshDataInfo = js.native
@@ -124,9 +152,12 @@ object abstractMeshMod {
     /** @hidden */
     def _markSubMeshesAsAttributesDirty(): Unit = js.native
     
-    /* private */ var _markSubMeshesAsDirty: js.Any = js.native
+    /* private */ var _markSubMeshesAsDirty: Any = js.native
     
-    /** @hidden */
+    /**
+      * @param dispose
+      * @hidden
+      */
     def _markSubMeshesAsLightDirty(): Unit = js.native
     def _markSubMeshesAsLightDirty(dispose: Boolean): Unit = js.native
     
@@ -136,10 +167,6 @@ object abstractMeshMod {
     /** @hidden */
     var _masterMesh: Nullable[AbstractMesh] = js.native
     
-    /* private */ var _material: js.Any = js.native
-    
-    /* private */ var _meshCollisionData: js.Any = js.native
-    
     /**
       * Access property
       * @hidden
@@ -147,9 +174,9 @@ object abstractMeshMod {
     var _occlusionDataStorage: OcclusionDataStorage = js.native
     
     /** @hidden */
-    var _occlusionQuery: Nullable[WebGLQuery] = js.native
+    var _occlusionQuery: Nullable[WebGLQuery | Double] = js.native
     
-    /* private */ var _onCollisionPositionChange: js.Any = js.native
+    /* private */ var _onCollisionPositionChange: Any = js.native
     
     /** @hidden */
     var _physicsImpostor: Nullable[PhysicsImpostor] = js.native
@@ -163,19 +190,38 @@ object abstractMeshMod {
     /** @hidden */
     def _preActivate(): Unit = js.native
     
-    /** @hidden */
+    /**
+      * @param renderId
+      * @hidden
+      */
     def _preActivateForIntermediateRendering(renderId: Double): Unit = js.native
     
-    /** @hidden */
+    /**
+      * @param collider
+      * @param transformMatrix
+      * @hidden
+      */
     def _processCollisionsForSubMeshes(collider: Collider, transformMatrix: Matrix): AbstractMesh = js.native
     
-    /** @hidden */
+    /**
+      * @param dispose
+      * @hidden
+      */
     def _rebuild(): Unit = js.native
+    def _rebuild(dispose: Boolean): Unit = js.native
     
-    /** @hidden */
+    /**
+      * @param data
+      * @param bias
+      * @hidden
+      */
     def _refreshBoundingInfo(data: Nullable[FloatArray], bias: Nullable[Vector2]): Unit = js.native
     
-    /** @hidden */
+    /**
+      * @param light
+      * @param dispose
+      * @hidden
+      */
     def _removeLightSource(light: Light, dispose: Boolean): Unit = js.native
     
     /** @hidden */
@@ -190,13 +236,17 @@ object abstractMeshMod {
     /** @hidden */
     var _renderingGroup: Nullable[RenderingGroup] = js.native
     
-    /* private */ var _renderingGroupId: js.Any = js.native
-    
-    /** @hidden */
+    /**
+      * @param light
+      * @hidden
+      */
     def _resyncLightSource(light: Light): Unit = js.native
     
     /** @hidden */
     def _resyncLightSources(): Unit = js.native
+    
+    /** @hidden */
+    def _shouldConvertRHS(): Boolean = js.native
     
     /** @hidden (Backing field) */
     var _showBoundingBox: Boolean = js.native
@@ -206,6 +256,9 @@ object abstractMeshMod {
       * Backing Field
       */
     var _submeshesOctree: Octree[SubMesh] = js.native
+    
+    /** @hidden */
+    def _syncGeometryWithMorphTargetManager(): Unit = js.native
     
     /** @hidden */
     var _transformMatrixTexture: Nullable[RawTexture] = js.native
@@ -219,14 +272,26 @@ object abstractMeshMod {
     /** @hidden */
     var _unIndexed: Boolean = js.native
     
+    /**
+      * The current mesh uniform buffer.
+      * @hidden Internal use only.
+      */
+    var _uniformBuffer: UniformBuffer = js.native
+    
     /** @hidden */
     def _updateBoundingInfo(): AbstractMesh = js.native
     
-    /** @hidden */
+    /**
+      * @param matrix
+      * @hidden
+      */
     def _updateSubMeshesBoundingInfo(matrix: DeepImmutable[Matrix]): AbstractMesh = js.native
     
     /** @hidden */
     var _waitingData: Actions = js.native
+    
+    /** @hidden */
+    var _waitingMaterialId: Nullable[String] = js.native
     
     /**
       * Gets or sets the current action manager
@@ -237,9 +302,11 @@ object abstractMeshMod {
     /**
       * Adds the passed mesh as a child to the current mesh
       * @param mesh defines the child mesh
+      * @param preserveScalingSign if true, keep scaling sign of child. Otherwise, scaling sign might change.
       * @returns the current mesh
       */
     def addChild(mesh: AbstractMesh): AbstractMesh = js.native
+    def addChild(mesh: AbstractMesh, preserveScalingSign: Boolean): AbstractMesh = js.native
     
     /**
       * Align the mesh with a normal
@@ -271,6 +338,27 @@ object abstractMeshMod {
       * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
       */
     def applyImpulse(force: Vector3, contactPoint: Vector3): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
+    
+    /**
+      * Gets or sets the baked vertex animation manager
+      * @see https://doc.babylonjs.com/divingDeeper/animation/baked_texture_animations
+      */
+    def bakedVertexAnimationManager: Nullable[IBakedVertexAnimationManager] = js.native
+    def bakedVertexAnimationManager_=(value: Nullable[IBakedVertexAnimationManager]): Unit = js.native
+    
+    /**
+      * Creates a new bounding info for the mesh
+      * @param minimum min vector of the bounding box/sphere
+      * @param maximum max vector of the bounding box/sphere
+      * @param worldMatrix defines the new world matrix
+      * @returns the new bounding info
+      */
+    def buildBoundingInfo(minimum: DeepImmutable[Vector3], maximum: DeepImmutable[Vector3]): BoundingInfo = js.native
+    def buildBoundingInfo(
+      minimum: DeepImmutable[Vector3],
+      maximum: DeepImmutable[Vector3],
+      worldMatrix: DeepImmutable[Matrix]
+    ): BoundingInfo = js.native
     
     /**
       * Calculate relative position change from the point of view of behind the front of the mesh.
@@ -328,6 +416,10 @@ object abstractMeshMod {
       */
     def collisionResponse: Boolean = js.native
     def collisionResponse_=(response: Boolean): Unit = js.native
+    
+    /** number of collision detection tries. Change this value if not all collisions are detected and handled properly */
+    def collisionRetryCount: Double = js.native
+    def collisionRetryCount_=(retryCount: Double): Unit = js.native
     
     /**
       * Gets or sets a boolean indicating that bone animations must be computed by the CPU (false by default)
@@ -428,6 +520,10 @@ object abstractMeshMod {
       */
     var ellipsoidOffset: Vector3 = js.native
     
+    /** When enabled, decompose picking matrices for better precision with large values for mesh position and scling */
+    def enableDistantPicking: Boolean = js.native
+    def enableDistantPicking_=(value: Boolean): Unit = js.native
+    
     /**
       * Enables the edge rendering mode on the mesh.
       * This mode makes the mesh edges visible
@@ -467,6 +563,12 @@ object abstractMeshMod {
     def facetNb: Double = js.native
     
     /**
+      * Flag to force rendering the mesh even if occluded
+      * @see https://doc.babylonjs.com/features/occlusionquery
+      */
+    var forceRenderingWhenOccluded: Boolean = js.native
+    
+    /**
       * Returns the mesh BoundingInfo object or creates a new one and returns if it was undefined.
       * Note that it returns a shallow bounding of the mesh (i.e. it does not include children).
       * To get the full bounding of all children, call `getHierarchyBoundingVectors` instead.
@@ -476,12 +578,12 @@ object abstractMeshMod {
     
     /**
       * Returns the closest mesh facet index at (x,y,z) World coordinates, null if not found
-      * @param projected sets as the (x,y,z) world projection on the facet
-      * @param checkFace if true (default false), only the facet "facing" to (x,y,z) or only the ones "turning their backs", according to the parameter "facing" are returned
-      * @param facing if facing and checkFace are true, only the facet "facing" to (x, y, z) are returned : positive dot (x, y, z) * facet position. If facing si false and checkFace is true, only the facet "turning their backs" to (x, y, z) are returned : negative dot (x, y, z) * facet position
       * @param x defines x coordinate
       * @param y defines y coordinate
       * @param z defines z coordinate
+      * @param projected sets as the (x,y,z) world projection on the facet
+      * @param checkFace if true (default false), only the facet "facing" to (x,y,z) or only the ones "turning their backs", according to the parameter "facing" are returned
+      * @param facing if facing and checkFace are true, only the facet "facing" to (x, y, z) are returned : positive dot (x, y, z) * facet position. If facing si false and checkFace is true, only the facet "turning their backs" to (x, y, z) are returned : negative dot (x, y, z) * facet position
       * @returns the face index if found (or null instead)
       * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
       */
@@ -496,12 +598,12 @@ object abstractMeshMod {
     
     /**
       * Returns the closest mesh facet index at (x,y,z) local coordinates, null if not found
-      * @param projected sets as the (x,y,z) local projection on the facet
-      * @param checkFace if true (default false), only the facet "facing" to (x,y,z) or only the ones "turning their backs", according to the parameter "facing" are returned
-      * @param facing if facing and checkFace are true, only the facet "facing" to (x, y, z) are returned : positive dot (x, y, z) * facet position. If facing si false and checkFace is true, only the facet "turning their backs" to (x, y, z) are returned : negative dot (x, y, z) * facet position
       * @param x defines x coordinate
       * @param y defines y coordinate
       * @param z defines z coordinate
+      * @param projected sets as the (x,y,z) local projection on the facet
+      * @param checkFace if true (default false), only the facet "facing" to (x,y,z) or only the ones "turning their backs", according to the parameter "facing" are returned
+      * @param facing if facing and checkFace are true, only the facet "facing" to (x, y, z) are returned : positive dot (x, y, z) * facet position. If facing si false and checkFace is true, only the facet "turning their backs" to (x, y, z) are returned : negative dot (x, y, z) * facet position
       * @returns the face index if found (or null instead)
       * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
       */
@@ -525,7 +627,7 @@ object abstractMeshMod {
       * @returns the parameters
       * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
       */
-    def getFacetDataParameters(): js.Any = js.native
+    def getFacetDataParameters(): Any = js.native
     
     /**
       * Returns the facetLocalNormals array.
@@ -536,7 +638,7 @@ object abstractMeshMod {
     def getFacetLocalNormals(): js.Array[Vector3] = js.native
     
     /**
-      * Returns the facetLocalPartioning array
+      * Returns the facetLocalPartitioning array
       * @returns an array of array of numbers
       * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
       */
@@ -604,6 +706,30 @@ object abstractMeshMod {
     def getLOD(camera: Camera): Nullable[AbstractMesh] = js.native
     
     /**
+      * Gets the material used to render the mesh in a specific render pass
+      * @param renderPassId render pass id
+      * @returns material used for the render pass. If no specific material is used for this render pass, undefined is returned (meaning mesh.material is used for this pass)
+      */
+    def getMaterialForRenderPass(renderPassId: Double): js.UndefOr[Material] = js.native
+    
+    /**
+      * Gets the mesh uniform buffer.
+      * @returns the uniform buffer of the mesh.
+      */
+    def getMeshUniformBuffer(): UniformBuffer = js.native
+    
+    /**
+      * Get the normals vertex data and optionally apply skeleton and morphing.
+      * @param applySkeleton defines whether to apply the skeleton
+      * @param applyMorph  defines whether to apply the morph target
+      * @returns the normals data
+      */
+    def getNormalsData(): Nullable[FloatArray] = js.native
+    def getNormalsData(applySkeleton: Boolean): Nullable[FloatArray] = js.native
+    def getNormalsData(applySkeleton: Boolean, applyMorph: Boolean): Nullable[FloatArray] = js.native
+    def getNormalsData(applySkeleton: Unit, applyMorph: Boolean): Nullable[FloatArray] = js.native
+    
+    /**
       * Gets the current physics impostor
       * @see https://doc.babylonjs.com/features/physics_engine
       * @returns a physics impostor or null
@@ -611,8 +737,24 @@ object abstractMeshMod {
     def getPhysicsImpostor(): Nullable[PhysicsImpostor] = js.native
     
     /**
+      * Get the position vertex data and optionally apply skeleton and morphing.
+      * @param applySkeleton defines whether to apply the skeleton
+      * @param applyMorph  defines whether to apply the morph target
+      * @param data defines the position data to apply the skeleton and morph to
+      * @returns the position data
+      */
+    def getPositionData(): Nullable[FloatArray] = js.native
+    def getPositionData(applySkeleton: Boolean): Nullable[FloatArray] = js.native
+    def getPositionData(applySkeleton: Boolean, applyMorph: Boolean): Nullable[FloatArray] = js.native
+    def getPositionData(applySkeleton: Boolean, applyMorph: Boolean, data: Nullable[FloatArray]): Nullable[FloatArray] = js.native
+    def getPositionData(applySkeleton: Boolean, applyMorph: Unit, data: Nullable[FloatArray]): Nullable[FloatArray] = js.native
+    def getPositionData(applySkeleton: Unit, applyMorph: Boolean): Nullable[FloatArray] = js.native
+    def getPositionData(applySkeleton: Unit, applyMorph: Boolean, data: Nullable[FloatArray]): Nullable[FloatArray] = js.native
+    def getPositionData(applySkeleton: Unit, applyMorph: Unit, data: Nullable[FloatArray]): Nullable[FloatArray] = js.native
+    
+    /**
       * Returns a positive integer : the total number of indices in this mesh geometry.
-      * @returns the numner of indices or zero if the mesh has no geometry.
+      * @returns the number of indices or zero if the mesh has no geometry.
       */
     def getTotalIndices(): Double = js.native
     
@@ -621,6 +763,11 @@ object abstractMeshMod {
       * @returns an integer
       */
     def getTotalVertices(): Double = js.native
+    
+    /**
+      * Returns true if there is already a bounding info
+      */
+    def hasBoundingInfo: Boolean = js.native
     
     /**
       * Gets a boolean indicating if this mesh has instances
@@ -640,7 +787,7 @@ object abstractMeshMod {
       * Object used to store instanced buffers defined by user
       * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
       */
-    var instancedBuffers: StringDictionary[js.Any] = js.native
+    var instancedBuffers: StringDictionary[Any] = js.native
     
     /**
       * Checks if the passed Ray intersects with the mesh
@@ -873,7 +1020,7 @@ object abstractMeshMod {
     
     /**
       * Checks if a cullable object (mesh...) is in the camera frustum
-      * Unlike isInFrustum this cheks the full bounding box
+      * Unlike isInFrustum this checks the full bounding box
       * @param frustumPlanes Camera near/planes
       * @returns true if the object is in frustum otherwise false
       */
@@ -895,7 +1042,17 @@ object abstractMeshMod {
     override def isInFrustum(frustumPlanes: js.Array[Plane]): Boolean = js.native
     
     /**
-      * Gets or sets whether the mesh is occluded or not, it is used also to set the intial state of the mesh to be occluded or not
+      * Gets or sets a boolean indicating if the mesh can be near grabbed. Default is false
+      */
+    var isNearGrabbable: Boolean = js.native
+    
+    /**
+      * Gets or sets a boolean indicating if the mesh can be near picked. Default is false
+      */
+    var isNearPickable: Boolean = js.native
+    
+    /**
+      * Gets or sets whether the mesh is occluded or not, it is used also to set the initial state of the mesh to be occluded or not
       * @see https://doc.babylonjs.com/features/occlusionquery
       */
     var isOccluded: Boolean = js.native
@@ -918,7 +1075,7 @@ object abstractMeshMod {
     
     /**
       * Gets or sets the current layer mask (default is 0x0FFFFFFF)
-      * @see https://doc.babylonjs.com/how_to/layermasks_and_multi-cam_textures
+      * @see https://doc.babylonjs.com/divingDeeper/cameras/layerMasksAndMultiCam
       */
     def layerMask: Double = js.native
     def layerMask_=(value: Double): Unit = js.native
@@ -929,6 +1086,13 @@ object abstractMeshMod {
     /** Gets or sets current material */
     def material: Nullable[Material] = js.native
     def material_=(value: Nullable[Material]): Unit = js.native
+    
+    /**
+      * Gets or sets the morph target manager
+      * @see https://doc.babylonjs.com/how_to/how_to_use_morphtargets
+      */
+    def morphTargetManager: Nullable[MorphTargetManager] = js.native
+    def morphTargetManager_=(value: Nullable[MorphTargetManager]): Unit = js.native
     
     /**
       * Perform relative position change from the point of view of behind the front of the mesh.
@@ -971,7 +1135,7 @@ object abstractMeshMod {
     var occlusionQueryAlgorithmType: Double = js.native
     
     /**
-      * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retireved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decideds to show or hide the object.
+      * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retrieved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decides to show or hide the object.
       * The default value is -1 which means don't break the query and wait till the result
       * @see https://doc.babylonjs.com/features/occlusionquery
       */
@@ -979,7 +1143,7 @@ object abstractMeshMod {
     
     /**
       * This property is responsible for starting the occlusion query within the Mesh or not, this property is also used to determine what should happen when the occlusionRetryCount is reached. It has supports 3 values:
-      * * OCCLUSION_TYPE_NONE (Default Value): this option means no occlusion query whith the Mesh.
+      * * OCCLUSION_TYPE_NONE (Default Value): this option means no occlusion query within the Mesh.
       * * OCCLUSION_TYPE_OPTIMISTIC: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken show the mesh.
       * * OCCLUSION_TYPE_STRICT: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken restore the last state of the mesh occlusion if the mesh was visible then show the mesh if was hidden then hide don't show.
       * @see https://doc.babylonjs.com/features/occlusionquery
@@ -992,7 +1156,7 @@ object abstractMeshMod {
     var onCollideObservable: Observable[AbstractMesh] = js.native
     
     /** Set a function to call when this mesh collides with another one */
-    def onCollide_=(callback: js.Function0[Unit]): Unit = js.native
+    def onCollide_=(callback: js.Function1[/* collidedMesh */ js.UndefOr[this.type], Unit]): Unit = js.native
     
     /**
       * An event triggered when the collision's position changes
@@ -1025,15 +1189,15 @@ object abstractMeshMod {
     var overlayColor: Color3 = js.native
     
     /**
-      * The ratio (float) to apply to the bouding box size to set to the partioning space.
-      * Ex : 1.01 (default) the partioning space is 1% bigger than the bounding box
+      * The ratio (float) to apply to the bounding box size to set to the partitioning space.
+      * Ex : 1.01 (default) the partitioning space is 1% bigger than the bounding box
       * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata#tweaking-the-partitioning
       */
     def partitioningBBoxRatio: Double = js.native
     def partitioningBBoxRatio_=(ratio: Double): Unit = js.native
     
     /**
-      * Gets or set the number (integer) of subdivisions per axis in the partioning space
+      * Gets or set the number (integer) of subdivisions per axis in the partitioning space
       * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata#tweaking-the-partitioning
       */
     def partitioningSubdivisions: Double = js.native
@@ -1056,10 +1220,13 @@ object abstractMeshMod {
       * This method recomputes and sets a new BoundingInfo to the mesh unless it is locked.
       * This means the mesh underlying bounding box and sphere are recomputed.
       * @param applySkeleton defines whether to apply the skeleton before computing the bounding info
+      * @param applyMorph  defines whether to apply the morph target before computing the bounding info
       * @returns the current mesh
       */
     def refreshBoundingInfo(): AbstractMesh = js.native
     def refreshBoundingInfo(applySkeleton: Boolean): AbstractMesh = js.native
+    def refreshBoundingInfo(applySkeleton: Boolean, applyMorph: Boolean): AbstractMesh = js.native
+    def refreshBoundingInfo(applySkeleton: Unit, applyMorph: Boolean): AbstractMesh = js.native
     
     /**
       * Disposes all the submeshes of the current meshnp
@@ -1070,9 +1237,11 @@ object abstractMeshMod {
     /**
       * Removes the passed mesh from the current mesh children list
       * @param mesh defines the child mesh
+      * @param preserveScalingSign if true, keep scaling sign of child. Otherwise, scaling sign might change.
       * @returns the current mesh
       */
     def removeChild(mesh: AbstractMesh): AbstractMesh = js.native
+    def removeChild(mesh: AbstractMesh, preserveScalingSign: Boolean): AbstractMesh = js.native
     
     /**
       * Gets or sets a boolean indicating if the outline must be rendered as well
@@ -1094,6 +1263,13 @@ object abstractMeshMod {
     def renderingGroupId_=(value: Double): Unit = js.native
     
     /**
+      * Resets the draw wrappers cache for all submeshes of this abstract mesh
+      * @param passId If provided, releases only the draw wrapper corresponding to this render pass id
+      */
+    def resetDrawCache(): Unit = js.native
+    def resetDrawCache(passId: Double): Unit = js.native
+    
+    /**
       * Perform relative rotation change from the point of view of behind the front of the mesh.
       * Supports definition of mesh facing forward or backward
       * @param flipBack defines the flip
@@ -1111,6 +1287,14 @@ object abstractMeshMod {
     def setBoundingInfo(boundingInfo: BoundingInfo): AbstractMesh = js.native
     
     /**
+      * Sets the material to be used to render the mesh in a specific render pass
+      * @param renderPassId render pass id
+      * @param material material to use for this render pass. If undefined is passed, no specific material will be used for this render pass but the regular material will be used instead (mesh.material)
+      */
+    def setMaterialForRenderPass(renderPassId: Double): Unit = js.native
+    def setMaterialForRenderPass(renderPassId: Double, material: Material): Unit = js.native
+    
+    /**
       * Creates a physic joint between two meshes
       * @param otherMesh defines the other mesh to use
       * @param pivot1 defines the pivot to use on this mesh
@@ -1120,7 +1304,7 @@ object abstractMeshMod {
       * @see https://www.babylonjs-playground.com/#0BS5U0#0
       */
     def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
-    def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3, options: js.Any): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
+    def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3, options: Any): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
     
     /**
       * Sets the vertex data of the mesh geometry for the requested `kind`.
@@ -1159,7 +1343,7 @@ object abstractMeshMod {
     
     def skeleton: Nullable[Skeleton] = js.native
     /**
-      * Gets or sets a skeleton to apply skining transformations
+      * Gets or sets a skeleton to apply skinning transformations
       * @see https://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons
       */
     def skeleton_=(value: Nullable[Skeleton]): Unit = js.native
@@ -1183,6 +1367,12 @@ object abstractMeshMod {
     def surroundingMeshes_=(meshes: Nullable[js.Array[AbstractMesh]]): Unit = js.native
     
     def toString(fullDetails: Boolean): String = js.native
+    
+    /**
+      * Transfer the mesh values to its UBO.
+      * @param world The world matrix associated with the mesh
+      */
+    def transferToEffect(world: Matrix): Unit = js.native
     
     /**
       * Updates the mesh facetData arrays and the internal partitioning when the mesh is morphed or updated.
@@ -1283,7 +1473,7 @@ object abstractMeshMod {
     @js.native
     val CULLINGSTRATEGY_STANDARD: Double = js.native
     
-    /** Use an accurante occlusion algorithm */
+    /** Use an accurate occlusion algorithm */
     @JSImport("babylonjs/Meshes/abstractMesh", "AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE")
     @js.native
     def OCCLUSION_ALGORITHM_TYPE_ACCURATE: Double = js.native
@@ -1301,7 +1491,7 @@ object abstractMeshMod {
     def OCCLUSION_TYPE_NONE: Double = js.native
     inline def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
     
-    /** Occlusion set to optimisitic */
+    /** Occlusion set to optimistic */
     @JSImport("babylonjs/Meshes/abstractMesh", "AbstractMesh.OCCLUSION_TYPE_OPTIMISTIC")
     @js.native
     def OCCLUSION_TYPE_OPTIMISTIC: Double = js.native
@@ -1339,7 +1529,7 @@ object abstractMeshMod {
     
     var facetNormals: js.Array[Vector3]
     
-    var facetParameters: js.Any
+    var facetParameters: Any
     
     var facetPartitioning: js.Array[js.Array[Double]]
     
@@ -1351,7 +1541,7 @@ object abstractMeshMod {
     
     var partitioningSubdivisions: Double
     
-    var subDiv: X
+    var subDiv: Y
   }
   object FacetDataStorage {
     
@@ -1367,13 +1557,13 @@ object abstractMeshMod {
       facetDepthSortOrigin: Vector3,
       facetNb: Double,
       facetNormals: js.Array[Vector3],
-      facetParameters: js.Any,
+      facetParameters: Any,
       facetPartitioning: js.Array[js.Array[Double]],
       facetPositions: js.Array[Vector3],
       invertedMatrix: Matrix,
       partitioningBBoxRatio: Double,
       partitioningSubdivisions: Double,
-      subDiv: X
+      subDiv: Y
     ): FacetDataStorage = {
       val __obj = js.Dynamic.literal(bbSize = bbSize.asInstanceOf[js.Any], depthSortedFacets = depthSortedFacets.asInstanceOf[js.Any], depthSortedIndices = depthSortedIndices.asInstanceOf[js.Any], facetDataEnabled = facetDataEnabled.asInstanceOf[js.Any], facetDepthSort = facetDepthSort.asInstanceOf[js.Any], facetDepthSortEnabled = facetDepthSortEnabled.asInstanceOf[js.Any], facetDepthSortFrom = facetDepthSortFrom.asInstanceOf[js.Any], facetDepthSortFunction = js.Any.fromFunction2(facetDepthSortFunction), facetDepthSortOrigin = facetDepthSortOrigin.asInstanceOf[js.Any], facetNb = facetNb.asInstanceOf[js.Any], facetNormals = facetNormals.asInstanceOf[js.Any], facetParameters = facetParameters.asInstanceOf[js.Any], facetPartitioning = facetPartitioning.asInstanceOf[js.Any], facetPositions = facetPositions.asInstanceOf[js.Any], invertedMatrix = invertedMatrix.asInstanceOf[js.Any], partitioningBBoxRatio = partitioningBBoxRatio.asInstanceOf[js.Any], partitioningSubdivisions = partitioningSubdivisions.asInstanceOf[js.Any], subDiv = subDiv.asInstanceOf[js.Any])
       __obj.asInstanceOf[FacetDataStorage]
@@ -1385,11 +1575,11 @@ object abstractMeshMod {
       
       inline def setDepthSortedFacets(value: js.Array[Ind]): Self = StObject.set(x, "depthSortedFacets", value.asInstanceOf[js.Any])
       
-      inline def setDepthSortedFacetsVarargs(value: Ind*): Self = StObject.set(x, "depthSortedFacets", js.Array(value :_*))
+      inline def setDepthSortedFacetsVarargs(value: Ind*): Self = StObject.set(x, "depthSortedFacets", js.Array(value*))
       
       inline def setDepthSortedIndices(value: IndicesArray): Self = StObject.set(x, "depthSortedIndices", value.asInstanceOf[js.Any])
       
-      inline def setDepthSortedIndicesVarargs(value: Double*): Self = StObject.set(x, "depthSortedIndices", js.Array(value :_*))
+      inline def setDepthSortedIndicesVarargs(value: Double*): Self = StObject.set(x, "depthSortedIndices", js.Array(value*))
       
       inline def setFacetDataEnabled(value: Boolean): Self = StObject.set(x, "facetDataEnabled", value.asInstanceOf[js.Any])
       
@@ -1407,17 +1597,17 @@ object abstractMeshMod {
       
       inline def setFacetNormals(value: js.Array[Vector3]): Self = StObject.set(x, "facetNormals", value.asInstanceOf[js.Any])
       
-      inline def setFacetNormalsVarargs(value: Vector3*): Self = StObject.set(x, "facetNormals", js.Array(value :_*))
+      inline def setFacetNormalsVarargs(value: Vector3*): Self = StObject.set(x, "facetNormals", js.Array(value*))
       
-      inline def setFacetParameters(value: js.Any): Self = StObject.set(x, "facetParameters", value.asInstanceOf[js.Any])
+      inline def setFacetParameters(value: Any): Self = StObject.set(x, "facetParameters", value.asInstanceOf[js.Any])
       
       inline def setFacetPartitioning(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "facetPartitioning", value.asInstanceOf[js.Any])
       
-      inline def setFacetPartitioningVarargs(value: js.Array[Double]*): Self = StObject.set(x, "facetPartitioning", js.Array(value :_*))
+      inline def setFacetPartitioningVarargs(value: js.Array[Double]*): Self = StObject.set(x, "facetPartitioning", js.Array(value*))
       
       inline def setFacetPositions(value: js.Array[Vector3]): Self = StObject.set(x, "facetPositions", value.asInstanceOf[js.Any])
       
-      inline def setFacetPositionsVarargs(value: Vector3*): Self = StObject.set(x, "facetPositions", js.Array(value :_*))
+      inline def setFacetPositionsVarargs(value: Vector3*): Self = StObject.set(x, "facetPositions", js.Array(value*))
       
       inline def setInvertedMatrix(value: Matrix): Self = StObject.set(x, "invertedMatrix", value.asInstanceOf[js.Any])
       
@@ -1425,7 +1615,7 @@ object abstractMeshMod {
       
       inline def setPartitioningSubdivisions(value: Double): Self = StObject.set(x, "partitioningSubdivisions", value.asInstanceOf[js.Any])
       
-      inline def setSubDiv(value: X): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
+      inline def setSubDiv(value: Y): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1438,11 +1628,17 @@ object abstractMeshMod {
     
     var _applyFog: Boolean
     
+    var _bakedVertexAnimationManager: Nullable[IBakedVertexAnimationManager]
+    
+    var _collisionRetryCount: Double
+    
     var _computeBonesUsingShaders: Boolean
     
     var _currentLOD: Nullable[AbstractMesh]
     
     var _currentLODIsUpToDate: Boolean
+    
+    var _enableDistantPicking: Boolean
     
     var _facetData: FacetDataStorage
     
@@ -1454,13 +1650,25 @@ object abstractMeshMod {
     
     var _layerMask: Double
     
+    var _material: Nullable[Material]
+    
+    var _materialForRenderPass: js.Array[js.UndefOr[Material]]
+    
+    var _meshCollisionData: MeshCollisionData
+    
+    var _morphTargetManager: Nullable[MorphTargetManager]
+    
     var _numBoneInfluencers: Double
     
     var _onlyForInstances: Boolean
     
     var _onlyForInstancesIntermediate: Boolean
     
+    var _positions: Nullable[js.Array[Vector3]]
+    
     var _receiveShadows: Boolean
+    
+    var _renderingGroupId: Double
     
     var _skeleton: Nullable[Skeleton]
     
@@ -1473,21 +1681,26 @@ object abstractMeshMod {
     inline def apply(
       _actAsRegularMesh: Boolean,
       _applyFog: Boolean,
+      _collisionRetryCount: Double,
       _computeBonesUsingShaders: Boolean,
       _currentLODIsUpToDate: Boolean,
+      _enableDistantPicking: Boolean,
       _facetData: FacetDataStorage,
       _hasVertexAlpha: Boolean,
       _isActive: Boolean,
       _isActiveIntermediate: Boolean,
       _layerMask: Double,
+      _materialForRenderPass: js.Array[js.UndefOr[Material]],
+      _meshCollisionData: MeshCollisionData,
       _numBoneInfluencers: Double,
       _onlyForInstances: Boolean,
       _onlyForInstancesIntermediate: Boolean,
       _receiveShadows: Boolean,
+      _renderingGroupId: Double,
       _useVertexColors: Boolean,
       _visibility: Double
     ): InternalAbstractMeshDataInfo = {
-      val __obj = js.Dynamic.literal(_actAsRegularMesh = _actAsRegularMesh.asInstanceOf[js.Any], _applyFog = _applyFog.asInstanceOf[js.Any], _computeBonesUsingShaders = _computeBonesUsingShaders.asInstanceOf[js.Any], _currentLODIsUpToDate = _currentLODIsUpToDate.asInstanceOf[js.Any], _facetData = _facetData.asInstanceOf[js.Any], _hasVertexAlpha = _hasVertexAlpha.asInstanceOf[js.Any], _isActive = _isActive.asInstanceOf[js.Any], _isActiveIntermediate = _isActiveIntermediate.asInstanceOf[js.Any], _layerMask = _layerMask.asInstanceOf[js.Any], _numBoneInfluencers = _numBoneInfluencers.asInstanceOf[js.Any], _onlyForInstances = _onlyForInstances.asInstanceOf[js.Any], _onlyForInstancesIntermediate = _onlyForInstancesIntermediate.asInstanceOf[js.Any], _receiveShadows = _receiveShadows.asInstanceOf[js.Any], _useVertexColors = _useVertexColors.asInstanceOf[js.Any], _visibility = _visibility.asInstanceOf[js.Any], _currentLOD = null, _skeleton = null)
+      val __obj = js.Dynamic.literal(_actAsRegularMesh = _actAsRegularMesh.asInstanceOf[js.Any], _applyFog = _applyFog.asInstanceOf[js.Any], _collisionRetryCount = _collisionRetryCount.asInstanceOf[js.Any], _computeBonesUsingShaders = _computeBonesUsingShaders.asInstanceOf[js.Any], _currentLODIsUpToDate = _currentLODIsUpToDate.asInstanceOf[js.Any], _enableDistantPicking = _enableDistantPicking.asInstanceOf[js.Any], _facetData = _facetData.asInstanceOf[js.Any], _hasVertexAlpha = _hasVertexAlpha.asInstanceOf[js.Any], _isActive = _isActive.asInstanceOf[js.Any], _isActiveIntermediate = _isActiveIntermediate.asInstanceOf[js.Any], _layerMask = _layerMask.asInstanceOf[js.Any], _materialForRenderPass = _materialForRenderPass.asInstanceOf[js.Any], _meshCollisionData = _meshCollisionData.asInstanceOf[js.Any], _numBoneInfluencers = _numBoneInfluencers.asInstanceOf[js.Any], _onlyForInstances = _onlyForInstances.asInstanceOf[js.Any], _onlyForInstancesIntermediate = _onlyForInstancesIntermediate.asInstanceOf[js.Any], _receiveShadows = _receiveShadows.asInstanceOf[js.Any], _renderingGroupId = _renderingGroupId.asInstanceOf[js.Any], _useVertexColors = _useVertexColors.asInstanceOf[js.Any], _visibility = _visibility.asInstanceOf[js.Any], _bakedVertexAnimationManager = null, _currentLOD = null, _material = null, _morphTargetManager = null, _positions = null, _skeleton = null)
       __obj.asInstanceOf[InternalAbstractMeshDataInfo]
     }
     
@@ -1497,6 +1710,12 @@ object abstractMeshMod {
       
       inline def set_applyFog(value: Boolean): Self = StObject.set(x, "_applyFog", value.asInstanceOf[js.Any])
       
+      inline def set_bakedVertexAnimationManager(value: Nullable[IBakedVertexAnimationManager]): Self = StObject.set(x, "_bakedVertexAnimationManager", value.asInstanceOf[js.Any])
+      
+      inline def set_bakedVertexAnimationManagerNull: Self = StObject.set(x, "_bakedVertexAnimationManager", null)
+      
+      inline def set_collisionRetryCount(value: Double): Self = StObject.set(x, "_collisionRetryCount", value.asInstanceOf[js.Any])
+      
       inline def set_computeBonesUsingShaders(value: Boolean): Self = StObject.set(x, "_computeBonesUsingShaders", value.asInstanceOf[js.Any])
       
       inline def set_currentLOD(value: Nullable[AbstractMesh]): Self = StObject.set(x, "_currentLOD", value.asInstanceOf[js.Any])
@@ -1504,6 +1723,8 @@ object abstractMeshMod {
       inline def set_currentLODIsUpToDate(value: Boolean): Self = StObject.set(x, "_currentLODIsUpToDate", value.asInstanceOf[js.Any])
       
       inline def set_currentLODNull: Self = StObject.set(x, "_currentLOD", null)
+      
+      inline def set_enableDistantPicking(value: Boolean): Self = StObject.set(x, "_enableDistantPicking", value.asInstanceOf[js.Any])
       
       inline def set_facetData(value: FacetDataStorage): Self = StObject.set(x, "_facetData", value.asInstanceOf[js.Any])
       
@@ -1515,13 +1736,35 @@ object abstractMeshMod {
       
       inline def set_layerMask(value: Double): Self = StObject.set(x, "_layerMask", value.asInstanceOf[js.Any])
       
+      inline def set_material(value: Nullable[Material]): Self = StObject.set(x, "_material", value.asInstanceOf[js.Any])
+      
+      inline def set_materialForRenderPass(value: js.Array[js.UndefOr[Material]]): Self = StObject.set(x, "_materialForRenderPass", value.asInstanceOf[js.Any])
+      
+      inline def set_materialForRenderPassVarargs(value: js.UndefOr[Material]*): Self = StObject.set(x, "_materialForRenderPass", js.Array(value*))
+      
+      inline def set_materialNull: Self = StObject.set(x, "_material", null)
+      
+      inline def set_meshCollisionData(value: MeshCollisionData): Self = StObject.set(x, "_meshCollisionData", value.asInstanceOf[js.Any])
+      
+      inline def set_morphTargetManager(value: Nullable[MorphTargetManager]): Self = StObject.set(x, "_morphTargetManager", value.asInstanceOf[js.Any])
+      
+      inline def set_morphTargetManagerNull: Self = StObject.set(x, "_morphTargetManager", null)
+      
       inline def set_numBoneInfluencers(value: Double): Self = StObject.set(x, "_numBoneInfluencers", value.asInstanceOf[js.Any])
       
       inline def set_onlyForInstances(value: Boolean): Self = StObject.set(x, "_onlyForInstances", value.asInstanceOf[js.Any])
       
       inline def set_onlyForInstancesIntermediate(value: Boolean): Self = StObject.set(x, "_onlyForInstancesIntermediate", value.asInstanceOf[js.Any])
       
+      inline def set_positions(value: Nullable[js.Array[Vector3]]): Self = StObject.set(x, "_positions", value.asInstanceOf[js.Any])
+      
+      inline def set_positionsNull: Self = StObject.set(x, "_positions", null)
+      
+      inline def set_positionsVarargs(value: Vector3*): Self = StObject.set(x, "_positions", js.Array(value*))
+      
       inline def set_receiveShadows(value: Boolean): Self = StObject.set(x, "_receiveShadows", value.asInstanceOf[js.Any])
+      
+      inline def set_renderingGroupId(value: Double): Self = StObject.set(x, "_renderingGroupId", value.asInstanceOf[js.Any])
       
       inline def set_skeleton(value: Nullable[Skeleton]): Self = StObject.set(x, "_skeleton", value.asInstanceOf[js.Any])
       

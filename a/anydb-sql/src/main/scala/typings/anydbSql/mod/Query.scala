@@ -13,9 +13,9 @@ trait Query[T]
   def from(statement: String): Query[T] = js.native
   def from(table: TableNode): Query[T] = js.native
   
-  def group(nodes: js.Any*): GroupQuery[T] = js.native
+  def group(nodes: Any*): GroupQuery[T] = js.native
   @JSName("group")
-  def group_Group(nodes: js.Any*): Group[Query[T]] = js.native
+  def group_Group(nodes: Any*): Group[Query[T]] = js.native
   
   def limit(l: Double): Query[T] = js.native
   
@@ -24,5 +24,5 @@ trait Query[T]
   def order(criteria: OrderByValueNode*): Query[T] = js.native
   
   def update(o: js.Object): ModifyingQuery = js.native
-  def update(o: Dictionary[js.Any]): ModifyingQuery = js.native
+  def update(o: Dictionary[Any]): ModifyingQuery = js.native
 }

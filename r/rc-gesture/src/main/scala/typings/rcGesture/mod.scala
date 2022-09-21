@@ -21,8 +21,8 @@ object mod {
   
   @JSImport("rc-gesture", JSImport.Default)
   @js.native
-  class default protected () extends Gesture {
-    def this(props: js.Any) = this()
+  open class default protected () extends Gesture {
+    def this(props: Any) = this()
   }
   /* static members */
   object default {
@@ -59,20 +59,19 @@ object mod {
   }
   
   @js.native
-  trait Gesture
-    extends Component[IGesture, js.Any, js.Any] {
+  trait Gesture extends Component[IGesture, Any, Any] {
     
-    def _handleTouchCancel(e: js.Any): Unit = js.native
+    def _handleTouchCancel(e: Any): Unit = js.native
     
-    def _handleTouchEnd(e: js.Any): Unit = js.native
+    def _handleTouchEnd(e: Any): Unit = js.native
     
-    def _handleTouchMove(e: js.Any): Unit = js.native
+    def _handleTouchMove(e: Any): Unit = js.native
     
-    def _handleTouchStart(e: js.Any): Unit = js.native
+    def _handleTouchStart(e: Any): Unit = js.native
     
     def allowGesture(): Boolean = js.native
     
-    def checkIfMultiTouchEnd(status: js.Any): Unit = js.native
+    def checkIfMultiTouchEnd(status: Any): Unit = js.native
     
     def checkIfMultiTouchMove(): Unit = js.native
     
@@ -87,11 +86,11 @@ object mod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MGesture(): Unit = js.native
     
-    /* private */ var directionSetting: js.Any = js.native
+    /* private */ var directionSetting: Any = js.native
     
-    def doSingleTouchEnd(status: js.Any): Unit = js.native
+    def doSingleTouchEnd(status: Any): Unit = js.native
     
-    /* protected */ var event: js.Any = js.native
+    /* protected */ var event: Any = js.native
     
     /* protected */ var gesture: IGestureStatus = js.native
     
@@ -99,29 +98,29 @@ object mod {
     
     def getTouchAction(): auto | (`pan-x pan-y`) | `pan-x` | `pan-y` = js.native
     
-    def getTouches(e: js.Any): js.Any = js.native
+    def getTouches(e: Any): Any = js.native
     
-    def initGestureStatus(e: js.Any): Unit = js.native
+    def initGestureStatus(e: Any): Unit = js.native
     
     def initPressTimer(): Unit = js.native
     
-    /* private */ var pressTimer: js.Any = js.native
+    /* private */ var pressTimer: Any = js.native
     
-    def setGestureState(params: js.Any): Unit = js.native
+    def setGestureState(params: Any): Unit = js.native
     
-    def triggerAllowEvent(`type`: js.Any, status: js.Any): Unit = js.native
+    def triggerAllowEvent(`type`: Any, status: Any): Unit = js.native
     
-    def triggerCombineEvent(mainEventName: js.Any, eventStatus: js.Any, args: js.Any*): Unit = js.native
+    def triggerCombineEvent(mainEventName: Any, eventStatus: Any, args: Any*): Unit = js.native
     
-    def triggerEvent(name: js.Any, args: js.Any*): Unit = js.native
+    def triggerEvent(name: Any, args: Any*): Unit = js.native
     
-    def triggerPinchEvent(mainEventName: js.Any, eventStatus: js.Any, args: js.Any*): Unit = js.native
+    def triggerPinchEvent(mainEventName: Any, eventStatus: Any, args: Any*): Unit = js.native
     
-    def triggerSubEvent(mainEventName: js.Any, eventStatus: js.Any, args: js.Any*): Unit = js.native
+    def triggerSubEvent(mainEventName: Any, eventStatus: Any, args: Any*): Unit = js.native
     
-    def triggerUserCb(status: js.Any, e: js.Any): Unit = js.native
+    def triggerUserCb(status: Any, e: Any): Unit = js.native
     
-    def updateGestureStatus(e: js.Any): Unit = js.native
+    def updateGestureStatus(e: Any): Unit = js.native
   }
   
   type GestureHandler = js.Function1[/* s */ IGestureStatus, Unit]
@@ -379,7 +378,7 @@ object mod {
     
     var scale: js.UndefOr[Double] = js.undefined
     
-    var srcEvent: js.Any
+    var srcEvent: Any
     
     var startMutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.undefined
     
@@ -397,7 +396,7 @@ object mod {
     
     inline def apply(
       preTouches: js.Array[Finger],
-      srcEvent: js.Any,
+      srcEvent: Any,
       startTime: Double,
       startTouches: js.Array[Finger],
       time: Double,
@@ -425,7 +424,7 @@ object mod {
       
       inline def setMutliFingerStatusUndefined: Self = StObject.set(x, "mutliFingerStatus", js.undefined)
       
-      inline def setMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "mutliFingerStatus", js.Array(value :_*))
+      inline def setMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "mutliFingerStatus", js.Array(value*))
       
       inline def setPan(value: Boolean): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
       
@@ -437,7 +436,7 @@ object mod {
       
       inline def setPreTouches(value: js.Array[Finger]): Self = StObject.set(x, "preTouches", value.asInstanceOf[js.Any])
       
-      inline def setPreTouchesVarargs(value: Finger*): Self = StObject.set(x, "preTouches", js.Array(value :_*))
+      inline def setPreTouchesVarargs(value: Finger*): Self = StObject.set(x, "preTouches", js.Array(value*))
       
       inline def setPress(value: Boolean): Self = StObject.set(x, "press", value.asInstanceOf[js.Any])
       
@@ -455,19 +454,19 @@ object mod {
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      inline def setSrcEvent(value: js.Any): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
+      inline def setSrcEvent(value: Any): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
       
       inline def setStartMutliFingerStatus(value: js.Array[MultiFingerStatus]): Self = StObject.set(x, "startMutliFingerStatus", value.asInstanceOf[js.Any])
       
       inline def setStartMutliFingerStatusUndefined: Self = StObject.set(x, "startMutliFingerStatus", js.undefined)
       
-      inline def setStartMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "startMutliFingerStatus", js.Array(value :_*))
+      inline def setStartMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "startMutliFingerStatus", js.Array(value*))
       
       inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTouches(value: js.Array[Finger]): Self = StObject.set(x, "startTouches", value.asInstanceOf[js.Any])
       
-      inline def setStartTouchesVarargs(value: Finger*): Self = StObject.set(x, "startTouches", js.Array(value :_*))
+      inline def setStartTouchesVarargs(value: Finger*): Self = StObject.set(x, "startTouches", js.Array(value*))
       
       inline def setSwipe(value: Boolean): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
       
@@ -477,7 +476,7 @@ object mod {
       
       inline def setTouches(value: js.Array[Finger]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      inline def setTouchesVarargs(value: Finger*): Self = StObject.set(x, "touches", js.Array(value :_*))
+      inline def setTouchesVarargs(value: Finger*): Self = StObject.set(x, "touches", js.Array(value*))
     }
   }
   

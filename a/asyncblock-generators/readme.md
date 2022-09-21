@@ -10,10 +10,10 @@ asyncblock without the fibers
 | ------------------ | :-------------: |
 | Full name          | asyncblock-generators |
 | Keywords           | fiber, fibers, coroutine, stop, go, green, red |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 877 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/scriby/asyncblock-generators)

@@ -2,13 +2,12 @@ package typings.reactBootstrapTypeahead.mod
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.LegacyRef
-import typings.reactBootstrapTypeahead.anon.PickCSSPropertiesboxSizin
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent std.Pick<react.react.InputHTMLAttributes<'input'>, 'className' | 'style'> */
+/* Inlined parent std.Pick<react.react.InputHTMLAttributes<std.HTMLInputElement>, 'className' | 'style'> */
 trait AutosizeInputProps extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
@@ -17,7 +16,7 @@ trait AutosizeInputProps extends StObject {
   
   var inputRef: js.UndefOr[LegacyRef[HTMLInputElement]] = js.undefined
   
-  var inputStyle: js.UndefOr[PickCSSPropertiesboxSizin] = js.undefined
+  var inputStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var style: CSSProperties
 }
@@ -46,7 +45,7 @@ object AutosizeInputProps {
     
     inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
     
-    inline def setInputStyle(value: PickCSSPropertiesboxSizin): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+    inline def setInputStyle(value: CSSProperties): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
     
     inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
     

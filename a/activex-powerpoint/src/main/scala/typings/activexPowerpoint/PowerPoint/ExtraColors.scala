@@ -17,7 +17,7 @@ trait ExtraColors extends StObject {
   
   def Item(Index: Double): MsoRGBType
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ExtraColors_typekey")
   var PowerPointDotExtraColors_typekey: ExtraColors
@@ -30,7 +30,7 @@ object ExtraColors {
     Clear: () => Unit,
     Count: Double,
     Item: Double => MsoRGBType,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotExtraColors_typekey: ExtraColors
   ): ExtraColors = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], Clear = js.Any.fromFunction0(Clear), Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -50,7 +50,7 @@ object ExtraColors {
     
     inline def setItem(value: Double => MsoRGBType): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotExtraColors_typekey(value: ExtraColors): Self = StObject.set(x, "PowerPoint.ExtraColors_typekey", value.asInstanceOf[js.Any])
   }

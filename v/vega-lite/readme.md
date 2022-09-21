@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-lite
 
-Typings are for version 4.17.0
+Typings are for version 5.5.0
 
 ## Library description:
 Vega-Lite is a concise high-level language for interactive visualization.
@@ -9,11 +9,11 @@ Vega-Lite is a concise high-level language for interactive visualization.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vega-lite |
-| Keywords           | - |
-| # releases         | 64 |
-| # dependents       | 60 |
-| # downloads        | 3277223 |
-| # stars            | 0 |
+| Keywords           | vega, chart, visualization |
+| # releases         | 217 |
+| # dependents       | 0.0 |
+| # downloads        | 1117368.6666666667 |
+| # stars            | 3865.0 |
 
 ## Links
 - [Homepage](https://vega.github.io/vega-lite/)

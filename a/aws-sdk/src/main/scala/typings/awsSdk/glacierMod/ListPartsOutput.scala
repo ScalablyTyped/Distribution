@@ -74,7 +74,7 @@ object ListPartsOutput {
     
     inline def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
     
-    inline def setPartsVarargs(value: PartListElement*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: PartListElement*): Self = StObject.set(x, "Parts", js.Array(value*))
     
     inline def setVaultARN(value: String): Self = StObject.set(x, "VaultARN", value.asInstanceOf[js.Any])
     

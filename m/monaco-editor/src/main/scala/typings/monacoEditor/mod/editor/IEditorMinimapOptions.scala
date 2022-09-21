@@ -14,6 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IEditorMinimapOptions extends StObject {
   
   /**
+    * Control the rendering of minimap.
+    */
+  var autohide: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Enable the rendering of the minimap.
     * Defaults to true.
     */
@@ -62,6 +67,10 @@ object IEditorMinimapOptions {
   }
   
   extension [Self <: IEditorMinimapOptions](x: Self) {
+    
+    inline def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
+    
+    inline def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

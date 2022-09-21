@@ -10,8 +10,7 @@ trait TrackEvent
   extends StObject
      with Event {
   
-  /**
-    * Returns the track object (TextTrack, AudioTrack, or VideoTrack) to which the event relates.
-    */
+  /** Returns the track object (TextTrack, AudioTrack, or VideoTrack) to which the event relates. */
+  /* standard dom */
   val track: TextTrack | Null = js.native
 }

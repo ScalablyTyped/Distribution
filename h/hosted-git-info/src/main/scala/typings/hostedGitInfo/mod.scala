@@ -1,6 +1,5 @@
 package typings.hostedGitInfo
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("hosted-git-info", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with GitHost {
     def this(`type`: Hosts, user: String, auth: String, project: String) = this()
@@ -231,7 +230,7 @@ object mod {
     def path(): String = js.native
     def path(opts: FillOptions): String = js.native
     
-    var pathmatch: RegExp = js.native
+    var pathmatch: js.RegExp = js.native
     
     var pathtemplate: String = js.native
     
@@ -239,7 +238,7 @@ object mod {
     
     var protocols: js.Array[String] = js.native
     
-    var protocols_re: RegExp = js.native
+    var protocols_re: js.RegExp = js.native
     
     def shortcut(): String = js.native
     def shortcut(opts: FillOptions): String = js.native

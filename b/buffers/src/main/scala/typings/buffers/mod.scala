@@ -3,7 +3,7 @@ package typings.buffers
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("buffers", JSImport.Namespace)
   @js.native
-  class Class ()
+  open class Class ()
     extends StObject
        with Buffers {
     def this(bufs: js.Array[Buffer]) = this()
@@ -38,7 +38,7 @@ object mod extends Shortcut {
     def copy(dst: Buffer, dstStart: Unit, start: Double, end: Double): Double = js.native
     def copy(dst: Buffer, dstStart: Unit, start: Unit, end: Double): Double = js.native
     
-    def get(i: Double): js.Any = js.native
+    def get(i: Double): Any = js.native
     
     def indexOf(needle: String): Double = js.native
     def indexOf(needle: String, offset: Double): Double = js.native
@@ -49,7 +49,7 @@ object mod extends Shortcut {
     
     def push(items: Buffer*): Double = js.native
     
-    def set(i: Double, b: js.Any): Unit = js.native
+    def set(i: Double, b: Any): Unit = js.native
     
     def slice(): Buffer = js.native
     def slice(i: Double): Buffer = js.native
@@ -61,10 +61,10 @@ object mod extends Shortcut {
     
     def toBuffer(): Buffer = js.native
     
-    def toString(encoding: js.Any): String = js.native
-    def toString(encoding: js.Any, start: Double): String = js.native
-    def toString(encoding: js.Any, start: Double, end: Double): String = js.native
-    def toString(encoding: js.Any, start: Unit, end: Double): String = js.native
+    def toString(encoding: Any): String = js.native
+    def toString(encoding: Any, start: Double): String = js.native
+    def toString(encoding: Any, start: Double, end: Double): String = js.native
+    def toString(encoding: Any, start: Unit, end: Double): String = js.native
     def toString(encoding: Unit, start: Double): String = js.native
     def toString(encoding: Unit, start: Double, end: Double): String = js.native
     def toString(encoding: Unit, start: Unit, end: Double): String = js.native

@@ -10,6 +10,11 @@ trait DeleteChannelRequest extends StObject {
     * The ARN of the channel being deleted.
     */
   var ChannelArn: ChimeArn
+  
+  /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
 }
 object DeleteChannelRequest {
   
@@ -21,5 +26,9 @@ object DeleteChannelRequest {
   extension [Self <: DeleteChannelRequest](x: Self) {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
   }
 }

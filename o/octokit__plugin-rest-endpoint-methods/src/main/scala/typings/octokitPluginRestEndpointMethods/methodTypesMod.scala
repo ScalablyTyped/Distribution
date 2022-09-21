@@ -3,11 +3,14 @@ package typings.octokitPluginRestEndpointMethods
 import typings.octokitPluginRestEndpointMethods.anon.AcceptInvitation
 import typings.octokitPluginRestEndpointMethods.anon.AddAssignees
 import typings.octokitPluginRestEndpointMethods.anon.AddCollaborator
+import typings.octokitPluginRestEndpointMethods.anon.AddCustomLabelsToSelfHostedRunnerForEnterprise
+import typings.octokitPluginRestEndpointMethods.anon.AddCustomLabelsToSelfHostedRunnerForOrg
 import typings.octokitPluginRestEndpointMethods.anon.AddEmailForAuthenticated
 import typings.octokitPluginRestEndpointMethods.anon.AddOrUpdateMembershipForUserInOrg
 import typings.octokitPluginRestEndpointMethods.anon.AddRepoToInstallation
+import typings.octokitPluginRestEndpointMethods.anon.AddRepositoryForSecretForAuthenticatedUser
+import typings.octokitPluginRestEndpointMethods.anon.AddSecurityManagerTeam
 import typings.octokitPluginRestEndpointMethods.anon.AddSelectedRepoToOrgSecret
-import typings.octokitPluginRestEndpointMethods.anon.BlockUser
 import typings.octokitPluginRestEndpointMethods.anon.CancelImport
 import typings.octokitPluginRestEndpointMethods.anon.CheckIfMerged
 import typings.octokitPluginRestEndpointMethods.anon.CheckIsStarred
@@ -16,15 +19,18 @@ import typings.octokitPluginRestEndpointMethods.anon.Code
 import typings.octokitPluginRestEndpointMethods.anon.Create
 import typings.octokitPluginRestEndpointMethods.anon.CreateBlob
 import typings.octokitPluginRestEndpointMethods.anon.CreateForCommitComment
+import typings.octokitPluginRestEndpointMethods.anon.CreateRepositorySnapshot
+import typings.octokitPluginRestEndpointMethods.anon.DeleteAnalysis
+import typings.octokitPluginRestEndpointMethods.anon.DeletePackageForAuthenticatedUser
 import typings.octokitPluginRestEndpointMethods.anon.Get
-import typings.octokitPluginRestEndpointMethods.anon.Get209
-import typings.octokitPluginRestEndpointMethods.anon.Get319
+import typings.octokitPluginRestEndpointMethods.anon.Get494
 import typings.octokitPluginRestEndpointMethods.anon.GetAlert
 import typings.octokitPluginRestEndpointMethods.anon.GetAllCodesOfConduct
 import typings.octokitPluginRestEndpointMethods.anon.GetAllCommonlyUsed
 import typings.octokitPluginRestEndpointMethods.anon.GetAllTemplates
 import typings.octokitPluginRestEndpointMethods.anon.GetGithubActionsBillingOrg
-import typings.octokitPluginRestEndpointMethods.anon.GetRestrictionsForOrg
+import typings.octokitPluginRestEndpointMethods.anon.GetOctocat
+import typings.octokitPluginRestEndpointMethods.anon.GetRestrictionsForAuthenticatedUser
 import typings.octokitPluginRestEndpointMethods.anon.Render
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +40,7 @@ object methodTypesMod {
   
   trait RestEndpointMethods extends StObject {
     
-    var actions: AddSelectedRepoToOrgSecret
+    var actions: AddCustomLabelsToSelfHostedRunnerForOrg
     
     var activity: CheckRepoIsStarredByAuthenticatedUser
     
@@ -44,11 +50,19 @@ object methodTypesMod {
     
     var checks: Create
     
-    var codeScanning: GetAlert
+    var codeScanning: DeleteAnalysis
     
     var codesOfConduct: GetAllCodesOfConduct
     
+    var codespaces: AddRepositoryForSecretForAuthenticatedUser
+    
+    var dependabot: AddSelectedRepoToOrgSecret
+    
+    var dependencyGraph: CreateRepositorySnapshot
+    
     var emojis: Get
+    
+    var enterpriseAdmin: AddCustomLabelsToSelfHostedRunnerForEnterprise
     
     var gists: CheckIsStarred
     
@@ -56,7 +70,7 @@ object methodTypesMod {
     
     var gitignore: GetAllTemplates
     
-    var interactions: GetRestrictionsForOrg
+    var interactions: GetRestrictionsForAuthenticatedUser
     
     var issues: AddAssignees
     
@@ -64,23 +78,27 @@ object methodTypesMod {
     
     var markdown: Render
     
-    var meta: Get209
+    var meta: GetOctocat
     
     var migrations: CancelImport
     
-    var orgs: BlockUser
+    var orgs: AddSecurityManagerTeam
+    
+    var packages: DeletePackageForAuthenticatedUser
     
     var projects: AddCollaborator
     
     var pulls: CheckIfMerged
     
-    var rateLimit: Get319
+    var rateLimit: Get494
     
     var reactions: CreateForCommitComment
     
     var repos: AcceptInvitation
     
     var search: Code
+    
+    var secretScanning: GetAlert
     
     var teams: AddOrUpdateMembershipForUserInOrg
     
@@ -89,40 +107,46 @@ object methodTypesMod {
   object RestEndpointMethods {
     
     inline def apply(
-      actions: AddSelectedRepoToOrgSecret,
+      actions: AddCustomLabelsToSelfHostedRunnerForOrg,
       activity: CheckRepoIsStarredByAuthenticatedUser,
       apps: AddRepoToInstallation,
       billing: GetGithubActionsBillingOrg,
       checks: Create,
-      codeScanning: GetAlert,
+      codeScanning: DeleteAnalysis,
       codesOfConduct: GetAllCodesOfConduct,
+      codespaces: AddRepositoryForSecretForAuthenticatedUser,
+      dependabot: AddSelectedRepoToOrgSecret,
+      dependencyGraph: CreateRepositorySnapshot,
       emojis: Get,
+      enterpriseAdmin: AddCustomLabelsToSelfHostedRunnerForEnterprise,
       gists: CheckIsStarred,
       git: CreateBlob,
       gitignore: GetAllTemplates,
-      interactions: GetRestrictionsForOrg,
+      interactions: GetRestrictionsForAuthenticatedUser,
       issues: AddAssignees,
       licenses: GetAllCommonlyUsed,
       markdown: Render,
-      meta: Get209,
+      meta: GetOctocat,
       migrations: CancelImport,
-      orgs: BlockUser,
+      orgs: AddSecurityManagerTeam,
+      packages: DeletePackageForAuthenticatedUser,
       projects: AddCollaborator,
       pulls: CheckIfMerged,
-      rateLimit: Get319,
+      rateLimit: Get494,
       reactions: CreateForCommitComment,
       repos: AcceptInvitation,
       search: Code,
+      secretScanning: GetAlert,
       teams: AddOrUpdateMembershipForUserInOrg,
       users: AddEmailForAuthenticated
     ): RestEndpointMethods = {
-      val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], activity = activity.asInstanceOf[js.Any], apps = apps.asInstanceOf[js.Any], billing = billing.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], codeScanning = codeScanning.asInstanceOf[js.Any], codesOfConduct = codesOfConduct.asInstanceOf[js.Any], emojis = emojis.asInstanceOf[js.Any], gists = gists.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], gitignore = gitignore.asInstanceOf[js.Any], interactions = interactions.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any], licenses = licenses.asInstanceOf[js.Any], markdown = markdown.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], migrations = migrations.asInstanceOf[js.Any], orgs = orgs.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], pulls = pulls.asInstanceOf[js.Any], rateLimit = rateLimit.asInstanceOf[js.Any], reactions = reactions.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], activity = activity.asInstanceOf[js.Any], apps = apps.asInstanceOf[js.Any], billing = billing.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], codeScanning = codeScanning.asInstanceOf[js.Any], codesOfConduct = codesOfConduct.asInstanceOf[js.Any], codespaces = codespaces.asInstanceOf[js.Any], dependabot = dependabot.asInstanceOf[js.Any], dependencyGraph = dependencyGraph.asInstanceOf[js.Any], emojis = emojis.asInstanceOf[js.Any], enterpriseAdmin = enterpriseAdmin.asInstanceOf[js.Any], gists = gists.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], gitignore = gitignore.asInstanceOf[js.Any], interactions = interactions.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any], licenses = licenses.asInstanceOf[js.Any], markdown = markdown.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], migrations = migrations.asInstanceOf[js.Any], orgs = orgs.asInstanceOf[js.Any], packages = packages.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], pulls = pulls.asInstanceOf[js.Any], rateLimit = rateLimit.asInstanceOf[js.Any], reactions = reactions.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], secretScanning = secretScanning.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestEndpointMethods]
     }
     
     extension [Self <: RestEndpointMethods](x: Self) {
       
-      inline def setActions(value: AddSelectedRepoToOrgSecret): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: AddCustomLabelsToSelfHostedRunnerForOrg): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       inline def setActivity(value: CheckRepoIsStarredByAuthenticatedUser): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
@@ -132,11 +156,19 @@ object methodTypesMod {
       
       inline def setChecks(value: Create): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       
-      inline def setCodeScanning(value: GetAlert): Self = StObject.set(x, "codeScanning", value.asInstanceOf[js.Any])
+      inline def setCodeScanning(value: DeleteAnalysis): Self = StObject.set(x, "codeScanning", value.asInstanceOf[js.Any])
       
       inline def setCodesOfConduct(value: GetAllCodesOfConduct): Self = StObject.set(x, "codesOfConduct", value.asInstanceOf[js.Any])
       
+      inline def setCodespaces(value: AddRepositoryForSecretForAuthenticatedUser): Self = StObject.set(x, "codespaces", value.asInstanceOf[js.Any])
+      
+      inline def setDependabot(value: AddSelectedRepoToOrgSecret): Self = StObject.set(x, "dependabot", value.asInstanceOf[js.Any])
+      
+      inline def setDependencyGraph(value: CreateRepositorySnapshot): Self = StObject.set(x, "dependencyGraph", value.asInstanceOf[js.Any])
+      
       inline def setEmojis(value: Get): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
+      
+      inline def setEnterpriseAdmin(value: AddCustomLabelsToSelfHostedRunnerForEnterprise): Self = StObject.set(x, "enterpriseAdmin", value.asInstanceOf[js.Any])
       
       inline def setGists(value: CheckIsStarred): Self = StObject.set(x, "gists", value.asInstanceOf[js.Any])
       
@@ -144,7 +176,7 @@ object methodTypesMod {
       
       inline def setGitignore(value: GetAllTemplates): Self = StObject.set(x, "gitignore", value.asInstanceOf[js.Any])
       
-      inline def setInteractions(value: GetRestrictionsForOrg): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
+      inline def setInteractions(value: GetRestrictionsForAuthenticatedUser): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
       
       inline def setIssues(value: AddAssignees): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
       
@@ -152,23 +184,27 @@ object methodTypesMod {
       
       inline def setMarkdown(value: Render): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: Get209): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: GetOctocat): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMigrations(value: CancelImport): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
       
-      inline def setOrgs(value: BlockUser): Self = StObject.set(x, "orgs", value.asInstanceOf[js.Any])
+      inline def setOrgs(value: AddSecurityManagerTeam): Self = StObject.set(x, "orgs", value.asInstanceOf[js.Any])
+      
+      inline def setPackages(value: DeletePackageForAuthenticatedUser): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       
       inline def setProjects(value: AddCollaborator): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
       inline def setPulls(value: CheckIfMerged): Self = StObject.set(x, "pulls", value.asInstanceOf[js.Any])
       
-      inline def setRateLimit(value: Get319): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Get494): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
       inline def setReactions(value: CreateForCommitComment): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
       
       inline def setRepos(value: AcceptInvitation): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
       
       inline def setSearch(value: Code): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setSecretScanning(value: GetAlert): Self = StObject.set(x, "secretScanning", value.asInstanceOf[js.Any])
       
       inline def setTeams(value: AddOrUpdateMembershipForUserInOrg): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       

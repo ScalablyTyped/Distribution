@@ -13,27 +13,27 @@ object bloomEffectMod {
   
   @JSImport("babylonjs/PostProcesses/bloomEffect", "BloomEffect")
   @js.native
-  class BloomEffect protected () extends PostProcessRenderEffect {
+  open class BloomEffect protected () extends PostProcessRenderEffect {
     /**
       * Creates a new instance of @see BloomEffect
       * @param scene The scene the effect belongs to.
-      * @param bloomScale The ratio of the blur texture to the input texture that should be used to compute the bloom.
-      * @param bloomKernel The size of the kernel to be used when applying the blur.
+      * @param _bloomScale The ratio of the blur texture to the input texture that should be used to compute the bloom.
       * @param bloomWeight The the strength of bloom.
+      * @param bloomKernel The size of the kernel to be used when applying the blur.
       * @param pipelineTextureType The type of texture to be used when performing the post processing.
       * @param blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: false)
       */
-    def this(scene: Scene, bloomScale: Double, bloomWeight: Double, bloomKernel: Double) = this()
+    def this(scene: Scene, _bloomScale: Double, bloomWeight: Double, bloomKernel: Double) = this()
     def this(
       scene: Scene,
-      bloomScale: Double,
+      _bloomScale: Double,
       bloomWeight: Double,
       bloomKernel: Double,
       pipelineTextureType: Double
     ) = this()
     def this(
       scene: Scene,
-      bloomScale: Double,
+      _bloomScale: Double,
       bloomWeight: Double,
       bloomKernel: Double,
       pipelineTextureType: Double,
@@ -41,16 +41,18 @@ object bloomEffectMod {
     ) = this()
     def this(
       scene: Scene,
-      bloomScale: Double,
+      _bloomScale: Double,
       bloomWeight: Double,
       bloomKernel: Double,
       pipelineTextureType: Unit,
       blockCompilation: Boolean
     ) = this()
     
-    /* private */ var _blurX: js.Any = js.native
+    /* private */ var _bloomScale: Any = js.native
     
-    /* private */ var _blurY: js.Any = js.native
+    /* private */ var _blurX: Any = js.native
+    
+    /* private */ var _blurY: Any = js.native
     
     /**
       * @hidden Internal
@@ -69,14 +71,12 @@ object bloomEffectMod {
       */
     def _isReady(): Boolean = js.native
     
-    /* private */ var _merge: js.Any = js.native
+    /* private */ var _merge: Any = js.native
     
     /**
       * @hidden Internal
       */
     def _updateEffects(): Unit = js.native
-    
-    /* private */ var bloomScale: js.Any = js.native
     
     /**
       * Disposes each of the internal effects for a given camera.

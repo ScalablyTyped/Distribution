@@ -1,19 +1,19 @@
 
 # Scala.js typings for obliterator
 
-Typings are for version 1.6.1
+Typings are for version 2.0.4
 
 ## Library description:
-Higher order iterator library for JavaScript.
+Higher order iterator library for JavaScript/TypeScript.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | obliterator |
 | Keywords           | iterator |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 1439503 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2494308.3333333335 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/yomguithereal/obliterator#readme)

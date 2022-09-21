@@ -27,7 +27,7 @@ object ListDetectorsResponse {
     
     inline def setDetectorIds(value: DetectorIds): Self = StObject.set(x, "DetectorIds", value.asInstanceOf[js.Any])
     
-    inline def setDetectorIdsVarargs(value: DetectorId*): Self = StObject.set(x, "DetectorIds", js.Array(value :_*))
+    inline def setDetectorIdsVarargs(value: DetectorId*): Self = StObject.set(x, "DetectorIds", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

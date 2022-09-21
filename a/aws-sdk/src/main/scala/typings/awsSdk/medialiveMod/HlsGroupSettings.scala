@@ -178,9 +178,16 @@ trait HlsGroupSettings extends StObject {
   var OutputSelection: js.UndefOr[HlsOutputSelection] = js.undefined
   
   /**
-    * Includes or excludes EXT-X-PROGRAM-DATE-TIME tag in .m3u8 manifest files. The value is calculated as follows: either the program date and time are initialized using the input timecode source, or the time is initialized using the input timecode source and the date is initialized using the timestampOffset.
+    * Includes or excludes EXT-X-PROGRAM-DATE-TIME tag in .m3u8 manifest files. The value is calculated using the program date time clock.
     */
   var ProgramDateTime: js.UndefOr[HlsProgramDateTime] = js.undefined
+  
+  /**
+    * Specifies the algorithm used to drive the HLS EXT-X-PROGRAM-DATE-TIME clock. Options include:
+  INITIALIZE_FROM_OUTPUT_TIMECODE: The PDT clock is initialized as a function of the first output timecode, then incremented by the EXTINF duration of each encoded segment.
+  SYSTEM_CLOCK: The PDT clock is initialized as a function of the UTC wall clock, then incremented by the EXTINF duration of each encoded segment. If the PDT clock diverges from the wall clock by more than 500ms, it is resynchronized to the wall clock.
+    */
+  var ProgramDateTimeClock: js.UndefOr[HlsProgramDateTimeClock] = js.undefined
   
   /**
     * Period of insertion of EXT-X-PROGRAM-DATE-TIME entry, in seconds.
@@ -248,7 +255,7 @@ object HlsGroupSettings {
     
     inline def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
     
-    inline def setAdMarkersVarargs(value: HlsAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value :_*))
+    inline def setAdMarkersVarargs(value: HlsAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value*))
     
     inline def setBaseUrlContent(value: string): Self = StObject.set(x, "BaseUrlContent", value.asInstanceOf[js.Any])
     
@@ -270,7 +277,7 @@ object HlsGroupSettings {
     
     inline def setCaptionLanguageMappingsUndefined: Self = StObject.set(x, "CaptionLanguageMappings", js.undefined)
     
-    inline def setCaptionLanguageMappingsVarargs(value: CaptionLanguageMapping*): Self = StObject.set(x, "CaptionLanguageMappings", js.Array(value :_*))
+    inline def setCaptionLanguageMappingsVarargs(value: CaptionLanguageMapping*): Self = StObject.set(x, "CaptionLanguageMappings", js.Array(value*))
     
     inline def setCaptionLanguageSetting(value: HlsCaptionLanguageSetting): Self = StObject.set(x, "CaptionLanguageSetting", value.asInstanceOf[js.Any])
     
@@ -371,6 +378,10 @@ object HlsGroupSettings {
     inline def setOutputSelectionUndefined: Self = StObject.set(x, "OutputSelection", js.undefined)
     
     inline def setProgramDateTime(value: HlsProgramDateTime): Self = StObject.set(x, "ProgramDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setProgramDateTimeClock(value: HlsProgramDateTimeClock): Self = StObject.set(x, "ProgramDateTimeClock", value.asInstanceOf[js.Any])
+    
+    inline def setProgramDateTimeClockUndefined: Self = StObject.set(x, "ProgramDateTimeClock", js.undefined)
     
     inline def setProgramDateTimePeriod(value: integerMin0Max3600): Self = StObject.set(x, "ProgramDateTimePeriod", value.asInstanceOf[js.Any])
     

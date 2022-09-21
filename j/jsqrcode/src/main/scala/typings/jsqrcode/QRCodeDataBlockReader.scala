@@ -67,11 +67,11 @@ object QRCodeDataBlockReader {
     
     inline def setBlocks(value: js.Array[Double]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    inline def setBlocksVarargs(value: Double*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: Double*): Self = StObject.set(x, "blocks", js.Array(value*))
     
     inline def setDataByte(value: js.Array[String | js.Array[Double]]): Self = StObject.set(x, "DataByte", value.asInstanceOf[js.Any])
     
-    inline def setDataByteVarargs(value: (String | js.Array[Double])*): Self = StObject.set(x, "DataByte", js.Array(value :_*))
+    inline def setDataByteVarargs(value: (String | js.Array[Double])*): Self = StObject.set(x, "DataByte", js.Array(value*))
     
     inline def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
     

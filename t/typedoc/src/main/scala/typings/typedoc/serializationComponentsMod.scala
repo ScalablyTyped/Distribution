@@ -1,8 +1,6 @@
 package typings.typedoc
 
 import typings.std.Partial
-import typings.typedoc.modelsMod.Reflection
-import typings.typedoc.modelsMod.Type
 import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.serializerMod.Serializer
 import org.scalablytyped.runtime.StObject
@@ -11,44 +9,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object serializationComponentsMod {
   
-  @JSImport("typedoc/dist/lib/serialization/components", "ReflectionSerializerComponent")
-  @js.native
-  abstract class ReflectionSerializerComponent[T /* <: Reflection */] protected () extends SerializerComponent[T] {
-    def this(owner: Serializer) = this()
+  trait SerializerComponent[T] extends StObject {
+    
+    /**
+      * The priority this serializer should be executed with.
+      * A higher priority means the {@link Serializer} will be applied earlier.
+      */
+    val priority: Double
+    
+    /**
+      * Technically this should return `item is T`, but that doesn't play nicely
+      * with inference, so allow the looser `boolean` return type.
+      * @param item
+      */
+    def supports(item: Any): Boolean
+    
+    def toObject(item: T, obj: Partial[ModelToObject[T]], serializer: Serializer): Partial[ModelToObject[T]]
   }
-  
-  @JSImport("typedoc/dist/lib/serialization/components", "SerializerComponent")
-  @js.native
-  abstract class SerializerComponent[T] protected () extends StObject {
-    def this(owner: Serializer) = this()
-    
-    /* protected */ var owner: Serializer = js.native
-    
-    def priority: Double = js.native
-    
-    def serializeGroup(instance: js.Any): Boolean = js.native
-    
-    def supports(item: js.Any): Boolean = js.native
-    
-    def toObject(item: T): Partial[ModelToObject[T]] = js.native
-    def toObject(item: T, obj: js.Object): Partial[ModelToObject[T]] = js.native
-  }
-  /* static members */
   object SerializerComponent {
     
-    @JSImport("typedoc/dist/lib/serialization/components", "SerializerComponent")
-    @js.native
-    val ^ : js.Any = js.native
+    inline def apply[T](
+      priority: Double,
+      supports: Any => Boolean,
+      toObject: (T, Partial[ModelToObject[T]], Serializer) => Partial[ModelToObject[T]]
+    ): SerializerComponent[T] = {
+      val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], supports = js.Any.fromFunction1(supports), toObject = js.Any.fromFunction3(toObject))
+      __obj.asInstanceOf[SerializerComponent[T]]
+    }
     
-    @JSImport("typedoc/dist/lib/serialization/components", "SerializerComponent.PRIORITY")
-    @js.native
-    def PRIORITY: Double = js.native
-    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("typedoc/dist/lib/serialization/components", "TypeSerializerComponent")
-  @js.native
-  abstract class TypeSerializerComponent[T /* <: Type */] protected () extends SerializerComponent[T] {
-    def this(owner: Serializer) = this()
+    extension [Self <: SerializerComponent[?], T](x: Self & SerializerComponent[T]) {
+      
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      
+      inline def setSupports(value: Any => Boolean): Self = StObject.set(x, "supports", js.Any.fromFunction1(value))
+      
+      inline def setToObject(value: (T, Partial[ModelToObject[T]], Serializer) => Partial[ModelToObject[T]]): Self = StObject.set(x, "toObject", js.Any.fromFunction3(value))
+    }
   }
 }

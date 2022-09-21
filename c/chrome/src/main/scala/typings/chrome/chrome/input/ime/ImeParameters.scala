@@ -25,6 +25,6 @@ object ImeParameters {
     
     inline def setItems(value: js.Array[MenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: MenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: MenuItem*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

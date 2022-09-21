@@ -11,25 +11,25 @@ object gridrouterMod {
   
   @JSImport("webcola/dist/src/gridrouter", "GridRouter")
   @js.native
-  class GridRouter[Node] protected () extends StObject {
+  open class GridRouter[Node] protected () extends StObject {
     def this(originalnodes: js.Array[Node], accessor: NodeAccessor[Node]) = this()
     def this(originalnodes: js.Array[Node], accessor: NodeAccessor[Node], groupPadding: Double) = this()
     
-    /* private */ var avg: js.Any = js.native
+    /* private */ var avg: Any = js.native
     
-    var backToFront: js.Any = js.native
+    var backToFront: Any = js.native
     
     var cols: js.Array[GridLine] = js.native
     
-    var edges: js.Any = js.native
+    var edges: Any = js.native
     
-    /* private */ var findAncestorPathBetween: js.Any = js.native
+    /* private */ var findAncestorPathBetween: Any = js.native
     
-    /* private */ var findLineage: js.Any = js.native
+    /* private */ var findLineage: Any = js.native
     
-    /* private */ var getDepth: js.Any = js.native
+    /* private */ var getDepth: Any = js.native
     
-    /* private */ var getGridLines: js.Any = js.native
+    /* private */ var getGridLines: Any = js.native
     
     var groupPadding: Double = js.native
     
@@ -37,17 +37,17 @@ object gridrouterMod {
     
     var leaves: js.Array[NodeWrapper] = js.native
     
-    /* private */ var midPoints: js.Any = js.native
+    /* private */ var midPoints: Any = js.native
     
     var nodes: js.Array[NodeWrapper] = js.native
     
-    var obstacles: js.Any = js.native
+    var obstacles: Any = js.native
     
     var originalnodes: js.Array[Node] = js.native
     
-    var passableEdges: js.Any = js.native
+    var passableEdges: Any = js.native
     
-    var root: js.Any = js.native
+    var root: Any = js.native
     
     def route(s: Double, t: Double): js.Array[Point] = js.native
     
@@ -60,7 +60,7 @@ object gridrouterMod {
     
     var rows: js.Array[GridLine] = js.native
     
-    def siblingObstacles(a: js.Any, b: js.Any): js.Any = js.native
+    def siblingObstacles(a: Any, b: Any): Any = js.native
     
     var verts: js.Array[Vert] = js.native
   }
@@ -75,38 +75,38 @@ object gridrouterMod {
     
     @JSImport("webcola/dist/src/gridrouter", "GridRouter.getOrder")
     @js.native
-    def getOrder: js.Any = js.native
-    inline def getOrder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrder")(x.asInstanceOf[js.Any])
+    def getOrder: Any = js.native
+    inline def getOrder_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrder")(x.asInstanceOf[js.Any])
     
     inline def getRoutePath(route: js.Array[js.Array[Point]], cornerradius: Double, arrowwidth: Double, arrowheight: Double): Arrowpath = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoutePath")(route.asInstanceOf[js.Any], cornerradius.asInstanceOf[js.Any], arrowwidth.asInstanceOf[js.Any], arrowheight.asInstanceOf[js.Any])).asInstanceOf[Arrowpath]
     
-    inline def getSegmentSets(routes: js.Any, x: js.Any, y: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSegmentSets")(routes.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def getSegmentSets(routes: Any, x: Any, y: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSegmentSets")(routes.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     @JSImport("webcola/dist/src/gridrouter", "GridRouter.isLeft")
     @js.native
-    def isLeft: js.Any = js.native
-    inline def isLeft_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isLeft")(x.asInstanceOf[js.Any])
+    def isLeft: Any = js.native
+    inline def isLeft_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isLeft")(x.asInstanceOf[js.Any])
     
     inline def makeSegments(path: js.Array[Point]): js.Array[js.Array[Point]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSegments")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Point]]]
     
     inline def nudgeSegments(
-      routes: js.Any,
+      routes: Any,
       x: String,
       y: String,
       leftOf: js.Function2[/* e1 */ Double, /* e2 */ Double, Boolean],
       gap: Double
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nudgeSegments")(routes.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], leftOf.asInstanceOf[js.Any], gap.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def nudgeSegs(x: String, y: String, routes: js.Any, segments: js.Any, leftOf: js.Any, gap: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nudgeSegs")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], leftOf.asInstanceOf[js.Any], gap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def nudgeSegs(x: String, y: String, routes: Any, segments: Any, leftOf: Any, gap: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nudgeSegs")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], leftOf.asInstanceOf[js.Any], gap.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def orderEdges(edges: js.Any): js.Function2[/* l */ Double, /* r */ Double, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("orderEdges")(edges.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* l */ Double, /* r */ Double, Boolean]]
+    inline def orderEdges(edges: Any): js.Function2[/* l */ Double, /* r */ Double, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("orderEdges")(edges.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* l */ Double, /* r */ Double, Boolean]]
     
-    inline def unreverseEdges(routes: js.Any, routePaths: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unreverseEdges")(routes.asInstanceOf[js.Any], routePaths.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def unreverseEdges(routes: Any, routePaths: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unreverseEdges")(routes.asInstanceOf[js.Any], routePaths.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("webcola/dist/src/gridrouter", "LongestCommonSubsequence")
   @js.native
-  class LongestCommonSubsequence[T] protected () extends StObject {
+  open class LongestCommonSubsequence[T] protected () extends StObject {
     def this(s: js.Array[T], t: js.Array[T]) = this()
     
     def getSequence(): js.Array[T] = js.native
@@ -132,13 +132,13 @@ object gridrouterMod {
     
     @JSImport("webcola/dist/src/gridrouter", "LongestCommonSubsequence.findMatch")
     @js.native
-    def findMatch: js.Any = js.native
-    inline def findMatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findMatch")(x.asInstanceOf[js.Any])
+    def findMatch: Any = js.native
+    inline def findMatch_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findMatch")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webcola/dist/src/gridrouter", "NodeWrapper")
   @js.native
-  class NodeWrapper protected () extends StObject {
+  open class NodeWrapper protected () extends StObject {
     def this(id: Double, rect: Rectangle, children: js.Array[Double]) = this()
     
     var children: js.Array[Double] = js.native
@@ -156,15 +156,15 @@ object gridrouterMod {
   
   @JSImport("webcola/dist/src/gridrouter", "Vert")
   @js.native
-  class Vert protected () extends StObject {
+  open class Vert protected () extends StObject {
     def this(id: Double, x: Double, y: Double) = this()
     def this(id: Double, x: Double, y: Double, node: NodeWrapper) = this()
-    def this(id: Double, x: Double, y: Double, node: Unit, line: js.Any) = this()
-    def this(id: Double, x: Double, y: Double, node: NodeWrapper, line: js.Any) = this()
+    def this(id: Double, x: Double, y: Double, node: Unit, line: Any) = this()
+    def this(id: Double, x: Double, y: Double, node: NodeWrapper, line: Any) = this()
     
     var id: Double = js.native
     
-    var line: js.Any = js.native
+    var line: Any = js.native
     
     var node: NodeWrapper = js.native
     
@@ -190,7 +190,7 @@ object gridrouterMod {
       
       inline def setNodes(value: js.Array[NodeWrapper]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: NodeWrapper*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: NodeWrapper*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     }

@@ -34,7 +34,7 @@ object GroupFindingsResponse {
     
     inline def setGroupByResultsUndefined: Self = StObject.set(x, "groupByResults", js.undefined)
     
-    inline def setGroupByResultsVarargs(value: GroupResult*): Self = StObject.set(x, "groupByResults", js.Array(value :_*))
+    inline def setGroupByResultsVarargs(value: GroupResult*): Self = StObject.set(x, "groupByResults", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

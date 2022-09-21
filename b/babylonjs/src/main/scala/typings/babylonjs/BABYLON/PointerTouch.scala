@@ -14,7 +14,7 @@ trait PointerTouch extends StObject {
   /**
     * Event type passed from DOM.
     */
-  var `type`: js.Any
+  var `type`: Any
   
   /**
     * X coordinate of touch.
@@ -28,7 +28,7 @@ trait PointerTouch extends StObject {
 }
 object PointerTouch {
   
-  inline def apply(pointerId: Double, `type`: js.Any, x: Double, y: Double): PointerTouch = {
+  inline def apply(pointerId: Double, `type`: Any, x: Double, y: Double): PointerTouch = {
     val __obj = js.Dynamic.literal(pointerId = pointerId.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerTouch]
@@ -38,7 +38,7 @@ object PointerTouch {
     
     inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

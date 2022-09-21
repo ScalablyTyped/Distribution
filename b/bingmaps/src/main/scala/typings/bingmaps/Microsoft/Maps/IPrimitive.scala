@@ -19,7 +19,7 @@ trait IPrimitive extends StObject {
   def getVisible(): Boolean
   
   /** Optional property to store any additional metadata for this primitive. */
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets the options for customizing the IPrimitive.
@@ -40,7 +40,7 @@ object IPrimitive {
     
     inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     

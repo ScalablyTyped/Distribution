@@ -22,12 +22,12 @@ trait GlobalReplicationGroup extends StObject {
   var AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The cache node type of the Global Datastore
+    * The cache node type of the Global datastore
     */
   var CacheNodeType: js.UndefOr[String] = js.undefined
   
   /**
-    * A flag that indicates whether the Global Datastore is cluster enabled.
+    * A flag that indicates whether the Global datastore is cluster enabled.
     */
   var ClusterEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -47,27 +47,27 @@ trait GlobalReplicationGroup extends StObject {
   var GlobalNodeGroups: js.UndefOr[GlobalNodeGroupList] = js.undefined
   
   /**
-    * The optional description of the Global Datastore
+    * The optional description of the Global datastore
     */
   var GlobalReplicationGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the Global Datastore
+    * The name of the Global datastore
     */
   var GlobalReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
-    * The replication groups that comprise the Global Datastore.
+    * The replication groups that comprise the Global datastore.
     */
   var Members: js.UndefOr[GlobalReplicationGroupMemberList] = js.undefined
   
   /**
-    * The status of the Global Datastore
+    * The status of the Global datastore
     */
   var Status: js.UndefOr[String] = js.undefined
   
   /**
-    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster. 
+    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster.   Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later.
     */
   var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
 }
@@ -112,7 +112,7 @@ object GlobalReplicationGroup {
     
     inline def setGlobalNodeGroupsUndefined: Self = StObject.set(x, "GlobalNodeGroups", js.undefined)
     
-    inline def setGlobalNodeGroupsVarargs(value: GlobalNodeGroup*): Self = StObject.set(x, "GlobalNodeGroups", js.Array(value :_*))
+    inline def setGlobalNodeGroupsVarargs(value: GlobalNodeGroup*): Self = StObject.set(x, "GlobalNodeGroups", js.Array(value*))
     
     inline def setGlobalReplicationGroupDescription(value: String): Self = StObject.set(x, "GlobalReplicationGroupDescription", value.asInstanceOf[js.Any])
     
@@ -126,7 +126,7 @@ object GlobalReplicationGroup {
     
     inline def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
     
-    inline def setMembersVarargs(value: GlobalReplicationGroupMember*): Self = StObject.set(x, "Members", js.Array(value :_*))
+    inline def setMembersVarargs(value: GlobalReplicationGroupMember*): Self = StObject.set(x, "Members", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

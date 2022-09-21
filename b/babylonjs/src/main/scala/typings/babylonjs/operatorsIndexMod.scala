@@ -8,19 +8,19 @@ object operatorsIndexMod {
   
   @JSImport("babylonjs/Engines/Processors/Expressions/Operators/index", "ShaderDefineAndOperator")
   @js.native
-  class ShaderDefineAndOperator ()
+  open class ShaderDefineAndOperator ()
     extends typings.babylonjs.shaderDefineAndOperatorMod.ShaderDefineAndOperator
   
   @JSImport("babylonjs/Engines/Processors/Expressions/Operators/index", "ShaderDefineArithmeticOperator")
   @js.native
-  class ShaderDefineArithmeticOperator protected ()
+  open class ShaderDefineArithmeticOperator protected ()
     extends typings.babylonjs.shaderDefineArithmeticOperatorMod.ShaderDefineArithmeticOperator {
     def this(define: String, operand: String, testValue: String) = this()
   }
   
   @JSImport("babylonjs/Engines/Processors/Expressions/Operators/index", "ShaderDefineIsDefinedOperator")
   @js.native
-  class ShaderDefineIsDefinedOperator protected ()
+  open class ShaderDefineIsDefinedOperator protected ()
     extends typings.babylonjs.shaderDefineIsDefinedOperatorMod.ShaderDefineIsDefinedOperator {
     def this(define: String) = this()
     def this(define: String, not: Boolean) = this()
@@ -28,6 +28,6 @@ object operatorsIndexMod {
   
   @JSImport("babylonjs/Engines/Processors/Expressions/Operators/index", "ShaderDefineOrOperator")
   @js.native
-  class ShaderDefineOrOperator ()
+  open class ShaderDefineOrOperator ()
     extends typings.babylonjs.shaderDefineOrOperatorMod.ShaderDefineOrOperator
 }

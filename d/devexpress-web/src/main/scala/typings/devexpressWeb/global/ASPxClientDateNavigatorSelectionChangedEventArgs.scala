@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDateNavigatorSelectionChangedEventArgs")
 @js.native
-class ASPxClientDateNavigatorSelectionChangedEventArgs ()
+open class ASPxClientDateNavigatorSelectionChangedEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDateNavigatorSelectionChangedEventArgs {
   
@@ -18,5 +17,5 @@ class ASPxClientDateNavigatorSelectionChangedEventArgs ()
     * Returns the selected dates related to the event.
     */
   /* CompleteClass */
-  var selectedDates: js.Array[Date] = js.native
+  var selectedDates: js.Array[js.Date] = js.native
 }

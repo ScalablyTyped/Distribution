@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SensitiveDataItem extends StObject {
   
   /**
-    * The category of sensitive data that was detected. For example: CREDENTIALS, for credentials data such as private keys or AWS secret keys; FINANCIAL_INFORMATION, for financial data such as credit card numbers; or, PERSONAL_INFORMATION, for personal health information, such as health insurance identification numbers, or personally identifiable information, such as driver's license identification numbers.
+    * The category of sensitive data that was detected. For example: CREDENTIALS, for credentials data such as private keys or Amazon Web Services secret access keys; FINANCIAL_INFORMATION, for financial data such as credit card numbers; or, PERSONAL_INFORMATION, for personal health information, such as health insurance identification numbers, or personally identifiable information, such as passport numbers.
     */
   var category: js.UndefOr[SensitiveDataItemCategory] = js.undefined
   
@@ -38,7 +38,7 @@ object SensitiveDataItem {
     
     inline def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
     
-    inline def setDetectionsVarargs(value: DefaultDetection*): Self = StObject.set(x, "detections", js.Array(value :_*))
+    inline def setDetectionsVarargs(value: DefaultDetection*): Self = StObject.set(x, "detections", js.Array(value*))
     
     inline def setTotalCount(value: long): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     

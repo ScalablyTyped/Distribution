@@ -8,5 +8,5 @@ object invalidPullRequestStatusExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidPullRequestStatusException", "InvalidPullRequestStatusException")
   @js.native
-  val InvalidPullRequestStatusException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidPullRequestStatusException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

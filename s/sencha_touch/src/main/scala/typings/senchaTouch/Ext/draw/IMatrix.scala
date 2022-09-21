@@ -162,8 +162,8 @@ trait IMatrix
   var rotate: js.UndefOr[
     js.Function4[
       /* angle */ js.UndefOr[Double], 
-      /* rcx */ js.UndefOr[js.Any], 
-      /* rcy */ js.UndefOr[js.Any], 
+      /* rcx */ js.UndefOr[Any], 
+      /* rcy */ js.UndefOr[Any], 
       /* prepend */ js.UndefOr[Boolean], 
       this.type
     ]
@@ -239,7 +239,7 @@ trait IMatrix
   /** [Method] Split matrix into Translate Scale Shear and Rotate
     * @returns Object
     */
-  var split: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var split: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Create an array of elements by horizontal order xx yx dx yx yy dy
     * @returns Array
@@ -250,7 +250,7 @@ trait IMatrix
     * @param ctx Object
     * @returns Ext.draw.Matrix this
     */
-  var toContext: js.UndefOr[js.Function1[/* ctx */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var toContext: js.UndefOr[js.Function1[/* ctx */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Get an array of elements
     * @returns Array
@@ -266,7 +266,7 @@ trait IMatrix
   /** [Method] Create an array of elements by vertical order xx xy yx yy dx dy
     * @returns Array|String
     */
-  var toVerticalArray: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var toVerticalArray: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method]
     * @param bbox Object Given as {x: Number, y: Number, width: Number, height: Number}.
@@ -276,10 +276,10 @@ trait IMatrix
     */
   var transformBBox: js.UndefOr[
     js.Function3[
-      /* bbox */ js.UndefOr[js.Any], 
+      /* bbox */ js.UndefOr[Any], 
       /* radius */ js.UndefOr[Double], 
-      /* target */ js.UndefOr[js.Any], 
-      js.Any
+      /* target */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -422,7 +422,7 @@ object IMatrix {
     inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     inline def setRotate(
-      value: (/* angle */ js.UndefOr[Double], /* rcx */ js.UndefOr[js.Any], /* rcy */ js.UndefOr[js.Any], /* prepend */ js.UndefOr[Boolean]) => IMatrix
+      value: (/* angle */ js.UndefOr[Double], /* rcx */ js.UndefOr[Any], /* rcy */ js.UndefOr[Any], /* prepend */ js.UndefOr[Boolean]) => IMatrix
     ): Self = StObject.set(x, "rotate", js.Any.fromFunction4(value))
     
     inline def setRotateFromVector(
@@ -453,7 +453,7 @@ object IMatrix {
     
     inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
     
-    inline def setSplit(value: () => js.Any): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
+    inline def setSplit(value: () => Any): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
     
     inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     
@@ -461,7 +461,7 @@ object IMatrix {
     
     inline def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
     
-    inline def setToContext(value: /* ctx */ js.UndefOr[js.Any] => IMatrix): Self = StObject.set(x, "toContext", js.Any.fromFunction1(value))
+    inline def setToContext(value: /* ctx */ js.UndefOr[Any] => IMatrix): Self = StObject.set(x, "toContext", js.Any.fromFunction1(value))
     
     inline def setToContextUndefined: Self = StObject.set(x, "toContext", js.undefined)
     
@@ -473,12 +473,12 @@ object IMatrix {
     
     inline def setToSvgUndefined: Self = StObject.set(x, "toSvg", js.undefined)
     
-    inline def setToVerticalArray(value: () => js.Any): Self = StObject.set(x, "toVerticalArray", js.Any.fromFunction0(value))
+    inline def setToVerticalArray(value: () => Any): Self = StObject.set(x, "toVerticalArray", js.Any.fromFunction0(value))
     
     inline def setToVerticalArrayUndefined: Self = StObject.set(x, "toVerticalArray", js.undefined)
     
     inline def setTransformBBox(
-      value: (/* bbox */ js.UndefOr[js.Any], /* radius */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => js.Any
+      value: (/* bbox */ js.UndefOr[Any], /* radius */ js.UndefOr[Double], /* target */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "transformBBox", js.Any.fromFunction3(value))
     
     inline def setTransformBBoxUndefined: Self = StObject.set(x, "transformBBox", js.undefined)

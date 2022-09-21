@@ -6,7 +6,6 @@ import typings.openlayers.mod.olx.format.EsriJSONOptions
 import typings.openlayers.mod.olx.format.ReadOptions
 import typings.openlayers.mod.olx.format.WriteOptions
 import typings.openlayers.mod.proj.Projection
-import typings.std.ArrayBuffer
 import typings.std.Document
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
@@ -29,13 +28,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class EsriJSON () extends JSONFeature {
+open class EsriJSON () extends JSONFeature {
   def this(opt_options: EsriJSONOptions) = this()
   
   def readFeature(source: String): typings.openlayers.mod.Feature = js.native
   def readFeature(source: String, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
-  def readFeature(source: GlobalObject): typings.openlayers.mod.Feature = js.native
-  def readFeature(source: GlobalObject, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
   /**
     * Read a feature from a EsriJSON Feature source.  Only works for Feature,
     * use `readFeatures` to read FeatureCollection source.
@@ -45,8 +42,10 @@ class EsriJSON () extends JSONFeature {
     * @return Feature.
     * @api
     */
-  def readFeature(source: ArrayBuffer): typings.openlayers.mod.Feature = js.native
-  def readFeature(source: ArrayBuffer, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
+  def readFeature(source: js.typedarray.ArrayBuffer): typings.openlayers.mod.Feature = js.native
+  def readFeature(source: js.typedarray.ArrayBuffer, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
+  def readFeature(source: GlobalObject): typings.openlayers.mod.Feature = js.native
+  def readFeature(source: GlobalObject, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
   def readFeature(source: Document): typings.openlayers.mod.Feature = js.native
   def readFeature(source: Document, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
   def readFeature(source: Node): typings.openlayers.mod.Feature = js.native
@@ -54,8 +53,6 @@ class EsriJSON () extends JSONFeature {
   
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject): js.Array[typings.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   /**
     * Read all features from a EsriJSON source.  Works with both Feature and
     * FeatureCollection sources.
@@ -65,8 +62,10 @@ class EsriJSON () extends JSONFeature {
     * @return Features.
     * @api
     */
-  def readFeatures(source: ArrayBuffer): js.Array[typings.openlayers.mod.Feature] = js.native
-  def readFeatures(source: ArrayBuffer, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: js.typedarray.ArrayBuffer): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: js.typedarray.ArrayBuffer, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Document): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typings.openlayers.mod.Feature] = js.native
@@ -74,8 +73,6 @@ class EsriJSON () extends JSONFeature {
   
   def readGeometry(source: String): Geometry = js.native
   def readGeometry(source: String, opt_options: ReadOptions): Geometry = js.native
-  def readGeometry(source: GlobalObject): Geometry = js.native
-  def readGeometry(source: GlobalObject, opt_options: ReadOptions): Geometry = js.native
   /**
     * Read a geometry from a EsriJSON source.
     *
@@ -84,15 +81,16 @@ class EsriJSON () extends JSONFeature {
     * @return Geometry.
     * @api
     */
-  def readGeometry(source: ArrayBuffer): Geometry = js.native
-  def readGeometry(source: ArrayBuffer, opt_options: ReadOptions): Geometry = js.native
+  def readGeometry(source: js.typedarray.ArrayBuffer): Geometry = js.native
+  def readGeometry(source: js.typedarray.ArrayBuffer, opt_options: ReadOptions): Geometry = js.native
+  def readGeometry(source: GlobalObject): Geometry = js.native
+  def readGeometry(source: GlobalObject, opt_options: ReadOptions): Geometry = js.native
   def readGeometry(source: Document): Geometry = js.native
   def readGeometry(source: Document, opt_options: ReadOptions): Geometry = js.native
   def readGeometry(source: Node): Geometry = js.native
   def readGeometry(source: Node, opt_options: ReadOptions): Geometry = js.native
   
   def readProjection(source: String): Projection = js.native
-  def readProjection(source: GlobalObject): Projection = js.native
   /**
     * Read the projection from a EsriJSON source.
     *
@@ -100,7 +98,8 @@ class EsriJSON () extends JSONFeature {
     * @return Projection.
     * @api
     */
-  def readProjection(source: ArrayBuffer): Projection = js.native
+  def readProjection(source: js.typedarray.ArrayBuffer): Projection = js.native
+  def readProjection(source: GlobalObject): Projection = js.native
   def readProjection(source: Document): Projection = js.native
   def readProjection(source: Node): Projection = js.native
   

@@ -12,18 +12,18 @@ object baseEntityMod {
   
   @JSImport("storm-react-diagrams/dist/src/BaseEntity", "BaseEntity")
   @js.native
-  class BaseEntity[T /* <: BaseListener[js.Any] */] () extends StObject {
+  open class BaseEntity[T /* <: BaseListener[Any] */] () extends StObject {
     def this(id: String) = this()
     
     def addListener(listener: T): String = js.native
     
     def clearListeners(): Unit = js.native
     
-    def clone(lookupTable: StringDictionary[js.Any]): js.Any = js.native
+    def clone(lookupTable: StringDictionary[Any]): Any = js.native
     
-    def deSerialize(data: StringDictionary[js.Any], engine: DiagramEngine): Unit = js.native
+    def deSerialize(data: StringDictionary[Any], engine: DiagramEngine): Unit = js.native
     
-    def doClone(lookupTable: StringDictionary[js.Any], clone: js.Any): Unit = js.native
+    def doClone(lookupTable: StringDictionary[Any], clone: Any): Unit = js.native
     
     def getID(): String = js.native
     
@@ -31,7 +31,7 @@ object baseEntityMod {
     
     def isLocked(): Boolean = js.native
     
-    def iterateListeners(cb: js.Function2[/* t */ T, /* event */ BaseEvent[js.Any], js.Any]): Unit = js.native
+    def iterateListeners(cb: js.Function2[/* t */ T, /* event */ BaseEvent[Any], Any]): Unit = js.native
     
     var listeners: StringDictionary[T] = js.native
     
@@ -63,52 +63,47 @@ object baseEntityMod {
     inline def port: typings.stormReactDiagrams.stormReactDiagramsStrings.port = "port".asInstanceOf[typings.stormReactDiagrams.stormReactDiagramsStrings.port]
   }
   
-  trait BaseEvent[T /* <: BaseEntity[BaseListener[js.Any]] */] extends StObject {
+  trait BaseEvent[T /* <: BaseEntity[BaseListener[Any]] */] extends StObject {
     
-    var entity: BaseEntity[BaseListener[js.Any]]
+    var entity: BaseEntity[BaseListener[Any]]
     
     var firing: Boolean
     
     var id: String
     
-    def stopPropagation(): js.Any
+    def stopPropagation(): Any
   }
   object BaseEvent {
     
-    inline def apply[T /* <: BaseEntity[BaseListener[js.Any]] */](
-      entity: BaseEntity[BaseListener[js.Any]],
-      firing: Boolean,
-      id: String,
-      stopPropagation: () => js.Any
-    ): BaseEvent[T] = {
+    inline def apply[T /* <: BaseEntity[BaseListener[Any]] */](entity: BaseEntity[BaseListener[Any]], firing: Boolean, id: String, stopPropagation: () => Any): BaseEvent[T] = {
       val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], firing = firing.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation))
       __obj.asInstanceOf[BaseEvent[T]]
     }
     
-    extension [Self <: BaseEvent[?], T /* <: BaseEntity[BaseListener[js.Any]] */](x: Self & BaseEvent[T]) {
+    extension [Self <: BaseEvent[?], T /* <: BaseEntity[BaseListener[Any]] */](x: Self & BaseEvent[T]) {
       
-      inline def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: BaseEntity[BaseListener[Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
       inline def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     }
   }
   
-  trait BaseListener[T /* <: BaseEntity[BaseListener[js.Any]] */] extends StObject {
+  trait BaseListener[T /* <: BaseEntity[BaseListener[Any]] */] extends StObject {
     
     var lockChanged: js.UndefOr[js.Function1[/* event */ BaseEvent[T] & Locked, Unit]] = js.undefined
   }
   object BaseListener {
     
-    inline def apply[T /* <: BaseEntity[BaseListener[js.Any]] */](): BaseListener[T] = {
+    inline def apply[T /* <: BaseEntity[BaseListener[Any]] */](): BaseListener[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseListener[T]]
     }
     
-    extension [Self <: BaseListener[?], T /* <: BaseEntity[BaseListener[js.Any]] */](x: Self & BaseListener[T]) {
+    extension [Self <: BaseListener[?], T /* <: BaseEntity[BaseListener[Any]] */](x: Self & BaseListener[T]) {
       
       inline def setLockChanged(value: /* event */ BaseEvent[T] & Locked => Unit): Self = StObject.set(x, "lockChanged", js.Any.fromFunction1(value))
       

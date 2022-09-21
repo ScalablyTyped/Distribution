@@ -10,10 +10,10 @@ object photoAlbumMod {
   
   @JSImport("material-ui/svg-icons/image/photo-album", JSImport.Default)
   @js.native
-  class default () extends ImagePhotoAlbum
+  open class default () extends ImagePhotoAlbum
   
   @JSImport("material-ui/svg-icons/image/photo-album", "ImagePhotoAlbum")
   @js.native
-  class ImagePhotoAlbum ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImagePhotoAlbum ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

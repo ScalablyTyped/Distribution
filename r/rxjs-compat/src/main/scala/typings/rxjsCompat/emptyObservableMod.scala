@@ -9,7 +9,7 @@ object emptyObservableMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs-compat/observable/EmptyObservable", "EmptyObservable")
   @js.native
-  class EmptyObservable[T] () extends StObject
+  open class EmptyObservable[T] () extends StObject
   /* static members */
   object EmptyObservable {
     
@@ -17,9 +17,9 @@ object emptyObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+    inline def create[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Any]
     inline def create[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

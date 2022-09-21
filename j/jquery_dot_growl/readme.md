@@ -10,15 +10,12 @@ Growl is a jQuery plugin designed to provide informative messages in the browser
 | ------------------ | :-------------: |
 | Full name          | jquery.growl |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 90231 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30564.666666666668 |
+| # stars            | 404.0 |
 
 ## Links
-- [Homepage](https://github.com/ksylvest/jquery-growl#readme)
-- [Bugs](https://github.com/ksylvest/jquery-growl/issues)
-- [Repository](https://github.com/ksylvest/jquery-growl)
 - [Npm](https://www.npmjs.com/package/jquery.growl)
     
 

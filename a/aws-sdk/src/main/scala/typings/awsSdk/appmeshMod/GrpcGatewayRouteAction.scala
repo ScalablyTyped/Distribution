@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GrpcGatewayRouteAction extends StObject {
   
   /**
+    * The gateway route action to rewrite.
+    */
+  var rewrite: js.UndefOr[GrpcGatewayRouteRewrite] = js.undefined
+  
+  /**
     * An object that represents the target that traffic is routed to when a request matches the gateway route.
     */
   var target: GatewayRouteTarget
@@ -19,6 +24,10 @@ object GrpcGatewayRouteAction {
   }
   
   extension [Self <: GrpcGatewayRouteAction](x: Self) {
+    
+    inline def setRewrite(value: GrpcGatewayRouteRewrite): Self = StObject.set(x, "rewrite", value.asInstanceOf[js.Any])
+    
+    inline def setRewriteUndefined: Self = StObject.set(x, "rewrite", js.undefined)
     
     inline def setTarget(value: GatewayRouteTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

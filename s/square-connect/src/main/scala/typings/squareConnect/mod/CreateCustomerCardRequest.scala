@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateCustomerCardRequest")
 @js.native
-class CreateCustomerCardRequest () extends StObject {
+open class CreateCustomerCardRequest () extends StObject {
   
   /**
     * Address information for the card on file. Only the `postal_code` field is required for payments in the US and Canada.

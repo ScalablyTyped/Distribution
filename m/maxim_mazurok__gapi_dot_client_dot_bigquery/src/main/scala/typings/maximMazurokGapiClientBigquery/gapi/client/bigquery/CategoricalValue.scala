@@ -25,6 +25,6 @@ object CategoricalValue {
     
     inline def setCategoryCountsUndefined: Self = StObject.set(x, "categoryCounts", js.undefined)
     
-    inline def setCategoryCountsVarargs(value: CategoryCount*): Self = StObject.set(x, "categoryCounts", js.Array(value :_*))
+    inline def setCategoryCountsVarargs(value: CategoryCount*): Self = StObject.set(x, "categoryCounts", js.Array(value*))
   }
 }

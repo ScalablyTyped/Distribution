@@ -18,6 +18,12 @@ trait ItemMetadata extends StObject {
     */
   var contentLanguage: js.UndefOr[String] = js.undefined
   
+  /**
+    * A set of named attributes associated with the item. This can be used for influencing the ranking of the item based on the context in the request. The maximum number of elements is
+    * 10.
+    */
+  var contextAttributes: js.UndefOr[js.Array[ContextAttribute]] = js.undefined
+  
   /** The time when the item was created in the source repository. */
   var createTime: js.UndefOr[String] = js.undefined
   
@@ -43,8 +49,8 @@ trait ItemMetadata extends StObject {
   var searchQualityMetadata: js.UndefOr[SearchQualityMetadata] = js.undefined
   
   /**
-    * Link to the source repository serving the data. Search results apply this link to the title. Whitespace or special characters may cause Cloud Search result links to trigger a
-    * redirect notice; to avoid this, encode the URL. The maximum length is 2048 characters.
+    * Link to the source repository serving the data. Seach results apply this link to the title. Whitespace or special characters may cause Cloud Seach result links to trigger a redirect
+    * notice; to avoid this, encode the URL. The maximum length is 2048 characters.
     */
   var sourceRepositoryUrl: js.UndefOr[String] = js.undefined
   
@@ -71,6 +77,12 @@ object ItemMetadata {
     
     inline def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
     
+    inline def setContextAttributes(value: js.Array[ContextAttribute]): Self = StObject.set(x, "contextAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setContextAttributesUndefined: Self = StObject.set(x, "contextAttributes", js.undefined)
+    
+    inline def setContextAttributesVarargs(value: ContextAttribute*): Self = StObject.set(x, "contextAttributes", js.Array(value*))
+    
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
@@ -83,13 +95,13 @@ object ItemMetadata {
     
     inline def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
     
-    inline def setInteractionsVarargs(value: Interaction*): Self = StObject.set(x, "interactions", js.Array(value :_*))
+    inline def setInteractionsVarargs(value: Interaction*): Self = StObject.set(x, "interactions", js.Array(value*))
     
     inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

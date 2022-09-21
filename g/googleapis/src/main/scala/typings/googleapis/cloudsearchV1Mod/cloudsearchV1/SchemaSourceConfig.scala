@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configurations for a source while processing a Search or Suggest request.
-  */
 trait SchemaSourceConfig extends StObject {
   
   /**

@@ -6,20 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ASTWithSource")
 @js.native
-class ASTWithSource protected ()
-  extends typings.angularCompiler.compilerMod.ASTWithSource {
-  def this(
-    ast: typings.angularCompiler.astMod.AST,
-    source: String,
-    location: String,
-    absoluteOffset: Double,
-    errors: js.Array[typings.angularCompiler.astMod.ParserError]
-  ) = this()
-  def this(
-    ast: typings.angularCompiler.astMod.AST,
-    source: Null,
-    location: String,
-    absoluteOffset: Double,
-    errors: js.Array[typings.angularCompiler.astMod.ParserError]
-  ) = this()
+open class ASTWithSource protected () extends AST {
+  def this(ast: AST, source: String, location: String, absoluteOffset: Double, errors: js.Array[ParserError]) = this()
+  def this(ast: AST, source: Null, location: String, absoluteOffset: Double, errors: js.Array[ParserError]) = this()
+  
+  var ast: AST = js.native
+  
+  var errors: js.Array[ParserError] = js.native
+  
+  var location: String = js.native
+  
+  var source: String | Null = js.native
 }

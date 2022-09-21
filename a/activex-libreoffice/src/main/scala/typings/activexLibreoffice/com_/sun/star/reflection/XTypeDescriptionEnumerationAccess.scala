@@ -36,7 +36,7 @@ object XTypeDescriptionEnumerationAccess {
   inline def apply(
     acquire: () => Unit,
     createTypeDescriptionEnumeration: (String, SeqEquiv[TypeClass], TypeDescriptionSearchDepth) => XTypeDescriptionEnumeration,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTypeDescriptionEnumerationAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createTypeDescriptionEnumeration = js.Any.fromFunction3(createTypeDescriptionEnumeration), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

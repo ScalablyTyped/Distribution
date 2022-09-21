@@ -10,10 +10,10 @@ object cameraRearMod {
   
   @JSImport("material-ui/svg-icons/image/camera-rear", JSImport.Default)
   @js.native
-  class default () extends ImageCameraRear
+  open class default () extends ImageCameraRear
   
   @JSImport("material-ui/svg-icons/image/camera-rear", "ImageCameraRear")
   @js.native
-  class ImageCameraRear ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCameraRear ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

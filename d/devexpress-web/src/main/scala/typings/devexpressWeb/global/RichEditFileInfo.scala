@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RichEditFileInfo")
 @js.native
-class RichEditFileInfo ()
+open class RichEditFileInfo ()
   extends StObject
      with typings.devexpressWeb.RichEditFileInfo {
   

@@ -8,7 +8,7 @@ object pairMod {
   
   @JSImport("@devexpress/utils/lib/class/pair", "Pair")
   @js.native
-  class Pair[firstT, secondT] protected () extends StObject {
+  open class Pair[firstT, secondT] protected () extends StObject {
     def this(first: firstT, second: secondT) = this()
     
     var first: firstT = js.native

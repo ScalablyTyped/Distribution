@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SignatureHelpContext extends StObject {
   
   /**
-    * The currently active [`SignatureHelp`](#SignatureHelp).
+    * The currently active {@linkcode SignatureHelp}.
     *
     * The `activeSignatureHelp` has its [`SignatureHelp.activeSignature`] field updated based on
     * the user arrowing through available signatures.

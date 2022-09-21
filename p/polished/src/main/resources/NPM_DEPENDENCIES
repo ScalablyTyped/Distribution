@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "polished" : "3.6.7"
+      "polished" : "4.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "polished" : "3.6.7"
+      "polished" : "4.2.2"
     }
   ],
   "compile-devDependencies" : [

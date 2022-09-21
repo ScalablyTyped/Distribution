@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.Ref
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cardMod {
   
-  @JSImport("reactstrap/lib/Card", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Card", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CardProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CardProps, js.Object, Any]
   
-  type Card = Component[CardProps, js.Object, js.Any]
+  type Card = Component[CardProps, js.Object, Any]
   
   trait CardProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var body: js.UndefOr[Boolean] = js.undefined
     
@@ -35,7 +35,7 @@ object cardMod {
     
     var outline: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object CardProps {
     
@@ -70,7 +70,7 @@ object cardMod {
       
       inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }

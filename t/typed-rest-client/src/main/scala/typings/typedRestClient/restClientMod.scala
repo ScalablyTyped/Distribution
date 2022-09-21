@@ -1,6 +1,6 @@
 package typings.typedRestClient
 
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import typings.typedRestClient.httpClientMod.HttpClient
 import typings.typedRestClient.httpClientMod.HttpClientResponse
 import typings.typedRestClient.interfacesMod.IHeaders
@@ -22,7 +22,7 @@ object restClientMod {
     * @param {ifm.IRequestHandler[]} handlers - handlers are typically auth handlers (basic, bearer, ntlm supplied)
     * @param {ifm.IRequestOptions} requestOptions - options for each http requests (http proxy setting, socket timeout)
     */
-  class RestClient () extends StObject {
+  open class RestClient () extends StObject {
     def this(userAgent: String) = this()
     def this(userAgent: String, baseUrl: String) = this()
     def this(userAgent: Null, baseUrl: String) = this()
@@ -106,9 +106,9 @@ object restClientMod {
       requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
     ) = this()
     
-    /* private */ var _baseUrl: js.Any = js.native
+    /* private */ var _baseUrl: Any = js.native
     
-    /* private */ var _headersFromOptions: js.Any = js.native
+    /* private */ var _headersFromOptions: Any = js.native
     
     var client: HttpClient = js.native
     
@@ -119,8 +119,8 @@ object restClientMod {
       * @param {string} resource - fully qualified or relative url
       * @param {IRequestOptions} requestOptions - (optional) requestOptions object
       */
-    def create[T](resource: String, resources: js.Any): js.Promise[IRestResponse[T]] = js.native
-    def create[T](resource: String, resources: js.Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+    def create[T](resource: String, resources: Any): js.Promise[IRestResponse[T]] = js.native
+    def create[T](resource: String, resources: Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
     
     /**
       * Deletes a resource from an endpoint
@@ -158,8 +158,8 @@ object restClientMod {
       * @param {string} resource - fully qualified or relative url
       * @param {IRequestOptions} requestOptions - (optional) requestOptions object
       */
-    def replace[T](resource: String, resources: js.Any): js.Promise[IRestResponse[T]] = js.native
-    def replace[T](resource: String, resources: js.Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+    def replace[T](resource: String, resources: Any): js.Promise[IRestResponse[T]] = js.native
+    def replace[T](resource: String, resources: Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
     
     /**
       * Updates resource(s) from an endpoint
@@ -168,11 +168,11 @@ object restClientMod {
       * @param {string} resource - fully qualified or relative url
       * @param {IRequestOptions} requestOptions - (optional) requestOptions object
       */
-    def update[T](resource: String, resources: js.Any): js.Promise[IRestResponse[T]] = js.native
-    def update[T](resource: String, resources: js.Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+    def update[T](resource: String, resources: Any): js.Promise[IRestResponse[T]] = js.native
+    def update[T](resource: String, resources: Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
     
-    def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream): js.Promise[IRestResponse[T]] = js.native
-    def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+    def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream[Any]): js.Promise[IRestResponse[T]] = js.native
+    def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream[Any], options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
     
     var versionParam: String = js.native
   }
@@ -185,8 +185,8 @@ object restClientMod {
     
     @JSImport("typed-rest-client/RestClient", "RestClient.dateTimeDeserializer")
     @js.native
-    def dateTimeDeserializer: js.Any = js.native
-    inline def dateTimeDeserializer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateTimeDeserializer")(x.asInstanceOf[js.Any])
+    def dateTimeDeserializer: Any = js.native
+    inline def dateTimeDeserializer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateTimeDeserializer")(x.asInstanceOf[js.Any])
   }
   
   trait IRequestOptions extends StObject {

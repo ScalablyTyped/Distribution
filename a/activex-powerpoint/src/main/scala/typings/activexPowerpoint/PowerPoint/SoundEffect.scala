@@ -12,7 +12,7 @@ trait SoundEffect extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Play(): Unit
   
@@ -27,7 +27,7 @@ object SoundEffect {
     Application: Application,
     ImportFromFile: String => Unit,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Play: () => Unit,
     PowerPointDotSoundEffect_typekey: SoundEffect,
     Type: PpSoundEffectType
@@ -45,7 +45,7 @@ object SoundEffect {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPlay(value: () => Unit): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
     

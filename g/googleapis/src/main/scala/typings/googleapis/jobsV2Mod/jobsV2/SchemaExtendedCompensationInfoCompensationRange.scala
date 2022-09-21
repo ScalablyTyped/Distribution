@@ -4,18 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Deprecated. See CompensationInfo.  Compensation range.
-  */
 trait SchemaExtendedCompensationInfoCompensationRange extends StObject {
   
   /**
-    * Required.  Maximum value.
+    * Required. Maximum value.
     */
   var max: js.UndefOr[SchemaExtendedCompensationInfoDecimal] = js.undefined
   
   /**
-    * Required.  Minimum value.
+    * Required. Minimum value.
     */
   var min: js.UndefOr[SchemaExtendedCompensationInfoDecimal] = js.undefined
 }

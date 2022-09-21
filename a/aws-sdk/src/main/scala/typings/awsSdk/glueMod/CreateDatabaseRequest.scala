@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDatabaseRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog in which to create the database. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog in which to create the database. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -15,6 +15,11 @@ trait CreateDatabaseRequest extends StObject {
     * The metadata for the database.
     */
   var DatabaseInput: typings.awsSdk.glueMod.DatabaseInput
+  
+  /**
+    * The tags you assign to the database.
+    */
+  var Tags: js.UndefOr[TagsMap] = js.undefined
 }
 object CreateDatabaseRequest {
   
@@ -30,5 +35,9 @@ object CreateDatabaseRequest {
     inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     inline def setDatabaseInput(value: DatabaseInput): Self = StObject.set(x, "DatabaseInput", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

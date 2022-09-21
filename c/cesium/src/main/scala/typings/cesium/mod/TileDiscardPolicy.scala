@@ -7,10 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "TileDiscardPolicy")
 @js.native
-class TileDiscardPolicy () extends StObject {
+open class TileDiscardPolicy () extends StObject {
   
+  /**
+    * Determines if the discard policy is ready to process images.
+    * @returns True if the discard policy is ready to process images; otherwise, false.
+    */
   def isReady(): Boolean = js.native
   
-  def shouldDiscardImage(image: js.Promise[HTMLImageElement]): js.Promise[Boolean] = js.native
-  def shouldDiscardImage(image: HTMLImageElement): js.Promise[Boolean] = js.native
+  /**
+    * Given a tile image, decide whether to discard that image.
+    * @param image - An image to test.
+    * @returns True if the image should be discarded; otherwise, false.
+    */
+  def shouldDiscardImage(image: HTMLImageElement): Boolean = js.native
 }

@@ -1,6 +1,5 @@
 package typings.receptacle
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("receptacle", JSImport.Namespace)
   @js.native
-  class ^[T, X] ()
+  open class ^[T, X] ()
     extends StObject
        with Receptacle[T, X] {
     def this(options: Options[T]) = this()
@@ -21,13 +20,13 @@ object mod {
     
     var items: js.Array[Items[T] & InternalItemData[T]]
     
-    var lastModified: Date
+    var lastModified: js.Date
     
     var max: js.UndefOr[Double] = js.undefined
   }
   object Export {
     
-    inline def apply[T, X](id: Double | String, items: js.Array[Items[T] & InternalItemData[T]], lastModified: Date): Export[T, X] = {
+    inline def apply[T, X](id: Double | String, items: js.Array[Items[T] & InternalItemData[T]], lastModified: js.Date): Export[T, X] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any])
       __obj.asInstanceOf[Export[T, X]]
     }
@@ -38,9 +37,9 @@ object mod {
       
       inline def setItems(value: js.Array[Items[T] & InternalItemData[T]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: (Items[T] & InternalItemData[T])*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: (Items[T] & InternalItemData[T])*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -106,7 +105,7 @@ object mod {
     
     var items: js.UndefOr[js.Array[Items[T]]] = js.undefined
     
-    var lastModified: js.UndefOr[Date] = js.undefined
+    var lastModified: js.UndefOr[js.Date] = js.undefined
     
     var max: js.UndefOr[Double] = js.undefined
   }
@@ -127,9 +126,9 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: Items[T]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Items[T]*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
       
@@ -161,11 +160,11 @@ object mod {
     def meta(key: String): js.UndefOr[X] = js.native
     
     def set(key: String, value: T): Receptacle[
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any, 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any, 
         Unit
       ] = js.native
     def set(key: String, value: T, options: SetOptions[X]): Receptacle[
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any, 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any, 
         Unit
       ] = js.native
     

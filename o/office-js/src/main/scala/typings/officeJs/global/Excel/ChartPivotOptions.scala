@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the options for the pivot chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartPivotOptions")
 @js.native
-class ChartPivotOptions ()
+open class ChartPivotOptions ()
   extends StObject
      with typings.officeJs.Excel.ChartPivotOptions {
   

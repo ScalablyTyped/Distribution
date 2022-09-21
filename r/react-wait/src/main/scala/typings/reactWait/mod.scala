@@ -2,7 +2,9 @@ package typings.reactWait
 
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
+import typings.reactWait.anon.Children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +17,7 @@ object mod {
   
   @JSImport("react-wait", "Waiter")
   @js.native
-  val Waiter: FunctionComponent[js.Object] = js.native
+  val Waiter: FunctionComponent[Children] = js.native
   
   inline def useWait(): UseWaitAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("useWait")().asInstanceOf[UseWaitAPI]
   
@@ -140,7 +142,7 @@ object mod {
       
       inline def setWaiters(value: js.Array[String]): Self = StObject.set(x, "waiters", value.asInstanceOf[js.Any])
       
-      inline def setWaitersVarargs(value: String*): Self = StObject.set(x, "waiters", js.Array(value :_*))
+      inline def setWaitersVarargs(value: String*): Self = StObject.set(x, "waiters", js.Array(value*))
     }
   }
   
@@ -199,6 +201,8 @@ object mod {
   
   trait WaitingContextWaitProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var fallback: Element
   }
   object WaitingContextWaitProps {
@@ -209,6 +213,10 @@ object mod {
     }
     
     extension [Self <: WaitingContextWaitProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     }

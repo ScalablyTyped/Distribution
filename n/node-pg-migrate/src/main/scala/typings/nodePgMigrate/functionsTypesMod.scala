@@ -20,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object functionsTypesMod {
   
   @js.native
-  trait CreateFunction extends CreateFunctionFn {
+  trait CreateFunction
+    extends StObject
+       with CreateFunctionFn {
     
     def reverse(
       functionName: Name,
@@ -32,13 +34,16 @@ object functionsTypesMod {
     var reverse_Original: CreateFunctionFn = js.native
   }
   
-  type CreateFunctionFn = js.Function4[
-    /* functionName */ Name, 
-    /* functionParams */ js.Array[FunctionParam], 
-    /* functionOptions */ FunctionOptions & DropOptions, 
-    /* definition */ Value, 
-    String | js.Array[String]
-  ]
+  @js.native
+  trait CreateFunctionFn extends StObject {
+    
+    def apply(
+      functionName: Name,
+      functionParams: js.Array[FunctionParam],
+      functionOptions: FunctionOptions & DropOptions,
+      definition: Value
+    ): String | js.Array[String] = js.native
+  }
   
   type DropFunction = js.Function3[
     /* functionName */ Name, 
@@ -128,9 +133,7 @@ object functionsTypesMod {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setDefaultVarargs(
-        value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
-      ): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: Any*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setMode(value: IN | OUT | INOUT | VARIADIC): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

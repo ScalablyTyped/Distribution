@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Output extends StObject {
   
-  var Condition: js.UndefOr[js.Any] = js.undefined
+  var Condition: js.UndefOr[Any] = js.undefined
   
   var Description: js.UndefOr[String] = js.undefined
   
   var Export: js.UndefOr[Name] = js.undefined
   
-  var Value: js.Any
+  var Value: js.UndefOr[Any] = js.undefined
 }
 object Output {
   
-  inline def apply(Value: js.Any): Output = {
-    val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
+  inline def apply(): Output = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Output]
   }
   
   extension [Self <: Output](x: Self) {
     
-    inline def setCondition(value: js.Any): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Any): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
@@ -36,6 +36,8 @@ object Output {
     
     inline def setExportUndefined: Self = StObject.set(x, "Export", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

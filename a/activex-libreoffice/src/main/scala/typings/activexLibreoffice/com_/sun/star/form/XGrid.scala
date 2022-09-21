@@ -36,7 +36,7 @@ object XGrid {
     CurrentColumnPosition: Double,
     acquire: () => Unit,
     getCurrentColumnPosition: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCurrentColumnPosition: Double => Unit
   ): XGrid = {

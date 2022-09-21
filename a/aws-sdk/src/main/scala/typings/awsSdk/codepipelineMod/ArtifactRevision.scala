@@ -9,7 +9,7 @@ trait ArtifactRevision extends StObject {
   /**
     * The date and time when the most recent revision of the artifact was created, in timestamp format.
     */
-  var created: js.UndefOr[Timestamp] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of an artifact. This name might be system-generated, such as "MyApp", or defined by the user when an action is created.
@@ -45,7 +45,7 @@ object ArtifactRevision {
   
   extension [Self <: ArtifactRevision](x: Self) {
     
-    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     

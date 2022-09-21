@@ -32,19 +32,19 @@ object RequestMatcher {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value :_*))
+    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value*))
     
     inline def setExcludeContentType(value: js.Array[String]): Self = StObject.set(x, "excludeContentType", value.asInstanceOf[js.Any])
     
     inline def setExcludeContentTypeUndefined: Self = StObject.set(x, "excludeContentType", js.undefined)
     
-    inline def setExcludeContentTypeVarargs(value: String*): Self = StObject.set(x, "excludeContentType", js.Array(value :_*))
+    inline def setExcludeContentTypeVarargs(value: String*): Self = StObject.set(x, "excludeContentType", js.Array(value*))
     
     inline def setExcludeResponseHeader(value: js.Array[HeaderFilter]): Self = StObject.set(x, "excludeResponseHeader", value.asInstanceOf[js.Any])
     
     inline def setExcludeResponseHeaderUndefined: Self = StObject.set(x, "excludeResponseHeader", js.undefined)
     
-    inline def setExcludeResponseHeaderVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeResponseHeader", js.Array(value :_*))
+    inline def setExcludeResponseHeaderVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeResponseHeader", js.Array(value*))
     
     inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object RequestMatcher {
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
     
     inline def setUrl(value: UrlFilter): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

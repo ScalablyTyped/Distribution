@@ -36,7 +36,7 @@ object GoogleMapsPlayablelocationsV3LogPlayerReportsRequest {
     
     inline def setPlayerReportsUndefined: Self = StObject.set(x, "playerReports", js.undefined)
     
-    inline def setPlayerReportsVarargs(value: GoogleMapsPlayablelocationsV3PlayerReport*): Self = StObject.set(x, "playerReports", js.Array(value :_*))
+    inline def setPlayerReportsVarargs(value: GoogleMapsPlayablelocationsV3PlayerReport*): Self = StObject.set(x, "playerReports", js.Array(value*))
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

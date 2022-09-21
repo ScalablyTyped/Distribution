@@ -5,6 +5,7 @@ import typings.grommet.grommetStrings.document
 import typings.grommet.utilsMod.KeyboardType
 import typings.react.mod.FC
 import typings.react.mod.KeyboardEvent
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +18,8 @@ object keyboardMod {
   val Keyboard: FC[KeyboardProps] = js.native
   
   trait KeyboardProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var onBackspace: js.UndefOr[KeyboardType] = js.undefined
     
@@ -52,6 +55,10 @@ object keyboardMod {
     }
     
     extension [Self <: KeyboardProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setOnBackspace(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBackspace", js.Any.fromFunction1(value))
       

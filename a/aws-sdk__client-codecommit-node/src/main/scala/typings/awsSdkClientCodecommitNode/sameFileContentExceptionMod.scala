@@ -8,5 +8,5 @@ object sameFileContentExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/SameFileContentException", "SameFileContentException")
   @js.native
-  val SameFileContentException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SameFileContentException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

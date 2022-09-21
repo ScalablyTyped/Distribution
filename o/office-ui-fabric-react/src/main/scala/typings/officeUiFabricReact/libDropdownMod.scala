@@ -16,7 +16,7 @@ object libDropdownMod {
   
   @JSImport("office-ui-fabric-react/lib/Dropdown", "DropdownBase")
   @js.native
-  class DropdownBase protected ()
+  open class DropdownBase protected ()
     extends typings.officeUiFabricReact.dropdownMod.DropdownBase {
     def this(props: IDropdownProps) = this()
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CheckoutApi.
   * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
   */
-class CheckoutApi () extends StObject {
+open class CheckoutApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   /**

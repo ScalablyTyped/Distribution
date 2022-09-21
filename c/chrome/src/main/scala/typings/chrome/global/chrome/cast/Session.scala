@@ -6,16 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("chrome.cast.Session")
 @js.native
-class Session protected ()
+open class Session protected ()
   extends StObject
      with typings.chrome.chrome.cast.Session {
   /**
-    * @param {string} sessionId
-    * @param {string} appId
-    * @param {string} displayName
-    * @param {!Array<chrome.cast.Image>} appImages
-    * @param {!chrome.cast.Receiver} receiver
-    * @constructor
+    * @param sessionId
+    * @param appId
+    * @param displayName
+    * @param appImages
+    * @param receiver
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Session
     */
   def this(

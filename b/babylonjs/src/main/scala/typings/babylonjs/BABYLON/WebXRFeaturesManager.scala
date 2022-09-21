@@ -11,9 +11,19 @@ trait WebXRFeaturesManager
   extends StObject
      with IDisposable {
   
-  /* private */ var _features: js.Any = js.native
+  /**
+    * This function will extend the session creation configuration object with enabled features.
+    * If, for example, the anchors feature is enabled, it will be automatically added to the optional or required features list,
+    * according to the defined "required" variable, provided during enableFeature call
+    * @param xrSessionInit the xr Session init object to extend
+    *
+    * @returns an extended XRSessionInit object
+    */
+  def _extendXRSessionInitObject(xrSessionInit: XRSessionInit): js.Promise[XRSessionInit] = js.native
   
-  /* private */ var _xrSessionManager: js.Any = js.native
+  /* private */ var _features: Any = js.native
+  
+  /* private */ var _xrSessionManager: Any = js.native
   
   /**
     * Attach a feature to the current session. Mainly used when session started to start the feature effect.
@@ -46,23 +56,23 @@ trait WebXRFeaturesManager
     * @param moduleOptions options provided to the module. Ses the module documentation / constructor
     * @param attachIfPossible if set to true (default) the feature will be automatically attached, if it is currently possible
     * @param required is this feature required to the app. If set to true the session init will fail if the feature is not available.
-    * @returns a new constructed feature or throws an error if feature not found.
+    * @returns a new constructed feature or throws an error if feature not found or conflicts with another enabled feature.
     */
   def enableFeature(featureName: String): IWebXRFeature = js.native
   def enableFeature(featureName: String, version: String): IWebXRFeature = js.native
-  def enableFeature(featureName: String, version: String, moduleOptions: js.Any): IWebXRFeature = js.native
-  def enableFeature(featureName: String, version: String, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
+  def enableFeature(featureName: String, version: String, moduleOptions: Any): IWebXRFeature = js.native
+  def enableFeature(featureName: String, version: String, moduleOptions: Any, attachIfPossible: Boolean): IWebXRFeature = js.native
   def enableFeature(
     featureName: String,
     version: String,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Boolean,
     required: Boolean
   ): IWebXRFeature = js.native
   def enableFeature(
     featureName: String,
     version: String,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Unit,
     required: Boolean
   ): IWebXRFeature = js.native
@@ -82,19 +92,19 @@ trait WebXRFeaturesManager
     required: Boolean
   ): IWebXRFeature = js.native
   def enableFeature(featureName: String, version: Double): IWebXRFeature = js.native
-  def enableFeature(featureName: String, version: Double, moduleOptions: js.Any): IWebXRFeature = js.native
-  def enableFeature(featureName: String, version: Double, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
+  def enableFeature(featureName: String, version: Double, moduleOptions: Any): IWebXRFeature = js.native
+  def enableFeature(featureName: String, version: Double, moduleOptions: Any, attachIfPossible: Boolean): IWebXRFeature = js.native
   def enableFeature(
     featureName: String,
     version: Double,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Boolean,
     required: Boolean
   ): IWebXRFeature = js.native
   def enableFeature(
     featureName: String,
     version: Double,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Unit,
     required: Boolean
   ): IWebXRFeature = js.native
@@ -113,22 +123,16 @@ trait WebXRFeaturesManager
     attachIfPossible: Unit,
     required: Boolean
   ): IWebXRFeature = js.native
-  def enableFeature(featureName: String, version: Unit, moduleOptions: js.Any): IWebXRFeature = js.native
-  def enableFeature(featureName: String, version: Unit, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
+  def enableFeature(featureName: String, version: Unit, moduleOptions: Any): IWebXRFeature = js.native
+  def enableFeature(featureName: String, version: Unit, moduleOptions: Any, attachIfPossible: Boolean): IWebXRFeature = js.native
   def enableFeature(
     featureName: String,
     version: Unit,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Boolean,
     required: Boolean
   ): IWebXRFeature = js.native
-  def enableFeature(
-    featureName: String,
-    version: Unit,
-    moduleOptions: js.Any,
-    attachIfPossible: Unit,
-    required: Boolean
-  ): IWebXRFeature = js.native
+  def enableFeature(featureName: String, version: Unit, moduleOptions: Any, attachIfPossible: Unit, required: Boolean): IWebXRFeature = js.native
   def enableFeature(featureName: String, version: Unit, moduleOptions: Unit, attachIfPossible: Boolean): IWebXRFeature = js.native
   def enableFeature(
     featureName: String,
@@ -140,19 +144,19 @@ trait WebXRFeaturesManager
   def enableFeature(featureName: String, version: Unit, moduleOptions: Unit, attachIfPossible: Unit, required: Boolean): IWebXRFeature = js.native
   def enableFeature(featureName: NameString): IWebXRFeature = js.native
   def enableFeature(featureName: NameString, version: String): IWebXRFeature = js.native
-  def enableFeature(featureName: NameString, version: String, moduleOptions: js.Any): IWebXRFeature = js.native
-  def enableFeature(featureName: NameString, version: String, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
+  def enableFeature(featureName: NameString, version: String, moduleOptions: Any): IWebXRFeature = js.native
+  def enableFeature(featureName: NameString, version: String, moduleOptions: Any, attachIfPossible: Boolean): IWebXRFeature = js.native
   def enableFeature(
     featureName: NameString,
     version: String,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Boolean,
     required: Boolean
   ): IWebXRFeature = js.native
   def enableFeature(
     featureName: NameString,
     version: String,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Unit,
     required: Boolean
   ): IWebXRFeature = js.native
@@ -172,19 +176,19 @@ trait WebXRFeaturesManager
     required: Boolean
   ): IWebXRFeature = js.native
   def enableFeature(featureName: NameString, version: Double): IWebXRFeature = js.native
-  def enableFeature(featureName: NameString, version: Double, moduleOptions: js.Any): IWebXRFeature = js.native
-  def enableFeature(featureName: NameString, version: Double, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
+  def enableFeature(featureName: NameString, version: Double, moduleOptions: Any): IWebXRFeature = js.native
+  def enableFeature(featureName: NameString, version: Double, moduleOptions: Any, attachIfPossible: Boolean): IWebXRFeature = js.native
   def enableFeature(
     featureName: NameString,
     version: Double,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Boolean,
     required: Boolean
   ): IWebXRFeature = js.native
   def enableFeature(
     featureName: NameString,
     version: Double,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Unit,
     required: Boolean
   ): IWebXRFeature = js.native
@@ -203,19 +207,19 @@ trait WebXRFeaturesManager
     attachIfPossible: Unit,
     required: Boolean
   ): IWebXRFeature = js.native
-  def enableFeature(featureName: NameString, version: Unit, moduleOptions: js.Any): IWebXRFeature = js.native
-  def enableFeature(featureName: NameString, version: Unit, moduleOptions: js.Any, attachIfPossible: Boolean): IWebXRFeature = js.native
+  def enableFeature(featureName: NameString, version: Unit, moduleOptions: Any): IWebXRFeature = js.native
+  def enableFeature(featureName: NameString, version: Unit, moduleOptions: Any, attachIfPossible: Boolean): IWebXRFeature = js.native
   def enableFeature(
     featureName: NameString,
     version: Unit,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Boolean,
     required: Boolean
   ): IWebXRFeature = js.native
   def enableFeature(
     featureName: NameString,
     version: Unit,
-    moduleOptions: js.Any,
+    moduleOptions: Any,
     attachIfPossible: Unit,
     required: Boolean
   ): IWebXRFeature = js.native
@@ -234,16 +238,6 @@ trait WebXRFeaturesManager
     attachIfPossible: Unit,
     required: Boolean
   ): IWebXRFeature = js.native
-  
-  /**
-    * This function will exten the session creation configuration object with enabled features.
-    * If, for example, the anchors feature is enabled, it will be automatically added to the optional or required features list,
-    * according to the defined "required" variable, provided during enableFeature call
-    * @param xrSessionInit the xr Session init object to extend
-    *
-    * @returns an extended XRSessionInit object
-    */
-  def extendXRSessionInitObject(xrSessionInit: XRSessionInit): XRSessionInit = js.native
   
   /**
     * get the implementation of an enabled feature.

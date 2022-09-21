@@ -29,7 +29,7 @@ object ListContactsResponse {
     
     inline def setContactListUndefined: Self = StObject.set(x, "contactList", js.undefined)
     
-    inline def setContactListVarargs(value: ContactData*): Self = StObject.set(x, "contactList", js.Array(value :_*))
+    inline def setContactListVarargs(value: ContactData*): Self = StObject.set(x, "contactList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

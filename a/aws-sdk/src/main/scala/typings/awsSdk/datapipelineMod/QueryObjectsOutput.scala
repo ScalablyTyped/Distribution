@@ -38,7 +38,7 @@ object QueryObjectsOutput {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: id*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: id*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

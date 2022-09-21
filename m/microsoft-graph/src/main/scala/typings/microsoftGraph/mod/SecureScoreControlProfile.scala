@@ -91,7 +91,7 @@ object SecureScoreControlProfile {
     
     inline def setComplianceInformationUndefined: Self = StObject.set(x, "complianceInformation", js.undefined)
     
-    inline def setComplianceInformationVarargs(value: ComplianceInformation*): Self = StObject.set(x, "complianceInformation", js.Array(value :_*))
+    inline def setComplianceInformationVarargs(value: ComplianceInformation*): Self = StObject.set(x, "complianceInformation", js.Array(value*))
     
     inline def setControlCategory(value: NullableOption[String]): Self = StObject.set(x, "controlCategory", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object SecureScoreControlProfile {
     
     inline def setControlStateUpdatesUndefined: Self = StObject.set(x, "controlStateUpdates", js.undefined)
     
-    inline def setControlStateUpdatesVarargs(value: SecureScoreControlStateUpdate*): Self = StObject.set(x, "controlStateUpdates", js.Array(value :_*))
+    inline def setControlStateUpdatesVarargs(value: SecureScoreControlStateUpdate*): Self = StObject.set(x, "controlStateUpdates", js.Array(value*))
     
     inline def setDeprecated(value: NullableOption[Boolean]): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
@@ -161,7 +161,7 @@ object SecureScoreControlProfile {
     
     inline def setThreatsUndefined: Self = StObject.set(x, "threats", js.undefined)
     
-    inline def setThreatsVarargs(value: String*): Self = StObject.set(x, "threats", js.Array(value :_*))
+    inline def setThreatsVarargs(value: String*): Self = StObject.set(x, "threats", js.Array(value*))
     
     inline def setTier(value: NullableOption[String]): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     

@@ -9,12 +9,12 @@ trait GetLinksRequest extends StObject {
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String
+  var GlobalNetworkId: typings.awsSdk.networkmanagerMod.GlobalNetworkId
   
   /**
     * One or more link IDs. The maximum is 10.
     */
-  var LinkIds: js.UndefOr[StringList] = js.undefined
+  var LinkIds: js.UndefOr[LinkIdList] = js.undefined
   
   /**
     * The maximum number of results to return.
@@ -24,57 +24,57 @@ trait GetLinksRequest extends StObject {
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.networkmanagerMod.NextToken] = js.undefined
   
   /**
     * The link provider.
     */
-  var Provider: js.UndefOr[String] = js.undefined
+  var Provider: js.UndefOr[ConstrainedString] = js.undefined
   
   /**
     * The ID of the site.
     */
-  var SiteId: js.UndefOr[String] = js.undefined
+  var SiteId: js.UndefOr[typings.awsSdk.networkmanagerMod.SiteId] = js.undefined
   
   /**
     * The link type.
     */
-  var Type: js.UndefOr[String] = js.undefined
+  var Type: js.UndefOr[ConstrainedString] = js.undefined
 }
 object GetLinksRequest {
   
-  inline def apply(GlobalNetworkId: String): GetLinksRequest = {
+  inline def apply(GlobalNetworkId: GlobalNetworkId): GetLinksRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLinksRequest]
   }
   
   extension [Self <: GetLinksRequest](x: Self) {
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    inline def setLinkIds(value: StringList): Self = StObject.set(x, "LinkIds", value.asInstanceOf[js.Any])
+    inline def setLinkIds(value: LinkIdList): Self = StObject.set(x, "LinkIds", value.asInstanceOf[js.Any])
     
     inline def setLinkIdsUndefined: Self = StObject.set(x, "LinkIds", js.undefined)
     
-    inline def setLinkIdsVarargs(value: String*): Self = StObject.set(x, "LinkIds", js.Array(value :_*))
+    inline def setLinkIdsVarargs(value: LinkId*): Self = StObject.set(x, "LinkIds", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setProvider(value: String): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: ConstrainedString): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     
     inline def setProviderUndefined: Self = StObject.set(x, "Provider", js.undefined)
     
-    inline def setSiteId(value: String): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
     inline def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ConstrainedString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }

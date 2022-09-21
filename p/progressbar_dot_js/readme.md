@@ -10,10 +10,10 @@ Responsive and slick progress bars with animated SVG paths
 | ------------------ | :-------------: |
 | Full name          | progressbar.js |
 | Keywords           | progress, bar, js, svg, circular, circle, pace, radial, line, loading, loader, semi-circle, indicator |
-| # releases         | 2 |
-| # dependents       | 40 |
-| # downloads        | 1225481 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 155920.0 |
+| # stars            | 7581.0 |
 
 ## Links
 - [Homepage](https://kimmobrunfeldt.github.io/progressbar.js/)

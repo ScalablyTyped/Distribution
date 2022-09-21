@@ -10,10 +10,10 @@ Block library for the WordPress editor.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/block-library |
 | Keywords           | wordpress, gutenberg, blocks |
-| # releases         | 79 |
-| # dependents       | 21 |
-| # downloads        | 363224 |
-| # stars            | 0 |
+| # releases         | 153 |
+| # dependents       | 0.0 |
+| # downloads        | 63244.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/block-library/README.md)

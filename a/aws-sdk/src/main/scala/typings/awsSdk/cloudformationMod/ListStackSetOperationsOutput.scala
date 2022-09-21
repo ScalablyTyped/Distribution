@@ -33,6 +33,6 @@ object ListStackSetOperationsOutput {
     
     inline def setSummariesUndefined: Self = StObject.set(x, "Summaries", js.undefined)
     
-    inline def setSummariesVarargs(value: StackSetOperationSummary*): Self = StObject.set(x, "Summaries", js.Array(value :_*))
+    inline def setSummariesVarargs(value: StackSetOperationSummary*): Self = StObject.set(x, "Summaries", js.Array(value*))
   }
 }

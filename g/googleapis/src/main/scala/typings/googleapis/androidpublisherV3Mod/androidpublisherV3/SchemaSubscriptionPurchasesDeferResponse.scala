@@ -9,7 +9,7 @@ trait SchemaSubscriptionPurchasesDeferResponse extends StObject {
   /**
     * The new expiry time for the subscription in milliseconds since the Epoch.
     */
-  var newExpiryTimeMillis: js.UndefOr[String] = js.undefined
+  var newExpiryTimeMillis: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSubscriptionPurchasesDeferResponse {
   
@@ -21,6 +21,8 @@ object SchemaSubscriptionPurchasesDeferResponse {
   extension [Self <: SchemaSubscriptionPurchasesDeferResponse](x: Self) {
     
     inline def setNewExpiryTimeMillis(value: String): Self = StObject.set(x, "newExpiryTimeMillis", value.asInstanceOf[js.Any])
+    
+    inline def setNewExpiryTimeMillisNull: Self = StObject.set(x, "newExpiryTimeMillis", null)
     
     inline def setNewExpiryTimeMillisUndefined: Self = StObject.set(x, "newExpiryTimeMillis", js.undefined)
   }

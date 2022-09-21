@@ -19,6 +19,6 @@ object Options {
     
     inline def setOptions(value: js.Array[js.Array[String]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: js.Array[String]*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: js.Array[String]*): Self = StObject.set(x, "options", js.Array(value*))
   }
 }

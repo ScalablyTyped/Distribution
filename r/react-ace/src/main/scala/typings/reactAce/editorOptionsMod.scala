@@ -11,7 +11,7 @@ object editorOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def debounce(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def debounce(fn: js.Function1[/* repeated */ Any, Unit], delay: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("react-ace/lib/editorOptions", "editorEvents")
   @js.native
@@ -98,18 +98,18 @@ object editorOptionsMod {
       
       trait Global extends StObject {
         
-        var window: js.Any
+        var window: Any
       }
       object Global {
         
-        inline def apply(window: js.Any): Global = {
+        inline def apply(window: Any): Global = {
           val __obj = js.Dynamic.literal(window = window.asInstanceOf[js.Any])
           __obj.asInstanceOf[Global]
         }
         
         extension [Self <: Global](x: Self) {
           
-          inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+          inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
         }
       }
     }

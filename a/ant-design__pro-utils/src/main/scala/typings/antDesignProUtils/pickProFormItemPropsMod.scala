@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pickProFormItemPropsMod {
   
-  @JSImport("@ant-design/pro-utils/lib/pickProFormItemProps", JSImport.Namespace)
+  @JSImport("@ant-design/pro-utils/es/pickProFormItemProps", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def pickProFormItemProps(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("pickProFormItemProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

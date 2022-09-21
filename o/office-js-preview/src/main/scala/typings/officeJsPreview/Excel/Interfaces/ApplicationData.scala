@@ -16,68 +16,68 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationData extends StObject {
   
   /**
-    *
     * Returns the Excel calculation engine version used for the last full recalculation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var calculationEngineVersion: js.UndefOr[Double] = js.undefined
   
   /**
+    * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
     *
-    * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
   var calculationMode: js.UndefOr[CalculationMode | Automatic | AutomaticExceptTables | Manual] = js.undefined
   
   /**
+    * Returns the calculation state of the application. See `Excel.CalculationState` for details.
     *
-    * Returns the calculation state of the application. See Excel.CalculationState for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var calculationState: js.UndefOr[CalculationState | Done | Calculating | Pending] = js.undefined
   
   /**
-    *
     * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var cultureInfo: js.UndefOr[CultureInfoData] = js.undefined
   
   /**
+    * Gets the string used as the decimal separator for numeric values. This is based on the local Excel settings.
     *
-    * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var decimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
-    *
-    * Returns the Iterative Calculation settings.
+    * Returns the iterative calculation settings.
     In Excel on Windows and Mac, the settings will apply to the Excel Application.
     In Excel on the web and other platforms, the settings will apply to the active workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var iterativeCalculation: js.UndefOr[IterativeCalculationData] = js.undefined
   
   /**
+    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
     *
-    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var thousandsSeparator: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Specifies if the system separators of Excel are enabled.
     System separators include the decimal separator and thousands separator.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var useSystemSeparators: js.UndefOr[Boolean] = js.undefined

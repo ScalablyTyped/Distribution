@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnSpec extends StObject {
   
-  var calc: js.UndefOr[js.Function2[/* data */ DataTable, /* row */ Double, js.Any]] = js.undefined
+  var calc: js.UndefOr[js.Function2[/* data */ DataTable, /* row */ Double, Any]] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ object ColumnSpec {
   
   extension [Self <: ColumnSpec](x: Self) {
     
-    inline def setCalc(value: (/* data */ DataTable, /* row */ Double) => js.Any): Self = StObject.set(x, "calc", js.Any.fromFunction2(value))
+    inline def setCalc(value: (/* data */ DataTable, /* row */ Double) => Any): Self = StObject.set(x, "calc", js.Any.fromFunction2(value))
     
     inline def setCalcUndefined: Self = StObject.set(x, "calc", js.undefined)
     

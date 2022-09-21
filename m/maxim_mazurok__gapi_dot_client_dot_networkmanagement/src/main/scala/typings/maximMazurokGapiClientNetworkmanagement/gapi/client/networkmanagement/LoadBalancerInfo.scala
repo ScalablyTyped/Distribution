@@ -42,7 +42,7 @@ object LoadBalancerInfo {
     
     inline def setBackendsUndefined: Self = StObject.set(x, "backends", js.undefined)
     
-    inline def setBackendsVarargs(value: LoadBalancerBackend*): Self = StObject.set(x, "backends", js.Array(value :_*))
+    inline def setBackendsVarargs(value: LoadBalancerBackend*): Self = StObject.set(x, "backends", js.Array(value*))
     
     inline def setHealthCheckUri(value: String): Self = StObject.set(x, "healthCheckUri", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagFilter extends StObject {
   
   /**
-    * The tag key.
+    * The tag key. This must have a valid string value and can't be empty.
     */
   var tagKey: js.UndefOr[TagKey] = js.undefined
   
   /**
-    * The tag values.
+    * A list of zero or more tag values. If no values are provided, then the filter matches any tag with the specified key, regardless of its value.
     */
   var tagValues: js.UndefOr[TagValueList] = js.undefined
 }
@@ -33,6 +33,6 @@ object TagFilter {
     
     inline def setTagValuesUndefined: Self = StObject.set(x, "tagValues", js.undefined)
     
-    inline def setTagValuesVarargs(value: TagValue*): Self = StObject.set(x, "tagValues", js.Array(value :_*))
+    inline def setTagValuesVarargs(value: TagValue*): Self = StObject.set(x, "tagValues", js.Array(value*))
   }
 }

@@ -31,6 +31,6 @@ object DescribeMatchmakingRuleSetsOutput {
     
     inline def setRuleSets(value: MatchmakingRuleSetList): Self = StObject.set(x, "RuleSets", value.asInstanceOf[js.Any])
     
-    inline def setRuleSetsVarargs(value: MatchmakingRuleSet*): Self = StObject.set(x, "RuleSets", js.Array(value :_*))
+    inline def setRuleSetsVarargs(value: MatchmakingRuleSet*): Self = StObject.set(x, "RuleSets", js.Array(value*))
   }
 }

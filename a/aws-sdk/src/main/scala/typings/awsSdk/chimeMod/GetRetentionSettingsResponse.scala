@@ -9,7 +9,7 @@ trait GetRetentionSettingsResponse extends StObject {
   /**
     * The timestamp representing the time at which the specified items are permanently deleted, in ISO 8601 format.
     */
-  var InitiateDeletionTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var InitiateDeletionTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The retention settings.
@@ -25,7 +25,7 @@ object GetRetentionSettingsResponse {
   
   extension [Self <: GetRetentionSettingsResponse](x: Self) {
     
-    inline def setInitiateDeletionTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "InitiateDeletionTimestamp", value.asInstanceOf[js.Any])
+    inline def setInitiateDeletionTimestamp(value: js.Date): Self = StObject.set(x, "InitiateDeletionTimestamp", value.asInstanceOf[js.Any])
     
     inline def setInitiateDeletionTimestampUndefined: Self = StObject.set(x, "InitiateDeletionTimestamp", js.undefined)
     

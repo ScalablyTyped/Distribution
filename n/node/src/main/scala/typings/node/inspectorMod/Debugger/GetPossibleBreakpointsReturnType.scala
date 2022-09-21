@@ -22,6 +22,6 @@ object GetPossibleBreakpointsReturnType {
     
     inline def setLocations(value: js.Array[BreakLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    inline def setLocationsVarargs(value: BreakLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: BreakLocation*): Self = StObject.set(x, "locations", js.Array(value*))
   }
 }

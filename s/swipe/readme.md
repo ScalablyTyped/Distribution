@@ -11,14 +11,11 @@ Swipe component with touch support
 | Full name          | swipe |
 | Keywords           | carousel, slide, slides, swipe, touch, ui |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 3516 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 400.6666666666667 |
+| # stars            | 63.0 |
 
 ## Links
-- [Homepage](https://github.com/component/swipe)
-- [Bugs](https://github.com/component/swipe/issues)
-- [Repository](https://github.com/component/swipe)
 - [Npm](https://www.npmjs.com/package/swipe)
     
 

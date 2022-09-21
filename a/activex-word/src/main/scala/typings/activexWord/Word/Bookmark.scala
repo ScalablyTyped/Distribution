@@ -22,7 +22,7 @@ trait Bookmark extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -46,7 +46,7 @@ object Bookmark {
     Empty: Boolean,
     End: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     Select: () => Unit,
     Start: Double,
@@ -76,7 +76,7 @@ object Bookmark {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

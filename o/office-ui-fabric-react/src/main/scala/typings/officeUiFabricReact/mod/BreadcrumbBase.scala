@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "BreadcrumbBase")
 @js.native
-class BreadcrumbBase protected ()
+open class BreadcrumbBase protected ()
   extends typings.officeUiFabricReact.libBreadcrumbMod.BreadcrumbBase {
   def this(props: IBreadcrumbProps) = this()
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a custom conditional format type.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.CustomConditionalFormat")
 @js.native
-class CustomConditionalFormat ()
+open class CustomConditionalFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.CustomConditionalFormat {
   

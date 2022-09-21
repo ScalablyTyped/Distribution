@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorScaleConditionalFormatData extends StObject {
   
   /**
-    *
     * The criteria of the color scale. Midpoint is optional when using a two point color scale.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var criteria: js.UndefOr[ConditionalColorScaleCriteria] = js.undefined
   
   /**
+    * If `true`, the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
     *
-    * If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var threeColorScale: js.UndefOr[Boolean] = js.undefined

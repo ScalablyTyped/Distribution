@@ -9,7 +9,7 @@ trait ImageVersion extends StObject {
   /**
     * When the version was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * When a create or delete operation fails, the reason for the failure.
@@ -34,7 +34,7 @@ trait ImageVersion extends StObject {
   /**
     * When the version was last modified.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
   
   /**
     * The version number.
@@ -44,11 +44,11 @@ trait ImageVersion extends StObject {
 object ImageVersion {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     ImageArn: ImageArn,
     ImageVersionArn: ImageVersionArn,
     ImageVersionStatus: ImageVersionStatus,
-    LastModifiedTime: Timestamp,
+    LastModifiedTime: js.Date,
     Version: ImageVersionNumber
   ): ImageVersion = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], ImageArn = ImageArn.asInstanceOf[js.Any], ImageVersionArn = ImageVersionArn.asInstanceOf[js.Any], ImageVersionStatus = ImageVersionStatus.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object ImageVersion {
   
   extension [Self <: ImageVersion](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object ImageVersion {
     
     inline def setImageVersionStatus(value: ImageVersionStatus): Self = StObject.set(x, "ImageVersionStatus", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: ImageVersionNumber): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }

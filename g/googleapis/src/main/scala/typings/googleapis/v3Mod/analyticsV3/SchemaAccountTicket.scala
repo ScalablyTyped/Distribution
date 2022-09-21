@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for an Analytics account ticket. The account ticket consists
-  * of the ticket ID and the basic information for the account, property and
-  * profile.
-  */
 trait SchemaAccountTicket extends StObject {
   
   /**
@@ -19,12 +14,12 @@ trait SchemaAccountTicket extends StObject {
   /**
     * Account ticket ID used to access the account ticket.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Resource type for account ticket.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * View (Profile) for the account.
@@ -32,10 +27,9 @@ trait SchemaAccountTicket extends StObject {
   var profile: js.UndefOr[SchemaProfile] = js.undefined
   
   /**
-    * Redirect URI where the user will be sent after accepting Terms of
-    * Service. Must be configured in APIs console as a callback URL.
+    * Redirect URI where the user will be sent after accepting Terms of Service. Must be configured in APIs console as a callback URL.
     */
-  var redirectUri: js.UndefOr[String] = js.undefined
+  var redirectUri: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Web property for the account.
@@ -57,9 +51,13 @@ object SchemaAccountTicket {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -68,6 +66,8 @@ object SchemaAccountTicket {
     inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectUriNull: Self = StObject.set(x, "redirectUri", null)
     
     inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
     

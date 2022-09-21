@@ -15,7 +15,7 @@ trait ICartesian
     * @returns Object An object describing the item, or null if there is no matching item. The exact contents of this object will vary by series type, but should always contain at least the following:
     */
   @JSName("getItemForPoint")
-  var getItemForPoint_ICartesian: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getItemForPoint_ICartesian: js.UndefOr[js.Function2[/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the value of xAxis
     * @returns Ext.chart.axis.Axis
@@ -41,7 +41,7 @@ trait ICartesian
     * @param target Object
     */
   @JSName("provideLegendInfo")
-  var provideLegendInfo_ICartesian: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var provideLegendInfo_ICartesian: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of xAxis
     * @param xAxis Ext.chart.axis.Axis The new value.
@@ -84,7 +84,7 @@ object ICartesian {
   
   extension [Self <: ICartesian](x: Self) {
     
-    inline def setGetItemForPoint(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
+    inline def setGetItemForPoint(value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
     
     inline def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
     
@@ -104,7 +104,7 @@ object ICartesian {
     
     inline def setGetYFieldUndefined: Self = StObject.set(x, "getYField", js.undefined)
     
-    inline def setProvideLegendInfo(value: /* target */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "provideLegendInfo", js.Any.fromFunction1(value))
+    inline def setProvideLegendInfo(value: /* target */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "provideLegendInfo", js.Any.fromFunction1(value))
     
     inline def setProvideLegendInfoUndefined: Self = StObject.set(x, "provideLegendInfo", js.undefined)
     

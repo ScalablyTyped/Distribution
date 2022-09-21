@@ -9,9 +9,9 @@ trait DiagramClickEvent
   extends StObject
      with DiagramEvent {
   
-  var item: js.UndefOr[js.Any] = js.undefined
+  var item: js.UndefOr[Any] = js.undefined
   
-  var meta: js.UndefOr[js.Any] = js.undefined
+  var meta: js.UndefOr[Any] = js.undefined
   
   var point: js.UndefOr[Point] = js.undefined
 }
@@ -24,11 +24,11 @@ object DiagramClickEvent {
   
   extension [Self <: DiagramClickEvent](x: Self) {
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     

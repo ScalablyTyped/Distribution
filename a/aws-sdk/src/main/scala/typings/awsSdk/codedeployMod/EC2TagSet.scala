@@ -24,6 +24,6 @@ object EC2TagSet {
     
     inline def setEc2TagSetListUndefined: Self = StObject.set(x, "ec2TagSetList", js.undefined)
     
-    inline def setEc2TagSetListVarargs(value: EC2TagFilterList*): Self = StObject.set(x, "ec2TagSetList", js.Array(value :_*))
+    inline def setEc2TagSetListVarargs(value: EC2TagFilterList*): Self = StObject.set(x, "ec2TagSetList", js.Array(value*))
   }
 }

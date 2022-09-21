@@ -11,14 +11,11 @@ Typings are for version 1.1
 | Full name          | stoppable |
 | Keywords           | server, net, connect, socket, connection, stop, close, disconnect, disconnection, http, https, tcp |
 | # releases         | 0 |
-| # dependents       | 82 |
-| # downloads        | 7816022 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3487702.0 |
+| # stars            | 365.0 |
 
 ## Links
-- [Homepage](https://github.com/hunterloftis/stoppable)
-- [Bugs](https://github.com/hunterloftis/stoppable/issues)
-- [Repository](https://github.com/hunterloftis/stoppable)
 - [Npm](https://www.npmjs.com/package/stoppable)
     
 

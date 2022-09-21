@@ -10,10 +10,10 @@ wake up on lan
 | ------------------ | :-------------: |
 | Full name          | wol |
 | Keywords           | wol, wake, lan |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 16885 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3050.0 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/song940/wake-on-lan#readme)

@@ -18,18 +18,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def collab(): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("collab")().asInstanceOf[Plugin[js.Any, js.Any]]
-  inline def collab(config: ClientID): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("collab")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
+  inline def collab(): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("collab")().asInstanceOf[Plugin[Any]]
+  inline def collab(config: ClientID): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("collab")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[Any]]
   
-  inline def getVersion(state: EditorState[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getVersion(state: EditorState): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def receiveTransaction[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S], steps: js.Array[Step[S]], clientIDs: js.Array[Double | String]): Transaction[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveTransaction")(state.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], clientIDs.asInstanceOf[js.Any])).asInstanceOf[Transaction[S]]
-  inline def receiveTransaction[S /* <: Schema[js.Any, js.Any] */](
-    state: EditorState[S],
-    steps: js.Array[Step[S]],
+  inline def receiveTransaction[S /* <: Schema[Any, Any] */](state: EditorState, steps: js.Array[Step], clientIDs: js.Array[Double | String]): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveTransaction")(state.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], clientIDs.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  inline def receiveTransaction[S /* <: Schema[Any, Any] */](
+    state: EditorState,
+    steps: js.Array[Step],
     clientIDs: js.Array[Double | String],
     options: MapSelectionBackward
-  ): Transaction[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveTransaction")(state.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], clientIDs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transaction[S]]
+  ): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveTransaction")(state.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], clientIDs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   
-  inline def sendableSteps[S /* <: Schema[js.Any, js.Any] */](state: EditorState[S]): js.UndefOr[Origins[S] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendableSteps")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Origins[S] | Null]]
+  inline def sendableSteps[S /* <: Schema[Any, Any] */](state: EditorState): js.UndefOr[Origins | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendableSteps")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Origins | Null]]
 }

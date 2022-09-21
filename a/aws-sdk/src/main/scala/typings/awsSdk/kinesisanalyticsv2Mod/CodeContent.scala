@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CodeContent extends StObject {
   
   /**
-    * Information about the Amazon S3 bucket containing the application code.
+    * Information about the Amazon S3 bucket that contains the application code.
     */
   var S3ContentLocation: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3ContentLocation] = js.undefined
   

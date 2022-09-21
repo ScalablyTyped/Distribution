@@ -12,12 +12,12 @@ trait DeleteLaunchTemplateRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
+    * The ID of the launch template. You must specify either the LaunchTemplateId or the LaunchTemplateName, but not both.
     */
   var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.undefined
   
   /**
-    * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
+    * The name of the launch template. You must specify either the LaunchTemplateName or the LaunchTemplateId, but not both.
     */
   var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.undefined
 }

@@ -10,10 +10,10 @@ object dehazeMod {
   
   @JSImport("material-ui/svg-icons/image/dehaze", JSImport.Default)
   @js.native
-  class default () extends ImageDehaze
+  open class default () extends ImageDehaze
   
   @JSImport("material-ui/svg-icons/image/dehaze", "ImageDehaze")
   @js.native
-  class ImageDehaze ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageDehaze ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -21,6 +21,12 @@ trait SiteVideoSettings extends StObject {
   /** Orientation of a site template used for video. This will act as default for new placements created under this site. */
   var orientation: js.UndefOr[String] = js.undefined
   
+  /**
+    * Publisher specification ID used to identify site-associated publisher requirements and automatically populate transcode settings. If publisher specification ID is specified, it will
+    * take precedence over transcode settings.
+    */
+  var publisherSpecificationId: js.UndefOr[String] = js.undefined
+  
   /** Settings for the skippability of video creatives served to this site. This will act as default for new placements created under this site. */
   var skippableSettings: js.UndefOr[SiteSkippableSetting] = js.undefined
   
@@ -55,6 +61,10 @@ object SiteVideoSettings {
     inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setPublisherSpecificationId(value: String): Self = StObject.set(x, "publisherSpecificationId", value.asInstanceOf[js.Any])
+    
+    inline def setPublisherSpecificationIdUndefined: Self = StObject.set(x, "publisherSpecificationId", js.undefined)
     
     inline def setSkippableSettings(value: SiteSkippableSetting): Self = StObject.set(x, "skippableSettings", value.asInstanceOf[js.Any])
     

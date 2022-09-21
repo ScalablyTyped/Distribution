@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.Spatial")
 @js.native
-class Spatial protected ()
+open class Spatial protected ()
   extends StObject
      with typings.heremaps.H.map.Spatial {
   /**

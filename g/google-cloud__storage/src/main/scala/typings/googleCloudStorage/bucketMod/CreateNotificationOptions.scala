@@ -34,7 +34,7 @@ object CreateNotificationOptions {
     
     inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
     
-    inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+    inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value*))
     
     inline def setObjectNamePrefix(value: String): Self = StObject.set(x, "objectNamePrefix", value.asInstanceOf[js.Any])
     

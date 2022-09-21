@@ -12,13 +12,13 @@ object adagradOptimizerMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/optimizers/adagrad_optimizer", "AdagradOptimizer")
   @js.native
-  class AdagradOptimizer protected () extends Optimizer {
+  open class AdagradOptimizer protected () extends Optimizer {
     def this(learningRate: Double) = this()
     def this(learningRate: Double, initialAccumulatorValue: Double) = this()
     
-    /* private */ var accumulatedGrads: js.Any = js.native
+    /* private */ var accumulatedGrads: Any = js.native
     
-    /* private */ var initialAccumulatorValue: js.Any = js.native
+    /* private */ var initialAccumulatorValue: Any = js.native
     
     /* protected */ var learningRate: Double = js.native
   }

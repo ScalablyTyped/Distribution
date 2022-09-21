@@ -9,7 +9,6 @@ import typings.loopback.anon.Order
 import typings.loopback.anon.Throws
 import typings.loopback.anon.Validate
 import typings.loopback.anon.Where
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +26,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "PersistedModel")
 @js.native
-class PersistedModel protected () extends Model {
-  def this(data: js.Any) = this()
+open class PersistedModel protected () extends Model {
+  def this(data: Any) = this()
   
   /**
     * Deletes the model from persistence.
@@ -46,7 +45,7 @@ class PersistedModel protected () extends Model {
     * Get the `id` value for the `PersistedModel`
     * @returns {*} The `id` valu
     */
-  def getId(): js.Any = js.native
+  def getId(): Any = js.native
   
   /**
     * Get the `id` property name of the constructor
@@ -79,7 +78,7 @@ class PersistedModel protected () extends Model {
     * @options {any} [options] Options for replace
     * @property {boolean} validate Perform validation before saving.  Default is true.
     */
-  def replaceAttributes[T](data: js.Any): js.Promise[T] = js.native
+  def replaceAttributes[T](data: Any): js.Promise[T] = js.native
   /**
     * Replace attributes for a model instance and persist it into the datasource.
     * Performs validation before replacing
@@ -88,8 +87,8 @@ class PersistedModel protected () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Replaced instance
     */
-  def replaceAttributes[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def replaceAttributes[T](data: js.Any, options: Validate): js.Promise[T] = js.native
+  def replaceAttributes[T](data: Any, callback: CallbackWithResult[T]): Unit = js.native
+  def replaceAttributes[T](data: Any, options: Validate): js.Promise[T] = js.native
   /**
     * Replace attributes for a model instance and persist it into the datasource.
     * Performs validation before replacing
@@ -100,7 +99,7 @@ class PersistedModel protected () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Replaced instance
     */
-  def replaceAttributes[T](data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
+  def replaceAttributes[T](data: Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
   
   /**
     * Save model instance. If the instance doesn't have an ID, then calls [create](#persistedmodelcreatedata-cb) instead.
@@ -139,7 +138,7 @@ class PersistedModel protected () extends Model {
     * Override this method to handle complex IDs
     * @param {*} val The `id` value. Will be converted to the type that the `id` property specifies
     */
-  def setId(`val`: js.Any): Unit = js.native
+  def setId(`val`: Any): Unit = js.native
   
   /**
     * Update a single attribute.
@@ -147,7 +146,7 @@ class PersistedModel protected () extends Model {
     * @param {string} name Name of property.
     * @param {any} value Value of property.
     */
-  def updateAttribute[T](name: String, value: js.Any): js.Promise[T] = js.native
+  def updateAttribute[T](name: String, value: Any): js.Promise[T] = js.native
   /**
     * Update a single attribute.
     * Equivalent to `updateAttributes({name: 'value'}, cb)
@@ -157,14 +156,14 @@ class PersistedModel protected () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Updated instance
     */
-  def updateAttribute[T](name: String, value: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  def updateAttribute[T](name: String, value: Any, callback: CallbackWithResult[T]): Unit = js.native
   
   /**
     * Update set of attributes.  Performs validation before updating
     * Triggers: `validation`, `save` and `update` hooks
     * @param {any} data Data to update.
     */
-  def updateAttributes[T](data: js.Any): js.Promise[T] = js.native
+  def updateAttributes[T](data: Any): js.Promise[T] = js.native
   /**
     * Update set of attributes.  Performs validation before updating
     * Triggers: `validation`, `save` and `update` hooks
@@ -173,7 +172,7 @@ class PersistedModel protected () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Updated instance
     */
-  def updateAttributes[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  def updateAttributes[T](data: Any, callback: CallbackWithResult[T]): Unit = js.native
 }
 object PersistedModel {
   
@@ -189,7 +188,7 @@ object PersistedModel {
     * @param  {() => void} callback Callback function
     */
   /* static member */
-  inline def bulkUpdate(updates: js.Array[js.Any], options: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bulkUpdate")(updates.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def bulkUpdate(updates: js.Array[Any], options: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bulkUpdate")(updates.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   /**
     * Apply an update list
     * **Note: this is not atomic*
@@ -198,7 +197,7 @@ object PersistedModel {
     * @param  {() => void} callback Callback function
     */
   /* static member */
-  inline def bulkUpdate(updates: js.Array[js.Any], options: js.Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bulkUpdate")(updates.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bulkUpdate(updates: js.Array[Any], options: Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bulkUpdate")(updates.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the changes to a model since the specified checkpoint. Provide a filter object
@@ -210,7 +209,7 @@ object PersistedModel {
     * @param {Array} changes An Array of [Change](#change) objects
     */
   /* static member */
-  inline def changes(since: Double, filter: js.Any): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("changes")(since.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def changes(since: Double, filter: Any): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("changes")(since.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   /**
     * Get the changes to a model since the specified checkpoint. Provide a filter object
     * to reduce the number of results returned.
@@ -221,7 +220,7 @@ object PersistedModel {
     * @param {Array} changes An Array of [Change](#change) objects
     */
   /* static member */
-  inline def changes(since: Double, filter: js.Any, callback: CallbackWithResult[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changes")(since.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def changes(since: Double, filter: Any, callback: CallbackWithResult[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changes")(since.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a checkpoint
@@ -251,7 +250,7 @@ object PersistedModel {
     */
   /* static member */
   inline def count(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[js.Promise[Double]]
-  inline def count(where: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def count(where: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   /**
     * Return the number of records that match the optional "where" filter.
     * @param {any} [where] Optional where filter, like
@@ -265,7 +264,7 @@ object PersistedModel {
     * @param {number} count number of instances updated
     */
   /* static member */
-  inline def count(where: js.Any, callback: CallbackWithResult[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(where.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def count(where: Any, callback: CallbackWithResult[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(where.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create new instance of Model, and save to database
@@ -274,7 +273,9 @@ object PersistedModel {
     */
   /* static member */
   inline def create[T](): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[T | js.Array[T] | Null]]
-  inline def create[T](data: js.Any): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | js.Array[T] | Null]]
+  inline def create[T](data: js.Array[Any]): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | js.Array[T] | Null]]
+  inline def create[T](data: js.Array[Any], callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create[T](data: Any): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | js.Array[T] | Null]]
   /**
     * Create new instance of Model, and save to database
     * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
@@ -283,9 +284,7 @@ object PersistedModel {
     * @param {any} models Model instances or null
     */
   /* static member */
-  inline def create[T](data: js.Any, callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def create[T](data: js.Array[js.Any]): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | js.Array[T] | Null]]
-  inline def create[T](data: js.Array[js.Any], callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create[T](data: Any, callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a change stream. See here for more info http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html
@@ -293,14 +292,14 @@ object PersistedModel {
     * @returns {any} changes
     */
   /* static member */
-  inline def createChangeStream(options: Where): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeStream")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def createChangeStream(options: Where): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeStream")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   /**
     * Create a change stream. See here for more info http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html
     * @param {any} options Only changes to models matching this where filter will be included in the ChangeStream.
     * @param {() => void} callback
     */
   /* static member */
-  inline def createChangeStream(options: Where, callback: CallbackWithResult[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createChangeStream")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createChangeStream(options: Where, callback: CallbackWithResult[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createChangeStream")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create an update list (for `Model.bulkUpdate()`) from a delta list
@@ -308,7 +307,7 @@ object PersistedModel {
     * @param  {Array}    deltas
     */
   /* static member */
-  inline def createUpdates(deltas: js.Array[js.Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUpdates")(deltas.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def createUpdates(deltas: js.Array[Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUpdates")(deltas.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Create an update list (for `Model.bulkUpdate()`) from a delta list
     * (result of `Change.diff()`)
@@ -316,7 +315,7 @@ object PersistedModel {
     * @param  {() => void} callback
     */
   /* static member */
-  inline def createUpdates(deltas: js.Array[js.Any], callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUpdates")(deltas.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createUpdates(deltas: js.Array[Any], callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUpdates")(deltas.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the current checkpoint ID
@@ -346,7 +345,7 @@ object PersistedModel {
     */
   /* static member */
   inline def destroyAll(): js.Promise[Info] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")().asInstanceOf[js.Promise[Info]]
-  inline def destroyAll(where: js.Any): js.Promise[Info] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Info]]
+  inline def destroyAll(where: Any): js.Promise[Info] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Info]]
   /**
     * Destroy all model instances that match the optional `where` specification
     * @param {any} [where] Optional where filter, like:
@@ -362,14 +361,14 @@ object PersistedModel {
     * @param {number} info.count number of instances (rows, documents) destroyed
     */
   /* static member */
-  inline def destroyAll(where: js.Any, callback: CallbackWithMultipleResults[js.Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")(where.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def destroyAll(where: Any, callback: CallbackWithMultipleResults[Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")(where.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Destroy model instance with the specified ID.
     * @param {*} id The ID value of model instance to delete.
     */
   /* static member */
-  inline def destroyById(id: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def destroyById(id: Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Destroy model instance with the specified ID.
     * @param {*} id The ID value of model instance to delete.
@@ -377,7 +376,7 @@ object PersistedModel {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object)
     */
   /* static member */
-  inline def destroyById(id: js.Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyById")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def destroyById(id: Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyById")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get a set of deltas and conflicts since the given checkpoint
@@ -386,7 +385,7 @@ object PersistedModel {
     * @param  {Array}  remoteChanges  An Array of change objects.
     */
   /* static member */
-  inline def diff(since: Double, remoteChanges: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(since.asInstanceOf[js.Any], remoteChanges.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def diff(since: Double, remoteChanges: js.Array[Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(since.asInstanceOf[js.Any], remoteChanges.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   /**
     * Get a set of deltas and conflicts since the given checkpoint
     * See [Change.diff()](#change-diff) for details
@@ -397,7 +396,7 @@ object PersistedModel {
     * @param {any} result any with `deltas` and `conflicts` properties; see [Change.diff()](#change-diff) for details
     */
   /* static member */
-  inline def diff(since: Double, remoteChanges: js.Array[js.Any], callback: CallbackWithResult[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(since.asInstanceOf[js.Any], remoteChanges.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diff(since: Double, remoteChanges: js.Array[Any], callback: CallbackWithResult[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(since.asInstanceOf[js.Any], remoteChanges.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Enable the tracking of changes made to the model. Usually for replication.
@@ -410,7 +409,7 @@ object PersistedModel {
     * @param {id} id Identifier of object (primary key value)
     */
   /* static member */
-  inline def exists(id: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def exists(id: Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   /**
     * Check whether a model instance exists in database
     * @param {id} id Identifier of object (primary key value)
@@ -419,7 +418,7 @@ object PersistedModel {
     * @param {boolean} exists True if the instance with the specified ID exists; false otherwise
     */
   /* static member */
-  inline def exists(id: js.Any, callback: CallbackWithResult[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def exists(id: Any, callback: CallbackWithResult[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Find all model instances that match `filter` specification.
@@ -482,7 +481,7 @@ object PersistedModel {
     * <br/>See [Include filter](docs.strongloop.com/display/LB/Include+filter).
     */
   /* static member */
-  inline def findById[T](id: js.Any): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | Null]]
+  inline def findById[T](id: Any): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | Null]]
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -491,8 +490,8 @@ object PersistedModel {
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
   /* static member */
-  inline def findById[T](id: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def findById[T](id: js.Any, filter: Include): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
+  inline def findById[T](id: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findById[T](id: Any, filter: Include): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -506,7 +505,7 @@ object PersistedModel {
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
   /* static member */
-  inline def findById[T](id: js.Any, filter: Include, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findById[T](id: Any, filter: Include, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Find one model instance that matches `filter` specification.
@@ -594,7 +593,7 @@ object PersistedModel {
     * @param {any} data Data to insert if object matching the `where` filter is not found.
     */
   /* static member */
-  inline def findOrCreate[T](data: js.Any): js.Promise[Created[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Created[T] | Null]]
+  inline def findOrCreate[T](data: Any): js.Promise[Created[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Created[T] | Null]]
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -609,8 +608,8 @@ object PersistedModel {
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
   /* static member */
-  inline def findOrCreate[T](data: js.Any, callback: CallbackWithMultipleResults[T, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def findOrCreate[T](data: js.Any, filter: Fields): js.Promise[Created[T] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Created[T] | Null]]
+  inline def findOrCreate[T](data: Any, callback: CallbackWithMultipleResults[T, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findOrCreate[T](data: Any, filter: Fields): js.Promise[Created[T] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Created[T] | Null]]
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -642,7 +641,7 @@ object PersistedModel {
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
   /* static member */
-  inline def findOrCreate[T](data: js.Any, filter: Fields, callback: CallbackWithMultipleResults[T, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findOrCreate[T](data: Any, filter: Fields, callback: CallbackWithMultipleResults[T, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the `Change` model.
@@ -678,14 +677,14 @@ object PersistedModel {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object)
     */
   /* static member */
-  inline def handleChangeError(err: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleChangeError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleChangeError(err: js.Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleChangeError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Specify that a change to the model with the given ID has occurred
     * @param {*} id The ID of the model that has changed.
     */
   /* static member */
-  inline def rectifyChange(id: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rectifyChange")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def rectifyChange(id: Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rectifyChange")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Specify that a change to the model with the given ID has occurred
     * @param {*} id The ID of the model that has changed.
@@ -693,7 +692,7 @@ object PersistedModel {
     * @param {Error} er
     */
   /* static member */
-  inline def rectifyChange(id: js.Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rectifyChange")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rectifyChange(id: Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rectifyChange")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Replace attributes for a model instance whose id is the first input
@@ -705,7 +704,7 @@ object PersistedModel {
     * @property {boolean} validate Perform validation before saving.  Default is true.
     */
   /* static member */
-  inline def replaceById[T](id: js.Any, data: js.Any): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def replaceById[T](id: Any, data: Any): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   /**
     * Replace attributes for a model instance whose id is the first input
     * argument and persist it into the datasource.
@@ -717,8 +716,8 @@ object PersistedModel {
     * @param {any} instance Replaced instance
     */
   /* static member */
-  inline def replaceById[T](id: js.Any, data: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def replaceById[T](id: js.Any, data: js.Any, options: Validate): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def replaceById[T](id: Any, data: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceById[T](id: Any, data: Any, options: Validate): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   /**
     * Replace attributes for a model instance whose id is the first input
     * argument and persist it into the datasource.
@@ -732,7 +731,7 @@ object PersistedModel {
     * @param {any} instance Replaced instance
     */
   /* static member */
-  inline def replaceById[T](id: js.Any, data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceById[T](id: Any, data: Any, options: Validate, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Replace or insert a model instance; replace existing record if one is found,
@@ -743,7 +742,7 @@ object PersistedModel {
     * @property {boolean} validate Perform validation before saving.  Default is true.
     */
   /* static member */
-  inline def replaceOrCreate[T](data: js.Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def replaceOrCreate[T](data: Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -754,8 +753,8 @@ object PersistedModel {
     * @param {any} model Replaced model instance.
     */
   /* static member */
-  inline def replaceOrCreate[T](data: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def replaceOrCreate[T](data: js.Any, options: Validate): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def replaceOrCreate[T](data: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceOrCreate[T](data: Any, options: Validate): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -768,7 +767,7 @@ object PersistedModel {
     * @param {any} model Replaced model instance.
     */
   /* static member */
-  inline def replaceOrCreate[T](data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceOrCreate[T](data: Any, options: Validate, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Replicate changes since the given checkpoint to the given target model
@@ -785,131 +784,131 @@ object PersistedModel {
   /* static member */
   inline def replicate(): js.Promise[Conflicts] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replicate")().asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(since: Double): js.Promise[Conflicts] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Double, targetModel: Unit, options: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Double, targetModel: Unit, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Unit, options: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Unit, options: Any, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Double,
     targetModel: Unit,
-    options: js.Any,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    options: Any,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Double,
     targetModel: Unit,
-    options: js.Any,
+    options: Any,
     optionsFilter: Unit,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Double, targetModel: Unit, options: Unit, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Unit, options: Unit, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Double,
     targetModel: Unit,
     options: Unit,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Double,
     targetModel: Unit,
     options: Unit,
     optionsFilter: Unit,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(since: Double, targetModel: Model): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Double, targetModel: Model, options: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Double, targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Model, options: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Model, options: Any, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Double,
     targetModel: Model,
-    options: js.Any,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(
-    since: Double,
-    targetModel: Model,
-    options: js.Any,
-    optionsFilter: Unit,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Double, targetModel: Model, options: Unit, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(
-    since: Double,
-    targetModel: Model,
-    options: Unit,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    options: Any,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Double,
     targetModel: Model,
+    options: Any,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Model, options: Unit, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Double,
+    targetModel: Model,
+    options: Unit,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Double,
+    targetModel: Model,
     options: Unit,
     optionsFilter: Unit,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Unit, targetModel: Unit, options: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Unit, targetModel: Unit, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Unit, options: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Unit, options: Any, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Unit,
     targetModel: Unit,
-    options: js.Any,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    options: Any,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Unit,
     targetModel: Unit,
-    options: js.Any,
+    options: Any,
     optionsFilter: Unit,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Unit, targetModel: Unit, options: Unit, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Unit, options: Unit, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Unit,
     targetModel: Unit,
     options: Unit,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Unit,
     targetModel: Unit,
     options: Unit,
     optionsFilter: Unit,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(since: Unit, targetModel: Model): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Unit, targetModel: Model, options: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Unit, targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Model, options: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Model, options: Any, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Unit,
     targetModel: Model,
-    options: js.Any,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    options: Any,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Unit,
     targetModel: Model,
-    options: js.Any,
+    options: Any,
     optionsFilter: Unit,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
-  inline def replicate(since: Unit, targetModel: Model, options: Unit, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Model, options: Unit, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Unit,
     targetModel: Model,
     options: Unit,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   inline def replicate(
     since: Unit,
     targetModel: Model,
     options: Unit,
     optionsFilter: Unit,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
   ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   
   /**
@@ -942,7 +941,7 @@ object PersistedModel {
     *
     */
   /* static member */
-  inline def updateAll(callback: CallbackWithMultipleResults[js.Any, Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def updateAll(callback: CallbackWithMultipleResults[Any, Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Update multiple instances that match the where clause.
     *
@@ -969,9 +968,9 @@ object PersistedModel {
     *
     */
   /* static member */
-  inline def updateAll(whereOrData: js.Any, callback: CallbackWithMultipleResults[js.Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(whereOrData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def updateAll(where: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
-  inline def updateAll(where: js.Any, data: js.Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  inline def updateAll(whereOrData: Any, callback: CallbackWithMultipleResults[Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(whereOrData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateAll(where: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def updateAll(where: Any, data: Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   /**
     * Update multiple instances that match the where clause.
     *
@@ -998,8 +997,8 @@ object PersistedModel {
     *
     */
   /* static member */
-  inline def updateAll(where: js.Any, data: js.Any, callback: CallbackWithMultipleResults[js.Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def updateAll(where: Unit, data: js.Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  inline def updateAll(where: Any, data: Any, callback: CallbackWithMultipleResults[Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateAll(where: Unit, data: Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
   /**
     * Update or insert a model instance
@@ -1009,7 +1008,7 @@ object PersistedModel {
     * @param {any} model Updated model instance
     */
   /* static member */
-  inline def upsert[T](data: js.Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("upsert")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def upsert[T](data: Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("upsert")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   /**
     * Update or insert a model instance
     * @param {any} data The model instance data to insert.
@@ -1018,7 +1017,7 @@ object PersistedModel {
     * @param {any} model Updated model instance
     */
   /* static member */
-  inline def upsert[T](data: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upsert")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def upsert[T](data: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upsert")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Update or insert a model instance based on the search criteria.
@@ -1034,7 +1033,7 @@ object PersistedModel {
     * @param {any} data The model instance data to insert.
     */
   /* static member */
-  inline def upsertWithWhere[T](data: js.Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("upsertWithWhere")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def upsertWithWhere[T](data: Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("upsertWithWhere")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   /**
     * Update or insert a model instance based on the search criteria.
     * If there is a single instance retrieved, update the retrieved model.
@@ -1052,5 +1051,5 @@ object PersistedModel {
     * @param {any} model Updated model instance
     */
   /* static member */
-  inline def upsertWithWhere[T](data: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upsertWithWhere")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def upsertWithWhere[T](data: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upsertWithWhere")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

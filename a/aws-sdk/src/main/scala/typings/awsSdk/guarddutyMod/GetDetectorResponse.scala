@@ -12,7 +12,7 @@ trait GetDetectorResponse extends StObject {
   var CreatedAt: js.UndefOr[String] = js.undefined
   
   /**
-    * An object that describes which data sources are enabled for the detector.
+    * Describes which data sources are enabled for the detector.
     */
   var DataSources: js.UndefOr[DataSourceConfigurationsResult] = js.undefined
   

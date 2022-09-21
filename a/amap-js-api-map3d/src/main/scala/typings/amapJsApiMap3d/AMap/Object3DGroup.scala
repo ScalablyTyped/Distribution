@@ -39,7 +39,7 @@ object Object3DGroup {
     
     inline def setChildren(value: js.Array[C]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: C*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: C*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setRemove(value: C => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }

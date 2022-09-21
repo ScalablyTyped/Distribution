@@ -14,7 +14,7 @@ trait CommonWidgetProps extends StObject {
     *
     * https://community.algolia.com/react-instantsearch/guide/i18n.html
     */
-  var translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ js.Any, js.Any])]] = js.undefined
+  var translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ Any, Any])]] = js.undefined
 }
 object CommonWidgetProps {
   
@@ -25,7 +25,7 @@ object CommonWidgetProps {
   
   extension [Self <: CommonWidgetProps](x: Self) {
     
-    inline def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, js.Any])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ Any, Any])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
   }

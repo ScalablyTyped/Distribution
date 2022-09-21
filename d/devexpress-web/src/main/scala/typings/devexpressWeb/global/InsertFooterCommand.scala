@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertFooterCommand")
 @js.native
-class InsertFooterCommand ()
+open class InsertFooterCommand ()
   extends StObject
      with typings.devexpressWeb.InsertFooterCommand {
   

@@ -9,7 +9,7 @@ trait AppointmentDialogClosingEventUIParam extends StObject {
   /**
     * Gets a reference to the appointment dialog.
     */
-  var element: js.UndefOr[js.Any] = js.undefined
+  var element: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets whether we are creating or updating an appointment.
@@ -19,7 +19,7 @@ trait AppointmentDialogClosingEventUIParam extends StObject {
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object AppointmentDialogClosingEventUIParam {
   
@@ -30,7 +30,7 @@ object AppointmentDialogClosingEventUIParam {
   
   extension [Self <: AppointmentDialogClosingEventUIParam](x: Self) {
     
-    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
@@ -38,7 +38,7 @@ object AppointmentDialogClosingEventUIParam {
     
     inline def setIsAppointmentNewUndefined: Self = StObject.set(x, "isAppointmentNew", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

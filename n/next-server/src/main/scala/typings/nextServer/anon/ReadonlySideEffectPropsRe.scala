@@ -16,11 +16,11 @@ trait ReadonlySideEffectPropsRe extends StObject {
   
   val inAmpMode: js.UndefOr[Boolean] = js.undefined
   
-  val reduceComponentsToState: js.Function2[/* components */ js.Array[ReactElement], /* props */ js.Any, State]
+  val reduceComponentsToState: js.Function2[/* components */ js.Array[ReactElement], /* props */ Any, State]
 }
 object ReadonlySideEffectPropsRe {
   
-  inline def apply(reduceComponentsToState: (/* components */ js.Array[ReactElement], /* props */ js.Any) => State): ReadonlySideEffectPropsRe = {
+  inline def apply(reduceComponentsToState: (/* components */ js.Array[ReactElement], /* props */ Any) => State): ReadonlySideEffectPropsRe = {
     val __obj = js.Dynamic.literal(reduceComponentsToState = js.Any.fromFunction2(reduceComponentsToState))
     __obj.asInstanceOf[ReadonlySideEffectPropsRe]
   }
@@ -39,6 +39,6 @@ object ReadonlySideEffectPropsRe {
     
     inline def setInAmpModeUndefined: Self = StObject.set(x, "inAmpMode", js.undefined)
     
-    inline def setReduceComponentsToState(value: (/* components */ js.Array[ReactElement], /* props */ js.Any) => State): Self = StObject.set(x, "reduceComponentsToState", js.Any.fromFunction2(value))
+    inline def setReduceComponentsToState(value: (/* components */ js.Array[ReactElement], /* props */ Any) => State): Self = StObject.set(x, "reduceComponentsToState", js.Any.fromFunction2(value))
   }
 }

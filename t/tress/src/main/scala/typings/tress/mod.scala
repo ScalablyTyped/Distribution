@@ -1,7 +1,6 @@
 package typings.tress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.tress.tressStrings.missing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +34,7 @@ object mod {
   
   trait TressJob extends StObject {
     
-    def callback(args: js.Any*): Unit
+    def callback(args: Any*): Unit
     @JSName("callback")
     var callback_Original: TressJobCallback
     
@@ -59,7 +58,7 @@ object mod {
   @js.native
   trait TressJobCallback extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   type TressJobData = StringDictionary[js.Object]
@@ -83,15 +82,15 @@ object mod {
       
       inline def setFailed(value: js.Array[TressJobData]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      inline def setFailedVarargs(value: TressJobData*): Self = StObject.set(x, "failed", js.Array(value :_*))
+      inline def setFailedVarargs(value: TressJobData*): Self = StObject.set(x, "failed", js.Array(value*))
       
       inline def setFinished(value: js.Array[TressJobData]): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
       
-      inline def setFinishedVarargs(value: TressJobData*): Self = StObject.set(x, "finished", js.Array(value :_*))
+      inline def setFinishedVarargs(value: TressJobData*): Self = StObject.set(x, "finished", js.Array(value*))
       
       inline def setWaiting(value: js.Array[TressJobData]): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
       
-      inline def setWaitingVarargs(value: TressJobData*): Self = StObject.set(x, "waiting", js.Array(value :_*))
+      inline def setWaitingVarargs(value: TressJobData*): Self = StObject.set(x, "waiting", js.Array(value*))
     }
   }
   
@@ -129,7 +128,7 @@ object mod {
       * A callback that is called when job failed (worker call done with error as first argument).
       * Note, that this callback is called after job has been moved from active to failed/finished and after job callback (from push/unshift) was called
       */
-    def error(err: Error, job: TressJobData, args: js.Any*): Unit = js.native
+    def error(err: js.Error, job: TressJobData, args: Any*): Unit = js.native
     
     /**
       * Array of failed jobs
@@ -197,7 +196,7 @@ object mod {
     /**
       * A  callback that is called when job returned to queue (worker call done with boolean as first argument)
       */
-    def retry(args: js.Any*): Unit = js.native
+    def retry(args: Any*): Unit = js.native
     
     /**
       * Returns the number of items currently being processed
@@ -230,7 +229,7 @@ object mod {
       * A callback that is called when job correctly finished (worker call done with null or undefined as first argument).
       * Note, that this callback is called after job has been moved from active to failed/finished and after job callback (from push/unshift) was called
       */
-    def success(args: js.Any*): Unit = js.native
+    def success(args: Any*): Unit = js.native
     
     /**
       * A callback that is called when the number of running workers is less than the concurrency & buffer limits, and further jobs will not be queued
@@ -262,9 +261,9 @@ object mod {
   @js.native
   trait TressWorkerDoneCallback extends StObject {
     
-    def apply(err: Boolean, args: js.Any*): Unit = js.native
-    def apply(err: Null, args: js.Any*): Unit = js.native
-    def apply(err: Unit, args: js.Any*): Unit = js.native
-    def apply(err: Error, args: js.Any*): Unit = js.native
+    def apply(err: js.Error, args: Any*): Unit = js.native
+    def apply(err: Boolean, args: Any*): Unit = js.native
+    def apply(err: Null, args: Any*): Unit = js.native
+    def apply(err: Unit, args: Any*): Unit = js.native
   }
 }

@@ -22,7 +22,7 @@ object streamLayerViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with StreamLayerView {
     def this(properties: StreamLayerViewProperties) = this()

@@ -50,7 +50,7 @@ object sqsMod {
   
   @JSImport("@aws-sdk/client-sqs-node/SQS", "SQS")
   @js.native
-  class SQS protected () extends SQSClient {
+  open class SQS protected () extends SQSClient {
     def this(configuration: SQSConfiguration) = this()
     
     /**
@@ -63,7 +63,7 @@ object sqsMod {
     def addPermission(args: AddPermissionInput): js.Promise[AddPermissionOutput] = js.native
     def addPermission(
       args: AddPermissionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[AddPermissionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[AddPermissionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -77,7 +77,7 @@ object sqsMod {
     def changeMessageVisibility(args: ChangeMessageVisibilityInput): js.Promise[ChangeMessageVisibilityOutput] = js.native
     def changeMessageVisibility(
       args: ChangeMessageVisibilityInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ChangeMessageVisibilityOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ChangeMessageVisibilityOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -93,7 +93,7 @@ object sqsMod {
     def changeMessageVisibilityBatch(args: ChangeMessageVisibilityBatchInput): js.Promise[ChangeMessageVisibilityBatchOutput] = js.native
     def changeMessageVisibilityBatch(
       args: ChangeMessageVisibilityBatchInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ChangeMessageVisibilityBatchOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ChangeMessageVisibilityBatchOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -107,7 +107,7 @@ object sqsMod {
     def createQueue(args: CreateQueueInput): js.Promise[CreateQueueOutput] = js.native
     def createQueue(
       args: CreateQueueInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateQueueOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateQueueOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -121,7 +121,7 @@ object sqsMod {
     def deleteMessage(args: DeleteMessageInput): js.Promise[DeleteMessageOutput] = js.native
     def deleteMessage(
       args: DeleteMessageInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteMessageOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteMessageOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -137,7 +137,7 @@ object sqsMod {
     def deleteMessageBatch(args: DeleteMessageBatchInput): js.Promise[DeleteMessageBatchOutput] = js.native
     def deleteMessageBatch(
       args: DeleteMessageBatchInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteMessageBatchOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteMessageBatchOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -149,7 +149,7 @@ object sqsMod {
     def deleteQueue(args: DeleteQueueInput): js.Promise[DeleteQueueOutput] = js.native
     def deleteQueue(
       args: DeleteQueueInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteQueueOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteQueueOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -162,7 +162,7 @@ object sqsMod {
     def getQueueAttributes(args: GetQueueAttributesInput): js.Promise[GetQueueAttributesOutput] = js.native
     def getQueueAttributes(
       args: GetQueueAttributesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetQueueAttributesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetQueueAttributesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -175,7 +175,7 @@ object sqsMod {
     def getQueueUrl(args: GetQueueUrlInput): js.Promise[GetQueueUrlOutput] = js.native
     def getQueueUrl(
       args: GetQueueUrlInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetQueueUrlOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetQueueUrlOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -188,7 +188,7 @@ object sqsMod {
     def listDeadLetterSourceQueues(args: ListDeadLetterSourceQueuesInput): js.Promise[ListDeadLetterSourceQueuesOutput] = js.native
     def listDeadLetterSourceQueues(
       args: ListDeadLetterSourceQueuesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListDeadLetterSourceQueuesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListDeadLetterSourceQueuesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -200,7 +200,7 @@ object sqsMod {
     def listQueueTags(args: ListQueueTagsInput): js.Promise[ListQueueTagsOutput] = js.native
     def listQueueTags(
       args: ListQueueTagsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListQueueTagsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListQueueTagsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -212,7 +212,7 @@ object sqsMod {
     def listQueues(args: ListQueuesInput): js.Promise[ListQueuesOutput] = js.native
     def listQueues(
       args: ListQueuesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListQueuesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListQueuesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -226,7 +226,7 @@ object sqsMod {
     def purgeQueue(args: PurgeQueueInput): js.Promise[PurgeQueueOutput] = js.native
     def purgeQueue(
       args: PurgeQueueInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PurgeQueueOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PurgeQueueOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -239,7 +239,7 @@ object sqsMod {
     def receiveMessage(args: ReceiveMessageInput): js.Promise[ReceiveMessageOutput] = js.native
     def receiveMessage(
       args: ReceiveMessageInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ReceiveMessageOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ReceiveMessageOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -251,7 +251,7 @@ object sqsMod {
     def removePermission(args: RemovePermissionInput): js.Promise[RemovePermissionOutput] = js.native
     def removePermission(
       args: RemovePermissionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RemovePermissionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RemovePermissionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -265,7 +265,7 @@ object sqsMod {
     def sendMessage(args: SendMessageInput): js.Promise[SendMessageOutput] = js.native
     def sendMessage(
       args: SendMessageInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SendMessageOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SendMessageOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -283,7 +283,7 @@ object sqsMod {
     def sendMessageBatch(args: SendMessageBatchInput): js.Promise[SendMessageBatchOutput] = js.native
     def sendMessageBatch(
       args: SendMessageBatchInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SendMessageBatchOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SendMessageBatchOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -296,7 +296,7 @@ object sqsMod {
     def setQueueAttributes(args: SetQueueAttributesInput): js.Promise[SetQueueAttributesOutput] = js.native
     def setQueueAttributes(
       args: SetQueueAttributesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SetQueueAttributesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SetQueueAttributesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -306,10 +306,7 @@ object sqsMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def tagQueue(args: TagQueueInput): js.Promise[TagQueueOutput] = js.native
-    def tagQueue(
-      args: TagQueueInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[TagQueueOutput], Unit]
-    ): Unit = js.native
+    def tagQueue(args: TagQueueInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[TagQueueOutput], Unit]): Unit = js.native
     
     /**
       * <p>Remove cost allocation tags from the specified Amazon SQS queue. For an overview, see <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-queue-tags.html">Tagging Your Amazon SQS Queues</a> in the <i>Amazon Simple Queue Service Developer Guide</i>.</p> <p>When you use queue tags, keep the following guidelines in mind:</p> <ul> <li> <p>Adding more than 50 tags to a queue isn't recommended.</p> </li> <li> <p>Tags don't have any semantic meaning. Amazon SQS interprets tags as character strings.</p> </li> <li> <p>Tags are case-sensitive.</p> </li> <li> <p>A new tag with a key identical to that of an existing tag overwrites the existing tag.</p> </li> <li> <p>Tagging actions are limited to 5 TPS per AWS account. If your application requires a higher throughput, file a <a href="https://console.aws.amazon.com/support/home#/case/create?issueType=technical">technical support request</a>.</p> </li> </ul> <p>For a full list of tag restrictions, see <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-limits.html#limits-queues">Limits Related to Queues</a> in the <i>Amazon Simple Queue Service Developer Guide</i>.</p> <note> <p>Cross-account permissions don't apply to this action. For more information, see see <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-customer-managed-policy-examples.html#grant-cross-account-permissions-to-role-and-user-name">Grant Cross-Account Permissions to a Role and a User Name</a> in the <i>Amazon Simple Queue Service Developer Guide</i>.</p> </note>
@@ -320,7 +317,7 @@ object sqsMod {
     def untagQueue(args: UntagQueueInput): js.Promise[UntagQueueOutput] = js.native
     def untagQueue(
       args: UntagQueueInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UntagQueueOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UntagQueueOutput], Unit]
     ): Unit = js.native
   }
 }

@@ -188,10 +188,17 @@ object googlepayStrings {
   inline def NOT_CURRENTLY_KNOWN: NOT_CURRENTLY_KNOWN = "NOT_CURRENTLY_KNOWN".asInstanceOf[NOT_CURRENTLY_KNOWN]
   
   @js.native
-  sealed trait OFFER_INFO
+  sealed trait OFFER
     extends StObject
+       with CallbackIntent
        with CallbackTrigger
-  inline def OFFER_INFO: OFFER_INFO = "OFFER_INFO".asInstanceOf[OFFER_INFO]
+  inline def OFFER: OFFER = "OFFER".asInstanceOf[OFFER]
+  
+  @js.native
+  sealed trait OFFER_INVALID
+    extends StObject
+       with ErrorReason
+  inline def OFFER_INVALID: OFFER_INVALID = "OFFER_INVALID".asInstanceOf[OFFER_INVALID]
   
   @js.native
   sealed trait OTHER_ERROR
@@ -317,10 +324,22 @@ object googlepayStrings {
   inline def black: black = "black".asInstanceOf[black]
   
   @js.native
+  sealed trait book
+    extends StObject
+       with ButtonType
+  inline def book: book = "book".asInstanceOf[book]
+  
+  @js.native
   sealed trait buy
     extends StObject
        with ButtonType
   inline def buy: buy = "buy".asInstanceOf[buy]
+  
+  @js.native
+  sealed trait checkout
+    extends StObject
+       with ButtonType
+  inline def checkout: checkout = "checkout".asInstanceOf[checkout]
   
   @js.native
   sealed trait default_
@@ -347,6 +366,18 @@ object googlepayStrings {
   inline def long: long = "long".asInstanceOf[long]
   
   @js.native
+  sealed trait order
+    extends StObject
+       with ButtonType
+  inline def order: order = "order".asInstanceOf[order]
+  
+  @js.native
+  sealed trait pay
+    extends StObject
+       with ButtonType
+  inline def pay: pay = "pay".asInstanceOf[pay]
+  
+  @js.native
   sealed trait plain
     extends StObject
        with ButtonType
@@ -363,6 +394,12 @@ object googlepayStrings {
     extends StObject
        with ButtonSizeMode
   inline def static: static = "static".asInstanceOf[static]
+  
+  @js.native
+  sealed trait subscribe
+    extends StObject
+       with ButtonType
+  inline def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
   
   @js.native
   sealed trait white

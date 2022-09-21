@@ -10,10 +10,10 @@ Provides a function for detecting if input is iterable
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/is-iterable |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 292212 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16122.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fis-iterable)

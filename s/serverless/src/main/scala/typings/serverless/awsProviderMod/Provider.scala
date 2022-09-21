@@ -1,9 +1,12 @@
 package typings.serverless.awsProviderMod
 
 import typings.serverless.serverlessStrings.`private`
+import typings.serverless.serverlessStrings.arm64
 import typings.serverless.serverlessStrings.aws
 import typings.serverless.serverlessStrings.edge
 import typings.serverless.serverlessStrings.regional
+import typings.serverless.serverlessStrings.x86_64
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +21,9 @@ trait Provider extends StObject {
   
   var apiName: js.UndefOr[String] = js.undefined
   
+  var architecture: js.UndefOr[x86_64 | arm64] = js.undefined
+  
+  /** @deprecated in favor of `iam.deploymentRole` */
   var cfnRole: js.UndefOr[String] = js.undefined
   
   var deploymentBucket: js.UndefOr[DeploymentBucket] = js.undefined
@@ -28,11 +34,23 @@ trait Provider extends StObject {
   
   var environment: js.UndefOr[Environment | String] = js.undefined
   
+  var eventBridge: js.UndefOr[EventBridge] = js.undefined
+  
   var httpApi: js.UndefOr[HttpApi] = js.undefined
   
+  var iam: js.UndefOr[IamSettings] = js.undefined
+  
+  /** @deprecated in favor of `iam.role.managedPolicies` */
   var iamManagedPolicies: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** @deprecated in favor of `iam.role.statements` */
   var iamRoleStatements: js.UndefOr[js.Array[IamRoleStatement]] = js.undefined
+  
+  var kmsKeyArn: js.UndefOr[String] = js.undefined
+  
+  var lambdaHashingVersion: js.UndefOr[Double] = js.undefined
+  
+  var layers: js.UndefOr[js.Array[String | (Record[String, String])]] = js.undefined
   
   var logRetentionInDays: js.UndefOr[Double | String] = js.undefined
   
@@ -52,8 +70,10 @@ trait Provider extends StObject {
   
   var resourcePolicy: js.UndefOr[js.Array[ResourcePolicy]] = js.undefined
   
+  /** @deprecated in favor of `iam.role` */
   var role: js.UndefOr[String] = js.undefined
   
+  /** @deprecated in favor of `iam.role.permissionsBoundary` */
   var rolePermissionsBoundary: js.UndefOr[String] = js.undefined
   
   var rollbackConfiguration: js.UndefOr[RollbackConfiguration] = js.undefined
@@ -80,7 +100,7 @@ trait Provider extends StObject {
   
   var versionFunctions: js.UndefOr[Boolean] = js.undefined
   
-  var vpc: js.UndefOr[Vpc] = js.undefined
+  var vpc: js.UndefOr[String | Vpc] = js.undefined
   
   var websocketsApiName: js.UndefOr[String] = js.undefined
   
@@ -107,11 +127,15 @@ object Provider {
     
     inline def setApiKeysUndefined: Self = StObject.set(x, "apiKeys", js.undefined)
     
-    inline def setApiKeysVarargs(value: String*): Self = StObject.set(x, "apiKeys", js.Array(value :_*))
+    inline def setApiKeysVarargs(value: String*): Self = StObject.set(x, "apiKeys", js.Array(value*))
     
     inline def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
     
     inline def setApiNameUndefined: Self = StObject.set(x, "apiName", js.undefined)
+    
+    inline def setArchitecture(value: x86_64 | arm64): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
     inline def setCfnRole(value: String): Self = StObject.set(x, "cfnRole", value.asInstanceOf[js.Any])
     
@@ -133,21 +157,43 @@ object Provider {
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
+    inline def setEventBridge(value: EventBridge): Self = StObject.set(x, "eventBridge", value.asInstanceOf[js.Any])
+    
+    inline def setEventBridgeUndefined: Self = StObject.set(x, "eventBridge", js.undefined)
+    
     inline def setHttpApi(value: HttpApi): Self = StObject.set(x, "httpApi", value.asInstanceOf[js.Any])
     
     inline def setHttpApiUndefined: Self = StObject.set(x, "httpApi", js.undefined)
+    
+    inline def setIam(value: IamSettings): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
     
     inline def setIamManagedPolicies(value: js.Array[String]): Self = StObject.set(x, "iamManagedPolicies", value.asInstanceOf[js.Any])
     
     inline def setIamManagedPoliciesUndefined: Self = StObject.set(x, "iamManagedPolicies", js.undefined)
     
-    inline def setIamManagedPoliciesVarargs(value: String*): Self = StObject.set(x, "iamManagedPolicies", js.Array(value :_*))
+    inline def setIamManagedPoliciesVarargs(value: String*): Self = StObject.set(x, "iamManagedPolicies", js.Array(value*))
     
     inline def setIamRoleStatements(value: js.Array[IamRoleStatement]): Self = StObject.set(x, "iamRoleStatements", value.asInstanceOf[js.Any])
     
     inline def setIamRoleStatementsUndefined: Self = StObject.set(x, "iamRoleStatements", js.undefined)
     
-    inline def setIamRoleStatementsVarargs(value: IamRoleStatement*): Self = StObject.set(x, "iamRoleStatements", js.Array(value :_*))
+    inline def setIamRoleStatementsVarargs(value: IamRoleStatement*): Self = StObject.set(x, "iamRoleStatements", js.Array(value*))
+    
+    inline def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
+    
+    inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+    
+    inline def setLambdaHashingVersion(value: Double): Self = StObject.set(x, "lambdaHashingVersion", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaHashingVersionUndefined: Self = StObject.set(x, "lambdaHashingVersion", js.undefined)
+    
+    inline def setLayers(value: js.Array[String | (Record[String, String])]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    
+    inline def setLayersVarargs(value: (String | (Record[String, String]))*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setLogRetentionInDays(value: Double | String): Self = StObject.set(x, "logRetentionInDays", value.asInstanceOf[js.Any])
     
@@ -167,7 +213,7 @@ object Provider {
     
     inline def setNotificationArnsUndefined: Self = StObject.set(x, "notificationArns", js.undefined)
     
-    inline def setNotificationArnsVarargs(value: String*): Self = StObject.set(x, "notificationArns", js.Array(value :_*))
+    inline def setNotificationArnsVarargs(value: String*): Self = StObject.set(x, "notificationArns", js.Array(value*))
     
     inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
@@ -185,7 +231,7 @@ object Provider {
     
     inline def setResourcePolicyUndefined: Self = StObject.set(x, "resourcePolicy", js.undefined)
     
-    inline def setResourcePolicyVarargs(value: ResourcePolicy*): Self = StObject.set(x, "resourcePolicy", js.Array(value :_*))
+    inline def setResourcePolicyVarargs(value: ResourcePolicy*): Self = StObject.set(x, "resourcePolicy", js.Array(value*))
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -211,13 +257,13 @@ object Provider {
     
     inline def setStackParametersUndefined: Self = StObject.set(x, "stackParameters", js.undefined)
     
-    inline def setStackParametersVarargs(value: StackParameters*): Self = StObject.set(x, "stackParameters", js.Array(value :_*))
+    inline def setStackParametersVarargs(value: StackParameters*): Self = StObject.set(x, "stackParameters", js.Array(value*))
     
     inline def setStackPolicy(value: js.Array[ResourcePolicy]): Self = StObject.set(x, "stackPolicy", value.asInstanceOf[js.Any])
     
     inline def setStackPolicyUndefined: Self = StObject.set(x, "stackPolicy", js.undefined)
     
-    inline def setStackPolicyVarargs(value: ResourcePolicy*): Self = StObject.set(x, "stackPolicy", js.Array(value :_*))
+    inline def setStackPolicyVarargs(value: ResourcePolicy*): Self = StObject.set(x, "stackPolicy", js.Array(value*))
     
     inline def setStackTags(value: Tags): Self = StObject.set(x, "stackTags", value.asInstanceOf[js.Any])
     
@@ -247,7 +293,7 @@ object Provider {
     
     inline def setVersionFunctionsUndefined: Self = StObject.set(x, "versionFunctions", js.undefined)
     
-    inline def setVpc(value: Vpc): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
+    inline def setVpc(value: String | Vpc): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
     inline def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
     

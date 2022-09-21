@@ -14,7 +14,7 @@ trait ScheduledInstance extends StObject {
   /**
     * The date when the Scheduled Instance was purchased.
     */
-  var CreateDate: js.UndefOr[DateTime] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The hourly price for a single instance.
@@ -39,7 +39,7 @@ trait ScheduledInstance extends StObject {
   /**
     * The time for the next schedule to start.
     */
-  var NextSlotStartTime: js.UndefOr[DateTime] = js.undefined
+  var NextSlotStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The platform (Linux/UNIX or Windows).
@@ -49,7 +49,7 @@ trait ScheduledInstance extends StObject {
   /**
     * The time that the previous schedule ended or will end.
     */
-  var PreviousSlotEndTime: js.UndefOr[DateTime] = js.undefined
+  var PreviousSlotEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The schedule recurrence.
@@ -69,12 +69,12 @@ trait ScheduledInstance extends StObject {
   /**
     * The end date for the Scheduled Instance.
     */
-  var TermEndDate: js.UndefOr[DateTime] = js.undefined
+  var TermEndDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The start date for the Scheduled Instance.
     */
-  var TermStartDate: js.UndefOr[DateTime] = js.undefined
+  var TermStartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The total number of hours for a single instance for the entire term.
@@ -94,7 +94,7 @@ object ScheduledInstance {
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    inline def setCreateDate(value: DateTime): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -114,7 +114,7 @@ object ScheduledInstance {
     
     inline def setNetworkPlatformUndefined: Self = StObject.set(x, "NetworkPlatform", js.undefined)
     
-    inline def setNextSlotStartTime(value: DateTime): Self = StObject.set(x, "NextSlotStartTime", value.asInstanceOf[js.Any])
+    inline def setNextSlotStartTime(value: js.Date): Self = StObject.set(x, "NextSlotStartTime", value.asInstanceOf[js.Any])
     
     inline def setNextSlotStartTimeUndefined: Self = StObject.set(x, "NextSlotStartTime", js.undefined)
     
@@ -122,7 +122,7 @@ object ScheduledInstance {
     
     inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
-    inline def setPreviousSlotEndTime(value: DateTime): Self = StObject.set(x, "PreviousSlotEndTime", value.asInstanceOf[js.Any])
+    inline def setPreviousSlotEndTime(value: js.Date): Self = StObject.set(x, "PreviousSlotEndTime", value.asInstanceOf[js.Any])
     
     inline def setPreviousSlotEndTimeUndefined: Self = StObject.set(x, "PreviousSlotEndTime", js.undefined)
     
@@ -138,11 +138,11 @@ object ScheduledInstance {
     
     inline def setSlotDurationInHoursUndefined: Self = StObject.set(x, "SlotDurationInHours", js.undefined)
     
-    inline def setTermEndDate(value: DateTime): Self = StObject.set(x, "TermEndDate", value.asInstanceOf[js.Any])
+    inline def setTermEndDate(value: js.Date): Self = StObject.set(x, "TermEndDate", value.asInstanceOf[js.Any])
     
     inline def setTermEndDateUndefined: Self = StObject.set(x, "TermEndDate", js.undefined)
     
-    inline def setTermStartDate(value: DateTime): Self = StObject.set(x, "TermStartDate", value.asInstanceOf[js.Any])
+    inline def setTermStartDate(value: js.Date): Self = StObject.set(x, "TermStartDate", value.asInstanceOf[js.Any])
     
     inline def setTermStartDateUndefined: Self = StObject.set(x, "TermStartDate", js.undefined)
     

@@ -25,22 +25,16 @@ trait PageSize extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity
-    * data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
-    */
-  var languageCode: js.UndefOr[String] = js.undefined
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Optional. The maximum number of items to return in a single page. By default 100 and at most 1000. */
+  /** The maximum number of items to return in a single page. By default 20 and at most 100. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** Optional. The next_page_token value returned from a previous list request. */
+  /** The next_page_token value returned from a previous list request. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The agent to list all entity types from. Format: `projects//agent`. */
+  /** Required. The location to list all security settings for. Format: `projects//locations/`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -87,10 +81,6 @@ object PageSize {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
-    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
-    
-    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     

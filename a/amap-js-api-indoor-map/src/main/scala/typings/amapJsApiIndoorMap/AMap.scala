@@ -14,7 +14,6 @@ import typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.floor_complete
 import typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.mouseout
 import typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.mouseover
 import typings.amapJsApiIndoorMap.anon.Buildingid
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,20 +71,20 @@ object AMap {
     def showIndoorMap(indoorId: String): Unit = js.native
     def showIndoorMap(
       indoorId: String,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Double): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Double,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Double, shopId: String): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Double,
       shopId: String,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Double, shopId: String, noMove: Boolean): Unit = js.native
     def showIndoorMap(
@@ -93,20 +92,20 @@ object AMap {
       floor: Double,
       shopId: String,
       noMove: Boolean,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Double,
       shopId: String,
       noMove: Unit,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Double,
       shopId: Unit,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Double, shopId: Unit, noMove: Boolean): Unit = js.native
     def showIndoorMap(
@@ -114,26 +113,26 @@ object AMap {
       floor: Double,
       shopId: Unit,
       noMove: Boolean,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Double,
       shopId: Unit,
       noMove: Unit,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Unit,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Unit, shopId: String): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Unit,
       shopId: String,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Unit, shopId: String, noMove: Boolean): Unit = js.native
     def showIndoorMap(
@@ -141,20 +140,20 @@ object AMap {
       floor: Unit,
       shopId: String,
       noMove: Boolean,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Unit,
       shopId: String,
       noMove: Unit,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Unit,
       shopId: Unit,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Unit, shopId: Unit, noMove: Boolean): Unit = js.native
     def showIndoorMap(
@@ -162,14 +161,14 @@ object AMap {
       floor: Unit,
       shopId: Unit,
       noMove: Boolean,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Unit,
       shopId: Unit,
       noMove: Unit,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+      callback: js.Function2[/* error */ Null | js.Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     
     /**
@@ -291,15 +290,15 @@ object AMap {
         
         inline def setFloor_indexs(value: js.Array[Double]): Self = StObject.set(x, "floor_indexs", value.asInstanceOf[js.Any])
         
-        inline def setFloor_indexsVarargs(value: Double*): Self = StObject.set(x, "floor_indexs", js.Array(value :_*))
+        inline def setFloor_indexsVarargs(value: Double*): Self = StObject.set(x, "floor_indexs", js.Array(value*))
         
         inline def setFloor_names(value: js.Array[String]): Self = StObject.set(x, "floor_names", value.asInstanceOf[js.Any])
         
-        inline def setFloor_namesVarargs(value: String*): Self = StObject.set(x, "floor_names", js.Array(value :_*))
+        inline def setFloor_namesVarargs(value: String*): Self = StObject.set(x, "floor_names", js.Array(value*))
         
         inline def setFloor_nonas(value: js.Array[String]): Self = StObject.set(x, "floor_nonas", value.asInstanceOf[js.Any])
         
-        inline def setFloor_nonasVarargs(value: String*): Self = StObject.set(x, "floor_nonas", js.Array(value :_*))
+        inline def setFloor_nonasVarargs(value: String*): Self = StObject.set(x, "floor_nonas", js.Array(value*))
       }
     }
     
@@ -412,7 +411,7 @@ object AMap {
       extends StObject
          with SearchResult {
       
-      var error: Error
+      var error: js.Error
       
       /**
         * 楼宇id
@@ -423,14 +422,14 @@ object AMap {
     }
     object SearchErrorResult {
       
-      inline def apply(error: Error, id: String): SearchErrorResult = {
+      inline def apply(error: js.Error, id: String): SearchErrorResult = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 1)
         __obj.asInstanceOf[SearchErrorResult]
       }
       
       extension [Self <: SearchErrorResult](x: Self) {
         
-        inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -445,7 +444,7 @@ object AMap {
     trait SearchResult extends StObject
     object SearchResult {
       
-      inline def SearchErrorResult(error: Error, id: String): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchErrorResult = {
+      inline def SearchErrorResult(error: js.Error, id: String): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchErrorResult = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 1)
         __obj.asInstanceOf[typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchErrorResult]
       }

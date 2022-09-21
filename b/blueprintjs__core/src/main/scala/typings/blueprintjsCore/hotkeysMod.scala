@@ -7,9 +7,13 @@ import typings.blueprintjsCore.anon.TabIndex
 import typings.blueprintjsCore.constructorMod.IConstructor
 import typings.blueprintjsCore.hotkeyMod.IHotkeyProps
 import typings.blueprintjsCore.hotkeyParserMod.IKeyCombo
+import typings.blueprintjsCore.hotkeysDialog2Mod.HotkeysDialog2Props
+import typings.blueprintjsCore.hotkeysTarget2Mod.HotkeysTarget2Props
 import typings.blueprintjsCore.hotkeysTargetMod.IHotkeysTargetComponent
 import typings.blueprintjsCore.hotkeysTypesMod.IHotkeysProps
-import typings.blueprintjsCore.keyComboMod.IKeyComboProps
+import typings.blueprintjsCore.keyComboMod.KeyComboTagProps
+import typings.react.mod.FC
+import typings.react.mod.global.JSX.Element
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,10 +27,10 @@ object hotkeysMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "Hotkey")
   @js.native
-  class Hotkey protected ()
+  open class Hotkey protected ()
     extends typings.blueprintjsCore.hotkeyMod.Hotkey {
     def this(props: IHotkeyProps) = this()
-    def this(props: IHotkeyProps, context: js.Any) = this()
+    def this(props: IHotkeyProps, context: Any) = this()
   }
   /* static members */
   object Hotkey {
@@ -48,10 +52,10 @@ object hotkeysMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "Hotkeys")
   @js.native
-  class Hotkeys protected ()
+  open class Hotkeys protected ()
     extends typings.blueprintjsCore.hotkeysHotkeysMod.Hotkeys {
     def this(props: IHotkeysProps) = this()
-    def this(props: IHotkeysProps, context: js.Any) = this()
+    def this(props: IHotkeysProps, context: Any) = this()
   }
   /* static members */
   object Hotkeys {
@@ -71,14 +75,20 @@ object hotkeysMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "HotkeysDialog2")
+  @js.native
+  val HotkeysDialog2: FC[HotkeysDialog2Props] = js.native
+  
   inline def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): DisplayName & T = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[DisplayName & T]
+  
+  inline def HotkeysTarget2(hasChildrenHotkeysOptions: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(hasChildrenHotkeysOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "KeyCombo")
   @js.native
-  class KeyCombo protected ()
+  open class KeyCombo protected ()
     extends typings.blueprintjsCore.keyComboMod.KeyCombo {
-    def this(props: IKeyComboProps) = this()
-    def this(props: IKeyComboProps, context: js.Any) = this()
+    def this(props: KeyComboTagProps) = this()
+    def this(props: KeyComboTagProps, context: Any) = this()
   }
   /* static members */
   object KeyCombo {

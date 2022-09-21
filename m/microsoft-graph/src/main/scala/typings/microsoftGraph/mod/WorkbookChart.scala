@@ -103,7 +103,7 @@ object WorkbookChart {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: WorkbookChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: WorkbookChartSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setTitle(value: NullableOption[WorkbookChartTitle]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

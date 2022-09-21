@@ -10,15 +10,12 @@ Dialogflow API client for Node.js
 | ------------------ | :-------------: |
 | Full name          | dialogflow |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google dialogflow, dialogflow, Dialogflow API |
-| # releases         | 20 |
-| # dependents       | 53 |
-| # downloads        | 1732518 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 87029.0 |
+| # stars            | 772.0 |
 
 ## Links
-- [Homepage](https://github.com/googleapis/nodejs-dialogflow#readme)
-- [Bugs](https://github.com/googleapis/nodejs-dialogflow/issues)
-- [Repository](https://github.com/googleapis/nodejs-dialogflow)
 - [Npm](https://www.npmjs.com/package/dialogflow)
     
 

@@ -23,7 +23,7 @@ object Result {
     
     inline def setResult(value: js.Array[MultiLevelSelectItem]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "result", js.Array(value*))
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

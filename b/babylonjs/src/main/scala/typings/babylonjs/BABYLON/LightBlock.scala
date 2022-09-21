@@ -9,9 +9,9 @@ trait LightBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /* private */ var _injectVertexCode: js.Any = js.native
+  /* private */ var _injectVertexCode: Any = js.native
   
-  /* private */ var _lightId: js.Any = js.native
+  /* private */ var _lightId: Any = js.native
   
   /**
     * Gets the camera (or eye) position component
@@ -29,7 +29,7 @@ trait LightBlock
   def diffuseOutput: NodeMaterialConnectionPoint = js.native
   
   /**
-    * Gets the glossinness power component
+    * Gets the glossiness power component
     */
   def glossPower: NodeMaterialConnectionPoint = js.native
   

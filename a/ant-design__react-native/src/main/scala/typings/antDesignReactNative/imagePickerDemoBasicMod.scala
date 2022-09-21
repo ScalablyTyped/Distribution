@@ -9,20 +9,19 @@ object imagePickerDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/image-picker/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends ImagePickerExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends ImagePickerExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait ImagePickerExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait ImagePickerExample extends Component[Any, Any, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MImagePickerExample(): js.Promise[Unit] = js.native
     
-    def handleFile2Change(files2: js.Any): Unit = js.native
+    def handleFile2Change(files2: Any): Unit = js.native
     
-    def handleFileChange(files: js.Any): Unit = js.native
+    def handleFileChange(files: Any): Unit = js.native
     
     def requestCameraPermission(): js.Promise[Unit] = js.native
   }

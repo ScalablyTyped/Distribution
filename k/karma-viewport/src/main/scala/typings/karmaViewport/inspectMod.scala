@@ -15,7 +15,7 @@ object inspectMod {
   @js.native
   trait InspectFunction extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
   
   type InspectValue = js.UndefOr[Null | Double | String | js.Object | InspectFunction]

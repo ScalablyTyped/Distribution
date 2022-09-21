@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCSVHeaderResponse extends StObject {
   
   /**
-    * The header information for the .csv file for the user import job.
+    * The header information of the CSV file for the user import job.
     */
   var CSVHeader: js.UndefOr[ListOfStringTypes] = js.undefined
   
@@ -29,7 +29,7 @@ object GetCSVHeaderResponse {
     
     inline def setCSVHeaderUndefined: Self = StObject.set(x, "CSVHeader", js.undefined)
     
-    inline def setCSVHeaderVarargs(value: StringType*): Self = StObject.set(x, "CSVHeader", js.Array(value :_*))
+    inline def setCSVHeaderVarargs(value: StringType*): Self = StObject.set(x, "CSVHeader", js.Array(value*))
     
     inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     

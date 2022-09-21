@@ -8,5 +8,5 @@ object endpointDemographicMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_EndpointDemographic", "_EndpointDemographic")
   @js.native
-  val EndpointDemographic: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EndpointDemographic: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

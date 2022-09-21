@@ -11,7 +11,7 @@ object stickyMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Sticky", "Sticky")
   @js.native
-  class Sticky protected ()
+  open class Sticky protected ()
     extends typings.officeUiFabricReact.stickyStickyMod.Sticky {
     def this(props: IStickyProps) = this()
   }

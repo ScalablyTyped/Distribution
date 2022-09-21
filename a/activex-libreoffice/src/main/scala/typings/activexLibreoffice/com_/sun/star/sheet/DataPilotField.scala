@@ -161,13 +161,13 @@ object DataPilotField {
     getItems: () => XIndexAccess,
     getName: () => String,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
-    queryInterface: `type` => js.Any,
+    getPropertyValue: String => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setName: String => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): DataPilotField = {
     val __obj = js.Dynamic.literal(AutoShowInfo = AutoShowInfo.asInstanceOf[js.Any], Function = Function.asInstanceOf[js.Any], Function2 = Function2.asInstanceOf[js.Any], GroupInfo = GroupInfo.asInstanceOf[js.Any], HasAutoShowInfo = HasAutoShowInfo.asInstanceOf[js.Any], HasLayoutInfo = HasLayoutInfo.asInstanceOf[js.Any], HasReference = HasReference.asInstanceOf[js.Any], HasSortInfo = HasSortInfo.asInstanceOf[js.Any], IsGroupField = IsGroupField.asInstanceOf[js.Any], Items = Items.asInstanceOf[js.Any], LayoutInfo = LayoutInfo.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Reference = Reference.asInstanceOf[js.Any], SelectedPage = SelectedPage.asInstanceOf[js.Any], ShowEmpty = ShowEmpty.asInstanceOf[js.Any], SortInfo = SortInfo.asInstanceOf[js.Any], Subtotals = Subtotals.asInstanceOf[js.Any], Subtotals2 = Subtotals2.asInstanceOf[js.Any], UseSelectedPage = UseSelectedPage.asInstanceOf[js.Any], UsedHierarchy = UsedHierarchy.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createDateGroup = js.Any.fromFunction1(createDateGroup), createNameGroup = js.Any.fromFunction1(createNameGroup), getItems = js.Any.fromFunction0(getItems), getName = js.Any.fromFunction0(getName), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setName = js.Any.fromFunction1(setName), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DataPilotField]

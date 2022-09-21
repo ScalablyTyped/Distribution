@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Delay extends StObject {
   
+  /**
+    * The delay in milliseconds after which the UI component is displayed.
+    */
   var delay: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the event names on which the UI component is shown.
+    */
   var name: js.UndefOr[String] = js.undefined
 }
 object Delay {

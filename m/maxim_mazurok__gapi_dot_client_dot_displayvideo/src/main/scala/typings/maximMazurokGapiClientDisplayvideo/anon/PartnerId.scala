@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Site
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.AssignedTargetingOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,17 +14,11 @@ trait PartnerId extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the parent channel. */
-  var advertiserId: String
-  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
-  
-  /** Required. The ID of the parent channel in which the site will be created. */
-  var channelId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -35,8 +29,8 @@ trait PartnerId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the partner that owns the parent channel. */
-  var partnerId: js.UndefOr[String] = js.undefined
+  /** Required. The ID of the partner. */
+  var partnerId: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -45,7 +39,10 @@ trait PartnerId extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Site
+  var resource: AssignedTargetingOption
+  
+  /** Required. Identifies the type of this assigned targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL` */
+  var targetingType: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -55,8 +52,8 @@ trait PartnerId extends StObject {
 }
 object PartnerId {
   
-  inline def apply(advertiserId: String, channelId: String, resource: Site): PartnerId = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(partnerId: String, resource: AssignedTargetingOption, targetingType: String): PartnerId = {
+    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartnerId]
   }
   
@@ -70,8 +67,6 @@ object PartnerId {
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
-    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
-    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
@@ -79,8 +74,6 @@ object PartnerId {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-    
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -96,8 +89,6 @@ object PartnerId {
     
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
-    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
-    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -106,7 +97,9 @@ object PartnerId {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Site): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: AssignedTargetingOption): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait PublishObjects extends StObject {
   
   def Item(Index: Double): PublishObject
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.PublishObjects_typekey")
   var PowerPointDotPublishObjects_typekey: PublishObjects
@@ -23,7 +23,7 @@ object PublishObjects {
     Application: Application,
     Count: Double,
     Item: Double => PublishObject,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPublishObjects_typekey: PublishObjects
   ): PublishObjects = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object PublishObjects {
     
     inline def setItem(value: Double => PublishObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPublishObjects_typekey(value: PublishObjects): Self = StObject.set(x, "PowerPoint.PublishObjects_typekey", value.asInstanceOf[js.Any])
   }

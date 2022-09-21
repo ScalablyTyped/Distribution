@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Foundation.WwwFormUrlDecoder")
 @js.native
-class WwwFormUrlDecoder protected ()
+open class WwwFormUrlDecoder protected ()
   extends StObject
      with typings.winrt.Windows.Foundation.WwwFormUrlDecoder {
   def this(query: String) = this()

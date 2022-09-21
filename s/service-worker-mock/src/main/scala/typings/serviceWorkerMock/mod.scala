@@ -41,6 +41,7 @@ object mod {
       */
     inline def snapshot(): Snapshot = js.Dynamic.global.applyDynamic("snapshot")().asInstanceOf[Snapshot]
     
+    inline def trigger(name: notificationclick | notificationclose, args: Notification): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     /**
       * Used to trigger active listeners.
       */
@@ -53,14 +54,10 @@ object mod {
     
     inline def trigger_message(name: message, args: PartialMessageEventany): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    inline def trigger_notificationclick(name: notificationclick, args: Notification): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    
-    inline def trigger_notificationclose(name: notificationclose, args: Notification): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    
     inline def trigger_push(
       name: push,
       args: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ Any
         ]
     ): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
@@ -72,6 +69,7 @@ object mod {
       @JSName("snapshot")
       var snapshot_Original: js.Function0[Snapshot]
       
+      def trigger(name: notificationclick | notificationclose, args: Notification): js.Promise[Unit]
       def trigger(
         `type`: /* keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceWorkerGlobalScopeEventMap * / any */ String
       ): js.Promise[Unit]
@@ -84,14 +82,10 @@ object mod {
       @JSName("trigger")
       def trigger_message(name: message, args: PartialMessageEventany): js.Promise[Unit]
       @JSName("trigger")
-      def trigger_notificationclick(name: notificationclick, args: Notification): js.Promise[Unit]
-      @JSName("trigger")
-      def trigger_notificationclose(name: notificationclose, args: Notification): js.Promise[Unit]
-      @JSName("trigger")
       def trigger_push(
         name: push,
         args: Partial[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ Any
             ]
       ): js.Promise[Unit]
     }
@@ -131,7 +125,7 @@ object mod {
       * A list of active clients.
       */
     var clients: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ Any
       ]
     
     /**
@@ -144,7 +138,7 @@ object mod {
     inline def apply(
       caches: Caches,
       clients: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ Any
         ],
       notifications: js.Array[Notification]
     ): Snapshot = {
@@ -158,17 +152,17 @@ object mod {
       
       inline def setClients(
         value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ Any
             ]
       ): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
       
       inline def setClientsVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ js.Any)*
-      ): Self = StObject.set(x, "clients", js.Array(value :_*))
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ Any)*
+      ): Self = StObject.set(x, "clients", js.Array(value*))
       
       inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value*))
     }
   }
 }

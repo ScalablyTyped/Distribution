@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("cradle", "Connection")
   @js.native
-  class Connection () extends StObject {
+  open class Connection () extends StObject {
     def this(uri: String) = this()
     def this(uri: String, port: Double) = this()
     def this(uri: Unit, port: Double) = this()
@@ -45,17 +45,14 @@ object mod {
   
   @JSImport("cradle", "Database")
   @js.native
-  class Database () extends StObject {
+  open class Database () extends StObject {
     
     def all(callback: Callback): Unit = js.native
-    def all(options: js.Any, callback: Callback): Unit = js.native
+    def all(options: Any, callback: Callback): Unit = js.native
     
-    def changes(callback: js.Function2[/* error */ js.Any, /* list */ js.Array[js.Any], Unit]): Unit = js.native
-    def changes(options: ChangesOptions): js.Any = js.native
-    def changes(
-      options: ChangesOptions,
-      callback: js.Function2[/* error */ js.Any, /* list */ js.Array[js.Any], Unit]
-    ): Unit = js.native
+    def changes(callback: js.Function2[/* error */ Any, /* list */ js.Array[Any], Unit]): Unit = js.native
+    def changes(options: ChangesOptions): Any = js.native
+    def changes(options: ChangesOptions, callback: js.Function2[/* error */ Any, /* list */ js.Array[Any], Unit]): Unit = js.native
     
     def compact(callback: Callback): Unit = js.native
     def compact(design: String, callback: Callback): Unit = js.native
@@ -64,23 +61,24 @@ object mod {
     
     def destroy(callback: ErrorCallback): Unit = js.native
     
-    def exists(callback: js.Function2[/* error */ js.Any, /* exists */ Boolean, Unit]): Unit = js.native
+    def exists(callback: js.Function2[/* error */ Any, /* exists */ Boolean, Unit]): Unit = js.native
     
-    def get(id: String, callback: js.Function2[/* error */ js.Any, /* document */ js.Any, Unit]): Unit = js.native
-    def get(id: String, rev: String, callback: js.Function2[/* error */ js.Any, /* document */ js.Any, Unit]): Unit = js.native
+    def get(id: String, callback: js.Function2[/* error */ Any, /* document */ Any, Unit]): Unit = js.native
+    def get(id: String, rev: String, callback: js.Function2[/* error */ Any, /* document */ Any, Unit]): Unit = js.native
     def get(ids: js.Array[String], callback: Callback): Unit = js.native
     
     def getAttachment(id: String, attachmentName: String, callback: Callback): Unit = js.native
     
     @JSName("get")
-    def get_T[T](id: String, callback: js.Function2[/* error */ js.Any, /* document */ T, Unit]): Unit = js.native
+    def get_T[T](id: String, callback: js.Function2[/* error */ Any, /* document */ T, Unit]): Unit = js.native
     @JSName("get")
-    def get_T[T](id: String, rev: String, callback: js.Function2[/* error */ js.Any, /* document */ T, Unit]): Unit = js.native
+    def get_T[T](id: String, rev: String, callback: js.Function2[/* error */ Any, /* document */ T, Unit]): Unit = js.native
     
     def info(callback: Callback): Unit = js.native
     
-    def merge(id: String, document: js.Any, callback: Callback): Unit = js.native
-    def merge[T](id: String, document: T, callback: Callback): Unit = js.native
+    def merge(id: String, document: Any, callback: Callback): Unit = js.native
+    @JSName("merge")
+    def merge_T[T](id: String, document: T, callback: Callback): Unit = js.native
     
     var name: String = js.native
     
@@ -89,21 +87,25 @@ object mod {
     def removeAttachment(id: String, attachmentName: String, callback: Callback): Unit = js.native
     
     def replicate(target: String, callback: Callback): Unit = js.native
-    def replicate(target: String, options: js.Any, callback: Callback): Unit = js.native
+    def replicate(target: String, options: Any, callback: Callback): Unit = js.native
     
-    def save(document: js.Any, callback: Callback): Unit = js.native
-    def save(documents: js.Array[js.Any], callback: Callback): Unit = js.native
-    def save(id: String, document: js.Any, callback: Callback): Unit = js.native
-    def save(id: String, revision: String, document: js.Any, callback: Callback): Unit = js.native
-    def save[T](document: T, callback: Callback): Unit = js.native
-    def save[T](id: String, document: T, callback: Callback): Unit = js.native
-    def save[T](id: String, revision: String, document: T, callback: Callback): Unit = js.native
+    def save(document: Any, callback: Callback): Unit = js.native
+    def save(documents: js.Array[Any], callback: Callback): Unit = js.native
+    def save(id: String, document: Any, callback: Callback): Unit = js.native
+    def save(id: String, revision: String, document: Any, callback: Callback): Unit = js.native
     
-    def saveAttachment(idAndRevData: Id, attachmentData: js.Any, callback: Callback): Unit = js.native
+    def saveAttachment(idAndRevData: Id, attachmentData: Any, callback: Callback): Unit = js.native
     
-    def temporaryView(view: js.Any, callback: Callback): Unit = js.native
+    @JSName("save")
+    def save_T[T](document: T, callback: Callback): Unit = js.native
+    @JSName("save")
+    def save_T[T](id: String, document: T, callback: Callback): Unit = js.native
+    @JSName("save")
+    def save_T[T](id: String, revision: String, document: T, callback: Callback): Unit = js.native
     
-    def update(name: String, id: String, queryObject: js.Any, documentBody: js.Any, callback: Callback): Unit = js.native
+    def temporaryView(view: Any, callback: Callback): Unit = js.native
+    
+    def update(name: String, id: String, queryObject: Any, documentBody: Any, callback: Callback): Unit = js.native
     
     def view(name: String, callback: Callback): Unit = js.native
     def view(name: String, options: Descending, callback: Callback): Unit = js.native
@@ -113,7 +115,7 @@ object mod {
   
   inline def setup(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type Callback = js.Function2[/* error */ js.Any, /* response */ js.Any, Unit]
+  type Callback = js.Function2[/* error */ Any, /* response */ Any, Unit]
   
   trait ChangesOptions extends StObject {
     
@@ -132,7 +134,7 @@ object mod {
     }
   }
   
-  type ErrorCallback = js.Function1[/* error */ js.Any, Unit]
+  type ErrorCallback = js.Function1[/* error */ Any, Unit]
   
   trait Options extends StObject {
     

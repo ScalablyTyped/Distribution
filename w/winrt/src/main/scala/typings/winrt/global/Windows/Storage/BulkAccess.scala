@@ -22,7 +22,7 @@ object BulkAccess {
   
   @JSGlobal("Windows.Storage.BulkAccess.FileInformation")
   @js.native
-  class FileInformation ()
+  open class FileInformation ()
     extends StObject
        with typings.winrt.Windows.Storage.BulkAccess.FileInformation {
     
@@ -39,10 +39,10 @@ object BulkAccess {
     var musicProperties: MusicProperties = js.native
     
     /* CompleteClass */
-    var onpropertiesupdated: js.Any = js.native
+    var onpropertiesupdated: Any = js.native
     
     /* CompleteClass */
-    var onthumbnailupdated: js.Any = js.native
+    var onthumbnailupdated: Any = js.native
     
     /* CompleteClass */
     override def openReadAsync(): IAsyncOperation[IRandomAccessStreamWithContentType] = js.native
@@ -59,7 +59,7 @@ object BulkAccess {
   
   @JSGlobal("Windows.Storage.BulkAccess.FileInformationFactory")
   @js.native
-  class FileInformationFactory protected ()
+  open class FileInformationFactory protected ()
     extends StObject
        with typings.winrt.Windows.Storage.BulkAccess.FileInformationFactory {
     def this(queryResult: IStorageQueryResultBase, mode: ThumbnailMode) = this()
@@ -81,7 +81,7 @@ object BulkAccess {
   
   @JSGlobal("Windows.Storage.BulkAccess.FolderInformation")
   @js.native
-  class FolderInformation ()
+  open class FolderInformation ()
     extends StObject
        with typings.winrt.Windows.Storage.BulkAccess.FolderInformation {
     
@@ -101,10 +101,10 @@ object BulkAccess {
     var musicProperties: MusicProperties = js.native
     
     /* CompleteClass */
-    var onpropertiesupdated: js.Any = js.native
+    var onpropertiesupdated: Any = js.native
     
     /* CompleteClass */
-    var onthumbnailupdated: js.Any = js.native
+    var onthumbnailupdated: Any = js.native
     
     /* CompleteClass */
     var thumbnail: StorageItemThumbnail = js.native

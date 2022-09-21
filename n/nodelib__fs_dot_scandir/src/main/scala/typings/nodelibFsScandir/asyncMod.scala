@@ -1,6 +1,5 @@
 package typings.nodelibFsScandir
 
-import typings.node.NodeJS.ErrnoException
 import typings.nodelibFsScandir.settingsMod.default
 import typings.nodelibFsScandir.typesMod.Entry
 import org.scalablytyped.runtime.StObject
@@ -19,5 +18,9 @@ object asyncMod {
   
   inline def readdirWithFileTypes(directory: String, settings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirWithFileTypes")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type AsyncCallback = js.Function2[/* err */ ErrnoException, /* entries */ js.Array[Entry], Unit]
+  type AsyncCallback = js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* error */ Any, 
+    /* entries */ js.Array[Entry], 
+    Unit
+  ]
 }

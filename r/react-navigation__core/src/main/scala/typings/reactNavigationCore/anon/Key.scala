@@ -9,6 +9,8 @@ trait Key extends StObject {
   var key: String
   
   var name: String
+  
+  var path: js.UndefOr[String] = js.undefined
 }
 object Key {
   
@@ -22,5 +24,9 @@ object Key {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

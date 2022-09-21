@@ -22,6 +22,6 @@ object SetStyleTextsResponse {
     
     inline def setStyles(value: js.Array[CSSStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    inline def setStylesVarargs(value: CSSStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: CSSStyle*): Self = StObject.set(x, "styles", js.Array(value*))
   }
 }

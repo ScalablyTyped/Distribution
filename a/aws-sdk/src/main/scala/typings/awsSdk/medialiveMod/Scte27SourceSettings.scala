@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Scte27SourceSettings extends StObject {
   
   /**
+    * If you will configure a WebVTT caption description that references this caption selector, use this field to
+  provide the language to consider when translating the image-based source to text.
+    */
+  var OcrLanguage: js.UndefOr[Scte27OcrLanguage] = js.undefined
+  
+  /**
     * The pid field is used in conjunction with the caption selector languageCode field as follows:
     - Specify PID and Language: Extracts captions from that PID; the language is "informational".
     - Specify PID and omit Language: Extracts the specified PID.
@@ -23,6 +29,10 @@ object Scte27SourceSettings {
   }
   
   extension [Self <: Scte27SourceSettings](x: Self) {
+    
+    inline def setOcrLanguage(value: Scte27OcrLanguage): Self = StObject.set(x, "OcrLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setOcrLanguageUndefined: Self = StObject.set(x, "OcrLanguage", js.undefined)
     
     inline def setPid(value: integerMin1): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
     

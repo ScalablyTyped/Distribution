@@ -8,7 +8,7 @@ trait OrderreturnsRefundOperation extends StObject {
   
   /**
     * If true, the item will be fully refunded. Allowed only when payment_type is FOP. Merchant can choose this refund option to indicate the full remaining amount of corresponding object
-    * to be refunded to the customer via FOP.
+    * to be refunded to the customer through FOP.
     */
   var fullRefund: js.UndefOr[Boolean] = js.undefined
   

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.DomIcon")
 @js.native
-class DomIcon protected ()
+open class DomIcon protected ()
   extends StObject
      with typings.heremaps.H.map.DomIcon {
   def this(element: String) = this()

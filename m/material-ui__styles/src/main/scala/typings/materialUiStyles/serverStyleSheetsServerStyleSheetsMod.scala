@@ -10,7 +10,7 @@ object serverStyleSheetsServerStyleSheetsMod {
   
   @JSImport("@material-ui/styles/ServerStyleSheets/ServerStyleSheets", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ServerStyleSheets {
     def this(options: js.Object) = this()

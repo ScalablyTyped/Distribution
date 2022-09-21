@@ -1,7 +1,5 @@
 package typings.waterline.mod
 
-import typings.std.Date
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +8,9 @@ trait AttributeValidations extends StObject {
   
   var custom: js.UndefOr[AttributeValidation[js.Function]] = js.undefined
   
-  var isAfter: js.UndefOr[AttributeValidation[Date]] = js.undefined
+  var isAfter: js.UndefOr[AttributeValidation[js.Date]] = js.undefined
   
-  var isBefore: js.UndefOr[AttributeValidation[Date]] = js.undefined
+  var isBefore: js.UndefOr[AttributeValidation[js.Date]] = js.undefined
   
   var isBoolean: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
@@ -48,7 +46,7 @@ trait AttributeValidations extends StObject {
   
   var minLength: js.UndefOr[AttributeValidation[Double]] = js.undefined
   
-  var regex: js.UndefOr[AttributeValidation[RegExp]] = js.undefined
+  var regex: js.UndefOr[AttributeValidation[js.RegExp]] = js.undefined
 }
 object AttributeValidations {
   
@@ -63,23 +61,23 @@ object AttributeValidations {
     
     inline def setCustomFunction0(value: () => js.Function): Self = StObject.set(x, "custom", js.Any.fromFunction0(value))
     
-    inline def setCustomFunction1(value: /* cb */ js.Function1[js.Function, js.Any] => Unit): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
+    inline def setCustomFunction1(value: /* cb */ js.Function1[js.Function, Any] => Unit): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    inline def setIsAfter(value: AttributeValidation[Date]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
+    inline def setIsAfter(value: AttributeValidation[js.Date]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
     
-    inline def setIsAfterFunction0(value: () => Date): Self = StObject.set(x, "isAfter", js.Any.fromFunction0(value))
+    inline def setIsAfterFunction0(value: () => js.Date): Self = StObject.set(x, "isAfter", js.Any.fromFunction0(value))
     
-    inline def setIsAfterFunction1(value: /* cb */ js.Function1[Date, js.Any] => Unit): Self = StObject.set(x, "isAfter", js.Any.fromFunction1(value))
+    inline def setIsAfterFunction1(value: /* cb */ js.Function1[js.Date, Any] => Unit): Self = StObject.set(x, "isAfter", js.Any.fromFunction1(value))
     
     inline def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
     
-    inline def setIsBefore(value: AttributeValidation[Date]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
+    inline def setIsBefore(value: AttributeValidation[js.Date]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
     
-    inline def setIsBeforeFunction0(value: () => Date): Self = StObject.set(x, "isBefore", js.Any.fromFunction0(value))
+    inline def setIsBeforeFunction0(value: () => js.Date): Self = StObject.set(x, "isBefore", js.Any.fromFunction0(value))
     
-    inline def setIsBeforeFunction1(value: /* cb */ js.Function1[Date, js.Any] => Unit): Self = StObject.set(x, "isBefore", js.Any.fromFunction1(value))
+    inline def setIsBeforeFunction1(value: /* cb */ js.Function1[js.Date, Any] => Unit): Self = StObject.set(x, "isBefore", js.Any.fromFunction1(value))
     
     inline def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
     
@@ -87,7 +85,7 @@ object AttributeValidations {
     
     inline def setIsBooleanFunction0(value: () => Boolean): Self = StObject.set(x, "isBoolean", js.Any.fromFunction0(value))
     
-    inline def setIsBooleanFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isBoolean", js.Any.fromFunction1(value))
+    inline def setIsBooleanFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isBoolean", js.Any.fromFunction1(value))
     
     inline def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
     
@@ -95,7 +93,7 @@ object AttributeValidations {
     
     inline def setIsCreditCardFunction0(value: () => Boolean): Self = StObject.set(x, "isCreditCard", js.Any.fromFunction0(value))
     
-    inline def setIsCreditCardFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isCreditCard", js.Any.fromFunction1(value))
+    inline def setIsCreditCardFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isCreditCard", js.Any.fromFunction1(value))
     
     inline def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
     
@@ -103,7 +101,7 @@ object AttributeValidations {
     
     inline def setIsEmailFunction0(value: () => Boolean): Self = StObject.set(x, "isEmail", js.Any.fromFunction0(value))
     
-    inline def setIsEmailFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isEmail", js.Any.fromFunction1(value))
+    inline def setIsEmailFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isEmail", js.Any.fromFunction1(value))
     
     inline def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
     
@@ -111,7 +109,7 @@ object AttributeValidations {
     
     inline def setIsHexColorFunction0(value: () => Boolean): Self = StObject.set(x, "isHexColor", js.Any.fromFunction0(value))
     
-    inline def setIsHexColorFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isHexColor", js.Any.fromFunction1(value))
+    inline def setIsHexColorFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isHexColor", js.Any.fromFunction1(value))
     
     inline def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
     
@@ -119,7 +117,7 @@ object AttributeValidations {
     
     inline def setIsIPFunction0(value: () => Boolean): Self = StObject.set(x, "isIP", js.Any.fromFunction0(value))
     
-    inline def setIsIPFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isIP", js.Any.fromFunction1(value))
+    inline def setIsIPFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isIP", js.Any.fromFunction1(value))
     
     inline def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
     
@@ -127,17 +125,17 @@ object AttributeValidations {
     
     inline def setIsInFunction0(value: () => js.Array[String]): Self = StObject.set(x, "isIn", js.Any.fromFunction0(value))
     
-    inline def setIsInFunction1(value: /* cb */ js.Function1[js.Array[String], js.Any] => Unit): Self = StObject.set(x, "isIn", js.Any.fromFunction1(value))
+    inline def setIsInFunction1(value: /* cb */ js.Function1[js.Array[String], Any] => Unit): Self = StObject.set(x, "isIn", js.Any.fromFunction1(value))
     
     inline def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
     
-    inline def setIsInVarargs(value: String*): Self = StObject.set(x, "isIn", js.Array(value :_*))
+    inline def setIsInVarargs(value: String*): Self = StObject.set(x, "isIn", js.Array(value*))
     
     inline def setIsInteger(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isInteger", value.asInstanceOf[js.Any])
     
     inline def setIsIntegerFunction0(value: () => Boolean): Self = StObject.set(x, "isInteger", js.Any.fromFunction0(value))
     
-    inline def setIsIntegerFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isInteger", js.Any.fromFunction1(value))
+    inline def setIsIntegerFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isInteger", js.Any.fromFunction1(value))
     
     inline def setIsIntegerUndefined: Self = StObject.set(x, "isInteger", js.undefined)
     
@@ -145,7 +143,7 @@ object AttributeValidations {
     
     inline def setIsNotEmptyStringFunction0(value: () => Boolean): Self = StObject.set(x, "isNotEmptyString", js.Any.fromFunction0(value))
     
-    inline def setIsNotEmptyStringFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isNotEmptyString", js.Any.fromFunction1(value))
+    inline def setIsNotEmptyStringFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isNotEmptyString", js.Any.fromFunction1(value))
     
     inline def setIsNotEmptyStringUndefined: Self = StObject.set(x, "isNotEmptyString", js.undefined)
     
@@ -153,17 +151,17 @@ object AttributeValidations {
     
     inline def setIsNotInFunction0(value: () => js.Array[String]): Self = StObject.set(x, "isNotIn", js.Any.fromFunction0(value))
     
-    inline def setIsNotInFunction1(value: /* cb */ js.Function1[js.Array[String], js.Any] => Unit): Self = StObject.set(x, "isNotIn", js.Any.fromFunction1(value))
+    inline def setIsNotInFunction1(value: /* cb */ js.Function1[js.Array[String], Any] => Unit): Self = StObject.set(x, "isNotIn", js.Any.fromFunction1(value))
     
     inline def setIsNotInUndefined: Self = StObject.set(x, "isNotIn", js.undefined)
     
-    inline def setIsNotInVarargs(value: String*): Self = StObject.set(x, "isNotIn", js.Array(value :_*))
+    inline def setIsNotInVarargs(value: String*): Self = StObject.set(x, "isNotIn", js.Array(value*))
     
     inline def setIsNumber(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isNumber", value.asInstanceOf[js.Any])
     
     inline def setIsNumberFunction0(value: () => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction0(value))
     
-    inline def setIsNumberFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
+    inline def setIsNumberFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
     
     inline def setIsNumberUndefined: Self = StObject.set(x, "isNumber", js.undefined)
     
@@ -171,7 +169,7 @@ object AttributeValidations {
     
     inline def setIsStringFunction0(value: () => Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction0(value))
     
-    inline def setIsStringFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
+    inline def setIsStringFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
     
     inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
     
@@ -179,7 +177,7 @@ object AttributeValidations {
     
     inline def setIsURLFunction0(value: () => Boolean): Self = StObject.set(x, "isURL", js.Any.fromFunction0(value))
     
-    inline def setIsURLFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isURL", js.Any.fromFunction1(value))
+    inline def setIsURLFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isURL", js.Any.fromFunction1(value))
     
     inline def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
     
@@ -187,7 +185,7 @@ object AttributeValidations {
     
     inline def setIsUUIDFunction0(value: () => Boolean): Self = StObject.set(x, "isUUID", js.Any.fromFunction0(value))
     
-    inline def setIsUUIDFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isUUID", js.Any.fromFunction1(value))
+    inline def setIsUUIDFunction1(value: /* cb */ js.Function1[Boolean, Any] => Unit): Self = StObject.set(x, "isUUID", js.Any.fromFunction1(value))
     
     inline def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
     
@@ -195,13 +193,13 @@ object AttributeValidations {
     
     inline def setMaxFunction0(value: () => Double): Self = StObject.set(x, "max", js.Any.fromFunction0(value))
     
-    inline def setMaxFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+    inline def setMaxFunction1(value: /* cb */ js.Function1[Double, Any] => Unit): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
     inline def setMaxLength(value: AttributeValidation[Double]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     inline def setMaxLengthFunction0(value: () => Double): Self = StObject.set(x, "maxLength", js.Any.fromFunction0(value))
     
-    inline def setMaxLengthFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = StObject.set(x, "maxLength", js.Any.fromFunction1(value))
+    inline def setMaxLengthFunction1(value: /* cb */ js.Function1[Double, Any] => Unit): Self = StObject.set(x, "maxLength", js.Any.fromFunction1(value))
     
     inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
@@ -211,23 +209,23 @@ object AttributeValidations {
     
     inline def setMinFunction0(value: () => Double): Self = StObject.set(x, "min", js.Any.fromFunction0(value))
     
-    inline def setMinFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+    inline def setMinFunction1(value: /* cb */ js.Function1[Double, Any] => Unit): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
     inline def setMinLength(value: AttributeValidation[Double]): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     inline def setMinLengthFunction0(value: () => Double): Self = StObject.set(x, "minLength", js.Any.fromFunction0(value))
     
-    inline def setMinLengthFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = StObject.set(x, "minLength", js.Any.fromFunction1(value))
+    inline def setMinLengthFunction1(value: /* cb */ js.Function1[Double, Any] => Unit): Self = StObject.set(x, "minLength", js.Any.fromFunction1(value))
     
     inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setRegex(value: AttributeValidation[RegExp]): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: AttributeValidation[js.RegExp]): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    inline def setRegexFunction0(value: () => RegExp): Self = StObject.set(x, "regex", js.Any.fromFunction0(value))
+    inline def setRegexFunction0(value: () => js.RegExp): Self = StObject.set(x, "regex", js.Any.fromFunction0(value))
     
-    inline def setRegexFunction1(value: /* cb */ js.Function1[RegExp, js.Any] => Unit): Self = StObject.set(x, "regex", js.Any.fromFunction1(value))
+    inline def setRegexFunction1(value: /* cb */ js.Function1[js.RegExp, Any] => Unit): Self = StObject.set(x, "regex", js.Any.fromFunction1(value))
     
     inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
   }

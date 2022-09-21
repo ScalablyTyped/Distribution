@@ -2,7 +2,6 @@ package typings.cpx
 
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Transform
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("cpx", "Watcher")
   @js.native
-  class Watcher protected () extends EventEmitter {
+  open class Watcher protected () extends EventEmitter {
     def this(options: WatchOptions) = this()
     
     def close(): Unit = js.native
@@ -24,19 +23,19 @@ object mod {
   }
   
   inline def copy(source: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def copy(source: String, dest: String, callback: js.Function1[/* error */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copy(source: String, dest: String, callback: js.Function1[/* error */ js.Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def copy(
     source: String,
     dest: String,
     options: Unit,
-    callback: js.Function1[/* error */ Error | Null, Unit]
+    callback: js.Function1[/* error */ js.Error | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def copy(source: String, dest: String, options: AsyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def copy(
     source: String,
     dest: String,
     options: AsyncOptions,
-    callback: js.Function1[/* error */ Error | Null, Unit]
+    callback: js.Function1[/* error */ js.Error | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def copySync(source: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]

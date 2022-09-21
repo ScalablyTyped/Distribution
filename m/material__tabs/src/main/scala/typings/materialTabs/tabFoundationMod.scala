@@ -13,7 +13,7 @@ object tabFoundationMod {
   
   @JSImport("@material/tabs/tab/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCTabFoundation {
+  open class default () extends MDCTabFoundation {
     def this(adapter: PartialMDCTabAdapter) = this()
   }
   /* static members */
@@ -34,7 +34,7 @@ object tabFoundationMod {
   
   @JSImport("@material/tabs/tab/foundation", "MDCTabFoundation")
   @js.native
-  class MDCTabFoundation () extends MDCFoundation[MDCTabAdapter] {
+  open class MDCTabFoundation () extends MDCFoundation[MDCTabAdapter] {
     def this(adapter: PartialMDCTabAdapter) = this()
     
     def getComputedLeft(): Double = js.native

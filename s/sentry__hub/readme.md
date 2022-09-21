@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentry__hub
 
-Typings are for version 5.27.4
+Typings are for version 7.13.0
 
 ## Library description:
 Sentry hub which handles global state managment.
@@ -10,10 +10,10 @@ Sentry hub which handles global state managment.
 | ------------------ | :-------------: |
 | Full name          | @sentry/hub |
 | Keywords           | - |
-| # releases         | 120 |
-| # dependents       | 11 |
-| # downloads        | 115053780 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 2.512304E7 |
+| # stars            | 6549.0 |
 
 ## Links
 - [Homepage](https://github.com/getsentry/sentry-javascript/tree/master/packages/hub)

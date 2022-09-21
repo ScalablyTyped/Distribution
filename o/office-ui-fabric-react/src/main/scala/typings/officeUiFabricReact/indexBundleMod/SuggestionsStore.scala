@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SuggestionsStore")
 @js.native
-class SuggestionsStore[T] ()
+open class SuggestionsStore[T] ()
   extends typings.officeUiFabricReact.mod.SuggestionsStore[T] {
   def this(options: SuggestionsStoreOptions[T]) = this()
 }

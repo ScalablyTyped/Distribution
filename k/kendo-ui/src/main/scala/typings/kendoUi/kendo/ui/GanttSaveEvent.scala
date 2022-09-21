@@ -11,7 +11,7 @@ trait GanttSaveEvent
   
   var task: js.UndefOr[GanttTask] = js.undefined
   
-  var values: js.UndefOr[js.Any] = js.undefined
+  var values: js.UndefOr[Any] = js.undefined
 }
 object GanttSaveEvent {
   
@@ -26,7 +26,7 @@ object GanttSaveEvent {
     
     inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Datepicker, 'gotoDate'> */
 trait PickDatepickergotoDate extends StObject {
   
-  var gotoDate: js.UndefOr[js.Any] = js.undefined
+  var gotoDate: js.UndefOr[Any] = js.undefined
 }
 object PickDatepickergotoDate {
   
@@ -18,7 +18,7 @@ object PickDatepickergotoDate {
   
   extension [Self <: PickDatepickergotoDate](x: Self) {
     
-    inline def setGotoDate(value: js.Any): Self = StObject.set(x, "gotoDate", value.asInstanceOf[js.Any])
+    inline def setGotoDate(value: Any): Self = StObject.set(x, "gotoDate", value.asInstanceOf[js.Any])
     
     inline def setGotoDateUndefined: Self = StObject.set(x, "gotoDate", js.undefined)
   }

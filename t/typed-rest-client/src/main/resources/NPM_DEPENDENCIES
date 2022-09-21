@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "typed-rest-client" : "1.8.0"
+      "typed-rest-client" : "1.8.9"
     }
   ],
   "test-dependencies" : [
     {
-      "typed-rest-client" : "1.8.0"
+      "typed-rest-client" : "1.8.9"
     }
   ],
   "compile-devDependencies" : [

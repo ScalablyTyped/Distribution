@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCelebrityInfoResponse extends StObject {
   
   /**
+    * Retrieves the known gender for the celebrity.
+    */
+  var KnownGender: js.UndefOr[typings.awsSdk.rekognitionMod.KnownGender] = js.undefined
+  
+  /**
     * The name of the celebrity.
     */
   var Name: js.UndefOr[String] = js.undefined
@@ -25,6 +30,10 @@ object GetCelebrityInfoResponse {
   
   extension [Self <: GetCelebrityInfoResponse](x: Self) {
     
+    inline def setKnownGender(value: KnownGender): Self = StObject.set(x, "KnownGender", value.asInstanceOf[js.Any])
+    
+    inline def setKnownGenderUndefined: Self = StObject.set(x, "KnownGender", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
@@ -33,6 +42,6 @@ object GetCelebrityInfoResponse {
     
     inline def setUrlsUndefined: Self = StObject.set(x, "Urls", js.undefined)
     
-    inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value*))
   }
 }

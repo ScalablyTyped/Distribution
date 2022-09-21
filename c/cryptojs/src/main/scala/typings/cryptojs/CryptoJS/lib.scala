@@ -7,13 +7,6 @@ import typings.cryptojs.CryptoJS.mode.IBlockCipherDecryptor
 import typings.cryptojs.CryptoJS.mode.IBlockCipherEncryptor
 import typings.cryptojs.CryptoJS.mode.IBlockCipherModeImpl
 import typings.cryptojs.CryptoJS.pad.IPaddingImpl
-import typings.std.ArrayBuffer
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,20 +16,20 @@ object lib {
   trait Base extends StObject {
     
     //arguments of create() is same as init(). This is true for all subclasses
-    def create(args: js.Any*): Base
+    def create(args: Any*): Base
     
     def extend(overrides: js.Object): js.Object
     
-    def init(args: js.Any*): Unit
+    def init(args: Any*): Unit
     
     def mixIn(properties: js.Object): Unit
   }
   object Base {
     
     inline def apply(
-      create: /* repeated */ js.Any => Base,
+      create: /* repeated */ Any => Base,
       extend: js.Object => js.Object,
-      init: /* repeated */ js.Any => Unit,
+      init: /* repeated */ Any => Unit,
       mixIn: js.Object => Unit
     ): Base = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), extend = js.Any.fromFunction1(extend), init = js.Any.fromFunction1(init), mixIn = js.Any.fromFunction1(mixIn))
@@ -45,11 +38,11 @@ object lib {
     
     extension [Self <: Base](x: Self) {
       
-      inline def setCreate(value: /* repeated */ js.Any => Base): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* repeated */ Any => Base): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
       inline def setExtend(value: js.Object => js.Object): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
       
-      inline def setInit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* repeated */ Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setMixIn(value: js.Object => Unit): Self = StObject.set(x, "mixIn", js.Any.fromFunction1(value))
     }
@@ -87,9 +80,9 @@ object lib {
   object BufferedBlockAlgorithm {
     
     inline def apply(
-      create: /* repeated */ js.Any => Base,
+      create: /* repeated */ Any => Base,
       extend: js.Object => js.Object,
-      init: /* repeated */ js.Any => Unit,
+      init: /* repeated */ Any => Unit,
       mixIn: js.Object => Unit,
       reset: () => Unit
     ): BufferedBlockAlgorithm = {
@@ -488,7 +481,7 @@ object lib {
   
   type SerializableCipher = ISerializableCipher[ISerializableCipherCfg]
   
-  type SomeArray = ArrayBuffer | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array
+  type SomeArray = js.typedarray.ArrayBuffer | js.typedarray.Int8Array | js.typedarray.Int16Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.typedarray.Uint16Array | js.typedarray.Uint32Array
   
   type StreamCipher = IStreamCipher[js.Object]
   

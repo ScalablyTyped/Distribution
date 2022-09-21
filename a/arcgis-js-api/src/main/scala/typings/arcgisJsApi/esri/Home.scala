@@ -17,14 +17,14 @@ trait Home
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home.html#cancelGo)
     */
-  def cancelGo(): Unit = js.native
+  def cancelGo(): scala.Unit = js.native
   
   /**
     * Animates the view to the initial Viewpoint of the view or the value of [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home.html#viewpoint).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home.html#go)
     */
-  def go(): Unit = js.native
+  def go(): scala.Unit = js.native
   
   /**
     * The widget's default CSS icon class.

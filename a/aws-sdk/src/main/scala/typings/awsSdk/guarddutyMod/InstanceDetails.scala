@@ -52,7 +52,7 @@ trait InstanceDetails extends StObject {
   var NetworkInterfaces: js.UndefOr[typings.awsSdk.guarddutyMod.NetworkInterfaces] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Outpost. Only applicable to AWS Outposts instances.
+    * The Amazon Resource Name (ARN) of the Amazon Web Services Outpost. Only applicable to Amazon Web Services Outposts instances.
     */
   var OutpostArn: js.UndefOr[String] = js.undefined
   
@@ -116,7 +116,7 @@ object InstanceDetails {
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value*))
     
     inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
@@ -130,12 +130,12 @@ object InstanceDetails {
     
     inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value*))
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

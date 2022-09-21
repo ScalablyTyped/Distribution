@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.DataSchema")
 @js.native
-class DataSchema protected ()
+open class DataSchema protected ()
   extends StObject
      with typings.igniteUi.Infragistics.DataSchema {
   def this(schema: DataSchemaSchema) = this()
@@ -17,7 +17,7 @@ class DataSchema protected ()
     * Field objects description: {fieldName, [fieldDataType], [fieldXPath]}
     */
   /* CompleteClass */
-  override def fields(): js.Array[js.Any] = js.native
+  override def fields(): js.Array[Any] = js.native
   
   /**
     * Specifies if the object is null, undefined, or an empty string

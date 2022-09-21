@@ -12,13 +12,11 @@ trait LodashPath extends StObject {
   
   def apply(path: Double): LodashPath9x1 = js.native
   def apply(path: PropertyPath): Unit = js.native
-  def apply(path: PropertyPath, `object`: js.Any): js.Any = js.native
+  def apply(path: PropertyPath, `object`: Any): Any = js.native
   def apply(path: __): LodashPath11x2 = js.native
-  def apply(path: __, `object`: js.Any): LodashPath12x2 = js.native
+  def apply(path: __, `object`: Any): LodashPath12x2 = js.native
   def apply[T](path: Double, `object`: NumericDictionary[T]): js.UndefOr[T] = js.native
-  def apply[TObject /* <: js.Object */](path: __, `object`: TObject): LodashPath1x2[TObject] = js.native
   def apply[T](path: __, `object`: NumericDictionary[T]): LodashPath10x2[T] = js.native
-  def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](path: js.Array[TKey]): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native

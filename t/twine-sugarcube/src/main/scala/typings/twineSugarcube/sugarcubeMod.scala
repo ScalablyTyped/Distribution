@@ -59,7 +59,7 @@ object sugarcubeMod {
     
     val Wikifier: WikifierAPI
     
-    val session: js.Any
+    val session: Any
     
     /**
       * Player settings object, set up by the author/developer. See Setting API for more information.
@@ -76,7 +76,7 @@ object sugarcubeMod {
       */
     val setup: SugarCubeSetupObject
     
-    val storage: js.Any
+    val storage: Any
     
     val version: Build
   }
@@ -99,10 +99,10 @@ object sugarcubeMod {
       UI: UIAPI,
       UIBar: UIBarAPI,
       Wikifier: WikifierAPI,
-      session: js.Any,
+      session: Any,
       settings: SugarCubeSettingVariables,
       setup: SugarCubeSetupObject,
-      storage: js.Any,
+      storage: Any,
       version: Build
     ): SugarCubeObject = {
       val __obj = js.Dynamic.literal(Browser = Browser.asInstanceOf[js.Any], Config = Config.asInstanceOf[js.Any], Dialog = Dialog.asInstanceOf[js.Any], Engine = Engine.asInstanceOf[js.Any], Fullscreen = Fullscreen.asInstanceOf[js.Any], Has = Has.asInstanceOf[js.Any], Macro = Macro.asInstanceOf[js.Any], Save = Save.asInstanceOf[js.Any], Scripting = Scripting.asInstanceOf[js.Any], Setting = Setting.asInstanceOf[js.Any], SimpleAudio = SimpleAudio.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Story = Story.asInstanceOf[js.Any], UI = UI.asInstanceOf[js.Any], UIBar = UIBar.asInstanceOf[js.Any], Wikifier = Wikifier.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], setup = setup.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
@@ -129,7 +129,7 @@ object sugarcubeMod {
       
       inline def setScripting(value: ScriptingAPI): Self = StObject.set(x, "Scripting", value.asInstanceOf[js.Any])
       
-      inline def setSession(value: js.Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
       inline def setSetting(value: SettingsAPI): Self = StObject.set(x, "Setting", value.asInstanceOf[js.Any])
       
@@ -141,7 +141,7 @@ object sugarcubeMod {
       
       inline def setState(value: StateAPI): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      inline def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
       inline def setStory(value: StoryAPI): Self = StObject.set(x, "Story", value.asInstanceOf[js.Any])
       

@@ -1,8 +1,11 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
-import typings.jsrsasign.anon.Csrinfo
 import typings.jsrsasign.anon.Ext
+import typings.jsrsasign.anon.Tlv
+import typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfoParams
+import typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestParams
 import typings.jsrsasign.jsrsasign.KJUR.asn1.csr.PEMInfo
+import typings.jsrsasign.jsrsasign.KJUR.asn1.csr.ParamResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,6 +70,42 @@ object csr {
     inline def getInfo(sPEM: String): PEMInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(sPEM.asInstanceOf[js.Any]).asInstanceOf[PEMInfo]
     
     /**
+      * get field values from CSR/PKCS#10 PEM string
+      * @param sPEM PEM string of CSR/PKCS#10
+      * @returns JSON object with parsed parameters such as name or public key
+      * @description
+      * This method parses PEM CSR/PKCS#1 string and retrieves
+      * fields such as subject name and public key.
+      * Following parameters are available in the
+      * resulted JSON object.
+      *
+      * - {X500Name}subject - subject name parameters
+      * - {String}sbjpubkey - PEM string of subject public key
+      * - {Array}extreq - array of extensionRequest parameters
+      * - {String}sigalg - name of signature algorithm field
+      * - {String}sighex - hexadecimal string of signature value
+      *
+      * Returned JSON object can be passed to
+      * {@link KJUR.asn1.csr.CertificationRequest} class constructor.
+      *
+      * CAUTION:
+      * Returned JSON value format have been changed without
+      * backward compatibility since jsrsasign 9.0.0 asn1csr 2.0.0.
+      *
+      * @example
+      * KJUR.asn1.csr.CSRUtil.getParam("-----BEGIN CERTIFICATE REQUEST...") &rarr;
+      * {
+      *   subject: { array:[[{type:"C",value:"JP",ds:"prn"}],...],
+      *              str: "/C=JP/O=Test"},
+      *   sbjpubkey: "-----BEGIN PUBLIC KEY...",
+      *   extreq: [{extname:"subjectAltName",array:[{dns:"example.com"}]}]
+      *   sigalg: "SHA256withRSA",
+      *   sighex: "1ab3df.."
+      * }
+      */
+    inline def getParam(sPEM: String): ParamResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("getParam")(sPEM.asInstanceOf[js.Any]).asInstanceOf[ParamResponse]
+    
+    /**
       * generate a PEM format of CSR/PKCS#10 certificate signing request
       * @param param parameter to generate CSR
       * @description
@@ -122,33 +161,69 @@ object csr {
   
   /**
     * ASN.1 CertificationRequest structure class
-    * @param params associative array of parameters (ex. {})
-    * @example
-    * csri = new KJUR.asn1.csr.CertificationRequestInfo();
-    * csri.setSubjectByParam({'str': '/C=US/O=Test/CN=example.com'});
-    * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
-    * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
-    * csr.sign("SHA256withRSA", prvKeyObj);
-    * pem = csr.getPEMString();
+    * @param params associative array of parameters
     *
-    * // -- DEFINITION OF ASN.1 SYNTAX --
-    * // CertificationRequest ::= SEQUENCE {
-    * //   certificationRequestInfo CertificationRequestInfo,
-    * //   signatureAlgorithm       AlgorithmIdentifier{{ SignatureAlgorithms }},
-    * //   signature                BIT STRING }
-    * //
-    * // CertificationRequestInfo ::= SEQUENCE {
-    * //   version       INTEGER { v1(0) } (v1,...),
-    * //   subject       Name,
-    * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
-    * //   attributes    [0] Attributes{{ CRIAttributes }} }
+    * @description
+    * This class provides CertificateRequestInfo ASN.1 structure
+    * defined in * {@link https://tools.ietf.org/html/rfc2986#page-5 RFC 2986 4.2}.
+    *
+    * <pre>
+    * CertificationRequest ::= SEQUENCE {
+    *   certificationRequestInfo CertificationRequestInfo,
+    *   signatureAlgorithm       AlgorithmIdentifier{{ SignatureAlgorithms }},
+    *   signature                BIT STRING }
+    * CertificationRequestInfo ::= SEQUENCE {
+    *   version       INTEGER { v1(0) } (v1,...),
+    *   subject       Name,
+    *   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
+    *   attributes    [0] Attributes{{ CRIAttributes }} }
+    * </pre>
+    *
+    *
+    * Argument "params" JSON object can have following keys:
+    *
+    * - {Array}subject - parameter to be passed to {@link KJUR.asn1.x509.X500Name}
+    * - {Object}sbjpubkey - PEM string or key object to be passed to {@link KEYUTIL.getKey}
+    * - {Array}extreq - array of certificate extension parameters
+    * - {String}sigalg - signature algorithm name (ex. SHA256withRSA)
+    * - {Object}sbjprvkey - PEM string or key object to be passed to {@link KEYUTIL.getKey}
+    * (OPTION)
+    * - {String}sighex - hexadecimal string of signature value. When this is not defined and
+    * sbjprvkey is specified, sighex will be set automatically
+    * during getEncodedHex() is called. (OPTION)
+    *
+    *
+    * CAUTION:
+    * Argument "params" JSON value format have been changed without
+    * backward compatibility since jsrsasign 9.0.0 asn1csr 2.0.0.
+    *
+    * @example
+    * // sign by private key
+    * csr = new KJUR.asn1.csr.CertificationRequest({
+    *   subject: {str:"/C=US/O=Test"},
+    *   sbjpubkey: "-----BEGIN PUBLIC KEY...",
+    *   extreq: [{extname:"subjectAltName",array:[{dns:"example.com"}]}]
+    *   sigalg: "SHA256withRSA",
+    *   sbjprvkey: "-----BEGIN PRIVATE KEY..."
+    * });
+    * pem = csr.getPEM(); // signed with sbjprvkey automatically
+    *
+    * // or specifying signature value
+    * csr = new KJUR.asn1.csr.CertificationRequest({
+    *   subject: {str:"/C=US/O=Test"},
+    *   sbjpubkey: "-----BEGIN PUBLIC KEY...",
+    *   extreq: [{extname:"subjectAltName",array:[{dns:"example.com"}]}]
+    *   sigalg: "SHA256withRSA",
+    *   sighex: "1234abcd..."
+    * });
+    * pem = csr.getPEM();
     */
   @JSImport("jsrsasign", "KJUR.asn1.csr.CertificationRequest")
   @js.native
-  class CertificationRequest ()
+  open class CertificationRequest ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequest {
-    def this(params: Csrinfo) = this()
+    def this(params: CertificationRequestParams) = this()
     
     /**
       * get hexadecimal string of ASN.1 TLV bytes
@@ -166,24 +241,6 @@ object csr {
       */
     /* CompleteClass */
     override def getLengthHexFromValue(): String = js.native
-    
-    /**
-      * get PEM formatted certificate signing request (CSR/PKCS#10)
-      * @return PEM formatted string of CSR/PKCS#10
-      * @description
-      * This method is to a get CSR PEM string after signed.
-      *
-      * @example
-      * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
-      * csr.sign();
-      * pem =  csr.getPEMString();
-      * // pem will be following:
-      * // -----BEGIN CERTIFICATE REQUEST-----
-      * // MII ...snip...
-      * // -----END CERTIFICATE REQUEST-----
-      */
-    /* CompleteClass */
-    override def getPEMString(): String = js.native
     
     /**
       * get hexadecimal string of ASN.1 TLV value(V) bytes
@@ -212,43 +269,47 @@ object csr {
     /* CompleteClass */
     var isModified: String = js.native
     
-    /**
-      * sign CertificationRequest and set signature value internally
-      * @description
-      * This method self-signs CertificateRequestInfo with a subject's
-      * private key and set signature value internally.
-      *
-      * @example
-      * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
-      * csr.sign("SHA256withRSA", prvKeyObj);
-      */
+    /** JSON object parameter for ASN.1 encode */
     /* CompleteClass */
-    override def sign(sigAlgName: String, prvKeyObj: js.Any): Unit = js.native
+    var params: Tlv | Null = js.native
   }
   
   /**
     * ASN.1 CertificationRequestInfo structure class
     * @param params associative array of parameters (ex. {})
     * @description
-    * ```
-    * // -- DEFINITION OF ASN.1 SYNTAX --
-    * // CertificationRequestInfo ::= SEQUENCE {
-    * //   version       INTEGER { v1(0) } (v1,...),
-    * //   subject       Name,
-    * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
-    * //   attributes    [0] Attributes{{ CRIAttributes }} }
-    * ```
+    * This class provides CertificateRequestInfo ASN.1 structure
+    * defined in
+    * {@link https://tools.ietf.org/html/rfc2986#page-5" RFC 2986 4.1}.
+    *
+    * <pre>
+    * CertificationRequestInfo ::= SEQUENCE {
+    *   version       INTEGER { v1(0) } (v1,...),
+    *   subject       Name,
+    *   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
+    *   attributes    [0] Attributes{{ CRIAttributes }} }
+    * </pre>
+    *
+    *
+    * CAUTION:
+    * Argument "params" JSON value format have been changed without
+    * backward compatibility since jsrsasign 9.0.0 asn1csr 2.0.0.
     *
     * @example
-    * csri = new KJUR.asn1.csr.CertificationRequestInfo();
-    * csri.setSubjectByParam({'str': '/C=US/O=Test/CN=example.com'});
-    * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
+    * csri = new KJUR.asn1.csr.CertificationRequestInfo({
+    *   subject: {str: '/C=US/CN=b'},
+    *   sbjpubkey: <<PUBLIC KEY PEM>>,
+    *   extreq: [
+    *     {extname:"subjectAltName", array:[{dns:"example.com"}]}
+    *   ]});
+    * csri.getEncodedHex() &rarr; "30..."
     */
   @JSImport("jsrsasign", "KJUR.asn1.csr.CertificationRequestInfo")
   @js.native
-  class CertificationRequestInfo ()
+  open class CertificationRequestInfo ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfo {
+    def this(params: CertificationRequestInfoParams) = this()
     
     /**
       * get hexadecimal string of ASN.1 TLV bytes
@@ -293,5 +354,9 @@ object csr {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
 }

@@ -13,7 +13,7 @@ object layerMod {
   
   @JSImport("vega-lite/build/src/compile/layer", "LayerModel")
   @js.native
-  class LayerModel protected () extends Model {
+  open class LayerModel protected () extends Model {
     def this(
       spec: NormalizedLayerSpec,
       parent: Model,

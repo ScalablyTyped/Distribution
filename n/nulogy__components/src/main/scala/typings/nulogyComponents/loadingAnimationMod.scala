@@ -8,5 +8,5 @@ object loadingAnimationMod {
   
   @JSImport("@nulogy/components/src/LoadingAnimation", "LoadingAnimation")
   @js.native
-  val LoadingAnimation: js.Any = js.native
+  val LoadingAnimation: Any = js.native
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "StoredEvent")
 @js.native
-class StoredEvent protected ()
+open class StoredEvent protected ()
   extends typings.matrixAppserviceBridge.eventMod.StoredEvent {
   /**
     * Create a store event.
@@ -24,7 +24,7 @@ class StoredEvent protected ()
     eventId: String,
     remoteRoomId: String,
     remoteEventId: String,
-    _extras: Record[String, js.Any]
+    _extras: Record[String, Any]
   ) = this()
 }
 /* static members */

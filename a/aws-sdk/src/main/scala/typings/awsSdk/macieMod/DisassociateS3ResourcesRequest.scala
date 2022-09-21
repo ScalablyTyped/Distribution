@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociateS3ResourcesRequest extends StObject {
   
   /**
-    * The S3 resources (buckets or prefixes) that you want to remove from being monitored and classified by Amazon Macie Classic. 
+    * (Discontinued) The S3 resources (buckets or prefixes) that you want to remove from being monitored and classified by Amazon Macie Classic.
     */
   var associatedS3Resources: S3Resources
   
   /**
-    * The ID of the Amazon Macie Classic member account whose resources you want to remove from being monitored by Amazon Macie Classic. 
+    * (Discontinued) The ID of the Amazon Macie Classic member account whose resources you want to remove from being monitored by Macie Classic.
     */
   var memberAccountId: js.UndefOr[AWSAccountId] = js.undefined
 }
@@ -27,7 +27,7 @@ object DisassociateS3ResourcesRequest {
     
     inline def setAssociatedS3Resources(value: S3Resources): Self = StObject.set(x, "associatedS3Resources", value.asInstanceOf[js.Any])
     
-    inline def setAssociatedS3ResourcesVarargs(value: S3Resource*): Self = StObject.set(x, "associatedS3Resources", js.Array(value :_*))
+    inline def setAssociatedS3ResourcesVarargs(value: S3Resource*): Self = StObject.set(x, "associatedS3Resources", js.Array(value*))
     
     inline def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
     

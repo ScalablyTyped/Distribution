@@ -11,7 +11,7 @@ trait PivotFormulas extends StObject {
   def apply(Index: Double): PivotFormula = js.native
   
   def Add(Formula: String): PivotFormula = js.native
-  def Add(Formula: String, UseStandardFormula: js.Any): PivotFormula = js.native
+  def Add(Formula: String, UseStandardFormula: Any): PivotFormula = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -22,9 +22,9 @@ trait PivotFormulas extends StObject {
   def Item(Index: String): PivotFormula = js.native
   def Item(Index: Double): PivotFormula = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Add(Formula: String): PivotFormula = js.native
   
-  def _Default(Index: js.Any): PivotFormula = js.native
+  def _Default(Index: Any): PivotFormula = js.native
 }

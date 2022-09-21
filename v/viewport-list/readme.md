@@ -11,14 +11,11 @@ Return a list of devices and their viewports
 | Full name          | viewport-list |
 | Keywords           | device, json, resolution, size, viewport |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 132142 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8030.0 |
+| # stars            | 48.0 |
 
 ## Links
-- [Homepage](https://github.com/kevva/viewport-list#readme)
-- [Bugs](https://github.com/kevva/viewport-list/issues)
-- [Repository](https://github.com/kevva/viewport-list)
 - [Npm](https://www.npmjs.com/package/viewport-list)
     
 

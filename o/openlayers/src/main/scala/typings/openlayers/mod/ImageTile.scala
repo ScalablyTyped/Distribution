@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "ImageTile")
 @js.native
-class ImageTile protected () extends Tile {
+open class ImageTile protected () extends Tile {
   /**
     * @param tileCoord Tile coordinate.
     * @param state State.

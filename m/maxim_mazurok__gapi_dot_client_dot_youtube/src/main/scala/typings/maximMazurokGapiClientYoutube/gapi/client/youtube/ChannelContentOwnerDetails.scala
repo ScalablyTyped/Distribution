@@ -9,7 +9,7 @@ trait ChannelContentOwnerDetails extends StObject {
   /** The ID of the content owner linked to the channel. */
   var contentOwner: js.UndefOr[String] = js.undefined
   
-  /** The date and time of when the channel was linked to the content owner. The value is specified in ISO 8601 format. */
+  /** The date and time when the channel was linked to the content owner. */
   var timeLinked: js.UndefOr[String] = js.undefined
 }
 object ChannelContentOwnerDetails {

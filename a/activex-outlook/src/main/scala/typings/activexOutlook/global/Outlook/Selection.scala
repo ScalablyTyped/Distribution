@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Selection")
 @js.native
-/* private */ class Selection ()
+/* private */ open class Selection ()
   extends StObject
      with typings.activexOutlook.Outlook.Selection {
   
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def GetSelection(SelectionContents: OlSelectionContents): typings.activexOutlook.Outlook.Selection = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): js.Any = js.native
+  override def Item(Index: Any): Any = js.native
   
   /* CompleteClass */
   override val Location: OlSelectionLocation = js.native
@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotSelection_typekey: typings.activexOutlook.Outlook.Selection = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

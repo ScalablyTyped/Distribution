@@ -10,7 +10,7 @@ object textMapMod {
   
   @JSImport("playable/dist/src/modules/text-map/text-map", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TextMap {
     def this(hasConfig: ConfigIPlayerConfig) = this()
@@ -38,6 +38,6 @@ object textMapMod {
     extends StObject
        with ITextMap {
     
-    /* private */ var _textMap: js.Any = js.native
+    /* private */ var _textMap: Any = js.native
   }
 }

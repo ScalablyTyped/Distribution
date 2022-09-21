@@ -16,10 +16,10 @@ object mod {
   inline def assign[T, S1, S2, S3](target: T, s1: S1, s2: S2, s3: S3): T & S1 & S2 & S3 = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any])).asInstanceOf[T & S1 & S2 & S3]
   inline def assign[T, S1, S2, S3, S4](target: T, s1: S1, s2: S2, s3: S3, s4: S4): T & S1 & S2 & S3 & S4 = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any])).asInstanceOf[T & S1 & S2 & S3 & S4]
   
-  inline def assoc[T](collection: T, key: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assoc")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def assoc[T](collection: T, key: Double, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assoc")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def assoc[T](collection: T, key: String, value: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assoc")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def assoc[T](collection: T, key: Double, value: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assoc")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def assocIn[T](collection: T, path: js.Array[Double | String], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assocIn")(collection.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def assocIn[T](collection: T, path: js.Array[Double | String], value: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assocIn")(collection.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def chain[T](target: T): IcepickWrapper[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(target.asInstanceOf[js.Any]).asInstanceOf[IcepickWrapper[T]]
   
@@ -38,7 +38,7 @@ object mod {
   
   inline def freeze[T](collection: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("freeze")(collection.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def getIn(collection: js.Any, path: js.Array[Double | String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(collection.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getIn(collection: Any, path: js.Array[Double | String]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(collection.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def map[T, U](fn: js.Function1[/* value */ T, U], array: js.Array[T]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(fn.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   
@@ -50,10 +50,10 @@ object mod {
   
   inline def reverse[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  inline def set[T](collection: T, key: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def set[T](collection: T, key: Double, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def set[T](collection: T, key: String, value: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def set[T](collection: T, key: Double, value: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def setIn[T](collection: T, path: js.Array[Double | String], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(collection.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def setIn[T](collection: T, path: js.Array[Double | String], value: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(collection.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def shift[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
@@ -65,7 +65,7 @@ object mod {
   inline def sort[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def sort[T](array: js.Array[T], compareFunction: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any], compareFunction.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def splice[T](array: js.Array[T], start: Double, deleteCount: Double, items: T*): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def splice[T](array: js.Array[T], start: Double, deleteCount: Double, items: T*): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[T]]
   
   inline def thaw[T](collection: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("thaw")(collection.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -76,7 +76,7 @@ object mod {
   
   inline def unshift[T](array: js.Array[T], element: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unshift")(array.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def updateIn[T](collection: T, path: js.Array[Double | String], callback: js.Function1[/* value */ js.Any, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(collection.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def updateIn[T](collection: T, path: js.Array[Double | String], callback: js.Function1[/* value */ Any, Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(collection.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @js.native
   trait IcepickWrapper[T] extends StObject {
@@ -86,10 +86,10 @@ object mod {
     def assign[S1, S2, S3](s1: S1, s2: S2, s3: S3): IcepickWrapper[T & S1 & S2 & S3] = js.native
     def assign[S1, S2, S3, S4](s1: S1, s2: S2, s3: S3, s4: S4): IcepickWrapper[T & S1 & S2 & S3 & S4] = js.native
     
-    def assoc(key: String, value: js.Any): IcepickWrapper[T] = js.native
-    def assoc(key: Double, value: js.Any): IcepickWrapper[T] = js.native
+    def assoc(key: String, value: Any): IcepickWrapper[T] = js.native
+    def assoc(key: Double, value: Any): IcepickWrapper[T] = js.native
     
-    def assocIn(path: js.Array[Double | String], value: js.Any): IcepickWrapper[T] = js.native
+    def assocIn(path: js.Array[Double | String], value: Any): IcepickWrapper[T] = js.native
     
     def dissoc(key: String): IcepickWrapper[T] = js.native
     def dissoc(key: Double): IcepickWrapper[T] = js.native
@@ -103,14 +103,14 @@ object mod {
     
     def freeze(): IcepickWrapper[T] = js.native
     
-    def getIn(path: js.Array[Double | String]): IcepickWrapper[js.Any] = js.native
+    def getIn(path: js.Array[Double | String]): IcepickWrapper[Any] = js.native
     
     def merge[S1](source: S1): IcepickWrapper[T & S1] = js.native
     
-    def set(key: String, value: js.Any): IcepickWrapper[T] = js.native
-    def set(key: Double, value: js.Any): IcepickWrapper[T] = js.native
+    def set(key: String, value: Any): IcepickWrapper[T] = js.native
+    def set(key: Double, value: Any): IcepickWrapper[T] = js.native
     
-    def setIn(path: js.Array[Double | String], value: js.Any): IcepickWrapper[T] = js.native
+    def setIn(path: js.Array[Double | String], value: Any): IcepickWrapper[T] = js.native
     
     def thaw(): IcepickWrapper[T] = js.native
     
@@ -119,7 +119,7 @@ object mod {
     
     def unsetIn(path: js.Array[Double | String]): IcepickWrapper[T] = js.native
     
-    def updateIn(path: js.Array[Double | String], callback: js.Function1[/* value */ js.Any, js.Any]): IcepickWrapper[T] = js.native
+    def updateIn(path: js.Array[Double | String], callback: js.Function1[/* value */ Any, Any]): IcepickWrapper[T] = js.native
     
     def value(): T = js.native
   }

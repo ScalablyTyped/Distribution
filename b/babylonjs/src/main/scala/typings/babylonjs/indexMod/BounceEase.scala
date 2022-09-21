@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param bounces Defines the number of bounces
   * @param bounciness Defines the amplitude of the bounce
   */
-class BounceEase ()
+open class BounceEase ()
   extends typings.babylonjs.animationsIndexMod.BounceEase {
   def this(/** Defines the number of bounces */
   bounces: Double) = this()

@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** 
   * Creates a PaperScope object.
   */
-class PaperScope ()
+open class PaperScope ()
   extends StObject
      with typings.paper.paper.PaperScope
 object PaperScope {
@@ -42,5 +42,5 @@ object PaperScope {
     * Retrieves a PaperScope object with the given scope id.
     */
   /* static member */
-  inline def get(id: js.Any): typings.paper.paper.PaperScope = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.PaperScope]
+  inline def get(id: Any): typings.paper.paper.PaperScope = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.PaperScope]
 }

@@ -14,12 +14,12 @@ trait ASPxClientGridViewBatchEditRowValidatingEventArgs
   /**
     * Gets the row's key.
     */
-  var key: js.Any
+  var key: Any
   
   /**
     * Provides validation information of a row currently being validated.
     */
-  var validationInfo: js.Any
+  var validationInfo: Any
   
   /**
     * Gets the processed row's visible index.
@@ -28,16 +28,16 @@ trait ASPxClientGridViewBatchEditRowValidatingEventArgs
 }
 object ASPxClientGridViewBatchEditRowValidatingEventArgs {
   
-  inline def apply(key: js.Any, validationInfo: js.Any, visibleIndex: Double): ASPxClientGridViewBatchEditRowValidatingEventArgs = {
+  inline def apply(key: Any, validationInfo: Any, visibleIndex: Double): ASPxClientGridViewBatchEditRowValidatingEventArgs = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], validationInfo = validationInfo.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGridViewBatchEditRowValidatingEventArgs]
   }
   
   extension [Self <: ASPxClientGridViewBatchEditRowValidatingEventArgs](x: Self) {
     
-    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setValidationInfo(value: js.Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
+    inline def setValidationInfo(value: Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

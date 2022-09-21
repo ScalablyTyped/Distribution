@@ -3,8 +3,7 @@ package typings.hapiHapi.mod
 import typings.hapiHapi.mod.Lifecycle.FailAction
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import typings.joi.mod.ValidationOptions
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,7 +104,7 @@ object RouteOptionsValidate {
     inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
     inline def setFailActionFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
     ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
     inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
@@ -113,7 +112,7 @@ object RouteOptionsValidate {
     inline def setHeaders(value: RouteOptionsResponseSchema): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersFunction2(
-      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
+      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[Any]
     ): Self = StObject.set(x, "headers", js.Any.fromFunction2(value))
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
@@ -125,7 +124,7 @@ object RouteOptionsValidate {
     inline def setParams(value: RouteOptionsResponseSchema): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsFunction2(
-      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
+      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[Any]
     ): Self = StObject.set(x, "params", js.Any.fromFunction2(value))
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
@@ -133,7 +132,7 @@ object RouteOptionsValidate {
     inline def setPayload(value: RouteOptionsResponseSchema): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadFunction2(
-      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
+      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[Any]
     ): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
@@ -141,7 +140,7 @@ object RouteOptionsValidate {
     inline def setQuery(value: RouteOptionsResponseSchema): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryFunction2(
-      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
+      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[Any]
     ): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
@@ -149,7 +148,7 @@ object RouteOptionsValidate {
     inline def setState(value: RouteOptionsResponseSchema): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateFunction2(
-      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
+      value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[Any]
     ): Self = StObject.set(x, "state", js.Any.fromFunction2(value))
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)

@@ -8,11 +8,11 @@ object mod {
   
   @JSImport("makeup-floating-label", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with FloatingLabel {
-    def this(el: js.Any) = this()
-    def this(el: js.Any, userOptions: js.Any) = this()
+    def this(el: Any) = this()
+    def this(el: Any, userOptions: Any) = this()
     
     /* CompleteClass */
     override def refresh(): Unit = js.native

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "MousePointEvent")
 @js.native
-class MousePointEvent protected ()
+open class MousePointEvent protected ()
   extends typings.wonderJs.mousePointEventMod.MousePointEvent {
-  def this(event: js.Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName) = this()
+  def this(event: Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName) = this()
 }
 /* static members */
 object MousePointEvent {

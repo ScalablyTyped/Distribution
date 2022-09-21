@@ -9,6 +9,10 @@ trait WatchOptions
   extends StObject
      with /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
   
+  var excludeDirectories: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  
+  var excludeFiles: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  
   var fallbackPolling: js.UndefOr[PollingWatchKind] = js.undefined
   
   var synchronousWatchDirectory: js.UndefOr[Boolean] = js.undefined
@@ -25,6 +29,18 @@ object WatchOptions {
   }
   
   extension [Self <: WatchOptions](x: Self) {
+    
+    inline def setExcludeDirectories(value: js.Array[java.lang.String]): Self = StObject.set(x, "excludeDirectories", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeDirectoriesUndefined: Self = StObject.set(x, "excludeDirectories", js.undefined)
+    
+    inline def setExcludeDirectoriesVarargs(value: java.lang.String*): Self = StObject.set(x, "excludeDirectories", js.Array(value*))
+    
+    inline def setExcludeFiles(value: js.Array[java.lang.String]): Self = StObject.set(x, "excludeFiles", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeFilesUndefined: Self = StObject.set(x, "excludeFiles", js.undefined)
+    
+    inline def setExcludeFilesVarargs(value: java.lang.String*): Self = StObject.set(x, "excludeFiles", js.Array(value*))
     
     inline def setFallbackPolling(value: PollingWatchKind): Self = StObject.set(x, "fallbackPolling", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ trait SmartArtLayouts extends StObject {
   def apply(Index: String): SmartArtLayout = js.native
   def apply(Index: Double): SmartArtLayout = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -19,5 +19,5 @@ trait SmartArtLayouts extends StObject {
   def Item(Index: String): SmartArtLayout = js.native
   def Item(Index: Double): SmartArtLayout = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

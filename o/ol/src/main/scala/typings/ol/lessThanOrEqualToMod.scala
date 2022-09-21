@@ -8,7 +8,7 @@ object lessThanOrEqualToMod {
   
   @JSImport("ol/format/filter/LessThanOrEqualTo", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.ol.comparisonBinaryMod.default {
     def this(propertyName: String, expression: Double) = this()
   }

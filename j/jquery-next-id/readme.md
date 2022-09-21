@@ -10,10 +10,10 @@ jQuery collection plugin that will assign the next ID in sequence if an ID prope
 | ------------------ | :-------------: |
 | Full name          | jquery-next-id |
 | Keywords           | jquery-plugin, ecosystem:jquery, ebay, accessibility, a11y |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1866 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 540.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/makeup-jquery/jquery-next-id#readme)

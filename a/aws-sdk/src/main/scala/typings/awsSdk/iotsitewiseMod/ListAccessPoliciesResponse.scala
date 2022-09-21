@@ -27,7 +27,7 @@ object ListAccessPoliciesResponse {
     
     inline def setAccessPolicySummaries(value: AccessPolicySummaries): Self = StObject.set(x, "accessPolicySummaries", value.asInstanceOf[js.Any])
     
-    inline def setAccessPolicySummariesVarargs(value: AccessPolicySummary*): Self = StObject.set(x, "accessPolicySummaries", js.Array(value :_*))
+    inline def setAccessPolicySummariesVarargs(value: AccessPolicySummary*): Self = StObject.set(x, "accessPolicySummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

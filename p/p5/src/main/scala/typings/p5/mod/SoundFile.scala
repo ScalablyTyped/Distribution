@@ -1,7 +1,6 @@
 package typings.p5.mod
 
 import typings.std.Blob
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,8 +32,8 @@ trait SoundFile extends StObject {
     *   @return id ID of this cue, useful for
     *   removeCue(id)
     */
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.native
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, js.Any], value: js.Object): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ Any, Any]): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ Any, Any], value: js.Object): Double = js.native
   
   /**
     *   Return the number of channels in a sound file. For
@@ -53,9 +52,9 @@ trait SoundFile extends StObject {
     *   Connects the output of a p5sound object to input
     *   of another p5.sound object. For example, you may
     *   connect a p5.SoundFile to an FFT or an Effect. If
-    *   no parameter is given, it will connect to the
-    *   master output. Most p5sound objects connect to the
-    *   master output when they are created.
+    *   no parameter is given, it will connect to the main
+    *   output. Most p5sound objects connect to the master
+    *   output when they are created.
     *   @param [object] Audio object that accepts an input
     */
   def connect(): Unit = js.native
@@ -124,8 +123,8 @@ trait SoundFile extends StObject {
     *   Defaults to 5*width of the browser window.
     *   @return Array of peaks.
     */
-  def getPeaks(): Float32Array = js.native
-  def getPeaks(length: Double): Float32Array = js.native
+  def getPeaks(): js.typedarray.Float32Array = js.native
+  def getPeaks(length: Double): js.typedarray.Float32Array = js.native
   
   /**
     *   Returns true if the sound file finished loading
@@ -152,107 +151,17 @@ trait SoundFile extends StObject {
   def isPlaying(): Boolean = js.native
   
   /**
-    *   Move the playhead of the song to a position, in
-    *   seconds. Start timing and playback duration. If
-    *   none are given, will reset the file to play entire
-    *   duration from start to finish.
+    *   Move the playhead of a soundfile that is currently
+    *   playing to a new position and a new duration, in
+    *   seconds. If none are given, will reset the file to
+    *   play entire duration from start to finish. To set
+    *   the position of a soundfile that is not currently
+    *   playing, use the play or loop methods.
     *   @param cueTime cueTime of the soundFile in
     *   seconds.
     *   @param duration duration in seconds.
     */
   def jump(cueTime: Double, duration: Double): Unit = js.native
-  
-  /**
-    *   loadSound() returns a new p5.SoundFile from a
-    *   specified path. If called during preload(), the
-    *   p5.SoundFile will be ready to play in time for
-    *   setup() and draw(). If called outside of preload,
-    *   the p5.SoundFile will not be ready immediately, so
-    *   loadSound accepts a callback as the second
-    *   parameter. Using a  local server is recommended
-    *   when loading external files.
-    *   @param path Path to the sound file, or an array
-    *   with paths to soundfiles in multiple formats i.e.
-    *   ['sound.ogg', 'sound.mp3']. Alternately, accepts
-    *   an object: either from the HTML5 File API, or a
-    *   p5.File.
-    *   @param [successCallback] Name of a function to
-    *   call once file loads
-    *   @param [errorCallback] Name of a function to call
-    *   if there is an error loading the file.
-    *   @param [whileLoading] Name of a function to call
-    *   while file is loading. This function will receive
-    *   the percentage loaded so far, from 0.0 to 1.0.
-    *   @return Returns a p5.SoundFile
-    */
-  def loadSound(path: String): SoundFile = js.native
-  def loadSound(path: String, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): SoundFile = js.native
-  def loadSound(
-    path: String,
-    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(
-    path: String,
-    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(
-    path: String,
-    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: Unit,
-    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(path: String, successCallback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): SoundFile = js.native
-  def loadSound(
-    path: String,
-    successCallback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(
-    path: String,
-    successCallback: Unit,
-    errorCallback: Unit,
-    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(path: js.Array[js.Any]): SoundFile = js.native
-  def loadSound(path: js.Array[js.Any], successCallback: js.Function1[/* repeated */ js.Any, js.Any]): SoundFile = js.native
-  def loadSound(
-    path: js.Array[js.Any],
-    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(
-    path: js.Array[js.Any],
-    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(
-    path: js.Array[js.Any],
-    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: Unit,
-    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(
-    path: js.Array[js.Any],
-    successCallback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(
-    path: js.Array[js.Any],
-    successCallback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
-  def loadSound(
-    path: js.Array[js.Any],
-    successCallback: Unit,
-    errorCallback: Unit,
-    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
-  ): SoundFile = js.native
   
   /**
     *   Loop the p5.SoundFile. Accepts optional parameters
@@ -309,7 +218,7 @@ trait SoundFile extends StObject {
     *   @param callback function to call when the
     *   soundfile has ended.
     */
-  def onended(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def onended(callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   
   /**
     *   Set the stereo panning of a p5.sound object to a
@@ -397,58 +306,6 @@ trait SoundFile extends StObject {
   def playMode(str: String): Unit = js.native
   
   /**
-    *   processPeaks returns an array of timestamps where
-    *   it thinks there is a beat. This is an asynchronous
-    *   function that processes the soundfile in an
-    *   offline audio context, and sends the results to
-    *   your callback function.
-    *
-    *   The process involves running the soundfile through
-    *   a lowpass filter, and finding all of the peaks
-    *   above the initial threshold. If the total number
-    *   of peaks are below the minimum number of peaks, it
-    *   decreases the threshold and re-runs the analysis
-    *   until either minPeaks or minThreshold are reached.
-    *   @param callback a function to call once this data
-    *   is returned
-    *   @param [initThreshold] initial threshold defaults
-    *   to 0.9
-    *   @param [minThreshold] minimum threshold defaults
-    *   to 0.22
-    *   @param [minPeaks] minimum number of peaks defaults
-    *   to 200
-    *   @return Array of timestamped peaks
-    */
-  def processPeaks(callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[js.Any] = js.native
-  def processPeaks(callback: js.Function1[/* repeated */ js.Any, js.Any], initThreshold: Double): js.Array[js.Any] = js.native
-  def processPeaks(callback: js.Function1[/* repeated */ js.Any, js.Any], initThreshold: Double, minThreshold: Double): js.Array[js.Any] = js.native
-  def processPeaks(
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    initThreshold: Double,
-    minThreshold: Double,
-    minPeaks: Double
-  ): js.Array[js.Any] = js.native
-  def processPeaks(
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    initThreshold: Double,
-    minThreshold: Unit,
-    minPeaks: Double
-  ): js.Array[js.Any] = js.native
-  def processPeaks(callback: js.Function1[/* repeated */ js.Any, js.Any], initThreshold: Unit, minThreshold: Double): js.Array[js.Any] = js.native
-  def processPeaks(
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    initThreshold: Unit,
-    minThreshold: Double,
-    minPeaks: Double
-  ): js.Array[js.Any] = js.native
-  def processPeaks(
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    initThreshold: Unit,
-    minThreshold: Unit,
-    minPeaks: Double
-  ): js.Array[js.Any] = js.native
-  
-  /**
     *   Set the playback rate of a sound file. Will change
     *   the speed and the pitch. Values less than zero
     *   will reverse the audio buffer.
@@ -494,7 +351,7 @@ trait SoundFile extends StObject {
     *   Arrays will create a stereo source. 1 will create
     *   a mono source.
     */
-  def setBuffer(buf: js.Array[js.Any]): Unit = js.native
+  def setBuffer(buf: js.Array[Any]): Unit = js.native
   
   /**
     *   Set a p5.SoundFile's looping flag to true or
@@ -511,7 +368,7 @@ trait SoundFile extends StObject {
     *   @param path path to audio file
     *   @param callback Callback
     */
-  def setPath(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def setPath(path: String, callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   
   def setVolume(volume: js.Object): Unit = js.native
   def setVolume(volume: js.Object, rampTime: Double): Unit = js.native

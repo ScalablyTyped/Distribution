@@ -43,18 +43,18 @@ object DiscoverInputSchemaResponse {
     
     inline def setParsedInputRecordsUndefined: Self = StObject.set(x, "ParsedInputRecords", js.undefined)
     
-    inline def setParsedInputRecordsVarargs(value: ParsedInputRecord*): Self = StObject.set(x, "ParsedInputRecords", js.Array(value :_*))
+    inline def setParsedInputRecordsVarargs(value: ParsedInputRecord*): Self = StObject.set(x, "ParsedInputRecords", js.Array(value*))
     
     inline def setProcessedInputRecords(value: ProcessedInputRecords): Self = StObject.set(x, "ProcessedInputRecords", value.asInstanceOf[js.Any])
     
     inline def setProcessedInputRecordsUndefined: Self = StObject.set(x, "ProcessedInputRecords", js.undefined)
     
-    inline def setProcessedInputRecordsVarargs(value: ProcessedInputRecord*): Self = StObject.set(x, "ProcessedInputRecords", js.Array(value :_*))
+    inline def setProcessedInputRecordsVarargs(value: ProcessedInputRecord*): Self = StObject.set(x, "ProcessedInputRecords", js.Array(value*))
     
     inline def setRawInputRecords(value: RawInputRecords): Self = StObject.set(x, "RawInputRecords", value.asInstanceOf[js.Any])
     
     inline def setRawInputRecordsUndefined: Self = StObject.set(x, "RawInputRecords", js.undefined)
     
-    inline def setRawInputRecordsVarargs(value: RawInputRecord*): Self = StObject.set(x, "RawInputRecords", js.Array(value :_*))
+    inline def setRawInputRecordsVarargs(value: RawInputRecord*): Self = StObject.set(x, "RawInputRecords", js.Array(value*))
   }
 }

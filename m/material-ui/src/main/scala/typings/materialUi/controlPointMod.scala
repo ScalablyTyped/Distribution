@@ -10,10 +10,10 @@ object controlPointMod {
   
   @JSImport("material-ui/svg-icons/image/control-point", JSImport.Default)
   @js.native
-  class default () extends ImageControlPoint
+  open class default () extends ImageControlPoint
   
   @JSImport("material-ui/svg-icons/image/control-point", "ImageControlPoint")
   @js.native
-  class ImageControlPoint ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageControlPoint ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

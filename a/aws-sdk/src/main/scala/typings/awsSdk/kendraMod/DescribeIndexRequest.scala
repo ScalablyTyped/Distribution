@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeIndexRequest extends StObject {
   
   /**
-    * The name of the index to describe.
+    * The identifier of the index you want to get information on.
     */
   var Id: IndexId
 }

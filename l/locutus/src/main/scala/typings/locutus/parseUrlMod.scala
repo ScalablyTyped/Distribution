@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parseUrlMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, component: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, component: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(str: Any): Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(str: Any, component: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, component: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/url/parse_url", JSImport.Namespace)
   @js.native

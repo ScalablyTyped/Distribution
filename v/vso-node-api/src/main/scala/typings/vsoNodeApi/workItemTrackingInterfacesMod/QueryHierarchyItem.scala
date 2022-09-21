@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ trait QueryHierarchyItem
   /**
     * When the query item was created.
     */
-  var createdDate: Date
+  var createdDate: js.Date
   
   /**
     * The link query mode.
@@ -77,7 +76,7 @@ trait QueryHierarchyItem
   /**
     * When the query was last run.
     */
-  var lastExecutedDate: Date
+  var lastExecutedDate: js.Date
   
   /**
     * The identity who last modified the query item.
@@ -87,7 +86,7 @@ trait QueryHierarchyItem
   /**
     * When the query item was last modified.
     */
-  var lastModifiedDate: Date
+  var lastModifiedDate: js.Date
   
   /**
     * The link query clause.
@@ -137,12 +136,12 @@ trait QueryHierarchyItem
 object QueryHierarchyItem {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     children: js.Array[QueryHierarchyItem],
     clauses: WorkItemQueryClause,
     columns: js.Array[WorkItemFieldReference],
     createdBy: IdentityReference,
-    createdDate: Date,
+    createdDate: js.Date,
     filterOptions: LinkQueryMode,
     hasChildren: Boolean,
     id: String,
@@ -151,9 +150,9 @@ object QueryHierarchyItem {
     isInvalidSyntax: Boolean,
     isPublic: Boolean,
     lastExecutedBy: IdentityReference,
-    lastExecutedDate: Date,
+    lastExecutedDate: js.Date,
     lastModifiedBy: IdentityReference,
-    lastModifiedDate: Date,
+    lastModifiedDate: js.Date,
     linkClauses: WorkItemQueryClause,
     name: String,
     path: String,
@@ -173,17 +172,17 @@ object QueryHierarchyItem {
     
     inline def setChildren(value: js.Array[QueryHierarchyItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: QueryHierarchyItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: QueryHierarchyItem*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setClauses(value: WorkItemQueryClause): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
     inline def setColumns(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCreatedBy(value: IdentityReference): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setFilterOptions(value: LinkQueryMode): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     
@@ -201,11 +200,11 @@ object QueryHierarchyItem {
     
     inline def setLastExecutedBy(value: IdentityReference): Self = StObject.set(x, "lastExecutedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastExecutedDate(value: Date): Self = StObject.set(x, "lastExecutedDate", value.asInstanceOf[js.Any])
+    inline def setLastExecutedDate(value: js.Date): Self = StObject.set(x, "lastExecutedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedBy(value: IdentityReference): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLinkClauses(value: WorkItemQueryClause): Self = StObject.set(x, "linkClauses", value.asInstanceOf[js.Any])
     
@@ -219,7 +218,7 @@ object QueryHierarchyItem {
     
     inline def setSortColumns(value: js.Array[WorkItemQuerySortColumn]): Self = StObject.set(x, "sortColumns", value.asInstanceOf[js.Any])
     
-    inline def setSortColumnsVarargs(value: WorkItemQuerySortColumn*): Self = StObject.set(x, "sortColumns", js.Array(value :_*))
+    inline def setSortColumnsVarargs(value: WorkItemQuerySortColumn*): Self = StObject.set(x, "sortColumns", js.Array(value*))
     
     inline def setSourceClauses(value: WorkItemQueryClause): Self = StObject.set(x, "sourceClauses", value.asInstanceOf[js.Any])
     

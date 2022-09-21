@@ -72,7 +72,7 @@ object BatchUpdateFindingsRequest {
     
     inline def setFindingIdentifiers(value: AwsSecurityFindingIdentifierList): Self = StObject.set(x, "FindingIdentifiers", value.asInstanceOf[js.Any])
     
-    inline def setFindingIdentifiersVarargs(value: AwsSecurityFindingIdentifier*): Self = StObject.set(x, "FindingIdentifiers", js.Array(value :_*))
+    inline def setFindingIdentifiersVarargs(value: AwsSecurityFindingIdentifier*): Self = StObject.set(x, "FindingIdentifiers", js.Array(value*))
     
     inline def setNote(value: NoteUpdate): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object BatchUpdateFindingsRequest {
     
     inline def setRelatedFindingsUndefined: Self = StObject.set(x, "RelatedFindings", js.undefined)
     
-    inline def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value :_*))
+    inline def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value*))
     
     inline def setSeverity(value: SeverityUpdate): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object BatchUpdateFindingsRequest {
     
     inline def setTypesUndefined: Self = StObject.set(x, "Types", js.undefined)
     
-    inline def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value :_*))
+    inline def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value*))
     
     inline def setUserDefinedFields(value: FieldMap): Self = StObject.set(x, "UserDefinedFields", value.asInstanceOf[js.Any])
     

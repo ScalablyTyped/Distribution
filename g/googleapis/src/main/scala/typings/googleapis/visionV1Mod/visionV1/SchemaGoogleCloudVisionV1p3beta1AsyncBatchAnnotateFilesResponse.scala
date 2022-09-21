@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response to an async batch file annotation request.
-  */
 trait SchemaGoogleCloudVisionV1p3beta1AsyncBatchAnnotateFilesResponse extends StObject {
   
   /**
-    * The list of file annotation responses, one for each request in
-    * AsyncBatchAnnotateFilesRequest.
+    * The list of file annotation responses, one for each request in AsyncBatchAnnotateFilesRequest.
     */
   var responses: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaGoogleCloudVisionV1p3beta1AsyncBatchAnnotateFilesResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: SchemaGoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaGoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value*))
   }
 }

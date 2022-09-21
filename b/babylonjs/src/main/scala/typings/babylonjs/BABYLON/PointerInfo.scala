@@ -1,7 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.MouseWheelEvent
-import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +15,7 @@ trait PointerInfo
 }
 object PointerInfo {
   
-  inline def apply(event: PointerEvent | MouseWheelEvent, `type`: Double): PointerInfo = {
+  inline def apply(event: IMouseEvent, `type`: Double): PointerInfo = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], pickInfo = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerInfo]

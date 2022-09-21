@@ -1,8 +1,5 @@
 package typings.tensorflowTfjsBackendCpu
 
-import typings.std.Float32Array
-import typings.std.Int32Array
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
@@ -22,5 +19,9 @@ object maxPoolWithArgmaxImplMod {
     dtype: DataType,
     includeBatchInIndex: Boolean,
     convInfo: Conv2DInfo
-  ): js.Array[js.Array[String] | Uint8Array | Int32Array | Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmaxImpl")(xValues.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any], convInfo.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String] | Uint8Array | Int32Array | Float32Array]]
+  ): js.Array[
+    js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[String]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmaxImpl")(xValues.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any], convInfo.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[String]
+  ]]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExtensionFlag extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var setter: js.UndefOr[String] = js.undefined
 }
@@ -19,7 +19,7 @@ object ExtensionFlag {
   
   extension [Self <: ExtensionFlag](x: Self) {
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     

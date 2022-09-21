@@ -10,11 +10,11 @@ trait IgButtonIcons
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
-  var primary: js.UndefOr[js.Any] = js.undefined
+  var primary: js.UndefOr[Any] = js.undefined
   
-  var secondary: js.UndefOr[js.Any] = js.undefined
+  var secondary: js.UndefOr[Any] = js.undefined
 }
 object IgButtonIcons {
   
@@ -25,11 +25,11 @@ object IgButtonIcons {
   
   extension [Self <: IgButtonIcons](x: Self) {
     
-    inline def setPrimary(value: js.Any): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Any): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    inline def setSecondary(value: js.Any): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: Any): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
   }

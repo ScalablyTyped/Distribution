@@ -68,7 +68,7 @@ trait Auth0LockConstructorOptions extends StObject {
   
   var languageBaseUrl: js.UndefOr[String] = js.undefined
   
-  var languageDictionary: js.UndefOr[js.Any] = js.undefined
+  var languageDictionary: js.UndefOr[Any] = js.undefined
   
   var leeway: js.UndefOr[Double] = js.undefined
   
@@ -107,7 +107,7 @@ object Auth0LockConstructorOptions {
     
     inline def setAdditionalSignUpFieldsUndefined: Self = StObject.set(x, "additionalSignUpFields", js.undefined)
     
-    inline def setAdditionalSignUpFieldsVarargs(value: Auth0LockAdditionalSignUpField*): Self = StObject.set(x, "additionalSignUpFields", js.Array(value :_*))
+    inline def setAdditionalSignUpFieldsVarargs(value: Auth0LockAdditionalSignUpField*): Self = StObject.set(x, "additionalSignUpFields", js.Array(value*))
     
     inline def setAllowAutocomplete(value: Boolean): Self = StObject.set(x, "allowAutocomplete", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object Auth0LockConstructorOptions {
     
     inline def setAllowedConnectionsUndefined: Self = StObject.set(x, "allowedConnections", js.undefined)
     
-    inline def setAllowedConnectionsVarargs(value: String*): Self = StObject.set(x, "allowedConnections", js.Array(value :_*))
+    inline def setAllowedConnectionsVarargs(value: String*): Self = StObject.set(x, "allowedConnections", js.Array(value*))
     
     inline def setAssetsUrl(value: String): Self = StObject.set(x, "assetsUrl", value.asInstanceOf[js.Any])
     
@@ -211,7 +211,7 @@ object Auth0LockConstructorOptions {
     
     inline def setLanguageBaseUrlUndefined: Self = StObject.set(x, "languageBaseUrl", js.undefined)
     
-    inline def setLanguageDictionary(value: js.Any): Self = StObject.set(x, "languageDictionary", value.asInstanceOf[js.Any])
+    inline def setLanguageDictionary(value: Any): Self = StObject.set(x, "languageDictionary", value.asInstanceOf[js.Any])
     
     inline def setLanguageDictionaryUndefined: Self = StObject.set(x, "languageDictionary", js.undefined)
     

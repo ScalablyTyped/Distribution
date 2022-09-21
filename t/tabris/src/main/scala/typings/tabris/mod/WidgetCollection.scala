@@ -2,8 +2,8 @@ package typings.tabris.mod
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.tabris.anon.Opacity
-import typings.tabris.anon.`18`
-import typings.tabris.anon.`19`
+import typings.tabris.anon.`16`
+import typings.tabris.anon.`17`
 import typings.tabris.tabrisStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "WidgetCollection")
 @js.native
-class WidgetCollection[WidgetType /* <: Widget */] ()
+/**
+  * A `WidgetCollection` is an array-like object representing a set of widgets, as returned by the widget
+  * methods `children` and `find`. It combines a subset of the JavaScript Array API with a subset of the
+  * Tabris.js Widget API. Like an array, the widgets within the collection may be accessed directly using
+  * the `[index]` syntax. The number of widgets is stored in the `length` field. Instances of
+  * *WidgetCollection* are immutable.
+  * Calls to `set` or `animate` change the given properties for all widgets in the collection. Similarly,
+  * the `on`, `off` and `once` methods will add/remove the given listener to/from all widgets. When `get`
+  * is used, the value of the first widget in the collection is returned.
+  * WidgetCollection can also in JSX as a means of creating a group of widgets to append to the same
+  * parent. To shorten this common use case the `WidgetCollection` is also available as the alias
+  * ["$"](./$.md). This alias still needs to be imported from the tabris module though.
+  */
+open class WidgetCollection[WidgetType /* <: Widget[Any] */] ()
   extends StObject
      with /**
   * @constant
   */
-/* key */ NumberDictionary[WidgetType] {
-  def this(widgets: js.Array[Widget]) = this()
+/* key */ NumberDictionary[WidgetType]
+     with _JSXChildren[WidgetType] {
+  def this(widgets: js.Array[Widget[Any]]) = this()
   
   /**
     * Animates all widgets in this collection.
@@ -30,15 +44,15 @@ class WidgetCollection[WidgetType /* <: Widget */] ()
     * Appends all widgets in this collection to the given parent widget.
     * @param parent The parent widget to append to.
     */
-  def appendTo(parent: typings.tabris.mod.Composite[Widget]): this.type = js.native
+  def appendTo(parent: typings.tabris.mod.Composite[Widget[Any]]): this.type = js.native
   
   /**
     * Returns a collection containing all children of all widgets in this collection that match the given
     * selector.
     * @param selector A selector expression or a predicate function to filter the results.
     */
-  def children[Result /* <: Widget */](): WidgetCollection[Result] = js.native
-  def children[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result] = js.native
+  def children[Result /* <: Widget[Any] */](): WidgetCollection[Result] = js.native
+  def children[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result] = js.native
   
   /**
     * Returns a clone of this *WidgetCollection* containing all widgets in this collection.
@@ -49,7 +63,7 @@ class WidgetCollection[WidgetType /* <: Widget */] ()
     * arguments.
     * @param items
     */
-  def concat[AddedType /* <: Widget */](items: (AddedType | js.Array[AddedType] | WidgetCollection[AddedType])*): WidgetCollection[AddedType | WidgetType] = js.native
+  def concat[AddedType /* <: Widget[Any] */](items: (AddedType | js.Array[AddedType] | WidgetCollection[AddedType])*): WidgetCollection[AddedType | WidgetType] = js.native
   
   /**
     * Detaches all widgets in this collection from their parent.
@@ -93,7 +107,7 @@ class WidgetCollection[WidgetType /* <: Widget */] ()
     * The widget this WidgetCollection was created from. Corresponds to the ':host' selector.
     * @constant
     */
-  val host: Widget = js.native
+  val host: Widget[Any] = js.native
   
   /**
     * Returns `true` if the given widget is included in the collection, `false` otherwise.
@@ -110,14 +124,14 @@ class WidgetCollection[WidgetType /* <: Widget */] ()
   /**
     * @constant
     */
-  val jsxAttributes: `19`[WidgetType] = js.native
+  val jsxAttributes: `17`[WidgetType] = js.native
   
   /**
     * Returns the last widget in the collection that is an instance of the given class.
     * @param constructor A class to filter the results.
     */
-  def last[U /* <: Widget */](): U = js.native
-  def last[U /* <: Widget */](constructor: `18`[U]): U = js.native
+  def last[U /* <: Widget[Any] */](): U = js.native
+  def last[U /* <: Widget[Any] */](constructor: `16`[U]): U = js.native
   def last[Result /* <: WidgetType */](selector: Selector[WidgetType, Result]): js.UndefOr[Result] = js.native
   /**
     * Returns the last widget in the collection that is matched by the selector. Without selector, it is
@@ -143,9 +157,9 @@ class WidgetCollection[WidgetType /* <: Widget */] ()
       /* widget */ WidgetType, 
       /* index */ Double, 
       /* collection */ WidgetCollection[WidgetType], 
-      js.Any
+      Any
     ]
-  ): js.Array[js.Any] = js.native
+  ): js.Array[Any] = js.native
   /**
     * Calls the given callback function once for each widget in the collection and returns an array with
     * the return values of each call.
@@ -201,7 +215,7 @@ class WidgetCollection[WidgetType /* <: Widget */] ()
   /**
     * Returns a collection containing all direct parents of the widgets in this collection.
     */
-  def parent(): WidgetCollection[Widget] = js.native
+  def parent(): WidgetCollection[Widget[Any]] = js.native
   
   /**
     * Sets all key-value pairs in the properties object on all widgets in this collection. See also

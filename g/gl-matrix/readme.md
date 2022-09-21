@@ -1,7 +1,7 @@
 
 # Scala.js typings for gl-matrix
 
-Typings are for version 3.3.0
+Typings are for version 3.4.3
 
 ## Library description:
 Javascript Matrix and Vector library for High Performance WebGL apps
@@ -11,14 +11,12 @@ Javascript Matrix and Vector library for High Performance WebGL apps
 | Full name          | gl-matrix |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 406 |
-| # downloads        | 19942150 |
-| # stars            | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 3686863.0 |
+| # stars            | 4566.0 |
 
 ## Links
 - [Homepage](http://glmatrix.net)
-- [Bugs](https://github.com/toji/gl-matrix/issues)
-- [Repository](https://github.com/toji/gl-matrix)
 - [Npm](https://www.npmjs.com/package/gl-matrix)
     
 

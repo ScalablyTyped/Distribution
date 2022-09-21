@@ -1,6 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.progressProgressMod.ProgressGradient
 import typings.antd.progressProgressMod.ProgressProps
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
@@ -18,12 +19,16 @@ object circleMod extends Shortcut {
     extends StObject
        with ProgressProps {
     
-    var children: ReactNode
+    @JSName("children")
+    var children_CircleProps: ReactNode
     
     @JSName("prefixCls")
     var prefixCls_CircleProps: String
     
     var progressStatus: String
+    
+    @JSName("strokeColor")
+    var strokeColor_CircleProps: js.UndefOr[String | ProgressGradient] = js.undefined
   }
   object CircleProps {
     
@@ -41,6 +46,10 @@ object circleMod extends Shortcut {
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setProgressStatus(value: String): Self = StObject.set(x, "progressStatus", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeColor(value: String | ProgressGradient): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     }
   }
   

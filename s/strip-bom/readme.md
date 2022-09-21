@@ -1,7 +1,7 @@
 
 # Scala.js typings for strip-bom
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Strip UTF-8 byte order mark (BOM) from a string
@@ -10,10 +10,10 @@ Strip UTF-8 byte order mark (BOM) from a string
 | ------------------ | :-------------: |
 | Full name          | strip-bom |
 | Keywords           | strip, bom, byte, order, mark, unicode, utf8, utf-8, remove, delete, trim, text, string |
-| # releases         | 2 |
-| # dependents       | 449 |
-| # downloads        | 1192333478 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8028257633333334E8 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/strip-bom#readme)

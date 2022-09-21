@@ -1,5 +1,6 @@
 package typings.styledJsx
 
+import typings.react.mod.global.JSX.Element
 import typings.std.TemplateStringsArray
 import typings.styledJsx.anon.ClassName
 import org.scalablytyped.runtime.StObject
@@ -8,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cssMod {
   
-  inline def apply(chunks: TemplateStringsArray, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(chunks.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(chunks: TemplateStringsArray, args: Any*): Element = ^.asInstanceOf[js.Dynamic].apply(List(chunks.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Element]
   
   @JSImport("styled-jsx/css", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def global(chunks: TemplateStringsArray, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("global")(chunks.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def global(chunks: TemplateStringsArray, args: Any*): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("global")(List(chunks.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Element]
   
-  inline def resolve(chunks: TemplateStringsArray, args: js.Any*): ClassName = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(chunks.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassName]
+  inline def resolve(chunks: TemplateStringsArray, args: Any*): ClassName = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(List(chunks.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClassName]
 }

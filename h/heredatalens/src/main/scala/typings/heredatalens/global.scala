@@ -40,7 +40,7 @@ object global {
         */
       @JSGlobal("H.datalens.HeatmapLayer")
       @js.native
-      class HeatmapLayer protected ()
+      open class HeatmapLayer protected ()
         extends StObject
            with typings.heredatalens.H.datalens.HeatmapLayer {
         /**
@@ -158,7 +158,7 @@ object global {
         */
       @JSGlobal("H.datalens.ObjectLayer")
       @js.native
-      class ObjectLayer protected ()
+      open class ObjectLayer protected ()
         extends StObject
            with typings.heredatalens.H.datalens.ObjectLayer {
         def this(
@@ -227,8 +227,8 @@ object global {
         /* static member */
         inline def createIcon(svg: String): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any]).asInstanceOf[Icon]
         inline def createIcon(svg: String, options: typings.heremaps.H.map.Icon.Options): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Icon]
-        inline def createIcon(svg: js.Array[js.Any]): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any]).asInstanceOf[Icon]
-        inline def createIcon(svg: js.Array[js.Any], options: typings.heremaps.H.map.Icon.Options): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Icon]
+        inline def createIcon(svg: js.Array[Any]): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any]).asInstanceOf[Icon]
+        inline def createIcon(svg: js.Array[Any], options: typings.heremaps.H.map.Icon.Options): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Icon]
         
         /**
           * Default value for dataToRows callback option. It represents each row as an object where property names correspond to data column names.
@@ -256,7 +256,7 @@ object global {
         * @param data - JSON object
         * @param options - Configures data accessibility parameters
         */
-      class Provider ()
+      open class Provider ()
         extends StObject
            with typings.heredatalens.H.datalens.Provider {
         def this(data: Data) = this()
@@ -272,7 +272,7 @@ object global {
         */
       @JSGlobal("H.datalens.QueryProvider")
       @js.native
-      class QueryProvider protected ()
+      open class QueryProvider protected ()
         extends StObject
            with typings.heredatalens.H.datalens.QueryProvider {
         /**
@@ -292,7 +292,7 @@ object global {
         */
       @JSGlobal("H.datalens.QueryTileProvider")
       @js.native
-      class QueryTileProvider protected ()
+      open class QueryTileProvider protected ()
         extends StObject
            with typings.heredatalens.H.datalens.QueryTileProvider {
         /**
@@ -317,7 +317,7 @@ object global {
       /**
         * Constructor
         */
-      class RasterLayer ()
+      open class RasterLayer ()
         extends StObject
            with typings.heredatalens.H.datalens.RasterLayer {
         
@@ -365,8 +365,8 @@ object global {
         /* static member */
         @JSGlobal("H.datalens.RasterLayer.defaultDataToRows")
         @js.native
-        def defaultDataToRows: js.Any = js.native
-        inline def defaultDataToRows_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
+        def defaultDataToRows: Any = js.native
+        inline def defaultDataToRows_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
         
         /**
           * This is a default implementation of renderTile callback. This method represents each point as a black 1x1 pixel square.
@@ -383,7 +383,7 @@ object global {
         */
       @JSGlobal("H.datalens.RawDataProvider")
       @js.native
-      class RawDataProvider protected ()
+      open class RawDataProvider protected ()
         extends StObject
            with typings.heredatalens.H.datalens.RawDataProvider {
         /**
@@ -404,7 +404,7 @@ object global {
         * Constructor
         * @param options - Overrides the configuration from the service.Platform instance
         */
-      class Service ()
+      open class Service ()
         extends StObject
            with typings.heredatalens.H.datalens.Service {
         def this(options: typings.heredatalens.H.datalens.Service.Options) = this()
@@ -416,7 +416,7 @@ object global {
         */
       @JSGlobal("H.datalens.SpatialLayer")
       @js.native
-      class SpatialLayer protected ()
+      open class SpatialLayer protected ()
         extends StObject
            with typings.heredatalens.H.datalens.SpatialLayer {
         /**
@@ -471,14 +471,14 @@ object global {
         /* static member */
         @JSGlobal("H.datalens.SpatialLayer.DEFAULT_STATE")
         @js.native
-        def DEFAULT_STATE: js.Any = js.native
-        inline def DEFAULT_STATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_STATE")(x.asInstanceOf[js.Any])
+        def DEFAULT_STATE: Any = js.native
+        inline def DEFAULT_STATE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_STATE")(x.asInstanceOf[js.Any])
         
         /* static member */
         @JSGlobal("H.datalens.SpatialLayer.Spatial")
         @js.native
-        def Spatial: js.Any = js.native
-        inline def Spatial_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Spatial")(x.asInstanceOf[js.Any])
+        def Spatial: Any = js.native
+        inline def Spatial_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Spatial")(x.asInstanceOf[js.Any])
         
         /**
           * Default value for dataToRows callback option. It represents each row as an object where property names correspond to data column names.
@@ -486,8 +486,8 @@ object global {
         /* static member */
         @JSGlobal("H.datalens.SpatialLayer.defaultDataToRows")
         @js.native
-        def defaultDataToRows: js.Any = js.native
-        inline def defaultDataToRows_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
+        def defaultDataToRows: Any = js.native
+        inline def defaultDataToRows_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
       }
       
       /**
@@ -497,7 +497,7 @@ object global {
         */
       @JSGlobal("H.datalens.SpatialTileProvider")
       @js.native
-      class SpatialTileProvider protected ()
+      open class SpatialTileProvider protected ()
         extends StObject
            with typings.heredatalens.H.datalens.SpatialTileProvider {
         /**
@@ -519,8 +519,8 @@ object global {
         /* static member */
         @JSGlobal("H.datalens.SpatialTileProvider.VectorTile")
         @js.native
-        def VectorTile: js.Any = js.native
-        inline def VectorTile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VectorTile")(x.asInstanceOf[js.Any])
+        def VectorTile: Any = js.native
+        inline def VectorTile_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VectorTile")(x.asInstanceOf[js.Any])
       }
     }
   }

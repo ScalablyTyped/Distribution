@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "unified-engine" : "10.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "unified-engine" : "10.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

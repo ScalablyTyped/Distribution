@@ -24,12 +24,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DMS extends Service {
   
   /**
-    * Adds metadata tags to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
+    * Adds metadata tags to an DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
     */
   def addTagsToResource(): Request[AddTagsToResourceResponse, AWSError] = js.native
   def addTagsToResource(callback: js.Function2[/* err */ AWSError, /* data */ AddTagsToResourceResponse, Unit]): Request[AddTagsToResourceResponse, AWSError] = js.native
   /**
-    * Adds metadata tags to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
+    * Adds metadata tags to an DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
     */
   def addTagsToResource(params: AddTagsToResourceMessage): Request[AddTagsToResourceResponse, AWSError] = js.native
   def addTagsToResource(
@@ -71,12 +71,12 @@ trait DMS extends Service {
   var config_DMS: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates an endpoint using the provided settings.
+    * Creates an endpoint using the provided settings.  For a MySQL source or target endpoint, don't explicitly specify the database using the DatabaseName request parameter on the CreateEndpoint API call. Specifying DatabaseName when you create a MySQL endpoint replicates all the task tables to this single database. For MySQL endpoints, you specify the database only when you specify the schema in the table-mapping rules of the DMS task. 
     */
   def createEndpoint(): Request[CreateEndpointResponse, AWSError] = js.native
   def createEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointResponse, Unit]): Request[CreateEndpointResponse, AWSError] = js.native
   /**
-    * Creates an endpoint using the provided settings.
+    * Creates an endpoint using the provided settings.  For a MySQL source or target endpoint, don't explicitly specify the database using the DatabaseName request parameter on the CreateEndpoint API call. Specifying DatabaseName when you create a MySQL endpoint replicates all the task tables to this single database. For MySQL endpoints, you specify the database only when you specify the schema in the table-mapping rules of the DMS task. 
     */
   def createEndpoint(params: CreateEndpointMessage): Request[CreateEndpointResponse, AWSError] = js.native
   def createEndpoint(
@@ -85,12 +85,12 @@ trait DMS extends Service {
   ): Request[CreateEndpointResponse, AWSError] = js.native
   
   /**
-    *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
+    *  Creates an DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all DMS sources belonging to your customer account. For more information about DMS events, see Working with Events and Notifications in the Database Migration Service User Guide. 
     */
   def createEventSubscription(): Request[CreateEventSubscriptionResponse, AWSError] = js.native
   def createEventSubscription(callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResponse, Unit]): Request[CreateEventSubscriptionResponse, AWSError] = js.native
   /**
-    *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
+    *  Creates an DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all DMS sources belonging to your customer account. For more information about DMS events, see Working with Events and Notifications in the Database Migration Service User Guide. 
     */
   def createEventSubscription(params: CreateEventSubscriptionMessage): Request[CreateEventSubscriptionResponse, AWSError] = js.native
   def createEventSubscription(
@@ -99,12 +99,26 @@ trait DMS extends Service {
   ): Request[CreateEventSubscriptionResponse, AWSError] = js.native
   
   /**
-    * Creates the replication instance using the specified parameters. AWS DMS requires that your account have certain roles with appropriate permissions before you can create a replication instance. For information on the required roles, see Creating the IAM Roles to Use With the AWS CLI and AWS DMS API. For information on the required permissions, see IAM Permissions Needed to Use AWS DMS.
+    * Creates a Fleet Advisor collector using the specified parameters.
+    */
+  def createFleetAdvisorCollector(): Request[CreateFleetAdvisorCollectorResponse, AWSError] = js.native
+  def createFleetAdvisorCollector(callback: js.Function2[/* err */ AWSError, /* data */ CreateFleetAdvisorCollectorResponse, Unit]): Request[CreateFleetAdvisorCollectorResponse, AWSError] = js.native
+  /**
+    * Creates a Fleet Advisor collector using the specified parameters.
+    */
+  def createFleetAdvisorCollector(params: CreateFleetAdvisorCollectorRequest): Request[CreateFleetAdvisorCollectorResponse, AWSError] = js.native
+  def createFleetAdvisorCollector(
+    params: CreateFleetAdvisorCollectorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateFleetAdvisorCollectorResponse, Unit]
+  ): Request[CreateFleetAdvisorCollectorResponse, AWSError] = js.native
+  
+  /**
+    * Creates the replication instance using the specified parameters. DMS requires that your account have certain roles with appropriate permissions before you can create a replication instance. For information on the required roles, see Creating the IAM Roles to Use With the CLI and DMS API. For information on the required permissions, see IAM Permissions Needed to Use DMS.
     */
   def createReplicationInstance(): Request[CreateReplicationInstanceResponse, AWSError] = js.native
   def createReplicationInstance(callback: js.Function2[/* err */ AWSError, /* data */ CreateReplicationInstanceResponse, Unit]): Request[CreateReplicationInstanceResponse, AWSError] = js.native
   /**
-    * Creates the replication instance using the specified parameters. AWS DMS requires that your account have certain roles with appropriate permissions before you can create a replication instance. For information on the required roles, see Creating the IAM Roles to Use With the AWS CLI and AWS DMS API. For information on the required permissions, see IAM Permissions Needed to Use AWS DMS.
+    * Creates the replication instance using the specified parameters. DMS requires that your account have certain roles with appropriate permissions before you can create a replication instance. For information on the required roles, see Creating the IAM Roles to Use With the CLI and DMS API. For information on the required permissions, see IAM Permissions Needed to Use DMS.
     */
   def createReplicationInstance(params: CreateReplicationInstanceMessage): Request[CreateReplicationInstanceResponse, AWSError] = js.native
   def createReplicationInstance(
@@ -113,12 +127,12 @@ trait DMS extends Service {
   ): Request[CreateReplicationInstanceResponse, AWSError] = js.native
   
   /**
-    * Creates a replication subnet group given a list of the subnet IDs in a VPC.
+    * Creates a replication subnet group given a list of the subnet IDs in a VPC. The VPC needs to have at least one subnet in at least two availability zones in the Amazon Web Services Region, otherwise the service will throw a ReplicationSubnetGroupDoesNotCoverEnoughAZs exception.
     */
   def createReplicationSubnetGroup(): Request[CreateReplicationSubnetGroupResponse, AWSError] = js.native
   def createReplicationSubnetGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateReplicationSubnetGroupResponse, Unit]): Request[CreateReplicationSubnetGroupResponse, AWSError] = js.native
   /**
-    * Creates a replication subnet group given a list of the subnet IDs in a VPC.
+    * Creates a replication subnet group given a list of the subnet IDs in a VPC. The VPC needs to have at least one subnet in at least two availability zones in the Amazon Web Services Region, otherwise the service will throw a ReplicationSubnetGroupDoesNotCoverEnoughAZs exception.
     */
   def createReplicationSubnetGroup(params: CreateReplicationSubnetGroupMessage): Request[CreateReplicationSubnetGroupResponse, AWSError] = js.native
   def createReplicationSubnetGroup(
@@ -183,18 +197,46 @@ trait DMS extends Service {
   ): Request[DeleteEndpointResponse, AWSError] = js.native
   
   /**
-    *  Deletes an AWS DMS event subscription. 
+    *  Deletes an DMS event subscription. 
     */
   def deleteEventSubscription(): Request[DeleteEventSubscriptionResponse, AWSError] = js.native
   def deleteEventSubscription(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventSubscriptionResponse, Unit]): Request[DeleteEventSubscriptionResponse, AWSError] = js.native
   /**
-    *  Deletes an AWS DMS event subscription. 
+    *  Deletes an DMS event subscription. 
     */
   def deleteEventSubscription(params: DeleteEventSubscriptionMessage): Request[DeleteEventSubscriptionResponse, AWSError] = js.native
   def deleteEventSubscription(
     params: DeleteEventSubscriptionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventSubscriptionResponse, Unit]
   ): Request[DeleteEventSubscriptionResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Fleet Advisor collector.
+    */
+  def deleteFleetAdvisorCollector(): Request[js.Object, AWSError] = js.native
+  def deleteFleetAdvisorCollector(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified Fleet Advisor collector.
+    */
+  def deleteFleetAdvisorCollector(params: DeleteCollectorRequest): Request[js.Object, AWSError] = js.native
+  def deleteFleetAdvisorCollector(
+    params: DeleteCollectorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Fleet Advisor collector databases.
+    */
+  def deleteFleetAdvisorDatabases(): Request[DeleteFleetAdvisorDatabasesResponse, AWSError] = js.native
+  def deleteFleetAdvisorDatabases(callback: js.Function2[/* err */ AWSError, /* data */ DeleteFleetAdvisorDatabasesResponse, Unit]): Request[DeleteFleetAdvisorDatabasesResponse, AWSError] = js.native
+  /**
+    * Deletes the specified Fleet Advisor collector databases.
+    */
+  def deleteFleetAdvisorDatabases(params: DeleteFleetAdvisorDatabasesRequest): Request[DeleteFleetAdvisorDatabasesResponse, AWSError] = js.native
+  def deleteFleetAdvisorDatabases(
+    params: DeleteFleetAdvisorDatabasesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteFleetAdvisorDatabasesResponse, Unit]
+  ): Request[DeleteFleetAdvisorDatabasesResponse, AWSError] = js.native
   
   /**
     * Deletes the specified replication instance.  You must delete any migration tasks that are associated with the replication instance before you can delete it.  
@@ -239,14 +281,14 @@ trait DMS extends Service {
   ): Request[DeleteReplicationTaskResponse, AWSError] = js.native
   
   /**
-    * Deletes the record of a single premigration assessment run. This operation removes all metadata that AWS DMS maintains about this assessment run. However, the operation leaves untouched all information about this assessment run that is stored in your Amazon S3 bucket.
+    * Deletes the record of a single premigration assessment run. This operation removes all metadata that DMS maintains about this assessment run. However, the operation leaves untouched all information about this assessment run that is stored in your Amazon S3 bucket.
     */
   def deleteReplicationTaskAssessmentRun(): Request[DeleteReplicationTaskAssessmentRunResponse, AWSError] = js.native
   def deleteReplicationTaskAssessmentRun(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteReplicationTaskAssessmentRunResponse, Unit]
   ): Request[DeleteReplicationTaskAssessmentRunResponse, AWSError] = js.native
   /**
-    * Deletes the record of a single premigration assessment run. This operation removes all metadata that AWS DMS maintains about this assessment run. However, the operation leaves untouched all information about this assessment run that is stored in your Amazon S3 bucket.
+    * Deletes the record of a single premigration assessment run. This operation removes all metadata that DMS maintains about this assessment run. However, the operation leaves untouched all information about this assessment run that is stored in your Amazon S3 bucket.
     */
   def deleteReplicationTaskAssessmentRun(params: DeleteReplicationTaskAssessmentRunMessage): Request[DeleteReplicationTaskAssessmentRunResponse, AWSError] = js.native
   def deleteReplicationTaskAssessmentRun(
@@ -255,12 +297,12 @@ trait DMS extends Service {
   ): Request[DeleteReplicationTaskAssessmentRunResponse, AWSError] = js.native
   
   /**
-    * Lists all of the AWS DMS attributes for a customer account. These attributes include AWS DMS quotas for the account and a unique account identifier in a particular DMS region. DMS quotas include a list of resource quotas supported by the account, such as the number of replication instances allowed. The description for each resource quota, includes the quota name, current usage toward that quota, and the quota's maximum value. DMS uses the unique account identifier to name each artifact used by DMS in the given region. This command does not take any parameters.
+    * Lists all of the DMS attributes for a customer account. These attributes include DMS quotas for the account and a unique account identifier in a particular DMS region. DMS quotas include a list of resource quotas supported by the account, such as the number of replication instances allowed. The description for each resource quota, includes the quota name, current usage toward that quota, and the quota's maximum value. DMS uses the unique account identifier to name each artifact used by DMS in the given region. This command does not take any parameters.
     */
   def describeAccountAttributes(): Request[DescribeAccountAttributesResponse, AWSError] = js.native
   def describeAccountAttributes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountAttributesResponse, Unit]): Request[DescribeAccountAttributesResponse, AWSError] = js.native
   /**
-    * Lists all of the AWS DMS attributes for a customer account. These attributes include AWS DMS quotas for the account and a unique account identifier in a particular DMS region. DMS quotas include a list of resource quotas supported by the account, such as the number of replication instances allowed. The description for each resource quota, includes the quota name, current usage toward that quota, and the quota's maximum value. DMS uses the unique account identifier to name each artifact used by DMS in the given region. This command does not take any parameters.
+    * Lists all of the DMS attributes for a customer account. These attributes include DMS quotas for the account and a unique account identifier in a particular DMS region. DMS quotas include a list of resource quotas supported by the account, such as the number of replication instances allowed. The description for each resource quota, includes the quota name, current usage toward that quota, and the quota's maximum value. DMS uses the unique account identifier to name each artifact used by DMS in the given region. This command does not take any parameters.
     */
   def describeAccountAttributes(params: DescribeAccountAttributesMessage): Request[DescribeAccountAttributesResponse, AWSError] = js.native
   def describeAccountAttributes(
@@ -313,6 +355,20 @@ trait DMS extends Service {
   ): Request[DescribeConnectionsResponse, AWSError] = js.native
   
   /**
+    * Returns information about the possible endpoint settings available when you create an endpoint for a specific database engine.
+    */
+  def describeEndpointSettings(): Request[DescribeEndpointSettingsResponse, AWSError] = js.native
+  def describeEndpointSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointSettingsResponse, Unit]): Request[DescribeEndpointSettingsResponse, AWSError] = js.native
+  /**
+    * Returns information about the possible endpoint settings available when you create an endpoint for a specific database engine.
+    */
+  def describeEndpointSettings(params: DescribeEndpointSettingsMessage): Request[DescribeEndpointSettingsResponse, AWSError] = js.native
+  def describeEndpointSettings(
+    params: DescribeEndpointSettingsMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointSettingsResponse, Unit]
+  ): Request[DescribeEndpointSettingsResponse, AWSError] = js.native
+  
+  /**
     * Returns information about the type of endpoints available.
     */
   def describeEndpointTypes(): Request[DescribeEndpointTypesResponse, AWSError] = js.native
@@ -341,12 +397,12 @@ trait DMS extends Service {
   ): Request[DescribeEndpointsResponse, AWSError] = js.native
   
   /**
-    * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
+    * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the Database Migration Service User Guide. 
     */
   def describeEventCategories(): Request[DescribeEventCategoriesResponse, AWSError] = js.native
   def describeEventCategories(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventCategoriesResponse, Unit]): Request[DescribeEventCategoriesResponse, AWSError] = js.native
   /**
-    * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
+    * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the Database Migration Service User Guide. 
     */
   def describeEventCategories(params: DescribeEventCategoriesMessage): Request[DescribeEventCategoriesResponse, AWSError] = js.native
   def describeEventCategories(
@@ -369,18 +425,94 @@ trait DMS extends Service {
   ): Request[DescribeEventSubscriptionsResponse, AWSError] = js.native
   
   /**
-    *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
+    *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on DMS events, see Working with Events and Notifications in the Database Migration Service User Guide. 
     */
   def describeEvents(): Request[DescribeEventsResponse, AWSError] = js.native
   def describeEvents(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventsResponse, Unit]): Request[DescribeEventsResponse, AWSError] = js.native
   /**
-    *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
+    *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on DMS events, see Working with Events and Notifications in the Database Migration Service User Guide. 
     */
   def describeEvents(params: DescribeEventsMessage): Request[DescribeEventsResponse, AWSError] = js.native
   def describeEvents(
     params: DescribeEventsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventsResponse, Unit]
   ): Request[DescribeEventsResponse, AWSError] = js.native
+  
+  /**
+    * Returns a list of the Fleet Advisor collectors in your account.
+    */
+  def describeFleetAdvisorCollectors(): Request[DescribeFleetAdvisorCollectorsResponse, AWSError] = js.native
+  def describeFleetAdvisorCollectors(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorCollectorsResponse, Unit]
+  ): Request[DescribeFleetAdvisorCollectorsResponse, AWSError] = js.native
+  /**
+    * Returns a list of the Fleet Advisor collectors in your account.
+    */
+  def describeFleetAdvisorCollectors(params: DescribeFleetAdvisorCollectorsRequest): Request[DescribeFleetAdvisorCollectorsResponse, AWSError] = js.native
+  def describeFleetAdvisorCollectors(
+    params: DescribeFleetAdvisorCollectorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorCollectorsResponse, Unit]
+  ): Request[DescribeFleetAdvisorCollectorsResponse, AWSError] = js.native
+  
+  /**
+    * Returns a list of Fleet Advisor databases in your account.
+    */
+  def describeFleetAdvisorDatabases(): Request[DescribeFleetAdvisorDatabasesResponse, AWSError] = js.native
+  def describeFleetAdvisorDatabases(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorDatabasesResponse, Unit]): Request[DescribeFleetAdvisorDatabasesResponse, AWSError] = js.native
+  /**
+    * Returns a list of Fleet Advisor databases in your account.
+    */
+  def describeFleetAdvisorDatabases(params: DescribeFleetAdvisorDatabasesRequest): Request[DescribeFleetAdvisorDatabasesResponse, AWSError] = js.native
+  def describeFleetAdvisorDatabases(
+    params: DescribeFleetAdvisorDatabasesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorDatabasesResponse, Unit]
+  ): Request[DescribeFleetAdvisorDatabasesResponse, AWSError] = js.native
+  
+  /**
+    * Provides descriptions of large-scale assessment (LSA) analyses produced by your Fleet Advisor collectors. 
+    */
+  def describeFleetAdvisorLsaAnalysis(): Request[DescribeFleetAdvisorLsaAnalysisResponse, AWSError] = js.native
+  def describeFleetAdvisorLsaAnalysis(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorLsaAnalysisResponse, Unit]
+  ): Request[DescribeFleetAdvisorLsaAnalysisResponse, AWSError] = js.native
+  /**
+    * Provides descriptions of large-scale assessment (LSA) analyses produced by your Fleet Advisor collectors. 
+    */
+  def describeFleetAdvisorLsaAnalysis(params: DescribeFleetAdvisorLsaAnalysisRequest): Request[DescribeFleetAdvisorLsaAnalysisResponse, AWSError] = js.native
+  def describeFleetAdvisorLsaAnalysis(
+    params: DescribeFleetAdvisorLsaAnalysisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorLsaAnalysisResponse, Unit]
+  ): Request[DescribeFleetAdvisorLsaAnalysisResponse, AWSError] = js.native
+  
+  /**
+    * Provides descriptions of the schemas discovered by your Fleet Advisor collectors.
+    */
+  def describeFleetAdvisorSchemaObjectSummary(): Request[DescribeFleetAdvisorSchemaObjectSummaryResponse, AWSError] = js.native
+  def describeFleetAdvisorSchemaObjectSummary(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorSchemaObjectSummaryResponse, Unit]
+  ): Request[DescribeFleetAdvisorSchemaObjectSummaryResponse, AWSError] = js.native
+  /**
+    * Provides descriptions of the schemas discovered by your Fleet Advisor collectors.
+    */
+  def describeFleetAdvisorSchemaObjectSummary(params: DescribeFleetAdvisorSchemaObjectSummaryRequest): Request[DescribeFleetAdvisorSchemaObjectSummaryResponse, AWSError] = js.native
+  def describeFleetAdvisorSchemaObjectSummary(
+    params: DescribeFleetAdvisorSchemaObjectSummaryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorSchemaObjectSummaryResponse, Unit]
+  ): Request[DescribeFleetAdvisorSchemaObjectSummaryResponse, AWSError] = js.native
+  
+  /**
+    * Returns a list of schemas detected by Fleet Advisor Collectors in your account.
+    */
+  def describeFleetAdvisorSchemas(): Request[DescribeFleetAdvisorSchemasResponse, AWSError] = js.native
+  def describeFleetAdvisorSchemas(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorSchemasResponse, Unit]): Request[DescribeFleetAdvisorSchemasResponse, AWSError] = js.native
+  /**
+    * Returns a list of schemas detected by Fleet Advisor Collectors in your account.
+    */
+  def describeFleetAdvisorSchemas(params: DescribeFleetAdvisorSchemasRequest): Request[DescribeFleetAdvisorSchemasResponse, AWSError] = js.native
+  def describeFleetAdvisorSchemas(
+    params: DescribeFleetAdvisorSchemasRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetAdvisorSchemasResponse, Unit]
+  ): Request[DescribeFleetAdvisorSchemasResponse, AWSError] = js.native
   
   /**
     * Returns information about the replication instance types that can be created in the specified region.
@@ -475,7 +607,7 @@ trait DMS extends Service {
   ): Request[DescribeReplicationSubnetGroupsResponse, AWSError] = js.native
   
   /**
-    * Returns the task assessment results from Amazon S3. This action always returns the latest results.
+    * Returns the task assessment results from the Amazon S3 bucket that DMS creates in your Amazon Web Services account. This action always returns the latest results. For more information about DMS task assessments, see Creating a task assessment report in the Database Migration Service User Guide.
     */
   def describeReplicationTaskAssessmentResults(): Request[DescribeReplicationTaskAssessmentResultsResponse, AWSError] = js.native
   def describeReplicationTaskAssessmentResults(
@@ -486,7 +618,7 @@ trait DMS extends Service {
     ]
   ): Request[DescribeReplicationTaskAssessmentResultsResponse, AWSError] = js.native
   /**
-    * Returns the task assessment results from Amazon S3. This action always returns the latest results.
+    * Returns the task assessment results from the Amazon S3 bucket that DMS creates in your Amazon Web Services account. This action always returns the latest results. For more information about DMS task assessments, see Creating a task assessment report in the Database Migration Service User Guide.
     */
   def describeReplicationTaskAssessmentResults(params: DescribeReplicationTaskAssessmentResultsMessage): Request[DescribeReplicationTaskAssessmentResultsResponse, AWSError] = js.native
   def describeReplicationTaskAssessmentResults(
@@ -567,12 +699,12 @@ trait DMS extends Service {
   ): Request[DescribeSchemasResponse, AWSError] = js.native
   
   /**
-    * Returns table statistics on the database migration task, including table name, rows inserted, rows updated, and rows deleted. Note that the "last updated" column the DMS console only indicates the time that AWS DMS last updated the table statistics record for a table. It does not indicate the time of the last update to the table.
+    * Returns table statistics on the database migration task, including table name, rows inserted, rows updated, and rows deleted. Note that the "last updated" column the DMS console only indicates the time that DMS last updated the table statistics record for a table. It does not indicate the time of the last update to the table.
     */
   def describeTableStatistics(): Request[DescribeTableStatisticsResponse, AWSError] = js.native
   def describeTableStatistics(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTableStatisticsResponse, Unit]): Request[DescribeTableStatisticsResponse, AWSError] = js.native
   /**
-    * Returns table statistics on the database migration task, including table name, rows inserted, rows updated, and rows deleted. Note that the "last updated" column the DMS console only indicates the time that AWS DMS last updated the table statistics record for a table. It does not indicate the time of the last update to the table.
+    * Returns table statistics on the database migration task, including table name, rows inserted, rows updated, and rows deleted. Note that the "last updated" column the DMS console only indicates the time that DMS last updated the table statistics record for a table. It does not indicate the time of the last update to the table.
     */
   def describeTableStatistics(params: DescribeTableStatisticsMessage): Request[DescribeTableStatisticsResponse, AWSError] = js.native
   def describeTableStatistics(
@@ -595,12 +727,12 @@ trait DMS extends Service {
   ): Request[ImportCertificateResponse, AWSError] = js.native
   
   /**
-    * Lists all metadata tags attached to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
+    * Lists all metadata tags attached to an DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Lists all metadata tags attached to an AWS DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
+    * Lists all metadata tags attached to an DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
     */
   def listTagsForResource(params: ListTagsForResourceMessage): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -609,12 +741,12 @@ trait DMS extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Modifies the specified endpoint.
+    * Modifies the specified endpoint.  For a MySQL source or target endpoint, don't explicitly specify the database using the DatabaseName request parameter on the ModifyEndpoint API call. Specifying DatabaseName when you modify a MySQL endpoint replicates all the task tables to this single database. For MySQL endpoints, you specify the database only when you specify the schema in the table-mapping rules of the DMS task. 
     */
   def modifyEndpoint(): Request[ModifyEndpointResponse, AWSError] = js.native
   def modifyEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ ModifyEndpointResponse, Unit]): Request[ModifyEndpointResponse, AWSError] = js.native
   /**
-    * Modifies the specified endpoint.
+    * Modifies the specified endpoint.  For a MySQL source or target endpoint, don't explicitly specify the database using the DatabaseName request parameter on the ModifyEndpoint API call. Specifying DatabaseName when you modify a MySQL endpoint replicates all the task tables to this single database. For MySQL endpoints, you specify the database only when you specify the schema in the table-mapping rules of the DMS task. 
     */
   def modifyEndpoint(params: ModifyEndpointMessage): Request[ModifyEndpointResponse, AWSError] = js.native
   def modifyEndpoint(
@@ -623,12 +755,12 @@ trait DMS extends Service {
   ): Request[ModifyEndpointResponse, AWSError] = js.native
   
   /**
-    * Modifies an existing AWS DMS event notification subscription. 
+    * Modifies an existing DMS event notification subscription. 
     */
   def modifyEventSubscription(): Request[ModifyEventSubscriptionResponse, AWSError] = js.native
   def modifyEventSubscription(callback: js.Function2[/* err */ AWSError, /* data */ ModifyEventSubscriptionResponse, Unit]): Request[ModifyEventSubscriptionResponse, AWSError] = js.native
   /**
-    * Modifies an existing AWS DMS event notification subscription. 
+    * Modifies an existing DMS event notification subscription. 
     */
   def modifyEventSubscription(params: ModifyEventSubscriptionMessage): Request[ModifyEventSubscriptionResponse, AWSError] = js.native
   def modifyEventSubscription(
@@ -665,12 +797,12 @@ trait DMS extends Service {
   ): Request[ModifyReplicationSubnetGroupResponse, AWSError] = js.native
   
   /**
-    * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
+    * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about DMS tasks, see Working with Migration Tasks in the Database Migration Service User Guide.
     */
   def modifyReplicationTask(): Request[ModifyReplicationTaskResponse, AWSError] = js.native
   def modifyReplicationTask(callback: js.Function2[/* err */ AWSError, /* data */ ModifyReplicationTaskResponse, Unit]): Request[ModifyReplicationTaskResponse, AWSError] = js.native
   /**
-    * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
+    * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about DMS tasks, see Working with Migration Tasks in the Database Migration Service User Guide.
     */
   def modifyReplicationTask(params: ModifyReplicationTaskMessage): Request[ModifyReplicationTaskResponse, AWSError] = js.native
   def modifyReplicationTask(
@@ -679,12 +811,12 @@ trait DMS extends Service {
   ): Request[ModifyReplicationTaskResponse, AWSError] = js.native
   
   /**
-    * Moves a replication task from its current replication instance to a different target replication instance using the specified parameters. The target replication instance must be created with the same or later AWS DMS version as the current replication instance.
+    * Moves a replication task from its current replication instance to a different target replication instance using the specified parameters. The target replication instance must be created with the same or later DMS version as the current replication instance.
     */
   def moveReplicationTask(): Request[MoveReplicationTaskResponse, AWSError] = js.native
   def moveReplicationTask(callback: js.Function2[/* err */ AWSError, /* data */ MoveReplicationTaskResponse, Unit]): Request[MoveReplicationTaskResponse, AWSError] = js.native
   /**
-    * Moves a replication task from its current replication instance to a different target replication instance using the specified parameters. The target replication instance must be created with the same or later AWS DMS version as the current replication instance.
+    * Moves a replication task from its current replication instance to a different target replication instance using the specified parameters. The target replication instance must be created with the same or later DMS version as the current replication instance.
     */
   def moveReplicationTask(params: MoveReplicationTaskMessage): Request[MoveReplicationTaskResponse, AWSError] = js.native
   def moveReplicationTask(
@@ -721,12 +853,12 @@ trait DMS extends Service {
   ): Request[RefreshSchemasResponse, AWSError] = js.native
   
   /**
-    * Reloads the target database table with the source data. 
+    * Reloads the target database table with the source data.  You can only use this operation with a task in the RUNNING state, otherwise the service will throw an InvalidResourceStateFault exception.
     */
   def reloadTables(): Request[ReloadTablesResponse, AWSError] = js.native
   def reloadTables(callback: js.Function2[/* err */ AWSError, /* data */ ReloadTablesResponse, Unit]): Request[ReloadTablesResponse, AWSError] = js.native
   /**
-    * Reloads the target database table with the source data. 
+    * Reloads the target database table with the source data.  You can only use this operation with a task in the RUNNING state, otherwise the service will throw an InvalidResourceStateFault exception.
     */
   def reloadTables(params: ReloadTablesMessage): Request[ReloadTablesResponse, AWSError] = js.native
   def reloadTables(
@@ -735,12 +867,12 @@ trait DMS extends Service {
   ): Request[ReloadTablesResponse, AWSError] = js.native
   
   /**
-    * Removes metadata tags from an AWS DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
+    * Removes metadata tags from an DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
     */
   def removeTagsFromResource(): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   def removeTagsFromResource(callback: js.Function2[/* err */ AWSError, /* data */ RemoveTagsFromResourceResponse, Unit]): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   /**
-    * Removes metadata tags from an AWS DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
+    * Removes metadata tags from an DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
     */
   def removeTagsFromResource(params: RemoveTagsFromResourceMessage): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   def removeTagsFromResource(
@@ -749,12 +881,18 @@ trait DMS extends Service {
   ): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   
   /**
-    * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
+    * Runs large-scale assessment (LSA) analysis on every Fleet Advisor collector in your account.
+    */
+  def runFleetAdvisorLsaAnalysis(): Request[RunFleetAdvisorLsaAnalysisResponse, AWSError] = js.native
+  def runFleetAdvisorLsaAnalysis(callback: js.Function2[/* err */ AWSError, /* data */ RunFleetAdvisorLsaAnalysisResponse, Unit]): Request[RunFleetAdvisorLsaAnalysisResponse, AWSError] = js.native
+  
+  /**
+    * Starts the replication task. For more information about DMS tasks, see Working with Migration Tasks  in the Database Migration Service User Guide. 
     */
   def startReplicationTask(): Request[StartReplicationTaskResponse, AWSError] = js.native
   def startReplicationTask(callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationTaskResponse, Unit]): Request[StartReplicationTaskResponse, AWSError] = js.native
   /**
-    * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
+    * Starts the replication task. For more information about DMS tasks, see Working with Migration Tasks  in the Database Migration Service User Guide. 
     */
   def startReplicationTask(params: StartReplicationTaskMessage): Request[StartReplicationTaskResponse, AWSError] = js.native
   def startReplicationTask(
@@ -763,14 +901,14 @@ trait DMS extends Service {
   ): Request[StartReplicationTaskResponse, AWSError] = js.native
   
   /**
-    *  Starts the replication task assessment for unsupported data types in the source database. 
+    *  Starts the replication task assessment for unsupported data types in the source database.  You can only use this operation for a task if the following conditions are true:   The task must be in the stopped state.   The task must have successful connections to the source and target.   If either of these conditions are not met, an InvalidResourceStateFault error will result.  For information about DMS task assessments, see Creating a task assessment report in the Database Migration Service User Guide.
     */
   def startReplicationTaskAssessment(): Request[StartReplicationTaskAssessmentResponse, AWSError] = js.native
   def startReplicationTaskAssessment(
     callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationTaskAssessmentResponse, Unit]
   ): Request[StartReplicationTaskAssessmentResponse, AWSError] = js.native
   /**
-    *  Starts the replication task assessment for unsupported data types in the source database. 
+    *  Starts the replication task assessment for unsupported data types in the source database.  You can only use this operation for a task if the following conditions are true:   The task must be in the stopped state.   The task must have successful connections to the source and target.   If either of these conditions are not met, an InvalidResourceStateFault error will result.  For information about DMS task assessments, see Creating a task assessment report in the Database Migration Service User Guide.
     */
   def startReplicationTaskAssessment(params: StartReplicationTaskAssessmentMessage): Request[StartReplicationTaskAssessmentResponse, AWSError] = js.native
   def startReplicationTaskAssessment(
@@ -821,6 +959,22 @@ trait DMS extends Service {
     params: TestConnectionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ TestConnectionResponse, Unit]
   ): Request[TestConnectionResponse, AWSError] = js.native
+  
+  /**
+    * Migrates 10 active and enabled Amazon SNS subscriptions at a time and converts them to corresponding Amazon EventBridge rules. By default, this operation migrates subscriptions only when all your replication instance versions are 3.4.6 or higher. If any replication instances are from versions earlier than 3.4.6, the operation raises an error and tells you to upgrade these instances to version 3.4.6 or higher. To enable migration regardless of version, set the Force option to true. However, if you don't upgrade instances earlier than version 3.4.6, some types of events might not be available when you use Amazon EventBridge. To call this operation, make sure that you have certain permissions added to your user account. For more information, see Migrating event subscriptions to Amazon EventBridge in the Amazon Web Services Database Migration Service User Guide.
+    */
+  def updateSubscriptionsToEventBridge(): Request[UpdateSubscriptionsToEventBridgeResponse, AWSError] = js.native
+  def updateSubscriptionsToEventBridge(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSubscriptionsToEventBridgeResponse, Unit]
+  ): Request[UpdateSubscriptionsToEventBridgeResponse, AWSError] = js.native
+  /**
+    * Migrates 10 active and enabled Amazon SNS subscriptions at a time and converts them to corresponding Amazon EventBridge rules. By default, this operation migrates subscriptions only when all your replication instance versions are 3.4.6 or higher. If any replication instances are from versions earlier than 3.4.6, the operation raises an error and tells you to upgrade these instances to version 3.4.6 or higher. To enable migration regardless of version, set the Force option to true. However, if you don't upgrade instances earlier than version 3.4.6, some types of events might not be available when you use Amazon EventBridge. To call this operation, make sure that you have certain permissions added to your user account. For more information, see Migrating event subscriptions to Amazon EventBridge in the Amazon Web Services Database Migration Service User Guide.
+    */
+  def updateSubscriptionsToEventBridge(params: UpdateSubscriptionsToEventBridgeMessage): Request[UpdateSubscriptionsToEventBridgeResponse, AWSError] = js.native
+  def updateSubscriptionsToEventBridge(
+    params: UpdateSubscriptionsToEventBridgeMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSubscriptionsToEventBridgeResponse, Unit]
+  ): Request[UpdateSubscriptionsToEventBridgeResponse, AWSError] = js.native
   
   /**
     * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.

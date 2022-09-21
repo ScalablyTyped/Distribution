@@ -2,7 +2,6 @@ package typings.kendoUi.kendo.dataviz
 
 import typings.kendoUi.kendo.Observable
 import typings.kendoUi.kendo.drawing.Element
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,9 @@ trait ChartPoint
   extends StObject
      with Observable {
   
-  var category: String | Date | Double = js.native
+  var category: String | js.Date | Double = js.native
   
-  var dataItem: js.Any = js.native
+  var dataItem: Any = js.native
   
   var options: ChartPointOptions = js.native
   

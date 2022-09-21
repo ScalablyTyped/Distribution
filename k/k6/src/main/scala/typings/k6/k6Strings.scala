@@ -188,6 +188,14 @@ object k6Strings {
   inline def TLS_RSA_WITH_RC4_128_SHA: TLS_RSA_WITH_RC4_128_SHA = "TLS_RSA_WITH_RC4_128_SHA".asInstanceOf[TLS_RSA_WITH_RC4_128_SHA]
   
   @js.native
+  sealed trait any extends StObject
+  inline def any: any = "any".asInstanceOf[any]
+  
+  @js.native
+  sealed trait arrayBuffer extends StObject
+  inline def arrayBuffer: arrayBuffer = "arrayBuffer".asInstanceOf[arrayBuffer]
+  
+  @js.native
   sealed trait b extends StObject
   inline def b: b = "b".asInstanceOf[b]
   
@@ -220,6 +228,12 @@ object k6Strings {
     extends StObject
        with ResponseType
   inline def binary: binary = "binary".asInstanceOf[binary]
+  
+  @js.native
+  sealed trait binaryMessage
+    extends StObject
+       with EventType
+  inline def binaryMessage: binaryMessage = "binaryMessage".asInstanceOf[binaryMessage]
   
   @js.native
   sealed trait close
@@ -258,10 +272,18 @@ object k6Strings {
   inline def `externally-controlled`: `externally-controlled` = "externally-controlled".asInstanceOf[`externally-controlled`]
   
   @js.native
+  sealed trait first extends StObject
+  inline def first: first = "first".asInstanceOf[first]
+  
+  @js.native
   sealed trait hex
     extends StObject
        with StringEncoding
   inline def hex: hex = "hex".asInstanceOf[hex]
+  
+  @js.native
+  sealed trait `http-url` extends StObject
+  inline def `http-url`: `http-url` = "http-url".asInstanceOf[`http-url`]
   
   @js.native
   sealed trait md4
@@ -294,6 +316,14 @@ object k6Strings {
   inline def ntlm: ntlm = "ntlm".asInstanceOf[ntlm]
   
   @js.native
+  sealed trait onlyIPv4 extends StObject
+  inline def onlyIPv4: onlyIPv4 = "onlyIPv4".asInstanceOf[onlyIPv4]
+  
+  @js.native
+  sealed trait onlyIPv6 extends StObject
+  inline def onlyIPv6: onlyIPv6 = "onlyIPv6".asInstanceOf[onlyIPv6]
+  
+  @js.native
   sealed trait open
     extends StObject
        with EventType
@@ -318,6 +348,14 @@ object k6Strings {
   inline def pong: pong = "pong".asInstanceOf[pong]
   
   @js.native
+  sealed trait preferIPv4 extends StObject
+  inline def preferIPv4: preferIPv4 = "preferIPv4".asInstanceOf[preferIPv4]
+  
+  @js.native
+  sealed trait preferIPv6 extends StObject
+  inline def preferIPv6: preferIPv6 = "preferIPv6".asInstanceOf[preferIPv6]
+  
+  @js.native
   sealed trait `ramping-arrival-rate`
     extends StObject
        with ExecutorOptions
@@ -328,6 +366,10 @@ object k6Strings {
     extends StObject
        with ExecutorOptions
   inline def `ramping-vus`: `ramping-vus` = "ramping-vus".asInstanceOf[`ramping-vus`]
+  
+  @js.native
+  sealed trait random extends StObject
+  inline def random: random = "random".asInstanceOf[random]
   
   @js.native
   sealed trait rawstd
@@ -346,6 +388,14 @@ object k6Strings {
     extends StObject
        with Algorithm
   inline def ripemd160: ripemd160 = "ripemd160".asInstanceOf[ripemd160]
+  
+  @js.native
+  sealed trait roundRobin extends StObject
+  inline def roundRobin: roundRobin = "roundRobin".asInstanceOf[roundRobin]
+  
+  @js.native
+  sealed trait s extends StObject
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
   sealed trait sha1

@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.EffectRenderer")
 @js.native
-class EffectRenderer protected ()
+open class EffectRenderer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.EffectRenderer {
   /**
     * Creates an effect renderer
-    * @param engine the engine to use for rendering
+    * @param _engine the engine to use for rendering
     * @param options defines the options of the effect renderer
     */
-  def this(engine: typings.babylonjs.BABYLON.ThinEngine) = this()
-  def this(engine: typings.babylonjs.BABYLON.ThinEngine, options: IEffectRendererOptions) = this()
+  def this(_engine: typings.babylonjs.BABYLON.ThinEngine) = this()
+  def this(_engine: typings.babylonjs.BABYLON.ThinEngine, options: IEffectRendererOptions) = this()
 }
 /* static members */
 object EffectRenderer {
@@ -27,6 +27,6 @@ object EffectRenderer {
   
   @JSGlobal("BABYLON.EffectRenderer._DefaultOptions")
   @js.native
-  def _DefaultOptions: js.Any = js.native
-  inline def _DefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
+  def _DefaultOptions: Any = js.native
+  inline def _DefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
 }

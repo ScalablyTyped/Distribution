@@ -1,10 +1,6 @@
 package typings.awsSdkClientDynamodbBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Iterable
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +12,7 @@ object typesAttributeValueMod {
     /**
       * <p>An attribute of type Binary. For example:</p> <p> <code>"B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk"</code> </p>
       */
-    var B: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.undefined
+    var B: js.UndefOr[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String] = js.undefined
     
     /**
       * <p>An attribute of type Boolean. For example:</p> <p> <code>"BOOL": true</code> </p>
@@ -27,18 +23,20 @@ object typesAttributeValueMod {
       * <p>An attribute of type Binary Set. For example:</p> <p> <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code> </p>
       */
     var BS: js.UndefOr[
-        (js.Array[ArrayBuffer | ArrayBufferView | String]) | (Iterable[ArrayBuffer | ArrayBufferView | String])
+        (js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String]) | (js.Iterable[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String])
       ] = js.undefined
     
     /**
       * <p>An attribute of type List. For example:</p> <p> <code>"L": ["Cookies", "Coffee", 3.14159]</code> </p>
       */
-    var L: js.UndefOr[js.Array[AttributeValue] | Iterable[AttributeValue]] = js.undefined
+    var L: js.UndefOr[js.Array[AttributeValue] | js.Iterable[AttributeValue]] = js.undefined
     
     /**
       * <p>An attribute of type Map. For example:</p> <p> <code>"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}</code> </p>
       */
-    var M: js.UndefOr[StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])] = js.undefined
+    var M: js.UndefOr[
+        StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]])
+      ] = js.undefined
     
     /**
       * <p>An attribute of type Number. For example:</p> <p> <code>"N": "123.45"</code> </p> <p>Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.</p>
@@ -48,7 +46,7 @@ object typesAttributeValueMod {
     /**
       * <p>An attribute of type Number Set. For example:</p> <p> <code>"NS": ["42.2", "-19", "7.5", "3.14"]</code> </p> <p>Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.</p>
       */
-    var NS: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var NS: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>An attribute of type Null. For example:</p> <p> <code>"NULL": true</code> </p>
@@ -63,7 +61,7 @@ object typesAttributeValueMod {
     /**
       * <p>An attribute of type String Set. For example:</p> <p> <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code> </p>
       */
-    var SS: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var SS: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
   }
   object AttributeValue {
     
@@ -74,39 +72,39 @@ object typesAttributeValueMod {
     
     extension [Self <: AttributeValue](x: Self) {
       
-      inline def setB(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
+      inline def setB(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
       inline def setBOOL(value: Boolean): Self = StObject.set(x, "BOOL", value.asInstanceOf[js.Any])
       
       inline def setBOOLUndefined: Self = StObject.set(x, "BOOL", js.undefined)
       
       inline def setBS(
-        value: (js.Array[ArrayBuffer | ArrayBufferView | String]) | (Iterable[ArrayBuffer | ArrayBufferView | String])
+        value: (js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String]) | (js.Iterable[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String])
       ): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
       
       inline def setBSUndefined: Self = StObject.set(x, "BS", js.undefined)
       
-      inline def setBSVarargs(value: (ArrayBuffer | ArrayBufferView | String)*): Self = StObject.set(x, "BS", js.Array(value :_*))
+      inline def setBSVarargs(value: (js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String)*): Self = StObject.set(x, "BS", js.Array(value*))
       
       inline def setBUndefined: Self = StObject.set(x, "B", js.undefined)
       
-      inline def setL(value: js.Array[AttributeValue] | Iterable[AttributeValue]): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
+      inline def setL(value: js.Array[AttributeValue] | js.Iterable[AttributeValue]): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
       
       inline def setLUndefined: Self = StObject.set(x, "L", js.undefined)
       
-      inline def setLVarargs(value: AttributeValue*): Self = StObject.set(x, "L", js.Array(value :_*))
+      inline def setLVarargs(value: AttributeValue*): Self = StObject.set(x, "L", js.Array(value*))
       
-      inline def setM(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+      inline def setM(value: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
       
       inline def setMUndefined: Self = StObject.set(x, "M", js.undefined)
       
       inline def setN(value: String): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
       
-      inline def setNS(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "NS", value.asInstanceOf[js.Any])
+      inline def setNS(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "NS", value.asInstanceOf[js.Any])
       
       inline def setNSUndefined: Self = StObject.set(x, "NS", js.undefined)
       
-      inline def setNSVarargs(value: String*): Self = StObject.set(x, "NS", js.Array(value :_*))
+      inline def setNSVarargs(value: String*): Self = StObject.set(x, "NS", js.Array(value*))
       
       inline def setNULL(value: Boolean): Self = StObject.set(x, "NULL", value.asInstanceOf[js.Any])
       
@@ -116,11 +114,11 @@ object typesAttributeValueMod {
       
       inline def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
       
-      inline def setSS(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
+      inline def setSS(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
       
       inline def setSSUndefined: Self = StObject.set(x, "SS", js.undefined)
       
-      inline def setSSVarargs(value: String*): Self = StObject.set(x, "SS", js.Array(value :_*))
+      inline def setSSVarargs(value: String*): Self = StObject.set(x, "SS", js.Array(value*))
       
       inline def setSUndefined: Self = StObject.set(x, "S", js.undefined)
     }
@@ -134,13 +132,13 @@ object typesAttributeValueMod {
       * <p>An attribute of type Binary Set. For example:</p> <p> <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code> </p>
       */
     @JSName("BS")
-    var BS_UnmarshalledAttributeValue: js.UndefOr[js.Array[Uint8Array]] = js.undefined
+    var BS_UnmarshalledAttributeValue: js.UndefOr[js.Array[js.typedarray.Uint8Array]] = js.undefined
     
     /**
       * <p>An attribute of type Binary. For example:</p> <p> <code>"B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk"</code> </p>
       */
     @JSName("B")
-    var B_UnmarshalledAttributeValue: js.UndefOr[Uint8Array] = js.undefined
+    var B_UnmarshalledAttributeValue: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
     /**
       * <p>An attribute of type List. For example:</p> <p> <code>"L": ["Cookies", "Coffee", 3.14159]</code> </p>
@@ -175,13 +173,13 @@ object typesAttributeValueMod {
     
     extension [Self <: UnmarshalledAttributeValue](x: Self) {
       
-      inline def setB(value: Uint8Array): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
+      inline def setB(value: js.typedarray.Uint8Array): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
-      inline def setBS(value: js.Array[Uint8Array]): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
+      inline def setBS(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
       
       inline def setBSUndefined: Self = StObject.set(x, "BS", js.undefined)
       
-      inline def setBSVarargs(value: Uint8Array*): Self = StObject.set(x, "BS", js.Array(value :_*))
+      inline def setBSVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "BS", js.Array(value*))
       
       inline def setBUndefined: Self = StObject.set(x, "B", js.undefined)
       
@@ -189,7 +187,7 @@ object typesAttributeValueMod {
       
       inline def setLUndefined: Self = StObject.set(x, "L", js.undefined)
       
-      inline def setLVarargs(value: UnmarshalledAttributeValue*): Self = StObject.set(x, "L", js.Array(value :_*))
+      inline def setLVarargs(value: UnmarshalledAttributeValue*): Self = StObject.set(x, "L", js.Array(value*))
       
       inline def setM(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
       
@@ -199,13 +197,13 @@ object typesAttributeValueMod {
       
       inline def setNSUndefined: Self = StObject.set(x, "NS", js.undefined)
       
-      inline def setNSVarargs(value: String*): Self = StObject.set(x, "NS", js.Array(value :_*))
+      inline def setNSVarargs(value: String*): Self = StObject.set(x, "NS", js.Array(value*))
       
       inline def setSS(value: js.Array[String]): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
       
       inline def setSSUndefined: Self = StObject.set(x, "SS", js.undefined)
       
-      inline def setSSVarargs(value: String*): Self = StObject.set(x, "SS", js.Array(value :_*))
+      inline def setSSVarargs(value: String*): Self = StObject.set(x, "SS", js.Array(value*))
     }
   }
 }

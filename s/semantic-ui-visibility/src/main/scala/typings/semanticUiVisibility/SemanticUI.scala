@@ -8,48 +8,6 @@ import typings.semanticUiVisibility.SemanticUI.Visibility.ScreenCalculations
 import typings.semanticUiVisibility.SemanticUI.Visibility.ScreenSize
 import typings.semanticUiVisibility.SemanticUI.VisibilitySettings.Param
 import typings.semanticUiVisibility.anon.Bottom
-import typings.semanticUiVisibility.anon.PartialPickImplkeyofImpl
-import typings.semanticUiVisibility.anon.PickImplcheckOnRefresh
-import typings.semanticUiVisibility.anon.PickImplclassName
-import typings.semanticUiVisibility.anon.PickImplcontext
-import typings.semanticUiVisibility.anon.PickImplcontinuous
-import typings.semanticUiVisibility.anon.PickImpldebug
-import typings.semanticUiVisibility.anon.PickImplduration
-import typings.semanticUiVisibility.anon.PickImplerror
-import typings.semanticUiVisibility.anon.PickImplincludeMargin
-import typings.semanticUiVisibility.anon.PickImplinitialCheck
-import typings.semanticUiVisibility.anon.PickImplname
-import typings.semanticUiVisibility.anon.PickImplnamespace
-import typings.semanticUiVisibility.anon.PickImplobserveChanges
-import typings.semanticUiVisibility.anon.PickImploffset
-import typings.semanticUiVisibility.anon.PickImplonAllLoaded
-import typings.semanticUiVisibility.anon.PickImplonBottomPassed
-import typings.semanticUiVisibility.anon.PickImplonBottomPassedRev
-import typings.semanticUiVisibility.anon.PickImplonBottomVisible
-import typings.semanticUiVisibility.anon.PickImplonBottomVisibleRe
-import typings.semanticUiVisibility.anon.PickImplonFixed
-import typings.semanticUiVisibility.anon.PickImplonLoad
-import typings.semanticUiVisibility.anon.PickImplonOffScreen
-import typings.semanticUiVisibility.anon.PickImplonOnScreen
-import typings.semanticUiVisibility.anon.PickImplonPassing
-import typings.semanticUiVisibility.anon.PickImplonPassingReverse
-import typings.semanticUiVisibility.anon.PickImplonRefresh
-import typings.semanticUiVisibility.anon.PickImplonTopPassed
-import typings.semanticUiVisibility.anon.PickImplonTopPassedRevers
-import typings.semanticUiVisibility.anon.PickImplonTopVisible
-import typings.semanticUiVisibility.anon.PickImplonTopVisibleRever
-import typings.semanticUiVisibility.anon.PickImplonUnfixed
-import typings.semanticUiVisibility.anon.PickImplonUpdate
-import typings.semanticUiVisibility.anon.PickImplonce
-import typings.semanticUiVisibility.anon.PickImplperformance
-import typings.semanticUiVisibility.anon.PickImplrefreshOnLoad
-import typings.semanticUiVisibility.anon.PickImplrefreshOnResize
-import typings.semanticUiVisibility.anon.PickImplsilent
-import typings.semanticUiVisibility.anon.PickImplthrottle
-import typings.semanticUiVisibility.anon.PickImpltransition
-import typings.semanticUiVisibility.anon.PickImpltype
-import typings.semanticUiVisibility.anon.PickImplverbose
-import typings.semanticUiVisibility.anon.PickImplzIndex
 import typings.semanticUiVisibility.semanticUiVisibilityBooleans.`false`
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.`disable callbacks`
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.`enable callbacks`
@@ -59,51 +17,10 @@ import typings.semanticUiVisibility.semanticUiVisibilityStrings.`get screen calc
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.`get screen size`
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.`is off screen`
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.`is on screen`
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.`type`
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.checkOnRefresh
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.className
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.context
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.continuous
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.debug
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.destroy
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.duration
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.error
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.fixed
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.image
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.includeMargin
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.initialCheck
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.name
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.namespace
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.observeChanges
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.offset
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onAllLoaded
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onBottomPassed
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onBottomPassedReverse
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onBottomVisible
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onBottomVisibleReverse
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onFixed
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onLoad
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onOffScreen
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onOnScreen
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onPassing
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onPassingReverse
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onRefresh
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onTopPassed
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onTopPassedReverse
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onTopVisible
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onTopVisibleReverse
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onUnfixed
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.onUpdate
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.once
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.performance
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.refreshOnLoad
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.refreshOnResize
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.setting
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.silent
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.throttle
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.transition
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.verbose
-import typings.semanticUiVisibility.semanticUiVisibilityStrings.zIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -147,99 +64,14 @@ object SemanticUI {
       */
     def apply(behavior: `is on screen`): Boolean = js.native
     def apply(behavior: destroy): JQuery = js.native
-    def apply(behavior: setting, name: `type`, value: Unit): `false` | image | fixed = js.native
-    def apply(behavior: setting, name: `type`, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: `type`, value: fixed): JQuery = js.native
-    def apply(behavior: setting, name: `type`, value: image): JQuery = js.native
-    def apply(behavior: setting, name: checkOnRefresh, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: checkOnRefresh, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: context, value: String): JQuery = js.native
-    def apply(behavior: setting, name: context, value: Unit): String | JQuery = js.native
-    def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: continuous, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: continuous, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
-    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: includeMargin, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: includeMargin, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: initialCheck, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: initialCheck, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: observeChanges, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: offset, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: offset, value: Unit): Double = js.native
-    def apply(behavior: setting, name: onAllLoaded, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onAllLoaded, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onBottomPassedReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onBottomPassedReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onBottomPassed, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onBottomPassed, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onBottomVisibleReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onBottomVisibleReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onBottomVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onBottomVisible, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onFixed, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onFixed, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onLoad, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onLoad, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onOffScreen, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onOffScreen, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onOnScreen, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onOnScreen, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onPassingReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onPassingReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onPassing, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onPassing, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onRefresh, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onRefresh, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onTopPassedReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onTopPassedReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onTopPassed, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onTopPassed, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onTopVisibleReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onTopVisibleReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onTopVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onTopVisible, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onUnfixed, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onUnfixed, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onUpdate,
-      value: js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onUpdate, value: Unit): js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit] = js.native
-    def apply(behavior: setting, name: once, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: once, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: refreshOnLoad, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: refreshOnLoad, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: refreshOnResize, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: refreshOnResize, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: throttle, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: throttle, value: Unit): `false` | Double = js.native
-    def apply(behavior: setting, name: throttle, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-    def apply(behavior: setting, name: transition, value: Unit): `false` | String = js.native
-    def apply(behavior: setting, name: transition, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: zIndex, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: zIndex, value: Unit): Double = js.native
     def apply(behavior: setting, value: VisibilitySettings): JQuery = js.native
     def apply(settings: VisibilitySettings): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-visibility.SemanticUI.VisibilitySettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-visibility.SemanticUI.VisibilitySettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl[K] */ js.Any = js.native
     
     var settings: VisibilitySettings = js.native
   }
@@ -900,7 +732,296 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplonce | PickImplcontinuous | PickImpltype | PickImplinitialCheck | PickImplcontext | PickImplrefreshOnLoad | PickImplrefreshOnResize | PickImplcheckOnRefresh | PickImplzIndex | PickImploffset | PickImplincludeMargin | PickImplthrottle | PickImplobserveChanges | PickImpltransition | PickImplduration | PickImplonTopVisible | PickImplonTopPassed | PickImplonBottomVisible | PickImplonPassing | PickImplonBottomPassed | PickImplonTopVisibleRever | PickImplonTopPassedRevers | PickImplonBottomVisibleRe | PickImplonPassingReverse | PickImplonBottomPassedRev | PickImplonOnScreen | PickImplonOffScreen | PickImplonLoad | PickImplonAllLoaded | PickImplonFixed | PickImplonUnfixed | PickImplonUpdate | PickImplonRefresh | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiVisibility.anon.PickImploncePartialPickIm
+      - typings.semanticUiVisibility.anon.PickImplcontinuousPartial
+      - typings.semanticUiVisibility.anon.PickImpltypePartialPickIm
+      - typings.semanticUiVisibility.anon.PickImplinitialCheckParti
+      - typings.semanticUiVisibility.anon.PickImplcontextPartialPic
+      - typings.semanticUiVisibility.anon.PickImplrefreshOnLoadPart
+      - typings.semanticUiVisibility.anon.PickImplrefreshOnResizePa
+      - typings.semanticUiVisibility.anon.PickImplcheckOnRefreshPar
+      - typings.semanticUiVisibility.anon.PickImplzIndexPartialPick
+      - typings.semanticUiVisibility.anon.PickImploffsetPartialPick
+      - typings.semanticUiVisibility.anon.PickImplincludeMarginPart
+      - typings.semanticUiVisibility.anon.PickImplthrottlePartialPi
+      - typings.semanticUiVisibility.anon.PickImplobserveChangesPar
+      - typings.semanticUiVisibility.anon.PickImpltransitionPartial
+      - typings.semanticUiVisibility.anon.PickImpldurationPartialPi
+      - typings.semanticUiVisibility.anon.PickImplonTopVisibleParti
+      - typings.semanticUiVisibility.anon.PickImplonTopPassedPartia
+      - typings.semanticUiVisibility.anon.PickImplonBottomVisiblePa
+      - typings.semanticUiVisibility.anon.PickImplonPassingPartialP
+      - typings.semanticUiVisibility.anon.PickImplonBottomPassedPar
+      - typings.semanticUiVisibility.anon.PickImplonTopVisibleRever
+      - typings.semanticUiVisibility.anon.PickImplonTopPassedRevers
+      - typings.semanticUiVisibility.anon.PickImplonBottomVisibleRe
+      - typings.semanticUiVisibility.anon.PickImplonPassingReverseP
+      - typings.semanticUiVisibility.anon.PickImplonBottomPassedRev
+      - typings.semanticUiVisibility.anon.PickImplonOnScreenPartial
+      - typings.semanticUiVisibility.anon.PickImplonOffScreenPartia
+      - typings.semanticUiVisibility.anon.PickImplonLoadPartialPick
+      - typings.semanticUiVisibility.anon.PickImplonAllLoadedPartia
+      - typings.semanticUiVisibility.anon.PickImplonFixedPartialPic
+      - typings.semanticUiVisibility.anon.PickImplonUnfixedPartialP
+      - typings.semanticUiVisibility.anon.PickImplonUpdatePartialPi
+      - typings.semanticUiVisibility.anon.PickImplonRefreshPartialP
+      - typings.semanticUiVisibility.anon.PickImplclassNamePartialP
+      - typings.semanticUiVisibility.anon.PickImplerrorPartialPickI
+      - typings.semanticUiVisibility.anon.PickImplnamespacePartialP
+      - typings.semanticUiVisibility.anon.PickImplnamePartialPickIm
+      - typings.semanticUiVisibility.anon.PickImplsilentPartialPick
+      - typings.semanticUiVisibility.anon.PickImpldebugPartialPickI
+      - typings.semanticUiVisibility.anon.PickImplperformancePartia
+      - typings.semanticUiVisibility.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplcheckOnRefreshPar(checkOnRefresh: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplcheckOnRefreshPar = {
+        val __obj = js.Dynamic.literal(checkOnRefresh = checkOnRefresh.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplcheckOnRefreshPar]
+      }
+      
+      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiVisibility.anon.PickImplclassNamePartialP = {
+        val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplclassNamePartialP]
+      }
+      
+      inline def PickImplcontextPartialPic(context: (String | JQuery) & (js.UndefOr[String | JQuery])): typings.semanticUiVisibility.anon.PickImplcontextPartialPic = {
+        val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplcontextPartialPic]
+      }
+      
+      inline def PickImplcontinuousPartial(continuous: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplcontinuousPartial = {
+        val __obj = js.Dynamic.literal(continuous = continuous.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplcontinuousPartial]
+      }
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImpldurationPartialPi(duration: Double & js.UndefOr[Double]): typings.semanticUiVisibility.anon.PickImpldurationPartialPi = {
+        val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImpldurationPartialPi]
+      }
+      
+      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiVisibility.anon.PickImplerrorPartialPickI = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplerrorPartialPickI]
+      }
+      
+      inline def PickImplincludeMarginPart(includeMargin: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplincludeMarginPart = {
+        val __obj = js.Dynamic.literal(includeMargin = includeMargin.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplincludeMarginPart]
+      }
+      
+      inline def PickImplinitialCheckParti(initialCheck: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplinitialCheckParti = {
+        val __obj = js.Dynamic.literal(initialCheck = initialCheck.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplinitialCheckParti]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiVisibility.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiVisibility.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplobserveChangesPar(observeChanges: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplobserveChangesPar = {
+        val __obj = js.Dynamic.literal(observeChanges = observeChanges.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplobserveChangesPar]
+      }
+      
+      inline def PickImploffsetPartialPick(offset: Double & js.UndefOr[Double]): typings.semanticUiVisibility.anon.PickImploffsetPartialPick = {
+        val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImploffsetPartialPick]
+      }
+      
+      inline def PickImplonAllLoadedPartia(
+        onAllLoaded: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonAllLoadedPartia = {
+        val __obj = js.Dynamic.literal(onAllLoaded = onAllLoaded.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonAllLoadedPartia]
+      }
+      
+      inline def PickImplonBottomPassedPar(
+        onBottomPassed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonBottomPassedPar = {
+        val __obj = js.Dynamic.literal(onBottomPassed = onBottomPassed.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonBottomPassedPar]
+      }
+      
+      inline def PickImplonBottomPassedRev(
+        onBottomPassedReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonBottomPassedRev = {
+        val __obj = js.Dynamic.literal(onBottomPassedReverse = onBottomPassedReverse.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonBottomPassedRev]
+      }
+      
+      inline def PickImplonBottomVisiblePa(
+        onBottomVisible: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonBottomVisiblePa = {
+        val __obj = js.Dynamic.literal(onBottomVisible = onBottomVisible.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonBottomVisiblePa]
+      }
+      
+      inline def PickImplonBottomVisibleRe(
+        onBottomVisibleReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonBottomVisibleRe = {
+        val __obj = js.Dynamic.literal(onBottomVisibleReverse = onBottomVisibleReverse.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonBottomVisibleRe]
+      }
+      
+      inline def PickImplonFixedPartialPic(
+        onFixed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonFixedPartialPic = {
+        val __obj = js.Dynamic.literal(onFixed = onFixed.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonFixedPartialPic]
+      }
+      
+      inline def PickImplonLoadPartialPick(
+        onLoad: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonLoadPartialPick = {
+        val __obj = js.Dynamic.literal(onLoad = onLoad.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonLoadPartialPick]
+      }
+      
+      inline def PickImplonOffScreenPartia(
+        onOffScreen: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonOffScreenPartia = {
+        val __obj = js.Dynamic.literal(onOffScreen = onOffScreen.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonOffScreenPartia]
+      }
+      
+      inline def PickImplonOnScreenPartial(
+        onOnScreen: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonOnScreenPartial = {
+        val __obj = js.Dynamic.literal(onOnScreen = onOnScreen.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonOnScreenPartial]
+      }
+      
+      inline def PickImplonPassingPartialP(
+        onPassing: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonPassingPartialP = {
+        val __obj = js.Dynamic.literal(onPassing = onPassing.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonPassingPartialP]
+      }
+      
+      inline def PickImplonPassingReverseP(
+        onPassingReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonPassingReverseP = {
+        val __obj = js.Dynamic.literal(onPassingReverse = onPassingReverse.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonPassingReverseP]
+      }
+      
+      inline def PickImplonRefreshPartialP(
+        onRefresh: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonRefreshPartialP = {
+        val __obj = js.Dynamic.literal(onRefresh = onRefresh.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonRefreshPartialP]
+      }
+      
+      inline def PickImplonTopPassedPartia(
+        onTopPassed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonTopPassedPartia = {
+        val __obj = js.Dynamic.literal(onTopPassed = onTopPassed.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonTopPassedPartia]
+      }
+      
+      inline def PickImplonTopPassedRevers(
+        onTopPassedReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonTopPassedRevers = {
+        val __obj = js.Dynamic.literal(onTopPassedReverse = onTopPassedReverse.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonTopPassedRevers]
+      }
+      
+      inline def PickImplonTopVisibleParti(
+        onTopVisible: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonTopVisibleParti = {
+        val __obj = js.Dynamic.literal(onTopVisible = onTopVisible.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonTopVisibleParti]
+      }
+      
+      inline def PickImplonTopVisibleRever(
+        onTopVisibleReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonTopVisibleRever = {
+        val __obj = js.Dynamic.literal(onTopVisibleReverse = onTopVisibleReverse.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonTopVisibleRever]
+      }
+      
+      inline def PickImplonUnfixedPartialP(
+        onUnfixed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiVisibility.anon.PickImplonUnfixedPartialP = {
+        val __obj = js.Dynamic.literal(onUnfixed = onUnfixed.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonUnfixedPartialP]
+      }
+      
+      inline def PickImplonUpdatePartialPi(
+        onUpdate: (js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]) & (js.UndefOr[
+              js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]
+            ])
+      ): typings.semanticUiVisibility.anon.PickImplonUpdatePartialPi = {
+        val __obj = js.Dynamic.literal(onUpdate = onUpdate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonUpdatePartialPi]
+      }
+      
+      inline def PickImploncePartialPickIm(once: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImploncePartialPickIm = {
+        val __obj = js.Dynamic.literal(once = once.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImploncePartialPickIm]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplrefreshOnLoadPart(refreshOnLoad: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplrefreshOnLoadPart = {
+        val __obj = js.Dynamic.literal(refreshOnLoad = refreshOnLoad.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplrefreshOnLoadPart]
+      }
+      
+      inline def PickImplrefreshOnResizePa(refreshOnResize: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplrefreshOnResizePa = {
+        val __obj = js.Dynamic.literal(refreshOnResize = refreshOnResize.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplrefreshOnResizePa]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImplthrottlePartialPi(throttle: (`false` | Double) & (js.UndefOr[`false` | Double])): typings.semanticUiVisibility.anon.PickImplthrottlePartialPi = {
+        val __obj = js.Dynamic.literal(throttle = throttle.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplthrottlePartialPi]
+      }
+      
+      inline def PickImpltransitionPartial(transition: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiVisibility.anon.PickImpltransitionPartial = {
+        val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImpltransitionPartial]
+      }
+      
+      inline def PickImpltypePartialPickIm(`type`: (`false` | image | fixed) & (js.UndefOr[`false` | image | fixed])): typings.semanticUiVisibility.anon.PickImpltypePartialPickIm = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImpltypePartialPickIm]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplverbosePartialPic]
+      }
+      
+      inline def PickImplzIndexPartialPick(zIndex: Double & js.UndefOr[Double]): typings.semanticUiVisibility.anon.PickImplzIndexPartialPick = {
+        val __obj = js.Dynamic.literal(zIndex = zIndex.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplzIndexPartialPick]
+      }
+    }
   }
   /**
     * @see {@link http://semantic-ui.com/behaviors/visibility.html#/settings}

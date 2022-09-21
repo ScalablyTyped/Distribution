@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ValidateResourcePolicyResponse extends StObject {
   
   /**
-    * Returns a message stating that your Reource Policy passed validation. 
+    * True if your policy passes validation, otherwise false.
     */
   var PolicyValidationPassed: js.UndefOr[BooleanType] = js.undefined
   
   /**
-    * Returns an error message if your policy doesn't pass validatation.
+    * Validation errors if your policy didn't pass validation.
     */
   var ValidationErrors: js.UndefOr[ValidationErrorsType] = js.undefined
 }
@@ -33,6 +33,6 @@ object ValidateResourcePolicyResponse {
     
     inline def setValidationErrorsUndefined: Self = StObject.set(x, "ValidationErrors", js.undefined)
     
-    inline def setValidationErrorsVarargs(value: ValidationErrorsEntry*): Self = StObject.set(x, "ValidationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: ValidationErrorsEntry*): Self = StObject.set(x, "ValidationErrors", js.Array(value*))
   }
 }

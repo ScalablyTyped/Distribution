@@ -99,7 +99,7 @@ object IContact {
     
     inline def setEmail_hashes(value: js.Array[String]): Self = StObject.set(x, "email_hashes", value.asInstanceOf[js.Any])
     
-    inline def setEmail_hashesVarargs(value: String*): Self = StObject.set(x, "email_hashes", js.Array(value :_*))
+    inline def setEmail_hashesVarargs(value: String*): Self = StObject.set(x, "email_hashes", js.Array(value*))
     
     inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     

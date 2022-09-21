@@ -51,7 +51,7 @@ object FetchResourcesResult {
     
     inline def setResources(value: js.Array[FetchResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: FetchResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: FetchResource*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }

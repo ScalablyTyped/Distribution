@@ -2,7 +2,8 @@ package typings.materialUi
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,16 +12,12 @@ object beforeAfterWrapperMod {
   
   @JSImport("material-ui/internal/BeforeAfterWrapper", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[BeforeAfterWrapperProps, js.Object, js.Any]
+  open class default ()
+    extends Component[BeforeAfterWrapperProps, js.Object, Any]
   
-  @js.native
-  trait BeforeAfterWrapper
-    extends Component[BeforeAfterWrapperProps, js.Object, js.Any]
+  type BeforeAfterWrapper = Component[BeforeAfterWrapperProps, js.Object, Any]
   
-  trait BeforeAfterWrapperProps
-    extends StObject
-       with Props[BeforeAfterWrapper] {
+  trait BeforeAfterWrapperProps extends StObject {
     
     var afterElementType: js.UndefOr[String] = js.undefined
     
@@ -30,7 +27,11 @@ object beforeAfterWrapperMod {
     
     var beforeStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var elementType: js.UndefOr[String] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[BeforeAfterWrapper]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -59,9 +60,21 @@ object beforeAfterWrapperMod {
       
       inline def setBeforeStyleUndefined: Self = StObject.set(x, "beforeStyle", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setElementType(value: String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
       
       inline def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
+      
+      inline def setRef(value: LegacyRef[BeforeAfterWrapper]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ BeforeAfterWrapper | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

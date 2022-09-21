@@ -1,6 +1,12 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.Direction
 import typings.carbonComponents.anon.Left
+import typings.carbonComponents.anon.PartialFloatingMenuOption
+import typings.carbonComponents.anon.Partialleftnumbertopnumbe
+import typings.std.FocusEvent
+import typings.std.HTMLElement
+import typings.std.KeyboardEvent
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,22 +20,23 @@ object floatingMenuMod {
   
   @JSImport("carbon-components/components/floating-menu/floating-menu", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with FloatingMenu {
-    def this(element: js.Any, options: js.Any) = this()
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialFloatingMenuOption) = this()
     
     /* CompleteClass */
-    override def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    override def _changeState(state: String, detail: js.Object, callback: js.Function0[Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def _getContainer(): js.Any = js.native
+    override def _getContainer(): HTMLElement = js.native
     
     /* CompleteClass */
-    override def _getPos(): js.Any = js.native
+    override def _getPos(): Left = js.native
     
     /* CompleteClass */
-    override def _handleKeydown(event: js.Any): Unit = js.native
+    override def _handleKeydown(event: KeyboardEvent): Unit = js.native
     
     /* CompleteClass */
     override def _place(): Unit = js.native
@@ -38,13 +45,13 @@ object floatingMenuMod {
     override def _testStyles(): Unit = js.native
     
     /* CompleteClass */
-    override def handleBlur(event: js.Any): Unit = js.native
+    override def handleBlur(event: FocusEvent): Unit = js.native
     
     /* CompleteClass */
     override def release(): Unit = js.native
     
     /* CompleteClass */
-    override def shouldStateBeChanged(state: js.Any): Boolean = js.native
+    override def shouldStateBeChanged(state: String): Boolean = js.native
   }
   object default {
     
@@ -55,76 +62,14 @@ object floatingMenuMod {
     /* static member */
     @JSImport("carbon-components/components/floating-menu/floating-menu", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
     
     /* static member */
-    object options {
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.attribAvoidFocusOnOpen")
-      @js.native
-      def attribAvoidFocusOnOpen: String = js.native
-      inline def attribAvoidFocusOnOpen_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attribAvoidFocusOnOpen")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.attribDirection")
-      @js.native
-      def attribDirection: String = js.native
-      inline def attribDirection_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attribDirection")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.classRefShown")
-      @js.native
-      def classRefShown: String = js.native
-      inline def classRefShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classRefShown")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.classShown")
-      @js.native
-      def classShown: String = js.native
-      inline def classShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classShown")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.eventAfterHidden")
-      @js.native
-      def eventAfterHidden: String = js.native
-      inline def eventAfterHidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventAfterHidden")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.eventAfterShown")
-      @js.native
-      def eventAfterShown: String = js.native
-      inline def eventAfterShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventAfterShown")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.eventBeforeHidden")
-      @js.native
-      def eventBeforeHidden: String = js.native
-      inline def eventBeforeHidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventBeforeHidden")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.eventBeforeShown")
-      @js.native
-      def eventBeforeShown: String = js.native
-      inline def eventBeforeShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventBeforeShown")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.offset")
-      @js.native
-      def offset: Left = js.native
-      inline def offset_=(x: Left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offset")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.refNode")
-      @js.native
-      def refNode: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
-      inline def refNode_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refNode")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.selectorContainer")
-      @js.native
-      def selectorContainer: String = js.native
-      inline def selectorContainer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorContainer")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.selectorPrimaryFocus")
-      @js.native
-      def selectorPrimaryFocus: String = js.native
-      inline def selectorPrimaryFocus_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorPrimaryFocus")(x.asInstanceOf[js.Any])
-    }
+    @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options")
+    @js.native
+    def options: FloatingMenuOptions = js.native
+    inline def options_=(x: FloatingMenuOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("carbon-components/components/floating-menu/floating-menu", "DIRECTION_BOTTOM")
@@ -143,41 +88,41 @@ object floatingMenuMod {
   @js.native
   val DIRECTION_TOP: /* "top" */ String = js.native
   
-  inline def getFloatingPosition(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatingPosition")(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getFloatingPosition(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY: Direction): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatingPosition")(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ trait FloatingMenu extends StObject {
     
-    def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit
+    def _changeState(state: String, detail: js.Object, callback: js.Function0[Unit]): Unit
     
-    def _getContainer(): js.Any
+    def _getContainer(): HTMLElement
     
-    def _getPos(): js.Any
+    def _getPos(): Left
     
-    def _handleKeydown(event: js.Any): Unit
+    def _handleKeydown(event: KeyboardEvent): Unit
     
     def _place(): Unit
     
     def _testStyles(): Unit
     
-    def handleBlur(event: js.Any): Unit
+    def handleBlur(event: FocusEvent): Unit
     
     def release(): Unit
     
-    def shouldStateBeChanged(state: js.Any): Boolean
+    def shouldStateBeChanged(state: String): Boolean
   }
   object FloatingMenu {
     
     inline def apply(
-      _changeState: (js.Any, js.Any, js.Any) => Unit,
-      _getContainer: () => js.Any,
-      _getPos: () => js.Any,
-      _handleKeydown: js.Any => Unit,
+      _changeState: (String, js.Object, js.Function0[Unit]) => Unit,
+      _getContainer: () => HTMLElement,
+      _getPos: () => Left,
+      _handleKeydown: KeyboardEvent => Unit,
       _place: () => Unit,
       _testStyles: () => Unit,
-      handleBlur: js.Any => Unit,
+      handleBlur: FocusEvent => Unit,
       release: () => Unit,
-      shouldStateBeChanged: js.Any => Boolean
+      shouldStateBeChanged: String => Boolean
     ): FloatingMenu = {
       val __obj = js.Dynamic.literal(_changeState = js.Any.fromFunction3(_changeState), _getContainer = js.Any.fromFunction0(_getContainer), _getPos = js.Any.fromFunction0(_getPos), _handleKeydown = js.Any.fromFunction1(_handleKeydown), _place = js.Any.fromFunction0(_place), _testStyles = js.Any.fromFunction0(_testStyles), handleBlur = js.Any.fromFunction1(handleBlur), release = js.Any.fromFunction0(release), shouldStateBeChanged = js.Any.fromFunction1(shouldStateBeChanged))
       __obj.asInstanceOf[FloatingMenu]
@@ -185,23 +130,97 @@ object floatingMenuMod {
     
     extension [Self <: FloatingMenu](x: Self) {
       
-      inline def setHandleBlur(value: js.Any => Unit): Self = StObject.set(x, "handleBlur", js.Any.fromFunction1(value))
+      inline def setHandleBlur(value: FocusEvent => Unit): Self = StObject.set(x, "handleBlur", js.Any.fromFunction1(value))
       
       inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       
-      inline def setShouldStateBeChanged(value: js.Any => Boolean): Self = StObject.set(x, "shouldStateBeChanged", js.Any.fromFunction1(value))
+      inline def setShouldStateBeChanged(value: String => Boolean): Self = StObject.set(x, "shouldStateBeChanged", js.Any.fromFunction1(value))
       
-      inline def set_changeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction3(value))
+      inline def set_changeState(value: (String, js.Object, js.Function0[Unit]) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction3(value))
       
-      inline def set_getContainer(value: () => js.Any): Self = StObject.set(x, "_getContainer", js.Any.fromFunction0(value))
+      inline def set_getContainer(value: () => HTMLElement): Self = StObject.set(x, "_getContainer", js.Any.fromFunction0(value))
       
-      inline def set_getPos(value: () => js.Any): Self = StObject.set(x, "_getPos", js.Any.fromFunction0(value))
+      inline def set_getPos(value: () => Left): Self = StObject.set(x, "_getPos", js.Any.fromFunction0(value))
       
-      inline def set_handleKeydown(value: js.Any => Unit): Self = StObject.set(x, "_handleKeydown", js.Any.fromFunction1(value))
+      inline def set_handleKeydown(value: KeyboardEvent => Unit): Self = StObject.set(x, "_handleKeydown", js.Any.fromFunction1(value))
       
       inline def set_place(value: () => Unit): Self = StObject.set(x, "_place", js.Any.fromFunction0(value))
       
       inline def set_testStyles(value: () => Unit): Self = StObject.set(x, "_testStyles", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait FloatingMenuOptions extends StObject {
+    
+    var attribAvoidFocusOnOpen: String
+    
+    var attribDirection: String
+    
+    var classRefShown: String
+    
+    var classShown: String
+    
+    var eventAfterHidden: String
+    
+    var eventAfterShown: String
+    
+    var eventBeforeHidden: String
+    
+    var eventBeforeShown: String
+    
+    var offset: Partialleftnumbertopnumbe
+    
+    var refNode: HTMLElement
+    
+    var selectorContainer: String
+    
+    var selectorPrimaryFocus: String
+  }
+  object FloatingMenuOptions {
+    
+    inline def apply(
+      attribAvoidFocusOnOpen: String,
+      attribDirection: String,
+      classRefShown: String,
+      classShown: String,
+      eventAfterHidden: String,
+      eventAfterShown: String,
+      eventBeforeHidden: String,
+      eventBeforeShown: String,
+      offset: Partialleftnumbertopnumbe,
+      refNode: HTMLElement,
+      selectorContainer: String,
+      selectorPrimaryFocus: String
+    ): FloatingMenuOptions = {
+      val __obj = js.Dynamic.literal(attribAvoidFocusOnOpen = attribAvoidFocusOnOpen.asInstanceOf[js.Any], attribDirection = attribDirection.asInstanceOf[js.Any], classRefShown = classRefShown.asInstanceOf[js.Any], classShown = classShown.asInstanceOf[js.Any], eventAfterHidden = eventAfterHidden.asInstanceOf[js.Any], eventAfterShown = eventAfterShown.asInstanceOf[js.Any], eventBeforeHidden = eventBeforeHidden.asInstanceOf[js.Any], eventBeforeShown = eventBeforeShown.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], refNode = refNode.asInstanceOf[js.Any], selectorContainer = selectorContainer.asInstanceOf[js.Any], selectorPrimaryFocus = selectorPrimaryFocus.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FloatingMenuOptions]
+    }
+    
+    extension [Self <: FloatingMenuOptions](x: Self) {
+      
+      inline def setAttribAvoidFocusOnOpen(value: String): Self = StObject.set(x, "attribAvoidFocusOnOpen", value.asInstanceOf[js.Any])
+      
+      inline def setAttribDirection(value: String): Self = StObject.set(x, "attribDirection", value.asInstanceOf[js.Any])
+      
+      inline def setClassRefShown(value: String): Self = StObject.set(x, "classRefShown", value.asInstanceOf[js.Any])
+      
+      inline def setClassShown(value: String): Self = StObject.set(x, "classShown", value.asInstanceOf[js.Any])
+      
+      inline def setEventAfterHidden(value: String): Self = StObject.set(x, "eventAfterHidden", value.asInstanceOf[js.Any])
+      
+      inline def setEventAfterShown(value: String): Self = StObject.set(x, "eventAfterShown", value.asInstanceOf[js.Any])
+      
+      inline def setEventBeforeHidden(value: String): Self = StObject.set(x, "eventBeforeHidden", value.asInstanceOf[js.Any])
+      
+      inline def setEventBeforeShown(value: String): Self = StObject.set(x, "eventBeforeShown", value.asInstanceOf[js.Any])
+      
+      inline def setOffset(value: Partialleftnumbertopnumbe): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setRefNode(value: HTMLElement): Self = StObject.set(x, "refNode", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorContainer(value: String): Self = StObject.set(x, "selectorContainer", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorPrimaryFocus(value: String): Self = StObject.set(x, "selectorPrimaryFocus", value.asInstanceOf[js.Any])
     }
   }
 }

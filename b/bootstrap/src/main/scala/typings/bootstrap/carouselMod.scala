@@ -1,7 +1,22 @@
 package typings.bootstrap
 
 import typings.bootstrap.anon.PartialOptions
-import typings.std.Element
+import typings.bootstrap.baseComponentMod.GetInstanceFactory
+import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.bootstrapBooleans.`false`
+import typings.bootstrap.bootstrapStrings.carousel
+import typings.bootstrap.bootstrapStrings.cycle
+import typings.bootstrap.bootstrapStrings.dispose
+import typings.bootstrap.bootstrapStrings.hover
+import typings.bootstrap.bootstrapStrings.next
+import typings.bootstrap.bootstrapStrings.nextWhenVisible
+import typings.bootstrap.bootstrapStrings.pause
+import typings.bootstrap.bootstrapStrings.prev
+import typings.bootstrap.bootstrapStrings.to
+import typings.bootstrap.carouselMod.Carousel.Options
+import typings.bootstrap.carouselMod.Carousel.jQueryInterface
+import typings.bootstrap.mod.global.Element
+import typings.bootstrap.mod.global.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,57 +25,28 @@ object carouselMod {
   
   @JSImport("bootstrap/js/dist/carousel", JSImport.Default)
   @js.native
-  class default protected ()
-    extends StObject
-       with Carousel {
+  open class default protected () extends Carousel {
+    def this(element: String) = this()
     def this(element: Element) = this()
+    def this(element: String, options: PartialOptions) = this()
     def this(element: Element, options: PartialOptions) = this()
-    
-    /**
-      * Cycles through the carousel items from left to right.
-      */
-    /* CompleteClass */
-    override def cycle(): Unit = js.native
-    
-    /**
-      * Destroys an element's carousel.
-      */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    
-    /**
-      * Cycles to the next item. Returns to the caller before the next item has
-      * been shown (e.g., before the slid.bs.carousel event occurs).
-      */
-    /* CompleteClass */
-    override def next(): Unit = js.native
-    
-    /**
-      * Cycles the carousel to a particular frame (0 based, similar to an array).
-      * Returns to the caller before the target item has been shown (e.g., before
-      * the slid.bs.carousel event occurs).
-      */
-    /* CompleteClass */
-    override def nextWhenVisible(): Unit = js.native
-    
-    /**
-      * Stops the carousel from cycling through items.
-      */
-    /* CompleteClass */
-    override def pause(): Unit = js.native
-    
-    /**
-      * Cycles to the previous item. Returns to the caller before the previous
-      * item has been shown (e.g., before the slid.bs.carousel event occurs).
-      */
-    /* CompleteClass */
-    override def prev(): Unit = js.native
   }
   object default {
     
     @JSImport("bootstrap/js/dist/carousel", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Default settings of this plugin
+      *
+      * @link https://getbootstrap.com/docs/5.0/getting-started/javascript/#default-settings
+      */
+    /* static member */
+    @JSImport("bootstrap/js/dist/carousel", "default.Default")
+    @js.native
+    def Default: Options = js.native
+    inline def Default_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSImport("bootstrap/js/dist/carousel", "default.Events")
     @js.native
@@ -74,64 +60,78 @@ object carouselMod {
       /* "slide.bs.carousel" */ val slide: typings.bootstrap.carouselMod.Carousel.Events.slide & String = js.native
     }
     
+    /* static member */
+    /* was `typeof Carousel.getOrCreateInstance` */
+    @JSImport("bootstrap/js/dist/carousel", "default.carouselInstance")
+    @js.native
+    def carouselInstance: GetOrCreateInstanceFactory[Carousel, PartialOptions] = js.native
+    inline def carouselInstance_=(x: GetOrCreateInstanceFactory[Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carouselInstance")(x.asInstanceOf[js.Any])
+    
     /**
       * Static method which allows you to get the carousel instance associated
       * with a DOM element.
       */
     /* static member */
-    inline def getInstance(element: Element): Carousel = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Carousel]
-    inline def getInstance(element: Element, options: PartialOptions): Carousel = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Carousel]
+    @JSImport("bootstrap/js/dist/carousel", "default.getInstance")
+    @js.native
+    def getInstance: GetInstanceFactory[Carousel] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[Carousel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/carousel", "default.getOrCreateInstance")
+    @js.native
+    def getOrCreateInstance: GetOrCreateInstanceFactory[Carousel, PartialOptions] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/carousel", "default.jQueryInterface")
+    @js.native
+    def jQueryInterface: typings.bootstrap.carouselMod.Carousel.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
-  trait Carousel extends StObject {
+  @js.native
+  trait Carousel
+    extends typings.bootstrap.baseComponentMod.default {
     
     /**
       * Cycles through the carousel items from left to right.
       */
-    def cycle(): Unit
-    
-    /**
-      * Destroys an element's carousel.
-      */
-    def dispose(): Unit
+    def cycle(): Unit = js.native
     
     /**
       * Cycles to the next item. Returns to the caller before the next item has
       * been shown (e.g., before the slid.bs.carousel event occurs).
       */
-    def next(): Unit
+    def next(): Unit = js.native
     
     /**
       * Cycles the carousel to a particular frame (0 based, similar to an array).
       * Returns to the caller before the target item has been shown (e.g., before
       * the slid.bs.carousel event occurs).
       */
-    def nextWhenVisible(): Unit
+    def nextWhenVisible(): Unit = js.native
     
     /**
       * Stops the carousel from cycling through items.
       */
-    def pause(): Unit
+    def pause(): Unit = js.native
+    def pause(event: Any): Unit = js.native
     
     /**
       * Cycles to the previous item. Returns to the caller before the previous
       * item has been shown (e.g., before the slid.bs.carousel event occurs).
       */
-    def prev(): Unit
+    def prev(): Unit = js.native
+    
+    /**
+      * Cycles the carousel to a particular frame (0 based, similar to an array).
+      * Returns to the caller before the target item has been shown (e.g., before
+      * the slid.bs.carousel event occurs).
+      */
+    def to(index: Double): Unit = js.native
   }
   object Carousel {
-    
-    inline def apply(
-      cycle: () => Unit,
-      dispose: () => Unit,
-      next: () => Unit,
-      nextWhenVisible: () => Unit,
-      pause: () => Unit,
-      prev: () => Unit
-    ): Carousel = {
-      val __obj = js.Dynamic.literal(cycle = js.Any.fromFunction0(cycle), dispose = js.Any.fromFunction0(dispose), next = js.Any.fromFunction0(next), nextWhenVisible = js.Any.fromFunction0(nextWhenVisible), pause = js.Any.fromFunction0(pause), prev = js.Any.fromFunction0(prev))
-      __obj.asInstanceOf[Carousel]
-    }
     
     @js.native
     sealed trait Events extends StObject
@@ -156,19 +156,58 @@ object carouselMod {
            with Events
     }
     
-    extension [Self <: Carousel](x: Self) {
+    /* Rewritten from type alias, can be one of: 
+      - typings.bootstrap.bootstrapStrings.left
+      - typings.bootstrap.bootstrapStrings.right
+    */
+    trait Direction extends StObject
+    object Direction {
       
-      inline def setCycle(value: () => Unit): Self = StObject.set(x, "cycle", js.Any.fromFunction0(value))
+      inline def left: typings.bootstrap.bootstrapStrings.left = "left".asInstanceOf[typings.bootstrap.bootstrapStrings.left]
       
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def right: typings.bootstrap.bootstrapStrings.right = "right".asInstanceOf[typings.bootstrap.bootstrapStrings.right]
+    }
+    
+    trait Event extends StObject {
       
-      inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      /**
+        * The direction in which the carousel is sliding (either "left" or
+        * "right").
+        */
+      val direction: Direction
       
-      inline def setNextWhenVisible(value: () => Unit): Self = StObject.set(x, "nextWhenVisible", js.Any.fromFunction0(value))
+      /**
+        * The index of the current item
+        */
+      val from: Double
       
-      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      /**
+        * The DOM element that is being slid into place as the active item.
+        */
+      val relatedTarget: Element
       
-      inline def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+      /**
+        * The index of the next item
+        */
+      val to: Double
+    }
+    object Event {
+      
+      inline def apply(direction: Direction, from: Double, relatedTarget: Element, to: Double): Event = {
+        val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], relatedTarget = relatedTarget.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Event]
+      }
+      
+      extension [Self <: Event](x: Self) {
+        
+        inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+        
+        inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+        
+        inline def setRelatedTarget(value: Element): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+        
+        inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      }
     }
     
     trait Options extends StObject {
@@ -179,7 +218,7 @@ object carouselMod {
         *
         * @default 5000
         */
-      var interval: Double
+      var interval: Double | `false`
       
       /**
         * Whether the carousel should react to keyboard events.
@@ -198,7 +237,7 @@ object carouselMod {
         *
         * @default "hover"
         */
-      var pause: String | Boolean
+      var pause: hover | `false`
       
       /**
         * Autoplays the carousel after the user manually cycles the first item. If
@@ -206,7 +245,7 @@ object carouselMod {
         *
         * @default false
         */
-      var slide: String | Boolean
+      var ride: carousel | Boolean
       
       /**
         * Whether the carousel should support left/right swipe interactions on
@@ -226,31 +265,38 @@ object carouselMod {
     object Options {
       
       inline def apply(
-        interval: Double,
+        interval: Double | `false`,
         keyboard: Boolean,
-        pause: String | Boolean,
-        slide: String | Boolean,
+        pause: hover | `false`,
+        ride: carousel | Boolean,
         touch: Boolean,
         wrap: Boolean
       ): Options = {
-        val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], slide = slide.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], ride = ride.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
       extension [Self <: Options](x: Self) {
         
-        inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+        inline def setInterval(value: Double | `false`): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         
         inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
         
-        inline def setPause(value: String | Boolean): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+        inline def setPause(value: hover | `false`): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
         
-        inline def setSlide(value: String | Boolean): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
+        inline def setRide(value: carousel | Boolean): Self = StObject.set(x, "ride", value.asInstanceOf[js.Any])
         
         inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
         
         inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       }
     }
+    
+    type jQueryInterface = js.Function1[
+        /* config */ js.UndefOr[
+          PartialOptions | Double | cycle | pause | prev | next | nextWhenVisible | to | dispose
+        ], 
+        JQuery
+      ]
   }
 }

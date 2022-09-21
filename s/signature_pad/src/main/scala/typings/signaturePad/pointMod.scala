@@ -8,15 +8,20 @@ object pointMod {
   
   @JSImport("signature_pad/dist/types/point", "Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with BasicPoint {
     def this(x: Double, y: Double) = this()
-    def this(x: Double, y: Double, time: Double) = this()
+    def this(x: Double, y: Double, pressure: Double) = this()
+    def this(x: Double, y: Double, pressure: Double, time: Double) = this()
+    def this(x: Double, y: Double, pressure: Unit, time: Double) = this()
     
     def distanceTo(start: BasicPoint): Double = js.native
     
     def equals(other: BasicPoint): Boolean = js.native
+    
+    /* CompleteClass */
+    var pressure: Double = js.native
     
     /* CompleteClass */
     var time: Double = js.native
@@ -32,6 +37,8 @@ object pointMod {
   
   trait BasicPoint extends StObject {
     
+    var pressure: Double
+    
     var time: Double
     
     var x: Double
@@ -40,12 +47,14 @@ object pointMod {
   }
   object BasicPoint {
     
-    inline def apply(time: Double, x: Double, y: Double): BasicPoint = {
-      val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    inline def apply(pressure: Double, time: Double, x: Double, y: Double): BasicPoint = {
+      val __obj = js.Dynamic.literal(pressure = pressure.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasicPoint]
     }
     
     extension [Self <: BasicPoint](x: Self) {
+      
+      inline def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

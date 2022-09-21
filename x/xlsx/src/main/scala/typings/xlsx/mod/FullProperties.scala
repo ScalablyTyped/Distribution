@@ -1,6 +1,5 @@
 package typings.xlsx.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ trait FullProperties
   
   var LinksUpToDate: js.UndefOr[Boolean] = js.undefined
   
-  var ModifiedDate: js.UndefOr[Date] = js.undefined
+  var ModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   var Revision: js.UndefOr[String | Double] = js.undefined
   
@@ -86,7 +85,7 @@ object FullProperties {
     
     inline def setLinksUpToDateUndefined: Self = StObject.set(x, "LinksUpToDate", js.undefined)
     
-    inline def setModifiedDate(value: Date): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: js.Date): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setModifiedDateUndefined: Self = StObject.set(x, "ModifiedDate", js.undefined)
     
@@ -106,7 +105,7 @@ object FullProperties {
     
     inline def setSheetNamesUndefined: Self = StObject.set(x, "SheetNames", js.undefined)
     
-    inline def setSheetNamesVarargs(value: String*): Self = StObject.set(x, "SheetNames", js.Array(value :_*))
+    inline def setSheetNamesVarargs(value: String*): Self = StObject.set(x, "SheetNames", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     

@@ -14,27 +14,27 @@ object errorsMod {
   
   @JSImport("antlr4/error/Errors", "FailedPredicateException")
   @js.native
-  class FailedPredicateException () extends RecognitionException
+  open class FailedPredicateException () extends RecognitionException
   
   @JSImport("antlr4/error/Errors", "InputMismatchException")
   @js.native
-  class InputMismatchException () extends RecognitionException
+  open class InputMismatchException () extends RecognitionException
   
   @JSImport("antlr4/error/Errors", "LexerNoViableAltException")
   @js.native
-  class LexerNoViableAltException () extends RecognitionException
+  open class LexerNoViableAltException () extends RecognitionException
   
   @JSImport("antlr4/error/Errors", "NoViableAltException")
   @js.native
-  class NoViableAltException () extends RecognitionException
+  open class NoViableAltException () extends RecognitionException
   
   @JSImport("antlr4/error/Errors", "ParseCancellationException")
   @js.native
-  class ParseCancellationException () extends RecognitionException
+  open class ParseCancellationException () extends RecognitionException
   
   @JSImport("antlr4/error/Errors", "RecognitionException")
   @js.native
-  class RecognitionException ()
+  open class RecognitionException ()
     extends StObject
        with Error {
     
@@ -44,9 +44,11 @@ object errorsMod {
     
     var input: InputStream = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

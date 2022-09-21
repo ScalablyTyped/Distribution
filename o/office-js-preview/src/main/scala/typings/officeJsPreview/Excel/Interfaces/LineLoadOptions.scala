@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a line inside a worksheet. To get the corresponding `Shape` object, use `Line.shape`.
   *
-  * Represents a line inside a worksheet. To get the corresponding Shape object, use `Line.shape`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait LineLoadOptions extends StObject {
@@ -19,121 +19,121 @@ trait LineLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the length of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadLength: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the style of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the width of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the shape to which the beginning of the specified line is attached.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   
   /**
+    * Represents the connection site to which the beginning of a connector is connected. Returns `null` when the beginning of the line is not attached to any shape.
     *
-    * Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning of the line is not attached to any shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginConnectedSite: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the connector type for the line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var connectorType: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the length of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadLength: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the style of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the width of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the shape to which the end of the specified line is attached.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   
   /**
+    * Represents the connection site to which the end of a connector is connected. Returns `null` when the end of the line is not attached to any shape.
     *
-    * Represents the connection site to which the end of a connector is connected. Returns null when the end of the line is not attached to any shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endConnectedSite: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the shape identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the beginning of the specified line is connected to a shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isBeginConnected: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the end of the specified line is connected to a shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isEndConnected: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns the `Shape` object associated with the line.
     *
-    * Returns the Shape object associated with the line.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var shape: js.UndefOr[ShapeLoadOptions] = js.undefined

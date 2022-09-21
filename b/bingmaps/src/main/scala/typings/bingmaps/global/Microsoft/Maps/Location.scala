@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.Location")
 @js.native
-class Location protected ()
+open class Location protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.Location {
   /**
@@ -14,7 +14,7 @@ class Location protected ()
     * @param latitude The location north or south of the equator from +90 to -90
     * @param longitude The location east or west of the prime meridian +180 to -180
     */
-  def this(latitude: js.Any, longitude: js.Any) = this()
+  def this(latitude: Any, longitude: Any) = this()
   
   /** The location north or south of the equator from +90 to -90 */
   /* CompleteClass */

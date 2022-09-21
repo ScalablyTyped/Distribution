@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OrderFields")
 @js.native
-/* private */ class OrderFields ()
+/* private */ open class OrderFields ()
   extends StObject
      with typings.activexOutlook.Outlook.OrderFields

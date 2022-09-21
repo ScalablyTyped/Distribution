@@ -47,7 +47,7 @@ object FunctionConfigurationEnvironment {
     
     inline def setResourceAccessPoliciesUndefined: Self = StObject.set(x, "ResourceAccessPolicies", js.undefined)
     
-    inline def setResourceAccessPoliciesVarargs(value: ResourceAccessPolicy*): Self = StObject.set(x, "ResourceAccessPolicies", js.Array(value :_*))
+    inline def setResourceAccessPoliciesVarargs(value: ResourceAccessPolicy*): Self = StObject.set(x, "ResourceAccessPolicies", js.Array(value*))
     
     inline def setVariables(value: mapOfString): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
     

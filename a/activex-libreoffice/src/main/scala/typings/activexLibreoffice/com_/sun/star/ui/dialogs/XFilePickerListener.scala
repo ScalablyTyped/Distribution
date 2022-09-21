@@ -62,7 +62,7 @@ object XFilePickerListener {
     disposing: EventObject => Unit,
     fileSelectionChanged: FilePickerEvent => Unit,
     helpRequested: FilePickerEvent => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFilePickerListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), controlStateChanged = js.Any.fromFunction1(controlStateChanged), dialogSizeChanged = js.Any.fromFunction0(dialogSizeChanged), directoryChanged = js.Any.fromFunction1(directoryChanged), disposing = js.Any.fromFunction1(disposing), fileSelectionChanged = js.Any.fromFunction1(fileSelectionChanged), helpRequested = js.Any.fromFunction1(helpRequested), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
